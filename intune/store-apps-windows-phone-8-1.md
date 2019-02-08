@@ -16,12 +16,13 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 5892ffe0369ae7b43489c1ce5c327f88c0d857f3
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: f5d043d0f7d17825ebf8ce7d991372dc0587da15
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642528"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55845623"
 ---
 # <a name="add-windows-phone-81-store-apps-to-microsoft-intune"></a>Adicionar aplicações da loja do Windows Phone 8.1 ao Microsoft Intune
 
@@ -42,7 +43,7 @@ Pode adicionar uma aplicação da loja do Windows Phone 8.1 ao Intune a partir d
 7. No painel **Informações da aplicação**, adicione as informações da aplicação. Consoante a aplicação que tenha selecionado, alguns dos valores neste painel podem ter sido preenchidos automaticamente:
     - **Nome**: Introduza o nome da aplicação porque está a ser apresentado no portal da empresa. Certifique-se de que utiliza nomes de aplicação que sejam exclusivos. Se um nome de aplicação for duplicado, apenas um deles será apresentado aos utilizadores no portal da empresa.
     - **Descrição**: Introduza uma descrição para a aplicação. Esta descrição é apresentada aos utilizadores no portal da empresa.
-    - **Publicador**: Introduza o nome do publicador da aplicação.
+    - **Publisher**: Introduza o nome do publicador da aplicação.
     - **URL da Appstore**: Escreva o URL da aplicação Store da aplicação que pretende criar.
     - **Categoria**: Opcionalmente, selecione uma ou mais das categorias de aplicações incorporadas ou uma categoria que criou. Desta forma, permitirá que os utilizadores encontrem a aplicação mais facilmente quando procurarem no portal da empresa.
     - **Apresentar como aplicação em destaque no Portal da empresa**: Selecione esta opção para apresentar o conjunto de aplicações de forma destacada na página principal do portal da empresa, quando os utilizadores procurarem aplicações.

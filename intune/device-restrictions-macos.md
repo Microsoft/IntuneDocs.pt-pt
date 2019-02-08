@@ -14,12 +14,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 0a2a096bfb4b5fafd895425a775abc13afc643e2
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 4a7b0f0195db11b556cb4fd6daa580f3620f302b
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52728541"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55846151"
 ---
 # <a name="microsoft-intune-macos-device-restriction-settings"></a>Definições de restrição de dispositivos macOS no Microsoft Intune
 
@@ -38,16 +39,16 @@ Este artigo mostra-lhe as definições de restrições de dispositivos do Micros
   - **Expiração da palavra-passe (dias)** – Especifique o número de dias que decorrem antes de o utilizador ter de alterar a palavra-passe (de **1** a **255** dias).
   - **Impedir reutilização de palavras-passe anteriores** – Especifique o número de palavras-passe utilizadas anteriormente que não podem ser reutilizadas (**1** a **24**).
 
-- **Palavra-passe de bloco preenchimento automático**: escolha **bloco** para impedir a utilização da funcionalidade de palavras-passe de preenchimento automático no macOS. Escolher **bloco** também faz o seguinte:
+- **Palavra-passe de bloco preenchimento automático**: Escolher **bloco** para impedir a utilização da funcionalidade de palavras-passe de preenchimento automático no macOS. Escolher **bloco** também faz o seguinte:
 
   - Os utilizadores não são-lhe pedidos para utilizar uma palavra-passe guardada no Safari ou em todas as aplicações.
   - Palavras-passe forte de automáticas estão desativadas e as palavras-passe fortes não são sugeridas para os utilizadores.
 
   **Não configurado** permite que esses recursos.
 
-- **Bloquear pedidos de proximidade de palavra-passe**: escolha **bloco** para que o dispositivo de um utilizador não solicitar palavras-passe do dispositivos próximos. **Não configurado** permite que estes pedidos de palavra-passe.
+- **Bloquear pedidos de proximidade de palavra-passe**: Escolher **bloco** para que o dispositivo de um utilizador não solicitar palavras-passe do dispositivos próximos. **Não configurado** permite que estes pedidos de palavra-passe.
 
-- **Bloquear a partilha de palavra-passe**: **bloco** impede a partilha de palavras-passe entre dispositivos com o AirDrop. **Não configurado** permite que as palavras-passe a ser partilhado.
+- **Bloquear a partilha de palavra-passe**: **Bloco** impede a partilha de palavras-passe entre dispositivos com o AirDrop. **Não configurado** permite que as palavras-passe a ser partilhado.
 
 
 ## <a name="restricted-apps"></a>Aplicações restritas

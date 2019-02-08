@@ -16,12 +16,13 @@ ms.reviewer: ilwu
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 65f3598282bd46d422f8748d2653dbf8e18cf9b7
-ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 5458bdb4e6f967082fcbfd165589386dcc23cec1
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53324978"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55835508"
 ---
 # <a name="manage-internet-access-using-a-microsoft-intune-policy-protected-browser"></a>Gerir o acesso à Internet através de um browser protegido por políticas do Microsoft Intune
 

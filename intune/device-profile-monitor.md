@@ -15,12 +15,13 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: dc3a9620532951bd78e545e87b0d43dd6be3efe5
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 73ff5db08d7d4da2cd96c62c1a7f16acd55e58a0
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186601"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55842461"
 ---
 # <a name="monitor-device-profiles-in-microsoft-intune"></a>Monitorizar perfis de dispositivos no Microsoft Intune
 
@@ -64,11 +65,11 @@ Depois de criar o perfil do dispositivo, o Intune disponibiliza gráficos. Estes
     Feche os detalhes do **Estado do utilizador**.
 
 5. Novamente na lista **Perfis**, selecione um perfil específico. Também pode alterar as propriedades existentes:
-  - **Propriedades**: altere o nome ou atualize as definições existentes.
-  - **Atribuições**: inclua ou exclua dispositivos que a política deve aplicar. Escolha **Grupos Selecionados** para escolher grupos específicos.
-  - **Estado do dispositivo**: são listados os dispositivos atribuídos ao perfil, além de indicar se o perfil foi implementado com êxito. Pode selecionar um dispositivo específico para obter ainda mais detalhes, incluindo as aplicações instaladas.
-  - **Estado do utilizador**: lista os nomes dos utilizadores com dispositivos afetados por este perfil e se o perfil foi implementado com êxito. Pode selecionar um utilizador específico para obter ainda mais detalhes.
-  - **Estado por definição**: filtra os resultados ao mostrar as definições individuais no perfil e mostra se a definição foi aplicada com êxito.
+  - **Propriedades**: Altere o nome ou atualizar todas as configurações existentes.
+  - **Atribuições de**: Inclua ou exclua os dispositivos que se deve aplicar a política. Escolha **Grupos Selecionados** para escolher grupos específicos.
+  - **Estado do dispositivo**: São listados os dispositivos atribuídos ao perfil, além de indicar se o perfil foi implementado com êxito. Pode selecionar um dispositivo específico para obter ainda mais detalhes, incluindo as aplicações instaladas.
+  - **Estado do utilizador**: Lista os nomes de utilizador com os dispositivos afetados por este perfil, e se o perfil implementado com êxito. Pode selecionar um utilizador específico para obter ainda mais detalhes.
+  - **Estado por definição**: Filtra a saída mostrando as definições individuais no perfil e mostra se a definição é aplicada com êxito.
 
 ## <a name="view-conflicts"></a>Ver os conflitos
 

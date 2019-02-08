@@ -13,12 +13,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: c0d6dcc4bee31ce0197699a8106a25dbcd71af17
-ms.sourcegitcommit: 580eb4920d18ce09c9431d9d0dfee9d195459c0e
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 25df77266e0ce10329d94f7185a78c944b3771cb
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52887139"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55844620"
 ---
 # <a name="overview-of-the-microsoft-intune-mobile-device-management-mdm-lifecycle"></a>Descrição geral do ciclo de vida da gestão de dispositivos móveis (MDM) do Microsoft Intune
 
@@ -38,7 +39,7 @@ Inscrever os seus dispositivos é apenas o primeiro passo. Para tirar partido de
 - [**Acesso a recursos empresariais**](device-profiles.md). Permitir que os utilizadores acedam ao seu trabalho nos respetivos dispositivos pessoais pode apresentar desafios. Por exemplo, como é que garante que todos os dispositivos que precisam de aceder ao e-mail da empresa estão configurados corretamente? Como pode garantir que os utilizadores conseguem aceder à rede da empresa com uma ligação VPN sem terem de conhecer as definições necessárias tantas vezes complexas? O Intune pode ajudar a reduzir este fardo, configurando automaticamente os dispositivos que gere para aceder a recursos comuns da empresa.
 - [**Políticas de gestão de PCs Windows (com o software de cliente Intune)**](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md). Embora a inscrição de PCs Windows no Intune lhe dê mais capacidades de gestão de dispositivos, o Intune continua a suportar a gestão de PCs Windows com o software de cliente Intune. Se precisar de informações sobre algumas das tarefas que pode realizar com PCs, comece por aqui.
 
-## <a name="protect"></a>Proteger
+## <a name="protect"></a>proteger
 No mundo de TI moderno, proteger os dispositivos contra acesso não autorizado é uma das tarefas mais importantes que tem de realizar. Para além dos itens no passo **Configurar** do ciclo de vida do dispositivo, o Intune fornece mais capacidades que ajudam a proteger os dispositivos que gere contra acesso não autorizado ou ataques maliciosos:
 - [**Autenticação multifator**](multi-factor-authentication.md). Adicionar mais uma camada de autenticação aos inícios de sessão do utilizador pode ajudar a tornar os dispositivos ainda mais seguros. Muitos dispositivos suportam a autenticação multifator que requer um segundo nível de autenticação, como uma chamada telefónica ou mensagem de texto, antes de os utilizadores poderem aceder aos mesmos.
 - [**Windows Hello para empresas**](windows-hello.md). O Windows Hello para Empresas é um método de início de sessão alternativo que permite que os utilizadores utilizem um *gesto*, tal como uma identificação digital ou o Windows Hello para iniciar sessão, sem ser necessário uma palavra-passe.

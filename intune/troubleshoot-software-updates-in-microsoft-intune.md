@@ -16,12 +16,13 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 1354c789a6756a6ddf2d9c5d6400ece91c80d57c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: cfc38af8a3ac6093fc9212a902d3ebf6a4731745
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188637"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55839010"
 ---
 # <a name="troubleshoot-software-updates-in-microsoft-intune"></a>Resolver problemas de atualizações de software no Microsoft Intune
 
@@ -246,12 +247,12 @@ A seguinte tabela indica os códigos de erro do **Update Agent** do Intune. Se n
 |**0x80af0006**|OMC_E_DOWNLOAD_CANCELLED|A transferência foi cancelada.|
 
 ## <a name="windows-7-based-computers-with-lots-of-superseded-updates-stop-reporting-to-the-microsoft-intune-console"></a>Computadores baseados no Windows 7 com muitas atualizações substituídas deixam de reportar na consola do Microsoft Intune
-**Problema**: poderá encontrar uma situação em que os clientes do Microsoft Intune se deparam com um ou mais dos seguintes sintomas:
+**Problema**: Pode encontrar uma situação em que os clientes do Microsoft Intune experimente um ou mais dos sintomas seguintes:
 - Param subitamente de reportar na consola de administração do Microsoft Intune.  
 - Registam uma elevada utilização da CPU.
 - As aplicações são instaladas lentamente quando são instaladas através do portal do Intune.
-- O Microsoft Intune Center aciona o seguinte erro: *Ocorreu um erro ao atualizar o seu computador. Erro encontrado: código 0x800705b4*.
-- O campo de estado na Consola de Administração do Intune > Grupos > Todos os Dispositivos apresenta: *Um ou mais agentes instalados neste computador têm erros. As informações sobre este computador podem não ser exatas ou atualizadas*.
+- O Microsoft Intune Center aciona o seguinte erro: *Ocorreu um erro ao atualizar o seu computador. Erro encontrado: Código 0x800705b4*.
+- O campo de estado na consola de administração do Intune > grupos > todos os dispositivos apresenta: *Um ou mais agentes que estão instalados neste computador têm erros. As informações sobre este computador podem não ser exatas ou atualizadas*.
 
 Este problema pode ocorrer se as atualizações substituídas (atualizações que foram substituídas por outra atualização) não foram recusadas durante um período prolongado. Durante determinados processos, como a instalação de uma aplicação, o Windows verifica todas as atualizações substituídas em sequência, para que as atualizações e as respetivas sucessoras possam ser mapeadas corretamente. Se a lista de atualizações substituídas ficar demasiado grande, esta tarefa de verificação pode causar uma elevada utilização da CPU devido à carga de processamento e ao tempo necessário. Este problema afeta principalmente os clientes com o Windows 7 devido ao elevado número de atualizações substituídas que estão disponíveis para o Windows 7. O Windows 8 e os sistemas operativos posteriores não têm tantas atualizações substituídas disponíveis e, por conseguinte, não estão tão suscetíveis a este problema.
 
@@ -261,7 +262,7 @@ Este problema pode ocorrer se as atualizações substituídas (atualizações qu
 3. Rejeite todas as atualizações substituídas que possam ser aplicadas ao Windows 7 ou a aplicações (por exemplo, o Microsoft Office) que foram instaladas nos clientes afetados.
 4. Reinicie os clientes afetados.
 
-Além disso, se estiver a executar o Windows 7, certifique-se de que tem a seguinte atualização instalada:[3050265 Cliente do Windows Update para o Windows 7: junho de 2015](https://support.microsoft.com/kb/3050265).
+Além disso, se estiver a executar o Windows 7, certifique-se de que tem a seguinte atualização instalada:[3050265 Windows atualizar o cliente para Windows 7: Junho de 2015](https://support.microsoft.com/kb/3050265).
 
 ### <a name="next-steps"></a>Passos Seguintes
 Se estas informações não o ajudarem, também poderá [obter suporte para o Microsoft Intune](get-support.md).
