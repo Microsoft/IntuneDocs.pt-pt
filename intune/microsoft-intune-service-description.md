@@ -15,12 +15,13 @@ ms.reviewer: cacamp
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
-ms.openlocfilehash: 675e45a7f49a943cb57135c141a9331ba24fabe7
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: fcd78efe6862e42296764e4791bf8fed940adde4
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184238"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55850952"
 ---
 # <a name="microsoft-intune-service-description"></a>Descrição do serviço Microsoft Intune
 
@@ -101,7 +102,7 @@ You can set up Intune in several ways to manage and help protect your company's 
 - **Intune with System Center Configuration Manager.** Use the Configuration Manager management console to manage computers and mobile devices in your enterprise. This configuration can help you to manage all your organization’s devices through a single console, the Configuration Manager Admin Console. Configuration Manager supports large numbers of mobile devices, servers, and computers. For more about Configuration Manager, see [Hybrid mobile device management (MDM) with System Center Configuration Manager and Microsoft Intune](/sccm/mdm/understand/hybrid-mobile-device-management). For more help deciding which approach is right for you, see [Choose between Microsoft Intune standalone and hybrid mobile device management with Configuration Manager](/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management).--->
 
 ## <a name="language-support"></a>Suporte de idiomas
-O Intune é executado no portal do Azure que suporta os seguintes idiomas: alemão, checo, chinês (simplificado), chinês (tradicional), coreano, espanhol, francês, húngaro, inglês, italiano, japonês, neerlandês, polaco, português (Brasil), português (Portugal), russo, sueco e turco.
+Intune é executado no portal do Azure, que suporta os seguintes idiomas: Chinês (simplificado), chinês (tradicional), Tcheco, Holandês, inglês, alemão, húngaro, italiano, japonês, português (Brasil), português (Portugal), russo, espanhol, inglês, francês, coreano, polaco, sueco e turco.
 
 A Consola de Administração do Intune e as experiências em dispositivos móveis destinadas ao utilizador suportam dinamarquês, grego, finlandês, norueguês e romeno, para além de todos os idiomas suportados pelo portal do Azure.
 

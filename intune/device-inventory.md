@@ -14,12 +14,13 @@ ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 1954f59a008c699c6dcdeb46686d3f37f941908a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 9ad3593dfab0326cec4003b794d50d415cf3c536
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180277"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55844127"
 ---
 # <a name="see-device-details-in-intune"></a>Consultar os detalhes do dispositivo no Intune
 
@@ -52,7 +53,7 @@ Este artigo mostra como ver todos os seus dispositivos e as respetivas proprieda
 
 O Intune recolhe uma lista de aplicações apenas nos dispositivos pertencentes à empresa. As aplicações não são verificadas nos dispositivos pessoais. Para PCs com o Windows 10, apenas é apresentada a lista de aplicações modernas em dispositivos pertencentes à empresa. O Intune não recolhe informações de aplicações Win32 no dispositivo. Consoante a utilização da operadora pelos dispositivos, nem todas as aplicações devem ser recolhidas.
 
-|Platform|Para dispositivos pessoais|Para dispositivos pertencentes à empresa|  
+|Plataforma|Para dispositivos pessoais|Para dispositivos pertencentes à empresa|  
 |--------------|---------------------------------|--------------------------------|  
 |Windows 10 (sem o cliente do Configuration Manager)|Apenas aplicações geridas|Apenas aplicações geridas|
 |Windows 8.1 (sem o cliente do Configuration Manager)|Apenas aplicações geridas|Apenas aplicações geridas|  
@@ -66,7 +67,7 @@ O Intune recolhe uma lista de aplicações apenas nos dispositivos pertencentes 
 ## <a name="hardware-device-details"></a>Detalhes de dispositivos de hardware
 Consoante a operadora utilizada pelos dispositivos, nem todos os detalhes podem ser recolhidos
 
-|Detalhe|Descrição|Platform| 
+|Detalhe|Descrição|Plataforma| 
 |--------------|----------------------|----|  
 |Nome|O nome do dispositivo.|Windows, iOS|
 |Nome da gestão|O nome do dispositivo utilizado apenas na consola. Alterar este nome não irá alterar o nome no dispositivo.|Windows, iOS|
@@ -82,8 +83,8 @@ Consoante a operadora utilizada pelos dispositivos, nem todos os detalhes podem 
 |Espaço de armazenamento livre|O espaço de armazenamento não utilizado no dispositivo (em gigabytes).|Windows, iOS|
 |IMEI|A Identidade Internacional do Equipamento Móvel do dispositivo.|Windows, iOS, Android|
 |MEID|O identificador de equipamento móvel do dispositivo.|Windows, iOS, Android|
-|Manufacturer|O fabricante do dispositivo.|Windows, iOS, Android|
-|Model|O modelo do dispositivo.|Windows, iOS, Android|
+|Fabricante|O fabricante do dispositivo.|Windows, iOS, Android|
+|Modelo|O modelo do dispositivo.|Windows, iOS, Android|
 |Número de telefone|O número de telemóvel atribuído ao dispositivo.|Windows, iOS, Android|
 |Operadora subscrita|A operadora sem fios do dispositivo.|Windows, iOS, Android|
 |Tecnologia de rede móvel|O sistema de rádio utilizado pelo dispositivo.|Windows, iOS, Android|

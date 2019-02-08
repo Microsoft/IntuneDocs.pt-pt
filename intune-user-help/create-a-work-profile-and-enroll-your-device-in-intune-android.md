@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: accbab7acd4638958e6c05a5d5e969eea12cf355
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 683156b968c743c4c82b472c6e566d5762c22c1a
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43148167"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55844671"
 ---
 # <a name="create-a-work-profile-and-enroll-your-device-in-intune"></a>Criar um perfil de trabalho e inscrever o seu dispositivo no Intune
 

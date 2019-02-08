@@ -16,12 +16,13 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: c79f3db99f1023acee189b6e7a49f26d8d3fdd4c
-ms.sourcegitcommit: 01d6832978cb7ca23049000950696b300a87abd4
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 477ae578998e712ced76a2a6a6de764766ee7f4f
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55760927"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55839741"
 ---
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>Como eliminar apenas dados empresariais de aplicações geridas pelo Intune
 

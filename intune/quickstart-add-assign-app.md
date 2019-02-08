@@ -16,14 +16,15 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6d0a7485aa25dee74bf54192fa931d081be81cd8
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 3831b86bd619fae130f7173cee8f7e7cc46dfe6a
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184519"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55839299"
 ---
-# <a name="quickstart-add-and-assign-a-client-app"></a>Guia de Início Rápido: adicionar e atribuir uma aplicação cliente
+# <a name="quickstart-add-and-assign-a-client-app"></a>Início rápido: Adicionar e atribuir uma aplicação de cliente
 
 Neste guia de início rápido, irá utilizar o Intune para adicionar e atribuir uma aplicação cliente à força de trabalho da sua empresa. Uma das prioridades de um administrador é garantir que os utilizadores finais têm acesso às aplicações que precisam para trabalhar. 
 
@@ -90,7 +91,7 @@ Tem de instalar e utilizar a aplicação Portal da Empresa para instalar a aplic
 4. Clique na aplicação que adicionou com o Intune. Neste guia de início rápido, adicionou a aplicação **Conjunto de Aplicações do Microsoft Office 365**.
 
     > [!NOTE]
-    > Se não tiver atribuído com êxito nenhuma aplicação ao utilizador do Intune, verá a seguinte mensagem: *O seu administrador de TI não lhe disponibilizou nenhuma aplicação.*
+    > Se não atribuído com sucesso todas as aplicações para o utilizador do Intune, verá a seguinte mensagem: *O administrador de TI não efetuou todas as aplicações disponíveis para si.*
 
 5. Clique em **Instalar**.
 
@@ -103,4 +104,4 @@ Neste guia de início rápido, adicionou aplicações ao Intune, atribuiu as apl
 Para seguir esta série de guias de início rápido do Intune, continue para o próximo guia de início rápido.
 
 > [!div class="nextstepaction"]
-> [Guia de Início Rápido: criar e atribuir uma política de proteção de aplicações](quickstart-create-assign-app-policy.md)
+> [Início rápido: Criar e atribuir uma política de proteção de aplicações](quickstart-create-assign-app-policy.md)

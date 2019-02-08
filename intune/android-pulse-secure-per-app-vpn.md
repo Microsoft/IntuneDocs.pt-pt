@@ -16,12 +16,13 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 48f1227da6260217105120d31301f60b6e06110c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: f4e973c9fcc31c4aaacc40d89c0b03c23a50dedd
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186023"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834063"
 ---
 # <a name="use-a-microsoft-intune-custom-profile-to-create-a-per-app-vpn-profile-for-android-devices"></a>Utilizar um perfil personalizado do Microsoft Intune para criar um perfil VPN por aplicação para dispositivos Android
 
@@ -36,10 +37,10 @@ Depois de atribuir a política ao seu dispositivo Android ou grupos de utilizado
 > Apenas os tipos de ligação Pulse Secure e Citrix são suportados para este perfil.
 
 
-## <a name="step-1-create-a-vpn-profile"></a>Passo 1: criar um perfil de VPN
+## <a name="step-1-create-a-vpn-profile"></a>Passo 1: Criar um perfil da VPN
 
 
-1. Inicie sessão no [portal do Azure](https://portal.azure.com).
+1. Inicie sessão no [Portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
 3. No painel **Intune**, selecione **Configuração do dispositivo**.
 2. No painel **Configuração do dispositivo**, na secção **Gerir**, selecione **Perfis**.
@@ -51,9 +52,9 @@ Depois de atribuir a política ao seu dispositivo Android ou grupos de utilizado
 
 Tome nota do valor **Nome da Ligação** que especificar ao criar o perfil de VPN. Esse nome será necessário no próximo passo. Por exemplo, **MyAppVpnProfile**.
 
-## <a name="step-2-create-a-custom-configuration-policy"></a>Passo 2: criar uma política de configuração personalizada
+## <a name="step-2-create-a-custom-configuration-policy"></a>Passo 2: Criar uma política de configuração personalizada
 
-1. Inicie sessão no [portal do Azure](https://portal.azure.com).
+1. Inicie sessão no [Portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
 3. No painel **Intune**, selecione **Configuração do dispositivo**.
 2. No painel **Configuração do dispositivo**, na secção **Gerir**, selecione **Perfis**.
@@ -81,6 +82,6 @@ Em alternativa, pode utilizar o valor **WHITELIST** para especificar uma lista d
 
 
 
-## <a name="step-3-assign-both-policies"></a>Passo 3: atribuir ambas as políticas
+## <a name="step-3-assign-both-policies"></a>Passo 3: Atribuir ambas as políticas
 
 Utilize as instruções em [Como atribuir perfis de dispositivo](device-profile-assign.md) para atribuir ambos os perfis aos utilizadores ou dispositivos obrigatórios.

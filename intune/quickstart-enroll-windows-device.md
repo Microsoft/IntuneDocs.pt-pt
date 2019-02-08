@@ -15,14 +15,15 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 5876b0df6787640e465952cb1cca17f4f3105762
-ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: c04dc3169fbf6a60d0c4d7db8358092909e90240
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52977342"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55841825"
 ---
-# <a name="quickstart-enroll-your-windows-10-device"></a>Guia de Início Rápido: inscrever o seu dispositivo com o Windows 10
+# <a name="quickstart-enroll-your-windows-10-device"></a>Início rápido: Inscrever o seu dispositivo Windows 10
 
 Neste guia de início rápido, irá assumir a função de utilizador do Intune e inscrever o seu dispositivo com o Windows 10 no Microsoft Intune. Em seguida, regresse ao Intune e confirme o dispositivo inscrito.
 
@@ -106,4 +107,4 @@ Neste guia de início rápido, aprendeu como inscrever um dispositivo com o Wind
 Para seguir esta série de guias de início rápido do Intune, continue para o próximo guia de início rápido.
 
 > [!div class="nextstepaction"]
-> [Guia de Início Rápido: definir um comprimento da palavra-passe obrigatório para dispositivos Android](quickstart-set-password-length-android.md)
+> [Início rápido: Definir um comprimento de palavra-passe obrigatório para dispositivos Android](quickstart-set-password-length-android.md)

@@ -16,12 +16,13 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 3b1115a91707c639caba6410ace3c2e255e40a39
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: e36580a477db29a52249c4ce809239ae3a524462
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185003"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55837901"
 ---
 # <a name="manage-settings-and-features-on-your-devices-with-intune-policies"></a>Gerir definições e funcionalidades no seu dispositivo com as políticas do Intune
 
@@ -31,10 +32,10 @@ As *políticas* do Microsoft Intune são grupos de definições que controlam fu
 
 As políticas do Intune inserem-se nas categorias seguintes. A categoria que utilizar afeta a forma como cria e implementa a política.
 
-- **Políticas de configuração**: frequentemente utilizadas para gerir as funcionalidades e as definições de segurança nos seus dispositivos, incluindo o acesso aos recursos da empresa. Comece a utilizar [perfis de dispositivo do Intune](device-profiles.md).
-- **Políticas de conformidade de dispositivos**: definem as regras e as definições que um dispositivo tem de cumprir para ser considerado conforme com as políticas de acesso condicional. Também pode utilizar as políticas de conformidade para monitorizar e resolver a conformidade dos dispositivos independentemente do acesso condicional. Comece a utilizar [políticas de conformidade de dispositivos](device-compliance-get-started.md).
-- **Políticas de acesso condicional**: ajudam-no a proteger o e-mail e outros serviços, dependendo das condições que introduzir. [O que é o acesso condicional?](conditional-access.md) e [Formas comuns de utilizar o acesso condicional](conditional-access-intune-common-ways-use.md) são bons recursos para começar.
-- **Políticas de inscrição de dispositivos da empresa**: para obter informações sobre as políticas de inscrição de dispositivos da empresa, veja [Inscrever dispositivos iOS](ios-enroll.md).
+- **Políticas de configuração**: Normalmente utilizado para gerir definições de segurança e funcionalidades nos seus dispositivos, incluindo o acesso aos recursos da empresa. Comece a utilizar [perfis de dispositivo do Intune](device-profiles.md).
+- **As políticas de conformidade do dispositivo**: Defina as regras e definições que um dispositivo tem de cumprir para ser considerado conforme pelas políticas de acesso condicional. Também pode utilizar as políticas de conformidade para monitorizar e resolver a conformidade dos dispositivos independentemente do acesso condicional. Comece a utilizar [políticas de conformidade de dispositivos](device-compliance-get-started.md).
+- **Políticas de acesso condicional**: Ajude a proteger o e-mail e outros serviços, dependendo das condições que introduzir. [O que é o acesso condicional?](conditional-access.md) e [Formas comuns de utilizar o acesso condicional](conditional-access-intune-common-ways-use.md) são bons recursos para começar.
+- **Políticas de inscrição de dispositivos de empresa**: Para obter informações sobre as políticas de inscrição de dispositivos da empresa, consulte [inscrever dispositivos iOS](ios-enroll.md).
 
 ## <a name="frequently-asked-questions-about-intune-policies"></a>Perguntas mais frequentes sobre as políticas do Intune
 
@@ -43,7 +44,7 @@ Quando uma política ou aplicação é implementada, o Intune começa imediatame
 
 Se um dispositivo não der entrada para obter uma política após o envio da primeira notificação, o Intune faz mais três tentativas.  Se o dispositivo estiver offline (por exemplo, se estiver desligado ou se não estiver ligado a uma rede), pode não receber as notificações. Neste caso, o dispositivo obtém a política na próxima entrada agendada com o serviço do Intune, da seguinte forma:
 
-| Platform | Frequência de entrada |
+| Plataforma | Frequência de entrada |
 | --- | --- |
 | iOS | A cada 6 horas | 
 | Mac OS X | A cada 6 horas |
@@ -54,7 +55,7 @@ Se um dispositivo não der entrada para obter uma política após o envio da pri
 
 Se o dispositivo foi inscrito recentemente, a frequência da entrada é maior, conforme se segue:
 
-| Platform | Frequência |
+| Plataforma | Frequência |
 | --- | --- |
 | iOS | A cada 15 minutos durante 6 horas e, em seguida, a cada 6 horas |  
 | Mac OS X | A cada 15 minutos durante 6 horas e, em seguida, a cada 6 horas | 
@@ -95,10 +96,10 @@ Quando eliminar uma política ou remover um dispositivo de um grupo que tenha um
 
 #### <a name="enrolled-devices"></a>Dispositivos inscritos
 
-- Perfis de Wi-Fi, VPN, certificado e e-mail: estes perfis são removidos de todos os dispositivos inscritos suportados.
+- Wi-Fi, VPN, certificado e perfis de e-mail: Estes perfis são removidos de todos os dispositivos inscritos suportados.
 - Todos os outros tipos de políticas:
-  - **Dispositivos Windows e Android**: as definições não são removidas do dispositivo.
-  - **Dispositivos Windows Phone 8.1**: as definições seguintes são removidas:
+  - **Windows e dispositivos Android**: As definições não são removidas do dispositivo.
+  - **Dispositivos Windows Phone 8.1**: As seguintes definições são removidas:
     - Palavra-passe obrigatória para desbloquear os dispositivos móveis
     - Permitir palavras-passe simples
     - Comprimento mínimo da palavra-passe
@@ -125,7 +126,7 @@ Quando eliminar uma política ou remover um dispositivo de um grupo que tenha um
     - Permitir NFC
     - Permitir Wi-Fi
 
-  - **iOS**: todas as definições são removidas, exceto:
+  - **iOS**: Todas as definições são removidas, exceto:
     - Permitir chamadas em roaming
     - Permitir roaming de dados
     - Permitir sincronização automática em roaming

@@ -14,12 +14,13 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: de0df4878d2461d2f7c0a022a7e3d305e58aef7f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 2de0d4cb00ea6bdeef40a9e6f6e400304a003b00
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187791"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55848547"
 ---
 # <a name="add-partner-certification-authority-in-intune-using-scep"></a>Adicionar autoridades de certificação parceiras no Intune com o SCEP
 
@@ -69,7 +70,7 @@ Para permitir que um servidor do SCEP de terceiros execute a validação do desa
 
 Certifique-se de que tem as permissões obrigatórias para registar uma aplicação do Azure AD. A secção [Permissões obrigatórias](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-create-service-principal-portal#required-permissions) indica os passos.
 
-**Passo 1: criar uma aplicação do Azure AD**
+**Passo 1: Criar uma aplicação do Azure AD**
 
 1. Inicie sessão no [portal do Azure](https://portal.azure.com).
 2. Selecione **Azure Active Directory** > **Registos das aplicações** > **Novo registo de aplicação**.
@@ -78,7 +79,7 @@ Certifique-se de que tem as permissões obrigatórias para registar uma aplicaç
 
 O artigo [Integrar aplicações com o Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications) inclui algumas orientações sobre como criar uma aplicação, incluindo sugestões sobre o URL e o nome.
 
-**Passo 2: conceder permissões**
+**Passo 2: Conceder permissões**
 
 Depois de criar a sua aplicação, conceda à API do Microsoft Intune as permissões obrigatórias:
 
@@ -87,13 +88,13 @@ Depois de criar a sua aplicação, conceda à API do Microsoft Intune as permiss
 3. Em **Selecionar permissões**, selecione **Validação do desafio SCEP** > **Selecionar**.
 4. Selecione **Concluído** para guardar as alterações.
 
-**Passo 3: obter o ID da aplicação e a chave de autenticação**
+**Passo 3: Obter a chave de autenticação e o ID de aplicação**
 
 Em seguida, obtenha o ID e os valores de chave da sua aplicação do Azure AD. São necessários os seguintes valores:
 
 - ID da Aplicação
 - Chave de Autenticação
-- ID de inquilino
+- ID do inquilino
 
 **Para obter o ID da aplicação e a chave de autenticação**:
 

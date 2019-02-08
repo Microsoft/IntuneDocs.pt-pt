@@ -16,12 +16,13 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: bdd8267701b20600d67e6927c8b55d7f9c11a34f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 487ad607bc34d5fc2137f1b3903b0711e793658d
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186771"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55840573"
 ---
 # <a name="understand-the-users-experience-enrolling-an-ios-device"></a>Compreender a experiência do utilizador que está a inscrever um dispositivo iOS
 
@@ -29,11 +30,11 @@ O Microsoft Intune ajuda a sua força de trabalho a ser produtiva em dispositivo
 
 | O que o administrador de TI não pode ver | O que o administrador de TI pode ver |
 |---|---|
-| Histórico de chamadas e navegação na Web | Model |
+| Histórico de chamadas e navegação na Web | Modelo |
 | Localização | Número de série |
 | E-mail pessoal | Versão do sistema operativo |
 | Mensagens de texto | Nomes das aplicações |
-| Contactos | Proprietário |
+| Contactos | Owner |
 | Palavras-passe das suas contas pessoais | Nome do dispositivo |
 | Eventos do calendário | Fabricante (para dispositivos não fabricados pela Apple) |
 | Imagens, incluindo o que está na aplicação de fotografias ou câmara | Número de telefone (para os dispositivos de trabalho, o número inteiro. Para os dispositivos pessoais, apenas os últimos quatro dígitos). |

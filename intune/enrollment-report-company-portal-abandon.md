@@ -15,12 +15,13 @@ ms.assetid: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 44a6d89b649514a08193d7144dff7d89dc3d9c55
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 85a03718185de939612f5431a993f9f34c3048ba
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183371"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55840659"
 ---
 # <a name="company-portal-abandonment-report"></a>Relatório de abandono do portal da empresa
 
@@ -52,9 +53,9 @@ Pode filtrar o intervalo de datas, o sistema operativo e a secção de inscriç�
 
 Na parte superior do relatório, pode ver o número e a percentagem de relatórios de abandono em relação a todas as inscrições.
 
--   Inscrições iniciadas: o número de tentativas de inscrição.
--   Inscrições abandonadas: o número de tentativas de inscrição que não resultaram num dispositivo totalmente inscrito e conforme.
--   Taxa de abandono: a percentagem de tentativas de inscrição que foram abandonadas (Inscrições abandonadas/Inscrições iniciadas).
+-   Inscrições iniciadas: O número de inscrições tentada.
+-   Inscrições abandonadas: O número de inscrições de tentativas que não resulta num dispositivo totalmente inscrito e em conformidade.
+-   Taxa de abandonment: A percentagem de tentativas de inscrição que foram abandonadas (abandonada inscrições / iniciada inscrições).
 
 ### <a name="line-graph"></a>Gráfico de linha
 
@@ -62,7 +63,7 @@ O gráfico de linha mostra os abandonos diários para cada uma das quatro princi
 
 -   Lista de verificação da configuração
 -   Ecrãs de plataforma
--   Termos de Utilização
+-   Termos de utilização
 -   Conformidade/Ativação
 
 ### <a name="user-abandonment-actions"></a>Ações de abandono do utilizador
@@ -72,7 +73,7 @@ As seguintes tabelas mostram a lista de ações do utilizador que são considera
 
 #### <a name="setup-checklist-section"></a>Secção da lista de verificação da configuração
 
-| Nome do abandono | Ecrã ou fluxo | Platform | Ação |
+| Nome do abandono | Ecrã ou fluxo | Plataforma | Ação |
 | ---- |---- |---- |---- |
 | EnrollmentWrapUp | Pedido para abrir uma página no Portal da Empresa | iOS/Android | **Cancelar** |
 | EnrollmentWrapUp | Ecrã de inscrição do dispositivo até à conclusão da operação **A carregar recursos da empresa** | iOS/Android | Demorou mais de 30 minutos |
@@ -82,7 +83,7 @@ As seguintes tabelas mostram a lista de ações do utilizador que são considera
 
 #### <a name="platform-screens-section"></a>Secção dos ecrãs de plataforma
 
-| Nome do abandono | Ecrã ou fluxo | Platform | Ação |
+| Nome do abandono | Ecrã ou fluxo | Plataforma | Ação |
 | ---- |---- |---- |---- |
 | iOSProfileLaunch | Pedido para mostrar um perfil de configuração | iOS | **Ignorar** |
 | iOSProfileLaunch | Ecrã de instalação do perfil | iOS | **Cancelar** |
@@ -95,14 +96,14 @@ As seguintes tabelas mostram a lista de ações do utilizador que são considera
 
 #### <a name="terms-of-use-section"></a>Secção dos termos de utilização
 
-| Nome do abandono | Ecrã ou fluxo | Platform | Ação |
+| Nome do abandono | Ecrã ou fluxo | Plataforma | Ação |
 | ---- |---- |---- |---- |
 | TermsofUse | Termos de utilização (se configurado pelo administrador) | iOS/Android | **Recusar Tudo** |
 | TermsofUse | Termos de utilização até **Aceitar tudo** | iOS/Android | Demorou mais de 30 minutos |
 
 #### <a name="complianceactivation-section"></a>Secção de Conformidade/Ativação
 
-| Nome do abandono | Ecrã ou fluxo | Platform | Ação |
+| Nome do abandono | Ecrã ou fluxo | Plataforma | Ação |
 | ---- |---- |---- |---- |
 | Conformidade | A conformidade do dispositivo (se configurado pelo administrador) é apresentada como não verde na fase de pós-inscrição da configuração do acesso| iOS/Android | **Adiar** |
 | Conformidade | A conformidade do dispositivo é apresentada como não verde até ser atualizada e ficar a verde | iOS/Android | Demorou mais de 30 minutos |

@@ -16,14 +16,15 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2ae378550a75f756390053e44eb4fbd04f665612
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: dd39e6f4cff0caf9935ba217b9e94cf3529bf0f1
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179094"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55844212"
 ---
-# <a name="quickstart-create-and-assign-an-app-protection-policy"></a>Guia de Início Rápido: criar e atribuir uma política de proteção de aplicações
+# <a name="quickstart-create-and-assign-an-app-protection-policy"></a>Início rápido: Criar e atribuir uma política de proteção de aplicações
 
 Neste guia de início rápido, irá utilizar o Intune para criar e atribuir uma política de proteção de aplicações a uma aplicação cliente no dispositivo de um utilizador final. O Intune utiliza políticas de proteção de aplicações para confirmar que as suas aplicações estão a cumprir os requisitos de proteção de dados da sua organização.
 
@@ -45,9 +46,9 @@ Siga os seguintes passos para criar uma política de proteção de aplicações:
 2. Introduza os seguintes detalhes: 
 
     - **Nome**: *Proteção de conteúdo do Windows 10*
-    - **Descrição**: *Os utilizadores associados a esta política não conseguirão cortar, copiar nem colar conteúdos entre a aplicação atribuída e outras aplicações não geridas no dispositivo.*
+    - **Descrição**: *Os utilizadores associados a esta política não será capazes de cortar, copiar ou colar qualquer conteúdo entre a aplicação atribuída e outras aplicações não geridas no dispositivo.*
     - **Plataforma**: *Windows 10*
-    - **Estado da inscrição**: *Com inscrição*
+    - **Estado da inscrição**: *Com a inscrição*
 
 3. Selecione **Aplicações protegidas** para selecionar as aplicações que têm de cumprir esta política.
 4. Clique em **Adicionar aplicações**.
@@ -84,4 +85,4 @@ Neste guia de início rápido, criou e atribuiu uma política de proteção de a
 Para seguir esta série de guias de início rápido do Intune, continue para o próximo guia de início rápido.
 
 > [!div class="nextstepaction"]
-> [Guia de Início Rápido: criar e atribuir uma função personalizada](quickstart-create-custom-role.md)
+> [Início rápido: Criar e atribuir uma função personalizada](quickstart-create-custom-role.md)

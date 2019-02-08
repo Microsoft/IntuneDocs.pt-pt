@@ -16,12 +16,13 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser; seodec18
-ms.openlocfilehash: d7edf041157ba0ffc5e195b08633f1f0407c0c88
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 83ff4d6b50a656c996d1a7987f10da7065cb40f9
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53031675"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55844290"
 ---
 # <a name="you-need-to-update-your-android-devices-operating-system"></a>Tem de atualizar o sistema operativo do seu dispositivo Android
 

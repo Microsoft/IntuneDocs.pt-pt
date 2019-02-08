@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 9cc2cc35a29949e78e723026865c057fec548bc3
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: b3518707aa90c3866fbf8b24936db6d781712bdb
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43150737"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55839996"
 ---
 # <a name="unenroll-your-macos-device-from-intune"></a>Anular a inscrição do seu dispositivo macOS no Intune
 
@@ -42,7 +43,7 @@ Quando anular a inscrição do dispositivo no Intune, eis o que acontece:
 
 -   Todas as definições alteradas no dispositivo quando o adicionou (por exemplo, o comprimento da palavra-passe) deixam de ser aplicáveis.
 
--   É possível que deixe de ter acesso a alguns recursos da empresa, como partilhas de ficheiros ou web sites internos, no seu dispositivo.
+-   É possível que deixe de ter acesso a alguns recursos da empresa, como partilhas de ficheiros ou sites internos, no seu dispositivo.
 
 -   Deixará de poder utilizar aplicações e dados da empresa no seu dispositivo.
 

@@ -16,12 +16,13 @@ ms.reviewer: owenyen
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
-ms.openlocfilehash: 7c6bdbde87f6438696b5a262ba1890532dcfccdd
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 4d123f2b373f0f10027dde53081699d819cdb394
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180870"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55845453"
 ---
 # <a name="keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune"></a>Manter os PCs Windows atualizados com atualizações de software no Microsoft Intune
 
@@ -54,7 +55,7 @@ A tabela seguinte mostra os valores que pode configurar na política e os valore
   |Definição de política|Detalhes|
     |------------------|--------------------|
     |**Frequência de deteção de atualizações e aplicações (horas)** |Especifica a frequência (de 8 a 22 horas) com que o Intune procura novas atualizações e aplicações.<br /><br />Valor recomendado: **8** horas.|
-    |**Instalação automatizada ou a pedido de atualizações e aplicações** |Especifica se as atualizações são instaladas automaticamente ou se é pedido ao utilizador antes de instalar. Esta definição permite-lhe também agendar a instalação das atualizações e aplicações.<br /><br />**Instalar atualizações e aplicações automaticamente conforme agendado** instala atualizações e aplicações através da agenda especificada.<br /><br />Enquanto definição dependente de uma política, **Utilizar Manutenção Automática para computadores com Windows**  especifica que as atualizações e as aplicações são instaladas durante a janela de manutenção automática do Windows.<br /><br />**Pedir ao utilizador para instalar** pede ao utilizador para instalar atualizações quando estas estão prontas.<br /><br />Valores recomendados:<br /><br />Definição **Instalar atualizações e aplicações automaticamente conforme agendado** selecionada<br /><br />**Dia agendado: todos os dias**<br /><br />**Hora agendada: 3:00**<br /><br />Definição **Utilizar Manutenção Automática para computadores Windows** selecionada|
+    |**Instalação automatizada ou a pedido de atualizações e aplicações** |Especifica se as atualizações são instaladas automaticamente ou se é pedido ao utilizador antes de instalar. Esta definição permite-lhe também agendar a instalação das atualizações e aplicações.<br /><br />**Instalar atualizações e aplicações automaticamente conforme agendado** instala atualizações e aplicações através da agenda especificada.<br /><br />Enquanto definição dependente de uma política, **Utilizar Manutenção Automática para computadores com Windows**  especifica que as atualizações e as aplicações são instaladas durante a janela de manutenção automática do Windows.<br /><br />**Pedir ao utilizador para instalar** pede ao utilizador para instalar atualizações quando estas estão prontas.<br /><br />Valores recomendados:<br /><br />Definição **Instalar atualizações e aplicações automaticamente conforme agendado** selecionada<br /><br />**Dia agendado: Todos os dias**<br /><br />**Hora agendada: : 3:00**<br /><br />Definição **Utilizar Manutenção Automática para computadores Windows** selecionada|
     |**Permitir a instalação imediata de atualizações que não interrompem o Windows** |**Permitir** instala atualizações imediatamente após serem transferidas, exceto as atualizações que iriam interromper ou reiniciar o Windows. Estas atualizações são instaladas de acordo com a configuração da definição **Instalação automatizada ou a pedido de atualizações**.<br /><br />**Não permitir** instala atualizações de acordo com a configuração da definição **Instalação automatizada ou a pedido de atualizações**.<br /><br />Valor recomendado: **Permitir** |
     |**Atrasar o reinício do Windows após a instalação das atualizações e aplicações agendadas (minutos)** |Especifica (de 1-30 minutos) o tempo de espera para reiniciar o Windows após instalar as atualizações e aplicações agendadas.<br /><br />Valor recomendado: **15 minutos** |
     |**Atrasar após reiniciar o Windows para começar a instalar as atualizações e aplicações agendadas perdidas (minutos)** |Especifica (de 1-60 minutos) quanto tempo aguardar para começar a instalação de atualizações e aplicações após o Windows ser reiniciado quando uma atualização agendada foi perdida.<br /><br />Valor recomendado: **5 minutos**|
@@ -76,7 +77,7 @@ Utilize os dois métodos seguintes para ajudá-lo a preparar-se para utilizar as
 
 1.  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com/), escolha **Admin**&gt;**Atualizações**.
 
-2.  Na página **Definições de Serviço: Atualizações**, na lista **Categorias de Produtos**, selecione as categorias de atualizações que pretende disponibilizar aos computadores. Tenha em atenção que as atualizações mais comuns estão selecionadas por predefinição.
+2.  Sobre o **definições do serviço: As atualizações** página, além do **categoria de produto** , selecione as categorias de atualizações que pretende disponibilizar a computadores. Tenha em atenção que as atualizações mais comuns estão selecionadas por predefinição.
 
     > [!IMPORTANT]
     > Para garantir que os computadores recebem as atualizações que foram aprovadas pelo administrador, a definição da Política de Grupo do Windows Server Update Services (WSUS), **Especificar localização do serviço de atualizações da Microsoft na intranet** não pode estar aplicada a computadores inscritos com o Intune.
@@ -89,7 +90,7 @@ Utilize os dois métodos seguintes para ajudá-lo a preparar-se para utilizar as
 
 1.  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com/), escolha **Admin**&gt;**Atualizações**.
 
-2.  Na secção **Regras de Aprovação Automática** da página **Definições do Servidor: Atualizações**, escolha **Novo**.
+2.  Na **regras de aprovação automática** secção a **as definições do servidor: As atualizações** página, selecione **New**.
 
 3.  Na página **Geral** do Assistente de Criação de Regra de Aprovação Automática, especifique o nome e descrição opcional da regra.
 
@@ -110,7 +111,7 @@ Utilize os dois métodos seguintes para ajudá-lo a preparar-se para utilizar as
 
 7.  Na página **Resumo**, reveja as definições da nova regra e, em seguida, escolha **Concluir**.
 
-A nova regra é apresentada na secção **Regras de Aprovação Automática** da página **Definições de Serviço: Atualizações**.
+A nova regra é apresentada na **regras de aprovação automática** secção a **as definições do serviço: Atualizações** página.
 
 > [!NOTE]
 > Quando cria uma regra de aprovação automática, esta só aprova atualizações futuras e não aprova automaticamente atualizações já existentes no Intune. Para aprovar estas atualizações tem de executar a regra de aprovação automática.

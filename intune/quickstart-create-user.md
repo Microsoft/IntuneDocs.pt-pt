@@ -11,14 +11,15 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: b5653c67766a3312cf7ce2872e8b0cd4301b0e8b
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 982caa46adb29ef1d57ec65ac855adca9cef1883
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189500"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834845"
 ---
-# <a name="quickstart-create-a-user-and-assign-a-license-to-it"></a>Início Rápido: criar um utilizador e atribuir uma licença ao mesmo
+# <a name="quickstart-create-a-user-and-assign-a-license-to-it"></a>Início rápido: Criar um utilizador e atribuir uma licença ao mesmo
 
 Neste guia de início rápido, irá criar um utilizador e, em seguida, atribuir uma licença ao mesmo. Ao utilizar o Intune, é necessário que todas as pessoas que pretende que tenham acesso aos dados da empresa tenham uma conta de utilizador. Os administradores do Intune podem configurar posteriormente esses utilizadores para gerirem o controlo de acesso.
 
@@ -70,4 +71,4 @@ Neste guia de início rápido, criou um utilizador e atribuiu uma licença ao me
 Para seguir esta série de guias de início rápido do Intune, continue para o próximo guia de início rápido.
 
 > [!div class="nextstepaction"]
-> [Guia de Início Rápido: criar um grupo para gerir utilizadores](quickstart-create-group.md)
+> [Início rápido: Criar um grupo para gerir utilizadores](quickstart-create-group.md)
