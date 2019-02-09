@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8ee33525c382b09952a28fad09ee7844e73f2257
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 299e76d55cd5fc61d96a81a49f721bc5c0c69a11
+ms.sourcegitcommit: 77c63ddb51ffd5258f4ea0e68672c2eb011b83e1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55850399"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55905854"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -283,7 +283,7 @@ A nova experiência permite-lhe descrever o seu problema pelas suas próprias pa
 ### <a name="role-based-access-control"></a>Controlo de acesso baseado em funções
 
 #### <a name="scope-tags-for-apps----1081941---"></a>Etiquetas de âmbito para aplicações <!-- 1081941 -->
-Pode criar etiquetas de âmbito para limitar o acesso para aplicações e funções. Pode adicionar uma etiqueta de âmbito a uma aplicação para que apenas as pessoas com funções atribuídas também essa etiqueta de âmbito tenham acesso à aplicação. Aplicações adquiridas através do Apple Volume Purchase Program (VPP) não não possível atribuir etiquetas de âmbito.  Para obter mais informações, consulte [utilizar etiquetas de âmbito para políticas de filtro](scope-tags.md).
+Pode criar etiquetas de âmbito para limitar o acesso para aplicações e funções. Pode adicionar uma etiqueta de âmbito a uma aplicação para que apenas as pessoas com funções atribuídas também essa etiqueta de âmbito tenham acesso à aplicação. Atualmente, aplicações que adicionar ao Intune a partir do Google Play gerido ou aplicações adquiridas através do Apple Volume Purchase Program (VPP) não não possível atribuir etiquetas de âmbito (mas suporte virão no futuro). Para obter mais informações, consulte [utilizar etiquetas de âmbito para políticas de filtro](scope-tags.md).
 
 
 

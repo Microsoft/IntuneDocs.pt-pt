@@ -5,7 +5,7 @@ description: Suportado as definições de linha de base de segurança do Windows
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/04/2019
+ms.date: 02/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,17 +16,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 86bfda9d7220ea3557bb12a5d6c8ce6ed8cd3932
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 91a8364927667bbc910d86dc3e95f447eb5cf93a
+ms.sourcegitcommit: 77c63ddb51ffd5258f4ea0e68672c2eb011b83e1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55840608"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55905820"
 ---
 # <a name="windows-security-baseline-settings-for-intune"></a>Definições da linha de base de segurança do Windows para o Intune  
 
 Ver os [definições de linha de base de segurança do Windows](security-baselines.md) que são suportadas pelo Microsoft Intune.  
 
+> [!NOTE]  
+> As definições de linha de base de segurança do Windows estão em pré-visualização. Enquanto está em pré-visualização, a lista de definições disponíveis e a ordem em que este conteúdo apresenta essas definições, irão variar consoante o que está disponível no portal.  
+>  
+> Quando as definições de linha de base do modo de pré-visualização, este conteúdo será atualizado com a lista de pré-visualização de definições de linha de base de segurança que o Intune suporta.  
 
 ## <a name="above-lock"></a>Acima de bloqueio  
 Para obter mais informações, consulte [CSP de política - AboveLock](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-abovelock) na documentação do Windows.  
@@ -164,11 +168,12 @@ Para obter mais informações, consulte [CSP de política - DeviceGuard](https:/
   Se em Virtualização com a base de segurança (VBS) no próximo reinício. A segurança baseada em Virtualização utiliza o Windows Hypervisor para dar suporte aos serviços de segurança e requer o Windows Hypervisor.
   - **Predefinido**: Sim  
 
-- **Ativar o arranque seguro com o DMA**  
-  Entre os comandos que se seguem, pode escolher as definições de inicialização segura e inicialização segura com o DMA. Na maioria das situações, é recomendável que escolha o arranque seguro. Esta opção fornece o arranque seguro com tanta proteção que seja suportada pelo hardware de um determinado computador. Um computador com as unidades de gerenciamento de memória de entrada/saída (IOMMUs) tem o arranque seguro com a proteção de DMA. Um computador sem IOMMUs simplesmente terão o arranque seguro ativado. Por outro lado, com o arranque seguro com o DMA, a definição irá ativar o arranque seguro — e VBS em si — apenas num computador que suporta o DMA, ou seja, um computador com IOMMUs. Com esta definição, qualquer computador sem IOMMUs não terão a proteção VBS ou HVCI, embora ele tenha ainda WDAC ativada.
+<!-- not yet available 
+- **Enable secure boot with DMA**  
+  Among the commands that follow, you can choose settings for Secure Boot and Secure Boot with DMA. In most situations, we recommend that you choose Secure Boot. This option provides Secure Boot with as much protection as is supported by a given computer’s hardware. A computer with input/output memory management units (IOMMUs) will have Secure Boot with DMA protection. A computer without IOMMUs will simply have Secure Boot enabled. In contrast, with Secure Boot with DMA, the setting will enable Secure Boot—and VBS itself—only on a computer that supports DMA, that is, a computer with IOMMUs. With this setting, any computer without IOMMUs will not have VBS or HVCI protection, although it can still have WDAC enabled.
   
-  - **Predefinido**: Sim  
-  
+  - **Default**: Yes  
+  -->
 - **Inicie a proteção do sistema**  
   - **Predefinido**: Ativado  
 
@@ -181,11 +186,11 @@ Para obter mais informações, consulte [CSP de política - DeviceInstallation](
   
     - **Remover dispositivos de hardware correspondente**  
       Esta definição só está disponível quando *instalação de dispositivo de Hardware por identificadores de dispositivo* está definida como *bloqueia a instalação de dispositivo de hardware*.
-      - **Predefinido**: *Nenhuma configuração predefinida*
+      - **Predefinido**: Sim
   
     - **Identificadores de dispositivo de hardware que estão bloqueados**  </br>
       Esta definição só está disponível quando *instalação de dispositivo de Hardware por identificadores de dispositivo* está definida como *bloqueia a instalação de dispositivo de hardware*.
-      - **Predefinido**: *Nenhuma configuração predefinida*  
+      - **Predefinido**: Sim  
   
 - **Instalação de dispositivo de hardware por classes de instalação**  
   Esta definição de política permite-lhe especificar uma lista de dispositivos configuração classe identificadores globalmente exclusivos (GUIDs) para os controladores de dispositivo que o Windows é impedidos de instalar. Esta definição de política tem precedência sobre qualquer outra definição de política que permite que o Windows instalar um dispositivo. Se ativar esta definição de política, o Windows é impedidos de instalar ou atualizar drivers de dispositivo cujo classe de instalação do dispositivo GUIDs aparecem na lista de criar. Se ativar esta definição de política num servidor de ambiente de trabalho remoto, a definição de política afeta o redirecionamento dos dispositivos especificados de um cliente de ambiente de trabalho remoto para o servidor de ambiente de trabalho remoto. Se desabilitar ou não configurar esta definição de política, podem instalar o Windows e dispositivos de atualização como permitido ou impediam por outras configurações de diretiva.
@@ -299,23 +304,23 @@ Para obter mais informações, consulte [CSP de política - Explorador de fichei
 
 ## <a name="internet-explorer"></a>Internet Explorer  
 Para obter mais informações, consulte [CSP de política - InternetExplorer](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-internetexplorer) na documentação do Windows.  
-
-- **Analisar mensagens de correio recebidas**  
-  Permite ou proíbe a verificação de e-mail.
-  - **Predefinido**: Desativado  
+<!-- not yet available 
+- **Scan incoming mail messages**  
+  Allows or disallows scanning of email.
+  - **Default**: Disabled  
   
-- **Tipo de processo filho de lançamento de aplicações do Office**  
-  Aplicações do Office não terá permissão para criar processos de subordinados. Isto inclui Word, Excel, PowerPoint, OneNote e acesso. Este é um comportamento típico de malware, especialmente para ataques baseados na macro que tentam utilizar aplicações do Office para iniciar ou transferir executáveis mal-intencionados.
-  - **Predefinido**: Desativar  
+- **Office apps launch child process type**  
+  Office apps will not be allowed to create child processes. This includes Word, Excel, PowerPoint, OneNote, and Access. This is a typical malware behavior, especially for macro-based attacks that attempt to use Office apps to launch or download malicious executables.
+  - **Default**: Disable  
   
-- **Tipo de consentimento de submissão de exemplo do Defender**  
-  Nível no Windows Defender para enviar dados de consentimento de verificações para o utilizador. Se já tiver sido concedido o consentimento necessário, o Windows Defender envia-os. Se não for (e se o usuário especificou nunca para perguntar), a interface do Usuário é iniciado para pedir consentimento do utilizador (quando o Defender/AllowCloudProtection é permitido) antes de enviar dados.
-  - **Predefinido**: Desativar  
+- **Defender sample submission consent type**  
+  Checks for the user consent level in Windows Defender to send data. If the required consent has already been granted, Windows Defender submits them. If not (and if the user has specified never to ask), the UI is launched to ask for user consent (when Defender/AllowCloudProtection is allowed) before sending data.
+  - **Default**: Disable  
   
-- **Intervalo de atualização de assinatura (em horas)**  
-  Intervalo de atualização de assinatura de Defender em horas
-  - **Predefinido**: Desativado  
-  
+- **Signature update interval (in hours)**  
+  Defender signature update interval in hours
+  - **Default**: Disabled  
+ -->
 - **Acesso da zona de internet do Internet Explorer para origens de dados**  
   Esta definição de política permite-lhe gerir se o Internet Explorer pode acessar dados de outra zona de segurança com o Microsoft XML Parser (MSXML) ou ActiveX Data Objects (ADO). Se ativar esta definição de política, os utilizadores podem carregar uma página na zona que utiliza o MSXML ou o ADO para acessar dados a partir de outro site na zona. Se selecionar a linha de comandos na caixa de lista pendente, os utilizadores são consultados para escolher se pretende permitir que uma página seja carregado na zona que utiliza o MSXML ou o ADO para acessar dados a partir de outro site na zona. Se desativar esta definição de política, os utilizadores não é possível carregar uma página na zona que utiliza o MSXML ou o ADO para acessar dados a partir de outro site na zona. Se não configurar esta definição de política, os utilizadores não é possível carregar uma página na zona que utiliza o MSXML ou o ADO para acessar dados a partir de outro site na zona.
   - **Predefinido**: Desativar  
@@ -944,12 +949,12 @@ Para obter mais informações, consulte [CSP de política - RemoteManagement](ht
   Esta definição de política permite-lhe gerir se o cliente de gestão remota do Windows (WinRM) utiliza a autenticação resumida. Se ativar esta definição de política, o cliente WinRM não utiliza a autenticação de texto implícita. Se desabilitar ou não configurar esta definição de política, o cliente WinRM utiliza autenticação resumida.
   - **Predefinido**: Ativado
   
-- **Autenticação de texto implícita de cliente de bloco**  
-  Esta definição de política permite-lhe gerir se o serviço de gestão remota do Windows (WinRM) envia e recebe mensagens não encriptadas através da rede. Se ativar esta definição de política, o cliente WinRM envia e recebe mensagens não encriptadas através da rede. Se desabilitar ou não configurar esta definição de política, o cliente WinRM envia ou recebe apenas as mensagens encriptadas através da rede.
+- **Tráfego não criptografado**  
+  Esta definição de política permite-lhe gerir se o serviço de gestão remota do Windows (WinRM) envia e recebe mensagens não encriptadas através da rede. Se ativar esta definição de política, o cliente WinRM envia e recebe mensagens não encriptadas através da rede. Se desabilitar ou não configurar esta definição de política, o cliente WinRM envia ou recebe apenas as mensagens encriptadas através da rede.  
   - **Predefinido**: Desativado
   
-- **Autenticação de texto implícita de cliente de bloco**  
-  Definição de política de TThis permite-lhe gerir se o serviço de gestão remota do Windows (WinRM) envia e recebe mensagens não encriptadas através da rede. Se ativar esta definição de política, o cliente WinRM envia e recebe mensagens não encriptadas através da rede. Se desabilitar ou não configurar esta definição de política, o cliente WinRM envia ou recebe apenas as mensagens encriptadas através da rede.
+- **Tráfego de cliente não encriptada**  
+  Esta definição de política permite-lhe gerir se o cliente de gestão remota do Windows (WinRM) envia e recebe mensagens não encriptadas através da rede. Se ativar esta definição de política, o cliente WinRM envia e recebe mensagens não encriptadas através da rede. Se desabilitar ou não configurar esta definição de política, o cliente WinRM envia ou recebe apenas as mensagens encriptadas através da rede.
   - **Predefinido**: Desativado
   
 - **Autenticação básica do cliente**  
