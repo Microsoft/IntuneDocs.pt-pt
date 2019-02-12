@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/28/2017
+ms.date: 02/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,29 +16,26 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8640cf015d03c9d40d7eacbe1a4103d30db63477
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: cfe74086393ab3583c6238e6f252406665a3d17f
+ms.sourcegitcommit: c0b954c82cd732b5328f92b618947bf425bf0a91
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55840576"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56086034"
 ---
 # <a name="what-is-mobile-threat-defense-integration-with-intune"></a>O que é a integração da Defesa Contra Ameaças para Dispositivos Móveis com o Intune?
-
-
-Os conectores de Defesa Contra Ameaças para Dispositivos Móveis do Intune permitem-lhe recorrer ao seu fornecedor de Defesa Contra Ameaças para Dispositivos Móveis escolhido como uma fonte de informações sobre as suas políticas de conformidade e regras de acesso condicional. Isto permite aos administradores de TI adicionar uma camada de segurança aos recursos da sua empresa, como o Exchange e o SharePoint, em particular a partir de dispositivos móveis comprometidos.
+Intune pode integrar dados de um fornecedor de defesa contra ameaças móveis como uma origem de informações para políticas de conformidade e regras de acesso condicional. Pode usar essas informações para ajudar a proteger recursos da empresa, como o Exchange e SharePoint, ao bloquear o acesso a partir de dispositivos móveis comprometidos.  
 
 ## <a name="what-problem-does-this-solve"></a>Que problema é que isto resolve?
+Integração de informações de um fornecedor de defesa contra ameaças móveis pode ajudar a proteger os recursos da empresa de ameaças que afetam as plataformas móveis.  
 
-As empresas precisam de proteger os dados confidenciais de ameaças emergentes que incluem ameaças com base na rede, com base na aplicação e físicas, bem como vulnerabilidades do sistema operativo.
-
-Historicamente, as empresas sempre foram proativas ao proteger os PCs contra ataques, enquanto os dispositivos móveis permanecem não monitorizados e desprotegidos. As plataformas móveis têm proteção incorporada, como o isolamento de aplicações e lojas de aplicações de clientes avaliadas, mas estas plataformas permanecem vulneráveis a ataques sofisticados. Hoje em dia, os funcionários utilizam cada vez mais os dispositivos para trabalhar e precisam de aceder a informações confidenciais. Os dispositivos têm de ser protegidos contra ataques cada vez mais sofisticados.
+Normalmente, as empresas estão proativas em proteger os PCs contra vulnerabilidades e atacam enquanto dispositivos móveis, muitas vezes, não monitorizados e desprotegidos. Em que plataformas móveis terem proteção incorporada, como o isolamento de aplicações e lojas de aplicações de clientes avaliadas, estas plataformas permanecem vulneráveis a ataques sofisticados. Conforme mais funcionários utilizem os dispositivos para trabalhar e aceder a informações confidenciais, as informações do fornecedor de defesa contra ameaças móveis podem ajudar a proteger os dispositivos e seus recursos contra ataques cada vez mais sofisticados.  
 
 ## <a name="how-do-the-intune-mobile-threat-defense-connectors-work"></a>Como é que os conectores da Defesa Contra Ameaças para Dispositivos Móveis do Intune funcionam?
 
-Os conectores protegem os recursos da empresa ao criar um canal de comunicação entre o Intune e o seu fornecedor de Defesa Contra Ameaças para Dispositivos Móveis escolhido. Os parceiros de Defesa Contra Ameaças Para Dispositivos Móveis do Intune oferecem aplicações intuitivas e fáceis de implementar para dispositivos móveis, que detetam e analisam ativamente as informações sobre ameaças a serem partilhadas com o Intune, quer para efeitos de imposição ou para enviar relatórios. 
+Para criar um canal de comunicação entre o Intune e o seu fornecedor de defesa contra ameaças móveis escolhido, o Intune utiliza um conector de defesa contra ameaças móveis. Parceiros de defesa contra ameaças do Intune Mobile oferecem intuitivas e fáceis de implementar aplicações para dispositivos móveis. Estas aplicações e analisam ativamente as informações de ameaças para partilhar com o Intune. Intune pode utilizar os dados para fins de relatórios ou imposição.  
 
-Por exemplo, se uma aplicação ligada à Defesa Contra Ameaças para Dispositivos Móveis comunicar ao fornecedor de Defesa Contra Ameaças para Dispositivos Móveis que um certo telemóvel na sua rede está atualmente ligado a uma rede vulnerável a ataques man-in-the-middle, estas informações são partilhadas e categorizadas com o nível de risco adequado (baixo/médio/alto), as quais poderá comparar com as permissões de níveis de risco que configurou no Intune para determinar se o acesso aos recursos que escolher deve ser revogado enquanto o dispositivo estiver comprometido.
+Por exemplo: Uma aplicação de Mobile Threat Defense ligada relatórios ao fornecedor de defesa contra ameaças móveis do que um telefone na sua rede está atualmente ligado a uma rede vulnerável a Man nos ataques de meio. Esta informação é categorizada a um nível de risco adequado de baixa, média ou alta. Este nível de risco é, em seguida, em comparação com as permissões de nível de risco que definir no Intune. Com base nesta comparação, acesso a determinados recursos da sua preferência pode ser revogado enquanto o dispositivo estiver comprometido.
 
 ## <a name="what-data-does-intune-collect-for-mobile-threat-defense"></a>Que dados são recolhidos pelo Intune para a Defesa Contra Ameaças para Dispositivos Móveis?
 

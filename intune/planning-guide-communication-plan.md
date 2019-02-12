@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 157328b1fdf774f46d69e619ec0e44e32cbba101
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 39e6f5e13544ba2863320d96984611c9a94b4ff4
+ms.sourcegitcommit: c0b954c82cd732b5328f92b618947bf425bf0a91
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55834294"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56086000"
 ---
 # <a name="develop-a-rollout-communication-plan"></a>Desenvolver um plano de comunicação de implementação
 
@@ -56,7 +56,7 @@ Poderá considerar este [guia de inscrição do utilizador final](https://galler
 
 Há vários métodos de entrega que pode utilizar para comunicar informações relativas à implementação do Intune aos seus grupos organizacionais e utilizadores de destino. A seguinte lista mostra alguns exemplos e a fase com a qual pode utilizar o método:
 
--   Reuniões presenciais ou por Skype ao nível de toda a organização utilizadas na fase inicial
+-   Toda a organização presenciais ou reuniões do Microsoft Teams utilizadas na fase inicial
 
 -   E-mail utilizado nas fases de pré-inscrição, inscrição e pós-inscrição
 

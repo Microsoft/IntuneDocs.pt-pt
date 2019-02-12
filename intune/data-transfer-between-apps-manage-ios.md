@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eabe1bdba35c40b07c6c8e17e6a58d17ed14a966
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: f87b40a32c17ecbdfc3fc9c5bf6937d8793b4e05
+ms.sourcegitcommit: e262b0ad8df610e25eb9421b9ebc2673bcf1020e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55843039"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "55986846"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Como gerir a transferência de dados entre aplicações iOS no Microsoft Intune
 
@@ -50,11 +50,15 @@ A configuração da definição de UPN do utilizador é **obrigatória** para di
 
 2.  Implemente as aplicações e o perfil de e-mail que pretende que sejam geridos através do Intune ou a sua solução de MDM de terceiros através dos seguintes passos generalizados. Esta experiência também é abrangida pelo *exemplo 1*.
 
-3.  Implemente a aplicação com as seguintes definições de configuração de aplicação:
+3.  Implemente a aplicação com as seguintes definições de configuração de aplicação no dispositivo gerido:
 
       **key** = IntuneMAMUPN, **value** = <username@company.com>
 
       Exemplo: [‘IntuneMAMUPN’, ‘jondoe@microsoft.com’]
+      
+       > [!NOTE]
+       > No Intune, a política de configuração de aplicação tem de ser de tipo de inscrição "Dispositivos geridos pelo".
+       > Addicionally, a aplicação tem de ser instalado a partir do Portal da empresa do Intune se definido como disponível ou enviada por push conforme necessário para o dispositivo. 
 
 4.  Implemente a política **Gestão Open In** ao utilizar o Intune ou o seu fornecedor de MDM de terceiros nos dispositivos inscritos.
 

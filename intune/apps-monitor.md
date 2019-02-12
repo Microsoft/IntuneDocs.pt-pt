@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 722ab086f0a353eff3ed4737fdd2a92f80bf46ce
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 91923f1569c3f74c0e06aad3b92a77b677488072
+ms.sourcegitcommit: c0b954c82cd732b5328f92b618947bf425bf0a91
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55833927"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56086068"
 ---
 # <a name="monitor-app-information-and-assignments-with-microsoft-intune"></a>Monitorizar informações e atribuições da aplicação com o Microsoft Intune
 
@@ -81,7 +81,7 @@ Uma lista de estados do dispositivo é apresentada ao selecionar **Estado de ins
 | **Nome do dispositivo**      | O nome do dispositivo nas plataformas que permitem atribuir um nome aos dispositivos. Noutras plataformas, o Intune cria um nome a partir de outras propriedades. Este atributo não está disponível em mais nenhum dispositivo.                                                                       |
 | **Nome de utilizador**        | O nome do utilizador.                                                                                                                                                                                                                                      |
 | **Plataforma**         | O sistema operativo do dispositivo (Windows, iOS, Android, entre outros).                                                                                                                                                                                           |
-| **Versão**          | O número da versão da aplicação. Para aplicações de linha de negócios, será apresentado o número completo da versão da aplicação. O número da versão completo identifica uma versão específica da aplicação. O número é apresentado como _Versão_(_Compilação_), Por exemplo, 2.2 (2.2.17560800). |
+| **Versão**          | O número da versão da aplicação. Para aplicações de linha de negócio (LOB), é apresentado o número da versão completo da aplicação. O número da versão completo identifica uma versão específica da aplicação. O número é apresentado como _Versão_(_Compilação_), Por exemplo, 2.2 (2.2.17560800). Para aplicações de Store, não existem versões são apresentadas. |
 | **Estado**           | O estado da aplicação.                                                                                                                                                                                                                                     |
 | **Detalhes do estado**   | Os detalhes do estado.                                                                                                                                                                                                                                     |
 | **Último registo**    | A data da última sincronização do dispositivo com o Intune.                                                                                                                                                                                                                  |

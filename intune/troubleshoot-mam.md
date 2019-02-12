@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bb79dcb2ff858d283fc5a843dca1b3d5acb3ec9c
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: e827862510f24a2f133562c836d6c1b47186c330
+ms.sourcegitcommit: c0b954c82cd732b5328f92b618947bf425bf0a91
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55845640"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56086153"
 ---
 # <a name="troubleshoot-mobile-application-management"></a>Resolução de problemas de gestão de aplicações móveis
 
@@ -35,9 +35,9 @@ Estes são os problemas comuns que um administrador de TI poderá experienciar a
 
 | Problema | Descrição | Resolução |
 | -- | -- | -- |
-| A política não está a ser aplicada ao Skype para Empresas | A política de proteção de aplicações sem inscrição de dispositivos, criada no portal do Azure, não está a ser aplicada à aplicação Skype para Empresas nos dispositivos iOS e Android. | O Skype para Empresas tem de ser configurado para autenticação moderna.  Siga as instruções em [Enable your tenant for modern authentication (Ativar o seu inquilino para autenticação moderna – em inglês)](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) para configurar a autenticação moderna para o Skype. |
+| A política não está a ser aplicada ao Skype para Empresas | A política de proteção de aplicações sem inscrição de dispositivos, criada no portal do Azure, não está a ser aplicada à aplicação Skype para Empresas nos dispositivos iOS e Android. | O Skype para Empresas tem de ser configurado para autenticação moderna.  Siga as instruções em [Enable your tenant for modern authentication (Ativar o seu inquilino para autenticação moderna – em inglês)](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) para configurar a autenticação moderna para o Skype. |
 | A política das aplicações do Office não está a ser aplicada | As políticas de proteção de aplicações não estão a ser aplicadas a nenhuma [aplicação do Office suportada](https://www.microsoft.com/cloud-platform/microsoft-intune-partners) para nenhum utilizador. | Confirme que o utilizador tem licença para o Intune e que as aplicações do Office são visadas por uma política de proteção de aplicações implementada. Pode demorar até 8 horas para que seja aplicada uma política de proteção de aplicações recentemente implementada. |
-| O administrador não consegue configurar a política de proteção de aplicações no Portal do Azure | O utilizador de administração de TI não consegue configurar políticas de proteção de aplicações no Portal do Azure. | As seguintes funções de utilizador têm acesso ao Portal do Azure: <ul><li>Administrador global, que pode configurar no [Portal do Office](http://portal.office.com/)</li><li>Proprietário, que pode configurar no [Portal do Azure](https://portal.azure.com/).</li><li>Contribuinte, que pode configurar no [Portal do Azure](https://portal.azure.com/).</li></ul> Consulte a [controlo de administração baseada em funções (RBAC) com o Microsoft Intune](role-based-access-control.md) para obter ajuda a configurar estas funções.|
+| O administrador não consegue configurar a política de proteção de aplicações no Portal do Azure | O utilizador de administração de TI não consegue configurar políticas de proteção de aplicações no Portal do Azure. | As seguintes funções de utilizador têm acesso ao Portal do Azure: <ul><li>Administrador global, que pode configurar no [Portal do Office](https://portal.office.com/)</li><li>Proprietário, que pode configurar no [Portal do Azure](https://portal.azure.com/).</li><li>Contribuinte, que pode configurar no [Portal do Azure](https://portal.azure.com/).</li></ul> Consulte a [controlo de administração baseada em funções (RBAC) com o Microsoft Intune](role-based-access-control.md) para obter ajuda a configurar estas funções.|
 |Há contas de utilizador em falta em relatórios de política de proteção de aplicações | Os relatórios de consola de administração não mostram as contas de utilizador nas quais a política de proteção de aplicações foi recentemente implementada. | Se um utilizador foi recentemente visado por uma política de proteção de aplicações, pode demorar até 24 horas para esse utilizador ser apresentado em relatórios como um utilizador visado. |
 | As alterações à política não estão a ser aplicadas | A aplicação das alterações e atualizações à política de proteção de aplicações pode demorar até 8 horas a entrar em vigor. | Caso aplicável, o utilizador final pode terminar sessão na aplicação e voltar a iniciar sessão para forçar a sincronização com o serviço. |
 | A política de proteção de aplicações não está a funcionar com o DEP | A política de proteção de aplicações não está a ser aplicada a dispositivos DEP da Apple. | Confirme que está a utilizar a Afinidade do Utilizador com o Programa de Inscrição de Dispositivos (DEP) da Apple. A Afinidade de Utilizador é necessária para qualquer aplicação que exija autenticação do utilizador no DEP. <br><br>Consulte a [inscrever automaticamente dispositivos iOS com o programa de inscrição de dispositivos da Apple](device-enrollment-program-enroll-ios.md) para obter mais informações sobre a inscrição do DEP para iOS.|

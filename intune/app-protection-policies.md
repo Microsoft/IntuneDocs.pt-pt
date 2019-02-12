@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 084b49e4d1b285aca431a34e05286b8d32ce3f71
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: e022dbe748ebe9d77ebcd2890a6d9ef77503ebfc
+ms.sourcegitcommit: e262b0ad8df610e25eb9421b9ebc2673bcf1020e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55843481"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "55986897"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Como criar e atribuir políticas de proteção de aplicações
 
@@ -53,7 +53,7 @@ Para obter mais informações sobre como adicionar as aplicações de linha de n
 6. No painel **Adicionar uma política**, selecione **Configurar definições obrigatórias** para abrir as **Definições**.
 
    Existem três categorias de definições de política:
-   - **Reposicionamento de dados**: este grupo inclui os controlos de prevenção de perda de dados (DLP), como as restrições das operações de cortar, copiar, colar e guardar como. Estas definições determinam como os utilizadores interagem com os dados nas aplicações.
+   - **Proteção de dados** -esse grupo inclui os dados perda prevenção (DLP) controles, como cortar, copiar, colar e guardar-como restrições. Estas definições determinam como os utilizadores interagem com os dados nas aplicações.
    - **Requisitos de acesso**: este grupo contém as opções de PIN por aplicação que determinam como o utilizador final utiliza as aplicações num contexto de trabalho.  
    - **Iniciação condicional**: este grupo guarda definições como as definições de SO mínimo, de deteção de dispositivos desbloqueados por jailbreak ou rooting e de períodos de tolerância offline.
 

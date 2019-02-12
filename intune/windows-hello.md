@@ -14,12 +14,13 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2412647fd76a562949fe171c513913189ce8d08f
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.reviewer: shpate
+ms.openlocfilehash: 378fef093fe3a476b0f3be31dad3c839576bc9d8
+ms.sourcegitcommit: c0b954c82cd732b5328f92b618947bf425bf0a91
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55851671"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56086136"
 ---
 # <a name="integrate-windows-hello-for-business-with-microsoft-intune"></a>Integrar o Windows Hello para Empresas com o Microsoft Intune
 

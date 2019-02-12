@@ -16,17 +16,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2a4e8a6baf1c2e958f4984e0182a28e4c221c419
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 2706a12f9f4844f96d279f753e7cd99f159ca856
+ms.sourcegitcommit: e262b0ad8df610e25eb9421b9ebc2673bcf1020e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55851411"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "55986812"
 ---
 # <a name="configure-the-exchange-service-connector-for-intune-and-exchange-online"></a>Configurar o conector do serviço do Exchange para o Intune e Exchange Online
 Este artigo mostra-lhe como ligar o serviço do Microsoft Intune ao Exchange Online ou o novo serviço do Exchange Online Dedicado. Para determinar se o seu ambiente do Exchange Online Dedicado é a versão **nova** ou **legada**, contacte o seu gestor de conta.
 
 Com o **Conector de Serviços**, pode gerir o Exchange ActiveSync (EAS) e os dispositivos geridos do Intune a partir de uma única consola administrativa.  Não precisa do conector para ativar o Acesso Condicional para o Exchange Online.
+
+Quando planear uma implementação de acesso condicional, muitas vezes, é importante compreender quais usuários e o número de utilizadores terá a nova experiência. O Centro de administração do Office 365 fornece isso na forma de um relatório de utilização de aplicação de correio eletrónico Exchange Online como parte da funcionalidade de relatórios de atividade desse portal. Estes relatórios podem ser utilizados para compreender a adoção de e-mail do dispositivo móvel no seu ambiente antes e após a implementação do acesso condicional.
 
 ## <a name="service-to-service-connector-requirements"></a>Requisitos do Conector de Serviços
 O **Conector de Serviços** suporta apenas o Exchange Online ou o Exchange Online Dedicado e não possui requisitos para uma infraestrutura no local. 

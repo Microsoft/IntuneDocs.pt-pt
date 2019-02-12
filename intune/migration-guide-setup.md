@@ -15,12 +15,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 318806664397e2bb690d4aa7605d8f088c769f4a
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: b5e075bdf834f70cf0c138942338963886662ae3
+ms.sourcegitcommit: c0b954c82cd732b5328f92b618947bf425bf0a91
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55847408"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56086017"
 ---
 # <a name="basic-setup"></a>Configuração básica
 
@@ -36,7 +36,7 @@ O Intune precisa do Azure Active Directory (AAD) como o fornecedor de identidade
 
 -   [Requisitos da sincronização de diretórios](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-directory-sync-requirements)
 
--   [Requisitos da autenticação multifator (MFA)](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-multifactor-auth-requirements)
+-   [Autenticação multifator (MFA)](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)
 
 -   [Planear os grupos de utilizadores e de dispositivos](users-add.md)
 

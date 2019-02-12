@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/31/2017
+ms.date: 02/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4cf9f004a73c88f763cbf48694b8c72de0a12fa2
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 0fa2efe5ca8a4068bad957d96220272abf7664d6
+ms.sourcegitcommit: c0b954c82cd732b5328f92b618947bf425bf0a91
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55846422"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56085983"
 ---
 # <a name="app-based-conditional-access-with-intune"></a>Acesso condicional com base na aplicação com o Intune
 
@@ -68,13 +68,13 @@ Neste exemplo, o administrador tem políticas de proteção de aplicações apli
 
 3. A aplicação de mediador é instalada no dispositivo.
 
-4. A aplicação de mediador inicia o processo de registo do Azure AD que cria um registo de dispositivo no Azure AD. Este processo não é igual ao processo de inscrição de gestão de dispositivos móveis (MDM). Contudo, este registo é necessário para que as políticas de acesso condicional possam ser aplicadas no dispositivo.
+4. A aplicação de Mediador inicia o processo de registo do Azure AD, que cria um registo de dispositivo no Azure AD. Isso não é o mesmo que o processo de inscrição de gestão (MDM) do dispositivo móvel, mas este registo é necessário para que as políticas de acesso condicional podem ser impostas no dispositivo.
 
-5. A aplicação de mediador verifica a identidade da aplicação. Existe uma camada de segurança para que a aplicação de mediador possa validar se aplicação está autorizada a ser utilizado pelo utilizador.
+5. A aplicação de mediador verifica a identidade da aplicação. Há uma camada de segurança para que a aplicação de Mediador possa validar se aplicação está autorizada para utilização pelo utilizador.
 
 6. A aplicação de mediador envia o ID da Aplicação Cliente para o Azure AD como parte do processo de autenticação do utilizador para verificar se este consta na lista aprovada de políticas.
 
-7. O Azure AD permite ao utilizador autenticar-se e utilizar a aplicação com base na lista aprovada de políticas. Se a aplicação não constar na lista, o Azure AD recusa o acesso à aplicação.
+7. O Azure AD permite ao utilizador autenticar-se e utilizar a aplicação com base na lista aprovada de políticas. Se a aplicação não estiver na lista, do Azure AD nega o acesso à aplicação.
 
 8. A aplicação Outlook comunica com o Serviço Cloud do Outlook para iniciar a comunicação com o Exchange Online.
 

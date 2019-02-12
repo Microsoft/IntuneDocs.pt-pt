@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 578d28a333d064ddcaa413bc882c9f2cdbf60ffc
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 0d0594c9f14b9d18c597de9ca37826a669dde5f3
+ms.sourcegitcommit: e262b0ad8df610e25eb9421b9ebc2673bcf1020e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55835134"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "55986880"
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>Gerir scripts do PowerShell no Intune para dispositivos Windows 10
 
@@ -47,7 +47,7 @@ A extensão de gestão do Intune tem os seguintes pré-requisitos:
 
 1. Na [portal do Azure](https://portal.azure.com), selecione **todos os serviços** > Filtrar **Intune** > selecione **Microsoft Intune**.
 2. Selecione **Configuração do dispositivo** > **Scripts do PowerShell** > **Adicionar**.
-3. Introduza um **Nome** e uma **Descrição** para o script do PowerShell. Para **Localização do script**, navegue até ao script do PowerShell. O script tem de ser inferior a 200 KB (ASCII) ou o tamanho de 100 KB (Unicode).
+3. Introduza um **Nome** e uma **Descrição** para o script do PowerShell. Para **Localização do script**, navegue até ao script do PowerShell. O script não pode ser superior a 200 KB de tamanho.
 4. Escolha **Configurar**. Em seguida, opte por executar o script com as credenciais do utilizador no dispositivo (**Sim**) ou no contexto do sistema (**Não**). Por predefinição, o script é executado no contexto do sistema. Selecione **Sim** a menos que o script tenha de ser executado no contexto do sistema. 
   ![Painel Adicionar o script do PowerShell](./media/mgmt-extension-add-script.png)
 5. Selecione se o script tem de ser assinado por um fabricante fidedigno (**Sim**). Por predefinição, não existe um requisito para que o script seja assinado. 

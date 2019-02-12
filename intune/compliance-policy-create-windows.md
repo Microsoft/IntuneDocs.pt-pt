@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 91627174c21eb6a4e4723bdc874c758aedbb2079
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: f9c6d544d98a900900dea296a5bd72de6036739d
+ms.sourcegitcommit: e262b0ad8df610e25eb9421b9ebc2673bcf1020e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55837633"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "55986829"
 ---
 # <a name="add-a-device-compliance-policy-for-windows-devices-in-intune"></a>Adicionar uma política de conformidade para dispositivos Windows no Intune
 
@@ -191,8 +191,8 @@ Aplica-se apenas a dispositivos cogeridos com Windows 10 e posterior. Dispositiv
 
 #### <a name="device-security"></a>Segurança do Dispositivo
 
-- **Antivírus**: Quando definido como **requerem**, pode verificar a conformidade com as soluções antivírus que estão registadas com o Centro de segurança do Windows, por exemplo, Symantec e o Windows Defender. Quando estiver definido como **Não configurado**, o Intune não verifica a existência de soluções AV instaladas no dispositivo.
-- **AntiSpyware**: Quando definido como **requerem**, pode verificar a conformidade com as soluções de antispyware registados no Centro de segurança do Windows, por exemplo, Symantec e o Windows Defender. Quando estiver definido como **Não configurado**, o Intune não verifica a existência de soluções de AntiSpyware instaladas no dispositivo.
+- **Antivírus**: Quando definido como **requerem**, pode verificar a conformidade com as soluções antivírus que estão registadas [Centro de segurança do Windows](https://blogs.windows.com/windowsexperience/2017/01/23/introducing-windows-defender-security-center/), por exemplo, Symantec e o Windows Defender. Quando estiver definido como **Não configurado**, o Intune não verifica a existência de soluções AV instaladas no dispositivo.
+- **AntiSpyware**: Quando definido como **requerem**, pode verificar conformidade através de soluções de anti-spyware que estão registadas [Centro de segurança do Windows](https://blogs.windows.com/windowsexperience/2017/01/23/introducing-windows-defender-security-center/), por exemplo, Symantec e o Windows Defender. Quando estiver definido como **Não configurado**, o Intune não verifica a existência de soluções de AntiSpyware instaladas no dispositivo.
 
 ### <a name="windows-defender-atp"></a>Windows Defender ATP
 
