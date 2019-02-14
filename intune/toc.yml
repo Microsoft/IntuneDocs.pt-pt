@@ -13,7 +13,7 @@ items:
     - name: Novidades na IU da aplicação
       href: whats-new-app-ui.md
   expanded: true
-- name: Guias de Introdução
+- name: Quickstarts (Inícios Rápidos)
   items:
   - name: Experimentar o Intune gratuitamente
     href: free-trial-sign-up.md
@@ -65,6 +65,8 @@ items:
     href: common-scenarios.md
   - name: Decisões tecnológicas para BYOD com o EMS
     href: byod-technology-decisions.md
+  - name: App protection policies and work profiles (Android) (Perfis de trabalho e políticas de proteção de aplicações [Android])
+    href: android-deployment-scenarios-app-protection-work-profiles.md
   - name: Gerir versões de sistemas operativos
     href: manage-os-versions.md
   - name: Gerir Windows Holographic
@@ -75,7 +77,7 @@ items:
     href: mam-faq.md
   - name: FAQ de políticas e perfis
     href: manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md
-- name: How-to guides (Guias de procedimentos)
+- name: How-to guides (Manuais de instruções)
   items:
   - name: Implementação de planos
     items:
@@ -624,7 +626,7 @@ items:
           href: vpn-settings-android.md#android-vpn-settings
         - name: Wi-Fi
           href: wi-fi-settings-android.md
-        - name: Personalizar
+        - name: Personalizado
           href: custom-settings-android.md
           items:
           - name: Permitir/bloquear aplicações no Samsung Knox Standard
@@ -651,7 +653,7 @@ items:
           href: vpn-settings-android.md#android-for-work-vpn-settings
         - name: Wi-Fi
           href: wi-fi-settings-android-enterprise.md
-        - name: Personalizar
+        - name: Personalizado
           href: custom-settings-android-for-work.md
     - name: iOS
       items:
@@ -675,7 +677,7 @@ items:
           href: vpn-settings-ios.md
         - name: Wi-Fi
           href: wi-fi-settings-ios.md
-        - name: Personalizar
+        - name: Personalizado
           href: custom-settings-ios.md
     - name: macOS
       items:
@@ -697,7 +699,7 @@ items:
           href: vpn-settings-macos.md
         - name: Wi-Fi
           href: wi-fi-settings-macos.md
-        - name: Personalizar
+        - name: Personalizado
           href: custom-settings-macos.md
     - name: Linhas de base de segurança
       items:
@@ -737,7 +739,7 @@ items:
           href: education-settings-windows.md
         - name: Dispositivo multiutilizador partilhado
           href: shared-user-device-settings-windows.md
-        - name: Personalizar
+        - name: Personalizado
           href: custom-settings-windows-10.md
       - name: Windows update settings (Definições do Windows Update)
         href: windows-update-settings.md
@@ -751,9 +753,9 @@ items:
         href: holographic-upgrade.md
       - name: Modo de Local Público
         href: kiosk-settings-holographic.md
-      - name: Personalizar
+      - name: Personalizado
         href: custom-settings-windows-holographic.md
-    - name: Windows 8.1
+    - name: Windows 8.1
       items:
       - name: Definições da política de conformidade
         href: compliance-policy-create-windows.md#windows-81-devices-policy-settings
@@ -785,7 +787,7 @@ items:
           href: certificates-scep-configure.md#create-a-scep-certificate-profile
         - name: VPN
           href: vpn-settings-windows-phone-8-1.md
-        - name: Personalizar
+        - name: Personalizado
           href: custom-settings-windows-phone-8-1.md
   - name: Orientação para programadores
     items:
@@ -957,9 +959,9 @@ items:
       href: data-outside-protect.md
     - name: Impedir fugas de dados em dispositivos não geridos
       href: data-leak-prevention.md
-ms.openlocfilehash: ace0bec62318d846cdcc37330abb63b2a89fef14
-ms.sourcegitcommit: e262b0ad8df610e25eb9421b9ebc2673bcf1020e
+ms.openlocfilehash: 3b178658fad3e94d09dcd5979e155b8097753ffd
+ms.sourcegitcommit: 5708ec1d7ae50494be44ed5064f150b636188c84
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55986914"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56240049"

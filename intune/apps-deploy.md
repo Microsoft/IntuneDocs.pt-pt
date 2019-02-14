@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8ff89d1776d71dc24ea675de167f3fd22d6bdf04
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 6b0c2bff4051a1adba1a68f38d8f0a9b80b914b4
+ms.sourcegitcommit: 5708ec1d7ae50494be44ed5064f150b636188c84
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55838772"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56240066"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Atribuir aplicações a grupos com o Microsoft Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Depois de [adicionar uma aplicação](apps-add.md) ao Microsoft Intune, pode atribuí-la a utilizadores e dispositivos. É importante que tenha em atenção que pode atribuir uma aplicação a um dispositivo quer este seja ou não gerido pelo Intune. 
+Depois de [adicionar uma aplicação](apps-add.md) ao Microsoft Intune, pode atribuí-la a utilizadores e dispositivos. É importante que tenha em atenção que pode atribuir uma aplicação a um dispositivo quer este seja ou não gerido pelo Intune.
 
 > [!NOTE]
 > O objetivo de implementação de disponibilidade não é suportado para grupos de dispositivos, grupos de utilizadores apenas são suportados.
@@ -124,8 +124,19 @@ Por vezes, a mesma aplicação é atribuída a múltiplos grupos, mas com inten�
 > Apenas para aplicações da loja iOS geridas: quando adiciona estas aplicações ao Microsoft Intune e as atribui como **Necessário**, estas aplicações são criadas automaticamente com as intenções **Necessário** e **Disponível**.<br><br>
 > As aplicações da Loja iOS (não aplicações iOS obtidas pelo VPP) que são direcionadas com a intenção necessária serão aplicadas no dispositivo quando registar o mesmo e também serão apresentadas na aplicação Portal da Empresa.
 
-## <a name="android-enterprise-app-we-app-deployment"></a>Aplicação do Android Enterprise-implementação de aplicações,
-Para dispositivos Android num não inscritos proteção política sem inscrição de aplicações (APP-PODEMOS) cenário de implementação, pode agora utilizar Google Play gerido para implementar aplicações da loja e aplicações aos utilizadores LOB. Especificamente, pode fornecer aos utilizadores finais uma experiência de instalação e de catálogo de aplicações que já não necessita que os utilizadores finais flexibilize as a postura de segurança dos seus dispositivos ao permitir que as instalações de origens desconhecidas. Além disso, neste cenário de implementação irá fornecer uma experiência de usuário aprimorada do fim. Para obter os passos atribuir uma aplicação, consulte [atribui uma aplicação](apps-deploy.md#assign-an-app).
+## <a name="managed-google-play-app-deployment-to-unmanaged-devices"></a>Managed Google Play a implementação de aplicações para dispositivos não geridos
+Para dispositivos Android num não inscritos proteção política sem inscrição de aplicações (APP-PODEMOS) cenário de implementação, pode utilizar Google Play gerido para implementar aplicações da loja e aplicações de linha de negócio (LOB) aos utilizadores. Aplicações da Google Play direcionadas como geridas **disponível com ou sem inscrição** aparecerá na aplicação da Play Store no dispositivo do utilizador final e não na aplicação Portal da empresa. Utilizador final irá procurar e instalar as aplicações implementadas dessa maneira, a partir da aplicação da Play. Uma vez que as aplicações estão a ser instaladas a partir do Google Play gerido, o utilizador final não será necessário alterar suas configurações de dispositivo para permitir a instalação de aplicações de origens desconhecidas, que significa que os dispositivos estarão mais seguros. Se o programador da aplicação publica uma nova versão de uma aplicação Play, que foi instalada no dispositivo de um utilizador, a aplicação será atualizada automaticamente pelo Play. 
+
+Passos para atribuir uma aplicação do Google Play gerido para dispositivos não geridos:
+
+1. Ligar o seu inquilino do Intune ao Google Play gerido. Se já tiver feito isso para gerir o perfil de trabalho do Android Enterprise, dedicada, ou dispositivos totalmente geridos, não é necessário fazê-lo novamente.
+2. Adicione aplicações a partir da Google Play gerido para a consola do Intune.
+3. Aplicações geridas do Google Play como de destino **disponível com ou sem inscrição** ao grupo de utilizadores pretendidos. **Necessário** e **desinstalar** direcionamento de aplicação não são suportados para dispositivos não inscritos.
+4. Atribua uma política de proteção de aplicações para o grupo de utilizadores.
+5. Da próxima vez que o utilizador final abre-se a aplicação Portal da empresa, verão uma mensagem a indicar que existem aplicações disponíveis para os mesmos na aplicação da Play Store.  O utilizador pode tocar nesta notificação para ser colocado diretamente para a aplicação da Play para ver as aplicações empresariais ou podem navegar para a aplicação da Play Store separadamente.
+6. O utilizador final pode expandir o menu de contexto dentro da aplicação da Play Store e alternar entre a conta pessoal do Google (onde veem as aplicações pessoais) e a respetiva conta profissional (onde irá ver aplicações LOB direcionadas aos mesmos e da loja). Os utilizadores finais instalar as aplicações ao tocar instalação na aplicação da Play Store.
+
+Quando uma eliminação seletiva de aplicações é emitida na consola do Intune, a conta profissional será removida automaticamente a partir da aplicação da Play Store e o utilizador final será de que ponto deixará de ver aplicações de trabalho no catálogo de aplicações Play Store. Quando a conta profissional é removida a partir de um dispositivo, as aplicações instaladas a partir da Play Store permanecerão instaladas no dispositivo e não irão desinstalar. 
 
 ## <a name="next-steps"></a>Passos Seguintes
 
