@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 299e76d55cd5fc61d96a81a49f721bc5c0c69a11
-ms.sourcegitcommit: 77c63ddb51ffd5258f4ea0e68672c2eb011b83e1
+ms.openlocfilehash: f6d346d7f060b5e997577b09c3ee8b006843ab7b
+ms.sourcegitcommit: 8e503c1b350f7b29a045b7daf3eece64be4ca3c4
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55905854"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56302239"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -241,10 +241,15 @@ Na **configuração do dispositivo** > **perfis** > **criar perfil** > **iOS** p
 
 #### <a name="new-notification-hints-and-keyguard-settings-to-android-enterprise-device-owner-devices----3201839-3201843---"></a>Novas definições de notificação, sugestões e keyguard para dispositivos de proprietário do dispositivo Android Enterprise <!-- 3201839 3201843 -->
 Esta atualização inclui várias novas funcionalidades em dispositivos Android Enterprise quando em execução como proprietário do dispositivo. Para utilizar estas funcionalidades, aceda a **configuração do dispositivo** > **perfis** > **criar perfil** > no **plataforma**, escolha **Android Enterprise** > no **tipo de perfil**, escolha **proprietário do dispositivo só** > **dispositivo Restrições**.
+
 Os novos recursos incluem: 
-- Desative as notificações de sistema de apresentação, incluindo a entrada chamadas, alertas do sistema, erros de sistema e muito mais
-- Sugere a ignorar a partir de tutoriais e dicas para aplicações que são abertas pela primeira vez
-- Desativar definições keyguard avançadas, como a câmara, notificações, desbloqueio por impressão digital e muito mais para ver as definições, vá para [definições de restrição de dispositivos Android Enterprise](device-restrictions-android-for-work.md).
+
+- Desative notificações de sistema do que mostra, incluindo a entrada chamadas, alertas do sistema, erros de sistema e muito mais.
+- Sugere a ignorar a partir de tutoriais e dicas para aplicações que são abertas pela primeira vez.
+- Desative keyguard avançada desbloquear as definições, tais como a câmara, notificações, impressão digital e muito mais.
+
+
+Para ver as definições, aceda à [definições de restrição de dispositivos Android Enterprise](device-restrictions-android-for-work.md).
 
 #### <a name="android-enterprise-device-owner-devices-can-use-always-on-vpn-connections----3202194---"></a>Dispositivos de proprietário de dispositivos empresariais Android podem utilizar ligações de VPN AlwaysOn <!-- 3202194 -->
 Nesta atualização, pode utilizar ligações VPN sempre ativada nos dispositivos de proprietário do dispositivo Android empresarial. As ligações VPN Sempre Ativada permanecem ativadas ou voltam a ativar-se quando o utilizador desbloqueia o dispositivo, quando o dispositivo é reiniciado ou quando a rede sem fios é alterada. Também pode colocar a ligação em modo de "bloqueio". Este modo permite bloquear todo o tráfego de rede até à ativação da ligação de VPN.

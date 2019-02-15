@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0d0594c9f14b9d18c597de9ca37826a669dde5f3
-ms.sourcegitcommit: e262b0ad8df610e25eb9421b9ebc2673bcf1020e
+ms.openlocfilehash: 573ca3aa10094e61165d297730d556e2ef559767
+ms.sourcegitcommit: 8e503c1b350f7b29a045b7daf3eece64be4ca3c4
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55986880"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56302188"
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>Gerir scripts do PowerShell no Intune para dispositivos Windows 10
 
@@ -31,9 +31,9 @@ Utilize a extensão de gestão do Intune para carregar scripts do PowerShell no 
 
 A computação de utilizador final está a passar por uma transformação digital. As TI clássicas e tradicionais focam-se numa única plataforma de dispositivo, em dispositivos pertencentes à empresa, em utilizadores que trabalham num escritório e numa variedade de processos de TI reativos e manuais. A área de trabalho moderna usa muitas plataformas de utilizador e de negócios pertencentes à empresa, permite que os utilizadores trabalhem em qualquer lugar e fornece processos de TI automatizado e proativos.
 
-Serviços MDM, como o Microsoft Intune, podem gerir dispositivos móveis e de Desktops com o Windows 10. O cliente de gestão do Windows 10 incorporado comunica com o Intune para executar tarefas de gestão de empresa. Existem algumas tarefas que poderá ser necessário, por exemplo, a configuração do dispositivo avançadas, resolução de problemas e gestão de aplicações de Win32 legada que não está disponível no Windows 10 MDM. Para estas capacidades, pode executar o cliente de software do Intune nos seus dispositivos Windows 10. [Comparar a gestão de Windows PCs como computadores ou dispositivos móveis](pc-management-comparison.md) é um ótimo recurso.
+Serviços MDM, como o Microsoft Intune, podem gerir dispositivos móveis e de Desktops com o Windows 10. O cliente de gestão do Windows 10 incorporado comunica com o Intune para executar tarefas de gestão de empresa. Existem algumas tarefas que poderá ser necessário, por exemplo, a configuração do dispositivo avançadas e resolução de problemas. Para a gestão de aplicações do Win32, pode utilizar o [gestão de aplicações de Win32](apps-win32-app-management.md) funcionalidade nos seus dispositivos Windows 10.
 
-A extensão de gestão do Intune complementa as funcionalidades de MDM do Windows 10 na caixa. Pode criar scripts do PowerShell para ser executado nos dispositivos Windows 10. Por exemplo, pode criar um script do PowerShell que instala uma aplicação Win32 legada, carrega o script para o Intune, atribui o script a um grupo do Azure Active Directory (AD) e executa o script. Em seguida, pode monitorizar o estado de execução do script do início ao fim.
+A extensão de gestão do Intune complementa as funcionalidades de MDM do Windows 10 na caixa. Pode criar scripts do PowerShell para ser executado nos dispositivos Windows 10. Por exemplo, pode criar um script do PowerShell que faz as configurações de dispositivo avançados, carrega o script para o Intune, atribui o script a um grupo do Azure Active Directory (AD) e executa o script. Em seguida, pode monitorizar o estado de execução do script do início ao fim.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 74445c678455dc881f79fed20ed68be6f090fe78
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 63504acb19125a3971ea6ddc996b42ed8917b2d9
+ms.sourcegitcommit: 8e503c1b350f7b29a045b7daf3eece64be4ca3c4
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55834777"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56302171"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Preparar aplicações de linha de negócios para as políticas de proteção de aplicações
 
@@ -87,7 +87,6 @@ Esta tabela lista as definições que pode utilizar no SDK da Aplicação e na F
 |Permitir que a aplicação receba dados de outras aplicações|X|X|
 |Restringir cortar, copiar e colar com outras aplicações|X|X|
 |Exigir PIN simples para acesso|X|X|
-|Substituir o PIN da aplicação incorporado pelo PIN do Intune|X||
 |Especificar o número de tentativas antes da redefinição do PIN|X|X|
 |Permitir impressões digitais em vez do PIN|X|X|
 |Permitir o reconhecimento facial em vez de PIN (apenas iOS)|X|X|
@@ -98,8 +97,8 @@ Esta tabela lista as definições que pode utilizar no SDK da Aplicação e na F
 |Especificar o período de tolerância offline|X|X|
 |Bloquear captura de ecrã (apenas Android)|X|X|
 |Suporte para MAM sem a inscrição de dispositivos|X|X|
-|Eliminação Completa|X|X|
-|Eliminação Seletiva <br><br>**Nota:** Para iOS, quando o perfil de gestão for removido, a aplicação também é removida.|X||
+|Eliminação completa de dados de aplicação|X|X|
+|Eliminação seletiva de dados escolares de ad de trabalho em cenários de várias identidades <br><br>**Nota:** Para iOS, quando o perfil de gestão for removido, a aplicação também é removida.|X||
 |Impedir "Guardar como"|X||
 |Configuração da Aplicação de Destino|X||
 |Suporte para Identidades Múltiplas|X||

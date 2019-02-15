@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 605868af91e734a6bd1457a97e9089d69ba81718
-ms.sourcegitcommit: bc863efcf760ba35421d8566581e8768056485f1
+ms.openlocfilehash: 19994745a232a362d6bba0f09ed3934e492a17ed
+ms.sourcegitcommit: 2f431f122ce3ee6b5d0cdb04a0b748d00f83e295
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227901"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56265677"
 ---
 # <a name="the-early-edition-for-microsoft-intune---february-2019"></a>A edição antecipada do Microsoft Intune – Fevereiro de 2019
 
@@ -53,9 +53,6 @@ Poderá mudar o nome de um dispositivo Windows 10 inscrito (RS4 ou posterior). P
 
 ### <a name="assign-scep-certificates-to-a-userless-macos-device-------2340521-----"></a>Atribuir certificados SCEP para um dispositivo macOS sem utilizador    <!-- 2340521   -->
 Será capaz de atribuir certificados Simple Certificate Enrollment Protocol (SCEP) para um dispositivo macOS sem utilizador e associar o certificado, Wi-Fi ou perfis VPN. Isso expande o suporte existente já temos a [atribuir certificados para dispositivos sem utilizador com o Windows, iOS e Android](certificates-scep-configure.md#create-a-scep-certificate-profile).
-
-### <a name="find-out-which-devices-support-esim----2432018---"></a>Descubra os dispositivos que suportam eSIM <!-- 2432018 -->
-Haverá uma nova **eSIM inventário** campo na página de Hardware para dispositivos. Para ver arquivado, escolha **Intune** > **dispositivos** > Escolha um dispositivo > **Hardware**.
 
 ### <a name="intune-conditional-access-ui-update------2432313----"></a>Atualização de interface do Usuário de acesso condicional do Intune   <!-- 2432313  -->
 Estamos a fazer melhorias na interface do usuário para o acesso condicional na consola do Intune. Estas incluem:

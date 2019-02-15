@@ -13,7 +13,7 @@ items:
     - name: Novidades na IU da aplicação
       href: whats-new-app-ui.md
   expanded: true
-- name: Quickstarts (Inícios Rápidos)
+- name: Guias de Introdução
   items:
   - name: Experimentar o Intune gratuitamente
     href: free-trial-sign-up.md
@@ -77,7 +77,7 @@ items:
     href: mam-faq.md
   - name: FAQ de políticas e perfis
     href: manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md
-- name: How-to guides (Manuais de instruções)
+- name: How-to guides (Guias de procedimentos)
   items:
   - name: Implementação de planos
     items:
@@ -229,6 +229,45 @@ items:
       href: enrollment-report-company-portal-abandon.md
     - name: Resolver problemas de inscrição de dispositivos
       href: troubleshoot-device-enrollment-in-intune.md
+  - name: Efetue a gestão dos dispositivos
+    href: device-management.md
+    items:
+    - name: Funcionalidades de gestão de dispositivos
+      href: device-management-capabilities.md
+    - name: Ignorar o bloqueio de ativação
+      href: device-activation-lock-bypass.md
+    - name: Gerir a funcionalidade Começar do Zero do Windows
+      href: device-fresh-start.md
+    - name: Localizar o dispositivo iOS perdido
+      href: device-locate.md
+    - name: Ativar o modo perdido do iOS
+      href: device-lost-mode.md
+    - name: Ativar o modo supervisionado do iOS
+      href: device-supervised-mode.md
+    - name: Bloquear o dispositivo
+      href: device-remote-lock.md
+    - name: Repor código de acesso
+      href: device-passcode-reset.md
+    - name: Reiniciar o dispositivo
+      href: device-restart.md
+    - name: Terminar a sessão do utilizador atual
+      href: device-logout-user.md
+    - name: Remover utilizador
+      href: device-remove-user.md
+    - name: Apagar dispositivo
+      href: device-erase.md
+    - name: Controlar remotamente dispositivos móveis
+      href: device-profile-android-teamviewer.md
+    - name: Reposição do PIN do Windows 10
+      href: device-windows-pin-reset.md
+    - name: Install Exchange service connector (Instalar o conector do serviço do Exchange)
+      href: exchange-service-connector-configure.md
+    - name: Sincronizar o dispositivo
+      href: device-sync.md
+    - name: Examinar o inventário de dispositivos
+      href: device-inventory.md
+    - name: Remover dispositivos
+      href: devices-wipe.md
   - name: Definir conformidade do dispositivo
     items:
     - name: Descrição geral da conformidade
@@ -626,7 +665,7 @@ items:
           href: vpn-settings-android.md#android-vpn-settings
         - name: Wi-Fi
           href: wi-fi-settings-android.md
-        - name: Personalizado
+        - name: Personalizar
           href: custom-settings-android.md
           items:
           - name: Permitir/bloquear aplicações no Samsung Knox Standard
@@ -653,7 +692,7 @@ items:
           href: vpn-settings-android.md#android-for-work-vpn-settings
         - name: Wi-Fi
           href: wi-fi-settings-android-enterprise.md
-        - name: Personalizado
+        - name: Personalizar
           href: custom-settings-android-for-work.md
     - name: iOS
       items:
@@ -677,7 +716,7 @@ items:
           href: vpn-settings-ios.md
         - name: Wi-Fi
           href: wi-fi-settings-ios.md
-        - name: Personalizado
+        - name: Personalizar
           href: custom-settings-ios.md
     - name: macOS
       items:
@@ -699,7 +738,7 @@ items:
           href: vpn-settings-macos.md
         - name: Wi-Fi
           href: wi-fi-settings-macos.md
-        - name: Personalizado
+        - name: Personalizar
           href: custom-settings-macos.md
     - name: Linhas de base de segurança
       items:
@@ -739,7 +778,7 @@ items:
           href: education-settings-windows.md
         - name: Dispositivo multiutilizador partilhado
           href: shared-user-device-settings-windows.md
-        - name: Personalizado
+        - name: Personalizar
           href: custom-settings-windows-10.md
       - name: Windows update settings (Definições do Windows Update)
         href: windows-update-settings.md
@@ -753,9 +792,9 @@ items:
         href: holographic-upgrade.md
       - name: Modo de Local Público
         href: kiosk-settings-holographic.md
-      - name: Personalizado
+      - name: Personalizar
         href: custom-settings-windows-holographic.md
-    - name: Windows 8.1
+    - name: Windows 8.1
       items:
       - name: Definições da política de conformidade
         href: compliance-policy-create-windows.md#windows-81-devices-policy-settings
@@ -787,7 +826,7 @@ items:
           href: certificates-scep-configure.md#create-a-scep-certificate-profile
         - name: VPN
           href: vpn-settings-windows-phone-8-1.md
-        - name: Personalizado
+        - name: Personalizar
           href: custom-settings-windows-phone-8-1.md
   - name: Orientação para programadores
     items:
@@ -959,9 +998,9 @@ items:
       href: data-outside-protect.md
     - name: Impedir fugas de dados em dispositivos não geridos
       href: data-leak-prevention.md
-ms.openlocfilehash: 3b178658fad3e94d09dcd5979e155b8097753ffd
-ms.sourcegitcommit: 5708ec1d7ae50494be44ed5064f150b636188c84
+ms.openlocfilehash: 365777adf57d1f36577e2e6f20cce6b193a829f8
+ms.sourcegitcommit: 8e503c1b350f7b29a045b7daf3eece64be4ca3c4
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56240049"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56302205"
