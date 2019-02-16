@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/28/2019
+ms.date: 02/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 85b3aa513781026c5c79cdd41837f9ded945e574
-ms.sourcegitcommit: 2f431f122ce3ee6b5d0cdb04a0b748d00f83e295
+ms.openlocfilehash: 1802da8150c9729a2bed8ff82d39f7946b750e06
+ms.sourcegitcommit: 93de3423d2d8f0019e676a63784edeb3daf47cb7
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56265694"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56325508"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Definições de políticas de proteção de aplicações Android no Microsoft Intune
 Este artigo descreve as definições de políticas de proteção de aplicações para dispositivos Android. As definições de políticas descritas podem ser [configuradas](app-protection-policies.md) para uma política de proteção de aplicações no painel **Definições** no portal do Azure.
@@ -54,9 +54,6 @@ Existem três categorias de definições de política: definições de proteçã
 | **Aplicação de sincronização com a aplicação nativa contactos** | Escolher **desativar** para impedir que a aplicação de guardar os dados na aplicação nativa contactos no dispositivo. Se escolher **ativar**, a aplicação pode guardar dados na aplicação nativa contactos no dispositivo. <br><br>Ao efetuar uma eliminação seletiva para remover dados escolares ou profissionais da aplicação, os contactos sincronizados diretamente a partir da aplicação para a aplicação nativa Contactos são removidos. Não é possível eliminar contactos que sejam sincronizados do livro de endereços nativo para outra origem externa. Atualmente, só é aplicável à aplicação Microsoft Outlook. | **Ativar** |
 | **Dados da organização de impressão** | Escolher **desativar** para impedir que a aplicação de imprimir dados escolares ou profissionais. | **Ativar** |
 |**Partilha de conteúdo web com a política de browsers geridos** | Especifique a forma como os conteúdos Web (ligações http/https) são abertos a partir de aplicações geridas por políticas. Escolha entre:<ul><li>**Exigir**: Permitir que o conteúdo da web abrir apenas em browsers geridas por políticas.</li><li>**Não configurado**: Permitir ligações web em qualquer aplicação </li></ul><br><br> Se utiliza o Intune para gerir os dispositivos, veja [Gerir o acesso à Internet através de políticas de browser gerido com o Microsoft Intune](app-configuration-managed-browser.md).<br><br>**Browsers geridos por políticas**<br>Se implementar múltiplos browsers geridos por políticas, só um deles será iniciado.  O Intune Managed Browser tem prioridade sobre o Microsoft Edge.  No Android, os seus utilizadores finais podem optar por outras aplicações geridas por políticas que suportem ligações http/https, se tanto o Intune Managed Browser como o Microsoft Edge não estiverem instalados.<p>Se um browser gerido por políticas for necessário mas não estiver instalado, será pedido aos seus utilizadores finais para instalarem o Intune Managed Browser.<p>Se for necessário um browser gerido por políticas, as Ligações de Aplicações Android serão geridas pela definição de política **Permitir que a aplicação transfira dados para outras aplicações**.<p>**Inscrição de dispositivos do Intune**<br>Se utiliza o Intune para gerir os dispositivos, veja Gerir o acesso à Internet através de políticas de browser gerido com o Microsoft Intune. <p>**Microsoft Edge gerido por políticas**<br>O browser Microsoft Edge para dispositivos móveis (iOS e Android) suporta as políticas de proteção de aplicações do Intune. Os utilizadores que iniciarem sessão com as suas contas empresariais do Azure AD no browser Microsoft Edge passarão a ser protegidos pelo Intune. O browser Microsoft Edge integra o SDK de MAM e suporta todas as políticas de proteção de dados, com a exceção de impedir:<br><ul><li>**Guardar-como**: O browser Microsoft Edge não permite a um utilizador adicionar ligações diretas, na aplicação para a cloud de fornecedores de armazenamento (por exemplo, o OneDrive).</li><li>**Entre em contato com sincronização**: O browser Microsoft Edge não guardar a lista de contactos nativa.</li></ul><br>**Nota:** *O SDK da aplicação não consegue determinar se uma aplicação de destino é um navegador. Em dispositivos Android, são permitidas outras aplicações de browser gerido que suportam a intenção de http/https.* | **Não configurado** |
-| **Teclados de terceiros** | Selecione **desativar** para impedir a utilização de teclados de terceiros em aplicativos gerenciados. <br><br>Quando esta definição estiver ativada, o utilizador recebe uma única mensagem a indicar que a utilização de teclados de terceiros está bloqueada. Esta mensagem é apresentada quando um utilizador interage pela primeira vez com dados organizacionais que requerem a utilização de um teclado. Somente o teclado padrão está disponível durante o uso de aplicativos gerenciados e todas as outras opções de teclado estão desativadas. Esta definição não afeta a utilização de teclados de terceiros em aplicações não geridas. | **Ativar** |
-
-
 
   ## <a name="data-transfer-exemptions"></a>Isenções de transferência de dados
 

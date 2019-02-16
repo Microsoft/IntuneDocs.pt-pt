@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 63504acb19125a3971ea6ddc996b42ed8917b2d9
-ms.sourcegitcommit: 8e503c1b350f7b29a045b7daf3eece64be4ca3c4
+ms.openlocfilehash: 10b2ef5844c2d8889fd1d5c377fcefb8330be9e2
+ms.sourcegitcommit: 93de3423d2d8f0019e676a63784edeb3daf47cb7
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56302171"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56325440"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Preparar aplicações de linha de negócios para as políticas de proteção de aplicações
 
@@ -98,7 +98,7 @@ Esta tabela lista as definições que pode utilizar no SDK da Aplicação e na F
 |Bloquear captura de ecrã (apenas Android)|X|X|
 |Suporte para MAM sem a inscrição de dispositivos|X|X|
 |Eliminação completa de dados de aplicação|X|X|
-|Eliminação seletiva de dados escolares de ad de trabalho em cenários de várias identidades <br><br>**Nota:** Para iOS, quando o perfil de gestão for removido, a aplicação também é removida.|X||
+|Eliminação seletiva de dados profissionais e escolares em cenários de várias identidades <br><br>**Nota:** Para iOS, quando o perfil de gestão for removido, a aplicação também é removida.|X||
 |Impedir "Guardar como"|X||
 |Configuração da Aplicação de Destino|X||
 |Suporte para Identidades Múltiplas|X||

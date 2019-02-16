@@ -32,6 +32,9 @@ A inscrição automática permite que os utilizadores inscrevam os respetivos di
       >
       > Para dispositivos da empresa, o âmbito do utilizador MDM terá prioridade se ambos os âmbitos são ativados. Os dispositivos obtém inscritos na MDM.
 
+   > [!NOTE]
+   > Âmbito de utilizador MAM tem de ser definido para um grupo de utilizadores ou uma coleção.
+
    ![Captura de ecrã do portal do Azure](../media/auto-enroll-scope.png)
 
 5. Utilize os valores predefinidos para os seguintes URLs:

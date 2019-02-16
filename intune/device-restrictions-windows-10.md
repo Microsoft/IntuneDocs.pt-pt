@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f5afb23fd571b03e4fde97cb7800c399819d4cc8
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 943b5dc8c0fe1c9b55b9c4971be2087353b60428
+ms.sourcegitcommit: e0374b3ced83c8876a4f78b326869c10588a55e5
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55849848"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56307894"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Definições de dispositivos de 10 (e versões posteriores) do Windows para permitir ou restringir funcionalidades com o Intune
 
@@ -138,6 +138,10 @@ Estas definições são adicionadas a um perfil de configuração do dispositivo
 - **Área de trabalho de tinta**: Impedir que os utilizadores acedam a área de trabalho do ink. **Não configurado** folheio na área de trabalho de tinta e o utilizador tem permissão para usá-lo acima do ecrã de bloqueio.
 - **Reimplementação automática**: Permite aos utilizadores com direitos administrativos eliminar todos os dados de utilizador e as configurações usando **CTRL + Win + R** no ecrã de bloqueio do dispositivo. O dispositivo é automaticamente reconfigurado e reinscrito na gestão.
 - **Exigir que os utilizadores liguem à rede durante a configuração de dispositivo (apenas no Windows Insider)**: Escolher **requerem** para que o dispositivo estabelece ligação a uma rede antes de continuar após a página de rede durante a configuração do Windows 10. Enquanto esta funcionalidade estiver em pré-visualização, é necessário que tenha a versão 1809 ou versões posteriores do Windows Insider para utilizar esta definição.
+- **Acesso de memória direto**: **Bloco** impede o acesso direto à memória (DMA) para todos os hot conectáveis PCI downstream portas até que um utilizador inicia sessão no Windows. **Ativado** (predefinição) permite o acesso a DMA, mesmo quando um utilizador não tem sessão iniciado.
+
+  CSP: [DataProtection/AllowDirectMemoryAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess)
+
 - **Terminar a processos do Gerenciador de tarefas**: Esta definição determina se o não-administradores podem utilizar o Gestor de tarefas para tarefas de fim. **Bloco** impede que os usuários padrão (não-administradores) usando o Gerenciador de tarefas para terminar um processo ou tarefa no dispositivo. **Não configurado** (predefinição) permite que os usuários padrão encerrar um processo ou tarefa utilizando o Gestor de tarefas.
 
 ## <a name="kiosk-preview---obsolete"></a>Quiosque (Pré-visualização) – obsoleto

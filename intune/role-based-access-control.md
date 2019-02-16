@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 08e6c7657eeba7a41b9927e736fe7f4fc07e25e6
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: a57dca7f6b817177cbd131e969c1b5aa52a248a8
+ms.sourcegitcommit: e0374b3ced83c8876a4f78b326869c10588a55e5
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55848581"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56307775"
 ---
 # <a name="role-based-administration-control-rbac-with-microsoft-intune"></a>Controlo de acesso baseado em funções (RBAC) com o Microsoft Intune
 
@@ -29,7 +29,8 @@ O RBAC ajuda-o a controlar quem pode executar várias tarefas do Intune na sua o
 
 - **Definição de função**: O nome de uma função, os recursos que gere e as permissões concedidas a cada recurso.
 - **Membros**: Os grupos de utilizadores que são concedidos as permissões.
-- **Âmbito**: Os grupos de utilizadores ou dispositivos que os membros podem gerir.
+- **Âmbito (grupos)**: Os grupos de utilizadores ou dispositivos que os membros podem gerir.
+- **[Âmbito (etiquetas)](https://docs.microsoft.com/intune/scope-tags)**: As etiquetas em que se aplique a atribuição de função.
 - **Atribuição**: Quando a definição, os membros e âmbito tenham sido configurados, a função é atribuída.
 
 ![Exemplo de RBAC do Intune](./media/intune-rbac-1.PNG)
@@ -82,20 +83,22 @@ Pode atribuir funções incorporadas para grupos sem configuração adicional. N
 
 1. Inicie sessão no [Portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
-3. No painel **Intune**, selecione **Funções** > **Todas as funções**.
-4. No painel **Funções do Intune – Todas as funções**, selecione a função incorporada que pretende atribuir.
+3. Sobre o **Intune** painel, escolha **funções** > **todas as funções**.
+4. Sobre o **funções do Intune – todas as funções** painel, selecione a função incorporada que pretende atribuir.
 
-5. No painel <*nome da função*> – **Descrição Geral**, selecione **Gerir** e, em seguida, **Atribuições**.
+5. Na <*nome da função*>- **descrição geral** painel, escolha **gerir** > **atribuições**.
 
-6. No painel Função personalizada, selecione **Atribuir**.
+6. No painel de função personalizada, escolha **Atribuir**.
 
-7. Na **atribuições de funções** painel, introduza um **nome** e opcionais **Descrição** para a atribuição.
+7. Na **atribuições de funções** painel, introduza um **nome da atribuição** e opcionais **descrição da atribuição** para a atribuição.
 
-8. Para **membros**, escolha um grupo que contém o usuário quer conceder as permissões.
+8. Para **membros (grupos)**, escolha um grupo que contém o usuário quer conceder as permissões.
 
-9. Para **âmbito**, escolha um grupo que contém os utilizadores que o membro acima terá permissão para gerir.
-<br></br>
-10. Quando tiver terminado, selecione **OK**. A nova atribuição é apresentada na lista de atribuições.
+9. Para **âmbito (grupos)**, escolha um grupo que contém os utilizadores que o membro acima terá permissão para gerir.
+
+10. Para **âmbito (etiquetas)**, escolha as etiquetas em que esta atribuição de função será aplicada.
+
+11. Quando tiver terminado, selecione **OK**. A nova atribuição é apresentada na lista de atribuições.
 
 ### <a name="intune-rbac-table"></a>Tabela de RBAC do Intune
 
@@ -116,31 +119,21 @@ Pode criar uma função personalizada que inclui todas as permissões necessári
 
 2. Selecione **Todos os serviços** no menu à esquerda e, em seguida, escreva **Intune** no filtro da caixa de texto.
 
-3. Selecione **Intune** > **Funções** > **Todas as funções** > **Adicionar personalização**.
+3. Escolher **Intune** > **funções** > **todas as funções** > **adicionar**.
 
 4. No painel **Adicionar Função Personalizada**, introduza um nome e uma descrição para a nova função e, em seguida, clique em **Permissões**.
 
-5. No painel **Permissões**, selecione as permissões que quer utilizar com esta função. Utilize a [Tabela de RBAC do Intune](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a) para ajudá-lo a decidir quais as permissões que quer aplicar.
+5. No painel **Permissões**, escolha as permissões que quer utilizar com esta função. Utilize a [Tabela de RBAC do Intune](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a) para ajudá-lo a decidir quais as permissões que quer aplicar.
 
-6. Quando tiver terminado, selecione **OK**.
+6. Sobre o **âmbito (etiquetas)** painel, escolha as etiquetas em que será aplicada esta função personalizada.
 
-7. No painel **Adicionar Função Personalizada**, clique em **Criar**. A nova função é apresentada na lista no painel **Funções do Intune – Todas as funções**.
+7. Quando tiver terminado, selecione **OK**.
+
+7. No painel **Adicionar Função Personalizada**, clique em **Criar**. A nova função é apresentada na lista no **funções do Intune – todas as funções** painel.
 
 ### <a name="to-assign-a-custom-role"></a>Para atribuir uma função personalizada
 
-1. No painel **Funções do Intune – Todas as funções**, selecione a função personalizada que pretende atribuir.
-
-2. No painel <*nome da função*> – **Descrição Geral**, selecione **Gerir** e, em seguida, **Atribuições**. Neste painel, também pode editar ou eliminar funções existentes.
-
-3. No painel Função personalizada, selecione **Atribuir**.
-
-4. Na **atribuições de funções** painel, introduza um **nome** e opcionais **Descrição** para a atribuição.
-
-5. Para **membros**, escolha um grupo que contém o usuário quer conceder as permissões.
-
-6. Para **âmbito**, escolha um grupo que contém os utilizadores que o membro acima terá permissão para gerir.
-
-7. Quando tiver terminado, selecione **OK**. A nova atribuição é apresentada na lista de atribuições.
+Siga os mesmos passos [para atribuir uma função incorporada](https://docs.microsoft.com/intune/role-based-access-control#to-assign-a-built-in-role) e selecione a função personalizada.
 
 ## <a name="next-steps"></a>Passos Seguintes
 

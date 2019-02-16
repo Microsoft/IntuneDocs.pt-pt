@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/12/2019
+ms.date: 02/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.reviewer: aiwang
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6fcb0c4e44b427b57b065684fe1e57234bbde054
-ms.sourcegitcommit: e262b0ad8df610e25eb9421b9ebc2673bcf1020e
+ms.openlocfilehash: 98c3425c58b6039c8a1c3b5750f9473c74a78634
+ms.sourcegitcommit: 93de3423d2d8f0019e676a63784edeb3daf47cb7
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55986962"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56325474"
 ---
 # <a name="windows-update-settings-for-intune"></a>Windows atualizar as definições do Intune  
 
@@ -48,6 +48,12 @@ Canais de atualização com suporte:
 - Versão do Windows Insider  
 
 Se selecionar um canal de Insider, o Intune configura automaticamente a definição de atualização do Windows [atualização/ManagePreviewBuilds](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-managepreviewbuilds) para que a compilação de insider funcionem.  
+
+
+> [!IMPORTANT]  
+> A partir do Windows versão 1903, a utilização do *via de atualizações Semianuais (direcionada)* (SAC-T), foi descontinuado. Com esta alteração, SAC-T mescla com o *via de atualizações Semianuais*. Para saber mais sobre esta alteração e como ele afeta o Windows Update para empresas, consulte a postagem de Blog de profissionais de TI do Windows [Windows Update para empresas e a desativação de SAC T](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-Update-for-Business-and-the-retirement-of-SAC-T/ba-p/339523).
+ 
+
 
 ### <a name="microsoft-product-updates"></a>Atualizações de produtos da Microsoft  
 
