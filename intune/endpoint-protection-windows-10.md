@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5f87c2fa5fcb7e76fa8d398018e87ec0b15c05e9
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 4ccdb8c40c87bc4f5e778bc1cb7a6966f8a0ad70
+ms.sourcegitcommit: 33bacf9d5db336e73d8c88fa15f6535ae92b4b00
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55843396"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56418523"
 ---
 # <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>Definições de 10 (e posteriores) do Windows para proteger os dispositivos com o Intune
 
@@ -215,11 +215,11 @@ Suportado nas seguintes edições do Windows 10:
   - **Criação de utilizador de palavra-passe de recuperação**: Configure se os utilizadores são permitidos, necessário ou não permissão para gerar uma palavra-passe de recuperação de 48 dígitos.  
   - **Criação do utilizador da chave de recuperação**: Configure se os utilizadores são permitidos, necessário ou não permissão para gerar uma chave de recuperação de 256 bits.
   - **Opções de recuperação no Assistente de configuração do BitLocker**: Defina como **bloco** para que os utilizadores não podem ver e alterar as opções de recuperação. Quando definida para **Não configurado** (predefinição), os utilizadores podem ver e alterar as opções de recuperação ao ativarem o BitLocker.
-  - **Guardar as informações de recuperação do BitLocker para o AD DS**: Escolher **ativar** para armazenar as informações de recuperação do BitLocker no Azure Active Directory (Azure AD). Quando **não configurado** (predefinição), as informações de recuperação não estão armazenadas no Azure AD.
-  - **Informações para o AD DS de recuperação do BitLocker**: Configure que partes das informações de recuperação do BitLocker são armazenadas no Azure AD. As opções são:
+  - **Guardar as informações de recuperação do BitLocker para o Azure Active Directory**: Escolher **ativar** para armazenar as informações de recuperação do BitLocker no Azure Active Directory (Azure AD). Quando **não configurado** (predefinição), as informações de recuperação não estão armazenadas no Azure AD.
+  - **Recuperação do BitLocker informações armazenadas para o Azure Active Directory**: Configure que partes das informações de recuperação do BitLocker são armazenadas no Azure AD. As opções são:
     - **Palavras-passe de recuperação de cópia de segurança e pacotes de chaves**
     - **Apenas palavras-passe de recuperação de cópia de segurança**
-  - **Store informações de recuperação no AD DS antes de ativar o BitLocker**: **Exigir** esta definição para impedir os utilizadores de ativarem o BitLocker, a menos que as informações de recuperação do BitLocker estejam armazenadas com êxito no Azure AD. **Não configurado** (predefinição) permite aos utilizadores ativar o BitLocker, mesmo que as informações de recuperação não estejam armazenadas com êxito no Azure AD.
+  - **Store informações de recuperação no Azure Active Directory antes de ativar o BitLocker**: **Exigir** esta definição para impedir os utilizadores de ativarem o BitLocker, a menos que as informações de recuperação do BitLocker estejam armazenadas com êxito no Azure AD. **Não configurado** (predefinição) permite aos utilizadores ativar o BitLocker, mesmo que as informações de recuperação não estejam armazenadas com êxito no Azure AD.
 
 ### <a name="bitlocker-removable-data-drive-settings"></a>Definições de unidades de dados removíveis do BitLocker
 

@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/16/2017
+ms.date: 02/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,26 +14,27 @@ ms.assetid: 84892bbc-f888-417b-bbeb-978cc7e10028
 searchScope:
 - User help
 ROBOTS: ''
-ms.reviewer: chrisbal
+ms.reviewer: scottduf
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 34bad76c3b6ff00b42eac70bcd870ef4d59ab017
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: d258fcb7f338e4177c31a5c77b92b5941b7db212
+ms.sourcegitcommit: 67e4e66e8c05b36c0897fb2955ef68666d22b094
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55839978"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56426931"
 ---
-# <a name="you-need-to-enable-code-integrity"></a>Necessita de ativar a Integridade de Código
+# <a name="enable-code-integrity"></a>Ativar a integridade de código
 
-Manter as suas informações organizacionais requer diferentes tipos de segurança para impedir vários tipos de problemas. Uma forma de manter a segurança é utilizar a Integridade de Código do Windows, que garante que os ficheiros de sistema e programas (controladores) de nível aprofundado não foram modificados.
+Sua organização poderá necessitar de seu PC para ser ativada com a funcionalidade de proteção contra ameaças chamada *integridade do código*. Integridade do código verifica os controladores e ficheiros de sistema no seu dispositivo para detetar sinais de corrupção ou software malicioso. Para a integridade do código trabalhar no seu dispositivo, outro recurso de segurança chamado [ *arranque seguro* ](https://docs.microsoft.com/windows/security/information-protection/secure-the-windows-10-boot-process#secure-boot) também tem de estar ativada. 
 
-A Integridade de Código é automaticamente ativada quando o seu sistema utiliza ativamente o Arranque Seguro.
+Se o PC não estiver em conformidade porque a integridade do código está desativada, deve contactar da sua organização IT equipa de suporte. Eles irá ajudá-lo a ativar o arranque seguro, que irá disparar a integridade do código da próxima vez que iniciar o seu dispositivo. 
 
-> [!Tip]
-> A ativação do Arranque Seguro é uma tarefa avançada. Recomendamos que contacte o suporte da empresa para obter assistência com esta tarefa.
+Se identificar como um utilizador avançado de dispositivos e quer experimentar os passos por conta própria, veja [reativar o arranque seguro](https://docs.microsoft.com/windows-hardware/manufacture/desktop/disabling-secure-boot#re-enable-secure-boot).
 
-Se se sentir confortável para prosseguir, leia a secção “To re-enable Secure Boot”(Para voltar a ativar o Arranque Seguro) na página [Disabling Secure Boot (Desativar o Arranque Seguro)](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx) para tentar ativar o Arranque Seguro sozinho.
+## <a name="additional-resources-for-it-administrators"></a>Recursos adicionais para os administradores de TI  
+Se for um administrador do Intune e pretender obter mais informações sobre definições de conformidade de estado de funcionamento de dispositivo do Intune, consulte [adicionar uma política de conformidade para dispositivos Windows 10 no Intune](https://docs.microsoft.com/intune/compliance-policy-create-windows#windows-10-and-later-policy-settings). Para obter uma visão detalhada das ações de conformidade que pode efetuar no Intune, consulte a [HealthAttestation CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp#a-href-idtake-policy-actionastep-8-take-appropriate-policy-action-based-on-evaluation-results).  
 
+## <a name="next-steps"></a>Passos Seguintes  
 Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

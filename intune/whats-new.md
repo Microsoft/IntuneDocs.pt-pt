@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/04/2019
+ms.date: 02/19/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f6d346d7f060b5e997577b09c3ee8b006843ab7b
-ms.sourcegitcommit: 8e503c1b350f7b29a045b7daf3eece64be4ca3c4
+ms.openlocfilehash: 65370710f409d028871695de22829f64e82bf54e
+ms.sourcegitcommit: 67e4e66e8c05b36c0897fb2955ef68666d22b094
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56302239"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56426982"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -31,8 +31,6 @@ Saiba mais sobre as novidades todas as semanas no Microsoft Intune. Também pode
 
 > [!Note]
 > É possível que algumas funcionalidades sejam implementadas durante várias semanas e que não estejam disponíveis para todos os clientes na primeira semana.
->
-> Para obter informações sobre novas funcionalidades na gestão de dispositivos móveis (MDM) híbrida, veja a nossa página [Hybrid What’s New (Novidades nas Implementações Híbridas)](/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management).
 
 **RSS feed**: Seja notificado quando esta página é atualizada ao copiar e colar o URL seguinte no seu leitor de feeds: `https://docs.microsoft.com/api/search/rss?search=%22What%27s+new+in+microsoft+intune%3F+-+Azure%22&locale=en-us`
 
@@ -46,6 +44,18 @@ Saiba mais sobre as novidades todas as semanas no Microsoft Intune. Também pode
 ### Role-based access control
 
 -->     
+
+## <a name="week-of-february-19-2019"></a>Semana de 19 de Fevereiro de 2019
+
+#### <a name="macos-users-are-prompted-to-update-their-password----1873216---"></a>utilizadores do macOS-lhe pedidos para atualizar a palavra-passe <!-- 1873216 -->
+
+Intune é aplicar a **ChangeAtNextAuth** definição em dispositivos macOS. Esta definição irá afetar os utilizadores finais e dispositivos que têm políticas de conformidade de palavra-passe ou perfis de palavra-passe de restrição de dispositivos. Os utilizadores finais for pedidos, uma vez, para atualizar a palavra-passe. Este pedido acontece sempre que um utilizador primeiro executa uma tarefa que exige autenticação, como iniciar sessão no dispositivo. Também podem ser pedido aos utilizadores para atualizar a palavra-passe quando fazer nada que requer privilégios administrativos, como pedir acesso de keychain. 
+
+Quaisquer alterações de política de palavra-passe nova ou existente pelo administrador pede-lhe os utilizadores finais novamente para atualizar a palavra-passe.
+
+Aplica-se a:  
+macOS
+
 ## <a name="week-of-february-4-2019"></a>Semana de 4 de Fevereiro de 2019
 
 ### <a name="app-management"></a>Gestão de aplicações
