@@ -151,9 +151,11 @@ items:
     - name: Definir a autoridade de MDM
       href: mdm-authority-set.md
     - name: Gerir funções
-      href: role-based-access-control.md
-    - name: Utilizar etiquetas de âmbito
-      href: scope-tags.md
+      items:
+      - name: Controlo de acesso baseado em funções
+        href: role-based-access-control.md
+      - name: Utilizar etiquetas de âmbito
+        href: scope-tags.md
   - name: Inscrever dispositivos
     items:
     - name: O que é a inscrição de dispositivos?
@@ -999,9 +1001,9 @@ items:
       href: data-outside-protect.md
     - name: Impedir fugas de dados em dispositivos não geridos
       href: data-leak-prevention.md
-ms.openlocfilehash: 1183db94d839619e1130261345f6988a627938bb
-ms.sourcegitcommit: e0374b3ced83c8876a4f78b326869c10588a55e5
+ms.openlocfilehash: d10d6c5a1c19430a0413e4f3149035a9e783dfc6
+ms.sourcegitcommit: f1681554ad842c22ad3f82f0e6d44d5966e4aa3d
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56307860"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56458914"

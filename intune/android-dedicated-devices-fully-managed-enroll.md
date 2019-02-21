@@ -1,7 +1,7 @@
 ---
-title: Inscrever dispositivos Android de dedicado ou totalmente gerido de dispositivos no Intune
+title: Inscrever dispositivos Android Enterprise dedicado ou dispositivos totalmente geridos no Intune
 titlesuffix: Microsoft Intune
-description: Saiba como inscrever dispositivos Android enterprise dedicado ou dispositivos de fulluy gerido no Intune.
+description: Saiba como inscrever dispositivos Android Enterprise dedicado ou dispositivos totalmente geridos no Intune.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2a83676f67866bc81ea81f7bb721dec5825a95c9
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 90af5ed5fab21e7b15c0e6d77b170e49b3047c88
+ms.sourcegitcommit: ad213c5be1e1ad2b768661a467878056e6090999
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55843447"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56444145"
 ---
-# <a name="enroll-your-android-dedicated-devices-or-fully-managed-devices-preview"></a>Inscrever os dispositivos dedicados Android ou totalmente geridos dispositivos (pré-visualização)
+# <a name="enroll-your-android-enterprise-dedicated-devices-or-fully-managed-devices-preview"></a>Inscrever o seu dispositivos empresariais Android dedicado ou dispositivos totalmente gerenciados (pré-visualização)
 
-Depois que tiver configurado a sua [dispositivos dedicados do Android](android-kiosk-enroll.md) ou [dispositivos totalmente geridos](android-fully-managed-enroll.md) no Intune, pode inscrever os dispositivos. A forma como inscreve os seus dispositivos Android depende do sistema operativo.
+Depois que tiver configurado a sua [dispositivos dedicados do Android Enterprise](android-kiosk-enroll.md) ou [dispositivos totalmente geridos](android-fully-managed-enroll.md) no Intune, pode inscrever os dispositivos. Como inscrever os seus dispositivos Android Enterprise depende do sistema operativo.
 
 | Método de inscrição | Versão mínima do SO Android para dispositivos dedicados e totalmente geridos |
 | ----- | ----- |

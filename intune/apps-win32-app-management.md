@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/29/2019
+ms.date: 02/20/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 61a2abee2e926605a4d7d35baa53f6259ef77db3
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 02505cc21865308ef9ea4dbbabe95fc65ea87b58
+ms.sourcegitcommit: f1681554ad842c22ad3f82f0e6d44d5966e4aa3d
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55840251"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56458880"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune autónomo - gestão de aplicações do Win32
 
@@ -39,6 +39,9 @@ O Intune autónomo permitirá aceder a melhores funcionalidades de gestão de ap
 ## <a name="prepare-the-win32-app-content-for-upload"></a>Preparar o conteúdo da aplicação Win32 para carregamento
 
 Utilize o [ferramenta de preparação do conteúdo do Microsoft Win32](https://go.microsoft.com/fwlink/?linkid=2065730) para processar previamente as aplicações Win32. A ferramenta converte os arquivos de instalação de aplicativo para o *.intunewin* formato. A ferramenta Deteta alguns dos atributos necessários pelo Intune para determinar o estado de instalação do aplicativo. Depois de utilizar esta ferramenta na pasta do instalador da aplicação, poderá criar uma aplicação Win32 na consola do Intune.
+
+> [!IMPORTANT]
+> O [ferramenta de preparação do conteúdo do Microsoft Win32](https://go.microsoft.com/fwlink/?linkid=2065730) zips para todos os ficheiros e subpastas quando cria o *.intunewin* ficheiro. Certifique-se de que tenha a ferramenta de preparação do conteúdo do Microsoft Win32 separado do instalador ficheiros e pastas, para que não incluir a ferramenta ou outros arquivos desnecessários e pastas no seu *.intunewin* ficheiro.
 
 Pode baixar o [ferramenta de preparação do conteúdo do Microsoft Win32](https://go.microsoft.com/fwlink/?linkid=2065730) do GitHub.
 

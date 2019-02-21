@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: ''
+ms.date: 02/20/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e24043bb1c41d68de04669ff27cc659624dc56c1
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 6d3a7ea65a560ff317bfe9ff2374c6c9cd2e5f4b
+ms.sourcegitcommit: f1681554ad842c22ad3f82f0e6d44d5966e4aa3d
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55846830"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56458863"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Remover dispositivos ao apagar os dados, extinguir ou anular a inscrição do dispositivo de forma manual
 
@@ -82,7 +82,7 @@ As seguintes tabelas descrevem os dados que são removidos e o efeito da ação 
 
 |Tipo de dados|iOS|
 |-------------|-------|
-|Aplicações da empresa e dados associados instalados pelo Intune|**Aplicações instaladas através do Portal da empresa:** Aplicações de fomentar a prática dos que são afixadas ao perfil de gestão, todos os dados da aplicação e as aplicações são removidas. Estas aplicações incluem aplicações instaladas originalmente da App Store e mais tarde geridas como aplicações da empresa. <br /><br /> **Aplicações da Microsoft que utilizam a gestão de aplicações móveis e foram instaladas a partir da App Store:** Para aplicações que não são geridas pelo Portal da empresa, dados de aplicações da empresa que estão protegidos pela encriptação de gestão de aplicações móveis (MAM) dentro do armazenamento local da aplicação são removidos. Os dados protegidos pela encriptação MAM fora da aplicação permanecem encriptados e inutilizáveis, mas não são removidos. Os dados pessoais e as aplicações não são removidas.|
+|Aplicações da empresa e dados associados instalados pelo Intune|**Aplicações instaladas através do Portal da empresa:** Para aplicações que são afixadas ao perfil de gestão, todos os dados da aplicação e as aplicações são removidas. Estas aplicações incluem aplicações instaladas originalmente da App Store e mais tarde geridas como aplicações da empresa. <br /><br /> **Aplicações da Microsoft que utilizam a gestão de aplicações móveis e foram instaladas a partir da App Store:** Para aplicações que não são geridas pelo Portal da empresa, dados de aplicações da empresa que estão protegidos pela encriptação de gestão de aplicações móveis (MAM) dentro do armazenamento local da aplicação são removidos. Os dados protegidos pela encriptação MAM fora da aplicação permanecem encriptados e inutilizáveis, mas não são removidos. Os dados pessoais e as aplicações não são removidas.|
 |Definições|As configurações que foram definidas pela política do Intune já não são impostas. Os utilizadores podem alterar as definições.|
 |Definições de perfis de Wi-Fi e da VPN|Removidos.|
 |Definições de perfil de certificado|Os certificados são removidos e revogados.|
@@ -130,7 +130,7 @@ Só pode limpar dispositivos de quiosque. Não é possível extinguir dispositiv
 
 |Tipo de dados|Windows 8.1 (MDM) e Windows RT 8.1|Windows RT|Windows Phone 8.1 e Windows Phone 8|Windows 10|
 |-------------|----------------------------------------------------------------|--------------|-----------------------------------------|--------|
-|Aplicações da empresa e dados associados instalados pelo Intune|As chaves para ficheiros protegidos por EFS são revogadas. O utilizador não consegue abrir os ficheiros.|As aplicações da empresa não são removidas.|As aplicações instaladas originalmente através do Portal da Empresa são desinstaladas. Os dados da aplicação da empresa são removidos.|As aplicações são desinstaladas. As chaves de sideload são removidas.<br>Na versão 1703 do Windows 10 (Atualização para Criativos) e posterior, as aplicações do Office 365 ProPlus não são removidas.|
+|Aplicações da empresa e dados associados instalados pelo Intune|As chaves para ficheiros protegidos por EFS são revogadas. O utilizador não consegue abrir os ficheiros.|As aplicações da empresa não são removidas.|As aplicações instaladas originalmente através do Portal da Empresa são desinstaladas. Os dados da aplicação da empresa são removidos.|As aplicações são desinstaladas. As chaves de sideload são removidas.<br>Na versão 1703 do Windows 10 (Atualização para Criativos) e posterior, as aplicações do Office 365 ProPlus não são removidas. Extensão de gestão do Intune instalado Win32 não serão possível desinstalar aplicações em dispositivos não inscritos.|
 |Definições|As configurações que foram definidas pela política do Intune já não são impostas. Os utilizadores podem alterar as definições.|As configurações que foram definidas pela política do Intune já não são impostas. Os utilizadores podem alterar as definições.|As configurações que foram definidas pela política do Intune já não são impostas. Os utilizadores podem alterar as definições.|As configurações que foram definidas pela política do Intune já não são impostas. Os utilizadores podem alterar as definições.|
 |Definições de perfis de Wi-Fi e da VPN|Removidos.|Removidos.|Não suportado.|Removidos.|
 |Definições de perfil de certificado|Os certificados são removidos e revogados.|Os certificados são removidos e revogados.|Não suportado.|Os certificados são removidos e revogados.|
