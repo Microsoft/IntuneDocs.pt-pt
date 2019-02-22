@@ -15,14 +15,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 36076aab02f16937066cb3d47d573f7c74dd6277
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 4edf76b2406f07efa68275763da87340bb34f222
+ms.sourcegitcommit: 613b2064df07cfac0081e8549177e1f2d07cf33c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55833621"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56590075"
 ---
-# <a name="windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Grupo de modelos do Windows 10 para configurar definições de política no Microsoft Intune
+# <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Utilizar modelos do Windows 10 para configurar as definições de política de grupo no Microsoft Intune
 
 Quando gerir dispositivos na sua organização, em que pretende criar um grupo de definições que são aplicadas a diferentes grupos de dispositivos. Por exemplo, tem vários grupos de dispositivos. Para GroupA, que pretende atribuir um conjunto específico de definições. Para GroupB, que pretende atribuir um conjunto diferente de definições. Também deseje uma simples exibição de definições que pode configurar.
 

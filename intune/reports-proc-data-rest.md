@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0c43b27a07aa5eafc19ce1528bbfe34c1a6dbb1d
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: bb10dfe14dc6da3d58e5ae4279a4d89647691cac
+ms.sourcegitcommit: 8943848d47d5d5d6e44c74d414c34c5e3457862b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55839486"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56655362"
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>Obter dados a partir da API do Armazém de Dados do Intune com um cliente REST
 
@@ -99,7 +99,7 @@ Também precisa do ponto final. Para obter o ponto final do Armazém de Dados, p
 3. Selecione **Definir o Armazém de Dados do Intune** em **Outras tarefas**.
 4. Copie o URL de feed personalizado em **Utilize os serviços de relatórios de terceiros**. Deverá ter o seguinte aspeto: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
 
-O ponto final segue o seguinte formato: `https://fef.{yourtenant}.manage.microsoft.com/ReportingService/DataWarehouseFEService/{entity}?api-version={verson-number}`.
+O ponto final segue o formato seguinte: `https://fef.{yourtenant}.manage.microsoft.com/ReportingService/DataWarehouseFEService/{entity}?api-version={verson-number}`
 
 Por exemplo, a entidade **Datas** tem o seguinte aspeto: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`
 
@@ -164,7 +164,7 @@ O seguinte exemplo inclui um cliente REST simples. O código utiliza a classe **
 
     ![Progam.cs e o Explorador de soluções no Visual Studio](./media/reports-get_rest_data_in.png)
 
-8. Substitua o código no Program.cs pelo seguinte:  
+8. Substitua o código no *Program.cs* com o código a seguir:  
    ```csharp
    namespace IntuneDataWarehouseSamples
    {

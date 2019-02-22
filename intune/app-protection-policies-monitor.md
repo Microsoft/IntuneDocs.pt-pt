@@ -1,7 +1,7 @@
 ---
 title: Como monitorizar políticas de proteção de aplicações
 titleSuffix: Microsoft Intune
-description: Monitorize o estado de conformidade das políticas de gestão de aplicações móveis no Intune.
+description: Este tópico descreve como monitorizar o estado de conformidade das políticas de gestão de aplicações móveis no Intune.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7efa888344b91c74672563730bbdea6c7424214b
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 0dd0ce79f6bbb381523a92855f38ad6b7f372ac2
+ms.sourcegitcommit: 8943848d47d5d5d6e44c74d414c34c5e3457862b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55835100"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56655328"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>Como monitorizar políticas de proteção de aplicações
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]

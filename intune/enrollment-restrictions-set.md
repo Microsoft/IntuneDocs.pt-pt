@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cfbfb26569a85d8cd19b840ab86ec58160a1dec4
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 229659e0021f7386279ffbd5950e4eb849944ef2
+ms.sourcegitcommit: 613b2064df07cfac0081e8549177e1f2d07cf33c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55839689"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56590058"
 ---
 # <a name="set-enrollment-restrictions"></a>Definir restrições de inscrição
 
@@ -129,6 +129,16 @@ Pode alterar as definições de uma restrição de limite de dispositivos ao seg
 Durante a inscrição de BYOD, os utilizadores veem uma notificação que irá informar quando atingirem o respetivo limite de dispositivos inscritos. Por exemplo, no iOS, tem o seguinte aspeto:
 
 ![Notificação de limite do dispositivo iOS](./media/enrollment-restrictions-ios-set-limit-notification.png)
+
+Restrições de limite de dispositivo não se aplicam para os seguintes tipos de inscrição da empresa do Windows:
+
+- Inscrições cogeridas
+- Inscrições de GPO
+- Azure Active Directory associado inscrições
+- Em massa do Azure Active Directory associados a um inscrições
+- Inscrições de autopilot
+
+Pode definir limites de dispositivos para estes tipos de inscrição [no Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/devices/device-management-azure-portal#configure-device-settings).
 
 ## <a name="change-enrollment-restriction-priority"></a>Alterar a prioridade das restrições de inscrição
 
