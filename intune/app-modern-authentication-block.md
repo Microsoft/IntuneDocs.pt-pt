@@ -6,8 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/14/2018
-ms.topic: article
+ms.date: 02/22/2019
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a651f926f8e8cc5beab80a70649c82677e0b2487
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 5717c7471b8fc003572b863c5f317abe1e66bf07
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55833057"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742195"
 ---
 # <a name="block-apps-that-do-not-use-modern-authentication-adal"></a>Bloquear aplicações que não utilizam autenticação moderna (ADAL)
 
@@ -35,11 +34,11 @@ Acesso condicional com base na aplicação com políticas de proteção de aplic
 Para bloquear o acesso às aplicações que não utilizam autenticação moderna, recomendamos os seguintes métodos:
 
 - Configure regras de afirmações do ADFS para bloquear protocolos de autenticação não moderna. São fornecidas instruções detalhadas no cenário 3 – [bloquear todo o acesso ao O365, exceto aplicações baseadas no browser](https://technet.microsoft.com/library/dn592182.aspx).
-- Para o **Exchange e SharePoint Online**, utilize o Acesso Condicional do Azure Active Directory e o commandlet Set-SPOTenant do PowerShell para o SharePoint online. Para obter instruções detalhadas, veja [Configurar o SharePoint Online e Exchange Online para o acesso condicional do Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-no-modern-authentication#legacy-authentication-protocols).
+- Para **Exchange e SharePoint Online**, utilizar o acesso condicional e utilize o commandlet do PowerShell Set-SPOTenant para o SharePoint online. Para obter instruções detalhadas, veja [Configurar o SharePoint Online e Exchange Online para o acesso condicional do Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-no-modern-authentication#legacy-authentication-protocols).
 
 
 >[!IMPORTANT]
->O acesso condicional com base na aplicação não pode ser utilizado com a autenticação baseada no certificado do Azure Active Directory (Azure AD). Só pode ter um destes configurado de cada vez.
+>Acesso condicional com base na aplicação não pode ser utilizado com a autenticação baseada em certificado do Azure Active Directory (Azure AD). Só pode ter um destes configurado de cada vez.
 
 ## <a name="next-steps"></a>Passos Seguintes
 

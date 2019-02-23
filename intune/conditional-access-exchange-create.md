@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 02/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8b4f35dba38dd1b69f770a3a10689ce87eaf3a27
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: fc8bbcdd9e6fa8174ff4b6aa7fb0ae20b14fc184
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55840404"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742861"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Criar uma política de acesso condicional no Exchange no local e no Exchange Online Dedicado legado
 
@@ -79,52 +79,54 @@ A aplicação **Correio** nativa no Windows 8.1 e posterior (quando inscrita at
 
 1. Aceda ao [portal do Azure](https://portal.azure.com/) e inicie sessão com as credenciais do Intune.
 
-1. Depois de se com êxito, consulte a **Dashboard do Azure**.
+2. Aceda a **Intune** > **acesso ao Exchange**e, em seguida, selecione **acesso do Exchange no local**. 
 
-1. Selecione **Todos os serviços** no menu à esquerda e, em seguida, escreva **Intune** no filtro da caixa de texto.
+3. Sobre o **Exchange no local acesso** painel, escolha **Sim** para *ativar o Exchange no local o controlo de acesso*.
 
-1. Escolha **Intune**, será apresentado o **Dashboard do Intune**.
+4. Selecione **Todos os serviços** no menu à esquerda e, em seguida, escreva **Intune** no filtro da caixa de texto.
 
-1. Selecione **Acesso no local**. O painel **Acesso no local** mostra o estado da política de acesso condicional e os dispositivos que são afetados pelo mesma.
+5. Escolha **Intune**, será apresentado o **Dashboard do Intune**.
 
-1. Em **Gerir**, escolha **Acesso ao Exchange no local**.
+6. Selecione **Acesso no local**. O painel **Acesso no local** mostra o estado da política de acesso condicional e os dispositivos que são afetados pelo mesma.
 
-1. No painel **Acesso no local ao Exchange**, selecione **Sim** para ativar o controlo de acesso no local ao Exchange.
+7. Em **Gerir**, escolha **Acesso ao Exchange no local**.
+
+8. No painel **Acesso no local ao Exchange**, selecione **Sim** para ativar o controlo de acesso no local ao Exchange.
 
     > [!NOTE]
     > Se não tiver configurado um conector do Exchange Active Sync no local, esta opção estará desativada.  Primeiro tem de instalar e configurar pelo menos um conector antes de ativar o acesso condicional do Exchange no local. Para obter mais detalhes, veja [Instalar o Exchange Connector no Local do Intune](exchange-connector-install.md)
 
-1. Em **Atribuição**, selecione **Grupos Incluídos**.  Utilize o grupo de utilizadores de segurança ao qual deve ser aplicado o acesso condicional. Esta ação requer que os utilizadores inscrevam os dispositivos no Intune e que estejam em conformidade com os perfis de conformidade.
+9. Em **Atribuição**, selecione **Grupos Incluídos**.  Utilize o grupo de utilizadores de segurança ao qual deve ser aplicado o acesso condicional. Esta ação requer que os utilizadores inscrevam os dispositivos no Intune e que estejam em conformidade com os perfis de conformidade.
 
-1. Se quiser excluir determinados grupos de utilizadores, poderá fazê-lo ao escolher **Grupos Excluídos** e selecionar um grupo de utilizadores que pretende que fique isento da obrigatoriedade de inscrição e conformidade dos dispositivos.
+10. Se quiser excluir determinados grupos de utilizadores, poderá fazê-lo ao escolher **Grupos Excluídos** e selecionar um grupo de utilizadores que pretende que fique isento da obrigatoriedade de inscrição e conformidade dos dispositivos.
 
-1. Em **Definições**, escolha **Notificações do utilizador** para modificar a mensagem de e-mail predefinida. Esta mensagem será enviada aos utilizadores se eles quiserem aceder ao Exchange no local, mas o dispositivo deles não estiver em conformidade. O modelo de mensagem utiliza Linguagem de markup.  Também pode ver a pré-visualização do aspeto da mensagem à medida que escreve.
+11. Em **Definições**, escolha **Notificações do utilizador** para modificar a mensagem de e-mail predefinida. Esta mensagem será enviada aos utilizadores se eles quiserem aceder ao Exchange no local, mas o dispositivo deles não estiver em conformidade. O modelo de mensagem utiliza Linguagem de markup.  Também pode ver a pré-visualização do aspeto da mensagem à medida que escreve.
     > [!TIP]
     > Para saber mais sobre a Linguagem de markup, veja este [artigo](https://en.wikipedia.org/wiki/Markup_language) da Wikipédia.
 
-1. No painel **Definições avançadas de acesso do Exchange Active Sync**, predefina a regra global para o acesso a partir dos dispositivos que não são geridos pelo Intune e para as regras de nível da plataforma, tal como é descrito nos dois passos que se seguem.
+12. No painel **Definições avançadas de acesso do Exchange Active Sync**, predefina a regra global para o acesso a partir dos dispositivos que não são geridos pelo Intune e para as regras de nível da plataforma, tal como é descrito nos dois passos que se seguem.
 
-1. Em dispositivos que não são afetados pelo acesso condicional ou outras regras, pode optar por permitir que acedam ao Exchange ou bloqueá-lo.
+8. Em dispositivos que não são afetados pelo acesso condicional ou outras regras, pode optar por permitir que acedam ao Exchange ou bloqueá-lo.
 
    - Quando definir esta opção para permitir o acesso, todos os dispositivos poderão aceder ao Exchange no local imediatamente.  Os dispositivos que pertencem aos utilizadores nos **Grupos Incluídos** serão bloqueados se forem subsequentemente avaliados como não conformes com as políticas de conformidade ou não estiverem inscritos no Intune.
    - Quando definir esta opção para bloquear o acesso, todos os dispositivos serão imediatamente impedidos de aceder ao Exchange no local inicialmente.  Os dispositivos que pertencem aos utilizadores nos **Grupos Incluídos** obterão acesso assim que o dispositivo for inscrito no Intune e avaliado como estando em conformidade. Os dispositivos Android que não executem o Samsung Knox Standard estarão sempre bloqueados, porque não suportam esta definição.
 
-1. Em **Exceções da plataforma do dispositivo**, selecione **Adicionar** para especificar as plataformas. Se a definição **acesso de dispositivo não gerido** estiver configurada como **bloqueado**, os dispositivos que estão inscritos e em conformidade terão permissão, mesmo que exista uma exceção de plataforma para bloquear. Selecione **OK** para guardar as definições.
+13. Em **Exceções da plataforma do dispositivo**, selecione **Adicionar** para especificar as plataformas. Se a definição **acesso de dispositivo não gerido** estiver configurada como **bloqueado**, os dispositivos que estão inscritos e em conformidade terão permissão, mesmo que exista uma exceção de plataforma para bloquear. Selecione **OK** para guardar as definições.
 
-1. No painel **No local**, clique em **Guardar** para guardar a política de acesso condicional.
+14. No painel **No local**, clique em **Guardar** para guardar a política de acesso condicional.
 
 ## <a name="create-azure-ad-conditional-access-policies-in-intune"></a>Criar políticas de Acesso condicional do Azure AD no Intune
 
-A partir da versão 1704 do Intune, os administradores podem criar políticas de acesso condicional do Azure AD a partir do Intune no portal do Azure, pelo que não precisa de alternar entre as cargas de trabalho do Azure e do Intune.
+Acesso condicional é uma tecnologia do Azure Active Directory (Azure AD). O nó de acesso condicional acedido a partir *Intune* é o mesmo nó como acedidos a partir de *do Azure AD*.  
 
 > [!IMPORTANT]
 > Tem de ter uma licença do Azure AD Premium para criar políticas de acesso condicional do Azure AD a partir do Intune no portal do Azure.
 
-### <a name="to-create-azure-ad-conditional-access-policy"></a>Para criar uma política de acesso condicional do Azure AD
+### <a name="to-create-a-conditional-access-policy"></a>Para criar uma política de acesso condicional
 
-1. No **Dashboard do Intune**, escolha **Acesso condicional**.
+1. Na **Dashboard do Intune**, selecione **acesso condicional**.
 
-2. No painel **Políticas**, selecione **Nova política** para criar a sua nova política de acesso condicional do Azure AD.
+2. Na **políticas** painel, selecione **nova política** para criar o seu Azure nova política de acesso condicional do AD.
 
 ## <a name="see-also"></a>Consulte também
 

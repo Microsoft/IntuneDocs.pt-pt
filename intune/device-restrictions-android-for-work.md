@@ -1,11 +1,11 @@
 ---
 title: Definições de dispositivos empresariais Android no Microsoft Intune – Azure | Documentos da Microsoft
-description: No Android Enterprise ou de dispositivos Android for Work, restringir as definições no dispositivo, incluindo copiar e colar, Mostrar notificações, permissões de aplicações, partilha de dados, comprimento de palavra-passe, falhas de início de sessão, utilize a impressão digital para desbloquear, reutilização de palavras-passe e ativar o bluetooth partilha de contactos profissionais. Configure dispositivos como um quiosque para executar uma aplicação ou várias aplicações.
+description: No Android Enterprise ou de dispositivos Android for Work, restringir as definições no dispositivo, incluindo copiar e colar, Mostrar notificações, permissões de aplicações, partilha de dados, comprimento de palavra-passe, falhas de início de sessão, utilize a impressão digital para desbloquear, reutilização de palavras-passe e ativar o bluetooth partilha de contactos profissionais. Configure dispositivos como um quiosque de dispositivo dedicado para executar uma aplicação ou várias aplicações.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/22/2019
+ms.date: 02/20/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,16 +14,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0e79572b6815f2aded8f3145969beac4233e415b
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 0c69d45794b1d40915fbd09bae557916a9daa591
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55844229"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742708"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Definições de dispositivos do Android Enterprise para permitir ou restringir funcionalidades com o Intune
 
-Este artigo apresenta e descreve as diferentes definições que pode controlar em dispositivos Android Enterprise. Como parte da sua solução de gestão (MDM) de dispositivos móveis, utilize estas definições para permitir ou desativar funcionalidades, execução de aplicações no modo de local público, controlo de segurança e muito mais.
+Este artigo apresenta e descreve as diferentes definições que pode controlar em dispositivos Android Enterprise. Como parte da sua solução de gestão (MDM) de dispositivos móveis, utilize estas definições para permitir ou desativar funcionalidades, execução de aplicações em dispositivos dedicados, controlo de segurança e muito mais.
 
 ## <a name="before-you-begin"></a>Antes de começar
 
@@ -69,7 +69,7 @@ Este artigo apresenta e descreve as diferentes definições que pode controlar e
   - **Predefinição do dispositivo**: Utilize predefinição do dispositivo.
   - **Automática**: As atualizações são instaladas automaticamente sem interação do utilizador. Definir esta política imediatamente instala todas as atualizações pendentes.
   - **Adiado**: As atualizações são adiadas durante 30 dias. No final dos 30 dias, o Android solicita ao utilizador para instalar a atualização. É possível os fabricantes de dispositivos ou operadoras impedirem (isentarem) o adiamento de atualizações de segurança importantes. Uma atualização isenta mostra uma notificação de sistema ao utilizador no dispositivo. 
-  - **Janela de manutenção**: Instala atualizações automaticamente durante uma janela de manutenção diária que definir no Intune. Instalação tenta diariamente durante 30 dias e pode falhar se houver níveis insuficientes de espaço ou útil da bateria. Após 30 dias, o Android solicita ao utilizador que instalar. Esta janela também é utilizada para instalar atualizações para aplicações do Play. Utilize esta opção para dispositivos dedicados, tais como quiosques, como aplicações de primeiro plano de local público de aplicação única podem ser atualizadas.
+  - **Janela de manutenção**: Instala atualizações automaticamente durante uma janela de manutenção diária que definir no Intune. Instalação tenta diariamente durante 30 dias e pode falhar se houver níveis insuficientes de espaço ou útil da bateria. Após 30 dias, o Android solicita ao utilizador que instalar. Esta janela também é utilizada para instalar atualizações para aplicações do Play. Utilize esta opção para dispositivos dedicados, tais como quiosques, como aplicações de primeiro plano de dispositivos de dedicado de aplicação única podem ser atualizadas.
 - **É atualizado automaticamente a aplicação**: Escolha quando são instaladas as atualizações automáticas. As opções são:
   - **Não configurado**
   - **Preferência de utilizador**
@@ -85,47 +85,48 @@ Este artigo apresenta e descreve as diferentes definições que pode controlar e
 
 - **Análise de ameaças nas aplicações**: **Exigir** impõe que o **verificar aplicações** definição está ativada para o trabalho e perfis pessoais.
 
-### <a name="kiosk-settings"></a>Definições de quiosque
+### <a name="dedicated-device-settings"></a>Definições de dispositivos dedicados
 
-Pode configurar um dispositivo para executar uma aplicação ou muitas aplicações. Quando um dispositivo está no modo de local público, apenas as aplicações que adicionar estão disponíveis. Estas definições aplicam-se ao Android dispositivos dedicados, mas não para o Android totalmente gerido dispositivos dedicados.
+Utilize estas definições para configurar uma experiência de estilo de local público nos seus dispositivos dedicados. Pode configurar um dispositivo execute uma aplicação ou executar muitos aplicativos. Quando um dispositivo estiver definido com modo de local público, apenas as aplicações que adicionar estão disponíveis. Estas definições aplicam-se a dispositivos Android Enterprise dedicado. Não se aplicam a dispositivos Android Enterprise totalmente gerido.
 
-**Modo de local público**: Escolha se o dispositivo será executado uma aplicação ou várias aplicações.
+**Modo de local público**: Escolha se o dispositivo executa uma aplicação ou várias aplicações.
 
-- **Quiosque de uma aplicação**: Os utilizadores só podem aceder uma única aplicação no dispositivo. Quando o dispositivo é iniciado, apenas a aplicação específica é iniciada. Os utilizadores não podem abrir novas aplicações ou mudar a aplicação em execução.
+- **Aplicação única**: Os utilizadores só podem aceder uma única aplicação no dispositivo. Quando o dispositivo é iniciado, apenas a aplicação específica é iniciada. Os utilizadores não podem abrir novas aplicações ou mudar a aplicação em execução.
 
   **Passos**
   1. Escolher **Selecione uma aplicação gerida**e selecione a aplicação do Google Play gerida a partir da lista. 
 
-      Se não tiver todas as aplicações listadas, em seguida, [adicionar algumas aplicações Android](apps-add-android-for-work.md) no dispositivo. Não se esqueça [atribuir a aplicação para o grupo de dispositivos que criou para os seus dispositivos de local público](apps-deploy.md).
+      Se não tiver todas as aplicações listadas, em seguida, [adicionar algumas aplicações Android](apps-add-android-for-work.md) no dispositivo. Não se esqueça [atribuir a aplicação para o grupo de dispositivos que criou para os seus dispositivos dedicados](apps-deploy.md).
 
   2. Escolher **OK** > **OK** para adicionar a aplicação.
 
-- **Quiosque de várias aplicações**: Os utilizadores podem aceder um conjunto limitado de aplicações no dispositivo. Quando o dispositivo é iniciado, inicie apenas as aplicações que adicionar. Também pode adicionar alguns links da web que os utilizadores podem abrir. Quando a política é aplicada, os utilizadores veem ícones para aplicações permitidas na tela inicial.
+- **Várias aplicações**: Os utilizadores podem aceder um conjunto limitado de aplicações no dispositivo. Quando o dispositivo é iniciado, inicie apenas as aplicações que adicionar. Também pode adicionar alguns links da web que os utilizadores podem abrir. Quando a política é aplicada, os utilizadores veem ícones para aplicações permitidas na tela inicial.
 
-  > [IMPORTANTE] Para dispositivos de local público de várias aplicações, o [aplicação gerida ecrãs home page](https://play.google.com/work/apps/details?id=com.microsoft.launcher.enterprise) no Google Play **tem de ser**:
+  > [!IMPORTANT]
+  > Para várias aplicações de dispositivos, dedicados a [aplicação gerida ecrãs home page](https://play.google.com/work/apps/details?id=com.microsoft.launcher.enterprise) no Google Play **tem de ser**:
   >   - [Adicionado como uma aplicação de cliente](apps-add-android-for-work.md) no Intune
-  >   - [Atribuído ao grupo de dispositivos](apps-deploy.md) criado para os seus dispositivos de local público
+  >   - [Atribuído ao grupo de dispositivos](apps-deploy.md) criado para os seus dispositivos dedicados
   > 
   > O **geridos tela home page** aplicação não é necessário para estar no perfil de configuração, mas é necessário para ser adicionado como uma aplicação de cliente. Quando o **geridos tela home page** aplicação é adicionada como uma aplicação de cliente, todas as outras aplicações que adiciona no perfil de configiration são apresentadas como ícones no o **geridos tela home page** aplicação. 
 
   - Escolher **adicionar**e selecione as suas aplicações na lista.
 
-    Se o **geridos tela home page** aplicação não estiver listada, em seguida, [adicioná-lo a partir do Google Play](https://play.google.com/work/apps/details?id=com.microsoft.launcher.enterprise). Não se esqueça [atribuir a aplicação](apps-deploy.md) para o grupo de dispositivos que criou para os seus dispositivos de local público.
+    Se o **geridos tela home page** aplicação não estiver listada, em seguida, [adicioná-lo a partir do Google Play](https://play.google.com/work/apps/details?id=com.microsoft.launcher.enterprise). Não se esqueça [atribuir a aplicação](apps-deploy.md) para o grupo de dispositivos que criou para os seus dispositivos dedicados.
 
-    Também pode adicionar outros [aplicações Android](apps-add-android-for-work.md) e [aplicações web](web-app.md) criados pela sua organização para o dispositivo. Não se esqueça [atribuir a aplicação para o grupo de dispositivos que criou para os seus dispositivos de local público](apps-deploy.md).
+    Também pode adicionar outros [aplicações Android](apps-add-android-for-work.md) e [aplicações web](web-app.md) criados pela sua organização para o dispositivo. Não se esqueça [atribuir a aplicação para o grupo de dispositivos que criou para os seus dispositivos dedicados](apps-deploy.md).
 
-  - **Botão início virtual**: Escolher **ativar** para mostrar um botão de início do dispositivo de quiosque. Quando selecionado, o utilizador ele retorna ao ecrã principal do dispositivo para que os usuários podem alternar facilmente entre aplicações. Em alguns dispositivos Android, que os usuários precisem percorra a cópia de segurança no ecrã para mostrar o botão de início. **Desativar** não mostra um botão de início, para que os utilizadores podem utilizar o botão de retrocesso para alternar entre aplicações.
-  - **Saia do modo de local público**: Escolher **ativar** para permitir aos administradores interromper temporariamente o modo de local público para atualizar o dispositivo. Para utilizar esta funcionalidade, o administrador efetua o seguinte: 
+  - **Botão início virtual**: Escolher **ativar** para mostrar um botão de início no dispositivo dedicado. Quando selecionado, o utilizador ele retorna ao ecrã principal do dispositivo para que os usuários podem alternar facilmente entre aplicações. Em alguns dispositivos Android, que os usuários precisem percorra a cópia de segurança no ecrã para mostrar o botão de início. **Desativar** não mostra um botão de início, para que os utilizadores podem utilizar o botão de retrocesso para alternar entre aplicações.
+  - **Saia do modo de local público**: Escolher **ativar** para permitir aos administradores interromper temporariamente o modo de local público para atualizar o dispositivo. Para utilizar esta funcionalidade, o administrador: 
   
-    1. Continue selecionar o botão voltar, até que o botão de "Saída quiosque" é mostrado. 
-    2. Selecione o botão e introduza o **deixar o código do modo de local público** PIN.
+    1. Continua a selecionar o botão voltar, até que é mostrado no botão "Quiosque de saída". 
+    2. Selecionar o botão e introduz a **deixar o código do modo de local público** PIN.
     3. Quando terminar de efetuar alterações, selecione o **geridos tela home page** aplicação. Este passo relocks o dispositivo em modo de local público de várias aplicações. 
     
     **Desativar** não dá a capacidade de colocar em pausa o modo de local público. Se o administrador continua selecionar o botão voltar e seleciona o botão "Quiosque de saída", em seguida, uma mensagem indica que um código de acesso é necessário.
     
     - **Deixe o código do modo de local público**: Introduza um dígito de 4 a 6 PIN numérico. O administrador utiliza este PIN para interromper temporariamente o modo de local público.
  
-  - **Definir o fundo de URL personalizado**: Introduza um URL para personalizar o ecrã de segundo plano no dispositivo local público.
+  - **Definir o fundo de URL personalizado**: Introduza um URL para personalizar o ecrã de segundo plano no dispositivo dedicado.
 
 ### <a name="device-password-settings"></a>Definições de palavra-passe do dispositivo
 
@@ -288,4 +289,4 @@ Estas definições de palavra-passe aplicam-se aos perfis pessoais nos dispositi
 
 [Atribua o perfil](device-profile-assign.md) e [monitorize o respetivo estado](device-profile-monitor.md).
 
-Também pode criar perfis de local público para [Android](device-restrictions-android.md#kiosk) e [com o Windows 10](kiosk-settings.md) dispositivos.
+Também pode criar dispositivos dedicados perfis de local público para [Android](device-restrictions-android.md#kiosk) e [com o Windows 10](kiosk-settings.md) dispositivos.

@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/25/2018
+ms.date: 02/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bd29f52b4d108173b8f08b68cf8b85ce291a0077
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 101864120bb354bc517f93972e15ffc8f35d6541
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55842767"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742572"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>Quais são as formas comuns de utilizar o acesso condicional com o Intune?
 
@@ -31,7 +31,7 @@ Existem dois tipos de acesso condicional com o Intune: acesso condicional basead
 As informações abaixo ajudam-no a compreender como utilizar as funcionalidades de conformidade de *dispositivos móveis* do Intune e as funcionalidades de gestão (MAM) de *aplicações móveis* do Intune. 
 
 > [!NOTE]
-> O acesso condicional é uma funcionalidade do Azure Active Directory incluída com uma licença do Azure Active Directory Premium. O Intune melhora esta funcionalidade ao adicionar à solução a conformidade de dispositivos móveis e a gestão de aplicações móveis.
+> O acesso condicional é uma funcionalidade do Azure Active Directory incluída com uma licença do Azure Active Directory Premium. O Intune melhora esta funcionalidade ao adicionar à solução a conformidade de dispositivos móveis e a gestão de aplicações móveis. O nó de acesso condicional acedido a partir *Intune* é o mesmo nó como acedidos a partir de *do Azure AD*.  
 
 ## <a name="device-based-conditional-access"></a>Acesso condicional baseado no dispositivo
 

@@ -6,7 +6,7 @@ keywords: Armazém de Dados do Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/11/2010
+ms.date: 02/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,18 +17,33 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f8e10549e05f814975337831e3eb9821d87a3f43
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: b842838f3090ddb8f7fe4f3598cd30990476eeda
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55834012"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742192"
 ---
 # <a name="change-log-for-the-intune-data-warehouse-api"></a>Registo de alterações da API do Armazém de Dados do Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Mantenha-se a par das atualizações do Armazém de Dados do Intune.
+
+## <a name="1902"></a>1902 
+_Lançamento de Fevereiro de 2019_
+
+### <a name="power-bi-compliance-app"></a>Aplicação de conformidade do Power BI 
+
+Aceder ao seu armazém de dados do Intune no Power BI Online com o [conformidade do Intune (armazém de dados)](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) aplicação. Com esta aplicação do Power BI, pode agora aceder e partilhar relatórios previamente criados sem qualquer configuração e sem sair do seu navegador da web. 
+
+> [!NOTE]
+> Existem dois filtros adicionais, que pode aplicar para a aplicação de conformidade do Intune.
+
+#### <a name="add-additional-filters-to-the-intune-compliance-app"></a>Adicionar filtros adicionais para a aplicação de conformidade do Intune
+1. Abra o [conformidade do Intune (armazém de dados)](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) aplicação no seu browers web.
+2. Clique em **dispositivos em não conformidade** e selecione **em não conformidade** no **complianceStatus** filtro. 
+3. Clique em **dispositivos desconhecido** e selecione **ainda não está disponível** no **complianceStatus** filtro. 
 
 ## <a name="1812"></a>1812 
 _Lançamento de Dezembro de 2018_

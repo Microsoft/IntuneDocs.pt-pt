@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 1/29/2019
+ms.date: 02/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: afa2ef4cf1199597f61af99d631243e2d3b51e64
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 4ff07dfa48ab213bc65afc58708f490a80fb5ba8
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55845181"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742521"
 ---
 # <a name="enforce-compliance-for-windows-defender-atp-with-conditional-access-in-intune"></a>Impor a conformidade para Windows Defender ATP com acesso condicional no Intune
 
@@ -126,10 +126,13 @@ A política de conformidade determina um nível de risco aceitável num disposit
 4. Inclua ou exclua os grupos do Azure AD para lhes atribuir a política.
 5. Para implementar a política aos grupos, selecione **Guardar**. Os dispositivos dos utilizadores visados pela política são avaliados quanto à conformidade.
 
-## <a name="create-an-azure-ad-conditional-access-policy"></a>Criar uma política de acesso condicional do Azure AD
-A política de acesso condicional bloqueará o acesso a recursos *se* o dispositivo não estiver conforme. Por isso, se um dispositivo exceder o nível de ameaça, poderá bloquear o acesso aos recursos empresariais, tais como o SharePoint ou o Exchange Online.
+## <a name="create-a-conditional-access-policy"></a>Criar uma política de acesso condicional
+A política de acesso condicional bloqueará o acesso a recursos *se* o dispositivo não estiver conforme. Por isso, se um dispositivo exceder o nível de ameaça, poderá bloquear o acesso aos recursos empresariais, tais como o SharePoint ou o Exchange Online.  
 
-1. No [portal do Azure](https://portal.azure.com), abra o **Azure Active Directory** > **Acesso condicional** > **Nova política**.
+> [!TIP]  
+> Acesso condicional é uma tecnologia do Azure Active Directory (Azure AD). O nó de acesso condicional acedido a partir *Intune* é o mesmo nó como acedidos a partir de *do Azure AD*.  
+
+1. Na [portal do Azure](https://portal.azure.com), abra **Intune** > **acesso condicional** > **nova política**.
 2. Introduza um **Nome** para a política e selecione **Utilizadores e grupos**. Utilize as opções Incluir ou Excluir para adicionar os grupos à política e selecione **Concluído**.
 3. Selecione **Aplicações na cloud** e escolha as aplicações que quer proteger. Por exemplo, escolha **Selecionar aplicações** e selecione **Office 365 SharePoint Online** e **Office 365 Exchange Online**.
 

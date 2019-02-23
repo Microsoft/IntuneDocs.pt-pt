@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 02505cc21865308ef9ea4dbbabe95fc65ea87b58
-ms.sourcegitcommit: f1681554ad842c22ad3f82f0e6d44d5966e4aa3d
+ms.openlocfilehash: c586f7f4d72db5d193f02dca06aa868c73cbb09e
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56458880"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742504"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune autónomo - gestão de aplicações do Win32
 
@@ -255,6 +255,8 @@ Se for necessário, é possível suprimir notificações de alerta do utilizador
 Os registos de agente no computador cliente encontram-se normalmente em `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs`. Pode tirar partido de `CMTrace.exe` para ver estes ficheiros de registo. O *CMTrace.exe* pode ser transferido a partir das [Ferramentas de Cliente SCCM](https://docs.microsoft.com/sccm/core/support/tools). 
 
 ![Registos de captura de ecrã do agente no computador cliente](./media/apps-win32-app-10.png)    
+
+Para obter mais informações sobre as aplicações Win32 de resolução de problemas, consulte [resolução da instalação de aplicações de Win32](troubleshoot-app-install.md#win32-app-installation-troubleshooting).
 
 ### <a name="troubleshooting-areas-to-consider"></a>Áreas de resolução de problemas a considerar
 - Verificar o direcionamento para garantir que o agente está instalado no dispositivo – uma aplicação Win32 direcionada para um grupo ou um Script do PowerShell direcionado para um grupo irá criar a política de instalação de agente para o grupo de segurança.

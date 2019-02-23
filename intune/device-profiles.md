@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4b9bd8aaca9aaf6e39c7a120518eeca1cef31511
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 016b59a915058c3f2d0647a72e3ead224a010500
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55845096"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742454"
 ---
 # <a name="apply-features-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Aplicar definições de funcionalidades nos seus dispositivos com perfis de dispositivos no Microsoft Intune
 
@@ -34,7 +34,7 @@ Alguns exemplos de perfil incluem:
 - Permitir ou impedir o acesso a bluetooth no dispositivo.
 - Crie um perfil de Wi-Fi ou VPN que dá a diferentes dispositivos acesso à sua rede empresarial.
 - Gerir atualizações de software, incluindo quando são instaladas.
-- Execute um dispositivo de quiosque dedicado que pode executar uma aplicação ou executar muitas aplicações de um dispositivo Android.
+- Execute um dispositivo Android como dispositivo de quiosque dedicado que pode executar uma aplicação ou executar muitos aplicativos.
 
 Este artigo apresenta os passos para criar um perfil e proporcione uma descrição geral dos diferentes tipos de perfis que pode criar. Utilize estes perfis para permitir ou bloquear algumas funcionalidades nos dispositivos.
 
@@ -164,7 +164,7 @@ Esta funcionalidade suporta:
 
 - Windows 10 e posterior
 
-Definições de local público também disponíveis como restrições de dispositivos para [Android](device-restrictions-android.md#kiosk), [Android Enterprise](device-restrictions-android-for-work.md#kiosk-settings), e [ios](device-restrictions-ios.md#kiosk-supervised-only).
+Definições de local público também disponíveis como restrições de dispositivos para [Android](device-restrictions-android.md#kiosk), [Android Enterprise](device-restrictions-android-for-work.md#dedicated-device-settings), e [ios](device-restrictions-ios.md#kiosk-supervised-only).
 
 ## <a name="email"></a>Email
 

@@ -1,12 +1,12 @@
 ---
-title: Abandono da inscrição no portal da empresa no Intune
+title: Relatório de inscrições de utilizador incompleto no Intune
 titlesuffix: Microsoft Intune
-description: Saiba mais sobre o relatório de abandono do portal da empresa.
+description: Saiba mais sobre o relatório de inscrições de utilizador incompleto.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/20/2018
+ms.date: 2/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,34 +16,34 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 85a03718185de939612f5431a993f9f34c3048ba
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: e08623485f8e3b07af43891e3b09cfed5b94e583
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55840659"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742589"
 ---
-# <a name="company-portal-abandonment-report"></a>Relatório de abandono do portal da empresa
+# <a name="incomplete-user-enrollments-report"></a>Relatório de inscrições de utilizador incompleto
 
-Este relatório indica-lhe em que ponto os utilizadores estão a abandonar o processo de inscrição no Portal da Empresa.
+Este relatório indica onde no Portal da empresa aos utilizadores do processo de inscrição não são concluir o processo de inscrição.
 
-Para ver o relatório, selecione **Intune** > **Inscrição de dispositivos** > **Abandono do portal da empresa**.
+Para ver o relatório, selecione **Intune** > **inscrição de dispositivos** > **inscrições de utilizador incompleta**.
 
-Com base nestas informações sobre o abandono, pode atualizar os seus documentos de inclusão para ajudar os utilizadores a concluir a inscrição. Por exemplo, se existirem muitos utilizadores a desistir nos Termos de Utilização, pode investigar essa área e torná-la mais intuitiva para os utilizadores.
+Usando essas informações, pode atualizar os documentos de inclusão para ajudar os utilizadores concluírem a inscrição. Por exemplo, se existirem muitos utilizadores a desistir nos Termos de Utilização, pode investigar essa área e torná-la mais intuitiva para os utilizadores.
 
-## <a name="what-is-abandonment"></a>O que é o abandono?
+## <a name="what-is-an-incomplete-enrollment"></a>O que é uma inscrição incompleta?
 
-O abandono ocorre quando um utilizador opta por uma das seguintes ações:
+Uma inscrição incompleta é quando um usuário executa qualquer um dos seguintes:
 
 -   Seleciona explicitamente uma ação para parar a inscrição
 -   Fecha o Portal da Empresa durante a inscrição
 -   Demora mais de 30 minutos entre as secções da inscrição
 
-Se o utilizador optar por parar a inscrição e recomeçar múltiplas vezes, tal é contabilizado como múltiplas tentativas e múltiplos abandonos. Se o utilizador aguardar 30 minutos entre ecrãs de inscrição diferentes, tal será considerado como múltiplos abandonos.
+Se o utilizador opta pela inscrição de parar e reiniciar várias vezes, ele mostra como várias tentativas e várias inscrições incompletas. Se um utilizador tem de aguardar durante 30 minutos entre ecrãs de inscrição diferente, é considerado várias inscrições incompletas.
 
 ## <a name="what-does-the-report-show"></a>O que mostra o relatório?
 
-Os relatórios de inscrição incluem dados de dispositivos iOS e Android.
+Os relatórios incluem dados para dispositivos iOS e Android.
 
 Os relatórios mostram os dados correspondentes às últimas duas semanas, mas pode filtrar o relatório para apresentar qualquer período até 30 dias anteriores.
 
@@ -51,15 +51,15 @@ Pode filtrar o intervalo de datas, o sistema operativo e a secção de inscriç�
 
 ### <a name="number-and-percentage-tiles"></a>Mosaicos de número e percentagem
 
-Na parte superior do relatório, pode ver o número e a percentagem de relatórios de abandono em relação a todas as inscrições.
+Na parte superior do relatório, pode ver o número e percentagem de incompletas inscrições em relação a todas as inscrições.
 
 -   Inscrições iniciadas: O número de inscrições tentada.
--   Inscrições abandonadas: O número de inscrições de tentativas que não resulta num dispositivo totalmente inscrito e em conformidade.
--   Taxa de abandonment: A percentagem de tentativas de inscrição que foram abandonadas (abandonada inscrições / iniciada inscrições).
+-   Inscrições incompletas: O número de inscrições de tentativas que não resulta num dispositivo totalmente inscrito e em conformidade.
+-   Taxa de incompleta: A percentagem de tentativas de inscrição que foram abandonadas (abandonada inscrições / iniciada inscrições).
 
 ### <a name="line-graph"></a>Gráfico de linha
 
-O gráfico de linha mostra os abandonos diários para cada uma das quatro principais secções de inscrição:
+O gráfico de linha mostra as inscrições incompletas diárias para cada uma das seções de inscrição de quatro núcleos:
 
 -   Lista de verificação da configuração
 -   Ecrãs de plataforma
@@ -68,12 +68,12 @@ O gráfico de linha mostra os abandonos diários para cada uma das quatro princi
 
 ### <a name="user-abandonment-actions"></a>Ações de abandono do utilizador
 
-As seguintes tabelas mostram a lista de ações do utilizador que são consideradas abandono. Para ver exemplos de ecrãs de inscrição, pode ver os vídeos de inscrição do [iOS](https://channel9.msdn.com/Series/IntuneEnrollment/iOS-Enrollment) e [Android](https://channel9.msdn.com/Series/IntuneEnrollment/Android-Enrollment). 
+As tabelas seguintes mostram a lista de ações do usuário que ser qualificado como pedir uma inscrição incompleta. Para ver exemplos de ecrãs de inscrição, pode ver os vídeos de inscrição do [iOS](https://channel9.msdn.com/Series/IntuneEnrollment/iOS-Enrollment) e [Android](https://channel9.msdn.com/Series/IntuneEnrollment/Android-Enrollment). 
 
 
 #### <a name="setup-checklist-section"></a>Secção da lista de verificação da configuração
 
-| Nome do abandono | Ecrã ou fluxo | Plataforma | Ação |
+| Nome da ação | Ecrã ou fluxo | Plataforma | Ação |
 | ---- |---- |---- |---- |
 | EnrollmentWrapUp | Pedido para abrir uma página no Portal da Empresa | iOS/Android | **Cancelar** |
 | EnrollmentWrapUp | Ecrã de inscrição do dispositivo até à conclusão da operação **A carregar recursos da empresa** | iOS/Android | Demorou mais de 30 minutos |
@@ -83,7 +83,7 @@ As seguintes tabelas mostram a lista de ações do utilizador que são considera
 
 #### <a name="platform-screens-section"></a>Secção dos ecrãs de plataforma
 
-| Nome do abandono | Ecrã ou fluxo | Plataforma | Ação |
+| Nome da ação | Ecrã ou fluxo | Plataforma | Ação |
 | ---- |---- |---- |---- |
 | iOSProfileLaunch | Pedido para mostrar um perfil de configuração | iOS | **Ignorar** |
 | iOSProfileLaunch | Ecrã de instalação do perfil | iOS | **Cancelar** |
@@ -96,14 +96,14 @@ As seguintes tabelas mostram a lista de ações do utilizador que são considera
 
 #### <a name="terms-of-use-section"></a>Secção dos termos de utilização
 
-| Nome do abandono | Ecrã ou fluxo | Plataforma | Ação |
+| Nome da ação | Ecrã ou fluxo | Plataforma | Ação |
 | ---- |---- |---- |---- |
 | TermsofUse | Termos de utilização (se configurado pelo administrador) | iOS/Android | **Recusar Tudo** |
 | TermsofUse | Termos de utilização até **Aceitar tudo** | iOS/Android | Demorou mais de 30 minutos |
 
 #### <a name="complianceactivation-section"></a>Secção de Conformidade/Ativação
 
-| Nome do abandono | Ecrã ou fluxo | Plataforma | Ação |
+| Nome da ação | Ecrã ou fluxo | Plataforma | Ação |
 | ---- |---- |---- |---- |
 | Conformidade | A conformidade do dispositivo (se configurado pelo administrador) é apresentada como não verde na fase de pós-inscrição da configuração do acesso| iOS/Android | **Adiar** |
 | Conformidade | A conformidade do dispositivo é apresentada como não verde até ser atualizada e ficar a verde | iOS/Android | Demorou mais de 30 minutos |
@@ -112,4 +112,4 @@ As seguintes tabelas mostram a lista de ações do utilizador que são considera
 
 ## <a name="next-steps"></a>Passos Seguintes
 
-Depois de verificar as taxas de abandono, pode rever as [opções de inscrição](enrollment-options.md) para ver se pode fazer alterações para melhorar o processo de inscrição.
+Depois de verificar os preços da inscrição incompleta, pode rever o [opções de inscrição](enrollment-options.md) para ver se pode fazer alterações para melhorar a inscrição.

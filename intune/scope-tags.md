@@ -15,16 +15,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9441f1c69e3d445d6174521ad2c9ef5c7a6db2be
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 2536a5978bc9af99053e4513f4ceea8c0a40e633
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55835542"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742266"
 ---
 # <a name="use-scope-tags-to-filter-policies"></a>Utilizar etiquetas de âmbito para filtrar políticas
 
 As etiquetas de âmbito permitem-lhe filtrar políticas com as etiquetas personalizadas que criar. Pode aplicar etiquetas de âmbito para aplicações e funções.
+
+Quando um administrador cria um recurso no Intune, quaisquer etiquetas de âmbito atribuídas para cada administrador serão automaticamente atribuídas para o novo recurso.
 
 Por exemplo, crie uma etiqueta de âmbito chamada "Departamento de Engenharia" e atribua-a a perfis de configuração relacionados com o departamento de engenharia. Atribua essa mesma etiqueta à função "Administradores de Engenharia". Apenas serão apresentadas as políticas com a etiqueta "Departamento de Engenharia".
 

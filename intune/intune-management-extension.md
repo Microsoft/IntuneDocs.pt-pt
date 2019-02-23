@@ -1,11 +1,11 @@
 ---
-title: Adicionar scripts do PowerShell no Microsoft Intune para dispositivos com o Windows 10 – Azure | Microsoft Docs
-description: Adicione scripts do PowerShell, atribua a política de script a grupos do Azure Active Directory, utilize relatórios para monitorizar os scripts e veja os passos para eliminar scripts que adicionou em dispositivos com o Windows 10 no Microsoft Intune. Também pode ver alguns problemas comuns e as resoluções.
+title: Adicionar scripts do PowerShell para dispositivos Windows 10 no Microsoft Intune – Azure | Documentos da Microsoft
+description: Criar e executar scripts do PowerShell, atribua a política de script para grupos do Active Directory do Azure, utilizar relatórios para monitorizar os scripts e veja os passos para eliminar scripts que adicionar em dispositivos Windows 10 no Microsoft Intune. Também pode ver alguns problemas comuns e as resoluções.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/03/2018
+ms.date: 02/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,20 +16,24 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 573ca3aa10094e61165d297730d556e2ef559767
-ms.sourcegitcommit: 8e503c1b350f7b29a045b7daf3eece64be4ca3c4
+ms.openlocfilehash: a9b44e4fda5e7ff78a41dd952ea9eabcb820cfb3
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56302188"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742385"
 ---
-# <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>Gerir scripts do PowerShell no Intune para dispositivos Windows 10
+# <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>Utilizar scripts do PowerShell em dispositivos Windows 10 no Intune
 
-Utilize a extensão de gestão do Intune para carregar scripts do PowerShell no Intune para executar em dispositivos Windows 10. A extensão de gestão melhora a gestão de dispositivos móveis (MDM) do Windows 10 e torna mais fácil de mover para a gestão moderna.
+Utilize a extensão de gestão do Microsoft Intune para carregar scripts do PowerShell no Intune para executar em dispositivos Windows 10. A extensão de gestão melhora a gestão de dispositivos móveis (MDM) do Windows 10 e torna mais fácil de mover para a gestão moderna.
 
-## <a name="moving-to-modern-management"></a>Mudar para a gestão moderna
+Esta funcionalidade aplica-se a:
 
-A computação de utilizador final está a passar por uma transformação digital. As TI clássicas e tradicionais focam-se numa única plataforma de dispositivo, em dispositivos pertencentes à empresa, em utilizadores que trabalham num escritório e numa variedade de processos de TI reativos e manuais. A área de trabalho moderna usa muitas plataformas de utilizador e de negócios pertencentes à empresa, permite que os utilizadores trabalhem em qualquer lugar e fornece processos de TI automatizado e proativos.
+- Windows 10 e posterior
+
+## <a name="move-to-modern-management"></a>Mover para a gestão moderna
+
+A computação de utilizador final está a passar por uma transformação digital. Clássicas e tradicionais focam-se numa única plataforma de dispositivo, dispositivos pertencentes à empresa, os utilizadores que trabalham a partir de processos de TI reativos o office e o manual de diferente. A área de trabalho moderna usa muitas plataformas de utilizador e de negócios pertencentes à empresa, permite que os utilizadores trabalhem em qualquer lugar e fornece processos de TI automatizado e proativos.
 
 Serviços MDM, como o Microsoft Intune, podem gerir dispositivos móveis e de Desktops com o Windows 10. O cliente de gestão do Windows 10 incorporado comunica com o Intune para executar tarefas de gestão de empresa. Existem algumas tarefas que poderá ser necessário, por exemplo, a configuração do dispositivo avançadas e resolução de problemas. Para a gestão de aplicações do Win32, pode utilizar o [gestão de aplicações de Win32](apps-win32-app-management.md) funcionalidade nos seus dispositivos Windows 10.
 
@@ -39,25 +43,38 @@ A extensão de gestão do Intune complementa as funcionalidades de MDM do Window
 
 A extensão de gestão do Intune tem os seguintes pré-requisitos:
 
-- Dispositivos tem de ser associados a um ou registados no Azure AD e o Azure AD está configurado para [inscrição automática no Intune](windows-enroll.md#enable-windows-10-automatic-enrollment). A extensão de gestão do Intune suporta associados ao Azure AD, associados a um domínio híbrida e comanaged os dispositivos Windows inscritos.
+- Dispositivos tem de ser associados a um ou registados no Azure AD e o Azure AD está configurado para [inscrição automática no Intune](windows-enroll.md#enable-windows-10-automatic-enrollment). A extensão de gestão do Intune suporta associados ao Azure AD, associados a um domínio híbrida e conjuntamente geridos os dispositivos Windows inscritos.
 - Dispositivos têm de executar com o Windows 10 versão 1607 ou posterior.
 - O agente de extensão de gestão do Intune é instalado quando um script do PowerShell ou uma aplicação Win32 for implementada para um utilizador ou grupo de segurança do dispositivo.
 
-## <a name="create-a-powershell-script-policy"></a>Criar uma política de script do PowerShell 
+## <a name="create-a-script-policy"></a>Criar uma política de script 
 
-1. Na [portal do Azure](https://portal.azure.com), selecione **todos os serviços** > Filtrar **Intune** > selecione **Microsoft Intune**.
+1. Na [portal do Azure](https://portal.azure.com), selecione **todos os serviços** > Filtrar **Intune** > selecione **Intune**.
 2. Selecione **Configuração do dispositivo** > **Scripts do PowerShell** > **Adicionar**.
-3. Introduza um **Nome** e uma **Descrição** para o script do PowerShell. Para **Localização do script**, navegue até ao script do PowerShell. O script não pode ser superior a 200 KB de tamanho.
-4. Escolha **Configurar**. Em seguida, opte por executar o script com as credenciais do utilizador no dispositivo (**Sim**) ou no contexto do sistema (**Não**). Por predefinição, o script é executado no contexto do sistema. Selecione **Sim** a menos que o script tenha de ser executado no contexto do sistema. 
-  ![Painel Adicionar o script do PowerShell](./media/mgmt-extension-add-script.png)
-5. Selecione se o script tem de ser assinado por um fabricante fidedigno (**Sim**). Por predefinição, não existe um requisito para que o script seja assinado. 
-6. Selecione **OK** e, em seguida, **Criar** para guardar o script.
+3. Introduza as seguintes propriedades:
+    - **Nome**: Introduza um nome para o script do PowerShell. 
+    - **Descrição**: Introduza uma descrição para o script do PowerShell. Esta definição é opcional, mas recomendada. 
+    - **Localização do script**: Navegue para o script do PowerShell. O script tem de ser inferior a 200 KB (ASCII).
+4. Escolher **configurar**e introduza as seguintes propriedades:
+    - **Executar este script utilizando o com sessão iniciada nas credenciais**: Selecione **Sim** para executar o script com as credenciais do utilizador no dispositivo. Escolher **não** (predefinição) para executar o script no contexto do sistema. Selecione **Sim** a menos que o script tenha de ser executado no contexto do sistema.
+    - **Impor a verificação de assinatura de script**: Selecione **Sim** se o script deve ser assinado por um fabricante fidedigno. Selecione **não** (predefinição), se não existir um requisito para o script seja assinado. 
+    - **Executar script num anfitrião do PowerShell de 64 bits**: Selecione **Sim** para executar o script num host de PowerShell (PS) de 64 bits numa arquitetura de cliente de 64 bits. Selecione **não** (predefinição) executa o script num host do PowerShell de 32 bits.
 
-## <a name="assign-a-powershell-script-policy"></a>Atribuir uma política de script do PowerShell
+      Ao definir como **Sim** ou **não**, utilize a seguinte tabela para novos e existentes o comportamento da política:
+
+      | Executar script num anfitrião de PS de 64 bits | Arquitetura do cliente | Novo script PS | Política existente PS script |
+      | --- | --- | --- | --- | 
+      | Não | 32 bits  | anfitrião de PS de 32 bits suportado | É executado apenas num anfitrião de PS de 32 bits, que funciona em arquiteturas de 32 bits e 64 bits. |
+      | Sim | 64 bits | Executa o script no anfitrião de PS de 64 bits para arquiteturas de 64 bits. Quando executados de 32 bits, o script é executado num host de PS de 32 bits. | Executa o script no anfitrião de PS de 32 bits. Se esta definição é alterado para 64 bits, o script é aberto (ele não é executado) num host de PS de 64 bits e os resultados de relatórios. Quando executados de 32 bits, o script é executado no anfitrião de PS de 32 bits. |
+
+    ![Adicionar e utilizar scripts do PowerShell no Microsoft Intune](./media/mgmt-extension-add-script.png)
+5. Selecione **OK** > **criar** para guardar o script.
+
+## <a name="assign-the-policy"></a>Atribuir a política
 
 1. Em **Scripts do PowerShell**, selecione o script a atribuir e, em seguida, selecione **Gerir** > **Atribuições**.
 
-    ![Adicionar o painel de script do PowerShell](./media/mgmt-extension-assignments.png)
+    ![Atribuir ou implementar o script do PowerShell para grupos de dispositivos no Microsoft Intune](./media/mgmt-extension-assignments.png)
 
 2. Escolha **Selecionar Grupos** para uma lista dos grupos disponíveis do Azure AD. 
 3. Selecione um ou mais grupos que incluam os utilizadores cujos dispositivos irão receber o script. Clique em **Selecionar** para atribuir a política aos grupos selecionados.
@@ -69,7 +86,7 @@ A extensão de gestão do Intune tem os seguintes pré-requisitos:
 
 O cliente de extensão de gestão do Intune verifica uma vez por hora com o Intune. Depois de atribuir a política aos grupos do Azure AD, o script do PowerShell será executado e os resultados de execução serão comunicados.
 
-## <a name="monitor-run-status-for-powershell-scripts"></a>Monitorizar o estado de execução de scripts do PowerShell
+## <a name="monitor-run-status"></a>Monitor de estado de execução
 
 Pode monitorizar o estado de execução de scripts do PowerShell para utilizadores e dispositivos no portal do Azure.
 
@@ -78,13 +95,13 @@ Em **Scripts do PowerShell**, selecione o script que pretende monitorizar, selec
 - **Estado do dispositivo**
 - **Estado de utilizador**
 
-## <a name="troubleshoot-powershell-scripts"></a>Resolver problemas relacionados com scripts do PowerShell
+## <a name="troubleshoot-scripts"></a>Resolver problemas de scripts
 
 Registos do agente no computador cliente são normalmente em `\ProgramData\Microsoft\IntuneManagementExtension\Logs`. Pode usar [CMTrace.exe](https://docs.microsoft.com/sccm/core/support/tools) para ver estes ficheiros de registo. 
 
-![Captura de ecrã dos registos de agente](./media/apps-win32-app-10.png)  
+![Registos do agente de cmtrace de captura de ecrã ou de exemplo no Microsoft Intune](./media/apps-win32-app-10.png)  
 
-## <a name="delete-a-powershell-script"></a>Eliminar um script do PowerShell
+## <a name="delete-a-script"></a>Eliminar um script
 
 Em **Scripts do PowerShell**, clique com o botão direito no script e selecione **Eliminar**.
 
@@ -106,7 +123,7 @@ Os scripts do PowerShell não são executados em cada início de sessão. Eles s
 
     [Ativar a inscrição automática do Windows 10](windows-enroll.md#enable-windows-10-automatic-enrollment) inclui os passos.
 
-#### <a name="issue-the-powershell-scripts-do-not-run"></a>Problema: Não execute os scripts do PowerShell
+#### <a name="issue-powershell-scripts-do-not-run"></a>Problema: Não execute scripts do PowerShell
 
 **As possíveis resoluções**:
 

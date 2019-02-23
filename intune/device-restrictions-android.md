@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c1f386f9f6e8ffdac413fc542b51ab66e7f3d9b8
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: db55df932c066bac41dfbe037991587bef1cbbba
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55836528"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742623"
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings-lists-in-intune"></a>Android e Samsung Knox Standard listas de definições de restrição de dispositivos no Intune
 
@@ -165,4 +165,4 @@ As definições de modo de local público aplicam-se apenas a dispositivos Samsu
 
 [Atribua o perfil](device-profile-assign.md) e [monitorize o respetivo estado](device-profile-monitor.md).
 
-Também pode criar perfis de local público para [Android Enterprise](device-restrictions-android-for-work.md#kiosk-settings) e [com o Windows 10](kiosk-settings.md) dispositivos.
+Também pode criar perfis de local público para [Android Enterprise](device-restrictions-android-for-work.md#dedicated-device-settings) e [com o Windows 10](kiosk-settings.md) dispositivos.

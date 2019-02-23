@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/02/2019
+ms.date: 02/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2706a12f9f4844f96d279f753e7cd99f159ca856
-ms.sourcegitcommit: e262b0ad8df610e25eb9421b9ebc2673bcf1020e
+ms.openlocfilehash: e825fa5523edd3907db7754138c76754ec9175e4
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55986812"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742096"
 ---
 # <a name="configure-the-exchange-service-connector-for-intune-and-exchange-online"></a>Configurar o conector do serviço do Exchange para o Intune e Exchange Online
 Este artigo mostra-lhe como ligar o serviço do Microsoft Intune ao Exchange Online ou o novo serviço do Exchange Online Dedicado. Para determinar se o seu ambiente do Exchange Online Dedicado é a versão **nova** ou **legada**, contacte o seu gestor de conta.
@@ -58,17 +58,15 @@ Tem de criar uma conta de utilizador do Exchange Online utilizada pelo conector 
 
 2. Selecione **Todos os serviços** no menu à esquerda e, em seguida, escreva **Intune** no filtro da caixa de texto.
 
-3. Selecione **Intune** para abrir o dashboard do Microsoft Intune. Selecione **Acesso condicional** e, em seguida, em **Configuração**, selecione **Conector do serviço do Exchange**.
+3. Selecione **Intune** para abrir o dashboard do Microsoft Intune. Selecione **acesso ao Exchange**e, em **configuração** selecionar **conector do Exchange online**.
 
-4.  Na página **Acesso condicional – Conector do serviço do Exchange**, selecione **Configurar o Serviço com o Conector de Serviços**. 
-   
-     ![Imagem a mostrar a seleção da ligação Configurar o Serviço com o Conector de Serviços](media/exchange_service_connector.png)
+4.  Sobre o **acesso - conector do Exchange online do Exchange** página, selecione **configurar conector serviço a serviço**. 
 
 O Conector de Serviços configura e sincroniza automaticamente o seu Exchange Online ou o novo ambiente do Exchange Online Dedicado.
 
 ## <a name="validate-your-exchange-connection"></a>Validar a sua ligação ao Exchange
 
-Após configurar com êxito o Conector de Serviços do Exchange, valide as informações de Servidor do Conector do Exchange na página **Acesso condicional – Conector do serviço do Exchange**.
+Depois de ter configurado com êxito o conector de serviços do Exchange, valida as informações de servidor do Exchange Connector no **acesso - conector do Exchange online do Exchange** página.
 
 Também pode ver o **Estado da ligação** e a data e hora da última tentativa de sincronização efetuada com êxito.
 

@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/02/2019
+ms.date: 02/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4481645781e21da4f433f5feae1d685efb73d412
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 5910b4962cc871a370d22efa68a01b78e9b34a0a
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55841424"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742368"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>Configurar o Exchange Connector do Intune no local no Microsoft Intune no Azure
 
@@ -73,13 +73,11 @@ Tem de criar uma conta de utilizador do Active Directory que é utilizada pelo E
 
 1. Num sistema operativo Windows Server suportado pelo conector do Exchange no local, abra o [portal do Azure](https://portal.azure.com) e inicie sessão com uma conta de utilizador que seja administrador no servidor do Exchange no local e tenha uma licença para utilizar o Exchange Server.
 
-2. Selecione **Todos os serviços** no menu à esquerda e, em seguida, escreva **Intune** no filtro da caixa de texto.
+2. Aceda a **Intune** > **acesso ao Exchange**  
 
-3. Selecione **Intune** e, quando o Dashboard do Intune for apresentado, selecione **Acesso no local**.
+3. Sob **programa de configuração**, escolha **ActiveSync do Exchange connector no local**e, em seguida, selecione **Add**.
 
-4. Em **Configuração**, selecione **Conectores do Exchange ActiveSync** e, em seguida, selecione **Transferir o conector no local**.
-
-5.  O conector do Exchange no local é numa pasta comprimida (. zip) que pode ser aberta ou guardada. Na caixa de diálogo **Transferência de Ficheiros**, escolha **Guardar**, para armazenar a pasta comprimida numa localização segura.
+4. Sobre o **adicionar conector** página, selecione **transferir o conector no local**. O conector do Exchange no local é numa pasta comprimida (. zip) que pode ser aberta ou guardada. Na caixa de diálogo **Transferência de Ficheiros**, escolha **Guardar**, para armazenar a pasta comprimida numa localização segura.
 
     > [!IMPORTANT]
     > Não mude o nome nem mova os ficheiros dentro da pasta do Exchange Connector no local. Mover ou mudar o nome dos conteúdos da pasta fará com que a instalação do Exchange Connector falhe.
@@ -153,8 +151,8 @@ Depois que o conector do Exchange cria uma ligação ao Exchange através da CAS
 
 Após a configuração com êxito dos Exchange Connectors, pode ver o estado das ligações e a última tentativa de sincronização efetuada com êxito. Para validar as ligações ao Exchange Connector:
 
-1. No Dashboard do Intune, escolha **Acesso no local**.
-2. Em **Configuração**, selecione **Conectores do Exchange ActiveSync** para verificar o estado da ligação para cada Exchange Connector.
+1. No Dashboard do Intune, escolha **acesso ao Exchange**.
+2. Sob **programa de configuração**, selecione **conector do Exchange online** para verificar o estado da ligação para cada conector do Exchange.
 
 Também pode ver a data e hora da última tentativa de sincronização efetuada com êxito.
 
@@ -171,8 +169,8 @@ Um conector do Exchange no local sincroniza automaticamente os registos de dispo
 
 Pode forçar a execução de uma sincronização por parte do conector ao utilizar as opções de **Sincronização Rápida** ou **Sincronização Completa** no dashboard do Intune com os seguintes passos:
 
-   1. No dashboard do Intune, selecione **Acesso no local**.
-   2. Em **Configuração**, selecione **Conectores do Exchange Active Sync**.
+   1. No dashboard do Intune, escolha **acesso ao Exchange**.
+   2. Sob **programa de configuração**, escolha **conector do Exchange online**.
    3. Selecione o conector que pretende sincronizar e, em seguida, selecione **Sincronização Rápida** ou **Sincronização Completa**.
 
 ## <a name="next-steps"></a>Passos Seguintes

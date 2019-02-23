@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c777beb294482a179d4b99fc71db031367698d0d
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: dd6ba4c9c93bf41d0407f5fa0feead440d858507
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55835797"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742130"
 ---
 # <a name="windows-10-and-windows-holographic-for-business-device-settings-to-run-as-a-dedicated-kiosk-using-intune"></a>Windows 10 e Windows Holographic for Business, definições do dispositivo ser executado como um quiosque dedicado com o Intune
 
@@ -69,6 +69,6 @@ O perfil é criado e apresentado na lista de perfis. Em seguida, [atribuir](devi
 
 Pode criar perfis de local público para dispositivos que executam as seguintes plataformas:
 - [Android](device-restrictions-android.md#kiosk)
-- [Android Enterprise](device-restrictions-android-for-work.md#kiosk-settings)
+- [Android Enterprise](device-restrictions-android-for-work.md#dedicated-device-settings)
 - [Windows 10 e posterior](kiosk-settings-windows.md)
 - [Windows Holographic for Business](kiosk-settings-holographic.md)

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/05/2019
+ms.date: 02/13/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 943b5dc8c0fe1c9b55b9c4971be2087353b60428
-ms.sourcegitcommit: e0374b3ced83c8876a4f78b326869c10588a55e5
+ms.openlocfilehash: 5fd0812967e6cce0e1eabe0fb04e597535b972f3
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56307894"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742776"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Definições de dispositivos de 10 (e versões posteriores) do Windows para permitir ou restringir funcionalidades com o Intune
 
@@ -32,7 +32,7 @@ Estas definições são adicionadas a um perfil de configuração do dispositivo
 
 ## <a name="before-you-begin"></a>Antes de começar
 
-[Criar um perfil de configuração do dispositivo](device-restrictions-configure.md).
+[Criar um perfil de configuração do dispositivo](device-restrictions-configure.md#create-the-profile).
 
 ## <a name="app-store"></a>App Store
 
@@ -144,56 +144,6 @@ Estas definições são adicionadas a um perfil de configuração do dispositivo
 
 - **Terminar a processos do Gerenciador de tarefas**: Esta definição determina se o não-administradores podem utilizar o Gestor de tarefas para tarefas de fim. **Bloco** impede que os usuários padrão (não-administradores) usando o Gerenciador de tarefas para terminar um processo ou tarefa no dispositivo. **Não configurado** (predefinição) permite que os usuários padrão encerrar um processo ou tarefa utilizando o Gestor de tarefas.
 
-## <a name="kiosk-preview---obsolete"></a>Quiosque (Pré-visualização) – obsoleto
-
-Estas definições são só de leitura e não podem ser alteradas. Para configurar o modo de quiosque, veja [Definições do Quiosque no Windows 10 e posterior](kiosk-settings.md).
-
-Normalmente, um dispositivo de quiosque executa uma aplicação ou um conjunto específico de aplicações. Os utilizadores são impedidos de aceder a funcionalidades ou funções no dispositivo.
-
-- **Modo de local público**: Identifica o tipo de modo de quiosque suportado pela política. As opções incluem:
-
-  - **Não configurado** (predefinição): A política não ativar o modo de local público no dispositivo.
-  - **Quiosque de uma aplicação**: O perfil ativa o dispositivo execute apenas uma aplicação. Quando um utilizador inicia sessão, uma aplicação específica é iniciada. Este modo também impede que o utilizador abra novas aplicações ou mude a aplicação em execução.
-  - **Quiosque de várias aplicações**: O perfil ativa o dispositivo para executar muitos aplicativos. Apenas as aplicações que adicionar estão disponíveis para o utilizador. A vantagem de um quiosque de várias aplicações ou dispositivos de objetivo fixo, é o facto de proporcionar uma experiência fácil de compreender pelos utilizadores através do acesso às aplicações de que precisam e de remover as aplicações de que não precisam da respetiva vista.
-
-#### <a name="single-app-kiosks"></a>Quiosques de uma aplicação
-
-Introduza as seguintes definições:
-
-- **Conta de utilizador**: Introduza a conta de utilizador local (para o dispositivo), uma conta de domínio do AD ou uma conta do Azure AD associado à aplicação de local público.
-  - Conta local: Introduza como `devicename\accountname`, `.\accountname`, ou `accountname`
-  - Conta de domínio: Introduza como `domain\accountname`
-  - Conta do AD FS: Introduza como `AzureAD\emailaddress`. Certifique-se de que introduz "AzureAD", pois é um nome de domínio fixo. Em seguida, introduza o endereço de e-mail do Azure Active Directory. Por exemplo, introduza `AzureAD\user@contoso.onmicrosoft.com`.
-
-    Para ambientes de quiosque com início de sessão automático ativado, deve ser utilizado um tipo de utilizador com o menor privilégio (tal como a conta de utilizador padrão local). Se estiver a utilizar uma conta do Azure Active Directory para o modo de quiosque, certifique-se de que introduz `AzureAD\user@yourorganization.com`.
-
-- **O modelo de utilizador de aplicação ID (AUMID) da aplicação**: Introduza o AUMID da aplicação de local público. Para saber mais, veja [Find the Application User Model ID of an installed app (Localizar o ID de Modelo do Utilizador da Aplicação de uma aplicação instalada)](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
-
-#### <a name="multi-app-kiosks"></a>Quiosques de várias aplicações
-
-Os [quiosques de várias aplicações](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#configure-a-kiosk-in-microsoft-intune) utilizam uma configuração de quiosque que apresenta uma lista de aplicações permitidas e outras definições. 
-
-Utilize o botão **Adicionar** para criar uma configuração de quiosque ou selecionar uma configuração existente. Em seguida, introduza as seguintes definições:
-
-- **Nome da configuração do quiosque**: Introduza um nome amigável utilizado para identificar a configuração.
-
-- **Aplicações do quiosque**: Introduza as aplicações que estão disponíveis no menu Iniciar. As aplicações que adicionar são as únicas aplicações que o utilizador pode abrir.
-
-  - **Tipo de aplicação**: Escolha o tipo de aplicação de local público:
-    - **Aplicação Win32**: Uma aplicação de ambiente de trabalho tradicional. Precisará do nome do caminho absoluto do ficheiro executável, relativamente ao dispositivo.
-    - **Aplicação UWP**: Uma aplicação Universal do Windows. Precisará do [AUMID da aplicação](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
-
-  - **Identificador**: Introduza o caminho absoluto do ficheiro executável (aplicações Win32) ou o [AUMID da aplicação](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (aplicações UWP).
-
-- **Barra de tarefas**: Optar por **habilitar** (Mostrar) a barra de tarefas, ou mantê-lo **não configurada** (oculto) no quiosque.
-
-- **Esquema do menu Iniciar**: Introduza um ficheiro XML que descreve a forma como as aplicações são apresentadas no menu Iniciar. O artigo [Customize and export Start layout (Personalizar e exportar o esquema do menu Iniciar)](https://docs.microsoft.com/windows/configuration/customize-and-export-start-layout) fornece algumas orientações e um ficheiro XML de exemplo.
-
-  [Criar um quiosque do Windows 10 que executa aplicações](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file) fornece mais detalhes sobre como utilizar e criar ficheiros XML.
-
-- **Utilizadores atribuídos**: Adicione um ou mais contas de utilizador que podem utilizar as aplicações que adicionar. Quando a conta iniciar sessão, apenas as aplicações definidas na configuração estarão disponíveis. A conta pode ser local do dispositivo ou uma conta do Azure AD associada à aplicação de quiosque.
-
-    Para ambientes de quiosque com início de sessão automático ativado, deve ser utilizado um tipo de utilizador com o menor privilégio (tal como a conta de utilizador padrão local). Para configurar uma conta do Azure Active Directory (AD) para o modo de quiosque, utilize o formato `domain\user@tenant.com`.
 
 ## <a name="locked-screen-experience"></a>Experiência de ecrã bloqueado
 
@@ -211,6 +161,31 @@ Utilize o botão **Adicionar** para criar uma configuração de quiosque ou sele
 - **RCS (apenas móvel)**: Desative a funcionalidade de envio/receção para serviços de comunicação avançados no dispositivo.
 
 ## <a name="microsoft-edge-browser"></a>Browser Microsoft Edge
+
+### <a name="use-microsoft-edge-kiosk-mode"></a>Utilizar o modo de local público do Microsoft Edge
+
+Alterar as definições disponíveis consoante aquilo que escolher. As opções são:
+
+- **Não** (predefinição): Microsoft Edge não está em execução no modo de local público. Todas as definições do Microsoft Edge estão disponíveis para que possa alterar e configurar.
+- **Digital/Interactive signage (quiosque de uma aplicação)**: Definições de limite de filtros que são aplicáveis para o modo de local público de borda signage Digital/interativo para utilizam apenas em quiosques de aplicação única do Windows 10. Escolha esta definição para abrir uma tela de total de URL e mostrar apenas o conteúdo nesse Web site. [Configurar sinais digital](https://docs.microsoft.com/windows/configuration/setup-digital-signage) fornece mais informações sobre esta funcionalidade.
+- **Navegação de público inPrivate (quiosque de uma aplicação)**: Utilizam as definições de limite de filtros que são aplicáveis para o modo InPrivate quiosque de borda de navegação público para quiosques de aplicação única do Windows 10. Executa uma versão de separador multi do Microsoft Edge.
+- **Modo normal (quiosque de várias aplicações)**: Definições de borda de filtros que são aplicáveis ao modo de local público de borda do Normal. Executa uma versão completa do Microsoft Edge com todas as funcionalidades de navegação.
+- **Público, navegar (quiosque de várias aplicações)**: Definições de limite de filtros que são aplicáveis para a navegação pública num quiosque de várias aplicações do Windows 10.  Executa uma versão de separador multi do InPrivate do Microsoft Edge.
+
+> [!TIP]
+> Para obter mais informações sobre o que fazem essas opções, consulte [tipos de configuração de modo de local público de Microsoft Edge](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-configuration-types).
+
+Este perfil de restrições de dispositivo está diretamente relacionada com o perfil de local público que criar com o [definições de local público de Windows](kiosk-settings-windows.md). Para resumir:
+
+1. Criar a [definições de local público de Windows](kiosk-settings-windows.md) perfil para executar o dispositivo no modo de local público. Selecione o Microsoft Edge como o aplicativo e defina o modo de local público de borda no perfil de local público.
+2. Criar o perfil de restrições de dispositivo descrito neste artigo e configurar recursos específicos e as definições de permissão no Microsoft Edge. Certifique-se de que a escolha do mesmo tipo de modo de local público de borda com selecionado no seu perfil de local público ([definições de local público de Windows](kiosk-settings-windows.md)). 
+
+    [Definições do modo de local público de suportado](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-policies-for-kiosk-mode) é um ótimo recurso.
+
+> [!IMPORTANT] 
+> Certifique-se de que atribuir este perfil do Microsoft Edge aos mesmos dispositivos como o seu perfil de local público ([definições de local público de Windows](kiosk-settings-windows.md)).
+
+CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-configurekioskmode)
 
 ### <a name="start-experience"></a>Experiência de início
 
@@ -230,6 +205,12 @@ Utilize o botão **Adicionar** para criar uma configuração de quiosque ou sele
 - **O utilizador pode alterar o botão Home**: **Permitir** permite que os utilizadores alterem o botão de início. As alterações do utilizador substituem as definições de administrador para o botão de início. **Não configurado** utiliza o comportamento padrão do sistema operacional no dispositivo, que pode bloquear os utilizadores de alterar a forma como o administrador configurado o botão de início.
 - **Mostrar página de tela de apresentação**: **Bloco** pára a página de introdução de mostrar o primeiro tempo executa o Microsoft Edge. Esta funcionalidade permite às empresas, como as que estão inscritas em zero configurações de emissões, bloquear esta página. **Não configurado** mostra a página de introdução.
   - **Execute primeiro o URL de experiência**: Introduza o URL de página para mostrar na primeira vez que um utilizador executa o Microsoft Edge (apenas Windows 10 Mobile).
+- **Atualize o browser após o tempo de inatividade**: Introduza o número de minutos de inatividade até o navegador é atualizado, de 0-1440 minutos. A predefinição é `5` minutos. Quando definido como `0` (zero), o navegador não atualiza após inatividade.
+
+  Esta definição só está disponível quando em execução no [(quiosque de aplicação única) de Navegação InPrivate pública](#use-microsoft-edge-kiosk-mode).
+
+  CSP: [ConfigureKioskResetAfterIdleTimeout](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-configurekioskresetafteridletimeout)
+
 - **Pop-ups**: Escolher **bloco** para parar de janelas pop-up no browser. Aplica-se apenas a computadores com o Windows 10. **Não configurado** permite que os pop-ups do browser.
 - **Enviar tráfego da intranet para o Internet Explorer**: **Permitir** permite que os utilizadores abram sites da intranet no Internet Explorer em vez do Microsoft Edge (apenas ambiente de trabalho do Windows 10). **Não configurado** permite que os utilizadores utilizem o Microsoft Edge.
 - **Localização de lista de sites de modo de empresa**: Introduza o URL que inclua uma lista de sites que abrem no modo empresarial. Os utilizadores não é possível alterar o dessa lista. Aplica-se apenas a computadores com o Windows 10.
@@ -261,6 +242,11 @@ Utilize o botão **Adicionar** para criar uma configuração de quiosque ou sele
   - Yahoo
   - Valor personalizado
 - **Sugestões de pesquisa**: **Não configurado** permite que o motor de busca sugira sites à medida que escreve expressões de pesquisa na barra de endereço. **Bloco** impede que esta funcionalidade.
+- **Permitir alterações para o mecanismo de pesquisa**: **Sim** (predefinição) permite aos utilizadores adicionar novos mecanismos de pesquisa ou alterar o motor de busca predefinido no Microsoft Edge. Escolher **não** impedir os utilizadores de personalizar o motor de busca.
+
+  Esta definição só está disponível quando em execução no [modo Normal (quiosque de várias aplicações)](#use-microsoft-edge-kiosk-mode).
+
+  CSP: [AllowSearchEngineCustomization](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsearchenginecustomization)
 
 ### <a name="privacy-and-security"></a>Privacidade e segurança
 

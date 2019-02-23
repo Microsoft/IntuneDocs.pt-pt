@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/10/2018
+ms.date: 02/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ROBOTS: ''
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 71d551ca64f85c3ba6a807fac70e3b0662e1b89a
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: b6d4497c3cf62e6679ce222cf4185f48bdf846b1
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55834097"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742232"
 ---
 # <a name="require-multi-factor-authentication-for-intune-device-enrollments"></a>Exigir a autenticação multifator para inscrições de dispositivos no Intune
 
@@ -50,11 +50,10 @@ Para exigir MFA na inscrição de um dispositivo, siga estes passos:
 >Não configure **Regras de acesso com base no dispositivo** para a Inscrição no Microsoft Intune.
 
 1. Inicie sessão no [Portal do Microsoft Azure](https://portal.azure.com) com as suas credenciais.
-2. No portal, aceda ao **[Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)**.
-3. No **Azure Active Directory**, em Segurança, selecione **[Acesso condicional](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies)**.
+2. No portal, aceda a **Intune** e escolha **acesso condicional**. O nó de acesso condicional acedido a partir *Intune* é o mesmo nó como acedidos a partir de *do Azure AD*.
 4. Selecione **Nova política**.
 5. Em **Nova política**, escreva um nome descritivo para a política.
-6. Na secção **Atribuições**, selecione **Utilizadores e grupos**.
+6. Na secção **Atribuições**, selecione **Utilizadores e grupos**. 
 7. Em **Utilizadores e grupos**, selecione **Selecionar utilizadores ou grupos** e a opção **Utilizadores e grupos**. Em seguida, selecione os utilizadores e/ou grupos que receberão esta política e selecione **Concluído**.
 8. Na secção **Atribuições**, selecione **Aplicações na cloud**.
 9. No separador **Incluir** das **Aplicações na cloud**, clique em **Selecionar aplicações** e, em seguida, **Selecionar** > **Inscrição do Microsoft Intune**. Em seguida, selecione **Concluído**.

@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/09/2019
+ms.date: 02/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 39f19d347cb799a47d07ade4f8458fade68b1b99
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 25f1bb6d2d78f5c4188d81bc8d9be2cc0c7de43e
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55834658"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742538"
 ---
 # <a name="install-and-share-apps-on-your-device"></a>Instalar e partilhar aplicações no seu dispositivo
 Instale aplicações no seu dispositivo a partir da aplicação Portal da Empresa para Windows.
@@ -38,6 +38,7 @@ Instale aplicações no seu dispositivo a partir da aplicação Portal da Empres
     * **Home page**: Selecione uma lista de aplicações em destaque da sua organização.  
     * **Mostrar tudo**: Do **Home page** > **aplicações** secção, clique em **Mostrar tudo** para ver todas as aplicações disponíveis.  
     * **Todas as aplicações**: Selecione esta página no painel de navegação para ver todas as aplicações disponíveis, incluindo instalado e em destaque.  
+    * **Categorias de aplicações**: Selecione esta página no painel de navegação para escolher as aplicações com base em tipo ou função. Aplicações são ordenadas em categorias, como **em destaque**, **educação**, e **produtividade**.  
     * **Procurar aplicações**: Uma barra de pesquisa estática encontra-se no painel de navegação da aplicação.  Para encontrar as aplicações disponíveis, procure por nome da aplicação ou publicador.  
     * **Todas as aplicações**: Ver, ordenar e filtrar todas as aplicações disponíveis. Os resultados da pesquisa são ordenados automaticamente por relevância.  
 

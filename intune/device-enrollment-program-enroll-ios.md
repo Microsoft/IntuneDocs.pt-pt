@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 60364d01f4ba4ca83ff91226f7738ec095e9152e
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: f1243bba6158307797744972bf404735c6b8a68a
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55849255"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742674"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Inscrever automaticamente dispositivos iOS com o Programa de Inscrição de Dispositivos da Apple
 
@@ -102,8 +102,13 @@ No Intune no portal do Azure, forneça o ID Apple para referência futura.
 
 ![Captura de ecrã a mostrar a especificação do ID Apple utilizado para criar o token do programa de inscrição e o acesso ao token do programa de inscrição.](./media/device-enrollment-program-enroll-ios/image03.png)
 
-### <a name="step-4-upload-your-token"></a>Passo 4: Carregue o seu token.
-Na caixa **Token da Apple**, procure o ficheiro de certificado (.pem), escolha **Abrir** e, em seguida, escolha **Criar**. Com o certificado push, o Intune pode inscrever e gerir dispositivos iOS ao enviar políticas para dispositivos móveis inscritos. O Intune é sincronizado automaticamente na Apple para que possa ver a conta do seu programa de inscrição.
+### <a name="step-4-upload-your-token-and-choose-scope-tags"></a>Passo 4: Carregue o token e escolha as etiquetas de âmbito.
+
+1. Na **token da Apple** caixa, procure o ficheiro de certificado (. pem), escolha **aberto**.
+2. Se pretender aplicar [etiquetas de âmbito](scope-tags.md) para este token DEP, escolha **âmbito (etiquetas)** e selecione as etiquetas de âmbito que pretende. Aplicado a um token de etiquetas de âmbito serão herdadas por perfis e dispositivos adicionados a este token.
+3. Selecione **Criar**.
+
+Com o certificado push, o Intune pode inscrever e gerir dispositivos iOS ao enviar políticas para dispositivos móveis inscritos. O Intune é sincronizado automaticamente na Apple para que possa ver a conta do seu programa de inscrição.
 
 ## <a name="create-an-apple-enrollment-profile"></a>Criar um perfil de inscrição da Apple
 

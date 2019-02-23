@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/19/2019
+ms.date: 02/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 65370710f409d028871695de22829f64e82bf54e
-ms.sourcegitcommit: 67e4e66e8c05b36c0897fb2955ef68666d22b094
+ms.openlocfilehash: f1212f0d2afb1f5201af6c29201564e104b1c26c
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56426982"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742793"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -45,16 +45,147 @@ Saiba mais sobre as novidades todas as semanas no Microsoft Intune. Também pode
 
 -->     
 
-## <a name="week-of-february-19-2019"></a>Semana de 19 de Fevereiro de 2019
+## <a name="week-of-february-18-2019"></a>Semana de 18 de Fevereiro de 2019
+
+### <a name="app-management"></a>Gestão de aplicações
+
+#### <a name="intune-will-leverage-google-play-protect-apis-on-android-devices----2577355-eeready-wnready---"></a>Intune será tiram partido das APIs de proteger reproduzir da Google em dispositivos Android <!-- 2577355 eeready wnready -->
+Alguns administradores de TI enfrentam um cenário BYOD onde os utilizadores finais podem acabar embota ou jailbreaking o celular. Este comportamento, embora às vezes, não mal-bem-intencionado, resulta numa omissão de muitas das políticas do Intune que estão definidas para proteger os dados da organização nos dispositivos do utilizador final. Assim, o Intune fornece deteção de raiz e jailbreak para dispositivos inscritos e não inscritos. Com esta versão, o Intune irá agora tirar Google Play proteger APIs para adicionar à nossa verificações existentes para a deteção de raiz para dispositivos não inscritos. Embora a Google não partilha a totalidade das verificações de deteção de raiz que ocorrem, esperamos que essas APIs para detetar os utilizadores que têm Root seus dispositivos por qualquer motivo de personalização do dispositivo para a capacidade de obter as atualizações de SO mais recente nos dispositivos mais antigos. Estes utilizadores, em seguida, podem ser impedidos de aceder a dados empresariais ou suas contas empresariais poderão ser eliminadas a partir das suas aplicações de política ativada. Para o valor adicional, o administrador de TI agora têm várias atualizações de geração de relatórios no painel de proteção de aplicações do Intune – o relatório de "Utilizadores sinalizados" irá mostrar os utilizadores que são detetados através do análise de SafetyNet API da Google Play Protect, o "potencialmente prejudicial aplicações" relatório irá mostre as aplicações são detetadas através verificar aplicações API da Google de verificação. Esta funcionalidade está disponível no Android.
+
+#### <a name="win32-app-information-available-in-troubleshooting-blade----2617342-eeready-wnready---"></a>Informações da aplicação Win32 disponíveis no painel de resolução de problemas <!-- 2617342 eeready wnready -->
+Agora pode recolher ficheiros de registo de falha para uma instalação de aplicações de Win32 a partir da aplicação Intune **resolução de problemas** painel. Para obter mais informações sobre resolução de problemas de instalação de aplicação, consulte [resolver problemas de instalação de aplicações](troubleshoot-app-install.md) e [problemas de aplicações de Win32 de resolução de problemas](apps-win32-app-management.md#troubleshoot-win32-app-issues).
+
+#### <a name="app-status-details-for-ios-apps----3761235-eeready-wnready---"></a>Detalhes do Estado da aplicação para aplicações iOS <!-- 3761235 eeready wnready -->
+Existem mensagens de erro de instalação de aplicação nova relacionadas ao seguinte:
+- Falha de aplicações VPP durante a instalação num iPad partilhado
+- Falha quando a loja de aplicações está desativada
+- Falha ao localizar a licença do VPP para aplicação
+- Falha ao instalar aplicações de sistemas com o fornecedor de MDM
+- Falha ao instalar aplicações quando o dispositivo estiver no modo perdido ou o modo de local público
+- Falha ao instalar a aplicação quando o utilizador não tem sessão iniciado na App Store
+
+No Intune, selecione **aplicações de cliente** > **aplicações** > "Nome da aplicação" > **estado de instalação de dispositivo**. Novas mensagens de erro estará disponíveis na **detalhes do estado** coluna.
+
+#### <a name="new-app-categories-screen-in-the-company-portal-app-for-windows-10---3834780-wnready---"></a>Novo ecrã de categorias de aplicação na aplicação Portal da empresa para Windows 10<!-- 3834780 wnready -->
+Um ecrã novo chamado **categorias de aplicações** foi adicionado para melhorar a experiência de navegação e a seleção de aplicação no Portal da empresa para Windows 10. Os utilizadores irão ver agora as aplicações ordenadas em categorias, como **em destaque**, **educação**, e **produtividade**. Esta alteração apareça em versões do Portal da empresa 10.3.3451.0 e mais tarde. Para ver o novo ecrã, consulte [quais são as novidades na IU da aplicação](https://docs.microsoft.com/intune/whats-new). Para obter mais informações sobre as aplicações no Portal da empresa, consulte [instalar e partilhar aplicações no seu dispositivo](/intune-user-help/install-apps-cpapp-windows).  
+
+#### <a name="power-bi-compliance-app----1455231-doc-work-item---"></a>Aplicação de conformidade do Power BI <!-- 1455231 doc-work-item -->
+Aceder ao seu armazém de dados do Intune no Power BI Online com o [conformidade do Intune (armazém de dados)](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) aplicação. Com esta aplicação do Power BI, pode agora aceder e partilhar relatórios previamente criados sem qualquer configuração e sem sair do seu navegador da web. Para obter mais informações, consulte [registo de alterações - aplicação de conformidade do Power BI](reports-changelog.md#power-bi-compliance-app). Para obter mais atualizações do armazém de dados do Intune, consulte [futuras alterações à API do armazém de dados do Intune](whats-new.md#upcoming-change-to-the-intune-data-warehouse-api).
+
+
+### <a name="device-configuration"></a>Configuração do dispositivo
+
+#### <a name="powershell-scripts-can-run-in-a-64-bit-host-on-64-bit-devices----1862675-eeready-wnready---"></a>Scripts do PowerShell podem ser executado num host de 64 bits em dispositivos de 64 bits <!-- 1862675 eeready wnready -->
+Quando adiciona um script do PowerShell para um perfil de configuração do dispositivo, o script é executado sempre de 32 bits, mesmo em sistemas de operativos de 64 bits. Com esta atualização, um administrador pode executar o script num host do PowerShell de 64 bits em dispositivos de 64 bits (**configuração do dispositivo** > **scripts do PowerShell**  >   **Adicione** > **configurar** > **executar script num anfitrião do PowerShell de 64 bits**).
+
+Para obter mais detalhes sobre como utilizar o PowerShell, consulte [scripts do PowerShell no Intune](intune-management-extension.md).
+
+Aplica-se a: Windows 10 e posterior
 
 #### <a name="macos-users-are-prompted-to-update-their-password----1873216---"></a>utilizadores do macOS-lhe pedidos para atualizar a palavra-passe <!-- 1873216 -->
-
 Intune é aplicar a **ChangeAtNextAuth** definição em dispositivos macOS. Esta definição irá afetar os utilizadores finais e dispositivos que têm políticas de conformidade de palavra-passe ou perfis de palavra-passe de restrição de dispositivos. Os utilizadores finais for pedidos, uma vez, para atualizar a palavra-passe. Este pedido acontece sempre que um utilizador primeiro executa uma tarefa que exige autenticação, como iniciar sessão no dispositivo. Também podem ser pedido aos utilizadores para atualizar a palavra-passe quando fazer nada que requer privilégios administrativos, como pedir acesso de keychain. 
 
 Quaisquer alterações de política de palavra-passe nova ou existente pelo administrador pede-lhe os utilizadores finais novamente para atualizar a palavra-passe.
 
 Aplica-se a:  
 macOS
+
+#### <a name="assign-scep-certificates-to-a-userless-macos-device-------2340521--wnready----"></a>Atribuir certificados SCEP para um dispositivo macOS sem utilizador    <!-- 2340521  WNready  -->
+Pode atribuir certificados Simple Certificate Enrollment Protocol (SCEP), usando atributos de dispositivo para dispositivos macOS, incluindo os dispositivos sem afinidade do utilizador e associar o perfil de certificado, Wi-Fi ou perfis VPN. Isso expande o suporte já temos a [atribuir certificados SCEP para dispositivos com e sem afinidade do utilizador](certificates-scep-configure.md#create-a-scep-certificate-profile) que executam o Windows, iOS e Android.  Esta atualização adiciona a opção de selecionar um tipo de certificado de *dispositivo* ao configurar um perfil de certificado SCEP para o macOS.
+
+#### <a name="intune-conditional-access-ui-update------2432313--wnready---"></a>Atualização de interface do Usuário de acesso condicional do Intune   <!-- 2432313  WNready -->
+Fizemos melhorias na interface do usuário para o acesso condicional na consola do Intune. Estas incluem:
+-  Substituído do Intune *acesso condicional* painel com o painel do Azure Active Directory. Isto garante que terá acesso a uma gama completa de definições e configurações para [acesso condicional] ((que continua sendo uma tecnologia do Azure AD), do Intune consola. 
+- Mudamos o nome da *acesso no local* painel para *acesso ao Exchange*e realocada o *conector de serviço do Exchange* configuração deste painel nome mudado.  Esta alteração consolida onde [configurar e monitorizar detalhes relacionados com o Exchange online e no local](exchange-connector-install.md).  
+
+#### <a name="kiosk-browser-and-microsoft-edge-browser-apps-can-run-on-windows-10-devices-in-kiosk-mode----2935135-eeready-wnready---"></a>Aplicações de Browser de local público e o Browser do Microsoft Edge podem ser executadas em dispositivos Windows 10 no modo de local público <!-- 2935135 eeready wnready -->
+Pode utilizar dispositivos Windows 10 no modo de local público para executar uma aplicação ou muitas aplicações. Esta atualização inclui várias alterações para utilizar aplicações de browser no modo de local público, incluindo:
+
+- Adicionar o Browser do Microsoft Edge ou o Browser de local público para ser executado como aplicações no dispositivo local público (**configuração do dispositivo** > **perfis** > **novo perfil**  >  **Windows 10 e posterior** para a plataforma > **quiosque** para tipo de perfil).
+- Novos recursos e as definições estão disponíveis para permitir ou restringir (**configuração do dispositivo** > **perfis** > **novo perfil**  >  **Windows 10 e posterior** para a plataforma > **restrições de dispositivos** para tipo de perfil), incluindo:
+
+  - Microsoft Edge Browser:
+    - Utilizar o modo de local público do Microsoft Edge
+    - Atualize o browser após o tempo de inatividade
+
+ - Favoritos e pesquisar:
+    - Permitir alterações para o mecanismo de pesquisa
+
+Para obter uma lista destas definições, consulte:
+
+- [Windows 10 e posteriores definições do dispositivo para ser executado como um quiosque](kiosk-settings-windows.md)
+- [Restrições de dispositivos de Browser do Microsoft Edge](device-restrictions-windows-10.md#microsoft-edge-browser)
+- [Favoritos e restrições de dispositivos de pesquisa](device-restrictions-windows-10.md##favorites-and-search)
+
+Aplica-se a: Windows 10 e posterior
+
+#### <a name="new-device-restriction-settings-for-ios-and-macos-devices----3448774-eeready-wnready---"></a>Novas definições de restrição de dispositivos para dispositivos iOS e macOS <!-- 3448774 eeready wnready -->
+Pode restringir algumas definições e funcionalidades nos dispositivos que executam o iOS e macOS (**configuração do dispositivo** > **perfis** > **novo perfil**  >  **iOS** ou **macOS** para a plataforma > **restrições de dispositivos** para tipo de perfil). Esta atualização adiciona mais funcionalidades e as definições que pode controlar, incluindo o tempo de ecrã de configuração, alterar definições de eSIM e planos de celular e muito mais em dispositivos iOS. Além disso, atrasando a visibilidade do usuário de atualizações de software e a bloquear a colocação em cache conteúdo em dispositivos macOS. 
+
+Para ver os recursos e configurações que pode restringir, consulte:
+
+- [definições de restrição de dispositivos iOS](device-restrictions-ios.md)
+- [definições de restrição de dispositivos macOS](device-restrictions-macos.md)
+
+Aplica-se a:
+
+- iOS
+- macOS
+
+#### <a name="kiosk-devices-are-now-called-dedicated-devices-on-android-enterprise-devices----3598402-eeready-wnready---"></a>Dispositivos de "local público" são agora denominados "Dispositivos dedicados" em dispositivos Android Enterprise <!-- 3598402 eeready wnready -->
+Para se alinhar a terminologia do Android, **quiosque** é alterado para **dispositivos dedicados** para dispositivos Android enterprise (**configuração do dispositivo**  >  **Perfis** > **criar perfil** > **Android enterprise para a plataforma > * * apenas proprietário de dispositivos > restrições de dispositivos**  >  **Dispositivos dedicados**).
+
+Para ver as definições disponíveis, aceda à [definições do dispositivo para permitir ou restringir funcionalidades](device-restrictions-android-for-work.md#dedicated-device-settings).
+
+Aplica-se a:  
+Android Enterprise
+
+#### <a name="safari-and-delaying-user-software-update-visibility-ios-settings-are-moving-in-the-intune-ui----3640850-3803313-eeready-wnready---"></a>Safari e Delaying utilizador atualização de software iOS visibilidade definições estão a ser movidos na IU do Intune <!-- 3640850, 3803313 eeready wnready -->
+Para dispositivos iOS, pode configurar as definições do Safari e configurar atualizações de Software. Nesta atualização, estas definições estão a ser movidos para diferentes partes da IU do Intune:
+
+- As definições do Safari movidas de **Safari** (**configuração do dispositivo** > **perfis** > **novo perfil**  >  **iOS** para a plataforma > **restrições de dispositivos** para o tipo de perfil) para  **[aplicações incorporadas](device-restrictions-ios.md#built-in-apps)**.
+- O **atrasar a visibilidade de atualização de software de utilizador para supervisionado dispositivos iOS** definição (**atualizações de Software** > **atualizar políticas para iOS**) está a mudar para  **Restrições de dispositivos** > **[geral](device-restrictions-ios.md#general)**.  Para obter detalhes sobre o impacto para as políticas existentes, consulte [atualizações de software iOS](software-updates-ios.md#configure-the-policy). 
+
+Para obter uma lista das definições, consulte:
+
+- [restrições de dispositivos iOS](device-restrictions-ios.md) 
+- [atualizações de software do iOS](software-updates-ios.md)
+
+Esta funcionalidade aplica-se a: 
+
+- iOS
+
+#### <a name="enabling-restrictions-in-the-device-settings-is-renamed-to-screen-time-on-ios-devices----3699164-eeready-wnready---"></a>Ativar restrições nas definições do dispositivo foi mudado para o tempo de tela em dispositivos iOS <!-- 3699164 eeready wnready -->
+Pode configurar o **ativar restrições nas definições do dispositivo** no supervisionado dispositivos iOS (**configuração do dispositivo** > **perfis**  >  **Novo perfil** > **iOS** para a plataforma > **restrições de dispositivos** para o tipo de perfil > **geral**). Nesta atualização, esta definição foi mudada para **tempo de ecrã (apenas supervisionado)**. 
+
+O comportamento é o mesmo. Especificamente: 
+
+- iOS 11.4.1 e versões anteriores: **Bloco** impede que os utilizadores finais a definição de suas próprias restrições nas definições do dispositivo. 
+- iOS 12.0 e posterior: **Bloco** impede que os utilizadores finais definir seus próprios **ecrã tempo** nas definições do dispositivo, incluindo restrições de privacidade & de conteúdo. Dispositivos atualizados para o iOS 12.0 não verão a guia restrições nas definições do dispositivo deixa de poder. Estas definições estão em **tempo de tela**. 
+
+Para obter uma lista das definições, consulte [restrições de dispositivos iOS](device-restrictions-ios.md#general).
+
+Aplica-se a: 
+- iOS
+
+
+### <a name="device-management"></a>Gestão de dispositivos
+
+#### <a name="rename-an-enrolled-windows-device----1911112-eeready-wnready--"></a>Mudar o nome de um dispositivo Windows inscrito <!-- 1911112 eeready wnready-->
+Agora pode renomear um dispositivo Windows 10 inscrito (RS4 ou posterior). Para fazer, escolha **Intune** > **dispositivos** > **todos os dispositivos** > Escolha um dispositivo > **mudança de nome de dispositivo**.
+
+#### <a name="auto-assign-scope-tags-to-resources-created-by-an-admin-with-that-scope----3173823-eeready-wnready--"></a>Atribuir automaticamente etiquetas de âmbito para recursos criados por um administrador com esse âmbito <!-- 3173823 eeready wnready-->
+Quando um administrador cria um recurso, quaisquer etiquetas de âmbito atribuídas para o administrador serão automaticamente atribuídas a esses novos recursos.
+
+### <a name="monitor-and-troubleshoot"></a>Monitorizar e resolver problemas
+
+#### <a name="failed-enrollment-report-moves-to-the-device-enrollment-blade----3560202-eeready-wnready--"></a>Relatório de inscrição falha se move para o painel de inscrição de dispositivos <!-- 3560202 eeready wnready-->
+O **falha inscrições** relatório foi movido para o **Monitor** seção o **inscrição de dispositivos** painel. Foram adicionadas duas novas colunas (método de inscrição e versão do SO).
+
+#### <a name="company-portal-abandonment-report-renamed-to-incomplete-user-enrollments---3815076-eemiss-wnready--"></a>Relatório de abandonment de Portal da empresa foi mudado para inscrições de utilizador incompleto <!--3815076 eemiss wnready-->
+O **abandonment do Portal da empresa** relatório foi renomeado para **inscrições de utilizador incompleta**.
+
+
 
 ## <a name="week-of-february-4-2019"></a>Semana de 4 de Fevereiro de 2019
 
@@ -894,7 +1025,7 @@ Para criar o perfil, abra o menu **Configuração do dispositivo** > **Perfis** 
 Aplica-se ao Windows 10 e posterior.
 
 #### <a name="kiosk---obsolete-is-grayed-out-and-cant-be-changed----2149998---"></a>A funcionalidade Quiosque (Obsoleto) foi desativada e não pode ser alterada <!-- 2149998 -->
-A [funcionalidade Quiosque](device-restrictions-windows-10.md#kiosk-preview---obsolete) (**Configuração do dispositivo** > **Perfis** > **Criar perfil** > **Windows 10 e versões posteriores** > **Restrições do dispositivo**) está obsoleta e foi substituída pelas [definições do Quiosque para Windows 10 e posterior](kiosk-settings.md). Com esta atualização, a funcionalidade **Quiosque – Obsoleto** foi desativada e a interface de utilizador não pode ser alterada nem atualizada. 
+A funcionalidade de local público (pré-visualização) (**configuração do dispositivo** > **perfis** > **criar perfil**  >   **Windows 10 e posterior** > **restrições de dispositivos**) é obsoleto e substituídos com [definições de local público para o Windows 10 e posterior](kiosk-settings.md). Com esta atualização, a funcionalidade **Quiosque – Obsoleto** foi desativada e a interface de utilizador não pode ser alterada nem atualizada. 
 
 Para ativar o modo de quiosque, veja [Definições de quiosque para Windows 10 e posterior](kiosk-settings.md).
 
@@ -1385,6 +1516,13 @@ Para ver a versão atualizada, aceda a [Novidades na IU da aplicação](whats-ne
 Agora pode utilizar a Política de Proteção de Aplicações (APP) e o Acesso Condicional (AC) do Intune para proteger o acesso a dados do Exchange no local com o Outlook Mobile. Para adicionar ou modificar uma política de proteção de aplicações no portal do Azure, selecione **Microsoft Intune** > **Aplicações do cliente** > **Políticas de proteção de aplicações**. Antes de utilizar esta funcionalidade, certifique-se de que cumpre os [requisitos do Outlook para iOS e Android](https://technet.microsoft.com/en-us/library/mt846639(v=exchg.160).aspx).
 
 ## <a name="notices"></a>Avisos
+
+###  <a name="upcoming-change-to-the-intune-data-warehouse-api"></a>Alteração futura à API do armazém de dados do Intune
+Iremos fazer duas alterações durante o período de tempo de 1903:
+- Descontinuação de filtro do Beta<br>
+    Descontinuação de filtros de beta não suportado instanciado. Os clientes afetados foram enviados por e-mail.   
+- alterações 1.0 refletindo para o beta<br>
+    As alterações feitas para nossas coleções de v1.0 agora serão refletidas na versão beta.  
 
 ### <a name="upcoming-password-enforcement-change-for-macos-10142-in-intune---1873216--"></a>Alterar a imposição de palavra-passe futuras para macOS 10.14.2 no Intune <!--1873216-->
 Partilhámos na MC145129 em Julho que planos do Intune para integrar da Apple recentemente lançado a definição de "Palavra-passe alterações na autenticação seguinte" para dispositivos MacOS 10.13 de versões e superior. Estamos atualmente a planear implementar esta definição em Fevereiro para macOS 10.14.2 e superior. 

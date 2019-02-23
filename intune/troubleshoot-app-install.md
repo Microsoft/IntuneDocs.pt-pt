@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 02/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,18 +16,18 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 65391ca620892dcd3b95719454dabc30eb35cb6f
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 05c2266f9a65bfed98fed62b10e5a4511acd3e57
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55839385"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742555"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>Resolver problemas com a instalação de aplicações
 
 Por vezes, a instalação de aplicações em dispositivos geridos por MDM do Microsoft Intune pode falhar. Quando uma instalação de aplicações falha, pode ser difícil compreender o motivo da falha ou resolver o problema. O Microsoft Intune disponibiliza detalhes da falha na instalação da aplicação que permitem que os operadores de suporte técnico e os administradores do Intune vejam informações da aplicação para resolver pedidos de ajuda do utilizador. O painel de resolução de problemas no Intune proporciona os detalhes da falha, incluindo detalhes sobre as aplicações geridas no dispositivo de um utilizador. São disponibilizados detalhes sobre o ciclo de vida ponto a ponto de uma aplicação em cada dispositivo individual no painel **Aplicações Geridas**. Pode ver os problemas de instalação, como quando a aplicação foi criada, modificada, direcionada e entregue a um dispositivo. 
 
-## <a name="to-review-app-troubleshooting-details"></a>Para rever os detalhes da resolução de problemas com a aplicação
+## <a name="app-troubleshooting-details"></a>Detalhes de resolução de problemas da aplicação
 
 O Intune proporciona detalhes da resolução de problemas com a aplicação com base nas aplicações instaladas no dispositivo de um utilizador específico.
 
@@ -52,6 +52,47 @@ Os detalhes do erro da instalação da aplicação irão indicar o problema. Pod
 > [!Note]  
 > Também pode aceder ao painel **Resolução de problemas** ao apontar o seu browser para: [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting).
 
+## <a name="win32-app-installation-troubleshooting"></a>Resolução de instalação de aplicações do Win32
+
+Selecione a aplicação de Win32 que foi implementada utilizando a extensão de gestão do Intune. Pode selecionar o **recolher registos** opção quando ocorre uma falha de instalação da sua aplicação Win32. 
+
+> [!IMPORTANT]
+> O **recolher registos** opção não será ativada quando a aplicação de Win32 foi instalada com êxito no dispositivo.<p>Pode coletar informações de registo da aplicação de Win32, a extensão de gestão do Intune tem de estar instalada no cliente Windows. A extensão de gestão do Intune é instalada quando um script do PowerShell ou uma aplicação Win32 for implementada para um utilizador ou grupo de segurança do dispositivo. Para obter mais informações, consulte [extensão de gestão do Intune - pré-requisitos](intune-management-extension.md#prerequisites).
+
+### <a name="collect-log-file"></a>Recolher ficheiros de registo
+
+Para recolher os registos de instalação de aplicações do Win32, siga os passos fornecidos na secção [detalhes de resolução de problemas de aplicação](troubleshoot-app-install.md#app-troubleshooting-details). Em seguida, continue com os seguintes passos:
+
+1. Clique nas **recolher registos** opção a **detalhes da instalação** painel.
+
+    <image alt="Win32 app installation details - Collect log option" src="media/troubleshoot-app-install-04.png" width="500" />
+
+2. Fornecer caminhos de ficheiro de registo de nomes de arquivo para iniciar o processo de recolha de ficheiros de registo e clique em **OK**.
+    
+    > [!NOTE]
+    > Recolha de registos irão demorar menos de duas horas. Tipos de ficheiro suportados: *. log,. txt,. dmp,. cab,. zip,. XML, evtx e .evtl*. É permitido um máximo de 25 caminhos de arquivo.
+
+3. Depois de tem sido recolhidos os ficheiros de registo, pode selecionar o **registos** ligação para transferir os ficheiros de registo.
+
+    <image alt="Win32 app log details - Download logs" src="media/troubleshoot-app-install-05.png" width="500" />
+
+    > [!NOTE]
+    > Será apresentada uma notificação que indica o êxito da coleção de registo de aplicações.
+
+#### <a name="win32-log-collection-requirements"></a>Requisitos de coleção de registo do Win32
+
+Existem requisitos específicos que devem ser seguidos para recolher ficheiros de registo:
+
+- Tem de especificar o caminho do ficheiro de registo completo. 
+- Pode especificar variáveis de ambiente para o conjunto de registo, como o seguinte:<br>
+  *%PROGRAMFILES%, %PROGRAMDATA% %PUBLIC%, %WINDIR%, %TEMP%, %TMP%*
+- Apenas as extensões de ficheiros exata são permitidas, tais como:<br>
+  *.log, .txt, .dmp, .cab, .zip, .xml*
+- O ficheiro de registo máximo para carregar é de 60 MB ou 25 arquivos, que ocorrer primeiro. 
+- Recolha de registos de instalação de aplicações de Win32 está ativada para as aplicações que cumprem necessária, disponível e desinstalar o objetivo de atribuição de aplicação.
+- Os registos armazenados são criptografados para proteger as informações de PII contidas nos registos.
+- Embora o suporte de abertura permissões para falhas de aplicação do Win32, anexe os registos de falha relacionados através dos passos apresentados acima.
+
 ## <a name="app-installation-errors"></a>Erros de instalação da aplicação
 
 As seguintes mensagens de erro e descrições fornecem detalhes sobre erros de instalação no Android e no iOS. 
@@ -61,29 +102,38 @@ As seguintes mensagens de erro e descrições fornecem detalhes sobre erros de i
 |    Mensagem/código de erro    |    Descrição    |
 |----------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    A instalação da aplicação falhou. (0xC7D14FB5)    |    Esta mensagem de erro é apresentada quando o Intune não consegue determinar a causa raiz do erro de instalação da aplicação Android. Não são fornecidas informações pelo Android durante a falha.       Este erro é apresentado quando a APK é transferida com êxito, mas a instalação da aplicação falhou. Este erro poderá ocorrer de forma mais comum devido a um ficheiro APK incorreto que não pode ser instalado no dispositivo. Uma causa possível poderá ser caso o Google Play Protect bloqueie a instalação da aplicação devido a questões de segurança. Outra causa possível deste erro é um dispositivo não suportar a aplicação. Por exemplo, se a aplicação necessitar da versão 21 ou posterior da API e o dispositivo tiver a versão 19 da API.         O Intune apresenta este erro em dispositivos KNOX e DA. Apesar de poder ser apresentada uma notificação na qual os utilizadores podem clicar para tentar novamente, se existir um problema com a APK, não ocorrerão mais falhas. No caso de se tratar de uma aplicação disponível, a notificação pode ser dispensada. No entanto, se a aplicação for necessária, a notificação não pode ser dispensada.        |
-|    A instalação da aplicação foi cancelada porque o ficheiro de instalação (APK) foi eliminado depois da transferência, mas antes da instalação. (0xC7D14FBA)    |    A APK foi transferida com êxito, mas o ficheiro foi removido do dispositivo antes de o utilizador instalar a aplicação. Isto poderá ocorrer se existir um intervalo de tempo grande entre a transferência e a instalação. Por exemplo, o utilizador cancelou a instalação original, aguardou e, em seguida, clicou na notificação para tentar novamente.         Esta mensagem de erro só é apresentada para cenários de DA. Os cenários de KNOX podem ser realizados automaticamente. Apresentamos uma notificação Tentar novamente para que o utilizador possa aceitar em vez de cancelar. No caso de se tratar de uma aplicação disponível, a notificação pode ser dispensada. No entanto, se a aplicação for necessária, a notificação não pode ser dispensada.    |
-|    A instalação da aplicação foi cancelada porque o processo foi reiniciado durante a instalação. (0xC7D14FBB)    |    O dispositivo foi reiniciado durante o processo de instalação da APK, causando o cancelamento da instalação.        Esta mensagem de erro é apresentada em dispositivos KNOX e DA. O Intune apresenta uma notificação na qual os utilizadores podem clicar para tentar novamente. No caso de se tratar de uma aplicação disponível, a notificação pode ser dispensada. No entanto, se a aplicação for necessária, a notificação não pode ser dispensada.    |
+|    A instalação da aplicação foi cancelada porque o ficheiro de instalação (APK) foi eliminado após a transferência, mas antes da instalação. (0xC7D14FBA)    |    A APK foi transferida com êxito, mas o ficheiro foi removido do dispositivo antes de o utilizador instalar a aplicação. Isto poderá ocorrer se existir um intervalo de tempo grande entre a transferência e a instalação. Por exemplo, o utilizador cancelou a instalação original, espera e, em seguida, clica na notificação para tentar novamente.         Esta mensagem de erro só é apresentada para cenários de DA. Os cenários de KNOX podem ser realizados automaticamente. Apresentamos uma notificação Tentar novamente para que o utilizador possa aceitar em vez de cancelar. No caso de se tratar de uma aplicação disponível, a notificação pode ser dispensada. No entanto, se a aplicação for necessária, a notificação não pode ser dispensada.    |
+|    A instalação da aplicação foi cancelada porque o processo foi reiniciado durante a instalação. (0xC7D14FBB)    |    O dispositivo foi reiniciado durante o processo de instalação do ficheiro APK, resultando numa instalação foi cancelada.        Esta mensagem de erro é apresentada em dispositivos KNOX e DA. O Intune apresenta uma notificação na qual os utilizadores podem clicar para tentar novamente. No caso de se tratar de uma aplicação disponível, a notificação pode ser dispensada. No entanto, se a aplicação for necessária, a notificação não pode ser dispensada.    |
 |    A aplicação não foi detetada depois de a instalação ter sido concluída com êxito. (0x87D1041C)    |    O utilizador desinstalou explicitamente a aplicação. Este erro não é devolvido do cliente. É um erro apresentado quando uma aplicação é instalada a determinada altura e depois desinstalada pelo utilizador. Este erro só deverá ocorrer em aplicações necessárias. Os utilizadores podem desinstalar aplicações não necessárias. Este erro só pode ocorrer em dispositivos DA. Os dispositivos KNOX bloqueiam a desinstalação de aplicações geridas.       A sincronização seguinte irá voltar a apresentar a notificação no dispositivo para o utilizador instalar.   O utilizador pode ignorar a notificação. Este erro continuará a ser apresentado até que o utilizador instale a aplicação.    |
 |    A transferência falhou devido a um erro desconhecido. (0xC7D14FB2)    |    Este erro ocorre quando a transferência falha. Este erro pode ocorrer devido a ligações lentas ou problemas de Wi-Fi.       Este erro só é devolvido em cenários de DA. Em cenários de KNOX, não é apresentado nenhum pedido de instalação ao utilizador e esta operação pode ser feita automaticamente. O Intune apresenta uma notificação na qual os utilizadores podem clicar para tentar novamente. No caso de se tratar de uma aplicação disponível, a notificação pode ser dispensada. No entanto, se a aplicação for necessária, a notificação não pode ser dispensada.    |
 |    A transferência falhou devido a um erro desconhecido. A política será repetida na próxima vez que o dispositivo for sincronizado. (0xC7D15078)    |    Este erro ocorre quando a transferência falha. Este erro pode ocorrer devido a ligações lentas ou problemas de Wi-Fi.       Este erro só é devolvido em cenários de DA. Em cenários de KNOX, não é apresentado nenhum pedido de instalação ao utilizador e esta operação pode ser feita automaticamente.    |
-|    O utilizador final cancelou a instalação de aplicações. (0xC7D14FB1)    |    O utilizador desinstalou explicitamente a aplicação. Este erro é devolvido quando a atividade de instalação do SO Android é cancelada pelo utilizador. O utilizador premiu o botão Cancelar quando o pedido de instalação do SO foi apresentado ou ignorou o pedido.        Este erro só é devolvido em cenários de DA. Em cenários de KNOX, não é apresentado nenhum pedido de instalação ao utilizador e esta operação pode ser feita automaticamente. O Intune apresenta uma notificação na qual os utilizadores podem clicar para tentar novamente. No caso de se tratar de uma aplicação disponível, a notificação pode ser dispensada. No entanto, se a aplicação for necessária, a notificação não pode ser dispensada.    |
+|    O utilizador final cancelou a instalação da aplicação. (0xC7D14FB1)    |    O utilizador desinstalou explicitamente a aplicação. Este erro é retornado quando instalar o SO Android atividade foi cancelada pelo utilizador. O utilizador premiu o botão Cancelar quando o pedido de instalação do SO foi apresentado ou ignorou o pedido.        Este erro só é devolvido em cenários de DA. Em cenários de KNOX, não é apresentado nenhum pedido de instalação ao utilizador e esta operação pode ser feita automaticamente. O Intune apresenta uma notificação na qual os utilizadores podem clicar para tentar novamente. No caso de se tratar de uma aplicação disponível, a notificação pode ser dispensada. No entanto, se a aplicação for necessária, a notificação não pode ser dispensada.    |
 |    O processo de transferência de ficheiros parou inesperadamente. (0xC7D15015)    |    O SO parou o processo de transferência antes de ser concluído. Este erro pode ocorrer se o dispositivo tiver pouca bateria ou a transferência demorar demasiado tempo.       Este erro só é devolvido em cenários de DA. Em cenários de KNOX, não é apresentado nenhum pedido de instalação ao utilizador e esta operação pode ser feita automaticamente. O Intune apresenta uma notificação na qual os utilizadores podem clicar para tentar novamente. No caso de se tratar de uma aplicação disponível, a notificação pode ser dispensada. No entanto, se a aplicação for necessária, a notificação não pode ser dispensada.    |
 |    O serviço de transferência de ficheiros parou inesperadamente. A política será repetida na próxima vez que o dispositivo for sincronizado. (0xC7D1507C)    |    O SO parou o processo de transferência antes de ser concluído. Este erro pode ocorrer se o dispositivo tiver pouca bateria ou a transferência demorar demasiado tempo.       Este erro só é devolvido em cenários de DA. Em cenários de KNOX, não é apresentado nenhum pedido de instalação ao utilizador e esta operação pode ser feita automaticamente.    |
 
 ### <a name="ios-errors"></a>Erros do iOS
 
-|    Mensagem/código de erro    |    Descrição    |
-|:----------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
-|    (0x87D12906)    |    O Agente MDM da Apple comunicou que o comando da instalação falhou.        |
-|    (0x87D1313C)    |    A ligação de rede foi perdida durante o envio do URL do serviço de transferência atualizado para o dispositivo. Mais concretamente, não foi possível encontrar um servidor com o nome de anfitrião especificado.    |
-|    O dispositivo iOS está ocupado neste momento. (0x87D11388)    |    O dispositivo iOS estava ocupado, o que resultou num erro.    |
-|    A instalação da aplicação falhou. (0x87D13B64)    |    Ocorreu uma falha ao instalar a aplicação. São necessários registos XCODE para resolver este erro.    |
-|    A aplicação é gerida, mas expirou ou foi removida pelo utilizador. (0x87D13B66)    |    O utilizador desinstalou explicitamente a aplicação. Também é possível que a aplicação tenha expirado, mas que a transferência tenha falhado ou que a deteção da aplicação não corresponda à resposta do dispositivo.   Além disso, este erro pode ocorrer com base num erro da plataforma iOS 9.2.2.    |
-|    A aplicação está agendada para instalação, mas precisa de um código de resgate para concluir a transação.   (0x87D13B60)    |    Este erro ocorre normalmente com aplicações pagas da loja iOS.     |
-|    A aplicação não foi detetada depois de a instalação ter sido concluída com êxito. (0x87D1041C)    |    O processo de deteção da aplicação não corresponde à resposta do dispositivo.    |
-|    O utilizador rejeitou a oferta para instalar a aplicação. (0x87D13B62)    |    Durante a instalação inicial da aplicação, o utilizador clicou em Cancelar.    |
-|    O utilizador rejeitou a oferta para atualizar a aplicação. (0x87D13B63)    |    O utilizador final clicou em Cancelar durante o processo de atualização.     |
-|    Erro desconhecido (0x87D103E8)    |    Ocorreu um erro de instalação da aplicação desconhecido. Este é o erro resultante se não ocorrer nenhum dos outros erros.    |
+| Mensagem/código de erro | Sugestões de resolução de problemas/descrição |
+|------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| (0x87D12906) | Agente de MDM da Apple retornado que o comando de instalação falhou. |
+| (0x87D1313C) | A ligação de rede foi perdida, enquanto o URL do serviço de transferência atualizado foi enviado para o dispositivo. Especificamente, não foi possível encontrar um servidor com o nome de anfitrião especificado. |
+| o dispositivo iOS está ocupado neste momento. (0x87D11388) | O dispositivo iOS estava ocupado, o que resultou num erro. |
+| A instalação da aplicação falhou. (0x87D13B64) | Ocorreu uma falha de instalação da aplicação. São necessários registos XCODE para resolver este erro. |
+| A aplicação é gerida, mas a expirou ou foi removida pelo utilizador. (0x87D13B66) | O utilizador desinstalado explicitamente a aplicação. Também é possível que a aplicação tenha expirado, mas que a transferência tenha falhado ou que a deteção da aplicação não corresponda à resposta do dispositivo.   Além disso, este erro pode ocorrer com base num erro da plataforma iOS 9.2.2. |
+| A aplicação está agendada para instalação, mas precisa de um código de resgate para concluir a transação. (0x87D13B60) | Este erro normalmente ocorre com as aplicações da iOS Store que pagos aplicações. |
+| A aplicação não foi detetada após a instalação foi concluída com êxito.   (0x87D1041C) | O processo de deteção de aplicação não corresponde com a resposta do dispositivo. |
+| O utilizador rejeitou a oferta para instalar a aplicação. (0x87D13B62) | Durante a instalação da aplicação inicial, o usuário clicou em Cancelar. |
+| O utilizador rejeitou a oferta para atualizar a aplicação. (0x87D13B63) | O usuário final clicou em Cancelar durante o processo de atualização. |
+| Erro desconhecido (0x87D103E8) | Ocorreu um erro de instalação de aplicação desconhecido. Este é o erro resultante quando outros erros de não tem ocorrido. |
+| Só pode instalar as aplicações VPP no iPad partilhado (-2016330861). | As aplicações têm de ser obtidas com o Apple Volume Purchase Program para instalar num iPad partilhado. |
+| Não é possível instalar aplicações quando está desativado App Store (-2016330860).  | O Store da aplicação tem de estar ativada para o utilizador instalar a aplicação. |
+| Não é possível encontrar a licença do VPP para a aplicação (-2016330859).  | Tente revogar e ao reatribuir a licença da aplicação. |
+| Não é possível instalar aplicações de sistemas com o seu fornecedor MDM (-2016330858). | A instalação de aplicações que estão pré-instaladas pelo sistema operativo iOS não é um cenário suportado. |
+| Não é possível instalar aplicações quando o dispositivo estiver no modo perdido (-2016330857). | Toda a utilização do dispositivo está bloqueada no modo perdido.   Desative o modo perdido para instalar aplicações. |
+| Não é possível instalar aplicações quando o dispositivo estiver no modo de local público (-2016330856). | Tente adicionar este dispositivo a um grupo de exclusão para a política de configuração do modo de local público para instalar aplicações. |
+| Utilizador tem de iniciar sessão para o Store da aplicação (-2016330855). | O utilizador tem de entrar para a App Store, para que possa ser instalada a aplicação. |
+| Problema desconhecido. Tente novamente (-2016330854). | A instalação da aplicação falhou devido a um motivo desconhecido.   Tente novamente mais tarde. |
+| A instalação da aplicação falhou. Intune tentará novamente na próxima vez que o dispositivo é sincronizado (-2016330853). | A instalação da aplicação encontrou um erro de dispositivo. Sincronize o dispositivo para tente instalar novamente a aplicação. |
 
 ### <a name="other-installation-errors"></a>Outros erros de instalação
 
