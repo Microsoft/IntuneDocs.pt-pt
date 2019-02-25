@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 02/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 64cd4aa629e980bf69557d6cd2c40f8bee7bd3c6
-ms.sourcegitcommit: c0b954c82cd732b5328f92b618947bf425bf0a91
+ms.openlocfilehash: 52baa8f92401266dbf3043a334eccbc6ddffc873
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56086221"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742640"
 ---
 # <a name="manage-internet-access-using-a-microsoft-intune-policy-protected-browser"></a>Gerir o acesso à Internet através de um browser protegido por políticas do Microsoft Intune
 
@@ -74,9 +74,13 @@ Enquanto o Managed Browser ou o Microsoft Edge não for gerido pelo Intune, não
 
 O Managed Browser é agora uma aplicação aprovada do cliente para Acesso Condicional. Isto significa que pode restringir o acesso móvel através do browser às aplicações Web ligadas ao Azure AD em que os utilizadores apenas podem utilizar o Managed Browser e o acesso a partir de outros browsers desprotegidos, como o Safari ou o Chrome, é bloqueado. Esta proteção pode ser aplicada a recursos do Azure, como o Exchange Online e o SharePoint Online, o portal do Office e sites no local que foram expostos a utilizadores externos através do [Proxy de Aplicações do Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started). 
 
-Para restringir as aplicações Web ligadas ao Azure AD à utilização do Intune Managed Browser em plataformas móveis, pode criar uma política de Acesso Condicional do Azure AD que requeira aplicações do cliente aprovadas. 
+Para impedir que as aplicações Web ligadas ao Azure AD utilizem o Intune Managed Browser em plataformas móveis, pode criar uma política de Acesso Condicional que exija aplicações cliente aprovadas. 
 
-1. No portal do Azure, selecione **Azure Active Directory** > **Aplicações empresariais** > **Acesso condicional** > **Nova política**. 
+> [!TIP]  
+> O Acesso Condicional é uma tecnologia do Azure Active Directory (Azure AD). O nó de Acesso Condicional acedido a partir do *Intune* é o mesmo nó acedido a partir do *Azure AD*.  
+
+
+1. No portal do Intune, selecione **Acesso condicional** > **Nova política**. 
 2. Em seguida, selecione **Conceder** na secção **Controlos de acesso** do painel. 
 3. Clique em **Requer aplicação aprovada do cliente**. 
 4. Clique em **Selecionar** no painel **Conceder**. Esta política tem de ser atribuída às aplicações na cloud que pretende que sejam acessíveis apenas a partir da aplicação Intune Managed Browser.

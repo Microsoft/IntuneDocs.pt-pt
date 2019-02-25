@@ -197,17 +197,17 @@ items:
       items:
       - name: Configurar inscrição do Android
         href: android-enroll.md
-      - name: Ligar o Intune ao Android enterprise
+      - name: Connect Intune to Android Enterprise (Ligar o Intune ao Android Enterprise)
         href: connect-intune-android-enterprise.md
-      - name: Configurar a inscrição do perfil de trabalho do Android
+      - name: Android Enterprise work profile enrollment (Inscrição do perfil de trabalho do Android Enterprise)
         href: android-work-profile-enroll.md
-      - name: Configurar inscrição do dispositivo dedicado do Android
+      - name: Android Enterprise dedicated device enrollment (Inscrição de dispositivos dedicados do Android Enterprise)
         href: android-kiosk-enroll.md
-      - name: Configurar inscrição totalmente gerida do Android
+      - name: Android Enterprise fully managed enrollment (Inscrição totalmente gerida do Android Enterprise)
         href: android-fully-managed-enroll.md
-      - name: Inscrever dispositivos dedicados ou dispositivos totalmente geridos do Android
+      - name: Enroll Android Enterprise dedicated devices or fully managed devices (Inscrever dispositivos dedicados ou dispositivos totalmente geridos do Android Enterprise)
         href: android-dedicated-devices-fully-managed-enroll.md
-      - name: Gerir dispositivos de perfil de trabalho do Android
+      - name: Manage Android Enterprise work profile devices (Gerir dispositivos com perfis de trabalho do Android Enterprise)
         href: android-enterprise-overview.md
       - name: Samsung Knox Mobile Enrollment
         href: android-samsung-knox-mobile-enroll.md
@@ -250,6 +250,8 @@ items:
       href: device-remote-lock.md
     - name: Repor código de acesso
       href: device-passcode-reset.md
+    - name: Rename device (Mudar o nome do dispositivo)
+      href: device-rename.md
     - name: Reiniciar o dispositivo
       href: device-restart.md
     - name: Terminar a sessão do utilizador atual
@@ -578,6 +580,8 @@ items:
             href: app-protection-policies-exception.md
         - name: Validar as políticas de proteção de aplicações
           href: app-protection-policies-validate.md
+        - name: App protection policy delivery (Entrega da política de proteção de aplicações)
+          href: app-protection-policy-delivery.md
         - name: Monitorizar o estado dos utilizadores da proteção de aplicações
           href: app-protection-policies-monitor.md
         - name: Preparar-se para as políticas de proteção de aplicações WIP
@@ -1001,9 +1005,9 @@ items:
       href: data-outside-protect.md
     - name: Impedir fugas de dados em dispositivos não geridos
       href: data-leak-prevention.md
-ms.openlocfilehash: d10d6c5a1c19430a0413e4f3149035a9e783dfc6
-ms.sourcegitcommit: f1681554ad842c22ad3f82f0e6d44d5966e4aa3d
+ms.openlocfilehash: 680ae510d7f3387b53ad6ae50c8e4d8ba194f8b9
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56458914"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742827"
