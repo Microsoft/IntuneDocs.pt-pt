@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/12/2018
+ms.date: 02/12/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ca80636217619d93ef40b2010de6ab67f032d7dc
-ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
+ms.openlocfilehash: 69cab2f2cda974249eccba90f203b4b06c29806f
+ms.sourcegitcommit: a9bb967273e8df7e743c9826948582fda555c02d
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "56743424"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56795550"
 ---
 # <a name="understand-app-protection-policy-delivery-timing"></a>Compreender o tempo de entrega de política de proteção de aplicações
 

@@ -1,7 +1,7 @@
 ---
 title: Rever registos de política de proteção de aplicações | Microsoft Intune
 titlesuffix: Microsoft Intune
-description: Este tópico descreve como configurar registos de (aplicação) de política de proteção de aplicações.
+description: Este tópico descreve como configurar os registos do (aplicação) de política de proteção de aplicações do Intune.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7262693a4e56eee97175a835cfdcd66bfefbcb4c
-ms.sourcegitcommit: 8943848d47d5d5d6e44c74d414c34c5e3457862b
+ms.openlocfilehash: bd5c984e210b34a3c9cdfa2083a976ef304065ea
+ms.sourcegitcommit: a9bb967273e8df7e743c9826948582fda555c02d
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56655294"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56795584"
 ---
 # <a name="review-client-app-protection-logs"></a>Rever registos de proteção de aplicações cliente
 

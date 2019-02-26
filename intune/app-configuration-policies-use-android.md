@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/26/2018
+ms.date: 02/21/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 512fc924f71ba9a9fdd46ba8f5f5c087de83c2dd
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 6278d19edd6d55f3aa06b30ee9ffee867f784bd7
+ms.sourcegitcommit: ba7170e499ea0009e9f1c2d77dbec116ec01ba1c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55840421"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56826177"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>Adicionar políticas de configuração da aplicação para dispositivos Android geridos
 
@@ -44,13 +44,13 @@ Utilize políticas de configuração da aplicação no Microsoft Intune para dis
 6. Selecione **Android** em **Plataforma**.
 7. Selecione **Aplicação Associada** para escolher a aplicação para a qual pretende definir uma política de configuração da aplicação. Selecionar na lista de aplicações com perfil de trabalho do Android que aprovou e sincronizou com o Intune.
 8. Selecione **Permissões**. Pode definir configurações com:
-    - [Estruturador de configuração](#Use-the-configuration-designer)
-    - [Editor de JSON](#Enter-the-JSON-editor)
+    - [Estruturador de configuração](#use-the-configuration-designer)
+    - [Editor de JSON](#enter-the-json-editor)
 9. Selecione **OK** e, em seguida, **Adicionar**.
 
 ## <a name="use-the-configuration-designer"></a>Utilizar o estruturador de configuração
 
-Pode utilizar o estruturador de configuração para aplicações Android que suportem a configuração. A configuração será aplicada aos dispositivos inscritos no Intune. O estruturador permite-lhe configurar valores de configuração específicos para as definições que uma aplicação apresenta.
+Pode utilizar o estruturador de configuração para aplicações Android quando a aplicação foi projetada para oferecer suporte a definições de configuração. A configuração será aplicada aos dispositivos inscritos no Intune. O estruturador permite-lhe configurar valores de configuração específicos para as definições que uma aplicação apresenta.
 
 Selecione **Adicionar** para selecionar a lista de definições de configuração que pretende especificar para a aplicação.  
 Para cada chave e valor na configuração, defina:

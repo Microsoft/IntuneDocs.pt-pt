@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/19/2018
+ms.date: 02/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,31 +16,32 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ac9c8ca0b04cbb6f7cf570134a6f4bdce7bf57ed
-ms.sourcegitcommit: 93de3423d2d8f0019e676a63784edeb3daf47cb7
+ms.openlocfilehash: 749d76087871fc46dd3e0299ffe43d629868282f
+ms.sourcegitcommit: ba7170e499ea0009e9f1c2d77dbec116ec01ba1c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56325457"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56826211"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Introdução ao SDK da Aplicação Microsoft Intune
 
-Este guia ajuda-o a ativar rapidamente a sua aplicação móvel para as políticas de proteção de aplicações com o Microsoft Intune. Será útil compreender primeiro os benefícios do SDK da Aplicação Intune, conforme explicado na [Descrição Geral do SDK da Aplicação Intune](app-sdk.md).
+Este guia ajuda-o a ativar rapidamente a sua aplicação móvel suportar políticas de proteção de aplicações com o Microsoft Intune. Será útil compreender primeiro os benefícios do SDK da Aplicação Intune, conforme explicado na [Descrição Geral do SDK da Aplicação Intune](app-sdk.md).
 
-O SDK da Aplicação Intune suporta cenários semelhantes entre iOS e Android e destina-se a criar uma experiência consistente para os administradores de TI entre as plataformas. Porém, existem pequenas diferenças no suporte de determinadas funcionalidades devido às limitações das plataformas.
+O SDK da Aplicação Intune suporta cenários semelhantes entre iOS e Android e destina-se a criar uma experiência consistente para os administradores de TI entre as plataformas. No entanto, existem pequenas diferenças no suporte de determinadas funcionalidades devido às diferenças de plataforma e limitações.
 
 ## <a name="register-your-store-app-with-microsoft"></a>Registar a aplicação da loja no Microsoft
 
 ### <a name="if-your-app-is-internal-to-your-organization-and-will-not-be-publicly-available"></a>Se a sua aplicação for interna da organização e não estiver publicamente disponível:
 
-*Não é necessário* registar a sua aplicação. Para aplicações de linha de negócio internas, o administrador de TI irá implementar a aplicação internamente. O Intune detetará que a aplicação foi criada com o SDK e permitirá que o administrador de TI aplique a política de proteção de aplicações à mesma. Pode avançar para a secção [Integrar a política de proteção de aplicações na sua aplicação iOS ou Android](#enable-your-iOS-or-Android-app-for-app-protection-policy).
+_**Não é necessário**_ para registar a sua aplicação. Para interno [aplicações de linha de negócio (LOB)](apps-add.md#app-types-in-microsoft-intune) que foram escritas por ou para a sua empresa, o administrador de TI irá implementar a aplicação internamente. O Intune detetará que a aplicação foi criada com o SDK e permitirá que o administrador de TI aplicar políticas de proteção de aplicações à mesma. Pode avançar para a secção [Integrar a política de proteção de aplicações na sua aplicação iOS ou Android](#enable-your-iOS-or-Android-app-for-app-protection-policy).
 
 ### <a name="if-your-app-will-be-released-to-a-public-app-store-like-the-apple-app-store-or-google-play"></a>Se a sua aplicação for lançada numa loja de aplicações pública, como a Apple App Store ou o Google Play:
 
-Primeiro, _**tem**_ de registar a sua aplicação com o Microsoft Intune e aceitar os termos de registo. Os administradores de TI poderão assim aplicar a política de proteção de aplicações à aplicação gerida, que será listada como parceira de aplicações do Intune.
+Primeiro, _**tem**_ de registar a sua aplicação com o Microsoft Intune e aceitar os termos de registo. Os administradores de TI, em seguida, podem aplicar uma política de proteção de aplicações para a aplicação gerida, que será listada como uma [aplicação de parceiro protegidos pelo Intune](apps-supported-intune-apps.md#partner-apps).
 
 Até o registo ser concluído e confirmado pela equipa do Microsoft Intune, os administradores do Intune não terão a opção de aplicar a política de proteção de aplicações na ligação avançada da sua aplicação. A Microsoft também vai adicionar a sua aplicação à respetiva [página de Parceiros do Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-apps). Nesta página, o ícone da aplicação será apresentado para mostrar que suporta políticas de proteção de aplicações do Intune.
 
+### <a name="the-registration-process"></a>O processo de registo
 Para iniciar o processo de registo, e se ainda não estiver a trabalhar com um contacto da Microsoft, preencha o [Microsoft Intune App Partner Questionnaire](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR80SNPjnVA1KsGiZ89UxSdVUMEpZNUFEUzdENENOVEdRMjM5UEpWWjJFVi4u) (Questionário para Parceiros de Aplicação do Microsoft Intune).
 
 Utilizaremos os endereços de e-mail listados na sua resposta do questionário para entrar em contacto e continuar o processo de registo. Além disso, utilizamos o seu endereço de e-mail de registo para contactá-lo caso surja alguma questão.
@@ -94,7 +95,7 @@ Irá precisar de um dos seguintes guias para programadores para o ajudar a integ
  
  * A aplicação é criada com a [Azure ActiveDirectory Authentication Library](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) e ativada para a autenticação de mediador do AAD.
  
- * O [ID de Cliente do AAD](https://docs.microsoft.com/azure/app-service/app-service-mobile-how-to-configure-active-directory-authentication#optional-configure-a-native-client-application) da aplicação tem de ser exclusivo nas plataformas iOS e Android.
+ * O [ID de Cliente do AAD](https://docs.microsoft.com/azure/app-service/app-service-mobile-how-to-configure-active-directory-authentication#configure-a-native-client-application) da aplicação tem de ser exclusivo nas plataformas iOS e Android.
  
 ## <a name="configure-telemetry-for-your-app"></a>Configurar a Telemetria na sua aplicação
 
