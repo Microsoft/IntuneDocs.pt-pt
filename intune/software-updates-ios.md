@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d39f4c541fd7ccf5ab2d09fdcf4f871ba3ee639c
-ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
+ms.openlocfilehash: ecb9a06258c10f2ef00d8940238bc22b539ba21b
+ms.sourcegitcommit: bb80846453850bf17b8c59c25829cf7aa281ca1c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "56742402"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56838318"
 ---
 # <a name="add-ios-software-update-policies-in-intune"></a>Adicionar políticas de atualização de software iOS no Intune
 
@@ -60,7 +60,9 @@ O dispositivo comunica com o Intune aproximadamente de 8 em 8 horas. Se uma atua
 
 5. Selecione **OK** > **criar** para guardar as alterações e criar a política.
 
-O perfil é criado e apresentado na lista de políticas. 
+O perfil é criado e apresentado na lista de políticas.
+
+Para obter orientações da equipa de suporte do Intune, veja [atrasar a visibilidade das atualizações de software no Intune para dispositivos supervisionados](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Delaying-visibility-of-software-updates-in-Intune-for-supervised/ba-p/345753).
 
 > [!NOTE]
 > A MDM da Apple não lhe permite forçar um dispositivo a instalar atualizações numa determinada hora ou data.

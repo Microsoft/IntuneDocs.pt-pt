@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fbe292aec26e55e6dfbe03e59fd9e91c0689c33a
-ms.sourcegitcommit: ba7170e499ea0009e9f1c2d77dbec116ec01ba1c
+ms.openlocfilehash: ad47171d1d0cd4f5d3ac19fe3dadea90b3be1cc8
+ms.sourcegitcommit: bb80846453850bf17b8c59c25829cf7aa281ca1c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 02/26/2019
-ms.locfileid: "56826279"
+ms.locfileid: "56838352"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -46,6 +46,14 @@ Saiba mais sobre as novidades todas as semanas no Microsoft Intune. Também pode
 -->     
 
 <!-- ########################## -->
+## <a name="week-of-february-25-2019"></a>Semana de 25 de Fevereiro de 2019
+
+### <a name="intune-powershell-module----951068-wnready---"></a>Módulo do PowerShell do Intune <!-- 951068 wnready -->
+O módulo PowerShell do Intune, que fornece suporte para a API do Intune através do Microsoft Graph, está agora disponível na [Gallery do PowerShell Microsoft](https://www.powershellgallery.com/packages/Microsoft.Graph.Intune/6.1902.1.10).
+
+- [Detalhes sobre como utilizam este módulo](https://github.com/Microsoft/Intune-PowerShell-SDK/blob/master/README.md)
+- [Exemplos de cenário com este módulo](https://github.com/Microsoft/Intune-PowerShell-SDK/blob/master/Samples/README.md)
+
 ## <a name="week-of-february-18-2019"></a>Semana de 18 de Fevereiro de 2019
 
 ### <a name="app-management"></a>Gestão de aplicações
