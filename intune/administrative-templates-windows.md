@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/09/2019
+ms.date: 02/27/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,18 +15,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4edf76b2406f07efa68275763da87340bb34f222
-ms.sourcegitcommit: 613b2064df07cfac0081e8549177e1f2d07cf33c
+ms.openlocfilehash: f7b78cdc329e3d6f61dea49ddb28429c2f12d0d6
+ms.sourcegitcommit: 95cc5f1e5e955acdff642191c174249465cc98bf
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56590075"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "56982237"
 ---
 # <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Utilizar modelos do Windows 10 para configurar as definições de política de grupo no Microsoft Intune
 
 Quando gerir dispositivos na sua organização, em que pretende criar um grupo de definições que são aplicadas a diferentes grupos de dispositivos. Por exemplo, tem vários grupos de dispositivos. Para GroupA, que pretende atribuir um conjunto específico de definições. Para GroupB, que pretende atribuir um conjunto diferente de definições. Também deseje uma simples exibição de definições que pode configurar.
 
-Pode concluir esta tarefa com **modelos administrativos** no Microsoft Intune. Os modelos administrativos incluem centenas de configurações que controlam funcionalidades no Internet Explorer, programas do Microsoft Office, ambiente de trabalho remoto, aceder ao OneDrive, utilizam uma palavra-passe de imagem ou PIN para iniciar sessão e muito mais. Estes modelos são semelhantes às definições de política (GPO) do grupo no Active Directory (AD) e são [definições de segurança de ADMX](https://docs.microsoft.com/windows/client-management/mdm/understanding-admx-backed-policies) que utilizam o XML. No entanto, os modelos no Intune são 100% baseado na nuvem. Eles oferecem mais simples e direta para configurar as definições e localizar as definições que pretende.
+Pode concluir esta tarefa com **modelos administrativos** no Microsoft Intune. Os modelos administrativos incluem centenas de configurações que controlam funcionalidades no Internet Explorer, programas do Microsoft Office, ambiente de trabalho remoto, aceder ao OneDrive, utilizam uma palavra-passe de imagem ou PIN para iniciar sessão e muito mais. Estes modelos são semelhantes às definições de política (GPO) do grupo no Active Directory (AD) e são [definições de segurança de ADMX](https://docs.microsoft.com/windows/client-management/mdm/understanding-admx-backed-policies) (abre o outro site do Docs) que utilizam o XML. No entanto, os modelos no Intune são 100% baseado na nuvem. Eles oferecem mais simples e direta para configurar as definições e localizar as definições que pretende.
 
 **Modelos administrativos** incorporados no Intune e não necessitam de quaisquer personalizações, incluindo a utilização de OMA-URI. Como parte da sua solução de gestão (MDM) de dispositivos móveis, utilize estas definições de modelo como um meio único para gerir os dispositivos Windows 10.
 
@@ -75,6 +75,8 @@ Centenas de configurações estão disponíveis nestes modelos. Para tornar mais
   ![Clique em caminho para ordenar alfabeticamente](./media/administrative-templates-windows/search-copy-settings.png)
 
   Noutro exemplo, procure `microsoft word`. Ver todas as definições que pode definir para o programa do Microsoft Word. Procure `explorer` para ver todas as configurações do Internet Explorer pode adicionar ao seu modelo.
+
+Esse recurso usa [política de Windows CSPs](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies) (abre o outro site do Docs). Os CSPs funcionam em diferentes edições do Windows, tais como Home, Professional, Enterprise e assim por diante. Para ver se um CSP funciona numa edição específica, aceda à [política de Windows CSPs](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies) (abre o outro site do Docs).
 
 ## <a name="next-steps"></a>Passos Seguintes
 

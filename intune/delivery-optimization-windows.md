@@ -1,11 +1,11 @@
 ---
 title: As definições de otimização de entrega para o Windows 10 no Microsoft Intune – Azure | Documentos da Microsoft
-description: Configure a forma como as atualizações de software são entregues para os seus dispositivos com os serviços de nuvem de otimização de entrega disponíveis com o Windows 10 e dispositivos posteriores. No Intune, crie um perfil de configuração do dispositivo para instalar atualizações a partir da internet. Veja também como substituir cadências de atualização existente com um perfil de otimização de entrega.
+description: Configure como os dispositivos Windows 10 que gere com o Intune utilizam Otimização da entrega. No Intune, crie um perfil de configuração do dispositivo para instalar atualizações a partir da internet. Veja também como substituir cadências de atualização existente com um perfil de otimização de entrega.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 12/05/2018
+ms.date: 02/27/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,27 +13,27 @@ ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f335c8acf9e979366fe75d1a3da2318b7ec46400
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.reviewer: kerimh
+ms.openlocfilehash: 89eb2f92d47c425fe2d286f1f36c175319c519a6
+ms.sourcegitcommit: 0f4247914f55349f618f6176a4cdca08503215f5
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55836698"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56955515"
 ---
-# <a name="windows-10-and-newer-delivery-optimization-settings-in-microsoft-intune"></a>Definições de otimização de entrega de 10 (e versões posteriores) do Windows no Microsoft Intune
+# <a name="delivery-optimization-settings-in-microsoft-intune"></a>Definições de otimização de entrega no Microsoft Intune
+
+Com o Intune, pode utilizar definições de otimização de entrega dos seus dispositivos Windows 10 para reduzir o consumo de largura de banda quando esses dispositivos transferir aplicações e atualizações. Otimização da entrega está configurada como parte de seus perfis de configuração do dispositivo.  
+
+Este artigo descreve como configurar as definições de otimização de entrega como parte de um perfil de configuração do dispositivo. Depois de criar um perfil, em seguida, atribua ou implementar esse perfil para os seus dispositivos Windows 10. 
+
+Para obter uma lista das definições de otimização de entrega que o Intune suporta, consulte [definições de otimização de entrega para o Intune](delivery-optimization-settings.md).  
+
+Para saber mais sobre a otimização de entrega no Windows 10, veja [otimização de entrega de atualizações](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization) na documentação do Windows.  
+
 
 > [!NOTE]
-> **Atualizações de software-Cadências de atualização do Windows 10** são substituídos pela **Otimização da entrega** definições. Os anéis de atualização existente podem ser alterados para utilizar o **Otimização da entrega** definições. [Mover cadências de atualização existente para otimização de entrega](#move-existing-update-rings-to-delivery-optimization) (neste artigo) apresenta os passos. 
-
-
-Esta funcionalidade aplica-se para a plataforma seguinte:
-
-- Windows 10 e posterior
-
-Este artigo apresenta e descreve todas as definições de otimização de entrega que pode configurar para dispositivos Windows 10. Estas definições são adicionadas a um perfil de configuração do dispositivo e, em seguida, atribuídas ou implementadas nos seus dispositivos com o Microsoft Intune.
-
-[Otimização da entrega de atualizações](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization) é um ótimo recurso para obter mais informações sobre a otimização de entrega no Windows 10.
-
+> **Atualizações de software-Cadências de atualização do Windows 10** são substituídos pela **Otimização da entrega** definições. Os anéis de atualização existente podem ser alterados para utilizar o **Otimização da entrega** definições. [Mover cadências de atualização existente para otimização de entrega](#move-existing-update-rings-to-delivery-optimization) (neste artigo) 
 ## <a name="create-the-profile"></a>Criar o perfil
 
 1. Na [portal do Azure](https://portal.azure.com), selecione **todos os serviços** > Filtrar **Intune** > selecione **Intune**.
@@ -49,23 +49,15 @@ Este artigo apresenta e descreve todas as definições de otimização de entreg
         - **Windows 10 e posterior**
 
     - **Tipo de perfil**: Selecione **Otimização da entrega**.
-    - **Definições**: Escolha como pretende que as atualizações baixadas. As opções são: 
-
-        - **Não configurado**: Os utilizadores finais atualizar seus dispositivos com seus próprios métodos, que podem estar a utilizar o **Windows atualiza** ou **Otimização da entrega** definições disponíveis com o sistema operacional.
-        - **HTTP apenas, sem peering**: Obter atualizações apenas a partir da internet. Não obter atualizações a partir de outros computadores na sua rede (chamado de peering ou ponto-a-ponto).
-        - **HTTP aliado a peering atrás da mesma NAT**: Obtenha atualizações da internet e de outros computadores na sua rede. 
-        - **HTTP aliado a peering entre um grupo privado**: Peering ocorre em dispositivos do mesmo Site do Active Directory (se existir) ou o mesmo domínio. Quando esta opção está selecionada, peering cruza os endereços IP de tradução de endereços de rede (NATs).
-        - **HTTP aliado a peering de Internet**: Obtenha atualizações da internet e de outros computadores na sua rede.
-        - **Modo de transferência simples sem peering**: Obtém as atualizações a partir da internet, diretamente a partir do proprietário da atualização, como o Microsoft. Não contacta os serviços de cloud de otimização de entrega.
-        - **O modo ignorar**: Utilize o serviço de transferência inteligente em segundo plano (BITS) para obter atualizações. Não utilize a Otimização da entrega.
+    - **Definições**: Configure as definições que definem como pretende que as atualizações e aplicações para transferir. Para obter informações sobre as definições disponíveis, consulte [definições de otimização de entrega para o Intune](delivery-optimization-settings.md).
 
 4. Quando terminar, selecione **OK** > **criar** para guardar as alterações.
 
-O perfil é criado e é apresentado na lista. Em seguida, [atribuir o perfil](device-profile-assign.md) e [monitorizar o estado](device-profile-monitor.md).
+O perfil é criado e é apresentado na lista. Em seguida, [atribuir o perfil](device-profile-assign.md) e, em seguida [monitorizar o estado](device-profile-monitor.md).
 
 ## <a name="move-existing-update-rings-to-delivery-optimization"></a>Mover cadências de atualização existente para otimização de entrega
 
-**Atualizações de software-Cadências de atualização do Windows 10** são substituídos pela **Otimização da entrega** definições. Os anéis de atualização existente podem ser facilmente alterados para utilizar o **Otimização da entrega** definições. passos:
+**Otimização de entrega** substituir as definições **atualizações de Software-Cadências de atualização do Windows 10**. Os anéis de atualização existente podem ser facilmente alterados para utilizar o **Otimização da entrega** definições. Para tal:
 
 1. Crie um perfil de configuração de otimização de entrega:
 
@@ -84,7 +76,7 @@ O perfil é criado e é apresentado na lista. Em seguida, [atribuir o perfil](de
             - **HTTP aliado a peering de Internet**
             - **Modo de transferência simples sem peering**
             - **Ignorar modo**
-
+    3. Configure definições adicionais que poderá querer gerir.
 2. Atribua este perfil de novo para os mesmos dispositivos e utilizadores como o anel de atualização de software existente. [Atribuir o perfil](device-profile-assign.md) lista os passos.
 
 3. Anular a configuração de anel de software existente:
@@ -95,4 +87,5 @@ O perfil é criado e é apresentado na lista. Em seguida, [atribuir o perfil](de
 
 ## <a name="next-steps"></a>Passos Seguintes
 
-[Atribuir o perfil](device-profile-assign.md) e [monitorizar o estado](device-profile-monitor.md) seu status.
+[Atribuir o perfil](device-profile-assign.md) e [monitorizar o estado](device-profile-monitor.md) seu status.  
+Ver os [definições de otimização de entrega](delivery-optimization-settings.md) para o Intune.

@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/22/2019
+ms.date: 02/27/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ad47171d1d0cd4f5d3ac19fe3dadea90b3be1cc8
-ms.sourcegitcommit: bb80846453850bf17b8c59c25829cf7aa281ca1c
+ms.openlocfilehash: 83168acc6653f750b9cf32d91602464b62aebcfe
+ms.sourcegitcommit: 0f4247914f55349f618f6176a4cdca08503215f5
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56838352"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56955634"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -48,11 +48,17 @@ Saiba mais sobre as novidades todas as semanas no Microsoft Intune. Também pode
 <!-- ########################## -->
 ## <a name="week-of-february-25-2019"></a>Semana de 25 de Fevereiro de 2019
 
-### <a name="intune-powershell-module----951068-wnready---"></a>Módulo do PowerShell do Intune <!-- 951068 wnready -->
+### <a name="device-configuration"></a>Configuração do dispositivo
+
+#### <a name="intune-powershell-module----951068----"></a>Módulo do PowerShell do Intune <!-- 951068  -->
 O módulo PowerShell do Intune, que fornece suporte para a API do Intune através do Microsoft Graph, está agora disponível na [Gallery do PowerShell Microsoft](https://www.powershellgallery.com/packages/Microsoft.Graph.Intune/6.1902.1.10).
 
 - [Detalhes sobre como utilizam este módulo](https://github.com/Microsoft/Intune-PowerShell-SDK/blob/master/README.md)
 - [Exemplos de cenário com este módulo](https://github.com/Microsoft/Intune-PowerShell-SDK/blob/master/Samples/README.md)
+
+#### <a name="improved-support-for-delivery-optimization----3183757-------"></a>Suporte aprimorado para otimização de entrega  <!--3183757     -->
+Expandimos o suporte do Intune para configurar a otimização de entrega. Agora, pode configurar uma lista expandida de [as definições de otimização de entrega](delivery-optimization-settings.md) e aplicá-lo para os seus dispositivos diretamente a partir do consola do Intune.
+
 
 ## <a name="week-of-february-18-2019"></a>Semana de 18 de Fevereiro de 2019
 
@@ -76,7 +82,7 @@ Existem mensagens de erro de instalação de aplicação nova relacionadas ao se
 No Intune, selecione **aplicações de cliente** > **aplicações** > "Nome da aplicação" > **estado de instalação de dispositivo**. Novas mensagens de erro estará disponíveis na **detalhes do estado** coluna.
 
 #### <a name="new-app-categories-screen-in-the-company-portal-app-for-windows-10---3834780----"></a>Novo ecrã de categorias de aplicação na aplicação Portal da empresa para Windows 10<!-- 3834780  -->
-Um ecrã novo chamado **categorias de aplicações** foi adicionado para melhorar a experiência de navegação e a seleção de aplicação no Portal da empresa para Windows 10. Os utilizadores irão ver agora as aplicações ordenadas em categorias, como **em destaque**, **educação**, e **produtividade**. Esta alteração apareça em versões do Portal da empresa 10.3.3451.0 e mais tarde. Para ver o novo ecrã, consulte [quais são as novidades na IU da aplicação](https://docs.microsoft.com/intune/whats-new). Para obter mais informações sobre as aplicações no Portal da empresa, consulte [instalar e partilhar aplicações no seu dispositivo](/intune-user-help/install-apps-cpapp-windows).  
+Um ecrã novo chamado **categorias de aplicações** foi adicionado para melhorar a experiência de navegação e a seleção de aplicação no Portal da empresa para Windows 10. Os utilizadores irão ver agora as aplicações ordenadas em categorias, como **em destaque**, **educação**, e **produtividade**. Esta alteração apareça em versões do Portal da empresa 10.3.3451.0 e mais tarde. Para ver o novo ecrã, consulte [quais são as novidades na IU da aplicação](https://docs.microsoft.com/intune/whats-new-app-ui). Para obter mais informações sobre as aplicações no Portal da empresa, consulte [instalar e partilhar aplicações no seu dispositivo](/intune-user-help/install-apps-cpapp-windows).  
 
 #### <a name="power-bi-compliance-app----1455231-doc-work-item---"></a>Aplicação de conformidade do Power BI <!-- 1455231 doc-work-item -->
 Aceder ao seu armazém de dados do Intune no Power BI Online com o [conformidade do Intune (armazém de dados)](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) aplicação. Com esta aplicação do Power BI, pode agora aceder e partilhar relatórios previamente criados sem qualquer configuração e sem sair do seu navegador da web. Para obter mais informações, consulte [registo de alterações - aplicação de conformidade do Power BI](reports-changelog.md#power-bi-compliance-app). Para obter mais atualizações do armazém de dados do Intune, consulte [futuras alterações à API do armazém de dados do Intune](whats-new.md#upcoming-change-to-the-intune-data-warehouse-api).

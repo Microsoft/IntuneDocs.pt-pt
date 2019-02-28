@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cdc0f02aa09edd05314d0d4a6a2abacc98c94bf2
-ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
+ms.openlocfilehash: 542eb8e2ae93144709c8e35f22718d6c520cc58a
+ms.sourcegitcommit: 0f4247914f55349f618f6176a4cdca08503215f5
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "56742742"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56955617"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Configurar e utilizar certificados SCEP com o Intune
 
@@ -363,8 +363,8 @@ Para se certificar de que o serviço está em execução, abra um browser e intr
 5. Na lista pendente **Tipo de perfil**, selecione **Certificado SCEP**.
 6. Introduza as seguintes definições:
 
-   - **Tipo de certificado**: Escolher **utilizador** para certificados de utilizador. Selecione **Dispositivo** para dispositivos sem utilizador, como quiosques. Os certificados de **Dispositivo** estão disponíveis para as seguintes plataformas:  
-     - Android Enterprise
+   - **Tipo de certificado**: Escolher **utilizador** para certificados de utilizador. R **utilizador** tipo pode conter atributos de utilizador e dispositivo no assunto e SAN do certificado do certificado.  Escolher **dispositivo** para cenários, tais como dispositivos sem utilizador, como quiosques, ou para dispositivos Windows, colocando o certificado no arquivo de certificados de computador Local. **Dispositivo** certificados só podem conter atributos de dispositivos no assunto e SAN do certificado.  Os certificados de **Dispositivo** estão disponíveis para as seguintes plataformas:  
+     - Android Enterprise - perfil de trabalho
      - iOS
      - macOS
      - Windows 8.1 e posterior

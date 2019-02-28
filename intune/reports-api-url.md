@@ -6,7 +6,7 @@ keywords: Armazém de Dados do Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/09/2018
+ms.date: 02/25/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: caf4401a2274a74050ec0eb404363cfc15b23e76
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: ffdd62c06090e58bc5f00a8750c7a3a301ac9ed7
+ms.sourcegitcommit: 0f4247914f55349f618f6176a4cdca08503215f5
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55851445"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56955532"
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Ponto final da API do Armazém de Dados do Intune
 
@@ -57,11 +57,13 @@ O URL contém os seguintes elementos:
 
 ## <a name="api-version-information"></a>Informações sobre a versão da API
 
-A versão atual da API é: `beta`. 
+Agora, pode utilizar a versão v1.0 do Armazém de Dados do Intune, ao definir o parâmetro de consulta `api-version=v1.0`. As atualizações para coleções no Armazém de Dados são acumulativas por natureza e não interrompem cenários existentes.
+
+Pode experimentar as nossas funcionalidades mais recentes do Armazém de Dados com a versão beta. Para utilizar a versão beta, o seu URL tem de conter o parâmetro de consulta `api-version=beta`. A versão beta oferece funcionalidades antes de estas estarem disponíveis globalmente como um serviço suportado. À medida que o Intune adiciona novas funcionalidades, a versão beta poderá alterar o contrato de dados e comportamento. Todos os códigos personalizados ou ferramentas de relatórios dependentes da versão beta poderão interromper as atualizações contínuas.
 
 ## <a name="odata-query-options"></a>Opções de consulta de OData
 
-A versão atual suporta os seguintes parâmetros de consulta de OData: `$filter, $orderby, $select, $skip,` e `$top`.
+A versão atual suporta os seguintes parâmetros de consulta de OData: `$filter`, `$select`, `$skip,` e `$top`. Na `$filter`, apenas `DateKey` ou `RowLastModifiedDateTimeUTC` pode ser suportado quando as colunas são aplicáveis e outras propriedades dispararia um pedido incorreto.
 
 ## <a name="datekey-range-filters"></a>Filtros de Intervalo DateKey
 
@@ -73,15 +75,12 @@ Os filtros de intervalo `DateKey` podem ser utilizados para limitar a quantidade
 ## <a name="filter-examples"></a>Exemplos de filtros
 
 > [!NOTE]
-> Os exemplos de filtros presumem que hoje é o dia 21/02/2018.
+> O filtro exemplos partem do princípio de hoje é 2/21/2019.
 
 |                             Filtro                             |           Otimização do Desempenho           |                                          Descrição                                          |
 |:--------------------------------------------------------------:|:--------------------------------------------:|:---------------------------------------------------------------------------------------------:|
 |    `maxhistorydays=7`                                            |    Completo                                      |    Devolver dados com um `DateKey` entre 20180214 e 20180221.                                     |
 |    `$filter=DateKey eq 20180214`                                 |    Completo                                      |    Devolver dados com um `DateKey` igual a 20180214.                                                    |
 |    `$filter=DateKey ge 20180214 and DateKey lt 20180221`         |    Completo                                      |    Devolver dados com um `DateKey` entre 20180214 e 20180220.                                     |
-|    `maxhistorydays=7&$filter=Id gt 1`                            |    O Id gt 1 parcial não será otimizado    |    Devolver dados com um `DateKey` entre 20180214 e 20180221 e um Id superior a 1.             |
 |    `maxhistorydays=7&$filter=DateKey eq 20180214`                |    Completo                                      |    Devolver dados com um `DateKey` igual a 20180214. `maxhistorydays` é ignorado.                            |
-|    `$filter=DateKey eq 20180214 and Id gt 1`                     |    Nenhuma                                      |    Não é tratado como um filtro de intervalo `DateKey`, logo não há melhoria de desempenho.                              |
-|    `$filter=DateKey ne 20180214`                                 |    Nenhuma                                      |    Não é tratado como um filtro de intervalo `DateKey`, logo não há melhoria de desempenho.                              |
-|    `maxhistorydays=7&$filter=DateKey eq 20180214 and Id gt 1`    |    Nenhuma                                      |    Não é tratado como um filtro de intervalo `DateKey`, logo não há melhoria de desempenho. `maxhistorydays` é ignorado.    |
+|    `$filter=RowLastModifiedDateTimeUTC ge 2018-02-21T23:18:51.3277273Z`                                |    Completo                                       |    Devolve os dados com `RowLastModifiedDateTimeUTC` é maior que ou igual a `2018-02-21T23:18:51.3277273Z`                             |
