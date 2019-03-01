@@ -15,22 +15,22 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8cd681466b64c72291100d42804c0d349c4fb04f
-ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
+ms.openlocfilehash: a6da94a0904042c74debbe8827fe58d45cdea3ad
+ms.sourcegitcommit: a78878452491ae207319b8d7ce62ea9edec487b2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "56743421"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "57007006"
 ---
 # <a name="rename-a-windows-device-in-intune"></a>Mudar o nome de um dispositivo Windows no Intune
 
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-O **reiniciar** ação de dispositivo permite-lhe mudar o nome de um dispositivo Windows pertencentes à empresa, que está inscrito no Intune. Isto altera o nome do dispositivo no Intune, bem como no dispositivo. 
+O **mudança de nome de dispositivo** ação permite-lhe mudar o nome de um dispositivo Windows pertencentes à empresa, que está inscrito no Intune. Isto altera o nome do dispositivo no Intune, bem como no dispositivo. 
 
 
-## <a name="restart-a-device"></a>Reiniciar um dispositivo
+## <a name="rename-a-device"></a>Mudar o nome de um dispositivo
 
 1. Inicie sessão no [portal do Azure](https://portal.azure.com).
 2. Escolher **todos os serviços**, filtre por **Intune**e escolha **Microsoft Intune**.

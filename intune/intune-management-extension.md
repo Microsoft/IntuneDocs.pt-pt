@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/05/2019
+ms.date: 02/28/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a9b44e4fda5e7ff78a41dd952ea9eabcb820cfb3
-ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
+ms.openlocfilehash: 99e44190f2e87d1b859450bc96bf52e1cd1430f1
+ms.sourcegitcommit: c89e41e7bd546e4feceae26d82326230a16a713c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "56742385"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57017035"
 ---
 # <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>Utilizar scripts do PowerShell em dispositivos Windows 10 no Intune
 
@@ -84,7 +84,7 @@ A extensão de gestão do Intune tem os seguintes pré-requisitos:
 > - Scripts do PowerShell no Intune podem ser direcionadas para grupos de segurança de dispositivos do Azure AD.
 > - Scripts do PowerShell no Intune podem ser direcionadas para grupos de segurança do utilizador do Azure AD.
 
-O cliente de extensão de gestão do Intune verifica uma vez por hora com o Intune. Depois de atribuir a política aos grupos do Azure AD, o script do PowerShell será executado e os resultados de execução serão comunicados.
+O cliente de extensão de gestão do Intune verifica uma vez por hora e a cada reinicialização com o Intune para qualquer novos scripts ou as alterações. Depois de atribuir a política aos grupos do Azure AD, o script do PowerShell será executado e os resultados de execução serão comunicados. Assim que o script for executado, ele não é executado novamente, exceto se houver uma alteração no script ou de política.
 
 ## <a name="monitor-run-status"></a>Monitor de estado de execução
 

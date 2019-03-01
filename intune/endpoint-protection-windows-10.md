@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/23/2019
+ms.date: 02/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4ccdb8c40c87bc4f5e778bc1cb7a6966f8a0ad70
-ms.sourcegitcommit: 33bacf9d5db336e73d8c88fa15f6535ae92b4b00
+ms.openlocfilehash: 57360f2ffae038b57e2a8c57fc5eeba9a0fd5d2f
+ms.sourcegitcommit: c89e41e7bd546e4feceae26d82326230a16a713c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "56418523"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57017137"
 ---
 # <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>Definições de 10 (e posteriores) do Windows para proteger os dispositivos com o Intune
 
@@ -404,7 +404,7 @@ Utilize estas opções para configurar as definições da segurança local em di
 ### <a name="accounts"></a>Contas
 
 - **Adicionar novas contas Microsoft**: Defina como **bloco** para impedir que os utilizadores adicionem novas contas Microsoft ao dispositivo. Quando definida para **Não configurado** (predefinição), os utilizadores podem utilizar contas Microsoft no dispositivo.
-- **Início de sessão remoto sem palavra-passe**: **Ativar** permite que as contas locais com palavras-passe em branco para iniciar sessão com o teclado do dispositivo. A opção **Não configurado** (predefinição) permite que as contas locais com palavras-passe vazias iniciem sessão em localizações que não o dispositivo físico.
+- **Início de sessão remoto sem palavra-passe**: **Bloco** permite que apenas as contas locais com palavras-passe em branco para iniciar sessão com o teclado do dispositivo. A opção **Não configurado** (predefinição) permite que as contas locais com palavras-passe vazias iniciem sessão em localizações que não o dispositivo físico.
 
 #### <a name="admin"></a>administrador
 
@@ -442,7 +442,7 @@ Utilize estas opções para configurar as definições da segurança local em di
 #### <a name="display"></a>Apresentar
 
 - **Informações de utilizador no ecrã de bloqueio**: Configure as informações de utilizador que são apresentadas quando a sessão está bloqueada. Se não estiverem configuradas, serão apresentados o nome a apresentar do utilizador, o domínio e o nome de utilizador.
-  - **Não configurado**
+  - **Não configurado**  
   - **O nome a apresentar do utilizador, o domínio e o nome de utilizador**
   - **Apenas o nome a apresentar do utilizador**
   - **Não apresentar informações do utilizador**
@@ -458,7 +458,7 @@ Utilize estas opções para configurar as definições da segurança local em di
 - **Enumeração anónima de contas e partilhas SAM**: **Não configurado** (predefinição) significa que os usuários anônimos podem enumerar os nomes de contas de domínio e partilhas de rede. Para impedir a enumeração anónima de contas e partilhas SAM, defina como **Bloquear**.
 - **Valor de hash do LAN Manager armazenado na alteração de palavra-passe**: Na próxima alteração de palavra-passe, optar por **permitir** do LM (LAN Manager) para armazenar o valor de hash da palavra-passe nova. Quando definida para **Não configurado** (predefinição), o valor hash não é armazenado.
 - **Pedidos de autenticação PKU2U**: **Bloco** pedidos de autenticação PKU2U para o dispositivo para utilizar identidades online. **Não configurado** (predefinição) permite estes pedidos.
-- **Restringir ligações remotas de RPC a SAM**: **Permitir** a cadeia de linguagem de definição de descritor de segurança predefinida para negar a utilizadores e grupos a realização de chamadas remotas para SAM. **Não configurado** (predefinição): a cadeia de Linguagem de Definição de Descritor de Segurança predefinida permite que os utilizadores e grupos realizem chamadas remotas para SAM.
+- **Restringir ligações remotas de RPC a SAM**: Defina como **permitir** para negar a utilizadores e grupos de fazer chamadas remotas de RPC para a segurança Gestor de contas (SAM), que armazena as contas de utilizador e palavras-passe. **Permitir** também permite que altere a cadeia de linguagem de definição de descritor de segurança (SDDL) predefinida para explicitamente permitir ou negar utilizadores e grupos para tornar essas chamadas remotas. **Não configurado** (predefinição) utiliza o descritor de segurança padrão e pode permitir que os utilizadores e grupos fazer chamadas RPC remotas para SAM.
   - **Descritor de segurança**
 
 ### <a name="recovery-console-and-shutdown"></a>Consola de recuperação e encerramento
@@ -468,8 +468,8 @@ Utilize estas opções para configurar as definições da segurança local em di
 
 ### <a name="user-account-control"></a>Controlo de conta de utilizador
 
-- **Integridade de UIA sem localização segura**: Quando definido como **ativar**, as aplicações numa localização segura no sistema de arquivos são executadas apenas com integridade UIAccess. A opção **Não configurado** (predefinição) permite que as aplicações sejam executadas com o nível de integridade UIAccess, mesmo que não estejam numa localização segura no sistema de ficheiros.
-- **Virtualizar falhas de escrita de arquivo e Registro para locais por usuário**: Quando definido como **bloco**, application escrever o redirecionamento de falhas em tempo de execução para locais definidos de usuário para o sistema de ficheiros e registo. Quando definida para **Não configurado** (predefinição), as aplicações que escrevem dados para localizações protegidas falham.
+- **Integridade de UIA sem localização segura**: Quando definido como **bloco**, as aplicações numa localização segura no sistema de arquivos são executadas apenas com integridade UIAccess. A opção **Não configurado** (predefinição) permite que as aplicações sejam executadas com o nível de integridade UIAccess, mesmo que não estejam numa localização segura no sistema de ficheiros.
+- **Virtualizar falhas de escrita de arquivo e Registro para locais por usuário**: Quando definido como **ativado**, aplicativos que gravar dados protegidos localizações falhar. Quando definido como **não configurado** (predefinição), escrita de aplicativo redirecionadas falhas em tempo de execução para localizações de utilizador definidas para o sistema de ficheiros e registo.
 - **Elevar apenas ficheiros executáveis assinados e validados**: Defina como **ativado** para impor a validação de caminho de certificação PKI para um ficheiro executável antes de ser executado. Defina para **Não configurado** (predefinição) para não impor a validação do caminho da certificação PKI antes da execução de um ficheiro executável.
 
 #### <a name="uia-elevation-prompt-behavior-settings"></a>Definições do comportamento do pedido de elevação UIA
@@ -486,13 +486,13 @@ Utilize estas opções para configurar as definições da segurança local em di
   - **Pedir credenciais no ambiente de trabalho seguro**
   - **Não configurado**: Pedir credenciais
 - **Encaminhar pedidos de elevação para área de trabalho interativa do usuário**: **Ativar** para que todos os pedidos de elevação para área de trabalho do utilizador interativo, não o ambiente de trabalho seguro. São utilizadas todas as definições de política de comportamento de pedidos para administradores e utilizadores padrão. A opção **Não configurado** (predefinição) obriga que todos os pedidos de elevação sejam encaminhados para o ambiente de trabalho seguro, independentemente das definições de política de comportamento de pedidos para administradores e utilizadores padrão.
-- **Linha de comandos elevada para instalações de aplicações**: Quando definido como **bloco**, pacotes de instalação de aplicações não são detetados ou prompt de elevação. Quando definido como **não configurado** (predefinição) e um pacote de instalação do aplicativo requer privilégios elevados, é pedido ao utilizador para um nome de utilizador administrativo e a palavra-passe.
-- **Solicitação de elevação UIA sem ambiente de trabalho seguro**: **Ativar** permite que aplicações UIAccess para elevação, sem utilizar a área de trabalho protegida. Quando definida para **Não configurado** (predefinição), os pedidos de elevação utilizam um ambiente de trabalho seguro.
+- **Linha de comandos elevada para instalações de aplicações**: Quando definido como **ativado**, pacotes de instalação de aplicações não são detetados ou prompt de elevação. Quando definida para **Não configurado** (predefinição), é pedido um nome de utilizador e palavra-passe administrativos ao utilizador quando um pacote de instalação de aplicações exige privilégios elevados.
+- **Solicitação de elevação UIA sem ambiente de trabalho seguro**: **Ativar** para permitir que aplicações UIAccess para elevação, sem utilizar a área de trabalho protegida. Quando definida para **Não configurado** (predefinição), os pedidos de elevação utilizam um ambiente de trabalho seguro.
 
 #### <a name="admin-approval-mode-settings"></a>Definições do Modo de Aprovação de Administrador
 
 - **Aprovação de administrador para administrador incorporado de modo**: **Ativado** permite que a conta interna de administrador utilizar o modo de aprovação de administrador. Qualquer operação que necessite de elevação de privilégios pede ao utilizador para aprovar a operação. A opção **Não configurado** (predefinição) executa todas as aplicações com privilégios de administrador totais.
-- **Executar todos os administradores no modo de aprovação de administrador**: Defina como **bloco** desativar o modo de aprovação de administrador e todos os relacionados com as definições de política do UAC. A opção **Não configurado** (predefinição) ativa o Modo de Aprovação de Administrador.
+- **Executar todos os administradores no modo de aprovação de administrador**: Defina como **ativado** desativar o modo de aprovação de administrador e todos os relacionados com as definições de política do UAC. A opção **Não configurado** (predefinição) ativa o Modo de Aprovação de Administrador.
 
 ### <a name="microsoft-network-client"></a>Cliente de Rede da Microsoft
 
