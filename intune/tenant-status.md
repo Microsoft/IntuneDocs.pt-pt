@@ -7,19 +7,19 @@ author: brenduns
 ms.author: brenduns
 manager: dougeby
 ms.date: 02/23/2019
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 28a2ef36de4e664668875d2c9a099a573f5cfeba
-ms.sourcegitcommit: 68ff00ec0f848f9476740691ed1004144684317e
+ms.openlocfilehash: 04c57870f32d853b48be96a58afaa7b534250e0c
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56667357"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57228127"
 ---
 # <a name="intune-tenant-status-page"></a>Página de estado do inquilino do Intune
 A página de estado do inquilino é um hub centralizado, onde pode ver os detalhes atuais e importantes sobre o seu inquilino. Os detalhes incluem a disponibilidade de licença e uso, estado do conector e as comunicações importantes sobre o serviço Intune.  

@@ -7,7 +7,7 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 1/15/2019
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6b670b9b36ee2073fe765ab05fdbec59dfa6fa5e
-ms.sourcegitcommit: 67e4e66e8c05b36c0897fb2955ef68666d22b094
+ms.openlocfilehash: 5bdd85efb30b11c3eaf197739bb81d8461f4f91a
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56426948"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57232714"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-dedicated-devices"></a>Configurar a inscrição do Intune de dispositivos empresariais Android dedicado
 

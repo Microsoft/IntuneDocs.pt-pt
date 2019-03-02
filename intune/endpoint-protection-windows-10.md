@@ -6,7 +6,7 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 02/28/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 57360f2ffae038b57e2a8c57fc5eeba9a0fd5d2f
-ms.sourcegitcommit: c89e41e7bd546e4feceae26d82326230a16a713c
+ms.openlocfilehash: 2aad4684b1ae0db358a5e0a31a362d610bf109c1
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57017137"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57230878"
 ---
 # <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>Definições de 10 (e posteriores) do Windows para proteger os dispositivos com o Intune
 
@@ -290,6 +290,16 @@ Bloqueie o seguinte para impedir ameaças de e-mail:
 #### <a name="attack-surface-reduction-exceptions"></a>Exceções da Redução da Superfície de Ataque
 
 - **Regras da redução de superfície de ficheiros e pastas a excluir de ataque**: Importe/adicione uma lista de localizações a excluir das regras configuradas.
+
+> [!IMPORTANT]
+> Para permitir a instalação adequada e a execução de aplicações LOB do departamento de Win32, definições de antimalware devem excluir os seguintes diretórios sejam analisadas:<p>
+> **No X64 máquinas cliente**:<br>
+> *C:\Program ficheiros (x86) \Microsoft Intune gestão Extension\Content*<br>
+> *C:\windows\IMECache*
+>  
+> **Em X86 máquinas cliente**:<br>
+> *C:\Program Files\Microsoft Intune gestão Extension\Content*<br>
+> *C:\windows\IMECache*
 
 ### <a name="controlled-folder-access"></a>Acesso a pastas controladas
 

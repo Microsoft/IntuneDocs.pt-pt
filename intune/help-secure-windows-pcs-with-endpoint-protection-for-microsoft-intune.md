@@ -7,7 +7,7 @@ author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 01/01/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 60709651c0f7c53be52c5fc6a73d200aeac82a99
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 45db2e5b7e7d02a57bccadb762667390b5e1b06f
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55845412"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57237627"
 ---
 # <a name="help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune"></a>Ajude a proteger os PCs Windows com o Endpoint Protection para o Microsoft Intune
 
@@ -197,5 +197,5 @@ O Intune pode executar uma análise de software maligno completa ou rápida ao u
 ## <a name="need-more-help"></a>Precisa de mais ajuda?
 Para mais ajuda e suporte, consulte [Resolução de Problemas do Endpoint Protection no Microsoft Intune](troubleshoot-endpoint-protection-in-microsoft-intune.md).
 
-### <a name="see-also"></a>Consulte Também
+### <a name="see-also"></a>Veja Também
 [Políticas para proteger PCs Windows](policies-to-protect-windows-pcs-in-microsoft-intune.md)

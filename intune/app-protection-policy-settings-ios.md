@@ -7,7 +7,7 @@ author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 01/28/2019
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a0b0c2a588398e962da0aaab839343f20aadbbcb
-ms.sourcegitcommit: 8943848d47d5d5d6e44c74d414c34c5e3457862b
+ms.openlocfilehash: 2f03ef5755b2a1ea4d33e3c8f3607fb32e4b9fd9
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56655413"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57233343"
 ---
 #  <a name="ios-app-protection-policy-settings"></a>Definições de políticas de proteção de aplicações iOS
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]

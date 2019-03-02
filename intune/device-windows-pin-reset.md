@@ -6,7 +6,7 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 03/07/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1cb65fff3009b25575e7899a7b19b584d7c84e67
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: abcdf8f3f54f12ddd2cead7dd107306480c6b690
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55850935"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57233615"
 ---
 # <a name="reset-the-passcode-on-windows-devices-using-intune"></a>Repor o código de acesso nos dispositivos Windows com o Intune
 

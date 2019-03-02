@@ -7,7 +7,7 @@ author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 12/06/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 81208b3eea41b3558c87d8d1df10647fa9fe65ea
-ms.sourcegitcommit: 8943848d47d5d5d6e44c74d414c34c5e3457862b
+ms.openlocfilehash: 3c0a1c221cca3b1b69e71d13d57b218b63d6e566
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56655260"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57238545"
 ---
 # <a name="get-ready-to-configure-app-protection-policies-for-windows-10"></a>Preparar-se para configurar políticas de proteção de aplicações para o Windows 10 
 

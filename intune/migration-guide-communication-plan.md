@@ -7,7 +7,7 @@ author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 01/02/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d6c3190f0bac90ef87fcc411423611251c54338e
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: a55cce627e02730ab3f217381ab8d6f92ddc3bb1
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55842070"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57238145"
 ---
 # <a name="plan-communications"></a>Planear as comunicações
 
@@ -58,6 +58,8 @@ O Intune tem modelos adicionais que pode utilizar para promover a inscrição de
 -   O [modelo de inscrição de utilizadores finais do Intune para administradores de TI](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a) é um documento do Word personalizável que explica como inscrever dispositivos Android, iOS e Mac no Intune.
 
 -   Os [FastTrack for EMS how to guides & emails (guias de procedimentos e e-mails do FastTrack para EMS)](https://gallery.technet.microsoft.com/FastTrack-for-EMS-How-To-f170da4c) podem ser personalizados com o logótipo da sua empresa para promover a adoção do Intune e do EMS dentro da organização.
+
+-   Partilha a [URL de aplicação do Portal da empresa](http://go.microsoft.com/fwlink/?LinkID=396941) com os seus utilizadores de Android, iOS e Windows. Este URL redireciona para a aplicação Portal da empresa apropriada listagem em dispositivos Windows, iOS e Android.
 
 ## <a name="next-steps"></a>Passos Seguintes
 

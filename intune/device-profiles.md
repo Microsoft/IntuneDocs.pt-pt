@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/29/2019
+ms.date: 02/28/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,18 +16,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 016b59a915058c3f2d0647a72e3ead224a010500
-ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
+ms.openlocfilehash: 7f8f19b1672f8bbbc65db9604c113a3b69813cc4
+ms.sourcegitcommit: 7cfe23215eabf30cbaab733a403012a0ba05f599
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "56742454"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57211402"
 ---
-# <a name="apply-features-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Aplicar definições de funcionalidades nos seus dispositivos com perfis de dispositivos no Microsoft Intune
+# <a name="apply-features-and-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Aplicar definições e funcionalidades nos seus dispositivos com perfis de dispositivos no Microsoft Intune
+
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 O Microsoft Intune inclui definições e funcionalidades, pode ativar ou desativar em diferentes dispositivos na sua organização. Estas definições e funcionalidades são adicionadas para "perfis de configuração". Pode criar perfis para diferentes dispositivos, plataformas diferentes, incluindo iOS, Android e Windows e, em seguida, utilize o Intune para aplicar o perfil a dispositivos na sua organização.
 
-Alguns exemplos de perfil incluem:
+Como parte da sua solução de gestão (MDM) de dispositivos móveis, utilize estes perfis de configuração para concluir tarefas diferentes. Alguns exemplos de perfil incluem:
 
 - Em dispositivos Windows 10, utilize um modelo de perfil bloquear controles ActiveX no Internet Explorer.
 - Em dispositivos iOS e macOS, permitir aos utilizadores utilizar impressoras com o AirPrint na sua organização.
@@ -93,6 +95,32 @@ Este artigo apresenta os passos para criar um perfil e proporcione uma descriç�
 
 5. Quando terminar, selecione **OK** > **criar** para guardar as alterações.
 
+#### <a name="refresh-cycle-times"></a>Tempos de ciclos de atualização
+
+O Intune utiliza os ciclos de atualização seguinte para verificar a existência de atualizações para perfis de configuração:
+
+| Plataforma | Ciclo de atualização|
+| --- | --- |
+| iOS | A cada 6 horas |
+| macOS | A cada 6 horas |
+| Android | A cada 8 horas |
+| PCs com o Windows 10 inscritos como dispositivos | A cada 8 horas |
+| Windows Phone | A cada 8 horas |
+| Windows 8.1 | A cada 8 horas |
+
+Se o dispositivo inscrito recentemente, o check-in é executado com mais frequência:
+
+| Plataforma | Frequência |
+| --- | --- |
+| iOS | A cada 15 minutos durante 6 horas e, em seguida, a cada 6 horas |  
+| Mac OS X | A cada 15 minutos durante 6 horas e, em seguida, a cada 6 horas | 
+| Android | A cada 3 minutos durante 15 minutos, depois a cada 15 minutos durante 2 horas e, em seguida, a cada 8 horas | 
+| Windows Phone | A cada 5 minutos durante 15 minutos, depois a cada 15 minutos durante 2 horas e, em seguida, a cada 8 horas | 
+| Computadores com o Windows inscritos como dispositivos | A cada 3 minutos durante 30 minutos e, em seguida, a cada 8 horas | 
+
+Em qualquer altura, os utilizadores podem abrir a aplicação Portal da empresa e sincronizar o dispositivo para verificar imediatamente a existência de atualizações de perfil.
+
+### 
 Para saber mais sobre os tipos de perfil diferente, leia as secções seguintes neste artigo.
 
 ## <a name="administrative-templates-preview"></a>Modelos administrativos (pré-visualização)
@@ -255,7 +283,7 @@ Esta funcionalidade suporta:
 
 ## <a name="shared-multi-user-device"></a>Dispositivo multiutilizador partilhado
 
-[Windows 10](shared-user-device-settings-windows.md) e [Windows Holographic for Business](shared-user-device-settings-windows-holographic.md) inclui definições para gerir dispositivos com vários utilizadores, dispositivos partilhados também conhecido como ou PCs partilhados. Quando um utilizador inicia sessão no dispositivo, pode escolher se o utilizador pode alterar as opções de suspensão ou guardar ficheiros no dispositivo. Noutro exemplo, pode criar uma política que elimina Inativas credenciais de dispositivos HoloLens do Windows para economizar espaço.
+[Windows 10](shared-user-device-settings-windows.md) e [Windows Holographic for Business](shared-user-device-settings-windows-holographic.md) inclui definições para gerir dispositivos com vários utilizadores, dispositivos partilhados também conhecido como ou PCs partilhados. Quando um utilizador inicia sessão no dispositivo, pode escolher se o utilizador pode alterar as opções de suspensão ou guardar ficheiros no dispositivo. Noutro exemplo, pode criar um perfil que elimina Inativas credenciais de dispositivos HoloLens do Windows para economizar espaço.
 
 Estas definições de dispositivos de vários utilizadores partilhados permitem que um administrador controlar alguns dos recursos de dispositivo e gerir estes dispositivos partilhados, através do Intune.
 
@@ -280,5 +308,5 @@ Esta funcionalidade suporta:
 [Faça a gestão dos seus perfis](device-profile-monitor.md) para verificar o estado dos dispositivos e os perfis atribuídos. Ver as definições que causam um conflito e os perfis que contêm essas definições também poderá ajudá-lo a resolver conflitos. [Problemas comuns e resoluções](device-profile-troubleshoot.md) fornece uma perguntas e respostas para o ajudar a notificações de trabalho com perfis, incluindo o que acontece quando um perfil é eliminado, o que faz com que sejam enviados para os dispositivos e muito mais.
 
 ## <a name="next-steps"></a>Passos Seguintes
-Selecione a sua plataforma para começar:
 
+Escolha a sua plataforma e começar a utilizar.

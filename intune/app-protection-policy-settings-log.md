@@ -7,7 +7,7 @@ author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 11/20/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bd5c984e210b34a3c9cdfa2083a976ef304065ea
-ms.sourcegitcommit: a9bb967273e8df7e743c9826948582fda555c02d
+ms.openlocfilehash: fd2d67a2aaee165462287ebed31bc0edd054e956
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56795584"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57229042"
 ---
 # <a name="review-client-app-protection-logs"></a>Rever registos de proteção de aplicações cliente
 
@@ -38,7 +38,7 @@ A tabela seguinte lista o nome e uma explicação das definições registadas no
 
 ## <a name="app-protection-policy-settings"></a>Definições de políticas de proteção de aplicações
 
-| Nome                        | Valores possíveis                                                                                                                                                                                                                                                                                           | Definição no portal de Gestão de Aplicações Móveis do Azure Intune                                                                                                                            |
+| Name                        | Valores possíveis                                                                                                                                                                                                                                                                                           | Definição no portal de Gestão de Aplicações Móveis do Azure Intune                                                                                                                            |
 |-----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | AccessRecheckOfflineTimeout | x minutos                                                                                                                                                                                                                                                                                                   | [Acesso] Verificar novamente os requisitos de acesso – Período de Tolerância Offline<br>Nota: Este é o período de tempo antes dos requisitos de acesso da aplicação serem novamente verificados se o dispositivo estiver offline.             |
 | AccessRecheckOnlineTimeout  | _x_ minutos                                                                                                                                                                                                                                                                                                   | [Acesso] Verificar novamente os requisitos de acesso – Tempo Limite.<br>Nota: Este é o período de tempo antes dos requisitos de acesso da aplicação serem novamente verificados após a aplicação é iniciada, se o dispositivo estiver online. |

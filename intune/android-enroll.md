@@ -7,7 +7,7 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 12/31/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 89825bd77beba9b8653646e9ec7381e9dfd2d6de
-ms.sourcegitcommit: ad213c5be1e1ad2b768661a467878056e6090999
+ms.openlocfilehash: 2a9fcb83855e4075ea76cfdb8ed594d5b2c2af94
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56444162"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57229705"
 ---
 # <a name="enroll-android-devices"></a>Inscrever dispositivos Android
 

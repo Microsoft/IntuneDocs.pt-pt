@@ -6,7 +6,7 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 10/01/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f42ebd42a6bf12fda5fbfb13198302b0943b7960
-ms.sourcegitcommit: 0f4247914f55349f618f6176a4cdca08503215f5
+ms.openlocfilehash: 67d34d3c5ee6f964caeecf9e657563c421054971
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56955549"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57231099"
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices-in-intune"></a>Automatizar o e-mail e adicionar ações para dispositivos não conformes no Intune
 

@@ -7,7 +7,7 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/04/2019
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b1ff65e1b48815cd5964aa7498fa6ba54df50e09
-ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
+ms.openlocfilehash: bfde7aa8729d16a65a358e52afb1f33a6fd3fd63
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "56742300"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57232000"
 ---
 # <a name="the-early-edition-for-microsoft-intune---february-2019"></a>A edição antecipada do Microsoft Intune – Fevereiro de 2019
 

@@ -7,7 +7,7 @@ author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 02/24/2019
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 732e8a421d3741a5abc8b9c9318b952feff70411
-ms.sourcegitcommit: a9bb967273e8df7e743c9826948582fda555c02d
+ms.openlocfilehash: 3cd051ad5b7727788cd316041c081c5e6d1e2afd
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56795601"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57230810"
 ---
 # <a name="microsoft-intune-protected-apps"></a>Aplicações protegidas do Microsoft Intune  
 

@@ -7,7 +7,7 @@ author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 02/27/2017
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7f54ba000fc8796ee2d661d114ef0cf2ad1ba910
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: a26036b1d9019205c644e12329ec89d9fc883385
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55845725"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57234764"
 ---
 # <a name="contact-assisted-phone-support-for-microsoft-intune"></a>Contactar o suporte assistido por telefone do Microsoft Intune
 

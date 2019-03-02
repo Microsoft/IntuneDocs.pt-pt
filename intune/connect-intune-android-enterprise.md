@@ -7,7 +7,7 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 6/21/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0a886359c9a7d789b06851cde7a5c1857b6fd282
-ms.sourcegitcommit: 67e4e66e8c05b36c0897fb2955ef68666d22b094
+ms.openlocfilehash: f866e23eb0aa1c9bc6ec1b741e288d313691b999
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56427016"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57233811"
 ---
 # <a name="connect-your-intune-account-to-your-managed-google-play-account"></a>Ligue a sua conta do Intune à sua conta do Google Play gerido
 

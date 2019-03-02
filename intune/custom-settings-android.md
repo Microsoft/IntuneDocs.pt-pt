@@ -6,7 +6,7 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 10/24/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: afce6f5ebe15d79de462f8168a3028be823430fa
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 20572d57fc1ef2482d0ff2c81b07b6fbcdd840bc
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55834300"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57230300"
 ---
 # <a name="use-custom-settings-for-android-devices-in-microsoft-intune"></a>Utilizar definições personalizadas para dispositivos Android no Microsoft Intune
 

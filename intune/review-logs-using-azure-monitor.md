@@ -6,7 +6,7 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 01/28/2019
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -15,16 +15,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f4f93ab1cd2c662cb97dafd19684b353268087f6
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: a8b72c4adcba44c1292fc77646c5c1c159d8812e
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55842580"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57236165"
 ---
 # <a name="send-log-data-to-storage-event-hubs-or-log-analytics-in-intune-preview"></a>Enviar dados de registo para o armazenamento, os hubs de eventos ou do log analytics no Intune (pré-visualização)
 
-O Microsoft Intune inclui os registos incorporados que fornecem informações sobre o seu ambiente. **Registos de auditoria** Mostrar detalhes sobre os diferentes eventos ou tarefas que ocorrem no Intune. **Registos operacionais (pré-visualização)** Mostrar detalhes em utilizadores e dispositivos ou com êxito (ou falha) para se inscrever.
+O Microsoft Intune inclui os registos incorporados que fornecem informações sobre o seu ambiente. **Registos de auditoria** Mostrar detalhes sobre os diferentes eventos ou tarefas que ocorrem no Intune. **Registos operacionais (pré-visualização)** Mostrar detalhes em utilizadores e dispositivos ou com êxito (ou falha) para se inscrever, bem como obter detalhes sobre os dispositivos não conformes.
 
 Estes registos também podem ser enviados aos serviços do Azure Monitor, incluindo contas de armazenamento, os hubs de eventos e do log analytics. Especificamente, pode:
 
@@ -82,7 +82,7 @@ Dependendo de onde pretende encaminhar os dados de registo de auditoria, precisa
 
       Se optar por utilizar uma conta de armazenamento, em seguida, também de introduzir o número de dias que pretende manter os dados (retenção). Para manter os dados para sempre, defina **retenção (dias)** para `0` (zero).
 
-    - **LOG** > **OperationalLogs**: Registos operacionais (pré-visualização) mostram o sucesso ou fracasso de utilizadores e dispositivos que inscrever no Intune. Escolha esta opção para enviar os registos de inscrição para a sua conta de armazenamento, hub de eventos, ou do log analytics.
+    - **LOG** > **OperationalLogs**: Registos operacionais (pré-visualização) mostram o sucesso ou fracasso de utilizadores e dispositivos que inscrever no Intune, bem como obter detalhes sobre os dispositivos não conformes. Escolha esta opção para enviar os registos de inscrição para a sua conta de armazenamento, hub de eventos, ou do log analytics.
 
       Se optar por utilizar uma conta de armazenamento, em seguida, também de introduzir o número de dias que pretende manter os dados (retenção). Para manter os dados para sempre, defina **retenção (dias)** para `0` (zero).
 

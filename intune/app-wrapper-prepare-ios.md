@@ -6,7 +6,7 @@ author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 12/14/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a44b5b911d89a2e31f2a718aaa76702847ffb3d8
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 1e9aa6784b55c922ba6233f319cf648af4c491df
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55849208"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57237168"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparar as aplicações iOS para as políticas de proteção de aplicações com a Ferramenta de Encapsulamento de Aplicações do Intune
 
@@ -438,7 +438,8 @@ Utilize os seguintes passos para obter registos para as aplicações encapsulada
 > [!NOTE]
 > A funcionalidade de registo está ativada nas aplicações que tenham sido encapsuladas com a Ferramenta de Encapsulamento de Aplicações do Intune versão 7.1.13 ou superior.
 
-### <a name="see-also"></a>Consulte também
-- [Decidir como preparar as aplicações para a gestão de aplicações móveis com o Microsoft Intune](apps-prepare-mobile-application-management.md)</br>
-- [Gerir definições e funcionalidades nos seus dispositivos com as políticas do Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)</br>
+## <a name="see-also"></a>Consulte também
+
+- [Decidir como preparar as aplicações para a gestão de aplicações móveis com o Microsoft Intune](apps-prepare-mobile-application-management.md)
+- [Perguntas comuns, problemas e resoluções com as políticas de dispositivos e perfis](device-profile-troubleshoot.md)
 - [Utilizar o SDK para ativar aplicações para gestão de aplicações móveis](app-sdk.md)

@@ -6,7 +6,7 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 02/28/2019
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 99e44190f2e87d1b859450bc96bf52e1cd1430f1
-ms.sourcegitcommit: c89e41e7bd546e4feceae26d82326230a16a713c
+ms.openlocfilehash: 99e7daa112616da39ab3f45207df4fbcfbd74abe
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57017035"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57230470"
 ---
 # <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>Utilizar scripts do PowerShell em dispositivos Windows 10 no Intune
 

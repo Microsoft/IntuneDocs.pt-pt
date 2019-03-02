@@ -7,7 +7,7 @@ author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 10/23/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.reviewer: sumitp
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 874d191d79c22dd7b044df2e5a8e813324e35e11
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: ba74c93e2ef7dc469ebd7f5086659181b72a0981
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55844178"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57230028"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>Utilizar o portal de resolução de problemas para ajudar os utilizadores na sua empresa
 
@@ -61,7 +61,7 @@ Pode utilizar o painel **Resolução de problemas** para analisar as informaçõ
 
 ![](/intune/media/troubleshooting-dash.png)
 
-| Área | Nome | Descrição |
+| Área | Name | Descrição |
 | ---  | ---  | ---         |
 | 1.   | Estado da conta  | Mostra o estado do inquilino do Intune atual como **Ativo** ou **Inativo**.       |
 | 2.   | Seleção do utilizador  | O nome do utilizador atualmente selecionado. Clique em **Alterar utilizador** para selecionar um novo utilizador.       |
@@ -160,7 +160,7 @@ As propriedades das políticas de conformidade.
 | Propriedade      | Descrição                                                                                                                         |
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | Atribuição    | O estado de cada uma das aplicações de proteção dos utilizadores. Os estados possíveis para as aplicações são **Verificado** e **Não verificado**. |
-| Nome          | O nome da aplicação.                                                                                                        |
+| Name          | O nome da aplicação.                                                                                                        |
 | SO            | O sistema operativo instalado no dispositivo.                                                                                       |
 | Tipo de Política   | O tipo de propriedade do dispositivo (**Empresa**, **Pessoal** e **Desconhecido**).                                               |
 | Última modificação | O nome do tipo de dispositivo.                                                                                                     |
@@ -205,7 +205,7 @@ As propriedades das políticas de configuração.
 | Propriedade      | Descrição                                                                                                                         |
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | Atribuição    | O estado de cada uma das aplicações de proteção dos utilizadores. Os estados possíveis para as aplicações são **Verificado** e **Não verificado**. |
-| Nome          | O nome da aplicação.                                                                                                        |
+| Name          | O nome da aplicação.                                                                                                        |
 | SO            | O sistema operativo instalado no dispositivo.                                                                                       |
 | Tipo de Política   | O tipo de propriedade do dispositivo (**Empresa**, **Pessoal** ou **Desconhecido**).                                               |
 | Última modificação | O nome do tipo de dispositivo.                                                                                                     |

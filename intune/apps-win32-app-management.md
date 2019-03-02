@@ -6,8 +6,8 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/20/2019
-ms.topic: article
+ms.date: 02/28/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c586f7f4d72db5d193f02dca06aa868c73cbb09e
-ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
+ms.openlocfilehash: 6130e6fde9f6ddb8515914da049b5c7512c401a7
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "56742504"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57232816"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune autónomo - gestão de aplicações do Win32
 
@@ -255,6 +255,16 @@ Se for necessário, é possível suprimir notificações de alerta do utilizador
 Os registos de agente no computador cliente encontram-se normalmente em `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs`. Pode tirar partido de `CMTrace.exe` para ver estes ficheiros de registo. O *CMTrace.exe* pode ser transferido a partir das [Ferramentas de Cliente SCCM](https://docs.microsoft.com/sccm/core/support/tools). 
 
 ![Registos de captura de ecrã do agente no computador cliente](./media/apps-win32-app-10.png)    
+
+> [!IMPORTANT]
+> Para permitir a instalação adequada e a execução de aplicações LOB do departamento de Win32, definições de antimalware devem excluir os seguintes diretórios sejam analisadas:<p>
+> **No X64 máquinas cliente**:<br>
+> *C:\Program ficheiros (x86) \Microsoft Intune gestão Extension\Content*<br>
+> *C:\windows\IMECache*
+>  
+> **Em X86 máquinas cliente**:<br>
+> *C:\Program Files\Microsoft Intune gestão Extension\Content*<br>
+> *C:\windows\IMECache*
 
 Para obter mais informações sobre as aplicações Win32 de resolução de problemas, consulte [resolução da instalação de aplicações de Win32](troubleshoot-app-install.md#win32-app-installation-troubleshooting).
 

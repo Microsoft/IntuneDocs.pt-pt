@@ -1,12 +1,12 @@
 ---
 title: Políticas de conformidade de dispositivos no Microsoft Intune – Azure | Microsoft Docs
-description: Requisitos para utilizar políticas de conformidade de dispositivos, descrição geral de estados e níveis de gravidade, utilização do estado InGracePeriod, trabalhar com acesso condicional, processamento de dispositivos sem uma política atribuída e as diferenças de conformidade no portal do Azure e no portal clássico no Microsoft Intune
+description: Começar a utilizar com políticas de conformidade de dispositivo de utilização, visão geral do Estado e níveis de gravidade, utilizar o estado InGracePeriod, trabalhar com acesso condicional, processamento de dispositivos sem uma política atribuída e as diferenças de conformidade no portal do Azure e portal clássico no Microsoft Intune
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/28/2019
-ms.topic: article
+ms.date: 02/28/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -15,28 +15,27 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a2a3a9838043d4e9b69c6369da87a6f54087f76c
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: c3db2b41b8203b74c0892793a4631dbae691a454
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55850007"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57234227"
 ---
-# <a name="get-started-with-device-compliance-policies-in-intune"></a>Introdução às políticas de conformidade de dispositivos no Intune
+# <a name="set-rules-on-devices-to-allow-access-to-resources-in-your-organization-using-intune"></a>Definir regras em dispositivos para permitir o acesso a recursos na sua organização utilizar o Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Muitas soluções de gestão (MDM) de dispositivos móveis ajudar a proteger dados organizacionais ao exigir que os utilizadores e dispositivos para cumprir alguns requisitos. No Intune, esse recurso é chamado de "políticas de conformidade". Políticas de conformidade definem as regras e definições que os utilizadores e dispositivos têm de cumprir para estar em conformidade. Quando combinado com acesso condicional, os administradores podem bloquear os utilizadores e dispositivos que não cumprem as regras. Por exemplo, pode exigir um administrador do Intune:
+Muitas soluções de gestão (MDM) de dispositivos móveis ajudar a proteger dados organizacionais ao exigir que os utilizadores e dispositivos para cumprir alguns requisitos. No Intune, esse recurso é chamado de "políticas de conformidade". Políticas de conformidade definem as regras e definições que os utilizadores e dispositivos têm de cumprir para estar em conformidade. Quando combinado com acesso condicional, os administradores podem bloquear os utilizadores e dispositivos que não cumprem as regras. 
+
+Por exemplo, pode exigir um administrador do Intune:
 
 - Os utilizadores finais utilizam uma palavra-passe para aceder aos dados organizacionais em dispositivos móveis
-
 - O dispositivo não estiver desbloqueado por jailbreak ou rooting
-
 - Uma versão de sistema operativo mínimo ou máximo no dispositivo
-
 - O dispositivo esteja ao ou num nível de ameaça
 
-Também pode utilizar políticas de conformidade para monitorizar o estado de conformidade nos seus dispositivos.
+Também pode utilizar esta funcionalidade para monitorizar o estado de conformidade nos dispositivos na sua organização.
 
 > [!IMPORTANT]
 > Intune segue o agendamento de entrada do dispositivo para todas as avaliações de conformidade no dispositivo. [Saiba mais sobre o agendamento da entrada dispositivo](https://docs.microsoft.com/intune/device-profile-troubleshoot#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned).
@@ -96,14 +95,26 @@ O [processo de registo do Azure AD](https://docs.microsoft.com/azure/active-dire
 
 Quando a verificação de compatibilidade, o Intune utiliza o mesmo ciclo de atualização como perfis de configuração. Em geral, os tempos são:
 
-- iOS. Cada seis horas
-- macOS: Cada seis horas
-- Android: Cada oito horas
-- PCs com Windows 10 inscritos como dispositivos: Cada oito horas
-- Windows Phone: Cada oito horas
-- Windows 8.1: Cada oito horas
+| Plataforma | Ciclo de atualização|
+| --- | --- |
+| iOS | A cada 6 horas |
+| macOS | A cada 6 horas |
+| Android | A cada 8 horas |
+| PCs com o Windows 10 inscritos como dispositivos | A cada 8 horas |
+| Windows Phone | A cada 8 horas |
+| Windows 8.1 | A cada 8 horas |
 
-Uma verificação da conformidade com mais frequência ocorre imediatamente depois de um dispositivo é inscrito.
+Se o dispositivo inscrito recentemente, o check-in de conformidade é executado com mais frequência:
+
+| Plataforma | Frequência |
+| --- | --- |
+| iOS | A cada 15 minutos durante 6 horas e, em seguida, a cada 6 horas |  
+| Mac OS X | A cada 15 minutos durante 6 horas e, em seguida, a cada 6 horas | 
+| Android | A cada 3 minutos durante 15 minutos, depois a cada 15 minutos durante 2 horas e, em seguida, a cada 8 horas | 
+| Windows Phone | A cada 5 minutos durante 15 minutos, depois a cada 15 minutos durante 2 horas e, em seguida, a cada 8 horas | 
+| Computadores com o Windows inscritos como dispositivos | A cada 3 minutos durante 30 minutos e, em seguida, a cada 8 horas | 
+
+Em qualquer altura, os utilizadores podem abrir a aplicação Portal da empresa e sincronizar o dispositivo para verificar imediatamente uma política.
 
 ### <a name="assign-an-ingraceperiod-status"></a>Atribuir um estado InGracePeriod
 

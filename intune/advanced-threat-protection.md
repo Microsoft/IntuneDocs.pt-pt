@@ -6,7 +6,7 @@ author: brenduns
 ms.author: brenduns
 manager: dougeby
 ms.date: 02/22/2019
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4ff07dfa48ab213bc65afc58708f490a80fb5ba8
-ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
+ms.openlocfilehash: 24286ab4d491bc3c5e6ecc90e881e95c1af2d2fd
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "56742521"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57233938"
 ---
 # <a name="enforce-compliance-for-windows-defender-atp-with-conditional-access-in-intune"></a>Impor a conformidade para Windows Defender ATP com acesso condicional no Intune
 
@@ -130,7 +130,7 @@ A política de conformidade determina um nível de risco aceitável num disposit
 A política de acesso condicional bloqueará o acesso a recursos *se* o dispositivo não estiver conforme. Por isso, se um dispositivo exceder o nível de ameaça, poderá bloquear o acesso aos recursos empresariais, tais como o SharePoint ou o Exchange Online.  
 
 > [!TIP]  
-> Acesso condicional é uma tecnologia do Azure Active Directory (Azure AD). O nó de acesso condicional acedido a partir *Intune* é o mesmo nó como acedidos a partir de *do Azure AD*.  
+> O Acesso Condicional é uma tecnologia do Azure Active Directory (Azure AD). O nó de Acesso Condicional acedido a partir do *Intune* é o mesmo nó acedido a partir do *Azure AD*.  
 
 1. Na [portal do Azure](https://portal.azure.com), abra **Intune** > **acesso condicional** > **nova política**.
 2. Introduza um **Nome** para a política e selecione **Utilizadores e grupos**. Utilize as opções Incluir ou Excluir para adicionar os grupos à política e selecione **Concluído**.

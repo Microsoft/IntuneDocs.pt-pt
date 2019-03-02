@@ -6,7 +6,7 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 02/27/2019
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f7b78cdc329e3d6f61dea49ddb28429c2f12d0d6
-ms.sourcegitcommit: 95cc5f1e5e955acdff642191c174249465cc98bf
+ms.openlocfilehash: 3385d28ea4e97533784340c5d3240fb60f57fd47
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "56982237"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57231397"
 ---
 # <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Utilizar modelos do Windows 10 para configurar as definições de política de grupo no Microsoft Intune
 
