@@ -7,7 +7,7 @@ author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 02/22/2019
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 52baa8f92401266dbf3043a334eccbc6ddffc873
-ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
-ms.translationtype: HT
+ms.openlocfilehash: e36105f89221ee5e33a1a6d8afe26b09a08b76b7
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "56742640"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57238953"
 ---
 # <a name="manage-internet-access-using-a-microsoft-intune-policy-protected-browser"></a>Gerir o acesso à Internet através de um browser protegido por políticas do Microsoft Intune
 
@@ -121,7 +121,7 @@ O SSO exige que o seu dispositivo seja registado pela aplicação Microsoft Auth
 >[!IMPORTANT]
 >Para aplicar as configurações de aplicações, o browser protegido do utilizador ou outra aplicação no dispositivo já tem de ser gerido pela [política de proteção de aplicações do Intune]( app-protection-policy.md).
 
-1. Inicie sessão no [portal do Azure](https://portal.azure.com).
+1. Inicie sessão no [Portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
 3.  No painel **Aplicações do cliente** da lista Gestão, selecione **Políticas de configuração de aplicações**.
 4.  No painel **Políticas de configuração de aplicações**, escolha **Adicionar**.
@@ -271,9 +271,9 @@ Utilize as informações seguinte para saber mais sobre os formatos permitidos e
 O Intune Managed Browser e o Microsoft Edge são agora considerados browsers protegidos/browsers geridos por políticas. Hoje em dia, as políticas de proteção de aplicações existentes fazem com que as ligações Web de aplicações geridas pelo Intune sejam abertas num browser específico, consoante o seu cenário e a plataforma. 
 
 No Android: 
-* Managed Browser se o MB e o Edge estiverem no dispositivo, a menos que a definição de configuração da aplicação "com.microsoft.intune.useEdge" esteja definida como "verdadeira" para todas as aplicações geridas pelo Intune com uma política de browsers geridos necessária.  
-* Microsoft Edge se só este estiver no dispositivo e for visado pela política.
-* Managed Browser se apenas este estiver no dispositivo e for visado pela política. 
+* Managed Browser será aberto se um utilizador tem ambos os Managed Browser e transferido do Microsoft Edge no dispositivo. Para garantir que o Microsoft Edge está a ser aberto em vez do Managed Browser, defina a definição de configuração de aplicação "com.microsoft.intune.useEdge" como "verdadeiro" para todas as aplicações geridas pelo Intune com um navegador de geridas por políticas necessárias.  
+* Microsoft Edge irá abrir se apenas o Microsoft Edge está no dispositivo e destina-se com a política.
+* Managed Browser será aberto se apenas o Managed Browser está no dispositivo e destina-se com a política. 
 
 No iOS, para aplicações que integraram o SDK do Intune para iOS v. 9.0.9+: 
 * Managed Browser se o MB e o Edge estiverem no dispositivo, a menos que a definição de configuração da aplicação "com.microsoft.intune.useEdge" esteja definida como "verdadeira" para todas as aplicações geridas pelo Intune com uma política de browsers geridos necessária **ou** Microsoft Edge se este estiver instalado e tiver recebido a política. 
@@ -313,6 +313,6 @@ A Microsoft recolhe automaticamente dados anónimos sobre o desempenho e a utili
 
 -   Em dispositivos iOS, os sites que os utilizadores visitam que têm um certificado expirado ou não fidedigno não podem ser abertos.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 - [O que são as políticas de proteção de aplicações?](app-protection-policy.md) 
