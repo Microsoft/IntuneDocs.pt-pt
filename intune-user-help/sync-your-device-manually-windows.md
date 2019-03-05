@@ -18,21 +18,18 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4666779620aa0404c12107a374280c403d66bec3
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 30135c69b95ba9731682af52ad0da3bb9df193e9
+ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55840217"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57335076"
 ---
 # <a name="sync-your-windows-device-manually"></a>Sincronizar o seu dispositivo Windows manualmente
 
 Quando a velocidade de instalação da aplicação estiver abaixo do ideal, inicie a sincronização manual do dispositivo. A sincronização manual força o seu dispositivo a ligar-se ao Intune para obter as comunicações e atualizações mais recentes. A velocidade de instalação pode aumentar após a sincronização do dispositivo estar concluída.
 
-O Intune suporta a sincronização manual a partir da aplicação Portal da Empresa, da barra de tarefas do ambiente de trabalho ou do Menu Iniciar e da aplicação Definições do dispositivo. 
-
-A funcionalidade da aplicação Portal da Empresa é suportada em dispositivos com o Windows 10 a executar a Atualização para Criativos (1703) ou superior. 
-* [Sincronizar a partir da aplicação Portal da Empresa](#Sync-from-Company-Portal-app-for-Windows)  
+O Intune suporta a sincronização manual a partir da aplicação Portal da Empresa, da barra de tarefas do ambiente de trabalho ou do Menu Iniciar e da aplicação Definições do dispositivo. A funcionalidade da aplicação Portal da Empresa é suportada em dispositivos com o Windows 10 a executar a Atualização para Criativos (1703) ou superior. 
 
 Todos os dispositivos Windows podem ser sincronizados a partir da aplicação Definições do dispositivo, incluindo:
 
@@ -75,11 +72,11 @@ Conclua estes passos para sincronizar manualmente os seus dispositivos Microsoft
 
 3. Existem múltiplas versões do Windows 10 para computador. Compare o seu ecrã com as capturas de ecrã abaixo para determinar que passos deve seguir. 
 
-    * Se o seu ecrã disser **Aceder a profiss./ escolar**, avance para os passos em [Acesso profissional ou escolar](#access-work-or-school).
+    * Se o seu ecrã disser **Aceder a profiss./ escolar**, avance para os passos em [Acesso profissional ou escolar](#access-work-or-school-steps).
 
     ![A opção Aceder a profiss./ escolar na aplicação Definições](./media/w10-enroll-rs1-connect-to-work-or-school.png)  
 
-    * Se o seu ecrã disser **Acesso a trabalho**, avance para os passos em [Acesso a trabalho](#work-access).  
+    * Se o seu ecrã disser **Acesso a trabalho**, avance para os passos em [Acesso a trabalho](#work-access-steps).  
 
     ![Selecionar o acesso de trabalho como tipo de conta](./media/win10pc-sync-3-work-access.png)
 

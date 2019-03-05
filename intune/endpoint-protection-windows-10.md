@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/28/2018
+ms.date: 03/04/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2aad4684b1ae0db358a5e0a31a362d610bf109c1
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 4794adda447754b5dc72ff1b320ec69553a8b55a
+ms.sourcegitcommit: e8c32bd6db2560570d1e1733f999ae3b2c026908
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57230878"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57305515"
 ---
 # <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>Definições de 10 (e posteriores) do Windows para proteger os dispositivos com o Intune
 
@@ -46,7 +46,7 @@ Ao utilizar o Microsoft Edge, o Windows Defender Application Guard protege o seu
 
 O Application Guard só está disponível para dispositivos com o Windows 10 (64 bits). Se utilizar este perfil, instalará um componente do Win32 para ativar o Application Guard.
 
-- **Application Guard**: **Ativar** para ativar esta funcionalidade, o que abre sites não aprovados num contentor de navegação virtualizado Hyper-V. A opção **Não configurado** (predefinição) significa que qualquer site (aprovado e não aprovado) é aberto no dispositivo.
+- **Application Guard**: **Ativado para o Edge** para ativar esta funcionalidade, o que abre sites não fidedignos num contentor de navegação virtualizado Hyper-V. **Não configurado** (predefinição), significa que qualquer site (fidedignos e não fidedignas) abre-se no dispositivo.
 - **Comportamento de área de transferência**: Escolha que ações de copiar/colar são permitidas entre o PC local e o browser virtual do Application Guard.
 - **Conteúdo externo em sites de empresa**: **Bloco** conteúdo de sites não aprovados sejam carregados. A opção **Não configurado** (predefinição) significa que podem ser abertos sites não empresariais no dispositivo.
 - **Imprimir a partir do virtual browser**: Escolher **permitir** local PDF, XPS, assim, e impressoras de rede podem imprimir conteúdo a partir do virtual browser. A opção **Não configurado** (predefinição) desativa todas as funcionalidades de impressão.
@@ -309,7 +309,15 @@ Ajude a proteger dados valiosos de ameaças e aplicações malignas, tal como ra
 
 ### <a name="network-filtering"></a>Filtragem de rede
 
-Bloqueie ligações de saída de qualquer aplicação para endereços IP/domínios com baixa reputação.
+- **Proteção de rede**: Protege ligações de saída de qualquer aplicação para endereços IP com baixa reputação ou domínios. A intenção é proteger os utilizadores finais das aplicações com acesso atos fraudulentos de phishing, sites que hospedam a exploração e conteúdo malicioso na Internet. Também evita que os browsers de terceiros de se ligar a sites perigosos.
+
+  As opções são:
+
+  - A opção **Não configurado** (predefinição) desativa esta funcionalidade. Utilizadores e aplicações não são impedidas de se ligar a domínios perigosos. Os administradores não é possível ver essa atividade no Centro de segurança do Windows Defender.
+  - **Ativar** ativa a proteção de rede e os utilizadores de blocos e aplicações de se ligar a domínios perigosos. Os administradores podem ver esta atividade no Centro de segurança do Windows Defender.
+  - **Apenas auditoria**: Utilizadores e aplicações não são impedidas de se ligar a domínios perigosos. Os administradores podem ver esta atividade no Centro de segurança do Windows Defender.
+
+  [Defender/EnableNetworkProtection CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)
 
 ### <a name="exploit-protection"></a>Exploit Protection
 

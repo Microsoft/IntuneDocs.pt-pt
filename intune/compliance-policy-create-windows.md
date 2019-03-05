@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/22/2019
+ms.date: 03/04/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f965ff2287cd3e6fcf3e3f3ae1b577fb33081716
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: d27b4389318a8b4caeb86dec9c2c79efa0ac89f1
+ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57230113"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57335042"
 ---
 # <a name="add-a-device-compliance-policy-for-windows-devices-in-intune"></a>Adicionar uma política de conformidade para dispositivos Windows no Intune
 
@@ -120,7 +120,7 @@ Os PCs Windows 8.1 devolvem a versão **3**. Se a regra de versão de SO estive
 - **Exigir que o arranque seguro seja ativado no dispositivo**: Se o Arranque Seguro estiver ativado, o sistema é forçado a fazer o arranque para um estado de fábrica fidedigno. Além disso, com o Arranque Seguro ativado, os componentes do núcleo utilizados para arrancar o computador têm de ter assinaturas criptográficas corretas e que sejam consideradas fidedignas pela organização que fabricou o dispositivo. O firmware UEFI verifica a assinatura antes de permitir que o computador seja iniciado. Se todos os ficheiros são adulterados, que quebra a respetiva assinatura, o sistema não arranque.
 
   > [!NOTE]
-  > A definição **Exigir que o Arranque Seguro seja ativado no dispositivo** é suportada em dispositivos TPM 1.2 e 2.0. Para os dispositivos que não suportam o TPM 2.0 ou posterior, o estado da política no Intune é mostrado como **Não Conforme**. Trata-se de uma limitação do serviço [Atestado de Estado de Funcionamento do Dispositivo](https://docs.microsoft.com/windows/security/information-protection/tpm/trusted-platform-module-overview#device-health-attestation) no Windows 10.
+  > O **necessitam de arranque seguro seja ativado no dispositivo** definição é suportada em alguns TPM 1.2 e 2.0 dispositivos. Para os dispositivos que não suportam o TPM 2.0 ou posterior, o estado da política no Intune é mostrado como **Não Conforme**. Para obter mais informações sobre as versões suportadas, consulte [atestado de estado de funcionamento do dispositivo](https://docs.microsoft.com/windows/security/information-protection/tpm/trusted-platform-module-overview#device-health-attestation).
 
 - **Exigir integridade de código**: Integridade do código é uma funcionalidade que valida a integridade de um ficheiro de controlador ou de sistema sempre que é carregado na memória. Integridade do código Deteta se um ficheiro de controlador ou de sistema não assinado está a ser carregado para o kernel. Também Deteta se um ficheiro de sistema é modificado por software malicioso executado por uma conta de utilizador com privilégios de administrador.
 

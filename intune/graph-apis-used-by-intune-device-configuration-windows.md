@@ -1,12 +1,12 @@
 ---
-title: Graph APIs utilizadas durante a configuração de dispositivos no Microsoft Intune – Azure | Documentos da Microsoft
+title: Criar um gráfico de APIs para configurar os dispositivos no Microsoft Intune – Azure | Documentos da Microsoft
 titleSuffix: ''
-description: Ver uma lista de todas as APIs de gráfico com o CSP correspondente do Windows e deslocamento URI em dispositivos Windows 10 e versões mais recentes utilizada quando a configuração de dispositivos no Microsoft Intune. Ver a API correspondente e o CSP para PCs partilhados, endpoint protection, proteção de ameaças avançada do Windows Defender, proteção de identidade, as Equipes do Windows 10, quiosque e Windows Update para empresas.
+description: Ver uma lista de todas as entidades de Graph API com o CSP correspondente do Windows e deslocamento URI em dispositivos Windows 10 e versões mais recentes utilizada quando a configuração de dispositivos no Microsoft Intune. Ver a API correspondente e o CSP para PCs partilhados, endpoint protection, proteção de ameaças avançada do Windows Defender, proteção de identidade, as Equipes do Windows 10, quiosque e Windows Update para empresas.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/01/2019
+ms.date: 03/04/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,30 +15,34 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6ccc46914e53e72d941cc726b6a32fa421e23ca4
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: b2bed795125043eac07fce41a0f101a9b029bd06
+ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57232136"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57335314"
 ---
 # <a name="graph-apis-and-matching-windows-10-csps-used-in-intune"></a>APIs de gráfico e a correspondência de CSPs do Windows 10 utilizada no Intune
 
-O Microsoft Intune utiliza o [Graph API](https://docs.microsoft.com/graph/api/resources/intune-graph-overview) para configurar os dispositivos (**Intune** > **configuração do dispositivo**) com o Windows 10 e posterior. A Graph API utiliza fornecedores de serviços de configuração (CSPs) para ler, definir, alterar, e/ou eliminar as definições de configuração nos dispositivos.
+O Microsoft Intune utiliza o [entidades de API do Graph](https://docs.microsoft.com/graph/api/resources/intune-graph-overview) (abre o outro site do Docs) para configurar os dispositivos (**Intune** > **configuração do dispositivo**) com o Windows 10 ou posterior. A Graph API utiliza fornecedores de serviços de configuração (CSPs) para ler, definir, alterar, e/ou eliminar as definições de configuração nos dispositivos.
 
 Esta lista aplica-se a:
 
 - Windows 10 e posterior
 
-Este artigo apresenta uma lista de propriedades do gráfico e seus correspondentes CSPs do Windows 10 e deslocamento URIs.
+Este artigo lista as entidades de gráfico e seus 10 CSPs correspondente do Windows e URIs de deslocamento.
+
+Estas informações são úteis para uma variedade de cenários. Por exemplo, o que é utilizado pelo Intune, consulte as definições para incluir configurações personalizadas de OMA-URI e assim por diante. 
 
 ## <a name="windows-10-csps"></a>Windows 10 CSPs
 
-Para obter mais informações sobre fornecedores de serviços de configuração do Windows 10, consulte a [referência de fornecedor de serviço de configuração](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference).
+Para obter mais informações sobre fornecedores de serviços de configuração do Windows 10, consulte a [referência de fornecedor de serviço de configuração](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference) (abre o outro site do Docs).
 
 ## <a name="graph-api-properties-to-csp-mapping"></a>Propriedades da Graph API para o mapeamento de CSP
 
-A lista seguinte mostra as propriedades de Graph API utilizadas pelo Microsoft Intune para a configuração do dispositivo Windows 10. Ela também mostra as 10 CSP correspondente do Windows e o URI de deslocamento.
+A lista seguinte mostra a maioria das entidades de Graph API utilizadas pelo Microsoft Intune para a configuração do dispositivo Windows 10. Ela também mostra as 10 CSP correspondente do Windows e o URI de deslocamento.
+
+Para ver as versões do Windows 10 aplicam as seguintes APIs, utilize o Windows 10 [referência de fornecedor de serviço de configuração](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference) (abre o outro site do Docs).
 
 #### <a name="editionupgradeconfigurationlicense"></a>EditionUpgradeConfiguration.License 
 **CSP**: ./Device/Vendor/MSFT/WindowsLicensing  
@@ -237,8 +241,7 @@ A lista seguinte mostra as propriedades de Graph API utilizadas pelo Microsoft I
 **URI de deslocamento**: /Config/CredentialsUI/EnumerateAdministrators
 
 #### <a name="windows10endpointprotectionconfigurationdefenderadditionalguardedfolders"></a>Windows10EndpointProtectionConfiguration.DefenderAdditionalGuardedFolders 
-**CSP**: ./Device/Vendor/MSFT/Policy/  
-**URI de deslocamento**: /Config/Defender/ControlledFolderAccessProtectedFolders
+**CSP**: ./Device/Vendor/MSFT/Policy **Offset URI**: /Config/Defender/ControlledFolderAccessProtectedFolders
 
 #### <a name="windows10endpointprotectionconfigurationdefenderadvancedransomewareprotectiontype"></a>Windows10EndpointProtectionConfiguration.DefenderAdvancedRansomewareProtectionType 
 **CSP**: ./Device/Vendor/MSFT/Policy  
@@ -257,23 +260,21 @@ A lista seguinte mostra as propriedades de Graph API utilizadas pelo Microsoft I
 **URI de deslocamento**: /Config/Defender/AttackSurfaceReductionRules (CSP/configuração necessita de propriedades do gráfico: windows10endpointprotection/Configuration.defenderOfficeAppsOtherProcessInjectionType, windows10endpointprotection / Configuration.defenderOfficeAppsExecutableContentCreationOrLaunchType, windows10endpointprotection/Configuration.defenderOfficeAppsLaunchChildProcessType, windows10endpointprotection / Configuration.defenderOfficeMacroCodeAllowWin32ImportsType, windows10endpointprotection/Configuration.defenderScriptObfuscatedMacroCodeType, windows10endpointprotection/Configuration.defenderScriptDownloadedPayloadExecutionType , windows10endpointprotection/Configuration.defenderEmailContentExecutionType, windows10endpointprotection/Configuration.defenderPreventCredentialStealingType, windows10endpointprotection / Configuration.defenderUntrustedUSBProcessType
 
 #### <a name="windows10endpointprotectionconfigurationdefenderexploitprotectionxml"></a>Windows10EndpointProtectionConfiguration.DefenderExploitProtectionXml 
-**CSP**: ./Device/Vendor/MSFT/Policy/ **Offset URI**: /Config/ExploitGuard/ExploitProtectionSettings
+**CSP**: ./Device/Vendor/MSFT/Policy **Offset URI**: /Config/ExploitGuard/ExploitProtectionSettings
 
 #### <a name="windows10endpointprotectionconfigurationdefenderexploitprotectionxmlfilename"></a>Windows10EndpointProtectionConfiguration.DefenderExploitProtectionXmlFileName 
 **CSP**: ./Device/Vendor/MSFT/Policy  
 **URI de deslocamento**: /Config/ExploitGuard/ExploitProtectionSettings
 
 #### <a name="windows10endpointprotectionconfigurationdefenderguardedfoldersallowedapppaths"></a>Windows10EndpointProtectionConfiguration.DefenderGuardedFoldersAllowedAppPaths 
-**CSP**: ./Device/Vendor/MSFT/Policy/  
-**URI de deslocamento**: /Config/Defender/ControlledFolderAccessAllowedApplications
+**CSP**: ./Device/Vendor/MSFT/Policy **Offset URI**: /Config/Defender/ControlledFolderAccessAllowedApplications
 
 #### <a name="windows10endpointprotectionconfigurationdefenderguardmyfolderstype"></a>Windows10EndpointProtectionConfiguration.DefenderGuardMyFoldersType 
 **CSP**: ./Device/Vendor/MSFT/Policy  
 **URI de deslocamento**: /Config/Defender/EnableControlledFolderAccess
 
 #### <a name="windows10endpointprotectionconfigurationdefendernetworkprotectiontype"></a>Windows10EndpointProtectionConfiguration.DefenderNetworkProtectionType 
-**CSP**: ./Device/Vendor/MSFT/Policy/  
-**URI de deslocamento**: /Config/Defender/EnableNetworkProtection
+**CSP**: ./Device/Vendor/MSFT/Policy **Offset URI**: /Config/Defender/EnableNetworkProtection
 
 #### <a name="windows10endpointprotectionconfigurationdefenderofficeappsexecutablecontentcreationorlaunch"></a>Windows10EndpointProtectionConfiguration.DefenderOfficeAppsExecutableContentCreationOrLaunch 
 **CSP**: ./Device/Vendor/MSFT/Policy  
@@ -340,8 +341,7 @@ A lista seguinte mostra as propriedades de Graph API utilizadas pelo Microsoft I
 **URI de deslocamento**: /Config/Defender/AttackSurfaceReductionRules (CSP/configuração necessita de propriedades do gráfico: windows10endpointprotection/Configuration.defenderOfficeAppsOtherProcessInjectionType, windows10endpointprotection / Configuration.defenderOfficeAppsExecutableContentCreationOrLaunchType, windows10endpointprotection/Configuration.defenderOfficeAppsLaunchChildProcessType, windows10endpointprotection / Configuration.defenderOfficeMacroCodeAllowWin32ImportsType, windows10endpointprotection/Configuration.defenderScriptObfuscatedMacroCodeType, windows10endpointprotection/Configuration.defenderScriptDownloadedPayloadExecutionType , windows10endpointprotection/Configuration.defenderEmailContentExecutionType, windows10endpointprotection/Configuration.defenderPreventCredentialStealingType, windows10endpointprotection / Configuration.defenderUntrustedUSBProcessType
 
 #### <a name="windows10endpointprotectionconfigurationdefendersecuritycenterblockexploitprotectionoverride"></a>Windows10EndpointProtectionConfiguration.DefenderSecurityCenterBlockExploitProtectionOverride 
-**CSP**: ./Device/Vendor/MSFT/Policy/  
-**URI de deslocamento**: /Config/WindowsDefenderSecurityCenter/DisallowExploitProtectionOverride
+**CSP**: ./Device/Vendor/MSFT/Policy **Offset URI**: /Config/WindowsDefenderSecurityCenter/DisallowExploitProtectionOverride
 
 #### <a name="windows10endpointprotectionconfigurationdefendersecuritycenterdisableaccountui"></a>Windows10EndpointProtectionConfiguration.DefenderSecurityCenterDisableAccountUI 
 **CSP**: ./Device/Vendor/MSFT/Policy  
@@ -416,19 +416,18 @@ A lista seguinte mostra as propriedades de Graph API utilizadas pelo Microsoft I
 **URI de deslocamento**: /Config/Defender/AttackSurfaceReductionRules (CSP/configuração necessita de propriedades do gráfico: windows10endpointprotection/Configuration.defenderOfficeAppsOtherProcessInjectionType, windows10endpointprotection / Configuration.defenderOfficeAppsExecutableContentCreationOrLaunchType, windows10endpointprotection/Configuration.defenderOfficeAppsLaunchChildProcessType, windows10endpointprotection / Configuration.defenderOfficeMacroCodeAllowWin32ImportsType, windows10endpointprotection/Configuration.defenderScriptObfuscatedMacroCodeType, windows10endpointprotection/Configuration.defenderScriptDownloadedPayloadExecutionType , windows10endpointprotection/Configuration.defenderEmailContentExecutionType, windows10endpointprotection/Configuration.defenderPreventCredentialStealingType, windows10endpointprotection / Configuration.defenderUntrustedUSBProcessType
 
 #### <a name="windows10endpointprotectionconfigurationdeviceguardenablesecurebootwithdma"></a>Windows10EndpointProtectionConfiguration.DeviceGuardEnableSecureBootWithDMA 
-**CSP**: ./Device/Vendor/MSFT/Policy/  
+**CSP**: ./Device/Vendor/MSFT/Policy  
 **URI de deslocamento**: /Config/DeviceGuard/RequirePlatformSecurityFeatures
 
 #### <a name="windows10endpointprotectionconfigurationdeviceguardenablevirtualizationbasedsecurity"></a>Windows10EndpointProtectionConfiguration.DeviceGuardEnableVirtualizationBasedSecurity 
-**CSP**: ./Device/Vendor/MSFT/Policy/  
-**URI de deslocamento**: /Config/DeviceGuard/EnableVirtualizationBasedSecurity
+**CSP**: ./Device/Vendor/MSFT/Policy **Offset URI**: /Config/DeviceGuard/EnableVirtualizationBasedSecurity
 
 #### <a name="windows10endpointprotectionconfigurationdeviceguardlaunchsystemguard"></a>Windows10EndpointProtectionConfiguration.DeviceGuardLaunchSystemGuard 
-**CSP**: ./Device/Vendor/MSFT/Policy/  
+**CSP**: ./Device/Vendor/MSFT/Policy  
 **URI de deslocamento**: /Config/DeviceGuard/ConfigureSystemGuardLaunch
 
 #### <a name="windows10endpointprotectionconfigurationdeviceguardlocalsystemauthoritycredentialguardsettings"></a>Windows10EndpointProtectionConfiguration.DeviceGuardLocalSystemAuthorityCredentialGuardSettings 
-**CSP**: ./Device/Vendor/MSFT/Policy/  
+**CSP**: ./Device/Vendor/MSFT/Policy  
 **URI de deslocamento**: /Config/DeviceGuard/LsaCfgFlags
 
 #### <a name="windows10endpointprotectionconfigurationdmaguarddeviceenumerationpolicy"></a>Windows10EndpointProtectionConfiguration.DmaGuardDeviceEnumerationPolicy 
@@ -868,12 +867,10 @@ A lista seguinte mostra as propriedades de Graph API utilizadas pelo Microsoft I
 **URI de deslocamento**: /Config/MSSecurityGuide/WDigestAuthentication
 
 #### <a name="windows10endpointprotectionconfigurationsmartscreenblockoverrideforfiles"></a>Windows10EndpointProtectionConfiguration.SmartScreenBlockOverrideForFiles 
-**CSP**: ./Device/Vendor/MSFT/Policy/  
-**URI de deslocamento**: /Config/DeviceGuard/RequirePlatformSecurityFeatures
+**CSP**: ./Device/Vendor/MSFT/Policy **Offset URI**: /Config/DeviceGuard/RequirePlatformSecurityFeatures
 
 #### <a name="windows10endpointprotectionconfigurationsmartscreenenableinshell"></a>Windows10EndpointProtectionConfiguration.SmartScreenEnableInShell 
-**CSP**: ./Device/Vendor/MSFT/Policy/  
-**URI de deslocamento**: /Config/SmartScreen/EnableSmartScreenInShell
+**CSP**: ./Device/Vendor/MSFT/Policy **Offset URI**: /Config/SmartScreen/EnableSmartScreenInShell
 
 #### <a name="windows10endpointprotectionconfigurationsolicitedremoteassistance"></a>windows10endpointprotectionconfiguration.solicitedRemoteAssistance 
 **CSP**: ./Device/Vendor/MSFT/Policy  
@@ -1030,6 +1027,9 @@ A lista seguinte mostra as propriedades de Graph API utilizadas pelo Microsoft I
 #### <a name="windows10endpointprotectionconfigurationxboxserviceslivenetworkingservicestartupmode"></a>Windows10EndpointProtectionConfiguration.XboxServicesLiveNetworkingServiceStartupMode 
 **CSP**: ./Vendor/MSFT/Policy  
 **URI de deslocamento**: /Config/SystemServices/ConfigureXboxLiveNetworkingServiceStartupMode
+
+#### <a name="windows10enterprisemodernappmanagementconfigurationuninstallbuiltinapps"></a>Windows10EnterpriseModernAppManagementConfiguration.UninstallBuiltInApps
+**CSP**: Apenas a chamada de n / a Graph API **URI de deslocamento**: Apenas a chamada de n / a Graph API
 
 #### <a name="windows10generalconfigurationaccountsblockaddingnonmicrosoftaccountemail"></a>Windows10GeneralConfiguration.AccountsBlockAddingNonMicrosoftAccountEmail 
 **CSP**: ./Vendor/MSFT/Policy  
@@ -2924,9 +2924,17 @@ A lista seguinte mostra as propriedades de Graph API utilizadas pelo Microsoft I
 **CSP**: ./Device/Vendor/MSFT/Policy  
 **URI de deslocamento**: /Config/Update/PauseFeatureUpdatesStartTime
 
+#### <a name="windowsupdateforbusinessconfigurationfeatureupdatesrollbackstartdatetime"></a>WindowsUpdateForBusinessConfiguration.FeatureUpdatesRollbackStartDateTime
+**CSP**: N/d - apenas da Graph API **URI de deslocamento**: N/d - apenas da Graph API
+
 #### <a name="windowsupdateforbusinessconfigurationfeatureupdateswillberolledback"></a>WindowsUpdateForBusinessConfiguration.FeatureUpdatesWillBeRolledBack 
-**CSP**: ./Device/Vendor/MSFT/Policy  
-**URI de deslocamento**: / reversão/FeatureUpdate
+**CSP**: N/d - apenas da Graph API **URI de deslocamento**: N/d - apenas da Graph API
+
+#### <a name="windowsupdateforbusinessconfigurationfeatureupdatesrollbackwindowindays"></a>WindowsUpdateForBusinessConfiguration.FeatureUpdatesRollbackWindowInDays
+**CSP**: N/d - apenas da Graph API **URI de deslocamento**: N/d - apenas da Graph API
+
+#### <a name="windowsupdateforbusinessconfigurationinstallationschedule"></a>WindowsUpdateForBusinessConfiguration.InstallationSchedule
+**CSP**: ./Device/Vendor/MSFT/Policy **Offset URI**: /Config/Update/ActiveHoursStart, /Config/Update/ActiveHoursEnd, /Config/Update/ScheduledInstallDay,  /Config/Update/ScheduledInstallTime
 
 #### <a name="windowsupdateforbusinessconfigurationmicrosoftupdateserviceallowed"></a>WindowsUpdateForBusinessConfiguration.MicrosoftUpdateServiceAllowed 
 **CSP**: ./Device/Vendor/MSFT/Policy  
@@ -2948,9 +2956,11 @@ A lista seguinte mostra as propriedades de Graph API utilizadas pelo Microsoft I
 **CSP**: ./Device/Vendor/MSFT/Policy  
 **URI de deslocamento**: /Config/Update/PauseQualityUpdatesStartTime
 
+#### <a name="windowsupdateforbusinessconfigurationqualityupdatesrollbackstartdatetime"></a>WindowsUpdateForBusinessConfiguration.QualityUpdatesRollbackStartDateTime
+**CSP**: N/d - apenas da Graph API **URI de deslocamento**: N/d - apenas da Graph API
+
 #### <a name="windowsupdateforbusinessconfigurationqualityupdateswillberolledback"></a>WindowsUpdateForBusinessConfiguration.QualityUpdatesWillBeRolledBack 
-**CSP**: ./Device/Vendor/MSFT/Policy  
-**URI de deslocamento**: / reversão/QualityUpdate
+**CSP**: N/d - apenas da Graph API **URI de deslocamento**: N/d - apenas da Graph API
 
 #### <a name="windowsupdateforbusinessconfigurationscheduleimminentrestartwarninginminutes"></a>WindowsUpdateForBusinessConfiguration.ScheduleImminentRestartWarningInMinutes 
 **CSP**: ./Device/Vendor/MSFT/Policy  
@@ -2976,4 +2986,4 @@ A lista seguinte mostra as propriedades de Graph API utilizadas pelo Microsoft I
 ## <a name="next-steps"></a>Passos Seguintes
 
 - [Descrição geral da configuração do dispositivo](device-profiles.md)
-- [Referência de fornecedor de serviço de configuração](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference)
+- [Referência de fornecedor de serviço de configuração](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference) (abre o outro site do Docs)

@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/09/2019
+ms.date: 03/04/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8f3d90c2bd0a132911b270b178afdde103a3a5ed
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 01cffe9143034b9f4221cd760f9cb91f1cceebce
+ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57235893"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57334974"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Como obter suporte para o Microsoft Intune
 
@@ -50,7 +50,7 @@ A ajuda e suporte de experiência para o Intune está disponível a partir da [p
 ![Painéis do Intune](./media/get-support/intune-blades.png)
 
 
-Esta nova experiência é semelhante para a experiência mostrada o [Centro de administração do Microsoft 365](https://portal.office.com/AdminPortal/Home)e substitui o [anterior ajuda e suporte experiência](#azure-help-+-and-support-experience). 
+Esta nova experiência é semelhante para a experiência mostrada o [Centro de administração do Microsoft 365](https://portal.office.com/AdminPortal/Home)e substitui o [anterior ajuda e suporte experiência](#azure-help-+-support-experience). 
 
 Para acessar a ajuda e suporte, utilize o seguinte:  
 - **Dashboard de gestão de dispositivos:**

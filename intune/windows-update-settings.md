@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/16/2019
+ms.date: 03/04/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.reviewer: aiwang
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 66ccf357f821c3aa4a8e8d23f989526363dd8cff
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 28e7109a82a5c083b4be26bc823bb0e06d97a7ca
+ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238630"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57334991"
 ---
 # <a name="windows-update-settings-for-intune"></a>Windows atualizar as definições do Intune  
 
@@ -236,6 +236,6 @@ As seguintes definições são utilizadas para controlar quando ocorrem ações 
 
 Otimização da entrega já não está configurada como parte de uma cadência de atualização do Windows 10 em atualizações de Software. Otimização da entrega está agora definida por meio da configuração do dispositivo. No entanto, as configurações anteriores permanecem disponíveis na consola. Pode remover estas configurações anteriores ao editar que sejam *não configurado*, mas caso contrário, não pode ser modificados. 
 
-Para evitar conflitos entre políticas novas e antigas, consulte [mover de cadências de atualização existente para a Otimização da entrega](https://docs.microsoft.com/en-us/intune/delivery-optimization-windows#move-from-existing-update-rings-to-delivery-optimization) e, em seguida, mova as suas definições para um perfil de otimização de entrega.
+Para evitar conflitos entre políticas novas e antigas, consulte [mover de cadências de atualização existente para a Otimização da entrega](delivery-optimization-windows.md#move-existing-update-rings-to-delivery-optimization) e, em seguida, mova as suas definições para um perfil de otimização de entrega.
 
 

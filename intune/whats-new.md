@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 83168acc6653f750b9cf32d91602464b62aebcfe
-ms.sourcegitcommit: 0f4247914f55349f618f6176a4cdca08503215f5
+ms.openlocfilehash: 9a6f40ba7ea5e229a4c4d3f25d182d24b2a0a812
+ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56955634"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57335178"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -736,6 +736,9 @@ As extensões de ficheiros de aplicações de linha de negócio do Windows agora
 #### <a name="windows-10-app-deployment-using-intune----2309001---"></a>Implementação de aplicações para Windows 10 através do Intune <!-- 2309001 -->
 Com base no suporte existente para aplicações de linha de negócio (LOB) e aplicações da Microsoft Store para Empresas, os administradores podem utilizar o Intune para implementar a maioria das aplicações existentes da respetiva organização nos utilizadores finais em dispositivos com o Windows 10. Os administradores podem adicionar, instalar e desinstalar aplicações para utilizadores do Windows 10 numa variedade de formatos, como MSIs, Setup.exe ou MSP. O Intune irá avaliar as regras de requisitos antes de transferir e instalar, e irá notificar os utilizadores finais sobre o estado ou os requisitos de reinício através do Centro de Ação do Windows 10. Esta funcionalidade irá efetivamente ajudar as organizações interessadas em mudar esta carga de trabalho para o Intune e a cloud. Esta funcionalidade está atualmente em pré-visualização pública e esperamos acrescentar-lhe novas funcionalidades relevantes durante os próximos meses. 
 
+#### <a name="app-protection-policy-app-settings-for-web-data----2662995---"></a>Definições da Política de Proteção de Aplicações (APP) para dados da Web <!-- 2662995 -->
+As definições da política APP para conteúdos da Web em dispositivos Android e iOS serão atualizadas para processar melhor ligações Web HTTP e HTTPS, bem como a transferência de dados através de Ligações Universais do iOS e Ligações de Aplicações do Android. 
+
 #### <a name="end-user-device-and-app-content-menu----2771453---"></a>Menu de contexto em aplicações e dispositivos de utilizadores finais <!-- 2771453 -->
 Os utilizadores finais podem agora utilizar o menu de contexto em aplicações e dispositivos para acionar ações comuns, tais como mudar o nome de um dispositivo ou realizar verificações de conformidade. 
 
@@ -833,106 +836,4 @@ Aplica-se a:
 <!-- ########################## -->
 ## <a name="notices"></a>Avisos
 
-### <a name="check-your-delay-visibility-of-software-updates-setting-in-intune"></a>Verifique a definição de "Visibility atraso das atualizações de Software" no Intune
-Partilhámos na MC171466 que podemos foram movimentar algumas definições na consola do. Com a atualização de Março ao Intune, podemos irá remover completamente a definição "Atualizações de visibilidade de atraso do Software" do painel de política de atualização de iOS. Isto não vai alterar a forma de aplicam as atualizações de software agendadas, mas pode afetar o tempo que a visibilidade de uma atualização é atrasada para os utilizadores finais. Terá de executar uma ação antes do final de Março se utilizar esta definição.
-
-#### <a name="how-does-this-affect-me"></a>Como é que isto me afeta?
-Após a atualização de serviço do Intune de Fevereiro, perceberá que a definição aparece em perfis de restrição de dispositivos na consola e no iOS atualizar políticas no painel de atualização de Software. Quando vir essa alteração seja refletida na consola do, eis o que poderá ter de fazer.
-• Para políticas de atualização existentes para iOS: Se tiver personalizado configurado esta definição para qualquer coisa diferente da predefinição de 30 dias e quiser as configurações existentes para a definição de visibilidade de atraso continuar a aplicar após o fim de Março, terá que criar um novo iOS perfil de restrição de dispositivos. Aqui, a definição de visibilidade de atraso terá de ter os mesmos valores como a política de atualização de iOS existente e ser direcionadas para os mesmos grupos. Após a atualização do serviço de Março, já não poderá editar os valores para esta definição nas políticas de atualização de iOS existente, uma vez que já não estarão visível neste painel. Em vez disso, irá configurar esta definição nos perfis de novo.
-Se o valor de número de dias pode atrasar visibilidade não corresponde em ambos os locais para os valores de definição configurada personalizado, a visibilidade de atraso definição não funcionará, e os utilizadores finais irão ver a atualização nos respetivos dispositivos, assim que estiver disponível. Isto pode ter um impacto mínimo para a maioria dos clientes, uma vez que as outras definições no painel da política de atualização de Software sempre usaram precedência sobre esta definição na consola do.
-• Para novas políticas de atualização para iOS: Se tentar criar novas políticas no painel de atualizações de Software após a atualização do serviço de Fevereiro do Intune, irá ver esta definição a cinzento. Verá uma nota na consola do redirecioná-lo para o painel de configuração do dispositivo se desejar atrasar a visibilidade das atualizações.
-
-#### <a name="what-can-i-do-to-prepare-for-this-change"></a>O que posso fazer para me preparar para esta alteração?
-Não é necessário executar uma ação se não utilize esta definição ou não pretender que a visibilidade das atualizações de software de seus usuários finais.
-
-Se desejar atrasar a visibilidade das atualizações, começar a configurar a definição em novos perfis no painel da configuração do dispositivo em restrições do dispositivo > geral. Se tiver personalizado esta definição configurada no iOS existente, as políticas de atualização, criar um novo perfil de restrição de dispositivos equivalente com o mesmo valor para "dias" atrasar a visibilidade das atualizações para os seus utilizadores, depois do Fevereiro de atualização e antes de Março de atualização for implementada. Pode querer atualizar a sua documentação de orientação para profissionais de TI e informe o suporte técnico.
-Consulte o nosso blogue de suporte publicar as informações adicionais para obter detalhes sobre como configurar esta definição.
- 
-#### <a name="additional-information"></a>Informações adicionais
-https://aka.ms/Delay_visibility_setting_iOS
-
-###  <a name="upcoming-change-to-the-intune-data-warehouse-api"></a>Alteração futura à API do armazém de dados do Intune
-Iremos fazer duas alterações durante o período de tempo de 1903:
-- Descontinuação de filtro do Beta<br>
-    Descontinuação de filtros de beta não suportado instanciado.   
-- alterações 1.0 refletindo para o beta<br>
-    As alterações feitas para nossas coleções de v1.0 agora serão refletidas na versão beta.  
-
-
-###<a name="plan-for-change-workflow-changes-for-ios-12-enrollment-in-intune"></a>Planear a alteração: Alterações de fluxo de trabalho para iOS 12 inscrição no Intune
-Apple anunciou algumas alterações relacionadas com dispositivos iOS, a inscrição para os serviços de gestão de dispositivos móveis (MDM). A alteração provavelmente será vista na versão da Primavera de 2019 do iOS, bem como todas as versões futuras do iOS.
-
-####<a name="how-does-this-affect-me"></a>Como é que isto me afeta?
-Se os utilizadores finais atualizarem os seus dispositivos para esta nova versão do iOS 12 na Primavera, sabe-se de que existe um fluxo de trabalho modificado e têm de efetuar passos adicionais que conclua a inscrição no Intune. Quando Apple apresenta estas alterações, os utilizadores finais terão para: • iniciar o processo de inscrição na aplicação Portal da empresa para transferir um • de perfil de gestão vá para definições > geral > perfis • selecione o perfil correto e clique em através de a instalação • regressar ao Portal da empresa que conclua a inscrição 
-
-Dispositivos que já tenham sido inscritos e atualizar para a nova versão do iOS não seja afetado, a menos que eles são não inscritos e têm uma nova inscrição.
-Experiência de inscrição em dispositivos com iOS 12.1 ou anteriores não serão alteradas com esta nova versão pela Apple.
-
-####<a name="what-can-i-do-to-prepare-for-this-change"></a>O que posso fazer para me preparar para esta alteração?
-Deve planear a atualização a documentação e as diretrizes de utilizador final. Também poderá permitir que o suporte técnico sabe dessas alterações. Iremos mantê-lo informado por meio do Centro de mensagens e nossa, o que é a nova página quando esta alteração entra no ar.
-
-Clique em obter informações adicionais para uma mensagem de blogue de suporte com capturas de ecrã e um vídeo sobre o fluxo de inscrição esperado.
-
-####<a name="additional-information"></a>Informações adicionais
-https://aka.ms/iOS_enrollment_changes
-
-### <a name="plan-for-change-user-experience-update-to-intune-company-portal-app-for-ios"></a>Planear a alteração: Atualização da experiência de utilizador para a aplicação Portal da empresa do Intune para iOS
-Temos o prazer partilhar que Intune em breve lançar uma atualização da experiência de utilizador principais para a aplicação Portal da empresa iOS. A atualização será apresentam uma reformulação visual da home page com filtros avançados e acesso mais rápido para aplicações e livros.
-
-#### <a name="how-does-this-affect-me"></a>Como é que isto me afeta?
-Esta experiência de utilizador atualizada, enquanto mantém iOS atual funcionalidade do Portal da empresa, funcionalidade:
-- Uma home page com aspeto e funcionalidade do iOS nativo 
-- Recursos de filtragem em listagens de conteúdo e pesquisa, incluindo a capacidade de filtrar por tipo de conteúdo (aplicações ou e-Books) e a disponibilidade (gestão necessária ou disponível sem inscrição de dispositivos)
-- Capacidade de pesquisar e-Books
-- Procurar histórico para aplicações e e-Books, se é membro do programa TestFlight da Apple, será notificado sobre a versão de pré-lançamento da aplicação de Portal da empresa do Intune iOS atualizada quando ela se tornar disponível. Se não tiver a parte do programa TestFlight da Apple, não é muito tarde para se registar. Registar irá permitir-lhe utilizar a aplicação Portal da empresa atualizado antes de ser disponibilizado aos seus utilizadores finais. Também terá a oportunidade de fornecer seus comentários diretamente para a equipa do Intune.  
-
-#### <a name="what-can-i-do-to-prepare-for-this-change"></a>O que posso fazer para me preparar para esta alteração?
-Não é necessário efetuar qualquer ação; Estas alterações serão lançadas numa versão de aplicação do iOS futuros CP. 
-
-#### <a name="additional-information"></a>Informações adicionais
-[https://aka.ms/cp_update_iOS](https://aka.ms/cp_update_iOS)
-
-
-### <a name="reminder-removal-of-existing-exchange-online-to-intune-connectors"></a>Lembrete: Remoção de existentes Exchange Online para conectores do Intune
-Partilhámos na MC165575 que podemos seria possível remover o Exchange Online para a funcionalidade de conector do Intune 'De serviços' numa atualização futura. Com a atualização de Fevereiro ao serviço do Intune, iremos irá desativar o botão configurar novos conectores. Estamos a planear remover todos os existentes Exchange Online para conectores do Intune em Março de 2019.
- 
-#### <a name="how-does-this-affect-me"></a>Como é que isto me afeta?
-Está recebendo esta mensagem, uma vez que os nossos registos indicam que pode utilizar a funcionalidade de conector "De serviços" no seu ambiente. 
-
-O conector de 'De serviços' suporta a gestão do Exchange Active Sync apenas os dispositivos do Intune para o Exchange Online e não suporta a infraestrutura no local. Este conector, a forma como o que é apresentado no console, é apresentada como necessários para acesso condicional (AC), quando, na realidade, não é necessária para a AC. Pode tem estado a utilizar este conector para compreender a utilização do Exchange Online antes de aplicar acesso condicional. Estas informações já são fornecidas pelo centro de administração do Microsoft 365. Aqui, encontrará fornece relatórios de utilização para o tipo de Exchange Online incluindo a aplicação a ser utilizado para entre 7 e 180 dias. Para obter mais informações consulte o Office 365 relatórios no Centro de administração - utilização de aplicações de E-Mail  
-
-Se utilizar este conector no seu ambiente, não será possível monitorizar ou eliminar os Exchange Active Sync apenas os dispositivos no Intune após conectores foram desativados em Fevereiro. Não há nenhum impacto previsto aos seus utilizadores finais durante esta alteração.
- 
-#### <a name="what-can-i-do-to-prepare-for-this-change"></a>O que posso fazer para me preparar para esta alteração?
-Se tiver o conector de serviços, configurar e executar o Exchange Active Sync apenas os dispositivos, mude para outros métodos de gerir os seus dispositivos. Tem as seguintes opções: • inscrever dispositivos na gestão de dispositivos móveis (MDM) • utilize políticas de proteção de aplicação Intune para gerir a sua • dispositivos Exchange utilização controla conforme descrito na documentação aqui
-  
-#### <a name="additional-information"></a>Informações adicionais
-https://docs.microsoft.com/intune/exchange-service-connector-configure
- 
-
-
-### <a name="plan-for-change-performance-updates-to-intune-for-education---1750215--"></a>Planear a alteração: Atualizações de desempenho para o Intune for Education <!--1750215-->
-Estamos a adicionar algumas atualizações ao Intune for Education de forma a aumentar a velocidade e a fiabilidade quando atribui definições aos seus utilizadores ou dispositivos. No âmbito desta alteração, perto do fim do mês de novembro, moveremos as suas políticas ou atribuições de definições para novos grupos.
-
-#### <a name="how-does-this-affect-me"></a>Como é que isto me afeta?
-
-Como do Intune para clientes de educação, tem dois grupos dinâmicos do Azure Active Directory (Azure AD): "Todos os utilizadores" e "Todos os dispositivos". Com estas atualizações, estes grupos "Todos os Utilizadores" e "Todos os dispositivos" do Azure AD não serão visíveis na consola do Intune for Education. Contudo, permanecerão visíveis na consola do Intune no Azure e o nome deles mudará para "Todos os utilizadores (Obsoleto, não utilizar)" e "Todos os Dispositivos (Obsoleto, não utilizar)".
-
-Quando as atualizações forem implementadas, já não terá de utilizar grupos do Azure AD para atribuir aplicações e definições no Intune. Em vez disso, moveremos as suas atribuições de Definições para novos grupos da consola do Intune for Education que vamos criar automaticamente e que continuarão a ser apresentados como "Todos os Utilizadores" e "Todos os Dispositivos" conforme acontecia anteriormente. Estas alterações ocorrem ao nível do back-end, pelo que não se aperceberá da existência de diferenças na consola do Intune for Education. Não se prevê que os seus utilizadores finais ou dispositivos inscritos sejam afetados. 
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>O que preciso de fazer para me preparar para esta alteração?
-Não tem de fazer nada enquanto movemos as suas atribuições de políticas. Se estiver a atribuir políticas na consola do Intune for Education, continue a fazê-lo.
-
-Se estiver a atribuir políticas aos grupos do Azure AD acima mencionados no Intune no Azure, comece, em vez disso, a atribuí-los ao grupo Todos os Utilizadores e Todos os Dispositivos na consola do Intune for Education. Quando vir que o nome dos grupos do Azure AD mudou e passou a incluir a palavra "obsoleto" na consola, pare de atribuir políticas no Azure AD. Se não estiver a utilizar os grupos cujo nome mudou para outro fim, deve eliminá-los.
-
-
-### <a name="take-action-please-update-your-android-device-restriction-or-compliance-policy-password-settings-in-intune"></a>Tome medidas: Atualize o seu dispositivo Android restrição ou a conformidade de palavra-passe definições de política no Intune
-O Intune irá remover o tipo de palavra-passe "predefinição do dispositivo" disponível para dispositivos com o Android 4.4 e superior. Devido às diferenças entre plataformas e predefinições de dispositivos Android, essa política é normalmente considerada opcional pelo dispositivo. Para tornar claro em que momento esta definição é aplicada no Android, vamos remover esta definição da IU numa próxima versão. 
-#### <a name="how-does-this-affect-me"></a>Como é que isto me afeta?
-- Se quiser exigir uma palavra-passe nos dispositivos, recomendamos que, em vez de utilizar a "predefinição do dispositivo", edite os perfis da sua plataforma Android de modo a indicar claramente o tipo de palavra-passe exigido.
-- Se quiser que a decisão de criar ou não uma palavra-passe seja do utilizador final, selecione o botão "Não configurado". Se a definição continuar a funcionar após a removermos da IU, ser-lhe-á pedido que selecione um valor diferente de "Predefinição do dispositivo" na próxima vez que editar o perfil.
-O que preciso de fazer para me preparar para esta alteração?
-Reveja as definições de palavra-passe no seu Android e nas políticas de restrição e conformidade de dispositivos empresariais Android. Estas estão listadas em Segurança do sistema, no menu Políticas de conformidade, e em Palavra-passe do dispositivo ou Definições do perfil de trabalho, no menu Restrições do dispositivo. A secção Informações adicionais contém uma ligação para detalhes e capturas de ecrã adicionais que mostra onde estas definições podem ser configuradas.
-#### <a name="additional-information"></a>Informações adicionais
-https://aka.ms/PasswordSettings 
-
+[!INCLUDE [Intune notices](./includes/intune-notices.md)]
