@@ -10,18 +10,19 @@ ms.date: 02/22/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 7b668c37-40b9-4c69-8334-5d8344e78c24
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f8c1273a4c458096aef7a16b13c3c76d647ec517
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: f2b02e840e787cd44e087c38503cbaa1fb4b084f
+ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57232765"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57389152"
 ---
 # <a name="categorize-devices-into-groups"></a>Categorizar dispositivos em grupos
 

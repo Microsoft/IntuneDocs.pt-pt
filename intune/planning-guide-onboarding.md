@@ -10,6 +10,7 @@ ms.date: 01/02/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ac7bd764-5365-4920-8fd0-ea57d5ebe039
 ms.reviewer: jeffbu, cgerth
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c76e253287f823c4352667205487cce839e14178
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 76f1c113562e70bd819b2519a8b78d5824ef715b
+ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57228940"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57460704"
 ---
 # <a name="implement-your-microsoft-intune-plan"></a>Implementar o plano do Microsoft Intune
 
@@ -77,7 +78,7 @@ Poderá ser necessário adicionar utilizadores ou grupos de segurança no Active
 
 ### <a name="task-4-assign-intune-and-office-365-user-licenses"></a>Tarefa 4: Atribuir licenças de utilizador do Intune e o Office 365
 
-Todos os utilizadores que visar para a implementação do Office 365 e do EMS/Intune têm de ter uma licença atribuída. Pode atribuir licenças do Office 365 e do EMS/Intune no Portal do Centro de Administração do Office 365.
+Todos os utilizadores que visar para a implementação do Office 365 e do EMS/Intune têm de ter uma licença atribuída. Pode atribuir licenças do Office 365 no Centro de administração do Microsoft 365 e do EMS/Intune.
 
 -   Saiba mais sobre [como atribuir licenças do Intune](licenses-assign.md).
 

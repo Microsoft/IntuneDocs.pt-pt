@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 11/13/2018
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.topic: conceptual
 ms.technology: ''
 ms.assetid: 15f8a838-0b69-412b-a42e-c6edb61f0cae
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c2156dc466fa1b49c9bb3886af596b8a2cb0ccc2
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: c340b224dea13f42dae579ddf8b607aa515ea399
+ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57234329"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57398543"
 ---
 # <a name="how-to-validate-your-app-protection-policy-setup"></a>Como validar a configuração das políticas de proteção de aplicações
 

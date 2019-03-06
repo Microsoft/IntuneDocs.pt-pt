@@ -10,18 +10,19 @@ ms.date: 12/06/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b290e1f9c5fd4e7549cda7245b8d56b1e6fa5699
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: f24780bb5b1d426d5ca7e7b5da05e98aa9b53d88
+ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57236114"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57392376"
 ---
 # <a name="use-apis-to-add-third-party-cas-for-scep-to-intune"></a>Utilizar APIs para adicionar outras ACs para o SCEP ao Intune
 

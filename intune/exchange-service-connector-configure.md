@@ -9,6 +9,7 @@ ms.date: 02/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: muhosabe
@@ -16,19 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e6be4bfdb971e96da0224d146705e7c9fd0606ab
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 828cd17c320bd13b1b7fcce6578727015be3a77b
+ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57229586"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57460449"
 ---
 # <a name="configure-the-exchange-service-connector-for-intune-and-exchange-online"></a>Configurar o conector do serviço do Exchange para o Intune e Exchange Online
 Este artigo mostra-lhe como ligar o serviço do Microsoft Intune ao Exchange Online ou o novo serviço do Exchange Online Dedicado. Para determinar se o seu ambiente do Exchange Online Dedicado é a versão **nova** ou **legada**, contacte o seu gestor de conta.
 
 Com o **Conector de Serviços**, pode gerir o Exchange ActiveSync (EAS) e os dispositivos geridos do Intune a partir de uma única consola administrativa.  Não precisa do conector para ativar o Acesso Condicional para o Exchange Online.
 
-Quando planear uma implementação de acesso condicional, muitas vezes, é importante compreender quais usuários e o número de utilizadores terá a nova experiência. O Centro de administração do Office 365 fornece isso na forma de um relatório de utilização de aplicação de correio eletrónico Exchange Online como parte da funcionalidade de relatórios de atividade desse portal. Estes relatórios podem ser utilizados para compreender a adoção de e-mail do dispositivo móvel no seu ambiente antes e após a implementação do acesso condicional.
+Quando planear uma implementação de acesso condicional, muitas vezes, é importante compreender quais usuários e o número de utilizadores terá a nova experiência. O Centro de administração do Microsoft 365 fornece isso na forma de um relatório de utilização de aplicação de correio eletrónico Exchange Online como parte da funcionalidade de relatórios de atividade desse portal. Estes relatórios podem ser utilizados para compreender a adoção de e-mail do dispositivo móvel no seu ambiente antes e após a implementação do acesso condicional.
 
 ## <a name="service-to-service-connector-requirements"></a>Requisitos do Conector de Serviços
 O **Conector de Serviços** suporta apenas o Exchange Online ou o Exchange Online Dedicado e não possui requisitos para uma infraestrutura no local. 

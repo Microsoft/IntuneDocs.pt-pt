@@ -9,17 +9,18 @@ ms.date: 01/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aff0aad055aee08dfbf17622e3d9f9c3061165b8
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: b90c9462ab41dcb03d131601e456c6c783aeb0ed
+ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57233972"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57399168"
 ---
 # <a name="configure-vpn-settings-for-devices-running-android-in-intune"></a>Configurar definições de VPN no Microsoft Intune para dispositivos Android
 

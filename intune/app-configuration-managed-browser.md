@@ -10,6 +10,7 @@ ms.date: 02/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: ilwu
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e36105f89221ee5e33a1a6d8afe26b09a08b76b7
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 63d0d04ff670bedaa3de8b183917b34fed35ba7f
+ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238953"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57461044"
 ---
 # <a name="manage-internet-access-using-a-microsoft-intune-policy-protected-browser"></a>Gerir o acesso à Internet através de um browser protegido por políticas do Microsoft Intune
 
@@ -72,7 +73,7 @@ Enquanto o Managed Browser ou o Microsoft Edge não for gerido pelo Intune, não
 
 ## <a name="conditional-access-for-protected-browsers"></a>Acesso Condicional para browsers protegidos
 
-O Managed Browser é agora uma aplicação aprovada do cliente para Acesso Condicional. Isto significa que pode restringir o acesso móvel através do browser às aplicações Web ligadas ao Azure AD em que os utilizadores apenas podem utilizar o Managed Browser e o acesso a partir de outros browsers desprotegidos, como o Safari ou o Chrome, é bloqueado. Esta proteção pode ser aplicada a recursos do Azure, como o Exchange Online e o SharePoint Online, o portal do Office e sites no local que foram expostos a utilizadores externos através do [Proxy de Aplicações do Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started). 
+O Managed Browser é agora uma aplicação aprovada do cliente para Acesso Condicional. Isto significa que pode restringir o acesso móvel através do browser às aplicações Web ligadas ao Azure AD em que os utilizadores apenas podem utilizar o Managed Browser e o acesso a partir de outros browsers desprotegidos, como o Safari ou o Chrome, é bloqueado. Esta proteção pode ser aplicada aos recursos do Azure, como o Exchange Online e SharePoint Online, o Centro de administração do Microsoft 365 e até mesmo os sites no local que foram expostos a utilizadores externos através do [Proxy de aplicações do Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started). 
 
 Para impedir que as aplicações Web ligadas ao Azure AD utilizem o Intune Managed Browser em plataformas móveis, pode criar uma política de Acesso Condicional que exija aplicações cliente aprovadas. 
 

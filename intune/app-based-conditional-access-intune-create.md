@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 02/22/2019
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: d1693515-de18-4553-91ef-801976cd3ec7
 ms.reviewer: chrisgre
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c4ba4d144338c2cd775a5389f3587c94625b94b4
-ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
+ms.openlocfilehash: cc73e24da6cd774811eb30d0ca7f551760b9a274
+ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "56742249"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57389389"
 ---
 # <a name="set-up-app-based-conditional-access-policies-with-intune"></a>Configurar políticas de acesso condicional com base na aplicação com o Intune
 
@@ -33,7 +34,7 @@ Configure políticas de acesso condicional com base na aplicação para aplicaç
 > Este artigo explica os passos para adicionar uma política de acesso condicional com base nas aplicações. Pode utilizar os mesmos passos quando adicionar aplicações, como o SharePoint Online, Microsoft Teams e Microsoft Exchange Online a partir da lista de aplicações aprovadas.
 
 ## <a name="create-app-based-conditional-access-policies"></a>Criar políticas de acesso condicional com base na aplicação
-Acesso condicional é uma tecnologia do Azure Active Directory (Azure AD). O nó de acesso condicional acedido a partir *Intune* é o mesmo nó como acedidos a partir de *do Azure AD*. Isso significa que não precisa de alternar entre o Intune e do Azure AD para configurar as políticas.
+O Acesso Condicional é uma tecnologia do Azure Active Directory (Azure AD). O nó de Acesso Condicional acedido a partir do *Intune* é o mesmo nó acedido a partir do *Azure AD*. Isso significa que não precisa de alternar entre o Intune e do Azure AD para configurar as políticas.
 
 > [!IMPORTANT]
 > Tem de ter uma licença do Azure AD Premium para criar políticas de acesso condicional do portal do Intune.

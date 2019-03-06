@@ -9,6 +9,7 @@ ms.date: 05/18/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: edb07842-6a16-482e-8c1d-541a29e169a8
 ms.reviewer: angerobe
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5d59cc651ace76738c3ad608ab99b7c63f5e1872
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 3b499f3171910f28a2d190d28e8ab6e945fa463a
+ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238108"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57393138"
 ---
 # <a name="data-storage-and-processing-in-intune"></a>Armazenamento e processamento de dados no Intune
 

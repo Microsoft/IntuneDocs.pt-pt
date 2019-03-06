@@ -10,6 +10,7 @@ ms.date: 02/27/2017
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 1326e65e-56cc-4987-9006-3a788597ca19
 ms.reviewer: aanavath
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a26036b1d9019205c644e12329ec89d9fc883385
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 4a90e68d5e22a206f0feb0d645698b0122ac8704
+ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57234764"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57400063"
 ---
 # <a name="contact-assisted-phone-support-for-microsoft-intune"></a>Contactar o suporte assistido por telefone do Microsoft Intune
 

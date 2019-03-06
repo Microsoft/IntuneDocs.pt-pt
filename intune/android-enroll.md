@@ -10,6 +10,7 @@ ms.date: 12/31/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2a9fcb83855e4075ea76cfdb8ed594d5b2c2af94
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 486b5295d6ab4241cae90ef6ce0274fc93e0085e
+ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57229705"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57393244"
 ---
 # <a name="enroll-android-devices"></a>Inscrever dispositivos Android
 

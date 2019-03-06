@@ -10,6 +10,7 @@ ms.date: 02/26/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 39a93fb5-d318-4997-a409-b64549a00e7a
 ms.reviewer: ''
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b273c3429f2aad51164fcd45cfa356166b1ed2ff
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 8eb94da33d7d35cf7ffc7b929a209cd9db03744c
+ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57232612"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57394421"
 ---
 # <a name="create-a-group-to-manage-your-users-and-data-access"></a>Criar um grupo para gerir o acesso aos seus utilizadores e dados
 

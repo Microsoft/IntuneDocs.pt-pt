@@ -10,16 +10,17 @@ ms.date: 02/23/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 04c57870f32d853b48be96a58afaa7b534250e0c
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 0cde1977b0c126f478abae06860110acc2f10444
+ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57228127"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57460772"
 ---
 # <a name="intune-tenant-status-page"></a>Página de estado do inquilino do Intune
 A página de estado do inquilino é um hub centralizado, onde pode ver os detalhes atuais e importantes sobre o seu inquilino. Os detalhes incluem a disponibilidade de licença e uso, estado do conector e as comunicações importantes sobre o serviço Intune.  
@@ -60,19 +61,19 @@ Quando existe mais do que um único conector de qualquer tipo, o estado é um re
 Quando seleciona um conector na lista, o portal apresenta a página de portal que é relevante para criar ou configurar esse conector.  Por exemplo, quando seleciona a **data de expiração de VPP** conector, o **iOS compradas em volume Tokens do programa** onde pode ver mais detalhes sobre esse conector de é aberta a página. Em seguida, pode criar uma nova configuração ou editar e corrigir problemas com um já existente.  
 
 ## <a name="intune-service-health"></a>Estado de funcionamento do serviço do Intune  
-Pode ver os detalhes para incidentes activos e consultorias sem ter de navegar para o Dashboard de estado de funcionamento de serviço do Microsoft 365 ou o Centro de mensagens, localizados no Centro de administração do Microsoft 365 em https://portal.office.com. Apenas os incidentes onde impacto tem sido observado para afetar o seu inquilino são apresentados.  
+Pode ver os detalhes para incidentes activos e consultorias sem ter de navegar para o Dashboard de estado de funcionamento de serviço do Microsoft 365 ou o Centro de mensagens, ambos localizados na [Centro de administração do Microsoft 365](https://admin.microsoft.com). Apenas os incidentes onde impacto tem sido observado para afetar o seu inquilino são apresentados.  
 
 Quando seleciona um incidente, são apresentados os detalhes do incidente diretamente na página de estado do inquilino. Para ver os passados consultorias e incidentes, selecione **Consulte anteriores incidentes/Consultorias**. Abre o Centro de administração do Microsoft 365 e, em seguida, pode ver as consultorias e incidentes dos últimos 30 dias para o seu inquilino.  
 
-Para ver as informações de *Intune Service Health*, a conta tem de ter o **Administrador Global** ou **administrador de serviços** função no Azure Active Directory ou o Portal de administração do Office. Para atribuir estas permissões, inicie sessão para o [Centro de administração do Microsoft 365](https://portal.officeppe.com/AdminPortal/Home#/homepage) com permissões de Administrador Global. Selecione **utilizadores > utilizadores ativos**e, em seguida, selecione a conta que precisa de acesso. Selecione **edite** para funções, selecione *administrador de serviços* ou *Administrador Global*e, em seguida **guardar** sua edição para atribuir a permissões.  
+Para ver as informações de *Intune Service Health*, a conta tem de ter o **Administrador Global** ou **administrador de serviços** função no Azure Active Directory ou o Centro de administração do Microsoft 365. Para atribuir estas permissões, inicie sessão para o [Centro de administração do Microsoft 365](https://admin.microsoft.com) com permissões de Administrador Global. Selecione **utilizadores > utilizadores ativos**e, em seguida, selecione a conta que precisa de acesso. Selecione **edite** para funções, selecione *administrador de serviços* ou *Administrador Global*e, em seguida **guardar** sua edição para atribuir a permissões.  
 
 Só pode configurar suas preferências de comunicação para o estado de funcionamento do serviço Intune através do Centro de administração do Microsoft 365.
 
 ## <a name="intune-news"></a>Notícias do Intune  
 Ver informativas comunicações da equipa do serviço Intune sem ter de navegar para o Centro de mensagens do Office. Comunicações incluem mensagens sobre as alterações que ocorreram recentemente para o serviço do Intune ou que estão a caminho para o seu inquilino.  
 
-Por predefinição, apresentam as últimas 10 mensagens de Active Directory. Para ver mensagens mais antigas, selecione **ver últimas mensagens** para abrir o *Centro de mensagens* no portal do Centro de administração do Microsoft 365.  
+Por predefinição, apresentam as últimas 10 mensagens de Active Directory. Para ver mensagens mais antigas, selecione **ver últimas mensagens** para abrir o *Centro de mensagens* no Centro de administração do Microsoft 365.  
 
-Para ver as informações de notícias do Intune, sua conta tem de ter o **Administrador Global** ou **administrador de serviço** função no Azure Active Directory, ou o **leitor do Centro de mensagens** função no portal de administração do Office.  Para atribuir esta permissão, inicie sessão para o [Centro de administração do Microsoft 365](https://portal.officeppe.com/AdminPortal/Home#/homepage) com permissões de administrador. Selecione **utilizadores > utilizadores ativos**e, em seguida, selecione a conta que precisa de acesso. Selecione **editar** para *funções*, selecione *Equipes comunicações administrador*e, em seguida **guardar** sua edição para atribuir as permissões.  
+Para ver as informações de notícias do Intune, sua conta tem de ter o **Administrador Global** ou **administrador de serviço** função no Azure Active Directory, ou o **leitor do Centro de mensagens** função no Centro de administração do Microsoft 365.  Para atribuir esta permissão, inicie sessão para o [Centro de administração do Microsoft 365](https://admin.microsoft.com) com permissões de administrador. Selecione **utilizadores > utilizadores ativos**e, em seguida, selecione a conta que precisa de acesso. Selecione **editar** para *funções*, selecione *Equipes comunicações administrador*e, em seguida **guardar** sua edição para atribuir as permissões.  
 
 Só pode configurar suas preferências de comunicação de notícias do Intune através do Centro de administração do Microsoft 365.

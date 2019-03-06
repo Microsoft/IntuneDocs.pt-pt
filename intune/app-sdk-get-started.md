@@ -9,6 +9,7 @@ ms.date: 02/24/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: aanavath
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ab3fa7dc52ac65c5b588f1df921619f4dbe5e26b
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 5ae6e8aec0fb2aa3e563e28f3846eaddea06380c
+ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57229246"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57461469"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Introdução ao SDK da Aplicação Microsoft Intune
 
@@ -159,9 +160,9 @@ Após ter concluído os passos necessários para integrar a aplicação iOS ou A
 
     * Se for um ISV e estiver a ativar a política de proteção de aplicações do Intune nas suas aplicações da loja iOS ou Android, receberá um código promocional após ter concluído o registo no Microsoft Intune, conforme descrito no passo de registo. O código promocional vai permitir-lhe inscrever-se para obter uma versão de avaliação do Microsoft Intune de um ano de utilização expandida.
 
-    * Se estiver a desenvolver uma aplicação de linha de negócio que não será enviada para a loja, é esperado que tenha acesso ao Microsoft Intune através da sua organização. Também pode inscrever-se para obter uma versão de avaliação gratuita de um mês com o [Microsoft Intune](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0).
+    * Se estiver a desenvolver uma aplicação de linha de negócio que não será enviada para a loja, é esperado que tenha acesso ao Microsoft Intune através da sua organização. Também pode inscrever-se para obter uma versão de avaliação gratuita de um mês com o [Microsoft Intune](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0).
     
-    * Se estiver a testar a aplicação num dispositivo móvel através de uma conta de utilizador final, certifique-se de que tenha dado essa conta uma licença do Intune, no Web site do Portal de administração do Office após iniciar sessão com uma conta de administrador, consulte [licença de atribuir o Microsoft Intune](https://docs.microsoft.com/en-ca/intune/licenses-assign).
+    * Se estiver a testar a aplicação num dispositivo móvel através de uma conta de utilizador final, certifique-se de que tenha dado essa conta uma licença do Intune, no site de centro de administrador do Microsoft 365 após iniciar sessão com uma conta de administrador, consulte [licença de atribuir o Microsoft Intune ](https://docs.microsoft.com/en-ca/intune/licenses-assign).
 
 * **Políticas de proteção de aplicações do Intune**: Para testar a aplicação com todos os as Intune políticas de proteção, deve saber o que é o comportamento esperado para cada definição de política. Consulte as descrições para [políticas de proteção de aplicações para iOS](app-protection-policy-settings-ios.md) e [políticas de proteção de aplicações para Android](app-protection-policy-settings-android.md).
 

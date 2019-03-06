@@ -9,6 +9,7 @@ ms.date: 03/04/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 7fc95d17-098e-4da5-8a09-a96476569dd9
 ms.reviewer: cacamp
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 01cffe9143034b9f4221cd760f9cb91f1cceebce
-ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
+ms.openlocfilehash: c47f0d55a914714dedaf96f6f7c346b6252e36c6
+ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57334974"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57461333"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Como obter suporte para o Microsoft Intune
 
@@ -50,7 +51,7 @@ A ajuda e suporte de experiência para o Intune está disponível a partir da [p
 ![Painéis do Intune](./media/get-support/intune-blades.png)
 
 
-Esta nova experiência é semelhante para a experiência mostrada o [Centro de administração do Microsoft 365](https://portal.office.com/AdminPortal/Home)e substitui o [anterior ajuda e suporte experiência](#azure-help-+-support-experience). 
+Esta nova experiência é semelhante para a experiência mostrada o [Centro de administração do Microsoft 365](https://admin.microsoft.com/)e substitui o [anterior ajuda e suporte experiência](#azure-help-+-support-experience). 
 
 Para acessar a ajuda e suporte, utilize o seguinte:  
 - **Dashboard de gestão de dispositivos:**
@@ -117,7 +118,7 @@ As informações seguintes descrevem o Azure ajuda + a experiência de suporte q
 
 ### <a name="create-an-online-support-ticket"></a>Criar um pedido de suporte online
 
-1. Inicie sessão no portal do Azure (<https://portal.azure.com>) com as suas credenciais de administrador do Intune, selecione o ícone **?** no canto superior direito do portal e, em seguida, selecione **Ajuda + suporte** para aceder à página [Ajuda + suporte do Azure](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview).
+1. Inicie sessão no portal do Azure (<https://portal.azure.com>) com as suas credenciais de administrador do Intune, selecione o ícone **?** no canto superior direito do portal e, em seguida, selecione **Ajuda + suporte** para aceder à página [Ajuda + suporte do Azure](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview).
 
    ![Imagem da ligação de ponto de interrogação com a ajuda + ligação de suporte realçada](./media/azure-get-support.png)
 
@@ -175,12 +176,12 @@ As informações seguintes descrevem o Azure ajuda + a experiência de suporte q
 6. Choose **Create** to submit your support request.
 -->
 >[!IMPORTANT]
->Se tiver alguma pergunta relacionada com a faturação ou subscrição, pode criar um caso para obter suporte através do [Centro de Administração do Office](https://portal.office.com/Support/SupportEntry.aspx).
+>Se tiver uma pergunta de faturação ou subscrição, pode abrir um caso para obter suporte através do [Centro de administração do Microsoft 365](https://admin.microsoft.com/Support/SupportEntry.aspx).
 
 ### <a name="view-support-requests"></a>Ver pedidos de suporte
 Pode ver um pedido de suporte a partir do portal do Azure. Para tal:
 
-1. Inicie sessão no portal do Azure (<https://portal.azure.com>) com as suas credenciais de administrador do Intune, selecione o ícone **?** no canto superior direito do portal e, em seguida, selecione **Ajuda + suporte** para aceder à página [Ajuda + suporte do Azure](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview).
+1. Inicie sessão no portal do Azure (<https://portal.azure.com>) com as suas credenciais de administrador do Intune, selecione o ícone **?** no canto superior direito do portal e, em seguida, selecione **Ajuda + suporte** para aceder à página [Ajuda + suporte do Azure](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview).
 
 2. Na página **Ajuda + suporte**, pode ver a lista de **Pedidos de suporte recentes** e selecionar os mesmos para ver detalhes adicionais.
 

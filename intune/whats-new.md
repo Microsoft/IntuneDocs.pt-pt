@@ -10,6 +10,7 @@ ms.date: 02/27/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
@@ -17,17 +18,17 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9a6f40ba7ea5e229a4c4d3f25d182d24b2a0a812
-ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
+ms.openlocfilehash: e035166200f1112898e4b2fcf2f8618e2f1cc060
+ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57335178"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57461520"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Saiba mais sobre as novidades todas as semanas no Microsoft Intune. Também pode descobrir alterações futuras, [avisos importantes](#notices) e informações sobre [versões anteriores](whats-new-archive.md). 
+Saiba mais sobre as novidades todas as semanas no Microsoft Intune. Também pode encontrar [alterações futuras](in-development.md), [avisos importantes](#notices)e informações sobre [versões anteriores](whats-new-archive.md). 
 
 > [!Note]
 > É possível que algumas funcionalidades sejam implementadas durante várias semanas e que não estejam disponíveis para todos os clientes na primeira semana.
@@ -244,6 +245,8 @@ A definição abaixo é apresentada na consola do Intune, mas quando configurado
 
 > [!NOTE]
 > Se estiver a utilizar políticas de proteção de aplicações do Intune para gerir o acesso de identidades empresariais, deve considerar a ativação não **requerem biometria**. Para obter mais informações, consulte **requerer credenciais empresariais de acesso** para [iOS as definições de acesso](app-protection-policy-settings-ios.md#access-requirements) e [definições de acesso para Android](app-protection-policy-settings-android.md#access-requirements).
+
+Para obter mais informações, consulte [definições de configuração do Microsoft Outlook](app-configuration-policies-outlook.md). 
 
 #### <a name="delete-android-enterprise-apps----1352553---"></a>Eliminar as aplicações do Android Enterprise <!-- 1352553 -->
 Pode eliminar as aplicações geridas do Google Play do Microsoft Intune. Para eliminar uma aplicação do Google Play gerida, abra o Microsoft Intune no portal do Azure e selecione **aplicações de cliente** > **aplicações**. Da lista de aplicações, selecione as reticências (...) à direita da aplicação do Google Play gerida, em seguida, selecione **eliminar** na lista apresentada. Quando elimina uma aplicação do Google Play gerida da lista de aplicações, a aplicação do Google Play gerida é automaticamente não aprovada.
@@ -552,7 +555,7 @@ Se estiver a utilizar o Volume Purchase Program (VPP) para pré-aprovisionar o P
 Intune agora suporta através do programa de inscrição de dispositivos em dispositivos macOS para contas de Gestor de escola da Apple.  Para obter mais informações, consulte [inscrever automaticamente dispositivos macOS com o Apple School Manager ou o programa de inscrição de dispositivos](device-enrollment-program-enroll-macos.md).
 
 ### <a name="new-intune-device-subscription-sku---3312071--"></a>Nova subscrição de dispositivo do Intune SKU <!--3312071-->
-Para ajudar a reduzir o custo associado à gestão de dispositivos nas empresas, está agora disponível um novo SKU de subscrição baseado em dispositivos. Este SKU de dispositivos do Intune possui uma licença mensal por dispositivo. Os preços variam em função do programa de licenciamento. Está disponível diretamente por meio de portal de administração do Office e o [contrato Enterprise](https://www.microsoft.com/licensing/licensing-programs/enterprise?activetab=enterprise-tab:primaryr2) (EA), [Products da Microsoft e o contrato de serviços](https://www.microsoft.com/licensing/mpsa/default) (MPSA), [contratos aberto da Microsoft ](https://partner.microsoft.com/licensing/licensing-agreements), e [fornecedor de solução de Cloud](https://www.microsoftpartnercommunity.com/t5/Partnership-101/What-is-the-Cloud-Solution-Provider-CSP-program/td-p/2453) (CSP).
+Para ajudar a reduzir o custo associado à gestão de dispositivos nas empresas, está agora disponível um novo SKU de subscrição baseado em dispositivos. Este SKU de dispositivos do Intune possui uma licença mensal por dispositivo. Os preços variam em função do programa de licenciamento. Está disponível diretamente por meio de centro de administração do Microsoft 365 e o [contrato Enterprise](https://www.microsoft.com/licensing/licensing-programs/enterprise?activetab=enterprise-tab:primaryr2) (EA), [Products da Microsoft e o contrato de serviços](https://www.microsoft.com/licensing/mpsa/default) (MPSA), [Microsoft Open Contratos](https://partner.microsoft.com/licensing/licensing-agreements), e [fornecedor de solução de Cloud](https://www.microsoftpartnercommunity.com/t5/Partnership-101/What-is-the-Cloud-Solution-Provider-CSP-program/td-p/2453) (CSP).
 
 ### <a name="device-management"></a>Gestão de dispositivos
 

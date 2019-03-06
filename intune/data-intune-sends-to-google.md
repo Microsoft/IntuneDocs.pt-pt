@@ -10,6 +10,7 @@ ms.date: 04/18/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: a5c3bec4-18ed-11e8-accf-0ed5f89f718b
 ms.reviewer: ''
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b6e03ec185fe9f9ea3f61c0c6a73581d061a7465
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 2a6d99cc83be1b20ef2839acd77cb83c9d6b247e
+ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57234133"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57393574"
 ---
 # <a name="data-intune-sends-to-google"></a>Dados que o Intune envia para a Google
 

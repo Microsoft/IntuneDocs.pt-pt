@@ -9,6 +9,7 @@ ms.date: 06/01/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 ms.reviewer: ''
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6789064c0fd12a3d5ed381af0caf1c3906a7fd02
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 19afc2aee44407dc2c2aec6e73536682ad88e91e
+ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55850816"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57399672"
 ---
 # <a name="how-to-educate-your-end-users-about-microsoft-intune"></a>Como dar formação aos seus utilizadores finais sobre o Microsoft Intune
 

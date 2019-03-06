@@ -9,18 +9,19 @@ ms.date: 01/30/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.reviewer: ''
 ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7176da8bf35265ecf16b72faf987a4dcf5e66e0e
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 1e297c2c29c8f4c3b00aa88667adbddfce107fd7
+ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57235739"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57394536"
 ---
 # <a name="ios-device-feature-settings-in-intune"></a>definições de funcionalidade do dispositivo iOS no Intune
 

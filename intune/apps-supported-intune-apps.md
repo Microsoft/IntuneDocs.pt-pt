@@ -10,6 +10,7 @@ ms.date: 02/24/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 003ce5af-7ee1-43fb-8d16-9d08c7957a85
 ms.reviewer: aanavath
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3cd051ad5b7727788cd316041c081c5e6d1e2afd
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: de9c78459724365894bf041c51edd4fb037cc298
+ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57230810"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57392907"
 ---
 # <a name="microsoft-intune-protected-apps"></a>Aplicações protegidas do Microsoft Intune  
 

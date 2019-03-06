@@ -9,18 +9,19 @@ manager: dougeby
 ms.date: 02/06/2019
 ms.topic: conceptual
 ms.prod: ''
-ms.service: microsoft-intune; seodec18
+ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
+ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 92068edbd1f340920002ce7278b60ec3bf0fb182
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 47d309fceb66b616e224ae102ba1f9fd7f48329b
+ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57229858"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57394722"
 ---
 # <a name="ios-device-settings-to-allow-or-restrict-features-using-intune"></a>definições de dispositivos iOS para permitir ou restringir funcionalidades com o Intune
 

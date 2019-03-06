@@ -7,9 +7,10 @@ ms.author: dougeby
 author: dougeby
 manager: dougeby
 ms.date: 01/02/2018
-ms.topic: conceptual
+ms.topic: archived
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 6a88573a-aa60-455c-858c-74562798246b
 ms.reviewer: pchacon
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0dec37b871e76ea98d0f09e2eeefb6f074432127
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 8ffe9fcf4f16041eed698d94bb16f9ed2fd94341
+ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57235451"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57460466"
 ---
 # <a name="prevent-unauthorized-access-to-company-data-using-microsoft-intune"></a>Impedir o acesso não autorizado a dados da empresa com o Microsoft Intune
 

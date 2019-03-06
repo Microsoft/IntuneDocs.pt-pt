@@ -9,17 +9,18 @@ ms.date: 10/24/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8aacb9ae498b5eed7654280ea6cc2c2af6fe61ca
-ms.sourcegitcommit: e8c32bd6db2560570d1e1733f999ae3b2c026908
+ms.openlocfilehash: 31350a6ad015b343b418d54460c9c45fad51f619
+ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57305481"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57390485"
 ---
 # <a name="use-custom-settings-for-windows-10-devices-in-intune"></a>Utilizar definições personalizadas para dispositivos Windows 10 no Intune
 

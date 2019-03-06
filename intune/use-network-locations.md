@@ -9,6 +9,7 @@ ms.date: 05/21/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: ayesham
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ad1c633261e4d917cb88793efbac2ff4416dd429
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: d2431695f89c9cdf339a0192e27f8140ec042435
+ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57236692"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57396233"
 ---
 # <a name="use-locations-network-fence-in-intune"></a>Utilizar Localizações (barreira de rede) no Intune
 

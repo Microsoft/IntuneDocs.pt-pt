@@ -10,6 +10,7 @@ ms.date: 11/09/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 2586fce0-5dca-4686-b9c4-791778838401
 ms.reviewer: ''
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dd39e6f4cff0caf9935ba217b9e94cf3529bf0f1
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 7dee5407b39d9299081bf526b117c64b5883a106
+ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55844212"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57393369"
 ---
 # <a name="quickstart-create-and-assign-an-app-protection-policy"></a>Início rápido: Criar e atribuir uma política de proteção de aplicações
 

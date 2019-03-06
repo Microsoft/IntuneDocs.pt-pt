@@ -9,6 +9,7 @@ ms.date: 01/09/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: ''
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 707bb84df55fa202e3dc5241e3d7212039b17b3b
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 31248225205608c6f8809c52b98ed1141395aec1
+ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55841747"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57389297"
 ---
 # <a name="windows-10-and-later-settings-to-manage-shared-devices-using-intune"></a>Definições Windows 10 e posteriores para gerir dispositivos partilhados, através do Intune
 

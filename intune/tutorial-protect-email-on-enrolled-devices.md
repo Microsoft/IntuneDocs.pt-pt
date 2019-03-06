@@ -10,6 +10,7 @@ ms.date: 09/19/2018
 ms.topic: tutorial
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: ''
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b8a58c9f469f197095bedcb4524ca7588b860ed3
-ms.sourcegitcommit: 7d694e3cd01623513c2b163946e60a99ab9535d2
+ms.openlocfilehash: 4d748cc1b9549dfb29d38388a8279cacd8d471b3
+ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56891628"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57396646"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>Tutorial: Proteger o e-mail do Exchange Online em dispositivos geridos
 Saiba como utilizar políticas de conformidade de dispositivos com acesso condicional para garantir que os dispositivos iOS podem aceder ao e-mail do Exchange Online apenas se forem geridos pelo Intune e através de uma aplicação de e-mail aprovada. 

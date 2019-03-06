@@ -7,21 +7,22 @@ author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 02/21/2019
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: cd5a0a3b-0013-4be3-a233-ce6e9083149f
 ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c94fc26543123f0b3cf6a0f08f8089c48d78778b
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: b4db9845befe7440e615e8deb874971a5b80efdb
+ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57232204"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57461180"
 ---
 # <a name="troubleshoot-mobile-application-management"></a>Resolução de problemas de gestão de aplicações móveis
 
@@ -37,7 +38,7 @@ Estes são os problemas comuns que um administrador de TI poderá experienciar a
 | -- | -- | -- |
 | A política não está a ser aplicada ao Skype para Empresas | A política de proteção de aplicações sem inscrição de dispositivos, criada no portal do Azure, não está a ser aplicada à aplicação Skype para Empresas nos dispositivos iOS e Android. | O Skype para Empresas tem de ser configurado para autenticação moderna.  Siga as instruções em [Enable your tenant for modern authentication (Ativar o seu inquilino para autenticação moderna – em inglês)](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) para configurar a autenticação moderna para o Skype. |
 | A política das aplicações do Office não está a ser aplicada | As políticas de proteção de aplicações não estão a ser aplicadas a nenhuma [aplicação do Office suportada](https://www.microsoft.com/cloud-platform/microsoft-intune-partners) para nenhum utilizador. | Confirme que o utilizador tem licença para o Intune e que as aplicações do Office são visadas por uma política de proteção de aplicações implementada. Pode demorar até 8 horas para que seja aplicada uma política de proteção de aplicações recentemente implementada. |
-| O administrador não consegue configurar a política de proteção de aplicações no Portal do Azure | O utilizador de administração de TI não consegue configurar políticas de proteção de aplicações no Portal do Azure. | As seguintes funções de utilizador têm acesso ao Portal do Azure: <ul><li>Administrador global, que pode configurar no [Portal do Office](https://portal.office.com/)</li><li>Proprietário, que pode configurar no [Portal do Azure](https://portal.azure.com/).</li><li>Contribuinte, que pode configurar no [Portal do Azure](https://portal.azure.com/).</li></ul> Consulte a [controlo de administração baseada em funções (RBAC) com o Microsoft Intune](role-based-access-control.md) para obter ajuda a configurar estas funções.|
+| O administrador não consegue configurar a política de proteção de aplicações no Portal do Azure | O utilizador de administração de TI não consegue configurar políticas de proteção de aplicações no Portal do Azure. | As seguintes funções de utilizador têm acesso ao Portal do Azure: <ul><li>Administrador global, que pode configurar no [Centro de administração do Microsoft 365](https://admin.microsoft.com/)</li><li>Proprietário, que pode configurar no [Portal do Azure](https://portal.azure.com/).</li><li>Contribuinte, que pode configurar no [Portal do Azure](https://portal.azure.com/).</li></ul> Consulte a [controlo de administração baseada em funções (RBAC) com o Microsoft Intune](role-based-access-control.md) para obter ajuda a configurar estas funções.|
 |Há contas de utilizador em falta em relatórios de política de proteção de aplicações | Os relatórios de consola de administração não mostram as contas de utilizador nas quais a política de proteção de aplicações foi recentemente implementada. | Se um utilizador foi recentemente visado por uma política de proteção de aplicações, pode demorar até 24 horas para esse utilizador ser apresentado em relatórios como um utilizador visado. |
 | As alterações à política não estão a ser aplicadas | A aplicação das alterações e atualizações à política de proteção de aplicações pode demorar até 8 horas a entrar em vigor. | Caso aplicável, o utilizador final pode terminar sessão na aplicação e voltar a iniciar sessão para forçar a sincronização com o serviço. |
 | A política de proteção de aplicações não está a funcionar com o DEP | A política de proteção de aplicações não está a ser aplicada a dispositivos DEP da Apple. | Confirme que está a utilizar a Afinidade do Utilizador com o Programa de Inscrição de Dispositivos (DEP) da Apple. A Afinidade de Utilizador é necessária para qualquer aplicação que exija autenticação do utilizador no DEP. <br><br>Consulte a [inscrever automaticamente dispositivos iOS com o programa de inscrição de dispositivos da Apple](device-enrollment-program-enroll-ios.md) para obter mais informações sobre a inscrição do DEP para iOS.|
@@ -78,7 +79,7 @@ Caixa de diálogo ou mensagem de erro | Causa | Remediação |
 **Aplicação não configurada**: Esta aplicação não foi configurada para utilizar. Contacte o seu administrador de TI para obter ajuda. | Falha ao detetar a uma política de proteção de aplicações obrigatória para a aplicação. |Confirme que uma política de proteção de aplicações iOS é implementada para o grupo de segurança do utilizador e destina-se a esta aplicação.
 **Bem-vindo ao Browser gerido do Intune**: Esta aplicação funciona melhor quando gerido pelo Microsoft Intune. Sempre pode utilizar esta aplicação para procurar na web e, quando é gerido pelo Microsoft Intune obter acesso a funcionalidades de proteção de dados adicionais. | Falha ao detetar a uma política de proteção de aplicações obrigatória para a aplicação de Browser gerido do Intune. <br><br>O utilizador pode continuar a utilizar a aplicação para procurar na web, mas a aplicação não é gerida pelo Intune. | Confirme que uma política de proteção de aplicações iOS é implementada para o grupo de segurança do utilizador e destina-se à aplicação Browser Gerido do Intune.
 **Início de sessão falhada**: Nós não é possível iniciar a sua sessão neste momento. Tente novamente mais tarde. | Falha ao inscrever o utilizador no serviço MAM após o utilizador tentar iniciar sessão com a respetiva conta profissional ou escolar. | Confirme que uma política de proteção de aplicações iOS é implementada para o grupo de segurança do utilizador e destina-se a esta aplicação.
-**Conta não configurada**: Sua organização não definiu a sua conta para aceder aos dados escolares ou profissionais. Contacte o seu administrador de TI para obter ajuda. | A conta de utilizador não tem uma licença Direta A do Intune. | Confirme que a conta de utilizador tem uma licença do Intune atribuída ao [portal do Office](https://portal.office.com).
+**Conta não configurada**: Sua organização não definiu a sua conta para aceder aos dados escolares ou profissionais. Contacte o seu administrador de TI para obter ajuda. | A conta de utilizador não tem uma licença Direta A do Intune. | Certifique-se a conta de utilizador tem uma licença do Intune atribuída a [Centro de administração do Microsoft 365](https://admin.microsoft.com).
 **Dispositivos não conformes**: Não é possível utilizar esta aplicação porque está a utilizar um dispositivo desbloqueado por jailbreak. Contacte o seu administrador de TI para obter ajuda. | O Intune detetou que o utilizador está num dispositivo desbloqueado por jailbreak. | Repor as predefinições de fábrica do dispositivo. Siga [estas instruções](https://support.apple.com/HT201274) a partir do site de suporte da Apple.
 **Ligação de Internet obrigatória**: Tem de estar ligado à Internet para verificar que pode utilizar esta aplicação. | O dispositivo não está ligado à Internet. | Ligue o dispositivo a uma rede Wi-Fi ou de Dados.
 **Falha desconhecida**: Tente reiniciar esta aplicação. Se o problema persistir, entre em contacto com seu administrador de TI. | Ocorreu uma falha desconhecida. | Aguarde algum tempo e tente novamente. Se o erro persistir, crie uma [pedido de suporte](get-support.md#create-an-online-support-ticket) com o Intune.
@@ -97,7 +98,7 @@ Mensagem de erro/caixa de diálogo | Causa | Remediação |
 **Início de sessão falhada**: Tente iniciar sessão novamente. Se este problema persistir, entre em contacto com seu administrador de TI. | Falha ao autenticar a conta com a qual o utilizador tentou iniciar sessão. | Confirme que o utilizador iniciou sessão com a conta profissional ou escolar que já está inscrita no serviço MAM do Intune (a primeira conta escolar ou profissional com que iniciou sessão com êxito para esta aplicação). <br><br> Limpe os dados da aplicação. <br><br> Confirme que a versão da aplicação está atualizada. <br><br> Confirme que a versão do Portal da Empresa está atualizada.
 **Ligação de Internet obrigatória**: Tem de estar ligado à Internet para verificar que pode utilizar esta aplicação. | O dispositivo não está ligado à Internet. | Ligue o dispositivo a uma rede Wi-Fi ou de Dados.
 **Dispositivo como incompatível**: Não é possível utilizar esta aplicação porque está a utilizar um dispositivo desbloqueado por rooting. Contacte o seu administrador de TI para obter ajuda. | O Intune detetou que o utilizador está num dispositivo com root. | Repor as predefinições de fábrica do dispositivo.
-**Conta não configurada**: Esta aplicação tem de ser gerenciada pelo Microsoft Intune, mas a sua conta não foi configurada. Contacte o seu administrador de TI para obter ajuda. | A conta de utilizador não tem uma licença Direta A do Intune. | Confirme que a conta de utilizador tem uma licença do Intune atribuída ao [portal do Office](https://portal.office.com).
+**Conta não configurada**: Esta aplicação tem de ser gerenciada pelo Microsoft Intune, mas a sua conta não foi configurada. Contacte o seu administrador de TI para obter ajuda. | A conta de utilizador não tem uma licença Direta A do Intune. | Certifique-se a conta de utilizador tem uma licença do Intune atribuída a [Centro de administração do Microsoft 365](https://admin.microsoft.com).
 **Não é possível registar a aplicação**: Esta aplicação tem de ser gerenciada pelo Microsoft Intune, mas não foi possível registar esta aplicação neste momento. Contacte o seu administrador de TI para obter ajuda. | Falha ao inscrever automaticamente a aplicação com o serviço MAM quando é precisa a política de proteção de aplicações. | Limpe os dados da aplicação. <br><br> Enviar registos ao Intune através da aplicação do Portal da empresa ou um pedido de suporte de ficheiros. Para obter mais informações, consulte [como obter suporte para o Microsoft Intune](get-support.md).
 
 ## <a name="next-steps"></a>Passos Seguintes

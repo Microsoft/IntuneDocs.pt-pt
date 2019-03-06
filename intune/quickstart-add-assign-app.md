@@ -10,6 +10,7 @@ ms.date: 11/09/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: dab6f5c8-1ebb-42c4-a7a7-7af001f94e15
 ms.reviewer: ''
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3831b86bd619fae130f7173cee8f7e7cc46dfe6a
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 40f321b02565f696554e2380d488c41a3b1f24eb
+ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55839299"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57391876"
 ---
 # <a name="quickstart-add-and-assign-a-client-app"></a>Início rápido: Adicionar e atribuir uma aplicação de cliente
 

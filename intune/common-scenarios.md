@@ -9,6 +9,7 @@ ms.date: 11/29/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 1f37d4ff-b5a7-4a89-8884-a6184908b09c
 ms.reviewer: dougeby
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7e657fa44c6dc2282bc79f809165418448eebff0
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 32be10340e1e77d2f994c5f038e6328ea42a6303
+ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55835831"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57394779"
 ---
 # <a name="common-ways-to-use-microsoft-intune"></a>Formas comuns de utilizar o Microsoft Intune
 

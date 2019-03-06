@@ -10,6 +10,7 @@ ms.date: 10/30/2017
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 393ebe75-d001-485a-b81c-6361c8b5e6ee
 ms.reviewer: jeffbu, cgerth
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f0df69783af036676f95daacb8102a49a632886c
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: b5732faaff872ca06d54f0103bfe0de8bd906149
+ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57230062"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57394374"
 ---
 # <a name="develop-a-rollout-communication-plan"></a>Desenvolver um plano de comunicação de implementação
 

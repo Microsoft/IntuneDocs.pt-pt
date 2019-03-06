@@ -9,18 +9,19 @@ ms.date: 05/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 76b125c216cd3767df0cb6a374d0fcbeeade794a
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: c22822f34f426897549383df5e9c71b21b497a7e
+ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57232595"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57391204"
 ---
 # <a name="see-device-details-in-intune"></a>Consultar os detalhes do dispositivo no Intune
 
@@ -69,7 +70,7 @@ Consoante a operadora utilizada pelos dispositivos, nem todos os detalhes podem 
 
 |Detalhe|Descrição|Plataforma| 
 |--------------|----------------------|----|  
-|Name|O nome do dispositivo.|Windows, iOS|
+|Nome|O nome do dispositivo.|Windows, iOS|
 |Nome da gestão|O nome do dispositivo utilizado apenas na consola. Alterar este nome não irá alterar o nome no dispositivo.|Windows, iOS|
 |UDID|O Identificador de Dispositivo Exclusivo do dispositivo.|Windows, iOS|
 |ID de Dispositivo do Intune|Um GUID que identifica exclusivamente o dispositivo.|Windows, iOS|

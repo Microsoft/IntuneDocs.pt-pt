@@ -9,17 +9,18 @@ ms.date: 08/25/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0588d3e01994092ca48a8a3bb4844883f7a5b100
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 11684ceea5aafa7de5a2663e5a69bbbe7367b655
+ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57235349"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57394048"
 ---
 # <a name="create-vpn-profiles-in-intune"></a>Criar perfis VPN no Intune
 

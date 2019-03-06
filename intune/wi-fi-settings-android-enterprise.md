@@ -9,17 +9,18 @@ ms.date: 01/16/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2c750178efe18c16796253ad542157466f7ba57f
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: cdc7be78ae12d8ab86788c3393da4f0c1425281b
+ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238647"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57398160"
 ---
 # <a name="add-wi-fi-settings-for-devices-running-android-enterprise-and-android-kiosk-in-microsoft-intune"></a>Adicionar definições de Wi-Fi para dispositivos com o quiosque Android ou Android Enterprise no Microsoft Intune
 

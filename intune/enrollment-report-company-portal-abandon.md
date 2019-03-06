@@ -10,18 +10,19 @@ ms.date: 2/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e08623485f8e3b07af43891e3b09cfed5b94e583
-ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
+ms.openlocfilehash: 0202fba7e31b7be1d325617867be9a43d4f2064a
+ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "56742589"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57400233"
 ---
 # <a name="incomplete-user-enrollments-report"></a>Relatório de inscrições de utilizador incompleto
 

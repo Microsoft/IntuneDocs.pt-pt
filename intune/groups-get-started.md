@@ -7,20 +7,21 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 01/02/2018
-ms.topic: conceptual
+ms.topic: archived
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 323f384d-8a76-4adc-999b-e508d641bfa1
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b96fc17bbe8a235d7bb2ae0c4710b3458a17b469
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: da802084b92f5df23701072aa7c45b4ea1b24bd2
+ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57231269"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57460636"
 ---
 # <a name="microsoft-intune-classic-groups-in-the-azure-portal"></a>Grupos clássicos do Microsoft Intune no portal do Azure
 

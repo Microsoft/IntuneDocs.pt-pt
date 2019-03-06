@@ -9,6 +9,7 @@ ms.date: 05/30/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 40fa5a2e-6c0f-4150-9740-d5ddc0cdbda0
 ms.reviewer: cacamp
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fcd78efe6862e42296764e4791bf8fed940adde4
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: d43c999cf5dc90d62b9409e3c4565502b773ddf4
+ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55850952"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57460534"
 ---
 # <a name="microsoft-intune-service-description"></a>Descrição do serviço Microsoft Intune
 
@@ -36,7 +37,7 @@ O Intune está estreitamente integrado no Azure Active Directory (Azure AD) para
 Para saber mais sobre como pode gerir dispositivos e aplicações, bem como proteger os dados empresariais com o Intune, veja a [documentação do Intune](https://docs.microsoft.com/intune/).
 
 ## <a name="30-day-free-trial"></a>Avaliação gratuita de 30 dias
-Pode começar a utilizar o Intune com uma avaliação gratuita de 30 dias que inclui 100 licenças de utilizador. Para começar a sua avaliação gratuita, [aceda à página de Inscrição do Intune](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20). Se a sua organização tiver um Contrato Enterprise ou contrato de licenciamento em volume equivalente, contacte o seu representante da Microsoft para configurar a sua avaliação gratuita.
+Pode começar a utilizar o Intune com uma avaliação gratuita de 30 dias que inclui 100 licenças de utilizador. Para começar a sua avaliação gratuita, [aceda à página de Inscrição do Intune](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20). Se a sua organização tiver um Contrato Enterprise ou contrato de licenciamento em volume equivalente, contacte o seu representante da Microsoft para configurar a sua avaliação gratuita.
 
 > [!NOTE]
 > Se a sua organização tiver uma conta escolar ou profissional do Microsoft Online Services e quiser continuar com esta subscrição do Intune em funcionamento após terminar o período de avaliação, selecione a opção **Iniciar sessão** nessa página e autentique-se através da conta de Administrador Global da sua empresa. Esta ação assegura que a sua avaliação do Intune se liga à sua conta escolar ou profissional existente.
@@ -58,7 +59,7 @@ Uma vez que o ecossistema de gestão de dispositivos móveis é alterado frequen
 
 - [Novidades do Microsoft Intune](whats-new.md). Este tópico é atualizado com a atualização de serviço mensal, e semanalmente quando, por exemplo, são lançadas aplicações como a aplicação Portal da Empresa.
 
-- As atualizações de serviço importantes também lhe são anunciadas no Centro de Mensagens do [portal de gestão do Office 365](https://portal.office.com/Admin/Default.aspx). Se instalar o complemento [aplicação móvel Office 365 Admin](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a), pode receber notificações no seu dispositivo móvel. Saiba mais sobre como trabalhar com o [Centro de Mensagens do Office 365](https://support.office.com/client/results?Shownav=true&ns=O365ENTADMIN&version=15&ver=15&HelpID=O365E_MCManageUpdates).
+- Atualizações de serviço importantes também lhe são anunciadas no [Centro de administração do Microsoft 365](https://admin.microsoft.com/) Centro de mensagens. Se instalar o complemento [aplicação móvel Office 365 Admin](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a), pode receber notificações no seu dispositivo móvel. Saiba mais sobre como trabalhar com o [Centro de Mensagens do Office 365](https://support.office.com/client/results?Shownav=true&ns=O365ENTADMIN&version=15&ver=15&HelpID=O365E_MCManageUpdates).
 
     Algumas sugestões úteis:
 
@@ -77,7 +78,7 @@ Uma vez que o ecossistema de gestão de dispositivos móveis é alterado frequen
     - [Blogue de suporte do Intune](https://blogs.technet.microsoft.com/intunesupport/)
 
 >[!Note]
->Pode monitorizar o estado de funcionamento do serviço do Intune no [portal de gestão do Office 365](https://portal.office.com/Admin/Default.aspx). Escolha **Estado de Funcionamento do Serviço** no painel esquerdo. Também pode utilizar a [Aplicação móvel de Administração do Office 365](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a) para ver o estado de funcionamento do serviço.
+>Pode monitorizar o estado de funcionamento do serviço Intune no [Centro de administração do Microsoft 365](https://admin.microsoft.com). Escolha **Estado de Funcionamento do Serviço** no painel esquerdo. Também pode utilizar a [Aplicação móvel de Administração do Office 365](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a) para ver o estado de funcionamento do serviço.
 
 ## <a name="types-of-notices-microsoft-provides-about-the-intune-service"></a>Tipos de notificações que a Microsoft fornece sobre o serviço Intune
 

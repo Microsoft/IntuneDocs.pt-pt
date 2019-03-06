@@ -9,18 +9,19 @@ ms.date: 03/06/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: a1973f38-ea55-43eb-a151-505fb34a8afb
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a540d47d9b4418f7cf613fa401e92463d74a17fa
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 126406e078375fea837fcebe1f469fb0e5190f7d
+ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55838568"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57398328"
 ---
 # <a name="whats-conditional-access"></a>O que é o acesso condicional?
 

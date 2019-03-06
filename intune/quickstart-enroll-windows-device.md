@@ -9,6 +9,7 @@ ms.date: 12/05/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 658a7655-a6df-4dbe-b56c-22c7fc60e706
 ms.reviewer: ''
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c04dc3169fbf6a60d0c4d7db8358092909e90240
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 530cc40fcc08fd527a6330f2931cae22f57a0888
+ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55841825"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57389984"
 ---
 # <a name="quickstart-enroll-your-windows-10-device"></a>Início rápido: Inscrever o seu dispositivo Windows 10
 

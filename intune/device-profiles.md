@@ -9,6 +9,7 @@ ms.date: 02/28/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: ''
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7f8f19b1672f8bbbc65db9604c113a3b69813cc4
-ms.sourcegitcommit: 7cfe23215eabf30cbaab733a403012a0ba05f599
+ms.openlocfilehash: ad9b0fb2fc8814f04860793bb1210da17dbe2a65
+ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57211402"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57395331"
 ---
 # <a name="apply-features-and-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Aplicar definições e funcionalidades nos seus dispositivos com perfis de dispositivos no Microsoft Intune
 

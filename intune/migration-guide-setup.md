@@ -9,18 +9,19 @@ ms.date: 03/04/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 60cfa440-0723-4ea0-bacf-3c5d26f9a1d3
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 67d8833740dbc5cfad1de4644a48a0683177ddc6
-ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
+ms.openlocfilehash: a9f16c563ff0416092abe3812b3505c2f6d92587
+ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57335280"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57459922"
 ---
 # <a name="basic-setup"></a>Configuração básica
 
@@ -59,7 +60,7 @@ Se estiver a planear utilizar a autenticação baseada em certificados para perf
 
 Para poder migrar para o Intune, precisa primeiro de uma subscrição do Intune.
 
--   Pode visitar [esta página](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0), que lhe dá instruções sobre como:
+-   Pode visitar [esta página](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0), que lhe dá instruções sobre como:
 
     -   Criar uma nova subscrição do Intune ligada a um novo inquilino do AAD.
 

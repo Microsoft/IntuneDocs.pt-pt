@@ -9,18 +9,19 @@ ms.date: 01/24/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b853d42efc247f6080cc4ed6ad8b4943b85b3215
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: d8e5c8996aecb11666fca13c6e032ccad1a1e0a7
+ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57230827"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57397972"
 ---
 # <a name="monitor-the-security-baseline-and-profile-in-microsoft-intune"></a>Monitorizar a base de segurança e o perfil no Microsoft Intune
 

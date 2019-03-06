@@ -9,6 +9,7 @@ ms.date: 01/24/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: d158503c-1276-422b-ab81-5f66c1cd7e7a
 ms.reviewer: dougeby
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 89a03bde6ecdfb031f7beaad407cd713ebc6f03e
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: b5944f7bacd87e2ef1e1117dd44eb80b6fe572e6
+ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55848896"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57391917"
 ---
 # <a name="set-up-intune"></a>Configurar o Intune
 

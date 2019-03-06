@@ -10,6 +10,7 @@ ms.date: 01/28/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 0f8b08f2-504c-4b38-bea2-b8a4ef0526b8
 ms.reviewer: andcerat
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2f03ef5755b2a1ea4d33e3c8f3607fb32e4b9fd9
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: a7445b7d756c4f80636f731d371658b6413a1b5c
+ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57233343"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57398601"
 ---
 #  <a name="ios-app-protection-policy-settings"></a>Definições de políticas de proteção de aplicações iOS
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]

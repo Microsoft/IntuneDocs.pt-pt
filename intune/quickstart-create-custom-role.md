@@ -4,6 +4,7 @@ description: Início Rápido – criar e atribuir uma função personalizada a u
 services: microsoft-intune
 author: ErikjeMS
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.topic: quickstart
 ms.date: 09/21/2018
 ms.author: erikje
@@ -12,12 +13,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e06d40ebcbd16940b7c980f529f7fc44ff5c736e
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: be3ef61d3bdce2f1ad74a388a2ec50691313a1d1
+ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55848462"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57400293"
 ---
 # <a name="quickstart-create-and-assign-a-custom-role"></a>Início rápido: Criar e atribuir uma função personalizada
 

@@ -10,6 +10,7 @@ ms.date: 12/14/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: C29A6EEA-72B7-427E-9601-E05B408F3BB0
 ms.reviewer: aanavath
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 11c3cc35408b2d50e781c50cd1821b8cead19ad7
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 9a8fa64b0458321ef9b0db39edc354a24099f03d
+ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57232391"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57388738"
 ---
 # <a name="reference-for-user-entity"></a>Referência para a entidade de utilizador
 

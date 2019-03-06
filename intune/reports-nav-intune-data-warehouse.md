@@ -10,6 +10,7 @@ ms.date: 12/14/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 701D6CE9-43F6-4A29-8E84-E2B59931C635
 ms.reviewer: aanavath
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f67d7679c79836b6cce1692253c887f88960aead
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 0bf17e97cfc3bc48582c26146071eb369aaa66c9
+ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57231618"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57389411"
 ---
 #  <a name="microsoft-intune-data-warehouse-api"></a>API do armazém de dados do Microsoft Intune
 

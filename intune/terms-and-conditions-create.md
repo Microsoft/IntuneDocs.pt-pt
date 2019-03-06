@@ -10,6 +10,7 @@ ms.date: 10/20/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 4a3a11a8-9c0c-4334-8c6b-6fea4d0a2efb
 ms.reviewer: amyro
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1b0571ad6196277ee2bc257d72cc4db24fcc3424
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 2ea52d44bd1107c2cb5b177a8838ea4ec384a6ac
+ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57237953"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57389408"
 ---
 # <a name="terms-and-conditions-for-user-access"></a>Termos e condições de acesso de utilizador
 

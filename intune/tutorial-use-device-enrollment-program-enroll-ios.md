@@ -10,16 +10,17 @@ ms.date: 1/30/2019
 ms.topic: tutorial
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 Customer intent: As an Intune admin, I want to set up the Device Enrollment Program so that users can automatically enroll in Intune.
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 17258ce2bd671dba091fa7206e599858e5ec7a93
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 88fe825b75e7717740e5a5ca4af4c52e9bb21768
+ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55841543"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57400403"
 ---
 # <a name="tutorial-use-the-device-enrollment-program-to-enroll-ios-devices-in-intune"></a>Tutorial: Utilizar o programa de inscrição de dispositivos para inscrever dispositivos iOS no Intune
 Programa de inscrição de dispositivos de (DEP da Apple) simplifica a inscrição de dispositivos. Com o Microsoft Intune e o DEP, os dispositivos são inscritos automaticamente na primeira vez que o usuário ativa o dispositivo. Portanto pode enviar dispositivos para muitos usuários sem ter de configurar individualmente cada dispositivo. 

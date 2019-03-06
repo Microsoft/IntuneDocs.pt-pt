@@ -10,24 +10,25 @@ ms.date: 02/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dda25e5c40bcff14b71d65c183c5836cf73bf1ae
-ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
+ms.openlocfilehash: 7b94204d5d1b141218081d01a6daab0ec84d1693
+ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "56742419"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57392581"
 ---
 # <a name="create-a-device-based-conditional-access-policy"></a>Criar uma política de acesso condicional com base no dispositivo
 
 Com o Intune, pode melhorar o acesso condicional no Azure Active Directory através da adição de conformidade de dispositivos móveis para os controlos de acesso. Depois de criar uma política de conformidade do Intune que define os requisitos de dispositivos estar em conformidade, pode utilizar o estado de conformidade de um dispositivo para permitir ou bloquear o acesso às suas aplicações e serviços. Pode fazê-lo ao criar uma política de acesso condicional utiliza a definição **pedir que o dispositivo ser marcado como compatível**.  
 
-Uma política de acesso condicional Especifica a aplicação ou serviços que pretende proteger, as condições sob as quais podem aceder a aplicações ou serviços e os utilizadores a quem se aplica a política. Acesso condicional é uma funcionalidade premium do Azure AD que pode ser configurada no Azure Active Directory, mas também pode configurar estas políticas mesmo no portal do Intune. O nó de acesso condicional acedido a partir *Intune* é o mesmo nó como acedidos a partir de *do Azure AD*.  
+Uma política de acesso condicional Especifica a aplicação ou serviços que pretende proteger, as condições sob as quais podem aceder a aplicações ou serviços e os utilizadores a quem se aplica a política. Acesso condicional é uma funcionalidade premium do Azure AD que pode ser configurada no Azure Active Directory, mas também pode configurar estas políticas mesmo no portal do Intune. O nó de Acesso Condicional acedido a partir do *Intune* é o mesmo nó acedido a partir do *Azure AD*.  
 
 > [!IMPORTANT]
 > Antes de configurar o acesso condicional, terá de configurar políticas de conformidade de dispositivos do Intune para avaliar os dispositivos com base em se eles satisfazer os requisitos específicos. Ver [começar a utilizar com políticas de conformidade de dispositivos no Intune](device-compliance-get-started.md).

@@ -6,9 +6,10 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 11/09/2018
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ROBOTS: NOINDEX,NOFOLLOW
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b2d345ba84eb963600a921c0f77f7a93ed6aa1b0
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 32f167def5e96061b0d69665c2c5b81a29d03389
+ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238681"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57461367"
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Resolver problemas de inscrição de dispositivos no Intune
 
@@ -100,7 +101,7 @@ Para evitar atingir limites de dispositivos, certifique-se de que remove os regi
 
 1.  Verifique se a Autoridade MDM foi [definida adequadamente](mdm-authority-set.md).
     
-2.  Confirme se as credenciais do utilizador foram sincronizadas corretamente com o Azure Active Directory. Pode verificar se o UPN do utilizador corresponde às informações do Active Directory no portal do Office 365.
+2.  Confirme se as credenciais do utilizador foram sincronizadas corretamente com o Azure Active Directory. Pode verificar se o UPN do utilizador corresponde ao informações do Active Directory no Centro de administração do Microsoft 365.
     Se o UPN não corresponder às informações do Active Directory:
 
     1.  Desative o DirSync no servidor local.
@@ -131,7 +132,7 @@ Para evitar atingir limites de dispositivos, certifique-se de que remove os regi
 ### <a name="unable-to-create-policy-or-enroll-devices-if-the-company-name-contains-special-characters"></a>Não é possível criar a política ou inscrever dispositivos se o nome da empresa incluir carateres especiais
 **Problema:** Não é possível criar a política ou inscrever dispositivos.
 
-**Resolução:** Na [Centro de administração do Office 365](https://portal.office.com/), remova os carateres especiais do nome da empresa e guardar as informações da empresa.
+**Resolução:** Na [Centro de administração do Microsoft 365](https://admin.microsoft.com/), remova os carateres especiais do nome da empresa e guardar as informações da empresa.
 
 ### <a name="unable-to-sign-in-or-enroll-devices-when-you-have-multiple-verified-domains"></a>Não é possível iniciar sessão ou inscrever dispositivos quando tem vários domínios verificados
 **Problema:** Esse problema pode ocorrer quando adiciona um segundo domínio verificado ao seu AD FS. Os utilizadores com o sufixo de nome principal de utilizador (UPN) do segundo domínio podem não conseguir iniciar sessão nos portais ou inscrever dispositivos.

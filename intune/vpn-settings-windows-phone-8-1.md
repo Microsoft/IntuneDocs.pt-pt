@@ -10,17 +10,18 @@ ms.date: 3/6/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc45713a9e1281f8790f82bddd3b26a6dd71e08e
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 0167373db3885c1e234a73149ecd26f9ff62d9ed
+ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238715"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57396043"
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-windows-phone-81"></a>Configurar definições de VPN no Microsoft Intune para dispositivos com o Windows Phone 8.1
 

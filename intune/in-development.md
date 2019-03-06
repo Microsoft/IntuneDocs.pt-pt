@@ -12,18 +12,17 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: ''
-ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b4a766683bdbc6347c1d598d0a2119e6fb1e7ccc
-ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
+ms.openlocfilehash: c7d7b2d145f48d8e5595afea0f72598c7ce9ff4a
+ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
 ms.translationtype: MT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 03/05/2019
-ms.locfileid: "57335445"
+ms.locfileid: "57396680"
 ---
 # <a name="in-development-for-microsoft-intune---march-2019"></a>No desenvolvimento do Microsoft Intune – Março de 2019
 

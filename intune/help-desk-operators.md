@@ -7,21 +7,22 @@ author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 10/23/2018
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ba74c93e2ef7dc469ebd7f5086659181b72a0981
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: a566d0630836e8cead8cb369d486374ff4583bfa
+ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57230028"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57461061"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>Utilizar o portal de resolução de problemas para ajudar os utilizadores na sua empresa
 
@@ -81,7 +82,7 @@ As propriedades das aplicações do cliente.
 
 | Propriedade      | Descrição                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Nome          | O nome da aplicação.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| Name          | O nome da aplicação.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | SO            | O sistema operativo instalado no dispositivo.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | Type          | Pode escolher um tipo de atribuição para cada aplicação.  <br> **Disponível** – Os utilizadores instalam a aplicação a partir do site ou da aplicação Portal da Empresa.  <br> **Não Aplicável** – A aplicação não é instalada nem apresentada no Portal da Empresa. <br> **Desinstalar** – A aplicação é desinstalada dos dispositivos nos grupos selecionados.  <br> **Disponível com ou sem inscrição** – Atribua esta aplicação a grupos de utilizadores cujos dispositivos não estão inscritos no Intune. |
 | Última modificação | O nome do tipo de dispositivo.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
@@ -126,7 +127,7 @@ A tabela resume o estado das políticas de proteção de aplicações para dispo
 
 | Propriedade    | Descrição                                                                                                                                |
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| Nome        | O nome da aplicação.                                                                                                        |
+| Name        | O nome da aplicação.                                                                                                        |
 | Implementado    | O estado de cada uma das aplicações de proteção dos utilizadores. Os estados possíveis para as aplicações são **Verificado** e **Não verificado**. |
 | Plataforma    | O tipo de propriedade do dispositivo (**Empresa**, **Pessoal** ou **Desconhecido**).                                               |
 | Inscrição  | O nome do tipo de dispositivo.                                                                                                     |

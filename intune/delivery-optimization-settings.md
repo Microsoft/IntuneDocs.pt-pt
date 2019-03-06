@@ -9,17 +9,18 @@ ms.date: 02/27/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.reviewer: kerimh
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1b530f49c2b58c39609a76bb09aad1e86e113b4e
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: bc1306b8a4645f68d0c1ccac8e2aab4eee488c3d
+ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57229654"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57398346"
 ---
 # <a name="delivery-optimization-settings-for-intune"></a>Definições de otimização de entrega para o Intune
 

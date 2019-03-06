@@ -4,6 +4,7 @@ description: Início Rápido – criar um utilizador no Intune.
 services: microsoft-intune
 author: ErikjeMS
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.topic: quickstart
 ms.date: 10/30/2018
 ms.author: erikje
@@ -12,12 +13,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 982caa46adb29ef1d57ec65ac855adca9cef1883
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 98c71bd4c93e869b429b7677b4fb7c442aa58643
+ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55834845"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57459990"
 ---
 # <a name="quickstart-create-a-user-and-assign-a-license-to-it"></a>Início rápido: Criar um utilizador e atribuir uma licença ao mesmo
 
@@ -46,9 +47,9 @@ As pessoas necessitam de ter uma conta de utilizador para se inscreverem na gest
 
 ## <a name="assign-a-license-to-the-user"></a>Atribuir uma licença ao utilizador
 
-Depois de criar um utilizador, tem de utilizar o [portal do Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854) para atribuir uma licença do Intune a esse utilizador. Se não lhe atribuir uma licença, o utilizador não conseguirá inscrever o dispositivo no Intune. 
+Depois de criar um utilizador, tem de utilizar o [Centro de administração do Microsoft 365](http://go.microsoft.com/fwlink/p/?LinkId=698854) para atribuir uma licença do Intune a esse utilizador. Se não lhe atribuir uma licença, o utilizador não conseguirá inscrever o dispositivo no Intune. 
 
-1. Inicie sessão no [portal do Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854) com as mesmas credenciais que utilizou para iniciar sessão no Intune.
+1. Inicie sessão para o [Centro de administração do Microsoft 365](http://go.microsoft.com/fwlink/p/?LinkId=698854) com as mesmas credenciais que utilizou para iniciar sessão no Intune.
 2. Selecione **Utilizadores** > **Utilizadores Ativos** > selecione o utilizador que acabou de criar.
 3. Junto a **Licenças de produtos**, selecione **Editar**.
 4. Em **Localização**, selecione uma localização para o utilizador.
@@ -62,7 +63,7 @@ O novo utilizador ativo do Intune mostrará que está a utilizar uma licença do
 
 ## <a name="clean-up-resources"></a>Limpar recursos
 
-Se já não precisar deste utilizador, pode eliminá-lo ao navegar até ao [portal do Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854) e selecionar **Utilizadores** > **Utilizadores ativos** > *selecionar o utilizador na lista* > **Eliminar utilizador** > **Eliminar utilizador** > **Confirmar alterações** > **Fechar**.
+Se não precisa mais este utilizador, pode eliminar o utilizador ao navegar para o [Centro de administração do Microsoft 365](http://go.microsoft.com/fwlink/p/?LinkId=698854) e escolha **utilizadores** > **utilizadores ativos**  >  *escolha o utilizador na lista* > **eliminação do utilizador** > **eliminação do utilizador** > **confirmar as alterações** > **fechar**.
 
 ## <a name="next-steps"></a>Passos Seguintes
 

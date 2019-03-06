@@ -10,6 +10,7 @@ ms.date: 02/28/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 6e9ec662-465b-4ed4-94c1-cff0fe18f126
 ms.reviewer: dougeby
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 01f1102c71aa182a63e395c3ee3be21a134ff0b3
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: ca4b48c2c611273cee385fd94486591e8a97d5a0
+ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55846320"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57460931"
 ---
 # <a name="add-users-and-grant-administrative-permission-to-intune"></a>Adicionar utilizadores e conceder permissões administrativas no Intune
 
@@ -31,10 +32,10 @@ ms.locfileid: "55846320"
 Como administrador, pode adicionar utilizadores diretamente ou sincronizar utilizadores do Active Directory no local. Depois de adicionados, os utilizadores podem inscrever dispositivos e aceder a recursos da empresa. Também pode conceder permissões adicionais aos utilizadores, incluindo permissões de *administrador global* e de *administrador de serviços*.
 
 ## <a name="add-users-to-intune"></a>Adicionar utilizadores ao Intune
-Pode adicionar utilizadores à sua subscrição do Intune manualmente através do [portal do Office 365](https://www.office.com/signin) ou do [portal do Azure](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview). Um administrador pode editar contas de utilizador para atribuir licenças do Intune. Pode atribuir licenças no portal do Office 365 ou no portal do Intune no Azure. Para obter mais informações sobre como utilizar o portal do Office 365, veja [Add users individually or in bulk to the Office 365 portal (Adicionar utilizadores individualmente ou em volume ao portal do Office 365)](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec).
+Pode adicionar manualmente os utilizadores à sua subscrição do Intune através da [Centro de administração do Microsoft 365](https://admin.microsoft.com) ou o [portal do Azure](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview). Um administrador pode editar contas de utilizador para atribuir licenças do Intune. Pode atribuir licenças no Centro de administração do Microsoft 365 ou o portal do Azure no Intune. Para obter mais informações sobre como utilizar o Centro de administração do Microsoft 365, consulte [adicionar utilizadores individualmente ou em massa para o Centro de administração do Microsoft 365](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec).
 
-### <a name="add-intune-users-in-the-office-365-admin-center"></a>Adicionar utilizadores do Intune no Centro de Administração do Office 365
-1. Inicie sessão no [portal do Office 365](https://www.office.com/signin) com uma conta de administrador de gestão de utilizadores ou conta de administrador global.
+### <a name="add-intune-users-in-the-microsoft-365-admin-center"></a>Adicionar utilizadores do Intune no Centro de administração do Microsoft 365
+1. Inicie sessão no [Centro de administração do Microsoft 365](https://admin.microsoft.com) com um administrador ou usuário gestão administrador conta global.
 2. No menu do Office 365, selecione **Administrador**.
 3. No Centro de administração, selecione **Adicionar um utilizador**.
 
@@ -77,7 +78,7 @@ Pode adicionar utilizadores à sua subscrição do Intune manualmente através d
 Depois de adicionar utilizadores à sua subscrição do Intune, recomendamos que conceda permissões administrativas a alguns utilizadores.  Para conceder permissões de administrador, siga estes passos:
 
 ### <a name="give-admin-permissions-in-office-365"></a>Conceder permissões de administrador no Office 365
-1. Inicie sessão no [portal do Office 365](https://www.office.com/signin) com uma conta de administrador global.
+1. Inicie sessão para o [Centro de administração do Microsoft 365](https://admin.microsoft.com) com uma conta de administrador global.
 2. No menu do Office 365, selecione **Administrador**.
 3. No Centro de Administração, selecione **Utilizadores ativos** e, em seguida, selecione o utilizador ao qual pretende conceder permissões de administrador.
 
@@ -90,7 +91,7 @@ Depois de adicionar utilizadores à sua subscrição do Intune, recomendamos que
 6. Escolha **Guardar**.
 
 ### <a name="give-admin-permissions-in-the-azure-portal"></a>Conceder permissões de administrador no portal do Azure
-1. Inicie sessão no [portal do Azure](https://www.office.com/signin) com uma conta de administrador global.
+1. Inicie sessão no [portal do Azure](https://portal.azure.com) com uma conta de administrador global.
 2. No portal do Azure, escolha **Utilizador** e, em seguida, escolha o utilizador ao qual pretende conceder permissões de administrador.
 3. Selecione **Função de diretório** e, em seguida, selecione a permissão.
   ![Captura de ecrã de função de diretório](./media/add-intune-directory-role.png)
@@ -98,7 +99,7 @@ Depois de adicionar utilizadores à sua subscrição do Intune, recomendamos que
 
 ### <a name="types-of-administrators"></a>Tipos de administradores
 
-Atribua uma ou mais permissões de administrador aos utilizadores. Estas permissões definem o âmbito administrativo dos utilizadores e as tarefas que estes podem gerir. As permissões de administrador são comuns entre os diferentes serviços cloud da Microsoft, embora alguns serviços possam não suportar determinadas permissões. O portal do Azure e o portal do Office 365 apresentam funções de administrador limitadas que não são utilizadas pelo Intune. As permissões de administrador do Intune incluem as seguintes opções:
+Atribua uma ou mais permissões de administrador aos utilizadores. Estas permissões definem o âmbito administrativo dos utilizadores e as tarefas que estes podem gerir. As permissões de administrador são comuns entre os diferentes serviços cloud da Microsoft, embora alguns serviços possam não suportar determinadas permissões. O portal do Azure e a lista de centro de administração do Microsoft 365 limitado de funções de administrador que não são utilizadas pelo Intune. As permissões de administrador do Intune incluem as seguintes opções:
 
 - **Administrador global** (Office 365 e Intune) – acede a todas as funcionalidades administrativas no Intune. Por predefinição, a pessoa que se inscreve no Intune torna-se um Administrador global. Os administradores globais são os únicos que podem atribuir outras funções de administrador. Pode ter mais do que um administrador global na sua organização. Como melhor prática, recomendamos que apenas algumas pessoas na sua empresa tenham esta função para reduzir os riscos para o seu negócio.
 - **Administrador de palavras-passe** (Office 365 e Intune) – repõe palavras-passe, faz a gestão de pedidos de serviço e monitoriza o estado de funcionamento do serviço. Os administradores de palavras-passe estão limitados à reposição de palavras-passe para os utilizadores.
@@ -109,7 +110,7 @@ Atribua uma ou mais permissões de administrador aos utilizadores. Estas permiss
 
 A conta que utilizar para criar a sua subscrição do Microsoft Intune é um administrador global. Como melhor prática, não utilize um administrador global para tarefas de gestão diárias. Embora um administrador não necessite de uma licença do Intune para aceder ao mesmo no portal do Azure, é necessária uma licença do Intune para desempenhar determinadas tarefas de gestão, como configurar o Conector do serviço Exchange.
 
-Para aceder ao portal do Office 365, a sua conta tem de ter a opção **Início de sessão permitido** definida. No portal do Azure, em **Perfil**, defina **Bloquear início de sessão** como **Não** para permitir o acesso. Este estado é diferente de ter uma licença para a subscrição. Por predefinição, todas as contas de utilizador têm o estado **Permitido**. Os utilizadores sem permissões de administrador podem utilizar o portal do Office 365 para repor palavras-passe do Intune.
+Para aceder ao centro de administração do Microsoft 365, sua conta tem de ter uma **início de sessão permitido** definido. No portal do Azure, em **Perfil**, defina **Bloquear início de sessão** como **Não** para permitir o acesso. Este estado é diferente de ter uma licença para a subscrição. Por predefinição, todas as contas de utilizador têm o estado **Permitido**. Os utilizadores sem permissões de administrador podem utilizar o Centro de administração do Microsoft 365 para repor palavras-passe do Intune.
 
 ## <a name="sync-active-directory-and-add-users-to-intune"></a>Sincronizar o Active Directory e adicionar utilizadores ao Intune
 Pode configurar a sincronização de diretórios para importar contas de utilizador do Active Directory no local para o Microsoft Azure Active Directory (Azure AD) que inclui utilizadores do Intune. Ligar o serviço do Active Directory no local a todos os serviços baseados no Azure Active Directory simplifica bastante a gestão da identidade de utilizadores. Também pode configurar funcionalidades de início de sessão único para tornar a experiência de autenticação dos utilizadores familiar e fácil. Ao ligar o mesmo [inquilino do Azure AD](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/) com múltiplos serviços, as contas de utilizador que anteriormente foram sincronizados estão disponíveis para todos os serviços baseados na cloud.

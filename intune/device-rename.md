@@ -9,18 +9,19 @@ ms.date: 02/26/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 39980211d7ab1b286298b9f196acd5ba29a44361
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: fdd5a19d46cd6081e5671ddd84e29bf7db2ef538
+ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57232425"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57398958"
 ---
 # <a name="rename-a-windows-device-in-intune"></a>Mudar o nome de um dispositivo Windows no Intune
 

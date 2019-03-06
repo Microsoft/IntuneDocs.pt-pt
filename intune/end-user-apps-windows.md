@@ -9,6 +9,7 @@ ms.date: 12/05/2016
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: e471fed8-19f0-4b37-aaa2-65f28a6b4794
 ms.reviewer: aanavath
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6f15aff30c6d1d7318396a7be80023fcd448fa34
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 4d9d4216026487541cbdd798f247dde3bf08e1ea
+ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57230096"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57388345"
 ---
 # <a name="how-your-windows-users-get-their-apps"></a>Como os utilizadores de dispositivos Windows obtêm as aplicações
 
