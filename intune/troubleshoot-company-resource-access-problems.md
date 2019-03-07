@@ -6,9 +6,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 06/08/2018
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 40622ced-6029-4abf-873e-b51d2b51934c
 ms.reviewer: tscott
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 77963d9d338fcd9d5d58e5efeffe06379714e8e3
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: ebb311eab93abd66f6a23e58737573622b68f3e8
+ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57231507"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57461503"
 ---
 # <a name="troubleshoot-company-resource-access-problems-with-microsoft-intune"></a>Resolução de problemas de acesso aos recursos da empresa com o Microsoft Intune
 
