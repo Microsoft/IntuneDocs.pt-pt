@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4ce63f836c006c44e88f939c29f3d9648acc045e
-ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
+ms.openlocfilehash: ed33ed58141be9463d9f0ce885eb5ccb9951effb
+ms.sourcegitcommit: a624abbfc3c80c5fba6c47a19cf1a6923c5fd438
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57400369"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57528314"
 ---
 # <a name="windows-10-and-later-device-settings-to-run-as-a-kiosk-in-intune"></a>Windows 10 e posteriores definições do dispositivo para ser executado como um quiosque no Intune
 
@@ -104,7 +104,7 @@ Para saber mais sobre a funcionalidade de quiosque do Windows no Intune, veja [c
 
 ## <a name="multi-app-kiosks"></a>Quiosques de várias aplicações
 
-As aplicações neste modo estão disponíveis no menu Iniciar. Estas aplicações são as únicas aplicações que o utilizador pode abrir.
+As aplicações neste modo estão disponíveis no menu Iniciar. Estas aplicações são as únicas aplicações que o utilizador pode abrir. Se uma aplicação tem uma dependência no outro aplicativo, ambos têm de ser incluídas na lista de aplicações permitidas. Por exemplo, o Internet Explorer 64 bits tem uma dependência no Internet Explorer 32 bits, pelo que tem de permitir "C:\Program Files\internet explorer\iexplore.exe" e "C:\Program Files (x86) \Internet". 
 
 - **Selecione um modo de local público**: Escolher **quiosque de várias aplicações**.
 

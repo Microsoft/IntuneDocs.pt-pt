@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e2b4167e52b467fd0d342f53bad013b1e8320e7d
-ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
+ms.openlocfilehash: e6f3db2034bdc71e656f468913394baf455d47e8
+ms.sourcegitcommit: a624abbfc3c80c5fba6c47a19cf1a6923c5fd438
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57397659"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57528246"
 ---
 # <a name="intune-enrollment-method-capabilities-for-windows-devices"></a>Funcionalidades de método de inscrição do Intune para dispositivos Windows
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -30,28 +30,28 @@ ms.locfileid: "57397659"
 Existem vários métodos para inscrever dispositivos de sua força de trabalho no Intune. Cada método possui diferentes funcionalidades e melhores práticas, conforme demonstrado nas tabelas abaixo.
 
 ## <a name="best-practices-by-enrollment-method"></a>Melhores práticas por método de inscrição
-| **Melhores práticas** | **[Azure AD associado](windows-enroll.md#enable-windows-10-automatic-enrollment)**|**[Azure AD associado ao Autopilot](enrollment-autopilot.md)** |**[Em massa](windows-bulk-enroll.md)**|**[DEM](device-enrollment-manager-enroll.md)** | **[BYOD](device-enrollment.md#bring-your-own-device)** | **[GPO](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)** |
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|Utilizados habitualmente no Intune for Education|![X](media/xmark.png)|![Marca de verificação](media/checkmark.png)|![Marca de verificação](media/checkmark.png)|![Marca de verificação](media/checkmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|
-|Dispositivos que podem ser utilizados como dispositivos partilhados|![X](media/xmark.png)|![X](media/xmark.png)|![Marca de verificação](media/checkmark.png)|![Marca de verificação](media/checkmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|
-|Dispositivos pessoais que têm de aceder a recursos da empresa|![X](media/xmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![Marca de verificação](media/checkmark.png)|![X](media/xmark.png)|
-|Gestão personalizada de aplicações|![Marca de verificação](media/checkmark.png)|![Marca de verificação](media/checkmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![Marca de verificação](media/checkmark.png)|![Marca de verificação](media/checkmark.png)|
+| **Melhores práticas** | **[Azure AD associado](windows-enroll.md#enable-windows-10-automatic-enrollment)**|**[Associado ao Azure AD com o Autopilot (modo controlada pelo usuário)](enrollment-autopilot.md)** |**[Associado ao Azure AD com o Autopilot (auto implementar o modo de)](enrollment-autopilot.md)** |**[Em massa](windows-bulk-enroll.md)**|**[DEM](device-enrollment-manager-enroll.md)** | **[BYOD](device-enrollment.md#bring-your-own-device)** | **[GPO](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)** | **[Co-management](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview)** |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|Utilizados habitualmente no Intune for Education|![X](media/xmark.png)|![Marca de verificação](media/checkmark.png)|![X](media/xmark.png)|![Marca de verificação](media/checkmark.png)|![Marca de verificação](media/checkmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|
+|Dispositivos que podem ser utilizados como dispositivos partilhados|![X](media/xmark.png)|![X](media/xmark.png)|![Marca de verificação](media/checkmark.png)|![Marca de verificação](media/checkmark.png)|![Marca de verificação](media/checkmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|
+|Dispositivos pessoais que têm de aceder a recursos da empresa|![X](media/xmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![Marca de verificação](media/checkmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|
+|Gestão personalizada de aplicações|![Marca de verificação](media/checkmark.png)|![Marca de verificação](media/checkmark.png)|![Marca de verificação](media/checkmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![Marca de verificação](media/checkmark.png)|![Marca de verificação](media/checkmark.png)|![Marca de verificação](media/checkmark.png)|
 
 ## <a name="capabilities-by-enrollment-method"></a>Funcionalidades por método de inscrição
 
-| **Funcionalidades** | **[Azure AD associado](windows-enroll.md#enable-windows-10-automatic-enrollment)**|**[Azure AD associado ao Autopilot](enrollment-autopilot.md)** |**[Em massa](windows-bulk-enroll.md)**|**[DEM](device-enrollment-manager-enroll.md)** | **[BYOD](device-enrollment.md#bring-your-own-device)** | **[GPO](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)** |
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|Acesso condicional                                      |![Marca de verificação](media/checkmark.png)|![Marca de verificação](media/checkmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![Marca de verificação](media/checkmark.png)|![Marca de verificação](media/checkmark.png)|
-|O utilizador é associado ao dispositivo                    |![Marca de verificação](media/checkmark.png)|![Marca de verificação](media/checkmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![Marca de verificação](media/checkmark.png)|![Marca de verificação](media/checkmark.png)|
-|Requer o Azure AD Premium                               |![X](media/xmark.png)|![Marca de verificação](media/checkmark.png)|![Marca de verificação](media/checkmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![Marca de verificação](media/checkmark.png)|
-|O dispositivo pode avaliar os recursos protegidos por AC             |![Marca de verificação](media/checkmark.png)|![Marca de verificação](media/checkmark.png)|![Marca de verificação](media/checkmark.png)|![X](media/xmark.png)|![Marca de verificação](media/checkmark.png)|![Marca de verificação](media/checkmark.png)|
-|Os utilizadores não podem ser administradores dos respetivos dispositivos               |![X](media/xmark.png)|![Marca de verificação](media/checkmark.png)|![Marca de verificação](media/checkmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|
-|Capacidade de configurar a experiência de configuração do dispositivo        |![X](media/xmark.png)|![Marca de verificação](media/checkmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|
-|Capacidade de inscrever dispositivos sem a interação do utilizador      |![X](media/xmark.png)|![X](media/xmark.png)|![Marca de verificação](media/checkmark.png)|![Marca de verificação](media/checkmark.png)|![X](media/xmark.png)|![Marca de verificação](media/checkmark.png)|
-|Capacidade de executar scripts do PowerShell                       |![Marca de verificação](media/checkmark.png)|![Marca de verificação](media/checkmark.png)|![Marca de verificação](media/checkmark.png)|![Marca de verificação](media/checkmark.png)|![X](media/xmark.png)|![X](media/xmark.png)| 
-|Suporta a inscrição automática após a associação a um domínio do AD      |![X](media/xmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![Marca de verificação](media/checkmark.png)|
-|Suporta a inscrição automática após a associação a um domínio do Azure AD Híbrido|![X](media/xmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![Marca de verificação](media/checkmark.png)|
-|Suporta a inscrição automática após a associação a um domínio do Azure AD       |![Marca de verificação](media/checkmark.png)|![Marca de verificação](media/checkmark.png)|![Marca de verificação](media/checkmark.png)|![Marca de verificação](media/checkmark.png)|![Marca de verificação](media/checkmark.png)|![X](media/xmark.png)|
+| **Funcionalidades** | **[Azure AD associado](windows-enroll.md#enable-windows-10-automatic-enrollment)**|**[Associado ao Azure AD com o Autopilot (modo controlada pelo usuário)](enrollment-autopilot.md)** |**[Associado ao Azure AD com o Autopilot (auto implementar o modo de)](enrollment-autopilot.md)** |**[Em massa](windows-bulk-enroll.md)**|**[DEM](device-enrollment-manager-enroll.md)** | **[BYOD](device-enrollment.md#bring-your-own-device)** | **[GPO](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)** | **[Co-management](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview)** |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|Acesso condicional                                      |![Marca de verificação](media/checkmark.png)|![Marca de verificação](media/checkmark.png)|![Marca de verificação](media/checkmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![Marca de verificação](media/checkmark.png)|![Marca de verificação](media/checkmark.png)|![Marca de verificação](media/checkmark.png)|
+|O utilizador é associado ao dispositivo                    |![Marca de verificação](media/checkmark.png)|![Marca de verificação](media/checkmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![Marca de verificação](media/checkmark.png)|![Marca de verificação](media/checkmark.png)|![Marca de verificação](media/checkmark.png)|
+|Requer o Azure AD Premium                               |![X](media/xmark.png)|![Marca de verificação](media/checkmark.png)|![Marca de verificação](media/checkmark.png)|![Marca de verificação](media/checkmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![Marca de verificação](media/checkmark.png)|![Marca de verificação](media/checkmark.png)|
+|O dispositivo pode avaliar os recursos protegidos por AC             |![Marca de verificação](media/checkmark.png)|![Marca de verificação](media/checkmark.png)|![Marca de verificação](media/checkmark.png)|![Marca de verificação](media/checkmark.png)|![X](media/xmark.png)|![Marca de verificação](media/checkmark.png)|![Marca de verificação](media/checkmark.png)|![Marca de verificação](media/checkmark.png)|
+|Os utilizadores não podem ser administradores dos respetivos dispositivos               |![X](media/xmark.png)|![Marca de verificação](media/checkmark.png)|![Marca de verificação](media/checkmark.png)|![Marca de verificação](media/checkmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|
+|Capacidade de configurar a experiência de configuração do dispositivo        |![X](media/xmark.png)|![Marca de verificação](media/checkmark.png)|![Marca de verificação](media/checkmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|
+|Capacidade de inscrever dispositivos sem a interação do utilizador      |![X](media/xmark.png)|![X](media/xmark.png)|![Marca de verificação](media/checkmark.png)|![Marca de verificação](media/checkmark.png)|![Marca de verificação](media/checkmark.png)|![X](media/xmark.png)|![Marca de verificação](media/checkmark.png)|![Marca de verificação](media/checkmark.png)|
+|Capacidade de executar scripts do PowerShell                       |![Marca de verificação](media/checkmark.png)|![Marca de verificação](media/checkmark.png)|![Marca de verificação](media/checkmark.png)|![Marca de verificação](media/checkmark.png)|![Marca de verificação](media/checkmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![X](media/xmark.png)| 
+|Suporta a inscrição automática após a associação a um domínio do AD      |![X](media/xmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![Marca de verificação](media/checkmark.png)|![Marca de verificação](media/checkmark.png)|
+|Suporta a inscrição automática após a associação a um domínio do Azure AD Híbrido|![X](media/xmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![Marca de verificação](media/checkmark.png)|![Marca de verificação](media/checkmark.png)|
+|Suporta a inscrição automática após a associação a um domínio do Azure AD       |![Marca de verificação](media/checkmark.png)|![Marca de verificação](media/checkmark.png)|![Marca de verificação](media/checkmark.png)|![Marca de verificação](media/checkmark.png)|![Marca de verificação](media/checkmark.png)|![Marca de verificação](media/checkmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|
 
 ## <a name="next-steps"></a>Passos Seguintes
 

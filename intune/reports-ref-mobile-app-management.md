@@ -6,7 +6,7 @@ keywords: Armazém de Dados do Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/20/2018
+ms.date: 03/05/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6d47d681a1c4dd34a2738839f9561efbe621a5b0
-ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
+ms.openlocfilehash: 0f64afa1a2b111f168919f9d6669e246ee348461
+ms.sourcegitcommit: a624abbfc3c80c5fba6c47a19cf1a6923c5fd438
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57390560"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57528263"
 ---
 # <a name="reference-for-mobile-app-management-mam-entities"></a>Referência para as entidades de gestão de aplicações móveis (MAM)
 
@@ -84,12 +84,12 @@ A entidade **MamCheckin** representa dados recolhidos quando uma instância de G
 | Propriedade | Descrição | Exemplo |
 |---------|------------|--------|
 | DateKey |Chave da data quando a entrada da aplicação MAM foi registada no armazém de dados. | 20160703 |
-| ApplicationInstanceKey |Chave da instância da aplicação associada a esta entrada da aplicação MAM. |5/2/1900 12:00:00 AM |
-| UserKey |Chave do utilizador associado a esta entrada da aplicação MAM. |1/12/1900 12:00:00 AM |
-| ApplicationKey |Chave da aplicação MAM que deu entrada. |1/10/1900 12:00:00 AM |
-| DeviceHealthKey |Chave de DeviceHealth associada a esta entrada da aplicação MAM. |1/2/1900 12:00:00 AM |
-| PlatformKey |Representa a plataforma do dispositivo associado a esta entrada da aplicação MAM. |1/1/1900 12:00:00 AM |
-| EffectiveAppliedPolicyKey |Representa a política aplicada em vigor associada à aplicação MAM que deu entrada. Uma política aplicada em vigor resulta da união de todas as políticas relevantes para um utilizador e uma aplicação específicos. |5/2/1900 12:00:00 AM |
+| ApplicationInstanceKey |Chave da instância da aplicação associada a esta entrada da aplicação MAM. | 123 |
+| UserKey |Chave do utilizador associado a esta entrada da aplicação MAM. | 4323 |
+| ApplicationKey |Chave da aplicação MAM que deu entrada. |234 |
+| DeviceHealthKey |Chave de DeviceHealth associada a esta entrada da aplicação MAM. | 321 |
+| PlatformKey |Representa a plataforma do dispositivo associado a esta entrada da aplicação MAM. |123 |
+| EffectiveAppliedPolicyKey |Representa a política aplicada em vigor associada à aplicação MAM que deu entrada. Uma política aplicada em vigor resulta da união de todas as políticas relevantes para um utilizador e uma aplicação específicos. | 322 |
 | LastCheckInDate |Data e hora em que esta aplicação MAM deu entrada pela última vez. O valor pode ser nulo. |11/23/2016 12:00:00 AM |
 
 ## <a name="mamdevicehealth"></a>MamDeviceHealth
@@ -98,8 +98,8 @@ A entidade **MamDeviceHealth** representa dispositivos que têm políticas de Ge
 
 | Propriedade | Descrição | Exemplo |
 |---------|------------|--------|
-| DeviceHealthKey |Identificador exclusivo do dispositivo e respetivo estado de funcionamento associado no armazém de dados – chave de substituição. |1/1/1900 12:00:00 AM |
-| DeviceHealth |Identificador exclusivo do dispositivo e respetivo estado de funcionamento associado, semelhante a DeviceHealthKey, mas o identificador é uma chave natural. |1/1/1900 12:00:00 AM |
+| DeviceHealthKey |Identificador exclusivo do dispositivo e respetivo estado de funcionamento associado no armazém de dados – chave de substituição. |123 |
+| DeviceHealth |Identificador exclusivo do dispositivo e respetivo estado de funcionamento associado, semelhante a DeviceHealthKey, mas o identificador é uma chave natural. |b66bc706-ffff-7777-0340-032819502773 |
 | DeviceHealthName |Representa o estado do dispositivo. <br>Not available: não existem informações sobre este dispositivo. <br>Healthy: o dispositivo não foi desbloqueado por jailbreak. <br>Unhealthy: o dispositivo foi desbloqueado por jailbreak. |Not Available Healthy Unhealthy |
 | RowLastModifiedDateTimeUtc |Data e hora em UTC em que o Estado de Funcionamento deste Dispositivo MAM específico foi modificado pela última vez no armazém de dados. |11/23/2016 12:00:00 AM |
 

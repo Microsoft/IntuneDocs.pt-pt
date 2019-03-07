@@ -6,7 +6,7 @@ keywords: Armazém de Dados do Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/14/2018
+ms.date: 03/05/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 644916ddbea2487c985576524ceaf9cb13b5e0dd
-ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
+ms.openlocfilehash: 811521792d0e034eb252d8c480a25b52518c1f68
+ms.sourcegitcommit: a624abbfc3c80c5fba6c47a19cf1a6923c5fd438
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57390530"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57528297"
 ---
 # <a name="reference-for-policy-entities"></a>Referência para as entidades de políticas
 
@@ -60,7 +60,7 @@ A entidade **PolicyType** apresenta uma lista dos tipos de perfis de configuraç
 
 ## <a name="deviceconfiguration"></a>DeviceConfiguration
 
-A entidade **DeviceConfigurationProfileDeviceActivity** apresenta uma lista do número de dispositivos no estado com êxito, pendente, com falhas ou com erros por dia. O número reflete os Perfis de configuração de dispositivos atribuídos à entidade. Por exemplo, se um dispositivo estiver no estado com êxito em todas as políticas atribuídas, o contador de casos com êxito tem um incremento de um para esse dia. Se um dispositivo tiver dois perfis atribuídos, um no estado com êxito e outro num estado com erros, a entidade incrementa o contador do estado com êxito (Succeeded) e coloca o dispositivo no estado com erros. A entidade apresenta uma lista de quantos dispositivos estão em cada um dos estados num determinado dia nos últimos 30 dias.
+O **DeviceConfigurationProfileDeviceActivity** entidade apresenta uma lista o número de **dispositivos** com êxito, pendente, com falhas ou Estado com erros por dia. O número reflete os Perfis de configuração de dispositivos atribuídos à entidade. Por exemplo, se um **dispositivo** está no Estado com êxito para todas as políticas atribuídas, ele incrementa o contador com êxito um para esse dia. Se um dispositivo tiver dois perfis atribuídos, um no estado com êxito e outro num estado com erros, a entidade incrementa o contador do estado com êxito (Succeeded) e coloca o dispositivo no estado com erros. A entidade apresenta uma lista de quantos dispositivos estão em cada um dos estados num determinado dia nos últimos 30 dias.
 
 | Propriedade  | Descrição | Exemplo |
 |---------|------------|--------|
@@ -70,9 +70,7 @@ A entidade **DeviceConfigurationProfileDeviceActivity** apresenta uma lista do n
 | Erro |Número de Dispositivos exclusivos no estado com erros. |10 |
 | Falhou |Número de Dispositivos exclusivos no estado com falhas. |2 |
 
-
-
-A entidade **DeviceConfigurationProfileUserActivity** apresenta uma lista do número de utilizadores no estado com êxito, pendente, com falhas ou com erros por dia. O número reflete os Perfis de configuração de dispositivos atribuídos à entidade. Por exemplo, se um utilizador estiver no estado com êxito em todas as políticas atribuídas, sobe o contador com êxito em um para esse dia. Se um utilizador tiver dois perfis atribuídos, um no estado com êxito e outro no estado com erros, é contado o utilizador no estado com erros.  A entidade **DeviceConfigurationProfileUserActivity** apresenta uma lista de quantos utilizadores estão em que estado num determinado dia nos últimos 30 dias.
+O **DeviceConfigurationProfileUserActivity** entidade apresenta uma lista o número de **utilizadores** com êxito, pendente, com falhas ou Estado com erros por dia. O número reflete os Perfis de configuração de dispositivos atribuídos à entidade. Por exemplo, se um **utilizador** está no Estado com êxito para todas as políticas atribuídas, sobe o contador com êxito por um para esse dia. Se um utilizador tiver dois perfis atribuídos, um no estado com êxito e outro no estado com erros, é contado o utilizador no estado com erros.  A entidade **DeviceConfigurationProfileUserActivity** apresenta uma lista de quantos utilizadores estão em que estado num determinado dia nos últimos 30 dias.
 
 | Propriedade  | Descrição | Exemplo |
 |---------|------------|--------|
