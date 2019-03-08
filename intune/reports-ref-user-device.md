@@ -7,7 +7,7 @@ author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 12/14/2018
-ms.topic: conceptual
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 47596c9d35cd1a7288e414cba26577020430ebdc
-ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
+ms.openlocfilehash: 5d3473b04a1d015f88d27359864a84227215b62a
+ms.sourcegitcommit: 9a4c5b6c2ce511edaeace25426a23f180cb71e15
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57388761"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57565303"
 ---
 # <a name="reference-for-user-device-association-entity"></a>Referência para a entidade Associação de Dispositivo do Utilizador
 
@@ -32,7 +32,7 @@ A entidade **UserDeviceAssociation** contém associações de dispositivos do ut
 ## <a name="userdeviceassociation"></a>UserDeviceAssociation
 
 
-|        Nome        |                                           Descrição                                            |        Exemplo         |
+|        Name        |                                           Descrição                                            |        Exemplo         |
 |--------------------|--------------------------------------------------------------------------------------------------|------------------------|
 |      UserKey       |              Identificador exclusivo do utilizador no armazém de dados. (Chave de substituição).               |          123           |
 |     DeviceKey      |                      Identificador exclusivo do dispositivo no armazém de dados.                      |          123           |

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4ab45a65fb9c52a48472c7efc3b6bdc7cead1f6e
-ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
+ms.openlocfilehash: 19f0fbf401fee4bad660e946bb135544a29de310
+ms.sourcegitcommit: 9a4c5b6c2ce511edaeace25426a23f180cb71e15
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57390697"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57566510"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Inscrever automaticamente dispositivos iOS com o Programa de Inscrição de Dispositivos da Apple
 
@@ -116,7 +116,7 @@ Com o certificado push, o Intune pode inscrever e gerir dispositivos iOS ao envi
 Agora que instalou o seu token, pode criar um perfil de inscrição para dispositivos DEP. Um perfil de inscrição de dispositivos especifica as definições aplicadas a um grupo de dispositivos durante a inscrição.
 
 > [!NOTE]
-> Dispositivos serão bloqueados se não existem licenças suficientes Portal da empresa para um token VPP, ou se o token expirou. O Intune irá apresentar um alerta whne um token está prestes a expirar licenças estiverem em execução ou baixas.
+> Dispositivos serão bloqueados se não existem licenças suficientes Portal da empresa para um token VPP, ou se o token expirou. O Intune irá apresentar um alerta quando um token está prestes a expirar ou há pouca licenças.
  
 
 1. No Intune no portal do Azure, escolha **Inscrição de dispositivos** > **Inscrição da Apple** > **Tokens do programa de inscrição**.
@@ -151,6 +151,8 @@ Agora que instalou o seu token, pode criar um perfil de inscrição para disposi
 
 7. Se tiver selecionado um token para **Instalar Portal da Empresa com o VPP**, pode bloquear imediatamente o dispositivo no Modo de Aplicação Única (nomeadamente, a aplicação Portal da Empresa) após a conclusão do Assistente de Configuração. Selecione **Sim** para **Execute o Portal da Empresa no Modo de Aplicação Única até à autenticação** para definir esta opção. Para utilizar o dispositivo, tem de autenticar primeiro o utilizador ao iniciar sessão com o Portal da Empresa.
     Esta funcionalidade só é suportada para iOS 11.3.1 e posterior.
+
+   ![Captura de ecrã do modo de aplicação única.](./media/device-enrollment-program-enroll-ios/single-app-mode.png)
 
 8. Escolha **Definições de Gestão de Dispositivos** e selecione se quer ou não que os dispositivos com este perfil sejam supervisionados.
 

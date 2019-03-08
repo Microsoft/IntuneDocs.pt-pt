@@ -1,6 +1,6 @@
 ---
 title: Como proteger o seu dispositivo Windows com encriptação | Documentos da Microsoft
-description: Descreve como encriptar dispositivos Windows
+description: Ativar o BitLocker para encriptar um dispositivo Windows 10
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -18,12 +18,12 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e6f5da597ae0c765ea1328ee44d4c4e69d41b5ea
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: b39cc879c9e1232335c38e8d95c0861a12662c6a
+ms.sourcegitcommit: 9a4c5b6c2ce511edaeace25426a23f180cb71e15
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55847694"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57564470"
 ---
 # <a name="how-to-protect-your-windows-device-using-encryption"></a>Como proteger o seu dispositivo Windows com encriptação
 

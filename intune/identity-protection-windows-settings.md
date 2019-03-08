@@ -6,7 +6,7 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 01/22/2019
-ms.topic: conceptual
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9a3347358faa002a6ab49cc0057a1a9ac5ddc5a3
-ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
+ms.openlocfilehash: 51569b5cb6faac6c265734b46f1efbb8407e0d3c
+ms.sourcegitcommit: 9a4c5b6c2ce511edaeace25426a23f180cb71e15
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57389958"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57566221"
 ---
 # <a name="windows-10-and-newer-device-settings-to-enable-windows-hello-for-business-in-intune"></a>Definições de dispositivo 10 (e versões posteriores) do Windows para ativar o Windows Hello para empresas no Intune
 

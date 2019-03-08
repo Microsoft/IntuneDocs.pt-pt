@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 808c5e5c27c7f0ff5c22a0ddc99374da8bfd44bc
-ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
+ms.openlocfilehash: 5a5e000a973932db0bbaa215ea94976219ff905c
+ms.sourcegitcommit: 6da78a3c07e9ad9c72ff532867cde754e9deca00
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57461486"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "57577851"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>Resolver problemas com a instalação de aplicações
 
@@ -132,6 +132,7 @@ As seguintes mensagens de erro e descrições fornecem detalhes sobre erros de i
 | Não é possível instalar aplicações de sistemas com o seu fornecedor MDM (-2016330858). | A instalação de aplicações que estão pré-instaladas pelo sistema operativo iOS não é um cenário suportado. |
 | Não é possível instalar aplicações quando o dispositivo estiver no modo perdido (-2016330857). | Toda a utilização do dispositivo está bloqueada no modo perdido.   Desative o modo perdido para instalar aplicações. |
 | Não é possível instalar aplicações quando o dispositivo estiver no modo de local público (-2016330856). | Tente adicionar este dispositivo a um grupo de exclusão para a política de configuração do modo de local público para instalar aplicações. |
+| Não é possível instalar aplicações de 32 bits neste dispositivo (-2016330852). | O dispositivo não suporta a instalação de aplicações de 32 bits. Experimente a implementar a versão de 64 bits da aplicação. |
 | Utilizador tem de iniciar sessão para o Store da aplicação (-2016330855). | O utilizador tem de entrar para a App Store, para que possa ser instalada a aplicação. |
 | Problema desconhecido. Tente novamente (-2016330854). | A instalação da aplicação falhou devido a um motivo desconhecido.   Tente novamente mais tarde. |
 | A instalação da aplicação falhou. Intune tentará novamente na próxima vez que o dispositivo é sincronizado (-2016330853). | A instalação da aplicação encontrou um erro de dispositivo. Sincronize o dispositivo para tente instalar novamente a aplicação. |
