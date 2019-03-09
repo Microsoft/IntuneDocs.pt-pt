@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ab5fe8ea70e9f0db73a28d7ffa363c42ab7d51c2
-ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
+ms.openlocfilehash: 50be92847922458a7145e02bcc2125ddadc6976f
+ms.sourcegitcommit: a59c78c13c4ff68e8a56b69029adfe51704ba570
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57394001"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "57682645"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Como configurar a aplicação Portal da Empresa do Microsoft Intune
 
@@ -34,7 +34,7 @@ O portal da empresa do Microsoft Intune é onde os utilizadores acedem aos dados
 > [!Tip]        
 > Quando personaliza o Portal da Empresa, as configurações aplicam-se tanto ao site do Portal da Empresa, como às aplicações do Portal da Empresa. Tenha em atenção que os utilizadores têm de ter uma licença do Intune atribuída para aceder ao site do Portal da empresa.
 
-Personalizar o Portal da Empresa ajuda a proporcionar uma experiência familiar e útil aos utilizadores finais. Para o fazer, na carga de trabalho **Aplicações do cliente**, escolha **Configuração** > **Imagem Corporativa do Portal da Empresa** e, em seguida, configure as definições necessárias.  
+Ao personalizar o Portal da empresa, irá ajudar a proporcionar uma experiência familiar e útil para os utilizadores finais. Para tal, no portal do Intune, selecione **aplicações de cliente** > **marca e personalização**e, em seguida, configure as definições necessárias. 
 
 > [!Note]       
 > Se estiver a utilizar o Azure Government, os registos de aplicações estão disponíveis para o utilizador final decidir como pretende partilhar ao iniciar o processo para obter ajuda com um problema. No entanto, se não estiver a utilizar o Azure Government, o Portal da Empresa para Windows 10 irá enviar registos de aplicações diretamente para a Microsoft quando o utilizador iniciar o processo para obter ajuda com um problema. O envio dos registos de aplicações para a Microsoft irá facilitar a resolução dos problemas. 

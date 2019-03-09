@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/27/2019
+ms.date: 03/09/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: kerimh
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7b9480e6eab21ace05456bd74e89d495517a8356
-ms.sourcegitcommit: 9a4c5b6c2ce511edaeace25426a23f180cb71e15
+ms.openlocfilehash: e6e90828da8c209b534b830af7fe522b254374bf
+ms.sourcegitcommit: 29d754c2b67aa2d8f4fb68343988c3bb05d5dcec
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57566527"
+ms.lasthandoff: 03/09/2019
+ms.locfileid: "57695284"
 ---
 # <a name="delivery-optimization-settings-for-intune"></a>Definições de otimização de entrega para o Intune
 
@@ -65,6 +65,8 @@ Para configurar o Intune para utilizar estas definições, consulte [fornecer at
 |[Nível de bateria mínimos necessário para carregar (em %)](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#allow-uploads-while-the-device-is-on-battery-while-under-set-battery-level)      | 1709        | Especifica como uma percentagem, o nível de bateria mínimo que um dispositivo tem de ter para carregar dados para elementos da rede. Se a diminuir o nível de bateria com o valor especificado, qualquer carregamentos active colocar em pausa automaticamente.   <br><br>**Predefinido**:  *Não está configurado nenhum valor*  <br><br>**Recomendado**:  40%   <br><br>Política de CSP: [DOMinBatteryPercentageAllowedToUpload](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dominbatterypercentageallowedtoupload) <br><br>        |
 |[Modificar a unidade de cache](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#modify-cache-drive)        | 1607        | Especifique a unidade essa Otimização da entrega utiliza para a sua cache. Pode usar uma variável de ambiente, a letra de unidade ou um caminho completo.  <br><br>**Default**:  %SystemDrive% <br><br>Política de CSP:  [DOModifyCacheDrive](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domodifycachedrive) <br><br>        |
 | [Idade máxima de cache (em dias)](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#max-cache-age)    | 1511         | Especifica como há muito tempo depois de cada ficheiro transferido com êxito que o arquivo é mantido na cache de otimização de entrega num dispositivo.   <br><br>Com o Intune configure a idade de cache em dias. O número de dias que definir é convertido no número de segundos, aplicável que é a forma como Windows define isto esta definição. Por exemplo, uma configuração do Intune de 3 dias é convertida no dispositivo para 259200 segundos (3 dias).  <br><br>**Predefinido**:   *Não está configurado nenhum valor*     <br><br>**Recomendado**: 7   <br><br>Política de CSP: [DOMaxCacheAge](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domaxcacheage)  <br><br>          |
+| Tipo de tamanho máximo da cache  | *Ver detalhes*    | Selecione a forma de gerir a quantidade de espaço em disco num dispositivo que é utilizado pela otimização de entrega. Quando não configurada, o tamanho da cache por predefinição, 20% de espaço livre em disco disponível.  <br><ul><li>**Não configurado** (predefinida)</li><br><li>**Absoluto** – especifique o [absoluto tamanho máximo da cache (em GB)](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#absolute-max-cache-size) para configurar a quantidade máxima de espaço na unidade de um dispositivo pode utilizar para a otimização de entrega. O tamanho da cache quando definido como 0 (zero), é ilimitado, apesar de otimização de entrega irá limpar a cache quando o dispositivo estiver em baixo espaço em disco. <br><br>Requer Windows 1607<br><br> Política de CSP: [DOAbsoluteMaxCacheSize](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-doabsolutemaxcachesize) </li><br><li>**Percentagem** – especifique o [tamanho máximo da cache (em %)](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#max-cache-size) para configurar a quantidade máxima de espaço na unidade de um dispositivo pode utilizar para a otimização de entrega. A percentagem é o espaço de unidade disponível e Otimização da entrega constantemente avalia o espaço de disco disponível e irá limpar a cache para manter o tamanho máximo da cache sob a percentagem de conjunto. <br><br>Requer a versão 1511 do Windows<br><br>Política de CSP: [DOMaxCacheSize](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domaxcachesize)  |
+| [O elemento de rede VPN de colocação em cache](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#enable-peer-caching-while-the-device-connects-via-vpn)  | 1709  | Selecione **ativado** para configurar um dispositivo para participar na colocação em cache ponto a ponto enquanto estiver ligado através da VPN à rede de domínio. Dispositivos que estão ativados podem transferir a partir de ou carregar para outros dispositivos de rede de domínio, VPN ou da rede de domínio Corporativo.  <br><br>**Predefinido**: Não configurado  <br><br>Política de CSP: [DOAllowVPNPeerCaching](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domaxcacheage)    |
 
 ## <a name="next-steps"></a>Passos Seguintes
 

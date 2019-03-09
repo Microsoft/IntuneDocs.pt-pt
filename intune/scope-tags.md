@@ -5,50 +5,86 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 08/29/2018
-ms.topic: conceptual
+ms.date: 03/08/2019
+ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
-ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 50163b253cddadc5e18eef8f43199691117f14cd
-ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
+ms.openlocfilehash: 0625968c4f0c30d125be73045a52b58a032b2fd7
+ms.sourcegitcommit: a59c78c13c4ff68e8a56b69029adfe51704ba570
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57394085"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "57682628"
 ---
-# <a name="use-scope-tags-to-filter-policies"></a>Utilizar etiquetas de âmbito para filtrar políticas
+# <a name="use-rbac-and-scope-tags-for-distributed-it"></a>Utilizar etiquetas de âmbito e o RBAC para distribuído IT
 
-As etiquetas de âmbito permitem-lhe filtrar políticas com as etiquetas personalizadas que criar. Pode aplicar etiquetas de âmbito para aplicações e funções.
+Pode utilizar o controlo de acesso baseado em funções (RBAC) e etiquetas de âmbito para se certificar de que os administradores da direita tem o acesso correto e a visibilidade dos objetos certo do Intune. Funções de determinam que acesso os administradores têm a quais objetos. Etiquetas de âmbito determinam quais os administradores podem ver os objetos.
 
-Quando um administrador cria um recurso no Intune, quaisquer etiquetas de âmbito atribuídas para cada administrador serão automaticamente atribuídas para o novo recurso.
+Por exemplo, digamos que um administrador de escritório regional de Seattle é atribuído a função de política e o Gerenciador de perfis. Pretende que este administrador para ver e gerir apenas as políticas e perfis que só se aplicam a dispositivos de Seattle. Para fazer isso, seria:
 
-Por exemplo, crie uma etiqueta de âmbito chamada "Departamento de Engenharia" e atribua-a a perfis de configuração relacionados com o departamento de engenharia. Atribua essa mesma etiqueta à função "Administradores de Engenharia". Apenas serão apresentadas as políticas com a etiqueta "Departamento de Engenharia".
+1. Crie uma etiqueta de âmbito chamada Seattle.
+2. Crie uma atribuição de função para a função de política e o Gerenciador de perfis com: 
+    - Membros (grupos) = um grupo de segurança chamado administradores de TI de Seattle. Todos os administradores deste grupo terão permissão para gerir as políticas e perfis de utilizadores/dispositivos no âmbito (grupos).
+    - Âmbito (grupos) = uma segurança grupo chamado Seattle utilizadores. Todos os utilizadores/dispositivos neste grupo pode ter seus perfis e políticas geridas pelos administradores em membros (grupos). 
+    - Âmbito (etiquetas) = Seattle. Os administradores no membro (grupos) podem ver os dispositivos que também têm a etiqueta de âmbito de Seattle.
+3. Adicione a etiqueta de âmbito de Seattle para políticas e perfis que pretende que os administradores de membros (grupos) para conseguir aceder.
+4. Adicione a etiqueta de âmbito de Seattle para dispositivos que pretende que sejam visíveis para os administradores em membros (grupos). 
+
 
 ## <a name="to-create-a-scope-tag"></a>Para criar uma etiqueta de âmbito
 
-Selecione **Funções** > **Âmbito (Etiquetas)** > **Criar**.
-
-## <a name="to-add-a-scope-tag-to-a-configuration-profile"></a>Para adicionar uma etiqueta de âmbito a um perfil de configuração
-
-Selecione **Configuração do dispositivo** > **Perfis** > selecione um perfil > **Propriedades** > **Âmbito (Etiquetas)**.
+1. No Intune, escolha **funções** > **âmbito (etiquetas)** > **criar**.
+2. Forneça um **Nome** e uma **Descrição**.
+3. Selecione **Criar**.
 
 ## <a name="to-assign-a-scope-tag-to-a-role"></a>Para atribuir uma etiqueta de âmbito a uma função
 
-Selecione **Funções** > **Todas as funções** > **Gestor de Políticas e Perfis** > **Atribuições**  >  **Âmbito (Etiquetas)**.
+1. No Intune, escolha **funções** > **todas as funções** > Escolha uma função > **atribuições** > **atribuir**.
+2. Fornecer uma **nome da atribuição** e **Descrição**.
+3. Escolher **membros (grupos)** e selecione os grupos que pretende como parte desta atribuição. Os utilizadores deste grupo terão permissão para gerir as políticas e perfis de utilizadores/dispositivos no âmbito (grupos).
+4. Escolher **âmbito (grupos)** e escolha os utilizadores e grupos que pretende fazer parte desta atribuição. Todos os utilizadores/dispositivos neste grupo pode ter seus perfis e políticas geridas pelos administradores em membros (grupo).
+5. Escolher **âmbito (etiquetas)** > **Add** > Escolha as etiquetas que pretende adicionar a esta função. Utilizadores membros (grupos) têm acesso às políticas e perfis que também têm a mesma etiqueta de âmbito.
+6. Selecione **Selecionar** > **OK** > **OK**. 
 
-## <a name="to-assign-a-scope-tag-to-an-app"></a>Para atribuir uma etiqueta de âmbito a uma aplicação
+## <a name="to-add-a-scope-tag-to-a-configuration-profile"></a>Para adicionar uma etiqueta de âmbito a um perfil de configuração
+1. No Intune, escolha **configuração do dispositivo** > **perfis** > Escolha um perfil > **propriedades** > **âmbito (etiquetas)**   >  **Adicionar**.
+2. Sob **selecionar etiquetas**, escolha as etiquetas que pretende adicionar ao perfil.
+3. Escolher **selecionar** > **OK** > **guardar**.
 
-Escolher **aplicações de cliente** > **aplicações** > Escolha uma aplicação > **propriedades** > **âmbito (etiquetas)**  >  **Add** > Selecione as etiquetas > **selecione** > **OK** > **guardar**.
+## <a name="scope-tag-details"></a>Detalhes da etiqueta de âmbito
+Ao trabalhar com etiquetas de âmbito, lembre-se estes detalhes:
+
+- Atualmente, é possível atribuir etiquetas de âmbito para:
+    - Atribuições de funções
+    - Políticas de conformidade de dispositivo
+    - Perfis de configuração de dispositivos
+    - Cadências de atualizações do Windows 10
+    - Dispositivos geridos
+    - Aplicações
+    - Políticas de configuração de aplicações – os dispositivos geridos
+    - Scripts do PowerShell
+    - Tokens DEP
+    - Quando um administrador cria um objeto no Intune, todas as etiquetas de âmbito atribuídas para cada administrador serão automaticamente atribuídas para o novo objeto.
+- RBAC do Intune não se aplica a funções do Azure Active Directory. Por isso, as funções de administradores de serviço do Intune e os administradores globais têm acesso de administrador completo para o Intune, não importa o que eles têm de etiquetas de âmbito.
+- Os administradores numa atribuição de função com etiquetas de âmbito também podem ver o Intune objetos com sem etiquetas de âmbito.
+- Só pode atribuir uma etiqueta de âmbito que tiver no seu atribuições de funções.
+- Pode apenas os grupos de destino que estão listados no âmbito (grupos) da sua atribuição de função.
+- Se tiver uma etiqueta de âmbito atribuída à sua função, não é possível eliminar todas as etiquetas de âmbito de um objeto do Intune. Etiqueta de pelo menos um âmbito é necessária.
+- Se um utilizador tiver várias atribuições de funções, permissões nessas atribuições de funções de expandir a diferentes objetos da seguinte forma:
+    - Atribuir permissões só se aplicam aos objetos (como as políticas ou aplicações) na atribuição dessa função âmbito (grupos). Atribuir permissões não se aplicam a objetos em outras atribuições de funções, a menos que a atribuição de outra especificamente concede-los.
+    - São aplicáveis outras permissões (como criar e leitura), a todos os objetos do mesmo tipo (como todas as políticas ou todas as aplicações) em qualquer uma das atribuições do utilizador.
+    - Permissões para objetos de diferentes tipos (como as políticas ou aplicações), não se aplicam entre si. Por exemplo, uma permissão de leitura para uma política, não fornece uma permissão de leitura às aplicações em atribuições do utilizador.
+
+
+
 
 
 ## <a name="next-steps"></a>Passos Seguintes
 
 Efetue a gestão das suas [funções](role-based-access-control.md) e [perfis](device-profile-assign.md).
-
