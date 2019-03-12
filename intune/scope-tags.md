@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0625968c4f0c30d125be73045a52b58a032b2fd7
-ms.sourcegitcommit: a59c78c13c4ff68e8a56b69029adfe51704ba570
+ms.openlocfilehash: bca2d52bb47a149c6a36bc1b8cbc4d65e50c0f4c
+ms.sourcegitcommit: 3abc3bb93a95a81154146325c26c119a784e7487
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "57682628"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57756807"
 ---
 # <a name="use-rbac-and-scope-tags-for-distributed-it"></a>Utilizar etiquetas de âmbito e o RBAC para distribuído IT
 
@@ -40,22 +40,48 @@ Por exemplo, digamos que um administrador de escritório regional de Seattle é 
 ## <a name="to-create-a-scope-tag"></a>Para criar uma etiqueta de âmbito
 
 1. No Intune, escolha **funções** > **âmbito (etiquetas)** > **criar**.
+
+    ![Captura de ecrã de criar uma etiqueta de âmbito.](./media/scope-tags/create-scope-tag.png)
+
 2. Forneça um **Nome** e uma **Descrição**.
 3. Selecione **Criar**.
 
 ## <a name="to-assign-a-scope-tag-to-a-role"></a>Para atribuir uma etiqueta de âmbito a uma função
 
 1. No Intune, escolha **funções** > **todas as funções** > Escolha uma função > **atribuições** > **atribuir**.
+
+    ![Captura de ecrã de atribuir o âmbito a uma função.](./media/scope-tags/assign-scope-to-role.png)
+
 2. Fornecer uma **nome da atribuição** e **Descrição**.
-3. Escolher **membros (grupos)** e selecione os grupos que pretende como parte desta atribuição. Os utilizadores deste grupo terão permissão para gerir as políticas e perfis de utilizadores/dispositivos no âmbito (grupos).
-4. Escolher **âmbito (grupos)** e escolha os utilizadores e grupos que pretende fazer parte desta atribuição. Todos os utilizadores/dispositivos neste grupo pode ter seus perfis e políticas geridas pelos administradores em membros (grupo).
-5. Escolher **âmbito (etiquetas)** > **Add** > Escolha as etiquetas que pretende adicionar a esta função. Utilizadores membros (grupos) têm acesso às políticas e perfis que também têm a mesma etiqueta de âmbito.
-6. Selecione **Selecionar** > **OK** > **OK**. 
+3. Escolher **membros (grupos)** > **Add** > Escolha os grupos que pretende como parte desta atribuição > **selecionar**  >   **OK**. mUsers deste grupo terão permissão para gerir as políticas e perfis de utilizadores/dispositivos no âmbito (grupos).
+
+    ![Captura de ecrã dos grupos de seleção de membro.](./media/scope-tags/select-member-groups.png)
+
+4. Se pretender gerir os utilizadores/dispositivos de um conjunto específico de grupos, escolha **âmbito (grupos)** > **grupos selecionados** > **selecionar grupos para incluir**> Escolha os grupos de > **selecionar** > **OK**. Todos os utilizadores/dispositivos neste grupo pode ter seus perfis e políticas geridas pelos administradores em membros (grupo).
+
+    ![Captura de ecrã dos grupos de âmbito selecione.](./media/scope-tags/select-scope-groups.png)
+
+    Em alternativa, pode escolher **todos os dispositivos**, **todos os utilizadores**, ou **todos os utilizadores e todos os dispositivos**.
+
+    ![Captura de ecrã de outras opções para grupos de âmbito selecione.](./media/scope-tags/scope-group-other-options.png)
+    
+5. Escolher **âmbito (etiquetas)** > **Add** > Escolha as etiquetas que pretende adicionar a esta função > **selecionar** > **OK**. Utilizadores membros (grupos) têm acesso às políticas e perfis que também têm a mesma etiqueta de âmbito.
+
+    ![Captura de ecrã de etiquetas de âmbito selecione.](./media/scope-tags/select-scope-tags.png)
+
+6. Escolha **OK**. 
 
 ## <a name="to-add-a-scope-tag-to-a-configuration-profile"></a>Para adicionar uma etiqueta de âmbito a um perfil de configuração
-1. No Intune, escolha **configuração do dispositivo** > **perfis** > Escolha um perfil > **propriedades** > **âmbito (etiquetas)**   >  **Adicionar**.
-2. Sob **selecionar etiquetas**, escolha as etiquetas que pretende adicionar ao perfil.
-3. Escolher **selecionar** > **OK** > **guardar**.
+1. No Intune, escolha **configuração do dispositivo** > **perfis** > Escolha um perfil.
+
+    ![Captura de ecrã do perfil de select.](./media/scope-tags/choose-profile.png)
+
+2. Escolher **propriedades** > **âmbito (etiquetas)** > **adicionar**.
+
+    ![Captura de ecrã de adicionar etiquetas de âmbito.](./media/scope-tags/add-scope-tags.png)
+
+3. Sob **selecionar etiquetas**, escolha as etiquetas que pretende adicionar ao perfil.
+4. Escolher **selecionar** > **OK** > **guardar**.
 
 ## <a name="scope-tag-details"></a>Detalhes da etiqueta de âmbito
 Ao trabalhar com etiquetas de âmbito, lembre-se estes detalhes:
@@ -70,7 +96,7 @@ Ao trabalhar com etiquetas de âmbito, lembre-se estes detalhes:
     - Políticas de configuração de aplicações – os dispositivos geridos
     - Scripts do PowerShell
     - Tokens DEP
-    - Quando um administrador cria um objeto no Intune, todas as etiquetas de âmbito atribuídas para cada administrador serão automaticamente atribuídas para o novo objeto.
+- Quando um administrador cria um objeto no Intune, todas as etiquetas de âmbito atribuídas para cada administrador serão automaticamente atribuídas para o novo objeto.
 - RBAC do Intune não se aplica a funções do Azure Active Directory. Por isso, as funções de administradores de serviço do Intune e os administradores globais têm acesso de administrador completo para o Intune, não importa o que eles têm de etiquetas de âmbito.
 - Os administradores numa atribuição de função com etiquetas de âmbito também podem ver o Intune objetos com sem etiquetas de âmbito.
 - Só pode atribuir uma etiqueta de âmbito que tiver no seu atribuições de funções.

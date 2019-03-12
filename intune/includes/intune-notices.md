@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: dc86f2c22410236368753acd4dd3b66698037241
+ms.sourcegitcommit: 3c80028fd995675e7664b27d7e4051c9a9d0e669
+ms.translationtype: MT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57736850"
+---
 
 Estes avisos fornecem importante de informações que podem ajudá-lo a se preparar para as funcionalidades e alterações futuras do Intune. 
 
@@ -102,7 +110,33 @@ Se tiver o conector de serviços, configurar e executar o Exchange Active Sync a
 
 - Inscrever dispositivos na gestão de dispositivos móveis (MDM) 
 - Utilizar políticas de proteção de aplicações do Intune para gerir os seus dispositivos 
-- Utilizar controlos de Exchange, conforme descrito na documentação aqui 
+- Utilizar controlos de Exchange, conforme descrito na documentação [aqui](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/clients-and-mobile-in-exchange-online) 
 
 #### <a name="additional-information"></a>Informações adicionais  
 https://docs.microsoft.com/intune/exchange-service-connector-configure
+
+
+
+
+### <a name="check-your-delay-visibility-of-software-updates-setting-in-intune"></a>Verifique a definição de "Visibility atraso das atualizações de Software" no Intune 
+
+Partilhámos na MC171466 que podemos foram movimentar algumas definições na consola do. Com a atualização de Março ao Intune, podemos irá remover completamente a definição "Atualizações de visibilidade de atraso do Software" do painel de política de atualização de iOS. Isto não vai alterar a forma de aplicam as atualizações de software agendadas, mas pode afetar o tempo que a visibilidade de uma atualização é atrasada para os utilizadores finais. Terá de executar uma ação antes do final de Março se utilizar esta definição. 
+
+#### <a name="how-does-this-affect-me"></a>Como é que isto me afeta?
+Após a atualização de serviço do Intune de Fevereiro, perceberá que a definição aparece em perfis de restrição de dispositivos na consola e no iOS atualizar políticas no painel de atualização de Software. Quando vir essa alteração seja refletida na consola do, eis o que poderá ter de fazer.
+
+- Para atualizar as políticas existentes para iOS: Se tiver personalizado configurado esta definição para qualquer coisa diferente da predefinição de 30 dias e quiser as configurações existentes para a definição de visibilidade de atraso continuar a aplicar após o fim de Março, terá que criar um novo iOS perfil de restrição de dispositivos. Aqui, a definição de visibilidade de atraso terá de ter os mesmos valores como a política de atualização de iOS existente e ser direcionadas para os mesmos grupos. Após a atualização do serviço de Março, já não poderá editar os valores para esta definição nas políticas de atualização de iOS existente, uma vez que já não estarão visível neste painel. Em vez disso, irá configurar esta definição nos perfis de novo.
+  Se o valor de número de dias pode atrasar visibilidade não corresponde em ambos os locais para os valores de definição configurada personalizado, a visibilidade de atraso definição não funcionará, e os utilizadores finais irão ver a atualização nos respetivos dispositivos, assim que estiver disponível. Isto pode ter um impacto mínimo para a maioria dos clientes, uma vez que as outras definições no painel da política de atualização de Software sempre usaram precedência sobre esta definição na consola do.
+- Para novas políticas de atualização para iOS: Se tentar criar novas políticas no painel de atualizações de Software após a atualização do serviço de Fevereiro do Intune, irá ver esta definição a cinzento. Verá uma nota na consola do redirecioná-lo para o painel de configuração do dispositivo se desejar atrasar a visibilidade das atualizações.
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>O que posso fazer para me preparar para esta alteração?
+Não é necessário executar uma ação se não utilize esta definição ou não pretender que a visibilidade das atualizações de software de seus usuários finais.
+
+Se desejar atrasar a visibilidade das atualizações, começar a configurar a definição em novos perfis no painel da configuração do dispositivo em restrições do dispositivo > geral. Se tiver personalizado esta definição configurada no iOS existente, as políticas de atualização, criar um novo perfil de restrição de dispositivos equivalente com o mesmo valor para "dias" atrasar a visibilidade das atualizações para os seus utilizadores, depois do Fevereiro de atualização e antes de Março de atualização for implementada. 
+
+Pode querer atualizar a sua documentação de orientação para profissionais de TI e informe o suporte técnico.
+
+Consulte o nosso blogue de suporte publicar as informações adicionais para obter detalhes sobre como configurar esta definição.
+
+#### <a name="additional-information"></a>Informações adicionais 
+[https://aka.ms/Delay_visibility_setting_iOS](https://aka.ms/Delay_visibility_setting_iOS)

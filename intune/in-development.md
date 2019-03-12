@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 42200c474b964e6c6bc9610c3e90689c5811a2ee
-ms.sourcegitcommit: 6da78a3c07e9ad9c72ff532867cde754e9deca00
+ms.openlocfilehash: 9c377a8558b1f318b4ddad735b6368a291e34516
+ms.sourcegitcommit: 3abc3bb93a95a81154146325c26c119a784e7487
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57577834"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57756824"
 ---
 # <a name="in-development-for-microsoft-intune---march-2019"></a>No desenvolvimento do Microsoft Intune – Março de 2019
 
@@ -35,6 +35,8 @@ Para ajudar na preparação de sua e planejamento, esta página, listas de atual
 
 > [!Note]
 > Estes itens refletem as expectativas de atuais da Microsoft sobre as capacidades do Intune numa versão futura. Datas e funcionalidades individuais podem ser alteradas. Nem todos os itens no desenvolvimento de tem uma descrição da funcionalidade nesta página.
+
+**RSS feed**: Seja notificado quando esta página é atualizada ao copiar e colar o URL seguinte no seu leitor de feeds: `https://docs.microsoft.com/api/search/rss?search=%22in+development+-+microsoft+intune%22&locale=en-us`
 
 
 <!--
@@ -82,7 +84,7 @@ Portal da empresa para iOS irão atualizar ecrãs de inscrição da aplicação 
 - Abra a aplicação de definições para instalar o perfil de gestão no respetivo dispositivo.
 - Regressar à aplicação Portal da empresa que conclua a inscrição.  
 
-Para obter mais informações sobre como pode preparar para estas alterações, consulte a [postagem de Comunidade tecnológica da Microsoft] (https://techcommunity.microsoft.com/]. Entretanto, para suportar as novas inscrições iOS no Portal da empresa, atualizámos os passos em [inscrever o dispositivo de iOS no Intune](https://docs.microsoft.com/en-us/intune/ios-enroll). Estas alterações docs estarão em direto após Apple versões iOS versão 12.2. 
+Para obter mais informações sobre como pode preparar para estas alterações, consulte a [post de Comunidade tecnológica da Microsoft](https://techcommunity.microsoft.com/). Entretanto, para suportar as novas inscrições iOS no Portal da empresa, atualizámos os passos em [inscrever o dispositivo de iOS no Intune](https://docs.microsoft.com/en-us/intune/ios-enroll). Estas alterações docs estarão em direto após Apple versões iOS versão 12.2. 
 
 ### <a name="support-for-additional-connectors-on-the-tenant-status-page----3617202-------"></a>Suporte para conectores adicionais na página de estado do inquilino <!-- 3617202     -->
 A página de estado do inquilino irá apresentar informações do Estado de conectores adicionais, incluindo *a proteção de ameaças avançada do Windows Defender* (ATP) e outros conectores de defesa contra ameaças móveis.
@@ -108,12 +110,10 @@ Estamos a adicionar uma nova opção para o **registos de auditoria** painel em 
 ### <a name="create-and-use-device-configuration-profiles-on-android-zebra-devices-in-intune----3895244----"></a>Criar e utilizar perfis de configuração do dispositivo em dispositivos das riscas das Android no Intune <!-- 3895244  -->
 O Intune suportará a configuração de dispositivos das riscas das Android. Especificamente, poderá: 
 
-- Criar um perfil de configuração do dispositivo e aplicar as definições para dispositivos Android Enterprise as riscas das usando OEMConfig (**configuração do dispositivo** > **perfis**  >  **Criar perfil** > **Android enterprise** para a plataforma).
 - Criar um perfil de configuração do dispositivo e aplicar as definições para dispositivos as riscas das Android através de perfis de extensões de mobilidade (MX) gerados pelo StageNow (**configuração do dispositivo** > **perfis**  >  **Criar perfil** > **Android** para a plataforma).
 
 Aplica-se a:  
 - Android
-- Android enterprise
 
 <!-- 1901 start -->
 

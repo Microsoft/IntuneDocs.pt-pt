@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/06/2019
+ms.date: 03/11/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1dea5f0a794e0b947e1f542b796e946de85f7eb4
-ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
+ms.openlocfilehash: 94c83ab0f70a5a40bd745b4db83ef16ac14acd00
+ms.sourcegitcommit: 3abc3bb93a95a81154146325c26c119a784e7487
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57460382"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57756858"
 ---
 # <a name="quickstart-try-microsoft-intune-for-free"></a>Início rápido: Experimente gratuitamente o Microsoft Intune 
 
@@ -87,20 +87,20 @@ Para definir a autoridade de MDM como o Intune, siga estes passos.
 3. Selecione a faixa que indica que não ativou a gestão de dispositivos ou, se não vir imediatamente a faixa, selecione **Inscrição de dispositivos**. O painel **Escolher Autoridade de MDM** será apresentado, se ainda não tiver ativado a gestão de dispositivos.
 
     > [!NOTE]
-    > A faixa cor de laranja só é apresentada se ainda não tiver configurado a autoridade de MDM.
+    > Se tiver definido a autoridade de MDM, verá o valor de autoridade MDM sobre o **inscrição de dispositivos** painel. A faixa cor de laranja só é apresentada se ainda não tiver configurado a autoridade de MDM. 
 
     ![Imagem do painel Escolher Autoridade de MDM](./media/choose-mdm-authority.png) 
 
-4. Em **Escolher Autoridade de MDM**, defina a sua autoridade de MDM como **Autoridade de MDM do Intune**.
+4. Se a sua autoridade de MDM não for definida, em **escolher autoridade de MDM**, defina a autoridade MDM para **autoridade de MDM do Intune**.
 
 Para obter mais informações sobre a autoridade de MDM, veja [Definir a autoridade de gestão de dispositivos móveis](mdm-authority-set.md).
 
 ## <a name="configure-your-custom-domain-name-optional"></a>Configurar o nome de domínio personalizado (opcional)
 
-Como mencionado acima, se a sua organização tem seu próprio domínio personalizado que deseja usar sem **. onmicrosoft.com**, pode alterá-lo no Centro de administração do Microsoft 365. Vai adicionar, verificar e configurar o seu nome de domínio personalizado.  
+Como mencionado acima, se a sua organização tem seu próprio domínio personalizado que deseja usar sem **. onmicrosoft.com**, pode alterá-lo no Centro de administração do Microsoft 365. Pode adicionar, verificar e configurar o seu nome de domínio personalizado através dos seguintes passos.  
 
 > [!IMPORTANT]
-> Não é possível mudar o nome ou remover a parte **onmicrosoft.com** do nome de domínio inicial. Pode adicionar, verificar ou remover nomes de domínio personalizados utilizados com o Intune para manter a identidade da sua empresa clara.
+> Não é possível mudar o nome ou remova os *inicial* **onmicrosoft.com** parte do nome do domínio. No entanto, pode adicionar, verificar ou remover *personalizado* nomes de domínio utilizados com o Intune para manter a identidade da sua empresa clara. Para obter mais informações, consulte [configurar um nome de domínio personalizado](custom-domain-name-configure.md).
 
 1. Aceda a [Centro de administração do Microsoft 365](https://admin.microsoft.com) e inicie sessão com a sua conta de administrador.
 
@@ -112,7 +112,7 @@ Como mencionado acima, se a sua organização tem seu próprio domínio personal
 
 4. Verifique se é o proprietário do domínio que introduziu no passo anterior. 
     
-    A seleção de **enviar código por e-mail** fará com que seja enviado um e-mail para o contacto registado do seu domínio. Depois de receber o e-mail, copie o código e introduza-o no campo **Escreva o seu código de verificação aqui**. Se o código de verificação corresponder, o domínio será adicionado ao seu inquilino. O e-mail apresentado poderá não parecer familiar. Algumas entidades de registo de domínio ocultam o endereço de e-mail real que foi fornecido quando o domínio foi registado.
+    A seleção de **enviar código por e-mail** fará com que seja enviado um e-mail para o contacto registado do seu domínio. Depois de receber o e-mail, copie o código e introduza-o no campo **Escreva o seu código de verificação aqui**. Se o código de verificação corresponder, o domínio será adicionado ao seu inquilino. O e-mail apresentado poderá não parecer familiar. Algumas entidades de registo ocultam o endereço de e-mail real. Além disso, o endereço de e-mail poderá ser diferente, em seguida, o que foi fornecido quando o domínio foi registado.
 
    ![Captura de ecrã do Microsoft 365 admin center – verificar domínio](./media/domain-custom-verify.png)
 
