@@ -14,10 +14,10 @@ search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: be3ef61d3bdce2f1ad74a388a2ec50691313a1d1
-ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/05/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "57400293"
 ---
 # <a name="quickstart-create-and-assign-a-custom-role"></a>Início rápido: Criar e atribuir uma função personalizada

@@ -19,10 +19,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: d258fcb7f338e4177c31a5c77b92b5941b7db212
-ms.sourcegitcommit: 67e4e66e8c05b36c0897fb2955ef68666d22b094
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/20/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "56426931"
 ---
 # <a name="enable-code-integrity"></a>Ativar a integridade de código

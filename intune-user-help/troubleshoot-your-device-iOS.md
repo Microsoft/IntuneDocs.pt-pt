@@ -19,10 +19,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 54ea19ab95bbb7056281dcc8e67a706415964a75
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "55833910"
 ---
 # <a name="fix-common-issues-with-your-ios-device"></a>Corrigir problemas comuns no dispositivo iOS

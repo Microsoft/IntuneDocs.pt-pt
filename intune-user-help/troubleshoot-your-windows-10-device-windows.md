@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 07/13/2017
+ms.date: 03/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,15 +18,15 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3dba2401240b19b93318946af0e8760fef121518
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 2fe8a765bdb11d0b94dbbb7519360c6e7a01e8ce
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "55837582"
 ---
 # <a name="troubleshoot-your-windows-10-device-enrollment"></a>Resolver problemas de inscrição no dispositivo Windows 10
-Se tiver seguido os passos em [Inscrever o seu computador com Windows 10 ou dispositivo móvel com Windows 10 Mobile no Intune](enroll-your-w10-phone-or-w10-pc-windows.md), mas ainda não conseguir aceder ao seu e-mail e ficheiros profissionais ou escolares, experimente estes passos de resolução de problemas.
+Se tiver inscrito o seu dispositivo, mas continua sem aceder ao seu trabalho ou e-mail e ficheiros escolares, experimente estes passos de resolução de problemas.  
 
 1.  Observe os dois ecrãs abaixo e veja qual deles se parece com o que vê no seu dispositivo. Siga os passos que acompanham o ecrã que aparece no seu dispositivo.
 
@@ -44,17 +44,17 @@ Se tiver seguido os passos em [Inscrever o seu computador com Windows 10 ou dis
 
 2. Efetue uma das seguintes ações:
 
-   - Se vir uma ligação que tem um aspeto semelhante à imagem abaixo, toque na mesma e, em seguida, confira se vê as opções Gerir, Informações e Desligar. Se vir estas opções, significa que já está inscrito e ligado.
+   - Se vir uma ligação que tem um aspeto semelhante à imagem abaixo, toque na mesma e, em seguida, confira se vê as opções Gerir, Informações e Desligar. Se vir estas opções, está agora inscrito e ligado.
 
      ![validate-successful-enrollment](./media/w10-enroll-rs1-validate-successful-enrollment.png)
 
-   - Se não vir as informações de ligação mostradas acima ou se de facto as vir, mas faltarem algumas das opções, toque em **Ligar** e, em seguida, inicie sessão com as suas credenciais profissionais ou escolares. Agora, já deverá estar ligado.
+   - Se não vir as informações de ligação mostradas acima, ou vê-lo, mas faltarem algumas das opções, toque em **Connect**. Em seguida, inicie sessão com as suas credenciais escolares ou profissionais para ligar.  
 
 ## <a name="troubleshooting-steps-to-follow-if-you-see-your-account"></a>Passos de resolução de problemas a seguir se vir "A sua conta"
 
 Se seguiu os passos acima, mas continua a não conseguir aceder ao e-mail, aos ficheiros e a outros dados profissionais ou escolares, volte a **Contas** e toque em **Acesso profissional**.
 
-- Se visualizar a sua conta profissional ou escolar, parabéns, está ligado. Está ligado.
+- Se vir o seu trabalho ou escolar conta listada, está ligado.  
 
 - Se não vir a sua conta profissional ou escolar, toque em **Ligar** e, em seguida, inicie sessão com as credenciais da sua conta profissional ou escolar.
 

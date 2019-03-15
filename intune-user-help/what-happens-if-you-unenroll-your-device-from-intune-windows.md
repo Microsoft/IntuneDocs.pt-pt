@@ -19,10 +19,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 5c28d5b122bda537d4707bc0fdc2bfc74bcb823a
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "55847289"
 ---
 # <a name="what-happens-if-you-unenroll-your-windows-device-from-intune"></a>O que acontece se anular a inscrição do seu dispositivo Windows no Intune?

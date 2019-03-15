@@ -17,10 +17,10 @@ ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: c5aebe07259e2fcee009e97bc3c12d7c02933360
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "55846932"
 ---
 # <a name="resolve-a-threat-found-by-zimperium-zips"></a>Resolver uma ameaça encontrada pelo Zimperium zIPS

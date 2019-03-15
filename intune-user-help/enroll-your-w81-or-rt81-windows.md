@@ -18,52 +18,54 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b20acc1c6b3fd64536b473013182d06e2bc04623
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 3ecc93ae788179991fd27545405d8d7319f74481
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "55834199"
 ---
-# <a name="how-to-enroll-your-windows-81-or-windows-rt-81-device-in-intune"></a>Como inscrever o dispositivo Windows 8.1 ou Windows RT 8.1 no Intune
+# <a name="how-to-enroll-your-windows-81-or-windows-rt-81-device-in-intune"></a>Como inscrever o dispositivo Windows 8.1 ou Windows RT 8.1 no Intune  
 
-Se a sua empresa ou escola utiliza o Microsoft Intune, pode inscrever os seus dispositivos para aceder a e-mails, ficheiros e outros recursos da empresa. Quando inscreve os seus dispositivos, a sua empresa pode manter os dados empresariais seguros. Para saber mais sobre a inscrição, veja [What happens if you install the Company Portal app and enroll your device in Intune? (O que acontece quando instala a aplicação Portal da Empresa e inscreve o seu dispositivo no Intune?)](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) e [What your company support can and can't see on your device (O que o suporte da empresa pode ver e não pode ver no seu dispositivo?)](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
+Se a sua empresa ou escola utiliza o Microsoft Intune, pode inscrever os seus dispositivos para aceder a e-mails, ficheiros e outros recursos da empresa. Quando inscreve os seus dispositivos, a sua empresa pode manter os dados empresariais seguros. Para saber mais sobre a inscrição, veja [What happens if you install the Company Portal app and enroll your device in Intune? (O que acontece quando instala a aplicação Portal da Empresa e inscreve o seu dispositivo no Intune?)](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) e [What your company support can and can't see on your device (O que o suporte da empresa pode ver e não pode ver no seu dispositivo?)](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).  
 
 
-Inscrever o dispositivo Windows 8.1 ou Windows RT 8.1
+Inscrever o dispositivo Windows 8.1 ou Windows RT 8.1  
 
-1.  No dispositivo, toque em **Definições** &gt; **Definições do PC** &gt; **Rede** &gt; **Área de trabalho**.
+1.  No dispositivo, toque em **Definições** &gt; **Definições do PC** &gt; **Rede** &gt; **Área de trabalho**.  
 
-    ![nav-to-workplace](./media/W81-1-workplacejoin.png)
+    ![nav-to-workplace](./media/W81-1-workplacejoin.png)  
 
-2.  Introduza o seu e-mail escolar ou profissional do ID de Utilizador, se necessário, e toque em **Participar**.
+2.  Introduza o seu e-mail escolar ou profissional do ID de Utilizador, se necessário, e toque em **Participar**. Se o seu ID de utilizador não for necessário, é utilizado o endereço de e-mail introduzido quando iniciou sessão neste dispositivo.  
 
-    Se o seu ID de utilizador não for necessário, é utilizado o endereço de e-mail introduzido quando iniciou sessão neste dispositivo.
+3.  Introduza a palavra-passe para o seu e-mail escolar ou profissional.  
 
-3.  Introduza a palavra-passe para o seu e-mail escolar ou profissional.
 
-    ![type-password](./media/W81-2-workplacesettings_signin.png)
+    ![type-password](./media/W81-2-workplacesettings_signin.png)  
 
-4.  Em **Ativar gestão de dispositivos**, toque em **Ativar**.
+4.  Em **Ativar gestão de dispositivos**, toque em **Ativar**.  
 
-    ![turn-on-device-management](./media/W81-3-dev-mgt-turn-on.png)
 
-5.  Na caixa de diálogo **Permitir aplicações e serviços do suporte da empresa**, selecione a caixa de verificação **Aceito** e, em seguida, toque em **Ativar**.
+    ![turn-on-device-management](./media/W81-3-dev-mgt-turn-on.png)  
 
-    ![turn-on-allow-apps-services](./media/W81-4-agree-allow-apps-services.png)
+5.  Na caixa de diálogo **Permitir aplicações e serviços do suporte da empresa**, selecione a caixa de verificação **Aceito** e, em seguida, toque em **Ativar**.  
 
-    Quando tiver inscrito com êxito, verá o ecrã seguinte.
+
+    ![turn-on-allow-apps-services](./media/W81-4-agree-allow-apps-services.png)  
+
+    Quando tiver inscrito com êxito, verá o ecrã seguinte.  
+
 
     ![enrollment-complete](./media/W81-5-enrolled-done.png)
 
 Também recomendamos a instalação da aplicação Portal da Empresa, que lhe permite identificar e obter facilmente as aplicações da empresa relevantes para si e a sua função. Consoante o modo como a empresa configurou o Intune, a aplicação Portal da Empresa pode ter sido instalada como parte do seu processo de inscrição. Para verificar se tem a aplicação, procure **Portal da Empresa** na lista de aplicações. Se não vir o Portal da Empresa na lista de aplicações, siga estes passos para instalá-lo.
 
-1.  Toque em **Iniciar** &gt; **Loja**.
+1.  Toque em **Iniciar** &gt; **Loja**.  
 
-2.  Toque em **Pesquisar** e, em seguida, escreva **portal da empresa**.
+2.  Toque em **Pesquisar** e, em seguida, escreva **portal da empresa**.  
 
-3.  Na lista de resultados, toque em **Portal da Empresa**.
+3.  Na lista de resultados, toque em **Portal da Empresa**.  
 
-4.  Toque em **Instalar** ou em **Gratuito**. A opção apresentada depende da forma como a sua empresa configurou a aplicação.
+4.  Toque em **Instalar** ou em **Gratuito**. A opção apresentada depende da forma como a sua empresa configurou a aplicação.  
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  
