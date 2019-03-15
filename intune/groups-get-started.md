@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: da802084b92f5df23701072aa7c45b4ea1b24bd2
-ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/06/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "57460636"
 ---
 # <a name="microsoft-intune-classic-groups-in-the-azure-portal"></a>Grupos clássicos do Microsoft Intune no portal do Azure

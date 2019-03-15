@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 126406e078375fea837fcebe1f469fb0e5190f7d
-ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
-ms.translationtype: MT
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/05/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "57398328"
 ---
 # <a name="whats-conditional-access"></a>O que é o acesso condicional?

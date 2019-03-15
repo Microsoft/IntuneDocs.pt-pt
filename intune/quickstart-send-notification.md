@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 757191515ca88cedf1a5edcdb243b1ecb730ec3c
-ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
-ms.translationtype: MT
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/05/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "57395929"
 ---
 # <a name="quickstart-send-notifications-to-noncompliant-devices"></a>Início rápido: Send notifications to noncompliant devices (Enviar notificações para dispositivos que não estejam em conformidade)

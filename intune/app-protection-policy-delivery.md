@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 879ccc890a727ddbd911a2b42266d205a1a293c5
-ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/05/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "57389032"
 ---
 # <a name="understand-app-protection-policy-delivery-timing"></a>Compreender o tempo de entrega de política de proteção de aplicações

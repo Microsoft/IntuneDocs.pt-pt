@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: ca4b48c2c611273cee385fd94486591e8a97d5a0
-ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/06/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "57460931"
 ---
 # <a name="add-users-and-grant-administrative-permission-to-intune"></a>Adicionar utilizadores e conceder permissões administrativas no Intune

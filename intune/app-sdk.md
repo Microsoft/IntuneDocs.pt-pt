@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 065535bc6bb4dc586ab45ffa0a9a1250c0a1c908
-ms.sourcegitcommit: 9a4c5b6c2ce511edaeace25426a23f180cb71e15
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/07/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "57566493"
 ---
 # <a name="microsoft-intune-app-sdk-overview"></a>Descrição geral do Microsoft Intune App SDK

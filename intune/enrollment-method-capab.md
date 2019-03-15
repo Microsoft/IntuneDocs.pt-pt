@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: e6f3db2034bdc71e656f468913394baf455d47e8
-ms.sourcegitcommit: a624abbfc3c80c5fba6c47a19cf1a6923c5fd438
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/07/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "57528246"
 ---
 # <a name="intune-enrollment-method-capabilities-for-windows-devices"></a>Funcionalidades de método de inscrição do Intune para dispositivos Windows

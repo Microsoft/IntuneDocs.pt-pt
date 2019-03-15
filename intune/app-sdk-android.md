@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: e2edb7f3f09b29a9916a52bd97fb7cfbba87226d
-ms.sourcegitcommit: 9a4c5b6c2ce511edaeace25426a23f180cb71e15
-ms.translationtype: MT
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/07/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "57566765"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Guia para programadores do SDK da Aplicação do Microsoft Intune para Android

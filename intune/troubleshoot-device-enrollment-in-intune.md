@@ -18,11 +18,11 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 32f167def5e96061b0d69665c2c5b81a29d03389
-ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
+ms.openlocfilehash: add5ee699b652aacfa3e3b2bfd089905a881fe11
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/06/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "57461367"
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Resolver problemas de inscrição de dispositivos no Intune
@@ -226,7 +226,7 @@ Se a Resolução n.º 2 não funcionar, solicite aos seus utilizadores que sigam
 
 **Resolução 1**:
 
-O utilizador poderá conseguir obter o certificado em falta ao seguir as instruções em [O dispositivo tem um certificado necessário em falta](/intune-user-help/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator). Se o erro persistir, tente a Resolução 2.
+O utilizador poderá conseguir obter o certificado em falta ao seguir as instruções em [O dispositivo tem um certificado necessário em falta](/intune-user-help/your-device-is-missing-a-required-certificate-android). Se o erro persistir, tente a Resolução 2.
 
 **Resolução 2**:
 

@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: fbfff91d2993becc99e2132285bef78d245ff50e
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "35289818"
+---
 ## <a name="enable-windows-10-automatic-enrollment"></a>Ativar a inscrição automática de dispositivos Windows 10
 
 A inscrição automática permite aos utilizadores inscreverem os dispositivos Windows 10 no Intune ao adicionar a conta profissional aos seus dispositivos pessoais ou ao associar os dispositivos pertencentes à empresa no Azure Active Directory. Em segundo plano, o dispositivo do utilizador regista e associa-se ao Azure Active Directory. Depois de registado, o dispositivo é gerido com o Intune.
@@ -9,7 +17,7 @@ A inscrição automática permite aos utilizadores inscreverem os dispositivos W
 
 ### <a name="configure-automatic-mdm-enrollment"></a>Configurar a inscrição MDM automática
 
-1. Inicie sessão no [portal de gestão do Azure](https://portal.azure.com) (https://manage.windowsazure.com)) e selecione **Azure Active Directory**.
+1. Iniciar sessão para o [portal de gestão do Azure](https://portal.azure.com) (https://manage.windowsazure.com) e selecione **do Azure Active Directory**.
 
    ![Captura de ecrã do portal do Azure](../media/auto-enroll-azure-main.png)
 

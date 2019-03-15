@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 9c377a8558b1f318b4ddad735b6368a291e34516
-ms.sourcegitcommit: 3abc3bb93a95a81154146325c26c119a784e7487
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/11/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "57756824"
 ---
 # <a name="in-development-for-microsoft-intune---march-2019"></a>No desenvolvimento do Microsoft Intune – Março de 2019
@@ -59,7 +59,7 @@ Estamos a adicionar um novo ponto de entrada em dispositivos, onde pode ver os d
 ### <a name="scope-tags-for-app-configuration-policies---2371891---"></a>Etiquetas de âmbito para políticas de configuração de aplicações <!--2371891 -->
 Poderá adicionar uma etiqueta de âmbito a uma política de configuração de aplicação para que apenas as pessoas com funções atribuídas também essa etiqueta de âmbito tenham acesso para a política de configuração de aplicação. A política de configuração de aplicação só pode ser direcionada para ou associada a aplicações atribuídas a mesma etiqueta de âmbito.
 
-### <a name="assign-autopilot-profiles-to-the-all-devices-virtual-group---2715522---"></a>Atribuir perfis do Autopilot ao grupo virtual Todos os dispositivos <!--2715522 -->
+### <a name="assign-autopilot-profiles-to-the-all-devices-virtual-group---2715522---"></a>Atribuir perfis do Autopilot para o grupo de virtual todos os dispositivos <!--2715522 -->
 Poderá atribuir perfis do Autopilot ao grupo virtual Todos os dispositivos. Para o fazer, selecione **Inscrição de dispositivos** > **Inscrição do Windows** > **Perfis de Implementação** > selecione um perfil >  **Atribuições** > em **Atribuir a**, selecione **Todos os dispositivos**. Para obter mais informações sobre perfis do Autopilot, veja [Inscrever dispositivos Windows com o Windows AutoPilot](enrollment-autopilot.md).
 
 ### <a name="install-available-apps-using-the-company-portal-app-after-windows-bulk-enrollment----2751523----"></a>Instalar as aplicações disponíveis com a aplicação Portal da empresa após a inscrição em massa do Windows <!-- 2751523  -->

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/30/2019
+ms.date: 03/13/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,16 +16,18 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ee0d8660b810f5f568b69babba0b648b0095fa7
-ms.sourcegitcommit: 9a4c5b6c2ce511edaeace25426a23f180cb71e15
+ms.openlocfilehash: 34f0869b46323606d69891c3761bfbc154f3b6a3
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/07/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "57566629"
 ---
-# <a name="ios-device-feature-settings-in-intune"></a>definições de funcionalidade do dispositivo iOS no Intune
+# <a name="ios-device-settings-to-use-common-ios-features-in-intune"></a>definições de dispositivos iOS para utilizar recursos comuns do iOS no Intune
 
 O Intune inclui algumas definições incorporadas para permitir que os utilizadores utilizem diferentes funcionalidades de Apple nos respetivos dispositivos de iOS. Por exemplo, os administradores podem controlar como os utilizadores do iOS utilizam impressoras com o AirPrint, adicionar as aplicações e pastas à dock e páginas no ecrã inicial, Mostrar notificações da aplicação, mostrar detalhes da etiqueta de ativo no ecrã de bloqueio, utilizar a autenticação de início de sessão única e autenticar os utilizadores com certificados.
+
+Utilize estas funcionalidades para controlar os dispositivos iOS como parte da sua solução de gestão (MDM) de dispositivos móveis.
 
 Este artigo apresenta uma lista essas configurações e descreve o que faz cada definição.
 
@@ -39,8 +41,8 @@ Esta funcionalidade permite iOS, os usuários imprimam em impressoras conhecidas
 
 1. Na **configurações**, selecione **AirPrint**. Introduza as seguintes propriedades do servidor AirPrint:
 
-    - **Endereço IP**: Introduza o endereço IPv4 ou IPv6 da impressora. Se utilizar os nomes de anfitrião para identificar as impressoras, pode obter o endereço IP ao enviar pings para a impressora no terminal. [Obtenha o endereço IP e o caminho](#get-the-ip-address-and-path) (Este artigo) fornece mais detalhes.
-    - **Caminho**: O caminho é normalmente `ipp/print` para impressoras na sua rede. [Obtenha o endereço IP e o caminho](#get-the-ip-address-and-path) (Este artigo) fornece mais detalhes.
+    - **Endereço IP**: Introduza o endereço IPv4 ou IPv6 da impressora. Se utilizar os nomes de anfitrião para identificar as impressoras, pode obter o endereço IP ao enviar pings para a impressora no terminal. Obtenha o endereço IP e o caminho (neste artigo) fornece mais detalhes.
+    - **Caminho**: O caminho é normalmente `ipp/print` para impressoras na sua rede. Obtenha o endereço IP e o caminho (neste artigo) fornece mais detalhes.
     - **Porta**: Introduza a porta de escuta do destino AirPrint. Se deixar esta propriedade em branco, o AirPrint utiliza a porta predefinida. Disponível no iOS 11.0 e posterior.
     - **TLS**: Escolher **ativar** para proteger as ligações do AirPrint com Transport Layer Security (TLS). Disponível no iOS 11.0 e posterior.
 
@@ -305,47 +307,52 @@ Poderá ter um comportamento inesperado quando um perfil com não existe nenhuma
 
 A seguinte lista mostra o ID da coleção de pacotes de algumas aplicações iOS comuns incorporadas. Para localizar o ID do pacote de outras aplicações, contacte o fabricante de software.
 
-|||
-|-|-|
-|Nome da aplicação|ID do Pacote|
-|App Store|com.apple.AppStore|
-|Calculadora|com.apple.calculator|
-|Calendário|com.apple.mobilecal|
-|Câmara|com.apple.camera|
-|Relógio|com.apple.mobiletimer|
-|Bússola|com.apple.compass|
-|Contactos|com.apple.MobileAddressBook|
-|FaceTime|com.apple.facetime|
-|Encontrar Amigos|com.apple.mobileme.fmf1|
-|Localizar iPhone|com.apple.mobileme.fmip1|
-|Centro de Jogos|com.apple.gamecenter|
-|GarageBand|com.apple.mobilegarageband|
-|Estado de Funcionamento|com.apple.Health|
-|iBooks|com.apple.iBooks|
-|iTunes Store|com.apple.MobileStore|
-|iTunes U|com.apple.itunesu|
-|Keynote|com.apple.Keynote|
-|Correio|com.apple.mobilemail|
-|Mapas|com.apple.Maps|
-|Mensagens|com.apple.MobileSMS|
-|Música|com.apple.Music|
-|Notícias|com.apple.news|
-|Notas|com.apple.mobilenotes|
-|Números|com.apple.Numbers|
-|Páginas|com.apple.Pages|
-|Photo Booth|com.apple.Photo-Booth|
-|Fotografias|com.apple.mobileslideshow|
-|Podcasts|com.apple.podcasts|
-|Lembretes|com.apple.reminders|
-|Safari|com.apple.mobilesafari|
-|Definições|com.apple.Preferences|
-|Bolsa|com.apple.stocks|
-|Sugestões|com.apple.tips|
-|Vídeos|com.apple.videos|
-|VoiceMemos|com.apple.VoiceMemos|
-|Wallet|com.apple.Passbook|
-|Watch|com.apple.Bridge|
-|Meteorologia|com.apple.weather|
+| ID do Pacote                   | Nome da Aplicação     | Fabricante |
+|-----------------------------|--------------|-----------|
+| com.apple.AppStore          | App Store    | Apple     |
+| com.apple.calculator        | Calculadora   | Apple     |
+| com.apple.mobilecal         | Calendário     | Apple     |
+| com.apple.camera            | Câmara       | Apple     |
+| com.apple.mobiletimer       | Relógio        | Apple     |
+| com.apple.compass           | Bússola      | Apple     |
+| com.apple.MobileAddressBook | Contactos     | Apple     |
+| com.apple.facetime          | FaceTime     | Apple     |
+| com.apple.DocumentsApp      | Ficheiros        | Apple     |
+| com.apple.mobileme.fmf1     | Encontrar Amigos | Apple     |
+| com.apple.mobileme.fmip1    | Localizar iPhone  | Apple     |
+| com.apple.gamecenter        | Centro de Jogos  | Apple     |
+| com.apple.mobilegarageband  | GarageBand   | Apple     |
+| com.apple.Health            | Estado de Funcionamento       | Apple     |
+| com.apple.Home              | Casa         | Apple     |
+| com.apple.iBooks            | iBooks       | Apple     |
+| com.apple.iMovie            | iMovie       | Apple     |
+| com.apple.itunesconnect.mobile | iTunes Connect | Apple |
+| com.apple.MobileStore       | iTunes Store | Apple     |
+| com.apple.itunesu           | iTunes U     | Apple     |
+| com.apple.Keynote           | Keynote      | Apple     |
+| com.apple.mobilemail        | Correio         | Apple     |
+| com.apple.Maps              | Maps         | Apple     |
+| com.apple.MobileSMS         | Mensagens     | Apple     |
+| com.apple.Music             | Música        | Apple     |
+| com.apple.news              | Notícias         | Apple     |
+| com.apple.mobilenotes       | Notas        | Apple     |
+| com.apple.Numbers           | Números      | Apple     |
+| com.apple.Pages             | Páginas        | Apple     |
+| com.apple.Photo-Booth       | Photo Booth  | Apple     |
+| com.apple.mobileslideshow   | Fotografias       | Apple     |
+| com.apple.podcasts          | Podcasts     | Apple     |
+| com.apple.reminders         | Lembretes    | Apple     |
+| com.apple.mobilesafari      | Safari       | Apple     |
+| com.apple.Preferences       | Definições     | Apple     |
+| com.apple.SiriViewService   | Siri         | Apple     |
+| com.apple.stocks            | Bolsa       | Apple     |
+| com.apple.tips              | Sugestões         | Apple     |
+| com.apple.TV                | PROGRAMAS DE TV           | Apple     |
+| com.apple.videos            | Vídeos       | Apple     |
+| com.apple.VoiceMemos        | VoiceMemos   | Apple     |
+| com.apple.Passbook          | Wallet       | Apple     |
+| com.apple.Bridge            | Watch        | Apple     |
+| com.apple.weather           | Meteorologia      | Apple     |
 
 ## <a name="next-steps"></a>Passos Seguintes
 

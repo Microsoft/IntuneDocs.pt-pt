@@ -6,7 +6,7 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 10/23/2018
+ms.date: 03/11/2019
 ms.topic: troubleshooting
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,11 +17,11 @@ ms.reviewer: sumitp
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 13010655cef307de442896fbc1aed9c666653b92
-ms.sourcegitcommit: f97e03074509ea9ef4d9007fae2644429a060c1e
+ms.openlocfilehash: 135e93bf3cfb93b5299dfd005a3ca70bbba84d77
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/12/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "57787139"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>Utilizar o portal de resolução de problemas para ajudar os utilizadores na sua empresa
@@ -62,7 +62,7 @@ Pode utilizar o painel **Resolução de problemas** para analisar as informaçõ
 
 ![](/intune/media/troubleshooting-dash.png)
 
-| Área | Nome | Descrição |
+| Área | Name | Descrição |
 | ---  | ---  | ---         |
 | 1.   | Estado da conta  | Mostra o estado do inquilino do Intune atual como **Ativo** ou **Inativo**.       |
 | 2.   | Seleção do utilizador  | O nome do utilizador atualmente selecionado. Clique em **Alterar utilizador** para selecionar um novo utilizador.       |

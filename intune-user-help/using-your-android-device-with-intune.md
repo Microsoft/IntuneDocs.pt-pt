@@ -19,10 +19,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 3b21a2efc67773f1762e422af5fe8e576b1a97db
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "55843464"
 ---
 # <a name="using-your-android-device-with-intune-company-portal"></a>Utilizar o dispositivo Android com o Portal da Empresa do Intune

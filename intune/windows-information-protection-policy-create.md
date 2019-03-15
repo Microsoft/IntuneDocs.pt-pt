@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 4e3751456e5a889134cfc44a4fec3cfffa7e41cd
-ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/05/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "57390103"
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Criar e implementar a política de proteção de aplicações do Windows Information Protection (WIP) com o Intune
@@ -126,7 +126,8 @@ Depois de adicionar as aplicações que pretende proteger com o WIP, tem de apli
 
 A Aprendizagem de WIP é um relatório que lhe permite monitorizar as suas aplicações com o WIP e as aplicações desconhecidas de WIP. As aplicações desconhecidas são as aplicações que não foram implementadas pelo departamento de TI da sua organização. Pode exportar estas aplicações a partir do relatório e adicioná-las às políticas do WIP para evitar a interrupção da produtividade antes de impor o WIP no modo “Bloquear”.
 
-<!-- 1631908 --> Além de ver informações sobre aplicações com o WIP, agora pode ver um resumo dos dispositivos que partilharam dados profissionais com sites. Com estas informações, pode determinar os sites que devem ser adicionados às políticas WIP dos grupos e dos utilizadores. O resumo mostra que URLs de sites são acedidos por aplicações com o WIP.
+<!-- 1631908 -->
+Para além de ver informações sobre aplicações com o WIP, agora pode ver um resumo dos dispositivos que partilharam dados profissionais com sites. Com estas informações, pode determinar os sites que devem ser adicionados às políticas WIP dos grupos e dos utilizadores. O resumo mostra que URLs de sites são acedidos por aplicações com o WIP.
 
 Quando estiver a trabalhar com aplicações com o WIP e aplicações desconhecidas de WIP, recomendamos que comece com **Silencioso** ou **Permitir Substituições** enquanto verifica com um pequeno grupo que tenha as aplicações corretas na sua lista de aplicações protegidas. Depois de terminar, pode alterar a política de imposição final, **Bloquear**.
 

@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 0b43323d19d79a7ce6bb6e8da9a3eb87c307e968
-ms.sourcegitcommit: 9a4c5b6c2ce511edaeace25426a23f180cb71e15
-ms.translationtype: MT
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/07/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "57564895"
 ---
 # <a name="use-the-microsoft-intune-data-warehouse"></a>Utilizar o armazém de dados do Microsoft Intune
@@ -53,4 +53,4 @@ O Armazém de Dados dá-lhe acesso a mais informações sobre o seu ambiente mó
 
 - Obtenha uma ligação e utilize o Power BI para obter informações. Para obter instruções, consulte [Connect to the Data Warehouse with Power BI (Ligar ao Armazém de Dados do Intune com o Power BI – em inglês)](reports-proc-get-a-link-powerbi.md).
 - Com a sua ligação, crie um relatório personalizado com o Power BI. Para obter instruções, veja [Create a report from the OData feed with Power BI (Criar um relatório a partir do feed OData com o Power BI)](reports-proc-create-with-odata.md).
-- Para saber mais sobre a API do Armazém de Dados do Intune, o modelo de dados e as relações entre entidades<!-- , and an example of creating a custom client to retrieve data,-->, consulte a [API do Armazém de Dados do Intune](reports-nav-intune-data-warehouse.md).
+- Obter mais informações sobre a API do armazém de dados do Intune, o modelo de dados e relações entre entidades<!-- , and an example of creating a custom client to retrieve data,--> ver [API do armazém de dados de Intune](reports-nav-intune-data-warehouse.md).

@@ -1,12 +1,12 @@
 ---
 title: definições de dispositivos macOS no Microsoft Intune – Azure | Documentos da Microsoft
 titlesuffix: ''
-description: Adicionar, configurar ou criar definições em dispositivos macOS para restringir funcionalidades, incluindo a definição de requisitos de palavra-passe, controlar o ecrã bloqueado, utilize aplicações incorporadas, adicionar restrito ou aplicações aprovadas, lidar com dispositivos bluetooth, ligar para a cloud na cópia de segurança e o armazenamento, ativar o modo de local público, adicionar domínios e controlar como os utilizadores interagem com o browser Safari no Microsoft Intune.
+description: Adicionar, configurar, ou criar definições em dispositivos macOS para restringir funcionalidades, incluindo a definição de requisitos de palavra-passe, controlar o ecrã bloqueado, utilize aplicações incorporadas, adicionar restrito ou aplicações aprovadas, lidar com dispositivos bluetooth, ligar à cloud para cópia de segurança e o armazenamento, ativar o modo de local público, adicionar domínios e controlar como os utilizadores interagem com o browser Safari no Microsoft Intune.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/19/2018
+ms.date: 03/13/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0d58a23899fbf6758687811b293418ee3b2adfb3
-ms.sourcegitcommit: 9a4c5b6c2ce511edaeace25426a23f180cb71e15
+ms.openlocfilehash: 4fa6a68d1b5a8d2ccf87587ecab36c7807770d48
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/07/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "57565354"
 ---
 # <a name="macos-device-settings-to-allow-or-restrict-features-using-intune"></a>definições de dispositivos macOS para permitir ou restringir funcionalidades com o Intune
@@ -37,6 +37,8 @@ Estas definições são adicionadas a um perfil de configuração do dispositivo
 
 ## <a name="general"></a>Geral
 
+- **Bloquear pesquisa de definição de**: **Bloco** impede o utilizador de realçar uma palavra e, em seguida, procurar a respetiva definição no dispositivo. **Não configurado** (predefinição) permite o acesso para o recurso de pesquisa de definição.
+- **Bloquear o ditado**: **Bloco** impede o utilizador através de entradas de voz para introduzir texto. **Não configurado** (predefinição) permite que o utilizador utilize a entrada de ditado.
 - **Bloquear a colocação em cache conteúdo**: Escolher **não configurado** (predefinição) para ativar a colocação em cache conteúdo. A colocação em cache conteúdo armazena dados de aplicações, dados de navegador da web, downloads e muito mais localmente no dispositivo. Selecione **bloco** para impedir que esses dados a ser armazenados na cache.
 
   Para obter mais informações sobre a colocação em cache conteúdo no macOS, veja [gerir a colocação em cache conteúdo no Mac](https://support.apple.com/guide/mac-help/manage-content-caching-on-mac-mchl3b6c3720/mac) (abre-se outro Web site).
@@ -57,7 +59,7 @@ Estas definições são adicionadas a um perfil de configuração do dispositivo
 
 ## <a name="password"></a>Palavra-passe
 
-- **palavra-passe**: Exija que o utilizador final introduza uma palavra-passe para aceder ao dispositivo.
+- **palavra-passe**: **Exigir** o utilizador final introduza uma palavra-passe para aceder ao dispositivo. **Não configurado** não requer uma palavra-passe (predefinição) e não forçar restrições, como o bloqueio de palavras-passe simples ou definir um comprimento mínimo.
   - **Tipo de palavra-passe obrigatório**: Especifique se a palavra-passe só pode ser numérica ou se tem de ser alfanumérica (conter letras e números). Esta definição só é suportada na versão 10.10.3 do Mac OS X e posterior.
   - **Número de carateres não alfanuméricos na palavra-passe**: Especifica o número de carateres complexos necessários na palavra-passe (de **0** a **4**).<br>Um caráter complexo é um símbolo, por exemplo "**?**".
   - **Comprimento mínimo da palavra-passe**: Introduza o comprimento mínimo da palavra-passe de um utilizador tem de configurar (entre **4** e **16** carateres).
@@ -67,16 +69,27 @@ Estas definições são adicionadas a um perfil de configuração do dispositivo
   - **Expiração de palavra-passe (dias)**: Especifica o número de dias que decorrem antes de o utilizador ter de alterar a palavra-passe (de **1** a **255** dias).
   - **Impedir a reutilização de palavras-passe anteriores**: Introduza o número de palavras-passe utilizadas anteriormente que não podem ser reutilizadas, partir **1** ao **24**.
 
+- **Impedir o utilizador modifique o código de acesso**: Escolher **bloco** para parar o código de acesso do que está a ser alterado, adicionado ou removido. **Não configurado** (predefinição) permite que os códigos de acesso ser adicionado, alteradas ou removidas.
+- **Desbloqueio por impressão digital do bloco**: Escolher **bloco** para impedir a utilização de uma impressão digital para desbloquear o dispositivo. **Não configurado** (predefinição) permite ao utilizador desbloquear o dispositivo através de uma impressão digital.
+
 - **Palavra-passe de bloco preenchimento automático**: Escolher **bloco** para impedir a utilização da funcionalidade de palavras-passe de preenchimento automático no macOS. Escolher **bloco** também tem o impacto seguinte:
 
   - Os utilizadores não são-lhe pedidos para utilizar uma palavra-passe guardada no Safari ou em todas as aplicações.
   - Palavras-passe forte de automáticas estão desativadas e as palavras-passe fortes não são sugeridas para os utilizadores.
 
-  **Não configurado** permite que esses recursos.
+  **Não configurado** (predefinição) permite que esses recursos.
 
-- **Bloquear pedidos de proximidade de palavra-passe**: Escolher **bloco** para que o dispositivo de um utilizador não solicitar palavras-passe do dispositivos próximos. **Não configurado** permite que estes pedidos de palavra-passe.
+- **Bloquear pedidos de proximidade de palavra-passe**: Escolher **bloco** para que o dispositivo de um utilizador não solicitar palavras-passe do dispositivos próximos. **Não configurado** (predefinição) permite que estes pedidos de palavra-passe.
 
-- **Bloquear a partilha de palavra-passe**: **Bloco** impede a partilha de palavras-passe entre dispositivos com o AirDrop. **Não configurado** permite que as palavras-passe a ser partilhado.
+- **Bloquear a partilha de palavra-passe**: **Bloco** impede a partilha de palavras-passe entre dispositivos com o AirDrop. **Não configurado** (predefinição) permite que as palavras-passe a ser partilhado.
+
+## <a name="built-in-apps"></a>Aplicações Incorporadas
+
+- **Bloquear o preenchimento automático do Safari**: **Bloco** desativa a funcionalidade de preenchimento automático no Safari no dispositivo. **Não configurado** (predefinição) permite que os utilizadores alterem as definições do browser.
+- **Bloquear câmara**: Escolher **bloco** para impedir o acesso à câmara do dispositivo. **Não configurado** (predefinição) permite o acesso à câmara do dispositivo.
+- **Bloquear músicas do Apple**: **Bloco** reverte o aplicativo de música para o modo clássico e desativa o serviço de música. **Não configurado** (predefinição) permite o uso de aplicação Apple Music.
+- **Bloquear os resultados da pesquisa Spotlight Internet**: **Bloco** impede o destaque do retorno de resultados de uma pesquisa na Internet. **Não configurado** (predefinição) permite que o destaque pesquisa ligar à Internet para fornecer os resultados da pesquisa.
+- **Transferência de ficheiros de bloco usando iTunes**: **Bloco** desativa os serviços de partilha de ficheiros de aplicação. Disponível no macOS 10.13 e posterior. **Não configurado** (predefinição) permite que os serviços de partilha de ficheiros de aplicação.
 
 ## <a name="restricted-apps"></a>Aplicações restritas
 
@@ -87,11 +100,25 @@ Na lista de aplicações restritas, pode configurar uma das seguintes listas:
 
 Para configurar a lista, clique em **Adicionar** e, em seguida, especifique um nome à sua escolha, opcionalmente, o publicador da aplicação e o ID do grupo da aplicação (por exemplo, *com.apple.calculator*).
 
+## <a name="connected-devices"></a>Dispositivos ligados
+
+- **Bloquear AirDrop**: **Bloco** impede o AirDrop a utilizar no dispositivo. **Não configurado** (predefinição) permite o uso da funcionalidade AirDrop para trocar conteúdos com dispositivos próximos.
+- **Bloquear o Apple Watch automática desbloquear**: **Bloco** impede os utilizadores de desbloquear o dispositivo macOS com o Apple Watch. **Não configurado** (predefinição) permite aos utilizadores desbloquear os dispositivos macOS com o Apple Watch.
+
+## <a name="cloud-and-storage"></a>Cloud e armazenamento
+
+- **Bloquear a sincronização de Keychain do iCloud**: Escolher **bloco** para desativar a sincronização credenciais armazenadas na Keychain com o iCloud. **Não configurado** (predefinição) permite aos utilizadores sincronizar estas credenciais.
+- **Bloquear a sincronização de documentos do iCloud**: **Bloco** impede a sincronização de documentos e dados de iCloud. **Não configurado** (predefinição) permite a sincronização de documentos e chave-valor para o seu espaço de armazenamento do iCloud.
+- **Bloquear a cópia de segurança de email do iCloud**: **Bloco** impede que o iCloud sincronizados com o aplicativo de email do macOS. **Não configurado** (predefinição) permite a sincronização de correio com o iCloud.
+- **Bloquear o contacto de cópia de segurança de iCloud**: **Bloco** impede a sincronização de contactos de dispositivos de iCloud. **Não configurado** (predefinição) permite a sincronização de contactos com o iCloud.
+- **Bloquear o calendário de cópia de segurança de iCloud**: **Bloco** impede que o iCloud sincronizados com a aplicação de calendário do macOS. **Não configurado** (predefinição) permite a sincronização de calendário com o iCloud.
+- **Bloquear o lembrete de cópia de segurança de iCloud**: **Bloco** impede que o iCloud sincronizados com a aplicação de lembretes de macOS. **Não configurado** (predefinição) permite a sincronização de lembretes para o iCloud.
+- **Bloquear a cópia de segurança do marcador do iCloud**: **Bloco** impede a sincronizar os dispositivos indicadores de iCloud. **Não configurado** (predefinição) permite a sincronização de marcador para o iCloud.
+- **Bloquear as notas de cópia de segurança de iCloud**: **Bloco** impede a sincronizar os dispositivos notas de iCloud. **Não configurado** (predefinição) permite a sincronização de notas para o iCloud.
+
 ## <a name="domains"></a>Domínios
 
-### <a name="unmarked-email-domains"></a>Domínios de e-mail não marcados
-
-No campo **URL de Domínio de E-mail**, adicione um ou mais URLs à lista. Quando os utilizadores recebem um e-mail de um domínio não configurado, o e-mail é marcado como não fidedigno na aplicação Mail do macOS.
+- **URL do domínio de e-mail**: Adicione um ou mais URLs à lista. Quando os utilizadores recebem um e-mail de um domínio não configurado, o e-mail é marcado como não fidedigno na aplicação Mail do macOS.
 
 ## <a name="next-steps"></a>Passos Seguintes
 

@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: d8e73af9ce317ebda09570c2c18df901529e7749
-ms.sourcegitcommit: a624abbfc3c80c5fba6c47a19cf1a6923c5fd438
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/07/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "57528331"
 ---
 #  <a name="ios-app-protection-policy-settings"></a>Definições de políticas de proteção de aplicações iOS

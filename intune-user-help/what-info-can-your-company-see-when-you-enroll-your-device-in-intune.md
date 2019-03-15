@@ -18,10 +18,10 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 91ea3aab5cd04624bfa036615b8d7710573bcae1
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "55846983"
 ---
 # <a name="what-information-can-my-organization-see-when-i-enroll-my-device"></a>Que informações é que a minha organização pode ver quando inscrevo o meu dispositivo?

@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 94c83ab0f70a5a40bd745b4db83ef16ac14acd00
-ms.sourcegitcommit: 3abc3bb93a95a81154146325c26c119a784e7487
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/11/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "57756858"
 ---
 # <a name="quickstart-try-microsoft-intune-for-free"></a>Início rápido: Experimente gratuitamente o Microsoft Intune 

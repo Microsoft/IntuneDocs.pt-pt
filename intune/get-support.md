@@ -17,11 +17,11 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c47f0d55a914714dedaf96f6f7c346b6252e36c6
-ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
+ms.openlocfilehash: 350ce5980cb7575a991cdc45702db95f802b4749
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/06/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "57461333"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Como obter suporte para o Microsoft Intune
@@ -51,7 +51,7 @@ A ajuda e suporte de experiência para o Intune está disponível a partir da [p
 ![Painéis do Intune](./media/get-support/intune-blades.png)
 
 
-Esta nova experiência é semelhante para a experiência mostrada o [Centro de administração do Microsoft 365](https://admin.microsoft.com/)e substitui o [anterior ajuda e suporte experiência](#azure-help-+-support-experience). 
+Esta nova experiência é semelhante para a experiência mostrada o [Centro de administração do Microsoft 365](https://admin.microsoft.com/)e substitui a anterior ajuda e suporte a experiência. 
 
 Para acessar a ajuda e suporte, utilize o seguinte:  
 - **Dashboard de gestão de dispositivos:**

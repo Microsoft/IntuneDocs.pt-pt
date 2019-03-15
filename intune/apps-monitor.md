@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 675409bfbd482ec9935db511e569d8bc174b9a30
-ms.sourcegitcommit: a59c78c13c4ff68e8a56b69029adfe51704ba570
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/08/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "57682662"
 ---
 # <a name="monitor-app-information-and-assignments-with-microsoft-intune"></a>Monitorizar informações e atribuições da aplicação com o Microsoft Intune

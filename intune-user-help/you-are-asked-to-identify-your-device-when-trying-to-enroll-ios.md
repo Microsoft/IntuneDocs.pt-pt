@@ -19,10 +19,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: a8c71ad041c0915b2c2789d0d60033ad0a025d49
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "55841526"
 ---
 # <a name="you-need-to-identify-your-device-when-youre-trying-to-enroll"></a>Tem de identificar o seu dispositivo quando está a tentar inscrever-se

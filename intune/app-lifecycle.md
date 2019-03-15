@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: apps; get-started
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: ddc53d9526459e5f85957547300dcec32957abac
-ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/05/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "57399502"
 ---
 # <a name="overview-of-the-app-lifecycle-in-microsoft-intune"></a>Descrição geral do ciclo de vida das aplicações no Microsoft Intune

@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 0aff39eeb8a825c4161ee92d798dc817d5928995
-ms.sourcegitcommit: a59c78c13c4ff68e8a56b69029adfe51704ba570
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/08/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "57682611"
 ---
 # <a name="microsoft-outlook-configuration-settings"></a>Definições de configuração do Microsoft Outlook 

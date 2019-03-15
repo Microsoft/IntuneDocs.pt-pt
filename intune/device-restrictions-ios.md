@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/06/2019
+ms.date: 03/13/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a525efb8b05d5dfd9d33e1fa0c603c72ed3084f0
-ms.sourcegitcommit: 9a4c5b6c2ce511edaeace25426a23f180cb71e15
+ms.openlocfilehash: a92d18615f6be7c1e0ce931d443d2ac986db991e
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/07/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "57566714"
 ---
 # <a name="ios-device-settings-to-allow-or-restrict-features-using-intune"></a>definições de dispositivos iOS para permitir ou restringir funcionalidades com o Intune
@@ -105,54 +105,6 @@ Estas definições são adicionadas a um perfil de configuração do dispositivo
 
     Esta definição aplica-se a:  
     - iOS 11.3 e posterior
-
-## <a name="configurations-requiring-supervision"></a>Configurações que necessitam de supervisão
-
-O modo supervisionado do iOS só pode ser ativado durante a configuração inicial de dispositivos através do Programa de Registo de Aparelho da Apple ou com o Apple Configurator. Depois de ativar o modo supervisionado, o Intune pode configurar um dispositivo com a seguinte funcionalidade:
-
-- Bloqueio de Aplicação (Modo de Aplicação Única) 
-- Proxy HTTP Global 
-- Ignorar Bloqueio de Ativação 
-- Modo de Aplicação Única Autónomo 
-- Filtro de Conteúdo Web 
-- Definição de fundo e ecrã de bloqueio 
-- Push da Aplicação Silencioso 
-- VPN Sempre Ativada 
-- Permitir exclusivamente a instalação de aplicações geridas 
-- iBookstore 
-- iMessages 
-- Centro de Jogos 
-- AirDrop 
-- AirPlay 
-- Emparelhamento de anfitrião 
-- Sincronização de Nuvem 
-- Pesquisa Spotlight 
-- Handoff 
-- Apagar dispositivo 
-- Restrições da IU 
-- Instalação dos perfis de configuração pela IU 
-- Notícias 
-- Atalhos de teclado 
-- Modificações do código de acesso 
-- Alterações do nome do dispositivo 
-- Transferências automáticas de aplicações 
-- Alterações à confiança na aplicação de empresa 
-- Apple Music 
-- Mail Drop 
-- Emparelhar com o Apple Watch 
-
-> [!NOTE]
-> A Apple confirmou que determinadas definições serão movidas para apenas supervisionado em 2019. Recomendamos que tenha isto em consideração ao utilizar estas definições, em vez de aguardar a Apple para migrá-los para apenas supervisionado:
-> - Instalação da aplicação por utilizadores finais
-> - Remoção de aplicações
-> - FaceTime
-> - Safari
-> - iTunes
-> - Conteúdos explícitos
-> - Documentos e dados do iCloud
-> - Jogos de vários jogadores
-> - Adicionar amigos do Game Center
-> - Siri
 
 ## <a name="password"></a>Palavra-passe
 
@@ -338,7 +290,7 @@ Adicionar aplicações para estas listas, pode:
 ## <a name="cloud-and-storage"></a>Cloud e Armazenamento
 
 - **Cópia de segurança para iCloud**: **Não configurado** permite ao utilizador efetuar cópias de segurança do dispositivo para iCloud. **Bloco** impede o utilizador de cópias de segurança de dispositivo para iCloud.
-- **Sincronização de documentos com a iCloud (apenas supervisionado)**: **Não configurado** permite a sincronização de documentos e chave-valor para o seu espaço de armazenamento do iCloud. **Bloco** impede a sincronização de documentos e dados de iCloud.
+- **Bloquear a sincronização de documentos do iCloud**: **Não configurado** permite a sincronização de documentos e chave-valor para o seu espaço de armazenamento do iCloud. **Bloco** impede a sincronização de documentos e dados de iCloud.
 - **Fotografia stream sincronizados com o iCloud**: **Não configurado** permite aos utilizadores ativar **minha fotografia Stream** no respetivo dispositivo sincronizadas com o iCloud e ter fotos disponíveis nos dispositivos do utilizador. **Bloco** impede a fotografia stream sincronizados com o iCloud.
 - **Cópia de segurança encriptada**: **Exigir** para cópias de segurança do dispositivo tem de estar encriptadas.
 - **Fototeca em iCloud**: Defina como **bloco** para desativar a utilizar a biblioteca de fotografias do iCloud para armazenar fotografias e vídeos na cloud. Qualquer fotos não sido completamente transferidas da Fototeca em iCloud para o dispositivo são removidas do dispositivo. **Não configurado** permite o uso da biblioteca de fotografias do iCloud.
@@ -355,15 +307,16 @@ Utilize estas definições para configurar os dispositivos iOS para executar apl
 
 Adicionar aplicações, pode:
 
-- Introduza o **nome da aplicação** e **ID do pacote de aplicação**e selecione **Add**. [Referência de ID para aplicações iOS incorporadas do pacote](#bundle-id-reference-for-built-in-ios-apps) (Este artigo) inclui algumas aplicações com suas IDs.
+- Introduza o **nome da aplicação** e **ID do pacote de aplicação**e selecione **Add**. [IDs de pacote para aplicações iOS incorporadas](#bundle-ids-for-built-in-ios-apps) (Este artigo) inclui algumas aplicações com suas IDs.
 - **Importar** um ficheiro CSV com a lista de nomes de aplicações e os IDs de coleção. Ou, **exportar** uma lista existente, que inclui as aplicações.
 
 ## <a name="kiosk-supervised-only"></a>Quiosque (apenas supervisionado)
 
-- **Aplicação seja executada no modo de quiosque**: Escolha o tipo de aplicações que pretende executar no modo de local público. As opções são: 
-  - **Aplicação de Store**: Introduza o URL para uma aplicação na App store do iTunes
-  - **Aplicação gerida**: Selecione uma aplicação que adicionar ao Intune
-  - **Aplicação incorporada**: Introduza o [ID de pacote](#bundle-id-reference-for-built-in-ios-apps) da aplicação incorporada
+- **Aplicação seja executada no modo de quiosque**: Escolha o tipo de aplicações que pretende executar no modo de local público. As opções são:
+  - **Não configurado**: Não são aplicadas definições de local público. O dispositivo não é executado no modo de local público.
+  - **Aplicação de Store**: Introduza o URL para uma aplicação na App store do iTunes.
+  - **Aplicação gerida**: Selecione uma aplicação que adicionar ao Intune.
+  - **Aplicação incorporada**: Introduza o [ID de pacote](#bundle-ids-for-built-in-ios-apps) (neste artigo) da aplicação incorporada.
 
 - **Toque de apoio**: **Exigir** a definição de acessibilidade Assistivetouch estar no dispositivo. Esta funcionalidade ajuda os utilizadores na tela gestos, que podem ser difícil para eles. **Não configurado** não executar ou habilitar esse recurso no modo de local público.
 - **Inverter cores**: **Exigir** a definição de acessibilidade de inverter cores para os utilizadores com deficiências visuais possam alterar a tela de apresentação. **Não configurado** não executar ou habilitar esse recurso no modo de local público.
@@ -386,9 +339,17 @@ Adicionar aplicações, pode:
 > Para poder configurar um dispositivo iOS para o modo de local público, tem de utilizar a ferramenta Apple Configurator ou o Programa de Inscrição de Dispositivos Apple para colocar o dispositivo no modo supervisionado. Consulte o guia da Apple sobre como utilizar a ferramenta Apple Configurator.
 > Se a aplicação iOS a que introduzir estiver instalada depois de atribuir o perfil, em seguida, o dispositivo não introduza o modo de local público até que o dispositivo é reiniciado.
 
-## <a name="bundle-id-reference-for-built-in-ios-apps"></a>Referência de ID do pacote para aplicações iOS incorporadas
+## <a name="domains"></a>Domínios
 
-Esta lista mostra o ID do pacote de algumas aplicações iOS comuns incorporadas. Para localizar o ID do pacote de outras aplicações, contacte o fabricante de software.
+- **Domínios de e-mail não marcados** > **URL de domínio de E-Mail**: Adicione um ou mais URLs à lista. Quando os utilizadores finais recebem um e-mail de um domínio não os domínios que introduzir, o e-mail é marcado como não fidedigno na aplicação Mail do iOS.
+
+- **Domínios web geridos** > **URL de domínio do Web**; Adicione um ou mais URLs à lista. Quando forem transferidos documentos dos domínios introduzir, que sejam considerados geridos. Esta definição só se aplica a documentos transferidos através do browser Safari.
+
+- **Domínios de preenchimento automático de palavras-passe do Safari** > **URL de domínio**: Adicione um ou mais URLs à lista. Os utilizadores só podem guardar as palavras-passe Web de URLs nesta lista. Esta definição aplica-se apenas ao browser Safari e aos dispositivos iOS 9.3 e posterior no modo supervisionado. Se não especificar nenhum URL, as palavras-passe poderão ser guardadas a partir de todos os sites.
+
+## <a name="bundle-ids-for-built-in-ios-apps"></a>IDs de pacote para aplicações iOS incorporadas
+
+A seguinte lista mostra o ID da coleção de pacotes de algumas aplicações iOS comuns incorporadas. Para localizar o ID do pacote de outras aplicações, contacte o fabricante de software.
 
 | ID do Pacote                   | Nome da Aplicação     | Fabricante |
 |-----------------------------|--------------|-----------|
@@ -437,19 +398,53 @@ Esta lista mostra o ID do pacote de algumas aplicações iOS comuns incorporadas
 | com.apple.Bridge            | Watch        | Apple     |
 | com.apple.weather           | Meteorologia      | Apple     |
 
-## <a name="domains"></a>Domínios
+## <a name="settings-that-require-supervised-mode"></a>As definições que exigem o modo supervisionado
 
-### <a name="unmarked-email-domains"></a>Domínios de e-mail não marcados
+O modo supervisionado do iOS só pode ser ativado durante a configuração inicial de dispositivos através do Programa de Registo de Aparelho da Apple ou com o Apple Configurator. Depois de ativar o modo supervisionado, o Intune pode configurar um dispositivo com a seguinte funcionalidade:
 
-Na **URL de domínio de E-Mail**, adicione um ou mais URLs à lista. Quando os utilizadores finais recebem um e-mail de um domínio não os domínios que introduzir, o e-mail é marcado como não fidedigno na aplicação Mail do iOS.
+- Bloqueio de Aplicação (Modo de Aplicação Única) 
+- Proxy HTTP Global 
+- Ignorar Bloqueio de Ativação 
+- Modo de Aplicação Única Autónomo 
+- Filtro de Conteúdo Web 
+- Definição de fundo e ecrã de bloqueio 
+- Push da Aplicação Silencioso 
+- VPN Sempre Ativada 
+- Permitir exclusivamente a instalação de aplicações geridas 
+- iBookstore 
+- iMessages 
+- Centro de Jogos 
+- AirDrop 
+- AirPlay 
+- Emparelhamento de anfitrião 
+- Sincronização de Nuvem 
+- Pesquisa Spotlight 
+- Handoff 
+- Apagar dispositivo 
+- Restrições da IU 
+- Instalação dos perfis de configuração pela IU 
+- Notícias 
+- Atalhos de teclado 
+- Modificações do código de acesso 
+- Alterações do nome do dispositivo 
+- Transferências automáticas de aplicações 
+- Alterações à confiança na aplicação de empresa 
+- Apple Music 
+- Mail Drop 
+- Emparelhar com o Apple Watch 
 
-### <a name="managed-web-domains"></a>Domínios Web geridos
-
-Na **URL de domínio do Web**, adicione um ou mais URLs à lista. Quando forem transferidos documentos dos domínios introduzir, que sejam considerados geridos. Esta definição só se aplica a documentos transferidos através do browser Safari.
-
-### <a name="safari-password-autofill-domains"></a>Domínios de preenchimento automático de palavras-passe do Safari
-
-Na **URL de domínio**, adicione um ou mais URLs à lista. Os utilizadores só podem guardar as palavras-passe Web de URLs nesta lista. Esta definição aplica-se apenas ao browser Safari e aos dispositivos iOS 9.3 e posterior no modo supervisionado. Se não especificar nenhum URL, as palavras-passe poderão ser guardadas a partir de todos os sites.
+> [!NOTE]
+> A Apple confirmou que determinadas definições serão movidas para apenas supervisionado em 2019. Recomendamos que tenha isto em consideração ao utilizar estas definições, em vez de aguardar a Apple para migrá-los para apenas supervisionado:
+> - Instalação da aplicação por utilizadores finais
+> - Remoção de aplicações
+> - FaceTime
+> - Safari
+> - iTunes
+> - Conteúdos explícitos
+> - Documentos e dados do iCloud
+> - Jogos de vários jogadores
+> - Adicionar amigos do Game Center
+> - Siri
 
 ## <a name="next-steps"></a>Passos Seguintes
 

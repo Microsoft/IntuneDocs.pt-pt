@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: get-started
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 441ae9549ef6fda093a69268b5aa698b9c6855c5
-ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/05/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "57390236"
 ---
 # <a name="enrollment-options-for-devices-managed-by-intune"></a>Opções de inscrição para dispositivos geridos pelo Intune

@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 72848fcbb7cb729613170329257d3dfabfc287e2
-ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/05/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "57390052"
 ---
 # <a name="microsoft-intune-documentation-40ignite-2018-special-edition41"></a>Documentação do Microsoft Intune &#40;edição especial do Ignite de 2018&#41;

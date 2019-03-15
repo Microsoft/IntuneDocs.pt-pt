@@ -17,11 +17,11 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b1c0118a45478980e008613bbc12ccce9f2f20c3
-ms.sourcegitcommit: 9a4c5b6c2ce511edaeace25426a23f180cb71e15
+ms.openlocfilehash: 8625eddaa3c6223767c7c93022275b028b4a145b
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/07/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "57566561"
 ---
 # <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>Como utilizar o Azure AD para aceder às APIs do Intune no Microsoft Graph
@@ -148,13 +148,13 @@ __Executar ações remotas que afetam o utilizador em dispositivos do Microsoft 
 __Leitura e escrita de dispositivos do Microsoft Intune__ | [DeviceManagementManagedDevices.ReadWrite.All](#mgd-rw)
 __Leitura de dispositivos do Microsoft Intune__ | [DeviceManagementManagedDevices.Read.All](#mgd-ro)
 __Leitura e escrita de definições de RBAC do Microsoft Intune__ | [DeviceManagementRBAC.ReadWrite.All](#rac-rw)
-__Leitura de definições de RBAC do Microsoft Intune__ | [DeviceManagementRBAC.Read.All](#rac=ro)
+__Leitura de definições de RBAC do Microsoft Intune__ | DeviceManagementRBAC.Read.All
 __Leitura e escrita de aplicações do Microsoft Intune__ | [DeviceManagementApps.ReadWrite.All](#app-rw)
 __Leitura de aplicações do Microsoft Intune__ | [DeviceManagementApps.Read.All](#app-ro)
-__Leitura e escrita da Configuração e Políticas de Dispositivos do Microsoft Intune__ | [DeviceManagementConfiguration.ReadWrite.All](#cfg-rw)
+__Leitura e escrita da Configuração e Políticas de Dispositivos do Microsoft Intune__ | DeviceManagementConfiguration.ReadWrite.All
 __Leitura da Configuração e Políticas de Dispositivos do Microsoft Intune__ | [DeviceManagementConfiguration.Read.All](#cfg-ro)
 __Leitura e escrita da configuração do Microsoft Intune__ | [DeviceManagementServiceConfig.ReadWrite.All](#svc-rw)
-__Leitura da configuração do Microsoft Intune__ | [DeviceManagementServiceConfig.Read.All](#svc-ra)
+__Leitura da configuração do Microsoft Intune__ | DeviceManagementServiceConfig.Read.All
 
 A tabela lista as definições tal como são apresentadas no portal do Azure. As secções a seguir descrevem os âmbitos por ordem alfabética.
 

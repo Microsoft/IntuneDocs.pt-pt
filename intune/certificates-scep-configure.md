@@ -5,8 +5,8 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/22/2019
-ms.topic: conceptual
+ms.date: 03/05/2019
+ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,11 +16,11 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5c0f498dd4a3fc26a909bd9c0adfd9247c588097
-ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
+ms.openlocfilehash: 8712fc49bce8237e717a1a38e63ec334509e3217
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/05/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "57400471"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Configurar e utilizar certificados SCEP com o Intune
@@ -37,9 +37,9 @@ Este artigo mostra como configurar a sua infraestrutura e, em seguida, criar e a
 - **Servidor do NDES**: No Windows Server 2012 R2 ou posterior, configure a função de servidor do serviço de inscrição de dispositivos de rede (NDES). O Intune não suporta a utilização do NDES num servidor que também execute a AC Empresarial. Veja a [Documentação de Orientação do Serviço de Inscrição de Dispositivos de Rede](http://technet.microsoft.com/library/hh831498.aspx) para obter instruções sobre como configurar o Windows Server 2012 R2 para alojar o NDES.
 O servidor do NDES tem de ser associado a um domínio que esteja na mesma floresta da AC Empresarial. Estão disponíveis mais informações sobre a implementação do servidor do NDES numa floresta separada, numa rede isolada ou num domínio interno em [Utilizar um Módulo de Política com o Serviço de Inscrição de Dispositivos de Rede](https://technet.microsoft.com/library/dn473016.aspx).
 
-- **Microsoft Intune Certificate Connector**: Transfira o **Certificate Connector** instalador (**NDESConnectorSetup.exe**) do portal de administração do Intune. Irá executar este instalador no servidor com a função NDES.  
+- **Microsoft Intune Certificate Connector**: No portal do Intune, aceda a **configuração do dispositivo** > **Certificate Connectors** > **adicionar**e siga o *os passos para instalar o conector para SCEP*. Utilize a ligação de transferência no portal para iniciar a transferência do programa de instalação do conector de certificado **NDESConnectorSetup.exe**.  Irá executar este instalador no servidor com a função NDES.  
 
-  - O Certificate Connector do NDES também suporta o modo Federal Information Processing Standard (FIPS). O FIPS não é obrigatório, mas pode emitir e revogar certificados quando está ativado.
+Este conector de certificado NDES também suporta o modo de Federal Information Processing Standard (FIPS). O FIPS não é obrigatório, mas pode emitir e revogar certificados quando está ativado.
 
 - **Servidor de Proxy de aplicações Web** (opcional): Utilizar um servidor que executa o Windows Server 2012 R2 ou posterior como um servidor de Proxy de aplicações Web (WAP). Esta configuração:
   - Permite aos dispositivos receberem certificados através de uma ligação à Internet.
@@ -73,7 +73,7 @@ Recomendamos vivamente a publicação do servidor do NDES através de um proxy i
 
 ### <a name="accounts"></a>Contas
 
-|Name|Detalhes|
+|Nome|Detalhes|
 |--------|-----------|
 |**Conta do serviço do NDES**|Introduza uma conta de utilizador de domínio para utilizar como conta do Serviço do NDES. |
 
@@ -302,7 +302,7 @@ Neste passo, irá:
 2. Selecione **Configuração do dispositivo** > **Autoridade de Certificação** > **Adicionar**
 3. Transfira e guarde o ficheiro de conector. Guarde-o numa localização acessível a partir do servidor onde vai instalar o conector.
 
-    ![ConnectorDownload](./media/certificates-download-connector.png)
+    ![ConnectorDownload](/media/certificates-pfx-configure/certificates-download-connector.png)
 
 4. Quando a transferência for concluída, aceda ao servidor que aloja a função Serviço de Inscrição de Dispositivos de Rede (NDES). Em seguida:
 

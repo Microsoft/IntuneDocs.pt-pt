@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 3457a8314136bac864324dc9baa72ca586bdb7a3
-ms.sourcegitcommit: fb2ca28ab0cf89202c935da3f9d98adcea20566d
-ms.translationtype: MT
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/06/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "57460908"
 ---
 # <a name="set-the-mobile-device-management-authority"></a>Definir a autoridade de gestão de dispositivos móveis

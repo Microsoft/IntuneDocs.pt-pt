@@ -17,10 +17,10 @@ ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 7ee68b4f330077ce0892baa5e8d82f6c9c4e8ffe
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: MT
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "55833400"
 ---
 # <a name="install-zimperium-zips-on-your-android-device"></a>Instalar o Zimperium zIPS no seu dispositivo Android

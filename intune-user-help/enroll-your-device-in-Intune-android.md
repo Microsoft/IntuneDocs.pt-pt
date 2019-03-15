@@ -19,10 +19,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 188c32a2fd38d3445380a9d1898b90a3bb080ae1
-ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/05/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "57335212"
 ---
 # <a name="enroll-your-android-device-in-intune"></a>Inscrever o seu dispositivo Android no Intune

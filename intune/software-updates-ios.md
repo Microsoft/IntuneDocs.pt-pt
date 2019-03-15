@@ -14,10 +14,10 @@ ms.technology: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: e3a6cf207c58194030a4e4bab8a02f76cd97b338
-ms.sourcegitcommit: 430b290474b11f9df87785b01edc178e6bae2049
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/05/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "57398618"
 ---
 # <a name="add-ios-software-update-policies-in-intune"></a>Adicionar políticas de atualização de software iOS no Intune
@@ -93,8 +93,8 @@ As políticas existentes são atribuídas a grupos, utilizadores ou dispositivos
 Os dispositivos utilizados pelos utilizadores abrangidos pela política são avaliados quanto à conformidade das atualizações. Esta política também suporta dispositivos sem utilizador.
 
 ## <a name="monitor-device-installation-failures"></a>Monitorizar as falhas de instalação em dispositivos
-A opção <!-- 1352223 -->
-**Atualizações de Software** > **Falhas de instalação para dispositivos iOS** mostra uma lista de dispositivos iOS abrangidos por uma política de atualização que tentaram efetuar uma atualização sem êxito. Pode ver o estado com o motivo pelo qual cada um dos dispositivos não foi atualizado automaticamente. Os dispositivos atualizados e em bom estado de funcionamento não são apresentados na lista. Os dispositivos atualizados incluem as atualizações mais recentes suportadas pelos mesmos.
+<!-- 1352223 -->
+**Atualizações de software** > **falhas de instalação para dispositivos iOS** mostra uma lista de iOS supervisionados dispositivos visado por uma política de atualização, tentaram uma atualização e não foi possível atualizar. Pode ver o estado com o motivo pelo qual cada um dos dispositivos não foi atualizado automaticamente. Os dispositivos atualizados e em bom estado de funcionamento não são apresentados na lista. Os dispositivos atualizados incluem as atualizações mais recentes suportadas pelos mesmos.
 
 ## <a name="next-steps"></a>Passos Seguintes
 
