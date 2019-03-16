@@ -19,11 +19,11 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 95862c006baef40bfb219e5cff50d5622c8c00b4
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.sourcegitcommit: c4258bb5824daf3f7e0ac3bb8afc539bde4d95da
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55844518"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "57990999"
 ---
 # <a name="set-your-pin-or-password"></a>Definir o PIN ou palavra-passe
 

@@ -20,11 +20,11 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 9b0132090d638421fd6c463a852705b268925700
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.sourcegitcommit: c4258bb5824daf3f7e0ac3bb8afc539bde4d95da
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55847748"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "57991032"
 ---
 # <a name="the-limit-of-devices-you-can-register-has-been-reached"></a>Foi atingido o limite de dispositivos que pode registar
 

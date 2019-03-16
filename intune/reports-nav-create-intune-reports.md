@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0b43323d19d79a7ce6bb6e8da9a3eb87c307e968
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.openlocfilehash: c3112683d44b7c4d4a3e9d1bccc6fb8c06450600
+ms.sourcegitcommit: c4258bb5824daf3f7e0ac3bb8afc539bde4d95da
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57564895"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "57991046"
 ---
 # <a name="use-the-microsoft-intune-data-warehouse"></a>Utilizar o armazém de dados do Microsoft Intune
 
@@ -43,7 +43,7 @@ O Armazém de Dados dá-lhe acesso a mais informações sobre o seu ambiente mó
   -  Um modelo de dados com utilização do padrão OData
 
 > [!Note]
-> Se estiver a utilizar a gestão de dispositivos móveis (MDM) híbrida com o System Center Configuration Manager (SCCM) e o Microsoft Intune significa que pretende obter os seus dados do SCCM. O Armazém de Dados do Intune contém apenas dados do Intune. Pode utilizar um dashboard do Power BI do SCCM para os seus relatórios personalizados. Para obter mais informações, veja "[Announcing the Power BI solution template for System Center Configuration Manager]( https://powerbi.microsoft.com/blog/sccm-solution-template)" (Anunciar o modelo de solução do Power BI para o System Center Configuration Manager) e "[Conteúdos do Power BI para o Dynamics 365](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page)".
+> Se for um através de conjuntamente gerido móveis gestão de dispositivos (MDM) com o System Center Configuration Manager e o Microsoft Intune, terá de obter os seus dados do Configuration Manager. O Armazém de Dados do Intune contém apenas dados do Intune. Pode utilizar um dashboard do Gestor de configuração do Power BI para os seus relatórios personalizados. Para obter mais informações, veja "[Announcing the Power BI solution template for System Center Configuration Manager]( https://powerbi.microsoft.com/blog/sccm-solution-template)" (Anunciar o modelo de solução do Power BI para o System Center Configuration Manager) e "[Conteúdos do Power BI para o Dynamics 365](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page)".
 
 > [!Important]  
 > Agora, pode utilizar a versão v1.0 do Armazém de Dados do Intune, ao definir o parâmetro de consulta `api-version=v1.0`. As atualizações para coleções no Armazém de Dados são acumulativas por natureza e não interrompem cenários existentes.<br><br>

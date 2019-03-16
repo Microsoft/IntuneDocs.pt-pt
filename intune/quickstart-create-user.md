@@ -14,11 +14,11 @@ search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 98c71bd4c93e869b429b7677b4fb7c442aa58643
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.sourcegitcommit: c4258bb5824daf3f7e0ac3bb8afc539bde4d95da
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57459990"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "57991087"
 ---
 # <a name="quickstart-create-a-user-and-assign-a-license-to-it"></a>Início rápido: Criar um utilizador e atribuir uma licença ao mesmo
 

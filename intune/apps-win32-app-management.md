@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7aa1901a1b9159c2e8ab7398b70f5693708f0657
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.openlocfilehash: 75137c4a9f58e1b851435cd7319d84a47478b8af
+ms.sourcegitcommit: c4258bb5824daf3f7e0ac3bb8afc539bde4d95da
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57682679"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "57991173"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune autónomo - gestão de aplicações do Win32
 
@@ -33,7 +33,7 @@ O Intune autónomo permitirá aceder a melhores funcionalidades de gestão de ap
 
 - Windows 10 versão 1607 ou posteriores (versões Enterprise, Pro e Education)
 - O cliente do Windows 10 tem de estar: 
-    - associado ao Azure Active Directory (AAD) ou Azure Active Directory Híbrido e
+    - associado ao Azure Active Directory (AAD) ou [híbrida do Azure Active Directory](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan) (abre-se outro web site do Docs), e
     - inscrito no Intune (gerido pela MDM)
 - Tamanho de aplicativo do Windows está limitado a 8 GB por aplicação
 
@@ -257,7 +257,7 @@ A imagem seguinte notifica o utilizador final que as alterações da aplicação
 Se for necessário, é possível suprimir notificações de alerta do utilizador final que mostra por atribuição de aplicações. A partir do Intune, selecione **aplicações de cliente** > **aplicações** > selecione a aplicação > **Assignemnts** > **grupos incluem**. 
 
 ## <a name="troubleshoot-win32-app-issues"></a>Resolver problemas relacionados com aplicações Win32
-Os registos de agente no computador cliente encontram-se normalmente em `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs`. Pode tirar partido de `CMTrace.exe` para ver estes ficheiros de registo. O *CMTrace.exe* pode ser transferido a partir das [Ferramentas de Cliente SCCM](https://docs.microsoft.com/sccm/core/support/tools). 
+Os registos de agente no computador cliente encontram-se normalmente em `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs`. Pode tirar partido de `CMTrace.exe` para ver estes ficheiros de registo. *CMTrace.exe* pode ser transferido a partir [ferramentas de cliente do Configuration Manager](https://docs.microsoft.com/sccm/core/support/tools). 
 
 ![Registos de captura de ecrã do agente no computador cliente](./media/apps-win32-app-10.png)    
 

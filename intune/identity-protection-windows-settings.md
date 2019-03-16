@@ -2,10 +2,10 @@
 title: Windows Hello para empresas no Microsoft Intune – Azure | Documentos da Microsoft
 description: Ver uma lista de todos os PIN, biométrica e antisspoofing configurações num perfil de proteção de identidade para utilizar e configurar o Windows Hello para empresas em dispositivos Windows 10 no Microsoft Intune.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 01/22/2019
+ms.date: 03/14/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,18 +15,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 51569b5cb6faac6c265734b46f1efbb8407e0d3c
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.reviewer: shpate
+ms.openlocfilehash: 308a730737612f39863160952409ab92670f9153
+ms.sourcegitcommit: c4258bb5824daf3f7e0ac3bb8afc539bde4d95da
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566221"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "57991057"
 ---
-# <a name="windows-10-and-newer-device-settings-to-enable-windows-hello-for-business-in-intune"></a>Definições de dispositivo 10 (e versões posteriores) do Windows para ativar o Windows Hello para empresas no Intune
+# <a name="windows-10-device-settings-to-enable-windows-hello-for-business-in-intune"></a>Definições do dispositivo Windows 10 para ativar o Windows Hello para empresas no Intune
 
-Este artigo apresenta e descreve o Windows Hello para empresas que pode controlar em dispositivos Windows 10 no Intune. Como parte da sua solução de gestão (MDM) de dispositivos móveis, utilize estas definições para utilizar um PIN ou impressão digital para iniciar sessão e muito mais.
+Este artigo apresenta e descreve o Windows Hello para empresas que pode controlar em dispositivos Windows 10 no Intune. Enquanto administrador do Intune, pode configurar e atribuir estas definições para dispositivos Windows 10 como parte da sua solução de gestão (MDM) de dispositivos móveis. 
 
-Enquanto administrador do Intune, pode criar e atribuir estas definições para Windows 10 e dispositivos posteriores.
+Pode encontrar informações adicionais sobre estas definições na [configurar o Windows Hello para definições de política de negócios](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-cert-trust-policy-settings), na documentação do WIndows Hello.
+
 
 Para saber mais sobre o Windows Hello para perfis de empresas no Intune, consulte [configurar a proteção de identidade](identity-protection-configure.md).
 
@@ -83,8 +85,7 @@ Para saber mais sobre o Windows Hello para perfis de empresas no Intune, consult
 - **Certificado para recursos no local**: 
 
   - **Ativar**: Permite que o Windows Hello para Empresas utilize certificados para autenticar recursos no local.
-  - **Não configurado** (predefinição): Impede que o Windows Hello para Empresas utilize certificados para autenticar recursos no local.  
-
+  - **Não configurado** (predefinição): Impede que o Windows Hello para Empresas utilize certificados para autenticar recursos no local. Em vez disso, os dispositivos utilizam o comportamento padrão do *confiança de chave de autenticação no local*. Para obter mais informações, consulte [certificado de utilizador para autenticação no local](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-cert-trust-policy-settings#use-certificate-for-on-premises-authentication) na documentação Hello do Windows.  
 ## <a name="next-steps"></a>Passos Seguintes
 
 [Atribua o perfil](device-profile-assign.md) e [monitorize o respetivo estado](device-profile-monitor.md).

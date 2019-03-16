@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4e6a543e835e67c55be4d62cb0290a096d3a65ee
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.openlocfilehash: 1b2aaab2f66b2a30c354517278ab0e764f1128ee
+ms.sourcegitcommit: c4258bb5824daf3f7e0ac3bb8afc539bde4d95da
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565779"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "57990966"
 ---
 # <a name="reference-for-current-user-entity"></a>Referência para a entidade Utilizador Atual
 
-A categoria **Utilizador Atual** contém as propriedades do utilizador no modelo de dados. A coleção de entidades **Utilizador Atual** está limitada apenas aos utilizadores atualmente ativos. A entidade contém todos os utilizadores do Azure Active Directory aos quais está atualmente atribuída uma licença. A licença pode ser uma licença do Intune, uma licença Híbrida ou uma licença do Microsoft Office 365. Se um utilizador tiver sido removido, não será representado na coleção Utilizador Atual. Para ver uma coleção com o histórico de alterações do estado do utilizador, veja[Referência para a entidade de utilizador](reports-ref-user.md).
+A categoria **Utilizador Atual** contém as propriedades do utilizador no modelo de dados. A coleção de entidades **Utilizador Atual** está limitada apenas aos utilizadores atualmente ativos. A entidade contém todos os utilizadores do Azure Active Directory aos quais está atualmente atribuída uma licença. A licença pode ser uma licença do Intune, uma licença cogerida ou uma licença do Microsoft Office 365. Se um utilizador tiver sido removido, não será representado na coleção Utilizador Atual. Para ver uma coleção com o histórico de alterações do estado do utilizador, veja[Referência para a entidade de utilizador](reports-ref-user.md).
 
 
 ## <a name="current-user"></a>Utilizador Atual

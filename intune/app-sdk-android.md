@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e2edb7f3f09b29a9916a52bd97fb7cfbba87226d
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.openlocfilehash: 0a7ccc2da5fd99c3c72c8c9beb765f292e896eee
+ms.sourcegitcommit: c4258bb5824daf3f7e0ac3bb8afc539bde4d95da
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566765"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "57991178"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Guia para programadores do SDK da Aplicação do Microsoft Intune para Android
 
@@ -1666,10 +1666,6 @@ LOGGER.info("Found value " + valueToUse);
 ### <a name="notification"></a>Notificação
 A configuração da aplicação adiciona um novo tipo de notificação:
 * **REFRESH_APP_CONFIG**: Esta notificação é enviada num `MAMUserNotification` e informa a aplicação que estão disponíveis novos dados de configuração de aplicação.
-
-Para obter mais informações sobre as funcionalidades da Graph API, veja [Referência da Graph API](https://developer.microsoft.com/graph/docs/concepts/overview). <br>
-
-Para obter mais informações sobre como criar uma política de configuração de aplicações de MAM direcionada no Android, veja a secção na configuração de aplicação de MAM direcionada em [Como utilizar as políticas de configuração de aplicações do Microsoft Intune para Android](https://docs.microsoft.com/intune/app-configuration-policies-use-android).
 
 ### <a name="further-reading"></a>Leitura adicional
 Para obter mais informações sobre as funcionalidades da Graph API, veja [Referência da Graph API](https://developer.microsoft.com/graph/docs/concepts/overview). <br>

@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: ce06d1e5fafca484b0d5df080eac7c3f5b8de4f7
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.sourcegitcommit: c4258bb5824daf3f7e0ac3bb8afc539bde4d95da
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57564606"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "57991047"
 ---
 #  <a name="microsoft-intune-data-warehouse-api"></a>API do armazém de dados do Microsoft Intune
 

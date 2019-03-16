@@ -18,11 +18,11 @@ search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 0202fba7e31b7be1d325617867be9a43d4f2064a
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.sourcegitcommit: c4258bb5824daf3f7e0ac3bb8afc539bde4d95da
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57400233"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "57991140"
 ---
 # <a name="incomplete-user-enrollments-report"></a>Relatório de inscrições de utilizador incompleto
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2e4924b83caba0047f326f38cd7bce36b3fd38c4
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.openlocfilehash: 5a253894e400e4b63de40d2d8ef56cefef5b2ca0
+ms.sourcegitcommit: c4258bb5824daf3f7e0ac3bb8afc539bde4d95da
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57393559"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "57991107"
 ---
 # <a name="audit-export-or-delete-personal-data-in-intune"></a>Auditar, exportar ou eliminar dados pessoais no Intune
 
@@ -80,6 +80,9 @@ Quando tiver um ambiente híbrido de MDM (Intune integrado com o Configuration M
 1. Elimine o utilizador do seu Active Directory (AD) local. Isto impedirá a sincronização do utilizador com o Azure Active Directory e a deteção deste pelo Configuration Manager. 
 2. Elimine o utilizador da consola do Configuration Manager para remover o utilizador e os dados associados do Configuration Manager. Na consola, aceda a **Ativos e Conformidade** > **Utilizadores**, clique com o botão direito no utilizador a eliminar e clique em **Eliminar**.
 3. [Eliminar o utilizador do AAD](https://docs.microsoft.com/azure/active-directory/add-users-azure-active-directory.md#delete-users-from-azure-ad) remove o utilizador e os dados associados do Azure Active Directory e do Intune ao mesmo tempo. Quando o utilizador é eliminado do AAD (eliminado definitivamente), o Intune recebe o sinal de eliminação do AAD e, em seguida, inicia automaticamente a remoção de todos os dados pessoais desse utilizador do serviço do Intune. As informações do utilizador serão eliminadas do serviço do Intune no prazo de 30 dias após a ação de remoção.
+
+> [!Important]
+>Integração de novos clientes MDM híbrida foi preterida. Para obter mais informações, consulte a [mover da gestão de dispositivos móveis híbrida para o Intune no Azure](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150) postagem de blog.
 
 ## <a name="next-steps"></a>Passos Seguintes
 
