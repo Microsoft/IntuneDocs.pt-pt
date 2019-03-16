@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1c10017a2f0c272dc140a62f678387ce70e09554
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.openlocfilehash: d50afb7cd5e0d6236dde36770f11f7ac3e3262fa
+ms.sourcegitcommit: c4258bb5824daf3f7e0ac3bb8afc539bde4d95da
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57391120"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "57991068"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-fully-managed-devices-preview"></a>Configurar o Intune inscrição do Android Enterprise totalmente dispositivos geridos (pré-visualização)
 
@@ -36,7 +36,7 @@ O Intune ajuda-o a implementar aplicações e dispositivos geridos de definiçõ
 
 ## <a name="technical-requirements"></a>Requisitos técnicos
 
-Tem de ter um inquilino do Intune autónomo para gerir dispositivos Android Enterprise totalmente gerido. Gestão de dispositivos totalmente gerida não está disponível em qualquer um dos modos de híbrida (ligado SCCM) ou na consola de gestão legada do Silverlight.
+Tem de ter um inquilino do Intune autónomo para gerir dispositivos Android Enterprise totalmente gerido. Gestão de dispositivos totalmente gerida não está disponível em qualquer um dos modos de híbridas (Configuration Manager-ligado) ou na consola de gestão legada do Silverlight.
 
 Dispositivos têm de cumprir estes requisitos para ser gerido como uma empresa Android totalmente gerido de dispositivo:
 

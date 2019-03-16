@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8e86285d81527d16486ce592d16937b679720d51
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.openlocfilehash: 2fda667710c43514c389e5d356f8b80fedd420ea
+ms.sourcegitcommit: c4258bb5824daf3f7e0ac3bb8afc539bde4d95da
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57390332"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "57991144"
 ---
 # <a name="set-enrollment-restrictions"></a>Definir restrições de inscrição
 
@@ -131,15 +131,16 @@ Durante a inscrição de BYOD, os utilizadores veem uma notificação que irá i
 
 ![Notificação de limite do dispositivo iOS](./media/enrollment-restrictions-ios-set-limit-notification.png)
 
-Restrições de limite de dispositivo não se aplicam para os seguintes tipos de inscrição da empresa do Windows:
-
-- Inscrições cogeridas
-- Inscrições de GPO
-- Azure Active Directory associado inscrições
-- Em massa do Azure Active Directory associados a um inscrições
-- Inscrições de autopilot
-
-Pode definir limites de dispositivos para estes tipos de inscrição [no Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/devices/device-management-azure-portal#configure-device-settings).
+> [!IMPORTANT]
+> Restrições de limite de dispositivo não se aplicam para os seguintes tipos de inscrição do Windows:
+> - Inscrições cogeridas
+> - Inscrições de GPO
+> - Azure Active Directory associado inscrições
+> - Em massa do Azure Active Directory associados a um inscrições
+> - Inscrições de autopilot
+>
+> Restrições de limite de dispositivos não são impostas para estes tipos de inscrição porque sejam considerados cenários de dispositivo partilhado.
+> Pode definir limites de disco rígidos para estes tipos de inscrição [no Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/devices/device-management-azure-portal#configure-device-settings).
 
 ## <a name="change-enrollment-restriction-priority"></a>Alterar a prioridade das restrições de inscrição
 
