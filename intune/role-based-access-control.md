@@ -17,14 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a07c87ca2bfe6729e3af83badb4e87e8cd2a8fb2
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: d1c7f7a2ed1d87d23d01b51ff928c906bc32541a
+ms.sourcegitcommit: 25e17a1d002ee1faa49bb89648eb59373528539f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57394839"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58173985"
 ---
-# <a name="role-based-administration-control-rbac-with-microsoft-intune"></a>Controlo de acesso baseado em funções (RBAC) com o Microsoft Intune
+# <a name="role-based-access-control-rbac-with-microsoft-intune"></a>Controlo de acesso baseado em funções (RBAC) com o Microsoft Intune
 
 O RBAC ajuda-o a controlar quem pode executar várias tarefas do Intune na sua organização e a quem se aplicam essas tarefas. Pode utilizar as funções incorporadas que abrangem alguns cenários comuns do Intune ou pode criar as suas próprias funções. Uma função é definida por:
 
@@ -46,6 +46,7 @@ Com o novo portal do Azure, o **Azure Active Directory (Azure AD)** fornece dua
 
     > [!IMPORTANT]
     > A função Administrador de Serviço do Intune não permite gerir configurações de acesso condicional do Azure AD.
+    >
     > A ser atribuída uma função do Intune, o utilizador tem de ter uma licença do Intune.
 
     > [!TIP]

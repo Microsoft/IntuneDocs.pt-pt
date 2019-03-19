@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 570cdb529221210ff08e52dbf9e2449f8b70c060
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 2fc6cba2d1088ddb367d5c47da04118aa9d6fcab
+ms.sourcegitcommit: 25e17a1d002ee1faa49bb89648eb59373528539f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57399919"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58173989"
 ---
 # <a name="what-are-app-protection-policies"></a>O que são as políticas de proteção de aplicações?
 
@@ -72,6 +72,8 @@ Suporte de plataformas de políticas do Intune app protection se alinha com supo
 
 Os dispositivos Windows não são atualmente suportados. No entanto, pode usar o Windows Information Protection, que oferece uma funcionalidade semelhante. Para mais detalhes, consulte [Protect your enterprise data using Windows Information Protection (WIP) (Proteger os seus dados empresariais com o Windows Information Protection [WIP] – em inglês)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
 
+> [!IMPORTANT]
+> O Portal da empresa do Intune é necessário no dispositivo para receber políticas de proteção de aplicações do Android. Para obter mais informações, consulte a [requisitos de aplicações de acesso do Portal da empresa do Intune](end-user-mam-apps-android.md#access-apps).
 
 ## <a name="how-app-protection-policies-protect-app-data"></a>Como as políticas de proteção de aplicações protegem os dados das aplicações
 

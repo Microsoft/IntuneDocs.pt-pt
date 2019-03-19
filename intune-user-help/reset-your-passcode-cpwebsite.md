@@ -18,12 +18,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5e973e18a79c18af6b201194fc1a6534da5fa38a
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: fd05c600553ec23085b03eb560e0e736c9d7a764
+ms.sourcegitcommit: 25e17a1d002ee1faa49bb89648eb59373528539f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55838041"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "58163433"
 ---
 # <a name="how-to-reset-your-device-passcode-from-the-company-portal-website"></a>Como repor o código de acesso do dispositivo a partir do site do Portal da Empresa
 
@@ -32,7 +32,7 @@ Se perder o PIN ou a palavra-passe do seu dispositivo, pode utilizar o [site do 
 Se estiver a utilizar um dispositivo pertencente à empresa, poderá não ser apresentada a opção para repor o código de acesso do dispositivo. Contacte o suporte da empresa para que este reponha o código de acesso.
 
    > [!NOTE]
-   > Não pode repor o código de acesso para dispositivos com o Android 7.0 e versões posteriores. Caso se esqueça do código de acesso, terá de repor as definições de fábrica do dispositivo. 
+   > Não é possível repor o código de acesso para dispositivos Android 7.0 e posterior. Se se esquecer o código de acesso, tem de repor o dispositivo para as definições de fábrica. 
 
 ## <a name="reset-your-passcode"></a>Repor o código de acesso
 
