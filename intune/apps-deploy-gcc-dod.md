@@ -1,7 +1,7 @@
 ---
-title: Aplicações para ambientes de GCC elevada e DOD
+title: Aplicações para ambientes de GCC elevada e DoD
 titlesuffix: Microsoft Intune
-description: Saiba mais sobre as aplicações que envolvam ambientes de GCC elevada e DOD através do Microsoft Intune.
+description: Saiba mais sobre as aplicações que envolvam ambientes de GCC elevada e DoD através do Microsoft Intune.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -18,23 +18,23 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8de56c6fc0909ee06fa9dd22e1636694952fc799
-ms.sourcegitcommit: 25e17a1d002ee1faa49bb89648eb59373528539f
+ms.openlocfilehash: fb49cd97e029e45d7d098ec1898fd0e27efa1132
+ms.sourcegitcommit: 4049a3aed15f2d8d21bb814410875a13f613e4ed
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58175637"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58283233"
 ---
-# <a name="deploying-apps-using-intune-on-the-gcc-high-and-dod-environments"></a>Implementação de aplicações através do Intune em ambientes do DOD e GCC elevada 
+# <a name="deploying-apps-using-intune-on-the-gcc-high-and-dod-environments"></a>Implementação de aplicações através do Intune em ambientes do DoD e GCC elevada 
 
-Microsoft Intune pode ser utilizado por administradores de inquilinos para distribuir aplicações para a sua força de trabalho. A força de trabalho é o funcionário da empresa, os utilizadores das aplicações. Existem muitos tipos de aplicações que podem ser implementadas a partir do Intune em US Government Comunidade GCC () ambientes de alta ou o departamento de defesa (DOD). Se um administrador tem de carregar e distribuir uma aplicação do Windows se destina a um GCC elevada ou o público-alvo de DOD que é personalizado, criados por fornecedores de terceiros, ou como uma aplicação offline transferido a partir da [Microsoft Store para empresas](https://businessstore.microsoft.com/store), o administrador pode optar por distribuir-o como um [aplicação de linha de negócio](apps-add.md#app-types-in-microsoft-intune).  
+Microsoft Intune pode ser utilizado por administradores de inquilinos para distribuir aplicações para a sua força de trabalho. A força de trabalho é o funcionário da empresa, os utilizadores das aplicações. Existem muitos tipos de aplicações que podem ser implementadas a partir do Intune em ambientes do DoD ou GCC elevada. Se um administrador tem de carregar e distribuir uma aplicação do Windows se destina a um GCC elevada ou o público-alvo de DoD que é personalizado, criados por fornecedores de terceiros, ou como uma aplicação offline transferido a partir da [Microsoft Store para empresas](https://businessstore.microsoft.com/store), o administrador pode optar por distribuir-o como um [aplicação de linha de negócio](apps-add.md#app-types-in-microsoft-intune).  
 
 > [!NOTE]
-> Para ambientes comerciais, o administrador de inquilinos pode sincronizar suas Store para empresas com o Intune, no entanto, para ambientes de GCC elevada e DOD, este serviço não está disponível. Os administradores nesta situação tem de implementar uma aplicação ao carregar diretamente para o Intune.  
+> Para ambientes comerciais, o administrador de inquilinos pode sincronizar suas Store para empresas com o Intune, no entanto, para ambientes de GCC elevada e DoD, este serviço não está disponível. Os administradores nesta situação tem de implementar uma aplicação ao carregar diretamente para o Intune.  
 
 ## <a name="add-line-of-business-apps-using-intune"></a>Adicionar aplicações de linha de negócio com o Intune 
 
-Para adicionar uma aplicação de linha de negócio se destina a um ambiente de GCC elevada ou DOD através do Intune, pode seguir a [aplicação LOB para Windows](lob-apps-windows.md) instruções. Pode optar por implementar o Portal da empresa pela primeira vez a partir da Microsoft Store para empresas. Se optar por utilizar o Portal da empresa, pode instalar manualmente e implementar o Portal da empresa. Para obter mais informações, consulte [como configurar a aplicação Portal da empresa do Microsoft Intune](company-portal-app.md). 
+Para adicionar uma aplicação de linha de negócio se destina a um ambiente de GCC elevada ou DoD através do Intune, pode seguir a [aplicação LOB para Windows](lob-apps-windows.md) instruções. Pode optar por implementar o Portal da empresa pela primeira vez a partir da Microsoft Store para empresas. Se optar por utilizar o Portal da empresa, pode instalar manualmente e implementar o Portal da empresa. Para obter mais informações, consulte [como configurar a aplicação Portal da empresa do Microsoft Intune](company-portal-app.md). 
 
 ## <a name="distribute-offline-apps-from-the-store-for-business-using-intune"></a>Distribuir aplicações Offline a partir do Store para empresas com o Intune  
 

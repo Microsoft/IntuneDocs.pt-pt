@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 03/04/2019
+ms.date: 03/20/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9c377a8558b1f318b4ddad735b6368a291e34516
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 2310f9720c64301a3ea25631e1e8688d88a001e4
+ms.sourcegitcommit: 768430b5296573c6e007ae4e13d57aeda4be4b7e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57756824"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58306826"
 ---
 # <a name="in-development-for-microsoft-intune---march-2019"></a>No desenvolvimento do Microsoft Intune – Março de 2019
 
@@ -49,12 +49,6 @@ Para ajudar na preparação de sua e planejamento, esta página, listas de atual
 
 
 <!-- 1903 start-->
-
-### <a name="encryption-report-----2351538---"></a>Relatório de encriptação  <!-- 2351538 -->
-Será capaz de utilizar um novo relatório de encriptação para ver detalhes sobre o estado de encriptação dos seus dispositivos. Detalhes disponíveis incluirá uma versão do TPM de dispositivos, preparação de encriptação e o estado, o relatório de erros e mais.  
-
-### <a name="access-bitlocker-recovery-keys-from-the-intune-portal-----2351547----"></a>Aceder a chaves de recuperação do BitLocker a partir do portal do Intune  <!-- 2351547  -->
-Estamos a adicionar um novo ponto de entrada em dispositivos, onde pode ver os detalhes do Azure Active Directory (AAD) sobre o ID da chave do BitLocker e chaves de recuperação do BitLocker.
 
 ### <a name="scope-tags-for-app-configuration-policies---2371891---"></a>Etiquetas de âmbito para políticas de configuração de aplicações <!--2371891 -->
 Poderá adicionar uma etiqueta de âmbito a uma política de configuração de aplicação para que apenas as pessoas com funções atribuídas também essa etiqueta de âmbito tenham acesso para a política de configuração de aplicação. A política de configuração de aplicação só pode ser direcionada para ou associada a aplicações atribuídas a mesma etiqueta de âmbito.
@@ -84,7 +78,7 @@ Portal da empresa para iOS irão atualizar ecrãs de inscrição da aplicação 
 - Abra a aplicação de definições para instalar o perfil de gestão no respetivo dispositivo.
 - Regressar à aplicação Portal da empresa que conclua a inscrição.  
 
-Para obter mais informações sobre como pode preparar para estas alterações, consulte a [post de Comunidade tecnológica da Microsoft](https://techcommunity.microsoft.com/). Entretanto, para suportar as novas inscrições iOS no Portal da empresa, atualizámos os passos em [inscrever o dispositivo de iOS no Intune](https://docs.microsoft.com/en-us/intune/ios-enroll). Estas alterações docs estarão em direto após Apple versões iOS versão 12.2. 
+Para obter mais informações sobre como pode preparar para estas alterações, consulte a [post de Comunidade tecnológica da Microsoft](https://aka.ms/CP_changes_iOS12). Entretanto, para suportar as novas inscrições iOS no Portal da empresa, atualizámos os passos em [inscrever o dispositivo de iOS no Intune](https://docs.microsoft.com/en-us/intune/ios-enroll). Estas alterações de documento será em direto depois Apple versões iOS versão 12.2. 
 
 ### <a name="support-for-additional-connectors-on-the-tenant-status-page----3617202-------"></a>Suporte para conectores adicionais na página de estado do inquilino <!-- 3617202     -->
 A página de estado do inquilino irá apresentar informações do Estado de conectores adicionais, incluindo *a proteção de ameaças avançada do Windows Defender* (ATP) e outros conectores de defesa contra ameaças móveis.

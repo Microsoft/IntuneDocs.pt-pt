@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/27/2019
+ms.date: 03/20/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ab89676ca7a652aa317993286b8c91c0a0ed6910
-ms.sourcegitcommit: b085121bf1fc56b636aefe47caeabd1d4ee96ea1
+ms.openlocfilehash: 7e78aaf026146ae2cf531668464a7f7c644894ce
+ms.sourcegitcommit: 768430b5296573c6e007ae4e13d57aeda4be4b7e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58221506"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58306871"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -47,6 +47,17 @@ Saiba mais sobre as novidades todas as semanas no Microsoft Intune. Também pode
 -->     
 
 <!-- ########################## -->
+## <a name="week-of-march-18-2019"></a>Semana de 18 de Março de 2019
+
+#### <a name="encryption-report-for-windows-10-devices-in-public-preview---2351538---"></a>Relatório de encriptação para dispositivos do Windows 10 (em pré-visualização pública)<!-- 2351538 -->  
+
+Utilizar a nova [relatório de encriptação (pré-visualização)](encryption-monitor.md#encryption-report) para ver detalhes sobre o estado de encriptação dos seus dispositivos Windows 10. Detalhes disponíveis incluem uma versão do TPM de dispositivos, preparação de encriptação e o estado, o relatório de erros e mais.  
+
+#### <a name="access-bitlocker-recovery-keys-from-the-intune-portal-in-public-preview----2351547-----"></a>Aceder a chaves de recuperação do BitLocker a partir do portal do Intune (em pré-visualização pública) <!-- 2351547   -->  
+
+Agora pode utilizar o Intune para [ver detalhes](encryption-monitor.md#bitlocker-recovery-keys) sobre o ID da chave do BitLocker e chaves de recuperação do BitLocker, do Azure Active Directory.
+
+
 ## <a name="week-of-february-25-2019"></a>Semana de 25 de Fevereiro de 2019
 
 ### <a name="device-configuration"></a>Configuração do dispositivo
@@ -347,7 +358,7 @@ O Intune fornece relatórios campos, incluindo o Id de registo de aplicação, f
 
 #### <a name="administrative-templates-are-in-public-preview-and-moved-to-their-own-configuration-profile----3322847---"></a>Modelos administrativos estão em pré-visualização pública e movido para o seu próprio perfil de configuração <!-- 3322847 -->
 
-Modelos administrativos no Intune (**configuração do dispositivo** > **modelos administrativos**) estão atualmente em pré-visualização privada. Com esta atualização:
+Modelos administrativos no Intune (**configuração do dispositivo** > **modelos administrativos**) estão atualmente em pré-visualização pública. Com esta atualização:
 
 - Modelos administrativos incluem aproximadamente 300 definições que podem ser geridas no Intune. Anteriormente, estas definições só existiam no editor de políticas de grupo.
 - Modelos administrativos estão disponíveis em pré-visualização pública.

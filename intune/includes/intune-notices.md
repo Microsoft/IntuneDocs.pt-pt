@@ -1,13 +1,20 @@
 ---
-ms.openlocfilehash: dc86f2c22410236368753acd4dd3b66698037241
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 15cf7f35c1ea2a3351b5a6d829cfca42ddb62729
+ms.sourcegitcommit: b085121bf1fc56b636aefe47caeabd1d4ee96ea1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57736850"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58261512"
 ---
 
 Estes avisos fornecem importante de informações que podem ajudá-lo a se preparar para as funcionalidades e alterações futuras do Intune. 
+
+###  <a name="upcoming-change-to-the-intune-data-warehouse-api----1455231-doc-work-item---"></a>Alteração futura à API do armazém de dados do Intune <!-- 1455231 doc-work-item -->
+Iremos fazer duas alterações durante o período de tempo de 1903:
+- Descontinuação de filtro do Beta<br>
+    Descontinuação de filtros de beta não suportado instanciado. Os clientes afetados foram enviados por e-mail.   
+- alterações 1.0 refletindo para o beta<br>
+    As alterações feitas para nossas coleções de v1.0 agora serão refletidas na versão beta.  
 
 ### <a name="change-in-enrollment-workflow-with-intune-company-portal-on-corporate-ios-devices-authenticating-with-setup-assistant----1927359---"></a>Alterar inscrição fluxo de trabalho com o Portal da empresa do Intune em dispositivos iOS empresariais, a autenticação com o Assistente de configuração <!-- 1927359 -->
 Há uma futura alteração ao fluxo de trabalho para a inscrição de dispositivos iOS através de um dos dispositivo da empresa métodos de inscrição da Apple - Apple Configurator, gerente de negócios da Apple, Apple School Manager ou o Apple dispositivo programa de inscrição (DEP), ao utilizar o programa de configuração Assistente para a autenticação. Esta alteração aplica-se apenas a dispositivos inscritos com afinidade do utilizador.
