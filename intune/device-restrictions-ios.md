@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a92d18615f6be7c1e0ce931d443d2ac986db991e
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 44f7c5b897dc1aedfe8ffc23c25ea479eceb35e5
+ms.sourcegitcommit: 464cf677e3746eaba46836dedfb94572a75032f9
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566714"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58330500"
 ---
 # <a name="ios-device-settings-to-allow-or-restrict-features-using-intune"></a>definições de dispositivos iOS para permitir ou restringir funcionalidades com o Intune
 
@@ -43,7 +43,7 @@ Estas definições são adicionadas a um perfil de configuração do dispositivo
     Esta funcionalidade aplica-se a:  
     - iOS 9.3.2 e posterior
 
-- **Captura de ecrã**: Escolher **bloco** impedir capturas de ecrã ou tela captura no dispositivo. **Não configurado** (predefinição) permite ao utilizador capturar o conteúdo do ecrã como uma imagem.
+- **Captura de ecrã**: Escolher **bloco** impedir capturas de ecrã ou tela captura no dispositivo. No iOS 9.0 e posterior, este também inclui gravar o ecrã de bloqueio. **Não configurado** (predefinição) permite ao utilizador capturar o conteúdo do ecrã como uma imagem ou um vídeo.
   - **Observação remota do ecrã pela aplicação Classroom (apenas supervisionada)**: Escolher **bloco** para impedir que a aplicação sala de aula remotamente, ver o ecrã no dispositivo. **Não configurado** (predefinição) permite que a aplicação de sala de aula da Apple ver o ecrã.
 
     Esta funcionalidade aplica-se a:  

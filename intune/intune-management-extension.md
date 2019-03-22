@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/28/2019
+ms.date: 03/21/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 20bacb9d181778fb2b2f52a19c116e7792f0a481
-ms.sourcegitcommit: c4258bb5824daf3f7e0ac3bb8afc539bde4d95da
+ms.openlocfilehash: 469327261b8f617be0851b52d389965c5eff9b59
+ms.sourcegitcommit: 464cf677e3746eaba46836dedfb94572a75032f9
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "57991132"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58330410"
 ---
 # <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>Utilizar scripts do PowerShell em dispositivos Windows 10 no Intune
 
@@ -44,7 +44,7 @@ A extensão de gestão do Intune complementa as funcionalidades de MDM do Window
 
 A extensão de gestão do Intune tem os seguintes pré-requisitos:
 
-- Dispositivos tem de ser associados a um ou registados no Azure AD e o Azure AD está configurado para [inscrição automática no Intune](windows-enroll.md#enable-windows-10-automatic-enrollment). A extensão de gestão do Intune suporta associados ao Azure AD, o domínio do Azure AD híbrido associado e conjuntamente geridos os dispositivos Windows inscritos.
+- Dispositivos tem de ser associados a um ou registados no Azure AD e o Azure AD e o Intune configurado para [inscrição automática](quickstart-setup-auto-enrollment.md). A extensão de gestão do Intune suporta associados ao Azure AD, o domínio do Azure AD híbrido associado e conjuntamente geridos os dispositivos Windows inscritos.
 - Dispositivos têm de executar com o Windows 10 versão 1607 ou posterior.
 - O agente de extensão de gestão do Intune é instalado quando um script do PowerShell ou uma aplicação Win32 for implementada para um utilizador ou grupo de segurança do dispositivo.
 

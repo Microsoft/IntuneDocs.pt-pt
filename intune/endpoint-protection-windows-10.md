@@ -2,8 +2,8 @@
 title: Definições de proteção para dispositivos Windows 10 no Microsoft Intune – Azure | Documentos da Microsoft
 description: Em dispositivos com o Windows 10, utilize ou configure definições de proteção de ponto final para ativar a funcionalidade Windows Defender, incluindo o Application Guard, Firewall, SmartScreen, encriptação e BitLocker, Exploit Guard, Controlo de Aplicações, Centro de Segurança e segurança em dispositivos locais no Microsoft Intune.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 03/04/2019
 ms.topic: reference
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fbbdbbb92c033a99f1c439271c745c1abfbcd562
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 4c2df888e146a7f240530e5cbc6628dbce34cb61
+ms.sourcegitcommit: b0b1030017e741d92c508130447a8242d9ad7a51
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566697"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58343002"
 ---
 # <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>Definições de 10 (e posteriores) do Windows para proteger os dispositivos com o Intune
 
@@ -87,8 +87,7 @@ Estas definições são aplicáveis a todos os tipos de rede.
 
 Estas definições são aplicáveis a tipos de rede específicos, incluindo **Rede de domínio (área de trabalho)**, **Rede privada (detetável)** e **Rede pública (não detetável)**.
 
-#### <a name="general-settings"></a>Definições gerais
-
+#### <a name="general-settings"></a>Definições gerais  
 - **Firewall do Windows Defender**: Escolher **ativar** para ativar a firewall e a segurança avançada. A opção **Não configurado** (predefinição) permite todo o tráfego de rede, independentemente de outras definições de políticas.
 - **O modo invisível**: **Bloco** a firewall de funcionar no modo invisível. Esta definição também lhe permite bloquear a **Exceção de pacotes seguros com IPsec**. A opção **Não configurado** (predefinição) opera a firewall em modo furtivo, o que ajuda a impedir respostas a pedidos de pesquisa.
 - **Blindada**: **Bloco** desativa esta funcionalidade. A opção **Não configurado** (predefinição) ativa esta definição. Quando esta definição e a Firewall do Windows Defender estão ativadas, todo o tráfego recebido é bloqueado, independentemente de outras definições de políticas.

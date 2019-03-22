@@ -1,11 +1,11 @@
 ---
-title: Anular a inscrição do seu dispositivo macOS no Intune | Microsoft Docs
-description: Descreve como anular uma inscrição de um dispositivo macOS no Intune
+title: Anular a inscrição do seu dispositivo macOS a partir do Portal da empresa do Intune | Documentos da Microsoft
+description: Descreve como anular a inscrição de um dispositivo macOS no Portal da empresa
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/12/2018
+ms.date: 03/20/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,22 +18,24 @@ ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b3518707aa90c3866fbf8b24936db6d781712bdb
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 19cb76df318abe84670c1a7d703e85e3b7e7539a
+ms.sourcegitcommit: 464cf677e3746eaba46836dedfb94572a75032f9
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55839996"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58330403"
 ---
-# <a name="unenroll-your-macos-device-from-intune"></a>Anular a inscrição do seu dispositivo macOS no Intune
+# <a name="unenroll-your-macos-device-from-company-portal"></a>Anular a inscrição do dispositivo macOS no Portal da empresa
 
-Ao anular a inscrição do dispositivo macOS no Intune, o dispositivo deixará de poder aceder aos recursos da empresa.
+Quando anular a inscrição do seu dispositivo macOS no Intune, o dispositivo já não pode aceder a recursos da empresa.
 
 Siga estes passos para anular a inscrição do seu dispositivo macOS na gestão:
 
-1.  Na aplicação Portal da Empresa, em **Os Meus Dispositivos**,selecione o dispositivo cuja inscrição pretende anular.
+1.  Inicie sessão no Portal da empresa para macOS.
+2.  Aceda a **dispositivos** e selecione o dispositivo que pretende anular a inscrição.
 
-2.  Clique em **Remover** > **Remover**.
+3.  Selecione o ícone de menu de reticências > **remover**.
+4.  É apresentada uma mensagem de confirmação. Selecione **remover** para anular a inscrição do seu dispositivo. 
 
 Quando anular a inscrição do dispositivo no Intune, eis o que acontece:
 

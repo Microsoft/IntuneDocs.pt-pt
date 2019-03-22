@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7e78aaf026146ae2cf531668464a7f7c644894ce
-ms.sourcegitcommit: 768430b5296573c6e007ae4e13d57aeda4be4b7e
+ms.openlocfilehash: ad4ac5a2560cf6c3d06354ca8d4e3190f1bf198b
+ms.sourcegitcommit: b0b1030017e741d92c508130447a8242d9ad7a51
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58306871"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58343017"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -57,6 +57,8 @@ Utilizar a nova [relatório de encriptação (pré-visualização)](encryption-m
 
 Agora pode utilizar o Intune para [ver detalhes](encryption-monitor.md#bitlocker-recovery-keys) sobre o ID da chave do BitLocker e chaves de recuperação do BitLocker, do Azure Active Directory.
 
+### <a name="microsoft-edge-support-for-intune-scenarios-on-ios-and-android-devices----3411007---"></a>Suporte do Microsoft Edge para cenários do Intune em dispositivos iOS e Android <!-- 3411007 -->
+Microsoft Edge irá suportar todos os cenários de gestão mesmo como o Intune Managed Browser com a adição de melhorias na experiência de utilizador final. As funcionalidades de enterprise do Microsoft Edge que estão ativadas por políticas do Intune incluem dual-Identity, integração de política de proteção de aplicações, integração de proxy de aplicações do Azure e gerenciados de Favoritos e os atalhos de página inicial. Para obter mais informações, consulte [suporte do Microsoft Edge](app-configuration-managed-browser.md#microsoft-edge-support).
 
 ## <a name="week-of-february-25-2019"></a>Semana de 25 de Fevereiro de 2019
 

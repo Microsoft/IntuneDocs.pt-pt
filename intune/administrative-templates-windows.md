@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d68b5c9bce1f846357330aaff7e93019d8535375
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 704abe5e03410b52d54c7729e1832e527ae4dfb6
+ms.sourcegitcommit: b0b1030017e741d92c508130447a8242d9ad7a51
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57397265"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58342980"
 ---
 # <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Utilizar modelos do Windows 10 para configurar as definições de política de grupo no Microsoft Intune
 
@@ -32,9 +32,6 @@ Pode concluir esta tarefa com **modelos administrativos** no Microsoft Intune. O
 **Modelos administrativos** incorporados no Intune e não necessitam de quaisquer personalizações, incluindo a utilização de OMA-URI. Como parte da sua solução de gestão (MDM) de dispositivos móveis, utilize estas definições de modelo como um meio único para gerir os dispositivos Windows 10.
 
 Este artigo apresenta os passos para criar um modelo para dispositivos Windows 10 e mostra como filtrar todas as definições disponíveis no Microsoft Intune. Quando criar o modelo, ele cria um perfil de configuração do dispositivo. Em seguida, pode atribuir ou implementar este perfil para dispositivos Windows 10 na sua organização.
-
-> [!NOTE]
-> Modelos administrativos são suportados para dispositivos autónomos. Atualmente não são suportados para dispositivos cogeridos do System Center Configuration Manager (SCCM).
 
 ## <a name="create-a-template"></a>Criar um modelo
 
