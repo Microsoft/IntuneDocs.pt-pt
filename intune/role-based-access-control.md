@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/27/2018
+ms.date: 03/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d1c7f7a2ed1d87d23d01b51ff928c906bc32541a
-ms.sourcegitcommit: 25e17a1d002ee1faa49bb89648eb59373528539f
+ms.openlocfilehash: ecc315bfcccc5d3b71107e80720d39e675d42d19
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58173985"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58394659"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>Controlo de acesso baseado em funções (RBAC) com o Microsoft Intune
 
@@ -36,7 +36,21 @@ O RBAC ajuda-o a controlar quem pode executar várias tarefas do Intune na sua o
 
 ![Exemplo de RBAC do Intune](./media/intune-rbac-1.PNG)
 
-Com o novo portal do Azure, o **Azure Active Directory (Azure AD)** fornece duas Funções de Diretório que podem ser utilizadas com o Intune. A estas funções é concedida uma permissão total para realizar todas as atividades no Intune:
+## <a name="azure-active-directory-roles-with-intune-access"></a>Funções do Active Directory do Azure com o acesso do Intune
+
+| Função do Azure Active Directory | Todos os dados do Intune | Dados de auditoria do Intune |
+| --- | :---: | :---: |
+| Administrador Global | Leitura/escrita | Leitura/escrita |
+| Aministrator de serviço do Intune | Leitura/escrita | Leitura/escrita |
+| Administrador de Acesso Condicional | Nenhum | Nenhum |
+| Administrador de Segurança | Só de leitura | Só de leitura |
+| Operador de segurança | Só de leitura | Só de leitura |
+| Leitor de segurança | Só de leitura | Só de leitura |
+| Leitor global | Só de leitura | Só de leitura |
+| Administrador de conformidade | Nenhum | Só de leitura |
+| Administrador de dados de conformidade | Nenhum | Só de leitura |
+
+**Azure Active Directory (Azure AD)** fornece duas funções de diretório que pode ser utilizado com o Intune. A estas funções é concedida uma permissão total para realizar todas as atividades no Intune:
 
 - **Administrador global:** Os utilizadores com esta função têm acesso a todas as funcionalidades administrativas no Azure AD, bem como serviços que federam para o Azure AD como o Exchange Online, SharePoint Online e Skype para empresas Online. A pessoa que se inscreve no inquilino do Azure AD torna-se um administrador global. Apenas os administradores globais podem atribuir outras funções de administradores do Azure AD. Pode existir mais de um administrador global na sua organização. Os administradores globais podem redefinir a palavra-passe para qualquer utilizador e todos os outros administradores.
 
@@ -64,7 +78,7 @@ Apenas os utilizadores **Administradores de Serviços** do Intune com permissõe
 Pode atribuir funções incorporadas para grupos sem configuração adicional. Não é possível eliminar ou editar uma função incorporada.
 
 - **Operador do suporte técnico**: Executa tarefas remotas em utilizadores e dispositivos e pode atribuir políticas ou aplicações a utilizadores ou dispositivos.
-- **Política e o Gerenciador de perfis**: Gere a política de conformidade, perfis de configuração, inscrição da Apple e identificadores de dispositivo da empresa.
+- **Política e o Gerenciador de perfis**: Gere a política de conformidade, perfis de configuração, inscrição da Apple, identificadores de dispositivo da empresa e linhas de base de segurança.
 - **Operador só de leitura**: Utilizador de vistas, dispositivo, inscrição, configuração e informações sobre a aplicação. Não é possível efetuar alterações ao Intune.
 - **Gerenciador de aplicativos**: Gere aplicações móveis e geridas, pode ler as informações do dispositivo e pode ver os perfis de configuração do dispositivo.
 - **Administrador de função do Intune**: Gere funções personalizadas do Intune e adiciona as atribuições de funções incorporadas do Intune. É a única função do Intune que pode atribuir permissões a administradores.
@@ -139,8 +153,12 @@ Siga os mesmos passos [para atribuir uma função incorporada](https://docs.micr
 
 ## <a name="next-steps"></a>Passos Seguintes
 
-[Utilizar a função de operador do Suporte Técnico do Intune com o portal de resolução de problemas](help-desk-operators.md)
+- [Utilizar a função de operador do Suporte Técnico do Intune com o portal de resolução de problemas](help-desk-operators.md)
+
+
 
 ## <a name="see-also"></a>Consulte também
 
-[Assign roles using Azure AD (Atribuir funções através do Azure AD)](https://docs.microsoft.com/azure/active-directory/active-directory-users-assign-role-azure-portal)
+- [Assign roles using Azure AD (Atribuir funções através do Azure AD)](https://docs.microsoft.com/azure/active-directory/active-directory-users-assign-role-azure-portal)
+- Saiba mais sobre [suporte do Microsoft Graph API para acesso baseado em funções no Intune](https://docs.microsoft.com/graph/api/resources/intune-rbac-roledefinition?view=graph-rest-1.0)
+- Obter o [SDK do PowerShell para o Graph API do Intune](https://www.powershellgallery.com/packages/Microsoft.Graph.Intune/6.1902.1.10)

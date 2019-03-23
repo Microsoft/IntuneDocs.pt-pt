@@ -17,12 +17,12 @@ ms.reviewer: damionw
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ec0678bbd9f793eab23e211ad5d1d6e02d590c90
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: e663e80cfeb4ec3a4e2e8c92e17344b62c5bb6fc
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57397683"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58394970"
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Inscrição em massa para dispositivos Windows
 
@@ -30,7 +30,7 @@ ms.locfileid: "57397683"
 
 Como administrador, pode associar inúmeros dispositivos Windows novos ao Azure Active Directory e ao Intune. Para inscrever em massa dispositivos para o seu inquilino do Azure AD, crie um pacote de aprovisionamento com a aplicação Windows Configuration Designer (WCD). Ao aplicar o pacote de aprovisionamento aos dispositivos pertencentes à empresa, associa os dispositivos ao inquilino do Azure AD e inscreve-os na gestão do Intune. Depois de o pacote ser aplicado, estará pronto para os utilizadores do Azure AD iniciarem sessão.
 
-Os utilizadores do Azure AD são utilizadores padrão nestes dispositivos e obtêm as aplicações necessárias e as políticas do Intune atribuídas. De momento, os cenários self-service e Portal da Empresa não são suportados.
+Os utilizadores do Azure AD são utilizadores padrão nestes dispositivos e obtêm as aplicações necessárias e as políticas do Intune atribuídas. Dispositivos Windows inscritos no Intune com o Windows a inscrição em massa podem utilizar a aplicação Portal da empresa para instalar as aplicações disponíveis. 
 
 ## <a name="prerequisites-for-windows-devices-bulk-enrollment"></a>Pré-requisitos para a inscrição em massa de dispositivos Windows
 

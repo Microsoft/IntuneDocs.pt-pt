@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/28/2019
+ms.date: 03/18/2019
 ms.topic: troubleshooting
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 412e5527e1a740f9b460ef8e090913a3c3270b5c
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: fb33a1207e165323de2e82467c7a0dd5239d9713
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460993"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58394854"
 ---
 # <a name="send-log-data-to-storage-event-hubs-or-log-analytics-in-intune-preview"></a>Enviar dados de registo para o armazenamento, os hubs de eventos ou do log analytics no Intune (pré-visualização)
 
@@ -34,7 +34,7 @@ Estes registos também podem ser enviados aos serviços do Azure Monitor, inclui
 * Integre registos do Intune com as suas próprias soluções de registo personalizado por transmissão em fluxo para um hub de eventos.
 * Envie registos do Intune para o Log Analytics para ativar visualizações ricas, monitorização e os alertas nos dados ligados.
 
-Esses recursos fazem parte do **as definições de diagnóstico** no Intune. 
+Esses recursos fazem parte do **as definições de diagnóstico** no Intune.
 
 Este artigo mostra-lhe como utilizar **as definições de diagnóstico** para enviar dados de registo para diferentes serviços, oferece exemplos e estimativas de custos e responde a algumas perguntas comuns.
 
@@ -95,6 +95,19 @@ Dependendo de onde pretende encaminhar os dados de registo de auditoria, precisa
     ![Imagem de exemplo que envia registos de auditoria do Intune para uma conta de armazenamento do Azure](media/diagnostics-settings-example.png)
 
 4. **Guarde** as suas alterações. A definição é apresentada na lista. Depois de criado, pode alterar as definições, selecionando **editar a definição** > **guardar**.
+
+## <a name="use-audit-logs-throughout-intune"></a>Utilizar registos de auditoria em todo o Intune
+
+Também pode exportar os registos de auditoria em outras partes do Intune, incluindo a inscrição, conformidade, configuração, dispositivos, aplicações de cliente e muito mais.
+
+Por exemplo, para exportar a auditoria de registos ao utilizar a conformidade do dispositivo:
+
+1. Na [portal do Azure](https://portal.azure.com/), selecione **todos os serviços** > Filtrar **Intune** > selecione **Intune**.
+2. Selecione **conformidade do dispositivo** > **Monitor** > **registos de auditoria**:
+
+    ![Escolha os registos de auditoria para encaminhar dados do Intune para o armazenamento do Azure Monitor, os hubs de eventos ou análise](media/audit-logs-under-monitor-in-compliance.png)
+
+3. Selecione **exportar definições de dados**. Se não estiver ativada, pode ativar **as definições de diagnóstico**. Também pode escolher para onde enviar os registos, conforme descrito em [enviar registos para o Azure monitor](#send-logs-to-azure-monitor) (neste artigo).
 
 ## <a name="cost-considerations"></a>Considerações de custos
 

@@ -6,24 +6,24 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/20/2018
+ms.date: 03/19/2019
 ms.topic: troubleshooting
 ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 4CD5EE94-7BA6-4F59-8E28-1EBCA7CA6436
-ms.reviewer: andcerat
+ms.reviewer: demerson
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ff80a5911c4bb027cbe2f9289a415ed9797277a6
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 6c42003f53e5d4ff7afa8afe9c242ef2470b5ee3
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460500"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58394798"
 ---
 # <a name="review-client-app-protection-logs"></a>Rever registos de proteção de aplicações cliente
 
@@ -43,6 +43,7 @@ A tabela seguinte lista o nome e uma explicação das definições registadas no
 |-----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | AccessRecheckOfflineTimeout | x minutos                                                                                                                                                                                                                                                                                                   | [Acesso] Verificar novamente os requisitos de acesso – Período de Tolerância Offline<br>Nota: Este é o período de tempo antes dos requisitos de acesso da aplicação serem novamente verificados se o dispositivo estiver offline.             |
 | AccessRecheckOnlineTimeout  | _x_ minutos                                                                                                                                                                                                                                                                                                   | [Acesso] Verificar novamente os requisitos de acesso – Tempo Limite.<br>Nota: Este é o período de tempo antes dos requisitos de acesso da aplicação serem novamente verificados após a aplicação é iniciada, se o dispositivo estiver online. |
+| AllowedOutboundClipboardSharingExceptionLength               | x carateres                                                                                                                                                                                                                                                                                           | [Acesso] Especifique o número de carateres que podem ser cortados ou copiados de uma aplicação gerida.  Esta definição substitui a `AllowedOutboundClipboardSharingLevel` restrição. Valor predefinido de "0" significa que nenhuma exceção é permitida. 
 | AppPinDisabled              | 0 = Não<br>1 = Sim                                                                                                                                                                                                                                                                                           | [Acesso] Desativar o PIN da aplicação quando o PIN do dispositivo for gerido.                                                                                                                                     |
 | AppSharingFromLevel         | 0 = Não existem aplicações<br>1 = Aplicações geridas<br>2 = Qualquer aplicação                                                                                                                                                                                                                                                              | [Reposicionamento de Dados] Permitir que esta aplicação receba dados de outras aplicações.                                                                                                                        |
 | AppSharingToLevel           | 0 = Não existem aplicações<br>1 = Aplicações geridas<br>2 = Qualquer aplicação                                                                                                                                                                                                                                                              | [Reposicionamento de Dados] Permitir que esta aplicação transfira dados para outras aplicações.                                                                                                                         |

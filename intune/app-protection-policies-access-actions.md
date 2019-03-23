@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 400049bd2637a0e14f5ece4be9d4e40142b0acee
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5b07081ceae3ba07148723490977546fb3edcdd6
+ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57390341"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58358207"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>Eliminação seletiva de dados através de ações de acesso das políticas de proteção de aplicações no Intune
 
@@ -84,6 +84,8 @@ Para Android, poderá configurar ações para as seguintes definições a partir
 -  Versão mínima da aplicação
 -  Versão mínima da correção
 -  Fabricantes de dispositivos
+-  Atestado de dispositivo do SafetyNet
+-  Análise de ameaças nas aplicações
 
 Para utilizar a definição **Fabricantes de dispositivos**, introduza uma lista de fabricantes de dispositivos Android separados por ponto e vírgula. Pode encontrar o fabricante de um dispositivo Android nas definições do dispositivo.<br>
 Entrada de exemplo: *Fabricante A; Fabricante B* 

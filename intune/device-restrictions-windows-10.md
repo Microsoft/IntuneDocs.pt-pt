@@ -1,11 +1,11 @@
 ---
 title: Definições de restrição de dispositivos para Windows 10 no Microsoft Intune – Azure | Microsoft Docs
-description: Ver uma lista de todas as definições e suas descrições para a criação de restrições de dispositivos no Windows 10 e dispositivos posteriores. Utilize estas definições no perfil de configuração para controlar as capturas de ecrã, requisitos de palavra-passe, definições de local público, aplicações na loja, Edge browser, defender do Windows, acesso para a cloud, o menu Iniciar e mais no Microsoft Intune.
+description: Ver uma lista de todas as definições e suas descrições para a criação de restrições de dispositivos no Windows 10 e dispositivos posteriores. Utilize estas definições no perfil de configuração para controlar as capturas de ecrã, requisitos de palavra-passe, definições de local público, aplicações na loja, browser Microsoft Edge, defender do Windows, acesso para a cloud, o menu Iniciar e mais no Microsoft Intune.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/13/2019
+ms.date: 03/20/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8190365ad2b50dfa7369b8899e8984b6a52f1cba
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 7ca34826f3a235fe620b5ac0dcb95d57dabf4c71
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566757"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58395005"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Definições de dispositivos de 10 (e versões posteriores) do Windows para permitir ou restringir funcionalidades com o Intune
 
@@ -29,7 +29,7 @@ Este artigo apresenta e descreve todas as configurações diferentes, que pode c
 Estas definições são adicionadas a um perfil de configuração do dispositivo no Intune e, em seguida, atribuídas ou implementadas nos seus dispositivos Windows 10.
 
 > [!Note]
-> Nem todas as opções estão disponíveis em todas as edições do Windows
+> Nem todas as opções estão disponíveis em todas as edições do Windows. Para ver as edições suportadas, veja a [política de CSPs](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider) (abre-se outro web site da Microsoft).
 
 ## <a name="before-you-begin"></a>Antes de começar
 
@@ -59,13 +59,13 @@ Estas definições são adicionadas a um perfil de configuração do dispositivo
 - **Deteção de Bluetooth**: Permite que o dispositivo seja detetado por outros dispositivos com Bluetooth ativado.
 - **Pré-emparelhamento de Bluetooth**: Permite-lhe configurar dispositivos Bluetooth específicos para sejam emparelhados automaticamente com um dispositivo anfitrião.
 - **Publicidade do Bluetooth**: Permite que os dispositivos recebam anúncios por Bluetooth.
-- **Serviço de dispositivos ligados**: Permite-lhe escolher se pretende permitir que o serviço de dispositivos ligados, que permite a deteção e ligação a outros dispositivos Bluetooth.
-- **NFC**: Permite que o utilizador ative e configure as funcionalidades junto ao campo comunicações (NFC) no dispositivo.
+- **Serviço de dispositivos ligados**: Permite-lhe optar por permitir que o serviço de dispositivos ligados, que permite a deteção e ligação a outros dispositivos Bluetooth.
+- **NFC**: Permite que o utilizador ative e configure perto de recursos de comunicações (NFC) do campo no dispositivo.
 - **Wi-Fi**: Permite que o utilizador ative e configure Wi-Fi no dispositivo (apenas Windows 10 Mobile).
 - **Ligar automaticamente a hotspots Wi-Fi**: Permite que o dispositivo ligue automaticamente a hotspots Wi-Fi gratuitos e aceite automaticamente os termos e condições para a ligação.
 - **Configuração de Wi-Fi manual**: Controla se o utilizador pode configurar as suas próprias ligações Wi-Fi ou se este podem utilizar apenas ligações configuradas por um perfil de Wi-Fi (apenas Windows 10 Mobile).
-- **Intervalo de deteção do Wi-Fi**: Especifique a frequência com que dispositivos verificar a existência de redes Wi-Fi. Especifique um valor de 1 (mais frequente) a 500 (menos frequente).
-- **Serviços Bluetooth permitidos**: Especifica como cadeias de caracteres hexadecimais, uma lista de perfis e serviços Bluetooth permitidos.
+- **Intervalo de deteção do Wi-Fi**: Introduza a frequência com que dispositivos verificar a existência de redes Wi-Fi. Introduza um valor entre 1 (mais frequente) para 500 (menos frequente).
+- **Serviços Bluetooth permitidos**: Introduza como cadeias de caracteres hexadecimais, uma lista de perfis e serviços Bluetooth permitidos.
 
 ## <a name="cloud-and-storage"></a>Cloud e Armazenamento
 
@@ -116,7 +116,7 @@ Estas definições são adicionadas a um perfil de configuração do dispositivo
 - **(Apenas móvel) de captura de ecrã**: Permite ao utilizador capturar o ecrã do dispositivo como uma imagem.
 - **Copiar e colar (apenas móvel)**: Permitir copiar e colar ações entre aplicações no dispositivo.
 - **Anular inscrições manualmente**: Permite que o utilizador elimine manualmente a conta da área de trabalho do dispositivo.
-  - Esta definição de política não é aplicada se o computador estiver associado ao Azure AD e a inscrição automática estiver ativada. 
+  - Esta definição de política não se aplica se o computador estiver associado ao Azure AD e a inscrição automática está ativada. 
   - Esta definição de política não se aplica a computadores a executar o Windows 10 Home.
 - **Instalação do certificado de raiz manual (apenas móvel)**: Impede o utilizador instalar manualmente certificados de raiz e os certificados CAP intermédios.
 
@@ -138,13 +138,12 @@ Estas definições são adicionadas a um perfil de configuração do dispositivo
 - **Caixa de diálogo de erro de cartão SIM (apenas móvel)**: Bloqueia uma mensagem de erro de ser apresentado no dispositivo se nenhum cartão SIM for detetado.
 - **Área de trabalho de tinta**: Impedir que os utilizadores acedam a área de trabalho do ink. **Não configurado** folheio na área de trabalho de tinta e o utilizador tem permissão para usá-lo acima do ecrã de bloqueio.
 - **Reimplementação automática**: Permite aos utilizadores com direitos administrativos eliminar todos os dados de utilizador e as configurações usando **CTRL + Win + R** no ecrã de bloqueio do dispositivo. O dispositivo é automaticamente reconfigurado e reinscrito na gestão.
-- **Exigir que os utilizadores liguem à rede durante a configuração de dispositivo (apenas no Windows Insider)**: Escolher **requerem** para que o dispositivo estabelece ligação a uma rede antes de continuar após a página de rede durante a configuração do Windows 10. Enquanto esta funcionalidade estiver em pré-visualização, é necessário que tenha a versão 1809 ou versões posteriores do Windows Insider para utilizar esta definição.
+- **Exigir que os utilizadores liguem à rede durante a configuração de dispositivo (apenas no Windows Insider)**: Escolher **requerem** para que o dispositivo estabelece ligação a uma rede antes de continuar após a página de rede durante a configuração do Windows 10. Enquanto esta funcionalidade está em pré-visualização, uma compilação do Windows insider 1809 ou posterior é necessária para utilizar esta definição.
 - **Acesso de memória direto**: **Bloco** impede o acesso direto à memória (DMA) para todos os hot conectáveis PCI downstream portas até que um utilizador inicia sessão no Windows. **Ativado** (predefinição) permite o acesso a DMA, mesmo quando um utilizador não tem sessão iniciado.
 
   CSP: [DataProtection/AllowDirectMemoryAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess)
 
 - **Terminar a processos do Gerenciador de tarefas**: Esta definição determina se o não-administradores podem utilizar o Gestor de tarefas para tarefas de fim. **Bloco** impede que os usuários padrão (não-administradores) usando o Gerenciador de tarefas para terminar um processo ou tarefa no dispositivo. **Não configurado** (predefinição) permite que os usuários padrão encerrar um processo ou tarefa utilizando o Gestor de tarefas.
-
 
 ## <a name="locked-screen-experience"></a>Experiência de ecrã bloqueado
 
@@ -157,7 +156,7 @@ Estas definições são adicionadas a um perfil de configuração do dispositivo
 
 ## <a name="messaging"></a>Sistema de mensagens
 
-- **Sincronização (apenas móvel) de mensagens**: Desativar as mensagens em qualquer lugar e a cópia de segurança de mensagem de texto e de restauro.
+- **Sincronização (apenas móvel) de mensagens**: Desativar a mensagens em qualquer lugar e a mensagem de texto de cópia de segurança e restaurar.
 - **MMS (apenas móvel)**: Desative a funcionalidade de envio/receção de MMS no dispositivo.
 - **RCS (apenas móvel)**: Desative a funcionalidade de envio/receção para serviços de comunicação avançados no dispositivo.
 
@@ -168,25 +167,25 @@ Estas definições são adicionadas a um perfil de configuração do dispositivo
 Alterar as definições disponíveis consoante aquilo que escolher. As opções são:
 
 - **Não** (predefinição): Microsoft Edge não está em execução no modo de local público. Todas as definições do Microsoft Edge estão disponíveis para que possa alterar e configurar.
-- **Digital/Interactive signage (quiosque de uma aplicação)**: Definições de limite de filtros que são aplicáveis para o modo de local público de borda signage Digital/interativo para utilizam apenas em quiosques de aplicação única do Windows 10. Escolha esta definição para abrir uma tela de total de URL e mostrar apenas o conteúdo nesse Web site. [Configurar sinais digital](https://docs.microsoft.com/windows/configuration/setup-digital-signage) fornece mais informações sobre esta funcionalidade.
-- **Navegação de público inPrivate (quiosque de uma aplicação)**: Utilizam as definições de limite de filtros que são aplicáveis para o modo InPrivate quiosque de borda de navegação público para quiosques de aplicação única do Windows 10. Executa uma versão de separador multi do Microsoft Edge.
-- **Modo normal (quiosque de várias aplicações)**: Definições de borda de filtros que são aplicáveis ao modo de local público de borda do Normal. Executa uma versão completa do Microsoft Edge com todas as funcionalidades de navegação.
-- **Público, navegar (quiosque de várias aplicações)**: Definições de limite de filtros que são aplicáveis para a navegação pública num quiosque de várias aplicações do Windows 10.  Executa uma versão de separador multi do InPrivate do Microsoft Edge.
+- **Digital/Interactive signage (quiosque de uma aplicação)**: Definições do Microsoft Edge filtros que são aplicáveis para o modo de local público do Microsoft Edge signage Digital/interativo para utilizam apenas em quiosques de aplicação única do Windows 10. Escolha esta definição para abrir uma tela de total de URL e mostrar apenas o conteúdo nesse Web site. [Configurar sinais digital](https://docs.microsoft.com/windows/configuration/setup-digital-signage) fornece mais informações sobre esta funcionalidade.
+- **Navegação de público inPrivate (quiosque de uma aplicação)**: Utilizam as definições do Microsoft Edge de filtros que são aplicáveis para o modo InPrivate navegação Microsoft Edge quiosque público para quiosques de aplicação única do Windows 10. Executa uma versão de separador multi do Microsoft Edge.
+- **Modo normal (quiosque de várias aplicações)**: Filtra as definições do Microsoft Edge que são aplicáveis ao modo de local público de borda do Microsoft Normal. Executa uma versão completa do Microsoft Edge com todas as funcionalidades de navegação.
+- **Público, navegar (quiosque de várias aplicações)**: Filtra as definições do Microsoft Edge que são aplicáveis para a navegação pública num quiosque de várias aplicações do Windows 10.  Executa uma versão de separador multi do InPrivate do Microsoft Edge.
 
 > [!TIP]
 > Para obter mais informações sobre o que fazem essas opções, consulte [tipos de configuração de modo de local público de Microsoft Edge](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-configuration-types).
 
 Este perfil de restrições de dispositivo está diretamente relacionada com o perfil de local público que criar com o [definições de local público de Windows](kiosk-settings-windows.md). Para resumir:
 
-1. Criar a [definições de local público de Windows](kiosk-settings-windows.md) perfil para executar o dispositivo no modo de local público. Selecione o Microsoft Edge como o aplicativo e defina o modo de local público de borda no perfil de local público.
-2. Criar o perfil de restrições de dispositivo descrito neste artigo e configurar recursos específicos e as definições de permissão no Microsoft Edge. Certifique-se de que a escolha do mesmo tipo de modo de local público de borda com selecionado no seu perfil de local público ([definições de local público de Windows](kiosk-settings-windows.md)). 
+1. Criar a [definições de local público de Windows](kiosk-settings-windows.md) perfil para executar o dispositivo no modo de local público. Selecione o Microsoft Edge que o aplicativo e defina o modo de local público do Microsoft Edge no perfil de local público.
+2. Criar o perfil de restrições de dispositivo descrito neste artigo e configurar recursos específicos e as definições de permissão no Microsoft Edge. Certifique-se de que escolher o mesmo tipo de modo de local público de Microsoft Edge como selecionada no seu perfil de local público ([definições de local público de Windows](kiosk-settings-windows.md)). 
 
     [Definições do modo de local público de suportado](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-policies-for-kiosk-mode) é um ótimo recurso.
 
 > [!IMPORTANT] 
 > Certifique-se de que atribuir este perfil do Microsoft Edge aos mesmos dispositivos como o seu perfil de local público ([definições de local público de Windows](kiosk-settings-windows.md)).
 
-CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-configurekioskmode)
+[ConfigureKioskMode CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-configurekioskmode)
 
 ### <a name="start-experience"></a>Experiência de início
 
@@ -204,7 +203,7 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
   - **URL de botão personalizado Home**: A opção que selecionou para o **URL de botão de casa** abre-se a definição
   - **Botão de ocultar Home**: Oculta o botão de início
 - **O utilizador pode alterar o botão Home**: **Permitir** permite que os utilizadores alterem o botão de início. As alterações do utilizador substituem as definições de administrador para o botão de início. **Não configurado** utiliza o comportamento padrão do sistema operacional no dispositivo, que pode bloquear os utilizadores de alterar a forma como o administrador configurado o botão de início.
-- **Mostrar página de tela de apresentação**: **Bloco** pára a página de introdução de mostrar o primeiro tempo executa o Microsoft Edge. Esta funcionalidade permite às empresas, como as que estão inscritas em zero configurações de emissões, bloquear esta página. **Não configurado** mostra a página de introdução.
+- **Mostrar página de tela de apresentação**: **Bloco** pára a página de introdução de mostrar o primeiro tempo executa o Microsoft Edge. Esta funcionalidade permite às empresas, como às organizações inscritos em zero configurações de emissões, bloquear esta página. **Não configurado** mostra a página de introdução.
   - **Execute primeiro o URL de experiência**: Introduza o URL de página para mostrar na primeira vez que um utilizador executa o Microsoft Edge (apenas Windows 10 Mobile).
 - **Atualize o browser após o tempo de inatividade**: Introduza o número de minutos de inatividade até o navegador é atualizado, de 0-1440 minutos. A predefinição é `5` minutos. Quando definido como `0` (zero), o navegador não atualiza após inatividade.
 
@@ -300,7 +299,7 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
 - **palavra-passe**: Exija que o utilizador final introduza uma palavra-passe para aceder ao dispositivo.
   - **Tipo de palavra-passe obrigatório**: Especifica se a palavra-passe tem de ser numérica único ou de alfanuméricos.
   - **Comprimento mínimo da palavra-passe**: Aplica-se apenas ao Windows 10 Mobile.
-  - **Número de falhas de início de sessão antes de limpar o dispositivo**: Para dispositivos com o Windows 10: Se o dispositivo tiver o BitLocker ativado, será colocado no modo de recuperação do BitLocker após o início de sessão falha o número de vezes que especificar. Se o dispositivo não for o BitLocker ativado, em seguida, esta definição não se aplica. Para dispositivos com Windows 10 Mobile: Após o início de sessão falha o número de vezes que especificar, o dispositivo ser apagado.
+  - **Número de falhas de início de sessão antes de limpar o dispositivo**: Para dispositivos com o Windows 10: Se o dispositivo tiver o BitLocker ativado, será colocado no modo de recuperação do BitLocker após o início de sessão falha o número de vezes que especificar. Se o dispositivo não for o BitLocker ativado, em seguida, esta definição não se aplica. Para dispositivos com Windows 10 Mobile: Após o início de sessão falha o número de vezes que introduzir, o dispositivo ser apagado.
   - **Máximo de minutos de inatividade até o ecrã bloquear**: Especifica o período de tempo durante o qual o dispositivo tem de estar inativo antes de o ecrã ser bloqueado.
   - **Expiração de palavra-passe (dias)**: Especifica o período de tempo após o qual a palavra-passe do dispositivo tem de ser alterada.
   - **Impedir a reutilização de palavras-passe anteriores**: Especifica o número de palavras-passe utilizadas anteriormente que são memorizadas pelo dispositivo.
@@ -331,7 +330,7 @@ Pode adicionar aplicações que devem ter um comportamento de privacidade difere
 - **Telefone**: Defina se esta aplicação pode aceder ao telefone.
 - **Rádios**: Algumas aplicações utilizam rádios (por exemplo, Bluetooth) no seu dispositivo para enviar e receber dados e tem de ativar ou desativar a estes rádios. Defina se esta aplicação pode controlar estes rádios.
 - **Tarefas**: Defina se esta aplicação pode aceder às suas tarefas.
-- **Dispositivos fidedignos**: Escolha se esta aplicação pode utilizar dispositivos fidedignos, que é o hardware que já ligou ou hardware que é fornecido com o dispositivo. Por exemplo, utilize o TVs, projetores etc., como dispositivos fidedignos.
+- **Dispositivos fidedignos**: Escolha se esta aplicação pode utilizar dispositivos fidedignos. Dispositivos fidedignos são hardware que já ligou ou hardware que é fornecido com o dispositivo. Por exemplo, utilize o TVs, projetores etc., como dispositivos fidedignos.
 - **Comentários e diagnóstico**: Defina se esta aplicação pode aceder a informações de diagnóstico.
 - **Sincronização com dispositivos**: Escolha se esta aplicação pode partilhar e sincronizar informações com dispositivos sem fios que não sejam emparelham especificamente com o dispositivo automaticamente.
 
@@ -352,7 +351,7 @@ Pode adicionar aplicações que devem ter um comportamento de privacidade difere
 - **Publicar as atividades do utilizador**: **Bloco** impede que as experiências compartilhadas e deteção de recursos recentemente utilizados no comutador de tarefas.
 - **Apenas atividades locais**: **Bloco** impede que as experiências compartilhadas e a deteção de recursos recentemente utilizados no comutador de tarefas, com base na atividade local.
 
-Pode configurar as informações que podem aceder a todas as aplicações no dispositivo. Pode definir exceções numa base por aplicação através de **Exceções de privacidade por aplicação**.
+Pode configurar as informações que podem aceder a todas as aplicações no dispositivo. Além disso, definir exceções de uma base por aplicação a utilizar **exceções de privacidade por aplicação**.
 
 ### <a name="exceptions"></a>Exceções
 
@@ -371,7 +370,7 @@ Pode configurar as informações que podem aceder a todas as aplicações no dis
 - **Telefone**: Defina se esta aplicação pode aceder ao telefone.
 - **Rádios**: Algumas aplicações utilizam rádios (por exemplo, Bluetooth) no seu dispositivo para enviar e receber dados e tem de ativar ou desativar a estes rádios. Defina se esta aplicação pode controlar estes rádios.
 - **Tarefas**: Defina se esta aplicação pode aceder às suas tarefas.
-- **Dispositivos fidedignos**: Escolha se esta aplicação pode utilizar dispositivos fidedignos. Dispositivos fidedignos é hardware que já ligou ou hardware que vem com o dispositivo. Por exemplo, utilize e assim por diante TVs, projetores, como dispositivos fidedignos.
+- **Dispositivos fidedignos**: Escolha se esta aplicação pode utilizar dispositivos fidedignos. Dispositivos fidedignos são hardware que já ligou ou hardware que vem com o dispositivo. Por exemplo, utilize o TVs, projetores etc., como dispositivos fidedignos.
 - **Comentários e diagnóstico**: Escolha se esta aplicação pode aceder a informações de diagnóstico.
 - **Sincronização com dispositivos** – defina se esta aplicação pode partilhar e sincronizar automaticamente informações com dispositivos sem fios que não sejam emparelhados especificamente com o PC, tablet ou telefone.
 
@@ -381,7 +380,7 @@ Pode configurar as informações que podem aceder a todas as aplicações no dis
 - **Projeção para este PC**: Impede outros dispositivos de localizar o PC para projeção.
 - **Exigir PIN para emparelhamento**: Exigir um PIN ao ligar a um dispositivo de projeção.
 
-## <a name="reporting-and-telemetry"></a>Relatórios e Telemetria
+## <a name="reporting-and-telemetry"></a>Relatórios e telemetria
 
 - **Partilhar dados de utilização**: Escolha o nível de dados de diagnóstico que são submetidos. As opções são:
   - Segurança
@@ -393,7 +392,7 @@ Pode configurar as informações que podem aceder a todas as aplicações no dis
   - **Enviar apenas dados de intranet**: Permite ao administrador enviar o histórico de dados de intranet
   - **Enviar apenas dados de internet**: Permite ao administrador enviar o histórico de dados da internet
   - **Enviar dados de intranet e internet**: Permite ao administrador enviar o histórico de dados de intranet e internet
-- **Servidor de proxy da telemetria**: Introduza o nome de domínio completamente qualificado (FQDN) ou o endereço IP de um servidor proxy para reencaminhar pedidos de telemetria, através de uma ligação de Secure Sockets Layer (SSL) e experiências do usuário conectado. O formato para esta definição é *servidor*:*porta*. Se o proxy nomeado falhar ou se não existir um proxy que introduziu quando esta política está ativada, os dados de telemetria e experiências de utilizador ligado não são enviados e permanecem no dispositivo local.
+- **Servidor de proxy da telemetria**: Introduza o nome de domínio completamente qualificado (FQDN) ou o endereço IP de um servidor proxy para reencaminhar pedidos de telemetria, através de uma ligação de Secure Sockets Layer (SSL) e experiências do usuário conectado. O formato para esta definição é *servidor*:*porta*. Se o proxy nomeado falhar ou se um proxy não é introduzido quando ativar esta política, os dados de telemetria e experiências de utilizador ligado não são enviados e permanecem no dispositivo local.
 
   Formatos de exemplo:
 
@@ -467,24 +466,46 @@ Pode configurar as informações que podem aceder a todas as aplicações no dis
 - **Analisar todas as transferências**: Controla se o Defender analisa todos os ficheiros transferidos da Internet.
 - **Analisar scripts carregados em browsers da Microsoft**: Permite que o Defender analise os scripts que são utilizados no Internet Explorer.
 - **Acesso do utilizador final ao Defender**: Controla se a interface de utilizador do Windows Defender está ocultada dos utilizadores finais. Quando esta definição for alterada, será aplicada da próxima vez que o PC do utilizador final for reiniciado.
-- **Intervalo de atualização de assinatura (em horas)**: Especifique o intervalo no qual o Defender verifica para novos ficheiros de assinatura.
+- **Intervalo de atualização de assinatura (em horas)**: Introduza o intervalo no qual o Defender verifica para novos ficheiros de assinatura.
 - **Monitorizar a atividade de programas e ficheiros**: Permite que o Defender monitorize a atividade de ficheiros e programas nos dispositivos.
-- **Dias antes de eliminar o software malicioso em quarentena**: Permite que o Defender continue a controlar o software maligno resolvido durante o número de dias que especificar, para que possa verificar manualmente os dispositivos afetados anteriormente. Se definir o número de dias para **0**, software maligno permanece na pasta de quarentena e não são automaticamente removido.
-- **Limite de utilização da CPU durante uma análise**: Permite limitar a quantidade de CPU que as análises estão autorizadas a utilizar (de **1** a **100**).
+- **Dias antes de eliminar o software malicioso em quarentena**: Continuar a controlar software maligno resolvido durante o número de dias que introduzir para que possa verificar manualmente os dispositivos afetados anteriormente. Se definir o número de dias para **0**, software maligno permanece na pasta de quarentena e não são automaticamente removido.
+- **Limite de utilização da CPU durante uma análise**: Limitar a quantidade de CPU que as análises estão autorizadas a utilizar, partir **1** ao **100**.
 - **Verificar arquivos mortos**: Permite que o Defender analise os ficheiros arquivados, tais como ficheiros Zip ou Cab.
 - **Analisar mensagens de correio recebidas**: Permite que o Defender analise mensagens de e-mail quando chegam ao dispositivo.
 - **Analisar unidades amovíveis durante uma análise completa**: Permite que o Defender analise unidades amovíveis, como pens USB.
 - **Analisar unidades de rede mapeadas durante uma análise completa**: Permite que o Defender analise ficheiros em unidades de rede mapeadas.
   Se os ficheiros na unidade forem só de leitura, o Defender não conseguirá remover qualquer software maligno encontrado nos mesmos.
 - **Analisar ficheiros abertos a partir de pastas de rede**: Permite que o Defender analise ficheiros em unidades de rede partilhadas (por exemplo, ficheiros acedidos a partir de um caminho UNC). Se os ficheiros na unidade forem só de leitura, o Defender não conseguirá remover qualquer software maligno encontrado nos mesmos.
-- **Proteção da cloud**: Permite ou impede que o Serviço de Proteção Ativa Microsoft receba informações sobre a atividade de software maligno nos dispositivos geridos por si. Estas informações são utilizadas para melhorar o serviço no futuro.
+- **Proteção da cloud**: Permite ou impede que o Serviço de Proteção Ativa Microsoft receba informações sobre a atividade de software maligno nos dispositivos geridos por si. Estas informações melhora o serviço no futuro.
 - **Pedir aos utilizadores antes da submissão de exemplo**: Controles se ficheiros potencialmente maliciosos que possam exigir análise adicional são automaticamente enviados à Microsoft.
-- **Hora a realizar uma análise rápida diária**: Permite agendar uma análise rápida que ocorre diariamente à hora que selecionar.
-- **Tipo de análise do sistema para executar**: Introduza o nível de análise é executada quando agendar uma análise do sistema.
+- **Hora a realizar uma análise rápida diária**: Escolha a hora para executar uma análise rápida diária. **Não configurado** não executa uma análise diária. Se pretender mais personalização, configure as **tipo de análise do sistema para executar** definição.
+
+  [Defender/ScheduleQuickScanTime CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulequickscantime)
+- **Tipo de análise do sistema para executar**: Agende uma análise de sistema, incluindo o nível de análise e o dia e hora para executar a análise. As opções são:
+  - **Não configurado**: Não agendar uma análise de sistema no dispositivo. Os utilizadores finais pode executar manualmente verificações como necessário ou reclamado nos respetivos dispositivos.
+  - **Desativar**: Desativa a qualquer sistema de verificação no dispositivo. Escolha esta opção se estiver a utilizar uma solução de parceiro de software antivírus que analisa os dispositivos.
+  - **Análise rápida**: Analisa as localizações comuns sempre que exista malware registado, tal como chaves de registro e conhecido pastas de arranque do Windows.
+    - **Dia agendado**: Escolha o dia para executar a análise.
+    - **Hora agendada**: Escolha a hora para executar a análise.
+  - **Análise completa**: Analisa as localizações comuns sempre que exista malware registado e também analisa todos os ficheiros e pastas no dispositivo.
+    - **Dia agendado**: Escolha o dia para executar a análise.
+    - **Hora agendada**: Escolha a hora para executar a análise.
+
+  Esta definição poderá entrar em conflito com o **hora a realizar uma análise rápida diária** definição. Algumas recomendações:
+
+  - Para executar uma análise rápida diária, configure as **hora a realizar uma análise rápida diária** definição.
+  - Para executar uma análise rápida diária e uma análise completa de todas as semanas, em seguida, configure as **hora a realizar uma análise rápida diária**e defina **tipo de análise do sistema para executar** para uma análise completa com o dia e hora.
+  - Não configure o **hora a realizar uma análise rápida diária** definir simultaneamente com o **tipo de análise do sistema para executar** definido como **análise rápida**. Estas definições podem entrar em conflito e poderá não ser executada uma análise.
+  - Para executar uma análise rápida toda Terça-feira às 06:00, configure as **tipo de análise do sistema para executar** definição.
+
+  [Defender/ScanParameter CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-scanparameter)  
+  [Defender/ScheduleScanDay CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescanday)  
+  [Defender/ScheduleScanTime CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescantime)
+
 - **Detetar aplicações potencialmente indesejadas**: Escolha o nível de proteção quando o Windows detecta potencialmente indesejável aplicações a partir de:
   - **Bloquear**
   - **Auditoria** para obter mais informações sobre aplicações potencialmente indesejadas, veja [detetar e bloquear aplicações potencialmente indesejável](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus).
-- **Ações sobre ameaças de software maligno detetado**: Utilize esta opção para escolher as ações que o Defender deve executar para cada nível de ameaça detetar (baixo, moderado, alto e grave). As opções são:
+- **Ações sobre ameaças de software maligno detetado**: Escolha as ações que o Defender deve executar para cada nível de ameaças Deteta: baixo, moderado, alto e grave. As opções são:
   - **Limpar**
   - **Quarentena**
   - **Remove**

@@ -6,7 +6,7 @@ keywords: Armazém de Dados do Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/22/2019
+ms.date: 03/21/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,18 +18,24 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 20c9c1bf5eea12407cba2e00288a039b74fcaca7
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: d7d69c602471e8508744f2a00008294cbd335204
+ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565643"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58358263"
 ---
 # <a name="change-log-for-the-intune-data-warehouse-api"></a>Registo de alterações da API do Armazém de Dados do Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Mantenha-se a par das atualizações do Armazém de Dados do Intune.
+
+## <a name="1903"></a>1903
+_Lançamento de Março de 2019_
+
+### <a name="v10-changes-reflecting-back-to-beta"></a>Alterações v1.0 refletindo para o beta
+Quando a versão 1.0 foi introduzida inicialmente no 1808, eram diferentes quanto de algumas maneiras significativas da versão beta API. No 1903 essas alterações serão refletidas novamente para a versão de API do beta. Se tiver relatórios importantes que utilizem a versão de API do beta, é altamente recomendável mudar esses relatórios para a versão 1.0 para evitar alterações significativas. Consulte a [informações de versão de API](reports-api-url.md) para obter mais informações sobre versões de API do armazém de dados e para trás compatibilidade. 
 
 ## <a name="1902"></a>1902 
 _Lançamento de Fevereiro de 2019_
@@ -42,9 +48,9 @@ Aceder ao seu armazém de dados do Intune no Power BI Online com o [conformidade
 > Existem dois filtros adicionais, que pode aplicar para a aplicação de conformidade do Intune.
 
 #### <a name="add-additional-filters-to-the-intune-compliance-app"></a>Adicionar filtros adicionais para a aplicação de conformidade do Intune
-1. Abra o [conformidade do Intune (armazém de dados)](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) aplicação no seu browers web.
+1. Abra o [conformidade do Intune (armazém de dados)](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) aplicação nos seus navegadores da web.
 2. Clique em **dispositivos em não conformidade** e selecione **em não conformidade** no **complianceStatus** filtro. 
-3. Clique em **dispositivos desconhecido** e selecione **ainda não está disponível** no **complianceStatus** filtro. 
+3. Clique em **dispositivos desconhecidos** e selecione **ainda não está disponível** no **complianceStatus** filtro. 
 
 ## <a name="1812"></a>1812 
 _Lançamento de Dezembro de 2018_
@@ -93,7 +99,7 @@ Pode utilizar <code>$select</code> como um parâmetro de consulta de OData. A ve
 
 ### <a name="new-entities-in-the-in-data-warehouse-data-model----2077804---"></a>Novas entidades no modelo de dados do armazém de dados de <!-- 2077804 -->
 
- - A entidade [**MobileAppDeviceuserInstallStatus**](reports-ref-application.md#mobileappdeviceuserinstallstatus) foi adicionada. A entidade **MobileAppDeviceUserInstallStatus** representa um estado de instalação da aplicação móvel de um determinado dispositivo e utilizador.
+ - A entidade [**MobileAppDeviceuserInstallStatus**](reports-ref-application.md) foi adicionada. A entidade **MobileAppDeviceUserInstallStatus** representa um estado de instalação da aplicação móvel de um determinado dispositivo e utilizador.
  - A entidade [**MobileAppInstallState**](reports-ref-application.md#mobileappinstallstate) foi adicionada. A entidade **MobileAppInstallState** representa o estado de instalação de uma aplicação móvel depois de ser atribuída a um grupo que contém dispositivos, utilizadores ou ambos. 
 
 ## <a name="1710"></a>1710

@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bca2d52bb47a149c6a36bc1b8cbc4d65e50c0f4c
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 2ceba92a48f4ae899b5a645137ec0891a7c16659
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57756807"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58394839"
 ---
 # <a name="use-rbac-and-scope-tags-for-distributed-it"></a>Utilizar etiquetas de âmbito e o RBAC para distribuído IT
 
@@ -82,6 +82,17 @@ Por exemplo, digamos que um administrador de escritório regional de Seattle é 
 
 3. Sob **selecionar etiquetas**, escolha as etiquetas que pretende adicionar ao perfil.
 4. Escolher **selecionar** > **OK** > **guardar**.
+
+## <a name="to-assign-a-scope-tag-to-an-app-configuration-policy"></a>Para atribuir uma etiqueta de âmbito a uma política de configuração de aplicação
+Para dispositivos com o **tipo de inscrição de dispositivos** definida como **dispositivos geridos**, escolha **aplicações de cliente** > **depolíticasdeconfiguraçãodeaplicações** > Escolha uma política de configuração da aplicação > **propriedades** > **âmbito (etiquetas)** > Escolha as etiquetas que pretende atribuir a política.
+
+Para dispositivos com o **tipo de inscrição de dispositivos** definida como **aplicações geridas**, escolha **aplicações de cliente** > **políticas de configuração de aplicação**> Escolha uma política de configuração da aplicação > **âmbito (etiquetas)** > Escolha as etiquetas que pretende atribuir a política.
+
+
+## <a name="to-assign-a-scope-tag-to-an-ios-app-provisioning-profile"></a>Para atribuir uma etiqueta de âmbito para uma perfil de aprovisionamento de aplicações iOS
+1. No Intune, escolha **aplicações de cliente** > **perfis de aprovisionamento de aplicações iOS** > Escolha um perfil.
+2. Escolher **propriedades** > **âmbito (etiquetas)** > Escolha as etiquetas pelas quais pretende atribuir ao perfil.
+3. Escolher **selecionar** > **OK** > **guardar**.
 
 ## <a name="scope-tag-details"></a>Detalhes da etiqueta de âmbito
 Ao trabalhar com etiquetas de âmbito, lembre-se estes detalhes:

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cee1cbc05164a418148ecea8d93f6c8c45c73e01
-ms.sourcegitcommit: c4258bb5824daf3f7e0ac3bb8afc539bde4d95da
+ms.openlocfilehash: 2d8c34f1947a0abaa4cdf0bbcd65dcf31e4c11ff
+ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "57991134"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58358161"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>Como monitorizar políticas de proteção de aplicações
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -48,7 +48,7 @@ Existem três locais diferentes para monitorizar o estado de conformidade das po
 ![Mosaico de resumo no painel de gestão de aplicações móveis do Intune](./media/app-protection-user-status-summary.png)
 
 - **Utilizadores atribuídos**: O número total de utilizadores atribuídos na sua empresa que estão a utilizar uma aplicação que está associado uma política num contexto de trabalho e é protegida e licenciada, bem como os utilizadores atribuídos não protegido e não licenciados.
-- **Utilizadores sinalizados**: O número de utilizadores que estão com problemas. Os dispositivos com Jailbreak são reportados **utilizadores sinalizados**.
+- **Utilizadores sinalizados**: O número de utilizadores que estão com problemas. Desbloqueado por Jailbreak (iOS) e dispositivos (Android) de raiz são reportados **utilizadores sinalizados**. Os utilizadores com dispositivos que são sinalizados pela verificação de atestado de dispositivo Google SafetyNet (Se ativado pelo administrador de TI) são apresentados aqui. 
 - **Estado do utilizador para iOS** e **estado do utilizador para Android**: O número de utilizadores que utilizaram uma aplicação que têm uma política atribuída no contexto de trabalho para a plataforma relacionado. Estas informações mostram o número de utilizadores geridos pela política, bem como o número de utilizadores que estão a utilizar uma aplicação que não é abrangida por nenhuma política num contexto de trabalho. Poderá considerar adicionar estes utilizadores à sua política.
 - **Aplicações iOS mais protegidas**: Com base nas aplicações iOS mais utilizadas, estas informações mostram o número de aplicações iOS desprotegido e protegido.
 - **Aplicações Android mais protegidas**: Com base nas aplicações para Android mais utilizadas, estas informações mostram o número de aplicações Android desprotegidos e protegidos.
@@ -89,7 +89,7 @@ Para ver o relatório para um utilizador, siga estes passos:
 3. Selecione o utilizador na lista. Pode ver os detalhes do estado de conformidade do utilizador.
 
 ### <a name="flagged-users"></a>Utilizadores sinalizados
-A vista detalhada mostra a mensagem de erro, a aplicação que foi acedida quando ocorreu o erro, a plataforma de SO do dispositivo afetado e um carimbo de data/hora.
+A vista detalhada mostra a mensagem de erro, a aplicação que foi acedida quando ocorreu o erro, a plataforma de SO do dispositivo afetado e um carimbo de data/hora. Os utilizadores com dispositivos que são sinalizados pela verificação de atestado de dispositivo Google SafetyNet são reportados aqui com o motivo, conforme comunicado pelo Google.
 
 ## <a name="reporting-view"></a>Vista de relatórios
 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 63dca685317555553573dbbdae1ae3ba391c1903
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 7bda958985234b8d6bbaf1cb5b685eb85ff4b504
+ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57395417"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58358157"
 ---
 # <a name="how-to-create-a-device-compliance-policy-to-enable-google-play-protect"></a>Como criar uma política de conformidade de dispositivos para ativar o Google Play Protect
 
@@ -59,8 +59,7 @@ A política de conformidade que exige estas definições pode então ser destina
  - **Atestado de dispositivo SafetyNet**  
    Defina o nível de integridade do atestado de dispositivo SafetyNet que tem de ser cumprido. Os níveis incluem **Não configurado**, **Verificação de integridade básica** e **Verificação de integridade básica e de dispositivos certificados**.
 
-
-
+> [! Tenha em atenção] para obter instruções sobre como configurar definições do Google Play Protect através de políticas de proteção de aplicações, consulte [definições de política de proteção de aplicações do Intune](https://docs.microsoft.com/en-us/intune/app-protection-policy-settings-android#conditional-launch) no Android. 
 
 ## <a name="next-steps"></a>Passos Seguintes
 

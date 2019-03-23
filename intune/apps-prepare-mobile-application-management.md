@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 03/19/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4e1e3e510cf1ef7e13e653f7793433045b0610ef
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: f3addd79b20c685c5643a2b99fb7120e958cdecb
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565479"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58394886"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Preparar aplicações de linha de negócios para as políticas de proteção de aplicações
 
@@ -87,6 +87,7 @@ Esta tabela lista as definições que pode utilizar no SDK da Aplicação e na F
 |Permitir que a aplicação transfira dados para outras aplicações|X|X|
 |Permitir que a aplicação receba dados de outras aplicações|X|X|
 |Restringir cortar, copiar e colar com outras aplicações|X|X|
+|Especifique o número de carateres que podem ser cortados ou copiados de uma aplicação gerida|X|X|
 |Exigir PIN simples para acesso|X|X|
 |Especificar o número de tentativas antes da redefinição do PIN|X|X|
 |Permitir impressões digitais em vez do PIN|X|X|

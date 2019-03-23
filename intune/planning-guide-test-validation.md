@@ -6,7 +6,7 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 3/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 61e7bf62202877b6a20717b0774843d1a859eb47
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 9f63d396f51254f4aec99ac630b812a54ceeb405
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57396932"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58394941"
 ---
 # <a name="intune-testing-and-validation"></a>Teste e validação do Intune
 
@@ -44,7 +44,7 @@ Se não existir um componente de estrutura em, pelo menos, um critério de teste
 
 -   **Dispositivos:** Dispositivos de teste que podem ser apagados ou repostos para as predefinições de fábrica.
 
--   **Componentes de integração:** Todos os componentes de integração (conector do certificado, conector de serviços do Intune para o Exchange alojado e conector do Exchange do Intune no local) devem ser instalados e configurados, se necessário.
+-   **Componentes de integração:** Todos os componentes de integração (conectores de certificado e o conector do Intune Exchange no local) devem ser instalados e configurados, se necessário.
 
 Poderá ser necessário fazer alterações de estrutura para ultrapassar dificuldades imprevistas. Além disso, todas as alterações de estrutura devem ser documentadas com o motivo de cada alteração. Segue-se um exemplo para ilustrar o que poderá ser uma alteração:
 

@@ -6,24 +6,24 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/06/2019
+ms.date: 03/20/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 0f8b08f2-504c-4b38-bea2-b8a4ef0526b8
-ms.reviewer: andcerat
+ms.reviewer: demerson
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d8e73af9ce317ebda09570c2c18df901529e7749
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5355257792dd8fa0e06d1b0fb4071f5e9e52b5a9
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57528331"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58394945"
 ---
 #  <a name="ios-app-protection-policy-settings"></a>Definições de políticas de proteção de aplicações iOS
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -44,7 +44,7 @@ Existem três categorias de definições de política: *Reposicionamento de dado
 | **Guardar cópias dos dados da organização** | Selecione **bloco** para desativar a utilização da *guardar como* opção nesta aplicação. Selecione **permitir** se pretender permitir a utilização de *guardar como*. <br><br>**Nota:** *Esta definição é suportada para o Microsoft Excel, OneNote, Outlook, PowerPoint e o Word. Também pode ser suportada por aplicações LOB e de terceiros.* <br><br> Quando definido como *bloco*, pode configurar a definição seguinte, *permitir ao utilizador guardar cópias nos serviços selecionados*.   | <br><br> **Permitir**   |
 | <ul><ui> **Permitir que o utilizador guarde cópias para serviços selecionados** | Os utilizadores podem guardar nos serviços selecionados (OneDrive para Empresas, SharePoint e Armazenamento Local). Todos os outros serviços são bloqueados.| **0 selecionado**  |
 | **Restringir cortar, copiar e colar entre outras aplicações** | Especifique quando as ações de corte, cópia e colagem podem ser utilizadas com esta aplicação. Selecione entre: <ul><li>**Bloqueado**:  Não permitir operações cortar, copiar e ações de colar entre esta aplicação e qualquer outra aplicação.</li><li>**Aplicações geridas por políticas**: Permitir que as operações de corte, cópia e ações de colar entre esta aplicação e outras aplicações geridas por políticas.</li><li>**Geridas por políticas com colar em**: Permitir as ações cortar ou copiar entre esta aplicação e outras aplicações geridas por políticas. Permitir que os dados de qualquer aplicação sejam colados nesta aplicação.</li><li>**Qualquer aplicação**: Sem restrições para as operações de corte, cópia e colagem de e para esta aplicação.</ul> | **Qualquer aplicação**   |
-
+| **Limite de carateres de corte e de cópia para qualquer aplicação** | Especifique o número de carateres que podem ser cortados ou copiados de contas e dados da organização.  Isso permitirá que a partilha do número especificado de carateres para qualquer aplicativo, independentemente do **restringir operações cortar, copiar e colar com outras aplicações** definição.<p>Valor predefinido = 0<p>**Nota**: Requer aplicação tenha o SDK do Intune versão 9.0.14 ou posterior.  | **0**   |
 
 
 ### <a name="encryption"></a>Encriptação

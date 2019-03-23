@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/11/2019
+ms.date: 03/20/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2cdf7ea715a13809c860e77412914e3fd2b45a28
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5f2a9f2512f4f6fb12a65d0e7c4982fd351f1770
+ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57400488"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58358322"
 ---
 #  <a name="intune-data-warehouse-collections"></a>Coleções do Armazém de Dados do Intune
 
@@ -231,7 +231,7 @@ A entidade **device** lista todos os dispositivos inscritos sob gestão e as pro
 | DeviceEnrollmentType       | Chave do tipo de inscrição associado a este dispositivo, indicando o método de inscrição.                                                                                             |
 | ComplianceStateKey         | Chave do estado de Conformidade associado a este dispositivo.                                                                                                                             |
 | OSVersion                  | Versão do sistema operativo do dispositivo.                                                                                                                                                |
-| EasDeviceId                | O ID do Exchange ActiveSync do dispositivo.                                                                                                                                                  |
+| EasDeviceId                | ID do Exchange ActiveSync do dispositivo.                                                                                                                                                  |
 | serialNumber               | serialNumber                                                                                                                                                                           |
 | UserId                     | O Identificador Exclusivo para o utilizador associado ao dispositivo.                                                                                                                           |
 | RowLastModifiedDateTimeUTC | A data e hora em UTC em que este dispositivo foi modificado pela última vez no armazém de dados.                                                                                                       |
@@ -281,7 +281,7 @@ A entidade **deviceType** representa o tipo de dispositivo referenciado por outr
 | 12           | ISocConsumer      | Dispositivo iSoc Consumer                                |
 | 13           | Unix              | Dispositivo UNIX                                         |
 | 14           | MacMDM            | Dispositivo Mac OS X gerido com o agente MDM incorporado |
-| 15           | HoloLens          | Dispositivo Holo Lens                                    |
+| 15           | HoloLens          | Dispositivos HoloLens                                       |
 | 16           | SurfaceHub        | Dispositivo Surface Hub                                  |
 | 17           | AndroidForWork    | Dispositivo Android gerido através do Proprietário do Perfil Android  |
 | 18           | AndroidEnterprise | Dispositivo empresarial Android.                          |
@@ -311,7 +311,7 @@ A entidade **deviceEnrollmentType** indica como um dispositivo foi inscrito. O t
 | 6                | WindowsBulkUserless                | Inscrição em massa do Windows 10 através do ICD com certificado.                               |
 | 7                | WindowsAutoEnrollment              | Inscrição automática de dispositivos Windows 10.   (Adicionar conta profissional)                                    |
 | 8                | WindowsBulkAzureDomainJoin         | Associação ao Azure AD em massa no Windows 10.                                                           |
-| 9                | WindowsCoManagement                | Cogestão do Windows 10 acionada pelo AutoPilot ou pela Política de Grupo.                       |
+| 9                | WindowsCoManagement                | Windows 10 a cogestão acionada por diretiva de grupo ou do AutoPilot.                       |
 | 10               | WindowsAzureADJoinsUsingDeviceAuth | Associação ao Azure AD no Windows 10 através da Autenticação do Dispositivo.                                            |
 
 ## <a name="enrollmentactivities"></a>enrollmentActivities 
@@ -368,8 +368,8 @@ O **EnrollmentFailureCategory** entidade indica o motivo da falha uma inscriçã
 | BadRequest                      | Cliente enviou um pedido que não é entendida/suportadas pelo serviço.                                        |
 | FeatureNotSupported             | Utilizado por este inscrição ou estas funcionalidades não são suportadas para esta conta.                                        |
 | EnrollmentRestrictionsEnforced  | Restrições de inscrição configuradas pelo administrador bloqueado neste inscrição.                                          |
-| ClientDisconnected              | Cliente excedeu o limite de tempo ou inscrição foi abortada pelo usuário final.                                                        |
-| UserAbandonment                 | Inscrição foi abandonada pelo usuário final. (Usuário final à inclusão, mas não foi possível concluí-la de forma atempada)  |
+| ClientDisconnected              | Cliente excedeu o limite de tempo ou inscrição foi abortada pelo utilizador final.                                                        |
+| UserAbandonment                 | Inscrição foi abandonada pelo utilizador final. (O utilizador final à integração mas não foi possível concluí-la de forma atempada)  |
 
 ## <a name="enrollmentfailurereasons"></a>enrollmentFailureReasons  
 O **EnrollmentFailureReason** entidade indica um motivo mais detalhado para uma falha de inscrição de dispositivos numa categoria de determinada falha.  
@@ -398,7 +398,7 @@ O **EnrollmentFailureReason** entidade indica um motivo mais detalhado para uma 
 | EnrollmentCriteriaNotMet         | Este dispositivo não foi possível inscrever devido a uma regra de restrição de inscrição configurada.                                                                                                                          |
 | BulkDeviceNotPreregistered       | Identificador de equipamento móvel internacional (IMEI) ou número de série do dispositivo, este não foi encontrado.  Sem este identificador, os dispositivos são reconhecidos como dispositivos pessoais que estão atualmente bloqueados.  |
 | FeatureNotSupported              | O utilizador estava a tentar aceder a uma funcionalidade que ainda não foi disponibilizada para todos os clientes ou não é compatível com a sua configuração do Intune.                                                            |
-| UserAbandonment                  | Inscrição foi abandonada pelo usuário final. (Usuário final à inclusão, mas não foi possível concluí-la de forma atempada)                                                                                           |
+| UserAbandonment                  | Inscrição foi abandonada pelo utilizador final. (O utilizador final à integração mas não foi possível concluí-la de forma atempada)                                                                                           |
 | APNSCertificateExpired           | Dispositivos da Apple não podem ser geridos com um certificado de push de MDM da Apple expirado.                                                                                                                            |
 
 ## <a name="intunemanagementextensions"></a>intuneManagementExtensions
@@ -448,7 +448,7 @@ A entidade **managementAgentType** representa os agentes utilizados para gerir u
 | 5                     | EasIntuneClient                   | O dispositivo é gerido através do Exchange Active Sync e do agente de PC do Intune |
 | 8                     | ConfigManagerClient               | O dispositivo é gerido pelo agente do System Center Configuration Manager     |
 | 10                    | ConfigurationManagerClientMdm     | O dispositivo é gerido pelo Configuration Manager e MDM.                    |
-| 11                    | ConfigurationManagerCLientMdmEas  | O dispositivo é gerido pelo Configuration Manager, MDM e Eas.               |
+| 11                    | ConfigurationManagerCLientMdmEas  | O dispositivo é gerido pelo Configuration Manager, o MDM e o Exchange Active Sync.               |
 | 16                    | Desconhecido                           | Tipo de agente de gestão desconhecido                                              |
 | 32                    | Jamf                              | Os atributos do dispositivo são obtidos a partir do Jamf.                               |
 | 64                    | GoogleCloudDevicePolicyController |  O dispositivo é gerido pelo CloudDPC da Google.                                 |
@@ -599,7 +599,7 @@ A entidade **termsAndConditions** representa os metadados e o conteúdo de uma d
 ## <a name="userdeviceassociations"></a>userDeviceAssociations
 A entidade **UserDeviceAssociation** contém associações de dispositivos do utilizador na sua organização.
 
-|        Name        |                                             Descrição                                            |     Exemplo     |
+|        Nome        |                                             Descrição                                            |     Exemplo     |
 |:------------------:|:--------------------------------------------------------------------------------------------------:|:---------------:|
 | UserKey            | Identificador exclusivo do utilizador no armazém de dados.   (Chave de substituição).                            | 123             |
 | DeviceKey          | Identificador exclusivo do dispositivo no armazém de dados.                                             | 123             |
@@ -617,7 +617,7 @@ A coleção de entidades **user** contém dados do utilizador. Estes registos in
 | UserKey                    | Identificador exclusivo do utilizador no armazém de dados – chave de substituição.                                                                                                                                                         | 123                                  |
 | UserId                     | Identificador exclusivo do utilizador – semelhante a UserKey, mas é uma chave natural.                                                                                                                                                    | b66bc706-ffff-7437-0340-032819502773 |
 | UserEmail                  | Endereço de e-mail do utilizador.                                                                                                                                                                                                     | John@constoso.com                    |
-| UPN                        | O nome principal do utilizador.                                                                                                                                                                                               | John@constoso.com                    |
+| userPrincipalName                        | O nome principal do utilizador.                                                                                                                                                                                               | John@constoso.com                    |
 | displayName                | Nome a apresentar do utilizador.                                                                                                                                                                                                      | João                                 |
 | IntuneLicensed             | Especifica se este utilizador tem ou não licença do Intune.                                                                                                                                                                              | True/False                           |
 | IsDeleted                  | Indica se todas as licenças do utilizador expiraram e se o utilizador foi, por conseguinte, removido do Intune. Para um único registo, este sinalizador não se altera. Em vez disso, é criado um novo registo para um novo estado do utilizador. | Verdadeiro/Falso                           |

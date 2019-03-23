@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 03/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,38 +16,30 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 21e3d4b27348bc5ed64c192c8d6824af053a833b
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 8ebca668ba3e02ec6088bb72370d7d5061241627
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57397428"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58394933"
 ---
-# <a name="monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online-in-intune"></a>Monitorizar a conformidade de acesso condicional no Exchange Online e no Exchange no local no Intune
+# <a name="monitor-conditional-access-compliance-for-exchange-on-premises-in-intune"></a>Monitorizar a conformidade de acesso condicional do Exchange no local no Intune
 
-A partir da versão 1704 do Intune, os administradores podem ver informações de relatórios relacionadas com os registos de dispositivos do Exchange ActiveSync que são sincronizados com o Intune através do Exchange Connector no local ou do conector de serviços do Intune (conector do Exchange Online). O relatório de compatibilidade de acesso condicional apresenta um resumo dos dispositivos com diferentes estados de sincronização:
+Os administradores do Intune, pode ver relatórios relacionados com registos de dispositivo do Exchange ActiveSync que são sincronizados com o Intune através do conector do Exchange no local. O relatório de compatibilidade de acesso condicional apresenta um resumo dos dispositivos com diferentes estados de sincronização:
 
--   **Permitir**
+- **Permitir**
 
--   **Bloquear**
+- **Bloquear**
 
--   **Quarentena**
+- **Quarentena**
 
 ## <a name="to-monitor-conditional-access-compliance"></a>Para monitorizar a compatibilidade de acesso condicional
 
-1.  Aceda ao [portal do Azure](https://portal.azure.com/) e inicie sessão com as credenciais do Intune.
+1. Inicie sessão no [Intune](https://aka.ms/intuneportal)e aceda à **acesso condicional**, em seguida, escolha **descrição geral**.
 
-2.  Depois de iniciar sessão com êxito, verá o **Dashboard do Azure**.
+2. Selecione uma das três áreas (**Permitido**, **Bloqueado** ou **Quarentena**) no gráfico para ver os relatórios de conformidade de acesso condicional.
 
-3.  Selecione **Todos os serviços** no menu à esquerda e, em seguida, escreva **Intune** no filtro da caixa de texto.
-
-4.  Escolha **Intune**, será apresentado o **Dashboard do Intune**.
-
-5.  Selecione **Acesso condicional** e, em seguida, selecione **Descrição Geral**.
-
-6.  Selecione uma das três áreas (**Permitido**, **Bloqueado** ou **Quarentena**) no gráfico para ver os relatórios de conformidade de acesso condicional.
-
-    ![Imagem do Dashboard de Acesso Condicional](./media/CA-reporting-intune-1.png)
+   ![Imagem do Dashboard de Acesso Condicional](./media/CA-reporting-intune-1.png)
 
 Assim que escolher uma das três áreas, poderá ver mais detalhes sobre os dispositivos que estão a ser permitidos, bloqueados ou colocados em quarentena.
 
@@ -57,16 +49,16 @@ Também pode consultar mais detalhes nos dispositivos específicos. Por exemplo,
 
 No painel Detalhes do dispositivo, pode ver mais informações:
 
--   **Descrição geral:** Pode ver as propriedades dos dispositivos como: Versão do SO, modelo do dispositivo, propriedade, número de série, fabricante do dispositivo, número de telefone e última vez que o dispositivo deu entrado.
+- **Descrição geral:** Pode ver as propriedades dos dispositivos como: Versão do SO, modelo do dispositivo, propriedade, número de série, fabricante do dispositivo, número de telefone e última vez que o dispositivo deu entrado.
 
--   **Propriedades:** Pode definir a propriedade do dispositivo (pessoal ou empresarial).
+- **Propriedades:** Pode definir a propriedade do dispositivo (pessoal ou empresarial).
 
--   **Hardware:** Ele fornece as informações que vê na descrição geral e também os detalhes de armazenamento (espaço total e espaço livre), cobertura do sistema, detalhes da rede, serviço de rede e mais acesso condicional a bloquear detalhes.
+- **Hardware:** Ele fornece as informações que vê na descrição geral e também os detalhes de armazenamento (espaço total e espaço livre), cobertura do sistema, detalhes da rede, serviço de rede e mais acesso condicional a bloquear detalhes.
 
--   **Aplicações detetadas:** Mostra todas as aplicações instaladas no dispositivo. Também pode exportar a lista de aplicações instaladas para o formato .CSV.
+- **Aplicações detetadas:** Mostra todas as aplicações instaladas no dispositivo. Também pode exportar a lista de aplicações instaladas para o formato .CSV.
 
--   **Conformidade:** Ela mostra a conformidade do dispositivo todos os detalhes da política.
+- **Conformidade:** Ela mostra a conformidade do dispositivo todos os detalhes da política.
 
--   **Configuração do dispositivo:** Mostra todos os detalhes de configuração do dispositivo.
+- **Configuração do dispositivo:** Mostra todos os detalhes de configuração do dispositivo.
 
--   **Acesso do Exchange:** Aqui pode saber mais sobre o estado do dispositivo depois de aplicar políticas de acesso condicional.
+- **Acesso do Exchange:** Aqui pode saber mais sobre o estado do dispositivo depois de aplicar políticas de acesso condicional.

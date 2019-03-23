@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/06/2019
+ms.date: 03/19/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: df939e9c2519cbe63e8e1a1974c903d804822c7c
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 97f9b0ef14bb56fb22d7ff35fbaf1bd5db0f5859
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57399978"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58394921"
 ---
 # <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps-in-microsoft-intune"></a>Como a proteção básica em aplicações geridas do Office 365 se vai refletir nos seus utilizadores no Microsoft Intune
 
@@ -102,6 +102,7 @@ Este artigo utiliza o OneDrive para Empresas como exemplo para demonstrar a expe
 | Permitir que a aplicação receba dados de outras aplicações | Todas as aplicações | Todas as aplicações |
 | Impedir "Guardar como" | Não | Não |
 | Restringir cortar, copiar e colar com outras aplicações | Qualquer aplicação | Qualquer aplicação |
+| Especifique o número de carateres que podem ser cortados ou copiados de uma aplicação gerida | 0 | 0 |
 | Restringir o conteúdo Web a apresentar num browser gerido pela empresa | Não | Não |
 | Encriptar dados da aplicação | Quando o dispositivo está bloqueado | Sim |
 | Desativar a sincronização de contactos | Não | Não |

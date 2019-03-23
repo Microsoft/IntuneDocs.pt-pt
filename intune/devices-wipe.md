@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/20/2019
+ms.date: 03/21/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,18 +16,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a0f15eb4aecc1c4c71420df7036a7d143ba298cd
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 8d5c26c53e5d1a8e8d0e02a227b84d9e5ebea83c
+ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460900"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58358249"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Remover dispositivos ao apagar os dados, extinguir ou anular a inscrição do dispositivo de forma manual
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Ao realizar as ações **Extinguir** ou **Limpar**, pode remover do Intune os dispositivos que já não são necessários, que estão a ser reaproveitados ou que estão em falta. Os utilizadores também podem emitir um comando remoto a partir do Portal da Empresa do Intune para dispositivos pessoais inscritos no Intune.
+Ao realizar as ações **Extinguir** ou **Limpar**, pode remover do Intune os dispositivos que já não são necessários, que estão a ser reaproveitados ou que estão em falta. Os utilizadores também podem emitir um comando remoto do Portal da empresa do Intune para dispositivos que estão inscritos no Intune.
 
 > [!NOTE]
 > Antes de remover um utilizador do Azure Active Directory (Azure AD), utilize as ações **Limpar** ou **Extinguir** para todos os dispositivos associados a esse utilizador. Se remover utilizadores que têm dispositivos geridos a partir do Azure AD, o Intune deixará de conseguir apagar os dados ou extinguir esses dispositivos.

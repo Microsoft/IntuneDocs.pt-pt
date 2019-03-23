@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6bd5679a0c42959f5b523ac064801864c3c6113a
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 65c19f58e41e4f8a739ae16a1b56703fb743b738
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57396425"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58394966"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Inscrever dispositivos Windows no Intune com o Windows Autopilot  
 O Windows Autopilot simplifica a inscrição de dispositivos no Intune. A criação e manutenção de imagens personalizadas do sistema operativo são um processo moroso. Também poderá demorar a aplicar estas imagens personalizadas do sistema operativo a novos dispositivos para as preparar para utilização antes de as disponibilizar aos seus utilizadores finais. Com o Microsoft Intune e o Autopilot, pode fornecer novos dispositivos aos seus utilizadores finais sem ter de criar, manter e aplicar imagens de sistema operativo personalizadas aos dispositivos. Ao utilizar o Intune para gerir dispositivos do Autopilot, pode gerir políticas, perfis, aplicações, entre outros, após estes serem inscritos. Para uma descrição geral das vantagens, cenários e pré-requisitos, veja [Descrição geral do Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
@@ -102,6 +102,7 @@ Os perfis de implementação do Autopilot são utilizados para configurar os dis
 1. No [Intune no portal do Azure](https://aka.ms/intuneportal), selecione **Inscrição de dispositivos** > **Inscrição no Windows** > **Perfis de implementação** e selecione um perfil.
 2. No painel do perfil específico, selecione **Atribuições**. 
 3. Escolha **Selecionar Grupos** e, em seguida, no painel **Selecionar grupos**, escolha os grupos aos quais pretende atribuir o perfil. Em seguida, clique em **Selecionar**.
+
 
 > [!NOTE]
 > O Intune irá verificar periodicamente a existência de novos dispositivos nos grupos atribuídos e, em seguida, iniciar o processo de atribuição de perfis a esses dispositivos. Este processo pode demorar vários minutos a concluir. Antes de implementar um dispositivo, certifique-se de que concluiu este processo.  Pode verificar sob **inscrição de dispositivos** > * * a inscrição de Windows * * > **dispositivos** onde deverá ver o estado do perfil alterar de "Não atribuído" para "Atribuir" e, finalmente, para "Atribuído."

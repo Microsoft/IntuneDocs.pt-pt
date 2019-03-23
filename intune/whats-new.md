@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 03/20/2019
+ms.date: 03/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ad4ac5a2560cf6c3d06354ca8d4e3190f1bf198b
-ms.sourcegitcommit: b0b1030017e741d92c508130447a8242d9ad7a51
+ms.openlocfilehash: f7a35104982998c00e0fc653dc04e23051a46dc5
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
 ms.translationtype: MT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 03/22/2019
-ms.locfileid: "58343017"
+ms.locfileid: "58394850"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -49,17 +49,109 @@ Saiba mais sobre as novidades todas as semanas no Microsoft Intune. Também pode
 <!-- ########################## -->
 ## <a name="week-of-march-18-2019"></a>Semana de 18 de Março de 2019
 
+### <a name="app-management"></a>Gestão de aplicações
+
+#### <a name="deploy-microsoft-visio-and-microsoft-project----3725386----"></a>Implantar o Microsoft Visio e o Microsoft Project <!-- 3725386  -->
+Agora pode implementar Microsoft Visio Pro para Office 365 e o cliente de ambiente de trabalho do Microsoft Project Online independente das aplicações para dispositivos Windows 10 com o Microsoft Intune, se tiver licenças para estas aplicações. A partir do Intune, selecione **aplicações de cliente** > **aplicações** > **adicionar** para apresentar o **Adicionar aplicação** painel. Sobre o **Adicionar aplicação** painel, selecione **com o Windows 10** como o **tipo de aplicação**. Em seguida, selecione **configurar o conjunto de aplicações** para selecionar os aplicativos sejam instalados. Para obter mais informações sobre aplicações do Office 365 para dispositivos Windows 10, consulte [aplicações de atribuir o Office 365 a dispositivos Windows 10 com o Microsoft Intune](apps-add-office365.md).
+
+#### <a name="microsoft-visio-pro-for-office-365-product-name-change----3593653----"></a>Microsoft Visio Pro para alteração de nome de produto do Office 365 <!-- 3593653  -->
+**Microsoft Visio Pro para Office 365** será agora conhecido como **Microsoft Visio Online plano 2**.  Para obter mais informações sobre o Microsoft Visio, consulte [Visio Online plano 2](https://products.office.com/visio/visio-online-plan-2). Para obter mais informações sobre aplicações do Office 365 para dispositivos Windows 10, consulte [aplicações de atribuir o Office 365 a dispositivos Windows 10 com o Microsoft Intune](apps-add-office365.md).
+
+#### <a name="intune-app-protection-policy-app-character-limit-setting----3291302----"></a>Intune app protection política (aplicação) caráter configuração do limite <!-- 3291302  -->
+Os administradores do Intune, podem especificar uma exceção para a aplicação do Intune **restringir operações cortar, copiar e colar com outras aplicações** definição de política.  Como administrador, pode especificar o número de carateres que podem ser cortados ou copiados de uma aplicação gerida. Esta definição irá permitir a partilha do número especificado de carateres a todas as aplicações, independentemente do "restringir operações cortar, copiar e colar com outras aplicações" definição. Observe que a versão da aplicação Portal da empresa do Intune para Android requer a versão 5.0.4364.0 ou posterior. Para obter mais informações, consulte [proteção de dados de iOS](app-protection-policy-settings-ios.md#data-protection), [proteção de dados em dispositivos Android](app-protection-policy-settings-android.md#data-protection), e [rever registos de proteção de aplicações de cliente](app-protection-policy-settings-log.md#app-protection-policy-settings).
+
+#### <a name="office-deployment-tool-odt-xml-for-office-proplus-deployment----3192477-----"></a>Ferramenta de implementação do Office (ODT) XML para a implementação do Office ProPlus <!-- 3192477   -->
+Será capaz de fornecer a ferramenta de implementação do Office (ODT) XML ao criar uma instância do Office Pro Plus na consola de administração do Intune. Isso permitirá que a maior capacidade de personalização se as opções de interface do Usuário do Intune existentes não atenderem às suas necessidades. Para obter mais informações, consulte [aplicações de atribuir o Office 365 a dispositivos Windows 10 com o Microsoft Intune](https://docs.microsoft.com/intune/apps-add-office365) e [opções de configuração para a ferramenta de implementação do Office](https://docs.microsoft.com/DeployOffice/configuration-options-for-the-office-2016-deployment-tool).
+
+#### <a name="app-icons-will-now-be-displayed-with-an-automatically-generated-background----1429026----"></a>Os ícones da aplicação serão agora apresentados com um fundo gerado automaticamente <!-- 1429026  -->
+Na aplicação Portal da empresa de Windows, os ícones da aplicação serão agora apresentados com um fundo gerado automaticamente com base na cor dominante do ícone (caso seja possível detetar uma). Quando aplicável, este plano de fundo substituirá o limite cinzento que era visível anteriormente nos mosaicos das aplicações. Os utilizadores irão ver esta alteração nas versões mais tarde do que 10.3.3451.0 do Portal da empresa.
+
+#### <a name="install-available-apps-using-the-company-portal-app-after-windows-bulk-enrollment----2751523-----"></a>Instalar as aplicações disponíveis com a aplicação Portal da empresa após a inscrição em massa do Windows <!-- 2751523   -->
+Dispositivos Windows inscritos no Intune, utilizando [inscrição em massa de Windows](windows-bulk-enroll.md) (pacotes de aprovisionamento) será possível utilizar a aplicação do Portal da empresa para instalar as aplicações disponíveis. Para obter mais informações sobre a aplicação Portal da empresa, consulte [adicionar manualmente o Portal da empresa do Windows 10](store-apps-company-portal-app.md) e [como configurar a aplicação Portal da empresa do Microsoft Intune](company-portal-app.md).
+
+#### <a name="the-microsoft-teams-app-can-be-selected-as-part-of-the-office-app-suite----3828932----"></a>A aplicação Microsoft Teams pode ser selecionada como parte do pacote de aplicação do Office <!-- 3828932  -->
+A aplicação Microsoft Teams pode ser incluída ou excluída como parte da instalação do pacote de aplicação Office Pro Plus. Esta funcionalidade funciona para Office Pro Plus 16.0.11328.20116+ de número de compilação. O utilizador tem de terminar sessão e, em seguida, inicie sessão no dispositivo para a conclusão da instalação. No Intune, selecione **aplicações de cliente** > **aplicações** > **adicionar**. Selecione uma da **Office 365 Suite** tipos de aplicações e selecione **configurar conjunto de aplicações**.
+
+### <a name="device-configuration"></a>Configuração do dispositivo
+
+#### <a name="operational-logs-also-show-details-on-non-compliant-devices----4063755----"></a>Registos operacionais também mostram detalhes em dispositivos não conformes <!-- 4063755  -->
+Quando inicia sessão Intune encaminhamento recursos do Azure monitor, também pode encaminhar registos operacionais. Nesta atualização, o registos operacionais também fornecem informações sobre dispositivos não conformes. 
+
+Para obter mais informações sobre esta funcionalidade, consulte [enviar dados de registo para armazenamento, os hubs de eventos ou do log analytics no Intune](review-logs-using-azure-monitor.md).
+
+#### <a name="create-and-use-device-configuration-profiles-on-android-zebra-devices-in-intune----3895244---"></a>Criar e utilizar perfis de configuração do dispositivo em dispositivos das riscas das Android no Intune <!-- 3895244 -->
+Esta atualização, o Intune suporta a configuração de dispositivos das riscas das Android. Especificamente, pode: 
+
+- Criar um perfil de configuração do dispositivo e aplicar as definições para dispositivos as riscas das Android através de perfis de extensões de mobilidade (MX) gerados pelo StageNow (**configuração do dispositivo** > **perfis**  >  **Criar perfil** > **Android** para a plataforma).
+
+Aplica-se a:  
+- Android
+
+#### <a name="route-logs-to-azure-monitor-in-more-intune-workloads----3804627---"></a>Registos de rota para o Azure Monitor em mais cargas de trabalho do Intune <!-- 3804627 -->
+No Intune, pode encaminhar a auditoria e registos operacionais para os hubs de eventos, armazenamento e do log analytics no Azure Monitor (**Intune** > **monitorização** > **diagnóstico definições**). Nesta atualização, pode encaminhar esses logs em mais Intune cargas de trabalho, incluindo a conformidade, configurações, aplicações de cliente e muito mais. 
+
+Para saber mais sobre os registos de encaminhamento para o Azure Monitor, consulte [enviar dados de registo para o armazenamento, os hubs de eventos ou do log analytics](review-logs-using-azure-monitor.md).
+
+#### <a name="create-and-use-mobility-extensions-on-android-zebra-devices-in-intune----3305880-----"></a>Criar e utilizar extensões de mobilidade em dispositivos das riscas das Android no Intune <!-- 3305880   -->
+Esta atualização, o Intune suporta a configuração de dispositivos das riscas das Android. Especificamente, pode criar um perfil de configuração do dispositivo e aplicar as definições para dispositivos as riscas das Android através de perfis de extensões de mobilidade (MX) gerados pelo StageNow (**configuração do dispositivo**  >   **Perfis** > **criar perfil** > **Android** para a plataforma > **perfil de MX (apenas as riscas das)** do perfil tipo).
+
+Para obter mais informações sobre esta funcionalidade, consulte [utilizar e gerir os dispositivos as riscas com extensões de mobilidade no Intune](android-zebra-mx-overview.md).
+
+Aplica-se a:  
+- Android
+
+### <a name="device-management"></a>Gestão de dispositivos
+
 #### <a name="encryption-report-for-windows-10-devices-in-public-preview---2351538---"></a>Relatório de encriptação para dispositivos do Windows 10 (em pré-visualização pública)<!-- 2351538 -->  
 
-Utilizar a nova [relatório de encriptação (pré-visualização)](encryption-monitor.md#encryption-report) para ver detalhes sobre o estado de encriptação dos seus dispositivos Windows 10. Detalhes disponíveis incluem uma versão do TPM de dispositivos, preparação de encriptação e o estado, o relatório de erros e mais.  
+Utilizar a nova [relatório de encriptação (pré-visualização)](encryption-monitor.md#encryption-report-&#40;in-public-preview&#41;) para ver detalhes sobre o estado de encriptação dos seus dispositivos Windows 10. Detalhes disponíveis incluem uma versão do TPM de dispositivos, preparação de encriptação e o estado, o relatório de erros e mais.  
 
 #### <a name="access-bitlocker-recovery-keys-from-the-intune-portal-in-public-preview----2351547-----"></a>Aceder a chaves de recuperação do BitLocker a partir do portal do Intune (em pré-visualização pública) <!-- 2351547   -->  
 
-Agora pode utilizar o Intune para [ver detalhes](encryption-monitor.md#bitlocker-recovery-keys) sobre o ID da chave do BitLocker e chaves de recuperação do BitLocker, do Azure Active Directory.
+Agora pode utilizar o Intune para [ver detalhes](encryption-monitor.md#bitlocker-recovery-keys-&#40;in-public-preview&#41;) sobre o ID da chave do BitLocker e chaves de recuperação do BitLocker, do Azure Active Directory.
 
 ### <a name="microsoft-edge-support-for-intune-scenarios-on-ios-and-android-devices----3411007---"></a>Suporte do Microsoft Edge para cenários do Intune em dispositivos iOS e Android <!-- 3411007 -->
 Microsoft Edge irá suportar todos os cenários de gestão mesmo como o Intune Managed Browser com a adição de melhorias na experiência de utilizador final. As funcionalidades de enterprise do Microsoft Edge que estão ativadas por políticas do Intune incluem dual-Identity, integração de política de proteção de aplicações, integração de proxy de aplicações do Azure e gerenciados de Favoritos e os atalhos de página inicial. Para obter mais informações, consulte [suporte do Microsoft Edge](app-configuration-managed-browser.md#microsoft-edge-support).
 
+#### <a name="exchange-onlineintune-connector-deprecate-support-for-eas-only-devices---3105122------"></a>Conector do Exchange Online/Intune Preterir o suporte para apenas os dispositivos EAS <!--3105122    -->
+A consola do Intune já não suporta a visualização e gestão de dispositivos só de EAS ligado Exchane Online com o conector do Intune. Em vez disso, tem as seguintes opções:
+- Inscrever dispositivos na gestão de dispositivos móveis (MDM)
+- Utilizar políticas de proteção de aplicações do Intune para gerir os seus dispositivos
+- Utilizar controlos de Exchange, conforme descrito na [clientes e dispositivos móveis no Exchange Online](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/clients-and-mobile-in-exchange-online)
+
+### <a name="monitor-and-troubleshoot"></a>Monitorizar e resolver problemas
+
+#### <a name="support-for-additional-connectors-on-the-tenant-status-page----3617202-------"></a>Suporte para conectores adicionais na página de estado do inquilino <!-- 3617202     -->
+O [página de estado do inquilino](tenant-status.md) agora mostra informações de estado de conectores adicionais, incluindo *proteção de ameaças avançada do Windows Defender* (ATP) e outros conectores de defesa contra ameaças móveis.
+
+### <a name="role-based-access-control"></a>Controlo de acesso baseado em funções
+
+#### <a name="granting-intune-read-only-access-to-some-azure-active-directory-roles----3637917----"></a>Intune a conceder acesso de leitura apenas ao algumas funções do Azure Active Directory <!-- 3637917  -->
+Intune ler apenas o acesso foi concedido para as seguintes funções do Azure AD. Permissões concedidas com funções do Azure AD substituem as permissões concedidas com controlo de acesso baseado em funções (RBAC) do Intune.
+
+Ler apenas o acesso aos dados de auditoria do Intune:
+
+- Administrador de conformidade
+- Administrador de dados de conformidade
+
+Acesso só de leitura a todos os dados do Intune:
+
+- Administrador de Segurança
+- Operador de segurança
+- Leitor de segurança
+- Leitor global
+
+Para obter mais informações, consulte [controlo de acesso baseado em funções](role-based-access-control.md).
+
+#### <a name="scope-tags-for-ios-app-provisioning-profiles---2934430-----"></a>Etiquetas de âmbito para perfis de aprovisionamento de aplicações iOS <!--2934430   -->
+Pode adicionar uma etiqueta de âmbito para um perfil de aprovisionamento de aplicações iOS, para que apenas as pessoas com funções atribuídas também essa etiqueta de âmbito tenham acesso para o perfil de aprovisionamento de aplicações iOS. Para obter mais informações, consulte [marcas RBAC de utilização e âmbito](scope-tags.md).
+
+#### <a name="scope-tags-for-app-configuration-policies---2371891-----"></a>Etiquetas de âmbito para políticas de configuração de aplicações <!--2371891   -->
+Pode adicionar uma etiqueta de âmbito para uma política de configuração de aplicação para que apenas as pessoas com funções atribuídas também essa etiqueta de âmbito tenham acesso para a política de configuração de aplicação. A política de configuração de aplicação só pode ser direcionada para ou associada a aplicações atribuídas a mesma etiqueta de âmbito. Para obter mais informações, consulte [marcas RBAC de utilização e âmbito](scope-tags.md).
+
+
+<!-- ########################## -->
+>>>>>>> 5e7c086a04b16c159f2ddf9054c8054b4a389872
 ## <a name="week-of-february-25-2019"></a>Semana de 25 de Fevereiro de 2019
 
 ### <a name="device-configuration"></a>Configuração do dispositivo
@@ -241,25 +333,22 @@ Alterámos as etiquetas para as definições e botões para proteção de aplica
 
 As predefinições e diversas configurações permanecem os mesmos, mas esta alteração permite ao utilizador entender, navegar e utilizar as definições mais facilmente para aplicar políticas de proteção da aplicação selecionada. Para obter informações, consulte [definições do iOS](app-protection-policy-settings-ios.md) e [definições do Android](app-protection-policy-settings-android.md).
 
-#### <a name="additional-settings-for-outlook----3301182----"></a>Definições adicionais para o Outlook <!-- 3301182  -->
+### <a name="additional-settings-for-outlook----3301182----"></a>Definições adicionais para o Outlook <!-- 3301182  -->
 Agora pode configurar as seguintes definições adicionais para o Outlook para iOS e Android com o Intune:
+
 - Permitir apenas contas escolares ou profissionais a ser utilizado no Outlook no iOS e Android
 - Implementar a autenticação moderna do Office 365 e a autenticação moderna híbrida contas no local
 - Utilize `SAMAccountName` para o campo de nome de utilizador no perfil de e-mail quando a autenticação básica é seleccionada
-
-As seguintes definições são ainda a ser lançadas gradualmente e estarão disponíveis na sua consola em breve:
 - Permitir que os contactos sejam guardados
 - Configurar destinatários externos dicas de email
 - Configurar **caixa de entrada destaques**
 - Exigir biometria para acessar o Outlook para iOS
-
-A definição abaixo é apresentada na consola do Intune, mas quando configurado, não irá funcionar conforme esperado. Este problema será corrigido em breve:
 - Bloquear a imagens externas
 
 > [!NOTE]
 > Se estiver a utilizar políticas de proteção de aplicações do Intune para gerir o acesso de identidades empresariais, deve considerar a ativação não **requerem biometria**. Para obter mais informações, consulte **requerer credenciais empresariais de acesso** para [iOS as definições de acesso](app-protection-policy-settings-ios.md#access-requirements) e [definições de acesso para Android](app-protection-policy-settings-android.md#access-requirements).
 
-Para obter mais informações, consulte [definições de configuração do Microsoft Outlook](app-configuration-policies-outlook.md). 
+Para obter mais informações, consulte [definições de configuração do Microsoft Outlook](app-configuration-policies-outlook.md).
 
 #### <a name="delete-android-enterprise-apps----1352553---"></a>Eliminar as aplicações do Android Enterprise <!-- 1352553 -->
 Pode eliminar as aplicações geridas do Google Play do Microsoft Intune. Para eliminar uma aplicação do Google Play gerida, abra o Microsoft Intune no portal do Azure e selecione **aplicações de cliente** > **aplicações**. Da lista de aplicações, selecione as reticências (...) à direita da aplicação do Google Play gerida, em seguida, selecione **eliminar** na lista apresentada. Quando elimina uma aplicação do Google Play gerida da lista de aplicações, a aplicação do Google Play gerida é automaticamente não aprovada.

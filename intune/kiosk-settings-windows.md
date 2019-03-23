@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/13/2019
+ms.date: 03/11/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 78b47decc297c58feadb7cd507a3ff09070d46d4
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 0e83e371f5c3d1690cc50c6b250db8a2c3251b48
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565745"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58394959"
 ---
 # <a name="windows-10-and-later-device-settings-to-run-as-a-kiosk-in-intune"></a>Windows 10 e posteriores definições do dispositivo para ser executado como um quiosque no Intune
 
@@ -184,6 +184,8 @@ As aplicações neste modo estão disponíveis no menu Iniciar. Estas aplicaçõ
 - **Esquema de iniciar alternativa utilize**: Escolher **Sim** para introduzir um arquivo XML que descreve a forma como as aplicações são apresentadas no menu Iniciar, incluindo a ordem das aplicações. Utilize esta opção se precisar de uma personalização adicional no menu Iniciar. O artigo [Customize and export Start layout (Personalizar e exportar o esquema do menu Iniciar)](https://docs.microsoft.com/windows/configuration/customize-and-export-start-layout) fornece algumas orientações e um ficheiro XML de exemplo.
 
 - **Barra de tarefas do Windows**: Optar por **mostrar** ou **ocultar** a barra de tarefas. Por predefinição, a barra de tarefas não é mostrada. Ícones, por exemplo, o ícone de Wi-Fi, são apresentados, mas as definições não podem ser alteradas pelos usuários finais.
+
+- **Permitir o acesso à pasta transferências**: Escolher **Sim** para permitir que os utilizadores aceder à pasta de transferências no Windows Explorer. Por predefinição, o acesso para a pasta de transferências está desativado. Esta funcionalidade é frequentemente utilizada para os utilizadores finais para aceder aos itens transferidos a partir de um browser.
 
 Selecione **OK** para guardar as alterações.
 

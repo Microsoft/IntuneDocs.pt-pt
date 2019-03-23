@@ -6,28 +6,28 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 03/20/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
-ms.reviewer: aiwang
+ms.reviewer: craigma
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cca5ab88a839e782f5f4640d1d7b92395014041c
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 2d8ddb81a488ccf0cc902ccf792463144d1b0116
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57399944"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58394926"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Atribuir aplicações do Office 365 a dispositivos Windows 10 com o Microsoft Intune
 
-Este tipo de aplicação faz com que seja mais fácil atribuir aplicações do Office 365 aos dispositivos que gere que executem o Windows 10. Também poderá instalar as aplicações do cliente de ambiente de trabalho do Microsoft Project Online e do Microsoft Visio Pro para Office 365 se tiver as devidas licenças. As aplicações que quer são mostradas como uma entrada única na lista de aplicações na consola do Intune.
+Este tipo de aplicação faz com que seja mais fácil atribuir aplicações do Office 365 aos dispositivos que gere que executem o Windows 10. Também pode instalar aplicações para o cliente de ambiente de trabalho do Microsoft Project Online e o Microsoft Visio Online plano 2, se tiver licenças dos mesmos. As aplicações que quer são mostradas como uma entrada única na lista de aplicações na consola do Intune.
 
 > [!NOTE]
 > Tem de utilizar licenças do Office 365 ProPlus para ativar as aplicações do Office 365 ProPlus implementadas através do Microsoft Intune. De momento, o Intune não suporta o Office 365 Empresas.
@@ -55,18 +55,25 @@ Este tipo de aplicação faz com que seja mais fácil atribuir aplicações do O
 5. Selecione **Adicionar**.
 6. No painel **Adicionar aplicações**, na lista **Tipo de aplicação**, em **Conjunto de Aplicações do Office 365**, selecione **Windows 10**.
 
-Agora pode configurar o conjunto de aplicações.
+## <a name="select-settings-format"></a>Selecione o formato das definições
 
-## <a name="configure-the-app-suite"></a>Configurar o conjunto de aplicações
+Pode escolher um método para configurar a definição de aplicação ao selecionar uma **formato das definições de**. As opções de formato de definição incluem:
+- Estruturador de configuração
+- Introduzir dados XML
 
-Selecione as aplicações do Office que quer atribuir aos dispositivos.
+Quando escolhe **estruturador de configuração** a **Adicionar aplicação** painel será alterado para oferecer duas opções de configurações adicionais:
+- Configurar o conjunto de aplicações
+- Definições do conjunto de aplicações
 
-1. No painel **Adicionar Aplicação**, selecione **Configurar Conjunto de Aplicações**.
-2. No painel **Configurar Conjunto de Aplicações**, selecione as aplicações padrão do Office que quer atribuir aos dispositivos.  
-    Além disso, poderá instalar aplicações do cliente de ambiente de trabalho do Microsoft Project Online e do Microsoft Visio Pro para Office 365 se tiver as devidas licenças.
-3. Selecione **OK**.
+<img alt="Add Office 365 - Configuration designer" src="./media/apps-add-office365/apps-add-office365-02.png" width="700">
 
-## <a name="configure-app-information"></a>Configurar as informações da aplicação
+Quando escolhe **introduzir dados XML** a **Adicionar aplicação** painel com a exibição do **introduzir dados XML** opção. Selecione esta opção para apresentar os **ficheiro de configuração** painel. 
+
+![Adicionar o estruturador de configuração do Office 365](./media/apps-add-office365/apps-add-office365-01.png)
+    
+Para obter mais informações sobre o **introduzir dados XML** opção, consulte [introduzir dados XML](apps-add-office365.md#enter-xml-format) abaixo.
+
+## <a name="configure-app-suite-information"></a>Configurar as informações do conjunto de aplicações
 
 Neste passo, vai fornecer as informações acerca do conjunto de aplicações. Estas informações ajudam-no a identificar o conjunto de aplicações no Intune e também ajudam os utilizadores a encontrá-lo no portal da empresa.
 
@@ -85,9 +92,18 @@ Neste passo, vai fornecer as informações acerca do conjunto de aplicações. E
     - **Logótipo**: O logótipo do Office 365 é apresentado com a aplicação quando os utilizadores procurarem no portal da empresa.
 3. Selecione **OK**.
 
-## <a name="configure-app-settings"></a>Configurar as definições da aplicação
+## <a name="configure-app-suite"></a>Configurar o conjunto de aplicações
 
-Neste passo, configure as opções de instalação do conjunto de aplicações. As definições aplicam-se a todas as aplicações que adicionou ao conjunto.
+Se tiver selecionado o **estruturador de configuração** opção no **formato de definição** caixa suspensa, verá o **configurar conjunto de aplicações** opção o **adicionar aplicação** painel. Selecione as aplicações do Office que quer atribuir aos dispositivos.
+
+1. No painel **Adicionar Aplicação**, selecione **Configurar Conjunto de Aplicações**.
+2. No painel **Configurar Conjunto de Aplicações**, selecione as aplicações padrão do Office que quer atribuir aos dispositivos.  
+    Além disso, pode instalar as aplicações para o cliente de ambiente de trabalho do Microsoft Project Online e o Microsoft Visio Online plano 2, se tiver licenças dos mesmos.
+3. Selecione **OK**.
+
+## <a name="configure-app-suite-settings"></a>Configurar as definições do conjunto de aplicações
+
+Se tiver selecionado o **estruturador de configuração** opção no **formato de definição** caixa suspensa, verá o **definições do conjunto de aplicações** opção o **Adicionar aplicação**  painel. Neste passo, configure as opções de instalação do conjunto de aplicações. As definições aplicam-se a todas as aplicações que adicionou ao conjunto.
 
 1. No painel **Adicionar Aplicação**, selecione **Definições do Conjunto de Aplicações**.
 2. No painel **Definições do Conjunto de Aplicações**, faça o seguinte:
@@ -111,6 +127,10 @@ Neste passo, configure as opções de instalação do conjunto de aplicações. 
     - **Utilizar a ativação de computadores partilhados**: Selecione esta opção quando vários usuários compartilham um computador. Para obter mais informações, veja [Overview of shared computer activation for Office 365](https://docs.microsoft.com/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus)(Descrição geral da ativação de computadores partilhados para o Office 365).
     - **Idiomas**: Office é instalado automaticamente em qualquer um dos idiomas suportados que estão instalados com o Windows no dispositivo do utilizador final. Selecione esta opção se quiser instalar idiomas adicionais no conjunto de aplicações. <p></p>
     Pode implementar idiomas adicionais para aplicações do Office 365 Pro Plus geridas através do Intune. A lista de idiomas disponíveis inclui o **Tipo** do pacote de idiomas (núcleo, parcial e verificação). No portal do Azure, selecione **Microsoft Intune** > **Aplicações do cliente** > **Aplicações** > **Adicionar**. Na lista **Tipo de aplicação**, no painel **Adicionar aplicação**, selecione **Windows 10** em **Office 365 Suite**. Selecione **Idiomas** no painel **Definições do Conjunto de Aplicações**. Para obter informações adicionais, veja [Descrição geral da implementação de idiomas no Office 365 ProPlus](https://docs.microsoft.com/deployoffice/overview-of-deploying-languages-in-office-365-proplus).
+
+## <a name="enter-xml-format"></a>Introduzir formato de XML
+
+Se tiver selecionado o **introduzir dados XML** opção no **formato de definição** caixa suspensa, verá o **formato XML introduza** opção o **Adicionar aplicação**painel. Para obter mais informações, consulte [opções de configuração para a ferramenta de implementação do Office](https://docs.microsoft.com/DeployOffice/configuration-options-for-the-office-2016-deployment-tool).
 
 ## <a name="finish-up"></a>Concluir
 

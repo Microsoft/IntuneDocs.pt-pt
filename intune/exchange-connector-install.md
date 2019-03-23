@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/15/2019
+ms.date: 03/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1fcfc225d9945ecfd370468e2d48b8d9d448ffac
-ms.sourcegitcommit: b085121bf1fc56b636aefe47caeabd1d4ee96ea1
+ms.openlocfilehash: deb3e57876dffdc19129a5d845872d90d5833aaf
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58221498"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58394700"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune"></a>Configurar o Exchange connector do Intune no local no Microsoft Intune
 As informações neste artigo irão ajudá-lo a instalar e, em seguida, monitorizar o conector do Exchange Active Sync no local para o Intune.  Utilizar o Exchange connector do Intune no local com o seu [políticas de acesso condicional para permitir ou bloquear o acesso ao seu Exchange no local caixas de correio](conditional-access-exchange-create.md). 
@@ -169,12 +169,13 @@ Poderá ter de reinstalar um conector do Exchange. Uma vez que um único conecto
 
 ## <a name="monitor-the-exchange-connector-activity"></a>Monitorizar a atividade do conector do Exchange
 
-Após a configuração com êxito dos Exchange Connectors, pode ver o estado das ligações e a última tentativa de sincronização efetuada com êxito. Para validar as ligações ao Exchange Connector:
+Depois de configurar o conector do Exchange com êxito, pode ver o estado de ligações e a última tentativa de sincronização efetuada com êxito. Para validar a ligação de conector do Exchange:
 
 1. No Dashboard do Intune, escolha **acesso ao Exchange**.
-2. Sob **programa de configuração**, selecione **conector do Exchange online** para verificar o estado da ligação para cada conector do Exchange.
+2. Selecione **Exchange no local acesso** para verificar o estado da ligação para cada conector do Exchange.
 
 Também pode ver a data e hora da última tentativa de sincronização efetuada com êxito.
+--> 
 
 ### <a name="system-center-operations-manager-management-pack"></a>Pacote de gestão do System Center Operations Manager
 
@@ -187,10 +188,11 @@ Um conector do Exchange no local sincroniza automaticamente os registos de dispo
 
    - **Sincronização completa** ocorre uma vez por dia, por predefinição. Uma sincronização completa obtém informações do dispositivo para todos os utilizadores direcionados ao acesso condicional do Exchange no local e com licença do Intune. Uma sincronização completa obtém também informações do servidor do Exchange e garante que a configuração especificada pelo Intune no portal do Azure está atualizada no servidor do Exchange. 
 
+
 Pode forçar a execução de uma sincronização por parte do conector ao utilizar as opções de **Sincronização Rápida** ou **Sincronização Completa** no dashboard do Intune com os seguintes passos:
 
    1. No dashboard do Intune, escolha **acesso ao Exchange**.
-   2. Sob **programa de configuração**, escolha **conector do Exchange online**.
+   2. Selecione **Exchange no local acesso**.
    3. Selecione o conector que pretende sincronizar e, em seguida, selecione **Sincronização Rápida** ou **Sincronização Completa**.
 
 ## <a name="next-steps"></a>Passos Seguintes

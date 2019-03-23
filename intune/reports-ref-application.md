@@ -6,7 +6,7 @@ keywords: Armazém de Dados do Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 03/19/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 39052860cefc562700608beda7f42c4146ccdf34
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: d47d7a52a212733955d441b463ef66d89f8d9143
+ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566034"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58358192"
 ---
 # <a name="reference-for-application-entities"></a>Referência para as entidades de aplicações
 
@@ -128,17 +128,5 @@ A entidade **MobileAppInstallState** representa o estado de instalação de uma 
 | AppInstallState | Valor Enum do estado de instalação da aplicação. |
 | AppInstallStateName | Nome do estado de instalação da aplicação. |
 
-## <a name="mobileappdeviceuserinstallstatus"></a>MobileAppDeviceUserInstallStatus
 
-A entidade **MobileAppDeviceUserInstallStatus** representa um estado de instalação da aplicação móvel de um determinado dispositivo e utilizador.
-
-
-|      Propriedade      |                                                         Descrição                                                         |
-|--------------------|-----------------------------------------------------------------------------------------------------------------------------|
-|      DateKey       |                                  A chave da data quando o estado de instalação da aplicação foi registado.                                  |
-|       AppKey       |                             A chave da aplicação móvel que serve para identificar uma instância de AppRevision.                              |
-|     DeviceKey      |                              A chave de um dispositivo de destino que serve para identificar uma instância de Dispositivo.                               |
-|      UserKey       |                                A chave de um dispositivo de destino que serve para identificar uma instância de Utilizador.                                 |
-| AppInstallStateKey |                     A chave do estado de instalação da aplicação que serve para identificar uma instância de MobileAppInstallState.                     |
-|     Código de erro      | O código de erro devolvido pelo instalador de aplicações, pela plataforma móvel ou pelo serviço relativo à instalação da aplicação. |
 
