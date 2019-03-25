@@ -262,8 +262,6 @@ items:
       href: device-profile-android-teamviewer.md
     - name: Reposição do PIN do Windows 10
       href: device-windows-pin-reset.md
-    - name: Install Exchange service connector (Instalar o conector do serviço do Exchange)
-      href: exchange-service-connector-configure.md
     - name: Sincronizar o dispositivo
       href: device-sync.md
     - name: Examinar o inventário de dispositivos
@@ -329,6 +327,11 @@ items:
       href: education-settings-configure.md
     - name: Shared multi-user devices (Dispositivos multiutilizador partilhados)
       href: shared-user-device-settings.md
+    - name: Mobility Extensions on Zebra devices (Extensões de Mobilidade em dispositivos Zebra)
+      href: android-zebra-mx-overview.md
+      items:
+      - name: StageNow logs and common issues (Registos StageNow e problemas comuns)
+        href: android-zebra-mx-logs-troubleshoot.md
     - name: Monitorizar as despesas de telecomunicações
       href: telecom-expenses-monitor.md
     - name: Definições personalizadas do dispositivo
@@ -854,8 +857,6 @@ items:
             href: reports-ref-user-timeline.md
           - name: Referência para as entidades de aplicações
             href: reports-ref-application.md
-          - name: Referência para a entidade do utilizador atual
-            href: reports-ref-current-user.md
           - name: Referência para a entidade Date
             href: reports-ref-date.md
           - name: Referência para as entidades de dispositivos
@@ -946,9 +947,9 @@ items:
       href: data-outside-protect.md
     - name: Impedir fugas de dados em dispositivos não geridos
       href: data-leak-prevention.md
-ms.openlocfilehash: 2a7f7b7a1d1c56cf316362ef8dc2693343e64955
-ms.sourcegitcommit: 768430b5296573c6e007ae4e13d57aeda4be4b7e
+ms.openlocfilehash: f342d2ce12fb45db49cf06263807ed4a155fba55
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
 ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58306864"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58394685"
