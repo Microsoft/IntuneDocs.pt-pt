@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/04/2019
+ms.date: 03/25/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 75137c4a9f58e1b851435cd7319d84a47478b8af
-ms.sourcegitcommit: c4258bb5824daf3f7e0ac3bb8afc539bde4d95da
+ms.openlocfilehash: 51a2f862a53476a825bfb1a61a6f115c883eba18
+ms.sourcegitcommit: aab39bf86707ccaef45fd6527fff4f1c89336710
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "57991173"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58429724"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune autónomo - gestão de aplicações do Win32
 
@@ -118,9 +118,9 @@ Tal como uma aplicação de linha de negócio (LOB), pode adicionar uma aplicaç
 2.  Adicione a linha de comandos de instalação completa para instalar a aplicação. 
 
     Por exemplo, se o seu nome de ficheiro de aplicação é **MyApp123**, adicione o seguinte:<br>
-    `msiexec /i “MyApp123.msi”`<p>
-    E, se o aplicativo for `ApplicationName.exe`, o comando seria o nome da aplicação seguido o argruments de comando (comutadores) suportado pelo pacote. Tal como:<br>
-    'ApplicationName.exe /quite'<br>
+    `msiexec /p “MyApp123.msp”`<p>
+    E, se o aplicativo for `ApplicationName.exe`, o comando seria o nome da aplicação seguido o argruments de comando (comutadores) suportado pelo pacote. <br>Por exemplo:<br>
+    `ApplicationName.exe /quite`<br>
     No comando acima, o `ApplicaitonName.exe` empacotar suporta o `/quite` argrument de comando.<p> Para o agruments específicos suportados pelo pacote de aplicação, contacte o fornecedor da aplicação.
 
 3.  Adicione a linha de comandos de desinstalação completa para desinstalar a aplicação com base no GUID da aplicação. 

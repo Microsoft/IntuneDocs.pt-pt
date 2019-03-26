@@ -18,15 +18,15 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1a812a0ec11c4e577e2ed0c7e4aeb702601ceeaf
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 3e67e9deb77d1f479107c5d3e43cd602ae6eab80
+ms.sourcegitcommit: aab39bf86707ccaef45fd6527fff4f1c89336710
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57397479"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58429745"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Atualização da IU para aplicações de utilizadores finais do Intune
-Saiba que atualizações efetuámos à IU das aplicações que os seus utilizadores finais irão ver com esta versão do Microsoft Intune. Compreender estas atualizações poderá ajudá-lo com as comunicações aos utilizadores e na atualização da documentação que tenha criado para dar suporte à sua implementação. Também pode ajudá-lo a compreender melhor como resolver os problemas que os seus utilizadores estão a experienciar se ligarem para o suporte técnico para obterem suporte sobre como utilizar o Portal da Empresa.  
+Saiba que atualizações efetuámos à interface do usuário (IU) para aplicações que aos utilizadores finais irão ver com esta versão do Microsoft Intune. Compreender estas atualizações pode ajudá-lo com as comunicações de utilizador e a atualizar qualquer documentação personalizada que criou para suportar a sua implementação. Também pode ajudar a compreender como melhor resolver quaisquer problemas que os utilizadores está a enfrentar se ligarem para o suporte técnico para obter suporte através do Portal da empresa.  
 
 Para obter mais informações sobre como utilizar a aplicação Portal da empresa, consulte a [documentação de ajuda de utilizador do Portal da empresa](https://docs.microsoft.com/intune-user-help/).  
 
@@ -34,7 +34,7 @@ Para obter mais informações sobre como utilizar a aplicação Portal da empres
 
 ## <a name="week-of-february-19-2019"></a>Semana de 19 de Fevereiro de 2019  
 ### <a name="new-app-categories-screen-in-the-company-portal-app-for-windows-10---3834780-wnready4review---"></a>Novo ecrã de categorias de aplicação na aplicação Portal da empresa para Windows 10<!-- 3834780 WNready4Review -->  
-Um ecrã novo chamado **categorias de aplicações** foi adicionado para melhorar a experiência de navegação e a seleção de aplicação no Portal da empresa para Windows 10. Os utilizadores irão ver agora as aplicações ordenadas em categorias, como **em destaque**, **educação**, e **produtividade**. Esta alteração apareça em versões do Portal da empresa 10.3.3451.0 e mais tarde. Para obter mais informações sobre como obter aplicações no Portal da empresa, consulte [instalar e partilhar aplicações no seu dispositivo](/intune-user-help/install-apps-cpapp-windows).  
+Um ecrã novo chamado **categorias de aplicações** foi adicionado para melhorar a experiência de navegação e a seleção de aplicação no Portal da empresa para Windows 10. Os utilizadores irão ver agora as aplicações ordenadas em categorias de aplicações, tal como **em destaque**, **educação**, e **produtividade**. Esta alteração apareça em versões do Portal da empresa 10.3.3451.0 e mais tarde. Para obter mais informações sobre como obter aplicações no Portal da empresa, consulte [instalar e partilhar aplicações no seu dispositivo](/intune-user-help/install-apps-cpapp-windows).  
 
 
 ![Captura de ecrã do Portal da empresa para Windows 10, ecrã de categorias de aplicação.](./media/1902_CP_app_categories.png)   
@@ -55,7 +55,7 @@ Enquanto administrador do Microsoft Intune, pode carregar uma imagem de marca pe
 ## <a name="week-of-august-27-2018"></a>Semana de 27 de agosto de 2018  
 
 ### <a name="new-user-experience-update-for-the-company-portal-website---2000968---"></a>Nova atualização de experiência de utilizador para o site do Portal da empresa <!--2000968 -->  
-Adicionámos novas funcionalidades ao site do Portal da Empresa com base no feedback dos clientes. Irá ver uma melhoria significativa na facilidade de utilização e nas funcionalidades existentes nos seus dispositivos. Algumas áreas do site &ndash; tais como detalhes do dispositivo, feedback e suporte e descrição geral do dispositivo &ndash; receberam uma nova estrutura moderna e reativa. A [documentação do site do Portal da Empresa do Intune](https://docs.microsoft.com/intune-user-help/using-the-intune-company-portal-website) foi atualizada para refletir estas alterações.   
+Com base nos comentários dos clientes, adicionámos novas funcionalidades para o site do Portal da empresa. Irá ver uma melhoria significativa na facilidade de utilização e nas funcionalidades existentes nos seus dispositivos. Áreas do site, tais como os detalhes do dispositivo, comentários e suporte e descrição geral do dispositivo, que tenhas recebido um design de nova, Moderno, capacidade de resposta. A [documentação do site do Portal da Empresa do Intune](https://docs.microsoft.com/intune-user-help/using-the-intune-company-portal-website) foi atualizada para refletir estas alterações.   
 
 Verá algumas das atualizações que se seguem:  
 
@@ -75,13 +75,13 @@ Verá algumas das atualizações que se seguem:
 ## <a name="week-of-july-16-2018"></a>Semana de 16 de julho de 2018  
 
 ### <a name="more-opportunities-to-sync-in-the-company-portal-app-for-windows"></a>Mais oportunidades de sincronização na aplicação Portal da Empresa para Windows   
-Agora a aplicação Portal da Empresa para Windows permite-lhe iniciar uma sincronização a partir do menu Iniciar e da barra de tarefas do Windows. Esta funcionalidade é especialmente útil se a sua tarefa for sincronizar dispositivos e obter acesso a recursos da empresa. Para aceder à nova funcionalidade, clique com o botão direito do rato no ícone do Portal da Empresa que está afixado à barra de tarefas ou menu Iniciar. Nas opções do menu (também conhecido como lista de atalhos), selecione **Sincronizar este dispositivo**. O Portal da Empresa será aberto na página **Definições** e irá iniciar a sincronização.  
+Agora a aplicação Portal da Empresa para Windows permite-lhe iniciar uma sincronização a partir do menu Iniciar e da barra de tarefas do Windows. Esta funcionalidade é especialmente útil se a sua tarefa for sincronizar dispositivos e obter acesso a recursos da empresa. Para acessar o novo recurso, com o botão direito a empresa ícone portal afixado sua barra de tarefas ou **iniciar** menu. Nas opções do menu (também conhecido como lista de atalhos), selecione **Sincronizar este dispositivo**. O Portal da Empresa será aberto na página **Definições** e irá iniciar a sincronização.  
 
 ![Captura de ecrã a mostrar a barra de tarefas do Windows no ambiente de trabalho de um dispositivo. Alguém clicou no ícone de programa da aplicação Portal da Empresa para mostrar um menu com as opções "Afixar na barra de tarefas", "Fechar janela" e "Sincronizar este dispositivo".](./media/sync-device-from-start-menu-1807.png)  
 
 ### <a name="new-browsing-experiences-in-the-company-portal-app-for-windows"></a>Novas experiências de navegação na aplicação Portal da Empresa para Windows  
 
-Ao navegar ou procurar aplicações na aplicação Portal da Empresa para Windows, pode alternar entre a vista **Mosaicos** existente e a vista **Detalhes** recentemente adicionada. A nova vista apresenta os detalhes das aplicações, como o nome, o publicador, a data de publicação e o estado da instalação.  
+Agora quando procurando ou pesquisando para aplicações na aplicação Portal da empresa para Windows, pode alternar entre o existente **mosaicos** modo de exibição e a nova **detalhes** vista. Esta nova vista lista detalhes como nome, publicador, data de publicação e o estado da instalação da aplicação.  
 
 A vista **Instalado** da página **Aplicações** permite-lhe ver detalhes sobre as instalações de aplicações concluídas e em curso.  
 

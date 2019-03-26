@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0e83e371f5c3d1690cc50c6b250db8a2c3251b48
-ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
+ms.openlocfilehash: 55a0cb45cd3e3a8e367b0bff7bd8e856b02af953
+ms.sourcegitcommit: aab39bf86707ccaef45fd6527fff4f1c89336710
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58394959"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58429696"
 ---
 # <a name="windows-10-and-later-device-settings-to-run-as-a-kiosk-in-intune"></a>Windows 10 e posteriores definições do dispositivo para ser executado como um quiosque no Intune
 
@@ -176,6 +176,7 @@ As aplicações neste modo estão disponíveis no menu Iniciar. Estas aplicaçõ
 
       Selecione **OK** para guardar as alterações.
 
+    - **AutoLaunch**: Opcional. Escolha uma aplicação para AutoLaunch quando o utilizador inicia sessão. Apenas um único aplicativo pode ser AutoLaunched.
     - **Mosaico tamanho**: Necessário. Escolha um tamanho de mosaico da aplicação: Pequeno, Médio, Largo ou Grande.
 
   > [!TIP]

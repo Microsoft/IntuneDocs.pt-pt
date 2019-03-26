@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5612ae0ea6c1495fdf12e85bbed80e54bc3f287f
-ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
+ms.openlocfilehash: a34cf1ec89165821e853b00be1fd8c83717767e2
+ms.sourcegitcommit: aab39bf86707ccaef45fd6527fff4f1c89336710
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58394648"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58429679"
 ---
 # <a name="in-development-for-microsoft-intune---march-2019"></a>No desenvolvimento do Microsoft Intune – Março de 2019
 
@@ -57,19 +57,40 @@ Poderá adicionar uma etiqueta de âmbito a uma política de configuração de a
 Poderá atribuir perfis do Autopilot ao grupo virtual Todos os dispositivos. Para o fazer, selecione **Inscrição de dispositivos** > **Inscrição do Windows** > **Perfis de Implementação** > selecione um perfil >  **Atribuições** > em **Atribuir a**, selecione **Todos os dispositivos**. Para obter mais informações sobre perfis do Autopilot, veja [Inscrever dispositivos Windows com o Windows AutoPilot](enrollment-autopilot.md).
 
 ###  <a name="block-users-from-scanning-for-windows-updates-------3316758------"></a>Impedir que os utilizadores a analisar as atualizações do Windows    <!-- 3316758    -->
-Estamos a adicionar uma novo Windows cadência de atualização que pode utilizar a definição que irá impedir que os utilizadores a analisar as atualizações do Windows. Esta definição não estará disponível a partir do portal, mas pode ser configurada utilizando a Graph API do Intune.
+Estamos a adicionar uma novo Windows anel definição de atualização que pode utilizar para impedir que os utilizadores a analisar as atualizações do Windows. Esta definição não estará disponível a partir do portal, mas pode ser configurada utilizando a Graph API do Intune.
 
 ### <a name="windows-update-notifications-----3316782---"></a>Notificações de atualização do Windows  <!-- 3316782 -->
-Estamos a adicionar suporte para as configurações de anel de atualização do Windows para que possa configurar as notificações de atualização do Windows que os seus utilizadores verão. Esta definição não estará disponível a partir do portal, mas pode ser configurada utilizando a Graph API do Intune.
+Estamos a adicionar suporte para as configurações de anel de atualização do Windows para que possa configurar as notificações de atualização do Windows, que os seus utilizadores verão. Esta definição não estará disponível a partir do portal, mas pode ser configurada utilizando a Graph API do Intune.
 
 ### <a name="changes-to-company-portal-enrollment-for-ios-12-device-users---3448635---"></a>Alterações para a inscrição no Portal da empresa para os utilizadores de dispositivos iOS 12 <!--3448635 -->  
-Portal da empresa para iOS irão atualizar ecrãs de inscrição da aplicação e os passos para se alinhar com as alterações de inscrição de MDM lançadas no Apple iOS 12.2. O fluxo de trabalho atualizado vai agora pedir aos utilizadores:
+Portal da empresa para iOS irá atualizar os ecrãs de inscrição da aplicação e as etapas para se alinhar com as alterações de inscrição de MDM lançadas no Apple iOS 12.2. O fluxo de trabalho atualizado vai agora pedir aos utilizadores:
 
-- Permita o Safari abrir o site do Portal da empresa (por meio do Safari) e transferir o perfil de gestão antes de retornar para a aplicação Portal da empresa. 
+- Permita o Safari abrir o site do Portal da empresa (por meio do Safari) e transferir o perfil de gestão antes de retornar para a aplicação Portal da empresa.
 - Abra a aplicação de definições para instalar o perfil de gestão no respetivo dispositivo.
-- Regressar à aplicação Portal da empresa que conclua a inscrição.  
+- Regressar à aplicação Portal da empresa que conclua a inscrição.
 
 Para obter mais informações sobre como pode preparar para estas alterações, consulte a [post de Comunidade tecnológica da Microsoft](https://aka.ms/CP_changes_iOS12). Entretanto, para suportar as novas inscrições iOS no Portal da empresa, atualizámos os passos em [inscrever o dispositivo de iOS no Intune](https://docs.microsoft.com/en-us/intune/ios-enroll). Estas alterações de documento será em direto depois Apple versões iOS versão 12.2. 
+
+### <a name="support-for-additional-connectors-on-the-tenant-status-page----3617202-------"></a>Suporte para conectores adicionais na página de estado do inquilino <!-- 3617202     -->
+A página de estado do inquilino irá apresentar informações do Estado de conectores adicionais, incluindo *a proteção de ameaças avançada do Windows Defender* (ATP) e outros conectores de defesa contra ameaças móveis.
+
+### <a name="granting-intune-read-only-access-to-some-azure-active-directory-roles----3637917---"></a>Intune a conceder acesso de leitura apenas ao algumas funções do Azure Active Directory <!-- 3637917 -->
+Podemos irá conceder que acesso só para as seguintes funções do Azure AD de leitura do Intune. Permissões concedidas com funções do Azure AD substituem as permissões concedidas com controlo de acesso baseado em funções (RBAC) do Intune.
+
+Ler apenas o acesso aos dados de auditoria do Intune:
+
+- Administrador de conformidade
+- Administrador de dados de conformidade
+
+Acesso só de leitura a todos os dados do Intune:
+
+- Administrador de Segurança
+- Operador de segurança
+- Leitor de segurança
+- Leitor global
+
+### <a name="easier-access-to-diagnostic-settings------3804627-----"></a>Facilitar o acesso às definições de diagnóstico   <!-- 3804627   -->
+Estamos a adicionar uma nova opção para o **registos de auditoria** painel em cada carga de trabalho do Log de auditoria na consola do Intune que pode utilizar para abrir diretamente a *das definições de diagnóstico* página.
 
 ### <a name="create-and-use-device-configuration-profiles-on-android-zebra-devices-in-intune----3895244----"></a>Criar e utilizar perfis de configuração do dispositivo em dispositivos das riscas das Android no Intune <!-- 3895244  -->
 O Intune suportará a configuração de dispositivos das riscas das Android. Especificamente, poderá: 

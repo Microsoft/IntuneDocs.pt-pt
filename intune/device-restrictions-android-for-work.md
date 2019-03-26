@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4610f99d9190ddad01ab604195e086e407e7161a
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 493a5be89e747c2de1eca3a63907b79228fcdfa2
+ms.sourcegitcommit: aab39bf86707ccaef45fd6527fff4f1c89336710
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566323"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58429759"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Definições de dispositivos do Android Enterprise para permitir ou restringir funcionalidades com o Intune
 
@@ -108,7 +108,7 @@ Utilize estas definições para configurar uma experiência de estilo de local p
   >   - [Adicionado como uma aplicação de cliente](apps-add-android-for-work.md) no Intune
   >   - [Atribuído ao grupo de dispositivos](apps-deploy.md) criado para os seus dispositivos dedicados
   > 
-  > O **geridos tela home page** aplicação não é necessário para estar no perfil de configuração, mas é necessário para ser adicionado como uma aplicação de cliente. Quando o **geridos tela home page** aplicação é adicionada como uma aplicação de cliente, todas as outras aplicações que adiciona no perfil de configiration são apresentadas como ícones no o **geridos tela home page** aplicação. 
+  > O **geridos tela home page** aplicação não é necessário para estar no perfil de configuração, mas é necessário para ser adicionado como uma aplicação de cliente. Quando o **geridos tela home page** aplicação é adicionada como uma aplicação de cliente, todas as outras aplicações que adiciona no perfil de configuração são apresentadas como ícones no **geridos tela home page** aplicação. 
 
   - Escolher **adicionar**e selecione as suas aplicações na lista.
 

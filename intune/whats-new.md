@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f7a35104982998c00e0fc653dc04e23051a46dc5
-ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
+ms.openlocfilehash: d73d96d2246c89e014bd75f9b3b48493d3ac11fb
+ms.sourcegitcommit: aab39bf86707ccaef45fd6527fff4f1c89336710
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58394850"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58429770"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -103,14 +103,12 @@ Aplica-se a:
 ### <a name="device-management"></a>Gestão de dispositivos
 
 #### <a name="encryption-report-for-windows-10-devices-in-public-preview---2351538---"></a>Relatório de encriptação para dispositivos do Windows 10 (em pré-visualização pública)<!-- 2351538 -->  
-
-Utilizar a nova [relatório de encriptação (pré-visualização)](encryption-monitor.md#encryption-report-&#40;in-public-preview&#41;) para ver detalhes sobre o estado de encriptação dos seus dispositivos Windows 10. Detalhes disponíveis incluem uma versão do TPM de dispositivos, preparação de encriptação e o estado, o relatório de erros e mais.  
+Utilizar a nova [relatório de encriptação (pré-visualização)](encryption-monitor.md) para ver detalhes sobre o estado de encriptação dos seus dispositivos Windows 10. Detalhes disponíveis incluem uma versão do TPM de dispositivos, preparação de encriptação e o estado, o relatório de erros e mais.  
 
 #### <a name="access-bitlocker-recovery-keys-from-the-intune-portal-in-public-preview----2351547-----"></a>Aceder a chaves de recuperação do BitLocker a partir do portal do Intune (em pré-visualização pública) <!-- 2351547   -->  
+Agora pode utilizar o Intune para [ver detalhes](encryption-monitor.md) sobre o ID da chave do BitLocker e chaves de recuperação do BitLocker, do Azure Active Directory.
 
-Agora pode utilizar o Intune para [ver detalhes](encryption-monitor.md#bitlocker-recovery-keys-&#40;in-public-preview&#41;) sobre o ID da chave do BitLocker e chaves de recuperação do BitLocker, do Azure Active Directory.
-
-### <a name="microsoft-edge-support-for-intune-scenarios-on-ios-and-android-devices----3411007---"></a>Suporte do Microsoft Edge para cenários do Intune em dispositivos iOS e Android <!-- 3411007 -->
+#### <a name="microsoft-edge-support-for-intune-scenarios-on-ios-and-android-devices----3411007---"></a>Suporte do Microsoft Edge para cenários do Intune em dispositivos iOS e Android <!-- 3411007 -->
 Microsoft Edge irá suportar todos os cenários de gestão mesmo como o Intune Managed Browser com a adição de melhorias na experiência de utilizador final. As funcionalidades de enterprise do Microsoft Edge que estão ativadas por políticas do Intune incluem dual-Identity, integração de política de proteção de aplicações, integração de proxy de aplicações do Azure e gerenciados de Favoritos e os atalhos de página inicial. Para obter mais informações, consulte [suporte do Microsoft Edge](app-configuration-managed-browser.md#microsoft-edge-support).
 
 #### <a name="exchange-onlineintune-connector-deprecate-support-for-eas-only-devices---3105122------"></a>Conector do Exchange Online/Intune Preterir o suporte para apenas os dispositivos EAS <!--3105122    -->
@@ -149,9 +147,9 @@ Pode adicionar uma etiqueta de âmbito para um perfil de aprovisionamento de apl
 #### <a name="scope-tags-for-app-configuration-policies---2371891-----"></a>Etiquetas de âmbito para políticas de configuração de aplicações <!--2371891   -->
 Pode adicionar uma etiqueta de âmbito para uma política de configuração de aplicação para que apenas as pessoas com funções atribuídas também essa etiqueta de âmbito tenham acesso para a política de configuração de aplicação. A política de configuração de aplicação só pode ser direcionada para ou associada a aplicações atribuídas a mesma etiqueta de âmbito. Para obter mais informações, consulte [marcas RBAC de utilização e âmbito](scope-tags.md).
 
+### <a name="microsoft-edge-support-for-intune-scenarios-on-ios-and-android-devices----3411007---"></a>Suporte do Microsoft Edge para cenários do Intune em dispositivos iOS e Android <!-- 3411007 -->
+Microsoft Edge irá suportar todos os cenários de gestão mesmo como o Intune Managed Browser com a adição de melhorias à experiência de utilizador final. As funcionalidades de enterprise do Microsoft Edge que estão ativadas por políticas do Intune incluem dual-Identity, integração de política de proteção de aplicações, integração de proxy de aplicações do Azure e gerenciados de Favoritos e os atalhos de página inicial. Para obter mais informações, consulte [suporte do Microsoft Edge](app-configuration-managed-browser.md#microsoft-edge-support).
 
-<!-- ########################## -->
->>>>>>> 5e7c086a04b16c159f2ddf9054c8054b4a389872
 ## <a name="week-of-february-25-2019"></a>Semana de 25 de Fevereiro de 2019
 
 ### <a name="device-configuration"></a>Configuração do dispositivo
