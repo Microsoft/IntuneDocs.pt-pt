@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 03/26/2019
 ms.topic: tutorial
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4692e19d657e19efe18a91273ce585eb59c6cb65
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 17638838e049e5940b1b59019be6573b7eb09d64
+ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57528280"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58490664"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-unmanaged-devices"></a>Tutorial: Proteger o e-mail do Exchange Online em dispositivos não geridos
 
@@ -91,8 +91,8 @@ Agora, vamos criar duas políticas de acesso condicional para cobrir todas as pl
 5.  Em **Atribuições**, selecione **Condições** > **Plataformas de dispositivos**.
      
     1. Em **Configurar**, selecione **Sim**.
-    2. Sobre o **inclusão** separador, selecione **todas as plataformas (incluindo as não suportadas)**. 
-    3. Selecione **Done** (Concluído).
+    2. Sobre o **inclusão** separador, selecione **qualquer dispositivo**.
+    1. Selecione **Done** (Concluído).
    
 6.  Sobre o **condições** painel, selecione **aplicações de cliente**.
      
@@ -136,7 +136,7 @@ Agora, vamos criar duas políticas de acesso condicional para cobrir todas as pl
 5.  Em **Atribuições**, selecione **Condições** > **Plataformas de dispositivos**.
      
     1. Em **Configurar**, selecione **Sim**.
-    2. No separador **Incluir**, selecione **Todas as plataformas (incluindo as não suportadas)** e, em seguida, selecione **Concluído**. 
+    2. Sobre o **inclusão** separador, selecione **todos os dispositivos**e, em seguida, selecione **feito**. 
     3. Selecione **Concluído** novamente.
 
 6.  Sobre o **condições** painel, selecione **aplicações de cliente**.

@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d8e5c8996aecb11666fca13c6e032ccad1a1e0a7
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 0bd6e7f37a2e3b10371dead97e849834b39ba06f
+ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57397972"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58490574"
 ---
 # <a name="monitor-the-security-baseline-and-profile-in-microsoft-intune"></a>Monitorizar a base de segurança e o perfil no Microsoft Intune
 
@@ -50,6 +50,9 @@ Ao monitorar a linha de base, obtenha informações sobre o estado de segurança
     - **Não corresponde à linha de base**: Pelo menos uma definição na linha de base não corresponde as definições recomendadas.
     - **Configurado incorretamente**: Pelo menos uma definição não está corretamente configurada. Este estado significa que a definição está num conflito, erro ou o estado pendente.
     - **Não aplicável**: Pelo menos uma definição não é aplicável e não é aplicada.
+    
+> [!NOTE]
+> Se um dispositivo tem definições em múltiplos Estados, o dispositivo é classificado pela seguinte ordem de precedência de: **Configurado incorretamente**, **não corresponde à linha de base**, **não aplicável**, **linha de base de correspondências**.
 
 4. Selecione um dos Estados de que tem dispositivos. Por exemplo, selecione o **Misconfigured** estado.
 

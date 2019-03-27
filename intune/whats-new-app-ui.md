@@ -6,7 +6,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 02/22/2019
+ms.date: 03/26/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,24 +18,26 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3e67e9deb77d1f479107c5d3e43cd602ae6eab80
-ms.sourcegitcommit: aab39bf86707ccaef45fd6527fff4f1c89336710
+ms.openlocfilehash: 1b3d48789773c655ee7c836b211859528d394d56
+ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58429745"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58490704"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Atualização da IU para aplicações de utilizadores finais do Intune
-Saiba que atualizações efetuámos à interface do usuário (IU) para aplicações que aos utilizadores finais irão ver com esta versão do Microsoft Intune. Compreender estas atualizações pode ajudá-lo com as comunicações de utilizador e a atualizar qualquer documentação personalizada que criou para suportar a sua implementação. Também pode ajudar a compreender como melhor resolver quaisquer problemas que os utilizadores está a enfrentar se ligarem para o suporte técnico para obter suporte através do Portal da empresa.  
+Saiba mais sobre as atualizações mais recentes para as aplicações do Microsoft Intune. Adicionamos regularmente para e melhorar a aplicação Portal da empresa do Intune e o Web site. Se for um administrador do Intune ou pessoa de suporte, este artigo fornece as informações que necessárias para:
 
-Para obter mais informações sobre como utilizar a aplicação Portal da empresa, consulte a [documentação de ajuda de utilizador do Portal da empresa](https://docs.microsoft.com/intune-user-help/).  
+* Os alunos e funcionários a alterações de aplicação e a inscrição de alertas.
+* Atualize os procedimentos de documentação ou suporte técnico da sua organização.  
+
+Se for um funcionário ou aluno, certifique-se de que consulta as capturas de ecrã e ligações para documentação de ajuda do Portal da empresa. Para obter mais informações sobre como utilizar a aplicação Portal da empresa, consulte a [documentação de ajuda de utilizador do Portal da empresa](https://docs.microsoft.com/intune-user-help/).  
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
 
 ## <a name="week-of-february-19-2019"></a>Semana de 19 de Fevereiro de 2019  
 ### <a name="new-app-categories-screen-in-the-company-portal-app-for-windows-10---3834780-wnready4review---"></a>Novo ecrã de categorias de aplicação na aplicação Portal da empresa para Windows 10<!-- 3834780 WNready4Review -->  
-Um ecrã novo chamado **categorias de aplicações** foi adicionado para melhorar a experiência de navegação e a seleção de aplicação no Portal da empresa para Windows 10. Os utilizadores irão ver agora as aplicações ordenadas em categorias de aplicações, tal como **em destaque**, **educação**, e **produtividade**. Esta alteração apareça em versões do Portal da empresa 10.3.3451.0 e mais tarde. Para obter mais informações sobre como obter aplicações no Portal da empresa, consulte [instalar e partilhar aplicações no seu dispositivo](/intune-user-help/install-apps-cpapp-windows).  
-
+Um ecrã novo chamado **categorias de aplicações** foi adicionado para melhorar a experiência de navegação e a seleção de aplicação no Portal da empresa para Windows 10. Os utilizadores irão ver agora as aplicações ordenadas em categorias, como **em destaque**, **educação**, e **produtividade**. Esta alteração apareça em versões do Portal da empresa 10.3.3451.0 e mais tarde. Para obter mais informações sobre a instalação de aplicações no Portal da empresa, consulte [instalar e partilhar aplicações no seu dispositivo](/intune-user-help/install-apps-cpapp-windows).  
 
 ![Captura de ecrã do Portal da empresa para Windows 10, ecrã de categorias de aplicação.](./media/1902_CP_app_categories.png)   
 
@@ -48,14 +50,12 @@ Os utilizadores finais poderão agora para realizar as ações de aplicações e
 ## <a name="week-of-october-22-2018"></a>Semana de 22 de outubro de 2018
 
 ### <a name="add-custom-brand-image-for-company-portal-app----1916266---"></a>Adicionar imagem de marca personalizada para a aplicação Portal da empresa <!-- 1916266 -->
-Enquanto administrador do Microsoft Intune, pode carregar uma imagem de marca personalizada que será apresentada como uma imagem de fundo na página de perfil do utilizador, na aplicação Portal da Empresa para iOS. Para obter mais informações sobre como configurar a aplicação Portal da Empresa, veja [Como configurar a aplicação Portal da Empresa do Microsoft Intune](company-portal-app.md).
-
-
+Enquanto administrador do Microsoft Intune, pode carregar uma imagem de marca personalizada que será apresentada como uma imagem de fundo na página de perfil do utilizador, na aplicação Portal da Empresa para iOS. Para obter mais informações sobre como configurar a aplicação Portal da Empresa, veja [Como configurar a aplicação Portal da Empresa do Microsoft Intune](company-portal-app.md).  
 
 ## <a name="week-of-august-27-2018"></a>Semana de 27 de agosto de 2018  
 
 ### <a name="new-user-experience-update-for-the-company-portal-website---2000968---"></a>Nova atualização de experiência de utilizador para o site do Portal da empresa <!--2000968 -->  
-Com base nos comentários dos clientes, adicionámos novas funcionalidades para o site do Portal da empresa. Irá ver uma melhoria significativa na facilidade de utilização e nas funcionalidades existentes nos seus dispositivos. Áreas do site, tais como os detalhes do dispositivo, comentários e suporte e descrição geral do dispositivo, que tenhas recebido um design de nova, Moderno, capacidade de resposta. A [documentação do site do Portal da Empresa do Intune](https://docs.microsoft.com/intune-user-help/using-the-intune-company-portal-website) foi atualizada para refletir estas alterações.   
+Adicionámos novas funcionalidades ao site do Portal da Empresa com base no feedback dos clientes. Irá ver uma melhoria significativa na facilidade de utilização e nas funcionalidades existentes nos seus dispositivos. Áreas específicas de site, como os detalhes do dispositivo, comentários e suporte e descrição geral do dispositivo, agora tem um design de nova, Moderno, capacidade de resposta. A [documentação do site do Portal da Empresa do Intune](https://docs.microsoft.com/intune-user-help/using-the-intune-company-portal-website) foi atualizada para refletir estas alterações.   
 
 Verá algumas das atualizações que se seguem:  
 
@@ -493,24 +493,14 @@ Saiba como planeamos melhorar a experiência de utilizador através da atualiza�
 > [!Note]
 > Tenha em atenção que as imagens abaixo podem ser pré-visualizações e que o produto anunciado poderá ser diferente das versões apresentadas.
 
-### <a name="ui-iwp"></a>Nova atualização de experiência de utilizador para o site do Portal da empresa <!--2000968-->
+### <a name="changes-to-company-portal-enrollment-for-ios-12-device-users---3448635-eeready-eestaged--"></a>Alterações para a inscrição no Portal da empresa para os utilizadores de dispositivos iOS 12 <!--3448635 EEready eestaged-->  
 
-A partir de agosto, vamos apresentar uma nova experiência do site do Portal da Empresa, com atualizações à UI, fluxos de trabalho simplificados e melhorias de acessibilidade. Isto inclui melhorias orientadas para o cliente, como a partilha de aplicações e o desempenho global melhorado, para lhe oferecer uma experiência mais simples.
+A aplicação Portal da empresa para iOS irá atualizar os ecrãs de inscrição e os passos para se alinhar com as alterações de inscrição de MDM lançadas no Apple iOS 12.2. A nova experiência de inscrição irá pedir aos utilizadores para:  
+* Permita o Safari abrir o site do Portal da empresa (por meio do Safari) e transferir o perfil de gestão antes de retornar para a aplicação Portal da empresa.  
+* Abra a aplicação de definições para instalar o perfil de gestão no respetivo dispositivo.  
+* Regressar à aplicação Portal da empresa que conclua a inscrição.  
 
-Adicionámos algumas funcionalidades novas com base no seu feedback, que irão melhorar significativamente a facilidade de utilização e as funcionalidades existentes:
-
--   Melhorias na IU do site
--   Capacidade de partilhar ligações diretas para as aplicações
-- Desempenho melhorado para grandes catálogos de aplicações
-
-Não precisa de tomar medidas para se preparar para esta alteração. Vamos informá-lo quando o site Portal da Empresa atualizado estiver disponível para si. No entanto, poderá ter que atualizar os documentos de utilizador final com capturas de ecrã atualizadas. Tenha em atenção que também poderá ter de atualizar a documentação da aplicação Portal da Empresa relativa a dispositivos iOS, uma vez que o site aborda a secção **Aplicações** da aplicação iOS.  
-
-### <a name="ui-updates-to-the-company-portal-website---1313244-part-2--"></a>Atualizações da interface do Usuário para o site do Portal da empresa <!--1313244 part 2-->
-
-__Atualização das Aplicações em Destaque__: adicionámos ao site uma página dedicada em que os utilizadores podem procurar aplicações que optaram por destacar e otimizámos a IU da secção Destaques na home page.
-
-![Os mosaicos coloridos que mostram as aplicações. São grandes quadrados coloridos abaixo de cada aplicação. As cores destes quadrados são extraídas da cor principal do logótipo da respetiva aplicação. A secção "Aplicações em Destaque" é apresentada na parte superior da aplicação Portal da Empresa.](./media/cp_win10_colorful_tiles_after_1708.png)
-
+ Iremos atualizar a sequência de inscrição e mensagens no ecrã de texto de acordo com essa experiência. Para obter mais informações sobre como pode preparar os utilizadores de dispositivos para que essas alterações, consulte a [post de Comunidade tecnológica da Microsoft](https://aka.ms/CP_changes_iOS12). Entretanto, para suportar as novas inscrições iOS no Portal da empresa, atualizámos os passos em [inscrever o dispositivo de iOS no Intune](https://docs.microsoft.com/intune/ios-enroll).   
 
 
 ### <a name="see-also"></a>Consulte também

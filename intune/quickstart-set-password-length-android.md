@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/09/2018
+ms.date: 03/26/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 62ae0c7b9a00c3e07bb49261ca1a20bd5ef5db15
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 02050dc3cd1047a38e9be78a9e37be0bd313be26
+ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57397284"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58490567"
 ---
 # <a name="quickstart-create-a-password-compliance-policy-for-android-devices"></a>Início rápido: Criar uma política de conformidade de palavra-passe para dispositivos Android
 
@@ -49,7 +49,8 @@ Neste guia de início rápido, irá utilizar o Intune para exigir aos utilizador
 3. Em **Plataforma**, selecione **Android**. 
 4. Selecione **Definições** > **Segurança do Sistema** para apresentar o painel **Segurança do Sistema** Android.
 5. Clique em **Exigir** junto a **Exigir uma palavra-passe para desbloquear os dispositivos móveis**.
-6. Introduza o algarismo **6** junto a **Comprimento mínimo da palavra-passe**. 
+6. Selecione **, pelo menos, numérica** junto a **tipo de palavra-passe obrigatório**.
+7. Introduza o algarismo **6** junto a **Comprimento mínimo da palavra-passe**. 
 
     ![Captura de ecrã da criação de um grupo no Microsoft Intune](media/quickstart-set-password-length-android/quickstart-set-password-length-android-01.png)
 

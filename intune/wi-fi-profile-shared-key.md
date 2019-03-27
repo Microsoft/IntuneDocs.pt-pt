@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/20/2019
+ms.date: 03/26/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6fb5cd74e52e15fd3b1d34b6f4737deffe8425c9
-ms.sourcegitcommit: 768430b5296573c6e007ae4e13d57aeda4be4b7e
+ms.openlocfilehash: 7bf859075e675ef0205b24e0575fca5ab74f312c
+ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58306833"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58490633"
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key---intune"></a>Utilizar um perfil de dispositivo personalizado para criar um perfil Wi-Fi com uma chave pré-partilhada – Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -115,9 +115,9 @@ xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
         <useOneX>false</useOneX>
       </authEncryption>
       <sharedKey>
-        <keyType>networkKey</keyType>
+        <keyType>passPhrase</keyType>
         <protected>false</protected>
-        <keyMaterial>MyPassword</keyMaterial>
+        <keyMaterial>password</keyMaterial>
       </sharedKey>
       <keyIndex>0</keyIndex>
     </security>

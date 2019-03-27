@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/20/2019
+ms.date: 03/26/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5edc528abf5c3cb58200e2d0511fac3220cfad11
-ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
+ms.openlocfilehash: 36476820805c00cefafcd9f64dd2f08a014762c0
+ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58395254"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58490546"
 ---
-# <a name="use-stagenow-logs-to-troubleshoot-and-see-potential-issues-on-android-zebra-devices-in-microsoft-intune"></a>Utilizar StageNow registos para resolver e ver problemas potenciais em dispositivos das riscas das Android no Microsoft Intune
+# <a name="troubleshoot-and-see-potential-issues-on-android-zebra-devices-in-microsoft-intune"></a>Resolver problemas e ver problemas potenciais em dispositivos das riscas das Android no Microsoft Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-No Microsoft Intune, pode utilizar [ **as riscas das mobilidade extensões (MX)** para gerir as riscas das Android dispositivos](android-zebra-mx-overview.md). Ao utilizar dispositivos as riscas das, criar perfis no StageNow para gerir as definições e carregá-los para o Intune. O Intune utiliza a aplicação de StageNow para aplicar as definições nos dispositivos. A aplicação de StageNow também cria um ficheiro de registo detalhado no dispositivo que é utilizado para resolver.
+No Microsoft Intune, pode utilizar [extensões de mobilidade as riscas das (MX) para gerir as riscas das Android dispositivos](android-zebra-mx-overview.md). Ao utilizar dispositivos as riscas das, criar perfis no StageNow para gerir as definições e carregá-los para o Intune. O Intune utiliza a aplicação de StageNow para aplicar as definições nos dispositivos. A aplicação de StageNow também cria um ficheiro de registo detalhado no dispositivo que é utilizado para resolver.
 
 Esta funcionalidade aplica-se a:
 
@@ -36,13 +36,28 @@ Esta funcionalidade aplica-se a:
 
 Por exemplo, criar um perfil no StageNow para configurar um dispositivo. Quando cria o perfil de StageNow, a última etapa gera um ficheiro para testar o perfil. Consumir este ficheiro com a aplicação de StageNow no dispositivo.
 
-Noutro exemplo, criar um perfil no StageNow e testá-lo. No Intune, adicionar o perfil de StageNow e, em seguida, atribuí-la para os seus dispositivos as riscas das. Ao verificar o estado do perfil atribuído, o perfil mostra um Estado de alto nível. Pretende obter mais detalhes.
+Noutro exemplo, criar um perfil no StageNow e testá-lo. No Intune, adicionar o perfil de StageNow e, em seguida, atribuí-la para os seus dispositivos as riscas das. Ao verificar o estado do perfil atribuído, o perfil mostra um Estado de alto nível.
 
 Em ambos os casos, pode obter mais detalhes do ficheiro de registo StageNow, que é guardado no dispositivo sempre que um perfil de StageNow aplica-se.
 
-Este artigo mostra-lhe como ler os logs de StageNow e lista alguns possíveis problemas com dispositivos as riscas das.
+Alguns problemas não estão relacionados com o conteúdo do perfil StageNow e não são apresentados nos registos.
+
+Este artigo mostra-lhe como ler os logs de StageNow e apresenta uma lista de alguns outros problemas potenciais com dispositivos das riscas das que não podem ser apresentados nos registos.
 
 [Utilizar e gerir as riscas das dispositivos com as riscas das extensões de mobilidade](android-zebra-mx-overview.md) tem mais informações sobre esta funcionalidade.
+
+## <a name="get-the-logs"></a>Obter os registos
+
+### <a name="use-the-stagenow-app-on-the-device"></a>Utilizar a aplicação de StageNow no dispositivo
+Quando testar um perfil diretamente usando StageNow no seu computador, em vez de usar [Intune para implementar o perfil](android-zebra-mx-overview.md#step-4-create-a-device-management-profile-in-stagenow), a aplicação de StageNow no dispositivo guarda os registos do teste. Para obter o ficheiro de registo, utilize o **(...) mais**  opção na aplicação StageNow no dispositivo.
+
+### <a name="get-logs-using-android-debug-bridge"></a>Obter registos com Bridge de depuração do Android
+Para obter os registos, depois do perfil já tenha sido implementado com o Intune, ligue o dispositivo a um computador com [Bridge de depuração do Android (adb)](https://developer.android.com/studio/command-line/adb) (abre o site da web do Android).
+
+No dispositivo, os registos são guardados em `/sdcard/Android/data/com.microsoft.windowsintune.companyportal/files`
+
+### <a name="get-logs-from-email"></a>Obter registos do e-mail
+Para obter os registos, depois do perfil já tenha sido implementado com o Intune, os utilizadores finais pode enviar um e-mail, os registos através de uma aplicação de e-mail no dispositivo. No dispositivo as riscas das, abra a aplicação do Portal da empresa, e [enviar os registos](https://docs.microsoft.com/intune-user-help/send-logs-to-your-it-admin-by-email-android). Utilizar a funcionalidade de registos de envio também cria um PowerLift incidentes ID, que pode referenciar se contactar o suporte da Microsoft.
 
 ## <a name="read-the-logs"></a>Leia os registos
 
@@ -112,9 +127,9 @@ O registo mostra um erro, porque contém um `<characteristic-error>` marca. Nest
 </wap-provisioningdoc>
 ```
 
-## <a name="potential-issues-with-zebra-devices"></a>Potenciais problemas com dispositivos as riscas das
+## <a name="other-potential-issues-with-zebra-devices"></a>Outros problemas potenciais com os dispositivos as riscas das
 
-Esta secção lista os possíveis problemas que poderão ocorrer ao utilizar dispositivos das riscas com o administrador de dispositivos.
+Esta seção apresenta uma lista de outros possíveis problemas que poderá ver quando utilizar dispositivos as riscas com o administrador de dispositivos. Esses problemas não são reportados nos registos StageNow.
 
 ### <a name="android-system-webview-is-out-of-date"></a>Android System WebView está desatualizada
 

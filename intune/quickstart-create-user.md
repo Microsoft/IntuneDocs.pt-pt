@@ -6,19 +6,19 @@ author: ErikjeMS
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.topic: quickstart
-ms.date: 10/30/2018
+ms.date: 03/25/2019
 ms.author: erikje
 ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 98c71bd4c93e869b429b7677b4fb7c442aa58643
-ms.sourcegitcommit: c4258bb5824daf3f7e0ac3bb8afc539bde4d95da
+ms.openlocfilehash: ed34b8bdd91057e64f72c68166c15b89fa80c187
+ms.sourcegitcommit: 9af102e1232d9a568a7901783c30ba9905e64d99
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "57991087"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58477099"
 ---
 # <a name="quickstart-create-a-user-and-assign-a-license-to-it"></a>Início rápido: Criar um utilizador e atribuir uma licença ao mesmo
 

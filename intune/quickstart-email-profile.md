@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/29/2018
+ms.date: 03/26/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c0c96ffdabca3a29b2e0ac5d0a26d5e23b0dabda
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: b5f78c2b47bb916fd06492175b688afd17297384
+ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57390440"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58490681"
 ---
 # <a name="quickstart-create-an-email-device-profile-for-ios"></a>Início rápido: Criar um perfil de e-mail de dispositivos para iOS
 
@@ -33,7 +33,7 @@ Se não tiver uma subscrição do Intune, [inscreva-se numa conta de avaliação
 
 ## <a name="sign-in-to-intune"></a>Iniciar sessão no Intune
 
-Inicie sessão no [Intune](https://aka.ms/intuneportal) enquanto Administrador Global ou Administrador de Serviços do Intune. O Intune encontra-se no portal do Azure. Para aceder ao Intune, selecione **Todos os serviços** > **Intune**.
+Inicie sessão no [Intune](https://aka.ms/intuneportal) enquanto Administrador Global ou Administrador de Serviços do Intune. Se criou uma Subscrição de avaliação do Intune, a conta com a qual criou a subscrição é de Administrador global.
 
 ## <a name="create-an-ios-email-profile"></a>Criar um perfil de e-mail para iOS
 1. No Intune, selecione **Configuração do dispositivo** e, em seguida, selecione **Perfis**.

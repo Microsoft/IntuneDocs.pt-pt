@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/18/2019
+ms.date: 03/26/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ffcec5adb5a57309ca2eb47291fa35acf98f6e94
-ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
+ms.openlocfilehash: aa2734247569245794bce7fe1de68c8b20c6091f
+ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58395258"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58490609"
 ---
 # <a name="use-and-manage-zebra-devices-with-zebra-mobility-extensions-in-microsoft-intune"></a>Utilizar e gerir as riscas das dispositivos com as riscas das extensões de mobilidade no Microsoft Intune
 
@@ -107,6 +107,13 @@ Quando cria o perfil no StageNow, no último passo, selecione **exportar para o 
 > É recomendado para testar o perfil antes de implementar em dispositivos na sua organização. Para testar, no último passo durante a criação de perfis com StageNow no seu computador, utilize o **testar** opções. Em seguida, consuma o ficheiro gerado pelo StageNow com a aplicação de StageNow no dispositivo. 
 > 
 > A aplicação de StageNow no dispositivo mostra logs gerados quando testar o perfil. [Registos de utilização StageNow em dispositivos das riscas com Android no Intune](android-zebra-mx-logs-troubleshoot.md) tem informações sobre como utilizar os registos de StageNow para compreender os erros.
+
+> [!NOTE]
+> Se fazer referência a aplicações, pacotes de atualização ou atualizar outros ficheiros no seu perfil StageNow, quer o dispositivo para obter estas atualizações. Para obter as atualizações, o dispositivo tem de ligar ao servidor de implantação de StageNow quando o perfil é aplicado. 
+> 
+> Em alternativa, pode utilizar as funcionalidades incorporadas no Intune para obter essas alterações, incluindo: 
+> - Funcionalidades de gestão de aplicações para [adicione](apps-add.md), [implementar](apps-deploy.md), atualizar, e [monitor](apps-monitor.md) aplicações.
+> - Gerir [atualizações de sistema e aplicação](device-restrictions-android-for-work.md#device-owner-only) em dispositivos com o Android Enterprise
 
 Depois de testar o ficheiro, a próxima etapa é implementar o perfil para dispositivos com o Intune.
 

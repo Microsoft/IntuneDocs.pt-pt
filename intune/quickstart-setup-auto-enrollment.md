@@ -6,19 +6,19 @@ author: ErikjeMS
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.topic: quickstart
-ms.date: 11/05/2018
+ms.date: 03/25/2019
 ms.author: erikje
 ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 810adbf06ddcd0aabb5c758f6a71c898116a9cee
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: f54c0c0d184fcc67fea001fd236ded3c1e998e7b
+ms.sourcegitcommit: 9af102e1232d9a568a7901783c30ba9905e64d99
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57394321"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58477116"
 ---
 # <a name="quickstart-set-up-automatic-enrollment-for-windows-10-devices"></a>Início rápido: Configurar a inscrição automática para dispositivos Windows 10
 

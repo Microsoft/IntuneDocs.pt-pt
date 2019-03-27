@@ -18,18 +18,20 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9ad953049b9d2efd6f7a828ee70b5e1cede4ee68
-ms.sourcegitcommit: d0749cbc68df41893742f5187ac378a5ade824f2
+ms.openlocfilehash: c9f1e7bbbad243e37f34cb298466adf886be9273
+ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58406253"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58490592"
 ---
-# <a name="encrypt-your-android-device"></a>Encriptar o seu dispositivo Android
+# <a name="encrypting-your-android-device"></a>Encriptar o seu dispositivo Android
 
 Encriptação de dispositivos protege seus ficheiros e pastas contra acesso não autorizado se o dispositivo é perdido ou roubado. Depois de ativar a encriptação de dispositivos, apenas indivíduos com a palavra-passe correta ou o pin será capazes de iniciar sessão no seu dispositivo. 
 
 Antes de poder aceder a recursos escolares ou profissionais, sua organização poderá exigir que encripte o seu dispositivo Android. Alguns dispositivos Android mais recentes são criptografados por padrão, out-of-the-box.  
+
+## <a name="turn-on-encryption"></a>Ativar a criptografia
 
 Se receber uma mensagem no Portal da empresa que tem de encriptar o seu dispositivo, conclua os passos seguintes. 
 

@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/13/2019
+ms.date: 03/26/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 44f7c5b897dc1aedfe8ffc23c25ea479eceb35e5
-ms.sourcegitcommit: 464cf677e3746eaba46836dedfb94572a75032f9
+ms.openlocfilehash: 5106a4f147828310fc1b4a41ef4065d10bdaeecf
+ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58330500"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58490731"
 ---
 # <a name="ios-device-settings-to-allow-or-restrict-features-using-intune"></a>definições de dispositivos iOS para permitir ou restringir funcionalidades com o Intune
 
@@ -158,7 +158,7 @@ Estas definições são adicionadas a um perfil de configuração do dispositivo
 - **Compras na aplicação**: Escolher **bloco** para impedir que as compras na aplicação da loja. **Não configurado** permite compras na loja uma aplicação em execução.
 - **Conteúdo de música, podcast ou notícias do explícito do iTunes (apenas supervisionado)**: Escolher **bloco** para impedir que o conteúdo de música, podcast ou notícias explícito do iTunes. **Não configurado** permite que o dispositivo aceda ao conteúdo classificado como conteúdo para adultos na loja.
 - **Transferir conteúdos da iBook store identificados como "Erótico"**: Escolher **bloco** para impedir que os utilizadores de deixar de transferir o suporte de dados a partir da iBook store que é identificada como erótica. **Não configurado** permite ao utilizador transferir livros da categoria "Erótico".
-- **Ver documentos empresariais em aplicações não geridas**: **Bloco** impede a ver documentos não empresariais em aplicações não geridas. **Não configurado** permite que os documentos empresariais sejam vistos em qualquer aplicação. Por exemplo, pretende impedir que os utilizadores guardar ficheiros a partir da aplicação OneDrive no Dropbox. Configurar esta definição como **bloco**. Depois do dispositivo receber a política (por exemplo, após um reinício), já não permite a guardar.
+- **Ver documentos empresariais em aplicações não geridas**: **Bloco** impede a ver documentos empresariais em aplicações não geridas. **Não configurado** permite que os documentos empresariais sejam vistos em qualquer aplicação. Por exemplo, pretende impedir que os utilizadores guardar ficheiros a partir da aplicação OneDrive no Dropbox. Configurar esta definição como **bloco**. Depois do dispositivo receber a política (por exemplo, após um reinício), já não permite a guardar.
   - **Permitir que aplicações geridas escrever contactos para contas de não-gerenciado contactos**: Quando definido como **permitir**, os utilizadores podem adicionar ou sincronizar Outlook informações de contacto qualquer pessoa, incluindo empresas e contactos de empresa, para a aplicação incorporada de contactos no dispositivo. Quando definido como **não configurado**, os utilizadores não é possível adicionar a contatos do Outlook para a aplicação incorporada de contactos no dispositivo.
   
     Para utilizar esta definição, defina o **ver documentos empresariais em aplicações não geridas** definição **bloco**.
@@ -255,7 +255,7 @@ Adicionar aplicações para estas listas, pode:
   Esta funcionalidade aplica-se a:  
   - iOS 11.0 e posterior
 
-- **Hotspot pessoal**: **Bloco** impede que o dispositivo a ser utilizado como um hotspot pessoal. Esta definição poderá não ser compatível com algumas operadoras. **Não configurado** (predefinição) permite que esta funcionalidade.
+- **Hotspot pessoal**: **Bloco** se desligar a hotspot pessoal no dispositivo dos utilizadores com cada sincronização do dispositivo. Esta definição poderá não ser compatível com algumas operadoras. **Não configurado** (predefinição) mantém a configuração de hotspot pessoal, como o padrão definido pelo utilizador.
 - **Junte-se a redes Wi-Fi apenas com perfis de configuração (apenas supervisionados)**: **Exigir** força o dispositivo para utilizar apenas as redes Wi-Fi configuradas através de perfis de configuração do Intune. **Não configurado** (predefinição) permite que o dispositivo utilizar a outras redes Wi-Fi.
 - **Regras de utilização de rede móvel (apenas aplicações geridas)**: Defina os dados de tipos de aplicações geridas podem utilizar em redes de celular. As opções são:
   - **Bloquear a utilização de dados via rede móvel**: Bloquear a utilizar dados via rede móvel para **todas as aplicações geridas** ou **escolher aplicações específicas**.
