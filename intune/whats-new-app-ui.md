@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1b3d48789773c655ee7c836b211859528d394d56
-ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
+ms.openlocfilehash: dc7d806624ca75f2570f46b1f3e0606a6878dcb3
+ms.sourcegitcommit: d38ca1bf44e17211097aea481e00b6c1e87effae
 ms.translationtype: MT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 03/27/2019
-ms.locfileid: "58490704"
+ms.locfileid: "58514446"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Atualização da IU para aplicações de utilizadores finais do Intune
 Saiba mais sobre as atualizações mais recentes para as aplicações do Microsoft Intune. Adicionamos regularmente para e melhorar a aplicação Portal da empresa do Intune e o Web site. Se for um administrador do Intune ou pessoa de suporte, este artigo fornece as informações que necessárias para:
@@ -500,7 +500,7 @@ A aplicação Portal da empresa para iOS irá atualizar os ecrãs de inscrição
 * Abra a aplicação de definições para instalar o perfil de gestão no respetivo dispositivo.  
 * Regressar à aplicação Portal da empresa que conclua a inscrição.  
 
- Iremos atualizar a sequência de inscrição e mensagens no ecrã de texto de acordo com essa experiência. Para obter mais informações sobre como pode preparar os utilizadores de dispositivos para que essas alterações, consulte a [post de Comunidade tecnológica da Microsoft](https://aka.ms/CP_changes_iOS12). Entretanto, para suportar as novas inscrições iOS no Portal da empresa, atualizámos os passos em [inscrever o dispositivo de iOS no Intune](https://docs.microsoft.com/intune/ios-enroll).   
+ Iremos atualizar a sequência de inscrição e mensagens no ecrã de texto de acordo com essa experiência. Para obter mais informações sobre como pode preparar os utilizadores de dispositivos para que essas alterações, consulte a [post de Comunidade tecnológica da Microsoft](https://aka.ms/CP_changes_iOS12). Entretanto, para suportar as novas inscrições iOS no Portal da empresa, atualizámos os passos em [inscrever o dispositivo de iOS no Intune](https://docs.microsoft.com/en-us/intune-user-help/enroll-your-device-in-intune-ios#enroll-your-ios-device).   
 
 
 ### <a name="see-also"></a>Consulte também

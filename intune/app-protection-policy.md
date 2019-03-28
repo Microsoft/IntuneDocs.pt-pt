@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/11/2018
+ms.date: 03/26/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2fc6cba2d1088ddb367d5c47da04118aa9d6fcab
-ms.sourcegitcommit: 25e17a1d002ee1faa49bb89648eb59373528539f
+ms.openlocfilehash: d6d130892200b5592f42bae8ec5423f4b8f6f8f7
+ms.sourcegitcommit: d38ca1bf44e17211097aea481e00b6c1e87effae
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58173989"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58514388"
 ---
 # <a name="what-are-app-protection-policies"></a>O que são as políticas de proteção de aplicações?
 
@@ -51,7 +51,7 @@ As políticas de proteção de aplicações podem ser configuradas para aplicaç
 > [!IMPORTANT]
 > Pode criar políticas de gestão de aplicações móveis para as aplicações móveis do Office que se ligam aos serviços do Office 365. Também pode proteger o acesso a caixas de correio do Exchange no local ao criar políticas de proteção de aplicações do Intune para o Outlook para iOS e Android com Autenticação Moderna híbrida. Antes de utilizar esta funcionalidade, certifique-se de que cumpre os [requisitos do Outlook para iOS e Android](https://technet.microsoft.com/library/mt846639(v=exchg.160).aspx). As políticas de proteção de aplicações não são suportadas para outras aplicações que se ligam aos serviços do SharePoint ou do Exchange no local.
 
-**As vantagens importantes da utilização das políticas de proteção de aplicações**
+**As vantagens importantes da utilização de políticas de proteção de aplicação são**:
 
 -   Proteger os dados da sua empresa ao nível da aplicação. Como a gestão de aplicações móveis não requer a gestão de dispositivos, pode proteger os dados da empresa nos dispositivos geridos e não geridos. A gestão centra-se na identidade do utilizador, o que elimina a necessidade de gestão de dispositivos.
 
@@ -69,8 +69,6 @@ A utilização da MDM com políticas de proteção de aplicações tem outras va
 
 ### <a name="supported-platforms-for-app-protection-policies"></a>Plataformas suportadas das políticas de proteção de aplicações
 Suporte de plataformas de políticas do Intune app protection se alinha com suporte de plataformas de aplicações móveis do Office para dispositivos Android e iOS. Para obter detalhes, veja a secção **Aplicações móveis** de [Requisitos de Sistema do Office](https://products.office.com/office-system-requirements#coreui-contentrichblock-9r05pwg).
-
-Os dispositivos Windows não são atualmente suportados. No entanto, pode usar o Windows Information Protection, que oferece uma funcionalidade semelhante. Para mais detalhes, consulte [Protect your enterprise data using Windows Information Protection (WIP) (Proteger os seus dados empresariais com o Windows Information Protection [WIP] – em inglês)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
 
 > [!IMPORTANT]
 > O Portal da empresa do Intune é necessário no dispositivo para receber políticas de proteção de aplicações do Android. Para obter mais informações, consulte a [requisitos de aplicações de acesso do Portal da empresa do Intune](end-user-mam-apps-android.md#access-apps).

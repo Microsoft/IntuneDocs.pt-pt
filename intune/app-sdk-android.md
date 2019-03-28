@@ -5,7 +5,7 @@ keywords: SDK
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/20/2019
+ms.date: 03/26/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0a7ccc2da5fd99c3c72c8c9beb765f292e896eee
-ms.sourcegitcommit: c4258bb5824daf3f7e0ac3bb8afc539bde4d95da
+ms.openlocfilehash: 965dcfbb711eac1b38977e023d1975f4dc0e8b81
+ms.sourcegitcommit: d38ca1bf44e17211097aea481e00b6c1e87effae
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "57991178"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58514502"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Guia para programadores do SDK da Aplicação do Microsoft Intune para Android
 
@@ -832,7 +832,7 @@ void updateToken(String upn, String aadId, String resourceId, String token);
     > [!NOTE]
     > Certifique-se de que a sua aplicação utiliza a `resourceId` e `aadId` parâmetros passados para `acquireToken()` para que o token correto é obtido.
 
-    ```
+    ```java
     class MAMAuthCallback implements MAMServiceAuthenticationCallback {
         public String acquireToken(String upn, String aadId, String resourceId) {
         return mAuthContext.acquireTokenSilentSync(resourceId, ClientID, aadId).getAccessToken();
@@ -1278,7 +1278,7 @@ Todos os métodos utilizados para definir a identidade comunicam os valores de r
 |--|--|
 | SUCCEEDED | A alteração de identidade foi concluída com êxito. |
 | NOT_ALLOWED  | A alteração de identidade não é permitida. Isto ocorre quando é feita uma tentativa de definir a identidade de IU (Contexto), se estiver definida uma identidade diferente no thread atual. |
-| CANCELLED | O utilizador cancelou a alteração de identidade, geralmente ao premir o botão de retrocesso num pedido de PIN ou autenticação. |
+| CANCELLED | O utilizador cancelou a alteração de identidade, geralmente ao premir o botão Anterior num pedido de PIN ou autenticação. |
 | FAILED | A alteração de identidade falhou por um motivo não especificado.|
 
 A aplicação deve garantir que uma mudança de identidade é efetuada com êxito antes de apresentar ou utilizar dados da empresa. Atualmente, as alterações de identidade de processos e threads serão sempre concluídas com êxito numa aplicação com várias identidades. No entanto, reservamos o direito de adicionar condições de falha. A alteração de identidade da IU poderá falhar no caso de argumentos inválidos, se a mesma entrar em conflito com a identidade do thread ou se o utilizador cancelar os requisitos de início condicional (por exemplo, o utilizador prime o botão Anterior no ecrã de PIN).
@@ -1633,7 +1633,7 @@ Se uma aplicação de várias identidades se registar para a notificação `WIPE
 
 Se uma aplicação se registar para `WIPE_USER_DATA`, não terá o benefício do comportamento predefinido de eliminação seletiva por parte do SDK. Para aplicações com conhecimento de várias identidades, esta perda pode ser mais significativa, dado que a eliminação seletiva predefinida da MAM elimina apenas os ficheiros cuja identidade é visada para eliminação. Se uma aplicação com conhecimento de várias identidades pretender que a eliminação seletiva predefinida da MAM seja realizada _**e**_ pretender realizar as suas próprias ações na eliminação, esta deverá registar-se para as notificações de `WIPE_USER_AUXILIARY_DATA`. Esta notificação será enviada imediatamente pelo SDK antes de executar a eliminação seletiva predefinida do SDK. Uma aplicação nunca se deverá registar para ambos `WIPE_USER_DATA` e `WIPE_USER_AUXILIARY_DATA`.
 
-A eliminação seletiva predefinida será fechada, a aplicação concluir atividades e eliminar o processo de aplicação. Se a sua aplicação substitui a eliminação de seletive predefinida, poderá querer considerar a fechar a sua aplicação manualmente para impedir que os utilizadores acedam a dados na memória depois de ocorrer uma eliminação.
+A eliminação seletiva predefinida será fechada, a aplicação concluir atividades e eliminar o processo de aplicação. Se a sua aplicação substitui a eliminação seletiva predefinida, poderá querer considerar a fechar a sua aplicação manualmente para impedir que os utilizadores acedam a dados na memória depois de ocorrer uma eliminação.
 
 
 ## <a name="enabling-mam-targeted-configuration-for-your-android-applications-optional"></a>Ativar a configuração de MAM direcionada para aplicações Android (opcional)
@@ -1785,7 +1785,7 @@ O SDK do Intune mantém o contrato fornecido pela API Android, embora possam ser
 
 ## <a name="telemetry"></a>Telemetria
 
-O SDK da Aplicação Intune para Android não controla a coleção de dados da sua aplicação. Por predefinição, a aplicação Portal da Empresa regista os dados telemétricos. Estes dados são enviados para o Microsoft Intune. De acordo com a Política da Microsoft, não recolhemos informações pessoais (PII).
+O SDK da Aplicação Intune para Android não controla a coleção de dados da sua aplicação. Por predefinição, a aplicação Portal da empresa regista dados gerados pelo sistema. Estes dados são enviados para o Microsoft Intune. De acordo com Policy da Microsoft, que não recolhe todos os dados pessoais.
 
 > [!NOTE]
 > Se os utilizadores finais não enviarem estes dados, têm de desativar a telemetria em Definições na aplicação Portal da Empresa. Para saber mais, veja [Desativar a recolha de dados da Microsoft](https://docs.microsoft.com/intune-user-help/turn-off-microsoft-usage-data-collection-android). 

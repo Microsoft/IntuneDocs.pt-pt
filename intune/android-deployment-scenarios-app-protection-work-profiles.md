@@ -15,12 +15,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 307e3ce1b1973897a08159bdcf91e0117d58bfe8
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: cbd3b13215a58a831a15884bfe451f00a35ba379
+ms.sourcegitcommit: 94f7dc236db5995ffee7cd13c7e02794e561b532
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57392665"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58538762"
 ---
 # <a name="application-protection-policies-and-work-profiles-on-android-enterprise-devices-in-intune"></a>Proteção políticas e de trabalho de perfis de aplicação em dispositivos Android Enterprise no Intune
 
@@ -51,7 +51,7 @@ Aplicações Android individuais são habilitadas para a aplicação de diversas
 
     Para ajudar, o Intune inclui a **ferramenta de encapsulamento de aplicações** a ferramenta para aplicações Android existentes (APKs) e cria uma aplicação que reconhece as políticas de aplicações.
 
-    Para obter mais informações sobre esta ferramenta, consulte [repare aplicações de linha de negócio para políticas de proteção de aplicações](apps-prepare-mobile-application-management.md).
+    Para obter mais informações sobre esta ferramenta, consulte [preparar as aplicações de linha de negócio para políticas de proteção de aplicações](apps-prepare-mobile-application-management.md).
 
 Para ver uma lista de aplicações ativada com a aplicação, consulte [aplicações com um conjunto avançado de políticas de proteção de aplicações móveis geridas](https://www.microsoft.com/cloud-platform/microsoft-intune-apps).
 

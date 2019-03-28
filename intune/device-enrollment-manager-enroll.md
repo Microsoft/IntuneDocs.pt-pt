@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ffe5c66de5f088702bdf75ff89d96fc12818d93
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 0dacd331ead84771447168808a354db5524b5ae7
+ms.sourcegitcommit: d38ca1bf44e17211097aea481e00b6c1e87effae
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57388356"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58514355"
 ---
 # <a name="enroll-devices-in-intune-by-using-a-device-enrollment-manager-account"></a>Inscrever dispositivos no Intune ao utilizar uma conta de Gestor de inscrição de dispositivos
 
@@ -38,7 +38,8 @@ As contas de utilizador DEM e os dispositivos que estão inscritos com uma conta
   - As contas de utilizador DEM não podem utilizar aplicações Apple Volume Purchase Program (VPP) com licenças de utilizador Apple VPP devido aos requisitos do ID Apple por utilizador para a gestão de aplicações.
   - Os dispositivos podem instalar as aplicações VPP se tiverem licenças do dispositivo Apple VPP.
   - Dispositivos estão bloqueados para o acesso condicional com a exceção do Windows 10 versão 1803 +
-  - Cada dispositivo inscrito com uma conta DEM tem de ter sua própria licença de dispositivo do Intune.
+  - Todos os dispositivos inscritos com contas DEM tem de estar devidamente licenciado para serem geridos pelo Intune. A licença pode ser uma licença de utilizador do Intune ou uma licença de dispositivo do Intune.
+
 
 
 ## <a name="add-a-device-enrollment-manager"></a>Adicionar um gestor de inscrição de dispositivos

@@ -10,6 +10,7 @@ ms.date: 02/22/2019
 ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
+ms.topic: conceptual
 ms.technology: ''
 ms.assetid: 73db3070-d033-40fb-a8f1-58b9d198021e
 ms.reviewer: chrisgre
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f4af330f14b8622dd0ee977b2fa81a726845f4da
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: f75e0de7f7738c3d2c9ff9963edb9e77f9eacd08
+ms.sourcegitcommit: d38ca1bf44e17211097aea481e00b6c1e87effae
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57400165"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58514434"
 ---
 # <a name="block-apps-that-do-not-use-modern-authentication-adal"></a>Bloquear aplicações que não utilizam autenticação moderna (ADAL)
 

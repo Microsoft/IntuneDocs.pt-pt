@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 03/22/2019
+ms.date: 03/27/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4b1bf13c404fc8a0f4d7ab4bbeaf061a4cb4261d
-ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
+ms.openlocfilehash: a61bd060b5c120a73df427688865e2ee976f8f68
+ms.sourcegitcommit: 94f7dc236db5995ffee7cd13c7e02794e561b532
 ms.translationtype: MT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 03/27/2019
-ms.locfileid: "58490717"
+ms.locfileid: "58538770"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -77,6 +77,14 @@ A aplicação Microsoft Teams pode ser incluída ou excluída como parte da inst
 
 ### <a name="device-configuration"></a>Configuração do dispositivo
 
+#### <a name="automatically-start-an-app-when-running-multiple-apps-in-kiosk-mode-on-windows-10-and-later-devices----2351390---"></a>Iniciar automaticamente uma aplicação ao executar várias aplicações no modo de local público no Windows 10 e dispositivos posteriores <!-- 2351390 -->
+
+No Windows 10 e dispositivos posteriores, pode executar um dispositivo no modo de quiosque e executar muitos aplicativos. Nesta atualização, há uma **AutoLaunch** definição (**configuração do dispositivo** > **perfis** > **criar perfil**  >  **Windows 10 e posterior** para a plataforma > **quiosque** para o tipo de perfil > **quiosque de várias aplicações**). Utilize esta definição para iniciar automaticamente uma aplicação quando o utilizador inicia sessão no dispositivo.
+
+Para ver uma lista e a descrição de todas as definições de local público, consulte [Windows 10 e posteriores definições do dispositivo para ser executado como um quiosque no Intune](kiosk-settings-windows.md).
+
+Aplica-se a: Windows 10 e posterior
+
 #### <a name="operational-logs-also-show-details-on-non-compliant-devices----4063755----"></a>Registos operacionais também mostram detalhes em dispositivos não conformes <!-- 4063755  -->
 Quando inicia sessão Intune encaminhamento recursos do Azure monitor, também pode encaminhar registos operacionais. Nesta atualização, o registos operacionais também fornecem informações sobre dispositivos não conformes. 
 
@@ -87,8 +95,7 @@ Esta atualização, o Intune suporta a configuração de dispositivos das riscas
 
 - Criar um perfil de configuração do dispositivo e aplicar as definições para dispositivos as riscas das Android através de perfis de extensões de mobilidade (MX) gerados pelo StageNow (**configuração do dispositivo** > **perfis**  >  **Criar perfil** > **Android** para a plataforma).
 
-Aplica-se a:  
-- Android
+Aplica-se a: Android
 
 #### <a name="route-logs-to-azure-monitor-in-more-intune-workloads----3804627---"></a>Registos de rota para o Azure Monitor em mais cargas de trabalho do Intune <!-- 3804627 -->
 No Intune, pode encaminhar a auditoria e registos operacionais para os hubs de eventos, armazenamento e do log analytics no Azure Monitor (**Intune** > **monitorização** > **diagnóstico definições**). Nesta atualização, pode encaminhar esses logs em mais Intune cargas de trabalho, incluindo a conformidade, configurações, aplicações de cliente e muito mais. 
@@ -100,8 +107,7 @@ Esta atualização, o Intune suporta a configuração de dispositivos das riscas
 
 Para obter mais informações sobre esta funcionalidade, consulte [utilizar e gerir os dispositivos as riscas com extensões de mobilidade no Intune](android-zebra-mx-overview.md).
 
-Aplica-se a:  
-- Android
+Aplica-se a: Android
 
 ### <a name="device-management"></a>Gestão de dispositivos
 
