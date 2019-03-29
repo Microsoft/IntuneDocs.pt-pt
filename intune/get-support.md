@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/04/2019
+ms.date: 03/28/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 350ce5980cb7575a991cdc45702db95f802b4749
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: df289d84cb78f5cb08db6ca66a0db9b7443171f5
+ms.sourcegitcommit: e23e78a563928ed2b2cbc588f2aa65678f7bb409
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57461333"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58618463"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Como obter suporte para o Microsoft Intune
 
@@ -30,16 +30,14 @@ ms.locfileid: "57461333"
 
 A Microsoft fornece suporte global técnico, de pré-vendas, de faturação e de subscrição para o Microsoft Intune. O suporte está disponível tanto online como por telefone para subscrições pagas ou de avaliação. O suporte técnico online está disponível em inglês e japonês. O suporte por telefone e suporte de faturação online estão disponíveis em idiomas adicionais.
 
+Administrador de TI, pode utilizar o **ajuda e suporte** opção para enviar um pedido de suporte online para o Intune no portal do Azure. Para obter informações sobre funções do Azure AD e as permissões que são necessários para criar um pedido de suporte, consulte [funções de administrador no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal). 
+
 >[!IMPORTANT]  
 > Para obter suporte técnico para produtos de terceiros que funcionam com o Intune (como a Saaswedo, a Cisco ou a Lookout), contacte primeiro o fornecedor desse produto. Antes de abrir um pedido com o suporte do Intune, certifique-se de que configurou o outro produto corretamente.
 >
 > Para obter informações sobre a resolução de problemas relacionados com o Microsoft Intune, veja a [secção Resolução de problemas](help-desk-operators.md) da documentação do Intune.
 
-Administrador de TI, pode utilizar o **ajuda e suporte** opção para enviar um pedido de suporte online para o Intune no portal do Azure. Para criar um pedido de suporte, é necessário que seja atribuída à sua conta uma das seguintes [funções de administrador no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal):
 
-- Administrador do Intune
-- Administrador global
-- Administrador de serviços  
 
 
 ## <a name="help-and-support-experience"></a>Ajuda e suporte a experiência

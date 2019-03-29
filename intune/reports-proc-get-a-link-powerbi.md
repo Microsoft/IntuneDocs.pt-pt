@@ -6,7 +6,7 @@ keywords: Armazém de Dados do Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/20/2018
+ms.date: 03/28/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a3342eec0ea9797f4ce21b53e589ff4f427d03bb
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5b93bb9911fa93998e443a797d085a568280c278
+ms.sourcegitcommit: e23e78a563928ed2b2cbc588f2aa65678f7bb409
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57564810"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58618506"
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>Estabelecer uma ligação ao Armazém de Dados com o Power BI
 
@@ -57,7 +57,7 @@ O ficheiro do Power BI (pbix) contém informações de ligação para o seu inqu
 > Cada ficheiro do Power BI (pbix) poderá ser diferente consoante a localização do inquilino. Se estiver a gerir múltiplos inquilinos do Intune, certifique-se de que utiliza o ficheiro transferido a partir do portal do Azure enquanto tem sessão iniciada nesse inquilino.  
 
 1.  Inicie sessão no portal do Azure e selecione **Monitorização + Gestão** > **Intune**. Também pode procurar recursos para o **Intune**.  
-2.  Abra o painel **API do Armazém de Dados do Microsoft Intune (Pré-visualização)**.
+2.  Abra o **definir o armazém de dados do Intune** painel.
 3.  Selecione **Transferir o ficheiro do Power BI**. O ficheiro com uma extensão (pbix) será transferido para a localização que especificar.
 4.  Abra o ficheiro com o Power BI. Os *Relatórios do Armazém de Dados do Intune* são carregados, mas poderão demorar um momento a obter os dados do seu inquilino.
 5.  Selecione **Atualizar** para carregar os seus dados de inquilino e rever os relatórios.
@@ -68,7 +68,7 @@ O ficheiro do Power BI (pbix) contém informações de ligação para o seu inqu
 Com um cliente autenticado no Azure AD, o URL de OData liga-se ao ponto final RESTful na API do Armazém de Dados que expõe o modelo de dados ao seu cliente de relatórios. Siga estas instruções para utilizar o Power BI Desktop para ligar e criar os seus próprios relatórios. Não está limitado ao Power BI Desktop, mas pode utilizar a sua ferramenta de análise favorita com o URL de OData fornecido. O cliente suporta autenticações OAUTH2.0 e OData v4.0 Standard.
 
 1.  Inicie sessão no portal do Azure e selecione **Monitorização + Gestão** > **Intune**. Também pode procurar recursos para o **Intune**.  
-2.  Abra o painel **API do Armazém de Dados do Microsoft Intune (Pré-visualização)**.
+2.  Abra o **definir o armazém de dados do Intune** painel.
 3. Obtenha o URL de feed personalizado no painel de relatórios, por exemplo `https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`
 4. Abra o **Power BI Desktop**.
 5. Selecione **Base** > **Obter Dados**. Selecione **Feed OData**.

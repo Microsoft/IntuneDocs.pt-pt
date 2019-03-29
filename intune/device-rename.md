@@ -16,20 +16,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fdd5a19d46cd6081e5671ddd84e29bf7db2ef538
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 8dfdc3641d583fc045346034ee8543feff1e7cbf
+ms.sourcegitcommit: 1144247aa7f042eb1b99d8fd8dd17b909eae38c5
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57398958"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58567562"
 ---
 # <a name="rename-a-windows-device-in-intune"></a>Mudar o nome de um dispositivo Windows no Intune
 
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-O **mudança de nome de dispositivo** ação permite-lhe mudar o nome de um dispositivo Windows pertencentes à empresa, que está inscrito no Intune. Isto altera o nome do dispositivo no Intune, bem como no dispositivo. 
+O **mudança de nome de dispositivo** ação permite-lhe mudar o nome de um dispositivo Windows pertencentes à empresa, que está inscrito no Intune. O nome do dispositivo for alterado no Intune e no dispositivo. 
 
+Esta funcionalidade atualmente não suporta a mudança de nome dispositivos de Windows do Azure AD híbrido.
 
 ## <a name="rename-a-device"></a>Mudar o nome de um dispositivo
 
@@ -37,7 +38,7 @@ O **mudança de nome de dispositivo** ação permite-lhe mudar o nome de um disp
 2. Escolher **todos os serviços**, filtre por **Intune**e escolha **Microsoft Intune**.
 3. Escolher **dispositivos** > **todos os dispositivos** > Escolha um dispositivo de Windows > **mais** > **mudança de nome de dispositivo**.
 4. Na **mudança de nome de dispositivo** painel, escreva o novo nome na caixa de texto. Pode utilizar letras, números e hífenes. O nome tem de conter pelo menos uma letra ou um hífen.
-5. Se pretender reiniciar o dispositivo depois de alterar o seu nome, escolha **Sim** junto a **Resart após a mudança de nome**.
+5. Se pretender reiniciar o dispositivo depois de alterar o seu nome, escolha **Sim** junto a **reinício após a mudança de nome**.
 6. Escolher **mudar o nome**.
 
 

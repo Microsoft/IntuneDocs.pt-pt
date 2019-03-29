@@ -6,7 +6,7 @@ keywords: ''
 author: ErikRe
 ms.author: erikre
 manager: dougeby
-ms.date: 01/31/2019
+ms.date: 03/28/2019
 ms.topic: tutorial
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c733dbbf992ae10e14ba711b34e621d3f0fb3da8
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: c601af8c2b73ac68ec88f45d3684fcfd41f1c87f
+ms.sourcegitcommit: 1144247aa7f042eb1b99d8fd8dd17b909eae38c5
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57395271"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58567593"
 ---
 # <a name="tutorial-walkthrough-of-microsoft-intune-in-the-azure-portal"></a>Tutorial: Passo a passo do Microsoft Intune no portal do Azure
 
@@ -113,7 +113,7 @@ Siga os passos abaixo para compreender melhor o Intune no portal do Azure. Depoi
 
     Pode adicionar utilizadores diretamente para o Intune ou sincronizar utilizadores do Active Directory no local. Depois de adicionados, os utilizadores podem inscrever dispositivos e aceder a recursos da empresa. Também pode dar aos utilizadores permissões adicionais para aceder ao Intune. Para obter mais informações, consulte [adicionar utilizadores e conceder permissões administrativas no Intune](users-add.md).
 
-9. Partir [Intune](https://aka.ms/intuneportal), selecione **grupos** para apresentar os detalhes sobre os grupos do Azure Active Directory (Azure AD) incluídos no Intune. Como administrador do Intune, pode utilizar o grupo para gerir dispositivos e utilizadores. 
+9. Partir [Intune](https://aka.ms/intuneportal), selecione **grupos** para apresentar os detalhes sobre os grupos do Azure Active Directory (Azure AD) incluídos no Intune. Como administrador do Intune, utilize grupos para gerir dispositivos e utilizadores. 
 
     ![Captura de ecrã do painel de grupos](media/tutorial-walkthrough-intune-portal/tutorial-walkthrough-intune-portal-09.png)
 

@@ -18,15 +18,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a61bd060b5c120a73df427688865e2ee976f8f68
-ms.sourcegitcommit: 94f7dc236db5995ffee7cd13c7e02794e561b532
+ms.openlocfilehash: c19973190c367c37e96e66eae8d507b4d94639e9
+ms.sourcegitcommit: e23e78a563928ed2b2cbc588f2aa65678f7bb409
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58538770"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58618475"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Saiba mais sobre as novidades todas as semanas no Microsoft Intune. Também pode encontrar [alterações futuras](in-development.md), [avisos importantes](#notices)e informações sobre [versões anteriores](whats-new-archive.md). 
 
@@ -121,10 +120,13 @@ Agora pode utilizar o Intune para [ver detalhes](encryption-monitor.md) sobre o 
 Microsoft Edge irá suportar todos os cenários de gestão mesmo como o Intune Managed Browser com a adição de melhorias na experiência de utilizador final. As funcionalidades de enterprise do Microsoft Edge que estão ativadas por políticas do Intune incluem dual-Identity, integração de política de proteção de aplicações, integração de proxy de aplicações do Azure e gerenciados de Favoritos e os atalhos de página inicial. Para obter mais informações, consulte [suporte do Microsoft Edge](app-configuration-managed-browser.md#microsoft-edge-support).
 
 #### <a name="exchange-onlineintune-connector-deprecate-support-for-eas-only-devices---3105122------"></a>Conector do Exchange Online/Intune Preterir o suporte para apenas os dispositivos EAS <!--3105122    -->
-A consola do Intune já não suporta a visualização e gestão de dispositivos só de EAS ligado Exchane Online com o conector do Intune. Em vez disso, tem as seguintes opções:
+A consola do Intune já não suporta a visualização e gestão de dispositivos só de EAS ligados ao Exchange Online com o conector do Intune. Em vez disso, tem as seguintes opções:
 - Inscrever dispositivos na gestão de dispositivos móveis (MDM)
 - Utilizar políticas de proteção de aplicações do Intune para gerir os seus dispositivos
 - Utilizar controlos de Exchange, conforme descrito na [clientes e dispositivos móveis no Exchange Online](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/clients-and-mobile-in-exchange-online)
+
+### <a name="search-the-all-devices-page-for-an-exact-device-by-using-name---4254930---"></a>Procure página todos os dispositivos de um dispositivo exata, utilizando [nome] <!--4254930 -->
+Agora pode procurar um nome de dispositivo exato. Aceda a **Intune** > **dispositivos** > **todos os dispositivos** > na caixa de pesquisa, coloque o nome do dispositivo com {} para procurar um correspondência exata. Por exemplo, **{Device12345}**.
 
 ### <a name="monitor-and-troubleshoot"></a>Monitorizar e resolver problemas
 
@@ -198,7 +200,7 @@ No Intune, selecione **aplicações de cliente** > **aplicações** > "Nome da a
 Um ecrã novo chamado **categorias de aplicações** foi adicionado para melhorar a experiência de navegação e a seleção de aplicação no Portal da empresa para Windows 10. Os utilizadores irão ver agora as aplicações ordenadas em categorias, como **em destaque**, **educação**, e **produtividade**. Esta alteração apareça em versões do Portal da empresa 10.3.3451.0 e mais tarde. Para ver o novo ecrã, consulte [quais são as novidades na IU da aplicação](https://docs.microsoft.com/intune/whats-new-app-ui). Para obter mais informações sobre as aplicações no Portal da empresa, consulte [instalar e partilhar aplicações no seu dispositivo](/intune-user-help/install-apps-cpapp-windows).  
 
 #### <a name="power-bi-compliance-app----1455231-doc-work-item---"></a>Aplicação de conformidade do Power BI <!-- 1455231 doc-work-item -->
-Aceder ao seu armazém de dados do Intune no Power BI Online com o [conformidade do Intune (armazém de dados)](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) aplicação. Com esta aplicação do Power BI, pode agora aceder e partilhar relatórios previamente criados sem qualquer configuração e sem sair do seu navegador da web. Para obter mais informações, consulte [registo de alterações - aplicação de conformidade do Power BI](reports-changelog.md#power-bi-compliance-app). Para obter mais atualizações do armazém de dados do Intune, consulte [futuras alterações à API do armazém de dados do Intune](whats-new.md#upcoming-change-to-the-intune-data-warehouse-api-).
+Aceder ao seu armazém de dados do Intune no Power BI Online com o [conformidade do Intune (armazém de dados)](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) aplicação. Com esta aplicação do Power BI, pode agora aceder e partilhar relatórios previamente criados sem qualquer configuração e sem sair do seu navegador da web. Para obter mais informações, consulte [registo de alterações - aplicação de conformidade do Power BI](reports-changelog.md#power-bi-compliance-app).
 
 
 ### <a name="device-configuration"></a>Configuração do dispositivo
@@ -303,7 +305,7 @@ Aplica-se a:
 ### <a name="device-management"></a>Gestão de dispositivos
 
 #### <a name="rename-an-enrolled-windows-device----1911112----"></a>Mudar o nome de um dispositivo Windows inscrito <!-- 1911112  -->
-Agora pode renomear um dispositivo Windows 10 inscrito (RS4 ou posterior). Para fazer, escolha **Intune** > **dispositivos** > **todos os dispositivos** > Escolha um dispositivo > **mudança de nome de dispositivo**.
+Agora pode renomear um dispositivo Windows 10 inscrito (RS4 ou posterior). Para fazer, escolha **Intune** > **dispositivos** > **todos os dispositivos** > Escolha um dispositivo > **mudança de nome de dispositivo**. Esta funcionalidade não suporta atualmente a mudança de nome dispositivos de Windows do Azure AD híbrido.
 
 #### <a name="auto-assign-scope-tags-to-resources-created-by-an-admin-with-that-scope----3173823----"></a>Atribuir automaticamente etiquetas de âmbito para recursos criados por um administrador com esse âmbito <!-- 3173823  -->
 Quando um administrador cria um recurso, quaisquer etiquetas de âmbito atribuídas para o administrador serão automaticamente atribuídas a esses novos recursos.
@@ -449,7 +451,7 @@ O administrador de TI, pode agora configurar o número de dias que um utilizador
 
 
 #### <a name="intune-device-reporting-fields----2748738---"></a>Campos de relatórios de dispositivos do Intune <!-- 2748738 -->
-O Intune fornece relatórios campos, incluindo o Id de registo de aplicação, fabricante do Android, modelo e versão de patch de segurança, bem como o modelo de iOS adicionais do dispositivo. No Intune, estes campos estão disponíveis, selecionando **aplicações de cliente** > **estado de proteção de aplicações** e escolha **relatório de proteção de aplicações: iOS, Android**. Além disso, esses parâmetros irão ajudá-lo a configurar o **permitir** lista para o fabricante do dispositivo (Android), o **permitir** lista para o modelo do dispositivo (Android e iOS) e o patch de segurança mínima para Android definição de versão. 
+O Intune fornece relatórios campos, incluindo o ID de registo de aplicação, fabricante do Android, modelo e versão de patch de segurança, bem como o modelo de iOS adicionais do dispositivo. No Intune, estes campos estão disponíveis, selecionando **aplicações de cliente** > **estado de proteção de aplicações** e escolha **relatório de proteção de aplicações: iOS, Android**. Além disso, esses parâmetros irão ajudá-lo a configurar o **permitir** lista para o fabricante do dispositivo (Android), o **permitir** lista para o modelo do dispositivo (Android e iOS) e o patch de segurança mínima para Android definição de versão. 
 
 
 ### <a name="device-configuration"></a>Configuração do dispositivo
@@ -841,7 +843,7 @@ Agora pode criar uma política de configuração da aplicação Outlook para iOS
 Enquanto administrador do Intune, poderá implementar idiomas adicionais para aplicações do Office 365 Pro Plus geridas através do Intune. A lista de idiomas disponíveis inclui o **Tipo** do pacote de idiomas (núcleo, parcial e verificação). No portal do Azure, selecione **Microsoft Intune** > **Aplicações do cliente** > **Aplicações** > **Adicionar**. Na lista **Tipo de aplicação**, no painel **Adicionar aplicação**, selecione **Windows 10** em **Office 365 Suite**. Selecione **Idiomas** no painel **Definições do Conjunto de Aplicações**.
 
 ####  <a name="windows-line-of-business-lob-apps-file-extensions----1884873---"></a>Extensões de ficheiros de aplicações de linha de negócio (LOB) Windows <!-- 1884873 -->
-As extensões de ficheiros de aplicações de linha de negócio do Windows agora incluirão *.msi*, *.appx*, *.appxbundle*, *.msix* e *.msixbundle*. Pode adicionar uma aplicação no Microsoft Intune ao selecionar **Aplicações do cliente** > **Aplicações** > **Adicionar**. O painel **Adicionar aplicação** é apresentado, o qual lhe permite selecionar o **Tipo de aplicação**. Para aplicações LOB do Windows, selecione o tipo de aplicação **Linha de negócio**, selecione o **Ficheiro de pacote de aplicação** e, em seguida, introduza um ficheiro de instalação com a extensão adequada.
+As extensões de ficheiro para aplicações LOB para Windows agora incluirão *. msi*, *. AppX*, *. appxbundle*, *.msix*, e *. msixbundle*. Pode adicionar uma aplicação no Microsoft Intune ao selecionar **Aplicações do cliente** > **Aplicações** > **Adicionar**. O painel **Adicionar aplicação** é apresentado, o qual lhe permite selecionar o **Tipo de aplicação**. Para aplicações LOB do Windows, selecione o tipo de aplicação **Linha de negócio**, selecione o **Ficheiro de pacote de aplicação** e, em seguida, introduza um ficheiro de instalação com a extensão adequada.
 
 #### <a name="windows-10-app-deployment-using-intune----2309001---"></a>Implementação de aplicações do Windows 10 com o Intune <!-- 2309001 -->
 Com base no suporte existente para aplicações de linha de negócio (LOB) e aplicações da Microsoft Store para Empresas, os administradores podem utilizar o Intune para implementar a maioria das aplicações existentes da respetiva organização nos utilizadores finais em dispositivos com o Windows 10. Os administradores podem adicionar, instalar e desinstalar aplicações para utilizadores do Windows 10 numa variedade de formatos, como MSIs, Setup.exe ou MSP. O Intune irá avaliar as regras de requisitos antes de transferir e instalar, e irá notificar os utilizadores finais sobre o estado ou os requisitos de reinício através do Centro de Ação do Windows 10. Esta funcionalidade irá efetivamente ajudar as organizações interessadas em mudar esta carga de trabalho para o Intune e a cloud. Esta funcionalidade está atualmente em pré-visualização pública e esperamos acrescentar-lhe novas funcionalidades relevantes durante os próximos meses. 

@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/12/2018
+ms.date: 03/28/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c3fd8ca136862db4e80ff11d31fc4860d4785ff1
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 7e6af5a7d7911d7e8ba12e9fd15ad72ca1e51c74
+ms.sourcegitcommit: e23e78a563928ed2b2cbc588f2aa65678f7bb409
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57390277"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58618471"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>Configurar e utilizar certificados PKCS com o Intune
 
@@ -76,14 +76,14 @@ Para utilizar certificados PKCS com o Intune, terá a seguinte infraestrutura:
 
 Para autenticar um dispositivo com VPN, Wi-Fi ou outros recursos, um dispositivo tem um certificado de AC intermediária ou de raiz. Os passos seguintes explicam como obter o certificado necessário a partir da AC Empresarial.
 
-1. Inicie sessão na AC Empresarial com uma conta que tenha privilégios administrativos.
-2. Abra uma linha de comandos como administrador.
-3. Exporte o Certificado da AC de Raiz (.cer) para uma localização onde possa aceder ao mesmo mais tarde.
-4. Após o assistente ser concluído, mas antes de o fechar, clique em **Iniciar a IU do Certificate Connector**.
+**Utilize uma linha de comandos**:  
+1. Inicie sessão para o servidor de autoridade de certificação de raiz com a conta de administrador.
+ 
+2. Aceda a **começar** > **executar**e, em seguida, introduza **Cmd** para abrir a linha de comandos. 
+    
+3. Especifique **certutil-CA. cert ca_name.cer** para exportar o certificado de raiz como um arquivo chamado *ca_name.cer*.
 
-   `certutil -ca.cert certnew.cer`
 
-   Para obter mais informações, veja [Tarefas do certutil para gerir certificados](https://technet.microsoft.com/library/cc772898.aspx#BKMK_ret_sign).
 
 ## <a name="configure-certificate-templates-on-the-ca"></a>Configurar modelos de certificado na AC
 
