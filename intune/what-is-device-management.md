@@ -4,7 +4,7 @@ description: O Microsoft 365 Enterprise inclui o Microsoft Intune. Veja como o I
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/21/2018
+ms.date: 03/29/2018
 ms.topic: conceptual
 audience: ITPro
 ms.prod: microsoft-365-enterprise
@@ -16,16 +16,16 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 93e34c3de77dde59b87829617b8cbbd2614f7081
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: ea24101600c7a0e485440f50fc043c14bd840968
+ms.sourcegitcommit: 8e6f4acb592dbe5de63aa7642ee9487288740714
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57231252"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58646493"
 ---
 # <a name="what-is-device-management"></a>O que é a gestão de dispositivos? 
 
-Uma das principais tarefas dos administradores consiste na proteção dos recursos e dados da organização. Esta tarefa é a gestão de dispositivos. Os utilizadores têm muitos dispositivos a partir dos quais abrem e partilham ficheiros pessoais, acedem a sites e instalam aplicações e jogos. Estes utilizadores também são colaboradores e estudantes, pelo que pretendem utilizar os dispositivos para acederem a recursos profissionais e escolares, tais como o e-mail e o OneNote. A *gestão de dispositivos* permite que as organizações protejam os respetivos recursos e dados. 
+Uma das principais tarefas dos administradores consiste na proteção dos recursos e dados da organização. Esta tarefa é *gestão de dispositivos*. Os utilizadores têm muitos dispositivos a partir dos quais abrem e partilham ficheiros pessoais, acedem a sites e instalam aplicações e jogos. Estes utilizadores também são colaboradores e estudantes, pelo que pretendem utilizar os dispositivos para acederem a recursos profissionais e escolares, tais como o e-mail e o OneNote. Gestão de dispositivos permite às organizações a proteger e proteger seus dados e recursos. 
 
 As organizações podem recorrer a um fornecedor de gestão de dispositivos para garantir que só as pessoas e os dispositivos autorizados podem aceder às informações proprietárias. Da mesma forma, os utilizadores dos dispositivos podem sentir-se à vontade para aceder aos dados de trabalho a partir do telemóvel porque sabem que o dispositivo cumpre os requisitos de segurança da organização. Enquanto organização, poderá perguntar "**o que devemos utilizar para proteger nossos recursos?"**.
 

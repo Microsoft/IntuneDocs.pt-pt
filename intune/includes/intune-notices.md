@@ -1,30 +1,30 @@
 ---
-ms.openlocfilehash: 15cf7f35c1ea2a3351b5a6d829cfca42ddb62729
-ms.sourcegitcommit: b085121bf1fc56b636aefe47caeabd1d4ee96ea1
+title: incluir ficheiro
+description: incluir ficheiro
+author: ErikjeMS
+ms.service: microsoft-intune
+ms.topic: include
+ms.date: 03/28/2019
+ms.author: erikje
+ms.custom: include file
+ms.openlocfilehash: 073115d33f9a4f22fe3706ef15860c2a8d8a68ee
+ms.sourcegitcommit: 69aaf89140f82f344404e75a69dc59d8a1585b10
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58261512"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "58675498"
 ---
-
 Estes avisos fornecem importante de informações que podem ajudá-lo a se preparar para as funcionalidades e alterações futuras do Intune. 
-
-###  <a name="upcoming-change-to-the-intune-data-warehouse-api----1455231-doc-work-item---"></a>Alteração futura à API do armazém de dados do Intune <!-- 1455231 doc-work-item -->
-Iremos fazer duas alterações durante o período de tempo de 1903:
-- Descontinuação de filtro do Beta<br>
-    Descontinuação de filtros de beta não suportado instanciado. Os clientes afetados foram enviados por e-mail.   
-- alterações 1.0 refletindo para o beta<br>
-    As alterações feitas para nossas coleções de v1.0 agora serão refletidas na versão beta.  
 
 ### <a name="change-in-enrollment-workflow-with-intune-company-portal-on-corporate-ios-devices-authenticating-with-setup-assistant----1927359---"></a>Alterar inscrição fluxo de trabalho com o Portal da empresa do Intune em dispositivos iOS empresariais, a autenticação com o Assistente de configuração <!-- 1927359 -->
 Há uma futura alteração ao fluxo de trabalho para a inscrição de dispositivos iOS através de um dos dispositivo da empresa métodos de inscrição da Apple - Apple Configurator, gerente de negócios da Apple, Apple School Manager ou o Apple dispositivo programa de inscrição (DEP), ao utilizar o programa de configuração Assistente para a autenticação. Esta alteração aplica-se apenas a dispositivos inscritos com afinidade do utilizador.
 
 #### <a name="how-does-this-affect-me"></a>Como é que isto me afeta?
-Quando esta alteração é implementada ~~Março~~ Abril, perfis de inscrição no Intune no portal do Azure serão atualizados para que pode especificar a forma como os dispositivos serão autenticados e se eles recebem a aplicação Portal da empresa. Haverá um fluxo de trabalho melhorado para inscrever dispositivos iOS através dos métodos indicados acima. Nota:
+Quando esta alteração é implementada ~~Março~~ Abril, perfis de inscrição no Intune no portal do Azure serão atualizados para que pode especificar a forma como os dispositivos serão autenticados e se eles recebem a aplicação Portal da empresa. Haverá um fluxo de trabalho melhorado para inscrever dispositivos iOS através dos métodos indicados acima. 
 
 - Quando inscrever novos dispositivos e a autenticação com o Assistente de configuração, poderá escolher se deve ou não implementar automaticamente a aplicação Portal da empresa. Os utilizadores finais já não verá a tela de "Identificar o dispositivo" e a tela de "Confirmar o seu dispositivo" no fluxo de inscrição.  
 - Nos dispositivos já inscritos através do Assistente de configuração através de um dos métodos de inscrição de dispositivos da empresa da Apple, tem de tomar uma ação se pretender ativar o acesso condicional. Terá de configurar uma política de configuração de aplicação com um xml específico para enviar por push o Portal da empresa para estes dispositivos. Instruções para tal são na mensagem de blogue em ligação informações adicionais. Se optar por enviar por push o Portal da empresa, desta forma, os utilizadores finais já não verá a tela de "Identificar o dispositivo" e a tela de "Confirmar o seu dispositivo" no fluxo de inscrição. 
-- Após esta alteração é implementada, se não tiver implementado o Portal da empresa com o perfil de configuração de aplicação mencionados acima e se a transferência dos utilizadores finais a aplicação Portal da empresa a partir da aplicação armazenar, pode iniciar sessão, mas irá receber uma mensagem de erro. Eles não será possível utilizar a aplicação para o acesso condicional. 
+- Após esta alteração é implementada, se não tiver implementado o Portal da empresa com o perfil de configuração de aplicação mencionados acima e se a transferência dos utilizadores finais, a Portal da empresa a partir da aplicação da loja de aplicações, poderem iniciar sessão, mas irá receber uma mensagem de erro. Eles não será possível utilizar a aplicação para o acesso condicional. 
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>O que preciso de fazer para me preparar para esta alteração?
 Se pretender utilizar o fluxo de trabalho modificado, poderá ser útil atualizar a sua documentação de orientação do utilizador final para indicar que:
@@ -38,52 +38,6 @@ Consulte o nosso suporte postagem no blog em ligação informações adicionais 
 
 #### <a name="additional-information"></a>Informações adicionais 
 [https://aka.ms/enrollment_setup_assistant](https://aka.ms/enrollment_setup_assistant)
-
-
-### <a name="company-portal-changes-for-ios-122-enrollment-in-intune"></a>Alterações de portais da empresa para iOS 12.2 inscrição no Intune
-Partilhámos na MC172534 Apple anunciou algumas alterações relacionadas com dispositivos iOS, a inscrição para os serviços de gestão de dispositivos móveis (MDM). A alteração provavelmente será vista na versão do iOS na de 2019 de Março, bem como todas as versões futuras do iOS. Vamos fazer algumas atualizações no Portal da empresa para refletir as alterações da Apple. 
- 
-#### <a name="how-does-this-affect-me"></a>Como é que isto me afeta?
-Se os utilizadores finais atualizarem os seus dispositivos para dispositivos iOS 12.2 e superior, sabe-se de que existe um fluxo de trabalho modificado e têm de realizar passos adicionais que conclua a inscrição no Intune. Após a atualização de Março ao Intune, eis o que irá fazer-  
-
-- Iniciar o processo de inscrição na aplicação Portal da empresa para transferir um perfil de gestão
-- Aceda a definições > geral > perfis e buscar uma notificação de destaque vermelho
-- Selecione o perfil correto e clicar para instalação
-- Regresse ao Portal da empresa que conclua a inscrição
-
-Clique em obter informações adicionais para obter informações detalhadas sobre o fluxo de inscrição.
-
-Não devem ser afetados, a menos que estão a anular a inscrição e precisam de uma nova inscrição, os dispositivos que já estão inscritos e atualizar para o iOS 12.2 e acima. Experiência de inscrição em dispositivos com iOS 12.1 ou anterior não será alterada com essa nova versão pela Apple. Dispositivos inscritos através de um ou métodos de inscrição da empresa da Apple (programa de inscrição de dispositivos, do Apple School Manager ou gerente de negócios da Apple) não serão afetados.
-
-#### <a name="what-can-i-do-to-prepare-for-this-change"></a>O que posso fazer para me preparar para esta alteração?
-Deve planear a atualização a documentação e as diretrizes de utilizador final. Também poderá permitir que o suporte técnico sabe dessas alterações. Vamos mantê-lo informado por meio de nosso, o que é a nova página quando esta alteração entra no ar. 
-
-Se pretender tirar partido das alterações de Portal da empresa que estamos a introduzir, peça aos utilizadores finais para atualizar o seu dispositivo para a nova versão do iOS após a atualização de Março para o Intune service quando Portal da empresa 3.9.0 versão da aplicação. é libertado.
-
-Clique em obter informações adicionais para uma mensagem de blogue de suporte com capturas de ecrã de pré-visualização das alterações do Portal da empresa.
-
-Informações Adicionais [https://aka.ms/CP_changes_iOS12](https://aka.ms/CP_changes_iOS12)
-
-### <a name="plan-for-change-workflow-changes-for-ios-12-enrollment-in-intune"></a>Planear a alteração: Alterações de fluxo de trabalho para iOS 12 inscrição no Intune
-Apple anunciou algumas alterações relacionadas com dispositivos iOS, a inscrição para os serviços de gestão de dispositivos móveis (MDM). A alteração provavelmente será vista na versão da Primavera de 2019 do iOS, bem como todas as versões futuras do iOS.
-
-#### <a name="how-does-this-affect-me"></a>Como é que isto me afeta?
-Se os utilizadores finais atualizarem os seus dispositivos para esta nova versão do iOS 12 na Primavera, sabe-se de que existe um fluxo de trabalho modificado e precisam de efetuar passos adicionais que conclua a inscrição no Intune. Quando Apple apresenta estas alterações, os utilizadores finais terá de:
-
-- Iniciar o processo de inscrição na aplicação Portal da empresa para transferir um perfil de gestão
-- Aceda a definições > geral > perfis
-- Selecione o perfil correto e clicar para instalação
-- Regresse ao Portal da empresa que conclua a inscrição 
-
-Não deve ser afetado, a menos que estão a anular a inscrição e precisam de uma nova inscrição, os dispositivos já inscritos e atualizar para a nova versão do iOS.
-
-Experiência de inscrição em dispositivos com iOS 12.1 ou anterior não será alterada com essa nova versão pela Apple.
-
-#### <a name="what-can-i-do-to-prepare-for-this-change"></a>O que posso fazer para me preparar para esta alteração?
-Deve planear a atualização a documentação e as diretrizes de utilizador final. Também poderá permitir que o suporte técnico sabe dessas alterações. Iremos mantê-lo informado por meio do Centro de mensagens e nossa, o que é a nova página quando esta alteração entra no ar.
-
-#### <a name="additional-information"></a>Informações adicionais
-[Suporte a mensagem de blogue com capturas de ecrã e vídeos do fluxo de inscrição esperado](https://aka.ms/iOS_enrollment_changes).
 
 ### <a name="plan-for-change-user-experience-update-to-intune-company-portal-app-for-ios"></a>Planear a alteração: Atualização da experiência de utilizador para a aplicação Portal da empresa do Intune para iOS
 Temos o prazer partilhar que Intune em breve lançar uma atualização da experiência de utilizador principais para a aplicação Portal da empresa iOS. A atualização será apresentam uma reformulação visual da home page com filtros avançados e acesso mais rápido para aplicações e livros.
@@ -102,28 +56,6 @@ Não é necessário efetuar qualquer ação; Estas alterações serão lançadas
 
 #### <a name="additional-information"></a>Informações adicionais
 [https://aka.ms/cp_update_iOS](https://aka.ms/cp_update_iOS)
-
-
-### <a name="reminder-removal-of-existing-exchange-online-to-intune-connectors----3105122---"></a>Lembrete: Remoção de existentes Exchange Online para conectores do Intune <!-- 3105122 -->
-No MC165575, partilhámos que podemos seria possível remover o Exchange Online para a funcionalidade de conector do Intune 'De serviços' numa atualização futura. Com a atualização de Fevereiro ao serviço do Intune, iremos irá desativar o botão configurar novos conectores. Estamos a planear remover todos os existentes Exchange Online para conectores do Intune em Março de 2019.
- 
-#### <a name="how-does-this-affect-me"></a>Como é que isto me afeta?
-Está recebendo esta mensagem, uma vez que os nossos registos indicam que pode utilizar a funcionalidade de conector "De serviços" no seu ambiente. O conector de 'De serviços' suporta a gestão do Exchange Active Sync apenas os dispositivos do Intune para o Exchange Online e não suporta a infraestrutura no local. Este conector, por conta da forma que é apresentado no console, é apresentada como necessários para acesso condicional (AC), quando, na realidade, não é necessária para a AC. Pode tem estado a utilizar este conector para compreender a utilização do Exchange Online antes de aplicar acesso condicional. Estas informações já são fornecidas pelo centro de administração do Microsoft 365. Aqui, encontrará fornece relatórios de utilização para o tipo de Exchange Online incluindo a aplicação a ser utilizado para entre 7 e 180 dias. Para obter mais informações, consulte [Office 365 relatórios no Centro de administração - utilização de aplicações de E-Mail](https://docs.microsoft.com/office365/admin/activity-reports/email-apps-usage?view=o365-worldwide).  
- 
-Se utilizar este conector no seu ambiente, não será possível monitorizar ou eliminar os Exchange Active Sync apenas os dispositivos no Intune após conectores foram desativados em Fevereiro. Não há nenhum impacto previsto aos seus utilizadores finais durante esta alteração.
- 
-#### <a name="what-can-i-do-to-prepare-for-this-change"></a>O que posso fazer para me preparar para esta alteração?
-Se tiver o conector de serviços, configurar e executar o Exchange Active Sync apenas os dispositivos, mude para outros métodos de gerir os seus dispositivos. Tem as seguintes opções:
-
-- Inscrever dispositivos na gestão de dispositivos móveis (MDM) 
-- Utilizar políticas de proteção de aplicações do Intune para gerir os seus dispositivos 
-- Utilizar controlos de Exchange, conforme descrito na documentação [aqui](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/clients-and-mobile-in-exchange-online) 
-
-#### <a name="additional-information"></a>Informações adicionais  
-https://docs.microsoft.com/intune/exchange-service-connector-configure
-
-
-
 
 ### <a name="check-your-delay-visibility-of-software-updates-setting-in-intune"></a>Verifique a definição de "Visibility atraso das atualizações de Software" no Intune 
 
@@ -147,3 +79,38 @@ Consulte o nosso blogue de suporte publicar as informações adicionais para obt
 
 #### <a name="additional-information"></a>Informações adicionais 
 [https://aka.ms/Delay_visibility_setting_iOS](https://aka.ms/Delay_visibility_setting_iOS)
+
+### <a name="plan-for-change-upcoming-fix-for-windows-10-email-profiles-in-intune---3904031--"></a>Planear a alteração: Futura correção para perfis de e-mail do Windows 10 no Intune <!--3904031-->
+Estamos a atualizar a forma como o Intune escreve e-mail perfis para o Windows 10 na Abril da atualização para o serviço do Intune para corrigir um bug, bem como para garantir que seus perfis de e-mail continuam a funcionar em futuras versões do Windows 10. Não existe ação que precisa de tomar depois de implementar esta correção.
+
+#### <a name="how-does-this-affect-me"></a>Como é que isto me afeta?
+Esta alteração irá afetar o se utilizar perfis de e-mail do Windows 10 com
+- O cliente de correio nativo em computadores com Windows 10 ou
+- O cliente de e-mail do Outlook no Windows 10 Mobile
+
+Este problema afeta os dois clientes de gestão de dispositivos móveis (MDM) Intune autónomo e híbrido.
+
+Depois de efetuada a atualização de Abril, terá de voltar a criar estes perfis na consola do Intune (na consola do administrador do Configuration Manager se estiver a utilizar o MDM híbrida).
+
+Se não tomar medidas, eis o que verá para perfis criados antes da atualização de Abril:
+
+- Perfis de e-mail existentes serão apresentados no Estado com erros na consola do Intune ou consola de administração do Configuration Manager, mas os usuários finais continuam a ter acesso ao e-mail. No entanto, após uma atualização subseqüente do Windows for implementada, estes perfis não funcionará. Os utilizadores finais nos dispositivos visados com estes perfis perderão o acesso ao e-mail.
+- As edições efetuadas a esses perfis depois de Abril não será refletida em dispositivos visados.
+- Eliminação seletiva não funcionará para remover estes perfis, mesmo após a correção é implementada em Abril.
+
+Se agir e voltar a criar perfis de e-mail, os utilizadores finais terão de seguir passos semelhantes aos quando um perfil de e-mail é implementado pela primeira vez. E-mail será impedido de sincronização até que aceite a atualização que aplica-se o novo perfil.
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>O que preciso de fazer para me preparar para esta alteração?
+Terá de tomar medidas apenas após a correção é implementada com a atualização de Abril. Podemos irá contactá-lo através do Centro de mensagens quando esta alteração entra no ar para que possa começar a voltar a criar seus perfis no Intune.
+
+Se utilizar perfis de e-mail do Windows 10 no Intune, terá de seguir estes passos:
+
+1. Capturar definições de perfil existentes do Windows 10
+2. Anular a atribuição de e/ou eliminar perfis existentes
+3. Criar novos perfis utilizando as definições de capturada e atribuir os novos perfis aos mesmos grupos
+
+Se pretender notificar os utilizadores finais e permitir que o suporte técnico sabe dessa alteração. Consulte a mensagem de blogue de suporte informações adicionais para detalhes de erro e instruções para voltar a criar estes perfis.
+
+#### <a name="additional-information"></a>Informações adicionais
+https://aka.ms/Win10EmailProfiles
+

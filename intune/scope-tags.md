@@ -15,16 +15,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2ceba92a48f4ae899b5a645137ec0891a7c16659
-ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
+ms.openlocfilehash: fb57ea2ef5c99c58968ee25b3a75b2165ece787a
+ms.sourcegitcommit: 0adb41c0640743d5cb726e66ad2427e3ad6faf20
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58394839"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58658554"
 ---
-# <a name="use-rbac-and-scope-tags-for-distributed-it"></a>Utilizar etiquetas de âmbito e o RBAC para distribuído IT
+# <a name="use-role-based-access-control-rbac-and-scope-tags-for-distributed-it"></a>Utilizar o controlo de acesso baseado em funções (RBAC) e etiquetas de âmbito para distribuído IT
 
-Pode utilizar o controlo de acesso baseado em funções (RBAC) e etiquetas de âmbito para se certificar de que os administradores da direita tem o acesso correto e a visibilidade dos objetos certo do Intune. Funções de determinam que acesso os administradores têm a quais objetos. Etiquetas de âmbito determinam quais os administradores podem ver os objetos.
+Pode utilizar etiquetas de controle e o âmbito de acesso baseado em funções para se certificar de que os administradores da direita tem o acesso correto e a visibilidade dos objetos certo do Intune. Funções de determinam que acesso os administradores têm a quais objetos. Etiquetas de âmbito determinam quais os administradores podem ver os objetos.
 
 Por exemplo, digamos que um administrador de escritório regional de Seattle é atribuído a função de política e o Gerenciador de perfis. Pretende que este administrador para ver e gerir apenas as políticas e perfis que só se aplicam a dispositivos de Seattle. Para fazer isso, seria:
 
@@ -84,9 +84,13 @@ Por exemplo, digamos que um administrador de escritório regional de Seattle é 
 4. Escolher **selecionar** > **OK** > **guardar**.
 
 ## <a name="to-assign-a-scope-tag-to-an-app-configuration-policy"></a>Para atribuir uma etiqueta de âmbito a uma política de configuração de aplicação
-Para dispositivos com o **tipo de inscrição de dispositivos** definida como **dispositivos geridos**, escolha **aplicações de cliente** > **depolíticasdeconfiguraçãodeaplicações** > Escolha uma política de configuração da aplicação > **propriedades** > **âmbito (etiquetas)** > Escolha as etiquetas que pretende atribuir a política.
+Para dispositivos com o **tipo de inscrição de dispositivos** definida como **dispositivos geridos**:
+1. Escolher **aplicações de cliente** > **políticas de configuração de aplicação** > Escolha uma política de configuração de aplicação.
+2. Escolher **propriedades** > **âmbito (etiquetas)** > Escolha as etiquetas que pretende atribuir a política.
 
-Para dispositivos com o **tipo de inscrição de dispositivos** definida como **aplicações geridas**, escolha **aplicações de cliente** > **políticas de configuração de aplicação**> Escolha uma política de configuração da aplicação > **âmbito (etiquetas)** > Escolha as etiquetas que pretende atribuir a política.
+Para dispositivos com o **tipo de inscrição de dispositivos** definida como **aplicações geridas**:
+1. Escolher **aplicações de cliente** > **políticas de configuração de aplicação** > Escolha uma política de configuração de aplicação.
+2. Escolher **âmbito (etiquetas)** > Escolha as etiquetas que pretende atribuir a política.
 
 
 ## <a name="to-assign-a-scope-tag-to-an-ios-app-provisioning-profile"></a>Para atribuir uma etiqueta de âmbito para uma perfil de aprovisionamento de aplicações iOS
@@ -107,20 +111,13 @@ Ao trabalhar com etiquetas de âmbito, lembre-se estes detalhes:
     - Políticas de configuração de aplicações – os dispositivos geridos
     - Scripts do PowerShell
     - Tokens DEP
+    - perfil de aprovisionamento de aplicação do iOS
 - Quando um administrador cria um objeto no Intune, todas as etiquetas de âmbito atribuídas para cada administrador serão automaticamente atribuídas para o novo objeto.
 - RBAC do Intune não se aplica a funções do Azure Active Directory. Por isso, as funções de administradores de serviço do Intune e os administradores globais têm acesso de administrador completo para o Intune, não importa o que eles têm de etiquetas de âmbito.
 - Os administradores numa atribuição de função com etiquetas de âmbito também podem ver o Intune objetos com sem etiquetas de âmbito.
 - Só pode atribuir uma etiqueta de âmbito que tiver no seu atribuições de funções.
 - Pode apenas os grupos de destino que estão listados no âmbito (grupos) da sua atribuição de função.
 - Se tiver uma etiqueta de âmbito atribuída à sua função, não é possível eliminar todas as etiquetas de âmbito de um objeto do Intune. Etiqueta de pelo menos um âmbito é necessária.
-- Se um utilizador tiver várias atribuições de funções, permissões nessas atribuições de funções de expandir a diferentes objetos da seguinte forma:
-    - Atribuir permissões só se aplicam aos objetos (como as políticas ou aplicações) na atribuição dessa função âmbito (grupos). Atribuir permissões não se aplicam a objetos em outras atribuições de funções, a menos que a atribuição de outra especificamente concede-los.
-    - São aplicáveis outras permissões (como criar e leitura), a todos os objetos do mesmo tipo (como todas as políticas ou todas as aplicações) em qualquer uma das atribuições do utilizador.
-    - Permissões para objetos de diferentes tipos (como as políticas ou aplicações), não se aplicam entre si. Por exemplo, uma permissão de leitura para uma política, não fornece uma permissão de leitura às aplicações em atribuições do utilizador.
-
-
-
-
 
 ## <a name="next-steps"></a>Passos Seguintes
 

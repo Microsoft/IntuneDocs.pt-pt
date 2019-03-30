@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/20/2019
+ms.date: 03/29/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2d8ddb81a488ccf0cc902ccf792463144d1b0116
-ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
+ms.openlocfilehash: 4f84bb6573d6bdf3aef3088bc58dec5ed067fe3d
+ms.sourcegitcommit: 0adb41c0640743d5cb726e66ad2427e3ad6faf20
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58394926"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58658565"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Atribuir aplicações do Office 365 a dispositivos Windows 10 com o Microsoft Intune
 
-Este tipo de aplicação faz com que seja mais fácil atribuir aplicações do Office 365 aos dispositivos que gere que executem o Windows 10. Também pode instalar aplicações para o cliente de ambiente de trabalho do Microsoft Project Online e o Microsoft Visio Online plano 2, se tiver licenças dos mesmos. As aplicações que quer são mostradas como uma entrada única na lista de aplicações na consola do Intune.
+Antes de poder atribuir, monitorizar, configurar ou proteger aplicações, tem de adicioná-las ao Intune. Um dos disponíveis [tipos de aplicações](apps-add.md#app-types-in-microsoft-intune) é aplicações do Office 365 para dispositivos Windows 10. Ao selecionar este tipo de aplicação no Intune, pode atribuir e instalar aplicações do Office 365 para dispositivos que gere que executem o Windows 10. Também pode atribuir e instalar aplicações para o cliente de ambiente de trabalho do Microsoft Project Online e o Microsoft Visio Online plano 2, se tiver licenças dos mesmos. As aplicações do Office 365 disponíveis são apresentadas como uma única entrada na lista de aplicações na consola do Intune no Azure.
 
 > [!NOTE]
 > Tem de utilizar licenças do Office 365 ProPlus para ativar as aplicações do Office 365 ProPlus implementadas através do Microsoft Intune. De momento, o Intune não suporta o Office 365 Empresas.

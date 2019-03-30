@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 1/30/2019
+ms.date: 03/29/2019
 ms.topic: tutorial
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.technology: ''
 ms.assetid: ''
 Customer intent: As an Intune admin, I want to set up the Device Enrollment Program so that users can automatically enroll in Intune.
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 88fe825b75e7717740e5a5ca4af4c52e9bb21768
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: f9cd0eec492f5131e4015aa64eccb4c081c663ee
+ms.sourcegitcommit: 8e6f4acb592dbe5de63aa7642ee9487288740714
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57400403"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58646476"
 ---
 # <a name="tutorial-use-the-device-enrollment-program-to-enroll-ios-devices-in-intune"></a>Tutorial: Utilizar o programa de inscrição de dispositivos para inscrever dispositivos iOS no Intune
 Programa de inscrição de dispositivos de (DEP da Apple) simplifica a inscrição de dispositivos. Com o Microsoft Intune e o DEP, os dispositivos são inscritos automaticamente na primeira vez que o usuário ativa o dispositivo. Portanto pode enviar dispositivos para muitos usuários sem ter de configurar individualmente cada dispositivo. 
@@ -61,7 +61,7 @@ Pode utilizar o portal de DEP da Apple para criar um token DEP. Também pode uti
 
 5. Para **nome do servidor MDM**, introduza *TestMDMServer* e, em seguida, escolha **seguinte**. O nome do servidor é uma referência para identificar o servidor de gestão de dispositivos móveis (MDM). Não é o nome ou URL do servidor do Microsoft Intune.
 
-6. A caixa de diálogo **Adicionar &lt;NomeDoServidor&gt;** é aberta e pede para **Atualizar a Chave Pública**. Selecione **Escolher Ficheiro…** para carregar o ficheiro .pem e, em seguida, selecione **Seguinte**.
+6. A caixa de diálogo **Adicionar &lt;NomeDoServidor&gt;** é aberta e pede para **Atualizar a Chave Pública**. Selecione **Escolher ficheiro...** para carregar o ficheiro .pem e, em seguida, selecione **Seguinte**.
 
 6. Aceda a **programas de implementação** > **programa de inscrição de dispositivos** > **gerir dispositivos**.
 7. Sob **selecionar dispositivos por**, escolha **número de série**. <!--ask Tiffany about this-->
