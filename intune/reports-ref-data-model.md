@@ -1,6 +1,6 @@
 ---
 title: Modelo de dados do Armazém de Dados
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: O Armazém de Dados do Microsoft Intune copia dados diariamente para fornecer uma apresentação do histórico do seu ambiente móvel em contínua mudança.
 keywords: Armazém de Dados do Intune
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2cbf6e1bde3f8853f2e5c6c1919089bf0dc10126
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 43e555a27565de43d417adc473d48254d8b7d5a2
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565525"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798178"
 ---
 # <a name="microsoft-intune-data-warehouse-data-model"></a>Modelo de dados do armazém de dados do Microsoft Intune
 

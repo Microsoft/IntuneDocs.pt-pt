@@ -1,6 +1,6 @@
 ---
 title: Gerir aplicações a partir da Loja Microsoft para Empresas
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Saiba como pode sincronizar aplicações no Intune a partir da Microsoft Store para Empresas e, em seguida, atribuir e controlá-las.
 keywords: ''
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cde2f123c40b9a823270bc89b78c8c01eff75585
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 697d4f0b7bd2b5739847968dccdca2517a5a53fa
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57389647"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798435"
 ---
 # <a name="how-to-manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>Como gerir aplicações compradas na Loja Microsoft para Empresas com o Microsoft Intune
 

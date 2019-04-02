@@ -1,6 +1,6 @@
 ---
 title: Inscrever dispositivos Android no Intune
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Saiba como inscrever dispositivos Android no Intune.
 keywords: ''
 author: ErikjeMS
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 486b5295d6ab4241cae90ef6ce0274fc93e0085e
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 363a7d0ef32aee0c21c6e5cecbd55cc3087f4613
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57393244"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799578"
 ---
 # <a name="enroll-android-devices"></a>Inscrever dispositivos Android
 

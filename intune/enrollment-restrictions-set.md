@@ -1,6 +1,6 @@
 ---
 title: Definir restrições de inscrição no Microsoft Intune
-titlesuffix: ''
+titleSuffix: ''
 description: Restrinja a inscrição por plataforma e defina um limite de inscrição de dispositivos no Intune.
 keywords: ''
 author: ErikjeMS
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2fda667710c43514c389e5d356f8b80fedd420ea
-ms.sourcegitcommit: c4258bb5824daf3f7e0ac3bb8afc539bde4d95da
+ms.openlocfilehash: ed2a16e4cc34d68342f8cd5b21daeec46c22ff9d
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "57991144"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799554"
 ---
 # <a name="set-enrollment-restrictions"></a>Definir restrições de inscrição
 

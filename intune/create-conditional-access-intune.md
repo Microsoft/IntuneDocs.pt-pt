@@ -1,6 +1,6 @@
 ---
 title: Configurar o acesso condicional com base no dispositivo com o Intune
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Saiba como criar uma política de acesso condicional com base no dispositivo com base na conformidade de dispositivos do Microsoft Intune e a gestão de aplicações móveis.
 keywords: ''
 author: brenduns
@@ -17,12 +17,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7b94204d5d1b141218081d01a6daab0ec84d1693
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: aaf9b82bc810dd3a616eb25f39f4b5830b1c3e6f
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57392581"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798838"
 ---
 # <a name="create-a-device-based-conditional-access-policy"></a>Criar uma política de acesso condicional com base no dispositivo
 

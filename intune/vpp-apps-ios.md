@@ -1,6 +1,6 @@
 ---
 title: Gerir aplicações iOS compradas em volume no Microsoft Intune
-titlesuffix: ''
+titleSuffix: ''
 description: Saiba como pode sincronizar as aplicações que comprou em volume na loja iOS para o Microsoft Intune e, em seguida, gerir e controlar a utilização das mesmas.
 keywords: ''
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b7d8d57913ac18abdce823a73e9266407897ce5a
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 967eb874c45d3bd497da218fe730008bea52a87f
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57392743"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799364"
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Como gerir aplicações iOS compradas através de um programa de compra em grandes volumes com o Microsoft Intune
 

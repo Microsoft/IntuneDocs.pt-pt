@@ -1,6 +1,6 @@
 ---
 title: No desenvolvimento – Microsoft Intune
-titlesuffix: ''
+titleSuffix: ''
 description: Funcionalidades do Microsoft Intune em desenvolvimento
 keywords: ''
 author: ErikjeMS
@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3e068e2c9834290b705e8e7bc2f895636415f9ba
-ms.sourcegitcommit: 69aaf89140f82f344404e75a69dc59d8a1585b10
+ms.openlocfilehash: 8807cb090cfb662f2ab273d29baf2715dfcd6426
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "58675447"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799133"
 ---
 # <a name="in-development-for-microsoft-intune---april-2019"></a>No desenvolvimento do Microsoft Intune – Abril de 2019
 
 Para ajudar na preparação de sua e planejamento, esta página, listas de atualizações de interface do Usuário do Intune e recursos que estão em desenvolvimento, mas ainda não lançadas. Além disso:
 
-- Se prevemos que precisará executar uma ação antes de uma alteração, vamos publicar uma mensagem de centro de mensagens do Office gratuita.
+- Se prevemos que precisará executar uma ação antes de uma alteração, vamos publicar uma mensagem complementar do Centro de mensagens do Office.
 - Quando um recurso é iniciado na produção, como uma pré-visualização ou em disponibilidade geral, a descrição da funcionalidade irá mover esta página e para o [página Novidades](whats-new.md).
 - Esta página e o [página Novidades](whats-new.md) são atualizados periodicamente. Volte a consultar posteriormente para obter mais atualizações.
 - Consulte a [M365 Roteiro](https://www.microsoft.com/microsoft-365/roadmap?rtc=2&filters=EMS) para resultados estratégicos e as linhas do tempo.

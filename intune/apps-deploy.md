@@ -1,6 +1,6 @@
 ---
 title: Atribuir aplicações a grupos no Microsoft Intune
-titlesuffix: ''
+titleSuffix: ''
 description: Saiba como atribuir uma aplicação do Intune para grupos de utilizadores ou dispositivos com o Microsoft Intune.
 keywords: ''
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 13c93f2339d47b177ac997c692227a039519bc76
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 1db613f93e50caa377297e3873f6817a39714fe7
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57391951"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799566"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Atribuir aplicações a grupos com o Microsoft Intune
 

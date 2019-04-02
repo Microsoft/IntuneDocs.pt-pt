@@ -1,6 +1,6 @@
 ---
 title: Adicionar aplicações de linha de negócio Windows ao Microsoft Intune
-titlesuffix: ''
+titleSuffix: ''
 description: Saiba como adicionar uma aplicação de linha de negócio (LOB) Windows através do Microsoft Intune.
 keywords: ''
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc1a4fe3e462c7dc9deec17ecd0f18b10e93d5c7
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 05d0841a8d358ac691cbd2293e95e2f2aa8a3f23
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57389525"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799150"
 ---
 # <a name="add-a-windows-line-of-business-app-to-microsoft-intune"></a>Adicionar aplicações de linha de negócio Windows ao Microsoft Intune
 

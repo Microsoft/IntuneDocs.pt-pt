@@ -1,6 +1,6 @@
 ---
 title: Instalar o Office 365 em dispositivos macOS através do Microsoft Intune
-titlesuffix: ''
+titleSuffix: ''
 description: Saiba como pode utilizar o Microsoft Intune para instalar as aplicações do Office 365 em dispositivos macOS.
 keywords: ''
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dd556880cfe12b9b10130f421eb3d1f478ace64a
-ms.sourcegitcommit: c4258bb5824daf3f7e0ac3bb8afc539bde4d95da
+ms.openlocfilehash: 2104d35a179c324bda8455f27e090cadbcaf5e8c
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "57991072"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798296"
 ---
 # <a name="assign-office-365-to-macos-devices-with-microsoft-intune"></a>Atribuir o Office 365 a dispositivos macOS com o Microsoft Intune
 

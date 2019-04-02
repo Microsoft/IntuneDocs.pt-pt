@@ -1,6 +1,6 @@
 ---
 title: Mensagens do Portal da Empresa que os utilizadores poderão ver nos dispositivos
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Compreenda as diferentes mensagens que os utilizadores finais poderão ver no Portal da Empresa.
 keywords: ''
 author: lenewsad
@@ -17,12 +17,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9af5fb0c7f5271f6f3f4235495d637ae0a458d1e
-ms.sourcegitcommit: c4258bb5824daf3f7e0ac3bb8afc539bde4d95da
+ms.openlocfilehash: 0985f09ad758403e3461ee00f35af949d0d35bc3
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "57991161"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798368"
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>Ajudar os utilizadores finais a compreender as mensagens da aplicação Portal da Empresa
 

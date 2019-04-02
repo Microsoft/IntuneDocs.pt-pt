@@ -1,6 +1,6 @@
 ---
 title: Configurar a inscrição para dispositivos macOS
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Saiba como configurar a inscrição para dispositivos macOS no Intune.
 keywords: ''
 author: ErikjeMS
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 25891aeffb2d5e826322cc455dff1b8bed70e690
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: c2a968334ecf3ddb90a3f97841cc191c553b39ca
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460874"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799405"
 ---
 # <a name="set-up-enrollment-for-macos-devices-in-intune"></a>Configurar a inscrição para dispositivos macOS no Intune
 

@@ -1,6 +1,6 @@
 ---
 title: Promover a adoção por parte de utilizadores finais de unidades com acesso condicional
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Saiba como utilizar o acesso condicional para promover a inscrição no Microsoft Intune.
 keywords: ''
 author: dougeby
@@ -17,12 +17,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 13215879c90c15a366fa3f2ab8df2c401b660bcc
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 803bcda24b7d6fa1cf923ff28848b8d2b71cf62e
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57393977"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798389"
 ---
 # <a name="drive-end-user-adoption-with-conditional-access-in-microsoft-intune"></a>Promover a adoção por parte de utilizadores finais de unidades com acesso condicional no Microsoft Intune
 

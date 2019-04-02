@@ -1,6 +1,6 @@
 ---
 title: Políticas de configuração para aplicações geridas sem inscrição de dispositivos
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Saiba como configurar políticas para aplicações geridas sem inscrição de dispositivos.
 keywords: ''
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6f18676f7bb6117364e49fc0ce41619ab032a4e9
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 92aae318fd8ffb53b933ca8ddce21a6c6220f494
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57396065"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798189"
 ---
 # <a name="add-app-configuration-policies-for-managed-apps-without-device-enrollment"></a>Adicionar políticas de configuração da aplicação para aplicações geridas sem inscrição de dispositivos
 

@@ -1,6 +1,6 @@
 ---
 title: Associação de Dispositivos do Utilizador – Armazém de Dados do Intune
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: A entidade de UserDeviceAssociation contém associações de dispositivo do utilizador na sua organização.
 keywords: Armazém de Dados do Intune
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5d3473b04a1d015f88d27359864a84227215b62a
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 466066faf03cbdf560697a04310eac844d4f1b87
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565303"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798265"
 ---
 # <a name="reference-for-user-device-association-entity"></a>Referência para a entidade Associação de Dispositivo do Utilizador
 

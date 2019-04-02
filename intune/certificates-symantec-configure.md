@@ -1,6 +1,6 @@
 ---
 title: Emitir certificados Symantec PKCS com o Microsoft Intune
-titlesuffix: ''
+titleSuffix: ''
 description: Instale e configure o Intune Certificate Connector para emitir certificados PKCS a partir do Serviço Web Symantec PKI Manager para dispositivos geridos pelo Intune.
 keywords: ''
 author: MandiOhlinger
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ae58f7ed3d019446b8b6fdb96e71c98a479df75f
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: da57b14f8196251ee8c77de3ffcd48f5b586a12f
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57390596"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799090"
 ---
 # <a name="set-up-intune-certificate-connector-for-symantec-pki-manager-web-service"></a>Configurar o Intune Certificate Connector para o Serviço Web Symantec PKI Manager
 

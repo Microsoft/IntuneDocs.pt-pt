@@ -1,6 +1,6 @@
 ---
 title: Dispositivos – Armazém de Dados do Intune
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Tópico de referência para a categoria Devices das coleções de entidades na API do Armazém de Dados do Intune.
 keywords: Armazém de Dados do Intune
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 29213400b5baf9705c188bb45b3666b65262d577
-ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
+ms.openlocfilehash: e8af3dffbb4875e588d20eeaef5193122c1f1f49
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58358238"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799688"
 ---
 # <a name="reference-for-devices-entities"></a>Referência para as entidades de dispositivos
 

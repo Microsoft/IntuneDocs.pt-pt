@@ -1,6 +1,6 @@
 ---
 title: Referência para as entidades de aplicações
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Tópico de referência para a categoria Application das coleções de entidades na API do Armazém de Dados do Intune.
 keywords: Armazém de Dados do Intune
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d47d7a52a212733955d441b463ef66d89f8d9143
-ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
+ms.openlocfilehash: 68eeb174b7cc2be09ea4b6da9f151695157ac819
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58358192"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799253"
 ---
 # <a name="reference-for-application-entities"></a>Referência para as entidades de aplicações
 

@@ -1,6 +1,6 @@
 ---
 title: Implementação de aplicações para Windows 10 através do Microsoft Intune
-titlesuffix: ''
+titleSuffix: ''
 description: Saiba mais sobre cenários de implementação de aplicação com o Windows 10 disponíveis com o Microsoft Intune.
 keywords: ''
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 230d8fd0adf8bf904af3bd1301ad6144234f8da0
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: f9c263b9b5fbb7916fb1ae9b9835e2647593f3b1
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57397955"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798201"
 ---
 # <a name="windows-10-app-deployment-using-microsoft-intune"></a>Implementação de aplicações para Windows 10 através do Microsoft Intune 
 

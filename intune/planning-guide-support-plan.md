@@ -1,6 +1,6 @@
 ---
 title: Desenvolver um plano de suporte
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Este artigo ajuda-o a desenvolver um plano de suporte do Intune para uma implementação do Microsoft Intune.
 keywords: ''
 author: dougeby
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f73e4414fc525028755610c80f6aff2195bc13a8
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 46b01a4b45e76ff290038bef57ee6a2def8e82b8
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57390544"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798775"
 ---
 # <a name="develop-a-support-plan"></a>Desenvolver um plano de suporte
 

@@ -1,6 +1,6 @@
 ---
 title: Terminar a sessão do utilizador num dispositivo iOS
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Saiba como terminar a sessão do utilizador atual de um dispositivo iOS com o Intune.
 keywords: ''
 author: ErikjeMS
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8e9ce1a42613e88e7cfbd3fe32345da2d97226cd
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 23af88f4d595669589b8f7104cbac0c5b695602f
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57396486"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798582"
 ---
 # <a name="logout-the-current-user-on-intune-managed-ios-devices"></a>Terminar a sessão do utilizador atual em dispositivos iOS geridos pelo Intune
 

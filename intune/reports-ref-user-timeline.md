@@ -1,6 +1,6 @@
 ---
 title: Linha Cronológica da Entidade do Utilizador do Armazém de Dados
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Saiba como o armazém de dados do Microsoft Intune representa os utilizadores numa linha cronológica.
 keywords: Armazém de Dados do Intune
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 53783c5a743f06775048ac518def8a7ee6d9c45e
-ms.sourcegitcommit: d38ca1bf44e17211097aea481e00b6c1e87effae
+ms.openlocfilehash: cfa1df8053301b92c04d92f8c48d2c6c34e30129
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58514406"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799756"
 ---
 # <a name="user-lifetime-representation-in-the-microsoft-intune-data-warehouse"></a>Representação da duração do utilizador no Armazém de Dados do Microsoft Intune
 

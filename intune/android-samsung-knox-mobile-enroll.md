@@ -1,6 +1,6 @@
 ---
 title: Inscrever automaticamente dispositivos Android com a inscrição de Mobile do Samsung Knox
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Saiba como inscrever dispositivos Android através do Samsung KME
 keywords: ''
 author: ErikjeMS
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3056c2deac82ebdd96c080884600b54983cc26d3
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 3f753b959d7b2c64358abd92f4276a8e7f55c0f6
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57392245"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798905"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>Inscrever automaticamente dispositivos Android através do Samsung Knox Mobile Enrollment
 

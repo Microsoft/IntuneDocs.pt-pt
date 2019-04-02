@@ -1,6 +1,6 @@
 ---
 title: Introdução ao planeamento e estruturação do Intune
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Este artigo serve de introdução às secções de planeamento, estruturação e implementação do Microsoft Intune. Ferramentas para ajudá-lo a determinar as metas, requisitos e cenários de casos de utilização, criar planos de implementação e comunicação, suporte, testes e planos de validação.
 keywords: ''
 author: dougeby
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e59706c1a6bbf3195f402bf9582baab13d3905d9
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5b8a4a76e59604038ae133701b3378c573e862aa
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57398924"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799574"
 ---
 # <a name="intune-deployment-planning-design-and-implementation-guide"></a>Guia de planeamento, estruturação e implementação do Intune
 

@@ -1,6 +1,6 @@
 ---
 title: Gerir o acesso Web com um browser protegido por política
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Utilize um browser protegido por política para restringir a navegação Web e a transferência de dados da Web.
 keywords: ''
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cac17395d7615ef038e99dc5c14357d6388ec6ec
-ms.sourcegitcommit: b0b1030017e741d92c508130447a8242d9ad7a51
+ms.openlocfilehash: 03153450e51b7f83f2e426d5a7bdf25e7fb95bbe
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58343013"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799484"
 ---
 # <a name="manage-internet-access-using-a-microsoft-intune-policy-protected-browser"></a>Gerir o acesso à Internet através de um browser protegido por políticas do Microsoft Intune
 

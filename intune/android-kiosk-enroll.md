@@ -1,6 +1,6 @@
 ---
 title: Configurar a inscrição no Intune para dispositivos Android Enterprise dedicado
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Saiba como inscrever dispositivos Android Enterprise dedicado no Intune.
 keywords: ''
 author: ErikjeMS
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2449656c4db4c0a46fe0e10e0cf00a50e460cce1
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5e980049797ffc3c727d89c197037c019b94326a
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57397266"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798042"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-dedicated-devices"></a>Configurar a inscrição do Intune de dispositivos empresariais Android dedicado
 

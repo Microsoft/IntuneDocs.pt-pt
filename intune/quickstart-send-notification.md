@@ -1,6 +1,6 @@
 ---
 title: 'Guia de Início Rápido: enviar notificações para dispositivos não conformes'
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Neste guia de início rápido, irá utilizar o Microsoft Intune para enviar notificações por e-mail para dispositivos não conformes.
 keywords: ''
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c35f16eef9d7e62d5148cce7bd772703d6581d7d
-ms.sourcegitcommit: d38ca1bf44e17211097aea481e00b6c1e87effae
+ms.openlocfilehash: 1ef628623c7f14a703025e80a2ade4283d36c007
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58514323"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799531"
 ---
 # <a name="quickstart-send-notifications-to-noncompliant-devices"></a>Início rápido: Send notifications to noncompliant devices (Enviar notificações para dispositivos que não estejam em conformidade)
 

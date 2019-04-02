@@ -1,6 +1,6 @@
 ---
 title: Definir a autoridade de gestão de dispositivos móveis
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Definir a autoridade de gestão de dispositivos móveis no Intune.
 keywords: ''
 author: ErikjeMS
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 41573eb05039dceeef45ba3cf04e890603a90362
-ms.sourcegitcommit: c4258bb5824daf3f7e0ac3bb8afc539bde4d95da
+ms.openlocfilehash: 898c4eee19aa50136736f4ee72c55e4e8931317d
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "57991152"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799298"
 ---
 # <a name="set-the-mobile-device-management-authority"></a>Definir a autoridade de gestão de dispositivos móveis
 

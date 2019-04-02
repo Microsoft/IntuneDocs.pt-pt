@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f2b02e840e787cd44e087c38503cbaa1fb4b084f
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 6f63c5a3dbeb7c8626ec1412dbcee661b82afc88
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57389152"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798467"
 ---
 # <a name="categorize-devices-into-groups"></a>Categorizar dispositivos em grupos
 

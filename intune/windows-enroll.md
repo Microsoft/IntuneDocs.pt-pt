@@ -1,6 +1,6 @@
 ---
 title: Configurar a inscrição para dispositivos Windows com o Microsoft Intune
-titlesuffix: ''
+titleSuffix: ''
 description: Configure a inscrição para dispositivos Windows.
 keywords: ''
 author: ErikjeMS
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3aefdd20a3a77721852281930a9a2ef83cb088f1
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: d7dd4ab5f7cecfa8a765b6dfa038b73015a0c768
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57390489"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798292"
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Configurar a inscrição para dispositivos Windows
 

@@ -1,6 +1,6 @@
 ---
 title: Processo de integração do Intune
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Este artigo fornece todos os detalhes que precisa de ter em consideração quando integrar a solução do Microsoft Intune apenas na cloud no seu ambiente.
 keywords: ''
 author: dougeby
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 76f1c113562e70bd819b2519a8b78d5824ef715b
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 9cd9f14d48c86119acf862e2d335fe88fb2a9a1c
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460704"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799459"
 ---
 # <a name="implement-your-microsoft-intune-plan"></a>Implementar o plano do Microsoft Intune
 

@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/22/2019
+ms.date: 03/31/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 46b2dbf31d5813a646fc2ea1a97f7ba273c3c6e9
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 1538693923a1fcefcfee06022ed4c11d746c3be9
+ms.sourcegitcommit: e63e3debb5f4d9a757f767913e72e39742137b17
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57394341"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58788503"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>Quais são as formas comuns de utilizar o acesso condicional com o Intune?
 
@@ -72,15 +72,15 @@ Quando os dispositivos não cumprem as condições definidas, o utilizador final
 
 O conector do Intune Exchange solicita todos os registos do Exchange Active Sync (EAS) que existem no servidor do Exchange para que o Intune possa ter em conta esses registos EAS e mapeá-los para registos de dispositivo do Intune. Esses registos são dispositivos inscritos e reconhecido pelo Intune. Este processo permite ou bloqueia o acesso do e-mail.
 
-Se o registo EAS for novo e o Intune não tiver conhecimento dele, o Intune emite um comandlet que bloqueia o acesso ao e-mail. Veja a seguir mais detalhes sobre como este processo funciona:
+Se o registo EAS for novo e o Intune não tiver conhecimento dele, o Intune emite um cmdlet (pronunciado "command-let"), que bloqueia o acesso a emails. Veja a seguir mais detalhes sobre como este processo funciona:
 
 ![Fluxograma do Exchange no local com CA](./media/ca-intune-common-ways-1.png)
 
 1.  O utilizador tenta aceder ao e-mail empresarial, que está alojado no Exchange 2010 SP1 ou posterior no local.
 
-2.  Se o dispositivo não for gerido pelo Intune, o acesso ao e-mail será bloqueado. O Intune envia uma notificação de bloqueio ao cliente EAS.
+2.  Se o dispositivo não for gerido pelo Intune, será bloqueado o acesso ao e-mail. O Intune envia uma notificação de bloqueio para o cliente EAS.
 
-3.  O EAS recebe a notificação de bloqueio, move o dispositivo para a quarentena e envia o e-mail de quarentena com os passos de correção que incluem ligações para que os utilizadores possam inscrever os dispositivos.
+3.  O EAS recebe a notificação de bloqueio, move o dispositivo para a quarentena e envia o e-mail de quarentena com os passos de remediação que incluem ligações para que os utilizadores podem inscrever os respetivos dispositivos.
 
 4.  Ocorre o processo de Associação à área de trabalho, que é o primeiro passo para que o dispositivo seja gerido pelo Intune.
 
@@ -92,7 +92,7 @@ Se o registo EAS for novo e o Intune não tiver conhecimento dele, o Intune emit
 
 8.  O Registo de Dispositivo do Azure AD guarda as informações de estado do dispositivo.
 
-9.  Se o utilizador cumprir as políticas de acesso condicional, o Intune emite um comandlet através do conector do Intune Exchange que permite a sincronização da caixa de correio.
+9.  Se o utilizador cumprir as políticas de acesso condicional, o Intune emite um cmdlet através do conector do Intune Exchange que permite que a caixa de correio a sincronizar.
 
 10. O servidor do Exchange envia a notificação ao cliente EAS para que o utilizador possa aceder ao e-mail.
 
@@ -102,10 +102,10 @@ O Intune avalia e gere o estado do dispositivo.
 
 #### <a name="whats-the-exchange-server-role"></a>Qual é a função de servidor do Exchange?
 
-O servidor do Exchange fornece a API e a infraestrutura para mover os dispositivos para a quarentena.
+Servidor do Exchange fornece a API e a infraestrutura para mover os dispositivos para colocar em quarentena.
 
 > [!IMPORTANT]
-> Tenha em atenção que o utilizador que está a utilizar o dispositivo tem de ter um perfil de conformidade atribuído para que o dispositivo seja avaliado em termos de conformidade. Se não estiver implementada nenhuma política de conformidade para o utilizador, o dispositivo será tratado como compatível e não serão aplicadas restrições de acesso.
+> Tenha em atenção que o utilizador que está a utilizar o dispositivo tem de ter um perfil de conformidade atribuído a elas para que o dispositivo pode ser avaliado relativamente à conformidade. Se não estiver implementada nenhuma política de conformidade para o utilizador, o dispositivo será tratado como compatível e não serão aplicadas restrições de acesso.
 
 ### <a name="conditional-access-based-on-network-access-control"></a>Acesso condicional com base no controlo de acesso de rede
 

@@ -1,6 +1,6 @@
 ---
 title: Adicionar aplicações de linha de negócio Windows Phone ao Microsoft Intune
-titlesuffix: ''
+titleSuffix: ''
 description: Saiba como adicionar uma aplicação de linha de negócio (LOB) Windows Phone com o Microsoft Intune.
 keywords: ''
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 828ad7b42338e789c11c1f68b2b8b7daf0c72547
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 575976856382f5d5fe261d20391f1a5d82b73a1e
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57397253"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798842"
 ---
 # <a name="add-a-windows-phone-line-of-business-app-to-microsoft-intune"></a>Adicionar aplicações de linha de negócio Windows Phone ao Microsoft Intune
 

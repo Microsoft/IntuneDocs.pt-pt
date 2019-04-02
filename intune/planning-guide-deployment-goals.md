@@ -1,6 +1,6 @@
 ---
 title: Determinar metas, objetivos e obstáculos da implementação
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Este artigo ajuda a determinar as metas, os objetivos e os obstáculos da implementação para uma implementação apenas na cloud do Microsoft Intune.
 keywords: ''
 author: dougeby
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f9d7f04c9d625e6c263f4feb0eca7c8b6cadaf47
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: cd1fd6198e71dd585d0216c0850c0140f5e71344
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57393285"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798767"
 ---
 # <a name="determine-deployment-goals-objectives-and-challenges"></a>Determinar metas, objetivos e obstáculos da implementação
 

@@ -1,6 +1,6 @@
 ---
 title: Adicionar políticas de configuração da aplicação para dispositivos iOS geridos
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Saiba como utilizar políticas de configuração da aplicação para disponibilizar dados de configuração a uma aplicação iOS quando é executada.
 keywords: ''
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ac095eadbca5702ce3ff73e9e5ce1c77fac71eb3
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 9273d547d72fd6cf10d2addc5efff2eba8e18205
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57400097"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799463"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Adicionar políticas de configuração da aplicação para dispositivos iOS geridos
 

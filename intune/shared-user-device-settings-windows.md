@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/09/2019
+ms.date: 04/01/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 28f8a589f20cb63ad4f9873942e9ad511d729b37
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 535f66c68b066454ce9706b1dd1d7a4fce5c265c
+ms.sourcegitcommit: e63e3debb5f4d9a757f767913e72e39742137b17
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566459"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58788492"
 ---
 # <a name="windows-10-and-later-settings-to-manage-shared-devices-using-intune"></a>Definições Windows 10 e posteriores para gerir dispositivos partilhados, através do Intune
 
@@ -60,6 +60,9 @@ Para obter mais informações sobre esta funcionalidade no Intune, consulte [con
 - **Políticas de educação**: Escolher **ativado** para utilizar as definições recomendadas para dispositivos utilizados nas escolas, que são mais restritivas. Escolher **desativado** para que as políticas de educação recomendada e predefinida não são utilizadas. **Não configurado** deixa esta definição não geridos pelo Intune (predefinição) e não instalar quaisquer políticas para controlar esta definição num dispositivo.
 
   Para obter mais informações sobre o que fazem as políticas de educação, consulte [recomendações de configuração do Windows 10 para os clientes de educação](https://docs.microsoft.com/education/windows/configure-windows-for-education).
+
+> [!TIP]
+> [Configurar um PC compartilhado ou convidado](https://docs.microsoft.com/windows/configuration/set-up-shared-or-guest-pc) (abre-se outro web site do docs) é um ótimo recurso sobre esta funcionalidade do Windows 10, incluindo conceitos e as políticas de grupo que podem ser definidas no modo partilhado.
 
 ## <a name="next-steps"></a>Passos Seguintes
 

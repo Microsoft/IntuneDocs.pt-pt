@@ -1,6 +1,6 @@
 ---
 title: Inscrição no Intune configuração do Android Enterprise dispositivos totalmente geridos
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Saiba como inscrever dispositivos Android Enterprise totalmente geridos no Intune.
 keywords: ''
 author: ErikjeMS
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d50afb7cd5e0d6236dde36770f11f7ac3e3262fa
-ms.sourcegitcommit: c4258bb5824daf3f7e0ac3bb8afc539bde4d95da
+ms.openlocfilehash: 0e3615f1f090af3ce589e83f11d12e95a2f07641
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "57991068"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799401"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-fully-managed-devices-preview"></a>Configurar o Intune inscrição do Android Enterprise totalmente dispositivos geridos (pré-visualização)
 

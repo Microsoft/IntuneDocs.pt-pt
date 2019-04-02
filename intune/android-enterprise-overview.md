@@ -1,6 +1,6 @@
 ---
 title: Gerir dispositivos de perfil de trabalho do Android Enterprise no Microsoft Intune
-titlesuffix: ''
+titleSuffix: ''
 description: Microsoft Intune gere dispositivos de perfil de trabalho do Android Enterprise para fornecer privacidade e capacidades de gestão adicionais quando as pessoas utilizam os respetivos dispositivos Android pessoais para o trabalho.
 keywords: ''
 author: ErikjeMS
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3f7726b99a870a404b5fd1ca95dad9d9a48ea3a7
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 305ed5c18ad0e8beeaa47bc644266d4cb19f80e6
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57396358"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799335"
 ---
 # <a name="manage-android-work-profile-devices-with-intune"></a>Gerir dispositivos com perfil de trabalho do Android com o Intune
 

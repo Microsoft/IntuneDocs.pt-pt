@@ -1,6 +1,6 @@
 ---
 title: definições de dispositivos macOS no Microsoft Intune – Azure | Documentos da Microsoft
-titlesuffix: ''
+titleSuffix: ''
 description: Adicionar, configurar, ou criar definições em dispositivos macOS para restringir funcionalidades, incluindo a definição de requisitos de palavra-passe, controlar o ecrã bloqueado, utilize aplicações incorporadas, adicionar restrito ou aplicações aprovadas, lidar com dispositivos bluetooth, ligar à cloud para cópia de segurança e o armazenamento, ativar o modo de local público, adicionar domínios e controlar como os utilizadores interagem com o browser Safari no Microsoft Intune.
 keywords: ''
 author: MandiOhlinger
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0a59c40a5f1095e832f84c4b21d553e3c5f11ed7
-ms.sourcegitcommit: 464cf677e3746eaba46836dedfb94572a75032f9
+ms.openlocfilehash: 5feec66e791da4038bd069cdad69a7ba573f27f3
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58330424"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798382"
 ---
 # <a name="macos-device-settings-to-allow-or-restrict-features-using-intune"></a>definições de dispositivos macOS para permitir ou restringir funcionalidades com o Intune
 

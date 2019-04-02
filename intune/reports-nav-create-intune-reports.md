@@ -1,6 +1,6 @@
 ---
 title: Utilizar o Armazém de Dados do Intune
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Utilize o Armazém de Dados do Intune para criar relatórios que forneçam informações sobre o ambiente móvel da sua empresa.
 keywords: Armazém de Dados do Intune
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c3112683d44b7c4d4a3e9d1bccc6fb8c06450600
-ms.sourcegitcommit: c4258bb5824daf3f7e0ac3bb8afc539bde4d95da
+ms.openlocfilehash: 0728fefc40bc82db7926faf282a69d0471c3a1ea
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "57991046"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798124"
 ---
 # <a name="use-the-microsoft-intune-data-warehouse"></a>Utilizar o armazém de dados do Microsoft Intune
 

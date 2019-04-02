@@ -1,6 +1,6 @@
 ---
 title: Exigir a autenticação multifator para inscrição de dispositivos no Intune
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Como exigir a autenticação multifator no Azure AD para a inscrição de dispositivos no Intune.
 keywords: ''
 author: ErikjeMS
@@ -17,12 +17,12 @@ ROBOTS: ''
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d1df55ba9c3c2bc07a413ed6cc05e2f92c7f4a92
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: cf5611b3b9292222582d66cae39b4f751279dcec
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57391970"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799632"
 ---
 # <a name="require-multi-factor-authentication-for-intune-device-enrollments"></a>Exigir a autenticação multifator para inscrições de dispositivos no Intune
 

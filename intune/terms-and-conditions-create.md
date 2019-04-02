@@ -1,6 +1,6 @@
 ---
 title: Definir termos e condições no Microsoft Intune
-titlesuffix: ''
+titleSuffix: ''
 description: Defina os termos e condições que os utilizadores veem no Portal da Empresa do Intune.
 keywords: ''
 author: ErikjeMS
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2ea52d44bd1107c2cb5b177a8838ea4ec384a6ac
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 7c056e86f7e768d79b4851fda327dc2e32fa349c
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57389408"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798276"
 ---
 # <a name="terms-and-conditions-for-user-access"></a>Termos e condições de acesso de utilizador
 

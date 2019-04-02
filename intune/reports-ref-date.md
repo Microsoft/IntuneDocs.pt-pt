@@ -1,6 +1,6 @@
 ---
 title: Data – Armazém de Dados do Intune
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Tópico de referência para a categoria Date das coleções de entidades na API do Armazém de Dados do Intune.
 keywords: Armazém de Dados do Intune
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2813c2b3f94bf0d57d63b75250239149eb2c1726
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 0f69da2ced8e9c249514bb30490372db66c00b8c
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566000"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798514"
 ---
 # <a name="reference-for-date-entity"></a>Referência para a entidade de data
 

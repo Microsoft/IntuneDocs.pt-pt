@@ -1,6 +1,6 @@
 ---
 title: Inscrever dispositivos com uma conta do gestor de inscrição de dispositivos
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Utilize a conta do gestor de inscrição de dispositivos para inscrever dispositivos no Intune.
 keywords: ''
 author: ErikjeMS
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0dacd331ead84771447168808a354db5524b5ae7
-ms.sourcegitcommit: d38ca1bf44e17211097aea481e00b6c1e87effae
+ms.openlocfilehash: e98398f6d5bf0fe077640f83992ba3134479e81b
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58514355"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58797786"
 ---
 # <a name="enroll-devices-in-intune-by-using-a-device-enrollment-manager-account"></a>Inscrever dispositivos no Intune ao utilizar uma conta de Gestor de inscrição de dispositivos
 

@@ -1,6 +1,6 @@
 ---
 title: Configurar políticas de proteção de aplicações durante a migração do Intune
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Este artigo fornece os passos necessários para configurar as políticas de proteção de aplicações durante uma migração do Microsoft Intune.
 keywords: ''
 author: Erikre
@@ -17,12 +17,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dbca9006348e2bad4f37f8a27be5164ea9b25431
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 076750334c8faba6e9a99368d7af682b10de8962
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57395919"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798197"
 ---
 # <a name="configure-app-protection-policies-optional"></a>Configurar políticas de proteção de aplicações (opcional)
 

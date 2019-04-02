@@ -1,6 +1,6 @@
 ---
 title: Resolver problemas com a instalação de aplicações
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Utilize o painel de resolução de problemas do Microsoft Intune para o ajudar a resolver problemas com a instalação de aplicações.
 keywords: ''
 author: Erikre
@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5a5e000a973932db0bbaa215ea94976219ff905c
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 574f509383891ff3e8e0f4c1b04a19832a378829
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57577851"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799506"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>Resolver problemas com a instalação de aplicações
 

@@ -1,6 +1,6 @@
 ---
 title: Considerações especiais sobre a migração
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Este artigo fornece considerações especiais sobre a migração antes de iniciar uma campanha de migração para o Microsoft Intune.
 keywords: ''
 author: dougeby
@@ -17,12 +17,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3d9c41a2ad884b2d8404d42f6e8de95e3b33a39d
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 15a3130263e19f8d6bef55427bf9a53f8e8b42ef
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57396986"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799413"
 ---
 # <a name="special-migration-considerations"></a>Considerações especiais sobre a migração
 

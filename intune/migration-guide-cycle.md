@@ -1,6 +1,6 @@
 ---
 title: Como funciona um ciclo de migração do Intune típico
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Este artigo explica como um ciclo de migração do Microsoft Intune funciona e dá-lhe exemplos sobre como processar os ciclos de migração.
 keywords: ''
 author: dougeby
@@ -17,12 +17,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 85a644a8112ed1a8afa0e453a4f61de7127b79e1
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 3919ae461fbbd5c5c69c1fbe4983cc8468f576c6
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57391916"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798610"
 ---
 # <a name="typical-migration-cycle"></a>Ciclo de migração típico
 

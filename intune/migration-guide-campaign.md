@@ -1,6 +1,6 @@
 ---
 title: Iniciar uma campanha de migração do Intune
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Este artigo fornece orientações sobre como iniciar uma campanha de migração para o Microsoft Intune.
 keywords: ''
 author: dougeby
@@ -17,12 +17,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8cfba95bdb25dcfa47e277d895f1fc4fbcc4a3a4
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: db56bbc180a84e8b3972ffc6473126efd366faa8
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57398547"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799451"
 ---
 # <a name="phase-2-migration-campaign"></a>Fase 2: Campanha de migração
 

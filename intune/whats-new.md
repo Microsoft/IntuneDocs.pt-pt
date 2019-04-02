@@ -1,6 +1,6 @@
 ---
 title: Novidades no Microsoft Intune – Azure | Microsoft Docs
-titlesuffix: ''
+titleSuffix: ''
 description: Descobrir as novidades do Intune no portal do Azure
 keywords: ''
 author: ErikjeMS
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c19973190c367c37e96e66eae8d507b4d94639e9
-ms.sourcegitcommit: e23e78a563928ed2b2cbc588f2aa65678f7bb409
+ms.openlocfilehash: 5fcd355023ceff43cf47c198a84c9c6e2867a08f
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58618475"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799302"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 
@@ -46,6 +46,13 @@ Saiba mais sobre as novidades todas as semanas no Microsoft Intune. Também pode
 -->     
 
 <!-- ########################## -->
+## <a name="week-of-march-25-2019"></a>Semana de 25 de Março de 2019
+
+### <a name="monitor-and-troubleshoot"></a>Monitorizar e resolver problemas
+
+### <a name="support-for-the-power-bi-compliance-app-from-the-data-warehouse-blade-in-microsoft-intune----4260871---"></a>Suporte para a aplicação de conformidade do Power BI a partir do painel do armazém de dados no Microsoft Intune <!-- 4260871 -->
+Anteriormente, o **ficheiros de transferir o Power BI** ligação na **armazém de dados do Intune** painel transferido um relatório de armazém de dados do Intune (ficheiro. pbix). Este relatório foi substituído com a aplicação de conformidade do Power BI. A aplicação de conformidade do Power BI não precisará de configuração ou de carregamento especial. Ele irá abrir diretamente no portal online do Power BI e exibir dados especificamente para o seu inquilino do Intune com base nas suas credenciais. No Intune, selecione o **definir o armazém de dados do Intune** ligação no lado direito do painel do Intune. Em seguida, clique em **obter a aplicação do Power BI**. Para obter mais informações, consulte [ligar ao armazém de dados com o Power BI](reports-proc-get-a-link-powerbi.md).
+
 ## <a name="week-of-march-18-2019"></a>Semana de 18 de Março de 2019
 
 ### <a name="app-management"></a>Gestão de aplicações
@@ -88,13 +95,6 @@ Aplica-se a: Windows 10 e posterior
 Quando inicia sessão Intune encaminhamento recursos do Azure monitor, também pode encaminhar registos operacionais. Nesta atualização, o registos operacionais também fornecem informações sobre dispositivos não conformes. 
 
 Para obter mais informações sobre esta funcionalidade, consulte [enviar dados de registo para armazenamento, os hubs de eventos ou do log analytics no Intune](review-logs-using-azure-monitor.md).
-
-#### <a name="create-and-use-device-configuration-profiles-on-android-zebra-devices-in-intune----3895244---"></a>Criar e utilizar perfis de configuração do dispositivo em dispositivos das riscas das Android no Intune <!-- 3895244 -->
-Esta atualização, o Intune suporta a configuração de dispositivos das riscas das Android. Especificamente, pode: 
-
-- Criar um perfil de configuração do dispositivo e aplicar as definições para dispositivos as riscas das Android através de perfis de extensões de mobilidade (MX) gerados pelo StageNow (**configuração do dispositivo** > **perfis**  >  **Criar perfil** > **Android** para a plataforma).
-
-Aplica-se a: Android
 
 #### <a name="route-logs-to-azure-monitor-in-more-intune-workloads----3804627---"></a>Registos de rota para o Azure Monitor em mais cargas de trabalho do Intune <!-- 3804627 -->
 No Intune, pode encaminhar a auditoria e registos operacionais para os hubs de eventos, armazenamento e do log analytics no Azure Monitor (**Intune** > **monitorização** > **diagnóstico definições**). Nesta atualização, pode encaminhar esses logs em mais Intune cargas de trabalho, incluindo a conformidade, configurações, aplicações de cliente e muito mais. 

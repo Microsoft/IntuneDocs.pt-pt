@@ -1,6 +1,6 @@
 ---
 title: Detalhes de largura de banda e requisitos de rede do Microsoft Intune
-titlesuffix: ''
+titleSuffix: ''
 description: Reveja os detalhes de largura de banda e requisitos de configuração de rede do Intune.
 keywords: ''
 author: ErikjeMS
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3e59726bfbc2a86e5d901d06292c4e4d8ac0a983
-ms.sourcegitcommit: d38ca1bf44e17211097aea481e00b6c1e87effae
+ms.openlocfilehash: 8ba14879cb22d2c8bab1beecb63fe9be8497d91e
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58514484"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798771"
 ---
 # <a name="intune-network-configuration-requirements-and-bandwidth"></a>Largura de banda e requisitos de configuração de rede do Intune
 

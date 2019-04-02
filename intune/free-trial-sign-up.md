@@ -1,6 +1,6 @@
 ---
 title: Início Rápido – experimentar gratuitamente o Microsoft Intune
-titlesuffix: ''
+titleSuffix: ''
 description: Neste início rápido, criará uma subscrição de avaliação gratuita, terá conhecimento das configurações suportadas e dos requisitos de rede e configurará opcionalmente o seu nome de domínio.
 keywords: ''
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 94c83ab0f70a5a40bd745b4db83ef16ac14acd00
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5cc7593818027f8b1c8c3600143e9909662cd922
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57756858"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799646"
 ---
 # <a name="quickstart-try-microsoft-intune-for-free"></a>Início rápido: Experimente gratuitamente o Microsoft Intune 
 

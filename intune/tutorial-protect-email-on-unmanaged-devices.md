@@ -1,6 +1,6 @@
 ---
 title: Tutorial - proteger o e-mail do Exchange Online em dispositivos não geridos
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Aprenda a proteger o Exchange Online do Office 365 com políticas de proteção de aplicações do Intune e acesso condicional do Azure AD.
 keywords: ''
 author: brenduns
@@ -17,12 +17,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 17638838e049e5940b1b59019be6573b7eb09d64
-ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
+ms.openlocfilehash: e6224a0dae7c0aa3d80d4e64331a668953220f65
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58490664"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798789"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-unmanaged-devices"></a>Tutorial: Proteger o e-mail do Exchange Online em dispositivos não geridos
 

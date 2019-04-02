@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/14/2018
+ms.date: 04/01/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 50be92847922458a7145e02bcc2125ddadc6976f
-ms.sourcegitcommit: c4258bb5824daf3f7e0ac3bb8afc539bde4d95da
+ms.openlocfilehash: 33f24a3d7b30973855bb303bb97bf703cd4dc5fa
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "57991112"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798251"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Como configurar a aplicação Portal da Empresa do Microsoft Intune
 
@@ -91,7 +91,7 @@ Apresente uma imagem de marca que reflita a marca da sua empresa. Depois de guar
 
 |Nome do campo|Mais informações|
 |---|---|
-|**Carregar a imagem de marca**| Esta opção está disponível para permitir que apresente uma imagem de fundo na página de perfil do utilizador na aplicação Portal da Empresa.<p>*Nota*: A imagem poderão ser apresentada de forma diferente para diferentes plataformas.<p><ul><li>Largura da imagem recomendado: Menor que 1125px, mas não inferior 640px</li><li>Tamanho máx. da imagem: 1.3 MB</li><li>Tipo de ficheiro: PNG, JPG ou JPEG</li></ul>|
+|**Carregar a imagem de marca**| Esta opção permite-lhe exibir uma imagem de marca. O Portal da empresa para iOS, ele mostra como uma imagem de fundo na página de perfil do usuário.<p><ul><li>Largura da imagem recomendado: Menor que 1125px, mas não inferior 640px</li><li>Tamanho máx. da imagem: 1.3 MB</li><li>Tipo de ficheiro: PNG, JPG ou JPEG</li></ul>|
 
 A imagem de marca correta pode melhorar a confiança do utilizador no Portal da Empresa ao apresentar uma imagem sólida da marca da sua empresa. Aqui estão algumas sugestões que poderá considerar para comprar, escolher e otimizar a imagem do Portal da Empresa. 
 

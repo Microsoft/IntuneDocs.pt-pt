@@ -1,6 +1,6 @@
 ---
 title: Perfis de aprovisionamento de aplicações iOS no Microsoft Intune
-titlesuffix: ''
+titleSuffix: ''
 description: O Intune proporciona-lhe as ferramentas necessárias para atribuir proativamente um novo perfil de aprovisionamento a dispositivos que tenham aplicações prestes a expirar.
 keywords: ''
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4b92f50be9b1473c9f2d13b6946b1b069bfbed07
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 11b483fc5a0293999603b801a4844a73bab91347
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57399155"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798193"
 ---
 # <a name="use-ios-app-provisioning-profiles-to-prevent-your-apps-from-expiring"></a>Utilizar perfis de aprovisionamento de aplicações iOS para impedir as aplicações de expirar
 

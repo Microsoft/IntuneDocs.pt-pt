@@ -1,6 +1,6 @@
 ---
 title: 'Guia de Início Rápido: criar uma política de conformidade de palavra-passe para dispositivos Android'
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Neste guia de início rápido, irá utilizar o Microsoft Intune para definir o comprimento da palavra-passe obrigatório para dispositivos Android.
 keywords: ''
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 02050dc3cd1047a38e9be78a9e37be0bd313be26
-ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
+ms.openlocfilehash: f4a16272f32b8546e7e9bb12a22f16235ab49aed
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58490567"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799663"
 ---
 # <a name="quickstart-create-a-password-compliance-policy-for-android-devices"></a>Início rápido: Criar uma política de conformidade de palavra-passe para dispositivos Android
 
