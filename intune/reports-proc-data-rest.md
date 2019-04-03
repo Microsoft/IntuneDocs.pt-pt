@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/10/2019
+ms.date: 04/02/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cf33c512cf433475e2b37028b50e6c758a4ba760
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 5aa85ee044eae5fba9dcb7c380a29dda727c6492
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799069"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871455"
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>Obter dados a partir da API do Armazém de Dados do Intune com um cliente REST
 
@@ -98,11 +98,11 @@ Também precisa do ponto final. Para obter o ponto final do Armazém de Dados, p
 1. Inicie sessão no [Portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
 3. Selecione **Definir o Armazém de Dados do Intune** em **Outras tarefas**.
-4. Copie o URL de feed personalizado em **Utilize os serviços de relatórios de terceiros**. Deverá ter o seguinte aspeto: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
+4. Copie o URL de feed personalizado em **Utilize os serviços de relatórios de terceiros**. Deverá ter o seguinte aspeto: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=v1.0`
 
 O ponto final segue o formato seguinte: `https://fef.{yourtenant}.manage.microsoft.com/ReportingService/DataWarehouseFEService/{entity}?api-version={verson-number}`
 
-Por exemplo, a entidade **Datas** tem o seguinte aspeto: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`
+Por exemplo, a entidade **Datas** tem o seguinte aspeto: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=v1.0`
 
 Para obter mais informações, veja [Ponto final da API do Armazém de Dados do Intune](reports-api-url.md).
 
@@ -116,7 +116,7 @@ Para obter um novo token de acesso do Postman, tem de adicionar o URL de autoriz
 2.  Abra o Postman. Selecione **GET** da operação HTTP.
 3.  Cole o URL do ponto final no endereço. Deverá ter o seguinte aspeto:  
 
-    `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`
+    `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=v1.0`
 4.  Selecione o separador **Authorization (Autorização)** e **OAuth 2.0** a partir da lista **Type (Tipo)**.
 5.  Selecione **Obter Novo Token de Acesso**.
 6.  Certifique-se de que já adicionou o URL de Chamada de Retorno para a sua aplicação no Azure. O URL de Chamada de Retorno é `https://www.getpostman.com/oauth2/callback`.
@@ -197,7 +197,7 @@ O seguinte exemplo inclui um cliente REST simples. O código utiliza a classe **
    var emailAddress = "intuneadmin@yourcompany.com";
    var password = "password_of(intuneadmin@yourcompany.com)";
    var applicationId = "<Application ID>";
-   var warehouseUrl = "https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta";
+   var warehouseUrl = "https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=v1.0";
    var collectionName = "dates";
 
    var adalContext = new AuthenticationContext("https://login.windows.net/common/oauth2/token");

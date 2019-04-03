@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1ef628623c7f14a703025e80a2ade4283d36c007
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: ba835eb76dae19a13985a6175b4eceee0bae7f12
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799531"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871438"
 ---
 # <a name="quickstart-send-notifications-to-noncompliant-devices"></a>Início rápido: Send notifications to noncompliant devices (Enviar notificações para dispositivos que não estejam em conformidade)
 
@@ -40,7 +40,7 @@ Se não tiver uma subscrição do Intune, [inscreva-se numa conta de avaliação
 
 ## <a name="sign-in-to-intune"></a>Iniciar sessão no Intune
 
-Inicie sessão no portal do [Intune](https://aka.ms/intuneportal) como [Administrador global](users-add.md#types-of-administrators) ou um [Administrador do Serviço](users-add.md#types-of-administrators) do Intune. 
+Inicie sessão no portal do [Intune](https://aka.ms/intuneportal) como [Administrador global](users-add.md#types-of-administrators) ou um [Administrador do Serviço](users-add.md#types-of-administrators) do Intune. Se criou uma Subscrição de avaliação do Intune, a conta com a qual criou a subscrição é de Administrador global.
 
 ## <a name="create-a-notification-message-template"></a>Criar um modelo de mensagem de notificação
 
@@ -51,7 +51,7 @@ Para enviar um e-mail aos seus utilizadores, crie um modelo de mensagem de notif
 
    - **Nome**: *Administrador da Contoso*
    - **Assunto**: *Conformidade do dispositivo*
-   - **Mensagem**: *O dispositivo não está atualmente a cumprir nossos requisitos de conformidade de organizações.*
+   - **Mensagem**: *O dispositivo não está atualmente a cumprir os requisitos de conformidade de nossa organização.*
    - **Cabeçalho do e-mail – incluir o logótipo da empresa**: Defina como **ativado** para mostrar o logótipo da sua organização.
    - **Rodapé do e-mail – incluir o nome da empresa**: Defina como **ativado** para mostrar o nome da sua organização.
    - **Rodapé do e-mail – incluir informações de contacto**: Defina como **ativado** para mostrar informações de contacto da sua organização.
@@ -83,14 +83,13 @@ Os seguintes passos descrevem como pode criar uma política de conformidade para
 5. Defina a opção **Exigir uma palavra-passe para desbloquear os dispositivos móveis** para **Exigir**. Esta definição especifica quando deve ser exigido aos utilizadores que introduzam uma palavra-passe antes de ser concedido o acesso a informações nos respetivos dispositivos móveis. 
 6. Defina a opção **Comprimento mínimo da palavra-passe** para **6**. Esta definição especifica o número mínimo de dígitos ou carateres na palavra-passe.
 
-    ![Definições de Segurança do Sistema para criar uma nova política de conformidade](./media/quickstart-send-notification-02.png) 
+    <img alt="System Security settings for a new compliance policy" src="./media/quickstart-send-notification-02.png" width="600">
 
 7. Clique em **OK**, **OK** e **Criar** para criar a política de conformidade.
-8. Selecione o nome da sua nova política: **Conformidade do Windows 10**.
-9. Selecione **Propriedades** > **Ações para não conformidade** > **Adicionar**.
-10. Na caixa pendente **Ação**, confirme se a opção **Enviar mensagem de e-mail ao utilizador final** está selecionada.
-11. Selecione **Modelo de mensagem** > **Administrador da Contoso** > **Selecionar** para selecionar o modelo de mensagem que criou anteriormente neste tópico.
-12. Selecione **OK** > **OK** > **Guardar** para guardar as alterações.
+8. Selecione **Propriedades** > **Ações para não conformidade** > **Adicionar**.
+9. Na caixa pendente **Ação**, confirme se a opção **Enviar mensagem de e-mail ao utilizador final** está selecionada.
+10. Selecione **Modelo de mensagem** > **Administrador da Contoso** > **Selecionar** para selecionar o modelo de mensagem que criou anteriormente neste tópico.
+11. Selecione **ADICIONE** > **OK** > **guardar** para guardar as alterações.
 
 ## <a name="assign-the-policy"></a>Atribuir a política
 

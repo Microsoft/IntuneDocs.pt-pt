@@ -5,7 +5,7 @@ services: microsoft-intune
 author: ErikRe
 ms.author: erikre
 manager: dougeby
-ms.date: 12/05/2018
+ms.date: 03/27/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9b9247d07ae947e61528095a4853e5cdbcbc80c0
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 6dfdf61159d899a81e1ef53a1aaa649c98833b0e
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57389984"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871421"
 ---
 # <a name="quickstart-enroll-your-windows-10-device"></a>Início rápido: Inscrever o seu dispositivo Windows 10
 
-Neste guia de início rápido, irá assumir a função de utilizador do Intune e inscrever o seu dispositivo com o Windows 10 no Microsoft Intune. Em seguida, regresse ao Intune e confirme o dispositivo inscrito.
+Neste guia de início rápido, irá assumir a função de utilizador do Intune e inscrever o seu dispositivo com o Windows 10 no Microsoft Intune. Em seguida, irá regressar ao Intune e confirme que o dispositivo inscrito.
 
 Inscrever os seus dispositivos no Microsoft Intune permite que os dispositivos com o Windows 10 acedam aos dados seguros da sua organização, incluindo o e-mail, ficheiros e outros recursos. Isto aplica-se a computadores com o Windows 10 e a dispositivos móveis com o Windows 10 Mobile. A inscrição dos dispositivos ajuda a proteger o seu acesso e o da sua organização e ajuda a manter os dados de trabalho separados dos seus dados pessoais.
 
@@ -72,7 +72,7 @@ Antes de inscrever o seu dispositivo Windows 10 Desktop, tem de confirmar a vers
 
     ![Selecione Contas, Aceder a profiss./escolar](media/quickstart-enroll-windows-device/quickstart-enroll-windows-device-04.png)
 
-3. Inicie sessão no Intune com a sua conta profissional ou escolar e, em seguida, selecione **Seguinte**. Se tiver seguido o guia de início rápido Criar um utilizador e atribuir uma licença ao mesmo, pode iniciar sessão com a conta de utilizador que criou.
+3. Inicie sessão no Intune com a sua conta profissional ou escolar e, em seguida, selecione **Seguinte**. Se tiver seguido os [criar um utilizador e atribuir uma licença](quickstart-create-user.md) início rápido, pode iniciar sessão com a conta de utilizador que criou.
 
     > [!NOTE]
     > Se estiver a configurar uma conta ".onmicrosoft.com", a conta de utilizador apresentará o domínio **.onmicrosoft.com** como parte do respetivo endereço. 

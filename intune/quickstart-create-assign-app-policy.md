@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a883536b1c56948083a7e32bcb56d8d182fddfb5
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 5d7e63542563425606cf1f9a8509a7bf0c09b9a9
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799107"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871366"
 ---
 # <a name="quickstart-create-and-assign-an-app-protection-policy"></a>Início rápido: Criar e atribuir uma política de proteção de aplicações
 
@@ -41,7 +41,7 @@ Inicie sessão no [Intune](https://aka.ms/intuneportal) enquanto [Administrador 
 
 ## <a name="create-an-app-protection-policy"></a>Criar uma política de proteção de aplicações
 
-Siga os seguintes passos para criar uma política de proteção de aplicações:
+Utilize os seguintes passos para criar uma política de proteção de aplicações:
 
 1. No [Intune](https://aka.ms/intuneportal), selecione **Aplicações do cliente** > **Políticas de proteção de aplicações** > **Criar Política**. 
 2. Introduza os seguintes detalhes: 
@@ -72,7 +72,7 @@ Siga os seguintes passos para atribuir uma política de proteção de aplicaçõ
 3.  Selecione **Atribuições**.
 4.  Clique **Selecionar grupos para incluir** no separador **Incluir**.
 5.  Selecione **Técnicos de Teste da Contoso** como o grupo a incluir.
-6.  Clique em **Selecionar**. 
+6.  Clique em **selecionar** > **guardar**. 
 
 Agora já atribuiu a política de proteção de aplicações.
 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5cc7593818027f8b1c8c3600143e9909662cd922
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 63f9ef266c9a5754d5de57232a8f7bc41a6c5777
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799646"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871400"
 ---
 # <a name="quickstart-try-microsoft-intune-for-free"></a>Início rápido: Experimente gratuitamente o Microsoft Intune 
 
@@ -67,7 +67,7 @@ Pode experimentar o Intune de forma gratuita durante 30 dias. Se já tiver uma c
 
     ![Imagem da página de início de sessão do portal do Azure](./media/azure-portal-signin.png)
 
-3. Para ver o Microsoft Intune no portal do Azure, selecione **Todos os serviços** na barra lateral, no lado esquerdo da página.
+3. Para ver o Microsoft Intune no portal do Azure, selecione **todos os serviços** na barra lateral no lado esquerdo da página.
 4. Procure **Microsoft Intune** na caixa do filtro e selecione-o.
 5. Selecione a **estrela** para adicionar o Intune à parte inferior da lista dos seus serviços preferidos e abra o dashboard do Intune.
 
@@ -110,7 +110,7 @@ Como mencionado acima, se a sua organização tem seu próprio domínio personal
 
    ![Captura de ecrã do Microsoft 365 admin center - Adicionar domínio](./media/domain-custom-add.png)
 
-4. Verifique se é o proprietário do domínio que introduziu no passo anterior. 
+4. Certifique-se de que é o proprietário do domínio que introduziu no passo anterior. 
     
     A seleção de **enviar código por e-mail** fará com que seja enviado um e-mail para o contacto registado do seu domínio. Depois de receber o e-mail, copie o código e introduza-o no campo **Escreva o seu código de verificação aqui**. Se o código de verificação corresponder, o domínio será adicionado ao seu inquilino. O e-mail apresentado poderá não parecer familiar. Algumas entidades de registo ocultam o endereço de e-mail real. Além disso, o endereço de e-mail poderá ser diferente, em seguida, o que foi fornecido quando o domínio foi registado.
 
@@ -123,7 +123,7 @@ Como mencionado acima, se a sua organização tem seu próprio domínio personal
 
 Existem dois portais que pode utilizar:
 - O dashboard do Intune no Azure ([portal.azure.com](https://portal.azure.com)) é o local onde poderá explorar as [funcionalidades do Intune](what-is-intune.md). Normalmente, irá realizar o seu trabalho no dashboard do Intune.
-- O Centro de administração do Microsoft 365 ([admin.microsoft.com](https://admin.microsoft.com)) é onde pode adicionar e gerir utilizadores, se não estiver a utilizar o Azure Active Directory para. Também pode gerir outros aspetos da sua conta, incluindo faturação e suporte.
+- O Centro de administração do Microsoft 365 ([admin.microsoft.com](https://admin.microsoft.com)) é onde pode adicionar e gerir utilizadores, se não estiver a utilizar o Azure Active Directory para que isso. Também pode gerir outros aspetos da sua conta, incluindo faturação e suporte.
 
 ## <a name="next-steps"></a>Passos Seguintes
 

@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/28/2019
+ms.date: 04/03/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7e6af5a7d7911d7e8ba12e9fd15ad72ca1e51c74
-ms.sourcegitcommit: e23e78a563928ed2b2cbc588f2aa65678f7bb409
+ms.openlocfilehash: b8b05b7f2a0b56321023bc8444528578aeface0b
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58618471"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871407"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>Configurar e utilizar certificados PKCS com o Intune
 
@@ -35,42 +35,49 @@ O Microsoft Intune inclui definições incorporadas para utilizar certificados P
 
 Para utilizar certificados PKCS com o Intune, terá a seguinte infraestrutura:
 
-- **Domínio do Active Directory**: Todos os servidores indicados nesta secção tem de ser associados ao domínio do Active Directory.
+- **Domínio do Active Directory**:  
+  Todos os servidores indicados nesta secção tem de ser associados ao domínio do Active Directory.
 
   Para obter mais informações sobre como instalar e configurar serviços de domínio do Active Directory (AD DS), consulte [Design do AD DS e planeamento](https://docs.microsoft.com/windows-server/identity/ad-ds/plan/ad-ds-design-and-planning).
 
-- **Autoridade de certificação**: Autoridade de certificação empresarial (AC).
+- **Autoridade de certificação**:  
+   Autoridade de certificação empresarial (AC).
 
   Para obter informações sobre como instalar e configurar os serviços de certificados do Active Directory (AD CS), consulte [Guia do passo a passo de serviços de certificados do Active Directory](https://technet.microsoft.com/library/cc772393).
 
   > [!WARNING]  
   > O Intune requer a execução do AD CS com uma Autoridade de Certificação (AC) Empresarial e não uma AC Autónoma.
 
-- **Um cliente**: Para estabelecer ligação com a AC empresarial.
+- **Um cliente**:  
+  Para estabelecer ligação com a AC empresarial.
 
-- **Certificado de raiz**: Uma cópia exportada do certificado de raiz da AC Empresarial.
+- **Certificado de raiz**:  
+  Uma cópia exportada do certificado de raiz da AC Empresarial.
 
-- **Microsoft Intune Certificate Connector**: No portal do Intune, aceda a **configuração do dispositivo** > **Certificate Connectors** > **adicionar**e siga o *os passos para instalar o conector para PKCS #12*. Utilize a ligação de transferência no portal para iniciar a transferência do programa de instalação do conector de certificado **NDESConnectorSetup.exe**.  
-- 
+- **O Intune Certificate Connector** (também chamado de *NDES Certificate Connector*):  
+  No portal do Intune, aceda a **configuração do dispositivo** > **Certificate Connectors** > **adicionar**e siga o *os passos para instalar o conector para PKCS #12*. Utilize a ligação de transferência no portal para iniciar a transferência do programa de instalação do conector de certificado **NDESConnectorSetup.exe**.  
+
   Este conector processa os pedidos de certificado PKCS utilizados para autenticação ou a assinatura de e-mail de S/MIME.
 
   O conector do NDES certificado também suporta o modo de Federal Information Processing Standard (FIPS). O FIPS não é obrigatório, mas pode emitir e revogar certificados quando está ativado.
 
-- **Importar o conector de certificados PFX para o Microsoft Intune**: Se planeia utilizar a encriptação de correio eletrónico de S/MIME, utilize o portal do Intune para transferir o conector para o *certificados PFX importados*.  Aceda a **configuração do dispositivo** > **Certificate Connectors** > **adicionar**e siga o *passos para instalar o conector para Importar os certificados PFX*. Utilize o link de download no portal para iniciar a transferência do programa de instalação **PfxCertificateConnectorBootstrapper.exe**. 
+- **Conector do certificado PFX para o Microsoft Intune**:  
+   Se planeia utilizar a encriptação de correio eletrónico de S/MIME, utilize o portal do Intune para transferir o conector para o *certificados PFX importados*.  Aceda a **configuração do dispositivo** > **Certificate Connectors** > **adicionar**e siga o *passos para instalar o conector para Importar os certificados PFX*. Utilize o link de download no portal para iniciar a transferência do programa de instalação **PfxCertificateConnectorBootstrapper.exe**. 
 
   Este conector processa pedidos para ficheiros PFX importados para o Intune para encriptação de correio eletrónico de S/MIME para um utilizador específico.  
 
   Este conector pode atualizar automaticamente em si quando novas versões se tornam disponíveis. Para utilizar a capacidade de atualização, tem de:
-  - Instale o conector de certificados PFX importados para o Microsoft Intune no seu servidor.
+  - Instale o conector do certificado PFX importadas para o Microsoft Intune no seu servidor.
   - Para receber automaticamente as atualizações importantes, certifique-se de firewalls aberto que permitem que o conector contactar **autoupdate.msappproxy.net** na porta **443**.  
 
 
-- **Windows Server**: Utilizar um servidor do Windows para o anfitrião:
+- **Windows Server**:  
+  Utilizar um servidor do Windows para o anfitrião:
 
   - Cenários de assinatura de e-mail do Microsoft Intune Certificate Connector - para autenticação e S/MIME
   - Conector de certificado PFX para o Microsoft Intune - para cenários de encriptação de correio eletrónico de S/MIME.
 
-  Pode instalar ambos os conectores (*Microsoft Intune Certificate Connector* e *conector de certificados PFX importados*) no mesmo servidor.
+  Pode instalar ambos os conectores (*Microsoft Intune Certificate Connector* e *PFX Certificate Connector*) no mesmo servidor.
 
 ## <a name="export-the-root-certificate-from-the-enterprise-ca"></a>Exportar o certificado de raiz da AC Empresarial
 
@@ -237,6 +244,26 @@ Após importar certificados para o Intune, crie um perfil de **certificado PKCS 
 
 4. Selecione **OK** > **Criar** para guardar o perfil.
 5. Para atribuir o novo perfil a um ou mais dispositivos, veja [Atribuir perfis de dispositivo no Microsoft Intune](device-profile-assign.md).
+
+## <a name="whats-new-for-connectors"></a>O que há de novo para os conectores
+Atualizações para os conectores de duas certificado são lançadas periodicamente. Quando atualizamos um conector, pode ler sobre as alterações aqui. 
+
+O *conector de certificados PFX* [oferece suporte a atualizações automáticas](#requirements), enquanto o Intune Certificate Connector é atualizado manualmente.
+ 
+### <a name="april-2-2019"></a>2 de Abril de 2019
+- **Conector do NDES certificado - versão 6.1904.1.0**  
+  Alterações nesta versão:  
+  - Foi corrigido um problema em que o conector pode não conseguir inscrever-se ao Intune depois de iniciar sessão para o conector com uma conta de administrador global.  
+  - Inclui correções de fiabilidade de revogação de certificados.  
+  - Inclui correções de desempenho para aumentar o quão rapidamente os pedidos de certificado PKCS são processados.  
+
+- **Conector de certificados PFX - versão 6.1904.0.401**
+  > [!NOTE]  
+  > Atualização automática para esta versão do conector do PFX não está disponível até 11 de Abril de 2019.  
+
+  Alterações nesta versão:  
+  - Foi corrigido um problema em que o conector pode não conseguir inscrever-se ao Intune depois de iniciar sessão para o conector com uma conta de administrador global.  
+
 
 ## <a name="next-steps"></a>Passos Seguintes
 
