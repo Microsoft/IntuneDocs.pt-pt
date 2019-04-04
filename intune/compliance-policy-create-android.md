@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/19/2018
+ms.date: 04/02/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,20 +17,23 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0dc4fc0a0f16717bd0c21db3a9e7e57daf7867bc
-ms.sourcegitcommit: c4258bb5824daf3f7e0ac3bb8afc539bde4d95da
+ms.openlocfilehash: 4880026b59c958f8f602713279797f85c8e2d7be
+ms.sourcegitcommit: 699427f36dbf31dc7921fb75da647b736eafd79b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "57991155"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58899041"
 ---
 # <a name="add-a-device-compliance-policy-for-android-devices-in-intune"></a>Adicionar uma política de conformidade de dispositivos Android no Intune
 
-Uma política de conformidade de dispositivos do Intune para Android especifica as regras e definições que os dispositivos Android têm de cumprir para serem considerados como estando em conformidade. Pode utilizar estas políticas com [acesso condicional](conditional-access.md) para permitir ou bloquear o acesso a recursos da organização. Também pode obter relatórios de dispositivos e agir relativamente a situações de não conformidade. 
+As políticas de conformidade de dispositivos são um elemento fundamental ao utilizar o Intune para proteger os recursos da sua organização. No Intune, pode criar regras e definições que os dispositivos Android têm de cumprir para ser considerado em conformidade, como uma versão mínima do SO. Se o dispositivo não estiver em conformidade, pode bloquear o acesso aos dados e recursos através do [acesso condicional](conditional-access.md).
 
-Para saber mais sobre as políticas de conformidade, veja [Introdução à conformidade de dispositivos](device-compliance-get-started.md).
+Esta funcionalidade aplica-se a:  
+- Android
 
-Este tópico indica as definições que pode utilizar numa política de conformidade para dispositivos Android.
+Também pode obter relatórios de dispositivo e tomar medidas quanto à não conformidade, tais como enviar um e-mail de notificação para o utilizador. Para saber mais sobre as políticas de conformidade, veja [Introdução à conformidade de dispositivos](device-compliance-get-started.md).
+
+Este artigo lista as definições que pode utilizar dentro de uma política de conformidade para dispositivos Android.
 
 ## <a name="non-compliance-and-conditional-access"></a>Não conformidade e acesso condicional
 
@@ -52,7 +55,7 @@ A seguinte tabela descreve como as definições não conformes são geridas quan
 
 **Remediado** = O sistema operativo do dispositivo impõe a conformidade. Por exemplo, forçar o utilizador a definir um PIN.
 
-**Em quarentena** = O sistema operativo do dispositivo não impõe a conformidade. Por exemplo, os dispositivos Android não forçam o utilizador a encriptar o dispositivo. Quando o dispositivo não é conforme, são efetuadas as seguintes ações:
+**Em quarentena** = O sistema operativo do dispositivo não impõe a conformidade. Por exemplo, os dispositivos Android não forçam o utilizador a encriptar o dispositivo. Quando o dispositivo não é conforme, são realizadas as seguintes ações:
 
   - O dispositivo é bloqueado se uma política de acesso condicional se aplicar ao utilizador.
   - O portal da empresa notifica o utilizador sobre eventuais problemas de conformidade.
@@ -71,6 +74,9 @@ A seguinte tabela descreve como as definições não conformes são geridas quan
   - **Baixa**: O dispositivo é avaliado como conforme se só estiverem presentes ameaças de nível baixo. Qualquer nível mais alto coloca o dispositivo num estado de não conforme.
   - **Médio**: O dispositivo é avaliado como conforme se as ameaças existentes no dispositivo forem de nível baixo ou médio. Se forem detetadas ameaças de nível alto no dispositivo, este será determinado como não conforme.
   - **Alta**: Esta opção é menos segura e permite todos os níveis de ameaça. Poderá ser útil se utilizar esta solução apenas para fins de relatórios.
+
+### <a name="google-play-protect"></a>Proteger o Google Play
+
 - **Serviços do Google Play está configurado**: **Exigir** que o Google Play dos serviços de aplicação é instalada e ativada. Os serviços do Google Play permitem realizar atualizações de segurança, que são uma dependência de nível base de várias funcionalidades de segurança dos dispositivos Google certificados. Quando seleciona **Não configurado** (predefinição), esta definição não é avaliada quanto à conformidade ou não conformidade.
 - **Fornecedor de segurança atualizado**: **Exigir** que um fornecedor de segurança atualizado Proteja um dispositivo contra vulnerabilidades conhecidas. Quando seleciona **Não configurado** (predefinição), esta definição não é avaliada quanto à conformidade ou não conformidade.
 - **Análise de ameaças nas aplicações**: **Exigir** que o Android **verificar aplicações** funcionalidade está ativada. Quando seleciona **Não configurado** (predefinição), esta definição não é avaliada quanto à conformidade ou não conformidade.
@@ -82,6 +88,9 @@ A seguinte tabela descreve como as definições não conformes são geridas quan
   - **Não configurado** (predefinição): Não é avaliada a definição de conformidade ou de não conformidade.
   - **Verificação de integridade básica**
   - **Verificação de integridade básica e de dispositivos certificados**
+
+> [!NOTE]
+> Para configurar definições do Google Play Protect através de políticas de proteção de aplicações, consulte [definições de política de proteção de aplicações do Intune](app-protection-policy-settings-android.md#conditional-launch) no Android.
 
 ## <a name="device-property-settings"></a>Definições de propriedade do dispositivo
 
@@ -155,7 +164,7 @@ Por exemplo, está a utilizar a funcionalidade Localizações e adiciona uma loc
 
 ## <a name="scope-tags"></a>Scope tags (Etiquetas de âmbito)
 
-As etiquetas de âmbito são uma ótima forma de atribuir políticas a grupos específicos, tal como Vendas, Engenharia, RH e assim sucessivamente. Pode adicionar etiquetas de âmbito a políticas de conformidade. Veja [Utilizar etiquetas de âmbito para filtrar políticas](scope-tags.md). 
+As etiquetas de âmbito são uma ótima forma de atribuir políticas a grupos específicos, tal como Vendas, Engenharia, RH e assim sucessivamente. Pode adicionar etiquetas de âmbito para políticas de conformidade. Veja [Utilizar etiquetas de âmbito para filtrar políticas](scope-tags.md). 
 
 ## <a name="assign-user-groups"></a>Atribuir grupos de utilizadores
 
@@ -168,6 +177,7 @@ Depois de criar uma política, esta não fará nada até ser atribuída. Para at
 Aplicou a política aos utilizadores. Os dispositivos utilizados pelos utilizadores abrangidos pela política são avaliados quanto à conformidade.
 
 ## <a name="next-steps"></a>Passos Seguintes
+
 [Automatizar o e-mail e adicionar ações para dispositivos não conformes](actions-for-noncompliance.md)  
 [Monitorizar as políticas de conformidade do Dispositivo do Intune](compliance-policy-monitor.md)  
 [Definições de política de conformidade para Android Enterprise](compliance-policy-create-android-for-work.md)

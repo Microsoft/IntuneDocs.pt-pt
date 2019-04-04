@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/19/2018
+ms.date: 04/02/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,16 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a6f1f07c1cb7b5dbe81120fd678f429a996f230e
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 00c48f49507fe4fde5484d0725b605d90407facd
+ms.sourcegitcommit: 699427f36dbf31dc7921fb75da647b736eafd79b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566238"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58899058"
 ---
 # <a name="add-a-device-compliance-policy-for-android-enterprise-devices-in-intune"></a>Adicionar uma política de conformidade para dispositivos Android Enterprise no Intune
 
-As políticas de conformidade de dispositivos são um elemento fundamental ao utilizar o Intune para proteger os recursos da sua organização. No Intune, pode criar regras e definições que os dispositivos têm de cumprir para serem considerados como estando em conformidade, como o comprimento da palavra-passe. Se o dispositivo não estiver em conformidade, pode bloquear o acesso aos dados e recursos através do [acesso condicional](conditional-access.md). 
+As políticas de conformidade de dispositivos são um elemento fundamental ao utilizar o Intune para proteger os recursos da sua organização. No Intune, pode criar regras e definições que os dispositivos empresariais Android têm de cumprir para ser considerado em conformidade, por exemplo, um comprimento de palavra-passe. Se o dispositivo não estiver em conformidade, pode bloquear o acesso aos dados e recursos através do [acesso condicional](conditional-access.md).
+
+Esta funcionalidade aplica-se a:  
+- Android Enterprise
 
 Também pode obter relatórios de dispositivo e tomar medidas quanto à não conformidade, tais como enviar um e-mail de notificação para o utilizador. Para saber mais sobre as políticas de conformidade, veja [Introdução à conformidade de dispositivos](device-compliance-get-started.md).
 
@@ -69,6 +72,9 @@ A seguinte tabela descreve como as definições não conformes são geridas quan
   - **Baixa**: O dispositivo é avaliado como conforme se só estiverem presentes ameaças de nível baixo. Qualquer nível mais alto coloca o dispositivo num estado de não conforme.
   - **Médio**: O dispositivo é avaliado como conforme se as ameaças que estão presentes no dispositivo forem de nível baixo ou médio. Se forem detetadas ameaças de nível alto no dispositivo, este será determinado como não conforme.
   - **Alta**: Esta opção é menos segura, já que permite a todos os níveis de ameaça. Poderá ser útil se utilizar esta solução apenas para fins de relatórios.
+
+### <a name="google-play-protect"></a>Proteger o Google Play
+
 - **Serviços do Google Play está configurado**: **Exigir** que o Google Play dos serviços de aplicação é instalada e ativada. Os serviços do Google Play permitem realizar atualizações de segurança, que são uma dependência de nível base de várias funcionalidades de segurança dos dispositivos Google certificados. Quando seleciona **Não configurado** (predefinição), esta definição não é avaliada quanto à conformidade ou não conformidade.
 - **Fornecedor de segurança atualizado**: **Exigir** que um fornecedor de segurança atualizado Proteja um dispositivo contra vulnerabilidades conhecidas. Quando seleciona **Não configurado** (predefinição), esta definição não é avaliada quanto à conformidade ou não conformidade.
 - **Dispositivo safetynet**: Introduza o nível de [atestado de SafetyNet](https://developer.android.com/training/safetynet/attestation.html) que têm de ser cumpridos. As opções são:
@@ -76,9 +82,8 @@ A seguinte tabela descreve como as definições não conformes são geridas quan
   - **Verificação de integridade básica**
   - **Verificação de integridade básica e de dispositivos certificados**
 
-#### <a name="threat-scan-on-apps"></a>Análise de ameaças nas aplicações
-
-Em dispositivos Android Enterprise, a definição **Análise de ameaça em aplicações** é uma política de configuração. Veja [Definições de restrição de dispositivos Android Enterprise](device-restrictions-android-for-work.md).
+> [!NOTE]
+> Em dispositivos Android Enterprise, **análise de ameaças nas aplicações** é uma política de configuração do dispositivo. Utilizar uma política de configuração, os administradores podem ativar a definição de um dispositivo. Veja [Definições de restrição de dispositivos Android Enterprise](device-restrictions-android-for-work.md).
 
 ## <a name="device-properties-settings"></a>Definições de propriedades do dispositivo
 
@@ -148,7 +153,7 @@ O artigo [Adicionar ações para dispositivos não conformes](actions-for-noncom
 
 ## <a name="scope-tags"></a>Scope tags (Etiquetas de âmbito)
 
-As etiquetas de âmbito são uma ótima forma de atribuir políticas a grupos específicos, tal como Vendas, Engenharia, RH e assim sucessivamente. Pode adicionar etiquetas de âmbito a políticas de conformidade. Veja [Utilizar etiquetas de âmbito para filtrar políticas](scope-tags.md). 
+As etiquetas de âmbito são uma ótima forma de atribuir políticas a grupos específicos, tal como Vendas, Engenharia, RH e assim sucessivamente. Pode adicionar etiquetas de âmbito para políticas de conformidade. Veja [Utilizar etiquetas de âmbito para filtrar políticas](scope-tags.md). 
 
 ## <a name="assign-user-groups"></a>Atribuir grupos de utilizadores
 
@@ -161,6 +166,7 @@ Depois de criar uma política, esta não fará nada até ser atribuída. Para at
 Aplicou a política aos utilizadores. Os dispositivos utilizados pelos utilizadores abrangidos pela política são avaliados quanto à conformidade.
 
 ## <a name="next-steps"></a>Passos Seguintes
+
 [Automatizar o e-mail e adicionar ações para dispositivos não conformes](actions-for-noncompliance.md)  
 [Monitorizar as políticas de conformidade do Dispositivo do Intune](compliance-policy-monitor.md)  
 [Definições de políticas de conformidade para Android](compliance-policy-create-android.md)

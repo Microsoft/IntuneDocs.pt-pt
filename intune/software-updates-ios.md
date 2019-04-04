@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/06/2019
+ms.date: 04/04/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.localizationpriority: high
 ms.technology: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e3a6cf207c58194030a4e4bab8a02f76cd97b338
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: de73aa069765ce75068781674ff24d097346cdba
+ms.sourcegitcommit: 699427f36dbf31dc7921fb75da647b736eafd79b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57398618"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58899028"
 ---
 # <a name="add-ios-software-update-policies-in-intune"></a>Adicionar políticas de atualização de software iOS no Intune
 
@@ -41,7 +41,11 @@ O dispositivo comunica com o Intune aproximadamente de 8 em 8 horas. Se uma atua
 
 4. Selecione **definições > configurar**. Introduza as seguintes definições:
 
-    - **Selecionar horas para impedir instalações de atualização**: Introduza um intervalo de tempo limitado, quando as atualizações a forçar não estão instaladas. Ao definir o período de tempo limitado, introduza os seguintes detalhes:
+    - **Selecionar horas para impedir instalações de atualização**: Especifique um intervalo de tempo limitado quando as atualizações a forçar não estão instaladas. 
+      - Blocos de dia não são suportados e poderão não funcionar. Por exemplo, não configure uma política com uma *hora de início* de 8 PM e um *hora de fim* de 6 da Manhã.
+      - Uma política que começa em 12 AM e termina às 12h, mas é avaliada como 0 horas e não de 24 horas, que resulta em nenhuma restrição.
+
+      Ao definir o período de tempo limitado, introduza os seguintes detalhes:
 
       - **Dias**: Escolha o dia da semana, quando as atualizações não estiverem instaladas (s). Por exemplo, confira segunda-feira, quarta-feira e sexta-feira para impedir que as atualizações sejam instalados no hoje em dia.
       - **Fuso horário**: Escolha um fuso horário.
@@ -58,6 +62,8 @@ O dispositivo comunica com o Intune aproximadamente de 8 em 8 horas. Se uma atua
         - Segmenta os mesmos utilizadores como a política original.
 
       Se houver um conflito, esta definição não faz nada *, a menos que* os dois valores são idênticos. Para evitar um conflito, certifique-se de que alterar ou remover a política existente a partir desta localização no portal.
+      > [! Importante]  
+      > Uma política que tem um *hora de início* e *hora de fim* conjunto até as 12:00 é avaliado como 0 horas e não de 24 horas. Isso resulta em nenhuma restrição.  
 
 5. Selecione **OK** > **criar** para guardar as alterações e criar a política.
 
@@ -79,7 +85,7 @@ Para obter orientações da equipa de suporte do Intune, veja [atrasar a visibil
     3. Introduza a hora de início e a hora de fim das horas bloqueadas
 
     > [!NOTE]
-    > Se a **Hora de início** e a **Hora de fim** estiverem ambas definidas para as 00:00, a verificação da hora de manutenção será desativada.
+    > Se o **hora de início** e **hora de fim** estão ambas definidas como 12h, mas, em seguida, o Intune não verifica para restrições sobre o quando instalar atualizações. Isso significa que quaisquer configurações que tem para **selecione vezes para impedir instalações de atualização** são ignoradas, e as atualizações podem instalar em qualquer altura.  
 
 ## <a name="assign-the-policy-to-users"></a>Atribuir uma política de atualização de iOS a utilizadores
 

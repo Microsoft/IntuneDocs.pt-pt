@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/22/2019
+ms.date: 04/03/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 697d4f0b7bd2b5739847968dccdca2517a5a53fa
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 500fef4cf0edf7739bb1a4f0785f590e328dbbed
+ms.sourcegitcommit: 219bbbfb44eba70ac2b751970d8b4b778cd28416
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798435"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "58920246"
 ---
 # <a name="how-to-manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>Como gerir aplicações compradas na Loja Microsoft para Empresas com o Microsoft Intune
 
@@ -81,7 +81,7 @@ Agora, pode continuar e configurar a sincronização na consola do Intune.
 
 ## <a name="assign-apps"></a>Atribuir aplicações
 
-As aplicações da loja são atribuídas da mesma forma que atribui qualquer outra aplicação Intune. Para obter mais informações, veja [Como atribuir aplicações a grupos com o Microsoft Intune](apps-deploy.md). No entanto, em vez de atribuir aplicações a partir da página **Todas as Aplicações**, deve atribuí-las a partir da página **Aplicações Licenciadas**.
+As aplicações da loja são atribuídas da mesma forma que atribui qualquer outra aplicação Intune. Para obter mais informações, veja [Como atribuir aplicações a grupos com o Microsoft Intune](apps-deploy.md). 
 
 As aplicações offline podem ser direcionadas para grupos de utilizadores, grupos de dispositivos ou grupo com utilizadores e dispositivos.
 As aplicações offline podem ser instaladas para um utilizador específico num dispositivo ou para todos os utilizadores num dispositivo. 

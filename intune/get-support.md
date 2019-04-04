@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/28/2019
+ms.date: 04/03/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: df289d84cb78f5cb08db6ca66a0db9b7443171f5
-ms.sourcegitcommit: e23e78a563928ed2b2cbc588f2aa65678f7bb409
+ms.openlocfilehash: cbcc1d81f4ac52ed78a1addbcaefc7d4f9953362
+ms.sourcegitcommit: 219bbbfb44eba70ac2b751970d8b4b778cd28416
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58618463"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "58920258"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Como obter suporte para o Microsoft Intune
 
@@ -51,7 +51,7 @@ A ajuda e suporte de experiência para o Intune está disponível a partir da [p
 
 Esta nova experiência é semelhante para a experiência mostrada o [Centro de administração do Microsoft 365](https://admin.microsoft.com/)e substitui a anterior ajuda e suporte a experiência. 
 
-Para acessar a ajuda e suporte, utilize o seguinte:  
+Para aceder a ajuda e suporte, utilize as seguintes opções:  
 - **Dashboard de gestão de dispositivos:**
    - Selecione qualquer opção disponível para **ajuda e suporte**
    - Selecione o **?** ícone no canto superior direito do portal
@@ -72,7 +72,7 @@ Nesta vista, pode realizar uma das seguintes ações:
 4. [Ver processos de suporte](#view-support-cases) que tenha aberto anteriormente através deste novo fluxo de trabalho  
 
 ### <a name="specify-details-about-an-issue"></a>Especificar detalhes sobre um problema
-Quando abrir a ajuda e suporte a partir de uma localização que seja suportada pela nova experiência, o **precisa de ajuda?**  é aberta. Nesta página, pode especificar os detalhes sobre um problema. À medida que introduz detalhes, a consola fornece consultas comuns baseadas nas palavras-chave que utilizar. Pode selecionar uma opção fornecida ou preencher a sua própria descrição do problema. Se introduzir a sua própria descrição, selecione **Obter ajuda** para a submeter. Depois de submeter uma consulta, a consola devolve informações sensíveis ao contexto, que podem ajudar a resolver o problema.
+Quando abrir a ajuda e suporte a partir de uma localização que seja suportada pela nova experiência, o **precisa de ajuda?** é aberta a página. Nesta página, pode especificar os detalhes sobre um problema. À medida que introduz detalhes, a consola fornece consultas comuns baseadas nas palavras-chave que utilizar. Selecione uma opção oferecida ou concluir sua própria descrição do problema. Se introduzir a sua própria descrição, selecione **Obter ajuda** para a submeter. Depois de submeter uma consulta, a consola devolve informações sensíveis ao contexto, que podem ajudar a resolver o problema.
 
 Seguem-se exemplos de consultas que poderá submeter:
   
@@ -86,7 +86,7 @@ Após selecionar uma opção fornecida ou submeter a sua própria consulta, os r
 ![Ver resultados](./media/get-support/view-results.png)
 
 ### <a name="get-support"></a>Obter suporte
-Se a orientação de ajuda autónoma ou baseada na Web não ajudar a resolver o problema, pode utilizar a consola para abrir um problema de suporte de e-mail ou telefone.  
+Se o ajuda autónoma ou orientação baseada na web não ajudá-lo a resolver o problema, utilize a consola para abrir um problema de suporte de e-mail ou telefone.  
 Na página **Precisa de ajuda?**, selecione a opção que pretende utilizar.  
 
 - Para um pedido de e-mail, forneça o seu endereço de e-mail e, opcionalmente, pode adicionar anexos à sua submissão. Selecione **Enviar** para abrir o pedido.  
@@ -130,7 +130,7 @@ As informações seguintes descrevem o Azure ajuda + a experiência de suporte q
    - **Serviço**: **Microsoft Intune**
    - **Tipo de problema**: Escolha o tipo de problema a partir do menu pendente.
    - **Subtipo de problema**: Escolha o subtipo de problema a partir do menu pendente.
-   - **Assunto**: Descreva resumidamente o problema que está a ter.
+   - **Assunto**: Descreva resumidamente o problema a que se pretende obter ajuda com.
 
    ![Imagem do separador Noções básicas sobre a ajuda + suporte – nova página de pedido de suporte](./media/get-support/help-new-support-case-basics.png)
 
@@ -141,7 +141,7 @@ As informações seguintes descrevem o Azure ajuda + a experiência de suporte q
 5. Sobre o **detalhes** separador, preencha os detalhes para o seu problema, o método de suporte, as informações de contacto e, em seguida, clique em **seguinte: Rever + criar**.
 
    ![Imagem do separador Detalhes sobre a ajuda + suporte – nova página de pedido de suporte](./media/get-support/help-new-support-case-details.png)
-6. Reveja as informações, certifique-se de que ele está corretas e, em seguida, escolha **criar** para submeter o pedido de suporte.
+6. Reveja as informações, certifique-se de que está correto e, em seguida, escolha **criar** para submeter o pedido de suporte.
 
    ![Imagem da revisão + criar separador no suporte a nova página de pedido](./media/get-support/help-new-support-case-create.png)
 
@@ -184,7 +184,6 @@ Pode ver um pedido de suporte a partir do portal do Azure. Para tal:
 2. Na página **Ajuda + suporte**, pode ver a lista de **Pedidos de suporte recentes** e selecionar os mesmos para ver detalhes adicionais.
 
 ## <a name="additional-resources"></a>Recursos adicionais
-- [Contactar o suporte assistido por telefone do Microsoft Intune](phone-support-contact.md)
 - [Suporte de gestão de subscrição e faturação](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
 - [Licenciamento em Volume](https://go.microsoft.com/fwlink/p/?LinkID=282015)
 - [Resolver problemas do Intune](help-desk-operators.md)

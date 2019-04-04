@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/21/2019
+ms.date: 04/03/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 469327261b8f617be0851b52d389965c5eff9b59
-ms.sourcegitcommit: 464cf677e3746eaba46836dedfb94572a75032f9
+ms.openlocfilehash: 66a23b75913f6465064a988bd8f2ba9c2b4c36d6
+ms.sourcegitcommit: 219bbbfb44eba70ac2b751970d8b4b778cd28416
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58330410"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "58920254"
 ---
 # <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>Utilizar scripts do PowerShell em dispositivos Windows 10 no Intune
 
@@ -57,7 +57,7 @@ A extensão de gestão do Intune tem os seguintes pré-requisitos:
     - **Descrição**: Introduza uma descrição para o script do PowerShell. Esta definição é opcional, mas recomendada. 
     - **Localização do script**: Navegue para o script do PowerShell. O script tem de ser inferior a 200 KB (ASCII).
 4. Escolher **configurar**e introduza as seguintes propriedades:
-    - **Executar este script utilizando o com sessão iniciada nas credenciais**: Selecione **Sim** para executar o script com as credenciais do utilizador no dispositivo. Escolher **não** (predefinição) para executar o script no contexto do sistema. Selecione **Sim** a menos que o script tenha de ser executado no contexto do sistema.
+    - **Executar este script utilizando o com sessão iniciada nas credenciais**: Selecione **Sim** para executar o script com as credenciais do utilizador no dispositivo. Escolher **não** (predefinição) para executar o script no contexto do sistema. Escolha de muitos administradores **Sim**. Se o script é necessário para executar no contexto do sistema, escolha **não**.
     - **Impor a verificação de assinatura de script**: Selecione **Sim** se o script deve ser assinado por um fabricante fidedigno. Selecione **não** (predefinição), se não existir um requisito para o script seja assinado. 
     - **Executar script num anfitrião do PowerShell de 64 bits**: Selecione **Sim** para executar o script num host de PowerShell (PS) de 64 bits numa arquitetura de cliente de 64 bits. Selecione **não** (predefinição) executa o script num host do PowerShell de 32 bits.
 
