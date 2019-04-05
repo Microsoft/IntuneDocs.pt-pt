@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2f97af5e2e6cf5e89e185ada2350294f11b6d5f8
-ms.sourcegitcommit: e63e3debb5f4d9a757f767913e72e39742137b17
+ms.openlocfilehash: 55a4a38f583ab5ac8e8eb9dc23db045c29430bd6
+ms.sourcegitcommit: 71314481e644025c005019b478b4cbeaf2390ea9
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58788499"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59041707"
 ---
 # <a name="configure-a-certificate-profile-for-your-devices-in-microsoft-intune"></a>Configurar um perfil de certificado para os seus dispositivos no Microsoft Intune
 
@@ -34,6 +34,9 @@ Pode utilizar o Intune para atribuir estes certificados aos dispositivos que ger
 - PKCS#12 (ou PFX)
 
 Cada um destes tipos de certificado tem os seus próprios pré-requisitos e requisitos de infraestrutura.
+
+> [!NOTE]
+> Android dispositivos dedicados não suportam perfis de certificado.
 
 ## <a name="overview"></a>Descrição geral
 

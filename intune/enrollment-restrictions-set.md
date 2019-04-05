@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ed2a16e4cc34d68342f8cd5b21daeec46c22ff9d
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 1080ae8a73223ad16445d0d2233434faa818b04b
+ms.sourcegitcommit: 71314481e644025c005019b478b4cbeaf2390ea9
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799554"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59041691"
 ---
 # <a name="set-enrollment-restrictions"></a>Definir restrições de inscrição
 
@@ -43,10 +43,11 @@ As restrições de inscrição específicas que pode criar incluem:
   - iOS
   - macOS
   - Windows
-- Versão do sistema operativo da plataforma para iOS, Android, perfil de trabalho do Android e Windows. (Apenas as versões do Windows 10 podem ser utilizadas. Deixe em branco se o Windows 8.1 for permitido.)
+  - Windows Mobile
+- Versão do sistema operativo da plataforma para iOS, Android, Android funcionam perfil, o Windows e o Windows Mobile. (Apenas as versões do Windows 10 podem ser utilizadas. Deixe em branco se o Windows 8.1 for permitido.)
   - Versão mínima.
   - Versão máxima.
-- Restringir dispositivos pessoais (apenas para iOS, Android, perfil de trabalho do Android, macOS ou Windows).
+- Restringir dispositivos pessoais (em iOS, Android, Android funcionar perfil, macOS, Windows e Windows Mobile apenas).
 
 ## <a name="default-restrictions"></a>Restrições predefinidas
 
@@ -74,7 +75,7 @@ Pode alterar as definições de uma restrição de tipos de dispositivo ao segui
 1. Inicie sessão no Portal do Azure.
 2. Selecione **Mais Serviços**, procure o **Intune** e, em seguida, selecione **Intune**.
 3. Selecione **Inscrição de dispositivos** > **Restrições de inscrição**.
-4. Em **Restrições de Tipos de Dispositivos** > selecione a restrição que pretende definir > **Propriedades** > **Selecionar plataformas**. Selecione **Permitir** ou **Bloquear** para cada plataforma listada.
+4. Sob **restrições de tipo de dispositivo**, selecione a restrição que pretende definir > **propriedades** > **selecionar plataformas**. Selecione **Permitir** ou **Bloquear** para cada plataforma listada.
     ![Captura de ecrã para permitir ou bloquear uma plataforma](media/enrollment-restrictions-set/platform-allow-block.png)
 5. Escolha **OK**.
 6. Selecione **Configurar plataformas**.
@@ -99,12 +100,12 @@ Se bloquear a inscrição de dispositivos Windows de propriedade pessoal, o Intu
 Os seguintes métodos estão qualificados como autorizados como uma inscrição empresarial Windows:
  - A inscrição de utilizadores está a utilizar uma [conta do gestor de inscrição de dispositivos]( device-enrollment-manager-enroll.md).
 - O dispositivo é inscrito através do [Windows AutoPilot](enrollment-autopilot.md).
-- O dispositivo está registado no Windows Autopilot, mas não é uma opção de apenas inscrição na MDM a partir das Definições do Windows.
+- O dispositivo está registado com o Windows Autopilot, mas não é uma opção de apenas de inscrição de MDM a partir das definições do Windows.
 - O número IMEI do dispositivo é apresentado em **Inscrição de dispositivos** > **[Identificadores de dispositivos da empresa](corporate-identifiers-add.md)**. (Não suportado para o Windows Phone 8.1.)
 - O dispositivo é inscrito através de um [pacote de aprovisionamento em massa](windows-bulk-enroll.md).
 - O dispositivo é inscrito através de GPO, ou [inscrição automática do SCCM para a cogestão](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview#how-to-configure-co-management.md).
  
-As inscrições seguintes estão marcadas como empresariais pelo Intune, mas uma vez que não oferecem ao administrador do Intune controlo por dispositivo, serão bloqueadas:
+As inscrições seguintes são marcadas como empresarial pelo Intune. Mas, uma vez que eles não oferecem controle por dispositivo o administrador do Intune, vai ser bloqueados:
  - [Inscrição na MDM automática](windows-enroll.md#enable-windows-10-automatic-enrollment) com [associação do Azure Active Directory durante a configuração do Windows](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx)\*.
 - [Inscrição na MDM automática](windows-enroll.md#enable-windows-10-automatic-enrollment) com [associação do Azure Active Directory a partir das definições do Windows](https://docs.microsoft.com/azure/active-directory/user-help/user-help-register-device-on-network)*.
  
@@ -127,7 +128,7 @@ Pode alterar as definições de uma restrição de limite de dispositivos ao seg
 6. Selecione **Guardar**.
 
 
-Durante a inscrição de BYOD, os utilizadores veem uma notificação que irá informar quando atingirem o respetivo limite de dispositivos inscritos. Por exemplo, no iOS, tem o seguinte aspeto:
+Durante a inscrição de BYOD, os utilizadores veem uma notificação que irá informar quando atingirem o respetivo limite de dispositivos inscritos. Por exemplo, no iOS:
 
 ![Notificação de limite do dispositivo iOS](./media/enrollment-restrictions-ios-set-limit-notification.png)
 

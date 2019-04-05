@@ -6,7 +6,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/26/2019
+ms.date: 04/04/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e0dd51e92cfc88c8d1f9ee78e414c899f216f8a3
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 0dbeed85ea368267ddfcf61bb919729b64dc3dde
+ms.sourcegitcommit: 71314481e644025c005019b478b4cbeaf2390ea9
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799513"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59041715"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Atualização da IU para aplicações de utilizadores finais do Intune
 Saiba mais sobre as atualizações mais recentes para as aplicações do Microsoft Intune. Adicionamos regularmente para e melhorar a aplicação Portal da empresa do Intune e o Web site. Se for um administrador do Intune ou pessoa de suporte, este artigo fornece as informações que necessárias para:
@@ -34,6 +34,11 @@ Saiba mais sobre as atualizações mais recentes para as aplicações do Microso
 Se for um funcionário ou aluno, certifique-se de que consulta as capturas de ecrã e ligações para documentação de ajuda do Portal da empresa. Para obter mais informações sobre como utilizar a aplicação Portal da empresa, consulte a [documentação de ajuda de utilizador do Portal da empresa](https://docs.microsoft.com/intune-user-help/).  
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
+
+## <a name="week-of-april-1-2019"></a>Semana de 1 de Abril de 2019
+### <a name="user-experience-update-for-the-company-portal-app-for-ios----2536024---"></a>Atualização da experiência de utilizador para a aplicação Portal da empresa para iOS <!-- 2536024 -->
+Foi reestruturada a home page da aplicação Portal da empresa para dispositivos iOS. Com esta alteração, a home page será melhor siga os padrões de interface do Usuário do iOS e também fornecem a capacidade de deteção melhorada para aplicações e e-Books.
+
 
 ## <a name="week-of-february-19-2019"></a>Semana de 19 de Fevereiro de 2019  
 ### <a name="new-app-categories-screen-in-the-company-portal-app-for-windows-10---3834780-wnready4review---"></a>Novo ecrã de categorias de aplicação na aplicação Portal da empresa para Windows 10<!-- 3834780 WNready4Review -->  

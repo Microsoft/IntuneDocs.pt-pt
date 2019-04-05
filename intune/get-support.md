@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 04/03/2019
+ms.date: 04/05/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cbcc1d81f4ac52ed78a1addbcaefc7d4f9953362
-ms.sourcegitcommit: 219bbbfb44eba70ac2b751970d8b4b778cd28416
+ms.openlocfilehash: ba463c4de45c31f9b5644852c7e48bd000a1b36b
+ms.sourcegitcommit: 71314481e644025c005019b478b4cbeaf2390ea9
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "58920258"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59041687"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Como obter suporte para o Microsoft Intune
 
@@ -30,7 +30,21 @@ ms.locfileid: "58920258"
 
 A Microsoft fornece suporte global técnico, de pré-vendas, de faturação e de subscrição para o Microsoft Intune. O suporte está disponível tanto online como por telefone para subscrições pagas ou de avaliação. O suporte técnico online está disponível em inglês e japonês. O suporte por telefone e suporte de faturação online estão disponíveis em idiomas adicionais.
 
-Administrador de TI, pode utilizar o **ajuda e suporte** opção para enviar um pedido de suporte online para o Intune no portal do Azure. Para obter informações sobre funções do Azure AD e as permissões que são necessários para criar um pedido de suporte, consulte [funções de administrador no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal). 
+Como administrador do Intune, pode utilizar o **ajuda e suporte** opção para enviar um pedido de suporte online para o Intune no portal do Azure. Para criar e gerir um incidente de suporte, a conta tem de estar atribuída uma função do Azure Active Directory (Azure AD) que inclui a *ação* **microsoft.office365.supportTickets/allEntities/allTasks**. Para obter informações sobre funções do Azure AD e as permissões que são necessários para criar um pedido de suporte, consulte [funções de administrador no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal). 
+
+**Problemas conhecidos para a criação de incidentes de suporte**
+
+Se a sua conta tem as permissões necessárias, mas com êxito não consegue aceder à ajuda e suporte, ou criar ou gerir um incidente de suporte, consulte os seguintes problemas conhecidos e resoluções:  
+- Token de utilizador obsoletos para a sua conta. Para resolver este problema, termine sessão em todas as sessões de consola Active Directory, em seguida, inicie sessão novamente e, em seguida, tentar criar ou gerir um incidente de suporte. 
+- Várias sessões ativas. Se tiver entrado com mais do que um utilizador ou de sessão, termine sessão consola apenas um. Em seguida, com uma sessão única do Active Directory, tentativa de criar ou gerir um incidente de suporte.
+
+Ações adicionais que poderão ser necessárias para resolver problemas de acesso:
+- Limpar todos os cookies para a sua sessão de browser do Active Directory e, em seguida, repita criar ou gerir um incidente de suporte.
+- Utilize uma sessão de navegação de InPrivate para iniciar sessão no Intune e tente criar ou gerir um incidente de suporte.  
+
+Se as soluções alternativas anteriores não ajudam, aceda a [Centro de administração do Microsoft 365](https://admin.microsoft.com) e criar um pedido de suporte a partir daí. Estamos atualmente a trabalhar numa correção que estarão disponível no Verão tardia. 
+
+
 
 >[!IMPORTANT]  
 > Para obter suporte técnico para produtos de terceiros que funcionam com o Intune (como a Saaswedo, a Cisco ou a Lookout), contacte primeiro o fornecedor desse produto. Antes de abrir um pedido com o suporte do Intune, certifique-se de que configurou o outro produto corretamente.

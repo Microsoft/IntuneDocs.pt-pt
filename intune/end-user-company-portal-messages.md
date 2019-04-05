@@ -17,12 +17,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0985f09ad758403e3461ee00f35af949d0d35bc3
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 700bded8930385c5576a198dc0364c64066121e5
+ms.sourcegitcommit: 71314481e644025c005019b478b4cbeaf2390ea9
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798368"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59041703"
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>Ajudar os utilizadores finais a compreender as mensagens da aplicação Portal da Empresa
 
@@ -111,6 +111,34 @@ Se não tiver adicionado a aplicação Portal da Empresa à lista de **Aplicaç�
 ### <a name="what-it-means"></a>O que significa
 
 Adicionar o Portal da empresa para o **aplicações permitidas** ou **aplicações excluídas** lista na política de proteção de aplicações de Windows Information Protection (WIP). Para obter mais informações, veja [Criar e implementar a política de proteção de aplicações do Windows Information Protection (WIP) com o Intune](windows-information-protection-policy-create.md).
+
+## <a name="approve-a-ios-company-app-line-of-business-app-on-your-ios-device"></a>Aprovar uma aplicação da empresa iOS (aplicação de linha de negócio) no seu dispositivo iOS 
+
+### <a name="where-it-appears"></a>Onde aparece
+aplicações de iOS desenvolvidas pela sua organização que não estão disponíveis na Store da aplicação não são confiáveis pelo seu dispositivo por padrão. Quando instalar essas aplicações através do Portal da empresa e inicie a aplicação, será apresentada a seguinte mensagem:
+
+![mensagem de aplicação do iOS - não fidedigno Enterprise Developer](./media/end-user-company-portal-messages/end-user-company-portal-messages-01.png)
+
+### <a name="what-it-means"></a>O que significa
+Esta mensagem significa que precisa modificar as definições do dispositivo iOS para aprovar e instalar aplicações desenvolvidas pela sua empresa no seu dispositivo iOS.
+
+Quando instalar essas aplicações com o Portal da empresa e inicie a aplicação, siga estes passos para aprovar a aplicação depois de o transferir:
+
+1. Após iniciar uma aplicação da empresa instalado (aplicação de linha de negócio), verá a mensagem "Enterprise Developer não confiáveis". <br>
+   Prima **Cancelar**.
+2. Navegue para **configurações** > **geral** > **gestão de dispositivos**.
+
+   ![dispositivo iOS da interface do Usuário - gestão de dispositivos](./media/end-user-company-portal-messages/end-user-company-portal-messages-02.png)
+
+3. Selecione **perfil de gestão** > **aplicação empresarial**.
+4. Selecione o nome do desenvolvedor.
+5. Prima **confiar _nome do desenvolvedor_**.
+6. Confirmar a aplicação, selecionando **confiar** na mensagem de pop-up de instalação de aplicação.
+
+   ![dispositivo iOS da interface do Usuário - mensagem de aplicação de confiança](./media/end-user-company-portal-messages/end-user-company-portal-messages-03.png)
+
+    Deverá conseguir iniciar e utilizar a aplicação da empresa.
+
 
 ### <a name="see-also"></a>Consulte também
 [O que dizer aos utilizadores finais sobre a utilização do Intune](end-user-educate.md)
