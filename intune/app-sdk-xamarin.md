@@ -5,7 +5,7 @@ keywords: sdk, Xamarin, intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/16/2018
+ms.date: 04/08/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bd162f6af256c104c04374290a695141cdcc26f6
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: d42fab929d6fa3e7fbaed8e9557573ebbaa1f3ad
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566204"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59292355"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Enlaces Xamarin do SDK da Aplicação Microsoft Intune
 
@@ -110,6 +110,8 @@ A aplicação tem de definir uma `Android.App.Application` classe que herda de `
     public TaskrApp(IntPtr handle, JniHandleOwnership transfer)
         : base(handle, transfer) { }
 ```
+> [!NOTE]
+> Um problema com os enlaces Xamarin da MAM pode fazer com que o aplicativo falhar quando são implementadas no modo de depuração. Como solução, o `Debuggable=false` atributo tem de ser adicionado para o `Application` classe e o `android:debuggable="true"` sinalizador tem de ser removido do manifesto se estivesse definido manualmente.
 
 #### <a name="enable-features-that-require-app-participationapp-sdk-androidmdenable-features-that-require-app-participation"></a>[Ativar funcionalidades que requerem a participação da aplicação](app-sdk-android.md#enable-features-that-require-app-participation)
 Exemplo: Determinar se o PIN é necessário para a aplicação
@@ -173,4 +175,4 @@ Isso é esperado, porque quando o Remapper modifica a herança de classes do Xam
 > O Remapper reescreverá uma dependência que utiliza o Visual Studio para preenchimento automático do IntelliSense. Portanto, poderá ter de recarregar e reconstruir o projeto quando o Remapper é adicionado para IntelliSense reconhecer corretamente as alterações.
 
 ## <a name="support"></a>Suporte
-Se a sua organização for um cliente do Intune existente, trabalhe com o seu representante de suporte da Microsoft para abrir um pedido de suporte e criar um problema [na página de problemas do Github](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues) e iremos ajudar assim que possível. 
+Se a sua organização for um cliente do Intune existente, trabalhe em conjunto com o seu representante de suporte da Microsoft para abrir um pedido de suporte e criar um problema [no GitHub a página de problemas](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues) e iremos ajudar assim que possível. 

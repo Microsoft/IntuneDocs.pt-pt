@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8712fc49bce8237e717a1a38e63ec334509e3217
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 6f1cdacf4b4d26e9db9b4090805f697927a399c5
+ms.sourcegitcommit: 9daaeba9a960c50efcc951856234fbfec3635737
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57400471"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59231808"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Configurar e utilizar certificados SCEP com o Intune
 
@@ -73,7 +73,7 @@ Recomendamos vivamente a publicação do servidor do NDES através de um proxy i
 
 ### <a name="accounts"></a>Contas
 
-|Nome|Detalhes|
+|Name|Detalhes|
 |--------|-----------|
 |**Conta do serviço do NDES**|Introduza uma conta de utilizador de domínio para utilizar como conta do Serviço do NDES. |
 
@@ -299,12 +299,13 @@ Neste passo, irá:
 > O Microsoft Intune Certificate Connector **tem** de ser instalado num servidor Windows separado. Não pode ser instalado na Autoridade de Certificação (AC) emissora. Também **tem** de estar instalado no mesmo servidor que a função Serviço de Inscrição de Dispositivos de Rede (NDES).
 
 1. No [portal do Azure](https://portal.azure.com), selecione **Todos os serviços**, filtre o **Intune** e selecione **Microsoft Intune**.
-2. Selecione **Configuração do dispositivo** > **Autoridade de Certificação** > **Adicionar**
-3. Transfira e guarde o ficheiro de conector. Guarde-o numa localização acessível a partir do servidor onde vai instalar o conector.
+2. Selecione **configuração do dispositivo** > **conectores de certificação** > **adicionar**.
+3. Transferir e guardar o conector para o ficheiro SCEP. Guarde-o numa localização acessível a partir do servidor onde vai instalar o conector.
 
-    ![ConnectorDownload](/media/certificates-pfx-configure/certificates-download-connector.png)
+   ![ConnectorDownload](./media/certificates-scep-configure/download-certificates-connector.png)
 
-4. Quando a transferência for concluída, aceda ao servidor que aloja a função Serviço de Inscrição de Dispositivos de Rede (NDES). Em seguida:
+
+4. Depois de concluída a transferência, ir para o servidor que aloja o seu serviço de inscrição de dispositivos de rede (NDES). Em seguida:
 
     1. Certifique-se de que o .NET 4.5 Framework está instalado, pois o Certificate Connector do NDES precisa dele. O .NET 4.5 Framework vem incluído automaticamente com o Windows Server 2012 R2 e versões mais recentes.
     2. Execute o instalador **NDESConnectorSetup.exe**. Este instalador também instala o módulo de políticas para NDES e o Serviço Web CRP. O Serviço Web CRP, CertificateRegistrationSvc, é executado como uma aplicação no IIS.

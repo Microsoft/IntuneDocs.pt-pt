@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 189e1fdebeb3856c3e65d51d509b190a63d8372b
-ms.sourcegitcommit: 219bbbfb44eba70ac2b751970d8b4b778cd28416
+ms.openlocfilehash: 9dca4dc0b0b93d8466835ce0518268a548f3174a
+ms.sourcegitcommit: 9daaeba9a960c50efcc951856234fbfec3635737
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "58920262"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59231759"
 ---
 # <a name="intune-network-configuration-requirements-and-bandwidth"></a>Largura de banda e requisitos de configuração de rede do Intune
 
@@ -153,15 +153,13 @@ As tabelas que se seguem listam as portas e os serviços a que o cliente do Intu
 
 ### <a name="apple-device-network-information"></a>Informações da rede de dispositivos Apple
 
-|         Nome do anfitrião         |                                        URL (endereço IP/sub-rede)                                        |  Protocolo  |     Porta     |                          Dispositivo                           |
-|--------------------------|-------------------------------------------------------------------------------------------------------|------------|--------------|-----------------------------------------------------------|
-|      Consola de Administração       |                                  gateway.push.apple.com (17.0.0.0/8)                                  |    TCP     |     2195     |                    Apple iOS e macOS                    |
-|      Consola de Administração       |                                  feedback.push.apple.com(17.0.0.0/8)                                  |    TCP     |     2196     |                    Apple iOS e macOS                    |
-|      Consola de Administração       | Apple iTunesitunes.apple.com, \*.mzstatic.com, \*.phobos.apple.com, \*.phobos.apple.com.edgesuite.net |    HTTP    |      80      |                    Apple iOS e macOS                    |
-|        Servidor PI         |                gateway.push.apple.com(17.0.0.0/8) feedback.push.apple.com(17.0.0.0/8)                 |    TCP     |  2195, 2196  |         Para mensagens em nuvem em iOS e macOS da Apple.          |
-|     Serviços de dispositivos      |                                        gateway.push.apple.com                                         |    TCP     |     2195     |                           Apple                           |
-|     Serviços de dispositivos      |                                        feedback.push.apple.com                                        |    TCP     |     2196     |                           Apple                           |
-|     Serviços de dispositivos      |   Apple iTunesitunes.apple.com \*.mzstatic.com\*.phobos.apple.com \*.phobos.apple.com.edgesuite.net   |    HTTP    |      80      |                           Apple                           |
-| Dispositivos (Internet/Wi-Fi) |                                 #-courier.push.apple.com(17.0.0.0/8)                                  |    TCP     | 5223 e 443 | Apenas Apple. &#39;#&#39; é um número aleatório de 0 a 200. |
-| Dispositivos (Internet/Wi-Fi) |                           phobos.apple.comocsp.apple.comax.itunes.apple.com                           | HTTP/HTTPS |  80 ou 443   |                        Apenas Apple                         |
 
+|Utilizado para|Nome de anfitrião (endereço IP/sub-rede)|Protocolo|Porta|
+|-----|--------|------|-------|
+|Receber notificações Push do serviço do Intune através do Apple Push Notification Service (APNS). Consulte a documentação da Apple [aqui](https://support.apple.com/en-us/HT203609)|                                    gateway.push.apple.com (17.0.0.0/8)                                  |    TCP     |     2195     |
+|Enviar comentários para o serviço do Intune através do Apple Push Notification Service (APNS)|                                  feedback.push.apple.com(17.0.0.0/8)                                  |    TCP     |     2196     |
+|Recuperar e exibir o conteúdo a partir de servidores da Apple|itunes.apple.com<br>\*.itunes.apple.com<br>\*.mzstatic.com<br>\*.phobos.apple.com<br> \*.phobos.itunes-apple.com.akadns.net |    HTTP    |      80      |
+|Comunicações com os servidores do APNS|#-courier.push.apple.com (17.0.0.0/8)<br>'#' é um número aleatório entre 0 e 50.|    TCP     |  5223 e 443  |
+|Várias funcionalidades, inclusive, acesso a World Wide Web, loja do iTunes, loja de aplicações de macOS, iCloud, mensagens, etc. |phobos.apple.com<br>ocsp.apple.com<br>ax.itunes.apple.com<br>ax.itunes.apple.com.edgesuite.net| HTTP/HTTPS |  80 ou 443   |
+
+Para obter mais informações, consulte da Apple [portas TCP e UDP, usadas por produtos de software da Apple](https://support.apple.com/en-us/HT202944), [sobre o macOS, iOS e o iTunes de ligações de anfitrião do servidor e o iTunes fundo processos](https://support.apple.com/en-us/HT201999), e [se sua os clientes macOS e iOS não estão a receber notificações push da Apple](https://support.apple.com/en-us/HT203609).

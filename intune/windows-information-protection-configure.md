@@ -1,5 +1,6 @@
 ---
-title: As definições do Windows Information Protection no Microsoft Intune | Microsoft Intune
+title: Definições do Windows Information Protection no Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Saiba mais sobre as definições do Microsoft Intune que pode utilizar para gerir o Windows Information Protection.
 keywords: ''
 author: brenduns
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a4de47ace4c648a2469ff9d1144f694cc86a95bf
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: fc3684a04611e0b7ec8cd17cb5cdf428c1150a55
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57395808"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59292507"
 ---
 # <a name="how-to-configure-windows-information-protection-in-microsoft-intune"></a>Como configurar o Windows Information Protection no Microsoft Intune
 

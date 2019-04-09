@@ -1,5 +1,6 @@
 ---
-title: Como obter suporte para o Microsoft Intune | Microsoft Intune
+title: Como obter suporte para o Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Obtenha suporte online e por telefone para subscrições pagas e de avaliação do Microsoft Intune.
 keywords: ''
 author: brenduns
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ba463c4de45c31f9b5644852c7e48bd000a1b36b
-ms.sourcegitcommit: 71314481e644025c005019b478b4cbeaf2390ea9
+ms.openlocfilehash: cf1e87d40459d194f2c4aa0ff702a137e45504ab
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "59041687"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59292370"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Como obter suporte para o Microsoft Intune
 

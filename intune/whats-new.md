@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 04/03/2019
+ms.date: 04/04/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bd348a1bfbe4c9fa9b787a4f167a1eb750b27db3
-ms.sourcegitcommit: 71314481e644025c005019b478b4cbeaf2390ea9
+ms.openlocfilehash: 71591e0be428d54af359c51daee96d6a21b43169
+ms.sourcegitcommit: 9daaeba9a960c50efcc951856234fbfec3635737
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "59041711"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59231812"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 
@@ -58,6 +58,15 @@ Lançámos atualizações para ambos os [Intune Certificate Connector e o conect
 
 #### <a name="user-experience-update-for-the-company-portal-app-for-ios----2536024---"></a>Atualização da experiência de utilizador para a aplicação Portal da empresa para iOS <!-- 2536024 -->
 Foi reestruturada a home page da aplicação Portal da empresa para dispositivos iOS. Com esta alteração, a home page será melhor siga os padrões de interface do Usuário do iOS e também fornecem a capacidade de deteção melhorada para aplicações e e-Books.
+
+#### <a name="changes-to-company-portal-enrollment-for-ios-12-device-users---3448635---"></a>Alterações para a inscrição no Portal da empresa para os utilizadores de dispositivos iOS 12 <!--3448635 -->  
+O Portal da empresa para ecrãs de inscrição de iOS e os passos foram atualizadas para alinhar com as alterações de inscrição de MDM lançadas no Apple iOS 12.2. O fluxo de trabalho atualizado solicita aos usuários para:  
+
+* Permita o Safari abrir o site do Portal da empresa e transferir o perfil de gestão antes de retornar para a aplicação Portal da empresa.  
+* Abra a aplicação de definições para instalar o perfil de gestão no respetivo dispositivo.
+* Regressar à aplicação Portal da empresa que conclua a inscrição.  
+
+Para obter os passos de inscrição atualizadas e telas, veja [inscrever o dispositivo de iOS no Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios).  
 
 ## <a name="week-of-march-25-2019"></a>Semana de 25 de Março de 2019
 

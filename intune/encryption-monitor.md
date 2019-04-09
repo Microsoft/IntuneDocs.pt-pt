@@ -1,5 +1,6 @@
 ---
-title: Relatório de encriptação e chaves do BitLocker no Microsoft Intune | Microsoft Intune
+title: Relatório de encriptação e chaves do BitLocker no Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Ver um relatório no seu estado de encriptação de dispositivos e aceder a chaves de recuperação do BitLocker no portal do Microsoft Intune.
 keywords: ''
 author: brenduns
@@ -16,18 +17,18 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 820800deea491c363834a9cafaf077c0992467f6
-ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
+ms.openlocfilehash: 43cef2e5a07795bc4c6dc7cf42b2cfa6be04269f
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58394655"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59292259"
 ---
 # <a name="monitor-bitlocker-and-device-encryption"></a>Monitorizar a encriptação BitLocker e o dispositivo  
 O Intune fornece uma localização centralizada para identificar o estado de encriptação dos seus dispositivos Windows 10 e ajuda-o a aceder a informações importantes para o BitLocker dos seus dispositivos, como encontrada no Azure Active Directory (Azure AD).  
 
-- O [relatório de encriptação (em pré-visualização pública)](#encryption-report) fornece detalhes sobre o estado de encriptação e a preparação de um dispositivo. Os detalhes do relatório podem ajudá-lo a identificar problemas que impedem a encriptação com êxito de dispositivos que pretende proteger.  
-- [Ver detalhes de disco BitLocker (em pré-visualização pública)](#bitlocker-recovery-keys) , como as chaves de ID de chave e a recuperação para os dispositivos a partir do portal do Intune.  
+- O [relatório de encriptação (em pré-visualização pública)](encryption-monitor.md#encryption-report-in-public-preview) fornece detalhes sobre o estado de encriptação e a preparação de um dispositivo. Os detalhes do relatório podem ajudá-lo a identificar problemas que impedem a encriptação com êxito de dispositivos que pretende proteger.  
+- [Ver detalhes de disco BitLocker (em pré-visualização pública)](encryption-monitor.md#bitlocker-recovery-keys-in-public-preview) , como as chaves de ID de chave e a recuperação para os dispositivos a partir do portal do Intune.  
 
 ## <a name="encryption-report-in-public-preview"></a>Relatório de encriptação (em pré-visualização pública)
 Pode utilizar o relatório de encriptação (em pré-visualização públicas) para ver detalhes sobre o estado de encriptação dos seus dispositivos Windows 10.  

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/19/2018
+ms.date: 04/08/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 11b483fc5a0293999603b801a4844a73bab91347
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 888c136934deca80877d75879e270807af194a1e
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798193"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59292227"
 ---
 # <a name="use-ios-app-provisioning-profiles-to-prevent-your-apps-from-expiring"></a>Utilizar perfis de aprovisionamento de aplicações iOS para impedir as aplicações de expirar
 
@@ -52,7 +52,7 @@ Enquanto administrador, pode incluir e excluir grupos de segurança para atribui
 3. No painel **Criar perfil**, configure os seguintes valores:
     - **Nome** – indique um nome para este perfil de aprovisionamento móvel.
     - **Descrição** - opcionalmente, indique uma descrição para a política.
-    - **Carregar ficheiro de perfil** -escolha **importação**e, em seguida, escolha um ficheiro de perfil de configuração móvel da Apple (com a extensão `.mobileprovision`) que transferiu do site Apple Developer.
+    - **Carregar ficheiro de perfil** -escolha **Open** ícone e, em seguida, escolha um ficheiro de perfil de configuração móvel da Apple (com a extensão `.mobileprovision`) que transferiu a partir do [site Apple Developer](https://developer.apple.com/).
 4. Quando tiver terminado, escolha **Criar**.
 
 ## <a name="next-steps"></a>Passos Seguintes

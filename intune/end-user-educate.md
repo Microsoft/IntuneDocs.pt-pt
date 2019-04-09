@@ -1,5 +1,6 @@
 ---
-title: Como dar formação aos seus utilizadores finais sobre o Microsoft Intune | Microsoft Intune
+title: Como dar formação aos seus utilizadores finais sobre o Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Partilhe informações com os utilizadores dos dispositivos para garantir o sucesso da sua implementação do Intune.
 keywords: ''
 author: lenewsad
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 19afc2aee44407dc2c2aec6e73536682ad88e91e
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 4f8405aceaa1fd9c00b966d03a1f7b80e5946d96
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57399672"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59292386"
 ---
 # <a name="how-to-educate-your-end-users-about-microsoft-intune"></a>Como dar formação aos seus utilizadores finais sobre o Microsoft Intune
 

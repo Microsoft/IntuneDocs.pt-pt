@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 51c1ee388c6930c328aff23cc6fc6db730097b86
-ms.sourcegitcommit: 699427f36dbf31dc7921fb75da647b736eafd79b
+ms.openlocfilehash: 41eca84f49c8bd1827d6dfbc74909ee829dd3554
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58899075"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59292471"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Definições de dispositivos de 10 (e versões posteriores) do Windows para permitir ou restringir funcionalidades com o Intune
 
@@ -138,9 +138,9 @@ Estas definições são adicionadas a um perfil de configuração do dispositivo
 - **Caixa de diálogo de erro de cartão SIM (apenas móvel)**: Bloqueia uma mensagem de erro de ser apresentado no dispositivo se nenhum cartão SIM for detetado.
 - **Área de trabalho de tinta**: Impedir que os utilizadores acedam a área de trabalho do ink. **Não configurado** folheio na área de trabalho de tinta e o utilizador tem permissão para usá-lo acima do ecrã de bloqueio.
 - **Reimplementação automática**: Permite aos utilizadores com direitos administrativos eliminar todos os dados de utilizador e as configurações usando **CTRL + Win + R** no ecrã de bloqueio do dispositivo. O dispositivo é automaticamente reconfigurado e reinscrito na gestão.
-- **Exigir que os utilizadores liguem à rede durante a configuração de dispositivo (apenas no Windows Insider)**: Escolher **requerem** para que o dispositivo estabelece ligação a uma rede antes de ir após a página de rede durante a configuração do Windows 10. Enquanto esta funcionalidade está em pré-visualização, uma compilação do Windows insider 1809 ou posterior é necessária para utilizar esta definição.
+- **Exigir que os utilizadores liguem à rede durante a configuração de dispositivo**: Escolher **requerem** para que o dispositivo estabelece ligação a uma rede antes de ir após a página de rede durante a configuração do Windows 10.
 
-  Se um dispositivo não tiver conectividade de rede durante a configuração do Windows 10, esta definição não é aplicada. A definição entra em vigor na próxima vez que o dispositivo é apagado ou repor. Por isso, não pode aplicar a dispositivos totalmente novos. Como qualquer outra configuração do Intune, o dispositivo tem de ser inscritos e gerido pelo Intune para receber as definições de configuração. Mas uma vez está inscrito e receber políticas, em seguida, repor o dispositivo impõe a definição durante a configuração seguinte do Windows.
+  A definição entra em vigor na próxima vez que o dispositivo é apagado ou repor. Como qualquer outra configuração do Intune, o dispositivo tem de ser inscritos e gerido pelo Intune para receber as definições de configuração. Mas uma vez está inscrito e receber políticas, em seguida, repor o dispositivo impõe a definição durante a configuração seguinte do Windows.
 
 - **Acesso de memória direto**: **Bloco** impede o acesso direto à memória (DMA) para todos os hot conectáveis PCI downstream portas até que um utilizador inicia sessão no Windows. **Ativado** (predefinição) permite o acesso a DMA, mesmo quando um utilizador não tem sessão iniciado.
 

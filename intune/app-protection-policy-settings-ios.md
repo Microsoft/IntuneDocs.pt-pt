@@ -1,5 +1,5 @@
 ---
-title: definições de política de proteção de aplicações iOS | Microsoft Intune
+title: Definições de políticas de proteção de aplicações iOS
 titleSuffix: Microsoft Intune
 description: Este tópico descreve as definições de política (aplicação) de proteção de aplicações iOS para dispositivos iOS.
 keywords: ''
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b75a362efc2ea0001cabdf4edb5f6e73a89dd28f
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 448008d20919d95369000b1191f773b23f143d00
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798917"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59292341"
 ---
 #  <a name="ios-app-protection-policy-settings"></a>Definições de políticas de proteção de aplicações iOS
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]

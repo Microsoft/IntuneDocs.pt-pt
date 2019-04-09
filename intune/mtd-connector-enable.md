@@ -1,5 +1,6 @@
 ---
-title: Ativar o conector de defesa contra ameaças móveis no Microsoft Intune | Microsoft Intune
+title: Ativar o conector da Defesa Contra Ameaças para Dispositivos Móveis no Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Ative o conector entre o seu parceiro de Defesa Contra Ameaças para Dispositivos Móveis (MTD) e o Microsoft Intune.
 keywords: ''
 author: brenduns
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1f4e920719b26cf90292a927a129b4fae2b17b45
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: ab9fef5a577783ebbdd512de6d00ab98483e754c
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57394023"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59292268"
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune"></a>Ativar o conector da Defesa Contra Ameaças para Dispositivos Móveis no Intune
 

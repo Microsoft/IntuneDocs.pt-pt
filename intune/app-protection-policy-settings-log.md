@@ -1,5 +1,5 @@
 ---
-title: Rever registos de política de proteção de aplicações | Microsoft Intune
+title: Rever os registos da política de proteção de aplicações
 titleSuffix: Microsoft Intune
 description: Este tópico descreve como configurar os registos do (aplicação) de política de proteção de aplicações do Intune.
 keywords: ''
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8546ca0d513fd5b4d935e030d82e956f3030fa4d
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: bab5671f8b4069608f32e22057e4ddcbb594cb9f
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798723"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59292216"
 ---
 # <a name="review-client-app-protection-logs"></a>Rever registos de proteção de aplicações cliente
 
@@ -39,7 +39,7 @@ A tabela seguinte lista o nome e uma explicação das definições registadas no
 
 ## <a name="app-protection-policy-settings"></a>Definições de políticas de proteção de aplicações
 
-| Nome                        | Valores possíveis                                                                                                                                                                                                                                                                                           | Definição no portal de Gestão de Aplicações Móveis do Azure Intune                                                                                                                            |
+| Name                        | Valores possíveis                                                                                                                                                                                                                                                                                           | Definição no portal de Gestão de Aplicações Móveis do Azure Intune                                                                                                                            |
 |-----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | AccessRecheckOfflineTimeout | x minutos                                                                                                                                                                                                                                                                                                   | [Acesso] Verificar novamente os requisitos de acesso – Período de Tolerância Offline<br>Nota: Este é o período de tempo antes dos requisitos de acesso da aplicação serem novamente verificados se o dispositivo estiver offline.             |
 | AccessRecheckOnlineTimeout  | _x_ minutos                                                                                                                                                                                                                                                                                                   | [Acesso] Verificar novamente os requisitos de acesso – Tempo Limite.<br>Nota: Este é o período de tempo antes dos requisitos de acesso da aplicação serem novamente verificados após a aplicação é iniciada, se o dispositivo estiver online. |

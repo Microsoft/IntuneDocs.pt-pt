@@ -1,12 +1,12 @@
 ---
-title: Gerir aplicações a partir da Loja Microsoft para Empresas
+title: Gerir adquiridas em grandes volumes ou gratuitos aplicações da Microsoft Store para empresas
 titleSuffix: Microsoft Intune
-description: Saiba como pode sincronizar aplicações no Intune a partir da Microsoft Store para Empresas e, em seguida, atribuir e controlá-las.
+description: Saiba como pode sincronizar aplicações adquiridas (ou gratuitas) no Intune a partir da Microsoft Store para empresas.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/03/2019
+ms.date: 04/08/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,21 +16,21 @@ ms.assetid: 2ed5d3f0-2749-45cd-b6bf-fd8c7c08bc1b
 ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
+ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 500fef4cf0edf7739bb1a4f0785f590e328dbbed
-ms.sourcegitcommit: 219bbbfb44eba70ac2b751970d8b4b778cd28416
+ms.openlocfilehash: 895101f2102e019c291609915a4407d1dad4c81c
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "58920246"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59292283"
 ---
-# <a name="how-to-manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>Como gerir aplicações compradas na Loja Microsoft para Empresas com o Microsoft Intune
+# <a name="how-to-manage-volume-purchased-or-free-apps-from-the-microsoft-store-for-business-with-microsoft-intune"></a>Como gerir aplicações de volume adquiridas (ou gratuitas) a partir da Microsoft Store para empresas com o Microsoft Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Na [Loja Microsoft para Empresas](https://www.microsoft.com/business-store) pode encontrar e adquirir aplicações para a sua organização, individualmente ou em volume. Ao ligar a loja ao Microsoft Intune, pode gerir as aplicações compradas em volume a partir do portal do Azure. Por exemplo:
-* Pode sincronizar a lista de aplicações adquiridas na loja com o Intune.
+* Pode sincronizar a lista de aplicações que comprou (ou que são gratuitas) na loja com o Intune.
 * As aplicações que são sincronizadas aparecem na consola de administração do Intune. Pode atribuí-las como todas as outras aplicações.
 * Pode controlar quantas licenças estão disponíveis e quantas estão a ser utilizadas na consola de administração do Intune.
 * O Intune bloqueará a atribuição e instalação de aplicações se tiver um número insuficiente de licenças disponíveis.

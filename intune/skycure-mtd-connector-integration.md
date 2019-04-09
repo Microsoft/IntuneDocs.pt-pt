@@ -1,5 +1,6 @@
 ---
-title: Configurar a integração do Symantec com o Microsoft Intune | Microsoft Intune
+title: Configurar a integração da Symantec com o Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Como configurar a solução Symantec Endpoint Protection Mobile com o Microsoft Intune para controlar o acesso de dispositivos móveis aos seus recursos empresariais.
 keywords: ''
 author: brenduns
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 73c2f2830a0e2f51628af3fbc8fa0ce333363c83
-ms.sourcegitcommit: c4258bb5824daf3f7e0ac3bb8afc539bde4d95da
+ms.openlocfilehash: 9b44164ff31be89e01eb895a8b889e07bb3f704f
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "57991104"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59292362"
 ---
 # <a name="set-up-symantec-endpoint-protection-mobile-integration-with-intune"></a>Configurar a integração do Symantec Endpoint Protection Mobile com o Intune
 

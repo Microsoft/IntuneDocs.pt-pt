@@ -1,12 +1,12 @@
 ---
-title: Gerir o acesso Web com um browser protegido por política
+title: Gerir o acesso web Corporativo com um navegador protegido por política
 titleSuffix: Microsoft Intune
-description: Utilize um browser protegido por política para restringir a navegação Web e a transferência de dados da Web.
+description: Utilize um browser protegido por políticas atribuído pelo Intune para gerir a transferência de dados da web e de navegação na web empresarial.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/20/2019
+ms.date: 04/08/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,26 +16,26 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: ilwu
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
+ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 03153450e51b7f83f2e426d5a7bdf25e7fb95bbe
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 8f32cfbb5e05958ec9d8f303809d3ffa28c3a3ec
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799484"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59292390"
 ---
-# <a name="manage-internet-access-using-a-microsoft-intune-policy-protected-browser"></a>Gerir o acesso à Internet através de um browser protegido por políticas do Microsoft Intune
+# <a name="manage-web-access-using-a-microsoft-intune-policy-protected-browser"></a>Gerir o acesso web a utilizar um browser protegido por políticas do Microsoft Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Ao utilizar um browser protegido com a política do Intune (Microsoft Edge ou Intune Managed Browser), pode garantir que os sites empresariais são sempre acedidos com as proteções ativas.  Quando configurados com o Intune, os browsers protegidos podem tirar partido do seguinte:
 
-- Políticas de proteção de aplicações.
-- Acesso condicional.
-- Início de sessão único.
-- Definições de configuração de aplicações.
-- Integração de proxy de aplicações do Azure.
+- Políticas de proteção de aplicações
+- Acesso condicional
+- Início de sessão único
+- Definições de configuração de aplicação
+- Integração de proxy de aplicações do Azure
 
 ## <a name="microsoft-edge-support"></a>Suporte do Microsoft Edge
 
@@ -45,13 +45,6 @@ Pode usar o Microsoft Edge para cenários empresariais em dispositivos iOS e And
 2. **Integração de política de proteção de aplicações do Intune** - os administradores agora podem direcionar políticas de proteção de aplicações para o Microsoft Edge, incluindo o controle de corte, cópia e colagem, impedir capturas de ecrã, e garantir que as ligações selecionados pelo usuário abertas apenas na outra geridos aplicações.
 3. **Integração de Proxy de aplicações do Azure** - os administradores podem controlar o acesso a aplicações SaaS e aplicações web, ajudando a garantir que as aplicações baseadas no browser executado no browser Microsoft Edge seguro, se os utilizadores finais ligar a partir da rede empresarial ou ligar a partir do Na Internet. 
 4. **Gerido Favoritos e os atalhos de Home Page** -para facilidade de acesso, os administradores podem definir os URLs que sejam apresentadas Favoritos quando os utilizadores finais estão no seu contexto empresarial. Os administradores podem definir um atalho de home page, que irá mostrar como o atalho primário quando o utilizador empresarial abre uma nova página ou um novo separador no Microsoft Edge.
-
-Utilizar um browser protegido com a política do Intune (Microsoft Edge ou o Intune Managed Browser), pode garantir o Web sites empresariais são acedidos com as proteções in-loco. Browsers protegidos de política do Intune tirar partido das seguintes ações:
-- Políticas de proteção de aplicações
-- Acesso condicional
-- Início de sessão único
-- Definições de configuração de aplicação
-- Integração de proxy de aplicações do Azure
 
 As políticas de proteção do Microsoft Intune para o Microsoft Edge ajudam a proteger os dados e recursos da sua organização. Microsoft Edge protegidos pelo Intune garante que recursos da empresa estão protegidos não só em aplicativos instalados nativamente, mas também quando acedido através do browser.
 
@@ -206,7 +199,7 @@ Esta definição permite-lhe configurar a home page que os utilizadores veem ao 
 
 Quando utilizar o procedimento para criar uma configuração da aplicação Managed Browser ou Microsoft Edge, forneça o seguinte par de chave e valor:
 
-|                                Chave                                |                                                           Valor                                                            |
+|                                Chave                                |                                                           Value                                                            |
 |-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
 | <strong>com.microsoft.intune.mam.managedbrowser.homepage</strong> | Especifique um URL válido. Os URLs incorretos são bloqueados como medida de segurança.<br>Exemplo: `<https://www.bing.com>` |
 
@@ -220,7 +213,7 @@ Esta definição permite-lhe configurar um conjunto de marcadores disponível pa
 
 Quando utilizar o procedimento para criar uma configuração da aplicação Managed Browser ou Microsoft Edge, forneça o seguinte par de chave e valor:
 
-|                                Chave                                 |                                                                                                                                                                                                                                                         Valor                                                                                                                                                                                                                                                          |
+|                                Chave                                 |                                                                                                                                                                                                                                                         Value                                                                                                                                                                                                                                                          |
 |--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <strong>com.microsoft.intune.mam.managedbrowser.bookmarks</strong> | O valor desta configuração é uma lista de marcadores. Cada marcador é constituído pelo título e URL do marcador. Separe o título e o URL com o caráter <strong>&#124;</strong>.<br><br>Exemplo:<br> <code>Microsoft Bing&#124;https://www.bing.com</code><br><br>Para configurar múltiplos marcadores, separe cada par com o caráter duplo <strong>&#124;&#124;</strong><br><br>Exemplo:<br> <code>Bing&#124;https://www.bing.com&#124;&#124;Contoso&#124;https://www.contoso.com</code> |
 
@@ -228,7 +221,7 @@ Quando utilizar o procedimento para criar uma configuração da aplicação Mana
 
 Quando utilizar o procedimento para criar uma configuração da aplicação Managed Browser ou Microsoft Edge, forneça o seguinte par de chave e valor:
 
-|Chave|Valor|
+|Chave|Value|
 |-|-|
 |Escolha entre:<br><ul><li>Especificar URLs permitidos (apenas estes URLs são permitidos; não pode aceder a mais nenhum site):<br> **com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br></li><li>Especificar URLs bloqueados (é possível aceder a todos os outros sites):<br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**</li></ul>|O valor correspondente da chave é uma lista de URLs. Introduza todos os URLs que pretende permitir ou bloquear como um único valor, separado por um caráter de pipe **&#124;**.<br><br>Exemplos:<br><br><code>URL1&#124;URL2&#124;URL3</code><br><code>http://*.contoso.com/*&#124;https://*.bing.com/*&#124;https://expenses.contoso.com</code>|
 

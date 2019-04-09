@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8807cb090cfb662f2ab273d29baf2715dfcd6426
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 327019527ea3c374a3ebeb3c29703dbd744d18dc
+ms.sourcegitcommit: 9daaeba9a960c50efcc951856234fbfec3635737
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799133"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59231773"
 ---
 # <a name="in-development-for-microsoft-intune---april-2019"></a>No desenvolvimento do Microsoft Intune – Abril de 2019
 
@@ -177,15 +177,6 @@ Estamos a adicionar uma novo Windows anel definição de atualização que pode 
 
 ### <a name="windows-update-notifications----3316782---"></a>Notificações de atualização do Windows <!-- 3316782 -->
 Estamos a adicionar suporte para as configurações de anel de atualização do Windows para que possa configurar as notificações de atualização do Windows, que os seus utilizadores verão. Esta definição não estará disponível a partir do portal, mas pode ser configurada utilizando a Graph API do Intune.
-
-### <a name="changes-to-company-portal-enrollment-for-ios-12-device-users---3448635---"></a>Alterações para a inscrição no Portal da empresa para os utilizadores de dispositivos iOS 12 <!--3448635 --> 
-Portal da empresa para iOS irá atualizar os ecrãs de inscrição da aplicação e as etapas para se alinhar com as alterações de inscrição de MDM lançadas no Apple iOS 12.2. O fluxo de trabalho atualizado vai agora pedir aos utilizadores:
-
-- Permita o Safari abrir o site do Portal da empresa (por meio do Safari) e transferir o perfil de gestão antes de retornar para a aplicação Portal da empresa.
-- Abra a aplicação de definições para instalar o perfil de gestão no respetivo dispositivo.
-- Regressar à aplicação Portal da empresa que conclua a inscrição.
-
-Para obter mais informações sobre como pode preparar para estas alterações, consulte a [post de Comunidade tecnológica da Microsoft](https://aka.ms/CP_changes_iOS12). Entretanto, para suportar as novas inscrições iOS no Portal da empresa, atualizámos os passos em [inscrever o dispositivo de iOS no Intune](https://docs.microsoft.com/en-us/intune/ios-enroll). Estas alterações de documento será em direto depois Apple versões iOS versão 12.2. 
 
 ### <a name="easier-access-to-diagnostic-settings----3804627---"></a>Facilitar o acesso às definições de diagnóstico <!-- 3804627 -->
 Estamos a adicionar uma nova opção para o **registos de auditoria** painel em cada carga de trabalho do Log de auditoria na consola do Intune que pode utilizar para abrir diretamente a *das definições de diagnóstico* página.

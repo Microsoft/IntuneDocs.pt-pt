@@ -1,6 +1,7 @@
 ---
 title: Resolver problemas de inscrição de dispositivos
-description: Sugestões para resolver problemas de inscrição de dispositivos.
+titleSuffix: Microsoft Intune
+description: Sugestões para resolver problemas de inscrição de dispositivos no Microsoft Intune.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -16,18 +17,18 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-classic
+ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: add5ee699b652aacfa3e3b2bfd089905a881fe11
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 06a8bd8d0a46b7d7eed8efb4cb8b4c2d4e21f77d
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57461367"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59292440"
 ---
-# <a name="troubleshoot-device-enrollment-in-intune"></a>Resolver problemas de inscrição de dispositivos no Intune
+# <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Resolver problemas de inscrição de dispositivos no Microsoft Intune
 
-Este artigo fornece sugestões para resolver problemas de inscrição de dispositivos. Se estas informações não resolverem o problema, veja [Como obter suporte para o Microsoft Intune](get-support.md) para ver mais formas de obter ajuda.
+Este artigo fornece sugestões para resolução de problemas [inscrição de dispositivos](device-enrollment.md) problemas. Se estas informações não resolverem o problema, veja [Como obter suporte para o Microsoft Intune](get-support.md) para ver mais formas de obter ajuda.
 
 
 ## <a name="initial-troubleshooting-steps"></a>Passos iniciais de resolução de problemas

@@ -1,5 +1,6 @@
 ---
-title: Cenários de acesso condicional | Microsoft Intune
+title: Cenários de acesso condicional
+titleSuffix: Microsoft Intune
 description: Saiba como o acesso condicional do Intune é geralmente utilizado para acesso condicional baseado no dispositivo e baseado na aplicação.
 keywords: ''
 author: brenduns
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1538693923a1fcefcfee06022ed4c11d746c3be9
-ms.sourcegitcommit: e63e3debb5f4d9a757f767913e72e39742137b17
+ms.openlocfilehash: 666a62e9aa42212bacba0e0222a828d89d780eef
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58788503"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59292169"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>Quais são as formas comuns de utilizar o acesso condicional com o Intune?
 
