@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 87f7ad0f155ba1dac7d72b6a71f3b555ba908c97
-ms.sourcegitcommit: 699427f36dbf31dc7921fb75da647b736eafd79b
+ms.openlocfilehash: 8df4a1d7f929301c11f577a9b7e50ef1647dda11
+ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58899117"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59423718"
 ---
 # <a name="whats-new-in-the-microsoft-intune---previous-months"></a>Novidades do Microsoft Intune – meses anteriores
 
@@ -316,7 +316,7 @@ Em **Conformidade do dispositivo** > **Políticas** > selecione uma política > 
 - não aplicável Também é apresentada uma imagem que mostra a contagem de dispositivos de uma plataforma diferente. Por exemplo, se observar um perfil iOS, o novo mosaico mostra a contagem de dispositivos não iOS atribuídos a este perfil. Veja [Políticas de conformidade do dispositivo](compliance-policy-monitor.md#view-status-of-device-policies).
 
 #### <a name="device-compliance-supports-3rd-party-anti-virus-solutions----2325484---"></a>Conformidade do dispositivo suporta o 3º soluções de software antivírus de terceiros <!-- 2325484 -->
-Quando cria uma política de conformidade do dispositivo (**conformidade do dispositivo** > **políticas** > **criar política**  >  **Plataforma: Windows 10 e posterior** > **definições** > **segurança do sistema**), existem novos **[segurança de dispositivo](compliance-policy-create-windows.md#windows-10-and-later-policy-settings)** opções: 
+Quando cria uma política de conformidade do dispositivo (**conformidade do dispositivo** > **políticas** > **criar política**  >  **Plataforma: Windows 10 e posterior** > **definições** > **segurança do sistema**), existem novos **[segurança de dispositivo](compliance-policy-create-windows.md)** opções: 
 - **Antivírus**: Quando definido como **requerem**, pode verificar a conformidade com as soluções antivírus que estão registadas com o Centro de segurança do Windows, por exemplo, Symantec e o Windows Defender. 
 - **AntiSpyware**: Quando definido como **requerem**, pode verificar a conformidade com as soluções de antispyware registados no Centro de segurança do Windows, por exemplo, Symantec e o Windows Defender. 
 

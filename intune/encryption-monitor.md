@@ -17,21 +17,21 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 43cef2e5a07795bc4c6dc7cf42b2cfa6be04269f
-ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
+ms.openlocfilehash: 1c9028d3b8e69c8f20e264f99bd4bf8fda6c9050
+ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 04/09/2019
-ms.locfileid: "59292259"
+ms.locfileid: "59423522"
 ---
 # <a name="monitor-bitlocker-and-device-encryption"></a>Monitorizar a encriptação BitLocker e o dispositivo  
 O Intune fornece uma localização centralizada para identificar o estado de encriptação dos seus dispositivos Windows 10 e ajuda-o a aceder a informações importantes para o BitLocker dos seus dispositivos, como encontrada no Azure Active Directory (Azure AD).  
 
-- O [relatório de encriptação (em pré-visualização pública)](encryption-monitor.md#encryption-report-in-public-preview) fornece detalhes sobre o estado de encriptação e a preparação de um dispositivo. Os detalhes do relatório podem ajudá-lo a identificar problemas que impedem a encriptação com êxito de dispositivos que pretende proteger.  
-- [Ver detalhes de disco BitLocker (em pré-visualização pública)](encryption-monitor.md#bitlocker-recovery-keys-in-public-preview) , como as chaves de ID de chave e a recuperação para os dispositivos a partir do portal do Intune.  
+- O [relatório de encriptação (em pré-visualização pública)](#encryption-report) fornece detalhes sobre o estado de encriptação e a preparação de um dispositivo. Os detalhes do relatório podem ajudá-lo a identificar problemas que impedem a encriptação com êxito de dispositivos que pretende proteger.  
+- [Ver detalhes de disco BitLocker (em pré-visualização pública)](#bitlocker-recovery-keys) , como as chaves de ID de chave e a recuperação para os dispositivos a partir do portal do Intune.  
 
-## <a name="encryption-report-in-public-preview"></a>Relatório de encriptação (em pré-visualização pública)
-Pode utilizar o relatório de encriptação (em pré-visualização públicas) para ver detalhes sobre o estado de encriptação dos seus dispositivos Windows 10.  
+## <a name="encryption-report"></a>Relatório de encriptação
+Pode utilizar o relatório de encriptação (em pré-visualização pública) para ver detalhes sobre o estado de encriptação dos seus dispositivos Windows 10.  
 
 Para encontrar o relatório, inicie sessão para o [Intune](https://aka.ms/intuneportal) e aceda a **configuração do dispositivo**e, em *Monitor*, selecione **relatório de encriptação (pré-visualização)**.  
 
@@ -85,7 +85,7 @@ Este painel fornece os seguintes detalhes:
    - O TPM não está preparado para o BitLocker.  
    - A rede não estiver disponível, que é necessário para o backup da chave de recuperação.  
 
-## <a name="bitlocker-recovery-keys-in-public-preview"></a>Chaves de recuperação do BitLocker (em pré-visualização pública)
+## <a name="bitlocker-recovery-keys"></a>Chaves de recuperação do BitLocker
 Como pré-visualização pública, o Intune fornece acesso o painel do Azure AD para o BitLocker, para que possa visualizar IDs de chave do BitLocker e chaves de recuperação para os seus dispositivos Windows 10, no portal do Intune.  Para ser acessível, o dispositivo tem de ter as chaves colocadas em caução em para o Azure AD. 
 1. Inicie sessão no [Intune](https://aka.ms/intuneportal), aceda à **dispositivos** e, em *gerir*, selecione **todos os dispositivos**.
 2. Selecione um dispositivo da lista e, em seguida, em *Monitor*, selecione **chaves de recuperação – pré-visualização**.  
@@ -100,4 +100,4 @@ Quando as chaves não estão no Azure AD, o Intune irá apresentar *chave do Bit
 Informações para o BitLocker são obtidas utilizando-o [fornecedor de serviços de configuração do BitLocker](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) (CSP). BitLocker CSP é suportada no Windows 10 versão 1703 e posteriores e para o Windows 10 Pro versão 1809 e posterior. 
 
 ## <a name="next-steps"></a>Passos Seguintes
-Criar uma [conformidade do dispositivo](compliance-policy-create-windows.md#windows-10-and-later-policy-settings) política para dispositivos Windows 10 para configurar o BitLocker e encriptação.
+Criar uma [conformidade do dispositivo](compliance-policy-create-windows.md) política para dispositivos Windows 10 para configurar o BitLocker e encriptação.

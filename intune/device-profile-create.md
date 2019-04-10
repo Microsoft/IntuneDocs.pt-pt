@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/21/2019
+ms.date: 04/03/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 066508ba62d4b0ece3fe5a5e95b709a12832f1a0
-ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
+ms.openlocfilehash: 08c6ece37a4ff6eceaa4df735f365453a4bc7d88
+ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58394917"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59423530"
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>Criar um perfil de dispositivo no Microsoft Intune
 
@@ -49,7 +49,7 @@ Este artigo:
 
 3. Selecione **perfis** > **criar perfil**. Introduza as seguintes propriedades:
 
-   - **Nome**: Introduza um nome descritivo para o perfil.
+   - **Nome**: Introduza um nome descritivo para o perfil. Nome de seus perfis, para que possa identificar facilmente mais tarde. Por exemplo, é um nome de perfil boa **perfil de e-mail do WP para toda a empresa**.
    - **Descrição**: Introduza uma descrição para o perfil. Esta definição é opcional, mas recomendada.
    - **Plataforma**: Escolha a plataforma dos seus dispositivos. As opções são:  
 

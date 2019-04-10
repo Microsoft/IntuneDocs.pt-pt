@@ -1,68 +1,44 @@
 ---
-title: Criar uma política de conformidade do Android Enterprise no Microsoft Intune – Azure | Microsoft Docs
-description: Crie ou configure uma política de conformidade de dispositivos do Microsoft Intune para dispositivos Android Enterprise ou com perfil de trabalho. Opte por permitir dispositivos com jailbreak, defina o nível de ameaça aceitável, verifique o Google Play, introduza a versão do sistema operativo mínima e máxima, escolha os seus requisitos de palavra-passe e permita aplicações de sideload.
+title: As definições de conformidade do Android Enterprise no Microsoft Intune – Azure | Documentos da Microsoft
+description: Ver uma lista de todas as definições que pode utilizar quando a definição de conformidade para os seus dispositivos Android Enterprise no Microsoft Intune. Definir regras de palavra-passe, escolher uma versão de sistema operativo mínimo ou máximo, restringir aplicações específicas, impedir a reutilização palavra-passe e muito mais.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/02/2019
+ms.date: 04/04/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 9da89713-6306-4468-b211-57cfb4b51cc6
-ms.reviewer: muhosabe
+ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 00c48f49507fe4fde5484d0725b605d90407facd
-ms.sourcegitcommit: 699427f36dbf31dc7921fb75da647b736eafd79b
+ms.openlocfilehash: 16db0acab84a1095c40e9a92648c75c2581187cd
+ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58899058"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59423565"
 ---
-# <a name="add-a-device-compliance-policy-for-android-enterprise-devices-in-intune"></a>Adicionar uma política de conformidade para dispositivos Android Enterprise no Intune
+# <a name="android-enterprise-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Definições do Android Enterprise para marcar dispositivos como compatíveis ou não compatíveis com o Intune
 
-As políticas de conformidade de dispositivos são um elemento fundamental ao utilizar o Intune para proteger os recursos da sua organização. No Intune, pode criar regras e definições que os dispositivos empresariais Android têm de cumprir para ser considerado em conformidade, por exemplo, um comprimento de palavra-passe. Se o dispositivo não estiver em conformidade, pode bloquear o acesso aos dados e recursos através do [acesso condicional](conditional-access.md).
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Esta funcionalidade aplica-se a:  
+Este artigo apresenta e descreve as definições de conformidade diferentes que pode configurar em dispositivos Android Enterprise no Intune. Como parte da sua solução de gestão (MDM) de dispositivos móveis, utilize estas definições para marcar os dispositivos com root (jailbreak) como não conforme, definir um nível de ameaça permitido, ativar o Google Play Protect e muito mais.
+
+Esta funcionalidade aplica-se a:
+
 - Android Enterprise
 
-Também pode obter relatórios de dispositivo e tomar medidas quanto à não conformidade, tais como enviar um e-mail de notificação para o utilizador. Para saber mais sobre as políticas de conformidade, veja [Introdução à conformidade de dispositivos](device-compliance-get-started.md).
+Enquanto administrador do Intune, utilize estas definições de conformidade para ajudar a proteger recursos da sua organização. Para saber mais sobre as políticas de conformidade e o que fazer, consulte [introdução à conformidade de dispositivo](device-compliance-get-started.md).
 
-Este artigo indica as definições que pode utilizar numa política de conformidade para dispositivos Android Enterprise.
+## <a name="before-you-begin"></a>Antes de começar
 
-## <a name="non-compliance-and-conditional-access"></a>Não conformidade e acesso condicional
-
-A seguinte tabela descreve como as definições não conformes são geridas quando uma política de conformidade é utilizada com uma política de acesso condicional.
-
---------------------------
-
-|**definição de política**| **Perfil do Android Enterprise** |
-| --- | --- |
-| **Configuração do PIN ou da palavra-passe** |  Em quarentena |
-| **Encriptação do dispositivo** |  Em quarentena |
-| **Dispositivo desbloqueado por jailbreak ou obtenção de controlo de raiz** | Em quarentena (não é uma definição) |
-| **perfil de e-mail** | Não aplicável |
-| **Versão mínima do SO** | Em quarentena |
-| **Versão máxima do SO** | Em quarentena |
-| **Atestado do estado de funcionamento do Windows** |Não aplicável |
-
-**Remediado** = O sistema operativo do dispositivo impõe a conformidade. Por exemplo, forçar o utilizador a definir um PIN.
-
-**Em quarentena** = O sistema operativo do dispositivo não impõe a conformidade. Por exemplo, os dispositivos Android não forçam o utilizador a encriptar o dispositivo. Quando o dispositivo não é conforme, são realizadas as seguintes ações:
-
-  - Se uma política de acesso condicional se aplicar ao utilizador, o dispositivo é bloqueado.
-  - O portal da empresa notifica o utilizador sobre eventuais problemas de conformidade.
-
-## <a name="create-a-device-compliance-policy"></a>Criar uma política de conformidade de dispositivo
-
-[!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
-4. Em **Plataforma**, selecione **Android Enterprise**. 
-5. Selecione **Configurar Definições**. Introduza as definições **Estado de Funcionamento do Dispositivo**, **Propriedades do Dispositivo** e **Segurança do Sistema**, conforme descrito neste artigo.
+[Criar uma política de conformidade](create-compliance-policy.md#create-the-policy). Para **plataforma**, selecione **Android Enterprise**.
 
 ## <a name="device-health"></a>Device health
 
@@ -113,7 +89,7 @@ A seguinte tabela descreve como as definições não conformes são geridas quan
 
 - **Encriptação do armazenamento de dados no dispositivo de**: Escolher **requerem** para encriptar o armazenamento de dados nos seus dispositivos. Quando seleciona **Não configurado** (predefinição), esta definição não é avaliada quanto à conformidade ou não conformidade. 
 
-  Uma vez que os dispositivos com perfil de trabalho do Android impõem a encriptação, não tem de configurar esta definição.
+  Não tem de configurar esta definição, porque os dispositivos empresariais Android impõem a encriptação.
 
 ### <a name="device-security"></a>Segurança do Dispositivo
 
@@ -124,7 +100,7 @@ A seguinte tabela descreve como as definições não conformes são geridas quan
   > [!IMPORTANT]
   > As aplicações de sideload requerem a ativação da definição **Bloquear aplicações de origens desconhecidas**. Aplique esta política de conformidade apenas se não tiver aplicações Android de sideload nos dispositivos.
 
-  Uma vez que os dispositivos com perfil de trabalho do Android restringem sempre a instalação de origens desconhecidas, não tem de configurar esta definição.
+  Não tem de configurar esta definição como dispositivos Android Enterprise restringem sempre a instalação de origens desconhecidas.
 
 - **Integridade de tempo de execução da aplicação do portal da empresa**: Escolher **requerem** para confirmar o Portal da empresa a aplicação cumpre os seguintes requisitos:
 
@@ -137,36 +113,14 @@ A seguinte tabela descreve como as definições não conformes são geridas quan
 
 - **Depuração de USB de bloco no dispositivo**: Escolher **bloco** para impedir que os dispositivos a utilizar a funcionalidade de depuração de USB. Quando seleciona **Não configurado** (predefinição), esta definição não é avaliada quanto à conformidade ou não conformidade.
 
-  Uma vez que a depuração USB já está desativada em dispositivos com perfil de trabalho do Android, não tem de configurar esta definição.
+  Não tem de configurar esta definição, porque a depuração USB já se encontra desativada em dispositivos Android Enterprise.
 
 - **Nível de patch de segurança mínimo**: Selecione o nível de patch de segurança mais antigo que um dispositivo pode ter. Os dispositivos que não tiverem pelo menos este nível de correção serão considerados como não conformes. A data tem de ser introduzida no formato *AAAA-MM-DD*.
 
-Quando terminar, selecione **OK** > **OK** para guardar as suas alterações.
-
-## <a name="actions-for-noncompliance"></a>Ações de não conformidade
-
-Selecione **Ações para não conformidade**. A ação predefinida marca imediatamente o dispositivo como não conforme.
-
-Pode alterar a agenda quando o dispositivo for marcado como não conforme, tal como após um dia. Também pode configurar uma segunda ação que envia um e-mail para o utilizador quando o dispositivo não estiver em conformidade.
-
-O artigo [Adicionar ações para dispositivos não conformes](actions-for-noncompliance.md) fornece mais informações, incluindo como criar um e-mail de notificação para os seus utilizadores.
-
-## <a name="scope-tags"></a>Scope tags (Etiquetas de âmbito)
-
-As etiquetas de âmbito são uma ótima forma de atribuir políticas a grupos específicos, tal como Vendas, Engenharia, RH e assim sucessivamente. Pode adicionar etiquetas de âmbito para políticas de conformidade. Veja [Utilizar etiquetas de âmbito para filtrar políticas](scope-tags.md). 
-
-## <a name="assign-user-groups"></a>Atribuir grupos de utilizadores
-
-Depois de criar uma política, esta não fará nada até ser atribuída. Para atribuir a política: 
-
-1. Escolha uma política configurada por si. As políticas existentes encontram-se em **Conformidade do dispositivo** > **Políticas**.
-2. Escolha a política e, em seguida, **Atribuições**. Pode incluir ou excluir grupos de segurança do Azure Active Directory (AD).
-3. Escolha **Grupos selecionados** para ver os grupos de segurança do Azure AD. Selecione os grupos de utilizadores aos quais pretende aplicar esta política e escolha **Guardar** para implementar a política aos utilizadores.
-
-Aplicou a política aos utilizadores. Os dispositivos utilizados pelos utilizadores abrangidos pela política são avaliados quanto à conformidade.
+Selecione **OK** > **Criar** para guardar as alterações.
 
 ## <a name="next-steps"></a>Passos Seguintes
 
-[Automatizar o e-mail e adicionar ações para dispositivos não conformes](actions-for-noncompliance.md)  
-[Monitorizar as políticas de conformidade do Dispositivo do Intune](compliance-policy-monitor.md)  
-[Definições de políticas de conformidade para Android](compliance-policy-create-android.md)
+- [Adicionar ações para dispositivos não conformes](actions-for-noncompliance.md) e [utilizar etiquetas de âmbito para políticas de filtro](scope-tags.md).
+- [Monitorizar as suas políticas de conformidade](compliance-policy-monitor.md).
+- Consulte a [definições de política de conformidade para Android](compliance-policy-create-android.md) dispositivos.

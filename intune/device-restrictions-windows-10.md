@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/03/2019
+ms.date: 04/08/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 41eca84f49c8bd1827d6dfbc74909ee829dd3554
-ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
+ms.openlocfilehash: 8957c8d8aad2eaa1741b1a625afd4b5a41a8bb51
+ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 04/09/2019
-ms.locfileid: "59292471"
+ms.locfileid: "59423701"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Definições de dispositivos de 10 (e versões posteriores) do Windows para permitir ou restringir funcionalidades com o Intune
 
@@ -308,6 +308,29 @@ Este perfil de restrições de dispositivo está diretamente relacionada com o p
   - **Impedir a reutilização de palavras-passe anteriores**: Especifica o número de palavras-passe utilizadas anteriormente que são memorizadas pelo dispositivo.
   - **Exigir palavra-passe quando o dispositivo regressa do Estado de inatividade (apenas móvel)**: Especifica que o utilizador tem de introduzir uma palavra-passe para desbloquear o dispositivo (apenas Windows 10 Mobile).
   - **Palavras-passe simples**: Permite-lhe permitir a utilização de palavras-passe simples, como 1111 e 1234. Esta definição também permite ou bloqueia a utilização de palavras-passe por imagem do Windows.
+- **Encriptação automática durante a AADJ**: **Bloco** impede que a encriptação de dispositivos de disco BitLocker automática quando o dispositivo está preparado para a primeira utilização, quando o dispositivo estiver associado ao Azure AD. **Não configurado** (predefinição) utiliza a predefinição do sistema operativo, o que pode ativar a encriptação. Mais diante [criptografia de dispositivo de disco BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption).
+
+  [Segurança/PreventAutomaticDeviceEncryptionForAzureADJoinedDevices CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-preventautomaticdeviceencryptionforazureadjoineddevices)
+
+- **Política de Federal Information Processing Standard (FIPS)**: **Permitir** utiliza a política de Federal Information Processing Standard (FIPS), que é um Governo dos E.U.A. standard para a encriptação, hash e assinatura. **Não configurado** (predefinição) utiliza a predefinição do sistema operativo, o que não usa o FIPS.
+
+  [Criptografia/AllowFipsAlgorithmPolicy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-cryptography#cryptography-allowfipsalgorithmpolicy)
+
+- **Autenticação do dispositivo Windows Hello**: **Permitir** os utilizadores utilizem um Windows Hello dispositivo complementar, como um telemóvel, a banda de adequação ou o dispositivo de IoT, para iniciar sessão no computador Windows 10. **Não configurado** (predefinição) utiliza a predefinição do sistema operativo, o que pode impedir que os dispositivos Windows Hello complementar a autenticação com o Windows.
+
+  [Autenticação/AllowSecondaryAuthenticationDevice CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-allowsecondaryauthenticationdevice)
+
+- **Início de sessão da Web**: Ativa o suporte de início de sessão do Windows para fornecedores de federado não ADFS (Serviços de Federação do Active Directory), tais como SAML Security Assertion Markup Language (). SAML utiliza tokens seguras que fornecem a experiência de navegadores da web um início de sessão único (SSO). As opções são:
+
+  - **Não configurado** (predefinição): Utiliza a predefinição do sistema operativo no dispositivo.
+  - **Ativado**: O provedor de credenciais da Web está ativado para início de sessão.
+  - **Desativado**: O provedor de credenciais da Web está desativado para início de sessão.
+
+  [Autenticação/EnableWebSignIn CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-enablewebsignin)
+
+- **Preferencial de domínio de inquilino do Azure AD**: Introduza um nome de domínio existente na sua organização do Azure AD. Quando os utilizadores neste domínio iniciam sessão, não precisam de se escrever o nome de domínio. Por exemplo, introduza `contoso.com`. Os utilizadores a `contoso.com` domínio pode iniciar sessão com o respetivo nome de utilizador, tais como "abby", em vez de "abby@contoso.com".
+
+  [Autenticação/PreferredAadTenantDomainName CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-preferredaadtenantdomainname)
 
 ## <a name="per-app-privacy-exceptions"></a>Exceções de privacidade por aplicação
 

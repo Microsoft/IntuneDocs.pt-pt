@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/20/2019
+ms.date: 04/08/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1d77308e010b71ec076f33b669674ce1252937f9
-ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
+ms.openlocfilehash: 0c950efdd95fd8d856ec677385712a022dead870
+ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58394846"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59423855"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>Atribuir perfis de utilizador e dispositivo no Microsoft Intune
 
@@ -43,6 +43,16 @@ Este artigo mostra-lhe como atribuir um perfil e inclui algumas informações so
 
 5. **Guarde** as suas alterações.
 
+### <a name="evaluate-how-many-users-are-targeted"></a>Avaliar o número de utilizadores é visado
+
+Ao atribuir o perfil, pode também **Evaluate** quantos utilizadores são afetados. Esta funcionalidade calcula os utilizadores. ele não calcula a dispositivos.
+
+1. No Intune, selecione **configuração do dispositivo** > **perfis**.
+2. Selecione um perfil > **atribuições** > **Evaluate**. Uma mensagem mostra quantos utilizadores são visados por este perfil.
+
+Se o **Evaluate** botão está a cinzento, certifique-se de que o perfil é atribuído a um ou mais grupos.
+
+
 ## <a name="use-scope-tags"></a>Utilizar etiquetas de âmbito
 
 Quando criar ou atualizar um perfil, também pode adicionar etiquetas de âmbito para o perfil.
@@ -53,7 +63,7 @@ Quando criar ou atualizar um perfil, também pode adicionar etiquetas de âmbito
 
 Os perfis de configuração de dispositivos do Intune permitem-lhe excluir grupos da atribuição de políticas. Por exemplo, pode atribuir um perfil de dispositivo para o **todos os utilizadores empresariais** de grupo, mas excluir membros no **equipa de direção** grupo.
 
-Ao excluir grupos, exclua apenas utilizadores ou excluir apenas grupos de dispositivos (não uma mistura de grupos) de uma atribuição, o Intune não considera qualquer relação de utilizador para o dispositivo. Incluir grupos de utilizadores e excluir grupos de dispositivos poderá não receber os resultados esperados. Quando utilizar grupos misturados ou se existirem outros conflitos, a inclusão terá prioridade sobre a exclusão.
+Ao excluir grupos, apenas os utilizadores ou apenas grupos de dispositivos (não uma mistura de grupos) de uma atribuição, o Intune não se parecer em relações de utilizador para o dispositivo. Incluir grupos de utilizadores e excluir grupos de dispositivos poderá não receber os resultados esperados. Quando utilizar grupos misturados ou se existirem outros conflitos, a inclusão terá prioridade sobre a exclusão.
 
 Por exemplo, suponha que pretende atribuir um perfil do dispositivo a todos os dispositivos na sua organização, exceto a dispositivos de local público. Deve incluir o grupo **Todos os Utilizadores** e excluir o grupo **Todos os Dispositivos**. Neste caso, todos os seus utilizadores e os respetivos dispositivos obtém a política, mesmo se o dispositivo do utilizador estiver no **todos os dispositivos** grupo.
 

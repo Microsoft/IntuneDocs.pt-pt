@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 327019527ea3c374a3ebeb3c29703dbd744d18dc
-ms.sourcegitcommit: 9daaeba9a960c50efcc951856234fbfec3635737
+ms.openlocfilehash: 2422762fb6717cb4666345599785430a2c35cd1f
+ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59231773"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59423544"
 ---
 # <a name="in-development-for-microsoft-intune---april-2019"></a>No desenvolvimento do Microsoft Intune – Abril de 2019
 
@@ -60,9 +60,6 @@ Em breve poderá utilizar o Intune para gerir as regras de firewall personalizad
 
 ### <a name="require-app-protection-conditional-access----1634317---"></a>Necessitam de acesso condicional de proteção de aplicações  <!--1634317 -->
 Poderá usar *política de proteção de aplicações requerem*, confirma que a política é aplicada a aplicação de um utilizador antes de início de sessão estiver concluída, para impedir que os utilizadores acedam a dados a proteger com o acesso condicional. Enquanto a garantia de política pode retardar a primeira experiência de utilização, ele ajuda a proteger contra problemas de rede, configurações incorretas administrativas ou intencionais esforços para permitem despistar políticas de proteção de aplicações. 
-
-### <a name="deployment-of-online-licensed-microsoft-store-for-business-apps----16726660---"></a>Implementação de online licenciado Microsoft Store para aplicações de negócio <!-- 16726660 -->
-Será capaz de atribuir necessário online licenciada Microsoft Store para aplicações de negócio no contexto do dispositivo. Implementar um Microsoft Store para a aplicação de negócios desta forma permitirá que a aplicação ser instalada para todos os utilizadores no dispositivo. Isto só é aplicável no Windows 10 RS4 + dispositivos de ambiente de trabalho. A opção para instalar no contexto do dispositivo está disponível na página de atribuição de aplicações de cliente para aplicações licenciadas Online do MSFB.
 
 ### <a name="include-and-exclude-mixture-of-user-groups-and-device-groups-when-assigning-policies-and-profiles----1807547---"></a>Incluir e excluir a mistura de grupos de utilizadores e grupos de dispositivos durante a atribuição de políticas e perfis <!-- 1807547 -->
 Ao atribuir políticas de conformidade ou perfis de configuração, pode atribuí-las a grupos de segurança com utilizadores ou dispositivos. Atualmente, pode incluir e excluir apenas grupos de utilizadores, *ou* incluir e excluir apenas grupos de dispositivos. Não é possível incluir e excluir uma mistura de grupos, tal como incluir grupos de utilizadores *e* excluir um grupo de dispositivos.
@@ -142,7 +139,7 @@ Aplica-se a: Android Enterprise dispositivos totalmente geridos
 ### <a name="check-for-a-tpm-chipset-in-a-windows-10-device-compliance-policy----3617671---"></a>Verifique a existência de um chipset TPM numa política de conformidade de dispositivos Windows 10 <!-- 3617671 -->
 Muitos Windows 10 e dispositivos posteriores têm chipsets Trusted Platform Module (TPM). Uma nova definição de conformidade irá verificar se um TPM está no dispositivo.
 
-[Windows 10 e posteriores definições de política de conformidade](compliance-policy-create-windows.md#windows-10-and-later-policy-settings) lista as definições atuais.
+[Windows 10 e posteriores definições de política de conformidade](compliance-policy-create-windows.md) lista as definições atuais.
 
 Aplica-se a: 
 - Windows 10 e posterior

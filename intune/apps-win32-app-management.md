@@ -1,12 +1,12 @@
 ---
-title: Adicionar aplicações Win32 ao Microsoft Intune
+title: Adicionar e atribuir aplicações de Win32 para o Microsoft Intune
 titleSuffix: ''
-description: Saiba como adicionar, fornecer e gerir aplicações de Win32 com o Microsoft Intune. Este tópico inclui uma descrição geral das funcionalidades de gestão e da entrega de aplicações Win32 do Intune, bem como informações de resolução de problemas com aplicações Win32.
+description: Saiba como adicionar, atribuir e gerir aplicações de Win32 com o Microsoft Intune. Este tópico inclui uma descrição geral das funcionalidades de gestão e da entrega de aplicações Win32 do Intune, bem como informações de resolução de problemas com aplicações Win32.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/25/2019
+ms.date: 04/08/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,40 +18,47 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d93ad2e838f4980c206c098d8e36e51e138969d1
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: bd93e5ef7af5f4a4c0cd8d29f4cbcc26fc0515cd
+ms.sourcegitcommit: 601327125ac8ae912d8159422de8aac7dbdc25f6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799049"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59429156"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune autónomo - gestão de aplicações do Win32
 
-O Intune autónomo permitirá aceder a melhores funcionalidades de gestão de aplicações Win32. Embora seja possível para clientes ligados à cloud utilizarem o Configuration Manager para a gestão de aplicações Win32, os clientes exclusivos do Intune terão melhores funcionalidades de gestão para as suas aplicações Win32 de linha de negócio (LOB). Este tópico fornece uma descrição geral da funcionalidade de gestão de aplicações Win32 do Intune e informações de resolução de problemas.
+[Intune autónomo](mdm-authority-set.md) agora permite que aplicação de Win32 maior capacidades de gestão. Embora seja possível para clientes ligados à cloud utilizarem o Configuration Manager para a gestão de aplicações Win32, os clientes exclusivos do Intune terão melhores funcionalidades de gestão para as suas aplicações Win32 de linha de negócio (LOB). Este tópico fornece uma descrição geral da funcionalidade de gestão de aplicações Win32 do Intune e informações de resolução de problemas.
+
+> [!NOTE]
+> Esta capacidade de gestão de aplicações oferece suporte a ambos os arquitetura de 32 bits e 64 bits do sistema operativo para aplicativos do Windows.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
+Para utilizar a gestão de aplicações do Win32, certifique-se de que satisfazem os seguintes critérios:
+
 - Windows 10 versão 1607 ou posteriores (versões Enterprise, Pro e Education)
 - O cliente do Windows 10 tem de estar: 
-    - associado ao Azure Active Directory (AAD) ou [híbrida do Azure Active Directory](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan) (abre-se outro web site do Docs), e
+    - associado ao Azure Active Directory (AAD) ou [híbrida do Azure Active Directory](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan)
     - inscrito no Intune (gerido pela MDM)
 - Tamanho de aplicativo do Windows está limitado a 8 GB por aplicação
 
 ## <a name="prepare-the-win32-app-content-for-upload"></a>Preparar o conteúdo da aplicação Win32 para carregamento
 
-Utilize o [ferramenta de preparação do conteúdo do Microsoft Win32](https://go.microsoft.com/fwlink/?linkid=2065730) para processar previamente as aplicações Win32. A ferramenta converte os arquivos de instalação de aplicativo para o *.intunewin* formato. A ferramenta Deteta alguns dos atributos necessários pelo Intune para determinar o estado de instalação do aplicativo. Depois de utilizar esta ferramenta na pasta do instalador da aplicação, poderá criar uma aplicação Win32 na consola do Intune.
+Utilize o [ferramenta de preparação do conteúdo do Microsoft Win32](https://go.microsoft.com/fwlink/?linkid=2065730) para processar previamente as aplicações Windows clássico (Win32). A ferramenta converte os arquivos de instalação de aplicativo para o *.intunewin* formato. A ferramenta Deteta alguns dos atributos necessários pelo Intune para determinar o estado de instalação do aplicativo. Depois de utilizar esta ferramenta na pasta de instalador de aplicação, poderá criar uma aplicação de Win32 na consola do Intune.
 
 > [!IMPORTANT]
 > O [ferramenta de preparação do conteúdo do Microsoft Win32](https://go.microsoft.com/fwlink/?linkid=2065730) zips para todos os ficheiros e subpastas quando cria o *.intunewin* ficheiro. Certifique-se de que tenha a ferramenta de preparação do conteúdo do Microsoft Win32 separado do instalador ficheiros e pastas, para que não incluir a ferramenta ou outros arquivos desnecessários e pastas no seu *.intunewin* ficheiro.
 
-Pode baixar o [ferramenta de preparação do conteúdo do Microsoft Win32](https://go.microsoft.com/fwlink/?linkid=2065730) do GitHub.
+Pode baixar o [ferramenta de preparação do conteúdo do Microsoft Win32](https://go.microsoft.com/fwlink/?linkid=2065730) do GitHub como um ficheiro zip. O arquivo zipado contém uma pasta denominada **Microsoft-Win32-Content-Prep-Tool-master**. A pasta contém a ferramenta de preparação, a licença, um ficheiro Leia-me e as notas de versão. 
+
+Se executar `IntuneWinAppUtil.exe` da janela de comando sem parâmetros, a ferramenta irá guiá-lo para os parâmetros necessários passo a passo de entrada. Em alternativa, pode adicionar os parâmetros para o comando com base nos seguintes parâmetros de linha de comandos disponíveis.
 
 ### <a name="available-command-line-parameters"></a>Parâmetros da linha de comandos disponíveis 
 
 |    **Parâmetro da linha de comandos**    |    **Descrição**    |
 |:------------------------------:|:----------------------------------------------------------:|
 |    `-h`     |    Ajuda    |
-|    `-c <setup_folder>`     |    A pasta de configuração para todos os ficheiros de configuração.    |
+|    `-c <setup_folder>`     |    Pasta de todos os ficheiros de configuração. Todos os ficheiros nesta pasta irão ser compactados em *.intunewin* ficheiro.    |
 |   ` -s <setup_file>`     |    Ficheiro de configuração (como *setup.exe* ou *setup.msi*).    |
 |    `-o <output_folder>`     |    Pasta de saída para o ficheiro *.intunewin* gerado.    |
 |    `-q`       |    Modo silencioso    |
@@ -61,7 +68,7 @@ Pode baixar o [ferramenta de preparação do conteúdo do Microsoft Win32](https
 |    **Comando de exemplo**    |    **Descrição**    |
 |:-----------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 |    `IntuneWinAppUtil -h`    |    Este comando mostra informações de utilização da ferramenta.    |
-|    `IntuneWinAppUtil -c <setup_folder> -s <source_setup_file> -o <output_folder> <-q>`    |    Este comando irá gerar o ficheiro `.intunewin` a partir da pasta de origem especificada e do ficheiro de configuração. Para o ficheiro de configuração MSI, esta ferramenta irá obter as informações necessárias para o Intune. Se `-q` for especificado, o comando será executado no modo silencioso e, se o ficheiro de saída já existir, será substituído. Além disso, se a pasta de saída não existir, será criada automaticamente.    |
+|    `IntuneWinAppUtil -c c:\testapp\v1.0 -s c:\testapp\v1.0\setup.exe -o c:\testappoutput\v1.0 -q`    |    Este comando irá gerar o ficheiro `.intunewin` a partir da pasta de origem especificada e do ficheiro de configuração. Para o ficheiro de configuração MSI, esta ferramenta irá obter as informações necessárias para o Intune. Se `-q` for especificado, o comando será executado no modo silencioso e, se o ficheiro de saída já existir, será substituído. Além disso, se a pasta de saída não existir, será criada automaticamente.    |
 
 Ao gerar uma *.intunewin* arquivo, colocar todos os ficheiros tem de referenciar numa subpasta da pasta de configuração. Em seguida, utilize um caminho relativo para referenciar o ficheiro específico, que precisa. Por exemplo:
 
@@ -255,6 +262,9 @@ A imagem seguinte notifica o utilizador final que as alterações da aplicação
 
 ## <a name="toast-notifications-for-win32-apps"></a>Notificações de alerta para aplicações de Win32 
 Se for necessário, é possível suprimir notificações de alerta do utilizador final que mostra por atribuição de aplicações. A partir do Intune, selecione **aplicações de cliente** > **aplicações** > selecione a aplicação > **Assignemnts** > **grupos incluem**. 
+
+> [!NOTE]
+> Extensão de gestão do Intune instalado Win32 não serão possível desinstalar aplicações em dispositivos não inscritos. Os administradores podem tirar partido de exclusão de atribuição não oferecer aplicações Win32 em dispositivos BYOD.
 
 ## <a name="troubleshoot-win32-app-issues"></a>Resolver problemas relacionados com aplicações Win32
 Os registos de agente no computador cliente encontram-se normalmente em `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs`. Pode tirar partido de `CMTrace.exe` para ver estes ficheiros de registo. *CMTrace.exe* pode ser transferido a partir [ferramentas de cliente do Configuration Manager](https://docs.microsoft.com/sccm/core/support/tools). 

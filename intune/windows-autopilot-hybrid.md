@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7993b598a2194cb11fa6f4d17a9c21fb6435c4e9
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 7cd9b6718b4406fd18fc0251fbeaf589acd1d0c9
+ms.sourcegitcommit: 601327125ac8ae912d8159422de8aac7dbdc25f6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57391144"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59429211"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot-preview"></a>Implementação híbrida do Azure AD associado dispositivos com o Intune e o Windows Autopilot (pré-visualização)
 Pode utilizar o Intune e o Windows Autopilot para configurar híbrida do Azure Active Directory (Azure AD)-dispositivos associados a um. Para tal, siga os passos neste artigo.
@@ -212,6 +212,9 @@ Demora cerca de 15 minutos para que o estado do perfil de dispositivo a alterar 
 1. Selecione **OK** > **criar**.  
     O perfil é criado e apresentado na lista.
 1. Para atribuir o perfil, siga os passos em [Atribuir um perfil do dispositivo](device-profile-assign.md#assign-a-device-profile). 
+
+> [!NOTE]
+> As capacidades de nomenclatura para Windows Autopilot híbrida associação do Azure AD não suportam variáveis como % SERIAL % e apenas suportam prefixos para o nome do computador.
 
 ## <a name="next-steps"></a>Passos Seguintes
 
