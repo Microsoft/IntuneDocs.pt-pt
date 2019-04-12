@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9dca4dc0b0b93d8466835ce0518268a548f3174a
-ms.sourcegitcommit: 9daaeba9a960c50efcc951856234fbfec3635737
+ms.openlocfilehash: 40f9ada715570de7b5b2f95292b7ed0d238242d2
+ms.sourcegitcommit: 04d29d47b61486b3586a0e0e5e8e48762351f2a3
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59231759"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59509709"
 ---
 # <a name="intune-network-configuration-requirements-and-bandwidth"></a>Largura de banda e requisitos de configuração de rede do Intune
 
@@ -68,11 +68,16 @@ Seguem-se as definições típicas para utilizar um servidor proxy que coloca co
 |         Tamanho da cache         |             De 5 GB até 30 GB             | O valor varia com base no número de computadores clientes na sua rede e nas configurações que utiliza. Para impedir que os ficheiros sejam eliminados demasiado cedo, ajuste o tamanho da cache do seu ambiente. |
 | Tamanho do ficheiro de cache individual |                950 MB                 |                                                                     Esta definição pode não estar disponível em todos os servidores proxy com colocação em cache.                                                                     |
 |   Tipos de objeto a colocar em cache    | HTTP<br /><br />HTTPS<br /><br />BITS |                                               Os pacotes Intune são ficheiros CAB obtidos através de uma transferência do Serviço de Transferência Inteligente em Segundo Plano (BITS) através de HTTP.                                               |
+> [!NOTE]
+> Se utilizar um servidor proxy para colocar em cache pedidos de conteúdo, comunicação apenas é encriptada entre o cliente e o proxy e de proxy para o Intune. A ligação do cliente para o Intune não será encriptado ponto-a-ponto.
 
 Para obter informações sobre como utilizar um servidor proxy para colocar conteúdos em cache, consulte a documentação da sua solução de servidor proxy.
 
 ### <a name="use-background-intelligent-transfer-service-bits-on-computers"></a>Utilizar o serviço de transferência inteligente em segundo plano (BITS) em computadores
 Durante as horas que configurar, pode utilizar o BITS num computador Windows para reduzir a largura de banda de rede. Pode configurar uma política de BITS na **largura de banda de rede** página da política de agente do Intune.
+
+> [!NOTE]
+> Para a gestão de MDM no Windows, apenas o sistema operacional interface de gestão para o tipo de aplicação MobileMSI usa o BITS para transferir. AppX/MsiX usar sua própria pilha de download não BITS e aplicações de Win32 por meio do agente do Intune utilizam a Otimização da entrega em vez de BITS.
 
 Para saber mais sobre o BITS e computadores Windows, veja [Background Intelligent Transfer Service (Serviço de Transferência Inteligente em Segundo Plano)](http://technet.microsoft.com/library/bb968799.aspx) na Biblioteca TechNet.
 
