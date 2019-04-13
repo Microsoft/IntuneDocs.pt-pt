@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5b711da0cb8bceb3273215a41e75a5180e957fb4
-ms.sourcegitcommit: 0adb41c0640743d5cb726e66ad2427e3ad6faf20
+ms.openlocfilehash: 1efa421b568a5cc28b23859f68de7145b5b4a943
+ms.sourcegitcommit: af2512a1342d8037a96a61c8cc2c63e107913733
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58658561"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59533532"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>Controlo de acesso baseado em funções (RBAC) com o Microsoft Intune
 
@@ -30,7 +30,7 @@ Controlo de acesso baseado em funções (RBAC) ajuda-o a gerir quem tem acesso a
 
 Para criar, editar ou atribuir funções, a sua conta tem de ter uma das seguintes permissões no Azure AD:
 - **Administrador Global**
-- **Administrador de Serviços do Intune**
+- **Administrador de serviço do Intune** (também conhecido como **administrador do Intune**)
 
 ## <a name="roles"></a>Funções
 Uma função define o conjunto de permissões concedido aos utilizadores atribuídos a essa função.
