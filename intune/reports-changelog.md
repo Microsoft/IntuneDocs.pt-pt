@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5b4765cf953c2cdc9e972224b4f04c54df7a32af
-ms.sourcegitcommit: 04d29d47b61486b3586a0e0e5e8e48762351f2a3
+ms.openlocfilehash: 30f315f58a905e690a43ab3c44aee783bd0ef8c9
+ms.sourcegitcommit: a2cd14c30949cef17bfc6576513e7660a8015669
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59509723"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59571812"
 ---
 # <a name="change-log-for-the-intune-data-warehouse-api"></a>Registo de alterações da API do Armazém de Dados do Intune
 
@@ -48,7 +48,7 @@ A tabela seguinte lista as coleções removidas recentes e as coleções de subs
 |    currentUser                         |    Removidas    |    Utilize o [utilizadores](intune-data-warehouse-collections.md#users) coleção em vez disso.                                                                                                                                                                                                                                                                                                      |
 |    mdmDeviceInventoryHistories         |    Removidas    |    Muitas das propriedades foram redundantes ou que agora podem ser encontrados no [devicePropertyHistories](intune-data-warehouse-collections.md#devicepropertyhistories) ou [dispositivos](intune-data-warehouse-collections.md#devices) coleções. Qualquer **mdmDeviceInventoryHistories** ainda não estiver listadas com essas duas coleções de propriedades não estão mais disponíveis. Consulte os detalhes abaixo.    |
 
-A tabela seguinte lista a propriedade antiga anteriormente encontrada no **mdmDeviceInventoryHistories** coleção e a alteração/substituição:
+A tabela seguinte lista as propriedades antigas anteriormente encontradas no **mdmDeviceInventoryHistories** coleção e a alteração/substituição. Todas as propriedades que se encontravam em **mdmDeviceInventoryHistories** , mas não indicado abaixo foram removidos.
 
 |    Propriedade antiga                |    Alteração/substituição                                                           |
 |--------------------------------|---------------------------------------------------------------------------------|
