@@ -14,11 +14,11 @@ ms.service: ''
 ms.technology: ''
 ms.assetid:
 - GET ONE FROM guidgenerator.com
-ms.openlocfilehash: 68090a038cec49009b6bd0ce0515a075f62483b8
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
-ms.translationtype: HT
+ms.openlocfilehash: d05559a46cfd2bf9e092378e7cff779022e21792
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "20283574"
 ---
 # <a name="metadata-and-markdown-template"></a>Modelo de Metadados e de Markdown
@@ -34,11 +34,11 @@ O bloco de metadados completo está acima, dividido em campos obrigatórios e op
 
 - **Tem** de existir um espaço entre os dois pontos (:) e o valor do elemento de metadados.
 - Se o elemento de metadados opcional não tiver um valor, comente o elemento com um # (não o deixe em branco nem utilize o “ND”); se adicionar um valor a um elemento que foi comentado, certifique-se de que remove o #.
-- Os dois pontos num valor (por exemplo, um título) quebram o parser de metadados. Em vez disso, utilize a codificação HTML de &#58; (por exemplo, “título: Azure Rights Management&#58; noções básicas | Azure RMS”).
-- **título**: este título será apresentado nos resultados do motor de busca. O título deve terminar com uma barra vertical (|), seguido do nome do serviço (veja o exemplo acima). O título não precisa (e provavelmente não deve) de ser idêntico ao título do cabeçalho H1. Deve ter cerca de 65 carateres (incluindo | NOME DO SERVIÇO)
-- **autor**, **gestor**, **revisor**: o campo autor deve conter o **nome de utilizador do Github** do autor, não o alias.  Os campos “gestor” e “revisor”, por outro lado, devem conter aliases. ms.reviewer especifica o nome do PM associado ao serviço ou ao artigo.
-- **ms.assetid**: este é o GUID do artigo a partir de CAPS. Ao criar um novo ficheiro de markdown, obtenha um GUID em [https://www.guidgenerator.com](https://www.guidgenerator.com). 
-- **ms.prod**, **ms.service**, **ms.technology**, **ms.devlang**, **ms.topic**, **ms.tgt_pltfrm**: os possíveis valores para estes elementos podem ser encontrados [aqui](https://microsoft.sharepoint.com/teams/STBCSI/Insights/_layouts/15/WopiFrame.aspx?sourcedoc=%7b7A321BF1-0611-4184-84DA-A0E964C435FA%7d&file=WEDCS_MasterList_CSIValues.xlsx&action=default).
+- Os dois pontos num valor (por exemplo, um título) quebram o parser de metadados. Em vez disso, utilize a codificação HTML de &#58; (por exemplo, "título: O Azure Rights Management&#58; Noções básicas | O Azure RMS").
+- **title**: Este título será apresentado nos resultados do motor de pesquisa. O título deve terminar com uma barra vertical (|), seguido do nome do serviço (veja o exemplo acima). O título não precisa (e provavelmente não deve) de ser idêntico ao título do cabeçalho H1. Deve ter cerca de 65 carateres (incluindo | NOME DO SERVIÇO)
+- **author**, **manager**, **reviewer**: O campo autor deve conter a **nome de utilizador do Github** do autor, não o alias.  Os campos “gestor” e “revisor”, por outro lado, devem conter aliases. ms.reviewer especifica o nome do PM associado ao serviço ou ao artigo.
+- **ms.assetid**: Este é o GUID do artigo a partir de CAPS. Ao criar um novo ficheiro de markdown, obtenha um GUID em [ https://www.guidgenerator.com ](https://www.guidgenerator.com). 
+- **ms.prod**, **ms.service**, **ms.technology**, **ms.devlang**, **ms.topic**, **ms.tgt_pltfrm**: Valores possíveis para esses elementos podem ser encontrados [aqui](https://microsoft.sharepoint.com/teams/STBCSI/Insights/_layouts/15/WopiFrame.aspx?sourcedoc=%7b7A321BF1-0611-4184-84DA-A0E964C435FA%7d&file=WEDCS_MasterList_CSIValues.xlsx&action=default).
 
 ## <a name="basic-markdown-and-gfm"></a>Markdown Básico e GFM
 
@@ -92,7 +92,7 @@ Se aparecer um URL num ficheiro de markdown, será transformado numa ligação c
 
 - Exemplo: http://www.github.com
 
-## <a name="lists"></a>Listas
+## <a name="lists"></a>Apresenta uma lista
 
 ### <a name="ordered-lists"></a>Listas ordenadas
 
@@ -128,7 +128,7 @@ Se aparecer um URL num ficheiro de markdown, será transformado numa ligação c
 
 - Esta 
 - lista 
-- com marcas
+- list
     - Sra. Corte-Real
     - Dr. Pacheco
 - contém  
@@ -227,7 +227,7 @@ Este é um exemplo de `in-line code`.
 
 > [!div class="op_single_selector"]
 - [foo](/rights-management/template.md)
-- [barra](/rights-management/scratch.md)
+- [bar](/rights-management/scratch.md)
 
 ### <a name="step-by-step"></a>Passo-a-Passo
 

@@ -1,6 +1,14 @@
+---
+ms.openlocfilehash: 5cd0183234a1b5f1e3c9a301e8ec1c8f4ca1e333
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "20282588"
+---
 # <a name="required-metadata"></a>metadados necessários
 
-title: [ARTICLE TITLE | SERVICE NAME] description: keywords: author: [GITHUB USERNAME] manager: [ALIAS] ms.date: 04/28/2016 ms.topic: article ms.prod: ms.service: ms.technology: ms.assetid: [GET ONE FROM guidgenerator.com]
+Título: [título do artigo | Descrição do nome do serviço]: palavras-chave: autor: Gestor de [nome de utilizador do GITHUB]: [ALIAS] MS: 04/28/2016 topic: artigo MS. Prod: MS. Service: MS. Technology: MS. AssetID: [obter um de guidgenerator.com]
 
 # <a name="optional-metadata"></a>metadados opcionais
 

@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: fc2e17c605af2c9cec021724852bcf1b48012ba8
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "59570923"
+---
 ## <a name="microsoft-open-source-code-of-conduct"></a>Código de Conduta Open Source da Microsoft
 
 Este projeto adotou o [Código de Conduta Open Source da Microsoft](https://opensource.microsoft.com/codeofconduct/).
@@ -8,15 +16,30 @@ Para obter mais informações, veja as [FAQ do Código de Conduta](https://opens
 Encontrou um dos repositórios do GitHub que armazena as fontes dos conteúdos publicados em [https://docs.microsoft.com](https://docs.microsoft.com/.), o local onde se encontram todos os conteúdos técnicos do Departamento de Nuvem e Empresas da Microsoft.
 
 ## <a name="contribute-to-your-documentation"></a>Contribuições para a documentação
-**Queremos e encorajamos a partilha de contribuições** da parte da nossa comunidade (utilizadores, clientes, parceiros) e colaboradores da Microsoft para melhorar a sua documentação. Eis algumas sugestões:
+Estamos **querem e incentivar contribuições** da Comunidade (utilizadores, os clientes, parceiros, amigos em outros planetas) e dos funcionários da Microsoft para aprimorar a sua documentação. Eis algumas sugestões:
 
-* **Crie uma conta do GitHub**: inscreva-se gratuitamente em [GitHub.com](https://www.github.com).
+* **Criar uma conta do GitHub**: Início de sessão é gratuito em [GitHub.com](https://www.github.com).
 
-* **Utilize o seu browser**: se estiver familiarizado com o GitHub, localize o artigo neste repositório e faça as suas atualizações. Em alternativa, aceda ao artigo em [https://docs.microsoft.com/intune/](https://docs.microsoft.com/intune/) e selecione a ligação **Editar**. Esta ação abre a origem do artigo no GitHub. Em seguida, utilize a IU do GitHub no seu browser para fazer as atualizações. 
+* **Utilizar o browser**: Existem duas opções: 
+
+    **Opção 1: Editar diretamente a partir do docs.microsoft.com**  
+    1. Vá para o tópico, como [ https://docs.microsoft.com/intune/troubleshoot-policies-in-microsoft-intune ](https://docs.microsoft.com/ntune/troubleshoot-policies-in-microsoft-intune). 
+    2. Selecione **editar** (canto superior direito). Isso mostra o ficheiro de markdown no repositório do GitHub.
+    3. Selecione o ícone de lápis. Quando paira o rato sobre o ícone de lápis, verá a **editar este ficheiro** dica de ferramenta. 
+    4. Faça as alterações e, em seguida **consolidação** as suas alterações. 
+    5. Crie pedido pull.
+    
+    **Opção 2: Localize o artigo neste repositório e atualizar**  
+    1.  A maioria dos tópicos estão em `https://github.com/MicrosoftDocs/IntuneDocs/tree/master/intune`. Nesta pasta, procurar o nome do tópico, como `troubleshoot-policies-in-microsoft-intune`. 
+    2. Selecione a ligação e clique no ícone de lápis. Quando paira o rato sobre o ícone de lápis, verá a **editar este ficheiro** dica de ferramenta. 
+    3. Faça as alterações e, em seguida **consolidação** as suas alterações. 
+    4. Crie pedido pull. 
 
   Ao fazer uma atualização, poderá ser-lhe pedido que assine um contrato de licença. Trata-se de uma tarefa única. Assim não terá de assinar novamente atualizações futuras feitas com o seu nome de utilizador do GitHub. 
   
-* **Colaboradores da MSFT**: depois de criar uma conta do GitHub, associe-a ao seu endereço de e-mail da Microsoft. Quando a sua conta estiver associada, não terá de assinar um contrato de licença para fazer uma alteração. Steps:
+  O valor a `author` apresenta uma lista de metadados (na parte superior de cada tópico) o autor do GitHub. Na `troubleshoot-policies-in-microsoft-intune` exemplo, verá `MandiOhlinger`. No seu pedido pull, pode também mencionar (@*authorValue*) o autor se preferir.
+  
+* **Os funcionários da MSFT**: Depois de criar uma conta do GitHub, ligá-lo para o seu endereço de e-mail da Microsoft. Quando a sua conta estiver associada, não terá de assinar um contrato de licença para fazer uma alteração. passos:
 
   1. Num dispositivo de rede empresarial, aceda a [GitHub account setup](https://review.docs.microsoft.com/en-us/help/contribute/contribute-get-started-setup-github?branch=master) (Configuração da conta do GitHub). Se não estiver na rede empresarial, esta ligação mostra uma mensagem de erro 404.
   
@@ -29,7 +52,7 @@ Encontrou um dos repositórios do GitHub que armazena as fontes dos conteúdos p
   3. Selecione o ícone de lápis e faça as suas alterações. 
 
 ## <a name="use-markdown-to-format-your-topic"></a>Utilize o markdown para formatar o tópico
-Todos os artigos neste repositório utilizam o markdown do GitHub.  Eis uma lista de recursos para começar:
+Todos os artigos neste repositório utilizam o markdown do GitHub. Eis uma lista de recursos para começar:
 
-* [Noções básicas do markdown](https://help.github.com/articles/markdown-basics/)
-* [Folha de consulta do markdown imprimível](./contributor-guide/media/documents/markdown-cheatsheet.pdf?raw=true)
+* [Noções básicas do markdown](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
+* [Cábula de markdown imprimível](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
