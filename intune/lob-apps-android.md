@@ -1,6 +1,5 @@
 ---
 title: Adicionar aplicações de linha de negócio Android ao Microsoft Intune
-titleSuffix: ''
 description: Saiba mais sobre como adicionar uma aplicação de linha-de-negócio (LOB) Android ao Microsoft Intune.
 keywords: ''
 author: Erikre
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 47cb4b1befa820bfc0427224244e25e998206dd3
-ms.sourcegitcommit: 617bd653c34c1e6a4e2ad61811c5912f8dab775c
+ms.openlocfilehash: 5be123dc918785c1c60ec08e5815d642a3f13f72
+ms.sourcegitcommit: 8c795b041cd39e3896595f64f53ace48be0ec84c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/10/2019
-ms.locfileid: "59476468"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "59587472"
 ---
 # <a name="add-an-android-line-of-business-app-to-microsoft-intune"></a>Adicionar aplicações de linha de negócio Android ao Microsoft Intune
 

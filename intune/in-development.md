@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 03/29/2019
+ms.date: 04/15/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2422762fb6717cb4666345599785430a2c35cd1f
-ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
+ms.openlocfilehash: aa38a684a32756d4f2c3be3b750f8e79b66e98f6
+ms.sourcegitcommit: 8c795b041cd39e3896595f64f53ace48be0ec84c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59423544"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "59587387"
 ---
 # <a name="in-development-for-microsoft-intune---april-2019"></a>No desenvolvimento do Microsoft Intune – Abril de 2019
 
@@ -60,15 +60,6 @@ Em breve poderá utilizar o Intune para gerir as regras de firewall personalizad
 
 ### <a name="require-app-protection-conditional-access----1634317---"></a>Necessitam de acesso condicional de proteção de aplicações  <!--1634317 -->
 Poderá usar *política de proteção de aplicações requerem*, confirma que a política é aplicada a aplicação de um utilizador antes de início de sessão estiver concluída, para impedir que os utilizadores acedam a dados a proteger com o acesso condicional. Enquanto a garantia de política pode retardar a primeira experiência de utilização, ele ajuda a proteger contra problemas de rede, configurações incorretas administrativas ou intencionais esforços para permitem despistar políticas de proteção de aplicações. 
-
-### <a name="include-and-exclude-mixture-of-user-groups-and-device-groups-when-assigning-policies-and-profiles----1807547---"></a>Incluir e excluir a mistura de grupos de utilizadores e grupos de dispositivos durante a atribuição de políticas e perfis <!-- 1807547 -->
-Ao atribuir políticas de conformidade ou perfis de configuração, pode atribuí-las a grupos de segurança com utilizadores ou dispositivos. Atualmente, pode incluir e excluir apenas grupos de utilizadores, *ou* incluir e excluir apenas grupos de dispositivos. Não é possível incluir e excluir uma mistura de grupos, tal como incluir grupos de utilizadores *e* excluir um grupo de dispositivos.
-
-Poderá incluir e excluir uma mistura de grupos de utilizadores e grupos de dispositivos. Pode incluir um grupo de utilizadores e excluir um grupo de dispositivos. Por exemplo, pode atribuir ou implementar um perfil de configuração do dispositivo a um grupo de utilizadores, mas exclua os dispositivos pessoais.
-
-[Atribuir perfis de configuração do dispositivo](device-profile-assign.md) inclui mais informações sobre a atribuição de perfis a grupos de utilizadores e grupos de dispositivos.
-
-Aplica-se a: Todas as plataformas
 
 ### <a name="retire-noncompliant-devices----1827291---"></a>Extinguir dispositivos não conformes <!-- 1827291 -->
 Vamos adicionar uma nova ação de conformidade para extinguir um dispositivo não conforme. Extinguir um dispositivo não conforme remove todos os dados da empresa do mesmo e também remove o dispositivo seja gerido pelo Intune. Esta ação é executada quando é atingido o valor configurado em dias. O valor mínimo é de 30 dias. 
