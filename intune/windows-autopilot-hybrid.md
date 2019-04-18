@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7cd9b6718b4406fd18fc0251fbeaf589acd1d0c9
-ms.sourcegitcommit: 601327125ac8ae912d8159422de8aac7dbdc25f6
+ms.openlocfilehash: 1ab718cd087757211ad4e84cbba39808cf9de7d3
+ms.sourcegitcommit: 47eb67df69f237121f5197b2ac904a177aab5400
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59429211"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59671905"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot-preview"></a>Implementação híbrida do Azure AD associado dispositivos com o Intune e o Windows Autopilot (pré-visualização)
 Pode utilizar o Intune e o Windows Autopilot para configurar híbrida do Azure Active Directory (Azure AD)-dispositivos associados a um. Para tal, siga os passos neste artigo.
@@ -121,7 +121,7 @@ O conector do Intune para o Active Directory tem de ser instalados num computado
 
 ### <a name="configure-web-proxy-settings"></a>Configurar definições de proxy Web
 
-Se tiver um proxy web no seu ambiente de rede, certifique-se de que o conector do Intune para o Active Directory funciona corretamente por consultar [funcionam com o existente no local servidores proxy](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-connectors-with-proxy-servers).
+Se tiver um proxy web no seu ambiente de rede, certifique-se de que o conector do Intune para o Active Directory funciona corretamente por consultar [funcionam com o existente no local servidores proxy](autopilot-hybrid-connector-proxy.md).
 
 
 ## <a name="create-a-device-group"></a>Criar um grupo de dispositivos

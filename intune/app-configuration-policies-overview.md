@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/03/2019
+ms.date: 04/16/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,29 +18,29 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 844342d0d21110f46ac9a344edbd7409f7d779cb
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: cc29e7bb56c5a5e21264e275cfecf0ea4b0e9273
+ms.sourcegitcommit: 9e196e4a3b381f0da97ce3c163b18a3012f4aed1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58797966"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59704863"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Políticas de configuração de aplicações para o Microsoft Intune
 
-Utilize políticas de configuração de aplicações no Microsoft Intune para disponibilizar definições de configuração para uma aplicação para iOS ou Android. Estas definições de configuração permitem a personalização de uma aplicação. Estas políticas de configuração não são atribuídas diretamente aos utilizadores e dispositivos. Em vez disso, deve associar uma política de configuração a uma aplicação e, em seguida, atribuir a aplicação. As definições de políticas de configuração são utilizadas quando a aplicação as procura, normalmente quando é executada pela primeira vez.
+Utilize políticas de configuração de aplicações no Microsoft Intune para disponibilizar definições de configuração para uma aplicação para iOS ou Android. Estas definições de configuração permitem a personalização de uma aplicação. Não atribua estas políticas de configuração diretamente a utilizadores ou dispositivos. Em vez disso, deve associar uma política de configuração a uma aplicação e, em seguida, atribuir a aplicação. As definições de políticas de configuração são utilizadas quando a aplicação as procura, normalmente quando é executada pela primeira vez.
 
 Pode atribuir uma política de configuração de aplicações a um grupo de utilizadores e dispositivos através de uma combinação de atribuições de inclusão e exclusão. Depois de adicionar uma política de configuração da aplicação, pode definir as atribuições dessa política. Quando definir as atribuições da política, poderá optar por incluir e excluir os grupos de utilizadores aos quais a política será aplicada. Quando escolher incluir um ou mais grupos, poderá optar por selecionar grupos específicos para incluir ou selecionar grupos incorporados. Os grupos incorporados incluem **Todos os Utilizadores**, **Todos os Dispositivos** e **Todos os Utilizadores + Todos os Dispositivos**.
 
-Por exemplo, uma aplicação poderá exigir-lhe que especifique qualquer um dos seguintes detalhes:
+Uma configuração de aplicações, definir, por exemplo, poderá exigir que especifique qualquer um dos seguintes detalhes:
 
 - Um número de porta personalizado
 - Definições de idioma
 - Definições de segurança
 - Definições de imagem corporativa tal como um logótipo de empresa
 
-Se os utilizadores introduzirem estas definições incorretamente, isso pode aumentar a carga sobre o suporte técnico e tornar mais lenta a adoção de novas aplicações.
+Se os utilizadores introduzirem estas definições em vez disso, eles poderiam fazer isso incorretamente, que pode aumentar a carga sobre o suporte técnico e tornar mais lenta a adoção de novas aplicações.
 
-As políticas de configuração de aplicação podem ajudar a eliminar estes problemas, permitindo-lhe atribuir estas definições aos utilizadores de uma política antes de executarem a aplicação. As definições são então fornecidas automaticamente e os utilizadores não têm de executar nenhuma ação.
+Políticas de configuração de aplicações podem ajudar a eliminar a configuração de aplicação se problemas, permitindo-lhe atribuir definições de configation a uma política que é atribuída aos utilizadores antes de executarem a aplicação. As definições são então fornecidas automaticamente e os utilizadores não têm de executar nenhuma ação.
 
 As definições de configuração são utilizadas sempre que a aplicação as procurar. Normalmente, uma aplicação procura as definições de configuração quando é executada pelo utilizador pela primeira vez.
 

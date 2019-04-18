@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 04/04/2019
+ms.date: 04/17/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 71591e0be428d54af359c51daee96d6a21b43169
-ms.sourcegitcommit: 9daaeba9a960c50efcc951856234fbfec3635737
+ms.openlocfilehash: dc7f4bf02c05bdece8465b1af91bfd4cbd45492b
+ms.sourcegitcommit: 9e196e4a3b381f0da97ce3c163b18a3012f4aed1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59231812"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59704931"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 
@@ -46,6 +46,13 @@ Saiba mais sobre as novidades todas as semanas no Microsoft Intune. Também pode
 -->     
 
 <!-- ########################## -->
+
+## <a name="week-of-april-15-2019"></a>Semana de 15 de Abril de 2019
+
+### <a name="monitor-and-troubleshoot"></a>Monitorizar e resolver problemas
+
+#### <a name="intune-data-warehouse-v10-changes-reflecting-back-to-beta----4403765---"></a>Alterações de V1.0 de armazém de dados do Intune refletindo para o beta <!-- 4403765 -->
+Quando a versão 1.0 foi introduzida inicialmente no 1808, eram diferentes quanto de algumas maneiras significativas da versão beta API. No 1903 essas alterações serão refletidas novamente para a versão de API do beta. Se tiver relatórios importantes que utilizem a versão de API do beta, é altamente recomendável mudar esses relatórios para a versão 1.0 para evitar alterações significativas. Para obter mais informações, consulte [registo de alterações para a API do armazém de dados do Intune](reports-changelog.md#1903-part-2).
 
 ## <a name="week-of-april-1-2019"></a>Semana de 1 de Abril de 2019
 

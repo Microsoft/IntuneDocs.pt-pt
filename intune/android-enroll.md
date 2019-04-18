@@ -18,31 +18,33 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 363a7d0ef32aee0c21c6e5cecbd55cc3087f4613
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: b76b461d445bfbec5fe2e8d355cd2a4f228735df
+ms.sourcegitcommit: 47eb67df69f237121f5197b2ac904a177aab5400
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799578"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59671850"
 ---
 # <a name="enroll-android-devices"></a>Inscrever dispositivos Android
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Como administrador do Intune, pode gerir os seguintes dispositivos Android:
-- Dispositivos Android, incluindo dispositivos Samsung Knox Standard.
+- Dispositivos Android, incluindo dispositivos Samsung Knox Standard e [dispositivos as riscas das](android-zebra-mx-overview.md).
 - Android dispositivos de empresa, incluindo:
     - **Dispositivos de perfil de trabalho do Android Enterprise**: Dispositivos pessoais concedida permissão para aceder a dados empresariais. Os administradores podem gerir contas de trabalho, aplicações e dados. Dados pessoais no dispositivo são mantidos separados dos dados de trabalho e os administradores não controlam configurações pessoais ou dados. 
     - **Dispositivos dedicados do Android Enterprise**: Dispositivos de utilização única, empresa, como digital signage, impressão de permissão ou gestão de inventário. Os administradores bloqueiam a utilização de um conjunto limitado de aplicações e ligações Web num dispositivo. Além disso, também impede os utilizadores de adicionarem outras aplicações ou de efetuarem outras ações no dispositivo.
     - **Android Enterprise dispositivos totalmente geridos**: Utilizador único pertencentes à empresa, os dispositivos utilizados exclusivamente para o trabalho e pessoais não utilizar. Os administradores podem gerir todo o dispositivo e impor controlos de política indisponíveis para perfis de trabalho. 
 
-## <a name="prerequisite"></a>Pré-requisito
+## <a name="prerequisites"></a>Pré-requisitos
 
 Para se preparar para gerir dispositivos móveis, tem de definir a autoridade de gestão de dispositivos móveis (MDM) para o **Microsoft Intune**. Veja [Set the MDM authority (Definir a autoridade de MDM)](mdm-authority-set.md) para obter instruções. Este item só é definido uma vez, quando está a configurar pela primeira vez o Intune para a gestão de dispositivos móveis.
 
+Para dispositivos fabricados pelas riscas das tecnologias, terá de conceder as permissões adicionais de Portal da empresa consoante as capacidades do dispositivo específico. [Extensões de mobilidade em dispositivos as riscas das](android-zebra-mx-overview.md) inclui mais detalhes.
+
 ## <a name="set-up-android-enrollment"></a>Configurar inscrição do Android
 
-Por predefinição, o Intune permite a inscrição de dispositivos Android e Samsung Knox Standard. Depois de cumprir o pré-requisito, os administradores só precisam de [informar os utilizadores de como devem inscrever os seus dispositivos](/intune-user-help/enroll-your-device-in-intune-android).
+Por predefinição, o Intune permite a inscrição de dispositivos Android, Samsung Knox Standard e as riscas das. Depois de satisfazer os pré-requisitos, os administradores simplesmente precisam [informar os utilizadores como devem inscrever os dispositivos](/intune-user-help/enroll-your-device-in-intune-android).
 
 Depois de um utilizador concluir a inscrição, pode começar a gerir os respetivos dispositivos no Intune, incluindo [atribuir políticas de conformidade](compliance-policy-create-android.md), [gerir aplicações](app-management.md) e mais.
 
