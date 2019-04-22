@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 34ce3f34dbf3c060438a6b30abc9345687cdaf47
-ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
+ms.openlocfilehash: a06bcd27778885d69c2122b2b68e53eb6f319a34
+ms.sourcegitcommit: 47eb67df69f237121f5197b2ac904a177aab5400
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59292198"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59671786"
 ---
 # <a name="whats-conditional-access"></a>O que é o acesso condicional?
 
@@ -35,7 +35,7 @@ O Acesso Condicional do Enterprise Mobility + Security (EMS) não é um produto 
 Pode definir as condições para o acesso de porta aos dados da sua empresa com base na localização, no dispositivo, no estado do utilizador e na sensibilidade das aplicações.
 
 > [!NOTE] 
-> Além disso, o Acesso Condicional expande as suas capacidades a [serviços do Office 365](https://blogs.technet.microsoft.com/wbaer/2017/02/17/conditional-access-policies-with-sharepoint-online-and-onedrive-for-business/).
+> Além disso, o Acesso Condicional expande as suas capacidades a [serviços do Office 365](https://docs.microsoft.com/office365/enterprise/office-365-client-support-conditional-access).
 
 ![Diagrama da arquitetura do acesso condicional](./media/ca-diagram-1.png)
 

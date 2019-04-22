@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: f31c623196abd4ffcdfc4f5ccded088c12d5d992
-ms.sourcegitcommit: 617bd653c34c1e6a4e2ad61811c5912f8dab775c
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/10/2019
-ms.locfileid: "59476560"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59901000"
 ---
 # <a name="how-to-manage-ios-ebooks-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Como gerir eBooks do iOS comprados através de um programa de compra em grandes volumes com o Microsoft Intune
 
@@ -56,7 +56,7 @@ Antes de começar, obtenha um token VPP da Apple e carregue o mesmo para a sua c
 
 ## <a name="to-get-and-upload-an-apple-vpp-token"></a>Para obter e carregar um token Apple VPP
 
-1. Inicie sessão no [Portal do Azure](https://portal.azure.com).
+1. Inicie sessão no [portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
 3. No painel **Intune**, selecione **Aplicações do cliente**.
 1.  Na carga de trabalho **Aplicações do cliente**, selecione **Configurar** > **Tokens VPP para iOS**.
@@ -82,7 +82,7 @@ Pode sincronizar os dados retidos pela Apple com o Intune em qualquer altura, se
 Selecione a ação de atribuição **Disponível** ou **Obrigatório**. 
 5. Assim que tiver terminado, escolha **Guardar**.
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Veja [Como monitorizar aplicações](apps-monitor.md) para obter informações que o ajudam a monitorizar as atribuições de livros.
 

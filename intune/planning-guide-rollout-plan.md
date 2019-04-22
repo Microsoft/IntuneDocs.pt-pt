@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: e75900137ce1e590078a8baa5d00dbc617afc937
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798909"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59900558"
 ---
 # <a name="develop-a-rollout-plan"></a>Desenvolver um plano de implementação
 
@@ -107,6 +107,6 @@ Veja a seguir um exemplo atualizado do plano de implementação do Intune acima 
 | Self-service |  |  |  | RH, Finanças |
 | Abordagem meticulosa |  |  |  | Executivos |
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Próximos passos
 
 A secção seguinte fornece orientações relativas ao [desenvolvimento de um plano de comunicação de implementação do Intune](planning-guide-communication-plan.md).

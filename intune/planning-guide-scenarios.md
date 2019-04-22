@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 69a4ee29a6d35623d6269a94a9c1b4fc7a1f956f
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798813"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59894850"
 ---
 # <a name="identify-mobile-device-management-use-case-scenarios"></a>Identificar cenários de casos de utilização da gestão de dispositivos móveis
 
@@ -89,6 +89,6 @@ Por exemplo, o seu cenário de casos de utilização empresarial poderá suporta
 | BYOD | Técnico de informação | Marketing, Vendas | iOS |                                                           
 | BYOD | Executivos | Marketing, Vendas | iOS |
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Próximos passos
 
 A secção seguinte fornece orientações sobre como [identificar os requisitos do Intune para cada cenário de caso de utilização](planning-guide-requirements.md).

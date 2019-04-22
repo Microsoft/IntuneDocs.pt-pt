@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 26f7b3b11aaafd8aad5e99e2967bc8e13e8ca1a1
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798427"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59895907"
 ---
 # <a name="manage-volume-purchased-apps-and-books-with-microsoft-intune"></a>Gerir aplicações e livros comprados em grandes volumes com o Microsoft Intune
 

@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 2fdb45c711e605da9a1d160593d37564ef846d32
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58797955"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59894626"
 ---
 # <a name="common-windows-pc-management-tasks-with-the-intune-software-client"></a>Tarefas de gestão comuns de PCs Windows com o cliente de software do Intune
 

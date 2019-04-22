@@ -18,11 +18,11 @@ ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 14c1dcef4479cbbe6606cf4bb107514a21d7ab21
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798476"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59898212"
 ---
 # <a name="additional-resources-for-planning-your-intune-deployment"></a>Recursos adicionais para planear a sua implementação do Intune
 
