@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 04/17/2019
+ms.date: 04/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc7f4bf02c05bdece8465b1af91bfd4cbd45492b
-ms.sourcegitcommit: 9e196e4a3b381f0da97ce3c163b18a3012f4aed1
-ms.translationtype: MT
+ms.openlocfilehash: e3064a73cd9c56275363cce8c99190c4f5c98192
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59704931"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "60164197"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 
@@ -43,16 +43,164 @@ Saiba mais sobre as novidades todas as semanas no Microsoft Intune. Também pode
 ### Monitor and troubleshoot
 ### Role-based access control
 
--->     
+-->  
 
 <!-- ########################## -->
 
+## <a name="week-of-april-22-2019"></a>Semana de 22 de Abril de 2019
+
+### <a name="use-compliance-manager-to-create-assessments-for-microsoft-intune---4404750---"></a>Utilize o Gestor de conformidade para criar avaliações para o Microsoft Intune<!-- 4404750 -->
+
+[Gestor de conformidade](https://servicetrust.microsoft.com/ComplianceManager) (abre o outro site da Microsoft) é uma ferramenta de avaliação de riscos baseada em fluxo de trabalho no Portal de confiança de serviço para Microsoft. Permite-lhe controlar, atribuir e verificar suas atividades da organização a conformidade a normas relacionadas a serviços da Microsoft. Pode criar sua própria avaliação de conformidade com o Office 365, Azure, Dynamics, serviços profissionais e Intune. O Intune tem duas avaliações está disponíveis – FFIEC e GDPR.
+
+Gestor de conformidade ajuda-o a concentrar seus esforços dividindo controles – controles de gerida pela Microsoft e geridos pela sua organização. Pode concluir as avaliações e, em seguida, exportar e imprimir as avaliações.
+
+[Federal financeiros instituições exame Council (FFIEC)](https://www.microsoft.com/trustcenter/compliance/FFIEC) (abre o outro site da Microsoft) a conformidade é um conjunto de padrões para a banca online emitido por FFIEC. É a avaliação mais pedida para instituições financeiras que utilizar o Intune. Ele interpreta como o Intune ajuda a atender às cargas de trabalho do FFIEC cibersegurança diretrizes em nuvem relacionados ao público. Avaliação de FFIEC do Intune é a avaliação de FFIEC segundo no Gestor de conformidade.
+
+No exemplo a seguir, pode ver a divisão de FFIEC controles. Microsoft abrange 64 controles. É responsável para os controles de 12 restantes.
+
+![Veja uma avaliação do Intune de exemplo para FFIEC, incluindo as ações de cliente e ações da Microsoft](./media/intune-ffiec-assessment-status.png)
+
+[Regulamento geral de proteção de dados (GDPR)](https://www.microsoft.com/trustcenter/privacy/gdpr/gdpr-overview) (abre o outro site da Microsoft) é uma lei da União Europeia (UE) que ajuda a proteger os direitos de indivíduos e respetivos dados. Com o GDPR é a avaliação mais pedida para ajudar a cumprir as normas de privacidade. 
+
+No exemplo seguinte, verá a divisão de controles GDPR. Microsoft abrange 49 controles. É responsável para os controles de 66 restantes.
+
+![Veja uma avaliação do Intune de exemplo para o GDPR, incluindo as ações de cliente e ações da Microsoft](./media/intune-assessment-status.png)
+
 ## <a name="week-of-april-15-2019"></a>Semana de 15 de Abril de 2019
+
+### <a name="app-management"></a>Gestão de aplicações
+
+#### <a name="openssl-encryption-for-android-app-protection-policies----3747362---"></a>Encriptação de OpenSSL para políticas de proteção de aplicações para Android <!-- 3747362 -->
+Agora, o Intune políticas de proteção (aplicação) em dispositivos Android utiliza uma biblioteca de encriptação OpenSSL que tem certificação FIPS 140-2 em conformidade. Para obter mais informações, consulte a [encryption](app-protection-policy-settings-android.md#encryption) secção de [definições de política de proteção de aplicações Android no Microsoft Intune](app-protection-policy-settings-android.md).
+
+#### <a name="enable-win32-app-dependencies----2617348----"></a>Ativar dependências de aplicações do Win32 <!-- 2617348  -->
+Como administrador, pode exigir que as outras aplicações são instaladas como dependências antes de instalar a aplicação de Win32. Especificamente, o dispositivo tem de instalar a aplicação dependente (ões) antes de instalar a aplicação de Win32. No Intune, selecione **aplicações de cliente** > **aplicações** > **adicionar** para apresentar o **Adicionar aplicação** painel. Selecione **aplicação do Windows (Win32)** como o **tipo de aplicação**. Depois de ter adicionado a aplicação, pode selecionar **dependências** para adicionar as aplicações dependentes que devem ser instaladas antes de pode instalar a aplicação de Win32. Para obter mais informações, consulte [Intune autónomo - gestão de aplicações de Win32](apps-win32-app-management.md).
+
+#### <a name="app-version-installation-information-for-microsoft-store-for-business-apps----3537391-----"></a>Informações de instalação de versão do aplicativo do Microsoft Store para aplicações empresariais <!-- 3537391   -->
+Relatórios de instalação de aplicações incluem informações de versão de aplicação do Microsoft Store para aplicações de negócio. No Intune, selecione **aplicações de cliente** > **aplicações**. Selecione um **Microsoft Store para a aplicação de negócio** e, em seguida, selecione **estado de instalação de dispositivo** sob o **Monitor** secção.
+
+#### <a name="additions-to-win32-apps-requirement-rules----3676883-----"></a>Adições às regras de requisitos de aplicações do Win32 <!-- 3676883   -->
+Pode criar requisito regras com base nos scripts do PowerShell, valores do Registro e informações do sistema de ficheiros. No Intune, selecione **aplicações de cliente** > **aplicações** > **adicionar**. Em seguida, selecione **aplicação do Windows (Win32)** como o **tipo de aplicação** no **Adicionar aplicação** painel.  Selecione **requisitos** > **Add** para configurar regras de requisitos adicionais. Em seguida, selecione **tipo de ficheiro**, **Registro**, ou **Script** como o **tipo de requisito**. Para obter mais informações, consulte [gestão de aplicações de Win32](apps-win32-app-management.md).
+
+ #### <a name="configure-your-win32-apps-to-be-installed-on-intune-enrolled-azure-ad-joined-devices----3695227----"></a>Configurar as suas aplicações de Win32 a serem instalados nos inscritos no Intune dispositivos associados ao Azure AD <!-- 3695227  -->
+Pode atribuir as aplicações de Win32 a serem instalados nos inscritos no Intune dispositivos associados ao Azure AD. Para obter mais informações sobre as aplicações de Win32 no Intune, consulte [gestão de aplicações de Win32](apps-win32-app-management.md).
+
+#### <a name="device-overview-shows-primary-user---794259----"></a>Descrição geral do dispositivo mostra o utilizador primário <!--794259  -->
+A página de descrição geral do dispositivo irá mostrar o utilizador primário, também chamado do utilizador de afinidade de dispositivo de utilizador (UDA). Para ver o utilizador primário para um dispositivo, escolha **Intune** > **dispositivos** > **todos os dispositivos** > Escolha um dispositivo. O utilizador primário aparecerá junto à parte superior do **descrição geral** página.
+
+#### <a name="additional-managed-google-play-app-reporting-for-android-enterprise-work-profile-devices----4105925----"></a>Adicional Google Play gerido relatório da aplicação para dispositivos de perfil de trabalho do Android Enterprise <!-- 4105925  -->
+Para o Google Play gerido aplicações implementadas para dispositivos de perfil de trabalho do Android Enterprise, pode ver o número de versão específica da aplicação instalada num dispositivo. Isso se aplica apenas as aplicações necessárias. A mesma funcionalidade para aplicações disponíveis será habilitada numa versão futura. 
+
+### <a name="device-configuration"></a>Configuração do dispositivo
+
+#### <a name="set-login-settings-and-control-restart-options-on-macos-devices----1210083----"></a>Configurar definições de início de sessão e controlar as opções de reinício em dispositivos macOS <!-- 1210083  -->
+Em dispositivos macOS, pode criar um perfil de configuração do dispositivo (**configuração do dispositivo** > **perfis** > **criar perfil** > escolher **macOS** para a plataforma > **funcionalidades do dispositivo** para tipo de perfil). Esta atualização inclui novas definições de janela de início de sessão, por exemplo, que mostra uma faixa personalizada, escolha como os utilizadores iniciarem sessão, mostram ou ocultar as definições de energia e muito mais.
+
+Para ver estas definições, aceda à [definições de funcionalidade do dispositivo macOS](macos-device-features-settings.md).
+
+#### <a name="configure-wifi-on-android-enterprise-device-owner-dedicated-devices-running-in-multi-app-kiosk-mode---3041940----"></a>Configurar Wi-Fi no Android Enterprise, os dispositivos de proprietário do dispositivo dedicado em execução no modo de local público de várias aplicações <!--3041940  -->
+Pode ativar as definições no Android Enterprise, o proprietário do dispositivo durante a execução como um dispositivo dedicado no modo de quiosque de várias aplicações. Nesta atualização, poderá habilitá-los configurar e ligar a redes Wi-Fi (**Intune** > **configuração do dispositivo** > **perfis**  >  **Criar perfil** > **Android Enterprise** para a plataforma > **apenas proprietário do dispositivo, restrições de dispositivos** para tipo de perfil >  **Dispositivos dedicados** > **modo de local público**: **Multi-App** > **configuração de Wi-Fi**). 
+
+Para ver todas as definições que pode configurar, aceda à [definições de dispositivos Android Enterprise para permitir ou restringir funcionalidades](device-restrictions-android-for-work.md).
+
+Aplica-se a: Dispositivos Android da empresa dedicado em execução no modo de local público de várias aplicações
+
+
+#### <a name="configure-bluetooth-and-pairing-on-android-enterprise-device-owner-dedicated-devices-running-in-multi-app-kiosk-mode----3041941----"></a>Configurar o Bluetooth e emparelhamento no Android Enterprise, o proprietário do dispositivo dispositivos dedicados em execução no modo de local público de várias aplicações <!-- 3041941  -->
+Pode ativar as definições no Android Enterprise, o proprietário do dispositivo durante a execução como um dispositivo dedicado no modo de quiosque de várias aplicações. Nesta atualização, pode permitir que os utilizadores finais permitir Bluetooth e emparelhe os dispositivos via Bluetooth (**Intune** > **configuração do dispositivo** > **perfis**  >  **Criar perfil** > **Android Enterprise** para a plataforma > **apenas proprietário do dispositivo, restrições de dispositivos** do perfil tipo > **dispositivos dedicados** > **modo de local público**: **Multi-App** > **configuração de Bluetooth**). 
+
+Para ver todas as definições que pode configurar, aceda à [definições de dispositivos Android Enterprise para permitir ou restringir funcionalidades](device-restrictions-android-for-work.md).
+
+Aplica-se a: Dispositivos Android da empresa dedicado em execução no modo de local público de várias aplicações
+
+#### <a name="create-and-use-oemconfig-device-configuration-profiles-in-intune----3305883----"></a>Criar e utilizar perfis de configuração de dispositivos de OEMConfig no Intune <!-- 3305883  -->
+Esta atualização, o Intune suporta a configuração de dispositivos Android Enterprise com OEMConfig. Especificamente, pode criar um perfil de configuração do dispositivo e aplicar as definições para dispositivos Android Enterprise com OEMConfig (**configuração do dispositivo** > **perfis**  >  **Criar perfil** > **Android enterprise** para a plataforma).
+
+Suporte para OEMs encontra-se numa base por OEM. Se uma aplicação de OEMConfig pretende não estiver disponível na lista de aplicações de OEMConfig, entre em contato com `IntuneOEMConfig@microsoft.com`.
+
+Para saber mais sobre esta funcionalidade, aceda à [utilizar e gerir dispositivos Android Enterprise com OEMConfig no Microsoft Intune](android-oem-configuration-overview.md).
+
+Aplica-se a: Android enterprise
+
+#### <a name="windows-update-notifications-----3316758-3316782----"></a>Notificações de atualização do Windows  <!-- 3316758, 3316782  -->
+Adicionámos dois *definições de experiência do usuário* definições para a atualização do Windows em anel configurações que pode gerir a partir da consola do Intune. Agora, pode:
+- Bloquear ou permitir que os usuários [procurar as atualizações do Windows](windows-update-settings.md#block-user-from-scanning-for-windows-updates).
+- Gerir o [nível de notificação de atualização do Windows](windows-update-settings.md#windows-update-notification-level) que os utilizadores veem.
+
+#### <a name="new-device-restriction-settings-for-android-enterprise-device-owner----3574254----"></a>Novas definições de restrição de dispositivos do Android Enterprise, o proprietário do dispositivo <!-- 3574254  -->
+Em dispositivos Android Enterprise, pode criar um perfil de restrição de dispositivos para permitir ou restringir funcionalidades, o conjunto de regras de palavra-passe e muito mais (**configuração do dispositivo** > **perfis**  >  **Criar perfil** > Escolha **Android Enterprise** para a plataforma > **apenas proprietário do dispositivo > restrições de dispositivos** para tipo de perfil). 
+
+Esta atualização inclui novas definições de palavra-passe, permite o acesso total às aplicações do Google Play Store para dispositivos totalmente geridos e muito mais. Para ver a lista atual de definições, aceda à [definições de dispositivos Android Enterprise para permitir ou restringir funcionalidades](device-restrictions-android-for-work.md). 
+
+Aplica-se a: Android Enterprise dispositivos totalmente geridos
+
+#### <a name="check-for-a-tpm-chipset-in-a-windows-10-device-compliance-policy----3617671---"></a>Verifique a existência de um chipset TPM numa política de conformidade de dispositivos Windows 10 <!-- 3617671 -->
+
+Esta funcionalidade é atrasada e deve ser incluída numa versão futura.
+
+#### <a name="updated-ui-changes-for-microsoft-edge-browser-on-windows-10-and-later-devices----3775833-----"></a>Alterações de interface do Usuário atualizadas para o Browser do Microsoft Edge no Windows 10 e dispositivos posteriores <!-- 3775833   -->
+Quando cria um perfil de configuração do dispositivo, pode permitir ou restringir funcionalidades do Microsoft Edge no Windows 10 e dispositivos posteriores (**configuração do dispositivo** > **perfis**  >  **Criar perfil** > **Windows 10 e posterior** para a plataforma, > **restrições de dispositivos** para o tipo de perfil >  **Browser Microsoft Edge**). Nesta atualização, as definições do Microsoft Edge são mais descritivo e mais fácil de entender. 
+
+Para ver esses recursos, aceda a [definições de restrição de dispositivos de Browser do Microsoft Edge](device-restrictions-windows-10.md#microsoft-edge-browser).
+
+Aplica-se a: Windows 10 e posterior
+
+#### <a name="expanded-support-for-android-enterprise-fully-managed-devices--preview-------3903241-3903244-3903246-----"></a>Suporte expandido para dispositivos Android Enterprise totalmente gerida (pré-visualização)  <!--   3903241, 3903244, 3903246   -->
+Ainda na pré-visualização pública, Expandimos o nosso suporte de dispositivos empresariais Android totalmente gerido ([anunciada pela primeira vez em Janeiro de 2019](whats-new.md#week-of-january-14-2019) para incluir o seguinte: 
+
+- Em dispositivos totalmente geridos e dedicados, pode criar [políticas de conformidade](compliance-policy-create-android-for-work.md) para incluir regras de palavra-passe e requisitos do sistema operativo (**conformidade do dispositivo**  >   **As políticas** > **criar política** > **Android Enterprise** para a plataforma > **proprietário do dispositivo** para tipo de perfil). 
+
+  Em dispositivos dedicados, o dispositivo pode mostrar como **não conformes**. Acesso condicional não está disponível nos dispositivos dedicados. Certifique-se de que conclua quaisquer tarefas ou ações para dispositivos dedicados estar em conformidade com as políticas atribuídas.
+
+- [Acesso condicional](conditional-access.md) -dispositivos geridos pelo acesso condicional, as políticas que se aplicam ao Android também se aplicam ao Android Enterprise totalmente. Os utilizadores podem agora registar o respetivo dispositivo completamente gerido no Azure Active Directory com o **da aplicação Microsoft Intune**. Em seguida, ver e resolver quaisquer problemas de conformidade para aceder a recursos organizacionais.
+
+- Nova aplicação de utilizador final (Microsoft da aplicação Intune) – há uma nova aplicação de utilizador final para Android totalmente geridos chamados **Microsoft Intune**. Esta nova aplicação é leves e modernos e fornece semelhante funcionalmente como a aplicação Portal da empresa, mas para dispositivos totalmente gerenciados. Para obter mais informações, consulte [da aplicação Microsoft Intune no Google Play](https://play.google.com/store/apps/details?id=com.microsoft.intune).
+
+Para configurar o Android totalmente geridos os dispositivos, aceda a **inscrição de dispositivos** > **inscrição de dispositivos Android** > **dispositivos de utilizador de propriedade da empresa, totalmente gerido**. Suporte para dispositivos Android geridos totalmente permanece em pré-visualização e algumas funcionalidades do Intune poderão não estar totalmente funcionais.  
+
+Para saber mais sobre esta pré-visualização, veja o nosso blogue [Preview 2 para dispositivos Android Enterprise totalmente gerido do Microsoft Intune –](https://aka.ms/preview2_AE_fullymanaged).
+
+
+### <a name="device-enrollment"></a>Inscrição de dispositivos
+
+#### <a name="configure-profile-to-skip-some-screens-during-setup-assistant----2276470--wnstaged--"></a>Configurar o perfil para ignorar algumas telas durante o Assistente de configuração <!-- 2276470  wnstaged-->
+Quando cria um macOS perfil de inscrição, pode configurar para ignorar qualquer um dos ecrãs seguintes quando um utilizador executa o Assistente de configuração:
+- Aparência
+- Sinal de Exibição
+- iCloudStorage se criar um novo perfil ou editar um perfil, selecionado ignorar ecrãs necessidade para sincronizar com o servidor de MDM da Apple.  Os utilizadores podem emitir uma sincronização manual dos dispositivos, para que haja um atraso de escolher as alterações de perfil.
+Para obter mais informações, consulte [inscrever automaticamente dispositivos macOS com o programa de inscrição de dispositivos ou do Apple School Manager](device-enrollment-program-enroll-macos.md).
+
+#### <a name="bulk-device-naming-when-enrolling-corporate-ios-devices--3566569----"></a>Em massa de dispositivos de nomenclatura quando inscrever dispositivos iOS empresariais<!--3566569  -->
+Quando utilizar um dos métodos de inscrição da empresa da Apple (DEP/ABM/ASM), pode definir um formato de nome de dispositivo para automaticamente nome entrada dispositivos iOS. Pode especificar um formato que inclui o tipo de dispositivo e o número de série do seu modelo. Para tal, escolha **Intune** > **inscrição de dispositivos** > **inscrição da Apple** > **programa de inscrição tokens** > **selecione um token** >**criar perfil** > **formato de nomenclatura de dispositivo**. Pode editar perfis existentes, mas apenas os dispositivos recentemente sincronizados terá o nome aplicado.
+
+#### <a name="updated-default-timeout-message-on-enrollment-status-page----3959331---"></a>Mensagem de tempo limite padrão atualizada na página de estado de inscrição <!-- 3959331 -->
+Atualizámos a mensagem de tempo limite predefinido, os utilizadores veem quando a página de estado de inscrição (ESP) excede o valor de tempo limite especificado no perfil do ESP. A nova mensagem predefinido é o que os utilizadores veem e ajuda a entender as ações de seguintes com a implantação do ESP.  
+
+### <a name="device-management"></a>Gestão de dispositivos
+
+#### <a name="retire-noncompliant-devices-----1827291-----"></a>Extinguir dispositivos não conformes  <!-- 1827291   -->
+Esta funcionalidade foi adiada e será fornecido numa versão futura.
+
 
 ### <a name="monitor-and-troubleshoot"></a>Monitorizar e resolver problemas
 
 #### <a name="intune-data-warehouse-v10-changes-reflecting-back-to-beta----4403765---"></a>Alterações de V1.0 de armazém de dados do Intune refletindo para o beta <!-- 4403765 -->
 Quando a versão 1.0 foi introduzida inicialmente no 1808, eram diferentes quanto de algumas maneiras significativas da versão beta API. No 1903 essas alterações serão refletidas novamente para a versão de API do beta. Se tiver relatórios importantes que utilizem a versão de API do beta, é altamente recomendável mudar esses relatórios para a versão 1.0 para evitar alterações significativas. Para obter mais informações, consulte [registo de alterações para a API do armazém de dados do Intune](reports-changelog.md#1903-part-2).
+
+#### <a name="monitor-security-baseline-status-public-preview----3082047---"></a>Monitorizar o estado de linha de base de segurança (pré-visualização pública) <!-- 3082047 --> 
+Adicionámos uma [vista por categoria](security-baselines-monitor.md#per-category-view) para a monitorização de linhas de base de segurança. (Linhas de base de segurança permanecem na pré-visualização). O modo de exibição por categoria apresenta cada categoria da linha de base juntamente com a percentagem de dispositivos que pertencem a cada grupo de estado para essa categoria. Agora, pode ver o número de dispositivos não corresponde as categorias individuais, é configurado incorretamente ou não se aplicam.
+
+### <a name="role-based-access-control"></a>Controlo de acesso baseado em funções
+
+#### <a name="scope-tags-for-apple-vpp-tokens---2371886----"></a>Etiquetas de âmbito para tokens VPP da Apple <!--2371886  -->
+Agora pode adicionar etiquetas de âmbito para tokens VPP da Apple. Apenas os utilizadores com a mesma etiqueta de âmbito têm acesso para o token de Apple VPP com a mesma. As aplicações VPP e ebooks adquirido com esse token herdam suas etiquetas de âmbito. Para obter mais informações sobre etiquetas de âmbito, veja [marcas RBAC de utilização e âmbito](scope-tags.md).
+
+
+
+
+
+
 
 ## <a name="week-of-april-1-2019"></a>Semana de 1 de Abril de 2019
 
@@ -148,7 +296,7 @@ Agora pode utilizar o Intune para [ver detalhes](encryption-monitor.md) sobre o 
 #### <a name="microsoft-edge-support-for-intune-scenarios-on-ios-and-android-devices----3411007---"></a>Suporte do Microsoft Edge para cenários do Intune em dispositivos iOS e Android <!-- 3411007 -->
 Microsoft Edge irá suportar todos os cenários de gestão mesmo como o Intune Managed Browser com a adição de melhorias na experiência de utilizador final. As funcionalidades de enterprise do Microsoft Edge que estão ativadas por políticas do Intune incluem dual-Identity, integração de política de proteção de aplicações, integração de proxy de aplicações do Azure e gerenciados de Favoritos e os atalhos de página inicial. Para obter mais informações, consulte [suporte do Microsoft Edge](app-configuration-managed-browser.md#microsoft-edge-support).
 
-#### <a name="exchange-onlineintune-connector-deprecate-support-for-eas-only-devices---3105122------"></a>Conector do Exchange Online/Intune Preterir o suporte para apenas os dispositivos EAS <!--3105122    -->
+#### <a name="exchange-onlineintune-connector-deprecate-support-for-eas-only-devices---3105122----"></a>Conector do Exchange Online/Intune Preterir o suporte para apenas os dispositivos EAS <!--3105122  -->
 A consola do Intune já não suporta a visualização e gestão de dispositivos só de EAS ligados ao Exchange Online com o conector do Intune. Em vez disso, tem as seguintes opções:
 - Inscrever dispositivos na gestão de dispositivos móveis (MDM)
 - Utilizar políticas de proteção de aplicações do Intune para gerir os seus dispositivos
@@ -159,7 +307,7 @@ Agora pode procurar um nome de dispositivo exato. Aceda a **Intune** > **disposi
 
 ### <a name="monitor-and-troubleshoot"></a>Monitorizar e resolver problemas
 
-#### <a name="support-for-additional-connectors-on-the-tenant-status-page----3617202-------"></a>Suporte para conectores adicionais na página de estado do inquilino <!-- 3617202     -->
+#### <a name="support-for-additional-connectors-on-the-tenant-status-page----3617202----"></a>Suporte para conectores adicionais na página de estado do inquilino <!-- 3617202  -->
 O [página de estado do inquilino](tenant-status.md) agora mostra informações de estado de conectores adicionais, incluindo *proteção de ameaças avançada do Windows Defender* (ATP) e outros conectores de defesa contra ameaças móveis.
 
 ### <a name="role-based-access-control"></a>Controlo de acesso baseado em funções
@@ -177,7 +325,6 @@ Acesso só de leitura a todos os dados do Intune:
 - Administrador de Segurança
 - Operador de segurança
 - Leitor de segurança
-- Leitor global
 
 Para obter mais informações, consulte [controlo de acesso baseado em funções](role-based-access-control.md).
 
@@ -200,7 +347,7 @@ O módulo PowerShell do Intune, que fornece suporte para a API do Intune atravé
 - [Detalhes sobre como utilizam este módulo](https://github.com/Microsoft/Intune-PowerShell-SDK/blob/master/README.md)
 - [Exemplos de cenário com este módulo](https://github.com/Microsoft/Intune-PowerShell-SDK/blob/master/Samples/README.md)
 
-#### <a name="improved-support-for-delivery-optimization----3183757-------"></a>Suporte aprimorado para otimização de entrega  <!--3183757     -->
+#### <a name="improved-support-for-delivery-optimization----3183757----"></a>Suporte aprimorado para otimização de entrega  <!--3183757  -->
 Expandimos o suporte do Intune para configurar a otimização de entrega. Agora, pode configurar uma lista expandida de [as definições de otimização de entrega](delivery-optimization-settings.md) e aplicá-lo para os seus dispositivos diretamente a partir do consola do Intune.
 
 
@@ -249,7 +396,7 @@ Quaisquer alterações de política de palavra-passe nova ou existente pelo admi
 Aplica-se a:  
 macOS
 
-#### <a name="assign-scep-certificates-to-a-userless-macos-device-------2340521------"></a>Atribuir certificados SCEP para um dispositivo macOS sem utilizador    <!-- 2340521    -->
+#### <a name="assign-scep-certificates-to-a-userless-macos-device-----2340521----"></a>Atribuir certificados SCEP para um dispositivo macOS sem utilizador  <!-- 2340521  -->
 Pode atribuir certificados Simple Certificate Enrollment Protocol (SCEP), usando atributos de dispositivo para dispositivos macOS, incluindo os dispositivos sem afinidade do utilizador e associar o perfil de certificado, Wi-Fi ou perfis VPN. Isso expande o suporte já temos a [atribuir certificados SCEP para dispositivos com e sem afinidade do utilizador](certificates-scep-configure.md#create-a-scep-certificate-profile) que executam o Windows, iOS e Android.  Esta atualização adiciona a opção de selecionar um tipo de certificado de *dispositivo* ao configurar um perfil de certificado SCEP para o macOS.
 
 Aplica-se a: 
@@ -267,11 +414,11 @@ Pode utilizar dispositivos Windows 10 no modo de local público para executar um
 - Novos recursos e as definições estão disponíveis para permitir ou restringir (**configuração do dispositivo** > **perfis** > **novo perfil**  >  **Windows 10 e posterior** para a plataforma > **restrições de dispositivos** para tipo de perfil), incluindo:
 
   - Microsoft Edge Browser:
-    - Utilizar o modo de local público do Microsoft Edge
-    - Atualize o browser após o tempo de inatividade
+  - Utilizar o modo de local público do Microsoft Edge
+  - Atualize o browser após o tempo de inatividade
 
  - Favoritos e pesquisar:
-    - Permitir alterações para o mecanismo de pesquisa
+  - Permitir alterações para o mecanismo de pesquisa
 
 Para obter uma lista destas definições, consulte:
 

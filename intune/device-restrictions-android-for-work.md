@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/20/2019
+ms.date: 04/10/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 493a5be89e747c2de1eca3a63907b79228fcdfa2
-ms.sourcegitcommit: aab39bf86707ccaef45fd6527fff4f1c89336710
-ms.translationtype: MT
+ms.openlocfilehash: 4840ccac35f37e956c363a1f6103da623ef27782
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58429759"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "60164163"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Definições de dispositivos do Android Enterprise para permitir ou restringir funcionalidades com o Intune
 
@@ -65,26 +65,18 @@ Este artigo apresenta e descreve as diferentes definições que pode controlar e
 
   **Não configurado** impede que os utilizadores de ativarem a funcionalidade de Sombreado traçado de escape de rede no dispositivo.
 
-- **Permitir a instalação de origens desconhecidas**: Escolher **permitir** para que os utilizadores podem ativar o **origens desconhecidas**. Esta definição permite que as aplicações instalar a partir de origens desconhecidas. **Não configurado** impede que os utilizadores de ativarem **origens desconhecidas**.
 - **Atualização do sistema**: Escolha uma opção para definir a forma como o dispositivo processa atualizações por ondas eletromagnéticas:
   - **Predefinição do dispositivo**: Utilize predefinição do dispositivo.
   - **Automática**: As atualizações são instaladas automaticamente sem interação do utilizador. Definir esta política imediatamente instala todas as atualizações pendentes.
   - **Adiado**: As atualizações são adiadas durante 30 dias. No final dos 30 dias, o Android solicita ao utilizador para instalar a atualização. É possível os fabricantes de dispositivos ou operadoras impedirem (isentarem) o adiamento de atualizações de segurança importantes. Uma atualização isenta mostra uma notificação de sistema ao utilizador no dispositivo. 
   - **Janela de manutenção**: Instala atualizações automaticamente durante uma janela de manutenção diária que definir no Intune. Instalação tenta diariamente durante 30 dias e pode falhar se houver níveis insuficientes de espaço ou útil da bateria. Após 30 dias, o Android solicita ao utilizador que instalar. Esta janela também é utilizada para instalar atualizações para aplicações do Play. Utilize esta opção para dispositivos dedicados, tais como quiosques, como aplicações de primeiro plano de dispositivos de dedicado de aplicação única podem ser atualizadas.
-- **É atualizado automaticamente a aplicação**: Escolha quando são instaladas as atualizações automáticas. As opções são:
-  - **Não configurado**
-  - **Preferência de utilizador**
-  - **Nunca**
-  - **Apenas Wi-Fi**
-  - **Sempre**
 
 - **Windows de notificação**: Quando definido como **desativar**, notificações de janela, incluindo circula, as chamadas recebidas, as chamadas, alertas de sistema e erros de sistema não são apresentadas no dispositivo. Quando definido como **não configurado**, a predefinição do sistema operativo é usada, que pode ser para mostrar notificações.
 - **Ignorar primeiro utilizar sugestões**: Escolher **ativar** para ocultar ou ignorar sugestões de aplicações para acompanhar tutoriais ou ler qualquer sugestão introdutório quando a aplicação for iniciada. Quando definido como **não configurado**, a predefinição do sistema operativo é usada, que pode ser para mostrar estas sugestões quando a aplicação for iniciada.
 
-
 ### <a name="system-security-settings"></a>Definições de segurança do sistema
 
-- **Análise de ameaças nas aplicações**: **Exigir** impõe que o **verificar aplicações** definição está ativada para o trabalho e perfis pessoais.
+- **Análise de ameaças nas aplicações**: **Exigir** (predefinição) permite que a Google Play Protect analisar as aplicações antes e depois da instalação. Se detetar uma ameaça, ele pode avisá-lo para remover a aplicação do dispositivo. **Não configurado** não ative ou que execute o Google Play Protect para analisar as aplicações.
 
 ### <a name="dedicated-device-settings"></a>Definições de dispositivos dedicados
 
@@ -122,25 +114,58 @@ Utilize estas definições para configurar uma experiência de estilo de local p
     1. Continua a selecionar o botão voltar, até que é mostrado no botão "Quiosque de saída". 
     2. Selecionar o botão e introduz a **deixar o código do modo de local público** PIN.
     3. Quando terminar de efetuar alterações, selecione o **geridos tela home page** aplicação. Este passo relocks o dispositivo em modo de local público de várias aplicações. 
-    
+
     **Desativar** não dá a capacidade de colocar em pausa o modo de local público. Se o administrador continua selecionar o botão voltar e seleciona o botão "Quiosque de saída", em seguida, uma mensagem indica que um código de acesso é necessário.
-    
+
     - **Deixe o código do modo de local público**: Introduza um dígito de 4 a 6 PIN numérico. O administrador utiliza este PIN para interromper temporariamente o modo de local público.
- 
+
   - **Definir o fundo de URL personalizado**: Introduza um URL para personalizar o ecrã de segundo plano no dispositivo dedicado.
+    
+    > [!NOTE]
+    > Na maioria dos casos, recomendamos que comece com imagens de, pelo menos, os tamanhos seguintes:
+    >
+    > - Telefone: 1080x1920 px
+    > - Tablet: 1920x1080 px
+    >    
+    > Para obter a melhor experiência e detalhes de explícito, recomenda-se que, por imagem do dispositivo, recursos ser criado com as especificações de exibição.
+    >
+    > Apresenta modernos têm maior densities de pixel e pode exibir imagens de definição de equivalente 2 mil/4K.
+  - **Configuração de Wi-Fi**: Escolher **ativar** para permitir que os utilizadores finais ligar o dispositivo para diferentes redes Wi-Fi. Também ativar esta funcionalidade ativa a localização do dispositivo. **Não configurado** (predefinição) impede que os utilizadores se liguem a redes Wi-Fi no geridos home page ecrã (modo de bloqueio de tarefa).
+
+    Mais diante [modo de bloqueio de tarefa](https://developer.android.com/work/dpc/dedicated-devices/lock-task-mode) (abre o site da web do Android).
+
+  - **Configuração de Bluetooth**: Escolher **ativar** permitir Bluetooth no dispositivo e permitir que os utilizadores finais dispositivos par via Bluetooth. Também ativar esta funcionalidade ativa a localização do dispositivo. **Não configurado** (predefinição) impede que os utilizadores a configurar o Bluetooth e emparelhamento dispositivos enquanto no geridos home page ecrã (modo de bloqueio de tarefa). 
+
+    Mais diante [modo de bloqueio de tarefa](https://developer.android.com/work/dpc/dedicated-devices/lock-task-mode) (abre o site da web do Android).
 
 ### <a name="device-password-settings"></a>Definições de palavra-passe do dispositivo
 
-- **Keyguard**: Escolher **desativar** para impedir que utiliza a utilizar a funcionalidade de ecrã de bloqueio de Keyguard no dispositivo. **Não configurado** permite que o usuário a usar os recursos de Keyguard.
-- **Desativado as funcionalidades de keyguard**: Quando keyguard está ativada no dispositivo, escolha quais as funcionalidades para desativar. Por exemplo, quando **câmara segura** estiver marcada, a funcionalidade de câmera está desativada no dispositivo. Quaisquer funcionalidades não verificadas estão ativadas no dispositivo.
+- **Desativar o ecrã de bloqueio**: Escolher **desativar** para impedir que os utilizadores a utilizar a funcionalidade de ecrã de bloqueio de Keyguard no dispositivo. **Não configurado** permite que o usuário a usar os recursos de Keyguard.
+- **Desativado as funcionalidades de ecrã de bloqueio**: Quando keyguard está ativada no dispositivo, escolha quais as funcionalidades para desativar. Por exemplo, quando **câmara segura** estiver marcada, a funcionalidade de câmera está desativada no dispositivo. Quaisquer funcionalidades não verificadas estão ativadas no dispositivo.
+
+  Estas funcionalidades estão disponíveis para os utilizadores quando o dispositivo está bloqueado. Os utilizadores não vê nem acessar recursos que são verificados.
+
 - **Tipo de palavra-passe obrigatório**: Defina o tipo de palavra-passe necessária para o dispositivo. As opções são:
-  - **Pelo menos numérica**
-  - **Complexo numérico**: Repetido ou números consecutivos, como "1111" ou "1234", não são permitidos.
-  - **Pelo menos alfabética**
-  - **Pelo menos alfanumérica**
-  - **Pelo menos alfanumérica com símbolos**
-- **Comprimento mínimo da palavra-passe**: Introduza o comprimento mínimo da palavra-passe de que um utilizador tem de introduzir (entre 4 e 16 carateres).
-- **Número de falhas de início de sessão antes de limpar o dispositivo**: Introduza o número de inícios de sessão falhados a permitir antes do dispositivo ser apagado (entre 1 a 11).
+  - **Predefinição do dispositivo**
+  - **Palavra-passe de necessário, sem restrições**
+  - **Weak biométrica**: [Forte versus biometria fraca](https://android-developers.googleblog.com/2018/06/better-biometrics-in-android-p.html) (abre o site da web do Android)
+  - **Numérico**: Palavra-passe só pode ser números, como `123456789`. Introduza o **comprimento mínimo da palavra-passe** um utilizador tem de introduzir, entre 4 e 16 carateres.
+  - **Complexo numérico**: Repetido ou números consecutivos, como "1111" ou "1234", não são permitidos. Introduza o **comprimento mínimo da palavra-passe** um utilizador tem de introduzir, entre 4 e 16 carateres.
+  - **Alfabética**: Letras do alfabeto são necessárias. Números e símbolos não são necessários. Introduza o **comprimento mínimo da palavra-passe** um utilizador tem de introduzir, entre 4 e 16 carateres.
+  - **Alfanumérico**: Inclui as letras maiúsculas, letras minúsculas e carateres numéricos. Introduza o **comprimento mínimo da palavra-passe** um utilizador tem de introduzir, entre 4 e 16 carateres.
+  - **Alfanumérica com símbolos**: Inclui as letras maiúsculas, letras minúsculas, carateres numéricos, marcas de pontuação e símbolos. Introduza também:
+
+    - **Comprimento mínimo da palavra-passe**: Introduza o comprimento mínimo que da palavra-passe tem de ter, entre 4 e 16 carateres.
+    - **Número de carateres necessários**: Introduza o número de carateres que a palavra-passe tem de ter, entre 0 e 16 carateres.
+    - **Número de carateres em minúsculas necessária**: Introduza o número de carateres minúsculos, que a palavra-passe tem de ter, entre 0 e 16 carateres.
+    - **Número de carateres em maiúsculas necessários**: Introduza o número de carateres maiúsculos que a palavra-passe tem de ter, entre 0 e 16 carateres.
+    - **Número de carateres não letra necessários**: Introduza o número de não-letras (algo diferente de letras do alfabeto) a palavra-passe tem de ter, entre 0 e 16 carateres.
+    - **Número de carateres numéricos necessários**: Introduza o número de carateres numéricos (`1`, `2`, `3`e assim por diante) a palavra-passe tem de ter, entre 0 e 16 carateres.
+    - **Número de carateres de símbolo necessários**: Introduza o número de carateres de símbolos (`&`, `#`, `%`e assim por diante) a palavra-passe tem de ter, entre 0 e 16 carateres.
+
+- **Número de dias até que a palavra-passe expirar**: Introduza o número de dias, entre 1-365, até ser preciso alterar a palavra-passe do dispositivo. Por exemplo, para alterar a palavra-passe após 60 dias, introduza `60`. Quando a palavra-passe expira, é pedido aos utilizadores para criar uma nova palavra-passe.
+- **Número de palavras-passe necessárias antes de utilizador pode resuse uma palavra-passe**: Introduza o número de palavras-passe recentes que não podem ser reutilizadas entre 1 e 24. Utilize esta definição para impedir o utilizador final de criar palavras-passe utilizadas anteriormente.
+- **Número de falhas de início de sessão antes de limpar o dispositivo**: Introduza o número, entre 4 a 11, com falhas de inícios de sessão consecutivas a permitir antes do dispositivo ser apagado.
 
 ### <a name="power-settings"></a>Definições de energia
 
@@ -152,6 +177,17 @@ Utilize estas definições para configurar uma experiência de estilo de local p
 - **Adicionar novos utilizadores**: Escolher **bloco** impedir os utilizadores de adicionar novos utilizadores. Cada utilizador tem um espaço pessoal no dispositivo para personalizado Home ecrãs, contas, aplicações e definições. **Não configurado** permite aos utilizadores adicionar outros utilizadores no dispositivo.
 - **Remoção do utilizador**: Escolher **bloco** impedir os utilizadores de remoção de utilizadores. **Não configurado** permite aos utilizadores remover outros utilizadores do dispositivo.
 - **Alterações de conta**: Escolher **bloco** impedir os utilizadores de modificação de contas. **Não configurado** permite aos usuários atualizar as contas de utilizador no dispositivo.
+
+### <a name="applications"></a>Aplicações
+
+- **Permitir a instalação de origens desconhecidas**: Escolher **permitir** para que os utilizadores podem ativar **origens desconhecidas**. Esta definição permite que as aplicações instalar a partir de origens desconhecidas, incluindo origens diferentes Store de Play Google. **Não configurado** impede que os utilizadores de ativarem **origens desconhecidas**.
+- **Permitir o acesso a todas as aplicações na Google Play store**: Quando definido como **permitir**, os utilizadores obtêm acesso a todas as aplicações na Google Play store. Eles não recebem acesso às aplicações que o administrador de blocos em [aplicações de cliente](apps-add-android-for-work.md). **Não configurado** força os usuários acessem apenas as aplicações disponíveis Google Play store faz com que o administrador ou aplicações necessárias na [aplicações de cliente](apps-add-android-for-work.md).
+- **É atualizado automaticamente a aplicação**: Escolha quando são instaladas as atualizações automáticas. As opções são:
+  - **Não configurado**
+  - **Preferência de utilizador**
+  - **Nunca**
+  - **Apenas Wi-Fi**
+  - **Sempre**
 
 ### <a name="connectivity"></a>Conectividade
 

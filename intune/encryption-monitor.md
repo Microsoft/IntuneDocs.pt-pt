@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/20/2019
+ms.date: 04/23/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 1c9028d3b8e69c8f20e264f99bd4bf8fda6c9050
-ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
-ms.translationtype: MT
+ms.openlocfilehash: a18c579853b162024aaa93d5dad2bfd854d8c0d2
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59423522"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "60164061"
 ---
 # <a name="monitor-bitlocker-and-device-encryption"></a>Monitorizar a encriptação BitLocker e o dispositivo  
 O Intune fornece uma localização centralizada para identificar o estado de encriptação dos seus dispositivos Windows 10 e ajuda-o a aceder a informações importantes para o BitLocker dos seus dispositivos, como encontrada no Azure Active Directory (Azure AD).  
@@ -42,7 +42,16 @@ A aparecer no relatório de encriptação, um dispositivo tem de executar o Wind
 O relatório apresenta os **nome do dispositivo** para os seus dispositivos Windows 10 e detalhes de alto nível sobre cada uma, incluindo:  
 - **Versão do SO** – versão do Windows.  
 - **Versão do TPM** – a versão do chip Trusted Platform Module (TPM) no dispositivo.  
-- **Preparação de encriptação** -uma avaliação de preparação de dispositivos para oferecer suporte a criptografia de disco BitLocker. Um dispositivo pode ter um Estado de encriptação de *Encrypted* , mesmo que seja sua prontidão de encriptação *não está pronta*, porque não tem um TPM.  
+- **Preparação de encriptação** -uma avaliação de preparação de dispositivos para oferecer suporte a criptografia de disco BitLocker. Dispositivos podem ser identificados como:
+  - **Pronto**: O dispositivo pode ser encriptado utilizando a política MDM, que requer o dispositivo tem um TPM e cumpre os requisitos de SKU e versão do Windows 10 seguinte:
+    - Versão 1703 ou posterior, de empresas, Enterprise, educação
+    - Versão 1809 ou posterior, do Pro  
+  
+    Para obter mais informações, consulte a [fornecedor de serviços de configuração do BitLocker (CSP)](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) na documentação do Windows.  
+
+  - **Não está pronta**: O dispositivo não tem capacidades de encriptação completa, mas ainda suporta a encriptação. Por exemplo, o dispositivo pode estar encriptado manualmente por um utilizador ou por meio da diretiva de grupo que pode ser definida para permitir a encriptar sem um TMP.
+  - **Não aplicável**: Não há informações suficientes para classificar este dispositivo.  
+
 - **Estado de encriptação** – se a unidade do SO é encriptada.  
 
 
@@ -51,11 +60,11 @@ Quando um dispositivo é selecionado, o Intune apresenta os **estado de encripta
 
 Este painel fornece os seguintes detalhes:  
 - **Nome do dispositivo** – o nome do dispositivo que está a ver.  
-- **Preparação de encriptação** – um avaliação de preparação de dispositivos para oferecer suporte a criptografia de disco BitLocker. Um dispositivo pode ter um Estado de encriptação de *Encrypted* , mesmo que seja sua prontidão de encriptação *não está pronta*, porque não tem um TPM.  
+- **Preparação de encriptação** – um avaliação de preparação de dispositivos para oferecer suporte a criptografia de disco BitLocker. Um dispositivo pode ter um Estado de encriptação de *Encrypted* , mesmo que seja sua prontidão de encriptação *não está pronta*, porque não tem um TPM. (Veja a preparação de encriptação em ele secção para obter mais detalhes anterior).
 - **Estado de encriptação** - se a unidade do SO é encriptada.  
 - **Perfis** – uma lista da *configuração do dispositivo* perfis aplicáveis a este dispositivo e incluem o seguinte tipo de perfil e as definições:  
-    - Tipo de perfil = *Endpoint protection*  
-    - Definições > encriptação Windows > encriptar dispositivos = *necessário*  
+  - Tipo de perfil = *Endpoint protection*  
+  - Definições > encriptação Windows > encriptar dispositivos = *necessário*  
 
   Esta lista pode ser de uso na localização políticas individuais para revisão deve o resumo de estado do perfil indicar problemas.  
 
