@@ -18,11 +18,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 67938f8697002f94f275f953510d1b0f4864a3fa
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566731"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61507160"
 ---
 # <a name="windows-security-baseline-settings-for-intune"></a>Definições da linha de base de segurança do Windows para o Intune  
 
@@ -48,7 +48,7 @@ Para obter mais informações, consulte [CSP de política - AppRuntime](https://
 - **Contas Microsoft opcionais para aplicações da Windows Store**  
   Esta definição de política permite-lhe controlar se as contas Microsoft são opcionais para aplicações da Windows Store que requerem uma conta para iniciar sessão. Esta política afeta apenas as aplicações do Windows Store que o suportam. Se ativar esta definição de política, aplicações da Windows Store que exigem, normalmente, uma conta Microsoft para iniciar sessão permitirá aos utilizadores iniciar sessão com uma conta da empresa em vez disso. Se desabilitar ou não configura esta definição de política, os utilizadores devem iniciar sessão com uma conta Microsoft.  
   
-  **Predefinido**: Ativado  
+  **Predefinido**: Enabled  
 
 ## <a name="application-management"></a>Gestão de aplicações   
 Para obter mais informações, consulte [CSP de política - ApplicationManagement](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement) na documentação do Windows.  
@@ -74,7 +74,7 @@ Para obter mais informações, consulte [CSP de política - reprodução automá
 - **Bloquear a reprodução automática para dispositivos não volume**  
   Esta definição de política não permite reprodução automática para dispositivos do MTP, como câmeras ou telefones. Se ativar esta definição de política, reprodução automática não é permitida para dispositivos do MTP, como câmeras ou telefones. Se desabilitar ou não configura esta definição de política, reprodução automática está ativada para dispositivos não volume.
   
-  **Predefinido**: Ativado  
+  **Predefinido**: Enabled  
 
 ## <a name="bitlocker"></a>BitLocker    
 Para obter mais informações, consulte [CSP de política - Bitlocker](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-bitlocker
@@ -138,12 +138,12 @@ Para obter mais informações, consulte [CSP de política - conectividade](https
 - **Transferência de Internet de bloco para web de publicação e ordenação online assistentes**  
   Esta definição de política especifica se o Windows devem transferir uma lista de fornecedores para a web de publicação e ordenação online assistentes. Estes assistentes permitem que os utilizadores selecionarem uma lista de empresas que fornecem serviços como o armazenamento online e impressão photographic. Por predefinição, o Windows apresenta fornecedores transferidos a partir de um site do Windows para além de fornecedores especificado no registo. Se ativar esta definição de política, o Windows não transferir fornecedores e apenas os fornecedores de serviços que estão em cache no visor de registo local. Se desabilitar ou não configura esta definição de política, uma lista de fornecedores transfere quando o utilizador utiliza a web de publicação ou pedidos online assistentes. Para obter mais informações que inclui detalhes sobre a especificação de fornecedores de serviços no Registro, consulte a documentação para a web de publicação e ordenação online assistentes.  
   
-  **Predefinido**: Ativado  
+  **Predefinido**: Enabled  
 
 - **Bloquear o download dos controladores de impressão por HTTP**  
   Esta definição de política especifica se pretende permitir que este cliente transferir pacotes de controladores de impressão por HTTP. Para configurar a impressão de HTTP, drivers de caixa de entrada não tem de ser transferidos através de HTTP. Nota: Esta definição de política não impede que o cliente de impressão para impressoras na Intranet ou na Internet através de HTTP. Apenas proíbe a transferência de controladores que ainda não estiverem instalados localmente. Se ativar esta definição de política, os controladores de impressão não pode ser transferido através de HTTP. Se desabilitar ou não configura esta definição de política, os utilizadores podem transferir controladores de impressão por HTTP.
   
-  **Predefinido**: Ativado  
+  **Predefinido**: Enabled  
 
 ## <a name="credentials-delegation"></a>Delegação de credenciais  
 Para obter mais informações, consulte [CSP de política - CredentialsDelegation](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-credentialsdelegation
@@ -153,7 +153,7 @@ Para obter mais informações, consulte [CSP de política - CredentialsDelegatio
   Anfitrião remoto permite que a delegação de credenciais não exportável. Ao utilizar a delegação de credenciais, os dispositivos fornecem uma versão exportável de credenciais para o anfitrião remoto, que expõe os utilizadores ao risco de roubo de credenciais contra invasores no anfitrião remoto. Se ativar esta definição de política, o anfitrião suporta o modo Admin restrito ou de Credential Guard remoto. Se desabilitar ou não configura esta definição de política, administração restrito e o modo de Credential Guard remoto não são suportados. Usuário sempre precisará passar as credenciais para o anfitrião.  
 
   
-  **Predefinido**: Ativado  
+  **Predefinido**: Enabled  
 
 ## <a name="credentials-ui"></a>Credenciais da interface do Usuário  
 Para obter mais informações, consulte [CSP de política - CredentialsUI](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-credentialsui) na documentação do Windows.  
@@ -195,7 +195,7 @@ Para obter mais informações, consulte [CSP de política - DeviceGuard](https:/
   **Default**: Yes  
   -->
 - **Inicie a proteção do sistema**    
-  **Predefinido**: Ativado  
+  **Predefinido**: Enabled  
 
 ## <a name="device-installation"></a>Instalação de dispositivo  
 Para obter mais informações, consulte [CSP de política - DeviceInstallation](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation) na documentação do Windows.  
@@ -239,7 +239,7 @@ Para obter mais informações, consulte [CSP de política - DeviceLock](https://
 - **Impedir a utilização da câmara**  
   Desativa o comutador de estado do bloqueio ecrã câmara nas definições do PC e impede que uma câmera que está a ser invocado no ecrã de bloqueio. Por predefinição, os utilizadores podem permitir a invocação de uma câmera disponível no ecrã de bloqueio. Se ativar esta definição, os utilizadores já não poderão ativar ou desativar o acesso de câmera de ecrã de bloqueio em definições do PC e a câmara não pode ser invocada no ecrã de bloqueio. 
   
-  **Predefinido**: Ativado  
+  **Predefinido**: Enabled  
 
 - **Exigir palavra-passe**  
   Especifica se o bloqueio do dispositivo está ativado.
@@ -287,7 +287,7 @@ Para obter mais informações, consulte [CSP de política - DeviceLock](https://
 - **Impedir a apresentação de diapositivos**  
   Desativa as definições de apresentação de slides do ecrã de bloqueio em definições do PC e impede que uma apresentação de diapositivos reproduzindo no ecrã de bloqueio. Por predefinição, os utilizadores podem ativar uma apresentação de slides que será executado depois que a máquina de bloqueio. Se ativar esta definição, os utilizadores não é possível modificar as definições de apresentação de slides nas definições do PC, e não de slides pode começar.
   
-    **Predefinido**: Ativado  
+    **Predefinido**: Enabled  
     *Uma definição de ativado impede que o slide mostra a execução.* 
 
 - **Idade mínima da palavra-passe em dias**  
@@ -391,7 +391,7 @@ Para obter mais informações, consulte [CSP de política - InternetExplorer](ht
 - **Aviso de erro de correspondência do endereço de certificado do Internet Explorer**  
   Esta definição de política permite-lhe ativar o aviso de segurança de erro de correspondência de endereço do certificado. Quando esta definição de política é ativada, o usuário é avisado quando visita Web sites HTTP Secure (HTTPS) que presentes certificados emitidos para um endereço de outro Web site. Este aviso ajuda a impedir ataques de falsificação. Se ativar esta definição de política, o certificado endereço erro de correspondência de aviso sempre será exibido. Se desabilitar ou não configura esta definição de política, o usuário pode escolher se o aviso de erro de correspondência do endereço de certificado é apresentado (ao utilizar a página avançada no painel de controlo da Internet).
   
-  **Predefinido**: Ativado 
+  **Predefinido**: Enabled 
   
 - **Zona restrita do Internet Explorer menos sites com privilégios**  
   Esta definição de política permite-lhe gerir se sites da Web de zonas com menos privilégios, tais como sites da Internet, pode navegar para esta zona. Se ativar esta definição de política, Web sites de zonas com menos privilégios pode abrir novas janelas no ou navegue para esta zona. A zona de segurança serão executados sem a camada adicional de segurança que é fornecida pela proteção da funcionalidade de segurança de elevação de zona. Se selecionar a linha de comandos na caixa de lista pendente, é emitido um aviso ao utilizador que potencialmente perigoso navegação está prestes a ocorrer. Se desativar esta definição de política, é impedida a navegação possivelmente prejudicial. A funcionalidade de segurança do Internet Explorer está nesta zona conforme definido pela proteção de controlo de recursos de elevação de zona. Se não configurar esta definição de política, são impedidas as navegações possivelmente prejudiciais. A funcionalidade de segurança do Internet Explorer está nesta zona conforme definido pela proteção de controlo de recursos de elevação de zona.
@@ -411,7 +411,7 @@ Para obter mais informações, consulte [CSP de política - InternetExplorer](ht
 - **Permitir que a zona de internet de Internet Explorer apenas aprovados domínios para usar controles do ActiveX tdc**  
   Esta definição de política controla se o utilizador pode executar o controle TDC ActiveX nos Web sites. Se ativar esta definição de política, o controle TDC ActiveX não será executado de Web sites nesta zona. Se desativar esta definição de política, o controle de TDC Active X será executado de todos os sites desta zona.
   
-  **Predefinido**: Ativado 
+  **Predefinido**: Enabled 
   
 - **Script de zona do Internet Explorer restrito iniciadas pelo windows**  
   Esta definição de política permite-lhe gerir restrições para janelas de pop-up iniciadas por script e do windows que incluem as barras de título e o estado. Se ativar esta definição de política, não se aplicam a segurança de restrições do Windows nesta zona. A zona de segurança é executado sem a camada de segurança fornecida por esta funcionalidade adicional. Se desativar esta definição de política, não é possível executar ações prejudiciais possíveis contidas em janelas de pop-up iniciadas por script e do windows que incluem as barras de título e o estado. Esta funcionalidade de segurança do Internet Explorer é nesta zona conforme ditado pela definição para o processo de controlo do recurso incluído num script restrições de segurança do Windows. Se não configurar esta definição de política, não é possível executar ações prejudiciais possíveis contidas em janelas de pop-up iniciadas por script e do windows que incluem as barras de título e o estado. Esta funcionalidade de segurança do Internet Explorer é nesta zona conforme ditado pela definição para o processo de controlo do recurso incluído num script restrições de segurança do Windows.
@@ -426,7 +426,7 @@ Para obter mais informações, consulte [CSP de política - InternetExplorer](ht
 - **Internet Explorer desativar processos no modo protegido avançado**  
   Esta definição de política determina se Internet Explorer 11 utiliza os processos de 64 bits (para maior segurança) ou processos de 32 bits (para maior compatibilidade) quando em execução no modo protegido avançado em versões de 64 bits do Windows. Importante: Alguns controles ActiveX e barras de ferramentas poderão não estar disponíveis quando são utilizados os processos de 64 bits. Se ativar esta definição de política, o Internet Explorer 11 usará os processos de separador de 64 bits quando em execução no modo protegido avançado em versões de 64 bits do Windows. Se desativar esta definição de política, o Internet Explorer 11 usará os processos de separador de 32 bits quando em execução no modo protegido avançado em versões de 64 bits do Windows. Se não configurar esta definição de política, os utilizadores podem ativar esta funcionalidade ativada ou desativada com as definições do Internet Explorer. Esta funcionalidade está desativada por predefinição.
   
-  **Predefinido**: Ativado 
+  **Predefinido**: Enabled 
   
 - **Internet Explorer ignorar erros de certificado**  
   Esta definição de política impede que o utilizador a ignorar erros de certificado de Secure Sockets Layer/Transport Layer Security (SSL/TLS) que interrompem a navegação (como "expirada", "revogado" ou erros de "erro de correspondência do nome") no Internet Explorer. Se ativar esta definição de política, o utilizador não é possível continuar a navegar. Se desabilitar ou não configura esta definição de política, o utilizador pode optar por ignorar erros de certificado e continuar a navegar.
@@ -441,7 +441,7 @@ Para obter mais informações, consulte [CSP de política - InternetExplorer](ht
 - **Downloads de prompt automática do Internet Explorer internet zona para o ficheiro**  
   Esta definição de política determina se é pedido aos utilizadores para as transferências de ficheiros não iniciada pelo utilizador. Independentemente desta definição, os utilizadores irão receber caixas de diálogo de download de arquivo para downloads iniciada pelo utilizador. Se ativar esta definição, os utilizadores irão receber uma caixa de diálogo de download de arquivo para tentativas de transferência automática. Se desabilitar ou não configura esta definição, as transferências de ficheiros que não são iniciados pelo usuário são bloqueadas e os utilizadores verão a barra de notificação, em vez da caixa de diálogo de download do arquivo. Os utilizadores podem, em seguida, clicar a barra de notificação para permitir que o pedido de transferência de ficheiros.
   
-  **Predefinido**: Ativado  
+  **Predefinido**: Enabled  
   
 - **Aviso de segurança da zona para ficheiros potencialmente não seguros de restritos do Internet Explorer**  
   Esta definição de política controla se a mensagem de "Abrir ficheiro – Aviso de segurança" é apresentada quando o utilizador tenta abrir arquivos executáveis ou de outros ficheiros potencialmente não seguros (a partir de uma partilha de ficheiros à intranet com o Explorador de ficheiros, por exemplo). Se ativar esta definição de política e defina a caixa de lista pendente para ativar, abrir estes ficheiros sem um aviso de segurança. Se definir a caixa de lista pendente à linha de comandos, é apresentado um aviso de segurança antes de abrir os ficheiros. Se desativar esta definição de política, estes ficheiros não abrem. Se não configurar esta definição de política, o utilizador pode configurar como o computador lida com esses arquivos. Por predefinição, estes ficheiros estão bloqueados na zona restrita, ativada em zonas da Intranet e o computador Local e definidos para solicitar nas zonas Internet e confiáveis da.
@@ -451,7 +451,7 @@ Para obter mais informações, consulte [CSP de política - InternetExplorer](ht
 - **Zona de internet do Internet Explorer em várias filtro de scripts do site**  
   Esta política controla se o filtro de scripts de sites (XSS) irá detetar e prevenir injeções de script entre sites em Web sites nesta zona. Se ativar esta definição de política, o Filtro XSS está ativado para os sites desta zona e o Filtro XSS tenta bloquear injeções de script entre sites. Se desativar esta definição de política, o Filtro XSS está desativado para sites desta zona e o Internet Explorer permite injeções de script entre sites.
   
-  **Predefinido**: Ativado 
+  **Predefinido**: Enabled 
   
 - **Contingência de Internet Explorer para SSL3**  
   Esta definição de política permite-lhe bloquear uma contingência insegura para SSL 3.0. Quando esta política está ativada, Internet Explorer irá tentar ligar a sites usando o SSL 3.0 ou abaixo quando falha TLS 1.0 ou superior. Recomendamos que não permitir contingência insegura para evitar um ataque man-in-the-middle. Esta política não afeta os protocolos de segurança estão ativados. Se desativar esta política, são utilizadas as predefinições do sistema.
@@ -461,7 +461,7 @@ Para obter mais informações, consulte [CSP de política - InternetExplorer](ht
 - **Bloqueado ecrã inteligentes de zona de internet do Internet Explorer**  
   Esta definição de política de controlos se o Filtro SmartScreen verifica páginas nesta zona relativamente a conteúdo malicioso. Se ativar esta definição de política, o Filtro SmartScreen verifica páginas nesta zona relativamente a conteúdo malicioso. Se desativar esta definição de política, o Filtro SmartScreen não faça análises páginas nesta zona relativamente a conteúdo malicioso. Se não configurar esta definição de política, o usuário pode escolher se o Filtro SmartScreen analisa páginas nesta zona relativamente a conteúdo malicioso. Nota: No Internet Explorer 7, esta definição de política controla se o filtro de Phishing analisa páginas nesta zona relativamente a conteúdo malicioso.
   
-  **Predefinido**: Ativado 
+  **Predefinido**: Enabled 
   
 - **Internet Explorer restrito a aplicativos de inicialização de zona e arquivos num iFrame**  
   Esta definição de política permite-lhe gerir se os aplicativos podem ser executados e arquivos podem ser transferidos a partir de uma referência IFRAME no HTML das páginas nesta zona. Se ativar esta definição de política, os utilizadores podem executar aplicações e transferir os ficheiros do IFRAMEs nas páginas nesta zona sem intervenção do utilizador. Se selecionar a linha de comandos na caixa de lista pendente, os utilizadores são consultados para escolher se pretende executar aplicações e transferir os ficheiros do IFRAMEs nas páginas nesta zona. Se desativar esta definição de política, os utilizadores são impedidos de execução de aplicativos e o download de arquivos de IFRAMEs nas páginas nesta zona. Se não configurar esta definição de política, os utilizadores são impedidos de execução de aplicativos e o download de arquivos de IFRAMEs nas páginas nesta zona.
@@ -481,7 +481,7 @@ Para obter mais informações, consulte [CSP de política - InternetExplorer](ht
 - **Internet Explorer processa a manipulação do MIME consistente**  
   Internet Explorer contém aos comportamentos binários dinâmicos: os componentes que encapsulam a funcionalidade específica para os elementos HTML ao qual estão anexadas. Esta definição de política de controlos se a definição de restrição de segurança de comportamento binário é impedida ou não permitida. Se ativar esta definição de política, são impedidos aos comportamentos binários para os processos de Explorador de ficheiros e o Internet Explorer. Se desativar esta definição de política, aos comportamentos binários são permitidos para os processos de Explorador de ficheiros e o Internet Explorer. Se não configurar esta definição de política, são impedidos aos comportamentos binários para os processos de Explorador de ficheiros e o Internet Explorer.
   
-  **Predefinido**: Ativado  
+  **Predefinido**: Enabled  
   
 - **Permissões de java de zona do Internet Explorer restrito**  
   Esta definição de política permite-lhe gerir permissões para miniaplicativos Java. Se ativar esta definição de política, pode escolher as opções da caixa de lista pendente. Personalizadas, para controlar as definições de permissões individualmente. Segurança baixa permite miniaplicativos executar todas as operações. Segurança média permite miniaplicativos executar em sua área de segurança (uma área na memória fora do que o programa não é possível fazer chamadas), além de recursos, como o espaço scratch (uma área de armazenamento seguro e fiável no computador cliente) e o ficheiro controlada pelo utilizador e/s. Segurança alta permite miniaplicativos executar em sua área de segurança. Desative o Java para impedir que qualquer miniaplicativos em execução. Se desativar esta definição de política, não é possível executar miniaplicativos Java. Se não configurar esta definição de política, miniaplicativos Java estão desativados.
@@ -502,7 +502,7 @@ Para obter mais informações, consulte [CSP de política - InternetExplorer](ht
 - **Restrições de segurança de janela com script de processos do Internet Explorer**  
   Internet Explorer permite que os scripts por meio de programação abrir, redimensionar e reposicionar windows de vários tipos. A funcionalidade de segurança de restrições de janela restringe janelas pop-ups e proíbe scripts do windows na qual as barras de título e o estado não são visíveis para o utilizador ou oculte o título dos outros Windows e as barras de estado de exibição. Se ativar esta definição de política, com scripts do windows são restrito para todos os processos. Se desabilitar ou não configura esta definição de política, com scripts do windows não são restrito.
   
-  **Predefinido**: Ativado   
+  **Predefinido**: Enabled   
   
 - **Zona restrita do Internet Explorer executar Active X controlos e plug-ins**  
   Esta definição de política permite-lhe gerir se os controles ActiveX e plug-ins pode executar em páginas da zona especificada. Se ativar esta definição de política, controlos e plug-ins podem ser executados sem intervenção do utilizador. Se tiver selecionado a linha de comandos na caixa de lista pendente, os usuários são mais freqüentes para escolher se pretende permitir que os controles ou plug-in para ser executado. Se desativar esta definição de política, controlos e plug-ins são impedidos de execução. Se não configurar esta definição de política, controlos e plug-ins são impedidos de execução.
@@ -533,7 +533,7 @@ Para obter mais informações, consulte [CSP de política - InternetExplorer](ht
 - **Revogação de certificados de servidor de verificação do Internet Explorer**  
   Esta definição de política permite-lhe gerir se o Internet Explorer irá verificar o estado de revogação de certificados dos servidores. Os certificados são revogados quando forem comprometidos ou já não são válidas e esta opção protege os usuários de submeter dados confidenciais a um site que pode ser fraudulentos ou não segura. Se ativar esta definição de política, Internet Explorer irá verificar se os certificados de servidor tiverem sido revogados. Se desativar esta definição de política, o Internet Explorer não verificar os certificados de servidor para ver se eles foram revogados. Se não configurar esta definição de política, o Internet Explorer não verificar os certificados de servidor para ver se eles foram revogados.
   
-  **Predefinido**: Ativado 
+  **Predefinido**: Enabled 
   
 - **Zona de internet do Internet Explorer menos sites com privilégios**  
   Esta definição de política permite-lhe gerir se sites da Web de zonas com menos privilégios, tais como Sites restritos, pode navegar para esta zona. Se ativar esta definição de política, Web sites de zonas com menos privilégios pode abrir novas janelas no ou navegue para esta zona. A zona de segurança serão executados sem a camada adicional de segurança que é fornecida pela proteção da funcionalidade de segurança de elevação de zona. Se selecionar a linha de comandos na caixa de lista pendente, é emitido um aviso ao utilizador que potencialmente perigoso navegação está prestes a ocorrer. Se desativar esta definição de política, são impedidas as navegações possivelmente prejudiciais. A funcionalidade de segurança do Internet Explorer está nesta zona conforme definido pela proteção de controlo de recursos de elevação de zona. Se não configurar esta definição de política, Web sites de zonas com menos privilégios pode abrir novas janelas no ou navegue para esta zona.
@@ -553,7 +553,7 @@ Para obter mais informações, consulte [CSP de política - InternetExplorer](ht
 - **Impedir o Internet Explorer por instalação de utilizador de controles de Active X**  
   Esta definição de política permite-lhe impedir a instalação de controles ActiveX numa base por utilizador. Se ativar esta definição de política, os controles ActiveX não podem ser instalados numa base por utilizador. Se desabilitar ou não configura esta definição de política, os controles ActiveX podem ser instalados numa base por utilizador.
   
-  **Predefinido**: Ativado  
+  **Predefinido**: Enabled  
   
 - **Impedir o Internet Explorer gerir o Filtro SmartScreen**  
   Esta definição de política impede que o utilizador gira o Filtro SmartScreen, que avisa o usuário se o Web site que visitar é conhecido por fraudulentas tentativas recolher informações pessoais por meio de "phishing", ou que é conhecido por hospedar malware. Se ativar esta definição de política, não é pedido ao utilizador para o Filtro SmartScreen. Todos os endereços de Web site que não estão nos filtros permitem que lista são automaticamente enviados à Microsoft sem pedir intervenção do utilizador. Se desabilitar ou não configura esta definição de política, é pedido ao utilizador que decida se pretende ativar o Filtro SmartScreen durante a experiência de primeira execução.
@@ -563,7 +563,7 @@ Para obter mais informações, consulte [CSP de política - InternetExplorer](ht
 - **Internet Explorer processa a funcionalidade de segurança de farejamento MIME**  
   Esta definição de política determina se a detecção de MIME do Internet Explorer irá impedir que a promoção de um ficheiro de um tipo para um tipo de ficheiro mais perigoso. Se ativar esta definição de política, a detecção de MIME nunca promover um ficheiro de um tipo para um tipo de ficheiro mais perigoso. Se desativar esta definição de política, os processos do Internet Explorer permitirá uma pesquisa MIME promover um ficheiro de um tipo para um tipo de ficheiro mais perigoso. Se não configurar esta definição de política, a detecção de MIME nunca promover um ficheiro de um tipo para um tipo de ficheiro mais perigoso.
   
-  **Predefinido**: Ativado  
+  **Predefinido**: Enabled  
   
 - **Transferência de zona restritos do Internet Explorer assinado controles Active X**  
   Esta definição de política permite-lhe gerir se os utilizadores podem transferir os controles ActiveX assinados de uma página na zona. Se ativar esta política, os utilizadores podem transferir assinados controles sem intervenção do utilizador. Se selecionar a linha de comandos na caixa de lista pendente, os utilizadores são consultados se pretende transferir controles assinados pelos publicadores que não são confiáveis. Código assinado por fabricantes fidedignos silenciosamente é transferido. Se desativar a definição de política, não é possível transferir controles assinados. Se não configurar esta definição de política, os utilizadores são consultados se pretende transferir controles assinados pelos publicadores que não são confiáveis. Código assinado por fabricantes fidedignos silenciosamente é transferido.
@@ -586,7 +586,7 @@ Para obter mais informações, consulte [CSP de política - InternetExplorer](ht
 - **Internet Explorer, permitir que a zona restritas apenas aprovados domínios usar controles de Active X tdc**  
   Esta definição de política controla se o utilizador pode executar o controle TDC ActiveX nos Web sites. Se ativar esta definição de política, o controle TDC ActiveX não será executado de Web sites nesta zona. Se desativar esta definição de política, o controle de TDC Active X será executado de todos os sites desta zona.
   
-  **Predefinido**: Ativado  
+  **Predefinido**: Enabled  
   
 - **Zona de confiança do Internet Explorer não são executados antimalware controles Active X**  
   Esta definição de política determina se o Internet Explorer executa programas antimalware controles ActiveX, para verificar se o que estão seguras carregar em páginas. Se ativar esta definição de política, o Internet Explorer não verifique com o seu programa de antimalware para ver se é segura criar uma instância do controle ActiveX. Se desativar esta definição de política, o Internet Explorer verifica sempre com o seu programa de antimalware para ver se é segura criar uma instância do controle ActiveX. Se não configurar esta definição de política, o Internet Explorer verifica sempre com o seu programa de antimalware para ver se é segura criar uma instância do controle ActiveX. Os utilizadores podem ativar esse comportamento ou desativar, utilizando as definições de segurança do Internet Explorer.
@@ -610,7 +610,7 @@ Para obter mais informações, consulte [CSP de política - InternetExplorer](ht
 - **Barra de notificação de processos do Internet Explorer**  
   Esta definição de política permite-lhe gerir se a barra de notificação é apresentada para processos do Internet Explorer, quando instala ficheiros ou de código é restrita. Por predefinição, a barra de notificação é apresentada para processos do Internet Explorer. Se ativar esta definição de política, apresenta a barra de notificação para os processos do Internet Explorer. Se desativar esta definição de política, a barra de notificação não ser apresentada para processos do Internet Explorer. Se não configurar esta definição de política, não exibe a barra de notificação para processos do Internet Explorer.
   
-  **Predefinido**: Ativado  
+  **Predefinido**: Enabled  
   
 - **Transferência de zona de internet do Internet Explorer assinado controles ActiveX**  
   Esta definição de política permite-lhe gerir se os utilizadores podem transferir os controles ActiveX assinados de uma página na zona. Se ativar esta política, os utilizadores podem transferir assinados controles sem intervenção do utilizador. Se selecionar a linha de comandos na caixa de lista pendente, os utilizadores são consultados se pretende transferir controles assinados pelos publicadores que não são confiáveis. Código assinado por fabricantes fidedignos silenciosamente é transferido. Se desativar a definição de política, não é possível transferir controles assinados. Se não configurar esta definição de política, os utilizadores são consultados se pretende transferir controles assinados pelos publicadores que não são confiáveis. Código assinado por fabricantes fidedignos silenciosamente é transferido.
@@ -620,12 +620,12 @@ Para obter mais informações, consulte [CSP de política - InternetExplorer](ht
 - **Ecrã de inteligente de zona restritas do Internet Explorer**  
   Esta definição de política de controlos se o Filtro SmartScreen verifica páginas nesta zona relativamente a conteúdo malicioso. Se ativar esta definição de política, o Filtro SmartScreen verifica páginas nesta zona relativamente a conteúdo malicioso. Se desativar esta definição de política, o Filtro SmartScreen não faça análises páginas nesta zona relativamente a conteúdo malicioso. Se não configurar esta definição de política, o usuário pode escolher se o Filtro SmartScreen analisa páginas nesta zona relativamente a conteúdo malicioso. Nota: No Internet Explorer 7, esta definição de política controla se o filtro de Phishing analisa páginas nesta zona relativamente a conteúdo malicioso.
   
-  **Predefinido**: Ativado  
+  **Predefinido**: Enabled  
   
 - **Internet Explorer remover executar este botão de tempo para controles de Active X desatualizados**  
   Esta definição de política permite-lhe impedir que os utilizadores visualizem o botão "Executar agora" e a execução de controles específicos de ActiveX desatualizados no Internet Explorer. Se ativar esta definição de política, os utilizadores não verão o botão "Executar agora" na mensagem de aviso que aparece quando o Internet Explorer bloqueia um controle ActiveX desatualizado. Se desabilitar ou não configura esta definição de política, os utilizadores verão o botão "Executar agora" na mensagem de aviso que aparece quando o Internet Explorer bloqueia um controle ActiveX desatualizado. Clicar neste botão permite que o utilizador executar uma vez o controle ActiveX desatualizado. Para obter mais informações, consulte "Desatualizado os controles ActiveX" na Biblioteca TechNet do Internet Explorer.
   
-  **Predefinido**: Ativado 
+  **Predefinido**: Enabled 
   
 - **Aplicativos de inicialização de zona de internet do Internet Explorer e arquivos num iframe**  
   Esta definição de política permite-lhe gerir se os aplicativos podem ser executados e arquivos podem ser transferidos a partir de uma referência IFRAME no HTML das páginas nesta zona. Se ativar esta definição de política, os utilizadores podem executar aplicações e transferir os ficheiros do IFRAMEs nas páginas nesta zona sem intervenção do utilizador. Se selecionar a linha de comandos na caixa de lista pendente, os utilizadores são consultados para escolher se pretende executar aplicações e transferir os ficheiros do IFRAMEs nas páginas nesta zona. Se desativar esta definição de política, os utilizadores são impedidos de execução de aplicativos e o download de arquivos de IFRAMEs nas páginas nesta zona. Se não configurar esta definição de política, os utilizadores são consultados para escolher se pretende executar aplicações e transferir os ficheiros do IFRAMEs nas páginas nesta zona
@@ -640,7 +640,7 @@ Para obter mais informações, consulte [CSP de política - InternetExplorer](ht
 - **Ecrã inteligente de zona de internet do Internet Explorer**  
   Esta definição de política de controlos se o Filtro SmartScreen verifica páginas nesta zona relativamente a conteúdo malicioso. Se ativar esta definição de política, o Filtro SmartScreen verifica páginas nesta zona relativamente a conteúdo malicioso. Se desativar esta definição de política, o Filtro SmartScreen não faça análises páginas nesta zona relativamente a conteúdo malicioso. Se não configurar esta definição de política, o usuário pode escolher se o Filtro SmartScreen analisa páginas nesta zona relativamente a conteúdo malicioso. Nota: No Internet Explorer 7, esta definição de política controla se o filtro de Phishing analisa páginas nesta zona relativamente a conteúdo malicioso.
   
-  **Predefinido**: Ativado  
+  **Predefinido**: Enabled  
   
 - **Internet Explorer é bloqueado por permissões de java da zona de confiança**  
   Esta definição de política permite-lhe gerir permissões para miniaplicativos Java. Se ativar esta definição de política, pode escolher as opções da caixa de lista pendente. Personalizadas, para controlar as definições de permissões individualmente. Segurança baixa permite miniaplicativos executar todas as operações. Segurança média permite miniaplicativos executar em sua área de segurança (uma área na memória fora do que o programa não é possível fazer chamadas), além de recursos, como o espaço scratch (uma área de armazenamento seguro e fiável no computador cliente) e o ficheiro controlada pelo utilizador e/s. Segurança alta permite miniaplicativos executar em sua área de segurança. Desative o Java para impedir que qualquer miniaplicativos em execução. Se desativar esta definição de política, não é possível executar miniaplicativos Java. Se não configurar esta definição de política, miniaplicativos Java estão desativados.
@@ -650,7 +650,7 @@ Para obter mais informações, consulte [CSP de política - InternetExplorer](ht
 - **Internet Explorer verificar assinaturas em programas baixados**  
   Esta definição de política permite-lhe gerir se o Internet Explorer verifica a existência de assinaturas digitais (que identifica o publicador de software assinado e verifica se ainda não foram modificado ou adulterado) em computadores de usuários antes de transferir os programas executáveis. Se ativar esta definição de política, o Internet Explorer verificar as assinaturas digitais de programas executáveis e apresentar as suas identidades antes de transferi-los para computadores de usuários. Se desativar esta definição de política, o Internet Explorer não verificar as assinaturas digitais de programas executáveis ou visualizar suas identidades antes de transferi-los para computadores de usuários. Se não configurar esta política, o Internet Explorer não verificar as assinaturas digitais de programas executáveis ou visualizar suas identidades antes de transferi-los para computadores de usuários.
   
-  **Predefinido**: Ativado  
+  **Predefinido**: Enabled  
   
 - **Internet Explorer restrito a zona de script de controles de navegador da web**  
   Esta definição de política determina se uma página pode controlar o embedded WebBrowser controles por meio de script. Se ativar esta definição de política, é permitido o acesso de script para o controle WebBrowser. Se desativar esta definição de política, não é permitido o acesso de script para o controle WebBrowser. Se não configurar esta definição de política, o utilizador pode ativar ou desativar o acesso de script para o controle WebBrowser. Por predefinição, o acesso de script para o controle WebBrowser é permitido apenas no computador Local e zonas da Intranet.
@@ -660,7 +660,7 @@ Para obter mais informações, consulte [CSP de política - InternetExplorer](ht
 - **Filtro de scripts do site em várias de zona restrita do Internet Explorer**  
   Esta política controla se o filtro de scripts de sites (XSS) irá detetar e prevenir injeções de script entre sites em Web sites nesta zona. Se ativar esta definição de política, o Filtro XSS está ativado para os sites desta zona e o Filtro XSS tenta bloquear injeções de script entre sites. Se desativar esta definição de política, o Filtro XSS está desativado para sites desta zona e o Internet Explorer permite injeções de script entre sites.
   
-  **Predefinido**: Ativado  
+  **Predefinido**: Enabled  
   
 - **Zona restrita do Internet Explorer binária e comportamentos de script**  
   Esta definição de política permite-lhe gerir comportamentos de binários e de script dinâmicos: os componentes que encapsulam a funcionalidade específica para elementos HTML para o qual foram anexados. Se ativar esta definição de política, comportamentos de binários e de script estão disponíveis. Se selecionar administrador aprovado na caixa de lista pendente, apenas os comportamentos listados nos comportamentos de aprovação de administrador em diretiva de restrição de segurança de comportamentos binários estão disponíveis. Se desativar esta definição de política, comportamentos de binários e de script não estão disponíveis, a menos que os aplicativos implementaram um Gestor de segurança personalizada. Se não configurar esta definição de política, comportamentos de binários e de script não estão disponíveis, a menos que os aplicativos implementaram um Gestor de segurança personalizada.
@@ -670,7 +670,7 @@ Para obter mais informações, consulte [CSP de política - InternetExplorer](ht
 - **Verificação de definições de segurança do Internet Explorer**  
   Esta definição de política desativa a funcionalidade de verificação de definições de segurança, que verifica as definições de segurança do Internet Explorer para determinar quando as definições do Internet Explorer de colocar em risco. Se ativar esta definição de política, a funcionalidade está desativada. Se desabilitar ou não configura esta definição de política, a funcionalidade está ativada.
   
-  **Predefinido**: Ativado  
+  **Predefinido**: Enabled  
   
 - **Aviso de segurança do Internet Explorer internet zona para ficheiros potencialmente não seguros**  
   Esta definição de política controla se a mensagem de "Abrir ficheiro – Aviso de segurança" é apresentada quando o utilizador tenta abrir arquivos executáveis ou de outros ficheiros potencialmente não seguros (a partir de uma partilha de ficheiros à intranet com o Explorador de ficheiros, por exemplo). Se ativar esta definição de política e defina a caixa de lista pendente para ativar, abrir estes ficheiros sem um aviso de segurança. Se definir a caixa de lista pendente à linha de comandos, é apresentado um aviso de segurança antes de abrir os ficheiros. Se desativar esta definição de política, estes ficheiros não abrem. Se não configurar esta definição de política, o utilizador pode configurar como o computador lida com esses arquivos. Por predefinição, estes ficheiros estão bloqueados na zona restrita, ativada em zonas da Intranet e o computador Local e definidos para solicitar nas zonas Internet e confiáveis da.
@@ -685,7 +685,7 @@ Para obter mais informações, consulte [CSP de política - InternetExplorer](ht
 - **Controles do Internet Explorer bloquear desatualizado Active X**  </br>
   Esta definição de política determina se os blocos do Internet Explorer específicos desatualizados controles ActiveX. Os controles ActiveX desatualizados nunca são bloqueados na zona de Intranet. Se ativar esta definição de política, Internet Explorer para bloquear os controles ActiveX desatualizados. Se desabilitar ou não configura esta definição de política, o Internet Explorer continua a bloquear os controles ActiveX desatualizados específicos. Para obter mais informações, consulte "Desatualizado os controles ActiveX" na Biblioteca TechNet do Internet Explorer.
   
-  **Predefinido**: Ativado  
+  **Predefinido**: Enabled  
   
 - **Bloqueador de pop-up de zona do Internet Explorer restrito**  
   Esta definição de política permite-lhe gerir se indesejados janelas de pop-up aparecem. Janelas de pop-up que foram abertas quando o utilizador final clica num link não são bloqueadas. Se ativar esta definição de política, mais janelas de pop-up indesejadas são impedidas de aparecer. Se desativar esta definição de política, janelas pop-up não são impedidas de aparecer. Se não configurar esta definição de política, mais janelas de pop-up indesejadas são impedidas de aparecer.
@@ -695,7 +695,7 @@ Para obter mais informações, consulte [CSP de política - InternetExplorer](ht
 - **Restrição de segurança de protocolo do Internet Explorer processos MK**  
   A definição de política de restrição de segurança do protocolo MK reduz a área de superfície de ataque ao impedir que o protocolo MK. Recursos alojados no protocolo MK irão falhar. Se ativar esta definição de política, o protocolo MK é impedido de Explorador de ficheiros e o Internet Explorer e recursos alojados no protocolo MK irão falhar. Se desativar esta definição de política, as aplicações podem utilizar o API ao protocolo MK. Recursos alojados no protocolo MK irão funcionar para os processos de Explorador de ficheiros e o Internet Explorer. Se não configurar esta definição de política, o protocolo MK é impedido de Explorador de ficheiros e o Internet Explorer e recursos alojados no protocolo MK irão falhar.
   
-  **Predefinido**: Ativado  
+  **Predefinido**: Enabled  
   
 - **Permissões de java de zona fidedignos do Internet Explorer**  </br>
   Esta definição de política permite-lhe gerir permissões para miniaplicativos Java. Se ativar esta definição de política, pode escolher as opções da caixa de lista pendente. Personalizadas, para controlar as definições de permissões individualmente. Segurança baixa permite miniaplicativos executar todas as operações. Segurança média permite miniaplicativos executar em sua área de segurança (uma área na memória fora do que o programa não é possível fazer chamadas), além de recursos, como o espaço scratch (uma área de armazenamento seguro e fiável no computador cliente) e o ficheiro controlada pelo utilizador e/s. Segurança alta permite miniaplicativos executar em sua área de segurança. Desative o Java para impedir que qualquer miniaplicativos em execução. Se desativar esta definição de política, não é possível executar miniaplicativos Java. Se não configurar esta definição de política, a permissão esteja definida para baixa segurança.
@@ -715,7 +715,7 @@ Para obter mais informações, consulte [CSP de política - InternetExplorer](ht
 - **Permitir que a zona de internet de Internet Explorer apenas aprovados domínios para usar controles ActiveX**  </br>
   Esta definição de política controla se é pedido ao utilizador para permitir que os controles ActiveX ser executada em Web sites que não seja o site no qual instalado o controle ActiveX. Se ativar esta definição de política, é pedido ao utilizador antes de controles ActiveX podem ser executados de Web sites nesta zona. O utilizador pode optar por permitir que o controle ser executada a partir do site atual ou de todos os sites. Se desativar esta definição de política, o utilizador não vê a linha de comandos da ActiveX por site e controles ActiveX podem ser executados de todos os sites desta zona.
   
-  **Predefinido**: Ativado  
+  **Predefinido**: Enabled  
   
 - **Internet Explorer incluem todos os caminhos de rede**  
   Internet Explorer incluem todos os caminhos de rede
@@ -735,7 +735,7 @@ Para obter mais informações, consulte [CSP de política - InternetExplorer](ht
 - **Bloqueado SmartScreen zona restritos do Internet Explorer**  </br>
   Esta definição de política de controlos se o Filtro SmartScreen verifica páginas nesta zona relativamente a conteúdo malicioso. Se ativar esta definição de política, o Filtro SmartScreen verifica páginas nesta zona relativamente a conteúdo malicioso. Se desativar esta definição de política, o Filtro SmartScreen não faça análises páginas nesta zona relativamente a conteúdo malicioso. Se não configurar esta definição de política, o usuário pode escolher se o Filtro SmartScreen analisa páginas nesta zona relativamente a conteúdo malicioso. Nota: No Internet Explorer 7, esta definição de política controla se o filtro de Phishing analisa páginas nesta zona relativamente a conteúdo malicioso.
   
-  **Predefinido**: Ativado  
+  **Predefinido**: Enabled  
   
 - **Deteção de falhas do Internet Explorer**  
   Esta definição de política permite-lhe gerir a funcionalidade de deteção de falhas de gestão do suplemento. Se ativar esta definição de política, uma falha no Internet Explorer exibirão comportamento encontrado no Windows XP Professional Service Pack 1 e em versões anteriores, ou seja, para invocar o relatório de erros do Windows. Todas as definições de política para o relatório de erros do Windows continuam a aplicar. Se desabilitar ou não configura esta definição de política, a funcionalidade de deteção de falhas para a gestão de suplemento é funcional.
@@ -790,7 +790,7 @@ Para obter mais informações, consulte [CSP de política - InternetExplorer](ht
 - **Processos do Internet Explorer restringem a instalação do Active X**  </br>
   Esta definição de política permite que os aplicativos hospedando o controle de navegador da Web bloquear a pedir a confirmação automática de instalação do controle ActiveX. Se ativar esta definição de política, o controle do navegador da Web irá bloquear a pedir a confirmação automática da instalação de controle do ActiveX para todos os processos. Se desabilitar ou não configura esta definição de política, o controle de navegador da Web não bloqueará a pedir a confirmação automática da instalação de controle do ActiveX para todos os processos.
   
-  **Predefinido**: Ativado  
+  **Predefinido**: Enabled  
   
 - **Scriptlets de zona de internet do Internet Explorer** esta definição de política permite-lhe gerir se o utilizador pode executar scriptlets. Se ativar esta definição de política, o utilizador pode executar scriptlets. Se desativar esta definição de política, o utilizador não é possível executar scriptlets. Se não configurar esta definição de política, o utilizador pode ativar ou desativar scriptlets.
   
@@ -827,7 +827,7 @@ Para obter mais informações, consulte [CSP de política - InternetExplorer](ht
 - **As zonas de segurança do Internet Explorer utilizam apenas as definições de máquina**  
   Aplica-se de informações da zona de segurança para todos os utilizadores do mesmo computador. Uma zona de segurança é um grupo de Web sites com o mesmo nível de segurança. Se ativar esta política, as alterações que faz com que o utilizador a uma zona de segurança serão aplicada a todos os utilizadores do computador. Se desativar esta política ou não configurá-lo, os usuários do mesmo computador podem estabelecer suas próprias definições de zona de segurança. Utilize esta política para garantir que as definições de zona de segurança se aplicam de forma uniforme no mesmo computador e não variam de usuário a usuário. Além disso, consulte o "zonas de segurança: não permitir que os usuários alterem as políticas de" política.
   
-  **Predefinido**: Ativado  
+  **Predefinido**: Enabled  
   
 - **Internet Explorer é bloqueado por permissões de java de zona de computador local**  
   Esta definição de política permite-lhe gerir permissões para miniaplicativos Java. Se ativar esta definição de política, pode escolher as opções da caixa de lista pendente. Personalizadas, para controlar as definições de permissões individualmente. Segurança baixa permite miniaplicativos executar todas as operações. Segurança média permite miniaplicativos executar em sua área de segurança (uma área na memória fora do que o programa não é possível fazer chamadas), além de recursos, como o espaço scratch (uma área de armazenamento seguro e fiável no computador cliente) e o ficheiro controlada pelo utilizador e/s. Segurança alta permite miniaplicativos executar em sua área de segurança. Desative o Java para impedir que qualquer miniaplicativos em execução. Se desativar esta definição de política, não é possível executar miniaplicativos Java. Se não configurar esta definição de política, miniaplicativos Java estão desativados
@@ -861,12 +861,12 @@ Para obter mais informações, consulte [CSP de política - InternetExplorer](ht
 - **Internet Explorer utilizar o serviço do instalador do Active X**  </br>
   Esta definição de política permite-lhe especificar como os controles ActiveX são instalados. Se ativar esta definição de política, os controles ActiveX são instalados apenas se o ActiveX Installer Service está presente e não foi configurado para permitir a instalação de controles ActiveX. Se desabilitar ou não configura esta definição de política, os controles ActiveX, incluindo controlos por utilizador, são instalados através do processo de instalação padrão.
   
-  **Predefinido**: Ativado  
+  **Predefinido**: Enabled  
   
 - **Proteção contra elevação de zona de processos do Internet Explorer**  
   Internet Explorer coloca restrições em cada página da Web é aberto. As restrições são dependentes tanto a localização da página da Web (Internet, Intranet, zona de computador Local e assim por diante). Por exemplo, páginas da Web no computador local têm as restrições de segurança menor e encontram-se na zona de computador Local, fazer a segurança do computador Local zona principal alvo para que usuários mal-intencionados. Se ativar esta definição de política, qualquer zona pode ser protegida contra elevação de zona para todos os processos. Se desabilitar ou não configura esta definição de política, processos que não sejam o Internet Explorer ou aos listados na lista de processos recebem sem essa proteção.
   
-  **Predefinido**: Ativado  
+  **Predefinido**: Enabled  
   
 - **Os controles ActiveX não assinados de transferência de zona de internet do Internet Explorer**  </br>
   Esta definição de política permite-lhe gerir se os utilizadores podem transferir os controles ActiveX não assinados da zona. Esse código é potencialmente prejudicial, especialmente quando proveniente de uma zona não fidedigna. Se ativar esta definição de política, os utilizadores podem executar controles sem assinatura sem intervenção do utilizador. Se selecionar a linha de comandos na caixa de lista pendente, os utilizadores são consultados para escolher se pretende permitir que o controle não assinado executar. Se desativar esta definição de política, os utilizadores não é possível executar controles sem assinatura. Se não configurar esta definição de política, os utilizadores não é possível executar controles sem assinatura.
@@ -889,12 +889,12 @@ Para obter mais informações, consulte [CSP de política - InternetExplorer](ht
   
 - **Processos do Internet Explorer restringem a transferência de ficheiros**  </br> Esta definição de política permite que as aplicações que alojam o controle Web Browser bloquear a pedir a confirmação automática de downloads de arquivos que não são iniciada pelo utilizador. Se ativar esta definição de política, o controle do navegador da Web irá bloquear a pedir a confirmação automática de downloads de arquivos que não são iniciado para todos os processos de utilizador. Se desativar esta definição de política, o controle de navegador da Web não bloqueará a pedir a confirmação automática de downloads de arquivos que não são iniciado para todos os processos de utilizador.
   
-  **Predefinido**: Ativado  
+  **Predefinido**: Enabled  
   
 - **Internet Explorer, permitir que a zona restritas apenas aprovados domínios usar controles de Active X**  </br>
   Esta definição de política controla se é pedido ao utilizador para permitir que os controles ActiveX ser executada em Web sites que não seja o site no qual instalado o controle ActiveX. Se ativar esta definição de política, é pedido ao utilizador antes de controles ActiveX podem ser executados de Web sites nesta zona. O utilizador pode optar por permitir que o controle ser executada a partir do site atual ou de todos os sites. Se desativar esta definição de política, o utilizador não vê a linha de comandos da ActiveX por site e controles ActiveX podem ser executados de todos os sites desta zona.
   
-  **Predefinido**: Ativado  
+  **Predefinido**: Enabled  
   
 - **A inicializar de zona restrita do Internet Explorer e script que controla Active X não marcados como seguro**  
   Esta definição de política permite-lhe de gerenciar controles ActiveX não marcados como seguros. Se ativar esta definição de política, controles ActiveX executam, carregá-lo com parâmetros e com script sem definir a segurança de objeto para dados não confiáveis ou scripts. Esta definição não é recomendável, exceto para zonas administradas e seguras. Esta definição faz com que os controles confiável e seguros ser inicializado e programado, ignorar os controles de Script ActiveX marcados como seguro para a opção de criação de scripts. Se ativar esta definição de política e selecione a linha de comandos na caixa de lista pendente, os utilizadores são consultados se pretende permitir que o controle carregar com parâmetros ou com script. Se desativar esta definição de política, controles ActiveX que não não possível efetuar seguros não são carregados com parâmetros ou com script. Se não configurar esta definição de política, controles ActiveX que não não possível efetuar seguros não são carregados com parâmetros ou com script.
@@ -935,7 +935,7 @@ Para obter mais informações, consulte [CSP de política - InternetExplorer](ht
 - **Modo protegido do Internet Explorer avançada**  
   Modo protegido avançado proporciona proteção adicional contra sites mal-intencionados utilizando processos de 64 bits em versões de 64 bits do Windows. Para computadores que executam, pelo menos, Windows 8, o modo protegido avançado também limita os locais do Internet Explorer pode ler a partir do Registro e o sistema de ficheiros. Se ativar esta definição de política, o modo protegido avançado está ativado. Qualquer zona que tenha o modo protegido ativado irá utilizar o modo protegido avançado. Os utilizadores não será possível desativar o modo protegido avançado. Se desativar esta definição de política, o modo protegido avançado está desativado. Qualquer zona que tenha o modo protegido ativado irá utilizar a versão do modo protegido, introduzido no Internet Explorer 7 para Windows Vista. Se não configurar esta política, os utilizadores podem ativar ou desativar o modo protegido avançado no separador Avançadas da caixa de diálogo Opções da Internet.
   
-  **Predefinido**: Ativado  
+  **Predefinido**: Enabled  
   
 - **Internet Explorer ignore os avisos do SmartScreen**  
   Esta definição de política determina se o utilizador pode ignorar avisos do Filtro SmartScreen. O Filtro SmartScreen avisa o utilizador sobre ficheiros executáveis que usuários do Internet Explorer geralmente não transferirem a partir da Internet. Se ativar esta definição de política, os avisos do Filtro SmartScreen impedir o utilizador. Se desabilitar ou não configura esta definição de política, o utilizador pode ignorar avisos do Filtro SmartScreen.
@@ -1094,7 +1094,7 @@ Para obter mais informações, consulte [CSP de política - LocalPoliciesSecurit
 Para obter mais informações, consulte [CSP de política - MSSecurityGuide](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-mssecurityguide) na documentação do Windows.  
 
 - **Aplicar restrições de UAC para contas locais no início de sessão de rede**  
-  **Predefinido**: Ativado
+  **Predefinido**: Enabled
   
 - **Configuração de início do controlador de cliente do SMB v1**  
   **Predefinido**: Controlador desativado
@@ -1106,7 +1106,7 @@ Para obter mais informações, consulte [CSP de política - MSSecurityGuide](htt
   **Predefinido**: Desativado
   
 - **Manipulação de exceção estruturada substituir a proteção**  
-  **Predefinido**: Ativado
+  **Predefinido**: Enabled
   
 ## <a name="mss-legacy"></a>MSS legado  
 Para obter mais informações, consulte [CSP de política - MSSLegacy](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-msslegacy) na documentação do Windows.  
@@ -1115,7 +1115,7 @@ Para obter mais informações, consulte [CSP de política - MSSLegacy](https://d
   **Predefinido**: Proteção mais alta  
   
 - **Rede ignorar pedidos de versão de nome do NetBIOS, exceto de servidores WINS**  
-  **Predefinido**: Ativado
+  **Predefinido**: Enabled
   
 - **Nível de proteção de encaminhamento do IPv6 origem de rede**  
   **Predefinido**: Proteção mais alta
@@ -1129,7 +1129,7 @@ Para obter mais informações, consulte [CSP de política - Power](https://docs.
 - **Exigir palavra-passe na reativação enquanto ligado**  
   Esta definição de política especifica se é pedido ao utilizador uma palavra-passe quando o sistema sai do modo de suspensão. Se ativar ou não configurar esta definição de política, é pedido ao utilizador uma palavra-passe quando o sistema sai do modo de suspensão. Se desativar esta definição de política, o utilizador não é solicitado uma palavra-passe quando o sistema sai do modo de suspensão.
   
-  **Predefinido**: Ativado
+  **Predefinido**: Enabled
   
 - **Estados de espera durante a suspensão enquanto com bateria**  
   Esta definição de política gere se o Windows podem utilizar Estados de espera ao colocar o computador num Estado de suspensão. Se ativar ou não configurar esta definição de política, o Windows utiliza os Estados de espera para colocar o computador num Estado de suspensão. Se desativar esta definição de política, os Estados de espera (S1-S3) não são permitidos.
@@ -1144,7 +1144,7 @@ Para obter mais informações, consulte [CSP de política - Power](https://docs.
 - **Exigir palavra-passe na reativação enquanto com bateria**  
   Esta definição de política especifica se é pedido ao utilizador uma palavra-passe quando o sistema sai do modo de suspensão. Se ativar ou não configurar esta definição de política, é pedido ao utilizador uma palavra-passe quando o sistema sai do modo de suspensão. Se desativar esta definição de política, o utilizador não é solicitado uma palavra-passe quando o sistema sai do modo de suspensão.
   
-  **Predefinido**: Ativado
+  **Predefinido**: Enabled
   
 ## <a name="remote-desktop-services"></a>Serviços de Ambiente de Trabalho Remoto  
 Para obter mais informações, consulte [CSP de política - RemoteDesktopServices](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-remotedesktopservices) na documentação do Windows.  
@@ -1152,22 +1152,22 @@ Para obter mais informações, consulte [CSP de política - RemoteDesktopService
 - **Bloquear a gravação de palavra-passe**  
   Controla se as palavras-passe podem ser guardadas neste computador de conexão de área de trabalho remoto. Se ativar esta definição da palavra-passe a guardar a caixa de seleção na conexão de área de trabalho remoto está desativada e os utilizadores não poderão guardar palavras-passe. Quando um utilizador abre um ficheiro RDP através da ligação de ambiente de trabalho remoto e salva suas configurações, são eliminados a qualquer palavra-passe que existia anteriormente no ficheiro RDP. Se desativar esta definição ou deixá-lo não configurado, o utilizador pode guardar palavras-passe através da ligação de ambiente de trabalho remoto.
   
-   **Predefinido**: Ativado
+   **Predefinido**: Enabled
   
 - **Proteger as comunicações de RPC**  
   Especifica se um servidor de anfitrião de sessões de ambiente de trabalho remoto requer comunicação RPC segura com todos os clientes ou permite a comunicação protegida. Pode utilizar esta definição para reforçar a segurança da comunicação RPC com clientes ao permitir que apenas autenticada e criptografada pedidos. Se o estado estiver definido como ativado, os serviços de ambiente de trabalho remoto aceita os pedidos de clientes RPC que oferecem suporte a solicitações seguras e não permite a comunicação segura com os clientes não fidedignos. Se o estado estiver definido como desativado, os serviços de ambiente de trabalho remoto sempre solicitações de segurança para todo o tráfego RPC. No entanto, a comunicação protegida é permitida para clientes RPC que não responderem ao pedido. Se o estado estiver definido como não configurada, é permitida a comunicação protegida. Nota: A interface RPC é utilizada para administrar e configurar o Remote Desktop Services.
   
-  **Predefinido**: Ativado
+  **Predefinido**: Enabled
   
 - **Redirecionamento de unidade de bloco**  
   Esta definição de política especifica se impede o mapeamento de unidades de cliente numa sessão de serviços de ambiente de trabalho remoto (redirecionamento de unidade). Por predefinição, um servidor de anfitrião de sessões de RD mapeia unidades de cliente automaticamente após a ligação. Unidades mapeadas aparecem na árvore de pastas de sessão no Explorador de ficheiros ou de computador no formato  *\<letradaunidade >* no  *\<computername >*. Pode utilizar esta definição de política para substituir esse comportamento. Se ativar esta definição de política, redirecionamento de unidade de cliente não é permitido em sessões de serviços de ambiente de trabalho remoto e redirecionamento de cópia de ficheiros de área de transferência não é permitido em computadores que executam o Windows Server 2003, Windows 8 e Windows XP. Se desativar esta definição de política, o redirecionamento de unidade de cliente é sempre permitido. Além disso, redirecionamento de cópia de ficheiros de área de transferência é sempre permitido se o redirecionamento de área de transferência é permitido. Se não configurar esta definição de política, redirecionamento de unidade de cliente e o redirecionamento de cópia de ficheiros de área de transferência não estão especificados no nível de diretiva de grupo.
   
-  **Predefinido**: Ativado
+  **Predefinido**: Enabled
   
 - **Pedido de palavra-passe após a ligação**  
   Esta definição de política especifica se os serviços de ambiente de trabalho remoto pede sempre o cliente para uma palavra-passe após a ligação. Pode utilizar esta definição para impor um pedido de palavra-passe para os usuários fazendo logon em serviços de ambiente de trabalho remoto, mesmo que eles já fornecidos a palavra-passe no cliente de conexão de área de trabalho remoto. Por predefinição, os serviços de ambiente de trabalho remoto permite que os usuários façam logon automaticamente ao introduzir uma palavra-passe no cliente de conexão de área de trabalho remoto. Se ativar esta definição de política, os utilizadores não podem automaticamente iniciar sessão para os serviços de ambiente de trabalho remoto, fornecendo as respetivas palavras-passe no cliente de conexão de área de trabalho remoto. eles for pedidos uma palavra-passe iniciar sessão. Se desativar esta definição de política, os usuários podem sempre fazem logon Remote Desktop Services automaticamente ao fornecer as respetivas palavras-passe no cliente de conexão de área de trabalho remoto. Se não configurar esta definição de política, o início de sessão automático não está especificado no nível de diretiva de grupo. 
   
-  **Predefinido**: Ativado
+  **Predefinido**: Enabled
   
 - **Nível de encriptação da ligação de cliente de serviços de ambiente de trabalho remoto**  
   Especifica se exige o uso de um nível de criptografia específicas para proteger as comunicações entre computadores cliente e servidores de anfitrião de sessões de RD durante a ligações de protocolo RDP (Remote Desktop). Esta política aplica-se apenas quando estiver a utilizar encriptação nativa do RDP. No entanto, a encriptação nativa de RDP (em oposição a encriptação SSL) não é recomendada. Esta política não se aplica a encriptação SSL. Se ativar esta definição de política, todas as comunicações entre clientes e servidores de anfitrião de sessões de RD durante ligações remotas tem de utilizar o método de encriptação especificado nesta definição. Por predefinição, o nível de encriptação é definido como alto. Os seguintes métodos de encriptação estão disponíveis:  
@@ -1185,7 +1185,7 @@ Para obter mais informações, consulte [CSP de política - RemoteManagement](ht
 - **Executar o bloco de armazenamento como credenciais**  
   Autenticação básica do cliente
   
-  **Predefinido**: Ativado
+  **Predefinido**: Enabled
   
 - **Autenticação básica**  
   Esta definição de política permite-lhe gerir se o serviço de gestão remota do Windows (WinRM) aceita autenticação básica de um cliente remoto. Se ativar esta definição de política, o serviço WinRM aceita autenticação básica de um cliente remoto. Se desabilitar ou não configura esta definição de política, o serviço WinRM não aceita a autenticação básica de um cliente remoto.
@@ -1195,7 +1195,7 @@ Para obter mais informações, consulte [CSP de política - RemoteManagement](ht
 - **Autenticação de texto implícita de cliente de bloco**  
   Esta definição de política permite-lhe gerir se o cliente de gestão remota do Windows (WinRM) utiliza a autenticação resumida. Se ativar esta definição de política, o cliente WinRM não usa a autenticação resumida. Se desabilitar ou não configura esta definição de política, o cliente WinRM utiliza autenticação resumida.
   
-  **Predefinido**: Ativado
+  **Predefinido**: Enabled
   
 - **Tráfego não criptografado**  
   Esta definição de política permite-lhe gerir se o serviço de gestão remota do Windows (WinRM) envia e recebe mensagens não encriptadas através da rede. Se ativar esta definição de política, o cliente WinRM envia e recebe mensagens não encriptadas através da rede. Se desabilitar ou não configura esta definição de política, o cliente WinRM envia ou recebe apenas as mensagens encriptadas através da rede.  
@@ -1290,7 +1290,7 @@ Para obter mais informações, consulte [CSP de política - WindowsConnectionMan
 
   Se esta definição de política não está configurada ou está desativada, os computadores têm permissão para ligar em simultâneo ao domínio e redes de domínio não.  
 
-  **Predefinido**: Ativado
+  **Predefinido**: Enabled
   
 ## <a name="windows-defender"></a>Windows Defender  
 Para obter mais informações, consulte [CSP de política - Defender](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender) na documentação do Windows.  
@@ -1414,7 +1414,7 @@ Para obter mais informações, consulte [CSP de política - WindowsInkWorkspace]
   - *Ativado* - funcionalidade da área de trabalho do Ink está ativada, mas o utilizador não é possível aceder à mesma acima do ecrã de bloqueio.
   - *Não configurado* - funcionalidade da área de trabalho do Ink está ativada e o utilizador pode utilizá-lo acima do ecrã de bloqueio.  
 
-  **Predefinido**: Ativado
+  **Predefinido**: Enabled
  
 ## <a name="windows-powershell"></a>Windows PowerShell  
 Para obter mais informações, consulte [CSP de política - WindowsPowerShell](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowspowershell) na documentação do Windows.  
@@ -1422,5 +1422,5 @@ Para obter mais informações, consulte [CSP de política - WindowsPowerShell](h
 - **Script de shell do shell de energia bloquear o Registro em log**  
   Esta definição de política ativa o registo de todas as entradas de script do PowerShell para o registo de eventos da Microsoft-Windows-PowerShell/Operational. Se ativar esta definição de política, o Windows PowerShell irá iniciar o processamento de comandos, blocos de script, funções e scripts - se invocada interativamente ou através da automatização. Se desativar esta definição de política, o registo de entrada de script do PowerShell está desativado. Se ativar o registo de invocação de bloco do Script, o PowerShell adicionalmente regista eventos quando a invocação de um comando, o bloco de script, a função ou o script inicia ou para. Ativar o registo de invocação gera um grande volume de registos de eventos. Nota: Esta definição de política existe na configuração do computador e configuração do usuário no Editor de diretiva de grupo. A definição de política de configuração do computador tem precedência sobre a definição de política de configuração do usuário.
   
-  **Predefinido**: Ativado
+  **Predefinido**: Enabled
  

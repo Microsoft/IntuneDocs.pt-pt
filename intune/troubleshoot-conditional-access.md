@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: e4c9f2ecfc6b3e153bf755f92f72953e5573af90
-ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59292408"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61513465"
 ---
 # <a name="troubleshoot-conditional-access"></a>Resolver problemas de acesso condicional
 

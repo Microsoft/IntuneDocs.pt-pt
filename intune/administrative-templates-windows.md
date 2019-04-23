@@ -17,11 +17,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 704abe5e03410b52d54c7729e1832e527ae4dfb6
-ms.sourcegitcommit: b0b1030017e741d92c508130447a8242d9ad7a51
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58342980"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61504313"
 ---
 # <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Utilizar modelos do Windows 10 para configurar as definições de política de grupo no Microsoft Intune
 

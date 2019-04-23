@@ -16,11 +16,11 @@ ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 3af9fbfa5bb1a9c6ebd9ebd0f20a55677c48b755
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57399052"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61509981"
 ---
 # <a name="intune-compliance-reports-for-updates"></a>Relatórios de conformidade do Intune para atualizações
 Ao utilizar o Intune para implementar a atualização do Windows para dispositivos Windows 10, veja os detalhes sobre a conformidade de atualização com o Intune ou uma solução gratuita chamada *compatibilidade da atualização*, que faz parte do Microsoft Operations Management Suite (OMS).

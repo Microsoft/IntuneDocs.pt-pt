@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.openlocfilehash: a18c579853b162024aaa93d5dad2bfd854d8c0d2
 ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 04/23/2019
-ms.locfileid: "60164061"
+ms.locfileid: "61512938"
 ---
 # <a name="monitor-bitlocker-and-device-encryption"></a>Monitorizar a encriptação BitLocker e o dispositivo  
 O Intune fornece uma localização centralizada para identificar o estado de encriptação dos seus dispositivos Windows 10 e ajuda-o a aceder a informações importantes para o BitLocker dos seus dispositivos, como encontrada no Azure Active Directory (Azure AD).  

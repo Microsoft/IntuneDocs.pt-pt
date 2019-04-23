@@ -19,11 +19,11 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 32dfb275e96ecf1d8c60f115881d7ceb0593a3b2
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55837444"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61505918"
 ---
 # <a name="what-happens-if-you-unenroll-your-android-device-from-intune"></a>O que acontece se anular a inscrição do seu dispositivo Android no Intune?
 

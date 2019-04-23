@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/24/2019
+ms.date: 04/19/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,60 +16,70 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0bd6e7f37a2e3b10371dead97e849834b39ba06f
-ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
+ms.openlocfilehash: dc82653355ae57830684270fc8f7b9f1f3ae2491
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58490574"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61507057"
 ---
-# <a name="monitor-the-security-baseline-and-profile-in-microsoft-intune"></a>Monitorizar a base de segurança e o perfil no Microsoft Intune
+# <a name="monitor-security-baseline-and-profiles-in-microsoft-intune"></a>Monitorizar a base de segurança e perfis no Microsoft Intune  
 
-Existem diferentes opções de monitorização, ao utilizar linhas de base de segurança. Pode monitorizar o perfil de linhas de base de segurança que se aplica aos seus utilizadores e dispositivos. Também pode monitorizar a linha de base real e todos os dispositivos que corresponde ao (ou não correspondem) os valores recomendados.
+O Intune fornece várias opções para monitorizar as linhas de base de segurança. Pode monitorizar o perfil de linhas de base de segurança que se aplica aos seus utilizadores e dispositivos. Também pode monitorizar a linha de base real e todos os dispositivos que corresponde ao (ou não correspondem) os valores recomendados.
 
 Este artigo orienta-o por meio de ambas as opções de monitorização.
 
 [Linhas de base de segurança no Intune](security-baselines.md) fornece mais detalhes sobre a funcionalidade de linhas de base de segurança no Microsoft Intune.
 
-## <a name="monitor-the-baseline-and-your-devices"></a>Monitorizar a linha de base e seus dispositivos
+## <a name="monitor-the-baseline-and-your-devices"></a>Monitorizar a linha de base e seus dispositivos  
 
-Ao monitorar a linha de base, obtenha informações sobre o estado de segurança dos seus dispositivos com base nas recomendações da Microsoft.
+Ao monitorizar uma linha de base, obtenha informações sobre o estado de segurança dos seus dispositivos com base nas recomendações da Microsoft. Pode ver estas informações a partir do painel de descrição geral da linha de base de segurança na consola do Intune.  Demora até 24 horas para os dados são apresentados depois do primeiro de atribuir uma linha de base. Alterações posteriores demorar até seis horas a aparecer.  
 
-> [!NOTE]
-> Depois do primeiro é atribuída uma linha de base, relatórios podem demorar até 24 horas para atualizar. Depois disso, podem demorar até seis horas para atualizar.
+Para ver dados de monitorização para a linha de base e dispositivos, inicie sessão para o [portal do Intune](https://aka.ms/intuneportal). Em seguida, selecione **linhas de base de segurança (pré-visualização)**, selecione uma linha de base e veja o **descrição geral** painel.
 
-1. Na [portal do Azure](https://portal.azure.com/), selecione **todos os serviços** > Filtrar **Intune** > selecione **Intune**.
-2. Selecione **linhas de base de segurança (pré-visualização)** > Selecione uma linha de base.
-3. Na **descrição geral**, o gráfico mostra o número de dispositivos é afetado pela linha de base que escolheu e os diferentes Estados:
+O **descrição geral** painel fornece dois métodos para monitorizar o estado:
+- **Vista do dispositivo** – um resumo de quantos dispositivos estão em cada categoria de estado da linha de base.  
+- **Por categoria** -uma vista que apresenta cada categoria na linha de base e inclui a percentagem de dispositivos para cada grupo de estado para cada categoria de linha de base. 
 
-    ![Verificar o estado dos dispositivos](./media/security-baselines-monitor/overview.png)
+Cada dispositivo é representado por um dos seguintes Estados, o que são utilizados em ambos os *dispositivo* modo de exibição e o *por categoria* vistas:  
+- **Linha de base de correspondências** -todas as definições na linha de base correspondem as definições recomendadas.
+- **Não corresponde à linha de base** -pelo menos uma definição na linha de base não corresponde as definições recomendadas.
+- **Configurado incorretamente** -pelo menos uma definição não está corretamente configurada. Este estado significa que a definição está num conflito, erro ou o estado pendente.
+- **Não aplicável** -pelo menos uma definição não é aplicável e não é aplicada.
 
-    Os seguintes Estados estão disponíveis:
 
-    - **Linha de base de correspondências**: Todas as definições na linha de base correspondem as definições recomendadas.
-    - **Não corresponde à linha de base**: Pelo menos uma definição na linha de base não corresponde as definições recomendadas.
-    - **Configurado incorretamente**: Pelo menos uma definição não está corretamente configurada. Este estado significa que a definição está num conflito, erro ou o estado pendente.
-    - **Não aplicável**: Pelo menos uma definição não é aplicável e não é aplicada.
-    
-> [!NOTE]
-> Se um dispositivo tem definições em múltiplos Estados, o dispositivo é classificado pela seguinte ordem de precedência de: **Configurado incorretamente**, **não corresponde à linha de base**, **não aplicável**, **linha de base de correspondências**.
+### <a name="device-view"></a>Vista do dispositivo
+Painel de descrição geral apresenta um resumo de baseado em gráfico de mensagens em fila de quantos dispositivos têm um estado específico da linha de base; **Postura de linha de base de segurança para dispositivos do Windows 10 atribuídos**.  
 
-4. Selecione um dos Estados de que tem dispositivos. Por exemplo, selecione o **Misconfigured** estado.
+![Verificar o estado dos dispositivos](./media/security-baselines-monitor/overview.png)
 
-5. É apresentada uma lista de todos os dispositivos com esse Estado. Selecione um dispositivo específico para obter mais detalhes. 
+Quando um dispositivo tiver estado diferente de categorias diferentes na linha de base, o dispositivo é representado por um único de estado. O estado que representa o dispositivo foi obtido da seguinte ordem de precedência de: **Configurado incorretamente**, **não corresponde à linha de base**, **não aplicável**, **linha de base de correspondências**.  
 
-    No exemplo seguinte, selecione **configuração do dispositivo** > selecione o perfil com um Estado de erro:
+Por exemplo, se um dispositivo tem uma definição classificado como *mal configurados* e uma ou mais definições classificadas como *não corresponde à linha de base*, o dispositivo será classificado como *configurado incorretamente*.  
 
-    ![Verificar o estado dos dispositivos](./media/security-baselines-monitor/device-configuration-profile-list.png)
+Pode clicar no gráfico para explorar e visualizar uma lista de dispositivos com vários Estados. Em seguida, pode selecionar dispositivos individuais nessa lista para ver detalhes sobre dispositivos individuais. Por exemplo:
+- Selecione **configuração do dispositivo** > selecione o perfil com um Estado de erro:
 
-    Selecione o perfil de erro. É apresentada uma lista de todas as definições no perfil de e o respetivo estado. Agora, pode rolar para encontrar a definição causando o erro:
+  ![Verificar o estado dos dispositivos](./media/security-baselines-monitor/device-configuration-profile-list.png)
 
-    ![Ver a definição causando o erro](./media/security-baselines-monitor/profile-with-error-status.png)
+- Selecione o perfil de erro. É apresentada uma lista de todas as definições no perfil de e o respetivo estado. Agora, pode rolar para encontrar a definição causando o erro:
+
+  ![Ver a definição causando o erro](./media/security-baselines-monitor/profile-with-error-status.png)
 
 Utilize este relatório para ver todas as definições num perfil que estão a causar um problema. Também obter mais detalhes sobre as políticas e perfis de implementação em dispositivos.
 
 > [!NOTE]
 > Quando uma propriedade está definida como **não configurado** na linha de base, a definição é ignorada e sem restrições são impostas. A propriedade não é mostrada em qualquer relatório.
+
+### <a name="per-category-view"></a>Por visualização de categoria
+Painel de descrição geral apresenta um gráfico de por categoria para a linha de base; **Postura de linha de base de segurança por categoria**.  Esta vista apresenta cada categoria da linha de base e identifica a percentagem de dispositivos que pertencem a uma classificação de estado para cada uma dessas categorias. 
+ 
+![Modo de exibição por categoria de estado](./media/security-baselines-monitor/monitor-baseline-per-category.png)
+
+Estado para **linha de base de correspondências** não apresenta até que o estado para a categoria de relatório de 100% dos dispositivos.   
+
+Pode ordenar o modo de exibição por categoria por cada coluna, selecionando o ícone de seta para cima para baixo na parte superior da coluna.  
+
 
 ## <a name="monitor-the-profile"></a>Monitorizar o perfil
 

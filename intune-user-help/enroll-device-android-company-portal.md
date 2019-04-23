@@ -19,11 +19,11 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 3e9120110b1840d1f5075549737722328ef2551f
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
-ms.translationtype: HT
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59901820"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61498384"
 ---
 # <a name="enroll-your-device-with-company-portal"></a>Inscrever o seu dispositivo com o Portal da empresa  
 Inscreva o seu dispositivo Android pessoal ou pertencentes à empresa para obter acesso seguro ao e-mail da empresa, aplicações e dados. Portal da empresa oferece suporte a dispositivos Android, incluindo o Samsung Knox, executar o Android 4.4 e posterior.  

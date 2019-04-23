@@ -19,11 +19,11 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 35d77c9aa739096f36f4dbf4b75a4186e55a3381
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55835068"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61501620"
 ---
 # <a name="use-managed-apps-on-your-ios-device"></a>Utilizar aplicações geridas no seu dispositivo iOS
 

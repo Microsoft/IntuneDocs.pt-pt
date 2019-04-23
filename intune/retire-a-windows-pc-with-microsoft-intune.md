@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 3516f34d925b4055b99586de388f5384746cb810
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59894285"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61507584"
 ---
 # <a name="retire-a-windows-pc"></a>Extinguir um PC Windows
 

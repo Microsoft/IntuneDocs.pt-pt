@@ -16,11 +16,11 @@ ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: ce6ed4b57199f87fc014addf74a06e70a285044b
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59895176"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61514519"
 ---
 # <a name="reduce-help-desk-costs-with-self-service-password-reset"></a>Reduzir os custos do suporte técnico com a reposição de palavra-passe self-service
 
@@ -36,7 +36,7 @@ Pode permitir que os funcionários reponham as palavras-passe das contas escolar
 3. Para referência futura, forneça instruções sobre [como repor ou alterar a palavra-passe](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-update-your-own-password) aos funcionários e estudantes.
 4. [Ative a reposição de palavra-passe self-service](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started).
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 Saiba mais sobre os seguintes artigos:
 * [Melhores práticas de palavra-passe](https://docs.microsoft.com/azure/active-directory/active-directory-secure-passwords) 

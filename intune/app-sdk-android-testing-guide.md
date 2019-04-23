@@ -18,11 +18,11 @@ search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 4203f424c395399cb0ed1e7472b006602aa0b210
-ms.sourcegitcommit: db7a6b8fc9e82dae4f2111ca0b2d3c14e33658f9
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58073244"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61506870"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developers-testing-guide"></a>Microsoft Intune App SDK para programadores Android guia de teste
 

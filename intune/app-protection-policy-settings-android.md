@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/19/2019
+ms.date: 04/16/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5fad21abf8bd08d989d881953b4c0c790c4b9b8c
-ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
+ms.openlocfilehash: de10359b9045c704d27f94954ddfd69a3f1a9bd5
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59292394"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61503776"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Definições de políticas de proteção de aplicações Android no Microsoft Intune
 Este artigo descreve as definições de políticas de proteção de aplicações para dispositivos Android. As definições de políticas descritas podem ser [configuradas](app-protection-policies.md) para uma política de proteção de aplicações no painel **Definições** no portal do Azure.
@@ -47,7 +47,7 @@ Existem três categorias de definições de política: definições de proteçã
 ### <a name="encryption"></a>Encriptação
 | Definição | Como utilizar | Valor predefinido |
 |------|------|------|
-| **Encriptar dados da organização** | Escolher **requerem** para ativar a encriptação de dados escolares ou profissionais nesta aplicação. O Intune utiliza um OpenSSL, esquema de encriptação de AES do 256 bits, juntamente com o sistema Android Keystore para encriptar dados da aplicação em segurança. Os dados são encriptados de modo síncrono durante as tarefas de E/S de ficheiros. Os conteúdos no armazenamento do dispositivo são sempre encriptados. O SDK irá continuar a fornecer suporte de chaves de 128 bits para compatibilidade com o conteúdo e aplicações que utilizam versões mais antigas do SDK. <br><br> O método de encriptação **não** tem certificação FIPS 140-2.     |  **exigir**|  
+| **Encriptar dados da organização** | Escolher **requerem** para ativar a encriptação de dados escolares ou profissionais nesta aplicação. O Intune utiliza um OpenSSL, esquema de encriptação de AES do 256 bits, juntamente com o sistema Android Keystore para encriptar dados da aplicação em segurança. Os dados são encriptados de modo síncrono durante as tarefas de E/S de ficheiros. Os conteúdos no armazenamento do dispositivo são sempre encriptados. O SDK irá continuar a fornecer suporte de chaves de 128 bits para compatibilidade com o conteúdo e aplicações que utilizam versões mais antigas do SDK. <br><br> O método de encriptação é FIPS 140-2 em conformidade.     |  **exigir**|  
 
 
 

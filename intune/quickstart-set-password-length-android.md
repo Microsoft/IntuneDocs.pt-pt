@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e284c7f5549cf3ad1e610dc1941516283cf51cf9
-ms.sourcegitcommit: 8c795b041cd39e3896595f64f53ace48be0ec84c
+ms.openlocfilehash: e71a9a69cfc474f311bc6acd9e8f24c776a44476
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2019
-ms.locfileid: "59587370"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61512788"
 ---
 # <a name="quickstart-create-a-password-compliance-policy-for-android-devices"></a>Início rápido: Criar uma política de conformidade de palavra-passe para dispositivos Android
 
@@ -32,7 +32,7 @@ Neste início rápido, vai utilizar o Microsoft Intune para exigir aos utilizado
 Uma política de conformidade de dispositivos do Intune especifica as regras e definições que os dispositivos têm de cumprir para serem considerados conformes. Pode utilizar estas políticas de conformidade com acesso condicional para permitir ou bloquear o acesso a recursos da empresa. Também pode obter relatórios de dispositivos e agir relativamente a situações de não conformidade.
 
 > [!IMPORTANT]
-> Além das definições da palavra-passe, deve também considerar outras definições de segurança do sistema para proteger a sua força de trabalho. Para obter mais informações, veja [Definições de segurança do sistema](compliance-policy-create-android-for-work.md#system-security-settings).
+> Além das definições da palavra-passe, deve também considerar outras definições de segurança do sistema para proteger a sua força de trabalho. Para obter mais informações, veja [Definições de segurança do sistema](compliance-policy-create-android-for-work.md).
 
 Se não tiver uma subscrição do Intune, [inscreva-se numa conta de avaliação gratuita](free-trial-sign-up.md).
 

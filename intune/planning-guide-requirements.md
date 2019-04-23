@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 6cb081e16767abde4707e7a6c8719b773474fb95
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59900677"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61512650"
 ---
 # <a name="determine-use-case-scenario-requirements"></a>Determinar os requisitos de cenários de casos de utilização
 
@@ -67,6 +67,6 @@ Veja mais alguns exemplos que podem ser utilizados na coluna “Requisitos”:
     - Office 365 com políticas de proteção de aplicações
     - Linha de negócio (LOB) com políticas de proteção de aplicações
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 A secção seguinte fornece orientações relativas a [como pode desenvolver um plano de implementação do Intune](planning-guide-rollout-plan.md).

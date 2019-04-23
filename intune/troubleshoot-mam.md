@@ -18,11 +18,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: dc7b7f56060ff90cc7b9df6cb8700c163d78e8f5
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798632"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61515624"
 ---
 # <a name="troubleshoot-mobile-application-management"></a>Resolução de problemas de gestão de aplicações móveis
 

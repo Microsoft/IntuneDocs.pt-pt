@@ -17,10 +17,10 @@ ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: e642573311d1452a970dce798dabdc705e4a44f7
 ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 04/23/2019
-ms.locfileid: "60164078"
+ms.locfileid: "61504221"
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices-in-intune"></a>Automatizar o e-mail e adicionar ações para dispositivos não conformes no Intune
 

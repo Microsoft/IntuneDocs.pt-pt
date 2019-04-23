@@ -19,11 +19,11 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 6f1d8befd1cd960fd70b7cc3fbd574609ce1fb0d
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55845164"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61497231"
 ---
 # <a name="how-to-install-your-companys-virtual-private-network-vpn"></a>Como instalar a Rede Privada Virtual da empresa (VPN)
 

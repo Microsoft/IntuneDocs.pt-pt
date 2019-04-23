@@ -17,11 +17,11 @@ search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: c2a94be7ebc369005f92809d57c8e55076972df3
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799270"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61509964"
 ---
 # <a name="ios-device-settings-to-use-common-ios-features-in-intune"></a>definições de dispositivos iOS para utilizar recursos comuns do iOS no Intune
 

@@ -8,11 +8,11 @@ ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
 ms.openlocfilehash: 073115d33f9a4f22fe3706ef15860c2a8d8a68ee
-ms.sourcegitcommit: 69aaf89140f82f344404e75a69dc59d8a1585b10
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "58675498"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61513679"
 ---
 Estes avisos fornecem importante de informações que podem ajudá-lo a se preparar para as funcionalidades e alterações futuras do Intune. 
 
@@ -36,7 +36,7 @@ Pode optar por criar uma política de configuração de aplicações agora, se f
 
 Consulte o nosso suporte postagem no blog em ligação informações adicionais para obter mais detalhes sobre esta alteração.
 
-#### <a name="additional-information"></a>Informações adicionais 
+#### <a name="additional-information"></a>Informações Adicionais 
 [https://aka.ms/enrollment_setup_assistant](https://aka.ms/enrollment_setup_assistant)
 
 ### <a name="plan-for-change-user-experience-update-to-intune-company-portal-app-for-ios"></a>Planear a alteração: Atualização da experiência de utilizador para a aplicação Portal da empresa do Intune para iOS
@@ -54,7 +54,7 @@ Se é parte do programa TestFlight da Apple, será notificado sobre a versão de
 #### <a name="what-can-i-do-to-prepare-for-this-change"></a>O que posso fazer para me preparar para esta alteração?
 Não é necessário efetuar qualquer ação; Estas alterações serão lançadas numa versão de aplicação do iOS futuros CP. 
 
-#### <a name="additional-information"></a>Informações adicionais
+#### <a name="additional-information"></a>Informações Adicionais
 [https://aka.ms/cp_update_iOS](https://aka.ms/cp_update_iOS)
 
 ### <a name="check-your-delay-visibility-of-software-updates-setting-in-intune"></a>Verifique a definição de "Visibility atraso das atualizações de Software" no Intune 
@@ -77,7 +77,7 @@ Pode querer atualizar a sua documentação de orientação para profissionais de
 
 Consulte o nosso blogue de suporte publicar as informações adicionais para obter detalhes sobre como configurar esta definição.
 
-#### <a name="additional-information"></a>Informações adicionais 
+#### <a name="additional-information"></a>Informações Adicionais 
 [https://aka.ms/Delay_visibility_setting_iOS](https://aka.ms/Delay_visibility_setting_iOS)
 
 ### <a name="plan-for-change-upcoming-fix-for-windows-10-email-profiles-in-intune---3904031--"></a>Planear a alteração: Futura correção para perfis de e-mail do Windows 10 no Intune <!--3904031-->
@@ -111,6 +111,6 @@ Se utilizar perfis de e-mail do Windows 10 no Intune, terá de seguir estes pass
 
 Se pretender notificar os utilizadores finais e permitir que o suporte técnico sabe dessa alteração. Consulte a mensagem de blogue de suporte informações adicionais para detalhes de erro e instruções para voltar a criar estes perfis.
 
-#### <a name="additional-information"></a>Informações adicionais
+#### <a name="additional-information"></a>Informações Adicionais
 https://aka.ms/Win10EmailProfiles
 

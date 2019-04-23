@@ -17,11 +17,11 @@ ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: da3a864e492506845432b2106e0ecce4fb2e331a
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55838134"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61491036"
 ---
 # <a name="make-your-device-safer-with-the-right-password"></a>Torne o seu dispositivo mais seguro com a palavra-passe correta
 

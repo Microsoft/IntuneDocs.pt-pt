@@ -19,11 +19,11 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: fd05c600553ec23085b03eb560e0e736c9d7a764
-ms.sourcegitcommit: 25e17a1d002ee1faa49bb89648eb59373528539f
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/18/2019
-ms.locfileid: "58163433"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61504524"
 ---
 # <a name="how-to-reset-your-device-passcode-from-the-company-portal-website"></a>Como repor o código de acesso do dispositivo a partir do site do Portal da Empresa
 

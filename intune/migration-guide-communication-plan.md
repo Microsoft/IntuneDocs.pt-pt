@@ -18,11 +18,11 @@ ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 08fcda324d2c3c397deb99924d731ed4d4512651
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799611"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61490160"
 ---
 # <a name="plan-communications"></a>Planear as comunicações
 

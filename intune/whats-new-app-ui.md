@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e1c4266ad4ae877eadb29b7f35ef0e955028a4b9
-ms.sourcegitcommit: 9daaeba9a960c50efcc951856234fbfec3635737
+ms.openlocfilehash: 753c261ea08ce304176f19e1c64389053b055d5f
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59231854"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61518175"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Atualização da IU para aplicações de utilizadores finais do Intune
 Saiba mais sobre as atualizações mais recentes para as aplicações do Microsoft Intune. Adicionamos regularmente para e melhorar a aplicação Portal da empresa do Intune e o Web site. Se for um administrador do Intune ou pessoa de suporte, este artigo fornece as informações que necessárias para:
@@ -34,6 +34,27 @@ Saiba mais sobre as atualizações mais recentes para as aplicações do Microso
 Se for um funcionário ou aluno, certifique-se de que consulta as capturas de ecrã e ligações para documentação de ajuda do Portal da empresa. Para obter mais informações sobre como utilizar a aplicação Portal da empresa, consulte a [documentação de ajuda de utilizador do Portal da empresa](https://docs.microsoft.com/intune-user-help/).  
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
+
+## <a name="week-of-april-15-2019"></a>Semana de 15 de Abril de 2019  
+
+### <a name="new-end-user-app-microsoft-intune-app---3903244---"></a>Nova aplicação de utilizador final (da aplicação Microsoft Intune) <!--3903244 -->  
+Há uma nova aplicação de utilizador final para Android totalmente geridos chamados **Microsoft Intune**. Esta nova aplicação é leve e modernos e fornece funcionalidade semelhante a aplicação Portal da empresa, mas para totalmente gerido e de dispositivos da empresa. Para obter mais informações, consulte [da aplicação Microsoft Intune no Google Play](https://play.google.com/store/apps/details?id=com.microsoft.intune).  
+
+Captura de ecrã de exemplo do ecrã de detalhes do dispositivo: 
+
+![Aplicação de captura de ecrã do Microsoft Intune, que mostra os detalhes do dispositivo para Android de Joana.](./media/1904-intune-app-device-details.png)   
+
+Captura de ecrã de exemplo da **configurar o acesso** ecrã:  
+
+![Aplicação de captura de ecrã do Microsoft Intune, que mostra o ecrã de inscrição de acesso de configuração.](./media/1904-intune-app-setup-access.png)   
+
+Captura de ecrã do exemplo de menu da aplicação:  
+
+![Aplicação de captura de ecrã do Microsoft Intune, que mostra o menu de lado.](./media/1904-intune-app-navigation-menu.png)   
+
+Captura de ecrã do exemplo do **ajudar** ecrã:  
+
+![Aplicação de captura de ecrã do Microsoft Intune, o ecrã de ajuda.](./media/1904-intune-app-help.png)   
 
 
 ## <a name="week-of-april-1-2019"></a>Semana de 1 de Abril de 2019  

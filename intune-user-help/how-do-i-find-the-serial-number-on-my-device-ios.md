@@ -19,11 +19,11 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: c6d56fca4776d6130667bc43a331cd9daac82794
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55849805"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61495038"
 ---
 # <a name="how-do-i-find-the-serial-number-on-my-device"></a>Como encontro o número de série no meu dispositivo?
 

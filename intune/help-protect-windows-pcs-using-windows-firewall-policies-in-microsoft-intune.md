@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: b5edcfedcd03492d8634549147b70be14ffb742e
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798880"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61513894"
 ---
 # <a name="help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune"></a>Ajudar a proteger PCs com o Windows a utilizarem políticas de Firewall do Windows no Microsoft Intune
 

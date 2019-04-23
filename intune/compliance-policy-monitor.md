@@ -16,11 +16,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 654d5b86a8a2df8eaddc8ea626b55390d2d32920
-ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57389198"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61509075"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Monitorizar as políticas de conformidade do Dispositivo do Intune
 

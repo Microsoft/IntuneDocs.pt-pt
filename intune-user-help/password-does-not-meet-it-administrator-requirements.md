@@ -17,11 +17,11 @@ ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: ac0a8b076fe6f21621826dec32f7aaa72eba88c7
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55837021"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61503793"
 ---
 # <a name="your-password-does-not-meet-your-company-supports-requirements"></a>A sua palavra-passe não cumpre os requisitos do suporte da empresa
 

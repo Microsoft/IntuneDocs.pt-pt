@@ -17,10 +17,10 @@ ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 4840ccac35f37e956c363a1f6103da623ef27782
 ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 04/23/2019
-ms.locfileid: "60164163"
+ms.locfileid: "61505782"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Definições de dispositivos do Android Enterprise para permitir ou restringir funcionalidades com o Intune
 

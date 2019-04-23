@@ -1,11 +1,11 @@
 ---
-title: Inscrever o seu dispositivo com um perfil de trabalho | Documentos da Microsoft
-description: Como tornar dispositivos Android mais seguros com perfis de trabalho.
+title: Inscrever o dispositivo com o perfil de trabalho Android | Documentos da Microsoft
+description: Como criar um perfil de trabalho e inscrever o dispositivo
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/05/2017
+ms.date: 04/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,20 +18,18 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eab28cdd4515561ad34a433773e351150a87f626
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 29928023abc2d6119bb318bbe046e954288ebaa3
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57334957"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61497758"
 ---
-# <a name="create-a-work-profile-and-enroll-your-device-in-intune"></a>Criar um perfil de trabalho e inscrever o seu dispositivo no Intune
+# <a name="enroll-device-with-android-work-profile"></a>Inscrever o dispositivo com perfil do Android work
 
-Inscrever o seu dispositivo Android dá-lhe acesso a e-mails da empresa, aplicações e outros dados de trabalho. Como parte da inscrição, configura um perfil de trabalho, que separa os dados pessoais no seu dispositivo dos dados de trabalho.
+Inscreva o seu dispositivo Android pessoal para obter acesso ao e-mail da empresa, aplicações e outros dados de trabalho. Durante a inscrição, configure um perfil de trabalho do Android. Este perfil separa os dados pessoais no seu dispositivo dos dados de trabalho. O suporte da empresa apenas gere o perfil de trabalho, que consiste em ficheiros de trabalho e dados. O suporte da empresa não consegue gerir os dados pessoais no seu dispositivo. Saiba mais sobre [o que acontece quando cria um perfil de trabalho](what-happens-when-you-create-a-work-profile-android.md). 
 
-O suporte da empresa apenas pode gerir o perfil de trabalho, que contém os seus dados de trabalho. O suporte da empresa não pode gerir os dados pessoais no seu dispositivo. Saiba mais sobre [o que acontece quando cria um perfil de trabalho](what-happens-when-you-create-a-work-profile-android.md).
-
-Para criar um perfil de trabalho:
+## <a name="create-work-profile-and-enroll-device"></a>Criar perfil de trabalho e inscrever o dispositivo
 
 1.  No ecrã **Bem-vindo** do Portal da Empresa para Android, toque em **Iniciar sessão** e, em seguida, inicie sessão com a sua conta escolar ou profissional. Caso ainda não tenha instalado a aplicação gratuita, transfira-a e instale-a a partir do [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal).
 
@@ -82,5 +80,7 @@ Para criar um perfil de trabalho:
     Agora, pode obter aplicações de empresa na Play Store for Work.
 
     ![Página de aplicações Play Store for Work](./media/andr-afw-tap-work-play-store-icon.png)
+
+## <a name="next-steps"></a>Passos Seguintes  
 
 Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

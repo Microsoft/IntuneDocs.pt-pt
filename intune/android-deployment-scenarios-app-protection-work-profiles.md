@@ -16,11 +16,11 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.openlocfilehash: cbd3b13215a58a831a15884bfe451f00a35ba379
-ms.sourcegitcommit: 94f7dc236db5995ffee7cd13c7e02794e561b532
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58538762"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61490200"
 ---
 # <a name="application-protection-policies-and-work-profiles-on-android-enterprise-devices-in-intune"></a>Proteção políticas e de trabalho de perfis de aplicação em dispositivos Android Enterprise no Intune
 

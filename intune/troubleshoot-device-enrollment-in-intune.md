@@ -20,11 +20,11 @@ search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 06a8bd8d0a46b7d7eed8efb4cb8b4c2d4e21f77d
-ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59292440"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61509288"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Resolver problemas de inscrição de dispositivos no Microsoft Intune
 

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/6/2018
+ms.date: 04/17/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d914ea9bffe9485d2e37f8ede4d168f597f9e200
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: d4221250f71df2a6c3c0d310ba25e7021269d1dc
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565941"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61515318"
 ---
 # <a name="configure-vpn-settings-on-ios-devices-in-microsoft-intune"></a>Configurar definições de VPN em dispositivos iOS no Microsoft Intune
 
@@ -42,8 +42,10 @@ Selecione o tipo de ligação de VPN da seguinte lista de fornecedores:
 - **Cisco (IPSec)**
 - **VPN do Citrix**
 - **Citrix SSO**
-- **Zscaler**: Requer a integrar o acesso privado Zscaler (ZPA) com a sua conta do Azure AD. Para obter passos detalhados, veja a [documentação do Zscaler](https://help.zscaler.com/zpa/configuration-example-microsoft-azure-ad#Azure_UserSSO). 
+- **Zscaler**: Para utilizar o acesso condicional ou permitem aos utilizadores ignorar o ecrã de início de sessão do Zscaler, em seguida, tem de integrar Zscaler privada acesso (ZPA) com a sua conta do Azure AD. Para obter passos detalhados, veja a [documentação do Zscaler](https://help.zscaler.com/zpa/configuration-example-microsoft-azure-ad#Azure_UserSSO). 
 - **VPN Personalizada**
+
+
 
 > [!NOTE]
 > A Cisco, Citrix, F5 e Palo Alto anunciaram que os seus clientes legados não funcionam no iOS 12. Deverá migrar para as novas aplicações logo que possível. Para obter mais informações, veja o [Blogue da Equipa de Suporte do Microsoft Intune](https://go.microsoft.com/fwlink/?linkid=2013806&clcid=0x409).

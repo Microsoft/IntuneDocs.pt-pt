@@ -18,11 +18,11 @@ ROBOTS: ''
 ms.custom: intune-enduser; seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 7ccaa9d12c7a7b187f612edad2177882fff2420c
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55846082"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61490217"
 ---
 # <a name="you-need-to-turn-off-unknown-sources"></a>Tem de desativar Origens desconhecidas
 

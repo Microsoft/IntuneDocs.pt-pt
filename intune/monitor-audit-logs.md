@@ -15,11 +15,11 @@ ms.assetid: 6ee841cc-5694-4ba1-8f66-1d58edec30a4
 search.appverid: MET150
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 93072ba4730de0252f54d93fa1169062d496ce38
-ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58394906"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61513214"
 ---
 # <a name="use-audit-logs-to-track-and-monitor-events-in-microsoft-intune"></a>Utilize registos de auditoria para controlar e monitorizar os eventos no Microsoft Intune
 
@@ -63,7 +63,7 @@ Um registo de auditoria tem uma vista de lista predefinida que mostra os seguint
 - Nome da Aplicação
 - Atividade
 - Destino(s)
-- Categoria
+- Category
 - Estado
 
 Para ver informações mais específicas sobre um evento, selecione um item na lista:

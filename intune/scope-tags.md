@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fb57ea2ef5c99c58968ee25b3a75b2165ece787a
-ms.sourcegitcommit: 0adb41c0640743d5cb726e66ad2427e3ad6faf20
+ms.openlocfilehash: 2eb709ad0d649b2ac32505b395fa91e85ad81b8a
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58658554"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61507783"
 ---
 # <a name="use-role-based-access-control-rbac-and-scope-tags-for-distributed-it"></a>Utilizar o controlo de acesso baseado em funções (RBAC) e etiquetas de âmbito para distribuído IT
 
@@ -98,6 +98,11 @@ Para dispositivos com o **tipo de inscrição de dispositivos** definida como **
 2. Escolher **propriedades** > **âmbito (etiquetas)** > Escolha as etiquetas pelas quais pretende atribuir ao perfil.
 3. Escolher **selecionar** > **OK** > **guardar**.
 
+## <a name="to-assign-a-scope-tag-to-an-apple-volume-purchase-program-vpp-token"></a>Para atribuir uma etiqueta de âmbito para um token do Apple Volume Purchase Program (VPP)
+1. No Intune, escolha **aplicações de cliente** > **tokens VPP da Apple** > Escolha um token VPP.
+2. Selecione **âmbito (etiquetas)** > Escolha as etiquetas pelas quais pretende atribuir ao perfil. As aplicações VPP e ebooks associada ao token VPP herdam as etiquetas atribuídas.
+3. Escolher **selecionar** > **OK** > **guardar**.
+
 ## <a name="scope-tag-details"></a>Detalhes da etiqueta de âmbito
 Ao trabalhar com etiquetas de âmbito, lembre-se estes detalhes:
 
@@ -112,6 +117,7 @@ Ao trabalhar com etiquetas de âmbito, lembre-se estes detalhes:
     - Scripts do PowerShell
     - Tokens DEP
     - perfil de aprovisionamento de aplicação do iOS
+    - Tokens do volume Purchase Program (VPP)
 - Quando um administrador cria um objeto no Intune, todas as etiquetas de âmbito atribuídas para cada administrador serão automaticamente atribuídas para o novo objeto.
 - RBAC do Intune não se aplica a funções do Azure Active Directory. Por isso, as funções de administradores de serviço do Intune e os administradores globais têm acesso de administrador completo para o Intune, não importa o que eles têm de etiquetas de âmbito.
 - Os administradores numa atribuição de função com etiquetas de âmbito também podem ver o Intune objetos com sem etiquetas de âmbito.

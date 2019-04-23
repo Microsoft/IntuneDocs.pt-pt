@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 00a0bd4936d1ad8ba8dd52f1839e7d42505db60e
-ms.sourcegitcommit: 601327125ac8ae912d8159422de8aac7dbdc25f6
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59429229"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61508274"
 ---
 #  <a name="intune-data-warehouse-collections"></a>Coleções do Armazém de Dados do Intune
 
@@ -504,7 +504,7 @@ A entidade **MamPlatform** lista os nomes e tipos de plataformas em que uma apli
 |----------------------------|-----------------------------------------------------------------------------------|---------------------------------------------------------|
 |        PlatformKey         |     Identificador exclusivo da plataforma no armazém de dados – chave de substituição.      |                           123                           |
 |          Plataforma          | Identificador exclusivo da plataforma, semelhante a PlatformKey, mas é uma chave natural. |                           123                           |
-|        PlatformName        |                                   Nome da plataforma                                   | Não disponível <br>Nenhum <br>Windows <br>IOS <br>Android. |
+|        PlatformName        |                                   Nome da plataforma                                   | Não disponível <br>Nenhuma <br>Windows <br>IOS <br>Android. |
 | RowLastModifiedDateTimeUtc | Data e hora em UTC em que esta plataforma foi modificada pela última vez no armazém de dados.  |                 11/23/2016 12:00:00 AM                  |
 
 ## <a name="managementagenttypes"></a>managementAgentTypes
@@ -577,7 +577,7 @@ Representa um estado de instalação da aplicação móvel para um determinado t
 | DeviceTypeKey      | A chave do Tipo de Dispositivo associado à Aplicação Móvel.                                                              |
 | AppInstallStateKey | A chave do estado de instalação da aplicação que serve para identificar uma instância de MobileAppInstallState.                                         |
 | Código de erro          | O código de erro devolvido pelo instalador de aplicações, pela plataforma móvel ou pelo serviço relativo à instalação da aplicação. |
-| Contagem              | Contagem total.                                                                                                                  |
+| Count              | Contagem total.                                                                                                                  |
 
 ## <a name="ownertypes"></a>ownerTypes
 A entidade **ownerType** indica se um dispositivo é empresarial, pessoal ou desconhecido.
@@ -666,8 +666,8 @@ A entidade **termsAndConditions** representa os metadados e o conteúdo de uma d
 |    termsAndConditionsKey    |    Uma chave correspondente a uma entrada na coleção “userTermsAndConditionsAcceptances”    |    123    |
 |    termsAndCondidionsId    |    O ID para esta entrada termsAndConditions    |    276edcb7-7440-4339-b6c5-8b6fc556fee6    |
 |    termsAndConditionsVersion    |    A versão da entrada destes termos e condições    |    1    |
-|    nome    |    O nome da entrada destes termos e condições.        |    Termos de utilização do Intune     |
-|    descrição    |    A descrição para estes termos e condições.     |         |
+|    name    |    O nome da entrada destes termos e condições.        |    Termos de utilização do Intune     |
+|    description    |    A descrição para estes termos e condições.     |         |
 |    título    |    O título para estes termos e condições.     |    Política empresarial da gestão de dispositivos        |
 |    summaryOfTerms    |    O resumo dos termos que o utilizador recebeu.     |    Concordo com os termos e condições.    |
 |    termsAndConditionsBodyText    |    O corpo do texto para estes termos e condições.       |    *Encriptação de dispositivos* Imposição do PIN com 6 dígitos    |
@@ -678,7 +678,7 @@ A entidade **termsAndConditions** representa os metadados e o conteúdo de uma d
 ## <a name="userdeviceassociations"></a>userDeviceAssociations
 A entidade **UserDeviceAssociation** contém associações de dispositivos do utilizador na sua organização.
 
-|        Name        |                                             Descrição                                            |     Exemplo     |
+|        Nome        |                                             Descrição                                            |     Exemplo     |
 |:------------------:|:--------------------------------------------------------------------------------------------------:|:---------------:|
 | UserKey            | Identificador exclusivo do utilizador no armazém de dados.   (Chave de substituição).                            | 123             |
 | DeviceKey          | Identificador exclusivo do dispositivo no armazém de dados.                                             | 123             |

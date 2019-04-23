@@ -18,11 +18,11 @@ ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: e293140838cd772dea4cdf810623cfe92fa0fe9e
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799339"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61512992"
 ---
 # <a name="intune-migration-guide"></a>Guia de migração do Intune
 

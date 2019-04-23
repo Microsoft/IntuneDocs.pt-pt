@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: ea55c92fb3254b6e610bec1074e35d9d9c32cd18
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59896004"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61511154"
 ---
 # <a name="reference-for-intune-management-extension"></a>Referência para a Extensão de Gestão do Intune
 
@@ -48,7 +48,7 @@ O **IntuneManagementExtensionHealthState** apresenta todos os estados de funcion
 | Propriedade  | Descrição | Exemplo |
 |---------|------------|--------|
 | ExtensionStateKey |Identificador exclusivo do estado de funcionamento. | 2 |
-| ExtensionState |Estado de funcionamento de uma IntuneManagementExtension. | Healthy |
+| ExtensionState |Estado de funcionamento de uma IntuneManagementExtension. | Bom estado de funcionamento |
 
 ## <a name="intunemanagementextension"></a>IntuneManagementExtension
 

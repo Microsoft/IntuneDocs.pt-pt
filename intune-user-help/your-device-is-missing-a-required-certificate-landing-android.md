@@ -1,12 +1,12 @@
 ---
 title: O dispositivo tem um certificado necessário em falta | Documentos da Microsoft
 titlesuffix: Microsoft Intune
-description: O dispositivo está em falta um certificado necessário pelo suporte da empresa.
+description: O que fazer quando o dispositivo está em falta um certificado necessário.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 04/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,16 +15,16 @@ ms.assetid: 9081b1d8-50e8-4bc2-ba37-766421364213
 searchScope:
 - User help
 ROBOTS: ''
-ms.reviewer: arnab
+ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cc86a53dd790059297430fd6b08f1a699aafbc84
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 150dceebd26430e82845eef6480b87c70d00a1f0
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55850663"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61500702"
 ---
 # <a name="your-device-is-missing-a-required-certificate"></a>O dispositivo tem um certificado necessário em falta
 
@@ -43,3 +43,7 @@ O primeiro passo que deve experimentar consiste em verificar se o seu dispositiv
 Se a resolução de problemas de certificado não funcionar, o suporte da empresa poderia [exigem a instalação de um segundo certificado para segurança adicional](your-device-is-missing-an-IT-required-certificate-android.md).
 
 Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+
+## <a name="next-steps"></a>Passos Seguintes  
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  
+

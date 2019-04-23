@@ -18,11 +18,11 @@ ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: c516c53c38eb033aa2a9688c40b301bedcc7a034
-ms.sourcegitcommit: 8c795b041cd39e3896595f64f53ace48be0ec84c
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2019
-ms.locfileid: "59587404"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61508349"
 ---
 # <a name="configure-app-protection-policies-optional"></a>Configurar políticas de proteção de aplicações (opcional)
 

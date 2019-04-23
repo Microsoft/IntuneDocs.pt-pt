@@ -18,11 +18,11 @@ search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: e7d7b9dfc1bfe2a3908c426132618563d096d5a2
-ms.sourcegitcommit: c4258bb5824daf3f7e0ac3bb8afc539bde4d95da
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "57990974"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61506224"
 ---
 # <a name="intune-on-azure-console-and-legacy-intune-pc-client"></a>Intune na consola do Azure e o cliente de PC do Intune legado
 

@@ -19,11 +19,11 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 2cf384bfcc0782226e363a6527ea47c4140f7faa
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
-ms.translationtype: HT
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59901797"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61499818"
 ---
 # <a name="enroll-your-corporate-device-with-the-microsoft-intune-app"></a>Inscrever o seu dispositivo da empresa com a aplicação Microsoft Intune
 

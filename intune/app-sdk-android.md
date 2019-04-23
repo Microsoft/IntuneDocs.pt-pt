@@ -18,11 +18,11 @@ search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 965dcfbb711eac1b38977e023d1975f4dc0e8b81
-ms.sourcegitcommit: d38ca1bf44e17211097aea481e00b6c1e87effae
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58514502"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61505850"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Guia para programadores do SDK da Aplicação do Microsoft Intune para Android
 
@@ -699,7 +699,7 @@ Metadados da ADAL **não podem** estar presente no manifesto.
 
 #### <a name="2-app-integrates-adal"></a>2. A aplicação integra a ADAL
 
-|Parâmetro necessário da ADAL| Valor |
+|Parâmetro necessário da ADAL| Value |
 |--|--|
 | ClientID | O ClientID da aplicação (gerado pelo Azure AD quando a aplicação é registada) |
 

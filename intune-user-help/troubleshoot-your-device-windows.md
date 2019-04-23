@@ -18,11 +18,11 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 00d927b396619e237986502e60efdc0f9d11bc0b
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55845504"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61505612"
 ---
 # <a name="fix-common-issues-with-your-windows-device"></a>Corrigir problemas comuns no seu dispositivo Windows
 

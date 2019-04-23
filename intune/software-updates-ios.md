@@ -14,11 +14,11 @@ ms.technology: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: de73aa069765ce75068781674ff24d097346cdba
-ms.sourcegitcommit: 699427f36dbf31dc7921fb75da647b736eafd79b
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58899028"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61505935"
 ---
 # <a name="add-ios-software-update-policies-in-intune"></a>Adicionar políticas de atualização de software iOS no Intune
 

@@ -17,11 +17,11 @@ ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 810e2175faef422eb0ccf9bd24ac8d9b43aee92d
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55846915"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61490302"
 ---
 # <a name="enable-security-threat-scans-on-your-device"></a>Ativar a análise de ameaças de segurança no seu dispositivo 
 Se instalar uma aplicação não segura inadvertidamente, os dados do seu dispositivo poderão ficar em risco. Para proteger os dados no seu dispositivo, recomendamos que: 

@@ -19,11 +19,11 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 49d93dfc8af5177b55434170d8119bde93d8ab93
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
-ms.translationtype: HT
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59901800"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61501090"
 ---
 # <a name="why-enroll-your-android-device"></a>Porquê inscrever o seu dispositivo Android  
 

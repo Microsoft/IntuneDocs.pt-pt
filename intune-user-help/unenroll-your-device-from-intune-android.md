@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/04/2019
+ms.date: 04/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fafd9c92a51c8ef258d151a3c19c271fdc45f4c2
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 7d4030762e625e24fb0c72724473162a4ad98183
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55835865"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61506330"
 ---
 # <a name="unenroll-your-android-device-from-management"></a>Anular a inscrição do seu dispositivo Android na gestão  
 
@@ -33,6 +33,9 @@ Remova um dispositivo Android inscrito para que deixe de ser gerido pela sua org
 * O dispositivo deixa de ser apresentado no Portal da Empresa.
 * Não pode instalar aplicações a partir do Portal da Empresa.
 * As definições alteradas no seu dispositivo quando o adicionou (por exemplo, a desativação da câmara ou o comprimento necessário específico de uma palavra-passe) deixam de ser aplicáveis.  
+
+> [!NOTE]
+> Não é possível anular a inscrição ou remover o seu dispositivo pertencente à empresa a partir da aplicação do Microsoft Intune. O dispositivo foi inscrito durante a configuração inicial do dispositivo e têm de estar inscritos para aceder aos recursos da sua organização.  
 
 1. No Portal da Empresa, no canto superior direito, toque nos três pontos verticais. É aberto o menu de ação.
 

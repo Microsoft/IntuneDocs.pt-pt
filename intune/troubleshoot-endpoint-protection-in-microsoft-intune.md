@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 8eddf9af16e0218733f1e0445d85ab7e0176ed27
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57461433"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61504031"
 ---
 # <a name="troubleshoot-endpoint-protection-in-intune"></a>Resolver problemas com o Endpoint Protection no Intune
 

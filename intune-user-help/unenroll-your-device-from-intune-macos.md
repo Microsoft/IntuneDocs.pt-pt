@@ -19,11 +19,11 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 19cb76df318abe84670c1a7d703e85e3b7e7539a
-ms.sourcegitcommit: 464cf677e3746eaba46836dedfb94572a75032f9
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58330403"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61505459"
 ---
 # <a name="unenroll-your-macos-device-from-company-portal"></a>Anular a inscrição do dispositivo macOS no Portal da empresa
 

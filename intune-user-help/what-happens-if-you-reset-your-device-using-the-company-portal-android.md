@@ -1,5 +1,5 @@
 ---
-title: O que acontece se repuser o seu dispositivo Android? | Documentos da Microsoft
+title: O que acontece se repuser o seu dispositivo Android? | Microsoft Docs
 description: ''
 keywords: ''
 author: lenewsad
@@ -19,11 +19,11 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: cecc5380ca6f4e52eeef821e776a4174874b1950
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59894659"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61500600"
 ---
 # <a name="what-happens-if-you-reset-your-android-device-using-the-company-portal"></a>O que acontece se repuser o seu dispositivo Android com o Portal da Empresa?
 

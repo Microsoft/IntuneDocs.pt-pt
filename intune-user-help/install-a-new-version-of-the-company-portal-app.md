@@ -17,11 +17,11 @@ ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 7fcee9a5d721eb3c898c65e18c6fd56189739ffa
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55840559"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61495004"
 ---
 # <a name="how-to-update-the-company-portal-app"></a>Como atualizar a aplicação Portal da Empresa
 

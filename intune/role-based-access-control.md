@@ -19,10 +19,10 @@ ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 98e2229194287ff644e9503fa21c9536cbff4734
 ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 04/23/2019
-ms.locfileid: "60164044"
+ms.locfileid: "61507312"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>Controlo de acesso baseado em funções (RBAC) com o Microsoft Intune
 
@@ -59,7 +59,7 @@ Pode criar suas próprias funções com permissões personalizadas. Para obter m
 | --- | :---: | :---: |
 | Administrador Global | Leitura/escrita | Leitura/escrita |
 | Administrador de Serviços do Intune | Leitura/escrita | Leitura/escrita |
-| Administrador de Acesso Condicional | Nenhum | Nenhum |
+| Administrador de Acesso Condicional | Nenhum | Nenhuma |
 | Administrador de Segurança | Só de leitura | Só de leitura |
 | Operador de segurança | Só de leitura | Só de leitura |
 | Leitor de segurança | Só de leitura | Só de leitura |

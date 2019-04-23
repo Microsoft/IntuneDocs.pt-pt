@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/09/2019
+ms.date: 04/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,53 +14,45 @@ ms.assetid: 523caa6b-d792-4bb6-bddb-24b2479932d8
 searchScope:
 - User help
 ROBOTS: ''
-ms.reviewer: robstack
+ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b7b67f1484ed74bd538cad53f02babd542b77fff
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 54bdef2252467de9cd06e5b5f0a7c38acc38ba88
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55838840"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61505323"
 ---
-# <a name="use-managed-devices-to-access-work-or-school-resources"></a>Utilizar dispositivos geridos para aceder ao trabalho ou escolares de recursos
-O Microsoft Intune é um sistema de gestão de dispositivos que permite às organizações gerir o acesso aos dispositivos, aplicações e e-mail. Gestão de dispositivos permite que e outros funcionários e estudantes aceder às suas informações de trabalho de praticamente qualquer lugar, em praticamente qualquer dispositivo. Mesmo quando trabalha remotamente, e informações da sua organização permanece segura.
+# <a name="enroll-device-for-access-to-work-or-school-resources"></a>Inscrever o dispositivo para o acesso ao trabalho ou escola recursos
+Para inscrever o seu dispositivo e obter acesso ao e-mail e aplicações, terá de instalar a aplicação Portal da empresa do Intune ou a aplicação Microsoft Intune. Quando inscreve, as políticas de gestão básicas que tiver configurado a sua organização, como palavra-passe, PIN e encriptação, são aplicadas para o seu dispositivo. Assim que as definições de dispositivo cumprem todos os requisitos da sua organização, pode aceder em segurança as suas informações de trabalho de qualquer lugar.  
 
-O Microsoft Intune é o software de sua empresa utiliza para configurar a segurança e os requisitos de dispositivos. Quando estiver pronto para colocar o dispositivo seja gerido, vai utilizar a aplicação Portal da empresa do Intune. Com esta aplicação, pode utilizar o seu dispositivo preferencial para aceder ao trabalho ou escolares de recursos. 
+As aplicações Portal da empresa e o Microsoft Intune mantêm o seu dispositivo inscrito, segura, garantindo que as definições de dispositivo correspondem às políticas de sua organização. 
 
-## <a name="what-information-can-my-company-see-when-i-get-my-device-managed"></a>Que informações pode a minha empresa ver quando posso obter o meu dispositivo gerido?
-Após configurá-lo no Portal da empresa, o suporte da sua empresa pode ver apenas informações que são relevantes para trabalhar. Não podem visualizar suas informações pessoais. Isto é especialmente importante de saber se estiver a inscrever um dispositivo pessoal para utilizar no trabalho. Saiba exatamente o que eles [pode e não pode ver no próximo artigo](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
+A aplicação do Portal da empresa também:  
+* Mantém as suas informações pessoais e de trabalha separados.  
+* Torna mais fácil encontrar e instalar aplicações de instituição de ensino e de trabalho relevante.   
 
-## <a name="how-do-i-get-company-portal"></a>Como posso obter o Portal da empresa?
-Portal da empresa de GET por qualquer um:
+## <a name="get-the-apps"></a>Obter as aplicações
+Para obter o Portal da empresa:
 
-- A instalar a aplicação Portal da empresa no seu dispositivo. Normalmente, pode obter a aplicação Portal da Empresa ao aceder à loja de aplicações do seu dispositivo, mas o suporte da empresa também pode instalar automaticamente a aplicação Portal da Empresa.
-- Aceder a [site do Portal da empresa](https://go.microsoft.com/fwlink/?linkid=2010980) que o suporte da empresa conjunto de cópia de segurança.
+- Instale a aplicação Portal da empresa a partir da loja de aplicações específicas da plataforma. Em alguns casos, sua organização irá instalar a aplicação Portal da empresa para.  
+- Vá para o [site do Portal da empresa](https://go.microsoft.com/fwlink/?linkid=2010980) para aceder à aplicação a partir de um browser.  
 
-## <a name="whats-the-difference-between-the-app-and-the-website"></a>Qual é a diferença entre a aplicação e o site?
-Cada aplicação do Portal da empresa para Windows 10, iOS, macOS e Android integra-se de forma totalmente integrada com a respetiva plataforma do seu dispositivo. O Web site está acessível a partir de qualquer dispositivo e dá-lhe a experiência do mesmo, universal, independentemente do dispositivo que está a utilizar. 
+Se tem de utilizar a aplicação Microsoft Intune, sua organização irá instalá-lo para.  
 
-Encontrará orientações do Portal da empresa específica à plataforma do seu dispositivo, começando com os passos de inscrição, sob as seguintes ligações:  
 
-- [Utilizar o dispositivo Android](using-your-android-device-with-intune.md)
-- [Utilizar o seu dispositivo iOS](using-your-ios-device-with-intune.md)
-- [Utilizar o seu dispositivo macOS](using-your-macos-device-with-intune.md)
-- [Utilizar o dispositivo Windows](using-your-windows-device-with-intune.md)
-- [Utilizar o site do Portal da Empresa](using-the-intune-company-portal-website.md)
+## <a name="what-information-can-my-company-see-when-i-enroll"></a>Que informações pode a minha empresa ver quando inscrevo?
+Depois do dispositivo está inscrito, as pessoas de suporte da sua organização só podem ver informações que são relevantes para trabalhar. Não podem visualizar suas informações pessoais. Se estiver a inscrever um dispositivo pessoal para utilizar no trabalho, [saiba exatamente o que pode e não pode ser visto](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).  
 
-## <a name="what-happens-when-you-add-a-computer-or-device-to-the-company-portal"></a>O que acontece quando adiciona um computador ou dispositivo ao Portal da Empresa?
-Quando adiciona um computador ou dispositivo ao Portal da Empresa, é possível instalar algum software ou transferir uma aplicação (dependendo do dispositivo). Ao fazê-lo, também está a dar permissão ao suporte da empresa para gerir o seu dispositivo de forma a ajudar a proteger as informações da empresa no dispositivo.
 
-Para saber mais sobre o que o suporte da empresa pode e não pode ver no seu dispositivo, utilize a ligação que corresponde ao tipo de dispositivo que está a utilizar:
+## <a name="whats-the-difference-between-the-apps-and-the-website"></a>O que é a diferença entre as aplicações e o Web site?
+A aplicação Portal da empresa está disponível para dispositivos Android, macOS, iOS e Windows 10. Se integrar facilmente com a respetiva plataforma do seu dispositivo. A versão de Web site está acessível a partir de qualquer dispositivo e dá-lhe a experiência do mesmo, universal, independentemente do dispositivo que está a utilizar. 
 
-- [Instalar a aplicação Portal da Empresa para Android](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
-- [Instalar a aplicação Portal da Empresa para iOS](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
-- [Instalar a aplicação Portal da Empresa para macOS](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-macos.md)
-- [Instalar a aplicação Portal da Empresa para Windows](about-cp-app-for-windows-10.md)
+É a aplicação Microsoft Intune para dispositivos Android pertencentes à empresa.  
 
-## <a name="what-kind-of-computers-or-devices-can-you-add-to-the-company-portal"></a>Que tipos de computadores ou dispositivos pode adicionar ao Portal da Empresa?
+## <a name="what-kind-of-devices-can-you-enroll-with-company-portal"></a>Que tipos de dispositivos pode inscrever no Portal da empresa?
 -   Dispositivos Apple com iOS (como iPhone e iPad) e macOS (como MacBook e iMac)
 -   Dispositivos Android
 -   Dispositivos Windows
@@ -69,31 +61,49 @@ Para saber mais sobre o que o suporte da empresa pode e não pode ver no seu dis
     -   Windows Phone 8.1
     -   Windows 8.1
 
+## <a name="what-kind-of-devices-can-you-enroll-with-the-microsoft-intune-app"></a>Que tipos de dispositivos pode inscrever com a aplicação Microsoft Intune?  
+Pode inscrever dispositivos Android pertencentes à empresa que sua organização tiver configurado para utilizar com a aplicação. A aplicação suporte o Android 6.0 e posterior. 
+
 ## <a name="can-you-remove-a-computer-or-device-from-the-company-portal"></a>Pode remover um computador ou dispositivo do Portal da Empresa?
 Sim, pode remover ou repor um computador ou dispositivo a partir do Portal da Empresa. Existe uma diferença entre **remover** e **repor**.
 
-Quando *remove* um computador ou dispositivo do Portal da Empresa, está a anular a inscrição do seu dispositivo no Intune. Ao anular a inscrição, deixa de poder aceder ao Portal da Empresa a partir desse dispositivo, e alguns dados da empresa poderão ser removidos do mesmo. Para saber como pode remover o dispositivo do Portal da Empresa, escolha uma das ligações seguintes:
+Quando remove um computador ou dispositivo do Portal da empresa, são de anular a inscrição do dispositivo no Intune. Ao anular a inscrição, deixa de poder aceder ao Portal da Empresa a partir desse dispositivo, e alguns dados da empresa poderão ser removidos do mesmo. Para saber como remover o seu dispositivo do Portal da empresa, consulte as seguintes ligações:  
 
 - [Anular a inscrição do dispositivo Android](unenroll-your-device-from-intune-android.md)
 - [Anular a inscrição do seu dispositivo iOS](unenroll-your-device-from-intune-ios.md)
 - [Anular a inscrição do seu dispositivo macOS](unenroll-your-device-from-intune-macos.md)
 - [Anular a inscrição do dispositivo Windows](unenroll-your-device-from-intune-windows.md)
 
-Ao *Repor* um computador ou dispositivo, o Portal da Empresa tenta repô-lo novamente para as predefinições do fabricante. Repor o dispositivo remove todos os dados empresariais e pessoais do dispositivo! Se perder o dispositivo, pode também repô-lo de forma remota a partir do site do Portal da Empresa.
+Ao repor um computador ou dispositivo, o Portal da empresa tentará repor o seu computador ou dispositivo predefinições do fabricante. Repor o dispositivo remove todos os dados pessoais e da empresa do dispositivo. Se perder o dispositivo, pode também repô-lo remotamente do site do Portal da empresa.  
 
-Pode obter informações sobre como repor o seu dispositivo aqui:
+Para saber como repor o seu dispositivo, veja [repor o dispositivo a partir do site do Portal da empresa](reset-erase-your-device-cpwebsite.md).  
 
-- [Repor (eliminar) o dispositivo a partir do site do Portal da Empresa](reset-erase-your-device-cpwebsite.md)
+## <a name="can-you-remove-a-computer-or-device-from-the-microsoft-intune-app"></a>Pode remover um computador ou dispositivo a partir da aplicação do Microsoft Intune?
+Não, não é possível para remover um dispositivo pertencente à empresa a partir da aplicação do Microsoft Intune.  
 
-## <a name="what-if-i-cant-see-my-device-in-the-company-portal"></a>E se não conseguir ver o meu dispositivo no Portal da Empresa?
+## <a name="what-if-i-cant-see-my-device-in-the-company-portal-or-microsoft-intune-app"></a>E se eu não é possível ver o meu dispositivo na aplicação Portal da empresa ou o Microsoft Intune?
 Para que consiga ver um dispositivo, primeiro este tem de ser adicionado ao Portal da Empresa. Aceda ao Portal da Empresa recomendado pelo seu administrador e siga os passos relativos ao seu dispositivo. Também não verá dispositivos que são propriedade e são geridos pela sua empresa.
 
-## <a name="where-else-can-i-go-for-help"></a>Como posso obter ajuda adicional?
-A Microsoft recomenda que experimente corrigir o problema por si próprio primeiro. Fornecemos uma lista com resoluções que pode experimentar para corrigir os problemas que poderão ocorrer em cada uma das plataformas que o Intune suporta.
+Se estiver a utilizar a aplicação Microsoft Intune, verá apenas o dispositivo que estiver a utilizar atualmente. Outros dispositivos inscritos não serão visíveis para si na aplicação.  
 
-- [Corrigir problemas comuns no seu dispositivo Android](troubleshoot-your-device-android.md)
+## <a name="where-else-can-i-go-for-help"></a>Como posso obter ajuda adicional?  
+Para resolver problemas e perguntas comuns, veja estes documentos específicos da plataforma:  
+
+- [Corrigir problemas comuns no seu dispositivo Android](check-compliance-on-your-device-android.md)  
 - [Corrigir problemas comuns no seu dispositivo iOS](troubleshoot-your-device-ios.md)
 - [Corrigir problemas comuns no seu dispositivo macOS](troubleshoot-your-device-macos.md)
 - [Corrigir problemas comuns no seu dispositivo Windows](troubleshoot-your-device-windows.md)
 
-Pode publicar um comentário abaixo para pedir ajuda, mas cada organização tem requisitos diferentes, pelo que poderemos não conseguir responder sempre às suas perguntas. A forma mais rápida de obter uma resposta relevante é provavelmente ao contactar o suporte da empresa. As informações de contacto do seu administrador de TI devem estar disponíveis no [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+Também pode consultar o para o responsável pelo seu suporte. O Portal da empresa e da aplicação Microsoft Intune oferecem ajuda e suportam a páginas que listam as informações de contacto e as formas de comunicar um problema. Informações de contacto também estão disponíveis na sua organização [site do Portal da empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  
+
+## <a name="next-steps"></a>Passos Seguintes  
+
+Obter ajuda com a inscrição, o que é específica de plataforma do seu dispositivo a partir de:  
+
+- [Utilizar o dispositivo Android](using-your-android-device-with-intune.md)
+- [Utilizar o seu dispositivo iOS](using-your-ios-device-with-intune.md)
+- [Utilizar o seu dispositivo macOS](using-your-macos-device-with-intune.md)
+- [Utilizar o dispositivo Windows](using-your-windows-device-with-intune.md)
+- [Utilizar o site do Portal da Empresa](using-the-intune-company-portal-website.md)
+
+

@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: cc29e7bb56c5a5e21264e275cfecf0ea4b0e9273
-ms.sourcegitcommit: 9e196e4a3b381f0da97ce3c163b18a3012f4aed1
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59704863"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61501379"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Políticas de configuração de aplicações para o Microsoft Intune
 

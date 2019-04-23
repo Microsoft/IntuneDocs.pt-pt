@@ -17,11 +17,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 6f1cdacf4b4d26e9db9b4090805f697927a399c5
-ms.sourcegitcommit: 9daaeba9a960c50efcc951856234fbfec3635737
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59231808"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61510129"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Configurar e utilizar certificados SCEP com o Intune
 
@@ -73,7 +73,7 @@ Recomendamos vivamente a publicação do servidor do NDES através de um proxy i
 
 ### <a name="accounts"></a>Contas
 
-|Name|Detalhes|
+|Nome|Detalhes|
 |--------|-----------|
 |**Conta do serviço do NDES**|Introduza uma conta de utilizador de domínio para utilizar como conta do Serviço do NDES. |
 
@@ -225,7 +225,7 @@ Neste passo, irá:
 3. O servidor do NDES recebe URLs extensos (consultas) que exigem a adição de duas entradas de registo:
 
 
-   |                        Localização                        |      Valor      | Type  |      Dados       |
+   |                        Location                        |      Valor      | Type  |      Dados       |
    |--------------------------------------------------------|-----------------|-------|-----------------|
    | HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters | MaxFieldLength  | DWORD | 65534 (decimal) |
    | HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters | MaxRequestBytes | DWORD | 65534 (decimal) |

@@ -17,11 +17,11 @@ ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: aefde274ec7ca925d45dd101ee0ebef1083f7f19
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55851275"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61504002"
 ---
 # <a name="resolve-access-point-restrictions"></a>Resolver restrições de ponto de acesso
 

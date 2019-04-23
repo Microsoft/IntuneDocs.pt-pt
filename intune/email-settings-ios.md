@@ -16,11 +16,11 @@ search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 1cf1daf42d1dfcd8dd25304040e868581a056943
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566419"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61513142"
 ---
 # <a name="email-profile-settings-for-ios-devices-in-intune"></a>Definições de perfil de e-mail para dispositivos iOS no Intune
 

@@ -18,11 +18,11 @@ search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: a59c413fcc11dfce76152a7325517703a71785d2
-ms.sourcegitcommit: 0adb41c0640743d5cb726e66ad2427e3ad6faf20
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58658801"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61508188"
 ---
 # <a name="assign-a-role-to-an-intune-user"></a>Atribuir uma função de utilizador do Intune
 

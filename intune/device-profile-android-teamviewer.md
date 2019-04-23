@@ -17,11 +17,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: dd2d9f0a0caf87eb75ba3a9cdc123e69425ceb8b
-ms.sourcegitcommit: 699427f36dbf31dc7921fb75da647b736eafd79b
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58899023"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61509746"
 ---
 # <a name="use-teamviewer-to-remotely-administer-intune-devices"></a>Utilizar o TeamViewer para administrar remotamente dispositivos do Intune
 

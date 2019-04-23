@@ -20,11 +20,11 @@ ms.suite: ems
 ms.custom: intune-enduser; seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: ed8ea635dcc071ad94e7b323285674747e4c28c8
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55837300"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61503971"
 ---
 # <a name="your-windows-devices-operating-system-version-isnt-yet-supported"></a>A versão do sistema operativo Windows do dispositivo ainda não é suportada
 

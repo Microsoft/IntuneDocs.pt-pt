@@ -18,11 +18,11 @@ search.appverid: MET150
 ms.custom: ''
 ms.collection: ''
 ms.openlocfilehash: 346b74871b7519e03ca3e68061f690ef1a4e6d6a
-ms.sourcegitcommit: 55323746ca3c1c66326f1453ba66ded9c1b73b0e
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58867578"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61514791"
 ---
 # <a name="intune-enrollment-methods-for-windows-devices"></a>Métodos de inscrição do Intune para dispositivos Windows
 
