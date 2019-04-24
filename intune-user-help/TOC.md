@@ -8,10 +8,12 @@
 
 ## [Iniciar sessão no Portal da Empresa](sign-in-to-the-company-portal.md)
 
-## [Utilizar o dispositivo Android](using-your-android-device-with-intune.md)
-### [O que acontece ao inscrever um dispositivo Android?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
-### [Inscrever o dispositivo](enroll-your-device-in-Intune-android.md)
-#### [Inscrever o dispositivo Android for Work](create-a-work-profile-and-enroll-your-device-in-intune-android.md)
+## Utilizar o seu dispositivo Android
+### [Porquê inscrever o seu dispositivo Android](why-enroll-android-device.md)
+### Inscrever o dispositivo
+#### [Inscrever o seu dispositivo Android](enroll-device-android-company-portal.md)  
+#### [Inscrever com o perfil de trabalho do Android](create-a-work-profile-and-enroll-your-device-in-intune-android.md)
+#### [Inscrever com a aplicação Microsoft Intune](enroll-device-android-microsoft-intune-app.md)
 ### [Utilizar aplicações geridas no dispositivo](use-managed-apps-on-your-device-android.md)
 ### [Encriptar o dispositivo](encrypt-your-device-android.md)
 ### [Definir o PIN ou palavra-passe](set-your-pin-or-password-android.md)
@@ -23,16 +25,15 @@
 #### [Anular a inscrição do dispositivo](unenroll-your-device-from-intune-android.md)
 #### [Anular a inscrição do dispositivo se declinar os Termos de Utilização](unenroll-your-device-from-intune-if-you-declined-terms-of-use-android.md)
 
-### [Corrigir problemas comuns com o Android](troubleshoot-your-device-android.md)
+### Corrigir problemas comuns com o Android
 #### [Verificar a conformidade do dispositivo](check-compliance-on-your-device-android.md)
 #### [Corrigir problemas comuns com o Samsung Knox](samsung-knox-errors-android.md)
 #### [Atualizar o seu dispositivo para instalar o Outlook](update-device-outlook-android.md)
 
-#### Utilizar registos para ajudar a corrigir problemas
+#### Registo
 ##### [Ativar o registo verboso](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
-##### [Enviar registos por e-mail](send-logs-to-your-it-admin-by-email-android.md)
+##### [Carregar e enviar registos por e-mail](send-logs-to-your-it-admin-by-email-android.md)
 ##### [Enviar registos através de um cabo USB](send-logs-to-your-it-admin-using-cable-android.md)
-##### [Submeter erros de inscrição](send-enrollment-errors-to-your-it-admin-android.md)
 ##### [Enviar erros para a Microsoft](send-logs-to-microsoft-android.md)
 
 ### Perguntas sobre o sistema operativo
