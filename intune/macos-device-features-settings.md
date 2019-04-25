@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/09/2019
+ms.date: 04/23/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8997cb8f3e36367de06d6e5aa1c7c6971ee905a4
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 8858848d12ca3f5839741fc15d87e1cd66e9fad0
+ms.sourcegitcommit: bc1bdd63725e62253fcb2daecc41df128bd320f7
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61506020"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "63452835"
 ---
 # <a name="macos-device-feature-settings-in-intune"></a>definições de funcionalidade do dispositivo macOS no Intune
 
@@ -51,6 +51,21 @@ Estas definições são adicionadas a um perfil de configuração do dispositivo
 - **Importar** (opcional): Também pode **importação** um ficheiro separado por vírgulas (. csv) que inclui uma lista de impressoras com o AirPrint. Além disso, depois de adicionar impressoras com o AirPrint no Intune, pode **exportar** nesta lista.
 
 Selecione **OK** para guardar as definições.
+
+### <a name="get-the-ip-address-and-path"></a>Obtenha o endereço IP e o caminho
+
+Para adicionar servidores AirPrinter, terá do endereço IP da impressora, o caminho de recurso e a porta. Os passos seguintes mostram como obter estas informações.
+
+1. Num Mac que está ligado à mesma rede local (sub-rede) que as impressoras do AirPrint, abra **Terminal** (partir **/Applications/Utilities**).
+2. Na aplicação do Terminal, escreva `ippfind`, e selecione introduzir.
+
+    Tenha em atenção as informações de impressora. Por exemplo, pode retornar algo semelhante à `ipp://myprinter.local.:631/ipp/port1`. A primeira parte é o nome da impressora. A última parte (`ipp/port1`) é o caminho de recurso.
+
+3. No Terminal, escreva `ping myprinter.local`, e selecione introduzir.
+
+   Tenha em atenção o endereço IP. Por exemplo, pode retornar algo semelhante à `PING myprinter.local (10.50.25.21)`.
+
+4. Utilize os valores de caminho de recursos e o endereço IP. Neste exemplo, é o endereço IP `10.50.25.21`, e o caminho de recurso é `/ipp/port1`.
 
 ## <a name="login-window"></a>Janela de início de sessão
 
@@ -90,22 +105,7 @@ Depois dos utilizadores iniciam sessão para os dispositivos, as seguintes defin
 
 Selecione **OK** para guardar as definições.
 
-## <a name="get-the-ip-address-and-path"></a>Obtenha o endereço IP e o caminho
-
-Para adicionar servidores AirPrinter, terá do endereço IP da impressora, o caminho de recurso e a porta. Os passos seguintes mostram como obter estas informações.
-
-1. Num Mac que está ligado à mesma rede local (sub-rede) que as impressoras do AirPrint, abra **Terminal** (partir **/Applications/Utilities**).
-2. Na aplicação do Terminal, escreva `ippfind`, e selecione introduzir.
-
-    Tenha em atenção as informações de impressora. Por exemplo, pode retornar algo semelhante à `ipp://myprinter.local.:631/ipp/port1`. A primeira parte é o nome da impressora. A última parte (`ipp/port1`) é o caminho de recurso.
-
-3. No Terminal, escreva `ping myprinter.local`, e selecione introduzir.
-
-   Tenha em atenção o endereço IP. Por exemplo, pode retornar algo semelhante à `PING myprinter.local (10.50.25.21)`.
-
-4. Utilize os valores de caminho de recursos e o endereço IP. Neste exemplo, é o endereço IP `10.50.25.21`, e o caminho de recurso é `/ipp/port1`.
-
 ## <a name="next-steps"></a>Passos Seguintes
 
 - Ver todas as definições de [iOS](ios-device-features-settings.md) dispositivos.
-- [Atribuir este perfil](device-profile-assign.md) aos seus grupos e [monitorizar o estado](device-profile-monitor.md).
+- [Atribuir este perfil](device-profile-assign.md) aos seus grupos, e [monitorizar o estado](device-profile-monitor.md).

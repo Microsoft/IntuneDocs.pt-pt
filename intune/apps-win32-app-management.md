@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f05d3d19e1cce0c290a9af363ca1541881d7820f
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
-ms.translationtype: HT
+ms.openlocfilehash: 8c2cac99ba45ccd91629e6db32d91735d90d706e
+ms.sourcegitcommit: 6d6f43d69462f7f8fadc421c4ba566dc6ec20c36
+ms.translationtype: MT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 04/23/2019
-ms.locfileid: "61508042"
+ms.locfileid: "62426158"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune autónomo - gestão de aplicações do Win32
 
@@ -282,6 +282,9 @@ Neste momento, concluiu os passos para adicionar uma aplicação de Win32 para o
 ## <a name="app-dependencies"></a>Dependências de aplicações
 
 Dependências de aplicações são aplicativos que devem ser instalados antes de pode instalar a aplicação de Win32. Pode exigir que as outras aplicações são instaladas como dependências. Especificamente, o dispositivo tem de instalar a aplicação dependente (ões) antes de instalar a aplicação de Win32. Existe um máximo de 100 dependências, que inclui as dependências de qualquer incluído dependências, bem como a própria aplicação. Pode adicionar as dependências de aplicações do Win32 somente depois que a aplicação de Win32 foi adicionada e carregar para o Intune. Depois de adicionada a aplicação de Win32, verá a **dependências** opção no painel da sua aplicação de Win32. 
+
+> [!NOTE]
+> Funcionalidade de dependência de aplicação estará disponível apenas depois de atualizar o agente de gestão do Intune para 1904 versão (mais de 1.18.120.0), que poderia levar uma ou duas semanas adicionais depois vamos atualizar o serviço para em 1904.
 
 Ao adicionar uma dependência de aplicação, pode pesquisar com base no nome da aplicação e publicador. Além disso, pode classificar as suas dependências foi adicionadas com base no nome da aplicação e o publicador. Anteriormente, não não possível selecionar dependências de aplicações adicionado na lista de dependências de aplicações foi adicionado. 
 

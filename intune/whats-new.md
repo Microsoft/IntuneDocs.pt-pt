@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e3064a73cd9c56275363cce8c99190c4f5c98192
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 6dff7e28daff503570350950b60ae974cd048c5c
+ms.sourcegitcommit: 6d6f43d69462f7f8fadc421c4ba566dc6ec20c36
 ms.translationtype: HT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 04/23/2019
-ms.locfileid: "61515385"
+ms.locfileid: "62426235"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 
@@ -75,7 +75,7 @@ No exemplo seguinte, verá a divisão de controles GDPR. Microsoft abrange 49 co
 Agora, o Intune políticas de proteção (aplicação) em dispositivos Android utiliza uma biblioteca de encriptação OpenSSL que tem certificação FIPS 140-2 em conformidade. Para obter mais informações, consulte a [encryption](app-protection-policy-settings-android.md#encryption) secção de [definições de política de proteção de aplicações Android no Microsoft Intune](app-protection-policy-settings-android.md).
 
 #### <a name="enable-win32-app-dependencies----2617348----"></a>Ativar dependências de aplicações do Win32 <!-- 2617348  -->
-Como administrador, pode exigir que as outras aplicações são instaladas como dependências antes de instalar a aplicação de Win32. Especificamente, o dispositivo tem de instalar a aplicação dependente (ões) antes de instalar a aplicação de Win32. No Intune, selecione **aplicações de cliente** > **aplicações** > **adicionar** para apresentar o **Adicionar aplicação** painel. Selecione **aplicação do Windows (Win32)** como o **tipo de aplicação**. Depois de ter adicionado a aplicação, pode selecionar **dependências** para adicionar as aplicações dependentes que devem ser instaladas antes de pode instalar a aplicação de Win32. Para obter mais informações, consulte [Intune autónomo - gestão de aplicações de Win32](apps-win32-app-management.md).
+Como administrador, pode exigir que as outras aplicações são instaladas como dependências antes de instalar a aplicação de Win32. Especificamente, o dispositivo tem de instalar a aplicação dependente (ões) antes de instalar a aplicação de Win32. No Intune, selecione **aplicações de cliente** > **aplicações** > **adicionar** para apresentar o **Adicionar aplicação** painel. Selecione **aplicação do Windows (Win32)** como o **tipo de aplicação**. Depois de ter adicionado a aplicação, pode selecionar **dependências** para adicionar as aplicações dependentes que devem ser instaladas antes de pode instalar a aplicação de Win32. Para obter mais informações, consulte [Intune autónomo - gestão de aplicações de Win32](apps-win32-app-management.md). Esta funcionalidade está disponível apenas depois de atualizar o agente de gestão do Intune para 1904 versão (mais de 1.18.120.0), que poderia levar uma ou duas semanas adicionais depois vamos atualizar o serviço para em 1904.
 
 #### <a name="app-version-installation-information-for-microsoft-store-for-business-apps----3537391-----"></a>Informações de instalação de versão do aplicativo do Microsoft Store para aplicações empresariais <!-- 3537391   -->
 Relatórios de instalação de aplicações incluem informações de versão de aplicação do Microsoft Store para aplicações de negócio. No Intune, selecione **aplicações de cliente** > **aplicações**. Selecione um **Microsoft Store para a aplicação de negócio** e, em seguida, selecione **estado de instalação de dispositivo** sob o **Monitor** secção.
