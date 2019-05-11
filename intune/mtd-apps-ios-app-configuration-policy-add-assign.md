@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/02/2019
+ms.date: 05/09/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a3e9c9c538f9311da4c383b5de24048eb836ab0a
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 108b9fb0eb227e9f046919efc6ef4d04b0903c40
+ms.sourcegitcommit: d259c0986d356135e626a30468971e32f8103f4e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61513448"
+ms.lasthandoff: 05/08/2019
+ms.locfileid: "65442949"
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>Adicionar e atribuir aplicações de MTD (Defesa Contra Ameaças para Dispositivos Móveis) com o Intune
 
@@ -59,6 +59,7 @@ Selecione a secção que corresponde ao seu fornecedor de MTD:
   - [Zimperium](#configure-zimperium-apps)
   - [Pradeo](#configure-pradeo-apps)
   - [Better Mobile](#configure-better-mobile-apps)
+  - [Sophos Mobile](#configure-sophos-apps)
 
 ### <a name="configure-lookout-for-work-apps"></a>Configurar as aplicações Lookout for Work
 
@@ -142,7 +143,18 @@ Selecione a secção que corresponde ao seu fornecedor de MTD:
 
     - Veja as instruções para [adicionar aplicações da loja iOS ao Microsoft Intune](store-apps-ios.md). Utilize este [URL da loja de aplicações para obter o Active Shield](https://itunes.apple.com/us/app/activeshield/id980234260?mt=8&uo=4) no **passo 12** na secção **Configurar as informações da aplicação**.
 
+
+### <a name="configure-sophos-apps"></a>Configurar aplicações da Sophos  
+- **Android**
+
+    - Veja as instruções para [adicionar aplicações da loja Android ao Microsoft Intune](store-apps-android.md). Utilize esta opção [URL da loja de aplicações Sophos](https://play.google.com/store/apps/details?id=com.sophos.smsec) nos **passo 7**.
+
+ - **iOS**
+
+    - Veja as instruções para [adicionar aplicações da loja iOS ao Microsoft Intune](store-apps-ios.md). Utilize este [URL da loja de aplicações para obter o Active Shield](https://itunes.apple.com/us/app/sophos-mobile-security/id1086924662?mt=8) no **passo 12** na secção **Configurar as informações da aplicação**.
+
 ## <a name="configure-your-mtd-apps-with-an-ios-app-configuration-policy"></a>Configurar as aplicações de MTD com uma política de configuração de aplicações iOS
+
 
 ### <a name="lookout-for-work-app-configuration-policy"></a>Política de configuração da aplicação Lookout for Work
 
@@ -163,7 +175,7 @@ Selecione a secção que corresponde ao seu fornecedor de MTD:
 
     - No **passo 8**, utilize a opção **Introduzir dados XML**, copie os conteúdos do ficheiro ***.plist** e cole-os no corpo da política de configuração.
 
-> [!NOTE]
+> [!NOTE]  
 > Se não conseguir obter os ficheiros, contacte o [Suporte Empresarial do Symantec Endpoint Protection Mobile](https://support.symantec.com/en_US/contact-support.html).
 
 ### <a name="check-point-sandblast-mobile-app-configuration-policy"></a>Política de configuração da aplicação Check Point SandBlast Mobile
@@ -192,6 +204,9 @@ Selecione a secção que corresponde ao seu fornecedor de MTD:
 <string>{{udidlast4digits}}</string>
 </dict>
 ```
+### <a name="pradeo-app-configuration-policy"></a>Política de configuração de aplicação Pradeo
+Pradeo não suporta a política de configuração de aplicações no iOS.  Em vez disso, para obter uma aplicação configurada, trabalhe com Pradeo de implementar os ficheiros IPA ou APK personalizados que estão pré-configuradas com as definições que pretende.
+
 
 ### <a name="better-mobile-app-configuration-policy"></a>Política de configuração de aplicações do Better Mobile
 
@@ -208,6 +223,9 @@ Selecione a secção que corresponde ao seu fornecedor de MTD:
 <string>{{userprincipalname}}</string>
 </dict>
 ```
+
+### <a name="sophos-mobile-app-configuration-policy"></a>Política de configuração de aplicação móvel da Sophos
+Criar política de configuração de aplicações iOS conforme descrito no [utilizando a política de configuração de aplicações de iOS](app-configuration-policies-use-ios.md) artigo.
 
 ## <a name="assign-apps-to-groups"></a>Atribuir aplicações a grupos
 

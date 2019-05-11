@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f4a1c81b1b2f54b15397e9e1d7451ee7ed911848
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 024c4eb37d1b9991db6d1ca0b5c528e9dd333422
+ms.sourcegitcommit: b0cf661145ccc6e3518db620af199786a623a0d9
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61514216"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64764787"
 ---
 # <a name="quickstart-add-and-assign-a-client-app"></a>Início rápido: Adicionar e atribuir uma aplicação de cliente
 
@@ -51,7 +51,7 @@ Siga os seguintes passos para adicionar uma aplicação ao Intune:
 4. Clique em **OK** para aceitar as aplicações selecionadas por predefinição.
 5. Selecione **Informações do Conjunto de Aplicações**.
 6. Introduza **Conjunto de Aplicações do Microsoft Office 365** como **Nome do Conjunto de Aplicações**.
-7. Introduza **O conjunto de Aplicações do Microsoft Office 365.** como **Descrição do Conjunto de Aplicações**.
+7. Introduza **conjunto de aplicações do Microsoft Office 365** como o **descrição do conjunto**.
 8. Clique em **Sim** junto a **Apresentar como aplicação em destaque no Portal da Empresa**.
 9. Clique em **OK**.
 

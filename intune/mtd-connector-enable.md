@@ -6,24 +6,24 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/27/2018
+ms.date: 04/30/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: dbb6a37e-ba47-4b69-922c-d25e66c279f6
-ms.reviewer: heenamac
+ms.reviewer: davidra
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ab9fef5a577783ebbdd512de6d00ab98483e754c
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 92216550ee53c220beb3dc325be02c28b5eeb0c5
+ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61513366"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65135199"
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune"></a>Ativar o conector da Defesa Contra Ameaças para Dispositivos Móveis no Intune
 
@@ -67,7 +67,7 @@ Pode decidir quais as opções de alternância da MTD que necessita de ativar de
 - **Número de dias até o parceiro não está a responder**: Número de dias de inatividade antes do Intune considerar o parceiro como não responsivo devido a ligação for perdida. O Intune ignora o estado de conformidade para parceiros MTD não responsivos.
 
 > [!IMPORTANT] 
-> Tem de adicionar e atribuir aplicações de MTD antes de criar a conformidade do dispositivo e as regras da política de acesso condicional. Isto garante que a aplicação de MTD está pronta e disponível para os utilizadores finais instalarem antes de poderem aceder ao e-mail ou a outros recursos da empresa.
+> Sempre que possível, recomendamos que adiciona e atribuir as aplicações MTD antes de criar a conformidade do dispositivo e o acesso condicional, as regras de política. Isto ajuda a garante que a aplicação de MTD está pronta e disponível para os utilizadores finais instalarem antes de poderem aceder ao e-mail ou a outros recursos da empresa.
 
 > [!TIP]
 > Pode ver o **Estado da ligação** e a hora da **Última sincronização** entre o Intune e o parceiro MTD no painel de Defesa Contra Ameaças para Dispositivos Móveis.

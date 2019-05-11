@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 4/19/2019
+ms.date: 05/01/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e642573311d1452a970dce798dabdc705e4a44f7
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 751d89ef023bea07d3c8bdb69904605d88c9e0b6
+ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61504221"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65135229"
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices-in-intune"></a>Automatizar o e-mail e adicionar ações para dispositivos não conformes no Intune
 
@@ -103,9 +103,6 @@ Também pode adicionar outra ação quando criar uma política de conformidade o
          - Introduza **Destinatários adicionais** ao selecionar grupos
     
     - **Bloquear remotamente o dispositivo não conforme**: Quando o dispositivo está em conformidade, bloquear o dispositivo. Esta ação força o utilizador introduza um PIN ou código de acesso para desbloquear o dispositivo. 
-
-    - **Extinguir o dispositivo não conforme**: Quando o dispositivo está em conformidade, remova todos os dados da empresa fora do dispositivo e remover o dispositivo da gestão do Intune. Para impedir a eliminação acidental de um dispositivo, esta ação dá suporte a uma agenda mínimo de **30** dias.  
-
     
 5. Configurar uma **agenda**: Introduza o número de dias (0 a 365) após a não conformidade para acionar a ação nos dispositivos dos utilizadores. Depois deste período de tolerância, pode impor uma política de acesso condicional. Se introduzir **0** (zero) número de dias, em seguida, acesso condicional entra em vigor **imediatamente**. Por exemplo, pode bloquear o acesso aos recursos empresariais imediatamente se um dispositivo não estiver em conformidade.
 

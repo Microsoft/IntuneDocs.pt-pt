@@ -18,14 +18,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1ab718cd087757211ad4e84cbba39808cf9de7d3
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 2dd523b1c624de9fbdb12cc4f90cafa5c4395250
+ms.sourcegitcommit: b4483c8476a209de83102e8993d8074dbb323493
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61515576"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65527201"
 ---
-# <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot-preview"></a>Implementação híbrida do Azure AD associado dispositivos com o Intune e o Windows Autopilot (pré-visualização)
+# <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>Implementação híbrida do Azure AD associado dispositivos com o Intune e o Windows Autopilot
 Pode utilizar o Intune e o Windows Autopilot para configurar híbrida do Azure Active Directory (Azure AD)-dispositivos associados a um. Para tal, siga os passos neste artigo.
 
 ## <a name="prerequisites"></a>Pré-requisitos
@@ -35,7 +35,7 @@ Configurar com êxito a sua [híbrido do Azure dispositivos associados ao AD](ht
 Os dispositivos a ser inscritos também têm de:
 - Executar o Windows 10 com a [atualização de outubro de 2018](https://blogs.windows.com/windowsexperience/2018/10/02/how-to-get-the-windows-10-october-2018-update/).
 - Ter acesso à Internet.
-- Ter acesso ao seu Active Directory (A ligação VPN não é suportada).
+- Terá acesso ao seu Active Directory (ligação de VPN não é suportada neste momento).
 - São submetidos a experiência de out-of-box (OOBE).
 - Ser capaz de enviar pings para o controlador de domínio do domínio que está a tentar associar.
 

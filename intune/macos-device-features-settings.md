@@ -17,11 +17,11 @@ search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 8858848d12ca3f5839741fc15d87e1cd66e9fad0
-ms.sourcegitcommit: bc1bdd63725e62253fcb2daecc41df128bd320f7
+ms.sourcegitcommit: b0cf661145ccc6e3518db620af199786a623a0d9
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "63452835"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64764862"
 ---
 # <a name="macos-device-feature-settings-in-intune"></a>definições de funcionalidade do dispositivo macOS no Intune
 
