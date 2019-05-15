@@ -552,6 +552,8 @@
               href: app-configuration-policies-use-ios.md
             - name: Android dispositivos geridos
               href: app-configuration-policies-use-android.md
+            - name: Aplicação Managed Home Screen para Android Enterprise
+              href: app-configuration-managed-home-screen-app.md
             - name: Aplicações geridas
               href: app-configuration-policies-managed-app.md
             - name: Utilizar perfis de aprovisionamento de aplicações iOS
