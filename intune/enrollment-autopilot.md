@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7b6355724a0c518cba59f70167adbcf4208fa18a
-ms.sourcegitcommit: ef4bc7318449129af3dc8c0154e54a264b7bf4e5
+ms.openlocfilehash: 6545724294eefc83789f56f851549c0b5fee7f22
+ms.sourcegitcommit: 01117021dfaebb5507aa146b7369447c3d5a403d
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65197617"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65626438"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Inscrever dispositivos Windows no Intune com o Windows Autopilot  
 O Windows Autopilot simplifica a inscrição de dispositivos no Intune. A criação e manutenção de imagens personalizadas do sistema operativo são um processo moroso. Também poderá demorar a aplicar estas imagens personalizadas do sistema operativo a novos dispositivos para as preparar para utilização antes de as disponibilizar aos seus utilizadores finais. Com o Microsoft Intune e o Autopilot, pode fornecer novos dispositivos aos seus utilizadores finais sem ter de criar, manter e aplicar imagens de sistema operativo personalizadas aos dispositivos. Ao utilizar o Intune para gerir dispositivos do Autopilot, pode gerir políticas, perfis, aplicações, entre outros, após estes serem inscritos. Para uma descrição geral das vantagens, cenários e pré-requisitos, veja [Descrição geral do Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
@@ -151,15 +151,17 @@ Pré-requisitos: Portal do Azure da empresa do Active Directory foi configurado 
 
 ## <a name="delete-autopilot-devices"></a>Eliminar dispositivos Autopilot
 
-Pode eliminar dispositivos do Windows Autopilot que não estejam inscritos.
+Pode eliminar dispositivos do Windows Autopilot que não estejam inscritos no Intune:
 
-1. Se os dispositivos estiverem inscritos no Intune, primeiro tem de [eliminá-los do portal do Azure Active Directory](devices-wipe.md#delete-devices-from-the-azure-active-directory-portal).
+- Eliminar os dispositivos do Windows Autopilot em **inscrição de dispositivos** > **inscrição Windows** > **dispositivos**. Selecione os dispositivos que pretende eliminar, em seguida, escolha **eliminar**. A eliminação de dispositivo do Windows Autopilot pode demorar alguns minutos a concluir.
 
-2. No [Intune no portal do Azure](https://aka.ms/intuneportal), escolha **Inscrição de dispositivos** > **Inscrição do Windows** > **Dispositivos**.
+Remover completamente um dispositivo do seu inquilino exige que a eliminar o dispositivo do Intune, o dispositivo do Azure Active Directory e os registos de dispositivo do Windows Autopilot. Isso pode todos ser feito no Intune:
 
-3. Em **Dispositivos Windows Autopilot**, escolha os dispositivos que quer eliminar e, em seguida, **Eliminar**.
+1. Se os dispositivos estão inscritos no Intune, primeiro tem [eliminá-los a partir do painel de dispositivos do Intune All](devices-wipe.md#delete-devices-from-the-azure-active-directory-portal).
 
-4. Confirme a eliminação ao escolher **Sim**. A eliminação pode demorar alguns minutos.
+2. Eliminar os dispositivos em dispositivos do Azure Active Directory à **dispositivos** > **dispositivos do Azure AD**.
+
+3. Eliminar os dispositivos do Windows Autopilot em **inscrição de dispositivos** > **inscrição Windows** > **dispositivos**. Selecione os dispositivos que pretende eliminar, em seguida, escolha **eliminar**. A eliminação de dispositivo do Windows Autopilot pode demorar alguns minutos a concluir.
 
 ## <a name="using-autopilot-in-other-portals"></a>Utilizar o Autopilot noutros portais
 Se não estiver interessado na gestão de dispositivos móveis, pode utilizar o Autopilot noutros portais. Embora a utilização de outros portais seja uma opção, recomendamos-lhe que apenas utilize o Intune para gerir as suas implementações do Autopilot. Se utilizar o Intune e outro portal, o Intune não será capaz de:  

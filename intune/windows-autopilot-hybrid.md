@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2dd523b1c624de9fbdb12cc4f90cafa5c4395250
-ms.sourcegitcommit: b4483c8476a209de83102e8993d8074dbb323493
+ms.openlocfilehash: be0598d09f10403892fa6a82e109ecc90015ccf9
+ms.sourcegitcommit: 47d8ca144ea4e8b8817e95ac4b8c6bd8591fcc06
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65527201"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65619442"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>Implementação híbrida do Azure AD associado dispositivos com o Intune e o Windows Autopilot
 Pode utilizar o Intune e o Windows Autopilot para configurar híbrida do Azure Active Directory (Azure AD)-dispositivos associados a um. Para tal, siga os passos neste artigo.
@@ -211,7 +211,14 @@ Demora cerca de 15 minutos para que o estado do perfil de dispositivo a alterar 
 1. Selecione **configurações**e, em seguida, forneça um **prefixo do nome do computador**, **nome de domínio**e (opcional) **unidade organizacional** no [Formato de DN](https://docs.microsoft.com/windows/desktop/ad/object-names-and-identities#distinguished-name). 
 1. Selecione **OK** > **criar**.  
     O perfil é criado e apresentado na lista.
-1. Para atribuir o perfil, siga os passos em [Atribuir um perfil do dispositivo](device-profile-assign.md#assign-a-device-profile). 
+1. Para atribuir o perfil, siga os passos em [atribuir um perfil de dispositivo](device-profile-assign.md#assign-a-device-profile) e atribuir o perfil ao mesmo grupo utilizado nesta etapa [criar um grupo de dispositivos](windows-autopilot-hybrid.md#create-a-device-group)
+   - Implementar vários perfis de associação a um domínio
+   
+     a. Criar um grupo dinâmico que inclui todos os seus dispositivos Autopilot com um perfil de implementação do Autopilot específico, introduza (device.enrollmentProfileName - eq "Nome do perfil Autopilot"). 
+     
+     b. Substitua o "Nome do perfil Autopilot" com o nome a apresentar do perfil criado sob [criar e atribuir um perfil de implementação do Autopilot](windows-autopilot-hybrid.md#create-and-assign-an-autopilot-deployment-profile). 
+     
+     c. Crie múltiplos perfis de implementação do Autopilot e atribua esse dispositivo para o perfil especificado neste grupo dinâmico.
 
 > [!NOTE]
 > As capacidades de nomenclatura para Windows Autopilot híbrida associação do Azure AD não suportam variáveis como % SERIAL % e apenas suportam prefixos para o nome do computador.
