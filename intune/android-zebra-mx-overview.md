@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/09/2019
+ms.date: 04/23/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d3f5625a84a3d2327a5ccac24ad10d2bb0e48c02
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
-ms.translationtype: HT
+ms.openlocfilehash: 69814b91978aa3cd74c4dc239b099883ae402af9
+ms.sourcegitcommit: b0cf661145ccc6e3518db620af199786a623a0d9
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59896636"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64764783"
 ---
 # <a name="use-and-manage-zebra-devices-with-zebra-mobility-extensions-in-microsoft-intune"></a>Utilizar e gerir dispositivos Zebra com as Extensões de Mobilidade Zebra no Microsoft Intune
 
@@ -30,12 +30,9 @@ ms.locfileid: "59896636"
 
 O Intune inclui um conjunto avançado de funcionalidades, incluindo a gestão de aplicações e a configuração de definições do dispositivo. Estas definições e funcionalidades incorporadas servem para gerir dispositivos Android fabricados pela Zebra Technologies, também conhecidos como “dispositivos Zebra”.
 
-O Intune também oferece outras formas de gerir as definições *específicas* dos dispositivos Zebra:
+Em dispositivos Android, utilize os perfis **Extensões de Mobilidade (MX)** para personalizar ou adicionar outras definições específicas da Zebra.
 
-- Em dispositivos Android Enterprise, utilize **OEMConfig** para configurar as definições que não estão incorporadas no Intune. Para obter mais informações, veja [Utilizar e gerir dispositivos Zebra no Android Enterprise com OEMConfig](android-oem-configuration-overview.md).
-- Em dispositivos Android, utilize os perfis **Extensões de Mobilidade (MX)** para personalizar ou adicionar outras definições específicas da Zebra.
-
-Este artigo mostra-lhe como utilizar as Extensões de Mobilidade (MX) Zebra em dispositivos Zebra no Microsoft Intune. Para utilizar OEMConfig, aceda a [Utilizar e gerir dispositivos Zebra no Android Enterprise com OEMConfig](android-oem-configuration-overview.md).
+Este artigo mostra-lhe como utilizar as Extensões de Mobilidade (MX) Zebra em dispositivos Zebra no Microsoft Intune.
 
 Esta funcionalidade aplica-se a:
 
@@ -150,8 +147,7 @@ Da próxima vez que o dispositivo verificar se existem atualizações de configu
 > 
 > - Para atualizar um perfil depois de ter sido atribuído aos dispositivos Zebra, crie um ficheiro XML do StageNow atualizado, edite o perfil do Intune existente e adicione o novo ficheiro XML do StageNow. Este novo ficheiro substitui a anterior política do StageNow no perfil.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 - [Atribua o perfil](device-profile-assign.md) e [monitorize o respetivo estado](device-profile-monitor.md).
-- [Utilizar OEMConfig para gerir dispositivos Zebra no Android Enterprise](android-oem-configuration-overview.md).
 - [Utilizar registos do StageNow para resolver problemas de dispositivos Zebra](android-zebra-mx-logs-troubleshoot.md).
