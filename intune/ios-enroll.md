@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eef5524cff3ce29e802ca8078ba2b5e104e89775
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 7ba5ca4dcd8e43d63e98c281cac3487def8a0045
+ms.sourcegitcommit: 4980c094faaca452f8ec8ddded04f47b3229ff38
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61490166"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65765326"
 ---
 # <a name="enroll-ios-devices-in-intune"></a>Inscrever dispositivos iOS no Intune
 
@@ -85,3 +85,6 @@ Os dispositivos configurados sem afinidade de utilizador não suportam o Portal 
 
 Se for necessária afinidade de utilizador, confirme que o perfil de inscrição do dispositivo tem a opção **Afinidade do Utilizador** selecionada antes de o inscrever. Para alterar o estado de afinidade num dispositivo, tem de extinguir e voltar a inscrever o dispositivo.
 
+## <a name="see-also"></a>Consulte também
+
+[Resolução de problemas de inscrição de dispositivos iOS no Microsoft Intune](https://support.microsoft.com/help/4039809)

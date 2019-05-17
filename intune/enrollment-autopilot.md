@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6545724294eefc83789f56f851549c0b5fee7f22
-ms.sourcegitcommit: 01117021dfaebb5507aa146b7369447c3d5a403d
+ms.openlocfilehash: bf01926ddc461b9b86b93d1307c00515bc744a28
+ms.sourcegitcommit: f8bbd9bac2016a77f36461bec260f716e2155b4a
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65626438"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65733114"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Inscrever dispositivos Windows no Intune com o Windows Autopilot  
 O Windows Autopilot simplifica a inscrição de dispositivos no Intune. A criação e manutenção de imagens personalizadas do sistema operativo são um processo moroso. Também poderá demorar a aplicar estas imagens personalizadas do sistema operativo a novos dispositivos para as preparar para utilização antes de as disponibilizar aos seus utilizadores finais. Com o Microsoft Intune e o Autopilot, pode fornecer novos dispositivos aos seus utilizadores finais sem ter de criar, manter e aplicar imagens de sistema operativo personalizadas aos dispositivos. Ao utilizar o Intune para gerir dispositivos do Autopilot, pode gerir políticas, perfis, aplicações, entre outros, após estes serem inscritos. Para uma descrição geral das vantagens, cenários e pré-requisitos, veja [Descrição geral do Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
@@ -78,32 +78,41 @@ Pode adicionar dispositivos Windows Autopilot ao importar um ficheiro CSV com as
 ## <a name="create-an-autopilot-deployment-profile"></a>Criar um perfil de implementação do Autopilot
 Os perfis de implementação do Autopilot são utilizados para configurar os dispositivos do Autopilot.
 1. No [Intune no portal do Azure](https://aka.ms/intuneportal), selecione **Inscrição de dispositivos** > **Inscrição no Windows** > **Dispositivos** > **Importar**.
-2. Escreva um **Nome** e uma **Descrição** opcional.
+2. Sobre o **Noções básicas** página, escreva um **nome** e opcionais **Descrição**.
+
+    ![Página de captura de ecrã de noções básicas](media/enrollment-autopilot/create-profile-basics.png)
+
 3. Se pretender que todos os dispositivos nos grupos atribuídos sejam convertidos automaticamente no Autopilot, defina **Converter todos os dispositivos visados para o Piloto Automático** para **Sim**. Todos os dispositivos fora do Autopilot em grupos atribuídos serão registados com o serviço de implementação do Autopilot. O processo de registo demora até 48 horas, pelo que deverá aguardar. Quando a inscrição do dispositivo for anulada e o dispositivo for reposto, o Autopilot irá inscrevê-lo. Após registar um dispositivo desta forma, desativar esta opção ou remover a atribuição de perfil não irá remover o dispositivo do serviço de implementação do Autopilot. Em alternativa, tem de [remover o dispositivo diretamente](enrollment-autopilot.md#delete-autopilot-devices).
-4. Para **Modo de implementação**, selecione uma destas duas opções:
+4. Selecione **Seguinte**.
+5. Sobre o **experiência de Out-of-box (OOBE)** página, para **modo de implementação**, escolha uma destas duas opções:
     - **Controlada pelo usuário**: Os dispositivos com este perfil estão associados ao utilizador que inscreve o dispositivo. Precisa de credenciais de utilizador para inscrever o dispositivo.
     - **Implantação automática (pré-visualização)**: (requer o Windows 10, versão 1809 ou posterior) dispositivos com este perfil não estão associados com o utilizador a inscrição do dispositivo. Não são necessárias credenciais de utilizador para inscrever o dispositivo.
-5. Na caixa **Aderir ao Azure AD como**, selecione **Associado ao Azure AD**.
-6. Selecione **Experiência de configuração inicial (OOBE)**, configure as seguintes opções e, em seguida, selecione**Guardar**:
-    - **Idioma (região)**\*: Escolha o idioma a utilizar para o dispositivo. Esta opção só está disponível se tiver optado pela **Implementação personalizada** no **Modo de implementação**.
-    - **Configurar automaticamente o teclado**\*: Se um **idioma (região)** é selecionado, escolha **Sim** para ignorar a página de seleção do teclado. Esta opção só está disponível se tiver optado pela **Implementação personalizada** no **Modo de implementação**.
+
+    ![Página de captura de ecrã de OOBE](media/enrollment-autopilot/create-profile-outofbox.png)
+
+6. Na caixa **Aderir ao Azure AD como**, selecione **Associado ao Azure AD**.
+7. Configure as seguintes opções:
     - **O contrato de licença de utilizador final (EULA)**: (Windows 10, versão 1709 ou posterior) Escolha se pretende mostrar o EULA aos utilizadores.
     - **As definições de privacidade**: Escolha se pretende mostrar as definições de privacidade aos utilizadores.
     - **Ocultar alterar as opções de conta (requer o Windows 10, versão 1809 ou posterior)**: Escolher **ocultar** para impedir que alterar as opções de conta de ser apresentado nas páginas de erro de início de sessão e o domínio de empresa. Esta opção requer a [configuração da imagem corporativa da empresa no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding).
     - **Tipo de conta de utilizador**: Escolha o tipo de conta do usuário (**administrador** ou **padrão** utilizador).
-    - **Aplicar modelo de nome de computador (requer o Windows 10, versão 1809 ou posterior)**: Escolher **Sim** para criar um modelo a utilizar quando um dispositivo de nomenclatura durante a inscrição. Os nomes têm de ter 15 carateres ou menos e podem conter letras, números e hífenes. Não podem conter apenas números. Utilize a [macro %SERIAL%](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) para adicionar um número de série específico de hardware. Em alternativa, utilize a [macro %RAND:x%](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) para adicionar uma cadeia de números aleatória na qual x corresponde ao número de dígitos a adicionar. 
+    - **Permitir meticulosa OOBE**: Escolher **Sim** para permitir que o suporte de meticulosa.
+    - **Aplicar modelo de nome de dispositivo**: Escolher **Sim** para criar um modelo a utilizar quando um dispositivo de nomenclatura durante a inscrição. Os nomes têm de ter 15 carateres ou menos e podem conter letras, números e hífenes. Não podem conter apenas números. Utilize a [macro %SERIAL%](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) para adicionar um número de série específico de hardware. Em alternativa, utilize a [macro %RAND:x%](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) para adicionar uma cadeia de números aleatória na qual x corresponde ao número de dígitos a adicionar. 
+    - **Idioma (região)**\*: Escolha o idioma a utilizar para o dispositivo. Esta opção só está disponível se tiver optado pela **Implementação personalizada** no **Modo de implementação**.
+    - **Configurar automaticamente o teclado**\*: Se um **idioma (região)** é selecionado, escolha **Sim** para ignorar a página de seleção do teclado. Esta opção só está disponível se tiver optado pela **Implementação personalizada** no **Modo de implementação**.
+8. Selecione **Seguinte**.
+9. Sobre o **etiquetas de âmbito** página, pode optar por adicionar as etiquetas de âmbito que pretende aplicar a este perfil. Para obter mais informações sobre etiquetas de âmbito, veja [utilizar etiquetas de controle e o âmbito de acesso baseado em funções para distribuído IT](scope-tags.md).
+10. Selecione **Seguinte**.
+11. Sobre o **atribuições** página, selecione **grupos selecionados** para **atribuir a**.
 
-6. Selecione **Criar** para criar o perfil. O perfil de implementação do Autopilot está agora disponível para atribuir a dispositivos.
+    ![Página de captura de ecrã de atribuições](media/enrollment-autopilot/create-profile-assignments.png)
 
-* Ambos **idioma (região)** e **configurar automaticamente o teclado** só estão disponíveis se tiver escolhido **Self-implantação (pré-visualização)** para **modo de implementação**  (requer o Windows 10, versão 1809 ou posterior).
+12. Escolher **selecionar grupos para incluir**e selecione os grupos que pretende incluir neste perfil.
+13. Se quiser excluir grupos, escolha **selecionar grupos para excluir**e selecione os grupos que pretende excluir.
+14. Selecione **Seguinte**.
+15. Sobre o **rever + criar** página, selecione **criar** para criar o perfil.
 
-
-## <a name="assign-an-autopilot-deployment-profile-to-a-device-group"></a>Atribuir um perfil de implementação do Autopilot a um grupo de dispositivos
-
-1. No [Intune no portal do Azure](https://aka.ms/intuneportal), selecione **Inscrição de dispositivos** > **Inscrição no Windows** > **Perfis de implementação** e selecione um perfil.
-2. No painel do perfil específico, selecione **Atribuições**. 
-3. Escolha **Selecionar Grupos** e, em seguida, no painel **Selecionar grupos**, escolha os grupos aos quais pretende atribuir o perfil. Em seguida, clique em **Selecionar**.
-
+    ![Página de captura de ecrã de revisão](media/enrollment-autopilot/create-profile-review.png)
 
 > [!NOTE]
 > O Intune irá verificar periodicamente a existência de novos dispositivos nos grupos atribuídos e, em seguida, iniciar o processo de atribuição de perfis a esses dispositivos. Este processo pode demorar vários minutos a concluir. Antes de implementar um dispositivo, certifique-se de que concluiu este processo.  Pode verificar sob **inscrição de dispositivos** > * * a inscrição de Windows * * > **dispositivos** onde deverá ver o estado do perfil alterar de "Não atribuído" para "Atribuir" e, finalmente, para "Atribuído."

@@ -17,12 +17,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aaf9b82bc810dd3a616eb25f39f4b5830b1c3e6f
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 5299ef8c0159592c9754f886fe1c3d90a6637599
+ms.sourcegitcommit: 4980c094faaca452f8ec8ddded04f47b3229ff38
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61508692"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65765378"
 ---
 # <a name="create-a-device-based-conditional-access-policy"></a>Criar uma política de acesso condicional com base no dispositivo
 
@@ -97,3 +97,5 @@ Uma política de acesso condicional Especifica a aplicação ou serviços que pr
 
 ## <a name="see-also"></a>Consulte também
 [Acesso condicional com base na aplicação com o Intune](app-based-conditional-access-intune.md)
+
+[Resolução de problemas de acesso condicional do Intune](https://support.microsoft.com/help/4456106)

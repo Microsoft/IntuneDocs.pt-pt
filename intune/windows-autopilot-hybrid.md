@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: be0598d09f10403892fa6a82e109ecc90015ccf9
-ms.sourcegitcommit: 47d8ca144ea4e8b8817e95ac4b8c6bd8591fcc06
+ms.openlocfilehash: 7ac370ffe297cb62af6ed55cfd5c4c41cf8452d3
+ms.sourcegitcommit: dfcf80a91792715404dc021c8684866c8b0a27e1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65619442"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65816296"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>Implementação híbrida do Azure AD associado dispositivos com o Intune e o Windows Autopilot
 Pode utilizar o Intune e o Windows Autopilot para configurar híbrida do Azure Active Directory (Azure AD)-dispositivos associados a um. Para tal, siga os passos neste artigo.
@@ -119,6 +119,9 @@ O conector do Intune para o Active Directory tem de ser instalados num computado
 > [!NOTE]
 > Depois de iniciar sessão para o conector, poderá demorar alguns minutos a aparecer na [Intune](https://aka.ms/intuneportal). Ele só será apresentada se consegue comunicar com êxito com o serviço Intune.
 
+### <a name="turn-off-ie-enhanced-security-configuration"></a>Desativar a configuração de segurança avançada do IE
+Por predefinição do Windows Server tem a configuração de segurança avançada do Internet Explorer ativada. Se não conseguir iniciar sessão para o conector do Intune para o Active Directory, em seguida, desative a configuração de segurança avançada do IE para o administrador. [Como desativar o Internet Explorer de configuração de segurança avançada](https://blogs.technet.microsoft.com/chenley/2011/03/10/how-to-turn-off-internet-explorer-enhanced-security-configuration)
+
 ### <a name="configure-web-proxy-settings"></a>Configurar definições de proxy Web
 
 Se tiver um proxy web no seu ambiente de rede, certifique-se de que o conector do Intune para o Active Directory funciona corretamente por consultar [funcionam com o existente no local servidores proxy](autopilot-hybrid-connector-proxy.md).
@@ -194,7 +197,7 @@ Demora cerca de 15 minutos para que o estado do perfil de dispositivo a alterar 
 
 ## <a name="optional-turn-on-the-enrollment-status-page"></a>(Opcional) Ativar a página de estado de inscrição
 
-1. Na [Intune](https://aka.ms/intuneportal), selecione **inscrição de dispositivos** > **inscrição Windows** > **página de estado de inscrição (pré-visualização)**.
+1. Na [Intune](https://aka.ms/intuneportal), selecione **inscrição de dispositivos** > **inscrição Windows** > **página de estado de inscrição**.
 1. Na **página de estado de inscrição** painel, selecione **predefinido** > **definições**.
 1. Na **Mostrar o progresso de instalação da aplicação e o perfil** caixa, selecione **Sim**.
 1. Configure as outras opções conforme seja necessário.

@@ -1,11 +1,11 @@
 ---
-title: Utilizar autoridades de certificação de terceiros com o SCEP no Microsoft Intune – Azure | Microsoft Docs
+title: Utilizar autoridades de certificação (AC) com o SCEP no Microsoft Intune – Azure | Documentos da Microsoft
 description: No Microsoft Intune, pode adicionar autoridades de certificação de terceiros ou um fornecedor para emitir certificados para dispositivos móveis com o protocolo SCEP. Nesta descrição geral, uma aplicação do Azure Active Directory (Azure AD) fornece permissões ao Microsoft Intune para validar certificados. Em seguida, utilize o ID da aplicação, a chave de autenticação e o ID do inquilino da aplicação do AAD para configurar o servidor do SCEP para emitir certificados.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 07/26/2018
+ms.date: 05/16/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d042a160d016343c6e8374dff8f74560b9806014
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 5e87b7397d994b089a30fedd9ccedc0107bf0cef
+ms.sourcegitcommit: f8bbd9bac2016a77f36461bec260f716e2155b4a
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61508489"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65732502"
 ---
 # <a name="add-partner-certification-authority-in-intune-using-scep"></a>Adicionar autoridades de certificação parceiras no Intune com o SCEP
 
@@ -69,47 +69,40 @@ Antes de integrar as autoridades de certificação de terceiros com o Intune, co
 
 Para permitir que um servidor do SCEP de terceiros execute a validação do desafio personalizado com o Intune, crie uma aplicação no Azure AD. Esta aplicação fornece direitos delegados ao Intune para validar pedidos de SCEP.
 
-Certifique-se de que tem as permissões obrigatórias para registar uma aplicação do Azure AD. A secção [Permissões obrigatórias](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-create-service-principal-portal#required-permissions) indica os passos.
+Certifique-se de que tem as permissões obrigatórias para registar uma aplicação do Azure AD. Ver [permissões obrigatórias](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-create-service-principal-portal#required-permissions), na documentação do Azure AD.
 
-**Passo 1: Criar uma aplicação do Azure AD**
+#### <a name="create-an-application-in-azure-active-directory"></a>Criar uma aplicação no Azure Active Directory  
 
-1. Inicie sessão no [portal do Azure](https://portal.azure.com).
-2. Selecione **Azure Active Directory** > **Registos das aplicações** > **Novo registo de aplicação**.
-3. Introduza um nome ou URL de início de sessão. Selecione **Aplicação Web/API** no tipo de aplicação.
-4. Selecione **Criar**.
+1. No [portal do Azure](https://portal.azure.com), aceda à **Azure Active Directory** > **registos das aplicações**e, em seguida, selecione **novo registo**.  
 
-O artigo [Integrar aplicações com o Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications) inclui algumas orientações sobre como criar uma aplicação, incluindo sugestões sobre o URL e o nome.
+2. Sobre o **registar uma aplicação** , especifique os seguintes detalhes:  
+   - Na **nome** , digite um nome de aplicação significativo.  
+   - Para o **tipos de conta suportados** secção, selecione **contas em qualquer diretório organizacional**.  
+   - Para **URI de redirecionamento**, deixe a predefinição da Web e, em seguida, especifique o URL de início de sessão para o servidor do SCEP de terceiros.  
 
-**Passo 2: Conceder permissões**
+3. Selecione **registar** para criar a aplicação e para abrir a página de descrição geral da nova aplicação.  
 
-Depois de criar a sua aplicação, conceda à API do Microsoft Intune as permissões obrigatórias:
+4. Na aplicação **descrição geral** página, copie a **ID de aplicação (cliente)** valor e registe-a para utilização posterior. Precisará desse valor mais tarde.  
 
-1. Na aplicação do Azure AD, abra as **Definições** > **Permissões Obrigatórias**.  
-2. Selecione **Adicionar** > **Selecionar uma API** > selecione **API do Microsoft Intune** > **Selecionar**.
-3. Em **Selecionar permissões**, selecione **Validação do desafio SCEP** > **Selecionar**.
-4. Selecione **Concluído** para guardar as alterações.
+5. No painel de navegação para a aplicação, aceda a **certificados e segredos** sob **gerir**. Selecione o **novo segredo do cliente** botão. Introduza um valor na descrição, selecione qualquer opção para **Expires**e, em seguida e escolha **Add** para gerar um *valor* para o segredo do cliente. 
+   > [!IMPORTANT]  
+   > Antes de sair desta página, copie o valor para o segredo do cliente e registe-a para utilização posterior com a implementação de AC de terceiros. Este valor não é apresentado novamente. Certifique-se de que reveja as orientações para a AC de terceiros em como pretendem o ID da aplicação, a chave de autenticação e o ID do inquilino configurado.  
 
-**Passo 3: Obter a chave de autenticação e o ID de aplicação**
+6. Registo sua **ID de inquilino**. O ID de inquilino é o texto de domínio após o @ início de sessão na sua conta. Por exemplo, se a sua conta está *admin@name.onmicrosoft.com*, em seguida, o seu ID de inquilino é **name.onmicrosoft.com**.  
 
-Em seguida, obtenha o ID e os valores de chave da sua aplicação do Azure AD. São necessários os seguintes valores:
+7. No painel de navegação para a aplicação, aceda a **permissões de API** sob **gerir**e, em seguida, selecione **adicionar uma permissão**.  
 
-- ID da Aplicação
-- Chave de Autenticação
-- ID do inquilino
+8. Sobre o **permissões de pedido de API** página, selecione **Intune**e, em seguida, selecione **permissões de aplicação**. Selecione a caixa de verificação **scep_challenge_provider** (validação do desafio SCEP).  
 
-**Para obter o ID da aplicação e a chave de autenticação**:
+   Selecione **adicionar permissões** para guardar esta configuração.  
 
-1. No Azure AD, selecione a sua nova aplicação (**Registos das aplicações**).
-2. Copie o **ID da Aplicação** e armazene-o no código da sua aplicação.
-3. Em seguida, gere uma chave de autenticação. Na sua aplicação do Azure AD, abra as **Definições** > **Chaves**.
-4. Em **Palavras-passe**, introduza uma descrição e escolha a duração da chave. **Guarde** as suas alterações. Copie e guarde o valor apresentado.
+9. Manter-se no **permissões de API** página e selecione **conceder autorização de administrador para a Microsoft**e, em seguida, selecione **Sim**.  
+   
+   O processo de registo de aplicação no Azure AD foi concluído.
 
-    > [!IMPORTANT]
-    > Copie e guarde esta chave imediatamente, pois não será apresentada novamente. Este valor de chave é necessário com a implementação da autoridade de certificação de terceiros. Certifique-se de que revê a documentação de orientação para saber como configurar o ID da Aplicação, a Chave de Autenticação e o ID do Inquilino.
 
-O **ID do Inquilino** é o texto de domínio após o sinal @ na sua conta. Por exemplo, se a sua conta for `admin@name.onmicrosoft.com`, o ID do inquilino é **nome.onmicrosoft.com**.
 
-A secção [Obter o ID da aplicação e a chave de autenticação](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-create-service-principal-portal#get-application-id-and-authentication-key) indica os passos para obter estes valores e fornece mais detalhes sobre as aplicações do Azure AD.
+
 
 ### <a name="configure-and-deploy-a-scep-certificate-profile"></a>Configurar e implementar um perfil de certificado SCEP
 Enquanto administrador, crie um perfil de certificado SCEP para direcionar para utilizadores ou dispositivos. Em seguida, atribua o perfil.
@@ -128,6 +121,9 @@ As seguintes autoridades de certificação de terceiros suportam o Intune:
 - [Entrust Datacard](http://www.entrustdatacard.com/resource-center/documents/documentation)
 - [Versão open source do GitHub do EJBCA](https://github.com/agerbergt/intune-ejbca-connector)
 - [EverTrust](https://evertrust.fr/en/products/)
+- [GlobalSign](https://downloads.globalsign.com/acton/attachment/2674/f-6903f60b-9111-432d-b283-77823cc65500/1/-/-/-/-/globalsign-aeg-microsoft-intune-integration-guide.pdf)
+- [IDnomic](https://www.idnomic.com/)
+- [Sectigo](https://sectigo.com/products)
 
 Se for uma autoridade de certificação de terceiros interessada em integrar o seu produto com o Intune, reveja a documentação de orientação da API:
 

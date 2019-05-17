@@ -1,7 +1,7 @@
 ---
-title: Definições de linhas de base de segurança do Windows para o Intune
+title: Definições de linhas de base de segurança do Intune para Windows 10
 titleSuffix: Microsoft Intune
-description: Definições de linha de base de segurança do Windows suportadas pelo Intune
+description: Definições de linha de base de segurança do Intune para gerir o Windows 10
 author: brenduns
 ms.author: brenduns
 manager: dougeby
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 67938f8697002f94f275f953510d1b0f4864a3fa
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 1d9d095db4d10630555e5696610535bb828f0b5f
+ms.sourcegitcommit: f8bbd9bac2016a77f36461bec260f716e2155b4a
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61507160"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65733064"
 ---
 # <a name="windows-security-baseline-settings-for-intune"></a>Definições da linha de base de segurança do Windows para o Intune  
 
@@ -1366,7 +1366,7 @@ Para obter mais informações, consulte [CSP de política - Defender](https://do
   **Predefinido**: Sim
   
 - **Monitorização de comportamento**  
-  Permite ou proíbe a funcionalidade de monitorização de comportamento do Windows Defender. Incorporado no Windows 10, destes sensores a recolhem e processam sinais comportamentais do sistema operacional e envia estes dados de sensor para sua instância de cloud privada, isolados, do Windows Defender ATP.
+  Permite ou proíbe a funcionalidade de monitorização de comportamento do Windows Defender. Incorporado no Windows 10, destes sensores a recolhem e processam sinais comportamentais do sistema operacional e envia estes dados de sensor para sua instância de cloud privada, isolados, do Microsoft Defender ATP.
   
   **Predefinido**: Sim
 
