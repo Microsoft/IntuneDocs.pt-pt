@@ -19,13 +19,13 @@ search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 7c056e86f7e768d79b4851fda327dc2e32fa349c
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
-ms.translationtype: MT
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
+ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798276"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59897617"
 ---
-# <a name="terms-and-conditions-for-user-access"></a>Termos e condições de acesso de utilizador
+# <a name="terms-and-conditions-for-user-access"></a>Termos e condições do acesso dos utilizadores
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -43,24 +43,24 @@ Existem duas formas de criar os termos e condições da sua empresa:
 ## <a name="create-terms-and-conditions"></a>Criar termos e condições
 Conclua estes passos para criar os termos e condições. O nome a apresentar e a descrição são para utilização administrativa enquanto as propriedades dos termos são apresentadas aos utilizadores no Portal da Empresa.
 
-1. Inicie sessão no [Portal do Azure](https://portal.azure.com).
+1. Inicie sessão no [portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
 3. No painel **Intune**, selecione **Inscrição de dispositivos** > **Termos e Condições**.
 2. Selecione **Criar**.
 ![Captura de ecrã do portal do Azure a mostrar o botão Criar dos termos e condições](media/terms-create-terms.png)
 3. No painel expandido, especifique as seguintes informações:
 
-   - **Nome a apresentar**: O nome relativo aos termos no portal do Azure. Os utilizadores não veem este nome.
+   - **Nome a apresentar**: o nome dos termos no portal do Azure. Os utilizadores não veem este nome.
 
-   - **Descrição**: Detalhes opcionais que o ajudam a identificar este conjunto de termos no portal do Azure.
+   - **Descrição**: detalhes opcionais que ajudam a identificar este conjunto de termos no portal do Azure.
 
 4. Selecione a seta junto a **Definir termos de utilização** para abrir o painel Termos e Condições e, em seguida, introduza as seguintes informações:
 
    ![Captura de ecrã a mostrar o ecrã de aceitação dos termos e condições do utilizador final, com um resumo dos termos](./media/terms-summary-create.png)
 
-   - **Título**: O nome dos termos que os utilizadores veem no Portal da empresa acima do **resumo**.
-   - **Resumo dos termos**: Texto que explica o que significa quando os utilizadores aceitem os termos. Por exemplo, "Ao inscrever o dispositivo, aceita os termos de utilização definidos pela Contoso. Leia atentamente os termos antes de continuar”.
-   - **Termos e condições**: Os termos e condições que os utilizadores ver e devem aceitar ou rejeitar.
+   - **Título**: o nome dos termos que os utilizadores veem no Portal da Empresa acima do **Resumo**.
+   - **Resumo dos Termos**: texto que explica o que significa quando os utilizadores aceitam os termos. Por exemplo, "Ao inscrever o dispositivo, aceita os termos de utilização definidos pela Contoso. Leia atentamente os termos antes de continuar”.
+   - **Termos e Condições**: os termos e condições que os utilizadores veem e devem aceitar ou rejeitar.
 
 5. Selecione **OK** > **Criar**.
 

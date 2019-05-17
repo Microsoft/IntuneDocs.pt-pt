@@ -17,12 +17,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 700bded8930385c5576a198dc0364c64066121e5
-ms.sourcegitcommit: 71314481e644025c005019b478b4cbeaf2390ea9
-ms.translationtype: MT
+ms.openlocfilehash: 2168c39c80369e16284078df608bdab5f29858c6
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
+ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "59041703"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59894970"
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>Ajudar os utilizadores finais a compreender as mensagens da aplicação Portal da Empresa
 
@@ -41,7 +41,7 @@ Compreenda as diferentes mensagens de aplicações que os utilizadores finais po
 ### <a name="where-it-appears"></a>Onde aparece
 A mensagem **Permitir que o Portal da Empresa efetue e faça a gestão de chamadas telefónicas?** é apresentada quando os utilizadores tocam em **Inscrever** na aplicação Portal da Empresa quando inscrevem os dispositivos.
 
-### <a name="what-it-means"></a>O que representa
+### <a name="what-it-means"></a>O que significa
 Ao aceitarem este pedido, os utilizadores permitem que os números IMEI e de telefone do dispositivo sejam enviados para o serviço Intune. Estes números serão apresentados na consola de administração na página __Hardware__.
 
 > [!NOTE]
@@ -57,14 +57,14 @@ Se os utilizadores permitirem o acesso, mas o negarem mais tarde, a mensagem é 
 Se, posteriormente, os utilizadores decidirem permitir o acesso, poderão aceder a **Definições** > **Aplicações** > **Portal da Empresa** > **Permissões** > **Telemóvel** e ativar a opção.
 
 ### <a name="how-to-explain-this-to-your-users"></a>Como explicar esta questão aos utilizadores
-Para obterem mais informações, indique aos utilizadores para acederem a [Inscrever o dispositivo Android no Intune](/intune-user-help/enroll-your-device-in-intune-android).
+Para obterem mais informações, indique aos utilizadores para acederem a [Inscrever o dispositivo Android no Intune](/intune-user-help/enroll-device-android-company-portal).
 
 ## <a name="allow-company-portal-to-access-your-contacts"></a>Permitir que o Portal da Empresa aceda aos seus contactos?
 
 ### <a name="where-it-appears"></a>Onde aparece
 A mensagem **Permitir que o Portal da Empresa aceda aos seus contactos?** é apresentada quando os utilizadores tocam em **Inscrever** na aplicação Portal da Empresa quando inscrevem os dispositivos.
 
-### <a name="what-it-means"></a>O que representa
+### <a name="what-it-means"></a>O que significa
 Ao aceitarem este pedido, os utilizadores permitem que o Intune crie a conta profissional deles e faça a gestão da identidade do Azure Active Directory que está registada para o utilizador nesse dispositivo.
 
 > [!NOTE]
@@ -78,14 +78,14 @@ Se os utilizadores permitirem o acesso, mas o negarem mais tarde, a mensagem é 
 Se, posteriormente, os utilizadores decidirem permitir o acesso, poderão aceder a **Definições** > **Aplicações** > **Portal da Empresa** > **Permissões** > **Telemóvel** e ativar a opção.
 
 ### <a name="how-to-explain-this-to-your-users"></a>Como explicar esta questão aos utilizadores
-Para obterem mais informações, indique aos utilizadores para acederem a [Inscrever o dispositivo Android no Intune](/intune-user-help/enroll-your-device-in-intune-android).
+Para obterem mais informações, indique aos utilizadores para acederem a [Inscrever o dispositivo Android no Intune](/intune-user-help/enroll-device-android-company-portal).  
 
 ## <a name="allow-company-portal-to-access-photos-media-and-files-on-your-device"></a>Permitir que o Portal da Empresa aceda às fotografias, multimédia e ficheiros no seu dispositivo?
 
 ### <a name="where-it-appears"></a>Onde aparece
 A mensagem **Permitir que o Portal da Empresa aceda às fotografias, multimédia e ficheiros no dispositivo?** é apresentada quando os utilizadores tocam em **Enviar Dados** para enviar os registos de dados para o administrador de TI.
 
-### <a name="what-it-means"></a>O que representa
+### <a name="what-it-means"></a>O que significa
 Ao aceitar esta mensagem, os utilizadores permitem que o dispositivo escreva registos de dados no cartão SD do mesmo. Esses registos também podem ser movidos através de um cabo USB.   
 
 > [!NOTE]
@@ -110,32 +110,32 @@ Se não tiver adicionado a aplicação Portal da Empresa à lista de **Aplicaç�
 
 ### <a name="what-it-means"></a>O que significa
 
-Adicionar o Portal da empresa para o **aplicações permitidas** ou **aplicações excluídas** lista na política de proteção de aplicações de Windows Information Protection (WIP). Para obter mais informações, veja [Criar e implementar a política de proteção de aplicações do Windows Information Protection (WIP) com o Intune](windows-information-protection-policy-create.md).
+Adicione o Portal da Empresa à lista de **Aplicações permitidas** ou **Aplicações excluídas** na política de proteção de aplicações Windows Information Protection (WIP). Para obter mais informações, veja [Criar e implementar a política de proteção de aplicações do Windows Information Protection (WIP) com o Intune](windows-information-protection-policy-create.md).
 
-## <a name="approve-a-ios-company-app-line-of-business-app-on-your-ios-device"></a>Aprovar uma aplicação da empresa iOS (aplicação de linha de negócio) no seu dispositivo iOS 
+## <a name="approve-a-ios-company-app-line-of-business-app-on-your-ios-device"></a>Aprovar uma aplicação da empresa iOS (aplicação de linha de negócio) no dispositivo iOS 
 
 ### <a name="where-it-appears"></a>Onde aparece
-aplicações de iOS desenvolvidas pela sua organização que não estão disponíveis na Store da aplicação não são confiáveis pelo seu dispositivo por padrão. Quando instalar essas aplicações através do Portal da empresa e inicie a aplicação, será apresentada a seguinte mensagem:
+As aplicações iOS desenvolvidas pela sua organização que não estão disponíveis na Loja de Aplicações não são consideradas fidedignas pelo seu dispositivo por predefinição. Quando instalar essas aplicações através do Portal da Empresa e iniciar a aplicação, será apresentada a seguinte mensagem:
 
-![mensagem de aplicação do iOS - não fidedigno Enterprise Developer](./media/end-user-company-portal-messages/end-user-company-portal-messages-01.png)
+![Mensagem da aplicação iOS – Programador Empresarial Não Fidedigno](./media/end-user-company-portal-messages/end-user-company-portal-messages-01.png)
 
 ### <a name="what-it-means"></a>O que significa
-Esta mensagem significa que precisa modificar as definições do dispositivo iOS para aprovar e instalar aplicações desenvolvidas pela sua empresa no seu dispositivo iOS.
+Esta mensagem significa que precisa de modificar as definições do dispositivo iOS para aprovar e instalar aplicações desenvolvidas pela sua empresa no dispositivo iOS.
 
-Quando instalar essas aplicações com o Portal da empresa e inicie a aplicação, siga estes passos para aprovar a aplicação depois de o transferir:
+Quando instalar essas aplicações com o Portal da Empresa e iniciar a aplicação, siga estes passos para aprovar a aplicação depois de a transferir:
 
-1. Após iniciar uma aplicação da empresa instalado (aplicação de linha de negócio), verá a mensagem "Enterprise Developer não confiáveis". <br>
+1. Após iniciar uma aplicação da empresa (aplicação de linha de negócio) instalada, verá a mensagem “Programador Empresarial Não Fidedigno”. <br>
    Prima **Cancelar**.
-2. Navegue para **configurações** > **geral** > **gestão de dispositivos**.
+2. Navegue para **Configurações** > **Geral** > **Gestão de Dispositivos**.
 
-   ![dispositivo iOS da interface do Usuário - gestão de dispositivos](./media/end-user-company-portal-messages/end-user-company-portal-messages-02.png)
+   ![IU do dispositivo iOS - Gestão de Dispositivos](./media/end-user-company-portal-messages/end-user-company-portal-messages-02.png)
 
-3. Selecione **perfil de gestão** > **aplicação empresarial**.
-4. Selecione o nome do desenvolvedor.
-5. Prima **confiar _nome do desenvolvedor_**.
-6. Confirmar a aplicação, selecionando **confiar** na mensagem de pop-up de instalação de aplicação.
+3. Selecione **Perfil de Gestão** > **Aplicação empresarial**.
+4. Selecione o nome do programador.
+5. Prima **Confiar em _nome do programador_**.
+6. Confirme a aplicação ao selecionar **Confiar** na mensagem de pop-up de instalação da aplicação.
 
-   ![dispositivo iOS da interface do Usuário - mensagem de aplicação de confiança](./media/end-user-company-portal-messages/end-user-company-portal-messages-03.png)
+   ![IU do dispositivo iOS – Mensagem de confiança na aplicação](./media/end-user-company-portal-messages/end-user-company-portal-messages-03.png)
 
     Deverá conseguir iniciar e utilizar a aplicação da empresa.
 

@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-azure, get-started, seoapril2019
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 45e9f50881ff7da0554a4731712441b5fedb01d8
-ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
-ms.translationtype: MT
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
+ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59292251"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59898552"
 ---
 # <a name="what-are-app-protection-policies"></a>O que são as políticas de proteção de aplicações?
 
@@ -39,19 +39,19 @@ Pode utilizar as políticas de proteção de aplicações do Intune **independen
 
 As políticas de proteção de aplicações podem ser configuradas para aplicações executadas em dispositivos que estão:
 
-- **Inscritos no Microsoft Intune:** Estes dispositivos são, normalmente, pertencentes à empresa.
+- **Inscritos no Microsoft Intune**: estes dispositivos são, normalmente, pertencentes à empresa.
 
-- **Inscritos numa solução de gestão (MDM) de terceiros de dispositivos móveis:** Estes dispositivos são, normalmente, pertencentes à empresa.
+- **Inscritos numa solução de Gestão de dispositivos móveis (MDM) de terceiros:** estes dispositivos são, normalmente, pertencentes à empresa.
 
   > [!NOTE]
   > As políticas de gestão de aplicações móveis não devem ser utilizadas com soluções de gestão de aplicações móveis ou de contentores seguros de terceiros.
 
-- **Não inscritos em nenhuma solução de gestão de dispositivos móveis:** Os dispositivos são, normalmente, os dispositivos que não são geridos ou inscritos no Intune ou noutras soluções MDM de funcionários.
+- **Não inscritos em nenhuma solução de gestão de dispositivos móveis:** os dispositivos são, normalmente, dos funcionários e não são geridos nem estão inscritos no Intune nem em qualquer outra solução de MDM.
 
 > [!IMPORTANT]
 > Pode criar políticas de gestão de aplicações móveis para as aplicações móveis do Office que se ligam aos serviços do Office 365. Também pode proteger o acesso a caixas de correio do Exchange no local ao criar políticas de proteção de aplicações do Intune para o Outlook para iOS e Android com Autenticação Moderna híbrida. Antes de utilizar esta funcionalidade, certifique-se de que cumpre os [requisitos do Outlook para iOS e Android](https://technet.microsoft.com/library/mt846639(v=exchg.160).aspx). As políticas de proteção de aplicações não são suportadas para outras aplicações que se ligam aos serviços do SharePoint ou do Exchange no local.
 
-**As vantagens importantes da utilização de políticas de proteção de aplicação são**:
+**Vantagens importantes da utilização das Políticas de proteção de aplicações**:
 
 -   Proteger os dados da sua empresa ao nível da aplicação. Como a gestão de aplicações móveis não requer a gestão de dispositivos, pode proteger os dados da empresa nos dispositivos geridos e não geridos. A gestão centra-se na identidade do utilizador, o que elimina a necessidade de gestão de dispositivos.
 
@@ -68,23 +68,23 @@ A utilização da MDM com políticas de proteção de aplicações tem outras va
 
 
 ### <a name="supported-platforms-for-app-protection-policies"></a>Plataformas suportadas das políticas de proteção de aplicações
-Suporte de plataformas de políticas do Intune app protection se alinha com suporte de plataformas de aplicações móveis do Office para dispositivos Android e iOS. Para obter detalhes, veja a secção **Aplicações móveis** de [Requisitos de Sistema do Office](https://products.office.com/office-system-requirements#coreui-contentrichblock-9r05pwg).
+O suporte para plataformas de políticas de proteção de aplicações do Intune está alinhado com o suporte para plataformas de aplicações móveis do Office para os dispositivos Android e iOS. Para obter detalhes, veja a secção **Aplicações móveis** de [Requisitos de Sistema do Office](https://products.office.com/office-system-requirements#coreui-contentrichblock-9r05pwg).
 
 > [!IMPORTANT]
-> O Portal da empresa do Intune é necessário no dispositivo para receber políticas de proteção de aplicações do Android. Para obter mais informações, consulte a [requisitos de aplicações de acesso do Portal da empresa do Intune](end-user-mam-apps-android.md#access-apps).
+> O Portal da Empresa do Intune é necessário no dispositivo para receber as Políticas de Proteção de Aplicações do Android. Para obter mais informações, veja os [Requisitos das aplicações de acesso ao Portal da Empresa do Intune](end-user-mam-apps-android.md#access-apps).
 
 ## <a name="how-app-protection-policies-protect-app-data"></a>Como as políticas de proteção de aplicações protegem os dados das aplicações
 
 #### <a name="apps-without-app-protection-policies"></a>Aplicações sem políticas de proteção de aplicações
 
-![Imagem conceptual para o movimento de dados entre aplicações sem políticas no local](./media/apps-without-protection-policies.png)
+![Imagem conceptual do movimento de dados entre aplicações sem políticas em vigor](./media/apps-without-protection-policies.png)
 
 Quando as aplicações são utilizadas sem restrições, os dados pessoais e da empresa podem confundir-se. Os dados da empresa podem acabar em localizações como um armazenamento pessoal ou ser transferidos para aplicações fora da sua competência e que resulta em perda de dados. As setas no diagrama anterior mostram o movimento de dados sem restrições entre aplicações (empresariais e pessoais) e para localizações de armazenamento.
 
 
 ### <a name="data-protection-with-app-protection-policies"></a>Proteção de dados com políticas de proteção de aplicações
 
-![Imagem conceptual, que mostra os dados da empresa que está a ser protegidos por políticas](./media/apps-with-protection-policies.png)
+![Imagem conceptual que mostra os dados da empresa a serem protegidos por políticas](./media/apps-with-protection-policies.png)
 
 
 Pode utilizar Políticas de proteção de aplicações para impedir que os dados da empresa sejam guardados no armazenamento local do dispositivo. Também pode restringir o movimento de dados para outras aplicações que não estão protegidas pelas Políticas de proteção de aplicações. As definições de políticas de proteção de aplicações incluem:
@@ -148,13 +148,13 @@ Embora a política **Global** se aplique a todos os utilizadores no seu inquilin
 
 As aplicações que suportam várias identidades permitem-lhe utilizar contas diferentes (profissionais e pessoais) para aceder às mesmas aplicações, enquanto as políticas de proteção de aplicações aplicam-se apenas quando as aplicações são utilizadas no contexto de trabalho.
 
-Para um exemplo de contexto pessoa, considere um utilizador que inicia um novo documento do Word, esse é considerado um contexto pessoal para que não são aplicadas políticas de proteção de aplicações do Intune. Depois do documento é salvo na conta empresarial do OneDrive, em seguida, ele será considerado contexto empresarial e as políticas de proteção de aplicações do Intune serão aplicadas.
+Para um exemplo de contexto pessoal, considere um utilizador que inicia um novo documento no Word. Como é considerado um contexto pessoal, não são aplicadas as políticas de Proteção de Aplicações do Intune. Depois de o documento ter sido guardado na conta empresarial do OneDrive, ele será considerado como contexto empresarial e as políticas de Proteção de Aplicações do Intune serão aplicadas.
 
-Para obter um exemplo de contexto de trabalho, considere um utilizador que inicia a aplicação OneDrive com sua conta profissional. No contexto de trabalho, não pode mover ficheiros para uma localização de armazenamento pessoal. Posteriormente, quando utiliza o OneDrive com a sua conta pessoal, pode copiar e mover dados dos seus OneDrive pessoais, sem restrições.
+Como exemplo de contexto profissional, considere um utilizador que inicia a aplicação OneDrive com a conta profissional. No contexto de trabalho, não pode mover ficheiros para uma localização de armazenamento pessoal. Posteriormente, quando utiliza o OneDrive com a sua conta pessoal, pode copiar e mover dados dos seus OneDrive pessoais, sem restrições.
 
 - Saiba mais sobre as aplicações que suportam [MAM e várias identidades](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) com o Intune.
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Próximos passos
 
 [Como criar e implementar políticas de proteção de aplicações com o Microsoft Intune](app-protection-policies.md)
 

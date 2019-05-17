@@ -19,13 +19,13 @@ search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 0728fefc40bc82db7926faf282a69d0471c3a1ea
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
-ms.translationtype: MT
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
+ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798124"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59897141"
 ---
-# <a name="use-the-microsoft-intune-data-warehouse"></a>Utilizar o armazém de dados do Microsoft Intune
+# <a name="use-the-microsoft-intune-data-warehouse"></a>Utilizar o Data Warehouse do Microsoft Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -34,7 +34,7 @@ Utilize o Armazém de Dados do Intune para criar relatórios que forneçam infor
 -   Discriminação de versões de SO e aplicações para poder rever o estado dos dispositivos móveis
 -   Tendências de conformidade de dispositivos e inscrições para poder implementar atualizações à política de forma simples
 
-## <a name="data-warehouse-benefits"></a>Benefícios do armazém de dados
+## <a name="data-warehouse-benefits"></a>Benefícios do Data Warehouse
 
 O Armazém de Dados dá-lhe acesso a mais informações sobre o seu ambiente móvel do que o portal do Azure. Com o Armazém de Dados do Intune, pode aceder a:
 
@@ -43,14 +43,14 @@ O Armazém de Dados dá-lhe acesso a mais informações sobre o seu ambiente mó
   -  Um modelo de dados com utilização do padrão OData
 
 > [!Note]
-> Se for um através de conjuntamente gerido móveis gestão de dispositivos (MDM) com o System Center Configuration Manager e o Microsoft Intune, terá de obter os seus dados do Configuration Manager. O Armazém de Dados do Intune contém apenas dados do Intune. Pode utilizar um dashboard do Gestor de configuração do Power BI para os seus relatórios personalizados. Para obter mais informações, veja "[Announcing the Power BI solution template for System Center Configuration Manager]( https://powerbi.microsoft.com/blog/sccm-solution-template)" (Anunciar o modelo de solução do Power BI para o System Center Configuration Manager) e "[Conteúdos do Power BI para o Dynamics 365](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page)".
+> Se estiver a utilizar a gestão de dispositivos móveis (MDM) cogerida com o System Center Configuration Manager (SCCM) e o Microsoft Intune, precisará de obter os dados do Configuration Manager. O Armazém de Dados do Intune contém apenas dados do Intune. Pode utilizar um dashboard do Power BI do Configuration Manager para os relatórios personalizados. Para obter mais informações, veja "[Announcing the Power BI solution template for System Center Configuration Manager]( https://powerbi.microsoft.com/blog/sccm-solution-template)" (Anunciar o modelo de solução do Power BI para o System Center Configuration Manager) e "[Conteúdos do Power BI para o Dynamics 365](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page)".
 
 > [!Important]  
 > Agora, pode utilizar a versão v1.0 do Armazém de Dados do Intune, ao definir o parâmetro de consulta `api-version=v1.0`. As atualizações para coleções no Armazém de Dados são acumulativas por natureza e não interrompem cenários existentes.<br><br>
 > Pode experimentar as nossas funcionalidades mais recentes do Armazém de Dados com a versão beta. Para utilizar a versão beta, o seu URL tem de conter o parâmetro de consulta `api-version=beta`. A versão beta oferece funcionalidades antes de estas estarem disponíveis globalmente como um serviço suportado. À medida que o Intune adiciona novas funcionalidades, a versão beta poderá alterar o contrato de dados e comportamento. Todos os códigos personalizados ou ferramentas de relatórios dependentes da versão beta poderão interromper as atualizações contínuas.
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Próximos passos
 
 - Obtenha uma ligação e utilize o Power BI para obter informações. Para obter instruções, consulte [Connect to the Data Warehouse with Power BI (Ligar ao Armazém de Dados do Intune com o Power BI – em inglês)](reports-proc-get-a-link-powerbi.md).
 - Com a sua ligação, crie um relatório personalizado com o Power BI. Para obter instruções, veja [Create a report from the OData feed with Power BI (Criar um relatório a partir do feed OData com o Power BI)](reports-proc-create-with-odata.md).
-- Obter mais informações sobre a API do armazém de dados do Intune, o modelo de dados e relações entre entidades<!-- , and an example of creating a custom client to retrieve data,--> ver [API do armazém de dados de Intune](reports-nav-intune-data-warehouse.md).
+- Para saber mais sobre a API do Data Warehouse do Intune, o modelo de dados e as relações entre entidades,<!-- , and an example of creating a custom client to retrieve data,--> veja [API do Data Warehouse do Intune](reports-nav-intune-data-warehouse.md).

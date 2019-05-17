@@ -1,7 +1,7 @@
 ---
 title: Adicionar aplicações de linha de negócio Windows ao Microsoft Intune
 titleSuffix: ''
-description: Saiba como adicionar uma aplicação de linha de negócio (LOB) Windows através do Microsoft Intune.
+description: Saiba como adicionar aplicações de linha de negócio (LOB) Windows com o Microsoft Intune.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ca41e12136911cc0aecb6968a949fb738e2e2d77
-ms.sourcegitcommit: d1116c70bd0f2382d590091e0e66095de3925324
+ms.openlocfilehash: 0eadff455a25a22d53d58d87790a356072f9db66
+ms.sourcegitcommit: b0cf661145ccc6e3518db620af199786a623a0d9
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59504559"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64764722"
 ---
 # <a name="add-a-windows-line-of-business-app-to-microsoft-intune"></a>Adicionar aplicações de linha de negócio Windows ao Microsoft Intune
 
@@ -31,7 +31,7 @@ ms.locfileid: "59504559"
 
 Uma aplicação de linha de negócio (LOB) é uma aplicação que adiciona a partir de um ficheiro de instalação da aplicação. Normalmente, este tipo de aplicação é criado internamente. Os seguintes passos fornecem orientação para ajudá-lo a adicionar uma aplicação LOB Windows ao Microsoft Intune.
 
-## <a name="step-1-specify-the-software-setup-file"></a>Passo 1: Especifique o ficheiro de configuração de software
+## <a name="step-1-specify-the-software-setup-file"></a>Passo 1: Especificar o ficheiro de configuração do software
 
 1. Inicie sessão no [portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
@@ -40,7 +40,7 @@ Uma aplicação de linha de negócio (LOB) é uma aplicação que adiciona a par
 5. Acima da lista de aplicações, selecione **Adicionar**.
 6. No painel **Adicionar aplicação**, selecione **Aplicação de linha de negócio**.
 
-## <a name="step-2-configure-the-app-package-file"></a>Passo 2: Configurar o ficheiro de pacote de aplicação
+## <a name="step-2-configure-the-app-package-file"></a>Passo 2: Configurar o ficheiro do pacote de aplicação
 
 1. No painel **Adicionar aplicação**, selecione **Ficheiro de pacote de aplicação**.
 2. No painel **Ficheiro de pacote de aplicação**, selecione o botão Procurar. Em seguida, selecione um ficheiro de instalação do Windows com a extensão **.msi**, **.appx** ou **.appxbundle**.
@@ -55,27 +55,27 @@ Uma aplicação de linha de negócio (LOB) é uma aplicação que adiciona a par
 
 1. No painel **Adicionar aplicação**, selecione **Informações da aplicação**.
 2. No painel **Informações da aplicação**, configure as seguintes informações. Alguns dos valores neste painel podem ser preenchidos automaticamente.
-    - **Nome**: Introduza o nome da aplicação tal como aparece no portal da empresa. Certifique-se de que todos os nomes de aplicações que utiliza são exclusivos. Se existir o mesmo nome duas vezes, só aparece uma das aplicações no portal da empresa.
+    - **Nome**: introduza o nome da aplicação tal como aparece no portal da empresa. Certifique-se de que todos os nomes de aplicações que utiliza são exclusivos. Se existir o mesmo nome duas vezes, só aparece uma das aplicações no portal da empresa.
     - **Descrição**: Introduza uma descrição para a aplicação. A descrição aparece no portal da empresa.
-    - **Publisher**: Introduza o nome do publicador da aplicação.
-    - **Ignorar versão da aplicação**: Defina como **Sim** se o programador da aplicação atualiza automaticamente a aplicação. Esta opção aplica-se apenas a aplicações .msi para dispositivos móveis.
-    - **Categoria**: Selecione uma ou mais das categorias de aplicações incorporadas ou selecione uma categoria que criou. As categorias permitem que os utilizadores encontrem a aplicação mais facilmente quando procurarem no portal da empresa.
-    - **Apresentar como aplicação em destaque no Portal da empresa**: Apresente a aplicação de forma bem visível na página principal do portal da empresa quando os utilizadores procurarem aplicações.
-    - **URL de informações**: Opcionalmente, introduza o URL de um site que contenha informações sobre a aplicação. O URL aparece no portal da empresa.
-    - **URL de privacidade**: Opcionalmente, introduza o URL de um site que contém informações de privacidade para a aplicação. O URL aparece no portal da empresa.
-    - **Argumentos da linha de comandos**: Opcionalmente, introduza qualquer argumento da linha de comandos que pretende aplicar ao ficheiro. msi quando este for executado. Um exemplo é **/q**.
-    - **Desenvolvedor**: Opcionalmente, introduza o nome do programador da aplicação.
-    - **Proprietário**: Opcionalmente, introduza um nome para o proprietário desta aplicação. Por exemplo, **Departamento de RH**.
-    - **Notas de**: Introduza quaisquer notas que pretende associar esta aplicação.
-    - **Logótipo**: Carregue um ícone que está associado à aplicação. O ícone é apresentado com a aplicação quando os utilizadores procurarem no portal da empresa.
+    - **Publicador**: Introduza o nome do publicador da aplicação.
+    - **Ignorar versão da aplicação**: defina como **Sim** se a aplicação for atualizada automaticamente pelo programador da aplicação. Esta opção aplica-se apenas a aplicações .msi para dispositivos móveis.
+    - **Categoria**: selecione uma ou mais das categorias de aplicações incorporadas ou selecione uma categoria que tenha criado. As categorias permitem que os utilizadores encontrem a aplicação mais facilmente quando procurarem no portal da empresa.
+    - **Apresentar como aplicação em destaque no Portal da Empresa**: Apresente a aplicação de forma bem visível na página principal do portal da empresa quando os utilizadores procurarem aplicações.
+    - **URL de informações**: opcionalmente, introduza o URL de um site que contenha informações sobre a aplicação. O URL aparece no portal da empresa.
+    - **URL de privacidade**: opcionalmente, introduza o URL de um site que contenha informações sobre a privacidade da aplicação. O URL aparece no portal da empresa.
+    - **Argumentos da linha de comandos**: opcionalmente, pode introduzir qualquer argumento da linha de comandos que pretenda aplicar ao ficheiro .msi quando este for executado.  Um exemplo é **/q**. Não inclua o comando msiexec ou os argumentos, tal como **/i** ou **/x**, como são utilizadas automaticamente. Para obter mais informações, consulte [opções de linha de comandos](https://docs.microsoft.com/windows/desktop/Msi/command-line-options). 
+    - **Programador**: opcionalmente, introduza o nome do programador da aplicação.
+    - **Proprietário**: opcionalmente, introduza o nome do proprietário desta aplicação. Por exemplo, **Departamento de RH**.
+    - **Notas**: introduza quaisquer notas que queira associar a esta aplicação.
+    - **Logótipo**: carregue um ícone associado à aplicação. O ícone é apresentado com a aplicação quando os utilizadores procurarem no portal da empresa.
 3. Quando tiver terminado, selecione **OK**.
 
-## <a name="step-4-finish-up"></a>Passo 4: Concluir
+## <a name="step-4-finish-up"></a>Passo 4: Concluir
 
 1. No painel **Adicionar aplicação**, verifique se configurou as informações da aplicação corretamente.
 2. Selecione **Adicionar** para carregar a aplicação para o Intune.
 
-## <a name="step-5-update-a-line-of-business-app"></a>Passo 5: Atualizar uma aplicação de linha de negócio
+## <a name="step-5-update-a-line-of-business-app"></a>Passo 5: Atualizar uma aplicação de linha de negócio
 
 [!INCLUDE [shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]
 
@@ -93,4 +93,4 @@ Esta funcionalidade é útil para evitar que ocorra uma condição race. Por exe
 
 - Saiba mais sobre as formas como pode monitorizar as propriedades e atribuições da sua aplicação. Veja [Como monitorizar informações e atribuições da aplicação](apps-monitor.md).
 
-- Saiba mais sobre o contexto da sua aplicação no Intune. Ver [descrição geral do ciclo de vida de aplicações no Microsoft Intune](app-lifecycle.md).
+- Saiba mais sobre o contexto da sua aplicação no Intune. Veja [Descrição geral do ciclo de vida das aplicações no Microsoft Intune](app-lifecycle.md).

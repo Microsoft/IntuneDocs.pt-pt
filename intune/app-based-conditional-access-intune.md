@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: b4c39a1d95a10c96b8f34703f99c4d8414efbbf0
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
-ms.translationtype: MT
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
+ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798280"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59894064"
 ---
 # <a name="app-based-conditional-access-with-intune"></a>Acesso condicional com base na aplicação com o Intune
 
@@ -69,13 +69,13 @@ Neste exemplo, o administrador tem políticas de proteção de aplicações apli
 
 3. A aplicação de mediador é instalada no dispositivo.
 
-4. A aplicação de Mediador inicia o processo de registo do Azure AD, que cria um registo de dispositivo no Azure AD. Isso não é o mesmo que o processo de inscrição de gestão (MDM) do dispositivo móvel, mas este registo é necessário para que as políticas de acesso condicional podem ser impostas no dispositivo.
+4. A aplicação de mediador inicia o processo de registo do Microsoft Azure AD que cria um registo de dispositivo no Microsoft Azure AD. Este processo não é igual ao processo de inscrição de gestão de dispositivos móveis (MDM). Contudo, este registo é necessário para que as políticas de acesso condicional possam ser aplicadas no dispositivo.
 
-5. A aplicação de mediador verifica a identidade da aplicação. Há uma camada de segurança para que a aplicação de Mediador possa validar se aplicação está autorizada para utilização pelo utilizador.
+5. A aplicação de mediador verifica a identidade da aplicação. Existe uma camada de segurança para que a aplicação de mediador possa validar se a aplicação está autorizada para ser utilizada pelo utilizador.
 
 6. A aplicação de mediador envia o ID da Aplicação Cliente para o Azure AD como parte do processo de autenticação do utilizador para verificar se este consta na lista aprovada de políticas.
 
-7. O Azure AD permite ao utilizador autenticar-se e utilizar a aplicação com base na lista aprovada de políticas. Se a aplicação não estiver na lista, do Azure AD nega o acesso à aplicação.
+7. O Azure AD permite ao utilizador autenticar-se e utilizar a aplicação com base na lista aprovada de políticas. Se a aplicação não estiver na lista, o Microsoft Azure AD recusará o acesso à aplicação.
 
 8. A aplicação Outlook comunica com o Serviço Cloud do Outlook para iniciar a comunicação com o Exchange Online.
 
@@ -85,7 +85,7 @@ Neste exemplo, o administrador tem políticas de proteção de aplicações apli
 
 11. O e-mail empresarial é entregue na caixa de correio do utilizador.
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Próximos passos
 [Criar uma política de acesso condicional com base na aplicação](app-based-conditional-access-intune-create.md)
 
 [Bloquear aplicações que não tenham autenticação moderna](app-modern-authentication-block.md)

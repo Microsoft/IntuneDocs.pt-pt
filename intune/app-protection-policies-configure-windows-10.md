@@ -1,7 +1,7 @@
 ---
-title: Configurar políticas de proteção de aplicações para Windows 10
+title: Configurar políticas de proteção de aplicações para o Windows 10
 titleSuffix: Microsoft Intune
-description: Este tópico descreve como configurar políticas de proteção de aplicações (aplicação) para dispositivos Windows 10.
+description: Este tópico descreve como configurar políticas de proteção de aplicações (APP) para dispositivos Windows 10.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 9f7bff9fa319f8df1abc4622237d1f9b98b9a685
-ms.sourcegitcommit: 617bd653c34c1e6a4e2ad61811c5912f8dab775c
-ms.translationtype: MT
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
+ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/10/2019
-ms.locfileid: "59476501"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59898947"
 ---
 # <a name="get-ready-to-configure-app-protection-policies-for-windows-10"></a>Preparar-se para configurar políticas de proteção de aplicações para o Windows 10 
 
@@ -55,6 +55,6 @@ Ative a gestão de aplicações móveis (MAM) para o Windows 10 ao definir o for
 
 5.  Clique em **Guardar**.
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Próximos passos
 
 [Criar uma política de proteção de aplicações WIP](windows-information-protection-policy-create.md)

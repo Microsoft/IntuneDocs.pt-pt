@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 40f9ada715570de7b5b2f95292b7ed0d238242d2
-ms.sourcegitcommit: 04d29d47b61486b3586a0e0e5e8e48762351f2a3
-ms.translationtype: MT
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
+ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59509709"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59897107"
 ---
 # <a name="intune-network-configuration-requirements-and-bandwidth"></a>Largura de banda e requisitos de configuração de rede do Intune
 
@@ -69,15 +69,15 @@ Seguem-se as definições típicas para utilizar um servidor proxy que coloca co
 | Tamanho do ficheiro de cache individual |                950 MB                 |                                                                     Esta definição pode não estar disponível em todos os servidores proxy com colocação em cache.                                                                     |
 |   Tipos de objeto a colocar em cache    | HTTP<br /><br />HTTPS<br /><br />BITS |                                               Os pacotes Intune são ficheiros CAB obtidos através de uma transferência do Serviço de Transferência Inteligente em Segundo Plano (BITS) através de HTTP.                                               |
 > [!NOTE]
-> Se utilizar um servidor proxy para colocar em cache pedidos de conteúdo, comunicação apenas é encriptada entre o cliente e o proxy e de proxy para o Intune. A ligação do cliente para o Intune não será encriptado ponto-a-ponto.
+> Se utilizar um servidor proxy para colocar em cache pedidos de conteúdo, a comunicação só será encriptada entre o cliente e o proxy e do proxy para o Intune. A ligação do cliente para o Intune não será encriptada ponto a ponto.
 
 Para obter informações sobre como utilizar um servidor proxy para colocar conteúdos em cache, consulte a documentação da sua solução de servidor proxy.
 
-### <a name="use-background-intelligent-transfer-service-bits-on-computers"></a>Utilizar o serviço de transferência inteligente em segundo plano (BITS) em computadores
-Durante as horas que configurar, pode utilizar o BITS num computador Windows para reduzir a largura de banda de rede. Pode configurar uma política de BITS na **largura de banda de rede** página da política de agente do Intune.
+### <a name="use-background-intelligent-transfer-service-bits-on-computers"></a>Utilizar o Serviço de Transferência Inteligente em Segundo Plano (BITS) nos computadores
+Durante as horas que configurar, pode utilizar o BITS num computador Windows para reduzir a largura de banda da rede. Pode configurar uma política do BITS na página **Largura de banda de rede** da política do Agente do Intune.
 
 > [!NOTE]
-> Para a gestão de MDM no Windows, apenas o sistema operacional interface de gestão para o tipo de aplicação MobileMSI usa o BITS para transferir. AppX/MsiX usar sua própria pilha de download não BITS e aplicações de Win32 por meio do agente do Intune utilizam a Otimização da entrega em vez de BITS.
+> Na gestão MDM no Windows, apenas a interface de gestão do SO para o tipo de aplicação MobileMSI utiliza o BITS para a transferência. O AppX/MsiX utiliza a sua própria pilha de transferência não BITS e as aplicações Win32 através do agente do Intune utilizam a Otimização de Entrega em vez do BITS.
 
 Para saber mais sobre o BITS e computadores Windows, veja [Background Intelligent Transfer Service (Serviço de Transferência Inteligente em Segundo Plano)](http://technet.microsoft.com/library/bb968799.aspx) na Biblioteca TechNet.
 
@@ -91,22 +91,22 @@ Os clientes Intune podem utilizar o BranchCache para reduzir o tráfego da rede 
 
 Para utilizar o BranchCache, o computador cliente tem de ter o BranchCache ativado e, em seguida, ser configurado para o **modo de cache distribuída**.
 
-Quando o cliente do Intune é instalado em computadores, BranchCache e o modo de cache distribuída são ativados por predefinição. No entanto, se a política de grupo tiver desativado o BranchCache, o Intune não substitui essa política e BranchCache permanece desativado.
+Quando o cliente do Intune é instalado nos computadores, o BranchCache e o modo de cache distribuída são ativados, por predefinição. No entanto, se a Política de Grupo tiver desativado o BranchCache, o Intune não substituirá essa política e o BranchCache permanecerá desativado.
 
-Se utiliza o BranchCache, trabalhe em conjunto com outros administradores na sua organização para gerir a Política de Grupo e a política de Firewall do Intune. Certifique-se de que não implementam políticas que desativem o BranchCache ou exceções da Firewall. Para obter mais informações sobre o BranchCache, consulte [Descrição Geral do BranchCache](http://technet.microsoft.com/library/hh831696.aspx).
+Se utiliza o BranchCache, trabalhe em conjunto com outros administradores na sua organização para gerir a Política de Grupo e a política de Firewall do Intune. Confirme que não implementam políticas que desativem o BranchCache ou exceções da Firewall. Para obter mais informações sobre o BranchCache, consulte [Descrição Geral do BranchCache](http://technet.microsoft.com/library/hh831696.aspx).
 
 ## <a name="network-communication-requirements"></a>Requisitos da comunicação de rede
 
-Ative as comunicações de rede entre os dispositivos que gere e os pontos finais necessários para serviços baseados na nuvem.
+Ative as comunicações de rede entre os dispositivos que gere e os pontos finais que são precisos para serviços baseados na cloud.
 
-Como um serviço apenas na cloud, o Intune não exige infraestrutura no local, como servidores ou gateways.
+Como um serviço apenas na cloud, o Intune não precisa de infraestrutura no local, como servidores ou gateways.
 
-Para gerir dispositivos por trás de firewalls e servidores proxy, tem de ativar a comunicação do Intune.
+Para gerir dispositivos protegidos por firewalls e servidores proxy, tem de ativar as comunicações para o Intune.
 
 - O servidor proxy tem de suportar **HTTP (80)** e **HTTPS(443)**, porque os clientes do Intune utilizam ambos os protocolos
-- Para algumas tarefas (como transferir as atualizações de software), o Intune necessita de acesso ao servidor de proxy não autenticados para manage.microsoft.com
+- Para certas tarefas (como transferir atualizações de software), o Intune necessita de acesso não autenticado do servidor proxy ao site manage.microsoft.com
 
-Pode modificar as definições do servidor proxy em computadores cliente individuais. Também pode utilizar as definições de política de grupo para alterar as definições para todos os computadores de cliente localizados atrás de um servidor de proxy especificado.
+Pode modificar as definições do servidor proxy em computadores cliente individuais. Também pode utilizar as definições da Política de Grupo para alterar as definições para todos os computadores cliente localizados atrás de um servidor proxy especificado.
 
 
 <!--
@@ -159,12 +159,12 @@ As tabelas que se seguem listam as portas e os serviços a que o cliente do Intu
 ### <a name="apple-device-network-information"></a>Informações da rede de dispositivos Apple
 
 
-|Utilizado para|Nome de anfitrião (endereço IP/sub-rede)|Protocolo|Porta|
+|Utilizado para|Nome do anfitrião (endereço IP/sub-rede)|Protocolo|Porta|
 |-----|--------|------|-------|
-|Receber notificações Push do serviço do Intune através do Apple Push Notification Service (APNS). Consulte a documentação da Apple [aqui](https://support.apple.com/en-us/HT203609)|                                    gateway.push.apple.com (17.0.0.0/8)                                  |    TCP     |     2195     |
-|Enviar comentários para o serviço do Intune através do Apple Push Notification Service (APNS)|                                  feedback.push.apple.com(17.0.0.0/8)                                  |    TCP     |     2196     |
-|Recuperar e exibir o conteúdo a partir de servidores da Apple|itunes.apple.com<br>\*.itunes.apple.com<br>\*.mzstatic.com<br>\*.phobos.apple.com<br> \*.phobos.itunes-apple.com.akadns.net |    HTTP    |      80      |
-|Comunicações com os servidores do APNS|#-courier.push.apple.com (17.0.0.0/8)<br>'#' é um número aleatório entre 0 e 50.|    TCP     |  5223 e 443  |
-|Várias funcionalidades, inclusive, acesso a World Wide Web, loja do iTunes, loja de aplicações de macOS, iCloud, mensagens, etc. |phobos.apple.com<br>ocsp.apple.com<br>ax.itunes.apple.com<br>ax.itunes.apple.com.edgesuite.net| HTTP/HTTPS |  80 ou 443   |
+|Receber Notificações push do serviço do Intune através do Serviço Apple Push Notification (APNS). Veja a documentação da Apple [aqui](https://support.apple.com/en-us/HT203609)|                                    gateway.push.apple.com (17.0.0.0/8)                                  |    TCP     |     2195     |
+|Enviar comentários para o serviço do Intune através do Serviço Apple Push Notification (APNS)|                                  feedback.push.apple.com(17.0.0.0/8)                                  |    TCP     |     2196     |
+|Obter e apresentar o conteúdo de servidores da Apple|itunes.apple.com<br>\*.itunes.apple.com<br>\*.mzstatic.com<br>\*.phobos.apple.com<br> \*.phobos.itunes-apple.com.akadns.net |    HTTP    |      80      |
+|Comunicações com os servidores do APNS|#-courier.push.apple.com (17.0.0.0/8)<br>'#' é um número aleatório de 0 a 50.|    TCP     |  5223 e 443  |
+|Várias funcionalidades, incluindo o acesso à World Wide Web, loja do iTunes, loja de aplicações do macOS, iCloud, mensagens, etc. |phobos.apple.com<br>ocsp.apple.com<br>ax.itunes.apple.com<br>ax.itunes.apple.com.edgesuite.net| HTTP/HTTPS |  80 ou 443   |
 
-Para obter mais informações, consulte da Apple [portas TCP e UDP, usadas por produtos de software da Apple](https://support.apple.com/en-us/HT202944), [sobre o macOS, iOS e o iTunes de ligações de anfitrião do servidor e o iTunes fundo processos](https://support.apple.com/en-us/HT201999), e [se sua os clientes macOS e iOS não estão a receber notificações push da Apple](https://support.apple.com/en-us/HT203609).
+Para obter mais informações, veja [Portas TCP e UDP utilizadas pelos produtos de software Apple](https://support.apple.com/en-us/HT202944), [Acerca das ligações aos hosts dos servidores do macOS, iOS e iTunes e dos processos em segundo plano do iTunes](https://support.apple.com/en-us/HT201999) e [Se os clientes macOS e iOS não receberem notificações por push da Apple](https://support.apple.com/en-us/HT203609).

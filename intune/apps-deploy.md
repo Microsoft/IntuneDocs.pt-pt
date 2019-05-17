@@ -1,7 +1,7 @@
 ---
 title: Atribuir aplicações a grupos no Microsoft Intune
 titleSuffix: ''
-description: Saiba como atribuir uma aplicação do Intune para grupos de utilizadores ou dispositivos com o Microsoft Intune.
+description: Saiba como atribuir uma aplicação do Intune a grupos de utilizadores ou dispositivos com o Microsoft Intune.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 1db613f93e50caa377297e3873f6817a39714fe7
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
-ms.translationtype: MT
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
+ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799566"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59900626"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Atribuir aplicações a grupos com o Microsoft Intune
 
@@ -32,7 +32,7 @@ ms.locfileid: "58799566"
 Depois de [adicionar uma aplicação](apps-add.md) ao Microsoft Intune, pode atribuí-la a utilizadores e dispositivos. É importante que tenha em atenção que pode atribuir uma aplicação a um dispositivo quer este seja ou não gerido pelo Intune.
 
 > [!NOTE]
-> O objetivo de implementação de disponibilidade não é suportado para grupos de dispositivos, grupos de utilizadores apenas são suportados.
+> A intenção Implementação disponível não é suportada para grupos de dispositivos, apenas os grupos de utilizadores são suportados.
 
 A seguinte tabela indica as várias opções para atribuir as aplicações a utilizadores e a dispositivos:
 
@@ -63,15 +63,15 @@ A seguinte tabela indica as várias opções para atribuir as aplicações a uti
 6. Na secção **Gerir** do menu, selecione **Atribuições**.
 7. Selecione **Adicionar Grupo** para abrir o painel **Adicionar grupo** que está relacionado com a aplicação.
 8. Para a aplicação específica, selecione um **tipo de atribuição**:
-   - **Disponível para dispositivos inscritos**: Atribua a aplicação a grupos de utilizadores que podem instalar a aplicação a partir de um site ou da aplicação Portal da empresa.
-   - **Disponível com ou sem inscrição**: Atribua esta aplicação a grupos de utilizadores cujos dispositivos não inscritos no Intune. Os utilizadores tem de ser atribuídos uma licença do Intune, consulte [licenças do Intune](licenses.md).
-   - **Necessário**: A aplicação está instalada nos dispositivos nos grupos selecionados. Algumas plataformas podem ter os pedidos adicionais para o utilizador final confirmar antes de inicia a instalação da aplicação.
-   - **Desinstalar**: A aplicação é desinstalada dos dispositivos nos grupos selecionados, se o Intune anteriormente instalou a aplicação no dispositivo por meio de um "disponível para dispositivos inscritos" ou "Required" atribuição usando a implantação do mesmo. Ligações da Web não podem ser removidas após a implementação.
+   - **Disponível para dispositivos inscritos**: atribua a aplicação a grupos de utilizadores que podem instalar a aplicação a partir de um site ou da aplicação do Portal da Empresa.
+   - **Disponível com ou sem inscrição**: atribua esta aplicação a grupos de utilizadores cujos dispositivos não estão inscritos no Intune. Os utilizadores tem de ser atribuídos a uma licença do Intune; veja [Licenças do Intune](licenses.md).
+   - **Obrigatório**: a aplicação é instalada em dispositivos nos grupos selecionados. Algumas plataformas podem ter mais avisos para o utilizador final confirmar antes de começar a instalação da aplicação.
+   - **Desinstalar**: a aplicação é desinstalada dos dispositivos nos grupos selecionados, caso o Intune tenha instalado a aplicação anteriormente no dispositivo através de um tipo de atribuição “Disponível para dispositivos inscritos” ou “Obrigatório” ao utilizar a mesma implementação. As ligações da Web não podem ser removidas após a implementação.
 
      > [!NOTE]
-     > **Apenas para aplicações iOS**: Se tiver criado um iOS perfil VPN que contém as definições de VPN por aplicação, pode selecionar o perfil VPN em **VPN**. Quando a aplicação for executada, a ligação VPN será aberta. Para obter mais informações, veja [Definições VPN para dispositivos iOS](vpn-settings-ios.md).
+     > **Apenas para aplicações iOS**: se tiver criado um perfil VPN para iOS que contenha definições de VPN por aplicação, poderá selecionar o perfil VPN em **VPN**. Quando a aplicação for executada, a ligação VPN será aberta. Para obter mais informações, veja [Definições VPN para dispositivos iOS](vpn-settings-ios.md).
      >
-     > **Para aplicações Android apenas**: Se implementar uma aplicação Android como **disponível com ou sem inscrição**, relatórios de estado só estará disponível em dispositivos inscritos.
+     > **Apenas para aplicações Android**: se implementar uma aplicação Android como **Disponível com ou sem inscrição**, os relatórios de estado só estarão disponíveis em dispositivos inscritos.
 
 9. Selecione **Grupos Incluídos** para selecionar os grupos de utilizadores que são afetados por esta atribuição de aplicações.
 10. Escolha **Selecionar** após selecionar um ou mais grupos para incluir.
@@ -125,20 +125,20 @@ Por vezes, a mesma aplicação é atribuída a múltiplos grupos, mas com inten�
 > Apenas para aplicações da loja iOS geridas: quando adiciona estas aplicações ao Microsoft Intune e as atribui como **Necessário**, estas aplicações são criadas automaticamente com as intenções **Necessário** e **Disponível**.<br><br>
 > As aplicações da Loja iOS (não aplicações iOS obtidas pelo VPP) que são direcionadas com a intenção necessária serão aplicadas no dispositivo quando registar o mesmo e também serão apresentadas na aplicação Portal da Empresa.
 
-## <a name="managed-google-play-app-deployment-to-unmanaged-devices"></a>Managed Google Play a implementação de aplicações para dispositivos não geridos
-Para dispositivos Android num não inscritos proteção política sem inscrição de aplicações (APP-PODEMOS) cenário de implementação, pode utilizar Google Play gerido para implementar aplicações da loja e aplicações de linha de negócio (LOB) aos utilizadores. Aplicações da Google Play direcionadas como geridas **disponível com ou sem inscrição** aparecerá na aplicação da Play Store no dispositivo do utilizador final e não na aplicação Portal da empresa. Utilizador final irá procurar e instalar as aplicações implementadas dessa maneira, a partir da aplicação da Play. Uma vez que as aplicações estão a ser instaladas a partir do Google Play gerido, o utilizador final não será necessário alterar suas configurações de dispositivo para permitir a instalação de aplicações de origens desconhecidas, que significa que os dispositivos estarão mais seguros. Se o programador da aplicação publica uma nova versão de uma aplicação Play, que foi instalada no dispositivo de um utilizador, a aplicação será atualizada automaticamente pelo Play. 
+## <a name="managed-google-play-app-deployment-to-unmanaged-devices"></a>Implementação de aplicações do Managed Google Play em dispositivos não geridos
+Para dispositivos Android num cenário de implementação de Política de Proteção de Aplicações Sem Inscrição (APP-WE), pode utilizar o Managed Google Play para implementar aplicações da loja e aplicações de linha de negócio (LOB) para os utilizadores. As aplicações do Managed Google Play visadas como **Disponíveis com ou sem inscrição** aparecerão na aplicação da Play Store no dispositivo do utilizador final e não na aplicação do Portal da Empresa. O utilizador final irá procurar e instalar as aplicações implementadas desta maneira, na aplicação Play. Uma vez que as aplicações estão a ser instaladas a partir do Managed Google Play, o utilizador final não precisará de alterar as configurações dos dispositivos para permitir a instalação de aplicações de origens desconhecidas, o que significa que os dispositivos estarão mais seguros. Se o programador da aplicação publicar uma nova versão de uma aplicação no Play, que foi instalada no dispositivo de um utilizador, a aplicação será atualizada automaticamente pelo Play. 
 
-Passos para atribuir uma aplicação do Google Play gerido para dispositivos não geridos:
+Passos para atribuir uma aplicação do Managed Google Play a dispositivos não geridos:
 
-1. Ligar o seu inquilino do Intune ao Google Play gerido. Se já tiver feito isso para gerir o perfil de trabalho do Android Enterprise, dedicada, ou dispositivos totalmente geridos, não é necessário fazê-lo novamente.
-2. Adicione aplicações a partir da Google Play gerido para a consola do Intune.
-3. Aplicações geridas do Google Play como de destino **disponível com ou sem inscrição** ao grupo de utilizadores pretendidos. **Necessário** e **desinstalar** direcionamento de aplicação não são suportados para dispositivos não inscritos.
-4. Atribua uma política de proteção de aplicações para o grupo de utilizadores.
-5. Da próxima vez que o utilizador final abre-se a aplicação Portal da empresa, verão uma mensagem a indicar que existem aplicações disponíveis para os mesmos na aplicação da Play Store.  O utilizador pode tocar nesta notificação para ser colocado diretamente para a aplicação da Play para ver as aplicações empresariais ou podem navegar para a aplicação da Play Store separadamente.
-6. O utilizador final pode expandir o menu de contexto dentro da aplicação da Play Store e alternar entre a conta pessoal do Google (onde veem as aplicações pessoais) e a respetiva conta profissional (onde irá ver aplicações LOB direcionadas aos mesmos e da loja). Os utilizadores finais instalar as aplicações ao tocar instalação na aplicação da Play Store.
+1. Ligue o inquilino do Intune ao Managed Google Play. Se já o tiver feito para gerir o perfil de trabalho do Android Enterprise, os dispositivos dedicados ou totalmente geridos, não será necessário fazê-lo novamente.
+2. Adicione aplicações a partir do Managed Google Play à consola do Intune.
+3. Vise aplicações do Managed Google Play como **Disponíveis com ou sem inscrição** para o grupo de utilizadores pretendido. As opções **Obrigatório** e **Desinstalar** para aplicações visadas não são suportada para dispositivos não inscritos.
+4. Atribua uma Política de Proteção de Aplicações ao grupo de utilizadores.
+5. Da próxima vez que o utilizador final abrir a aplicação do Portal da Empresa, verá uma mensagem a indicar que existem aplicações disponíveis na aplicação Play Store.  O utilizador pode tocar nesta notificação para ser ir diretamente para a aplicação Play para ver as aplicações empresariais ou pode navegar para a aplicação Play Store separadamente.
+6. O utilizador final pode expandir o menu de contexto dentro da aplicação Play Store e alternar entre a conta Google pessoal (onde vê as aplicações pessoais) e a conta profissional (onde verá as aplicações da loja e as aplicações LOB que lhes eram destinadas). Os utilizadores finais instalam as aplicações ao tocar em Instalar na aplicação Play Store.
 
-Quando uma eliminação seletiva de aplicações é emitida na consola do Intune, a conta profissional será removida automaticamente a partir da aplicação da Play Store e o utilizador final será de que ponto deixará de ver aplicações de trabalho no catálogo de aplicações Play Store. Quando a conta profissional é removida a partir de um dispositivo, as aplicações instaladas a partir da Play Store permanecerão instaladas no dispositivo e não irão desinstalar. 
+Quando uma eliminação seletiva de aplicações é emitida na consola do Intune, a conta profissional será removida automaticamente da aplicação Play Store e o utilizador final, a partir desse momento, deixará de ver aplicações de trabalho no catálogo das aplicações da Play Store. Quando a conta profissional é removida de um dispositivo, as aplicações instaladas a partir da Play Store permanecerão instaladas no dispositivo e não serão desinstaladas. 
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Para saber mais sobre a monitorização de atribuições de aplicações, veja [Como monitorizar aplicações](apps-monitor.md).

@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: c2a968334ecf3ddb90a3f97841cc191c553b39ca
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
-ms.translationtype: MT
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
+ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799405"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59893872"
 ---
 # <a name="set-up-enrollment-for-macos-devices-in-intune"></a>Configurar a inscrição para dispositivos macOS no Intune
 
@@ -41,7 +41,7 @@ Antes de configurar a inscrição de dispositivos macOS, tem de cumprir os segui
 - [Definir a Autoridade de MDM](mdm-authority-set.md)
 - [Criar grupos](groups-add.md)
 - [Configurar o Portal da Empresa](company-portal-app.md)
-- Atribuir licenças de utilizador no [Centro de administração do Microsoft 365](http://go.microsoft.com/fwlink/p/?LinkId=698854)
+- Atribuir licenças de utilizador no [Centro de administração do Microsoft 365](http://go.microsoft.com/fwlink/p/?LinkId=698854)
 - [Obter um certificado push de MDM da Apple](apple-mdm-push-certificate-get.md)
 
 ## <a name="user-owned-macos-devices-byod"></a>Dispositivos Mac OS propriedade do utilizador (BYOD)
@@ -49,7 +49,7 @@ Antes de configurar a inscrição de dispositivos macOS, tem de cumprir os segui
 Pode permitir que os seus utilizadores inscrevam os respetivos dispositivos pessoais na gestão do Intune. Chama-se a isto "Bring Your Own Device (Traga o Seu Próprio Dispositivo)" ou BYOD. Assim que cumprir os pré-requisitos e tiver atribuído licenças aos utilizadores, estes podem inscrever dispositivos ao:
 - Aceder ao [site do Portal da Empresa](https://portal.manage.microsoft.com) ou ao
 - Transferir a aplicação Portal da Empresa.
-Pode também enviar-lhes uma ligação para passos de inscrição online: [Inscrever o seu dispositivo macOS no Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos).
+Também poderá enviar-lhes uma ligação para os passos de inscrição online: [Inscreva o dispositivo macOS no Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos).
 
 Para obter informações sobre outras tarefas do utilizador final, veja estes artigos:
 
@@ -58,8 +58,8 @@ Para obter informações sobre outras tarefas do utilizador final, veja estes ar
 
 ## <a name="company-owned-macos-devices"></a>Dispositivos macOS pertencentes à empresa
 Para as organizações que compram dispositivos para os respetivos utilizadores, o Intune suporta os seguintes métodos de inscrição de dispositivos macOS pertencentes à empresa:
-- [Programa de inscrição de dispositivos da Apple (DEP)](device-enrollment-program-enroll-macos.md): As organizações podem adquirir dispositivos macOS através do programa de inscrição de dispositivos da Apple (DEP). O DEP permite-lhe implementar um perfil de inscrição através de uma ligação sem fios para incluir os dispositivos na gestão.
-- [O Gestor de inscrição de dispositivos (DEM)](device-enrollment-manager-enroll.md): Pode utilizar uma conta DEM para inscrever até 1000 dispositivos.
+- [Programa de Registo de Aparelho (DEP) da Apple](device-enrollment-program-enroll-macos.md): as organizações podem adquirir dispositivos macOS através do Programa de Registo de Aparelho (DEP) da Apple. O DEP permite-lhe implementar um perfil de inscrição através de uma ligação sem fios para incluir os dispositivos na gestão.
+- [Gestor de inscrições de dispositivos (DEM)](device-enrollment-manager-enroll.md): pode utilizar uma conta DEM para inscrever até 1000 dispositivos.
 
 ## <a name="block-macos-enrollment"></a>Bloquear a inscrição de dispositivos macOS
 Por predefinição, o Intune permite a inscrição de dispositivos macOS. Para impedir a inscrição de dispositivos macOS, veja [Set device type restrictions (Definir restrições de tipos de dispositivos)](enrollment-restrictions-set.md).
@@ -71,7 +71,7 @@ Por predefinição, o Intune permite a inscrição de dispositivos macOS. Para i
 
 Pode inscrever máquinas virtuais macOS para teste com o Parallels Desktop ou a VMware Fusion. 
 
-Para o Parallels Desktop, precisa de definir o tipo de hardware e o número de série das máquinas virtuais, para que o Intune possa reorganizá-las. Siga as instruções do Parallels para definir o tipo de hardware e [número de série](http://kb.parallels.com/123455) para configurar as definições necessárias para fins de teste. Recomendamos que faça corresponder o tipo de hardware do dispositivo a executar as máquinas virtuais ao tipo de hardware das máquinas virtuais que está a criar. Pode encontrar este tipo de hardware em **Menu Apple** > **Acerca deste Mac** > **Relatório do Sistema** > **Identificador de Modelo**. 
+Para o Parallels Desktop, precisa de definir o tipo de hardware e o número de série das máquinas virtuais, para que o Intune possa reorganizá-las. Siga as instruções do Parallels para definir o tipo de hardware e o [número de série](http://kb.parallels.com/123455) para configurar as definições necessárias para o teste. Recomendamos que faça corresponder o tipo de hardware do dispositivo a executar as máquinas virtuais ao tipo de hardware das máquinas virtuais que está a criar. Pode encontrar este tipo de hardware em **Menu Apple** > **Acerca deste Mac** > **Relatório do Sistema** > **Identificador de Modelo**. 
 
 Para a VMware Fusion, precisa de [editar o ficheiro .vmx](https://kb.vmware.com/s/article/1014782) para definir o número de série e o modelo de hardware da máquina virtual. Recomendamos que faça corresponder o tipo de hardware do dispositivo a executar as máquinas virtuais ao tipo de hardware das máquinas virtuais que está a criar. Pode encontrar este tipo de hardware em **Menu Apple** > **Acerca deste Mac** > **Relatório do Sistema** > **Identificador de Modelo**. 
 
@@ -83,6 +83,6 @@ Para ser um utilizador aprovado, o utilizador final, depois da inscrição atrav
 
 Para saber se um dispositivo é um Utilizador Aprovado, aceda ao portal do Intune e escolha **Dispositivos** > **Todos os dispositivos**> escolha o dispositivo > **Hardware**. Marque o campo **Utilizador Aprovado**.
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Assim que os dispositivos macOS forem inscritos, pode [criar definições personalizadas para dispositivos macOS](custom-settings-macos.md).

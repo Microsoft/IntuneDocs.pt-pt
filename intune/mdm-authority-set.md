@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 898c4eee19aa50136736f4ee72c55e4e8931317d
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
-ms.translationtype: MT
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
+ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799298"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59894778"
 ---
 # <a name="set-the-mobile-device-management-authority"></a>Definir a autoridade de gestão de dispositivos móveis
 
@@ -35,21 +35,21 @@ As configurações possíveis são:
 
 - **Intune Autónomo** – gestão apenas na cloud, que configura através do portal do Azure. Inclui o conjunto completo das funcionalidades que o Intune oferece. [Defina a autoridade de MDM na consola do Intune](#set-mdm-authority-to-intune).
 
-- **Cogestão Intune** -integração da solução de cloud do Intune com o System Center Configuration Manager para dispositivos Windows 10. Configura o Intune com a consola do Configuration Manager. [Configurar a inscrição automática de dispositivos no Intune](https://docs.microsoft.com/sccm/comanage/tutorial-co-manage-clients#configure-auto-enrollment-of-devices-to-intune). 
+- **Cogestão do Intune** – integração da solução cloud do Intune com o System Center Configuration Manager para os dispositivos Windows 10. Configura o Intune com a consola do Configuration Manager. [Configurar a inscrição automática de dispositivos no Intune](https://docs.microsoft.com/sccm/comanage/tutorial-co-manage-clients#configure-auto-enrollment-of-devices-to-intune). 
 
     > [!Important]
-    >Integração de novos clientes MDM híbrida foi preterida. Para obter mais informações, consulte a [mover da gestão de dispositivos móveis híbrida para o Intune no Azure](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150) postagem de blog.
+    >A inclusão de novos clientes da MDM híbrida foi preterida. Para obter mais informações, veja a mensagem de blogue [Move from Hybrid Mobile Device Management to Intune on Azure](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150) (Mudar da Gestão de Dispositivos Móveis Híbrida para o Intune no Azure).
 
-- **Gestão de Dispositivos Móveis para o Office 365** – integração do Office 365 com a solução cloud do Intune. Configurar o Intune a partir do seu centro de administração do Microsoft 365. Inclui um subconjunto das funcionalidades que estão disponíveis com o Intune Autónomo. Defina a autoridade MDM no Centro de administração do Microsoft 365.
+- **Gestão de Dispositivos Móveis para o Office 365** – integração do Office 365 com a solução cloud do Intune. Deve configurar o Intune no centro de administração do Microsoft 365. Inclui um subconjunto das funcionalidades que estão disponíveis com o Intune Autónomo. Defina a autoridade de MDM no centro de administração do Microsoft 365.
 
 > [!IMPORTANT]
-> No Configuration Manager versão 1610 ou posterior e no Microsoft Intune versão 1705, pode alterar a autoridade MDM sem ter de contactar o Suporte da Microsoft e sem ter de anular a inscrição e inscrever novamente os seus dispositivos geridos existentes. Para obter detalhes, consulte [preparar a alteração da autoridade de MDM para o Configuration Manager](mdm-authority-set.md#prepare-to-change-the-mdm-authority-to-configuration-manager).
+> No Configuration Manager versão 1610 ou posterior e no Microsoft Intune versão 1705, pode alterar a autoridade MDM sem ter de contactar o Suporte da Microsoft e sem ter de anular a inscrição e inscrever novamente os seus dispositivos geridos existentes. Para detalhes, veja [Preparar para mudar a autoridade de MDM para o Configuration Manager](mdm-authority-set.md#prepare-to-change-the-mdm-authority-to-configuration-manager).
 
 ## <a name="set-mdm-authority-to-intune"></a>Definir a autoridade de MDM como o Intune
 
 Se ainda não configurou a autoridade de MDM, siga os passos abaixo. Para mudar de uma autoridade de MDM para outra, veja a secção [Alterar a autoridade de MDM](#prepare-to-change-the-mdm-authority-to-configuration-manager) abaixo.
 
-1. Inicie sessão no [Portal do Azure](https://portal.azure.com).
+1. Inicie sessão no [portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
 3. Selecione a faixa cor de laranja para abrir a definição **Autoridade de Gestão de Dispositivos Móveis**. A faixa cor de laranja só é apresentada se ainda não tiver configurado a autoridade de MDM.
 4. Em **Autoridade de Gestão de Dispositivos Móveis**, selecione a sua autoridade de MDM a partir das seguintes opções:
@@ -106,7 +106,7 @@ Reveja as seguintes informações para preparar a alteração para a autoridade 
 2. Inicie sessão no inquilino do Intune que utilizou originalmente quando definiu a autoridade de MDM no Intune e clique em **Seguinte**.
 3. Selecione **Alterar a minha autoridade de MDM para o Configuration Manager** e clique em **Seguinte**.
 4. Selecione a coleção de utilizadores que contém todos os utilizadores que continuam a ser geridos pela nova autoridade de MDM híbrida.
-5. Clique em **seguinte** e conclua o assistente. A autoridade de MDM é agora alterada para o **Configuration Manager**.
+5. Clique em **Seguinte** e conclua o assistente. A autoridade de MDM é agora alterada para o **Configuration Manager**.
 6. Inicie sessão na [consola de administração do Microsoft Intune](http://manage.microsoft.com) com o mesmo inquilino do Intune e confirme que a autoridade de MDM foi alterada para **Definir para o Configuration Manager**.
 7. Após mudar a autoridade de MDM para o Configuration Manager, pode configurar a [inscrição de dispositivos iOS](https://docs.microsoft.com/sccm/mdm/deploy-use/enroll-hybrid-ios-mac) e [inscrição de dispositivos Android](https://docs.microsoft.com/sccm/mdm/deploy-use/enroll-hybrid-android).
 8. Na consola do Configuration Manager, configure e implemente as novas definições e aplicações da nova autoridade de MDM (híbrida).
@@ -157,6 +157,6 @@ A autoridade de MDM não pode ser novamente alterada para Desconhecida. A autori
     - Execute uma ação para o dispositivo, como o Bloqueio Remoto, a partir da consola de administração. Se tiver êxito, significa que o dispositivo está a ser gerido pela nova autoridade de MDM.
 - Se tiver problemas com dispositivos específicos, pode anular a inscrição e inscrever novamente os dispositivos para ligá-los à nova autoridade e geri-los o mais rapidamente possível.
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Com a autoridade de MDM definida, pode começar a [inscrever dispositivos](device-enrollment.md).

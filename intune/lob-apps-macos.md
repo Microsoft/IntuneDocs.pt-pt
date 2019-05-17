@@ -1,7 +1,7 @@
 ---
 title: Como adicionar aplicações de linha de negócio macOS ao Microsoft Intune
 titleSuffix: ''
-description: Saiba mais sobre como adicionar aplicações de linha de negócio (LOB) do macOS para o Microsoft Intune.
+description: Saiba como adicionar aplicações de linha de negócio (LOB) macOS ao Microsoft Intune.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 90684c2994ccd3c90116a90e255ed6b9be1f6a76
-ms.sourcegitcommit: 617bd653c34c1e6a4e2ad61811c5912f8dab775c
-ms.translationtype: MT
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
+ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/10/2019
-ms.locfileid: "59476464"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59897566"
 ---
 # <a name="how-to-add-macos-line-of-business-lob-apps-to-microsoft-intune"></a>Como adicionar aplicações de linha de negócio (LOB) macOS ao Microsoft Intune
 
@@ -61,7 +61,7 @@ Tem de transferir uma ferramenta externa para pré-processar os ficheiros *.pkg*
 
 ## <a name="step-1---specify-the-software-setup-file"></a>Passo 1 – Especificar o ficheiro de configuração do software
 
-1. Inicie sessão no [Portal do Azure](https://portal.azure.com).
+1. Inicie sessão no [portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
 3. No painel **Intune**, selecione **Aplicações do cliente**.
 4. Na carga de trabalho **Aplicações do cliente**, escolha **Gerir** > **Aplicações**.
@@ -110,7 +110,7 @@ A aplicação que criou é apresentada na lista de aplicações, onde pode atrib
 > [!NOTE]
 > Para o serviço do Intune implementar com êxito um novo ficheiro *.pkg* no dispositivo, tem de incrementar o pacote `version` e a cadeia `CFBundleVersion` no ficheiro *packageinfo* do pacote *.pkg*.
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Próximos passos
 
 - A aplicação que criou é apresentada na lista de aplicações. Agora pode atribuí-la aos grupos que escolher. Para obter ajuda, veja [Como atribuir aplicações a grupos](apps-deploy.md).
 

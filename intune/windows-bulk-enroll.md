@@ -18,11 +18,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 064d11f1992d63df9dacbedb8d53e849425e9b1f
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
-ms.translationtype: MT
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
+ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799331"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59898144"
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Inscrição em massa para dispositivos Windows
 
@@ -30,7 +30,7 @@ ms.locfileid: "58799331"
 
 Como administrador, pode associar inúmeros dispositivos Windows novos ao Azure Active Directory e ao Intune. Para inscrever em massa dispositivos para o seu inquilino do Azure AD, crie um pacote de aprovisionamento com a aplicação Windows Configuration Designer (WCD). Ao aplicar o pacote de aprovisionamento aos dispositivos pertencentes à empresa, associa os dispositivos ao inquilino do Azure AD e inscreve-os na gestão do Intune. Depois de o pacote ser aplicado, estará pronto para os utilizadores do Azure AD iniciarem sessão.
 
-Os utilizadores do Azure AD são utilizadores padrão nestes dispositivos e obtêm as aplicações necessárias e as políticas do Intune atribuídas. Dispositivos Windows inscritos no Intune com o Windows a inscrição em massa podem utilizar a aplicação Portal da empresa para instalar as aplicações disponíveis. 
+Os utilizadores do Azure AD são utilizadores padrão nestes dispositivos e obtêm as aplicações necessárias e as políticas do Intune atribuídas. Os dispositivos Windows que são inscritos no Intune através da inscrição em massa do Windows podem utilizar a aplicação do Portal da Empresa para instalar as aplicações disponíveis. 
 
 ## <a name="prerequisites-for-windows-devices-bulk-enrollment"></a>Pré-requisitos para a inscrição em massa de dispositivos Windows
 
@@ -50,8 +50,8 @@ Os utilizadores do Azure AD são utilizadores padrão nestes dispositivos e obt
    - **Pasta do projeto** – guardar a localização do projeto
    - **Descrição** – uma descrição opcional do projeto ![Captura de ecrã após especificar o nome, a pasta do projeto e a descrição na aplicação Windows Configuration Designer](media/bulk-enroll-name.png)
 
-4. Introduza um nome exclusivo para os seus dispositivos. Os nomes podem incluir um número de série (% SERIAL %) ou um conjunto de carateres aleatório. Opcionalmente, também poderá introduzir uma chave de produto se estiver a atualizar a edição do Windows, a configurar o dispositivo para a utilização partilhada e a remover software pré-instalado.
-   ![Captura de ecrã da especificação de chave de produto e nome na aplicação Windows Configuration Designer](media/bulk-enroll-device.png)
+4. Introduza um nome exclusivo para os seus dispositivos. Os nomes podem incluir um número de série (%SERIAL%) ou um conjunto de carateres aleatório. Opcionalmente, também poderá introduzir uma chave de produto se estiver a atualizar a edição do Windows, a configurar o dispositivo para a utilização partilhada e a remover software pré-instalado.
+   ![Captura de ecrã após especificar o nome e a chave de produto na aplicação Windows Configuration Designer](media/bulk-enroll-device.png)
 
 5. Opcionalmente, pode configurar a rede Wi-Fi à qual os dispositivos se ligam quando são iniciados pela primeira vez.  Se os dispositivos de rede não estiverem configurados, precisará de uma ligação de rede com fios quando o dispositivo for iniciado pela primeira vez.
    ![Captura de ecrã após ativar a rede Wi-Fi, incluindo as opções de Tipo de rede e SSID de rede, na aplicação Windows Configuration Designer](media/bulk-enroll-network.png)

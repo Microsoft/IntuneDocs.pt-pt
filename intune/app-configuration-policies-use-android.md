@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: dccbfe597fa4bd461bb71cb86d38ffdfd52d719a
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
-ms.translationtype: MT
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
+ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799077"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59896428"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>Adicionar políticas de configuração da aplicação para dispositivos Android geridos
 
@@ -34,7 +34,7 @@ Utilize políticas de configuração da aplicação no Microsoft Intune para dis
 > [!Note]  
 > Nem todas as aplicações suportam a configuração de aplicações. Verifique junto do programador da aplicação para saber se este criou a aplicação de forma a suportar políticas de configuração da aplicação.
 
-1. Inicie sessão no [Portal do Azure](https://portal.azure.com).
+1. Inicie sessão no [portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
 3. Selecione a carga de trabalho **Aplicações do cliente**.
 4. Selecione **Políticas de configuração da aplicação** no grupo **Gerir** e, em seguida, selecione **Adicionar**.
@@ -51,7 +51,7 @@ Utilize políticas de configuração da aplicação no Microsoft Intune para dis
 
 ## <a name="use-the-configuration-designer"></a>Utilizar o estruturador de configuração
 
-Pode utilizar o estruturador de configuração para aplicações Android quando a aplicação foi projetada para oferecer suporte a definições de configuração. A configuração será aplicada aos dispositivos inscritos no Intune. O estruturador permite-lhe configurar valores de configuração específicos para as definições que uma aplicação apresenta.
+Poderá utilizar o estruturador de configuração para aplicações Android se a aplicação tiver sido concebida para dar suporte a definições de configuração. A configuração será aplicada aos dispositivos inscritos no Intune. O estruturador permite-lhe configurar valores de configuração específicos para as definições que uma aplicação apresenta.
 
 Selecione **Adicionar** para selecionar a lista de definições de configuração que pretende especificar para a aplicação.  
 Para cada chave e valor na configuração, defina:
@@ -68,12 +68,12 @@ Pode escolher as seguintes opções, se selecionar a variável como o tipo de va
 | Opção | Exemplo |
 |----|----|
 | Correio | john@contoso.com |
-| Nome Principal de utilizador | john@contoso.com |
-| UPN parcial | John |
-| Domain | contoso.com |
-| Nome de utilizador | John Doe |
+| Nome Principal de Utilizador | john@contoso.com |
+| UPN Parcial | joão |
+| Domínio | contoso.com |
+| Nome de utilizador | João Silva |
 | ID de conta | fc0dc142-71d8-4b12-bbea-bae2a8514c81 |
-| ID de utilizador | 3ec2c00f-b125-4519-acf0-302ac3761822 |
+| ID de Utilizador | 3ec2c00f-b125-4519-acf0-302ac3761822 |
 | ID do dispositivo | b9841cd9-9843-405f-be28-b2265c59ef97 |
 
 ### <a name="allow-only-configured-organization-accounts-in-multi-identity-apps"></a>Permitir apenas contas de organização configuradas nas aplicações de várias identidades 
@@ -105,7 +105,7 @@ Quando a aplicação atribuída é executada num dispositivo, a mesma é executa
 
 Também pode pré-configurar uma permissão para que as aplicações acedam às funcionalidades do dispositivo Android. Por predefinição, as aplicações Android que requerem permissões de dispositivos, tal como o acesso à localização ou à câmara do dispositivo, pedem aos utilizadores que aceitem ou neguem as permissões. Por exemplo, se uma aplicação utilizar o microfone do dispositivo, é pedido ao utilizador que conceda à aplicação permissão para utilizar o microfone.
 
-1. Inicie sessão no [Portal do Azure](https://portal.azure.com).
+1. Inicie sessão no [portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
 3. Selecione **Aplicações do cliente**.
 3. Em **Gerir**, selecione **Políticas de configuração da aplicação** e, em seguida, selecione **Adicionar**.
@@ -125,7 +125,7 @@ Também pode pré-configurar uma permissão para que as aplicações acedam às 
 10. Selecione os grupos de utilizadores a atribuir e, em seguida, escolha **Selecionar**.
 11. Escolha **Guardar** para atribuir a política.
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Continue a [atribuir](apps-deploy.md) e [monitorizar](apps-monitor.md) a aplicação.
 

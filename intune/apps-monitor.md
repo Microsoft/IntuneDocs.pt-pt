@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/26/2019
+ms.date: 04/12/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2b3cba546be350f47c1a57f47b8eddf85323dc74
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
-ms.translationtype: MT
+ms.openlocfilehash: 041a8198f8017bff88e139e4020e3364c05be5c8
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
+ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58797962"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59899640"
 ---
 # <a name="monitor-app-information-and-assignments-with-microsoft-intune"></a>Monitorizar informações e atribuições da aplicação com o Microsoft Intune
 
@@ -38,7 +38,7 @@ O Intune fornece várias formas de monitorizar as propriedades de aplicações q
 5. Na lista de aplicações, selecione uma aplicação a monitorizar. Em seguida, verá o painel de aplicações, que inclui uma descrição geral do estado dos dispositivos e dos utilizadores.
 
 > [!NOTE]
-> Aplicações Android Store que são implementadas como **disponível** e as aplicações LOB para Android implementadas como **disponível com ou sem inscrição** não reportam o respetivo estado de instalação.
+> As aplicações Android Store que são implementadas como **Disponíveis** e as aplicações LOB para Android implementadas como **Disponíveis com ou sem inscrição** não comunicam o estado de instalação.
 
 ## <a name="app-overview-pane"></a>Painel Descrição geral da aplicação
 
@@ -51,7 +51,7 @@ A secção **Essentials** contém as seguintes informações sobre a aplicação
 |------------------------|------------------------------------------------------------------|
 | **Publicador**          | O publicador da aplicação.                                            |
 | **Sistema operativo**   | O sistema operativo da aplicação (Windows, iOS, Android, etc.). |
-| **Criado**             | A data e hora em que esta revisão foi criada. <b>**Tenha em atenção**: Este valor de data é atualizada quando um administrador de TI alterar metadados de aplicação, tal como alterar a categoria de aplicação ou a descrição da aplicação.                        |
+| **Criado**             | A data e hora em que esta revisão foi criada. <b>**Nota**: este valor de data é atualizado quando um administrador de TI altera os metadados da aplicação, por exemplo, altera a categoria ou a descrição da aplicação.                        |
 | **Atribuído**           | Se a aplicação foi atribuída (**Sim** ou **Não**).                  |
 
 ### <a name="device-and-user-status-graphs"></a>Gráficos de estado do utilizador e do dispositivo
@@ -59,7 +59,7 @@ Os gráficos mostram o número de aplicações para os seguintes estados:
 
 | **Estado do dispositivo**       | **Descrição**                                       |
 |-----------------------|-------------------------------------------------------|
-| **Instalado**         | O número de aplicações instaladas.                         |
+| **Instalada**         | O número de aplicações instaladas.                         |
 | **Não Instalado**     | O número de aplicações não instaladas.                     |
 | **Falhou**            | O número de instalações falhadas.                   |
 | **Instalação Pendente**   | O número de aplicações no processo de serem instaladas. |
@@ -71,7 +71,7 @@ Os gráficos mostram o número de aplicações para os seguintes estados:
 >    - Abranger múltiplas instâncias da mesma aplicação num inquilino irá resultar em contagens diferentes, devido à potencial sobreposição de utilizadores ou dispositivos. Cada instância da aplicação irá contabilizar os utilizadores sobrepostos, mas as aplicações detetadas apresentarão contagens duplicadas.
 >    - As aplicações detetadas e o estado da aplicação são recolhidos em intervalos de tempo diferentes, o que pode provocar uma discrepância nas contagens de aplicações.
 > 
-> Além disso, lembre-se de que as aplicações Android implementadas como **disponível com ou sem inscrição** apenas comunicar o estado de instalação de aplicações para dispositivos inscritos. Estado de instalação de aplicações não está disponível para dispositivos que não estão inscritos no Intune.
+> Além disso, lembre-se de que as aplicações Android implementadas como **Disponíveis com ou sem inscrição** apenas comunicam o estado de instalação das aplicações dos dispositivos inscritos. O estado de instalação das aplicações não está disponível para dispositivos que não estão inscritos no Intune.
 
 ### <a name="device-install-status"></a>Estado de instalação do dispositivo
 
@@ -82,7 +82,7 @@ Uma lista de estados do dispositivo é apresentada ao selecionar **Estado de ins
 | **Nome do dispositivo**      | O nome do dispositivo nas plataformas que permitem atribuir um nome aos dispositivos. Noutras plataformas, o Intune cria um nome a partir de outras propriedades. Este atributo não está disponível em mais nenhum dispositivo.                                                                       |
 | **Nome de utilizador**        | O nome do utilizador.                                                                                                                                                                                                                                      |
 | **Plataforma**         | O sistema operativo do dispositivo (Windows, iOS, Android, entre outros).                                                                                                                                                                                           |
-| **Versão**          | O número da versão da aplicação. Para aplicações de linha de negócio (LOB), é apresentado o número da versão completo da aplicação. O número da versão completo identifica uma versão específica da aplicação. O número é apresentado como _Versão_(_Compilação_), Por exemplo, 2.2 (2.2.17560800). Para aplicações de Store, não existem versões são apresentadas. |
+| **Versão**          | O número da versão da aplicação. Para aplicações de linha de negócios (LOB) e aplicações da Microsoft Store para Empresas, será apresentado o número completo da versão da aplicação. O número da versão completo identifica uma versão específica da aplicação. O número é apresentado como _Versão_(_Compilação_), Por exemplo, 2.2 (2.2.17560800). Para aplicações da Loja padrão, não são apresentadas as versões. |
 | **Estado**           | O estado da aplicação.                                                                                                                                                                                                                                     |
 | **Detalhes do estado**   | Os detalhes do estado.                                                                                                                                                                                                                                     |
 | **Último registo**    | A data da última sincronização do dispositivo com o Intune.                                                                                                                                                                                                                  |
@@ -101,7 +101,7 @@ Uma lista de estados do utilizador é apresentada ao selecionar **Estado de inst
 | **Não instalado**   | O número de aplicações não instaladas pelo utilizador. |
 
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Próximos passos
 
 - Para obter mais informações sobre como trabalhar com os dados do seu Intune, veja [Utilizar o Armazém de Dados do Intune](reports-nav-create-intune-reports.md).
 - Para saber mais sobre as políticas de configuração de aplicações, veja [Políticas de configuração de aplicações do Intune](app-configuration-policies-overview.md).

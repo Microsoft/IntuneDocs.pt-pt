@@ -1,7 +1,7 @@
 ---
-title: definições de dispositivos macOS no Microsoft Intune – Azure | Documentos da Microsoft
+title: Definições dos dispositivos macOS no Microsoft Intune – Azure | Microsoft Docs
 titleSuffix: ''
-description: Adicionar, configurar, ou criar definições em dispositivos macOS para restringir funcionalidades, incluindo a definição de requisitos de palavra-passe, controlar o ecrã bloqueado, utilize aplicações incorporadas, adicionar restrito ou aplicações aprovadas, lidar com dispositivos bluetooth, ligar à cloud para cópia de segurança e o armazenamento, ativar o modo de local público, adicionar domínios e controlar como os utilizadores interagem com o browser Safari no Microsoft Intune.
+description: Adicionar, configurar ou criar definições em dispositivos macOS para restringir funcionalidades, incluindo a definição de requisitos de palavra-passe, controlar o ecrã bloqueado, utilizar aplicações incorporadas, adicionar aplicações restritas ou aprovadas, gerir dispositivos Bluetooth, ligar à cloud para cópia de segurança e armazenamento, ativar o modo de quiosque, adicionar domínios e controlar como os utilizadores interagem com o browser Safari no Microsoft Intune.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -17,111 +17,111 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 5feec66e791da4038bd069cdad69a7ba573f27f3
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
-ms.translationtype: MT
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
+ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798382"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59897056"
 ---
-# <a name="macos-device-settings-to-allow-or-restrict-features-using-intune"></a>definições de dispositivos macOS para permitir ou restringir funcionalidades com o Intune
+# <a name="macos-device-settings-to-allow-or-restrict-features-using-intune"></a>Definições dos dispositivos macOS para permitir ou restringir funcionalidades com o Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Este artigo apresenta e descreve as diferentes definições que pode controlar em dispositivos macOS. Como parte da sua solução de gestão (MDM) de dispositivos móveis, utilize estas definições para permitir ou desativar funcionalidades, definir regras de palavra-passe, permitir ou restringir aplicações específicas e muito mais.
+Este artigo apresenta e descreve as diferentes definições que pode controlar nos dispositivos macOS. Como parte da solução de gestão de dispositivos móveis (MDM), utilize estas definições para permitir ou desativar funcionalidades, definir regras de palavra-passe, permitir ou restringir aplicações específicas e muito mais.
 
-Estas definições são adicionadas a um perfil de configuração do dispositivo no Intune e, em seguida, atribuídas ou implementadas nos seus dispositivos macOS.
+Estas definições são adicionadas a um perfil de configuração do dispositivo no Intune e, em seguida, atribuídas ou implementadas nos dispositivos macOS.
 
 ## <a name="before-you-begin"></a>Antes de começar
 
-[Criar um perfil de configuração de restrições de dispositivos](device-restrictions-configure.md#create-the-profile).
+[Crie um perfil de configuração de restrições do dispositivo](device-restrictions-configure.md#create-the-profile).
 
 ## <a name="general"></a>Geral
 
-- **Bloquear pesquisa de definição de**: **Bloco** impede o utilizador de realçar uma palavra e, em seguida, procurar a respetiva definição no dispositivo. **Não configurado** (predefinição) permite o acesso para o recurso de pesquisa de definição.
-- **Bloquear o ditado**: **Bloco** impede o utilizador através de entradas de voz para introduzir texto. **Não configurado** (predefinição) permite que o utilizador utilize a entrada de ditado.
-- **Bloquear a colocação em cache conteúdo**: Escolher **não configurado** (predefinição) para ativar a colocação em cache conteúdo. A colocação em cache conteúdo armazena dados de aplicações, dados de navegador da web, downloads e muito mais localmente no dispositivo. Selecione **bloco** para impedir que esses dados a ser armazenados na cache.
+- **Bloquear Pesquisa de Definição**: **Bloquear** impede que o utilizador realce uma palavra e, em seguida, procure a sua definição no dispositivo. **Não configurado** (predefinição) permite o acesso ao recurso de pesquisa de definição.
+- **Bloquear Ditado**: **Bloquear** impede o utilizador de utilizar entradas de voz para introduzir texto. **Não configurado** (predefinição) permite que o utilizador utilize a entrada de ditado.
+- **Bloquear a colocação de conteúdos em cache**: escolha **Não configurado** (predefinição) para ativar a colocação de conteúdos em cache. A colocação de conteúdos em cache armazena dados de aplicações, dados de browsers, downloads e muito mais, localmente no dispositivo. Selecione **Bloquear** para impedir que estes dados sejam armazenados na cache.
 
-  Para obter mais informações sobre a colocação em cache conteúdo no macOS, veja [gerir a colocação em cache conteúdo no Mac](https://support.apple.com/guide/mac-help/manage-content-caching-on-mac-mchl3b6c3720/mac) (abre-se outro Web site).
+  Para obter mais informações sobre a colocação de conteúdos em cache no macOS, veja [Gerir a cache de conteúdo no Mac](https://support.apple.com/guide/mac-help/manage-content-caching-on-mac-mchl3b6c3720/mac) (abre outro site).
 
   Esta funcionalidade aplica-se a:  
-  - macOS 10.13 e posterior
+  - macOS 10.13 e posterior
 
-- **Diferir atualizações de software**: Quando definido como **não configurado** (predefinição), as atualizações de software são apresentadas no dispositivo como Apple as lança. Por exemplo, se uma atualização de macOS é lançada pela Apple numa data específica, em seguida, essa atualização naturalmente aparece no dispositivo em torno da data de lançamento. São permitidas atualizações de compilação de seed sem demora.
+- **Adiar atualizações de software**: quando definido como **Não configurado** (predefinição), as atualizações de software são mostradas no dispositivo à medida que a Apple as lança. Por exemplo, se uma atualização do macOS for lançada pela Apple numa data específica, essa atualização será mostrada naturalmente no dispositivo por volta da data de lançamento. São permitidas atualizações de compilações de seed sem atraso.
 
-  **Ativar** permite-lhe atrasar a quando as atualizações de software são apresentadas nos dispositivos, de 0 a 90 dias. Esta definição não controla quando as atualizações são ou não estão instaladas. 
+  **Ativar** permite-lhe adiar a apresentação das atualizações de software nos dispositivos, entre 0 e 90 dias. Esta definição não controla quando as atualizações são ou não instaladas. 
 
-  - **Atrasar a visibilidade das atualizações de software**: Introduza um valor de 0 a 90 dias. Quando expira o atraso, os utilizadores obtêm uma notificação para atualizar para a versão mais antiga do SO disponível quando o atraso foi acionado.
+  - **Adiar visibilidade das atualizações de software**: introduza um valor entre 0 e 90 dias. Quando o adiamento expirar, os utilizadores recebem uma notificação para atualizar para a versão mais antiga do SO disponível quando o adiamento foi acionado.
 
-    Por exemplo, se uma atualização do macOS está disponível no **1º de Janeiro**, e **atrasar visibilidade** está definida como **5 dias**, em seguida, a atualização não é mostrada como uma atualização disponível nos dispositivos. Sobre o **sexto dia** após o lançamento, que a atualização está disponível, e os utilizadores finais podem instalá-la.
+    Por exemplo, se uma atualização do macOS estiver disponível a **1 de janeiro** e **Adiar visibilidade** estiver definida como **5 dias**, a atualização não será mostrada como uma atualização disponível nos dispositivos. No **sexto dia** após o lançamento, essa atualização estará disponível e os utilizadores finais poderão instalá-la.
 
     Esta funcionalidade aplica-se a:  
-    - macOS 10.13.4 e posterior
+    - macOS 10.13.4 e posterior
 
 ## <a name="password"></a>Palavra-passe
 
-- **palavra-passe**: **Exigir** o utilizador final introduza uma palavra-passe para aceder ao dispositivo. **Não configurado** não requer uma palavra-passe (predefinição) e não forçar restrições, como o bloqueio de palavras-passe simples ou definir um comprimento mínimo.
-  - **Tipo de palavra-passe obrigatório**: Especifique se a palavra-passe só pode ser numérica ou se tem de ser alfanumérica (conter letras e números). Esta definição só é suportada na versão 10.10.3 do Mac OS X e posterior.
+- **Palavra-passe**: **Exigir** que o utilizador final introduza uma palavra-passe para aceder ao dispositivo. **Não configurado** (predefinição) não requer uma palavra-passe e não impõe restrições, como bloquear palavras-passe simples ou definir um comprimento mínimo.
+  - **Tipo obrigatório de palavra-passe**: especifique se a palavra-passe pode ser Apenas numérica ou se tem de ser Alfanumérica (conter letras e números). Esta definição só é suportada na versão 10.10.3 do Mac OS X e posterior.
   - **Número de carateres não alfanuméricos na palavra-passe**: Especifica o número de carateres complexos necessários na palavra-passe (de **0** a **4**).<br>Um caráter complexo é um símbolo, por exemplo "**?**".
-  - **Comprimento mínimo da palavra-passe**: Introduza o comprimento mínimo da palavra-passe de um utilizador tem de configurar (entre **4** e **16** carateres).
+  - **Comprimento mínimo da palavra-passe**: introduza o comprimento mínimo da palavra-passe que um utilizador tem de configurar (entre **4** e **16** carateres).
   - **Palavras-passe simples**: Permite a utilização de palavras-passe simples, tal como **0000** ou **1234**.
-  - **Máximo de minutos após o bloqueio de ecrã antes de palavra-passe é exigida**: Especifica o período de tempo durante o qual o computador tem de estar inativo antes de ser exigida uma palavra-passe para o desbloquear.
-  - **Máximo de minutos de inatividade até o ecrã bloquear**: Especifique o período de tempo que o computador tem de estar inativo antes do ecrã ser bloqueado.
-  - **Expiração de palavra-passe (dias)**: Especifica o número de dias que decorrem antes de o utilizador ter de alterar a palavra-passe (de **1** a **255** dias).
-  - **Impedir a reutilização de palavras-passe anteriores**: Introduza o número de palavras-passe utilizadas anteriormente que não podem ser reutilizadas, partir **1** ao **24**.
+  - **Máximo de minutos após o bloqueio de ecrã antes de ser exigida a palavra-passe**: Especifica o período de tempo durante o qual o computador tem de estar inativo antes de ser exigida uma palavra-passe para o desbloquear.
+  - **Máximo de minutos de inatividade até o ecrã ser bloqueado**: especifique o período de tempo durante o qual o computador tem de estar inativo antes de o ecrã ser bloqueado.
+  - **Expiração da palavra-passe (dias)**: Especifica o número de dias que decorrem antes de o utilizador ter de alterar a palavra-passe (de **1** a **255** dias).
+  - **Impedir a reutilização de palavras-passe anteriores**: introduza o número de palavras-passe utilizadas anteriormente que não podem ser utilizadas novamente, de **1** a **24**.
 
-- **Impedir o utilizador modifique o código de acesso**: Escolher **bloco** para parar o código de acesso do que está a ser alterado, adicionado ou removido. **Não configurado** (predefinição) permite que os códigos de acesso ser adicionado, alteradas ou removidas.
-- **Desbloqueio por impressão digital do bloco**: Escolher **bloco** para impedir a utilização de uma impressão digital para desbloquear o dispositivo. **Não configurado** (predefinição) permite ao utilizador desbloquear o dispositivo através de uma impressão digital.
+- **Impedir o Utilizador de Modificar o Código de Acesso**: escolha **Bloquear** para impedir que o código de acesso seja alterado, adicionado ou removido. **Não configurado** (predefinição) permite que os códigos de acesso sejam adicionados, alterados ou removidos.
+- **Bloquear Desbloqueio por Impressão Digital**: escolha **Bloquear** para impedir a utilização de uma impressão digital para desbloquear o dispositivo. **Não configurado** (predefinição) permite ao utilizador desbloquear o dispositivo através de uma impressão digital.
 
-- **Palavra-passe de bloco preenchimento automático**: Escolher **bloco** para impedir a utilização da funcionalidade de palavras-passe de preenchimento automático no macOS. Escolher **bloco** também tem o impacto seguinte:
+- **Bloquear Preenchimento Automático de Palavra-passes**: escolha **Bloquear** para impedir a utilização da funcionalidade Preenchimento Automático de Palavras-passe no macOS. A escolha de **Bloquear** também tem o seguinte impacto:
 
-  - Os utilizadores não são-lhe pedidos para utilizar uma palavra-passe guardada no Safari ou em todas as aplicações.
-  - Palavras-passe forte de automáticas estão desativadas e as palavras-passe fortes não são sugeridas para os utilizadores.
+  - Não é pedido aos utilizadores que utilizem uma palavra-passe guardada no Safari nem noutras aplicações.
+  - As Palavras-passe Seguras automáticas estão desativadas, pelo que não são sugeridas aos utilizadores.
 
-  **Não configurado** (predefinição) permite que esses recursos.
+  **Não configurado** (predefinição) permite estas funcionalidades.
 
-- **Bloquear pedidos de proximidade de palavra-passe**: Escolher **bloco** para que o dispositivo de um utilizador não solicitar palavras-passe do dispositivos próximos. **Não configurado** (predefinição) permite que estes pedidos de palavra-passe.
+- **Bloquear pedidos de proximidade de palavra-passe**: escolha **Bloquear** para que o dispositivo de um utilizador não peça palavras-passe aos dispositivos próximos. **Não configurado** (predefinição) permite estes pedidos de palavras-passe.
 
-- **Bloquear a partilha de palavra-passe**: **Bloco** impede a partilha de palavras-passe entre dispositivos com o AirDrop. **Não configurado** (predefinição) permite que as palavras-passe a ser partilhado.
+- **Bloquear partilha de palavras-passe**: **Bloquear** impede a partilha de palavras-passe entre dispositivos com o AirDrop. **Não configurado** (predefinição) permite que as palavras-passe sejam partilhadas.
 
 ## <a name="built-in-apps"></a>Aplicações Incorporadas
 
-- **Bloquear o preenchimento automático do Safari**: **Bloco** desativa a funcionalidade de preenchimento automático no Safari no dispositivo. **Não configurado** (predefinição) permite que os utilizadores alterem as definições do browser.
-- **Bloquear câmara**: Escolher **bloco** para impedir o acesso à câmara do dispositivo. **Não configurado** (predefinição) permite o acesso à câmara do dispositivo.
-- **Bloquear músicas do Apple**: **Bloco** reverte o aplicativo de música para o modo clássico e desativa o serviço de música. **Não configurado** (predefinição) permite o uso de aplicação Apple Music.
-- **Bloquear os resultados da pesquisa Spotlight Internet**: **Bloco** impede o destaque do retorno de resultados de uma pesquisa na Internet. **Não configurado** (predefinição) permite que o destaque pesquisa ligar à Internet para fornecer os resultados da pesquisa.
-- **Transferência de ficheiros de bloco usando iTunes**: **Bloco** desativa os serviços de partilha de ficheiros de aplicação. Disponível no macOS 10.13 e posterior. **Não configurado** (predefinição) permite que os serviços de partilha de ficheiros de aplicação.
+- **Bloquear Preenchimento Automático do Safari**: **Bloquear** desativa a funcionalidade de preenchimento automático no Safari no dispositivo. **Não configurado** (predefinição) permite que os utilizadores alterem as definições de preenchimento automático no browser.
+- **Bloquear Câmara**: escolha **Bloquear** para impedir o acesso à câmara no dispositivo. **Não configurado** (predefinição) permite o acesso à câmara do dispositivo.
+- **Bloquear Apple Music**: **Bloquear** reverte a aplicação Music para o modo clássico e desativa o Serviço Music. **Não configurado** (predefinição) permite a utilização da aplicação Apple Music.
+- **Bloquear Resultados de Pesquisa na Internet com Spotlight**: **Bloquear** impede a pesquisa Spotlight de devolver resultados de uma pesquisa da Internet. **Não configurado** (predefinição) permite que o Spotlight se ligue à Internet para fornecer resultados da pesquisa.
+- **Bloquear Transferência de Ficheiros no iTunes**: **Bloquear** desativa os serviços de partilha de ficheiros da aplicação. Disponível no macOS 10.13 e posterior. **Não configurado** (predefinição) permite que os serviços partilhem ficheiros da aplicação.
 
 ## <a name="restricted-apps"></a>Aplicações restritas
 
 Na lista de aplicações restritas, pode configurar uma das seguintes listas:
 
-- R **aplicações proibidas** lista: Indique as aplicações não geridas pelo Intune que os utilizadores não têm permissão para instalar e executar. Os utilizadores não são impedidos de instalar uma aplicação proibida mas, se o fizerem, será reportado para o administrador.
-- Uma **aplicações aprovadas** lista: Indique as aplicações que os utilizadores têm permissão para instalar. Os utilizadores não podem instalar aplicações que não estão listadas. As aplicações geridas pelo Intune são automaticamente permitidas. Os utilizadores não são impedidos de instalar uma aplicação que não esteja na lista aprovada. No entanto, se o fizerem, será reportado para o administrador.
+- Uma lista de **Aplicações proibidas**: indique as aplicações não geridas pelo Intune que os utilizadores não têm permissão para instalar e executar. Os utilizadores não são impedidos de instalar uma aplicação proibida, mas se o fizerem, esta ação será comunicada ao administrador.
+- Uma lista de **Aplicações aprovadas**: Indique as aplicações que os utilizadores têm permissão para instalar. Os utilizadores não podem instalar aplicações que não estejam listadas. As aplicações geridas pelo Intune são automaticamente permitidas. Os utilizadores não são impedidos de instalar uma aplicação que não esteja na lista aprovada. Mas, se o fizerem, esta ação será comunicada ao administrador.
 
 Para configurar a lista, clique em **Adicionar** e, em seguida, especifique um nome à sua escolha, opcionalmente, o publicador da aplicação e o ID do grupo da aplicação (por exemplo, *com.apple.calculator*).
 
 ## <a name="connected-devices"></a>Dispositivos ligados
 
-- **Bloquear AirDrop**: **Bloco** impede o AirDrop a utilizar no dispositivo. **Não configurado** (predefinição) permite o uso da funcionalidade AirDrop para trocar conteúdos com dispositivos próximos.
-- **Bloquear o Apple Watch automática desbloquear**: **Bloco** impede os utilizadores de desbloquear o dispositivo macOS com o Apple Watch. **Não configurado** (predefinição) permite aos utilizadores desbloquear os dispositivos macOS com o Apple Watch.
+- **Bloquear AirDrop**: **Bloquear** impede que o AirDrop seja utilizado no dispositivo. **Não configurado** (predefinição) permite utilizar a funcionalidade AirDrop para trocar conteúdo com os dispositivos próximos.
+- **Bloquear Desbloqueio Automático do Apple Watch**: **Bloquear** impede os utilizadores de desbloquear o dispositivo macOS com o Apple Watch. **Não configurado** (predefinição) permite aos utilizadores desbloquear o dispositivo macOS com o Apple Watch.
 
 ## <a name="cloud-and-storage"></a>Cloud e armazenamento
 
-- **Bloquear a sincronização de Keychain do iCloud**: Escolher **bloco** para desativar a sincronização credenciais armazenadas na Keychain com o iCloud. **Não configurado** (predefinição) permite aos utilizadores sincronizar estas credenciais.
-- **Bloquear a sincronização de documentos do iCloud**: **Bloco** impede a sincronização de documentos e dados de iCloud. **Não configurado** (predefinição) permite a sincronização de documentos e chave-valor para o seu espaço de armazenamento do iCloud.
-- **Bloquear a cópia de segurança de email do iCloud**: **Bloco** impede que o iCloud sincronizados com o aplicativo de email do macOS. **Não configurado** (predefinição) permite a sincronização de correio com o iCloud.
-- **Bloquear o contacto de cópia de segurança de iCloud**: **Bloco** impede a sincronização de contactos de dispositivos de iCloud. **Não configurado** (predefinição) permite a sincronização de contactos com o iCloud.
-- **Bloquear o calendário de cópia de segurança de iCloud**: **Bloco** impede que o iCloud sincronizados com a aplicação de calendário do macOS. **Não configurado** (predefinição) permite a sincronização de calendário com o iCloud.
-- **Bloquear o lembrete de cópia de segurança de iCloud**: **Bloco** impede que o iCloud sincronizados com a aplicação de lembretes de macOS. **Não configurado** (predefinição) permite a sincronização de lembretes para o iCloud.
-- **Bloquear a cópia de segurança do marcador do iCloud**: **Bloco** impede a sincronizar os dispositivos indicadores de iCloud. **Não configurado** (predefinição) permite a sincronização de marcador para o iCloud.
-- **Bloquear as notas de cópia de segurança de iCloud**: **Bloco** impede a sincronizar os dispositivos notas de iCloud. **Não configurado** (predefinição) permite a sincronização de notas para o iCloud.
+- **Bloquear sincronização do Keychain com o iCloud**: escolha **Bloquear** para desativar a sincronização das credenciais armazenadas no Keychain com o iCloud. **Não configurado** (predefinição) permite aos utilizadores sincronizar estas credenciais.
+- **Bloquear Sincronização de Documentos para iCloud**: **Bloquear** impede o iCloud de sincronizar documentos e dados. **Não configurado** (predefinição) permite a sincronização de documentos e pares chave-valor com o espaço de armazenamento do iCloud.
+- **Bloquear Cópia de Segurança do Correio para iCloud**: **Bloquear** impede que o iCloud seja sincronizado com a aplicação Correio do macOS. **Não configurado** (predefinição) permite a sincronização do Correio com o iCloud.
+- **Bloquear Cópia de Segurança de Contactos para iCloud**: **Bloquear** impede que os contactos dos dispositivos sejam sincronizados com o iCloud. **Não configurado** (predefinição) permite a sincronização de contactos através do iCloud.
+- **Bloquear Cópia de Segurança do Calendário para iCloud**: **Bloquear** impede que o iCloud seja sincronizado com a aplicação Calendário do macOS. **Não configurado** (predefinição) permite a sincronização do Calendário com o iCloud.
+- **Bloquear Cópia de Segurança de Lembretes para iCloud**: **Bloquear** impede que o iCloud seja sincronizado com a aplicação Lembretes do macOS. **Não configurado** (predefinição) permite a sincronização dos Lembretes com o iCloud.
+- **Bloquear Cópia de Segurança dos Marcadores para iCloud**: **Bloquear** impede que o iCloud seja sincronizado com os Marcadores dos dispositivos. **Não configurado** (predefinição) permite a sincronização de Marcadores com o iCloud.
+- **Bloquear Cópia de Segurança das Notas para iCloud**: **Bloquear** impede que o iCloud seja sincronizado com as Notas dos dispositivos. **Não configurado** (predefinição) permite a sincronização das Notas com o iCloud.
 
 ## <a name="domains"></a>Domínios
 
-- **URL do domínio de e-mail**: Adicione um ou mais URLs à lista. Quando os utilizadores recebem um e-mail de um domínio não configurado, o e-mail é marcado como não fidedigno na aplicação Mail do macOS.
+- **URL do Domínio de E-mail**: adicione um ou mais URLs à lista. Quando os utilizadores recebem um e-mail de um domínio não configurado, o e-mail é marcado como não fidedigno na aplicação Mail do macOS.
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Próximos passos
 
 [Atribua o perfil](device-profile-assign.md) e [monitorize o respetivo estado](device-profile-monitor.md).
 
-Também pode restringir funcionalidades do dispositivo e definições no [iOS](device-restrictions-ios.md) dispositivos.
+Também pode restringir as funcionalidades e as definições dos dispositivos nos dispositivos [iOS](device-restrictions-ios.md).

@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 5b8a4a76e59604038ae133701b3378c573e862aa
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
-ms.translationtype: MT
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
+ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799574"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59897158"
 ---
 # <a name="intune-deployment-planning-design-and-implementation-guide"></a>Guia de planeamento, estruturação e implementação do Intune
 
@@ -35,23 +35,23 @@ O primeiro passo para o êxito numa implementação do Microsoft Intune é um bo
 
 Este guia inclui secções que o irão orientar ao longo de todo o processo de implementação do Intune. Comece na Secção 1 para esclarecer os seus desafios, objetivos e metas. Em seguida, avance para as Secções 2 a 7 na ordem que melhor satisfaça as suas necessidades. Não precisa de trabalhar com essas secções sequencialmente; pode concluí-las em paralelo.
 
--   [Secção 1: Determinar metas, objetivos e obstáculos](planning-guide-deployment-goals.md)
+-   [Secção 1: Determinar metas, objetivos e obstáculos da implementação](planning-guide-deployment-goals.md)
 
--   [Secção 2: Identificar cenários de casos de utilização](planning-guide-scenarios.md)
+-   [Secção 2: Identificar cenários de casos de utilização](planning-guide-scenarios.md)
 
--   [Secção 3: Determinar os requisitos de casos de utilização](planning-guide-requirements.md)
+-   [Secção 3: Determinar requisitos de casos de utilização](planning-guide-requirements.md)
 
--   [Secção 4: Desenvolver um plano de implementação](planning-guide-rollout-plan.md)
+-   [Secção 4: Desenvolver um plano de implementação](planning-guide-rollout-plan.md)
 
--   [Secção 5: Desenvolver um plano de comunicação de implementação](planning-guide-communication-plan.md)
+-   [Secção 5: Desenvolver um plano de comunicação de implementação](planning-guide-communication-plan.md)
 
--   [Secção 6: Desenvolver um plano de suporte](planning-guide-support-plan.md)
+-   [Secção 6: Desenvolver um plano de suporte](planning-guide-support-plan.md)
 
--   [Secção 7: Criar uma estrutura do Intune](planning-guide-design.md)
+-   [Secção 7: Criar uma estrutura do Intune](planning-guide-design.md)
 
--   [Secção 8: Implementação do Intune](planning-guide-onboarding.md)
+-   [Secção 8: Implementação do Intune](planning-guide-onboarding.md)
 
--   [Secção 9: Teste e validação](planning-guide-test-validation.md)
+-   [Secção 9: Teste e validação](planning-guide-test-validation.md)
 
 Este guia fornece também mais informações técnicas e modelos de tabelas que pode utilizar como auxílio no processo de planeamento, estruturação e implementação do Intune.
 
@@ -63,6 +63,6 @@ Este guia fornece também mais informações técnicas e modelos de tabelas que 
 
 -   Já se familiarizou com o Intune e as suas funcionalidades.
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Próximos passos
 
-Vamos começar com a primeira secção: [Determinar metas, objetivos e obstáculos](planning-guide-deployment-goals.md).
+Comecemos pela primeira secção: [Determinar metas, objetivos e obstáculos da implementação](planning-guide-deployment-goals.md).

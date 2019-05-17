@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: d7dd4ab5f7cecfa8a765b6dfa038b73015a0c768
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
-ms.translationtype: MT
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
+ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798292"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59900167"
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Configurar a inscrição para dispositivos Windows
 
@@ -57,12 +57,12 @@ O Intune suporta a gestão de vários utilizadores para dispositivos a executar 
 ## <a name="simplify-windows-enrollment-without-azure-ad-premium"></a>Simplificar a inscrição do Windows sem o Azure AD Premium
 Para simplificar a inscrição, crie um alias (tipo de registo CNAME) de servidor de nomes de domínio (DNS) que redirecione os pedidos de inscrição para os servidores do Intune. Caso contrário, os utilizadores que tentem ligar ao Intune terão de introduzir o nome de servidor do Intune durante a inscrição.
 
-**Passo 1: Criar CNAME** (opcional)<br>
+**Passo 1: Criar o registo CNAME** (opcional)<br>
 Crie registos de recursos DNS CNAME para o domínio da sua empresa. Por exemplo, se o site da sua empresa for contoso.com, deverá criar um CNAME no DNS para redirecionar EnterpriseEnrollment.contoso.com para enterpriseenrollment-s.manage.microsoft.com.
 
 Apesar de a criação de entradas DNS CNAME ser opcional, os registos CNAME facilitam a inscrição para os utilizadores. Se não for encontrado nenhum registo CNAME de inscrição, os utilizadores receberão um pedido para introduzir manualmente o nome do servidor MDM, enrollment.manage.microsoft.com.
 
-|Type|Nome do anfitrião|Aponta para|TTL|
+|Tipo|Nome do anfitrião|Aponta para|TTL|
 |----------|---------------|---------------|---|
 |CNAME|EnterpriseEnrollment.dominio_empresa.com|EnterpriseEnrollment-s.manage.microsoft.com| 1 hora|
 |CNAME|EnterpriseRegistration.dominio_empresa.com|EnterpriseRegistration.windows.net|1 hora|
@@ -75,7 +75,7 @@ Se a empresa utilizar mais do que um sufixo UPN, tem de criar um CNAME para cada
 
 Os administradores de DNS da Contoso devem criar os seguintes CNAMEs:
 
-|Type|Nome do anfitrião|Aponta para|TTL|  
+|Tipo|Nome do anfitrião|Aponta para|TTL|  
 |----------|---------------|---------------|---|
 |CNAME|EnterpriseEnrollment.contoso.com|EnterpriseEnrollment-s.manage.microsoft.com|1 hora|
 |CNAME|EnterpriseEnrollment.us.contoso.com|EnterpriseEnrollment-s.manage.microsoft.com|1 hora|
@@ -85,13 +85,13 @@ Os administradores de DNS da Contoso devem criar os seguintes CNAMEs:
 
 As alterações aos registos DNS podem demorar até 72 horas a serem propagadas. Não é possível verificar a alteração de DNS no Intune até o registo DNS ser propagado.
 
-## <a name="additional-endpoints-are-supported-but-not-recommended"></a>Pontos finais adicionais são suportados mas não recomendados
-Enterpriseenrollment-s.Manage.microsoft.com é o FQDN preferencial para a inscrição, mas há dois outros pontos de extremidade que foram utilizados pelos clientes no passado e são suportados. Enterpriseenrollment-s.Manage.microsoft.com (sem o -s) e manage.microsoft.com que ambas funcionam como o destino para o servidor de deteção automática, mas o utilizador vai ter de mexer OK numa mensagem de confirmação. Se apontar para enterpriseenrollment-s.Manage.microsoft.com, o utilizador não terá de fazê-lo a etapa de confirmação adicional, esta é a configuração recomendada
+## <a name="additional-endpoints-are-supported-but-not-recommended"></a>Suportados Pontos Finais adicionais, mas Não Recomendados
+Enterpriseenrollment-s.Manage.microsoft.com é o FQDN preferencial para a inscrição, mas existem dois outros pontos finais que foram utilizados pelos clientes no passado e que são suportados. EnterpriseEnrollment.manage.microsoft.com (sem o -s) e manage.microsoft.com ambos funcionam como o destino para o servidor de deteção automática, mas o utilizador vai ter de selecionar OK numa mensagem de confirmação. Se apontar para EnterpriseEnrollment-s.manage.microsoft.com, o utilizador não terá de fazer o passo adicional da confirmação, por isso, esta é a configuração recomendada
 
-## <a name="alternate-methods-of-redirection-are-not-supported"></a>Não são suportados métodos alternativos de redirecionamento
-Não é suportada a utilização de um método que não seja a configuração do CNAME. Por exemplo, com um servidor proxy para redirecionar enterpriseenrollment.contoso.com/EnrollmentServer/Discovery.svc para qualquer um dos enterpriseenrollment-s.manage.microsoft.com/EnrollmentServer/Discovery.svc ou manage.microsoft.com/EnrollmentServer/Discovery.svc não é suportado.
+## <a name="alternate-methods-of-redirection-are-not-supported"></a>Não São Suportados Métodos Alternativos de Redirecionamento
+Não é suportada a utilização de um método que não seja a configuração do CNAME. Por exemplo, não é suportada a utilização de um servidor proxy para redirecionar enterpriseenrollment.contoso.com/EnrollmentServer/Discovery.svc para enterpriseenrollment-s.manage.microsoft.com/EnrollmentServer/Discovery.svc ou para manage.microsoft.com/EnrollmentServer/Discovery.svc.
 
-**Passo 2: Verificar o CNAME** (opcional)<br>
+**Passo 2: Verificar o CNAME** (opcional)<br>
 1. No [Intune no portal do Azure](https://aka.ms/intuneportal), selecione **Inscrição de dispositivos** > **Inscrição no Windows** > **Validação de CNAME**.
 2. Na caixa **Domínio**, introduza o site da empresa e, em seguida, selecione **Testar**.
 
@@ -108,6 +108,6 @@ Para obter instruções de inscrição do utilizador final, veja [Inscrever o se
 
 Para obter mais informações sobre as tarefas do utilizador final, veja [Recursos sobre a experiência do utilizador final com o Microsoft Intune](end-user-educate.md).
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Próximos passos
 
 - [Considerações sobre quando gerir dispositivos Windows com o Intune no Azure](intune-legacy-pc-client.md).

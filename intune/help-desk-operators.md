@@ -18,11 +18,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: df5b20be667159689aaaee9a790c0a4c5b5864fd
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
-ms.translationtype: MT
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
+ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798403"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59900864"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>Utilizar o portal de resolução de problemas para ajudar os utilizadores na sua empresa
 
@@ -47,7 +47,7 @@ Quando um utilizador contacta o suporte acerca de um problema técnico com o Int
 
 No painel Resolução de Problemas, selecione **Utilizador selecionado** para ver as informações do utilizador. As informações dos utilizadores podem ajudá-lo a compreender o estado atual dos utilizadores e dos dispositivos deles.  
 
-1. Inicie sessão no [Portal do Azure](https://portal.azure.com).
+1. Inicie sessão no [portal do Azure](https://portal.azure.com).
 2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
 3. No painel **Intune**, selecione **Resolução de problemas**.
 4. Clique em **Selecionar** para selecionar um utilizador para o qual pretende executar a resolução de problemas.
@@ -62,7 +62,7 @@ Pode utilizar o painel **Resolução de problemas** para analisar as informaçõ
 
 ![](/intune/media/troubleshooting-dash.png)
 
-| Área | Name | Descrição |
+| Área | Nome | Descrição |
 | ---  | ---  | ---         |
 | 1.   | Estado da conta  | Mostra o estado do inquilino do Intune atual como **Ativo** ou **Inativo**.       |
 | 2.   | Seleção do utilizador  | O nome do utilizador atualmente selecionado. Clique em **Alterar utilizador** para selecionar um novo utilizador.       |
@@ -260,7 +260,7 @@ A tabela Falhas de Inscrição lista as tentativas de inscrição que falharam. 
 
 Ao selecionar uma linha de falha, são fornecidos mais detalhes.
 
-| Section | Descrição |
+| Secção | Descrição |
 |-------------|----------|
 | Detalhes da falha | Uma explicação em maior detalhe sobre a falha. |
 | Potenciais remediações | Passos sugeridos para resolver o erro. Poderão não existir remediações para determinadas falhas. |
@@ -268,7 +268,7 @@ Ao selecionar uma linha de falha, são fornecidos mais detalhes.
 
 ### <a name="enrollment-errors"></a>Erros de inscrição
 
-| Erro | Detalhes |
+| Error | Detalhes |
 |-------------|----------|
 | Tempo limite ou Falha de dispositivos iOS | Exceder do tempo limite entre o dispositivo e o Intune devido ao utilizador demorar demasiado tempo a concluir a inscrição. |
 | Utilizador não encontrado ou licenciado | O utilizador não possui uma licença ou foi removido do serviço. |
@@ -277,15 +277,15 @@ Ao selecionar uma linha de falha, são fornecidos mais detalhes.
 | Falha na autorização da inscrição | Houve uma tentativa de inscrição através de uma versão antiga do portal da empresa. |
 | Dispositivo não suportado | O dispositivo não cumpre os requisitos mínimos de inscrição no Intune. |
 | As restrições de inscrição não correspondem | A inscrição foi bloqueada devido a uma restrição de inscrição configurada pelo administrador. |
-| Versão do dispositivo demasiado baixa | O administrador tiver configurado uma restrição de inscrição que requerem uma versão superior do dispositivo. |
-| Versão do dispositivo demasiado elevada | O administrador tiver configurado uma restrição de inscrição que requerem uma versão inferior do dispositivo. |
-| Dispositivo não pode ser inscritos como pessoais | O administrador tiver configurado uma restrição de inscrição para bloquear inscrições pessoas e o dispositivo com falha não era predefinido como empresariais. |
-| Plataforma de dispositivo bloqueada | O administrador tiver configurado uma restrição de inscrição que bloqueia a plataforma de neste dispositivo. |
-| O token em massa expirou | O token em massa no pacote de aprovisionamento expirou. |
-| Não foram encontrados detalhes ou de dispositivo do autopilot | O dispositivo do Autopilot não foi encontrado quando tentar inscrever-se. |
-| Perfil autopilot não foi encontrado ou não atribuídos | O dispositivo não tem um perfil de Autopilot Active Directory. |
-| Método de inscrição de autopilot inesperado | O dispositivo tentado inscrever-se utilizando um método não permitido. |
-| Dispositivo do autopilot removido | O dispositivo tentar inscrever-se foi removido do Autopilot para esta conta. |
+| Versão do dispositivo demasiado baixa | O administrador configurou uma restrição de inscrição que requer uma versão superior do dispositivo. |
+| Versão do dispositivo demasiado alta | O administrador configurou uma restrição de inscrição que requer uma versão inferior do dispositivo. |
+| O dispositivo não pode ser inscrito como pessoal | O administrador configurou uma restrição de inscrição para bloquear inscrições pessoais e o dispositivo com falha não estava predefinido como empresarial. |
+| Plataforma do dispositivo bloqueada | O administrador configurou uma restrição de inscrição que bloqueia a plataforma deste dispositivo. |
+| Token em massa expirado | O token em massa no pacote de aprovisionamento expirou. |
+| Não foram encontrados os detalhes ou o dispositivo Autopilot | O dispositivo Autopilot não foi encontrado ao tentar inscrever-se. |
+| O perfil do Autopilot não foi encontrado ou não foi atribuído | O dispositivo não tem um perfil do Autopilot ativo. |
+| Método de inscrição do Autopilot inesperado | O dispositivo tentou inscrever-se através de um método não permitido. |
+| Dispositivo do Autopilot removido | O dispositivo que tentou inscrever-se foi removido do Autopilot para esta conta. |
 | Máximo de dispositivos atingido | A inscrição foi bloqueada devido a uma restrição de limite de dispositivos configurada pelo administrador. |
 | Inclusão da Apple | A inscrição de todos os dispositivos iOS foi bloqueada até ao momento devido a um certificado push de MDM da Apple expirado ou em falta no Intune. |
 | O dispositivo não foi pré-registado | O dispositivo não foi pré-registado como dispositivo empresarial e todas as inscrições pessoais foram bloqueadas por um administrador. |
@@ -300,7 +300,7 @@ Utilize os seguintes recursos para ajudar a recolher dados de dispositivos ao re
   - [Enviar registos de dados de diagnóstico para o seu administrador de TI através de e-mail](/intune-user-help/send-logs-to-your-it-admin-by-email-android)
   - [Enviar erros de inscrição de dispositivos Android para o seu administrador de TI](/intune-user-help/send-enrollment-errors-to-your-it-administrator-android)
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Pode saber mais sobre o Controlo de administração baseada em funções (RBAC) para definir funções no seu dispositivo organizacional, gestão de aplicações móveis e tarefas de proteção de dados. Para obter mais informações, veja [Controlo de administração baseada em funções (RBAC) com o Intune](/intune/role-based-access-control).
 

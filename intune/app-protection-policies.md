@@ -1,7 +1,7 @@
 ---
 title: Criar e implementar políticas de proteção de aplicações
 titleSuffix: Microsoft Intune
-description: Este tópico descreve como criar e atribuir políticas de proteção de aplicações do Microsoft Intune (aplicação).
+description: Este tópico descreve como criar e atribuir políticas de proteção de aplicações (APP) do Microsoft Intune.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: a7d7834719b42a1aaa6240510a951733a96f6add
-ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
-ms.translationtype: MT
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
+ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59292415"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59899879"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Como criar e atribuir políticas de proteção de aplicações
 
@@ -54,7 +54,7 @@ Para obter mais informações sobre como adicionar as aplicações de linha de n
 6. No painel **Adicionar uma política**, selecione **Configurar definições obrigatórias** para abrir as **Definições**.
 
    Existem três categorias de definições de política:
-   - **Proteção de dados** -esse grupo inclui os dados perda prevenção (DLP) controles, como cortar, copiar, colar e guardar-como restrições. Estas definições determinam como os utilizadores interagem com os dados nas aplicações.
+   - **Proteção de dados** – este grupo inclui os controlos de prevenção de perda de dados (DLP), como as restrições das operações de cortar, copiar, colar e guardar como. Estas definições determinam como os utilizadores interagem com os dados nas aplicações.
    - **Requisitos de acesso**: este grupo contém as opções de PIN por aplicação que determinam como o utilizador final utiliza as aplicações num contexto de trabalho.  
    - **Iniciação condicional**: este grupo guarda definições como as definições de SO mínimo, de deteção de dispositivos desbloqueados por jailbreak ou rooting e de períodos de tolerância offline.
 
@@ -74,15 +74,15 @@ As novas políticas que criar não serão implementadas para utilizadores até q
 
 2. No painel ***Proteção de Aplicações do Intune**, selecione **Atribuições** para abrir o painel **Proteção de Aplicações do Intune – Atribuições**. No separador *Incluir*, clique em **Selecionar grupos para incluir**. 
 
-   ![Captura de ecrã do painel atribuições, com selecionar grupos para incluir o menu](./media/app-protection-policy-add-users.png)
+   ![Captura de ecrã do painel Atribuições com o menu Selecionar grupos a incluir](./media/app-protection-policy-add-users.png)
 
 3.  É apresentada uma lista de todos os grupos de segurança no seu **Azure Active Directory**. Selecione os grupos de utilizadores aos quais pretende aplicar esta política e, em seguida, clique em **Selecionar**. 
 
-    ![Captura de ecrã do painel de grupo do utilizador adicionar com a lista de utilizadores do Azure AD](./media/azure-ad-user-group-list.png)
+    ![Captura de ecrã do painel Adicionar grupo de utilizadores com a lista de utilizadores do Microsoft Azure AD](./media/azure-ad-user-group-list.png)
 
-4.  Depois de incluir e excluir grupos, selecione **guardar** para guardar a configuração e implementar a política aos utilizadores. Se selecionou **descartar** antes de guardar a configuração, irá eliminar todas as alterações efetuadas a *inclusão* e *excluir* separadores.   
+4.  Depois de incluir e excluir grupos, selecione **Guardar** para guardar a configuração e implementar a política para os utilizadores. Se tiver selecionado **Eliminar** antes de guardar a configuração, serão eliminadas todas as alterações feitas nos separadores *Incluir* e *Excluir*.   
  
-     ![Captura de ecrã que mostra o salvamento e descartar opções](./media/save-assignment.png)
+     ![Captura de ecrã que mostra as opções Guardar e Eliminar](./media/save-assignment.png)
   
 Acabou de criar uma política e de a implementar para os utilizadores.
 
@@ -115,13 +115,13 @@ Para ver o efeito das alterações imediatamente, o utilizador final tem de term
 
 2.  No painel *Proteção de Aplicações do Intune*, selecione **Atribuições** para abrir o painel **Proteção de Aplicações do Intune – Atribuições**, que mostra a lista dos grupos de utilizadores que atualmente têm esta política.
 
-3.  Para adicionar um novo grupo de utilizadores à política, no separador *Incluir*, selecione **Selecionar grupos para incluir** e selecione o grupo de utilizadores. Escolher **selecione** para adicionar o grupo. 
+3.  Para adicionar um novo grupo de utilizadores à política, no separador *Incluir*, selecione **Selecionar grupos para incluir** e selecione o grupo de utilizadores. Escolha **Selecionar** para adicionar o grupo. 
 
-4.  Para excluir um grupo de utilizadores, no *excluir* escolha o separador **selecionar grupos para excluir**e selecione o grupo de utilizadores. Selecione a opção **Selecionar** para remover o grupo de utilizadores.  
+4.  Para excluir um grupo de utilizadores, no separador *Excluir*, escolha **Selecionar grupos a excluir** e selecione o grupo de utilizadores. Selecione a opção **Selecionar** para remover o grupo de utilizadores.  
 
-5.  Eliminar grupos que foram adicionados anteriormente, em qualquer uma de *inclusão* ou *excluir* guias, selecione as reticências (...) e selecione **eliminar**. 
+5.  Para eliminar grupos que foram adicionados anteriormente, no separador *Incluir* ou *Excluir*, selecione as reticências (...) e, em seguida, **Eliminar**. 
 
-5.  Depois das suas alterações para as atribuições de estiverem prontas, selecione **guardar** para guardar a configuração e implementar a política para o novo conjunto de utilizadores. Se selecionou **descartar** antes de guardar a configuração, irá eliminar todas as alterações efetuadas a *inclusão* e *excluir* separadores.
+5.  Quando tiver concluído as alterações às atribuições, selecione **Guardar** para guardar a configuração e implementar a política para o novo conjunto de utilizadores. Se tiver selecionado **Eliminar** antes de guardar a configuração, serão eliminadas todas as alterações feitas nos separadores *Incluir* e *Excluir*.
 
 ### <a name="to-change-policy-settings"></a>Para alterar definições de política
 
@@ -140,7 +140,7 @@ Uma vez que as políticas de proteção de aplicações do Intune são direciona
 
 Para criar estas políticas, navegue até **Aplicações do cliente** > **Políticas de proteção de aplicações** na consola do Intune e selecione **Criar Política**. Também pode editar uma política de proteção de aplicações existente. Para que a política de proteção de aplicações se aplique a dispositivos geridos e não geridos, confirme que a opção **Direcionar para todos os tipos de aplicações** está definida como **Sim**, o valor predefinido. Se quiser atribuir especificamente com base no estado de gestão, defina **Direcionar para todos os tipos de aplicações** para **Não**. 
 
-![Captura de ecrã do painel adicionar uma política com o destino para todos os tipos de aplicações](./media/app-protection-policies-target-all.png)
+![Captura de ecrã a mostrar o painel Adicionar uma política com a opção Direcionar para todos os tipos de aplicações](./media/app-protection-policies-target-all.png)
 
 Para o iOS, as definições de configuração da aplicação adicionais são necessárias para direcionar as definições de APP para as aplicações nos dispositivos inscritos no Intune:
 - **IntuneMAMUPN** tem de ser configurado para todas as aplicações geridas pela MDM. Para obter mais informações, veja [Como gerir a transferência de dados entre aplicações iOS no Microsoft Intune](https://docs.microsoft.com/intune/data-transfer-between-apps-manage-ios#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).
@@ -156,7 +156,7 @@ Para ver uma lista completa das definições de política para iOS e Android, se
 - [Políticas para iOS](app-protection-policy-settings-ios.md)
 - [Políticas para Android](app-protection-policy-settings-android.md)
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Próximos passos
 [Monitorizar o estado do utilizador e de conformidade](app-protection-policies-monitor.md)
 
 ### <a name="see-also"></a>Consulte também

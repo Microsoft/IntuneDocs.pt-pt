@@ -17,17 +17,17 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 896008594e17c3773831edede263c8c47cde3c48
-ms.sourcegitcommit: 601327125ac8ae912d8159422de8aac7dbdc25f6
-ms.translationtype: MT
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
+ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59429215"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59900537"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Remover dispositivos ao apagar os dados, extinguir ou anular a inscrição do dispositivo de forma manual
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Ao realizar as ações **Extinguir** ou **Limpar**, pode remover do Intune os dispositivos que já não são necessários, que estão a ser reaproveitados ou que estão em falta. Os utilizadores também podem emitir um comando remoto do Portal da empresa do Intune para dispositivos que estão inscritos no Intune.
+Ao realizar as ações **Extinguir** ou **Limpar**, pode remover do Intune os dispositivos que já não são necessários, que estão a ser reaproveitados ou que estão em falta. Os utilizadores também podem emitir um comando remoto a partir do Portal da Empresa do Intune para dispositivos inscritos no Intune.
 
 > [!NOTE]
 > Antes de remover um utilizador do Azure Active Directory (Azure AD), utilize as ações **Limpar** ou **Extinguir** para todos os dispositivos associados a esse utilizador. Se remover utilizadores que têm dispositivos geridos a partir do Azure AD, o Intune deixará de conseguir apagar os dados ou extinguir esses dispositivos.
@@ -83,12 +83,12 @@ As seguintes tabelas descrevem os dados que são removidos e o efeito da ação 
 
 |Tipo de dados|iOS|
 |-------------|-------|
-|Aplicações da empresa e dados associados instalados pelo Intune|**Aplicações instaladas através do Portal da empresa:** Para aplicações que são afixadas ao perfil de gestão, todos os dados da aplicação e as aplicações são removidas. Estas aplicações incluem aplicações instaladas originalmente da App Store e mais tarde geridas como aplicações da empresa. <br /><br /> **Aplicações da Microsoft que utilizam a gestão de aplicações móveis e foram instaladas a partir da App Store:** Para aplicações que não são geridas pelo Portal da empresa, dados de aplicações da empresa que estão protegidos pela encriptação de gestão de aplicações móveis (MAM) dentro do armazenamento local da aplicação são removidos. Os dados protegidos pela encriptação MAM fora da aplicação permanecem encriptados e inutilizáveis, mas não são removidos. Os dados pessoais e as aplicações não são removidas.|
+|Aplicações da empresa e dados associados instalados pelo Intune|**Aplicações instaladas através do Portal da Empresa:** para as aplicações que são afixadas no perfil de gestão, são removidos todos os dados das aplicações e as aplicações. Estas aplicações incluem aplicações instaladas originalmente a partir da App Store e mais tarde geridas como aplicações da empresa. <br /><br /> **Aplicações da Microsoft que utilizam a gestão de aplicações móveis e que foram instaladas a partir da App Store:** para aplicações que não são geridas pelo Portal da Empresa, são removidos os dados de aplicações da empresa protegidos pela encriptação de Gestão de Aplicações Móveis (MAM) dentro do armazenamento local de aplicações. Os dados protegidos pela encriptação MAM fora da aplicação permanecem encriptados e inutilizáveis, mas não são removidos. As aplicações pessoais e os dados não são removidos.|
 |Definições|As configurações que foram definidas pela política do Intune já não são impostas. Os utilizadores podem alterar as definições.|
 |Definições de perfis de Wi-Fi e da VPN|Removidos.|
 |Definições de perfil de certificado|Os certificados são removidos e revogados.|
 |Agente de gestão|O perfil de gestão é removido.|
-|Email|Os perfis de e-mail aprovisionados através do Intune são removidos. O e-mail em cache no dispositivo é eliminado.|
+|E-mail|Os perfis de e-mail aprovisionados através do Intune são removidos. O e-mail em cache no dispositivo é eliminado.|
 |Anulação da associação ao Azure AD|O registo do Azure AD é removido.|
 
 ### <a name="android"></a>Android
@@ -96,7 +96,7 @@ As seguintes tabelas descrevem os dados que são removidos e o efeito da ação 
 |Tipo de dados|Android|Android Samsung Knox Standard|
 |-------------|-----------|------------------------|
 |Ligações Web|Removidos.|Removidos.|
-|Aplicações não geridas do Google Play|As aplicações e os dados permanecem instalados. <br /> <br />Dados de aplicação da empresa que estão protegidos pela encriptação de gestão de aplicações móveis (MAM) dentro do armazenamento local da aplicação são removidos. Os dados protegidos pela encriptação MAM fora da aplicação permanecem encriptados e inutilizáveis, mas não são removidos. |As aplicações e os dados permanecem instalados. <br /> <br />Dados de aplicação da empresa que estão protegidos pela encriptação de gestão de aplicações móveis (MAM) dentro do armazenamento local da aplicação são removidos. Os dados protegidos pela encriptação MAM fora da aplicação permanecem encriptados e inutilizáveis, mas não são removidos.|
+|Aplicações não geridas do Google Play|As aplicações e os dados permanecem instalados. <br /> <br />São removidos os dados de aplicações da empresa protegidos pela encriptação de Gestão de Aplicações Móveis (MAM) dentro do armazenamento local de aplicações. Os dados protegidos pela encriptação MAM fora da aplicação permanecem encriptados e inutilizáveis, mas não são removidos. |As aplicações e os dados permanecem instalados. <br /> <br />São removidos os dados de aplicações da empresa protegidos pela encriptação de Gestão de Aplicações Móveis (MAM) dentro do armazenamento local de aplicações. Os dados protegidos pela encriptação MAM fora da aplicação permanecem encriptados e inutilizáveis, mas não são removidos.|
 |Aplicações de linha de negócio não geridas|As aplicações e os dados permanecem instalados.|As aplicações são desinstaladas e os dados locais da aplicação são removidos. Não são removidos dados fora da aplicação (por exemplo, num cartão SD).|
 |Aplicações geridas do Google Play|Os dados da aplicação são removidos. A aplicação não é removida. Os dados protegidos pela encriptação da Gestão de Aplicações Móveis (MAM) fora da aplicação (por exemplo, cartão SD) permanecem encriptados e inutilizáveis, mas não são removidos.|Os dados da aplicação são removidos. A aplicação não é removida. Os dados protegidos pela encriptação MAM fora da aplicação (por exemplo, cartão SD) permanecem encriptados, mas não são removidos.|
 |Aplicações de linha de negócios geridas|Os dados da aplicação são removidos. A aplicação não é removida. Os dados protegidos pela encriptação MAM fora da aplicação (por exemplo, cartão SD) permanecem encriptados e inutilizáveis, mas não são removidos.|Os dados da aplicação são removidos. A aplicação não é removida. Os dados protegidos pela encriptação MAM fora da aplicação (por exemplo, cartão SD) permanecem encriptados e inutilizáveis, mas não são removidos.|
@@ -104,7 +104,7 @@ As seguintes tabelas descrevem os dados que são removidos e o efeito da ação 
 |Definições de perfis de Wi-Fi e da VPN|Removidos.|Removidos.|
 |Definições de perfil de certificado|Os certificados são revogados, mas não removidos.|Os certificados são removidos e revogados.|
 |Agente de gestão|O privilégio de Administrador de Dispositivos é revogado.|O privilégio de Administrador de Dispositivos é revogado.|
-|Email|N/D (os perfis de e-mail não são suportados por dispositivos Android)|Os perfis de e-mail aprovisionados através do Intune são removidos. O e-mail em cache no dispositivo é eliminado.|
+|E-mail|N/D (os perfis de e-mail não são suportados por dispositivos Android)|Os perfis de e-mail aprovisionados através do Intune são removidos. O e-mail em cache no dispositivo é eliminado.|
 |Anulação da associação ao Azure AD|O registo do Azure AD é removido.|O registo do Azure AD é removido.|
 
 ### <a name="android-work-profile"></a>Perfil de trabalho do Android
@@ -129,13 +129,13 @@ Só pode limpar dispositivos de quiosque. Não é possível extinguir dispositiv
 
 ### <a name="windows"></a>Windows
 
-|Tipo de dados|Windows 8.1 (MDM) e Windows RT 8.1|Windows RT|Windows Phone 8.1 e Windows Phone 8|Windows 10|
+|Tipo de dados|Windows 8.1 (MDM) e Windows RT 8.1|Windows RT|Windows Phone 8.1 e Windows Phone 8|Windows 10|
 |-------------|----------------------------------------------------------------|--------------|-----------------------------------------|--------|
-|Aplicações da empresa e dados associados instalados pelo Intune|As chaves para ficheiros protegidos por EFS são revogadas. O utilizador não consegue abrir os ficheiros.|As aplicações da empresa não são removidas.|As aplicações instaladas originalmente através do Portal da Empresa são desinstaladas. Os dados da aplicação da empresa são removidos.|As aplicações são desinstaladas. As chaves de sideload são removidas.<br>Na versão 1703 do Windows 10 (Atualização para Criativos) e posterior, as aplicações do Office 365 ProPlus não são removidas. Extensão de gestão do Intune instalado Win32 não serão possível desinstalar aplicações em dispositivos não inscritos. Os administradores podem tirar partido de exclusão de atribuição não oferecer aplicações Win32 em dispositivos BYOD.|
+|Aplicações da empresa e dados associados instalados pelo Intune|As chaves para ficheiros protegidos por EFS são revogadas. O utilizador não consegue abrir os ficheiros.|As aplicações da empresa não são removidas.|As aplicações instaladas originalmente através do Portal da Empresa são desinstaladas. Os dados da aplicação da empresa são removidos.|As aplicações são desinstaladas. As chaves de sideload são removidas.<br>Na versão 1703 do Windows 10 (Atualização para Criativos) e posterior, as aplicações do Office 365 ProPlus não são removidas. As aplicações Win32 instaladas da extensão de gestão do Intune não serão desinstaladas em dispositivos não inscritos. Os administradores podem tirar partido da exclusão de atribuição para não oferecer aplicações Win32 em dispositivos BYOD.|
 |Definições|As configurações que foram definidas pela política do Intune já não são impostas. Os utilizadores podem alterar as definições.|As configurações que foram definidas pela política do Intune já não são impostas. Os utilizadores podem alterar as definições.|As configurações que foram definidas pela política do Intune já não são impostas. Os utilizadores podem alterar as definições.|As configurações que foram definidas pela política do Intune já não são impostas. Os utilizadores podem alterar as definições.|
-|Definições de perfis de Wi-Fi e da VPN|Removidos.|Removidos.|Não suportado.|Removidos.|
-|Definições de perfil de certificado|Os certificados são removidos e revogados.|Os certificados são removidos e revogados.|Não suportado.|Os certificados são removidos e revogados.|
-|Email|Remove e-mails com o EFS ativado. Isto inclui e-mails e anexos na aplicação Correio para Windows.|Não suportado.|Os perfis de e-mail aprovisionados através do Intune são removidos. O e-mail em cache no dispositivo é eliminado.|Remove e-mails com o EFS ativado. Isto inclui e-mails e anexos na aplicação Correio para Windows. Remove as contas de e-mail que tenham sido aprovisionadas pelo Intune.|
+|Definições de perfis de Wi-Fi e da VPN|Removidos.|Removidos.|Não suportada.|Removidos.|
+|Definições de perfil de certificado|Os certificados são removidos e revogados.|Os certificados são removidos e revogados.|Não suportada.|Os certificados são removidos e revogados.|
+|E-mail|Remove e-mails com o EFS ativado. Isto inclui e-mails e anexos na aplicação Correio para Windows.|Não suportada.|Os perfis de e-mail aprovisionados através do Intune são removidos. O e-mail em cache no dispositivo é eliminado.|Remove e-mails com o EFS ativado. Isto inclui e-mails e anexos na aplicação Correio para Windows. Remove as contas de e-mail que tenham sido aprovisionadas pelo Intune.|
 |Anulação da associação ao Azure AD|Não.|Não.|O registo do Azure AD é removido.|Não aplicável. No Windows 10, não pode extinguir dispositivos associados ao Azure AD.|
 
 ### <a name="retire"></a>Extinguir
@@ -167,7 +167,7 @@ Pode configurar o Intune de forma a eliminar automaticamente dispositivos que pa
 
 Poderá ter de eliminar dispositivos do Azure AD devido a problemas de comunicação ou dispositivos em falta. Pode utilizar a ação **Eliminar** para remover registos de dispositivos do portal do Azure para dispositivos que sabe que são inacessíveis e pouco prováveis de voltar a comunicar com o Azure. A ação **Eliminar** não remove um dispositivo da gestão.
 
-1.  Inicie sessão no [Azure Active Directory no portal do Azure](http://aka.ms/accessaad) com as suas credenciais de administrador. Também pode iniciar sessão para o [Centro de administração do Microsoft 365](https://admin.microsoft.com). A partir do menu, selecione **Centros de administração** > **Azure AD**.
+1.  Inicie sessão no [Azure Active Directory no portal do Azure](http://aka.ms/accessaad) com as suas credenciais de administrador. Também pode iniciar sessão no [centro de administração do Microsoft 365](https://admin.microsoft.com). A partir do menu, selecione **Centros de administração** > **Azure AD**.
 2.  Se não tiver uma, crie uma Subscrição do Azure. Isto não deve exigir um cartão de crédito ou pagamento se tiver uma conta paga (selecione a ligação de subscrição **Registar o Azure Active Directory gratuito**).
 3.  Selecione **Azure Active Directory** e, em seguida, selecione a sua organização.
 4.  Selecione o separador **Utilizadores** .
@@ -191,11 +191,11 @@ Se pretender remover completamente um dispositivo DEP da Apple da gestão pelo I
 
     ![Captura de ecrã da opção Reatribuir da Apple](./media/devices-wipe/apple-reassign.png)
 
-## <a name="fresh-start"></a>Começar do zero
+## <a name="fresh-start"></a>Começar do Zero
 
-Aplicável para dispositivos Windows 10. Leia mais sobre [começar do zero](https://docs.microsoft.com/intune/device-fresh-start).
+Aplicável aos dispositivos Windows 10. Leia mais sobre [Começar do Zero](https://docs.microsoft.com/intune/device-fresh-start).
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Se pretender reinscrever um dispositivo eliminado, veja [Opções de inscrição](enrollment-options.md).
 

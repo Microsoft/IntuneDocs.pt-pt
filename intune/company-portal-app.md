@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 33f24a3d7b30973855bb303bb97bf703cd4dc5fa
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
-ms.translationtype: MT
+ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
+ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798251"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59895418"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Como configurar a aplicação Portal da Empresa do Microsoft Intune
 
@@ -32,9 +32,9 @@ ms.locfileid: "58798251"
 O portal da empresa do Microsoft Intune é onde os utilizadores acedem aos dados da empresa e podem realizar tarefas comuns, como inscrever dispositivos, instalar aplicações e localizar informações de assistência do departamento de TI.        
 
 > [!Tip]        
-> Quando personaliza o Portal da Empresa, as configurações aplicam-se tanto ao site do Portal da Empresa, como às aplicações do Portal da Empresa. Tenha em atenção que os utilizadores têm de ter uma licença do Intune atribuída para aceder ao site do Portal da empresa.
+> Quando personaliza o Portal da Empresa, as configurações aplicam-se tanto ao site do Portal da Empresa, como às aplicações do Portal da Empresa. Tenha em atenção que os utilizadores têm de ter uma licença do Intune atribuída para poderem aceder ao site do Portal da Empresa.
 
-Ao personalizar o Portal da empresa, irá ajudar a proporcionar uma experiência familiar e útil para os utilizadores finais. Para tal, no portal do Intune, selecione **aplicações de cliente** > **marca e personalização**e, em seguida, configure as definições necessárias. 
+A personalização do Portal da Empresa ajuda a proporcionar uma experiência familiar e útil aos utilizadores finais. Para tal, no portal do Intune, selecione **Aplicações cliente** > **Marca e personalização** e, em seguida, configure as definições necessárias. 
 
 > [!Note]       
 > Se estiver a utilizar o Azure Government, os registos de aplicações estão disponíveis para o utilizador final decidir como pretende partilhar ao iniciar o processo para obter ajuda com um problema. No entanto, se não estiver a utilizar o Azure Government, o Portal da Empresa para Windows 10 irá enviar registos de aplicações diretamente para a Microsoft quando o utilizador iniciar o processo para obter ajuda com um problema. O envio dos registos de aplicações para a Microsoft irá facilitar a resolução dos problemas. 
@@ -51,7 +51,7 @@ Os campos marcados com um asterisco (*) são obrigatórios.
 | **URL de declaração de privacidade** |     79     | Pode especificar a sua declaração de privacidade da empresa que é apresentada quando os utilizadores clicam nas ligações de privacidade a partir do Portal da Empresa. Tem de introduzir um URL válido no formato `<https://www.contoso.com>`. |
 
 ## <a name="support-information"></a>Informações de suporte      
-Introduza as informações de suporte da sua empresa para dar aos seus funcionários um contacto para questões relacionadas com o Intune.          
+Introduza as informações de suporte da sua empresa para que o colaborador tenha um contacto para questões relacionadas com o Intune.          
 
 |Nome do campo|Comprimento máximo|Mais informações|
 |---|---|---|
@@ -71,10 +71,10 @@ Aplique a cor do tema ao Portal da Empresa. Selecione uma cor padrão ou introdu
 
 |Nome do campo|Mais informações|
 |---|---|
-|**Selecionar uma cor padrão ou introduzir um código hexadecimal de seis dígitos**| Escolher **padrão** visualmente selecionar uma cor. Escolha **Personalizada** para selecionar uma cor específica com base num valor de código hexadecimal.|
+|**Selecionar uma cor padrão ou introduzir um código hexadecimal de seis dígitos**| Escolha **Padrão** para selecionar visualmente uma cor. Escolha **Personalizada** para selecionar uma cor específica com base num valor de código hexadecimal.|
 |**Escolher a cor do tema**| Selecione a cor do tema que pretende aplicar ao Portal da Empresa. Pode escolher uma cor padrão ou introduzir um código hexadecimal específico. |
 |**Apresentar**| Selecione se pretende apresentar o **Logótipo e o nome da empresa**, **Apenas o logótipo da empresa** ou **Apenas o nome da empresa**. |
-|**Carregar o logótipo da empresa**|Pode carregar o logótipo da empresa para mostrar no Portal da Empresa. Tenha em atenção que a cor do texto será automaticamente escolhida para proporcionar o maior nível de contraste. Para obter o melhor aspeto, carregue um logótipo com um fundo transparente.<p><ul><li>Tamanho máx. da imagem: 400px x 400px</li><li>Tamanho máximo do ficheiro: 750KB</li><li>Tipo de ficheiro: PNG, JPG ou JPEG</li></ul>|
+|**Carregar o logótipo da empresa**|Pode carregar o logótipo da empresa para mostrar no Portal da Empresa. Tenha em atenção que a cor do texto será automaticamente escolhida para proporcionar o maior nível de contraste. Para obter o melhor aspeto, carregue um logótipo com um fundo transparente.<p><ul><li>Tamanho máximo da imagem: 400 px x 400 px</li><li>Tamanho máximo do ficheiro: 750 KB</li><li>Tipo de ficheiro: PNG, JPG ou JPEG</li></ul>|
 
 Depois de carregar o logótipo, a área de pré-visualização mostrará o logótipo com a cor do tema. Se optar por apresentar o nome da sua empresa, este será mostrado em preto ou branco no Portal da Empresa e será automaticamente escolhido para proporcionar o maior nível de contraste com base na cor do seu tema. A área de pré-visualização no ecrã não apresentará o nome da sua empresa. 
 
@@ -83,7 +83,7 @@ Escolha o logótipo que ficará melhor em fundos brancos ou claros.
 
 |Nome do campo|Mais informações|
 |---|---|
-|**Carregar o logótipo**| Esta opção está disponível se tiver optado por mostrar o logótipo da empresa. Para obter o melhor aspeto, carregue um logótipo com um fundo transparente.<p><ul><li>Tamanho máx. da imagem: 400px x 400px</li><li>Tamanho máximo do ficheiro: 750KB</li><li>Tipo de ficheiro: PNG, JPG ou JPEG</li></ul>|
+|**Carregar o logótipo**| Esta opção está disponível se tiver optado por mostrar o logótipo da empresa. Para obter o melhor aspeto, carregue um logótipo com um fundo transparente.<p><ul><li>Tamanho máximo da imagem: 400 px x 400 px</li><li>Tamanho máximo do ficheiro: 750 KB</li><li>Tipo de ficheiro: PNG, JPG ou JPEG</li></ul>|
 
 ### <a name="brand-image-for-company-portal"></a>Imagem de marca do Portal da Empresa
 
@@ -91,33 +91,33 @@ Apresente uma imagem de marca que reflita a marca da sua empresa. Depois de guar
 
 |Nome do campo|Mais informações|
 |---|---|
-|**Carregar a imagem de marca**| Esta opção permite-lhe exibir uma imagem de marca. O Portal da empresa para iOS, ele mostra como uma imagem de fundo na página de perfil do usuário.<p><ul><li>Largura da imagem recomendado: Menor que 1125px, mas não inferior 640px</li><li>Tamanho máx. da imagem: 1.3 MB</li><li>Tipo de ficheiro: PNG, JPG ou JPEG</li></ul>|
+|**Carregar a imagem de marca**| Esta opção permite-lhe apresentar uma imagem de marca. No Portal da Empresa do iOS, é apresentada como uma imagem de fundo na página de perfil do utilizador.<p><ul><li>Largura recomendada da imagem: menos de 1125 px, mas não menos de 640 px</li><li>Tamanho máximo da imagem: 1,3 MB</li><li>Tipo de ficheiro: PNG, JPG ou JPEG</li></ul>|
 
 A imagem de marca correta pode melhorar a confiança do utilizador no Portal da Empresa ao apresentar uma imagem sólida da marca da sua empresa. Aqui estão algumas sugestões que poderá considerar para comprar, escolher e otimizar a imagem do Portal da Empresa. 
 
-- Entre em contacto com o Departamento de Marketing ou de Artes Gráficas. Pode já ter um conjunto aprovado de imagens de marca. Também poderão ajudá-lo a otimizar as imagens conforme necessário. 
+- Entre em contacto com o Departamento de Marketing ou de Artes Gráficas. Estes departamentos podem já ter um conjunto de imagens de marca aprovado. Também poderão ajudá-lo a otimizar as imagens conforme necessário. 
 
-- Considere tanto a composição horizontal como a vertical. A imagem deve ter um fundo suficiente, de forma a envolver o ponto focal. A imagem pode ser recortada diferente com base na plataforma, orientação e tamanho de dispositivo. 
+- Considere tanto a composição horizontal como a vertical. A imagem deve ter um fundo suficiente, de forma a envolver o ponto focal. A imagem pode ser recortada de forma diferente com base na orientação, no tamanho e na plataforma do dispositivo. 
 
 - Evite utilizar uma imagem de stock genérica. A imagem deve refletir a marca da sua empresa e ser familiar aos utilizadores. Se não tiver uma, é melhor não utilizar uma imagem genérica que não faça sentido para o seu utilizador. 
 
 - Remova os metadados desnecessários. O ficheiro de imagem pode vir com metadados, tais como o perfil da câmara, a geolocalização, o título, a legenda, etc. Utilize uma ferramenta de otimização de imagens para retirar estas informações para manter a qualidade e cumprir o limite de tamanho do ficheiro. 
 
-Depois de uma imagem de marca é adicionada ou alterada no Intune, o usuário final poderá não a ver a alteração em dispositivos iOS, até que o Portal da empresa reconheceu a alteração em Iniciar cópia de segurança e, em seguida, foi reiniciado para apresentar a imagem de marca. 
+Depois de uma imagem de marca ter sido adicionada ou alterada no Intune, o utilizador final poderá não ver a alteração nos dispositivos iOS, até que o Portal da Empresa reconheça a alteração no arranque e tenha sido reiniciado para apresentar a imagem de marca. 
 
 ### <a name="brand-image-examples"></a>Exemplos de imagem de marca
 
-A imagem seguinte mostra um iPad de exemplo a imagem corporativa:
+A imagem seguinte mostra um exemplo de imagem corporativa no iPad:
 
-![Captura de ecrã do iPhone de exemplo, imagem corporativa](media/company-portal-app/company-portal-app-03.png)
+![Captura de ecrã de exemplo de imagem corporativa no iPhone](media/company-portal-app/company-portal-app-03.png)
 
-A imagem seguinte mostra um iPhone de exemplo a imagem corporativa:
+A imagem seguinte mostra um exemplo de imagem corporativa no iPhone:
 
-![Captura de ecrã do iPad de exemplo, imagem corporativa](media/company-portal-app/company-portal-app-02.png)
+![Captura de ecrã de exemplo de imagem corporativa no iPad](media/company-portal-app/company-portal-app-02.png)
 
 ## <a name="windows-company-portal-keyboard-shortcuts"></a>Atalhos de teclado do Portal da Empresa do Windows
 
-Os utilizadores finais podem disparar ações de navegação, a aplicação e o dispositivo no Portal de empresa do Windows com atalhos de teclado (Aceleradores).
+Os utilizadores finais podem ativar ações de navegação, de aplicação e de dispositivo no Portal da Empresa do Windows com atalhos de teclado.
 
 Os atalhos de teclado seguintes estão disponíveis na aplicação Portal da Empresa do Windows.
 
@@ -130,18 +130,18 @@ Os atalhos de teclado seguintes estão disponíveis na aplicação Portal da Emp
 |  | Enviar feedback | Alt+F |
 |  | O meu perfil | Alt+U |
 |  | Definições | Alt+T |
-| Base – Mosaico Dispositivo | Mudar o Nome | F2 |
+| Base – Mosaico Dispositivo | Mudar o nome | F2 |
 |  | Remove | Ctrl+D ou Delete |
 |  | Verificar o acesso | Ctrl+M ou F9 |
-| Detalhes do dispositivo | Mudar o Nome | F2 |
+| Detalhes do dispositivo | Mudar o nome | F2 |
 |  | Remove | Ctrl+D ou Delete |
 |  | Verificar o acesso | Ctrl+M ou F9 |
 | Detalhes da aplicação | Instalar | Ctrl+I |
 
-Os utilizadores finais também poderão ver os atalhos disponíveis no Windows aplicação Portal da empresa.
+Os utilizadores finais também poderão ver os atalhos disponíveis na aplicação Portal da Empresa no Windows.
 
-![Captura de ecrã dos atalhos disponíveis no Portal da empresa do Windows](media/company-portal-app/company-portal-app-01.png)
+![Captura de ecrã dos atalhos disponíveis no Portal da Empresa do Windows](media/company-portal-app/company-portal-app-01.png)
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Próximos passos
 
 - [Adicionar manualmente a aplicação Portal da Empresa do Windows 10 através do Microsoft Intune](store-apps-company-portal-app.md)
