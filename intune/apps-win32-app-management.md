@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 23a211d48a38cdffb909ceaf611a9939b5ac82f0
-ms.sourcegitcommit: f8bbd9bac2016a77f36461bec260f716e2155b4a
+ms.openlocfilehash: 07922ff771f8dea2e19a94cd965fb7779f20f131
+ms.sourcegitcommit: 5fec35341d83b16023a92fc4b2b3e9237fc6c9ab
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65733201"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65853959"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune autónomo - gestão de aplicações do Win32
 
@@ -96,7 +96,7 @@ Tal como uma aplicação de linha de negócio (LOB), pode adicionar uma aplicaç
 
 Os seguintes passos fornecem orientação para ajudá-lo a adicionar uma aplicação Windows ao Intune.
 
-### <a name="step-1-specify-the-software-setup-file"></a>Passo 1: Especifique o ficheiro de configuração de software
+### <a name="step-1-specify-the-software-setup-file"></a>Passo 1: Especificar o ficheiro de configuração do software
 
 1.  Inicie sessão no [portal do Azure](https://portal.azure.com/).
 2.  Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
@@ -122,20 +122,20 @@ Os seguintes passos fornecem orientação para ajudá-lo a adicionar uma aplica�
 
 1.  No painel **Adicionar aplicação**, selecione **Informações da aplicação** para configurar a aplicação.
 2.  No painel **Informações da aplicação**, configure as seguintes informações. Alguns dos valores neste painel podem ser preenchidos automaticamente.
-    - **Nome**: Introduza o nome da aplicação tal como aparece no portal da empresa. Se existir o mesmo nome de aplicação duas vezes, cada aplicação irá aparecer no portal da empresa.
+    - **Nome**: introduza o nome da aplicação tal como aparece no portal da empresa. Se existir o mesmo nome de aplicação duas vezes, cada aplicação irá aparecer no portal da empresa.
     - **Descrição**: Introduza uma descrição para a aplicação. A descrição aparece no portal da empresa.
     - **Publicado**r: Introduza o nome do publicador da aplicação.
     - **Categoria**: Selecione uma ou mais das categorias de aplicações incorporadas ou uma categoria que criou. As categorias permitem que os utilizadores encontrem a aplicação mais facilmente quando procurarem no portal da empresa.
-    - **Apresentar como aplicação em destaque no Portal da empresa**: Apresente a aplicação de forma bem visível na página principal do portal da empresa quando os utilizadores procurarem aplicações.
-    - **URL de informações**: Opcionalmente, introduza o URL de um site que contenha informações sobre a aplicação. O URL aparece no portal da empresa.
-    - **URL de privacidade**: Opcionalmente, introduza o URL de um site que contém informações de privacidade para a aplicação. O URL aparece no portal da empresa.
-    - **Desenvolvedor**: Opcionalmente, introduza o nome do programador da aplicação.
-    - **Proprietário**: Opcionalmente, introduza um nome para o proprietário desta aplicação. Por exemplo, **Departamento de RH**.
-    - **Notas de**: Introduza quaisquer notas que pretende associar esta aplicação.
-    - **Logótipo**: Carregue um ícone que está associado à aplicação. O ícone é apresentado com a aplicação quando os utilizadores procurarem no portal da empresa.
+    - **Apresentar como aplicação em destaque no Portal da Empresa**: Apresente a aplicação de forma bem visível na página principal do portal da empresa quando os utilizadores procurarem aplicações.
+    - **URL de informações**: opcionalmente, introduza o URL de um site que contenha informações sobre a aplicação. O URL aparece no portal da empresa.
+    - **URL de privacidade**: opcionalmente, introduza o URL de um site que contenha informações sobre a privacidade da aplicação. O URL aparece no portal da empresa.
+    - **Programador**: opcionalmente, introduza o nome do programador da aplicação.
+    - **Proprietário**: opcionalmente, introduza o nome do proprietário desta aplicação. Por exemplo, **Departamento de RH**.
+    - **Notas**: introduza quaisquer notas que queira associar a esta aplicação.
+    - **Logótipo**: carregue um ícone associado à aplicação. O ícone é apresentado com a aplicação quando os utilizadores procurarem no portal da empresa.
 3.  Quando tiver terminado, selecione **OK**.
 
-### <a name="step-4-configure-app-installation-details"></a>Passo 4: Configurar detalhes de instalação da aplicação
+### <a name="step-4-configure-app-installation-details"></a>Passo 4: Configurar detalhes de instalação da aplicação
 1.  No painel **Adicionar aplicação**, selecione **Programa** para configurar a instalação da aplicação e os comandos de remoção da aplicação.
 2.  Adicione a linha de comandos de instalação completa para instalar a aplicação. 
 
@@ -158,7 +158,7 @@ Os seguintes passos fornecem orientação para ajudá-lo a adicionar uma aplica�
 
 4.  Quando tiver terminado, selecione **OK**.
 
-### <a name="step-5-configure-app-requirements"></a>Passo 5: Configurar os requisitos de aplicação
+### <a name="step-5-configure-app-requirements"></a>Passo 5: Configurar os requisitos de aplicação
 
 1.  No painel **Adicionar aplicação**, selecione **Requisitos** para configurar os requisitos que os dispositivos têm de cumprir antes de a aplicação ser instalada.
 2.  Na **adicionar uma regra de requisito** painel, configure as seguintes informações. Alguns dos valores neste painel podem ser preenchidos automaticamente.
@@ -245,7 +245,7 @@ Os seguintes passos fornecem orientação para ajudá-lo a adicionar uma aplica�
             Agente do Intune verifica os resultados do script. Lê os valores escritos pelo script no fluxo de saída padrão (STDOUT), no fluxo de erro padrão (STDERR) e no código de saída. Se a saída do script tiver um valor diferente de zero, o script falha e o estado de deteção de aplicação é Não instalada. Se o código de saída for zero e STDOUT tiver dados, o estado de deteção de aplicação é Instalada. 
 
             > [!NOTE]
-            > Quando a saída do script tiver o valor de 0, a execução do script foi efetuada com êxito. O segundo canal de saída indica que foi detetada uma aplicação – os dados do STDOUT indicam que a aplicação foi encontrada no cliente. Não procuramos uma cadeia de carateres específica no STDOUT.
+            > A Microsoft recomenda a codificação seu script como UTF-8. Quando a saída do script tiver o valor de 0, a execução do script foi efetuada com êxito. O segundo canal de saída indica que foi detetada uma aplicação – os dados do STDOUT indicam que a aplicação foi encontrada no cliente. Não procuramos uma cadeia de carateres específica no STDOUT.
 
         4.  Depois de adicionar a(s) regra(s), selecione **Adicionar** > **OK**.
 
@@ -271,7 +271,7 @@ Os seguintes passos fornecem orientação para ajudá-lo a adicionar uma aplica�
 2.  Selecione **Adicionar Grupo** para abrir o painel **Adicionar grupo** que está relacionado com a aplicação.
 3.  Para a aplicação específica, selecione um **tipo de atribuição**:
     - **Disponível para dispositivos inscritos**: Os utilizadores instalarem a aplicação, a aplicação Portal da empresa ou o site de Portal da empresa.
-    - **Necessário**: A aplicação está instalada nos dispositivos nos grupos selecionados.
+    - **Obrigatório**: a aplicação é instalada em dispositivos nos grupos selecionados.
     - **Desinstalar**: A aplicação é desinstalada dos dispositivos nos grupos selecionados.
 4.  Selecione **Grupos Incluídos** e atribua os grupos que irão utilizar esta aplicação.
 5.  No painel **Atribuir**, selecione **OK** para concluir a seleção de grupos incluídos.
@@ -326,7 +326,7 @@ A imagem seguinte notifica o utilizador final que as alterações da aplicação
 Se for necessário, é possível suprimir notificações de alerta do utilizador final que mostra por atribuição de aplicações. A partir do Intune, selecione **aplicações de cliente** > **aplicações** > selecione a aplicação > **atribuições** > **grupos incluem**. 
 
 > [!NOTE]
-> Extensão de gestão do Intune instalado Win32 não serão possível desinstalar aplicações em dispositivos não inscritos. Os administradores podem tirar partido de exclusão de atribuição não oferecer aplicações Win32 em dispositivos BYOD.
+> As aplicações Win32 instaladas da extensão de gestão do Intune não serão desinstaladas em dispositivos não inscritos. Os administradores podem tirar partido da exclusão de atribuição para não oferecer aplicações Win32 em dispositivos BYOD.
 
 ## <a name="troubleshoot-win32-app-issues"></a>Resolver problemas relacionados com aplicações Win32
 Os registos de agente no computador cliente encontram-se normalmente em `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs`. Pode tirar partido de `CMTrace.exe` para ver estes ficheiros de registo. *CMTrace.exe* pode ser transferido a partir [ferramentas de cliente do Configuration Manager](https://docs.microsoft.com/sccm/core/support/tools). 

@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4840ccac35f37e956c363a1f6103da623ef27782
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: d2eac8c396e63fa2f3a4e8ef2c2b88b883c87433
+ms.sourcegitcommit: b7f3a6d67f7ae2356bbca1934056d28cdfc6e45e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61505782"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65836460"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Definições de dispositivos do Android Enterprise para permitir ou restringir funcionalidades com o Intune
 
@@ -34,8 +34,8 @@ Este artigo apresenta e descreve as diferentes definições que pode controlar e
 
 ### <a name="general-settings"></a>Definições gerais
 
-- **Captura de ecrã**: Escolher **bloco** impedir capturas de ecrã ou tela captura no dispositivo. Também impede que os conteúdos presentes sejam apresentados em dispositivos de visualização que não tenham uma saída de vídeo segura. **Não configurado** permite ao utilizador capturar o conteúdo do ecrã como uma imagem.
-- **Câmara**: Escolher **bloco** para impedir o acesso à câmara do dispositivo. **Não é necessário** permite o acesso à câmara do dispositivo.
+- **Captura de ecrã**: escolha **Bloquear** para impedir as capturas de ecrã no dispositivo. Também impede que os conteúdos presentes sejam apresentados em dispositivos de visualização que não tenham uma saída de vídeo segura. **Não configurado** permite ao utilizador capturar o conteúdo do ecrã como uma imagem.
+- **Câmara**: escolha **Bloquear** para impedir o acesso à câmara no dispositivo. **Não é necessário** permite o acesso à câmara do dispositivo.
 - **Política de permissão predefinida**: Esta definição define a política de permissão predefinida para pedidos de permissões de runtime. Os valores possíveis incluem:
   - **Predefinição do dispositivo**: Utilize predefinição do dispositivo.
   - **Linha de comandos**: É pedido ao utilizador para aprovar a permissão.
@@ -46,7 +46,7 @@ Este artigo apresenta e descreve as diferentes definições que pode controlar e
 - **Reposição de fábrica**: Escolher **bloco** para impedir que os utilizadores com o factory reposição opção nas definições do dispositivo. **Não configurado** permite aos utilizadores utilizar esta definição no dispositivo.
 - **Arranque seguro**: Escolher **bloco** para impedir que os utilizadores reiniciar o dispositivo em modo de segurança. **Não configurado** permite aos utilizadores reiniciar o dispositivo em modo de segurança.
 - **Barra de status**: Escolher **bloco** para impedir o acesso a barra de estado, incluindo notificações e definições rápidas. **Não configurado** permite aos utilizadores acesso a barra de status.
-- **Serviços de dados de roaming**: Escolher **bloco** para impedir que os dados em roaming na rede celular. **Não configurado** permite dados em roaming quando o dispositivo estiver numa rede celular.
+- **Serviços de dados de roaming**: escolha **Bloquear** para impedir o roaming de dados na rede móvel. **Não configurado** permite dados em roaming quando o dispositivo estiver numa rede celular.
 - **As alterações de definições de Wi-Fi**: Escolher **bloco** para impedir que os utilizadores alterem as definições de Wi-Fi criadas pelo proprietário do dispositivo. Os utilizadores podem criar suas próprias configurações de Wi-Fi. **Não configurado** permite que os usuários alterar as definições de Wi-Fi no dispositivo.
 - **Configuração de ponto de acesso Wi-Fi**: Escolher **bloco** para impedir que os utilizadores a criar ou alterar quaisquer configurações de Wi-Fi. **Não configurado** permite que os usuários alterar as definições de Wi-Fi no dispositivo.
 - **Configuração de Bluetooth**: Escolher **bloco** para impedir que os utilizadores configurem Bluetooth no dispositivo. **Não configurado** permite o uso de Bluetooth no dispositivo.
@@ -145,27 +145,27 @@ Utilize estas definições para configurar uma experiência de estilo de local p
 
   Estas funcionalidades estão disponíveis para os utilizadores quando o dispositivo está bloqueado. Os utilizadores não vê nem acessar recursos que são verificados.
 
-- **Tipo de palavra-passe obrigatório**: Defina o tipo de palavra-passe necessária para o dispositivo. As opções são:
+- **Tipo obrigatório de palavra-passe**: Defina o tipo de palavra-passe necessária para o dispositivo. As opções são:
   - **Predefinição do dispositivo**
-  - **Palavra-passe de necessário, sem restrições**
-  - **Weak biométrica**: [Forte versus biometria fraca](https://android-developers.googleblog.com/2018/06/better-biometrics-in-android-p.html) (abre o site da web do Android)
-  - **Numérico**: Palavra-passe só pode ser números, como `123456789`. Introduza o **comprimento mínimo da palavra-passe** um utilizador tem de introduzir, entre 4 e 16 carateres.
-  - **Complexo numérico**: Repetido ou números consecutivos, como "1111" ou "1234", não são permitidos. Introduza o **comprimento mínimo da palavra-passe** um utilizador tem de introduzir, entre 4 e 16 carateres.
-  - **Alfabética**: Letras do alfabeto são necessárias. Números e símbolos não são necessários. Introduza o **comprimento mínimo da palavra-passe** um utilizador tem de introduzir, entre 4 e 16 carateres.
-  - **Alfanumérico**: Inclui as letras maiúsculas, letras minúsculas e carateres numéricos. Introduza o **comprimento mínimo da palavra-passe** um utilizador tem de introduzir, entre 4 e 16 carateres.
-  - **Alfanumérica com símbolos**: Inclui as letras maiúsculas, letras minúsculas, carateres numéricos, marcas de pontuação e símbolos. Introduza também:
+  - **Palavra-passe obrigatória, sem restrições**
+  - **Biometria fraca**: veja [Strong vs. weak biometrics](https://android-developers.googleblog.com/2018/06/better-biometrics-in-android-p.html) (Biometria forte versus fraca) (abre o site do Android)
+  - **Numérica**: a palavra-passe só pode ter números, como `123456789`. Introduza o **comprimento mínimo da palavra-passe** que um utilizador tem de introduzir, entre 4 e 16 carateres.
+  - **Complexo numérico**: não são permitidos números repetidos ou consecutivos, como “1111” ou “1234”. Introduza o **comprimento mínimo da palavra-passe** que um utilizador tem de introduzir, entre 4 e 16 carateres.
+  - **Alfabética**: são obrigatórias letras do alfabeto. Não são obrigatórios números nem símbolos. Introduza o **comprimento mínimo da palavra-passe** que um utilizador tem de introduzir, entre 4 e 16 carateres.
+  - **Alfanumérica**: inclui letras maiúsculas, letras minúsculas e carateres numéricos. Introduza o **comprimento mínimo da palavra-passe** que um utilizador tem de introduzir, entre 4 e 16 carateres.
+  - **Alfanumérica com símbolos**: inclui letras maiúsculas, letras minúsculas, carateres numéricos, sinais de pontuação e símbolos. Introduza também:
 
-    - **Comprimento mínimo da palavra-passe**: Introduza o comprimento mínimo que da palavra-passe tem de ter, entre 4 e 16 carateres.
-    - **Número de carateres necessários**: Introduza o número de carateres que a palavra-passe tem de ter, entre 0 e 16 carateres.
-    - **Número de carateres em minúsculas necessária**: Introduza o número de carateres minúsculos, que a palavra-passe tem de ter, entre 0 e 16 carateres.
-    - **Número de carateres em maiúsculas necessários**: Introduza o número de carateres maiúsculos que a palavra-passe tem de ter, entre 0 e 16 carateres.
-    - **Número de carateres não letra necessários**: Introduza o número de não-letras (algo diferente de letras do alfabeto) a palavra-passe tem de ter, entre 0 e 16 carateres.
-    - **Número de carateres numéricos necessários**: Introduza o número de carateres numéricos (`1`, `2`, `3`e assim por diante) a palavra-passe tem de ter, entre 0 e 16 carateres.
-    - **Número de carateres de símbolo necessários**: Introduza o número de carateres de símbolos (`&`, `#`, `%`e assim por diante) a palavra-passe tem de ter, entre 0 e 16 carateres.
+    - **Comprimento mínimo da palavra-passe**: introduza o comprimento mínimo da palavra-passe, entre 4 e 16 carateres.
+    - **Número de carateres obrigatórios**: introduza o número de carateres que a palavra-passe deverá ter, entre 0 e 16 carateres.
+    - **Número de carateres em minúsculas obrigatórios**: introduza o número de carateres em minúsculas que a palavra-passe deverá ter, entre 0 e 16 carateres.
+    - **Número de carateres em maiúsculas obrigatórios**: introduza o número de carateres em maiúsculas que a palavra-passe deverá ter, entre 0 e 16 carateres.
+    - **Número de carateres não alfabéticos obrigatórios**: introduza o número de carateres não alfabéticos (tudo o que não seja letras do alfabeto) que a palavra-passe deverá ter, entre 0 e 16 carateres.
+    - **Número de carateres numéricos obrigatórios**: introduza o número de carateres numéricos (`1`, `2`, `3` e assim por diante) que a palavra-passe deverá ter, entre 0 e 16 carateres.
+    - **Número de carateres de símbolos obrigatórios**: introduza o número de carateres de símbolos (`&`, `#`, `%` e assim por diante) que a palavra-passe deverá ter, entre 0 e 16 carateres.
 
-- **Número de dias até que a palavra-passe expirar**: Introduza o número de dias, entre 1-365, até ser preciso alterar a palavra-passe do dispositivo. Por exemplo, para alterar a palavra-passe após 60 dias, introduza `60`. Quando a palavra-passe expira, é pedido aos utilizadores para criar uma nova palavra-passe.
-- **Número de palavras-passe necessárias antes de utilizador pode resuse uma palavra-passe**: Introduza o número de palavras-passe recentes que não podem ser reutilizadas entre 1 e 24. Utilize esta definição para impedir o utilizador final de criar palavras-passe utilizadas anteriormente.
-- **Número de falhas de início de sessão antes de limpar o dispositivo**: Introduza o número, entre 4 a 11, com falhas de inícios de sessão consecutivas a permitir antes do dispositivo ser apagado.
+- **Número de dias até expirar a palavra-passe**: introduza o número de dias, entre 1 e 365, antes de ser necessário alterar a palavra-passe do dispositivo. Por exemplo, para alterar a palavra-passe após 60 dias, introduza `60`. Quando a palavra-passe expirar, será pedido aos utilizadores para criar uma nova.
+- **Número de palavras-passe necessárias antes de utilizador pode resuse uma palavra-passe**: introduza o número de palavras-passe recentes que não podem ser reutilizadas, entre 1 e 24. Utilize esta definição para impedir o utilizador final de criar palavras-passe utilizadas anteriormente.
+- **Número de falhas de início de sessão antes de apagar o dispositivo**: Introduza o número, entre 4 a 11, com falhas de inícios de sessão consecutivas a permitir antes do dispositivo ser apagado.
 
 ### <a name="power-settings"></a>Definições de energia
 
@@ -253,9 +253,9 @@ Utilize estas definições para configurar uma experiência de estilo de local p
 - **Exigir palavra-passe de perfil de trabalho**: Aplica-se ao Android 7.0 e superior com o perfil de trabalho ativado. Escolher **requerem** para introduzir uma política de código de acesso que aplica-se apenas às aplicações no perfil de trabalho. Por predefinição, o utilizador final pode utilizar os dois PINs definidos separadamente ou pode optar por combinar os PINs no mais forte dos dois. **Não configurado** permite ao utilizador utilizar aplicações de trabalho, sem introduzir uma palavra-passe.
 - **Comprimento mínimo da palavra-passe**: Introduza o número mínimo de carateres de palavra-passe do utilizador tem de ter, partir **4**-**16**.
 - **Máximo de minutos de inatividade até o trabalho ao bloqueio do perfil**: Selecione o período de tempo antes do perfil de trabalho ser bloqueado. Em seguida, o utilizador tem de introduzir as credenciais para recuperar o acesso.
-- **Número de falhas de início de sessão antes de limpar o dispositivo**: Introduza o número de vezes que uma palavra-passe incorreta pode ser introduzida antes do perfil de trabalho é eliminado do dispositivo.
-- **Expiração de palavra-passe (dias)**: Introduza o número de dias até ser preciso alterar palavra-passe de um utilizador final (de **1**-**255**).
-- **Tipo de palavra-passe obrigatório**: Selecione o tipo de palavra-passe que tem de ser definido no dispositivo. Escolha entre:
+- **Número de falhas de início de sessão antes de apagar o dispositivo**: Introduza o número de vezes que uma palavra-passe incorreta pode ser introduzida antes do perfil de trabalho é eliminado do dispositivo.
+- **Expiração da palavra-passe (dias)**: Introduza o número de dias até ser preciso alterar palavra-passe de um utilizador final (de **1**-**255**).
+- **Tipo obrigatório de palavra-passe**: Selecione o tipo de palavra-passe que tem de ser definido no dispositivo. Escolha entre:
   - **Predefinição do dispositivo**
   - **Biométrica de segurança baixa**
   - **Necessário**
@@ -273,10 +273,10 @@ Utilize estas definições para configurar uma experiência de estilo de local p
 Estas definições de palavra-passe aplicam-se aos perfis pessoais nos dispositivos que utilizam um perfil de trabalho.
 
 - **Comprimento mínimo da palavra-passe**: Introduza o número mínimo de carateres de palavra-passe do utilizador tem de ter, partir **4**-**14**.
-- **Máximo de minutos de inatividade até o ecrã bloquear**: Selecione a quantidade de tempo antes de um dispositivo inativo ser automaticamente bloqueado
-- **Número de falhas de início de sessão antes de limpar o dispositivo**: Introduza o número de vezes que uma palavra-passe incorreta pode ser introduzida antes de serem eliminados todos os dados do dispositivo
-- **Expiração de palavra-passe (dias)**: Introduza o número de dias até ser preciso alterar palavra-passe de um utilizador final (de **1**-**255**)
-- **Tipo de palavra-passe obrigatório**: Selecione o tipo de palavra-passe que tem de ser definido no dispositivo. Escolha entre:
+- **Máximo de minutos de inatividade até o ecrã ser bloqueado**: Selecione a quantidade de tempo antes de um dispositivo inativo ser automaticamente bloqueado
+- **Número de falhas de início de sessão antes de apagar o dispositivo**: Introduza o número de vezes que uma palavra-passe incorreta pode ser introduzida antes de serem eliminados todos os dados do dispositivo
+- **Expiração da palavra-passe (dias)**: Introduza o número de dias até ser preciso alterar palavra-passe de um utilizador final (de **1**-**255**)
+- **Tipo obrigatório de palavra-passe**: Selecione o tipo de palavra-passe que tem de ser definido no dispositivo. Escolha entre:
   - **Predefinição do dispositivo**
   - **Biométrica de segurança baixa**
   - **Necessário**
@@ -327,3 +327,7 @@ Estas definições de palavra-passe aplicam-se aos perfis pessoais nos dispositi
 [Atribua o perfil](device-profile-assign.md) e [monitorize o respetivo estado](device-profile-monitor.md).
 
 Também pode criar dispositivos dedicados perfis de local público para [Android](device-restrictions-android.md#kiosk) e [com o Windows 10](kiosk-settings.md) dispositivos.
+
+## <a name="see-also"></a>Consulte também
+
+[Configurando e solucionando problemas de dispositivos empresariais Android no Microsoft Intune](https://support.microsoft.com/help/4476974)
