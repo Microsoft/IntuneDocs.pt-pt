@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/11/2019
+ms.date: 05/21/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4eb5dbb150559de7ad30a598fb78a4fa78033c42
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 162044fdfbe9df6dd6461bcdf919dc798ad3c4a1
+ms.sourcegitcommit: 6de06b475f16893710dc34027096138aa697e482
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61497911"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65992907"
 ---
 # <a name="enroll-windows-10-devices-with-intune-company-portal"></a>Inscrever dispositivos Windows 10 com o Portal da empresa do Intune
 
@@ -90,11 +90,14 @@ Estes passos descrevem como inscrever um dispositivo que é executado no Windows
 
     ![Iniciar sessão](./media/W10-enroll-4-sign-in.png)  
 
-Continua sem aceder ao seu e-mail, ficheiros ou outros dados do trabalho ou da escola? Saiba como [resolver problemas de conta](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-your-account).   
+Continua sem aceder ao seu e-mail, ficheiros ou outros dados do trabalho ou da escola? Saiba como [resolver problemas relacionados com a conta](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-your-account) durante a inscrição.  
+
+## <a name="it-administrator-support"></a>Suporte de administrador de TI   
+
+Se for um administrador de TI e executar em problemas ao inscrever dispositivos, veja [problemas de inscrição de dispositivos de resolução de problemas do Windows no Microsoft Intune](https://support.microsoft.com/help/4469913). Este artigo lista erros comuns, suas causas e passos para resolvê-los. 
 
 ## <a name="next-steps"></a>Passos Seguintes  
-
-Para obter ajuda, contacte o suporte da empresa. Pode encontrar a sua organização informações de TI sobre o [site do Portal da empresa](https://go.microsoft.com/fwlink/?linkid=2010980). Inicie sessão para o site com a sua conta escolar ou profissional.  
+Se precisar de ajuda com o Portal da empresa ou de inscrição, contacte a sua organização IT equipa de suporte. Encontrará as informações de contacto a [site do Portal da empresa](https://go.microsoft.com/fwlink/?linkid=2010980). Inicie sessão para o site com a sua conta escolar ou profissional.  
 
  
 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bb689fd77d79e34abe0e4418ceea40e53373fd83
-ms.sourcegitcommit: dfcf80a91792715404dc021c8684866c8b0a27e1
+ms.openlocfilehash: cf40c3b8f31e042a501e1502097f147d48fc328d
+ms.sourcegitcommit: bc5e4dff18f5f9b79077a888f8a58dcc490708c0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65816282"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65975828"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 
@@ -122,9 +122,6 @@ Para ver as definições disponíveis, aceda à [Store de aplicação, visualiza
 
 Aplica-se a: iOS
 
-#### <a name="advanced-settings-for-windows-defender-firewall-------1311949---"></a>Definições avançadas do Firewall do Windows Defender   <!--  1311949 -->
-Pode utilizar o Intune para gerir [regras de firewall personalizadas como parte de um perfil de configuração do dispositivo](endpoint-protection-configure.md#add-custom-firewall-rules-for-windows-10-devices) para o endpoint protection no Windows 10. Regras podem especificar o comportamento de entrada e saído para aplicações, endereços de rede e portas.
-
 ####  <a name="microsoft-defender-advanced-threat-protection--baseline--preview------3754134---"></a>Linha de base de proteção do Microsoft Defender avançada contra ameaças (pré-visualização)  <!--  3754134 -->
 Adicionámos uma linha de base de segurança pré-visualização para [a proteção de ameaças avançada do Microsoft Defender](security-baseline-settings-defender-atp.md) definições.  
 
@@ -218,8 +215,8 @@ Pode atribuir as aplicações de Win32 a serem instalados nos inscritos no Intun
 #### <a name="device-overview-shows-primary-user---794259----"></a>Descrição geral do dispositivo mostra o utilizador primário <!--794259  -->
 A página de descrição geral do dispositivo irá mostrar o utilizador primário, também chamado do utilizador de afinidade de dispositivo de utilizador (UDA). Para ver o utilizador primário para um dispositivo, escolha **Intune** > **dispositivos** > **todos os dispositivos** > Escolha um dispositivo. O utilizador primário aparecerá junto à parte superior do **descrição geral** página.
 
-#### <a name="additional-managed-google-play-app-reporting-for-android-enterprise-work-profile-devices----4105925----"></a>Adicional Google Play gerido relatório da aplicação para dispositivos de perfil de trabalho do Android Enterprise <!-- 4105925  -->
-Para o Google Play gerido aplicações implementadas para dispositivos de perfil de trabalho do Android Enterprise, pode ver o número de versão específica da aplicação instalada num dispositivo. Isso se aplica apenas as aplicações necessárias. A mesma funcionalidade para aplicações disponíveis será habilitada numa versão futura. 
+#### <a name="additional-managed-google-play-app-reporting-for-android-enterprise-work-profile-devices----4105925----"></a>Relatórios adicionais da aplicação do Managed Google Play para dispositivos de perfil de trabalho do Android Enterprise <!-- 4105925  -->
+Para as aplicações do Managed Google Play implementadas para dispositivos de perfil de trabalho do Android Enterprise, pode ver o número de versão específica da aplicação instalada num dispositivo. Tal só se aplica às aplicações obrigatórias. A mesma funcionalidade para aplicações disponíveis será habilitada numa versão futura. 
 
 #### <a name="ios-third-party-keyboards----4111843-----"></a>iOS teclados de terceiros <!-- 4111843   -->
 O suporte de política (aplicação) do Intune app protection para o **teclados de terceiros** configuração para iOS já não é suportado devido a uma alteração de plataforma iOS. Não será capaz de configurar esta definição na consola de administração do Intune e não serão imposto no cliente no SDK da aplicação Intune.
@@ -253,7 +250,7 @@ Suporte para OEMs encontra-se numa base por OEM. Se uma aplicação de OEMConfig
 
 Para saber mais sobre esta funcionalidade, aceda à [utilizar e gerir dispositivos Android Enterprise com OEMConfig no Microsoft Intune](android-oem-configuration-overview.md).
 
-Aplica-se a: Android enterprise
+Aplica-se a: Android Enterprise
 
 #### <a name="windows-update-notifications-----3316758-3316782----"></a>Notificações de atualização do Windows  <!-- 3316758, 3316782  -->
 Adicionámos dois *definições de experiência do usuário* à atualização do Windows em anel configurações que pode gerir a partir da consola do Intune. Agora, pode:
@@ -283,7 +280,7 @@ Ainda na pré-visualização pública, Expandimos o nosso suporte de dispositivo
 
 - Em dispositivos totalmente geridos e dedicados, pode criar [políticas de conformidade](compliance-policy-create-android-for-work.md) para incluir regras de palavra-passe e requisitos do sistema operativo (**conformidade do dispositivo**  >   **As políticas** > **criar política** > **Android Enterprise** para a plataforma > **proprietário do dispositivo** para tipo de perfil). 
 
-  Em dispositivos dedicados, o dispositivo pode mostrar como **não conformes**. Acesso condicional não está disponível nos dispositivos dedicados. Certifique-se de que conclua quaisquer tarefas ou ações para dispositivos dedicados estar em conformidade com as políticas atribuídas.
+  Em dispositivos dedicados, o dispositivo pode mostrar como **não conformes**. Acesso condicional não está disponível nos dispositivos dedicados. Realize algumas tarefas ou ações para que os dispositivos dedicados fiquem em conformidade com as políticas atribuídas.
 
 - [Acesso condicional](conditional-access.md) -dispositivos geridos pelo acesso condicional, as políticas que se aplicam ao Android também se aplicam ao Android Enterprise totalmente. Os utilizadores podem agora registar o respetivo dispositivo completamente gerido no Azure Active Directory com o **da aplicação Microsoft Intune**. Em seguida, ver e resolver quaisquer problemas de conformidade para aceder a recursos organizacionais.
 
@@ -343,7 +340,7 @@ Lançámos atualizações para ambos os [Intune Certificate Connector e o conect
 
 ### <a name="app-management"></a>Gestão de aplicações
 
-#### <a name="user-experience-update-for-the-company-portal-app-for-ios----2536024---"></a>Atualização da experiência de utilizador para a aplicação Portal da empresa para iOS <!-- 2536024 -->
+#### <a name="user-experience-update-for-the-company-portal-app-for-ios----2536024---"></a>Atualização da experiência de utilizador da aplicação Portal da Empresa para iOS <!-- 2536024 -->
 Foi reestruturada a home page da aplicação Portal da empresa para dispositivos iOS. Com esta alteração, a home page será melhor siga os padrões de interface do Usuário do iOS e também fornecem a capacidade de deteção melhorada para aplicações e e-Books.
 
 #### <a name="changes-to-company-portal-enrollment-for-ios-12-device-users---3448635---"></a>Alterações para a inscrição no Portal da empresa para os utilizadores de dispositivos iOS 12 <!--3448635 -->  
@@ -601,8 +598,8 @@ Pode configurar o **ativar restrições nas definições do dispositivo** no sup
 
 O comportamento é o mesmo. Especificamente: 
 
-- iOS 11.4.1 e versões anteriores: **Bloco** impede que os utilizadores finais a definição de suas próprias restrições nas definições do dispositivo. 
-- iOS 12.0 e posterior: **Bloco** impede que os utilizadores finais definir seus próprios **ecrã tempo** nas definições do dispositivo, incluindo restrições de privacidade & de conteúdo. Dispositivos atualizados para o iOS 12.0 não verão a guia restrições nas definições do dispositivo deixa de poder. Estas definições estão em **tempo de tela**. 
+- iOS 11.4.1 e anterior: **Bloquear** impede que os utilizadores finais definam as suas próprias restrições nas definições do dispositivo. 
+- iOS 12.0 e posterior: **Bloco** impede que os utilizadores finais definir seus próprios **ecrã tempo** nas definições do dispositivo, incluindo restrições de privacidade & de conteúdo. Dispositivos atualizados para o iOS 12.0 não verão a guia restrições nas definições do dispositivo deixa de poder. Estas definições estão em **Tempo do Ecrã**. 
 
 Para obter uma lista das definições, consulte [restrições de dispositivos iOS](device-restrictions-ios.md#general).
 
@@ -668,10 +665,10 @@ Agora pode configurar as seguintes definições adicionais para o Outlook para i
 Para obter mais informações, consulte [definições de configuração do Microsoft Outlook](app-configuration-policies-outlook.md).
 
 #### <a name="delete-android-enterprise-apps----1352553---"></a>Eliminar as aplicações do Android Enterprise <!-- 1352553 -->
-Pode eliminar as aplicações geridas do Google Play do Microsoft Intune. Para eliminar uma aplicação do Google Play gerida, abra o Microsoft Intune no portal do Azure e selecione **aplicações de cliente** > **aplicações**. Da lista de aplicações, selecione as reticências (...) à direita da aplicação do Google Play gerida, em seguida, selecione **eliminar** na lista apresentada. Quando elimina uma aplicação do Google Play gerida da lista de aplicações, a aplicação do Google Play gerida é automaticamente não aprovada.
+Pode eliminar as aplicações geridas do Google Play do Microsoft Intune. Para eliminar uma aplicação do Managed Google Play, abra o Microsoft Intune no portal do Azure e selecione **Aplicações cliente** > **Aplicações**. Na lista de aplicações, selecione as reticências (...) à direita da aplicação do Managed Google Play e, em seguida, selecione **Eliminar** na lista apresentada. Quando elimina uma aplicação do Managed Google Play da lista de aplicações, essa aplicação passa automaticamente a não aprovada.
 
-#### <a name="managed-google-play-app-type----1352580---"></a>Tipo de aplicação do Google Play gerido <!-- 1352580 -->
-O **managed Google Play** tipo de aplicação permite-lhe adicionar especificamente [Google Play aplicações geridas](https://play.google.com/work/search?q=microsoft&c=apps) ao Intune. Como o administrador do Intune, pode agora navegar, procurar, aprovar, sincronizar e atribuir aprovados Google Play gerido aplicações no Intune.  Já não precisar de procurar na consola do Google Play gerido separadamente e já não tem de autenticar.  No Intune, selecione **aplicações de cliente** > **aplicações** > **adicionar**. Na **tipo de aplicação** lista, selecione **Google Play gerido** como o tipo de aplicação.
+#### <a name="managed-google-play-app-type----1352580---"></a>Tipo de aplicações do Managed Google Play <!-- 1352580 -->
+O **managed Google Play** tipo de aplicação permite-lhe adicionar especificamente [Google Play aplicações geridas](https://play.google.com/work/search?q=microsoft&c=apps) ao Intune. Como o administrador do Intune, pode agora navegar, procurar, aprovar, sincronizar e atribuir aprovados Google Play gerido aplicações no Intune.  Já não precisa de procurar na consola do Managed Google Play separadamente e já não tem de se autenticar novamente.  No Intune, selecione **aplicações de cliente** > **aplicações** > **adicionar**. Na **tipo de aplicação** lista, selecione **Google Play gerido** como o tipo de aplicação.
 
 ### <a name="default-android-pin-keyboard----3802457---"></a>Teclado de Android PIN predefinido <!-- 3802457 -->
 Para os utilizadores finais que definiu uma aplicação de proteção de política (PIN da aplicação Intune) nos respetivos dispositivos Android com o tipo PIN de "Numérica", irão ver agora o teclado de Android padrão em vez de teclado Android fixo da interface do Usuário que foi criado anteriormente. Esta alteração foi feita para ser consistente ao utilizar o teclados padrão no Android e iOS, para os dois tipos PIN de "Numérica" e/ou de "Código de acesso". Para obter mais informações sobre as definições de acesso do utilizador final no Android, por exemplo, o PIN da aplicação, consulte [requisitos de acesso para Android](app-protection-policy-settings-android.md#access-requirements).

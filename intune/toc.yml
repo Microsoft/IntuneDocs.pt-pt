@@ -473,8 +473,8 @@
               href: certificates-s-mime-encryption-sign.md
             - name: Utilizar uma autoridade de certificação de terceiros com o SCEP
               href: certificate-authority-add-scep-overview.md
-            - name: Serviço Web Symantec PKI Manager
-              href: certificates-symantec-configure.md
+            - name: Utilizar DigiCert PKI
+              href: certificates-digicert-configure.md
             - name: Remove SCEP or PKCS certificates (Remover certificados SCEP ou PKCS)
               href: remove-certificates.md
         - name: Perfis celulares eSIM

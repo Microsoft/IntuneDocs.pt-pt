@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/26/2019
+ms.date: 05/21/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 21d773b0ab2227f59f1ee0b2091d39b7c9799721
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 31b5697d9673866d378cc526a3735138d6a120b3
+ms.sourcegitcommit: 6de06b475f16893710dc34027096138aa697e482
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61506819"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65992889"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Perguntas mais frequentes sobre a MAM e a proteção de aplicações
 
@@ -51,6 +51,13 @@ As políticas de proteção de aplicações são regras que asseguram que os dad
 
 **Quais são os exemplos das políticas de proteção de aplicações?**<br></br>
 Veja as [definições da política de proteção de aplicações para Android](app-protection-policy-settings-android.md) e as [definições da política de proteção de aplicações para iOS](app-protection-policy-settings-ios.md) para obter informações detalhadas acerca de cada definição da política de proteção de aplicações.
+
+**É possível ter políticas MDM e MAM aplicadas ao mesmo utilizador em simultâneo, para diferentes dispositivos? Por exemplo, se um usuário poderia ser capaz de aceder aos respetivos recursos de trabalho da sua própria máquina preparada para MAM, mas também ir ao trabalho e utilizar um dispositivo gerido pelo Intune MDM. Existem os avisos para essa idéia?**<br></br>
+Se aplicar uma política de MAM para o usuário sem definir o estado do dispositivo, o utilizador irá receber a política MAM no dispositivo BYOD e o dispositivo gerido pelo Intune. Também pode aplicar uma política de MAM com base no estado de gerido. Portanto, quando cria uma política de proteção de aplicações, ao lado de destino para todos os tipos de aplicações, selecionaria não. Em seguida, efetue qualquer uma das seguintes:
+- Aplicar uma política MAM menos rígida para dispositivos geridos pelo Intune e aplicar uma política MAM mais restritiva em dispositivos não inscritos na MDM.
+- Aplica uma política MAM apenas a dispositivos não inscritos.
+
+Para obter mais informações, consulte [como monitorizar as políticas de proteção de aplicações](app-protection-policies-monitor.md).
 
 ## <a name="apps-you-can-manage-with-app-protection-policies"></a>Aplicações que pode gerir com as políticas de proteção de aplicações
 
