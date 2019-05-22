@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/19/2018
+ms.date: 05/20/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 654d5b86a8a2df8eaddc8ea626b55390d2d32920
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: b5da0e5f14d3b87827d42d48341fa7080d73c567
+ms.sourcegitcommit: ac3fe7504e58c74495a560a68eae2b784a4f7d46
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61509075"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65942044"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Monitorizar as políticas de conformidade do Dispositivo do Intune
 
@@ -61,7 +61,7 @@ Quando o dashboard é aberto, obtém uma descrição geral com todos os relatór
 O gráfico mostra os estados de conformidade de todos os dispositivos inscritos no Intune. Os Estados de conformidade do dispositivo são mantidos em duas bases de dados diferentes: Intune e Azure Active Directory. 
 
 > [!IMPORTANT]
-> Intune segue o agendamento de entrada do dispositivo para todas as avaliações de conformidade no dispositivo. [Saiba mais sobre o agendamento da entrada dispositivo](https://docs.microsoft.com/intune/device-profile-troubleshoot#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned).
+> O Intune segue o agendamento de registo do dispositivo para todas as avaliações de conformidade no dispositivo. [Saiba mais sobre o agendamento de registo do dispositivo](https://docs.microsoft.com/intune/device-profile-troubleshoot#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned).
 
 Descrições dos diferentes estados de política de conformidade do dispositivo:
 
@@ -75,7 +75,9 @@ Descrições dos diferentes estados de política de conformidade do dispositivo:
 
   - Dispositivos que não são atribuídos uma política de conformidade e não tem um acionador para verificar a conformidade
   - Dispositivos que não se tenham registado, uma vez que a política de conformidade foi atualizado pela última vez.
-  - Dispositivos não associados a um utilizador removeu
+  - Dispositivos não associados a um utilizador específico, tal como:
+    - dispositivos iOS comprados através do programa de inscrição de dispositivos da Apple (DEP) que não têm afinidade de utilizador
+    - Dispositivos empresariais Android dedicados ou de quiosque de Android
   - Dispositivos inscritos com uma conta de gestor (DEM) de inscrição de dispositivos
 
 - **Não conforme:** O dispositivo não conseguiu aplicar uma ou mais definições de política de conformidade de dispositivos. ou o utilizador não respeitou as políticas.
