@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0aa6f0e65c8f31a86dba6fd4a31384f61f4002be
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
-ms.translationtype: HT
+ms.openlocfilehash: 044ced57d9dd2e3e4b86548540090de35b88a6b0
+ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66044227"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66197084"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 
@@ -48,18 +48,16 @@ Saiba mais sobre as novidades todas as semanas no Microsoft Intune. Também pode
 
 ## <a name="week-of-may-20-2019"></a>Semana de 20 de Maio de 2019 
 
-#### <a name="autopilot-device-orderid-attribute-name-changed-to-group-tag----4659453---"></a>Autopilot OrderID atributo nome do dispositivo foi alterado para a etiqueta de grupo <!-- 4659453 -->
-
-Para torná-lo mais intuitivo, o **OrderID** nome de atributo em dispositivos Autopilot foi alterada para **etiqueta de grupo**. Quando utilizar CSVs para carregar as informações de dispositivo do Autopilot, tem de utilizar a etiqueta de grupo como no cabeçalho da coluna, não OrderID. Caso contrário, o carregamento falhará. OrderID em breve estará novamente introduzida para acomodar os clientes herdados ou scripts. No entanto, a etiqueta de grupo será o padrão mais adiante.
-
-<!-- ########################## -->
-
-## <a name="week-of-may-20-2019"></a>Semana de 20 de Maio de 2019 
-
 ### <a name="app-management"></a>Gestão de aplicações
 
 #### <a name="windows-company-portal-app----3316993---"></a>Aplicação do Portal da Empresa do Windows <!-- 3316993 -->
 A aplicação Portal da empresa de Windows terá agora uma nova página rotulada **dispositivos**. O **dispositivos** página irá mostrar os utilizadores finais todos os respetivos dispositivos inscritos. Os utilizadores irão ver esta alteração no Portal da empresa quando utilizam a versão 10.3.4291.0 e mais tarde. Para obter informações sobre a configuração do Portal da empresa, consulte [como configurar a aplicação Portal da empresa do Microsoft Intune](company-portal-app.md).
+
+### <a name="device-enrollment"></a>Inscrição de dispositivos
+
+#### <a name="autopilot-device-orderid-attribute-name-changed-to-group-tag----4659453---"></a>Autopilot OrderID atributo nome do dispositivo foi alterado para a etiqueta de grupo <!-- 4659453 -->
+
+Para torná-lo mais intuitivo, o **OrderID** nome de atributo em dispositivos Autopilot foi alterada para **etiqueta de grupo**. Quando utilizar CSVs para carregar as informações de dispositivo do Autopilot, tem de utilizar a etiqueta de grupo como no cabeçalho da coluna, não OrderID. Caso contrário, o carregamento falhará. OrderID será novamente introduzida para acomodar os clientes herdados ou scripts. No entanto, a etiqueta de grupo será o padrão mais adiante.
 
 ## <a name="week-of-may-13-2019"></a>Semana de 13 de Maio de 2019 
 
@@ -445,7 +443,7 @@ A consola do Intune já não suporta a visualização e gestão de dispositivos 
 - Utilizar controlos de Exchange, conforme descrito na [clientes e dispositivos móveis no Exchange Online](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/clients-and-mobile-in-exchange-online)
 
 ### <a name="search-the-all-devices-page-for-an-exact-device-by-using-name---4254930---"></a>Procure página todos os dispositivos de um dispositivo exata, utilizando [nome] <!--4254930 -->
-Agora pode procurar um nome de dispositivo exato. Aceda a **Intune** > **dispositivos** > **todos os dispositivos** > na caixa de pesquisa, coloque o nome do dispositivo com {} para procurar um correspondência exata. Por exemplo, **{Device12345}**.
+Agora pode procurar um nome de dispositivo exato. Aceda a **Intune** > **dispositivos** > **todos os dispositivos** > na caixa de pesquisa, coloque o nome do dispositivo com {} para procurar um correspondência exata. Por exemplo, **{Device12345}** .
 
 ### <a name="monitor-and-troubleshoot"></a>Monitorizar e resolver problemas
 
@@ -607,7 +605,7 @@ Esta funcionalidade aplica-se a:
 - iOS
 
 #### <a name="enabling-restrictions-in-the-device-settings-is-renamed-to-screen-time-on-ios-devices----3699164-----"></a>Ativar restrições nas definições do dispositivo foi mudado para o tempo de tela em dispositivos iOS <!-- 3699164   -->
-Pode configurar o **ativar restrições nas definições do dispositivo** no supervisionado dispositivos iOS (**configuração do dispositivo** > **perfis**  >  **Novo perfil** > **iOS** para a plataforma > **restrições de dispositivos** para o tipo de perfil > **geral**). Nesta atualização, esta definição foi mudada para **tempo de ecrã (apenas supervisionado)**. 
+Pode configurar o **ativar restrições nas definições do dispositivo** no supervisionado dispositivos iOS (**configuração do dispositivo** > **perfis**  >  **Novo perfil** > **iOS** para a plataforma > **restrições de dispositivos** para o tipo de perfil > **geral**). Nesta atualização, esta definição foi mudada para **tempo de ecrã (apenas supervisionado)** . 
 
 O comportamento é o mesmo. Especificamente: 
 
@@ -1135,7 +1133,7 @@ Está agora disponível para pré-visualização no [GitHub]( https://aka.ms/int
 ## <a name="week-of-october-15-2018"></a>Semana de 15 de outubro de 2018
 
 ### <a name="pin-prompt-when-you-change-fingerprints-or-face-id-on-an-ios-device-----2637704----"></a>Pedido de PIN quando alterar as impressões digitais ou ID se deparam num dispositivo iOS  <!-- 2637704  -->
-Agora é pedido um PIN aos utilizadores após fazerem alterações biométricas no respetivo dispositivo iOS. Isto inclui alterações ao nível de impressões digitais ou do Face ID registados. A altura em que o pedido é apresentado depende da configuração do tempo limite *Verificar novamente os requisitos de acesso após (minutos)*.  Quando não está definido nenhum PIN, é pedido ao utilizador para configurar um. 
+Agora é pedido um PIN aos utilizadores após fazerem alterações biométricas no respetivo dispositivo iOS. Isto inclui alterações ao nível de impressões digitais ou do Face ID registados. A altura em que o pedido é apresentado depende da configuração do tempo limite *Verificar novamente os requisitos de acesso após (minutos)* .  Quando não está definido nenhum PIN, é pedido ao utilizador para configurar um. 
  
 Esta funcionalidade só está disponível para iOS e requer a participação de aplicações que integrem o SDK da aplicação Intune para iOS, versão 9.0.1 ou posterior. Precisa da integração do SDK para que o comportamento possa ser imposto nas aplicações de destino. Esta integração decorre de forma gradual e está dependente das equipas específicas da aplicação. Algumas aplicações participantes incluem: WXP, Outlook, Managed Browser e Yammer.
 
