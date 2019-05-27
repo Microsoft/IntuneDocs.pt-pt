@@ -7,19 +7,18 @@ author: dougeby
 manager: dougeby
 ms.date: 03/18/2019
 ms.topic: troubleshooting
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 6ee841cc-5694-4ba1-8f66-1d58edec30a4
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 93072ba4730de0252f54d93fa1169062d496ce38
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 9d01b1f745450785209bf289be5b6e36ac65cc2d
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61513214"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66046311"
 ---
 # <a name="use-audit-logs-to-track-and-monitor-events-in-microsoft-intune"></a>Utilize registos de auditoria para controlar e monitorizar os eventos no Microsoft Intune
 
@@ -40,7 +39,7 @@ Os utilizadores com as seguintes permissões podem rever os registos de auditori
 
 Pode rever os registos de auditoria no grupo de monitorização para cada carga de trabalho do Intune:
 
-1. Na [portal do Azure](https://portal.azure.com/), selecione **todos os serviços** > Filtrar **Intune** > selecione **Intune**.
+1. No [portal do Azure](https://portal.azure.com/), selecione **Todos os serviços** > filtre o **Intune** > selecione  **Intune**.
 2. Escolha a carga de trabalho que pretende rever os registos de auditoria. Por exemplo, seleccione **dispositivos**.
 3. Sob **monitorização**, escolha **registos de auditoria**.
 

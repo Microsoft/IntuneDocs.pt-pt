@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 10/24/2018
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 44be460ee910818d52179da55151d1bceeb8b306
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 5f1935ff839b9e2aa97d002bd98d1f5dac87c390
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61490339"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66043043"
 ---
 # <a name="use-custom-settings-for-windows-10-devices-in-intune"></a>Utilizar definições personalizadas para dispositivos Windows 10 no Intune
 
@@ -45,7 +44,7 @@ Este artigo apresenta o seguinte:
 3. Introduza as seguintes definições:
 
     - **Nome**: Introduza um nome para o perfil, como `windows 10 custom profile`.
-    - **Descrição**: Introduza uma descrição para o perfil.
+    - **Descrição**: introduza uma descrição para o perfil.
     - **Plataforma**: Escolher **Windows 10 e posterior**.
     - **Tipo de perfil**: Escolher **personalizado**.
 

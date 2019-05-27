@@ -8,7 +8,6 @@ ms.author: dougeby
 manager: dougeby
 ms.date: 02/28/2019
 ms.topic: archived
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eead854aed4015c6811441b00c633c58ad2fbc7c
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 79dbccfa397e7f8060cbb982f48eb0faa0e4b346
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61512751"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66045840"
 ---
 # <a name="use-policies-to-help-protect-windows-pcs-that-run-the-intune-client-software"></a>Utilizar políticas para ajudar a proteger PCs Windows que executem o software de cliente do Intune
 

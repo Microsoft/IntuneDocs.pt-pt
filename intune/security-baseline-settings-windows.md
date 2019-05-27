@@ -7,7 +7,6 @@ ms.author: brenduns
 manager: dougeby
 ms.date: 03/05/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1d9d095db4d10630555e5696610535bb828f0b5f
-ms.sourcegitcommit: f8bbd9bac2016a77f36461bec260f716e2155b4a
+ms.openlocfilehash: 92aa438e436c4612ede29564f61c3fc529f789c0
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65733064"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66045056"
 ---
 # <a name="windows-security-baseline-settings-for-intune"></a>Definições da linha de base de segurança do Windows para o Intune  
 
@@ -1171,9 +1170,9 @@ Para obter mais informações, consulte [CSP de política - RemoteDesktopService
   
 - **Nível de encriptação da ligação de cliente de serviços de ambiente de trabalho remoto**  
   Especifica se exige o uso de um nível de criptografia específicas para proteger as comunicações entre computadores cliente e servidores de anfitrião de sessões de RD durante a ligações de protocolo RDP (Remote Desktop). Esta política aplica-se apenas quando estiver a utilizar encriptação nativa do RDP. No entanto, a encriptação nativa de RDP (em oposição a encriptação SSL) não é recomendada. Esta política não se aplica a encriptação SSL. Se ativar esta definição de política, todas as comunicações entre clientes e servidores de anfitrião de sessões de RD durante ligações remotas tem de utilizar o método de encriptação especificado nesta definição. Por predefinição, o nível de encriptação é definido como alto. Os seguintes métodos de encriptação estão disponíveis:  
-  - *Alta*: A definição de elevada encripta os dados enviados do cliente para o servidor e do servidor para o cliente usando a criptografia forte de 128 bits. Utilize este nível de encriptação em ambientes que contenham apenas clientes de 128 bits (por exemplo, os clientes que executam a conexão de área de trabalho remoto). Os clientes que não suportam este nível de encriptação não é possível ligar aos servidores de anfitrião de sessões de RD.  
+  - *Alto*: A definição de elevada encripta os dados enviados do cliente para o servidor e do servidor para o cliente usando a criptografia forte de 128 bits. Utilize este nível de encriptação em ambientes que contenham apenas clientes de 128 bits (por exemplo, os clientes que executam a conexão de área de trabalho remoto). Os clientes que não suportam este nível de encriptação não é possível ligar aos servidores de anfitrião de sessões de RD.  
   - *Compatível com o cliente*: A definição de cliente compatível encripta os dados enviados entre o cliente e o servidor em que a força da chave máximo suportado pelo cliente. Utilize este nível de encriptação em ambientes que incluem os clientes que não suportam a encriptação de 128 bits.  
-  - *Baixa*: A definição de baixa encripta apenas os dados enviados do cliente para o servidor usando a criptografia de 56 bits.  
+  - *Baixo*: A definição de baixa encripta apenas os dados enviados do cliente para o servidor usando a criptografia de 56 bits.  
   
   Se desabilitar ou não configura esta definição, o nível de encriptação a utilizar para ligações remotas para servidores de anfitrião de sessões de RD não é imposto por meio da diretiva de grupo. A conformidade FIPS importante pode ser configurada por meio da criptografia de sistema. Utilizar algoritmos compatíveis com FIPS para encriptação, hash e assinatura definições na política de grupo (em computador configuração Windows Settings\Local \ Opções.) A definição compatíveis com FIPS criptografa e descriptografa os dados enviados do cliente para o servidor e do servidor ao cliente, com os algoritmos de criptografia do Federal Information Processing Standard (FIPS) 140, através de módulos criptográficos da Microsoft. Utilize este nível de encriptação quando a comunicação entre clientes e servidores de anfitrião de sessões de RD requer o nível mais elevado de encriptação.
   

@@ -8,7 +8,6 @@ ms.author: lanewsad
 manager: dougeby
 ms.date: 04/04/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 753c261ea08ce304176f19e1c64389053b055d5f
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 9955330d9f20c13b9239f900b77828d582d12bff
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61518175"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66046431"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Atualização da IU para aplicações de utilizadores finais do Intune
 Saiba mais sobre as atualizações mais recentes para as aplicações do Microsoft Intune. Adicionamos regularmente para e melhorar a aplicação Portal da empresa do Intune e o Web site. Se for um administrador do Intune ou pessoa de suporte, este artigo fornece as informações que necessárias para:
@@ -68,7 +67,7 @@ O Portal da empresa para ecrãs de inscrição de iOS e os passos foram atualiza
 
 Para obter os passos de inscrição atualizadas e telas, veja [inscrever o dispositivo de iOS no Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios).  
 
-### <a name="user-experience-update-for-the-company-portal-app-for-ios----2536024---"></a>Atualização da experiência de utilizador para a aplicação Portal da empresa para iOS <!-- 2536024 -->
+### <a name="user-experience-update-for-the-company-portal-app-for-ios----2536024---"></a>Atualização da experiência de utilizador da aplicação Portal da Empresa para iOS <!-- 2536024 -->
 Foi reestruturada a home page da aplicação Portal da empresa para dispositivos iOS. Com esta alteração, a home page será melhor siga os padrões de interface do Usuário do iOS e também fornecem a capacidade de deteção melhorada para aplicações e e-Books.  
 
 ## <a name="week-of-february-19-2019"></a>Semana de 19 de Fevereiro de 2019  
@@ -90,7 +89,7 @@ Enquanto administrador do Microsoft Intune, pode carregar uma imagem de marca pe
 
 ## <a name="week-of-august-27-2018"></a>Semana de 27 de agosto de 2018  
 
-### <a name="new-user-experience-update-for-the-company-portal-website---2000968---"></a>Nova atualização de experiência de utilizador para o site do Portal da empresa <!--2000968 -->  
+### <a name="new-user-experience-update-for-the-company-portal-website---2000968---"></a>Nova atualização da experiência de utilizador no site do Portal da Empresa <!--2000968 -->  
 Adicionámos novas funcionalidades ao site do Portal da Empresa com base no feedback dos clientes. Irá ver uma melhoria significativa na facilidade de utilização e nas funcionalidades existentes nos seus dispositivos. Áreas específicas de site, como os detalhes do dispositivo, comentários e suporte e descrição geral do dispositivo, agora tem um design de nova, Moderno, capacidade de resposta. A [documentação do site do Portal da Empresa do Intune](https://docs.microsoft.com/intune-user-help/using-the-intune-company-portal-website) foi atualizada para refletir estas alterações.   
 
 Verá algumas das atualizações que se seguem:  
@@ -138,7 +137,7 @@ A aplicação Portal da Empresa do Intune para Windows 10 foi atualizada com a 
 
 ## <a name="week-of-april-2-2018"></a>Semana de 2 de abril de 2018
 
-### <a name="user-experience-update-for-the-company-portal-app-for-ios----1412866---"></a>Atualização da experiência de utilizador para a aplicação Portal da empresa para iOS <!-- 1412866 -->
+### <a name="user-experience-update-for-the-company-portal-app-for-ios----1412866---"></a>Atualização da experiência de utilizador da aplicação Portal da Empresa para iOS <!-- 1412866 -->
 Lançámos uma atualização importante da experiência de utilizador para a aplicação Portal da Empresa para iOS. A atualização consiste numa reestruturação visual completa que inclui um aspeto e funcionalidade mais modernos. Mantivemos a funcionalidade da aplicação, mas aumentámos a facilidade de utilização e acessibilidade da mesma.  
 
 A atualização inclui ainda:
@@ -153,7 +152,7 @@ A atualização inclui ainda:
 |*Combinado com o passo anterior*|![02](/intune/media/cp_iosRedesign_after_1803_02.png)|
 |![03](/intune/media/cp_iosRedesign_before_1803_02.png)|![03](/intune/media/cp_iosRedesign_after_1803_03.png)|
 
-### <a name="improvements-to-the-language-in-the-company-portal-app-for-windows----1683758---"></a>Melhorias à linguagem na aplicação Portal da empresa para Windows <!-- 1683758 -->
+### <a name="improvements-to-the-language-in-the-company-portal-app-for-windows----1683758---"></a>Melhorias à linguagem na aplicação Portal da Empresa para Windows <!-- 1683758 -->
 Melhorámos a linguagem no Portal da Empresa para Windows 10 de forma a torná-lo mais fácil de utilizar e adequado à sua empresa.
 
 |Antes|Depois|
@@ -188,7 +187,7 @@ Se ativou o [mapeamento do grupo de dispositivos](device-group-mapping.md), a ap
 
 ## <a name="week-of-november-13-2017"></a>Semana de 13 de novembro de 2017
 
-### <a name="improvements-to-device-setup-workflow-in-the-company-portal-for-ios-in-version-290----1417174---"></a>Melhorias ao dispositivo configurar fluxo de trabalho no Portal da empresa para iOS na versão 2.9.0 <!-- 1417174 -->
+### <a name="improvements-to-device-setup-workflow-in-the-company-portal-for-ios-in-version-290----1417174---"></a>Melhorias no fluxo de trabalho da configuração de dispositivos no Portal da Empresa para iOS na versão 2.9.0 <!-- 1417174 -->
 
 Melhorámos o fluxo de trabalho da configuração de dispositivos na aplicação Portal da Empresa para iOS. O tipo de linguagem é mais simples. Além disso, combinámos os ecrãs sempre que possível. Também tornámos o tipo de linguagem mais específico para a sua empresa ao utilizar o nome da mesma em todo o texto de configuração.
 
@@ -208,7 +207,7 @@ Melhorámos o fluxo de trabalho da configuração de dispositivos na aplicação
 
 ## <a name="week-of-november-6-2017"></a>Semana de 6 de novembro de 2017
 
-### <a name="updates-to-the-company-portal-app-for-windows-10---1299474--"></a>Atualizações para a aplicação do Portal da empresa para Windows 10 <!--1299474-->
+### <a name="updates-to-the-company-portal-app-for-windows-10---1299474--"></a>Atualizações à aplicação Portal da Empresa para Windows 10 <!--1299474-->
 A página Definições na aplicação Portal da Empresa para Windows 10 foi atualizada para tornar as definições e as ações do utilizador em causa mais consistentes em todas as definições. Também foi atualizada para corresponder ao esquema de outras aplicações do Windows.
 
 |Antes|Depois|
@@ -237,7 +236,7 @@ Esta versão corrige um problema conhecido sobre a forma como o Portal da Empres
 
 ## <a name="week-of-october-2-2017"></a>Semana de 2 de outubro de 2017
 
-### <a name="improvements-to-device-setup-workflow-in-company-portal----1490692---"></a>Melhorias ao fluxo de trabalho de configuração de dispositivos no Portal da empresa <!-- 1490692 -->
+### <a name="improvements-to-device-setup-workflow-in-company-portal----1490692---"></a>Melhorias no fluxo de trabalho da configuração de dispositivos no Portal da Empresa <!-- 1490692 -->
 Melhorámos o fluxo de trabalho da configuração de dispositivos na aplicação Portal da Empresa para Android. O tipo de linguagem é mais simples e específico para a sua empresa. Além disso, combinámos os ecrãs sempre que possível. 
 
 |Antes|Depois|
@@ -266,7 +265,7 @@ Também atualizámos o ecrã de ativação de e-mail do acesso condicional.
 
 ## <a name="week-of-september-11-2017"></a>Semana de 11 de setembro de 2017
 
-### <a name="easier-to-understand-phrasing-for-the-company-portal-app-for-android----1396349---"></a>Mais fácil de compreender frases para a aplicação Portal da empresa para Android <!-- 1396349 -->  
+### <a name="easier-to-understand-phrasing-for-the-company-portal-app-for-android----1396349---"></a>Linguagem de compreensão mais fácil na aplicação Portal da Empresa para Android <!-- 1396349 -->  
 
 O texto do processo de inscrição da aplicação Portal da Empresa para Android foi simplificado para facilitar a inscrição dos utilizadores finais. Se tiver documentação de inscrição personalizada, deve atualizá-la para refletir os novos ecrãs. Encontrará imagens de exemplo abaixo:
 
@@ -391,7 +390,7 @@ Pode sempre inscrever o dispositivo para gestão completa ao tocar no menu **aç
 
 ![Uma imagem da aplicação Portal da Empresa para Android, a mostrar o menu no canto superior direito do ecrã com uma opção para inscrever o dispositivo.](./media/and_sign_in_menu_after_app_protection_policy_enrolled_after_1706.png)
 
-### <a name="improvements-to-app-syncing-with-windows-10-creators-update---676505--"></a>Melhorias na sincronização da aplicação com o Windows 10 Creators Update <!--676505-->
+### <a name="improvements-to-app-syncing-with-windows-10-creators-update---676505--"></a>Melhorias na sincronização da aplicação com a Atualização para Criativos do Windows 10 <!--676505-->
 
 A aplicação Portal da Empresa para Windows 10 iniciará agora automaticamente uma sincronização para pedidos de instalação de aplicações para dispositivos com a Atualização para Criativos do Windows 10 (versão 1703). Tal reduzirá o problema da interrupção da instalação de aplicações durante o estado “Sincronização Pendente”. Além disso, os utilizadores poderão iniciar manualmente uma sincronização a partir da própria aplicação.
 
@@ -399,7 +398,7 @@ A aplicação Portal da Empresa para Windows 10 iniciará agora automaticamente
 
 ![Uma imagem da aplicação Portal da Empresa no Windows 10, com o novo estado de sincronização automática a apresentar uma mensagem de estado que indica que o dispositivo está a sincronizar e a tentar transferir a aplicação.](./media/w10_download_pending_syncing_after_1706.png)
 
-### <a name="new-guided-experience-for-windows-10-company-portal----1058938---"></a>Nova experiência orientada para o Portal da empresa do Windows 10 <!---1058938--->
+### <a name="new-guided-experience-for-windows-10-company-portal----1058938---"></a>Nova experiência orientada para o Portal da Empresa do Windows 10 <!---1058938--->
 A aplicação Portal da Empresa para Windows 10 vai incluir uma experiência de instruções orientada do Intune para dispositivos que não foram identificados ou inscritos. A nova experiência disponibiliza instruções passo a passo que orientam o utilizador no registo do Azure Active Directory (obrigatório para as funcionalidades de Acesso Condicional) e na inscrição MDM (obrigatória para as funcionalidades de gestão de dispositivos). A experiência guiada estará acessível na página inicial do Portal da Empresa. Os utilizadores podem continuar a utilizar a aplicação se não concluírem o registo e a inscrição, mas terão funcionalidades limitadas.
 
 Esta atualização só é visível em dispositivos com a Atualização de Aniversário do Windows 10 (compilação 1607) ou superior.
@@ -414,7 +413,7 @@ Esta atualização só é visível em dispositivos com a Atualização de Aniver
 
 ![Uma imagem do ecrã de conclusão da aplicação Portal da Empresa no Windows 10 a informar o utilizador de que tudo está pronto e que o dispositivo está devidamente inscrito numa conta empresarial adicionada ao mesmo.](./media/win10_guided_enroll_youre_all_set_after_1706.png)
 
-### <a name="new-menu-action-to-easily-remove-company-portal---1164569--"></a>Nova ação de menu para remover facilmente o Portal da empresa <!--1164569-->
+### <a name="new-menu-action-to-easily-remove-company-portal---1164569--"></a>Nova ação de menu para remover facilmente o Portal da Empresa <!--1164569-->
 Com base nos comentários dos utilizadores, a aplicação Portal da Empresa para Android adicionou uma nova ação de menu para iniciar a remoção do Portal da Empresa do seu dispositivo. Esta ação remove o dispositivo da gestão do Intune para que a aplicação possa ser removida do dispositivo pelo utilizador.
 
 ![Uma imagem da aplicação Portal da Empresa para Android, com o menu de ação aberto no canto superior direito. A nova opção “Remover Portal da Empresa” está disponível como a terceira opção, abaixo de “O Meu Perfil” e “Definições” e acima de “Termos e Condições”, “Ajuda e Comentários” e “Acerca de”.](./media/android_remove_cp_menu_action_after_1705.png)

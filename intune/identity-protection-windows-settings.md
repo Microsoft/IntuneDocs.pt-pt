@@ -7,7 +7,6 @@ ms.author: brenduns
 manager: dougeby
 ms.date: 03/14/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -16,12 +15,12 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: shpate
-ms.openlocfilehash: 308a730737612f39863160952409ab92670f9153
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 158840a73784516d13defa04785ca5990a9874cf
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61513652"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66041816"
 ---
 # <a name="windows-10-device-settings-to-enable-windows-hello-for-business-in-intune"></a>Definições do dispositivo Windows 10 para ativar o Windows Hello para empresas no Intune
 
@@ -45,20 +44,20 @@ Para saber mais sobre o Windows Hello para perfis de empresas no Intune, consult
 
   - **Não permitido** (predefinição): Impedir que os utilizadores da utilização de letras em minúsculas no PIN. Este comportamento ocorre também se a definição não está configurada.
   - **Permitido**: Permitir aos utilizadores utilizar letras minúsculas no PIN, mas não seja necessário.
-  - **Necessário**: Os utilizadores têm de incluir pelo menos uma letra em minúsculas no PIN. Por exemplo, é prática comum exigir pelo menos uma letra maiúscula e um caráter especial.
+  - **Obrigatório**: Os utilizadores têm de incluir pelo menos uma letra em minúsculas no PIN. Por exemplo, é prática comum exigir pelo menos uma letra maiúscula e um caráter especial.
 
 - **Letras maiúsculas no PIN**: Pode impor um PIN mais forte ao exigir que os utilizadores finais incluem letras maiúsculas. As opções são:
 
   - **Não permitido** (predefinição): Impedir que os utilizadores da utilização de letras maiúsculas no PIN. Este comportamento ocorre também se a definição não está configurada.
   - **Permitido**: Permitir aos utilizadores utilizar letras maiúsculas no PIN, mas não seja necessário.
-  - **Necessário**: Os utilizadores têm de incluir, pelo menos, uma letra em maiúsculas no PIN. Por exemplo, é prática comum exigir pelo menos uma letra maiúscula e um caráter especial.
+  - **Obrigatório**: Os utilizadores têm de incluir, pelo menos, uma letra em maiúsculas no PIN. Por exemplo, é prática comum exigir pelo menos uma letra maiúscula e um caráter especial.
 
 - **Carateres especiais no PIN**: Pode impor um PIN mais forte ao exigir que os utilizadores finais incluir caracteres especiais. As opções são:
 
   - **Não permitido** (predefinição): Impedir que os utilizadores com carateres especiais no PIN. Este comportamento ocorre também se a definição não está configurada.
     Carateres especiais incluem: `! " # $ % &amp; ' ( ) &#42; + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96; { &#124; } ~`
   - **Permitido**: Permitir aos utilizadores utilizar letras maiúsculas no PIN, mas não seja necessário.
-  - **Necessário**: Os utilizadores têm de incluir, pelo menos, uma letra em maiúsculas no PIN. Por exemplo, é prática comum exigir pelo menos uma letra maiúscula e um caráter especial.
+  - **Obrigatório**: Os utilizadores têm de incluir, pelo menos, uma letra em maiúsculas no PIN. Por exemplo, é prática comum exigir pelo menos uma letra maiúscula e um caráter especial.
 
 - **Expiração do PIN (dias)**: É recomendável especificar um período de expiração para um PIN, após o qual os utilizadores têm de alterá-lo. A predefinição é de 41 dias.
 

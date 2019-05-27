@@ -8,7 +8,6 @@ ms.author: erikre
 manager: dougeby
 ms.date: 05/16/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8d28ac5f7964fa7b2ddb5ec9be1878ccdd3dadbd
-ms.sourcegitcommit: 5fec35341d83b16023a92fc4b2b3e9237fc6c9ab
+ms.openlocfilehash: a9a61b89f07bfacf1dc41be1412f79509e1e147d
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65853944"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66049944"
 ---
 # <a name="configure-the-microsoft-managed-home-screen-app-for-android-enterprise"></a>Configurar o Microsoft Managed app de ecrã principal do Android Enterprise
 
@@ -64,7 +63,7 @@ A tabela seguinte lista as chaves de configuração disponíveis geridos tela ho
 | Ativar a barra de estado do dispositivo | Bool | VERDADEIRO | Permite que a barra de status na tela inicial (barra superior que apresenta ligações atuais como Wi-Fi e etc.). Se ativar esta chave de configuração, o utilizador final será capaz de ver os ícones apresentados nas barras de estado que representam as ligações e aplicações do Active Directory. |
 | Ativar o destaque de notificações | Bool | FALSO | Permite que o destaque de notificação para os ícones da aplicação que mostra o número de novas notificações na aplicação. Se ativar esta definição, os utilizadores finais irão ver os destaques de notificação em aplicações que tenham notificações não lidas. Se mantiver essa configuração chave desativado, o utilizador final não verão qualquer notificação com distintivo para aplicações que podem ter notificações não lidas. |
 | Ecrã principal de bloqueio | Bool | VERDADEIRO | Remove a capacidade do utilizador final para mover os ícones da aplicação no ecrã inicial. Se ativar esta chave de configuração, os ícones de aplicação no ecrã principal fica bloqueados e o utilizador final não seria capaz de arrastar e soltar para posições de grade diferente do ecrã inicial. Se ativado `false`, os utilizadores finais poderão ser movido entre os ícones de aplicação e a ligação Web a tela geridos home page.  |
-| Definir o papel de parede de dispositivo | cadeia | Predefinição | Permite-lhe definir um papel de parede de sua preferência ao introduzir o URL da imagem que pretende definir como uma imagem de fundo. |
+| Definir o papel de parede de dispositivo | Cadeia de caracteres | Predefinição | Permite-lhe definir um papel de parede de sua preferência ao introduzir o URL da imagem que pretende definir como uma imagem de fundo. |
 | Defina o tamanho de ícone de aplicação | inteiro | 2 | Permite-lhe definir o tamanho de ícone de aplicações apresentada no ecrã inicial. Pode escolher os seguintes valores nesta configuração para diferentes tamanhos - 0 (mais pequeno), 1 (pequeno), 2 (Regular), 3 (grande) e 4 (maior). |
 | Ícone de pasta do conjunto de aplicações | inteiro | 0 | Pode definir a aparência das pastas de aplicação no ecrã inicial. Pode escolher a aparência dos seguintes valores: Square(0) escuro;   Circle(1) escuro; Square(2) claro; Luz Circle(3). |
 | Ativar gestos | Bool | FALSO | Ative a capacidade do utilizador final de atribuir ações diferentes gestos, como percorra a cópia de segurança e arraste para baixo. Se desativar esta chave de configuração, os utilizadores finais só poderá para a direita de passar o dedo se houver uma segunda página e voltar à home page. |
@@ -87,7 +86,7 @@ A tabela seguinte lista as chaves de configuração disponíveis geridos tela ho
 | Ativar o botão de início virtual | Bool | FALSO | Ativar esta definição `True` para permitir que o utilizador final ter acesso a um botão de início de ecrã principal gerida que irá devolver o utilizador ao ecrã principal geridos a tarefa atual estão no.  |
 | Tipo de botão de início virtual | cadeia | swipe_up | Uso **swipe_up** para botão de início de acesso com um percorra a segurança de gesto. Uso **float** para aceder a um botão de início adesivo, persistente que pode ser movido pela tela pelo utilizador final. |
 | Barra de indicador da bateria e intensidade do sinal | Bool | Verdadeiro  | Ativar esta definição `True` mostra a barra de indicador de força da bateria e do sinal. |
-| Palavra-passe de modo do tarefas de bloqueio de saída | cadeia |   | Introduza um código de 6 de 4 dígitos a utilizar para remover temporariamente fora do modo de tarefa de bloqueio para resolução de problemas. |
+| Palavra-passe de modo do tarefas de bloqueio de saída | Cadeia de caracteres |   | Introduza um código de 6 de 4 dígitos a utilizar para remover temporariamente fora do modo de tarefa de bloqueio para resolução de problemas. |
 | Mostrar a configuração de Wi-Fi | Bool | FALSO | Ativar esta definição `True` permite que o utilizador final para ativar ou desativar Wi-Fi ou para ligar a várias redes Wi-Fi.  |
 | Mostrar a definição de Bluetooth | Bool | FALSO | Ativar esta definição `True` permite que o utilizador final para ativar ou desativar o Bluetooth e ligue a dispositivos com capacidade de Bluetooth diferentes.   |
 

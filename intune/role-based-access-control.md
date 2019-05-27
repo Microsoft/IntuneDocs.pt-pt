@@ -7,7 +7,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 03/22/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 895b358760775b1021e545b271acb7ced7fa7b1d
-ms.sourcegitcommit: ac3fe7504e58c74495a560a68eae2b784a4f7d46
+ms.openlocfilehash: 7419a316018ed5c883f89a51090a852680cd9e38
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65942083"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66040668"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>Controlo de acesso baseado em funções (RBAC) com o Microsoft Intune
 
@@ -59,12 +58,12 @@ Pode criar suas próprias funções com permissões personalizadas. Para obter m
 | --- | :---: | :---: |
 | Administrador Global | Leitura/escrita | Leitura/escrita |
 | Administrador de Serviços do Intune | Leitura/escrita | Leitura/escrita |
-| Administrador de Acesso Condicional | Nenhuma | Nenhum |
+| Administrador de Acesso Condicional | Nenhum | Nenhum |
 | Administrador de Segurança | Só de leitura | Só de leitura |
 | Operador de segurança | Só de leitura | Só de leitura |
 | Leitor de segurança | Só de leitura | Só de leitura |
 | Administrador de conformidade | Nenhum | Só de leitura |
-| Administrador de dados de conformidade | Nenhum | Só de leitura |
+| Administrador de dados de conformidade | Nenhuma | Só de leitura |
 
 > [!TIP]
 > O Intune também mostra três extensões do Azure AD: **Os utilizadores**, **grupos**, e **acesso condicional**, que são controladas através do RBAC do Azure AD. Além disso, o **Administrador da Conta de Utilizador** só executa as atividades do utilizador/grupo do AAD e não tem permissões completas para executar todas as atividades no Intune. Para obter mais informações, consulte [RBAC com o Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).

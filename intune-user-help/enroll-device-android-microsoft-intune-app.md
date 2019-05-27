@@ -18,12 +18,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2cf384bfcc0782226e363a6527ea47c4140f7faa
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 7e68e404a91927192f1006626d1b865acd5eb589
+ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61499818"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66197052"
 ---
 # <a name="enroll-your-corporate-device-with-the-microsoft-intune-app"></a>Inscrever o seu dispositivo da empresa com a aplicação Microsoft Intune
 
@@ -35,8 +35,6 @@ Existem quatro maneiras de se inscrever. Sua organização deve permitir que sab
 * Certificado de  
 * Código QR   
 * Google Zero Touch  
-
-Antes de começar a inscrição, certifique-se de que esteja ciente de que opção tem de utilizar, de modo a que pode seguir os passos adequados.  
 
 ## <a name="enroll-device"></a>Inscrever o dispositivo 
 Conclua estes passos para configurar e inscrever o seu dispositivo.  

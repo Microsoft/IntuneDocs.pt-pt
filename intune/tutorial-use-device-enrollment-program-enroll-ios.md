@@ -8,19 +8,18 @@ ms.author: erikje
 manager: dougeby
 ms.date: 04/30/2019
 ms.topic: tutorial
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 Customer intent: As an Intune admin, I want to set up the Apple's corporate device enrollment features so that corporate devices can automatically enroll in Intune.
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0e006ce1be5a19d0557ef0a5d6046afea2c13986
-ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
-ms.translationtype: MT
+ms.openlocfilehash: f1f2d584e3e19726ee79671437d2d6e5c729879d
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65135164"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66040314"
 ---
 # <a name="tutorial-use-apples-corpoate-device-enrollment-features-in-apple-business-manager-abm-to-enroll-ios-devices-in-intune"></a>Tutorial: Utilizar funcionalidades de inscrição de dispositivos de Corpoate da Apple no Gestor de negócios da Apple (ABM) para inscrever dispositivos iOS no Intune
 As funcionalidades de inscrição de dispositivos no Gestor de negócios do Apple simplifica a inscrição de dispositivos. O Intune também suporta mais antigo portal de programa de inscrição de dispositivos (DEP) da Apple, mas é recomendável que comece do zero com o Gestor de negócios da Apple. Com o Microsoft Intune e a inscrição de dispositivos empresariais da Apple, os dispositivos são inscritos automaticamente em segurança na primeira vez que o usuário ativa o dispositivo. Portanto pode enviar dispositivos para muitos usuários sem ter de configurar individualmente cada dispositivo. 
@@ -58,9 +57,9 @@ Utilize o portal do DEP ou do ABM para criar um token de inscrição de disposit
 
 4. Na página **Gerir Servidores**, selecione **Adicionar Servidor MDM**.
 
-5. Para **nome do servidor MDM**, introduza *TestMDMServer* e, em seguida, escolha **seguinte**. O nome do servidor é uma referência para identificar o servidor de gestão de dispositivos móveis (MDM). Não é o nome ou URL do servidor do Microsoft Intune.
+5. Para **nome do servidor MDM**, introduza *TestMDMServer* e, em seguida, escolha **seguinte**. O nome do servidor é uma referência para identificar o servidor de gestão de dispositivos móveis (MDM). Não é o nome nem o URL do servidor do Microsoft Intune.
 
-6. A caixa de diálogo **Adicionar &lt;NomeDoServidor&gt;** é aberta e pede para **Atualizar a Chave Pública**. Selecione **Escolher ficheiro...** para carregar o ficheiro .pem e, em seguida, selecione **Seguinte**.
+6. A caixa de diálogo **Adicionar &lt;NomeDoServidor&gt;** é aberta e pede para **Atualizar a Chave Pública**. Selecione **Escolher Ficheiro…** para carregar o ficheiro .pem e, em seguida, selecione **Seguinte**.
 
 6. Aceda a **programas de implementação** > **programa de inscrição de dispositivos** > **gerir dispositivos**.
 7. Sob **selecionar dispositivos por**, escolha **número de série**. <!--ask Tiffany about this-->

@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 01/29/2019
 ms.topic: troubleshooting
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6d1f790aeedff1e13ecc220ed7a6d8f311e12585
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: a0f8e9e7fec0bea759d408f3ca3d94aa46748bf8
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61511493"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66044600"
 ---
 # <a name="troubleshoot-policies-and-profiles-and-in-intune"></a>Resolver problemas de políticas e perfis e no Intune
 
@@ -33,7 +32,7 @@ Este artigo apresenta uma lista de algumas técnicas de resolução de problemas
 
 ## <a name="use-built-in-troubleshooting"></a>Utilizar a resolução de problemas interna
 
-1. Na [portal do Azure](https://portal.azure.com), selecione **todos os serviços** > Filtrar **Intune** > selecione **Intune**.
+1. No [portal do Azure](https://portal.azure.com), selecione **Todos os serviços** > filtre o **Intune** > selecione  **Intune**.
 2. Selecione **resolver problemas de**:
 
     ![No Intune, aceda a ajuda e suporte e selecione a resolução de problemas](./media/help-and-support-troubleshoot.png)
@@ -99,7 +98,7 @@ Este artigo apresenta uma lista de algumas técnicas de resolução de problemas
 
 ## <a name="youre-unsure-if-a-profile-is-correctly-applied"></a>Certeza se um perfil é aplicado corretamente
 
-1. Na [portal do Azure](https://portal.azure.com), selecione **todos os serviços** > Filtrar **Intune** > selecione **Intune**.
+1. No [portal do Azure](https://portal.azure.com), selecione **Todos os serviços** > filtre o **Intune** > selecione  **Intune**.
 2. Selecione **dispositivos** > **todos os dispositivos** > selecione o dispositivo > **configuração do dispositivo**. 
 
     Todos os dispositivos apresenta uma lista de seus perfis. Cada perfil tem um **estado**. O estado aplica-se quando todos os perfis atribuídos, incluindo requisitos de hardware e restrições do sistema operacional e, são considerados em conjunto. Estados possíveis incluem:

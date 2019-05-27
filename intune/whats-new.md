@@ -6,9 +6,8 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 05/16/2019
+ms.date: 05/21/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cf40c3b8f31e042a501e1502097f147d48fc328d
-ms.sourcegitcommit: bc5e4dff18f5f9b79077a888f8a58dcc490708c0
-ms.translationtype: MT
+ms.openlocfilehash: 0aa6f0e65c8f31a86dba6fd4a31384f61f4002be
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65975828"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66044227"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 
@@ -45,8 +44,22 @@ Saiba mais sobre as novidades todas as semanas no Microsoft Intune. Também pode
 
 -->  
 
+<!-- ########################## -->
+
+## <a name="week-of-may-20-2019"></a>Semana de 20 de Maio de 2019 
+
+#### <a name="autopilot-device-orderid-attribute-name-changed-to-group-tag----4659453---"></a>Autopilot OrderID atributo nome do dispositivo foi alterado para a etiqueta de grupo <!-- 4659453 -->
+
+Para torná-lo mais intuitivo, o **OrderID** nome de atributo em dispositivos Autopilot foi alterada para **etiqueta de grupo**. Quando utilizar CSVs para carregar as informações de dispositivo do Autopilot, tem de utilizar a etiqueta de grupo como no cabeçalho da coluna, não OrderID. Caso contrário, o carregamento falhará. OrderID em breve estará novamente introduzida para acomodar os clientes herdados ou scripts. No entanto, a etiqueta de grupo será o padrão mais adiante.
 
 <!-- ########################## -->
+
+## <a name="week-of-may-20-2019"></a>Semana de 20 de Maio de 2019 
+
+### <a name="app-management"></a>Gestão de aplicações
+
+#### <a name="windows-company-portal-app----3316993---"></a>Aplicação do Portal da Empresa do Windows <!-- 3316993 -->
+A aplicação Portal da empresa de Windows terá agora uma nova página rotulada **dispositivos**. O **dispositivos** página irá mostrar os utilizadores finais todos os respetivos dispositivos inscritos. Os utilizadores irão ver esta alteração no Portal da empresa quando utilizam a versão 10.3.4291.0 e mais tarde. Para obter informações sobre a configuração do Portal da empresa, consulte [como configurar a aplicação Portal da empresa do Microsoft Intune](company-portal-app.md).
 
 ## <a name="week-of-may-13-2019"></a>Semana de 13 de Maio de 2019 
 
@@ -64,7 +77,7 @@ Nos dispositivos já inscritos através do Assistente de configuração através
 
 Se os utilizadores instalarem a aplicação Portal da empresa a partir da App store e, em seguida, tentar inscrever estes dispositivos através do mesmo, receberá um erro. Estes dispositivos serão esperados para utilizar apenas o Portal da empresa quando foi enviado, automaticamente, pelo Intune durante a inscrição. Perfis de inscrição no Intune no portal do Azure serão atualizados para que pode especificar a forma como os dispositivos serão autenticados e se eles recebem a aplicação Portal da empresa. Se pretender que os utilizadores de dispositivos do DEP para o portal da empresa, terá de especificar as suas preferências num perfil de inscrição. 
 
-Além disso, o **identificar o seu dispositivo** ecrã no Portal da empresa iOS está a ser removido. Por conseguinte, os administradores que pretendem ativar o acesso condicional ou implementar aplicações da empresa tem de atualizar o perfil de inscrição de DEP. Este requisito aplica-se apenas se a inscrição de DEP é autenticada com o Assistente de configuração. Nesse caso, deve enviar por push o Portal da empresa no dispositivo. Para tal, escolha **Intune** > **inscrição de dispositivos** > **inscrição da Apple** > **programa de inscrição tokens** > Escolha um token > **perfis** > Escolha um perfil > **propriedades** > definir **instalar o Portal da empresa** para **Verdadeira**.
+Além disso, o **identificar o seu dispositivo** ecrã no Portal da empresa iOS está a ser removido. Por conseguinte, os administradores que pretendem ativar o acesso condicional ou implementar aplicações da empresa tem de atualizar o perfil de inscrição de DEP. Este requisito aplica-se apenas se a inscrição de DEP é autenticada com o Assistente de configuração. Nesse caso, deve enviar por push o Portal da empresa no dispositivo. Para tal, escolha **Intune** > **inscrição de dispositivos** > **inscrição da Apple** > **programa de inscrição tokens** > Escolha um token > **perfis** > Escolha um perfil > **propriedades** > definir **instalar o Portal da empresa** para **Sim**.
 
 Para instalar o Portal da empresa em dispositivos DEP já inscrito, terá de ir para o Intune > aplicações de cliente e enviá-los como uma aplicação gerida com as políticas de configuração de aplicações. 
 

@@ -8,7 +8,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 10/24/2018
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8e1edae77144b85d100bf590716768792afd8470
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: d6bfd832d9225221bcc6aaefe091a3cebf57a54c
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61508317"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66048626"
 ---
 # <a name="use-custom-settings-for-ios-devices-in-microsoft-intune"></a>Utilizar definições personalizadas para dispositivos iOS no Microsoft Intune
 
@@ -57,7 +56,7 @@ Este artigo mostra-lhe como criar um perfil personalizado para dispositivos iOS.
 3. Introduza as seguintes definições:
 
     - **Nome**: Introduza um nome para o perfil, como `ios custom profile`.
-    - **Descrição**: Introduza uma descrição para o perfil.
+    - **Descrição**: introduza uma descrição para o perfil.
     - **Plataforma**: Escolher **iOS**.
     - **Tipo de perfil**: Escolher **personalizado**.
 

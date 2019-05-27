@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 10/24/2018
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 494b8011b942026cf932b6f2f1851c5f0ffaadbb
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 852d4b169e2e6a43934babf3e1c26d91341050ab
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61490373"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66043196"
 ---
 # <a name="use-custom-settings-for-android-enterprise-devices-in-microsoft-intune"></a>Utilizar definições personalizadas para dispositivos Android Enterprise no Microsoft Intune
 
@@ -76,7 +75,7 @@ Neste exemplo, irá criar um perfil personalizado que restringe as ações de co
 3. Introduza as seguintes definições:
 
     - **Nome**: Introduza um nome para o perfil, como `android ent block copy paste custom profile`.
-    - **Descrição**: Introduza uma descrição para o perfil.
+    - **Descrição**: introduza uma descrição para o perfil.
     - **Plataforma**: Escolher **Android Enterprise**.
     - **Tipo de perfil**: Escolher **personalizado**.
 

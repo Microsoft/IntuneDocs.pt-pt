@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 01/22/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5ae03a4155fa2d170648548bb9a08b570f49c673
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 8483e036e270744daa5e36bf9375da6e11c25746
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61509573"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66048290"
 ---
 # <a name="add-ios-or-macos-device-feature-settings-in-intune"></a>Adicionar definições de funcionalidades de dispositivos iOS ou macOS no Intune
 
@@ -40,12 +39,12 @@ Este artigo mostra-lhe como criar um perfil de configuração do dispositivo. Ta
 
 ## <a name="create-a-device-profile"></a>Criar um perfil de dispositivo
 
-1. Na [portal do Azure](https://portal.azure.com), selecione **todos os serviços** > Filtrar **Intune** > selecione **Intune**.
+1. No [portal do Azure](https://portal.azure.com), selecione **Todos os serviços** > filtre o **Intune** > selecione  **Intune**.
 2. Selecione **Configuração do dispositivo** > **Perfis** > **Criar perfil**.
 3. Introduza as seguintes propriedades:
 
-    - **Nome**: Introduza um nome descritivo para o novo perfil.
-    - **Descrição**: Introduza uma descrição para o perfil. Esta definição é opcional, mas recomendada.
+    - **Nome**: introduza um nome descritivo para o novo perfil.
+    - **Descrição**: introduza uma descrição para o perfil. Esta definição é opcional, mas recomendada.
     - **Plataforma**: Selecione a plataforma:
         - **iOS**
         - **macOS**
@@ -61,6 +60,6 @@ O perfil é criado e apresentado na lista. Não se esqueça [atribuir o perfil](
 
 ## <a name="next-steps"></a>Passos Seguintes
 
-Depois do perfil é criado, está pronto para ser atribuído. Em seguida, [atribuir o perfil](device-profile-assign.md) e [monitorizar o estado](device-profile-monitor.md).
+Depois do perfil é criado, está pronto para ser atribuído. Em seguida, [atribua o perfil](device-profile-assign.md) e [monitorize o estado](device-profile-monitor.md).
 
 Ver todas as definições de funcionalidade do dispositivo para [iOS](ios-device-features-settings.md) e [macOS](macos-device-features-settings.md) dispositivos.

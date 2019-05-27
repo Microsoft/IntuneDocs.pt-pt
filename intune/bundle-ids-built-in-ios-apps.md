@@ -8,7 +8,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 05/20/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: ''
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a9df7511daff7bf71b8ae12e0fa65ce2c34e347b
-ms.sourcegitcommit: ac3fe7504e58c74495a560a68eae2b784a4f7d46
+ms.openlocfilehash: 26f43523589da0d59afb3b667eb4ead8357f7a60
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65941892"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66049031"
 ---
 # <a name="bundle-ids-for-built-in-ios-apps-you-can-use-in-intune"></a>IDs de pacote para aplicações iOS incorporadas, que pode utilizar no Intune
 

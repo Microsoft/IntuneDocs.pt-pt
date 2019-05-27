@@ -7,7 +7,6 @@ ms.author: tanvira
 manager: smantri
 ms.date: 4/16/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,18 +16,18 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ebefba3f912669166e5e077fe15b0b04f4a7b75f
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 5c47a7413d98467fffc26dee098a64cfeac770e4
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61490016"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66043548"
 ---
 # <a name="work-with-existing-on-premises-proxy-servers"></a>Trabalhar com servidores de proxy no local existentes
 
 Este artigo explica como configurar o conector do Intune para o Active Directory trabalhar com servidores de proxy de saída. Destina-se para os clientes com ambientes de rede que tenham proxies existentes.
 
-Para obter mais informações sobre como funcionam os conectores, consulte [conectores de Proxy de aplicações do AD Azure compreender](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/application-proxy-connectors).
+Para obter mais informações sobre como funcionam os conectores, consulte [conectores de Proxy de aplicações do AD Azure compreender](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-connectors).
 
 ## <a name="bypass-outbound-proxies"></a>Proxies de saída de omissão
 

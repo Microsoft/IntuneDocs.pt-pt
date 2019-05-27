@@ -8,7 +8,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 1/15/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0e3615f1f090af3ce589e83f11d12e95a2f07641
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 9edfa2ec7a408f512d4cb0b99a468db0b29f5868
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61503858"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66044194"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-fully-managed-devices-preview"></a>Configurar o Intune inscrição do Android Enterprise totalmente dispositivos geridos (pré-visualização)
 
@@ -32,7 +31,7 @@ Dispositivos do Android Enterprise totalmente gerido são dispositivos pertencen
 - bloquear a desinstalação de aplicações geridas
 - impedir os utilizadores de dispositivos de reposição de fábrica e assim por diante.
 
-O Intune ajuda-o a implementar aplicações e dispositivos geridos de definições para dispositivos Android Enterprise, incluindo totalmente o Android Enterprise. Para obter detalhes específicos sobre o Android Enterprise, consulte [requisitos do Android Enterprise](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012).
+O Intune ajuda-o a implementar aplicações e dispositivos geridos de definições para dispositivos Android Enterprise, incluindo totalmente o Android Enterprise. Para obter detalhes específicos sobre o Android Enterprise, veja [Android Enterprise requirements](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012) (Requisitos empresariais do Android).
 
 ## <a name="technical-requirements"></a>Requisitos técnicos
 
@@ -50,7 +49,7 @@ Não existe nenhuma restrição nos fabricante de dispositivo/OEM forem cumprido
 Para configurar o Android Enterprise totalmente geridos gestão de dispositivos, siga estes passos:
 
 1. Para se preparar para gerir dispositivos móveis, terá [definir a autoridade de gestão (MDM) do dispositivo móvel para **Microsoft Intune**](mdm-authority-set.md). Este item só é definido uma vez, quando está a configurar pela primeira vez o Intune para a gestão de dispositivos móveis.
-2. [Ligue a sua conta de inquilino do Intune à sua conta do Android Enterprise](connect-intune-android-enterprise.md).
+2. [Ligue a sua conta do inquilino do Intune à sua conta do Android Enterprise](connect-intune-android-enterprise.md).
 3. [Permitir que os dispositivos do utilizador pertencentes à empresa](#enable-corporate-owned-user-devices)
 4. [Inscrever os dispositivos totalmente geridos](#enroll-the-fully-managed-devices).
 

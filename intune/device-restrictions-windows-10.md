@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 04/18/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 55d14a242644a8c3115936acf6a5d35933c4e11c
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 18f8e072037d0ca9065201e0d0db2a9a2f6074ce
+ms.sourcegitcommit: 0f771585d3556c0af14500428d5c4c13c89b9b05
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61505731"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66174190"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Definições de dispositivos de 10 (e versões posteriores) do Windows para permitir ou restringir funcionalidades com o Intune
 
@@ -71,7 +70,7 @@ Utilizam estas definições a [política de conectividade](https://docs.microsof
 - **Canal de dados via rede móvel**: Escolha se os utilizadores finais podem utilizar dados, como navegação na web, quando estiver ligado a uma rede celular. As opções são:
   - **Não configurado** (predefinição): Utiliza o padrão de sistema operacional, que pode permitir que o canal de dados via rede móvel. Os utilizadores finais podem desativá-la.
   - **Bloco**: Não permitir que o canal de dados via rede móvel. Os utilizadores finais não é possível ativá-la.
-  - **Permitir (não editável)**: Permite que o canal de dados via rede móvel. Os utilizadores finais não pode desativá-la.
+  - **Permitir (não editável)** : Permite que o canal de dados via rede móvel. Os utilizadores finais não pode desativá-la.
 
 - **Roaming de dados**: **Bloco** impede que os dados via rede móveis em roaming no dispositivo. **Não configurado** (predefinição) permite o roaming entre redes ao aceder a dados.
 - **VPN na rede celular**: **Bloco** impede o dispositivo de aceder a ligações VPN quando ligado a uma rede celular. **Não configurado** (predefinição) permite que a VPN utilizar qualquer ligação, incluindo rede móvel.
@@ -137,7 +136,7 @@ Selecione **OK** para guardar as alterações.
   - **Hora e idioma**: **Bloco** impede o acesso à área de hora e idioma da aplicação de definições no dispositivo. **Não configurado** (predefinição) permite o acesso.
     - **Modificação da hora do sistema**: **Bloco** impede os utilizadores alterem as definições de data e hora no dispositivo. **Não configurado** permite que os usuários alterar estas definições.
     - **Modificação das definições de região** (apenas ambiente de trabalho): **Bloco** impede os utilizadores alterem as definições de região no dispositivo. **Não configurado** permite que os usuários alterar estas definições.
-    - **Modificação de definições de idioma (apenas ambiente de trabalho)**: **Bloco** impede os utilizadores alterem as definições de idioma no dispositivo. **Não configurado** permite que os usuários alterar estas definições.
+    - **Modificação de definições de idioma (apenas ambiente de trabalho)** : **Bloco** impede os utilizadores alterem as definições de idioma no dispositivo. **Não configurado** permite que os usuários alterar estas definições.
 
       [Política de definições de CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings)
 
@@ -171,7 +170,7 @@ Selecione **OK** para guardar as alterações.
 Utilizam estas definições a [experiência de política de CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience); que também apresenta uma lista de edições suportadas do Windows. 
 
 - **Captura de ecrã** (apenas móvel): **Bloco** impede que os utilizadores finais obter capturas de ecrã no dispositivo. **Não configurado** (predefinição) permite que esta funcionalidade.
-- **Copiar e colar (apenas móvel)**: **Bloco** impede que os utilizadores finais através de copiar e colar entre aplicações no dispositivo. **Não configurado** (predefinição) permite que esta funcionalidade.
+- **Copiar e colar (apenas móvel)** : **Bloco** impede que os utilizadores finais através de copiar e colar entre aplicações no dispositivo. **Não configurado** (predefinição) permite que esta funcionalidade.
 - **Anular inscrições manualmente**: **Bloco** impede que os utilizadores finais a eliminar a conta da área de trabalho utilizando o painel de controle da área de trabalho do dispositivo. **Não configurado** (predefinição) permite que esta funcionalidade.
 
   Esta definição de política não se aplica se o computador estiver associado ao Azure AD e a inscrição automática está ativada.
@@ -200,7 +199,7 @@ Utilizam estas definições a [experiência de política de CSP](https://docs.mi
 
   [Política de WindowsInkWorkspace CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowsinkworkspace)
 
-- **Reimplementação automática**: Escolher **permitir** para que os utilizadores com direitos de administrador podem eliminar todos os dados de utilizador e as configurações usando **CTRL + Win + R** no ecrã de bloqueio do dispositivo. O dispositivo é automaticamente reconfigurado e reinscrito na gestão. **Não configurado** (predefinição) impede que esta funcionalidade.
+- **Reimplementação automática**: Escolher **permitir** para que os utilizadores com direitos de administrador podem eliminar todos os dados de utilizador e as configurações usando **CTRL + Win + R** no ecrã de bloqueio do dispositivo. O dispositivo é automaticamente reconfigurado e reinscrito na gestão. **Não configurado** (predefinição) impede esta funcionalidade.
 - **Exigir que os utilizadores liguem à rede durante a configuração de dispositivo**: Escolher **requerem** para que o dispositivo estabelece ligação a uma rede antes de ir após a página de rede durante a configuração do Windows. **Não configurado** (predefinição) permite aos utilizadores aceder após a página de rede, mesmo que não está ligado a uma rede.
 
   A definição entra em vigor na próxima vez que o dispositivo é apagado ou repor. Como qualquer outra configuração do Intune, o dispositivo tem de ser inscritos e gerido pelo Intune para receber as definições de configuração. Mas uma vez está inscrito e receber políticas, em seguida, repor o dispositivo impõe a definição durante a configuração seguinte do Windows.
@@ -215,12 +214,12 @@ Selecione **OK** para guardar as alterações.
 
 ## <a name="locked-screen-experience"></a>Experiência de ecrã bloqueado
 
-- **Notificações do Centro de ação (apenas móvel)**: **Bloco** impede que as notificações de centro de ação do Mostrar no ecrã de bloqueio do dispositivo. **Não configurado** (predefinição) permite aos utilizadores escolher as aplicações mostram notificações no ecrã de bloqueio.
+- **Notificações do Centro de ação (apenas móvel)** : **Bloco** impede que as notificações de centro de ação do Mostrar no ecrã de bloqueio do dispositivo. **Não configurado** (predefinição) permite aos utilizadores escolher as aplicações mostram notificações no ecrã de bloqueio.
 
   [AboveLock/AllowActionCenterNotifications CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-abovelock#abovelock-allowactioncenternotifications)
 
 - **O URL da imagem de ecrã (apenas ambiente de trabalho) bloqueado**: Introduza o URL para uma imagem em formato JPG, JPEG ou PNG, que é utilizado como a imagem de fundo do ecrã de bloqueio do Windows. Por exemplo, introduza `https://contoso.com/image.png`. Esta definição bloqueia a imagem e não pode ser alterada posteriormente.
-- **Tempo limite do ecrã configurável pelo utilizador (apenas móvel)**: **Permitir** permite que os utilizadores configurem o tempo limite do ecrã. **Não configurado** (predefinição) não dar aos utilizadores, esta opção.
+- **Tempo limite do ecrã configurável pelo utilizador (apenas móvel)** : **Permitir** permite que os utilizadores configurem o tempo limite do ecrã. **Não configurado** (predefinição) não dar aos utilizadores, esta opção.
 
   [DeviceLock/AllowScreenTimeoutWhileLockedUserConfig CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-allowscreentimeoutwhilelockeduserconfig)
 
@@ -243,8 +242,8 @@ Selecione **OK** para guardar as alterações.
 Utilizam estas definições a [CSP de política de mensagens](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-messaging); que também apresenta uma lista de edições suportadas do Windows.
 
 - **Sincronização (apenas móvel) de mensagens**: **Bloco** desativa as mensagens de texto seja uma cópia de segurança e restauro e para a sincronização de mensagens entre dispositivos do Windows. Desativar o ajuda a evitar o armazenamento de informações em servidores fora do controlo da organização. **Não configurado** (predefinição) permite aos utilizadores alterar estas definições e sincronizar suas mensagens.
-- **MMS (apenas móvel)**: **Bloco** desativa MMS enviar e receber a funcionalidade do dispositivo. Para as empresas, utilize esta política para desativar os MMS nos dispositivos como parte do requisito de auditoria ou gestão. **Não configurado** (predefinição) permite MMS enviar e receber.
-- **RCS (apenas móvel)**: **Bloco** desativa Rich Communication Services (RCS) enviar e receber a funcionalidade do dispositivo. Para as empresas, utilize esta política para desativar o RCS nos dispositivos como parte do requisito de auditoria ou gestão. **Não configurado** (predefinição) permite RCS enviar e receber.
+- **MMS (apenas móvel)** : **Bloco** desativa MMS enviar e receber a funcionalidade do dispositivo. Para as empresas, utilize esta política para desativar os MMS nos dispositivos como parte do requisito de auditoria ou gestão. **Não configurado** (predefinição) permite MMS enviar e receber.
+- **RCS (apenas móvel)** : **Bloco** desativa Rich Communication Services (RCS) enviar e receber a funcionalidade do dispositivo. Para as empresas, utilize esta política para desativar o RCS nos dispositivos como parte do requisito de auditoria ou gestão. **Não configurado** (predefinição) permite RCS enviar e receber.
 
 Selecione **OK** para guardar as alterações.
 
@@ -257,10 +256,10 @@ Utilizam estas definições a [CSP de política de browser](https://docs.microso
 Alterar as definições disponíveis consoante aquilo que escolher. As opções são:
 
 - **Não** (predefinição): Microsoft Edge não está em execução no modo de local público. Todas as definições do Microsoft Edge estão disponíveis para que possa alterar e configurar.
-- **Digital/Interactive signage (quiosque de uma aplicação)**: Definições do Microsoft Edge filtros que são aplicáveis para o modo de local público do Microsoft Edge signage Digital/interativo para utilizam apenas em quiosques de aplicação única do Windows 10. Escolha esta definição para abrir uma tela de total de URL e mostrar apenas o conteúdo nesse Web site. [Configurar sinais digital](https://docs.microsoft.com/windows/configuration/setup-digital-signage) fornece mais informações sobre esta funcionalidade.
-- **Navegação de público inPrivate (quiosque de uma aplicação)**: Utilizam as definições do Microsoft Edge de filtros que são aplicáveis para o modo InPrivate navegação Microsoft Edge quiosque público para quiosques de aplicação única do Windows 10. Executa uma versão de separador multi do Microsoft Edge.
-- **Modo normal (quiosque de várias aplicações)**: Filtra as definições do Microsoft Edge que são aplicáveis ao modo de local público de borda do Microsoft Normal. Executa uma versão completa do Microsoft Edge com todas as funcionalidades de navegação.
-- **Público, navegar (quiosque de várias aplicações)**: Filtra as definições do Microsoft Edge que são aplicáveis para a navegação pública num quiosque de várias aplicações do Windows 10.  Executa uma versão de separador multi do InPrivate do Microsoft Edge.
+- **Digital/Interactive signage (quiosque de uma aplicação)** : Definições do Microsoft Edge filtros que são aplicáveis para o modo de local público do Microsoft Edge signage Digital/interativo para utilizam apenas em quiosques de aplicação única do Windows 10. Escolha esta definição para abrir uma tela de total de URL e mostrar apenas o conteúdo nesse Web site. [Configurar sinais digital](https://docs.microsoft.com/windows/configuration/setup-digital-signage) fornece mais informações sobre esta funcionalidade.
+- **Navegação de público inPrivate (quiosque de uma aplicação)** : Utilizam as definições do Microsoft Edge de filtros que são aplicáveis para o modo InPrivate navegação Microsoft Edge quiosque público para quiosques de aplicação única do Windows 10. Executa uma versão de separador multi do Microsoft Edge.
+- **Modo normal (quiosque de várias aplicações)** : Filtra as definições do Microsoft Edge que são aplicáveis ao modo de local público de borda do Microsoft Normal. Executa uma versão completa do Microsoft Edge com todas as funcionalidades de navegação.
+- **Público, navegar (quiosque de várias aplicações)** : Filtra as definições do Microsoft Edge que são aplicáveis para a navegação pública num quiosque de várias aplicações do Windows 10.  Executa uma versão de separador multi do InPrivate do Microsoft Edge.
 
 > [!TIP]
 > Para obter mais informações sobre o que fazem essas opções, consulte [tipos de configuração de modo de local público de Microsoft Edge](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-configuration-types).
@@ -295,7 +294,7 @@ Este perfil de restrições de dispositivo está diretamente relacionada com o p
   - **URL de botão de casa**: Introduza o URL para abrir. Por exemplo, introduza: `https://www.bing.com` ou `https://www.contoso.com`.
   - **Botão de ocultar Home**: Oculta o botão de início
 - **Permitir que os utilizadores alterar o botão início**: **Sim** permite que os utilizadores alterem o botão de início. As alterações do utilizador substituem as definições de administrador para o botão de início. **Não** (predefinição) bloqueia os utilizadores de alterar a forma como o administrador configurou botão de início.
-- **Mostrar página de tela de apresentação (apenas móvel)**: **Sim** (predefinição) mostra a primeira página de introdução de utilização no Microsoft Edge. **Não** pára a página de introdução de mostrar o primeiro tempo executa o Microsoft Edge. Esta funcionalidade permite às empresas, como as organizações inscritos no zero emissões de configurações, bloquear esta página.
+- **Mostrar página de tela de apresentação (apenas móvel)** : **Sim** (predefinição) mostra a primeira página de introdução de utilização no Microsoft Edge. **Não** pára a página de introdução de mostrar o primeiro tempo executa o Microsoft Edge. Esta funcionalidade permite às empresas, como as organizações inscritos no zero emissões de configurações, bloquear esta página.
 - **URL de experiência de executar primeiro indique a localização** (apenas Windows 10 Mobile): Introduza o URL que aponta para o ficheiro XML que contém os URLs de página de execução primeiro. Por exemplo, introduza `https://www.contoso.com/sites.xml`.
 
 - **Atualize o browser após o tempo de inatividade**: Introduza o número de minutos de inatividade até o navegador é atualizado, de 0-1440 minutos. A predefinição é `5` minutos. Quando definido como `0` (zero), o navegador não atualiza após inatividade.
@@ -403,18 +402,18 @@ Selecione **OK** para guardar as alterações.
 
 Utilizam estas definições a [DeviceLock política CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock), que também apresenta uma lista de edições suportadas do Windows.
 
-- **palavra-passe**: **Exigir** o utilizador final introduza uma palavra-passe para aceder ao dispositivo. **Não configurado** (predefinição) permite o acesso ao dispositivo sem uma palavra-passe.
-  - **Tipo de palavra-passe obrigatório**: Escolha o tipo de palavra-passe. As opções são:
+- **Palavra-passe**: **Exigir** que o utilizador final introduza uma palavra-passe para aceder ao dispositivo. **Não configurado** (predefinição) permite o acesso ao dispositivo sem uma palavra-passe.
+  - **Tipo obrigatório de palavra-passe**: Escolha o tipo de palavra-passe. As opções são:
     - **Não configurado**: Palavra-passe pode incluir letras e números.
-    - **Numérico**: Palavra-passe tem de ser apenas números.
-    - **Alfanumérico**: Palavra-passe tem de ser uma combinação de números e letras.
+    - **Numérica**: Palavra-passe tem de ser apenas números.
+    - **Alfanumérica**: Palavra-passe tem de ser uma combinação de números e letras.
   - **Comprimento mínimo da palavra-passe**: Introduza o número mínimo ou carateres necessários, a partir de 4 a 16. Por exemplo, introduza `6` para exigir pelo menos seis caracteres de comprimento de palavra-passe.
-  - **Número de falhas de início de sessão antes de limpar o dispositivo**: Introduza o número de falhas de autenticação permitidas antes do dispositivo é apagado, a partir de 1 a 11. `0` (zero), pode desativar a funcionalidade de eliminação do dispositivo.
+  - **Número de falhas de início de sessão antes de apagar o dispositivo**: Introduza o número de falhas de autenticação permitidas antes do dispositivo é apagado, a partir de 1 a 11. `0` (zero), pode desativar a funcionalidade de eliminação do dispositivo.
 
     Esta definição não tem um impacto diferente, dependendo da edição. Para obter detalhes específicos, consulte a [DeviceLock/MaxDevicePasswordFailedAttempts CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts).
 
-  - **Máximo de minutos de inatividade até o ecrã bloquear**: Introduza o período de tempo que um dispositivo tem de estar inativo antes do ecrã ser bloqueado.
-  - **Expiração de palavra-passe (dias)**: Introduza o período de tempo em dias quando a palavra-passe do dispositivo deve ser alterada, de 1-365. Por exemplo, introduza `90` para expirar a palavra-passe após 90 dias.
+  - **Máximo de minutos de inatividade até o ecrã ser bloqueado**: Introduza o período de tempo que um dispositivo tem de estar inativo antes do ecrã ser bloqueado.
+  - **Expiração da palavra-passe (dias)** : Introduza o período de tempo em dias quando a palavra-passe do dispositivo deve ser alterada, de 1-365. Por exemplo, introduza `90` para expirar a palavra-passe após 90 dias.
   - **Impedir a reutilização de palavras-passe anteriores**: Introduza o número de palavras-passe utilizadas anteriormente que não pode ser utilizada, a partir de 1 a 24. Por exemplo, introduza `5` para que os utilizadores não é possível definir uma nova palavra-passe para a palavra-passe atual ou qualquer uma das suas palavras-passe anteriores quatro.
   - **Exigir palavra-passe quando o dispositivo regressa do Estado de inatividade** (Mobile e Holographic): Escolher **requerem** para que os utilizadores tem de introduzir uma palavra-passe para desbloquear o dispositivo após inatividade. **Não configurado** (predefinição) não exige um PIN ou palavra-passe quando o dispositivo sai de um estado inativo.
   - **Palavras-passe simples**: Defina como **bloco** para que os utilizadores não é possível criar palavras-passe simples, tal como `1234` ou `1111`. Defina como **não configurado** (predefinição) para permitir aos utilizadores criar palavras-passe como `1234` ou `1111`. Esta definição também permite ou bloqueia a utilização de palavras-passe por imagem do Windows.
@@ -422,7 +421,7 @@ Utilizam estas definições a [DeviceLock política CSP](https://docs.microsoft.
 
   [Segurança/PreventAutomaticDeviceEncryptionForAzureADJoinedDevices CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-preventautomaticdeviceencryptionforazureadjoineddevices)
 
-- **Política de Federal Information Processing Standard (FIPS)**: **Permitir** utiliza a política de Federal Information Processing Standard (FIPS), que é um Governo dos E.U.A. standard para a encriptação, hash e assinatura. **Não configurado** (predefinição) utiliza a predefinição do sistema operativo, o que não usa o FIPS.
+- **Política de Federal Information Processing Standard (FIPS)** : **Permitir** utiliza a política de Federal Information Processing Standard (FIPS), que é um Governo dos E.U.A. standard para a encriptação, hash e assinatura. **Não configurado** (predefinição) utiliza a predefinição do sistema operativo, o que não usa o FIPS.
 
   [Criptografia/AllowFipsAlgorithmPolicy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-cryptography#cryptography-allowfipsalgorithmpolicy)
 
@@ -478,7 +477,7 @@ Selecione **OK** para guardar as alterações.
 
 Utilizam estas definições a [CSP de política de personalização](https://docs.microsoft.com/windows/client-management/mdm/personalization-csp), que também apresenta uma lista de edições suportadas do Windows.
 
-- **URL da imagem de fundo (apenas ambiente de trabalho)**: Introduza o URL para uma imagem no formato jpg,. JPEG ou. PNG que pretende utilizar como a imagem de fundo de ambiente de trabalho Windows. Os utilizadores não podem alterar a imagem. Por exemplo, introduza `https://contoso.com/logo.png`.
+- **URL da imagem de fundo (apenas ambiente de trabalho)** : Introduza o URL para uma imagem no formato jpg,. JPEG ou. PNG que pretende utilizar como a imagem de fundo de ambiente de trabalho Windows. Os utilizadores não podem alterar a imagem. Por exemplo, introduza `https://contoso.com/logo.png`.
 
 Selecione **OK** para guardar as alterações.
 
@@ -573,7 +572,7 @@ Selecione **OK** para guardar as alterações.
 
 Utilizam estas definições a [pesquisar política CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-search), que também apresenta uma lista de edições suportadas do Windows. 
 
-- **Pesquisa segura (apenas móvel)**: Controle a forma como a Cortana filtra o conteúdo para adultos nos resultados da pesquisa. As opções são:
+- **Pesquisa segura (apenas móvel)** : Controle a forma como a Cortana filtra o conteúdo para adultos nos resultados da pesquisa. As opções são:
   - **Definido pelo utilizador**: Permitir que os utilizadores finais escolher as suas próprias definições.
   - **Strict**: Mais alta filtragem de conteúdos para adultos.
   - **Moderado**: Filtragem moderada de conteúdos para adultos. Os resultados de pesquisa válidos não são filtrados.
@@ -679,7 +678,7 @@ Utilizam estas definições a [experiência de política de CSP](https://docs.mi
 
   - **Destaque do Windows no ecrã de bloqueio**: **Bloco** impede o destaque do Windows de mostrar as informações no ecrã de bloqueio do dispositivo. **Não configurado** (predefinição) habilita esse recurso.
   - **Sugestões de terceiros no destaque do Windows**: **Bloco** impede o destaque do Windows de sugerir conteúdos que não sejam publicados pela Microsoft. **Não configurado** (predefinição) permite que a aplicação e conteúdos sugestões de editores de software de parceiro em funcionalidades do destaque do Windows, como em destaque do ecrã de bloqueio, sugestões de aplicações no menu Iniciar e dicas do Windows.
-  - **Funcionalidades do consumidor**: **Bloco** se desligar experiências normalmente destinadas a consumidores apenas, tais como sugestões de início, notificações de associação, pós-cópia fora da instalação de aplicação de experiência de caixa, e mosaicos de redirecionamento. **Não configurado** (predefinição) permite que esses recursos.
+  - **Funcionalidades do consumidor**: **Bloco** se desligar experiências normalmente destinadas a consumidores apenas, tais como sugestões de início, notificações de associação, pós-cópia fora da instalação de aplicação de experiência de caixa, e mosaicos de redirecionamento. **Não configurado** (predefinição) permite estas funcionalidades.
   - **Dicas do Windows**: **Bloco** desativa sugestões pop-up do Windows. **Não configurado** (predefinição) permite que as Dicas do Windows mostrar.
   - **Destaque do Windows no Centro de ação**: **Bloco** impede notificações de destaque do Windows de mostrar no Centro de ação. **Não configurado** (predefinição) pode mostrar notificações no Centro de ação que sugerem as aplicações ou funcionalidades para ajudar os utilizadores sejam mais produtivos no Windows.
   - **Personalização do destaque do Windows**: **Bloco** impede que o Windows utilize dados de diagnóstico para fornecer experiências personalizadas ao utilizador. **Não configurado** (predefinição) permite que a Microsoft utilizar dados de diagnóstico para fornecer recomendações personalizadas, dicas e ofertas para personalizar o Windows para as necessidades do usuário.
@@ -693,11 +692,11 @@ Utilizam estas definições a [CSP de política de defender](https://docs.micros
 
 - **Monitorização em tempo real**: **Ativar** impede que a análise em tempo real de software maligno, spyware e outro software indesejável. **Não configurado** (predefinição) permite que esta funcionalidade.
 - **Monitorização de comportamento**: **Ativar** impede que o Defender verifique a existência de determinados padrões conhecidos de atividade suspeita nos dispositivos. **Não configurado** (predefinição) permite a monitorização de comportamento do Windows Defender.
-- **Network Inspection System (NIS)**: NIS ajuda a proteger os dispositivos contra exploits baseados na rede. Utiliza as assinaturas de vulnerabilidades conhecidas do Microsoft Endpoint Protection Center para ajudar a detetar e bloquear tráfego malicioso.
+- **Network Inspection System (NIS)** : NIS ajuda a proteger os dispositivos contra exploits baseados na rede. Utiliza as assinaturas de vulnerabilidades conhecidas do Microsoft Endpoint Protection Center para ajudar a detetar e bloquear tráfego malicioso.
 - **Analisar todas as transferências**: Controla se o Defender analisa todos os ficheiros transferidos da Internet.
 - **Analisar scripts carregados em browsers da Microsoft**: **Não configurado** (predefinição) permite que o Defender analise scripts que são utilizados no Internet Explorer. **Ativar** impede que esta análise.
 - **Acesso do utilizador final ao Defender**: **Bloco** oculta a interface do usuário do Windows Defender dos utilizadores finais. Todas as notificações do Windows Defender também são suprimidas. **Não configurado** (predefinição) permite o acesso de utilizador para a interface do Usuário do Windows Defender. Quando esta definição for alterada, será aplicada da próxima vez que o PC do utilizador final for reiniciado.
-- **Intervalo de atualização de assinatura (em horas)**: Introduza o intervalo de que o Defender verifica para novos ficheiros de assinatura, de 0 e 24. As opções são:
+- **Intervalo de atualização de assinatura (em horas)** : Introduza o intervalo de que o Defender verifica para novos ficheiros de assinatura, de 0 e 24. As opções são:
 
   - **Não configurado** (predefinição)
   - **Não verificar**: Defender não verifica a existência de novos ficheiros de assinatura.
@@ -706,7 +705,7 @@ Utilizam estas definições a [CSP de política de defender](https://docs.micros
 - **Dias antes de eliminar o software malicioso em quarentena**: Continuar a controlar software maligno resolvido para o número de dias que introduzir para que possa verificar manualmente os dispositivos afetados anteriormente. Se definir o número de dias para **0**, software maligno permanece na pasta de quarentena e não são automaticamente removido. Quando definido como `90`, itens de quarentena são armazenados durante 90 dias no sistema e, em seguida, removidos.
 - **Limite de utilização da CPU durante uma análise**: Limitar a quantidade de CPU que as análises estão autorizadas a utilizar, partir **1** ao **100**.
 - **Verificar arquivos mortos**: **Ativar** impede que o Defender de ficheiros de análise arquivado, tais como ficheiros Zip ou Cab. **Não configurado** (predefinição) permite que esta análise.
-- **Analisar mensagens de correio recebidas**: **Ativar** impede a varredura de e-mail. **Não configurado** (predefinição) permite que o Defender analise mensagens de e-mail quando chegam no dispositivo.
+- **Analisar mensagens de correio recebidas**: **Ativar** permite que o Defender analise mensagens de e-mail quando chegam no dispositivo. **Não configurado** (predefinição) impede a varredura de e-mail.
 - **Analisar unidades amovíveis durante uma análise completa**: **Ativar** impede que as análises completas de unidades amovíveis. **Não configurado** (predefinição) permite que o Defender analise unidades amovíveis, como pens USB.
 - **Analisar unidades de rede mapeadas durante uma análise completa**: **Ativar** permite que o Defender analise ficheiros em unidades de rede mapeadas. **Não configurado** (predefinição) impede que a análise completa. Se os ficheiros na unidade forem só de leitura, o Defender não conseguirá remover qualquer software maligno encontrado nos mesmos.
 - **Analisar ficheiros abertos a partir de pastas de rede**: **Não configurado** (predefinição) permite que o Defender analise ficheiros em unidades de rede partilhadas, tais como ficheiros acedidos a partir de um caminho UNC. **Ativar** impede que esta análise. Se os ficheiros na unidade forem só de leitura, o Defender não conseguirá remover qualquer software maligno encontrado nos mesmos.

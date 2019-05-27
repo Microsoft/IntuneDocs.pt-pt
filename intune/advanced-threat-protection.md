@@ -7,7 +7,6 @@ ms.author: brenduns
 manager: dougeby
 ms.date: 02/22/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 036f2ca8302f9b3c2d700a04918c4c49a4c6211a
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: a53ae7f43f135f7316b665672dc410812ef14d08
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61490573"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66050140"
 ---
 # <a name="enforce-compliance-for-windows-defender-atp-with-conditional-access-in-intune"></a>Impor a conformidade para Windows Defender ATP com acesso condicional no Intune
 
@@ -113,9 +112,9 @@ A política de conformidade determina um nível de risco aceitável num disposit
 5. Na **do Windows Defender ATP** definições, definir **exigir que o dispositivo estar ou sob a classificação de risco de máquina** para seu nível favorito. As classificações de nível de ameaça são [determinado pelo Windows Defender ATP](https://review.docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/alerts-queue-windows-defender-advanced-threat-protection?branch=atp-server2008#sort-filter-and-group-the-alerts-queue).
 
    - **Limpar**: Este é o nível mais seguro. O dispositivo não poderá aceder aos recursos da empresa se contiver ameaças. Se forem detetadas ameaças, o dispositivo será avaliado como não conforme. (Os utilizadores do Windows Defender ATP o valor *seguro*.)
-   - **Baixa**: O dispositivo está em conformidade se só existirem ameaças de nível baixo. Os dispositivos com níveis de ameaça média ou alta não estão conformes.
+   - **Baixo**: O dispositivo está em conformidade se só existirem ameaças de nível baixo. Os dispositivos com níveis de ameaça média ou alta não estão conformes.
    - **Médio**: O dispositivo está em conformidade se as ameaças encontradas no dispositivo forem baixo ou médio. Se forem detetadas ameaças de nível alto, o estado do dispositivo será determinado como não conforme.
-   - **Alta**: Este nível é o nível menos seguro e permite todos os níveis de ameaça. Como tal, os dispositivos com níveis de ameaça altos, médios ou baixos são considerados conformes.
+   - **Alto**: Este nível é o nível menos seguro e permite todos os níveis de ameaça. Como tal, os dispositivos com níveis de ameaça altos, médios ou baixos são considerados conformes.
 
 6. Selecione **OK** e **Criar** para guardar as alterações (e criar o perfil).
 

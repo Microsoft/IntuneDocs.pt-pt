@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 03/18/2019
 ms.topic: troubleshooting
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fb33a1207e165323de2e82467c7a0dd5239d9713
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 803d556150d60d0a3d60ec03c029d65f0f935f67
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61507373"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66045282"
 ---
 # <a name="send-log-data-to-storage-event-hubs-or-log-analytics-in-intune-preview"></a>Enviar dados de registo para o armazenamento, os hubs de eventos ou do log analytics no Intune (pré-visualização)
 
@@ -54,7 +53,7 @@ Dependendo de onde pretende encaminhar os dados de registo de auditoria, precisa
 
 ## <a name="send-logs-to-azure-monitor"></a>Enviar registos para o Azure monitor
 
-1. Na [portal do Azure](https://portal.azure.com/), selecione **todos os serviços** > Filtrar **Intune** > selecione **Intune**.
+1. No [portal do Azure](https://portal.azure.com/), selecione **Todos os serviços** > filtre o **Intune** > selecione  **Intune**.
 2. Sob **monitorização**, selecione **as definições de diagnóstico**. Na primeira vez que abri-lo, ativá-la:
 
     ![Ative as definições de diagnóstico no Intune para enviar registos para o Azure Monitor](media/diagnostics-settings-turn-on.png)
@@ -102,7 +101,7 @@ Também pode exportar os registos de auditoria em outras partes do Intune, inclu
 
 Por exemplo, para exportar a auditoria de registos ao utilizar a conformidade do dispositivo:
 
-1. Na [portal do Azure](https://portal.azure.com/), selecione **todos os serviços** > Filtrar **Intune** > selecione **Intune**.
+1. No [portal do Azure](https://portal.azure.com/), selecione **Todos os serviços** > filtre o **Intune** > selecione  **Intune**.
 2. Selecione **conformidade do dispositivo** > **Monitor** > **registos de auditoria**:
 
     ![Escolha os registos de auditoria para encaminhar dados do Intune para o armazenamento do Azure Monitor, os hubs de eventos ou análise](media/audit-logs-under-monitor-in-compliance.png)

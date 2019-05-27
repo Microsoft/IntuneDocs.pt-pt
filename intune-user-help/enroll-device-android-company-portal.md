@@ -18,18 +18,20 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3e9120110b1840d1f5075549737722328ef2551f
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 736b1d891207a19f281aa1127975de1a55889e8b
+ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61498384"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66197040"
 ---
 # <a name="enroll-your-device-with-company-portal"></a>Inscrever o seu dispositivo com o Portal da empresa  
 Inscreva o seu dispositivo Android pessoal ou pertencentes à empresa para obter acesso seguro ao e-mail da empresa, aplicações e dados. Portal da empresa oferece suporte a dispositivos Android, incluindo o Samsung Knox, executar o Android 4.4 e posterior.  
+</br>
+> [!VIDEO https://www.youtube.com/embed/k0Q_sGLSx6o?rel=0]
 
 > [!NOTE]
-> Samsung Knox é um tipo de segurança utilizado por determinados dispositivos Samsung para proteção adicional fora o que proporciona o Android nativo. Para verificar se tem um dispositivo Samsung Knox, > aceda a **configurações** > **sobre o dispositivo**. Se não vir **versão Knox** aí listada, tem um dispositivo Android nativo.    
+> Samsung Knox é um tipo de segurança utilizado por determinados dispositivos Samsung para proteção adicional fora o que proporciona o Android nativo. Para verificar se tem um dispositivo Samsung Knox, > aceda a **configurações** > **sobre o dispositivo**. Se não vir **versão Knox** aí listada, tem um dispositivo Android nativo.
 
 ## <a name="enroll-device"></a>Inscrever o dispositivo  
 Certifique-se de que [instalar a aplicação gratuita Portal de empresa do Intune a partir do Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal). 
@@ -61,7 +63,7 @@ Durante a inscrição, poderá ser-lhe pedido para escolher uma categoria que me
 
    ![Definições de privacidade](/intune/media/android_cp_enroll_02_after_1710.png)
 
-8. No ecrã **O que se segue?**, leia sobre o que acontece durante a inscrição e, em seguida, toque em **INSCREVER**.
+8. No ecrã **O que se segue?** , leia sobre o que acontece durante a inscrição e, em seguida, toque em **INSCREVER**.
 
    ![Ecrã O que vem a seguir](/intune/media/android_cp_enroll_03_after_1710.png)
 

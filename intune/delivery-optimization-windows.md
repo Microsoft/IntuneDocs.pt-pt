@@ -7,7 +7,6 @@ ms.author: brenduns
 manager: dougeby
 ms.date: 03/12/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: kerimh
-ms.openlocfilehash: 45d91766b3bbdcdd3528afd80d74a56a94e88a2c
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: d927c886bbb3f82c18d5873a86fc427d00d96337
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61510202"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66042638"
 ---
 # <a name="delivery-optimization-settings-in-microsoft-intune"></a>Definições de otimização de entrega no Microsoft Intune
 
@@ -37,14 +36,14 @@ Para saber mais sobre a otimização de entrega no Windows 10, veja [otimizaçã
 > **Atualizações de software-Cadências de atualização do Windows 10** são substituídos pela **Otimização da entrega** definições. Os anéis de atualização existente podem ser alterados para utilizar o **Otimização da entrega** definições. [Mover cadências de atualização existente para otimização de entrega](#move-existing-update-rings-to-delivery-optimization) (neste artigo) 
 ## <a name="create-the-profile"></a>Criar o perfil
 
-1. Na [portal do Azure](https://portal.azure.com), selecione **todos os serviços** > Filtrar **Intune** > selecione **Intune**.
+1. No [portal do Azure](https://portal.azure.com), selecione **Todos os Serviços** > filtre o **Intune** > selecione **Intune**.
 
 2. Selecione **Configuração do dispositivo** > **Perfis** > **Criar Perfil**.
 
 3. Introduza as seguintes propriedades:
 
-    - **Nome**: Introduza um nome descritivo para o novo perfil.
-    - **Descrição**: Introduza uma descrição para o perfil. Esta definição é opcional, mas recomendada.
+    - **Nome**: introduza um nome descritivo para o novo perfil.
+    - **Descrição**: introduza uma descrição para o perfil. Esta definição é opcional, mas recomendada.
     - **Plataforma**: Selecione a plataforma:  
 
         - **Windows 10 e posterior**
@@ -52,7 +51,7 @@ Para saber mais sobre a otimização de entrega no Windows 10, veja [otimizaçã
     - **Tipo de perfil**: Selecione **Otimização da entrega**.
     - **Definições**: Configure as definições que definem como pretende que as atualizações e aplicações para transferir. Para obter informações sobre as definições disponíveis, consulte [definições de otimização de entrega para o Intune](delivery-optimization-settings.md).
 
-4. Quando terminar, selecione **OK** > **criar** para guardar as alterações.
+4. Quando terminar, selecione **OK** > **Criar** para guardar as alterações.
 
 O perfil é criado e é apresentado na lista. Em seguida, [atribuir o perfil](device-profile-assign.md) e, em seguida [monitorizar o estado](device-profile-monitor.md).
 
@@ -65,8 +64,8 @@ O perfil é criado e é apresentado na lista. Em seguida, [atribuir o perfil](de
     1. No Intune, selecione **configuração do dispositivo** > **perfis** > **criar perfil**.
     2. Introduza as seguintes propriedades:
 
-        - **Nome**: Introduza um nome descritivo para o novo perfil.
-        - **Descrição**: Introduza uma descrição para o perfil. Esta definição é opcional, mas recomendada.
+        - **Nome**: introduza um nome descritivo para o novo perfil.
+        - **Descrição**: introduza uma descrição para o perfil. Esta definição é opcional, mas recomendada.
         - **Plataforma**: Selecione **Windows 10 e posterior**.
         - **Tipo de perfil**: Selecione **Otimização da entrega**.
         - **Definições**: Para **modo de transferência de otimização de entrega**, escolha o mesmo modo que é utilizado pelo anel de atualização de software existente, a menos que queira alterar as definições aplicam-se para os seus dispositivos. As opções são:

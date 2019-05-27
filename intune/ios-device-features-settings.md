@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 04/23/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1bcd3a5d0b9f7abc1aa2e0b4d96c30c956b6b4c7
-ms.sourcegitcommit: b0cf661145ccc6e3518db620af199786a623a0d9
+ms.openlocfilehash: b31c7778ea167b98468a0a9ad9e37047c30ce201
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64764892"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66047168"
 ---
 # <a name="ios-device-settings-to-use-common-ios-features-in-intune"></a>definições de dispositivos iOS para utilizar recursos comuns do iOS no Intune
 
@@ -77,7 +76,7 @@ Pode adicionar até **seis** itens (aplicações e pastas combinadas) para a est
   - **Aplicação**: Escolha esta opção para adicionar aplicações à estação de ancoragem na tela. Introduza:
 
     - **Nome da aplicação**: Introduza um nome para a aplicação. Este nome é utilizado para sua referência no portal do Azure. Ele *não é* mostrado no dispositivo iOS.
-    - **ID do pacote de aplicação**: Introduza o ID do pacote da aplicação. Ver [IDs de pacote para aplicações iOS incorporadas](bundle-ids-built-in-ios-apps.md) para obter alguns exemplos.
+    - **ID do pacote da aplicação**: Introduza o ID do pacote da aplicação. Ver [IDs de pacote para aplicações iOS incorporadas](bundle-ids-built-in-ios-apps.md) para obter alguns exemplos.
 
     Selecione **OK** para guardar as alterações.
 
@@ -90,7 +89,7 @@ Pode adicionar até **seis** itens (aplicações e pastas combinadas) para a est
 
       - **Nome da página**: Introduza um nome para a página. Este nome é utilizado para sua referência no portal do Azure. Ele *não é* mostrado no dispositivo iOS.
       - **Nome da aplicação**: Introduza um nome para a aplicação. Este nome é utilizado para sua referência no portal do Azure. Ele *não é* mostrado no dispositivo iOS.
-      - **ID do pacote de aplicação**: Introduza o ID do pacote da aplicação. Ver [IDs de pacote para aplicações iOS incorporadas](bundle-ids-built-in-ios-apps.md) para obter alguns exemplos.
+      - **ID do pacote da aplicação**: Introduza o ID do pacote da aplicação. Ver [IDs de pacote para aplicações iOS incorporadas](bundle-ids-built-in-ios-apps.md) para obter alguns exemplos.
 
       Pode adicionar até **20** páginas para o dispositivo da estação de ancoragem.
 
@@ -131,7 +130,7 @@ Pode adicionar até **40** páginas num dispositivo.
       - **Aplicação**: Escolha esta opção para adicionar aplicações para uma página na tela. Introduza também:
 
         - **Nome da aplicação**: Introduza um nome para a aplicação. Este nome é utilizado para sua referência no portal do Azure. Ele *não é* mostrado no dispositivo iOS.
-        - **ID do pacote de aplicação**: Introduza o ID do pacote da aplicação. Ver [IDs de pacote para aplicações iOS incorporadas](bundle-ids-built-in-ios-apps.md) para obter alguns exemplos.
+        - **ID do pacote da aplicação**: Introduza o ID do pacote da aplicação. Ver [IDs de pacote para aplicações iOS incorporadas](bundle-ids-built-in-ios-apps.md) para obter alguns exemplos.
 
       Selecione **OK** para guardar as alterações.
 
@@ -144,7 +143,7 @@ Pode adicionar até **40** páginas num dispositivo.
 
           - **Nome da página**: Introduza um nome para a página. Este nome é utilizado para sua referência no portal do Azure. Ele *não é* mostrado no dispositivo iOS.
           - **Nome da aplicação**: Introduza um nome para a aplicação. Este nome é utilizado para sua referência no portal do Azure. Ele *não é* mostrado no dispositivo iOS.
-          - **ID do pacote de aplicação**: Introduza o ID do pacote da aplicação. Ver [IDs de pacote para aplicações iOS incorporadas](bundle-ids-built-in-ios-apps.md) para obter alguns exemplos.
+          - **ID do pacote da aplicação**: Introduza o ID do pacote da aplicação. Ver [IDs de pacote para aplicações iOS incorporadas](bundle-ids-built-in-ios-apps.md) para obter alguns exemplos.
 
       Selecione **OK** para guardar as alterações.
 
@@ -168,7 +167,7 @@ Escolha aplicações como instaladas nas notificações de envio de dispositivos
 
   - **ID do pacote de aplicação**: Introduza o **ID do pacote de aplicação** da aplicação que pretende adicionar. Ver [IDs de pacote para aplicações iOS incorporadas](bundle-ids-built-in-ios-apps.md) para obter alguns exemplos.
   - **Nome da aplicação**: Introduza o nome da aplicação que pretende adicionar. Este nome é utilizado para sua referência no portal do Azure. Ele *não é* mostrado no dispositivo.
-  - **Publisher**: Introduza o publicador da aplicação que estiver a adicionar. Este nome é utilizado para sua referência no portal do Azure. Ele *não é* mostrado no dispositivo.
+  - **Publicador**: Introduza o publicador da aplicação que estiver a adicionar. Este nome é utilizado para sua referência no portal do Azure. Ele *não é* mostrado no dispositivo.
   - **Notificações**: **Ativar** ou **desativar** a aplicação a partir de envio de notificações no dispositivo.
     - **Mostrar no Centro de notificações**: **Ativar** permite que a aplicação mostre notificações no Centro de notificações do dispositivo. **Desativar** impede que a aplicação que mostra notificações no Centro de notificações.
     - **Mostrar no ecrã de bloqueio**: Selecione **ativar** para ver as notificações a partir da aplicação no ecrã de bloqueio do dispositivo. **Desativar** impede que a aplicação que mostra notificações no ecrã de bloqueio.

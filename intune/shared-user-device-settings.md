@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 01/09/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8c2cf06508cc21682a580c09e8207343b09e39eb
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 0a5064a9065dba75f3594f2e6bb6fb36b42be2e2
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61506683"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66044968"
 ---
 # <a name="control-access-accounts-and-power-features-on-shared-pc-or-multi-user-devices-using-intune"></a>Controlar o acesso, contas e recursos de energia no PC partilhado ou dispositivos de vários utilizadores através do Intune
 
@@ -42,12 +41,12 @@ Quando o perfil é criado no Intune, implementar ou atribuir o perfil a grupos d
 
 ## <a name="create-the-profile"></a>Criar o perfil
 
-1. Na [portal do Azure](https://portal.azure.com), selecione **todos os serviços** > Filtrar **Intune** > selecione **Intune**.
+1. No [portal do Azure](https://portal.azure.com), selecione **Todos os Serviços** > filtre o **Intune** > selecione **Intune**.
 2. Selecione **Configuração do dispositivo** > **Perfis** > **Criar Perfil**.
 3. Introduza as seguintes propriedades:
 
-   - **Nome**: Introduza um nome descritivo para o novo perfil.
-   - **Descrição**: Introduza uma descrição para o perfil. Esta definição é opcional, mas recomendada.
+   - **Nome**: introduza um nome descritivo para o novo perfil.
+   - **Descrição**: introduza uma descrição para o perfil. Esta definição é opcional, mas recomendada.
    - **Plataforma**: Selecione **Windows 10 e posterior**.
    - **Tipo de perfil**: Selecione **dispositivos de vários utilizadores partilhado**.
 

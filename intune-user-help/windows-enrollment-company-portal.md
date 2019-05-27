@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/12/2019
+ms.date: 05/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a637b6eed162243d2be81ac08fbcc055e1fd5816
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: d9f29e2d737dfd7bef709f239d6c8506c3bb746c
+ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61505204"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66196872"
 ---
 # <a name="windows-device-enrollment-in-intune-company-portal"></a>Inscrição de dispositivos do Windows no Portal da empresa do Intune  
 
@@ -78,6 +78,9 @@ Passos de inscrição são diferentes para versões diferentes de dispositivos W
 Utilize os seguintes artigos para inscrever os outros dispositivos suportados do Windows através do site do Portal da empresa:   
 * [Windows 8.1. ou o dispositivo Windows RT 8.1](enroll-your-W81-or-rt81-windows.md)  
 * [Dispositivo Windows Phone 8.1](enroll-your-wp81-windows.md)    
+
+## <a name="it-administrator-support"></a>Suporte de administrador de TI  
+Se for um administrador de TI e executar em problemas ao inscrever dispositivos, veja [problemas de inscrição de dispositivos de resolução de problemas do Windows no Microsoft Intune](https://support.microsoft.com/help/4469913). Este artigo lista erros comuns, suas causas e passos para resolvê-los.  
 
 ## <a name="next-steps"></a>Passos Seguintes  
 Agora que sabe que os dispositivos suportados e o seu número de versão do Windows 10, avance para o artigo de inscrição recomendados.  

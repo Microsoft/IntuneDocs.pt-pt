@@ -18,20 +18,20 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 162044fdfbe9df6dd6461bcdf919dc798ad3c4a1
-ms.sourcegitcommit: 6de06b475f16893710dc34027096138aa697e482
+ms.openlocfilehash: cbb6c3b771ae768fe45bea1eecb21f7083003010
+ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65992907"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66196851"
 ---
 # <a name="enroll-windows-10-devices-with-intune-company-portal"></a>Inscrever dispositivos Windows 10 com o Portal da empresa do Intune
 
 Utilize o Portal da empresa do Intune para inscrever o seu dispositivo Windows 10 na gestão da sua organização. Este artigo descreve como inscrever dispositivos com Windows 10 versão 1607 e posterior e Windows 10 versão 1511 e anterior. Antes de começar, certifique-se de que [verificar a versão no seu dispositivo](windows-enrollment-company-portal.md#find-windows-10-version-number) , de modo a que pode seguir os passos corretos.  
 
 Windows 10 é suportada em vários tipos de dispositivo, incluindo a área de trabalho, telemóvel e tablet. Os passos de inscrição são os mesmos em qualquer dispositivo que está a utilizar. No entanto, o ecrã pode parecer um pouco diferentes das imagens mostradas neste artigo.  
-
-> [!VIDEO https://channel9.msdn.com/Series/IntuneEnrollment/Windows-Enrollment/player]  
+</br>
+> [!VIDEO https://www.youtube.com/embed/TKQxEckBHiE?rel=0]
 
 ## <a name="enroll-windows-10-version-1607-and-later-device"></a>Inscrever com o Windows 10 versão 1607 e posterior dispositivo 
 Estes passos descrevem como inscrever um dispositivo que é executado no Windows 10, versão 1607 e posterior.  

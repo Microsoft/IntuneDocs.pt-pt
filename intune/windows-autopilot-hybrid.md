@@ -8,7 +8,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 12/06/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ac370ffe297cb62af6ed55cfd5c4c41cf8452d3
-ms.sourcegitcommit: dfcf80a91792715404dc021c8684866c8b0a27e1
+ms.openlocfilehash: 030467009e0fed8716a1aa622474188352c0e0b0
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65816296"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66050359"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>Implementação híbrida do Azure AD associado dispositivos com o Intune e o Windows Autopilot
 Pode utilizar o Intune e o Windows Autopilot para configurar híbrida do Azure Active Directory (Azure AD)-dispositivos associados a um. Para tal, siga os passos neste artigo.
@@ -140,7 +139,7 @@ Se tiver um proxy web no seu ambiente de rede, certifique-se de que o conector d
 
 1. Se tiver selecionado **dispositivos dinâmica** para o tipo de associação, no **grupo** painel, selecione **membros de dispositivo dinâmicos** e, em seguida, no **regra avançada** caixa, efetue um dos seguintes procedimentos:
     - Para criar um grupo que inclua todos os seus dispositivos Autopilot, introduza `(device.devicePhysicalIDs -any _ -contains "[ZTDId]")`.
-    - Para criar um grupo que inclua todos os seus dispositivos Autopilot com um ID de ordem específica, introduza `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`.
+    - Campo de etiqueta de grupo do Intune mapeia para o atributo de OrderID em dispositivos do Azure AD. Se pretender criar um grupo que inclua todos os seus dispositivos Autopilot com um Tag(OrderID) grupo específico, tem de escrever: `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`
     - Para criar um grupo que inclua todos os seus dispositivos Autopilot com um ID de ordem de compra específico, introduza `(device.devicePhysicalIds -any _ -eq "[PurchaseOrderId]:76222342342")`.
     
 1. Selecione **Guardar**.
@@ -207,8 +206,8 @@ Demora cerca de 15 minutos para que o estado do perfil de dispositivo a alterar 
 
 1. Na [Intune](https://aka.ms/intuneportal), selecione **configuração do dispositivo** > **perfis** > **criar perfil**.
 1. Introduza as seguintes propriedades:
-   - **Nome**: Introduza um nome descritivo para o novo perfil.
-   - **Descrição**: Introduza uma descrição para o perfil.
+   - **Nome**: introduza um nome descritivo para o novo perfil.
+   - **Descrição**: introduza uma descrição para o perfil.
    - **Plataforma**: Selecione **Windows 10 e posterior**.
    - **Tipo de perfil**: Selecione **ingresso no domínio (pré-visualização)**.
 1. Selecione **configurações**e, em seguida, forneça um **prefixo do nome do computador**, **nome de domínio**e (opcional) **unidade organizacional** no [Formato de DN](https://docs.microsoft.com/windows/desktop/ad/object-names-and-identities#distinguished-name). 

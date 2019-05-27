@@ -8,7 +8,6 @@ ms.author: erikre
 manager: dougeby
 ms.date: 03/28/2019
 ms.topic: tutorial
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c601af8c2b73ac68ec88f45d3684fcfd41f1c87f
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: c84cd0ec61ea08956bbebd040167991c6285d073
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61516333"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66044975"
 ---
 # <a name="tutorial-walkthrough-of-microsoft-intune-in-the-azure-portal"></a>Tutorial: Passo a passo do Microsoft Intune no portal do Azure
 
@@ -85,7 +84,7 @@ Siga os passos abaixo para compreender melhor o Intune no portal do Azure. Depoi
 
     ![Captura de ecrã do painel de configuração do dispositivo](media/tutorial-walkthrough-intune-portal/tutorial-walkthrough-intune-portal-04.png)
     
-    O Intune inclui definições e funcionalidades que pode ativar ou desativar em diferentes dispositivos na sua organização. Estas definições e funcionalidades são adicionadas para "perfis de configuração". Pode criar perfis para diferentes dispositivos e plataformas diferentes, incluindo iOS, Android e Windows. Em seguida, pode utilizar o Intune para aplicar o perfil a dispositivos na sua organização.   
+    O Intune inclui definições e funcionalidades que pode ativar ou desativar em diferentes dispositivos na sua organização. Estas definições e funcionalidades são adicionadas aos “perfis de configuração”. Pode criar perfis para diferentes dispositivos e diferentes plataformas, incluindo iOS, Android e Windows. Em seguida, pode utilizar o Intune para aplicar o perfil a dispositivos na sua organização.   
 
     Para obter mais informações sobre a configuração do dispositivo, consulte [aplicar definições de funcionalidades nos seus dispositivos com perfis de dispositivos no Microsoft Intune](device-profiles.md).
 

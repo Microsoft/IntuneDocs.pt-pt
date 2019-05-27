@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 04/23/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8858848d12ca3f5839741fc15d87e1cd66e9fad0
-ms.sourcegitcommit: b0cf661145ccc6e3518db620af199786a623a0d9
+ms.openlocfilehash: 1826498b3bfa2191900d7574f79051af8f758558
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64764862"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66041705"
 ---
 # <a name="macos-device-feature-settings-in-intune"></a>definições de funcionalidade do dispositivo macOS no Intune
 
@@ -33,7 +32,7 @@ Esta funcionalidade aplica-se a:
 
 Como parte da sua solução de gestão (MDM) de dispositivos móveis, utilize estas definições para criar uma faixa, escolha a forma como os utilizadores iniciam sessão, adicionar um servidor do AirPrint e muito mais.
 
-Estas definições são adicionadas a um perfil de configuração do dispositivo no Intune e, em seguida, atribuídas ou implementadas nos seus dispositivos macOS.
+Estas definições são adicionadas a um perfil de configuração do dispositivo no Intune e, em seguida, atribuídas ou implementadas nos dispositivos macOS.
 
 ## <a name="before-you-begin"></a>Antes de começar
 

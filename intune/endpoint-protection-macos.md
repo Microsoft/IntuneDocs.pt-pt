@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 3/27/2018
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c2c3a33b996a68263550fc05d3af853c263c930a
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: e050d188d4508225ef384fbf557e7724efacab18
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61512926"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66047743"
 ---
 # <a name="macos-endpoint-protection-settings-in-intune"></a>Definições de proteção de ponto final do macOS no Intune
 
@@ -28,7 +27,7 @@ Este artigo mostra-lhe as definições de proteção de ponto final que pode con
 
 ## <a name="gatekeeper"></a>Controlador de chamadas
 
-- **Permitir aplicações transferidas a partir destas localizações**: Limite as aplicações dependendo de onde as aplicações foram transferidas. A intenção é proteger dispositivos de software maligno e permitir apenas aplicações de origens em que confia. As opções para permitir: 
+- **Permitir aplicações transferidas destas localizações**: Limite as aplicações dependendo de onde as aplicações foram transferidas. A intenção é proteger dispositivos de software maligno e permitir apenas aplicações de origens em que confia. As opções para permitir: 
   - **Mac App Store**
   - **Mac App Store e programadores identificados**
   - **Em qualquer lugar**

@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 11/13/2018
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: edb01e1cbe5fdbc79b48ee90e39fe45a2ccefb2a
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: eeb70727a187a769e56a9cfd517ecd7b583ba1c1
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61505765"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66042471"
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings-lists-in-intune"></a>Android e Samsung Knox Standard listas de definições de restrição de dispositivos no Intune
 
@@ -47,16 +46,16 @@ Este artigo mostra-lhe todas as definições de restrições de dispositivos do 
 
 ## <a name="password"></a>Palavra-passe
 
-- **palavra-passe**: **Exigir** o utilizador final introduza uma palavra-passe para aceder ao dispositivo. **Não configurado** permite aos utilizadores aceder ao dispositivo sem introduzir uma palavra-passe.
+- **Palavra-passe**: **Exigir** que o utilizador final introduza uma palavra-passe para aceder ao dispositivo. **Não configurado** permite que os utilizadores acedam ao dispositivo sem introduzir uma palavra-passe.
 
     > [!NOTE]
     > Os dispositivos Samsung Knox exigem automaticamente um PIN de 4 dígitos durante a inscrição na MDM. Os dispositivos Android nativos podem exigir automaticamente um PIN para ficarem em conformidade com o acesso condicional.
 
 - **Comprimento mínimo da palavra-passe**: Introduza o comprimento mínimo da palavra-passe de que um utilizador tem de introduzir (entre 4 e 16 carateres).
-- **Máximo de minutos de inatividade até o ecrã bloquear**: Introduza o número máximo de minutos de inatividade permitido no dispositivo até o ecrã ser bloqueado. Num dispositivo, um utilizador final não pode definir um valor de tempo superior ao tempo configurado no perfil. Um utilizador final pode definir um valor de tempo inferior. Por exemplo, se o perfil estiver definido para 15 minutos, um utilizador final poderá definir o valor para 5 minutos. Um utilizador final não pode definir o valor para 30 minutos. 
-- **Número de falhas de início de sessão antes de limpar o dispositivo**: Introduza o número de falhas de início de sessão consecutivas a permitir antes do dispositivo ser apagado.
-- **Expiração de palavra-passe (dias)**: Introduza o número de dias antes da palavra-passe do dispositivo tem de ser alterada.
-- **Tipo de palavra-passe obrigatório**: Introduza o nível de complexidade de palavra-passe exigido e se podem ser utilizados dispositivos biométricos. As opções são:
+- **Máximo de minutos de inatividade até o ecrã ser bloqueado**: introduza o número máximo de minutos de inatividade permitidos no dispositivo até o ecrã bloquear. Num dispositivo, um utilizador final não pode definir um valor de tempo superior ao tempo configurado no perfil. Um utilizador final pode definir um valor de tempo inferior. Por exemplo, se o perfil estiver definido para 15 minutos, um utilizador final poderá definir o valor para 5 minutos. Um utilizador final não pode definir o valor para 30 minutos. 
+- **Número de falhas de início de sessão antes de apagar o dispositivo**: Introduza o número de falhas de início de sessão consecutivas a permitir antes do dispositivo ser apagado.
+- **Expiração da palavra-passe (dias)**: introduza o número de dias antes de ser necessário alterar a palavra-passe do dispositivo.
+- **Tipo obrigatório de palavra-passe**: Introduza o nível de complexidade de palavra-passe exigido e se podem ser utilizados dispositivos biométricos. As opções são:
   - **Predefinição do dispositivo**
   - **Biométrica de segurança baixa**
   - **Pelo menos numérica**
@@ -65,7 +64,7 @@ Este artigo mostra-lhe todas as definições de restrições de dispositivos do 
   - **Pelo menos alfanumérica**
   - **Pelo menos alfanumérica com símbolos**
 - **Impedir a reutilização de palavras-passe anteriores**: Impede que o utilizador final crie uma palavra-passe que tenham utilizado antes.
-- **(Apenas no Samsung Knox) de desbloqueio por impressão digital**: Escolher **bloco** para impedir a utilização de uma impressão digital para desbloquear o dispositivo. **Não configurado** permite ao utilizador desbloquear o dispositivo através de uma impressão digital.
+- **(Apenas no Samsung Knox) de desbloqueio por impressão digital**: escolha **Bloquear** para impedir a utilização de uma impressão digital para desbloquear o dispositivo. **Não configurado** permite ao utilizador desbloquear o dispositivo através de uma impressão digital.
 - **Smart Lock e outros agentes de fidedignidade**: Escolher **bloco** para impedir que o Smart Lock ou outros agentes de fidedignidade de ajustarem as definições de ecrã de bloqueio (Samsung KNOX Standard 5.0 +). Esta funcionalidade de telefone, por vezes conhecida como agente de confiança, permite desativar ou ignorar a palavra-passe de ecrã do bloqueio de dispositivo se o dispositivo estiver numa localização fidedigna. Por exemplo, esta funcionalidade pode ser utilizada quando o dispositivo está ligado a um dispositivo Bluetooth específico ou quando está próximo de uma etiqueta NFC. Pode utilizar esta definição para impedir que os utilizadores configurem o Smart Lock.
 - **Encriptação**: Escolher **requerem** para que os ficheiros no dispositivo estejam encriptados. Nem todos os dispositivos suportam encriptação. Para utilizar esta funcionalidade, também: 
   1. Definir **palavra-passe** ao **exigir**.
@@ -90,8 +89,8 @@ Se definir **tipo de palavra-passe obrigatório** ao **numérica complexa**e, em
 
 Utilize estas definições para permitir ou impedir que aplicações específicas no dispositivo. Esta funcionalidade é suportada em dispositivos Android e Samsung Knox Standard:
 
-- **Aplicações proibidas**: Uma lista de aplicações não geridas pelo Intune que não quer instalada no dispositivo. Se um usuário instala uma aplicação a partir desta lista, é notificado pelo Intune.
-- **Aplicações aprovadas**: Uma lista de aplicações que os utilizadores podem instalar. Para ficar em conformidade, os utilizadores não podem instalar outras aplicações. As aplicações geridas pelo Intune são automaticamente permitidas.
+- **Aplicações proibidas**: uma lista de aplicações não geridas pelo Intune que não quer que sejam instaladas no dispositivo. Se um utilizador instalar uma aplicação desta lista, receberá uma notificação do Intune.
+- **Aplicações aprovadas**: uma lista de aplicações que os utilizadores têm permissão para instalar. Para permanecerem compatíveis, os utilizadores não podem instalar outras aplicações. As aplicações geridas pelo Intune são automaticamente permitidas.
 
 Para adicionar aplicações a estas listas, pode:
 
@@ -99,7 +98,7 @@ Para adicionar aplicações a estas listas, pode:
 - Importe um ficheiro CSV com detalhes sobre a aplicação, incluindo o URL. Utilize o <*url de aplicação*>, <*nome da aplicação*>, <*publicador da aplicação*> formato. Ou, **exportar** uma lista existente, que inclui a lista de aplicações restritas no mesmo formato.
 
 > [!IMPORTANT]
-> Perfis de dispositivos que utilizam as definições de aplicações restritas têm de ser atribuídos a grupos de utilizadores.
+> Os perfis de dispositivo que utilizam as definições de aplicações restritas têm de ser atribuídos a grupos de utilizadores.
 
 ## <a name="browser"></a>Browser
 
@@ -138,10 +137,10 @@ Para cada definição, adicione uma lista de aplicações. As opções são:
 
 ## <a name="cellular-and-connectivity"></a>Rede Móvel e Conectividade
 
-- **Roaming de dados (apenas no Samsung Knox)**: Escolher **bloco** para impedir que os dados em roaming na rede celular. **Não configurado** permite dados em roaming quando o dispositivo estiver numa rede celular.
+- **Roaming de dados (apenas no Samsung Knox)**: escolha **Bloquear** para impedir o roaming de dados na rede móvel. **Não configurado** permite dados em roaming quando o dispositivo estiver numa rede celular.
 - **Mensagens de SMS/MMS (apenas no Samsung Knox)**: Escolher **bloco** para impedir que o texto de mensagens no dispositivo. **Não configurado** permite a utilização de SMS e MMS no dispositivo de mensagens.
-- **Marcação por voz (apenas no Samsung Knox)**: Escolher **bloco** para impedir que os utilizadores a utilizar a funcionalidade de marcação por voz no dispositivo. **Não configurado** permite as chamadas discar no dispositivo.
-- **Roaming (apenas Samsung Knox) de voz**: Escolher **bloco** para impedir que chamadas em roaming na rede celular. **Não configurado** permite chamadas em roaming quando o dispositivo estiver numa rede celular.
+- **Marcação por voz (apenas no Samsung Knox)**: escolha **Bloquear** para impedir que os utilizadores utilizem a funcionalidade de marcação por voz no dispositivo. **Não configurado** permite as chamadas discar no dispositivo.
+- **Roaming (apenas Samsung Knox) de voz**: escolha **Bloquear** para impedir as chamadas em roaming na rede móvel. **Não configurado** permite chamadas em roaming quando o dispositivo estiver numa rede celular.
 - **Bluetooth (apenas no Samsung Knox)**: Escolher **bloco** para impedir a utilização de Bluetooth no dispositivo. **Não configurado** permite a utilização de Bluetooth no dispositivo.
 - **NFC (apenas no Samsung Knox)**: Escolher **bloco** para parar a tecnologia de junto ao campo comunicação (NFC). **Não configurado** permite operações que utilizam comunicação de proximidade nos dispositivos suportados.
 - **Wi-Fi (apenas no Samsung Knox)**: Escolher **bloco** para impedir a utilização de Wi-Fi no dispositivo. **Não configurado** permite utilizar as funcionalidades de Wi-Fi do dispositivo.
