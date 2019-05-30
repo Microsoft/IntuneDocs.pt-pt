@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 05/21/2019
+ms.date: 05/29/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 25a3acda374266a0fbd16feabde7787204555ea2
-ms.sourcegitcommit: 876719180e0d73b69fc053cf67bb8cc40b364056
-ms.translationtype: HT
+ms.openlocfilehash: dc6b8f90a261325afe7d7ee97bab99dbbd09c095
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66264175"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66374058"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 
@@ -134,7 +134,7 @@ Para ver as definições disponíveis, aceda à [Store de aplicação, visualiza
 Aplica-se a: iOS
 
 ####  <a name="microsoft-defender-advanced-threat-protection--baseline--preview------3754134---"></a>Linha de base de proteção do Microsoft Defender avançada contra ameaças (pré-visualização)  <!--  3754134 -->
-Adicionámos uma linha de base de segurança pré-visualização para [a proteção de ameaças avançada do Microsoft Defender](security-baseline-settings-defender-atp.md) definições.  
+Adicionámos uma linha de base de segurança pré-visualização para [a proteção de ameaças avançada do Microsoft Defender](security-baseline-settings-defender-atp.md) definições. Esta linha de base está disponível quando o seu ambiente cumpre os pré-requisitos de utilização [a proteção de ameaças avançada do Microsoft Defender](advanced-threat-protection.md#prerequisites).
 
 ### <a name="device-enrollment"></a>Inscrição de dispositivos
 
