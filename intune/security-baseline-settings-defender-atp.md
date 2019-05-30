@@ -5,7 +5,7 @@ description: Definições de linha de base de segurança suportadas pelo Intune 
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/17/2019
+ms.date: 05/29/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,16 +16,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f96393e0d6071b1b56700e954714324b01ffcf25
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c6feae4d7caeeefbf9638e5018ba7b653a260f5c
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040735"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66373504"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Definições de linha de base de proteção do Microsoft Defender avançada contra ameaças para o Intune
 
 Ver as definições de linha de base do Microsoft Defender proteção avançada contra ameaças (anteriormente conhecido como Windows Defender proteção avançada contra ameaças) que são suportadas pelo Microsoft Intune. Os valores predefinidos neste artigo representam a configuração de linha de base padrão para o Intune. Estas predefinições representam a configuração recomendada para o Intune e podem não corresponder às predefinições de Windows.
+
+  Linha de base da Microsoft Defender proteção avançada contra ameaças está disponível quando o seu ambiente cumpre os pré-requisitos de utilização [a proteção de ameaças avançada do Microsoft Defender](advanced-threat-protection.md#prerequisites)).
+
+
+
 
 > [!NOTE]  
 > As definições de linha de base WDATP estão no **pré-visualização**. Enquanto está em pré-visualização, a lista de definições disponíveis e a ordem em que este conteúdo apresenta essas definições, pode não corresponder aos que estão disponíveis no portal. 

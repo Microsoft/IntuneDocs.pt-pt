@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 04c4cb95d9eacd8967ecacedfe1a5d335b729005
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: e802a7196369cf7918ffd8b76e62e03176e7a617
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043731"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66374091"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Configurar e utilizar certificados SCEP com o Intune
 
@@ -224,7 +224,7 @@ Neste passo, irá:
 3. O servidor do NDES recebe URLs extensos (consultas) que exigem a adição de duas entradas de registo:
 
 
-   |                        Location                        |      Valor      | Type  |      Dados       |
+   |                        Location                        |      Value      | Type  |      Dados       |
    |--------------------------------------------------------|-----------------|-------|-----------------|
    | HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters | MaxFieldLength  | DWORD | 65534 (decimal) |
    | HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters | MaxRequestBytes | DWORD | 65534 (decimal) |
@@ -272,8 +272,8 @@ Neste passo, irá:
 
 2. Selecione **Editar Definições de Funcionalidade** e, em seguida, defina os seguintes valores:
 
-    - **cadeia de consulta (Bytes)** = **65534**
-    - **Comprimento máximo do URL (Bytes)** = **65534**
+    - **cadeia de consulta (Bytes)**  = **65534**
+    - **Comprimento máximo do URL (Bytes)**  = **65534**
 
 3. Reveja a seguinte chave de registo:
 
@@ -297,7 +297,7 @@ Neste passo, irá:
 > [!IMPORTANT] 
 > O Microsoft Intune Certificate Connector **tem** de ser instalado num servidor Windows separado. Não pode ser instalado na Autoridade de Certificação (AC) emissora. Também **tem** de estar instalado no mesmo servidor que a função Serviço de Inscrição de Dispositivos de Rede (NDES).
 
-1. No [portal do Azure](https://portal.azure.com), selecione **Todos os serviços**, filtre o **Intune** e selecione **Microsoft Intune**.
+1. Inicie sessão no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Selecione **configuração do dispositivo** > **conectores de certificação** > **adicionar**.
 3. Transferir e guardar o conector para o ficheiro SCEP. Guarde-o numa localização acessível a partir do servidor onde vai instalar o conector.
 
@@ -350,7 +350,7 @@ Para se certificar de que o serviço está em execução, abra um browser e intr
 
 ## <a name="create-a-scep-certificate-profile"></a>Criar um perfil de certificado SCEP
 
-1. No [portal do Azure](https://portal.azure.com), selecione **Todos os serviços**, filtre o **Intune** e selecione **Microsoft Intune**.
+1. Inicie sessão no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Selecione **Configuração do dispositivo** > **Perfis** > **Criar perfil**.
 3. Introduza um **Nome** e uma **Descrição** para o perfil de certificado SCEP.
 4. Na lista pendente **Plataforma**, selecione a plataforma do dispositivo para este certificado SCEP. Atualmente, pode selecionar uma das seguintes plataformas para definições de restrição de dispositivos:
@@ -384,17 +384,17 @@ Para se certificar de que o serviço está em execução, abra um browser e intr
         - **Nome comum como e-mail**
         - **Identidade Internacional do Equipamento Móvel (IMEI)**
         - **Número de série**
-        - **Custom**: Quando seleciona esta opção, uma **personalizado** também é apresentada a caixa de texto. Utilize este campo para introduzir um formato de nome de requerente personalizado, incluindo variáveis. Formato personalizado suporta duas variáveis: **Nome comum (CN)** e **E-Mail (E)**. O **Nome Comum (CN)** pode ser definido para qualquer uma das seguintes variáveis:
+        - **Custom**: Quando seleciona esta opção, uma **personalizado** também é apresentada a caixa de texto. Utilize este campo para introduzir um formato de nome de requerente personalizado, incluindo variáveis. Formato personalizado suporta duas variáveis: **Nome comum (CN)** e **E-Mail (E)** . O **Nome Comum (CN)** pode ser definido para qualquer uma das seguintes variáveis:
 
-            - **CN={{UserName}}**: O nome do principal de utilizador do utilizador, por exemplo, janedoe@contoso.com
-            - **CN={{AAD_Device_ID}}**: Um ID atribuído ao registar um dispositivo no Azure Active Directory (AD). Este ID é normalmente utilizado na autenticação com o Azure AD.
-            - **CN={{SERIALNUMBER}}**: Número de série exclusivo (SN) normalmente utilizado pelo fabricante para identificar um dispositivo
-            - **CN={{IMEINumber}}**: O número exclusivo de identidade internacional de equipamento a móvel (IMEI) utilizado para identificar um telemóvel
-            - **CN={{OnPrem_Distinguished_Name}}**: Uma sequência de nomes únicos relativos separados por vírgula, por exemplo `CN=Jane Doe,OU=UserAccounts,DC=corp,DC=contoso,DC=com`
+            - **CN={{UserName}}** : O nome do principal de utilizador do utilizador, por exemplo, janedoe@contoso.com
+            - **CN={{AAD_Device_ID}}** : Um ID atribuído ao registar um dispositivo no Azure Active Directory (AD). Este ID é normalmente utilizado na autenticação com o Azure AD.
+            - **CN={{SERIALNUMBER}}** : Número de série exclusivo (SN) normalmente utilizado pelo fabricante para identificar um dispositivo
+            - **CN={{IMEINumber}}** : O número exclusivo de identidade internacional de equipamento a móvel (IMEI) utilizado para identificar um telemóvel
+            - **CN={{OnPrem_Distinguished_Name}}** : Uma sequência de nomes únicos relativos separados por vírgula, por exemplo `CN=Jane Doe,OU=UserAccounts,DC=corp,DC=contoso,DC=com`
 
                 Para utilizar a variável `{{OnPrem_Distinguished_Name}}`, não se esqueça de sincronizar o atributo de utilizador `onpremisesdistingishedname` com o [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) com o seu Azure AD.
 
-            - **CN={{onPremisesSamAccountName}}**: Os administradores podem sincronizar o atributo samAccountName do Active Directory para o Azure AD com o Azure AD connect para um atributo chamado `onPremisesSamAccountName`. O Intune pode substituir essa variável como parte de um pedido de emissão de certificado no requerente de um certificado SCEP.  O atributo samAccountName é o nome de início de sessão de utilizador utilizado para suportar clientes e servidores de uma versão anterior do Windows (anterior ao Windows 2000). O formato do nome de início de sessão do utilizador é: `DomainName\testUser` ou apenas `testUser`.
+            - **CN={{onPremisesSamAccountName}}** : Os administradores podem sincronizar o atributo samAccountName do Active Directory para o Azure AD com o Azure AD connect para um atributo chamado `onPremisesSamAccountName`. O Intune pode substituir essa variável como parte de um pedido de emissão de certificado no requerente de um certificado SCEP.  O atributo samAccountName é o nome de início de sessão de utilizador utilizado para suportar clientes e servidores de uma versão anterior do Windows (anterior ao Windows 2000). O formato do nome de início de sessão do utilizador é: `DomainName\testUser` ou apenas `testUser`.
 
                 Para utilizar a variável `{{onPremisesSamAccountName}}`, não se esqueça de sincronizar o atributo de utilizador `onPremisesSamAccountName` com o [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) com o seu Azure AD.
 
@@ -426,7 +426,7 @@ Para se certificar de que o serviço está em execução, abra um browser e intr
 
         > [!IMPORTANT]
         >  - No texto estático do requerente, as chavetas **{ }** que não incluírem uma variável resultarão num erro. 
-        >  - Ao utilizar uma variável de certificado de dispositivo, coloque a variável entre chavetas **{ }**.
+        >  - Ao utilizar uma variável de certificado de dispositivo, coloque a variável entre chavetas **{ }** .
         >  - `{{FullyQualifiedDomainName}}` só funciona em dispositivos com Windows e dispositivos associados a um domínio. 
         >  -  Ao utilizar as propriedades do dispositivo, tais como o IMEI, o Número de Série e o Nome de Domínio Completamente Qualificado, no requerente ou no SAN de um certificado de dispositivo, tenha em atenção que estas propriedades podem ser falsificadas por uma pessoa que tenha acesso ao dispositivo.
         >  - O perfil não será instalado no dispositivo se as variáveis do dispositivo especificadas não forem suportadas. Por exemplo, se {{IMEI}} for utilizado no nome do requerente do perfil SCEP atribuído a um dispositivo que não tenha um número IMEI, a instalação do perfil irá falhar. 
@@ -468,8 +468,8 @@ Para se certificar de que o serviço está em execução, abra um browser e intr
         Estas variáveis podem ser adicionadas com texto estático na caixa de texto de valor personalizado. Por exemplo, o atributo de DNS pode ser adicionado como `DNS name = {{AzureADDeviceId}}.domain.com`.
 
         > [!IMPORTANT]
-        >  - No texto estático do SAN, as chavetas **{ }**, as barras verticais **|** e os pontos e vírgulas **;** não funcionam. 
-        >  - Ao utilizar uma variável de certificado de dispositivo, coloque a variável entre chavetas **{ }**.
+        >  - No texto estático do SAN, as chavetas **{ }** , as barras verticais **|** e os pontos e vírgulas **;** não funcionam. 
+        >  - Ao utilizar uma variável de certificado de dispositivo, coloque a variável entre chavetas **{ }** .
         >  - `{{FullyQualifiedDomainName}}` só funciona em dispositivos com Windows e dispositivos associados a um domínio. 
         >  -  Ao utilizar as propriedades do dispositivo, tais como o IMEI, o Número de Série e o Nome de Domínio Completamente Qualificado, no requerente ou no SAN de um certificado de dispositivo, tenha em atenção que estas propriedades podem ser falsificadas por uma pessoa que tenha acesso ao dispositivo.
         >  - O perfil não será instalado no dispositivo se as variáveis do dispositivo especificadas não forem suportadas. Por exemplo, se {{IMEI}} for utilizado no nome do requerente do perfil SCEP atribuído a um dispositivo que não tenha um número IMEI, a instalação do perfil irá falhar.  
@@ -484,12 +484,12 @@ Para se certificar de que o serviço está em execução, abra um browser e intr
    - **Utilização de chave**: Introduza as opções de utilização de chave para o certificado. As opções são:
      - **Cifragem de chaves**: Permitir a troca de chaves apenas quando a chave for encriptada
      - **Assinatura digital**: Permitir a troca de chaves apenas quando uma assinatura digital ajudar a proteger a chave
-   - **Tamanho da chave (bits)**: Selecione o número de bits que está contido na chave
+   - **Tamanho da chave (bits)** : Selecione o número de bits que está contido na chave
    - **Algoritmo hash** (Android, Windows Phone 8.1, Windows 8.1, Windows 10): Selecione um dos tipos de algoritmo hash disponíveis para utilizar com este certificado. Selecione o maior nível de segurança que os dispositivos de ligação suportam.
    - **Certificado de raiz**: Selecione um perfil de certificado de AC configurado anteriormente e atribuído para o utilizador e/ou o dispositivo de raiz. Este certificado da AC tem de ser o certificado de raiz da AC que emite o certificado que está a configurar neste perfil de certificado. Certifique-se de que atribuir este perfil de certificado de raiz fidedigna para o mesmo grupo atribuído no perfil de certificado SCEP.
    - **Utilização alargada da chave**: **Adicionar** objetivo de valores para o certificado. Na maioria dos casos, o certificado exige a **Autenticação de Cliente** para o utilizador ou dispositivo poder ser autenticado num servidor. Contudo, pode adicionar mais utilizações de chave conforme necessário.
    - **Definições de Inscrição**
-     - **Limiar de renovação (%)**: Introduza a percentagem da duração do certificado que permanece antes do dispositivo pedir renovação do certificado.
+     - **Limiar de renovação (%)** : Introduza a percentagem da duração do certificado que permanece antes do dispositivo pedir renovação do certificado.
      - **URLs do servidor SCEP**: Introduza um ou mais URLs para os servidores NDES que emitem certificados através de SCEP. Por exemplo, digite algo semelhante a `https://ndes.contoso.com/certsrv/mscep/mscep.dll`.
      - Selecione **OK** e **crie** o seu perfil.
 

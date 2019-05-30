@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/20/2019
+ms.date: 05/28/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: ''
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 26f43523589da0d59afb3b667eb4ead8357f7a60
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 4ce56cb295847385c23f6aca5f86a8a3010e310a
+ms.sourcegitcommit: 95572ed540e90471963833c0bbf71478477b1813
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049031"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66270028"
 ---
 # <a name="bundle-ids-for-built-in-ios-apps-you-can-use-in-intune"></a>IDs de pacote para aplicações iOS incorporadas, que pode utilizar no Intune
 
@@ -59,6 +59,7 @@ Quando configurar funcionalidades em dispositivos iOS, também pode adicionar as
 | com.apple.mobilenotes       | Notas        | Apple     |
 | com.apple.Numbers           | Números      | Apple     |
 | com.apple.Pages             | Páginas        | Apple     |
+| com.apple.mobilephone       | Phone        | Apple     |
 | com.apple.Photo-Booth       | Photo Booth  | Apple     |
 | com.apple.mobileslideshow   | Fotografias       | Apple     |
 | com.apple.podcasts          | Podcasts     | Apple     |

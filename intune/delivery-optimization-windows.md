@@ -14,12 +14,12 @@ ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: kerimh
-ms.openlocfilehash: d927c886bbb3f82c18d5873a86fc427d00d96337
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 4190d84fda46e4be3cdc4c4f7bfe4ac8a1852ebc
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66042638"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66373940"
 ---
 # <a name="delivery-optimization-settings-in-microsoft-intune"></a>Definições de otimização de entrega no Microsoft Intune
 
@@ -36,7 +36,7 @@ Para saber mais sobre a otimização de entrega no Windows 10, veja [otimizaçã
 > **Atualizações de software-Cadências de atualização do Windows 10** são substituídos pela **Otimização da entrega** definições. Os anéis de atualização existente podem ser alterados para utilizar o **Otimização da entrega** definições. [Mover cadências de atualização existente para otimização de entrega](#move-existing-update-rings-to-delivery-optimization) (neste artigo) 
 ## <a name="create-the-profile"></a>Criar o perfil
 
-1. No [portal do Azure](https://portal.azure.com), selecione **Todos os Serviços** > filtre o **Intune** > selecione **Intune**.
+1. Inicie sessão no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 
 2. Selecione **Configuração do dispositivo** > **Perfis** > **Criar Perfil**.
 

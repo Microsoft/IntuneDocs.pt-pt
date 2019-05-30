@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/18/2019
+ms.date: 05/29/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 18f8e072037d0ca9065201e0d0db2a9a2f6074ce
-ms.sourcegitcommit: 0f771585d3556c0af14500428d5c4c13c89b9b05
+ms.openlocfilehash: 2950ddf4b130222e23fd9ea23f7c9e5793f8638a
+ms.sourcegitcommit: 229816afef86a9767eaca816d644c77ec4babed5
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66174190"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66354223"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Definições de dispositivos de 10 (e versões posteriores) do Windows para permitir ou restringir funcionalidades com o Intune
 
@@ -58,6 +58,24 @@ Utilizam estas definições a [ApplicationManagement política CSP](https://docs
 - **Instalar aplicações na unidade do sistema**: **Bloco** impede que aplicações instalação na unidade do sistema no dispositivo. **Não configurado** (predefinição) permite que as aplicações instalar na unidade do sistema.
 - **Gravador de jogo** (apenas ambiente de trabalho): **Bloco** desativa o jogo do Windows gravação e a difusão. **Não configurado** (predefinição) permite que a gravação e a difusão de jogos.
 - **As aplicações da loja apenas**: **Exigir** força os utilizadores finais para instalarem apenas aplicações da Store de aplicação do Windows. **Não configurado** permite aos utilizadores finais instalar aplicações a partir de outros locais que não o Store de aplicação do Windows.
+- **Aplicações em caso de falha de atualização de reiniciar a força**: Quando uma aplicação está a ser utilizada, não poderá atualizar. Utilize esta definição para forçar uma aplicação a reiniciar. **Não configurado** (predefinição) não força as aplicações para reiniciar. **Exigir** permite aos administradores forçar a reinicialização numa data e hora específicas ou numa agenda periódica. Quando definido como **requerem**, também introduzir:
+
+  - **Data/hora de início**: Escolha uma data e hora específicas para reiniciar as aplicações.
+  - **Periodicidade**: Escolher um diárias, semanais ou mensais reiniciar.
+
+  [ApplicationManagement/ScheduleForceRestartForUpdateFailures CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures)
+
+- **Controle de usuário sobre instalações**: Quando definido como **não configurado** (predefinição), o Windows Installer impedir os utilizadores de alterar as opções de instalação normalmente reservadas para os administradores de sistema, por exemplo, introduzir o diretório para instalar os ficheiros. **Bloco** permite que os usuários alterar estas opções de instalação e alguns dos recursos de segurança do Windows Installer são ignorados.
+
+  [ApplicationManagement/MSIAllowUserControlOverInstall CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-msiallowusercontroloverinstall)
+
+- **Instalar aplicações com privilégios elevados**: Quando definido como **não configurado** (predefinição), o sistema aplica-se as permissões do utilizador atual quando instalar programas que um administrador de sistema não implementar ou oferta. **Bloco** direciona o Windows Installer para utilizar permissões elevadas, quando instalar qualquer programa no sistema. Esses privilégios são expandidos para todos os programas.
+
+  [ApplicationManagement/MSIAlwaysInstallWithElevatedPrivileges CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-msialwaysinstallwithelevatedprivileges)
+
+- **Aplicações de arranque**: Introduza uma lista de aplicações para abrir depois de um utilizador inicia sessão no dispositivo. Certifique-se de que utiliza uma lista delimitada ponto e vírgula de pacote de nomes da família (PFN) de aplicativos do Windows. Para esta política funcionar, o manifesto nas aplicações do Windows tem de utilizar uma tarefa de arranque.
+
+  [ApplicationManagement/LaunchAppAfterLogOn CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-launchappafterlogon)
 
 Selecione **OK** para guardar as alterações.
 
@@ -408,6 +426,10 @@ Utilizam estas definições a [DeviceLock política CSP](https://docs.microsoft.
     - **Numérica**: Palavra-passe tem de ser apenas números.
     - **Alfanumérica**: Palavra-passe tem de ser uma combinação de números e letras.
   - **Comprimento mínimo da palavra-passe**: Introduza o número mínimo ou carateres necessários, a partir de 4 a 16. Por exemplo, introduza `6` para exigir pelo menos seis caracteres de comprimento de palavra-passe.
+  
+    > [!IMPORTANT]
+    > Quando o requisito de palavra-passe é alterado numa área de trabalho do Windows, os utilizadores são afetados da próxima vez que iniciarem sessão, à medida que tem quando o dispositivo vai da inatividade como ativa. Os utilizadores com palavras-passe que cumprem o requisito de ainda são-lhe pedidos para alterar as palavras-passe.
+    
   - **Número de falhas de início de sessão antes de apagar o dispositivo**: Introduza o número de falhas de autenticação permitidas antes do dispositivo é apagado, a partir de 1 a 11. `0` (zero), pode desativar a funcionalidade de eliminação do dispositivo.
 
     Esta definição não tem um impacto diferente, dependendo da edição. Para obter detalhes específicos, consulte a [DeviceLock/MaxDevicePasswordFailedAttempts CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts).
@@ -755,7 +777,7 @@ Utilizam estas definições a [CSP de política de defender](https://docs.micros
 
   Para obter mais informações sobre aplicações potencialmente indesejadas, veja [detetar e bloquear aplicações potencialmente indesejável](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus).
 
-- **Ações sobre ameaças de software maligno detetado**: Escolha as ações que o Defender deve executar para cada nível de ameaças Deteta: baixo, moderado, alto e grave. As opções são:
+- **Ações sobre ameaças de software maligno detetado**: Escolha as ações que o Defender deve executar para cada nível de ameaças Deteta: baixo, moderado, alto e grave. Se não for possível, o Windows Defender escolhe a melhor opção para garantir que a ameaça é corrigida. As opções são:
   - **Limpar**
   - **Quarentena**
   - **Remove**

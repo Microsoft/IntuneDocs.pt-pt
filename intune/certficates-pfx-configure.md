@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 02a5a7bd3625b5e95ddb304df7cf64461cca9c10
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: cf6febf0ead541e1346cc095bb14437083dd5d64
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049129"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66373748"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>Configurar e utilizar certificados PKCS com o Intune
 
@@ -160,7 +160,7 @@ Para autenticar um dispositivo com VPN, Wi-Fi ou outros recursos, um dispositivo
 
 ### <a name="pfx-certificate-connector-for-microsoft-intune"></a>PFX Certificate Connector for Microsoft Intune
 
-1. No [portal do Azure](https://portal.azure.com), selecione **Todos os serviços**, filtre o **Intune** e selecione **Microsoft Intune**.
+1. Inicie sessão no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Selecione **configuração do dispositivo** > **conectores de certificação** > **adicionar**
 3. Transfira e instale o PFX Certificate Connector for Microsoft Intune. Guarde-o numa localização acessível a partir do servidor onde vai instalar o conector.
 4. Após a transferência ser concluída, inicie sessão no servidor. Em seguida:
@@ -207,9 +207,9 @@ Para autenticar um dispositivo com VPN, Wi-Fi ou outros recursos, um dispositivo
 
 3. Aceda a **Definições** e introduza as seguintes propriedades:
 
-    - **Limiar de renovação (%)**: Recomendado é de 20%.
+    - **Limiar de renovação (%)** : Recomendado é de 20%.
     - **Período de validade do certificado**: Se não alterar o modelo de certificado, esta opção pode ser definida para um ano.
-    - **Fornecedor de armazenamento de chaves (KSP)**: Para Windows, selecione onde pretende armazenar as chaves no dispositivo.
+    - **Fornecedor de armazenamento de chaves (KSP)** : Para Windows, selecione onde pretende armazenar as chaves no dispositivo.
     - **Autoridade de certificação**: Apresenta o nome de domínio completamente qualificado (FQDN) interno da AC empresarial.
     - **Nome da autoridade de certificação**: Lista o nome da AC empresarial, como "Autoridade de certificação de Contoso".
     - **Nome do modelo de certificado**: O nome do modelo criado anteriormente. Nota: por predefinição, o **Nome do modelo** é igual ao **Nome a apresentar do modelo** *sem espaços*.
@@ -239,7 +239,7 @@ Após importar certificados para o Intune, crie um perfil de **certificado PKCS 
 
     - **Finalidade suposta**: A finalidade dos certificados que são importados para este perfil. Um administrador poderá ter importado certificados com finalidades diferentes (por exemplo, autenticação, assinatura S/MIME ou encriptação S/MIME). A finalidade selecionada no perfil do certificado corresponde ao perfil do certificado com os certificados importados adequados.
     - **Período de validade do certificado**: Se não alterar o modelo de certificado, esta opção pode ser definida para um ano.
-    - **Fornecedor de armazenamento de chaves (KSP)**: Para Windows, selecione onde pretende armazenar as chaves no dispositivo.
+    - **Fornecedor de armazenamento de chaves (KSP)** : Para Windows, selecione onde pretende armazenar as chaves no dispositivo.
 
 4. Selecione **OK** > **Criar** para guardar o perfil.
 5. Para atribuir o novo perfil a um ou mais dispositivos, veja [Atribuir perfis de dispositivo no Microsoft Intune](device-profile-assign.md).

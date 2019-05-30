@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/17/2019
+ms.date: 05/29/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: feb2bda30547779680a001b3c598b54d236f70ed
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 0e4d5c23d598641256c196cd7217797f87f99d1c
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045109"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66374138"
 ---
 # <a name="create-a-windows-10-security-baseline-in-intune"></a>Criar uma linha de base de segurança do Windows 10 no Intune
 
@@ -54,7 +54,8 @@ As seguintes linhas de base de segurança estão disponíveis para utilização 
   [Ver as definições](security-baseline-settings-windows.md)
 
 - **PRÉ-VISUALIZAÇÃO: Linha de base do Windows Defender ATP**  
-  [Ver as definições](security-baseline-settings-defender-atp.md)
+  [Ver as definições](security-baseline-settings-defender-atp.md)  
+  *(Esta linha de base está disponível quando o seu ambiente cumpre os pré-requisitos de utilização [a proteção de ameaças avançada do Microsoft Defender](advanced-threat-protection.md#prerequisites))* .
 
 
 ## <a name="prerequisites"></a>Pré-requisitos
@@ -69,11 +70,12 @@ Ao utilizar dispositivos cogeridos, tem de mudar a **configuração do dispositi
 
 ## <a name="create-the-profile"></a>Criar o perfil
 
-1. Inicie sessão no [Intune](https://go.microsoft.com/fwlink/?linkid=20909) e, em seguida, selecione **segurança do dispositivo** > **linhas de base de segurança (pré-visualização)**. Está disponível uma lista de linhas de base disponíveis. 
+1. Inicie sessão no [Intune](https://go.microsoft.com/fwlink/?linkid=20909) e, em seguida, selecione **segurança do dispositivo** > **linhas de base de segurança (pré-visualização)** . Está disponível uma lista de linhas de base disponíveis. 
 
     ![Selecione uma linha de base de segurança para configurar](./media/security-baselines/available-baselines.png)
 
-
+   >[!TIP]  
+   > A linha de base do Windows Defender ATP está disponível quando o seu ambiente cumpre os pré-requisitos de utilização [a proteção de ameaças avançada do Microsoft Defender](advanced-threat-protection.md#prerequisites).
 2. Selecione a linha de base que pretende utilizar e, em seguida, selecione **criar perfil**.  
 
 3. Sobre o **Noções básicas** separador, especifique as seguintes propriedades:

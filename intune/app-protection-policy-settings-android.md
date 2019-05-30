@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/14/2019
+ms.date: 05/28/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,16 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a4d6331083256ab5c658519854459cdb07056466
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: a9f421a54319878c4f985ecc08252d4e03a00919
+ms.sourcegitcommit: 95572ed540e90471963833c0bbf71478477b1813
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049712"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66270001"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Definições de políticas de proteção de aplicações Android no Microsoft Intune
 Este artigo descreve as definições de políticas de proteção de aplicações para dispositivos Android. As definições de políticas descritas podem ser [configuradas](app-protection-policies.md) para uma política de proteção de aplicações no painel **Definições** no portal do Azure.
 Existem três categorias de definições de política: definições de proteção de dados, requisitos de acesso e iniciação condicional. Neste artigo, o termo *aplicações geridas por políticas* menciona as aplicações configuradas com políticas de proteção de aplicações.
+
+> [!IMPORTANT]
+> O Portal da empresa do Intune é necessário no dispositivo para receber políticas de proteção de aplicações para dispositivos Android. Para obter mais informações, veja os [Requisitos das aplicações de acesso ao Portal da Empresa do Intune](end-user-mam-apps-android.md).
 
 ##  <a name="data-protection"></a>Proteção de dados 
 ### <a name="data-transfer"></a>Transferência de Dados

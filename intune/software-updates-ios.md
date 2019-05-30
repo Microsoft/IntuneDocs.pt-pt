@@ -12,12 +12,12 @@ ms.localizationpriority: high
 ms.technology: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cf07f942feeab0a73c01625f90c04ec3b989c1c2
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 5a5c9dea847ace51c7d6f06cfa43c44beead18f8
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66044844"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66373423"
 ---
 # <a name="add-ios-software-update-policies-in-intune"></a>Adicionar políticas de atualização de software iOS no Intune
 
@@ -31,7 +31,7 @@ O dispositivo comunica com o Intune aproximadamente de 8 em 8 horas. Se uma atua
 
 ## <a name="configure-the-policy"></a>Configurar a política
 
-1. No [portal do Azure](https://portal.azure.com), selecione **Todos os serviços** > filtre o **Intune** > selecione  **Intune**.
+1. Inicie sessão no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Selecione **Atualizações de Software** > **Atualizar políticas para iOS** > **Criar**.
 3. Introduza as seguintes definições:
 
@@ -51,7 +51,7 @@ O dispositivo comunica com o Intune aproximadamente de 8 em 8 horas. Se uma atua
       - **Hora de início**: Escolha a hora de início do intervalo de tempo limitado. Por exemplo, introduza 5 AM, para que as atualizações não são instaladas a partir de às 05:00.
       - **Hora de fim**: Escolha a hora de fim do período de tempo limitado. Por exemplo, introduza 1 AM, para que as atualizações podem ser instaladas a partir de 1 AM.
 
-    - **Atrasar a visibilidade das atualizações de software para os usuários finais sem alterações atualizações agendadas (dias)**: 
+    - **Atrasar a visibilidade das atualizações de software para os usuários finais sem alterações atualizações agendadas (dias)** : 
 
       **Esta definição movida para [restrições de dispositivos](device-restrictions-ios.md#general). Esta será removida a partir desta localização no portal do**. Para um curto período de tempo, as políticas existentes podem ser alteradas aqui. Depois de sobre um mês, esta definição será removida das políticas existentes.
 

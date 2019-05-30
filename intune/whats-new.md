@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 044ced57d9dd2e3e4b86548540090de35b88a6b0
-ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
-ms.translationtype: MT
+ms.openlocfilehash: 25a3acda374266a0fbd16feabde7787204555ea2
+ms.sourcegitcommit: 876719180e0d73b69fc053cf67bb8cc40b364056
+ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66197084"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66264175"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 
@@ -57,7 +57,7 @@ A aplicação Portal da empresa de Windows terá agora uma nova página rotulada
 
 #### <a name="autopilot-device-orderid-attribute-name-changed-to-group-tag----4659453---"></a>Autopilot OrderID atributo nome do dispositivo foi alterado para a etiqueta de grupo <!-- 4659453 -->
 
-Para torná-lo mais intuitivo, o **OrderID** nome de atributo em dispositivos Autopilot foi alterada para **etiqueta de grupo**. Quando utilizar CSVs para carregar as informações de dispositivo do Autopilot, tem de utilizar a etiqueta de grupo como no cabeçalho da coluna, não OrderID. Caso contrário, o carregamento falhará. OrderID será novamente introduzida para acomodar os clientes herdados ou scripts. No entanto, a etiqueta de grupo será o padrão mais adiante.
+Para torná-lo mais intuitivo, o **OrderID** nome de atributo em dispositivos Autopilot foi alterada para **etiqueta de grupo**. Quando utilizar CSVs para carregar as informações de dispositivo do Autopilot, tem de utilizar a etiqueta de grupo como no cabeçalho da coluna, não OrderID.  
 
 ## <a name="week-of-may-13-2019"></a>Semana de 13 de Maio de 2019 
 
@@ -592,8 +592,8 @@ Android Enterprise
 #### <a name="safari-and-delaying-user-software-update-visibility-ios-settings-are-moving-in-the-intune-ui----3640850-3803313-----"></a>Safari e Delaying utilizador atualização de software iOS visibilidade definições estão a ser movidos na IU do Intune <!-- 3640850, 3803313   -->
 Para dispositivos iOS, pode configurar as definições do Safari e configurar atualizações de Software. Nesta atualização, estas definições estão a ser movidos para diferentes partes da IU do Intune:
 
-- As definições do Safari movidas de **Safari** (**configuração do dispositivo** > **perfis** > **novo perfil**  >  **iOS** para a plataforma > **restrições de dispositivos** para o tipo de perfil) para  **[aplicações incorporadas](device-restrictions-ios.md#built-in-apps)**.
-- O **atrasar a visibilidade de atualização de software de utilizador para supervisionado dispositivos iOS** definição (**atualizações de Software** > **atualizar políticas para iOS**) está a mudar para  **Restrições de dispositivos** > **[geral](device-restrictions-ios.md#general)**.  Para obter detalhes sobre o impacto para as políticas existentes, consulte [atualizações de software iOS](software-updates-ios.md#configure-the-policy). 
+- As definições do Safari movidas de **Safari** (**configuração do dispositivo** > **perfis** > **novo perfil**  >  **iOS** para a plataforma > **restrições de dispositivos** para o tipo de perfil) para  **[aplicações incorporadas](device-restrictions-ios.md#built-in-apps)** .
+- O **atrasar a visibilidade de atualização de software de utilizador para supervisionado dispositivos iOS** definição (**atualizações de Software** > **atualizar políticas para iOS**) está a mudar para  **Restrições de dispositivos** >  **[geral](device-restrictions-ios.md#general)** .  Para obter detalhes sobre o impacto para as políticas existentes, consulte [atualizações de software iOS](software-updates-ios.md#configure-the-policy). 
 
 Para obter uma lista das definições, consulte:
 

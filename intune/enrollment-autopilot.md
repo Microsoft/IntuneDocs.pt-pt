@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7aeda02cae01e989041ec41b54186d62988f592d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 03d5d4b9cb69e2d95706357280e324c58656a866
+ms.sourcegitcommit: 876719180e0d73b69fc053cf67bb8cc40b364056
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047895"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66264138"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Inscrever dispositivos Windows no Intune com o Windows Autopilot  
 O Windows Autopilot simplifica a inscrição de dispositivos no Intune. A criação e manutenção de imagens personalizadas do sistema operativo são um processo moroso. Também poderá demorar a aplicar estas imagens personalizadas do sistema operativo a novos dispositivos para as preparar para utilização antes de as disponibilizar aos seus utilizadores finais. Com o Microsoft Intune e o Autopilot, pode fornecer novos dispositivos aos seus utilizadores finais sem ter de criar, manter e aplicar imagens de sistema operativo personalizadas aos dispositivos. Ao utilizar o Intune para gerir dispositivos do Autopilot, pode gerir políticas, perfis, aplicações, entre outros, após estes serem inscritos. Para uma descrição geral das vantagens, cenários e pré-requisitos, veja [Descrição geral do Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
@@ -94,6 +94,9 @@ Os perfis de implementação do Autopilot são utilizados para configurar os dis
 7. Configure as seguintes opções:
     - **O contrato de licença de utilizador final (EULA)**: (Windows 10, versão 1709 ou posterior) Escolha se pretende mostrar o EULA aos utilizadores.
     - **As definições de privacidade**: Escolha se pretende mostrar as definições de privacidade aos utilizadores.
+    >[!IMPORTANT]
+    >Para implementações do Autopilot em dispositivos de 1903 de versão do Windows 10 e posterior, o padrão de dados de diagnóstico é automaticamente definido como completo. Para obter mais informações, consulte [dados de diagnóstico do Windows](https://docs.microsoft.com/en-us/windows/privacy/windows-diagnostic-data) <br>
+    
     - **Ocultar alterar as opções de conta (requer o Windows 10, versão 1809 ou posterior)**: Escolher **ocultar** para impedir que alterar as opções de conta de ser apresentado nas páginas de erro de início de sessão e o domínio de empresa. Esta opção requer a [configuração da imagem corporativa da empresa no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding).
     - **Tipo de conta de utilizador**: Escolha o tipo de conta do usuário (**administrador** ou **padrão** utilizador).
     - **Permitir meticulosa OOBE**: Escolher **Sim** para permitir que o suporte de meticulosa.

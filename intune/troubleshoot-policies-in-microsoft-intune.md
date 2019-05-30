@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a0f8e9e7fec0bea759d408f3ca3d94aa46748bf8
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 9085cff7e305f7081a3048637c80df43e22d2ee9
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66044600"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66374123"
 ---
 # <a name="troubleshoot-policies-and-profiles-and-in-intune"></a>Resolver problemas de políticas e perfis e no Intune
 
@@ -32,7 +32,7 @@ Este artigo apresenta uma lista de algumas técnicas de resolução de problemas
 
 ## <a name="use-built-in-troubleshooting"></a>Utilizar a resolução de problemas interna
 
-1. No [portal do Azure](https://portal.azure.com), selecione **Todos os serviços** > filtre o **Intune** > selecione  **Intune**.
+1. Inicie sessão no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Selecione **resolver problemas de**:
 
     ![No Intune, aceda a ajuda e suporte e selecione a resolução de problemas](./media/help-and-support-troubleshoot.png)
@@ -98,7 +98,7 @@ Este artigo apresenta uma lista de algumas técnicas de resolução de problemas
 
 ## <a name="youre-unsure-if-a-profile-is-correctly-applied"></a>Certeza se um perfil é aplicado corretamente
 
-1. No [portal do Azure](https://portal.azure.com), selecione **Todos os serviços** > filtre o **Intune** > selecione  **Intune**.
+1. Inicie sessão no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Selecione **dispositivos** > **todos os dispositivos** > selecione o dispositivo > **configuração do dispositivo**. 
 
     Todos os dispositivos apresenta uma lista de seus perfis. Cada perfil tem um **estado**. O estado aplica-se quando todos os perfis atribuídos, incluindo requisitos de hardware e restrições do sistema operacional e, são considerados em conjunto. Estados possíveis incluem:
