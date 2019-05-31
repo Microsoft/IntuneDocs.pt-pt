@@ -652,14 +652,14 @@
               href: review-logs-using-azure-monitor.md
             - name: Rever registos de proteção de aplicações
               href: app-protection-policy-settings-log.md
-            - name: Resolver problemas relacionados com perfis de e-mail
+            - name: Troubleshoot policies and profiles (Resolução de problemas de políticas e perfis)
+              href: troubleshoot-policies-in-microsoft-intune.md
+            - name: Problemas e respetivas soluções de perfis de e-mail
               href: troubleshoot-email-profiles-in-microsoft-intune.md
             - name: Resolver problemas de atualizações de software
               href: troubleshoot-software-updates-in-microsoft-intune.md
-            - name: Resolução de problemas do endpoint protection
+            - name: Erros comuns da proteção de pontos finais
               href: troubleshoot-endpoint-protection-in-microsoft-intune.md
-            - name: Troubleshoot policies and profiles (Resolução de problemas de políticas e perfis)
-              href: troubleshoot-policies-in-microsoft-intune.md
             - name: Resolver problemas de acesso condicional
               href: troubleshoot-conditional-access.md
             - name: Resolução de problemas do conector do Exchange
@@ -825,6 +825,10 @@
                   href: vpn-settings-windows-phone-8-1.md
                 - name: Personalizar
                   href: custom-settings-windows-phone-8-1.md
+    - name: Códigos de erro e descrições
+      items:
+        - name: Erros de atualizações de software
+          href: software-update-agent-error-codes.md
     - name: Orientação para programadores
       items:
         - name: API para adicionar uma autoridade de certificação de terceiros
