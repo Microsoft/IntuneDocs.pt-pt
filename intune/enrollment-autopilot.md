@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 03d5d4b9cb69e2d95706357280e324c58656a866
-ms.sourcegitcommit: 876719180e0d73b69fc053cf67bb8cc40b364056
+ms.openlocfilehash: d58a10e62e4ff65c0c1589fcf948a6704224bc51
+ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66264138"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402753"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Inscrever dispositivos Windows no Intune com o Windows Autopilot  
 O Windows Autopilot simplifica a inscrição de dispositivos no Intune. A criação e manutenção de imagens personalizadas do sistema operativo são um processo moroso. Também poderá demorar a aplicar estas imagens personalizadas do sistema operativo a novos dispositivos para as preparar para utilização antes de as disponibilizar aos seus utilizadores finais. Com o Microsoft Intune e o Autopilot, pode fornecer novos dispositivos aos seus utilizadores finais sem ter de criar, manter e aplicar imagens de sistema operativo personalizadas aos dispositivos. Ao utilizar o Intune para gerir dispositivos do Autopilot, pode gerir políticas, perfis, aplicações, entre outros, após estes serem inscritos. Para uma descrição geral das vantagens, cenários e pré-requisitos, veja [Descrição geral do Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
@@ -47,7 +47,7 @@ Pode adicionar dispositivos Windows Autopilot ao importar um ficheiro CSV com as
 
     ![Captura de ecrã dos dispositivos Windows Autopilot](media/enrollment-autopilot/autopilot-import-device.png)
 
-2. Em **Adicionar Dispositivos do Windows Autopilot**, procure um ficheiro CSV que liste os dispositivos que pretende adicionar. O ficheiro CSV deve listar os números de série, IDs de produtos de Windows opcional, hashes de hardware e etiquetas de grupo opcional dos dispositivos. Pode ter até 500 linhas na lista. Utilize o cabeçalho e o formato de linha mostrado abaixo: `Device Serial Number,Windows Product ID,Hardware Hash,GroupTag`
+2. Em **Adicionar Dispositivos do Windows Autopilot**, procure um ficheiro CSV que liste os dispositivos que pretende adicionar. O ficheiro CSV deve listar os números de série, IDs de produtos de Windows opcional, hashes de hardware e etiquetas de grupo opcional dos dispositivos. Pode ter até 500 linhas na lista. Utilize o cabeçalho e o formato de linha mostrado abaixo: `Device Serial Number,Windows Product ID,Hardware Hash,Group Tag`
     `<serialNumber>,<optionalProductID>,<hardwareHash>,<optionalGroupTag>`
 
     ![Captura de ecrã de Adicionar dispositivos Windows Autopilot](media/enrollment-autopilot/autopilot-import-device2.png)
@@ -86,22 +86,22 @@ Os perfis de implementação do Autopilot são utilizados para configurar os dis
 4. Selecione **Seguinte**.
 5. Sobre o **experiência de Out-of-box (OOBE)** página, para **modo de implementação**, escolha uma destas duas opções:
     - **Controlada pelo usuário**: Os dispositivos com este perfil estão associados ao utilizador que inscreve o dispositivo. Precisa de credenciais de utilizador para inscrever o dispositivo.
-    - **Implantação automática (pré-visualização)**: (requer o Windows 10, versão 1809 ou posterior) dispositivos com este perfil não estão associados com o utilizador a inscrição do dispositivo. Não são necessárias credenciais de utilizador para inscrever o dispositivo.
+    - **Implantação automática (pré-visualização)** : (requer o Windows 10, versão 1809 ou posterior) dispositivos com este perfil não estão associados com o utilizador a inscrição do dispositivo. Não são necessárias credenciais de utilizador para inscrever o dispositivo.
 
     ![Página de captura de ecrã de OOBE](media/enrollment-autopilot/create-profile-outofbox.png)
 
 6. Na caixa **Aderir ao Azure AD como**, selecione **Associado ao Azure AD**.
 7. Configure as seguintes opções:
-    - **O contrato de licença de utilizador final (EULA)**: (Windows 10, versão 1709 ou posterior) Escolha se pretende mostrar o EULA aos utilizadores.
+    - **O contrato de licença de utilizador final (EULA)** : (Windows 10, versão 1709 ou posterior) Escolha se pretende mostrar o EULA aos utilizadores.
     - **As definições de privacidade**: Escolha se pretende mostrar as definições de privacidade aos utilizadores.
     >[!IMPORTANT]
     >Para implementações do Autopilot em dispositivos de 1903 de versão do Windows 10 e posterior, o padrão de dados de diagnóstico é automaticamente definido como completo. Para obter mais informações, consulte [dados de diagnóstico do Windows](https://docs.microsoft.com/en-us/windows/privacy/windows-diagnostic-data) <br>
     
-    - **Ocultar alterar as opções de conta (requer o Windows 10, versão 1809 ou posterior)**: Escolher **ocultar** para impedir que alterar as opções de conta de ser apresentado nas páginas de erro de início de sessão e o domínio de empresa. Esta opção requer a [configuração da imagem corporativa da empresa no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding).
+    - **Ocultar alterar as opções de conta (requer o Windows 10, versão 1809 ou posterior)** : Escolher **ocultar** para impedir que alterar as opções de conta de ser apresentado nas páginas de erro de início de sessão e o domínio de empresa. Esta opção requer a [configuração da imagem corporativa da empresa no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding).
     - **Tipo de conta de utilizador**: Escolha o tipo de conta do usuário (**administrador** ou **padrão** utilizador).
     - **Permitir meticulosa OOBE**: Escolher **Sim** para permitir que o suporte de meticulosa.
     - **Aplicar modelo de nome de dispositivo**: Escolher **Sim** para criar um modelo a utilizar quando um dispositivo de nomenclatura durante a inscrição. Os nomes têm de ter 15 carateres ou menos e podem conter letras, números e hífenes. Não podem conter apenas números. Utilize a [macro %SERIAL%](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) para adicionar um número de série específico de hardware. Em alternativa, utilize a [macro %RAND:x%](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) para adicionar uma cadeia de números aleatória na qual x corresponde ao número de dígitos a adicionar. 
-    - **Idioma (região)**\*: Escolha o idioma a utilizar para o dispositivo. Esta opção só está disponível se tiver optado pela **Implementação personalizada** no **Modo de implementação**.
+    - **Idioma (região)** \*: Escolha o idioma a utilizar para o dispositivo. Esta opção só está disponível se tiver optado pela **Implementação personalizada** no **Modo de implementação**.
     - **Configurar automaticamente o teclado**\*: Se um **idioma (região)** é selecionado, escolha **Sim** para ignorar a página de seleção do teclado. Esta opção só está disponível se tiver optado pela **Implementação personalizada** no **Modo de implementação**.
 8. Selecione **Seguinte**.
 9. Sobre o **etiquetas de âmbito** página, pode optar por adicionar as etiquetas de âmbito que pretende aplicar a este perfil. Para obter mais informações sobre etiquetas de âmbito, veja [utilizar etiquetas de controle e o âmbito de acesso baseado em funções para distribuído IT](scope-tags.md).

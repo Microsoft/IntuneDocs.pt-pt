@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b11829bad3091b24bead99afc08dc5cdc01f0a0c
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 60f2368fc8c6d4f8e2713a8386ccdd7e5958ac6b
+ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047651"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66412624"
 ---
 # <a name="add-groups-to-organize-users-and-devices"></a>Adicionar grupos para organizar utilizadores e dispositivos
 O Intune utiliza grupos do Azure Active Directory (AD) para gerir dispositivos e utilizadores. Como administrador do Intune, pode configurar grupos para se adaptarem às suas necessidades organizacionais. Crie grupos para organizar utilizadores ou dispositivos por localização geográfica, departamento ou características de hardware. Utilize grupos para gerir tarefas em escala. Por exemplo, pode definir políticas para vários utilizadores ou implementar aplicações num conjunto de dispositivos.
@@ -34,8 +34,7 @@ Pode adicionar os seguintes tipos de grupos:
 ## <a name="add-a-new-group"></a>Adicionar um novo grupo
 
 Utilize os seguintes passos para criar um novo grupo.
-1. Inicie sessão no [Portal do Azure](https://portal.azure.com).
-2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
+1. Inicie sessão no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. No painel **Intune**, selecione **Grupos** e, em seguida, selecione **Novo grupo** no painel **Todos os grupos**.
    ![Captura de ecrã do portal do Azure com a opção Novo Grupo selecionada](./media/groups-add-new.png)
 4. Para **tipo de grupo**, escolha uma das seguintes opções:

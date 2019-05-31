@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 894ce1fcf270af0169661359c2ab088bb30fab62
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 733ac8eee551a3ddba7a5219827c09357659a06e
+ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041164"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66412715"
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>Obter dados a partir da API do Armazém de Dados do Intune com um cliente REST
 
@@ -94,9 +94,8 @@ Precisa das seguintes informações para efetuar uma chamada REST através do Po
 
 Também precisa do ponto final. Para obter o ponto final do Armazém de Dados, precisará do URL de feed personalizado. Pode obter o ponto final de OData no painel do Armazém de Dados.
 
-1. Inicie sessão no [Portal do Azure](https://portal.azure.com).
-2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
-3. Selecione **Definir o Armazém de Dados do Intune** em **Outras tarefas**.
+1. Inicie sessão no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+3. Abra o **armazém de dados do Intune** painel ao selecionar a ligação de armazém de dados em **outras tarefas** no lado direito do **descrição geral do Microsoft Intune –** painel.
 4. Copie o URL de feed personalizado em **Utilize os serviços de relatórios de terceiros**. Deverá ter o seguinte aspeto: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=v1.0`
 
 O ponto final segue o formato seguinte: `https://fef.{yourtenant}.manage.microsoft.com/ReportingService/DataWarehouseFEService/{entity}?api-version={verson-number}`
@@ -116,7 +115,7 @@ Para obter um novo token de acesso do Postman, tem de adicionar o URL de autoriz
 3.  Cole o URL do ponto final no endereço. Deverá ter o seguinte aspeto:  
 
     `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=v1.0`
-4.  Selecione o separador **Authorization (Autorização)** e **OAuth 2.0** a partir da lista **Type (Tipo)**.
+4.  Selecione o separador **Authorization (Autorização)** e **OAuth 2.0** a partir da lista **Type (Tipo)** .
 5.  Selecione **Obter Novo Token de Acesso**.
 6.  Certifique-se de que já adicionou o URL de Chamada de Retorno para a sua aplicação no Azure. O URL de Chamada de Retorno é `https://www.getpostman.com/oauth2/callback`.
 7.  Escreva Portador no **Nome do Token**.
@@ -155,9 +154,9 @@ O seguinte exemplo inclui um cliente REST simples. O código utiliza a classe **
 > Pode aceder ao seguinte [exemplo de código no GitHub](https://github.com/Microsoft/Intune-Data-Warehouse/blob/master/Samples/CSharp/Program.cs). Consulte o repositório do GitHub para obter as alterações e atualizações mais recentes ao exemplo.
 
 1. Abra o **Microsoft Visual Studio**.
-2. Selecione **Ficheiro** > **Novo Projeto**. Expanda o **Visual C#** e selecione **Aplicação de Consola (.Net Framework)**.
+2. Selecione **Ficheiro** > **Novo Projeto**. Expanda o **Visual C#** e selecione **Aplicação de Consola (.Net Framework)** .
 3. Atribua o nome ` IntuneDataWarehouseSamples` ao projeto, navegue até à localização onde pretende guardar o projeto e, em seguida, selecione **OK**.
-4. Clique com o botão direito do rato no nome da solução no Explorador de Soluções e, em seguida, selecione **Manage NuGet Packages for Solution (Gerir Pacotes NuGet para Solução)**. Selecione **Procurar** e, em seguida, escreva `Microsoft.IdentityModel.Clients.ActiveDirectory` na caixa de pesquisa.
+4. Clique com o botão direito do rato no nome da solução no Explorador de Soluções e, em seguida, selecione **Manage NuGet Packages for Solution (Gerir Pacotes NuGet para Solução)** . Selecione **Procurar** e, em seguida, escreva `Microsoft.IdentityModel.Clients.ActiveDirectory` na caixa de pesquisa.
 5. Escolha o pacote, selecione o projeto **IntuneDataWarehouseSamples** em Gerir Pacotes da Sua Solução e, em seguida, selecione **Instalar**.
 6. Selecione **Aceito** para aceitar a licença do pacote NuGet.
 7. Abra o `Program.cs` a partir do Explorador de Soluções.

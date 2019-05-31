@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/29/2019
+ms.date: 05/29/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9085cff7e305f7081a3048637c80df43e22d2ee9
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: 1bed0fda1c19df181dacb36c832a2a4c94e61aff
+ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66374123"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402669"
 ---
 # <a name="troubleshoot-policies-and-profiles-and-in-intune"></a>Resolver problemas de políticas e perfis e no Intune
 
@@ -32,13 +32,12 @@ Este artigo apresenta uma lista de algumas técnicas de resolução de problemas
 
 ## <a name="use-built-in-troubleshooting"></a>Utilizar a resolução de problemas interna
 
-1. Inicie sessão no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selecione **resolver problemas de**:
+1. Na [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), selecione **resolução de problemas**:
 
     ![No Intune, aceda a ajuda e suporte e selecione a resolução de problemas](./media/help-and-support-troubleshoot.png)
 
-3. Escolher **selecionar utilizador** > selecione o utilizador tenha um problema > **selecione**.
-4. Confirme que **licença do Intune** e **estado da conta** ambos mostram verificações verde:
+2. Escolher **selecionar utilizador** > selecione o utilizador tenha um problema > **selecione**.
+3. Confirme que **licença do Intune** e **estado da conta** ambos mostram verificações verde:
 
     ![No Intune, selecione o utilizador e confirme o estado da conta e a licença do Intune mostram marcas de verificações de verde para o Estado](./media/account-status-intune-license-show-green.png)
 
@@ -47,7 +46,7 @@ Este artigo apresenta uma lista de algumas técnicas de resolução de problemas
     - [Atribuir licenças para que os utilizadores podem inscrever dispositivos](licenses-assign.md)
     - [Adicionar utilizadores ao Intune](users-add.md)
 
-5. Sob **dispositivos**, localizá-lo a ter um problema. Reveja as colunas diferentes:
+4. Sob **dispositivos**, localizá-lo a ter um problema. Reveja as colunas diferentes:
 
     - **Gerido**: Para o dispositivo receber políticas de conformidade ou de configuração, esta propriedade deve mostrar **MDM** ou **EAS/MDM**.
 
@@ -164,4 +163,6 @@ Para resolver este problema, defina a hora do sistema local mais próximo possí
 
 ## <a name="next-steps"></a>Passos Seguintes
 
-Se ainda precisar de ajuda, pode [obter suporte para o Microsoft Intune](get-support.md).
+[Problemas comuns e resoluções com perfis de e-mail](troubleshoot-email-profiles-in-microsoft-intune.md)
+
+Obtenha [suportam a ajuda da Microsoft](get-support.md), ou utilize o [fóruns da Comunidade](https://social.technet.microsoft.com/Forums/en-US/home?category=microsoftintune).

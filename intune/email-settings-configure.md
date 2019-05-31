@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 68fce40c194c831e65fb6631bf079f8703b039af
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 6a80ff2ca7c2265da358f57291032f59d47d22dd
+ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047955"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66412352"
 ---
 # <a name="add-email-settings-to-devices-using-intune"></a>Adicionar definições de e-mail a dispositivos com o Intune
 
@@ -38,7 +38,7 @@ Este artigo mostra-lhe como criar um perfil de e-mail no Microsoft Intune. Tamb�
 
 ## <a name="create-a-device-profile"></a>Criar um perfil de dispositivo
 
-1. Na [portal do Azure](https://portal.azure.com), selecione **todos os serviços** > Filtrar **Intune** > selecione **Microsoft Intune**.
+1. Inicie sessão no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Selecione **Configuração do dispositivo** > **Perfis** > **Criar perfil**.
 3. Introduza um **Nome** e uma **Descrição** para o perfil de e-mail.
 4. Selecione a **Plataforma** da lista pendente. As opções são:

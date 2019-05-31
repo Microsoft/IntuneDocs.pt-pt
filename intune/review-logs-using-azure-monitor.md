@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 803d556150d60d0a3d60ec03c029d65f0f935f67
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 8d13cb9fed28bb759007f1be1cb6df6139c19d3b
+ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045282"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66412708"
 ---
 # <a name="send-log-data-to-storage-event-hubs-or-log-analytics-in-intune-preview"></a>Enviar dados de registo para o armazenamento, os hubs de eventos ou do log analytics no Intune (pré-visualização)
 
@@ -53,7 +53,7 @@ Dependendo de onde pretende encaminhar os dados de registo de auditoria, precisa
 
 ## <a name="send-logs-to-azure-monitor"></a>Enviar registos para o Azure monitor
 
-1. No [portal do Azure](https://portal.azure.com/), selecione **Todos os serviços** > filtre o **Intune** > selecione  **Intune**.
+1. Inicie sessão no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Sob **monitorização**, selecione **as definições de diagnóstico**. Na primeira vez que abri-lo, ativá-la:
 
     ![Ative as definições de diagnóstico no Intune para enviar registos para o Azure Monitor](media/diagnostics-settings-turn-on.png)
@@ -101,7 +101,7 @@ Também pode exportar os registos de auditoria em outras partes do Intune, inclu
 
 Por exemplo, para exportar a auditoria de registos ao utilizar a conformidade do dispositivo:
 
-1. No [portal do Azure](https://portal.azure.com/), selecione **Todos os serviços** > filtre o **Intune** > selecione  **Intune**.
+1. Inicie sessão no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Selecione **conformidade do dispositivo** > **Monitor** > **registos de auditoria**:
 
     ![Escolha os registos de auditoria para encaminhar dados do Intune para o armazenamento do Azure Monitor, os hubs de eventos ou análise](media/audit-logs-under-monitor-in-compliance.png)

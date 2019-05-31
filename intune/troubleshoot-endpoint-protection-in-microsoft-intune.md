@@ -1,11 +1,11 @@
 ---
-title: Resolver problemas com a proteção de ponto final no Intune – Azure | Microsoft Docs
-description: Resolva problemas quando o Endpoint Protection do Microsoft Intune está a ser utilizado.
+title: Mensagens de proteção de ponto final comum no Microsoft Intune – Azure | Documentos da Microsoft
+description: Ver mensagens comuns e solução possível quando a utilizar e resolução de problemas de proteção de ponto final e o Windows Defender no Microsoft Intune.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/14/2018
+ms.date: 05/29/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,36 +17,70 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ec655a53018c2e45d1cb771c1ce9c0aad376b2b1
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: a4f749ab85d283ed9743d227476f8229dc1cf7c3
+ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040157"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402650"
 ---
-# <a name="troubleshoot-endpoint-protection-in-intune"></a>Resolver problemas com o Endpoint Protection no Intune
+# <a name="endpoint-protection-issues-and-possible-solutions-in-microsoft-intune"></a>Problemas do Endpoint protection e as possíveis soluções no Microsoft Intune
 
-Utilize as informações para ajudar a resolver problemas ao utilizar a proteção de ponto final. Veja também [Review event logs and error codes to troubleshoot issues with Windows Defender AV](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/troubleshoot-windows-defender-antivirus) (Rever registos de eventos e códigos de erro para resolver problemas com o Windows Defender AV).
+Este artigo apresenta e descreve possíveis causas e soluções para alguns erros e avisos. Utilize as informações para ajudar a resolver problemas quando utilizar o endpoint protection.
 
-Se estas informações não o ajudarem, também poderá [obter suporte para o Microsoft Intune](get-support.md).
+## <a name="windows-defender-error-codes"></a>Códigos de erro do Windows Defender
 
-### <a name="error-messages"></a>Mensagens de erro
-Esta secção descreve possíveis causas e soluções para os seguintes erros e avisos.
+Reveja os registos de eventos e códigos de erro para [resolver problemas com o Windows Defender AV](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/troubleshoot-windows-defender-antivirus).
 
-|Item de estado|Possíveis causas|Possíveis soluções|
-|---------------|--------------------|-----------------------|
-|**Motor do Endpoint Protection indisponível**|O motor do Intune Endpoint Protection foi danificado ou eliminado.|Se o motor do Endpoint Protection do Intune estiver danificado, pode experimentar atualizar ou reinstalar o software.<br /><br />Para forçar uma atualização imediata, escolha **Atualizar** no software de cliente do Endpoint Protection (que se encontra na barra de tarefas nos computadores geridos).<br /><br />Se não for possível atualizar o motor, tem de reinstalar o motor do Endpoint Protection.<br /><br />Na lista de programas instalados, no Painel de Controlo do computador gerido, localize o **Agente do Endpoint Protection do Microsoft Intune** e, em seguida, desinstale a aplicação.<br /><br />Durante a próxima sincronização de atualizações, o Gestor de Atualizações do Microsoft Online Management deteta o programa em falta e reinstala-o na hora de instalação agendada.|
-|**Endpoint Protection desativado**|A proteção de ponto final do Intune foi desativada por um administrador através de um perfil de configuração ou por um utilizador num computador gerido.|Ative a proteção de ponto final. Veja [Adicionar definições de proteção de ponto final no Intune](endpoint-protection-configure.md) ou [Ativar o Windows Defender para aceder aos recursos da empresa](/intune-user-help/turn-on-defender-windows).|
-|**Proteção em tempo real desativada**|A proteção em tempo real foi desativada por um administrador através de um perfil ou por um utilizador num computador gerido.|Ative a proteção de ponto final. Veja [Antivírus do Windows Defender](device-restrictions-windows-10.md#windows-defender-antivirus) no Intune ou [Ativar a proteção em tempo real para aceder aos recursos da empresa](/intune-user-help/turn-on-defender-windows). |
-|**Análise de transferências desativada**|A análise de transferências foi desativada por um administrador através de um perfil ou por um utilizador num computador gerido.|Ative a análise. Veja [Antivírus do Windows Defender](device-restrictions-windows-10.md#windows-defender-antivirus) no Intune ou [Ativar a proteção em tempo real para aceder aos recursos da empresa](/intune-user-help/turn-on-defender-windows). |
-|**Monitorização da atividade de programas e ficheiros desativada**|A monitorização da atividade de programas e ficheiros foi desativada por um administrador através de um perfil ou por um utilizador num computador gerido.|Ative a atividade dos ficheiros e programas. Veja [Antivírus do Windows Defender](device-restrictions-windows-10.md#windows-defender-antivirus) no Intune ou [Ativar a proteção em tempo real para aceder aos recursos da empresa](/intune-user-help/turn-on-defender-windows). |
-|**Monitorização de comportamento desativada**|A monitorização de comportamento foi desativada por um administrador através de um perfil ou por um utilizador num computador gerido.|Ative a monitorização de comportamento. Veja [Antivírus do Windows Defender](device-restrictions-windows-10.md#windows-defender-antivirus) no Intune ou [Ativar a proteção em tempo real para aceder aos recursos da empresa](/intune-user-help/turn-on-defender-windows). |
-|**Análise de scripts desativada**|A análise de scripts foi desativada por um administrador através de um perfil ou por um utilizador num computador gerido.|Ative a análise de scripts. Veja [Antivírus do Windows Defender](device-restrictions-windows-10.md#windows-defender-antivirus) no Intune ou [Ativar a proteção em tempo real para aceder aos recursos da empresa](/intune-user-help/turn-on-defender-windows). |
-|**Sistema de Inspeção de Rede desativado**|O Sistema de Inspeção de Rede foi desativado por um administrador através de um perfil ou por um utilizador num computador gerido.|Ative o Sistema de Inspeção de Rede (NIS). Veja [Antivírus do Windows Defender](device-restrictions-windows-10.md#windows-defender-antivirus) no Intune ou [Ativar a proteção em tempo real para aceder aos recursos da empresa](/intune-user-help/turn-on-defender-windows). |
-|**Definições de software maligno desatualizadas**|O computador pode ter estado desligado da Internet durante um longo período de tempo e as definições de software maligno podem não ter sido atualizadas. Este estado é apresentado quando as definições de software maligno do computador estão desatualizadas há 14 dias ou mais.|Se as definições de malware estiverem desatualizadas, poderá atualizar as definições através do [Antivírus do Windows Defender](device-restrictions-windows-10.md#windows-defender-antivirus).|
-|**Análise completa em atraso**|Não foi concluída nenhuma análise completa nos últimos 14 dias. Esta situação pode ocorrer se o computador for reiniciado durante uma análise completa.|Se uma análise completa estiver em atraso, poderá executar uma análise completa única ou agendar análises completas periódicas. Veja [Antivírus do Windows Defender](device-restrictions-windows-10.md#windows-defender-antivirus). |
-|**Análise rápida em atraso**|Não foi concluída nenhuma análise rápida nos últimos 14 dias. Esta situação pode ocorrer se o computador for reiniciado durante uma análise rápida.|Se uma análise rápida estiver em atraso, poderá executar uma análise rápida única ou agendar análises rápidas periódicas. Veja [Antivírus do Windows Defender](device-restrictions-windows-10.md#windows-defender-antivirus).|
-|**Outra aplicação de Endpoint Protection em execução**|Está a ser executada outra aplicação de Endpoint Protection e o computador está em bom estado de funcionamento.|Por predefinição, se estiver instalada outra aplicação de proteção de ponto final e o Intune detetar essa aplicação, o dispositivo poderá tornar-se instável.|
+## <a name="common-intune-errors-and-possible-resolutions"></a>Erros comuns do Intune e as possíveis resoluções
 
-### <a name="next-steps"></a>Passos Seguintes
-Se estas informações não o ajudarem, também poderá [obter suporte para o Microsoft Intune](get-support.md).
+#### <a name="endpoint-protection-engine-unavailable"></a>Motor do Endpoint Protection indisponível
+
+**Causa potencial**: O motor do Intune Endpoint Protection foi danificado ou eliminado.
+
+**Possíveis soluções**:
+
+- Se o endpoint protection está danificado ou não de atualização, em seguida, atualizar ou reinstalar um programa.
+- Força uma atualização imediata. No programa cliente de endpoint protection (possivelmente sob a barra de tarefas), escolha **atualização**.
+- No painel de controlo > programas, selecione **agente do Endpoint Protection do Microsoft Intune**. Desinstale a aplicação.
+- Durante a próxima sincronização de atualizações, o Gestor de Atualizações do Microsoft Online Management deteta o programa em falta e reinstala-o na hora de instalação agendada.
+
+#### <a name="features-are-disabled"></a>Funcionalidades são desativadas
+
+Poderá receber uma mensagem que algumas funcionalidades estão desativadas. Essas mensagens podem acontecer se o endpoint protection do Intune ou o Windows Defender está desabilitado por um administrador através de um perfil de configuração. Em alternativa, está desativada por um utilizador final no dispositivo. Mensagens de possíveis:
+
+`Endpoint Protection disabled`  
+`Real-time protection disabled`  
+`Download scanning disabled`  
+`File and program activity monitoring disabled`  
+`Behavior monitoring disabled`  
+`Script scanning disabled`  
+`Network Inspection System disabled`  
+
+**Possíveis soluções**: Ative estas funcionalidades. Para obter orientações, veja:
+
+- [Adicionar definições do endpoint protection](endpoint-protection-configure.md)
+- [Antivírus do Windows Defender](device-restrictions-windows-10.md#windows-defender-antivirus)
+- [Utilizadores finais: Ativar a proteção em tempo real para aceder a recursos da empresa em](/intune-user-help/turn-on-defender-windows)
+
+#### <a name="malware-definitions-out-of-date"></a>Definições de software maligno desatualizadas
+
+Este estado é apresentado quando as definições de malware no dispositivo estão Desatualizadas há 14 dias ou mais. Por exemplo, a mensagem pode mostrar se o dispositivo está desligado da Internet ou as definições de malware estão Desatualizadas.
+
+**Possíveis soluções**: Se as definições de software maligno estiverem Desatualizadas, atualizá-las a usando [antivírus do Windows Defender](device-restrictions-windows-10.md#windows-defender-antivirus).
+
+#### <a name="full-scan-overdue-or-quick-scan-overdue"></a>Análise completa em atraso ou análise rápida em atraso
+
+Uma análise completa ou uma análise rápida não concluídas nos últimos 14 dias. Este cenário poderá ocorrer se o dispositivo for reiniciado durante uma análise completa.
+
+**Possíveis soluções**: Se tiver uma análise em atraso, pode executar uma única análise ou agendar análises periódicas. Veja [Antivírus do Windows Defender](device-restrictions-windows-10.md#windows-defender-antivirus).
+
+#### <a name="another-endpoint-protection-application-running"></a>Outra aplicação de Endpoint Protection em execução
+
+Outra aplicação de endpoint protection está em execução e o dispositivo está em bom estado.
+
+**Possíveis soluções**: Se estiver instalada outra aplicação de proteção de ponto final e o Intune Deteta essa aplicação, o dispositivo pode tornar-se instável.
+
+## <a name="next-steps"></a>Passos Seguintes
+
+Obtenha [suportam a ajuda da Microsoft](get-support.md), ou utilize o [fóruns da Comunidade](https://social.technet.microsoft.com/Forums/en-US/home?category=microsoftintune).

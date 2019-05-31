@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fbd545d13d9241edd55c01e4353a28b3851d2ac2
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 19641a36cf429773a8c0e06a90ee279d2baa06f7
+ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046909"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66412251"
 ---
 # <a name="windows-10-and-windows-holographic-for-business-device-settings-to-run-as-a-dedicated-kiosk-using-intune"></a>Windows 10 e Windows Holographic for Business, definições do dispositivo ser executado como um quiosque dedicado com o Intune
 
@@ -38,7 +38,7 @@ Este artigo mostra-lhe como criar um perfil de configuração do dispositivo. Pa
 
 ## <a name="create-the-profile"></a>Criar o perfil
 
-1. Na [portal do Azure](https://portal.azure.com), selecione **todos os serviços** > Filtrar **Intune** > selecione **Microsoft Intune**.
+1. Inicie sessão no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Selecione **Configuração do dispositivo** > **Perfis** > **Criar Perfil**.
 3. Introduza as seguintes propriedades:
 

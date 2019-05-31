@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8554f0addf7364150c3f225e8cba1a7d751f8a7d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 4cae90723c7ff92a8042f068fb49c1709506c7ff
+ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048086"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66412430"
 ---
 # <a name="configure-device-restriction-settings-in-microsoft-intune"></a>Configurar definições de restrição de dispositivos no Microsoft Intune
 
@@ -35,7 +35,7 @@ Obtenha mais noções básicas sobre perfis de restrição de dispositivos e lei
 
 ## <a name="create-the-profile"></a>Criar o perfil
 
-1. Para o [portal do Azure](https://portal.azure.com), selecione **todos os serviços** > Filtrar **Intune** > selecione **Intune**.
+1. Inicie sessão no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Selecione **Configuração do dispositivo** > **Perfis** > **Criar perfil**.
 3. Introduza um **Nome** e uma **Descrição** para o perfil de restrição de dispositivos.
 4. Na lista pendente **Plataforma**, selecione a plataforma do dispositivo à qual pretende aplicar as definições personalizadas. Atualmente, pode escolher uma das seguintes plataformas para definições de restrição de dispositivos:
@@ -48,7 +48,7 @@ Obtenha mais noções básicas sobre perfis de restrição de dispositivos e lei
     - **Windows 8.1 e posterior**
     - **Windows 10 e posterior**
 
-5. Na lista pendente **Tipo de perfil**, selecione **Restrições do dispositivo**. Para criar um dispositivo restrições de perfil para dispositivos Windows 10 Team, como o Surface Hub, em seguida, escolha **restrições de dispositivos (Windows 10 Team)**.
+5. Na lista pendente **Tipo de perfil**, selecione **Restrições do dispositivo**. Para criar um dispositivo restrições de perfil para dispositivos Windows 10 Team, como o Surface Hub, em seguida, escolha **restrições de dispositivos (Windows 10 Team)** .
 6. Consoante a plataforma que escolheu, as definições que pode configurar variam. Escolha a sua plataforma para definições detalhadas:
 
     - [Definições do Android](device-restrictions-android.md)

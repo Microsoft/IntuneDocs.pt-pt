@@ -1,6 +1,6 @@
 ---
 title: Criar um perfil Wi-Fi para os dispositivos no Microsoft Intune – Azure | Microsoft Docs
-description: Veja os passos para criar um perfil de configuração dos dispositivos de Wi-Fi no Microsoft Intune. Crie perfis para Android, Android Enterprise, Quiosque do Android, iOS, macOS, Windows 10 e posterior e Windows Holographic for Business. Utilize estes perfis para criar uma ligação Wi-Fi para utilizar certificados, escolher um tipo de EAP, selecionar um método de autenticação, ativar um proxy e mais.
+description: Veja os passos para criar um perfil de configuração dos dispositivos de Wi-Fi no Microsoft Intune. Crie perfis para Android, Android Enterprise, quiosque Android, iOS, macOS, Windows 10 e posterior e Windows Holographic for Business. Utilize estes perfis para criar uma ligação Wi-Fi para utilizar certificados, escolher um tipo de EAP, selecionar um método de autenticação, ativar um proxy e mais.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 73d6aab271e6c065dbdaac2359974457d8fae607
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 7dc28a614514bf9b1a4987976cb057529b75a5fc
+ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050564"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66411998"
 ---
 # <a name="add-and-use-wi-fi-settings-on-your-devices-in-microsoft-intune"></a>Adicionar e utilizar definições de Wi-Fi nos seus dispositivos no Microsoft Intune
 
@@ -48,7 +48,7 @@ Os perfis de Wi-Fi suportam as seguintes plataformas de dispositivos:
 
 ## <a name="create-a-device-profile"></a>Criar um perfil de dispositivo
 
-1. No [portal do Azure](https://portal.azure.com), selecione **Todos os serviços** > filtre o **Intune** e selecione **Microsoft Intune**. 
+1. Inicie sessão no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Selecione **Configuração do dispositivo** > **Perfis** > **Criar perfil**.
 3. Introduza um **Nome** e uma **Descrição** para o perfil Wi-Fi.
 4. Na lista pendente **Plataforma**, selecione a plataforma do dispositivo à qual pretende aplicar as definições de Wi-Fi. As opções são:
