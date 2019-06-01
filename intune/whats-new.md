@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 05/30/2019
+ms.date: 05/31/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d6e010a6f7d9a975c93b24ad7248534ff548359d
-ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
+ms.openlocfilehash: 0b1544266ff0f03341bd08e0dd8dc3c27eea1252
+ms.sourcegitcommit: f90cba0b2c2672ea733052269bcc372a80772945
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66412150"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66454136"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 
@@ -234,7 +234,7 @@ Pode atribuir as aplicações de Win32 a serem instalados nos inscritos no Intun
 A página de descrição geral do dispositivo irá mostrar o utilizador primário, também chamado do utilizador de afinidade de dispositivo de utilizador (UDA). Para ver o utilizador primário para um dispositivo, escolha **Intune** > **dispositivos** > **todos os dispositivos** > Escolha um dispositivo. O utilizador primário aparecerá junto à parte superior do **descrição geral** página.
 
 #### <a name="additional-managed-google-play-app-reporting-for-android-enterprise-work-profile-devices----4105925----"></a>Relatórios adicionais da aplicação do Managed Google Play para dispositivos de perfil de trabalho do Android Enterprise <!-- 4105925  -->
-Para as aplicações do Managed Google Play implementadas para dispositivos de perfil de trabalho do Android Enterprise, pode ver o número de versão específica da aplicação instalada num dispositivo. Tal só se aplica às aplicações obrigatórias. A mesma funcionalidade para aplicações disponíveis será habilitada numa versão futura. 
+Para as aplicações do Managed Google Play implementadas para dispositivos de perfil de trabalho do Android Enterprise, pode ver o número de versão específica da aplicação instalada num dispositivo. Tal só se aplica às aplicações obrigatórias.  
 
 #### <a name="ios-third-party-keyboards----4111843-----"></a>iOS teclados de terceiros <!-- 4111843   -->
 O suporte de política (aplicação) do Intune app protection para o **teclados de terceiros** configuração para iOS já não é suportado devido a uma alteração de plataforma iOS. Não será capaz de configurar esta definição na consola de administração do Intune e não serão imposto no cliente no SDK da aplicação Intune.
@@ -284,7 +284,7 @@ Aplica-se a: Android Enterprise dispositivos totalmente geridos
 
 #### <a name="check-for-a-tpm-chipset-in-a-windows-10-device-compliance-policy----3617671---"></a>Verifique a existência de um chipset TPM numa política de conformidade de dispositivos Windows 10 <!-- 3617671 -->
 
-Esta funcionalidade é atrasada e deve ser incluída numa versão futura.
+Esta funcionalidade está atrasada e está prevista para ser lançada mais tarde.
 
 #### <a name="updated-ui-changes-for-microsoft-edge-browser-on-windows-10-and-later-devices----3775833-----"></a>Alterações de interface do Usuário atualizadas para o Browser do Microsoft Edge no Windows 10 e dispositivos posteriores <!-- 3775833   -->
 Quando cria um perfil de configuração do dispositivo, pode permitir ou restringir funcionalidades do Microsoft Edge no Windows 10 e dispositivos posteriores (**configuração do dispositivo** > **perfis**  >  **Criar perfil** > **Windows 10 e posterior** para a plataforma, > **restrições de dispositivos** para o tipo de perfil >  **Browser Microsoft Edge**). Nesta atualização, as definições do Microsoft Edge são mais descritivo e mais fácil de entender. 
@@ -327,7 +327,7 @@ Atualizámos a mensagem de tempo limite predefinido, os utilizadores veem quando
 ### <a name="device-management"></a>Gestão de dispositivos
 
 #### <a name="retire-noncompliant-devices-----1827291-----"></a>Extinguir dispositivos não conformes  <!-- 1827291   -->
-Esta funcionalidade foi adiada e será fornecido numa versão futura.
+Esta funcionalidade foi adiada e está planejada para uma versão futura.
 
 
 ### <a name="monitor-and-troubleshoot"></a>Monitorizar e resolver problemas
@@ -885,7 +885,7 @@ A nova experiência permite-lhe descrever o seu problema pelas suas próprias pa
 ### <a name="role-based-access-control"></a>Controlo de acesso baseado em funções
 
 #### <a name="scope-tags-for-apps----1081941---"></a>Etiquetas de âmbito para aplicações <!-- 1081941 -->
-Pode criar etiquetas de âmbito para limitar o acesso para aplicações e funções. Pode adicionar uma etiqueta de âmbito a uma aplicação para que apenas as pessoas com funções atribuídas também essa etiqueta de âmbito tenham acesso à aplicação. Atualmente, aplicações que adicionar ao Intune a partir do Google Play gerido ou aplicações adquiridas através do Apple Volume Purchase Program (VPP) não não possível atribuir etiquetas de âmbito (mas suporte virão no futuro). Para obter mais informações, consulte [utilizar etiquetas de âmbito para políticas de filtro](scope-tags.md).
+Pode criar etiquetas de âmbito para limitar o acesso para aplicações e funções. Pode adicionar uma etiqueta de âmbito a uma aplicação para que apenas as pessoas com funções atribuídas também essa etiqueta de âmbito tenham acesso à aplicação. Atualmente, não não possível atribuir a aplicações que adicionar ao Intune a partir do Google Play gerido ou aplicações adquiridas através do Apple Volume Purchase Program (VPP) etiquetas de âmbito (futuro suporte está planeado). Para obter mais informações, consulte [utilizar etiquetas de âmbito para políticas de filtro](scope-tags.md).
 
 <!-- ########################## -->
 ## <a name="week-of-december-10-2018"></a>Semana de 10 de Dezembro de 2018
@@ -915,7 +915,7 @@ O Intune requer agora macOS versão 10.12 ou posterior. Dispositivos com versõe
 Pode remover todas as aplicações em dispositivos iOS supervisionados pertencente à empresa. Pode remover qualquer aplicação ao visar os grupos de utilizadores ou dispositivos com um tipo de atribuição **Desinstalar**. Para dispositivos iOS pessoais ou não supervisionados, continuará a poder remover apenas as aplicações que foram instaladas com o Intune.
 
 #### <a name="downloading-intune-win32-app-content----2617320---"></a>Transferir o conteúdo da aplicação Intune Win32 <!-- 2617320 -->
-Windows 10 RS3 e aos clientes acima irá transferir o conteúdo da aplicação Intune Win32 usando um componente de Otimização da entrega no cliente Windows 10. Otimização da entrega fornece uma funcionalidade de ponto-a-ponto que ele está ativado por predefinição. Otimização da entrega pode ser configurada pela política de grupo e no futuro através de MDM do Intune. Para obter mais informações, consulte [otimização de entrega para o Windows 10](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization). 
+Windows 10 RS3 e aos clientes acima irá transferir o conteúdo da aplicação Intune Win32 usando um componente de Otimização da entrega no cliente Windows 10. Otimização da entrega fornece uma funcionalidade de ponto-a-ponto que ele está ativado por predefinição. Atualmente, a Otimização da entrega pode ser configurada pela política de grupo. Para obter mais informações, consulte [otimização de entrega para o Windows 10](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization). 
 
 #### <a name="end-user-device-and-app-content-menu----2771453---"></a>Menu de conteúdo dispositivos e aplicações utilizador final <!-- 2771453 -->
 Os usuários finais agora pode utilizar o menu de contexto em aplicações e dispositivos para acionar ações comuns, como mudar o nome de um dispositivo ou a verificação de conformidade.

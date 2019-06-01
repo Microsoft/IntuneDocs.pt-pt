@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cf6febf0ead541e1346cc095bb14437083dd5d64
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: 13858b257c1adbc8ce3147710d450c4a09ec9dc2
+ms.sourcegitcommit: f90cba0b2c2672ea733052269bcc372a80772945
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373748"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66454051"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>Configurar e utilizar certificados PKCS com o Intune
 
@@ -136,7 +136,7 @@ Para autenticar um dispositivo com VPN, Wi-Fi ou outros recursos, um dispositivo
 > [!IMPORTANT]  
 > O Microsoft Intune Certificate Connector não pode ser instalado na autoridade de certificado (AC) emissora e, em vez disso, tem de ser instalado num servidor separado do Windows.  
 
-1. Na [portal do Azure](https://portal.azure.com), selecione **todos os serviços**, filtre por **Intune** > selecione **Intune**.
+1. Inicie sessão no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Selecione **configuração do dispositivo** > **conectores de certificação** > **adicionar**.
 3. Transfira e guarde o ficheiro de conector para uma localização pode aceder a partir do servidor onde pretende instalar o conector.
 
