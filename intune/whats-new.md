@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0b1544266ff0f03341bd08e0dd8dc3c27eea1252
-ms.sourcegitcommit: f90cba0b2c2672ea733052269bcc372a80772945
+ms.openlocfilehash: 72b96714e8740fe4077583cfa5d9f148c2ee0908
+ms.sourcegitcommit: f41b22f65286a64a8002e2cbe80debfdd6692278
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66454136"
+ms.lasthandoff: 06/03/2019
+ms.locfileid: "66469582"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 
@@ -160,6 +160,14 @@ Não precisa incluir espaços em números IMEI, quando pesquisa **todos os dispo
 
 #### <a name="deleting-a-device-in-the-apple-portal-will-be-reflected-in-the-intune-portal---2489996---"></a>A eliminar um dispositivo no portal da Apple será refletida no portal do Intune <!--2489996 -->
 Se um dispositivo é eliminado do programa de inscrição de dispositivos da Apple ou a portais de gerente de negócios da Apple, o dispositivo será eliminado automaticamente do Intune durante a sincronização seguinte.
+
+### <a name="the-enrollment-status-page-now-tracks-win32-apps----2714451---"></a>A página de estado de inscrição controla agora aplicações de Win32 <!-- 2714451 -->
+Isto aplica-se apenas a dispositivos com o Windows 10 versão 1903 e superior. Para obter mais informações, consulte [configurar uma página de estado de inscrição](windows-enrollment-status.md).
+
+### <a name="device-management"></a>Gestão de dispositivos
+
+#### <a name="reset-and-wipe-devices-in-bulk-by-using-the-graph-api----3295288---"></a>Repor e apagar dispositivos em massa ao utilizar a Graph API <!-- 3295288 -->
+Agora pode repor e a eliminação de até 100 dispositivos em massa com a Graph API.
 
 
 ### <a name="monitor-and-troubleshoot"></a>Monitorizar e resolver problemas
