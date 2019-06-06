@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0ed95507d8a7486bc1c1cca2c2a067658239eed8
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 5124796166f27823b7a13b0f3dd239446f778850
+ms.sourcegitcommit: 337b554f9becc40cdea2f5f47a4a129ac491f64c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043545"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66713858"
 ---
 # <a name="add-partner-certification-authority-in-intune-using-scep"></a>Adicionar autoridades de certificação parceiras no Intune com o SCEP
 
@@ -87,7 +87,7 @@ Certifique-se de que tem as permissões obrigatórias para registar uma aplicaç
    > [!IMPORTANT]  
    > Antes de sair desta página, copie o valor para o segredo do cliente e registe-a para utilização posterior com a implementação de AC de terceiros. Este valor não é apresentado novamente. Certifique-se de que reveja as orientações para a AC de terceiros em como pretendem o ID da aplicação, a chave de autenticação e o ID do inquilino configurado.  
 
-6. Registo sua **ID de inquilino**. O ID de inquilino é o texto de domínio após o @ início de sessão na sua conta. Por exemplo, se a sua conta está *admin@name.onmicrosoft.com*, em seguida, o seu ID de inquilino é **name.onmicrosoft.com**.  
+6. Registo sua **ID de inquilino**. O ID de inquilino é o texto de domínio após o @ início de sessão na sua conta. Por exemplo, se a sua conta está *admin@name.onmicrosoft.com* , em seguida, o seu ID de inquilino é **name.onmicrosoft.com**.  
 
 7. No painel de navegação para a aplicação, aceda a **permissões de API** sob **gerir**e, em seguida, selecione **adicionar uma permissão**.  
 
@@ -123,6 +123,7 @@ As seguintes autoridades de certificação de terceiros suportam o Intune:
 - [GlobalSign](https://downloads.globalsign.com/acton/attachment/2674/f-6903f60b-9111-432d-b283-77823cc65500/1/-/-/-/-/globalsign-aeg-microsoft-intune-integration-guide.pdf)
 - [IDnomic](https://www.idnomic.com/)
 - [Sectigo](https://sectigo.com/products)
+- [DigiCert](https://knowledge.digicert.com/tutorials/microsoft-intune.html)
 
 Se for uma autoridade de certificação de terceiros interessada em integrar o seu produto com o Intune, reveja a documentação de orientação da API:
 

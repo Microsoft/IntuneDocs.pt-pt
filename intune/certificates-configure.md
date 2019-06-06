@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 37938287cc5ddde6285ec09aa0fffea56f98b3c3
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: e0e0eda1c60e420adcdab9364ecb0da1f52fe4e6
+ms.sourcegitcommit: 337b554f9becc40cdea2f5f47a4a129ac491f64c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048946"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66713895"
 ---
 # <a name="configure-a-certificate-profile-for-your-devices-in-microsoft-intune"></a>Configurar um perfil de certificado para os seus dispositivos no Microsoft Intune
 
@@ -90,8 +90,7 @@ Importará este certificado quando configurar um perfil de certificado fidedigno
 ## <a name="step-3-create-trusted-certificate-profiles"></a>Passo 3: Criar perfis de certificado fidedigno
 Crie um perfil de certificado fidedigno para poder criar um perfil de certificado SCEP ou PKCS. Precisa de um perfil de certificado fidedigno e de um perfil SCEP ou PKCS para cada plataforma de dispositivo. Os passos para criar certificados fidedignos são semelhantes para todas as plataformas de dispositivos.
 
-1. Inicie sessão no [portal do Azure](https://portal.azure.com).
-2. Selecione **Todos os serviços**, filtre por **Intune** e selecione **Microsoft Intune**.
+1. Inicie sessão no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. Selecione **Configuração do dispositivo** > **Gerir** > **Perfis** > **Criar perfil**.
 4. Introduza um **Nome** e uma **Descrição** para o perfil de certificado fidedigno.
 5. Na lista pendente **Plataforma**, selecione a plataforma do dispositivo para este certificado fidedigno. As opções são:

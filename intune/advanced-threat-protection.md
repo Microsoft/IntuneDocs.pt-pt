@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: abbd226f2b812e1062d56a1d66b3e10bc9d68036
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: 1d13d4094239cd36f736bb5cb19af7a11d29e727
+ms.sourcegitcommit: 337b554f9becc40cdea2f5f47a4a129ac491f64c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66374090"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66719582"
 ---
 # <a name="enforce-compliance-for-windows-defender-atp-with-conditional-access-in-intune"></a>Impor a conformidade para Windows Defender ATP com acesso condicional no Intune
 
@@ -52,8 +52,7 @@ Para utilizar o ATP com o Intune, confirme se tem o seguinte configurado e pront
 
 ## <a name="enable-windows-defender-atp-in-intune"></a>Ativar o Windows Defender ATP no Intune
 
-1. Inicie sessão no [portal do Azure](https://portal.azure.com).
-2. Selecione **Todos os serviços**, filtre por **Intune** e selecione **Microsoft Intune**.
+1. Inicie sessão no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. Selecione **Conformidade do dispositivo** > **Windows Defender ATP** > **Abrir o Centro de Segurança do Windows Defender**.
 
     ![Selecione para abrir o Centro de Segurança do Windows Defender](./media/atp-device-compliance-open-windows-defender.png)
