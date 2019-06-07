@@ -576,10 +576,12 @@
                   href: windows-store-for-business.md
                 - name: eBooks do iOS
                   href: vpp-ebooks-ios.md
-            - name: Configurar a aplicação Portal da Empresa
+            - name: Configurar o Portal da Empresa
               href: company-portal-app.md
             - name: Configurar o Managed Browser
               href: app-configuration-managed-browser.md
+            - name: Configure Microsoft Edge (Configurar o Microsoft Edge)
+              href: manage-microsoft-edge.md
             - name: Configurar o Outlook
               href: app-configuration-policies-outlook.md
         - name: Proteger aplicações
