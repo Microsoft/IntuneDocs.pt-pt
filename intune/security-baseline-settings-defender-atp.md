@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c6feae4d7caeeefbf9638e5018ba7b653a260f5c
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: a58095612d6e76d4a1cb633e69260267dcfd9999
+ms.sourcegitcommit: cb76efd3db60a422a65478ebce83d3aea7b5eeed
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373504"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66749916"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Definições de linha de base de proteção do Microsoft Defender avançada contra ameaças para o Intune
 
-Ver as definições de linha de base do Microsoft Defender proteção avançada contra ameaças (anteriormente conhecido como Windows Defender proteção avançada contra ameaças) que são suportadas pelo Microsoft Intune. Os valores predefinidos neste artigo representam a configuração de linha de base padrão para o Intune. Estas predefinições representam a configuração recomendada para o Intune e podem não corresponder às predefinições de Windows.
+Ver as definições de linha de base do Microsoft Defender proteção avançada contra ameaças (anteriormente conhecido como Windows Defender proteção avançada contra ameaças) que são suportadas pelo Microsoft Intune. As predefinições de linha de base da proteção avançada de ameaças (ATP) representam a configuração recomendada para ATP e podem não corresponder aos padrões de linha de base para outras linhas de base de segurança.  
 
   Linha de base da Microsoft Defender proteção avançada contra ameaças está disponível quando o seu ambiente cumpre os pré-requisitos de utilização [a proteção de ameaças avançada do Microsoft Defender](advanced-threat-protection.md#prerequisites)).
 
@@ -33,7 +33,7 @@ Ver as definições de linha de base do Microsoft Defender proteção avançada 
 
 
 > [!NOTE]  
-> As definições de linha de base WDATP estão no **pré-visualização**. Enquanto está em pré-visualização, a lista de definições disponíveis e a ordem em que este conteúdo apresenta essas definições, pode não corresponder aos que estão disponíveis no portal. 
+> As definições de linha de base do ATP estão no **pré-visualização**. Enquanto está em pré-visualização, a lista de definições disponíveis e a ordem em que este conteúdo apresenta essas definições, pode não corresponder aos que estão disponíveis no portal.  
 >
 > Quando as definições de linha de base do modo de pré-visualização, este conteúdo será atualizado para refletir a lista atual de definições de linha de base de segurança que o Intune suporta.
 

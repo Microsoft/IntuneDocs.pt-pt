@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/08/2019
+ms.date: 06/05/2019
 ms.topic: article
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 13858b257c1adbc8ce3147710d450c4a09ec9dc2
-ms.sourcegitcommit: f90cba0b2c2672ea733052269bcc372a80772945
+ms.openlocfilehash: c1119a5681033574ec0a114442b122990da872bf
+ms.sourcegitcommit: cb76efd3db60a422a65478ebce83d3aea7b5eeed
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66454051"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66749817"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>Configurar e utilizar certificados PKCS com o Intune
 
@@ -249,12 +249,17 @@ Atualizações para os conectores de duas certificado são lançadas periodicame
 
 O *conector de certificados PFX para o Microsoft Intune* [oferece suporte a atualizações automáticas](#requirements), enquanto o *Intune Certificate Connector* é atualizado manualmente.
 
-### <a name="may-6-2019"></a>6 de Maio de 2019
+### <a name="may-17-2019"></a>17 de Maio de 2019  
+- **Conector de certificados PFX para o Microsoft Intune - versão 6.1905.0.404**  
+  Alterações nesta versão:  
+  - Foi corrigido um problema em que os certificados PFX existentes continuam a ser reprocessadas, que faz com que o conector parar o processamento de pedidos de novo. 
+
+### <a name="may-6-2019"></a>6 de Maio de 2019  
 - **Conector de certificados PFX para o Microsoft Intune - versão 6.1905.0.402**  
   Alterações nesta versão:  
   - O intervalo de consulta para o conector é reduzido de 5 minutos para 30 segundos.
  
-### <a name="april-2-2019"></a>2 de Abril de 2019
+### <a name="april-2-2019"></a>2 de Abril de 2019  
 - **Intune Certificate Connector - versão 6.1904.1.0**  
   Alterações nesta versão:  
   - Foi corrigido um problema em que o conector pode não conseguir inscrever-se ao Intune depois de iniciar sessão para o conector com uma conta de administrador global.  

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 72b96714e8740fe4077583cfa5d9f148c2ee0908
-ms.sourcegitcommit: f41b22f65286a64a8002e2cbe80debfdd6692278
+ms.openlocfilehash: 7c14568a0581220cf5941984645bd0b9044e00c1
+ms.sourcegitcommit: cb76efd3db60a422a65478ebce83d3aea7b5eeed
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "66469582"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66749946"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 
@@ -106,8 +106,11 @@ Os administradores vão ver estas quatro aplicações automaticamente adicionada
 
 ### <a name="device-configuration"></a>Configuração do dispositivo
 
+#### <a name="updated-pfx-certificate-connector-for-microsoft-intune-----1533038---"></a>Conector do certificado PFX atualizado para o Microsoft Intune  <!-- 1533038 -->
+Lançámos uma atualização para o [PFX Certificate Connector para o Microsoft Intune](certficates-pfx-configure.md#whats-new-for-connectors) um problema em que os certificados PFX existentes continuam a ser reprocessadas, que faz com que o conector parar o processamento de pedidos de novo.
+
 ####  <a name="intune-security-tasks-for-defender-atp-in-public-preview--------3208597---"></a>Tarefas de segurança do Intune para Defender ATP (em pré-visualização pública)     <!-- 3208597 -->
-Em pré-visualização pública, pode utilizar o Intune para gerir as tarefas de segurança para a Microsoft Defender avançadas de proteção contra ameaças (ATP). Esta integração com o ATP e adiciona uma abordagem com base no risco para detetar, priorizar e remediar vulnerabilidades de ponto final e configurações incorretas, reduzindo o tempo entre a deteção de atenuação.
+Em pré-visualização pública, pode utilizar o Intune para gerir [tarefas de segurança para a Microsoft Defender avançadas de proteção contra ameaças (ATP)](atp-manage-vulnerabilities.md). Esta integração com o ATP e adiciona uma abordagem com base no risco para detetar, priorizar e remediar vulnerabilidades de ponto final e configurações incorretas, reduzindo o tempo entre a deteção de atenuação.
 
 #### <a name="check-for-a-tpm-chipset-in-a-windows-10-device-compliance-policy----3617671---idstaged--"></a>Verifique a existência de um chipset TPM numa política de conformidade de dispositivos Windows 10 <!-- 3617671   idstaged-->
 Muitos Windows 10 e dispositivos posteriores têm chipsets Trusted Platform Module (TPM). Esta atualização inclui uma nova definição de conformidade que verifica a versão de chip do TPM no dispositivo. 
@@ -116,7 +119,7 @@ Muitos Windows 10 e dispositivos posteriores têm chipsets Trusted Platform Modu
 
 Aplica-se a: Windows 10 e posterior
 
-#### <a name="prevent-end-users-from-modifying-their-personal-hotspot-and-disable-siri-server-logging-on-ios-devices----4097904-----"></a>Impedir que os utilizadores finais modificar seus HotSpot pessoal e desativar o registo no iOS, dispositivos de servidor de Siri <!-- 4097904   --> 
+#### <a name="prevent-end-users-from-modifying-their-personal-hotspot-and-disable-siri-server-logging-on-ios-devices----4097904-----"></a>Impedir que os utilizadores finais modificar seus HotSpot pessoal e desativar o registo no iOS, dispositivos de servidor de Siri <!-- 4097904   -->  
 Criar um perfil de restrições de dispositivo no dispositivo iOS (**configuração do dispositivo** > **perfis** > **criar perfil**  >  **iOS** para a plataforma > **restrições de dispositivos** para tipo de perfil). Esta atualização inclui novas definições que pode configurar:
 
 - **Aplicações incorporadas**: Registo do lado do servidor para os comandos da Siri

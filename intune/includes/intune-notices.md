@@ -7,12 +7,12 @@ ms.topic: include
 ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 1073a38da8a5b2467b1ff8c97b32b93f92e34e4c
-ms.sourcegitcommit: f90cba0b2c2672ea733052269bcc372a80772945
+ms.openlocfilehash: fab8f2be48a30f6ad058b3eeb6874a44ff04e6ac
+ms.sourcegitcommit: 7ceae61e036ccf8b33704751b0b39fee81944072
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66454138"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744294"
 ---
 Estes avisos fornecem importante de informações que podem ajudá-lo a se preparar para as funcionalidades e alterações futuras do Intune. 
 
@@ -25,7 +25,7 @@ Nosso telemetria indica que tiver dispositivos com uma versão anterior ao 5.0.4
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>O que preciso de fazer para me preparar para esta alteração?
 Pedir os utilizadores finais de dispositivos Android que não tenham sido atualizados para atualizar o portal da empresa através do Google play. Notifique o suporte técnico, no caso de um utilizador não tem mantidos atualização automática da aplicação portal da empresa. Veja o link no informações adicionais para a plataforma FCM mais diante da Google e alterar.
 
-#### <a name="additional-information"></a>Informações Adicionais
+#### <a name="additional-information"></a>Informações adicionais
 https://firebase.google.com/docs/cloud-messaging/
 
 
@@ -38,5 +38,37 @@ A experiência de ecrã inteiro será implementada ao Intune na portal.azure.com
 #### <a name="what-can-i-do-to-prepare-for-this-change"></a>O que posso fazer para me preparar para esta alteração?
 Não é necessário efetuar qualquer ação, mas pode considerar a atualizar a sua documentação de orientação de profissionais de IT, se necessário. Iremos atualizar nossa documentação como esta experiência for implementada para os vários painéis no Intune no portal do Azure.
 
-#### <a name="additional-information"></a>Informações Adicionais 
+#### <a name="additional-information"></a>Informações adicionais 
 https://aka.ms/intune_fullscreen
+
+### <a name="plan-for-change-intune-moving-to-support-ios-11-and-higher-in-september----4665342--"></a>Planear a alteração: Intune mover para suportar o iOS 11 e versões posteriores em Setembro <!-- 4665342-->
+Em Setembro, podemos esperar iOS 13 que será lançado pela Apple. Inscrição no Intune, o Portal da empresa e o Managed Browser serão movido para suportar o iOS 11 e versões posteriores logo após a versão do iOS 13.
+
+#### <a name="how-does-this-affect-me"></a>Como é que isto me afeta?
+Desde que as aplicações móveis do Office 365 são suportadas no iOS 11.0 e superior, esta poderá não o afetará, provavelmente já atualizou o sistema operacional ou dispositivos. No entanto, se tiver todos os dispositivos listados abaixo, ou optar por inscrever todos os dispositivos listados abaixo, sabe que os dispositivos abaixo não suportam um SO maior que o iOS 10. Estes dispositivos têm de ser atualizado para um dispositivo que suporta o iOS 11 ou superior:
+
+- iPhone 5
+- iPhone 5c
+- iPad (geração 4)
+
+A partir de Julho, MDM inscrito dispositivos com iOS 10 e o Portal da empresa irá receber um pedido para atualizar o respetivo SO ou o dispositivo. Se utilizar políticas de proteção de aplicações (aplicação) também pode definir o definição de acesso "Exigir sistema operativo iOS mínimo (aviso apenas)".
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>O que preciso de fazer para me preparar para esta alteração?
+Verifique o Intune relatórios para ver que utilizadores ou dispositivos que podem ser afetados. Aceda a **dispositivos** > **todos os dispositivos** e filtrar por SO. Pode adicionar colunas adicionais para ajudar a identificar quem na sua organização tiver dispositivos com iOS 10. Solicite que os utilizadores finais atualizarem os seus dispositivos para uma versão de SO suportada antes de Setembro.
+
+### <a name="plan-for-change-support-for-version-811-and-higher-of-intune-app-sdk-for-ios----3586942--"></a>Planear a alteração: Suporte para versão 8.1.1 e versões posteriores do SDK da aplicação Intune para iOS <!-- 3586942-->
+A partir de Setembro de 2019, Intune será movido para suportar aplicações iOS com o SDK da aplicação Intune 8.1.1 e superior. Aplicativos criados com versões do SDK inferior 8.1.1 já não ser suportados. Esta alteração irá entrar em vigor com o lançamento da Apple do iOS 13, que é esperado para Setembro são lançados e também foi anunciado em MC181399.
+
+#### <a name="how-does-this-affect-me"></a>Como é que isto me afeta?
+Com a integração do SDK da aplicação do Intune ou ao encapsular a aplicação, pode proteger dados empresariais de aplicações não aprovadas e usuários através de encriptação de dados. O SDK da aplicação Intune para iOS irá utilizar as chaves de encriptação de 256 bits por predefinição, quando a encriptação está ativada por políticas de proteção de aplicação do Intune (aplicações). Após esta alteração, todas as aplicações iOS em versões SDK antes 8.1.1, o que utilizam chaves de encriptação de 128 bits, já não será capazes de partilhar dados com aplicações integrada com SDK 8.1.1 ou utilizando as chaves de 256 bits. Todas as aplicações de iOS tem de ter um SDK versão 8.1.1 ou protegidos superior para permitir a partilha de dados.
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>O que posso fazer para me preparar para esta alteração?
+Verifique as suas Microsoft, terceiros e de linha de negócio (LOB) aplicações. Deve garantir a tudo o que todas as suas aplicações protegidas com a aplicação do Intune estão a utilizar o SDK versão 8.1.1 ou posterior.
+
+- Para aplicações LOB: Terá de voltar a publicar as suas aplicações integradas com a versão SDK 8.1.1 ou posteriores. Recomendamos que a versão mais recente do SDK. Para mais informações sobre como preparar as suas aplicações LOB para políticas de proteção de aplicações, consulte [preparar as aplicações de linha de negócio para políticas de proteção de aplicações](../apps-prepare-mobile-application-management.md).
+- Para a Microsoft/terceiros aplicações: Certifique-se de que está a implementar a versão mais recente destas aplicações aos seus utilizadores.
+
+Também deve atualizar as diretrizes de desenvolvedor ou documentação, se aplicável para incluir esta alteração no suporte para o SDK.
+
+#### <a name="additional-information"></a>Informações adicionais
+https://docs.microsoft.com/intune/apps-prepare-mobile-application-management

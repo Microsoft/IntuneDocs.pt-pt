@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9ae43aa6820f5a858f4dd92153ad4b931af77dc6
-ms.sourcegitcommit: b8021474846b655954c2796c71bdbe2a8d22b421
+ms.openlocfilehash: bc5ea7076e77e5071724168fab58fa78f59601c4
+ms.sourcegitcommit: 7ceae61e036ccf8b33704751b0b39fee81944072
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66500792"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744313"
 ---
 # <a name="in-development-for-microsoft-intune---june-2019"></a>No desenvolvimento do Microsoft Intune – Junho de 2019
 
@@ -99,7 +99,7 @@ Para ver as definições atuais, aceda à [definições de dispositivos de 10 (e
 Aplica-se a: Windows 10 e posterior
 
 #### <a name="deploy-multiple-zebra-mobility-extensions-device-profiles-to-a-device-same-user-group-or-same-devices-group----4089955---"></a>Implementar vários perfis de dispositivo de extensões das riscas das mobilidade num dispositivo, o mesmo grupo de utilizadores ou o mesmo grupo de dispositivos <!-- 4089955 -->
-No Intune, pode utilizar extensões de mobilidade as riscas das (MZ) num perfil de configuração do dispositivo para personalizar as definições ou adicionar as definições não incorporadas ao Intune. Atualmente, pode implementar um perfil para um único dispositivo. Numa atualização futura, poderá implementar vários perfis para:
+No Intune, pode utilizar extensões de mobilidade as riscas das (MX) num perfil de configuração do dispositivo para personalizar as definições ou adicionar as definições não incorporadas ao Intune. Atualmente, pode implementar um perfil para um único dispositivo. Numa atualização futura, poderá implementar vários perfis para:
 
 - O mesmo grupo de utilizadores
 - O mesmo grupo de dispositivos

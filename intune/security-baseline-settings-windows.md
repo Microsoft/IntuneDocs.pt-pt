@@ -16,19 +16,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 92aa438e436c4612ede29564f61c3fc529f789c0
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 82fa4fc7f9e60dff3c08adf3281351cbfa8eb743
+ms.sourcegitcommit: cb76efd3db60a422a65478ebce83d3aea7b5eeed
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045056"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66749937"
 ---
 # <a name="windows-security-baseline-settings-for-intune"></a>Definições da linha de base de segurança do Windows para o Intune  
 
-Ver os [definições de linha de base de segurança do Windows](security-baselines.md) que são suportadas pelo Microsoft Intune.  
+Ver os [definições de linha de base de segurança do Windows](security-baselines.md) que são suportadas pelo Microsoft Intune. As predefinições de linha de base do Windows representam a configuração recomendada para Windows e podem não corresponder aos padrões de linha de base de outras linhas de base de segurança.  
 
 > [!NOTE]  
-> As definições de linha de base de segurança do Windows estão em pré-visualização. Enquanto está em pré-visualização, a lista de definições disponíveis e a ordem em que este conteúdo apresenta essas definições, irão variar consoante o que está disponível no portal.  
+> As definições de linha de base de segurança do Windows estão na **pré-visualização**. Enquanto está em pré-visualização, a lista de definições disponíveis e a ordem em que este conteúdo apresenta essas definições, irão variar consoante o que está disponível no portal.  
 >  
 > Quando as definições de linha de base do modo de pré-visualização, este conteúdo será atualizado com a lista de pré-visualização de definições de linha de base de segurança que o Intune suporta.  
 
@@ -1085,7 +1085,7 @@ Para obter mais informações, consulte [CSP de política - LocalPoliciesSecurit
   **Predefinido**: Sim
 
 - **Virtualizar o arquivo e registro falhas de escrita por localizações de utilizador**  
-  Esta definição de política de controlos se falhas de escrita de aplicações são redirecionadas para locais de sistema de registro e arquivo definidos. Esta definição de política atenua os aplicativos que são executados como administrador e escrever dados de tempo de execução de aplicações para *% ProgramFiles %*, *% Windir %*, *%Windir%\system32*, ou *HKLM\Software*.
+  Esta definição de política de controlos se falhas de escrita de aplicações são redirecionadas para locais de sistema de registro e arquivo definidos. Esta definição de política atenua os aplicativos que são executados como administrador e escrever dados de tempo de execução de aplicações para *% ProgramFiles %* , *% Windir %* , *%Windir%\system32*, ou *HKLM\Software*.
   
   **Predefinido**: Sim
 
@@ -1159,7 +1159,7 @@ Para obter mais informações, consulte [CSP de política - RemoteDesktopService
   **Predefinido**: Enabled
   
 - **Redirecionamento de unidade de bloco**  
-  Esta definição de política especifica se impede o mapeamento de unidades de cliente numa sessão de serviços de ambiente de trabalho remoto (redirecionamento de unidade). Por predefinição, um servidor de anfitrião de sessões de RD mapeia unidades de cliente automaticamente após a ligação. Unidades mapeadas aparecem na árvore de pastas de sessão no Explorador de ficheiros ou de computador no formato  *\<letradaunidade >* no  *\<computername >*. Pode utilizar esta definição de política para substituir esse comportamento. Se ativar esta definição de política, redirecionamento de unidade de cliente não é permitido em sessões de serviços de ambiente de trabalho remoto e redirecionamento de cópia de ficheiros de área de transferência não é permitido em computadores que executam o Windows Server 2003, Windows 8 e Windows XP. Se desativar esta definição de política, o redirecionamento de unidade de cliente é sempre permitido. Além disso, redirecionamento de cópia de ficheiros de área de transferência é sempre permitido se o redirecionamento de área de transferência é permitido. Se não configurar esta definição de política, redirecionamento de unidade de cliente e o redirecionamento de cópia de ficheiros de área de transferência não estão especificados no nível de diretiva de grupo.
+  Esta definição de política especifica se impede o mapeamento de unidades de cliente numa sessão de serviços de ambiente de trabalho remoto (redirecionamento de unidade). Por predefinição, um servidor de anfitrião de sessões de RD mapeia unidades de cliente automaticamente após a ligação. Unidades mapeadas aparecem na árvore de pastas de sessão no Explorador de ficheiros ou de computador no formato  *\<letradaunidade >* no  *\<computername >* . Pode utilizar esta definição de política para substituir esse comportamento. Se ativar esta definição de política, redirecionamento de unidade de cliente não é permitido em sessões de serviços de ambiente de trabalho remoto e redirecionamento de cópia de ficheiros de área de transferência não é permitido em computadores que executam o Windows Server 2003, Windows 8 e Windows XP. Se desativar esta definição de política, o redirecionamento de unidade de cliente é sempre permitido. Além disso, redirecionamento de cópia de ficheiros de área de transferência é sempre permitido se o redirecionamento de área de transferência é permitido. Se não configurar esta definição de política, redirecionamento de unidade de cliente e o redirecionamento de cópia de ficheiros de área de transferência não estão especificados no nível de diretiva de grupo.
   
   **Predefinido**: Enabled
   
