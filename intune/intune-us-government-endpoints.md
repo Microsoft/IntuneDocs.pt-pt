@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 06/30/2019
+ms.date: 05/30/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7a86069b7f4093fb437171d5699df2302fc6fd2a
-ms.sourcegitcommit: df413d1786c9aa0f409424c1e9e102bf230bbe39
+ms.openlocfilehash: e4712c2958e2beee8853ad0d2620414d823da327
+ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66721697"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66804490"
 ---
 # <a name="us-government-endpoints-for-microsoft-intune"></a>Pontos finais de administração pública dos EUA para o Microsoft Intune
 
