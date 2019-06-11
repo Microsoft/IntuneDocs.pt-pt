@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bc5ea7076e77e5071724168fab58fa78f59601c4
-ms.sourcegitcommit: 7ceae61e036ccf8b33704751b0b39fee81944072
+ms.openlocfilehash: 4e9a640a343efd4ad786d7697439531de3cd4ed3
+ms.sourcegitcommit: 2f32f6d2129bc10cc4a02115732e995edceb37d6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744313"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66828959"
 ---
 # <a name="in-development-for-microsoft-intune---june-2019"></a>No desenvolvimento do Microsoft Intune – Junho de 2019
 
@@ -50,9 +50,6 @@ Para ajudar na preparação de sua e planejamento, esta página, listas de atual
 
 #### <a name="device-users-can-view-all-managed-apps-theyve-installed-or-tried-to-install----2352913---"></a>Os utilizadores de dispositivos, podem ver todas as aplicações geridas que tenham instalado ou tentou instalar <!-- 2352913 -->
 Portal da empresa para Windows listará todas as aplicações geridas (tanto necessárias quanto disponíveis) que estão instaladas no dispositivo de um utilizador. Os utilizadores serão capazes de vista de tentativa e pendentes instalações de aplicações e respetivos Estados atuais. Se sua organização não torne as aplicações necessárias ou disponíveis, os utilizadores verão uma mensagem que explica que não existem aplicações da empresa foram instaladas. Os utilizadores também serão capazes de classificar ou filtrar as suas aplicações por Estado da instalação.
-
-#### <a name="available-google-play-app-reporting-for-android-work-profiles----3041956---"></a>Aplicação Google Play disponível, geração de relatórios para perfis de trabalho Android <!-- 3041956 -->
-Para instalações de aplicações disponíveis em dispositivos de perfil de trabalho Android, poderá ver o estado de instalação de aplicações, bem como a versão instalada do aplicações geridas do Google Play. Para obter mais informações, consulte [como monitorizar as políticas de proteção de aplicações](app-protection-policies-monitor.md), [Android gerir dispositivos de perfil de trabalho com o Intune](android-enterprise-overview.md) e [tipo de aplicação do Google Play gerido](apps-add-android-for-work.md#managed-google-play-app-type).
 
 #### <a name="configure-which-browser-is-allowed-to-link-to-organization-data----3145939---"></a>Configurar o browser tem permissão para ligar aos dados da organização <!-- 3145939 -->
 Intune App Protection políticas (aplicação) em dispositivos Android e iOS permitirá a transferência Org ligações da web para um determinado navegador, além do Browser gerido do Intune ou do Microsoft Edge.  Para obter mais informações sobre a aplicação, consulte [quais são as políticas de proteção de aplicações?](app-protection-policy.md).

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b4d4efd34bbc83f29e8dc8ca03419b70bc7083cd
-ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
+ms.openlocfilehash: 30fee770e4af561cac62241e65b673d2f608c918
+ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66804642"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66819712"
 ---
 # <a name="network-endpoints-for-microsoft-intune"></a>Pontos finais de rede para o Microsoft Intune
 
@@ -32,8 +32,8 @@ Como um serviço apenas na cloud, o Intune não precisa de infraestrutura no loc
 
 Para gerir dispositivos protegidos por firewalls e servidores proxy, tem de ativar as comunicações para o Intune.
 
-- O servidor proxy tem de suportar **HTTP (80)** e **HTTPS(443)** , porque os clientes do Intune utilizam ambos os protocolos
-- Para certas tarefas (como transferir atualizações de software), o Intune necessita de acesso não autenticado do servidor proxy ao site manage.microsoft.com
+- O servidor proxy tem de suportar **HTTP (80)** e **HTTPS (443)** porque os clientes do Intune utilizam ambos os protocolos. Windows Information Protection utiliza a porta 444.
+- Para algumas tarefas (como transferir as atualizações de software para o agente de pc clássica), o Intune necessita de acesso ao servidor de proxy não autenticados para manage.microsoft.com
 
 Pode modificar as definições do servidor proxy em computadores cliente individuais. Também pode utilizar as definições da Política de Grupo para alterar as definições para todos os computadores cliente localizados atrás de um servidor proxy especificado.
 
@@ -108,6 +108,9 @@ Se estiver a utilizar o Intune para implementar aplicações de Win32 ou de scri
 | AMSUC0501 | prodmsuc05data | https://prodmsuc05data.azureedge.net |
 | AMSUA0701 | pemsua07rcdata | https://pemsua07data.azureedge.net |
 
+### <a name="windows-push-notification-services-wns"></a>Serviços de notificação Push do Windows (WNS)
+Para dispositivos do Windows geridos pelo Intune geridos através de gestão de dispositivos móveis (MDM), ações do dispositivo e outras atividades de imediato requerem a utilização do Windows Push Notification Services (WNS). Para obter mais informações, consulte [tráfego de notificação do Windows que permite através de firewalls empresariais](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config).    
+
 ### <a name="delivery-optimization-port-requirements"></a>Requisitos de portas de otimização de entrega
 
 #### <a name="port-requirements"></a>Requisitos de portas
@@ -130,10 +133,8 @@ Para os metadados de otimização de entrega:
 
 |Utilizado para|Nome do anfitrião (endereço IP/sub-rede)|Protocol|Port|
 |-----|--------|------|-------|
-|Receber Notificações push do serviço do Intune através do Serviço Apple Push Notification (APNS). Veja a documentação da Apple [aqui](https://support.apple.com/en-us/HT203609)|                                    gateway.push.apple.com (17.0.0.0/8)                                  |    TCP     |     2195     |
-|Enviar comentários para o serviço do Intune através do Serviço Apple Push Notification (APNS)|                                  feedback.push.apple.com(17.0.0.0/8)                                  |    TCP     |     2196     |
 |Obter e apresentar o conteúdo de servidores da Apple|itunes.apple.com<br>\*.itunes.apple.com<br>\*.mzstatic.com<br>\*.phobos.apple.com<br> \*.phobos.itunes-apple.com.akadns.net |    HTTP    |      80      |
-|Comunicações com os servidores do APNS|#-courier.push.apple.com (17.0.0.0/8)<br>'#' é um número aleatório de 0 a 50.|    TCP     |  5223 e 443  |
+|Comunicações com os servidores do APNS|#-courier.push.apple.com<br>'#' é um número aleatório de 0 a 50.|    TCP     |  5223 e 443  |
 |Várias funcionalidades, inclusive, acesso a World Wide Web, na iTunes store, loja de aplicações de macOS, iCloud, mensagens, etc. |phobos.apple.com<br>ocsp.apple.com<br>ax.itunes.apple.com<br>ax.itunes.apple.com.edgesuite.net| HTTP/HTTPS |  80 ou 443   |
 
 Para obter mais informações, veja [Portas TCP e UDP utilizadas pelos produtos de software Apple](https://support.apple.com/en-us/HT202944), [Acerca das ligações aos hosts dos servidores do macOS, iOS e iTunes e dos processos em segundo plano do iTunes](https://support.apple.com/en-us/HT201999) e [Se os clientes macOS e iOS não receberem notificações por push da Apple](https://support.apple.com/en-us/HT203609).

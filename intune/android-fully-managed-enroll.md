@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9edfa2ec7a408f512d4cb0b99a468db0b29f5868
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: f1b1197671b54cb5374bd79b6acbeb8137c0135c
+ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66044194"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66819886"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-fully-managed-devices-preview"></a>Configurar o Intune inscrição do Android Enterprise totalmente dispositivos geridos (pré-visualização)
 
@@ -55,8 +55,11 @@ Para configurar o Android Enterprise totalmente geridos gestão de dispositivos,
 
 ### <a name="enable-corporate-owned-user-devices"></a>Permitir que os dispositivos pertencentes à empresa de utilizador empresarial
 
-1. Vá para o [portal do Intune](https://portal.azure.com) e escolha **inscrição de dispositivos** > **inscrição de dispositivos Android** > **pertencente à empresa, totalmente dispositivos de utilizador (pré-visualização) geridos**.
+1. Inicie sessão no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) e escolha **inscrição de dispositivos** > **inscrição de dispositivos Android** > **pertencente à empresa, totalmente gerido dispositivos de utilizador (pré-visualização)** .
 2. Sob **permitir que os utilizadores a inscrição de dispositivos do utilizador pertencentes**, escolha **Sim**.
+
+[!NOTE]
+Se tiver definida uma política de acesso condicional do Azure AD que utiliza a *requer um dispositivo ser marcado como compatível* controlar e aplica-se ao **aplicações na Cloud de todos os**, **Android** e **Navegadores** -tem de excluir a **Microsoft Intune** aplicação na cloud desta política. Isso ocorre porque os processos de configuração do Android utiliza um separador do Chrome para autenticar os utilizadores durante a inscrição. Para obter mais informações, consulte [documentação de acesso condicional do Azure AD](https://docs.microsoft.com/azure/active-directory/conditional-access/).
 
 Quando esta definição está definida como **Sim**, fornece-lhe um token de inscrição (uma cadeia aleatória) e um código QR para o seu inquilino do Intune. Este token de inscrição única é válido para todos os seus utilizadores e não expira. Consoante o SO Android e a versão do dispositivo, pode utilizar o token ou código QR para inscrever o dispositivo de quiosque.
 

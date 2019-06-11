@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 02/22/2019
+ms.date: 05/28/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 25f1bb6d2d78f5c4188d81bc8d9be2cc0c7de43e
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 19e1ec5cda5a69320820899b1cb1c5d665fd9f16
+ms.sourcegitcommit: 2f32f6d2129bc10cc4a02115732e995edceb37d6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61495174"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66828944"
 ---
 # <a name="install-and-share-apps-on-your-device"></a>Instalar e partilhar aplicações no seu dispositivo
 Instale aplicações no seu dispositivo a partir da aplicação Portal da Empresa para Windows.
@@ -38,7 +38,7 @@ Instale aplicações no seu dispositivo a partir da aplicação Portal da Empres
     * **Home page**: Selecione uma lista de aplicações em destaque da sua organização.  
     * **Mostrar tudo**: Do **Home page** > **aplicações** secção, clique em **Mostrar tudo** para ver todas as aplicações disponíveis.  
     * **Todas as aplicações**: Selecione esta página no painel de navegação para ver todas as aplicações disponíveis, incluindo instalado e em destaque.  
-    * **Categorias de aplicações**: Selecione esta página no painel de navegação para escolher as aplicações com base em tipo ou função. Aplicações são ordenadas em categorias, como **em destaque**, **educação**, e **produtividade**.  
+    * **Categorias das aplicações**: Selecione esta página no painel de navegação para escolher as aplicações com base em tipo ou função. Aplicações são ordenadas em categorias, como **em destaque**, **educação**, e **produtividade**.  
     * **Procurar aplicações**: Uma barra de pesquisa estática encontra-se no painel de navegação da aplicação.  Para encontrar as aplicações disponíveis, procure por nome da aplicação ou publicador.  
     * **Todas as aplicações**: Ver, ordenar e filtrar todas as aplicações disponíveis. Os resultados da pesquisa são ordenados automaticamente por relevância.  
 
@@ -70,6 +70,10 @@ Depois de partilhar, o destinatário receberá uma ligação e uma mensagem para
 Sua organização seleciona as aplicações que são adequadas e útil para no trabalho ou escola. Estas aplicações são os únicos, encontrará no Portal da empresa.  
 
 Aplicações também são disponibilizadas para com base em seu tipo de dispositivo. Por exemplo, se estiver a utilizar a aplicação Portal da empresa para Windows, terá acesso a aplicações do Windows, mas não aplicações de iOS.  
+
+## <a name="required-apps"></a>Required apps  
+
+Sua organização pode implementar algumas aplicações diretamente no seu dispositivo e marcá-los como **necessário**. Estas aplicações serão automaticamente instaladas para sem a intervenção.
 
 ## <a name="request-an-app-for-work-or-school"></a>Pedido de aplicação para a empresa ou escola  
 Se existir uma aplicação precisa, mas não a vir no Portal da empresa, solicitá-la. Encontrar detalhes de contactos do seu **suporte técnico** na aplicação Portal da empresa, na página de ajuda e suporte. Encontrará as mesmas informações de contactos a [site do Portal da empresa](https://go.microsoft.com/fwlink/?linkid=2010980).    

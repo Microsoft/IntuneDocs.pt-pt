@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b7998eb82b27a7e70d5a77374950e544fd603f6d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 1929b811a5a5320bc0ceefcef4f05ed2443ac070
+ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046286"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66819656"
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune"></a>Ativar o conector da Defesa Contra Ameaças para Dispositivos Móveis no Intune
 
@@ -33,11 +33,7 @@ Durante a configuração da Defesa Contra Ameaças para Dispositivos Móveis (MT
 
 ## <a name="to-enable-the-mtd-connector"></a>Para ativar o conector da MTD
 
-1. Aceda ao [portal do Azure](https://portal.azure.com) e inicie sessão com as credenciais do Intune. Depois de iniciar sessão com êxito, verá o **Dashboard do Azure**.
-
-2. No **Dashboard do Azure**, selecione **Todos os serviços**, no menu à esquerda e, em seguida, escreva **Intune** no filtro da caixa de texto.
-
-3. Selecione **Intune** e o **Dashboard do Intune** será aberto.
+1. Inicie sessão no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 
 4. No **Dashboard do Intune**, selecione **Conformidade do dispositivo** e, em seguida, **Proteção Contra Ameaças para Dispositivos Móveis**, na secção **Configuração**.
 

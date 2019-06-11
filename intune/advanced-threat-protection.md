@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1d13d4094239cd36f736bb5cb19af7a11d29e727
-ms.sourcegitcommit: 337b554f9becc40cdea2f5f47a4a129ac491f64c
+ms.openlocfilehash: 78c34345804f600aa62ff5e25ef27a23591e0f5c
+ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66719582"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66819865"
 ---
 # <a name="enforce-compliance-for-windows-defender-atp-with-conditional-access-in-intune"></a>Impor a conformidade para Windows Defender ATP com acesso condicional no Intune
 
@@ -131,7 +131,7 @@ A política de acesso condicional bloqueará o acesso a recursos *se* o disposit
 > [!TIP]  
 > O Acesso Condicional é uma tecnologia do Azure Active Directory (Azure AD). O nó de Acesso Condicional acedido a partir do *Intune* é o mesmo nó acedido a partir do *Azure AD*.  
 
-1. Na [portal do Azure](https://portal.azure.com), abra **Intune** > **acesso condicional** > **nova política**.
+1. Inicie sessão no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) e selecione **acesso condicional** > **nova política**.
 2. Introduza um **Nome** para a política e selecione **Utilizadores e grupos**. Utilize as opções Incluir ou Excluir para adicionar os grupos à política e selecione **Concluído**.
 3. Selecione **Aplicações na cloud** e escolha as aplicações que quer proteger. Por exemplo, escolha **Selecionar aplicações** e selecione **Office 365 SharePoint Online** e **Office 365 Exchange Online**.
 
