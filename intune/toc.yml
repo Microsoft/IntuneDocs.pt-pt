@@ -270,7 +270,7 @@
         - name: Erase macOS device (Eliminar dispositivo macOS)
           href: device-erase.md
         - name: Controlar remotamente dispositivos móveis
-          href: device-profile-android-teamviewer.md
+          href: teamviewer-support.md
         - name: "Reposição do PIN do Windows\_10"
           href: device-windows-pin-reset.md
         - name: Sincronizar o dispositivo
