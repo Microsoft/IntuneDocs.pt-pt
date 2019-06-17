@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c38767965b085a4fbfe5cd8904d365c2fecc9eb1
-ms.sourcegitcommit: a2bad7465422b98eb3c10f03dc5a24fd99cee78d
-ms.translationtype: HT
+ms.openlocfilehash: 052190185159dfdee4adee94d4c43c72ce6f41d4
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.translationtype: MT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 06/13/2019
-ms.locfileid: "67041326"
+ms.locfileid: "67046336"
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>Onde está a minha funcionalidade do Intune no Azure?
 Organizámos algumas tarefas por ordem mais lógica ao mover o Intune para o portal do Azure. Cada melhoria significa ter de conhecer a nova localização das funcionalidades. Criámos este guia de referência para os utilizadores que estão familiarizados com o Intune no portal clássico e que pretendem saber como realizar tarefas do Intune no portal do Azure. Se este artigo não abranger uma funcionalidade que procura, deixe um comentário no final do artigo para o atualizarmos.
@@ -69,10 +69,10 @@ A capacidade de permitir ou bloquear dispositivos pessoais é agora gerida na se
 
 São adicionadas novas funcionalidades de restrição apenas ao portal do Azure.
 
-## <a name="where-did-my-conditional-access-policies-go"></a>O que aconteceu às minhas políticas de acesso condicional?
-Após a migração do seu inquilino para o portal do Azure, as políticas de acesso condicional do seu inquilino continuam a ser aplicadas. No entanto, não pode vê-las nem modificá-las a partir do Intune no portal do Azure.
+## <a name="where-did-my-conditional-access-policies-go"></a>Em que passei a minha políticas de acesso condicional?
+Após a migração do inquilino para o portal do Azure, políticas de acesso condicional do seu inquilino continuarão a ser impostas. No entanto, não pode vê-las nem modificá-las a partir do Intune no portal do Azure.
 
-Se quiser ver e fazer alterações às políticas de acesso condicional a partir do portal do Azure, terá de remover as políticas antigas do portal clássico. Em seguida, deverá criá-las novamente no portal do Azure. Para obter mais informações sobre a migração de políticas de acesso condicional, veja [Migrar política clássicas no Portal do Azure](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-migration). 
+Se gostaria de ver e fazer alterações às políticas de acesso condicional do portal do Azure, terá de remover as antigas políticas no portal clássico. Em seguida, deverá criá-las novamente no portal do Azure. Para obter mais informações sobre migrar políticas de acesso condicional, consulte [migrar políticas clássicas no Portal do Azure](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-migration). 
 
 ## <a name="where-did-my-compliance-policies-go"></a>O que aconteceu às minhas políticas de conformidade?
 Após a migração do seu inquilino para o portal do Azure, as políticas de conformidade do seu inquilino continuam a ser aplicadas. No entanto, não pode vê-las nem modificá-las a partir do Intune no portal do Azure.

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9c33f13a7768b86895b89732f1f595d2ede39b41
-ms.sourcegitcommit: 119962948045079022aa48f968dde3e961d7cd0c
-ms.translationtype: HT
+ms.openlocfilehash: 063a288c99f3f773b63bd6fe0040e200a754c888
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67031578"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67046292"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Resolver problemas de inscrição de dispositivos no Microsoft Intune
 
@@ -163,7 +163,7 @@ A seguinte tabela indica os erros que os utilizadores finais poderão ver ao ins
 
 - Não podem receber políticas, aplicações e comandos remotos a partir do serviço do Intune.
 - Mostram o Estado de Gestão **Mau estado de funcionamento** na consola do administrador.
-- Os utilizadores protegidos por políticas de acesso condicional podem perder o acesso a recursos empresariais.
+- Os utilizadores que estão protegidos por políticas de acesso condicional podem perder o acesso aos recursos empresariais.
 
 O software Samsung Smart Manager, incluído em determinados dispositivos Samsung, pode desativar o Portal da Empresa do Intune e os respetivos componentes. Quando o Portal da Empresa está num estado desativado, este não pode ser executado em segundo plano e não pode contactar o serviço do Intune.
 
@@ -241,7 +241,7 @@ Para corrigir o problema, importe os certificados para os Certificados dos Compu
 3.  Localize o certificado para a comunicação de serviço do AD FS (um certificado assinado publicamente) e faça duplo clique para ver as respetivas propriedades.
 4.  Escolha o separador **Caminho de Certificação** para ver os certificados principais do certificado.
 5.  Em cada certificado principal, escolha **Ver Certificado**.
-6.  Selecione **Detalhes** > **Copiar para o ficheiro…** .
+6.  Selecione **Detalhes** > **Copiar para o ficheiro…**.
 7.  Siga as instruções do assistente para exportar ou guardar a chave pública do certificado principal numa localização do ficheiro à sua escolha.
 8.  Clique com botão direito do rato em **Certificados** > **Todas as Tarefas** > **Importar**.
 9.  Siga as instruções do assistente para importar os certificados principais para **Computador Local\Pessoal\Certificados**.
@@ -280,7 +280,7 @@ A tabela seguinte indica os erros que os utilizadores finais poderão ver ao ins
 
 - Não podem receber políticas, aplicações e comandos remotos a partir do serviço do Intune.
 - Mostram o Estado de Gestão **Mau estado de funcionamento** na consola do administrador.
-- Os utilizadores protegidos por políticas de acesso condicional podem perder o acesso a recursos empresariais.
+- Os utilizadores que estão protegidos por políticas de acesso condicional podem perder o acesso aos recursos empresariais.
 
 **Resolução:** Partilhe as seguintes resoluções com os utilizadores finais para ajudá-los a recuperar o acesso aos recursos empresariais.
 

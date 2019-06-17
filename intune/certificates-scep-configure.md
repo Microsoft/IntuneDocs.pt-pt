@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/06/2019
+ms.date: 06/13/2019
 ms.topic: article
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 188e766224dc7fdd1f529055df7f5fc585a5ae42
-ms.sourcegitcommit: a2bad7465422b98eb3c10f03dc5a24fd99cee78d
-ms.translationtype: HT
+ms.openlocfilehash: bd48e7c83af0a786e1b34f91c05e95a5d47f3d45
+ms.sourcegitcommit: 268f495de486718b99d9c1b60d4576030cafd17b
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67041309"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "67141829"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Configurar e utilizar certificados SCEP com o Intune
 
@@ -68,7 +68,7 @@ Recomendamos vivamente a publicação do servidor do NDES através de um proxy i
 |**Modelo de Certificado**|Configura este modelo na sua AC emissora.|
 |**Certificado de autenticação de cliente**|Pedido pela sua AC emissora ou AC pública; instala este certificado no Servidor do NDES.|
 |**Certificado de autenticação do servidor**|Pedido pela sua AC emissora ou a AC pública; instala e vincula este certificado SSL no IIS no servidor do NDES. Se o certificado tiver o conjunto de utilizações de chave de autenticação de cliente e servidor (**Utilizações de Chave Avançadas**), pode utilizar o mesmo certificado.|
-|**Certificado da AC de Raiz Fidedigna**|Irá exportar este certificado como um ficheiro **.cer** a partir da AC de raiz ou de qualquer dispositivo que confie na AC de raiz. Em seguida, atribuí-la a utilizadores, dispositivos ou ambos os com o perfil de certificado de AC fidedigna.<br /><b>Nota:<b />quando é atribuído um perfil de certificado SCEP, certifique-se de que atribuir o perfil de certificado de raiz fidedigna referenciado no seu perfil de certificado SCEP no mesmo grupo de utilizadores ou dispositivos.<br /><br />Utiliza apenas um certificado da AC de Raiz Fidedigna por cada plataforma de sistema operativo e associa-o a cada perfil de Certificado de Raiz Fidedigna que criar.<br /><br />Pode utilizar certificados da AC de Raiz Fidedigna adicionais quando necessário. Por exemplo, pode fazê-lo para conceder um estatuto de fidedignidade a uma AC que assina os certificados de autenticação do servidor para os seus pontos de acesso Wi-Fi.|
+|**Certificado da AC de Raiz Fidedigna**|Irá exportar este certificado como um ficheiro **.cer** a partir da AC de raiz ou de qualquer dispositivo que confie na AC de raiz. Em seguida, atribuí-la a utilizadores, dispositivos ou ambos os com o perfil de certificado de AC fidedigna.<br /> **Nota:<br />quando lhe for atribuído um perfil de certificado SCEP, certifique-se de que atribuir a *perfil de certificado de raiz fidedigno* referenciado no seu perfil de certificado SCEP no mesmo grupo de utilizadores ou dispositivos.  Para criar este perfil, veja [criar um perfil de certificado fidedigno](certficates-pfx-configure.md#create-a-trusted-certificate-profile), que está documentado no artigo sobre perfis de certificado PKCS.** <br/><br />Utilizar um único certificado de AC de raiz fidedigna por plataforma de sistema operativo e associá-lo a cada perfil de certificado de raiz fidedigna que criar. <br /><br />Pode utilizar certificados da AC de Raiz Fidedigna adicionais quando necessário. Por exemplo, pode fazê-lo para conceder um estatuto de fidedignidade a uma AC que assina os certificados de autenticação do servidor para os seus pontos de acesso Wi-Fi.|
 
 ### <a name="accounts"></a>Contas
 
@@ -225,7 +225,7 @@ Neste passo, irá:
 3. O servidor do NDES recebe URLs extensos (consultas) que exigem a adição de duas entradas de registo:
 
 
-   |                        Location                        |      Value      | Type  |      Dados       |
+   |                        Location                        |      Valor      | Type  |      Dados       |
    |--------------------------------------------------------|-----------------|-------|-----------------|
    | HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters | MaxFieldLength  | DWORD | 65534 (decimal) |
    | HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters | MaxRequestBytes | DWORD | 65534 (decimal) |
@@ -487,7 +487,7 @@ Para se certificar de que o serviço está em execução, abra um browser e intr
      - **Assinatura digital**: Permitir a troca de chaves apenas quando uma assinatura digital ajudar a proteger a chave
    - **Tamanho da chave (bits)** : Selecione o número de bits que está contido na chave
    - **Algoritmo hash** (Android, Windows Phone 8.1, Windows 8.1, Windows 10): Selecione um dos tipos de algoritmo hash disponíveis para utilizar com este certificado. Selecione o maior nível de segurança que os dispositivos de ligação suportam.
-   - **Certificado de raiz**: Selecione um perfil de certificado de AC configurado anteriormente e atribuído para o utilizador e/ou o dispositivo de raiz. Este certificado da AC tem de ser o certificado de raiz da AC que emite o certificado que está a configurar neste perfil de certificado. Certifique-se de que atribuir este perfil de certificado de raiz fidedigna para o mesmo grupo atribuído no perfil de certificado SCEP.
+   - **Certificado de raiz**: Escolher uma [perfil de certificado de raiz fidedigno](certficates-pfx-configure.md#create-a-trusted-certificate-profile) que anteriormente criado e atribuído ao utilizador e/ou do dispositivo. Este certificado da AC tem de ser o certificado de raiz da AC que emite o certificado que está a configurar neste perfil de certificado. Certifique-se de que atribuir este perfil de certificado de raiz fidedigna para o mesmo grupo atribuído no perfil de certificado SCEP.
    - **Utilização alargada da chave**: **Adicionar** objetivo de valores para o certificado. Na maioria dos casos, o certificado exige a **Autenticação de Cliente** para o utilizador ou dispositivo poder ser autenticado num servidor. Contudo, pode adicionar mais utilizações de chave conforme necessário.
    - **Definições de Inscrição**
      - **Limiar de renovação (%)** : Introduza a percentagem da duração do certificado que permanece antes do dispositivo pedir renovação do certificado.
