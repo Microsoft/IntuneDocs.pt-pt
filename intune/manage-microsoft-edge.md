@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c1a255391a2cf27a764da6122031fd0c9cbb64cf
-ms.sourcegitcommit: cb76efd3db60a422a65478ebce83d3aea7b5eeed
+ms.openlocfilehash: 1ad8a3298a801b07e021b84bd5eea9c91f01f1a2
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66751393"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044873"
 ---
 # <a name="manage-web-access-using-microsoft-edge-with-microsoft-intune"></a>Gerir o acesso web usando o Microsoft Edge com o Microsoft Intune
 
@@ -134,7 +134,7 @@ Microsoft Edge e [Proxy de aplicações do Azure AD](https://docs.microsoft.com/
 
 Estes são alguns exemplos dos cenários de ativar o Proxy de aplicações do AD: 
 
-- Um utilizador está a utilizar a aplicação Outlook móveis que se encontra protegida pelo Intune. Eles, em seguida, clique num link para um site da intranet numa mensagem de e-mail e o Microsoft Edge reconhece que este site da intranet foi exposto ao utilizador através do Proxy de aplicações. O utilizador é encaminhado automaticamente através do Proxy de aplicações para se autenticar com qualquer aplicável multi-factor authentication e acesso condicional, antes de chegar ao site da intranet. Os utilizadores podem agora aceder a sites internos mesmo nos respetivos dispositivos móveis e a ligação no Outlook funciona conforme esperado.
+- Um utilizador está a utilizar a aplicação Outlook móveis que se encontra protegida pelo Intune. Eles, em seguida, clique num link para um site da intranet numa mensagem de e-mail e o Microsoft Edge reconhece que este site da intranet foi exposto ao utilizador através do Proxy de aplicações. O utilizador é encaminhado automaticamente através do Proxy de aplicações para se autenticar com qualquer autenticação multifator aplicável e o acesso condicional, antes de chegar ao site da intranet. Os utilizadores podem agora aceder a sites internos mesmo nos respetivos dispositivos móveis e a ligação no Outlook funciona conforme esperado.
 - Um utilizador abre o Microsoft Edge no seu dispositivo iOS ou Android. Se o Microsoft Edge está protegido com o Intune e o proxy de aplicações está ativado, o utilizador pode navegar para um site da intranet através do URL interno que são utilizadas para. Microsoft Edge reconhece que este site da intranet foi exposto ao utilizador através do Proxy de aplicações e o utilizador é encaminhado automaticamente através do Proxy de aplicações, para autenticar antes de chegar ao site da intranet. 
 
 ### <a name="before-you-start"></a>Antes de começar
@@ -190,7 +190,7 @@ Utilize o seguinte par chave/valor para configurar os marcadores geridos:
 
 Por predefinição, os utilizadores serão apresentados os sites de My Apps que estão configurados para-los numa pasta dentro de marcadores do Microsoft Edge. A pasta serão identificados como com o nome da sua organização.
 
-|    Chave    |    Value    |
+|    Chave    |    Valor    |
 |------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
 |    com.microsoft.intune.mam.managedbrowser.MyApps    |    **Verdadeiro** mostra MyApps dentro os indicadores do Microsoft Edge.<p>**FALSO** oculta MyApps dentro do Microsoft Edge.    |
 
@@ -199,7 +199,7 @@ Pode utilizar a configuração de aplicações para definir os sites que os util
 
 Pode utilizar o abaixo pares chave/valor para configurar uma lista de sites permitidos ou bloqueados para o Microsoft Edge. Continue a ler para obter mais informações sobre formatos de URL válidos. 
 
-|    Chave    |    Valor    |
+|    Chave    |    Value    |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    Escolha entre:<p>1. Especificar URLs permitidos (apenas estes URLs são permitidos; não pode aceder a mais nenhum site):<br>`com.microsoft.intune.mam.managedbrowser.AllowListURLs`<p>2. Especificar URLs bloqueados (é possível aceder a todos os outros sites):<br>`com.microsoft.intune.mam.managedbrowser.BlockListURLs`    |    O valor correspondente da chave é uma lista de URLs. Introduza todos os URLs que pretende permitir ou bloquear como um único valor, separado por um pipe `|` caráter.<p>**Exemplos:**<br>`URL1|URL2|URL3`<br>`http://.contoso.com/|https://.bing.com/|https://expenses.contoso.com`  |
 
@@ -249,7 +249,7 @@ Utilize o abaixo par chave/valor para configurar se essas transições de forma 
 
 O Intune Managed Browser e o Microsoft Edge são agora podem ser utilizados como navegadores protegido por políticas. Para garantir que os seus utilizadores estão a ser direcionados para utilizar a aplicação de browser correto, direcionar todas as aplicações geridas do Intune (por exemplo, o Outlook e o OneDrive) com a definição de configuração seguinte:
 
-|    Chave    |    Valor    |
+|    Chave    |    Value    |
 |------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    `com.microsoft.intune.useEdge`    |    O valor `true` irá direcionar os utilizadores a utilizar o Microsoft Edge.<p>O valor `false` direcionará os seus utilizadores para utilizarem o Intune Managed Browser.    |
 
@@ -283,7 +283,7 @@ Segurança e privacidade considerações adicionais para o Microsoft Edge:
 - Microsoft Edge não consome as definições que os utilizadores definidos para o navegador nativo nos respetivos dispositivos, porque o Microsoft Edge não é possível aceder a estas definições.
 - Se configurar a opção **exigir PIN simples para acesso** ou **exigir credenciais da empresa para obter acesso** numa aplicação associado à política de proteção com o Microsoft Edge e um utilizador seleciona a ligação de ajuda sobre o página de autenticação, pode procurar sites na Internet independentemente de terem sido adicionados a uma lista de bloqueios na política.
 - Microsoft Edge só pode bloquear acesso a sites quando estes são acedidos diretamente. Não bloqueia o acesso quando são utilizados serviços intermédios (como um serviço de tradução) para aceder ao site.
-- Para permitir a autenticação e acesso a documentação do Intune, * **. microsoft.com** está excluído das definições da lista de permissões ou de bloqueios. É sempre permitido.
+- Para permitir a autenticação e acesso a documentação do Intune, ***. microsoft.com** está excluído das definições da lista de permissões ou de bloqueios. É sempre permitido.
 Desative a dados de utilização do Microsoft automaticamente recolhe dados anónimos sobre o desempenho e a utilização do Browser gerido para melhorar os produtos e serviços Microsoft. Os utilizadores podem desativar a recolha de dados com a definição **Dados de Utilização** nos respetivos dispositivos. OS utilizadores não têm controlo sobre a recolha destes dados. Em dispositivos iOS, os sites que os utilizadores visitam que têm um certificado expirado ou não fidedigno não podem ser abertos.
 
 ## <a name="next-steps"></a>Passos Seguintes

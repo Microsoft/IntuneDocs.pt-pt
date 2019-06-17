@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b799fd65a08646b46bf7fcce67bf4a09dc0413a6
-ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
+ms.openlocfilehash: bf808a9a7f5a801997f37bd2ecf4c13e3823c332
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66819904"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044795"
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices-in-intune"></a>Automatizar o e-mail e adicionar ações para dispositivos não conformes no Intune
 
@@ -27,7 +27,7 @@ Para dispositivos que não cumprem as políticas de conformidade ou regras, pode
 
 ## <a name="overview"></a>Descrição geral
 
-Por predefinição, quando o Intune deteta um dispositivo não conforme, este marca imediatamente o dispositivo como não conforme. O [acesso condicional](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) do Azure Active Directory (AD) bloqueia então o dispositivo. Quando um dispositivo não estiver em conformidade, **ação de não conformidade** também oferece flexibilidade para decidir o que fazer. Por exemplo, não bloqueie o dispositivo de imediato e dê ao utilizador um período de tolerância para ficar conforme.
+Por predefinição, quando o Intune deteta um dispositivo não conforme, este marca imediatamente o dispositivo como não conforme. O Azure Active Directory (AD) [acesso condicional](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) , em seguida, impede o dispositivo. Quando um dispositivo não estiver em conformidade, **ação de não conformidade** também oferece flexibilidade para decidir o que fazer. Por exemplo, não bloqueie o dispositivo de imediato e dê ao utilizador um período de tolerância para ficar conforme.
 
 Existem vários tipos de ação:
 
@@ -55,7 +55,7 @@ Este artigo mostra-lhe como:
   - [macOS](compliance-policy-create-mac-os.md)
   - [Windows](compliance-policy-create-windows.md)
 
-- Quando utilizar políticas de conformidade do dispositivo para bloquear dispositivos dos recursos empresariais, tem de configurar o acesso condicional do Azure AD. Veja os artigos [Acesso condicional no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) ou [Formas comuns de utilizar o acesso condicional com o Intune](conditional-access-intune-common-ways-use.md) para obter orientação.
+- Quando utilizar políticas de conformidade do dispositivo para bloquear a recursos da empresa de dispositivos, acesso condicional do Azure AD tem de ser definido. Ver [acesso condicional no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) ou [formas comuns de utilizar o acesso condicional com o Intune](conditional-access-intune-common-ways-use.md) para obter orientações.
 
 ## <a name="create-a-notification-message-template"></a>Criar um modelo de mensagem de notificação
 
@@ -103,7 +103,7 @@ Também pode adicionar outra ação quando criar uma política de conformidade o
     
     - **Bloquear remotamente o dispositivo não conforme**: Quando o dispositivo está em conformidade, bloquear o dispositivo. Esta ação força o utilizador introduza um PIN ou código de acesso para desbloquear o dispositivo. 
     
-5. Configurar uma **agenda**: Introduza o número de dias (0 a 365) após a não conformidade para acionar a ação nos dispositivos dos utilizadores. Depois deste período de tolerância, pode impor uma política de acesso condicional. Se introduzir **0** (zero) número de dias, em seguida, acesso condicional entra em vigor **imediatamente**. Por exemplo, pode bloquear o acesso aos recursos empresariais imediatamente se um dispositivo não estiver em conformidade.
+5. Configurar uma **agenda**: Introduza o número de dias (0 a 365) após a não conformidade para acionar a ação nos dispositivos dos utilizadores. Depois desse período, pode impor uma política de acesso condicional. Se introduzir **0** (zero) número de dias, em seguida, acesso condicional entra em vigor **imediatamente**. Por exemplo, pode bloquear o acesso aos recursos empresariais imediatamente se um dispositivo não estiver em conformidade.
 
 6. Quando terminar, selecione **Adicionar** > **OK** para guardar as alterações.
 

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/29/2019
+ms.date: 06/12/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2950ddf4b130222e23fd9ea23f7c9e5793f8638a
-ms.sourcegitcommit: 229816afef86a9767eaca816d644c77ec4babed5
+ms.openlocfilehash: 357d1619fdf051d07ea47c84a79b2aebd1523460
+ms.sourcegitcommit: a2bad7465422b98eb3c10f03dc5a24fd99cee78d
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66354223"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67041124"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Definições de dispositivos de 10 (e versões posteriores) do Windows para permitir ou restringir funcionalidades com o Intune
 
@@ -430,9 +430,9 @@ Utilizam estas definições a [DeviceLock política CSP](https://docs.microsoft.
     > [!IMPORTANT]
     > Quando o requisito de palavra-passe é alterado numa área de trabalho do Windows, os utilizadores são afetados da próxima vez que iniciarem sessão, à medida que tem quando o dispositivo vai da inatividade como ativa. Os utilizadores com palavras-passe que cumprem o requisito de ainda são-lhe pedidos para alterar as palavras-passe.
     
-  - **Número de falhas de início de sessão antes de apagar o dispositivo**: Introduza o número de falhas de autenticação permitidas antes do dispositivo é apagado, a partir de 1 a 11. `0` (zero), pode desativar a funcionalidade de eliminação do dispositivo.
+  - **Número de falhas de início de sessão antes de apagar o dispositivo**: Introduza o número de falhas de autenticação permitidas antes do dispositivo pode ser eliminado, até 11. O número de válido que introduzir depende da edição. [DeviceLock/MaxDevicePasswordFailedAttempts CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts) lista os valores suportados. `0` (zero), pode desativar a funcionalidade de eliminação do dispositivo.
 
-    Esta definição não tem um impacto diferente, dependendo da edição. Para obter detalhes específicos, consulte a [DeviceLock/MaxDevicePasswordFailedAttempts CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts).
+    Esta definição também tem um impacto diferente, dependendo da edição. Para obter detalhes específicos sobre esta definição, consulte a [DeviceLock/MaxDevicePasswordFailedAttempts CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts).
 
   - **Máximo de minutos de inatividade até o ecrã ser bloqueado**: Introduza o período de tempo que um dispositivo tem de estar inativo antes do ecrã ser bloqueado.
   - **Expiração da palavra-passe (dias)** : Introduza o período de tempo em dias quando a palavra-passe do dispositivo deve ser alterada, de 1-365. Por exemplo, introduza `90` para expirar a palavra-passe após 90 dias.

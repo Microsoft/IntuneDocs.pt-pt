@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 361ef17b-1ee0-4879-b7b1-d678b0787f5a
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8e717895e039e46ba7877476f67f29c1ce83b767
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: b490d5ff083d344a1b39d27a2298503bdfa1f130
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041664"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044915"
 ---
 # <a name="manage-operating-system-versions-with-intune"></a>Gerir versões de sistemas operativos com o Intune
 Nas plataformas modernas de ambiente de trabalho e dispositivos móveis, são constantemente publicadas atualizações importantes, patches e novas versões. Tem controlos para gerir atualizações e patches totalmente no Windows, mas outras plataformas como Android e iOS precisam que os seus utilizadores finais participem no processo.  O Microsoft Intune tem as ferramentas para o ajudar a estruturar a gestão das versões do seu sistema operativo em diferentes plataformas.
@@ -53,7 +53,7 @@ Tal como as restrições nas inscrições, as políticas de conformidade de disp
 ![Conformidade de dispositivos – ações para dispositivos não conformes](./media/os-version-actions-noncompliance.png) 
 
 ### <a name="in-practice"></a>Procedimentos
-As organizações estão a utilizar as políticas de conformidade de dispositivos para os mesmos cenários apresentados nas restrições de inscrição. Estas políticas garantem que os utilizadores utilizam as versões atuais e validadas do sistema operativo na sua organização. Quando o utilizador final deixa de estar em conformidade, o acesso aos recursos organizacionais pode ser bloqueado através do acesso condicional até que os utilizadores finais se encontrem no intervalo suportado do sistema operativo para a sua organização. Os utilizadores finais são notificados quando deixam de estar em conformidade e são-lhe fornecidos os passos para voltar a obter acesso.   
+As organizações estão a utilizar as políticas de conformidade de dispositivos para os mesmos cenários apresentados nas restrições de inscrição. Estas políticas garantem que os utilizadores utilizam as versões atuais e validadas do sistema operativo na sua organização. Quando o utilizador final deixa de estar em conformidade, o acesso aos recursos organizacionais pode ser bloqueado através do acesso condicional até que os utilizadores finais estão dentro do intervalo do sistema operativo suportado para a sua organização. Os utilizadores finais são notificados quando deixam de estar em conformidade e são-lhe fornecidos os passos para voltar a obter acesso.   
 
 Para obter mais informações, veja [Introdução à conformidade de dispositivos](https://docs.microsoft.com/intune/device-compliance-get-started).
  
@@ -81,7 +81,7 @@ Pode utilizar as funcionalidades do Intune descritas neste artigo para o ajudar 
   - Pode criar um relatório de conformidade para identificar os utilizadores que não se encontram em conformidade. 
 - **Passo 3a**: Utilize políticas de proteção de aplicação Intune para impedir que os utilizadores quando uma aplicação é aberta ou retoma se o dispositivo não está em execução 2 do sistema operativo.
 - **Passo 3b**: utilize as políticas de conformidade de dispositivos para exigir a versão 2 do sistema operativo como a versão mínima para o dispositivo estar em conformidade.
-  - Estas políticas exigem que os dispositivos sejam atualizados para que os utilizadores continuem a ter acesso aos dados organizacionais. Os serviços protegidos são bloqueados quando forem utilizados com um dispositivo com acesso condicional. As aplicações com a política de proteção de aplicações ativada são bloqueadas quando abertas ou quando tentam aceder a dados organizacionais.
+  - Estas políticas exigem que os dispositivos sejam atualizados para que os utilizadores continuem a ter acesso aos dados organizacionais. Serviços protegidos são bloqueados quando utilizado com acesso condicional de dispositivo. As aplicações com a política de proteção de aplicações ativada são bloqueadas quando abertas ou quando tentam aceder a dados organizacionais.
 
 ## <a name="next-steps"></a>Passos Seguintes
 Utilize os seguintes recursos para gerir as versões de sistemas operativos na sua organização: 

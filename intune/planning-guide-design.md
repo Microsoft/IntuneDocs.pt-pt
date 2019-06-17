@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 812a2e91b28908dcd3893ec77e9923362c8a9173
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c279e21abf47d6ec067f3c75b36ecc7b58681e7e
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046131"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044399"
 ---
 # <a name="create-a-design"></a>Criar uma estrutura
 
@@ -236,7 +236,7 @@ Nestas secções, analisamos as seguintes funcionalidades e capacidades que est�
 
 -   Política de conformidade
 
--   Acesso condicional
+-   Acesso Condicional
 
 Analisemos cada uma destas áreas mais detalhadamente.
 
@@ -389,7 +389,7 @@ As políticas de proteção de aplicações minimizam a perda de dados ao defini
 Pode [transferir um modelo da tabela acima](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) para identificar as suas necessidades de políticas de proteção de aplicações.
 #### <a name="compliance-policies"></a>Políticas de conformidade
 
-As políticas de conformidade determinam se um dispositivo cumpre determinados requisitos. O Intune utiliza políticas de conformidade para determinar se um dispositivo é considerado como estando ou não em conformidade. O estado de conformidade pode depois ser utilizado para restringir ou permitir o acesso a recursos da empresa. Se for necessário acesso condicional, recomendamos que estruture uma [política de conformidade do dispositivo](device-compliance.md).
+As políticas de conformidade determinam se um dispositivo cumpre determinados requisitos. O Intune utiliza políticas de conformidade para determinar se um dispositivo é considerado como estando ou não em conformidade. O estado de conformidade pode depois ser utilizado para restringir ou permitir o acesso a recursos da empresa. Se for necessário acesso condicional, recomendamos que crie uma [política de conformidade do dispositivo](device-compliance.md).
 
 Veja os requisitos e casos de utilização para determinar quantas políticas de conformidade do dispositivo são necessárias e quais são os grupos de utilizadores de destino. Além disso, terá de decidir durante quanto tempo um dispositivo pode estar offline sem dar entrada, antes de ser considerado como não estando em conformidade.
 
@@ -403,20 +403,20 @@ Segue-se um exemplo de como estruturar uma política de conformidade:
 Pode [transferir um modelo da tabela acima](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) para identificar as suas necessidade de políticas de conformidade.
 #### <a name="conditional-access-policies"></a>Políticas de acesso condicional
 
-O acesso condicional é utilizado para permitir que apenas os dispositivos em conformidade acedam ao e-mail e a outros recursos da empresa. O Intune funciona com o Enterprise Mobility + Security (EMS) para controlar o acesso aos recursos da empresa. Decidir se exigir acesso condicional, e o que deve ser protegido. Saiba mais sobre o [acesso condicional](conditional-access.md).
+Acesso condicional é utilizado para permitir que apenas os dispositivos compatíveis acedam ao e-mail e outros recursos da empresa. O Intune funciona com o Enterprise Mobility + Security (EMS) para controlar o acesso aos recursos da empresa. Decidir se exigir acesso condicional, e o que deve ser protegido. Saiba mais sobre o [Acesso Condicional](conditional-access.md).
 
 Para acesso online, decida que plataformas e grupos de utilizadores serão visados pelas políticas de acesso condicional. Além disso, determine se precisa de instalar ou configurar o conector do Intune para o Exchange no local: 
 
 -   [Exchange no local](exchange-connector-install.md)
 
-Eis um exemplo de como documentar políticas de acesso condicional:
+Eis um exemplo de como a políticas de acesso condicional do documento:
 
 | **Serviço** | **Plataformas de Autenticação Moderna** | **Autenticação Básica** | **Casos de utilização** |   
 |:---:|:---:|:---:|:---:|
 | Exchange online | iOS, Android | Bloquear dispositivos não conformes em plataformas suportadas pelo Intune | Empresarial, BYOD |
 | SharePoint Online | iOS, Android |  | Empresarial, BYOD |
 
-Pode [transferir um modelo da tabela acima](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) para identificar as suas necessidades de políticas de acesso condicional.
+Pode [transferir um modelo da tabela acima](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) para identificar a sua política de acesso condicional as necessidades.
 
 ## <a name="next-steps"></a>Passos Seguintes
 

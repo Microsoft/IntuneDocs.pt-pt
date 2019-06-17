@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 808b594e4ac47845272be2978da2463727f9807c
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: f04879e88cb85eaacdb75f5645a486e3539cb13a
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040778"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044084"
 ---
 # <a name="symantec-endpoint-protection-mobile-connector"></a>Conector do Symantec Endpoint Protection Mobile
 
-Pode controlar o acesso a recursos empresariais a partir de dispositivos móveis através do acesso condicional com base na avaliação de riscos realizada pelo Symantec Endpoint Protection Mobile (SEP Mobile), uma solução de defesa contra ameaças para dispositivos móveis que está integrada com o Microsoft Intune. O risco é avaliado com base na telemetria recolhida dos dispositivos com o SEP Mobile, incluindo:
+Pode controlar o acesso de dispositivos móveis a recursos da empresa através do acesso condicional com base na avaliação de riscos realizada pelo Symantec Endpoint Protection Mobile (SEP Mobile), uma solução de defesa contra ameaças móveis que se integra com o Microsoft Intune. O risco é avaliado com base na telemetria recolhida dos dispositivos com o SEP Mobile, incluindo:
 
 -   Defesa física
 
@@ -36,7 +36,7 @@ Pode controlar o acesso a recursos empresariais a partir de dispositivos móveis
 
 -   Defesa contra vulnerabilidades
 
-Pode ativar a avaliação de riscos do SEP Mobile através de políticas de conformidade de dispositivos do Intune e, em seguida, utilizar políticas de acesso condicional para permitir ou bloquear o acesso de dispositivos não conformes aos recursos da empresa com base nas ameaças detetadas.
+Pode ativar a avaliação de riscos do SEP Mobile por meio de políticas de conformidade de dispositivos do Intune e, em seguida, utilize políticas de acesso condicional para permitir ou bloquear o acesso de dispositivos não conformes aos recursos empresariais com base em ameaças detetadas.
 
 ## <a name="how-do-intune-and-sep-mobile-help-protect-your-company-resources"></a>Como é que o Intune e o SEP Mobile ajudam a proteger os recursos da empresa?
 

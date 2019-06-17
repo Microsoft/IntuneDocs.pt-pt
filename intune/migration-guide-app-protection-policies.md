@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e347d72a8eec93f9936f3c488cada5667ecf51f8
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 6bf1aa096d5ebd89130eb5fabe936a02183599c5
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050574"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044639"
 ---
 # <a name="configure-app-protection-policies-optional"></a>Configurar políticas de proteção de aplicações (opcional)
 
@@ -47,7 +47,7 @@ Este período pode deixar a sua organização mais vulnerável a roubos de dispo
 
 O Intune pode oferecer proteções de dados empresariais durante a migração para que continue a ter cobertura de segurança para os seus dados empresariais quando não existir qualquer gestão ao nível do dispositivo.
 
-À medida que desativa o acesso condicional no fornecedor de MDM antigo, os utilizadores podem continuar a ser produtivos enquanto os incorpora no Intune.
+À medida que desativa o acesso condicional no fornecedor de MDM antigo, os utilizadores ainda podem ser produtivos enquanto os incorpora no Intune.
 
 ## <a name="task-list-for-app-protection-policies"></a>Lista de tarefas das políticas de proteção de aplicações
 

@@ -1,6 +1,6 @@
 ---
 title: Integração de controlo de acesso à rede com o Microsoft Intune – Azure | Microsoft Docs
-description: As soluções de controlo de acesso à rede (NAC) verificam a inscrição e conformidade dos dispositivos com o Intune. O NAC inclui determinados comportamentos e funciona com o acesso condicional. Veja os passos necessários para subscrever e obter uma lista das soluções de parceiros.
+description: As soluções de controlo de acesso à rede (NAC) verificam a inscrição e conformidade dos dispositivos com o Intune. O NAC inclui determinados comportamentos e funciona com acesso condicional. Veja os passos necessários para subscrever e obter uma lista das soluções de parceiros.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e9663691053d8ecd204ad899805153d0bfb25e6f
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 400de55e26076a8d612ac31388d5c5daec68d4a0
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041574"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044530"
 ---
 # <a name="network-access-control-nac-integration-with-intune"></a>Integração de controlo de acesso à rede (NAC) com o Intune
 
@@ -43,7 +43,7 @@ Para os dispositivos cujo acesso aos recursos está bloqueado, o serviço de blo
 
 ## <a name="nac-and-conditional-access"></a>NAC e acesso condicional
 
-O NAC funciona com acesso condicional para disponibilizar decisões de controlo de acesso. Para obter mais informações, veja [Formas comuns de utilizar o acesso condicional com o Intune](conditional-access-intune-common-ways-use.md).
+O NAC funciona com acesso condicional para fornecer decisões de controlo de acesso. Para obter mais informações, consulte [formas comuns de utilizar o acesso condicional com o Intune](conditional-access-intune-common-ways-use.md).
 
 ## <a name="how-the-nac-integration-works"></a>Como funciona a integração de NAC
 

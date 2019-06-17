@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4c4b9f1d1dd0072555d8438940969b7abd0a9fff
-ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
+ms.openlocfilehash: ee0e6ad7e46abe8da4c1b03e836eb9ba2f5991d0
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66804480"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044157"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>Controlo de acesso baseado em funções (RBAC) com o Microsoft Intune
 
@@ -65,7 +65,7 @@ Pode criar suas próprias funções com permissões personalizadas. Para obter m
 | Operador de segurança | Só de leitura | Só de leitura |
 | Leitor de segurança | Só de leitura | Só de leitura |
 | Administrador de conformidade | Nenhum | Só de leitura |
-| Administrador de dados de conformidade | Nenhum | Só de leitura |
+| Administrador de dados de conformidade | Nenhuma | Só de leitura |
 
 > [!TIP]
 > O Intune também mostra três extensões do Azure AD: **Os utilizadores**, **grupos**, e **acesso condicional**, que são controladas através do RBAC do Azure AD. Além disso, o **Administrador da Conta de Utilizador** só executa as atividades do utilizador/grupo do AAD e não tem permissões completas para executar todas as atividades no Intune. Para obter mais informações, consulte [RBAC com o Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).
@@ -86,8 +86,8 @@ Para ver uma atribuição de função, escolha **Intune** > **funções** > **to
 
 -   **Propriedades**: O nome, descrição, função, membros, âmbitos e as etiquetas da atribuição.
 -   **Membros**: Todos os utilizadores em grupos listados tem permissão para gerir os utilizadores/dispositivos que estão listados no âmbito (grupos).
--   **Âmbito (grupos)** : Todos os utilizadores/dispositivos nestes grupos podem ser geridos pelos utilizadores nos membros.
--   **[Âmbito (etiquetas)](scope-tags.md)** : Os utilizadores em membros podem ver os recursos que têm o mesmo âmbito.
+-   **Âmbito (grupos)**: Todos os utilizadores/dispositivos nestes grupos podem ser geridos pelos utilizadores nos membros.
+-   **[Âmbito (etiquetas)](scope-tags.md)**: Os utilizadores em membros podem ver os recursos que têm o mesmo âmbito.
 
 ### <a name="multiple-role-assignments"></a>Várias atribuições de funções
 Se um utilizador tiver várias atribuições de funções, permissões nessas atribuições de funções de expandir a diferentes objetos da seguinte forma:

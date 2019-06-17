@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 51ca966347cde157a34d1d390306f6dd262d015c
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c6a6410aa5eada1f1c4a0983d269d9e661b03831
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046323"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67046373"
 ---
 # <a name="intune-migration-guide"></a>Guia de migração do Intune
 
@@ -51,7 +51,7 @@ Este guia divide o processo de migração em duas fases, que incluem tarefas, es
 
     -   [Plano de comunicação](migration-guide-communication-plan.md)
 
-    -   [Promover a adoção por parte de utilizadores finais de unidades com acesso condicional](migration-guide-drive-adoption.md)
+    -   [Promover a adoção com acesso condicional](migration-guide-drive-adoption.md)
 
     -   [Ciclo de migração típico](migration-guide-cycle.md)
         -   [Monitorização da migração](migration-guide-cycle.md#monitoring-migration)

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 30c0e5af6d7ff0467383294c071d0ffdb96c5dc1
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 9d3e74244315b7345a632a9ecd2bf631a134e5ab
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041839"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045034"
 ---
 # <a name="protect-office-365-exchange-online-without-requiring-device-management"></a>Proteger o Office 365 Exchange Online sem a necessidade de uma gestão de dispositivos
 
@@ -33,10 +33,10 @@ Também pode optar por definir um sistema de gestão de dispositivos. Este tipo 
 ## <a name="action-plan"></a>Plano de ação
 
 1. [Saiba mais sobre o acesso condicional](conditional-access.md). 
-2. [Saiba mais sobre o acesso condicional com base nas aplicações](app-based-conditional-access-intune.md).
-3. [Defina políticas de acesso condicional com base nas aplicações para Exchange Online](app-based-conditional-access-intune-create.md).
+2. [Saiba mais sobre o acesso condicional com base na aplicação](app-based-conditional-access-intune.md).
+3. [Definir políticas de acesso condicional com base na aplicação para o Exchange Online](app-based-conditional-access-intune-create.md).
 4. [Bloqueie aplicações que não podem ser geridas](app-modern-authentication-block.md), especificamente as aplicações que não utilizam a Azure Active Directory Authentication Library (ADAL).
-5. (Opcional) [Definir políticas de acesso condicional com base nas aplicações para o SharePoint Online](app-based-conditional-access-intune-create.md). Estas políticas bloqueiam o acesso aos dados da sua empresa a partir de aplicações que não podem ser geridas e protegidas. As políticas também limitam o acesso através do SharePoint para dispositivos móveis. 
+5. (Opcional) [Configurar políticas de acesso condicional com base na aplicação para o SharePoint Online](app-based-conditional-access-intune-create.md). Estas políticas bloqueiam o acesso aos dados da sua empresa a partir de aplicações que não podem ser geridas e protegidas. As políticas também limitam o acesso através do SharePoint para dispositivos móveis. 
 
 ## <a name="what-to-tell-employees-and-students"></a>O que dizer aos funcionários e estudantes
 
@@ -45,9 +45,9 @@ Também pode optar por definir um sistema de gestão de dispositivos. Este tipo 
 
 ## <a name="next-steps"></a>Passos Seguintes
 
-Utilizou o acesso condicional com base nas aplicações para aumentar a segurança dos dados da empresa. Como parte dos passos seguintes, pode saber mais sobre outras formas de aumentar a proteção dos dados da sua empresa, incluindo: 
+Utilizou o acesso condicional com base na aplicação para aumentar a segurança dos dados da empresa. Como parte dos passos seguintes, pode saber mais sobre outras formas de aumentar a proteção dos dados da sua empresa, incluindo: 
 
-* Configurar o [acesso condicional com base na conformidade do dispositivo, no risco do dispositivo, na localização e nos atributos de utilizador no Active Directory e Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal).  
+* Configurando [acesso condicional com base na conformidade do dispositivo, risco do dispositivo, localização e atributos do utilizador no Active Directory e Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal).  
 * Configurar políticas de proteção de aplicações para o ajudar a proteger os dados da sua empresa contra fugas de dados intencionais e não intencionais. 
 * Tirar partido do Azure Information Protection para proteger os dados da empresa fora da sua rede. 
 

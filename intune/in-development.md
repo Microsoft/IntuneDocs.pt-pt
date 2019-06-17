@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4e9a640a343efd4ad786d7697439531de3cd4ed3
-ms.sourcegitcommit: 2f32f6d2129bc10cc4a02115732e995edceb37d6
+ms.openlocfilehash: 1c8a7be6646c0035eaefed6d61d749c8469c8a4e
+ms.sourcegitcommit: 119962948045079022aa48f968dde3e961d7cd0c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66828959"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67031645"
 ---
 # <a name="in-development-for-microsoft-intune---june-2019"></a>No desenvolvimento do Microsoft Intune – Junho de 2019
 
@@ -55,7 +55,7 @@ Portal da empresa para Windows listará todas as aplicações geridas (tanto nec
 Intune App Protection políticas (aplicação) em dispositivos Android e iOS permitirá a transferência Org ligações da web para um determinado navegador, além do Browser gerido do Intune ou do Microsoft Edge.  Para obter mais informações sobre a aplicação, consulte [quais são as políticas de proteção de aplicações?](app-protection-policy.md).
 
 #### <a name="installed-apps-page-on-the-company-portal-website-----4224326---"></a>Instalado a página de aplicações no site do Portal da empresa  <!-- 4224326 -->
-O [site do Portal da empresa](https://portal.manage.microsoft.com/) incluirá uma nova página para mostrar os utilizadores todas as aplicações que tenham sido instaladas no respetivo dispositivo. Esta lista inclui as aplicações disponíveis e as aplicações necessárias pela sua organização. Nesta página, os utilizadores serão capazes de ver os Estados de instalação e requisitos das aplicações nos respetivos dispositivos. Para obter mais informações sobre o site do Portal da empresa, consulte [através do site do Portal da empresa do Intune](/intune-user-help/using-the-intune-company-portal-website.md) e [como configurar a aplicação Portal da empresa do Microsoft Intune](company-portal-app.md).
+O [site do Portal da empresa](https://portal.manage.microsoft.com/) incluirá uma nova página para mostrar os utilizadores todas as aplicações que tenham sido instaladas no respetivo dispositivo. Esta lista inclui as aplicações disponíveis e as aplicações necessárias pela sua organização. Nesta página, os utilizadores serão capazes de ver os Estados de instalação e requisitos das aplicações nos respetivos dispositivos. Para obter mais informações sobre o site do Portal da empresa, consulte [através do site do Portal da empresa do Intune](/intune-user-help/using-the-intune-company-portal-website) e [como configurar a aplicação Portal da empresa do Microsoft Intune](company-portal-app.md).
 
 #### <a name="call-graph-api-read-operations-from-an-application-without-user-credentials----4655885---"></a>Chamar operações de leitura a partir de uma aplicação sem credenciais de utilizador do Graph API <!-- 4655885 -->
 Aplicações poderão chamar operações com a identidade da aplicação sem credenciais de utilizador de leitura Graph API do Intune. Para obter mais informações, consulte [obter acesso sem um utilizador](https://docs.microsoft.com/graph/auth-v2-service).

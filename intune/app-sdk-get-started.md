@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b5672963c6737d51e720a8b1597dd90318f33a05
-ms.sourcegitcommit: 095fd4c324850aae8ebe32be43fa074361816a4b
+ms.openlocfilehash: e3b0aff29db5402de7e91282e74cd6d69a103545
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66506862"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045821"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Introdução ao SDK da Aplicação Microsoft Intune
 
@@ -33,7 +33,7 @@ O SDK da Aplicação Intune suporta cenários semelhantes entre iOS e Android e 
 
 ### <a name="if-your-app-is-internal-to-your-organization-and-will-not-be-publicly-available"></a>Se a sua aplicação for interna da organização e não estiver publicamente disponível:
 
-_**Não é necessário**_ para registar a sua aplicação. Para interno [aplicações de linha de negócio (LOB)](apps-add.md#app-types-in-microsoft-intune) que foram escritas por ou para a sua empresa, o administrador de TI irá implementar a aplicação internamente. O Intune detetará que a aplicação foi criada com o SDK e permitirá que o administrador de TI aplicar políticas de proteção de aplicações à mesma. Pode avançar para a secção [Integrar a política de proteção de aplicações na sua aplicação iOS ou Android](#enable-your-ios-or-android-app-for-app-protection-policy).
+_ **Não é necessário** _ para registar a sua aplicação. Para interno [aplicações de linha de negócio (LOB)](apps-add.md#app-types-in-microsoft-intune) que foram escritas por ou para a sua empresa, o administrador de TI irá implementar a aplicação internamente. O Intune detetará que a aplicação foi criada com o SDK e permitirá que o administrador de TI aplicar políticas de proteção de aplicações à mesma. Pode avançar para a secção [Integrar a política de proteção de aplicações na sua aplicação iOS ou Android](#enable-your-ios-or-android-app-for-app-protection-policy).
 
 ### <a name="if-your-app-will-be-released-to-a-public-app-store-like-the-apple-app-store-or-google-play"></a>Se a sua aplicação for lançada numa loja de aplicações pública, como a Apple App Store ou o Google Play:
 
@@ -81,17 +81,17 @@ Recomendamos que se inscreva numa conta do GitHub que pode utilizar para bifurca
 
 Irá precisar de um dos seguintes guias para programadores para o ajudar a integrar o SDK da Aplicação Intune na sua aplicação:
 
-* **[SDK da aplicação Intune para iOS Guia do programador](app-sdk-ios.md)** : Este documento irá guiá-lo passo a passo através da ativação da aplicação iOS nativa com o SDK da aplicação Intune.
+* **[SDK da aplicação Intune para iOS Guia do programador](app-sdk-ios.md)**: Este documento irá guiá-lo passo a passo através da ativação da aplicação iOS nativa com o SDK da aplicação Intune.
 
-* **[SDK da aplicação Intune para o guia de programação do Android](app-sdk-android.md)** : Este documento irá guiá-lo passo a passo através da ativação da aplicação Android nativa com o SDK da aplicação Intune.
+* **[SDK da aplicação Intune para o guia de programação do Android](app-sdk-android.md)**: Este documento irá guiá-lo passo a passo através da ativação da aplicação Android nativa com o SDK da aplicação Intune.
 
-* **[Guia de enlaces Xamarin SDK da aplicação Intune](app-sdk-xamarin.md)** : Este documento ajuda-o a criar aplicações iOS e Android com o Xamarin para políticas de proteção de aplicações do Intune.
+* **[Guia de enlaces Xamarin SDK da aplicação Intune](app-sdk-xamarin.md)**: Este documento ajuda-o a criar aplicações iOS e Android com o Xamarin para políticas de proteção de aplicações do Intune.
 
 
 
-## <a name="enable-your-ios-or-android-app-for-app-based-conditional-access"></a>Ativar o acesso condicional com base na aplicação iOS ou Android
+## <a name="enable-your-ios-or-android-app-for-app-based-conditional-access"></a>Ativar a sua aplicação iOS ou Android para o acesso condicional com base na aplicação
  
- Além de ativar a política de proteção na aplicação, é preciso o seguinte para a sua aplicação funcionar corretamente com o acesso condicional com base na aplicação do Azure ActiveDirectory (AAD):
+ Para além de ativar a política de proteção de aplicações, é necessário o seguinte para a sua aplicação para corretamente acesso condicional baseado na função com uma aplicação do Azure ActiveDirectory (AAD):
  
  * A aplicação é criada com a [Azure ActiveDirectory Authentication Library](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) e ativada para a autenticação de mediador do AAD.
  

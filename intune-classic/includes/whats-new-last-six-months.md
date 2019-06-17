@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 9a18bceb6b42f06464baf31a4cdd4dea21d19675
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 984b78b271d130618ec0994f76e966f1dc338706
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61500297"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044709"
 ---
 ## <a name="april-2017"></a>Abril de 2017
 
@@ -26,7 +26,7 @@ Uma atualização à aplicação Portal da Empresa para Android mostra um indica
 
 #### <a name="block-apps-from-accessing-sharepoint-online----679339---"></a>Impedir que as aplicações acedam ao SharePoint Online <!-- 679339 -->
 
-Agora, pode criar uma política de acesso condicional com base na aplicação para impedir que as aplicações que não têm políticas de proteção aplicadas acedam ao [SharePoint Online](/intune-classic/deploy-use/mam-ca-for-sharepoint-online). No cenário de acesso condicional baseado em aplicações, pode especificar as aplicações que pretende que tenham acesso ao SharePoint Online através do portal do Azure.
+Agora, pode criar uma política de acesso condicional com base na aplicação para impedir que as aplicações que não têm políticas de proteção de aplicações aplicadas às mesmas, de acessar [SharePoint Online](/intune-classic/deploy-use/mam-ca-for-sharepoint-online). No cenário de acesso condicional com base em aplicações, pode especificar as aplicações que pretende ter acesso ao SharePoint Online com o portal do Azure.
 
 #### <a name="single-sign-in-support-from-the-company-portal-for-ios-to-outlook-for-ios---834012--"></a>Único início de sessão no suporte do Portal da empresa para iOS para o Outlook para iOS <!--834012-->
 Os utilizadores já não precisam de iniciar sessão na aplicação Outlook se já tiverem sessão iniciada no Portal da Empresa para iOS no mesmo dispositivo com a mesma conta. Quando os utilizadores iniciarem o Outlook, poderão selecionar a conta e iniciar sessão automaticamente. Também estamos a trabalhar no sentido de adicionar esta funcionalidade a outras aplicações da Microsoft.
@@ -43,7 +43,7 @@ Os novos melhoramentos das instalações de aplicações iniciadas na aplicaçã
 
 Pode ver a nova barra de progresso na [página Novidades na IU da aplicação Intune](/intune/whats-new-app-ui).
 
-#### <a name="bulk-enroll-windows-10-devices----747607---"></a>Em massa inscrever dispositivos Windows 10 <!-- 747607 -->
+#### <a name="bulk-enroll-windows-10-devices----747607---"></a>Inscrever dispositivos Windows 10 em massa <!-- 747607 -->
 
 Agora, pode juntar-se a um grande número de dispositivos que executam a atualização para Criativos do Windows 10 para o Azure Active Directory e o Intune com o Windows Configuration Designer (WCD). Para ativar a [inscrição na MDM em massa](/intune-classic/deploy-use/bulk-enroll-windows) para o seu inquilino do Azure AD, crie um pacote de aprovisionamento que associe dispositivos ao seu inquilino do Azure AD através do Windows Configuration Designer e aplique o pacote aos dispositivos pertencentes à empresa que pretende inscrever e gerir em massa. Assim que o pacote for aplicado aos dispositivos, estes são associados ao Azure AD, inscritos no Intune e estarão prontos para os seus utilizadores do Azure AD iniciarem sessão.  Os utilizadores do Azure AD são utilizadores padrão nestes dispositivos e obtêm as políticas atribuídas e as aplicações necessárias. De momento, os cenários self-service e Portal da Empresa não são suportados.
 
@@ -112,7 +112,7 @@ Disponibilizamos uma versão da aplicação do Portal da Empresa para iOS atrav�
 
 #### <a name="support-for-skycure"></a>Suporte para Skycure
 
-Pode controlar o acesso a recursos empresariais a partir de dispositivos móveis através do acesso condicional com base na avaliação de riscos realizada pelo Skycure, uma solução de defesa contra ameaças para dispositivos móveis que está integrada com o Microsoft Intune. O risco é avaliado com base na telemetria recolhida dos dispositivos através do Skycure, incluindo:
+Pode agora controlar o dispositivo móvel acesso a recursos da empresa através do acesso condicional com base na avaliação de riscos realizada pelo Skycure, uma solução de defesa contra ameaças móveis que se integra com o Microsoft Intune. O risco é avaliado com base na telemetria recolhida dos dispositivos através do Skycure, incluindo:
 
 - Defesa física
 - Defesa da rede

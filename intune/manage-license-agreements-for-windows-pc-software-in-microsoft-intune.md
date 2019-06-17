@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 417d244cbe64af967e61112f67dbf7829ce7feda
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 7068bb96b72861c0647c44261edef0c3e83a120c
+ms.sourcegitcommit: 119962948045079022aa48f968dde3e961d7cd0c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046954"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67031669"
 ---
 # <a name="manage-license-agreements-for-windows-pc-software-in-microsoft-intune"></a>Gerir contratos de licença para software para computadores com Windows no Microsoft Intune
 
@@ -53,7 +53,7 @@ Além disso, pode gerar relatórios que mostrem contagens de instalações e de 
 ## <a name="add-microsoft-volume-licensing-agreements"></a>Adicionar contratos de Licenciamento em Volume da Microsoft
 Os contratos de Licenciamento em Volume do Intune apresentam informações de licença de software adquirido através de contratos de Licenciamento em Volume da Microsoft. Pode adicionar contratos de Licenciamento em Volume da Microsoft ao Intune ao fornecer pares correspondentes de números de contratos. Os números de contratos ou de autorização devem corresponder à licença ou aos números de inscrição corretos. Os pares de números de contrato são obtidos ao adquirir os contratos de licença a partir do [Centro de Serviço de Licenciamento em Volume (VLSC)](http://go.microsoft.com/fwlink/?LinkID=223842).
 
-1.  Na [consola de administrador do Microsoft Intune](https://account.manage.microsoft.com/admin/default.aspx), escolha **Licenças**.
+1.  Na [consola de administrador do Microsoft Intune](https://admin.manage.microsoft.com/), escolha **Licenças**.
 
 2.  Na página **Adicionar Contratos**, em **Escolher Tipo de Contrato**, selecione **Contrato de Licenciamento em Volume**.
 
@@ -67,7 +67,7 @@ Os contratos de Licenciamento em Volume do Intune apresentam informações de li
 
         -   São suportados apenas carateres ASCII.
 
-        -   Os seguintes carateres não são permitidos no nome do contrato: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /**. São permitidos espaços no nome.
+        -   Os seguintes carateres não são permitidos no nome do contrato: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /** . São permitidos espaços no nome.
 
         -   O nome do ficheiro não pode ter mais de 128 carateres.
 
@@ -93,7 +93,7 @@ Os contratos de Licenciamento em Volume do Intune apresentam informações de li
 
         -   **Nome do contrato** - Especifique um nome exclusivo para o contrato.
 
-            O nome do contrato pode conter, no máximo, 256 carateres e não pode incluir os seguintes carateres: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /**. São permitidos espaços no nome.
+            O nome do contrato pode conter, no máximo, 256 carateres e não pode incluir os seguintes carateres: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /** . São permitidos espaços no nome.
 
         -   **Número de Autorização/Contrato** - Introduza o número de autorização/contrato do par de licenças.
 
@@ -138,7 +138,7 @@ Também pode adicionar outros tipos de contratos de licença ao Intune, além do
 
 ### <a name="to-add-other-software-agreements"></a>Para adicionar outros contratos de software
 
-1.  Na [consola de administrador do Microsoft Intune](https://account.manage.microsoft.com/admin/default.aspx), escolha **Licenças**.
+1.  Na [consola de administrador do Microsoft Intune](https://admin.manage.microsoft.com/), escolha **Licenças**.
 
 2.  Escolha **Adicionar Contratos**, na secção **Outros Contratos de Licenciamento de Software**.
 
@@ -146,7 +146,7 @@ Também pode adicionar outros tipos de contratos de licença ao Intune, além do
 
 4.  Na área **Adicionar Detalhes do Contrato**, especifique o seguinte:
 
-    -   **Agreement name** (obrigatório). O nome do contrato pode conter, no máximo, 256 carateres e não pode incluir os seguintes carateres: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /**. São permitidos espaços no nome.
+    -   **Agreement name** (obrigatório). O nome do contrato pode conter, no máximo, 256 carateres e não pode incluir os seguintes carateres: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /** . São permitidos espaços no nome.
 
     -   **Fabricante** (obrigatório). Quando começa a escrever o nome de um fabricante, o serviço obtém todos os nomes de fabricantes que contêm as letras que escrever. Por exemplo, se escrever "soft", o serviço obtém todos os nomes de fabricantes que contêm "soft" no nome, como "Microsoft" e "Microsoft Research". Os nomes dos fabricantes são obtidos a partir do Catálogo de Recursos de Software. Tem de selecionar o fabricante antes de introduzir o título do produto.
 

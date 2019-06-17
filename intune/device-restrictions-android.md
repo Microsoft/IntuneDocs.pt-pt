@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eeb70727a187a769e56a9cfd517ecd7b583ba1c1
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: f13b78e05b9f0b94d98677004c7059f1acaa80f9
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66042471"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045717"
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings-lists-in-intune"></a>Android e Samsung Knox Standard listas de definições de restrição de dispositivos no Intune
 
@@ -49,7 +49,7 @@ Este artigo mostra-lhe todas as definições de restrições de dispositivos do 
 - **Palavra-passe**: **Exigir** que o utilizador final introduza uma palavra-passe para aceder ao dispositivo. **Não configurado** permite que os utilizadores acedam ao dispositivo sem introduzir uma palavra-passe.
 
     > [!NOTE]
-    > Os dispositivos Samsung Knox exigem automaticamente um PIN de 4 dígitos durante a inscrição na MDM. Os dispositivos Android nativos podem exigir automaticamente um PIN para ficarem em conformidade com o acesso condicional.
+    > Os dispositivos Samsung Knox exigem automaticamente um PIN de 4 dígitos durante a inscrição na MDM. Dispositivos Android nativos automaticamente podem exigir um PIN para ficarem em conformidade com acesso condicional.
 
 - **Comprimento mínimo da palavra-passe**: Introduza o comprimento mínimo da palavra-passe de que um utilizador tem de introduzir (entre 4 e 16 carateres).
 - **Máximo de minutos de inatividade até o ecrã ser bloqueado**: introduza o número máximo de minutos de inatividade permitidos no dispositivo até o ecrã bloquear. Num dispositivo, um utilizador final não pode definir um valor de tempo superior ao tempo configurado no perfil. Um utilizador final pode definir um valor de tempo inferior. Por exemplo, se o perfil estiver definido para 15 minutos, um utilizador final poderá definir o valor para 5 minutos. Um utilizador final não pode definir o valor para 30 minutos. 

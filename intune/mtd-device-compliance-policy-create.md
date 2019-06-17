@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d200c8d56dbbe60dd331081537154951f5e5591d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 3d1215d463c89dfa3e740099f7582d61359a4669
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041546"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044563"
 ---
 # <a name="create-mobile-threat-defense-mtd-device-compliance-policy-with-intune"></a>Criar a política de conformidade de dispositivos da Defesa Contra Ameaças para Dispositivos Móveis (MTD) com o Intune
 
@@ -66,7 +66,7 @@ Pré-requisitos da política de conformidade de dispositivos com a MTD:
 8.  Clique em **OK** duas vezes e, em seguida, selecione **Criar**.
 
 > [!IMPORTANT]
-> Se criar políticas de acesso condicional para o Office 365 ou outros serviços, esta avaliação de conformidade do dispositivo é analisada e os dispositivos que não estiverem conformes não poderão aceder a recursos empresariais até que a ameaça esteja resolvida no dispositivo.
+> Se criar políticas de acesso condicional para o Office 365 ou outros serviços, a avaliação de conformidade do dispositivo é analisada e os dispositivos não conformes são impedidos de aceder a recursos empresariais até que a ameaça esteja resolvida no dispositivo.
 
 ## <a name="to-assign-an-mtd-device-compliance-policy"></a>Para atribuir uma política de conformidade MTD do dispositivo
 

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e39766bc8a880c104bd5af9ff530144e2b5d2beb
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 96ace484d0c4e832470ae9a6e4ffc69290c7d657
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041690"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044943"
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Gerir PCs Windows como computadores através do cliente de software do Intune
 
@@ -114,7 +114,7 @@ Para obter mais informações sobre as tarefas mencionadas acima, veja [Tarefas 
 Algumas opções de gestão, que podem ser utilizadas para gerir os PCs como dispositivos móveis, não podem ser utilizadas para PCs que sejam geridos com o software de cliente do Intune:
 
 -   Eliminação completa (a eliminação seletiva está disponível)
--   Acesso condicional
+-   Acesso Condicional
 
 Tenha também em atenção que na consola de administração do Intune, certas secções como **Atualizações**, **Proteção** e **Licenças** só serão apresentadas se tiver inscrito os dispositivos com o software de cliente do Intune.
 

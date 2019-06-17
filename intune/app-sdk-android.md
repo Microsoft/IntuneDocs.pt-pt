@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5808a4b81fcc66d37e78c50cb5bcd2ae7bbe44e2
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c929965b79d9ee35fcc1094b4ad18cff6d73d80d
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049607"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045523"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Guia para programadores do SDK da Aplicação do Microsoft Intune para Android
 
@@ -67,7 +67,7 @@ Um exemplo de como integrar corretamente com o SDK da aplicação Intune está d
 
 O SDK da Aplicação do Intune é uma biblioteca do Android padrão sem dependências externas. O **Microsoft.Intune.MAM.SDK.aar** contém as interfaces necessárias para a ativação da política de proteção de aplicações e o código necessário para interagir com a aplicação Portal da Empresa do Microsoft Intune.
 
-O **Microsoft.Intune.MAM.SDK.aar** tem de ser especificado como uma referência da biblioteca do Android. Para tal, abra o projeto de aplicação no Android Studio e aceda a **Ficheiro > Novo > Novo módulo** e selecione **Importar Pacote .JAR/.AAR**. Em seguida, selecione o nosso pacote de arquivo Android Microsoft.Intune.MAM.SDK.aar para criar um módulo para o nosso .AAR. Clique com o botão direito do rato no módulo ou módulos que contêm o código da aplicação e aceda a **Definições do Módulo** > **separador Dependências** > **ícone +** > **Dependência do módulo** > Selecione o módulo de AAR do SDK de MAM que acabou de criar > **OK**. Esta ação irá garantir que o seu módulo é compilado com o SDK de MAM quando criar o seu projeto.
+O **Microsoft.Intune.MAM.SDK.aar** tem de ser especificado como uma referência da biblioteca do Android. Para tal, abra o projeto de aplicação no Android Studio e aceda a **Ficheiro > Novo > Novo módulo** e selecione **Importar Pacote .JAR/.AAR**. Em seguida, selecione o nosso pacote de arquivo Android Microsoft.Intune.MAM.SDK.aar para criar um módulo para o nosso .AAR. Clique com o botão direito do rato no módulo ou módulos que contêm o código da aplicação e aceda a **Definições do Módulo** > **separador Dependências** > **ícone +**  > **Dependência do módulo** > Selecione o módulo de AAR do SDK de MAM que acabou de criar > **OK**. Esta ação irá garantir que o seu módulo é compilado com o SDK de MAM quando criar o seu projeto.
 
 Além disso, as bibliotecas do **Microsoft.Intune.MAM.SDK.Support.XXX.jar** contêm variantes do Intune das bibliotecas do `android.support.XXX` correspondentes. Não são compiladas no Microsoft.Intune.MAM.SDK.aar, caso uma aplicação não necessite de depender das bibliotecas de suporte.
 
@@ -698,7 +698,7 @@ Metadados da ADAL **não podem** estar presente no manifesto.
 
 #### <a name="2-app-integrates-adal"></a>2. A aplicação integra a ADAL
 
-|Parâmetro necessário da ADAL| Value |
+|Parâmetro necessário da ADAL| Valor |
 |--|--|
 | ClientID | O ClientID da aplicação (gerado pelo Azure AD quando a aplicação é registada) |
 
@@ -732,7 +732,7 @@ O Acesso Condicional (AC) é uma [funcionalidade](https://docs.microsoft.com/azu
 4. Teste se tudo está configurado corretamente ao ativar a opção [AC baseado no dispositivo](https://docs.microsoft.com/intune/conditional-access-intune-common-ways-use) a partir do [portal do Azure](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExchangeConnectorMenu/aad/connectorType/2) e ao confirmar
     - Que o início de sessão na aplicação pede a instalação e inscrição do Portal da Empresa do Intune
     - Que, após a inscrição, o início de sessão na sua aplicação é concluído com êxito.
-5. Assim que a sua aplicação incluir a integração do SDK da Aplicação do Intune, contacte msintuneappsdk@microsoft.com para ser adicionado à lista de aplicações aprovadas para [acesso condicional com base nas aplicações](https://docs.microsoft.com/intune/conditional-access-intune-common-ways-use#app-based-conditional-access).
+5. Quando a aplicação foi enviada a integração do SDK da aplicação Intune, contacte msintuneappsdk@microsoft.com a ser adicionado à lista de aplicações aprovadas para [acesso condicional com base na aplicação](https://docs.microsoft.com/intune/conditional-access-intune-common-ways-use#app-based-conditional-access)
 6. Assim que a aplicação tiver sido adicionada à lista aprovada, valide ao [Configurar o AC com base nas aplicações](https://docs.microsoft.com/intune/app-based-conditional-access-intune-create) e certifique-se de que o início de sessão na sua aplicação é concluído com êxito.
 
 ## <a name="app-protection-policy-without-device-enrollment"></a>Política de proteção de aplicações sem inscrição de dispositivos
@@ -1372,7 +1372,7 @@ O método `onMAMIdentitySwitchRequired` é chamado para todas as alterações de
 
   * Para **`Activity`** criação, `onMAMIdentitySwitchRequired` será chamado antes `onMAMCreate`. Se a aplicação tiver de mostrar a IU para determinar se a mudança de identidade deve ser permitida, a IU terá de ser apresentada com uma identidade *diferente*.
 
-  * Num **`Activity`**, quando uma alteração para a identidade vazia for pedida com motivo como `RESUME_CANCELLED`, a aplicação tem de modificar a atividade retomada de forma a mostrar dados consistentes com a mudança de identidade.  Se tal não for possível, a aplicação deverá recusar a mudança e será novamente pedido ao utilizador que fique em conformidade com a política da identidade retomada (por exemplo, ao ver o ecrã de introdução de PIN da aplicação).
+  * Num **`Activity`** , quando uma alteração para a identidade vazia for pedida com motivo como `RESUME_CANCELLED`, a aplicação tem de modificar a atividade retomada de forma a mostrar dados consistentes com a mudança de identidade.  Se tal não for possível, a aplicação deverá recusar a mudança e será novamente pedido ao utilizador que fique em conformidade com a política da identidade retomada (por exemplo, ao ver o ecrã de introdução de PIN da aplicação).
 
     > [!NOTE]
     > Uma aplicação com várias identidades irá sempre receber dados de aplicações geridas e não geridas. É da responsabilidade da aplicação tratar dados de identidades geridas de forma gerida.

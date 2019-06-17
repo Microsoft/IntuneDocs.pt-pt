@@ -16,12 +16,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9cb081dd52999f203420e8a1f0b4f9c52a313f75
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 06dcc730406af3ae2d715cbe7f0795253e2629f0
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043279"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045112"
 ---
 # <a name="create-a-device-based-conditional-access-policy"></a>Criar uma política de acesso condicional com base no dispositivo
 
@@ -32,7 +32,7 @@ Uma política de acesso condicional Especifica a aplicação ou serviços que pr
 > [!IMPORTANT]
 > Antes de configurar o acesso condicional, terá de configurar políticas de conformidade de dispositivos do Intune para avaliar os dispositivos com base em se eles satisfazer os requisitos específicos. Ver [começar a utilizar com políticas de conformidade de dispositivos no Intune](device-compliance-get-started.md).
 
-## <a name="create-conditional-access-policy"></a>Criar uma política de acesso condicional
+## <a name="create-conditional-access-policy"></a>Criar política de acesso condicional
 
 1.  No portal do Intune, selecione **acesso condicional** > **políticas** > **nova política**.
    
@@ -74,7 +74,7 @@ Uma política de acesso condicional Especifica a aplicação ou serviços que pr
       ![Criar uma nova política de acesso condicional](media/create-conditional-access-intune/create-ca-device-platforms.png)
 
       > [!TIP]  
-      > Se pretender proteger tanto **autenticação moderna** clientes e **clientes do Exchange ActiveSync**, criar duas políticas de acesso condicional separados, um para cada tipo de cliente. Embora o Exchange ActiveSync suporta autenticação moderna, a única condição que é suportada pelo Exchange ActiveSync é a plataforma. Outras condições, incluindo autenticação multifator, não são suportadas. Para proteger efetivamente o acesso ao Exchange Online do Exchange ActiveSync, crie uma política de acesso condicional que especifica a aplicação de cloud do Office 365 Exchange Online e a aplicação de cliente do Exchange ActiveSync com aplicar política apenas a plataformas suportadas selecionadas.
+      > Se pretender proteger tanto **autenticação moderna** clientes e **clientes do Exchange ActiveSync**, criar dois separadas políticas de acesso condicional, um para cada tipo de cliente. Embora o Exchange ActiveSync suporta autenticação moderna, a única condição que é suportada pelo Exchange ActiveSync é a plataforma. Outras condições, incluindo autenticação multifator, não são suportadas. Para proteger efetivamente o acesso ao Exchange Online do Exchange ActiveSync, crie uma política de acesso condicional que especifica a aplicação de cloud do Office 365 Exchange Online e a aplicação de cliente do Exchange ActiveSync com aplicar política apenas a plataformas suportadas selecionadas.
 
 9.  Selecione **Done** (Concluído).
 10. Em **Controlos de acesso**, selecione **Concessão**. Configure o que acontece com base nas condições que configurou.  Pode selecionar entre as seguintes opções:

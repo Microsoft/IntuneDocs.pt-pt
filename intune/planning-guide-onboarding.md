@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3e21eb6169acf8ae69ace94fd54007eaa4f7f90f
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 5ed13994576f67c7b740a2ea895db9d1a0f42289
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046744"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044349"
 ---
 # <a name="implement-your-microsoft-intune-plan"></a>Implementar o plano do Microsoft Intune
 
@@ -42,7 +42,7 @@ Os principais requisitos do Intune autónomo são:
 
 -   Azure AD Connect (para a sincronização de diretórios)
 
--   Conector do Intune no Local para o Exchange (para o acesso condicional ao Exchange no Local, caso seja necessário)
+-   Conector do Intune no local para o Exchange (para acesso condicional para o Exchange no local, se necessário)
 
 -   Intune Certificate Connector (para a implementação do certificado de SCEP, caso seja necessário)
 
@@ -125,9 +125,9 @@ O Intune suporta políticas de conformidade. Adicione políticas de conformidade
 
 ### <a name="task-12-enable-conditional-access-policies"></a>Tarefa 12: Ativar políticas de acesso condicional
 
-O Intune suporta o acesso condicional para o Exchange Online, Exchange no local, SharePoint Online, Skype para Empresas Online e Dynamics CRM Online. Ative e configure o acesso condicional conforme adequado com base nos seus requisitos e casos de utilização de implementação do Intune.
+O Intune suporta o acesso condicional para o Exchange Online, o Exchange no local, SharePoint Online, Skype para empresas Online e Dynamics CRM Online. Ativar e configurar o acesso condicional conforme adequado com base nos seus requisitos e casos de utilização de implementação do Intune.
 
--   Saiba mais sobre o [acesso condicional](conditional-access.md).
+-   Saiba mais sobre o [Acesso Condicional](conditional-access.md).
 
 ### <a name="task-13-enroll-devices"></a>Tarefa 13: Inscrever dispositivos
 

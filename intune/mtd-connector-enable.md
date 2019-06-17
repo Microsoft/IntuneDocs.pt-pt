@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1929b811a5a5320bc0ceefcef4f05ed2443ac070
-ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
+ms.openlocfilehash: a0a0a686d41f0f9bc7869b1b9379be7f6037c3b5
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66819656"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67046340"
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune"></a>Ativar o conector da Defesa Contra Ameaças para Dispositivos Móveis no Intune
 
@@ -62,7 +62,7 @@ Pode decidir quais as opções de alternância da MTD que necessita de ativar de
 - **Número de dias até o parceiro não está a responder**: Número de dias de inatividade antes do Intune considerar o parceiro como não responsivo devido a ligação for perdida. O Intune ignora o estado de conformidade para parceiros MTD não responsivos.
 
 > [!IMPORTANT] 
-> Sempre que possível, recomendamos que adiciona e atribuir as aplicações MTD antes de criar a conformidade do dispositivo e o acesso condicional, as regras de política. Isto ajuda a garante que a aplicação de MTD está pronta e disponível para os utilizadores finais instalarem antes de poderem aceder ao e-mail ou a outros recursos da empresa.
+> Sempre que possível, recomendamos que adiciona e atribuir as aplicações MTD antes de criar a conformidade do dispositivo e as regras de política de acesso condicional. Isto ajuda a garante que a aplicação de MTD está pronta e disponível para os utilizadores finais instalarem antes de poderem aceder ao e-mail ou a outros recursos da empresa.
 
 > [!TIP]
 > Pode ver o **Estado da ligação** e a hora da **Última sincronização** entre o Intune e o parceiro MTD no painel de Defesa Contra Ameaças para Dispositivos Móveis.

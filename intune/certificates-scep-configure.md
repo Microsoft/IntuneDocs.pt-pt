@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e170fe0c1b461bad140b89ac01a2ad817e2082e5
-ms.sourcegitcommit: 7ceae61e036ccf8b33704751b0b39fee81944072
-ms.translationtype: MT
+ms.openlocfilehash: 188e766224dc7fdd1f529055df7f5fc585a5ae42
+ms.sourcegitcommit: a2bad7465422b98eb3c10f03dc5a24fd99cee78d
+ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744334"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67041309"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Configurar e utilizar certificados SCEP com o Intune
 
@@ -552,7 +552,7 @@ A partir da versão 6.1806.X.X, o Serviço do Intune Connector regista eventos n
 | -------------   | -------------   | -------------      |
 | 0x00000000 | Êxito  | Êxito |
 | 0x00000400 | PKCS_Issue_CA_Unavailable  | A autoridade de certificação não é válida ou está inacessível. Verifique se a autoridade de certificação está disponível e se o servidor consegue comunicar com a mesma. |
-| 0x00000401 | Symantec_ClientAuthCertNotFound  | O certificado Symantec Client Auth não foi encontrado no arquivo de certificados local. Veja o artigo [Instalar o certificado de autorização de registo da Symantec](https://docs.microsoft.com/intune/certificates-symantec-configure#install-the-symantec-registration-authorization-certificate) para obter mais informações.  |
+| 0x00000401 | Symantec_ClientAuthCertNotFound  | O certificado Symantec Client Auth não foi encontrado no arquivo de certificados local. Consulte o artigo [configurar o Intune Certificate Connector para a plataforma de PKI DigiCert](https://docs.microsoft.com/intune/certificates-digicert-configure#troubleshooting) para obter mais informações.  |
 | 0x00000402 | RevokeCert_AccessDenied  | A conta especificada não tem permissões para revogar um certificado de AC. Veja o campo Nome da AC nos detalhes da mensagem de evento para determinar a AC emissora.  |
 | 0x00000403 | CertThumbprint_NotFound  | Não foi possível localizar um certificado que corresponda à sua pesquisa. Inscreva o conector do certificado e tente novamente. |
 | 0x00000404 | Certificate_NotFound  | Não foi possível localizar um certificado que corresponda às informações fornecidas. Volte a inscrever o conector do certificado e tente novamente. |

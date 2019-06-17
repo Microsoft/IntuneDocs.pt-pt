@@ -1,7 +1,7 @@
 ---
 title: Integrar o Jamf Pro com o Microsoft Intune para conformidade
 titleSuffix: Microsoft Intune
-description: Utilize as políticas de conformidade do Microsoft Intune com o acesso condicional do Azure Active Directory para ajudar a proteger os dispositivos geridos pelo Jamf.
+description: Utilize políticas de conformidade do Microsoft Intune com o Azure Active Directory condicional acesso para o ajudar a proteger os dispositivos geridos pelo Jamf.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -17,22 +17,22 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 940ef3e6df95629dad03d6c1d4e60343e4273473
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 7b5d3754c7dd3ead9236e223fd568e58e96fe9a1
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048848"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045145"
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>Integrar o Jamf Pro com o Intune para conformidade
 
 Aplica-se a: Intune no portal do Azure
 
-Se a sua organização utiliza [Jamf Pro](https://www.jamf.com) para gerir os seus utilizadores finais Macs, pode utilizar as políticas de conformidade do Microsoft Intune com o acesso condicional do Azure Active Directory para garantir que os dispositivos na sua organização estão em conformidade.
+Se a sua organização utiliza [Jamf Pro](https://www.jamf.com) para gerir os seus utilizadores finais Macs, pode utilizar as políticas de conformidade do Microsoft Intune com o Azure Active Directory condicional acesso para se certificar de que os dispositivos na sua organização estão em conformidade.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-É preciso o seguinte para configurar o acesso condicional com o Jamf Pro:
+É necessário o seguinte procedimento para configurar o acesso condicional com o Jamf Pro:
 
 - Jamf Pro 10.1.0 ou posterior
 - [Aplicação Portal da Empresa para macOS](https://aka.ms/macoscompanyportal)

@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 05/31/2019
+ms.date: 06/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7c14568a0581220cf5941984645bd0b9044e00c1
-ms.sourcegitcommit: cb76efd3db60a422a65478ebce83d3aea7b5eeed
+ms.openlocfilehash: 860d990e07fb2424adf0672e416c608b1251ae3c
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66749946"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67046199"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 
@@ -45,6 +45,17 @@ Saiba mais sobre as novidades todas as semanas no Microsoft Intune. Também pode
 -->  
 
 <!-- ########################## -->
+
+## <a name="week-of-june-10-2019"></a>Semana de 10 de Junho de 2019 
+
+### <a name="app-management"></a>Gestão de aplicações
+
+#### <a name="new-sample-apps-showing-intune-sdk-integration-available-on-github----2653471---"></a>Novas aplicações de exemplo que mostra a integração do SDK do Intune disponível no GitHub <!-- 2653471 -->
+A conta do GitHub de msintuneappsdk adicionou novos aplicativos de exemplo para iOS (Swift), Android, xamarin. IOS, formulários Xamarin e xamarin. Android. Estas aplicações foram feitas para complementar a nossa documentação existente e fornecer demonstrações de como integrar o SDK da aplicação Intune nas suas próprias aplicações móveis. Se for um programador de aplicações que precisa de orientações adicionais sobre o SDK do Intune, consulte os seguintes exemplos de ligado:
+- [Chatr](https://github.com/msintuneappsdk/Chatr-Sample-Intune-iOS-App) – uma nativa no iOS (Swift), mensagens instantâneas e aplicação que utiliza o Active Directory Authentication Library (ADAL) do Azure para a autenticação mediada.
+- [Taskr](https://github.com/msintuneappsdk/Taskr-Sample-Intune-Android-App) -uma aplicação de lista de tarefas de Android nativo que utiliza a ADAL para autenticação mediada.
+- [Taskr](https://github.com/msintuneappsdk/Taskr-Sample-Intune-Xamarin-Android-Apps) -aplicação de lista do xamarin. Android de uma lista de tarefas que utiliza a ADAL para autenticação mediada, este repositório também tem a aplicação xamarin. Forms.
+- [Aplicação de exemplo do xamarin. IOS](https://github.com/msintuneappsdk/sample-intune-xamarin-ios) -uma aplicação de exemplo do barebones xamarin. IOS.
 
 ## <a name="week-of-may-27-2019"></a>Semana de 27 de Maio de 2019 
 
@@ -192,7 +203,7 @@ Agora pode especificar se a assinatura de predefinição está ativada no Outloo
 F5 lançou uma atualização para BIG-IP 13, que permite a funcionalidade NAC F5 acesso em dispositivos iOS no Intune. Para utilizar esta funcionalidade:
 
 - Atualizar o BIG-IP para 13.1.1.5 atualizar. 14 de BIG-IP não é suportada.
-- Integre o BIG-IP com o Intune para NAC. Os passos em [descrição geral: Configuração de APM para uma postura de dispositivo verifica com sistemas de gestão do ponto de extremidade](https://support.f5.com/kb/products/big-ip_apm/manuals/product/apm-client-configuration-7-1-6/6.html#guid-0bd12e12-8107-40ec-979d-c44779a8cc89).
+- Integre o BIG-IP com o Intune para NAC. Os passos em [descrição geral: Configuração de APM para uma postura de dispositivo verifica com sistemas de gestão do ponto de extremidade](https://techdocs.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-client-configuration-7-1-6/6.html).
 - Verifique os **ativar o controlo de acesso de rede (NAC)** definição no perfil da VPN no Intune.
 
 Para ver a definição disponível, aceda a [definições de VPN configurar em dispositivos iOS](vpn-settings-ios.md).
@@ -560,7 +571,7 @@ Pode atribuir certificados Simple Certificate Enrollment Protocol (SCEP), usando
 Aplica-se a: 
 - macOS
 
-#### <a name="intune-conditional-access-ui-update------2432313-----"></a>Atualização de interface do Usuário de acesso condicional do Intune   <!-- 2432313   -->
+#### <a name="intune-conditional-access-ui-update------2432313-----"></a>Atualização da IU de acesso condicional do Intune   <!-- 2432313   -->
 Fizemos melhorias na interface do usuário para o acesso condicional na consola do Intune. Estas incluem:
 -  Substituído do Intune *acesso condicional* painel com o painel do Azure Active Directory. Isto garante que terá acesso a uma gama completa de definições e configurações para [acesso condicional](conditional-access.md) (que continua sendo uma tecnologia do Azure AD), do Intune consola. 
 - Mudamos o nome da *acesso no local* painel para *acesso ao Exchange*e realocada o *conector de serviço do Exchange* configuração deste painel nome mudado.  Esta alteração consolida onde [configurar e monitorizar detalhes relacionados com o Exchange online e no local](exchange-connector-install.md).  
@@ -1109,7 +1120,7 @@ Para o Knox Mobile Enrollment da Samsung, o Intune suporta agora inscrição de 
 - Agora, pode configurar uma mensagem de aviso de reinício para reinícios do que acontecer fora do horário de trabalho, que oferece suporte a cenários BYOD.
 
 #### <a name="group-windows-autopilot-enrolled-devices-by-correlator-id----2075110---"></a>Grupo de dispositivos inscritos pelo Windows Autopilot por ID do correlacionador <!-- 2075110 -->
-O Intune suporta agora o agrupamento de dispositivos Windows por um ID de correlacionador se os mesmos forem inscritos com o [Autopilot para dispositivos existentes](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/New-Windows-Autopilot-capabilities-and-expanded-partner-support/ba-p/260430), através do Configuration Manager. O ID de correlacionador é um parâmetro do ficheiro de configuração do Autopilot. O Intune irá definir automaticamente o [atributo enrollmentProfileName de dispositivos do Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#using-attributes-to-create-rules-for-device-objects) para que seja igual a "OfflineAutopilotprofile-<correlator ID>". Isto permite que sejam criados grupos dinâmicos do Azure AD arbitrários com base no ID de correlacionador, através do atributo enrollmentprofileName para inscrições do Autopilot offline. Para obter mais informações, veja [Windows Autopilot for existing devices](enrollment-autopilot.md#windows-autopilot-for-existing-devices) (Windows Autopilot para dispositivos existentes).
+O Intune suporta agora o agrupamento de dispositivos Windows por um ID de correlacionador se os mesmos forem inscritos com o [Autopilot para dispositivos existentes](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/New-Windows-Autopilot-capabilities-and-expanded-partner-support/ba-p/260430), através do Configuration Manager. O ID de correlacionador é um parâmetro do ficheiro de configuração do Autopilot. O Intune irá definir automaticamente o [atributo enrollmentProfileName de dispositivos do Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices) para que seja igual a "OfflineAutopilotprofile-<correlator ID>". Isto permite que sejam criados grupos dinâmicos do Azure AD arbitrários com base no ID de correlacionador, através do atributo enrollmentprofileName para inscrições do Autopilot offline. Para obter mais informações, veja [Windows Autopilot for existing devices](enrollment-autopilot.md#windows-autopilot-for-existing-devices) (Windows Autopilot para dispositivos existentes).
 
 #### <a name="intune-app-protection-policies----2984657---"></a>Políticas de proteção de aplicações do Intune <!-- 2984657 -->
 As políticas de proteção de aplicações do Intune permitem-lhe configurar várias definições de proteção de dados para aplicações protegidas pelo Intune, como o Microsoft Outlook e o Microsoft Word. Alterámos o aspeto e funcionalidade destas definições tanto para [iOS](app-protection-policy-settings-ios.md) como para [Android](app-protection-policy-settings-android.md), de modo a facilitar a localização de definições individuais. Existem três categorias de definições de política:

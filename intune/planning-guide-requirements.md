@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 907190d3022e3ed6af06f7304f24f38452f2d4bd
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 98441f03ae2ac9ef23e84de8d06198335da69198
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046264"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044311"
 ---
 # <a name="determine-use-case-scenario-requirements"></a>Determinar os requisitos de cenários de casos de utilização
 
@@ -50,7 +50,7 @@ Pode [transferir um modelo da tabela acima](https://gallery.technet.microsoft.co
 Veja mais alguns exemplos que podem ser utilizados na coluna “Requisitos”:
 
 - **E-mail seguro**
-    - Acesso condicional do Exchange Online/no local
+    - Acesso condicional para o Exchange Online / no local
     - Políticas de proteção de aplicações do Outlook
 
 - **Definições do dispositivo**

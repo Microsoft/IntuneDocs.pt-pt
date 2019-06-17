@@ -1,6 +1,6 @@
 ---
 title: Utilizar o Windows Defender ATP no Microsoft Intune – Azure | Microsoft Docs
-description: Veja como ativar a Proteção Avançada Contra Ameaças (ATP) do Windows Defender num cenário ponto a ponto, incluindo ativar a ATP no Intune e no Centro de Segurança do Windows Defender (portal ATP), carregar dispositivos através de um perfil de configuração ATP, criar a política de conformidade de dispositivos Intune, criar uma política de acesso condicional do Azure AD e monitorizar a conformidade do dispositivo.
+description: Veja como ativar a proteção de ameaças avançada do Windows Defender (ATP) num cenário ponto-a-ponto, incluindo ativar a ATP no Intune e o Centro de segurança do Windows Defender (ATP portal), carregar dispositivos através de um perfil de configuração ATP, criar um dispositivo do Intune política de conformidade, criar uma política de acesso condicional do Azure AD e monitorizar a conformidade do dispositivo.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 78c34345804f600aa62ff5e25ef27a23591e0f5c
-ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
+ms.openlocfilehash: 186ba1a8813e84b89a23c8aabb3a4ef0bd392da4
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66819865"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045920"
 ---
 # <a name="enforce-compliance-for-windows-defender-atp-with-conditional-access-in-intune"></a>Impor a conformidade para Windows Defender ATP com acesso condicional no Intune
 
@@ -40,7 +40,7 @@ Este artigo mostra-lhe como:
 
 - Ativar o Intune no ATP e ativar o ATP no Intune. Estas tarefas criam uma ligação de serviços entre o Intune e o Windows Defender ATP. Esta ligação permite que o Windows Defender ATP escreva o risco do computador para os seus dispositivos do Intune.
 - Criar a política de conformidade no Intune.
-- Ativar o acesso condicional no Azure Active Directory (AD) em dispositivos com base no seu nível de ameaça.
+- Ative o acesso condicional no Azure Active Directory (AD) em dispositivos com base em seu nível de ameaça.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
@@ -86,7 +86,7 @@ Depois de carregar um dispositivo através do pacote de configuração, não pre
 2. Selecione **Configuração do Dispositivo** > **Perfis** > **Criar perfil**.
 3. Introduza um **Nome** e uma **Descrição**.
 4. Em **Plataforma**, selecione **Windows 10 e versões posteriores**
-5. Em **Tipo de perfil**, selecione **Windows Defender ATP (Windows 10 Desktop)** .
+5. Em **Tipo de perfil**, selecione **Windows Defender ATP (Windows 10 Desktop)**.
 6. Configure as definições:
 
   - **Tipo de pacote de configuração de cliente do Windows Defender ATP**: Selecione **carregar** para adicionar o pacote de configuração para o perfil. Selecione **Descarregar** para remover o pacote de configuração do perfil.
@@ -126,7 +126,7 @@ A política de conformidade determina um nível de risco aceitável num disposit
 5. Para implementar a política aos grupos, selecione **Guardar**. Os dispositivos dos utilizadores visados pela política são avaliados quanto à conformidade.
 
 ## <a name="create-a-conditional-access-policy"></a>Criar uma política de acesso condicional
-A política de acesso condicional bloqueará o acesso a recursos *se* o dispositivo não estiver conforme. Por isso, se um dispositivo exceder o nível de ameaça, poderá bloquear o acesso aos recursos empresariais, tais como o SharePoint ou o Exchange Online.  
+Os blocos de política de acesso condicional aceder aos recursos *se* o dispositivo não está em conformidade. Por isso, se um dispositivo exceder o nível de ameaça, poderá bloquear o acesso aos recursos empresariais, tais como o SharePoint ou o Exchange Online.  
 
 > [!TIP]  
 > O Acesso Condicional é uma tecnologia do Azure Active Directory (Azure AD). O nó de Acesso Condicional acedido a partir do *Intune* é o mesmo nó acedido a partir do *Azure AD*.  
@@ -141,13 +141,13 @@ A política de acesso condicional bloqueará o acesso a recursos *se* o disposit
 
     Selecione **Concluído** para guardar as alterações.
 
-5. Selecione **Conceder** para aplicar o acesso condicional baseado na conformidade do dispositivo. Por exemplo, selecione **Conceder acesso** > **Pedir que o dispositivo seja marcado como conforme**.
+5. Selecione **concessão** para aplicar acesso condicional com base na conformidade do dispositivo. Por exemplo, selecione **Conceder acesso** > **Pedir que o dispositivo seja marcado como conforme**.
 
     Escolha **Selecionar** para guardar as alterações.
 
 6. Selecione **Ativar política** e, em seguida, **Criar** para guardar as alterações.
 
-[O que é o acesso condicional?](conditional-access.md) é um bom recurso.
+[O que é o acesso condicional? ](conditional-access.md) é um bom recurso.
 
 ## <a name="monitor-device-compliance"></a>Monitorizar a conformidade do dispositivo
 Em seguida, monitorize o estado dos dispositivos que tenham a política de conformidade do Windows Defender ATP.
@@ -157,7 +157,7 @@ Em seguida, monitorize o estado dos dispositivos que tenham a política de confo
 3. Encontre a sua política do Windows Defender ATP na lista e veja que dispositivos estão conformes ou não conformes.
 
 ## <a name="more-good-stuff"></a>Mais artigos interessantes
-[Windows Defender ATP conditional access](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/conditional-access-windows-defender-advanced-threat-protection) (Acesso condicional do Windows Defender ATP)  
+[Windows Defender ATP Conditional Access](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/conditional-access-windows-defender-advanced-threat-protection)  
 [Windows Defender ATP risk dashboard](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/dashboard-windows-defender-advanced-threat-protection) (Dashboard de risco do Windows Defender ATP)  
 [Introdução às políticas de conformidade de dispositivos](device-compliance-get-started.md)  
-[Acesso condicional no Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)
+[Acesso condicional no Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)

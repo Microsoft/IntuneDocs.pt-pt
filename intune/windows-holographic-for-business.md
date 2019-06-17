@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a10fa6983b8e8c34a1844c647d952ca8cbf0730c
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 1c1400b3786965ab962de01207f24b53aa3a47b1
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050160"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045982"
 ---
 # <a name="manage-and-use-different-device-management-features-on-windows-holographic-and-hololens-devices-with-intune"></a>Gerir e utilizar funcionalidades de gestão de dispositivos diferentes no Windows Holographic e dispositivos HoloLens com o Intune
 
@@ -54,7 +54,7 @@ Com a aplicação Portal da Empresa, também pode realizar as seguintes ações:
 ## <a name="compliance-policy"></a>Política de conformidade
 **[Criar uma política de conformidade de dispositivo](compliance-policy-create-windows.md)**
 
-As políticas de conformidade são regras e definições que os dispositivos têm de cumprir para estarem em conformidade. Utilize estas políticas com acesso condicional para bloquear o acesso a recursos da empresa a dispositivos que não estão em conformidade. No Intune, crie políticas de conformidade para permitir ou bloquear o acesso a dispositivos com o Windows Holographic for Business. Por exemplo, pode criar uma política que exija que o Bitlocker esteja ativado.
+As políticas de conformidade são regras e definições que os dispositivos têm de cumprir para estarem em conformidade. Utilize estas políticas com acesso condicional para bloquear o acesso aos recursos da empresa para dispositivos não estivem conformes. No Intune, crie políticas de conformidade para permitir ou bloquear o acesso a dispositivos com o Windows Holographic for Business. Por exemplo, pode criar uma política que exija que o Bitlocker esteja ativado.
 
 Veja também **[Introdução às políticas de conformidade](device-compliance-get-started.md)**.
 

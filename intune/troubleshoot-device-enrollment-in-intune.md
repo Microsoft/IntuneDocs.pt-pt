@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6175fca13f1883338b7f5858538728132183b8db
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
-ms.translationtype: MT
+ms.openlocfilehash: 9c33f13a7768b86895b89732f1f595d2ede39b41
+ms.sourcegitcommit: 119962948045079022aa48f968dde3e961d7cd0c
+ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040604"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67031578"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Resolver problemas de inscrição de dispositivos no Microsoft Intune
 
@@ -143,7 +143,7 @@ Para evitar atingir limites de dispositivos, certifique-se de que remove os regi
 - tiverem vários domínios de nível superior para sufixos de UPN dos utilizadores dentro da respetiva organização (por exemplo, @contoso.com ou @fabrikam.com).
 
 
-Um [rollup para o AD FS 2.0](http://support.microsoft.com/kb/2607496) funciona em conjunto com o comutador <strong>SupportMultipleDomain</strong> para permitir que o servidor do AD FS suporte este cenário sem necessitar de servidores do AD FS 2.0 adicionais. Para obter mais informações, veja [este blogue](https://blogs.technet.microsoft.uucom/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/).
+Um [rollup para o AD FS 2.0](http://support.microsoft.com/kb/2607496) funciona em conjunto com o comutador <strong>SupportMultipleDomain</strong> para permitir que o servidor do AD FS suporte este cenário sem necessitar de servidores do AD FS 2.0 adicionais. Para obter mais informações, veja [este blogue](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/).
 
 
 ## <a name="android-issues"></a>Problemas do Android
@@ -241,7 +241,7 @@ Para corrigir o problema, importe os certificados para os Certificados dos Compu
 3.  Localize o certificado para a comunicação de serviço do AD FS (um certificado assinado publicamente) e faça duplo clique para ver as respetivas propriedades.
 4.  Escolha o separador **Caminho de Certificação** para ver os certificados principais do certificado.
 5.  Em cada certificado principal, escolha **Ver Certificado**.
-6.  Selecione **Detalhes** > **Copiar para o ficheiro…**.
+6.  Selecione **Detalhes** > **Copiar para o ficheiro…** .
 7.  Siga as instruções do assistente para exportar ou guardar a chave pública do certificado principal numa localização do ficheiro à sua escolha.
 8.  Clique com botão direito do rato em **Certificados** > **Todas as Tarefas** > **Importar**.
 9.  Siga as instruções do assistente para importar os certificados principais para **Computador Local\Pessoal\Certificados**.

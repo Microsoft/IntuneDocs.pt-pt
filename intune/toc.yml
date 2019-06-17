@@ -373,7 +373,7 @@
               href: privacy-data-view-correct.md
             - name: 'Audit, export, delete (Auditar, exportar ou eliminar)'
               href: privacy-data-audit-export-delete.md
-        - name: Acesso condicional
+        - name: Acesso Condicional
           href: conditional-access.md
           items:
             - name: Formas comuns de utilizar o acesso condicional

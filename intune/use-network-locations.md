@@ -16,18 +16,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ddc58aed6e7a1efaecd8b7e7cf51a39e43d14e58
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 5491e0d2dfb1aa1989fc202203d9a895823b0b73
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66044335"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043892"
 ---
 # <a name="use-locations-network-fence-in-intune"></a>Utilizar Localizações (barreira de rede) no Intune
 
 Pode bloquear o acesso a uma rede empresarial se um dispositivo sair de uma localização. A funcionalidade **Localizações** no Intune fornece esta opção. 
 
-Pode criar uma política de conformidade com base na localização de rede, também conhecida como barreira de rede. A política garante que os dispositivos têm de estar ligados a uma rede de trabalho para estarem em conformidade. Esta política pode ser utilizada com as políticas de acesso condicional para os dispositivos terem acesso aos recursos de trabalho *apenas* quando estiverem ligados à rede de trabalho. Quando o dispositivo não estiver ligado à rede de trabalho, deixará de estar em conformidade e perderá o acesso aos recursos de trabalho.
+Pode criar uma política de conformidade com base na localização de rede, também conhecida como barreira de rede. A política garante que os dispositivos têm de estar ligados a uma rede de trabalho para estarem em conformidade. Esta política pode ser utilizada com as políticas de acesso condicional para que os dispositivos têm acesso a recursos de trabalho *apenas* quando o dispositivo está ligado à rede de trabalho. Quando o dispositivo não estiver ligado à rede de trabalho, deixará de estar em conformidade e perderá o acesso aos recursos de trabalho.
 
 Considere o seguinte cenário:
 

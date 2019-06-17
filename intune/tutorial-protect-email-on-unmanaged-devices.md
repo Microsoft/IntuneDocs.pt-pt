@@ -16,12 +16,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fc1f877f9b457c6abafef7f1e66e8b04bba2c8e0
-ms.sourcegitcommit: 2f32f6d2129bc10cc4a02115732e995edceb37d6
+ms.openlocfilehash: 624cc72ad9539659e1ce2c8b70f6a6698d5e7ba2
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66829062"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67046279"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-unmanaged-devices"></a>Tutorial: Proteger o e-mail do Exchange Online em dispositivos não geridos
 
@@ -29,7 +29,7 @@ Saiba como utilizar políticas de proteção de aplicações com acesso condicio
 
 > [!div class="checklist"]
 > * Crie uma política de proteção de aplicações do Intune para a aplicação Outlook. Irá limitar o que o utilizador pode fazer com os dados de aplicação ao impedir "Guardar como" e restringir cortar, copiar e colar ações. 
-> * Crie políticas de acesso condicional do Azure Active Directory (Azure AD) que permitem apenas a aplicação Outlook para aceder ao e-mail da empresa no Exchange Online. Também é necessária autenticação multifator (MFA) para clientes de autenticação moderna, como o Outlook para iOS e Android.
+> * Crie políticas de acesso condicional do Azure Active Directory (Azure AD) que permitem apenas a aplicação Outlook aceder ao e-mail da empresa no Exchange Online. Também é necessária autenticação multifator (MFA) para clientes de autenticação moderna, como o Outlook para iOS e Android.
 
 ## <a name="prerequisites"></a>Pré-requisitos
   - Precisará de um inquilino de teste com as seguintes subscrições para este tutorial:
@@ -87,7 +87,7 @@ Agora, vamos criar duas políticas de acesso condicional para cobrir todas as pl
 
 ### <a name="create-an-mfa-policy-for-modern-authentication-clients"></a>Crie uma política MFA para os clientes de autenticação moderna  
 
-1. No Intune, selecione **Acesso condicional** > **Políticas** > **Nova política**.  
+1. No Intune, selecione **acesso condicional** > **políticas** > **nova política**.  
 
 2. Para **Name**, introduza **testar a política para os clientes de autenticação moderna**.  
 
@@ -132,7 +132,7 @@ Agora, vamos criar duas políticas de acesso condicional para cobrir todas as pl
 É criada a política de acesso condicional para clientes de autenticação moderna. Agora, pode criar uma política para os clientes do Exchange Active Sync.
 
 ### <a name="create-a-policy-for-exchange-active-sync-clients"></a>Criar uma política para os clientes do Exchange Active Sync  
-1. No Intune, selecione **Acesso condicional** > **Políticas** > **Nova política**.  
+1. No Intune, selecione **acesso condicional** > **políticas** > **nova política**.  
 2. Para **Name**, introduza **testar a política para clientes EAS**.  
 3. Em **Atribuições**, selecione **Utilizadores e grupos**.  
 4. No separador *Incluir*, selecione **Todos os utilizadores** e, em seguida, selecione **Concluído**.  
@@ -189,4 +189,4 @@ Quando já não precisar das políticas de teste, poderá removê-las.
 5. Na **nome da política** , selecione o menu de contexto ( **...** ) para cada uma das suas políticas de teste e, em seguida, selecione **eliminar**. Selecione **Sim** para confirmar.  
 
  ## <a name="next-steps"></a>Passos Seguintes  
-Neste tutorial, criou a aplicação as políticas de proteção para limitar o que o utilizador pode fazer com o Outlook e criou as políticas de acesso condicional para exigir a aplicação do Outlook e exigir a MFA para os clientes de autenticação moderna. Para saber mais sobre como utilizar o Intune com o acesso condicional para proteger a outras aplicações e serviços, veja [configurar o acesso condicional](conditional-access.md).
+Neste tutorial, criou as políticas de proteção de aplicações para limitar o que o utilizador pode fazer com o Outlook e criou as políticas de acesso condicional para exigir a aplicação do Outlook e exigir a MFA para os clientes de autenticação moderna. Para saber mais sobre como utilizar o Intune com o acesso condicional para proteger a outras aplicações e serviços, veja [configurar o acesso condicional](conditional-access.md).

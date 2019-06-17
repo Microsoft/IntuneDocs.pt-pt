@@ -6,7 +6,7 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 01/02/2018
+ms.date: 06/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 864e43bf644bf4e4f959c6ad826d9d5bade617a5
-ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
+ms.openlocfilehash: 73cdd0f802ce3b52a566bbdddd7cf5cca2e2bef2
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66804666"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044599"
 ---
 # <a name="plan-communications"></a>Planear as comunicações 
 O plano de comunicação é um elemento-chave para uma migração do Intune. As seguintes ferramentas e modelos são fornecidos para ajudá-lo a treinar os usuários finais. O Kit de adoção do Intune inclui modelos de e-mail, um guia de inscrição no Intune e links para vídeos de instruções para a inscrição do utilizador final.  
@@ -33,7 +33,7 @@ Recomendamos o seguinte plano de comunicação de e-mails. Fornecemos modelos em
 - **Enviar um e-mail #1**: Explique as vantagens, expetativas e agenda. Aproveite esta oportunidade para apresentar outros serviços novos cujo acesso será concedido a dispositivos geridos pelo Intune. 
 
 - **Enviar um e-mail #2**: Anunciar que serviços estão agora prontos para acesso através do Intune. Informe os utilizadores para se inscreverem agora.  Dê aos utilizadores uma linha cronológica antes do respetivo acesso é afetado. Notificar os utilizadores dos benefícios e dos motivos estratégicos da migração.
-Após um determinado período, pode começar a impor conformidade através de políticas de acesso condicional e a utilizá-la como critérios para aceder a dados empresariais, conforme explicado em [Promover a adoção por parte de utilizadores finais de unidades com acesso condicional](migration-guide-drive-adoption.md).
+Após um determinado período, pode começar a impor conformidade através de políticas de acesso condicional e utilizá-lo a como critério para aceder a dados empresariais, conforme explicado [promover a adoção de unidades de utilizador final com acesso condicional](migration-guide-drive-adoption.md).
 
 ## <a name="intune-enrollment-guide"></a>Guia de inscrição do Intune 
 Este anexo PDF pode ser fornecido aos seus utilizadores como-é, ou pode personalizar a versão do Word para incluir os recursos internos e informações de contacto.

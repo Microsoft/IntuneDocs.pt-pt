@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2b6a38544016172da0267eb0a47948029786b786
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 87e5ac06e93027b577d42b27e7d15b9b18e11020
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046400"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67046360"
 ---
 # <a name="typical-migration-cycle"></a>Ciclo de migração típico
 
@@ -57,7 +57,7 @@ Controle o número de utilizadores que têm dispositivos inscritos depois de cad
 
 -   Avaliar a eficácia do plano de comunicação.
 
--   Calcular o impacto da imposição do acesso condicional.
+-   Calcule o impacto da imposição do acesso condicional.
 
 
 ## <a name="post-migration"></a>Pós-migração

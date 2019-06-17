@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6f2a88e6e807ea78e4a26abe71eb1b5997ea7256
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c554f2ab9fabf83695489ab5e6acd65e8d28f34c
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66044405"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67046245"
 ---
 # <a name="whats-new-in-the-intune-classic-portal---previous-months"></a>Novidades no portal clássico do Intune – meses anteriores
 
@@ -49,7 +49,7 @@ Uma atualização à aplicação Portal da Empresa para Android mostra um indica
 
 #### <a name="block-apps-from-accessing-sharepoint-online----679339---"></a>Impedir que as aplicações acedam ao SharePoint Online <!-- 679339 -->
 
-Agora, pode criar uma política de acesso condicional com base na aplicação para impedir que as aplicações que não têm políticas de proteção aplicadas acedam ao [SharePoint Online](app-based-conditional-access-intune-create.md). No cenário de acesso condicional baseado em aplicações, pode especificar as aplicações que pretende que tenham acesso ao SharePoint Online através do portal do Azure.
+Agora, pode criar uma política de acesso condicional com base na aplicação para impedir que as aplicações que não têm políticas de proteção de aplicações aplicadas às mesmas, de acessar [SharePoint Online](app-based-conditional-access-intune-create.md). No cenário de acesso condicional com base em aplicações, pode especificar as aplicações que pretende ter acesso ao SharePoint Online com o portal do Azure.
 
 #### <a name="single-sign-on-support-from-the-company-portal-for-ios-to-outlook-for-ios---834012--"></a>Único-suporte de sessão do Portal da empresa para iOS para o Outlook para iOS <!--834012-->
 Os utilizadores já não precisam de iniciar sessão na aplicação Outlook se já tiverem sessão iniciada no Portal da Empresa para iOS no mesmo dispositivo com a mesma conta. Quando os utilizadores iniciarem o Outlook, poderão selecionar a conta e iniciar sessão automaticamente. Também estamos a trabalhar no sentido de adicionar esta funcionalidade a outras aplicações da Microsoft.
@@ -135,7 +135,7 @@ Disponibilizamos uma versão da aplicação do Portal da Empresa para iOS atrav�
 
 #### <a name="support-for-skycure"></a>Suporte para Skycure
 
-Pode controlar o acesso a recursos empresariais a partir de dispositivos móveis através do acesso condicional com base na avaliação de riscos realizada pelo Skycure, uma solução de defesa contra ameaças para dispositivos móveis que está integrada com o Microsoft Intune. O risco é avaliado com base na telemetria recolhida dos dispositivos através do Skycure, incluindo:
+Pode agora controlar o dispositivo móvel acesso a recursos da empresa através do acesso condicional com base na avaliação de riscos realizada pelo Skycure, uma solução de defesa contra ameaças móveis que se integra com o Microsoft Intune. O risco é avaliado com base na telemetria recolhida dos dispositivos através do Skycure, incluindo:
 
 - Defesa física
 - Defesa da rede

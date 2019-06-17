@@ -4,10 +4,10 @@ description: O Microsoft 365 Enterprise inclui o Microsoft Intune. Veja como o I
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/29/2019
+ms.date: 06/12/2019
 ms.topic: conceptual
 audience: ITPro
-ms.service: ''
+ms.service: microsoft-intune
 ms.technology: ''
 ms.custom: intune
 ms.assetid: 0649d310-43a7-4b01-85d2-da255d03e1da
@@ -15,12 +15,12 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 452cb8e4163b82d699347a33fd8dfda9c792b6fc
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: d5614f0657175658c1a8442d650e16c8550c1ac1
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050263"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043834"
 ---
 # <a name="what-is-device-management"></a>O que é a gestão de dispositivos? 
 
@@ -61,7 +61,7 @@ Uma das principais tarefas das soluções de gestão de dispositivos consiste em
     - Ativar o [Windows Defender SmartScreen](https://docs.microsoft.com/intune/endpoint-protection-windows-10) para procurar atividades suspeitas em ficheiros e aplicações em dispositivos móveis 
     - Uso [proteção de ameaças avançada do Windows Defender (ATP)](https://docs.microsoft.com/intune/advanced-threat-protection) para ajudar a evitar falhas de segurança em dispositivos móveis. Além disso, ajudar a limitar o impacto de uma violação de segurança ao bloquear um utilizador a partir de recursos da empresa.
 
-- O **acesso condicional** é um recurso do Azure Active Directory que se integra muito bem com o Intune. Usando [acesso condicional](https://docs.microsoft.com/intune/conditional-access), certifique-se de que apenas os dispositivos compatíveis têm acesso ao e-mail, o SharePoint e outras aplicações. 
+- **Acesso condicional** é um recurso do Azure Active Directory e, se integra muito bem com o Intune. Usando [acesso condicional](https://docs.microsoft.com/intune/conditional-access), certifique-se de que apenas os dispositivos compatíveis têm acesso ao e-mail, o SharePoint e outras aplicações. 
 
 ## <a name="choose-the-device-management-solution-thats-right-for-you"></a>Optar pela solução de gestão de dispositivos que mais se adequa à sua situação
 
