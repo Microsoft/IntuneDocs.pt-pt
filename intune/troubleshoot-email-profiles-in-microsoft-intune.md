@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/29/2019
+ms.date: 06/17/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,20 +17,29 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e0fe37deb63457fef869df0f7263970a4e53cb29
-ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
+ms.openlocfilehash: 2246e3f6faa853f620327558a7faf4dc9d6a6e85
+ms.sourcegitcommit: 43ba5a05b2e1dc1997126d3574884f65cde449c7
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402713"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67197500"
 ---
 # <a name="common-issues-and-resolutions-with-email-profiles-in-microsoft-intune"></a>Problemas comuns e resoluções com perfis de e-mail no Microsoft Intune
 
 Reveja alguns problemas comuns de perfil de e-mail e como resolvê -los.
 
+## <a name="what-you-need-to-know"></a>O que tem de saber
+
+- Perfis de e-mail são implementados para o utilizador que inscreveu o dispositivo. Para configurar o perfil de e-mail, o Intune utiliza as propriedades do Azure Active Directory (AD) no perfil de e-mail do utilizador durante a inscrição. [Adicionar definições de e-mail para dispositivos](email-settings-configure.md) pode ser um bom recurso.
+- Depois de migrar a partir do Gestor de configuração híbrido para o Intune autónomo, o perfil de e-mail do Gestor de configuração híbrido permanece no dispositivo durante sete dias. Este comportamento está previsto. Se precisar do perfil de e-mail removido mais cedo, contacte [suporte do Intune](get-support.md).
+- Para Android Enterprise, implemente Gmail ou nove para trabalho com o gerida Play Store da Google. [Adicionar aplicações da Google Play gerido](apps-add-android-for-work.md) lista os passos.
+- O Microsoft Outlook para iOS e Android não suportam perfis de e-mail. Em vez disso, implementa uma política de configuração de aplicação. Para obter mais informações, consulte [definição de configuração do Outlook](app-configuration-policies-outlook.md).
+- Perfis de e-mail direcionados para grupos de dispositivos (não a grupos de utilizadores) não podem ser fornecidos ao dispositivo. Quando o dispositivo tem um utilizador primário, em seguida, direcionamento do dispositivo deve funcionar. Se o perfil de e-mail inclui certificados de utilizador, certifique-se de que a grupos de utilizadores de destino.
+- Os utilizadores podem ser repetidamente pedido para introduzir a palavra-passe para o perfil de e-mail. Neste cenário, verifique todos os certificados referenciados no perfil de e-mail. Se um dos certificados não está direcionado a um utilizador, em seguida, Intune tentará novamente para implementar o perfil de e-mail.
+
 ## <a name="device-already-has-an-email-profile-installed"></a>O dispositivo já tem um perfil de email instalado
 
-Se os utilizadores criam um perfil de e-mail antes de se inscreverem no Intune, o perfil de e-mail do Intune poderá não funcionar conforme esperado:
+Se os utilizadores criam um perfil de e-mail antes de se inscreverem no Intune ou o MDM do Office 365, o perfil de e-mail implementado pelo Intune poderá não funcionar conforme esperado:
 
 - **iOS**: Intune Deteta um perfil de e-mail existente, duplicado com base no nome de anfitrião e endereço de e-mail. O perfil de e-mail criados pelo utilizador bloqueia a implementação do perfil criados pelo Intune. Este é um problema comum como iOS, os utilizadores criam um perfil de e-mail e depois inscreverem. A aplicação Portal da empresa indica que o utilizador não estiver em conformidade e pode solicitar ao utilizador para remover o perfil de e-mail.
 
@@ -50,19 +59,16 @@ Reveja a configuração do seu perfil EAS para Samsung KNOX e a política de ori
 
 ## <a name="unable-to-send-images-from--email-account"></a>Não é possível enviar imagens a partir da conta de e-mail
 
-Aplica-se ao Intune no portal clássico do Azure.
-
 Os utilizadores com contas de e-mail configuradas automaticamente não é possível enviar imagens a partir dos seus dispositivos. Este cenário poderá ocorrer se **permitir que o email seja enviado a partir de aplicações de terceiros** não está ativada.
 
 ### <a name="intune-solution"></a>Solução do Intune
 
-1. Abra a consola de administração do Microsoft Intune, selecione **diretiva** carga de trabalho > **política de configuração**.
+1. Inicie sessão no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+2. Selecione **configuração do dispositivo** > **perfis**.
+3. Selecione o perfil de e-mail > **propriedades** > **definições**.
+4. Definir o **permitir o envio de aplicativos de terceiros de e-mails** na definição **ativar**.
 
-2. Selecione o perfil de e-mail e escolha **Editar**.
-
-3. Selecione **Permitir o envio de e-mails a partir de aplicações de terceiros.**
-
-### <a name="configuration-manager-integrated-with-intune-solution"></a>Solução do Configuration Manager integrado com o Intune
+### <a name="configuration-manager-hybrid"></a>Gestor de configuração híbrido
 
 1. Abra a consola do Configuration Manager > **ativos e compatibilidade**.
 
