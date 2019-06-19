@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 96cb9869db746942615221c5ab112ea5afd8de9c
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 8dca73de4491ab4f4822d42d589ef4e3bbbc50f1
+ms.sourcegitcommit: 569cd2d655d33db4fc5c5fb1f8f74a6bfdd78738
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049679"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67157035"
 ---
 # <a name="review-client-app-protection-logs"></a>Rever registos de proteção de aplicações cliente
 
@@ -30,7 +30,7 @@ Saiba mais sobre as definições que pode rever nos registos de proteção de ap
 
 O processo para ativar e recolher registos varia consoante a plataforma:
 - **Dispositivos Android** -utilize o *Portal da empresa*. Ver [enviar registos ao suporte da empresa por E-Mail](/intune-user-help/send-logs-to-your-it-admin-by-email-android).
-- **iOS deices** -utilize um Browser gerido, ou *Microsoft Edge* para recolher registos. Para obter detalhes, consulte o blogue da equipa de suporte do Intune [nova consola diagnóstico do Intune para envio de Log no Intune Managed Browser](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-New-Intune-Diagnostic-Console-for-Log-Submission-in/ba-p/280021). 
+- **dispositivos iOS** -utilize um Browser gerido, ou *Microsoft Edge* para recolher registos. Para obter detalhes, consulte o blogue da equipa de suporte do Intune [nova consola diagnóstico do Intune para envio de Log no Intune Managed Browser](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-New-Intune-Diagnostic-Console-for-Log-Submission-in/ba-p/280021). 
 - **Dispositivos Windows 10** -utilize *MDMDiag* e registos de eventos. Ver, [falhas de diagnosticar MDM no Windows 10](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10) o conteúdo de gestão de cliente do Windows e o blog [resolução de problemas do Windows 10 Intune falhas de política](http://configmgrdogsarchive.com/2018/08/09/troubleshooting-windows-10-intune-policy-failures)
 
 

@@ -17,19 +17,26 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 860d990e07fb2424adf0672e416c608b1251ae3c
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: d70b090d137dee4076bebdc70b8a6cfaea8c7977
+ms.sourcegitcommit: 627996c928853777954c959f70be05bf52f9bb5f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67046199"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67161666"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 
-Saiba mais sobre as novidades todas as semanas no Microsoft Intune. Também pode encontrar [alterações futuras](in-development.md), [avisos importantes](#notices)e informações sobre [versões anteriores](whats-new-archive.md). 
+Saiba mais sobre as novidades todas as semanas no Microsoft Intune. Também pode encontrar [avisos importantes](#notices), [versões anteriores](whats-new-archive.md)e informações sobre [como as atualizações de serviço do Intune são lançadas](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Microsoft-Intune-Service-Updates/ba-p/358728). 
 
 > [!Note]
+> Cada [atualização mensal](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Microsoft-Intune-Service-Updates/ba-p/358728) pode demorar até três dias para implementação e será na seguinte ordem:
+> - Dia 1: Ásia-Pacífico (APAC)
+> - Dia 2: Europa, Médio Oriente, África (EMEA)
+> - Dia 3: América do Norte
+> 
 > É possível que algumas funcionalidades sejam implementadas durante várias semanas e que não estejam disponíveis para todos os clientes na primeira semana.
+>
+> Verifique os [na página de desenvolvimento](in-development.md) para obter uma lista de funcionalidades futuras numa versão.
 
 **RSS feed**: Seja notificado quando esta página é atualizada ao copiar e colar o URL seguinte no seu leitor de feeds: `https://docs.microsoft.com/api/search/rss?search=%22What%27s+new+in+microsoft+intune%3F+-+Azure%22&locale=en-us`
 
