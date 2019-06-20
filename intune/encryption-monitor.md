@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d90bc17d01a76c9c566210edc3bdc265511fa16d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 43dc353da9aee9e2cdf7797f39746666a72d6880
+ms.sourcegitcommit: 14f4e97de5699394684939e6f681062b5d4c1671
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047813"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67251193"
 ---
 # <a name="monitor-bitlocker-and-device-encryption"></a>Monitorizar a encriptação BitLocker e o dispositivo  
 O Intune fornece uma localização centralizada para identificar o estado de encriptação dos seus dispositivos Windows 10 e ajuda-o a aceder a informações importantes para o BitLocker dos seus dispositivos, como encontrada no Azure Active Directory (Azure AD).  
@@ -95,7 +95,7 @@ Este painel fornece os seguintes detalhes:
 
 ## <a name="bitlocker-recovery-keys"></a>Chaves de recuperação do BitLocker
 O Intune fornece acesso o painel do Azure AD para o BitLocker, para que possa visualizar IDs de chave do BitLocker e chaves de recuperação para os seus dispositivos Windows 10, no portal do Intune.  Para ser acessível, o dispositivo tem de ter as chaves colocadas em caução em para o Azure AD. 
-1. Inicie sessão no [Intune](https://aka.ms/intuneportal), aceda à **dispositivos** e, em *gerir*, selecione **todos os dispositivos**.
+1. Inicie sessão no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), aceda à **dispositivos** e, em *gerir*, selecione **todos os dispositivos**.
 2. Selecione um dispositivo da lista e, em seguida, em *Monitor*, selecione **chaves de recuperação**.  
   
 Quando as chaves estão disponíveis no Azure AD, as seguintes informações estão disponíveis:

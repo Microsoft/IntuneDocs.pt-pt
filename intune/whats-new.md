@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d70b090d137dee4076bebdc70b8a6cfaea8c7977
-ms.sourcegitcommit: 627996c928853777954c959f70be05bf52f9bb5f
+ms.openlocfilehash: 62555e9b5a868b93dda08a8c784221eff570bb89
+ms.sourcegitcommit: 2545ffb75b8d9290718d3a67acdcbea2f279090f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67161666"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67263729"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 
@@ -56,6 +56,15 @@ Saiba mais sobre as novidades todas as semanas no Microsoft Intune. Também pode
 ## <a name="week-of-june-10-2019"></a>Semana de 10 de Junho de 2019 
 
 ### <a name="app-management"></a>Gestão de aplicações
+
+#### <a name="new-features-in-microsoft-intune-app"></a>Novos recursos na aplicação do Microsoft Intune
+Adicionámos novas funcionalidades para a aplicação Microsoft Intune (pré-visualização) para Android. Os utilizadores em dispositivos Android totalmente geridos podem agora:  
+
+* Ver e gerir os dispositivos que tenham inscrito através da aplicação do Portal da empresa do Intune ou o Microsoft Intune.    
+* Contacte a sua organização para obter suporte.    
+* Envie seus comentários à Microsoft.    
+* Ver os termos e condições, se definida pela sua organização.    
+
 
 #### <a name="new-sample-apps-showing-intune-sdk-integration-available-on-github----2653471---"></a>Novas aplicações de exemplo que mostra a integração do SDK do Intune disponível no GitHub <!-- 2653471 -->
 A conta do GitHub de msintuneappsdk adicionou novos aplicativos de exemplo para iOS (Swift), Android, xamarin. IOS, formulários Xamarin e xamarin. Android. Estas aplicações foram feitas para complementar a nossa documentação existente e fornecer demonstrações de como integrar o SDK da aplicação Intune nas suas próprias aplicações móveis. Se for um programador de aplicações que precisa de orientações adicionais sobre o SDK do Intune, consulte os seguintes exemplos de ligado:

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/28/2019
+ms.date: 06/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f17bdf21db61616f88cef4d257fbcd28d941dae8
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: 967398516cdc2f727aa517fed3c8cf65810a38a1
+ms.sourcegitcommit: 14f4e97de5699394684939e6f681062b5d4c1671
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373476"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67251223"
 ---
 # <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>Utilizar scripts do PowerShell em dispositivos Windows 10 no Intune
 
@@ -45,7 +45,7 @@ A extensão de gestão do Intune tem os seguintes pré-requisitos. Quando estes 
 
 - Dispositivos com o Windows 10 versão 1607 ou posterior. Se o dispositivo é inscrito através de [auto-inscrição em massa](windows-bulk-enroll.md), dispositivos têm de executar com o Windows 10 versão 1703 ou posterior. A extensão de gestão do Intune não é suportada no Windows 10 no modo de S, como o modo de S não permite a execução de aplicações da loja não. 
   
-- Dispositivos associados ao Azure Active Directory (AD), incluindo:
+- Dispositivos associados ao Azure Active Directory (AD), incluindo:  
   
   - Azure híbrido associado ao AD: Dispositivos associados ao Azure Active Directory (AD) e também associado ao local do Active Directory (AD). Ver [planear a implementação de associação do Azure Active Directory híbrida](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan) para obter orientações.
 
@@ -55,13 +55,16 @@ A extensão de gestão do Intune tem os seguintes pré-requisitos. Quando estes 
   
   - Dispositivos inscritos manualmente no Intune, que é quando:
   
-    - Utilizador inicia sessão no dispositivo com uma conta de utilizador local e, em seguida, associe o dispositivo manualmente para o Azure AD (e a inscrição automática para o Intune está ativada no Azure AD).
+    - [Inscrição automática para o Intune](quickstart-setup-auto-enrollment.md) está ativado no Azure AD. O utilizador final inicia sessão no dispositivo com uma conta de utilizador local, associe manualmente o dispositivo para o Azure AD e, em seguida, inicia sessão no dispositivo com a respetiva conta do Azure AD.
     
-    Ou
+    OU  
     
     - Utilizador inicia sessão no dispositivo com a respetiva conta do Azure AD e, em seguida, é inscrito no Intune.
 
   - Dispositivos cogeridos que utilizam o Configuration Manager e o Intune. Ver [o que é a cogestão](https://docs.microsoft.com/sccm/comanage/overview) para obter orientações.
+
+> [!TIP]
+> Certifique-se de que os dispositivos estão [associados a um](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network) para o Azure AD. Dispositivos que só estão [registado](https://docs.microsoft.com/azure/active-directory/user-help/user-help-register-device-on-network) no Azure AD não irão receber seus scripts.
 
 ## <a name="create-a-script-policy"></a>Criar uma política de script 
 
@@ -87,7 +90,7 @@ A extensão de gestão do Intune tem os seguintes pré-requisitos. Quando estes 
 5. Selecione **OK** > **criar** para guardar o script.
 
 > [!NOTE]
-> O script do PowerShell é executado sob privilégio de administrador (por predefinição) quando o script está definido como contexto de utilizador e o utilizador final no dispositivo tenha privilégios de administrador.
+> Quando os scripts estão definidos para o contexto de utilizador e o utilizador final tem direitos de administrador, por predefinição, o script do PowerShell é executado sob o privilégio de administrador.
 
 ## <a name="assign-the-policy"></a>Atribuir a política
 
@@ -156,6 +159,7 @@ Para ver se o dispositivo estiver inscrito automática, pode:
     > [!TIP]
     > O **extensão de gestão do Microsoft Intune** é um serviço que é executada no dispositivo, tal como qualquer outro serviço listado na aplicação de serviços (Services. msc). Depois de um dispositivo é reiniciado, este serviço pode também reiniciar e verificar a existência de quaisquer scripts do PowerShell atribuídas com o serviço Intune. Se o **extensão de gestão do Microsoft Intune** serviço está definido como Manual, em seguida, o serviço pode não reiniciar depois do dispositivo é reiniciado.
 
+- Certifique-se de que os dispositivos estão [associados ao Azure AD](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network). Dispositivos que só estão associados à sua área de trabalho ou a organização ([registado](https://docs.microsoft.com/azure/active-directory/user-help/user-help-register-device-on-network) no Azure AD) não irão receber os scripts.
 - O cliente de extensão de gestão do Intune verifica uma vez por hora para todas as alterações no script ou de política no Intune.
 - Confirmar a extensão de gestão do Intune é transferida para `%ProgramFiles(x86)%\Microsoft Intune Management Extension`.
 - Os scripts não executados no Surface Hubs ou Windows 10 no modo de S.

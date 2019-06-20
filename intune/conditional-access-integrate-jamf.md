@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7b5d3754c7dd3ead9236e223fd568e58e96fe9a1
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: d25012790322491a9038f0bcf9349434d5a45b8d
+ms.sourcegitcommit: 14f4e97de5699394684939e6f681062b5d4c1671
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045145"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67251078"
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>Integrar o Jamf Pro com o Intune para conformidade
 
@@ -80,7 +80,7 @@ Para ligar o Intune com o Jamf Pro:
 
 ## <a name="enable-intune-to-integrate-with-jamf-pro"></a>Integrar o Intune com o Jamf Pro
 
-1. Inicie sessão no [Intune](https://go.microsoft.com/fwlink/?linkid=20909)e aceda à **Microsoft Intune** > **conformidade de dispositivos** > **degestãodedispositivosdeparceiros**.
+1. Inicie sessão no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)e aceda à **Microsoft Intune** > **conformidade de dispositivos** > **degestãodedispositivosdeparceiros**.
 
 2. Ativar o conector de conformidade para Jamf ao colar o ID da aplicação guardada durante o procedimento anterior para o **ID de aplicação do Active Directory do Jamf Azure** campo.
 

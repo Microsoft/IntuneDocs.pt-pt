@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/10/2019
+ms.date: 06/05/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c44f18d19172498f17f2a3f78ea47bad1d0f3fa7
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: fc91fc685c28beff38dc395dd83b60e99343af57
+ms.sourcegitcommit: 2545ffb75b8d9290718d3a67acdcbea2f279090f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048116"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67263679"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Definições de dispositivos do Android Enterprise para permitir ou restringir funcionalidades com o Intune
 
@@ -56,7 +56,7 @@ Este artigo apresenta e descreve as diferentes definições que pode controlar e
 - **Feixe dados através de NFC**: Escolher **bloco** para impedir a utilização da tecnologia de junto ao campo comunicação (NFC) a feixe dados a partir de aplicações. **Não configurado** permite o uso de NFC para partilhar dados entre dispositivos.
 - **Recursos de depuração**: Escolher **permitir** para permitir que os utilizadores utilizem os recursos de depuração no dispositivo. **Não configurado** impede que os usuários usando os recursos de depuração no dispositivo.
 - **Ajuste do microfone**: Escolher **bloco** para impedir que os utilizadores de ativação do som do microfone e ajustar o volume do microfone. **Não configurado** permite ao utilizador utilizar e ajustar o volume do microfone do dispositivo.
-- **E-mails de proteção de reposição de fábrica**: Escolher **endereços de e-mail de conta Google**. Introduza os endereços de e-mail dos administradores de dispositivos que possam desbloquear o dispositivo depois de serem eliminado. Certifique-se de que separe os endereços de e-mail com ponto e vírgula, por exemplo, `admin1@gmail.com;admin2@gmail.com`. Se uma mensagem de e-mail não é inserida, qualquer pessoa pode desbloquear o dispositivo após o restauro para as definições de fábrica.
+- **E-mails de proteção de reposição de fábrica**: Escolher **endereços de e-mail de conta Google**. Introduza os endereços de e-mail dos administradores de dispositivos que possam desbloquear o dispositivo depois de serem eliminado. Certifique-se de que separe os endereços de e-mail com ponto e vírgula, por exemplo, `admin1@gmail.com;admin2@gmail.com`. Se uma mensagem de e-mail não é inserida, qualquer pessoa pode desbloquear o dispositivo após o restauro para as definições de fábrica. Estes e-mails aplicam-se apenas quando uma reposição de fábrica de não utilizadores é executado, como executar uma reposição de fábrica utilizando o menu de recuperação.
 - **Saída de emergência da rede**: Escolher **ativar** para permitir que os utilizadores ativar a funcionalidade de Sombreado traçado de escape de rede. Se uma conexão de rede não é feita quando o dispositivo for arrancado, a saída de emergência pede para temporariamente ligar a uma rede e atualizar a política de dispositivo. Depois da aplicação da política, a rede temporária é esquecida e o dispositivo continua o arranque. Esta funcionalidade liga dispositivos a uma rede se:
   - Não existe uma rede adequada na política de última.
   - O dispositivo for arrancado numa aplicação no modo de bloqueio de tarefa.
@@ -100,6 +100,8 @@ Utilize estas definições para configurar uma experiência de estilo de local p
   >   - [Atribuído ao grupo de dispositivos](apps-deploy.md) criado para os seus dispositivos dedicados
   > 
   > O **geridos tela home page** aplicação não é necessário para estar no perfil de configuração, mas é necessário para ser adicionado como uma aplicação de cliente. Quando o **geridos tela home page** aplicação é adicionada como uma aplicação de cliente, todas as outras aplicações que adiciona no perfil de configuração são apresentadas como ícones no **geridos tela home page** aplicação. 
+  >
+  > Ao utilizar o modo de local público de várias aplicações com geridos tela home page, aplicações de discagem/telefone poderão não funcionar corretamente. 
 
   - Escolher **adicionar**e selecione as suas aplicações na lista.
 
@@ -253,7 +255,7 @@ Utilize estas definições para configurar uma experiência de estilo de local p
 - **Comprimento mínimo da palavra-passe**: Introduza o número mínimo de carateres de palavra-passe do utilizador tem de ter, partir **4**-**16**.
 - **Máximo de minutos de inatividade até o trabalho ao bloqueio do perfil**: Selecione o período de tempo antes do perfil de trabalho ser bloqueado. Em seguida, o utilizador tem de introduzir as credenciais para recuperar o acesso.
 - **Número de falhas de início de sessão antes de apagar o dispositivo**: Introduza o número de vezes que uma palavra-passe incorreta pode ser introduzida antes do perfil de trabalho é eliminado do dispositivo.
-- **Expiração da palavra-passe (dias)**: Introduza o número de dias até ser preciso alterar palavra-passe de um utilizador final (de **1**-**255**).
+- **Expiração da palavra-passe (dias)** : Introduza o número de dias até ser preciso alterar palavra-passe de um utilizador final (de **1**-**255**).
 - **Tipo obrigatório de palavra-passe**: Selecione o tipo de palavra-passe que tem de ser definido no dispositivo. Escolha entre:
   - **Predefinição do dispositivo**
   - **Biométrica de segurança baixa**
@@ -274,7 +276,7 @@ Estas definições de palavra-passe aplicam-se aos perfis pessoais nos dispositi
 - **Comprimento mínimo da palavra-passe**: Introduza o número mínimo de carateres de palavra-passe do utilizador tem de ter, partir **4**-**14**.
 - **Máximo de minutos de inatividade até o ecrã ser bloqueado**: Selecione a quantidade de tempo antes de um dispositivo inativo ser automaticamente bloqueado
 - **Número de falhas de início de sessão antes de apagar o dispositivo**: Introduza o número de vezes que uma palavra-passe incorreta pode ser introduzida antes de serem eliminados todos os dados do dispositivo
-- **Expiração da palavra-passe (dias)**: Introduza o número de dias até ser preciso alterar palavra-passe de um utilizador final (de **1**-**255**)
+- **Expiração da palavra-passe (dias)** : Introduza o número de dias até ser preciso alterar palavra-passe de um utilizador final (de **1**-**255**)
 - **Tipo obrigatório de palavra-passe**: Selecione o tipo de palavra-passe que tem de ser definido no dispositivo. Escolha entre:
   - **Predefinição do dispositivo**
   - **Biométrica de segurança baixa**
