@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/29/2019
+ms.date: 06/20/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,18 +17,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1bed0fda1c19df181dacb36c832a2a4c94e61aff
-ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
+ms.openlocfilehash: 9314617640d0bfd7f3a7b0cd0ba572e99ede53f9
+ms.sourcegitcommit: cd451ac487c7ace18ac9722a28b9facfba41f6d3
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402669"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67298406"
 ---
 # <a name="troubleshoot-policies-and-profiles-and-in-intune"></a>Resolver problemas de políticas e perfis e no Intune
 
 O Microsoft Intune inclui alguns recursos internos de resolução de problemas. Utilize estas funcionalidades para ajudar a resolver problemas de políticas de conformidade e perfis de configuração no seu ambiente.
 
 Este artigo apresenta uma lista de algumas técnicas de resolução de problemas comuns e descreve alguns problemas que poderá experienciar.
+
+## <a name="check-tenant-status"></a>Verificar o estado do inquilino
+Verifique os [estado do inquilino](tenant-status.md) e confirme a subscrição está ativa. Também pode ver detalhes de incidentes activos e aconselhamentos sobre o que pode afetar a implementação de políticas ou perfis.
 
 ## <a name="use-built-in-troubleshooting"></a>Utilizar a resolução de problemas interna
 
@@ -113,6 +116,13 @@ Este artigo apresenta uma lista de algumas técnicas de resolução de problemas
 > [!NOTE]
 > Quando duas políticas com diferentes níveis de restrição se aplicam ao mesmo dispositivo ou utilizador, é aplicada a política mais restrita.
 
+## <a name="policy-troubleshooting-resources"></a>Recursos de resolução de problemas de política
+
+- [Resolução de problemas do iOS ou Android políticas não aplicar a dispositivos](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-tip-Troubleshooting-iOS-or-Android-policies-not-applying/ba-p/280154) (abre o outro site da Microsoft)
+- [Resolução de problemas de falhas de política do Intune do Windows 10](http://configmgrdogsarchive.com/2018/08/09/troubleshooting-windows-10-intune-policy-failures/) (abre um blog)
+- [Resolver problemas relacionados com definições personalizadas do CSP para Windows 10](https://support.microsoft.com/en-us/help/4055338/troubleshoot-csp-setting-windows-10-computer-intune) (abre o outro site da Microsoft)
+- [Política de grupo do Windows 10 vs MDM do Intune política](https://blogs.technet.microsoft.com/cbernier/2018/04/02/windows-10-group-policy-vs-intune-mdm-policy-who-wins/) (abre o outro site da Microsoft)
+
 ## <a name="alert-saving-of-access-rules-to-exchange-has-failed"></a>Alerta: Falha ao guardar de regras de acesso ao Exchange
 
 **Problema**: Recebe o alerta **Falha ao guardar as regras de acesso ao Exchange** na consola de administração.
@@ -125,11 +135,13 @@ Se criar políticas na área de trabalho de política do Exchange no local (Cons
 
 Dispositivos Windows Phone não permitem políticas de segurança definidas através de MDM ou EAS sejam reduzidas em termos segurança assim que tiver configurado-los. Por exemplo, define um **número mínimo de palavra-passe de caráter** para 8 e, em seguida, tente reduzir para 4. A política mais restritiva é aplicada ao dispositivo.
 
+Dispositivos Windows 10 não podem remover as políticas de segurança quando anular a atribuição de política (parar implementação). Poderá deixar a política atribuída e, em seguida, altere as definições de segurança para os valores predefinidos.
+
 Consoante a plataforma de dispositivo, se pretender alterar a política para um valor menos seguro, poderá ter de repor as políticas de segurança.
 
-Por exemplo, no ambiente de trabalho do Windows, percorra a partir da direita para abrir a barra **Atalhos**. Escolher **configurações** > **painel de controlo** > **contas de utilizador**. No lado esquerdo, selecione a ligação **Repor Políticas de Segurança** e escolha **Repor Políticas**.
+Por exemplo, no Windows 8.1, na área de trabalho, percorra a partir da direita para abrir o **atalhos** barra. Escolher **configurações** > **painel de controlo** > **contas de utilizador**. No lado esquerdo, selecione a ligação **Repor Políticas de Segurança** e escolha **Repor Políticas**.
 
-Outros dispositivos MDM, tal como Android, iOS e Windows Phone 8.1, poderão ter de ser extintos e reinscritos para aplicar uma política menos restritiva.
+Outras plataformas, tal como Android, iOS e Windows Phone 8.1, poderão ter de ser extintos e reinscritos para aplicar uma política menos restritiva.
 
 [Resolver problemas de inscrição de dispositivo](troubleshoot-device-enrollment-in-intune.md) pode ser um bom recurso.
 
@@ -160,6 +172,7 @@ Para PCs Windows geridos com o cliente de software do Intune, erros de política
 Ocorre se a hora no sistema local estiver dessincronizada em cinco minutos ou mais. Se a hora no computador local estiver dessincronizada, as transações seguras falharem porque os carimbos de data / hora é inválidos.
 
 Para resolver este problema, defina a hora do sistema local mais próximo possível hora da Internet. Em alternativa, defina-o como o tempo nos controladores de domínio na rede.
+
 
 ## <a name="next-steps"></a>Passos Seguintes
 

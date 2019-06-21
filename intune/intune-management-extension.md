@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/19/2019
+ms.date: 06/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 967398516cdc2f727aa517fed3c8cf65810a38a1
-ms.sourcegitcommit: 14f4e97de5699394684939e6f681062b5d4c1671
+ms.openlocfilehash: 90b3e858a06a6f3a34de6ec8102e1a6c458369a2
+ms.sourcegitcommit: cd451ac487c7ace18ac9722a28b9facfba41f6d3
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67251223"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67298407"
 ---
 # <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>Utilizar scripts do PowerShell em dispositivos Windows 10 no Intune
 
@@ -61,8 +61,12 @@ A extensão de gestão do Intune tem os seguintes pré-requisitos. Quando estes 
     
     - Utilizador inicia sessão no dispositivo com a respetiva conta do Azure AD e, em seguida, é inscrito no Intune.
 
-  - Dispositivos cogeridos que utilizam o Configuration Manager e o Intune. Ver [o que é a cogestão](https://docs.microsoft.com/sccm/comanage/overview) para obter orientações.
-
+  - Dispositivos cogeridos que utilizam o Configuration Manager e o Intune. Certifique-se a **aplicações de cliente** carga de trabalho está definida como **Intune piloto** ou **Intune**. Veja o seguinte para obter orientações sobre: 
+  
+    - [O que é a cogestão](https://docs.microsoft.com/sccm/comanage/overview) 
+    - [Carga de trabalho de aplicações de cliente](https://docs.microsoft.com/sccm/comanage/workloads#client-apps)
+    - [Cargas de trabalho do Gestor de configuração do comutador para o Intune](https://docs.microsoft.com/sccm/comanage/how-to-switch-workloads)
+  
 > [!TIP]
 > Certifique-se de que os dispositivos estão [associados a um](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network) para o Azure AD. Dispositivos que só estão [registado](https://docs.microsoft.com/azure/active-directory/user-help/user-help-register-device-on-network) no Azure AD não irão receber seus scripts.
 
