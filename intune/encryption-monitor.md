@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/17/2019
+ms.date: 06/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 43dc353da9aee9e2cdf7797f39746666a72d6880
-ms.sourcegitcommit: 14f4e97de5699394684939e6f681062b5d4c1671
+ms.openlocfilehash: bccfc952202ed9db5bdc5f68bbbba57c61b37b13
+ms.sourcegitcommit: b3a1c5b0b24f0e52cf318defe10f3d27a2770009
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67251193"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67316939"
 ---
 # <a name="monitor-bitlocker-and-device-encryption"></a>Monitorizar a encriptação BitLocker e o dispositivo  
 O Intune fornece uma localização centralizada para identificar o estado de encriptação dos seus dispositivos Windows 10 e ajuda-o a aceder a informações importantes para o BitLocker dos seus dispositivos, como encontrada no Azure Active Directory (Azure AD).  
@@ -51,7 +51,7 @@ O relatório apresenta os **nome do dispositivo** para os seus dispositivos Wind
   - **Não está pronta**: O dispositivo não tem capacidades de encriptação completa, mas ainda suporta a encriptação. Por exemplo, o dispositivo pode estar encriptado manualmente por um utilizador ou por meio da diretiva de grupo que pode ser definida para permitir a encriptar sem um TMP.
   - **Não aplicável**: Não há informações suficientes para classificar este dispositivo.  
 
-- **Estado de encriptação** – se a unidade do SO é encriptada.  
+- **Estado de encriptação** – se a unidade do SO é encriptada. 
 
 
 ### <a name="device-encryption-status"></a>Estado de encriptação do dispositivo
@@ -60,7 +60,7 @@ Quando um dispositivo é selecionado, o Intune apresenta os **estado de encripta
 Este painel fornece os seguintes detalhes:  
 - **Nome do dispositivo** – o nome do dispositivo que está a ver.  
 - **Preparação de encriptação** – um avaliação de preparação de dispositivos para oferecer suporte a criptografia de disco BitLocker. Um dispositivo pode ter um Estado de encriptação de *Encrypted* , mesmo que seja sua prontidão de encriptação *não está pronta*, porque não tem um TPM. (Consulte a preparação de encriptação na secção anterior para obter mais detalhes.)
-- **Estado de encriptação** - se a unidade do SO é encriptada.  
+- **Estado de encriptação** - se a unidade do SO é encriptada. Pode demorar até 24 horas para o Intune começar a geração de relatórios num Estado de encriptação de dispositivos ou uma alteração de estado.  
 - **Perfis** – uma lista da *configuração do dispositivo* perfis aplicáveis a este dispositivo e incluem o seguinte tipo de perfil e as definições:  
   - Tipo de perfil = *Endpoint protection*  
   - Definições > encriptação Windows > encriptar dispositivos = *necessário*  
