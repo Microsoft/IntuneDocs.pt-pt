@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 62555e9b5a868b93dda08a8c784221eff570bb89
-ms.sourcegitcommit: 2545ffb75b8d9290718d3a67acdcbea2f279090f
+ms.openlocfilehash: 756fafc02a6d64b1495a838ab8eee4130ee77361
+ms.sourcegitcommit: a63b9eaa59867ab2b0a6aa415c19d9fff4fda874
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67263729"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67389344"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 
@@ -53,7 +53,7 @@ Saiba mais sobre as novidades todas as semanas no Microsoft Intune. Também pode
 
 <!-- ########################## -->
 
-## <a name="week-of-june-10-2019"></a>Semana de 10 de Junho de 2019 
+## <a name="week-of-june-17-2019"></a>Semana de 17 de Junho de 2019   
 
 ### <a name="app-management"></a>Gestão de aplicações
 
@@ -63,8 +63,11 @@ Adicionámos novas funcionalidades para a aplicação Microsoft Intune (pré-vis
 * Ver e gerir os dispositivos que tenham inscrito através da aplicação do Portal da empresa do Intune ou o Microsoft Intune.    
 * Contacte a sua organização para obter suporte.    
 * Envie seus comentários à Microsoft.    
-* Ver os termos e condições, se definida pela sua organização.    
+* Ver os termos e condições, se definida pela sua organização.  
 
+## <a name="week-of-june-10-2019"></a>Semana de 10 de Junho de 2019 
+
+### <a name="app-management"></a>Gestão de aplicações  
 
 #### <a name="new-sample-apps-showing-intune-sdk-integration-available-on-github----2653471---"></a>Novas aplicações de exemplo que mostra a integração do SDK do Intune disponível no GitHub <!-- 2653471 -->
 A conta do GitHub de msintuneappsdk adicionou novos aplicativos de exemplo para iOS (Swift), Android, xamarin. IOS, formulários Xamarin e xamarin. Android. Estas aplicações foram feitas para complementar a nossa documentação existente e fornecer demonstrações de como integrar o SDK da aplicação Intune nas suas próprias aplicações móveis. Se for um programador de aplicações que precisa de orientações adicionais sobre o SDK do Intune, consulte os seguintes exemplos de ligado:

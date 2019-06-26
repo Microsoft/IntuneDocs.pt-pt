@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c0a83526a2e9333c0e6a131e59cee29a4a76fffa
-ms.sourcegitcommit: a2bad7465422b98eb3c10f03dc5a24fd99cee78d
+ms.openlocfilehash: 28c3da6d2e3390d20aecc3673cac38e8424ef57a
+ms.sourcegitcommit: a63b9eaa59867ab2b0a6aa415c19d9fff4fda874
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67041192"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67389314"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Inscrever dispositivos Windows no Intune com o Windows Autopilot  
 O Windows Autopilot simplifica a inscrição de dispositivos no Intune. A criação e manutenção de imagens personalizadas do sistema operativo são um processo moroso. Também poderá demorar a aplicar estas imagens personalizadas do sistema operativo a novos dispositivos para as preparar para utilização antes de as disponibilizar aos seus utilizadores finais. Com o Microsoft Intune e o Autopilot, pode fornecer novos dispositivos aos seus utilizadores finais sem ter de criar, manter e aplicar imagens de sistema operativo personalizadas aos dispositivos. Ao utilizar o Intune para gerir dispositivos do Autopilot, pode gerir políticas, perfis, aplicações, entre outros, após estes serem inscritos. Para uma descrição geral das vantagens, cenários e pré-requisitos, veja [Descrição geral do Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
@@ -86,22 +86,22 @@ Os perfis de implementação do Autopilot são utilizados para configurar os dis
 4. Selecione **Seguinte**.
 5. Sobre o **experiência de Out-of-box (OOBE)** página, para **modo de implementação**, escolha uma destas duas opções:
     - **Controlada pelo usuário**: Os dispositivos com este perfil estão associados ao utilizador que inscreve o dispositivo. Precisa de credenciais de utilizador para inscrever o dispositivo.
-    - **Implantação automática (pré-visualização)** : (requer o Windows 10, versão 1809 ou posterior) dispositivos com este perfil não estão associados com o utilizador a inscrição do dispositivo. Não são necessárias credenciais de utilizador para inscrever o dispositivo.
+    - **Implantação automática (pré-visualização)**: (requer o Windows 10, versão 1809 ou posterior) dispositivos com este perfil não estão associados com o utilizador a inscrição do dispositivo. Não são necessárias credenciais de utilizador para inscrever o dispositivo.
 
     ![Página de captura de ecrã de OOBE](media/enrollment-autopilot/create-profile-outofbox.png)
 
 6. Na caixa **Aderir ao Azure AD como**, selecione **Associado ao Azure AD**.
 7. Configure as seguintes opções:
-    - **O contrato de licença de utilizador final (EULA)** : (Windows 10, versão 1709 ou posterior) Escolha se pretende mostrar o EULA aos utilizadores.
+    - **O contrato de licença de utilizador final (EULA)**: (Windows 10, versão 1709 ou posterior) Escolha se pretende mostrar o EULA aos utilizadores.
     - **As definições de privacidade**: Escolha se pretende mostrar as definições de privacidade aos utilizadores.
     >[!IMPORTANT]
     >Para implementações do Autopilot em dispositivos de 1903 de versão do Windows 10 e posterior, o padrão de dados de diagnóstico é automaticamente definido como completo. Para obter mais informações, consulte [dados de diagnóstico do Windows](https://docs.microsoft.com/en-us/windows/privacy/windows-diagnostic-data) <br>
     
-    - **Ocultar alterar as opções de conta (requer o Windows 10, versão 1809 ou posterior)** : Escolher **ocultar** para impedir que alterar as opções de conta de ser apresentado nas páginas de erro de início de sessão e o domínio de empresa. Esta opção requer a [configuração da imagem corporativa da empresa no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding).
+    - **Ocultar alterar as opções de conta (requer o Windows 10, versão 1809 ou posterior)**: Escolher **ocultar** para impedir que alterar as opções de conta de ser apresentado nas páginas de erro de início de sessão e o domínio de empresa. Esta opção requer a [configuração da imagem corporativa da empresa no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding).
     - **Tipo de conta de utilizador**: Escolha o tipo de conta do usuário (**administrador** ou **padrão** utilizador).
-    - **Permitir meticulosa OOBE**: Escolher **Sim** para permitir que o suporte de meticulosa.
-    - **Aplicar modelo de nome de dispositivo**: Escolher **Sim** para criar um modelo a utilizar quando um dispositivo de nomenclatura durante a inscrição. Os nomes têm de ter 15 carateres ou menos e podem conter letras, números e hífenes. Não podem conter apenas números. Utilize a [macro %SERIAL%](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) para adicionar um número de série específico de hardware. Em alternativa, utilize a [macro %RAND:x%](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) para adicionar uma cadeia de números aleatória na qual x corresponde ao número de dígitos a adicionar. 
-    - **Idioma (região)** \*: Escolha o idioma a utilizar para o dispositivo. Esta opção só está disponível se tiver optado pela **Implementação personalizada** no **Modo de implementação**.
+    - **Permitir White Glove OOBE** (requer o Windows 10, versão 1903 ou posterior; [adicionais requisitos físicos](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove#prerequisites)): Escolher **Sim** para permitir que o suporte de meticulosa.
+    - **Aplicar modelo de nome de dispositivo** (requer o Windows 10, versão 1809 ou posterior): Escolher **Sim** para criar um modelo a utilizar quando um dispositivo de nomenclatura durante a inscrição. Os nomes têm de ter 15 carateres ou menos e podem conter letras, números e hífenes. Não podem conter apenas números. Utilize a [macro %SERIAL%](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) para adicionar um número de série específico de hardware. Em alternativa, utilize a [macro %RAND:x%](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) para adicionar uma cadeia de números aleatória na qual x corresponde ao número de dígitos a adicionar. 
+    - **Idioma (região)**\*: Escolha o idioma a utilizar para o dispositivo. Esta opção só está disponível se tiver optado pela **Implementação personalizada** no **Modo de implementação**.
     - **Configurar automaticamente o teclado**\*: Se um **idioma (região)** é selecionado, escolha **Sim** para ignorar a página de seleção do teclado. Esta opção só está disponível se tiver optado pela **Implementação personalizada** no **Modo de implementação**.
 8. Selecione **Seguinte**.
 9. Sobre o **etiquetas de âmbito** página, pode optar por adicionar as etiquetas de âmbito que pretende aplicar a este perfil. Para obter mais informações sobre etiquetas de âmbito, veja [utilizar etiquetas de controle e o âmbito de acesso baseado em funções para distribuído IT](scope-tags.md).
