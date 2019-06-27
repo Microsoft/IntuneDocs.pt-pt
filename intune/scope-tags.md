@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 57a14e1e3c4caea570667096fec71cecf2d88ddf
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: ba1d7669e80fd91398f41c57ca2d27ce78a06041
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045179"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67403805"
 ---
 # <a name="use-role-based-access-control-rbac-and-scope-tags-for-distributed-it"></a>Utilizar o controlo de acesso baseado em funções (RBAC) e etiquetas de âmbito para distribuído IT
 
@@ -38,12 +38,14 @@ Por exemplo, digamos que um administrador de escritório regional de Seattle é 
 
 ## <a name="to-create-a-scope-tag"></a>Para criar uma etiqueta de âmbito
 
-1. No Intune, escolha **funções** > **âmbito (etiquetas)** > **criar**.
+1. No Intune, escolha **funções** > **âmbito (etiquetas)**  > **criar**.
 
     ![Captura de ecrã de criar uma etiqueta de âmbito.](./media/scope-tags/create-scope-tag.png)
 
-2. Forneça um **Nome** e uma **Descrição**.
-3. Selecione **Criar**.
+3. Se pretender que todos os dispositivos em grupos específicos, escolha **atribuir a etiqueta de âmbito para todos os dispositivos em grupos selecionados**.
+    1. Na **selecionar grupos para incluir** página, selecione os grupos que contêm os dispositivos que pretende atribuir esta etiqueta de âmbito para.
+    2. Escolha **Selecionar**.
+4. Selecione **Criar**.
 
 ## <a name="to-assign-a-scope-tag-to-a-role"></a>Para atribuir uma etiqueta de âmbito a uma função
 
@@ -52,11 +54,11 @@ Por exemplo, digamos que um administrador de escritório regional de Seattle é 
     ![Captura de ecrã de atribuir o âmbito a uma função.](./media/scope-tags/assign-scope-to-role.png)
 
 2. Fornecer uma **nome da atribuição** e **Descrição**.
-3. Escolher **membros (grupos)** > **Add** > Escolha os grupos que pretende como parte desta atribuição > **selecionar**  >   **OK**. mUsers deste grupo terão permissão para gerir as políticas e perfis de utilizadores/dispositivos no âmbito (grupos).
+3. Escolher **membros (grupos)**  > **Add** > Escolha os grupos que pretende como parte desta atribuição > **selecionar**  >   **OK**. mUsers deste grupo terão permissão para gerir as políticas e perfis de utilizadores/dispositivos no âmbito (grupos).
 
     ![Captura de ecrã dos grupos de seleção de membro.](./media/scope-tags/select-member-groups.png)
 
-4. Se pretender gerir os utilizadores/dispositivos de um conjunto específico de grupos, escolha **âmbito (grupos)** > **grupos selecionados** > **selecionar grupos para incluir**> Escolha os grupos de > **selecionar** > **OK**. Todos os utilizadores/dispositivos neste grupo pode ter seus perfis e políticas geridas pelos administradores em membros (grupo).
+4. Se pretender gerir os utilizadores/dispositivos de um conjunto específico de grupos, escolha **âmbito (grupos)**  > **grupos selecionados** > **selecionar grupos para incluir**> Escolha os grupos de > **selecionar** > **OK**. Todos os utilizadores/dispositivos neste grupo pode ter seus perfis e políticas geridas pelos administradores em membros (grupo).
 
     ![Captura de ecrã dos grupos de âmbito selecione.](./media/scope-tags/select-scope-groups.png)
 
@@ -64,7 +66,7 @@ Por exemplo, digamos que um administrador de escritório regional de Seattle é 
 
     ![Captura de ecrã de outras opções para grupos de âmbito selecione.](./media/scope-tags/scope-group-other-options.png)
     
-5. Escolher **âmbito (etiquetas)** > **Add** > Escolha as etiquetas que pretende adicionar a esta função > **selecionar** > **OK**. Utilizadores membros (grupos) têm acesso às políticas e perfis que também têm a mesma etiqueta de âmbito.
+5. Escolher **âmbito (etiquetas)**  > **Add** > Escolha as etiquetas que pretende adicionar a esta função > **selecionar** > **OK**. Utilizadores membros (grupos) têm acesso às políticas e perfis que também têm a mesma etiqueta de âmbito.
 
     ![Captura de ecrã de etiquetas de âmbito selecione.](./media/scope-tags/select-scope-tags.png)
 
@@ -75,7 +77,7 @@ Por exemplo, digamos que um administrador de escritório regional de Seattle é 
 
     ![Captura de ecrã do perfil de select.](./media/scope-tags/choose-profile.png)
 
-2. Escolher **propriedades** > **âmbito (etiquetas)** > **adicionar**.
+2. Escolher **propriedades** > **âmbito (etiquetas)**  > **adicionar**.
 
     ![Captura de ecrã de adicionar etiquetas de âmbito.](./media/scope-tags/add-scope-tags.png)
 

@@ -18,12 +18,12 @@ ms.reviewer: tisilv
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bef0eb545f5f0ca0f85365a08e6bc5d726d6979e
-ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
+ms.openlocfilehash: 4c8dfdea552d035c036828bfd2e6695cc5e4cb7b
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66196862"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67402771"
 ---
 # <a name="set-up-ios-device-access-to-your-company-resources"></a>Configurar o acesso do dispositivo iOS aos recursos da empresa  
 
@@ -59,15 +59,15 @@ Colocar em pausa durante mais de alguns minutos, durante a inscrição poderá f
 
 1. Abra o Portal da empresa e inicie sessão com a sua conta escolar ou profissional. 
 
-    ![Captura de ecrã do exemplo de aplicação do Portal da empresa, de início de sessão.](./media/ios-01-cp-enroll-1903.PNG)  
+    ![Captura de ecrã do exemplo de aplicação do Portal da empresa, de início de sessão.](./media/ios-01-cp-enroll-1904.PNG)  
 
 2. Quando lhe for pedido para receber notificações do Portal da empresa, toque em **permitir.** Portal da empresa utiliza notificações para alertá-lo se, por exemplo, definições do dispositivo tem de ser atualizado. 
 
-    ![Captura de ecrã de exemplo da home page do Portal da empresa, a linha de "Notificações".](./media/ios-04-cp-enroll-1903.PNG)  
+    ![Captura de ecrã de exemplo da home page do Portal da empresa, a linha de "Notificações".](./media/ios-02-cp-enroll-1904.PNG)  
 
 3. Sobre o **configurar o acesso** ecrã, selecione **começar.**  
 
-     ![Captura de ecrã de exemplo do Portal da empresa, o ecrã de "Configurar o acesso".](./media/ios-05-cp-enroll-1903.PNG)  
+     ![Captura de ecrã de exemplo do Portal da empresa, o ecrã de "Configurar o acesso".](./media/ios-03-cp-enroll-1904.PNG)  
 
 4. Ler a lista de sua organização pode e não é possível ver as informações do dispositivo. Em seguida, toque **continuar**.  
 
@@ -87,7 +87,7 @@ Colocar em pausa durante mais de alguns minutos, durante a inscrição poderá f
 
 7. iOS 12.2 e mais tarde apenas: Quando lhe for pedido para abrir o Portal da empresa, toque em **abra**. O **instalar o perfil de gestão** ecrã apresenta os passos para instalar o perfil.
 
-    ![Captura de ecrã de exemplo do Portal da empresa, ecrã instalar perfil de gestão.](./media/ios-1904-settings-icon.PNG)  
+    ![Captura de ecrã de exemplo do Portal da empresa, ecrã instalar perfil de gestão.](./media/ios-07-cp-enroll-1904.PNG)  
 
 8. Vá para a aplicação de definições e toque em **perfil transferido**.  
 
@@ -99,24 +99,24 @@ Colocar em pausa durante mais de alguns minutos, durante a inscrição poderá f
     
 10. Introduza a palavra-passe do dispositivo. Em seguida, toque **instalar**.    
 
-    ![Captura de ecrã da aplicação de definições, o ecrã instalar perfil, com um cursor no exemplo a * * * * de instalação botão.](./media/ios-1904-password-install.PNG)  
+    ![Captura de ecrã da aplicação de definições, o ecrã instalar perfil, com um cursor no exemplo a * * * * de instalação botão.](./media/ios-10-cp-enroll-1904.PNG)  
 
 
 11. A próxima tela é um aviso de sistema padrão para gestão de dispositivos. Para continuar com a instalação, toque em **instalar**. Se lhe for pedido para a gestão remota de confiança, toque em **confiança**.  
 
-    ![Captura de ecrã do exemplo de aplicação de definições, o ecrã de aviso de sistema padrão para o certificado de raiz e gestão de dispositivos móveis.](./media/ios-15-cp-enroll-1903.PNG)  
+    ![Captura de ecrã do exemplo de aplicação de definições, o ecrã de aviso de sistema padrão para o certificado de raiz e gestão de dispositivos móveis.](./media/ios-11-cp-enroll-1904.PNG)  
 
 12. Após a conclusão da instalação, toque em **feito**. Para verificar se o perfil foi instalado, vá para o **perfis e gestão de dispositivos** definições. Deverá ver o perfil listado na **gestão de dispositivos móveis**.   
 
-    ![Captura de ecrã de exemplo da aplicação de definições, perfis e gestão de dispositivos definições, que mostra o perfil de gestão.](./media/ios-00-cp-enroll-1903.PNG)  
+    ![Captura de ecrã de exemplo da aplicação de definições, perfis e gestão de dispositivos definições, que mostra o perfil de gestão.](./media/ios-12-cp-enroll-1904.PNG)  
 
 13. Regresse à aplicação Portal da empresa. Portal da empresa irá começar a sincronizar e configurar o dispositivo. Portal da empresa poderá pedir-lhe para atualizar as definições adicionais do dispositivo. Se, toque **continuar**.  
 
-    ![Captura de ecrã de exemplo do Portal da empresa, o ecrã "Configurar o acesso ao", com um triângulo amarelo junto à definição requisito.](./media/ios-12-cp-enroll-1903.PNG)  
+    ![Captura de ecrã de exemplo do Portal da empresa, o ecrã "Configurar o acesso ao", com um triângulo amarelo junto à definição requisito.](./media/ios-13-cp-enroll-1904.PNG)  
 
 14. Saberá que a instalação está concluída quando todos os itens na lista de mostram um círculo verde. Toque em **Concluído**.   
     
-    ![Captura de ecrã de exemplo do Portal da empresa, "está tudo pronto!" ecrã que mostra todos os círculos verde.](./media/ios-13-cp-enroll-1903.PNG)  
+    ![Captura de ecrã de exemplo do Portal da empresa, "está tudo pronto!" ecrã que mostra todos os círculos verde.](./media/ios-14-cp-enroll-1904.PNG)  
 
 > [!Note]
 > Se sua organização monitoriza os limites de voz e dados, ou fornece-lhe um dispositivo da empresa, pode ter mais algumas etapas para concluir. Se lhe for pedido para instalar o **Datalert** aplicação, veja [inscrever o seu dispositivo na gestão de despesas de telecomunicações](enroll-your-device-with-telecom-expense-management-ios.md). Se sua organização faz parte do programa de inscrição de dispositivos da Apple, Descubra [como inscrever o dispositivo pertencentes à empresa](enroll-your-device-dep-ios.md).  

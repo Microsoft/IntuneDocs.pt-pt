@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9af61c89b90a7f31654cd43a3cfc457b27e9700f
-ms.sourcegitcommit: 86aa5fefcba1e71841696b1a5e3ca5bffb1a9528
+ms.openlocfilehash: 30e869cbb0311e1855dd4dc09978505ad539970e
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67234984"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67403078"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Definições de dispositivos de 10 (e versões posteriores) do Windows para permitir ou restringir funcionalidades com o Intune
 
@@ -57,7 +57,16 @@ Utilizam estas definições a [ApplicationManagement política CSP](https://docs
 - **Instalar dados da aplicação no volume do sistema**: **Bloco** impede que as aplicações armazenem dados no volume do sistema do dispositivo. **Não configurado** (predefinição) permite que as aplicações armazenar dados no volume de disco do sistema.
 - **Instalar aplicações na unidade do sistema**: **Bloco** impede que aplicações instalação na unidade do sistema no dispositivo. **Não configurado** (predefinição) permite que as aplicações instalar na unidade do sistema.
 - **Gravador de jogo** (apenas ambiente de trabalho): **Bloco** desativa o jogo do Windows gravação e a difusão. **Não configurado** (predefinição) permite que a gravação e a difusão de jogos.
-- **As aplicações da loja apenas**: **Exigir** força os utilizadores finais para instalarem apenas aplicações da Store de aplicação do Windows. **Não configurado** permite aos utilizadores finais instalar aplicações a partir de outros locais que não o Store de aplicação do Windows.
+- **As aplicações da loja apenas**: Esta definição determina a experiência do usuário quando os utilizadores instalarem aplicações a partir de locais fora da Microsoft Store. As opções são:
+
+  - **Não configurado** (predefinição): Permite que os utilizadores finais instalar aplicações a partir de outros locais que não a Microsoft Store, incluindo aplicações definidas nas outras definições de política.  
+  - **Em qualquer lugar**: Se desligar recomendações da aplicação e permite aos utilizadores instalar aplicações a partir de qualquer local.  
+  - **Store apenas**: Forças que os utilizadores finais apenas instalar aplicações a partir da Microsoft Store.
+  - **Recomendações**: Ao instalar uma aplicação a partir da web que está disponível na Microsoft Store, os utilizadores veem uma mensagem recomendando transferem-na loja.  
+  - **Prefira Store**: Avisará os usuários quando eles instalarem aplicações a partir de outros locais que não a Microsoft Store.
+
+  [SmartScreen/EnableAppInstallControl CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen#smartscreen-enableappinstallcontrol)
+
 - **Aplicações em caso de falha de atualização de reiniciar a força**: Quando uma aplicação está a ser utilizada, não poderá atualizar. Utilize esta definição para forçar uma aplicação a reiniciar. **Não configurado** (predefinição) não força as aplicações para reiniciar. **Exigir** permite aos administradores forçar a reinicialização numa data e hora específicas ou numa agenda periódica. Quando definido como **requerem**, também introduzir:
 
   - **Data/hora de início**: Escolha uma data e hora específicas para reiniciar as aplicações.
@@ -603,7 +612,7 @@ Utilizam estas definições a [pesquisar política CSP](https://docs.microsoft.c
 
 Selecione **OK** para guardar as alterações.
 
-## <a name="start"></a>Iniciar,
+## <a name="start"></a>Start
 
 Utilizam estas definições a [começar a política de CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start), que também apresenta uma lista de edições suportadas do Windows.  
 

@@ -6,7 +6,7 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 01/01/2018
+ms.date: 06/26/2019
 ms.topic: archived
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,30 +17,33 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5e24e72951d473c2e7e49d5ae62b39df18635c16
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 2c1717be830d88ed0a7d1b660b7910c8192c93c5
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040279"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67403538"
 ---
 # <a name="view-hardware-and-software-inventory-for-windows-pcs"></a>Ver o inventário de hardware e software dos PCs Windows
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
 
-O Intune recolhe informações detalhadas sobre o hardware e software dos computadores que gere como PCs com o cliente de software do Intune. Utilize as informações nos seguintes procedimentos para saber como criar:
+> [!NOTE]
+> As informações neste tópico aplicam-se apenas a computadores Windows que está a gerir como PCs através do cliente de software do Intune. Se pretender ver o inventário para Windows PCs inscritos como dispositivos móveis, consulte [ver detalhes do dispositivo no Intune](device-inventory.md).
+
+O Intune recolhe informações detalhadas sobre o hardware e software para áreas de trabalho que gere como PCs através do cliente de software do Intune. Utilize as informações nos seguintes procedimentos para saber como criar:
 
 -   Um relatório que lista as informações sobre as capacidades de hardware dos PCs que gere.
 
 -   Um relatório que lista o software instalado em cada PC.
 
--   Como atualizar o inventário de um PC para se certificar de que os dados do relatório estão atualizados.
+-   Como atualizar o inventário de um PC para se certificar de que os dados no relatório estão atualizados.
 
 ## <a name="to-display-information-about-pcs-you-manage"></a>Para apresentar informações sobre os PCs que gere
 
 1.  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com/), escolha **Relatórios** &gt; **Relatórios de Inventário de Computadores**.
 
-2.  Na página **Criar Novo Relatório**, aceite os valores predefinidos ou personalize-os para filtrar os resultados que serão devolvidos pelo relatório. Por exemplo, pode selecionar apenas os PCs que executam o Windows 8.1 para serem apresentados no relatório.
+2.  Na página **Criar Novo Relatório**, aceite os valores predefinidos ou personalize-os para filtrar os resultados que serão devolvidos pelo relatório. Por exemplo, pode selecionar que apenas os PCs que executam o Windows 8.1 são apresentados no relatório.
 
 3.  Escolha **Ver Relatório** para abrir o **Relatório de Inventários de Computadores** numa nova janela.
 

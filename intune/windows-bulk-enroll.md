@@ -8,7 +8,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 5/21/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,18 +16,16 @@ ms.reviewer: damionw
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 064d11f1992d63df9dacbedb8d53e849425e9b1f
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
-ms.translationtype: HT
+ms.openlocfilehash: 996380a4938ca73bbf5f71c82e99814f772001a4
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59898144"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67403501"
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Inscrição em massa para dispositivos Windows
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
-
-Como administrador, pode associar inúmeros dispositivos Windows novos ao Azure Active Directory e ao Intune. Para inscrever em massa dispositivos para o seu inquilino do Azure AD, crie um pacote de aprovisionamento com a aplicação Windows Configuration Designer (WCD). Ao aplicar o pacote de aprovisionamento aos dispositivos pertencentes à empresa, associa os dispositivos ao inquilino do Azure AD e inscreve-os na gestão do Intune. Depois de o pacote ser aplicado, estará pronto para os utilizadores do Azure AD iniciarem sessão.
+Como administrador, pode associar inúmeros dispositivos Windows novos ao Azure Active Directory e ao Intune. Para inscrever em massa dispositivos para o seu inquilino do Azure AD, crie um pacote de aprovisionamento com a aplicação Windows Configuration Designer (WCD). Ao aplicar o pacote de aprovisionamento aos dispositivos pertencentes à empresa, associa os dispositivos ao inquilino do Azure AD e inscreve-os na gestão do Intune. Assim que o pacote for aplicado, está pronto para os seus utilizadores do Azure AD iniciar sessão.
 
 Os utilizadores do Azure AD são utilizadores padrão nestes dispositivos e obtêm as aplicações necessárias e as políticas do Intune atribuídas. Os dispositivos Windows que são inscritos no Intune através da inscrição em massa do Windows podem utilizar a aplicação do Portal da Empresa para instalar as aplicações disponíveis. 
 
@@ -51,6 +48,7 @@ Os utilizadores do Azure AD são utilizadores padrão nestes dispositivos e obt
    - **Descrição** – uma descrição opcional do projeto ![Captura de ecrã após especificar o nome, a pasta do projeto e a descrição na aplicação Windows Configuration Designer](media/bulk-enroll-name.png)
 
 4. Introduza um nome exclusivo para os seus dispositivos. Os nomes podem incluir um número de série (%SERIAL%) ou um conjunto de carateres aleatório. Opcionalmente, também poderá introduzir uma chave de produto se estiver a atualizar a edição do Windows, a configurar o dispositivo para a utilização partilhada e a remover software pré-instalado.
+   
    ![Captura de ecrã após especificar o nome e a chave de produto na aplicação Windows Configuration Designer](media/bulk-enroll-device.png)
 
 5. Opcionalmente, pode configurar a rede Wi-Fi à qual os dispositivos se ligam quando são iniciados pela primeira vez.  Se os dispositivos de rede não estiverem configurados, precisará de uma ligação de rede com fios quando o dispositivo for iniciado pela primeira vez.
@@ -92,12 +90,9 @@ O aprovisionamento destina-se a ser utilizado em dispositivos Windows novos. As 
 - Um pacote de aprovisionamento que tenta associar um domínio do Active Directory ou um inquilino do Azure Active Directory que não crie uma conta local pode tornar o dispositivo inacessível se o processo de associação ao domínio falhar devido à falta de conetividade de rede.
 - Os scripts executados pelo pacote de aprovisionamento são executados no contexto do sistema. Os scripts conseguem realizar alterações arbitrárias às configurações e ao sistema de ficheiros do dispositivo. Um script malicioso ou incorreto pode colocar o dispositivo num estado que só pode ser recuperado ao recriar a imagem ou limpar o dispositivo.
 
-### <a name="problems-with-bulk-enrollment-and-company-portal"></a>Problemas com a inscrição em massa e o Portal da Empresa
-Se um utilizador tentar inscrever um dispositivo anteriormente inscrito em massa com o Portal da Empresa, receberá um aviso de que o respetivo dispositivo precisa de mais ações de configuração ou inscrição. O dispositivo está inscrito, mas a inscrição não é reconhecida pelo site ou aplicação Portal da Empresa.
-
 ### <a name="bulk-enrollment-with-wi-fi"></a>Inscrição em massa por Wi-Fi 
 
 Os dispositivos inscritos em massa não podem utilizar certificados direcionados ao utilizador e a implementação por Wi-Fi. Terá de utilizar [certificados ao nível do dispositivo](certificates-configure.md) para gerir estas ligações. 
 
-### <a name="conditional-access"></a>Acesso condicional
-O acesso condicional não está disponível para dispositivos Windows inscritos através da inscrição em massa.
+### <a name="conditional-access"></a>Acesso Condicional
+Acesso condicional não está disponível para dispositivos Windows inscritos através de inscrição em massa.

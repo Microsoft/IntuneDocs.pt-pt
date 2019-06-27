@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 756fafc02a6d64b1495a838ab8eee4130ee77361
-ms.sourcegitcommit: a63b9eaa59867ab2b0a6aa415c19d9fff4fda874
+ms.openlocfilehash: dfc8d782f2d7acee0e935790378d5bedd89a1ac0
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67389344"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67403569"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 
@@ -439,9 +439,6 @@ Na aplicação Portal da empresa de Windows, os ícones da aplicação serão ag
 
 #### <a name="install-available-apps-using-the-company-portal-app-after-windows-bulk-enrollment----2751523-----"></a>Instalar as aplicações disponíveis com a aplicação Portal da empresa após a inscrição em massa do Windows <!-- 2751523   -->
 Dispositivos Windows inscritos no Intune, utilizando [inscrição em massa de Windows](windows-bulk-enroll.md) (pacotes de aprovisionamento) será possível utilizar a aplicação do Portal da empresa para instalar as aplicações disponíveis. Para obter mais informações sobre a aplicação Portal da empresa, consulte [adicionar manualmente o Portal da empresa do Windows 10](store-apps-company-portal-app.md) e [como configurar a aplicação Portal da empresa do Microsoft Intune](company-portal-app.md).
-
-> [!Note]
-> Esta funcionalidade ainda não totalmente foi implementada para todos os clientes. Se não é possível utilizar o Portal da empresa em dispositivos em massa inscritos, poderá ter de aguardar até que esta alteração for implementada para a sua conta.
 
 #### <a name="the-microsoft-teams-app-can-be-selected-as-part-of-the-office-app-suite----3828932----"></a>A aplicação Microsoft Teams pode ser selecionada como parte do pacote de aplicação do Office <!-- 3828932  -->
 A aplicação Microsoft Teams pode ser incluída ou excluída como parte da instalação do pacote de aplicação Office Pro Plus. Esta funcionalidade funciona para Office Pro Plus 16.0.11328.20116+ de número de compilação. O utilizador tem de terminar sessão e, em seguida, inicie sessão no dispositivo para a conclusão da instalação. No Intune, selecione **aplicações de cliente** > **aplicações** > **adicionar**. Selecione uma da **Office 365 Suite** tipos de aplicações e selecione **configurar conjunto de aplicações**.

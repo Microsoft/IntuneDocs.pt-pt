@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 04/19/2019
+ms.date: 06/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a87b54dde9afe9803d71f7cbef62f7c55375f51b
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: e3bf59f75d41d50cfd9280251e20964a35a149a8
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040645"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67403582"
 ---
 # <a name="monitor-security-baseline-and-profiles-in-microsoft-intune"></a>Monitorizar a base de segurança e perfis no Microsoft Intune  
 
@@ -34,7 +34,7 @@ Este artigo orienta-o por meio de ambas as opções de monitorização.
 
 Ao monitorizar uma linha de base, obtenha informações sobre o estado de segurança dos seus dispositivos com base nas recomendações da Microsoft. Pode ver estas informações a partir do painel de descrição geral da linha de base de segurança na consola do Intune.  Demora até 24 horas para os dados são apresentados depois do primeiro de atribuir uma linha de base. Alterações posteriores demorar até seis horas a aparecer.  
 
-Para ver dados de monitorização para a linha de base e dispositivos, inicie sessão para o [portal do Intune](https://go.microsoft.com/fwlink/?linkid=2090973). Em seguida, selecione **segurança de dispositivos** > **linhas de base de segurança (pré-visualização)**, selecione uma linha de base e veja o **descrição geral** painel.
+Para ver dados de monitorização para a linha de base e dispositivos, inicie sessão para o [portal do Intune](https://go.microsoft.com/fwlink/?linkid=2090973). Em seguida, selecione **segurança de dispositivos** > **linhas de base de segurança**, selecione uma linha de base e veja o **descrição geral** painel.
 
 O **descrição geral** painel fornece dois métodos para monitorizar o estado:
 - **Vista do dispositivo** – um resumo de quantos dispositivos estão em cada categoria de estado da linha de base.  

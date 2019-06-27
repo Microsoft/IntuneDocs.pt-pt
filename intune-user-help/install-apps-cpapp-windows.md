@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 19e1ec5cda5a69320820899b1cb1c5d665fd9f16
-ms.sourcegitcommit: 2f32f6d2129bc10cc4a02115732e995edceb37d6
+ms.openlocfilehash: 468eabc9acc8f0f65125f81a0f7f67eede361755
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66828944"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67402649"
 ---
 # <a name="install-and-share-apps-on-your-device"></a>Instalar e partilhar aplicações no seu dispositivo
 Instale aplicações no seu dispositivo a partir da aplicação Portal da Empresa para Windows.
@@ -37,10 +37,9 @@ Instale aplicações no seu dispositivo a partir da aplicação Portal da Empres
 
     * **Home page**: Selecione uma lista de aplicações em destaque da sua organização.  
     * **Mostrar tudo**: Do **Home page** > **aplicações** secção, clique em **Mostrar tudo** para ver todas as aplicações disponíveis.  
-    * **Todas as aplicações**: Selecione esta página no painel de navegação para ver todas as aplicações disponíveis, incluindo instalado e em destaque.  
+    * **Todas as aplicações**: Selecione esta página no painel de navegação para ver todas as aplicações disponíveis, incluindo instalado e em destaque. Ver, ordenar e filtrar as aplicações. Os resultados da pesquisa são ordenados automaticamente por relevância.  
     * **Categorias das aplicações**: Selecione esta página no painel de navegação para escolher as aplicações com base em tipo ou função. Aplicações são ordenadas em categorias, como **em destaque**, **educação**, e **produtividade**.  
     * **Procurar aplicações**: Uma barra de pesquisa estática encontra-se no painel de navegação da aplicação.  Para encontrar as aplicações disponíveis, procure por nome da aplicação ou publicador.  
-    * **Todas as aplicações**: Ver, ordenar e filtrar todas as aplicações disponíveis. Os resultados da pesquisa são ordenados automaticamente por relevância.  
 
 3. Selecione uma aplicação.   
 4. Na página de detalhes das aplicações, clique em **Install** (Instalar). Quando a instalação estiver concluída, será apresentado um estado **Installed** (Instalado).  
@@ -51,7 +50,7 @@ Instale aplicações no seu dispositivo a partir da aplicação Portal da Empres
 
  Consoante o tamanho da sua empresa, poderá ver múltiplas versões do Office disponíveis para transferência a partir do Portal da Empresa. Para obter informações específicas sobre o conjunto de aplicações do Office para dispositivos Windows, veja [Instalar o Office 365 no seu dispositivo Windows 10](./install-office-windows.md).
 
-## <a name="share-apps-with-others"></a>Partilhar aplicações com outras pessoas  
+## <a name="share-apps"></a>Partilhar aplicações  
 Partilhe e recomende aplicações aos seus contactos profissionais ou escolares. Os passos seguintes descrevem como partilhar uma ligação diretamente a partir do Portal da Empresa.
 
 1. No Portal da Empresa, clique com o botão direito do rato ou mantenha premida qualquer aplicação para abrir o respetivo [menu de contexto](https://docs.microsoft.com//windows/uwp/design/controls-and-patterns/menus).  
@@ -65,15 +64,14 @@ Partilhe e recomende aplicações aos seus contactos profissionais ou escolares.
 
 Depois de partilhar, o destinatário receberá uma ligação e uma mensagem para ver os detalhes da aplicação. A ligação abre a página **App details** (Detalhes da aplicação) do Portal da Empresa. 
 
-## <a name="available-apps"></a>Aplicações disponíveis  
+## <a name="available-and-required-apps"></a>Aplicações disponíveis e necessárias
+Aplicações são atribuídas pela sua organização e o nome no Portal da empresa como um **disponível** ou **necessário**. 
 
-Sua organização seleciona as aplicações que são adequadas e útil para no trabalho ou escola. Estas aplicações são os únicos, encontrará no Portal da empresa.  
+* Aplicações disponíveis: Estas aplicações estão selecionadas pela sua organização e são úteis e adequados para o trabalho ou escola. Eles são opcionais para instalar e são as únicas aplicações que encontrará no Portal da empresa para instalar. 
 
-Aplicações também são disponibilizadas para com base em seu tipo de dispositivo. Por exemplo, se estiver a utilizar a aplicação Portal da empresa para Windows, terá acesso a aplicações do Windows, mas não aplicações de iOS.  
+* Aplicações necessárias: Estas aplicações são necessárias para profissionais e escolares e são implementadas diretamente para o seu dispositivo. Estas aplicações são instaladas automaticamente para sem a intervenção. 
 
-## <a name="required-apps"></a>Required apps  
-
-Sua organização pode implementar algumas aplicações diretamente no seu dispositivo e marcá-los como **necessário**. Estas aplicações serão automaticamente instaladas para sem a intervenção.
+Aplicações também são disponibilizadas para com base em seu tipo de dispositivo. Por exemplo, se estiver a utilizar a aplicação Portal da empresa para Windows, terá acesso a aplicações do Windows, mas não aplicações de iOS.
 
 ## <a name="request-an-app-for-work-or-school"></a>Pedido de aplicação para a empresa ou escola  
 Se existir uma aplicação precisa, mas não a vir no Portal da empresa, solicitá-la. Encontrar detalhes de contactos do seu **suporte técnico** na aplicação Portal da empresa, na página de ajuda e suporte. Encontrará as mesmas informações de contactos a [site do Portal da empresa](https://go.microsoft.com/fwlink/?linkid=2010980).    

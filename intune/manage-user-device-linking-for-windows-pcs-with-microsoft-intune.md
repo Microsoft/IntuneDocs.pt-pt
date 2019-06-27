@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cad83daa88351749d60d0b1c72935ea47f9a14ce
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: f4dad2d22b742b62ca35bd7fb98c7f7e8241cbb4
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046930"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67402906"
 ---
 # <a name="manage-user-device-linking-for-windows-pcs"></a>Gerir a associação utilizador-dispositivo para PCs Windows
 
@@ -31,6 +31,8 @@ ms.locfileid: "66046930"
 As informações neste tópico aplicam-se apenas a computadores Windows que está a gerir como PCs através do cliente de software do Intune. 
 
 Antes de poder implementar software para um utilizador, tem de associar o utilizador a um PC. Pode associar um utilizador a múltiplos PCs, mas cada PC só pode ser associado a um utilizador. Os utilizadores são automaticamente associados a quaisquer PCs que inscrevam no Intune através do portal da empresa.
+
+Para obter mais informações sobre o utilizador primário de um dispositivo, consulte [utilizador primário do Find](find-primary-user.md).
 
 Para associar um utilizador a um PC:
 

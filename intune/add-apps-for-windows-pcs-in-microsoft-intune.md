@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 86cbea29233d792006bce68fcd2a36fb1a7ec0a6
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 3e24bd79fbceba1834d02af8512e5dd52676d471
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050204"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67403311"
 ---
 # <a name="add-apps-for-windows-pcs-that-run-the-intune-software-client"></a>Adicionar aplicações para PCs Windows que executam o cliente de software do Intune
 
@@ -77,7 +77,7 @@ Utilize o Intune Software Publisher para configurar as propriedades da aplicaç�
 5. Na página **Regras de deteção**, pode configurar regras para detetar se a aplicação que está a configurar já está instalada num PC. Em alternativa, pode utilizar as regras de deteção predefinidas para substituir automaticamente todas as versões instaladas anteriormente da aplicação. Esta opção é para o Windows Installer (apenas ficheiros .exe).
 
    As regras que pode configurar são:
-   - **O ficheiro existe**. Especifique o caminho para o ficheiro que pretende detetar. Pode procurar em **%ProgramFiles%** (que procura **Program Files**\&lt;path&gt; e **Program Files (x86)**\&lt;path&gt;) no PC ou **%SystemDrive%** (que procura na unidade raiz do PC, normalmente a unidade C).
+   - **O ficheiro existe**. Especifique o caminho para o ficheiro que pretende detetar. Pode procurar em **%ProgramFiles%** (que procura **Program Files**\&lt;path&gt; e **Program Files (x86)** \&lt;path&gt;) no PC ou **%SystemDrive%** (que procura na unidade raiz do PC, normalmente a unidade C).
    - **O código de produto MSI existe**. Selecione **Procurar** para escolher o ficheiro do Windows Installer (.msi) que pretende detetar.
    - <strong>A chave do registo existe</strong>. Especifique uma chave de registo que comece com <strong>HKEY_LOCAL_MACHINE\<. São procurados ambos os caminhos de registo de 32 bits e 64 bits. Se a chave que especificou existir em ambos os locais, a regra de deteção é satisfeita.
 
@@ -103,4 +103,4 @@ A aplicação é apresentada no nó **Aplicações** da área de trabalho **Apli
 
 Depois de criar uma aplicação, o passo seguinte é implementá-la. Para saber mais, veja [Atribuir aplicações a grupos com o Microsoft Intune](apps-deploy.md).
 
-Se quiser ler mais informações sobre sugestões e truques para implementar software em Windows PCs, consulte a mensagem de blogue [sugestão de suporte: Melhores práticas para distribuição de Software do Intune para PC](https://blogs.technet.microsoft.com/intunesupport/2016/06/13/support-tip-best-practices-for-intune-software-distribution-to-pcs/).
+Se quiser ler mais informações sobre sugestões e truques para implementar software em Windows PCs, consulte a mensagem de blogue [sugestão de suporte: Melhores práticas para distribuição de Software do Intune para PC](https://support.microsoft.com/en-US/help/2583929).
