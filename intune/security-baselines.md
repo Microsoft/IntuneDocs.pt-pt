@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9a1a48f132d199ad7b1b3e112915acd8f073cf21
-ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.openlocfilehash: 93e470175829008b72b5b8991188f3c92e38a567
+ms.sourcegitcommit: 690e680e854b7d707421c5e06f134e493f4f4194
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67403592"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67416836"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Utilizar linhas de base de segurança para configurar dispositivos Windows 10 no Intune
 
@@ -67,8 +67,8 @@ Suporte de perfis de linha de base de segurança uma [mudar da versão](#change-
 As instâncias de linha de base de segurança seguintes estão disponíveis para utilização com o Intune. Utilize as ligações para ver as definições para a instância mais recente de cada linha de base. 
 
 - **Linha de base de segurança MDM**
-  - [Linha de base de segurança MDM para o Spring 2019 (1 de 19 horas)](security-baseline-settings-windows.md)
-  - Pré-visualização: Linha de base de segurança MDM de Outubro de 2018
+  - [Linha de base de segurança MDM para o Spring 2019 (1 de 19 horas)](security-baseline-settings-mdm.md)
+  - [Pré-visualização: Linha de base de segurança MDM de Outubro de 2018](security-baseline-settings-mdm-archive.md)
 
 - **Linha de base do Windows Defender ATP**  
   *(Para usar esta linha de base seu ambiente tem de cumprir os pré-requisitos de utilização [a proteção de ameaças avançada do Microsoft Defender](advanced-threat-protection.md#prerequisites))* .
@@ -199,7 +199,7 @@ Estritamente em termos, não. A equipe de segurança da Microsoft consulta organ
 
 ## <a name="next-steps"></a>Passos Seguintes
 - Ver as definições nas versões mais recentes das linhas de base disponíveis:  
-  - [Linha de base de segurança MDM](security-baseline-settings-windows.md)  
+  - [Linha de base de segurança MDM](security-baseline-settings-mdm.md)  
   - [Linha de base do Windows Defender ATP](security-baseline-settings-defender-atp.md)  
 
 - Verifique o estado e o monitor a [linha de base e perfil](security-baselines-monitor.md).

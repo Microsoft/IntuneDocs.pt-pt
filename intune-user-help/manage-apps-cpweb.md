@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 06/24/2019
+ms.date: 06/27/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e6f24f2b7741beff4075b0b130441720265fa0ce
-ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.openlocfilehash: 9c7b91e63a559c45cbbcbd7056a7f5e259e07481
+ms.sourcegitcommit: 690e680e854b7d707421c5e06f134e493f4f4194
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67403998"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67416864"
 ---
 # <a name="manage-apps-from-the-company-portal-website"></a>Gerir aplicações a partir do site do Portal da empresa 
 Visite o [site do Portal da empresa](https://portal.manage.microsoft.com) para ver e gerir aplicações da sua organização. 
@@ -65,7 +65,7 @@ Esta página lista os seguintes detalhes sobre cada aplicação:
 * Tipo de atribuição: Como a aplicação é atribuída e disponibilizada para. Ver as aplicações necessárias para obter mais detalhes e disponível. Sua organização pode optar por tornar uma aplicação disponível para instalação por conta própria ou podem exigir e instalar automaticamente uma aplicação no seu dispositivo.  
 * Editor: O nome do desenvolvedor ou da empresa que distribuídas a aplicação. Um publicador é normalmente um fornecedor de software ou a sua organização.  
 * Data de publicação: A data em que a aplicação foi disponibilizada para download. Publicar data foi possível mostrar a versão inicial de uma aplicação ou atualização mais recente de uma aplicação.
-* Estado: O estado atual da instalação da aplicação no seu dispositivo. As aplicações podem mostram como instalar, instalado e instalar falhou.  
+* Estado: O estado atual da instalação da aplicação no seu dispositivo. As aplicações podem mostram como instalar, instalado e instalar falhou. As aplicações necessárias podem demorar até 10 minutos para mostrar um Estado atualizado.  
 
 ### <a name="search-and-refine"></a>Pesquisa e refine-os  
 

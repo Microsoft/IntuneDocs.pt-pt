@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/23/2019
+ms.date: 06/27/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b31c7778ea167b98468a0a9ad9e37047c30ce201
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 43b87a90f90130a014817819b87ed5946b1ba15b
+ms.sourcegitcommit: 9c06d8071b9affeda32e367bfe85d89bc524ed0b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047168"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67413816"
 ---
 # <a name="ios-device-settings-to-use-common-ios-features-in-intune"></a>definições de dispositivos iOS para utilizar recursos comuns do iOS no Intune
 
@@ -195,7 +195,7 @@ Esta funcionalidade suporta dispositivos supervisionados com o iOS 9.3 e posteri
   Tokens de dispositivo também podem ser utilizados para adicionar informações específicas do dispositivo para estes campos. Por exemplo, para mostrar o número de série, introduza `Serial Number: {{serialnumber}}`. No ecrã de bloqueio, o texto mostra semelhante `Serial Number 123456789ABC`. Ao introduzir as variáveis, não se esqueça de utilizar chavetas `{{ }}`. [Tokens de configuração de aplicação](app-configuration-policies-use-ios.md#tokens-used-in-the-property-list) inclui uma lista de variáveis que podem ser utilizados. Também pode utilizar `deviceName` ou qualquer outro valor específicos do dispositivo.
 
   > [!NOTE]
-  > Variáveis não são validadas de interface do Usuário. Como resultado, poderá ver perfis salvos com entrada incorreta. Por exemplo, se introduzir `{{Devicename}}` em vez de `{{devicename}}`, em seguida, a cadeia literal é mostrada em vez do nome do dispositivo exclusivo.
+  > Variáveis não são validadas de interface do Usuário e são sensíveis a maiúsculas e minúsculas. Como resultado, poderá ver perfis salvos com entrada incorreta. Por exemplo, se introduzir `{{DeviceID}}` em vez de `{{deviceid}}`, em seguida, a cadeia literal é mostrada em vez do ID exclusivo. do dispositivo Certifique-se de que introduza as informações corretas.
 
 Selecione **OK** para guardar as alterações.
 

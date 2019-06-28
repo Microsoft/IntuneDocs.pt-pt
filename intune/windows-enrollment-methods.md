@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 04/02/2019
+ms.date: 06/25/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: ''
-ms.openlocfilehash: eda0d77fc5cdb11fa4bc5b21f48ceb7616ecfb15
-ms.sourcegitcommit: a63b9eaa59867ab2b0a6aa415c19d9fff4fda874
+ms.openlocfilehash: 91df913c6daa5cad5f004cff7e448e8a34d63925
+ms.sourcegitcommit: 690e680e854b7d707421c5e06f134e493f4f4194
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67389250"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67416877"
 ---
 # <a name="intune-enrollment-methods-for-windows-devices"></a>Métodos de inscrição do Intune para dispositivos Windows
 
@@ -41,7 +41,7 @@ Os utilizadores podem inscrever os dispositivos Windows, utilizando qualquer um 
 Se um administrador tiver configurado a inscrição automática (disponível com as assinaturas premium do Azure AD), o utilizador só tem de introduzir as respetivas credenciais de uma vez. Caso contrário, será necessário inscrever em separado através de inscrição de apenas de MDM e reintroduza as respetivas credenciais.  
 - **Inscrição de MDM apenas** permite que os utilizadores inscrever um grupo de trabalho existente, Active Directory, ou associados ao Azure Active directory PC no Intune. Os utilizadores inscrever a partir das definições do PC Windows existente. Este método não é recomendado porque ele não registar o dispositivo no Azure Active Directory. Ele também impede a utilização de recursos, como o acesso condicional.
 - [Associação do Azure do Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network) - associar o dispositivo com o Azure Active Directory e permite aos utilizadores iniciar sessão no Windows com as credenciais do Azure AD. Se a inscrição automática estiver ativada, o dispositivo é inscrito automaticamente no Intune. A vantagem de inscrição automática é um processo passo a passo para o utilizador. Caso contrário, será necessário inscrever em separado através de inscrição de apenas de MDM e reintroduza as respetivas credenciais. Os utilizadores inscrever desta forma, durante o OOBE inicial do Windows ou a partir das definições. O dispositivo é marcado como um dispositivo propriedade da empresa no Intune.
-- [Autopilot](enrollment-autopilot.md) – automatiza a associação do Azure AD e inscreve novos dispositivos pertencentes à empresa no Intune. Esse método simplifica a experiência de out-of-box e remove a necessidade de aplicar imagens de sistema operativo personalizadas nos dispositivos. Quando os administradores utilizam o Intune para gerir dispositivos Autopilot, podem gerir as políticas, perfis, aplicações e muito mais depois de serem inscritos.  Existem dois tipos de implementação do Autopilot: [Modo de implementação automática](https://docs.microsoft.com/windows/deployment/windows-autopilot/self-deploying) (para quiosques, digital signage ou um dispositivo partilhado) e [modo de usuário controlado por](https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven) (para usuários tradicionais). 
+- [Autopilot](enrollment-autopilot.md) – automatiza a associação do Azure AD e inscreve novos dispositivos pertencentes à empresa no Intune. Esse método simplifica a experiência de out-of-box e remove a necessidade de aplicar imagens de sistema operativo personalizadas nos dispositivos. Quando os administradores utilizam o Intune para gerir dispositivos Autopilot, podem gerir as políticas, perfis, aplicações e muito mais depois de serem inscritos.  Existem quatro tipos de implementação do Autopilot: [Self-implementar o modo](https://docs.microsoft.com/windows/deployment/windows-autopilot/self-deploying) (para quiosques, digital signage ou um dispositivo partilhado), [modo de usuário controlado por](https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven) (para utilizadores tradicionais), [White Glove] (https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/white-glove) permite que os parceiros ou a equipe de TI pré-aprovisionar um PC com Windows 10 por isso que a TI está completamente configurado e pronto a utilizar e [Autopilot para dispositivos existentes] (https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/existing-devices) permite-lhe facilmente implementar a versão mais recente do Windows 10 para os seus dispositivos existentes.
 
 ## <a name="administrator-based-enrollment-in-intune"></a>Com base no administrador de inscrição no Intune
 
