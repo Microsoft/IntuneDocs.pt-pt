@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 06/12/2019
+ms.date: 06/28/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dfc8d782f2d7acee0e935790378d5bedd89a1ac0
-ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.openlocfilehash: 8c2dab0855bd0f6344584e7bbd80ce17f829fa84
+ms.sourcegitcommit: 46f4d3d160e18aeab9de7477eedc8351fbb78c85
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67403569"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "67468740"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 
@@ -45,6 +45,7 @@ Saiba mais sobre as novidades todas as semanas no Microsoft Intune. Também pode
 ### Device configuration
 ### Device enrollment
 ### Device management
+### Device security
 ### Intune apps
 ### Monitor and troubleshoot
 ### Role-based access control
@@ -53,7 +54,129 @@ Saiba mais sobre as novidades todas as semanas no Microsoft Intune. Também pode
 
 <!-- ########################## -->
 
-## <a name="week-of-june-17-2019"></a>Semana de 17 de Junho de 2019   
+## <a name="week-of-june-24-2019"></a>Semana de 24 de Junho de 2019 
+
+### <a name="app-management"></a>Gestão de aplicações
+
+#### <a name="configure-which-browser-is-allowed-to-link-to-organization-data----3145939---"></a>Configurar o browser tem permissão para ligar aos dados da organização <!-- 3145939 -->
+Intune App Protection políticas (aplicação) em dispositivos Android e iOS agora permitem-lhe transferir Org ligações da web para um determinado navegador, além do Browser gerido do Intune ou do Microsoft Edge.  Para obter mais informações sobre a aplicação, consulte [quais são as políticas de proteção de aplicações?](app-protection-policy.md).
+
+#### <a name="all-apps-page-identifies-onlineoffline-microsoft-store-for-business-apps--4089647---"></a>Página de aplicações de todos os identifica online/offline Microsoft Store para aplicações empresariais<!--4089647 -->
+O **todas as aplicações** página agora inclui a etiquetagem para identificar a Microsoft Store para empresas (MSFB) aplicações como aplicações online ou offline. Cada aplicação MSFB agora inclui um sufixo para **Online** ou **Offline**. A página de detalhes da aplicação também inclui **tipo de licença** e **suporta a instalação de contexto de dispositivo** informações (apenas aplicações licenciadas offline).
+
+#### <a name="company-portal-app-on-shared-devices---4393553---"></a>Aplicação do Portal da empresa em dispositivos partilhados <!--4393553 -->
+Os utilizadores agora podem aceder a aplicação Portal da empresa em dispositivos partilhados. Os utilizadores finais verão uma **partilhado** etiqueta no mosaico do dispositivo. Isto aplica-se ao Portal da empresa versão da aplicação 10.3.45609.0 e mais tarde.
+
+#### <a name="view-all-installed-apps-from-new-company-portal-web-page----4224326---"></a>Ver tudo instaladas as aplicações da nova página de web do Portal da empresa <!-- 4224326 -->
+O site do Portal da empresa do novo **aplicações instaladas** página lista todas as aplicações geridas (tanto necessárias quanto disponíveis) que são instaladas em dispositivos de um utilizador. Para além do tipo de atribuição, os utilizadores podem ver o publicador da aplicação, data de publicação e estado da instalação atual. Se não tiver feito todas as aplicações necessárias ou disponíveis para os seus utilizadores, verão uma mensagem que explica o que não tenham sido instaladas aplicações de empresa. Para ver a nova página na web, vá para o [site do Portal da empresa](https://portal.manage.microsoft.com) e clique em **aplicações instaladas**.  
+
+#### <a name="new-view-lets-app-users-see-all-managed-apps-installed-on-device----2352913---"></a>Nova vista permite que os utilizadores da aplicação ver todos os aplicativos gerenciados instalados no dispositivo <!-- 2352913 -->  
+A aplicação Portal da empresa para Windows agora apresenta uma lista de todas as aplicações geridas (tanto necessárias quanto disponíveis) que estão instaladas no dispositivo de um utilizador. Os utilizadores também podem ver tentativa e pendentes instalações de aplicações e respetivos Estados atuais. Se não tiver feito aplicações necessárias ou disponíveis para os seus utilizadores, verão uma mensagem que explica o que não tenham sido instaladas aplicações de empresa. Para ver a nova vista, vá para o painel de navegação do Portal da empresa e selecione **aplicações** > **aplicações instaladas**.    
+
+### <a name="device-configuration"></a>Configuração do dispositivo
+
+#### <a name="configure-settings-for-kernel-extensions-on-macos-devices----2043024---"></a>Configurar definições para extensões de kernel em dispositivos macOS <!-- 2043024 -->
+Em dispositivos macOS, pode criar um perfil de configuração do dispositivo (**configuração do dispositivo** > **perfis** > **criar perfil** > escolher **macOS** para a plataforma). Esta atualização inclui um novo grupo de definições que permitem configurar e utilizar extensões de kernel nos seus dispositivos. Pode adicionar extensões específicas ou permitir todas as extensões a partir de um parceiro específico ou um desenvolvedor.
+
+Para saber mais sobre esta funcionalidade, veja [descrição geral das extensões de kernel](kernel-extensions-overview-macos.md) e [as definições da extensão de kernel](kernel-extensions-settings-macos.md).
+
+Aplica-se a: macOS 10.13.2 e posterior
+
+#### <a name="apps-from-the-store-only-setting-for-windows-10-devices-includes-more-configuration-options----2697002---"></a>As aplicações da loja definição apenas para dispositivos Windows 10 inclui mais opções de configuração <!-- 2697002 -->
+Quando cria um perfil de restrições de dispositivos para dispositivos Windows, pode utilizar o **aplicações da loja só** definição para que os utilizadores instalarem apenas aplicações da Store de aplicação do Windows (**configuração do dispositivo**  >  **Perfis** > **criar perfil** > **Windows 10 e posterior** para a plataforma > **dispositivo restrições** para tipo de perfil). Nesta atualização, esta definição é expandida para suportar mais opções. 
+
+Para ver a nova definição, aceda à [definições de dispositivos de 10 (e versões posteriores) do Windows para permitir ou restringir funcionalidades](device-restrictions-windows-10.md#app-store).
+
+Aplica-se a: Windows 10 e posterior
+
+#### <a name="deploy-multiple-zebra-mobility-extensions-device-profiles-to-a-device-same-user-group-or-same-devices-group----4089955---"></a>Implementar vários perfis de dispositivo de extensões das riscas das mobilidade num dispositivo, o mesmo grupo de utilizadores ou o mesmo grupo de dispositivos <!-- 4089955 -->
+No Intune, pode utilizar extensões de mobilidade as riscas das (MX) num perfil de configuração do dispositivo para personalizar as definições para dispositivos das riscas das que não são incorporados no Intune. Atualmente, pode implementar um perfil para um único dispositivo. Nesta atualização, pode implementar vários perfis para:
+- O mesmo grupo de utilizadores
+- O mesmo grupo de dispositivos
+- Um único dispositivo
+
+[Utilizar e gerir as riscas das dispositivos com as riscas das extensões de mobilidade no Microsoft Intune](android-zebra-mx-overview.md) mostra como utilizar MX no Intune.
+
+Aplica-se a: Android
+
+#### <a name="some-kiosk-settings-on-ios-devices-are-set-using-block-replacing-allow----4404075----"></a>Algumas definições de local público em dispositivos iOS são definidas utilizando um "Bloco" substituir "Permitir" <!-- 4404075  -->
+Quando cria um perfil de restrições de dispositivos em dispositivos iOS (**configuração do dispositivo** > **perfis** > **criar perfil**  >  **iOS** para a plataforma > **restrições de dispositivos** para o tipo de perfil > **quiosque**), define o **bloqueio automático**, **Comutador do toque**, **rotação do ecrã**, **botão de suspensão do ecrã**, e **botões de Volume**. 
+
+Nesta atualização, os valores são **bloco** (bloqueia a funcionalidade) e **não configurada** (permite que o recurso). Para ver as definições, aceda à [definições de dispositivos iOS para permitir ou restringir funcionalidades](device-restrictions-ios.md#kiosk-supervised-only). 
+
+Aplica-se a: iOS
+
+#### <a name="use-face-id-for-password-authentication-on-ios-devices----4490704---"></a>Utilize o Face ID para a autenticação de palavra-passe em dispositivos iOS <!-- 4490704 -->
+Quando cria um perfil de restrições de dispositivos para dispositivos iOS, pode utilizar uma impressão digital para uma palavra-passe. Nesta atualização, as definições de palavra-passe de impressão digital também permitem reconhecimento facial (**configuração do dispositivo** > **perfis** > **criar perfil**  >  **iOS** para a plataforma > **restrições de dispositivo** para o tipo de perfil > **palavra-passe**). Como resultado, alterado as seguintes definições:
+
+- **Desbloqueio por impressão digital** agora é **Touch ID e Face ID desbloquear**.
+- **(Apenas supervisionada) de modificação de impressão digital** agora é **Touch ID e Face ID modificação (apenas supervisionada)** .
+
+Face ID está disponível no iOS 11.0 e posterior. Para ver as definições, aceda à [definições de dispositivos iOS para permitir ou restringir funcionalidades com o Intune](device-restrictions-ios.md#password).
+
+Aplica-se a: iOS
+
+#### <a name="restricting-gaming-and-app-store-features-on-ios-devices-is-now-dependent-on-ratings-region----4593948---"></a>Agora é dependente de região das classificações a restrição de jogos e funcionalidades de loja de aplicações em dispositivos iOS <!-- 4593948 -->
+Em dispositivos iOS, pode permitir ou restringir funcionalidades relacionadas com a jogos, da app store e visualização de documentos (**configuração do dispositivo** > **perfis**  >   **Criar perfil** > **iOS** para a plataforma > **restrições de dispositivos** para o tipo de perfil > **App Store, visualização de documentos, jogos**). Também pode escolher a região das classificações como, por exemplo, Estados Unidos. 
+
+Nesta atualização, o **aplicações** funcionalidade é movida para ser filho **região das classificações**e é dependente **região das classificações**. Para ver as definições, aceda à [definições de dispositivos iOS para permitir ou restringir funcionalidades com o Intune](device-restrictions-ios.md#app-store-doc-viewing-gaming).
+
+Aplica-se a: iOS
+
+### <a name="device-enrollment"></a>Inscrição de dispositivos
+
+#### <a name="windows-autopilot-reset-removes-the-devices-primary-user----4156123---"></a>Reposição do Windows Autopilot remove o utilizador do dispositivo primário <!-- 4156123 -->
+Quando a reposição de Autopilot é utilizada num dispositivo, utilizador principal do dispositivo será removido. O próximo usuário que inicia sessão após a reposição será definido como o utilizador primário.
+
+#### <a name="windows-autopilot-supoprt-for-hybrid-azure-ad-join----4809146--"></a>Windows Autopilot supoprt híbrida associação do Azure AD <!-- 4809146-->
+Windows Autopilot para dispositivos já suporta agora a associação do híbrida do Azure AD (além do suporte de associação do Azure AD existente). Aplica-se para o Windows 10 versão 1809 e acima de dispositivos. Para obter mais informações, consulte [ Windows Autopilot para dispositivos existentes](https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices).
+
+
+
+### <a name="device-management"></a>Gestão de dispositivos
+
+#### <a name="see-the-security-patch-level-for-android-devices----4461911---"></a>Consulte o nível de patch de segurança para dispositivos Android <!-- 4461911 -->
+Agora, pode ver o nível de patch de segurança para dispositivos Android. Para tal, escolha **Intune** > **dispositivos** > **todos os dispositivos** > Escolha um dispositivo > **Hardware**.
+O nível de patch é listado na **sistema operativo** secção.
+
+#### <a name="assign-scope-tags-to-all-managed-devices-in-a-security-group----3173810---"></a>Atribuir etiquetas de âmbito para todos os dispositivos geridos num grupo de segurança <!-- 3173810 -->
+Agora pode atribuir etiquetas de âmbito para um grupo de segurança e todos os dispositivos no grupo de segurança também será associados essas etiquetas de âmbito. Todos os dispositivos nestes grupos também serão atribuídos a etiqueta de âmbito. As etiquetas de âmbito definido com esta funcionalidade irão substituir as etiquetas de âmbito definido com o fluxo de etiquetas de âmbito atual do dispositivo. Para obter mais informações, consulte [RBAC de utilização e as etiquetas de âmbito para distribuídos IT](scope-tags.md). (Numa atualização futura, o fluxo atual para atribuir etiquetas de âmbito para dispositivos será feito só de leitura.)
+
+### <a name="device-security"></a>Segurança do dispositivo
+
+#### <a name="use-keyword-search-with-security-baselines----wnready---"></a>Utilize a pesquisa de palavra-chave com linhas de base de segurança <!-- WNready -->
+Quando cria ou edita [perfis de linha de base de segurança](security-baselines.md#create-the-profile), pode especificar as palavras-chave no novo *pesquisa* barra para filtrar os grupos de disponibilidade das definições para aqueles que contêm os critérios de procura. 
+
+#### <a name="the-security-baselines-feature-is-now-generally-available-----3785395---"></a>A funcionalidade de linhas de base de segurança está agora em disponibilidade geral  <!-- 3785395 -->
+O **linhas de base de segurança** funcionalidade é do modo de pré-visualização e está agora em disponibilidade geral (GA).  Isso significa que os recursos está pronto para uso na produção. No entanto, os modelos de linha de base individuais pode permanecer na pré-visualização e são avaliados e lançados para disponibilidade geral em seus próprios agendas.
+
+#### <a name="the-mdm-security-baseline-template-is-now-generally-available------3794072-4217151--3534649---"></a>O modelo de linha de base de segurança de MDM está agora em disponibilidade geral   <!-- 3794072, 4217151,  3534649 -->
+O modelo de linha de base de segurança de MDM foi movido do modo de pré-visualização e está agora em disponibilidade geral (GA). O modelo de disponibilidade geral é identificado como **linha de base de segurança de MDM para atualização de Spring 2019 (1 de 19 horas)** .  Este é um novo modelo e não uma atualização da versão de pré-visualização.  Como um novo modelo, terá de rever o [configurações contidas](security-baseline-settings-windows.md)e, em seguida, criar novos perfis para implementar o modelo para o seu dispositivo. Outros modelos de linha de base de segurança podem permanecer na pré-visualização. Para obter uma lista de linhas de base disponíveis, consulte [linhas de base de segurança disponíveis](security-baselines.md#available-security-baselines).  
+
+Além de ser um novo modelo, o *linha de base de segurança de MDM para atualização de Spring 2019 (1 de 19 horas)* modelo inclui as duas definições que anunciámos recentemente nosso tópico no desenvolvimento:  
+- Acima de bloqueio: Voz ativar aplicações a partir de um ecrã bloqueado  
+- DeviceGuard: Utilize a segurança baseada em Virtualização (VBS) no próximo reinício de dispositivos.  
+
+O *linha de base de segurança de MDM para atualização de Spring 2019 (1 de 19 horas)* também inclui a adição de várias novas definições, a remoção de outras pessoas e uma revisão do valor predefinido de uma definição. Para obter uma lista detalhada das alterações de pré-visualização para disponibilidade geral, consulte **o que mudou no novo modelo**.
+
+#### <a name="security-baseline-versioning-----3194322---"></a>Controlo de versões de linha de base de segurança  <!-- 3194322 -->
+Linhas de base de segurança para o Intune suportam o controlo de versões. Com esse suporte, conforme são lançadas novas versões de cada linha de base de segurança, pode atualizar seus perfis de linha de base de segurança existente para utilizar a versão de linha de base mais recente sem ter de recriar e implementar uma nova linha de base do zero. Além disso, na consola do Intune, pode ver informações sobre cada linha de base, como o número de perfis individuais tiver que usar a linha de base, como muitas das versões diferentes da linha de base a utilizar de seus perfis, e quando o a versão mais recente de um específico foi a base de segurança.  Para obter mais informações, consulte **linhas de base de segurança**.
+
+#### <a name="the-use-security-keys-for-sign-in-setting-has-moved-----4501151---"></a>As chaves de segurança de uso para definição de início de sessão foi movido  <!-- 4501151 -->
+A definição de configuração do dispositivo para a proteção de identidade com o nome **utilizar chaves de segurança para iniciar sessão** já não é encontrada como uma definição sub de *configurar o Windows Hello para empresas*. Agora, é uma definição de nível superior que estará sempre disponível, mesmo quando não ativar a utilização do Windows Hello para empresas. Para obter mais informações, consulte [Identity protection](identity-protection-windows-settings.md).
+
+### <a name="role-based-access-control"></a>Controlo de acesso baseado em funções
+
+#### <a name="new-permissions-for-assigned-group-admins------4504437-----"></a>Novas permissões para os administradores do grupo atribuído   <!-- 4504437   -->
+Administrador do Intune incorporadas instituição de ensino função agora tem criar, ler, atualizar e eliminar (CRUD) permissões para aplicações geridas. Esta atualização significa que se estiver atribuído como um administrador de grupo do Intune for Education, pode agora criar, exibir, atualizar e eliminar o certificado Push de MDM do iOS, tokens de servidor MDM de iOS e tokens VPP do iOS juntamente com [todas as permissões existentes que tem ](https://docs.microsoft.com/intune-education/group-admin-delegate#group-admin-permissions). Para tirar uma destas ações, aceda a **definições de inquilino** > **gestão de dispositivos iOS**.  
+
+#### <a name="applications-can-use-the-graph-api-to-call-read-operations-without-user-credentials----4655885---"></a>Aplicações podem utilizar a Graph API para chamar operações de leitura sem credenciais de utilizador <!-- 4655885 -->
+Os aplicativos podem chamar operações com a identidade da aplicação sem credenciais de utilizador de leitura Graph API do Intune. Para obter mais informações sobre como acessar o Microsoft Graph API do Intune, consulte [trabalhar com o Intune no Microsoft Graph](https://docs.microsoft.com/graph/api/resources/intune-graph-overview?view=graph-rest-1.0).
+
+#### <a name="apply-scope-tags-to-microsoft-store-for-business-apps----4392555---"></a>Aplicar etiquetas de âmbito para a Microsoft Store para aplicações empresariais <!-- 4392555 -->
+Agora pode aplicar etiquetas de âmbito para a Microsoft Store para aplicações de negócio. Para obter mais informações sobre etiquetas de âmbito, veja [utilizar o controlo de acesso baseado em funções (RBAC) e etiquetas de âmbito para distribuído IT](scope-tags.md).
+
+## <a name="week-of-june-17-2019"></a>Semana de 17 de Junho de 2019 
 
 ### <a name="app-management"></a>Gestão de aplicações
 
@@ -63,11 +186,11 @@ Adicionámos novas funcionalidades para a aplicação Microsoft Intune (pré-vis
 * Ver e gerir os dispositivos que tenham inscrito através da aplicação do Portal da empresa do Intune ou o Microsoft Intune.    
 * Contacte a sua organização para obter suporte.    
 * Envie seus comentários à Microsoft.    
-* Ver os termos e condições, se definida pela sua organização.  
+* Ver os termos e condições, se definida pela sua organização.    
 
 ## <a name="week-of-june-10-2019"></a>Semana de 10 de Junho de 2019 
 
-### <a name="app-management"></a>Gestão de aplicações  
+### <a name="app-management"></a>Gestão de aplicações
 
 #### <a name="new-sample-apps-showing-intune-sdk-integration-available-on-github----2653471---"></a>Novas aplicações de exemplo que mostra a integração do SDK do Intune disponível no GitHub <!-- 2653471 -->
 A conta do GitHub de msintuneappsdk adicionou novos aplicativos de exemplo para iOS (Swift), Android, xamarin. IOS, formulários Xamarin e xamarin. Android. Estas aplicações foram feitas para complementar a nossa documentação existente e fornecer demonstrações de como integrar o SDK da aplicação Intune nas suas próprias aplicações móveis. Se for um programador de aplicações que precisa de orientações adicionais sobre o SDK do Intune, consulte os seguintes exemplos de ligado:

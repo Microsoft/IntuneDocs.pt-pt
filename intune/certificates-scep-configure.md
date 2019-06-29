@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/24/2019
+ms.date: 06/28/2019
 ms.topic: article
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2e8e7e6c244e14e880dddb7ae76ab0c08ef5088a
-ms.sourcegitcommit: edf0f4e791138dcf589dec8b633edc6eda55ef8c
+ms.openlocfilehash: ba7bb3a12e0e634df44bb832f8f35aa166095415
+ms.sourcegitcommit: 34ff5ebe6efaa5b3a2a1db274de0a07c14944a6b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "67344079"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "67463897"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Configurar e utilizar certificados SCEP com o Intune
 
@@ -225,7 +225,7 @@ Neste passo, irá:
 3. O servidor do NDES recebe URLs extensos (consultas) que exigem a adição de duas entradas de registo:
 
 
-   |                        Location                        |      Value      | Type  |      Dados       |
+   |                        Location                        |      Valor      | Type  |      Data       |
    |--------------------------------------------------------|-----------------|-------|-----------------|
    | HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters | MaxFieldLength  | DWORD | 65534 (decimal) |
    | HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters | MaxRequestBytes | DWORD | 65534 (decimal) |
@@ -507,7 +507,8 @@ Antes de atribuir perfis de certificado a grupos, considere o seguinte:
 - Apesar de atribuir cada perfil separadamente, também terá de atribuir a AC de Raiz Confiável e o perfil SCEP ou PKCS. Caso contrário, a política de certificados SCEP ou PKCS falha.
 
     > [!NOTE]
-    > Para dispositivos iOS, deverá ver múltiplas cópias do certificado no perfil de gestão, se implementar múltiplos perfis de recursos que utilizem o mesmo perfil de certificado.
+    > Em dispositivos iOS, quando um perfil de certificado SCEP é associado um perfil adicional, como um perfil de Wi-Fi ou VPN, o dispositivo recebe um certificado para cada um desses perfis adicionais. Isto resulta num dispositivo iOS, ter vários certificados entregues pelo pedido de certificado SCEP.  
+
 - Se usar a cogestão para o Intune e Configuration Manager, em s do Configuration Manager[et o controlo de deslize de carga de trabalho](https://docs.microsoft.com/sccm/comanage/how-to-switch-workloads) para *política de acesso de recursos* para **Intune** ou  **Criar um piloto do Intune**. Esta definição permite que os clientes do Windows 10 iniciar o processo de pedir o certificado.  
 
 Para obter informações sobre como atribuir perfis, veja [Atribuir perfis de dispositivos](device-profile-assign.md).
