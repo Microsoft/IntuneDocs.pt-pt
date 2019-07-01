@@ -128,6 +128,8 @@
                   href: migration-guide-drive-adoption.md
                 - name: Ciclo de migração típico
                   href: migration-guide-cycle.md
+        - name: Planear as comunicações
+          href: migration-guide-communication-plan.md
     - name: Configurar o Intune
       items:
         - name: Passos para configurar o Intune
@@ -198,7 +200,7 @@
               href: windows-enroll.md
             - name: Inscrição em massa
               href: windows-bulk-enroll.md
-            - name: Enrollment status page (Página do estado de inscrição)
+            - name: Página do Estado da Inscrição
               href: windows-enrollment-status.md
             - name: Programa Windows AutoPilot Deployment
               href: enrollment-autopilot.md
@@ -269,6 +271,8 @@
           href: device-logout-user.md
         - name: Remover utilizador
           href: device-remove-user.md
+        - name: Localizar utilizador primário
+          href: find-primary-user.md
         - name: Erase macOS device (Eliminar dispositivo macOS)
           href: device-erase.md
         - name: Controlar remotamente dispositivos móveis
@@ -305,6 +309,7 @@
           href: device-features-configure.md
         - name: Restringir definições e funcionalidades de dispositivos
           href: device-restrictions-configure.md
+          displayName: Device restrictions
         - name: Atualizações da entrega
           href: delivery-optimization-windows.md
           displayName: delivery optimization; updates
@@ -326,6 +331,8 @@
           items:
             - name: Wi-Fi com uma chave pré-partilhada
               href: wi-fi-profile-shared-key.md
+        - name: Extensions on macOS (Extensões no macOS)
+          href: kernel-extensions-overview-macos.md
         - name: Aplicação Fazer um Teste de educação
           href: education-settings-configure.md
         - name: Shared multi-user devices (Dispositivos multiutilizador partilhados)
@@ -413,41 +420,46 @@
                       href: mtd-connector-enable.md
                 - name: Aplicações MTD
                   items:
-                    - name: Configurar o Lookout
-                      href: lookout-mobile-threat-defense-connector.md
-                      items:
-                        - name: Integração do Lookout e do Intune
-                          href: lookout-mtd-connector-integration.md
-                    - name: Configurar o Symantec
-                      href: skycure-mobile-threat-defense-connector.md
-                      items:
-                        - name: Integração do Symantec e do Intune
-                          href: skycure-mtd-connector-integration.md
-                    - name: Configurar o Check Point
-                      href: checkpoint-sandblast-mobile-mobile-threat-defense-connector.md
-                      items:
-                        - name: Integração do Check Point e do Intune
-                          href: checkpoint-sandblast-mobile-mtd-connector-integration.md
-                    - name: Configurar o Zimperium
-                      href: zimperium-mobile-threat-defense-connector.md
-                      items:
-                        - name: Integração do Zimperium e do Intune
-                          href: zimperium-mtd-connector-integration.md
-                    - name: Configurar o Pradeo
-                      href: pradeo-mobile-threat-defense-connector.md
-                      items:
-                        - name: Integração do Pradeo e do Intune
-                          href: pradeo-mtd-connector-integration.md
                     - name: Configurar o Better Mobile
                       href: better-mobile-threat-defense-connector.md
                       items:
                         - name: Integração do Better Mobile e do Intune
                           href: better-mobile-mtd-connector-integration.md
+                    - name: Configurar o Check Point
+                      href: checkpoint-sandblast-mobile-mobile-threat-defense-connector.md
+                      items:
+                        - name: Integração do Check Point e do Intune
+                          href: checkpoint-sandblast-mobile-mtd-connector-integration.md
+                    - name: Configurar o Lookout
+                      href: lookout-mobile-threat-defense-connector.md
+                      items:
+                        - name: Integração do Lookout e do Intune
+                          href: lookout-mtd-connector-integration.md
+                    - name: Configurar o Pradeo
+                      href: pradeo-mobile-threat-defense-connector.md
+                      items:
+                        - name: Integração do Pradeo e do Intune
+                          href: pradeo-mtd-connector-integration.md
                     - name: Configurar o Sophos Mobile
                       href: sophos-mtd-connector.md
                       items:
                         - name: Integração do Sophos Mobile e do Intune
                           href: sophos-mtd-connector-integration.md
+                    - name: Configurar o Symantec
+                      href: skycure-mobile-threat-defense-connector.md
+                      items:
+                        - name: Integração do Symantec e do Intune
+                          href: skycure-mtd-connector-integration.md
+                    - name: Set up Wandera (Configurar o Wandera)
+                      href: wandera-mtd-connector.md
+                      items:
+                        - name: Wandera and Intune integration (Integração do Wandera e do Intune)
+                          href: wandera-mtd-connector-integration.md
+                    - name: Configurar o Zimperium
+                      href: zimperium-mobile-threat-defense-connector.md
+                      items:
+                        - name: Integração do Zimperium e do Intune
+                          href: zimperium-mtd-connector-integration.md
             - name: Microsoft Defender
               items:
                 - name: Microsoft Defender ATP
@@ -745,6 +757,8 @@
                   href: vpn-settings-macos.md
                 - name: Wi-Fi
                   href: wi-fi-settings-macos.md
+                - name: Extensões
+                  href: kernel-extensions-settings-macos.md
                 - name: Personalizar
                   href: custom-settings-macos.md
         - name: Windows 10 e posterior
@@ -782,7 +796,7 @@
             - name: Linhas de base de segurança
               items:
                 - name: Definições de linha de base do Windows 10
-                  href: security-baseline-settings-windows.md
+                  href: security-baseline-settings-mdm.md
                 - name: Definições de linha de base do Microsoft Defender ATP
                   href: security-baseline-settings-defender-atp.md
             - name: Windows update settings (Definições do Windows Update)
@@ -970,6 +984,10 @@
               href: troubleshoot-software-updates-in-microsoft-intune.md
             - name: Erros comuns da proteção de pontos finais
               href: troubleshoot-endpoint-protection-in-microsoft-intune.md
+        - name: Security baselines archive (Arquivo das linhas de base de segurança)
+          items:
+            - name: Archived MDM security baselines (Linhas de base de segurança MDM arquivadas)
+              href: security-baseline-settings-mdm-archive.md
     - name: Guias de implementação de cenários
       items:
         - name: Proteger o Exchange Online
