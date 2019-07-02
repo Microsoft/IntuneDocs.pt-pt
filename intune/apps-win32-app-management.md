@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d8c4813d94a269ed6b8f944585814b54f36fef8c
-ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
+ms.openlocfilehash: e458558d488c9bbca2c2ed78255be103a5ac79f0
+ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66804698"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67494375"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune autónomo - gestão de aplicações do Win32
 
@@ -65,7 +65,7 @@ Se executar `IntuneWinAppUtil.exe` da janela de comando sem parâmetros, a ferra
 |:------------------------------:|:----------------------------------------------------------:|
 |    `-h`     |    Ajuda    |
 |    `-c <setup_folder>`     |    Pasta de todos os ficheiros de configuração. Todos os ficheiros nesta pasta irão ser compactados em *.intunewin* ficheiro.    |
-|   ` -s <setup_file>`     |    Ficheiro de configuração (como *setup.exe* ou *setup.msi*).    |
+|    `-s <setup_file>`     |    Ficheiro de configuração (como *setup.exe* ou *setup.msi*).    |
 |    `-o <output_folder>`     |    Pasta de saída para o ficheiro *.intunewin* gerado.    |
 |    `-q`       |    Modo silencioso    |
 

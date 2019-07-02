@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b6a20ccec2ef0cbaba87637b3c44c2cc2be094ab
-ms.sourcegitcommit: b3a1c5b0b24f0e52cf318defe10f3d27a2770009
+ms.openlocfilehash: 21f62ad44d992d1f4adbb1945bdba02e526d9138
+ms.sourcegitcommit: 2db7dc2baea0c159f70338e6a0529acc89580773
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67322875"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67500655"
 ---
 # <a name="find-the-primary-user-of-an-intune-device"></a>Encontre o utilizador primário de um dispositivo do Intune
 
@@ -60,15 +60,15 @@ O Intune adiciona automaticamente utilizador primário aos dispositivos durante 
 | Windows | Associação do Azure AD (de experiência de caixa) | Inscrição de utilizador | Durante a inscrição | 
 | Windows | Associação do Azure AD, (Autopilot para fora da experiência) | Inscrição de utilizador | Durante a inscrição | 
 | Windows | Inscreva-se no MDM apenas | Inscrição de utilizador | Durante a inscrição | 
-| Windows | Híbrido AADJ + GPO a inscrição automática | Primeiro utilizador que inicie sessão | Quando o primeiro utilizador inicia sessão | 
-| Windows | Cogestão | Primeiro utilizador que inicie sessão | Quando o primeiro utilizador inicia sessão | 
-| Windows | Associação do Azure AD, (token de inscrição em massa) | Nenhum | Não aplicável | 
+| Windows | Híbrido AADJ + GPO a inscrição automática | Primeiro utilizador para iniciar sessão no Windows | Quando o primeiro utilizador inicia sessão para Windows| 
+| Windows | Cogestão | Primeiro utilizador para iniciar sessão no Windows | Quando o primeiro utilizador inicia sessão para Windows | 
+| Windows | Associação do Azure AD, (token de inscrição em massa) | Nenhuma | Não aplicável | 
 | Windows | Associação do Azure AD, (modo de Self-implementação do Autopilot) | Nenhum | Não aplicável | 
 | Para várias plataformas | Inscrição de orientado por utilizadores com a aplicação Portal da empresa | Inscrição de utilizador | Durante a inscrição |
 | Para várias plataformas | Gestor de inscrição de dispositivos (DEM) | Inscrição de utilizador DEM | Durante a inscrição |
 | iOS, macOS | Apple automatizada de inscrição de dispositivos (DEP com afinidade do utilizador | Inscrição de utilizador | Durante a inscrição |
 | iOS, macOS | Apple automatizada de inscrição de dispositivos (DEP sem afinidade do utilizador) | Nenhuma | Não aplicável |
-| Android | Android dispositivos dedicados pertencentes à empresa | Nenhum | Não aplicável |
+| Android | Android dispositivos dedicados pertencentes à empresa | Nenhuma | Não aplicável |
 
 ## <a name="primary-user-and-azure-ad-device-owner"></a>Utilizador primário e o proprietário do dispositivo do Azure AD
 Em alguns casos, o utilizador primário do Intune pode ser diferente do dispositivo do Azure AD **proprietário** propriedade (visível sob **dispositivos** > **dispositivos do Azure AD**). O proprietário do dispositivo do Azure AD é adicionado durante o registo de um dispositivo no Azure Active Directory.

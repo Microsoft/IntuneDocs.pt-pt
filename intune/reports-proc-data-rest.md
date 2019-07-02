@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 733ac8eee551a3ddba7a5219827c09357659a06e
-ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
+ms.openlocfilehash: d8445c20b658cc7a41ed5b53df16274dbbeda629
+ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66412715"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67494620"
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>Obter dados a partir da API do Armazém de Dados do Intune com um cliente REST
 
@@ -155,7 +155,7 @@ O seguinte exemplo inclui um cliente REST simples. O código utiliza a classe **
 
 1. Abra o **Microsoft Visual Studio**.
 2. Selecione **Ficheiro** > **Novo Projeto**. Expanda o **Visual C#** e selecione **Aplicação de Consola (.Net Framework)** .
-3. Atribua o nome ` IntuneDataWarehouseSamples` ao projeto, navegue até à localização onde pretende guardar o projeto e, em seguida, selecione **OK**.
+3. Atribua o nome `IntuneDataWarehouseSamples` ao projeto, navegue até à localização onde pretende guardar o projeto e, em seguida, selecione **OK**.
 4. Clique com o botão direito do rato no nome da solução no Explorador de Soluções e, em seguida, selecione **Manage NuGet Packages for Solution (Gerir Pacotes NuGet para Solução)** . Selecione **Procurar** e, em seguida, escreva `Microsoft.IdentityModel.Clients.ActiveDirectory` na caixa de pesquisa.
 5. Escolha o pacote, selecione o projeto **IntuneDataWarehouseSamples** em Gerir Pacotes da Sua Solução e, em seguida, selecione **Instalar**.
 6. Selecione **Aceito** para aceitar a licença do pacote NuGet.

@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ba7bb3a12e0e634df44bb832f8f35aa166095415
-ms.sourcegitcommit: 34ff5ebe6efaa5b3a2a1db274de0a07c14944a6b
+ms.openlocfilehash: 7a952a5aa3de20159247f022d91d3e4302262290
+ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "67463897"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67494296"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Configurar e utilizar certificados SCEP com o Intune
 
@@ -30,10 +30,10 @@ Este artigo mostra como configurar a sua infraestrutura e, em seguida, criar e a
 
 - **Domínio do Active Directory**: Todos os servidores indicados nesta secção (exceto o Servidor de Proxy de Aplicações Web) têm de ser associados ao seu domínio do Active Directory.
 
-- **Autoridade de certificação** (AC): Tem de ser um Microsoft Enterprise autoridade de certificação (AC) que é executada numa edição Enterprise do Windows Server 2008 R2 ou posterior. Não é suportada uma AC Autónoma. Para obter mais detalhes, veja [Instalar a Autoridade de Certificação](http://technet.microsoft.com/library/jj125375.aspx).
+- **Autoridade de certificação** (AC): Tem de ser um Microsoft Enterprise autoridade de certificação (AC) que é executada numa edição Enterprise do Windows Server 2008 R2 ou posterior. Não é suportada uma AC Autónoma. Para obter mais detalhes, veja [Instalar a Autoridade de Certificação](https://technet.microsoft.com/library/jj125375.aspx).
     Se a sua AC for executada no Windows Server 2008 R2, tem de [instalar a correção de KB2483564](http://support.microsoft.com/kb/2483564/).
 
-- **Servidor do NDES**: No Windows Server 2012 R2 ou posterior, configure a função de servidor do serviço de inscrição de dispositivos de rede (NDES). O Intune não suporta a utilização do NDES num servidor que também execute a AC Empresarial. Veja a [Documentação de Orientação do Serviço de Inscrição de Dispositivos de Rede](http://technet.microsoft.com/library/hh831498.aspx) para obter instruções sobre como configurar o Windows Server 2012 R2 para alojar o NDES.
+- **Servidor do NDES**: No Windows Server 2012 R2 ou posterior, configure a função de servidor do serviço de inscrição de dispositivos de rede (NDES). O Intune não suporta a utilização do NDES num servidor que também execute a AC Empresarial. Veja a [Documentação de Orientação do Serviço de Inscrição de Dispositivos de Rede](https://technet.microsoft.com/library/hh831498.aspx) para obter instruções sobre como configurar o Windows Server 2012 R2 para alojar o NDES.
 O servidor do NDES tem de ser associado a um domínio que esteja na mesma floresta da AC Empresarial. Estão disponíveis mais informações sobre a implementação do servidor do NDES numa floresta separada, numa rede isolada ou num domínio interno em [Utilizar um Módulo de Política com o Serviço de Inscrição de Dispositivos de Rede](https://technet.microsoft.com/library/dn473016.aspx). Não é possível utilizar um servidor do NDES que já está a ser utilizado com a MDM outro.
 
 - **Microsoft Intune Certificate Connector**: No portal do Intune, aceda a **configuração do dispositivo** > **Certificate Connectors** > **adicionar**e siga o *os passos para instalar o conector para SCEP*. Utilize a ligação de transferência no portal para iniciar a transferência do programa de instalação do conector de certificado **NDESConnectorSetup.exe**.  Irá executar este instalador no servidor com a função NDES.  
@@ -225,7 +225,7 @@ Neste passo, irá:
 3. O servidor do NDES recebe URLs extensos (consultas) que exigem a adição de duas entradas de registo:
 
 
-   |                        Location                        |      Valor      | Type  |      Data       |
+   |                        Location                        |      Value      | Type  |      Data       |
    |--------------------------------------------------------|-----------------|-------|-----------------|
    | HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters | MaxFieldLength  | DWORD | 65534 (decimal) |
    | HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters | MaxRequestBytes | DWORD | 65534 (decimal) |

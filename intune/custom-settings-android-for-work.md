@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/24/2018
+ms.date: 07/01/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,20 +16,26 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b5f1b4c0fd0c9d8cfdc443b2af3c6f90a6f32756
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: 7d1aa7cffd91049527df25436c083e97b849c229
+ms.sourcegitcommit: 2db7dc2baea0c159f70338e6a0529acc89580773
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373645"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67500656"
 ---
 # <a name="use-custom-settings-for-android-enterprise-devices-in-microsoft-intune"></a>Utilizar definições personalizadas para dispositivos Android Enterprise no Microsoft Intune
 
-Ao utilizar o Microsoft Intune, pode adicionar ou criar definições personalizadas para os seus dispositivos Android Enterprise com um "perfil personalizado". Os perfis personalizados são uma funcionalidade do Intune. Foram concebidos para adicionar definições e funcionalidades de dispositivos que não estão incorporadas Intune.
+Utilizar o Microsoft Intune, pode adicionar ou criar definições personalizadas para os seus dispositivos de perfil de trabalho do Android Enterprise com um "perfil personalizado". Os perfis personalizados são uma funcionalidade do Intune. Foram concebidos para adicionar definições e funcionalidades de dispositivos que não estão incorporadas Intune.
 
 Os perfis personalizados do Android Enterprise utilizam as definições Open Mobile Alliance Uniform Resource Identifier (OMA-URI) para controlar funcionalidades em dispositivos Android Enterprise. Estas definições são normalmente utilizadas por fabricantes de dispositivos móveis para controlar essas funcionalidades.
 
-Atualmente, o Intune suporta um número limitado de perfis personalizados do Android.
+O Intune suporta um número limitado de perfis personalizados do Android Enterprise, incluindo:
+
+- ./Vendor/MSFT/WiFi/Profile/SSID/Settings: [Criar um perfil de Wi-Fi com uma chave pré-partilhada](wi-fi-profile-shared-key.md) tem alguns exemplos.
+- ./Vendor/MSFT/VPN/Profile/Name/PackageList: [Criar um perfil VPN por aplicação](android-pulse-secure-per-app-vpn.md) tem alguns exemplos.
+- ./Vendor/MSFT/WorkProfile/DisallowCrossProfileCopyPaste: Consulte a [exemplo](#example) (neste artigo).
+
+Se forem necessárias definições adicionais, veja [OEMConfig do Android Enterprise](android-oem-configuration-overview.md).
 
 Este artigo mostra-lhe como criar um perfil personalizado para dispositivos Android Enterprise. Fornece também um exemplo de um perfil personalizado que bloqueia a funcionalidade de copiar e colar.
 

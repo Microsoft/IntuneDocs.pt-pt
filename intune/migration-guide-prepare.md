@@ -16,16 +16,16 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: afede7f3f5adf194beceafd7c3d2dbee1b0e64b7
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 4bd03075e6088b4cf06237429a723e93e87029fd
+ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046277"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67494579"
 ---
 # <a name="phase-1-prepare-microsoft-intune-for-mobile-device-management-mdm"></a>Fase 1: Preparar o Microsoft Intune para gestão de dispositivos móveis (MDM)
 
-Antes de explorar os detalhes da configuração do Intune, vamos rever os requisitos da gestão de dispositivos móveis da sua organização. Poderá ser útil executar relatórios de utilizadores ativos no seu fornecedor de MDM atual para identificar os grupos de utilizadores críticos. Em seguida, pode começar a abordar as questões na secção [Avaliar requisitos de MDM](migration-guide-prepare.md#assess-mdm-requirements).
+Antes de explorar os detalhes da configuração do Intune, vamos rever os requisitos da gestão de dispositivos móveis da sua organização. Poderá ser útil executar relatórios de utilizadores ativos no seu fornecedor de MDM atual para identificar os grupos de utilizadores críticos. Em seguida, pode começar a abordar as questões na [avaliar requisitos de MDM](migration-guide-prepare.md#assess-mdm-requirements) secção.
 
 ## <a name="assess-mdm-requirements"></a>Avaliar requisitos de MDM
 

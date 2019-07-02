@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 633bf52084ad261f768cb4e59aaf4ce0ab5cd5bc
-ms.sourcegitcommit: 46f4d3d160e18aeab9de7477eedc8351fbb78c85
+ms.openlocfilehash: f7dd6f62cb53dd0cc373fb3f2ffa7d9434b135cd
+ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "67468720"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67494250"
 ---
 # <a name="in-development-for-microsoft-intune---july-2019"></a>No desenvolvimento do Microsoft Intune – Julho de 2019
 
@@ -58,8 +58,6 @@ Para ajudar na preparação de sua e planejamento, esta página, listas de atual
 <!-- ***********************************************-->
 ## <a name="app-management"></a>Gestão de aplicações
 
-### <a name="device-users-can-view-all-managed-apps-theyve-installed-or-tried-to-install----2352913---"></a>Os utilizadores de dispositivos, podem ver todas as aplicações geridas que tenham instalado ou tentou instalar <!-- 2352913 -->
-Portal da empresa para Windows listará todas as aplicações geridas (tanto necessárias quanto disponíveis) que estão instaladas no dispositivo de um utilizador. Os utilizadores serão capazes de vista de tentativa e pendentes instalações de aplicações e respetivos Estados atuais. Se sua organização não torne as aplicações necessárias ou disponíveis, os utilizadores verão uma mensagem que explica que não existem aplicações da empresa foram instaladas. Os utilizadores também serão capazes de classificar ou filtrar as suas aplicações por Estado da instalação.
 
 ### <a name="customized-notifications-for-users-and-groups-------16766574-----"></a>Notificações personalizadas para utilizadores e grupos    <!-- 16766574   -->
 Em breve será capaz de enviar as notificações push personalizadas ad-hoc a partir da aplicação Portal da empresa aos utilizadores nos dispositivos iOS e Android que gere com o Intune. Estas notificações personalizadas não estão associadas a determinado funcionalidades do Intune e pode ser usadas para qualquer finalidade necessitam, incluindo notificações gerais que pretende enviar para alguns ou todos os seus funcionários.  

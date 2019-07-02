@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 30e869cbb0311e1855dd4dc09978505ad539970e
-ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.openlocfilehash: fe155c5b2a18b1931894b05694b53bbc2c497e0b
+ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67403078"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67494488"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Definições de dispositivos de 10 (e versões posteriores) do Windows para permitir ou restringir funcionalidades com o Intune
 
@@ -525,7 +525,7 @@ Selecione **OK** para guardar as alterações.
 
 Utilizam estas definições a [CSP de política de privacidade](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-privacy), que também apresenta uma lista de edições suportadas do Windows.
 
-- **Personalização de entrada**: **Bloco** impede que impede que usando a voz para ditado e para comunicar com o Cortana e outras aplicações que utilizam o reconhecimento de fala baseados na cloud da Microsoft. Está desativada e os utilizadores não é possível ativar o reconhecimento de voz online com as definições. **Não configurado** (predefinição) permite aos utilizadores escolher. Se permitir estes serviços, a Microsoft poderá recolher dados de voz para melhorar o serviço.
+- **Personalização de entrada**: **Bloco** impede usando a voz para ditado e para comunicar com o Cortana e outras aplicações que utilizam o reconhecimento de fala baseados na cloud da Microsoft. Está desativada e os utilizadores não é possível ativar o reconhecimento de voz online com as definições. **Não configurado** (predefinição) permite aos utilizadores escolher. Se permitir estes serviços, a Microsoft poderá recolher dados de voz para melhorar o serviço.
 - **Aceitação automática das solicitações de consentimento de utilizador de emparelhamento e privacidade**: Escolher **permitir** para que o Windows podem aceitar automaticamente emparelhamento e privacidade as mensagens de consentimento ao executar as aplicações. **Não configurado** (predefinição) impede que a aceitação automática da janela de consentimento de utilizador de emparelhamento e privacidade ao abrir aplicações.
 - **Publicar as atividades do utilizador**: **Bloco** impede que as experiências compartilhadas e deteção de recursos recentemente utilizados no feed de atividades. **Não configurado** (predefinição) habilita esse recurso para que as aplicações podem publicar as atividades de utilizador final.
 - **Apenas atividades locais**: **Bloco** impede que as experiências compartilhadas e a deteção de recursos recentemente utilizados no comutador de tarefas, com base na atividade local. **Não configurado** (predefinição) habilita esse recurso.

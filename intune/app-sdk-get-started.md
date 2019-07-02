@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e3b0aff29db5402de7e91282e74cd6d69a103545
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: db181991c19dc840e4e0b6b2f11f1ec2a1bd2df6
+ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045821"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67494133"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Introdução ao SDK da Aplicação Microsoft Intune
 
@@ -33,7 +33,7 @@ O SDK da Aplicação Intune suporta cenários semelhantes entre iOS e Android e 
 
 ### <a name="if-your-app-is-internal-to-your-organization-and-will-not-be-publicly-available"></a>Se a sua aplicação for interna da organização e não estiver publicamente disponível:
 
-_ **Não é necessário** _ para registar a sua aplicação. Para interno [aplicações de linha de negócio (LOB)](apps-add.md#app-types-in-microsoft-intune) que foram escritas por ou para a sua empresa, o administrador de TI irá implementar a aplicação internamente. O Intune detetará que a aplicação foi criada com o SDK e permitirá que o administrador de TI aplicar políticas de proteção de aplicações à mesma. Pode avançar para a secção [Integrar a política de proteção de aplicações na sua aplicação iOS ou Android](#enable-your-ios-or-android-app-for-app-protection-policy).
+_**Não é necessário**_ para registar a sua aplicação. Para interno [aplicações de linha de negócio (LOB)](apps-add.md#app-types-in-microsoft-intune) que foram escritas por ou para a sua empresa, o administrador de TI irá implementar a aplicação internamente. O Intune detetará que a aplicação foi criada com o SDK e permitirá que o administrador de TI aplicar políticas de proteção de aplicações à mesma. Pode avançar para a secção [Integrar a política de proteção de aplicações na sua aplicação iOS ou Android](#enable-your-ios-or-android-app-for-app-protection-policy).
 
 ### <a name="if-your-app-will-be-released-to-a-public-app-store-like-the-apple-app-store-or-google-play"></a>Se a sua aplicação for lançada numa loja de aplicações pública, como a Apple App Store ou o Google Play:
 
@@ -81,11 +81,11 @@ Recomendamos que se inscreva numa conta do GitHub que pode utilizar para bifurca
 
 Irá precisar de um dos seguintes guias para programadores para o ajudar a integrar o SDK da Aplicação Intune na sua aplicação:
 
-* **[SDK da aplicação Intune para iOS Guia do programador](app-sdk-ios.md)**: Este documento irá guiá-lo passo a passo através da ativação da aplicação iOS nativa com o SDK da aplicação Intune.
+* **[SDK da aplicação Intune para iOS Guia do programador](app-sdk-ios.md)** : Este documento irá guiá-lo passo a passo através da ativação da aplicação iOS nativa com o SDK da aplicação Intune.
 
-* **[SDK da aplicação Intune para o guia de programação do Android](app-sdk-android.md)**: Este documento irá guiá-lo passo a passo através da ativação da aplicação Android nativa com o SDK da aplicação Intune.
+* **[SDK da aplicação Intune para o guia de programação do Android](app-sdk-android.md)** : Este documento irá guiá-lo passo a passo através da ativação da aplicação Android nativa com o SDK da aplicação Intune.
 
-* **[Guia de enlaces Xamarin SDK da aplicação Intune](app-sdk-xamarin.md)**: Este documento ajuda-o a criar aplicações iOS e Android com o Xamarin para políticas de proteção de aplicações do Intune.
+* **[Guia de enlaces Xamarin SDK da aplicação Intune](app-sdk-xamarin.md)** : Este documento ajuda-o a criar aplicações iOS e Android com o Xamarin para políticas de proteção de aplicações do Intune.
 
 
 
@@ -161,7 +161,7 @@ Após ter concluído os passos necessários para integrar a aplicação iOS ou A
 
     * Se estiver a desenvolver uma aplicação de linha de negócio que não será enviada para a loja, é esperado que tenha acesso ao Microsoft Intune através da sua organização. Também pode inscrever-se para obter uma versão de avaliação gratuita de um mês com o [Microsoft Intune](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0).
     
-    * Se estiver a testar a aplicação num dispositivo móvel através de uma conta de utilizador final, certifique-se de que tenha dado essa conta uma licença do Intune, no site de centro de administrador do Microsoft 365 após iniciar sessão com uma conta de administrador, consulte [licença de atribuir o Microsoft Intune ](https://docs.microsoft.com/en-ca/intune/licenses-assign).
+    * Se estiver a testar a aplicação num dispositivo móvel através de uma conta de utilizador final, certifique-se de que tenha dado essa conta uma licença do Intune, no site de centro de administrador do Microsoft 365 após iniciar sessão com uma conta de administrador, consulte [licença de atribuir o Microsoft Intune ](https://docs.microsoft.com/intune/licenses-assign).
 
 * **Políticas de proteção de aplicações do Intune**: Para testar a aplicação com todos os as Intune políticas de proteção, deve saber o que é o comportamento esperado para cada definição de política. Consulte as descrições para [políticas de proteção de aplicações para iOS](app-protection-policy-settings-ios.md) e [políticas de proteção de aplicações para Android](app-protection-policy-settings-android.md). Se a sua aplicação integrou o SDK do Intune, mas não estiver listada no portal do Azure como um aplicativo de destino ainda, pode segmentá-la com uma política ao selecionar o "+ mais aplicações" opção e fornecer o ID do pacote (iOS) ou o nome do pacote (Android) na caixa de texto.
 

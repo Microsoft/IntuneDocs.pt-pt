@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1ad8a3298a801b07e021b84bd5eea9c91f01f1a2
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: c9a225fbffda25b8d077c3b2be271e86d3e6c85e
+ms.sourcegitcommit: 2db7dc2baea0c159f70338e6a0529acc89580773
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044873"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67500603"
 ---
 # <a name="manage-web-access-using-microsoft-edge-with-microsoft-intune"></a>Gerir o acesso web usando o Microsoft Edge com o Microsoft Intune
 
@@ -184,13 +184,13 @@ Utilize o seguinte par chave/valor para configurar os marcadores geridos:
 
 |    Chave    |    Value    |
 |---------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    com.microsoft.intune.mam.managedbrowser.bookmarks    |    O valor para esta configuração é uma lista de marcadores. Cada marcador é constituído pelo título e o URL de marcador. Separe o título e o URL com o `|` caráter.      **Example:**<br>`Microsoft Bing|https://www.bing.com`<p>Para configurar múltiplos marcadores, separe cada par com o caráter duplo `||`.<p>**Example:**<br>`Microsoft Bing|https://www.bing.com||Contoso|https://www.contoso.com`    |
+|    com.microsoft.intune.mam.managedbrowser.bookmarks    |    O valor para esta configuração é uma lista de marcadores. Cada marcador é constituído pelo título e o URL de marcador. Separe o título e o URL com o `|` caráter.      **Example:**<br>`Microsoft Bing|https://www.bing.com`<br>Para configurar múltiplos marcadores, separe cada par com o caráter duplo `||`.<p>**Example:**<br>`Microsoft Bing|https://www.bing.com||Contoso|https://www.contoso.com`    |
 
 ## <a name="how-to-display-myapps-within-microsoft-edge-bookmarks"></a>Como exibir MyApps dentro de marcadores do Microsoft Edge
 
 Por predefinição, os utilizadores serão apresentados os sites de My Apps que estão configurados para-los numa pasta dentro de marcadores do Microsoft Edge. A pasta serão identificados como com o nome da sua organização.
 
-|    Chave    |    Valor    |
+|    Chave    |    Value    |
 |------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
 |    com.microsoft.intune.mam.managedbrowser.MyApps    |    **Verdadeiro** mostra MyApps dentro os indicadores do Microsoft Edge.<p>**FALSO** oculta MyApps dentro do Microsoft Edge.    |
 
@@ -201,16 +201,17 @@ Pode utilizar o abaixo pares chave/valor para configurar uma lista de sites perm
 
 |    Chave    |    Value    |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    Escolha entre:<p>1. Especificar URLs permitidos (apenas estes URLs são permitidos; não pode aceder a mais nenhum site):<br>`com.microsoft.intune.mam.managedbrowser.AllowListURLs`<p>2. Especificar URLs bloqueados (é possível aceder a todos os outros sites):<br>`com.microsoft.intune.mam.managedbrowser.BlockListURLs`    |    O valor correspondente da chave é uma lista de URLs. Introduza todos os URLs que pretende permitir ou bloquear como um único valor, separado por um pipe `|` caráter.<p>**Exemplos:**<br>`URL1|URL2|URL3`<br>`http://.contoso.com/|https://.bing.com/|https://expenses.contoso.com`  |
+|    Escolha entre:<p>1. Especificar URLs permitidos (apenas estes URLs são permitidos; não pode aceder a mais nenhum site):<br>`com.microsoft.intune.mam.managedbrowser.AllowListURLs`<p>2. Especificar URLs bloqueados (é possível aceder a todos os outros sites):<br>`com.microsoft.intune.mam.managedbrowser.BlockListURLs`    |    O valor correspondente da chave é uma lista de URLs. Introduza todos os URLs que pretende permitir ou bloquear como um único valor, separado por um pipe `|` caráter.<br>**Exemplos:**<br>`URL1|URL2|URL3`<br>`http://.contoso.com/|https://.bing.com/|https://expenses.contoso.com`  |
 
 ### <a name="url-formats-for-allowed-and-blocked-site-list"></a>Formatos de URL para permitidas e bloqueadas a lista de sites 
 Pode usar vários formatos de URL para criar as suas listas de sites permitido/bloqueado. Esses padrões permitidos são detalhados na tabela abaixo. Algumas notas antes de começar: 
 - Certifique-se de que adiciona o prefixo **http** ou **https** a todos os URLs quando os introduzir na lista.
-- Pode utilizar o símbolo de caráter universal (*), de acordo com as regras na lista de padrões permitidos seguinte.
+- Pode utilizar o símbolo de caráter universal (\*), de acordo com as regras na lista de padrões permitidos seguinte.
+- Um caráter universal só pode corresponder a um inteiro compoment do nome de anfitrião (separados por pontos) ou de partes inteiras do caminho (separados por barras). Por exemplo, `http://*contoso.com` é **não** suportado.
 - Pode especificar os números da porta no endereço. Se não especificar um número da porta, os valores utilizados são:
     - Porta 80 para http
     - Porta 443 para https
-- Utilização de carateres universais para o número da porta é **não** suportado. Por exemplo, `http://www.contoso.com:*` e `http://www.contoso.com:*/` não são suportados.
+- Utilização de carateres universais para o número da porta é **não** suportado. Por exemplo, `http://www.contoso.com:*` e `http://www.contoso.com:*/` não são suportados. 
 
     |    URL    |    Detalhes    |    Correspondências    |    Não corresponde    |
     |-------------------------------------------|--------------------------------------------------------|-------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
@@ -232,6 +233,7 @@ Pode usar vários formatos de URL para criar as suas listas de sites permitido/b
     - Endereços IP
     - `https://*`
     - `http://*`
+    - `https://*contoso.com`
     - `http://www.contoso.com:*`
     - `http://www.contoso.com: /*`
   
@@ -247,13 +249,13 @@ Utilize o abaixo par chave/valor para configurar se essas transições de forma 
 
 ## <a name="directing-users-to-microsoft-edge-instead-of-the-intune-managed-browser"></a>Direcionar os utilizadores para o Microsoft Edge em vez do Intune Managed Browser 
 
-O Intune Managed Browser e o Microsoft Edge são agora podem ser utilizados como navegadores protegido por políticas. Para garantir que os seus utilizadores estão a ser direcionados para utilizar a aplicação de browser correto, direcionar todas as aplicações geridas do Intune (por exemplo, o Outlook e o OneDrive) com a definição de configuração seguinte:
+O Intune Managed Browser e o Microsoft Edge são agora podem ser utilizados como navegadores protegido por políticas. Para garantir que os seus utilizadores estão a ser direcionados para utilizar a aplicação de browser correto, direcionar todas as aplicações geridas do Intune (por exemplo, Outlook, OneDrive e SharePoint) com a definição de configuração seguinte:
 
 |    Chave    |    Value    |
 |------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    `com.microsoft.intune.useEdge`    |    O valor `true` irá direcionar os utilizadores a utilizar o Microsoft Edge.<p>O valor `false` direcionará os seus utilizadores para utilizarem o Intune Managed Browser.    |
+|    `com.microsoft.intune.useEdge`    |    O valor `true` irá direcionar os utilizadores para transferir e utilizar o Microsoft Edge.<br>O valor `false` permitirá que os utilizadores a utilizar o Intune Managed Browser.    |
 
-Se este valor de configuração de aplicação não estiver definido, a seguinte lógica irá definir o browser será utilizado para abrir ligações empresariais.
+Se este valor de configuração de aplicação for **não** definido, a seguinte lógica irá definir o browser será utilizado para abrir ligações empresariais.
 
 No Android:
 - O Intune Managed Browser será iniciado se um utilizador tiver o Browser gerido do Intune e o Microsoft Edge transferido no seu dispositivo. 
@@ -283,7 +285,7 @@ Segurança e privacidade considerações adicionais para o Microsoft Edge:
 - Microsoft Edge não consome as definições que os utilizadores definidos para o navegador nativo nos respetivos dispositivos, porque o Microsoft Edge não é possível aceder a estas definições.
 - Se configurar a opção **exigir PIN simples para acesso** ou **exigir credenciais da empresa para obter acesso** numa aplicação associado à política de proteção com o Microsoft Edge e um utilizador seleciona a ligação de ajuda sobre o página de autenticação, pode procurar sites na Internet independentemente de terem sido adicionados a uma lista de bloqueios na política.
 - Microsoft Edge só pode bloquear acesso a sites quando estes são acedidos diretamente. Não bloqueia o acesso quando são utilizados serviços intermédios (como um serviço de tradução) para aceder ao site.
-- Para permitir a autenticação e acesso a documentação do Intune, ***. microsoft.com** está excluído das definições da lista de permissões ou de bloqueios. É sempre permitido.
+- Para permitir a autenticação e acesso a documentação do Intune, * **. microsoft.com** está excluído das definições da lista de permissões ou de bloqueios. É sempre permitido.
 Desative a dados de utilização do Microsoft automaticamente recolhe dados anónimos sobre o desempenho e a utilização do Browser gerido para melhorar os produtos e serviços Microsoft. Os utilizadores podem desativar a recolha de dados com a definição **Dados de Utilização** nos respetivos dispositivos. OS utilizadores não têm controlo sobre a recolha destes dados. Em dispositivos iOS, os sites que os utilizadores visitam que têm um certificado expirado ou não fidedigno não podem ser abertos.
 
 ## <a name="next-steps"></a>Passos Seguintes
