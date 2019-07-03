@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: ed4319c5d6cda035d690d9ffa55e74e8dc55a45d
-ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.openlocfilehash: 328a35b314a7372d2e4cee950496e9bcd6b4fe34
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67493824"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67528112"
 ---
 ## <a name="april-2017"></a>Abril de 2017
 
@@ -37,9 +37,9 @@ Serão apresentadas novas mensagens mais específicas na aplicação Portal da E
 #### <a name="improved-app-install-status-for-the-windows-10-company-portal-app---676495--"></a>Estado de instalação de aplicação para a aplicação Portal da empresa do Windows 10 melhorada <!--676495-->
 
 Os novos melhoramentos das instalações de aplicações iniciadas na aplicação do Portal da Empresa do Windows 10 incluem:
--   Relatórios mais rápidos do progresso da instalação para pacotes MSI
--   Relatórios mais rápidos do progresso da instalação para aplicações modernas em dispositivos com a Atualização de Aniversário do Windows 10 e versões superiores
--   Nova barra de progresso para as instalações de aplicações modernas em dispositivos com a Atualização de Aniversário do Windows 10 e versões superiores
+- Relatórios mais rápidos do progresso da instalação para pacotes MSI
+- Relatórios mais rápidos do progresso da instalação para aplicações modernas em dispositivos com a Atualização de Aniversário do Windows 10 e versões superiores
+- Nova barra de progresso para as instalações de aplicações modernas em dispositivos com a Atualização de Aniversário do Windows 10 e versões superiores
 
 Pode ver a nova barra de progresso na [página Novidades na IU da aplicação Intune](/intune/whats-new-app-ui).
 

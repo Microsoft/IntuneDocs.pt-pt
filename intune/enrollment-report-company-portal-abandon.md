@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 546694409e6f87d85c5ef934b5d084b0955e0bf7
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c15bd301b60481f4d8b15617512851e2cc29034a
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041858"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67529751"
 ---
 # <a name="incomplete-user-enrollments-report"></a>Relatório de inscrições de utilizador incompleto
 
@@ -35,9 +35,9 @@ Usando essas informações, pode atualizar os documentos de inclusão para ajuda
 
 Uma inscrição incompleta é quando um usuário executa qualquer um dos seguintes:
 
--   Seleciona explicitamente uma ação para parar a inscrição
--   Fecha o Portal da Empresa durante a inscrição
--   Demora mais de 30 minutos entre as secções da inscrição
+- Seleciona explicitamente uma ação para parar a inscrição
+- Fecha o Portal da Empresa durante a inscrição
+- Demora mais de 30 minutos entre as secções da inscrição
 
 Se o utilizador opta pela inscrição de parar e reiniciar várias vezes, ele mostra como várias tentativas e várias inscrições incompletas. Se um utilizador tem de aguardar durante 30 minutos entre ecrãs de inscrição diferente, é considerado várias inscrições incompletas.
 
@@ -53,18 +53,18 @@ Pode filtrar o intervalo de datas, o sistema operativo e a secção de inscriç�
 
 Na parte superior do relatório, pode ver o número e percentagem de incompletas inscrições em relação a todas as inscrições.
 
--   Inscrições iniciadas: O número de inscrições tentada.
--   Inscrições incompletas: O número de inscrições de tentativas que não resulta num dispositivo totalmente inscrito e em conformidade.
--   Taxa de incompleta: A percentagem de tentativas de inscrição que foram abandonadas (abandonada inscrições / iniciada inscrições).
+- Inscrições iniciadas: O número de inscrições tentada.
+- Inscrições incompletas: O número de inscrições de tentativas que não resulta num dispositivo totalmente inscrito e em conformidade.
+- Taxa de incompleta: A percentagem de tentativas de inscrição que foram abandonadas (abandonada inscrições / iniciada inscrições).
 
 ### <a name="line-graph"></a>Gráfico de linha
 
 O gráfico de linha mostra as inscrições incompletas diárias para cada uma das seções de inscrição de quatro núcleos:
 
--   Lista de verificação da configuração
--   Ecrãs de plataforma
--   Termos de utilização
--   Conformidade/Ativação
+- Lista de verificação da configuração
+- Ecrãs de plataforma
+- Termos de utilização
+- Conformidade/Ativação
 
 ### <a name="user-abandonment-actions"></a>Ações de abandono do utilizador
 

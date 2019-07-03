@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 56e1a1e07a403afa4db405d276c55be1ef8ddfd8
-ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.openlocfilehash: 9b0d069d6a65be0b51dd02858470780299690425
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67494569"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67528666"
 ---
 # <a name="mdm-security-baseline-settings-for-intune"></a>Definições de linha de base de segurança MDM do Intune  
 
@@ -57,7 +57,7 @@ Para obter mais informações, consulte [CSP de política - AppRuntime](https://
 
 - **Contas Microsoft opcionais para aplicações da Windows Store**  
   Esta definição de política permite-lhe controlar se as contas Microsoft são opcionais para aplicações da Windows Store que requerem uma conta para iniciar sessão. Esta política afeta apenas as aplicações do Windows Store que o suportam. Se ativar esta definição de política, aplicações da Windows Store que exigem, normalmente, uma conta Microsoft para iniciar sessão permitirá aos utilizadores iniciar sessão com uma conta da empresa em vez disso. Se desabilitar ou não configura esta definição de política, os utilizadores devem iniciar sessão com uma conta Microsoft.  
-    [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067104)  
+  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067104)  
   
   **Predefinido**: Enabled  
 
@@ -68,7 +68,7 @@ Para obter mais informações, consulte [CSP de política - ApplicationManagemen
   Esta definição de política permite aos utilizadores alterar as opções de instalação que normalmente estão disponíveis apenas para os administradores de sistema. Se ativar esta definição de política, alguns dos recursos de segurança do Windows Installer são ignorados. Ele permite que as instalações para concluir que caso contrário, seriam queria ser interrompidas devido a uma violação de segurança. Se desabilitar ou não configurar esta definição de política, os recursos de segurança do Windows Installer impedem os utilizadores alterem as opções de instalação, normalmente reservadas para os administradores de sistema, tais como especificar o diretório ao qual os ficheiros são instalados. Se o Windows Installer detetar que um pacote de instalação tem a permissão ao utilizador alterar uma opção protegida, interrompe a instalação e exibe uma mensagem. Estas funcionalidades de segurança funcionam apenas quando o programa de instalação está em execução num contexto de segurança com privilégios em que tem acesso a diretórios negado ao utilizador. Esta definição de política foi concebida para ambientes menos restritivos. Pode ser utilizado para contornar erros num programa de instalação que impede que o software que está a ser instalado.  
   [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067060)  
 
-    **Predefinido**: Sim
+  **Predefinido**: Sim
 
 - **Instalações de aplicações do bloco MSI com privilégios elevados**  
   Esta definição de política direciona o Windows Installer para utilizar permissões elevadas, quando instalar qualquer programa no sistema.  
@@ -828,7 +828,7 @@ Para obter mais informações, consulte [CSP de política - InternetExplorer](ht
   
 - **Permissões de java de zona fidedignos do Internet Explorer**   
   Esta definição de política permite-lhe gerir permissões para miniaplicativos Java. Se ativar esta definição de política, pode escolher as opções da caixa de lista pendente. Personalizadas, para controlar as definições de permissões individualmente. Segurança baixa permite miniaplicativos executar todas as operações. Segurança média permite miniaplicativos executar em sua área de segurança (uma área na memória fora do que o programa não é possível fazer chamadas), além de recursos, como o espaço scratch (uma área de armazenamento seguro e fiável no computador cliente) e o ficheiro controlada pelo utilizador e/s. Segurança alta permite miniaplicativos executar em sua área de segurança. Desative o Java para impedir que qualquer miniaplicativos em execução. Se desativar esta definição de política, não é possível executar miniaplicativos Java. Se não configurar esta definição de política, a permissão esteja definida para baixa segurança.  
-    [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067200)  
+  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067200)  
   
   **Predefinido**: Segurança alta  
   

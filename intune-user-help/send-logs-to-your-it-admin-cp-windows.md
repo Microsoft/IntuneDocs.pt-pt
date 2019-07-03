@@ -18,12 +18,12 @@ ms.reviewer: scottduf
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c9ecf976ea973fdb1a9b8025fec0bf49d7f87d0c
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 5df4fce5c07f416d5fa53ef653d62d9166fb1a11
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61491173"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67528770"
 ---
 # <a name="email-your-company-support-about-problem-from-company-portal-for-windows"></a>O suporte da empresa sobre o problema a partir do Portal da empresa para Windows de e-mail
 
@@ -32,7 +32,7 @@ Resolva seus problemas de aplicações na aplicação Portal da empresa para Win
 Quando pedir ajuda, uma mensagem de e-mail pré-preenchida abre-se em que possa descrever o problema em detalhes. Ele também inclui um ID de registo de diagnóstico. Se a sua equipa de suporte não é possível resolver o problema com base em sua descrição, que irá contactá-Microsoft para obter ajuda. Microsoft terá o diagnóstico ID para fazer referência a registos da aplicação.   
 
 
-> [!Note]       
+> [!Note]
 > Depois de clicar em **obter ajuda**, o Portal da empresa enviará automaticamente os registos para a equipa de suporte da Microsoft. Este passo é uma proativa, o que torna mais fácil resolver problemas que estão a ser escalados ao suporte da Microsoft. Conforme mencionado acima, a equipa de suporte da Microsoft pode extrair dos registos com o ID de diagnóstico no seu e-mail.  
 
 ## <a name="what-is-a-diagnostic-log"></a>O que é um registo de diagnóstico?

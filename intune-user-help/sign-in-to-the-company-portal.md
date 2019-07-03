@@ -18,12 +18,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e0b61771385923af05c656f04e4257176b72ee35
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 6bfd8496061b4b3aba2589b73c3e98bce94a5011
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61504065"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67528644"
 ---
 # <a name="sign-in-to-company-portal"></a>Inicie sessão no Portal da empresa  
 
@@ -57,13 +57,13 @@ Os passos seguintes mostram as capturas de ecrã do Portal da empresa para iOS.
 
 ## <a name="sign-in-with-certificate-based-authentication"></a>Inicie sessão com a autenticação baseada em certificado
 
-1.  Abra a aplicação Portal da Empresa no dispositivo.  
+1. Abra a aplicação Portal da Empresa no dispositivo.  
 
-2.  Introduza a sua **Conta escolar ou profissional**.  
+2. Introduza a sua **Conta escolar ou profissional**.  
 
-3.  Toque na ligação **Iniciar sessão com um certificado**.  
+3. Toque na ligação **Iniciar sessão com um certificado**.  
 
-4.  Toque em **Continuar** para utilizar o certificado.  
+4. Toque em **Continuar** para utilizar o certificado.  
 
 ## <a name="sign-in-from-another-device"></a>Iniciar sessão a partir de outro dispositivo
 

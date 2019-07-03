@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eaff4ccd1dad7e99a62682b45d3f570b1d544a8b
-ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.openlocfilehash: 67e9592b61956cc7578f7aecb6ea2efcf19a4b8b
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67494595"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67528339"
 ---
 # <a name="whats-new-in-the-intune-classic-portal---previous-months"></a>Novidades no portal clássico do Intune – meses anteriores
 
@@ -60,9 +60,9 @@ Serão apresentadas novas mensagens mais específicas na aplicação Portal da E
 #### <a name="improved-app-install-status-for-the-windows-10-company-portal-app---676495--"></a>Estado de instalação de aplicação para a aplicação Portal da empresa do Windows 10 melhorada <!--676495-->
 
 Novas melhorias para a instalação da aplicação a utilizar na aplicação Portal da empresa do Windows 10 incluem:
--   Relatórios mais rápidos do progresso da instalação para pacotes MSI
--   Relatórios mais rápidos do progresso da instalação para aplicações modernas em dispositivos com a Atualização de Aniversário do Windows 10 e versões superiores
--   Nova barra de progresso para as instalações de aplicações modernas em dispositivos com a Atualização de Aniversário do Windows 10 e versões superiores
+- Relatórios mais rápidos do progresso da instalação para pacotes MSI
+- Relatórios mais rápidos do progresso da instalação para aplicações modernas em dispositivos com a Atualização de Aniversário do Windows 10 e versões superiores
+- Nova barra de progresso para as instalações de aplicações modernas em dispositivos com a Atualização de Aniversário do Windows 10 e versões superiores
 
 Pode ver a nova barra de progresso na [página Novidades na IU da aplicação Intune](whats-new-app-ui.md).
 

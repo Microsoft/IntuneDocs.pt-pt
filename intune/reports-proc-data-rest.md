@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d8445c20b658cc7a41ed5b53df16274dbbeda629
-ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.openlocfilehash: 2f638a8b3816e775c043077a7ac31b3320496744
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67494620"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67528401"
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>Obter dados a partir da API do Armazém de Dados do Intune com um cliente REST
 
@@ -110,19 +110,19 @@ Para obter um novo token de acesso do Postman, tem de adicionar o URL de autoriz
 
 #### <a name="add-the-information-used-to-request-the-token"></a>Adicionar as informações utilizadas para pedir o token
 
-1.  Transfira o Postman, se ainda não o tiver instalado. Para transferir o Postman, veja [www.getpostman](https://www.getpostman.com).
-2.  Abra o Postman. Selecione **GET** da operação HTTP.
-3.  Cole o URL do ponto final no endereço. Deverá ter o seguinte aspeto:  
+1. Transfira o Postman, se ainda não o tiver instalado. Para transferir o Postman, veja [www.getpostman](https://www.getpostman.com).
+2. Abra o Postman. Selecione **GET** da operação HTTP.
+3. Cole o URL do ponto final no endereço. Deverá ter o seguinte aspeto:  
 
     `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=v1.0`
-4.  Selecione o separador **Authorization (Autorização)** e **OAuth 2.0** a partir da lista **Type (Tipo)** .
-5.  Selecione **Obter Novo Token de Acesso**.
-6.  Certifique-se de que já adicionou o URL de Chamada de Retorno para a sua aplicação no Azure. O URL de Chamada de Retorno é `https://www.getpostman.com/oauth2/callback`.
-7.  Escreva Portador no **Nome do Token**.
-8.  Adicione o **URL Auth**. Deverá ter o seguinte aspeto:  
+4. Selecione o separador **Authorization (Autorização)** e **OAuth 2.0** a partir da lista **Type (Tipo)** .
+5. Selecione **Obter Novo Token de Acesso**.
+6. Certifique-se de que já adicionou o URL de Chamada de Retorno para a sua aplicação no Azure. O URL de Chamada de Retorno é `https://www.getpostman.com/oauth2/callback`.
+7. Escreva Portador no **Nome do Token**.
+8. Adicione o **URL Auth**. Deverá ter o seguinte aspeto:  
 
     `https://login.microsoftonline.com/common/oauth2/authorize?resource=https://api.manage.microsoft.com/`
-9.  Adicione o **URL do Token de Acesso**. Deverá ter o seguinte aspeto:  
+9. Adicione o **URL do Token de Acesso**. Deverá ter o seguinte aspeto:  
 
      `https://login.microsoftonline.com/common/oauth2/token`
 
@@ -141,8 +141,8 @@ Para obter um novo token de acesso do Postman, tem de adicionar o URL de autoriz
 
 #### <a name="send-the-call-to-the-endpoint-using-postman"></a>Enviar a chamada para o ponto final através do Postman
 
-1.  Selecione **Enviar**.
-2.  Os dados devolvidos são apresentados no corpo de resposta do Postman.
+1. Selecione **Enviar**.
+2. Os dados devolvidos são apresentados no corpo de resposta do Postman.
 
     ![Estado do cliente de postman é igual a 200 OK](./media/reports-postman_200OK.png)
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9be961908920420dbb4111c2c3ba108b7e11c09f
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: f97b3365036271a7f41e7c3274e8a3bd966407f3
+ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66042794"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67512150"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Como gerir a transferência de dados entre aplicações iOS no Microsoft Intune
 
@@ -34,7 +34,7 @@ Para ajudar a proteger dados da empresa, restringir as transferências de fichei
 
 A funcionalidade **Gestão Open in** dos dispositivos iOS pode limitar as transferências de ficheiros entre as aplicações que são implementadas através do **canal MDM**. Definir *gestão Open in* restrições nas definições de configuração e, em seguida, implementá-las com a sua solução de MDM.  Quando um utilizador instala a aplicação implementada, são aplicadas as restrições definidas.
 
-##  <a name="use-app-protection-with-ios-apps"></a>Utilizar a proteção de aplicações com aplicações iOS
+## <a name="use-app-protection-with-ios-apps"></a>Utilizar a proteção de aplicações com aplicações iOS
 Utilizar políticas de proteção de aplicações com o iOS **gestão Open in** para proteger os dados da empresa das seguintes formas:
 
 -   **Dispositivos de funcionários não geridos por nenhuma solução MDM:** A proteção de aplicações pode configurar definições de política **permitir que a aplicação transfira dados apenas aplicações geridas por políticas**. O *Open-In* comportamento das aplicações geridas por políticas apresenta apenas outras aplicações geridas por políticas como opções para a partilha. Se um utilizador tentar enviar um ficheiro protegido por políticas como um anexo do OneDrive na aplicação de e-mail nativo, esse ficheiro é ilegível.

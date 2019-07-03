@@ -18,12 +18,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d9f29e2d737dfd7bef709f239d6c8506c3bb746c
-ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
+ms.openlocfilehash: fcc493258d148e65a0dbc08a9499a79e1d31bb95
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66196872"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67529385"
 ---
 # <a name="windows-device-enrollment-in-intune-company-portal"></a>Inscrição de dispositivos do Windows no Portal da empresa do Intune  
 
@@ -64,11 +64,11 @@ Passos de inscrição são diferentes para versões diferentes de dispositivos W
     *  __1607 ou posterior__: Inscrever o seu dispositivo por meio dos [ **configurações** > **conta** > **acesso profissional ou escolar** rota](enroll-windows-10-device.md#enroll-windows-10-version-1607-and-later-device).   
     * __1511 ou anterior__: Inscrever o seu dispositivo por meio dos [ **configurações** > **conta** > **suas contas** rota](enroll-windows-10-device.md#enroll-windows-10-version-1511-and-earlier-device).  
 
-### <a name="windows-10-mobile-devices"></a>Dispositivos com o Windows 10 Mobile       
+### <a name="windows-10-mobile-devices"></a>Dispositivos com o Windows 10 Mobile
 
-1.  Aceda a __todas as aplicações__ e selecione o __definições__ aplicação.  
-2.  Selecione __Sistema__ > __Acerca de__.      
-3.  Sob __informações do dispositivo__, localize a __versão__.  
+1. Aceda a __todas as aplicações__ e selecione o __definições__ aplicação.
+2. Selecione __Sistema__ > __Acerca de__.
+3. Sob __informações do dispositivo__, localize a __versão__.  
 4. Se tiver uma versão  
 
     *  __1607 ou posterior__: Inscrever o seu dispositivo com o [ **configurações** > **acesso profissional ou escolar** rota](enroll-windows-10-device.md#enroll-windows-10-version-1607-and-later-device).   

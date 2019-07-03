@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f286ec4928ad4bb026c95d10562d9b339b2ca5f3
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: e8ebc708f76ed1f55f512edda75206d3ed5890a0
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043912"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67530727"
 ---
 # <a name="troubleshoot-conditional-access"></a>Resolver problemas de acesso condicional
 
@@ -35,8 +35,8 @@ Os seguintes requisitos devem ser cumpridos para acesso condicional funcionar:
 - O dispositivo tem de estar inscrito no e de ser gerido pelo Intune.
 - O utilizador e o dispositivo têm de estar em conformidade com as políticas de conformidade do Intune atribuídas.
 - Por predefinição, tem de ser atribuída ao utilizador uma política de conformidade de dispositivos. Isso pode variar consoante a configuração da definição **Marcar os dispositivos sem política de conformidade atribuída como** em **Conformidade do Dispositivo** > **Definições de Política de Conformidade** no portal de administração do Intune.
--   O Exchange ActiveSync tem de estar ativado no dispositivo se o utilizador estiver a utilizar o cliente de correio nativo do dispositivo em vez do Outlook. Isto ocorre automaticamente para dispositivos iOS, Windows Phone e Android.
--   O Intune Exchange Connector tem de estar configurado corretamente. Veja [Resolução de Problemas do Exchange Connector no Microsoft Intune](troubleshoot-exchange-connector.md) para obter mais informações.
+- O Exchange ActiveSync tem de estar ativado no dispositivo se o utilizador estiver a utilizar o cliente de correio nativo do dispositivo em vez do Outlook. Isto ocorre automaticamente para dispositivos iOS, Windows Phone e Android.
+- O Intune Exchange Connector tem de estar configurado corretamente. Veja [Resolução de Problemas do Exchange Connector no Microsoft Intune](troubleshoot-exchange-connector.md) para obter mais informações.
 
 Estas condições podem ser visualizadas para cada dispositivo no portal do Azure e no relatório de inventário do dispositivo.
 

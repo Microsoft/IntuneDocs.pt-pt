@@ -16,12 +16,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 06dcc730406af3ae2d715cbe7f0795253e2629f0
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: ed6259c996772817ceaa8ec827c8ac506adfd399
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045112"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67530466"
 ---
 # <a name="create-a-device-based-conditional-access-policy"></a>Criar uma política de acesso condicional com base no dispositivo
 
@@ -34,12 +34,12 @@ Uma política de acesso condicional Especifica a aplicação ou serviços que pr
 
 ## <a name="create-conditional-access-policy"></a>Criar política de acesso condicional
 
-1.  No portal do Intune, selecione **acesso condicional** > **políticas** > **nova política**.
+1. No portal do Intune, selecione **acesso condicional** > **políticas** > **nova política**.
    
     ![Criar uma nova política de acesso condicional](media/create-conditional-access-intune/create-ca.png)
  
-2.  Em **Atribuições**, selecione **Utilizadores e grupos**. 
-3.  Sobre o **inclusão** separador, identifique os utilizadores ou grupos a quem pretende que esta política de acesso condicional para aplicar. Depois de escolher quem incluir, pode utilizar o **excluir** separador se existirem quaisquer utilizadores, funções ou grupos que pretende excluir desta política.  
+2. Em **Atribuições**, selecione **Utilizadores e grupos**. 
+3. Sobre o **inclusão** separador, identifique os utilizadores ou grupos a quem pretende que esta política de acesso condicional para aplicar. Depois de escolher quem incluir, pode utilizar o **excluir** separador se existirem quaisquer utilizadores, funções ou grupos que pretende excluir desta política.  
     - **Todos os utilizadores**: Selecione esta opção para aplicar a política a todos os utilizadores e grupos, incluindo usuários internos e convidados.
   
     - **Selecionar utilizadores e grupos**: Selecione esta opção e especificar um ou mais das seguintes opções:
@@ -52,9 +52,9 @@ Uma política de acesso condicional Especifica a aplicação ou serviços que pr
      
        > [!TIP]  
        > Teste a política em relação a um grupo de utilizadores para se certificar de que funciona como esperado.
-4.  Selecione **Done** (Concluído).
-5.  Em **Atribuições**, selecione **Aplicações na Cloud**. 
-6.  Sobre o **inclusão separador**, identificar as aplicações e serviços que pretende proteger com esta política de acesso condicional. Pode utilizar o **excluir** separador se existirem quaisquer aplicações ou serviços que pretende excluir desta política.
+4. Selecione **Done** (Concluído).
+5. Em **Atribuições**, selecione **Aplicações na Cloud**. 
+6. Sobre o **inclusão separador**, identificar as aplicações e serviços que pretende proteger com esta política de acesso condicional. Pode utilizar o **excluir** separador se existirem quaisquer aplicações ou serviços que pretende excluir desta política.
     - **Todas as aplicações na cloud**: Selecione esta opção para aplicar a política a todas as aplicações.
       > [!IMPORTANT]  
       > A aplicação de gestão do Microsoft Azure para o acesso ao portal do Azure está incluída nesta lista. Certifique-se de que utilize o **excluir** separador um aqui ou no **utilizadores e grupos** opções para se certificar de que (ou os utilizadores ou grupos designados por si) será capazes de iniciar sessão no portal do Azure. 
@@ -63,8 +63,8 @@ Uma política de acesso condicional Especifica a aplicação ou serviços que pr
     
       ![Criar uma nova política de acesso condicional](media/create-conditional-access-intune/create-ca-select-apps.png)
 
-7.  Selecione **Done** (Concluído).
-8.  Sob **atribuições**, selecione **condições**.
+7. Selecione **Done** (Concluído).
+8. Sob **atribuições**, selecione **condições**.
     - **Início de sessão de risco**: Escolha Sim para utilizar a deteção de risco de início de sessão do Azure AD Identity Protection com esta política e, em seguida, selecione os níveis de risco de início de sessão que deve aplicar a política para.
     - **Plataformas de dispositivos**: Sobre o **inclusão** separador, identificar as plataformas de dispositivos que pretende esta política de acesso condicional para aplicar a. Utilize o **excluir** separador para excluir plataformas desta política.
     - **Localizações**: Sobre o **inclusão** separador, especifique se a política se aplica a qualquer localização, localizações de rede fidedigna, que estão sob o controle do seu departamento de TI ou localizações de rede específicas. Utilize o **excluir** separador para excluir localizações de rede desta política. 
@@ -76,7 +76,7 @@ Uma política de acesso condicional Especifica a aplicação ou serviços que pr
       > [!TIP]  
       > Se pretender proteger tanto **autenticação moderna** clientes e **clientes do Exchange ActiveSync**, criar dois separadas políticas de acesso condicional, um para cada tipo de cliente. Embora o Exchange ActiveSync suporta autenticação moderna, a única condição que é suportada pelo Exchange ActiveSync é a plataforma. Outras condições, incluindo autenticação multifator, não são suportadas. Para proteger efetivamente o acesso ao Exchange Online do Exchange ActiveSync, crie uma política de acesso condicional que especifica a aplicação de cloud do Office 365 Exchange Online e a aplicação de cliente do Exchange ActiveSync com aplicar política apenas a plataformas suportadas selecionadas.
 
-9.  Selecione **Done** (Concluído).
+9. Selecione **Done** (Concluído).
 10. Em **Controlos de acesso**, selecione **Concessão**. Configure o que acontece com base nas condições que configurou.  Pode selecionar entre as seguintes opções:
     - **Bloquear o acesso**: Os utilizadores especificados nesta política serão negados acesso às aplicações sob as condições que especificou.
     - **Conceder acesso**: Os utilizadores especificados nesta política serão concedidos acesso, mas pode exigir que qualquer uma das seguintes ações adicionais:

@@ -16,12 +16,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1b55d41939b9772227cee0f12da65040edbca0d0
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 9cc21b0d9af0073cae814ccf1d3a0f25fdeb2fbe
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61490407"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67527657"
 ---
 # <a name="you-need-to-install-sandblast-mobile-protect-on-your-android-device"></a>Tem de instalar o SandBlast Mobile Protect no seu dispositivo Android
 
@@ -35,11 +35,11 @@ Se tiver problemas com a instalação, experimente os passos de resolução de p
 
 2. É direcionado para a página de instalação do SandBlast Mobile Protect na Play Store. Instale o SandBlast Mobile Protect e, em seguida, toque em **ACCEPT (ACEITAR)** para permitir que o SandBlast Mobile Protect aceda ao seu dispositivo.
 
-3. Abra o SandBlast Mobile Protect e, em seguida, toque em **VERIFY (VERIFICAR)**.
+3. Abra o SandBlast Mobile Protect e, em seguida, toque em **VERIFY (VERIFICAR)** .
 
 4. Toque em **Sign in with Azure Active Directory (Iniciar sessão com o Azure Active Directory)** e introduza a conta que utiliza para aceder aos seus ficheiros e e-mail escolares ou profissionais.
 
-5. Selecione a conta que utiliza para aceder aos e-mails e ficheiros do seu trabalho ou escola e, em seguida, toque em **ADD ACCOUNT (ADICIONAR CONTA)**.
+5. Selecione a conta que utiliza para aceder aos e-mails e ficheiros do seu trabalho ou escola e, em seguida, toque em **ADD ACCOUNT (ADICIONAR CONTA)** .
 
 6. Toque em **Accept (Aceitar)** para conceder permissão ao SandBlast Mobile Protect para iniciar a sua sessão e ler o seu perfil.
 

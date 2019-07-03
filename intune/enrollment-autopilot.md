@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7c89e134c70ad4fa5f97625a4dbfb3ce215a9477
-ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.openlocfilehash: cbd73d22c2e42f0a379ec2a97179f9e3c4dec224
+ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67494415"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67512119"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Inscrever dispositivos Windows no Intune com o Windows Autopilot  
 O Windows Autopilot simplifica a inscrição de dispositivos no Intune. A criação e manutenção de imagens personalizadas do sistema operativo são um processo moroso. Também poderá demorar a aplicar estas imagens personalizadas do sistema operativo a novos dispositivos para as preparar para utilização antes de as disponibilizar aos seus utilizadores finais. Com o Microsoft Intune e o Autopilot, pode fornecer novos dispositivos aos seus utilizadores finais sem ter de criar, manter e aplicar imagens de sistema operativo personalizadas aos dispositivos. Ao utilizar o Intune para gerir dispositivos do Autopilot, pode gerir políticas, perfis, aplicações, entre outros, após estes serem inscritos. Para uma descrição geral das vantagens, cenários e pré-requisitos, veja [Descrição geral do Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
@@ -35,7 +35,7 @@ O Windows Autopilot simplifica a inscrição de dispositivos no Intune. A criaç
 
 ## <a name="how-to-get-the-csv-for-import-in-intune"></a>Como obter o CSV para importar no Intune
 
-Veja Understanding powershell cmdlet (Compreender o cmdlet do Powershell) para obter mais informações sobre como utilizá-lo.
+Para mais obter mais informações, consulte o cmdlet do powershell de compreensão.
 
 - [Get-WindowsAutoPilotInfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo/1.3/Content/Get-WindowsAutoPilotInfo.ps1)
 
@@ -47,8 +47,9 @@ Pode adicionar dispositivos Windows Autopilot ao importar um ficheiro CSV com as
 
     ![Captura de ecrã dos dispositivos Windows Autopilot](media/enrollment-autopilot/autopilot-import-device.png)
 
-2. Em **Adicionar Dispositivos do Windows Autopilot**, procure um ficheiro CSV que liste os dispositivos que pretende adicionar. O ficheiro CSV deve listar os números de série, IDs de produtos de Windows opcional, hashes de hardware e etiquetas de grupo opcional dos dispositivos. Pode ter até 500 linhas na lista. Utilize o cabeçalho e o formato de linha mostrado abaixo: `Device Serial Number,Windows Product ID,Hardware Hash,Group Tag`
-    `<serialNumber>,<optionalProductID>,<hardwareHash>,<optionalGroupTag>`
+2. Em **Adicionar Dispositivos do Windows Autopilot**, procure um ficheiro CSV que liste os dispositivos que pretende adicionar. O ficheiro CSV deve listar os números de série, IDs de produto do Windows, os hashes de hardware e etiquetas de grupo opcional, atribuídas a utilizadores e os IDs de ordem dos dispositivos. Pode ter até 500 linhas na lista. Utilize o cabeçalho e o formato de linha mostrado abaixo:
+
+    `Device Serial Number,Windows Product ID,Hardware Hash,Group Tag,Assigned User, Order ID` `<serialNumber>,<ProductID>,<hardwareHash>,<optionalGroupTag>,<optionalAssignedUser>,<optionalOrderID>`
 
     ![Captura de ecrã de Adicionar dispositivos Windows Autopilot](media/enrollment-autopilot/autopilot-import-device2.png)
 
@@ -69,7 +70,7 @@ Pode adicionar dispositivos Windows Autopilot ao importar um ficheiro CSV com as
     Os dispositivos Autopilot que ainda não estão inscritos são dispositivos em que o nome é igual ao número de série do dispositivo.
 4. Se acima optou por **Dispositivo Dinâmico** para o **Tipo de associação**, no painel **Grupo**, selecione **Membros de dispositivo dinâmicos** e escreva o seguinte código na caixa **Regra avançada**.
     - Se quiser criar um grupo que inclua todos os seus dispositivos Autopilot, escreva: `(device.devicePhysicalIDs -any _ -contains "[ZTDId]")`
-    - Campo de etiqueta de grupo do Intune mapeia para o atributo de OrderID em dispositivos do Azure AD. Se pretender criar um grupo que inclua todos os seus dispositivos Autopilot com tag(OrderID) um grupo específico tem de escrever: `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`
+    - Campo de etiqueta de grupo do Intune mapeia para o atributo de OrderID em dispositivos do Azure AD. Se pretender criar um grupo que inclua todos os seus dispositivos Autopilot com tag(OrderID) um grupo específico, tem de escrever: `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`
     - Se quiser criar um grupo que inclua todos os seus dispositivos do Autopilot com um ID de Nota de Encomenda específico, escreva `(device.devicePhysicalIds -any _ -eq "[PurchaseOrderId]:76222342342")`
     
     Depois de adicionar o código da **Regra avançada**, selecione **Guardar**.

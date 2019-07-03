@@ -16,12 +16,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4ddecf202160decb6ab219cfe0ef490092132059
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 9ca937fc5d129dc98c288fa0dde59aa861709f93
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61491410"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67527881"
 ---
 # <a name="install-lookout-for-work"></a>Instalar o Lookout for Work
 
@@ -47,7 +47,7 @@ Se tiver problemas com a instalação, experimente os passos de resolução de p
 
    ![inicie sessão com a sua conta escolar ou profissional](./media/lookout-sign-in-azure-android.png)
 
-5. Selecione a conta que utiliza para aceder aos e-mails e ficheiros do seu trabalho ou escola e, em seguida, toque em **ADD ACCOUNT (ADICIONAR CONTA)**.
+5. Selecione a conta que utiliza para aceder aos e-mails e ficheiros do seu trabalho ou escola e, em seguida, toque em **ADD ACCOUNT (ADICIONAR CONTA)** .
 
    ![selecione a sua conta escolar ou profissional e toque em Add Account (Adicionar conta)](./media/lookout-pick-account-android.png)
 

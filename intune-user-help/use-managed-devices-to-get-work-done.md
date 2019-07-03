@@ -18,12 +18,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 54bdef2252467de9cd06e5b5f0a7c38acc38ba88
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 798ea14529c0cbf44a0530f1a9a16507b14d7397
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61505323"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67527831"
 ---
 # <a name="enroll-device-for-access-to-work-or-school-resources"></a>Inscrever o dispositivo para o acesso ao trabalho ou escola recursos
 Para inscrever o seu dispositivo e obter acesso ao e-mail e aplicações, terá de instalar a aplicação Portal da empresa do Intune ou a aplicação Microsoft Intune. Quando inscreve, as políticas de gestão básicas que tiver configurado a sua organização, como palavra-passe, PIN e encriptação, são aplicadas para o seu dispositivo. Assim que as definições de dispositivo cumprem todos os requisitos da sua organização, pode aceder em segurança as suas informações de trabalho de qualquer lugar.  

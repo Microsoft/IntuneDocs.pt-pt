@@ -16,12 +16,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 624cc72ad9539659e1ce2c8b70f6a6698d5e7ba2
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 7868d5f9ef97f4b054457deff6f24cd91d6c31d8
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67046279"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67528680"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-unmanaged-devices"></a>Tutorial: Proteger o e-mail do Exchange Online em dispositivos não geridos
 
@@ -74,7 +74,7 @@ Para este tutorial, iremos configurar uma política de proteção de aplicaçõe
 
     Selecione **OK** para regressar ao painel de definições.  
 
-7.  No painel de definições, selecione **OK**e, em seguida, no painel de política de criar, selecione **criar**.
+7. No painel de definições, selecione **OK**e, em seguida, no painel de política de criar, selecione **criar**.
 
 É criada a política de proteção de aplicações do Outlook. Em seguida, definirá o acesso condicional para exigir que os dispositivos para utilizar a aplicação Outlook.
 
@@ -188,5 +188,5 @@ Quando já não precisar das políticas de teste, poderá removê-las.
 4. Selecione **Acesso Condicional** > **Políticas**.  
 5. Na **nome da política** , selecione o menu de contexto ( **...** ) para cada uma das suas políticas de teste e, em seguida, selecione **eliminar**. Selecione **Sim** para confirmar.  
 
- ## <a name="next-steps"></a>Passos Seguintes  
+## <a name="next-steps"></a>Passos Seguintes  
 Neste tutorial, criou as políticas de proteção de aplicações para limitar o que o utilizador pode fazer com o Outlook e criou as políticas de acesso condicional para exigir a aplicação do Outlook e exigir a MFA para os clientes de autenticação moderna. Para saber mais sobre como utilizar o Intune com o acesso condicional para proteger a outras aplicações e serviços, veja [configurar o acesso condicional](conditional-access.md).

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b9d3cd7dfb28d26451da95861fe9a3011c2556b1
-ms.sourcegitcommit: f90cba0b2c2672ea733052269bcc372a80772945
+ms.openlocfilehash: f87256580ce3a0e31ef86f15244f49046d9dd35e
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66454030"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67530256"
 ---
 # <a name="intune-data-warehouse-application-only-authentication"></a>Autenticação apenas com a aplicação do Armazém de Dados do Intune
 
@@ -41,18 +41,18 @@ O seguinte processo utiliza um método privado para processar e converter uma ch
 
 Nesta secção, proporcione os detalhes da aplicação Web que gostaria de apontar para o Intune. Uma aplicação Web é uma aplicação de servidor de cliente. O servidor proporciona a aplicação Web, que inclui a IU, conteúdos e funcionalidades. A manutenção deste tipo de aplicação é feita separadamente na Web. Utilize o Intune para conceder acesso à aplicação Web ao Intune. O fluxo de dados é iniciado através da aplicação Web. 
 
-1.  Inicie sessão no [portal do Azure](https://portal.azure.com).
-2.  Através do campo **Procurar recursos, serviços e documentos** junto à parte superior do portal do Azure, pesquise **Azure Active Directory**.
-3.  No menu pendente, selecione **do Azure Active Directory** em **Serviços**.
-4.  Selecione **Registos das aplicações**.
-5.  Clique em **Novo registo da aplicação** para apresentar o painel **Criar**.
-6.  No painel **Criar**, adicione os detalhes da aplicação:
+1. Inicie sessão no [portal do Azure](https://portal.azure.com).
+2. Através do campo **Procurar recursos, serviços e documentos** junto à parte superior do portal do Azure, pesquise **Azure Active Directory**.
+3. No menu pendente, selecione **do Azure Active Directory** em **Serviços**.
+4. Selecione **Registos das aplicações**.
+5. Clique em **Novo registo da aplicação** para apresentar o painel **Criar**.
+6. No painel **Criar**, adicione os detalhes da aplicação:
 
     - O nome de uma aplicação, como *Autenticação apenas com a Aplicação do Intune*.
     - O **Tipo de aplicação**. Escolha **Aplicação Web/API** para adicionar uma aplicação que represente uma aplicação Web, uma API Web ou ambos.
     - O **URL de início de sessão** da aplicação. Esta é a localização para a qual os utilizadores navegam automaticamente durante o processo de autenticação. Os utilizadores são obrigados a comprovar a sua identidade. Para obter mais informações, veja [What is application access and single sign-on with Azure Active Directory?](https://docs.microsoft.com/azure/active-directory/active-directory-appssoaccess-whatis) (O que é o acesso à aplicação e o início de sessão único com o Azure Active Directory?)
 
-7.  Clique em **Criar** na parte inferior do painel **Criar**.
+7. Clique em **Criar** na parte inferior do painel **Criar**.
 
     >[!NOTE] 
     > Copie o **ID da Aplicação** do painel **Aplicação registada** para utilizar mais tarde.
@@ -61,12 +61,12 @@ Nesta secção, proporcione os detalhes da aplicação Web que gostaria de apont
 
 Nesta secção, o Azure AD gera um valor de chave para a sua aplicação.
 
-1.  No painel **Registos das aplicações**, selecione a sua aplicação criada recentemente para apresentar o painel da aplicação.
-2.  Selecione **Definições** junto à parte superior do painel para apresentar o painel **Definições**.
-3.  Selecione **Chaves** no painel **Definições**.
-4.  Adicione a chave **Descrição**, uma duração **Expira** e um **Valor** para a chave.
-5.  Clique em **Guardar** para guardar e atualizar as chaves da aplicação.
-6.  Tem de copiar o valor da chave gerado (codificação base64).
+1. No painel **Registos das aplicações**, selecione a sua aplicação criada recentemente para apresentar o painel da aplicação.
+2. Selecione **Definições** junto à parte superior do painel para apresentar o painel **Definições**.
+3. Selecione **Chaves** no painel **Definições**.
+4. Adicione a chave **Descrição**, uma duração **Expira** e um **Valor** para a chave.
+5. Clique em **Guardar** para guardar e atualizar as chaves da aplicação.
+6. Tem de copiar o valor da chave gerado (codificação base64).
 
     >[!NOTE] 
     > O valor da chave desaparece depois de sair do painel **chaves**. Não pode obter a chave a partir deste painel mais tarde. Copie-a para utilizar mais tarde.
@@ -75,28 +75,28 @@ Nesta secção, o Azure AD gera um valor de chave para a sua aplicação.
 
 Nesta secção, pode conceder permissões às aplicações.
 
-1.  Selecione **Permissões obrigatórias** no painel **Definições**.
-2.  Clique em **Adicionar**.
-3.  Selecione **Adicionar uma API** para apresentar o painel **Selecionar uma API**.
-4.  Selecione **API do Microsoft Intune (MicrosoftIntuneAPI)** e, em seguida, clique em **Selecionar** no painel **Selecionar uma API**. O passo **Selecionar permissões** está selecionado e o painel **Ativar Acesso** é apresentado.
-5.  Escolha a opção **Obter informações do armazém de dados do Microsoft Intune** da secção **Permissões da Aplicação**.
-6.  Clique em **Selecionar** no painel **Ativar Acesso**.
-7.  Clique em **Concluído** no painel **Adicionar acesso à API**.
-8.  Clique em **Conceder Permissões** no painel **Permissões obrigatórias** e clique em **Sim** quando lhe for pedido que atualize as permissões existentes que esta aplicação já tem.
+1. Selecione **Permissões obrigatórias** no painel **Definições**.
+2. Clique em **Adicionar**.
+3. Selecione **Adicionar uma API** para apresentar o painel **Selecionar uma API**.
+4. Selecione **API do Microsoft Intune (MicrosoftIntuneAPI)** e, em seguida, clique em **Selecionar** no painel **Selecionar uma API**. O passo **Selecionar permissões** está selecionado e o painel **Ativar Acesso** é apresentado.
+5. Escolha a opção **Obter informações do armazém de dados do Microsoft Intune** da secção **Permissões da Aplicação**.
+6. Clique em **Selecionar** no painel **Ativar Acesso**.
+7. Clique em **Concluído** no painel **Adicionar acesso à API**.
+8. Clique em **Conceder Permissões** no painel **Permissões obrigatórias** e clique em **Sim** quando lhe for pedido que atualize as permissões existentes que esta aplicação já tem.
 
 ## <a name="generate-token"></a>Gerar token
 
 Com o Visual Studio, crie um projeto de Aplicação de Consola (.NET Framework) que suporte o .NET Framework e utilize C# como a linguagem de programação.
 
-1.  Selecione **Ficheiro** > **Novo** > **Projeto** para apresentar a caixa de diálogo **Novo Projeto**.
-2.  No lado esquerdo, selecione **Visual c#** para apresentar todos os projetos de .NET Framework.
-3.  Selecione **Aplicação de Consola (.Net Framework)** , adicione um nome da aplicação e, em seguida, clique em **OK** para criar a aplicação.
-4.  No **Explorador de Soluções**, selecione **Program.cs** para apresentar o código.
-5.  No Solution Explorer, adicione uma referência ao assembly `System.Configuration`.
-6.  No menu de pop-up, selecione **Adicionar** > **Novo item**. É apresentada a caixa de diálogo **Adicionar Novo Item**.
-7.  No lado esquerdo, em **Visual C#** , selecione **Código**.
-8.  Selecione **Classe**, altere o nome da classe para *IntuneDataWarehouseClass.cs* e clique em **Adicionar**.
-9.  Adicione o seguinte código dentro do método <code>Main</code>:
+1. Selecione **Ficheiro** > **Novo** > **Projeto** para apresentar a caixa de diálogo **Novo Projeto**.
+2. No lado esquerdo, selecione **Visual c#** para apresentar todos os projetos de .NET Framework.
+3. Selecione **Aplicação de Consola (.Net Framework)** , adicione um nome da aplicação e, em seguida, clique em **OK** para criar a aplicação.
+4. No **Explorador de Soluções**, selecione **Program.cs** para apresentar o código.
+5. No Solution Explorer, adicione uma referência ao assembly `System.Configuration`.
+6. No menu de pop-up, selecione **Adicionar** > **Novo item**. É apresentada a caixa de diálogo **Adicionar Novo Item**.
+7. No lado esquerdo, em **Visual C#** , selecione **Código**.
+8. Selecione **Classe**, altere o nome da classe para *IntuneDataWarehouseClass.cs* e clique em **Adicionar**.
+9. Adicione o seguinte código dentro do método <code>Main</code>:
 
     ``` csharp
          var applicationId = ConfigurationManager.AppSettings["appId"].ToString();

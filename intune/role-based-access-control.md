@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ee0e6ad7e46abe8da4c1b03e836eb9ba2f5991d0
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: eaefcc904d9969c7f356e3eceb924e8d153f912d
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044157"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67528235"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>Controlo de acesso baseado em funções (RBAC) com o Microsoft Intune
 
@@ -38,9 +38,9 @@ Uma função define o conjunto de permissões concedido aos utilizadores atribu�
 Pode utilizar ambas as funções incorporadas e personalizadas. Funções incorporadas abrangem alguns cenários comuns do Intune. Pode [criar suas próprias funções personalizadas](create-custom-role.md) com o conjunto exato de permissões de que precisa. Várias funções do Azure Active Directory tem permissões para o Intune.
 Para ver uma função, escolha **Intune** > **funções** > **todas as funções** > Escolha uma função. Verá as seguintes páginas:
 
--   **Propriedades**: O nome, descrição, tipo, as atribuições e etiquetas de âmbito para a função. 
--   **Permissões**: Indica um conjunto muito de definir quais as permissões que a função tem de botões de alternar.
--   **Atribuições de**: Uma lista de [atribuições de funções]( assign-role.md) definir quais usuários têm acesso para que os utilizadores/dispositivos. Uma função pode ter várias atribuições e um utilizador pode ser em várias atribuições.
+- **Propriedades**: O nome, descrição, tipo, as atribuições e etiquetas de âmbito para a função. 
+- **Permissões**: Indica um conjunto muito de definir quais as permissões que a função tem de botões de alternar.
+- **Atribuições de**: Uma lista de [atribuições de funções]( assign-role.md) definir quais usuários têm acesso para que os utilizadores/dispositivos. Uma função pode ter várias atribuições e um utilizador pode ser em várias atribuições.
 
 ### <a name="built-in-roles"></a>Funções incorporadas
 Pode atribuir funções incorporadas para grupos sem configuração adicional. Não é possível eliminar ou editar o nome, descrição, tipo ou permissões de uma função incorporada. Para obter uma lista completa das permissões para cada função incorporada, consulte a [tabela de RBAC do Intune](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a).
@@ -60,12 +60,12 @@ Pode criar suas próprias funções com permissões personalizadas. Para obter m
 | --- | :---: | :---: |
 | Administrador Global | Leitura/escrita | Leitura/escrita |
 | Administrador de Serviços do Intune | Leitura/escrita | Leitura/escrita |
-| Administrador de Acesso Condicional | Nenhum | Nenhum |
+| Administrador de Acesso Condicional | Nenhuma | Nenhuma |
 | Administrador de Segurança | Só de leitura | Só de leitura |
 | Operador de segurança | Só de leitura | Só de leitura |
 | Leitor de segurança | Só de leitura | Só de leitura |
 | Administrador de conformidade | Nenhum | Só de leitura |
-| Administrador de dados de conformidade | Nenhuma | Só de leitura |
+| Administrador de dados de conformidade | Nenhum | Só de leitura |
 
 > [!TIP]
 > O Intune também mostra três extensões do Azure AD: **Os utilizadores**, **grupos**, e **acesso condicional**, que são controladas através do RBAC do Azure AD. Além disso, o **Administrador da Conta de Utilizador** só executa as atividades do utilizador/grupo do AAD e não tem permissões completas para executar todas as atividades no Intune. Para obter mais informações, consulte [RBAC com o Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).
@@ -84,10 +84,10 @@ Define uma atribuição de função:
 Pode atribuir funções personalizadas e incorporadas aos seus utilizadores. A ser atribuída uma função do Intune, o utilizador tem de ter uma licença do Intune.
 Para ver uma atribuição de função, escolha **Intune** > **funções** > **todas as funções** > Escolha uma função > Escolha uma atribuição. Verá as seguintes páginas:
 
--   **Propriedades**: O nome, descrição, função, membros, âmbitos e as etiquetas da atribuição.
--   **Membros**: Todos os utilizadores em grupos listados tem permissão para gerir os utilizadores/dispositivos que estão listados no âmbito (grupos).
--   **Âmbito (grupos)**: Todos os utilizadores/dispositivos nestes grupos podem ser geridos pelos utilizadores nos membros.
--   **[Âmbito (etiquetas)](scope-tags.md)**: Os utilizadores em membros podem ver os recursos que têm o mesmo âmbito.
+- **Propriedades**: O nome, descrição, função, membros, âmbitos e as etiquetas da atribuição.
+- **Membros**: Todos os utilizadores em grupos listados tem permissão para gerir os utilizadores/dispositivos que estão listados no âmbito (grupos).
+- **Âmbito (grupos)** : Todos os utilizadores/dispositivos nestes grupos podem ser geridos pelos utilizadores nos membros.
+- **[Âmbito (etiquetas)](scope-tags.md)** : Os utilizadores em membros podem ver os recursos que têm o mesmo âmbito.
 
 ### <a name="multiple-role-assignments"></a>Várias atribuições de funções
 Se um utilizador tiver várias atribuições de funções, permissões nessas atribuições de funções de expandir a diferentes objetos da seguinte forma:

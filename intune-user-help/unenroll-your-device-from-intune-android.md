@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7d4030762e625e24fb0c72724473162a4ad98183
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: b68ea31a6c5d902e66c0eda8127e0f68383910f8
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61506330"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67529126"
 ---
 # <a name="unenroll-your-android-device-from-management"></a>Anular a inscrição do seu dispositivo Android na gestão  
 
@@ -51,8 +51,8 @@ Remova um dispositivo Android inscrito para que deixe de ser gerido pela sua org
 
 Para remover todos os dados que a aplicação Portal da Empresa para Android armazena no seu dispositivo:
 
--   Limpar dados de aplicação ao tocar em **aplicativos** > **[*nome da aplicação*]** > **limpar dados**.
--   Elimine a pasta seguinte: \storage\internal storage\Android\data\com.microsoft.windowsintune.companyportal.
+- Limpar dados de aplicação ao tocar em **aplicativos** >  **[*nome da aplicação*]**  > **limpar dados**.
+- Elimine a pasta seguinte: \storage\internal storage\Android\data\com.microsoft.windowsintune.companyportal.
 
 ## <a name="uninstall-the-company-portal-app"></a>Desinstalar a aplicação Portal da Empresa  
 Portal da empresa é uma aplicação de gestão de dispositivos. Ele não pode ser desinstalado até que anula a inscrição do dispositivo no seu gerenciamento. Depois de concluir esse procedimento, toque sem soltar no ícone da aplicação Portal da Empresa, até surgir **Desinstalar**. Toque em **Desinstalar** para remover a aplicação do seu dispositivo.  

@@ -17,21 +17,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c9a225fbffda25b8d077c3b2be271e86d3e6c85e
-ms.sourcegitcommit: 2db7dc2baea0c159f70338e6a0529acc89580773
+ms.openlocfilehash: 50574a2d3dc4ba5731b1a90f563ddd1a08e7f833
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 07/02/2019
-ms.locfileid: "67500603"
+ms.locfileid: "67529631"
 ---
 # <a name="manage-web-access-using-microsoft-edge-with-microsoft-intune"></a>Gerir o acesso web usando o Microsoft Edge com o Microsoft Intune
 
 Utilizar políticas de proteção de aplicações do Intune com o Microsoft Edge pode garantir a Web sites empresariais sempre acedidos com as proteções in-loco. Estão disponíveis as seguintes funcionalidades empresariais do Microsoft Edge ativadas por políticas do Intune. Estas funcionalidades empresariais incluem:
 
-1.  **Identidade Dupla** – os utilizadores podem adicionar uma conta profissional e conta pessoal para navegação. Não há uma separação total entre as duas identidades, semelhante à arquitetura e à experiência no Office 365 e no Outlook. Os administradores do Intune poderão definir as políticas pretendidas para uma experiência de navegação protegida na conta profissional.
-2.  **Integração de política de proteção de aplicações do Intune** – Microsoft Edge, uma vez que está integrado com o SDK do Intune, pode direcionar políticas de proteção de aplicações para garantir a proteção de perda de dados. Esses recursos incluem o controle de cortar, copiar e colar, impedir o ecrã captura e garantir que as ligações selecionados pelo usuário abertas apenas noutras aplicações geridas.
-3.  **Integração de Proxy de aplicações do Azure** – pode controlar o acesso às aplicações SaaS e aplicações web, ajudando a garantir que as aplicações baseadas no browser executado no browser Microsoft Edge seguro, se os utilizadores finais ligar a partir da rede empresarial ou ligar a partir da Internet .
-4.  **Configuração da aplicação** – pode tirar partido das definições de configuração de aplicações para fortalecer a sua postura de segurança de organizações e configurar funcionalidades de Facilidade de utilização para os utilizadores finais. Por exemplo, pode definir indicadores, um atalho de home page, permitiu/bloqueou a sites, o Proxy de aplicações do Azure e muito mais.
+1. **Identidade Dupla** – os utilizadores podem adicionar uma conta profissional e conta pessoal para navegação. Não há uma separação total entre as duas identidades, semelhante à arquitetura e à experiência no Office 365 e no Outlook. Os administradores do Intune poderão definir as políticas pretendidas para uma experiência de navegação protegida na conta profissional.
+2. **Integração de política de proteção de aplicações do Intune** – Microsoft Edge, uma vez que está integrado com o SDK do Intune, pode direcionar políticas de proteção de aplicações para garantir a proteção de perda de dados. Esses recursos incluem o controle de cortar, copiar e colar, impedir o ecrã captura e garantir que as ligações selecionados pelo usuário abertas apenas noutras aplicações geridas.
+3. **Integração de Proxy de aplicações do Azure** – pode controlar o acesso às aplicações SaaS e aplicações web, ajudando a garantir que as aplicações baseadas no browser executado no browser Microsoft Edge seguro, se os utilizadores finais ligar a partir da rede empresarial ou ligar a partir da Internet .
+4. **Configuração da aplicação** – pode tirar partido das definições de configuração de aplicações para fortalecer a sua postura de segurança de organizações e configurar funcionalidades de Facilidade de utilização para os utilizadores finais. Por exemplo, pode definir indicadores, um atalho de home page, permitiu/bloqueou a sites, o Proxy de aplicações do Azure e muito mais.
 As políticas de proteção do Microsoft Intune para o Microsoft Edge ajudam a proteger os dados e os recursos da sua organização. Utilizar estas políticas com o Microsoft Edge garante que recursos da empresa estão protegidos não só em aplicativos instalados nativamente, mas também quando acedido através do browser.
 
 ## <a name="getting-started"></a>Introdução
@@ -115,8 +115,8 @@ Os passos seguintes são utilizados para criar uma configuração de aplicação
     > [!NOTE]
     > O Microsoft Edge utiliza os mesmos pares de chave e valor que o Managed Browser. 
 
-8.  Quando tiver terminado, clique em **OK**.
-9.  No painel **Adicionar política de configuração**, selecione **Adicionar**.<br>
+8. Quando tiver terminado, clique em **OK**.
+9. No painel **Adicionar política de configuração**, selecione **Adicionar**.<br>
     A nova configuração é criada e apresentada no **configuração da aplicação** painel.
 
 ## <a name="assign-the-configuration-settings-you-created"></a>Atribuir as definições de configuração que criou 
@@ -154,7 +154,7 @@ Outlook tem de ser configurado com uma política de proteção de aplicações q
 #### <a name="step-2-set-the-app-configuration-setting-to-enable-app-proxy"></a>Passo 2: Definir a definição de configuração de aplicação para ativar o proxy de aplicação
 Direcionar o Microsoft Edge com o abaixo par chave/valor para ativar o proxy de aplicação para o Microsoft Edge:
 
-|    Chave    |    Value    |
+|    Chave    |    Valor    |
 |-------------------------------------------------------------------|-------------|
 |    com.microsoft.intune.mam.managedbrowser.AppProxyRedirection    |    true    |
 
@@ -199,7 +199,7 @@ Pode utilizar a configuração de aplicações para definir os sites que os util
 
 Pode utilizar o abaixo pares chave/valor para configurar uma lista de sites permitidos ou bloqueados para o Microsoft Edge. Continue a ler para obter mais informações sobre formatos de URL válidos. 
 
-|    Chave    |    Value    |
+|    Chave    |    Valor    |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    Escolha entre:<p>1. Especificar URLs permitidos (apenas estes URLs são permitidos; não pode aceder a mais nenhum site):<br>`com.microsoft.intune.mam.managedbrowser.AllowListURLs`<p>2. Especificar URLs bloqueados (é possível aceder a todos os outros sites):<br>`com.microsoft.intune.mam.managedbrowser.BlockListURLs`    |    O valor correspondente da chave é uma lista de URLs. Introduza todos os URLs que pretende permitir ou bloquear como um único valor, separado por um pipe `|` caráter.<br>**Exemplos:**<br>`URL1|URL2|URL3`<br>`http://.contoso.com/|https://.bing.com/|https://expenses.contoso.com`  |
 

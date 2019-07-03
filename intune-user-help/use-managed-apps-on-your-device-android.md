@@ -18,12 +18,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d3a477f24f2678b5b4c8830819d1410eb8525220
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: bf53266449911967ae8fb89d240274b04164fe96
+ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61505493"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67511751"
 ---
 # <a name="use-managed-apps-on-your-android-device"></a>Utilizar aplicações geridas no seu dispositivo Android
 As aplicações geridas são configuradas para cumprir os requisitos de segurança da sua organização e proteger os dados profissionais e escolares. Estas aplicações estão disponíveis para instalação ou utilização automaticamente no seu dispositivo. 
@@ -57,12 +57,12 @@ Existem três formas de obter aplicações geridas.
 * Irá instalar uma aplicação através da Google Play Store e, em seguida, iniciar sessão na aplicação com a sua conta escolar ou profissional.    
 * A sua organização disponibiliza aplicações geridas no Portal da Empresa. Vá para a aplicação Portal da empresa ou do site para procurar, ver e instalar as aplicações disponíveis. Para obter mais informações sobre estas aplicações, veja a secção seguinte, [aplicações disponíveis](#available-apps).  
 
- ### <a name="available-apps"></a>Aplicações disponíveis   
+### <a name="available-apps"></a>Aplicações disponíveis   
  Sua organização pode selecionar aplicações que são adequadas e útil para no trabalho ou escola e disponibilizá-los para no Portal da empresa.  
 
  Aplicações também são disponibilizadas para com base em seu tipo de dispositivo. Por exemplo, se estiver a utilizar a aplicação Portal da empresa para Android, terá acesso a aplicações Android, mas não aplicações de iOS.   
 
- ## <a name="request-an-app-for-work-or-school"></a>Pedido de aplicação para a empresa ou escola   
+## <a name="request-an-app-for-work-or-school"></a>Pedido de aplicação para a empresa ou escola   
  Se existir uma aplicação precisa, mas não a vir no Portal da empresa, pode solicitá-la. Encontrar detalhes de contactos do seu **suporte técnico** em qualquer aplicativo **contactar TI** separador. Encontrará as mesmas informações de contactos a [site do Portal da empresa](https://go.microsoft.com/fwlink/?linkid=2010980).   
 
 ## <a name="what-can-my-company-support-manage-in-an-app"></a>O que pode gerir o suporte da minha empresa numa aplicação?  

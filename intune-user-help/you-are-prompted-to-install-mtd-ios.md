@@ -16,12 +16,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 582b4615941dae8c2fc696ce5dfc87e2bbe4b98b
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 0c72fb6e7ace6c603410ff0ffc9a96e4a0ff528d
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61505034"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67527631"
 ---
 # <a name="install-mobile-threat-defense-on-your-ios-device"></a>Instalar a Defesa Contra Ameaças para Dispositivos Móveis no seu dispositivo iOS
 
@@ -38,12 +38,12 @@ Para poder aceder ao seu trabalho, o suporte da sua empresa precisa de instalar 
 
 A Defesa Contra Ameaças a Dispositivos Móveis é uma forma de as empresas se certificarem de que os seus dispositivos estão seguros contra aplicações que podem tentar roubar informações empresariais. Para adicionar esta proteção, é necessário comunicar informações adicionais sobre as aplicações nos seus dispositivos ao serviço de Defesa Contra Ameaças a Dispositivos Móveis que a sua empresa estiver a utilizar. A sua empresa não pode ver os dados nas suas aplicações pessoais. Todas as aplicações no seu dispositivo são adicionadas [ao que a sua empresa pode ver](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) quando utilizam o serviço de Defesa Contra Ameaças a Dispositivos Móveis. Estas são as partes da aplicação que a sua empresa vê:
 
-*   Nome da aplicação
+* Nome da aplicação
 * ID da aplicação: o nome exclusivo que identifica a aplicação na App Store
-*   A versão da aplicação e o número da versão abreviado: os números de lançamento específicos de uma aplicação
+* A versão da aplicação e o número da versão abreviado: os números de lançamento específicos de uma aplicação
 * O tamanho dinâmico e a coleção de pacotes da aplicação: a quantidade de espaço que a aplicação utiliza no seu dispositivo
 * Validade da aplicação: se a aplicação foi aprovada para utilização
-*   Estado de gestão da aplicação: se a aplicação é gerida pela sua empresa ou se é uma aplicação pessoal
+* Estado de gestão da aplicação: se a aplicação é gerida pela sua empresa ou se é uma aplicação pessoal
 
 ## <a name="if-the-installation-doesnt-work"></a>Se a instalação não funcionar
 

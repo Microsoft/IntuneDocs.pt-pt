@@ -18,12 +18,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bb6c63cacfba26b58a0de6f70c4e4b93344ca562
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: f1aac6c472cda5d0d9d9c12c98f792374065da49
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61503899"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67528780"
 ---
 # <a name="upload-and-email-logs"></a>Registos de carregamento e o e-mail  
 
@@ -48,7 +48,7 @@ Os detalhes do erro real são mantidos no dispositivo, num documento especial de
 5. Uma mensagem de e-mail será aberta com o ID de incidente pré-preenchido no campo do requerente. No corpo da mensagem de e-mail, descreva o problema que vocês encontraram.    
 
 
- ## <a name="upload-and-email-logs-from-microsoft-intune-app"></a>Registos de e-mail e de carregamento da aplicação do Microsoft Intune   
+## <a name="upload-and-email-logs-from-microsoft-intune-app"></a>Registos de e-mail e de carregamento da aplicação do Microsoft Intune   
 
 1.  Na aplicação do Microsoft Intune, existem duas formas de iniciar o suporte de e-mail.  
     * Na tela inicial: Toque em **Menu** > **ajudar** > **obter suporte**.  

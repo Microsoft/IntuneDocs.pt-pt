@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 76d5ca2d1f1c23a5d5aef4af3904fc8d9c76e947
-ms.sourcegitcommit: 6bba9f2ef4d1ec699f5713a4da4f960e7317f1cd
+ms.openlocfilehash: e4f2969c6bb7f15022990aa99bbf20e94588406e
+ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67407725"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67512292"
 ---
 # <a name="integrate-wandera-mobile-threat-protection-with-intune"></a>Integrar Wandera Mobile Threat Protection com o Intune  
 

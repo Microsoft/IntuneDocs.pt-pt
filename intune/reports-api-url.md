@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 122a7eef56f2850fced164a37b518f650ed2ecdf
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 38e24bff110cea7d7a565ca00fc0e3e13e37744f
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045859"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67530755"
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Ponto final da API do Armazém de Dados do Intune
 
@@ -69,8 +69,8 @@ A versão atual suporta os seguintes parâmetros de consulta de OData: `$filter`
 
 Os filtros de intervalo `DateKey` podem ser utilizados para limitar a quantidade de dados a transferir em algumas coleções com um filtro de intervalo `dateKey` como propriedade chave. O filtro `DateKey` pode ser utilizado para otimizar o desempenho do serviço ao proporcionar o seguinte parâmetro de consulta `$filter`:
 
-1.  O filtro `DateKey` sozinho no `$filter`, a apoiar os operadores `lt/le/eq/ge/gt` e a juntar-se ao operador lógico `and`, onde estes podem ser mapeados a uma data de início e/ou uma data de fim.
-2.  O filtro `maxhistorydays` é dado como uma opção de consulta personalizada.<br>
+1. O filtro `DateKey` sozinho no `$filter`, a apoiar os operadores `lt/le/eq/ge/gt` e a juntar-se ao operador lógico `and`, onde estes podem ser mapeados a uma data de início e/ou uma data de fim.
+2. O filtro `maxhistorydays` é dado como uma opção de consulta personalizada.<br>
 
 ## <a name="filter-examples"></a>Exemplos de filtros
 

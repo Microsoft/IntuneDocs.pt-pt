@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 063a288c99f3f773b63bd6fe0040e200a754c888
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 9c304cafa03d9a88831048a271fa4d74b17a944f
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67046292"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67528744"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Resolver problemas de inscrição de dispositivos no Microsoft Intune
 
@@ -34,10 +34,10 @@ Este artigo fornece sugestões para resolução de problemas [inscrição de dis
 
 Antes de iniciar a resolução de problemas, certifique-se de que configurou o Intune corretamente para permitir a inscrição. Pode ler sobre estes requisitos de configuração em:
 
--   [Preparar a inscrição de dispositivos no Microsoft Intune](setup-steps.md)
--   [Configurar a gestão de dispositivos iOS e Mac](ios-enroll.md)
--   [Configurar a gestão de dispositivos Windows](windows-enroll.md)
--   [Configurar a gestão de dispositivos Android](android-enroll.md) –não são precisos passos adicionais
+- [Preparar a inscrição de dispositivos no Microsoft Intune](setup-steps.md)
+- [Configurar a gestão de dispositivos iOS e Mac](ios-enroll.md)
+- [Configurar a gestão de dispositivos Windows](windows-enroll.md)
+- [Configurar a gestão de dispositivos Android](android-enroll.md) –não são precisos passos adicionais
 
 Também pode confirmar que a hora e a data no dispositivo do utilizador estão definidas corretamente:
 
@@ -236,15 +236,15 @@ O erro de certificado ocorre porque os dispositivos Android exigem que os certif
 
 Para corrigir o problema, importe os certificados para os Certificados dos Computadores Pessoais no servidor do AD FS ou nos proxies da seguinte forma:
 
-1.  No ADFS e em servidores proxy, clique com o botão direito do rato em **Iniciar** > **Executar** > **certlm.msc** para iniciar a Consola de Gestão de Certificados de Computador Local.
-2.  Expanda **Pessoal** e escolha **Certificados**.
-3.  Localize o certificado para a comunicação de serviço do AD FS (um certificado assinado publicamente) e faça duplo clique para ver as respetivas propriedades.
-4.  Escolha o separador **Caminho de Certificação** para ver os certificados principais do certificado.
-5.  Em cada certificado principal, escolha **Ver Certificado**.
-6.  Selecione **Detalhes** > **Copiar para o ficheiro…**.
-7.  Siga as instruções do assistente para exportar ou guardar a chave pública do certificado principal numa localização do ficheiro à sua escolha.
-8.  Clique com botão direito do rato em **Certificados** > **Todas as Tarefas** > **Importar**.
-9.  Siga as instruções do assistente para importar os certificados principais para **Computador Local\Pessoal\Certificados**.
+1. No ADFS e em servidores proxy, clique com o botão direito do rato em **Iniciar** > **Executar** > **certlm.msc** para iniciar a Consola de Gestão de Certificados de Computador Local.
+2. Expanda **Pessoal** e escolha **Certificados**.
+3. Localize o certificado para a comunicação de serviço do AD FS (um certificado assinado publicamente) e faça duplo clique para ver as respetivas propriedades.
+4. Escolha o separador **Caminho de Certificação** para ver os certificados principais do certificado.
+5. Em cada certificado principal, escolha **Ver Certificado**.
+6. Selecione **Detalhes** > **Copiar para o ficheiro…** .
+7. Siga as instruções do assistente para exportar ou guardar a chave pública do certificado principal numa localização do ficheiro à sua escolha.
+8. Clique com botão direito do rato em **Certificados** > **Todas as Tarefas** > **Importar**.
+9. Siga as instruções do assistente para importar os certificados principais para **Computador Local\Pessoal\Certificados**.
 10. Reinicie os servidores do AD FS.
 11. Repita os passos acima em todos os servidores do AD FS e do proxy.
 

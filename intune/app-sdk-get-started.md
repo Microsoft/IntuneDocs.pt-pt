@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: db181991c19dc840e4e0b6b2f11f1ec2a1bd2df6
-ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.openlocfilehash: 9e9a50855a26b72b2f6589d9f44ce6deea0588fa
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67494133"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67529173"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Introdução ao SDK da Aplicação Microsoft Intune
 
@@ -160,7 +160,7 @@ Após ter concluído os passos necessários para integrar a aplicação iOS ou A
     * Se for um ISV e estiver a ativar a política de proteção de aplicações do Intune nas suas aplicações da loja iOS ou Android, receberá um código promocional após ter concluído o registo no Microsoft Intune, conforme descrito no passo de registo. O código promocional vai permitir-lhe inscrever-se para obter uma versão de avaliação do Microsoft Intune de um ano de utilização expandida.
 
     * Se estiver a desenvolver uma aplicação de linha de negócio que não será enviada para a loja, é esperado que tenha acesso ao Microsoft Intune através da sua organização. Também pode inscrever-se para obter uma versão de avaliação gratuita de um mês com o [Microsoft Intune](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0).
-    
+
     * Se estiver a testar a aplicação num dispositivo móvel através de uma conta de utilizador final, certifique-se de que tenha dado essa conta uma licença do Intune, no site de centro de administrador do Microsoft 365 após iniciar sessão com uma conta de administrador, consulte [licença de atribuir o Microsoft Intune ](https://docs.microsoft.com/intune/licenses-assign).
 
 * **Políticas de proteção de aplicações do Intune**: Para testar a aplicação com todos os as Intune políticas de proteção, deve saber o que é o comportamento esperado para cada definição de política. Consulte as descrições para [políticas de proteção de aplicações para iOS](app-protection-policy-settings-ios.md) e [políticas de proteção de aplicações para Android](app-protection-policy-settings-android.md). Se a sua aplicação integrou o SDK do Intune, mas não estiver listada no portal do Azure como um aplicativo de destino ainda, pode segmentá-la com uma política ao selecionar o "+ mais aplicações" opção e fornecer o ID do pacote (iOS) ou o nome do pacote (Android) na caixa de texto.
@@ -173,12 +173,12 @@ Se seu aplicativo está usando suas próprias definições personalizadas do Azu
 
 Depois de ter registado a sua aplicação dentro de um inquilino do Azure e está a aparecer sob **todos os aplicativos**, tem de dar o acesso a aplicações para o serviço de proteção de aplicações do Intune (anteriormente conhecido como o serviço MAM). No portal do Azure:
 
-1.  Vá para o **do Azure Active Directory** painel.
-2.  Sob **registos das aplicações**, vá para a listagem definida para a aplicação.
-3.  Clique em **+ adicionar uma permissão**.
-4.  Clique nas **APIs minha organização utiliza**. 
-5.  Na caixa de pesquisa, introduza **Gestão de Aplicações Móveis da Microsoft**.
-6.  Sob **permissões delegadas**, selecione o **DeviceManagementManagedApps.ReadWrite: Ler e escrever dados de gestão de aplicações do utilizador*** caixa de verificação.
+1. Vá para o **do Azure Active Directory** painel.
+2. Sob **registos das aplicações**, vá para a listagem definida para a aplicação.
+3. Clique em **+ adicionar uma permissão**.
+4. Clique nas **APIs minha organização utiliza**. 
+5. Na caixa de pesquisa, introduza **Gestão de Aplicações Móveis da Microsoft**.
+6. Sob **permissões delegadas**, selecione o **DeviceManagementManagedApps.ReadWrite: Ler e escrever dados de gestão de aplicações do utilizador*** caixa de verificação.
 7. Clique em **adicionar permissões**.
 
 ### <a name="badge-your-app-optional"></a>Colocar um distintivo na aplicação (opcional)

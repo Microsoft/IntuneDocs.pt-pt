@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f4fa42a52e104ef1c9cf13c8490159f3dbb2efed
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: dbebcb495298f3e8b17007d1fb00f0362ead4ab8
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045321"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67530674"
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>Reatribuir políticas de acesso condicional do portal clássico do Intune do portal do Azure
 
@@ -81,7 +81,7 @@ O painel **Proteção de Aplicações do Intune** no portal do Azure permite que
 3. Forneça um nome para a política.
 
 4. Sob o **secção atribuições**, escolha **utilizadores e grupos** para direcionar a nova política de acesso condicional.
-    
+
     ![Nesse grupo de utilizadores compara da interface do Usuário entre os portais do Azure do Intune e de imagem](./media/reassign-ca-1.png)
 
     > [!IMPORTANT] 

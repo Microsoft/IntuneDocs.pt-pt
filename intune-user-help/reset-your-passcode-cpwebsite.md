@@ -18,12 +18,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fd05c600553ec23085b03eb560e0e736c9d7a764
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 945e597556c7d0c43000ccf659b7b6e088661cff
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61504524"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67528953"
 ---
 # <a name="how-to-reset-your-device-passcode-from-the-company-portal-website"></a>Como repor o código de acesso do dispositivo a partir do site do Portal da Empresa
 
@@ -42,7 +42,7 @@ Se estiver a utilizar um dispositivo pertencente à empresa, poderá não ser ap
 
     ![Uma captura de ecrã da página Dispositivos, com dois mosaicos que mostram dispositivos não identificados com um nome genérico. Uma faixa cinzenta está diretamente abaixo dos dispositivos e pede ao utilizador que identifique o dispositivo que está a utilizar ou adicione um novo.](./media/rename-reset-device-step2-1808.png) 
 
-3. Selecione **Repor Código de Acesso**. Se a opção de código de acesso não estiver visível na parte superior da sua página, selecione **Mais (…)** > **Repor Código de Acesso**.   
+3. Selecione **Repor Código de Acesso**. Se a opção de código de acesso não estiver visível na parte superior da sua página, selecione **Mais (…)**  > **Repor Código de Acesso**.   
 
    ![A página de detalhes do dispositivo para um dispositivo selecionado no site do Portal da Empresa, com uma lista de ligações na parte superior que apresenta Mudar o Nome, Remover, Repor Dispositivo, Repor Código de Acesso e Bloqueio Remoto. ](./media/rename-reset-device-1808.png)   
 
@@ -79,7 +79,7 @@ Esta secção descreve a reposição do código de acesso e o comportamento da p
 **iOS**: Remove o código de acesso existente e não cria um código de acesso temporário. Se utilizar o scanner de impressões digitais Touch ID para abrir o seu dispositivo ou fazer compras, terá de configurá-lo novamente.  
 
 **Windows 10 Mobile**: Remove o código de acesso existente e cria um código de acesso temporário constituído por letras e números. Se estiver configurado, o reconhecimento facial do Windows Hello irá continuar a funcionar com o dispositivo.
-    
+
 **Windows Phone 8.1**: Remove o código de acesso existente e cria um código de acesso temporário constituído por números.  
 
 Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  

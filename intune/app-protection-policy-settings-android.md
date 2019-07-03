@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4a380cc514272d10a6cfa1e9f20adeb171303523
-ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.openlocfilehash: 524c4aebe6cdde0b0bc45f76a4675bbed8172d67
+ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67403297"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67511706"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Definições de políticas de proteção de aplicações Android no Microsoft Intune
 Este artigo descreve as definições de políticas de proteção de aplicações para dispositivos Android. As definições de políticas descritas podem ser [configuradas](app-protection-policies.md) para uma política de proteção de aplicações no painel **Definições** no portal do Azure.
@@ -31,7 +31,7 @@ Existem três categorias de definições de política: definições de proteçã
 > [!IMPORTANT]
 > O Portal da empresa do Intune é necessário no dispositivo para receber políticas de proteção de aplicações para dispositivos Android. Para obter mais informações, veja os [Requisitos das aplicações de acesso ao Portal da Empresa do Intune](end-user-mam-apps-android.md).
 
-##  <a name="data-protection"></a>Proteção de dados 
+## <a name="data-protection"></a>Proteção de dados 
 ### <a name="data-transfer"></a>Transferência de Dados
 | Definição | Como utilizar | Valor predefinido |
 |------|------|------|
@@ -63,11 +63,11 @@ Existem três categorias de definições de política: definições de proteçã
 |<ul><ui>**Nome do Browser não gerido** | Introduza o nome da aplicação para o navegador associado com o **ID de Browser não gerido**. Este nome será apresentado aos utilizadores se o navegador especificado não está instalado.  | **Em branco** |
 
 
-  ## <a name="data-transfer-exemptions"></a>Isenções de transferência de dados
+## <a name="data-transfer-exemptions"></a>Isenções de transferência de dados
 
   Existem algumas aplicações e serviços de plataforma isentos aos quais a política de proteção de aplicações do Intune poderá permitir a transferência de dados. Por exemplo, todas as aplicações geridas pelo Intune no Android têm de conseguir transferir dados de e para a Síntese de Voz Google, para que o texto do ecrã do seu dispositivo móvel possa ser lido em voz alta. Esta lista está sujeita a alterações e reflete as aplicações e serviços considerados úteis para produtividade segura.
 
-  ### <a name="full-exemptions"></a>Isenções completas
+### <a name="full-exemptions"></a>Isenções completas
 
   Estas aplicações e serviços têm permissão total para transferir dados de e para aplicações geridas pelo Intune.
 
@@ -84,7 +84,7 @@ Existem três categorias de definições de política: definições de proteçã
   | com.azure.authenticator | Aplicação Azure Authenticator, que é necessária para uma autenticação com êxito em muitos cenários. |
   | com.microsoft.windowsintune.companyportal | Intune Portal da Empresa|
 
-  ### <a name="conditional-exemptions"></a>Isenções condicionais
+### <a name="conditional-exemptions"></a>Isenções condicionais
   Estas aplicações e serviços só têm permissão para transferir dados de e para aplicações geridas pelo Intune em determinadas condições.
 
   |Nome da aplicação/serviço | Descrição | Condição de isenção|
@@ -96,7 +96,7 @@ Existem três categorias de definições de política: definições de proteçã
 
 Para obter mais informações, veja [Data transfer policy exceptions for apps](app-protection-policies-exception.md) (Exceções da política de transferência de dados).
 
-##  <a name="access-requirements"></a>Requisitos de acesso
+## <a name="access-requirements"></a>Requisitos de acesso
 
 | Definição | Como utilizar |  
 |------|------| 

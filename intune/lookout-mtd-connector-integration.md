@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0d146b211c42c20b1381b238311db6a10295ef4a
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: be2e9371288961d0afdf7ad6e8cfec8f734087f6
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044929"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67529968"
 ---
 # <a name="set-up-lookout-mobile-endpoint-security-integration-with-intune"></a>Configurar a integração do Lookout Mobile Endpoint Security com o Intune
 Com um ambiente que cumpra os [pré-requisitos](lookout-mobile-threat-defense-connector.md#prerequisites), pode integrar o Lookout Mobile Endpoint Security com o Intune. As informações neste artigo irão guiá-lo na configuração de integração e configurar definições importantes no Lookout para utilização com o Intune.  
@@ -40,7 +40,7 @@ Para ativar a integração de subscrição do Lookout Mobile Endpoint Security c
 - **ID de objeto de grupo do Azure AD** para o grupo com **completa** acesso à consola do Lookout Mobile Endpoint Security (MES).  
   Crie este grupo de utilizadores no Azure AD para os utilizadores que têm de conter *acesso total* para iniciar sessão para o **consola do Lookout**. Os utilizadores têm de ser membros deste grupo, ou o opcional *acesso restrito* grupo, para iniciar sessão na consola do Lookout. 
 
-- **ID de objeto de grupo do Azure AD** para o grupo com **restritos** acesso à consola do Lookout MES *(grupo opcional)*. 
+- **ID de objeto de grupo do Azure AD** para o grupo com **restritos** acesso à consola do Lookout MES *(grupo opcional)* . 
   Crie este grupo de utilizadores opcional no Azure AD para conter os utilizadores que não devem ter acesso a vários módulos relacionadas com a inscrição na consola do Lookout e a configuração. Em vez disso, estes utilizadores têm acesso só de leitura para o **política de segurança** módulo na consola do Lookout. Os utilizadores têm de ser membros deste grupo opcional, ou necessários *acesso total* grupo, para iniciar sessão na consola do Lookout.
 
  > [!TIP] 
