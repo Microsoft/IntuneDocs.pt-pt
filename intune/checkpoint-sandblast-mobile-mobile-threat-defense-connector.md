@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ef0c4f5fd3f8c92d1d78ed37946663a127df440f
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 7953fece6edad8a7fb3a0b46b1056c798c76c31e
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67530690"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67547081"
 ---
 # <a name="check-point-sandblast-mobile-threat-defense-connector-with-intune"></a>Conector de Defesa Contra Ameaças do Check Point SandBlast Mobile no Intune
 
@@ -45,11 +45,11 @@ Seguem-se alguns cenários comuns:
 
 Quando forem detetadas aplicações maliciosas, como software maligno, nos dispositivos, pode bloquear os dispositivos até a ameaça ser resolvida:
 
--   Ligar ao e-mail empresarial
+- Ligar ao e-mail empresarial
 
--   Sincronizar ficheiros empresariais com a aplicação OneDrive for Work
+- Sincronizar ficheiros empresariais com a aplicação OneDrive for Work
 
--   Aceder às aplicações da empresa
+- Aceder às aplicações da empresa
 
 **Bloquear quando as aplicações maliciosas forem detetadas:**
 
@@ -85,18 +85,18 @@ Detete ameaças como **Man-in-the-middle** na rede e impeça a sincronização
 
 ## <a name="supported-platforms"></a>Plataformas suportadas
 
--   **Android 4.1 e posterior**
+- **Android 4.1 e posterior**
 
--   **iOS 8 e posterior**
+- **iOS 8 e posterior**
 
 ## <a name="pre-requisites"></a>Pré-requisitos
 
--   Azure Active Directory Premium
+- Azure Active Directory Premium
 
--   Subscrição do Microsoft Intune
+- Subscrição do Microsoft Intune
 
--   Subscrição do Check Point SandBlast Mobile – Defesa Contra Ameaças
-    -   Veja o [site do Check Point SandBlast](https://www.checkpoint.com/) para obter mais informações.
+- Subscrição do Check Point SandBlast Mobile – Defesa Contra Ameaças
+    - Veja o [site do Check Point SandBlast](https://www.checkpoint.com/) para obter mais informações.
 
 ## <a name="next-steps"></a>Passos Seguintes
 

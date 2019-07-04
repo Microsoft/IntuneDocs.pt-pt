@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 361ef17b-1ee0-4879-b7b1-d678b0787f5a
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b490d5ff083d344a1b39d27a2298503bdfa1f130
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: bc785e7f714320d410d20e254125858f44131677
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044915"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548762"
 ---
 # <a name="manage-operating-system-versions-with-intune"></a>Gerir versões de sistemas operativos com o Intune
 Nas plataformas modernas de ambiente de trabalho e dispositivos móveis, são constantemente publicadas atualizações importantes, patches e novas versões. Tem controlos para gerir atualizações e patches totalmente no Windows, mas outras plataformas como Android e iOS precisam que os seus utilizadores finais participem no processo.  O Microsoft Intune tem as ferramentas para o ajudar a estruturar a gestão das versões do seu sistema operativo em diferentes plataformas.
@@ -77,7 +77,7 @@ Pode utilizar as funcionalidades do Intune descritas neste artigo para o ajudar 
 - **Passo 1**: Utilize restrições de inscrição para exigir a versão 2 do sistema operativo como a versão mínima para inscrever o dispositivo. Isto garante que os dispositivos dos novos utilizadores finais estão em conformidade na altura da inscrição.
 - **Passo 2a**: Utilize políticas de proteção de aplicação Intune para avisar os utilizadores quando a aplicação é aberta ou retoma esse 2 do sistema operativo é necessário.
 - **Passo 2b**: utilize as políticas de conformidade de dispositivos para exigir a versão 2 do sistema operativo como a versão mínima para o dispositivo estar em conformidade. Utilize **Ações** de não conformidade para permitir um período de tolerância de sete dias e para enviar aos utilizadores finais uma notificação por e-mail com a sua linha cronológica e requisitos.
-  -  Estas políticas informam os utilizadores de que existem dispositivos que precisam de ser atualizados, através de um e-mail, do Portal da Empresa do Intune e quando abrirem a aplicação (para aplicações com a política de proteção de aplicações ativada).
+  - Estas políticas informam os utilizadores de que existem dispositivos que precisam de ser atualizados, através de um e-mail, do Portal da Empresa do Intune e quando abrirem a aplicação (para aplicações com a política de proteção de aplicações ativada).
   - Pode criar um relatório de conformidade para identificar os utilizadores que não se encontram em conformidade. 
 - **Passo 3a**: Utilize políticas de proteção de aplicação Intune para impedir que os utilizadores quando uma aplicação é aberta ou retoma se o dispositivo não está em execução 2 do sistema operativo.
 - **Passo 3b**: utilize as políticas de conformidade de dispositivos para exigir a versão 2 do sistema operativo como a versão mínima para o dispositivo estar em conformidade.

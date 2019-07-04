@@ -18,12 +18,12 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a02a7b69245b9b6e7b8f62fdb9be8acb83d42981
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 8326693717ac96a0e9d32617e7d7080d50206ac6
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61494936"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545422"
 ---
 # <a name="an-existing-company-email-account-was-found"></a>Uma conta de e-mail da empresa existente foi encontrada
 
@@ -34,7 +34,7 @@ Poderá que tenha tido acesso de dispositivos móveis ao seu trabalho ou a conta
 
 Estes passos irão garantir que o seu dispositivo cumpre os requisitos de segurança de sua empresa e que as suas mensagens de e-mail permanecem seguras.
 
-1.  No seu dispositivo, aceda a **definições** e encontre as suas contas ligas. Num dispositivo iOS 11 +, por exemplo, seleccione **palavra-passe e contas de**.
+1. No seu dispositivo, aceda a **definições** e encontre as suas contas ligas. Num dispositivo iOS 11 +, por exemplo, seleccione **palavra-passe e contas de**.
  
 2. Selecione e remova a sua conta de e-mail de trabalho.
 

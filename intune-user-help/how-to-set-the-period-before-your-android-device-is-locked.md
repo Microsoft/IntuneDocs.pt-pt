@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 913e157e8b2f16376eccf8fc93af137792015eb9
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: ef8dbcda214e2c7cd260fe237e4b9cfd0b7ff326
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61497248"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546273"
 ---
 # <a name="how-to-set-the-amount-of-time-before-your-android-device-locks-its-screen"></a>Como definir o tempo antes de o seu dispositivo Android bloquear o ecrã
 
@@ -31,18 +31,18 @@ Para voltar a ter acesso ao seu trabalho, terá de definir o tempo limite para a
 
 ## <a name="native-non-samsung-knox-device"></a>Dispositivos nativos (não Samsung Knox)
 
-1.  Em **Definições**, no seu dispositivo, toque em **Segurança** &gt; **Bloquear Automaticamente** (esta opção aparece como **Bloquear telemóvel após** em alguns dispositivos).
+1. Em **Definições**, no seu dispositivo, toque em **Segurança** &gt; **Bloquear Automaticamente** (esta opção aparece como **Bloquear telemóvel após** em alguns dispositivos).
 
     Se a opção **Bloquear Automaticamente** (**Bloquear telemóvel após** em alguns dispositivos) não for apresentada, certifique-se de que definiu uma palavra-passe válida em **Definições** &gt; **Bloqueio de Ecrã** &gt; **Palavra-passe**.
 
-2.  Selecione o valor do tempo limite da palavra-passe.
+2. Selecione o valor do tempo limite da palavra-passe.
 
 ## <a name="samsung-knox-device"></a>Dispositivos Samsung Knox
 
-1.  Em **Definições**, no seu dispositivo, toque em **Bloqueio de ecrã e segurança** &gt; **Bloquear automaticamente**.
+1. Em **Definições**, no seu dispositivo, toque em **Bloqueio de ecrã e segurança** &gt; **Bloquear automaticamente**.
 
     Se a opção **Bloquear automaticamente** (**Bloquear telemóvel após** em alguns dispositivos) não for apresentada, confirme que definiu uma palavra-passe válida em **Definições** &gt; **Bloqueio de Ecrã** &gt; **Palavra-passe**.
 
-2.  Selecione um valor para o tempo limite da palavra-passe.
+2. Selecione um valor para o tempo limite da palavra-passe.
 
 Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

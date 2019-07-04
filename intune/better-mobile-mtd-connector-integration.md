@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2e803eb3d47d44c8c8f3cd1b699b5ca220aeb91f
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: a7072d7d3d24578e0f82ea21eb653906dfa30b4c
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049119"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546965"
 ---
 # <a name="integrate-better-mobile-with-intune"></a>Integrar o Better Mobile com o Intune
 
@@ -32,31 +32,31 @@ Conclua os seguintes passos para integrar a solução Better Mobile Threat Defen
 
 Antes de iniciar o processo de integração do Better Mobile com o Intune, certifique-se de que tem os seguintes elementos:
 
--   Subscrição do Microsoft Intune
+- Subscrição do Microsoft Intune
 
--   Credenciais de administrador do Azure Active Directory para conceder as seguintes permissões:
+- Credenciais de administrador do Azure Active Directory para conceder as seguintes permissões:
 
-    -   Iniciar sessão e ler o perfil de utilizador
+    - Iniciar sessão e ler o perfil de utilizador
 
-    -   Aceder ao diretório como o utilizador com sessão iniciada
+    - Aceder ao diretório como o utilizador com sessão iniciada
 
-    -   Ler dados do diretório
+    - Ler dados do diretório
 
-    -   Enviar informações do dispositivo para o Intune
+    - Enviar informações do dispositivo para o Intune
 
--   Credenciais de administrador para aceder à consola de administração do Better Mobile.
+- Credenciais de administrador para aceder à consola de administração do Better Mobile.
 
 ### <a name="better-mobile-app-authorization"></a>Autorização da aplicação Better Mobile
 
 O processo de autorização da aplicação Better Mobile consiste no seguinte:
 
--   Permitir que o serviço do Better Mobile transmita informações relacionadas com o estado de funcionamento do dispositivo ao Intune.
+- Permitir que o serviço do Better Mobile transmita informações relacionadas com o estado de funcionamento do dispositivo ao Intune.
 
--   O Better Mobile sincroniza com a associação do Grupo de Inscrição do Azure AD para preencher a respetiva base de dados do dispositivo.
+- O Better Mobile sincroniza com a associação do Grupo de Inscrição do Azure AD para preencher a respetiva base de dados do dispositivo.
 
--   Permitir que a consola de administração do Better Mobile utilize o Início de Sessão Único (SSO) do Azure AD.
+- Permitir que a consola de administração do Better Mobile utilize o Início de Sessão Único (SSO) do Azure AD.
 
--   Permitir que a aplicação Better Mobile inicie sessão através do SSO do Azure AD.
+- Permitir que a aplicação Better Mobile inicie sessão através do SSO do Azure AD.
 
 ## <a name="to-set-up-better-mobile-integration"></a>Para configurar a integração do Better Mobile
 
@@ -75,4 +75,4 @@ O processo de autorização da aplicação Better Mobile consiste no seguinte:
 
 ## <a name="next-steps"></a>Passos Seguintes
 
--   [Configurar Melhores Aplicações Cliente](mtd-apps-ios-app-configuration-policy-add-assign.md)
+- [Configurar Melhores Aplicações Cliente](mtd-apps-ios-app-configuration-policy-add-assign.md)

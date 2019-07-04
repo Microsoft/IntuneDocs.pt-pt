@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c19c02c8d4c9ece66d03b3510071bb90e7f35ad3
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: e9b32b7b7bc3bfa7735a7e4437e8238630e56884
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047523"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548764"
 ---
 # <a name="help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune"></a>Ajude a proteger os PCs Windows com o Endpoint Protection para o Microsoft Intune
 
@@ -46,15 +46,15 @@ Enquanto administrador de TI, uma das suas principais prioridades é manter os c
 
 Para mudar da sua aplicação de proteção de pontos finais atual para o Endpoint Protection do Microsoft Intune, faça o seguinte:
 
-1.  Deixe a sua aplicação de proteção de pontos finais atual em execução enquanto implementa o software de cliente Intune nesses computadores.
+1. Deixe a sua aplicação de proteção de pontos finais atual em execução enquanto implementa o software de cliente Intune nesses computadores.
 
-2.  Confirme que o Endpoint Protection do Microsoft Intune está instalado e que está a ajudar a proteger os computadores cliente.
+2. Confirme que o Endpoint Protection do Microsoft Intune está instalado e que está a ajudar a proteger os computadores cliente.
 
-3.  Remova o software de proteção de pontos finais de terceiros ao:
+3. Remova o software de proteção de pontos finais de terceiros ao:
 
-    -   Utilizar a distribuição de software Intune para implementar uma ferramenta de remoção de software fornecida pelo fabricante da aplicação de proteção de pontos finais de terceiros. Para mais informações, consulte [Implementar aplicações com o Microsoft Intune](apps-deploy.md).
+    - Utilizar a distribuição de software Intune para implementar uma ferramenta de remoção de software fornecida pelo fabricante da aplicação de proteção de pontos finais de terceiros. Para mais informações, consulte [Implementar aplicações com o Microsoft Intune](apps-deploy.md).
 
-    -   Remover a aplicação de proteção de pontos finais de terceiros manualmente.
+    - Remover a aplicação de proteção de pontos finais de terceiros manualmente.
 
 > [!NOTE]
 > O Intune não desinstalará automaticamente aplicações de proteção de pontos finais de terceiros.
@@ -62,9 +62,9 @@ Para mudar da sua aplicação de proteção de pontos finais atual para o Endpoi
 ## <a name="configure-microsoft-intune-endpoint-protection"></a>Configurar o Endpoint Protection do Microsoft Intune
 Utilize os seguintes passos para o ajudar a configurar o Endpoint Protection do Microsoft Intune.
 
-1.  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com/), escolha **Política** > **Adicionar Política**.
+1. Na [consola de administração do Microsoft Intune](https://manage.microsoft.com/), escolha **Política** > **Adicionar Política**.
 
-2.  Expanda a opção **Gestão de Computadores** e, em seguida, selecione **Definições do Agente do Microsoft Intune**. Selecione **Criar e Implementar uma Política Personalizada** para especificar uma política para as definições do Endpoint Protection. Em seguida, selecione o botão **Criar Política**.
+2. Expanda a opção **Gestão de Computadores** e, em seguida, selecione **Definições do Agente do Microsoft Intune**. Selecione **Criar e Implementar uma Política Personalizada** para especificar uma política para as definições do Endpoint Protection. Em seguida, selecione o botão **Criar Política**.
 
 Pode utilizar as definições recomendadas ou personalizar as mesmas. Se precisar de mais informações sobre como criar e implementar políticas, consulte o tópico [Tarefas de gestão comuns do PC Windows com o cliente do computador do Microsoft Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).
 
@@ -168,7 +168,7 @@ Pode monitorizar o estado de software maligno nos seus computadores ao utilizar 
   - **Computadores com software maligno que necessitam de seguimento** – clique na ligação para ver todos os computadores com problemas de software maligno não resolvidos, incluindo a ação de seguimento necessária para resolver o problema.
   - **Dispositivos não protegidos** – Clique na ligação para ver computadores não protegidos por software do proteção de pontos finais, devido à não instalação do software ou a um erro. Selecione um computador para ver mais detalhes.
   - **Dispositivos com outra aplicação de proteção de pontos finais em execução** – Clique na ligação para ver computadores com uma aplicação de proteção de pontos finais de terceiros em execução.
-- **Todo o Software Maligno** – apresenta uma lista de todo o software maligno ativo que se encontra nos seus computadores. Pode explorar esta lista para ver todos os computadores que são afetados por um software maligno específico ou pode selecionar uma das seguintes tarefas:
+- **Todo o software maligno** -apresenta uma lista de todas as ativas software maligno encontrado nos seus computadores. Pode explorar esta lista para ver todos os computadores que são afetados por um software maligno específico ou pode selecionar uma das seguintes tarefas:
   - **Ver Propriedades** – abre uma página com mais informações sobre o software maligno selecionado.
   - **Saber Mais Sobre Este Software Maligno** – Abre um tópico do Centro Microsoft de Proteção Contra Software Maligno com mais informações sobre o software maligno.
 

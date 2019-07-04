@@ -18,12 +18,12 @@ ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7b90edf1f2e380790e2c725ee00c03d525c9fa1e
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: e5e00e1f7d4f84f9bdc1d1a52b83095135479327
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61504048"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546155"
 ---
 # <a name="submit-errors-to-the-right-people-for-your-managed-macos-device"></a>Submeter os erros do seu dispositivo macOS gerido às pessoas certas
 
@@ -33,11 +33,11 @@ Por vezes, ocorrem erros sem explicação na aplicação Portal da Empresa. Se u
 
 Para enviar detalhes sobre um erro na aplicação Portal da Empresa:
 
--   Na mensagem de erro que recebe, clique em **Relatório**.
+- Na mensagem de erro que recebe, clique em **Relatório**.
 
--   Clique no menu **Ajuda** > **Guardar Relatório de Diagnóstico**. Selecione uma localização para guardar o ficheiro. Em seguida, envie por e-mail ou carregue este ficheiro para o responsável pelo suporte da sua empresa.
+- Clique no menu **Ajuda** > **Guardar Relatório de Diagnóstico**. Selecione uma localização para guardar o ficheiro. Em seguida, envie por e-mail ou carregue este ficheiro para o responsável pelo suporte da sua empresa.
 
--   Se a aplicação de e-mail estiver configurada, poderá enviar o relatório de diagnóstico ao aceder a **Ajuda** > **Enviar Relatório de Diagnóstico**. Depois de carregar os registos, clique em **Enviar detalhes por e-mail**.
+- Se a aplicação de e-mail estiver configurada, poderá enviar o relatório de diagnóstico ao aceder a **Ajuda** > **Enviar Relatório de Diagnóstico**. Depois de carregar os registos, clique em **Enviar detalhes por e-mail**.
 
 ## <a name="send-errors-to-the-company-portal-developers-for-macos-devices"></a>Enviar erros para os programadores do Portal da Empresa para dispositivos macOS
 
@@ -45,8 +45,8 @@ Por vezes, a aplicação Portal da Empresa poderá fechar inesperadamente. Os pr
 
 Para enviar registos para a Microsoft:
 
-1.  Abra a aplicação Portal da Empresa.
-2.  Clique no menu **Ajuda** > **Enviar Relatório de Diagnóstico**.  Depois de os registos serem carregados, receberá um ID do incidente. Copie e guarde o ID.
-3.  Envie <a href="mailto:IntuneCPiOSfeedback@microsoft.com?subject=My Company Portal App Closed Unexpectedly&body=Paste your incident ID and describe the incident here.">este modelo</a> por e-mail para a Microsoft.
+1. Abra a aplicação Portal da Empresa.
+2. Clique no menu **Ajuda** > **Enviar Relatório de Diagnóstico**.  Depois de os registos serem carregados, receberá um ID do incidente. Copie e guarde o ID.
+3. Envie <a href="mailto:IntuneCPiOSfeedback@microsoft.com?subject=My Company Portal App Closed Unexpectedly&body=Paste your incident ID and describe the incident here.">este modelo</a> por e-mail para a Microsoft.
 
 Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

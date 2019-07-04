@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c6065fda71688909dd7fcbc6ef1909e3d3ab36b8
-ms.sourcegitcommit: 6bba9f2ef4d1ec699f5713a4da4f960e7317f1cd
+ms.openlocfilehash: fdc7434616db6c06f56438fb6d8774ae3f2deca9
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67407123"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548438"
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>Adicionar e atribuir aplicações de MTD (Defesa Contra Ameaças para Dispositivos Móveis) com o Intune  
 
@@ -34,9 +34,9 @@ Pode utilizar o Intune para adicionar e implementar aplicações de defesa contr
 ## <a name="before-you-begin"></a>Antes de começar    
 Os passos abaixo têm de ser concluídos no [portal do Azure](https://portal.azure.com/). Verifique se está familiarizado com o processo de:
 
--   [Adicionar uma aplicação no Intune](apps-add.md).
--   [Adicionar uma política de configuração de aplicações iOS no Intune](https://docs.microsoft.com/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune).
--   [Atribuir uma aplicação com o Intune](https://docs.microsoft.com/intune/deploy-use/deploy-apps-in-microsoft-intune).
+- [Adicionar uma aplicação no Intune](apps-add.md).
+- [Adicionar uma política de configuração de aplicações iOS no Intune](https://docs.microsoft.com/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune).
+- [Atribuir uma aplicação com o Intune](https://docs.microsoft.com/intune/deploy-use/deploy-apps-in-microsoft-intune).
 
 > [!TIP]
 > O Portal da empresa do Intune funciona como o mediador em dispositivos Android, para que os usuários podem ter suas identidades verificadas pelo Azure AD.

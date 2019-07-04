@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9a5f28f01d0c8be6692deaf27391e52619fcdcab
-ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
+ms.openlocfilehash: 86aefbfc37db7929f9748d4783db319cf97d4545
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67512262"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548472"
 ---
 # <a name="configure-device-compliance-and-app-management-policies-when-migrating-to-microsoft-intune"></a>Configurar políticas de gestão de aplicações e de conformidade do dispositivo durante uma migração para o Microsoft Intune
 
@@ -30,13 +30,13 @@ O objetivo principal durante a migração para o Intune é ter todos os disposit
 
 Cada plataforma do dispositivo poderá oferecer definições diferentes, mas as políticas de dispositivos do Intune trabalham com cada plataforma do dispositivo ao proporcionar as seguintes capacidades de gestão de dispositivos móveis:
 
--   Regular o número de dispositivos que cada utilizador inscreve.
+- Regular o número de dispositivos que cada utilizador inscreve.
 
--   Gerir as definições dos dispositivos (por exemplo, a encriptação ao nível do dispositivo, o comprimento da palavra-passe, a utilização da câmara).
+- Gerir as definições dos dispositivos (por exemplo, a encriptação ao nível do dispositivo, o comprimento da palavra-passe, a utilização da câmara).
 
--   Disponibilizar aplicações, perfis de e-mail, perfis da VPN, etc.
+- Disponibilizar aplicações, perfis de e-mail, perfis da VPN, etc.
 
--   Avaliar os critérios ao nível do dispositivo das políticas de conformidade de segurança.
+- Avaliar os critérios ao nível do dispositivo das políticas de conformidade de segurança.
 
 > [!IMPORTANT]
 > As políticas de gestão de dispositivos não são atribuídas diretamente aos dispositivos ou utilizadores individuais, mas, em vez disso, são atribuídas a grupos de utilizadores. As políticas podem ser aplicadas diretamente a um grupo de utilizadores (e, portanto, também ao dispositivo do utilizador) ou podem ser aplicadas a um grupo de dispositivos (e, portanto, também aos membros do grupo).
@@ -61,9 +61,9 @@ Tem de criar um perfil de configuração de dispositivos para impor definições
 
 #### <a name="directly-import-ios-configuration-profiles-optional"></a>Importar perfis de configuração do iOS diretamente (opcional)
 
--   **Perfis de iOS do Apple Configurator (iOS 7.1 e posterior):** Se a sua solução MDM existente utilizar perfis do Apple Configurator (ficheiros. mobileconfig), Intune poderá importá-los diretamente como políticas de configuração personalizada.
+- **Perfis de iOS do Apple Configurator (iOS 7.1 e posterior):** Se a sua solução MDM existente utilizar perfis do Apple Configurator (ficheiros. mobileconfig), Intune poderá importá-los diretamente como políticas de configuração personalizada.
 
--   **políticas de configuração da aplicação móvel de iOS:** Se a sua solução MDM existente utilizar políticas de configuração da aplicação móvel de iOS, Intune pode importá-los diretamente, desde que cumpram o formato XML especificado pela Apple para listas de propriedades.
+- **políticas de configuração da aplicação móvel de iOS:** Se a sua solução MDM existente utilizar políticas de configuração da aplicação móvel de iOS, Intune pode importá-los diretamente, desde que cumpram o formato XML especificado pela Apple para listas de propriedades.
 
 - Saiba como adicionar uma política personalizada para [iOS](custom-settings-ios.md).
 
@@ -71,25 +71,25 @@ Tem de criar um perfil de configuração de dispositivos para impor definições
 
 As políticas de conformidade do dispositivo avaliam as definições dedicadas à segurança e disponibilizam relatórios que mostram se os dispositivos estão ou não em conformidade com os padrões empresariais. Tais definições incluem:
 
--   Comprimento do PIN
+- Comprimento do PIN
 
--   Estado Jailbreak
+- Estado Jailbreak
 
--   Versão do SO
+- Versão do SO
 
 Veja recursos adicionais para as definições de conformidade do dispositivo:
 
--   Saiba mais sobre as [políticas de conformidade do dispositivo](device-compliance.md).
+- Saiba mais sobre as [políticas de conformidade do dispositivo](device-compliance.md).
 
--   Saiba [como criar uma política de conformidade do dispositivo](device-compliance-get-started.md).
+- Saiba [como criar uma política de conformidade do dispositivo](device-compliance-get-started.md).
 
 ### <a name="task-5-publish-and-deploy-apps"></a>Tarefa 5: Publicar e implementar aplicações
 
 Ao utilizar o Intune MDM, pode fornecer aplicações ao exigir a sua instalação automática ou ao disponibilizá-las no Portal da Empresa.
 
--   [Como adicionar aplicações](apps-add.md).
+- [Como adicionar aplicações](apps-add.md).
 
--   [Como implementar aplicações](apps-deploy.md).
+- [Como implementar aplicações](apps-deploy.md).
 
 ### <a name="task-6-enable-device-enrollment"></a>Tarefa 6: Ativar a inscrição de dispositivos
 

@@ -18,12 +18,12 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b39cc879c9e1232335c38e8d95c0861a12662c6a
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 4784bcb706dd8eef395763729e04503682197f78
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61497962"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545272"
 ---
 # <a name="how-to-protect-your-windows-device-using-encryption"></a>Como proteger o seu dispositivo Windows com encriptação
 
@@ -37,8 +37,8 @@ Se tiver um telemóvel Windows inscrito, este será encriptado automaticamente, 
 
 Se tiver um computador, as instruções seguintes descrevem como encriptá-lo.
 
-1.  Procure e inicie a aplicação **Gerir o BitLocker**.
+1. Procure e inicie a aplicação **Gerir o BitLocker**.
 
-2.  Selecione **Ativar o BitLocker** e, em seguida, siga as instruções para encriptar cada uma das suas unidades.
+2. Selecione **Ativar o BitLocker** e, em seguida, siga as instruções para encriptar cada uma das suas unidades.
 
 Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto, consulte o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

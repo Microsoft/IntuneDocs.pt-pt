@@ -18,32 +18,32 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1119c9602d2577f8041ad528d012adf9652dc641
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 5ebf8d43bd18629d38be24929b3df5c12a7e244b
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61505901"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546536"
 ---
 # <a name="using-the-intune-company-portal-website"></a>Utilizar o Site do Portal da Empresa do Intune
 Utilize o [site do Portal da Empresa](https://portal.manage.microsoft.com) para ver, editar, adicionar e remover os seus dispositivos geridos.
 
 No site do Portal da Empresa, pode efetuar qualquer uma das seguintes ações:
 
--   [Mudar o nome do seu dispositivo](rename-your-device-cpwebsite.md)
+- [Mudar o nome do seu dispositivo](rename-your-device-cpwebsite.md)
 
--   [Remover o seu dispositivo](remove-your-device-cpwebsite.md)
+- [Remover o seu dispositivo](remove-your-device-cpwebsite.md)
 
--   [Repor o seu dispositivo](reset-erase-your-device-cpwebsite.md)
+- [Repor o seu dispositivo](reset-erase-your-device-cpwebsite.md)
 
--   [Repor o código de acesso do seu dispositivo](reset-your-passcode-cpwebsite.md)
+- [Repor o código de acesso do seu dispositivo](reset-your-passcode-cpwebsite.md)
 
--   [Bloquear remotamente um dispositivo](remote-lock-your-device-cpwebsite.md)
+- [Bloquear remotamente um dispositivo](remote-lock-your-device-cpwebsite.md)
 
--   Localizar as informações de contacto do suporte da empresa, se as tiver configurado
+- Localizar as informações de contacto do suporte da empresa, se as tiver configurado
 
--   Verificar o estado de conformidade
+- Verificar o estado de conformidade
 
--   Gerir remotamente um PC
+- Gerir remotamente um PC
 
 Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2f638a8b3816e775c043077a7ac31b3320496744
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 9fd99c0b42316a4425828cfa875f12d75dd86489
+ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528401"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67558547"
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>Obter dados a partir da API do Armazém de Dados do Intune com um cliente REST
 
@@ -43,10 +43,10 @@ Crie uma aplicação nativa no Azure. Esta aplicação nativa é a aplicação c
 1. Inicie sessão no portal do Azure do seu inquilino. Selecione **Azure Active Directory** > **Registos das Aplicações** para abrir o painel **Registos das aplicações**.
 2. Selecione **Novo registo de aplicação**.
 3. Escreva os detalhes da aplicação.
-    1.  Escreva um nome amigável, como Cliente do Armazém de Dados do Intune, em **Nome**.
-    2.  Selecione **Nativa** no **Tipo de aplicação**.
-    3.  Escreva um URL em **URL de início de sessão**. O URL de início de sessão dependerá do cenário específico. No entanto, se pensa utilizar o Postman, escreva `https://www.getpostman.com/oauth2/callback`. Irá utilizar a chamada de retorno do passo de autenticação de cliente ao autenticar no Azure AD.
-4.  Selecione **Criar**.
+    1. Escreva um nome amigável, como Cliente do Armazém de Dados do Intune, em **Nome**.
+    2. Selecione **Nativa** no **Tipo de aplicação**.
+    3. Escreva um URL em **URL de início de sessão**. O URL de início de sessão dependerá do cenário específico. No entanto, se pensa utilizar o Postman, escreva `https://www.getpostman.com/oauth2/callback`. Irá utilizar a chamada de retorno do passo de autenticação de cliente ao autenticar no Azure AD.
+4. Selecione **Criar**.
 
      ![Aplicação de cliente do armazém de dados do Intune](./media/reports-get_rest_data_client_overview.png)
 
@@ -56,21 +56,21 @@ Crie uma aplicação nativa no Azure. Esta aplicação nativa é a aplicação c
 
 Agora tem uma aplicação definida no Azure. Conceda acesso à API do Microsoft Intune a partir da aplicação nativa.
 
-1.  Selecione a aplicação nativa. Atribuiu um nome à aplicação, como **Cliente do Armazém de Dados do Intune**.
-2.  Selecione **Permissões obrigatórias** a partir do painel **Definições**
-3.  Selecione **Adicionar** no painel **Permissões obrigatórias**.
-4.  Selecione **Selecionar uma API**.
-5.  Procure o nome da aplicação Web. É denominada **API do Microsoft Intune**.
-6.  Selecione a aplicação na lista.
-7.  Selecione **Selecionar**.
-8.  Selecione a caixa **Permissões Delegadas** para adicionar a opção **Obter informações do armazém de dados do Microsoft Intune**.
+1. Selecione a aplicação nativa. Atribuiu um nome à aplicação, como **Cliente do Armazém de Dados do Intune**.
+2. Selecione **Permissões obrigatórias** a partir do painel **Definições**
+3. Selecione **Adicionar** no painel **Permissões obrigatórias**.
+4. Selecione **Selecionar uma API**.
+5. Procure o nome da aplicação Web. É denominada **API do Microsoft Intune**.
+6. Selecione a aplicação na lista.
+7. Selecione **Selecionar**.
+8. Selecione a caixa **Permissões Delegadas** para adicionar a opção **Obter informações do armazém de dados do Microsoft Intune**.
 
     ![Ativar o acesso – API do Microsoft Intune](./media/reports-get_rest_data_client_access.png)
 
-9.  Selecione **Selecionar**.
-10.  Selecione **Done** (Concluído).
-11.  Opcionalmente, selecione **Conceder Permissões** no painel Permissões obrigatórias. Esta ação irá conceder acesso a todas as contas no diretório atual. Esta ação irá impedir a apresentação da caixa de diálogo de consentimento para cada utilizador no inquilino. Para obter mais informações, veja [Integrating applications with Azure Active Directory (Integrar aplicações com o Azure Active Directory)](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications).
-12.  Selecione **Sim**.
+9. Selecione **Selecionar**.
+10. Selecione **Done** (Concluído).
+11. Opcionalmente, selecione **Conceder Permissões** no painel Permissões obrigatórias. Esta ação irá conceder acesso a todas as contas no diretório atual. Esta ação irá impedir a apresentação da caixa de diálogo de consentimento para cada utilizador no inquilino. Para obter mais informações, veja [Integrating applications with Azure Active Directory (Integrar aplicações com o Azure Active Directory)](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications).
+12. Selecione **Sim**.
 
 ## <a name="get-data-from-the-microsoft-intune-api-with-postman"></a>Obter dados a partir da API do Microsoft Intune com o Postman
 

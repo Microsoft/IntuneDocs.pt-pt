@@ -17,24 +17,24 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 059f39a52b1dbc6e5f7a014741c0657a2ba8bc10
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 5a8d16e058afbedfd1a343560b3727d33776da45
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045348"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67547877"
 ---
 # <a name="reference-for-mobile-app-management-mam-entities"></a>Referência para as entidades de gestão de aplicações móveis (MAM)
 
 A categoria **Mobile App Management** contém entidades para aplicações móveis como:
 
-  -  Aplicações
-  -  de Instâncias
-  -  Estado de entrada
-  -  Estado de funcionamento
-  -  Estado de política
-  -  Estado de inscrição
-  -  Tipos de plataforma
+  - Aplicações
+  - de Instâncias
+  - Estado de entrada
+  - Estado de funcionamento
+  - Estado de política
+  - Estado de inscrição
+  - Tipos de plataforma
 
 ## <a name="mamapplication"></a>MamApplication
 
@@ -137,6 +137,6 @@ A entidade **MamPlatform** lista os nomes e tipos de plataformas em que uma apli
 |----------------------------|-----------------------------------------------------------------------------------|---------------------------------------------------------|
 |        PlatformKey         |     Identificador exclusivo da plataforma no armazém de dados – chave de substituição.      |                           123                           |
 |          Plataforma          | Identificador exclusivo da plataforma, semelhante a PlatformKey, mas é uma chave natural. |                           123                           |
-|        PlatformName        |                                   Nome da plataforma                                   | Não disponível <br>Nenhuma <br>Windows <br>IOS <br>Android. |
+|        PlatformName        |                                   Nome da plataforma                                   | Não disponível <br>Nenhum <br>Windows <br>IOS <br>Android. |
 | RowLastModifiedDateTimeUtc | Data e hora em UTC em que esta plataforma foi modificada pela última vez no armazém de dados.  |                 11/23/2016 12:00:00 AM                  |
 

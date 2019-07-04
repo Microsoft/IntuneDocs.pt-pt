@@ -17,24 +17,24 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 64349d2e4c681bf0fac8cf231085cc63e42ffc62
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c654b8e05cabf132324e8dafe70e5991a67bd516
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041468"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548333"
 ---
 # <a name="develop-a-support-plan"></a>Desenvolver um plano de suporte
 
 Ter um plano de suporte do Intune pode ajudar a identificar e resolver problemas relacionados com o Intune de forma mais eficiente. Isto, por sua vez, melhora a experiência global dos seus utilizadores no Intune. Eis algumas questões a ter em consideração ao desenvolver o seu plano de suporte do Intune:
 
--   Que equipas serão responsáveis por fornecer o suporte do Intune?
+- Que equipas serão responsáveis por fornecer o suporte do Intune?
 
--   Que processo será utilizado para fornecer suporte do Intune?
+- Que processo será utilizado para fornecer suporte do Intune?
 
--   Como prevê disponibilizar formação sobre o suporte do Intune?
+- Como prevê disponibilizar formação sobre o suporte do Intune?
 
--   Quais são as oportunidades para envolver a equipa de suporte no início do processo de implementação do Intune?
+- Quais são as oportunidades para envolver a equipa de suporte no início do processo de implementação do Intune?
 
 Vamos então rever cada área de forma mais detalhada.
 
@@ -50,23 +50,23 @@ Saiba mais sobre o [suporte do Intune](/intune/get-support).
 
 Nas fases de implementação de produção iniciais, poderá ter as três camadas a participar numa bridge ou chamada Skype. Veja a seguir um exemplo de como uma organização pode implementar os seus fluxos de trabalho de suporte técnico ou suporte de TI:
 
-1.  O utilizador final entra em contacto com a camada 1 de suporte técnico ou suporte de TI relativamente a um problema de inscrição.
+1. O utilizador final entra em contacto com a camada 1 de suporte técnico ou suporte de TI relativamente a um problema de inscrição.
 
-2.  A camada 1 de suporte técnico ou suporte de TI não consegue determinar a causa de origem e escala o problema para a camada 2.
+2. A camada 1 de suporte técnico ou suporte de TI não consegue determinar a causa de origem e escala o problema para a camada 2.
 
-3.  A camada 2 de suporte técnico ou suporte de TI investiga a questão, mas não consegue resolver o problema e escala-o para a camada 3. Para tal, a camada 2 fornece à camada 3 informações adicionais para ajudar a investigação.
+3. A camada 2 de suporte técnico ou suporte de TI investiga a questão, mas não consegue resolver o problema e escala-o para a camada 3. Para tal, a camada 2 fornece à camada 3 informações adicionais para ajudar a investigação.
 
-4.  A camada 3 de suporte técnico ou suporte de TI investiga mais detalhadamente, determina a causa de origem e comunica a resolução às camadas 2 e 1.
+4. A camada 3 de suporte técnico ou suporte de TI investiga mais detalhadamente, determina a causa de origem e comunica a resolução às camadas 2 e 1.
 
-5.  Em seguida, a camada 1 de suporte técnico/suporte de TI contacta o cliente e soluciona o problema dele.
+5. Em seguida, a camada 1 de suporte técnico/suporte de TI contacta o cliente e soluciona o problema dele.
 
 Este tipo de abordagem, especialmente nas fases iniciais da implementação do Intune, tem muitas vantagens adicionais, incluindo:
 
--   Ajuda em termos de aprendizagem e lançamento da tecnologia.
+- Ajuda em termos de aprendizagem e lançamento da tecnologia.
 
--   Identificação e resolução rápida dos problemas.
+- Identificação e resolução rápida dos problemas.
 
--   Melhoria da experiência geral de utilizador.
+- Melhoria da experiência geral de utilizador.
 
 ## <a name="how-you-plan-to-provide-intune-support-training"></a>Como prevê disponibilizar formação sobre o suporte do Intune?
 
@@ -74,15 +74,15 @@ Este tipo de abordagem, especialmente nas fases iniciais da implementação do I
 
 Abaixo encontra-se um exemplo de conteúdos programáticos de uma formação sobre suporte do Intune.
 
--   Revisão de um plano de suporte do Intune
+- Revisão de um plano de suporte do Intune
 
--   Descrição geral do Intune
+- Descrição geral do Intune
 
--   Resolução de problemas comuns
+- Resolução de problemas comuns
 
--   Ferramentas e recursos
+- Ferramentas e recursos
 
--   Perguntas e Respostas
+- Perguntas e Respostas
 
 A [documentação do Intune](https://docs.microsoft.com/intune/) fornece uma descrição geral do Intune, descrições das funcionalidades detalhadas e algumas informações sobre a resolução de problemas. O [fórum do Intune](https://social.technet.microsoft.com/Forums/home) é um recurso baseado na comunidade de perguntas e tópicos não abrangidos na documentação do Intune.
 

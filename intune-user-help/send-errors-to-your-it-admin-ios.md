@@ -18,12 +18,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aa48aae8f35ad55e3e836016262056268fd9cd89
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 7a6b2e04e40aa12e791e34f3899686d5f5661df2
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61490975"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546699"
 ---
 # <a name="send-errors-to-your-company-support-for-issues-with-your-ios-device"></a>Enviar erros ao suporte da empresa relativos a problemas com o dispositivo iOS
 Por vezes, pode ser apresentado um erro ao utilizar a aplicação Portal da Empresa no seu dispositivo iOS. Se isto ocorrer, pode enviar por e-mail os detalhes sobre o erro para o responsável pelo suporte da sua empresa. Estes detalhes irão fornecer o contexto necessário para resolver o problema.
@@ -32,10 +32,10 @@ Ao carregar os registos na aplicação Portal da Empresa, estes são primeiro en
 
 Se obtiver erros no dispositivo iOS ao utilizar a aplicação Portal da Empresa, pode enviar informações para ajudar o suporte da empresa a resolver o problema. Pode enviar informações de erro de formas diferentes:
 
--   Nas mensagens de alerta do erro, toque em **Relatório**.
+- Nas mensagens de alerta do erro, toque em **Relatório**.
 
--   No separador **Mais** da aplicação Portal da Empresa, toque em **Obter Ajuda**.
+- No separador **Mais** da aplicação Portal da Empresa, toque em **Obter Ajuda**.
 
--   Na aplicação Portal da Empresa, abane o dispositivo e, quando o alerta de diagnóstico for apresentado, toque em **Enviar Relatório de Diagnóstico**. Se o alerta não aparecer quando abanar o dispositivo, abra **Definições** > **Portal da Empresa** e certifique-se de que a opção **Gesto de Abanar** está ativada.
+- Na aplicação Portal da Empresa, abane o dispositivo e, quando o alerta de diagnóstico for apresentado, toque em **Enviar Relatório de Diagnóstico**. Se o alerta não aparecer quando abanar o dispositivo, abra **Definições** > **Portal da Empresa** e certifique-se de que a opção **Gesto de Abanar** está ativada.
 
 Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 384b940182b86e769868e2fabce3a9674e695094
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: b34143e17245de61026a536cc0b8c5e8a7f80107
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528276"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549405"
 ---
 # <a name="intune-migration-guide"></a>Guia de migração do Intune
 
@@ -35,39 +35,39 @@ Este guia irá orientá-lo ao longo dos vários detalhes relacionados com a migr
 
 Este guia divide o processo de migração em duas fases, que incluem tarefas, estratégias e orientações táticas que irão ajudar a orientá-lo ao longo do processo completo de migração para o Intune MDM.
 
--   [Fase 1: Preparar o Intune para gestão de dispositivos móveis](migration-guide-prepare.md)
+- [Fase 1: Preparar o Intune para gestão de dispositivos móveis](migration-guide-prepare.md)
 
-    -   [Avaliar os requisitos de migração da MDM](migration-guide-prepare.md#assess-mdm-requirements)
+    - [Avaliar os requisitos de migração da MDM](migration-guide-prepare.md#assess-mdm-requirements)
 
-    -   [Configuração básica](migration-guide-setup.md)
+    - [Configuração básica](migration-guide-setup.md)
 
-    -   [Configurar políticas de gestão de aplicações e dispositivos](migration-guide-configure-policies.md)
+    - [Configurar políticas de gestão de aplicações e dispositivos](migration-guide-configure-policies.md)
 
-    -   [Configurar políticas de proteção de aplicações](migration-guide-app-protection-policies.md)
+    - [Configurar políticas de proteção de aplicações](migration-guide-app-protection-policies.md)
 
-    -   [Considerações especiais sobre a migração](migration-guide-considerations.md)
+    - [Considerações especiais sobre a migração](migration-guide-considerations.md)
 
--   [Fase 2: Campanha de migração](migration-guide-campaign.md)
+- [Fase 2: Campanha de migração](migration-guide-campaign.md)
 
-    -   [Plano de comunicação](migration-guide-communication-plan.md)
+    - [Plano de comunicação](migration-guide-communication-plan.md)
 
-    -   [Promover a adoção com acesso condicional](migration-guide-drive-adoption.md)
+    - [Promover a adoção com acesso condicional](migration-guide-drive-adoption.md)
 
-    -   [Ciclo de migração típico](migration-guide-cycle.md)
-        -   [Monitorização da migração](migration-guide-cycle.md#monitoring-migration)
-        -   [Pós-migração](migration-guide-cycle.md#post-migration)
+    - [Ciclo de migração típico](migration-guide-cycle.md)
+        - [Monitorização da migração](migration-guide-cycle.md#monitoring-migration)
+        - [Pós-migração](migration-guide-cycle.md#post-migration)
 
 ## <a name="assumptions"></a>Pressupostos
 
--   Já avaliou o Intune num ambiente de prova de conceito (PoC) e decidiu utilizá-lo como a solução de MDM na sua organização.
+- Já avaliou o Intune num ambiente de prova de conceito (PoC) e decidiu utilizá-lo como a solução de MDM na sua organização.
 
--   Já se familiarizou com o Intune e as respetivas políticas.
+- Já se familiarizou com o Intune e as respetivas políticas.
 
 ## <a name="before-you-begin"></a>Antes de começar
 
 É importante reconhecer que a nova implementação do Intune poderá ser diferente da implementação da MDM antiga. Ao contrário dos serviços de MDM tradicionais, o Intune centra-se no controlo de acesso condicionado por identidade e, por isso, não precisa de um dispositivo de proxy de rede para controlar o acesso a dados empresariais a partir de dispositivos móveis fora perímetro da rede da sua organização. A Microsoft oferece soluções para proteger os serviços de dados na própria cloud através de um conjunto de aplicações de serviços cloud profundamente integrados, coletivamente designado como a oferta Enterprise Client + Security.
 
--   Consulte as [formas comuns de utilizar o Intune](common-scenarios.md).
+- Consulte as [formas comuns de utilizar o Intune](common-scenarios.md).
 
 ## <a name="next-steps"></a>Passos Seguintes
 

@@ -18,12 +18,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 945e597556c7d0c43000ccf659b7b6e088661cff
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: f2cd69725ad10c08f7c137f4444cce831160dd88
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528953"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546793"
 ---
 # <a name="how-to-reset-your-device-passcode-from-the-company-portal-website"></a>Como repor o código de acesso do dispositivo a partir do site do Portal da Empresa
 
@@ -36,7 +36,7 @@ Se estiver a utilizar um dispositivo pertencente à empresa, poderá não ser ap
 
 ## <a name="reset-your-passcode"></a>Repor o código de acesso
 
-1.  Abra o [site do Portal da Empresa](https://portal.manage.microsoft.com) e selecione o botão __Menu__ > __Dispositivos__.  
+1. Abra o [site do Portal da Empresa](https://portal.manage.microsoft.com) e selecione o botão __Menu__ > __Dispositivos__.  
 
 2. Selecione o dispositivo que necessita de uma reposição do código de acesso.  
 

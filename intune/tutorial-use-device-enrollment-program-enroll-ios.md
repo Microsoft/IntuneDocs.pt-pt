@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: ''
 Customer intent: As an Intune admin, I want to set up the Apple's corporate device enrollment features so that corporate devices can automatically enroll in Intune.
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: faceee883194dbbdcec83f282806035ffc0432d1
-ms.sourcegitcommit: 0f771585d3556c0af14500428d5c4c13c89b9b05
+ms.openlocfilehash: 1fda4268e66703c8bd2132c9af22fed52f1791b1
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66174175"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548962"
 ---
 # <a name="tutorial-use-apples-corporate-device-enrollment-features-in-apple-business-manager-abm-to-enroll-ios-devices-in-intune"></a>Tutorial: Utilizar funcionalidades de inscrição de dispositivos empresariais da Apple no Gestor de negócios da Apple (ABM) para inscrever dispositivos iOS no Intune
 As funcionalidades de inscrição de dispositivos no Gestor de negócios do Apple simplifica a inscrição de dispositivos. O Intune também suporta mais antigo portal de programa de inscrição de dispositivos (DEP) da Apple, mas é recomendável que comece do zero com o Gestor de negócios da Apple. Com o Microsoft Intune e a inscrição de dispositivos empresariais da Apple, os dispositivos são inscritos automaticamente em segurança na primeira vez que o usuário ativa o dispositivo. Portanto pode enviar dispositivos para muitos usuários sem ter de configurar individualmente cada dispositivo. 
@@ -53,7 +53,7 @@ Utilize o portal do DEP ou do ABM para criar um token de inscrição de disposit
 
 4. Selecione **Criar um token para o Programa de Registo de Aparelho da Apple** para abrir o portal Programa de Implementação da Apple e inicie sessão com o Apple ID da sua empresa. Pode utilizar este Apple ID para renovar o seu token DEP.
 
-5.  No [portal dos Programas de Implementação](https://deploy.apple.com) da Apple, selecione **Começar** em **Programa de Registo de Aparelho**. O processo pode ser ligeiramente diferente do que os seguintes passos na [gerente de negócios de Apple](https://business.apple.com).
+5. No [portal dos Programas de Implementação](https://deploy.apple.com) da Apple, selecione **Começar** em **Programa de Registo de Aparelho**. O processo pode ser ligeiramente diferente do que os seguintes passos na [gerente de negócios de Apple](https://business.apple.com).
 
 4. Na página **Gerir Servidores**, selecione **Adicionar Servidor MDM**.
 

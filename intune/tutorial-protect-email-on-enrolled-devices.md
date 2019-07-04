@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a7ab0ecd2802e68dbac32b757e472a74e697da13
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 91c2ab71cb393bdf885c947c8f3cd93a5bb196c3
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67530738"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548035"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>Tutorial: Proteger o e-mail do Exchange Online em dispositivos geridos
 Saiba mais sobre como utilizar políticas de conformidade de dispositivo com acesso condicional para se certificar de que dispositivos iOS podem a aceder ao e-mail do Exchange Online apenas se que sejam geridos pelo Intune e utilizar uma aplicação de e-mail de aprovação. 
@@ -53,7 +53,7 @@ Crie uma política de conformidade de dispositivos do Intune para definir as con
 4. Em **Plataforma**, selecione **iOS**. 
 5. Selecione **Definições** > **E-mail**. 
      
-    1.  Junto a **Exigir que os dispositivos móveis tenham um perfil de e-mail gerido**, selecione **Exigir**.
+    1. Junto a **Exigir que os dispositivos móveis tenham um perfil de e-mail gerido**, selecione **Exigir**.
     2. Selecione **OK**.
 
     ![Definir a política de conformidade de e-mail para exigir um perfil de e-mail gerido](media/tutorial-protect-email-on-enrolled-devices/ios-compliance-policy-email.png)
@@ -77,7 +77,7 @@ Crie uma política de conformidade de dispositivos do Intune para definir as con
 ## <a name="create-the-conditional-access-policy"></a>Criar a política de acesso condicional
 Agora, vamos criar uma política de acesso condicional que exige todas as plataformas de dispositivos a inscrever no Intune e estar em conformidade com a nossa política de conformidade do Intune antes de poderem aceder ao Exchange Online. Também vamos exigir a aplicação Outlook para aceder ao e-mail. Políticas de acesso condicional podem ser configuradas no portal do Azure AD ou o portal do Intune. Uma vez que já estamos no portal do Intune, vamos criar a política aqui.
 1. No Intune, selecione **acesso condicional** > **políticas** > **nova política**.
-1.  Em **Nome**, introduza **Política de teste para o e-mail do Office 365**. 
+1. Em **Nome**, introduza **Política de teste para o e-mail do Office 365**. 
 3. Em **Atribuições**, selecione **Utilizadores e grupos**. No separador **Incluir**, selecione **Todos os utilizadores** e, em seguida, selecione **Concluído**.
 
 4. Em **Atribuições**, selecione **Aplicações na Cloud**. Uma vez que queremos proteger o e-mail do Office 365 Exchange Online, vamos selecioná-lo ao seguir estes passos:

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4d838d0cd0d0f92cb344592d18d9e04e18d7e456
-ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
+ms.openlocfilehash: f182d356c151c569b9cf49adfe2f2c0cc34f1a54
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66819736"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548912"
 ---
 # <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>Como utilizar o Azure AD para aceder às APIs do Intune no Microsoft Graph
 
@@ -61,23 +61,23 @@ Para saber mais, veja:
 
 Para registar uma aplicação para utilizar a API do Microsoft Graph:
 
-1.  Inicie sessão no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) utilizando credenciais administrativas.
+1. Inicie sessão no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) utilizando credenciais administrativas.
 
     Conforme adequado, pode utilizar:
     - A conta de administrador de inquilino.
     - Uma conta de utilizador inquilino com a definição **Os utilizadores podem registar aplicações** ativada.
 
-2.  No menu, escolha **Azure Active Directory** &gt; **Registos de Aplicações**.
+2. No menu, escolha **Azure Active Directory** &gt; **Registos de Aplicações**.
 
     <img src="./media/azure-ad-app-reg.png" width="157" height="170" alt="The App registrations menu command" />
 
-3.  Escolha **Novo registo de aplicação** para criar uma nova aplicação ou escolha uma aplicação existente.  (Se escolher uma aplicação existente, avance o próximo passo.)
+3. Escolha **Novo registo de aplicação** para criar uma nova aplicação ou escolha uma aplicação existente.  (Se escolher uma aplicação existente, avance o próximo passo.)
 
-4.  No painel **Criar**, especifique o seguinte:
+4. No painel **Criar**, especifique o seguinte:
 
-    1.  Um **Nome** para a aplicação (apresentado quando os utilizadores iniciam sessão).
+    1. Um **Nome** para a aplicação (apresentado quando os utilizadores iniciam sessão).
 
-    2.  Os valores **Tipo de aplicação** e **URI de Redirecionamento**.
+    2. Os valores **Tipo de aplicação** e **URI de Redirecionamento**.
 
         Estes variam de acordo com os seus requisitos. Por exemplo, se estiver a utilizar uma [Biblioteca de Autenticação](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) (ADAL) do Azure AD, defina o **Tipo de Aplicação** como `Native` e o **URI de Redirecionamento** como `urn:ietf:wg:oauth:2.0:oob`.
 
@@ -85,19 +85,19 @@ Para registar uma aplicação para utilizar a API do Microsoft Graph:
 
         Para saber mais, consulte [Cenários de Autenticação do Azure AD](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios).
 
-5.  No painel da aplicação:
+5. No painel da aplicação:
 
-    1.  Tenha em conta o valor **ID da Aplicação**.
+    1. Tenha em conta o valor **ID da Aplicação**.
 
-    2.  Escolha **Definições** &gt; **Acesso à API** &gt; **Permissões necessárias**.
+    2. Escolha **Definições** &gt; **Acesso à API** &gt; **Permissões necessárias**.
 
     <img src="media/azure-ad-req-perm.png" width="483" height="186" alt="The Required permissions setting" />
 
-6.  No painel **Permissões Necessárias**, escolha **Adicionar** &gt; **Adicionar acesso à API** &gt; **Selecionar uma API**.
+6. No painel **Permissões Necessárias**, escolha **Adicionar** &gt; **Adicionar acesso à API** &gt; **Selecionar uma API**.
 
     <img src="media/azure-ad-add-graph.png" width="436" height="140" alt="The Microsoft Graph setting" />
 
-7.  No painel **Selecionar uma API**, escolha **Microsoft Graph** &gt; **Selecionar**.  O painel **Ativar acesso** é apresentado e indica os âmbitos de permissão disponíveis para a sua aplicação.
+7. No painel **Selecionar uma API**, escolha **Microsoft Graph** &gt; **Selecionar**.  O painel **Ativar acesso** é apresentado e indica os âmbitos de permissão disponíveis para a sua aplicação.
 
     <img src="media/azure-ad-perm-scopes.png" width="489" height="248" alt="Intune Graph API permission scopes" />
 
@@ -334,28 +334,28 @@ Caso tal aconteça, verifique se:
 
 Este exemplo mostra como utilizar o C# para recuperar uma lista de dispositivos associados à sua conta do Intune.
 
-1.  Inicie o Visual Studio e, em seguida, crie um novo projeto de aplicação da Consola do Visual C# (.NET Framework).
+1. Inicie o Visual Studio e, em seguida, crie um novo projeto de aplicação da Consola do Visual C# (.NET Framework).
 
-2.  Introduza um nome para o seu projeto e forneça outros detalhes conforme pretendido.
+2. Introduza um nome para o seu projeto e forneça outros detalhes conforme pretendido.
 
     <img src="media/aad-auth-cpp-new-console.png" width="624" height="433" alt="Creating a C# console app project in Visual Studio"  />
 
-3.  Utilize o Explorador de Soluções para adicionar o pacote Microsoft ADAL NuGet ao projeto.
+3. Utilize o Explorador de Soluções para adicionar o pacote Microsoft ADAL NuGet ao projeto.
 
-    1.  Clique com o botão direito do rato no Explorador de Soluções.
-    2.  Escolha **Gerir Pacotes NuGet...** &gt;**Procurar**.
-    3.  Selecione `Microsoft.IdentityModel.Clients.ActiveDirectory` e, em seguida, **Instalar**.
+    1. Clique com o botão direito do rato no Explorador de Soluções.
+    2. Escolha **Gerir Pacotes NuGet...** &gt;**Procurar**.
+    3. Selecione `Microsoft.IdentityModel.Clients.ActiveDirectory` e, em seguida, **Instalar**.
 
     <img src="media/aad-auth-cpp-install-package.png" width="624" height="458" alt="Selecting the Azure AD identity model module" />
 
-4.  Adicione as seguintes instruções para a parte superior do **Program.cs**:
+4. Adicione as seguintes instruções para a parte superior do **Program.cs**:
 
     ``` csharp
     using Microsoft.IdentityModel.Clients.ActiveDirectory;</p>
     using System.Net.Http;
     ```
 
-5.  Adicione um método para criar o cabeçalho de autorização:
+5. Adicione um método para criar o cabeçalho de autorização:
 
     ``` csharp
     private static async Task<string> GetAuthorizationHeader()
@@ -386,14 +386,14 @@ Este exemplo mostra como utilizar o C# para recuperar uma lista de dispositivos 
     }
     ```
 
-7.  Atualize **Principal** para chamar **GetMyManagedDevices**:
+7. Atualize **Principal** para chamar **GetMyManagedDevices**:
 
     ``` csharp
     string devices = GetMyManagedDevices().GetAwaiter().GetResult();
     Console.WriteLine(devices);
     ```
 
-8.  Compile e execute o programa.  
+8. Compile e execute o programa.  
 
 Ao executar o programa pela primeira vez, deve receber dois pedidos.  O primeiro pede as suas credenciais e o segundo concede permissões para o `managedDevices` pedido.  
 
@@ -553,11 +553,11 @@ Se a sua organização suportar organizações com os seus próprios inquilinos 
 
 Para tal:
 
-1.  Verifique se a conta de cliente existe no inquilino do Azure AD de destino.
+1. Verifique se a conta de cliente existe no inquilino do Azure AD de destino.
 
-2.  Verifique se a sua conta de inquilino permite que os utilizadores registem aplicações (consulte **Configurações do utilizador**).
+2. Verifique se a sua conta de inquilino permite que os utilizadores registem aplicações (consulte **Configurações do utilizador**).
 
-3.  Estabeleça uma relação entre cada inquilino.  
+3. Estabeleça uma relação entre cada inquilino.  
 
     Para tal:
 
@@ -567,15 +567,15 @@ Para tal:
 
 Para convidar o utilizador para ser um convidado do seu inquilino:
 
-1.  Escolha **Adicionar um utilizador convidado** no painel **Tarefas rápidas**.
+1. Escolha **Adicionar um utilizador convidado** no painel **Tarefas rápidas**.
 
     <img src="media/azure-ad-add-guest.png" width="448" height="138" alt="Use Quick Tasks to add a guest user" />
 
-2.  Introduza o endereço de e-mail do cliente e (opcionalmente) adicione uma mensagem personalizada para o convite.
+2. Introduza o endereço de e-mail do cliente e (opcionalmente) adicione uma mensagem personalizada para o convite.
 
     <img src="media/azure-ad-guest-invite.png" width="203" height="106" alt="Inviting an external user as a guest" />
 
-3.  Escolha **Convidar**.
+3. Escolha **Convidar**.
 
 Este procedimento envia um convite ao utilizador.
 

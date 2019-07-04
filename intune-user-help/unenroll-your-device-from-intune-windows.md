@@ -18,12 +18,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 68cec5d8594d832a405daa1228e77a51283a7c92
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 50833b33583dcc1b49eb9009995b8ccd6c79e1f0
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67529509"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546652"
 ---
 # <a name="remove-your-windows-device-from-management"></a>Remover o seu dispositivo Windows da gestão
 
@@ -76,18 +76,18 @@ Conclua os seguintes passos para remover um dispositivo com o Windows 10 da gest
 ## <a name="remove-your-windows-81-computer"></a>Remover o seu computador com o Windows 8.1
 Conclua os seguintes passos para remover um computador com o Windows 8.1 do Intune.
 
-1.  Aceda a **Definições do PC** > **Rede** > **Área de Trabalho**.
-2.  Em **Associação à Área de Trabalho**, selecione **Sair**.
-3.  Em **Ativar gestão de dispositivos**, selecione **Desativar**.
-4.  Na janela de pop-up que é aberta, selecione **Desativar**.
+1. Aceda a **Definições do PC** > **Rede** > **Área de Trabalho**.
+2. Em **Associação à Área de Trabalho**, selecione **Sair**.
+3. Em **Ativar gestão de dispositivos**, selecione **Desativar**.
+4. Na janela de pop-up que é aberta, selecione **Desativar**.
 
 ## <a name="remove-your-windows-81-phone"></a>Remover o seu telemóvel com o Windows 8.1
 Conclua os seguintes passos para remover um telemóvel com o Windows 8.1 do Intune.
 
-1.  Aceda a **Definições** > **Área de Trabalho**.
-2.  Toque na conta da área de trabalho cuja inscrição quer anular.
-3.  Toque em **Eliminar**, na parte inferior do ecrã.
-4.  Na caixa de diálogo **Eliminar conta**, toque em **Eliminar**.  
+1. Aceda a **Definições** > **Área de Trabalho**.
+2. Toque na conta da área de trabalho cuja inscrição quer anular.
+3. Toque em **Eliminar**, na parte inferior do ecrã.
+4. Na caixa de diálogo **Eliminar conta**, toque em **Eliminar**.  
 ## <a name="removing-your-personal-information-after-removing-the-company-portal"></a>Remover as suas informações pessoais depois de remover o Portal da Empresa  
 
 Existem dois tipos de dados que o Portal da Empresa armazena no seu dispositivo Windows:

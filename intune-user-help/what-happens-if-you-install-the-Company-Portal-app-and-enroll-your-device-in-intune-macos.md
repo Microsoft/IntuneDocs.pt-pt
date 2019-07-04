@@ -18,51 +18,51 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c92489b00bd8d504b89fe0cc590b1d1b27bb5dde
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: b52fdb40f23e1756edb3c656c67d3d9d8c39ae51
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61500988"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546481"
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-macos-device-in-intune"></a>O que acontece se instalar a aplicação Portal da Empresa e inscrever o seu dispositivo macOS no Intune?
 
 Quando instalar a aplicação Portal da Empresa e inscrever o seu dispositivo macOS no Intune, pode utilizar a aplicação Portal da Empresa para:
 
--   Aceder à rede da empresa e ao seu e-mail e ficheiros de trabalho.
+- Aceder à rede da empresa e ao seu e-mail e ficheiros de trabalho.
 
--   Obter aplicações da empresa a partir do Portal da Empresa.
+- Obter aplicações da empresa a partir do Portal da Empresa.
 
--   Repor o telemóvel remotamente para as definições de fábrica em caso de perda ou roubo.
+- Repor o telemóvel remotamente para as definições de fábrica em caso de perda ou roubo.
 
--   Configurar automaticamente a sua conta de e-mail profissional.
+- Configurar automaticamente a sua conta de e-mail profissional.
 
 Quando inscreve o seu dispositivo no Intune, está a dar permissão ao suporte da empresa para gerir o seu dispositivo de forma a ajudar a proteger as informações da empresa no dispositivo.
 
 Quando o seu dispositivo está inscrito, o suporte da empresa pode:
 
--   Repor o dispositivo para as predefinições do fabricante se este for roubado ou perdido.
+- Repor o dispositivo para as predefinições do fabricante se este for roubado ou perdido.
 
--   Remover todos os dados e aplicações da empresa instalados. Os dados e definições pessoais não são removidos.
+- Remover todos os dados e aplicações da empresa instalados. Os dados e definições pessoais não são removidos.
 
--   Exigir que tenha uma palavra-passe ou PIN no dispositivo.
+- Exigir que tenha uma palavra-passe ou PIN no dispositivo.
 
--   O administrador de TI pode exigir que aceite os termos e condições.
+- O administrador de TI pode exigir que aceite os termos e condições.
 
--   Desativar a câmara no seu dispositivo para o impedir de tirar fotografias a dados confidenciais da empresa.
+- Desativar a câmara no seu dispositivo para o impedir de tirar fotografias a dados confidenciais da empresa.
 
--   Ativar ou desativar a navegação na web no seu dispositivo.
+- Ativar ou desativar a navegação na web no seu dispositivo.
 
--   Ativar ou desativar a cópia de segurança para o iCloud.
+- Ativar ou desativar a cópia de segurança para o iCloud.
 
--   Ativar ou desativar a sincronização de documentos para o iCloud.
+- Ativar ou desativar a sincronização de documentos para o iCloud.
 
--   Ativar ou desativar a Partilha de Fotografias para o iCloud.
+- Ativar ou desativar a Partilha de Fotografias para o iCloud.
 
--   Ativar ou desativar o roaming de dados no seu dispositivo. Se o roaming de dados for permitido, pode incorrer em tarifas de roaming.
+- Ativar ou desativar o roaming de dados no seu dispositivo. Se o roaming de dados for permitido, pode incorrer em tarifas de roaming.
 
--   Ativar ou desativar as chamadas em roaming no seu dispositivo. Se o roaming de voz for permitido, pode incorrer em tarifas de roaming.
+- Ativar ou desativar as chamadas em roaming no seu dispositivo. Se o roaming de voz for permitido, pode incorrer em tarifas de roaming.
 
--   Ativar ou desativar a sincronização automática de ficheiros no modo de roaming no seu dispositivo. Se a sincronização automática de ficheiros for permitida, pode incorrer em tarifas de roaming.
+- Ativar ou desativar a sincronização automática de ficheiros no modo de roaming no seu dispositivo. Se a sincronização automática de ficheiros for permitida, pode incorrer em tarifas de roaming.
 
 Se tiver dúvidas, contacte o suporte da sua empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

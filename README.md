@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 76e6e3186ae0e8bf1d05698d28539994d33486e8
-ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
+ms.openlocfilehash: 1c716f48a46e4fd2dc24d203426c364dd4cd88c0
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66804420"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545240"
 ---
 ## <a name="microsoft-open-source-code-of-conduct"></a>Código de Conduta Open Source da Microsoft
 
@@ -30,7 +30,7 @@ Estamos **querem e incentivar contribuições** da Comunidade (utilizadores, os 
     5. Crie pedido pull.
     
     **Opção 2: Localize o artigo neste repositório e atualizar**  
-    1.  A maioria dos tópicos estão em `https://github.com/MicrosoftDocs/IntuneDocs/tree/master/intune`. Nesta pasta, procurar o nome do tópico, como `troubleshoot-policies-in-microsoft-intune`. 
+    1. A maioria dos tópicos estão em `https://github.com/MicrosoftDocs/IntuneDocs/tree/master/intune`. Nesta pasta, procurar o nome do tópico, como `troubleshoot-policies-in-microsoft-intune`. 
     2. Selecione a ligação e clique no ícone de lápis. Quando paira o rato sobre o ícone de lápis, verá a **editar este ficheiro** dica de ferramenta. 
     3. Faça as alterações e, em seguida **consolidação** as suas alterações. 
     4. Crie pedido pull. 

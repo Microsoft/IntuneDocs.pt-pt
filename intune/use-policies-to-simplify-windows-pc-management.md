@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 97e9042b6c7c1890cd1829f803c05fbab7ae9b44
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: b612a245e0a12384f8f9e7ec4a2c970afc2fd628
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040214"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548829"
 ---
 # <a name="use-policies-to-simplify-windows-pc-management"></a>Utilizar políticas para simplificar a gestão de PCs Windows
 
@@ -35,19 +35,19 @@ Para gerir computadores Windows como PCs ao executar o cliente de software do In
 ### <a name="manage-the-microsoft-intune-center"></a>Gerir o Centro do Microsoft Intune
 Os utilizadores veem o cliente de software do Intune como o **Microsoft Intune Center**. O Centro do Microsoft Intune permite aos utilizadores:
 
--   Obter aplicações a partir do portal da empresa.
+- Obter aplicações a partir do portal da empresa.
 
--   Procurar atualizações.
+- Procurar atualizações.
 
--   Gerir o Endpoint Protection do Microsoft Intune.
+- Gerir o Endpoint Protection do Microsoft Intune.
 
--  Pedir assistência remota.
+- Pedir assistência remota.
 
 O Centro do Microsoft Intune é instalado em todos os computadores geridos. Pode configurar as seguintes definições numa política do Intune e estas serão apresentadas aos utilizadores no Centro do Microsoft Intune:
 
 |Definição de política|Detalhes|
 |------------------|--------------------|
-|**Nome**|O nome do administrador que gere o computador.<br />Comprimento máximo: 40 carateres|
+|**Name**|O nome do administrador que gere o computador.<br />Comprimento máximo: 40 carateres|
 |**Número de telefone**|O número de telefone do administrador que gere o computador.<br />Comprimento máximo: 20 carateres|
 |**Endereço de e-mail**|O endereço de e-mail do administrador que gere o computador.<br />Comprimento máximo: 40 carateres|
 |**Nome do site**|O nome do seu site de suporte para utilizadores.<br />> comprimento máximo: 40 carateres|

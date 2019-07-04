@@ -18,12 +18,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9f328577ba2da97595c116efc51626176a14931a
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 1ad21f9197f32f8ff06cc0537719261f3daec7cb
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61505085"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545754"
 ---
 # <a name="what-happens-if-you-reset-your-ios-device-using-the-company-portal"></a>O que acontece se repuser o seu dispositivo iOS com o Portal da Empresa?
 
@@ -31,14 +31,14 @@ Ao utilizar o Portal da Empresa para repor o seu iPhone ou iPad, algumas aplica�
 
 **O suporte da empresa gere o seu dispositivo móvel**
 
--   O seu dispositivo deixará de ser apresentado no Portal da Empresa.
+- O seu dispositivo deixará de ser apresentado no Portal da Empresa.
 
--   O dispositivo tem as predefinições de fábrica do fabricante e os dados, aplicações e definições pessoais serão removidas.
+- O dispositivo tem as predefinições de fábrica do fabricante e os dados, aplicações e definições pessoais serão removidas.
 
 **O dispositivo pode aceder apenas ao e-mail da empresa**
 
--   O seu dispositivo deixará de ser apresentado no Portal da Empresa.
+- O seu dispositivo deixará de ser apresentado no Portal da Empresa.
 
--   A conta de e-mail da sua empresa, bem como os e-mails não guardados, serão eliminados.
+- A conta de e-mail da sua empresa, bem como os e-mails não guardados, serão eliminados.
 
 Se tiver dúvidas, contacte o suporte da sua empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

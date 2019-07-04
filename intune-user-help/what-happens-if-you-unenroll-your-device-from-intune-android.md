@@ -18,26 +18,26 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0c59646045f895df11bd465269ff5df13142d5ab
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 73e9c42f69517d145c797b13ae9fa5aa779ebc5d
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67529409"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546515"
 ---
 # <a name="what-happens-if-you-unenroll-your-android-device-from-intune"></a>O que acontece se anular a inscrição do seu dispositivo Android no Intune?
 
 Ao anular a inscrição do dispositivo Android no Intune:
 
--   O suporte da empresa já não gere o dispositivo.
+- O suporte da empresa já não gere o dispositivo.
 
--   Perde o acesso aos dados e aos recursos da empresa.
+- Perde o acesso aos dados e aos recursos da empresa.
 
--   O seu dispositivo deixa de ser apresentado no Portal da Empresa.
+- O seu dispositivo deixa de ser apresentado no Portal da Empresa.
 
--   Deixará de poder instalar aplicações a partir do Portal da Empresa.
+- Deixará de poder instalar aplicações a partir do Portal da Empresa.
 
--   As definições alteradas no seu dispositivo quando o adicionou (por exemplo, a desativação da câmara ou o comprimento necessário específico de uma palavra-passe) deixam de ser aplicáveis.
+- As definições alteradas no seu dispositivo quando o adicionou (por exemplo, a desativação da câmara ou o comprimento necessário específico de uma palavra-passe) deixam de ser aplicáveis.
 
 Se o dispositivo está configurado apenas para receber os e-mails da empresa e anula o seu dispositivo, o dispositivo não será apresentado no Portal da Empresa.
 

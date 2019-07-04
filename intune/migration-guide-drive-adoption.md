@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2bedaf279d65ee1ed7f8dda4e8d866fb848bade7
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 40e78d85c215bbb5cc126705f26041ce4f7786f4
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044582"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549446"
 ---
 # <a name="drive-end-user-adoption-with-conditional-access-in-microsoft-intune"></a>Promover a adoção com acesso condicional no Microsoft Intune
 
@@ -31,28 +31,28 @@ A ativação de funcionalidades de acesso condicional com o Intune, tais como bl
 
 Esta é uma abordagem típica para melhorar uma campanha de migração com acesso condicional:
 
-1.  Configure regras de acesso condicional para ser impostas para todos os utilizadores, mas exclua especificamente os utilizadores que precisam de migrar do fornecedor de MDM antigo. Pode criar um grupo de utilizadores do Azure AD com todos os utilizadores de acesso condicional excluídos.
+1. Configure regras de acesso condicional para ser impostas para todos os utilizadores, mas exclua especificamente os utilizadores que precisam de migrar do fornecedor de MDM antigo. Pode criar um grupo de utilizadores do Azure AD com todos os utilizadores de acesso condicional excluídos.
 
-2.  Como migrar os utilizadores, removê-los a partir do grupo de exclusão de acesso condicional.
+2. Como migrar os utilizadores, removê-los a partir do grupo de exclusão de acesso condicional.
 
-3.  Após a conclusão da migração, configure todas as políticas de acesso condicional para bloquearem por predefinição, a menos que o Intune permite o acesso.
+3. Após a conclusão da migração, configure todas as políticas de acesso condicional para bloquearem por predefinição, a menos que o Intune permite o acesso.
 
 ### <a name="advantages"></a>Vantagens
 
--   Concede o controlo de acesso a novas contas de utilizador que não foram geridas pela solução anterior.
+- Concede o controlo de acesso a novas contas de utilizador que não foram geridas pela solução anterior.
 
--   Concede um período de tolerância para os utilizadores da solução anterior migrarem.
+- Concede um período de tolerância para os utilizadores da solução anterior migrarem.
 
--   Minimiza a perda de produtividade.
+- Minimiza a perda de produtividade.
 
 ### <a name="disadvantages"></a>Desvantagens
 
--   Os utilizadores da solução anterior podem potencialmente aceder aos recursos através de dispositivos não geridos até que o acesso condicional estiver ativado para esses utilizadores.
+- Os utilizadores da solução anterior podem potencialmente aceder aos recursos através de dispositivos não geridos até que o acesso condicional estiver ativado para esses utilizadores.
 
 
 Esta é uma abordagem entre muitas. Pode escolher um processo mais simples que difere todo o acesso condicional até depois de todas as fases terem tido instrução para inscrever ou um processo mais rigoroso que impõe o acesso condicional desde o início e exige a conformidade total para todos os acessos.
 
--   Saiba mais sobre o [Acesso Condicional](conditional-access.md).
+- Saiba mais sobre o [Acesso Condicional](conditional-access.md).
 
 ## <a name="task-list-for-conditional-access"></a>Lista de tarefas para o acesso condicional
 
@@ -64,15 +64,15 @@ Esta é uma abordagem entre muitas. Pode escolher um processo mais simples que d
 
 Escolha uma das seguintes opções:
 
--   [Configurar o acesso condicional no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)
+- [Configurar o acesso condicional no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)
 
--   [Instalar o conector do Exchange no local com o Intune](exchange-connector-install.md)
+- [Instalar o conector do Exchange no local com o Intune](exchange-connector-install.md)
 
--   [Definir políticas de acesso condicional com base na aplicação para o Exchange Online](app-based-conditional-access-intune-create.md)
+- [Definir políticas de acesso condicional com base na aplicação para o Exchange Online](app-based-conditional-access-intune-create.md)
 
--   [Definir políticas de acesso condicional com base na aplicação para o SharePoint Online](app-based-conditional-access-intune-create.md)
+- [Definir políticas de acesso condicional com base na aplicação para o SharePoint Online](app-based-conditional-access-intune-create.md)
 
--   [Bloquear aplicações que não utilizam autenticação moderna (ADAL)](app-modern-authentication-block.md)
+- [Bloquear aplicações que não utilizam autenticação moderna (ADAL)](app-modern-authentication-block.md)
 
 ## <a name="next-steps"></a>Passos Seguintes
 

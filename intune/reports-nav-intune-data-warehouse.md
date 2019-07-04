@@ -17,24 +17,24 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eb4b90f434af9313cc567193159e94a496f86000
-ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
+ms.openlocfilehash: c5b903cfa9a6700b8931ccedea0f44a9de0d8011
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67511841"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549213"
 ---
 # <a name="microsoft-intune-data-warehouse-api"></a>API do armazém de dados do Microsoft Intune
 
 A API do Armazém de Dados do Intune permite-lhe aceder aos seus dados do Intune num formato legível por máquina para utilizar na sua ferramenta de análise preferida. Pode utilizar a API para criar relatórios que fornecem informações sobre o ambiente móvel da sua empresa. A API utiliza o protocolo OData, que segue os padrões normais para:
 
-  -   Cabeçalhos de pedidos e respostas
-  -   Códigos de estado
-  -   Métodos HTTP
-  -   Convenções de URLs
-  -   Tipos de suporte de dados
-  -   Formatos de payload
-  -   Opções de consulta
+  - Cabeçalhos de pedidos e respostas
+  - Códigos de estado
+  - Métodos HTTP
+  - Convenções de URLs
+  - Tipos de suporte de dados
+  - Formatos de payload
+  - Opções de consulta
 
 O OData (Protocolo Open Data) é um padrão de OASIS (Organização para o Avanço dos Padrões de Informação Estruturada) que define a melhor prática para criar e consumir APIs RESTful. O Armazém de Dados do Intune utiliza a versão 4.0 do OData.
 
@@ -56,8 +56,8 @@ Para obter mais informações, veja [Get data from the Data Warehouse API with a
 
 A API necessita de autorização com o Azure AD. O Azure AD utiliza o OAuth 2.0. Assim que for autorizado, poderá obter dados a partir da API com um verbo HTTP GET e ao contactar as coleções da entidade expostas. Para obter mais detalhes, veja:
 
- -  [Autorização](reports-api-url.md)
- -  [Estrutura do URL da API](reports-api-url.md)
+ - [Autorização](reports-api-url.md)
+ - [Estrutura do URL da API](reports-api-url.md)
 
 ## <a name="intune-data-warehouse-data-model"></a>Modelo de dados do Armazém de Dados do Intune
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b58ee82e44e8aa8d68c0fb00c4497cc0455ed21d
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 2315136fe277f06f6dbb11c13139a9dc193ce6f7
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528632"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549371"
 ---
 # <a name="create-mobile-threat-defense-mtd-device-compliance-policy-with-intune"></a>Criar a política de conformidade de dispositivos da Defesa Contra Ameaças para Dispositivos Móveis (MTD) com o Intune
 
@@ -37,23 +37,23 @@ Como parte da configuração da MTD, na consola do parceiro MTD, criou uma polí
 
 Pré-requisitos da política de conformidade de dispositivos com a MTD:
 
--   Configurar a integração da MTD com o Intune
+- Configurar a integração da MTD com o Intune
 
 ## <a name="to-create-an-mtd-device-compliance-policy"></a>Para criar uma política de conformidade MTD do dispositivo
 
-1.  Aceda ao [portal do Azure](https://portal.azure.com/) e inicie sessão com as credenciais do Intune.
+1. Aceda ao [portal do Azure](https://portal.azure.com/) e inicie sessão com as credenciais do Intune.
 
-2.  No **Dashboard do Azure**, selecione **Todos os serviços**, no menu à esquerda e, em seguida, escreva **Intune** no filtro da caixa de texto.
+2. No **Dashboard do Azure**, selecione **Todos os serviços**, no menu à esquerda e, em seguida, escreva **Intune** no filtro da caixa de texto.
 
-3.  Selecione **Intune** e o **Dashboard do Intune** será aberto.
+3. Selecione **Intune** e o **Dashboard do Intune** será aberto.
 
 4. No **Dashboard do Intune**, selecione **Conformidade do dispositivo** e, em seguida, selecione **Políticas** na secção **Gerir**.
 
-5.  Selecione **Criar política**, introduza o **Nome** e **Descrição** da conformidade do dispositivo, selecione a **Plataforma** e, em seguida, selecione **Configurar** na secção **Definições**.
+5. Selecione **Criar política**, introduza o **Nome** e **Descrição** da conformidade do dispositivo, selecione a **Plataforma** e, em seguida, selecione **Configurar** na secção **Definições**.
 
-6.  No painel **política de conformidade**, selecione **Estado de Funcionamento do Dispositivo**.
+6. No painel **política de conformidade**, selecione **Estado de Funcionamento do Dispositivo**.
 
-7.  No painel **Estado de Funcionamento do Dispositivo**, selecione o Nível de Ameaças para Dispositivos Móveis na lista pendente em **Exigir que o dispositivo esteja no Nível de Ameaça para Dispositivos ou abaixo do mesmo**.
+7. No painel **Estado de Funcionamento do Dispositivo**, selecione o Nível de Ameaças para Dispositivos Móveis na lista pendente em **Exigir que o dispositivo esteja no Nível de Ameaça para Dispositivos ou abaixo do mesmo**.
 
     a.  **Protegido**: Este é o nível mais seguro. O dispositivo não pode aceder aos recursos da empresa se contiver ameaças. Se forem detetadas ameaças, o dispositivo será avaliado como não conforme.
 
@@ -63,7 +63,7 @@ Pré-requisitos da política de conformidade de dispositivos com a MTD:
 
     d.  **Alto**: Este é o nível menos seguro. Este nível permite que todos os níveis de ameaça estejam presentes e utiliza a Defesa Contra Ameaças para Dispositivos Móveis apenas para a criação de relatórios. É necessário que os dispositivos tenham a aplicação de MTD ativada com esta definição.
 
-8.  Clique em **OK** duas vezes e, em seguida, selecione **Criar**.
+8. Clique em **OK** duas vezes e, em seguida, selecione **Criar**.
 
 > [!IMPORTANT]
 > Se criar políticas de acesso condicional para o Office 365 ou outros serviços, a avaliação de conformidade do dispositivo é analisada e os dispositivos não conformes são impedidos de aceder a recursos empresariais até que a ameaça esteja resolvida no dispositivo.

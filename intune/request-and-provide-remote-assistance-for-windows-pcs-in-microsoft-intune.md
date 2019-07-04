@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a1a725ff5ba5a677a41fe2a89b999f1ae41b3b6f
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: a58339f8a956e4250064bc81e2f291a72c27c27f
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040900"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549140"
 ---
 # <a name="request-and-provide-remote-assistance-for-windows-pcs"></a>Pedir e fornecer assistência remota para PCs Windows
 
@@ -79,13 +79,13 @@ A partir do menu **Ações** da janela **TeamViewer**, escolha **Terminar Sessã
 ## <a name="remotely-restart-a-windows-pc"></a>Reiniciar um PC Windows remotamente
 Quando ajudar os seus utilizadores com problemas, poderá ter de ocasionalmente reiniciar remotamente os seus PCs. Utilize os seguintes passos para reiniciar remotamente um PC Windows.
 
-1.  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com/), selecione **Grupos** &gt; **Todos os Dispositivos** (ou outro grupo que contenha o PC que pretende reiniciar).
+1. Na [consola de administração do Microsoft Intune](https://manage.microsoft.com/), selecione **Grupos** &gt; **Todos os Dispositivos** (ou outro grupo que contenha o PC que pretende reiniciar).
 
-2.  Selecione um ou mais PCs e, em seguida, selecione **Tarefas Remotas** &gt; **Reiniciar o Computador**.
+2. Selecione um ou mais PCs e, em seguida, selecione **Tarefas Remotas** &gt; **Reiniciar o Computador**.
 
-3.  Para ver o estado da tarefa, escolha **Tarefas Remotas** no canto inferior direito da página.
+3. Para ver o estado da tarefa, escolha **Tarefas Remotas** no canto inferior direito da página.
 
-4.  Na caixa de diálogo **Estado da Tarefa**, reveja as tarefas remotas atuais, os estados de tarefas, o nome do dispositivo e todos os erros comunicados.
+4. Na caixa de diálogo **Estado da Tarefa**, reveja as tarefas remotas atuais, os estados de tarefas, o nome do dispositivo e todos os erros comunicados.
 
 ### <a name="see-also"></a>Consulte também
 

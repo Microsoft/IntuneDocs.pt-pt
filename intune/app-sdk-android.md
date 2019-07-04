@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ae2318d32bebf17544d2c8c31763a6bf6360c4e9
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 4530c1ec573560924b54aa8fd21d39a86cefe97e
+ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67529255"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67558432"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Guia para programadores do SDK da Aplicação do Microsoft Intune para Android
 
@@ -111,10 +111,10 @@ apply plugin: 'com.microsoft.intune.mam'
 
 Por predefinição, o plug-in irá funcionar **apenas** em dependências do `project`.
 A compilação de teste não é afetada. Poderá ser fornecida uma configuração para apresentar o seguinte:
-*  Projetos a excluir
-*  [Dependências externas a incluir](#usage-of-includeexternallibraries) 
-*  Classes específicas a excluir do processamento
-*  Variantes a excluir do processamento. Estas podem ser referentes a um nome de variante completo ou a um único tipo. Por exemplo
+* Projetos a excluir
+* [Dependências externas a incluir](#usage-of-includeexternallibraries) 
+* Classes específicas a excluir do processamento
+* Variantes a excluir do processamento. Estas podem ser referentes a um nome de variante completo ou a um único tipo. Por exemplo
      * Se a sua aplicação tiver os tipos de compilação `debug` e `release` com os tipos {`savory`, `sweet`} e {`vanilla`, `chocolate`} poderá especificar
      * `savory` para excluir todas as variantes com o tipo savory ou `savoryVanillaRelease` para excluir apenas esta variante específica.
 
@@ -698,7 +698,7 @@ Metadados da ADAL **não podem** estar presente no manifesto.
 
 #### <a name="2-app-integrates-adal"></a>2. A aplicação integra a ADAL
 
-|Parâmetro necessário da ADAL| Value |
+|Parâmetro necessário da ADAL| Valor |
 |--|--|
 | ClientID | O ClientID da aplicação (gerado pelo Azure AD quando a aplicação é registada) |
 
@@ -1187,7 +1187,7 @@ O guia de Cópia de Segurança de Dados especifica um algoritmo geral para resta
 Por predefinição, o SDK da Aplicação do Intune aplica a política à aplicação como um todo. As várias identidades são uma funcionalidade de proteção opcional da aplicação do Intune que pode ser ativada para permitir que a política seja aplicada num nível por identidade. Esta opção requer uma participação da aplicação significativamente maior do que outras funcionalidades de proteção da aplicação.
 
 > [!NOTE]
->  A falta de participação correta da aplicação pode resultar na perda de dados e noutros problemas de segurança.
+> A falta de participação correta da aplicação pode resultar na perda de dados e noutros problemas de segurança.
 
 Quando o utilizador inscrever o dispositivo ou a aplicação, o SDK regista esta identidade e considera-a a identidade gerida primária do Intune. Os outros utilizadores na aplicação serão tratados como não geridos, com definições de política não restrita.
 
@@ -1317,7 +1317,7 @@ Além da capacidade da aplicação de definir a identidade, a identidade de um c
 
   1. Se uma atividade for iniciada a partir de um `Intent` enviado por outra aplicação para MAM, a identidade da atividade será definida com base na identidade real na outra aplicação no ponto em que o `Intent` foi enviado.
 
-  2.  Para serviços, a identidade do thread será definida de forma semelhante durante uma chamada `onStart` ou `onBind`. As chamadas para `Binder` devolvidas do `onBind` também irão definir temporariamente a identidade do thread.
+  2. Para serviços, a identidade do thread será definida de forma semelhante durante uma chamada `onStart` ou `onBind`. As chamadas para `Binder` devolvidas do `onBind` também irão definir temporariamente a identidade do thread.
 
   3. De forma semelhante, as chamadas para um `ContentProvider` irão definir a identidade do thread na duração das mesmas.
 
@@ -1742,8 +1742,8 @@ Ative a inscrição de padrão com os seguintes passos:
 
 Para bases de códigos grandes executadas sem [ProGuard](http://proguard.sourceforge.net/), as limitações do formato de ficheiro executável Dalvik podem tornar-se um problema. Mais concretamente, podem ocorrer as seguintes limitações:
 
-1.  O limite de 65 000 nos campos.
-2.  O limite de 65 000 nos métodos.
+1. O limite de 65 000 nos campos.
+2. O limite de 65 000 nos métodos.
 
 ### <a name="policy-enforcement-limitations"></a>Limitações de imposição de políticas
 

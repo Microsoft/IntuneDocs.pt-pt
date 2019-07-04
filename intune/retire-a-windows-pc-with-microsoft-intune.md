@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 71ff00c0a41fecada6e61f8a9bfa6c5a00dab921
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 2b6326d30650aa62777ac9ce9c70394904b678f3
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040862"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549167"
 ---
 # <a name="retire-a-windows-pc"></a>Extinguir um PC Windows
 
@@ -30,9 +30,9 @@ ms.locfileid: "66040862"
 
 Siga os seguintes passos para extinguir computadores que está a gerir como PCs através da execução do cliente de software do Intune nos mesmos. Quando extingue um PC, este é removido da gestão do Intune. Não é possível apagar um PC a partir do Intune para restaurar as respetivas definições de fábrica originais.
 
-1.  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com/), selecione **Grupos** &gt; **Todos os Dispositivos** (ou outro grupo que contenha o PC que quer extinguir).
+1. Na [consola de administração do Microsoft Intune](https://manage.microsoft.com/), selecione **Grupos** &gt; **Todos os Dispositivos** (ou outro grupo que contenha o PC que quer extinguir).
 
-2.  Selecione os dispositivos que pretende extinguir e, em seguida, escolha **Extinguir/Limpar**.
+2. Selecione os dispositivos que pretende extinguir e, em seguida, escolha **Extinguir/Limpar**.
 
 Para inscrever novamente um PC no Intune, reinstale o cliente de software no PC com as orientações em [Instalar o cliente do PC Windows com o Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md).
 
@@ -40,19 +40,19 @@ Se não conseguir ligar um PC ao Intune, é apresentada uma mensagem na área de
 
 Quando extingue um PC:
 
--   Este é removido da gestão e do inventário do Intune, e a licença associada ao PC é disponibilizada para reutilização. Extinguir/Limpar remove o cliente de software do Intune, mas não remove aplicações ou dados do PC. Esta extinção não efetua uma eliminação completa no PC.
+- Este é removido da gestão e do inventário do Intune, e a licença associada ao PC é disponibilizada para reutilização. Extinguir/Limpar remove o cliente de software do Intune, mas não remove aplicações ou dados do PC. Esta extinção não efetua uma eliminação completa no PC.
 
--   O estado do mesmo já não é apresentado na consola do Intune.
+- O estado do mesmo já não é apresentado na consola do Intune.
 
--   O Intune remove o cliente de software do PC. Se o PC não estiver ligado ao serviço do Intune, o cliente de software será removido na próxima vez que for ligado.
+- O Intune remove o cliente de software do PC. Se o PC não estiver ligado ao serviço do Intune, o cliente de software será removido na próxima vez que for ligado.
 
--   O Endpoint Protection do Microsoft Intune é removido do PC. Se o PC tiver outra aplicação de ponto final instalada e esta estiver desativada, essa aplicação pode ser ativada novamente quando o Endpoint Protection do Microsoft Intune for removido para garantir a proteção do seu PC.
+- O Endpoint Protection do Microsoft Intune é removido do PC. Se o PC tiver outra aplicação de ponto final instalada e esta estiver desativada, essa aplicação pode ser ativada novamente quando o Endpoint Protection do Microsoft Intune for removido para garantir a proteção do seu PC.
 
--   Todas as políticas serão removidas do PC e os valores que estavam definidos pela política serão alterados.
+- Todas as políticas serão removidas do PC e os valores que estavam definidos pela política serão alterados.
 
--   O PC deixará de receber atualizações de software ou atualizações de definições de software maligno do serviço do Intune.
+- O PC deixará de receber atualizações de software ou atualizações de definições de software maligno do serviço do Intune.
 
--   Dependendo de como estiverem configurados, os PC extintos poderão continuar a receber atualizações através dos Windows Server Update Services, o Windows Update ou o Microsoft Update.
+- Dependendo de como estiverem configurados, os PC extintos poderão continuar a receber atualizações através dos Windows Server Update Services, o Windows Update ou o Microsoft Update.
 
     > [!IMPORTANT]
     > Se o software de cliente tiver sido instalado com um Objeto de Política de Grupo (GPO), tem de remover o Objeto de Política de Grupo (GPO) antes de poder remover o software de cliente, para impedir que o software seja reinstalado.

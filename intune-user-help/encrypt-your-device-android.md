@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 58217b6088669a7387ed7452f0ec81ae4a04b60c
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: cfc17c60412a1cfe90693216caa69ada3d2d2c9a
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61497180"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545246"
 ---
 # <a name="encrypting-your-android-device"></a>Encriptar o seu dispositivo Android
 
@@ -38,7 +38,7 @@ Se o Portal da empresa ou a aplicação Microsoft Intune pede-lhe para encriptar
 > [!Note]
 > Não pode ser encriptada a Huawei, Vivo e OPPO, determinada dispositivos Android. Saiba mais [aqui](your-device-appears-encrypted-but-cp-says-otherwise-android.md).  
 
-1.  Defina um bloqueio de ecrã do dispositivo.  
+1. Defina um bloqueio de ecrã do dispositivo.  
     a. Aceda a **configurações** > **bloqueio de ecrã e segurança** > **tipo de bloqueio de ecrã**.  
     b. Selecione **PIN**, **palavra-passe**, ou **padrão**.  
     c. Siga as instruções na tela para configurar o bloqueio de ecrã.  

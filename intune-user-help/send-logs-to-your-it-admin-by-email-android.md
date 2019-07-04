@@ -18,12 +18,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f1aac6c472cda5d0d9d9c12c98f792374065da49
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: c03d83e6f1bfbffdc7a43d0b80d0568a44555e32
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528780"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546019"
 ---
 # <a name="upload-and-email-logs"></a>Registos de carregamento e o e-mail  
 
@@ -36,29 +36,29 @@ Os detalhes do erro real são mantidos no dispositivo, num documento especial de
 
 ## <a name="upload-and-email-logs-from-company-portal"></a>Registos de carregamento e o e-mail a partir do Portal da empresa  
 
-1.  Na aplicação Portal da empresa, existem duas formas de iniciar o suporte de e-mail.
+1. Na aplicação Portal da empresa, existem duas formas de iniciar o suporte de e-mail.
     * Na tela inicial: Toque em **Menu** > **Ajuda** > **Enviar e-mail à Equipa de Suporte**.  
     * A partir de uma mensagem de erro: Toque em **ajudar** ou **enviar informações**, se disponível.  
 
     > [!NOTE]
     > **Menu** pode ser um botão de software ou um botão de hardware, consoante o dispositivo Android que tem.  
 
-3.  Toque em **Enviar E-mail e Carregar Registos**.  
-4.  Depois de o carregamento estar concluído, toque na sua aplicação de e-mail. 
+3. Toque em **Enviar E-mail e Carregar Registos**.  
+4. Depois de o carregamento estar concluído, toque na sua aplicação de e-mail. 
 5. Uma mensagem de e-mail será aberta com o ID de incidente pré-preenchido no campo do requerente. No corpo da mensagem de e-mail, descreva o problema que vocês encontraram.    
 
 
 ## <a name="upload-and-email-logs-from-microsoft-intune-app"></a>Registos de e-mail e de carregamento da aplicação do Microsoft Intune   
 
-1.  Na aplicação do Microsoft Intune, existem duas formas de iniciar o suporte de e-mail.  
+1. Na aplicação do Microsoft Intune, existem duas formas de iniciar o suporte de e-mail.  
     * Na tela inicial: Toque em **Menu** > **ajudar** > **obter suporte**.  
     * A partir de uma mensagem de erro: Toque em **ajudar** ou **enviar informações**, se disponível.  
 
     > [!NOTE]
     > **Menu** pode ser um botão de software ou um botão de hardware, consoante o dispositivo Android que tem.
 
-3.  Toque em **carregar registos**.  
-4.  Depois do carregamento estiver concluído, toque em **E-Mail** e selecione a aplicação de e-mail.  
+3. Toque em **carregar registos**.  
+4. Depois do carregamento estiver concluído, toque em **E-Mail** e selecione a aplicação de e-mail.  
 5. Uma mensagem de e-mail será aberta com o ID de incidente pré-preenchido no campo do requerente. No corpo da mensagem de e-mail, descreva o problema que vocês encontraram.  
 
 ## <a name="next-steps"></a>Passos Seguintes  

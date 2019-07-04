@@ -17,25 +17,25 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 45f93416a8fd6190549a958f1b1a7e5f3bdf6df1
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 2b1fe488ed7d295a40b42c1fb17a76693004be4d
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045308"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67547924"
 ---
 # <a name="reference-for-devices-entities"></a>Referência para as entidades de dispositivos
 
 A categoria **Devices** contém entidades para dispositivos móveis que registam informações como:
 
-  -  Tipo de dispositivo
-  -  Estado do registo e inscrição dos dispositivos
-  -  Propriedade dos dispositivos
-  -  Estado da gestão dos dispositivos
-  -  Estado de associação dos dispositivos ao Azure AD
-  -  Estado de inscrição
-  -  Informações sobre o histórico dos dispositivos
-  -  Inventário das aplicações no dispositivo
+  - Tipo de dispositivo
+  - Estado do registo e inscrição dos dispositivos
+  - Propriedade dos dispositivos
+  - Estado da gestão dos dispositivos
+  - Estado de associação dos dispositivos ao Azure AD
+  - Estado de inscrição
+  - Informações sobre o histórico dos dispositivos
+  - Inventário das aplicações no dispositivo
 
 ## <a name="devicetypes"></a>DeviceTypes
 

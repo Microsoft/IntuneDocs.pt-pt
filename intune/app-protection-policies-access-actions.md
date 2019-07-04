@@ -1,7 +1,7 @@
 ---
-title: Apagar dados através de ações de acesso de política de proteção de aplicações
+title: Apagar dados através de ações de iniciação condicional de política de proteção de aplicações
 titleSuffix: Microsoft Intune
-description: Saiba como eliminar seletivamente os dados através de ações de acesso das políticas de proteção de aplicações no Microsoft Intune.
+description: Saiba como apagar seletivamente os dados com as ações a execução da iniciação condicional de política de proteção de aplicações no Microsoft Intune.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -17,26 +17,26 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cd323fce7f7bdbf17697c82935a9d2d5f47bb7ee
-ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
+ms.openlocfilehash: 65115f6520122cd4b3429411db67052481984617
+ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66804679"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67558440"
 ---
-# <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>Eliminação seletiva de dados através de ações de acesso das políticas de proteção de aplicações no Intune
+# <a name="selectively-wipe-data-using-app-protection-policy-conditional-launch-actions-in-intune"></a>Eliminação seletiva de dados com as ações a execução da iniciação condicional de política de proteção de aplicações no Intune
 
 Ao utilizar as políticas de proteção de aplicações do Intune, pode configurar definições para impedir que os utilizadores finais acedam a uma conta ou aplicação empresarial. Estas definições destinam-se aos requisitos de acesso e relocalização de dados definidos pela sua organização em casos de, por exemplo, dispositivos desbloqueados por jailbreak e versões de SO mínimas.
  
 Com estas definições, pode eliminar dados da empresa explicitamente do dispositivo do utilizador final como uma ação a ser realizada em caso de não conformidade. Em algumas definições, será possível configurar múltiplas ações, como impedir o acesso e eliminar os dados com base em diferentes valores especificados.
 
-## <a name="create-an-app-protection-policy-using-access-actions"></a>Criar uma política de proteção de aplicações com ações de acesso
+## <a name="create-an-app-protection-policy-using-conditional-launch-actions"></a>Criar uma política de proteção de aplicações com ações de início condicional
 
 1. Inicie sessão no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. No painel **Intune**, selecione **Aplicações do cliente** > **Políticas de proteção de aplicações**.
 4. Clique em **Adicionar uma política** (também pode editar uma política existente). 
 5. Clique em **Configurar definições obrigatórias** para ver a lista de definições disponíveis a configurar para a política. 
-6. Ao deslocar-se para baixo no painel Definições, verá uma secção denominada **Ações de Acesso** com uma tabela editável.
+6. Ao deslocar para baixo no painel de definições, verá uma secção intitulada **iniciação condicional** com uma tabela editável.
 
     ![Captura de ecrã a mostrar as ações de acesso de proteção de aplicações do Intune](./media/apps-selective-wipe-access-actions01.png)
 
@@ -52,13 +52,13 @@ A tabela das definições de políticas de proteção de aplicações apresenta 
 
 ### <a name="ios-policy-settings"></a>Definições de política para iOS
 Para iOS, poderá configurar ações para as seguintes definições a partir da lista pendente **Definição**:
--  Máximo de tentativas de PIN
--  Período de tolerância offline
--  Dispositivos com jailbreak/rooting
--  Versão mínima do SO
--  Versão mínima da aplicação
--  Versão mínima do SDK
--  Modelos de dispositivos
+- Máximo de tentativas de PIN
+- Período de tolerância offline
+- Dispositivos com jailbreak/rooting
+- Versão mínima do SO
+- Versão mínima da aplicação
+- Versão mínima do SDK
+- Modelos de dispositivos
 
 Para utilizar a definição **Modelos de dispositivos**, introduza uma lista de identificadores de modelos de iOS separados por ponto e vírgula. Pode encontrar um identificador de modelos de iOS na coluna Tipo de Dispositivo na [documentação de suporte do HockeyApp](https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/ios-device-types).<br>
 Entrada de exemplo: *iPhone5,2;iPhone5,3*
@@ -74,15 +74,15 @@ Quando existem conflitos entre duas políticas de proteção de aplicações em 
 ### <a name="android-policy-settings"></a>Definições de políticas para Android
 
 Para Android, poderá configurar ações para as seguintes definições a partir da lista pendente **Definição**:
--  Máximo de tentativas de PIN
--  Período de tolerância offline
--  Dispositivos com jailbreak/rooting
--  Versão mínima do SO
--  Versão mínima da aplicação
--  Versão mínima da correção
--  Fabricantes de dispositivos
--  Atestado de dispositivo do SafetyNet
--  Análise de ameaças nas aplicações
+- Máximo de tentativas de PIN
+- Período de tolerância offline
+- Dispositivos com jailbreak/rooting
+- Versão mínima do SO
+- Versão mínima da aplicação
+- Versão mínima da correção
+- Fabricantes de dispositivos
+- Atestado de dispositivo do SafetyNet
+- Análise de ameaças nas aplicações
 
 Para utilizar a definição **Fabricantes de dispositivos**, introduza uma lista de fabricantes de dispositivos Android separados por ponto e vírgula. Pode encontrar o fabricante de um dispositivo Android nas definições do dispositivo.<br>
 Entrada de exemplo: *Fabricante A; Fabricante B* 
@@ -105,9 +105,9 @@ Por predefinição, a tabela terá linhas povoadas como definições configurada
 Para configurar uma definição, selecione uma definição na lista pendente da coluna **Definição**. Depois de selecionar uma definição, a caixa de texto editável ficará ativa na coluna **Valor** da mesma linha, se for necessário definir um valor. Além disso, a lista pendente ficará ativa na coluna **Ação** com o conjunto de ações de iniciação condicional aplicáveis à definição. 
 
 A seguinte lista apresenta as ações comuns:
--  **Bloquear acesso** – impedir o utilizador final de aceder à aplicação da empresa.
--  **Apagar dados** – apagar os dados da empresa do dispositivo do utilizador final.
--  **Avisar** – apresentar uma caixa de diálogo com uma mensagem de aviso para o utilizador final.
+- **Bloquear acesso** – impedir o utilizador final de aceder à aplicação da empresa.
+- **Apagar dados** – apagar os dados da empresa do dispositivo do utilizador final.
+- **Avisar** – apresentar uma caixa de diálogo com uma mensagem de aviso para o utilizador final.
 
 Em alguns casos, como a definição **Versão mínima do SO**, pode configurar a definição para realizar todas as ações aplicáveis com base em números de versão diferentes. 
 

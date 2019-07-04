@@ -18,30 +18,30 @@ ms.reviewer: esmich, elocholi
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 85f6ae657361bea0ab89b8afa73976273fa000f4
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 4ba5705fa04d9eb28e74128228ca8a862f1cb772
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61501209"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545681"
 ---
 # <a name="what-happens-if-you-unenroll-your-ios-or-macos-device-from-intune"></a>O que acontece se anular a inscrição do seu dispositivo iOS ou macOS no Intune?
 
 Quando anula a inscrição do seu dispositivo iOS ou macOS no Intune:
 
--   O seu dispositivo deixa de ser apresentado no Portal da Empresa.
+- O seu dispositivo deixa de ser apresentado no Portal da Empresa.
 
--   Deixará de poder instalar aplicações a partir do Portal da Empresa.
+- Deixará de poder instalar aplicações a partir do Portal da Empresa.
 
--   As definições alteradas no seu dispositivo quando o adicionou (por exemplo, a desativação da câmara ou o comprimento necessário específico de uma palavra-passe) deixam de ser aplicáveis.
+- As definições alteradas no seu dispositivo quando o adicionou (por exemplo, a desativação da câmara ou o comprimento necessário específico de uma palavra-passe) deixam de ser aplicáveis.
 
--   É possível que deixe de ter acesso a alguns recursos da empresa, como partilhas de ficheiros ou sites internos, no seu dispositivo.
+- É possível que deixe de ter acesso a alguns recursos da empresa, como partilhas de ficheiros ou sites internos, no seu dispositivo.
 
--   Deixará de poder utilizar aplicações e dados da empresa no seu dispositivo.
+- Deixará de poder utilizar aplicações e dados da empresa no seu dispositivo.
 
--   É possível que deixe de conseguir ligar-se à rede da sua empresa utilizando Wi-Fi ou uma rede privada virtual (VPN).
+- É possível que deixe de conseguir ligar-se à rede da sua empresa utilizando Wi-Fi ou uma rede privada virtual (VPN).
 
--   Os perfis de e-mail da empresa são removidos do dispositivo.
+- Os perfis de e-mail da empresa são removidos do dispositivo.
 
 Para instruções sobre como anular a inscrição, consulte [Anular a inscrição do seu dispositivo](unenroll-your-device-from-intune-ios.md).
 

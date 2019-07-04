@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f404fb63f64f216c3732a4378fce383591d95565
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 7081bc04cc0a6de0a0a6e8214ac0a6edea459378
+ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67529048"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67558388"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Enlaces Xamarin do SDK da Aplicação Microsoft Intune
 
@@ -88,7 +88,6 @@ Se seu aplicativo já está configurado para utilizar a ADAL ou MSAL e tem seu p
 > Não há nenhum remapeamento para iOS. A integração numa aplicação Xamarin.Forms deve ser igual à de um projeto normal Xamarin.iOS. 
 
 ## <a name="enabling-intune-app-protection-policies-in-your-android-mobile-app"></a>Ativar as políticas de proteção de aplicações do Intune na sua aplicação móvel para Android
-
 1. Adicione o [pacote NuGet Microsoft.Intune.MAM.Xamarin.Android](https://www.nuget.org/packages/Microsoft.Intune.MAM.Xamarin.Android) ao seu projeto Xamarin.Android.
     1. Para uma aplicação xamarin. Forms, adicione a [pacote Microsoft.Intune.MAM.Remapper.Tasks NuGet](https://www.nuget.org/packages/Microsoft.Intune.MAM.Remapper.Tasks) ao seu projeto xamarin. Android também. 
 2. Siga os passos gerais necessários para [integrar o SDK da aplicação Intune](app-sdk-android.md) numa aplicação móvel Android ao mesmo tempo que faça referência a este documento para obter mais detalhes.
@@ -172,6 +171,14 @@ Isso é esperado, porque quando o Remapper modifica a herança de classes do Xam
 
 > [!NOTE]
 > O Remapper reescreverá uma dependência que utiliza o Visual Studio para preenchimento automático do IntelliSense. Portanto, poderá ter de recarregar e reconstruir o projeto quando o Remapper é adicionado para IntelliSense reconhecer corretamente as alterações.
+
+### <a name="company-portal-app"></a>Aplicação Portal da Empresa
+Os enlaces de Xamarin do SDK do Intune baseiam-se na presença do [Portal da empresa](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) aplicação Android no dispositivo para ativar políticas de proteção de aplicações. O Portal da Empresa obtém as políticas de proteção de aplicações do serviço Intune. Quando a aplicação é inicializada, é carregada a política e o código para impor essa política a partir do Portal da Empresa. O usuário não precisa de ter sessão iniciada.
+
+> [!NOTE]
+> Quando a aplicação Portal da empresa não está ativada a **Android** dispositivo, uma aplicação gerida pelo Intune tem o mesmo comportamento que uma aplicação normal que não suporta políticas de proteção de aplicações do Intune.
+
+Para a proteção de aplicações sem inscrição de dispositivos, o utilizador _**não**_ é obrigado a inscrever o dispositivo através da aplicação Portal da Empresa.
 
 ## <a name="support"></a>Suporte
 Se a sua organização for um cliente do Intune existente, trabalhe em conjunto com o seu representante de suporte da Microsoft para abrir um pedido de suporte e criar um problema [no GitHub a página de problemas](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues) e iremos ajudar assim que possível. 

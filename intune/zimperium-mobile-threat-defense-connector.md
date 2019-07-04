@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c0dc8d7cca42898db92412e2cec41252a9a9a4d4
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 7cd0e6ddba836724f525ab3d21e192214cc43cb4
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67046115"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67547702"
 ---
 # <a name="zimperium-mobile-threat-defense-connector-with-intune"></a>Conector Zimperium Mobile Threat Defense com o Intune
 
@@ -44,11 +44,11 @@ Veja abaixo alguns cenários que ocorrem quando integra o Zimperium com o Intune
 
 Quando forem detetadas aplicações maliciosas, como software maligno, nos dispositivos, pode bloquear os dispositivos até a ameaça ser resolvida:
 
--   Ligar ao e-mail empresarial
+- Ligar ao e-mail empresarial
 
--   Sincronizar ficheiros empresariais com a aplicação OneDrive for Work
+- Sincronizar ficheiros empresariais com a aplicação OneDrive for Work
 
--   Aceder às aplicações da empresa
+- Aceder às aplicações da empresa
 
 **Bloquear quando as aplicações maliciosas forem detetadas:**
 
@@ -84,19 +84,19 @@ Detete ameaças como **Man-in-the-middle** na rede e impeça a sincronização
 
 ## <a name="supported-platforms"></a>Plataformas suportadas
 
--   **Android 4.1 e posterior**
+- **Android 4.1 e posterior**
 
--   **iOS 8 e posterior**
+- **iOS 8 e posterior**
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
--   Azure Active Directory Premium
+- Azure Active Directory Premium
 
--   Subscrição do Microsoft Intune
+- Subscrição do Microsoft Intune
 
--   Subscrição do Zimperium Mobile Threat Defense
+- Subscrição do Zimperium Mobile Threat Defense
 
-    -   Para obter mais informações, consulte [site do Zimperium](https://www.zimperium.com/zips-mobile-ips).
+    - Para obter mais informações, consulte [site do Zimperium](https://www.zimperium.com/zips-mobile-ips).
 
 ## <a name="next-steps"></a>Passos Seguintes
 

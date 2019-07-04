@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b8134b9db0e478efa69391edeb570b39c91a41c9
-ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
+ms.openlocfilehash: 473de0ae24cb3ee2a9f7fbd84ef78e6c25ef6ce6
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67511766"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67547299"
 ---
 # <a name="better-mobile-threat-defense-connector-with-intune"></a>Conector Better Mobile Threat Defense com o Intune
 
@@ -41,11 +41,11 @@ Seguem-se alguns cenários comuns.
 
 Quando forem detetadas aplicações maliciosas, como software maligno, nos dispositivos, pode impedir os dispositivos de fazer as seguintes ações até a ameaça ser resolvida:
 
--   Ligar ao e-mail empresarial
+- Ligar ao e-mail empresarial
 
--   Sincronizar ficheiros empresariais com a aplicação OneDrive for Work
+- Sincronizar ficheiros empresariais com a aplicação OneDrive for Work
 
--   Aceder às aplicações da empresa
+- Aceder às aplicações da empresa
 
 **Bloquear quando as aplicações maliciosas forem detetadas:**
 
@@ -81,19 +81,19 @@ Detete ameaças à sua rede, tal como ataques **Man-in-the-middle**, e impeça a
 
 ## <a name="supported-platforms"></a>Plataformas suportadas
 
--   **Android 4.1 e posterior**
+- **Android 4.1 e posterior**
 
--   **iOS 8.0 e posterior**
+- **iOS 8.0 e posterior**
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
--   Azure Active Directory Premium
+- Azure Active Directory Premium
 
--   Subscrição do Microsoft Intune
+- Subscrição do Microsoft Intune
 
--   Subscrição do Better Mobile Threat Defense
+- Subscrição do Better Mobile Threat Defense
 
-    -   Para obter mais informações, veja o [site do Better Mobile](https://www.better.mobi/).
+    - Para obter mais informações, veja o [site do Better Mobile](https://www.better.mobi/).
 
 ## <a name="next-steps"></a>Passos Seguintes
 

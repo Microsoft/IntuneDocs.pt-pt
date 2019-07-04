@@ -18,21 +18,21 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1d9ea064da17e5447c08c3a8370017dec34e30af
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 416c109ae9d27ac48896c1601bd8448fa89d0af7
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61501158"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545603"
 ---
 # <a name="you-get-an-error-while-using-the-company-portal-app"></a>Obtém um erro ao utilizar a aplicação Portal da Empresa
 
 Se obtiver um erro enquanto estiver a utilizar a aplicação Portal da Empresa no seu dispositivo iOS, pode ajudar o suporte da empresa a resolver o problema ao enviar-lhe informações. Pode enviar informações de erro de formas diferentes:
 
--   Toque em **Relatório** nas mensagens de alerta do erro.
+- Toque em **Relatório** nas mensagens de alerta do erro.
 
--   Toque em **Enviar Relatório de Diagnóstico** no ecrã **Acerca de** da aplicação Portal da Empresa.
+- Toque em **Enviar Relatório de Diagnóstico** no ecrã **Acerca de** da aplicação Portal da Empresa.
 
--   Abane o dispositivo enquanto está na aplicação Portal da Empresa e, em seguida, toque em **E-mail** quando for apresentado o alerta de diagnóstico. Se o alerta não aparecer quando abanar o dispositivo, abra **Definições** > **Portal da Empresa** e certifique-se de que a opção **Gesto de Abanar** está ativada.
+- Abane o dispositivo enquanto está na aplicação Portal da Empresa e, em seguida, toque em **E-mail** quando for apresentado o alerta de diagnóstico. Se o alerta não aparecer quando abanar o dispositivo, abra **Definições** > **Portal da Empresa** e certifique-se de que a opção **Gesto de Abanar** está ativada.
 
 Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

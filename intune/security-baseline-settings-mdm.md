@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9b0d069d6a65be0b51dd02858470780299690425
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 8fa5589f62900027b90659b8f570e7caa10b1cd8
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528666"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549068"
 ---
 # <a name="mdm-security-baseline-settings-for-intune"></a>Definições de linha de base de segurança MDM do Intune  
 
@@ -1829,7 +1829,7 @@ As seguintes definições são:
 - *Revisto* de alguma forma de como as definições apareceram na versão anterior. 
 
 *[Novo]*  [ **Acima bloqueio**](#above-lock):
--  **Voz ativar aplicações a partir do ecrã bloqueado**    
+- **Voz ativar aplicações a partir do ecrã bloqueado**    
 
 *[Novo]*  [ **Gestão de aplicações**](#application-management): 
 - **Controle de usuário de bloco através de instalações**  

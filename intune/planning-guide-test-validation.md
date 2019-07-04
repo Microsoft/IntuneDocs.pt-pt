@@ -16,12 +16,12 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2820007f167b2f79b8dd98ca31d7e50968ac1969
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 7aaeb94aad7e31c3346b088239024c14f9e190da
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046059"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549343"
 ---
 # <a name="intune-testing-and-validation"></a>Teste e validação do Intune
 
@@ -33,17 +33,17 @@ Recomendamos que incorpore a sua equipa de suporte de TI e de suporte técnico n
 
 Recomendamos que documente o seguinte:
 
--   **Critérios de teste:** Identifica avaliados de acordo com os testes de avaliação.
+- **Critérios de teste:** Identifica avaliados de acordo com os testes de avaliação.
 
--   **Componentes de design:** Tem de existir em, pelo menos, um critério de teste.
+- **Componentes de design:** Tem de existir em, pelo menos, um critério de teste.
 
 Se não existir um componente de estrutura em, pelo menos, um critério de teste ajustado a um requisito ou cenário, pondere se o componente de estrutura é necessário ou não. Além disso, certifique-se de que tem os seguintes itens:
 
--   **Contas:** Contas com licenças do EMS e Office 365 para testar todos os cenários de casos de utilização de teste.
+- **Contas:** Contas com licenças do EMS e Office 365 para testar todos os cenários de casos de utilização de teste.
 
--   **Dispositivos:** Dispositivos de teste que podem ser apagados ou repostos para as predefinições de fábrica.
+- **Dispositivos:** Dispositivos de teste que podem ser apagados ou repostos para as predefinições de fábrica.
 
--   **Componentes de integração:** Todos os componentes de integração (conectores de certificado e o conector do Intune Exchange no local) devem ser instalados e configurados, se necessário.
+- **Componentes de integração:** Todos os componentes de integração (conectores de certificado e o conector do Intune Exchange no local) devem ser instalados e configurados, se necessário.
 
 Poderá ser necessário fazer alterações de estrutura para ultrapassar dificuldades imprevistas. Além disso, todas as alterações de estrutura devem ser documentadas com o motivo de cada alteração. Segue-se um exemplo para ilustrar o que poderá ser uma alteração:
 
@@ -51,9 +51,9 @@ Poderá ser necessário fazer alterações de estrutura para ultrapassar dificul
 
 Podem ocorrer problemas que necessitem de orientação técnica ou resolução de problemas especializada durante o processo de teste e validação. Recomendamos que contacte a assistência através dos canais de suporte da Microsoft.
 
--   [Como obter suporte do Intune](get-support.md)
+- [Como obter suporte do Intune](get-support.md)
 
--   [Contactar o suporte assistido por telefone do Microsoft Intune](get-support.md)
+- [Contactar o suporte assistido por telefone do Microsoft Intune](get-support.md)
 
 ## <a name="functional-validation-testing"></a>Teste de validação funcional
 

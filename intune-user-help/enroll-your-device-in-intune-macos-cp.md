@@ -18,12 +18,12 @@ ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fea76693fe929338b29d110c299277e753134cc6
-ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
+ms.openlocfilehash: ee17e963964b6d2e4aa9d3e05c7a562f3c61bbf5
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66196770"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545735"
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>Inscrever o seu dispositivo macOS no Intune com a aplicação Portal da Empresa
 
@@ -63,7 +63,7 @@ Utilize os passos seguintes para inscrever dispositivos macOS com o OS X El Capi
     * Se não tiver todos os dispositivos, a faixa lê: **Não tem quaisquer dispositivos geridos. Adicione este dispositivo ao tocar aqui.** Clique na faixa para adicionar o seu dispositivo.  
 
      ![Uma captura de ecrã da página Dispositivos, com um quadrado vermelho à volta da opção de faixa para realçar a opção a clicar.](./media/CP-enroll-MACOS-1808.png)  
-5.  Conclua o passo abaixo que corresponder à mensagem atualmente apresentada no Portal da Empresa.  
+5. Conclua o passo abaixo que corresponder à mensagem atualmente apresentada no Portal da Empresa.  
     * Se estiver a adicionar um dispositivo pela primeira vez, ser-lhe-á pedido que transfira a aplicação Portal da Empresa no mesmo. Clique em **Transferir** para continuar.  
 
          ![Captura de ecrã de exemplo do ecrã de pedido para transferir a aplicação Portal da Empresa para macOS. O utilizador tem a opção de clicar no botão azul Transferir no canto inferior esquerdo do pedido ou no botão cinzento Cancelar no canto inferior direito.](./media/CP-enroll-download-macOS-1808.png)  

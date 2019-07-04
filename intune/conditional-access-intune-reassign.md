@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dbebcb495298f3e8b17007d1fb00f0362ead4ab8
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 8bcc9aa527ed27ef35db901117ceb8f4c8d10c97
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67530674"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546885"
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>Reatribuir políticas de acesso condicional do portal clássico do Intune do portal do Azure
 
@@ -51,13 +51,13 @@ Se estiver pronto para mudar para o portal do Azure, siga os passos neste tópic
 
 ### <a name="to-verify-your-device-based-conditional-access-policies-in-the-intune-classic-portal"></a>Para verificar as suas políticas de acesso condicional com base no dispositivo no portal clássico do Intune
 
-1.  Aceda ao [portal clássico do Intune](https://manage.microsoft.com) e inicie sessão com as suas credenciais.
+1. Aceda ao [portal clássico do Intune](https://manage.microsoft.com) e inicie sessão com as suas credenciais.
 
-2.  Selecione **Política** no menu à esquerda.
+2. Selecione **Política** no menu à esquerda.
 
-3.  Escolher **acesso condicional**, e, em seguida, selecione o serviço cloud da Microsoft (por exemplo, Exchange Online ou SharePoint Online) que criou uma política de acesso condicional.
+3. Escolher **acesso condicional**, e, em seguida, selecione o serviço cloud da Microsoft (por exemplo, Exchange Online ou SharePoint Online) que criou uma política de acesso condicional.
 
-4.  Tome nota das suas definições de acesso condicional e veja estes quando criar as mesmas políticas de acesso condicional no portal do Azure.
+4. Tome nota das suas definições de acesso condicional e veja estes quando criar as mesmas políticas de acesso condicional no portal do Azure.
 
 ### <a name="app-and-device-based-conditional-access-policies-working-together"></a>Aplicações e políticas de acesso condicional com base no dispositivo a trabalhar em conjunto
 
@@ -194,13 +194,13 @@ Assim que reatribuir as suas políticas de acesso condicional no portal do Azure
 
 ### <a name="to-disable-the-conditional-access-policies"></a>Desativar as políticas de acesso condicional
 
-1.  Aceda ao [portal clássico do Intune](https://manage.microsoft.com) e inicie sessão com as suas credenciais.
+1. Aceda ao [portal clássico do Intune](https://manage.microsoft.com) e inicie sessão com as suas credenciais.
 
-2.  Selecione **Política** no menu à esquerda.
+2. Selecione **Política** no menu à esquerda.
 
-3.  Escolher **acesso condicional**e, em seguida, selecione o serviço cloud da Microsoft (por exemplo, Exchange Online ou SharePoint Online) que criou uma política de acesso condicional.
+3. Escolher **acesso condicional**e, em seguida, selecione o serviço cloud da Microsoft (por exemplo, Exchange Online ou SharePoint Online) que criou uma política de acesso condicional.
 
-4.  Desmarque a opção **política de ativar o acesso condicional**e, em seguida, clique em **guardar**.
+4. Desmarque a opção **política de ativar o acesso condicional**e, em seguida, clique em **guardar**.
 
     ![Imagem das políticas de desativar o acesso condicional no portal clássico do Intune](./media/reassign-ca-18.png)
 

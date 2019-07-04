@@ -17,24 +17,24 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 57ec922d76ca08639139a7d130fb14c5e8bfa413
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 7e69236f7babc974bca0db32245de2323627e494
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046215"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548353"
 ---
 # <a name="develop-a-rollout-communication-plan"></a>Desenvolver um plano de comunicação de implementação
 
 Uma boa gestão da mudança depende de comunicações claras e úteis sobre as alterações futuras. Para facilitar o caminho da sua implementação do Intune, o seu plano de comunicação de implementação deve incluir quatro áreas:
 
--   Que informações serão comunicadas
+- Que informações serão comunicadas
 
--   O método de entrega utilizado para as comunicações
+- O método de entrega utilizado para as comunicações
 
--   Quem receberá as comunicações
+- Quem receberá as comunicações
 
--   A linha cronológica das comunicações
+- A linha cronológica das comunicações
 
 Vamos então rever cada área de forma mais detalhada.
 
@@ -56,13 +56,13 @@ Poderá considerar este [guia de inscrição do utilizador final](https://galler
 
 Há vários métodos de entrega que pode utilizar para comunicar informações relativas à implementação do Intune aos seus grupos organizacionais e utilizadores de destino. A seguinte lista mostra alguns exemplos e a fase com a qual pode utilizar o método:
 
--   Toda a organização presenciais ou reuniões do Microsoft Teams utilizadas na fase inicial
+- Toda a organização presenciais ou reuniões do Microsoft Teams utilizadas na fase inicial
 
--   E-mail utilizado nas fases de pré-inscrição, inscrição e pós-inscrição
+- E-mail utilizado nas fases de pré-inscrição, inscrição e pós-inscrição
 
--   Sites organizacionais utilizados em todas as fases
+- Sites organizacionais utilizados em todas as fases
 
--   Cartazes e panfletos do Yammer utilizados na fase inicial e na fase de pré-inscrição
+- Cartazes e panfletos do Yammer utilizados na fase inicial e na fase de pré-inscrição
 
 ## <a name="communications-timeline"></a>Linha cronológica das comunicações
 

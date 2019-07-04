@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9c304cafa03d9a88831048a271fa4d74b17a944f
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 03b3b38819ea6bd0a34eff5b7eb8decfc2b9eb49
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528744"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548096"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Resolver problemas de inscrição de dispositivos no Microsoft Intune
 
@@ -84,47 +84,47 @@ Para evitar atingir limites de dispositivos, certifique-se de que remove os regi
 
 **Resolução:**
 
-1.  Remova a aplicação Portal da Empresa do Intune do dispositivo.
+1. Remova a aplicação Portal da Empresa do Intune do dispositivo.
 
-2.  No dispositivo, abra o browser, navegue para [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com) e experimente um início de sessão do utilizador.
+2. No dispositivo, abra o browser, navegue para [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com) e experimente um início de sessão do utilizador.
 
-3.  Se o utilizador não conseguir iniciar sessão, deverá experimentar outra rede.
+3. Se o utilizador não conseguir iniciar sessão, deverá experimentar outra rede.
 
-4.  Se não conseguir, confirme se as credenciais do utilizador foram sincronizadas corretamente com o Azure Active Directory.
+4. Se não conseguir, confirme se as credenciais do utilizador foram sincronizadas corretamente com o Azure Active Directory.
 
-5.  Se o utilizador iniciar sessão com êxito, um dispositivo iOS pedirá para instalar a aplicação Portal da Empresa do Intune e inscrever. Num dispositivo Android, terá de instalar manualmente a aplicação Portal da Empresa do Intune, podendo a seguir repetir a inscrição.
+5. Se o utilizador iniciar sessão com êxito, um dispositivo iOS pedirá para instalar a aplicação Portal da Empresa do Intune e inscrever. Num dispositivo Android, terá de instalar manualmente a aplicação Portal da Empresa do Intune, podendo a seguir repetir a inscrição.
 
 ### <a name="mdm-authority-not-defined"></a>Autoridade de MDM não definida
 **Problema:** Um utilizador recebe uma **autoridade MDM não definida** erro.
 
 **Resolução:**
 
-1.  Verifique se a Autoridade MDM foi [definida adequadamente](mdm-authority-set.md).
+1. Verifique se a Autoridade MDM foi [definida adequadamente](mdm-authority-set.md).
     
-2.  Confirme se as credenciais do utilizador foram sincronizadas corretamente com o Azure Active Directory. Pode verificar se o UPN do utilizador corresponde ao informações do Active Directory no Centro de administração do Microsoft 365.
+2. Confirme se as credenciais do utilizador foram sincronizadas corretamente com o Azure Active Directory. Pode verificar se o UPN do utilizador corresponde ao informações do Active Directory no Centro de administração do Microsoft 365.
     Se o UPN não corresponder às informações do Active Directory:
 
-    1.  Desative o DirSync no servidor local.
+    1. Desative o DirSync no servidor local.
 
-    2.  Elimine o utilizador sem correspondência da lista de utilizadores **Portal de Contas do Intune**.
+    2. Elimine o utilizador sem correspondência da lista de utilizadores **Portal de Contas do Intune**.
 
-    3.  Aguarde cerca de uma hora para permitir que o serviço do Azure remova os dados incorretos.
+    3. Aguarde cerca de uma hora para permitir que o serviço do Azure remova os dados incorretos.
 
-    4.  Ative novamente o DirSync e verifique se o utilizador está agora sincronizado corretamente.
+    4. Ative novamente o DirSync e verifique se o utilizador está agora sincronizado corretamente.
 
-3.  Num cenário em que esteja a utilizar o System Center Configuration Manager com o Intune, verifique se o utilizador tem um ID de Utilizador de Cloud válido:
+3. Num cenário em que esteja a utilizar o System Center Configuration Manager com o Intune, verifique se o utilizador tem um ID de Utilizador de Cloud válido:
 
-    1.  Abra o SQL Management Studio.
+    1. Abra o SQL Management Studio.
 
-    2.  Ligue à BD adequada.
+    2. Ligue à BD adequada.
 
-    3.  Abra a pasta de bases de dados e localize e abra a pasta **CM_DBName**, em que DBName é o nome da base de dados do cliente.
+    3. Abra a pasta de bases de dados e localize e abra a pasta **CM_DBName**, em que DBName é o nome da base de dados do cliente.
 
-    4.  Na parte superior, escolha **Nova Consulta** e execute as seguintes consultas:
+    4. Na parte superior, escolha **Nova Consulta** e execute as seguintes consultas:
 
-        -   Para ver todos os utilizadores: `select * from [CM_ DBName].[dbo].[User_DISC]`
+        - Para ver todos os utilizadores:   `select * from [CM_ DBName].[dbo].[User_DISC]`
 
-        -   Para ver Utilizadores Específicos, utilize a consulta seguinte, em que %testuser1% é um marcador de posição para o username@domain.com do utilizador que pretende procurar: `select * from [CM_ DBName].[dbo].[User_DISC] where User_Principal_Name0 like '%testuser1%'`
+        - Para ver utilizadores específicos, utilize a seguinte consulta, em que % testuser1% é um marcador de posição para username@domain.com para o utilizador que pretende procurar:   `select * from [CM_ DBName].[dbo].[User_DISC] where User_Principal_Name0 like '%testuser1%'`
 
         Depois de escrever a consulta, selecione **!Execute**.
         Depois de devolvidos os resultados, procure o ID clouduser.  Se não for encontrado nenhum ID, o utilizador não está licenciado para utilizar o Intune.
@@ -212,13 +212,13 @@ Se a Resolução n.º 2 não funcionar, solicite aos seus utilizadores que sigam
 
 **Resolução:**
 
-1.  Confirme que foi atribuída ao utilizador uma licença adequada para a versão do serviço Intune que estiver a utilizar.
+1. Confirme que foi atribuída ao utilizador uma licença adequada para a versão do serviço Intune que estiver a utilizar.
 
-2.  Confirme se o dispositivo já está inscrito noutro fornecedor de MDM.
+2. Confirme se o dispositivo já está inscrito noutro fornecedor de MDM.
 
 3. Confirme se o dispositivo tem um perfil de gestão instalado.
 
-4.  Confirme que o Chrome para Android é o browser predefinido e que os cookies estão ativados.
+4. Confirme que o Chrome para Android é o browser predefinido e que os cookies estão ativados.
 
 ### <a name="android-certificate-issues"></a>Problemas de certificados do Android
 
@@ -321,15 +321,15 @@ Para obter mais informações, veja o artigo [Práticas recomendadas para proteg
 
 ### <a name="troubleshooting-steps-for-failed-profile-installation"></a>Passos de resolução de problemas para a falha na instalação do perfil
 
-1.  Confirme que foi atribuída ao utilizador uma licença adequada para a versão do serviço Intune que estiver a utilizar.
+1. Confirme que foi atribuída ao utilizador uma licença adequada para a versão do serviço Intune que estiver a utilizar.
 
-2.  Confirme se o dispositivo já está inscrito noutro fornecedor de MDM.
+2. Confirme se o dispositivo já está inscrito noutro fornecedor de MDM.
 
 3. Confirme se o dispositivo já tem um perfil de gestão instalado.
 
-4.  Navegue para [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com) e tente instalar o perfil quando lhe for pedido.
+4. Navegue para [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com) e tente instalar o perfil quando lhe for pedido.
 
-5.  Confirme que o Safari para iOS é o browser predefinido e que os cookies estão ativados.
+5. Confirme que o Safari para iOS é o browser predefinido e que os cookies estão ativados.
 
 ### <a name="enrolled-ios-device-doesnt-appear-in-console-when-using-system-center-configuration-manager-with-intune"></a>Os dispositivos iOS inscritos não aparecem na consola ao utilizar o System Center Configuration Manager com o Intune
 **Problema:** Utilizador inscreve o dispositivo iOS, mas não aparecer na consola de administração do Configuration Manager. O dispositivo não indica que foi inscrito. Causas possíveis:
@@ -428,17 +428,17 @@ Para validar e verificar que processo ou conta de utilizador removeu o dispositi
 
 #### <a name="check-how-device-was-removed"></a>Verificar como o dispositivo foi removido
 
-1.  Na consola de administração do Configuration Manager, selecione **Monitorização** &gt; **Estado do Sistema** &gt; **Consultas de Mensagens de Estado**.
+1. Na consola de administração do Configuration Manager, selecione **Monitorização** &gt; **Estado do Sistema** &gt; **Consultas de Mensagens de Estado**.
 
-2.  Clique com o botão direito do rato em **Recursos Membros da Coleção Eliminados Manualmente** e selecione **Mostrar Mensagens**.
+2. Clique com o botão direito do rato em **Recursos Membros da Coleção Eliminados Manualmente** e selecione **Mostrar Mensagens**.
 
-3.  Escolha uma data/hora adequada ou as últimas 12 horas.
+3. Escolha uma data/hora adequada ou as últimas 12 horas.
 
-4.  Localize o dispositivo em questão e reveja a forma como foi removido. O exemplo abaixo mostra que a conta SCCMInstall eliminou o dispositivo através de uma Aplicação Desconhecida.
+4. Localize o dispositivo em questão e reveja a forma como foi removido. O exemplo abaixo mostra que a conta SCCMInstall eliminou o dispositivo através de uma Aplicação Desconhecida.
 
     ![Captura de ecrã do diagnóstico de eliminação do dispositivo](./media/troubleshoot-device-enrollment-in-intune/CM_With_Intune_Unknown_App_Deleted_Device.jpg)
 
-5.  Verifique se o Configuration Manager tem uma tarefa agendada, script ou outro processo que possa estar a remover automaticamente dispositivos não associados ao domínio, móveis ou relacionados.
+5. Verifique se o Configuration Manager tem uma tarefa agendada, script ou outro processo que possa estar a remover automaticamente dispositivos não associados ao domínio, móveis ou relacionados.
 
 ### <a name="other-ios-enrollment-errors"></a>Outros erros de inscrição do iOS
 É fornecida uma lista dos erros de inscrição de dispositivos iOS na nossa documentação, em [Troubleshooting iOS device enrollment problems in Microsoft Intune](https://support.microsoft.com/help/4039809/troubleshooting-ios-device-enrollment-in-intune) (Resolução de problemas de inscrição de dispositivos iOS no Microsoft Intune).

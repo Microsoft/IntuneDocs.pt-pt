@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/08/2019
+ms.date: 07/03/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,51 +17,48 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f97b3365036271a7f41e7c3274e8a3bd966407f3
-ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
+ms.openlocfilehash: d4d12f9e04d275e18c5cf36b444bf1e050560765
+ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67512150"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67558378"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Como gerir a transferência de dados entre aplicações iOS no Microsoft Intune
 
 Para ajudar a proteger dados da empresa, restringir as transferências de ficheiros a apenas as aplicações que gere. Pode gerir aplicações iOS das seguintes formas:
 
--   Impedir a perda de dados da empresa ao configurar uma política de proteção de aplicações para as aplicações, o que chamamos **geridas por políticas** aplicações. Veja [todas as aplicações geridas pelo Intune que pode gerir com a política de proteção de aplicações](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)
+- Impedir a perda de dados da empresa ao configurar uma política de proteção de aplicações para as aplicações, o que chamamos **geridas por políticas** aplicações. Veja [todas as aplicações geridas pelo Intune que pode gerir com a política de proteção de aplicações](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)
 
--   Implementar e gerir aplicações através da **canal MDM**, que requer dispositivos a inscrever-se numa solução de gestão de dispositivos móveis (MDM). As aplicações que implementar podem ser **geridas por políticas** ou outras aplicações geridas.
+- Implementar e gerir aplicações através da **canal MDM**, que requer dispositivos a inscrever-se numa solução de gestão de dispositivos móveis (MDM). As aplicações que implementar podem ser **geridas por políticas** ou outras aplicações geridas.
 
 A funcionalidade **Gestão Open in** dos dispositivos iOS pode limitar as transferências de ficheiros entre as aplicações que são implementadas através do **canal MDM**. Definir *gestão Open in* restrições nas definições de configuração e, em seguida, implementá-las com a sua solução de MDM.  Quando um utilizador instala a aplicação implementada, são aplicadas as restrições definidas.
 
 ## <a name="use-app-protection-with-ios-apps"></a>Utilizar a proteção de aplicações com aplicações iOS
 Utilizar políticas de proteção de aplicações com o iOS **gestão Open in** para proteger os dados da empresa das seguintes formas:
 
--   **Dispositivos de funcionários não geridos por nenhuma solução MDM:** A proteção de aplicações pode configurar definições de política **permitir que a aplicação transfira dados apenas aplicações geridas por políticas**. O *Open-In* comportamento das aplicações geridas por políticas apresenta apenas outras aplicações geridas por políticas como opções para a partilha. Se um utilizador tentar enviar um ficheiro protegido por políticas como um anexo do OneDrive na aplicação de e-mail nativo, esse ficheiro é ilegível.
+- **Dispositivos de funcionários não geridos por nenhuma solução MDM:** A proteção de aplicações pode configurar definições de política **permitir que a aplicação transfira dados apenas aplicações geridas por políticas**. O *Open-In* comportamento das aplicações geridas por políticas apresenta apenas outras aplicações geridas por políticas como opções para a partilha. Se um utilizador tentar enviar um ficheiro protegido por políticas como um anexo do OneDrive na aplicação de e-mail nativo, esse ficheiro é ilegível.
 
--   **Dispositivos geridos pelo Intune:** Para dispositivos inscritos no Intune, transferência de dados entre aplicações com políticas de proteção de aplicações e outras aplicações iOS geridas implementadas através do Intune é permitida automaticamente. Para especificar como pretende permitir a transferência de dados para outras aplicações, ative **permitir que a aplicação transfira dados para outras aplicações** e, em seguida, escolha o seu nível favorito de compartilhamento. Para especificar como pretende permitir que uma aplicação receba dados de outras aplicações, ative **permitir que a aplicação receba dados de outras aplicações** e, em seguida, escolha o seu nível favorito de receção de dados. Pode utilizar a funcionalidade **Gestão Open in** para controlar a transferência de dados entre as aplicações que são implementadas através do Intune. Para obter mais informações sobre a receção e partilha de dados de aplicações, veja [Definições de reposicionamento de dados](app-protection-policy-settings-ios.md#data-protection).   
-
--   **Dispositivos geridos por uma solução MDM de terceiros:** Pode restringir a transferência de dados apenas às aplicações geridas utilizando o iOS **gestão Open in** funcionalidade.
-Para certificar-se de que as aplicações que implementar através de uma solução MDM de terceiros também estão associadas com as políticas de proteção de aplicações do Intune, configure a definição de UPN do utilizador, conforme descrito na seção a seguir, [configurar a definição de UPN do utilizador](#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm). Quando implementar aplicações com a definição de UPN do utilizador, aplicam as políticas de proteção de aplicações à aplicação quando o utilizador inicia sessão com a respetiva conta de trabalho.
+- **Dispositivos geridos por soluções MDM**: Para dispositivos inscritos no Intune ou soluções MDM de terceiros, a partilha de dados entre aplicações com políticas de proteção de aplicações e outras aplicações iOS geridas implementadas através de MDM são controlados pelas políticas de aplicações do Intune e do iOS **gestão Open in** funcionalidade. Para certificar-se de que as aplicações que implementar através de uma solução MDM também estão associadas com as políticas de proteção de aplicações do Intune, configure a definição de UPN do utilizador, conforme descrito na seção a seguir, [configurar a definição de UPN do utilizador](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm). Para especificar como pretende permitir a transferência de dados para outras aplicações, ative **Org enviar dados para outras aplicações** e, em seguida, escolha o seu nível favorito de compartilhamento. Para especificar como pretende permitir que uma aplicação receba dados de outras aplicações, ative **receba dados de outras aplicações** e, em seguida, escolha o seu nível favorito de receção de dados. Para obter mais informações sobre a receção e partilha de dados de aplicações, veja [Definições de reposicionamento de dados](app-protection-policy-settings-ios.md#data-protection).
 
 ## <a name="configure-user-upn-setting-for-microsoft-intune-or-third-party-emm"></a>Configurar a definição de UPN do utilizador para o Microsoft Intune ou EMM de terceiros
 A configuração da definição de UPN do utilizador é **obrigatória** para dispositivos geridos pelo Intune ou por uma solução de EMM de terceiros. A configuração de UPN funciona com as políticas de proteção de aplicações que implementar a partir do Intune. O procedimento seguinte é um fluxo geral sobre como configurar a definição de UPN e a experiência do usuário resultante:
 
-1.  No [portal do Azure](https://portal.azure.com), [crie e atribua uma política de proteção de aplicações](app-protection-policies.md) para dispositivos iOS. Configure definições de política em conformidade com os requisitos da sua empresa e selecione as aplicações iOS que devem ter esta política.
+1. No [portal do Azure](https://portal.azure.com), [crie e atribua uma política de proteção de aplicações](app-protection-policies.md) para dispositivos iOS. Configure definições de política em conformidade com os requisitos da sua empresa e selecione as aplicações iOS que devem ter esta política.
 
-2.  Implemente as aplicações e o perfil de e-mail que pretende que sejam geridos através do Intune ou a sua solução de MDM de terceiros através dos seguintes passos generalizados. Esta experiência também é abrangida pelo *exemplo 1*.
+2. Implemente as aplicações e o perfil de e-mail que pretende que sejam geridos através do Intune ou a sua solução de MDM de terceiros através dos seguintes passos generalizados. Esta experiência também é abrangida pelo *exemplo 1*.
 
-3.  Implemente a aplicação com as seguintes definições de configuração de aplicação no dispositivo gerido:
+3. Implemente a aplicação com as seguintes definições de configuração de aplicação no dispositivo gerido:
 
       **key** = IntuneMAMUPN, **value** = <username@company.com>
 
       Exemplo: [‘IntuneMAMUPN’, ‘jondoe@microsoft.com’]
       
        > [!NOTE]
-       > No Intune, a política de configuração de aplicação tem de ser de tipo de inscrição "Dispositivos geridos pelo".
-       > Addicionally, a aplicação tem de ser instalado a partir do Portal da empresa do Intune se definido como disponível ou enviada por push conforme necessário para o dispositivo. 
+       > In Intune, the App Configuration policy has to be for enrollment type "Managed Devices".
+       > Addicionally, the App needs to be either installed from the Intune Company Portal if set as available or pushed as required to the device. 
 
-4.  Implemente a política **Gestão Open In** ao utilizar o Intune ou o seu fornecedor de MDM de terceiros nos dispositivos inscritos.
+4. Implemente a política **Gestão Open In** ao utilizar o Intune ou o seu fornecedor de MDM de terceiros nos dispositivos inscritos.
 
 
 ### <a name="example-1-admin-experience-in-intune-or-third-party-mdm-console"></a>Exemplo 1: Experiência de administrador no Intune ou a consola MDM de terceiros
@@ -85,20 +82,20 @@ A configuração da definição de UPN do utilizador é **obrigatória** para di
 
 ### <a name="example-2-end-user-experience"></a>Exemplo 2: Experiência do utilizador final
 
-1.  Um utilizador instala a aplicação Microsoft Word num dispositivo.
+1. Um utilizador instala a aplicação Microsoft Word num dispositivo.
 
-2.  O utilizador inicia a aplicação de e-mail nativa gerida para aceder ao e-mail.
+2. O utilizador inicia a aplicação de e-mail nativa gerida para aceder ao e-mail.
 
-3.  O utilizador tenta abrir um documento de e-mail nativa no Microsoft Word.
+3. O utilizador tenta abrir um documento de e-mail nativa no Microsoft Word.
 
-4.  Quando inicia a aplicação Word, é pedido ao utilizador iniciar sessão com a respetiva conta profissional. A conta que o usuário insere deve coincidir com a conta especificada nas definições de configuração da aplicação para a aplicação Microsoft Word.
+4. Quando inicia a aplicação Word, é pedido ao utilizador iniciar sessão com a respetiva conta profissional. A conta que o usuário insere deve coincidir com a conta especificada nas definições de configuração da aplicação para a aplicação Microsoft Word.
 
     > [!NOTE]
     > O utilizador pode adicionar e utilizar as respetivas contas pessoais com o Word. Políticas de proteção de aplicações não se aplicam quando o utilizador utiliza o Word fora do contexto de trabalho. 
 
-5.  Após o início de sessão, as definições de política de proteção de aplicações aplicam-se à aplicação Word.
+5. Após o início de sessão, as definições de política de proteção de aplicações aplicam-se à aplicação Word.
 
-6.  A transferência de dados será efetuada e o documento será etiquetado com uma identidade da empresa na aplicação.  Os dados são tratados num contexto de trabalho e definições de política aplicam-se. 
+6. A transferência de dados será efetuada e o documento será etiquetado com uma identidade da empresa na aplicação.  Os dados são tratados num contexto de trabalho e definições de política aplicam-se. 
 
 ### <a name="validate-user-upn-setting-for-third-party-emm"></a>Validar a definição de UPN de utilizador para EMM de terceiros
 

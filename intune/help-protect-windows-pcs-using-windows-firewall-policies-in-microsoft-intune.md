@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f3b552c42a7a84ad8099a406bfff2db575785915
-ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.openlocfilehash: bc338b30996d0ca31b2dd59a6c934f680f57c0d1
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67403022"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67547548"
 ---
 # <a name="help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune"></a>Ajudar a proteger PCs com o Windows a utilizarem políticas de Firewall do Windows no Microsoft Intune
 
@@ -48,14 +48,14 @@ A política da Firewall do Windows permite-lhe criar e implementar definições 
 > [!IMPORTANT]
 > Para gerir a Firewall do Windows com o Intune, certifique-se de que os dois serviços seguintes estão ativados nos computadores que está a gerir:
 >
-> -   Firewall do Windows
-> -   Agente de Política IPsec
+> - Firewall do Windows
+> - Agente de Política IPsec
 
 ## <a name="configure-a-windows-firewall-policy"></a>Configurar uma política da Firewall do Windows
 
-1.  Na [consola de administração do Microsoft Intune](https://manage.microsoft.com/), selecione **Política** &gt; **Adicionar Política**.
+1. Na [consola de administração do Microsoft Intune](https://manage.microsoft.com/), selecione **Política** &gt; **Adicionar Política**.
 
-2.  Configure e implemente uma política das **Definições da Firewall do Windows**. Pode utilizar as definições recomendadas ou personalizar as mesmas. Se precisar de mais informações sobre como criar e implementar políticas, veja o artigo [Tarefas de gestão comuns do PC Windows com o computador cliente do Microsoft Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).
+2. Configure e implemente uma política das **Definições da Firewall do Windows**. Pode utilizar as definições recomendadas ou personalizar as mesmas. Se precisar de mais informações sobre como criar e implementar políticas, veja o artigo [Tarefas de gestão comuns do PC Windows com o computador cliente do Microsoft Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).
 
     A secção seguinte apresenta uma lista dos valores que pode configurar na política, bem como dos valores predefinidos que serão utilizados se não personalizar a política.
 

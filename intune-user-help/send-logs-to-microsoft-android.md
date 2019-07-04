@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0001175b84c2548c1fb93090f9ce6fd3193f21a3
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 20bdfcce6574d31c37442a7bad58582aa7ea2fb6
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528923"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546140"
 ---
 # <a name="send-logs-to-the-company-portal-developers-for-android-devices"></a>Enviar registos dos dispositivos Android para os programadores do Portal da Empresa
 
@@ -34,16 +34,16 @@ Por vezes, a aplicação Portal da Empresa poderá fechar inesperadamente. Os pr
 
 Para enviar registos para a Microsoft:
 
-1.  Abra a aplicação Portal da Empresa.
+1. Abra a aplicação Portal da Empresa.
 
-2.  Toque em **Menu** > **Ajuda** > **Enviar e-mail à Equipa de Suporte**.
+2. Toque em **Menu** > **Ajuda** > **Enviar e-mail à Equipa de Suporte**.
 
     > [!NOTE]
     > **Menu** pode ser um botão de software ou um botão de hardware, consoante o dispositivo Android que tem.
 
-3.  Toque em **Carregar Apenas Registos**.
+3. Toque em **Carregar Apenas Registos**.
 
-4.  Depois de o carregamento estar concluído, irá receber um ID do incidente. Guarde o ID dos seus registos.
+4. Depois de o carregamento estar concluído, irá receber um ID do incidente. Guarde o ID dos seus registos.
 
 Para contactar diretamente a equipa do Portal da Empresa para Android, envie um e-mail através do endereço <a href="mailto:wintunedroidfbk@microsoft.com?subject=Send logs to Microsoft&body=Describe the issue you are having.">wintunedroidfbk@microsoft.com</a>. 
 

@@ -18,12 +18,12 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c7265eb7b4679d72fa6ab348c17f9f4f7508482e
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: f6e73b784f0e938058dcb9d6001082f86ac800ff
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61505000"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545654"
 ---
 # <a name="your-computer-is-already-enrolled"></a>O seu computador já está inscrito
 
@@ -31,11 +31,11 @@ Se obtiver um erro a indicar que o computador já está inscrito, significa que 
 
 Para ligar o seu computador:
 
-1.  No computador que pretende ligar à sua conta, selecione **Início** e, em seguida, selecione **Microsoft Intune Center**.
+1. No computador que pretende ligar à sua conta, selecione **Início** e, em seguida, selecione **Microsoft Intune Center**.
 
-2.  Abra o Portal da Empresa.
+2. Abra o Portal da Empresa.
 
-3.  Siga os pedidos para ligar o computador à sua conta de utilizador.
+3. Siga os pedidos para ligar o computador à sua conta de utilizador.
 
 Se preferir de anular a inscrição do seu dispositivo, utilize as instruções para o tipo de dispositivo que tem: [Android](unenroll-your-device-from-intune-android.md), [iOS](unenroll-your-device-from-intune-ios.md), ou [Windows](unenroll-your-device-from-intune-windows.md).
 

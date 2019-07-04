@@ -18,12 +18,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 798ea14529c0cbf44a0530f1a9a16507b14d7397
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 2c0d3484311d044842daf6718b306d45fc93edf2
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67527831"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545932"
 ---
 # <a name="enroll-device-for-access-to-work-or-school-resources"></a>Inscrever o dispositivo para o acesso ao trabalho ou escola recursos
 Para inscrever o seu dispositivo e obter acesso ao e-mail e aplicações, terá de instalar a aplicação Portal da empresa do Intune ou a aplicação Microsoft Intune. Quando inscreve, as políticas de gestão básicas que tiver configurado a sua organização, como palavra-passe, PIN e encriptação, são aplicadas para o seu dispositivo. Assim que as definições de dispositivo cumprem todos os requisitos da sua organização, pode aceder em segurança as suas informações de trabalho de qualquer lugar.  
@@ -53,13 +53,13 @@ A aplicação Portal da empresa está disponível para dispositivos Android, mac
 É a aplicação Microsoft Intune para dispositivos Android pertencentes à empresa.  
 
 ## <a name="what-kind-of-devices-can-you-enroll-with-company-portal"></a>Que tipos de dispositivos pode inscrever no Portal da empresa?
--   Dispositivos Apple com iOS (como iPhone e iPad) e macOS (como MacBook e iMac)
--   Dispositivos Android
--   Dispositivos Windows
-    -   Windows 10 Mobile
-    -   Computadores com o Windows 10
-    -   Windows Phone 8.1
-    -   Windows 8.1
+- Dispositivos Apple com iOS (como iPhone e iPad) e macOS (como MacBook e iMac)
+- Dispositivos Android
+- Dispositivos Windows
+    - Windows 10 Mobile
+    - Computadores com o Windows 10
+    - Windows Phone 8.1
+    - Windows 8.1
 
 ## <a name="what-kind-of-devices-can-you-enroll-with-the-microsoft-intune-app"></a>Que tipos de dispositivos pode inscrever com a aplicação Microsoft Intune?  
 Pode inscrever dispositivos Android pertencentes à empresa que sua organização tiver configurado para utilizar com a aplicação. A aplicação suporte o Android 6.0 e posterior. 

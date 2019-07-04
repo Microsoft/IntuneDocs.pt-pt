@@ -18,17 +18,17 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cbf3f053146d7243a397d0fb802718d48300ef20
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: bbd4f8f0925aac5aada44277c4d21a71b412e0e7
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528724"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546685"
 ---
 # <a name="troubleshoot-your-windows-10-device-enrollment"></a>Resolver problemas de inscrição no dispositivo Windows 10
 Se tiver inscrito o seu dispositivo, mas continua sem aceder ao seu trabalho ou e-mail e ficheiros escolares, experimente estes passos de resolução de problemas.  
 
-1.  Observe os dois ecrãs abaixo e veja qual deles se parece com o que vê no seu dispositivo. Siga os passos que acompanham o ecrã que aparece no seu dispositivo.
+1. Observe os dois ecrãs abaixo e veja qual deles se parece com o que vê no seu dispositivo. Siga os passos que acompanham o ecrã que aparece no seu dispositivo.
 
     Se vir este ecrã, siga os passos em [Passos de resolução de problemas a seguir se vir Acesso profissional ou escolar](#troubleshooting-steps-to-follow-if-you-see-access-work-or-school).
 
