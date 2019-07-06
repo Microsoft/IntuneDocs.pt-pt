@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0bf75aca7035eb2873f84f76d3c9ee0e00df7fb3
-ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.openlocfilehash: 3fb85cc2847c235f7f8079715dee6a2d924f0ac8
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67494534"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67572588"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>Implementação híbrida do Azure AD associado dispositivos com o Intune e o Windows Autopilot
 Pode utilizar o Intune e o Windows Autopilot para configurar híbrida do Azure Active Directory (Azure AD)-dispositivos associados a um. Para tal, siga os passos neste artigo.
@@ -139,7 +139,7 @@ Se tiver um proxy web no seu ambiente de rede, certifique-se de que o conector d
 
 1. Se tiver selecionado **dispositivos dinâmica** para o tipo de associação, no **grupo** painel, selecione **membros de dispositivo dinâmicos** e, em seguida, no **regra avançada** caixa, efetue um dos seguintes procedimentos:
     - Para criar um grupo que inclua todos os seus dispositivos Autopilot, introduza `(device.devicePhysicalIDs -any _ -contains "[ZTDId]")`.
-    - Campo de etiqueta de grupo do Intune mapeia para o atributo de OrderID em dispositivos do Azure AD. Se pretender criar um grupo que inclua todos os seus dispositivos Autopilot com um Tag(OrderID) grupo específico, tem de escrever: `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`
+    - Campo de etiqueta de grupo do Intune mapeia para o atributo de OrderID em dispositivos do Azure AD. Se pretender criar um grupo que inclua todos os seus dispositivos Autopilot com um Tag(OrderID) grupo específico, tem de escrever: `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`
     - Para criar um grupo que inclua todos os seus dispositivos Autopilot com um ID de ordem de compra específico, introduza `(device.devicePhysicalIds -any _ -eq "[PurchaseOrderId]:76222342342")`.
     
 1. Selecione **Guardar**.

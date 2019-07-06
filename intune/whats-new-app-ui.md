@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 87e3b6bf1acbce88b45c9ebc78c45279d718a44c
-ms.sourcegitcommit: 46f4d3d160e18aeab9de7477eedc8351fbb78c85
+ms.openlocfilehash: c8e87f8df43468428877d93be03e6f2d7316de9a
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "67468748"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67572625"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Atualização da IU para aplicações de utilizadores finais do Intune
 Saiba mais sobre as atualizações mais recentes para as aplicações do Microsoft Intune. Adicionamos regularmente para e melhorar a aplicação Portal da empresa do Intune e o Web site. Se for um administrador do Intune ou pessoa de suporte, este artigo fornece as informações que necessárias para:
@@ -246,7 +246,7 @@ Estamos ainda a aperfeiçoar a forma como a relevância é controlada, pelo que 
 ## <a name="week-of-october-16-2017"></a>Semana de 16 de outubro de 2017
 
 ### <a name="search-improvements-to-the-company-portal-website----1331697---"></a>Melhorias na pesquisa no site do Portal da empresa <!-- 1331697 -->
-Estamos a melhorar as nossas capacidades de pesquisa da aplicação, a começar com o [site do Portal da Empresa](https://portal.manage.microsoft.com). As pesquisas serão agora efetuadas em categorias de aplicações para além dos campos Nome e Descrição. Os resultados serão ordenados, por predefinição, por ordem decrescente de relevância. 
+Estamos a melhorar as nossas capacidades de pesquisa da aplicação, a começar com o [site do Portal da Empresa](https://portal.manage.microsoft.com). As pesquisas serão agora efetuadas em categorias de aplicações para além dos campos Nome e Descrição. Os resultados serão ordenados, por predefinição, por ordem decrescente de relevância. 
 
 Os utilizadores do iOS também receberão esta alteração, uma vez que o site do Portal da Empresa também é utilizado como parte da aplicação Portal da Empresa para iOS. As aplicações do Portal da Empresa para Android e Windows irão receber atualizações semelhantes nos próximos meses.
 
@@ -260,7 +260,7 @@ Esta versão corrige um problema conhecido sobre a forma como o Portal da Empres
 ## <a name="week-of-october-2-2017"></a>Semana de 2 de outubro de 2017
 
 ### <a name="improvements-to-device-setup-workflow-in-company-portal----1490692---"></a>Melhorias no fluxo de trabalho da configuração de dispositivos no Portal da Empresa <!-- 1490692 -->
-Melhorámos o fluxo de trabalho da configuração de dispositivos na aplicação Portal da Empresa para Android. O tipo de linguagem é mais simples e específico para a sua empresa. Além disso, combinámos os ecrãs sempre que possível. 
+Melhorámos o fluxo de trabalho da configuração de dispositivos na aplicação Portal da Empresa para Android. O tipo de linguagem é mais simples e específico para a sua empresa. Além disso, combinámos os ecrãs sempre que possível. 
 
 |Antes|Depois|
 |---|---|
@@ -288,7 +288,7 @@ Também atualizámos o ecrã de ativação de e-mail de acesso condicional.
 
 ## <a name="week-of-september-11-2017"></a>Semana de 11 de setembro de 2017
 
-### <a name="easier-to-understand-phrasing-for-the-company-portal-app-for-android----1396349---"></a>Linguagem de compreensão mais fácil na aplicação Portal da Empresa para Android <!-- 1396349 -->  
+### <a name="easier-to-understand-phrasing-for-the-company-portal-app-for-android----1396349---"></a>Linguagem de compreensão mais fácil na aplicação Portal da Empresa para Android <!-- 1396349 -->  
 
 O texto do processo de inscrição da aplicação Portal da Empresa para Android foi simplificado para facilitar a inscrição dos utilizadores finais. Se tiver documentação de inscrição personalizada, deve atualizá-la para refletir os novos ecrãs. Encontrará imagens de exemplo abaixo:
 
@@ -305,7 +305,7 @@ O texto do processo de inscrição da aplicação Portal da Empresa para Android
 
 ### <a name="ios-11-mail-app-will-support-oauth----1196951---"></a>aplicação de correio iOS 11 suportará o OAuth <!-- 1196951 -->
 
-Acesso condicional com o Intune suporta uma autenticação mais segura em dispositivos iOS com o OAuth. Para suportar esta funcionalidade, haverá agora um fluxo diferente na aplicação Portal da Empresa para iOS, para permitir uma autenticação mais segura. Quando os utilizadores finais tentarem iniciar sessão numa nova conta do Exchange na aplicação Mail, verão uma mensagem na vista Web. Após a inscrição no Intune, os utilizadores verão uma mensagem para permitir que a aplicação Mail nativa aceda a um certificado. A maioria dos utilizadores finais não verá mais e-mails em quarentena. As contas de e-mail existentes continuarão a utilizar o protocolo de autenticação básico, por isso estes utilizadores continuarão a receber e-mails em quarentena. A experiência de início de sessão dos utilizadores finais é semelhante à das aplicações do Office para dispositivos móveis.
+Acesso condicional com o Intune suporta uma autenticação mais segura em dispositivos iOS com o OAuth. Para suportar esta funcionalidade, haverá agora um fluxo diferente na aplicação Portal da Empresa para iOS, para permitir uma autenticação mais segura. Quando os utilizadores finais tentarem iniciar sessão numa nova conta do Exchange na aplicação Mail, verão uma mensagem na vista Web. Após a inscrição no Intune, os utilizadores verão uma mensagem para permitir que a aplicação Mail nativa aceda a um certificado. A maioria dos utilizadores finais não verá mais e-mails em quarentena. As contas de e-mail existentes continuarão a utilizar o protocolo de autenticação básico, por isso estes utilizadores continuarão a receber e-mails em quarentena. A experiência de início de sessão dos utilizadores finais é semelhante à das aplicações do Office para dispositivos móveis.
 
 ![Selecionar o tipo de conta na aplicação de e-mail nativa.](./media/ios-11-ca-email-after-1708-01.png)
 

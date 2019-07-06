@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9d8cd91d55c90fd4b4f26ee0e6b1b99d37bcce08
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: da828b162e008541cb5cb2b5d15092d0fce417c5
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67547604"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67572541"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune"></a>Configurar o Exchange connector do Intune no local no Microsoft Intune
 As informações neste artigo irão ajudá-lo a instalar e, em seguida, monitorizar o conector do Exchange Active Sync no local para o Intune.  Utilizar o Exchange connector do Intune no local com o seu [políticas de acesso condicional para permitir ou bloquear o acesso ao seu Exchange no local caixas de correio](conditional-access-exchange-create.md). 
@@ -73,7 +73,7 @@ Crie uma conta de utilizador do Active Directory que será utilizada pelo conect
 
 ## <a name="download-the-on-premises-exchange-connector-software-installation-package"></a>Transferir o pacote de instalação de software do Exchange Connector no local
 
-1. Num sistema operativo Windows Server suportado pelo conector do Exchange no local, abra o [portal do Azure](https://portal.azure.com) e inicie sessão com uma conta de utilizador que seja administrador no servidor do Exchange no local e tenha uma licença para utilizar o Exchange Server.
+1. Num sistema operativo Windows Server suportado para o Exchange Connector no local, abra o [portal do Azure](https://portal.azure.com) e inicie sessão com uma conta de utilizador que seja administrador no servidor do Exchange no local e tenha uma licença para utilizar o Exchange Server.
 
 2. Aceda a **Intune** > **acesso ao Exchange**  
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a2fb3e31c58d9eab073ceed7dde27099177eed3b
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: e78c9034058a5f60f01056711465b28deca77d83
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67547620"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67572168"
 ---
 # <a name="integrate-zimperium-with-intune"></a>Integrar o Zimperium com o Intune
 
@@ -31,7 +31,7 @@ Tem de realizar os passos seguintes para integrar a solução de Defesa Contra A
 ## <a name="before-you-begin"></a>Antes de começar
 
 > [!NOTE]
-> Os seguintes passos são realizados na [consola do Zimperium MTD](https://www.zimperium.com/platform).
+> Os passos seguintes devem ser realizados na [consola do Zimperium MTD](https://www.zimperium.com/platform).
 
 Antes de iniciar o processo de integração do Zimperium com o Intune, certifique-se de que tem a seguinte subscrição e credenciais:
 

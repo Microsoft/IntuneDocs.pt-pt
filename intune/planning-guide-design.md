@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 007c84e3bfeac79d2223ea211cbb9f9c97e80475
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 02dcaa26e51f3b8c4632aed0fbc87131cc617532
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548384"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67572288"
 ---
 # <a name="create-a-design"></a>Criar uma estrutura
 
@@ -36,11 +36,11 @@ A sua estrutura do Intune baseia-se nas informações que recolhe e em decisões
 
 - Considerações de plataformas de dispositivos
 
-- Requisitos a serem entregues  
+- Requisitos a serem entregues  
 
 Apesar de os requisitos de infraestrutura no local serem extremamente reduzidos, um plano de estrutura é útil para garantir que tem a solução de gestão de dispositivos móveis correta e que cumpre os seus objetivos, requisitos e metas.
 
-Analisemos cada uma destas áreas mais detalhadamente. 
+Analisemos cada uma destas áreas mais detalhadamente. 
 
 ## <a name="record-your-current-environment"></a>Registar o seu ambiente atual
 Além disso, é comum haver mudanças de estrutura durante a fase de teste e implementação. Utilize o seu plano de estrutura para documentar estas alterações e os motivos das mesmas à medida que ocorrem.

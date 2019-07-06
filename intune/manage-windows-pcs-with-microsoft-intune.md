@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ac8de734927ca139b78f57dbb486cc19ea1e27c0
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 733cb20c43b34393003f2e9f4f4466922f3f581e
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548784"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67572553"
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Gerir PCs Windows como computadores através do cliente de software do Intune
 
@@ -49,7 +49,7 @@ Seguem-se os requisitos mínimos de hardware para instalar o software de cliente
 |---------------|--------------------|
 |Rede|O cliente requer o computador para ter ligação à Internet.|
 |Processador e Memória|Consulte os requisitos de processador e RAM do sistema operativo do computador.|
-|Espaço em disco|200 MB espaço em disco disponível antes do software de cliente é instalado.|
+|Espaço em disco|200 MB de espaço disponível no disco antes da instalação do software do cliente.|
 
 **Software**:  
 Seguem-se os requisitos de software para instalar o software de cliente:

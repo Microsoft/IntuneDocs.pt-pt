@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9d1cbfb7062dd897442d842a0b50b03a95a57a24
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 714a595263475da98a48c982e0ed24d691440097
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67549326"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67572266"
 ---
 # <a name="determine-deployment-goals-objectives-and-challenges"></a>Determinar metas, objetivos e obstáculos da implementação
 
@@ -80,7 +80,7 @@ Os objetivos da implementação são as ações que a sua organização pode rea
 
 Os obstáculos à implementação são problemas prioritários para uma organização e podem ter um impacto negativo na implementação. Por vezes, estes obstáculos estão relacionados com problemas passados de projetos anteriores que gostaria de evitar ou são novos problemas relacionados com o esforço de implementação atual. Abaixo encontram-se alguns exemplos de obstáculos à implementação do Intune, bem como potenciais formas de os mitigar.
 
-- A preparação do suporte e a experiência de utilizador final não estão incluídas no âmbito inicial de um projeto. Tal resulta numa fraca adoção dos utilizadores finais e em desafios para a sua organização de suporte.
+- A preparação do suporte e a experiência de utilizador final não estão incluídas no âmbito inicial de um projeto. Tal resulta numa fraca adoção dos utilizadores finais e em desafios para a sua organização de suporte.
 
     - **Atenuação:** Incorpore a formação sobre o suporte. Valide a experiência do utilizador final com métricas de sucesso no seu plano de implementação.
 
