@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 095c2ee0aba0680de0c5fc55c1406dba41111b92
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 00712b891790fbf437e9fed024f7610f37fee129
+ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67527437"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67648696"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Atribuir aplicações do Office 365 a dispositivos Windows 10 com o Microsoft Intune
 
@@ -42,6 +42,7 @@ Antes de poder atribuir, monitorizar, configurar ou proteger aplicações, tem d
 - Este método de instalação não é suportado em dispositivos com o Windows 10 S, Windows Home, Windows Team, Windows Holographic ou Windows Holographic for Business.
 - O Intune não suporta a instalação de aplicações de ambiente de trabalho do Office 365 da Microsoft Store (denominadas aplicações Office Centennial) num dispositivo em que já implementou aplicações do Office 365 com o Intune. Se instalar esta configuração, poderá causar perda ou danos em dados.
 - As múltiplas atribuições de aplicações necessárias ou disponíveis não são acumulativas. Uma atribuição de aplicação posterior irá substituir as atribuições de aplicações instaladas pré-existentes. Por exemplo, se o primeiro conjunto de aplicações do Office incluir o Word, mas o conjunto posterior não o incluir, o Word será desinstalado. Esta condição não se aplica às aplicações Visio ou Project.
+- Implementações de vários conjuntos Office 365 não são atualmente suportadas. Apenas uma implementação será entregue no dispositivo
 - **Versão do Office**: selecione se pretende atribuir a versão de 32 bits ou de 64 bits do Office. Pode instalar a versão de 32 bits em dispositivos de 32 e de 64 bits, mas só pode instalar a versão de 64 bits em dispositivos de 64 bits.
 - **Remover MSI dos dispositivos de utilizador final**: escolha se pretende remover as aplicações .MSI do Office já existentes dos dispositivos de utilizador final. A instalação não será concluída com êxito se existirem aplicações MSI já existentes em dispositivos de utilizador final. As aplicações a desinstalar não se limitam às selecionadas para instalação em **Configurar o Conjunto de Aplicações**, na medida em que irá remover todas as aplicações do Office (MSI) do dispositivo de utilizador final. Para obter mais informações, veja [Remover versões MSI do Office existentes ao atualizar para o Office 365 ProPlus](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version). Quando o Intune reinstalar o Office nos computadores dos seus utilizadores finais, estes terão automaticamente os mesmos pacotes de idiomas de que dispunham com instalações anteriores do Office .MSI.
 
@@ -142,7 +143,14 @@ Se tiver selecionado o **introduzir dados XML** opção no **formato de definiç
 
 Quando tiver concluído, no painel **Adicionar Aplicação**, selecione **Adicionar**. A aplicação que criou é apresentada na lista de aplicações.
 
+## <a name="troubleshooting"></a>Resolução de problemas
+O Intune utiliza o [ferramenta de implantação do Office](https://docs.microsoft.com/DeployOffice/overview-of-the-office-2016-deployment-tool) para baixar e implantar o Office 365 ProPlus nos computadores cliente utilizando o [Office 365 CDN](https://docs.microsoft.com/office365/enterprise/content-delivery-networks). Referenciar as práticas recomendadas descritas [pontos de extremidade de gerir o Office 365](https://docs.microsoft.com/office365/enterprise/managing-office-365-endpoints) para se certificar de que a configuração de rede permite que os clientes acedam a CDN diretamente em vez de CDN de encaminhamento de tráfego por meio de proxies centrais para evitar apresentando latência desnecessária.
+
+Executar o [Support da Microsoft e o Assistente de recuperação para o Office 365](https://diagnostics.office.com) num dispositivo de destino se encontrar problemas de tempo de execução ou de instalação.
+
 ## <a name="errors-during-installation-of-the-app-suite"></a>Erros durante a instalação do conjunto de aplicações
+
+Ver [como ativar o registo ULS ProPlus do Office 365](https://blogs.technet.microsoft.com/odsupport/2018/06/18/how-to-enable-office-365-proplus-uls-logging) para obter informações sobre como ver registos de instalação verboso.
 
 A seguinte tabela lista códigos de erro comuns que poderá encontrar e o seu significado.
 

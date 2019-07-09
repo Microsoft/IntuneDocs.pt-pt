@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,26 +17,27 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3fb85cc2847c235f7f8079715dee6a2d924f0ac8
-ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
+ms.openlocfilehash: 81e50c3f79ffe9a3b9bc8068d49ba966c35dbbfd
+ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67572588"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67649094"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>Implementação híbrida do Azure AD associado dispositivos com o Intune e o Windows Autopilot
 Pode utilizar o Intune e o Windows Autopilot para configurar híbrida do Azure Active Directory (Azure AD)-dispositivos associados a um. Para tal, siga os passos neste artigo.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-Configurar com êxito a sua [híbrido do Azure dispositivos associados ao AD](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan). Não se esqueça [Verifique se o registo do dispositivo]( https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#verify-the-registration) utilizando o cmdlet Get-MsolDevice.
+Configurar com êxito a sua [híbrido do Azure dispositivos associados ao AD](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan). Não se esqueça [Verifique se o registo do dispositivo](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#verify-the-registration) utilizando o cmdlet Get-MsolDevice.
 
 Os dispositivos a ser inscritos também têm de:
 - Estar em execução v1809 do Windows 10 ou superior.
-- Ter acesso à Internet.
-- Terá acesso ao seu Active Directory (ligação de VPN não é suportada neste momento).
-- São submetidos a experiência de out-of-box (OOBE).
+- Tem acesso à internet [seguindo os requisitos de rede do Windows Autopilot documentados](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot-requirements#networking-requirements).
+- Tem acesso a um controlador de domínio do Active Directory, pelo que tem de estar ligado à rede da organização (em que ele pode resolver os registos DNS para o domínio do AD e o controlador de domínio do AD e comunicar com o controlador de domínio para autenticar o utilizador. Ligação VPN não é suportada neste momento).
 - Ser capaz de enviar pings para o controlador de domínio do domínio que está a tentar associar.
+- Se utilizar o Proxy, a opção de definições de Proxy de WPAD deve estar ativada e configurada.
+- São submetidos a experiência de out-of-box (OOBE).
 
 ## <a name="set-up-windows-10-automatic-enrollment"></a>Configurar a inscrição automática de dispositivos Windows 10
 

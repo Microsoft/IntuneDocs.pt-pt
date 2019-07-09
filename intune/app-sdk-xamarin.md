@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7081bc04cc0a6de0a0a6e8214ac0a6edea459378
-ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
+ms.openlocfilehash: 80b6272c6e1f2efc1687fa25216487595a9ddd9f
+ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67558388"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67648962"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Enlaces Xamarin do SDK da Aplicação Microsoft Intune
 
@@ -96,11 +96,21 @@ Se seu aplicativo já está configurado para utilizar a ADAL ou MSAL e tem seu p
 
 Uma descrição geral completa para integrar o SDK da aplicação Intune pode ser encontrada no [Microsoft Intune App SDK para o guia de programação do Android](app-sdk-android.md). À medida que leia o guia e integrar o SDK da aplicação Intune com a sua aplicação Xamarin as secções seguintes destinam-se para destacar as diferenças entre a implementação para uma aplicação Android nativa desenvolvido em Java e uma aplicação Xamarin desenvolvido em C#. Estas secções devem ser tratadas como suplementares e não podem agir como um substituto para ler o guia na íntegra.
 
+#### <a name="remapper"></a>Remapper
+Começando com o 1.4428.1 versão, o `Microsoft.Intune.MAM.Remapper` pacote pode ser adicionado a uma aplicação xamarin. Android como [criar ferramentas](app-sdk-android.md#build-tooling) para executar as substituições de serviços de sistemas, classe e método da MAM. Se o Remapper está incluído, as partes do equivalente de substituição de MAM das seções de métodos de mudar o nome e a aplicação de MAM serão executadas automaticamente quando o aplicativo for criado.
+
+Para excluir uma classe da MAM-mínima por Remapper a seguinte propriedade pode ser adicionada em seus projetos `.csproj` ficheiro.
+```xml
+  <PropertyGroup>
+    <ExcludeClasses>Semicolon separated list of relative class paths to exclude from MAM-ification</ExcludeClasses>
+  </PropertyGroup>
+```
+
 #### <a name="renamed-methodsapp-sdk-androidmdrenamed-methods"></a>[Métodos renomeados](app-sdk-android.md#renamed-methods)
 Em muitos casos, um método disponível na classe Android foi marcado como final na classe de substituição da MAM. Neste caso, a classe de substituição de MAM proporciona um método com um nome semelhante (com o sufixo `MAM`), que deve ser substituído. Por exemplo, quando executar a derivação de `MAMActivity`, em vez de substituir `OnCreate()` e chamar `base.OnCreate()`, `Activity` tem de substituir `OnMAMCreate()` e chamar `base.OnMAMCreate()`.
 
 #### <a name="mam-applicationapp-sdk-androidmdmamapplication"></a>[Aplicação de MAM](app-sdk-android.md#mamapplication)
-A aplicação tem de definir uma `Android.App.Application` classe que herda de `MAMApplication`. Certifique-se de que aplicou corretamente o atributo `[Application]` à sua subclasse e que esta substitui o construtor `(IntPtr, JniHandleOwnership)`.
+A aplicação tem de definir um `Android.App.Application` classe. Se integrar manualmente MAM, ela deve herdar da `MAMApplication`. Certifique-se de que aplicou corretamente o atributo `[Application]` à sua subclasse e que esta substitui o construtor `(IntPtr, JniHandleOwnership)`.
 ```csharp
     [Application]
     class TaskrApp : MAMApplication
@@ -147,7 +157,7 @@ IMAMEnrollmentManager mgr = MAMComponents.Get<IMAMEnrollmentManager>();
 
 ### <a name="xamarinforms-integration"></a>Integração do componente Xamarin.Forms
 
-Para `Xamarin.Forms` aplicações, nós fornecemos a `Microsoft.Intune.MAM.Remapper` pacote para executar a substituição de classe MAM automaticamente injetando `MAM` classes para a hierarquia de classe de usadas `Xamarin.Forms` classes. 
+Para `Xamarin.Forms` aplicativos a `Microsoft.Intune.MAM.Remapper` pacote executa automaticamente substituição da classe MAM, injetando `MAM` classes para a hierarquia de classe de usadas `Xamarin.Forms` classes. 
 
 > [!NOTE]
 > A integração do xamarin. Forms está a ser feito, além disso, para a integração do xamarin. Android detalhada acima.
@@ -179,6 +189,9 @@ Os enlaces de Xamarin do SDK do Intune baseiam-se na presença do [Portal da emp
 > Quando a aplicação Portal da empresa não está ativada a **Android** dispositivo, uma aplicação gerida pelo Intune tem o mesmo comportamento que uma aplicação normal que não suporta políticas de proteção de aplicações do Intune.
 
 Para a proteção de aplicações sem inscrição de dispositivos, o utilizador _**não**_ é obrigado a inscrever o dispositivo através da aplicação Portal da Empresa.
+
+### <a name="sample-applications"></a>Aplicativos de exemplo
+Realce a funcionalidade MAM nas aplicações xamarin. Android e Xamarin Forms de aplicativos de exemplo estão disponíveis na [GitHub](https://github.com/msintuneappsdk/Taskr-Sample-Intune-Xamarin-Android-Apps).
 
 ## <a name="support"></a>Suporte
 Se a sua organização for um cliente do Intune existente, trabalhe em conjunto com o seu representante de suporte da Microsoft para abrir um pedido de suporte e criar um problema [no GitHub a página de problemas](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues) e iremos ajudar assim que possível. 

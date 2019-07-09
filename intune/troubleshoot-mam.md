@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/21/2019
+ms.date: 07/03/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,16 +16,16 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bde64e9bbe756b61b41dd8e7d55ba327491ae55b
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 1cf8f7753a92ad45a68f976359560ef6da2d1cec
+ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67046235"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67648727"
 ---
 # <a name="troubleshoot-mobile-application-management"></a>Resolução de problemas de gestão de aplicações móveis
 
-Este tópico fornece soluções para problemas comuns que ocorreram ao utilizar a gestão de aplicações móveis do Intune.
+Este tópico fornece soluções para problemas comuns que ocorreram ao utilizar a proteção de aplicações do Intune (também referido como MAM ou gestão de aplicações móveis).
 
 Se estas informações não resolverem o problema, veja [Como obter suporte para o Microsoft Intune](get-support.md) para ver mais formas de obter ajuda.
 
@@ -37,7 +37,7 @@ Estes são os problemas comuns que um administrador de TI poderá experienciar a
 | -- | -- | -- |
 | A política não está a ser aplicada ao Skype para Empresas | A política de proteção de aplicações sem inscrição de dispositivos, criada no portal do Azure, não está a ser aplicada à aplicação Skype para Empresas nos dispositivos iOS e Android. | O Skype para Empresas tem de ser configurado para autenticação moderna.  Siga as instruções em [Enable your tenant for modern authentication (Ativar o seu inquilino para autenticação moderna – em inglês)](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) para configurar a autenticação moderna para o Skype. |
 | A política das aplicações do Office não está a ser aplicada | As políticas de proteção de aplicações não estão a ser aplicadas a nenhuma [aplicação do Office suportada](https://www.microsoft.com/cloud-platform/microsoft-intune-partners) para nenhum utilizador. | Confirme que o utilizador tem licença para o Intune e que as aplicações do Office são visadas por uma política de proteção de aplicações implementada. Pode demorar até 8 horas para que seja aplicada uma política de proteção de aplicações recentemente implementada. |
-| O administrador não consegue configurar a política de proteção de aplicações no Portal do Azure | O utilizador de administração de TI não consegue configurar políticas de proteção de aplicações no Portal do Azure. | As seguintes funções de utilizador têm acesso ao Portal do Azure: <ul><li>Administrador global, que pode configurar no [Centro de administração do Microsoft 365](https://admin.microsoft.com/)</li><li>Proprietário, que pode configurar no [Portal do Azure](https://portal.azure.com/).</li><li>Contribuinte, que pode configurar no [Portal do Azure](https://portal.azure.com/).</li></ul> Consulte a [controlo de administração baseada em funções (RBAC) com o Microsoft Intune](role-based-access-control.md) para obter ajuda a configurar estas funções.|
+| O administrador não consegue configurar a política de proteção de aplicações no Portal do Azure | Utilizador de administrador de TI não consegue configurar políticas de proteção de aplicações no portal do Azure. | As seguintes funções de utilizador têm acesso ao portal do Azure: <ul><li>Administrador global, que pode configurar no [Centro de administração do Microsoft 365](https://admin.microsoft.com/)</li><li>Proprietário, o que pode configurar no [portal do Azure](https://portal.azure.com/).</li><li>Contribuinte, que pode configurar no [portal do Azure](https://portal.azure.com/).</li></ul> Consulte a [controlo de administração baseada em funções (RBAC) com o Microsoft Intune](role-based-access-control.md) para obter ajuda a configurar estas funções.|
 |Há contas de utilizador em falta em relatórios de política de proteção de aplicações | Os relatórios de consola de administração não mostram as contas de utilizador nas quais a política de proteção de aplicações foi recentemente implementada. | Se um utilizador foi recentemente visado por uma política de proteção de aplicações, pode demorar até 24 horas para esse utilizador ser apresentado em relatórios como um utilizador visado. |
 | As alterações à política não estão a ser aplicadas | A aplicação das alterações e atualizações à política de proteção de aplicações pode demorar até 8 horas a entrar em vigor. | Caso aplicável, o utilizador final pode terminar sessão na aplicação e voltar a iniciar sessão para forçar a sincronização com o serviço. |
 | A política de proteção de aplicações não está a funcionar com o DEP | A política de proteção de aplicações não está a ser aplicada a dispositivos DEP da Apple. | Confirme que está a utilizar a Afinidade do Utilizador com o Programa de Inscrição de Dispositivos (DEP) da Apple. A Afinidade de Utilizador é necessária para qualquer aplicação que exija autenticação do utilizador no DEP. <br><br>Consulte a [inscrever automaticamente dispositivos iOS com o programa de inscrição de dispositivos da Apple](device-enrollment-program-enroll-ios.md) para obter mais informações sobre a inscrição do DEP para iOS.|
@@ -58,7 +58,15 @@ Os problemas comuns do utilizador final encontram-se divididos nas seguintes cat
 Plataforma | Cenário | Explicação |
 ---| --- | --- |
 iOS | O utilizador final pode utilizar a extensão de partilha do iOS para abrir dados escolares ou profissionais em aplicações não geridas, mesmo com a política de transferência de dados definida para **Apenas aplicações geridas** ou **Nenhuma aplicação.** Isto não resulta numa fuga de dados? | A política de proteção de aplicações do Intune não consegue controlar a extensão de partilha do iOS se o dispositivo não for gerido. Por esse motivo, **o Intune encripta os dados "empresariais" antes de os partilhar fora da aplicação**. Para o confirmar, pode tentar abrir o ficheiro "empresarial" fora da aplicação gerida. O ficheiro deverá estar encriptado, e não deverá ser possível abri-lo fora da aplicação gerida.
+iOS | Por que é o utilizador final **-lhe pedido que instale a aplicação Microsoft Authenticator** | Isto é necessário quando a aplicação com base em com acesso condicional é aplicado, consulte [requer aplicação aprovada do cliente](https://docs.microsoft.com/azure/active-directory/conditional-access/app-based-conditional-access).
 Android | Porque é que o utilizador final **tem de instalar a aplicação Portal da Empresa** mesmo que eu esteja a utilizar a proteção de aplicações de MAM sem inscrição de dispositivos?  | No Android, uma grande parte da funcionalidade de proteção de aplicações está incorporada na aplicação Portal da Empresa. **Embora a aplicação Portal da Empresa seja sempre obrigatória, a inscrição dos dispositivos não é necessária**. Para proteger aplicações sem inscrição, o utilizador final só precisa de ter a aplicação Portal da Empresa instalada no dispositivo.
+iOS/Android | Política de proteção de aplicações não são aplicada no e-mail de rascunho na aplicação Outlook | Uma vez que o Outlook oferece suporte a contexto empresarial e pessoal, ele não impõe MAM no e-mail de rascunho.
+iOS/Android | Política de proteção de aplicações não aplicada a novos documentos no WXP (Word, Excel, PowerPoint) | Uma vez que WXP suporta contexto empresarial e pessoal, ele não impõe a MAM em novos documentos até que eles são salvos num local identificado empresarial, como o OneDrive.
+iOS/Android | Aplicações não permitir guardar como para o armazenamento Local quando a política está ativada | O comportamento da aplicação para esta definição é controlado pelo programador da aplicação.
+Android | Android tem mais restrições do iOS em que aplicações "nativas" podem aceder a MAM de conteúdo protegido | Android é uma plataforma aberta e a associação de aplicações "nativas" pode ser alterada pelo utilizador final para aplicações potencialmente não seguras. Aplicam-se [exceções da política de transferência de dados](app-protection-policies-exception.md) para excluir aplicações específicas.
+Android | O Azure Information Protection (AIP) pode guardar como PDF quando guardar como é impedida | AIP respeita a política de MAM para 'Disable impressão' quando guardar como PDF é utilizado.
+iOS | Abrir anexos em PDF na aplicação Outlook falha com "ação não permitida | Isto pode ocorrer se o utilizador ainda não foi autenticado para Acrobat Reader para o Intune ou usou o thumbprint para autenticar a sua organização. Abra Acrobat Reader com antecedência e efetuar a autenticação com credenciais de UPN.
+
 
 ### <a name="normal-usage-dialogs"></a>Caixas de diálogo de utilização normal
 
@@ -82,7 +90,7 @@ Caixa de diálogo ou mensagem de erro | Causa | Remediação |
 **Dispositivos não conformes**: Não é possível utilizar esta aplicação porque está a utilizar um dispositivo desbloqueado por jailbreak. Contacte o seu administrador de TI para obter ajuda. | O Intune detetou que o utilizador está num dispositivo desbloqueado por jailbreak. | Repor as predefinições de fábrica do dispositivo. Siga [estas instruções](https://support.apple.com/HT201274) a partir do site de suporte da Apple.
 **Ligação de Internet obrigatória**: Tem de estar ligado à Internet para verificar que pode utilizar esta aplicação. | O dispositivo não está ligado à Internet. | Ligue o dispositivo a uma rede Wi-Fi ou de Dados.
 **Falha desconhecida**: Tente reiniciar esta aplicação. Se o problema persistir, entre em contacto com seu administrador de TI. | Ocorreu uma falha desconhecida. | Aguarde algum tempo e tente novamente. Se o erro persistir, crie uma [pedido de suporte](get-support.md#create-an-online-support-ticket) com o Intune.
-**Aceder aos dados da sua organização**: A conta escolar ou profissional que especificou não tem acesso a esta aplicação. Poderá ter de iniciar sessão com uma conta diferente. Contacte o seu administrador de TI para obter ajuda. | O Intune deteta que o utilizador tentou iniciar sessão com uma segunda conta profissional ou escolar que é diferente da conta inscrita na MAM para o dispositivo. Apenas uma conta escolar ou profissional pode ser gerida pelo MAM, uma vez por dispositivo. | Peça ao utilizador que inicie sessão na conta cujo nome de utilizador encontra-se pré-preenchido no ecrã de início de sessão. <br> <br> Em alternativa, o utilizador pode iniciar sessão com a nova conta escolar ou profissional e remover a conta existente inscrita na MAM.
+**Aceder aos dados da sua organização**: A conta escolar ou profissional que especificou não tem acesso a esta aplicação. Poderá ter de iniciar sessão com uma conta diferente. Contacte o seu administrador de TI para obter ajuda. | O Intune deteta que o utilizador tentou iniciar sessão com uma segunda conta profissional ou escolar que é diferente da conta inscrita na MAM para o dispositivo. Apenas uma conta escolar ou profissional pode ser gerida pelo MAM, uma vez por dispositivo. | Peça ao utilizador que inicie sessão na conta cujo nome de utilizador encontra-se pré-preenchido no ecrã de início de sessão. Se pretender [configurar a definição de UPN do utilizador para o Intune](https://docs.microsoft.com/intune/data-transfer-between-apps-manage-ios#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm). <br> <br> Em alternativa, o utilizador pode iniciar sessão com a nova conta escolar ou profissional e remover a conta existente inscrita na MAM.
 **Problema de ligação**: Ocorreu um problema de ligação inesperado. Verifique a sua ligação e tente novamente.  |  Falha inesperada. | Aguarde algum tempo e tente novamente. Se o erro persistir, crie uma [pedido de suporte](get-support.md#create-an-online-support-ticket) com o Intune.
 **Alerta**: Esta aplicação já não pode ser utilizada. Contacte o seu administrador de TI para obter mais informações. | Falha ao validar o certificado da aplicação. | Confirme que a versão da aplicação está atualizada. <br><br> Reinstale a aplicação.
 **Erro**: Esta aplicação encontrou um problema e tem de fechar. Se o erro persistir, contacte o administrador de TI. | Falha ao ler o PIN da aplicação MAM a partir da Keychain do iOS da Apple. | Reinicie o dispositivo. Confirme que a versão da aplicação está atualizada. <br><br> Reinstale a aplicação.
@@ -103,6 +111,7 @@ Mensagem de erro/caixa de diálogo | Causa | Remediação |
 ## <a name="next-steps"></a>Passos Seguintes
 
 - [Validar a configuração de gestão de aplicações móveis](app-protection-policies-validate.md)
+- Saiba como utilizar ficheiros de registo para resolver problemas da política de proteção de aplicações do Intune, consulte [https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Troubleshooting-Intune-app-protection-policy-using/ba-p/330372](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Troubleshooting-Intune-app-protection-policy-using/ba-p/330372)
 - Para obter informações adicionais de resolução de problemas, veja [Utilizar o portal de resolução de problemas para ajudar os utilizadores na sua empresa](help-desk-operators.md). 
 - Saiba mais sobre os problemas conhecidos no Microsoft Intune. Para obter mais informações, veja [Problemas conhecidos no Microsoft Intune](known-issues.md).
 - Precisa de ajuda adicional? Veja [Como obter suporte para o Microsoft Intune](get-support.md).
