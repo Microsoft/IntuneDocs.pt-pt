@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 93e470175829008b72b5b8991188f3c92e38a567
-ms.sourcegitcommit: 690e680e854b7d707421c5e06f134e493f4f4194
+ms.openlocfilehash: 3e4e1040913daef5418f0b4fa1e56f6ef827dd67
+ms.sourcegitcommit: 63b55e81122e5c15893302b109ae137c30855b55
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67416836"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67713266"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Utilizar linhas de base de segurança para configurar dispositivos Windows 10 no Intune
 
@@ -155,7 +155,7 @@ Depois de guardar, após a conversão for concluída, a linha de base é imediat
 3. Sobre o **alterar versão do** painel, utilize o **Selecione uma linha de base de segurança para atualizar para** lista pendente e selecione a instância de versão que pretende utilizar.  
 
    ![Selecionar uma versão](./media/security-baselines/select-instance.png)  
- 
+   
 4. Selecione **atualização de revisão** para transferir um ficheiro CSV que mostra a diferença entre a versão de instância atual de perfis e a nova versão que selecionou. Consulte este ficheiro, para que entenda quais configurações são adicionadas, removidas, e quais são os valores predefinidos para estas definições no perfil atualizado.  
 
    Quando estiver pronto, avance para o passo seguinte.  

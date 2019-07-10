@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 623891ce84e5a413c83ca3400ccb1cc180d859e5
-ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.openlocfilehash: 91633aee190b5fb5bda9495f66d4503042aa6a80
+ms.sourcegitcommit: 63b55e81122e5c15893302b109ae137c30855b55
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67648431"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67713329"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Como gerir a transferência de dados entre aplicações iOS no Microsoft Intune
 
@@ -52,7 +52,7 @@ A configuração da definição de UPN do utilizador é **obrigatória** para di
 
       **key** = IntuneMAMUPN, **value** = <username@company.com>
 
-      Exemplo: [‘IntuneMAMUPN’, ‘jondoe@microsoft.com’]
+      Exemplo: [‘IntuneMAMUPN’, ‘janellecraig@contoso.com’]
       
      > [!NOTE]
      > No Intune, o tipo de inscrição de política de configuração de aplicações tem de ser definido **dispositivos geridos pelo**.
