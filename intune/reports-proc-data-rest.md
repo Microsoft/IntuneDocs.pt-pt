@@ -1,7 +1,7 @@
 ---
 title: Obter dados a partir da API do Armazém de Dados com um cliente REST
 titleSuffix: Microsoft Intune
-description: Este tópico descreve como recuperar dados do Microsoft Intune armazém de dados com uma API RESTful.
+description: Este tópico descreve como recuperar dados do Microsoft Intune data warehouse usando uma API RESTful.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9fd99c0b42316a4425828cfa875f12d75dd86489
-ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
+ms.openlocfilehash: 8090e9906cc8e3b3da25b21343093dd2f656afa6
+ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67558547"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67735801"
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>Obter dados a partir da API do Armazém de Dados do Intune com um cliente REST
 
@@ -48,7 +48,7 @@ Crie uma aplicação nativa no Azure. Esta aplicação nativa é a aplicação c
     3. Escreva um URL em **URL de início de sessão**. O URL de início de sessão dependerá do cenário específico. No entanto, se pensa utilizar o Postman, escreva `https://www.getpostman.com/oauth2/callback`. Irá utilizar a chamada de retorno do passo de autenticação de cliente ao autenticar no Azure AD.
 4. Selecione **Criar**.
 
-     ![Aplicação de cliente do armazém de dados do Intune](./media/reports-get_rest_data_client_overview.png)
+     ![Aplicativo cliente do Intune data warehouse](./media/reports-get_rest_data_client_overview.png)
 
 5. Tenha em atenção o **ID da aplicação** desta aplicação. Irá utilizar o ID na próxima secção.
 
@@ -94,11 +94,11 @@ Precisa das seguintes informações para efetuar uma chamada REST através do Po
 
 Também precisa do ponto final. Para obter o ponto final do Armazém de Dados, precisará do URL de feed personalizado. Pode obter o ponto final de OData no painel do Armazém de Dados.
 
-1. Inicie sessão no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. Abra o **armazém de dados do Intune** painel ao selecionar a ligação de armazém de dados em **outras tarefas** no lado direito do **descrição geral do Microsoft Intune –** painel.
+1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+3. Abra o painel **data warehouse do Intune** selecionando o link data warehouse em **outras tarefas** no lado direito da folha **Microsoft Intune-visão geral** .
 4. Copie o URL de feed personalizado em **Utilize os serviços de relatórios de terceiros**. Deverá ter o seguinte aspeto: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=v1.0`
 
-O ponto final segue o formato seguinte: `https://fef.{yourtenant}.manage.microsoft.com/ReportingService/DataWarehouseFEService/{entity}?api-version={verson-number}`
+O ponto de extremidade segue o seguinte formato:`https://fef.{yourtenant}.manage.microsoft.com/ReportingService/DataWarehouseFEService/{entity}?api-version={verson-number}`
 
 Por exemplo, a entidade **Datas** tem o seguinte aspeto: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=v1.0`
 
@@ -144,7 +144,7 @@ Para obter um novo token de acesso do Postman, tem de adicionar o URL de autoriz
 1. Selecione **Enviar**.
 2. Os dados devolvidos são apresentados no corpo de resposta do Postman.
 
-    ![Estado do cliente de postman é igual a 200 OK](./media/reports-postman_200OK.png)
+    ![O status do cliente do postmaster é igual a 200 OK](./media/reports-postman_200OK.png)
 
 ## <a name="create-a-rest-client-c-to-get-data-from-the-intune-data-warehouse"></a>Criar um cliente REST (C#) para obter dados do Armazém de Dados do Intune
 
@@ -161,9 +161,10 @@ O seguinte exemplo inclui um cliente REST simples. O código utiliza a classe **
 6. Selecione **Aceito** para aceitar a licença do pacote NuGet.
 7. Abra o `Program.cs` a partir do Explorador de Soluções.
 
-    ![Progam.cs e o Explorador de soluções no Visual Studio](./media/reports-get_rest_data_in.png)
+    ![Program.cs e Gerenciador de Soluções no Visual Studio](./media/reports-get_rest_data_in.png)
 
-8. Substitua o código no *Program.cs* com o código a seguir:  
+8. Substitua o código em *Program.cs* pelo seguinte código:  
+
    ```csharp
    namespace IntuneDataWarehouseSamples
    {
@@ -225,7 +226,7 @@ O seguinte exemplo inclui um cliente REST simples. O código utiliza a classe **
 
 11. Reveja o resultado da consola. O resultado inclui dados num formato JSON retirados da entidade **Datas** no seu inquilino do Intune.
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Passos seguintes
 
 Pode encontrar detalhes sobre a autorização, a estrutura do URL da API e os pontos finais OData em [Use the Intune Data Warehouse API (Utilizar a API do Armazém de Dados do Intune)](reports-api-url.md).
 

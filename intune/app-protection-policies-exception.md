@@ -17,33 +17,33 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 88c95533630cdb3c96626de13a2c843ed8318671
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: d599b2a03985965bd8962bcd9f24bfe7555f131c
+ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043900"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67735593"
 ---
 # <a name="how-to-create-exceptions-to-the-intune-mobile-application-management-mam-data-transfer-policy"></a>Como criar exceções para a política de transferência de dados da Gestão de Aplicações Móveis (MAM) do Intune
 
-Como administrador, pode criar exceções para a política de transferência de dados da Gestão de Aplicações Móveis (MAM) do Intune. Uma exceção permite-lhe escolher especificamente que aplicações não geridas podem transferir dados de e para aplicações geridas. O departamento de TI têm de confiar as aplicações não geridas que incluir na lista de exceções. 
+Como administrador, pode criar exceções para a política de transferência de dados da Gestão de Aplicações Móveis (MAM) do Intune. Uma exceção permite-lhe escolher especificamente que aplicações não geridas podem transferir dados de e para aplicações geridas. Sua ti deve confiar nos aplicativos não gerenciados que você incluir na lista de exceções. 
 
 >[!WARNING] 
 > Será responsável por fazer alterações à política de exceção de transferência de dados. As adições a esta política permitem que as aplicações não geridas (aplicações que não são geridas pelo Intune) acedam a dados protegidos por aplicações geridas. Este acesso a dados protegidos poderá resultar em falhas de segurança dos dados. Adicione exceções de transferência de dados apenas para as aplicações que a sua organização tem de utilizar, mas que não suportam as Políticas de Proteção de Aplicações do Intune. Além disso, adicione exceções apenas para aplicações que considera não representarem riscos de fuga de dados.
 
-Dentro de uma política de proteção da aplicação Intune, definindo **permitir que a aplicação transfira dados para outras aplicações** ao **aplicações geridas por políticas** significa que a aplicação pode transferir dados apenas para aplicações geridas pelo Intune. Se tiver de permitir que os dados a serem transferidos para aplicações específicas que não suportam a aplicação do Intune, pode criar exceções a esta política utilizando **selecionar aplicações para isentar**. As exceções permitem que as aplicações geridas pelo Intune invoquem aplicações não geridas com base no protocolo de URL (iOS) ou nome do pacote (Android). Por predefinição, o Intune adiciona aplicações nativas fundamentais à lista de exceções. 
+Em uma política de proteção de aplicativo do Intune, a configuração **permitir que o aplicativo transfira dados para outros aplicativos** para **aplicativos gerenciados por política** significa que o aplicativo pode transferir dados somente para aplicativos gerenciados pelo Intune. Se precisar permitir que os dados sejam transferidos para aplicativos específicos que não dão suporte ao aplicativo do Intune, você poderá criar exceções a essa política usando **selecionar aplicativos para**isentar. As exceções permitem que as aplicações geridas pelo Intune invoquem aplicações não geridas com base no protocolo de URL (iOS) ou nome do pacote (Android). Por predefinição, o Intune adiciona aplicações nativas fundamentais à lista de exceções. 
 
 > [!NOTE]
 > Modificar ou adicionar exceções de política de transferência de dados não afeta as outras Políticas de Proteção de Aplicações, tal como restrições de ações de cortar, copiar e colar. 
 
 ## <a name="ios-data-transfer-exceptions"></a>Exceções de transferência de dados em dispositivos iOS
-Para uma política destinada a dispositivos iOS, pode configurar exceções de transferência de dados pelo protocolo de URL. Para adicionar uma exceção, verifique a documentação fornecida pelo programador da aplicação para encontrar informações acerca dos protocolos de URL suportados. Para obter mais informações sobre as exceções de transferência de dados do iOS, veja [isenções de transferência de definições de política de proteção de aplicações iOS - dados](app-protection-policy-settings-ios.md#data-transfer-exemptions).
+Para uma política destinada a dispositivos iOS, pode configurar exceções de transferência de dados pelo protocolo de URL. Para adicionar uma exceção, verifique a documentação fornecida pelo programador da aplicação para encontrar informações acerca dos protocolos de URL suportados. Para obter mais informações sobre exceções de transferência de dados do iOS, consulte [configurações de política de proteção de aplicativo IOS – isenções de transferência de dados](app-protection-policy-settings-ios.md#data-transfer-exemptions).
 
 > [!NOTE]
 > A Microsoft não possui um método para localizar manualmente o protocolo URL que permite criar exceções para aplicações de terceiros. 
 
 ## <a name="android-data-transfer-exceptions"></a>Exceções de transferência de dados em dispositivos Android
-Para uma política destinada a dispositivos Android, pode configurar as exceções de transferência de dados pelo nome do pacote de aplicação. Pode procurar a aplicação para a qual pretende adicionar uma exceção na página da loja **Google Play**, para encontrar o nome do pacote de aplicação. Para obter mais informações sobre exceções de transferência de dados em dispositivos Android, consulte [isenções de transferência de definições de política de proteção de aplicações Android - dados](app-protection-policy-settings-android.md#data-transfer-exemptions).
+Para uma política destinada a dispositivos Android, pode configurar as exceções de transferência de dados pelo nome do pacote de aplicação. Pode procurar a aplicação para a qual pretende adicionar uma exceção na página da loja **Google Play**, para encontrar o nome do pacote de aplicação. Para obter mais informações sobre exceções de transferência de dados do Android, consulte [configurações de política de proteção de aplicativo Android – isenções de transferência de dados](app-protection-policy-settings-android.md#data-transfer-exemptions).
 
 
 >[!TIP]
@@ -52,13 +52,13 @@ Para uma política destinada a dispositivos Android, pode configurar as exceçõ
 ### <a name="example"></a>Exemplo
 Adicionar o pacote **WebEx** como uma exceção à politica de transferência de dados da MAM permite que as ligações WebEx numa mensagem de e-mail do Outlook gerido sejam abertas diretamente na aplicação WebEx. A transferência de dados é restrita noutras aplicações não geridas.
 
-- iOS **Webex** exemplo:   Para isentar a **Webex** aplicações geridas por aplicação, de modo que a TI da permissão para ser invocada pelo Intune, tem de adicionar uma exceção de transferência de dados para a seguinte cadeia: <code>wbx</code>
+- exemplo de **WebEx** do IOS:   Para isentar o aplicativo **WebEx** para que ele possa ser invocado por aplicativos gerenciados pelo Intune, você deve adicionar uma exceção de transferência de dados para a seguinte cadeia de caracteres:<code>wbx</code>
     
- - iOS **Maps** exemplo:  Para isentar nativa **Maps** aplicações geridas por aplicação, de modo que a TI da permissão para ser invocada pelo Intune, tem de adicionar uma exceção de transferência de dados para a seguinte cadeia: <code>maps</code>
+- exemplo de **mapas** do IOS:   Para isentar o aplicativo nativo **Maps** para que ele possa ser invocado por aplicativos gerenciados pelo Intune, você deve adicionar uma exceção de transferência de dados para a seguinte cadeia de caracteres:<code>maps</code>
 
-- Android **Webex** exemplo:   Para isentar a **Webex** aplicações geridas por aplicação, de modo que a TI da permissão para ser invocada pelo Intune, tem de adicionar uma exceção de transferência de dados para a seguinte cadeia: <code>com.cisco.webex.meetings</code>
+- Exemplo de **WebEx** do Android:   Para isentar o aplicativo **WebEx** para que ele possa ser invocado por aplicativos gerenciados pelo Intune, você deve adicionar uma exceção de transferência de dados para a seguinte cadeia de caracteres:<code>com.cisco.webex.meetings</code>
     
-- Android **SMS** exemplo:   Para isentar nativa **SMS** à aplicação para que a TI da permissão para ser invocada pelo Intune as aplicações geridas em várias aplicações de mensagens e dispositivos Android, tem de adicionar exceções de transferência de dados para as seguintes cadeias: 
+- Exemplo de **SMS** do Android:   Para isentar o aplicativo **SMS** nativo para que ele possa ser invocado por aplicativos gerenciados pelo Intune em diferentes aplicativos de mensagens e dispositivos Android, você deve adicionar exceções de transferência de dados para as seguintes cadeias de caracteres: 
     <code>com.google.android.apps.messaging</code>
     
     <code>com.android.mms</code>

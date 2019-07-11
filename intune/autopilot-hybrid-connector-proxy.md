@@ -1,6 +1,6 @@
 ---
-title: Configurar definições de proxy para o conector do Intune para o Active Directory
-description: Explica como configurar o conector do Intune para o Active Directory trabalhar com servidores de proxy no local existentes.
+title: Definir configurações de proxy para o conector do Intune para Active Directory
+description: Aborda como configurar o conector do Intune para Active Directory para trabalhar com servidores proxy locais existentes.
 keywords: ''
 author: master11218
 ms.author: tanvira
@@ -16,28 +16,28 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5c47a7413d98467fffc26dee098a64cfeac770e4
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: f91ec3124d8fab067ec32194a68508762c6cef33
+ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043548"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67735251"
 ---
-# <a name="work-with-existing-on-premises-proxy-servers"></a>Trabalhar com servidores de proxy no local existentes
+# <a name="work-with-existing-on-premises-proxy-servers"></a>Trabalhar com servidores proxy locais existentes
 
-Este artigo explica como configurar o conector do Intune para o Active Directory trabalhar com servidores de proxy de saída. Destina-se para os clientes com ambientes de rede que tenham proxies existentes.
+Este artigo explica como configurar o conector do Intune para Active Directory para trabalhar com servidores proxy de saída. Ele destina-se a clientes com ambientes de rede que têm proxies existentes.
 
-Para obter mais informações sobre como funcionam os conectores, consulte [conectores de Proxy de aplicações do AD Azure compreender](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-connectors).
+Para obter mais informações sobre como os conectores funcionam, consulte entender os conectores de [proxy de aplicativo do AD do Azure](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-connectors).
 
-## <a name="bypass-outbound-proxies"></a>Proxies de saída de omissão
+## <a name="bypass-outbound-proxies"></a>Ignorar proxies de saída
 
-Conectores têm componentes do sistema operacional subjacentes que efetuam pedidos de saída. Esses componentes automaticamente tentarem localizar um servidor proxy na rede usando o Proxy Auto-Discovery WPAD (Web).
+OS conectores têm componentes de sistema operacional subjacentes que fazem solicitações de saída. Esses componentes tentam automaticamente localizar um servidor proxy na rede usando a descoberta automática de proxy da Web (WPAD).
 
-Os componentes do SO tentam localizar um servidor proxy ao realizar uma pesquisa de DNS para wpad.domainsuffix. Se a pesquisa é resolvido no DNS, um pedido HTTP, em seguida, é feito para o endereço IP para wpad.dat. Este pedido torna-se o script de configuração de proxy no seu ambiente. O conector utiliza este script para selecionar um servidor de proxy de saída. No entanto, o tráfego de conector poderá ainda não passar por, devido às definições de configuração adicionais necessárias no proxy.
+Os componentes do sistema operacional tentam localizar um servidor proxy executando uma pesquisa de DNS para WPAD. domainsuffix. Se a pesquisa for resolvida no DNS, uma solicitação HTTP será feita para o endereço IP para WPAD. dat. Essa solicitação se torna o script de configuração de proxy em seu ambiente. O conector usa esse script para selecionar um servidor proxy de saída. No entanto, o tráfego do conector ainda pode não passar, devido às definições de configuração adicionais necessárias no proxy.
 
-Pode configurar o conector para ignorar o proxy no local para se certificar de que utiliza conectividade direta aos serviços do Azure. Recomendamos esta abordagem, enquanto permite que a política de rede, porque significa que tenha uma menor configuração para manter.
+Você pode configurar o conector para ignorar o proxy local para garantir que ele use conectividade direta com os serviços do Azure. Recomendamos essa abordagem, desde que sua política de rede permita isso, porque significa que você tem uma menos configuração para manter.
 
-Para desativar a utilização de proxy de saída para o conector, edite o: \Programas\Microsoft Intune\ODJConnector\ODJConnectorUI\ODJConnectorUI.exe.config de ficheiros e adicionar o endereço de proxy e a porta de proxy na seção mostrada neste exemplo de código:
+Para desabilitar o uso do proxy de saída para o conector, edite o arquivo: \Arquivos de Programas\microsoft Intune\ODJConnector\ODJConnectorUI\ODJConnectorUI.exe.config e adicione o endereço de proxy e a porta do proxy na seção mostrada neste exemplo de código:
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -64,7 +64,8 @@ Para desativar a utilização de proxy de saída para o conector, edite o: \Prog
     </appSettings>
 </configuration>
 ```
-Para garantir que o serviço Atualizador do Conetor também ignora o proxy, fazer uma alteração similar C:\Program Files\Microsoft Intune\ODJConnector\ODJConnectorSvc\ODJConnectorSvc.exe.config.
+
+Para garantir que o serviço de Atualizador do Conector também ignore o proxy, faça uma alteração semelhante em C:\Program Files\Microsoft Intune\ODJConnector\ODJConnectorSvc\ODJConnectorSvc.exe.config.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -83,17 +84,17 @@ Para garantir que o serviço Atualizador do Conetor também ignora o proxy, faze
 </configuration>
 ```
 
-Certifique-se de que fazer cópias dos arquivos originais, caso seja necessário reverter para os arquivos. config do padrão.
+Certifique-se de fazer cópias dos arquivos originais, caso precise reverter para os arquivos. config padrão.
 
-Assim que os ficheiros de configuração foram modificados, terá de reiniciar o serviço do conector do Intune. 
+Depois que os arquivos de configuração tiverem sido modificados, será necessário reiniciar o serviço do conector do Intune. 
 
-1. Open **Services. msc**.
-2. Localize e selecione o **serviço do Intune ODJConnector**.
+1. Abra **Services. msc**.
+2. Localize e selecione o **serviço ODJConnector do Intune**.
 3. Selecione **reiniciar**.
 
-![Captura de ecrã do reinício do serviço](media/autopilot-hybrid-connector-proxy/service-restart.png)
+![Captura de tela da reinicialização do serviço](media/autopilot-hybrid-connector-proxy/service-restart.png)
 
 
 ## <a name="next-steps"></a>Passos Seguintes
 
-[Gerir os seus dispositivos](device-management.md)
+[Gerenciar seus dispositivos](device-management.md)

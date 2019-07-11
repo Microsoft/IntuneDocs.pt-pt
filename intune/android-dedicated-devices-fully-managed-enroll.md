@@ -1,7 +1,7 @@
 ---
-title: Inscrever dispositivos Android Enterprise dedicado ou dispositivos totalmente geridos no Intune
+title: Registrar dispositivos Android Enterprise dedicados ou dispositivos totalmente gerenciados no Intune
 titleSuffix: Microsoft Intune
-description: Saiba como inscrever dispositivos Android Enterprise dedicado ou dispositivos totalmente geridos no Intune.
+description: Saiba como registrar dispositivos Android Enterprise dedicados ou dispositivos totalmente gerenciados no Intune.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -17,33 +17,33 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d81f28b03a41bcdc8b6c9f18ef58e6a42346ba7d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 7a4f81f29fea9008c7dd47902812141db8448bc3
+ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049985"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67735718"
 ---
-# <a name="enroll-your-android-enterprise-dedicated-devices-or-fully-managed-devices-preview"></a>Inscrever o seu dispositivos empresariais Android dedicado ou dispositivos totalmente gerenciados (pré-visualização)
+# <a name="enroll-your-android-enterprise-dedicated-devices-or-fully-managed-devices-preview"></a>Registrar seus dispositivos Android Enterprise dedicados ou dispositivos totalmente gerenciados (versão prévia)
 
-Depois que tiver configurado a sua [dispositivos dedicados do Android Enterprise](android-kiosk-enroll.md) ou [dispositivos totalmente geridos](android-fully-managed-enroll.md) no Intune, pode inscrever os dispositivos. Como inscrever os seus dispositivos Android Enterprise depende do sistema operativo.
+Depois de configurar seus [dispositivos Android Enterprise dedicados](android-kiosk-enroll.md) ou [dispositivos totalmente gerenciados](android-fully-managed-enroll.md) no Intune, você pode registrar os dispositivos. A maneira como você registra seus dispositivos Android Enterprise depende do sistema operacional.
 
-| Método de inscrição | Versão mínima do SO Android para dispositivos dedicados e totalmente geridos |
+| Método de inscrição | Versão mínima do sistema operacional Android para dispositivos dedicados e totalmente gerenciados |
 | ----- | ----- |
 | Comunicação de Proximidade | 5.1 |
 | Entrada de token | 6.0 |
 | Código QR | 7.0 |
 | Zero Touch  | 8.0\* |
 
-\* No fabricantes de participantes.
+\*Em fabricantes participantes.
 
 ### <a name="enroll-by-using-near-field-communication-nfc"></a>Inscrever com NFC (Comunicação de Proximidade)
 
-Para dispositivos que suportam o NFC, pode aprovisionar os seus dispositivos através da criação de uma etiqueta NFC formatada de modo especial. Pode utilizar a sua própria aplicação ou qualquer ferramenta de criação de etiquetas NFC. Para obter mais informações, consulte [inscrição de dispositivos com base em C Android Enterprise com o Microsoft Intune](https://blogs.technet.microsoft.com/cbernier/2018/10/15/nfc-based-android-enterprise-device-enrollment-with-microsoft-intune/) e [documentação de API de gestão de Android da Google](https://developers.google.com/android/management/provision-device#nfc_method).
+Para dispositivos que dão suporte a NFC, você pode provisionar seus dispositivos criando uma marca NFC especialmente formatada. Pode utilizar a sua própria aplicação ou qualquer ferramenta de criação de etiquetas NFC. Para obter mais informações, consulte [registro de dispositivo empresarial Android baseado em C com o Microsoft Intune e a](https://blogs.technet.microsoft.com/cbernier/2018/10/15/nfc-based-android-enterprise-device-enrollment-with-microsoft-intune/) [documentação da API de gerenciamento do Android do Google](https://developers.google.com/android/management/provision-device#nfc_method).
 
 ### <a name="enroll-by-using-a-token"></a>Inscrever com um token
 
-Em dispositivos Android 6 e posteriores, pode utilizar o token para inscrever o dispositivo. Android versões 6.1 e versões posteriores, também podem aproveitar o código QR ao utilizar o **afw #setup** método de inscrição.
+Em dispositivos Android 6 e posteriores, pode utilizar o token para inscrever o dispositivo. O Android 6,1 e versões posteriores também podem aproveitar a verificação de código QR ao usar o método de registro **AFW # setup** .
 
 1. Ligue o seu dispositivo apagado.
 2. No ecrã **Bem-vindo**, selecione o seu idioma.
@@ -74,23 +74,24 @@ Para utilizar o sistema Zero Touch da Google, o dispositivo tem de o suportar e 
 2. Selecione **Microsoft Intune** na lista pendente de DPC da EMM.
 3. Na consola do Zero Touch da Google, copie/cole o seguinte JSON no campo de extras da DPC. Substitua a cadeia *YourEnrollmentToken* pelo token de inscrição que criou como parte do seu perfil de inscrição. Certifique-se de que coloca o token de inscrição entre aspas.
 
-```
-{ 
-    "android.app.extra.PROVISIONING_DEVICE_ADMIN_COMPONENT_NAME": "com.google.android.apps.work.clouddpc/.receivers.CloudDeviceAdminReceiver", 
-
-    "android.app.extra.PROVISIONING_DEVICE_ADMIN_SIGNATURE_CHECKSUM": "I5YvS0O5hXY46mb01BlRjq4oJJGs2kuUcHvVkAPEXlg", 
-
-    "android.app.extra.PROVISIONING_DEVICE_ADMIN_PACKAGE_DOWNLOAD_LOCATION": "https://play.google.com/managed/downloadManagingApp?identifier=setup", 
-
-    "android.app.extra.PROVISIONING_ADMIN_EXTRAS_BUNDLE": { 
-        "com.google.android.apps.work.clouddpc.EXTRA_ENROLLMENT_TOKEN": "YourEnrollmentToken" 
+    ```json
+    { 
+        "android.app.extra.PROVISIONING_DEVICE_ADMIN_COMPONENT_NAME": "com.google.android.apps.work.clouddpc/.receivers.CloudDeviceAdminReceiver", 
+    
+        "android.app.extra.PROVISIONING_DEVICE_ADMIN_SIGNATURE_CHECKSUM": "I5YvS0O5hXY46mb01BlRjq4oJJGs2kuUcHvVkAPEXlg", 
+    
+        "android.app.extra.PROVISIONING_DEVICE_ADMIN_PACKAGE_DOWNLOAD_LOCATION": "https://play.google.com/managed/downloadManagingApp?identifier=setup", 
+    
+        "android.app.extra.PROVISIONING_ADMIN_EXTRAS_BUNDLE": { 
+            "com.google.android.apps.work.clouddpc.EXTRA_ENROLLMENT_TOKEN": "YourEnrollmentToken" 
+        } 
     } 
-} 
-```
+    ```
+
 4. Escolha **Aplicar**.
 
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Passos seguintes
 - [Implementar aplicações Android](apps-deploy.md)
 - [Adicionar políticas de configuração para Android](device-profiles.md)
 
