@@ -1,7 +1,7 @@
 ---
-title: Inscrição no Intune configuração do Android Enterprise dispositivos totalmente geridos
+title: Configurar o registro do Intune para dispositivos Android Enterprise totalmente gerenciados
 titleSuffix: Microsoft Intune
-description: Saiba como inscrever dispositivos Android Enterprise totalmente geridos no Intune.
+description: Saiba como registrar dispositivos Android Enterprise totalmente gerenciados no Intune.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -17,75 +17,75 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f1b1197671b54cb5374bd79b6acbeb8137c0135c
-ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
+ms.openlocfilehash: 32a8fb7345a955629c3aa3073f02602fb057c99a
+ms.sourcegitcommit: 2614d1b08b8a78cd792aebd2ca9848f391df8550
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66819886"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67794255"
 ---
-# <a name="set-up-intune-enrollment-of-android-enterprise-fully-managed-devices-preview"></a>Configurar o Intune inscrição do Android Enterprise totalmente dispositivos geridos (pré-visualização)
+# <a name="set-up-intune-enrollment-of-android-enterprise-fully-managed-devices-preview"></a>Configurar o registro do Intune de dispositivos Android Enterprise totalmente gerenciados (versão prévia)
 
-Dispositivos do Android Enterprise totalmente gerido são dispositivos pertencentes à empresa associados a um único utilizador e a utilização de utilizado exclusivamente para o trabalho e pessoal não. Os administradores podem gerir todo o dispositivo e impor controlos de política indisponíveis para desempenhar perfis, tais como:
-- Permitir instalação de aplicações apenas a partir do Google Play gerido
-- bloquear a desinstalação de aplicações geridas
-- impedir os utilizadores de dispositivos de reposição de fábrica e assim por diante.
+Dispositivos Android Enterprise totalmente gerenciados são dispositivos de propriedade corporativa associados a um único usuário e usados exclusivamente para uso de trabalho e não pessoal. Os administradores podem gerenciar todo o dispositivo e impor controles de política não disponíveis para perfis de trabalho, como:
+- permitir instalação de aplicativo somente de Google Play gerenciados
+- bloquear a desinstalação de aplicativos gerenciados
+- impedir que os usuários redefinam dispositivos e assim por diante.
 
-O Intune ajuda-o a implementar aplicações e dispositivos geridos de definições para dispositivos Android Enterprise, incluindo totalmente o Android Enterprise. Para obter detalhes específicos sobre o Android Enterprise, veja [Android Enterprise requirements](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012) (Requisitos empresariais do Android).
+O Intune ajuda você a implantar aplicativos e configurações em dispositivos Android Enterprise, incluindo dispositivos Android Enterprise totalmente gerenciados. Para obter detalhes específicos sobre o Android Enterprise, veja [Android Enterprise requirements](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012) (Requisitos empresariais do Android).
 
 ## <a name="technical-requirements"></a>Requisitos técnicos
 
-Tem de ter um inquilino do Intune autónomo para gerir dispositivos Android Enterprise totalmente gerido. Gestão de dispositivos totalmente gerida não está disponível em qualquer um dos modos de híbridas (Configuration Manager-ligado) ou na consola de gestão legada do Silverlight.
+Você deve ter um locatário autônomo do Intune para gerenciar dispositivos Android Enterprise totalmente gerenciados. O gerenciamento de dispositivo totalmente gerenciado não está disponível no modo híbrido (conectado ao Configuration Manager) ou no console de gerenciamento do Silverlight herdado.
 
-Dispositivos têm de cumprir estes requisitos para ser gerido como uma empresa Android totalmente gerido de dispositivo:
+Os dispositivos devem atender a esses requisitos para serem gerenciados como um dispositivo Android Enterprise totalmente gerenciado:
 
 - Versão do SO Android 5.1 e posterior.
-- Dispositivos têm de executar uma compilação do Android que tem conectividade do Google Mobile Services (GMS). Os dispositivos têm de ter os GMS disponíveis e têm de conseguir ligar-se aos mesmos.
+- Os dispositivos devem executar uma compilação do Android que tenha conectividade de serviços móveis do Google (GMS). Os dispositivos têm de ter os GMS disponíveis e têm de conseguir ligar-se aos mesmos.
 
-Não existe nenhuma restrição nos fabricante de dispositivo/OEM forem cumpridos os requisitos acima.
+Não há nenhuma restrição no fabricante/OEM do dispositivo se os requisitos acima forem atendidos.
 
-## <a name="set-up-android-enterprise-fully-managed-device-management"></a>Configurar a gestão de dispositivos Android Enterprise totalmente gerido
+## <a name="set-up-android-enterprise-fully-managed-device-management"></a>Configurar o gerenciamento de dispositivo totalmente gerenciado do Android Enterprise
 
-Para configurar o Android Enterprise totalmente geridos gestão de dispositivos, siga estes passos:
+Para configurar o gerenciamento de dispositivo totalmente gerenciado do Android Enterprise, siga estas etapas:
 
-1. Para se preparar para gerir dispositivos móveis, terá [definir a autoridade de gestão (MDM) do dispositivo móvel para **Microsoft Intune**](mdm-authority-set.md). Este item só é definido uma vez, quando está a configurar pela primeira vez o Intune para a gestão de dispositivos móveis.
+1. Para se preparar para gerenciar dispositivos móveis, você deve [definir a autoridade de MDM (gerenciamento de dispositivo móvel) como **Microsoft Intune**](mdm-authority-set.md). Este item só é definido uma vez, quando está a configurar pela primeira vez o Intune para a gestão de dispositivos móveis.
 2. [Ligue a sua conta do inquilino do Intune à sua conta do Android Enterprise](connect-intune-android-enterprise.md).
-3. [Permitir que os dispositivos do utilizador pertencentes à empresa](#enable-corporate-owned-user-devices)
-4. [Inscrever os dispositivos totalmente geridos](#enroll-the-fully-managed-devices).
+3. [Habilitar dispositivos de usuários de propriedade corporativa](#enable-corporate-owned-user-devices)
+4. [Registre os dispositivos totalmente gerenciados](#enroll-the-fully-managed-devices).
 
-### <a name="enable-corporate-owned-user-devices"></a>Permitir que os dispositivos pertencentes à empresa de utilizador empresarial
+### <a name="enable-corporate-owned-user-devices"></a>Habilitar dispositivos de usuário de propriedade corporativa
 
-1. Inicie sessão no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) e escolha **inscrição de dispositivos** > **inscrição de dispositivos Android** > **pertencente à empresa, totalmente gerido dispositivos de utilizador (pré-visualização)** .
-2. Sob **permitir que os utilizadores a inscrição de dispositivos do utilizador pertencentes**, escolha **Sim**.
+1. Conecte-se ao [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) e escolha **registro** > de dispositivo registro do**Android** > **dispositivos de usuário totalmente gerenciados (versão prévia)** .
+2. Em **permitir que os usuários registrem dispositivos de usuário de propriedade corporativa**, escolha **Sim**.
 
-[!NOTE]
-Se tiver definida uma política de acesso condicional do Azure AD que utiliza a *requer um dispositivo ser marcado como compatível* controlar e aplica-se ao **aplicações na Cloud de todos os**, **Android** e **Navegadores** -tem de excluir a **Microsoft Intune** aplicação na cloud desta política. Isso ocorre porque os processos de configuração do Android utiliza um separador do Chrome para autenticar os utilizadores durante a inscrição. Para obter mais informações, consulte [documentação de acesso condicional do Azure AD](https://docs.microsoft.com/azure/active-directory/conditional-access/).
+> [!NOTE]
+> Se você tiver uma política de acesso condicional do Azure AD definida que usa o *exigir que um dispositivo seja marcado como* controle em conformidade e se aplicar a **todos os aplicativos de nuvem**, **Android** e **navegadores** , você deverá excluir o **Microsoft Intune** aplicativo de nuvem desta política. Isso ocorre porque os processos de instalação do Android usam uma guia Chrome para autenticar seus usuários durante o registro. Para obter mais informações, consulte [documentação de acesso condicional do Azure ad](https://docs.microsoft.com/azure/active-directory/conditional-access/).
 
-Quando esta definição está definida como **Sim**, fornece-lhe um token de inscrição (uma cadeia aleatória) e um código QR para o seu inquilino do Intune. Este token de inscrição única é válido para todos os seus utilizadores e não expira. Consoante o SO Android e a versão do dispositivo, pode utilizar o token ou código QR para inscrever o dispositivo de quiosque.
+Quando essa configuração é definida como **Sim**, ela fornece um token de registro (uma cadeia de caracteres aleatória) e um código QR para seu locatário do Intune. Esse único token de registro é válido para todos os usuários e não expirará. Dependendo do sistema operacional Android e da versão do dispositivo, você pode usar o token ou o código QR para registrar o dispositivo de quiosque.
 
-## <a name="enroll-the-fully-managed-devices"></a>Inscrever os dispositivos totalmente geridos
-Agora, pode [inscrever os dispositivos totalmente geridos](android-dedicated-devices-fully-managed-enroll.md).
+## <a name="enroll-the-fully-managed-devices"></a>Registrar os dispositivos totalmente gerenciados
+Agora você pode [registrar seus dispositivos totalmente gerenciados](android-dedicated-devices-fully-managed-enroll.md).
 
-## <a name="considerations-for-this-preview-feature"></a>Considerações para esta funcionalidade de pré-visualização
-Esta pré-visualização pública inclui um conjunto básico de recursos para o Android Enterprise totalmente geridos pelo conjunto de solução. Queremos ouvi sobre a sua experiência com as funcionalidades de pré-visualização usando qualquer um dos seus canais de comunicação atual para a equipe (como [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas?category_id=210853)).
+## <a name="considerations-for-this-preview-feature"></a>Considerações para este recurso de visualização
+Essa visualização pública inclui um conjunto principal de recursos para o conjunto de soluções totalmente gerenciadas do Android Enterprise. Queremos saber mais sobre sua experiência usando os recursos de visualização usando qualquer um dos seus canais de comunicação atuais com a equipe [](https://microsoftintune.uservoice.com/forums/291681-ideas?category_id=210853)(como UserVoice).
 
-Esta pré-visualização suporta as seguintes funcionalidades para Android Enterprise dispositivos totalmente geridos:
-- Inscrição de dispositivo com NFC, entrada de token, código QR e Zero Touch
-- Configuração do dispositivo para grupos de utilizadores
-- Configuração para grupos de utilizadores e de distribuição de aplicações
+Esta versão prévia dá suporte aos seguintes recursos para dispositivos Android Enterprise totalmente gerenciados:
+- Registro de dispositivo usando NFC, entrada de token, código QR e Zero Touch
+- Configuração de dispositivo para grupos de usuários
+- Distribuição e configuração de aplicativos para grupos de usuários
 
 
-Ao utilizar estas funcionalidades de pré-visualização, tenha em atenção o seguinte:
-- Funcionalidades em pré-visualização não são recomendadas para a missão crítica ou implementações de produção. 
-- Funcionalidades de pré-visualização são implementadas para os padrões de produção do Microsoft Intune. No entanto, nem todas as funcionalidades do Intune estão disponíveis para utilização com dispositivos de utilizador do Android Enterprise totalmente gerido. Funcionalidades de pré-visualização claramente são rotuladas com "(pré-visualização)" na consola do Intune. 
-- As funcionalidades de pré-visualização são totalmente compatíveis através dos canais de suporte do Intune habituais.
-- Inscrição de dispositivos Android Enterprise totalmente gerido com o Samsung Knox Mobile inscrição não é suportada em pré-visualização. 
-- Utilização do Portal da empresa do Intune aplicação não é suportada no Android Enterprise totalmente os dispositivos geridos. 
-- Funcionalidades do Intune, como o acesso condicional, as políticas de proteção de aplicações e certificado de implementação não são suportados em pré-visualização. 
-- Filtragem de grupo de dispositivos de qualquer aplicação ou o perfil não é suportada em pré-visualização. Filtragem de grupo usuário só é suportada. 
-- Não existe nenhuma interface do Usuário de primeira classe para a configuração de e-mail, Wi-Fi ou VPN. Utilize políticas de configuração de aplicações para configurar as definições de configuração de aplicações suportadas.
+Ao usar esses recursos de visualização, tenha em mente o seguinte:
+- Os recursos na visualização não são recomendados para implantações de missão crítica ou de produção. 
+- Os recursos de visualização são implementados para Microsoft Intune padrões de produção. No entanto, nem todos os recursos do Intune estão disponíveis para uso com dispositivos de usuário totalmente gerenciados do Android Enterprise. Os recursos de visualização são claramente rotulados com "(visualização)" no console do Intune. 
+- Os recursos de visualização são totalmente compatíveis com os canais de suporte comuns do Intune.
+- Registrar dispositivos Android Enterprise totalmente gerenciados usando o registro móvel Samsung Knox não tem suporte na versão prévia. 
+- O uso do aplicativo Portal da Empresa do Intune não tem suporte em dispositivos Android Enterprise totalmente gerenciados. 
+- Recursos do Intune como acesso condicional, políticas de proteção de aplicativo e implantação de certificado não têm suporte na visualização. 
+- O direcionamento de grupo de dispositivos de qualquer perfil ou aplicativo não tem suporte na visualização. Há suporte apenas para o direcionamento de grupo de usuários. 
+- Não há nenhuma interface do usuário de primeira classe para configurar email, WiFi ou VPN. Use as políticas de configuração de aplicativo para definir as definições de configuração de aplicativo com suporte.
 
 ## <a name="next-steps"></a>Passos Seguintes
-- [Adicionar o que Android Enterprise totalmente gerido de políticas de configuração do dispositivo](device-restrictions-android-for-work.md#device-owner-only)
-- [Configurar políticas de configuração de aplicações para Android Enterprise dispositivos totalmente geridos](app-configuration-policies-use-android.md)
+- [Adicionar políticas de configuração de dispositivo do Android Enterprise totalmente gerenciado](device-restrictions-android-for-work.md#device-owner-only)
+- [Configurar políticas de configuração de aplicativo para dispositivos Android Enterprise totalmente gerenciados](app-configuration-policies-use-android.md)
 
