@@ -1,11 +1,11 @@
 ---
-title: Utilizar o Intune para remediar vulnerabilidades descobertas por Microsoft Defender ATP - Azure | Documentos da Microsoft
-description: Veja como gerir tarefas de segurança do e ameaças e vulnerabilidade gestão, parte do Microsoft Defender avançadas de proteção contra ameaças (ATP) da consola do Intune.
+title: Usar o Intune para corrigir vulnerabilidades encontradas pelo Microsoft defender ATP – Azure | Microsoft Docs
+description: Veja como gerenciar tarefas de segurança do e do gerenciamento de vulnerabilidades & ameaças, parte da ATP (proteção avançada contra ameaças) do Microsoft defender no console do Intune.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/17/2019
+ms.date: 07/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,80 +15,80 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aa6dfef745157ae96736f8405fd5cafc33d4335f
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: be16d545001d5ff3df2c6784b78d91b841302767
+ms.sourcegitcommit: 5ce8726278004bbf072149a9c924091bb0654b7c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045285"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67851417"
 ---
-# <a name="use-intune-to-remediate-vulnerabilities-identified-by-microsoft-defender-atp"></a>Utilizar o Intune para remediar vulnerabilidades identificadas por Microsoft Defender ATP  
+# <a name="use-intune-to-remediate-vulnerabilities-identified-by-microsoft-defender-atp"></a>Usar o Intune para corrigir vulnerabilidades identificadas pelo Microsoft defender ATP  
 
-Quando integra o Intune com o Microsoft Defender avançadas de proteção contra ameaças (ATP), pode tirar partido das ameaças ATPs & Gestão de vulnerabilidade (TVM) e utilizar o Intune para remediar ponto fraco do ponto de extremidade identificado pelo TVM. Esta integração proporciona uma abordagem baseada em risco para a deteção e atribuição de prioridades das vulnerabilidades que pode melhorar o tempo de resposta de remediação em todo o ambiente.  
+Ao integrar o Intune à ATP (proteção avançada contra ameaças) do Microsoft defender, você pode aproveitar o ATPs Threat (gerenciamento de vulnerabilidades & TVM) e usar o Intune para corrigir o ponto fraco do ponto de extremidade identificado pelo TVM. Essa integração oferece uma abordagem baseada em risco à descoberta e à priorização de vulnerabilidades que podem melhorar o tempo de resposta de correção em seu ambiente.  
 
-[Ameaças e gestão de vulnerabilidades](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/next-gen-threat-and-vuln-mgt) faz parte da [proteção do Microsoft Defender avançada contra ameaças](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection).  
+O gerenciamento de vulnerabilidades de [& de ameaças](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/next-gen-threat-and-vuln-mgt) faz parte da [proteção avançada contra ameaças do Microsoft defender](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection).  
 
 ## <a name="how-integration-works"></a>Como funciona a integração  
 
-Depois de ligar o Intune para a proteção de ameaças avançada do Microsoft Defender, o ATP recebe os detalhes de ameaças e vulnerabilidade dos dispositivos geridos.  
+Depois de conectar o Intune à proteção avançada contra ameaças do Microsoft defender, a ATP recebe detalhes de ameaça e vulnerabilidade dos dispositivos gerenciados.  
 
-Na consola do Centro de segurança do Windows Defender, os administradores de segurança ATP rever dados sobre vulnerabilidades de ponto final. Os administradores, em seguida, utilizam um único clique para criar tarefas de segurança que sinalizar os dispositivos vulneráveis de remediação. As tarefas de segurança imediatamente são transmitidas para a consola do Intune em que os administradores do Intune o podem visualizá-los. A tarefa de segurança identifica o tipo de vulnerabilidade, prioridade, estado e os passos necessários para remediar a vulnerabilidade. O administrador do Intune decida aceitar ou rejeitar a tarefa.  
+No console da central de segurança do Microsoft defender, os administradores de segurança do ATP examinam dados sobre vulnerabilidades do ponto de extremidade. Em seguida, os administradores usam um clique único para criar tarefas de segurança que sinalizam os dispositivos vulneráveis para correção. As tarefas de segurança são passadas imediatamente para o console do Intune, onde os administradores do Intune podem exibi-las. A tarefa de segurança identifica o tipo de vulnerabilidade, prioridade, status e as etapas a serem seguidas para corrigir a vulnerabilidade. O administrador do Intune escolhe aceitar ou rejeitar a tarefa.  
 
-Quando uma tarefa for aceita, o administrador do Intune funciona, em seguida, para corrigir a vulnerabilidade no entanto, Intune, utilizar as diretrizes fornecidas como parte da tarefa de segurança.  
+Quando uma tarefa é aceita, o administrador do Intune age a corrigir a vulnerabilidade por meio do Intune, usando as diretrizes fornecidas como parte da tarefa de segurança.  
 
-Ações comuns de remediação incluem:  
-- **Bloco** uma aplicação em execução  
-- **Implementar** uma atualização do sistema operativo para reduzir a vulnerabilidade.  
-- **Modificar** um valor de registo.  
-- **Desativar** ou **ativar** uma configuração para afetar a vulnerabilidade.  
-- **Necessitam da atenção** o administrador para a ameaça de alertas quando não existe nenhuma recomendação adequada para fornecer.  
+As ações comuns para correção incluem:  
+- **Bloquear** a execução de um aplicativo  
+- **Implante** uma atualização do sistema operacional para atenuar a vulnerabilidade.  
+- **Modifique** um valor de registro.  
+- **Desabilitar** ou **habilitar** uma configuração para afetar a vulnerabilidade.  
+- **Exigir atenção** alerta o administrador para a ameaça quando não há recomendação adequada para fornecer.  
 
 Um fluxo de trabalho de exemplo:  
-- No Microsoft Defender ATP, uma vulnerabilidade para uma aplicação com o nome Contoso Media Player v4 é detetada e um administrador cria uma tarefa de segurança para atualizar essa aplicação. O leitor de multimédia de Contoso é uma aplicação não gerida que foi implementada com o Intune.  
+- No Microsoft defender ATP, uma vulnerabilidade para um aplicativo chamado contoso Media Player v4 é descoberta e um administrador cria uma tarefa de segurança para atualizar esse aplicativo. O player de mídia da Contoso é um aplicativo não gerenciado que foi implantado com o Intune.  
 
-  Esta tarefa de segurança é apresentada na consola do Intune com o estado pendente:  
-  ![Ver a lista de tarefas de segurança na consola do Intune](./media/atp-manage-vulnerabilities/temp-security-tasks.png)
+  Essa tarefa de segurança aparece no console do Intune com um status de pendente:  
+  ![Exibir a lista de tarefas de segurança no console do Intune](./media/atp-manage-vulnerabilities/temp-security-tasks.png)
  
-- O administrador do Intune seleciona a tarefa de segurança para ver detalhes sobre a tarefa.  O administrador, em seguida, seleciona **Accept**, que atualiza o estado no Intune e no ATP para ser *aceites*.  
+- O administrador do Intune seleciona a tarefa de segurança para exibir detalhes sobre a tarefa.  O administrador seleciona **aceitar**, que atualiza o status no Intune e, em ATP, para ser *aceito*.  
   ![Aceitar ou rejeitar uma tarefa de segurança](./media/atp-manage-vulnerabilities/temp-accept-task.png) 
  
-- O administrador, em seguida, efetua a remediação da tarefa com base na diretriz fornecida.  A documentação de orientação varia consoante o tipo de remediação que é necessário. Se estiver disponível, diretrizes de atualizações incluem ligações que abrem painéis relevantes para as configurações no Intune. 
+- Em seguida, o administrador corrige a tarefa com base nas diretrizes fornecidas.  A orientação varia dependendo do tipo de correção necessária. Quando disponível, as diretrizes de correção incluem links que abrem painéis relevantes para configurações no Intune. 
 
-  Uma vez que o leitor de multimédia neste exemplo não é uma aplicação gerida, o Intune só pode fornecer instruções de texto. Se a aplicação foi gerida, o Intune pode fornecer instruções para transferir uma versão atualizada e fornecer um link para abrir a implementação da aplicação para que os ficheiros atualizados podem ser adicionados à implementação. 
+  Como o player de mídia neste exemplo não é um aplicativo gerenciado, o Intune só pode fornecer instruções de texto. Se o aplicativo foi gerenciado, o Intune pode fornecer instruções para baixar uma versão atualizada e fornecer um link para abrir a implantação do aplicativo para que os arquivos atualizados possam ser adicionados à implantação. 
 
-- Após a remediação de concluir, o administrador do Intune abre-se a tarefa de segurança e seleciona **tarefa concluída**.  O estado de remediação é atualizado para o Intune e no ATP, em que os administradores de segurança confirmar o estado revisado para a vulnerabilidade.  
+- Após a conclusão da correção, o administrador do Intune abre a tarefa de segurança e seleciona **concluir tarefa**.  O status de correção é atualizado para o Intune e, no ATP, em que os administradores de segurança confirmam o status revisado da vulnerabilidade.  
 
 ## <a name="prerequisites"></a>Pré-requisitos  
 
-**Subscrições**:  
+**Assinaturas**:  
 - Microsoft Intune  
-- A proteção de ameaças avançada do Microsoft Defender ([Inscreva-se numa avaliação gratuita](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-main-abovefoldlink).)  
+- Proteção avançada contra ameaças do Microsoft defender ([Inscreva-se para uma avaliação gratuita](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-main-abovefoldlink)).  
 
 **Configurações do Intune para ATP**:  
-- Configure uma ligação de serviço para serviço com o Microsoft Defender ATP.  
-- Implementar uma política de conformidade de dispositivos com o tipo de perfil **Microsoft Defender ATP (Windows 10 Desktop)** para dispositivos que terão o risco avaliado por ATP.
-  Para obter informações sobre como configurar o Intune para funcionar com o ATP, consulte [impor a conformidade para Microsoft Defender ATP com acesso condicional no Intune](https://docs.microsoft.com/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune).  
+- Configure um serviço para conexão de serviço com o Microsoft defender ATP.  
+- Implante uma política de conformidade do dispositivo com um tipo de perfil do **Microsoft defender ATP (Windows 10 Desktop)** para dispositivos que terão risco avaliado pela ATP.
+  Para obter informações sobre como configurar o Intune para funcionar com ATP, consulte [impor a conformidade para o Microsoft defender ATP com acesso condicional no Intune](https://docs.microsoft.com/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune).  
 
 ## <a name="work-with-security-tasks"></a>Trabalhar com tarefas de segurança  
 
-1. Inicie sessão no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) e aceda à **segurança do dispositivo** > **tarefas de segurança**.  
-2. Selecione uma tarefa na lista para abrir uma janela de recursos que apresenta detalhes adicionais para essa tarefa de segurança.  
-3. Ao visualizar a janela de recursos de tarefas de segurança, pode selecionar links adicionais:  
-   - Aplicações GERIDAS - ver a aplicação que está vulnerável. Quando se aplica a vulnerabilidade para várias aplicações, verá uma lista de aplicações filtrada.  
-   - DISPOSITIVOS - ver uma lista do *dispositivos vulneráveis*, da qual pode ligar através de uma entrada com mais detalhes sobre a vulnerabilidade nesse dispositivo.  
-   - REQUERENTE - utilize a ligação para enviar correio para o administrador que enviou esta tarefa de segurança.  
-   - NOTAS de – mensagens personalizadas de leitura submetidas pelo requerente ao abrir a tarefa de segurança.  
-4. Selecione **Accept** ou **rejeitar** Enviar notificação para ATP para a ação em planeadas. Quando aceita ou rejeitar uma tarefa, pode enviar anotações, o que são enviadas para o ATP.  
+1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) e vá para **Device Security** > Security**Tasks**.  
+2. Selecione uma tarefa na lista para abrir uma janela de recurso que exibe detalhes adicionais para essa tarefa de segurança.  
+3. Ao exibir a janela de recursos da tarefa de segurança, você pode selecionar links adicionais:  
+   - APLICATIVOS GERENCIADOs – exiba o aplicativo que está vulnerável. Quando a vulnerabilidade se aplica a vários aplicativos, você verá uma lista filtrada de aplicativos.  
+   - DISPOSITIVOS – exiba uma lista dos *dispositivos vulneráveis*, dos quais você pode vincular a uma entrada com mais detalhes para a vulnerabilidade nesse dispositivo.  
+   - SOLICITAnte-use o link para enviar email para o administrador que enviou esta tarefa de segurança.  
+   - OBSERVAÇÕES-Leia as mensagens personalizadas enviadas pelo solicitante ao abrir a tarefa de segurança.  
+4. Selecione **aceitar** ou **rejeitar** para enviar notificação para ATP para sua ação planejada. Ao aceitar ou rejeitar uma tarefa, você pode enviar anotações, que são enviadas para ATP.  
 
-5. Depois de aceitar uma tarefa, volte a abrir a tarefa de segurança (se fechado) e siga os detalhes de REMEDIAÇÃO para remediar a vulnerabilidade.  As instruções fornecidas pelo ATP nos detalhes da tarefa de segurança variam consoante a vulnerabilidade envolvida.  
+5. Depois de aceitar uma tarefa, reabra a tarefa de segurança (se ela foi fechada) e siga os detalhes de correção para corrigir a vulnerabilidade.  As instruções fornecidas por ATP nos detalhes da tarefa de segurança variam dependendo da vulnerabilidade envolvida.  
 
-   Quando é possível fazer isso, as instruções de atualização incluem ligações que abrem os objetos de configuração relevantes na consola do Intune.  
+   Quando for possível fazer isso, as instruções de correção incluem links que abrem os objetos de configuração relevantes no console do Intune.  
 
-6. Depois de concluir os passos de remediação, abra a tarefa de segurança e selecione **tarefa concluída**.  Esta ação atualiza o estado da tarefa de segurança no Intune e o ATP.  
+6. Depois de concluir as etapas de correção, abra a tarefa de segurança e selecione **concluir tarefa**.  Essa ação atualiza o status da tarefa de segurança no Intune e no ATP.  
 
-Após remediação é concluída, pode remover a classificação de exposição de risco no ATP, com base nas novas informações dos dispositivos remediadas. 
+Após a correção ser bem-sucedida, a pontuação de exposição de risco na ATP pode ser descartada, com base nas novas informações dos dispositivos corrigidos. 
 
 ## <a name="next-steps"></a>Próximos Passos
-Saiba mais sobre o Intune e [Microsoft Defender ATP](https://docs.microsoft.com/intune/advanced-threat-protection)  
-Reveja o Intune [defesa contra ameaças móveis](https://docs.microsoft.com/intune/mobile-threat-defense)  
-Reveja os [dashboard de ameaças e gestão de vulnerabilidades](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/tvm-dashboard-insights) no Microsoft Defender ATP
+Saiba mais sobre o Intune e [o Microsoft defender ATP](https://docs.microsoft.com/intune/advanced-threat-protection)  
+Examinar a [defesa contra ameaças móveis](https://docs.microsoft.com/intune/mobile-threat-defense) do Intune  
+Examinar o [painel Threat & gerenciamento](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/tvm-dashboard-insights) de vulnerabilidades no Microsoft defender ATP
