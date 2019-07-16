@@ -1,7 +1,7 @@
 ---
 title: Rever os registos da política de proteção de aplicações
 titleSuffix: Microsoft Intune
-description: Este tópico descreve como configurar os registos do (aplicação) de política de proteção de aplicações do Intune.
+description: Este tópico descreve como configurar logs de aplicativo (política de proteção de aplicativo) do Intune.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -17,32 +17,32 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: acad6b0fa343bdbcc722929886a8e68a4fa4d8bc
-ms.sourcegitcommit: 63b55e81122e5c15893302b109ae137c30855b55
+ms.openlocfilehash: 7f9ee4d978bcb44f3b13ddcf9aafa4a3210f0f7e
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67713298"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67885074"
 ---
 # <a name="review-client-app-protection-logs"></a>Rever registos de proteção de aplicações cliente
 
-Saiba mais sobre as definições que pode rever nos registos de proteção de aplicações. Acesso a registos ao ativar o diagnóstico do Intune num cliente móvel. 
+Saiba mais sobre as definições que pode rever nos registos de proteção de aplicações. Acesse logs habilitando o diagnóstico do Intune em um cliente móvel. 
 
-O processo para ativar e recolher registos varia consoante a plataforma:
-- **Dispositivos Android** -utilize o *Portal da empresa*. Ver [enviar registos ao suporte da empresa por E-Mail](/intune-user-help/send-logs-to-your-it-admin-by-email-android).
-- **dispositivos iOS** -utilize um Browser gerido, ou *Microsoft Edge* para recolher registos. Para obter detalhes, consulte o blogue da equipa de suporte do Intune [nova consola diagnóstico do Intune para envio de Log no Intune Managed Browser](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-New-Intune-Diagnostic-Console-for-Log-Submission-in/ba-p/280021). 
-- **Dispositivos Windows 10** -utilize *MDMDiag* e registos de eventos. Ver, [falhas de diagnosticar MDM no Windows 10](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10) o conteúdo de gestão de cliente do Windows e o blog [resolução de problemas do Windows 10 Intune falhas de política](http://configmgrdogsarchive.com/2018/08/09/troubleshooting-windows-10-intune-policy-failures)
+O processo para habilitar e coletar logs varia de acordo com a plataforma:
+- **Dispositivos Android** -Use o *portal da empresa*. Consulte [os logs de email para o suporte de sua empresa](/intune-user-help/send-logs-to-your-it-admin-by-email-android).
+- **dispositivos IOS** – Use um Managed browser ou *o Microsoft Edge* para coletar logs. Para obter detalhes, consulte o blog da equipe de suporte do Intune [novo console de diagnóstico do Intune para envio de log no Intune Managed browser](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-New-Intune-Diagnostic-Console-for-Log-Submission-in/ba-p/280021). 
+- **Dispositivos Windows 10** – use *MDMDiag* e logs de eventos. Consulte [diagnosticar falhas de MDM no Windows 10](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10) no conteúdo de gerenciamento de cliente do Windows e o blog [Solucionando problemas de falhas de política do Windows 10 Intune](http://configmgrdogsarchive.com/2018/08/09/troubleshooting-windows-10-intune-policy-failures)
 
 
-A tabela seguinte lista o nome e uma explicação das definições registadas no registo.
+A tabela a seguir lista o nome e uma explicação das configurações registradas no log.
 
 ## <a name="app-protection-policy-settings"></a>Definições de políticas de proteção de aplicações
 
 | Nome                        | Valores possíveis                                                                                                                                                                                                                                                                                           | Definição no portal de Gestão de Aplicações Móveis do Azure Intune                                                                                                                            |
 |-----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| AccessRecheckOfflineTimeout | x minutos                                                                                                                                                                                                                                                                                                   | [Acesso] Verificar novamente os requisitos de acesso – Período de Tolerância Offline<br>Nota: Este é o período de tempo antes dos requisitos de acesso da aplicação serem novamente verificados se o dispositivo estiver offline.             |
-| AccessRecheckOnlineTimeout  | _x_ minutos                                                                                                                                                                                                                                                                                                   | [Acesso] Verificar novamente os requisitos de acesso – Tempo Limite.<br>Nota: Este é o período de tempo antes dos requisitos de acesso da aplicação serem novamente verificados após a aplicação é iniciada, se o dispositivo estiver online. |
-| AllowedOutboundClipboardSharingExceptionLength               | x carateres                                                                                                                                                                                                                                                                                           | [Acesso] Especifique o número de carateres que podem ser cortados ou copiados de uma aplicação gerida.  Esta definição substitui a `AllowedOutboundClipboardSharingLevel` restrição. Valor predefinido de "0" significa que nenhuma exceção é permitida. 
+| AccessRecheckOfflineTimeout | x minutos                                                                                                                                                                                                                                                                                                   | [Acesso] Verificar novamente os requisitos de acesso – Período de Tolerância Offline<br>Nota: Esse é o período de tempo antes que os requisitos de acesso para o aplicativo sejam verificados novamente se o dispositivo estiver offline.             |
+| AccessRecheckOnlineTimeout  | _x_ minutos                                                                                                                                                                                                                                                                                                   | [Acesso] Verificar novamente os requisitos de acesso – Tempo Limite.<br>Nota: Esse é o período de tempo antes que os requisitos de acesso para o aplicativo sejam verificados novamente depois que o aplicativo for iniciado se o dispositivo estiver online. |
+| AllowedOutboundClipboardSharingExceptionLength               | x carateres                                                                                                                                                                                                                                                                                           | Às Especifique o número de caracteres que podem ser recortados ou copiados de um aplicativo gerenciado.  Essa configuração substitui a `AllowedOutboundClipboardSharingLevel` restrição. O valor padrão de ' 0 ' significa que nenhuma exceção é permitida. 
 | AppPinDisabled              | 0 = Não<br>1 = Sim                                                                                                                                                                                                                                                                                           | [Acesso] Desativar o PIN da aplicação quando o PIN do dispositivo for gerido.                                                                                                                                     |
 | AppSharingFromLevel         | 0 = Não existem aplicações<br>1 = Aplicações geridas<br>2 = Qualquer aplicação                                                                                                                                                                                                                                                              | [Reposicionamento de Dados] Permitir que esta aplicação receba dados de outras aplicações.                                                                                                                        |
 | AppSharingToLevel           | 0 = Não existem aplicações<br>1 = Aplicações geridas<br>2 = Qualquer aplicação                                                                                                                                                                                                                                                              | [Reposicionamento de Dados] Permitir que esta aplicação transfira dados para outras aplicações.                                                                                                                         |
@@ -72,5 +72,5 @@ A tabela seguinte lista o nome e uma explicação das definições registadas no
 
 ## <a name="next-steps"></a>Passos Seguintes
 
- - Para saber mais sobre as políticas de proteção de aplicações, veja [O que são as políticas de proteção de aplicações?](app-protection-policy.md)
- - O Intune oferece um conjunto de ferramentas para o ajudar a resolver problemas no seu ambiente. Para obter mais informações, veja [Utilizar o portal de resolução de problemas](help-desk-operators.md).
+- Para saber mais sobre as políticas de proteção de aplicações, veja [O que são as políticas de proteção de aplicações?](app-protection-policy.md)
+- O Intune oferece um conjunto de ferramentas para o ajudar a resolver problemas no seu ambiente. Para obter mais informações, veja [Utilizar o portal de resolução de problemas](help-desk-operators.md).

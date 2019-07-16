@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2ea1ca5f2661d51088efae79d97da40ce8737b7e
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: f2548e0ff3d4406f64d2091001c38056fe585896
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67546720"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883539"
 ---
 # <a name="enroll-devices-in-intune-by-using-a-device-enrollment-manager-account"></a>Inscrever dispositivos no Intune ao utilizar uma conta de Gestor de inscrição de dispositivos
 
@@ -32,13 +32,13 @@ Pode inscrever até 1000 dispositivos móveis com uma única conta do Azure Acti
 
 As contas de utilizador DEM e os dispositivos que estão inscritos com uma conta de utilizador DEM têm as seguintes limitações:
 
-  - Um utilizador de conta DEM tem de atribuir uma licença do Intune.
-  - A limpeza não pode ser feita a partir do Portal da Empresa. A limpeza de um dispositivo inscrito por uma conta de utilizador DEM pode ser feita no portal do Azure a partir do Intune.
-  - Apenas o dispositivo local é apresentado na aplicação Portal da Empresa ou do site.
-  - As contas de utilizador DEM não podem utilizar aplicações Apple Volume Purchase Program (VPP) com licenças de utilizador Apple VPP devido aos requisitos do ID Apple por utilizador para a gestão de aplicações.
-  - Os dispositivos podem instalar as aplicações VPP se tiverem licenças do dispositivo Apple VPP.
-  - Dispositivos estão bloqueados para o acesso condicional com a exceção do Windows 10 versão 1803 +
-  - Todos os dispositivos inscritos com contas DEM tem de estar devidamente licenciado para serem geridos pelo Intune. A licença pode ser uma licença de utilizador do Intune ou uma licença de dispositivo do Intune.
+- Uma licença do Intune deve ser atribuída a um usuário da conta do DEM.
+- A limpeza não pode ser feita a partir do Portal da Empresa. A limpeza de um dispositivo inscrito por uma conta de utilizador DEM pode ser feita no portal do Azure a partir do Intune.
+- Apenas o dispositivo local é apresentado na aplicação Portal da Empresa ou do site.
+- As contas de utilizador DEM não podem utilizar aplicações Apple Volume Purchase Program (VPP) com licenças de utilizador Apple VPP devido aos requisitos do ID Apple por utilizador para a gestão de aplicações.
+- Os dispositivos podem instalar as aplicações VPP se tiverem licenças do dispositivo Apple VPP.
+- Dispositivos estão bloqueados para o acesso condicional com a exceção do Windows 10 versão 1803 +
+- Todos os dispositivos registrados com as contas do DEM precisam ser devidamente licenciados para serem gerenciados pelo Intune. A licença pode ser uma licença de usuário do Intune ou uma licença de dispositivo do Intune.
 
 
 

@@ -17,39 +17,39 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f90568b3939d37bb4e7fbeff72d5e357bc57bd6e
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 21f4f55c028c6ff06730e50d9f9862e85d0a9ef1
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67547892"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884751"
 ---
-# <a name="microsoft-intune-data-warehouse-data-model"></a>Modelo de dados do armazém de dados do Microsoft Intune
+# <a name="microsoft-intune-data-warehouse-data-model"></a>Modelo de dados do Microsoft Intune data warehouse
 
 O Armazém de Dados do Intune copia dados diariamente para fornecer uma apresentação do histórico do ambiente de dispositivos móveis em contínua mudança. A apresentação é composta por entidades relacionadas no tempo.
 
-## <a name="entities-entity-sets"></a>Entidades: Conjuntos de entidades
+## <a name="entities-entity-sets"></a>Contabilidade Conjuntos de entidades
 
 O armazém expõe dados nas seguintes áreas de nível superior:
 
-  - Utilização e aplicações com proteção de aplicações ativada
-  - Dispositivos inscritos, propriedades e inventário
-  - Inventário de aplicações e software
-  - Políticas de conformidade e de configuração de dispositivos
+- Utilização e aplicações com proteção de aplicações ativada
+- Dispositivos inscritos, propriedades e inventário
+- Inventário de aplicações e software
+- Políticas de conformidade e de configuração de dispositivos
 
 Estas áreas contêm as entidades com significado para o ambiente do Intune. Encontrará detalhes sobre os conjuntos de entidades nos seguintes tópicos:
 
-  - [Aplicação](reports-ref-application.md)
-  - [data](reports-ref-date.md)
-  - [Devices](reports-ref-devices.md)
-  - [Extensão de Gestão do Intune](reports-ref-intunemanagementextension.md)
-  - [Política](reports-ref-policy.md)
-  - [Mobile App Management (MAM)](reports-ref-mobile-app-management.md)
-  - [User](reports-ref-user.md)
-  - [Utilizador Atual](reports-ref-current-user.md)
-  - [Associações de Dispositivos do Utilizador](reports-ref-user-device.md)
+- [Aplicação](reports-ref-application.md)
+- [data](reports-ref-date.md)
+- [Devices](reports-ref-devices.md)
+- [Extensão de Gestão do Intune](reports-ref-intunemanagementextension.md)
+- [Política](reports-ref-policy.md)
+- [Mobile App Management (MAM)](reports-ref-mobile-app-management.md)
+- [User](reports-ref-user.md)
+- [Utilizador Atual](reports-ref-current-user.md)
+- [Associações de Dispositivos do Utilizador](reports-ref-user-device.md)
 
-## <a name="relationships-star-schema-model"></a>Relações: Modelo de esquema de estrela
+## <a name="relationships-star-schema-model"></a>Existentes Modelo de esquema em estrela
 
 O armazém organiza as entidades em relações com significado para o tipo de questões que pretende esclarecer. Por exemplo, pode rever o número de instalações de uma aplicação Android desenvolvida internamente. A estrutura do armazém de dados permite-lhe obter informações sobre o seu ambiente móvel. Por sua vez, as ferramentas de análise, como o Microsoft Power BI, podem utilizar o modelo de dados do Armazém de Dados para criar visualizações e dashboards dinâmicos.
 
@@ -57,12 +57,12 @@ As entidades e as relações utilizam um modelo de esquema de estrela. Um esquem
 
 Um modelo de esquema de estrela é otimizado para flexibilidade e análise de dados para que possa criar os relatórios necessários para compreender o seu ambiente móvel em evolução.
 
-## <a name="time-daily-snapshots"></a>Hora: Instantâneos diários
+## <a name="time-daily-snapshots"></a>Momento Instantâneos diários
 
 O armazém fica a jusante dos dados do Intune. O Intune cria um instantâneo diário à meia-noite (UTC) e guarda-o no armazém. A duração da retenção dos instantâneos varia conforme as tabelas de factos. Algumas podem reter os dados durante sete dias, outras 30 dias e algumas durante períodos mais longos.
 
 ## <a name="next-steps"></a>Passos Seguintes
 
- - Para saber mais sobre como o armazém de dados controla a duração de um utilizador no Intune, veja [Representação da duração do utilizador no Armazém de Dados do Intune](reports-ref-user-timeline.md).
- - Para saber mais sobre trabalhar com armazéns de dados, veja [Create First Data WareHouse](https://www.codeproject.com/Articles/652108/Create-First-Data-WareHouse) (Criar Primeiro Armazém de Dados).
- - Para saber mais sobre como trabalhar com o Power BI e um armazém de dados, veja [Create a new Power BI report by importing a dataset (Criar um novo relatório do Power BI através da importação de um conjunto de dados)](https://powerbi.microsoft.com/documentation/powerbi-service-create-a-new-report/). 
+- Para saber mais sobre como o armazém de dados controla a duração de um utilizador no Intune, veja [Representação da duração do utilizador no Armazém de Dados do Intune](reports-ref-user-timeline.md).
+- Para saber mais sobre trabalhar com armazéns de dados, veja [Create First Data WareHouse](https://www.codeproject.com/Articles/652108/Create-First-Data-WareHouse) (Criar Primeiro Armazém de Dados).
+- Para saber mais sobre como trabalhar com o Power BI e um armazém de dados, veja [Create a new Power BI report by importing a dataset (Criar um novo relatório do Power BI através da importação de um conjunto de dados)](https://powerbi.microsoft.com/documentation/powerbi-service-create-a-new-report/). 

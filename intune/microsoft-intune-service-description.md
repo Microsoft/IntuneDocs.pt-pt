@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 88ca608027e6509eb56fad74a8edae405fa915fa
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: c813e413d0d3447955f785e0aff1e0edd3501b6a
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67549439"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882886"
 ---
 # <a name="microsoft-intune-service-description"></a>Descrição do serviço Microsoft Intune
 
@@ -58,26 +58,26 @@ Uma vez que o ecossistema de gestão de dispositivos móveis é alterado frequen
 
 - [Novidades do Microsoft Intune](whats-new.md). Este tópico é atualizado com a atualização de serviço mensal, e semanalmente quando, por exemplo, são lançadas aplicações como a aplicação Portal da Empresa.
 
-- Atualizações de serviço importantes também lhe são anunciadas no [Centro de administração do Microsoft 365](https://admin.microsoft.com/) Centro de mensagens. Se instalar o complemento [aplicação móvel Office 365 Admin](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a), pode receber notificações no seu dispositivo móvel. Saiba mais sobre como trabalhar com o [Centro de Mensagens do Office 365](https://support.office.com/client/results?Shownav=true&ns=O365ENTADMIN&version=15&ver=15&HelpID=O365E_MCManageUpdates).
+- Atualizações de serviço importantes também são anunciadas no centro de mensagens do [centro de administração Microsoft 365](https://admin.microsoft.com/) . Se instalar o complemento [aplicação móvel Office 365 Admin](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a), pode receber notificações no seu dispositivo móvel. Saiba mais sobre como trabalhar com o [Centro de Mensagens do Office 365](https://support.office.com/client/results?Shownav=true&ns=O365ENTADMIN&version=15&ver=15&HelpID=O365E_MCManageUpdates).
 
-    Algumas sugestões úteis:
+  Algumas sugestões úteis:
 
-    - As mensagens no Centro de Mensagens do Office 365 são direcionadas. Tal significa que se a sua empresa não tiver uma oferta do Intune para Educação, não enviaremos uma mensagem para si sobre o Intune para Educação.
+  - As mensagens no Centro de Mensagens do Office 365 são direcionadas. Tal significa que se a sua empresa não tiver uma oferta do Intune para Educação, não enviaremos uma mensagem para si sobre o Intune para Educação.
 
-    - As mensagens expiram. Por exemplo, a notificação de que o seu serviço foi atualizado com uma ligação para a página Novidades provavelmente expirará antes da próxima notificação de atualização de serviço. Caso contrário, teria um grande registo de mensagens que poderiam já não ser relevantes.
+  - As mensagens expiram. Por exemplo, a notificação de que o seu serviço foi atualizado com uma ligação para a página Novidades provavelmente expirará antes da próxima notificação de atualização de serviço. Caso contrário, teria um grande registo de mensagens que poderiam já não ser relevantes.
 
-    - A aplicação móvel de administração do Office 365 permite-lhe pesquisar todas as mensagens e reencaminhar a notificação caso pretenda partilhá-la com colegas na sua organização.
+  - A aplicação móvel de administração do Office 365 permite-lhe pesquisar todas as mensagens e reencaminhar a notificação caso pretenda partilhá-la com colegas na sua organização.
 
-    - Em Editar preferências do centro de mensagens, teremos eventualmente uma alternância para o **Intune** para que possa verificar as mensagens publicadas para uma subscrição do Intune. Caso veja a Gestão de Dispositivos Móveis do Office 365, trata-se de um serviço diferente, não do Intune.
+  - Em Editar preferências do centro de mensagens, teremos eventualmente uma alternância para o **Intune** para que possa verificar as mensagens publicadas para uma subscrição do Intune. Caso veja a Gestão de Dispositivos Móveis do Office 365, trata-se de um serviço diferente, não do Intune.
 
 - Também utilizamos dois blogues para partilhar a mensagem do EMS e as melhores práticas de suporte do Intune:
 
-    - [Blogue do Enterprise Mobility + Security](https://blogs.technet.microsoft.com/enterprisemobility/)
+  - [Blogue do Enterprise Mobility + Security](https://blogs.technet.microsoft.com/enterprisemobility/)
 
-    - [Blogue de suporte do Intune](https://blogs.technet.microsoft.com/intunesupport/)
+  - [Blogue de suporte do Intune](https://blogs.technet.microsoft.com/intunesupport/)
 
->[!Note]
->Pode monitorizar o estado de funcionamento do serviço Intune no [Centro de administração do Microsoft 365](https://admin.microsoft.com). Escolha **Estado de Funcionamento do Serviço** no painel esquerdo. Também pode utilizar a [Aplicação móvel de Administração do Office 365](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a) para ver o estado de funcionamento do serviço.
+> [!Note]
+> Você pode monitorar a integridade do serviço do Intune no [centro de administração do Microsoft 365](https://admin.microsoft.com). Escolha **Estado de Funcionamento do Serviço** no painel esquerdo. Também pode utilizar a [Aplicação móvel de Administração do Office 365](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a) para ver o estado de funcionamento do serviço.
 
 ## <a name="types-of-notices-microsoft-provides-about-the-intune-service"></a>Tipos de notificações que a Microsoft fornece sobre o serviço Intune
 
@@ -102,7 +102,7 @@ You can set up Intune in several ways to manage and help protect your company's 
 - **Intune with System Center Configuration Manager.** Use the Configuration Manager management console to manage computers and mobile devices in your enterprise. This configuration can help you to manage all your organization’s devices through a single console, the Configuration Manager Admin Console. Configuration Manager supports large numbers of mobile devices, servers, and computers. For more about Configuration Manager, see [Hybrid mobile device management (MDM) with System Center Configuration Manager and Microsoft Intune](/sccm/mdm/understand/hybrid-mobile-device-management). For more help deciding which approach is right for you, see [Choose between Microsoft Intune standalone and hybrid mobile device management with Configuration Manager](/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management).--->
 
 ## <a name="language-support"></a>Suporte de idiomas
-Intune é executado no portal do Azure, que suporta os seguintes idiomas: Chinês (simplificado), chinês (tradicional), Tcheco, Holandês, inglês, alemão, húngaro, italiano, japonês, português (Brasil), português (Portugal), russo, espanhol, inglês, francês, coreano, polaco, sueco e turco.
+O Intune é executado no portal do Azure, que dá suporte a estes idiomas: Chinês (simplificado), chinês (tradicional), tcheco, holandês, inglês, alemão, húngaro, italiano, japonês, Português (Brasil), Português (Portugal), russo, espanhol, inglês, francês, coreano, polonês, Sueco, Turco.
 
 A Consola de Administração do Intune e as experiências em dispositivos móveis destinadas ao utilizador suportam dinamarquês, grego, finlandês, norueguês e romeno, para além de todos os idiomas suportados pelo portal do Azure.
 

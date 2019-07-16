@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 49a6e8e625a08c9ad039d3106ff5d5c7001c2cab
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: ae9bd6d6f56ec85a993ffcb2f3c1af9897a2a87f
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67547099"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883648"
 ---
 # <a name="integrate-check-point-sandblast-mobile-with-intune"></a>Integrar o Check Point SandBlast Mobile com o Intune
 
@@ -37,13 +37,13 @@ Antes de iniciar o processo de integração do Check Point SandBlast Mobile com 
 
 - Credenciais de administrador do Azure Active Directory para conceder as seguintes permissões:
 
-    - Iniciar sessão e ler o perfil de utilizador
+  - Iniciar sessão e ler o perfil de utilizador
 
-    - Aceder ao diretório como o utilizador com sessão iniciada
+  - Aceder ao diretório como o utilizador com sessão iniciada
 
-    - Ler dados do diretório
+  - Ler dados do diretório
 
-    - Enviar informações do dispositivo para o Intune
+  - Enviar informações do dispositivo para o Intune
 
 - Credenciais de administrador para aceder à consola MTD do Check Point SandBlast Mobile.
 

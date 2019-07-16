@@ -18,19 +18,19 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f012b1cec67de762bbc245f249125f29d37c6930
-ms.sourcegitcommit: 095fd4c324850aae8ebe32be43fa074361816a4b
+ms.openlocfilehash: c3287238900725acebefc23eb00246cd04c7a5bb
+ms.sourcegitcommit: fd2499df5123758ecb093b4cdd486e35f713b040
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66506855"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68230076"
 ---
 # <a name="check-compliance-on-your-android-device"></a>Verificação de conformidade no seu dispositivo Android
 
-Se o seu dispositivo não for verificado no Intune há algum tempo, poderá não conseguir aceder aos recursos da sua empresa ou escola. Experimente estes passos para recuperar o acesso.  
+Se o seu dispositivo não for verificado no Intune há algum tempo, poderá não conseguir aceder aos recursos da sua empresa ou escola. Tente estas etapas para obter acesso novamente.  
 
-1. Abra a aplicação Portal da empresa para Android no dispositivo.  
+1. Abra o aplicativo Portal da Empresa para Android em seu dispositivo.  
 
-2. Toque em **Verifique as definições do dispositivo**.  
+2. Toque em **verificar configurações do dispositivo**.   
 
 Se não conseguir repor o seu dispositivo perdido ou roubado, peça ao suporte da empresa para o fazer por si. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  
