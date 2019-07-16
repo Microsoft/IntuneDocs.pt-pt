@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 02dcaa26e51f3b8c4632aed0fbc87131cc617532
-ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
+ms.openlocfilehash: 3870918378a2b3dd115d6449c3c83d37fe8e96c5
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67572288"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884883"
 ---
 # <a name="create-a-design"></a>Criar uma estrutura
 
@@ -49,47 +49,47 @@ O seu ambiente atual pode influenciar decisões de estrutura e deve ser document
 
 - **Identidade na cloud**
 
-    - Utiliza o DirSync ou o Azure Active Directory (Azure AD) Connect?
+  - Utiliza o DirSync ou o Azure Active Directory (Azure AD) Connect?
 
-    - O seu ambiente é federado?
+  - O seu ambiente é federado?
 
-    - A autenticação multifator (MFA) está ativada?
+  - A autenticação multifator (MFA) está ativada?
 
 - **Ambiente de e-mail**
 
-    - Utiliza o Exchange? No local ou na cloud?
+  - Utiliza o Exchange? No local ou na cloud?
 
-    - Está a meio de um projeto de migração do Exchange para a cloud?
+  - Está a meio de um projeto de migração do Exchange para a cloud?
 
 - **Solução de gestão de dispositivos móveis (MDM) atual**
 
-    - Atualmente, está a utilizar outras soluções MDM?
+  - Atualmente, está a utilizar outras soluções MDM?
 
-    - Que soluções MDM está a utilizar para cenários de casos de utilização empresarial e BYOD?
+  - Que soluções MDM está a utilizar para cenários de casos de utilização empresarial e BYOD?
 
-    - Que capacidades está a utilizar (por exemplo, definições de dispositivos de aplicações, configurações Wi-Fi)?
+  - Que capacidades está a utilizar (por exemplo, definições de dispositivos de aplicações, configurações Wi-Fi)?
 
-    - Que plataformas de dispositivos são suportadas?
+  - Que plataformas de dispositivos são suportadas?
 
-    - Que grupos e quantos utilizadores estão a utilizar a solução MDM?
+  - Que grupos e quantos utilizadores estão a utilizar a solução MDM?
 
 - **Solução de certificado**
 
-    - Implementou uma solução de certificado?
+  - Implementou uma solução de certificado?
 
-    - Que tipos de certificado utiliza?
+  - Que tipos de certificado utiliza?
 
 - **Gestão de sistemas**
 
-    - Como está a gerir o seu ambiente de PC e servidor?
+  - Como está a gerir o seu ambiente de PC e servidor?
 
-    - Está a utilizar o System Center Configuration Manager? Está a utilizar uma plataforma de gestão de sistema de terceiros?
+  - Está a utilizar o System Center Configuration Manager? Está a utilizar uma plataforma de gestão de sistema de terceiros?
 
 - **Solução VPN**
 
-    - Qual é a sua solução VPN?
+  - Qual é a sua solução VPN?
 
-    - Utiliza-a para cenários de casos de utilização empresarial e BYOD?
+  - Utiliza-a para cenários de casos de utilização empresarial e BYOD?
 
 Ao registar o atual ambiente MDM, certifique-se de que toma nota de todos os projetos ou outros planos em curso que possam afetar o seu ambiente. Segue-se um exemplo de uma forma de registar o ambiente atual na criação da sua estrutura do Intune:
 
@@ -108,7 +108,7 @@ Pode [transferir um modelo da tabela acima](https://gallery.technet.microsoft.co
 
 ## <a name="choose-an-intune-deployment-option"></a>Selecionar uma opção de implementação do Intune
 
-O Intune oferece duas opções de implementação: autónoma e híbrida. Autónoma refere-se ao serviço do Intune em execução na cloud, híbridas refere-se para a integração do Intune com o System Center Configuration Manager. Este guia destina-se principalmente para a utilização da opção autónoma. [Escolher a opção que melhor se adapta aos seus requisitos empresariais](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management).
+O Intune oferece duas opções de implementação: autónoma e híbrida. Autônomo refere-se ao serviço do Intune em execução na nuvem, híbrido refere-se à integração do Intune com o System Center Configuration Manager. Este guia destina-se principalmente para a utilização da opção autónoma. [Escolher a opção que melhor se adapta aos seus requisitos empresariais](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management).
 
 > [!Important]
 >A inclusão de novos clientes da MDM híbrida foi preterida. Para obter mais informações, veja a mensagem de blogue [Move from Hybrid Mobile Device Management to Intune on Azure](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150) (Mudar da Gestão de Dispositivos Móveis Híbrida para o Intune no Azure).
@@ -137,7 +137,7 @@ As dependências externas são produtos e serviços que estão separados do Intu
 
 - Infraestrutura de chaves públicas (PKI)
 
-A seguir, vamos explorar essas dependências externas comuns em mais detalhes.
+A seguir, exploraremos essas dependências externas comuns com mais detalhes.
 
 ### <a name="identity"></a>identidade
 
@@ -216,7 +216,7 @@ Pode [transferir um modelo da tabela acima](https://gallery.technet.microsoft.co
 
 O Intune suporta dispositivos pessoais e dispositivos pertencentes à empresa. Um dispositivo é considerado propriedade da empresa se for inscrito por um gestor de inscrição de dispositivos ou programa de registo de aparelho. Por exemplo, um dispositivo é inscrito com o Programa de Registo de Aparelho (DEP) da Apple, marcado como empresarial e colocado num grupo de dispositivos que recebe políticas e aplicações empresariais filtradas.
 
-Consulte [secção 3: Determinar requisitos de cenários de casos de utilização](planning-guide-requirements.md) para obter mais informações sobre empresarial e BYOD casos de utilização.
+Consulte a [seção 3: Determine os requisitos](planning-guide-requirements.md) do cenário de caso de uso para obter mais informações sobre casos de uso corporativo e BYOD.
 
 ### <a name="bulk-enrollment"></a>Inscrição em massa
 
@@ -262,10 +262,10 @@ Deve criar pelo menos uma política de configuração por plataforma. Se for nec
 
 | **Nome da política** | **Plataforma de dispositivo** | **Definições** | **Grupo de destino** |   
 |:---:|:---:|:---:|:---:|
-| Empresarial – iOS | iOS | PIN é obrigatório, comprimento: 6, restringir a cópia de segurança da Cloud | Dispositivos Empresariais |                                                           
-| Empresarial – Android | Android | PIN é obrigatório, comprimento: 6, restringir a cópia de segurança da Cloud | Dispositivos Empresariais |                                                           
-| BYOD – iOS  | iOS | PIN é obrigatório, comprimento: 4 | Dispositivos BYOD |
-| BYOD – Android  | Android | PIN é obrigatório, comprimento: 4 | Dispositivos BYOD |
+| Empresarial – iOS | iOS | O PIN é necessário, comprimento: 6, restringir o backup na nuvem | Dispositivos Empresariais |                                                           
+| Empresarial – Android | Android | O PIN é necessário, comprimento: 6, restringir o backup na nuvem | Dispositivos Empresariais |                                                           
+| BYOD – iOS  | iOS | O PIN é necessário, comprimento: 4 | Dispositivos BYOD |
+| BYOD – Android  | Android | O PIN é necessário, comprimento: 4 | Dispositivos BYOD |
 
 
 Pode [transferir um modelo da tabela acima](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) para identificar as suas necessidades de políticas de configuração.
@@ -389,7 +389,7 @@ As políticas de proteção de aplicações minimizam a perda de dados ao defini
 Pode [transferir um modelo da tabela acima](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) para identificar as suas necessidades de políticas de proteção de aplicações.
 #### <a name="compliance-policies"></a>Políticas de conformidade
 
-As políticas de conformidade determinam se um dispositivo cumpre determinados requisitos. O Intune utiliza políticas de conformidade para determinar se um dispositivo é considerado como estando ou não em conformidade. O estado de conformidade pode depois ser utilizado para restringir ou permitir o acesso a recursos da empresa. Se for necessário acesso condicional, recomendamos que crie uma [política de conformidade do dispositivo](device-compliance.md).
+As políticas de conformidade determinam se um dispositivo cumpre determinados requisitos. O Intune utiliza políticas de conformidade para determinar se um dispositivo é considerado como estando ou não em conformidade. O estado de conformidade pode depois ser utilizado para restringir ou permitir o acesso a recursos da empresa. Se o acesso condicional for necessário, recomendamos que você projete uma [política de conformidade do dispositivo](device-compliance.md).
 
 Veja os requisitos e casos de utilização para determinar quantas políticas de conformidade do dispositivo são necessárias e quais são os grupos de utilizadores de destino. Além disso, terá de decidir durante quanto tempo um dispositivo pode estar offline sem dar entrada, antes de ser considerado como não estando em conformidade.
 
@@ -403,21 +403,21 @@ Segue-se um exemplo de como estruturar uma política de conformidade:
 Pode [transferir um modelo da tabela acima](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) para identificar as suas necessidade de políticas de conformidade.
 #### <a name="conditional-access-policies"></a>Políticas de acesso condicional
 
-Acesso condicional é utilizado para permitir que apenas os dispositivos compatíveis acedam ao e-mail e outros recursos da empresa. O Intune funciona com o Enterprise Mobility + Security (EMS) para controlar o acesso aos recursos da empresa. Decidir se exigir acesso condicional, e o que deve ser protegido. Saiba mais sobre o [Acesso Condicional](conditional-access.md).
+O acesso condicional é usado para permitir que somente dispositivos em conformidade acessem email e outros recursos da empresa. O Intune funciona com o Enterprise Mobility + Security (EMS) para controlar o acesso aos recursos da empresa. Decida se você precisa de acesso condicional e o que deve ser protegido. Saiba mais sobre o [Acesso Condicional](conditional-access.md).
 
-Para acesso online, decida que plataformas e grupos de utilizadores serão visados pelas políticas de acesso condicional. Além disso, determine se precisa de instalar ou configurar o conector do Intune para o Exchange no local: 
+Para acesso online, decida quais plataformas e grupos de usuários serão direcionados por políticas de acesso condicional. Além disso, determine se você precisa instalar ou configurar o conector do Intune para o Exchange local: 
 
 - [Exchange no local](exchange-connector-install.md)
 
-Eis um exemplo de como a políticas de acesso condicional do documento:
+Veja um exemplo de como documentar políticas de acesso condicional:
 
 | **Serviço** | **Plataformas de Autenticação Moderna** | **Autenticação Básica** | **Casos de utilização** |   
 |:---:|:---:|:---:|:---:|
 | Exchange online | iOS, Android | Bloquear dispositivos não conformes em plataformas suportadas pelo Intune | Empresarial, BYOD |
 | SharePoint Online | iOS, Android |  | Empresarial, BYOD |
 
-Pode [transferir um modelo da tabela acima](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) para identificar a sua política de acesso condicional as necessidades.
+Você pode [baixar um modelo da tabela acima](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) para identificar suas necessidades de política de acesso condicional.
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Passos seguintes
 
 A próxima secção fornece orientações sobre o [processo de implementação do Intune](planning-guide-onboarding.md).

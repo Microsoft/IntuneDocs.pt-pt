@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d8d8e1d1bb20f222b202e8c854fc4d1a8ba694fa
-ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.openlocfilehash: 417ed2e7f151e187efd54a9fb079c966c056242a
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67648902"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884867"
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>Criar um relatório a partir do feed OData com o Power BI
 
@@ -46,22 +46,22 @@ A utilização do termo _entidade_ e _tabela_ poderá ser confusa. O modelo de d
 
 ## <a name="install-power-bi-desktop"></a>Instalar o Power BI Desktop
 
-Instale a versão mais recente do Power BI Desktop. Pode transferir o Power BI Desktop em: [PowerBI.microsoft.com](https://powerbi.microsoft.com/desktop)
+Instale a versão mais recente do Power BI Desktop. Você pode baixar Power BI Desktop de: [PowerBI.microsoft.com](https://powerbi.microsoft.com/desktop)
 
 ## <a name="connect-to-the-odata-feed-for-the-intune-data-warehouse-for-your-tenant"></a>Ligar-se ao feed OData do Armazém de Dados do Intune do seu inquilino
 
 > [!Note]  
 > Precisa de permissão para aceder a **Relatórios** no Intune. Para obter mais informações, veja [Autorização](reports-api-url.md).
 
-1. Inicie sessão no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. Abra o **armazém de dados do Intune** painel ao selecionar a ligação de armazém de dados em **outras tarefas** no lado direito do **descrição geral do Microsoft Intune –** painel.
+1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+3. Abra o painel **data warehouse do Intune** selecionando o link data warehouse em **outras tarefas** no lado direito da folha **Microsoft Intune-visão geral** .
 4. Copie o URL do feed personalizado. Por exemplo: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
 1. Abra o Power BI Desktop.
 2. Selecione **Obter Dados** > **Feed OData**.
 3. Cole o URL do feed personalizado na caixa URL na janela **Feed OData**.
 4. Selecione **Básico**.
 
-    ![Feed de OData para o armazém de dados do Intune para o seu inquilino](media/reports-create-01-odatafeed.png)
+    ![Feed OData para o data warehouse do Intune para seu locatário](media/reports-create-01-odatafeed.png)
 
 9. Selecione **OK**.
 10. Selecione **Conta escolar ou profissional** e, em seguida, inicie sessão com as suas credenciais do Intune.
@@ -70,7 +70,7 @@ Instale a versão mais recente do Power BI Desktop. Pode transferir o Power BI D
 
 11. Selecione **Ligar**. O Navegador será aberto e irá mostrar-lhe a lista de tabelas no Armazém de Dados do Intune.
 
-    ![Captura de ecrã do navegador – a lista de tabelas do armazém de dados](media/reports-create-02-loadentities.png)
+    ![Captura de tela do navegador – a lista de tabelas de data warehouse](media/reports-create-02-loadentities.png)
 
 12. Selecione as tabelas **Dispositivos** e **TiposdeProprietário**.  Selecione **Carregar**. O Power BI carrega os dados para o modelo.
 
@@ -78,7 +78,7 @@ Instale a versão mais recente do Power BI Desktop. Pode transferir o Power BI D
 
 Pode importar múltiplas tabelas para analisar não só os dados numa única tabela, mas também os dados relacionados nas tabelas.  O Power BI tem uma funcionalidade denominada **Deteção automática** que tenta localizar e criar relações automaticamente. As tabelas no Armazém de Dados foram criadas para trabalharem com a funcionalidade Deteção automática do Power BI. No entanto, mesmo se o Power BI não localizar automaticamente as relações, ainda pode gerir as mesmas.
 
-![Gerir relações de dados relacionados em tabelas](media/reports-create-03-managerelationships.png)
+![Gerenciar relações de dados relacionados entre tabelas](media/reports-create-03-managerelationships.png)
 
 1. Selecione **Gerir Relações**.
 2. Selecione **Deteção automática...** caso o Power BI não tenha ainda detetado as relações.
@@ -89,7 +89,7 @@ A relação é apresentada numa coluna De para uma coluna Para. Neste exemplo, o
 
 Um gráfico treemap mostra dados hierárquicos como caixas em caixas. Cada ramo da hierarquia é uma caixa com caixas mais pequenas a mostrar sub-ramos. Pode utilizar o Power BI Desktop para criar um treemap dos seus dados do Intune.
 
-![Visualizações de mapa de árvore do Power BI](media/reports-create-03-treemap.png)
+![Power BIndo visualizações do mapa de mapas](media/reports-create-03-treemap.png)
 
 1. Selecione um tipo de gráfico. Selecione **Treemap**.
 2. No modelo de dados, localize a tabela **Dispositivos**.
@@ -99,26 +99,26 @@ Um gráfico treemap mostra dados hierárquicos como caixas em caixas. Cada ramo 
 
 Agora, tem um elemento visual que mostra a distribuição dos fabricantes de dispositivos na sua organização.
 
-![Treemap com dados - a distribuição dos fabricantes de dispositivos](media/reports-create-06-treemapwdata.png)
+![Mapa de mapas com dados-a distribuição de fabricantes de dispositivos](media/reports-create-06-treemapwdata.png)
 
 ## <a name="add-a-filter"></a>Adicionar um filtro
 
 Pode adicionar um filtro ao seu treemap para poder responder a perguntas adicionais com a sua aplicação.
 
 
-1. Para adicionar um filtro, selecione a tela de relatório e, em seguida, selecione o **ícone de segmentação de dados** (![Treemap com o modelo de dados e relações suportadas](media/reports-create-slicer.png)) sob **visualizações**.
+1. Para adicionar um filtro, selecione a tela de relatório e, em seguida, selecione o **ícone** de segmentação (![mapa de janela](media/reports-create-slicer.png)com o modelo de dados e relações com suporte) em **visualizações**.
 2. Localize a tabela **TiposdeProprietário** e arraste o campo de dados **NomedoTipodeProprietário** na secção **Filtros** no painel **Visualizações**.  
 
    Na tabela Dispositivos, existe um campo de dados denominado **ChavedoTipodeProprietário** que contém um código que identifica se um dispositivo é pessoal ou pertencente à empresa. Uma vez que pretende mostrar nomes amigáveis neste filtro, procure a tabela **TiposdeProprietário** e arraste o **NomedoTipodeProprietário**. Este exemplo mostra de que forma o modelo de dados suporta relações entre tabelas.
 
-![Treemap com filtro - suporta as relações entre tabelas](media/reports-create-08_ownertype.png)
+![Mapa de mapas com filtro-dá suporte a relações entre tabelas](media/reports-create-08_ownertype.png)
 
 Agora tem um filtro interativo que pode utilizar para alternar entre dispositivos pessoais e dispositivos pertencentes à empresa. Utilize este filtro para ver como a distribuição é alterada.
 
 1. Selecione **Empresa** para ver a distribuição de dispositivos pertencentes à empresa.
 2. Selecione **Pessoal** para ver os dispositivos pessoais.
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Passos seguintes
 
- - Saiba mais sobre como [criar e gerir relações](https://powerbi.microsoft.com/documentation/powerbi-desktop-create-and-manage-relationships/) no Power BI Desktop na documentação do Power BI.
- - Consulte o [Modelo do Armazém de Dados do Intune](https://docs.microsoft.com/intune/reports-ref-data-model).
+- Saiba mais sobre como [criar e gerir relações](https://powerbi.microsoft.com/documentation/powerbi-desktop-create-and-manage-relationships/) no Power BI Desktop na documentação do Power BI.
+- Consulte o [Modelo do Armazém de Dados do Intune](https://docs.microsoft.com/intune/reports-ref-data-model).

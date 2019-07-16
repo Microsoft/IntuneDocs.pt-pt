@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 714a595263475da98a48c982e0ed24d691440097
-ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
+ms.openlocfilehash: 8cc4a109aac22617f2785a74de701e4d1d7bdf09
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67572266"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67885008"
 ---
 # <a name="determine-deployment-goals-objectives-and-challenges"></a>Determinar metas, objetivos e obstáculos da implementação
 
@@ -34,27 +34,27 @@ As metas da implementação são as realizações a longo prazo que pretende obt
 
 - **Integrar com o Office 365 e suportar a utilização de aplicações móveis do Office**
 
-    - **Descrição:** Fornece uma integração perfeita com o Office 365 e a utilização de aplicações móveis do Office com proteção de aplicações.
+  - **Descrição:** Forneça integração estreita com o Office 365 e o uso de aplicativos móveis do Office com a proteção de aplicativo.
 
-    - **Valor comercial:** Experiência do utilizador melhorada e segura ao permitir que os utilizadores utilizem aplicações que já conhecem e preferem.
+  - **Valor comercial:** Experiência de usuário segura e aprimorada permitindo que os usuários usem aplicativos com os quais estão familiarizados e preferem.
 
 - **Ativar o acesso a serviços empresariais internos em dispositivos móveis**
 
-    - **Descrição:** Permitir que os funcionários sejam produtivos independentemente de onde precisam para trabalhar e do dispositivo mais adequado para eles. Este projeto deve visar permitir a produtividade móvel e o aceso aos dados empresariais de forma segura.
+  - **Descrição:** Permita que os funcionários sejam produtivos onde quer que precisem trabalhar e com qualquer dispositivo que seja mais apropriado para eles. Este projeto deve visar permitir a produtividade móvel e o aceso aos dados empresariais de forma segura.
 
-    - **Valor comercial:** Permitir que os funcionários sejam ágeis e trabalhem a partir de onde precisam, permite que os negócios se mais competitivo e para fornecer um ambiente de trabalho mais satisfatório.
+  - **Valor comercial:** Permitir que os funcionários sejam ágeis e trabalhem de onde precisam para que a empresa seja mais competitiva e forneça um ambiente de trabalho mais recompensador.
 
 - **Fornecer proteção de dados em dispositivos móveis**
 
-    - **Descrição:** Quando dados são armazenados num dispositivo móvel, devem ser protegidos contra perda acidental e maliciosa ou partilha.
+  - **Descrição:** Quando os dados são armazenados em um dispositivo móvel, eles devem ser protegidos contra perda ou compartilhamento maliciosos e acidentais.
 
-    - **Valor comercial:** Proteção de dados é vital para garantir que permanecemos competitivos, e que tratamos os nossos clientes e seus dados com o máximo cuidado.
+  - **Valor comercial:** A proteção de dados é vital para garantir que permaneçam competitivas e que tratemos nossos clientes e seus dados com o máximo de cuidado.
 
 - **Reduzir os custos**
 
-    - **Descrição:** Sempre que possível, o projeto reduz os custos operacionais e de implementação.
+  - **Descrição:** Quando possível, o projeto reduz os custos operacionais e de implantação.
 
-    - **Valor comercial:** A utilização eficiente dos recursos permite que a empresa invista noutras áreas, competir com mais eficiência e fornecer um melhor serviço aos clientes.
+  - **Valor comercial:** O uso eficiente de recursos permite que a empresa Invista em outras áreas, tenha uma competição mais eficiente e forneça um melhor serviço aos clientes.
 
 ## <a name="deployment-objectives"></a>Objetivos da Implementação
 
@@ -62,19 +62,19 @@ Os objetivos da implementação são as ações que a sua organização pode rea
 
 - **Reduzir o número de soluções de gestão de dispositivos**
 
-    - **Implementação:** Consolide para uma solução de gestão de único dispositivo móvel: Microsoft Intune para a proteção de dados empresariais de aplicações e dispositivos.
+  - **Implementação** Consolide em uma única solução de gerenciamento de dispositivo móvel: Microsoft Intune para proteção de dados corporativos de aplicativos e dispositivos.
 
 - **Fornecer acesso seguro ao Exchange e ao SharePoint Online**
 
-    - **Implementação:** Aplique o acesso condicional para o Exchange e SharePoint Online.
+  - **Implementação** Aplique o acesso condicional para o Exchange e o SharePoint Online.
 
 - **Impedir que os dados empresariais sejam armazenados ou reencaminhados para serviços não empresariais no dispositivo móvel**
 
-    - **Implementação:** Aplica políticas de proteção de aplicações do Intune para o Microsoft Office e aplicações de linha de negócio.
+  - **Implementação** Aplique políticas de proteção de aplicativo do Intune para Microsoft Office e aplicativos de linha de negócios.
 
 - **Permitir eliminar dados empresariais do dispositivo**
 
-    - **Implementação:** Inscreva dispositivos no Intune. Tal dá-lhe a capacidade de executar uma eliminação remota de dados e recursos empresariais quando adequado.
+  - **Implementação** Registrar dispositivos no Intune. Tal dá-lhe a capacidade de executar uma eliminação remota de dados e recursos empresariais quando adequado.
 
 ## <a name="deployment-challenges"></a>Obstáculos à Implementação
 
@@ -82,16 +82,16 @@ Os obstáculos à implementação são problemas prioritários para uma organiza
 
 - A preparação do suporte e a experiência de utilizador final não estão incluídas no âmbito inicial de um projeto. Tal resulta numa fraca adoção dos utilizadores finais e em desafios para a sua organização de suporte.
 
-    - **Atenuação:** Incorpore a formação sobre o suporte. Valide a experiência do utilizador final com métricas de sucesso no seu plano de implementação.
+  - **Atenuação** Incorpore treinamento de suporte. Valide a experiência do utilizador final com métricas de sucesso no seu plano de implementação.
 
 - A ausência de metas claramente definidas e de métricas de sucesso dá origem a resultados intangíveis. Além disso, pode mudar a sua organização para um modo reativo quando surgem problemas.
 
-    - **Atenuação:** Defina suas metas e métricas de sucesso numa fase inicial no âmbito do projeto e utilize estes pontos de dados para desenvolver as outras fases da implementação. Verifique se as metas são SMART (específicas, mensuráveis, atingíveis, realistas e oportunas). Planeie para medir as suas metas em cada fase e verifique se o projeto de implementação se mantém no caminho certo.
+  - **Atenuação** Defina suas metas e métricas de sucesso no início do escopo do projeto e use esses pontos de dados para elaborar suas outras fases de distribuição. Verifique se as metas são SMART (específicas, mensuráveis, atingíveis, realistas e oportunas). Planeie para medir as suas metas em cada fase e verifique se o projeto de implementação se mantém no caminho certo.
 
 - Negligencie a criação, validação e partilha agressiva de uma proposta de valor clara que tenha consequências importantes na sua organização. Tal resulta, geralmente, na adoção limitada e numa ausência de retorno sobre o investimento (ROI).
 
-    - **Atenuação:** Embora possa estar ansioso por se lançar no seu projeto, certifique-se de que definiu claramente as suas metas e objetivos. Inclua estas metas e objetivos em todas as atividades de sensibilização e de formação para ajudar a garantir que os utilizadores compreendem por que razão a sua organização escolheu o Intune.
+  - **Atenuação** Embora você possa estar entusiasmado com o seu projeto, verifique se você definiu claramente suas metas e objetivos. Inclua estas metas e objetivos em todas as atividades de sensibilização e de formação para ajudar a garantir que os utilizadores compreendem por que razão a sua organização escolheu o Intune.
 
 ## <a name="next-steps"></a>Passos Seguintes
 
-Agora que identificou os objetivos de implementação, objetivos e potenciais desafios, vamos passar para a secção seguinte: [Identificar cenários de casos de utilização](planning-guide-scenarios.md).
+Agora que você identificou suas metas de implantação, seus objetivos e desafios potenciais, vamos passar para a próxima seção: [Identificar cenários de caso de uso](planning-guide-scenarios.md).

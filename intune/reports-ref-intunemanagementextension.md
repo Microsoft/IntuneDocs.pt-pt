@@ -17,19 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 934742108effda0a88f4bcc42e06daa12c55288c
-ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.openlocfilehash: 7049437eff56671b210b72133ab7a41a40335f9e
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67648847"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882540"
 ---
 # <a name="reference-for-intune-management-extension"></a>Referência para a Extensão de Gestão do Intune
 
 A categoria **IntuneManagementExtension** contém entidades para dispositivos móveis que controlam informações como:
 
-  - Versões de uma IntuneManagementExtension
-  - Estado da instalação de uma IntuneManagementExtension
+- Versões de uma IntuneManagementExtension
+- Estado da instalação de uma IntuneManagementExtension
 
 ## <a name="intunemanagementextensionversion"></a>IntuneManagementExtensionVersion
 

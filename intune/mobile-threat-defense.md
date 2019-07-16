@@ -17,26 +17,26 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0452229d6c1ea2d9e87a302675167d200bd348eb
-ms.sourcegitcommit: 6bba9f2ef4d1ec699f5713a4da4f960e7317f1cd
+ms.openlocfilehash: 73c8167c91129d79a98674a92e7ccc5487a6b283
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67407175"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67885091"
 ---
 # <a name="what-is-mobile-threat-defense-integration-with-intune"></a>O que é a integração da Defesa Contra Ameaças para Dispositivos Móveis com o Intune?
-Intune pode integrar dados de um fornecedor de defesa contra ameaças móveis como uma origem de informações para políticas de conformidade e regras de acesso condicional. Pode usar essas informações para ajudar a proteger recursos da empresa, como o Exchange e SharePoint, ao bloquear o acesso a partir de dispositivos móveis comprometidos.  
+O Intune pode integrar dados de um fornecedor de defesa contra ameaças móveis como uma fonte de informações para políticas de conformidade e regras de acesso condicional. Você pode usar essas informações para ajudar a proteger recursos corporativos, como o Exchange e o SharePoint, bloqueando o acesso de dispositivos móveis comprometidos.  
 
 ## <a name="what-problem-does-this-solve"></a>Que problema é que isto resolve?
-Integração de informações de um fornecedor de defesa contra ameaças móveis pode ajudar a proteger os recursos da empresa de ameaças que afetam as plataformas móveis.  
+A integração de informações de um fornecedor de defesa contra ameaças móveis pode ajudá-lo a proteger seus recursos corporativos contra ameaças que afetam as plataformas móveis.  
 
-Normalmente, as empresas estão proativas em proteger os PCs contra vulnerabilidades e atacam enquanto dispositivos móveis, muitas vezes, não monitorizados e desprotegidos. Em que plataformas móveis terem proteção incorporada, como o isolamento de aplicações e lojas de aplicações de clientes avaliadas, estas plataformas permanecem vulneráveis a ataques sofisticados. Conforme mais funcionários utilizem os dispositivos para trabalhar e aceder a informações confidenciais, as informações do fornecedor de defesa contra ameaças móveis podem ajudar a proteger os dispositivos e seus recursos contra ataques cada vez mais sofisticados.  
+Normalmente, as empresas são proativas na proteção de PCs contra vulnerabilidades e ataques, enquanto os dispositivos móveis geralmente ficam sem monitoramento e desprotegido. Onde as plataformas móveis têm proteção interna, como isolamento de aplicativo e lojas de aplicativos de consumidor verificados, essas plataformas permanecem vulneráveis a ataques sofisticados. À medida que mais funcionários usam dispositivos para o trabalho e acessam informações confidenciais, as informações do fornecedor de defesa contra ameaças móveis podem ajudá-lo a proteger dispositivos e seus recursos contra ataques cada vez mais sofisticados.  
 
 ## <a name="how-do-the-intune-mobile-threat-defense-connectors-work"></a>Como é que os conectores da Defesa Contra Ameaças para Dispositivos Móveis do Intune funcionam?
 
-Para criar um canal de comunicação entre o Intune e o seu fornecedor de defesa contra ameaças móveis escolhido, o Intune utiliza um conector de defesa contra ameaças móveis. Parceiros de defesa contra ameaças do Intune Mobile oferecem intuitivas e fáceis de implementar aplicações para dispositivos móveis. Estas aplicações e analisam ativamente as informações de ameaças para partilhar com o Intune. Intune pode utilizar os dados para fins de relatórios ou imposição.  
+O Intune usa um conector de defesa contra ameaças móveis para criar um canal de comunicação entre o Intune e seu fornecedor de defesa contra ameaças móveis escolhido. Os parceiros de defesa contra ameaças móveis do Intune oferecem aplicativos intuitivos e fáceis de implantar para dispositivos móveis. Esses aplicativos examinam e analisam ativamente as informações de ameaças para compartilhar com o Intune. O Intune pode usar os dados para fins de relatório ou imposição.  
 
-Por exemplo: Uma aplicação de Mobile Threat Defense ligada relatórios ao fornecedor de defesa contra ameaças móveis do que um telefone na sua rede está atualmente ligado a uma rede vulnerável a Man nos ataques de meio. Esta informação é categorizada a um nível de risco adequado de baixa, média ou alta. Este nível de risco é, em seguida, em comparação com as permissões de nível de risco que definir no Intune. Com base nesta comparação, acesso a determinados recursos da sua preferência pode ser revogado enquanto o dispositivo estiver comprometido.
+Por exemplo: Um aplicativo de defesa contra ameaças móveis conecta-se ao fornecedor de defesa contra ameaças móveis que um telefone em sua rede está conectado atualmente a uma rede que está vulnerável a ataques de interceptação. Essas informações são categorizadas para um nível de risco apropriado de baixo, médio ou alto. Esse nível de risco é comparado com as concessões de nível de risco definidas no Intune. Com base nessa comparação, o acesso a determinados recursos de sua escolha pode ser revogado enquanto o dispositivo é comprometido.
 
 ## <a name="what-data-does-intune-collect-for-mobile-threat-defense"></a>Que dados são recolhidos pelo Intune para a Defesa Contra Ameaças para Dispositivos Móveis?
 
@@ -47,14 +47,14 @@ Este serviço é de participação ativa. Por predefinição, não são partilha
 **Inventário de aplicações**  
 Se ativar a Sincronização de Aplicações para dispositivos iOS, os inventários dos dispositivos iOS pessoais e empresariais serão enviados para o seu fornecedor de serviços de MTD. Os dados no inventário de aplicações incluem:
 
- - ID da Aplicação
- - Versão da Aplicação
- - Versão Abreviada da Aplicação
- - Nome da Aplicação
- - Tamanho da Coleção de Pacotes de Aplicação
- - Tamanho Dinâmico da Aplicação
- - Se a aplicação é ou não validada
- - Se a aplicação é ou não gerida
+- ID da Aplicação
+- Versão da Aplicação
+- Versão Abreviada da Aplicação
+- Nome da Aplicação
+- Tamanho da Coleção de Pacotes de Aplicação
+- Tamanho Dinâmico da Aplicação
+- Se a aplicação é ou não validada
+- Se a aplicação é ou não gerida
 
 ## <a name="sample-scenarios"></a>Cenários de exemplo
 
@@ -80,4 +80,4 @@ Saiba como pode proteger o acesso a recursos da empresa com base em riscos de ap
 - [Pradeo](pradeo-mobile-threat-defense-connector.md)
 - [Better Mobile](better-mobile-threat-defense-connector.md)
 - [Sophos Mobile](sophos-mtd-connector.md)
-- [Wandera Mobile Threat Defense](wandera-mtd-connector.md)
+- [Defesa contra ameaças móveis da vagara](wandera-mtd-connector.md)

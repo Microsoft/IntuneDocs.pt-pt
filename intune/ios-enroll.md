@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d94f2bd9237e92b22b9d73e4f7777dc0faf3f0fe
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: ca51fc38a7469d865640840647280375eaa74bbe
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67529615"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883019"
 ---
 # <a name="enroll-ios-devices-in-intune"></a>Inscrever dispositivos iOS no Intune
 
@@ -67,9 +67,9 @@ Saiba mais sobre a [inscrição no Apple Configurator](apple-configurator-setup-
 Os dispositivos configurados com a afinidade de utilizador podem instalar e executar a aplicação do Portal da Empresa para transferir aplicações e gerir dispositivos. Assim que os utilizadores recebem os respetivos dispositivos, têm de executar vários passos adicionais para concluir o Assistente de Configuração e instalar a aplicação Portal da Empresa.
 
 A afinidade de utilizador é necessária para suportar o seguinte:
-  - Aplicações de gestão de aplicações móveis (MAM)
-  - Acesso condicional ao e-mail e dados da empresa
-  - Aplicação Portal da Empresa
+- Aplicações de gestão de aplicações móveis (MAM)
+- Acesso condicional a email e dados da empresa
+- Aplicação Portal da Empresa
 
 **Como os utilizadores inscrevem dispositivos iOS pertencentes à empresa com afinidade de utilizador**
 1. Quando os utilizadores ligam os dispositivos, é-lhes pedido que concluam o Assistente de Configuração. 
@@ -86,4 +86,4 @@ Se for necessária afinidade de utilizador, confirme que o perfil de inscrição
 
 ## <a name="see-also"></a>Consulte também
 
-[Resolução de problemas de inscrição de dispositivos iOS no Microsoft Intune](https://support.microsoft.com/help/4039809)
+[Solucionando problemas de registro de dispositivo iOS no Microsoft Intune](https://support.microsoft.com/help/4039809)

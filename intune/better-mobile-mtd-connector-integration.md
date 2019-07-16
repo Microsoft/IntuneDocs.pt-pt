@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a7072d7d3d24578e0f82ea21eb653906dfa30b4c
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 861c2dd73e3a78fd833a24500728bd977d1186a2
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67546965"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883744"
 ---
 # <a name="integrate-better-mobile-with-intune"></a>Integrar o Better Mobile com o Intune
 
@@ -36,13 +36,13 @@ Antes de iniciar o processo de integração do Better Mobile com o Intune, certi
 
 - Credenciais de administrador do Azure Active Directory para conceder as seguintes permissões:
 
-    - Iniciar sessão e ler o perfil de utilizador
+  - Iniciar sessão e ler o perfil de utilizador
 
-    - Aceder ao diretório como o utilizador com sessão iniciada
+  - Aceder ao diretório como o utilizador com sessão iniciada
 
-    - Ler dados do diretório
+  - Ler dados do diretório
 
-    - Enviar informações do dispositivo para o Intune
+  - Enviar informações do dispositivo para o Intune
 
 - Credenciais de administrador para aceder à consola de administração do Better Mobile.
 
@@ -63,7 +63,7 @@ O processo de autorização da aplicação Better Mobile consiste no seguinte:
 1. Aceda à [consola de administração do Better Mobile](https://aad.bmobi.net) e inicie sessão com as suas credenciais.
 2. Selecione **Integration** (Integração)  > **EMM/MDM** > **ADD ACCOUNT** (ADICIONAR CONTA).
 
-     ![Imagem da consola de administração móvel melhor](media/better_mobile_console.png)
+     ![Imagem do melhor console do Mobile Admin](media/better_mobile_console.png)
  
 3. Selecione **Intune**.
 4. Junto a **ACCOUNT NAME** (NOME DA CONTA), escreva um descritor. 

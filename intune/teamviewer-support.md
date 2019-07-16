@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 96c05543884e0d9a00b570fb9ed4be1cdef65ca0
-ms.sourcegitcommit: 1ba785f6e51517b63588a292ab5c45b9d9144b72
+ms.openlocfilehash: 397ca3c03c96adc9bd6b0ca691f835e3e579fba0
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66938334"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882251"
 ---
 # <a name="use-teamviewer-to-remotely-administer-intune-devices"></a>Utilizar o TeamViewer para administrar remotamente dispositivos do Intune
 
@@ -32,10 +32,10 @@ Os dispositivos geridos pelo Intune podem ser administrados remotamente com o [T
 
 - O administrador do Intune no portal do Azure tem de ter as seguintes [funções do Intune](role-based-access-control.md):  
 
-    - **Atualizar assistência remota**: Permite que os administradores modifiquem as definições do conector de TeamViewer
-    - **Pedir assistência remota**: Permite aos administradores iniciar uma nova sessão de assistência remota para qualquer utilizador. Os utilizadores com esta função não estão limitados pelas funções do Intune num âmbito. Além disso, os grupos de utilizadores ou dispositivos com uma função do Intune num âmbito também podem pedir assistência remota. 
+  - **Atualizar assistência remota**: Permite que os administradores modifiquem as configurações do conector do TeamViewer
+  - **Solicitar assistência remota**: Permite que os administradores iniciem uma nova sessão de assistência remota para qualquer usuário. Os utilizadores com esta função não estão limitados pelas funções do Intune num âmbito. Além disso, os grupos de utilizadores ou dispositivos com uma função do Intune num âmbito também podem pedir assistência remota. 
 
-- R [TeamViewer](https://www.teamviewer.com) conta com as credenciais de início de sessão. Apenas algumas licenças do TeamViewer deve dar suporte a integração com o Intune. Para as necessidades específicas do TeamViewer, consulte [parceiro de integração do TeamViewer: Microsoft Intune](https://www.teamviewer.com/integrations/microsoft-intune/).
+- Uma conta do [TeamViewer](https://www.teamviewer.com) com as credenciais de entrada. Somente algumas licenças do TeamViewer podem dar suporte à integração com o Intune. Para necessidades específicas do TeamViewer, [consulte parceiro de integração do TeamViewer: Microsoft Intune](https://www.teamviewer.com/integrations/microsoft-intune/).
 
 Ao utilizar o TeamViewer, está a permitir que o Conector do TeamViewer para o Intune crie sessões do TeamViewer, leia os dados do Active Directory e guarde o token de acesso da conta do TeamViewer.
 
@@ -60,10 +60,10 @@ Após o conector estar configurado, estará pronto para administrar remotamente 
 
 ![Utilizar o TeamViewer para administrar remotamente dispositivos Android – exemplo](./media/android-teamviewer.png)
 
-Quando inicia uma sessão remota, os utilizadores veem um sinalizador de notificação no ícone da aplicação Portal da empresa nos respetivos dispositivos. Também é apresentada uma notificação quando a aplicação abre. Os utilizadores, em seguida, podem aceitar o pedido de assistência remota.
+Quando você inicia uma sessão remota, os usuários veem um sinalizador de notificação no ícone do aplicativo Portal da Empresa em seu dispositivo. Uma notificação também aparece quando o aplicativo é aberto. Os usuários podem aceitar a solicitação de assistência remota.
 
 > [!NOTE]
-> Dispositivos Windows inscritos através de métodos "sem utilizador", como o DEM e WCD, não mostram a notificação do TeamViewer na aplicação Portal da empresa. Nestes cenários, é recomendado para utilizar o portal do TeamViewer para gerar a sessão.
+> Os dispositivos Windows registrados usando métodos "sem usuário", como o DEM e o WCD, não mostram a notificação do TeamViewer no aplicativo Portal da Empresa. Nesses cenários, é recomendável usar o portal do TeamViewer para gerar a sessão.
 
 No TeamViewer, pode realizar diversas ações no dispositivo, incluindo assumir o controlo do mesmo. Para obter detalhes completos do que pode fazer, veja [Orientação do TeamViewer](https://www.teamviewer.com/support/documents/).
 

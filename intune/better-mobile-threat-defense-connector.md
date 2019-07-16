@@ -14,18 +14,18 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 473de0ae24cb3ee2a9f7fbd84ef78e6c25ef6ce6
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 55d4e327d99c8987e6fdc0dea0ac046dd0dc167e
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67547299"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883815"
 ---
 # <a name="better-mobile-threat-defense-connector-with-intune"></a>Conector Better Mobile Threat Defense com o Intune
 
-Pode controlar o acesso de dispositivos móveis a recursos da empresa através do acesso condicional com base na avaliação de riscos realizada pelo Mobile melhor, uma solução de defesa contra ameaças móveis (MTD) que se integra com o Microsoft Intune. O risco é avaliado com base na telemetria recolhida dos dispositivos a executar a aplicação Better Mobile.
+Você pode controlar o acesso de dispositivos móveis a recursos corporativos usando o acesso condicional com base na avaliação de risco realizada por um melhor Mobile, uma solução de MTD (defesa contra ameaças móveis) que se integra ao Microsoft Intune. O risco é avaliado com base na telemetria recolhida dos dispositivos a executar a aplicação Better Mobile.
 
-Pode configurar políticas de acesso condicional com base na avaliação de riscos de melhor Mobile ativada através de políticas de conformidade do Intune dispositivos, que pode ser usado para permitir ou bloquear dispositivos não conformes acedam aos recursos empresariais com base em ameaças detetadas.
+Você pode configurar políticas de acesso condicional com base na melhor avaliação de riscos móveis habilitada por meio de políticas de conformidade do dispositivo do Intune, que você pode usar para permitir ou bloquear dispositivos não compatíveis para acessar recursos corporativos com base em ameaças detectadas.
 
 ## <a name="how-do-intune-and-better-mobile-help-protect-your-company-resources"></a>Como é que o Intune e o Better Mobile ajudam a proteger os recursos da empresa?
 
@@ -49,7 +49,7 @@ Quando forem detetadas aplicações maliciosas, como software maligno, nos dispo
 
 **Bloquear quando as aplicações maliciosas forem detetadas:**
 
-![Imagem que mostra a aplicações maliciosas detetadas](./media/better_mobile_maliciousapps_blocked.png)
+![Imagem que mostra aplicativos mal-intencionados detectados](./media/better_mobile_maliciousapps_blocked.png)
 
 **Acesso concedido na remediação:**
 
@@ -65,7 +65,7 @@ Detete ameaças à rede, tal como ataques **Man-in-the-middle**, e proteja o ace
 
 **Acesso concedido na remediação:**
 
-![Imagem que mostra o acesso concedido na remediação](./media/better_mobile_network_wifi_unblocked.png)
+![Imagem que mostra o acesso concedido na correção](./media/better_mobile_network_wifi_unblocked.png)
 
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>Controlar o acesso ao SharePoint Online com base em ameaças à rede
 
@@ -93,7 +93,7 @@ Detete ameaças à sua rede, tal como ataques **Man-in-the-middle**, e impeça a
 
 - Subscrição do Better Mobile Threat Defense
 
-    - Para obter mais informações, veja o [site do Better Mobile](https://www.better.mobi/).
+  - Para obter mais informações, veja o [site do Better Mobile](https://www.better.mobi/).
 
 ## <a name="next-steps"></a>Passos Seguintes
 

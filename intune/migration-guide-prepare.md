@@ -16,16 +16,16 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0656c199d2f6179429415161ec02ef8a9037bf6b
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 29ae889e99a843a8569782bad2b1303c7bb4304c
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548365"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882831"
 ---
-# <a name="phase-1-prepare-microsoft-intune-for-mobile-device-management-mdm"></a>Fase 1: Preparar o Microsoft Intune para gestão de dispositivos móveis (MDM)
+# <a name="phase-1-prepare-microsoft-intune-for-mobile-device-management-mdm"></a>Fase 1: Preparar Microsoft Intune para MDM (gerenciamento de dispositivo móvel)
 
-Antes de explorar os detalhes da configuração do Intune, vamos rever os requisitos da gestão de dispositivos móveis da sua organização. Poderá ser útil executar relatórios de utilizadores ativos no seu fornecedor de MDM atual para identificar os grupos de utilizadores críticos. Em seguida, pode começar a abordar as questões na [avaliar requisitos de MDM](migration-guide-prepare.md#assess-mdm-requirements) secção.
+Antes de explorar os detalhes da configuração do Intune, vamos rever os requisitos da gestão de dispositivos móveis da sua organização. Poderá ser útil executar relatórios de utilizadores ativos no seu fornecedor de MDM atual para identificar os grupos de utilizadores críticos. Em seguida, você pode começar a abordar as perguntas na seção [avaliar requisitos de MDM](migration-guide-prepare.md#assess-mdm-requirements) .
 
 ## <a name="assess-mdm-requirements"></a>Avaliar requisitos de MDM
 
@@ -51,8 +51,8 @@ Antes de explorar os detalhes da configuração do Intune, vamos rever os requis
 
 - Que termos de utilização precisa?
 
-    - Envolva o departamento jurídico neste aspeto desde o início.
-    - Qual é a localização necessária?
+  - Envolva o departamento jurídico neste aspeto desde o início.
+  - Qual é a localização necessária?
 
 - Os utilizadores estão familiarizados com a tecnologia e a TI em geral?
 
@@ -63,8 +63,8 @@ Antes de explorar os detalhes da configuração do Intune, vamos rever os requis
 - Quais são os comprimentos do código de acesso/PIN do seu dispositivo atual?
 
 - Precisa de desativar funcionalidades do dispositivo ou restringir determinados comportamentos do dispositivo? Pode controlar várias definições específicas da plataforma com perfis de configuração de dispositivos, por exemplo:
-    - Desativar a câmara
-    - Bloquear no modo de aplicação única<br/>
+  - Desativar a câmara
+  - Bloquear no modo de aplicação única<br/>
 
 - Que tipos de autenticação tem de suportar? Se precisar de uma autenticação baseada em certificados, que tipos de certificados têm de ser aprovisionados?
   - O Intune pode aprovisionar certificados com perfis de acesso a recursos para os dispositivos inscritos.

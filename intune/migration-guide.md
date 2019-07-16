@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b34143e17245de61026a536cc0b8c5e8a7f80107
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 97a0d9074b8617dec2fb28ed59168e08ada57fba
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67549405"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882772"
 ---
 # <a name="intune-migration-guide"></a>Guia de migração do Intune
 
@@ -35,27 +35,27 @@ Este guia irá orientá-lo ao longo dos vários detalhes relacionados com a migr
 
 Este guia divide o processo de migração em duas fases, que incluem tarefas, estratégias e orientações táticas que irão ajudar a orientá-lo ao longo do processo completo de migração para o Intune MDM.
 
-- [Fase 1: Preparar o Intune para gestão de dispositivos móveis](migration-guide-prepare.md)
+- [Fase 1: Preparar o Intune para o gerenciamento de dispositivos móveis](migration-guide-prepare.md)
 
-    - [Avaliar os requisitos de migração da MDM](migration-guide-prepare.md#assess-mdm-requirements)
+  - [Avaliar os requisitos de migração da MDM](migration-guide-prepare.md#assess-mdm-requirements)
 
-    - [Configuração básica](migration-guide-setup.md)
+  - [Configuração básica](migration-guide-setup.md)
 
-    - [Configurar políticas de gestão de aplicações e dispositivos](migration-guide-configure-policies.md)
+  - [Configurar políticas de gestão de aplicações e dispositivos](migration-guide-configure-policies.md)
 
-    - [Configurar políticas de proteção de aplicações](migration-guide-app-protection-policies.md)
+  - [Configurar políticas de proteção de aplicações](migration-guide-app-protection-policies.md)
 
-    - [Considerações especiais sobre a migração](migration-guide-considerations.md)
+  - [Considerações especiais sobre a migração](migration-guide-considerations.md)
 
 - [Fase 2: Campanha de migração](migration-guide-campaign.md)
 
-    - [Plano de comunicação](migration-guide-communication-plan.md)
+  - [Plano de comunicação](migration-guide-communication-plan.md)
 
-    - [Promover a adoção com acesso condicional](migration-guide-drive-adoption.md)
+  - [Conduzir a adoção do usuário final com acesso condicional](migration-guide-drive-adoption.md)
 
-    - [Ciclo de migração típico](migration-guide-cycle.md)
-        - [Monitorização da migração](migration-guide-cycle.md#monitoring-migration)
-        - [Pós-migração](migration-guide-cycle.md#post-migration)
+  - [Ciclo de migração típico](migration-guide-cycle.md)
+    - [Monitorização da migração](migration-guide-cycle.md#monitoring-migration)
+    - [Pós-migração](migration-guide-cycle.md#post-migration)
 
 ## <a name="assumptions"></a>Pressupostos
 
@@ -71,4 +71,4 @@ Este guia divide o processo de migração em duas fases, que incluem tarefas, es
 
 ## <a name="next-steps"></a>Passos Seguintes
 
-[Fase 1: Preparar o Intune para gestão de dispositivos móveis](migration-guide-prepare.md)
+[Fase 1: Preparar o Intune para o gerenciamento de dispositivos móveis](migration-guide-prepare.md)

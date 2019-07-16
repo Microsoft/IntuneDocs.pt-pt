@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9cb08757732aa5cad08ed0a4b535fb20c0aa1df0
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 703509c316a22995d26223f6c386de0a2ec66c31
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528252"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882723"
 ---
 # <a name="determine-use-case-scenario-requirements"></a>Determinar os requisitos de cenários de casos de utilização
 
@@ -50,22 +50,22 @@ Pode [transferir um modelo da tabela acima](https://gallery.technet.microsoft.co
 Veja mais alguns exemplos que podem ser utilizados na coluna “Requisitos”:
 
 - **E-mail seguro**
-    - Acesso condicional para o Exchange Online / no local
-    - Políticas de proteção de aplicações do Outlook
+  - Acesso condicional para o Exchange Online/local
+  - Políticas de proteção de aplicações do Outlook
 
 - **Definições do dispositivo**
-    - PIN com quatro ou seis carateres
-    - Restrição da cópia de segurança na cloud
+  - PIN com quatro ou seis carateres
+  - Restrição da cópia de segurança na cloud
 
 - **Perfis**
-    - Wi-Fi
-    - VPN
-    - E-mail (Windows 10 Mobile)
+  - Wi-Fi
+  - VPN
+  - E-mail (Windows 10 Mobile)
 
 - **Aplicações**
-    - Office 365 com políticas de proteção de aplicações
-    - Linha de negócio (LOB) com políticas de proteção de aplicações
+  - Office 365 com políticas de proteção de aplicações
+  - Linha de negócio (LOB) com políticas de proteção de aplicações
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Passos seguintes
 
 A secção seguinte fornece orientações relativas a [como pode desenvolver um plano de implementação do Intune](planning-guide-rollout-plan.md).
