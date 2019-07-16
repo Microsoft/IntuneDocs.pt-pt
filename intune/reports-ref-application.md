@@ -17,22 +17,22 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 46e90d422afb8ebbd356031d4815708b5b0768f0
-ms.sourcegitcommit: 63b55e81122e5c15893302b109ae137c30855b55
+ms.openlocfilehash: ceb2b830dc7e403bd138903cf61c80291a0753f2
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67713130"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882562"
 ---
 # <a name="reference-for-application-entities"></a>Referência para as entidades de aplicações
 
 A categoria **Application** contém entidades para dispositivos móveis que registam informações como:
 
-  - Versões de uma aplicação
-  - Origem da instalação de uma aplicação
-  - Tipo de programadores que criaram uma aplicação
-  - Tipos de software geridos para uma aplicação, por exemplo **sidecar** ou **ambiente de trabalho**
-  - Estado VPP (Volume Purchasing Program) de uma aplicação
+- Versões de uma aplicação
+- Origem da instalação de uma aplicação
+- Tipo de programadores que criaram uma aplicação
+- Tipos de software geridos para uma aplicação, por exemplo **sidecar** ou **ambiente de trabalho**
+- Estado VPP (Volume Purchasing Program) de uma aplicação
 
 ## <a name="apprevision"></a>AppRevision
 

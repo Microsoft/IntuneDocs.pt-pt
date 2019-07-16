@@ -1,16 +1,14 @@
 ---
-ms.openlocfilehash: 472a1e5192b9054c9d89a7d4240750824a3a8b0a
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: f42baa1ca6e3ac6dca3c95a0eb9e422df2506031
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61499237"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882013"
 ---
-
-
 ### <a name="apple"></a>Apple
-  - Apple iOS 9.0 e posterior
-  - Mac OS X 10.9 e posterior
+- Apple iOS 9.0 e posterior
+- Mac OS X 10.9 e posterior
 
 ### <a name="windows"></a>Windows
 - PCs com o Windows 10 (versões Home, Pro, Educação e Enterprise)
@@ -28,6 +26,6 @@ ms.locfileid: "61499237"
 - Google Android 4.0 e posterior (incluindo o Samsung KNOX Standard 4.0 e superior)*
 - Google Android for Work ([requisitos](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012 style="target=new_window"))
 
-* Os seguintes modelos do telemóvel Samsung Galaxy ACE não podem ser geridos pelo Intune como dispositivos Samsung KNOX Standard: SM-G313HU, SM-G313HY, SM-G313M, SM-G313MY e SM-G313U. Estes dispositivos são geridos como dispositivos Android padrão. Consulte o site do [Samsung KNOX](https://www.samsungknox.com/en) para obter mais informações.
+\* Os seguintes modelos do telefone Samsung Galaxy Ace não podem ser gerenciados pelo Intune como dispositivos Samsung KNOX Standard: SM-G313HU, SM-G313HY, SM-G313M, SM-G313MY e SM-G313U. Estes dispositivos são geridos como dispositivos Android padrão. Consulte o site do [Samsung KNOX](https://www.samsungknox.com/en) para obter mais informações.
 
 Para obter uma lista completa de dispositivos e métodos de gestão, veja [Dispositivos suportados no Intune](/intune/supported-devices-browsers#intune-supported-devices).

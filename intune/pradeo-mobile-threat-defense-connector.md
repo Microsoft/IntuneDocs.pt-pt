@@ -14,18 +14,18 @@ ms.technology: ''
 ms.assetid: cde4d389-1770-4226-85a3-a2f3b3fb92a3
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2f0a4b9a957948c9bda0b0ad2d9829ff9560f217
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 6ccfe9ccd186f38a971aa6bac5d58bf61e44450d
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548489"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882752"
 ---
 # <a name="pradeo-mobile-threat-defense-connector-with-intune"></a>Conector da Defesa Contra Ameaças para Dispositivos Móveis do Pradeo com o Intune
 
-Pode controlar o acesso de dispositivos móveis a recursos da empresa através do acesso condicional com base na avaliação de riscos realizada pelo Pradeo, uma solução de defesa contra ameaças móveis (MTD) que se integra com o Microsoft Intune. O risco é avaliado com base na telemetria recolhida dos dispositivos a executar a aplicação Pradeo.
+Você pode controlar o acesso de dispositivos móveis a recursos corporativos usando o acesso condicional com base na avaliação de risco realizada pelo Pradeo, uma solução MTD (defesa contra ameaças móveis) que se integra ao Microsoft Intune. O risco é avaliado com base na telemetria recolhida dos dispositivos a executar a aplicação Pradeo.
 
-Pode configurar políticas de acesso condicional com base na avaliação de riscos de Pradeo ativada através de políticas de conformidade do Intune dispositivos, que pode ser usado para permitir ou bloquear dispositivos não conformes acedam aos recursos empresariais com base em ameaças detetadas.
+Você pode configurar políticas de acesso condicional com base na avaliação de risco do Pradeo habilitada por meio das políticas de conformidade do dispositivo do Intune, que você pode usar para permitir ou bloquear dispositivos não compatíveis para acessar recursos corporativos com base em ameaças detectadas.
 
 ## <a name="how-do-intune-and-pradeo-help-protect-your-company-resources"></a>Como é que o Intune e o Pradeo ajudam a proteger os recursos da empresa?
 
@@ -49,7 +49,7 @@ Quando forem detetadas aplicações maliciosas, como software maligno, nos dispo
 
 **Bloquear quando as aplicações maliciosas forem detetadas:**
 
-![Imagem conceptual de aplicações maliciosas detetadas](./media/pradeo_maliciousapps_blocked.png)
+![Imagem conceitual de aplicativos mal-intencionados detectados](./media/pradeo_maliciousapps_blocked.png)
 
 **Acesso concedido na remediação:**
 
@@ -65,7 +65,7 @@ Detete ameaças à rede, tal como ataques **Man-in-the-middle**, e proteja o ace
 
 **Acesso concedido na remediação:**
 
-![Imagem conceptual de acesso concedido na remediação](./media/pradeo_network_wifi_unblocked.png)
+![Imagem conceitual do acesso concedido na correção](./media/pradeo_network_wifi_unblocked.png)
 
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>Controlar o acesso ao SharePoint Online com base em ameaças à rede
 
@@ -77,7 +77,7 @@ Detete ameaças à sua rede, tal como ataques **Man-in-the-middle**, e impeça a
 
 **Acesso concedido na remediação:**
 
-![Imagem conceptual de acesso concedido na remediação, por exemplo, Sharepoint](./media/pradeo_network_spo_unblocked.png)
+![Imagem conceitual do acesso concedido na correção para o exemplo do SharePoint](./media/pradeo_network_spo_unblocked.png)
 
 ## <a name="supported-platforms"></a>Plataformas suportadas
 
@@ -93,7 +93,7 @@ Detete ameaças à sua rede, tal como ataques **Man-in-the-middle**, e impeça a
 
 - Segurança do Pradeo para a subscrição da Defesa Contra Ameaças para Dispositivos Móveis
 
-    - Para obter mais informações, consulte o [site do Pradeo](https://www.pradeo.com/en-US/mobile-threat-protection).
+  - Para obter mais informações, consulte o [site do Pradeo](https://www.pradeo.com/en-US/mobile-threat-protection).
 
 ## <a name="next-steps"></a>Passos Seguintes
 

@@ -16,21 +16,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4f66cc3a10711b137e081fab98445d73108748a9
-ms.sourcegitcommit: 63b55e81122e5c15893302b109ae137c30855b55
+ms.openlocfilehash: f9f834057e95058634020fc955ced013d32b68a9
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67713163"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882546"
 ---
 # <a name="reference-for-policy-entities"></a>Referência para as entidades de políticas
 
 A categoria **Policy** contém entidades para dispositivos móveis que registam informações como:
 
-  - Inventário de perfis de configuração de dispositivos, perfis de configuração de aplicações e políticas de conformidade  
-  - Número de dispositivos no estado com êxito, pendente, com falhas ou com erros por dia  
-  - Número de utilizadores no estado com êxito, pendente, com falhas ou com erros por dia  
-  - Número cumulativo de dispositivos no estado com êxito, pendente, com falhas ou com erros por dia  
+- Inventário de perfis de configuração de dispositivos, perfis de configuração de aplicações e políticas de conformidade  
+- Número de dispositivos no estado com êxito, pendente, com falhas ou com erros por dia  
+- Número de utilizadores no estado com êxito, pendente, com falhas ou com erros por dia  
+- Número cumulativo de dispositivos no estado com êxito, pendente, com falhas ou com erros por dia  
 
 ## <a name="policy"></a>Policy
 
@@ -59,7 +59,7 @@ A entidade **PolicyType** apresenta uma lista dos tipos de perfis de configuraç
 
 ## <a name="deviceconfiguration"></a>DeviceConfiguration
 
-O **DeviceConfigurationProfileDeviceActivity** entidade apresenta uma lista o número de **dispositivos** com êxito, pendente, com falhas ou Estado com erros por dia. O número reflete os Perfis de configuração de dispositivos atribuídos à entidade. Por exemplo, se um **dispositivo** está no Estado com êxito para todas as políticas atribuídas, ele incrementa o contador com êxito um para esse dia. Se um dispositivo tiver dois perfis atribuídos, um no estado com êxito e outro num estado com erros, a entidade incrementa o contador do estado com êxito (Succeeded) e coloca o dispositivo no estado com erros. A entidade apresenta uma lista de quantos dispositivos estão em cada um dos estados num determinado dia nos últimos 30 dias.
+A entidade **DeviceConfigurationProfileDeviceActivity** lista o número de **dispositivos** com êxito, pendente, com falha ou estado de erro por dia. O número reflete os Perfis de configuração de dispositivos atribuídos à entidade. Por exemplo, se um **dispositivo** estiver no estado de êxito para todas as suas políticas atribuídas, ele incrementará o contador bem-sucedido, um para esse dia. Se um dispositivo tiver dois perfis atribuídos, um no estado com êxito e outro num estado com erros, a entidade incrementa o contador do estado com êxito (Succeeded) e coloca o dispositivo no estado com erros. A entidade apresenta uma lista de quantos dispositivos estão em cada um dos estados num determinado dia nos últimos 30 dias.
 
 | Propriedade  | Descrição | Exemplo |
 |---------|------------|--------|
@@ -69,7 +69,7 @@ O **DeviceConfigurationProfileDeviceActivity** entidade apresenta uma lista o n�
 | Erro |Número de Dispositivos exclusivos no estado com erros. |10 |
 | Falhou |Número de Dispositivos exclusivos no estado com falhas. |2 |
 
-O **DeviceConfigurationProfileUserActivity** entidade apresenta uma lista o número de **utilizadores** com êxito, pendente, com falhas ou Estado com erros por dia. O número reflete os Perfis de configuração de dispositivos atribuídos à entidade. Por exemplo, se um **utilizador** está no Estado com êxito para todas as políticas atribuídas, sobe o contador com êxito por um para esse dia. Se um utilizador tiver dois perfis atribuídos, um no estado com êxito e outro no estado com erros, é contado o utilizador no estado com erros.  A entidade **DeviceConfigurationProfileUserActivity** apresenta uma lista de quantos utilizadores estão em que estado num determinado dia nos últimos 30 dias.
+A entidade **DeviceConfigurationProfileUserActivity** lista o número de **usuários** com êxito, pendente, com falha ou estado de erro por dia. O número reflete os Perfis de configuração de dispositivos atribuídos à entidade. Por exemplo, se um **usuário** estiver no estado com êxito para todas as suas políticas atribuídas, ele moverá o contador bem-sucedido em um para esse dia. Se um utilizador tiver dois perfis atribuídos, um no estado com êxito e outro no estado com erros, é contado o utilizador no estado com erros.  A entidade **DeviceConfigurationProfileUserActivity** apresenta uma lista de quantos utilizadores estão em que estado num determinado dia nos últimos 30 dias.
 
 | Propriedade  | Descrição | Exemplo |
 |---------|------------|--------|

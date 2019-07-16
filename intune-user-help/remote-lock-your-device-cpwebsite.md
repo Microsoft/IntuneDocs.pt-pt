@@ -18,12 +18,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 85435acffbad3117f6adbbafe60e1993b2d18bdb
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: b55368f5c512ff3efd4059d420717321729450ee
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61504337"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884066"
 ---
 # <a name="remotely-lock-your-device-from-the-company-portal-website"></a>Bloquear o seu dispositivo remotamente a partir do site do Portal da Empresa
 
@@ -44,7 +44,7 @@ A definição de bloqueio remoto funciona para:
 
     ![Uma captura de ecrã da página Dispositivos, com dois mosaicos que mostram dispositivos não identificados com um nome genérico. Uma faixa cinzenta está diretamente abaixo dos dispositivos e pede ao utilizador que identifique o dispositivo que está a utilizar ou adicione um novo.](./media/rename-reset-device-step2-1808.png) 
 
-3. Toque em **Bloqueio remoto**. Se a opção de bloqueio não estiver visível na parte superior da sua página, selecione **Mais (…)** > **Bloqueio remoto**.  
+3. Toque em **Bloqueio remoto**. Se a opção de bloqueio não estiver visível na parte superior da sua página, selecione **Mais (…)**  > **Bloqueio remoto**.  
 
    ![A página de detalhes do dispositivo para um dispositivo selecionado no site do Portal da Empresa, com uma lista de ligações na parte superior que apresenta Mudar o Nome, Remover, Repor Dispositivo, Repor Código de Acesso e Bloqueio Remoto. ](./media/rename-reset-device-1808.png) 
 
@@ -56,9 +56,9 @@ Após a confirmação, o Portal da Empresa tenta bloquear o dispositivo. É apre
 
 O estado do Bloqueio Remoto é apresentado em três locais:
 
-   * Na área de notificações do site.
-   * Na página **Detalhes** do dispositivo.
-   * No mosaico que mostra o nome do dispositivo na secção **Dispositivos** da página.  
+* Na área de notificações do site.
+* Na página **Detalhes** do dispositivo.
+* No mosaico que mostra o nome do dispositivo na secção **Dispositivos** da página.  
 
 > [!Note]
 > Se for apresentada uma notificação a indicar que o bloqueio remoto falhou, aguarde alguns minutos. Em seguida, tente bloquear o dispositivo novamente. O estado voltará a mudar para "Bloqueio remoto pendente". Se a nova tentativa não resultar, contacte o suporte da sua empresa para obter ajuda.

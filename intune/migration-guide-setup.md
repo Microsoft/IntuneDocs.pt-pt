@@ -15,12 +15,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 76f5188a866e744c034fd592f9b1dfcbc9061ffa
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 78cf3c2ff5babbfb45dfa6a41add09ef91549e8d
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67549391"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67885036"
 ---
 # <a name="basic-setup"></a>Configuração básica
 
@@ -61,17 +61,17 @@ Para poder migrar para o Intune, precisa primeiro de uma subscrição do Intune.
 
 - Pode visitar [esta página](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0), que lhe dá instruções sobre como:
 
-    - Criar uma nova subscrição do Intune ligada a um novo inquilino do AAD.
+  - Criar uma nova subscrição do Intune ligada a um novo inquilino do AAD.
 
-    - Ligar a subscrição do Intune ao iniciar sessão num inquilino do AAD existente.
+  - Ligar a subscrição do Intune ao iniciar sessão num inquilino do AAD existente.
 
-### <a name="task-2-assign-intune-user-licenses"></a>Tarefa 2: Atribuir licenças de utilizador do Intune
+### <a name="task-2-assign-intune-user-licenses"></a>Tarefa 2: Atribuir licenças de usuário do Intune
 
 - Saiba [como atribuir licenças de utilizador do Intune](licenses-assign.md).
 
 - Se tiver criado um novo inquilino do Azure Active Directory, saiba [como criar novos utilizadores ou sincronizar o utilizador a partir do seu Active Directory (AD) no local.](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect)
 
-### <a name="task-3-set-your-mdm-authority-to-intune"></a>Tarefa 3: Defina a autoridade MDM para Intune
+### <a name="task-3-set-your-mdm-authority-to-intune"></a>Tarefa 3: Definir sua autoridade de MDM para o Intune
 
 O Intune pode ser gerido através do portal do Azure ou da consola do Configuration Manager Current Branch. A menos que precise de integrar o Intune com uma implementação do Configuration Manager Current Branch, recomendamos que faça a gestão do Intune a partir do [Portal do Azure](https://portal.azure.com).
 
