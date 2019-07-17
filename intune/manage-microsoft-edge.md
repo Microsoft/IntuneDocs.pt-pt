@@ -1,5 +1,5 @@
 ---
-title: Gerenciar o acesso via Web usando o Microsoft Edge com o Microsoft Intune
+title: Gerenciar o Microsoft Edge para iOS e Android com o Intune
 titleSuffix: ''
 description: Use políticas de proteção de aplicativo do Intune com o Microsoft Edge para garantir que os sites corporativos sempre sejam acessados com as proteções em vigor.
 keywords: ''
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a2deaa53486947ceeedbed56dfd7d192debc4eab
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: bc18ba2210719cbebe77cd5b37024be4bb7b0d3e
+ms.sourcegitcommit: a01f0f3070932e3be44a4f545d4de11d715381ea
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67882935"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "68287224"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>Gerenciar o acesso via Web usando o Microsoft Edge com o Microsoft Intune
 
@@ -129,7 +129,7 @@ Você atribui as configurações a grupos de usuários no Azure AD. Se esse util
 
 O Intune Managed Browser e o Microsoft Edge podem ser usados como navegadores protegidos por política. Para garantir que os usuários estejam sendo direcionados para usar o aplicativo de navegador correto, direcione todos os seus aplicativos gerenciados pelo Intune (por exemplo, Outlook, OneDrive e SharePoint) com a seguinte definição de configuração:
 
-|    Chave    |    Valor    |
+|    Chave    |    Value    |
 |------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    `com.microsoft.intune.useEdge`    |    O valor `true` direcionará os usuários para baixar e usar o Microsoft Edge.<br>O valor `false` permitirá que os usuários usem o Intune Managed browser.    |
 
@@ -171,7 +171,7 @@ Configure o Outlook com uma política de proteção de aplicativo que habilita a
 #### <a name="step-2-set-the-app-configuration-setting-to-enable-app-proxy"></a>Passo 2: Definir a definição de configuração de aplicativo para habilitar o proxy de aplicativo
 Direcione o Microsoft Edge com o seguinte par de chave/valor, para habilitar o proxy de aplicativo para o Microsoft Edge:
 
-|    Chave    |    Valor    |
+|    Chave    |    Value    |
 |-------------------------------------------------------------------|-------------|
 |    com.microsoft.intune.mam.managedbrowser.AppProxyRedirection    |    true    |
 
@@ -183,7 +183,7 @@ Essa configuração permite que você configure um atalho de Home Page para o Mi
 
 Use o seguinte par de chave/valor para configurar um atalho de Home Page:
 
-|    Chave    |    Valor    |
+|    Chave    |    Value    |
 |-------------------------------------------------------------------|-------------|
 |    com.microsoft.intune.mam.managedbrowser.homepage   |    Especifique um URL válido. Os URLs incorretos são bloqueados como medida de segurança.<br>**Exemplo** <`https://www.bing.com`>
     |
@@ -218,7 +218,7 @@ Você pode usar a configuração de aplicativo para definir quais sites os usuá
 
 Use os seguintes pares de chave/valor para configurar uma lista de sites permitidos ou bloqueados para o Microsoft Edge. 
 
-|    Chave    |    Value    |
+|    Chave    |    Valor    |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    Escolha entre:<p>1. Especificar URLs permitidos (apenas estes URLs são permitidos; não pode aceder a mais nenhum site):<br>`com.microsoft.intune.mam.managedbrowser.AllowListURLs`<p>2. Especificar URLs bloqueados (é possível aceder a todos os outros sites):<br>`com.microsoft.intune.mam.managedbrowser.BlockListURLs`    |    O valor correspondente da chave é uma lista de URLs. Você insere todas as URLs que deseja permitir ou bloquear como um único valor, separados por um caractere de `|` barra vertical.<br>**Exemplos:**<br>`URL1|URL2|URL3`<br>`http://.contoso.com/|https://.bing.com/|https://expenses.contoso.com`  |
 
@@ -236,9 +236,9 @@ Você pode usar vários formatos de URL para criar suas listas de sites permitid
     |-------------------------------------------|--------------------------------------------------------|-------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
     |    `http://www.contoso.com`    |    Corresponde a uma única página    |    `www.contoso.com`    |    `host.contoso.com`<br>`www.contoso.com/images`<br>`contoso.com/`    |
     |    `http://contoso.com`    |    Corresponde a uma única página    |    `contoso.com/`    |    `host.contoso.com`<br>`www.contoso.com/images`<br>`www.contoso.com`    |
-    |    `http://www.contoso.com/&#42;`   |    Corresponde a todos os URLs que começam com `www.contoso.com`    |    `www.contoso.com`<br>`www.contoso.com/images`<br>`www.contoso.com/videos/tvshows`    |    `host.contoso.com`<br>`host.contoso.com/images`    |
-    |    `http://*.contoso.com/*`    |    Corresponde a todos os subdomínios em`contoso.com`    |    `developer.contoso.com/resources`<br>`news.contoso.com/images`<br>`news.contoso.com/videos`    |    `contoso.host.com`    |
-    |    `http://www.contoso.com/images`    |    Corresponde a uma única pasta    |    `www.contoso.com/images`    |    `www.contoso.com/images/dogs`    |
+    |    `http://www.contoso.com/*;`   |    Corresponde a todos os URLs que começam com `www.contoso.com`    |    `www.contoso.com`<br>`www.contoso.com/images`<br>`www.contoso.com/videos/tvshows`    |    `host.contoso.com`<br>`host.contoso.com/images`    |
+    |    `http://*.contoso.com/*`    |    Corresponde a todos os subdomínios em`contoso.com`    |    `developer.contoso.com/resources`<br>`news.contoso.com/images`<br>`news.contoso.com/videos`    |    `contoso.host.com`    |    `http://*contoso.com/*`    |    Corresponde a todos os subdomínios que terminam com`contoso.com/`    |    `http://news-contoso.com`<br>`http://news-contoso.com.com/daily`    |    `http://news-contoso.host.com`    |
+    `http://www.contoso.com/images`    |    Corresponde a uma única pasta    |    `www.contoso.com/images`    |    `www.contoso.com/images/dogs`    |
     |    `http://www.contoso.com:80`    |    Corresponde a uma única página, usando um número de porta    |    `http://www.contoso.com:80`    |         |
     |    `https://www.contoso.com`    |    Corresponde a uma única página segura    |    `https://www.contoso.com`    |    `http://www.contoso.com`    |
     |    `http://www.contoso.com/images/*`    |    Corresponde a uma única pasta e a todas as subpastas    |    `www.contoso.com/images/dogs`<br>`www.contoso.com/images/cats`    |    `www.contoso.com/videos`    |
@@ -287,6 +287,6 @@ A seguir estão considerações adicionais de segurança e privacidade para o Mi
 - Para permitir a autenticação e o acesso à documentação do Intune, * **. Microsoft.com** é isento das configurações de lista de permissões ou de bloqueios. Sempre é permitido.
 - Os usuários podem desativar a coleta de dados. A Microsoft recolhe automaticamente dados anónimos sobre o desempenho e a utilização do Managed Browser para melhorar os produtos e serviços Microsoft. Os utilizadores podem desativar a recolha de dados com a definição **Dados de Utilização** nos respetivos dispositivos. OS utilizadores não têm controlo sobre a recolha destes dados. Em dispositivos iOS, os sites visitados por usuários que têm um certificado expirado ou não confiável não podem ser abertos.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Passos Seguintes
 
 - [O que são as políticas de proteção de aplicações?](app-protection-policy.md) 
