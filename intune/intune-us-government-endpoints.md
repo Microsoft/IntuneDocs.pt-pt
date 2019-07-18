@@ -1,7 +1,7 @@
 ---
-title: Pontos finais de rede para implementações de administração pública dos EUA - Microsoft Intune
+title: Pontos de extremidade de rede para implantações do governo dos EUA-Microsoft Intune
 titleSuffix: ''
-description: Reveja os pontos finais de administração pública dos EUA para o Intune.
+description: Examine os pontos de extremidade do governo dos EUA para o Intune.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e4712c2958e2beee8853ad0d2620414d823da327
-ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
+ms.openlocfilehash: 9828b04ae30d8f35313564b93dfc9b997795bf76
+ms.sourcegitcommit: 8d12ab22e23552f9addaef4c28b732fb211945a2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66804490"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68306722"
 ---
-# <a name="us-government-endpoints-for-microsoft-intune"></a>Pontos finais de administração pública dos EUA para o Microsoft Intune
+# <a name="us-government-endpoints-for-microsoft-intune"></a>Pontos de extremidade do governo dos EUA para Microsoft Intune
 
-Esta página apresenta uma lista de pontos de extremidade de Governo dos EUA, necessários para as definições de proxy das implementações do Intune.
+Esta página lista os pontos de extremidade do governo dos EUA necessários para as configurações de proxy em suas implantações do Intune.
 
 Para gerir dispositivos protegidos por firewalls e servidores proxy, tem de ativar as comunicações para o Intune.
 
@@ -44,15 +44,15 @@ As tabelas que se seguem listam as portas e os serviços a que o cliente do Intu
 |*.manage.microsoft.us | 52.243.26.209 <br> 52.247.173.11 <br> 52.227.183.12 <br>52.227.180.205 <br> 52.227.178.107 <br> 13.72.185.168 <br> 52.227.173.179 <br> 52.227.175.242 <br> 13.72.39.209 <br> 52.243.26.209 <br> 52.247.173.11 |
 | enterpriseregistration.microsoftonline.us | 13.72.188.239 <br> 13.72.55.179 |
 
-## <a name="us-government-customer-designated-endpoints"></a>Cliente do US Government designado pontos finais:
-- Portal do Azure: https://portal.azure.us/ 
-- Office 365: https://portal.office365.us/ 
-- Portal da empresa do Intune: https://portal.manage.microsoft.us/ 
+## <a name="us-government-customer-designated-endpoints"></a>Pontos de extremidade designados pelo cliente do governo dos EUA:
+- Portal do Azure: https:\//Portal.Azure.us/ 
+- Office 365: https:\//Portal.office365.us/ 
+- Portal da empresa do Intune: https:\//Portal.Manage.Microsoft.us/ 
 
-## <a name="partner-service-endpoints-that-intune-depends-on"></a>Parceiro pontos finais de serviço que depende do Intune:
-- Serviço do AAD Sync: https://syncservice.gov.us.microsoftonline.com/DirectoryService.svc
-- Evo STS: https://login.microsoftonline.us
-- Proxy de diretório: https://directoryproxy.microsoftazure.us/DirectoryProxy.svc
-- Graph do AAD: https://directory.microsoftazure.us e https://graph.microsoftazure.us
-- Gráfico de MS: https://graph.microsoft.us
-- ADRS: https://enterpriseregistration.microsoftonline.us
+## <a name="partner-service-endpoints-that-intune-depends-on"></a>Pontos de extremidade de serviço do parceiro dos quais o Intune depende:
+- Serviço de AAD Sync: https\/:/SyncService.gov.us.microsoftonline.com/DirectoryService.svc
+- STS Evo: https:\//login.microsoftonline.us
+- Proxy de diretório: https\/:/directoryproxy.microsoftazure.us/DirectoryProxy.svc
+- Grafo do AAD: https\/:/Directory.microsoftazure.us e HTTPS\/:/Graph.microsoftazure.us
+- MS Graph: https:\//Graph.Microsoft.us
+- ADRs: https:\//enterpriseregistration.microsoftonline.us
