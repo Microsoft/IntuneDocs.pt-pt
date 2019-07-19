@@ -1,7 +1,7 @@
 ---
 title: Ponto final da API do Armazém de Dados do Intune
 titleSuffix: Microsoft Intune
-description: Este tópico de referência descreve a estrutura do URL de API do armazém de dados do Microsoft Intune. São fornecidos exemplos de filtro.
+description: Este tópico de referência descreve o Microsoft Intune data warehouse estrutura de URL da API. São fornecidos exemplos de filtro.
 keywords: Armazém de Dados do Intune
 author: Erikre
 ms.author: erikre
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6d2e6c99d9493d935f4a8f87c6525af19796b5f6
-ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.openlocfilehash: 59e2a681c542da46a2e938c7bf07e7185925aab2
+ms.sourcegitcommit: c3ac858bbadb63d248ed54069e48160d703bbaf2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67648787"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68313745"
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Ponto final da API do Armazém de Dados do Intune
 
@@ -51,7 +51,7 @@ O URL contém os seguintes elementos:
 | Elemento | Exemplo | Descrição |
 |-------------------|------------|--------------------------------------------------------------------------------------------------------------------|
 | location | msua06 | O URL base pode ser encontrado ao ver o painel API do Armazém de Dados no portal do Azure. |
-| entity-collection | datas | O nome da coleção da entidade do OData. Para obter mais informações sobre as coleções e entidades no modelo de dados, veja [Modelo de Dados](reports-ref-data-model.md). |
+| entity-collection | devicePropertyHistories | O nome da coleção da entidade do OData. Para obter mais informações sobre as coleções e entidades no modelo de dados, veja [Modelo de Dados](reports-ref-data-model.md). |
 | api-version | beta | Versão da API a aceder. Para obter mais informações, veja [Versão](reports-api-url.md#api-version-information). |
 | maxhistorydays | 7 | O número máximo de dias do histórico a obter (opcional). Este parâmetro pode ser fornecido a qualquer coleção, mas só entrará em vigor em coleções que incluam `dateKey` como parte da sua propriedade chave. Veja [Filtros de Intervalo DateKey](reports-api-url.md#datekey-range-filters) para obter mais informações. |
 
@@ -63,7 +63,7 @@ Pode experimentar as nossas funcionalidades mais recentes do Armazém de Dados c
 
 ## <a name="odata-query-options"></a>Opções de consulta de OData
 
-A versão atual suporta os seguintes parâmetros de consulta de OData: `$filter`, `$select`, `$skip,` e `$top`. Na `$filter`, apenas `DateKey` ou `RowLastModifiedDateTimeUTC` pode ser suportado quando as colunas são aplicáveis e outras propriedades dispararia um pedido incorreto.
+A versão atual dá suporte aos seguintes parâmetros de consulta `$filter`OData `$select`: `$skip,` , `$top`e. No `$filter`, somente `DateKey` o `RowLastModifiedDateTimeUTC` ou o pode ter suporte quando as colunas são aplicáveis e outras propriedades disparam uma solicitação inválida.
 
 ## <a name="datekey-range-filters"></a>Filtros de Intervalo DateKey
 
@@ -75,7 +75,7 @@ Os filtros de intervalo `DateKey` podem ser utilizados para limitar a quantidade
 ## <a name="filter-examples"></a>Exemplos de filtros
 
 > [!NOTE]
-> O filtro exemplos partem do princípio de hoje é 2/21/2019.
+> Os exemplos de filtro pressupõem que hoje é 2/21/2019.
 
 |                             Filtro                             |           Otimização do Desempenho           |                                          Descrição                                          |
 |:--------------------------------------------------------------:|:--------------------------------------------:|:---------------------------------------------------------------------------------------------:|
@@ -83,4 +83,4 @@ Os filtros de intervalo `DateKey` podem ser utilizados para limitar a quantidade
 |    `$filter=DateKey eq 20180214`                                 |    Completo                                      |    Devolver dados com um `DateKey` igual a 20180214.                                                    |
 |    `$filter=DateKey ge 20180214 and DateKey lt 20180221`         |    Completo                                      |    Devolver dados com um `DateKey` entre 20180214 e 20180220.                                     |
 |    `maxhistorydays=7&$filter=DateKey eq 20180214`                |    Completo                                      |    Devolver dados com um `DateKey` igual a 20180214. `maxhistorydays` é ignorado.                            |
-|    `$filter=RowLastModifiedDateTimeUTC ge 2018-02-21T23:18:51.3277273Z`                                |    Completo                                       |    Devolve os dados com `RowLastModifiedDateTimeUTC` é maior que ou igual a `2018-02-21T23:18:51.3277273Z`                             |
+|    `$filter=RowLastModifiedDateTimeUTC ge 2018-02-21T23:18:51.3277273Z`                                |    Completo                                       |    Retornar dados com `RowLastModifiedDateTimeUTC` é maior ou igual a`2018-02-21T23:18:51.3277273Z`                             |

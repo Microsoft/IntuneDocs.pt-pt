@@ -6,7 +6,7 @@ keywords: Armazém de Dados do Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/10/2019
+ms.date: 07/09/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,43 +17,43 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0baf74515af22fb04f773da0d26b94a7eec5f572
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 16cb03788f8a3dd261a1e6d9dbc3efe4b50f4f73
+ms.sourcegitcommit: c3ac858bbadb63d248ed54069e48160d703bbaf2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041033"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68313824"
 ---
-# <a name="reference-for-date-entity"></a>Referência para a entidade de data
+# <a name="reference-for-dates-entity"></a>Referência para a entidade datas
 
-A categoria **Date** contém a entidade **Date** utilizada para definir as referências de data no modelo de dados.
+A categoria **datas** contém a entidade de **Data** usada para definir referências de data no modelo de dados.
 
-## <a name="date"></a>Date
+## <a name="dates"></a>datas
 
-A entidade **Date** representa as datas que são referenciadas em múltiplas entidades do armazém de dados.
+A entidade **date** representa as datas que são referenciadas em múltiplas entidades do armazém de dados.
 
 
 |    Propriedade     |                      Descrição                       |       Exemplo        |
 |-----------------|--------------------------------------------------------|----------------------|
-|     DateKey     | Identificador exclusivo para esta data no armazém de dados. |       20160703       |
-|    FullDate     |    A data atual representada em formato Data/Hora completo.     | 7/3/2016 12:00:00 AM |
-|    DayOfWeek    |                      Dia da semana                       |          1           |
-|   DayOfMonth    |                      Dia do mês                      |          3           |
-|    DayOfYear    |                      Dia do ano                       |         185          |
-|   WeekOfYear    |                      Semana do ano                      |          28          |
-|   MonthOfYear   |                   Mês do ano                    |          7           |
-| CalendarQuarter |                    Trimestre civil                    |          3           |
-|  CalendarYear   |                     Ano civil                      |         2016         |
-|     DateKey     | Identificador exclusivo para esta data no armazém de dados. |       20160703       |
-|    FullDate     |    A data atual representada em formato Data/Hora completo.     | 7/3/2016 12:00:00 AM |
-|    DayOfWeek    |                      Dia da semana                       |          1           |
-|   DayOfMonth    |                      Dia do mês                      |          3           |
-|    DayOfYear    |                      Dia do ano                       |         185          |
-|   WeekOfYear    |                      Semana do ano                      |          28          |
-|   MonthOfYear   |                   Mês do ano                    |          7           |
-| CalendarQuarter |                    Trimestre civil                    |          3           |
-|  CalendarYear   |                     Ano civil                      |         2016         |
+|     dateKey     | Identificador exclusivo para esta data no armazém de dados. |       20160703       |
+|    fullDate     |    A data atual representada em formato Data/Hora completo.     | 7/3/2016 12:00:00 AM |
+|    dayOfWeek    |                      Dia da semana                       |          1           |
+|   dayOfMonth    |                      Dia do mês                      |          3           |
+|    dayOfYear    |                      Dia do ano                       |         185          |
+|   weekOfYear    |                      Semana do ano                      |          28          |
+|   monthOfYear   |                   Mês do ano                    |          7           |
+| calendarQuarter |                    Trimestre civil                    |          3           |
+|  calendarYear   |                     Ano civil                      |         2016         |
+|     dateKey     | Identificador exclusivo para esta data no armazém de dados. |       20160703       |
+|    fullDate     |    A data atual representada em formato Data/Hora completo.     | 7/3/2016 12:00:00 AM |
+|    dayOfWeek    |                      Dia da semana                       |          1           |
+|   dayOfMonth    |                      Dia do mês                      |          3           |
+|    dayOfYear    |                      Dia do ano                       |         185          |
+|   weekOfYear    |                      Semana do ano                      |          28          |
+|   monthOfYear   |                   Mês do ano                    |          7           |
+| calendarQuarter |                    Trimestre civil                    |          3           |
+|  calendarYear   |                     Ano civil                      |         2016         |
 
 ## <a name="next-steps"></a>Passos Seguintes
 
-- Saiba mais sobre o [armazém de dados do Intune](reports-nav-create-intune-reports.md).
+- Saiba mais sobre o [data warehouse do Intune](reports-nav-create-intune-reports.md).

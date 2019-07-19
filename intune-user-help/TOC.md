@@ -12,7 +12,7 @@
 ### [Porquê inscrever o seu dispositivo Android](why-enroll-android-device.md)
 ### Inscrever o dispositivo
 #### [Inscrever o seu dispositivo Android](enroll-device-android-company-portal.md)  
-#### [Inscrever com o perfil de trabalho do Android](create-a-work-profile-and-enroll-your-device-in-intune-android.md)
+#### [Inscrever com o perfil de trabalho do Android](enroll-device-android-work-profile.md)
 #### [Inscrever com a aplicação Microsoft Intune](enroll-device-android-microsoft-intune-app.md)
 ### [Utilizar aplicações geridas no dispositivo](use-managed-apps-on-your-device-android.md)
 ### [Encriptar o dispositivo](encrypt-your-device-android.md)

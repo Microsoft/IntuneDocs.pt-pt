@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ceb2b830dc7e403bd138903cf61c80291a0753f2
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: a5436de6b972e5cbe8b2b17d42f0974cb38df47e
+ms.sourcegitcommit: c3ac858bbadb63d248ed54069e48160d703bbaf2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67882562"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68313818"
 ---
 # <a name="reference-for-application-entities"></a>Referência para as entidades de aplicações
 
@@ -34,31 +34,31 @@ A categoria **Application** contém entidades para dispositivos móveis que regi
 - Tipos de software geridos para uma aplicação, por exemplo **sidecar** ou **ambiente de trabalho**
 - Estado VPP (Volume Purchasing Program) de uma aplicação
 
-## <a name="apprevision"></a>AppRevision
+## <a name="apprevisions"></a>appRevisions
 
-A entidade **AppRevision** apresenta uma lista de todas as versões das aplicações.
+A entidade **appRevision** apresenta uma lista de todas as versões das aplicações.
 
 | Propriedade  | Descrição | Exemplo |
 |---------|------------|--------|
 | AppKey |Identificador exclusivo da Aplicação. |123 |
-| ApplicationId |Identificador exclusivo da Aplicação – semelhante à AppKey, mas esta é uma chave natural. |b66bc706-ffff-7437-0340-032819502773 |
+| applicationId |Identificador exclusivo da Aplicação – semelhante à AppKey, mas esta é uma chave natural. |b66bc706-ffff-7437-0340-032819502773 |
 | Revisão |A versão como mencionada pelo administrador durante o carregamento do binário. |2 |
-| Título |Nome da aplicação. |Excel |
-| Fabricante |Publicador da aplicação. |Microsoft |
+| title |Nome da aplicação. |Excel |
+| publisher |Publicador da aplicação. |Microsoft |
 | UploadState |Estado de carregamento da aplicação. |1 |
 | AppTypeKey |Referência ao AppType descrito na secção seguinte. | |
 | VppProgramTypeKey |Referência ao VppProgramType descrito abaixo. | |
 | CreationTime |A hora em que esta revisão foi criada. |11/23/2016 12:00:00 AM |
-| ModifiedTime |A última vez em que algo relacionado com esta revisão foi alterado. |11/23/2016 12:00:00 AM |
-| Tamanho |Tamanho do binário. | |
-| StartDateInclusiveUTC |Data e hora em UTC em que a revisão da Aplicação foi criada no armazém de dados. |11/23/2016 12:00:00 AM |
+| Modificadotime |A última vez em que algo relacionado com esta revisão foi alterado. |11/23/2016 12:00:00 AM |
+| size |Tamanho do binário. | |
+| startDateInclusiveUTC |Data e hora em UTC em que a revisão da Aplicação foi criada no armazém de dados. |11/23/2016 12:00:00 AM |
 | EndDateExclusiveUTC |Data e hora em UTC em que a revisão desta aplicação se tornou obsoleta. |11/23/2016 12:00:00 AM |
-| IsCurrent |Indica se a versão desta Aplicação é atual ou não no armazém de dados. |True/False |
+| IsCurrent |Indica se a versão desta Aplicação é atual ou não no armazém de dados. |Verdadeiro/Falso |
 | RowLastModifiedDateTimeUTC |Data e hora em UTC em que esta versão da aplicação foi modificada pela última vez no armazém de dados. |11/23/2016 12:00:00 AM |
 
-## <a name="apptypes"></a>AppTypes
+## <a name="apptypes"></a>appTypes
 
-A entidade **AppTypes** apresenta uma lista da origem da instalação de uma aplicação.
+A entidade **appType** apresenta uma lista da origem da instalação de uma aplicação.
 
 | Propriedade  | Descrição |
 |---------|------------|
@@ -85,9 +85,9 @@ A entidade **AppTypes** apresenta uma lista da origem da instalação de uma apl
 | 12 |Aplicação LOB para Windows Phone | Uma aplicação de linha de negócio do Windows Phone. |
 
 
-## <a name="vppprogramtypes"></a>VppProgramTypes
+## <a name="vppprogramtypes"></a>vppProgramTypes
 
-A entidade **VppProgramTypes** apresenta uma lista de programas VPP possíveis para uma aplicação.
+A entidade **vppProgramType** apresenta uma lista de tipos de programas VPP possíveis para uma aplicação.
 
 | Propriedade  | Descrição |
 |---------|------------|
@@ -105,21 +105,21 @@ A entidade **VppProgramTypes** apresenta uma lista de programas VPP possíveis p
 
 
 
-## <a name="applicationinventory"></a>ApplicationInventory
+## <a name="applicationinventories"></a>applicationInventories
 
-A entidade **ApplicationInventory** lista as aplicações encontradas no dispositivo aquando da recolha do inventário.
+A entidade **deinventário** lista os aplicativos encontrados no dispositivo no momento da coleta de inventário.
 
 | Propriedade  | Descrição |
 |---------|------------|
 | DeviceKey | Esta é uma referência à tabela de Dispositivos que contém o ID de dispositivo do Intune. |
-| DateKey | Referência à tabela de data que indica o dia do inventário. |
-| ApplicationName | O nome da aplicação. |
-| ApplicationVersion | Versão da aplicação. |
+| dateKey | Referência à tabela de data que indica o dia do inventário. |
+| applicationName | O nome da aplicação. |
+| applicationVersion | Versão da aplicação. |
 | BundleSize | O tamanho da aplicação em bytes. |
 
-## <a name="mobileappinstallstate"></a>MobileAppInstallState
+## <a name="mobileappinstallstates"></a>mobileAppInstallStates
 
-A entidade **MobileAppInstallState** representa o estado de instalação de uma aplicação móvel depois de ser atribuída a um grupo que contém dispositivos, utilizadores ou ambos.
+A entidade **mobileAppInstallState** representa o estado de instalação de um aplicativo móvel depois que ele tiver sido atribuído a um grupo que contém dispositivos, usuários ou ambos.
 
 | Propriedade | Descrição |
 |---|---|

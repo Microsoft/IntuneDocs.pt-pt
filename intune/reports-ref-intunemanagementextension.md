@@ -17,49 +17,49 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7049437eff56671b210b72133ab7a41a40335f9e
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 70802626c79f11748e81c39afdd8bc8c5d0622b3
+ms.sourcegitcommit: c3ac858bbadb63d248ed54069e48160d703bbaf2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67882540"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68313778"
 ---
-# <a name="reference-for-intune-management-extension"></a>Referência para a Extensão de Gestão do Intune
+# <a name="reference-for-intune-management-extensions"></a>Referência para extensões de gerenciamento do Intune
 
-A categoria **IntuneManagementExtension** contém entidades para dispositivos móveis que controlam informações como:
+A categoria **intuneManagementExtensions** contém entidades para dispositivos móveis que rastreiam informações como:
 
 - Versões de uma IntuneManagementExtension
 - Estado da instalação de uma IntuneManagementExtension
 
-## <a name="intunemanagementextensionversion"></a>IntuneManagementExtensionVersion
+## <a name="intunemanagementextensionversions"></a>intuneManagementExtensionVersions
 
-A entidade **IntuneManagementExtensionVersion** apresenta todas as versões utilizadas pela IntuneManagementExtension.
+A entidade **intuneManagementExtensionVersion** lista todas as versões usadas pelo intuneManagementExtensions.
 
 | Propriedade  | Descrição | Exemplo |
 |---------|------------|--------|
-| ExtensionVersionKey |Identificador exclusivo da versão da IntuneManagementExtension. | 1 |
+| ExtensionVersionKey |Identificador exclusivo da versão do intuneManagementExtensions. | 1 |
 | ExtensionVersion |O número da versão de quatro dígitos. |1.0.2.0 |
 
-## <a name="intunemanagementextensionhealthstate"></a>IntuneManagementExtensionHealthState
+## <a name="intunemanagementextensionhealthstates"></a>intuneManagementExtensionHealthStates
 
-O **IntuneManagementExtensionHealthState** apresenta todos os estados de funcionamento possíveis da IntuneManagementExtension.
+O **intuneManagementExtensionHealthState** lista todos os Estados de integridade possíveis do intuneManagementExtensions.
 
 | Propriedade  | Descrição | Exemplo |
 |---------|------------|--------|
 | ExtensionStateKey |Identificador exclusivo do estado de funcionamento. | 2 |
-| ExtensionState |Estado de funcionamento de uma IntuneManagementExtension. | Bom estado de funcionamento |
+| Extensãostate |Estado de funcionamento de uma IntuneManagementExtension. | Bom estado de funcionamento |
 
-## <a name="intunemanagementextension"></a>IntuneManagementExtension
+## <a name="intunemanagementextensions"></a>intuneManagementExtensions
 
-A **IntuneManagementExtension** apresenta o estado de funcionamento da IntuneManagementExtension em cada dispositivo Windows 10 por dia.
+O **intuneManagementExtension** lista a integridade do IntuneManagementExtensions em cada dispositivo Windows 10 por dia.
 Os dados são mantidos relativamente aos últimos 60 dias. 
 
 
 |      Propriedade       |                         Descrição                         | Exemplo |
 |---------------------|-------------------------------------------------------------|---------|
-|       DateKey       |               Identificador exclusivo da Data.                |   123   |
+|       dateKey       |               Identificador exclusivo da Data.                |   123   |
 |      TenantKey      |              Identificador exclusivo do Inquilino.               |   456   |
 |      DeviceKey      |              Identificador exclusivo do Dispositivo.               |   789   |
-| ExtensionVersionKey | Identificador exclusivo da versão da IntuneManagementExtension. |    1    |
+| ExtensionVersionKey | Identificador exclusivo da versão do intuneManagementExtension. |    1    |
 |  ExtensionStateKey  |             Identificador exclusivo do estado de funcionamento.              |    2    |
 
