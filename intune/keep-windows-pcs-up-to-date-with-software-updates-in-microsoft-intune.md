@@ -17,19 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 70818e038be915a1b756eb391129e6cdb74fb069
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: a94c327c8595e83ec9808ed41e788c5756d5510a
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548657"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353873"
 ---
 # <a name="keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune"></a>Manter os PCs Windows atualizados com atualizações de software no Microsoft Intune
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
 
 > [!NOTE]
-> As informações neste tópico aplicam-se apenas a computadores Windows que está a gerir como PCs através do cliente de software do Intune. Se pretender gerir atualizações para Windows PCs inscritos como dispositivos móveis, consulte [gerir atualizações de software no Intune](windows-update-for-business-configure.md).
+> As informações neste tópico aplicam-se apenas a computadores Windows que está a gerir como PCs através do cliente de software do Intune. Se você quiser gerenciar atualizações para computadores Windows registrados como dispositivos móveis, consulte [gerenciar atualizações de software no Intune](windows-update-for-business-configure.md).
 
 O Microsoft Intune pode ajudar a proteger os seus computadores geridos de várias formas, incluindo a gestão de atualizações de software que mantêm os seus computadores atualizados, assegurando que os patches e as atualizações de software mais recentes são rapidamente instaladas.
 
@@ -58,7 +58,7 @@ A tabela seguinte mostra os valores que pode configurar na política e os valore
   |Definição de política|Detalhes|
     |------------------|--------------------|
     |**Frequência de deteção de atualizações e aplicações (horas)** |Especifica a frequência (de 8 a 22 horas) com que o Intune procura novas atualizações e aplicações.<br /><br />Valor recomendado: **8** horas.|
-    |**Instalação automatizada ou a pedido de atualizações e aplicações** |Especifica se as atualizações são instaladas automaticamente ou se é pedido ao utilizador antes de instalar. Esta definição permite-lhe também agendar a instalação das atualizações e aplicações.<br /><br />**Instalar atualizações e aplicações automaticamente conforme agendado** instala atualizações e aplicações através da agenda especificada.<br /><br />Enquanto definição dependente de uma política, **Utilizar Manutenção Automática para computadores com Windows**  especifica que as atualizações e as aplicações são instaladas durante a janela de manutenção automática do Windows.<br /><br />**Pedir ao utilizador para instalar** pede ao utilizador para instalar atualizações quando estas estão prontas.<br /><br />Valores recomendados:<br /><br />Definição **Instalar atualizações e aplicações automaticamente conforme agendado** selecionada<br /><br />**Dia agendado: Todos os dias**<br /><br />**Hora agendada: : 3:00**<br /><br />Definição **Utilizar Manutenção Automática para computadores Windows** selecionada|
+    |**Instalação automatizada ou a pedido de atualizações e aplicações** |Especifica se as atualizações são instaladas automaticamente ou se é pedido ao utilizador antes de instalar. Esta definição permite-lhe também agendar a instalação das atualizações e aplicações.<br /><br />**Instalar atualizações e aplicações automaticamente conforme agendado** instala atualizações e aplicações através da agenda especificada.<br /><br />Enquanto definição dependente de uma política, **Utilizar Manutenção Automática para computadores com Windows**  especifica que as atualizações e as aplicações são instaladas durante a janela de manutenção automática do Windows.<br /><br />**Pedir ao utilizador para instalar** pede ao utilizador para instalar atualizações quando estas estão prontas.<br /><br />Valores recomendados:<br /><br />Definição **Instalar atualizações e aplicações automaticamente conforme agendado** selecionada<br /><br />**Dia agendado: Todos os dias**<br /><br />**Hora agendada: 3:00 AM**<br /><br />Definição **Utilizar Manutenção Automática para computadores Windows** selecionada|
     |**Permitir a instalação imediata de atualizações que não interrompem o Windows** |**Permitir** instala atualizações imediatamente após serem transferidas, exceto as atualizações que iriam interromper ou reiniciar o Windows. Estas atualizações são instaladas de acordo com a configuração da definição **Instalação automatizada ou a pedido de atualizações**.<br /><br />**Não permitir** instala atualizações de acordo com a configuração da definição **Instalação automatizada ou a pedido de atualizações**.<br /><br />Valor recomendado: **Permitir** |
     |**Atrasar o reinício do Windows após a instalação das atualizações e aplicações agendadas (minutos)** |Especifica (de 1-30 minutos) o tempo de espera para reiniciar o Windows após instalar as atualizações e aplicações agendadas.<br /><br />Valor recomendado: **15 minutos** |
     |**Atrasar após reiniciar o Windows para começar a instalar as atualizações e aplicações agendadas perdidas (minutos)** |Especifica (de 1-60 minutos) quanto tempo aguardar para começar a instalação de atualizações e aplicações após o Windows ser reiniciado quando uma atualização agendada foi perdida.<br /><br />Valor recomendado: **5 minutos**|
@@ -80,7 +80,7 @@ Utilize os dois métodos seguintes para ajudá-lo a preparar-se para utilizar as
 
 1. Na [consola de administração do Microsoft Intune](https://manage.microsoft.com/), escolha **Admin**&gt;**Atualizações**.
 
-2. Sobre o **definições do serviço: As atualizações** página, além do **categoria de produto** , selecione as categorias de atualizações que pretende disponibilizar a computadores. Tenha em atenção que as atualizações mais comuns estão selecionadas por predefinição.
+2. Nas configurações **do serviço: Atualizações** , na lista **categoria do produto** , selecione as categorias de atualização que você deseja disponibilizar para os computadores. Tenha em atenção que as atualizações mais comuns estão selecionadas por predefinição.
 
     > [!IMPORTANT]
     > Para garantir que os computadores recebem as atualizações que foram aprovadas pelo administrador, a definição da Política de Grupo do Windows Server Update Services (WSUS), **Especificar localização do serviço de atualizações da Microsoft na intranet** não pode estar aplicada a computadores inscritos com o Intune.
@@ -93,7 +93,7 @@ Utilize os dois métodos seguintes para ajudá-lo a preparar-se para utilizar as
 
 1. Na [consola de administração do Microsoft Intune](https://manage.microsoft.com/), escolha **Admin**&gt;**Atualizações**.
 
-2. Na **regras de aprovação automática** secção a **as definições do servidor: As atualizações** página, selecione **New**.
+2. Na seção **regras de aprovação automática** das **configurações do servidor: Atualizações** , escolha **novo**.
 
 3. Na página **Geral** do Assistente de Criação de Regra de Aprovação Automática, especifique o nome e descrição opcional da regra.
 
@@ -114,7 +114,7 @@ Utilize os dois métodos seguintes para ajudá-lo a preparar-se para utilizar as
 
 7. Na página **Resumo**, reveja as definições da nova regra e, em seguida, escolha **Concluir**.
 
-A nova regra é apresentada na **regras de aprovação automática** secção a **as definições do serviço: Atualizações** página.
+A nova regra é mostrada na seção **regras de aprovação automática** das **configurações do serviço: Página** atualizações.
 
 > [!NOTE]
 > Quando cria uma regra de aprovação automática, esta só aprova atualizações futuras e não aprova automaticamente atualizações já existentes no Intune. Para aprovar estas atualizações tem de executar a regra de aprovação automática.
@@ -260,5 +260,5 @@ Quando seleciona uma atualização da lista, são disponibilizados mais comandos
 6. Pode verificar o painel de detalhes na parte inferior da página **Todas as Atualizações** para mensagens de lembrete sobre a atualização.
 
 
-### <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte também
 [Políticas para proteger PCs Windows](policies-to-protect-windows-pcs-in-microsoft-intune.md)

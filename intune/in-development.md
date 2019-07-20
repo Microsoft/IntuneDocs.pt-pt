@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 47e1a3870e1da1514ad07e8dad5c6117ffc108a9
-ms.sourcegitcommit: ce9cae824a79223eab3c291fd5d5e377efac84cb
+ms.openlocfilehash: 6ee62213c9ef23302de7fa7342569e1903514699
+ms.sourcegitcommit: 11a31cd39b727f2254e2705b07d18924e103bd2e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "67842705"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68341355"
 ---
 # <a name="in-development-for-microsoft-intune---july-2019"></a>Em desenvolvimento para Microsoft Intune – julho de 2019
 
@@ -86,9 +86,6 @@ Você cria perfis de configuração de dispositivo do Windows 10 (**perfis** > d
 
 Aplica-se a: 
 - Windows 10 e posterior
-
-### <a name="manage-filevault-for-macos-------3858502--1210104-----"></a>Gerenciar FileVault para macOS   <!--  3858502 + 1210104   -->
-Você poderá usar um perfil de configuração de dispositivo do Intune Endpoint Protection para gerenciar a criptografia de chave FileVault para dispositivos macOS. Isso inclui a caução de, a exibição e a rotação das chaves de criptografia de seus dispositivos corporativos. Os usuários finais poderão recuperar essas chaves por meio do site Portal da Empresa.
 
 ### <a name="advanced-settings-for-windows-defender-firewall-------1311949-------"></a>Configurações avançadas para o Windows Defender firewall   <!--  1311949     -->
 Como uma visualização pública, em breve você poderá usar o Intune para gerenciar as regras de firewall personalizadas em clientes do Windows Defender.  

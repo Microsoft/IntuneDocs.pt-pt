@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2b6326d30650aa62777ac9ce9c70394904b678f3
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: fefb8feee7f308fca3d3455487aae5f2802d9c5d
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67549167"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353398"
 ---
 # <a name="retire-a-windows-pc"></a>Extinguir um PC Windows
 
@@ -59,6 +59,6 @@ Quando extingue um PC:
 
     Se o cliente do Endpoint Protection não for desinstalado, leia [Resolução de problemas do Endpoint Protection](/intune/troubleshoot-endpoint-protection-in-microsoft-intune) para obter mais ajuda.
 
-### <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte também
 
 [Tarefas de gestão comuns de PCs Windows com o cliente de software do Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b612a245e0a12384f8f9e7ec4a2c970afc2fd628
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: eb9f7eef1f7f0e4a712bdf3e8a3706374ac002a8
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548829"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353312"
 ---
 # <a name="use-policies-to-simplify-windows-pc-management"></a>Utilizar políticas para simplificar a gestão de PCs Windows
 
@@ -32,7 +32,7 @@ Para gerir computadores Windows como PCs ao executar o cliente de software do In
 
 ![Modelo de políticas para PCs Windows](media/pc_policy_template.png)
 
-### <a name="manage-the-microsoft-intune-center"></a>Gerir o Centro do Microsoft Intune
+## <a name="manage-the-microsoft-intune-center"></a>Gerir o Centro do Microsoft Intune
 Os utilizadores veem o cliente de software do Intune como o **Microsoft Intune Center**. O Centro do Microsoft Intune permite aos utilizadores:
 
 - Obter aplicações a partir do portal da empresa.
@@ -47,12 +47,12 @@ O Centro do Microsoft Intune é instalado em todos os computadores geridos. Pode
 
 |Definição de política|Detalhes|
 |------------------|--------------------|
-|**Name**|O nome do administrador que gere o computador.<br />Comprimento máximo: 40 carateres|
-|**Número de telefone**|O número de telefone do administrador que gere o computador.<br />Comprimento máximo: 20 carateres|
-|**Endereço de e-mail**|O endereço de e-mail do administrador que gere o computador.<br />Comprimento máximo: 40 carateres|
-|**Nome do site**|O nome do seu site de suporte para utilizadores.<br />> comprimento máximo: 40 carateres|
-|**URL do site**|O URL do seu site de suporte.<br />Comprimento máximo: 150 carateres|
-|**Notas**|Uma nota que é apresentada aos utilizadores.<br />Comprimento máximo: 120 carateres|
+|**Name**|O nome do administrador que gere o computador.<br />Comprimento máximo: 40 caracteres|
+|**Número de telefone**|O número de telefone do administrador que gere o computador.<br />Comprimento máximo: 20 caracteres|
+|**Endereço de e-mail**|O endereço de e-mail do administrador que gere o computador.<br />Comprimento máximo: 40 caracteres|
+|**Nome do site**|O nome do seu site de suporte para utilizadores.<br />comprimento máximo de >: 40 caracteres|
+|**URL do site**|O URL do seu site de suporte.<br />Comprimento máximo: 150 caracteres|
+|**Notas**|Uma nota que é apresentada aos utilizadores.<br />Comprimento máximo: 120 caracteres|
 
 Consulte os seguintes recursos para obter informações sobre as políticas e definições que pode configurar para PCs Windows:
 
@@ -63,6 +63,6 @@ Consulte os seguintes recursos para obter informações sobre as políticas e de
 - [Ajudar a proteger os PCs Windows que utilizam políticas da Firewall do Windows no Microsoft Intune](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md) – estas políticas simplificam a administração das definições da Firewall do Windows nos computadores geridos.
 
 
-### <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte também
 
 [Tarefas de gestão comuns de PCs Windows com o cliente de software do Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)

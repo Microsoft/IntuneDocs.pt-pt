@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e241dc534427b97086013a12391f06bd2f342779
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: e4a171255c545e2f2c55adf4695476107d06aefe
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67883263"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354381"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>Configurar perfis celulares eSIM no Intune – pré-visualização pública
 
@@ -79,7 +79,7 @@ Os códigos de ativação celulares são fornecidos pela sua operadora de rede m
 4. Selecione o ficheiro CSV que contém os seus códigos de ativação.
 5. Selecione **OK** para guardar as alterações.
 
-#### <a name="csv-file-requirements"></a>Requisitos do ficheiro CSV
+### <a name="csv-file-requirements"></a>Requisitos do ficheiro CSV
 
 Ao trabalhar com o ficheiro CSV que contém os códigos de ativação, certifique-se de que você ou a sua operadora de rede móvel cumprem os seguintes requisitos:
 
@@ -89,7 +89,7 @@ Ao trabalhar com o ficheiro CSV que contém os códigos de ativação, certifiqu
 - Cada ficheiro deve ser específico a uma única operadora de rede móvel e todos os códigos de ativação devem ser específicos ao mesmo plano de faturação. O Intune distribui os códigos de ativação de forma aleatória para os dispositivos abrangidos. Não existem garantias de que dispositivo irá obter um determinado código de ativação.
 - Pode ser importado um máximo de 1000 códigos de ativação num ficheiro CSV.
 
-#### <a name="csv-file-example"></a>Exemplo de ficheiro CSV
+### <a name="csv-file-example"></a>Exemplo de ficheiro CSV
 
 1. A primeira linha e a primeira célula do ficheiro CSV contêm o URL do serviço de ativação eSIM da operadora de rede móvel, que é denominado SM-DP+ (servidor Subscription Manager Data Preparation). O URL deve ser um nome de domínio completamente qualificado (FQDN) sem vírgulas.
 2. A partir da segunda linha, encontram-se os códigos de ativação de utilização única e exclusiva que incluem dois valores:
@@ -129,7 +129,7 @@ Os códigos de ativação eSIM são utilizados uma vez. Após o Intune instalar 
 
 ## <a name="step-4-monitor-deployment"></a>Passo 4: Monitorar a implantação
 
-#### <a name="review-the-deployment-status"></a>Rever o estado de implementação
+### <a name="review-the-deployment-status"></a>Rever o estado de implementação
 
 Após atribuir o perfil, pode monitorizar o estado da implementação de um conjunto de subscrições.
 
@@ -138,7 +138,7 @@ Após atribuir o perfil, pode monitorizar o estado da implementação de um conj
 3. Selecione **Configuração do dispositivo** > **Perfis celulares eSIM**. Estão listados todos os seus conjuntos de subscrições celulares eSIM.
 4. Selecione uma subscrição e reveja o **Estado da Implementação**.
 
-#### <a name="check-the-profile-status"></a>Verificar o estado do perfil
+### <a name="check-the-profile-status"></a>Verificar o estado do perfil
 Depois de criar o perfil do dispositivo, o Intune disponibiliza gráficos. Estes gráficos apresentam o estado de um perfil, como a atribuição com êxito a dispositivos ou se o perfil mostra um conflito.
 
 1. Selecione **Configuração do dispositivo** > **Perfis celulares eSIM** > Selecione uma subscrição existente.
@@ -167,7 +167,7 @@ Pode monitorizar e ver uma lista detalhada dos dispositivos em Estado do Disposi
     - **Status da rede celular**: Estado fornecido pela operadora móvel. Contacte a operadora de rede móvel para resolver problemas.
     - **Último check-in**: Data em que o dispositivo se comunica pela última vez com o Intune
 
-#### <a name="monitor-esim-profile-details-on-the-actual-device"></a>Monitorizar os detalhes do perfil eSIM no dispositivo real
+### <a name="monitor-esim-profile-details-on-the-actual-device"></a>Monitorizar os detalhes do perfil eSIM no dispositivo real
 
 1. No seu dispositivo, abra as **Definições** > aceda a **Rede e Internet**.
 2. Selecione **Rede Móvel** > **Gerir perfis de eSIM**
@@ -196,5 +196,5 @@ O perfil eSIM também será removido quando o dispositivo for [extinto](devices-
   - **Formato de arquivo não adequado**: Consulte **a etapa 1: Adicione códigos** de ativação de celular (neste artigo) sobre como formatar corretamente o arquivo.
   - **Falha de ativação de celular, contate a operadora móvel**: O código de ativação não pode ser ativado em sua rede. Também é possível que a ativação celular e a transferência do perfil tenham falhado.
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Passos seguintes
 [Configurar perfis de dispositivo](device-profiles.md)

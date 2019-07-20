@@ -17,19 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eade2a1bc19e4b0c477faf2ad8e262196da8cc30
-ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
+ms.openlocfilehash: b79f488fcaa221523b5833aa1cebcf872d5f9b3d
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67572525"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354012"
 ---
 # <a name="help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune"></a>Ajudar a proteger PCs com o Windows a utilizarem políticas de Firewall do Windows no Microsoft Intune
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
 
 > [!NOTE]
-> As informações neste tópico aplicam-se apenas a computadores Windows que está a gerir como PCs através do cliente de software do Intune. Se pretender gerir as definições da firewall para Windows PCs inscritos como dispositivos móveis, consulte [adicionar definições de proteção de ponto final no Intune](endpoint-protection-configure.md).
+> As informações neste tópico aplicam-se apenas a computadores Windows que está a gerir como PCs através do cliente de software do Intune. Se você quiser gerenciar as configurações de firewall para computadores Windows registrados como dispositivos móveis, consulte [Adicionar configurações de proteção de ponto de extremidade no Intune](endpoint-protection-configure.md).
 
 O Microsoft Intune pode ajudá-lo a proteger os PCs Windows que gere com o cliente Intune de várias formas. Uma forma como o faz é ao fornecer políticas que lhe permitem configurar as definições da Firewall do Windows nos PCs.
 
@@ -140,5 +140,5 @@ Pode configurar exceções que permitam tipos específicos de tráfego de rede a
 |**Windows Virtual PC**<br>(Windows 7 ou posterior)|Permite que as máquinas virtuais comuniquem com outros computadores.|
 |**Dispositivos Portáteis Sem Fios**|Ativa a transferência de multimédia de câmaras ou dispositivos multimédia ligados à rede para computadores geridos com do Media Transfer Protocol (MTP). Esta definição utiliza protocolos de rede SSDP e UPnP.|
 
-### <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte também
 [Políticas para proteger PCs Windows](policies-to-protect-windows-pcs-in-microsoft-intune.md)

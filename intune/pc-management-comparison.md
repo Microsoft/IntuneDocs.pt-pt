@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e3665a785391d2bff707bf5b8fe0a7e4f6e8a43d
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: fec72636a5d76ce4eb1fa0c28978eeb70d1e61b5
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044520"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353548"
 ---
 # <a name="compare-managing-windows-pcs-as-computers-or-mobile-devices"></a>Comparar a gestão de PCs Windows como computadores ou dispositivos móveis
 
@@ -33,7 +33,7 @@ As organizações podem utilizar o Microsoft Intune para gerir PCs Windows como 
 |**Capacidade/cenário** |**Windows como Computador**<br>Cliente de software do Intune | **Windows como Dispositivo Móvel**<br>MDM |
 |--------------|-------------------------------|-------------------------------|
 |**Sistemas operativos** |Windows 10, Windows 8 e posterior, Windows 7, Windows Vista | Windows 10 e posterior |
-|**Suporte do Portal do Intune** |[Consola do Silverlight](https://manage.microsoft.com)|[Portal do Azure](https://portal.azure.com) |
+|**Suporte do Portal do Intune** |[Consola do Silverlight](https://manage.microsoft.com)|[Azure portal](https://portal.azure.com) |
 |**Acesso condicional**|Não disponível|Disponível <br>[O que é o acesso condicional?](conditional-access.md)|
 |**Inscrição em massa**|Não disponível|Disponível <br>[Inscrição em massa para dispositivos Windows](windows-bulk-enroll.md)|
 |**Perfis de dispositivo**|Não disponível|Disponível <br>[O que são os perfis de dispositivos do Microsoft Intune?](device-profiles.md)|
@@ -46,10 +46,10 @@ As organizações podem utilizar o Microsoft Intune para gerir PCs Windows como 
 |**Assistência remota** |TeamViewer<br>[Pedir e fornecer assistência remota para PCs Windows](request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md)|TeamViewer<br> [Utilizar o TeamViewer para administrar remotamente dispositivos do Intune](teamviewer-support.md) |
 |**Implementação de aplicações** | Não disponível para a Loja Microsoft para Empresas,<br>.exe, .appx e múltiplos ficheiros .msi apenas<br>[Adicionar aplicações para PCs Windows que executam o cliente de software do Intune](add-apps-for-windows-pcs-in-microsoft-intune.md)|Disponível para aplicações da Loja Microsoft e aplicações de linha de negócio<br>[Como adicionar aplicações da loja Windows](store-apps-windows.md)<br>[Como adicionar aplicações de linha de negócio (LOB) Windows](lob-apps-windows.md)|
 |**Proteção de aplicações**|Não disponível|Disponível <br>[O que são as políticas de proteção de aplicações?](app-protection-policy.md)|
-|**Atestado de estado de funcionamento**|Não disponível|Disponível|
+|**Atestado de integridade**|Não disponível|Disponível|
 
 
-### <a name="advantages-of-mdm-windows-pc-management"></a>Vantagens da gestão MDM de PCs Windows
+## <a name="advantages-of-mdm-windows-pc-management"></a>Vantagens da gestão MDM de PCs Windows
 A gestão de PCs Windows com a gestão de dispositivos móveis moderna tem as seguintes vantagens:
 - **Escalabilidade** – Dimensionamento da gestão MDM com a gestão na cloud do Intune. O cliente de software do Intune está limitado a 7000 PCs.
 - **Simplicidade** – Utiliza capacidades de gestão modernas incluídas no sistema operativo sem depender de um cliente de software transferido

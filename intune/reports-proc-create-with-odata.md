@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 417ed2e7f151e187efd54a9fb079c966c056242a
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 519ac8529737a870eb4f8ce9a3e06af5b1dcac79
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67884867"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353662"
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>Criar um relatório a partir do feed OData com o Power BI
 
 Este artigo explica como criar uma visualização de treemap com o Power BI Desktop com um filtro interativo. Por exemplo, o seu Diretor Financeiro poderá gostar da forma como a distribuição geral de dispositivos compara dispositivos pertencentes à empresa e dispositivos pessoais. O treemap fornece informações sobre o número total de tipos de dispositivos. Pode analisar o número de dispositivos iOS, Android e Windows pessoais ou pertencentes à empresa.
 
-### <a name="overview-of-creating-the-chart"></a>Descrição geral da criação do gráfico
+## <a name="overview-of-creating-the-chart"></a>Descrição geral da criação do gráfico
 
 Para criar este gráfico, tem de:
 1. Instalar o Power BI Desktop, caso ainda não o tenha feito.
@@ -118,7 +118,7 @@ Agora tem um filtro interativo que pode utilizar para alternar entre dispositivo
 1. Selecione **Empresa** para ver a distribuição de dispositivos pertencentes à empresa.
 2. Selecione **Pessoal** para ver os dispositivos pessoais.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Passos Seguintes
 
 - Saiba mais sobre como [criar e gerir relações](https://powerbi.microsoft.com/documentation/powerbi-desktop-create-and-manage-relationships/) no Power BI Desktop na documentação do Power BI.
 - Consulte o [Modelo do Armazém de Dados do Intune](https://docs.microsoft.com/intune/reports-ref-data-model).

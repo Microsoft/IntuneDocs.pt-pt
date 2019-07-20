@@ -14,12 +14,12 @@ ms.service: ''
 ms.technology: ''
 ms.assetid:
 - GET ONE FROM guidgenerator.com
-ms.openlocfilehash: 2b719280c4956234512b85f32abc48f1d3b66c16
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 0a5e90c6bc6b352f4d7a0fc0ae22c65110563461
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67884125"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354401"
 ---
 # <a name="metadata-and-markdown-template"></a>Modelo de Metadados e de Markdown
 
@@ -124,7 +124,7 @@ Se aparecer um URL num ficheiro de markdown, será transformado numa ligação c
 - com marcas
 
 
-##### <a name="unordered-list-with-an-embedded-lists"></a>Lista não ordenada com listas incorporadas
+#### <a name="unordered-list-with-an-embedded-lists"></a>Lista não ordenada com listas incorporadas
 
 - Esta 
 - lista 
