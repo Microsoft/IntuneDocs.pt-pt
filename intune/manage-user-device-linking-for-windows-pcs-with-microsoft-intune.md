@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f4dad2d22b742b62ca35bd7fb98c7f7e8241cbb4
-ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.openlocfilehash: 0eca9dfddbf9ea2c68cf58b1da64d9b046df7e77
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67402906"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353632"
 ---
 # <a name="manage-user-device-linking-for-windows-pcs"></a>Gerir a associação utilizador-dispositivo para PCs Windows
 
@@ -32,7 +32,7 @@ As informações neste tópico aplicam-se apenas a computadores Windows que est�
 
 Antes de poder implementar software para um utilizador, tem de associar o utilizador a um PC. Pode associar um utilizador a múltiplos PCs, mas cada PC só pode ser associado a um utilizador. Os utilizadores são automaticamente associados a quaisquer PCs que inscrevam no Intune através do portal da empresa.
 
-Para obter mais informações sobre o utilizador primário de um dispositivo, consulte [utilizador primário do Find](find-primary-user.md).
+Para obter mais informações sobre o usuário primário de um dispositivo, consulte [localizar usuário primário](find-primary-user.md).
 
 Para associar um utilizador a um PC:
 
@@ -46,13 +46,13 @@ Para associar um utilizador a um PC:
 
    - Para deixar o PC associado ao utilizador atual, se existir um, selecione **Cancelar**.
 
-   - Para remover a associação ao utilizador atual, se existir um, escolha <strong>remover associação **&gt;** OK</strong>.
+   - Para remover o link para o usuário atual, se houver um, escolha <strong> **&gt;** remover link ok</strong>.
 
    - Para associar o PC a um novo utilizador, selecione um utilizador na lista **Todos os utilizadores**. Confirme que os dados do utilizador estão corretos e, em seguida, escolha **OK**.
 
 > [!TIP]
 > Se pretender restringir a capacidade dos próprios utilizadores finais se ligarem a PCs, ative a opção **Restringir a capacidade dos próprios utilizadores se ligarem a PCs** na política **Definições de Agente do Microsoft Intune**.
 
-### <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte também
 
 [Tarefas de gestão comuns de PCs Windows com o cliente de software do Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
