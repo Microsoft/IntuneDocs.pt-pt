@@ -17,19 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 32a8fb7345a955629c3aa3073f02602fb057c99a
-ms.sourcegitcommit: 2614d1b08b8a78cd792aebd2ca9848f391df8550
+ms.openlocfilehash: 54d9fa1016ff39fcf1e7da9c21391ce70f7acaac
+ms.sourcegitcommit: e451295ca3ee3efc31bf9ee360e599b28ef643ea
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67794255"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67863090"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-fully-managed-devices-preview"></a>Configurar o registro do Intune de dispositivos Android Enterprise totalmente gerenciados (versão prévia)
 
 Dispositivos Android Enterprise totalmente gerenciados são dispositivos de propriedade corporativa associados a um único usuário e usados exclusivamente para uso de trabalho e não pessoal. Os administradores podem gerenciar todo o dispositivo e impor controles de política não disponíveis para perfis de trabalho, como:
-- permitir instalação de aplicativo somente de Google Play gerenciados
-- bloquear a desinstalação de aplicativos gerenciados
-- impedir que os usuários redefinam dispositivos e assim por diante.
+- Permitir instalação de aplicativo somente de Google Play gerenciados.
+- Bloquear a desinstalação de aplicativos gerenciados.
+- Impedir que os usuários redefinam dispositivos e assim por diante.
 
 O Intune ajuda você a implantar aplicativos e configurações em dispositivos Android Enterprise, incluindo dispositivos Android Enterprise totalmente gerenciados. Para obter detalhes específicos sobre o Android Enterprise, veja [Android Enterprise requirements](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012) (Requisitos empresariais do Android).
 
@@ -67,7 +67,7 @@ Quando essa configuração é definida como **Sim**, ela fornece um token de reg
 Agora você pode [registrar seus dispositivos totalmente gerenciados](android-dedicated-devices-fully-managed-enroll.md).
 
 ## <a name="considerations-for-this-preview-feature"></a>Considerações para este recurso de visualização
-Essa visualização pública inclui um conjunto principal de recursos para o conjunto de soluções totalmente gerenciadas do Android Enterprise. Queremos saber mais sobre sua experiência usando os recursos de visualização usando qualquer um dos seus canais de comunicação atuais com a equipe [](https://microsoftintune.uservoice.com/forums/291681-ideas?category_id=210853)(como UserVoice).
+Essa visualização pública inclui um conjunto principal de recursos para o conjunto de soluções totalmente gerenciadas do Android Enterprise. Queremos saber mais sobre sua experiência usando os recursos de visualização usando qualquer um dos seus canais de comunicação atuais com a equipe (como [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas?category_id=210853)).
 
 Esta versão prévia dá suporte aos seguintes recursos para dispositivos Android Enterprise totalmente gerenciados:
 - Registro de dispositivo usando NFC, entrada de token, código QR e Zero Touch
