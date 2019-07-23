@@ -4,7 +4,7 @@ description: O Microsoft 365 Enterprise inclui o Microsoft Intune. Veja como o I
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/12/2019
+ms.date: 07/22/2019
 ms.topic: conceptual
 audience: ITPro
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f476c3129f3f3da4cde98fd0cd9960c223ffd6ae
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 8525dd143a8e08f6915fa90dff0d51d6632eceea
+ms.sourcegitcommit: 8023ba7d42e61bd37305c69f52a649cf83bf72e2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67884259"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68387310"
 ---
 # <a name="what-is-device-management"></a>O que é a gestão de dispositivos? 
 
@@ -73,11 +73,11 @@ Também pode utilizar uma combinação de [MDM e MAM](https://docs.microsoft.com
 
 Quando configurar o Intune, também poderá optar por trabalhar exclusivamente no portal do Azure ou por utilizar o Intune e o Microsoft 365 em conjunto para gerir dispositivos. [Migrar o gerenciamento de dispositivos móveis para o Intune no portal do Azure](https://www.microsoft.com/itshowcase/Article/Content/1042/Migrating-mobile-device-management-to-Intune-in-the-Azure-portal) é um estudo de caso de ti da Microsoft. Nesse estudo de caso, veja como a ti da Microsoft escolheu uma abordagem moderna de gerenciamento de dispositivos e leia as lições aprendidas.
 
-## <a name="simplify-it-tasks-using-the-device-management-dashboard"></a>Simplifique as tarefas TI com o dashboard de Gestão de Dispositivos
+## <a name="simplify-it-tasks-using-the-device-management-specialist-workspace"></a>Simplificar tarefas de ti usando o espaço de trabalho de especialista de gerenciamento de dispositivos
 
-O [dashboard de Gestão de Dispositivos](https://devicemanagement.portal.azure.com/) inclui tudo o que precisa para gerir e concluir tarefas para os seus dispositivos móveis. Este dashboard contém os serviços utilizados para a gestão de dispositivos, incluindo o Intune e o Azure Active Directory, bem como para gerir aplicações cliente. 
+O [espaço de trabalho do especialista em gerenciamento de dispositivos](https://devicemanagement.portal.azure.com/) é uma loja única para gerenciar e concluir tarefas para seus dispositivos móveis. Esse espaço de trabalho inclui os serviços usados para o gerenciamento de dispositivos, incluindo o Intune e o Azure Active Directory, e também para gerenciar aplicativos cliente. 
 
-No dashboard de Gestão de Dispositivos, pode:
+No espaço de trabalho especialista em gerenciamento de dispositivos, você pode:
 
 - [Inscrever dispositivos](https://docs.microsoft.com/intune/device-enrollment)
 - [Definir a conformidade do dispositivo](https://docs.microsoft.com/intune/device-compliance-get-started)

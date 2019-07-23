@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b6cac9f10abf1347964ac8379938cb146877df56
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: 9b995841152ee7290e41eed7988ff2b52b6bc66c
+ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68353380"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68375233"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Solucionar problemas de registro de dispositivo no Microsoft Intune
 
@@ -69,7 +69,7 @@ Verifique se o utilizador não possui um número de dispositivos atribuídos sup
 
 3. Se o número de dispositivos inscritos do utilizador for igual à respetiva restrição de limite de dispositivos, o utilizador não poderá inscrever mais dispositivos até:
     - [Os dispositivos existentes serem removidos](devices-wipe.md) ou
-    - Aumentar o limite de dispositivos ao [definir restrições de dispositivos](enrollment-restrictions-set.md#set-device-limit-restrictions).
+    - Aumentar o limite de dispositivos ao [definir restrições de dispositivos](enrollment-restrictions-set.md).
 
 Para evitar atingir limites de dispositivos, certifique-se de que remove os registos de dispositivos obsoletos.
 

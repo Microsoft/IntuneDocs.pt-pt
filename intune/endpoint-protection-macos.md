@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d110013c10f0330c0edbbf230c508009fb47b2a6
-ms.sourcegitcommit: 11a31cd39b727f2254e2705b07d18924e103bd2e
+ms.openlocfilehash: 3a885abfdd7f23f453f03c63fdb0086bed40a7b1
+ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68341309"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68375031"
 ---
 # <a name="macos-endpoint-protection-settings-in-intune"></a>Configurações do MacOS Endpoint Protection no Intune  
 
@@ -92,18 +92,17 @@ Para obter mais informações sobre as configurações do Apple FileVault, consu
   - **Tipo de chave de recuperação**  
     Chaves de recuperação de *chave pessoal* são criadas para dispositivos. Defina as configurações a seguir para a chave pessoal.  
 
-     - **Local da chave de recuperação pessoal** – especifique uma mensagem curta para o usuário que explica como eles podem recuperar sua chave de recuperação pessoal. Esse texto é inserido na mensagem que o usuário vê ao habilitar o FileVault.  
+    - **Local da chave de recuperação pessoal** – especifique uma mensagem curta para o usuário que explica como eles podem recuperar sua chave de recuperação pessoal. Esse texto é inserido na mensagem que o usuário vê ao habilitar o FileVault.  
       
-     - **Rotação de chave de recuperação pessoal** – especifique com que frequência a chave de recuperação pessoal de um dispositivo será girada. Você pode selecionar o padrão **não configurado**ou um valor de **1** a **12** meses.  
+    - **Rotação de chave de recuperação pessoal** – especifique com que frequência a chave de recuperação pessoal de um dispositivo será girada. Você pode selecionar o padrão **não configurado**ou um valor de **1** a **12** meses.  
 
-  - **Adiar FileVault até sair** 
+  - **Adiar FileVault até sair**  
     > [!NOTE]
     > O suporte para FileVault é limitado até que a versão de julho conclua a distribuição em alguns dias. Até que a distribuição seja concluída, se você configurar o FileVault, você deverá definir *Defer FileVault até que a saída* seja **habilitada**.   
 
     FileVault não será habilitado até que o usuário saia. Um usuário local ou usuário de conta móvel será solicitado a habilitar o FileVault na saída ou na próxima entrada.  
     - **Não configurado**  
     - **Desabilitar**  
-    
     **Padrão**: Não configurado  
 
 
@@ -116,7 +115,7 @@ Para obter mais informações sobre as configurações do Apple FileVault, consu
       **Padrão**: Não configurado  
 
     - **Número de vezes com permissão para ignorar**  
-      Defina o número de vezes que um usuário pode ignorar prompts para habilitar FileVault antes que FileVault seja necessário para que o usuário entre.  
+    Defina o número de vezes que um usuário pode ignorar prompts para habilitar FileVault antes que FileVault seja necessário para que o usuário entre.  
 
       - **Não configurado** -a criptografia no dispositivo é necessária antes que a próxima entrada seja permitida.  
       -  **1** a **10** -permite que um usuário ignore o prompt de 1 a 10 vezes antes de exigir a criptografia no dispositivo.  

@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d976b08ac7943c03b8cb82bceb61cb7c5385f70e
-ms.sourcegitcommit: 11a31cd39b727f2254e2705b07d18924e103bd2e
+ms.openlocfilehash: a04a8b9f1973479fd0695ad0e782488fdef43d10
+ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68341357"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68375146"
 ---
 # <a name="monitor-device-encryption"></a>Monitor device encryption (Monitorizar encriptação de dispositivos)  
 
@@ -47,14 +47,14 @@ O painel relatório de criptografia exibe uma lista dos dispositivos que você g
 - **Sistema operacional** – a plataforma do dispositivo, como Windows ou MacOS.  
 - **Versão do sistema operacional** – a versão do Windows ou MacOS no dispositivo.  
 - **Versão do TPM** *(Aplica-se somente ao Windows 10)* – a versão do chip do Trusted Platform Module (TPM) no dispositivo Windows 10.  
-- **Prontidão de criptografia** – uma avaliação da preparação dos dispositivos para dar suporte a uma tecnologia de criptografia aplicável, como o BitLocker ou a criptografia FileVault. Os dispositivos são identificados como:
+- **Prontidão de criptografia** – uma avaliação da preparação dos dispositivos para dar suporte a uma tecnologia de criptografia aplicável, como o BitLocker ou a criptografia FileVault. Os dispositivos são identificados como:  
   - **Pronto**: O dispositivo pode ser criptografado usando a política de MDM, que exige que o dispositivo atenda aos seguintes requisitos:  
     
-    **Para dispositivos MacOS**:
-    - MacOS versão 10,13 ou posterior
-
-    **Para dispositivos Windows 10**:
-    - Versão 1703 ou posterior, do *Business*, *Enterprise*, *education*ou da versão 1809 ou posterior do *pro* 
+    **Para dispositivos MacOS**:  
+    - MacOS versão 10,13 ou posterior  
+    
+    **Para dispositivos Windows 10**:  
+    - Versão 1703 ou posterior, do *Business*, *Enterprise*, *education*ou da versão 1809 ou posterior do *pro*  
     - O dispositivo deve ter um chip TPM  
     
     Para obter mais informações, consulte o [provedor de serviços de configuração do BitLocker (CSP)](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) na documentação do Windows.  
@@ -93,10 +93,8 @@ Quando você seleciona um dispositivo no relatório de criptografia, o Intune ex
 - **Resumo do estado do perfil** – um resumo dos perfis que se aplicam a este dispositivo. O resumo representa a condição menos favorável nos perfis aplicáveis. Por exemplo, se apenas um dos vários perfis aplicáveis resultar em um erro, o *Resumo do estado do perfil* exibirá um *erro*.  
 
 - **Detalhes do status** – detalhes avançados sobre o estado de criptografia do dispositivo.  
-
   > [!NOTE]
   > O suporte para FileVault é limitado até que a versão de julho conclua a distribuição em alguns dias. Até que a distribuição seja concluída, os detalhes de status do dispositivo e os detalhes de criptografia do dispositivo para macOS podem não ser exibidos com precisão no relatório de criptografia.
-
 
   > [!IMPORTANT]  
   > Para dispositivos Windows 10, o Intune mostra *detalhes de status* somente para dispositivos que executam a *atualização do Windows 10 de abril de 2019* ou posterior.  
@@ -106,8 +104,7 @@ Quando você seleciona um dispositivo no relatório de criptografia, o Intune ex
   Veja a seguir exemplos dos detalhes de status que o Intune pode relatar:  
   
   **macOS**:
-  
-  - O perfil não pode ser instalado no momento, pois estamos aguardando um pré-requisito. 
+  - O perfil não pode ser instalado no momento, pois estamos aguardando um pré-requisito.  
  
     *Aconselhável Esse resultado não representa necessariamente uma condição de erro, mas um estado temporário que pode ser devido ao tempo no dispositivo em que a caução para chaves de recuperação deve ser configurada antes que a solicitação de criptografia seja enviada para o dispositivo. Isso também pode indicar que o dispositivo permanece bloqueado ou não fez check-in no Intune recentemente. Por fim, como a criptografia FileVault não é iniciada até que um dispositivo seja conectado (carregando), é possível que um usuário receba uma chave de recuperação para um dispositivo que ainda*não esteja criptografado.  
 
@@ -129,21 +126,21 @@ Quando você seleciona um dispositivo no relatório de criptografia, o Intune ex
 
   **Windows 10**:  
   - A política do BitLocker requer consentimento do usuário para iniciar o assistente de Criptografia de Unidade de Disco BitLocker para iniciar a criptografia do volume do sistema operacional, mas o usuário não consentiu.  
-
+  
   - O método de criptografia do volume do sistema operacional não corresponde à política do BitLocker.  
-
+  
   - A política de BitLocker requer um protetor TPM para proteger o volume do sistema operacional, mas um TPM não é usado.  
-
+  
   - A política do BitLocker requer um protetor somente TPM para o volume do sistema operacional, mas a proteção do TPM não é usada.  
-
+  
   - A política do BitLocker requer proteção TPM + PIN para o volume do sistema operacional, mas um protetor TPM + PIN não é usado.  
-
+  
   - A política do BitLocker requer proteção de chave TPM + inicialização para o volume do sistema operacional, mas um protetor de chave TPM + Startup não é usado.  
-    
+  
   - A política do BitLocker requer TPM + PIN + proteção de chave de inicialização para o volume do sistema operacional, mas um TPM + PIN + protetor de chave de inicialização não é usado.  
-
+  
   - O volume do sistema operacional está desprotegido.  
-   
+  
   - Falha no backup da chave de recuperação.  
   
   - Uma unidade fixa está desprotegida.  
@@ -171,7 +168,7 @@ Esse relatório pode ser usado para identificar problemas de grupos de dispositi
 ## <a name="filevault-recovery-keys"></a>Chaves de recuperação FileVault   
 Quando o Intune criptografa primeiro um dispositivo macOS com FileVault, uma chave de recuperação pessoal é criada. Após a criptografia, o dispositivo exibe a chave pessoal uma única vez para o usuário final.  
  
-Para dispositivos gerenciados, o Intune pode caução em uma cópia da chave de recuperação pessoal. A caução de chaves permite que os administradores do Intune giram as chaves para ajudar a proteger os dispositivos e os usuários a recuperarem uma chave de recuperação pessoal perdida ou girada.    
+Para dispositivos gerenciados, o Intune pode caução em uma cópia da chave de recuperação pessoal. A caução de chaves permite que os administradores do Intune giram as chaves para ajudar a proteger os dispositivos e os usuários a recuperarem uma chave de recuperação pessoal perdida ou girada.  
  
 O Intune dá suporte a várias opções para girar e recuperar as chaves de recuperação pessoal. Um motivo para girar uma chave é se a chave pessoal atual for perdida em risco.  
  
@@ -195,11 +192,12 @@ O Intune dá suporte a várias opções para girar e recuperar as chaves de recu
 ### <a name="recover-recovery-keys"></a>Recuperar chaves de recuperação  
 - **Administrador**: Os administradores não podem exibir chaves de recuperação pessoal para dispositivos que são criptografados com o FileVault.  
 
-- **Usuário final**: Os usuários finais usam o site do portal portalCompany da empresa de qualquer dispositivo para exibir a chave de recuperação pessoal atual para qualquer um de seus dispositivos gerenciados.  Não é possível exibir as chaves de recuperação do aplicativo Portal da Empresa.  
+- **Usuário final**: Os usuários finais usam o site Portal da Empresa de qualquer dispositivo para exibir a chave de recuperação pessoal atual para qualquer um de seus dispositivos gerenciados. Não é possível exibir as chaves de recuperação do aplicativo Portal da Empresa.  
 
  
   Para exibir uma chave de recuperação:  
-  1. Entre no site do *portal do portal da empresa* da empresa do Intune de qualquer dispositivo.  2. No portal, vá para **dispositivos** e selecione o dispositivo MacOS que é criptografado com FileVault. dispositivo que tem o FileVault habilitado.  
+  1. Entre no site do *portal da empresa do Intune* em qualquer dispositivo.  
+  2. No portal, vá para **dispositivos** e selecione o dispositivo MacOS que é criptografado com FileVault.  
   3. Selecione **obter chave de recuperação**. A chave de recuperação atual é exibida.  
   
      Em um iPhone, você deve selecionar os *três* pontos antes que a opção *obter chave de recuperação* seja exibida.  
