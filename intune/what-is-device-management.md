@@ -15,12 +15,12 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8525dd143a8e08f6915fa90dff0d51d6632eceea
-ms.sourcegitcommit: 8023ba7d42e61bd37305c69f52a649cf83bf72e2
+ms.openlocfilehash: 5be25e9ab88f4dd44399d6ddc37cfc25955475ba
+ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68387310"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68427300"
 ---
 # <a name="what-is-device-management"></a>O que é a gestão de dispositivos? 
 
@@ -59,7 +59,7 @@ Uma das principais tarefas das soluções de gestão de dispositivos consiste em
 - O **Windows Defender** inclui muitas funcionalidades de segurança para ajudar a proteger dispositivos com o Windows 10. A utilização conjunta do Intune e do Windows Defender permite, por exemplo: 
 
   - Ativar o [Windows Defender SmartScreen](https://docs.microsoft.com/intune/endpoint-protection-windows-10) para procurar atividades suspeitas em ficheiros e aplicações em dispositivos móveis 
-  - Use a [ATP (proteção avançada contra ameaças) do Windows Defender](https://docs.microsoft.com/intune/advanced-threat-protection) para ajudar a evitar violações de segurança em dispositivos móveis. Além de ajudar a limitar o impacto de uma violação de segurança, bloqueando um usuário dos recursos corporativos.
+  - Use a [ATP (proteção avançada contra ameaças) do Microsoft defender](https://docs.microsoft.com/intune/advanced-threat-protection) para ajudar a evitar violações de segurança em dispositivos móveis. Além de ajudar a limitar o impacto de uma violação de segurança, bloqueando um usuário dos recursos corporativos.
 
 - O **acesso condicional** é um recurso do Azure Active Directory e se integra perfeitamente com o Intune. Usando o [acesso condicional](https://docs.microsoft.com/intune/conditional-access), verifique se somente dispositivos em conformidade têm permissão de acesso a email, SharePoint e outros aplicativos. 
 
@@ -73,11 +73,11 @@ Também pode utilizar uma combinação de [MDM e MAM](https://docs.microsoft.com
 
 Quando configurar o Intune, também poderá optar por trabalhar exclusivamente no portal do Azure ou por utilizar o Intune e o Microsoft 365 em conjunto para gerir dispositivos. [Migrar o gerenciamento de dispositivos móveis para o Intune no portal do Azure](https://www.microsoft.com/itshowcase/Article/Content/1042/Migrating-mobile-device-management-to-Intune-in-the-Azure-portal) é um estudo de caso de ti da Microsoft. Nesse estudo de caso, veja como a ti da Microsoft escolheu uma abordagem moderna de gerenciamento de dispositivos e leia as lições aprendidas.
 
-## <a name="simplify-it-tasks-using-the-device-management-specialist-workspace"></a>Simplificar tarefas de ti usando o espaço de trabalho de especialista de gerenciamento de dispositivos
+## <a name="simplify-it-tasks-using-the-device-management-admin-center"></a>Simplificar tarefas de ti usando o centro de administração do gerenciamento de dispositivos
 
-O [espaço de trabalho do especialista em gerenciamento de dispositivos](https://devicemanagement.portal.azure.com/) é uma loja única para gerenciar e concluir tarefas para seus dispositivos móveis. Esse espaço de trabalho inclui os serviços usados para o gerenciamento de dispositivos, incluindo o Intune e o Azure Active Directory, e também para gerenciar aplicativos cliente. 
+O [centro de administração do gerenciamento de dispositivos](https://devicemanagement.portal.azure.com/) é uma loja única para gerenciar e concluir tarefas para seus dispositivos móveis. Esse espaço de trabalho inclui os serviços usados para o gerenciamento de dispositivos, incluindo o Intune e o Azure Active Directory, e também para gerenciar aplicativos cliente. 
 
-No espaço de trabalho especialista em gerenciamento de dispositivos, você pode:
+No centro de administração do gerenciamento de dispositivos, você pode:
 
 - [Inscrever dispositivos](https://docs.microsoft.com/intune/device-enrollment)
 - [Definir a conformidade do dispositivo](https://docs.microsoft.com/intune/device-compliance-get-started)

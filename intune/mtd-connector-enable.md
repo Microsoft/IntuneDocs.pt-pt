@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 04/30/2019
+ms.date: 07/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,19 +17,30 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a2084ad1ec0deefd24c0d61f69d99ee11149af96
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 4dd77be45c21db53dd82322049d377ced247c4c7
+ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67882740"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68427349"
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune"></a>Ativar o conector da Defesa Contra Ameaças para Dispositivos Móveis no Intune
 
 > [!NOTE] 
 > Este tópico aplica-se a todos os parceiros de Defesa Contra Ameaças para Dispositivos Móveis.
 
-Durante a configuração da Defesa Contra Ameaças para Dispositivos Móveis (MTD), configurou uma política para classificar ameaças na sua consola do parceiro MTD e criou a política de conformidade de dispositivos no Intune. Se já tiver configurado o conector do Intune na consola do parceiro MTD, pode agora ativar a ligação da MTD no Intune.
+Durante a configuração da Defesa Contra Ameaças para Dispositivos Móveis (MTD), configurou uma política para classificar ameaças na sua consola do parceiro MTD e criou a política de conformidade de dispositivos no Intune. Se você já configurou o conector do Intune no console do parceiro do MTD, agora você pode habilitar a conexão MTD para aplicativos de parceiro MTD.
+
+Quando você integra um novo aplicativo à defesa contra ameaças móveis do Intune e habilita a conexão, o Intune cria uma política de acesso condicional clássica em Azure Active Directory. Cada aplicativo MTD que você integra, como o [defender ATP](advanced-threat-protection.md) ou qualquer um de nossos [parceiros MTD](mobile-threat-defense.md#mobile-threat-defense-partners)adicionais, cria uma nova política de acesso condicional clássico.  Essas políticas podem ser ignoradas, mas não devem ser editadas, excluídas ou desabilitadas.
+
+Políticas de acesso condicional clássico para aplicativos MTD: 
+
+- São usados pelo Intune MTD para exigir que os dispositivos sejam registrados no Azure AD para que tenham uma ID de dispositivo. A ID é necessária para que os dispositivos e possam relatar com êxito seu status ao Intune.  
+- São diferentes das políticas de acesso condicional que você pode criar para ajudar a gerenciar o MTD.
+- Por padrão, não interaja com outras políticas de acesso condicional usadas para avaliação.  
+
+Para exibir políticas de acesso condicional clássico, no [Azure](https://portal.azure.com/#home), acesse **Azure Active Directory** > **políticas clássicas**de**acesso** > condicional.
+
 
 ## <a name="to-enable-the-mtd-connector"></a>Para ativar o conector da MTD
 

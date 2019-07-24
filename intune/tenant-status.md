@@ -1,7 +1,7 @@
 ---
-title: Página de estado do inquilino do Microsoft Intune
+title: Página de status do Microsoft Intune locatário
 titleSuffix: Microsoft Intune
-description: Utilize a página de estado do inquilino do Intune para ver os detalhes de inquilino importante sem sair do portal do Intune
+description: Use a página status do locatário do Intune para exibir detalhes importantes do locatário sem sair do portal do Intune
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -14,65 +14,65 @@ ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2d3b6aeb7efc60d32891f4b1c69b387a61a2bc25
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 946d46baf17a5ffdd4b567adca32b651cacb72bb
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040520"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882229"
 ---
-# <a name="intune-tenant-status-page"></a>Página de estado do inquilino do Intune
-A página de estado do inquilino é um hub centralizado, onde pode ver os detalhes atuais e importantes sobre o seu inquilino. Os detalhes incluem a disponibilidade de licença e uso, estado do conector e as comunicações importantes sobre o serviço Intune.  
+# <a name="intune-tenant-status-page"></a>Página status do locatário do Intune
+A página de status do locatário é um hub centralizado no qual você pode exibir os detalhes atuais e importantes sobre seu locatário. Os detalhes incluem disponibilidade e uso da licença, status do conector e comunicações importantes sobre o serviço do Intune.  
 
-Para ver o dashboard, no portal do Azure, aceda a **Intune > Estado do inquilino**.  Estado do inquilino é apresentado no **ajudar e o grupo de suporte**.  
+Para exibir o painel, na portal do Azure acesse o **Intune > status do locatário**.  O status do locatário aparece no **grupo ajuda e suporte**.  
 
 A página é dividida em quatro áreas:
 
-## <a name="tenant-details"></a>Detalhes do inquilino
-Detalhes de inquilino fornecer em rapidamente informações sobre o seu inquilino. Ver detalhes como nome do seu inquilino e localização, a autoridade de MDM e o número de versão do serviço de inquilinos. O número de versão do serviço é uma ligação que abre o *o que há de novo no Intune* artigo sobre documentos da Microsoft. Na *o que há de novo*, pode ler sobre as mais recentes funcionalidades e atualizações para o serviço do Intune.  
+## <a name="tenant-details"></a>Detalhes do locatário
+Os detalhes do locatário fornecem informações rápidas sobre seu locatário. Exiba detalhes como o nome do locatário e o local, sua autoridade de MDM e o número de versão do serviço de locatários. O número de versão do serviço é um link que abre o artigo *novidades no Intune* no Microsoft docs. Nas novidades, você pode ler sobre os recursos e as atualizações mais recentes para o serviço do Intune.  
 
-Esta secção também fornece informações básicas sobre as licenças disponíveis e quantas estão atribuídas a utilizadores. Licenças para dispositivos não são apresentadas.
+Esta seção também fornece informações básicas sobre suas licenças disponíveis e quantos são atribuídos aos usuários. As licenças para dispositivos não são mostradas.
 
-## <a name="connector-status"></a>Estado do conector
-Estado do conector é um local de um único local para rever o estado de todos os conectores disponíveis para o Intune.  
+## <a name="connector-status"></a>Status do conector
+Status do conector é um local de uma única parada para examinar o status de todos os conectores disponíveis para o Intune.  
 
 Os conectores são:
-- **Ligações que configurar para serviços externos**. Por exemplo, o *Apple Volume Purchase Program* serviço ou o *Windows Autopilot* serviço.  Estado para este tipo de conector baseia-se a hora da última sincronização efetuada com êxito.
-- **Certificados ou as credenciais que são necessárias para ligar a um serviço externo de não-gerenciado**, como *Apple Push Notification Services* certificados (APNS). Estado para este tipo de conector baseia-se o carimbo de hora de expiração do certificado ou credenciais.  
+- **Conexões que você configura para serviços externos**. Por exemplo, o serviço de *Apple Volume Purchase Program* ou o serviço de *piloto automático do Windows* .  O status desse tipo de conector é baseado na última hora de sincronização bem-sucedida.
+- **Certificados ou credenciais que são necessários para se conectar a um serviço externo não gerenciado**, como certificados de APNS ( *Apple Push Notification Services* ). O status desse tipo de conector é baseado no carimbo de data/hora de expiração do certificado ou da credencial.  
 
-Por predefinição, a exibição mostra até cinco conectores. Pode selecionar **ver todos os conectores** expandir essa lista para ver todos os conectores disponíveis, incluindo os conectores que ainda não configurou para utilização.  
+Por padrão, a exibição mostra até cinco conectores. Você pode selecionar **Ver todos os conectores** para expandir esta lista para exibir todos os conectores disponíveis, incluindo conectores que você não configurou para uso.  
 
-Conectores de mau estado de funcionamento apresentam sempre na parte superior da lista. Em seguida, estão conectores com avisos e, em seguida, a lista de conectores em bom estado. Os conectores que ainda não configurou aparecem em último lugar.
+Os conectores não íntegros sempre são exibidos na parte superior da lista. Em seguida, há conectores com avisos e, em seguida, a lista de conectores íntegros. Os conectores que você ainda não configurou aparecem por último.
 
-Quando existe mais do que um único conector de qualquer tipo, o estado é um resumo de todos os conectores do mesmo. O estado de bom estado de funcionamento, pelo menos, de qualquer conector único é utilizado como o estado de funcionamento para o grupo.  
+Quando há mais de um único conector de um tipo, o status é um resumo para todos os mesmos conectores. O status menos íntegro de qualquer conector único é usado como a integridade do grupo.  
 
-**Estado do conector:**
-- **Unhealthy:**
-    - O certificado ou a credencial expirou
-    - A última sincronização foi três ou mais dias atrás
-- **Aviso:**
-    - O certificado ou a credencial expira dentro de sete dias
-    - A última sincronização foi há mais de um dia
-- **Bom estado de funcionamento:**
-    - O certificado ou a credencial não expira nos próximos sete dias
-    - A última sincronização foi há menos de um dia  
+**Status do conector:**
+- **Não íntegro**
+  - O certificado ou a credencial expirou
+  - A última sincronização ocorreu há três ou mais dias
+- **Alerta**
+  - O certificado ou a credencial expirará dentro de sete dias
+  - A última sincronização ocorreu há mais de um dia
+- **Íntegro**
+  - O certificado ou a credencial não expirará nos próximos sete dias
+  - A última sincronização foi menor que um dia atrás  
 
-Quando seleciona um conector na lista, o portal apresenta a página de portal que é relevante para criar ou configurar esse conector.  Por exemplo, quando seleciona a **data de expiração de VPP** conector, o **iOS compradas em volume Tokens do programa** onde pode ver mais detalhes sobre esse conector de é aberta a página. Em seguida, pode criar uma nova configuração ou editar e corrigir problemas com um já existente.  
+Quando você seleciona um conector na lista, o portal apresenta a página do portal que é relevante para criar ou configurar esse conector.  Por exemplo, quando você seleciona o conector de data de expiração do **VPP** , a página tokens do **programa adquiridos por volume do IOS** é aberta, na qual você pode exibir mais detalhes sobre esse conector. Você pode criar uma nova configuração ou editar e corrigir problemas com um existente.  
 
 ## <a name="intune-service-health"></a>Estado de funcionamento do serviço do Intune  
-Pode ver os detalhes para incidentes activos e consultorias sem ter de navegar para o Dashboard de estado de funcionamento de serviço do Microsoft 365 ou o Centro de mensagens, ambos localizados na [Centro de administração do Microsoft 365](https://admin.microsoft.com). Apenas os incidentes onde impacto tem sido observado para afetar o seu inquilino são apresentados.  
+Você pode exibir detalhes de incidentes e avisos ativos sem precisar navegar até o painel de integridade do serviço Microsoft 365 ou o centro de mensagens, ambos localizados no [centro de administração do Microsoft 365](https://admin.microsoft.com). Somente incidentes em que o impacto foi observado para afetar seu locatário são mostrados.  
 
-Quando seleciona um incidente, são apresentados os detalhes do incidente diretamente na página de estado do inquilino. Para ver os passados consultorias e incidentes, selecione **Consulte anteriores incidentes/Consultorias**. Abre o Centro de administração do Microsoft 365 e, em seguida, pode ver as consultorias e incidentes dos últimos 30 dias para o seu inquilino.  
+Quando você seleciona um incidente, os detalhes do incidente são apresentados diretamente na página status do locatário. Para exibir as consultas e os incidentes anteriores, selecione **Ver incidentes/avisos anteriores**. O centro de administração do Microsoft 365 é aberto e você pode exibir avisos e incidentes dos últimos 30 dias para seu locatário.  
 
-Para ver as informações de *Intune Service Health*, a conta tem de ter o **Administrador Global** ou **administrador de serviços** função no Azure Active Directory ou o Centro de administração do Microsoft 365. Para atribuir estas permissões, inicie sessão para o [Centro de administração do Microsoft 365](https://admin.microsoft.com) com permissões de Administrador Global. Selecione **utilizadores > utilizadores ativos**e, em seguida, selecione a conta que precisa de acesso. Selecione **edite** para funções, selecione *administrador de serviços* ou *Administrador Global*e, em seguida **guardar** sua edição para atribuir a permissões.  
+Para exibir informações sobre a *integridade do serviço do Intune*, sua conta deve ter a função **administrador global** ou **administrador de serviços** no Azure Active Directory ou no centro de administração Microsoft 365. Para atribuir essas permissões, entre no centro de [Administração do Microsoft 365](https://admin.microsoft.com) com permissões de administrador global. Selecione **usuários > usuários ativos**e, em seguida, selecione a conta que requer acesso. Selecione **Editar** para funções, selecione *administrador de serviços* ou *administrador global*e, em seguida, **salve** a edição para atribuir as permissões.  
 
-Só pode configurar suas preferências de comunicação para o estado de funcionamento do serviço Intune através do Centro de administração do Microsoft 365.
+Você só pode configurar suas preferências de comunicação para a integridade do serviço do Intune por meio do centro de administração Microsoft 365.
 
 ## <a name="intune-news"></a>Notícias do Intune  
-Ver informativas comunicações da equipa do serviço Intune sem ter de navegar para o Centro de mensagens do Office. Comunicações incluem mensagens sobre as alterações que ocorreram recentemente para o serviço do Intune ou que estão a caminho para o seu inquilino.  
+Exiba comunicações informativas da equipe de serviço do Intune sem precisar navegar até o centro de mensagens do Office. As comunicações incluem mensagens sobre alterações que ocorreram recentemente no serviço do Intune ou que estão no caminho do seu locatário.  
 
-Por predefinição, apresentam as últimas 10 mensagens de Active Directory. Para ver mensagens mais antigas, selecione **ver últimas mensagens** para abrir o *Centro de mensagens* no Centro de administração do Microsoft 365.  
+Por padrão, as últimas 10 mensagens ativas são exibidas. Para exibir mensagens mais antigas, selecione **Ver mensagens anteriores** para abrir o *centro de mensagens* no centro de administração Microsoft 365.  
 
-Para ver as informações de notícias do Intune, sua conta tem de ter o **Administrador Global** ou **administrador de serviço** função no Azure Active Directory, ou o **leitor do Centro de mensagens** função no Centro de administração do Microsoft 365.  Para atribuir esta permissão, inicie sessão para o [Centro de administração do Microsoft 365](https://admin.microsoft.com) com permissões de administrador. Selecione **utilizadores > utilizadores ativos**e, em seguida, selecione a conta que precisa de acesso. Selecione **editar** para *funções*, selecione *Equipes comunicações administrador*e, em seguida **guardar** sua edição para atribuir as permissões.  
+Para exibir informações de notícias do Intune, sua conta deve ter a função **administrador global** ou **administrador de serviços** no Azure Active Directory ou a função **leitor do centro de mensagens** no centro de administração do Microsoft 365.  Para atribuir essa permissão, entre no centro de [Administração do Microsoft 365](https://admin.microsoft.com) com permissões de administrador. Selecione **usuários > usuários ativos**e, em seguida, selecione a conta que requer acesso. Selecione **Editar** para *funções*, selecione *administrador de comunicações de equipes*e **salve** a edição para atribuir as permissões.  
 
-Só pode configurar suas preferências de comunicação de notícias do Intune através do Centro de administração do Microsoft 365.
+Você só pode configurar suas preferências de comunicação para as notícias do Intune por meio do centro de administração Microsoft 365.

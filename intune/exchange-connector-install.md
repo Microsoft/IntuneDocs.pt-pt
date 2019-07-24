@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7663009c7d45171ab6469f7f6e96b4c8f979b744
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: f55ecd98e047dbf77e6e8eb58284577078e21a61
+ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67883274"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68427323"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune"></a>Configurar o Exchange Connector local do Intune no Microsoft Intune
 As informações neste artigo o ajudarão a instalar e monitorar o Exchange Active Sync Connector local para o Intune.  Use o Exchange Connector local do Intune com suas políticas de [acesso condicional para permitir ou bloquear o acesso às suas caixas de correio locais do Exchange](conditional-access-exchange-create.md). 
@@ -152,8 +152,22 @@ A alta disponibilidade para o Exchange Connector local significa que o servidor 
 Para realizar o failover, depois que o conector cria uma conexão bem-sucedida com o Exchange usando a CAS especificada, o conector descobre CASs adicionais para a organização do Exchange. O conhecimento de CASs adicionais permite que o conector para failover para outra CAS, se houver um disponível, até que as CAS primárias se tornem disponíveis. Por padrão, a descoberta de CASs adicionais está habilitada. Você pode desativar o failover usando o seguinte procedimento:  
 1. No servidor onde o Exchange Connector está instalado, vá para%*ProgramData*% \ Microsoft\Windows Intune Exchange Connector. 
 2. Através de um editor de texto, abra **OnPremisesExchangeConnectorServiceConfiguration.xml**.
-3. Altere &lt;IsCasFailoverEnabled&gt;**true**&lt;/IsCasFailoverEnabled&gt; para &lt;IsCasFailoverEnabled&gt;**false**&lt;/IsCasFailoverEnabled&gt; para desativar a funcionalidade.    
+3. Altere &lt;IsCasFailoverEnabled&gt;**true**&lt;/IsCasFailoverEnabled&gt; para &lt;IsCasFailoverEnabled&gt;**false**&lt;/IsCasFailoverEnabled&gt; para desativar a funcionalidade.  
  
+## <a name="optional-performance-tuning-for-the-exchange-connector"></a>Ajuste de desempenho opcional para o Exchange Connector  
+
+Quando você dá suporte a 5.000 ou mais dispositivos com o Exchange ActiveSync, é possível definir uma configuração opcional para melhorar o desempenho do conector. O aumento do desempenho é atingido ao habilitar o Exchange a usar várias instâncias de um espaço de execução de comando do PowerShell. 
+
+Antes de fazer essa alteração, certifique-se de que a conta usada para executar o Exchange Connector não seja usada para outros fins de gerenciamento do Exchange. Isso ocorre porque o Exchange tem um limite de 18 espaços de execução por conta, e a maioria deles será usada pelo conector. 
+
+Essa alteração de desempenho não é adequada para conectores que são executados em hardware mais antigo ou mais lento.  
+
+1. No servidor onde o conector está instalado, abra o diretório de instalação de conectores.  O local padrão é o *C:\ProgramData\Microsoft\Windows Intune Exchange Connector*. 
+2. Edite o arquivo *OnPremisesExchangeConnectorServiceConfiguration. xml*.
+3. Localize **EnableParallelCommandSupport** e defina o valor como **true**:  
+     
+   \<EnableParallelCommandSupport > true\</EnableParallelCommandSupport >
+4. Salve o arquivo e reinicie o Microsoft Intune serviço do Exchange Connector.
 
 ## <a name="reinstall-the-on-premises-exchange-connector"></a>Reinstalar o Exchange Connector local
 Talvez seja necessário reinstalar um Exchange Connector. Como um único conector tem suporte para se conectar a cada organização do Exchange, se você instalar um segundo conector para uma organização, o novo conector que você instalar substituirá o conector original.
@@ -195,5 +209,5 @@ Pode forçar a execução de uma sincronização por parte do conector ao utiliz
    2. Selecione **Exchange local Access**.
    3. Selecione o conector que pretende sincronizar e, em seguida, selecione **Sincronização Rápida** ou **Sincronização Completa**.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Passos Seguintes
 [Criar uma política de acesso condicional para o Exchange local](conditional-access-exchange-create.md)

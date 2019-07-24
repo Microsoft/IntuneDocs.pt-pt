@@ -1,7 +1,7 @@
 ---
 title: APIs do Graph para configurar dispositivos no Microsoft Intune-Azure | Microsoft Docs
 titleSuffix: ''
-description: Consulte uma lista de todas as entidades de API do Graph com o CSP do Windows e o URI de deslocamento correspondentes em dispositivos Windows 10 e mais recentes usados ao configurar dispositivos no Microsoft Intune. Consulte a API de correspondência e o CSP para PCs compartilhados, Endpoint Protection, proteção avançada contra ameaças do Windows Defender, proteção de identidade, equipes do Windows 10, quiosque e Windows Update para empresas.
+description: Consulte uma lista de todas as entidades de API do Graph com o CSP do Windows e o URI de deslocamento correspondentes em dispositivos Windows 10 e mais recentes usados ao configurar dispositivos no Microsoft Intune. Consulte a API de correspondência e o CSP para PCs compartilhados, Endpoint Protection, proteção avançada contra ameaças do Microsoft defender, proteção de identidade, equipes do Windows 10, quiosque e Windows Update para empresas.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3732a4539c13ad05ae8c95621246429b7f38987e
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: 9db6be9c61455056f7ad32a9dba3fa6be9f6f5c3
+ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68354419"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68427273"
 ---
 # <a name="graph-apis-and-matching-windows-10-csps-used-in-intune"></a>APIs de grafo e CSPs correspondentes do Windows 10 usados no Intune
 
@@ -2983,7 +2983,7 @@ Para ver as versões do Windows 10 as APIs a seguir se aplicam, use a [referênc
 **URI de deslocamento**:/config/Update/SetDisablePauseUXAccess
 
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Passos seguintes
 
 - [Visão geral da configuração do dispositivo](device-profiles.md)
 - [Referência do provedor de serviços de configuração](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference) (abre outro site de documentos)
