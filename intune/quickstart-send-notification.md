@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/27/2019
+ms.date: 07/24/2019
 ms.topic: quickstart
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,25 +17,25 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bb175d2133cf2a7bc5b064c13afb7e252147c729
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 148320dc55ee044c057222a2316077396040882d
+ms.sourcegitcommit: d2ac912b834c4840de9cc92ba1815b6ecfbfb52b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044246"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68483033"
 ---
 # <a name="quickstart-send-notifications-to-noncompliant-devices"></a>Início rápido: Send notifications to noncompliant devices (Enviar notificações para dispositivos que não estejam em conformidade)
 
 Neste guia de início rápido, irá utilizar o Microsoft Intune para enviar uma notificação por e-mail para os membros da sua força de trabalho que tiverem dispositivos não conformes.
 
-Por predefinição, quando o Intune deteta um dispositivo não conforme, este marca imediatamente o dispositivo como não conforme. O Azure Active Directory (AAD) [acesso condicional](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) , em seguida, impede o dispositivo. Quando um dispositivo não está conforme, o Intune permite-lhe adicionar ações de não conformidade que lhe dão maior flexibilidade para decidir o que fazer. Por exemplo, pode conceder um período de tolerância aos utilizadores para que estes estejam em conformidade antes de bloquear dispositivos não conformes.
+Por predefinição, quando o Intune deteta um dispositivo não conforme, este marca imediatamente o dispositivo como não conforme. O [acesso condicional](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) do Azure Active Directory (AAD) bloqueia o dispositivo. Quando um dispositivo não está conforme, o Intune permite-lhe adicionar ações de não conformidade que lhe dão maior flexibilidade para decidir o que fazer. Por exemplo, pode conceder um período de tolerância aos utilizadores para que estes estejam em conformidade antes de bloquear dispositivos não conformes.
 
 Uma das ações que pode tomar quando os dispositivos não estão em conformidade é enviar um e-mail para esses utilizadores finais. Também pode personalizar uma notificação por e-mail antes de a enviar para os utilizadores finais. Mais concretamente, pode personalizar os destinatários, o assunto e o corpo da mensagem, incluindo o logótipo da empresa e as informações de contacto. O Intune também incluirá detalhes sobre o dispositivo não conforme na notificação por e-mail.
 
 Se não tiver uma subscrição do Intune, [inscreva-se numa conta de avaliação gratuita](free-trial-sign-up.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-- Quando utilizar políticas de conformidade do dispositivo para bloquear a recursos da empresa de dispositivos, acesso condicional do AAD tem de ser definido. Se já concluiu o guia de início rápido [Criar uma política de conformidade de dispositivo](quickstart-set-password-length-android.md), está a utilizar o Azure Active Directory. Para obter mais informações sobre o AAD, consulte [acesso condicional no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) e [formas comuns de utilizar o acesso condicional com o Intune](conditional-access-intune-common-ways-use.md).
+- Ao usar políticas de conformidade do dispositivo para bloquear dispositivos de recursos corporativos, o acesso condicional do AAD deve ser configurado. Se já concluiu o guia de início rápido [Criar uma política de conformidade de dispositivo](quickstart-set-password-length-android.md), está a utilizar o Azure Active Directory. Para obter mais informações sobre o AAD, consulte [acesso condicional em Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) e [maneiras comuns de usar o acesso condicional com o Intune](conditional-access-intune-common-ways-use.md).
 
 ## <a name="sign-in-to-intune"></a>Iniciar sessão no Intune
 
@@ -48,12 +48,12 @@ Para enviar um e-mail aos seus utilizadores, crie um modelo de mensagem de notif
 1. No Intune, selecione **Conformidade do dispositivo** > **Notificações** > **Criar notificação**. 
 2. Introduza as seguintes informações:
 
-   - **Nome**: *Administrador da Contoso*
+   - **Nome**: *Administrador da contoso*
    - **Assunto**: *Conformidade do dispositivo*
-   - **Mensagem**: *O dispositivo não está atualmente a cumprir os requisitos de conformidade de nossa organização.*
-   - **Cabeçalho do e-mail – incluir o logótipo da empresa**: Defina como **ativado** para mostrar o logótipo da sua organização.
-   - **Rodapé do e-mail – incluir o nome da empresa**: Defina como **ativado** para mostrar o nome da sua organização.
-   - **Rodapé do e-mail – incluir informações de contacto**: Defina como **ativado** para mostrar informações de contacto da sua organização.
+   - **Mensagem**: *No momento, o dispositivo não atende aos requisitos de conformidade de nossa organização.*
+   - **Cabeçalho do email – incluir o logotipo da empresa**: Defina como **habilitado** para mostrar o logotipo da sua organização.
+   - **Rodapé do email – incluir o nome da empresa**: Defina como **habilitado** para mostrar o nome da sua organização.
+   - **Rodapé do email – incluir informações de contato**: Defina como **habilitado** para mostrar as informações de contato da sua organização.
 
    ![Exemplo de uma mensagem de notificação de conformidade no Intune](./media/quickstart-send-notification-01.png)
 
@@ -74,7 +74,7 @@ Os seguintes passos descrevem como pode criar uma política de conformidade para
 2. Selecione **Políticas** > **Criar Política**.
 3. Introduza as seguintes informações:
 
-   - **Nome**: *Conformidade do Windows 10*
+   - **Nome**: *Conformidade com o Windows 10*
    - **Descrição**: *Política de conformidade do Windows 10*
    - **Plataforma**: Windows 10 e posterior
 
@@ -84,11 +84,11 @@ Os seguintes passos descrevem como pode criar uma política de conformidade para
 
     <img alt="System Security settings for a new compliance policy" src="./media/quickstart-send-notification-02.png" width="600">
 
-7. Selecione **OK** > **OK** > **criar** para criar a sua política de conformidade.
+7. Selecione **OK** > Okcriar > para criar sua política de conformidade.
 8. Selecione **Propriedades** > **Ações para não conformidade** > **Adicionar**.
 9. Na caixa pendente **Ação**, confirme se a opção **Enviar mensagem de e-mail ao utilizador final** está selecionada.
 10. Selecione **Modelo de mensagem** > **Administrador da Contoso** > **Selecionar** para selecionar o modelo de mensagem que criou anteriormente neste tópico.
-11. Selecione **ADICIONE** > **OK** > **guardar** para guardar as alterações.
+11. Selecione **Adicionar** > OkSalvar > para salvar as alterações.
 
 ## <a name="assign-the-policy"></a>Atribuir a política
 
@@ -112,4 +112,4 @@ Neste guia de início rápido, utilizou o Intune para criar e atribuir uma polí
 Para seguir esta série de guias de início rápido do Intune, continue para o próximo guia de início rápido.
 
 > [!div class="nextstepaction"]
-> [Início rápido: Adicionar e atribuir uma aplicação de cliente](quickstart-add-assign-app.md)
+> [TUTORIAIS Adicionar e atribuir um aplicativo cliente](quickstart-add-assign-app.md)

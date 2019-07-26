@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f55ecd98e047dbf77e6e8eb58284577078e21a61
-ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
+ms.openlocfilehash: 0a2ebf91efb35ecd46607baffc47abbe73c5fc5c
+ms.sourcegitcommit: 2bce5e43956b6a5244a518caa618f97f93b4f727
 ms.translationtype: MT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 07/24/2019
-ms.locfileid: "68427323"
+ms.locfileid: "68467485"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune"></a>Configurar o Exchange Connector local do Intune no Microsoft Intune
 As informações neste artigo o ajudarão a instalar e monitorar o Exchange Active Sync Connector local para o Intune.  Use o Exchange Connector local do Intune com suas políticas de [acesso condicional para permitir ou bloquear o acesso às suas caixas de correio locais do Exchange](conditional-access-exchange-create.md). 
@@ -158,7 +158,7 @@ Para realizar o failover, depois que o conector cria uma conexão bem-sucedida c
 
 Quando você dá suporte a 5.000 ou mais dispositivos com o Exchange ActiveSync, é possível definir uma configuração opcional para melhorar o desempenho do conector. O aumento do desempenho é atingido ao habilitar o Exchange a usar várias instâncias de um espaço de execução de comando do PowerShell. 
 
-Antes de fazer essa alteração, certifique-se de que a conta usada para executar o Exchange Connector não seja usada para outros fins de gerenciamento do Exchange. Isso ocorre porque o Exchange tem um limite de 18 espaços de execução por conta, e a maioria deles será usada pelo conector. 
+Antes de fazer essa alteração, certifique-se de que a conta usada para executar o Exchange Connector não seja usada para outros fins de gerenciamento do Exchange. Isso ocorre porque o Exchange tem um número limitado de espaços de execução por conta, e a maioria deles será usada pelo conector. 
 
 Essa alteração de desempenho não é adequada para conectores que são executados em hardware mais antigo ou mais lento.  
 

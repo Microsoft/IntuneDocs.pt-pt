@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b073047455cd21dc3ffe5efcb52f51584db5ff30
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: b6db255cc4c4bb8466d36e25deaf36e5c3480106
+ms.sourcegitcommit: 2bce5e43956b6a5244a518caa618f97f93b4f727
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68353774"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68467505"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Configurar e utilizar certificados SCEP com o Intune
 
@@ -225,7 +225,7 @@ Neste passo, irá:
 3. O servidor do NDES recebe URLs extensos (consultas) que exigem a adição de duas entradas de registo:
 
 
-   |                        Location                        |      Value      | Type  |      Data       |
+   |                        Location                        |      Valor      | Type  |      Data       |
    |--------------------------------------------------------|-----------------|-------|-----------------|
    | HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters | MaxFieldLength  | DWORD | 65534 (decimal) |
    | HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters | MaxRequestBytes | DWORD | 65534 (decimal) |
@@ -373,7 +373,14 @@ Para se certificar de que o serviço está em execução, abra um browser e intr
      - Windows 10 e posterior
 
 
-   - **Formato do nome da entidade**: Selecione como o Intune cria automaticamente o nome da entidade na solicitação de certificado. As opções variam se selecionar o tipo de certificado **Utilizador** ou **Dispositivo**. 
+   - **Formato do nome da entidade**: Selecione como o Intune cria automaticamente o nome da entidade na solicitação de certificado. As opções variam se selecionar o tipo de certificado **Utilizador** ou **Dispositivo**.  
+
+     > [!NOTE]  
+     > Há um [problema conhecido](#avoid-certificate-signing-requests-with-escaped-special-characters) para usar o SCEP para obter certificados quando o nome da entidade na CSR (solicitação de assinatura de certificado) resultante inclui um dos seguintes caracteres como um caractere de escape (continuado por uma \\barra invertida):
+     > - \+
+     > - ;
+     > - ,
+     > - =
 
         **Tipo de certificado Utilizador**  
 
@@ -496,6 +503,42 @@ Para se certificar de que o serviço está em execução, abra um browser e intr
 
 O perfil será criado e apresentado no painel Lista de perfis.
 
+### <a name="avoid-certificate-signing-requests-with-escaped-special-characters"></a>Evitar solicitações de assinatura de certificado com caracteres especiais de escape
+Há um problema conhecido para solicitações de certificado SCEP que incluem um nome de entidade (CN) com um ou mais dos seguintes caracteres especiais como um caractere de escape. Os nomes de entidades que incluem um dos caracteres especiais como um caractere de escape resultam em um CSR com um nome de assunto incorreto que, por sua vez, resulta na falha na validação do desafio do SCEP do Intune e nenhum certificado emitido.  
+
+Os caracteres especiais são:
+- \+
+- ,
+- ;
+- =
+
+Quando o nome da entidade incluir um dos caracteres especiais, use uma das opções a seguir para contornar essa limitação:  
+- Encapsula o valor CN que contém o caractere especial com aspas.  
+- Remova o caractere especial do valor CN.  
+
+**Por exemplo**, você tem um nome de entidade que aparece como *usuário de teste (TestCompany, LLC)* .  Um CSR que inclui um CN que tem a vírgula entre *TestCompany* e *LLC* apresenta um problema.  O problema pode ser evitado colocando-se aspas em todo o CN ou removendo a vírgula entre *TestCompany* e *LLC*:
+- **Adicionar aspas**: *CN =* "usuário de teste (TestCompany, LLC)", ou = accounts, DC = Corp, DC = contoso, DC = com *
+- **Remova a vírgula**: *CN = test User (TestCompany LLC), ou = accounts, DC = Corp, DC = contoso, DC = com*
+
+ No entanto, as tentativas de escapar a vírgula usando um caractere de barra invertida falharão com um erro nos logs do CRP:  
+- **Vírgula com escape**: *CN = usuário de teste (\\TestCompany, LLC), ou = accounts, DC = Corp, DC = contoso, DC = com*
+
+O erro é semelhante ao seguinte erro: 
+
+```
+Subject Name in CSR CN="Test User (TESTCOMPANY\, LLC),OU=UserAccounts,DC=corp,DC=contoso,DC=com" and challenge CN=Test User (TESTCOMPANY\, LLC),OU=UserAccounts,DC=corp,DC=contoso,DC=com do not match  
+
+  Exception: System.ArgumentException: Subject Name in CSR and challenge do not match
+
+   at Microsoft.ConfigurationManager.CertRegPoint.ChallengeValidation.ValidationPhase3(PKCSDecodedObject pkcsObj, CertEnrollChallenge challenge, String templateName, Int32 skipSANCheck)
+
+Exception:    at Microsoft.ConfigurationManager.CertRegPoint.ChallengeValidation.ValidationPhase3(PKCSDecodedObject pkcsObj, CertEnrollChallenge challenge, String templateName, Int32 skipSANCheck)
+
+   at Microsoft.ConfigurationManager.CertRegPoint.Controllers.CertificateController.VerifyRequest(VerifyChallengeParams value
+```
+
+
+
 ## <a name="assign-the-certificate-profile"></a>Atribuir o perfil de certificado
 
 Antes de atribuir perfis de certificado a grupos, considere o seguinte:
@@ -565,7 +608,7 @@ A partir da versão 6.1806.X.X, o Serviço do Intune Connector regista eventos n
 | 0x00000411 | CRPSCEPChallenge_Expired  | Pedido recusado devido a um desafio de certificado expirado. O dispositivo cliente pode tentar novamente depois de obter um novo desafio do servidor de gestão. |
 | 0x0FFFFFFFF | Unknown_Error  | Não conseguimos concluir o pedido porque ocorreu um erro do lado do servidor. Tente novamente. |
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Passos seguintes
 
 - [Usar certificados PKCS](certficates-pfx-configure.md)ou [emitir certificados PKCS de um serviço Web Symantec PKI Manager](certificates-symantec-configure.md)
 - [Adicionar uma autoridade de certificação de terceiros para usar o SCEP com o Intune](certificate-authority-add-scep-overview.md)

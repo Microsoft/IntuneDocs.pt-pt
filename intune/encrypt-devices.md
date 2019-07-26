@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/19/2019
+ms.date: 07/25/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.reviewer: annovich
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 57b459efa5b423f1c73a0d6b7b9172f71f4c86d3
-ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
+ms.openlocfilehash: 3f37b9b0bc16572cc86cbf79be616c7f395aa784
+ms.sourcegitcommit: 2bce5e43956b6a5244a518caa618f97f93b4f727
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68375169"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68467441"
 ---
 # <a name="use-device-encryption-with-intune"></a>Usar a criptografia de dispositivo com o Intune  
 
@@ -66,10 +66,7 @@ Para obter detalhes sobre a configuração de FileVault que você pode gerenciar
 
    Por exemplo: Para recuperar uma chave de recuperação perdida ou recentemente girada, entre no site do Portal da Empresa do Intune de qualquer dispositivo. No portal, vá para *dispositivos* e selecione o dispositivo que tem o FileVault habilitado e, em seguida, selecione *obter chave de recuperação*. A chave de recuperação atual é exibida.  
 
-6. Defina as configurações restantes para atender às suas necessidades de negócios e selecione **OK**.  
-
-   > [!NOTE]
-   > O suporte para FileVault é limitado até que a versão de julho conclua a distribuição em alguns dias. Até que a distribuição seja concluída, se você configurar o FileVault, você deverá definir *Defer FileVault até que a saída* seja **habilitada**.  
+6. Defina as [configurações de FileVault](endpoint-protection-macos.md#filevault) restantes para atender às suas necessidades de negócios e selecione **OK**.  
 
 7. Conclua a configuração de configurações adicionais e salve o perfil.  
 
@@ -105,7 +102,7 @@ Configure o BitLocker ao criar um [perfil de configuração de dispositivo](devi
 
 Depois que o Intune criptografar um dispositivo Windows 10 com o BitLocker, você poderá exibir e recuperar as chaves de recuperação do BitLocker ao exibir o [relatório de criptografia](encryption-monitor.md)do Intune.  
 
-## <a name="next-steps"></a>Passos Seguintes  
+## <a name="next-steps"></a>Passos seguintes  
 
 Criar [uma política de conformidade do dispositivo](compliance-policy-create-windows.md)  
 

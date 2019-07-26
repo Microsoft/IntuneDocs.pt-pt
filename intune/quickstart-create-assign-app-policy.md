@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/26/2019
+ms.date: 07/24/2019
 ms.topic: quickstart
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6ec42d122bf3da3fbacef513d6af2dbe124b196c
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 626c5d49c4f6bc7fef5f4f29c2397fafead50fda
+ms.sourcegitcommit: d2ac912b834c4840de9cc92ba1815b6ecfbfb52b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67530772"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68482989"
 ---
 # <a name="quickstart-create-and-assign-an-app-protection-policy"></a>Início rápido: Criar e atribuir uma política de proteção de aplicações
 
@@ -40,15 +40,15 @@ Inicie sessão no [Intune](https://aka.ms/intuneportal) enquanto [Administrador 
 
 ## <a name="create-an-app-protection-policy"></a>Criar uma política de proteção de aplicações
 
-Utilize os seguintes passos para criar uma política de proteção de aplicações:
+Use as seguintes etapas para criar uma política de proteção de aplicativo:
 
 1. No [Intune](https://aka.ms/intuneportal), selecione **Aplicações do cliente** > **Políticas de proteção de aplicações** > **Criar Política**. 
 2. Introduza os seguintes detalhes: 
 
     - **Nome**: *Proteção de conteúdo do Windows 10*
-    - **Descrição**: *Os utilizadores associados a esta política não será capazes de cortar, copiar ou colar qualquer conteúdo entre a aplicação atribuída e outras aplicações não geridas no dispositivo.*
+    - **Descrição**: *Os usuários associados a essa política não poderão recortar, copiar ou colar qualquer conteúdo entre o aplicativo atribuído e outros aplicativos não gerenciados no dispositivo.*
     - **Plataforma**: *Windows 10*
-    - **Estado da inscrição**: *Com a inscrição*
+    - **Estado do registro**: *Com o registro*
 
 3. Selecione **Aplicações protegidas** para selecionar as aplicações que têm de cumprir esta política.
 4. Clique em **Adicionar aplicações**.
@@ -71,7 +71,7 @@ Siga os seguintes passos para atribuir uma política de proteção de aplicaçõ
 3. Selecione **Atribuições**.
 4. Clique **Selecionar grupos para incluir** no separador **Incluir**.
 5. Selecione **Técnicos de Teste da Contoso** como o grupo a incluir.
-6. Clique em **selecionar** > **guardar**. 
+6. Clique em **selecionar** > **salvar**. 
 
 Agora já atribuiu a política de proteção de aplicações.
 
@@ -85,4 +85,4 @@ Neste guia de início rápido, criou e atribuiu uma política de proteção de a
 Para seguir esta série de guias de início rápido do Intune, continue para o próximo guia de início rápido.
 
 > [!div class="nextstepaction"]
-> [Início rápido: Criar e atribuir uma função personalizada](quickstart-create-custom-role.md)
+> [TUTORIAIS Criar e atribuir uma função personalizada](quickstart-create-custom-role.md)

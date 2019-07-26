@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/25/2019
+ms.date: 07/24/2019
 ms.topic: quickstart
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,14 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1fa23deb26dbf54f8e3e98ec0b9604859a34a90d
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: cd310cea29a3dac7a178d88c0f29d1a4e36ad37d
+ms.sourcegitcommit: d2ac912b834c4840de9cc92ba1815b6ecfbfb52b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528305"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68482802"
 ---
-# <a name="quickstart-add-and-assign-a-client-app"></a>Início rápido: Adicionar e atribuir uma aplicação de cliente
+# <a name="quickstart-add-and-assign-a-client-app"></a>Início rápido: Adicionar e atribuir um aplicativo cliente
 
 Neste guia de início rápido, irá utilizar o Intune para adicionar e atribuir uma aplicação cliente à força de trabalho da sua empresa. Uma das prioridades de um administrador é garantir que os utilizadores finais têm acesso às aplicações que precisam para trabalhar. 
 
@@ -36,36 +36,35 @@ Se não tiver uma subscrição do Intune, [inscreva-se numa conta de avaliação
 
 ## <a name="sign-in-to-intune"></a>Iniciar sessão no Intune
 
-Inicie sessão no [Intune](https://aka.ms/intuneportal) como um [Administrador Global ou um administrador de serviço do Intune](users-add.md#types-of-administrators). Se criou uma Subscrição de avaliação do Intune, a conta com a qual criou a subscrição é de Administrador global.
+Entre no [Intune](https://aka.ms/intuneportal) como um [administrador global ou um administrador de serviços do Intune](users-add.md#types-of-administrators). Se criou uma Subscrição de avaliação do Intune, a conta com a qual criou a subscrição é de Administrador global.
 
 ## <a name="add-the-client-app-to-intune"></a>Adicionar a aplicação cliente ao Intune
 
 É possível incluir uma aplicação para que o Intune possa gerir aspetos da mesma. 
 
 Siga os seguintes passos para adicionar uma aplicação ao Intune:
-
 1. No [Intune](https://aka.ms/intuneportal), selecione **Aplicações do cliente** > **Aplicações** > **Adicionar**. 
 2. Selecione **Windows 10** na secção **Office 365 Suite** da caixa pendente **Tipo de aplicação**.
 3. Selecione **Configurar o Conjunto de Aplicações** para selecionar as aplicações do Office que serão atribuídas ao utilizador do Intune.
 4. Clique em **OK** para aceitar as aplicações selecionadas por predefinição.
 5. Selecione **Informações do Conjunto de Aplicações**.
 6. Introduza **Conjunto de Aplicações do Microsoft Office 365** como **Nome do Conjunto de Aplicações**.
-7. Introduza **conjunto de aplicações do Microsoft Office 365** como o **descrição do conjunto**.
+7. Insira **o pacote de aplicativos Microsoft Office 365** como a **Descrição do pacote**.
 8. Clique em **Sim** junto a **Apresentar como aplicação em destaque no Portal da Empresa**.
 9. Clique em **OK**.
 
     ![Captura de ecrã a mostrar a adição de informações da aplicação](media/quickstart-add-assign-app/quickstart-add-assign-app-01.png)
 
-8. Selecione **Definições do Conjunto de Aplicações**.
-9. Na caixa pendente **Atualizar Canal**, selecione **Mensalmente**.
-10. Clique em **OK** > **Adicionar**.
+10. Selecione **Definições do Conjunto de Aplicações**.
+11. Na caixa pendente **Atualizar Canal**, selecione **Mensalmente**.
+12. Clique em **OK** > **Adicionar**.
 
 ## <a name="assign-the-app-to-a-group"></a>Atribuir a aplicação a um grupo
 
 Depois de adicionar uma aplicação ao Microsoft Intune, pode atribuí-la a grupos de utilizadores ou dispositivos.
 
 > [!NOTE]
-> Este início rápido cria nos inícios rápidos anteriores desta série. Veja a secção [Pré-requisitos](quickstart-add-assign-app.md#prerequisites) deste guia de início rápido para obter mais informações.
+> Este guia de início rápido se baseia nos guias de início rápido anteriores desta série. Veja a secção [Pré-requisitos](quickstart-add-assign-app.md#prerequisites) deste guia de início rápido para obter mais informações.
 
 Siga os seguintes passos para atribuir uma aplicação a um grupo:
 1. No [Intune](https://aka.ms/intuneportal), selecione **Aplicações do cliente** > **Aplicações**. 
@@ -91,17 +90,17 @@ Tem de instalar e utilizar a aplicação Portal da Empresa para instalar a aplic
 4. Clique na aplicação que adicionou com o Intune. Neste guia de início rápido, adicionou a aplicação **Conjunto de Aplicações do Microsoft Office 365**.
 
     > [!NOTE]
-    > Se não atribuído com sucesso todas as aplicações para o utilizador do Intune, verá a seguinte mensagem: *O administrador de TI não efetuou todas as aplicações disponíveis para si.*
+    > Se você não atribuiu com êxito nenhum aplicativo ao usuário do Intune, verá a seguinte mensagem: *O administrador de ti não disponibilizou nenhum aplicativo para você.*
 
 5. Clique em **Instalar**.
 
 Se as suas necessidades empresariais incluírem a atribuição da aplicação Portal da Empresa à sua força de trabalho, pode atribuir manualmente a aplicação Portal da Empresa do Windows 10 diretamente a partir do Intune. Para obter mais informações, veja [Adicionar manualmente a aplicação Portal da Empresa do Windows 10 através do Microsoft Intune](store-apps-company-portal-app.md).
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Passos seguintes
 
 Neste guia de início rápido, adicionou aplicações ao Intune, atribuiu as aplicações a um grupo e instalou as aplicações no dispositivo inscrito com o Windows 10 Desktop. Para obter mais informações sobre a gestão de aplicações no Intune, veja [O que é a gestão de aplicações do Microsoft Intune?](app-management.md)
 
 Para seguir esta série de guias de início rápido do Intune, continue para o próximo guia de início rápido.
 
 > [!div class="nextstepaction"]
-> [Início rápido: Criar e atribuir uma política de proteção de aplicações](quickstart-create-assign-app-policy.md)
+> [TUTORIAIS Criar e atribuir uma política de proteção de aplicativo](quickstart-create-assign-app-policy.md)

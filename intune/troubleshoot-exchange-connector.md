@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2718ee7936e82bffc50126eeb57f1b6f732df22d
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: ea3ae66a32353b4aa6c782b13e6a587ee1f4464e
+ms.sourcegitcommit: 1d4aec7b79c70d35ec3fc29df6ff9c6a1403412e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68354478"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68491825"
 ---
 # <a name="troubleshoot-the-intune-on-premises-exchange-connector"></a>Resolução de problemas do conector do Exchange no local do Intune
 
@@ -47,9 +47,9 @@ Verifique a [configuração do conector do Exchange no local do Intune](exchange
 
 
 ## <a name="using-powershell-to-get-more-data-on-exchange-connector-issues"></a>Utilizar o Powershell para obter mais dados sobre problemas do Exchange Connector
-- Para obter uma lista de todos os dispositivos móveis para uma caixa de correio, utilize Get-ActiveSyncDeviceStatistics -mailbox mbx
-- Para obter uma lista de endereços SMTP para uma caixa de correio, utilize Get-Mailbox -Identity user | select emailaddresses | fl
-- Para obter informações detalhadas acerca do estado de acesso de um dispositivo, utilize Get-CASMailbox <upn> | fl
+- Para obter uma lista de todos os dispositivos móveis para uma caixa de correio, use`Get-ActiveSyncDeviceStatistics -mailbox mbx`
+- Para obter uma lista de endereços SMTP para uma caixa de correio, use`Get-Mailbox -Identity user | select emailaddresses | fl`
+- Para obter informações detalhadas sobre o estado de acesso de um dispositivo, use`Get-CASMailbox <upn> | fl`
 
 ## <a name="next-steps"></a>Passos Seguintes
 Se estas informações não o ajudarem, também pode [obter suporte para o Microsoft Intune](get-support.md).

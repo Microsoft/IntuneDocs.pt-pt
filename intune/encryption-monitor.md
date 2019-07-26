@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a04a8b9f1973479fd0695ad0e782488fdef43d10
-ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
+ms.openlocfilehash: 3294959e6b11bb8982afa088acdd7262246c3923
+ms.sourcegitcommit: 2bce5e43956b6a5244a518caa618f97f93b4f727
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68375146"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68467430"
 ---
 # <a name="monitor-device-encryption"></a>Monitor device encryption (Monitorizar encriptação de dispositivos)  
 
@@ -93,8 +93,6 @@ Quando você seleciona um dispositivo no relatório de criptografia, o Intune ex
 - **Resumo do estado do perfil** – um resumo dos perfis que se aplicam a este dispositivo. O resumo representa a condição menos favorável nos perfis aplicáveis. Por exemplo, se apenas um dos vários perfis aplicáveis resultar em um erro, o *Resumo do estado do perfil* exibirá um *erro*.  
 
 - **Detalhes do status** – detalhes avançados sobre o estado de criptografia do dispositivo.  
-  > [!NOTE]
-  > O suporte para FileVault é limitado até que a versão de julho conclua a distribuição em alguns dias. Até que a distribuição seja concluída, os detalhes de status do dispositivo e os detalhes de criptografia do dispositivo para macOS podem não ser exibidos com precisão no relatório de criptografia.
 
   > [!IMPORTANT]  
   > Para dispositivos Windows 10, o Intune mostra *detalhes de status* somente para dispositivos que executam a *atualização do Windows 10 de abril de 2019* ou posterior.  
@@ -218,6 +216,6 @@ Quando as chaves não estiverem no Azure AD, o Intune não exibirá *nenhuma cha
 
 As informações do BitLocker são obtidas usando o [provedor de serviços de configuração do BitLocker](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) (CSP). O CSP do BitLocker tem suporte no Windows 10 versão 1703 e posterior e para o Windows 10 pro versão 1809 e posterior.  
 
-## <a name="next-steps"></a>Passos Seguintes  
+## <a name="next-steps"></a>Passos seguintes  
 
 Criar uma política de [conformidade do dispositivo](compliance-policy-create-windows.md) .

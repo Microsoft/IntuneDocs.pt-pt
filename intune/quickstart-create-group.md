@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/25/2019
+ms.date: 07/24/2019
 ms.topic: quickstart
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,14 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0a9cf1b610830928a753be176de2643fa1826bd0
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 8a8a444f886a5b754fd6ba3763e183db0fe95d5f
+ms.sourcegitcommit: d2ac912b834c4840de9cc92ba1815b6ecfbfb52b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050314"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68482975"
 ---
-# <a name="quickstart-create-a-group-to-manage-users"></a>Início rápido: Criar um grupo para gerir utilizadores
+# <a name="quickstart-create-a-group-to-manage-users"></a>Início rápido: Criar um grupo para gerenciar usuários
 
 Neste início rápido, utilizará o Intune para criar um grupo com base num utilizador existente. Os grupos são utilizados para gerir os utilizadores e controlar o acesso dos seus funcionários aos recursos da sua empresa. Estes recursos podem fazer parte da intranet da sua empresa ou podem ser recursos externos, tais como sites do SharePoint, aplicações SaaS ou aplicações Web.
 
@@ -39,7 +39,7 @@ Se não tiver uma subscrição do Intune, [inscreva-se numa conta de avaliação
 
 ## <a name="sign-in-to-intune"></a>Iniciar sessão no Intune
 
-Inicie sessão para o [portal do Intune](https://aka.ms/intuneportal) como um [Administrador Global ou um administrador de serviço do Intune](users-add.md#types-of-administrators). Se criou uma Subscrição de avaliação do Intune, a conta com a qual criou a subscrição é de Administrador global.
+Entre no portal do [Intune](https://aka.ms/intuneportal) como um [administrador global ou um administrador de serviços do Intune](users-add.md#types-of-administrators). Se criou uma Subscrição de avaliação do Intune, a conta com a qual criou a subscrição é de Administrador global.
 
 ## <a name="create-a-group"></a>Criar um grupo
 
@@ -47,10 +47,10 @@ Irá criar um grupo que será utilizado mais tarde nesta série de início rápi
 
 1. Após abrir o painel **Microsoft Intune**, selecione **Grupos** > **Novo grupo**.
 2. Na caixa pendente **Tipo de grupo**, selecione **Segurança**.
-3. Na **nome do grupo** campo, introduza o nome para o novo grupo (por exemplo, **Contoso Testadores**).
-4. Adicionar uma **Descrição** para o grupo.
+3. No campo **nome do grupo** , insira o nome do novo grupo (por exemplo, **testadores contoso**).
+4. Adicione uma **Descrição** para o grupo.
 5. Defina o **Tipo de associação** para **Atribuído**. 
-6. Clique em **membros** e selecione um ou mais membros para o grupo da lista.
+6. Clique em **Membros** e selecione um ou mais membros para o grupo na lista.
 
     ![Captura de ecrã da criação de um grupo no Microsoft Intune](./media/quickstart-use-groups-01.png)
 
@@ -65,4 +65,4 @@ Neste início rápido, utilizou o Intune para criar um grupo com base num utiliz
 Para seguir esta série de guias de início rápido do Intune, continue para o próximo guia de início rápido.
 
 > [!div class="nextstepaction"]
-> [Início rápido: Configurar a inscrição automática para dispositivos Windows 10](quickstart-setup-auto-enrollment.md)
+> [TUTORIAIS Configurar o registro automático para dispositivos Windows 10](quickstart-setup-auto-enrollment.md)

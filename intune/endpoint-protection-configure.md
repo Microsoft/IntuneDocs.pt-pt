@@ -15,12 +15,12 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 mr.reviewer: karthib
-ms.openlocfilehash: d0e3e67cd227c5ce8ac2cb42f79bdea1da8e2d75
-ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
+ms.openlocfilehash: 13e8c7fd0c822a2bdfbf7c183ea6752f99cf7991
+ms.sourcegitcommit: d2ac912b834c4840de9cc92ba1815b6ecfbfb52b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68375119"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68482778"
 ---
 # <a name="add-endpoint-protection-settings-in-intune"></a>Adicionar definições de proteção de ponto final no Intune  
 
@@ -63,7 +63,7 @@ Ao planejar perfis com regras de firewall personalizadas, considere as seguintes
 - Para cada perfil, se uma única regra não for aplicada, todas as regras nesse perfil falharão e nenhuma das regras será aplicada ao dispositivo.  
 - Quando uma regra não é aplicada, todas as regras no perfil são relatadas como com falha. O Intune não pode identificar qual regra individual falhou.  
 
-As regras de firewall que o Intune pode gerenciar são detalhadas no [provedor de serviços de configuração do firewall]( https://docs.microsoft.com/windows/client-management/mdm/firewall-csp) do Windows (CSP). Para examinar a lista de configurações de firewall personalizadas para dispositivos Windows 10 aos quais o Intune dá suporte, consulte [regras de firewall personalizadas](endpoint-protection-windows-10.md#custom-firewall-rules).  
+As regras de firewall que o Intune pode gerenciar são detalhadas no [provedor de serviços de configuração do firewall]( https://docs.microsoft.com/windows/client-management/mdm/firewall-csp) do Windows (CSP). Para examinar a lista de configurações de firewall personalizadas para dispositivos Windows 10 aos quais o Intune dá suporte, consulte [regras de firewall personalizadas](endpoint-protection-windows-10.md#firewall-rules).  
 
 ### <a name="to-add-custom-firewall-rules-to-an-endpoint-protection-profile"></a>Para adicionar regras de firewall personalizadas a um perfil do Endpoint Protection  
 
@@ -73,7 +73,7 @@ As regras de firewall que o Intune pode gerenciar são detalhadas no [provedor d
 
 3. Selecione **Windows Defender firewall** para abrir a página de configuração e, para *regras de firewall* , selecione **Adicionar** para abrir a página **criar regra** .  
 
-4. Especifique as configurações para a regra de firewall e, em seguida, selecione **OK** para salvá-la. Para examinar as opções de regra de firewall personalizadas disponíveis na documentação do, consulte [regras de firewall personalizadas](endpoint-protection-windows-10.md#custom-firewall-rules).  
+4. Especifique as configurações para a regra de firewall e, em seguida, selecione **OK** para salvá-la. Para examinar as opções de regra de firewall personalizadas disponíveis na documentação do, consulte [regras de firewall personalizadas](endpoint-protection-windows-10.md#firewall-rules).  
 
 5. Depois de salvar a regra, ela aparece na página do *Windows Defender firewall* na lista de regras.  
 

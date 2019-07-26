@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/19/2019
+ms.date: 07/25/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3a885abfdd7f23f453f03c63fdb0086bed40a7b1
-ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
+ms.openlocfilehash: 1fe22291c808c498f9c099498b97e131ea531334
+ms.sourcegitcommit: 2bce5e43956b6a5244a518caa618f97f93b4f727
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68375031"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68467409"
 ---
 # <a name="macos-endpoint-protection-settings-in-intune"></a>Configurações do MacOS Endpoint Protection no Intune  
 
@@ -92,35 +92,24 @@ Para obter mais informações sobre as configurações do Apple FileVault, consu
   - **Tipo de chave de recuperação**  
     Chaves de recuperação de *chave pessoal* são criadas para dispositivos. Defina as configurações a seguir para a chave pessoal.  
 
-    - **Local da chave de recuperação pessoal** – especifique uma mensagem curta para o usuário que explica como eles podem recuperar sua chave de recuperação pessoal. Esse texto é inserido na mensagem que o usuário vê ao habilitar o FileVault.  
+    - **Local da chave de recuperação pessoal** – especifique uma mensagem curta para o usuário que explica como e onde eles podem recuperar sua chave de recuperação pessoal. Esse texto é inserido na mensagem que o usuário vê em sua tela de logon quando solicitado a inserir sua chave de recuperação pessoal se uma senha for esquecida.  
       
     - **Rotação de chave de recuperação pessoal** – especifique com que frequência a chave de recuperação pessoal de um dispositivo será girada. Você pode selecionar o padrão **não configurado**ou um valor de **1** a **12** meses.  
 
-  - **Adiar FileVault até sair**  
-    > [!NOTE]
-    > O suporte para FileVault é limitado até que a versão de julho conclua a distribuição em alguns dias. Até que a distribuição seja concluída, se você configurar o FileVault, você deverá definir *Defer FileVault até que a saída* seja **habilitada**.   
-
-    FileVault não será habilitado até que o usuário saia. Um usuário local ou usuário de conta móvel será solicitado a habilitar o FileVault na saída ou na próxima entrada.  
+  - **Desabilitar aviso ao sair**  
+    Impedir o prompt para o usuário que solicita que eles habilitem o FileVault quando eles se desconectarem.  Quando definido como desabilitado, o prompt na saída é desabilitado e, em vez disso, o usuário recebe uma solicitação quando entra.  
     - **Não configurado**  
-    - **Desabilitar**  
+    - **Desativar**  
+
     **Padrão**: Não configurado  
 
+  - **Número de vezes com permissão para ignorar**  
+  Defina o número de vezes que um usuário pode ignorar prompts para habilitar FileVault antes que FileVault seja necessário para que o usuário entre.  
 
-
-    - **Desabilitar aviso ao sair**  
-      Impedir o prompt para o usuário que solicita que eles habilitem o FileVault quando eles se desconectarem.  
-      - **Não configurado**  
-      - **Desabilitar**  
-
-      **Padrão**: Não configurado  
-
-    - **Número de vezes com permissão para ignorar**  
-    Defina o número de vezes que um usuário pode ignorar prompts para habilitar FileVault antes que FileVault seja necessário para que o usuário entre.  
-
-      - **Não configurado** -a criptografia no dispositivo é necessária antes que a próxima entrada seja permitida.  
-      -  **1** a **10** -permite que um usuário ignore o prompt de 1 a 10 vezes antes de exigir a criptografia no dispositivo.  
-      - **Sem limite, sempre avisar** -o usuário é solicitado a habilitar FileVault, mas a criptografia nunca é necessária.  
+    - **Não configurado** -a criptografia no dispositivo é necessária antes que a próxima entrada seja permitida.  
+    - **1** a **10** -permite que um usuário ignore o prompt de 1 a 10 vezes antes de exigir a criptografia no dispositivo.  
+    - **Sem limite, sempre avisar** -o usuário é solicitado a habilitar FileVault, mas a criptografia nunca é necessária.  
  
-      **Padrão**: Não configurado  
+    **Padrão**: Não configurado  
 
 
