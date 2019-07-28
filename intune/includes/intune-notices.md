@@ -7,12 +7,12 @@ ms.topic: include
 ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: d907c5256469e86410c9916d117d3e322d43cfc3
-ms.sourcegitcommit: 2614d1b08b8a78cd792aebd2ca9848f391df8550
+ms.openlocfilehash: eec9a275a87b3e1bcfc42e197d95b4a4b315d018
+ms.sourcegitcommit: 948ff8f56639e6dc7091134a0efd8d44efca63f2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67812516"
+ms.lasthandoff: 07/27/2019
+ms.locfileid: "68591071"
 ---
 Esses avisos fornecem informações importantes que podem ajudá-lo a se preparar para futuras alterações e recursos do Intune. 
 
@@ -57,13 +57,13 @@ A partir de julho, os dispositivos registrados no MDM com iOS 10 e o Portal da E
 Verifique seus relatórios do Intune para ver quais dispositivos ou usuários podem ser afetados. Vá para **dispositivos** > **todos os dispositivos** e filtre por sistema operacional. Você pode adicionar colunas adicionais para ajudar a identificar quem em sua organização tem dispositivos que executam o iOS 10. Solicite que os usuários finais atualizem seus dispositivos para uma versão do sistema operacional com suporte antes de setembro.
 
 ### <a name="plan-for-change-support-for-version-811-and-higher-of-intune-app-sdk-for-ios----3586942--"></a>Planejar alteração: Suporte para a versão 8.1.1 e superior do SDK de aplicativo do Intune para iOS <!-- 3586942-->
-A partir de setembro de 2019, o Intune será movido para dar suporte a aplicativos iOS com o SDK de aplicativos do Intune 8.1.1 e superior. Aplicativos criados com versões do SDK inferiores a 8.1.1 não terão mais suporte. Essa mudança entrará em vigor com o lançamento da Apple do iOS 13, que deve ser lançado em setembro e também foi anunciado em MC181399.
+A partir de setembro de 2019, o Intune será movido para dar suporte a aplicativos iOS com o SDK de aplicativos do Intune 8.1.1 e superior. Aplicativos criados com versões do SDK inferiores a 8.1.1 não terão mais suporte. Essa alteração entrará em vigor com o lançamento da Apple do iOS 13, que deve vir em volta de setembro e também ser anunciada em MC181399.
 
 #### <a name="how-does-this-affect-me"></a>Como é que isto me afeta?
 Com o SDK de aplicativo do Intune ou integração de encapsulamento de aplicativo, você pode proteger dados corporativos de aplicativos e usuários não aprovados por meio da criptografia de dados. O SDK de aplicativo do Intune para iOS usará chaves de criptografia de 256 bits por padrão quando a criptografia for habilitada por políticas de Proteção de Aplicativo do Intune (aplicativo). Após essa alteração, todos os aplicativos iOS em versões do SDK anteriores ao 8.1.1, que usam chaves de criptografia de 128 bits, não poderão mais compartilhar dados com aplicativos integrados com o SDK 8.1.1 ou usando as chaves de 256 bits. Todos os aplicativos iOS precisarão ter uma versão do SDK 8.1.1 ou superior para permitir o compartilhamento de dados protegidos.
 
 #### <a name="what-can-i-do-to-prepare-for-this-change"></a>O que posso fazer para me preparar para esta alteração?
-Verifique seus aplicativos Microsoft, de terceiros e de linha de negócios (LOB). Você deve garantir que todos os aplicativos protegidos com o aplicativo do Intune estejam usando o SDK versão 8.1.1 ou posterior.
+Verifique seus aplicativos Microsoft, de terceiros e de linha de negócios (LOB). Verifique se todos os aplicativos protegidos com o aplicativo do Intune estão usando o SDK versão 8.1.1 ou posterior.
 
 - Para aplicativos LOB: Talvez seja necessário republicar seus aplicativos integrados com o SDK versão 8.1.1 ou posterior. Recomendamos a versão mais recente do SDK. Para obter informações sobre como preparar seus aplicativos LOB para políticas de proteção de aplicativo, consulte [preparar aplicativos de linha de negócios para políticas de proteção de aplicativo](../apps-prepare-mobile-application-management.md).
 - Para aplicativos da Microsoft/de terceiros: Certifique-se de que você está implantando a versão mais recente desses aplicativos para seus usuários.
@@ -83,8 +83,27 @@ Se você gerenciar dispositivos Windows 10 em seu ambiente:
 - As configurações de prazo substituirão a opção "permitir que o usuário reinicie (reinício envolvido) no console do na atualização 1910.
 
 #### <a name="what-can-i-do-to-prepare-for-this-change"></a>O que posso fazer para me preparar para esta alteração?
-Comece a usar as configurações de prazo em 1908, configurando-as com os valores desejados. Depois de fazer isso, você pode definir a configuração de reinicialização envolvida como "não configurado" para se preparar para que elas sejam removidas do console em outubro.
+Comece a usar as configurações de prazo em 1908, configurando-as com os valores desejados. Depois de fazer isso, você pode definir a configuração de reinicialização envolvida como "não configurado" para se preparar para que essas configurações sejam removidas do console em outubro.
 
 Atualize sua documentação e todos os scripts de automação, se necessário. 
 
 Manteremos você atualizado e poste um lembrete no centro de mensagens antes de removermos as configurações de reinicialização envolvidas.
+
+### <a name="plan-for-change-intune-app-sdk-and-app-protection-policies-for-android-moving-to-support-android-50-and-higher-in-october---4911065---"></a>Planejar alteração: Políticas do SDK de aplicativo do Intune e de proteção do aplicativo para Android migrando para o Android 5,0 e posterior em outubro <!--4911065 -->
+O Intune mudará para oferecer suporte a Android 5. x (pirulito) e superior em outubro. Atualize todos os aplicativos encapsulados com o SDK de aplicativos do Intune mais recente e atualize seus dispositivos.
+
+#### <a name="how-does-this-affect-me"></a>Como é que isto me afeta?
+Se você não estiver usando o ou planeja usar o SDK ou o aplicativo para Android, essa alteração não afetará você. Se você estiver usando o SDK de aplicativos do Intune, certifique-se de atualizar para a versão mais recente e também atualizar seus dispositivos para Android 5. x e superior. Se você não atualizar, os aplicativos não receberão atualizações, e a qualidade da sua experiência diminuirá ao longo do tempo. 
+
+Abaixo, encontre uma lista de dispositivos comuns registrados no Intune que executam o Android versão 4. x. Se você tiver um desses dispositivos, execute as etapas apropriadas para certificar-se de que este dispositivo dará suporte à versão 5,0 ou superior do Android ou que ele será substituído por um dispositivo que dá suporte à versão 5,0 ou superior do Android. Esta lista não é exaustiva em todos os dispositivos que talvez precisem ser avaliados:
+- Samsung SM-T561  
+- Samsung SM-T365 
+- Samsung GT-I9195 
+- Samsung SM-G800F
+- Samsung SM-G357FZ
+- XT1080 Motorola
+- Samsung GT-I9305
+- Samsung SM-T231
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>O que preciso de fazer para me preparar para esta alteração?
+Encapsular seus aplicativos com o SDK de aplicativos do Intune mais recente. Você também pode definir a configuração de inicialização condicional "exigir versão mínima do so (somente aviso)" para notificar os usuários finais sobre os dispositivos pessoais a serem atualizados.
