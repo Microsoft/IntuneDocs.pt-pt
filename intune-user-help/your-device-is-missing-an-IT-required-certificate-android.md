@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/04/2017
+ms.date: 07/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,25 +18,36 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6bdf97e6a36a49bc6df5a182af7676c357440f3e
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: d44af8f40243596bda58d610b369db6f54be6d1e
+ms.sourcegitcommit: 3baa9965095bb874d9b8c7a3cbb4aa925ed52cae
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67529337"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68625116"
 ---
-# <a name="your-android-device-is-missing-a-certificate-required-by-your-company-support"></a>Está em falta um certificado no seu dispositivo Android de que o suporte da empresa necessita
+# <a name="install-missing-certificate-required-by-your-organization"></a>Instalar o certificado ausente exigido pela sua organização  
 
 Se o seu dispositivo não estiver inscrito no Intune e não tiver um determinado certificado de que o suporte da empresa necessita, não poderá iniciar sessão na aplicação Portal da Empresa. Ao tentar iniciar sessão, verá a seguinte mensagem:
 
 ![screenshot-error-message-about-missing-certificate](./media/andr-cert_install-1-cert_missing.png)
 
-Para resolver este problema e obter o certificado necessário, tem de efetuar dois passos principais:
+Há duas opções que você pode tentar baixar o certificado necessário e obter seu dispositivo registrado. 
 
-- Identificar o certificado em falta ao procurar num PC da escola ou empresa.
-- Utilizar o dispositivo para transferir o certificado em falta na Internet.
+- Habilite o acesso do navegador no aplicativo Portal da Empresa.
+- Identifique o certificado ausente em um PC corporativo ou de estudante. Em seguida, pesquise a Internet para baixar o certificado ausente. 
 
-## <a name="identify-the-missing-certificate-by-looking-on-a-company-or-school-pc"></a>Identificar o certificado em falta ao procurar num PC da escola ou empresa
+Conclua as etapas para habilitar o acesso ao navegador primeiro. Depois disso, se você ainda não puder registrar seu dispositivo, siga as etapas para localizar o certificado na Internet. 
+
+## <a name="enable-browser-access"></a>Habilitar o acesso ao navegador
+Conclua estas etapas para habilitar o acesso ao navegador. Depois de habilitar o acesso, o Portal da Empresa instalará o certificado apropriado e continuará o registro.    
+
+1. No aplicativo Portal da Empresa, vá para o canto direito e selecione o menu.  
+2. Selecione **definições**.  
+3. Ao lado de **habilitar o acesso ao navegador** , selecione **habilitar**.  
+4. Na tela administrador do dispositivo, selecione **Ativar**. 
+
+## <a name="identify-and-download-the-missing-certificate-through-web-search"></a>Identificar e baixar o certificado ausente por meio da pesquisa na Web
+Conclua estas etapas para identificar e instalar manualmente o certificado em seu dispositivo.  
 
 1. Num PC, abra o Internet Explorer. Se não tiver um PC para utilizar para esta finalidade, contacte o suporte da empresa. Para encontrar as informações de contacto do suporte da empresa, consulte o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
 
@@ -52,15 +63,13 @@ Para resolver este problema e obter o certificado necessário, tem de efetuar do
 
     ![screenshot-internet-explorer-view-certificates-button-on-website-identification-dialog](./media/andr-missg-cert-ie-view-cert-button.png)
 
-5. Na caixa de diálogo **Certificado**, selecione o separador **Caminho do certificado** e identifique o certificado que tem de obter a partir da Internet. O nome do certificado necessário estará na mesma posição que aquele que está realçado na captura de ecrã de exemplo anterior.
+5. Escolha a guia **caminho de certificação** e identifique o certificado que você precisa obter da Internet. O nome do certificado necessário estará na mesma posição que aquele que está realçado na captura de ecrã de exemplo anterior.
 
-## <a name="download-and-install-the-missing-certificate-on-your-android-mobile-device"></a>Transferir e instalar o certificado em falta no dispositivo móvel Android
+6. Num motor de busca como o Bing ou o Google, procure o nome do certificado em falta que identificou na secção anterior. O certificado pode terminar com diferentes "extensões," como ".crt", “.pem", etc.
 
-1. Num motor de busca como o Bing ou o Google, procure o nome do certificado em falta que identificou na secção anterior. O certificado pode terminar com diferentes "extensões," como ".crt", “.pem", etc.
+7. Transfira o certificado de raiz do Web site.
 
-2. Transfira o certificado de raiz do Web site.
-
-3. Depois de transferido o certificado, arraste desde a parte superior do dispositivo para baixo para abrir as notificações e toque no nome do certificado na lista de notificações.
+8. Depois de transferido o certificado, arraste desde a parte superior do dispositivo para baixo para abrir as notificações e toque no nome do certificado na lista de notificações.
 
 4. Na caixa de diálogo **Nomear o Certificado** mostrada na captura de ecrã seguinte, aceite o nome predefinido do certificado.
 
