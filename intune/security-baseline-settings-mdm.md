@@ -5,7 +5,7 @@ description: Configurações de linha de base de segurança do Intune para geren
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/20/2019
+ms.date: 07/25/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7f70d54404dc20d6d6aabd5974dff9c5102b759f
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
-ms.translationtype: HT
+ms.openlocfilehash: 2ff902530b6f7001e23300b01f6576f0a7fc2637
+ms.sourcegitcommit: 1d4aec7b79c70d35ec3fc29df6ff9c6a1403412e
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67882303"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68491897"
 ---
 # <a name="mdm-security-baseline-settings-for-intune"></a>Configurações de linha de base de segurança do MDM para o Intune  
 
@@ -1773,7 +1773,12 @@ Para obter mais informações, consulte [2.2.2 FW_PROFILE_TYPOE]( https://docs.m
   **Padrão**: Sim
 
 - **Configurar o Windows Hello para empresas**   
-  O Windows Hello para empresas é um método alternativo para entrar no Windows, substituindo senhas, cartões inteligentes e cartões inteligentes virtuais. Se você habilitar ou não definir essa configuração de política, o dispositivo provisionará o Windows Hello para empresas. Se você desabilitar essa configuração de política, o dispositivo não provisionará o Windows Hello para empresas para nenhum usuário.
+    O Windows Hello para empresas é um método alternativo para entrar no Windows, substituindo senhas, cartões inteligentes e cartões inteligentes virtuais.  
+
+  - Quando definido como *Sim*, você habilita essa política e o dispositivo provisiona o Windows Hello para empresas.  
+  - Quando definido como *não configurado*, a linha de base não afeta a configuração de política do dispositivo. Isso significa que, se o Windows Hello para empresas estiver desabilitado em um dispositivo, ele permanecerá desabilitado. Se estiver habilitado, ele permanecerá habilitado. 
+
+  Não é possível desabilitar o Windows Hello para empresas por meio desta linha de base. Você pode desabilitar o Windows Hello para empresas ao configurar o [registro do Windows](windows-hello.md)ou como parte de um perfil de configuração do dispositivo para a proteção de [identidade](identity-protection-configure.md).  
 
   **Padrão**: Sim
 
