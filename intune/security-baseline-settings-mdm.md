@@ -1,7 +1,7 @@
 ---
 title: Configurações de linhas de base de segurança do Intune para Windows 10
 titleSuffix: Microsoft Intune
-description: Configurações de linha de base de segurança do Intune para gerenciar o Windows 10
+description: Examine os padrões e as configurações disponíveis que são encontradas na linha de base de segurança do MDM do Windows para dispositivos Windows 10 gerenciados com o Intune.
 author: brenduns
 ms.author: brenduns
 manager: dougeby
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2ff902530b6f7001e23300b01f6576f0a7fc2637
-ms.sourcegitcommit: 1d4aec7b79c70d35ec3fc29df6ff9c6a1403412e
+ms.openlocfilehash: 0c307c7baaef77c697b486adb63a2cee089e1007
+ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68491897"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68671035"
 ---
 # <a name="mdm-security-baseline-settings-for-intune"></a>Configurações de linha de base de segurança do MDM para o Intune  
 
@@ -1863,7 +1863,7 @@ As seguintes configurações são:
 - **Suporte à criptografia do Internet Explorer**  
 
 *[Revisado]* [**Internet Explorer**](#internet-explorer):
-- **Prompt automático da zona Internet do Internet Explorer para downloads de arquivo** > o valor padrão agora está desabilitado. Em visualização, isso foi definido como habilitado.
+- **Prompt automático da zona Internet do Internet Explorer para downloads de arquivo** > o valorpadrão agora está desabilitado. Em visualização, isso foi definido como habilitado.
 
 *[Novo]* [**Assistência remota**](#remote-assistance):  
 - **Assistência remota solicitada** 

@@ -1,6 +1,6 @@
 ---
 title: Usar o Microsoft defender ATP no Microsoft Intune – Azure | Microsoft Docs
-description: Veja como habilitar o Microsoft defender ATP (proteção avançada contra ameaças) em um cenário de ponta a ponta, incluindo a ativação do Microsoft defender ATP no Intune e na central de segurança do Microsoft defender, dispositivos integrados usando um Microsoft defender ATP Perfil de configuração, criar uma política de conformidade do dispositivo do Intune, criar uma política de acesso condicional do Azure AD e monitorar a conformidade do dispositivo.
+description: Use a proteção avançada contra ameaças do Microsoft defender (Microsoft defender ATP) com o Intune, incluindo instalação e configuração, integração de seus dispositivos do Intune com ATP e, em seguida, use uma avaliação de risco ATP de dispositivos com a conformidade do dispositivo do Intune e a condicional políticas de acesso para proteger os recursos de rede.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6ebde15eb39a61bbbafbe40020d90d9bebdce8cf
-ms.sourcegitcommit: 7273100afc51fd808558dc05c651358145d4fa6b
+ms.openlocfilehash: 8508915f0b4711b2aa65465dd7ac79f575a8d008
+ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68533167"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68670970"
 ---
 # <a name="enforce-compliance-for-microsoft-defender-atp-with-conditional-access-in-intune"></a>Impor a conformidade para o Microsoft defender ATP com acesso condicional no Intune  
 
@@ -179,7 +179,7 @@ Em seguida, monitore o estado dos dispositivos que têm a política de conformid
 2. Selecione **Conformidade do dispositivo** > **Conformidade com a política**.
 3. Localize sua política do Microsoft defender ATP na lista e veja quais dispositivos estão em conformidade ou em não conformidade.
 
-## <a name="next-steps"></a>Passos seguintes  
+## <a name="next-steps"></a>Passos Seguintes  
 
 [Acesso condicional do Microsoft defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/conditional-access)   
 [Painel de riscos do Microsoft defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/security-operations-dashboard)  

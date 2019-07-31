@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 926d31e226bd25890afe5214b9e8c9247f7316a2
-ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
+ms.openlocfilehash: d0f155a9a4900ed10b2030af3c80c13def0bb82e
+ms.sourcegitcommit: c715c93bb242f4fe44bbdf2fd585909854ed72b6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67572173"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68660914"
 ---
 # <a name="network-access-control-nac-integration-with-intune"></a>Integração de controlo de acesso à rede (NAC) com o Intune
 
@@ -43,13 +43,13 @@ Para os dispositivos cujo acesso aos recursos está bloqueado, o serviço de blo
 
 ## <a name="nac-and-conditional-access"></a>NAC e acesso condicional
 
-O NAC funciona com acesso condicional para fornecer decisões de controlo de acesso. Para obter mais informações, consulte [formas comuns de utilizar o acesso condicional com o Intune](conditional-access-intune-common-ways-use.md).
+O NAC funciona com acesso condicional para fornecer decisões de controle de acesso. Para obter mais informações, consulte [maneiras comuns de usar o acesso condicional com o Intune](conditional-access-intune-common-ways-use.md).
 
 ## <a name="how-the-nac-integration-works"></a>Como funciona a integração de NAC
 
 A lista seguinte é uma descrição geral sobre como a integração do NAC funciona quando integrada com o Intune. Os três primeiros passos (1 a 3) explicam o processo de inclusão. Assim que a solução de NAC estiver integrada com o Intune, os passos 4 a 9 descrevem a operação em curso.
 
-![Imagem conceptual de como o NAC funciona com o Intune](./media/ca-intune-common-ways-2.png)
+![Imagem conceitual de como o NAC funciona com o Intune](./media/ca-intune-common-ways-2.png)
 
 1. Registe a solução de parceiro de NAC com o Azure Active Directory (AAD) e conceda permissões delegadas à API de NAC do Intune.
 2. Configure a solução de parceiro de NAC com as definições adequadas, incluindo o URL de deteção do Intune.
@@ -61,40 +61,40 @@ A lista seguinte é uma descrição geral sobre como a integração do NAC funci
 8. Uma vez que o dispositivo esteja inscrito e em conformidade, a solução de parceiro de NAC obtém o estado do Intune.
 9. A ligação é estabelecida com êxito, o que permite que o dispositivo aceda aos recursos empresariais.
 
-## <a name="use-nac-for-vpn-on-your-ios-devices"></a>Utilizar o NAC para VPN nos seus dispositivos iOS  
+## <a name="use-nac-for-vpn-on-your-ios-devices"></a>Usar o NAC para VPN em seus dispositivos iOS  
 
-- NAC está disponível as seguintes VPNs sem ativar NAC no perfil da VPN:
+- O NAC está disponível nas seguintes VPNs sem habilitar o NAC no perfil de VPN:
 
   - NAC para Cisco Legacy AnyConnect
-  - F5 Herdado de acesso
+  - F5 acesso herdado
   - Citrix VPN
 
-- NAC também está disponível para SSO de Citrix e acesso de F5. Para ativar o NAC para Citrix SSO:
+- O NAC também está disponível para acesso Citrix SSO e F5. Para habilitar o NAC para SSO da Citrix:
 
-  - Utilizar o Gateway da Citrix 12.0.59 ou superior.  
-  - Os utilizadores têm de ter Citrix SSO 1.1.6 ou posterior instalado.
-  - [Integrar o NetScaler com o Intune para NAC](https://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html) conforme descrito na documentação do produto Citrix.
-  - No perfil da VPN, selecione **definições de Base** > **ativar o controlo de acesso de rede (NAC)** > selecione **concordo**.
+  - Use o 12.0.59 do gateway da Citrix ou superior.  
+  - Os usuários devem ter o Citrix SSO 1.1.6 ou posterior instalado.
+  - [Integre o Netscaler ao Intune para NAC](https://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html) , conforme descrito na documentação do produto Citrix.
+  - No perfil VPN, selecione **configurações** > **de base habilitar o NAC (controle de acesso à rede)** > selecione **concordo**.
 
-  A ligação VPN está desligada a cada 24 horas por motivos de segurança. A VPN imediatamente possam ser reconectada.
+  A conexão VPN é desconectada a cada 24 horas por motivos de segurança. A VPN pode ser imediatamente reconectada.
 
-- Para ativar o NAC para acesso de F5:
+- Para habilitar o NAC para acesso F5:
 
-  - Use F5 BIG-IP 13.1.1.5. 14 de BIG-IP não é suportada.
-  - Integre o BIG-IP com o Intune para NAC. O [descrição geral: Configuração de APM para uma postura de dispositivo verifica com sistemas de gestão do ponto de extremidade](https://support.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-client-configuration-7-1-6/6.html#guid-0bd12e12-8107-40ec-979d-c44779a8cc89) F5 guia lista os passos.
-  - No perfil da VPN, selecione **definições de Base** > **ativar o controlo de acesso de rede (NAC)** > selecione **concordo**.
+  - Use F5 BIG-IP 13.1.1.5. Não há suporte para BIG-IP 14.
+  - Integre BIG-IP ao Intune para NAC. A [visão geral: Configurar o APM para verificações de postura de dispositivo com](https://support.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-client-configuration-7-1-6/6.html#guid-0bd12e12-8107-40ec-979d-c44779a8cc89) o guia de sistemas de gerenciamento de pontos de extremidade F5 lista as etapas.
+  - No perfil VPN, selecione **configurações** > **de base habilitar o NAC (controle de acesso à rede)** > selecione **concordo**.
 
-  A ligação VPN está desligada a cada 24 horas por motivos de segurança. A VPN imediatamente possam ser reconectada.
+  A conexão VPN é desconectada a cada 24 horas por motivos de segurança. A VPN pode ser imediatamente reconectada.
 
-- Controlo de acesso de rede não é suportado para o cliente VPN seguinte no iOS:
+- O controle de acesso à rede não tem suporte para o seguinte cliente VPN no iOS:
   - Cisco AnyConnect
 
-Estamos a trabalhar com os nossos parceiros para liberar uma solução NAC destes clientes mais recentes. Quando as soluções são prontas, este artigo será atualizado com informações adicionais.
+Estamos trabalhando com nossos parceiros para lançar uma solução de NAC para esses clientes mais recentes. Quando as soluções estiverem prontas, este artigo será atualizado com informações adicionais.
 
 ## <a name="next-steps"></a>Passos Seguintes
 
-- [Integrar o Cisco ISE com o Intune](http://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html)
-- [Integrar o Citrix NetScaler com o Intune](http://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html)
-- [Integrar o Gestor de políticas de acesso do F5 BIG-IP com o Intune](https://support.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-client-configuration-13-0-0/6.html)
+- [Integrar o Cisco ISE com o Intune](https://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html)
+- [Integrar o Citrix NetScaler com o Intune](https://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html)
+- [Integrar o Gerenciador de políticas de acesso de BIG-IP do F5 ao Intune](https://support.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-client-configuration-13-0-0/6.html)
 - [Integrar o HP Aruba ClearPass com o Intune](https://support.arubanetworks.com/Documentation/tabid/77/DMXModule/512/Command/Core_Download/Default.aspx?EntryId=31271)
-- [Integrar o secRMM (Gestor de Suportes de Dados Amovíveis de Segurança) da Squadra com o Intune](http://www.squadratechnologies.com/StaticContent/ProductDownload/secRMM/9.9.0.0/secRMMIntuneAccessControlSetupGuide.pdf)
+- [Integrar o secRMM (Gestor de Suportes de Dados Amovíveis de Segurança) da Squadra com o Intune](https://www.squadratechnologies.com/StaticContent/ProductDownload/secRMM/9.9.0.0/secRMMIntuneAccessControlSetupGuide.pdf)

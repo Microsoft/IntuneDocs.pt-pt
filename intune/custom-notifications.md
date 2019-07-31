@@ -1,12 +1,12 @@
 ---
 title: Enviar notificações personalizadas para usuários com Microsoft Intune
-titleSuffix: ''
+titleSuffix: Microsoft Intune
 description: Use o Intune para criar e enviar notificações por push personalizadas para usuários de dispositivos iOS e Android
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 7/18/2019
+ms.date: 07/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1caff820daf2e278c50d154873f569163b264315
-ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
+ms.openlocfilehash: f938afb738e75789194db0c74fee56deb1476dbc
+ms.sourcegitcommit: c715c93bb242f4fe44bbdf2fd585909854ed72b6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377086"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68660385"
 ---
 # <a name="send-custom-notifications-in-intune"></a>Enviar notificações personalizadas no Intune  
 

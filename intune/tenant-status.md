@@ -14,14 +14,14 @@ ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 946d46baf17a5ffdd4b567adca32b651cacb72bb
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: c744878c49dfa5adb1b4f64587abfe06151a69a0
+ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67882229"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68670978"
 ---
-# <a name="intune-tenant-status-page"></a>Página status do locatário do Intune
+# <a name="use-the-intune-tenant-status-page"></a>Usar a página status do locatário do Intune
 A página de status do locatário é um hub centralizado no qual você pode exibir os detalhes atuais e importantes sobre seu locatário. Os detalhes incluem disponibilidade e uso da licença, status do conector e comunicações importantes sobre o serviço do Intune.  
 
 Para exibir o painel, na portal do Azure acesse o **Intune > status do locatário**.  O status do locatário aparece no **grupo ajuda e suporte**.  
@@ -29,7 +29,7 @@ Para exibir o painel, na portal do Azure acesse o **Intune > status do locatári
 A página é dividida em quatro áreas:
 
 ## <a name="tenant-details"></a>Detalhes do locatário
-Os detalhes do locatário fornecem informações rápidas sobre seu locatário. Exiba detalhes como o nome do locatário e o local, sua autoridade de MDM e o número de versão do serviço de locatários. O número de versão do serviço é um link que abre o artigo *novidades no Intune* no Microsoft docs. Nas novidades, você pode ler sobre os recursos e as atualizações mais recentes para o serviço do Intune.  
+Os detalhes do locatário fornecem informações rápidas sobre seu locatário. Exiba detalhes como o nome do locatário e o local, sua autoridade de MDM e o número de versão do serviço de locatários. O número de versão do serviço é um link que abre o artigo *novidades no Intune* no Microsoft docs. Nas *novidades*, você pode ler sobre os recursos e as atualizações mais recentes para o serviço do Intune.  
 
 Esta seção também fornece informações básicas sobre suas licenças disponíveis e quantos são atribuídos aos usuários. As licenças para dispositivos não são mostradas.
 

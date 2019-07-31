@@ -7,14 +7,35 @@ ms.topic: include
 ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: eec9a275a87b3e1bcfc42e197d95b4a4b315d018
-ms.sourcegitcommit: 948ff8f56639e6dc7091134a0efd8d44efca63f2
+ms.openlocfilehash: 4423e731bc1538cd2454de32f0d50f2d08eedc69
+ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/27/2019
-ms.locfileid: "68591071"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68670941"
 ---
 Esses avisos fornecem informações importantes que podem ajudá-lo a se preparar para futuras alterações e recursos do Intune. 
+
+
+### <a name="decreasing-support-for-android-device-administrator"></a>Diminuindo o suporte para o administrador do dispositivo Android 
+O administrador do dispositivo Android (às vezes chamado de gerenciamento do Android "herdado" e lançado com o Android 2,2) é uma maneira de gerenciar dispositivos Android. No entanto, a funcionalidade de gerenciamento aprimorada agora está disponível com o [Android Enterprise]( https://docs.microsoft.com/intune/connect-intune-android-enterprise) (lançado com Android 5,0). Em um esforço para migrar para o gerenciamento de dispositivos moderno, mais avançado e seguro, o Google está diminuindo o suporte ao administrador de dispositivos em novas versões do Android.
+
+#### <a name="how-does-this-affect-me"></a>Como é que isto me afeta?
+Devido a essas alterações feitas pelo Google, os usuários do Intune serão afetados das seguintes maneiras: 
+- O Intune só poderá fornecer suporte para dispositivos Android gerenciados pelo administrador do dispositivo que executam o Android 10 e posterior (também conhecido como Android Q) até o verão de 2020. Essa data é quando espera-se que a próxima versão principal do Android seja lançada.  
+- Dispositivos gerenciados pelo administrador do dispositivo que estão executando o Android 10 ou posterior após o verão 2020 não poderão ser totalmente gerenciados.    
+- Os dispositivos Android gerenciados pelo administrador do dispositivo que permanecem em versões do Android abaixo do Android 10 não serão afetados e poderão continuar sendo totalmente gerenciados com o administrador do dispositivo.  
+- Para todos os dispositivos Android 10 e posteriores, o Google restringiu a capacidade para que os agentes de gerenciamento de administrador de dispositivos, como Portal da Empresa, acessem informações de identificador de dispositivo. Isso afeta os seguintes recursos do Intune após uma atualização do dispositivo para o Android 10 ou posterior: 
+    - O controle de acesso à rede para VPN não funcionará mais.  
+    - Identificar dispositivos como corporativos com IMEI ou número de série não marcará automaticamente os dispositivos como corporativos. 
+    - IMEI e número de série não estarão mais visíveis para os administradores de ti no Intune. 
+        > [!Note]
+        > Isso afeta somente dispositivos gerenciados pelo administrador do dispositivo no Android 10 e posterior e não afeta os dispositivos gerenciados como Android Enterprise. 
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>O que preciso de fazer para me preparar para esta alteração?
+Para evitar a redução na funcionalidade que entra no verão 2020, recomendamos o seguinte:
+- Não integre novos dispositivos ao gerenciamento de administradores de dispositivos.
+- Se for esperado que um dispositivo receba uma atualização para o Android 10, migre-o do gerenciamento de administradores de dispositivos para o gerenciamento do Android Enterprise e/ou políticas de proteção de aplicativo.
 
 ### <a name="update-your-android-company-portal-app-to-the-latest-version---4536963--"></a>Atualizar seu aplicativo Portal da Empresa Android para a versão mais recente <!--4536963-->
 Periodicamente, o Intune lança atualizações para o aplicativo Android Portal da Empresa. Em novembro de 2018, lançamos uma atualização do portal da empresa, que incluía um comutador de back-end para se preparar para a mudança do Google de sua plataforma de notificação existente para o FCM (firebase Cloud Messaging) do Google. Quando o Google reabrir sua plataforma de notificação existente e mudar para FCM, os usuários finais precisarão ter atualizado seu aplicativo do portal da empresa para pelo menos 2018 versão de novembro para continuar a se comunicar com a Google Play Store.

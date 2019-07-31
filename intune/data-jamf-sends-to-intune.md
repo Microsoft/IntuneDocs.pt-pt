@@ -1,7 +1,7 @@
 ---
-title: Dados JAMF Pro envia para o Intune
+title: O data JAMF pro envia ao Intune
 titleSuffix: Microsoft Intune
-description: Lista de dados que o Jamf Pro envia para o Microsoft Intune
+description: Examine a lista de dados que o JAMF pro envia para Microsoft Intune ao integrar o JAMF pro para gerenciar Macs com o Intune.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 287ed06ddab0b98117aa4a75942087f360e4656d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 86f2f47322e668815d1ff37ce6c2de1e4d6cdc16
+ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048553"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68670904"
 ---
 # <a name="data-jamf-pro-sends-to-intune"></a>Dados que o Jamf Pro envia para o Intune
 
-Quando utiliza [Jamf Pro](https://www.jamf.com) para gerir os seus Macs os utilizadores finais com o Intune, o Jamf Pro recolhe informações de inventário sobre dispositivos macOS geridos. O Jamf Pro reporta as seguintes informações ao Intune:
+Quando você usa o [JAMF pro](https://www.jamf.com) para gerenciar seus Macs de usuários finais com o Intune, o JAMF pro captura informações de inventário sobre dispositivos MacOS gerenciados. O Jamf Pro reporta as seguintes informações ao Intune:
 
 * ID do Azure AD do Dispositivo
 * Estado de Inventário do JAMF (estado de inventário de um computador registado através do Jamf Pro nas últimas 24 horas)
@@ -58,7 +58,7 @@ Quando utiliza [Jamf Pro](https://www.jamf.com) para gerir os seus Macs os utili
 * Velocidade da NIC
 * Número de Núcleos
 * Número de Processadores
-* SO
+* OS
 * Plataforma
 * Velocidade do Processador
 * Tipo de processador

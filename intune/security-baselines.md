@@ -1,6 +1,6 @@
 ---
 title: Usar linhas de base de segurança no Microsoft Intune-Azure | Microsoft Docs
-description: Adicione ou defina as configurações de segurança do Windows recomendadas para proteger o usuário e os dados em dispositivos com Microsoft Intune para gerenciamento de dispositivo móvel. Habilitar o BitLocker, configurar a proteção avançada contra ameaças do Microsoft defender, controlar o Internet Explorer, usar tela inteligente, definir políticas de segurança local, exigir uma senha, bloquear downloads da Internet e muito mais.
+description: Use as configurações de segurança do Windows recomendadas para proteger o usuário e os dados em dispositivos com Microsoft Intune para gerenciamento de dispositivo móvel. Habilitar a criptografia, configurar a proteção avançada contra ameaças do Microsoft defender, controlar o Internet Explorer, definir políticas de segurança locais, exigir uma senha, bloquear downloads da Internet e muito mais.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bbab505d668f0e348b3b4d34fb2c39ac683f340b
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: 252a42b9c8ef6612301bc913e187295be47d27bb
+ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68353589"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68671025"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Usar linhas de base de segurança para configurar dispositivos Windows 10 no Intune
 
@@ -149,7 +149,7 @@ Após a gravação, depois que a conversão for concluída, a linha de base ser�
 
 ### <a name="to-change-the-instance-for-a-baseline"></a>Para alterar a instância de uma linha de base  
 
-1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) e selecione**linhas de base de segurança**de  > dispositivo e selecione o bloco para o tipo de linha de base que tem o perfil que você deseja alterar.  
+1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) e selecione**linhas de base de segurança**de > dispositivo e selecione o bloco para o tipo de linha de base que tem o perfil que você deseja alterar.  
 
 2. Em seguida, selecione **perfis**e marque a caixa de seleção do perfil que você deseja editar e, em seguida, selecione **alterar versão**.  
 
@@ -200,7 +200,7 @@ Estritamente falando, não. A equipe de segurança da Microsoft consulta as orga
 
 - A migração do local Active Directory políticas de grupo para uma solução de nuvem pura usando Azure Active Directory (AD) com Microsoft Intune é uma jornada. Para ajudar, há modelos de política de grupo incluídos no [Security Compliance Toolkit](https://docs.microsoft.com/windows/security/threat-protection/security-compliance-toolkit-10) que podem ajudar a gerenciar dispositivos ingressados no AD híbrido e no Azure AD. Esses dispositivos podem obter as configurações de MDM da nuvem (Intune) e as configurações de política de grupo de controladores de domínio locais, conforme necessário.
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Passos seguintes
 - Exiba as configurações nas versões mais recentes das linhas de base disponíveis:  
   - [Linha de base de segurança do MDM](security-baseline-settings-mdm.md)  
   - [Linha de base do Microsoft defender ATP](security-baseline-settings-defender-atp.md)  

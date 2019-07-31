@@ -5,7 +5,7 @@ services: microsoft-intune
 author: ErikRe
 ms.author: erikre
 manager: dougeby
-ms.date: 04/15/2019
+ms.date: 07/30/2019
 ms.topic: quickstart
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d3c14d55201f88f5090f404ca9a79dd902c8da5e
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: efd4e8d013f0205541f6fcc37bb0bb8b5ea75bac
+ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041330"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68670852"
 ---
 # <a name="quickstart-enroll-your-windows-10-device"></a>Início rápido: Inscrever o seu dispositivo Windows 10
 
-Neste guia de início rápido, irá assumir a função de utilizador do Intune e inscrever o seu dispositivo com o Windows 10 no Microsoft Intune. Em seguida, irá regressar ao Intune e confirme que o dispositivo inscrito.
+Neste guia de início rápido, irá assumir a função de utilizador do Intune e inscrever o seu dispositivo com o Windows 10 no Microsoft Intune. Em seguida, você retornará ao Intune e confirmará que o dispositivo está registrado.
 
 Inscrever os seus dispositivos no Microsoft Intune permite que os dispositivos com o Windows 10 acedam aos dados seguros da sua organização, incluindo o e-mail, ficheiros e outros recursos. Isto aplica-se a computadores com o Windows 10 e a dispositivos móveis com o Windows 10 Mobile. A inscrição dos dispositivos ajuda a proteger o seu acesso e o da sua organização e ajuda a manter os dados de trabalho separados dos seus dados pessoais.
 
@@ -71,7 +71,7 @@ Antes de inscrever o seu dispositivo Windows 10 Desktop, tem de confirmar a vers
 
     ![Selecione Contas, Aceder a profiss./escolar](media/quickstart-enroll-windows-device/quickstart-enroll-windows-device-04.png)
 
-3. Inicie sessão no Intune com a sua conta profissional ou escolar e, em seguida, selecione **Seguinte**. Se tiver seguido os [criar um utilizador e atribuir uma licença](quickstart-create-user.md) início rápido, pode iniciar sessão com a conta de utilizador que criou.
+3. Inicie sessão no Intune com a sua conta profissional ou escolar e, em seguida, selecione **Seguinte**. Se você seguiu o guia de início rápido [criar um usuário e atribuir uma licença](quickstart-create-user.md) , você pode entrar com a conta de usuário que você criou.
 
     > [!NOTE]
     > Se estiver a configurar uma conta ".onmicrosoft.com", a conta de utilizador apresentará o domínio **.onmicrosoft.com** como parte do respetivo endereço. 
@@ -91,7 +91,7 @@ Antes de inscrever o seu dispositivo Windows 10 Desktop, tem de confirmar a vers
 ## <a name="confirm-your-device-enrollment-in-intune"></a>Confirmar a inscrição do dispositivo no Intune
 
 1. Inicie sessão no [Intune](https://aka.ms/intuneportal) enquanto Administrador Global ou Administrador de Serviços do Intune.
-2. Selecione **Dispositivos** para ver os dispositivos inscritos no Intune.
+2. Selecione **dispositivos** > **todos os dispositivos** para exibir os dispositivos registrados no Intune.
 3. Verifique se tem um dispositivo adicional inscrito no Intune.
 
    ![Captura de ecrã a mostrar dispositivos inscritos no Intune](media/quickstart-enroll-windows-device/quickstart-enroll-windows-device-07.png)
@@ -107,4 +107,4 @@ Neste guia de início rápido, aprendeu como inscrever um dispositivo com o Wind
 Para seguir esta série de guias de início rápido do Intune, continue para o próximo guia de início rápido.
 
 > [!div class="nextstepaction"]
-> [Início rápido: Definir um comprimento de palavra-passe obrigatório para dispositivos Android](quickstart-set-password-length-android.md)
+> [TUTORIAIS Definir um comprimento de senha necessário para dispositivos Android](quickstart-set-password-length-android.md)

@@ -16,14 +16,14 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 3294959e6b11bb8982afa088acdd7262246c3923
-ms.sourcegitcommit: 2bce5e43956b6a5244a518caa618f97f93b4f727
+ms.openlocfilehash: 64bdc59e08a2b17c82e1798d454f0a0403e61b13
+ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68467430"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68671046"
 ---
-# <a name="monitor-device-encryption"></a>Monitor device encryption (Monitorizar encriptação de dispositivos)  
+# <a name="monitor-device-encryption-with-intune"></a>Monitorar a criptografia de dispositivo com o Intune   
 
 O relatório de criptografia Microsoft Intune é um local centralizado para exibir detalhes sobre o status de criptografia dos dispositivos gerenciados. Exibir detalhes sobre o status de criptografia de um dispositivo e encontrar opções para gerenciar as chaves de recuperação do dispositivo. As opções de chave de recuperação que estão disponíveis dependem do tipo de dispositivo que você está exibindo.  
 
@@ -59,7 +59,7 @@ O painel relatório de criptografia exibe uma lista dos dispositivos que você g
     
     Para obter mais informações, consulte o [provedor de serviços de configuração do BitLocker (CSP)](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) na documentação do Windows.  
 
-  - **Não está pronto**: O dispositivo não tem recursos de criptografia completos, mas ainda oferece suporte à criptografia. Por exemplo, um dispositivo Windows pode ser criptografado manualmente por um usuário ou por meio de Política de Grupo que pode ser definido para permitir a criptografia sem um TMP.
+  - **Não está pronto**: O dispositivo não tem recursos de criptografia completos, mas ainda oferece suporte à criptografia. Por exemplo, um dispositivo Windows pode ser criptografado manualmente por um usuário ou por meio de Política de Grupo que pode ser definido para permitir a criptografia sem um TPM.
   - **Não aplicável**: Não há informações suficientes para classificar este dispositivo.  
 
 - **Status de criptografia** – se a unidade do sistema operacional está criptografada.  
@@ -216,6 +216,6 @@ Quando as chaves não estiverem no Azure AD, o Intune não exibirá *nenhuma cha
 
 As informações do BitLocker são obtidas usando o [provedor de serviços de configuração do BitLocker](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) (CSP). O CSP do BitLocker tem suporte no Windows 10 versão 1703 e posterior e para o Windows 10 pro versão 1809 e posterior.  
 
-## <a name="next-steps"></a>Passos seguintes  
+## <a name="next-steps"></a>Passos Seguintes  
 
 Criar uma política de [conformidade do dispositivo](compliance-policy-create-windows.md) .
