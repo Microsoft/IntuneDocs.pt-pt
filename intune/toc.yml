@@ -233,6 +233,8 @@
               displayName: gms
             - name: Enroll Android Enterprise dedicated devices or fully managed devices (Inscrever dispositivos dedicados ou dispositivos totalmente geridos do Android Enterprise)
               href: android-dedicated-devices-fully-managed-enroll.md
+            - name: Inscrição de administrador de dispositivos Android
+              href: android-enroll-device-administrator.md
             - name: Manage Android Enterprise work profile devices (Gerir dispositivos com perfis de trabalho do Android Enterprise)
               href: android-enterprise-overview.md
             - name: Samsung Knox Mobile Enrollment
@@ -705,6 +707,8 @@
               items:
                 - name: Troubleshoot iOS device enrollment (Resolver problemas de inscrição de dispositivos iOS)
                   href: troubleshoot-ios-enrollment-errors.md
+                - name: Resolver problemas de inscrição de dispositivos Windows
+                  href: troubleshoot-windows-enrollment-errors.md
             - name: Ajudar os utilizadores a resolver problemas
               href: help-desk-operators.md
             - name: Resolução de problemas de acesso aos recursos da empresa
