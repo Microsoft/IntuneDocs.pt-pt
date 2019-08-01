@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 220327c48712881e57efa1a91b9d00a64ba3e0be
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 7871fa6f8655ff02242135d04385984368d52625
+ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67884691"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68680094"
 ---
 <!-- This article contains the exact baseline details for baseline versions that were previously published in security-baseline-settings-mdm.md.  -->
 
@@ -38,7 +38,7 @@ Quando uma versão de linha de base não tiver mais suporte para uso, ela será 
 
 ## <a name="preview-mdm-security-baseline-for-october-2018"></a>Visualizar: Linha de base de segurança do MDM para outubro de 2018  
 
-*Essa linha de base é substituída pela [linha de base de segurança do MDM para Spring 2019 (19H1)](security-baseline-settings-mdm.md)*
+*Essa linha de base é substituída pela [linha de base de segurança do MDM para maio de 2019](security-baseline-settings-mdm.md)*
 
 ### <a name="above-lock"></a>Acima do bloqueio  
 

@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 252a42b9c8ef6612301bc913e187295be47d27bb
-ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
+ms.openlocfilehash: c378fd3b208396f9d2f83b7bd56f50dbf7a7e3f7
+ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 07/31/2019
-ms.locfileid: "68671025"
+ms.locfileid: "68679986"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Usar linhas de base de segurança para configurar dispositivos Windows 10 no Intune
 
@@ -67,7 +67,7 @@ Os perfis de linha de base de segurança dão suporte a uma [alteração da vers
 As seguintes instâncias de linha de base de segurança estão disponíveis para uso com o Intune. Use os links para exibir as configurações da instância mais recente de cada linha de base. 
 
 - **Linha de base de segurança do MDM**
-  - [Linha de base de segurança do MDM para Spring 2019 (19H1)](security-baseline-settings-mdm.md)
+  - [Linha de base de segurança do MDM para maio de 2019](security-baseline-settings-mdm.md)
   - [Visualizar: Linha de base de segurança do MDM para outubro de 2018](security-baseline-settings-mdm-archive.md)
 
 - **Linha de base do Microsoft defender ATP**  
@@ -200,7 +200,7 @@ Estritamente falando, não. A equipe de segurança da Microsoft consulta as orga
 
 - A migração do local Active Directory políticas de grupo para uma solução de nuvem pura usando Azure Active Directory (AD) com Microsoft Intune é uma jornada. Para ajudar, há modelos de política de grupo incluídos no [Security Compliance Toolkit](https://docs.microsoft.com/windows/security/threat-protection/security-compliance-toolkit-10) que podem ajudar a gerenciar dispositivos ingressados no AD híbrido e no Azure AD. Esses dispositivos podem obter as configurações de MDM da nuvem (Intune) e as configurações de política de grupo de controladores de domínio locais, conforme necessário.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Passos Seguintes
 - Exiba as configurações nas versões mais recentes das linhas de base disponíveis:  
   - [Linha de base de segurança do MDM](security-baseline-settings-mdm.md)  
   - [Linha de base do Microsoft defender ATP](security-baseline-settings-defender-atp.md)  

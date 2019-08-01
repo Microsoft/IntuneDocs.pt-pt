@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bc18ba2210719cbebe77cd5b37024be4bb7b0d3e
-ms.sourcegitcommit: a01f0f3070932e3be44a4f545d4de11d715381ea
+ms.openlocfilehash: 7636e1914e23e7009a25f45f330fe85af2a03536
+ms.sourcegitcommit: 293dfbea2b4756bb9b7df1705a2b5f752dfaa807
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68287224"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "68701018"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>Gerenciar o acesso via Web usando o Microsoft Edge com o Microsoft Intune
 
@@ -76,9 +76,6 @@ Para restringir os aplicativos Web conectados ao Azure AD para usar o Microsoft 
 
 9. Na seção **atribuições** , selecione **usuários e grupos**e, em seguida, escolha os usuários ou grupos aos quais você deseja atribuir essa política.
 
-    > [!NOTE]
-    > Os utilizadores também devem ser visados com a política de Proteção de Aplicações do Intune para receber políticas de Configuração de Aplicações. Para obter mais informações sobre a criação de políticas de Proteção de Aplicações do Intune, veja [O que são as políticas de proteção de aplicações?](app-protection-policy.md).
-
 10. Na secção **Atribuições**, selecione **Aplicações na cloud** para selecionar que aplicações quer proteger com esta política.
 
 Depois que a política acima é configurada, os usuários são forçados a usar o Microsoft Edge para acessar os aplicativos Web conectados ao Azure AD que você protegeu com essa política. Se os usuários tentarem usar um navegador não gerenciado nesse cenário, eles receberão uma mensagem de que eles devem usar o Microsoft Edge.
@@ -96,8 +93,6 @@ O SSO exige que seu dispositivo seja registrado pelo aplicativo Microsoft Authen
 > O registo do dispositivo é uma simples verificação do serviço Azure AD. Ele não requer registro completo do dispositivo e não dá a ele nenhum privilégio adicional no dispositivo.
 
 ## <a name="create-a-protected-browser-app-configuration"></a>Criar uma configuração da aplicação de browser protegido
-
-Para que as configurações de aplicativo sejam aplicadas, o navegador protegido do usuário ou outro aplicativo no dispositivo já deve ser gerenciado pela [política de proteção de aplicativo do Intune](app-protection-policy.md).
 
 Para criar a configuração de aplicativo para o Microsoft Edge:
 
@@ -171,7 +166,7 @@ Configure o Outlook com uma política de proteção de aplicativo que habilita a
 #### <a name="step-2-set-the-app-configuration-setting-to-enable-app-proxy"></a>Passo 2: Definir a definição de configuração de aplicativo para habilitar o proxy de aplicativo
 Direcione o Microsoft Edge com o seguinte par de chave/valor, para habilitar o proxy de aplicativo para o Microsoft Edge:
 
-|    Chave    |    Value    |
+|    Chave    |    Valor    |
 |-------------------------------------------------------------------|-------------|
 |    com.microsoft.intune.mam.managedbrowser.AppProxyRedirection    |    true    |
 
@@ -209,7 +204,7 @@ Use o seguinte par de chave/valor para configurar indicadores gerenciados:
 
 Por padrão, os usuários são exibidos nos sites do myapps que estão configurados para eles dentro de uma pasta dentro de indicadores do Microsoft Edge. A pasta é rotulada com o nome da sua organização.
 
-|    Chave    |    Value    |
+|    Chave    |    Valor    |
 |------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
 |    com.microsoft.intune.mam.managedbrowser.MyApps    |    **Verdadeiro** mostra myapps nos marcadores do Microsoft Edge.<p>**False** oculta myapps no Microsoft Edge.    |
 
@@ -262,7 +257,7 @@ Com o modelo de identidade dupla incorporado ao Microsoft Edge, você pode habil
 
 Use o seguinte par de chave/valor para configurar se essas transições suaves são permitidas:
 
-|    Chave    |    Valor    |
+|    Chave    |    Value    |
 |----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    `com.microsoft.intune.mam.managedbrowser.AllowTransitionOnBlock`    |    **Verdadeiro** permite que o Microsoft Edge migre usuários para seu contexto pessoal para abrir sites bloqueados.<p>**Bloquear** impede que o Microsoft Edge migre usuários. Os usuários simplesmente mostram uma mensagem informando que o site que ele está tentando acessar está bloqueado.    |
 
@@ -287,6 +282,6 @@ A seguir estão considerações adicionais de segurança e privacidade para o Mi
 - Para permitir a autenticação e o acesso à documentação do Intune, * **. Microsoft.com** é isento das configurações de lista de permissões ou de bloqueios. Sempre é permitido.
 - Os usuários podem desativar a coleta de dados. A Microsoft recolhe automaticamente dados anónimos sobre o desempenho e a utilização do Managed Browser para melhorar os produtos e serviços Microsoft. Os utilizadores podem desativar a recolha de dados com a definição **Dados de Utilização** nos respetivos dispositivos. OS utilizadores não têm controlo sobre a recolha destes dados. Em dispositivos iOS, os sites visitados por usuários que têm um certificado expirado ou não confiável não podem ser abertos.
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Passos seguintes
 
 - [O que são as políticas de proteção de aplicações?](app-protection-policy.md) 

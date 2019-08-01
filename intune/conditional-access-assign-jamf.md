@@ -1,7 +1,7 @@
 ---
 title: Política de conformidade do dispositivo para dispositivos Jamf
 titleSuffix: Microsoft Intune
-description: Utilize políticas de conformidade do Microsoft Intune com o Azure Active Directory condicional acesso para o ajudar a proteger os dispositivos geridos pelo Jamf.
+description: Use Microsoft Intune políticas de conformidade com Azure Active Directory acesso condicional para ajudar a proteger dispositivos gerenciados por JAMF.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -17,23 +17,26 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bc4fdaea99a0e8fb247ac6a70b853497927cdc04
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: d23e725db965a249522f7f8fa89f8bb27bc24fd8
+ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045210"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68679998"
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>Impor a conformidade em Macs geridos com o Jamf Pro
 
 Aplica-se a: Intune no portal do Azure
 
-Pode utilizar o Azure Active Directory e políticas de acesso condicional do Microsoft Intune Certifique-se de que os utilizadores finais estão em conformidade com os requisitos da organização. Pode aplicar estas políticas em Macs [geridos com o Jamf Pro](conditional-access-integrate-jamf.md). Para tal, precisa do acesso às consolas do Intune e do Jamf Pro.
+Você pode usar as políticas de acesso condicional Azure Active Directory e Microsoft Intune garantir que os usuários finais estejam em conformidade com os requisitos organizacionais. Pode aplicar estas políticas em Macs [geridos com o Jamf Pro](conditional-access-integrate-jamf.md). Para tal, precisa do acesso às consolas do Intune e do Jamf Pro.
 
 ## <a name="set-up-device-compliance-policies-in-intune"></a>Configurar políticas de conformidade de dispositivos no Intune
 
-1. Abra o Microsoft Azure e navegue para **Intune** > **Conformidade do Dispositivo** > **Políticas**. Pode criar políticas para macOS, incluindo escolher uma série de ações (por exemplo, enviar e-mails de aviso) para os utilizadores não conformes e grupos.
-2. Pesquise os grupos pretendidos e, em seguida, aplique as políticas.
+1. Abra o Microsoft Azure e navegue para **Intune** > **Conformidade do Dispositivo** > **Políticas**. Você pode criar políticas para o macOS, incluindo a escolha de uma série de ações (por exemplo, envio de emails de aviso) para usuários e grupos não compatíveis.
+2. Selecione a política > atribuições. Pode incluir ou excluir grupos de segurança do Azure Active Directory (AD).
+3. Escolha grupos selecionados para ver os grupos de segurança do Azure AD. Selecione os grupos de usuários que você deseja que essa política aplique > escolha salvar para implantar a política para os usuários.
+
+Aplicou a política aos utilizadores. Os dispositivos usados pelos usuários direcionados pela política são avaliados quanto à conformidade e marcados como compliantfor a configuração "exigir que o dispositivo seja marcado como em conformidade" em Azure Active Directory.
 
 > [!Note]
 > O Intune exige que a encriptação total do disco esteja em conformidade.

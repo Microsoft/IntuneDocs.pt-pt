@@ -17,16 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 86f2f47322e668815d1ff37ce6c2de1e4d6cdc16
-ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
+ms.openlocfilehash: ce9a92a9fffad13c6723504735b1b1cb9442f61f
+ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 07/31/2019
-ms.locfileid: "68670904"
+ms.locfileid: "68680023"
 ---
 # <a name="data-jamf-pro-sends-to-intune"></a>Dados que o Jamf Pro envia para o Intune
 
-Quando você usa o [JAMF pro](https://www.jamf.com) para gerenciar seus Macs de usuários finais com o Intune, o JAMF pro captura informações de inventário sobre dispositivos MacOS gerenciados. O Jamf Pro reporta as seguintes informações ao Intune:
+Quando você usa o [JAMF pro](https://www.jamf.com) para gerenciar seus Macs de usuários finais com o Intune, o JAMF pro captura informações de inventário sobre dispositivos MacOS gerenciados. 
+
+## <a name="data"></a>Data  
+O Jamf Pro reporta as seguintes informações ao Intune:  
 
 * ID do Azure AD do Dispositivo
 * Estado de Inventário do JAMF (estado de inventário de um computador registado através do Jamf Pro nas últimas 24 horas)
@@ -69,8 +72,8 @@ Quando você usa o [JAMF pro](https://www.jamf.com) para gerenciar seus Macs de 
 * UDID
 * E-mail do Utilizador
 
-
 Pode remover um dispositivo gerido por Jamf a partir da consola do Intune ao selecionar **Eliminar** na vista **Todos os dispositivos**. A eliminação de dispositivos em massa pode ser ativada ao selecionar múltiplos dispositivos e clicar em **Eliminar**.
 
+## <a name="next-steps"></a>Passos Seguintes
 Obtenha informações sobre como [remover um dispositivo gerido por Jamf na documentação do Jamf Pro](https://www.jamf.com/jamf-nation/articles/80/unmanaging-computers-while-preserving-their-inventory-information). Também pode enviar um pedido de suporte para o [suporte do Jamf](https://www.jamf.com/support/) para obter ajuda adicional. 
 

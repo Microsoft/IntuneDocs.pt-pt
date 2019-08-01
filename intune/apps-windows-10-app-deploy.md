@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d76e170627d7e08cc3da6fe4a48eb14ee839de98
-ms.sourcegitcommit: 948ff8f56639e6dc7091134a0efd8d44efca63f2
+ms.openlocfilehash: 4e46eae92dfa145f1fc2b38379285dbb45b24590
+ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/27/2019
-ms.locfileid: "68590931"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68680063"
 ---
 # <a name="windows-10-app-deployment-using-microsoft-intune"></a>Implementação de aplicações para Windows 10 através do Microsoft Intune 
 
@@ -34,6 +34,8 @@ As aplicações de linha de negócio (LOB) e as aplicações da Microsoft Store 
 > As atualizações mínimas necessárias do Windows 10 para implementar aplicações modernas são as seguintes:
 > - Para o Windows 10 1803: [23 de maio de 2018 – KB4100403 (Compilação 17134.81 do SO)](https://support.microsoft.com/help/4100403/windows-10-update-kb4100403).
 > - Para o Windows 10 1709: [21 de junho de 2018 – KB4284822 (Compilação 16299.522 do SO)](https://support.microsoft.com/help/4284822).
+>
+> Somente o Windows 10 1803 e superior dão suporte à instalação de aplicativos quando não há um usuário primário associado.
 
 ## <a name="windows-10-line-of-business-apps"></a>Aplicações de linha de negócio do Windows 10
 

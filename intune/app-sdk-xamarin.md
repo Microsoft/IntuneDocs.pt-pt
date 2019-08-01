@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7525971f9ab48b92c3274f56cb1046a6fde948a5
-ms.sourcegitcommit: 2614d1b08b8a78cd792aebd2ca9848f391df8550
+ms.openlocfilehash: a8d1ad3648348783306fb0bc1e61defc4197a9d9
+ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67794357"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68680054"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Enlaces Xamarin do SDK da Aplicação Microsoft Intune
 
@@ -114,6 +114,9 @@ Para excluir uma classe de Mam-unificação pelo remapeador, a seguinte propried
   </PropertyGroup>
 ```
 
+> [!NOTE]
+> Neste momento, um problema com o remapeador impede a depuração em aplicativos Xamarin. Android. A integração manual é recomendada para depurar seu aplicativo até que esse problema seja resolvido.
+
 #### <a name="renamed-methodsapp-sdk-androidmdrenamed-methods"></a>[Métodos renomeados](app-sdk-android.md#renamed-methods)
 Em muitos casos, um método disponível na classe Android foi marcado como final na classe de substituição da MAM. Neste caso, a classe de substituição de MAM proporciona um método com um nome semelhante (com o sufixo `MAM`), que deve ser substituído. Por exemplo, quando executar a derivação de `MAMActivity`, em vez de substituir `OnCreate()` e chamar `base.OnCreate()`, `Activity` tem de substituir `OnMAMCreate()` e chamar `base.OnMAMCreate()`.
 
@@ -177,7 +180,7 @@ IMAMEnrollmentManager mgr = MAMComponents.Get<IMAMEnrollmentManager>();
 Para `Xamarin.Forms` aplicativos, `Microsoft.Intune.MAM.Remapper` o pacote executa a `MAM` substituição da classe Mam automaticamente injetando classes na hierarquia de classes de `Xamarin.Forms` classes usadas com frequência. 
 
 > [!NOTE]
-> A integração do Xamarin. Forms deve ser feita além da integração do Xamarin. Android detalhadamente acima.
+> A integração do Xamarin. Forms deve ser feita além da integração do Xamarin. Android detalhadamente acima. O remapeador se comporta de forma diferente para aplicativos Xamarin. Forms, de modo que as substituições de MAM manuais ainda precisarão ser feitas.
 
 Depois que o remapeador for adicionado ao seu projeto, você precisará executar as substituições equivalentes do MAM. Por exemplo, `FormsAppCompatActivity` e `FormsApplicationActivity` podem continuar sendo usados em seu aplicativo, desde que `OnCreate` as substituições `OnMAMCreate` e `OnResume` sejam substituídas pelos equivalentes `OnMAMResume` do MAM e respectivamente.
 
@@ -199,6 +202,9 @@ Isso é esperado porque, quando o remapeador modifica a herança de classes Xama
 
 > [!NOTE]
 > O remapeador reescreve uma dependência que o Visual Studio usa para a conclusão automática do IntelliSense. Portanto, talvez seja necessário recarregar e recompilar o projeto quando o remapeador for adicionado para que o IntelliSense reconheça corretamente as alterações.
+
+#### <a name="troubleshooting"></a>Resolução de problemas
+* Se você estiver encontrando uma tela branca em branco em seu aplicativo na inicialização, talvez seja necessário forçar as chamadas de navegação a serem executadas no thread principal.
 
 ### <a name="company-portal-app"></a>Aplicação Portal da Empresa
 As associações do Xamarin SDK do Intune dependem da presença do aplicativo [portal da empresa](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) Android no dispositivo para habilitar as políticas de proteção do aplicativo. O Portal da Empresa obtém as políticas de proteção de aplicações do serviço Intune. Quando a aplicação é inicializada, é carregada a política e o código para impor essa política a partir do Portal da Empresa. O usuário não precisa estar conectado.

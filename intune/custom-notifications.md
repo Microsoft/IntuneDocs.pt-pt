@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f938afb738e75789194db0c74fee56deb1476dbc
-ms.sourcegitcommit: c715c93bb242f4fe44bbdf2fd585909854ed72b6
+ms.openlocfilehash: 3a4314abec83bc31cd6fe178873ba5bce7bf1a0c
+ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68660385"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68680109"
 ---
 # <a name="send-custom-notifications-in-intune"></a>Enviar notificações personalizadas no Intune  
 
@@ -38,8 +38,9 @@ As mensagens de notificação personalizadas incluem um título curto e um corpo
 ## <a name="considerations-for-using-custom-notifications"></a>Considerações sobre o uso de notificações personalizadas  
 
 **Configuração do dispositivo**:  
-- Os dispositivos devem ter o aplicativo Portal da Empresa instalado antes que os usuários possam receber notificações personalizadas. Eles também devem ter as permissões configuradas para permitir que o aplicativo Portal da Empresa envie notificações por push. O Portal da Empresa solicitará que os usuários permitam notificações.  
+- Os dispositivos devem ter o aplicativo Portal da Empresa instalado antes que os usuários possam receber notificações personalizadas. Eles também devem ter as permissões configuradas para permitir que o aplicativo Portal da Empresa envie notificações por push. O Portal da Empresa solicitará que os usuários permitam notificações sempre que ele for instalado ou atualizado.  
 - No Android, Google Play Services é uma dependência necessária.  
+- O dispositivo deve ser registrado como MDM.
 
 **Criando notificações**:  
 - Para criar uma mensagem, use uma conta que seja atribuída a uma função do Intune que inclua a permissão **Atualizar** para a **organização**. Para atribuir permissões a um usuário, consulte [atribuições de função](role-based-access-control.md#role-assignments)  
