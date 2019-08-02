@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/16/2019
+ms.date: 07/24/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c3955710dfbe57023533f737f0ae69df80f863e6
-ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
+ms.openlocfilehash: 758230d3d2f1dd1cb42532cce9fe1ff530000a16
+ms.sourcegitcommit: d2ac912b834c4840de9cc92ba1815b6ecfbfb52b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67735709"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68482863"
 ---
 # <a name="configure-the-microsoft-managed-home-screen-app-for-android-enterprise"></a>Configurar o aplicativo de tela inicial gerenciado pela Microsoft para Android Enterprise
 
@@ -63,12 +63,12 @@ A tabela a seguir lista as chaves de configuração, os tipos de valor, os valor
 | Habilitar barra de status do dispositivo | bool | VERDADEIRO | Habilita a barra de status na tela inicial (barra superior que exibe as conexões atuais, como WiFi e etc.). Se você habilitar essa chave de configuração, o usuário final poderá ver os ícones exibidos nas barras de status que representam conexões e aplicativos ativos. |
 | Habilitar notificação de notificações | bool | FALSO | Habilita o crachá de notificação para ícones de aplicativo que mostra o número de novas notificações no aplicativo. Se você habilitar essa configuração, os usuários finais verão selos de notificação em aplicativos que têm notificações não lidas. Se você mantiver essa chave de configuração desabilitada, o usuário final não verá nenhuma notificação para aplicativos que possam ter notificações não lidas. |
 | Bloquear tela inicial | bool | VERDADEIRO | Remove a capacidade do usuário final de mover os ícones do aplicativo na tela inicial. Se você habilitar essa chave de configuração, os ícones do aplicativo na tela inicial serão bloqueados e o usuário final não poderá arrastar e soltar para diferentes posições de grade da tela inicial. Se for ativado `false`para, os usuários finais poderão se mover pelos ícones de aplicativo e weblink na tela inicial gerenciada.  |
-| Definir papel de parede do dispositivo | Cadeia de caracteres | Predefinição | Permite definir um papel de parede de sua escolha digitando a URL da imagem que você deseja definir como um papel de parede. |
+| Definir papel de parede do dispositivo | cadeia | Predefinição | Permite definir um papel de parede de sua escolha digitando a URL da imagem que você deseja definir como um papel de parede. |
 | Definir o tamanho do ícone do aplicativo | integer | 2 | Permite definir o tamanho do ícone para os aplicativos exibidos na tela inicial. Você pode escolher os seguintes valores nessa configuração para tamanhos diferentes-0 (menor), 1 (pequeno), 2 (regular), 3 (grande) e 4 (maior). |
 | Definir ícone de pasta de aplicativo | integer | 0 | Permite que você defina a aparência das pastas de aplicativo na tela inicial. Você pode escolher a aparência dos seguintes valores: Quadrado escuro (0);   Círculo escuro (1); Quadrado claro (2); Círculo claro (3). |
 | Habilitar gestos | bool | FALSO | Habilite a capacidade do usuário final de atribuir ações a diferentes gestos, como passar o dedo para cima e passar o dedo para baixo. Se você desabilitar essa chave de configuração, os usuários finais só poderão passar o dedo para a direita se houver uma segunda página e voltar ao home page. |
 | Habilitar rolagem vertical | bool | FALSO | Habilita a rolagem vertical na tela inicial gerenciada. Se você habilitar essa chave de configuração, o usuário final só poderá navegar para páginas diferentes verticalmente em vez de passar o dedo horizontalmente. |
-| Definir tema da tela inicial | Cadeia de caracteres | Tema. claro. azul | Permite que você escolha o tema da tela inicial de um conjunto predefinido de temas com cores diferentes. Você pode escolher os temas a seguir inserindo o valor da cadeia de caracteres no formato a seguir.   Theme. Light. verde. Onde a luz pode ser substituída por escuro para um tema escuro e verde pode ser substituído por azul, amarelo, rosa, vermelho, laranja e roxo. |
+| Definir tema da tela inicial | cadeia | Tema. claro. azul | Permite que você escolha o tema da tela inicial de um conjunto predefinido de temas com cores diferentes. Você pode escolher os temas a seguir inserindo o valor da cadeia de caracteres no formato a seguir.   Theme. Light. verde. Onde a luz pode ser substituída por escuro para um tema escuro e verde pode ser substituído por azul, amarelo, rosa, vermelho, laranja e roxo. |
 | Habilitar encaixe | bool | FALSO | Habilita a seção de encaixe do aplicativo em na parte inferior da tela inicial com aplicativos persistentes exibidos e ponto de entrada para todos os aplicativos instalados. Se você habilitar essa chave de configuração, o usuário final poderá acessar os aplicativos no Dock e também acessar a seção todos os aplicativos para ir para a lista de todas as aplicações instaladas nos dispositivos, independentemente de terem sido ou não permitidos ou não listados. |
 | Definir orientação da tela | integer | 1 | Permite definir a orientação da tela inicial como modo retrato, modo paisagem ou permitir giro automático. Você pode definir a orientação inserindo os valores 1 (para o modo retrato), 2 (para o modo paisagem), 3 (para rotação automática). |
 | Habilitar feed de tela inicial | bool | FALSO | Habilita o feed da tela inicial, que pode ser visto passando o dedo para a esquerda da tela inicial. Esse feed exibe um tipo diferente de conteúdo, como notícias, calendário, aplicativos de usuário frequentes e cartão de assistente de voz Cortana etc. Se você habilitar isso, o usuário final poderá navegar até o feed passando o dedo para a esquerda na tela inicial. |
@@ -79,17 +79,17 @@ A tabela a seguir lista as chaves de configuração, os tipos de valor, os valor
 | Habilitar barra de pesquisa | bool | FALSO | Habilita a barra de pesquisa na tela inicial. Se você habilitar isso, os usuários do dispositivo verão a barra de pesquisa na tela inicial, onde poderão inserir o que quiserem Pesquisar na Web. |
 | Desabilitar aplicativo de configurações | bool | FALSO | Desabilita a página de configurações da tela inicial gerenciada. Se você desabilitar isso, o usuário final do dispositivo não poderá acessar as configurações da tela inicial gerenciada. |
 | Habilitar proteção de tela | bool | FALSO | Para habilitar o modo de proteção de tela ou não. Se definido como true, você pode configurar **screen_saver_image**, **screen_saver_show_time**, **inactive_time_to_show_screen_saver**e **media_detect_screen_saver**. |
-| Imagem de proteção de tela | Cadeia de caracteres |   | Defina a URL da imagem de proteção de tela. Se nenhuma URL for definida, os dispositivos mostrarão a imagem de proteção de tela padrão quando a proteção de tela for ativada. A imagem padrão mostra o ícone do aplicativo de tela inicial gerenciado.  |
+| Imagem de proteção de tela | cadeia |   | Defina a URL da imagem de proteção de tela. Se nenhuma URL for definida, os dispositivos mostrarão a imagem de proteção de tela padrão quando a proteção de tela for ativada. A imagem padrão mostra o ícone do aplicativo de tela inicial gerenciado.  |
 | Proteção de tela mostrar hora | integer | 0 | Fornece a opção para definir a quantidade de tempo em segundos que o dispositivo exibirá a proteção de tela durante o modo de proteção de tela. Se definido como 0, a proteção de tela será mostrada no modo de proteção de tela indefinidamente até que o dispositivo se torne ativo.  |
 | Tempo inativo para habilitar a proteção de tela | integer | 30 | O número de segundos que o dispositivo fica inativo antes de disparar a proteção de tela. Se definido como 0, o dispositivo nunca entrará no modo de proteção de tela. |
 | Detecção de mídia antes de mostrar a proteção de tela | bool | VERDADEIRO | Escolha se a tela do dispositivo deverá mostrar a proteção de tela se o áudio/vídeo estiver sendo reproduzido no dispositivo. Se definido como true, o dispositivo não reproduzirá áudio/vídeo, independentemente do valor em **inactive_time_to_show_scree_saver**. Se definido como false, a tela do dispositivo mostrará a proteção de tela de acordo com o valor definido em **inactive_time_to_show_screen_saver**.   |
 | Botão habilitar página inicial virtual | bool | FALSO | Ative essa configuração para `True` permitir que o usuário final tenha acesso a um botão Home da tela inicial gerenciada que retornará o usuário para a tela inicial gerenciada da tarefa atual em que eles estão.  |
-| Tipo de botão de página inicial virtual | cadeia | swipe_up | Use **swipe_up** para acessar o botão página inicial com um gesto de deslizar para cima. Use **float** para acessar um botão doméstico permanente e persistente que pode ser movido pela tela pelo usuário final. |
+| Tipo de botão de página inicial virtual | Cadeia de caracteres | swipe_up | Use **swipe_up** para acessar o botão página inicial com um gesto de deslizar para cima. Use **float** para acessar um botão doméstico permanente e persistente que pode ser movido pela tela pelo usuário final. |
 | Barra de indicadores de intensidade de sinal e bateria | bool | True  | Ativar essa configuração para `True` mostrar a barra de indicadores de intensidade de sinal e bateria. |
-| Sair da senha do modo de tarefa de bloqueio | cadeia |   | Insira um código de 4-6 dígitos a ser usado para descartar temporariamente o modo de tarefa de bloqueio para solução de problemas. |
+| Sair da senha do modo de tarefa de bloqueio | Cadeia de caracteres |   | Insira um código de 4-6 dígitos a ser usado para descartar temporariamente o modo de tarefa de bloqueio para solução de problemas. |
 | Mostrar configuração de Wi-Fi | bool | FALSO | Ativar essa configuração para `True` permite que o usuário final ative ou desative o Wi-Fi ou conecte-se a redes Wi-Fi diferentes.  |
 | Mostrar configuração de Bluetooth | bool | FALSO | A `True` ativação dessa configuração permite que o usuário final ative ou desative o Bluetooth e se conecte a diferentes dispositivos compatíveis com Bluetooth.   |
-| Os aplicativos na pasta são ordenados por nome | bool | VERDADEIRO | A desativação `False` dessa configuração permite que os itens em uma pasta apareçam na ordem em que são especificados. Caso contrário, eles serão exibidos na pasta alphbetically.   |
+| Os aplicativos na pasta são ordenados por nome | bool | VERDADEIRO | A desativação `False` dessa configuração permite que os itens em uma pasta apareçam na ordem em que são especificados. Caso contrário, eles serão exibidos na pasta em ordem alfabética.   |
 | Pedido de aplicativo habilitado | bool | FALSO | A `True` desativação dessa configuração permite habilitar a capacidade de definir a ordem dos aplicativos, Weblinks e pastas na tela inicial gerenciada. Uma vez habilitado, defina a ordenação com **app_order**. o usuário final ativar ou desativar o Bluetooth e conectar-se a dispositivos compatíveis com Bluetooth diferentes.   |
 | Ordem do aplicativo | bundleArray | FALSO | Permite que você especifique a ordem dos aplicativos, Weblinks e pastas na tela inicial gerenciada. Para usar essa configuração, a **tela bloquear página inicial** deve ser habilitada, **definir o tamanho da grade** deve ser definido e a ordem do **aplicativo habilitada** deve ser definida como. `True`   |
 
@@ -384,6 +384,12 @@ Este é um exemplo de script JSON com todas as chaves de configuração disponí
 }
 ```
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="googles-android-device-policy-app"></a>Aplicativo de política de dispositivo Android do Google
+O aplicativo de tela inicial gerenciado agora fornece acesso ao aplicativo de política de dispositivo Android do Google. O aplicativo de tela inicial gerenciado é um iniciador personalizado usado para dispositivos registrados no Intune como dispositivos do Android Enterprise (AE) dedicados usando o modo de quiosque de vários aplicativos. Você pode acessar o aplicativo de política de dispositivo Android ou orientar os usuários para o aplicativo de política de dispositivo Android, para fins de suporte e depuração. Esse recurso de inicialização está disponível no momento em que o dispositivo é registrado e bloqueado na tela inicial gerenciada. Nenhuma instalação adicional é necessária para usar essa funcionalidade.
+
+## <a name="managed-home-screen-debug-screen"></a>Tela de depuração da tela inicial gerenciada
+Você pode acessar a tela de depuração da tela inicial gerenciada clicando no botão **voltar** até que a tela de depuração seja exibida (clique no botão **voltar** 15 vezes ou mais). Nessa tela de depuração, você pode iniciar o aplicativo de política de dispositivo do Android, exibir e carregar logs ou pausar temporariamente o modo de quiosque para atualizar o dispositivo. Para obter mais informações sobre como pausar o modo de quiosque, consulte o item **sair do modo de quiosque** nas configurações do [dispositivo dedicado](device-restrictions-android-for-work.md#dedicated-device-settings)do Android Enterprise.
+
+## <a name="next-steps"></a>Passos Seguintes
 
 - Para obter mais informações sobre dispositivos Android Enterprise dedicados, consulte [Configurar o registro do Intune de dispositivos Android Enterprise dedicados](android-kiosk-enroll.md).
