@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 921934eead9ff3a1074203dad55ee60f3fe77947
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c626bb50868e6b966eb7c8867f4c4ff7178eadcf
+ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047276"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "68756535"
 ---
 # <a name="intune-on-azure-console-and-legacy-intune-pc-client"></a>Intune na consola do Azure e o cliente de PC do Intune legado
 
@@ -45,7 +45,7 @@ Devido à mudança para os Grupos do Azure AD, a filtragem “baseada nos grupo
 1. Selecione uma vista.
 2. Na caixa **Filtros**, introduza o nome do grupo pelo qual quer filtrar e prima Enter. Deste modo, vai filtrar a vista de lista dos dispositivos nesse grupo específico.
 
-   ![](media/intune-legacy-pc-client/image01.png)
+   ![Entrada suspensa de filtros com nenhum selecionado](media/intune-legacy-pc-client/image01.png)
 
 
 ## <a name="continue-to-manage-windows-7-by-using-intune-pc-client"></a>Continuar a gerir o Windows 7 com o Cliente de PC do Intune
@@ -61,7 +61,7 @@ Para ver uma comparação detalhada entre as capacidades da MDM e do Cliente de 
 Para mudar da gestão de dispositivos Windows 10 com o Cliente de PC do Intune para a gestão com a MDM, siga estes passos:
 
 1. Na consola do Silverlight, execute uma **Eliminação seletiva** para anular a inscrição do dispositivo do Cliente de PC.
-  ![](media/intune-legacy-pc-client/image02.png)
+  ![Aviso popup com o botão de opção ' Apagar seletivamente o dispositivo ' selecionado](media/intune-legacy-pc-client/image02.png)
 2. Volte a inscrever o dispositivo através da [MDM (e/ou Associação Azure AD)](https://docs.microsoft.com/intune/windows-enroll). 
 
 ## <a name="next-steps"></a>Passos Seguintes

@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d76b9581cac6e9d74e83ce50400e14468a13d3e6
-ms.sourcegitcommit: c715c93bb242f4fe44bbdf2fd585909854ed72b6
+ms.openlocfilehash: e3c4b1541de3500089bafc388779a3cfe97fbd29
+ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68664179"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "68756577"
 ---
 # <a name="troubleshoot-windows-device-enrollment-problems-in-microsoft-intune"></a>Solucionar problemas de registro de dispositivo Windows no Microsoft Intune
 
@@ -269,7 +269,120 @@ Se o **escopo** de usuário do MDM for definido como **nenhum**, siga estas e
 4. Defina o **escopo de usuário do MAM** como **nenhum**.
 
 
-## <a name="next-steps"></a>Passos seguintes
+### <a name="an-error-occurred-while-creating-autopilot-profile"></a>Ocorreu um erro ao criar o perfil do AutoPilot.
+
+**Faz** O formato de nomenclatura especificado do modelo de nome do dispositivo não atende aos requisitos. Por exemplo, você usa letras minúsculas para a macro serial, como% serial% em vez de% SERIAL%.
+
+#### <a name="resolution"></a>Resolução
+
+Certifique-se de que o formato de nomenclatura atenda aos seguintes requisitos:
+
+- Crie um nome exclusivo para seus dispositivos. Os nomes devem ter 15 caracteres ou menos e podem conter letras (a-z, A-Z), números (0-9) e hifens (‐).
+- Não podem conter apenas números.
+- Os nomes não podem conter espaço em branco.
+- Use a macro% SERIAL% para adicionar um número de série específico de hardware. Ou use o% RAND: < # of digits >% macro para adicionar uma cadeia de caracteres aleatória de números, a cadeia de caracteres contém < # de dígitos > dígitos. Por exemplo, MYPC-% RAND: 6% gera um nome como MYPC-123456.
+
+### <a name="something-went-wrong-oobeidps"></a>Algo deu errado. OOBEIDPS.
+
+**Faz** Esse problema ocorre se houver um proxy, firewall ou outro dispositivo de rede que está bloqueando o acesso ao IdP (provedor de identidade).
+
+#### <a name="resolution"></a>Resolução
+Verifique se o acesso necessário aos serviços baseados na Internet para o piloto automático não está bloqueado. Para obter mais informações, consulte [requisitos de rede do Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot-requirements-network).
+
+
+### <a name="registering-your-device-for-mobile-management-failed3-0x801c03ea"></a>Registrando seu dispositivo para o gerenciamento móvel (com falha: 3, 0x801C03EA).
+
+**Faz** O dispositivo tem um chip TPM que dá suporte à versão 2,0, mas ainda não foi atualizado para a versão 2,0.
+
+#### <a name="resolution"></a>Resolução
+Atualize o chip do TPM para a versão 2,0.
+
+Se o problema persistir, verifique se o mesmo dispositivo está em dois grupos atribuídos, com cada grupo sendo atribuído a um perfil de piloto automático diferente. Se estiver em dois grupos, determine qual perfil do AutoPilot deve ser aplicado ao dispositivo e, em seguida, remova a atribuição do outro perfil.
+
+Para obter mais informações sobre como implantar um dispositivo Windows no modo de quiosque com o piloto automático, consulte Implantando [um quiosque usando o Windows AutoPilot](https://blogs.technet.microsoft.com/mniehaus/2018/06/07/deploying-a-kiosk-using-windows-autopilot/).
+
+
+### <a name="securing-your-hardware-failed-0x800705b4"></a>Protegendo seu hardware (falha: 0x800705b4).
+
+Erro 800705b4: 
+```
+Securing your hardware (Failed: 0x800705b4)
+Joining your organization's network (Previous step failed)
+Registering your device for mobile management (Previous step failed)
+```
+
+**Faz** O dispositivo Windows de destino não atende a nenhum dos seguintes requisitos:
+
+- O dispositivo deve ter um chip TPM 2,0 físico. Dispositivos com TPMs virtuais (por exemplo, VMs do Hyper-V) ou chips do TPM 1,2 não funcionam com o modo de implantação automática.
+- O dispositivo deve estar executando uma das seguintes versões do Windows:
+    - Windows 10 Build 1703 ou uma versão posterior.
+    - Se o ingresso no Azure AD híbrido for usado, o Windows 10 Build 1809 ou uma versão posterior.
+
+
+#### <a name="resolution"></a>Resolução
+Verifique se o dispositivo de destino atende aos dois requisitos descritos na seção **causa** .
+
+Para obter mais informações sobre como implantar um dispositivo Windows no modo de quiosque com o piloto automático, consulte Implantando [um quiosque usando o Windows AutoPilot](https://blogs.technet.microsoft.com/mniehaus/2018/06/07/deploying-a-kiosk-using-windows-autopilot/).
+
+
+### <a name="something-went-wrong-error-code-80070774"></a>Algo deu errado. Código de erro 80070774.
+
+Erro 0x80070774: Algo deu errado. Confirme se você está usando as informações de entrada corretas e se sua organização usa esse recurso. Você pode tentar fazer isso novamente ou entrar em contato com o administrador do sistema com o código de erro 80070774.
+
+Normalmente, esse problema ocorre antes de o dispositivo ser reiniciado em um cenário híbrido do Azure AD Pilot, quando o dispositivo atinge o tempo limite durante a tela de entrada inicial. Isso significa que o controlador de domínio não pode ser encontrado ou alcançado com êxito devido a problemas de conectividade. Ou que o dispositivo entrou em um estado que não pode ingressar no domínio.
+
+**Faz** A causa mais comum é que a junção híbrida do Azure AD está sendo usada e o recurso atribuir usuário está configurado no perfil do AutoPilot. O uso do recurso atribuir usuário executa uma junção do Azure AD no dispositivo durante a tela de entrada inicial que coloca o dispositivo em um estado em que ele não pode ingressar no seu domínio local. Portanto, o recurso atribuir usuário deve ser usado somente em cenários de ingresso automático no Azure AD padrão.  O recurso deve ser usado em cenários de junção híbridas do Azure AD.
+
+#### <a name="resolution"></a>Resolução
+
+1. Vá para >  **registro** > de dispositivo do Intune dispositivos de registro do Windows. > 
+2. Selecione o dispositivo que está enfrentando o problema > clique nas reticências (...) no lado mais à direita.
+3. Selecione **Cancelar atribuição de usuário** e aguarde a conclusão do processo.
+4. Verifique se o perfil de AutoPilot do Azure AD híbrido foi atribuído antes de tentar novamente o OOBE.
+
+#### <a name="second-resolution"></a>Segunda resolução
+Se o problema persistir, no servidor que hospeda o conector do Intune ingressar no domínio offline, verifique se a ID do evento 30312 está registrada no log do serviço do conector do ODJ. O evento 30312 é semelhante ao seguinte:
+
+```
+Log Name:      ODJ Connector Service
+Source:        ODJ Connector Service Source
+Event ID:      30132
+Level:         Error
+Description:
+{
+          "Metric":{
+                   "Dimensions":{
+                             "RequestId":"<RequestId>",
+                             "DeviceId":"<DeviceId>",
+                             "DomainName":"contoso.com",
+                             "ErrorCode":"5",
+                             "RetryCount":"1",
+                              "ErrorDescription":"Failed to get the ODJ Blob. The ODJ connector does not have sufficient privileges to complete the operation",
+                              "InstanceId":"<InstanceId>",
+                              "DiagnosticCode":"0x00000800",
+                              "DiagnosticText":"Failed to get the ODJ Blob. The ODJ connector does not have sufficient privileges to complete the operation [Exception Message: \"DiagnosticException: 0x00000800. Failed to get the ODJ Blob. The ODJ connector does not have sufficient privileges to complete the operation\"] [Exception Message: \"Failed to call NetProvisionComputerAccount machineName=<ComputerName>\"]"
+                   },
+                   "Name":"RequestOfflineDomainJoinBlob_Failure",
+                   "Value":0
+          }
+}
+```
+
+Esse problema é geralmente causado pela delegação incorreta de permissões para a unidade organizacional em que os dispositivos do Windows AutoPilot são criados. Para obter mais informações, consulte [aumentar o limite de conta de computador na unidade organizacional](windows-autopilot-hybrid.md#increase-the-computer-account-limit-in-the-organizational-unit).
+
+1. Abra **Active Directory usuários e computadores (DSA. msc)** .
+2. Clique com o botão direito do mouse na unidade organizacional que será usada para criar computadores ingressados no Azure AD híbrido > **delegar controle**.
+3. No assistente **de delegação de controle** , selecione **Avançar** > **Adicionar** > **tipos de objeto**.
+4. No painel **tipos de objeto** , marque a caixa de seleção **computadores** > **OK**.
+5. No painel **Selecionar usuários**, **computadores**ou **grupos** , na caixa **Inserir os nomes de objeto a serem selecionados** , digite o nome do computador onde o conector está instalado.
+6. Selecione **verificar nomes** para validar sua entrada > **OK** > **Avançar**.
+7. Selecione **criar uma tarefa personalizada para delegar** > a**próxima**.
+8. Marque a caixa de seleção **apenas os seguintes objetos na pasta** e, em seguida, marque as caixas de seleção **objetos de computador**, **criar objetos selecionados nesta pasta**e **excluir objetos selecionados nesta pasta** .
+9. Selecione **Seguinte**.
+10. Em **permissões**, marque a caixa de seleção **controle total** . Essa ação seleciona todas as outras opções.
+11. Selecione **próxima** > **conclusão**.
+
+## <a name="next-steps"></a>Passos Seguintes
 
 - [Resolução de problemas de inscrição de dispositivos no Intune](troubleshoot-device-enrollment-in-intune.md)
 - [Faça uma pergunta no fórum do Intune](https://social.technet.microsoft.com/Forums/%7Blang-locale%7D/home?category=microsoftintune&filter=alltypes&sort=lastpostdesc)

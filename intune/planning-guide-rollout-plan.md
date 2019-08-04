@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7a369b3bde7967db04a76ae1794d7b8fb86c21e4
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 794a0b7e999c8f42d075da982c7246081ce9ed7d
+ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548422"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "68756397"
 ---
 # <a name="develop-a-rollout-plan"></a>Desenvolver um plano de implementação
 
@@ -93,16 +93,16 @@ Veja a seguir um exemplo atualizado do plano de implementação do Intune acima 
 
 | **Fase de implementação** | **Julho** | **Agosto** | **Setembro** | **Outubro** |
 |:---:|:---:|:---:|:---:|:---:|
-| Piloto Limitado |  |  |  |  |                                                         
+| Piloto Limitado |  |  |  |  |
 | Self-service | TI |  |  |  |
-| Piloto Expandido |  |  |  |  |                                                         
+| Piloto Expandido |  |  |  |  |
 | Self-service | TI |  |  |  |
 | Abordagem meticulosa | Executivos de TI |  |  |  |
 | Primeira fase de implementação de produção |  | Departamento de Vendas e Marketing |  |  |
 | Self-service |  | Departamento de Vendas e Marketing |  |  |
 | Segunda fase de implementação de produção |  |  | Revenda |  |
-| Self-service |  |  |  |  |
-| Terceira fase de implementação de produção |  |  | Revenda |  |
+| Self-service |  |  | Revenda |  |
+| Terceira fase de implementação de produção |  |  |  | Executivos, RH, finanças |
 | Self-service |  |  |  | RH, Finanças |
 | Abordagem meticulosa |  |  |  | Executivos |
 

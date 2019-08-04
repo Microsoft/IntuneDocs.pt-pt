@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/09/2019
+ms.date: 08/01/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -15,12 +15,12 @@ ms.reviewer: kerimh
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5cd4eeec59437c73500fa382a55ecabcd4b6e7f3
-ms.sourcegitcommit: c715c93bb242f4fe44bbdf2fd585909854ed72b6
+ms.openlocfilehash: 11361b65735a7ed7e724a77349e3624e0e35ecaf
+ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68660880"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "68756554"
 ---
 # <a name="delivery-optimization-settings-for-intune"></a>Configurações de otimização de entrega para o Intune
 
@@ -67,6 +67,15 @@ Para configurar o Intune para usar essas configurações, consulte [entregar atu
 | [Idade máxima do cache (em dias)](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#max-cache-age)    | 1511         | Especifique por quanto tempo depois que cada arquivo baixa com êxito que o arquivo é mantido no cache de otimização de entrega em um dispositivo.   <br><br>Com o Intune, você configura a idade do cache em dias. O número de dias que você define é convertido no número de segundos aplicável, que é como o Windows define essa configuração. Por exemplo, uma configuração do Intune de 3 dias é convertida no dispositivo para 259200 segundos (3 dias).  <br><br>**Padrão**:   *Nenhum valor está configurado*     <br><br>**Recomendado**: 7   <br><br>CSP de política: [DOMaxCacheAge](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domaxcacheage)  <br><br>          |
 | Tipo de tamanho máximo do cache  | *Ver detalhes*    | Selecione como gerenciar a quantidade de espaço em disco em um dispositivo usado pela otimização de entrega. Quando não configurado, o tamanho do cache padrão é 20% do espaço livre em disco disponível.  <br><ul><li>**Não configurado** Os</li><br><li>**Absoluta** – especifique o [tamanho máximo absoluto do cache (em GB)](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#absolute-max-cache-size) para configurar a quantidade máxima de espaço em disco que um dispositivo pode usar para otimização de entrega. Quando definido como 0 (zero), o tamanho do cache é ilimitado, embora a otimização de entrega Limpe o cache quando o dispositivo estiver com pouco espaço em disco. <br><br>Requer o Windows 1607<br><br> CSP de política: [DOAbsoluteMaxCacheSize](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-doabsolutemaxcachesize) </li><br><li>**Porcentagem** – especifique o [tamanho máximo do cache (em%)](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#max-cache-size) para configurar a quantidade máxima de espaço em disco que um dispositivo pode usar para otimização de entrega. O percentual é do espaço disponível na unidade, e a otimização de entrega avalia constantemente o espaço disponível na unidade e limpará o cache para manter o tamanho máximo do cache sob o percentual definido. <br><br>Requer o Windows 1511<br><br>CSP de política: [DOMaxCacheSize](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domaxcachesize)  |
 | [Cache de pares de VPN](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#enable-peer-caching-while-the-device-connects-via-vpn)  | 1709  | Selecione **habilitado** para configurar um dispositivo para participar do cache de sistemas pares enquanto estiver conectado por VPN à rede de domínio. Os dispositivos habilitados podem ser baixados ou carregados em outros dispositivos de rede de domínio, seja na VPN ou na rede de domínio corporativo.  <br><br>**Padrão**: Não configurado  <br><br>CSP de política: [DOAllowVPNPeerCaching](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domaxcacheage)    |
+
+## <a name="local-server-caching"></a>Cache do servidor local  
+
+|Definição  |Versão do Windows  |Detalhes  |
+|---------|-----------------|---------|
+|Nomes de host do servidor de cache | 1809  |Especifique o endereço IP ou o FQDN dos servidores de cache de rede que serão usados pelos dispositivos para otimização de entrega e, em seguida, selecione **Adicionar** para adicionar essa entrada à lista.  <br><br>**Padrão**: Não configurado  <br><br>CSP de política: [DOCacheHost](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-docachehost)  |
+|[Atraso de download de primeiro plano do servidor de cache (em segundos)](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#delay-foreground-download-cache-server-fallback-in-secs) | 1903    |Especifique um tempo em segundos (0-2592000) para atrasar o fallback de um servidor de cache para a origem HTTP para um para um download de conteúdo em primeiro plano. Quando a política atrasar o download em primeiro plano do http, ela será aplicada primeiro (para permitir downloads de pares primeiro). (0-2592000)    <br><br>**Padrão**: 0  <br><br>CSP de política [DODelayCacheServerFallbackForeground](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dodelaycacheserverfallbackforeground)  |
+|[Atrasar o fallback do servidor de cache de download em segundo plano (em segundos)](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#delay-background-download-cache-server-fallback-in-secs) | 1903    |Especifique um tempo em segundos (0-2592000) para atrasar o fallback de um servidor de cache para a origem HTTP para um download de conteúdo em segundo plano. Ao *atrasar o download de http em segundo plano (em segundos)* configurado, essa configuração se aplica primeiro para permitir downloads de pares. (0-2592000)   <br><br>**Padrão**: 0 <br><br>CSP de política: [DODelayCacheServerFallbackBackground](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dodelaycacheserverfallbackbackground)  |
+
 
 ## <a name="next-steps"></a>Passos seguintes
 
