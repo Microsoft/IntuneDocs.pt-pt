@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 969e7bc4804e1f66230c76d742bec2c67c2fa006
-ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
+ms.openlocfilehash: 95eede7c62e728aa0dbade4478eb87f31c252558
+ms.sourcegitcommit: a6775522df49d17a4125ccb31be395f2343bdae8
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68670935"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68833543"
 ---
 # <a name="in-development-for-microsoft-intune---august-2019"></a>Em desenvolvimento para Microsoft Intune – agosto de 2019
 
@@ -73,7 +73,7 @@ Para instalações de aplicativos disponíveis em dispositivos Android de perfil
 ## <a name="device-configuration"></a>Configuração do dispositivo
 
 ### <a name="some-unsupervised-ios-device-restrictions-will-become-supervised-only-with-the-ios-130-release----4867809----"></a>Algumas restrições de dispositivo iOS não supervisionadas ficarão supervisionadas somente com a versão iOS 13,0 <!-- 4867809  -->
-Algumas configurações serão aplicadas a dispositivos supervisionados com a versão 13,0 do iOS. Essas configurações incluem:
+Algumas configurações serão aplicadas a dispositivos supervisionados, começando com a versão 13,0 do iOS. Essas configurações incluem:
 
 - App Store, Visualização de Documentos, Jogos
   - Loja de aplicações

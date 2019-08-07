@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3870918378a2b3dd115d6449c3c83d37fe8e96c5
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 269ba2e951ccee2b0fdf2c4cd5a93a9d78aa6923
+ms.sourcegitcommit: e6edfbfd63dd7c2500ce1123205aa2af9a7e8e2e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67884883"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68783246"
 ---
 # <a name="create-a-design"></a>Criar uma estrutura
 
@@ -116,7 +116,7 @@ O Intune oferece duas opções de implementação: autónoma e híbrida. Autôno
 
 ## <a name="intune-tenant-location"></a>Localização de inquilinos do Intune
 
-Se a sua organização tiver uma presença global, quando subscrever o serviço, certifique-se de que planeia onde o seu inquilino reside. O país é definido quando se inscreve numa subscrição do Intune pela primeira vez e mapeado para as regiões do mundo apresentadas abaixo:
+Se a sua organização tiver uma presença global, quando subscrever o serviço, certifique-se de que planeia onde o seu inquilino reside. O país/região é definido quando você se inscreve para uma assinatura do Intune pela primeira vez e é mapeado para países/regiões em todo o mundo, listados abaixo:
 
 - América do Norte
 
@@ -125,7 +125,7 @@ Se a sua organização tiver uma presença global, quando subscrever o serviço,
 - Ásia e Pacífico
 
 >[!IMPORTANT]
-> Não é possível mudar a localização do inquilino nem o país posteriormente.
+> Não é possível alterar o local do país/região e do locatário mais tarde.
 
 ## <a name="external-dependencies"></a>Dependências externas
 
@@ -418,6 +418,6 @@ Veja um exemplo de como documentar políticas de acesso condicional:
 
 Você pode [baixar um modelo da tabela acima](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) para identificar suas necessidades de política de acesso condicional.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Passos Seguintes
 
 A próxima secção fornece orientações sobre o [processo de implementação do Intune](planning-guide-onboarding.md).

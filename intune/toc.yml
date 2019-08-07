@@ -703,18 +703,20 @@
           href: tenant-status.md
         - name: Resolver Problemas
           items:
+            - name: Ajudar os utilizadores a resolver problemas
+              href: help-desk-operators.md
             - name: Troubleshoot enrollment (Resolver problemas de inscrição)
               items:
                 - name: Troubleshoot iOS device enrollment (Resolver problemas de inscrição de dispositivos iOS)
                   href: troubleshoot-ios-enrollment-errors.md
                 - name: Resolver problemas de inscrição de dispositivos Windows
                   href: troubleshoot-windows-enrollment-errors.md
-            - name: Ajudar os utilizadores a resolver problemas
-              href: help-desk-operators.md
             - name: Resolução de problemas de acesso aos recursos da empresa
               href: troubleshoot-company-resource-access-problems.md
             - name: Troubleshoot app installation problems (Resolução de problemas com a instalação de aplicações)
               href: troubleshoot-app-install.md
+            - name: Resolver problemas de ações do dispositivos
+              href: troubleshoot-device-actions.md
             - name: Resolução de problemas de gestão de aplicações móveis
               href: troubleshoot-mam.md
             - name: Registos de auditoria para atividades do Intune
