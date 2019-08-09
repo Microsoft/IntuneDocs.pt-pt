@@ -39,8 +39,8 @@
 ### Perguntas sobre o sistema operativo
 #### [Atualizar o seu dispositivo](you-need-to-update-your-android-device.md)
 #### [Versão não suportada](your-android-version-isnt-yet-supported.md)
-#### [O dispositivo tem root e não liga](your-device-is-rooted-and-you-cant-connect-android.md)
-#### [Certificado necessário em falta](your-device-is-missing-a-required-certificate-landing-android.md)
+#### [Dispositivo desbloqueado por rooting; não é possível ligar](your-device-is-rooted-and-you-cant-connect-android.md)
+#### [Certificado necessário em falta](your-device-is-missing-an-IT-required-certificate-android.md)
 #### [Desativar origens desconhecidas](you-need-to-turn-off-unknown-sources-android.md)
 #### [Desativar a depuração de USB](you-need-to-turn-off-usb-debugging-android.md)
 #### [Ativar a análise de ameaças de segurança](you-need-to-turn-on-scanning-for-security-threats-android.md)
