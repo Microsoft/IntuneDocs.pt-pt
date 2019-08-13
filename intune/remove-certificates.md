@@ -49,7 +49,7 @@ Um certificado SCEP é revogado *e* removido quando:
 
 - Um usuário cancela o registro.
 - Um administrador executa a ação de [apagamento](devices-wipe.md#wipe) .
-- Um administrador executa a [](devices-wipe.md#retire) ação de desativação.
+- Um administrador executa a [ação](devices-wipe.md#retire) de desativação.
 - O dispositivo é removido de um grupo do Azure AD.
 - Um perfil de certificado é removido da atribuição de grupo.
 
@@ -59,7 +59,7 @@ Um certificado SCEP é revogado quando:
 Um certificado raiz é removido quando:
 - Um usuário cancela o registro.
 - Um administrador executa a ação de [apagamento](devices-wipe.md#wipe) .
-- Um administrador executa a [](devices-wipe.md#retire) ação de desativação.
+- Um administrador executa a [ação](devices-wipe.md#retire) de desativação.
 
 Os certificados SCEP *permanecem* no dispositivo (os certificados não são revogados ou removidos) quando:
 - Um usuário perde a licença do Intune.
@@ -72,12 +72,12 @@ Um certificado SCEP é revogado *e* removido quando:
 
 - Um usuário cancela o registro.
 - Um administrador executa a ação de [apagamento](devices-wipe.md#wipe) .
-- Um administrador executa a [](devices-wipe.md#retire) ação de desativação.
+- Um administrador executa a [ação](devices-wipe.md#retire) de desativação.
 
 Um certificado raiz é removido quando:
 - Um usuário cancela o registro.
 - Um administrador executa a ação de [apagamento](devices-wipe.md#wipe) .
-- Um administrador executa a [](devices-wipe.md#retire) ação de desativação.
+- Um administrador executa a [ação](devices-wipe.md#retire) de desativação.
 
 Os certificados PKCS *permanecem* no dispositivo (os certificados não são revogados ou removidos) quando:
 - Um usuário perde a licença do Intune.
@@ -95,7 +95,7 @@ Um certificado SCEP é revogado *e* removido quando:
 
 - Um usuário cancela o registro.
 - Um administrador executa a ação de [apagamento](devices-wipe.md#wipe) .
-- Um administrador executa a [](devices-wipe.md#retire) ação de desativação.
+- Um administrador executa a [ação](devices-wipe.md#retire) de desativação.
 - O dispositivo é removido do grupo do Azure AD.
 - Um perfil de certificado é removido da atribuição de grupo.
 
@@ -105,7 +105,7 @@ Um certificado SCEP é revogado quando:
 Um certificado raiz é removido quando:
 - Um usuário cancela o registro.
 - Um administrador executa a ação de [apagamento](devices-wipe.md#wipe) .
-- Um administrador executa a [](devices-wipe.md#retire) ação de desativação.
+- Um administrador executa a [ação](devices-wipe.md#retire) de desativação.
 
 Os certificados SCEP *permanecem* no dispositivo (os certificados não são revogados ou removidos) quando:
 - Um usuário perde a licença do Intune.
@@ -118,7 +118,7 @@ Um certificado SCEP é revogado *e* removido quando:
 
 - Um usuário cancela o registro.
 - Um administrador executa a ação de [apagamento](devices-wipe.md#wipe) .
-- Um administrador executa a [](devices-wipe.md#retire) ação de desativação.
+- Um administrador executa a [ação](devices-wipe.md#retire) de desativação.
 
 Um certificado PKCS é removido quando:
 - Um perfil de certificado é removido da atribuição de grupo.
@@ -126,7 +126,7 @@ Um certificado PKCS é removido quando:
 Um certificado raiz é removido quando:
 - Um usuário cancela o registro.
 - Um administrador executa a ação de [apagamento](devices-wipe.md#wipe) .
-- Um administrador executa a [](devices-wipe.md#retire) ação de desativação.
+- Um administrador executa a [ação](devices-wipe.md#retire) de desativação.
 
 Os certificados PKCS *permanecem* no dispositivo (os certificados não são revogados ou removidos) quando:
 - Um usuário perde a licença do Intune.
@@ -143,7 +143,7 @@ Um certificado SCEP é revogado *e* removido quando:
 - Um administrador executa a ação de [apagamento](devices-wipe.md#wipe) .
 
 Um certificado SCEP é revogado quando:
-- Um administrador executa a [](devices-wipe.md#retire) ação de desativação.
+- Um administrador executa a [ação](devices-wipe.md#retire) de desativação.
 - O dispositivo é removido de um grupo do Azure AD.
 - Um perfil de certificado é removido da atribuição de grupo.
 - Um administrador remove o usuário ou grupo do Azure AD.
@@ -152,7 +152,7 @@ Um certificado SCEP é revogado quando:
 Um certificado raiz é removido quando:
 - Um usuário cancela o registro.
 - Um administrador executa a ação de [apagamento](devices-wipe.md#wipe) .
-- Um administrador executa a [](devices-wipe.md#retire) ação de desativação.
+- Um administrador executa a [ação](devices-wipe.md#retire) de desativação.
 
 Os certificados SCEP *permanecem* no dispositivo (os certificados não são revogados ou removidos) quando:
 - Um usuário perde a licença do Intune.
@@ -165,12 +165,12 @@ Um certificado SCEP é revogado *e* removido quando:
 
 - Um usuário cancela o registro.
 - Um administrador executa a ação de [apagamento](devices-wipe.md#wipe) .
-- Um administrador executa a [](devices-wipe.md#retire) ação de desativação.
+- Um administrador executa a [ação](devices-wipe.md#retire) de desativação.
 
 Um certificado raiz é removido quando:
 - Um usuário cancela o registro.
 - Um administrador executa a ação de [apagamento](devices-wipe.md#wipe) .
-- Um administrador executa a [](devices-wipe.md#retire) ação de desativação.
+- Um administrador executa a [ação](devices-wipe.md#retire) de desativação.
 
 Os certificados PKCS *permanecem* no dispositivo (os certificados não são revogados ou removidos) quando:
 - Um usuário perde a licença do Intune.
@@ -190,7 +190,7 @@ Os certificados PKCS *permanecem* no dispositivo (os certificados não são revo
 
 Um certificado SCEP é revogado *e* removido quando:
 - Um usuário cancela o registro.
-- Um administrador executa uma [](devices-wipe.md#retire) ação de desativação.
+- Um administrador executa uma ação de [desativação](devices-wipe.md#retire).
 - O dispositivo é removido de um grupo do Azure AD.
 - Um perfil de certificado é removido da atribuição de grupo.
 
