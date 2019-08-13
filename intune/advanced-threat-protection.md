@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8508915f0b4711b2aa65465dd7ac79f575a8d008
-ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
+ms.openlocfilehash: b148abfaeffaf02178e34c3e9abfe86f70fb529c
+ms.sourcegitcommit: ec22a186a9cfa489a8490698e387624e480892d8
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68670970"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68960657"
 ---
 # <a name="enforce-compliance-for-microsoft-defender-atp-with-conditional-access-in-intune"></a>Impor a conformidade para o Microsoft defender ATP com acesso condicional no Intune  
 
@@ -82,11 +82,12 @@ A primeira etapa é configurar a conexão serviço a serviço entre o Intune e o
 Normalmente, executa esta tarefa uma vez. Depois de habilitar o Microsoft defender ATP para seu locatário do Intune, você não precisará fazê-lo novamente.
 
 > [!TIP]  
-> Quando você integra um novo aplicativo à defesa contra ameaças móveis do Intune e habilita a conexão, o Intune cria uma política de acesso condicional clássica em Azure Active Directory. Cada aplicativo MTD que você integra, como o [defender ATP](advanced-threat-protection.md) ou qualquer um de nossos [parceiros MTD](mobile-threat-defense.md#mobile-threat-defense-partners)adicionais, cria uma nova política de acesso condicional clássico.  Essas políticas podem ser ignoradas, mas não devem ser editadas, excluídas ou desabilitadas.
+> Quando você integra um novo aplicativo à defesa contra ameaças móveis do Intune e habilita a conexão com o Intune, o Intune cria uma política de acesso condicional clássica em Azure Active Directory. Cada aplicativo MTD que você integra, incluindo o [defender ATP](advanced-threat-protection.md) ou qualquer um de nossos [parceiros MTD](mobile-threat-defense.md#mobile-threat-defense-partners)adicionais, cria uma nova política de acesso condicional clássico. Essas políticas podem ser ignoradas, mas não devem ser editadas, excluídas ou desabilitadas.
 > 
 > Políticas de acesso condicional clássico para aplicativos MTD: 
 > 
-> - São usados pelo Intune MTD para exigir que os dispositivos sejam registrados no Azure AD para que tenham uma ID de dispositivo. A ID é necessária para que os dispositivos e possam relatar com êxito seu status ao Intune.  
+> - São usados pelo Intune MTD para exigir que os dispositivos sejam registrados no Azure AD para que tenham uma ID de dispositivo antes de se comunicarem com os parceiros do MTD. A ID é necessária para que os dispositivos e possam relatar com êxito seu status ao Intune.  
+> - Não têm nenhum efeito sobre outros aplicativos ou recursos de nuvem.  
 > - São diferentes das políticas de acesso condicional que você pode criar para ajudar a gerenciar o MTD.
 > - Por padrão, não interaja com outras políticas de acesso condicional usadas para avaliação.  
 > 
@@ -112,7 +113,7 @@ Depois de carregar um dispositivo usando o pacote de configuração, você não 
    - **Tipo de pacote de configuração de cliente do Microsoft defender ATP**: Selecione **carregar** para adicionar o pacote de configuração ao perfil. Selecione **Descarregar** para remover o pacote de configuração do perfil.
   
      > [!NOTE]  
-     > Se você estabeleceu corretamente uma conexão com o Microsoft defender ATP, o Intune **integrará automaticamente o** perfil de configuração para você e a configuração do tipo de pacote de **configuração do cliente Microsoft defender ATP** não estará disponível.
+     > Se você estabeleceu corretamente uma conexão com o Microsoft defender ATP, o Intune integrará automaticamente o perfil de configuração para você e a configuração do **tipo de pacote de configuração do cliente Microsoft defender ATP** não estará disponível.
   
     - **Compartilhamento de amostra para todos os arquivos**: **Habilitar** permite que os exemplos sejam coletados e compartilhados com o Microsoft defender ATP. Por exemplo, se você vir um arquivo suspeito, poderá enviá-lo para o Microsoft defender ATP para análise profunda. **Não configurado** não compartilha amostras para o Microsoft defender ATP.
     - **Acelere a frequência de relatórios**de telemetria: Para dispositivos que estão em alto risco, **habilite** essa configuração para que ela relate a telemetria ao serviço Microsoft defender ATP com mais frequência.
@@ -179,7 +180,7 @@ Em seguida, monitore o estado dos dispositivos que têm a política de conformid
 2. Selecione **Conformidade do dispositivo** > **Conformidade com a política**.
 3. Localize sua política do Microsoft defender ATP na lista e veja quais dispositivos estão em conformidade ou em não conformidade.
 
-## <a name="next-steps"></a>Passos Seguintes  
+## <a name="next-steps"></a>Passos seguintes  
 
 [Acesso condicional do Microsoft defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/conditional-access)   
 [Painel de riscos do Microsoft defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/security-operations-dashboard)  

@@ -16,12 +16,12 @@ ms.reviewer: annovich
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 09b5e59f4af534d4919574631568a7581bb3fba9
-ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
+ms.openlocfilehash: b7c76439b734837b5a4dd7e5fdbba5d21d0681d7
+ms.sourcegitcommit: ec22a186a9cfa489a8490698e387624e480892d8
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "68756552"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68960432"
 ---
 # <a name="use-device-encryption-with-intune"></a>Usar a criptografia de dispositivo com o Intune  
 
@@ -69,7 +69,7 @@ Para obter detalhes sobre a configuração de FileVault que você pode gerenciar
 6. Defina as [configurações de FileVault](endpoint-protection-macos.md#filevault) restantes para atender às suas necessidades de negócios e selecione **OK**.  
 
    > [!IMPORTANT]  
-   > Há um problema conhecido quando a configuração **desabilitar prompt em sair** está definida como *habilitar*. Quando definido como *habilitar*, a configuração para o **número de vezes permitido para bypass** deve ser definida como um valor e não deve ser definida como *não*configurada. Se definido como *não configurado*, o perfil falha no dispositivo. Nesse cenário, o dispositivo relata que é um **Resumo de estado de perfil** como **erro** sem mais detalhes.
+   > Há um problema conhecido quando a configuração **desabilitar prompt em sair** está definida como *habilitar*. Quando definido como *habilitar*, a configuração para o **número de vezes permitido para bypass** deve ser definida como um valor e não deve ser definida como *não*configurada. Se definido como *não configurado*, o perfil falha no dispositivo. Nesse cenário, o dispositivo informa o **Resumo do estado do perfil** como **erro** sem mais detalhes.
    > 
    > Quando **desabilitar prompt na saída** estiver definido como *não configurado*, o **número de vezes permitido para bypass** pode *não ser configurado* ou ter um valor.  
    > 

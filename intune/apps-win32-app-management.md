@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 19b8693a5d2c2df042bd9339cb74bbcde0da626d
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 890d398de938680447b71a46d4e329a6bdf52616
+ms.sourcegitcommit: ec22a186a9cfa489a8490698e387624e480892d8
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67884039"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68960588"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune autônomo-gerenciamento de aplicativos do Win32
 
@@ -283,6 +283,8 @@ Neste ponto, você concluiu as etapas para adicionar um aplicativo Win32 ao Intu
 ## <a name="app-dependencies"></a>Dependências do aplicativo
 
 As dependências de aplicativo são aplicativos que devem ser instalados antes que seu aplicativo Win32 possa ser instalado. Você pode exigir que outros aplicativos sejam instalados como dependências. Especificamente, o dispositivo deve instalar os aplicativos dependentes antes de instalar o aplicativo Win32. Há um máximo de 100 dependências, que inclui as dependências de quaisquer dependências incluídas, bem como o próprio aplicativo. Você pode adicionar dependências do aplicativo Win32 somente depois que seu aplicativo Win32 tiver sido adicionado e carregado no Intune. Depois que seu aplicativo Win32 tiver sido adicionado, você verá a opção **Dependencies** na folha do seu aplicativo Win32. 
+
+Qualquer dependência de aplicativo Win32 precisa ser também um aplicativo Win32. Ele não oferece suporte dependendo de outros tipos de aplicativo, como aplicativos de LOB ou aplicativos da loja de um único MSI.
 
 Ao adicionar uma dependência de aplicativo, você pode pesquisar com base no nome do aplicativo e no Publicador. Além disso, você pode classificar suas dependências adicionadas com base no nome do aplicativo e no Publicador. Dependências de aplicativo adicionadas anteriormente não podem ser selecionadas na lista de dependências de aplicativo adicionadas. 
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7e69236f7babc974bca0db32245de2323627e494
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: cb5176189cb689c8341704440463881cb1aa7e4f
+ms.sourcegitcommit: 299d8d481f0edfa60041c5dff626e1f27bcbe252
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548353"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "68956571"
 ---
 # <a name="develop-a-rollout-communication-plan"></a>Desenvolver um plano de comunicação de implementação
 
@@ -50,13 +50,13 @@ A determinação das informações que serão comunicadas depende do momento em 
 
 **Fase de pós-inscrição**<br/> Comunicações direcionadas para grupos organizacionais e utilizadores que se inscreveram no Intune. Estas devem fornecer recursos adicionais que poderão ser úteis para o utilizador e recolher feedback sobre a respetiva experiência durante e após a inscrição.
 
-Poderá considerar este [guia de inscrição do utilizador final](https://gallery.technet.microsoft.com/Intune-End-User-Enrollment-3a0c9b0c?WT.mc_id=Blog_Intune_General_PCIT) útil. Pode utilizá-lo tal como está ou modificá-lo para a sua organização.
+Poderá considerar este [guia de inscrição do utilizador final](/enterprise-mobility-security/solutions/fasttrack-intune-enduser-enrollment-instructions) útil. Pode utilizá-lo tal como está ou modificá-lo para a sua organização.
 
 ## <a name="communication-delivery-methods"></a>Métodos de entrega de comunicações
 
 Há vários métodos de entrega que pode utilizar para comunicar informações relativas à implementação do Intune aos seus grupos organizacionais e utilizadores de destino. A seguinte lista mostra alguns exemplos e a fase com a qual pode utilizar o método:
 
-- Toda a organização presenciais ou reuniões do Microsoft Teams utilizadas na fase inicial
+- Reuniões em toda a organização ou em equipes da Microsoft usadas para a onda inicial
 
 - E-mail utilizado nas fases de pré-inscrição, inscrição e pós-inscrição
 
