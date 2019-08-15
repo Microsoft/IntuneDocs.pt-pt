@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/05/2019
+ms.date: 08/14/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d4ab90a36254de49eb27e326086ffb137c782005
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 35676b95356df002fdd784f67110f048643e444e
+ms.sourcegitcommit: b30a2ba2b67aa2fc3421f0b2f6c5f361a0de612a
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67883422"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "69022892"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Definições de dispositivos do Android Enterprise para permitir ou restringir funcionalidades com o Intune
 
@@ -92,6 +92,9 @@ Use essas configurações para configurar uma experiência em estilo de quiosque
 
   2. Escolher **OK** > **OK** para adicionar a aplicação.
 
+  > [!IMPORTANT]
+  > Ao usar o modo de quiosque de aplicativo único, os aplicativos de discagem/telefone podem não funcionar corretamente. 
+  
 - **Vários aplicativos**: Os usuários podem acessar um conjunto limitado de aplicativos no dispositivo. Quando o dispositivo é iniciado, inicie apenas as aplicações que adicionar. Também pode adicionar alguns links da web que os utilizadores podem abrir. Quando a política é aplicada, os utilizadores veem ícones para aplicações permitidas na tela inicial.
 
   > [!IMPORTANT]
@@ -101,7 +104,7 @@ Use essas configurações para configurar uma experiência em estilo de quiosque
   > 
   > O **geridos tela home page** aplicação não é necessário para estar no perfil de configuração, mas é necessário para ser adicionado como uma aplicação de cliente. Quando o aplicativo da **tela inicial gerenciada** é adicionado como um aplicativo cliente, todos os outros aplicativos adicionados no perfil de configuração são mostrados como ícones no aplicativo de **tela inicial gerenciado** . 
   >
-  > Ao usar o modo de quiosque de vários aplicativos com a tela inicial gerenciada, os aplicativos de discagem/telefone podem não funcionar corretamente. 
+  > Ao usar o modo de quiosque de vários aplicativos, os aplicativos de discagem/telefone podem não funcionar corretamente. 
 
   - Escolher **adicionar**e selecione as suas aplicações na lista.
 

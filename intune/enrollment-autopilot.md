@@ -17,17 +17,17 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7e0be106b47d933c4407a02369edff3645682b1c
-ms.sourcegitcommit: 293dfbea2b4756bb9b7df1705a2b5f752dfaa807
+ms.openlocfilehash: f275ed15b02b182e6a880dc6fde2ca67140e7d78
+ms.sourcegitcommit: db68056e2db17dfdeaa216c684302567742e6416
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "68700990"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68993726"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Inscrever dispositivos Windows no Intune com o Windows Autopilot  
 O Windows Autopilot simplifica a inscrição de dispositivos no Intune. A criação e manutenção de imagens personalizadas do sistema operativo são um processo moroso. Também poderá demorar a aplicar estas imagens personalizadas do sistema operativo a novos dispositivos para as preparar para utilização antes de as disponibilizar aos seus utilizadores finais. Com o Microsoft Intune e o Autopilot, pode fornecer novos dispositivos aos seus utilizadores finais sem ter de criar, manter e aplicar imagens de sistema operativo personalizadas aos dispositivos. Ao utilizar o Intune para gerir dispositivos do Autopilot, pode gerir políticas, perfis, aplicações, entre outros, após estes serem inscritos. Para uma descrição geral das vantagens, cenários e pré-requisitos, veja [Descrição geral do Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
 
-Há quatro tipos de implantação do AutoPilot: [Modo](https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/self-deploying) de autoimplantação para quiosques, pôsteres digitais ou um dispositivo compartilhado, o [White diferenciada](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove) permite que os parceiros ou a equipe de ti Desprovisione previamente um PC com Windows 10 para que ele seja totalmente configurado e pronto para os negócios, o AutoPilot [para dispositivos existentes](https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices) permite você implante facilmente a versão mais recente do Windows 10 em seus dispositivos existentes e no [modo controlado pelo usuário](https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/user-driven) para usuários tradicionais. 
+Há quatro tipos de implantação do AutoPilot: [Modo](https://docs.microsoft.com/windows/deployment/windows-autopilot/self-deploying) de autoimplantação para quiosques, pôsteres digitais ou um dispositivo compartilhado, o [White diferenciada](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove) permite que os parceiros ou a equipe de ti Desprovisione previamente um PC com Windows 10 para que ele seja totalmente configurado e pronto para os negócios, o AutoPilot [para dispositivos existentes](https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices) permite você implante facilmente a versão mais recente do Windows 10 em seus dispositivos existentes e no [modo controlado pelo usuário](https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven) para usuários tradicionais. 
 
 
 ## <a name="prerequisites"></a>Pré-requisitos
@@ -175,7 +175,7 @@ A remoção completa de um dispositivo do seu locatário exige que você exclua 
 
 1. Se os dispositivos estiverem registrados no Intune, você deverá primeiro [excluí-los da folha todos os dispositivos do Intune](devices-wipe.md#delete-devices-from-the-azure-active-directory-portal).
 
-2. Exclua os dispositivos em dispositivos de **Azure Active Directory em** > dispositivos dispositivos**do Azure ad**.
+2. Exclua os dispositivos em dispositivos de > Azure Active Directory em dispositivos dispositivos**do Azure ad**.
 
 3. Exclua os dispositivos do Windows AutoPilot **no registro** > de dispositivo**dispositivos**de**registro** > do Windows. Escolha os dispositivos que você deseja excluir e, em seguida, escolha **excluir**. A exclusão do dispositivo do Windows AutoPilot pode levar alguns minutos para ser concluída.
 

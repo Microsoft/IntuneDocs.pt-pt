@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 07/23/2019
+ms.date: 08/07/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7f2e4870d1a2614ecccc1647db828e214a6aede8
-ms.sourcegitcommit: e9911a6bbfb8532a27e70d70402a214a8b2b6c75
+ms.openlocfilehash: 75e3f6ebf5d36777780ba77b7d503396ab808e22
+ms.sourcegitcommit: 6f84e880411a202c5500eb460779b7ef63a7f430
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68818804"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68978574"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 
@@ -53,6 +53,17 @@ Saiba mais sobre as novidades todas as semanas no Microsoft Intune. Você també
 -->  
 
 <!-- ########################## -->
+
+## <a name="week-of-august-5-2019"></a>Semana de 5 de agosto de 2019
+
+### <a name="zebra-technologies-is-a-supported-oem-for-oemconfig-on-android-enterprise-devices-----4843713---"></a>Pretas Technologies é um OEM com suporte para o OEMConfig em dispositivos Android Enterprise  <!-- 4843713 -->
+
+No Intune, você pode criar perfis de configuração de dispositivo e aplicar configurações a dispositivos Android Enterprise usando OEMConfig (**perfis** > de**configuração** > do dispositivo**Criar perfil**  >   **Android Enterprise** para plataforma > **OEMConfig** para tipo de perfil).
+
+Nessa atualização, o pretas Technologies é um fabricante de equipamento original (OEM) com suporte para o OEMConfig. Para obter mais informações sobre o OEMConfig, consulte [usar e gerenciar dispositivos Android Enterprise com o OEMConfig](android-oem-configuration-overview.md).
+
+Aplica-se a:  
+- Android Enterprise
 
 ## <a name="week-of-july-22-2019"></a>Semana de 22 de julho de 2019 
 
@@ -138,7 +149,7 @@ Você pode ampliar as coordenadas exatas de um dispositivo usando a ação **Loc
 
 ### <a name="device-security"></a>Segurança do dispositivo
 
-#### <a name="advanced-settings-for-windows-defender-firewall--public-preview-------1311949-------"></a>Configurações avançadas do Windows Defender firewall (visualização pública)  <!--  1311949     -->  
+#### <a name="advanced-settings-for-windows-defender-firewall--public-preview------1311949-------"></a>Configurações avançadas do Windows Defender firewall (visualização pública)  <!--  1311949     -->  
 Use o Intune para gerenciar [regras de firewall personalizadas como parte de um perfil de configuração de dispositivo para o](endpoint-protection-configure.md#add-custom-firewall-rules-for-windows-10-devices) Endpoint Protection no Windows 10. As regras podem especificar o comportamento de entrada e saída para aplicativos, endereços de rede e portas. 
 
 #### <a name="updated-ui-for-managing-security-baselines------4091125-------"></a>Interface do usuário atualizada para gerenciar linhas de base de segurança   <!-- 4091125     -->

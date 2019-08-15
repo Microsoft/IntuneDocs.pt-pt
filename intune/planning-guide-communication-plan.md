@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cb5176189cb689c8341704440463881cb1aa7e4f
-ms.sourcegitcommit: 299d8d481f0edfa60041c5dff626e1f27bcbe252
+ms.openlocfilehash: cba8b59931bd60db0d9169af5016f01118c64cf0
+ms.sourcegitcommit: b30a2ba2b67aa2fc3421f0b2f6c5f361a0de612a
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "68956571"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "69022836"
 ---
 # <a name="develop-a-rollout-communication-plan"></a>Desenvolver um plano de comunicação de implementação
 
@@ -50,7 +50,7 @@ A determinação das informações que serão comunicadas depende do momento em 
 
 **Fase de pós-inscrição**<br/> Comunicações direcionadas para grupos organizacionais e utilizadores que se inscreveram no Intune. Estas devem fornecer recursos adicionais que poderão ser úteis para o utilizador e recolher feedback sobre a respetiva experiência durante e após a inscrição.
 
-Poderá considerar este [guia de inscrição do utilizador final](/enterprise-mobility-security/solutions/fasttrack-intune-enduser-enrollment-instructions) útil. Pode utilizá-lo tal como está ou modificá-lo para a sua organização.
+Você pode achar útil esse [Kit de adoção do Intune](https://aka.ms/IntuneAdoptionKit) . Você pode usá-lo como está ou modificar para sua organização.
 
 ## <a name="communication-delivery-methods"></a>Métodos de entrega de comunicações
 

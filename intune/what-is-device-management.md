@@ -4,7 +4,7 @@ description: O Microsoft 365 Enterprise inclui o Microsoft Intune. Veja como o I
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/22/2019
+ms.date: 08/14/2019
 ms.topic: conceptual
 audience: ITPro
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5be25e9ab88f4dd44399d6ddc37cfc25955475ba
-ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
+ms.openlocfilehash: 37a1c9fad9b77e39145f1b4183b8176fb1677613
+ms.sourcegitcommit: b30a2ba2b67aa2fc3421f0b2f6c5f361a0de612a
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68427300"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "69022872"
 ---
 # <a name="what-is-device-management"></a>O que é a gestão de dispositivos? 
 
@@ -75,7 +75,7 @@ Quando configurar o Intune, também poderá optar por trabalhar exclusivamente n
 
 ## <a name="simplify-it-tasks-using-the-device-management-admin-center"></a>Simplificar tarefas de ti usando o centro de administração do gerenciamento de dispositivos
 
-O [centro de administração do gerenciamento de dispositivos](https://devicemanagement.portal.azure.com/) é uma loja única para gerenciar e concluir tarefas para seus dispositivos móveis. Esse espaço de trabalho inclui os serviços usados para o gerenciamento de dispositivos, incluindo o Intune e o Azure Active Directory, e também para gerenciar aplicativos cliente. 
+O [centro de administração do gerenciamento de dispositivos](https://devicemanagement.microsoft.com/) é uma loja única para gerenciar e concluir tarefas para seus dispositivos móveis. Esse espaço de trabalho inclui os serviços usados para o gerenciamento de dispositivos, incluindo o Intune e o Azure Active Directory, e também para gerenciar aplicativos cliente. 
 
 No centro de administração do gerenciamento de dispositivos, você pode:
 

@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/12/2019
+ms.date: 08/13/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c378fd3b208396f9d2f83b7bd56f50dbf7a7e3f7
-ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
+ms.openlocfilehash: 26ad26fedc6fe0e44328f5c77fa5f093c1230a28
+ms.sourcegitcommit: 6f84e880411a202c5500eb460779b7ef63a7f430
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68679986"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68978512"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Usar linhas de base de segurança para configurar dispositivos Windows 10 no Intune
 
@@ -37,7 +37,7 @@ Tipos de linha de base separados podem incluir as mesmas configurações, mas us
 > [!NOTE]
 > A Microsoft não recomenda o uso de versões prévias de linhas de base de segurança em um ambiente de produção. As configurações em uma linha de base de visualização podem mudar ao longo do curso da versão prévia. 
 
-O objetivo de usar linhas de base de segurança é ter um fluxo de trabalho seguro de ponta a ponta ao trabalhar com Microsoft 365. Alguns dos benefícios incluem:
+As linhas de base de segurança podem ajudá-lo a ter um fluxo de trabalho seguro de ponta a ponta ao trabalhar com Microsoft 365. Alguns dos benefícios incluem:
 
 - Uma linha de base de segurança inclui as práticas recomendadas e recomendações sobre configurações que afetam a segurança. Parceiros do Intune com a mesma equipe de segurança do Windows que cria linhas de base de segurança de diretiva de grupo. Essas recomendações são baseadas em orientação e ampla experiência.
 - Se você for novo no Intune e não tiver certeza de onde começar, as linhas de base de segurança lhe dão uma vantagem. Você pode criar e implantar rapidamente um perfil seguro, sabendo que está ajudando a proteger os recursos e os dados da sua organização.
@@ -47,20 +47,21 @@ O objetivo de usar linhas de base de segurança é ter um fluxo de trabalho segu
 
 As [linhas de base de segurança do Windows](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines) são um ótimo recurso para saber mais sobre esse recurso. [Gerenciamento de dispositivo móvel](https://docs.microsoft.com/windows/client-management/mdm/) (MDM) é um excelente recurso sobre o MDM e o que você pode fazer em dispositivos Windows.
 
-## <a name="security-baseline-versions-and-instances"></a>Instâncias e versões de linha de base de segurança
-De tempos em tempos, novas atualizações para uma linha de base ficam disponíveis. Cada nova instância da versão de uma linha de base pode adicionar ou remover configurações ou introduzir outras alterações. Por exemplo, à medida que novas configurações do Windows 10 se tornam disponíveis com as novas versões do Windows 10, a linha de base de segurança do MDM pode receber uma nova instância de versão que inclui as configurações mais recentes.  
+## <a name="about-baseline-versions-and-instances"></a>Sobre as versões de linha de base e instâncias
 
-No console do Intune, você pode exibir quais linhas de base de segurança estão disponíveis e informações sobre elas. As informações disponíveis incluem quantos perfis você tem que usam esse tipo de linha de base, quantas instâncias separadas do tipo de linha de base estão disponíveis e quando a última instância mais recente foi disponibilizada ou publicada.  O exemplo a seguir mostra o bloco para uma linha de base de segurança do MDM bem usada:  
+Cada nova instância da versão de uma linha de base pode adicionar ou remover configurações ou introduzir outras alterações. Por exemplo, à medida que novas configurações do Windows 10 se tornam disponíveis com as novas versões do Windows 10, a linha de base de segurança do MDM pode receber uma nova instância de versão que inclui as configurações mais recentes.  
+
+No console do Intune, o bloco de cada linha de base exibe o nome do modelo de linha de base e as informações básicas sobre essa linha de base. As informações incluem quantos perfis você tem que usam esse tipo de linha de base, quantas instâncias separadas (versões) do tipo de linha de base estão disponíveis e uma data da *última publicação* que identifica quando esse modelo de linha de base foi adicionado ao seu locatário. O exemplo a seguir mostra o bloco para uma linha de base de segurança do MDM bem usada:  
 
 ![Bloco de linha de base](./media/security-baselines/baseline-tile.png)
 
-Para exibir informações sobre as versões de linha de base que você usa, selecione uma linha de base e, em seguida, selecione **versões**. O Intune exibe detalhes sobre as versões em uso por seus perfis. No painel versões, você pode selecionar uma única versão para exibir detalhes mais detalhados sobre os perfis que usam essa versão. Você também pode selecionar duas versões diferentes e, em seguida, escolher **comparar linhas de base** para baixar um arquivo CSV que detalha essas diferenças.  
+Para exibir mais informações sobre as versões de linha de base que você usa, selecione um bloco de linha de base para abrir seu painel de *visão geral* e, em seguida, selecione **versões**. O Intune exibe detalhes sobre as versões da linha de base que estão sendo usadas por seus perfis. No painel versões, você pode selecionar uma única versão para exibir detalhes mais detalhados sobre os perfis que usam essa versão. Você também pode selecionar duas versões diferentes e, em seguida, escolher **comparar linhas de base** para baixar um arquivo CSV que detalha essas diferenças.  
 
 ![Comparar linhas de base](./media/security-baselines/compare-baselines.png)
 
 Quando você cria um *perfil*de linha de base de segurança, o perfil usa automaticamente a instância de linha de base de segurança lançada mais recentemente.  Você pode continuar a usar e editar perfis que você criou anteriormente, que usam uma instância de versão de linha de base anterior, incluindo linhas de base criadas usando uma versão de visualização. 
 
-Os perfis de linha de base de segurança dão suporte a uma [alteração da versão](#change-the-baseline-instance-for-a-profile) da linha de base em uso. Isso significa que quando uma nova versão sair, você não precisará criar um novo perfil de linha de base para tirar proveito dela. Em vez disso, quando estiver pronto, você poderá selecionar um perfil de linha de base e usar a opção interna para alterar a versão da instância para esse perfil.  
+Você pode optar por [alterar a versão](#change-the-baseline-version-for-a-profile) de uma linha de base que está em uso com um determinado perfil. Isso significa que quando uma nova versão sair, você não precisará criar um novo perfil de linha de base para tirar proveito dela. Em vez disso, quando estiver pronto, você poderá selecionar um perfil de linha de base e usar a opção interna para alterar a versão da instância para esse perfil para um novo.  
 
 ## <a name="available-security-baselines"></a>Linhas de base de segurança disponíveis 
 
@@ -79,18 +80,21 @@ As seguintes instâncias de linha de base de segurança estão disponíveis para
 
 Você pode continuar a usar e editar perfis criados anteriormente com base em um modelo de visualização, mesmo quando esse modelo de visualização não está mais disponível para a criação de novos perfis. 
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="manage-baselines"></a>Gerenciar linhas de base  
+
+As tarefas comuns quando você trabalha com linhas de base de segurança incluem:
+- [Criar um perfil](#create-the-profile) – para definir as configurações que você deseja usar e, em seguida, atribuir a linha de base a grupos.
+- [Alterar a versão](#change-the-baseline-version-for-a-profile) – altere a versão de linha de base em uso por um perfil.
+- [Remover uma atribuição de linha de base](#remove-a-security-baseline-assignment) – saiba o que acontece quando você interrompe o gerenciamento de configurações com uma linha de base de segurança.
+
+
+### <a name="prerequisites"></a>Pré-requisitos
 - Para gerenciar linhas de base no Intune, sua conta deve ter a função interna do [Gerenciador de políticas e perfis](role-based-access-control.md#built-in-roles) .
 
 - O uso de algumas linhas de base pode exigir que você tenha uma assinatura ativa para serviços adicionais, como o Microsoft defender ATP.  
 
-## <a name="co-managed-devices"></a>Dispositivos cogerenciados
 
-As linhas de base de segurança em dispositivos gerenciados pelo Intune são semelhantes aos dispositivos cogerenciados com Configuration Manager. Os dispositivos cogerenciados usam System Center Configuration Manager e Microsoft Intune para gerenciar os dispositivos Windows 10 simultaneamente. Ele permite que você anexe a nuvem seu investimento de Configuration Manager existente aos benefícios do Intune. A [visão geral](https://docs.microsoft.com/sccm/comanage/overview) do cogerenciamento é um ótimo recurso se você usar Configuration Manager e também quiser os benefícios da nuvem.
-
-Ao usar dispositivos cogerenciados, você deve alternar a carga de trabalho de **configuração do dispositivo** (suas configurações) para o Intune. As [cargas de trabalho de configuração do dispositivo](https://docs.microsoft.com/sccm/comanage/workloads#device-configuration) fornecem mais informações.
-
-## <a name="create-the-profile"></a>Criar o perfil
+### <a name="create-the-profile"></a>Criar o perfil
 
 1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) e, em seguida, selecione**linhas de base de segurança** de segurança > do **dispositivo**para exibir a lista de linhas de base disponíveis.
 
@@ -131,12 +135,13 @@ Ao usar dispositivos cogerenciados, você deve alternar a carga de trabalho de *
    ![Examinar a linha de base](./media/security-baselines/review.png) 
 
   
-8. Depois de criar um perfil, edite-o acessando o **dispositivo segurança** > **linhas de base de segurança**, selecione o tipo de linha de base que você configurou e, em seguida, selecione **perfis**.  Selecione o perfil na lista de perfis disponíveis e, em seguida, selecione **Propriedades**. Você pode editar as configurações de todas as guias de configuração disponíveis e selecionar revisar **+ salvar** para confirmar suas alterações.  
+8. Depois de criar um perfil, edite-o acessando o **dispositivo segurança** > **linhas de base de segurança**, selecione o tipo de linha de base que você configurou e, em seguida, selecione **perfis**. Selecione o perfil na lista de perfis disponíveis e, em seguida, selecione **Propriedades**. Você pode editar as configurações de todas as guias de configuração disponíveis e selecionar revisar **+ salvar** para confirmar suas alterações.  
 
-## <a name="change-the-baseline-instance-for-a-profile"></a>Alterar a instância de linha de base para um perfil
-Os perfis de linha de base dão suporte a uma alteração da instância de linha de base que o perfil usa. Você pode selecionar uma instância mais antiga ou, mais normalmente, uma instância mais recente da mesma linha de base.  Você não pode alterar entre duas linhas de base diferentes, como alterar um perfil do uso de uma linha de base para o defender ATP para usar a linha de base de segurança do MDM. 
+### <a name="change-the-baseline-version-for-a-profile"></a>Alterar a versão de linha de base de um perfil  
 
-Ao configurar uma alteração da versão de linha de base, você terá a opção de baixar um arquivo CSV que lista as alterações entre as duas versões de linha de base envolvidas. Você também terá a opção de manter todas as suas personalizações na versão de linha de base original e aplicá-las à nova versão ou implementar todos os padrões encontrados na nova versão de linha de base selecionada. 
+Você pode alterar a versão da instância de linha de base que está sendo usada com um perfil.  Ao alterar a versão, você seleciona uma instância disponível da mesma linha de base. Você não pode alterar entre dois tipos de linha de base diferentes, como alterar um perfil de usar uma linha de base para o defender ATP para usar a linha de base de segurança do MDM. 
+
+Ao configurar uma alteração da versão de linha de base, você pode baixar um arquivo CSV que lista as alterações entre as duas versões de linha de base envolvidas. Você também tem a opção de manter todas as suas personalizações da versão de linha de base original ou implementar a nova versão usando todos os seus valores padrão. Você não tem a opção de fazer alterações em configurações individuais quando altera a versão de uma linha de base para um perfil. 
 
 Após a gravação, depois que a conversão for concluída, a linha de base será reimplantada imediatamente em grupos atribuídos.  
 
@@ -147,7 +152,7 @@ Após a gravação, depois que a conversão for concluída, a linha de base ser�
 
   Quando uma configuração não é mais gerenciada por um perfil de linha de base, essa configuração não é redefinida no dispositivo. Em vez disso, a configuração no dispositivo permanece definida para sua última configuração até que algum outro processo gerencie a configuração para alterá-la. Exemplos de processos que podem alterar uma configuração depois de você parar de gerenciá-lo incluem um perfil de linha de base diferente, uma configuração de política de grupo ou uma configuração manual feita no dispositivo. 
 
-### <a name="to-change-the-instance-for-a-baseline"></a>Para alterar a instância de uma linha de base  
+#### <a name="to-change-the-baseline-version-for-a-profile"></a>Para alterar a versão de linha de base de um perfil  
 
 1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) e selecione**linhas de base de segurança**de > dispositivo e selecione o bloco para o tipo de linha de base que tem o perfil que você deseja alterar.  
 
@@ -159,7 +164,7 @@ Após a gravação, depois que a conversão for concluída, a linha de base ser�
 
    ![selecionar uma versão](./media/security-baselines/select-instance.png)  
    
-4. Selecione **examinar atualização** para baixar um arquivo CSV que exibe a diferença entre a versão de instância atual de perfis e a nova versão que você selecionou. Examine esse arquivo para entender quais configurações são adicionadas, removidas e quais valores padrão dessas configurações estão no perfil atualizado.  
+4. Selecione **examinar atualização** para baixar um arquivo CSV que exibe a diferença entre a versão de instância atual de perfis e a nova versão que você selecionou. Examine esse arquivo para entender quais configurações são novas ou removidas e quais valores padrão para essas configurações estão no perfil atualizado.  
 
    Quando estiver pronto, continue para a próxima etapa.  
 
@@ -169,14 +174,16 @@ Após a gravação, depois que a conversão for concluída, a linha de base ser�
 
 6. Selecione **submeter**. As atualizações de perfil para a versão de linha de base selecionada e após a conversão são concluídas, a linha de base é reimplantada imediatamente em grupos atribuídos.
 
-## <a name="remove-a-security-baseline-assignment"></a>Remover uma atribuição de linha de base de segurança
+### <a name="remove-a-security-baseline-assignment"></a>Remover uma atribuição de linha de base de segurança
 Quando uma configuração de linha de base de segurança não se aplica a um dispositivo ou as configurações em uma linha de base são definidas como *não*configuradas, essas configurações em um dispositivo não são revertidas para uma configuração previamente gerenciada. Em vez disso, as configurações anteriormente gerenciadas no dispositivo mantêm suas últimas configurações como recebidas da linha de base até que algum outro processo atualize essas configurações no dispositivo.  
 
 Outros processos que podem alterar posteriormente as configurações no dispositivo incluem uma linha de base de segurança diferente ou nova, perfil de configuração de dispositivo, configurações de Política de Grupo ou edição manual da configuração no dispositivo.  
 
+## <a name="co-managed-devices"></a>Dispositivos cogerenciados
 
+As linhas de base de segurança em dispositivos gerenciados pelo Intune são semelhantes aos dispositivos cogerenciados com Configuration Manager. Os dispositivos cogerenciados usam System Center Configuration Manager e Microsoft Intune para gerenciar os dispositivos Windows 10 simultaneamente. Ele permite que você anexe a nuvem seu investimento de Configuration Manager existente aos benefícios do Intune. A [visão geral](https://docs.microsoft.com/sccm/comanage/overview) do cogerenciamento é um ótimo recurso se você usar Configuration Manager e também quiser os benefícios da nuvem.
 
-
+Ao usar dispositivos cogerenciados, você deve alternar a carga de trabalho de **configuração do dispositivo** (suas configurações) para o Intune. As [cargas de trabalho de configuração do dispositivo](https://docs.microsoft.com/sccm/comanage/workloads#device-configuration) fornecem mais informações.  
 
 ## <a name="q--a"></a>Perguntas e Respostas
 
