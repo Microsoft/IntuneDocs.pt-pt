@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 935d8d0803e5bcfcd25703295f84f24b664f7fce
-ms.sourcegitcommit: 02fb7ceae60d0e2cfa42fb7d017753c7437ccf59
+ms.openlocfilehash: 83b1de6c246baaef54a31c0b3f4c5094d066c64d
+ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68913820"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69549961"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>RBAC (controle de acesso baseado em função) com Microsoft Intune
 
@@ -90,11 +90,11 @@ Para ver uma atribuição de função, escolha**funções** > do **Intune** > **
 - **[Escopo (marcas)](scope-tags.md)** : Os usuários em membros podem ver os recursos que têm as mesmas marcas de escopo.
 
 ### <a name="multiple-role-assignments"></a>Atribuições de função múltipla
-Se um usuário tiver várias atribuições de função, as permissões nessas atribuições de função se estenderão a objetos diferentes da seguinte maneira:
+Se um usuário tiver várias atribuições de função, permissões e marcas de escopo, essas atribuições de função se estenderão a objetos diferentes da seguinte maneira:
 
-- Atribuir permissões somente se aplicam aos objetos (como políticas ou aplicativos) no escopo de atribuição dessa função (grupos). Atribuir permissões não se aplica a objetos em outras atribuições de função, a menos que a outra atribuição as conceda especificamente.
-- Outras permissões (como criar e ler) aplicam-se a todos os objetos do mesmo tipo (como todas as políticas ou todos os aplicativos) em qualquer uma das atribuições do usuário.
-- As permissões para objetos de tipos diferentes (como políticas ou aplicativos) não se aplicam entre si. Uma permissão de leitura para uma política, por exemplo, não fornece uma permissão de leitura para aplicativos nas atribuições do usuário.
+- Atribuir permissões e marcas de escopo somente se aplicam aos objetos (como políticas ou aplicativos) no escopo de atribuição dessa função (grupos). Atribuir permissões e marcas de escopo não se aplicam a objetos em outras atribuições de função, a menos que a outra atribuição os conceda especificamente.
+- Outras permissões (como criar, ler, atualizar, excluir) e marcas de escopo se aplicam a todos os objetos do mesmo tipo (como todas as políticas ou todos os aplicativos) em qualquer uma das atribuições do usuário.
+- Permissões e marcas de escopo para objetos de diferentes tipos (como políticas ou aplicativos), não se aplicam entre si. Uma permissão de leitura para uma política, por exemplo, não fornece uma permissão de leitura para aplicativos nas atribuições do usuário.
 
 ## <a name="next-steps"></a>Passos Seguintes
 - [Atribuir uma função a um usuário](assign-role.md)

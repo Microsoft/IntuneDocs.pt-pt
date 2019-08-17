@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 08/07/2019
+ms.date: 08/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 75e3f6ebf5d36777780ba77b7d503396ab808e22
-ms.sourcegitcommit: 6f84e880411a202c5500eb460779b7ef63a7f430
+ms.openlocfilehash: 29483c7694ef96a026942a670aa8a52cb8cc8857
+ms.sourcegitcommit: f75386986d24e7d5dd63a3f1a0a014cb52056063
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68978574"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69560128"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 
@@ -54,6 +54,163 @@ Saiba mais sobre as novidades todas as semanas no Microsoft Intune. Você també
 
 <!-- ########################## -->
 
+## <a name="week-of-august-12-2019"></a>Semana de 12 de agosto de 2019
+
+### <a name="app-management"></a>Gestão de aplicações
+
+#### <a name="control-ios-app-uninstall-behavior-at-device-unenrollment----3504144-----"></a>Controlar o comportamento de desinstalação do aplicativo iOS no cancelamento do registro do dispositivo <!-- 3504144   -->
+Os administradores podem gerenciar se um aplicativo é removido ou mantido em um dispositivo quando o registro do dispositivo é cancelado no nível de um usuário ou de um grupo de dispositivos. 
+
+#### <a name="categorize-microsoft-store-for-business-apps----3926922---"></a>Categorizar Microsoft Store para aplicativos de negócios <!-- 3926922 -->
+Você pode categorizar Microsoft Store para aplicativos de negócios. Para fazer isso, escolha**aplicativos** **cliente aplicativos** > do **Intune** > > selecione uma**categoria**de **informações** > do aplicativo Microsoft Store para o aplicativo de negócios >. No menu suspenso, atribua uma categoria.
+
+#### <a name="customized-notifications-for-microsoft-intune-app-users----4843354----"></a>Notificações personalizadas para usuários do Microsoft Intune app <!-- 4843354  -->
+O aplicativo Microsoft Intune para Android agora dá suporte à exibição de notificações por push personalizadas, alinhando-a com o suporte adicionado recentemente nos aplicativos Portal da Empresa para iOS e Android. Para obter mais informações, consulte [enviar notificações personalizadas no Intune](custom-notifications.md).
+
+### <a name="device-configuration"></a>Configuração do dispositivo
+
+#### <a name="new-features-for-android-enterprise-dedicated-devices-in-multi-app-mode----3755304-3041943-3041946-----"></a>Novos recursos para dispositivos Android Enterprise dedicados no modo de vários aplicativos <!-- 3755304 3041943 3041946   -->
+No Intune, você pode controlar os recursos e as configurações em uma experiência de estilo de quiosque em seus dispositivos Android Enterprise dedicados (**perfis** > de**configuração** > de dispositivo**Criar perfil** > **Android Enterprise** para plataforma > **somente proprietário do dispositivo, restrições de dispositivo** para o tipo de perfil).
+
+Nesta atualização, os seguintes recursos estão sendo adicionados:
+
+-  > **Vários aplicativos dedicados de**dispositivos: O **botão página inicial virtual** pode ser mostrado passando o dedo para cima no dispositivo ou flutuando na tela para que os usuários possam movê-lo.
+-  > **Vários aplicativos dedicados de**dispositivos: O **acesso à lanterna** permite que os usuários usem a lanterna. 
+-  > **Vários aplicativos dedicados de**dispositivos: O **controle de volume de mídia** permite que os usuários controlem o volume de mídia do dispositivo usando um controle deslizante. 
+-  > **Vários aplicativos dedicados de**dispositivos:  **Habilitar uma proteção de tela**, carregar uma imagem personalizada e controlar quando a proteção de tela é mostrada.
+
+Para ver as configurações atuais, vá para [configurações do dispositivo Android Enterprise para permitir ou restringir recursos usando o Intune](device-restrictions-android-for-work.md#dedicated-device-settings).
+
+Aplica-se a:  
+- Dispositivos Android Enterprise dedicados
+
+#### <a name="new-app-and-configuration-profiles-for-android-enterprise-fully-managed-devices----3574215-3574238-3574235-3574232-----"></a>Novos perfis de aplicativo e configuração para dispositivos Android Enterprise totalmente gerenciados <!-- 3574215 3574238 3574235 3574232   -->
+Usando perfis, você pode definir configurações que aplicam configurações de VPN, email e Wi-Fi aos dispositivos do proprietário do seu dispositivo Android Enterprise (totalmente gerenciado). Nesta atualização, você pode:
+
+- Use [as políticas de configuração de aplicativo](app-configuration-policies-use-android.md) para implantar as configurações de email do Outlook, do Gmail e noves.
+- Use perfis de configuração de dispositivo para implantar [configurações de certificado raiz confiável](certificates-configure.md).
+- Use perfis de configuração de dispositivo para implantar configurações de [VPN](vpn-settings-android-enterprise.md) e [Wi-Fi](wi-fi-settings-android-enterprise.md) .
+
+> [!IMPORTANT]
+> Com esse recurso, os usuários se autenticam com seu nome de usuário e senha para perfis de VPN, Wi-Fi e de email. Atualmente, a autenticação baseada em certificado não está disponível. 
+
+Aplica-se a:  
+- Proprietário do dispositivo Android Enterprise (totalmente gerenciado)
+
+#### <a name="control-the-apps-files-documents-and-folders-that-open-when-users-sign-in-to-macos-devices---3914202-----"></a>Controlar os aplicativos, arquivos, documentos e pastas que são abertos quando os usuários entram em dispositivos macOS <!--3914202   -->
+Você pode habilitar e configurar recursos em dispositivos MacOS (**perfis** > de**configuração** > de dispositivo**Criar perfil** > **MacOS** para plataforma > **recursos de dispositivo** para tipo de perfil) . 
+
+Nessa atualização, há uma nova configuração de itens de logon para controlar quais aplicativos, arquivos, documentos e pastas são abertos quando um usuário entra no dispositivo registrado. 
+
+Para ver as configurações atuais, vá para [configurações de recurso de dispositivo MacOS no Intune](macos-device-features-settings.md).
+
+Aplica-se a:  
+- macOS
+
+#### <a name="deadlines-replace-engaged-restart-settings-for-windows-update-rings------4464404----------"></a>Os prazos substituem as configurações de reinicialização envolvidas para Windows Update anéis   <!-- 4464404        -->
+Para alinhar [as alterações de serviço do Windows](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1903#servicing)recentes, os anéis de atualização do Windows 10 do Intune agora [dão suporte a configurações para prazos](windows-update-settings.md). Os prazos determinam quando um dispositivo instala atualizações de segurança e recursos.  Em dispositivos que executam o Windows 10 1903 ou posterior, os prazos substituem as configurações para reinicialização *envolvida*.  No futuro, os *prazos* também substituirão a reinicialização *envolvida* em versões anteriores do Windows 10.  
+
+Quando você não configura os *prazos*, os dispositivos continuam a usar suas configurações de reinicialização *envolvidas* , no entanto, o Intune preterirá o [suporte para configurações de reinicialização envolvidas](whats-new.md#plan-for-change-new-windows-updates-settings-in-intune-) em uma atualização futura.  
+
+Planeje o uso de prazos para todos os seus dispositivos Windows 10. Depois que as configurações dos prazos estiverem em vigor, você poderá alterar as configurações do Intune para reinicialização *iniciada* para não ser configurada. Quando definido como não configurado, o Intune para de gerenciar essas configurações em dispositivos, mas não remove as últimas configurações da configuração do dispositivo. Portanto, as últimas configurações definidas para reinicialização *iniciada* permanecem ativas e em uso nos dispositivos até que essas configurações sejam modificadas por um método diferente do Intune. Posteriormente, quando a versão dos dispositivos do Windows mudar ou quando o suporte do Intune para prazos se expandir para a versão dos dispositivos do Windows, o dispositivo começará a usar as novas configurações, que já estão em vigor.
+
+#### <a name="support-for-multiple-microsoft-intune-certificate-connectors--------4704642--------"></a>Suporte para vários conectores de certificado Microsoft Intune   <!--   4704642      -->
+O Intune agora dá suporte à instalação e ao uso de vários conectores de [certificado Microsoft Intune para operações PKCS](certficates-pfx-configure.md). Essa alteração dá suporte ao balanceamento de carga e alta disponibilidade do conector. Cada instância de conector pode processar solicitações de certificado do Intune.  Se um conector não estiver disponível, outros conectores continuarão processando solicitações. 
+
+Para usar vários conectores, você não precisa atualizar para a versão mais recente do software do conector.  
+
+#### <a name="new-settings-and-changes-to-existing-settings-to-restrict-features-on-ios-and-macos-devices----4867699-4867709-----"></a>Novas configurações e alterações nas configurações existentes para restringir recursos em dispositivos iOS e macOS <!-- 4867699 4867709   -->
+Você pode criar perfis para restringir as configurações em dispositivos que executam o Ios e o MacOS (**perfis** > de**configuração** > do dispositivo**Criar perfil** > **Ios** ou **MacOS** para o tipo de plataforma > **Restrições de dispositivo**). Essa atualização inclui os seguintes recursos:
+
+- Em >  restriçõesde > dispositivo MacOS**nuvem e armazenamento**, use a nova configuração de entrega para impedir que os usuários iniciem o trabalho em um dispositivo MacOS e continue trabalhando em outro dispositivo MacOS ou Ios.
+
+  Para ver as configurações atuais, vá para [configurações do dispositivo MacOS para permitir ou restringir recursos usando o Intune](device-restrictions-macos.md).
+
+- Em**restrições de dispositivo** **Ios** > , há algumas alterações:
+
+  - **Aplicativos internos localizam** **meu iPhone (apenas**no modo supervisionado): >  Nova configuração que bloqueia esse recurso no recurso Localizar meu aplicativo. 
+  - **Os aplicativos** > internos**encontram meus amigos (apenas**no modo supervisionado): Nova configuração que bloqueia esse recurso no recurso Localizar meu aplicativo. 
+  - **Modificação sem fio** > **do estado de Wi-Fi (somente supervisionado)** : Nova configuração que impede que os usuários liguem ou desativem o Wi-Fi no dispositivo.
+  - **QuickPath de teclado e dicionário** >  **(somente supervisionado)** : Nova configuração que bloqueia o recurso QuickPath.
+  - **Nuvem e armazenamento**: A **continuação da atividade** é renomeada para **entrega**.
+
+  Para ver as configurações atuais, vá para [configurações do dispositivo IOS para permitir ou restringir recursos usando o Intune](device-restrictions-ios.md).
+
+Aplica-se a:  
+- macOS 10,15 e mais recente
+- iOS 13 e mais recente
+
+#### <a name="some-unsupervised-ios-device-restrictions-will-become-supervised-only-with-the-ios-130-release----4867809-----"></a>Algumas restrições de dispositivo iOS não supervisionadas ficarão supervisionadas somente com a versão iOS 13,0 <!-- 4867809   -->
+Nessa atualização, algumas configurações se aplicam a dispositivos supervisionados com a versão 13,0 do iOS. Se essas configurações forem configuradas e atribuídas a dispositivos não supervisionados antes da versão 13,0 do iOS, as configurações ainda serão aplicadas a esses dispositivos não supervisionados. Eles ainda se aplicam após a atualização dos dispositivos para iOS 13,0. Essas restrições são removidas em dispositivos não supervisionados que são armazenados em backup e restaurados. 
+
+Essas configurações incluem:
+
+- App Store, Visualização de Documentos, Jogos
+  - Loja de aplicações
+  - Conteúdo explícito do iTunes, música, podcast ou notícias
+  - Adicionando Game Center amigos
+  - Jogos para vários jogadores
+- Aplicações Incorporadas
+  - Câmara
+    - FaceTime
+  - Safari
+    - Preenchimento automático
+- Cloud e Armazenamento
+  - Backup no iCloud
+  - Bloquear a sincronização de documentos do iCloud
+  - Bloquear sincronização de cadeia de chaves do iCloud
+
+Para ver as configurações atuais, vá para [configurações do dispositivo IOS para permitir ou restringir recursos usando o Intune](device-restrictions-ios.md).
+
+Aplica-se a:  
+- iOS 13,0 e mais recente
+
+#### <a name="improved-device-status-for-macos-filevault-encryption-----4944983-----------"></a>Status do dispositivo melhorado para criptografia macOS FileVault  <!-- 4944983         -->
+Atualizamos várias das mensagens de [status do dispositivo](encryption-monitor.md#device-encryption-status) para a criptografia FileVault em dispositivos MacOS.
+
+#### <a name="some-windows-defender-antivirus-scan-settings-in-the-reporting-show-a-failed-status----5119229---"></a>Algumas configurações de verificação do Windows Defender antivírus no relatório mostram um status de falha <!-- 5119229 -->
+No Intune, você pode criar políticas para usar o Windows Defender antivírus para verificar seus dispositivos Windows 10 (**perfis** > de**configuração** > de dispositivo**Criar perfil** > **Windows 10 e posterior** para plataforma > **restrições de dispositivo** para o tipo de perfil > **Windows Defender antivírus**). O **tempo para executar uma verificação rápida diária e o** **tipo de verificação do sistema para executar** relatórios mostra um status de falha, quando é, na verdade, um status de êxito. 
+
+Nessa atualização, esse comportamento é fixo. Portanto, o **tempo para executar uma verificação rápida diária** e o **tipo de verificação do sistema para executar** configurações mostra um status de êxito quando as verificações são concluídas com êxito e mostram um status de falha quando as configurações falham ao serem aplicadas. 
+
+Para obter mais informações sobre as configurações do Windows Defender antivírus, consulte [configurações do dispositivo Windows 10 (e mais recente) para permitir ou restringir recursos usando o Intune](device-restrictions-windows-10.md#windows-defender-antivirus). 
+
+### <a name="device-enrollment"></a>Inscrição de dispositivos
+
+#### <a name="default-scope-tags----3702875----"></a>Marcas de escopo padrão <!-- 3702875  -->
+Uma nova marca de escopo padrão interna agora está disponível. Todos os objetos do Intune não marcados que dão suporte a marcas de escopo são automaticamente atribuídos à marca de escopo padrão. A marca de escopo **padrão** é adicionada a todas as atribuições de função existentes para manter a paridade com a experiência de administração hoje. Se você não quiser que um administrador Veja objetos do Intune com a marca de escopo padrão, remova a marca de escopo padrão da atribuição de função. Esses recursos são semelhantes ao recurso de escopos de segurança no System Center Configuration Manager. Para obter mais informações, consulte [usar o RBAC e marcas de escopo para para distribuí-lo](scope-tags.md).
+
+#### <a name="android-enrollment-device-administrator-support----4869749-----"></a>Suporte ao administrador do dispositivo de registro do Android <!-- 4869749   -->
+A opção de registro de administrador de dispositivo Android foi adicionada à página de registro do Android (registro**Android**de**registro** > de dispositivo do**Intune** > ). O administrador do dispositivo Android ainda estará habilitado por padrão para todos os locatários.  Para obter mais informações, consulte [registro de administrador do dispositivo Android](android-enroll-device-administrator.md).
+
+#### <a name="skip-more-screens-in-setup-assistant---4877451----"></a>Ignorar mais telas no assistente de configuração <!--4877451  -->
+Você pode definir perfis de Programa de registro de dispositivos para ignorar as seguintes telas do assistente de configuração:
+- Para iOS
+    - Aparência
+    - Idioma Express
+    - Idioma preferencial
+    - Migração de dispositivo para dispositivo
+- Para macOS
+    - Hora da tela
+    - Configuração do touch ID
+
+Para obter mais informações sobre a personalização do assistente de configuração, consulte [criar um perfil de registro da Apple para IOS](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile) e [criar um perfil de registro da Apple para MacOS ](device-enrollment-program-enroll-macos.md#create-an-apple-enrollment-profile).
+
+#### <a name="add-a-user-column-to-the-autopilot-device-csv-upload-process----3823054---"></a>Adicionar uma coluna de usuário ao processo de carregamento de CSV de dispositivo do AutoPilot <!-- 3823054 -->
+Agora você pode adicionar uma coluna de usuário ao upload de CSV para dispositivos do AutoPilot. Isso permite que você atribua usuários em massa no momento em que importar o CSV. O novo formato para as linhas no CSV tem esta aparência: número de série, Windows-Product-ID, hardware-hash, opcional-Group-tag, opcional-Assign-User. Para obter mais informações, consulte [registrar dispositivos Windows no Intune usando o piloto automático do Windows](enrollment-autopilot.md).
+
+
+### <a name="device-management"></a>Gestão de dispositivos
+
+#### <a name="configure-automatic-device-clean-up-time-limit-down-to-30-days---4231059----"></a>Configurar o limite de tempo de limpeza de dispositivo automático para 30 dias <!--4231059  -->
+Você pode definir o limite de tempo de limpeza do dispositivo automático como 30 dias (em vez do limite anterior de 90 dias) após a última entrada. Para fazer isso, vá para**dispositivos** > do **Intune** > **Configurar** > **regras de limpeza do dispositivo**.
+
+#### <a name="build-number-included-on-android-device-hardware-page----4461910-----"></a>Número de Build incluído na página de hardware do dispositivo Android <!-- 4461910   -->
+Uma nova entrada na página hardware para cada dispositivo Android inclui o número de Build do sistema operacional do dispositivo. Para obter mais informações, consulte [Exibir detalhes do dispositivo no Intune](device-inventory.md).
+
+
+<!-- ########################## -->
+
 ## <a name="week-of-august-5-2019"></a>Semana de 5 de agosto de 2019
 
 ### <a name="zebra-technologies-is-a-supported-oem-for-oemconfig-on-android-enterprise-devices-----4843713---"></a>Pretas Technologies é um OEM com suporte para o OEMConfig em dispositivos Android Enterprise  <!-- 4843713 -->
@@ -64,6 +221,8 @@ Nessa atualização, o pretas Technologies é um fabricante de equipamento origi
 
 Aplica-se a:  
 - Android Enterprise
+
+<!-- ########################## -->
 
 ## <a name="week-of-july-22-2019"></a>Semana de 22 de julho de 2019 
 
@@ -592,8 +751,8 @@ Aplica-se a: Android Enterprise
 
 #### <a name="windows-update-notifications-----3316758-3316782----"></a>Notificações de Windows Update  <!-- 3316758, 3316782  -->
 Adicionamos duas *configurações de experiência do usuário* às configurações de Windows Update Ring que você pode gerenciar no console do Intune. Agora você pode:
-- Bloquear ou permitir que os usuários verifiquem se há [atualizações do Windows](windows-update-settings.md#block-user-from-scanning-for-windows-updates).
-- Gerencie o [nível de notificação Windows Update](windows-update-settings.md#windows-update-notification-level) que os usuários veem.
+- Bloquear ou permitir que os usuários verifiquem se há [atualizações do Windows](windows-update-settings.md).
+- Gerencie o [nível de notificação Windows Update](windows-update-settings.md) que os usuários veem.
 
 #### <a name="new-device-restriction-settings-for-android-enterprise-device-owner----3574254----"></a>Novas configurações de restrição de dispositivo para Android Enterprise, proprietário do dispositivo <!-- 3574254  -->
 Em dispositivos Android Enterprise, você pode criar um perfil de restrição de dispositivo para permitir ou restringir recursos, definir regras de senha e mais (**perfis** > de**configuração** > do dispositivo**Criar perfil** > escolher  **Android Enterprise** para plataforma > **proprietário do dispositivo apenas > restrições de dispositivo** para o tipo de perfil). 

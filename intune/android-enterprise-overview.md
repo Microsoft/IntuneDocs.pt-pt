@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e6a003e4ab912452f278c838c600f75ddec0c1f5
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 3a51951d02d73a0d79f6246dd9502c3c7fe89759
+ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67885133"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69550085"
 ---
 # <a name="manage-android-work-profile-devices-with-intune"></a>Gerir dispositivos com perfil de trabalho do Android com o Intune
 
@@ -68,7 +68,7 @@ As políticas de proteção de aplicações aplicadas são totalmente suportadas
 
 O suporte de VPN é semelhante aos perfis de VPN em Android. Os mesmos provedores de VPN e opções de configuração básica estão disponíveis para o gerenciamento do Android Enterprise com duas diferenças:
 
-- **VPN com âmbito de perfil de trabalho** – as ligações VPN estão limitadas às aplicações implementadas para o perfil de trabalho. Somente aplicativos gerenciados da empresa Android podem usar a conexão VPN. As aplicações pessoais no dispositivo não podem utilizar uma ligação VPN gerida. Para obter mais informações, consulte [configurações de VPN do Android Enterprise](vpn-settings-android.md#android-enterprise-vpn-settings).
+- **VPN com âmbito de perfil de trabalho** – as ligações VPN estão limitadas às aplicações implementadas para o perfil de trabalho. Somente aplicativos gerenciados da empresa Android podem usar a conexão VPN. As aplicações pessoais no dispositivo não podem utilizar uma ligação VPN gerida. Para obter mais informações, consulte [configurações de VPN do Android Enterprise](vpn-settings-android-enterprise.md).
 
 - **VPN específica da aplicação** – a VPN específica da aplicação pode ser configurada no Intune se o fornecedor de VPN suportar:
   - a configuração da VPN específica da aplicação
@@ -89,6 +89,6 @@ Para obter mais informações, veja [Configurar um perfil de certificado para os
 
 Os perfis de Wi-Fi gerenciados pelo Android Enterprise são removidos quando o dispositivo é desativado do Intune e o perfil de trabalho é excluído. Para obter mais informações, veja [Como configurar definições de Wi-Fi no Microsoft Intune](wi-fi-settings-configure.md).
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Passos seguintes
 - [Inscrever dispositivos Android](android-enroll.md)
 - [Atribuir aplicativos a dispositivos Android Enterprise de perfil de trabalho com o Intune](apps-add-android-for-work.md)

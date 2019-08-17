@@ -1,11 +1,11 @@
 ---
-title: definições de funcionalidade do dispositivo macOS no Microsoft Intune – Azure | Documentos da Microsoft
-description: Ver as definições para configurar dispositivos macOS para AirPrint e personalizar a janela de início de sessão para mostrar ou ocultar botões de energia no Microsoft Intune. Veja os passos para obter o endereço IP, caminho e definições de porta de um servidor de AirPrint na sua rede. Utilize estas definições de um perfil de configuração do dispositivo para configurar funcionalidades de dispositivos macOS.
+title: configurações de recurso de dispositivo macOS no Microsoft Intune – Azure | Microsoft Docs
+description: Consulte as configurações para configurar dispositivos macOS para o esprima e personalizar a janela de logon para mostrar ou ocultar botões de energia no Microsoft Intune. Consulte as etapas para obter o endereço IP, o caminho e as configurações de porta de um servidor de impressão em sua rede. Use essas configurações em um perfil de configuração de dispositivo para configurar recursos de dispositivo macOS.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/23/2019
+ms.date: 08/05/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -15,96 +15,109 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1826498b3bfa2191900d7574f79051af8f758558
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 63f2832dd321425efe8092f1bb12dd0d479ef71b
+ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041705"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69549930"
 ---
-# <a name="macos-device-feature-settings-in-intune"></a>definições de funcionalidade do dispositivo macOS no Intune
+# <a name="macos-device-feature-settings-in-intune"></a>configurações de recurso de dispositivo macOS no Intune
 
-O Intune inclui algumas definições incorporadas para personalizar funcionalidades nos seus dispositivos macOS. Este artigo apresenta uma lista essas configurações e descreve o que faz cada definição. Ele também lista os passos para obter o endereço IP, caminho e impressoras de porta do AirPrint com a aplicação de Terminal (emulador).
+O Intune inclui algumas configurações internas para personalizar recursos em seus dispositivos macOS. Este artigo lista essas configurações e descreve o que cada configuração faz. Ele também lista as etapas para obter o endereço IP, o caminho e a porta de impressoras de impressão ao usar o aplicativo de terminal (emulador).
 
 Esta funcionalidade aplica-se a:
 
 - macOS
 
-Como parte da sua solução de gestão (MDM) de dispositivos móveis, utilize estas definições para criar uma faixa, escolha a forma como os utilizadores iniciam sessão, adicionar um servidor do AirPrint e muito mais.
+Como parte da sua solução de MDM (gerenciamento de dispositivo móvel), use essas configurações para criar uma faixa, escolha como os usuários entram, adicione um servidor de impressão e muito mais.
 
 Estas definições são adicionadas a um perfil de configuração do dispositivo no Intune e, em seguida, atribuídas ou implementadas nos dispositivos macOS.
 
 ## <a name="before-you-begin"></a>Antes de começar
 
-[Criar perfil de configuração de dispositivo de um macOS](device-features-configure.md).
+[Crie um perfil de configuração de dispositivo MacOS](device-features-configure.md).
 
 ## <a name="airprint"></a>AirPrint
 
-- **Endereço IP**: Introduza o endereço IPv4 ou IPv6 da impressora. Se usar nomes de anfitrião para identificar as impressoras, pode obter o endereço IP ao enviar pings para a impressora na aplicação do Terminal. [Obtenha o endereço IP e o caminho](#get-the-ip-address-and-path) (Este artigo) fornece mais detalhes.
-- **Caminho**: Introduza o caminho da impressora. O caminho é normalmente `ipp/print` para impressoras na sua rede. [Obtenha o endereço IP e o caminho](#get-the-ip-address-and-path) (Este artigo) fornece mais detalhes.
-- **Porta** (iOS 11.0 e posterior): Introduza a porta de escuta do destino AirPrint. Se deixar esta propriedade em branco, o AirPrint utiliza a porta predefinida.
-- **TLS** (iOS 11.0 e posterior): Selecione **ativar** para proteger as ligações do AirPrint com Transport Layer Security (TLS).
+- **Endereço IP**: Insira o endereço IPv4 ou IPv6 da impressora. Se você usar nomes de host para identificar impressoras, poderá obter o endereço IP executando ping na impressora no aplicativo de terminal. [Obter o endereço IP e o caminho](#get-the-ip-address-and-path) (neste artigo) fornece mais detalhes.
+- **Caminho**: Insira o caminho da impressora. O caminho é normalmente `ipp/print` para impressoras em sua rede. [Obter o endereço IP e o caminho](#get-the-ip-address-and-path) (neste artigo) fornece mais detalhes.
+- **Porta** do (iOS 11,0 e posterior): Insira a porta de escuta do destino de impressão. Se você deixar essa propriedade em branco, o impresso usará a porta padrão.
+- **TLS** (iOS 11,0 e posterior): Selecione **habilitar** para proteger conexões de esprint com segurança de camada de transporte (TLS).
 
-**Adicionar** AirPrint o servidor. Pode adicionar vários servidores do AirPrint.
+**Adicionar** O servidor de impressão. Você pode adicionar muitos servidores de impressão.
 
-- **Importar** (opcional): Também pode **importação** um ficheiro separado por vírgulas (. csv) que inclui uma lista de impressoras com o AirPrint. Além disso, depois de adicionar impressoras com o AirPrint no Intune, pode **exportar** nesta lista.
+- **Importar** (opcional): Você também pode **importar** um arquivo separado por vírgulas (. csv) que inclui uma lista de impressoras de impressão. Além disso, depois de adicionar impressoras de impressão no Intune, você pode **Exportar** essa lista.
 
-Selecione **OK** para guardar as definições.
+Selecione **OK** para salvar suas configurações.
 
-### <a name="get-the-ip-address-and-path"></a>Obtenha o endereço IP e o caminho
+### <a name="get-the-ip-address-and-path"></a>Obter o endereço IP e o caminho
 
-Para adicionar servidores AirPrinter, terá do endereço IP da impressora, o caminho de recurso e a porta. Os passos seguintes mostram como obter estas informações.
+Para adicionar servidores do servidor de impressão, você precisa do endereço IP da impressora, do caminho do recurso e da porta. As etapas a seguir mostram como obter essas informações.
 
-1. Num Mac que está ligado à mesma rede local (sub-rede) que as impressoras do AirPrint, abra **Terminal** (partir **/Applications/Utilities**).
-2. Na aplicação do Terminal, escreva `ippfind`, e selecione introduzir.
+1. Em um Mac que está conectado à mesma rede local (sub-rede) que as impressoras de impressão impressa, abra o **terminal** (de **/Applications/Utilities**).
+2. No aplicativo terminal, digite `ippfind`e selecione Enter.
 
-    Tenha em atenção as informações de impressora. Por exemplo, pode retornar algo semelhante à `ipp://myprinter.local.:631/ipp/port1`. A primeira parte é o nome da impressora. A última parte (`ipp/port1`) é o caminho de recurso.
+    Anote as informações da impressora. Por exemplo, ele pode retornar algo semelhante a `ipp://myprinter.local.:631/ipp/port1`. A primeira parte é o nome da impressora. A última parte (`ipp/port1`) é o caminho do recurso.
 
-3. No Terminal, escreva `ping myprinter.local`, e selecione introduzir.
+3. No terminal, digite `ping myprinter.local`e selecione Enter.
 
-   Tenha em atenção o endereço IP. Por exemplo, pode retornar algo semelhante à `PING myprinter.local (10.50.25.21)`.
+   Anote o endereço IP. Por exemplo, ele pode retornar algo semelhante a `PING myprinter.local (10.50.25.21)`.
 
-4. Utilize os valores de caminho de recursos e o endereço IP. Neste exemplo, é o endereço IP `10.50.25.21`, e o caminho de recurso é `/ipp/port1`.
+4. Use os valores de caminho de recurso e endereço IP. Neste exemplo, o endereço IP é `10.50.25.21`e o caminho do recurso é. `/ipp/port1`
 
-## <a name="login-window"></a>Janela de início de sessão
+## <a name="login-items"></a>Itens de logon
 
-### <a name="window-layout"></a>Layout de janela
+- **Arquivos, pastas e aplicativos personalizados**: **Adicione** o caminho de um arquivo, pasta, aplicativo personalizado ou aplicativo de sistema que você deseja abrir quando um usuário entrar no dispositivo. Aplicativos de sistema ou aplicativos criados ou personalizados para sua organização normalmente estão na `Applications` pasta, com um caminho semelhante a. `/Applications/AppName.app` 
 
-- **Mostrar informações adicionais na barra de menus**: Quando a área de tempo na barra de menu é selecionada, **permitir** mostra o anfitrião de versão de nome e macOS. **Não configurado** (predefinição) não mostra estas informações na barra de menus.
-- **Faixa**: Introduza uma mensagem que é apresentada no ecrã do dispositivo de início de sessão. Por exemplo, introduza as informações da organização, uma mensagem de boas-vindas, informações de perdida e encontrado e assim por diante.
-- **Escolha o formato de início de sessão**: Escolha como os utilizadores iniciam sessão no dispositivo. As opções são:
-  - **Pedido de nome de utilizador e palavra-passe** (predefinição): Requer que os utilizadores introduzam um nome de utilizador e palavra-passe.
-  - **Listar todos os utilizadores, pedidos de palavra-passe**: Requer que os utilizadores selecionar o respetivo nome de utilizador de uma lista de utilizador e, em seguida, introduza a palavra-passe. Também configure:
+  Você pode adicionar vários arquivos, pastas e aplicativos. Por exemplo, digite:  
+  
+  - `/Applications/Calculator.app`
+  - `/Applications`
+  - `/Applications/Microsoft Office/root/Office16/winword.exe`
+  - `/Users/UserName/music/itunes.app`
+  
+  Ao adicionar qualquer aplicativo, pasta ou arquivo, certifique-se de inserir o caminho correto. Nem todos os itens estão na `Applications` pasta. Se um usuário mover um item de um local para outro, o caminho será alterado. Este item movido não será aberto quando o usuário entrar.
 
-    - **Os usuários locais**: **Ocultar** não mostra as contas de utilizador local na lista de utilizadores, que pode incluir as contas standard e administrador. São apresentadas apenas as contas de utilizador de rede e sistema. **Não configurado** (predefinição) apresenta as contas de utilizador local, na lista de utilizadores.
-    - **Contas móveis**: **Ocultar** não mostra contas móveis na lista de utilizadores. **Não configurado** (predefinição) mostra as contas de móveis na lista de utilizadores. Algumas contas móveis podem mostrar como os utilizadores da rede.
-    - **Os utilizadores de rede**: Selecione **mostrar** para listar os utilizadores de rede na lista de utilizadores. **Não configurado** (predefinição) não mostra a rede de contas de utilizador na lista de utilizadores.
-    - **Os utilizadores administradores**: **Ocultar** não mostra contas de utilizador o administrador na lista de utilizadores. **Não configurado** (predefinição) mostra o administrador de contas de utilizador na lista de utilizadores.
-    - **Outros usuários**: Selecione **mostrar** à lista **outros...**  os utilizadores da lista de utilizador. **Não configurado** (predefinição) não mostra as contas de utilizador na lista de utilizadores.
+## <a name="login-window"></a>Janela de logon
 
-### <a name="login-screen-power-settings"></a>Definições de energia do ecrã de início de sessão
+### <a name="window-layout"></a>Layout da janela
 
-- **Botão Encerrar**: **Ocultar** não mostra o botão Encerrar no ecrã de início de sessão. **Não configurado** (predefinição) mostra o botão de encerramento.
-- **Reinicie o botão**: **Ocultar** não mostra o botão de reinício no ecrã de início de sessão. **Não configurado** (predefinição) mostra o botão de reinício.
-- **Botão de suspensão**: **Ocultar** não mostra o botão de suspensão no ecrã de início de sessão. **Não configurado** (predefinição) mostra o botão de suspensão.
+- **Mostrar informações adicionais na barra de menus**: Quando a área de tempo na barra de menus é selecionada, **permitir** mostra o nome do host e a versão do MacOS. **Não configurado** (padrão) não mostra essas informações na barra de menus.
+- **Faixa**: Insira uma mensagem que é mostrada na tela de entrada no dispositivo. Por exemplo, insira as informações da sua organização, uma mensagem de boas-vindas, informações perdidas e encontradas e assim por diante.
+- **Escolher o formato de logon**: Escolha como os usuários entram no dispositivo. As opções são:
+  - **Solicitar nome de usuário e senha** (padrão): Exige que os usuários insiram um nome de usuário e uma senha.
+  - **Listar todos os usuários, solicitar senha**: Exige que os usuários selecionem seu nome de usuário em uma lista de usuários e, em seguida, insiram sua senha. Configure também:
+
+    - **Usuários locais**: **Ocultar** não mostra as contas de usuário local na lista de usuários, que podem incluir as contas padrão e de administrador. Somente as contas de usuário de rede e de sistema são mostradas. **Não configurado** (padrão) mostra as contas de usuário local na lista de usuários.
+    - **Contas móveis**: **Ocultar** não mostra contas móveis na lista de usuários. **Não configurado** (padrão) mostra as contas móveis na lista de usuários. Algumas contas móveis podem ser mostradas como usuários da rede.
+    - **Usuários de rede**: Selecione **Mostrar** para listar os usuários de rede na lista de usuários. **Não configurado** (padrão) não mostra as contas de usuário de rede na lista de usuários.
+    - **Usuários administradores**: **Ocultar** não mostra as contas de usuário administrador na lista de usuários. **Não configurado** (padrão) mostra as contas de usuário administrador na lista de usuários.
+    - **Outros usuários**: Selecione **Mostrar** para listar **outros...** usuários na lista de usuários. **Não configurado** (padrão) não mostra as outras contas de usuário na lista de usuários.
+
+### <a name="login-screen-power-settings"></a>Configurações de energia da tela de logon
+
+- **Botão desligar**: **Ocultar** não mostra o botão de desligamento na tela de entrada. **Não configurado** (padrão) mostra o botão de desligamento.
+- **Botão reiniciar**: **Ocultar** não mostra o botão reiniciar na tela de entrada. **Não configurado** (padrão) mostra o botão reiniciar.
+- **Botão de suspensão**: **Ocultar** não mostra o botão de suspensão na tela de entrada. **Não configurado** (padrão) mostra o botão de suspensão.
 
 ### <a name="other"></a>Outros
 
-- **Desativar início de sessão do utilizador da consola**: **Desativar** oculta a linha de comandos do macOS utilizada para iniciar sessão. Para os usuários comuns, **desativar** esta definição. **Não configurado** (predefinição) permite que os utilizadores avançados que inicie sessão com a linha de comandos do macOS. Para entrar no modo de consola, os utilizadores introduzirem `>console` o nome de utilizador de campo e tem de ser autenticado na janela da consola.
+- **Desabilitar logon de usuário do console do**: **Desabilitar** oculta a linha de comando MacOS usada para entrar. Para usuários típicos , desabilite essa configuração. **Não configurado** (padrão) permite que os usuários avançados entrem usando a linha de comando do macOS. Para entrar no modo de console, `>console` os usuários inserem no campo username e devem ser autenticados na janela do console.
 
-### <a name="apple-menu"></a>Apple Menu
+### <a name="apple-menu"></a>Menu da Apple
 
-Depois dos utilizadores iniciam sessão para os dispositivos, as seguintes definições de impacto sobre o que podem fazer.
+Depois que os usuários entram nos dispositivos, as configurações a seguir afetam o que eles podem fazer.
 
-- **Desativar desligar baixo**: **Desativar** impede que os utilizadores de selecionar as **encerramento** opção depois do utilizador inicia sessão. **Não configurado** (predefinição) permite que os utilizadores selecionem o **encerramento** item de menu no dispositivo.
-- **Desativar reinício**: **Desativar** impede que os utilizadores de selecionar as **reiniciar** opção depois do utilizador inicia sessão. **Não configurado** (predefinição) permite que os utilizadores selecionem o **reiniciar** item de menu no dispositivo.
-- **Desativar Power desativar**: **Desativar** impede que os utilizadores de selecionar as **desligar** opção depois do utilizador inicia sessão. **Não configurado** (predefinição) permite que os utilizadores selecionem o **desligar** item de menu no dispositivo.
-- **Desativar terminar sessão** (macOS 10.13 e posterior): **Desativar** impede que os utilizadores de selecionar as **terminar sessão** opção depois do utilizador inicia sessão. **Não configurado** (predefinição) permite que os utilizadores selecionem o **terminar sessão** item de menu no dispositivo.
-- **Desativar o ecrã de bloqueio** (macOS 10.13 e posterior): **Desativar** impede que os utilizadores de selecionar as **ecrã de bloqueio** opção depois do utilizador inicia sessão. **Não configurado** (predefinição) permite que os utilizadores selecionem o **ecrã de bloqueio** item de menu no dispositivo.
+- **Desabilitar**o desligamento: **Desabilitar** impede que os usuários selecionem a opção de desligamento após o usuário entrar. **Não configurado** (padrão) permite que os usuários selecionem o item de menu de desligamento no dispositivo.
+- **Desabilitar**reinicialização: **Desabilitar** impede que os usuários selecionem a opção de reinicialização após o usuário entrar. **Não configurado** (padrão) permite que os usuários selecionem o item de menu **reiniciar** no dispositivo.
+- **Desabilitar**desligamento: **Desabilitar** impede que os usuários selecionem a opção desligar após o usuário entrar. **Não configurado** (padrão) permite que os usuários selecionem o item de menu **desligar** no dispositivo.
+- **Desabilitar logoff** (macOS 10,13 e posterior): **Desabilitar** impede que os usuários selecionem a opção **fazer logoff** após o usuário entrar. **Não configurado** (padrão) permite que os usuários selecionem o item de menu **fazer logoff** no dispositivo.
+- **Desabilitar tela de bloqueio** (macOS 10,13 e posterior): **Desabilitar** impede que os usuários selecionem a opção **tela de bloqueio** após o usuário entrar. **Não configurado** (padrão) permite que os usuários selecionem o item de menu da **tela de bloqueio** no dispositivo.
 
-Selecione **OK** para guardar as definições.
+Selecione **OK** para salvar suas configurações.
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Passos seguintes
 
-- Ver todas as definições de [iOS](ios-device-features-settings.md) dispositivos.
-- [Atribuir este perfil](device-profile-assign.md) aos seus grupos, e [monitorizar o estado](device-profile-monitor.md).
+- Exiba todas as configurações para dispositivos [Ios](ios-device-features-settings.md) .
+- [Atribua esse perfil](device-profile-assign.md) a seus grupos e [monitore seu status](device-profile-monitor.md).

@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 35676b95356df002fdd784f67110f048643e444e
-ms.sourcegitcommit: b30a2ba2b67aa2fc3421f0b2f6c5f361a0de612a
+ms.openlocfilehash: 8bd537315a09c0c7cf338ac0892fc4ae3d1dc8fc
+ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "69022892"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69550181"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Definições de dispositivos do Android Enterprise para permitir ou restringir funcionalidades com o Intune
 
@@ -85,12 +85,9 @@ Use essas configurações para configurar uma experiência em estilo de quiosque
 
 - **Aplicativo único**: Os usuários só podem acessar um único aplicativo no dispositivo. Quando o dispositivo é iniciado, apenas a aplicação específica é iniciada. Os utilizadores não podem abrir novas aplicações ou mudar a aplicação em execução.
 
-  **Passos**
-  1. Escolher **Selecione uma aplicação gerida**e selecione a aplicação do Google Play gerida a partir da lista. 
+  - **Selecione um aplicativo gerenciado**: Selecione o aplicativo Google Play gerenciado na lista.
 
-      Se não tiver todas as aplicações listadas, em seguida, [adicionar algumas aplicações Android](apps-add-android-for-work.md) no dispositivo. Certifique-se de [atribuir o aplicativo ao grupo de dispositivos criado para seus dispositivos dedicados](apps-deploy.md).
-
-  2. Escolher **OK** > **OK** para adicionar a aplicação.
+    Se não tiver todas as aplicações listadas, em seguida, [adicionar algumas aplicações Android](apps-add-android-for-work.md) no dispositivo. Certifique-se de [atribuir o aplicativo ao grupo de dispositivos criado para seus dispositivos dedicados](apps-deploy.md).
 
   > [!IMPORTANT]
   > Ao usar o modo de quiosque de aplicativo único, os aplicativos de discagem/telefone podem não funcionar corretamente. 
@@ -106,41 +103,63 @@ Use essas configurações para configurar uma experiência em estilo de quiosque
   >
   > Ao usar o modo de quiosque de vários aplicativos, os aplicativos de discagem/telefone podem não funcionar corretamente. 
 
-  - Escolher **adicionar**e selecione as suas aplicações na lista.
+  - **Adicionar**: Selecione seus aplicativos na lista.
 
     Se o **geridos tela home page** aplicação não estiver listada, em seguida, [adicioná-lo a partir do Google Play](https://play.google.com/work/apps/details?id=com.microsoft.launcher.enterprise). Certifique-se de [atribuir o aplicativo](apps-deploy.md) ao grupo de dispositivos criado para seus dispositivos dedicados.
 
     Também pode adicionar outros [aplicações Android](apps-add-android-for-work.md) e [aplicações web](web-app.md) criados pela sua organização para o dispositivo. Certifique-se de [atribuir o aplicativo ao grupo de dispositivos criado para seus dispositivos dedicados](apps-deploy.md).
 
-  - **Botão Home virtual**: Escolha **habilitar** para mostrar um botão página inicial no dispositivo dedicado. Quando selecionado, o utilizador ele retorna ao ecrã principal do dispositivo para que os usuários podem alternar facilmente entre aplicações. Em alguns dispositivos Android, que os usuários precisem percorra a cópia de segurança no ecrã para mostrar o botão de início. **Desativar** não mostra um botão de início, para que os utilizadores podem utilizar o botão de retrocesso para alternar entre aplicações.
-  - **Sair do modo de quiosque**: Escolha **habilitar** para permitir que os administradores pausem temporariamente o modo de quiosque para atualizar o dispositivo. Para usar esse recurso, o administrador: 
-  
-    1. Continua selecionando o botão voltar até que o botão "sair do quiosque" seja exibido. 
-    2. Seleciona o botão e entra no **código do modo de quiosque de saída** .
-    3. Quando terminar de efetuar alterações, selecione o **geridos tela home page** aplicação. Este passo relocks o dispositivo em modo de local público de várias aplicações. 
+  - **Botão Home virtual**: Um botão de chave flexível que retorna os usuários para a tela inicial gerenciada para que os usuários possam alternar entre aplicativos. As opções são:
 
-    **Desativar** não dá a capacidade de colocar em pausa o modo de local público. Se o administrador continuar selecionando o botão voltar e seleciona o botão "sair do quiosque", uma mensagem informa que uma senha é necessária.
+    - **Não configurado** (predefinição): Um botão página inicial não é mostrado. Os usuários devem usar o botão voltar para alternar entre aplicativos.
+    - **Passe o dedo para cima**: Um botão página inicial mostra quando um usuário passa o dedo para cima no dispositivo.
+    - **Flutuante**: Mostra um botão Home persistente e flutuante no dispositivo.
+
+  - **Sair do modo de quiosque**: Escolha **habilitar** para permitir que os administradores pausem temporariamente o modo de quiosque para atualizar o dispositivo. Para usar esse recurso, o administrador:
+  
+    1. Continua selecionando o botão voltar até que o botão **sair do quiosque** seja mostrado. 
+    2. Seleciona o botão **sair do quiosque** e entra no **código do modo de quiosque** de saída.
+    3. Quando terminar, selecione o aplicativo de **tela inicial gerenciado** . Este passo relocks o dispositivo em modo de local público de várias aplicações.
+
+      Quando definido como **não configurado**, os administradores não podem pausar o modo de quiosque. Se o administrador continuar selecionando o botão voltar e seleciona o botão **sair do quiosque** , uma mensagem informa que uma senha é necessária.
 
     - **Deixe o código do modo de quiosque**: Insira um PIN numérico de 4-6 dígitos. O administrador utiliza este PIN para interromper temporariamente o modo de local público.
 
   - **Definir o plano de fundo da URL personalizada**: Insira uma URL para personalizar a tela de fundo no dispositivo dedicado.
-    
+
     > [!NOTE]
     > Na maioria dos casos, é recomendável iniciar com imagens de pelo menos os seguintes tamanhos:
     >
     > - Telemóvel 1080x1920 px
     > - PC 1920 x 1080 px
-    >    
+    >
     > Para obter a melhor experiência e os detalhes nítidos, é recomendável que os ativos por imagem do dispositivo sejam criados para as especificações de exibição.
     >
     > Os monitores modernos têm densidades de pixel mais altas e podem exibir imagens de definição de 2K/4K equivalentes.
-  - **Configuração de Wi-Fi**: Escolha **habilitar** para permitir que os usuários finais conectem o dispositivo a redes wifi diferentes. Habilitar esse recurso também ativa o local do dispositivo. **Não configurado** (padrão) impede que os usuários se conectem a redes WiFi enquanto estiverem na tela inicial gerenciada (modo de tarefa de bloqueio).
 
-    Mais no [modo de tarefa de bloqueio](https://developer.android.com/work/dpc/dedicated-devices/lock-task-mode) (abre o site do Android).
+  - **Configuração de Wi-Fi**: **Habilitar** mostra o controle Wi-Fi na tela inicial gerenciada e permite que os usuários finais conectem o dispositivo a redes wifi diferentes. Habilitar esse recurso também ativa o local do dispositivo. **Não configurado** (padrão) não mostra o controle Wi-Fi na tela inicial gerenciada. Ele impede que os usuários se conectem a redes Wi-Fi usando a tela inicial gerenciada.
 
-  - **Configuração de Bluetooth**: Escolha **habilitar** para permitir o Bluetooth no dispositivo e permitir que os usuários finais Emparelhem dispositivos via Bluetooth. Habilitar esse recurso também ativa o local do dispositivo. **Não configurado** (padrão) impede que os usuários configurem dispositivos Bluetooth e de emparelhamento enquanto estiverem na tela inicial gerenciada (modo de tarefa de bloqueio). 
+  - **Configuração de Bluetooth**: **Habilitar** mostra o controle Bluetooth na tela inicial gerenciada e permite que os usuários finais Emparelhem dispositivos via Bluetooth. Habilitar esse recurso também ativa o local do dispositivo. **Não configurado** (padrão) não mostra o controle Bluetooth na tela inicial gerenciada. Ele impede que os usuários configurem dispositivos Bluetooth e de emparelhamento ao usar a tela inicial gerenciada.
 
-    Mais no [modo de tarefa de bloqueio](https://developer.android.com/work/dpc/dedicated-devices/lock-task-mode) (abre o site do Android).
+  - **Acesso à lanterna**: **Habilitar** mostra o controle de lanterna na tela inicial gerenciada e permite que os usuários finais ativem ou desativem a lanterna. **Não configurado** (padrão) não mostra o controle lanterna na tela inicial gerenciada. Ele impede que os usuários usem a lanterna ao usar a tela inicial gerenciada.
+
+  - **Controle de volume de mídia**: **Habilitar** mostra o controle de volume de mídia na tela inicial gerenciada e permite que os usuários finais ajustem o volume de mídia do dispositivo usando um controle deslizante. **Não configurado** (padrão) não mostra o controle de volume de mídia na tela inicial gerenciada. Ele impede que os usuários ajustem o volume de mídia do dispositivo ao usar a tela inicial gerenciada, a menos que seus botões de hardware ofereçam suporte a ele. 
+
+  - **Modo de proteção de tela**: **Habilitar** mostra uma barra de proteção na tela inicial gerenciada quando o dispositivo está bloqueado ou atinge o tempo limite. **Não configurado** (padrão) não mostra uma barra de proteção na tela inicial gerenciada.
+
+    Quando habilitado, configure também:
+
+    - **Definir imagem de proteção de tela personalizada**: Insira a URL para uma imagem personalizada. Por exemplo, digite:
+
+      - `http://www.contoso.com/image.jpg`
+      - `www.contoso.com/image.bmp`
+      - `https://www.contoso.com/image.html`
+
+      Se você não inserir uma URL, a imagem padrão do dispositivo será usada, se houver uma imagem padrão.
+
+    - **Número de segundos que o dispositivo mostra a proteção de tela antes**de desligar a tela: Escolha por quanto tempo o dispositivo mostra a proteção de tela. Insira um valor entre 0-9999999 segundos. O padrão `0` é segundos. Quando deixado em branco ou definido como zero (`0`), a proteção de tela estará ativa até que um usuário interaja com o dispositivo.
+    - **Número de segundos em que o dispositivo fica inativo antes de mostrar a proteção de tela**: Escolha por quanto tempo o dispositivo ficará ocioso antes de mostrar a proteção de tela. Insira um valor entre 1-9999999 segundos. O padrão `30` é segundos. Você deve inserir um número maior que zero (`0`).
+    - **Detectar mídia antes de iniciar a proteção de tela**: **Habilitar** (padrão) não mostrará a proteção de tela se áudio ou vídeo estiver sendo reproduzido no dispositivo. **Não configurado** mostra a proteção de tela, mesmo se o áudio ou vídeo estiver sendo reproduzido.
 
 ### <a name="device-password-settings"></a>Definições de palavra-passe do dispositivo
 

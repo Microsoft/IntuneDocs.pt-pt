@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 91440bc536869fb0559bf7be12386434f217d229
-ms.sourcegitcommit: db68056e2db17dfdeaa216c684302567742e6416
+ms.openlocfilehash: df090e0e942291d5430b101db378aca296466bf9
+ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68993823"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69549992"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Inscrever automaticamente dispositivos iOS com o Programa de Inscrição de Dispositivos da Apple
 
@@ -207,23 +207,28 @@ Agora que instalou o seu token, pode criar um perfil de inscrição para disposi
     |------------------------------------------|------------------------------------------|
     | <strong>Código de Acesso</strong> | Pedir um código de acesso ao utilizador. Solicite sempre um código de acesso para os dispositivos não protegidos, a menos que o acesso seja controlado de outra forma (ou seja, modo de quiosque que restringe o dispositivo a uma aplicação). |
     | <strong>Serviços de Localização</strong> | Pedir ao utilizador a respetiva localização. |
-    | <strong>Restaurar</strong> | Apresentar o ecrã **Aplicações e Dados**. Este ecrã permite que o utilizador opte por restaurar ou transferir os dados da Cópia de Segurança do iCloud quando configurar o dispositivo. |
-    | <strong>iCloud e Apple ID</strong> | Apresentar ao utilizador as opções para iniciar sessão com o respetivo **ID Apple** e utilizar o **iCloud**.                         |
+    | <strong>Restaurar</strong> | Exibir a tela de dados do & de aplicativos. Este ecrã permite que o utilizador opte por restaurar ou transferir os dados da Cópia de Segurança do iCloud quando configurar o dispositivo. |
+    | <strong>iCloud e Apple ID</strong> | Dê ao usuário as opções para entrar com sua ID da Apple e usar o iCloud.                         |
     | <strong>Termos e Condições</strong> | Pedir ao utilizador para aceitar os termos e condições da Apple. |
     | <strong>Touch ID</strong> | Apresentar ao utilizador a opção para configurar a identificação através de impressão digital no dispositivo. |
     | <strong>Apple Pay</strong> | Apresentar ao utilizador a opção para configurar o Apple Pay no dispositivo. |
     | <strong>Zoom</strong> | Apresentar ao utilizador a opção para aumentar o zoom quando este configurar o dispositivo. |
     | <strong>Siri</strong> | Apresentar ao utilizador a opção para configurar o Siri. |
-    | <strong>Dados de Diagnóstico</strong> | Apresentar o ecrã **Diagnósticos** ao utilizador. Este ecrã permite que o utilizador opte por enviar dados de diagnóstico para a Apple. |
+    | <strong>Dados de Diagnóstico</strong> | Exiba a tela de diagnóstico para o usuário. Este ecrã permite que o utilizador opte por enviar dados de diagnóstico para a Apple. |
     | <strong>Sinal de Apresentação</strong> | Apresentar ao utilizador a opção para ativar o Sinal de Apresentação. |
     | <strong>Privacidade</strong> | Apresentar o ecrã Privacidade ao utilizador. |
     | <strong>Migração do Android</strong> | Apresentar ao utilizador a opção para migrar os dados de um dispositivo Android. |
-    | <strong>iMessage e FaceTime</strong> | Apresentar ao utilizador a opção para configurar o iMessage e o FaceTime. |
+    | <strong>iMessage e FaceTime</strong> | Dê ao usuário a opção de configurar iMessage e FaceTime. |
     | <strong>Integração</strong> | Apresentar ecrãs informativos de integração para formação do utilizador, como a Folha de Capa, o Multitasking e o Centro de Controlo. |
     | <strong>Migração de Relógio</strong> | Apresentar ao utilizador a opção para migrar os dados de um dispositivo de relógio. |
     | <strong>Tempo do Ecrã</strong> | Apresentar o ecrã Tempo do Ecrã. |
     | <strong>Atualização de Software</strong> | Apresentar o ecrã de atualização de software obrigatório. |
     | <strong>Configuração do SIM</strong> | Apresentar ao utilizador a opção para adicionar um plano de dados móveis. |
+    | <strong>Aparência</strong> | Apresentar o ecrã Aspeto ao utilizador. |
+    | <strong>Idioma Express</strong>| Exiba a tela da linguagem expressa para o usuário. |
+    | <strong>Idioma preferencial</strong> | Dê ao usuário a opção de escolher seu **idioma preferencial**. |
+    | <strong>Migração de dispositivo para dispositivo</strong> | Conceda ao usuário a opção de migrar dados de seu dispositivo antigo para este dispositivo.|
+    
 
 16. Escolha **Avançar** para ir para a página revisar **+ criar** .
 
