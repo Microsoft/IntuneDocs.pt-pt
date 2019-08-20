@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 29483c7694ef96a026942a670aa8a52cb8cc8857
-ms.sourcegitcommit: f75386986d24e7d5dd63a3f1a0a014cb52056063
+ms.openlocfilehash: 267eb630b962893d5ab32530a095fe2fd3f7102e
+ms.sourcegitcommit: cbd406e3c6ab8c9a29d58dfda4a18e34277a1594
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69560128"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69620206"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 
@@ -440,9 +440,6 @@ Aplica-se a: iOS
 
 ### <a name="device-enrollment"></a>Inscrição de dispositivos
 
-#### <a name="windows-autopilot-reset-removes-the-devices-primary-user----4156123---"></a>A redefinição do Windows AutoPilot remove o usuário principal do dispositivo <!-- 4156123 -->
-Esse recurso foi atrasado e será lançado em um Sprint futuro.    
-
 #### <a name="windows-autopilot-support-for-hybrid-azure-ad-join----4809146--"></a>Suporte do Windows AutoPilot para ingresso híbrido no Azure AD <!-- 4809146-->
 O Windows AutoPilot para dispositivos existentes agora dá suporte à junção híbrida do Azure AD (além do suporte existente para ingresso no Azure AD). Aplica-se aos dispositivos Windows 10 versão 1809 e acima. Para obter mais informações, consulte [Windows AutoPilot para dispositivos existentes](https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices).
 
@@ -709,7 +706,7 @@ Você pode criar regras de requisitos com base em scripts do PowerShell, valores
 #### <a name="configure-your-win32-apps-to-be-installed-on-intune-enrolled-azure-ad-joined-devices----3695227----"></a>Configurar seus aplicativos Win32 para serem instalados em dispositivos adicionados ao Azure AD registrados no Intune <!-- 3695227  -->
 Você pode atribuir seus aplicativos Win32 para serem instalados em dispositivos ingressados no Azure AD registrados no Intune. Para obter mais informações sobre aplicativos Win32 no Intune, consulte [Gerenciamento de aplicativos Win32](apps-win32-app-management.md).
 
-#### <a name="device-overview-shows-primary-user---794259----"></a>Visão geral do dispositivo mostra o usuário principal <!--794259  -->
+#### <a name="device-overview-shows-primary-user---3794259----"></a>Visão geral do dispositivo mostra o usuário principal <!--3794259  -->
 A página Visão geral do dispositivo mostrará o usuário primário, também chamado de usuário de afinidade de dispositivo de usuário (UDA). Para ver o usuário primário de um dispositivo, escolha**dispositivos** > do **Intune** > **todos os dispositivos** > escolha um dispositivo. O usuário primário será exibido próximo à parte superior da página **visão geral** .
 
 #### <a name="additional-managed-google-play-app-reporting-for-android-enterprise-work-profile-devices----4105925----"></a>Relatórios adicionais da aplicação do Managed Google Play para dispositivos de perfil de trabalho do Android Enterprise <!-- 4105925  -->

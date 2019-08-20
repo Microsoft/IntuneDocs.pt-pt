@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 82d5b26071cad6ee854ae08e85b4ea0cff8d0af3
-ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
+ms.openlocfilehash: f13b5b92ca442f4b5ae05d3567f8385288d92909
+ms.sourcegitcommit: 6b5907046f920279bbda3ee6c93e98594624c05c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69550146"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69582931"
 ---
 # <a name="configure-a-certificate-profile-for-your-devices-in-microsoft-intune"></a>Configurar um perfil de certificado para os seus dispositivos no Microsoft Intune
 
@@ -112,9 +112,9 @@ Crie um perfil de certificado fidedigno para poder criar um perfil de certificad
 3. Navegue até o certificado que você salvou [na etapa 2: Exporte seu certificado](#step-2-export-your-trusted-root-ca-certificate)de AC raiz confiável e, em seguida, selecione **OK**.
 4. Apenas para os dispositivos Windows 8.1 e Windows 10, selecione o **Arquivo de Destino** do certificado fidedigno em:
 
-    - **Arquivo de certificados no computador – Raiz**
-    - **Arquivo de certificados no computador – Intermédio**
-    - **Armazenamento de certificados de utilizador – Intermédio**
+    - **Repositório de certificados do computador-raiz** SCEP
+    - **Repositório de certificados do computador-intermediário** SCEP
+    - **Repositório de certificados do usuário-intermediário** (PKCS, SCEP)
 
 5. Quando tiver terminado, selecione **OK**, volte ao painel **Criar perfil** e selecione **Criar**.
 
@@ -132,7 +132,7 @@ Consulte um dos artigos a seguir para obter ajuda com a configuração e atribui
 
 Após criar um perfil de certificado fidedigno, crie perfis de certificado SCEP ou PKCS para cada plataforma que queira utilizar. Ao criar um perfil de certificado SCEP, introduza um perfil de certificado fidedigno para a mesma plataforma. Este passo liga os dois perfis de certificado, mas mesmo assim tem de atribuir cada perfil separadamente.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Passos Seguintes
 
 [Atribuir perfis de dispositivo](device-profile-assign.md)  
 [Use S/MIME to sign and encrypt emails (Utilizar S/MIME para assinar e encriptar e-mails)](certificates-s-mime-encryption-sign.md)  

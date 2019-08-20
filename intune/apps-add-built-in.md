@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/08/2019
+ms.date: 08/15/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a424655241f44125b51ef2f75cb6c537b10dd91d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 2a94542311bc5ff4a25b2f9c6229898b1d891c6c
+ms.sourcegitcommit: 6b5907046f920279bbda3ee6c93e98594624c05c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049520"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69582863"
 ---
 # <a name="add-built-in-apps-to-microsoft-intune"></a>Adicionar aplicações incorporadas ao Microsoft Intune
 
@@ -50,22 +50,22 @@ Para adicionar uma aplicação incorporada às suas aplicações disponíveis no
 ## <a name="configure-app-information"></a>Configurar as informações da aplicação
 
 Pode modificar as informações da aplicação incorporada. Estas informações ajudam-no a identificar a aplicação no Intune e também ajudam os utilizadores a encontrá-la no portal da empresa.
-1. Na **aplicações de cliente - aplicações** painel, selecione a aplicação incorporada que pretende modificar.  
+1. No painel **aplicativos cliente – aplicativos** , selecione o aplicativo interno que você deseja modificar.  
     É apresentado um painel da aplicação incorporada.
 2. Em **Gerir**, selecione a opção **Propriedades**.
 3. Selecione a opção **Configurar** para modificar as informações da aplicação incorporada.
 4. No painel **Informações da aplicação**, pode modificar as seguintes informações:
-    - **Nome**: Introduza o nome da aplicação incorporada tal como é apresentado no portal da empresa. Certifique-se de que todos os nomes que utiliza são exclusivos. Se existir o mesmo nome duas vezes, só é apresentada uma das aplicações aos utilizadores no portal da empresa.
+    - **Nome**: Insira o nome do aplicativo interno como ele é exibido no portal da empresa. Certifique-se de que todos os nomes que utiliza são exclusivos. Se existir o mesmo nome duas vezes, só é apresentada uma das aplicações aos utilizadores no portal da empresa.
     - **Descrição**: Introduza uma descrição para a aplicação. 
     - **Publicador**: Introduza o nome do publicador da aplicação.
-    - **Categoria**: Opcionalmente, selecione uma ou mais das categorias de aplicações incorporadas. Esta opção permite que os utilizadores encontrem a aplicação mais facilmente quando procurarem no portal da empresa.
-    - **Apresentar como aplicação em destaque no portal da empresa**: Apresente a aplicação de forma bem visível na página principal do portal da empresa quando os utilizadores procurarem aplicações.
+    - **Categoria**: Opcionalmente, selecione uma ou mais das categorias de aplicativo internas. Esta opção permite que os utilizadores encontrem a aplicação mais facilmente quando procurarem no portal da empresa.
+    - **Exibir como um aplicativo em destaque no portal da empresa**: Apresente a aplicação de forma bem visível na página principal do portal da empresa quando os utilizadores procurarem aplicações.
     - **URL de Informações**: Opcionalmente, introduza o URL de um site que contenha informações sobre esta aplicação. O URL é apresentado aos utilizadores no portal da empresa.
     - **URL de privacidade**: Opcionalmente, introduza o URL de um site que contenha informações sobre a privacidade desta aplicação. O URL é apresentado aos utilizadores no portal da empresa.
     - **Programador**: opcionalmente, introduza o nome do programador da aplicação.
-    - **Proprietário**: Opcionalmente, introduza um nome para o proprietário desta aplicação (por exemplo, *departamento de RH*).
+    - **Proprietário**: Opcionalmente, insira um nome para o proprietário deste aplicativo (por exemplo, *departamento de RH*).
     - **Notas**: introduza quaisquer notas que queira associar a esta aplicação.
-    - **Carregar ícone**: Carregue um ícone que é apresentado com a aplicação quando os utilizadores procurarem no portal da empresa.
+    - **Ícone de carregamento**: Carregue um ícone que é exibido com o aplicativo quando os usuários navegam pelo portal da empresa.
 4. Selecione **OK**.
 5. No painel **Propriedades**, selecione **Guardar**.
 

@@ -6,7 +6,7 @@ author: brenduns
 ms.author: brenduns
 manager: dougeby
 ms.date: 08/15/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6cc5b26001c9ceacd5781fc8164ce141c5e42de3
-ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
+ms.openlocfilehash: 330bfa319ca0202a5edc09d8f27e40c18ce89d39
+ms.sourcegitcommit: 6b5907046f920279bbda3ee6c93e98594624c05c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69550151"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69582941"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>Configurar e utilizar certificados PKCS com o Intune
 
@@ -222,6 +222,9 @@ Para autenticar um dispositivo com VPN, WiFi ou outros recursos, um dispositivo 
 
 4. Selecione **OK** > **Criar** para guardar o perfil.
 5. Para atribuir o novo perfil a um ou mais dispositivos, veja [Atribuir perfis de dispositivo no Microsoft Intune](device-profile-assign.md).
+
+   > [!NOTE]
+   > Em dispositivos com um perfil do Android Enterprise, os certificados instalados usando um perfil de certificado PKCS não são visíveis no dispositivo. Para confirmar a implantação de certificado bem-sucedida, verifique o status do perfil no console do Intune.
 
 ## <a name="create-a-pkcs-imported-certificate-profile"></a>Criar um perfil de certificado PKCS importado
 
