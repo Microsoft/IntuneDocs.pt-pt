@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b3b532de1aa790d10efc84be314da903d86dabfd
-ms.sourcegitcommit: 6b5907046f920279bbda3ee6c93e98594624c05c
+ms.openlocfilehash: eff9f965649587a929e45d0f9d59305194ffe68b
+ms.sourcegitcommit: b1ddc7f4a3d520b7d6755c7a423a46d1e2548592
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69582746"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69651153"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Atribuir aplicações do Office 365 a dispositivos Windows 10 com o Microsoft Intune
 
@@ -39,7 +39,7 @@ Antes de poder atribuir, monitorizar, configurar ou proteger aplicações, tem d
 - Os dispositivos em que pretende implementar estas aplicações têm de ter a Atualização para Criativos do Windows 10 ou posterior.
 - O Intune só suporta a adição de aplicações do Office que pertençam ao conjunto de aplicações Office 365.
 - Se estiverem abertas aplicações do Office quando o Intune instalar o conjunto de aplicações, a instalação poderá falhar e os utilizadores poderão perder os dados dos ficheiros não guardados.
-- Este método de instalação não é suportado em dispositivos com o Windows 10 S, Windows Home, Windows Team, Windows Holographic ou Windows Holographic for Business.
+- Não há suporte para esse método de instalação nos dispositivos Windows Home, Windows Team, Windows Holographic ou Windows Holographic for Business.
 - O Intune não suporta a instalação de aplicações de ambiente de trabalho do Office 365 da Microsoft Store (denominadas aplicações Office Centennial) num dispositivo em que já implementou aplicações do Office 365 com o Intune. Se instalar esta configuração, poderá causar perda ou danos em dados.
 - As múltiplas atribuições de aplicações necessárias ou disponíveis não são acumulativas. Uma atribuição de aplicação posterior irá substituir as atribuições de aplicações instaladas pré-existentes. Por exemplo, se o primeiro conjunto de aplicações do Office incluir o Word, mas o conjunto posterior não o incluir, o Word será desinstalado. Esta condição não se aplica às aplicações Visio ou Project.
 - Atualmente, não há suporte para implantações do vários Office 365. Somente uma implantação será entregue ao dispositivo
@@ -156,7 +156,7 @@ A seguinte tabela lista códigos de erro comuns que poderá encontrar e o seu si
 
 ### <a name="status-for-office-csp"></a>Estado do CSP do Office
 
-| Estado | Fase | Descrição |
+| State | Fase | Descrição |
 |--------------------------------------------------|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1460 (ERROR_TIMEOUT) | Transferência | Falha ao transferir a Ferramenta de Implementação do Office |
 | 13 (ERROR_INVALID_DATA) | - | Não foi possível verificar a assinatura da Ferramenta de Implementação do Office transferida |

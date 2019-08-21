@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e8f5f67661dbf33f2b0d6b44e32302a874c3f4de
-ms.sourcegitcommit: 3baa9965095bb874d9b8c7a3cbb4aa925ed52cae
+ms.openlocfilehash: 9aec6ca40a1e93ebc6b2e7393177281941435b01
+ms.sourcegitcommit: b1ddc7f4a3d520b7d6755c7a423a46d1e2548592
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68625084"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69651196"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Guia para programadores do SDK da Aplicação do Microsoft Intune para iOS
 
@@ -94,7 +94,7 @@ O objetivo do SDK da Aplicação do Intune para iOS consiste em adicionar capaci
 
 Para ativar o SDK da Aplicação do Intune, siga estes passos:
 
-1. **Opção 1-estrutura (recomendado)** : Se você estiver usando o Xcode 10.2 + e seu aplicativo/extensão contiver código Swift `IntuneMAMSwift.framework` , `IntuneMAMSwiftStub.framework` vincule e ao seu destino: Arraste `IntuneMAMSwift.framework` e`IntuneMAMSwiftStub.framework` para a  lista de binários inseridos do destino do projeto.
+1. **Opção 1-estrutura (recomendado)** : Se você estiver usando o Xcode 10.2 + e seu aplicativo/extensão contiver código Swift `IntuneMAMSwift.framework` , `IntuneMAMSwiftStub.framework` vincule e ao seu destino: Arraste `IntuneMAMSwift.framework` e`IntuneMAMSwiftStub.framework` para a lista de binários inseridos do destino do projeto.
 
     Caso contrário, `IntuneMAM.framework` vincule ao seu destino: Arraste `IntuneMAM.framework` para a lista **Binários Incorporados** do destino do projeto.
 
@@ -255,15 +255,16 @@ ADALRedirectUri  | Cadeia  | URI de redirecionamento do Azure AD da aplicação.
 ADALRedirectScheme  | Cadeia  | O esquema de redirecionamento do Azure AD da aplicação. Pode ser utilizado em vez do ADALRedirectUri se o URI de redirecionamento da aplicação estiver no formato `scheme://bundle_id`. | Se a aplicação utilizar a ADAL, o ADALRedirectUri ou o ADALRedirectScheme são necessários. |
 ADALLogOverrideDisabled | Booleano  | Especifica se o SDK encaminhará todos os registos da ADAL (incluindo chamadas da ADAL a partir da aplicação, caso existam) para o seu próprio ficheiro de registo. Assume a predefinição de NO. Definido como YES se a aplicação for definir a sua própria chamada de retorno de registo da ADAL. | Opcional. |
 ADALCacheKeychainGroupOverride | Cadeia  | Especifica o grupo de keychain a utilizar para a cache da ADAL em vez de "com.microsoft.adalcache". Tenha em atenção que isto não tem o prefixo app-id. Será adicionado como prefixo à cadeia fornecida no tempo de execução. | Opcional. |
-AppGroupIdentifiers | Matriz de cadeias  | Matriz de grupos de aplicações da secção de elegibilidade com.apple.security.application-groups. | Necessário se a aplicação utilizar grupos de aplicações. |
+AppGroupIdentifiers | matriz de cadeias de caracteres  | Matriz de grupos de aplicações da secção de elegibilidade com.apple.security.application-groups. | Necessário se a aplicação utilizar grupos de aplicações. |
 ContainingAppBundleId | Cadeia | Especifica o ID do pacote da aplicação que contém a extensão. | Necessário para as extensões de iOS. |
-DebugSettingsEnabled| Booleano | Se for definido como YES, as políticas de teste no pacote de Definições podem ser aplicadas. As aplicações *não* devem ser fornecidas com esta definição ativada. | Opcional. Assume a predefinição de NO.|
-MainNibFile <br> MainNibFile~ipad  | Cadeia  | Esta definição deve ter o nome de ficheiro nib principal da aplicação.  | Obrigatório se a aplicação definir MainNibFile no ficheiro Info.plist. |
-MainStoryboardFile <br> MainStoryboardFile~ipad  | Cadeia  | Esta definição deve ter o nome de ficheiro de guião gráfico principal da aplicação. | Obrigatório se a aplicação definir UIMainStoryboardFile no ficheiro Info.plist. |
-MAMPolicyRequired| Booleano| Especifica se a aplicação será impedida de iniciar se não tiver uma política APP do Intune. Assume a predefinição de NO. <br><br> Nota: Os aplicativos não podem ser enviados para a loja de aplicativos com MAMPolicyRequired definido como Sim. | Opcional. Assume a predefinição de NO.|
-MAMPolicyWarnAbsent | Booleano| Especifica se a aplicação irá avisar o utilizador ao iniciar se a aplicação não tiver uma política APP do Intune. <br><br> Nota: Os usuários ainda terão permissão para usar o aplicativo sem política depois de ignorar o aviso. | Opcional. Assume a predefinição de NO. |
+DebugSettingsEnabled| Booleano | Se for definido como YES, as políticas de teste no pacote de Definições podem ser aplicadas. As aplicações *não* devem ser fornecidas com esta definição ativada. | Opcional. Assume a predefinição de NO. |
+MainNibFile<br>MainNibFile~ipad  | Cadeia  | Esta definição deve ter o nome de ficheiro nib principal da aplicação.  | Obrigatório se a aplicação definir MainNibFile no ficheiro Info.plist. |
+MainStoryboardFile<br>MainStoryboardFile~ipad  | Cadeia  | Esta definição deve ter o nome de ficheiro de guião gráfico principal da aplicação. | Obrigatório se a aplicação definir UIMainStoryboardFile no ficheiro Info.plist. |
+AutoEnrollOnLaunch| Booleano| Especifica se a aplicação deve tentar inscrever-se automaticamente quando inicia se for detetada uma identidade gerida existente e ainda não o tiver feito. Assume a predefinição de NO. <br><br> Notas: Se nenhuma identidade gerenciada for encontrada ou nenhum token válido para a identidade estiver disponível no cache da ADAL, a tentativa de registro falhará silenciosamente sem solicitar credenciais, a menos que o aplicativo também tenha definido MAMPolicyRequired como Sim. | Opcional. Assume a predefinição de NO. |
+MAMPolicyRequired| Booleano| Especifica se a aplicação será impedida de iniciar se não tiver uma política de proteção de aplicação do Intune. Assume a predefinição de NO. <br><br> Notas: Os aplicativos não podem ser enviados para a loja de aplicativos com MAMPolicyRequired definido como Sim. Ao definir a MAMPolicyRequired como YES, a AutoEnrollOnLaunch também deve ser definida como YES. | Opcional. Assume a predefinição de NO. |
+MAMPolicyWarnAbsent | Booleano| Especifica se a aplicação irá avisar o utilizador ao iniciar se a aplicação não tiver uma política de proteção de aplicação do Intune. <br><br> Nota: Os usuários ainda terão permissão para usar o aplicativo sem política depois de ignorar o aviso. | Opcional. Assume a predefinição de NO. |
 MultiIdentity | Booleano| Especifica se a aplicação tem conhecimento de identidades múltiplas. | Opcional. Assume a predefinição de NO. |
-SplashIconFile <br> SplashIconFile~ipad | Cadeia  | Especifica o ficheiro de ícone de ecrã inicial (arranque) do Intune. | Opcional. |
+SplashIconFile <br>SplashIconFile~ipad | Cadeia  | Especifica o ficheiro de ícone de ecrã inicial (arranque) do Intune. | Opcional. |
 SplashDuration | Número | Quantidade mínima de tempo, em segundos, durante a qual será mostrado o ecrã de arranque do Intune na iniciação da aplicação. Assume a predefinição de 1,5. | Opcional. |
 BackgroundColor| Cadeia| Especifica a cor de fundo para os ecrãs de arranque e de PIN. Aceita uma cadeia RGB hexadecimal sob a forma de "#XXXXXX", sendo que X pode ir de 0 a 9 ou de A a F. O sinal de cardinal pode ser omitido.   | Opcional. Assume a predefinição de cinzento claro. |
 ForegroundColor| Cadeia| Especifica a cor de primeiro plano para as telas de inicialização e PIN, como a cor do texto. Aceita uma cadeia RGB hexadecimal sob a forma de "#XXXXXX", sendo que X pode ir de 0 a 9 ou de A a F. O sinal de cardinal pode ser omitido.  | Opcional. Assume a predefinição de preto. |

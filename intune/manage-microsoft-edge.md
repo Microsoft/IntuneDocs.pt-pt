@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3740212e8023bb49c7a51e233741791ef2597b10
-ms.sourcegitcommit: 6b5907046f920279bbda3ee6c93e98594624c05c
+ms.openlocfilehash: 8ec1af80d52a8331c2bef136cd0947b81beaa3ea
+ms.sourcegitcommit: b1ddc7f4a3d520b7d6755c7a423a46d1e2548592
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69582669"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69651178"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>Gerenciar o acesso via Web usando o Microsoft Edge com o Microsoft Intune
 
@@ -181,7 +181,22 @@ Use o seguinte par de chave/valor para configurar um atalho de Home Page:
 |    Chave    |    Value    |
 |-------------------------------------------------------------------|-------------|
 |    com.microsoft.intune.mam.managedbrowser.homepage   |    Especifique um URL válido. Os URLs incorretos são bloqueados como medida de segurança.<br>**Exemplo** <`https://www.bing.com`>
-    |
+
+## <a name="configure-your-organizations-logo-and-brand-color-for-new-tab-pages-in-microsoft-edge"></a>Configurar o logotipo e a cor da marca da sua organização para novas páginas de guias no Microsoft Edge
+
+Essas configurações permitem que você personalize a nova página da guia do Microsoft Edge para exibir o logotipo e a cor da marca da sua organização como o plano de fundo da página.
+
+Para carregar o logotipo e a cor da sua organização, primeiro conclua as seguintes etapas:
+- No portal do Azure, navegue até Intune-> aplicativos cliente-> identidade visual e personalização > identidade visual da empresa
+- Para definir o logotipo da sua marca, em "exibir", escolha "somente logotipo da empresa". São recomendados logotipos de plano de fundo transparentes. 
+- Para definir a cor do plano de fundo da marca, em "exibir", escolha "cor do tema". O Microsoft Edge aplica uma tonalidade mais clara da cor na página da nova guia, o que garante que a página tenha alta legibilidade. 
+
+Em seguida, use os seguintes pares de chave/valor para extrair a identidade visual da sua organização no Microsoft Edge:
+
+|    Chave    |    Value    |
+|--------------------------------------------------------------------|------------|
+|    com. Microsoft. Intune. Mam. managedbrowser. NewTabPage. BrandLogo    |    True    |
+|    com. Microsoft. Intune. Mam. managedbrowser. NewTabPage. BrandColor    |    True    |
 
 ## <a name="configure-managed-bookmarks-for-microsoft-edge"></a>Configurar indicadores gerenciados para o Microsoft Edge
 
@@ -283,6 +298,6 @@ A seguir estão considerações adicionais de segurança e privacidade para o Mi
 - Para permitir a autenticação e o acesso à documentação do Intune, * **. Microsoft.com** é isento das configurações de lista de permissões ou de bloqueios. Sempre é permitido.
 - Os usuários podem desativar a coleta de dados. A Microsoft recolhe automaticamente dados anónimos sobre o desempenho e a utilização do Managed Browser para melhorar os produtos e serviços Microsoft. Os utilizadores podem desativar a recolha de dados com a definição **Dados de Utilização** nos respetivos dispositivos. OS utilizadores não têm controlo sobre a recolha destes dados. Em dispositivos iOS, os sites visitados por usuários que têm um certificado expirado ou não confiável não podem ser abertos.
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Passos seguintes
 
 - [O que são as políticas de proteção de aplicações?](app-protection-policy.md) 

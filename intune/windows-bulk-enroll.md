@@ -16,16 +16,16 @@ ms.reviewer: damionw
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 996380a4938ca73bbf5f71c82e99814f772001a4
-ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.openlocfilehash: 1775bdf0030968cdd16d87d91794480a43a22d12
+ms.sourcegitcommit: b1ddc7f4a3d520b7d6755c7a423a46d1e2548592
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67403501"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69651040"
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Inscrição em massa para dispositivos Windows
 
-Como administrador, pode associar inúmeros dispositivos Windows novos ao Azure Active Directory e ao Intune. Para inscrever em massa dispositivos para o seu inquilino do Azure AD, crie um pacote de aprovisionamento com a aplicação Windows Configuration Designer (WCD). Ao aplicar o pacote de aprovisionamento aos dispositivos pertencentes à empresa, associa os dispositivos ao inquilino do Azure AD e inscreve-os na gestão do Intune. Assim que o pacote for aplicado, está pronto para os seus utilizadores do Azure AD iniciar sessão.
+Como administrador, pode associar inúmeros dispositivos Windows novos ao Azure Active Directory e ao Intune. Para inscrever em massa dispositivos para o seu inquilino do Azure AD, crie um pacote de aprovisionamento com a aplicação Windows Configuration Designer (WCD). Ao aplicar o pacote de aprovisionamento aos dispositivos pertencentes à empresa, associa os dispositivos ao inquilino do Azure AD e inscreve-os na gestão do Intune. Depois que o pacote for aplicado, ele estará pronto para os usuários do Azure AD entrarem.
 
 Os utilizadores do Azure AD são utilizadores padrão nestes dispositivos e obtêm as aplicações necessárias e as políticas do Intune atribuídas. Os dispositivos Windows que são inscritos no Intune através da inscrição em massa do Windows podem utilizar a aplicação do Portal da Empresa para instalar as aplicações disponíveis. 
 
@@ -73,7 +73,7 @@ Os utilizadores do Azure AD são utilizadores padrão nestes dispositivos e obt
 
 2. Escolha como vai aplicar o pacote de aprovisionamento ao dispositivo.  Um pacote de aprovisionamento pode ser aplicado a um dispositivo de uma das seguintes formas:
    - Colocar o pacote de aprovisionamento numa unidade USB, inserir a unidade USB no dispositivo que pretende inscrever em massa e aplicá-lo durante a configuração inicial
-   - Colocar o pacote de aprovisionamento numa pasta de rede, aplicá-la e inserir no dispositivo que pretende inscrever em massa depois da configuração inicial
+   - Coloque o pacote de provisionamento em uma pasta de rede e aplique-o após a instalação inicial
 
    Para obter instruções passo a passo sobre a aplicação de um pacote de aprovisionamento, veja [Apply a provisioning package (Aplicar um pacote de aprovisionamento)](https://technet.microsoft.com/itpro/windows/configure/provisioning-apply-package).
 
@@ -95,4 +95,4 @@ O aprovisionamento destina-se a ser utilizado em dispositivos Windows novos. As 
 Os dispositivos inscritos em massa não podem utilizar certificados direcionados ao utilizador e a implementação por Wi-Fi. Terá de utilizar [certificados ao nível do dispositivo](certificates-configure.md) para gerir estas ligações. 
 
 ### <a name="conditional-access"></a>Acesso Condicional
-Acesso condicional não está disponível para dispositivos Windows inscritos através de inscrição em massa.
+O acesso condicional não está disponível para dispositivos Windows registrados usando o registro em massa.
