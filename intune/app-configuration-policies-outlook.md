@@ -4,23 +4,23 @@ description: Crie uma política de configuração para configurar as definiçõe
 keywords: ''
 author: Erikre
 ms.author: erikre
-ms.reviewer: smithre4
 manager: dougeby
-ms.date: 01/24/2019
+ms.date: 08/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
+ms.reviewer: smithre4
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f9819adf100cbe56147f22629e1311e7e3b376e9
-ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
+ms.openlocfilehash: 14eded43200aed7e9ebf4454bcde61133351e4e2
+ms.sourcegitcommit: 76d59edfd5900ce33c64470ae604eb3db016c8ca
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68374889"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69979205"
 ---
 # <a name="microsoft-outlook-configuration-settings"></a>Definições de configuração do Microsoft Outlook 
 
@@ -38,6 +38,6 @@ Ao adicionar uma política de configuração no Intune, você pode especificar c
 
 Para obter as etapas de procedimento específicas e a documentação detalhada sobre as definições de configuração de aplicativo que o Outlook para iOS e Android dá suporte, consulte Implantando [definições de configuração de aplicativo do Outlook para IOS e Android](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune).
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Passos seguintes
 
 - Para obter mais informações, consulte [políticas de configuração de aplicativo para Microsoft Intune](app-configuration-policies-overview.md)
