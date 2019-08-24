@@ -1,12 +1,12 @@
 ---
-title: Início rápido - política de conformidade de palavra-passe para dispositivos Android
+title: Guia de início rápido-política de conformidade de senha para dispositivos Android
 titleSuffix: Microsoft Intune
 description: Neste guia de início rápido, irá utilizar o Microsoft Intune para definir o comprimento da palavra-passe obrigatório para dispositivos Android.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/15/2019
+ms.date: 08/23/2019
 ms.topic: quickstart
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cdedbfc611d44b4d6acb01e5e05bf3e73ed7fbda
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 30c4d5976b7f743a12a9691878e2b7031e373b1d
+ms.sourcegitcommit: c8cb314256c4896e838918f015ffaefb8f00ace5
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044190"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "70001840"
 ---
-# <a name="quickstart-create-a-password-compliance-policy-for-android-devices"></a>Início rápido: Criar uma política de conformidade de palavra-passe para dispositivos Android
+# <a name="quickstart-create-a-password-compliance-policy-for-android-devices"></a>Início rápido: Criar uma política de conformidade de senha para dispositivos Android
 
 Neste início rápido, vai utilizar o Microsoft Intune para exigir aos utilizadores de dispositivos Android da sua força de trabalho que introduzam uma palavra-passe com um comprimento específico antes de lhes conceder acesso às informações nos dispositivos Android. 
 
-Uma política de conformidade de dispositivos do Intune especifica as regras e definições que os dispositivos têm de cumprir para serem considerados conformes. Pode utilizar as políticas de conformidade com acesso condicional para permitir ou bloquear o acesso aos recursos da empresa. Também pode obter relatórios de dispositivos e agir relativamente a situações de não conformidade.
+Uma política de conformidade de dispositivos do Intune especifica as regras e definições que os dispositivos têm de cumprir para serem considerados conformes. Você pode usar políticas de conformidade com acesso condicional para permitir ou bloquear o acesso aos recursos da empresa. Também pode obter relatórios de dispositivos e agir relativamente a situações de não conformidade.
 
 > [!IMPORTANT]
 > Além das definições da palavra-passe, deve também considerar outras definições de segurança do sistema para proteger a sua força de trabalho. Para obter mais informações, veja [Definições de segurança do sistema](compliance-policy-create-android-for-work.md).
@@ -48,7 +48,7 @@ Neste guia de início rápido, irá utilizar o Intune para exigir aos utilizador
 3. Em **Plataforma**, selecione **Android**. 
 4. Selecione **Definições** > **Segurança do Sistema** para apresentar o painel **Segurança do Sistema** Android.
 5. Clique em **Exigir** junto a **Exigir uma palavra-passe para desbloquear os dispositivos móveis**.
-6. Selecione **, pelo menos, numérica** junto a **tipo de palavra-passe obrigatório**.
+6. Selecione **pelo menos numeric** ao lado do **tipo de senha exigido**.
 7. Introduza o algarismo **6** junto a **Comprimento mínimo da palavra-passe**. 
 
     ![Captura de ecrã da criação de um grupo no Microsoft Intune](media/quickstart-set-password-length-android/quickstart-set-password-length-android-01.png)
@@ -68,4 +68,4 @@ Neste início rápido, utilizou o Intune para criar uma política de conformidad
 Para seguir esta série de guias de início rápido do Intune, continue para o próximo guia de início rápido.
 
 > [!div class="nextstepaction"]
-> [Início rápido: Enviar notificações para dispositivos não conformes](quickstart-send-notification.md)
+> [TUTORIAIS Enviar notificações para dispositivos não compatíveis](quickstart-send-notification.md)

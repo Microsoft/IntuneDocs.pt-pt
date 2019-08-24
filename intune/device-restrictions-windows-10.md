@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7c75930f3eee35146afbc5714135ececbe7c9643
-ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
+ms.openlocfilehash: 5b3fd474e938e2e85a0a08951a9e3f154d980411
+ms.sourcegitcommit: b64869b4be357c0741ec01b1a2f0bae13efce937
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69550173"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "69998951"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Configurações do dispositivo Windows 10 (e mais recente) para permitir ou restringir recursos usando o Intune
 
@@ -66,13 +66,6 @@ Essas configurações usam o [CSP da política do ApplicationManagement](https:/
   - **Preferir armazenamento**: Avisa os usuários quando eles instalam aplicativos de locais diferentes do Microsoft Store.
 
   [CSP do SmartScreen/EnableAppInstallControl](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen#smartscreen-enableappinstallcontrol)
-
-- **Forçar reinicialização de aplicativos em caso de falha de atualização**: Quando um aplicativo está sendo usado, ele não pode ser atualizado. Use essa configuração para forçar a reinicialização de um aplicativo. **Não configurado** (padrão) não força os aplicativos a reiniciar. **Exigir** permite que os administradores forcem uma reinicialização em uma data e hora específicas ou em um agendamento recorrente. Quando definido como **exigir**, insira também:
-
-  - **Data/hora de início**: Escolha uma data e hora específicas para reiniciar os aplicativos.
-  - **Recorrência**: Escolha uma reinicialização diária, semanal ou mensal.
-
-  [CSP ApplicationManagement/ScheduleForceRestartForUpdateFailures](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures)
 
 - **Controle do usuário sobre instalações**: Quando definido como **não configurado** (padrão), Windows Installer impedir que os usuários alterem as opções de instalação normalmente reservadas para administradores do sistema, como inserir o diretório para instalar os arquivos. **Bloquear** permite que os usuários alterem essas opções de instalação e alguns dos recursos de segurança de Windows Installer são ignorados.
 
@@ -799,6 +792,6 @@ Selecione **OK** para guardar as alterações.
 
 Selecione **OK** para guardar as alterações.
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Passos seguintes
 
 Para obter os detalhes técnicos adicionais de cada definição e quais as edições do Windows suportadas, veja [Windows 10 Policy CSP Reference](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider) (Referência de CSP de Políticas do Windows 10)

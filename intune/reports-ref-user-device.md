@@ -6,7 +6,7 @@ keywords: Armazém de Dados do Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/10/2019
+ms.date: 08/23/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c8d24716f65d5ff8afba5fc0a89cfef082712429
-ms.sourcegitcommit: c3ac858bbadb63d248ed54069e48160d703bbaf2
+ms.openlocfilehash: 4593fd5e76bf51b11ef9796bacc8c562241eaca2
+ms.sourcegitcommit: c8cb314256c4896e838918f015ffaefb8f00ace5
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68313677"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "70001750"
 ---
 # <a name="reference-for-user-device-association-entity"></a>Referência para a entidade Associação de Dispositivo do Utilizador
 
@@ -31,14 +31,14 @@ A entidade **userDeviceAssociation** contém associações de dispositivo de usu
 ## <a name="userdeviceassociations"></a>userDeviceAssociations
 
 
-|        Nome        |                                           Descrição                                            |        Exemplo         |
+|        Name        |                                           Descrição                                            |        Exemplo         |
 |--------------------|--------------------------------------------------------------------------------------------------|------------------------|
 |      userKey       |              Identificador exclusivo do utilizador no armazém de dados. (Chave de substituição).               |          123           |
-|     DeviceKey      |                      Identificador exclusivo do dispositivo no armazém de dados.                      |          123           |
+|     deviceKey      |                      Identificador exclusivo do dispositivo no armazém de dados.                      |          123           |
 | createdDateTimeUTC |           Data e hora em que a associação de dispositivos do utilizador foi criada. Utiliza o formato UTC.           | 11/23/2016 12:00:00 AM |
 |     IsDeleted      | Indica que o utilizador anulou a inscrição desse dispositivo e essa associação já não está atualizada. |       Verdadeiro/Falso       |
 |  endedDateTimeUTC  |              Data e hora em UTC em que a propriedade IsDeleted foi alterada para <strong>True</strong>.               | 23/06/2017 12:00:00 |
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Passos seguintes
 
 - Saiba mais sobre o [data warehouse do Intune](reports-nav-create-intune-reports.md).
