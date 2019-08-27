@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3a4314abec83bc31cd6fe178873ba5bce7bf1a0c
-ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
+ms.openlocfilehash: 5a75397222117b8e56cb34947363f8624b89b27b
+ms.sourcegitcommit: 58a22f1b4a3fffffb1f7da228f470b3b0774fc42
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68680109"
+ms.lasthandoff: 08/26/2019
+ms.locfileid: "70021761"
 ---
 # <a name="send-custom-notifications-in-intune"></a>Enviar notificações personalizadas no Intune  
 
@@ -51,7 +51,6 @@ As mensagens de notificação personalizadas incluem um título curto e um corpo
 - Os grupos podem incluir usuários ou dispositivos, mas as mensagens são enviadas somente aos usuários e são enviadas para cada dispositivo iOS ou Android que o usuário registrou.  
 
 **Entrega**:  
-- O Intune tenta entregar até uma hora depois que uma notificação é enviada.  
 - O Intune envia mensagens para o aplicativo Portal da Empresa do usuário, que cria a notificação por push. Os usuários não precisam estar conectados ao aplicativo para que a notificação seja enviada por push no dispositivo.  
 - O Intune e o aplicativo Portal da Empresa não podem garantir a entrega de uma notificação personalizada. As notificações personalizadas podem aparecer após várias horas de atraso, se, portanto, não devem ser usadas para mensagens urgentes.  
 - Mensagens de notificação personalizadas do Intune aparecem em dispositivos como notificações por push padrão. Se o aplicativo Portal da Empresa estiver aberto em um dispositivo iOS quando receber a notificação, a notificação será exibida no aplicativo, em vez de ser uma notificação por push.  

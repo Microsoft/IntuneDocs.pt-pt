@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ca7e7646f51331e4d24cec9b50d7afae4870ebe3
-ms.sourcegitcommit: 4f3fcc6dcbfe2c4e0651d54a130907a25a4ff66e
+ms.openlocfilehash: 8774b5af7555462b7754e4d0f8a6f50a330854ff
+ms.sourcegitcommit: 58a22f1b4a3fffffb1f7da228f470b3b0774fc42
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69894367"
+ms.lasthandoff: 08/26/2019
+ms.locfileid: "70021820"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Guia para programadores do SDK da Aplicação do Microsoft Intune para iOS
 
@@ -115,21 +115,8 @@ Para ativar o SDK da Aplicação do Intune, siga estes passos:
      Adicione o pacote de recursos `IntuneMAMResources.bundle` ao projeto arrastando o pacote de recursos em **Copiar Recursos do Pacote** em **Fases de Criação**.
 
      ![SDK da Aplicação do Intune para iOS: copiar recursos do pacote](./media/intune-app-sdk-ios-copy-bundle-resources.png)
-     
-2. Se você precisar chamar qualquer uma das APIs do Intune do Swift, seu aplicativo/extensão deverá importar os cabeçalhos do SDK do Intune necessários por meio de um cabeçalho de ponte Objective-C. Se seu aplicativo/extensão ainda não incluir um cabeçalho de ponte Objective-c, você poderá especificar um por `SWIFT_OBJC_BRIDGING_HEADER` meio da definição de configuração de compilação ou do campo de **cabeçalho de ponte Objective-c** da interface do usuário. Seu cabeçalho de ponte deve ser semelhante a este:
-
-   ```objc
-      #import <IntuneMAMSwift/IntuneMAM.h>
-   ```
-   
-   Isso fará com que todas as APIs do SDK do Intune estejam disponíveis em todos os arquivos de origem Swift seu aplicativo/extensão. 
-   
-    > [!NOTE]
-    > * Você pode optar por apenas direcionar cabeçalhos de SDK do Intune específicos para o Swift, em vez de tudo que abrange o IntuneMAM. h
-    > * Dependendo de qual estrutura/biblioteca estática você integrou, o caminho para os arquivos de cabeçalho pode ser diferente.
-    > * Atualmente, não há suporte para a disponibilização das APIs do SDK do Intune no Swift por meio de uma instrução de importação de módulo (ex: Import IntuneMAMSwift). Usar um cabeçalho de ponte Objective-C é a abordagem recomendada.
-    
-3. Adicione estas estruturas de iOS ao projeto:  
+         
+2. Adicione estas estruturas de iOS ao projeto:  
 -  MessageUI.framework  
 -  Security.framework  
 -  MobileCoreServices.framework  
@@ -142,7 +129,7 @@ Para ativar o SDK da Aplicação do Intune, siga estes passos:
 -  QuartzCore.framework  
 -  WebKit.framework
 
-4. Ative a partilha de keychain (se não estiver já ativada) ao selecionar **Capacidades** no destino de cada projeto e ao ativar o comutador **Partilha de Keychain**. A partilha de keychain é necessária para avançar para o passo seguinte.
+3. Ative a partilha de keychain (se não estiver já ativada) ao selecionar **Capacidades** no destino de cada projeto e ao ativar o comutador **Partilha de Keychain**. A partilha de keychain é necessária para avançar para o passo seguinte.
 
    > [!NOTE]
    > O perfil de aprovisionamento tem de suportar os novos valores de partilha de keychain. Os grupos de acesso de keychain devem suportar um caráter universal. Você pode verificar isso abrindo o arquivo. mobileprovision em um editor de texto, procurando por **keychain-Access-groups**e garantindo que você tenha um caractere curinga. Por exemplo:
@@ -154,7 +141,7 @@ Para ativar o SDK da Aplicação do Intune, siga estes passos:
    >  </array>
    >  ```
 
-5. Depois de habilitar o compartilhamento de conjunto de chaves, siga as etapas para criar um grupo de acesso separado no qual o SDK do aplicativo do Intune armazenará seus dados. Pode criar um grupo de acesso de keychain com a IU ou o ficheiro de elegibilidade. Se você estiver usando a interface do usuário para criar o grupo de acesso do conjunto de chaves, certifique-se de seguir estas etapas:
+4. Depois de habilitar o compartilhamento de conjunto de chaves, siga as etapas para criar um grupo de acesso separado no qual o SDK do aplicativo do Intune armazenará seus dados. Pode criar um grupo de acesso de keychain com a IU ou o ficheiro de elegibilidade. Se você estiver usando a interface do usuário para criar o grupo de acesso do conjunto de chaves, certifique-se de seguir estas etapas:
 
      a. Se seu aplicativo móvel não tiver grupos de acesso do conjunto de chaves definidos, adicione a ID do pacote do aplicativo como o **primeiro** grupo.
     
@@ -172,11 +159,11 @@ Para ativar o SDK da Aplicação do Intune, siga estes passos:
       > [!NOTE]
       > Um ficheiro de elegibilidade é um ficheiro XML exclusivo para a sua aplicação móvel. Serve para especificar permissões e capacidades especiais na aplicação iOS. Se a aplicação não tinha anteriormente nenhum ficheiro de elegibilidade, a ativação da partilha de keychain (passo 3) deverá levar à geração de um ficheiro de elegibilidade pelo Xcode para a aplicação. Verifique se a ID do pacote do aplicativo é a primeira entrada na lista.
 
-6. Inclua cada protocolo transmitido pela aplicação a `UIApplication canOpenURL` na matriz `LSApplicationQueriesSchemes` do ficheiro Info.plist da aplicação. Não se esqueça de guardar as alterações antes de prosseguir para o passo seguinte.
+5. Inclua cada protocolo transmitido pela aplicação a `UIApplication canOpenURL` na matriz `LSApplicationQueriesSchemes` do ficheiro Info.plist da aplicação. Não se esqueça de guardar as alterações antes de prosseguir para o passo seguinte.
 
-7. Se a sua aplicação ainda não utilizar o FaceID, garanta que a [chave Info.plist NSFaceIDUsageDescription](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW75) está configurada com uma mensagem predefinida. Isto é necessário para que o iOS possa informar o utilizador sobre como é que a aplicação pretende utilizar o FaceID. Uma definição de política de proteção de aplicações do Intune permite que o FaceID seja utilizado como um método para aceder a aplicações quando configurado pelo administrador de TI.
+6. Se a sua aplicação ainda não utilizar o FaceID, garanta que a [chave Info.plist NSFaceIDUsageDescription](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW75) está configurada com uma mensagem predefinida. Isto é necessário para que o iOS possa informar o utilizador sobre como é que a aplicação pretende utilizar o FaceID. Uma definição de política de proteção de aplicações do Intune permite que o FaceID seja utilizado como um método para aceder a aplicações quando configurado pelo administrador de TI.
 
-8. Utilize a ferramenta IntuneMAMConfigurator, incluída no [repositório do SDK](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios), para concluir a configuração do ficheiro Info.plist da aplicação. A ferramenta tem três parâmetros:
+7. Utilize a ferramenta IntuneMAMConfigurator, incluída no [repositório do SDK](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios), para concluir a configuração do ficheiro Info.plist da aplicação. A ferramenta tem três parâmetros:
 
    |Propriedade|Como a utilizar|
    |---------------|--------------------------------|
@@ -228,7 +215,7 @@ Se seu aplicativo já usa ADAL ou MSAL, as seguintes configurações são necess
 
 Além disso, as aplicações podem substituir estas definições do Azure AD no runtime. Para tal, basta definir as propriedades `aadAuthorityUriOverride`, `aadClientIdOverride` e `aadRedirectUriOverride` na instância `IntuneMAMPolicyManager`.
 
-4. Verifique se as etapas para dar permissões ao aplicativo iOS para o serviço de política de proteção de aplicativo (aplicativo) foram seguidas. Use as instruções no [guia Introdução ao SDK do Intune](https://docs.microsoft.com/intune/app-sdk-get-started#next-steps-after-integration) em "Dê ao seu aplicativo acesso ao serviço de proteção de aplicativo do Intune (opcional)".  
+4. Verifique se as etapas para dar permissões ao aplicativo iOS para o serviço de política de proteção de aplicativo (aplicativo) foram seguidas. Use as instruções no [guia Introdução ao SDK do Intune](https://docs.microsoft.com/intune/app-sdk-get-started#next-steps-after-integration) em "Dê ao[seu aplicativo acesso ao serviço de proteção de aplicativo do Intune (opcional)](https://docs.microsoft.com/intune/app-sdk-get-started#give-your-app-access-to-the-intune-app-protection-service-optional)".  
 
 > [!NOTE]
 > Para todas as definições que são estáticas e que não precisam de ser determinadas no runtime, recomenda-se a abordagem do ficheiro Info.plist. Os valores atribuídos às propriedades `IntuneMAMPolicyManager` têm precedência sobre quaisquer valores correspondentes especificados no ficheiro Info.plist e serão mantidos, mesmo depois de a aplicação ser reiniciada. O SDK continuará a utilizá-los para os registos da política até que a inscrição do utilizador seja anulada ou os valores sejam limpos ou alterados.

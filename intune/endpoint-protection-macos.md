@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 919fef62cf1d979d6a4f67c3653d90af1442fa55
-ms.sourcegitcommit: ec22a186a9cfa489a8490698e387624e480892d8
+ms.openlocfilehash: 82eca1a9c4bfd8944b9ba5ae1716ec46c52a5a81
+ms.sourcegitcommit: 58a22f1b4a3fffffb1f7da228f470b3b0774fc42
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68960423"
+ms.lasthandoff: 08/26/2019
+ms.locfileid: "70021705"
 ---
 # <a name="macos-endpoint-protection-settings-in-intune"></a>Configurações do MacOS Endpoint Protection no Intune  
 
@@ -100,14 +100,14 @@ Para obter mais informações sobre as configurações do Apple FileVault, consu
     - **Rotação de chave de recuperação pessoal** – especifique com que frequência a chave de recuperação pessoal de um dispositivo será girada. Você pode selecionar o padrão **não configurado**ou um valor de **1** a **12** meses.  
 
   - **Desabilitar aviso ao sair**  
-    Impedir o prompt para o usuário que solicita que eles habilitem o FileVault quando eles se desconectarem.  Quando definido como habilitar, o prompt na saída é desabilitado e, em vez disso, o usuário recebe uma solicitação quando entra.  
+    Impedir o prompt para o usuário que solicita que eles habilitem o FileVault quando eles se desconectarem.  Quando definido como desabilitado, o prompt na saída é desabilitado e, em vez disso, o usuário recebe uma solicitação quando entra.  
     - **Não configurado**  
-    - **Habilitar** -desabilitar o prompt ao sair.
+    - **Desabilitar** – desabilitar o prompt na saída.
 
     **Padrão**: Não configurado  
 
      > [!IMPORTANT]  
-     > Há um problema conhecido quando a configuração **desabilitar prompt em sair** está definida como *habilitar*. Quando definido como *habilitar*, a configuração para o **número de vezes permitido para bypass** deve ser definida como um valor e não deve ser definida como *não*configurada. Se definido como *não configurado*, o perfil falha no dispositivo. Nesse cenário, o dispositivo relata que é um **Resumo de estado de perfil** como **erro** sem mais detalhes.
+     > Há um problema conhecido quando a configuração **desabilitar prompt em sair** está definida como *desabilitar*. Quando definido como *desabilitado*, a configuração do **número de vezes permitido para bypass** deve ser definida como um valor e não deve ser definida como *não*configurada. Se definido como *não configurado*, o perfil falha no dispositivo. Nesse cenário, o dispositivo relata que é um **Resumo de estado de perfil** como **erro** sem mais detalhes.
      > 
      > Quando **desabilitar prompt na saída** estiver definido como *não configurado*, o **número de vezes permitido para bypass** pode *não ser configurado* ou ter um valor.  
      > 

@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 08/15/2019
+ms.date: 08/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,16 +16,16 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 76a0df5933127641d299a2a2f5e01d848e4d5d18
-ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
+ms.openlocfilehash: c64ea07cb87bc980d01864468d788229bfc58a5f
+ms.sourcegitcommit: a6385b8370c20a44d0869f7920d6b2866edaa5e2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69550128"
+ms.lasthandoff: 08/26/2019
+ms.locfileid: "70027378"
 ---
 # <a name="monitor-device-encryption-with-intune"></a>Monitorar a criptografia de dispositivo com o Intune   
 
-O relatório de criptografia Microsoft Intune é um local centralizado para exibir detalhes sobre o status de criptografia dos dispositivos gerenciados. Exibir detalhes sobre o status de criptografia de um dispositivo e encontrar opções para gerenciar as chaves de recuperação do dispositivo. As opções de chave de recuperação que estão disponíveis dependem do tipo de dispositivo que você está exibindo.  
+O relatório de criptografia Microsoft Intune é um local centralizado para exibir detalhes sobre o status de criptografia de um dispositivo e encontrar opções para gerenciar as chaves de recuperação do dispositivo. As opções de chave de recuperação que estão disponíveis dependem do tipo de dispositivo que você está exibindo.  
 
 Para localizar o relatório, entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) e vá para configuração do **dispositivo**e, em *Monitor*, selecione relatório de **criptografia**.  
 
@@ -64,7 +64,7 @@ O painel relatório de criptografia exibe uma lista dos dispositivos que você g
 
 - **Status de criptografia** – se a unidade do sistema operacional está criptografada.  
 
-- **Nome** principal do usuário-o usuário principal do dispositivo.  
+- **Nome principal do usuário** – o usuário principal do dispositivo.  
 
 ### <a name="device-encryption-status"></a>Status de criptografia do dispositivo  
 
@@ -74,9 +74,11 @@ Quando você seleciona um dispositivo no relatório de criptografia, o Intune ex
 
 - **Prontidão para criptografia** -uma avaliação da preparação dos dispositivos para dar suporte à criptografia por meio da política de MDM.  
   
-  Por exemplo: Quando um dispositivo Windows 10 tem uma prontidão de *não estar pronto*, ele ainda pode dar suporte à criptografia. Para ter a designação *pronta* , o dispositivo Windows 10 deve ter um chip TPM. Os chips do TPM não são necessários para dar suporte à criptografia. (Consulte prontidão de criptografia na seção anterior para obter mais detalhes.)  
+  Por exemplo: Quando um dispositivo Windows 10 tem uma prontidão de *não estar pronto*, ele ainda pode dar suporte à criptografia. Para ter a designação *pronta* , o dispositivo Windows 10 deve ter um chip TPM. Os chips do TPM não são necessários para dar suporte à criptografia. (Para obter mais informações, consulte *prontidão de criptografia* na seção anterior.)  
 
-- **Status de criptografia** – se a unidade do sistema operacional está criptografada. Pode levar até 24 horas para que o Intune relate o status de criptografia de um dispositivo ou uma alteração nesse status.  
+- **Status de criptografia** – se a unidade do sistema operacional está criptografada. Pode levar até 24 horas para que o Intune relate o status de criptografia de um dispositivo ou uma alteração nesse status. Esse tempo inclui o tempo para o sistema operacional criptografar, mais o tempo para o dispositivo relatar de volta para o Intune.  
+
+  Para acelerar o relatório do status de criptografia do FileVault antes que o check-in do dispositivo normalmente ocorra, os usuários sincronizam seus dispositivos após a criptografia ser concluída.  
 
 - **Perfis** – uma lista dos perfis de *configuração do dispositivo* que se aplicam a este dispositivo e são configurados com os seguintes valores:  
 
@@ -86,11 +88,13 @@ Quando você seleciona um dispositivo no relatório de criptografia, o Intune ex
 
   - Windows 10:
     - Tipo de perfil = *Endpoint Protection*  
-    - Configurações > criptografia do Windows > dispositivos de criptografia = *obrigatório*  
+    - Configurações > criptografia do Windows > dispositivos de criptografia = *exigir*  
 
   Você pode usar a lista de perfis para identificar políticas individuais para revisão caso o *Resumo do estado do perfil* indique problemas.  
 
 - **Resumo do estado do perfil** – um resumo dos perfis que se aplicam a este dispositivo. O resumo representa a condição menos favorável nos perfis aplicáveis. Por exemplo, se apenas um dos vários perfis aplicáveis resultar em um erro, o *Resumo do estado do perfil* exibirá um *erro*.  
+  
+  Para exibir mais detalhes de um status, vá para**perfis**de**configuração** > de dispositivo do **Intune** > e selecione o perfil. Opcionalmente, selecione **status do dispositivo** e, em seguida, selecione um dispositivo.  
 
 - **Detalhes do status** – detalhes avançados sobre o estado de criptografia do dispositivo.  
 
@@ -168,7 +172,7 @@ Quando o Intune criptografa primeiro um dispositivo macOS com FileVault, uma cha
  
 Para dispositivos gerenciados, o Intune pode caução em uma cópia da chave de recuperação pessoal. A caução de chaves permite que os administradores do Intune giram as chaves para ajudar a proteger os dispositivos e os usuários a recuperarem uma chave de recuperação pessoal perdida ou girada.  
  
-O Intune dá suporte a várias opções para girar e recuperar as chaves de recuperação pessoal. Um motivo para girar uma chave é se a chave pessoal atual for perdida em risco.  
+O Intune dá suporte a várias opções para girar e recuperar as chaves de recuperação pessoal. Um motivo para girar uma chave é se a chave pessoal atual é perdida ou pensa em risco.  
  
 > [!IMPORTANT]  
 >  Os dispositivos criptografados por usuários, e não pelo Intune, não podem ser gerenciados pelo Intune. Isso significa que o Intune não pode fazer a garantia da recuperação pessoal desses dispositivos nem gerenciar a rotação da chave de recuperação.  Antes que o Intune possa gerenciar FileVault e chaves de recuperação para o dispositivo, o usuário deve descriptografar seu dispositivo e, em seguida, permitir que o Intune criptografe o dispositivo.  
@@ -177,7 +181,7 @@ O Intune dá suporte a várias opções para girar e recuperar as chaves de recu
 
 - **Rotação automática**: Como administrador, você pode configurar a rotação de chave de recuperação pessoal de configuração FileVault para gerar automaticamente novas chaves de recuperação periodicamente.  Quando uma nova chave é gerada para um dispositivo, a chave não é exibida para o usuário. Em vez disso, o usuário deve obter a chave de um administrador ou usando o aplicativo do portal da empresa.  
 
-- **Rotação manual**: Como administrador, você pode exibir informações de um dispositivo gerenciado com o Intune e isso é criptografado com o FileVault. Você pode optar por girar manualmente a chave de recuperação para dispositivos corporativos. Não é possível girar as chaves de recuperação para dispositivos pessoais.  
+- **Rotação manual**: Como administrador, você pode exibir informações para um dispositivo que você gerencia com o Intune e que é criptografado com o FileVault. Você pode optar por girar manualmente a chave de recuperação para dispositivos corporativos. Não é possível girar as chaves de recuperação para dispositivos pessoais.  
 
   Para girar uma chave de recuperação: 
   1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), vá para **dispositivos** e, em seguida, em gerenciar, selecione **todos os dispositivos**.  
@@ -216,6 +220,6 @@ Quando as chaves não estiverem no Azure AD, o Intune não exibirá *nenhuma cha
 
 As informações do BitLocker são obtidas usando o [provedor de serviços de configuração do BitLocker](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) (CSP). O CSP do BitLocker tem suporte no Windows 10 versão 1703 e posterior e para o Windows 10 pro versão 1809 e posterior.  
 
-## <a name="next-steps"></a>Passos Seguintes  
+## <a name="next-steps"></a>Passos seguintes  
 
 Criar uma política de [conformidade do dispositivo](compliance-policy-create-windows.md) .
