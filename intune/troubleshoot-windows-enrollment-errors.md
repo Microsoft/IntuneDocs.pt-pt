@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6313741af237478bc5eea0cc5b5524250b5d46ac
-ms.sourcegitcommit: db68056e2db17dfdeaa216c684302567742e6416
+ms.openlocfilehash: e8af18192a3a15fee15dd2204ada572e6a67be1c
+ms.sourcegitcommit: 6c74ff568267d85fd1d44fda75e3e24ead87cb2b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68993704"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70063000"
 ---
 # <a name="troubleshoot-windows-device-enrollment-problems-in-microsoft-intune"></a>Solucionar problemas de registro de dispositivo Windows no Microsoft Intune
 
@@ -331,7 +331,7 @@ Erro 0x80070774: Algo deu errado. Confirme se você está usando as informaçõe
 
 Normalmente, esse problema ocorre antes de o dispositivo ser reiniciado em um cenário híbrido do Azure AD Pilot, quando o dispositivo atinge o tempo limite durante a tela de entrada inicial. Isso significa que o controlador de domínio não pode ser encontrado ou alcançado com êxito devido a problemas de conectividade. Ou que o dispositivo entrou em um estado que não pode ingressar no domínio.
 
-**Faz** A causa mais comum é que a junção híbrida do Azure AD está sendo usada e o recurso atribuir usuário está configurado no perfil do AutoPilot. O uso do recurso atribuir usuário executa uma junção do Azure AD no dispositivo durante a tela de entrada inicial que coloca o dispositivo em um estado em que ele não pode ingressar no seu domínio local. Portanto, o recurso atribuir usuário deve ser usado somente em cenários de ingresso automático no Azure AD padrão.  O recurso deve ser usado em cenários de junção híbridas do Azure AD.
+**Faz** A causa mais comum é que a junção híbrida do Azure AD está sendo usada e o recurso atribuir usuário está configurado no perfil do AutoPilot. O uso do recurso atribuir usuário executa uma junção do Azure AD no dispositivo durante a tela de entrada inicial que coloca o dispositivo em um estado em que ele não pode ingressar no seu domínio local. Portanto, o recurso atribuir usuário deve ser usado somente em cenários de ingresso automático no Azure AD padrão.  O recurso não deve ser usado em cenários de junção híbridas do Azure AD.
 
 #### <a name="resolution"></a>Resolução
 
@@ -382,7 +382,7 @@ Esse problema é geralmente causado pela delegação incorreta de permissões pa
 10. Em **permissões**, marque a caixa de seleção **controle total** . Essa ação seleciona todas as outras opções.
 11. Selecione **próxima** > **conclusão**.
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Passos seguintes
 
 - [Resolução de problemas de inscrição de dispositivos no Intune](troubleshoot-device-enrollment-in-intune.md)
 - [Faça uma pergunta no fórum do Intune](https://social.technet.microsoft.com/Forums/%7Blang-locale%7D/home?category=microsoftintune&filter=alltypes&sort=lastpostdesc)

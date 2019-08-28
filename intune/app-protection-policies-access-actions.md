@@ -1,12 +1,12 @@
 ---
-title: Apagar dados através de ações de iniciação condicional de política de proteção de aplicações
+title: Apagar dados usando as ações de inicialização condicional da política de proteção de aplicativo
 titleSuffix: Microsoft Intune
-description: Saiba como apagar seletivamente os dados com as ações a execução da iniciação condicional de política de proteção de aplicações no Microsoft Intune.
+description: Saiba como apagar dados seletivamente usando ações de inicialização condicional da política de proteção de aplicativo no Microsoft Intune.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/20/2019
+ms.date: 08/27/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,26 +17,26 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 65115f6520122cd4b3429411db67052481984617
-ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
+ms.openlocfilehash: 8cf55084951c3a423b79e4588f8814b5e73ce8e8
+ms.sourcegitcommit: 6c74ff568267d85fd1d44fda75e3e24ead87cb2b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67558440"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70063030"
 ---
-# <a name="selectively-wipe-data-using-app-protection-policy-conditional-launch-actions-in-intune"></a>Eliminação seletiva de dados com as ações a execução da iniciação condicional de política de proteção de aplicações no Intune
+# <a name="selectively-wipe-data-using-app-protection-policy-conditional-launch-actions-in-intune"></a>Apagar dados seletivamente usando as ações de inicialização condicional da política de proteção de aplicativo no Intune
 
 Ao utilizar as políticas de proteção de aplicações do Intune, pode configurar definições para impedir que os utilizadores finais acedam a uma conta ou aplicação empresarial. Estas definições destinam-se aos requisitos de acesso e relocalização de dados definidos pela sua organização em casos de, por exemplo, dispositivos desbloqueados por jailbreak e versões de SO mínimas.
  
 Com estas definições, pode eliminar dados da empresa explicitamente do dispositivo do utilizador final como uma ação a ser realizada em caso de não conformidade. Em algumas definições, será possível configurar múltiplas ações, como impedir o acesso e eliminar os dados com base em diferentes valores especificados.
 
-## <a name="create-an-app-protection-policy-using-conditional-launch-actions"></a>Criar uma política de proteção de aplicações com ações de início condicional
+## <a name="create-an-app-protection-policy-using-conditional-launch-actions"></a>Criar uma política de proteção de aplicativo usando ações de inicialização condicionais
 
-1. Inicie sessão no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. No painel **Intune**, selecione **Aplicações do cliente** > **Políticas de proteção de aplicações**.
 4. Clique em **Adicionar uma política** (também pode editar uma política existente). 
 5. Clique em **Configurar definições obrigatórias** para ver a lista de definições disponíveis a configurar para a política. 
-6. Ao deslocar para baixo no painel de definições, verá uma secção intitulada **iniciação condicional** com uma tabela editável.
+6. Rolando para baixo no painel configurações, você verá uma seção intitulada **inicialização condicional** com uma tabela editável.
 
     ![Captura de ecrã a mostrar as ações de acesso de proteção de aplicações do Intune](./media/apps-selective-wipe-access-actions01.png)
 
@@ -81,14 +81,14 @@ Para Android, poderá configurar ações para as seguintes definições a partir
 - Versão mínima da aplicação
 - Versão mínima da correção
 - Fabricantes de dispositivos
-- Atestado de dispositivo do SafetyNet
+- Atestado de dispositivo SafetyNet
 - Análise de ameaças nas aplicações
 
 Para utilizar a definição **Fabricantes de dispositivos**, introduza uma lista de fabricantes de dispositivos Android separados por ponto e vírgula. Pode encontrar o fabricante de um dispositivo Android nas definições do dispositivo.<br>
-Entrada de exemplo: *Fabricante A; Fabricante B* 
+Exemplo de entrada: *Fabricante A; Fabricante B* 
 
 >[!NOTE]
-> Estes são alguns fabricantes comuns reportados a partir de dispositivos com o Intune e podem ser utilizados como entrada: ASUS; BlackBerry; Bq; Gionee; Google; HMD global; HTC; Huawei; Infinix; Kyocera; Lemobile; Lenovo; Lge; Motorola; Oneplus; Oppo; Samsung; Sharp; Sony; Tecno; Vivo; Vodafone; Xiaomi; Zte; Zuk
+> Esses são alguns fabricantes comuns relatados de dispositivos que usam o Intune e podem ser usados como entrada: Placa Rim BQ Gionee; Google HMD global; HTC Huawei; Infinix; Kyocera Lemobile; Lenovo Lge; Motorola; oneplus; Oppo; Samsung Nitidamente Sony Tecno; Vivo Vodafone Xiaomi Zte; Zuk
 
 Nos dispositivos dos utilizadores finais, o cliente do Intune toma medidas com base numa única correspondência de cadeias do modelo de dispositivo especificadas no Intune para as Políticas de Proteção de Aplicações. A correspondência depende inteiramente do que é comunicado pelo dispositivo. Recomendamos-lhe (ao administrador de TI) que se certifique de que o comportamento previsto está a ocorrer ao testar esta definição com base numa variedade de fabricantes e modelos de dispositivos e direcionado para um pequeno grupo de utilizadores. O valor predefinido é **Não configurado**.<br>
 Defina uma das seguintes ações: 
@@ -111,7 +111,7 @@ A seguinte lista apresenta as ações comuns:
 
 Em alguns casos, como a definição **Versão mínima do SO**, pode configurar a definição para realizar todas as ações aplicáveis com base em números de versão diferentes. 
 
-![Captura de ecrã das ações de acesso de proteção de aplicações - versão do SO mínima](./media/apps-selective-wipe-access-actions05.png)
+![Captura de tela de ações de acesso de proteção do aplicativo – versão mínima do so](./media/apps-selective-wipe-access-actions05.png)
 
 Depois de ter configurado totalmente uma definição, a linha será apresentada numa vista só de leitura e estará disponível para editar em qualquer altura. A linha também parecerá ter uma lista pendente disponível para seleção na coluna **Definição**. As definições que já tenham sido configuradas e que não permitam múltiplas ações não estarão disponíveis para seleção na lista pendente.
 

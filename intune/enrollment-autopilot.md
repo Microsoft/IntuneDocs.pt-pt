@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6df8922f9f7252c493b4a2119814c0001245fa8b
-ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
+ms.openlocfilehash: 0316138451c6105f22c196d17c1f2ec3b1f2e375
+ms.sourcegitcommit: 6c74ff568267d85fd1d44fda75e3e24ead87cb2b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69550000"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70062944"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Inscrever dispositivos Windows no Intune com o Windows Autopilot  
 O Windows Autopilot simplifica a inscrição de dispositivos no Intune. A criação e manutenção de imagens personalizadas do sistema operativo são um processo moroso. Também poderá demorar a aplicar estas imagens personalizadas do sistema operativo a novos dispositivos para as preparar para utilização antes de as disponibilizar aos seus utilizadores finais. Com o Microsoft Intune e o Autopilot, pode fornecer novos dispositivos aos seus utilizadores finais sem ter de criar, manter e aplicar imagens de sistema operativo personalizadas aos dispositivos. Ao utilizar o Intune para gerir dispositivos do Autopilot, pode gerir políticas, perfis, aplicações, entre outros, após estes serem inscritos. Para uma descrição geral das vantagens, cenários e pré-requisitos, veja [Descrição geral do Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
@@ -55,6 +55,9 @@ Pode adicionar dispositivos Windows Autopilot ao importar um ficheiro CSV com as
     `<serialNumber>,<ProductID>,<hardwareHash>,<optionalGroupTag>,<optionalAssignedUser>`
 
     ![Captura de ecrã de Adicionar dispositivos Windows Autopilot](media/enrollment-autopilot/autopilot-import-device2.png)
+
+    >[!IMPORTANT]
+    > Ao usar o carregamento de CSV para atribuir um usuário, certifique-se de atribuir UPNs válidos. Se você atribuir um UPN inválido (nome de usuário incorreto), seu dispositivo poderá ficar inacessível até que você remova a atribuição inválida. Durante o CSV, carregue a única validação que executamos na coluna **usuário atribuído** é verificar se o nome de domínio é válido. Não podemos executar validação de UPN individual para garantir que você está atribuindo um usuário existente ou correto.
 
 3. Escolha **Importar** para iniciar a importação das informações do dispositivo. A importação poderá demorar alguns minutos.
 

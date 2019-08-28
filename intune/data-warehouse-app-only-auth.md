@@ -1,12 +1,12 @@
 ---
 title: Autenticação apenas com a aplicação do Armazém de Dados do Intune
 titleSuffix: Microsoft Intune
-description: Este tópico descreve a autenticação apenas com a aplicação do armazém de dados para o Microsoft Intune.
+description: Este tópico descreve data warehouse autenticação somente de aplicativo para Microsoft Intune.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/31/2019
+ms.date: 08/27/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f87256580ce3a0e31ef86f15244f49046d9dd35e
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 2f70ca7d8d85853c38e2e8e88d06bae966431989
+ms.sourcegitcommit: 6c74ff568267d85fd1d44fda75e3e24ead87cb2b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67530256"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70062971"
 ---
 # <a name="intune-data-warehouse-application-only-authentication"></a>Autenticação apenas com a aplicação do Armazém de Dados do Intune
 
@@ -92,7 +92,7 @@ Com o Visual Studio, crie um projeto de Aplicação de Consola (.NET Framework) 
 2. No lado esquerdo, selecione **Visual c#** para apresentar todos os projetos de .NET Framework.
 3. Selecione **Aplicação de Consola (.Net Framework)** , adicione um nome da aplicação e, em seguida, clique em **OK** para criar a aplicação.
 4. No **Explorador de Soluções**, selecione **Program.cs** para apresentar o código.
-5. No Solution Explorer, adicione uma referência ao assembly `System.Configuration`.
+5. Em Gerenciador de Soluções, adicione uma referência ao assembly `System.Configuration`.
 6. No menu de pop-up, selecione **Adicionar** > **Novo item**. É apresentada a caixa de diálogo **Adicionar Novo Item**.
 7. No lado esquerdo, em **Visual C#** , selecione **Código**.
 8. Selecione **Classe**, altere o nome da classe para *IntuneDataWarehouseClass.cs* e clique em **Adicionar**.
