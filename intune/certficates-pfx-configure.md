@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0cda32e72956e5998d5ebc8d8bed2baea39951ec
-ms.sourcegitcommit: 58a22f1b4a3fffffb1f7da228f470b3b0774fc42
+ms.openlocfilehash: bf4559d03f7dfc8ec8c48242defa391b4b49e41a
+ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/26/2019
-ms.locfileid: "70021809"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70122403"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>Configurar e utilizar certificados PKCS com o Intune
 
@@ -286,6 +286,5 @@ O *conector de certificados PFX para Microsoft Intune* [dá suporte a atualizaç
 
 O perfil está criado, mas ainda não está ativo. Em seguida, [atribua o perfil](device-profile-assign.md) e [monitorize o estado](device-profile-monitor.md).
 
-[Use certificados SCEP](certificates-scep-configure.md)ou [emita certificados PKCS de um serviço Web DigiCert PKI Manager](certificates-digicert-configure.md).
-
+[Use o SCEP para certificados](certificates-scep-configure.md)ou [emita certificados PKCS de um serviço Web Symantec PKI Manager](certificates-symantec-configure.md).
 

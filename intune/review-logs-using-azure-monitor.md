@@ -1,11 +1,11 @@
 ---
-title: Rotear logs de auditoria no Azure monitor usando o Microsoft Intune-Azure | Microsoft Docs
+title: Rotear logs para Azure Monitor usando o Microsoft Intune-Azure | Microsoft Docs
 description: Use as configurações de diagnóstico para enviar logs de auditoria e logs operacionais no Microsoft Intune para a conta de armazenamento do Azure, os hubs de eventos ou o log Analytics. Escolha por quanto tempo deseja manter os dados e veja alguns custos estimados para locatários de tamanho diferentes.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/18/2019
+ms.date: 08/28/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,16 +15,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d95b37d18fa609f1c4e98d4fad5cfa600333b90a
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: ed32ad564f850c06b37b15e1994ac066a929ffaa
+ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68354516"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70122418"
 ---
 # <a name="send-log-data-to-storage-event-hubs-or-log-analytics-in-intune-preview"></a>Enviar dados de log para armazenamento, hubs de eventos ou log Analytics no Intune (versão prévia)
 
-O Microsoft Intune inclui logs internos que fornecem informações sobre seu ambiente. **Os logs de auditoria** mostram detalhes sobre diferentes eventos ou tarefas que ocorrem no Intune. **Os logs operacionais (versão prévia)** mostram detalhes sobre os usuários e dispositivos que foram registrados com êxito (ou com falha), bem como detalhes sobre dispositivos sem conformidade.
+O Microsoft Intune inclui logs internos que fornecem informações sobre seu ambiente:
+
+- **Os logs de auditoria** mostram detalhes sobre diferentes eventos ou tarefas que ocorrem no Intune.
+- **Os logs operacionais (versão prévia)** mostram detalhes sobre os usuários e dispositivos que foram registrados com êxito (ou com falha) e detalhes sobre dispositivos não compatíveis.
+- **Os logs organizacionais de conformidade do dispositivo (versão prévia)** mostram um relatório organizacional para conformidade do dispositivo no Intune e detalhes sobre dispositivos sem conformidade.
 
 Esses logs também podem ser enviados para Azure Monitor serviços, incluindo contas de armazenamento, hubs de eventos e log Analytics. Especificamente, você pode:
 
@@ -35,7 +39,7 @@ Esses logs também podem ser enviados para Azure Monitor serviços, incluindo co
 
 Esses recursos fazem parte das **configurações de diagnóstico** no Intune.
 
-Este artigo mostra como usar **as configurações de diagnóstico** para enviar dados de log para diferentes serviços, fornece exemplos e estimativas de custos e responde a algumas perguntas comuns.
+Este artigo mostra como usar **as configurações de diagnóstico** para enviar dados de log para diferentes serviços, fornece exemplos e estimativas de custos e responde a algumas perguntas comuns. Depois de habilitar esse recurso, os logs serão roteados para o serviço de Azure Monitor que você escolher.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
@@ -54,7 +58,7 @@ Dependendo de onde você deseja rotear os dados do log de auditoria, você preci
 ## <a name="send-logs-to-azure-monitor"></a>Enviar logs para o Azure monitor
 
 1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Em **monitoramento**, selecione **configurações de diagnóstico**. Na primeira vez que você abri-lo, ative-o:
+2. Em **monitoramento**, selecione **configurações de diagnóstico**. Na primeira vez que você abri-lo, ative-o. Caso contrário, adicione uma configuração.
 
     ![Ativar as configurações de diagnóstico no Intune para enviar logs para Azure Monitor](media/diagnostics-settings-turn-on.png)
 
@@ -87,7 +91,14 @@ Dependendo de onde você deseja rotear os dados do log de auditoria, você preci
       Se você optar por usar uma conta de armazenamento, insira também o número de dias que deseja manter os dados (retenção). Para manter os dados para sempre, defina **retenção (dias)** como `0` (zero).
 
       > [!NOTE]
-      > Os logs operacionais estão em versão prévia. Para fornecer comentários, incluindo informações incluídas nos logs operacionais, acesse [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas/suggestions/36613948-diagnostics-settings-feedback) (abre um novo site).
+      > Os logs operacionais estão em versão prévia. Para fornecer comentários, incluindo informações nos logs operacionais, vá para [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas/suggestions/36613948-diagnostics-settings-feedback).
+
+    -  > **DeviceComplianceOrg**do log: Os logs organizacionais de conformidade do dispositivo (versão prévia) mostram o relatório organizacional para conformidade do dispositivo no Intune e detalhes de dispositivos não compatíveis. Escolha esta opção para enviar os logs de conformidade para sua conta de armazenamento, Hub de eventos ou log Analytics.
+
+      Se você optar por usar uma conta de armazenamento, insira também o número de dias que deseja manter os dados (retenção). Para manter os dados para sempre, defina **retenção (dias)** como `0` (zero).
+ 
+      > [!NOTE]
+      > Os logs organizacionais de conformidade do dispositivo estão em versão prévia. Para fornecer comentários, incluindo informações no relatório, vá para [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas/suggestions/36613948-diagnostics-settings-feedback).
 
     Quando terminar, suas configurações são semelhantes às seguintes configurações: 
 
@@ -102,7 +113,7 @@ Você também pode exportar os logs de auditoria em outras partes do Intune, inc
 Por exemplo, para exportar os logs de auditoria ao usar a conformidade do dispositivo:
 
 1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selecione  > monitorde > conformidade do dispositivo logs de**auditoria**:
+2. Selecione > monitorde > conformidade do dispositivo logs de**auditoria**:
 
     ![Escolha os logs de auditoria para rotear dados do Intune para Azure Monitor armazenamento, hubs de eventos ou análises](media/audit-logs-under-monitor-in-compliance.png)
 
@@ -214,7 +225,7 @@ Sim. Para acessar os logs de seu aplicativo personalizado, você pode usar a [AP
 
 O Intune não armazena nenhum dado enviado por meio do pipeline. O Intune roteia dados para o pipeline de Azure Monitor, na autoridade do locatário. Para obter mais informações, consulte [Azure monitor visão geral](https://docs.microsoft.com/azure/azure-monitor/overview).
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Passos seguintes
 
 * [Arquivar logs de atividades em uma conta de armazenamento](https://docs.microsoft.com/azure/active-directory/reports-monitoring/quickstart-azure-monitor-route-logs-to-storage-account)
 * [Rotear logs de atividade para um hub de eventos](https://docs.microsoft.com/azure/active-directory/reports-monitoring/tutorial-azure-monitor-stream-logs-to-event-hub)

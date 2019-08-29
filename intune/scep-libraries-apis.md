@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a7baa95d6719dfa3161ae6644bbc9351d3f3d9f0
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: b6daa574b983b4a03346e521c61f267e13c7de1a
+ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67882385"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70122342"
 ---
 # <a name="use-apis-to-add-third-party-cas-for-scep-to-intune"></a>Utilizar APIs para adicionar outras ACs para o SCEP ao Intune
 
@@ -304,4 +304,4 @@ Exceções geradas:
 - [Descrição geral de como adicionar outra AC](certificate-authority-add-scep-overview.md)
 - [Configurar o Intune](setup-steps.md)
 - [Inscrição de dispositivos](device-enrollment.md)
-- [Configurar perfis de certificado SCEP](certificates-scep-configure.md#create-a-scep-certificate-profile) (a configuração Servidor/Conector do NDES não é utilizada neste cenário)
+- [Configurar perfis de certificado SCEP](certificates-profile-scep.md) (a configuração Servidor/Conector do NDES não é utilizada neste cenário)

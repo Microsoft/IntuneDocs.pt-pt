@@ -1,6 +1,6 @@
 ---
-title: Assinar e encriptar e-mails com o S/MIME – Microsoft Intune – Azure | Microsoft Docs
-description: Saiba como utilizar certificados digitais de e-mail no Microsoft Intune para assinar e encriptar e-mails nos dispositivos. Estes certificados são chamados de S/MIME e estão configurados ao utilizar perfis de configuração do dispositivo. Certificados de assinatura e encriptação utilizam PKCS ou certificados privados e utilizam um conector para importar certificados.
+title: Assinar e criptografar email usando S/MIME-Microsoft Intune-Azure | Microsoft Docs
+description: Saiba como usar certificados digitais de email no Microsoft Intune para assinar e criptografar emails em dispositivos. Esses certificados são chamados S/MIME e são configurados usando perfis de configuração de dispositivo. Certificados de assinatura e criptografia usam certificados PKCS ou privados e usam um conector para importar certificados.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -14,16 +14,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5dba3866df9ce5c779deb18cf13852b3d8af1b8d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 755073af455c1ee63fa52f435a397734d2897b47
+ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048885"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70122233"
 ---
-# <a name="smime-overview-to-sign-and-encrypt-email-in-intune"></a>Descrição geral de S/MIME para assinar e encriptar o e-mail no Intune
+# <a name="smime-overview-to-sign-and-encrypt-email-in-intune"></a>Visão geral de S/MIME para assinar e criptografar email no Intune
 
-Certificados de e-mail, também conhecido como certificado de S/MIME, fornecem segurança adicional para as comunicações de e-mail através de encriptação e desencriptação. Microsoft Intune pode utilizar certificados de S/MIME para assinar e encriptar e-mails para dispositivos móveis que executam as seguintes plataformas:
+Os certificados de email, também conhecidos como certificado S/MIME, fornecem segurança extra para suas comunicações por email usando criptografia e descriptografia. Microsoft Intune pode usar certificados S/MIME para assinar e criptografar emails para dispositivos móveis que executam as seguintes plataformas:
 
 - Android
 - iOS
@@ -31,17 +31,17 @@ Certificados de e-mail, também conhecido como certificado de S/MIME, fornecem s
 - Windows 10 e posterior
 - Windows Phone
 
-Em dispositivos iOS, pode criar um perfil de e-mail gerido pelo Intune que utiliza S/MIME e certificados para assinar e encriptar e-mails recebidos e enviados. Para outras plataformas, o protocolo S/MIME poderá ou não ser suportado. Caso seja suportado, instale certificados que utilizam encriptação e assinatura S/MIME. Em seguida, um utilizador final permite S/MIME na respetiva aplicação de e-mail.
+Em dispositivos iOS, pode criar um perfil de e-mail gerido pelo Intune que utiliza S/MIME e certificados para assinar e encriptar e-mails recebidos e enviados. Para outras plataformas, o protocolo S/MIME poderá ou não ser suportado. Se houver suporte, instale os certificados que usam assinatura e criptografia S/MIME. Em seguida, um usuário final habilita S/MIME em seu aplicativo de email.
 
-Para obter mais informações sobre a assinatura de e-mail de S/MIME e encriptação com o Exchange, consulte [S/MIME para assinatura e encriptação](https://docs.microsoft.com/Exchange/policy-and-compliance/smime).
+Para obter mais informações sobre assinatura e criptografia de email S/MIME com o Exchange, consulte [s/MIME para assinatura e criptografia de mensagens](https://docs.microsoft.com/Exchange/policy-and-compliance/smime).
 
-Este artigo fornece uma descrição geral da utilização de certificados de S/MIME para assinar e encriptar e-mails nos seus dispositivos.
+Este artigo fornece uma visão geral do uso de certificados S/MIME para assinar e criptografar emails em seus dispositivos.
 
 ## <a name="signing-certificates"></a>Certificados de assinatura
 
 Os certificados utilizados para assinatura permitem à aplicação de e-mail de cliente comunicar de forma segura com o servidor de e-mail.
 
-Para utilizar certificados de assinatura, crie um modelo na sua autoridade de certificação (AC) que se concentra na assinatura. Relativamente à Autoridade de Certificação do Microsoft Active Directory, o artigo [Configure the server certificate template](https://docs.microsoft.com/windows-server/networking/core-network-guide/cncg/server-certs/configure-the-server-certificate-template) (Configurar o modelo de certificado de servidor) inclui os passos para criar modelos de certificados.
+Para usar certificados de assinatura, crie um modelo na sua autoridade de certificação (CA) que se concentre na assinatura. Relativamente à Autoridade de Certificação do Microsoft Active Directory, o artigo [Configure the server certificate template](https://docs.microsoft.com/windows-server/networking/core-network-guide/cncg/server-certs/configure-the-server-certificate-template) (Configurar o modelo de certificado de servidor) inclui os passos para criar modelos de certificados.
 
 Os certificados de assinatura no Intune utilizam certificados PKCS. O artigo [Configurar e utilizar certificados PKCS](certficates-pfx-configure.md) descreve como implementar e utilizar certificados PKCS no seu ambiente do Intune. Estes passos incluem:
 
@@ -49,7 +49,7 @@ Os certificados de assinatura no Intune utilizam certificados PKCS. O artigo [Co
 - Criar um perfil de certificado de raiz fidedigna para os seus dispositivos. Este passo inclui utilizar certificados de raiz fidedigna e intermédios para a sua autoridade de certificação e, em seguida, implementar o perfil nos dispositivos.
 - Criar um perfil de certificado PKCS através de um modelo de certificado que criou. Este perfil emite certificados de assinatura para os dispositivos e implementa o perfil de certificado PKCS nos dispositivos.
 
-Também pode importar um certificado de assinatura para um utilizador específico. O certificado de assinatura é implementado em qualquer dispositivo que um utilizador inscreve. Para importar certificados para o Intune, utilize os [cmdlets no PowerShell no GitHub](https://github.com/Microsoft/Intune-Resource-Access). Para implementar um certificado PKCS importado no Intune para ser utilizado para assinatura de e-mail, siga os passos em [Configurar e utilizar certificados PKCS com o Intune](certficates-pfx-configure.md). Estes passos incluem:
+Também pode importar um certificado de assinatura para um utilizador específico. O certificado de autenticação é implantado em qualquer dispositivo registrado pelo usuário. Para importar certificados para o Intune, utilize os [cmdlets no PowerShell no GitHub](https://github.com/Microsoft/Intune-Resource-Access). Para implementar um certificado PKCS importado no Intune para ser utilizado para assinatura de e-mail, siga os passos em [Configurar e utilizar certificados PKCS com o Intune](certficates-pfx-configure.md). Estes passos incluem:
 
 - Transferir e instalar o PFX Certificate Connector for Microsoft Intune. Este conector entrega certificados PKCS importados nos dispositivos.
 - Importar certificados de assinatura de e-mail com S/MIME para o Intune.
@@ -63,7 +63,7 @@ Ao enviar um e-mail encriptado para outro utilizador, a chave pública do certif
 
 Recomenda-se que os certificados de encriptação de e-mail não sejam criados no Intune. Apesar de o Intune suportar certificados PKCS que suportem encriptação, o Intune cria um certificado exclusivo por dispositivo. Um certificado exclusivo por dispositivo não é ideal para um cenário de encriptação S/MIME em que o certificado de encriptação deveria ser partilhado em todos os dispositivos do utilizador.
 
-Para implementar certificados S/MIME com o Intune, tem de importar todos os certificados de encriptação de um utilizador para o Intune. Intune, em seguida, implementa todos os certificados em cada dispositivo que um utilizador inscreve. Para importar certificados para o Intune, utilize os [cmdlets no PowerShell no GitHub](https://github.com/Microsoft/Intune-Resource-Access).
+Para implementar certificados S/MIME com o Intune, tem de importar todos os certificados de encriptação de um utilizador para o Intune. Em seguida, o Intune implanta todos esses certificados em cada dispositivo registrado por um usuário. Para importar certificados para o Intune, utilize os [cmdlets no PowerShell no GitHub](https://github.com/Microsoft/Intune-Resource-Access).
 
 Para implementar um certificado PKCS importado no Intune para ser utilizado para encriptação de e-mails, siga os passos em [Configurar e utilizar certificados PKCS com o Intune](certficates-pfx-configure.md). Estes passos incluem:
 
@@ -78,9 +78,9 @@ Para implementar um certificado PKCS importado no Intune para ser utilizado para
 
 Após ter criado os perfis de certificado de encriptação e assinatura S/MIME, pode [ativar o S/MIME para o correio nativo de iOS](email-settings-ios.md).
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Passos seguintes
 
-- [Utilizar certificados SCEP](certificates-scep-configure.md)
-- [Utilizar certificados PKCS](certficates-pfx-configure.md)
-- [Utilize um parceiro da AC](certificate-authority-add-scep-overview.md)
-- [Emitir certificados PKCS de uma PKI da Symantec serviço web manager](certificates-symantec-configure.md)
+- [Usar SCEP para certificados](certificates-scep-configure.md)
+- [Usar certificados PKCS](certficates-pfx-configure.md)
+- [Usar uma autoridade de certificação do parceiro](certificate-authority-add-scep-overview.md)
+- [Emitir certificados PKCS de um serviço Web do Symantec PKI Manager](certificates-symantec-configure.md)

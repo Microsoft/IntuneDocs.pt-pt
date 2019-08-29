@@ -1,12 +1,12 @@
 ---
-title: Utilizar certificados SCEP com o Microsoft Intune – Azure | Microsoft Docs
-description: Para utilizar certificados SCEP no Microsoft Intune, configure o seu domínio do AD no local, crie uma autoridade de certificação, configure o servidor do NDES e instale o Intune Certificate Connector. Depois, crie um perfil de certificado SCEP e, em seguida, atribua este perfil a grupos. Além disso, veja os IDs de evento diferentes e as respetivas descrições e os códigos de diagnóstico para o serviço de conector do Intune.
+title: Configurar a infraestrutura para dar suporte a perfis de certificado SCEP com o Microsoft Intune-Azure | Microsoft Docs
+description: Para usar o SCEP no Microsoft Intune, configure seu domínio do AD local, crie uma autoridade de certificação, configure o servidor NDES e instale o conector de certificado do Intune.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/28/2019
-ms.topic: conceptual
+ms.date: 08/28/2019
+ms.topic: article
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -15,603 +15,352 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 97612a8d169295d9ec28d230fb6f37a0be8ce324
-ms.sourcegitcommit: 6b5907046f920279bbda3ee6c93e98594624c05c
+ms.openlocfilehash: 76cd6084815a9f63e653a63d36ba8265a7a0fbd6
+ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69582956"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70122493"
 ---
-# <a name="configure-and-use-scep-certificates-with-intune"></a>Configurar e utilizar certificados SCEP com o Intune
-
-Este artigo mostra como configurar a sua infraestrutura e, em seguida, criar e atribuir perfis de certificado SCEP (Simple Certificate Enrollment Protocol) com o Intune.
-
-## <a name="configure-on-premises-infrastructure"></a>Configurar a infraestrutura no local
-
-- **Active Directory domínio**: Todos os servidores indicados nesta secção (exceto o Servidor de Proxy de Aplicações Web) têm de ser associados ao seu domínio do Active Directory.
-
-- **Autoridade de certificação** (CA): Deve ser uma CA (autoridade de certificação) corporativa da Microsoft que é executada em uma edição Enterprise do Windows Server 2008 R2 ou posterior. Não é suportada uma AC Autónoma. Para obter mais detalhes, veja [Instalar a Autoridade de Certificação](https://technet.microsoft.com/library/jj125375.aspx).
-    Se a sua AC for executada no Windows Server 2008 R2, tem de [instalar a correção de KB2483564](http://support.microsoft.com/kb/2483564/).
-
-- **Servidor NDES**: Em um Windows Server 2012 R2 ou posterior, configure a função de servidor do serviço de registro de dispositivo de rede (NDES). O Intune não suporta a utilização do NDES num servidor que também execute a AC Empresarial. Veja a [Documentação de Orientação do Serviço de Inscrição de Dispositivos de Rede](https://technet.microsoft.com/library/hh831498.aspx) para obter instruções sobre como configurar o Windows Server 2012 R2 para alojar o NDES.
-O servidor do NDES tem de ser associado a um domínio que esteja na mesma floresta da AC Empresarial. Estão disponíveis mais informações sobre a implementação do servidor do NDES numa floresta separada, numa rede isolada ou num domínio interno em [Utilizar um Módulo de Política com o Serviço de Inscrição de Dispositivos de Rede](https://technet.microsoft.com/library/dn473016.aspx). Não é possível usar um servidor NDES que já esteja sendo usado com outro MDM.
-
-- **Microsoft Intune Certificate Connector**: No portal do Intune, vá para **configuração** > do dispositivo**conectores** > de certificado**Adicionar**e siga as *etapas para instalar o conector para SCEP*. Use o link de download no portal para iniciar o download do instalador do conector de certificado **NDESConnectorSetup. exe**.  Irá executar este instalador no servidor com a função NDES.  
-
-Esse conector de certificado NDES também dá suporte ao modo padrão FIPS (FIPS). O FIPS não é obrigatório, mas pode emitir e revogar certificados quando está ativado.
-
-- **Servidor proxy de aplicativo Web** (opcional): Use um servidor que executa o Windows Server 2012 R2 ou posterior como um servidor de proxy de aplicativo Web (WAP). Esta configuração:
-  - Permite aos dispositivos receberem certificados através de uma ligação à Internet.
-  - É uma recomendação de segurança quando os dispositivos se ligam através da Internet para receber e renovar certificados.
+# <a name="configure-infrastructure-to-support-scep-with-intune"></a>Configurar a infraestrutura para dar suporte ao SCEP com o Intune  
   
-- **Proxy de aplicativo do AD do Azure** (opcional): O Proxy de Aplicativo do AD do Azure pode ser usado em vez de um servidor de proxy de aplicativo Web (WAP) dedicado para publicar o servidor NDES na Internet. Para mais informações, consulte [How to provide secure remote access to on-premises applications (Como fornecer acesso remoto seguro a aplicações no local)](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy).
+O Intune dá suporte ao uso do protocolo SCEP (SCEP) para [autenticar conexões com seus aplicativos e recursos corporativos](certificates-configure.md). O SCEP usa o certificado de autoridade de certificação (CA) para proteger a troca de mensagens da CSR (solicitação de assinatura de certificado). Quando sua infraestrutura oferece suporte a SCEP, você pode usar perfis de *certificado SCEP* do Intune (um tipo de perfil de dispositivo no Intune) para implantar os certificados em seus dispositivos. O Microsoft Intune Certificate Connector é necessário para usar perfis de certificado SCEP com o Intune ao usar uma autoridade de certificação de serviços de certificados Active Directory. O conector não é necessário ao usar [autoridades de certificação de terceiros](certificate-authority-add-scep-overview.md#set-up-third-party-ca-integration).  
 
-### <a name="additional"></a>Adicionais
+As informações neste artigo podem ajudá-lo a configurar sua infraestrutura para dar suporte ao SCEP ao usar os serviços de certificados Active Directory. Depois que sua infraestrutura estiver configurada, você poderá [criar e implantar perfis de certificado SCEP](certificates-profile-scep.md) com o Intune.  
 
-- O servidor que aloja o WAP [tem de instalar uma atualização](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) que ativa o suporte para os URLs longos que são utilizados pelo Serviço de Inscrição de Dispositivos de Rede. Esta atualização está incluída no [rollup da atualização de dezembro de 2014](http://support.microsoft.com/kb/3013769)ou individualmente a partir do [KB3011135](http://support.microsoft.com/kb/3011135).
-- O servidor WAP tem de ter um certificado SSL que corresponda ao nome que está a ser publicado em clientes externos e de confiar no certificado SSL utilizado no servidor do NDES. Estes certificados permitem ao servidor do WAP terminar a ligação SSL de clientes e criar uma nova ligação SSL ao servidor do NDES.
+> [!TIP]  
+> O Intune também dá suporte ao uso de [padrões de criptografia de chave pública #12 certificados](certficates-pfx-configure.md).  
 
-Para obter mais informações, veja [Plan certificates for WAP](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn383650(v=ws.11)#plan-certificates) (Planear certificados para o WAP) e as [informações gerais sobre os servidores WAP](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn584113(v=ws.11)).
+
+## <a name="prerequisites-for-using-scep-for-certificates"></a>Pré-requisitos para usar o SCEP para certificados  
+Antes de prosseguir, certifique-se de ter [criado e implantado um perfil de *certificado confiável* ](certificates-configure.md#export-the-trusted-root-ca-certificate) para dispositivos que USARÃO perfis de certificado SCEP. Os perfis de certificado SCEP referenciam diretamente o perfil de certificado confiável que você usa para provisionar dispositivos com um certificado de autoridade de certificação raiz confiável.  
+
+### <a name="servers-and-server-roles"></a>Servidores e funções de servidor  
+A seguinte infraestrutura local deve ser executada em servidores que ingressaram no domínio em seu Active Directory, com exceção do servidor proxy de aplicativo Web.  
+- **Autoridade de certificação** – use uma AC (autoridade de certificação) corporativa dos serviços de certificados do Microsoft Active Directory que é executada em uma edição Enterprise do Windows Server 2008 R2 com o Service Pack 1 ou posterior. A versão do Windows Server que você usa deve permanecer em suporte pela Microsoft. Não é suportada uma AC Autónoma. Para obter mais informações, consulte [instalar a autoridade de certificação](http://technet.microsoft.com/library/jj125375.aspx). Se a sua AC executar o Windows Server 2008 R2 SP1, você deverá [instalar o hotfix em KB2483564](http://support.microsoft.com/kb/2483564/).  
+
+- **Função de servidor NDES** – você deve configurar uma função de servidor NDES (serviço de registro de dispositivo de rede) no Windows Server 2012 R2 ou posterior. Em uma seção posterior deste artigo, orientaremos você na [instalação do NDES](#set-up-ndes).  
+
+  - O servidor que hospeda o NDES deve estar ingressado no domínio e na mesma floresta que a autoridade de certificação corporativa.  
+  - Você não pode usar o NDES instalado no servidor que hospeda a AC corporativa.  
+  - Você instalará o Microsoft Intune o conector de certificado no mesmo servidor que hospeda o NDES.  
+
+  Para saber mais sobre o NDES, consulte [diretrizes de serviço de registro de dispositivo de rede](http://technet.microsoft.com/library/hh831498.aspx) na documentação do Windows Server e [usando um módulo de política com o serviço de registro de dispositivo de rede](https://technet.microsoft.com/library/dn473016.aspx).  
+
+- **Microsoft Intune Certificate Connector** – o Microsoft Intune Certificate Connector é necessário para usar perfis de certificado SCEP com o Intune. Este artigo o orientará durante a [instalação desse conector](#install-the-intune-certificate-connector).  
+
+  O conector dá suporte ao modo de padrão FIPS (FIPS). O FIPS não é necessário, mas quando está habilitado, você pode emitir e revogar certificados.  
+  - O conector deve ser executado no mesmo servidor que a função de servidor NDES, um servidor que executa o Windows Server 2012 R2 ou posterior.  
+  - A estrutura do .NET 4,5 é exigida pelo conector do e é incluída automaticamente com o Windows Server 2012 R2.  
+  - A configuração de segurança reforçada do Internet Explorer [deve ser desabilitada no servidor que hospeda o NDES](https://technet.microsoft.com/library/cc775800(v=WS.10).aspx) e o Microsoft Intune Certificate Connector.  
+
+A seguinte infraestrutura local é opcional:  
+  Para permitir que os dispositivos na Internet obtenham certificados, você precisa publicar sua URL de NDES externamente em sua rede corporativa. Você pode usar o Proxy de Aplicativo do AD do Azure, o servidor proxy de aplicativo Web ou outro proxy reverso.
+  
+- **Proxy de aplicativo do AD do Azure** (opcional) – você pode usar o Proxy de Aplicativo do AD do Azure em vez de um servidor de proxy de aplicativo Web (WAP) dedicado para publicar a URL de NDES na Internet. Isso permite que os dispositivos voltados para a intranet e para a Internet obtenham certificados. Para mais informações, consulte [How to provide secure remote access to on-premises applications (Como fornecer acesso remoto seguro a aplicações no local)](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy). 
+
+- **Servidor proxy de aplicativo Web** (opcional)-Use um servidor que executa o Windows Server 2012 R2 ou posterior como um servidor de proxy de aplicativo Web (WAP) para publicar sua URL de NDES na Internet.  Isso permite que os dispositivos voltados para a intranet e para a Internet obtenham certificados.
+
+  O servidor que aloja o WAP [tem de instalar uma atualização](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) que ativa o suporte para os URLs longos que são utilizados pelo Serviço de Inscrição de Dispositivos de Rede. Esta atualização está incluída no [rollup da atualização de dezembro de 2014](http://support.microsoft.com/kb/3013769)ou individualmente a partir do [KB3011135](http://support.microsoft.com/kb/3011135).  
+
+  O servidor WAP deve ter um certificado SSL que corresponda ao nome que é publicado em clientes externos e confia no certificado SSL que é usado no computador que hospeda o serviço de NDES. Esses certificados permitem que o servidor WAP encerre a conexão SSL de clientes e crie uma nova conexão SSL com o serviço NDES.  
+
+  Para obter mais informações, veja [Plan certificates for WAP](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn383650(v=ws.11)#plan-certificates) (Planear certificados para o WAP) e as [informações gerais sobre os servidores WAP](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn584113(v=ws.11)).
+
+### <a name="accounts"></a>Contas   
+- **Conta de serviço de NDES** -antes de configurar o NDES, identifique uma conta de usuário de domínio para usar como a conta de serviço de NDES. Você especificará essa conta ao configurar modelos em sua AC emissora, antes de configurar o NDES.  
+
+  Essa conta deve ter os seguintes direitos no servidor que hospeda o NDES:  
+  - **Logon local**  
+  - **Fazer logon como um serviço**  
+  - **Fazer logon como um trabalho em lotes**  
+
+  Para obter mais informações, consulte [criar uma conta de usuário de domínio para atuar como a conta de serviço de NDES](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831498(v=ws.11)#to-create-a-domain-user-account-to-act-as-the-ndes-service-account). 
+- **Acesso ao computador que hospeda o serviço de NDES** – você precisará de uma conta de usuário de domínio com permissões para instalar e configurar funções do Windows Server no servidor onde você instala o NDES.  
+
+- **Acesso à autoridade de certificação** -você precisará de uma conta de usuário de domínio que tenha direitos para gerenciar sua autoridade de certificação.  
 
 ### <a name="network-requirements"></a>Requisitos da rede
 
-Se não utilizar um proxy inverso, tal como o WAP ou o Proxy de Aplicações do Azure AD, permita o tráfego TCP na porta 443 de todos os anfitriões/endereços IP na Internet para o servidor do NDES.
+É recomendável publicar o serviço de NDES por meio de um proxy reverso, como o [proxy de aplicativo do Azure AD, o proxy de acesso via Web](https://azure.microsoft.com/documentation/articles/active-directory-application-proxy-publish/)ou um proxy de terceiros. Se você não usar um proxy reverso, permita o tráfego TCP na porta 443 de todos os hosts e endereços IP na Internet para o serviço de NDES.  
 
-Autorize todas as portas e protocolos necessários entre o servidor do NDES e as infraestruturas de suporte. Por exemplo, o servidor do NDES tem de comunicar com a AC, os servidores DNS, os servidores do Configuration Manager, os controladores de domínio e, eventualmente, com outros serviços no seu ambiente.
+Permitir todas as portas e protocolos necessários para a comunicação entre o serviço NDES e qualquer infraestrutura de suporte em seu ambiente. Por exemplo, o computador que hospeda o serviço de NDES precisa se comunicar com a AC, os servidores DNS, os controladores de domínio e, possivelmente, outros serviços ou servidores em seu ambiente, como Configuration Manager.
 
-Recomendamos vivamente a publicação do servidor do NDES através de um proxy inverso, tal como o [proxy de aplicações do Azure AD](https://azure.microsoft.com/documentation/articles/active-directory-application-proxy-publish/), o [Proxy de Acesso Web](https://technet.microsoft.com/library/dn584107.aspx) ou um proxy de terceiros.
+### <a name="certificates-and-templates"></a>Certificados e modelos
 
-### <a name="certificates-and-templates"></a>Certificados e modelos  
+Os seguintes certificados e modelos são usados quando você usa o SCEP.
 
-|Objeto|Detalhes|
+|Objeto    |Detalhes    |
 |----------|-----------|
-|**Modelo de Certificado**|Configura este modelo na sua AC emissora.|
-|**Certificado de autenticação de cliente**|Pedido pela sua AC emissora ou AC pública; instala este certificado no Servidor do NDES.|
-|**Certificado de autenticação do servidor**|Pedido pela sua AC emissora ou a AC pública; instala e vincula este certificado SSL no IIS no servidor do NDES. Se o certificado tiver o conjunto de utilizações de chave de autenticação de cliente e servidor (**Utilizações de Chave Avançadas**), pode utilizar o mesmo certificado.|
-|**Certificado da AC de Raiz Fidedigna**|Irá exportar este certificado como um ficheiro **.cer** a partir da AC de raiz ou de qualquer dispositivo que confie na AC de raiz. Em seguida, atribua-o a usuários, dispositivos ou ambos usando o perfil de certificado de autoridade de certificação confiável.<br /> **Observação:<br />quando um perfil de certificado SCEP é atribuído, certifique-se de atribuir o *perfil de certificado raiz confiável* referenciado em seu perfil de certificado SCEP ao mesmo grupo de usuários ou dispositivos.  Para criar esse perfil, consulte [criar um perfil de certificado confiável](certficates-pfx-configure.md#create-a-trusted-certificate-profile), que está documentado no artigo sobre perfis de certificado PKCS.** <br/><br />Você usa um único certificado de autoridade de certificação raiz confiável por plataforma de sistema operacional e o associa a cada perfil de certificado raiz confiável criado por você. <br /><br />Pode utilizar certificados da AC de Raiz Fidedigna adicionais quando necessário. Por exemplo, pode fazê-lo para conceder um estatuto de fidedignidade a uma AC que assina os certificados de autenticação do servidor para os seus pontos de acesso Wi-Fi.|
+|**Modelo de certificado SCEP**         |Modelo que você configurará em sua AC emissora usada para fullfilr as solicitações de SCEP de dispositivos. |
+|**Certificado de autenticação de cliente** |Solicitado da AC emissora ou da AC pública.<br /> Você instala esse certificado no computador que hospeda o serviço de NDES e é usado pelo conector de certificado do Intune.<br /> Se o certificado tiver os usos de chave de *autenticação* de *cliente* e de servidor definidos (**usos avançados de chave**) no modelo de autoridade de certificação que você usa para emitir esse certificado. Você pode usar o mesmo certificado para autenticação de servidor e cliente. |
+|**Certificado de autenticação do servidor** |Certificado do servidor Web solicitado da AC emissora ou da AC pública.<br /> Você instala e associa esse certificado SSL no IIS no computador que hospeda o NDES.<br />Se o certificado tiver os usos de chave de *autenticação* de *cliente* e de servidor definidos (**usos avançados de chave**) no modelo de autoridade de certificação que você usa para emitir esse certificado. Você pode usar o mesmo certificado para autenticação de servidor e cliente. |
+|**Certificado da AC de Raiz Fidedigna**       |Para usar um perfil de certificado SCEP, os dispositivos devem confiar em sua AC (autoridade de certificação) raiz confiável. Use um *perfil de certificado confiável* no Intune para provisionar o certificado de AC raiz confiável para usuários e dispositivos. <br/><br/> **-** Use um único certificado de autoridade de certificação raiz confiável por plataforma de sistema operacional e associe esse certificado a cada perfil de certificado confiável que você criar. <br /><br /> **-** Você pode usar certificados de autoridade de certificação raiz confiáveis adicionais quando necessário. Por exemplo, você pode usar certificados adicionais para fornecer uma relação de confiança a uma AC que assina os certificados de autenticação de servidor para seus pontos de acesso Wi-Fi. Crie certificados de autoridade de certificação raiz confiáveis adicionais para a emissão de CAs.  No perfil de certificado SCEP criado no Intune, certifique-se de especificar o perfil de AC raiz confiável para a AC emissora.<br/><br/> Para obter informações sobre o perfil de certificado confiável, consulte [exportar o certificado de AC raiz confiável](certificates-configure.md#export-the-trusted-root-ca-certificate) e [criar perfis de certificado confiável](certificates-configure.md#create-trusted-certificate-profiles) em *usar certificados para autenticação no Intune*. |
 
-### <a name="accounts"></a>Contas
+## <a name="configure-the-certification-authority"></a>Configurar a autoridade de certificação
 
-|Name|Detalhes|
-|--------|-----------|
-|**Conta do serviço do NDES**|Introduza uma conta de utilizador de domínio para utilizar como conta do Serviço do NDES. |
+Nas seções a seguir, você vai:
+- Configure e publique o modelo necessário para o NDES. 
+- Defina as permissões necessárias para revogação de certificado. 
 
-## <a name="configure-your-infrastructure"></a>Configurar a sua infraestrutura
-Para poder configurar perfis de certificados, conclua os passos seguintes. Estes passos exigem o conhecimento do Windows Server 2012 R2 ou posterior e dos Serviços de Certificados do Active Directory (ADCS):
+As seções a seguir exigem conhecimento do Windows Server 2012 R2 ou posterior e dos serviços de certificados Active Directory (AD CS).  
 
-### <a name="step-1---create-an-ndes-service-account"></a>Passo 1 – Criar uma conta do serviço do NDES
+### <a name="access-your-issuing-ca"></a>Acessar sua AC emissora
 
-Criar uma conta de utilizador de domínio para utilizar como conta do serviço do NDES. Introduza esta conta quando configurar os modelos na AC emissora antes de instalar e configurar o NDES. Verifique se o utilizador tem os direitos predefinidos para **Iniciar Sessão Localmente**, **Iniciar Sessão como um Serviço** e **Iniciar Sessão como Tarefa Batch**. Algumas organizações têm políticas de proteção que desativam estes direitos.
+1. Entre em sua AC emissora com uma conta de domínio com direitos suficientes para gerenciar a autoridade de certificação.  
+2. Abra o MMC (console de gerenciamento Microsoft) da autoridade de certificação. **Execute** ' certsrv. msc ' ou, em **Gerenciador do servidor**, clique em **ferramentas**e, em seguida, clique em **autoridade de certificação**.
+3. Selecione o nó **modelos de certificado** e clique em **ação** > **gerenciar**.
 
-### <a name="step-2---configure-certificate-templates-on-the-certification-authority"></a>Passo 2 – Configurar modelos de certificado na autoridade de certificação
-Neste passo, irá:
+### <a name="create-the-scep-certificate-template"></a>Criar o modelo de certificado SCEP
 
-- Configurar um modelo de certificados para o NDES
-- Publicar o modelo de certificado para o NDES
+1. Crie um modelo de certificado v2 (com a compatibilidade do Windows 2003) para uso como o modelo de certificado SCEP. Pode:  
+   - Use o snap-in de *modelos de certificado* para criar um novo modelo personalizado.  
+   - Copie um modelo existente (como o modelo de usuário) e, em seguida, atualize a cópia para usar como modelo NDES.
+ 
+2. Defina as seguintes configurações nas guias especificadas do modelo:
+   - **Geral**:
+     - Desmarque **publicar certificado em Active Directory**.
+     - Especifique um **nome de exibição de modelo** amigável para que você possa identificar esse modelo mais tarde.  
 
-#### <a name="configure-the-certification-authority"></a>Configurar a autoridade de certificação
+   - **Nome da entidade**:  
+     - Selecione **fornecer na solicitação**. A segurança é imposta pelo módulo de política do Intune para NDES.  
 
-1. Inicie sessão como administrador da empresa.
+     ![Modelo, separador nome do requerente](./media/certificates-scep-configure/scep-ndes-subject-name.jpg)
+   - **Extensões**:  
+     - Verifique se a **Descrição das políticas de aplicativo** inclui a **autenticação de cliente**.  
+       > [!IMPORTANT]  
+       > Adicione apenas as políticas de aplicativo que você precisa. Confirme as escolhas com os administradores de segurança.
+ 
+     - Para modelos de certificado iOS e macOS, edite também o **uso da chave** e verifique se a **assinatura é a prova de origem** não está selecionada.
 
-2. Na AC emissora, utilize o snap-in Modelos de Certificado para criar um novo modelo personalizado. Também pode copiar um modelo existente e, em seguida, atualizá-lo (como o Modelo de utilizador) para utilizar com o NDES.
+     ![Modelo, separador extensões](./media/certificates-scep-configure/scep-ndes-extensions.jpg)  
 
-   >[!NOTE]
-   > O modelo de certificado NDES tem de se basear num Modelo de Certificado v2 (com a compatibilidade do Windows 2003).
+   - **Segurança**:  
+     - Adicione a **conta de serviço de NDES**. Esta conta requer permissões de **leitura** e **registro** para este modelo.
 
-   O modelo tem de ter as seguintes configurações:
+     - Adicione contas adicionais para administradores do Intune que criarão perfis SCEP. Essas contas exigem permissões de **leitura** para o modelo para permitir que esses administradores naveguem até esse modelo durante a criação de perfis SCEP.  
 
-   - Em **Geral**:
+     ![Modelo, separador segurança](./media/certificates-scep-configure/scep-ndes-security.jpg)  
+
+   - **Tratamento de solicitação**:  
+      A imagem a seguir é um exemplo. Sua configuração pode variar.  
+
+     ![Modelo, separador processamento de pedidos](./media/certificates-scep-configure/scep-ndes-request-handling.png) 
+
+   - **Requisitos de emissão**:  
+     A imagem a seguir é um exemplo. Sua configuração pode variar.  
+
+     ![Modelo, separador requisitos de emissão](./media/certificates-scep-configure/scep-ndes-issuance-reqs.jpg)  
+
+3. Salve o modelo de certificado.  
+
+### <a name="create-the-client-certificate-template"></a>Criar o modelo de certificado do cliente
+
+O conector de certificado do Intune requer um certificado com o uso avançado de chave de *autenticação de cliente* e o nome da entidade igual ao FQDN do computador em que o conector está instalado. É necessário um modelo com as seguintes propriedades:
+
+-  > **Políticas de aplicativo** de extensões devem conter **autenticação de cliente**
+- **Nome da entidade** **fornecido na solicitação.**  > 
+
+Se você já tiver um modelo que inclui essas propriedades, poderá reutilizá-lo; caso contrário, crie um novo modelo duplicando um existente ou criando um modelo personalizado.
+
+### <a name="create-the-server-certificate-template"></a>Criar o modelo de certificado do servidor
+
+As comunicações entre os dispositivos gerenciados e o IIS no servidor NDES usam HTTPS, o que requer o uso de um certificado. Você pode usar o modelo de certificado do **servidor Web** para emitir esse certificado. Ou, se você preferir ter um modelo dedicado, as seguintes propriedades serão necessárias:
+
+-  > **Políticas de aplicativo** de extensões devem conter **autenticação de servidor**
+- **Nome da entidade** **fornecido na solicitação.**  > 
+
+> [!NOTE]  
+> Se você tiver um certificado que satisfaça os dois requisitos dos modelos de certificado do cliente e do servidor, poderá usar um único certificado para o IIS e o conector de certificado do Intune.
+
+### <a name="grant-permissions-for-certificate-revocation"></a>Conceder permissões para revogação de certificado
+
+Para que o Intune possa revogar certificados que não são mais necessários, você deve conceder permissões na autoridade de certificação. 
+
+No conector de certificado do Intune, você pode usar a conta do **sistema** de servidor NDES ou uma conta específica, como a **conta de serviço de NDES**.
+
+1. No console da autoridade de certificação, clique com o botão direito do mouse no nome da autoridade de certificação e selecione **Propriedades**.
+2. Na guia **segurança** , clique em **Adicionar**.
+3. Permissão para **emitir e gerenciar certificados** :
+   - Se você optar por usar a conta do **sistema**de servidor de NDES, forneça as permissões para o servidor NDES.
+   - Se você optar por usar a **conta de serviço de NDES**, forneça permissões para essa conta em vez disso.
+
+### <a name="modify-the-validity-period-of-the-certificate-template"></a>Modificar o período de validade do modelo de certificado
+
+É opcional modificar o período de validade do modelo de certificado.  
+
+Depois [de criar o modelo de certificado SCEP](#create-the-scep-certificate-template), você pode editar o modelo para examinar o **período de validade** na guia **geral** .  
+
+Por predefinição, o Intune utiliza o valor configurado no modelo. No entanto, você pode configurar a AC para permitir que o solicitante Insira um valor diferente, e esse valor pode ser definido de dentro do console do Intune.  
+
+> [!IMPORTANT]  
+> Para iOS e macOS, sempre use um valor definido no modelo.  
+
+#### <a name="to-configure-a-value-that-can-be-set-from-within-the-intune-console"></a>Para configurar um valor que pode ser definido no console do Intune  
+1. Na AC, execute os seguintes comandos:  
+   -**certutil-setreg Policy\EditFlags + EDITF_ATTRIBUTEENDDATE**  
+   -**net stop certsvc**  
+   -**net start certsvc**  
+
+2. Na AC emissora, utilize o snap-in Autoridade de Certificação para publicar o modelo de certificado. Selecione o **nó modelos de certificado** , selecione **ação** > **novo** > **modelo de certificado a ser emitido**e, em seguida, selecione o modelo de certificado que você criou na seção anterior.  
+
+3. Valide se o modelo foi publicado exibindo-o na pasta **modelos de certificado** .  
+
+## <a name="set-up-ndes"></a>Configurar o NDES  
+Os procedimentos a seguir podem ajudá-lo a configurar o NDES (serviço de registro de dispositivo de rede) para uso com o Intune. Para obter mais informações sobre o NDES, consulte [diretrizes de serviço de registro de dispositivo de rede](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831498(v%3dws.11)).  
+
+### <a name="install-the-ndes-service"></a>Instalar o serviço de NDES  
+1. No servidor que hospedará seu serviço de NDES, entre como um **administrador corporativo**e, em seguida, use o [Assistente para adicionar funções e recursos](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831809(v=ws.11)) para instalar o NDES:
+
+   1. No Assistente, selecione **Serviços de Certificados do Active Directory** para obter acesso aos Serviços de Função AD CS. Selecione **serviço de registro de dispositivo de rede**, desmarque **autoridade de certificação**e conclua o assistente.  
+
+      > [!TIP]  
+      > Em **andamento da instalação**, não selecione **fechar**. Em alternativa, selecione a ligação para **Configurar os Serviços de Certificados do Active Directory no servidor de destino**. O assistente de **configuração do AD CS** é aberto, que você usa para o próximo procedimento neste artigo, *Configurar o serviço de NDES*. Após a Configuração de AD CS abrir, pode fechar o assistente para Adicionar Funções e Funcionalidades.  
+
+   2. Quando o NDES é adicionado ao servidor, o assistente também instala o IIS. Confirme se o IIS tem as seguintes configurações:  
+
+      - **Servidor Web** > **Segurança** > **Filtragem de Pedidos**  
+      - **Servidor Web** > **Desenvolvimento de Aplicações** > **ASP.NET 3.5**  
+
+        A instalação do ASP.NET 3.5 instala o .NET Framework 3.5. Ao instalar o .NET Framework 3.5, instala tanto a funcionalidade **.NET Framework 3.5** principal como a **Ativação HTTP**.  
+      - **Servidor Web** > **Desenvolvimento de Aplicações** > **ASP.NET 4.5**  
+
+        A instalação do ASP.NET 4.5 instala o .NET Framework 4.5. Ao instalar o .NET Framework 4.5, instale a funcionalidade **.NET Framework 4.5** principal, o **ASP.NET 4.5** e a funcionalidade **Serviços do WCF** > **Ativação HTTP**.  
+
+      - **Ferramentas de Gestão** > **Compatibilidade de Gestão do IIS 6** > **Compatibilidade com Metabase do IIS 6**  
+      - **Ferramentas de Gestão** > **Compatibilidade de Gestão do IIS 6** > **Compatibilidade com WMI do IIS 6**  
+      - No servidor, adicione a conta do serviço do NDES como membro do grupo local **IIS_IUSR**.  
+
+2. No computador que hospeda o serviço NDES, execute o seguinte comando em um prompt de comando com privilégios elevados. O comando a seguir define o SPN da conta de serviço de NDES:  
+
+   `setspn -s http/<DNS name of the computer that hosts the NDES service> <Domain name>\<NDES Service account name>`
    
-       - Confirme que a propriedade **Publicar certificado no Active Directory** **não** está selecionada.
-       - Introduza um **Nome a apresentar do modelo** amigável.
+   Por exemplo, se o computador que hospeda o serviço de NDES for nomeado **SERVER01**, seu domínio for **contoso.com**e a conta de serviço for **NDESService**, use:  
 
-   - Em **Nome do Requerente**, selecione **Fornecer no pedido**. (A segurança é imposta pelo módulo de política do Intune para o NDES).
+   `setspn –s http/Server01.contoso.com contoso\NDESService`  
 
-   - Em **Extensões** confirme se a **Descrição das Políticas de Aplicações** inclui a **Autenticação de Cliente**.
+### <a name="configure-the-ndes-service"></a>Configurar o serviço de NDES  
 
-     > [!IMPORTANT]
-     > Para os modelos de certificado iOS e macOS, no separador **Extensões**, edite **Utilização de Chave** e confirme que a opção **A assinatura é uma prova de origem** não está selecionada.
+1. No computador que hospeda o serviço de NDES, abra o assistente de **configuração do AD CS** e faça as seguintes atualizações:  
 
-   - Em **Segurança**, adicione a conta de serviço do NDES e conceda-lhe permissões de **Inscrição** no modelo. Os administradores do Intune que criam perfis SCEP precisam de direitos de **Leitura** para poderem navegar para o modelo ao criarem perfis de SCEP.
+   > [!TIP]  
+   > Se você estiver continuando no último procedimento e clicou no link **configurar Active Directory serviços de certificados no servidor de destino** , esse assistente já deve estar aberto. Caso contrário, abra o Gestor de Servidores para aceder à configuração pós-implementação dos Serviços de Certificados do Active Directory.  
 
-     > [!NOTE]
-     > Para revogar certificados, a conta de serviço NDES precisa *emitir e gerenciar* direitos de certificados na autoridade de certificação. Para delegar essa permissão, abra o console de gerenciamento da autoridade de certificação e clique com o botão direito do mouse no nome da autoridade de certificação. Em seguida, na guia Segurança, adicione ou selecione a conta e marque a caixa de seleção para **emitir e gerenciar certificados**.
-
-
-3. Reveja o separador **Período de validade** no separador **Geral** do modelo. Por predefinição, o Intune utiliza o valor configurado no modelo. Contudo, pode configurar a AC para permitir que o autor do pedido introduza um valor diferente que pode, posteriormente, configurar a partir da Consola do administrador do Intune. Se quiser utilizar sempre o valor no modelo, ignore o resto deste passo.
-
-   > [!IMPORTANT]
-   > O iOS e o macOS utilizam sempre o conjunto de valores no modelo, independentemente de outras configurações que realizar.
-
-Configuração de modelos de exemplo:
-
-![Modelo, separador processamento de pedidos](./media/scep_ndes_request_handling.png)
-
-![Modelo, separador nome do requerente](./media/scep_ndes_subject_name.jpg)
-
-![Modelo, separador segurança](./media/scep_ndes_security.jpg)
-
-![Modelo, separador extensões](./media/scep_ndes_extensions.jpg)
-
-![Modelo, separador requisitos de emissão](./media/scep_ndes_issuance_reqs.jpg)
-
-> [!IMPORTANT]
-> Em Políticas de Aplicações, adicione apenas as políticas de aplicações necessárias. Confirme as escolhas com os administradores de segurança.
-
-Configure a AC para permitir que o autor do pedido introduza o período de validade:
-
-1. Na AC, execute os seguintes comandos:
-   - **certutil -setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE**
-   - **net stop certsvc**
-   - **net start certsvc**
-
-2. Na AC emissora, utilize o snap-in Autoridade de Certificação para publicar o modelo de certificado.
-   Selecione o nó **Modelos de certificado**, clique em **Ação** > **Novo** > **Modelo de certificado a emitir** e, em seguida, selecione o modelo que criou no passo 2.
-
-3. Valide o modelo publicado ao visualizá-lo na pasta **Modelos de Certificado**.
-
-### <a name="step-3---configure-prerequisites-on-the-ndes-server"></a>Passo 3 – Configurar pré-requisitos no servidor do NDES
-Neste passo, irá:
-
-- Adicionar o NDES a um Windows Server e configurar ISS para suportar o NDES
-- Adicione a conta do Serviço do NDES ao grupo ISS_IUSR
-- Definir um nome do principal do serviço (SPN) para a conta do Serviço do NDES
-
-1. No servidor que aloja o NDES, inicie sessão como **Administrador de Empresa** e, em seguida, utilize o [Assistente para Adicionar Funções e Funcionalidades](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831809(v=ws.11)) para instalar o NDES:
-
-   1. No Assistente, selecione **Serviços de Certificados do Active Directory** para obter acesso aos Serviços de Função AD CS. Selecione o **Serviço de Inscrição de Dispositivos de Rede**, desmarque **Autoridade de Certificação**e, em seguida, conclua o assistente.
-
-      > [!TIP]
-      > Em **Progresso da Instalação**, não selecione **Fechar**. Em alternativa, selecione a ligação para **Configurar os Serviços de Certificados do Active Directory no servidor de destino**. O assistente de **Configuração de AD CS** que utilizará no próximo passo abre-se. Após a Configuração de AD CS abrir, pode fechar o assistente para Adicionar Funções e Funcionalidades.
-
-   2. Quando o NDES é adicionado ao servidor, o assistente também instala o IIS. Confirme que o IIS está configurado da seguinte forma:
-
-       - **Servidor Web** > **Segurança** > **Filtragem de Pedidos**
-
-       - **Servidor Web** > **Desenvolvimento de Aplicações** > **ASP.NET 3.5** 
-
-            A instalação do ASP.NET 3.5 instala o .NET Framework 3.5. Ao instalar o .NET Framework 3.5, instala tanto a funcionalidade **.NET Framework 3.5** principal como a **Ativação HTTP**.
-
-       - **Servidor Web** > **Desenvolvimento de Aplicações** > **ASP.NET 4.5** 
-
-            A instalação do ASP.NET 4.5 instala o .NET Framework 4.5. Ao instalar o .NET Framework 4.5, instale a funcionalidade **.NET Framework 4.5** principal, o **ASP.NET 4.5** e a funcionalidade **Serviços do WCF** > **Ativação HTTP**.
-
-       - **Ferramentas de Gestão** > **Compatibilidade de Gestão do IIS 6** > **Compatibilidade com Metabase do IIS 6**
-
-       - **Ferramentas de Gestão** > **Compatibilidade de Gestão do IIS 6** > **Compatibilidade com WMI do IIS 6**
-
-       - No servidor, adicione a conta do serviço do NDES como membro do grupo local **IIS_IUSR**.
-
-2. Numa linha de comandos elevada, execute o seguinte comando para configurar o SPN da conta do Serviço do NDES:
-
-    `setspn -s http/<DNS name of NDES Server> <Domain name>\<NDES Service account name>`
-
-    Por exemplo, se o seu Servidor do NDES se chamar **Servidor01**, o seu domínio for **Contoso.com**e a conta do serviço for **ServiçoDoNDES**utilize:
-
-    `setspn –s http/Server01.contoso.com contoso\NDESService`
-
-### <a name="step-4---configure-ndes-for-use-with-intune"></a>Passo 4 – Configurar o NDES para ser utilizado com o Intune
-Neste passo, irá:
-
-- Configurar o NDES para ser utilizado com a AC emissora
-- Vincular o certificado de autenticação do servidor (SSL) no IIS
-- Configurar a Filtragem de Pedidos no IIS
-
-1. No Servidor do NDES, abra o assistente de Configuração de AD CS e, em seguida, faça as seguintes atualizações:
-
-    > [!TIP]
-    > Caso tenha clicado na ligação no passo anterior, este assistente já estará aberto. Caso contrário, abra o Gestor de Servidores para aceder à configuração pós-implementação dos Serviços de Certificados do Active Directory.
-
-   - Em **Serviços de Função**, selecione o **Serviço de Inscrição de Dispositivos de Rede**
-   - Em **Conta do Serviço do NDES** introduza a Conta do Serviço do NDES
-   - Em **AC para NDES**, clique em **Selecionar** e, em seguida, clique na AC emissora na qual configurou o modelo de certificado
+   - Em **serviços de função**, selecione o **serviço de registro de dispositivo de rede**.
+   - Em **conta de serviço para NDES**, especifique a conta de serviço de NDES.
+   - Em **AC para NDES**, clique em **selecionar**e selecione a AC emissora em que você configurou o modelo de certificado.
    - Em **Criptografia para NDES** defina o comprimento da chave para corresponder aos requisitos da sua empresa.
    - Em **Confirmação**, selecione **Configurar** para concluir o assistente.
 
-2. Após o assistente ser concluído, atualize a seguinte chave de registo no Servidor do NDES:
+2. Depois que o assistente for concluído, atualize a seguinte chave do registro no computador que hospeda o serviço de NDES:  
+   `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography\MSCEP\`  
 
-    `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography\MSCEP\`
+   Para atualizar essa chave, identifique a **finalidade** dos modelos de certificado (encontrada em sua guia **tratamento de solicitação** ). Em seguida, atualize a entrada de registro correspondente substituindo os dados existentes pelo nome do modelo de certificado (não o nome de exibição do modelo) que você especificou quando [criou o modelo de certificado](#create-the-scep-certificate-template).  
 
-    Para atualizar esta chave, identifique o **Objetivo** do modelo de certificado (que se encontra no respetivo separador **Processamento de Pedidos**). Em seguida, atualize a entrada de registo correspondente ao substituir os dados existentes pelo nome do modelo de certificado (não o nome a apresentar do modelo) que especificou no Passo 2. A seguinte tabela mapeia o objetivo do modelo de certificado para os valores do registo:
+   A seguinte tabela mapeia o objetivo do modelo de certificado para os valores do registo:
+   
+   |Objetivo do modelo de certificado (no separador Manipulação de Pedidos)|Valor do registo a editar|Valor visto na consola de administração do Intune para o perfil SCEP|
+   |------------------------|-------------------------|---|
+   |Assinatura               |SignatureTemplate        |Assinatura Digital |
+   |Encriptação              |EncryptionTemplate       |Cifragem de Chaves  |
+   |Assinatura e encriptação|GeneralPurposeTemplate   |Cifragem de Chaves<br/>Assinatura Digital |  
 
-    |Objetivo do modelo de certificado (no separador Manipulação de Pedidos)|Valor do registo a editar|Valor visto na consola de administração do Intune para o perfil SCEP|
-    |---|---|---|
-    |Assinatura|SignatureTemplate|Assinatura Digital|
-    |Encriptação|EncryptionTemplate|Cifragem de Chaves|
-    |Assinatura e encriptação|GeneralPurposeTemplate|Cifragem de Chaves<br/>Assinatura Digital|
+   Por exemplo, se o Objetivo do seu modelo de certificado for **Encriptação**, edite o valor **EncryptionTemplate** para que tenha o mesmo nome do modelo de certificado.  
 
-    Por exemplo, se o Objetivo do seu modelo de certificado for **Encriptação**, edite o valor **EncryptionTemplate** para que tenha o mesmo nome do modelo de certificado.
+3. Configure a filtragem de solicitações do IIS para adicionar suporte no IIS para as URLs longas (consultas) que o serviço de NDES recebe.
+   1. No Gerenciador do IIS, selecione a**configuração do recurso Editar** **filtragem** > de solicitação de **site** > padrão para abrir a página **Editar configurações de filtragem de solicitações** .  
 
-3. O servidor do NDES recebe URLs extensos (consultas) que exigem a adição de duas entradas de registo:
+   2. Configure as seguintes definições:  
+      - **Tamanho máximo da URL (bytes)** = 65534  
+      - **Cadeia de caracteres de consulta máxima (bytes)** = 65534  
+   3. Selecione **OK** para salvar essa configuração e fechar o Gerenciador do IIS.  
+   4. Valide essa configuração exibindo a seguinte chave do registro para confirmar se ela tem os valores indicados:  
 
+      `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\HTTP\Parameters`    
 
-   |                        Location                        |      Value      | Type  |      Data       |
-   |--------------------------------------------------------|-----------------|-------|-----------------|
-   | HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters | MaxFieldLength  | DWORD | 65534 (decimal) |
-   | HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters | MaxRequestBytes | DWORD | 65534 (decimal) |
+      Os seguintes valores são definidos como entradas DWORD:  
+      - Nome: **MaxFieldLength**, com um valor decimal de **65534**  
+      - Nome: **MaxRequestBytes**, com um valor decimal de **65534**  
+4. Reinicie o servidor que hospeda o serviço de NDES. Não use **iisreset**; iireset não conclui as alterações necessárias.  
 
-4. No Gestor de IIS, selecione **Site Predefinido** > **Filtragem de Pedidos** > **Editar Definição de Funcionalidade**. Altere o **Comprimento máximo do URL** e **Cadeia máxima de consulta** para *65534*, conforme apresentado:
+5. Navegue até *http://* Server_FQDN */certsrv/MSCEP/MSCEP.dll*. Você deverá ver uma página de NDES semelhante à imagem a seguir:  
 
-    ![Comprimento máximo de URL e de consulta no IIS](./media/SCEP_IIS_max_URL.png)
+   ![Testar NDES](./media/certificates-scep-configure/scep-ndes-url.png)
+  
+   Se o endereço da Web retornar um **serviço 503 indisponível**, verifique o Visualizador de eventos dos computadores. Esse erro geralmente ocorre quando o pool de aplicativos é interrompido devido a uma [permissão ausente para a conta de serviço de NDES](#accounts).  
+  
+### <a name="install-and-bind-certificates-on-the-server-that-hosts-ndes"></a>Instalar e associar certificados no servidor que hospeda NDES  
+> [!TIP]  
+> No procedimento a seguir, você pode usar um único certificado para *autenticação de servidor* e *autenticação de cliente* quando esse certificado é configurado para atender aos critérios de ambos os usos. Os critérios para cada uso são descritos nas etapas 1 e 3 do procedimento a seguir.  
 
-5. Reinicie o servidor. Não utilize **iisreset** porque as alterações não ficarão finalizadas.
-6. Navegue para `http://*FQDN*/certsrv/mscep/mscep.dll`. Deverá ver uma página do NDES semelhante à seguinte:
+1. Solicite um certificado de **autenticação de servidor** da autoridade de certificação interna ou pública e, em seguida, instale o certificado no servidor.  
 
-    ![Testar NDES](./media/SCEP_NDES_URL.png)
+   Se o servidor usar um nome interno e externo para um único endereço de rede, o certificado de autenticação do servidor deverá ter:  
 
-    Se obtiver **503 Serviço indisponível**, verifique o visualizador de eventos. É provável que o conjunto aplicacional esteja parado devido a um direito em falta para o utilizador do NDES. Esses direitos estão descritos no Passo 1.
+   - Um **nome de entidade** com um nome de servidor público externo.
+   - Um **nome alternativo da entidade** que inclui o nome do servidor interno.  
 
-#### <a name="install-and-bind-certificates-on-the-ndes-server"></a>Instalar e vincular certificados no Servidor do NDES
+2. Associar o certificado de autenticação de servidor no IIS:  
+  
+   1. Depois de instalar o certificado de autenticação de servidor, abra o **Gerenciador do IIS**e selecione o **site da Web padrão**. No painel **Ações**, selecione **Enlaces**.  
+   1. Selecione **Adicionar**, defina o **Tipo** para **https** e, em seguida, confirme que a porta é **443**.  
+   1. Para o **certificado SSL**, especifique o certificado de autenticação de servidor.  
+ 
+3. No seu Servidor do NDES, peça e instale um certificado de **autenticação de cliente** à sua AC interna ou a uma autoridade de certificado pública.  
 
-1. No seu Servidor do NDES, peça e instale um certificado de **autenticação de servidor** à sua AC interna ou pública. Em seguida, deve vincular este certificado SSL no IIS.
+   O certificado de autenticação de cliente tem de ter as seguintes propriedades:  
+   - **Uso avançado de chave**: Esse valor deve incluir a **autenticação do cliente**.  
+   - **Nome da entidade**: O valor deve ser igual ao nome DNS do servidor em que você está instalando o certificado (o servidor de NDES).  
 
-    > [!TIP]
-    > Após vincular o certificado SSL no IIS, instale um certificado de autenticação de cliente. Este certificado pode ser emitido por qualquer AC que seja considerada fidedigna pelo Servidor do NDES. É possível utilizar o mesmo certificado se este tiver o conjunto de utilizações de chave de autenticação de cliente e servidor (**Utilizações de Chave Avançadas**). Reveja os seguintes passos para obter informações sobre estes certificados de autenticação.
+4. O servidor que hospeda o serviço de NDES agora está pronto para dar suporte ao conector de certificado do Intune.  
 
-   1. Depois de obter o certificado de autenticação de servidor, abra o **Gestor de IIS** e selecione o **Site Predefinido**. No painel **Ações**, selecione **Enlaces**.
+## <a name="install-the-intune-certificate-connector"></a>Instalar o conector de certificado do Intune  
+O Microsoft Intune Certificate Connector é instalado no servidor que executa seu serviço de NDES. Não há suporte para usar o NDES ou o Intune Certificate Connector no mesmo servidor que a CA (autoridade de certificação) emissora.  
 
-   2. Selecione **Adicionar**, defina o **Tipo** para **https** e, em seguida, confirme que a porta é **443**. O Intune autónomo só suporta a porta 443.
+Para instalar o conector de certificado:  
+1. Entre no portal do [Intune](https://aka.ms/intuneportal) com uma conta que tenha direitos para o Intune.  
 
-   3. Para o **certificado SSL**, introduza o certificado de autenticação de servidor.
+2. Selecione **Configuração do dispositivo** > **Autoridade de Certificação** > **Adicionar**.  
 
-      > [!NOTE]
-      > Se o servidor do NDES utilizar um nome externo e interno para um único endereço de rede, o certificado de autenticação de servidor terá de ter:
-      > - Um **Nome do Requerente** com um nome de servidor público externo
-      > - Um **Nome Alternativo do Requerente** que inclua o nome de servidor interno
-
-2. No seu Servidor do NDES, peça e instale um certificado de **autenticação de cliente** à sua AC interna ou a uma autoridade de certificado pública. Pode ser o mesmo certificado que o certificado de autenticação de servidor caso esse certificado contenha ambas funcionalidades.
-
-    O certificado de autenticação de cliente tem de ter as seguintes propriedades:
-
-    - **Uso avançado de chave**: Esse valor deve incluir a **autenticação do cliente**
-
-    - **Nome da entidade**: O valor deve ser igual ao nome DNS do servidor em que você está instalando o certificado (o servidor de NDES)
-
-#### <a name="configure-iis-request-filtering"></a>Configurar a filtragem de pedidos no IIS
-
-1. No Servidor do NDES, abra o **Gestor de IIS**, selecione o **Site Predefinido** no painel **Ligações** e, em seguida, abra a **Filtragem de Pedidos**.
-
-2. Selecione **Editar Definições de Funcionalidade** e, em seguida, defina os seguintes valores:
-
-    - **cadeia de consulta (Bytes)**  = **65534**
-    - **Comprimento máximo do URL (Bytes)**  = **65534**
-
-3. Reveja a seguinte chave de registo:
-
-    `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\HTTP\Parameters`
-
-    Confirme que os seguintes valores estão definidos como entradas DWORD:
-
-    - Nome: **MaxFieldLength**, com um valor decimal de **65534**
-    - Nome: **MaxRequestBytes**, com um valor decimal de **65534**
-
-4. Reinicie o servidor do NDES. O servidor está agora pronto para suportar o Certificate Connector.
-
-### <a name="step-5---enable-install-and-configure-the-intune-certificate-connector"></a>Passo 5 – Ativar, instalar e configurar o Intune Certificate Connector
-Neste passo, irá:
-
-- Ativar o suporte para o NDES no Intune.
-- Transferir, instalar e configurar o Certificate Connector no servidor que aloja a função Serviço de Inscrição de Dispositivos de Rede (NDES), um servidor no seu ambiente. Para aumentar a dimensão da implementação do NDES na sua organização, pode instalar múltiplos servidores do NDES com um Microsoft Intune Certificate Connector em cada servidor do NDES.
-
-#### <a name="download-install-and-configure-the-certificate-connector"></a>Transferir, instalar e configurar o Certificate Connector
-
-> [!IMPORTANT] 
-> O Microsoft Intune Certificate Connector **tem** de ser instalado num servidor Windows separado. Não pode ser instalado na Autoridade de Certificação (AC) emissora. Também **tem** de estar instalado no mesmo servidor que a função Serviço de Inscrição de Dispositivos de Rede (NDES).
-
-1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selecione **configuração** > do dispositivo**conectores** > de certificação**Adicionar**.
-3. Baixe e salve o conector para o arquivo SCEP. Salve-o em um local acessível do servidor de NDES no qual você vai instalar o conector.
+3. Baixe e salve o conector para o arquivo SCEP. Guarde-o numa localização acessível a partir do servidor onde vai instalar o conector.
 
    ![ConnectorDownload](./media/certificates-scep-configure/download-certificates-connector.png)
 
+4. Quando a transferência for concluída, aceda ao servidor que aloja a função Serviço de Inscrição de Dispositivos de Rede (NDES). Em seguida:  
 
-4. Após a conclusão do download, vá para o servidor NDES que hospeda seu NDES (serviço de registro de dispositivo de rede). Em seguida:
+   1. Confirme se o .NET 4,5 Framework está instalado, pois ele é exigido pelo conector de certificado do Intune. A estrutura do .NET 4,5 é incluída automaticamente com o Windows Server 2012 R2 e versões mais recentes.  
+   2. Execute o instalador **NDESConnectorSetup.exe**. O instalador também instala o módulo de política para NDES e o serviço Web do CRP (ponto de registro de certificado) do IIS. O serviço Web do CRP, *CertificateRegistrationSvc*, é executado como um aplicativo no IIS.  
 
-    1. Certifique-se de que o .NET 4.5 Framework está instalado, pois o Certificate Connector do NDES precisa dele. O .NET 4.5 Framework vem incluído automaticamente com o Windows Server 2012 R2 e versões mais recentes.
-    2. Use uma conta com direitos administrativos para o servidor para executar o instalador (**NDESConnectorSetup. exe**). Este instalador também instala o módulo de políticas para NDES e o Serviço Web CRP. O Serviço Web CRP, CertificateRegistrationSvc, é executado como uma aplicação no IIS.
+      - Ao instalar o NDES para o Intune autónomo, o serviço CRP é instalado automaticamente com o Certificate Connector. 
+      - Ao usar o Intune com Configuration Manager, você instala o ponto de registro de certificado como uma função de sistema de site do Configuration Manager.  
+5. Quando for solicitado o certificado do cliente para o conector de certificado, escolha **selecionar**e selecione o certificado de **autenticação de cliente** que você instalou em seu servidor NDES durante a etapa #3 do procedimento [instalar e associar certificados no servidor que hospeda o NDES](#install-and-bind-certificates-on-the-server-that-hosts-ndes) anteriormente neste artigo.  
 
-    > [!NOTE]
-    > Ao instalar o NDES para o Intune autónomo, o serviço CRP é instalado automaticamente com o Certificate Connector. Quando utiliza o Intune com o Configuration Manager, instala o Ponto de Registo de Certificados como uma função do sistema de sites à parte.
+   Depois de selecionar o certificado de autenticação de cliente, você será devolvido ao **certificado do cliente para Microsoft Intune Certificate Connector** superfície. Embora o certificado selecionado não seja mostrado, selecione **Avançar** para exibir as propriedades desse certificado. Selecione **Seguinte** e, em seguida, **Instalar**.
 
-5. Quando lhe for pedido o certificado de cliente do Certificate Connector, selecione **Selecionar** e o certificado de **autenticação de cliente** que instalou no Servidor NDES no Passo 4.
+6. Após o assistente ser concluído, mas antes de o fechar, selecione a opção para **Iniciar a IU do Certificate Connector**.  
 
-    Após selecionar o certificado de autenticação de cliente, é encaminhado para a superfície do **Certificado de Cliente do Microsoft Intune Certificate Connector** . Embora o certificado que selecionou não seja apresentado, selecione **Seguinte** para ver as propriedades do certificado. Selecione **Seguinte** e, em seguida, **Instalar**.
+   Se você fechar o assistente antes de iniciar a interface do usuário do conector de certificado, poderá reabri-lo executando o seguinte comando: *< install_Path > \NDESConnectorUI\NDESConnectorUI.exe*
 
-    > [!IMPORTANT]
-    > A Configuração de Segurança Avançada do Internet Explorer [tem de estar desativada no servidor do NDES](https://technet.microsoft.com/library/cc775800(v=WS.10).aspx) que aloja o Intune Certificate Connector.
+7. Na IU do **Certificate Connector** :  
+   1. Selecione **Iniciar Sessão** e introduza as suas credenciais de administrador do serviço Intune ou as credenciais de administrador inquilino com a permissão de administração global.  
+   2. A conta usada deve ser atribuída a uma licença válida do Intune.  
+   3. Depois de entrar, o conector de certificado do Intune baixa um certificado do Intune. Este certificado é utilizado para efeitos de autenticação entre o conector e o Intune. Se a conta usada não tiver uma licença do Intune, o conector (NDESConnectorUI. exe) falhará ao obter o certificado do Intune.  
 
-6. Após o assistente ser concluído, mas antes de o fechar, selecione a opção para **Iniciar a IU do Certificate Connector**.
+      Se a sua organização utilizar um servidor proxy e o proxy for necessário para o servidor do NDES aceder à Internet, selecione **Utilizar servidor proxy**. Em seguida, introduza o nome do servidor proxy, a porta e as credenciais de conta para ligar.  
 
-    > [!TIP]
-    > Se fechar o assistente antes de iniciar a IU do Certificate Connector, pode abri-lo novamente ao executar o seguinte comando:
-    >
-    > <install_Path>\NDESConnectorUI\NDESConnectorUI.exe
+    4. Selecione o separador **Avançadas** e, em seguida, introduza as credenciais para uma conta que tenha permissão para **Emitir e Gerir Certificados** na sua Autoridade de Certificados emissora. **Aplique** as suas alterações.  
 
-7. Na IU do **Certificate Connector** :
-
-    Selecione **Iniciar Sessão** e introduza as suas credenciais de administrador do serviço Intune ou as credenciais de administrador inquilino com a permissão de administração global. Depois de iniciar sessão, o Intune Certificate Connector transfere um certificado a partir do Intune. Este certificado é utilizado para efeitos de autenticação entre o conector e o Intune.
-
-    > [!IMPORTANT]
-    > A conta de utilizador tem de ser atribuída a uma licença válida do Intune. Se a conta de utilizador não tiver uma licença válida do Intune, o ficheiro NDESConnectorUI.exe irá falhar.
-
-    Se a sua organização utilizar um servidor proxy e o proxy for necessário para o servidor do NDES aceder à Internet, selecione **Utilizar servidor proxy**. Em seguida, introduza o nome do servidor proxy, a porta e as credenciais de conta para ligar.
-
-    Selecione o separador **Avançadas** e, em seguida, introduza as credenciais para uma conta que tenha permissão para **Emitir e Gerir Certificados** na sua Autoridade de Certificados emissora. **Aplique** as suas alterações. Se você tiver delegado essa permissão à sua conta de serviço de NDES ao [configurar sua autoridade de certificação](#configure-the-certification-authority), especifique essa conta aqui. 
-
-    Agora, pode fechar a IU do Certificate Connector.
+    5. Agora, pode fechar a IU do Certificate Connector.  
 
 8. Abra uma linha de comandos, introduza **services.msc** e, em seguida, prima **Enter**. Clique com o botão direito do rato em **Intune Connector Service** > **Reiniciar**.
 
-Para se certificar de que o serviço está em execução, abra um browser e introduza o seguinte URL. O mesmo deverá devolver um erro **403**:
 
-`http://<FQDN_of_your_NDES_server>/certsrv/mscep/mscep.dll`
+Para se certificar de que o serviço está em execução, abra um browser e introduza o seguinte URL. Ele deve retornar um erro **403** :`http://<FQDN_of_your_NDES_server>/certsrv/mscep/mscep.dll`  
 
-> [!NOTE]
-> É incluído suporte para o TLS 1.2 com o Certificate Connector do NDES. Assim, se o servidor com o Certificate Connector do NDES instalado suportar o TLS 1.2, será utilizado o TLS 1.2. Se o servidor não suportar o TLS 1.2, será utilizado o TLS 1.1. Atualmente, é utilizado o TLS 1.1 para a autenticação entre os dispositivos e o servidor.
-
-## <a name="create-a-scep-certificate-profile"></a>Criar um perfil de certificado SCEP
-
-1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selecione **Configuração do dispositivo** > **Perfis** > **Criar perfil**.
-3. Introduza um **Nome** e uma **Descrição** para o perfil de certificado SCEP.
-4. Na lista pendente **Plataforma**, selecione a plataforma do dispositivo para este certificado SCEP. Atualmente, pode selecionar uma das seguintes plataformas para definições de restrição de dispositivos:
-   - **Android**
-   - **Android Enterprise**
-   - **iOS**
-   - **macOS**
-   - **Windows Phone 8.1**
-   - **Windows 8.1 e posterior**
-   - **Windows 10 e posterior**
-5. Na lista pendente **Tipo de perfil**, selecione **Certificado SCEP**.
-6. Introduza as seguintes definições:
-
-   - **Tipo de certificado**: Escolha **usuário** para certificados de usuário. Um tipo de certificado de **usuário** pode conter os atributos de usuário e de dispositivo no assunto e na San do certificado.  Escolha o **dispositivo** para cenários como dispositivos sem usuário, como quiosques ou para dispositivos Windows, colocando o certificado no repositório de certificados do computador local. Certificados de **dispositivo** só podem conter atributos de dispositivo no assunto e San do certificado.  Os certificados de **Dispositivo** estão disponíveis para as seguintes plataformas:  
-     - Android Enterprise – perfil de trabalho
-     - iOS
-     - macOS
-     - Windows 8.1 e posterior
-     - Windows 10 e posterior
-
-
-   - **Formato do nome da entidade**: Selecione como o Intune cria automaticamente o nome da entidade na solicitação de certificado. As opções variam se selecionar o tipo de certificado **Utilizador** ou **Dispositivo**.  
-
-     > [!NOTE]  
-     > Há um [problema conhecido](#avoid-certificate-signing-requests-with-escaped-special-characters) para usar o SCEP para obter certificados quando o nome da entidade na CSR (solicitação de assinatura de certificado) resultante inclui um dos seguintes caracteres como um caractere de escape (continuado por uma \\barra invertida):
-     > - \+
-     > - ;
-     > - ,
-     > - =
-
-        **Tipo de certificado Utilizador**  
-
-        Pode incluir o endereço de e-mail do utilizador no nome do requerente. Escolha entre:
-
-        - **Não configurado**
-        - **Nome comum**
-        - **Nome comum, incluindo o e-mail**
-        - **Nome comum como e-mail**
-        - **Identidade Internacional do Equipamento Móvel (IMEI)**
-        - **Número de série**
-        - **Personalizado**: Quando você seleciona essa opção, uma caixa de texto **personalizada** também é mostrada. Utilize este campo para introduzir um formato de nome de requerente personalizado, incluindo variáveis. O formato personalizado dá suporte a duas variáveis: **CN (nome comum)** e **email (E)** . O **Nome Comum (CN)** pode ser definido para qualquer uma das seguintes variáveis:
-
-            - **CN={{UserName}}** : O nome UPN do usuário, comojanedoe@contoso.com
-            - **CN={{AAD_Device_ID}}** : Uma ID atribuída quando você registra um dispositivo no Azure Active Directory (AD). Este ID é normalmente utilizado na autenticação com o Azure AD.
-            - **CN={{SERIALNUMBER}}** : O número de série exclusivo (SN) normalmente usado pelo fabricante para identificar um dispositivo
-            - **CN={{IMEINumber}}** : O número exclusivo IMEI (identidade de equipamentos móveis internacional) usado para identificar um telefone celular
-            - **CN = {{OnPrem_Distinguished_Name}}** : Uma sequência de nomes distintos relativos separados por vírgula, como`CN=Jane Doe,OU=UserAccounts,DC=corp,DC=contoso,DC=com`
-
-                Para utilizar a variável `{{OnPrem_Distinguished_Name}}`, não se esqueça de sincronizar o atributo de utilizador `onpremisesdistingishedname` com o [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) com o seu Azure AD.
-
-            - **CN={{onPremisesSamAccountName}}** : Os administradores podem sincronizar o atributo samAccountName de Active Directory ao Azure AD usando o Azure AD Connect em um `onPremisesSamAccountName`atributo chamado. O Intune pode substituir essa variável como parte de um pedido de emissão de certificado no requerente de um certificado SCEP.  O atributo samAccountName é o nome de início de sessão de utilizador utilizado para suportar clientes e servidores de uma versão anterior do Windows (anterior ao Windows 2000). O formato do nome de início de sessão do utilizador é: `DomainName\testUser` ou apenas `testUser`.
-
-                Para utilizar a variável `{{onPremisesSamAccountName}}`, não se esqueça de sincronizar o atributo de utilizador `onPremisesSamAccountName` com o [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) com o seu Azure AD.
-
-            Através de uma combinação de uma ou várias destas variáveis e cadeias estáticas, pode criar um formato de nome de requerente personalizado, como o seguinte:  
-
-            **CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US**
-
-            Neste exemplo, você criou um formato de nome de entidade que, além das variáveis CN e e, usa cadeias de caracteres para valores de unidade organizacional, organização, local, estado e país/região. O artigo [função CertStrToName](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) descreve esta função e as cadeias suportadas da mesma.
-
-        **Tipo de certificado Dispositivo**  
-
-        Ao utilizar o tipo de certificado **Dispositivo**, também pode utilizar as seguintes variáveis de certificado de dispositivo para o valor:  
-
-        ```
-        "{{AAD_Device_ID}}",
-        "{{Device_Serial}}",
-        "{{Device_IMEI}}",
-        "{{SerialNumber}}",
-        "{{IMEINumber}}",
-        "{{AzureADDeviceId}}",
-        "{{WiFiMacAddress}}",
-        "{{IMEI}}",
-        "{{DeviceName}}",
-        "{{FullyQualifiedDomainName}}",
-        "{{MEID}}",
-        ```
-
-        Estas variáveis podem ser adicionadas com texto estático numa caixa de texto de valor personalizado. Por exemplo, o nome comum pode ser adicionado como `CN = {{DeviceName}}text`.
-
-        > [!IMPORTANT]
-        >  - No texto estático do requerente, as chavetas **{ }** que não incluírem uma variável resultarão num erro. 
-        >  - Ao utilizar uma variável de certificado de dispositivo, coloque a variável entre chavetas **{ }** .
-        >  - `{{FullyQualifiedDomainName}}` só funciona em dispositivos com Windows e dispositivos associados a um domínio. 
-        >  - Ao utilizar as propriedades do dispositivo, tais como o IMEI, o Número de Série e o Nome de Domínio Completamente Qualificado, no requerente ou no SAN de um certificado de dispositivo, tenha em atenção que estas propriedades podem ser falsificadas por uma pessoa que tenha acesso ao dispositivo.
-        >  - O perfil não será instalado no dispositivo se as variáveis do dispositivo especificadas não forem suportadas. Por exemplo, se {{IMEI}} for utilizado no nome do requerente do perfil SCEP atribuído a um dispositivo que não tenha um número IMEI, a instalação do perfil irá falhar. 
-
-
-   - **Nome alternativo da entidade**: Insira como o Intune cria automaticamente os valores para o SAN (nome alternativo da entidade) na solicitação de certificado. As opções variam se selecionar o tipo de certificado **Utilizador** ou **Dispositivo**. 
-
-        **Tipo de certificado Utilizador**  
-
-        Estão disponíveis os seguintes atributos:
-
-        - Endereço de e-mail
-        - Nome principal de utilizador (UPN)
-
-            Por exemplo, se selecionar um tipo de certificado de utilizador, pode incluir o nome principal de utilizador (UPN) no nome alternativo do requerente. Se um certificado de cliente for utilizado para autenticar um Servidor de Políticas de Rede, defina o nome alternativo do requerente como UPN. 
-
-        **Tipo de certificado Dispositivo**  
-
-        Uma caixa de texto em formato de tabela que pode personalizar. Estão disponíveis os seguintes atributos:
-
-        - DNS
-
-        Com o tipo de certificado **Dispositivo**, pode utilizar as seguintes variáveis de certificado de dispositivo para o valor:  
-
-        ```
-        "{{AAD_Device_ID}}",
-        "{{Device_Serial}}",
-        "{{Device_IMEI}}",
-        "{{SerialNumber}}",
-        "{{IMEINumber}}",
-        "{{AzureADDeviceId}}",
-        "{{WiFiMacAddress}}",
-        "{{IMEI}}",
-        "{{DeviceName}}",
-        "{{FullyQualifiedDomainName}}",
-        "{{MEID}}",
-        ```
-
-        Estas variáveis podem ser adicionadas com texto estático na caixa de texto de valor personalizado. Por exemplo, o atributo de DNS pode ser adicionado como `DNS name = {{AzureADDeviceId}}.domain.com`.
-
-        > [!IMPORTANT]
-        >  - No texto estático do SAN, as chavetas **{ }** , as barras verticais **|** e os pontos e vírgulas **;** não funcionam. 
-        >  - Ao utilizar uma variável de certificado de dispositivo, coloque a variável entre chavetas **{ }** .
-        >  - `{{FullyQualifiedDomainName}}` só funciona em dispositivos com Windows e dispositivos associados a um domínio. 
-        >  - Ao utilizar as propriedades do dispositivo, tais como o IMEI, o Número de Série e o Nome de Domínio Completamente Qualificado, no requerente ou no SAN de um certificado de dispositivo, tenha em atenção que estas propriedades podem ser falsificadas por uma pessoa que tenha acesso ao dispositivo.
-        >  - O perfil não será instalado no dispositivo se as variáveis do dispositivo especificadas não forem suportadas. Por exemplo, se {{IMEI}} for utilizado no nome do requerente do perfil SCEP atribuído a um dispositivo que não tenha um número IMEI, a instalação do perfil irá falhar.  
-
-   - **Período de validade do certificado**: Se você executou `certutil - setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE` o comando na AC emissora, que permite um período de validade personalizado, você pode inserir a quantidade de tempo restante antes que o certificado expire.<br>Pode introduzir um valor inferior ao período de validade do modelo de certificado, mas não superior. Por exemplo, se o período de validade do certificado no modelo de certificado for dois anos, pode introduzir um valor de um ano, mas não um valor de cinco anos. O valor deve também ser inferior ao período de validade restante do certificado da AC emissora. 
-   - **Provedor de armazenamento de chaves (KSP)** (Windows Phone 8,1, Windows 8.1, Windows 10): Insira onde a chave para o certificado é armazenada. Escolha um dos seguintes valores:
-     - **Inscrever em KSP de Trusted Platform Module (TPM) se estiver presente, caso contrário, KSP de Software**
-     - **Inscrever em KSP de Trusted Platform Module (TPM), caso contrário, ocorre uma falha**
-     - **Inscrever em Passport, caso contrário, ocorre uma falha (Windows 10 e posterior)**
-     - **Inscrever em KSP de Software**
-
-   - **Uso da chave**: Insira as opções de uso de chave para o certificado. As opções são:
-     - **Codificação de chave**: Permitir troca de chaves somente quando a chave for criptografada
-     - **Assinatura digital**: Permitir troca de chaves somente quando uma assinatura digital ajudar a proteger a chave
-   - **Tamanho da chave (bits)** : Selecione o número de bits contidos na chave
-   - **Algoritmo de hash** (Android, Windows Phone 8,1, Windows 8.1, Windows 10): Selecione um dos tipos de algoritmo hash disponíveis para utilizar com este certificado. Selecione o maior nível de segurança que os dispositivos de ligação suportam.
-   - **Certificado raiz**: Escolha um [perfil de certificado raiz confiável](certficates-pfx-configure.md#create-a-trusted-certificate-profile) que você criou anteriormente e atribuído ao usuário e/ou dispositivo. Este certificado da AC tem de ser o certificado de raiz da AC que emite o certificado que está a configurar neste perfil de certificado. Certifique-se de atribuir esse perfil de certificado raiz confiável ao mesmo grupo atribuído no perfil de certificado SCEP.
-   - **Uso estendido de chave**: **Adicione** valores para a finalidade desejada do certificado. Na maioria dos casos, o certificado exige a **Autenticação de Cliente** para o utilizador ou dispositivo poder ser autenticado num servidor. Contudo, pode adicionar mais utilizações de chave conforme necessário.
-   - **Definições de Inscrição**
-     - **Limite de renovação (%)** : Insira a porcentagem do tempo de vida do certificado que permanece antes da renovação das solicitações de dispositivo do certificado.
-     - **URLs do servidor SCEP**: Insira uma ou mais URLs para os servidores NDES que emitem certificados via SCEP. Por exemplo, digite algo semelhante a `https://ndes.contoso.com/certsrv/mscep/mscep.dll`.
-     - Selecione **OK** e **crie** o seu perfil.
-
-O perfil será criado e apresentado no painel Lista de perfis.
-
-### <a name="avoid-certificate-signing-requests-with-escaped-special-characters"></a>Evitar solicitações de assinatura de certificado com caracteres especiais de escape
-Há um problema conhecido para solicitações de certificado SCEP que incluem um nome de entidade (CN) com um ou mais dos seguintes caracteres especiais como um caractere de escape. Os nomes de entidades que incluem um dos caracteres especiais como um caractere de escape resultam em um CSR com um nome de assunto incorreto que, por sua vez, resulta na falha na validação do desafio do SCEP do Intune e nenhum certificado emitido.  
-
-Os caracteres especiais são:
-- \+
-- ,
-- ;
-- =
-
-Quando o nome da entidade incluir um dos caracteres especiais, use uma das opções a seguir para contornar essa limitação:  
-- Encapsula o valor CN que contém o caractere especial com aspas.  
-- Remova o caractere especial do valor CN.  
-
-**Por exemplo**, você tem um nome de entidade que aparece como *usuário de teste (TestCompany, LLC)* .  Um CSR que inclui um CN que tem a vírgula entre *TestCompany* e *LLC* apresenta um problema.  O problema pode ser evitado colocando-se aspas em todo o CN ou removendo a vírgula entre *TestCompany* e *LLC*:
-- **Adicionar aspas**: *CN =* "usuário de teste (TestCompany, LLC)", ou = accounts, DC = Corp, DC = contoso, DC = com *
-- **Remova a vírgula**: *CN = test User (TestCompany LLC), ou = accounts, DC = Corp, DC = contoso, DC = com*
-
- No entanto, as tentativas de escapar a vírgula usando um caractere de barra invertida falharão com um erro nos logs do CRP:  
-- **Vírgula com escape**: *CN = usuário de teste (\\TestCompany, LLC), ou = accounts, DC = Corp, DC = contoso, DC = com*
-
-O erro é semelhante ao seguinte erro: 
-
-```
-Subject Name in CSR CN="Test User (TESTCOMPANY\, LLC),OU=UserAccounts,DC=corp,DC=contoso,DC=com" and challenge CN=Test User (TESTCOMPANY\, LLC),OU=UserAccounts,DC=corp,DC=contoso,DC=com do not match  
-
-  Exception: System.ArgumentException: Subject Name in CSR and challenge do not match
-
-   at Microsoft.ConfigurationManager.CertRegPoint.ChallengeValidation.ValidationPhase3(PKCSDecodedObject pkcsObj, CertEnrollChallenge challenge, String templateName, Int32 skipSANCheck)
-
-Exception:    at Microsoft.ConfigurationManager.CertRegPoint.ChallengeValidation.ValidationPhase3(PKCSDecodedObject pkcsObj, CertEnrollChallenge challenge, String templateName, Int32 skipSANCheck)
-
-   at Microsoft.ConfigurationManager.CertRegPoint.Controllers.CertificateController.VerifyRequest(VerifyChallengeParams value
-```
-
-
-
-## <a name="assign-the-certificate-profile"></a>Atribuir o perfil de certificado
-
-Antes de atribuir perfis de certificado a grupos, considere o seguinte:
-
-- Ao atribuir perfis de certificado a grupos, o ficheiro de certificado do perfil de certificado da AC fidedigna é instalado no dispositivo. O dispositivo utiliza o perfil de certificado de SCEP para criar um pedido de certificado por parte do dispositivo.
-- Os perfis de certificado são instalados apenas em dispositivos que executam a plataforma que utiliza quando criou o perfil.
-- Pode atribuir perfis de certificado a coleções de utilizadores ou de dispositivos.
-- Para publicar um certificado num dispositivo rapidamente após a inscrição do mesmo, atribua o perfil de certificado a um grupo de utilizadores, em vez de atribuir a um grupo de dispositivos. Se atribuir a um grupo de dispositivos, será preciso um registo do dispositivo completo antes de o dispositivo receber políticas.
-- Apesar de atribuir cada perfil separadamente, também terá de atribuir a AC de Raiz Confiável e o perfil SCEP ou PKCS. Caso contrário, a política de certificados SCEP ou PKCS falha.
-
-    > [!NOTE]
-    > Em dispositivos iOS, quando um perfil de certificado SCEP é associado a um perfil adicional, como um perfil de Wi-Fi ou VPN, o dispositivo recebe um certificado para cada um desses perfis adicionais. Isso resulta no dispositivo iOS com vários certificados entregues pela solicitação de certificado SCEP.  
-
-- Se você usar o cogerenciamento para o Intune e o Configuration Manager, no Configuration Manager s, preencha[o controle deslizante de carga de trabalho](https://docs.microsoft.com/sccm/comanage/how-to-switch-workloads) para a *política de acesso ao recurso* para o **Intune** ou o **Intune piloto**. Essa configuração permite que os clientes do Windows 10 iniciem o processo de solicitação do certificado.  
-
-Para obter informações sobre como atribuir perfis, veja [Atribuir perfis de dispositivos](device-profile-assign.md).
-
-## <a name="intune-connector-setup-verification-and-troubleshooting"></a>Verificação e resolução de problemas de configuração do Intune Connector
-
-Para resolver problemas e verificar a configuração do Intune Connector, veja [Certificate Authority script samples](https://aka.ms/intuneconnectorverificationscript) (Exemplos de script da Autoridade de Certificação)
-
-## <a name="intune-connector-events-and-diagnostic-codes"></a>Códigos de diagnóstico e eventos do Intune Connector
-
-A partir da versão 6.1806.X.X, o Serviço do Intune Connector regista eventos no **Visualizador de Eventos** (**Registos de Aplicações e Serviços** > **Microsoft Intune Connector**). Utilize estes eventos para o ajudar a resolver potenciais problemas na configuração do Intune Connector. Estes eventos registam sucessos e falhas de uma operação e também contêm códigos de diagnóstico com mensagens que ajudam o administrador de TI a resolver problemas.
-
-### <a name="event-ids-and-descriptions"></a>IDs e descrições do evento
-
-> [!NOTE]
-> Para obter detalhes sobre os Códigos de Diagnóstico Relacionados para cada evento, utilize a tabela **Códigos de diagnóstico** (neste artigo).
-
-| ID do Evento      | Nome do Evento    | Descrição do Evento | Códigos de Diagnóstico Relacionados |
-| ------------- | ------------- | -------------     | -------------            |
-| 10010 | StartedConnectorService  | Serviço de conector iniciado | 0x00000000, 0x0FFFFFFF |
-| 10020 | StoppedConnectorService  | Serviço de conector parado | 0x00000000, 0x0FFFFFFF |
-| 10100 | CertificateRenewal_Success  | Certificado de inscrição do conector renovado com êxito | 0x00000000, 0x0FFFFFFF |
-| 10102 | CertificateRenewal_Failure  | Não foi possível renovar o certificado de inscrição do conector. Reinstale o conector. | 0x00000000, 0x00000405, 0x0FFFFFFF |
-| 10302 | RetrieveCertificate_Error  | Falha ao obter o certificado de inscrição do conector do registo. Reveja os detalhes do evento para o thumbprint do certificado relacionado com este evento. | 0x00000000, 0x00000404, 0x0FFFFFFF |
-| 10301 | RetrieveCertificate_Warning  | Verifique as informações de diagnóstico nos detalhes do evento. | 0x00000000, 0x00000403, 0x0FFFFFFF |
-| 20100 | PkcsCertIssue_Success  | Certificado PKCS emitido com êxito. Reveja os detalhes do evento para obter o ID do dispositivo, o ID do utilizador, o nome CA, o nome do modelo de certificado e o thumbprint do certificado relacionados com este evento. | 0x00000000, 0x0FFFFFFF |
-| 20102 | PkcsCertIssue_Failure  | Falha ao emitir um certificado PKCS. Reveja os detalhes do evento para obter o ID do dispositivo, o ID do utilizador, o nome CA, o nome do modelo de certificado e o thumbprint do certificado relacionados com este evento. | 0x00000000, 0x00000400, 0x00000401, 0x0FFFFFFF |
-| 20200 | RevokeCert_Success  | Certificado revogado com êxito. Reveja os detalhes do evento para o ID do dispositivo, o ID do utilizador, o nome CA e o número de série do certificado relacionados com este evento. | 0x00000000, 0x0FFFFFFF |
-| 20202 | RevokeCert_Failure | Falha ao revogar o certificado. Reveja os detalhes do evento para o ID do dispositivo, o ID do utilizador, o nome CA e o número de série do certificado relacionados com este evento. Para obter mais informações, veja os Registos NDES SVC.   | 0x00000000, 0x00000402, 0x0FFFFFFF |
-| 20300 | Upload_Success | Os dados de pedido ou revogação do certificado foram carregados com êxito. Reveja os detalhes do evento para obter os detalhes do carregamento. | 0x00000000, 0x0FFFFFFF |
-| 20302 | Upload_Failure | Falha ao carregar os dados de pedido ou revogação do certificado. Reveja os detalhes do evento > Estado de Carregamento para determinar o ponto de falha.| 0x00000000, 0x0FFFFFFF |
-| 20400 | Download_Success | Foi transferido com êxito o pedido para assinar um certificado, transferir um certificado de cliente ou revogar um certificado. Reveja os detalhes do evento para obter os detalhes da transferência.  | 0x00000000, 0x0FFFFFFF |
-| 20402 | Download_Failure | Falha ao transferir o pedido para assinar um certificado, transferir um certificado de cliente ou revogar um certificado. Reveja os detalhes do evento para obter os detalhes da transferência. | 0x00000000, 0x0FFFFFFF |
-| 20500 | CRPVerifyMetric_Success  | Ponto de Registo de Certificados verificou com êxito um desafio de cliente | 0x00000000, 0x0FFFFFFF |
-| 20501 | CRPVerifyMetric_Warning  | O Ponto de Registo de Certificados foi concluído, mas rejeitou o pedido. Consulte o código de diagnóstico e a mensagem para obter mais detalhes. | 0x00000000, 0x00000411, 0x0FFFFFFF |
-| 20502 | CRPVerifyMetric_Failure  | Falha do Ponto de Registo de Certificados ao verificar um desafio de cliente. Consulte o código de diagnóstico e a mensagem para obter mais detalhes. Veja os detalhes da mensagem do evento para obter o ID de Dispositivo que corresponde ao desafio. | 0x00000000, 0x00000408, 0x00000409, 0x00000410, 0x0FFFFFFF |
-| 20600 | CRPNotifyMetric_Success  | O Ponto de Registo de Certificados concluiu com êxito o processo de notificação e enviou o certificado para o dispositivo cliente. | 0x00000000, 0x0FFFFFFF |
-| 20602 | CRPNotifyMetric_Failure  | O Ponto de Registo de Certificados não conseguiu concluir o processo de notificação. Veja os detalhes da mensagem do evento para obter informações sobre o pedido. Verifique a ligação entre o servidor do NDES e a AC. | 0x00000000, 0x0FFFFFFF |
-
-### <a name="diagnostic-codes"></a>Códigos de diagnóstico
-
-| Código de Diagnóstico | Nome do Diagnóstico | Mensagem de Diagnóstico |
-| -------------   | -------------   | -------------      |
-| 0x00000000 | Êxito  | Êxito |
-| 0x00000400 | PKCS_Issue_CA_Unavailable  | A autoridade de certificação não é válida ou está inacessível. Verifique se a autoridade de certificação está disponível e se o servidor consegue comunicar com a mesma. |
-| 0x00000401 | Symantec_ClientAuthCertNotFound  | O certificado Symantec Client Auth não foi encontrado no arquivo de certificados local. Consulte o artigo [Configurar o Intune Certificate Connector para DigiCert PKI Platform](https://docs.microsoft.com/intune/certificates-digicert-configure#troubleshooting) para obter mais informações.  |
-| 0x00000402 | RevokeCert_AccessDenied  | A conta especificada não tem permissões para revogar um certificado de AC. Veja o campo Nome da AC nos detalhes da mensagem de evento para determinar a AC emissora.  |
-| 0x00000403 | CertThumbprint_NotFound  | Não foi possível localizar um certificado que corresponda à sua pesquisa. Inscreva o conector do certificado e tente novamente. |
-| 0x00000404 | Certificate_NotFound  | Não foi possível localizar um certificado que corresponda às informações fornecidas. Volte a inscrever o conector do certificado e tente novamente. |
-| 0x00000405 | Certificate_Expired  | Um certificado expirou. Volte a inscrever o conector do certificado para renovar o certificado e tente novamente. |
-| 0x00000408 | CRPSCEPCert_NotFound  | Não foi possível encontrar o certificado de Encriptação CRP. Verifique se o NDES e o Intune Connector estão configurados corretamente. |
-| 0x00000409 | CRPSCEPSigningCert_NotFound  | Não foi possível obter o certificado de assinatura. Verifique se o Serviço do Intune Connector está configurado corretamente e se está em execução. Verifique também se os eventos de transferência de certificado foram efetuados com êxito. |
-| 0x00000410 | CRPSCEPDeserialize_Failed  | Falha ao anular a serialização do pedido de desafio SCEP. Verifique se o NDES e o Conector do Intune estão configurados corretamente. |
-| 0x00000411 | CRPSCEPChallenge_Expired  | Pedido recusado devido a um desafio de certificado expirado. O dispositivo cliente pode tentar novamente depois de obter um novo desafio do servidor de gestão. |
-| 0x0FFFFFFFF | Unknown_Error  | Não conseguimos concluir o pedido porque ocorreu um erro do lado do servidor. Tente novamente. |
+> [!NOTE]  
+> O conector de certificado do Intune dá suporte a TLS 1,2. Se o servidor que hospeda o conector oferecer suporte a TLS 1,2, o TLS 1,2 será usado. Se o servidor não suportar o TLS 1.2, será utilizado o TLS 1.1. Atualmente, é utilizado o TLS 1.1 para a autenticação entre os dispositivos e o servidor.
 
 ## <a name="next-steps"></a>Passos Seguintes
 
-- [Usar certificados PKCS](certficates-pfx-configure.md)ou [emitir certificados PKCS de um serviço Web Symantec PKI Manager](certificates-symantec-configure.md)
-- [Adicionar uma autoridade de certificação de terceiros para usar o SCEP com o Intune](certificate-authority-add-scep-overview.md)
-- Para obter assistência adicional, use os seguintes guias:
-  - [Solucionando problemas de implantação do perfil de certificado SCEP no Microsoft Intune](https://support.microsoft.com/help/4457481)
-  - [Solução de problemas de configuração de NDES para uso com Microsoft Intune perfis de certificado](https://support.microsoft.com/help/4459540)
+[Criar um perfil de certificado SCEP](certificates-profile-scep.md)  
+[Solucionar problemas do conector de certificado do Intune](troubleshoot-certificate-connector-events.md)

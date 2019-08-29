@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 08/16/2019
+ms.date: 08/27/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 267eb630b962893d5ab32530a095fe2fd3f7102e
-ms.sourcegitcommit: cbd406e3c6ab8c9a29d58dfda4a18e34277a1594
+ms.openlocfilehash: 09d80964a417772b1f011478db59398ceede5c5e
+ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69620206"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70122147"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 
@@ -53,6 +53,18 @@ Saiba mais sobre as novidades todas as semanas no Microsoft Intune. Você també
 -->  
 
 <!-- ########################## -->
+
+## <a name="week-of-august-26-2019"></a>Semana de 26 de agosto de 2019
+
+### <a name="configure-microsoft-edge-settings-using-administrative-templates-for-windows-10-and-newer----5228061---"></a>Definir configurações do Microsoft Edge usando modelos administrativos para Windows 10 e mais recente <!-- 5228061 -->
+
+No Windows 10 e dispositivos mais recentes, você pode criar modelos administrativos para definir configurações de política de grupo no Intune. Nesta atualização, você pode definir as configurações que se aplicam ao Microsoft Edge versão 77 e mais recentes.
+
+Para saber mais sobre modelos administrativos, confira [usar modelos do Windows 10 para definir configurações de política de grupo no Intune](administrative-templates-windows.md).
+
+Aplica-se a:
+
+- Windows 10 e mais recente (Windows RS4 +)
 
 ## <a name="week-of-august-12-2019"></a>Semana de 12 de agosto de 2019
 
@@ -1016,8 +1028,8 @@ Qualquer política de senha nova ou existente é alterada pelo administrador sol
 Aplica-se a:  
 macOS
 
-#### <a name="assign-scep-certificates-to-a-userless-macos-device-----2340521----"></a>Atribuir certificados SCEP a um dispositivo macOS-não-usuário  <!-- 2340521  -->
-Você pode atribuir certificados de protocolo SCEP (SCEP) usando atributos de dispositivo para dispositivos macOS, incluindo dispositivos sem afinidade de usuário, e associar o perfil de certificado a perfis Wi-Fi ou VPN. Isso expande o suporte que já temos para [atribuir certificados SCEP a dispositivos com e sem afinidade de usuário](certificates-scep-configure.md#create-a-scep-certificate-profile) que executa Windows, Ios e Android.  Esta atualização adiciona a opção para selecionar um tipo de certificado de *dispositivo* quando você configura um perfil de certificado SCEP para o MacOS.
+#### <a name="assign-scep-certificates-to-a-userless-macos-device-------2340521------"></a>Atribuir certificados SCEP a um dispositivo macOS-não-usuário    <!-- 2340521    -->
+Você pode atribuir certificados de protocolo SCEP (SCEP) usando atributos de dispositivo para dispositivos macOS, incluindo dispositivos sem afinidade de usuário, e associar o perfil de certificado a perfis Wi-Fi ou VPN. Isso expande o suporte que já temos para [atribuir certificados SCEP a dispositivos com e sem afinidade de usuário](certificates-profile-scep.md) que executa Windows, Ios e Android.  Esta atualização adiciona a opção para selecionar um tipo de certificado de *dispositivo* quando você configura um perfil de certificado SCEP para o MacOS.
 
 Aplica-se a: 
 - macOS

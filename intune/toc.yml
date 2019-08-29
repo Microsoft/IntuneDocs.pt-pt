@@ -510,8 +510,12 @@
           href: certificates-configure.md
           items:
             - name: SCEP
-              href: certificates-scep-configure.md
-              displayName: ksp
+              items:
+                - name: Infraestrutura de SCEP
+                  href: certificates-scep-configure.md
+                  displayName: ksp
+                - name: Perfis de certificado de SCEP
+                  href: certificates-profile-scep.md
             - name: PKCS
               href: certficates-pfx-configure.md
               displayName: ksp
@@ -733,6 +737,8 @@
               href: troubleshoot-email-profiles-in-microsoft-intune.md
             - name: Resolver problemas de acesso condicional
               href: troubleshoot-conditional-access.md
+            - name: Resolução de problemas do conector de certificados
+              href: troubleshoot-certificate-connector-events.md
             - name: Resolução de problemas do conector do Exchange
               href: troubleshoot-exchange-connector.md
         - name: Obter suporte
