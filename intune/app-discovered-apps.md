@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 53555a01899cfec15c319e790620b2bfeaa302bc
-ms.sourcegitcommit: 948ff8f56639e6dc7091134a0efd8d44efca63f2
+ms.openlocfilehash: 1d545e5848330e8c4f34eca21a992ad05ca8c85d
+ms.sourcegitcommit: ffbd1542d33810ab97a0be8faf26f8061328c228
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/27/2019
-ms.locfileid: "68590909"
+ms.lasthandoff: 08/31/2019
+ms.locfileid: "70206399"
 ---
 # <a name="intune-discovered-apps"></a>Aplicativos descobertos do Intune
 
@@ -33,7 +33,7 @@ ms.locfileid: "68590909"
 O Intune fornece uma lista agregada de aplicativos detectados nos dispositivos registrados no Intune em seu locatário.
 
 1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. No painel **Intune** , selecione aplicativos  > de cliente aplicativos descobertos.
+2. No painel **Intune** , selecione aplicativos > de cliente aplicativos descobertos.
 
 >[!NOTE]
 >Você pode exportar a lista de aplicativos descobertos para um arquivo. csv selecionando **Exportar** na folha **aplicativos** descobertos.
@@ -62,6 +62,9 @@ A lista a seguir fornece o tipo de plataforma de aplicativo, os aplicativos que 
 | macOS | Todos os aplicativos instalados no dispositivo | Todos os aplicativos instalados no dispositivo | A cada 7 dias do registro do dispositivo |
 | Android | Somente aplicativos gerenciados | Todos os aplicativos instalados no dispositivo | A cada 7 dias do registro do dispositivo |
 | Android Enterprise | Somente aplicativos gerenciados | Somente aplicativos instalados no perfil de trabalho | A cada 7 dias do registro do dispositivo |
+
+> [!NOTE]
+>Dispositivos ingressados no Azure AD híbrido do Windows 10 com a extensão de gerenciamento do Intune atualmente não coletam o inventário de aplicativos de acordo com o agendamento acima. Esse é um problema conhecido. Todas as alterações ou atualizações sobre esse comportamento são anunciadas no [desenvolvimento](in-development.md) e/ou [novidades](whats-new.md).
 
 O número de aplicações detetadas pode não corresponder à contagem de estados de instalação da aplicação. As causas de possíveis inconsistências incluem:
 - A alteração de direcionamento numa aplicação gerida instalada pode fazer com que a contagem de instalações no painel Estado diminua, embora continue a ser incluída nas aplicações detetadas.
