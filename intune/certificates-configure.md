@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 08/28/2019
+ms.date: 09/03/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1b1d1146a2300311c2c92d0d7a23cd25082b6b84
-ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
+ms.openlocfilehash: 4d9554893a8317b014007bd7089ed62f222975c8
+ms.sourcegitcommit: 7269abaefb2857bc8b343896bb2138bdb01bf8dc
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70122386"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70214325"
 ---
 # <a name="use-certificates-for-authentication-in-microsoft-intune"></a>Usar certificados para autenticação no Microsoft Intune  
 
@@ -49,8 +49,9 @@ Cada perfil de certificado individual que você cria oferece suporte a uma únic
 ## <a name="supported-platforms-and-certificate-profiles"></a>Plataformas com suporte e perfis de certificado  
 | Plataforma              | Perfil de certificado confiável | Perfil de certificado PKCS | Perfil de certificado SCEP | Perfil de certificado importado PKCS  |
 |--|--|--|--|---|
-| Android               | ![Suportadas](./media/certificates-configure/green-check.png) | ![Suportadas](./media/certificates-configure/green-check.png) | ![Suportadas](./media/certificates-configure/green-check.png)|  ![Suportadas](./media/certificates-configure/green-check.png) |
-| Android Enterprise    | ![Suportadas](./media/certificates-configure/green-check.png) | ![Suportadas](./media/certificates-configure/green-check.png) | ![Suportadas](./media/certificates-configure/green-check.png) | ![Suportadas](./media/certificates-configure/green-check.png) |
+| Administrador do dispositivo Android | ![Suportadas](./media/certificates-configure/green-check.png) | ![Suportadas](./media/certificates-configure/green-check.png) | ![Suportadas](./media/certificates-configure/green-check.png)|  ![Suportadas](./media/certificates-configure/green-check.png) |
+| Android Enterprise <br> -Proprietário do dispositivo   | ![Suportadas](./media/certificates-configure/green-check.png) |   |  |   |
+| Android Enterprise <br> -Perfil de trabalho    | ![Suportadas](./media/certificates-configure/green-check.png) | ![Suportadas](./media/certificates-configure/green-check.png) | ![Suportadas](./media/certificates-configure/green-check.png) | ![Suportadas](./media/certificates-configure/green-check.png) |
 | iOS                   | ![Suportadas](./media/certificates-configure/green-check.png) | ![Suportadas](./media/certificates-configure/green-check.png) | ![Suportadas](./media/certificates-configure/green-check.png) | ![Suportadas](./media/certificates-configure/green-check.png) |
 | macOS                 | ![Suportadas](./media/certificates-configure/green-check.png) |   |![Suportadas](./media/certificates-configure/green-check.png)|![Suportadas](./media/certificates-configure/green-check.png)|
 | Windows Phone 8.1     |![Suportadas](./media/certificates-configure/green-check.png)  |  | ![Suportadas](./media/certificates-configure/green-check.png)| ![Suportadas](./media/certificates-configure/green-check.png) |

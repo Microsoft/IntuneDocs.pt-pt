@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f69ab5f4498519fd0d1dee02eca59ea6865598b7
-ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
+ms.openlocfilehash: 608f9045d676a756c4ee7440072040075e497605
+ms.sourcegitcommit: 7269abaefb2857bc8b343896bb2138bdb01bf8dc
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70122440"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70214330"
 ---
 # <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Use os modelos do Windows 10 para definir as configurações de política de grupo no Microsoft Intune
 
@@ -67,6 +67,7 @@ Este artigo lista as etapas para criar um modelo para dispositivos Windows 10 e 
     >
     > - Windows 10 RS4 e mais recente com [KB 4512509](https://support.microsoft.com/kb/4512509) instalado.
     > - Windows 10 RS5 e mais recente com [KB 4512534](https://support.microsoft.com/kb/4512534) instalado.
+    > - Windows 10 19H1 e mais recente com [KB 4512941](https://support.microsoft.com/kb/4512941) instalado.
 
 6. Selecione qualquer configuração. Por exemplo, filtre no **Office**e selecione **Ativar navegação restrita**. Uma descrição detalhada da configuração é mostrada. Escolha **habilitado**, **desabilitado**ou deixe a configuração como **não configurado** (padrão). A descrição detalhada também explica o que acontece quando você escolhe **habilitado**, **desabilitado**ou **não configurado**.
 7. Selecione **OK** para guardar as alterações.
@@ -95,6 +96,6 @@ Há centenas de configurações disponíveis nesses modelos. Para facilitar a lo
 
   Em outro exemplo, pesquise `microsoft word`. Você verá todas as configurações que pode definir para o programa Microsoft Word. `explorer` Procure para ver todas as configurações do Internet Explorer que você pode adicionar ao seu modelo.
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Passos seguintes
 
 O modelo é criado, mas não está fazendo nada ainda. Em seguida, [atribua o modelo, também chamado de perfil,](device-profile-assign.md) e [monitore seu status](device-profile-monitor.md).
