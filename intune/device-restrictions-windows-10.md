@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/13/2019
+ms.date: 08/29/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,16 +14,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5b3fd474e938e2e85a0a08951a9e3f154d980411
-ms.sourcegitcommit: b64869b4be357c0741ec01b1a2f0bae13efce937
+ms.openlocfilehash: 5c9bad56a8214cd736208526865b5f9c8b23db00
+ms.sourcegitcommit: 18be0ccc6e51073af32c44abeba421d69a5ae21a
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "69998951"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70302284"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Configurações do dispositivo Windows 10 (e mais recente) para permitir ou restringir recursos usando o Intune
 
-Este artigo lista e descreve todas as diferentes configurações que você pode controlar em dispositivos Windows 10 e mais recentes. Como parte da sua solução de MDM (gerenciamento de dispositivo móvel), use essas configurações para permitir ou desabilitar recursos, definir regras de senha, personalizar a tela de bloqueio, usar o Windows Defender e muito mais.
+Este artigo lista e descreve todas as diferentes configurações que você pode controlar em dispositivos Windows 10 e mais recentes. Como parte da sua solução de MDM (gerenciamento de dispositivo móvel), use essas configurações para permitir ou desabilitar recursos, definir regras de senha, personalizar a tela de bloqueio, usar o Microsoft defender e muito mais.
 
 Essas configurações são adicionadas a um perfil de configuração de dispositivo no Intune e, em seguida, atribuídas ou implantadas em seus dispositivos Windows 10.
 
@@ -79,8 +79,6 @@ Essas configurações usam o [CSP da política do ApplicationManagement](https:/
 
   [CSP ApplicationManagement/LaunchAppAfterLogOn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-launchappafterlogon)
 
-Selecione **OK** para guardar as alterações.
-
 ## <a name="cellular-and-connectivity"></a>Rede Móvel e Conectividade
 
 Essas configurações usam a [política de conectividade](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity) e os CSPs da [política de Wi-Fi](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-wifi) , que também listam as edições do Windows com suporte.
@@ -114,8 +112,6 @@ Essas configurações usam o [CSP de política do Bluetooth](https://docs.micros
 
   O [Guia de uso do ServicesAllowedList](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-bluetooth#servicesallowedlist-usage-guide) tem mais informações sobre a lista de serviços.
 
-Selecione **OK** para guardar as alterações.
-
 ## <a name="cloud-and-storage"></a>Cloud e Armazenamento
 
 Essas configurações usam o [CSP de política de contas](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-accounts); que também lista as edições do Windows com suporte.
@@ -124,8 +120,6 @@ Essas configurações usam o [CSP de política de contas](https://docs.microsoft
 - **Não conta Microsoft**: **Bloquear** impede que os usuários finais adicionem contas que não sejam da Microsoft usando a interface do usuário. **Não configurado** (padrão) permite que os usuários adicionem contas de email que não estão associadas a um conta Microsoft.
 - **Sincronização de configurações para conta Microsoft**: **Não configurado** (padrão) permite que as configurações de dispositivo e aplicativo associadas a um conta Microsoft sincronizem entre dispositivos. **Bloquear** impede esta sincronização.
 - **Assistente de conexão de conta da Microsoft**: Quando definido como **não configurado** (padrão), os usuários finais podem iniciar e parar o serviço do **Assistente de conexão de conta da Microsoft** (WLIDSVC). Esse serviço de sistema operacional permite que os usuários entrem em seus conta Microsoft. **Desabilitar** impede que os usuários finais controlem o serviço de assistente de conexão da Microsoft (WLIDSVC).
-
-Selecione **OK** para guardar as alterações.
 
 ## <a name="cloud-printer"></a>Impressora em Cloud
 
@@ -140,8 +134,6 @@ Essas configurações usam o [CSP da política do EnterpriseCloudPrint](https://
 
 > [!TIP]
 > Depois de configurar uma [impressão em nuvem híbrida do Windows Server](https://docs.microsoft.com/windows-server/administration/hybrid-cloud-print/hybrid-cloud-print-overview), você pode definir essas configurações e, em seguida, implantar em seus dispositivos Windows.
-
-Selecione **OK** para guardar as alterações.
 
 ## <a name="control-panel-and-settings"></a>Painel de Controlo e Definições
 
@@ -165,8 +157,6 @@ Selecione **OK** para guardar as alterações.
   - **Privacidade**: **Bloquear** impede o acesso à área de privacidade do aplicativo de configurações no dispositivo. **Não configurado** (padrão) permite o acesso.
   - **Atualização e segurança**: **Bloquear** impede o acesso à área de segurança & atualização do aplicativo de configurações no dispositivo. **Não configurado** (padrão) permite o acesso.
 
-Selecione **OK** para guardar as alterações.
-
 ## <a name="display"></a>Apresentar
 
 Essas configurações usam o [CSP de política de vídeo](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-display); que também lista as edições do Windows com suporte.
@@ -183,15 +173,13 @@ O dimensionamento de DPI GDI permite que aplicativos que não têm reconheciment
 
 Você também pode **importar** um arquivo. csv com a lista de aplicativos.
 
-Selecione **OK** para guardar as alterações.
-
 ## <a name="general"></a>Geral
 
 Essas configurações usam o [CSP da política de experiência](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience); que também lista as edições do Windows com suporte. 
 
 - **Captura de tela** (somente dispositivos móveis): **Bloquear** impede que os usuários finais obtenham capturas de tela no dispositivo. **Não configurado** (padrão) permite esse recurso.
 - **Copiar e colar (somente dispositivos móveis)** : **Bloquear** impede que os usuários finais usem copiar e colar entre aplicativos no dispositivo. **Não configurado** (padrão) permite esse recurso.
-- Cancelamento de **registro manual**: **Bloquear** impede que os usuários finais excluam a conta do local de trabalho usando o painel de controle do local de trabalho no dispositivo. **Não configurado** (padrão) permite esse recurso.
+- **Cancelamento de registro manual**: **Bloquear** impede que os usuários finais excluam a conta do local de trabalho usando o painel de controle do local de trabalho no dispositivo. **Não configurado** (padrão) permite esse recurso.
 
   Essa configuração de política não se aplicará se o computador for ingressado no Azure AD e o registro automático estiver habilitado.
 
@@ -230,8 +218,6 @@ Essas configurações usam o [CSP da política de experiência](https://docs.mic
 
 - **Encerrar processos do Gerenciador de tarefas**: Essa configuração determina se não administradores podem usar o Gerenciador de tarefas para finalizar tarefas. **Bloquear** impede que usuários padrão (não administradores) usem o Gerenciador de tarefas para encerrar um processo ou uma tarefa no dispositivo. **Não configurado** (padrão) permite que usuários padrão encerrem um processo ou uma tarefa usando o Gerenciador de tarefas.
 
-Selecione **OK** para guardar as alterações.
-
 ## <a name="locked-screen-experience"></a>Experiência de ecrã bloqueado
 
 - **Notificações da central de ações (somente dispositivos móveis)** : **Bloquear** impede que as notificações da central de ações sejam exibidas na tela de bloqueio do dispositivo. **Não configurado** (padrão) permite que os usuários escolham quais aplicativos mostram notificações na tela de bloqueio.
@@ -255,8 +241,6 @@ Selecione **OK** para guardar as alterações.
 
   [CSP DeviceLock/ScreenTimeoutWhileLocked](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-screentimeoutwhilelocked)
 
-Selecione **OK** para guardar as alterações.
-
 ## <a name="messaging"></a>Mensagens
 
 Essas configurações usam o [CSP de política de mensagens](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-messaging); que também lista as edições do Windows com suporte.
@@ -264,8 +248,6 @@ Essas configurações usam o [CSP de política de mensagens](https://docs.micros
 - **Sincronização de mensagens (somente dispositivos móveis)** : **Bloquear** desabilita o backup e a restauração de mensagens de texto e a sincronização de mensagens entre dispositivos Windows. Desabilitar ajuda a evitar que informações sejam armazenadas em servidores fora do controle da organização. **Não configurado** (padrão) permite que os usuários alterem essas configurações e sincronizem suas mensagens.
 - **MMS (somente dispositivo móvel)** : **Bloquear** desabilita a funcionalidade de envio e recebimento de MMS no dispositivo. Para empresas, use essa política para desabilitar o MMS em dispositivos como parte do requisito de gerenciamento ou auditoria. **Não configurado** (padrão) permite enviar e receber MMS.
 - **RCS (somente dispositivos móveis)** : **Bloquear** desabilita a funcionalidade de envio e recebimento de RCS (serviços de comunicação avançados) no dispositivo. Para empresas, use essa política para desabilitar o RCS nos dispositivos como parte do requisito de gerenciamento ou de auditoria. **Não configurado** (padrão) permite enviar e receber RCS.
-
-Selecione **OK** para guardar as alterações.
 
 ## <a name="microsoft-edge-browser"></a>Browser Microsoft Edge
 
@@ -327,7 +309,7 @@ Esse perfil de restrições de dispositivo está diretamente relacionado ao perf
 - **Mensagem ao abrir sites no Internet Explorer**: Use essa configuração para configurar o Microsoft Edge para mostrar uma notificação antes que um site seja aberto no Internet Explorer 11. As opções são:
   - **Não mostrar mensagem**: O comportamento padrão do sistema operacional é usado, o que pode não mostrar uma mensagem.
   - **Mostrar mensagem que o site está aberto no Internet Explorer 11**: Mostre a mensagem ao abrir sites no IE. Sites abertos no IE. 
-  - **Mostrar mensagem com a opção de abrir sites no Microsoft Edge**: Mostrar a mensagem ao abrir sites no Edge. A mensagem inclui um link **continuar a usar o Microsoft Edge** para que os usuários possam escolher o Microsoft Edge em vez do IE.
+  - **Mostrar mensagem com a opção de abrir sites no Microsoft Edge**: Mostrar a mensagem ao abrir sites no Microsoft Edge. A mensagem inclui um link **continuar a usar o Microsoft Edge** para que os usuários possam escolher o Microsoft Edge em vez do IE.
 
   > [!IMPORTANT]
   > Essa configuração exige que você use a configuração **local da lista de sites do modo empresarial** , a configuração **enviar tráfego de intranet para o Internet Explorer** ou ambas as configurações.
@@ -335,8 +317,6 @@ Esse perfil de restrições de dispositivo está diretamente relacionado ao perf
 - **Permitir lista de compatibilidade da Microsoft**: **Sim** (padrão) permite usar uma lista de compatibilidade da Microsoft. **Não** impede a lista de compatibilidade da Microsoft no Microsoft Edge. Esta lista da Microsoft ajuda o Microsoft Edge a exibir corretamente sites com problemas de compatibilidade conhecidos.
 - **Páginas de início de pré-carregamento e nova página de guia**: **Sim** (padrão) usa o comportamento padrão do sistema operacional, que pode ser pré-carregar essas páginas. O pré-carregamento minimiza o tempo para iniciar o Microsoft Edge e carrega novas guias. **Não** impede que o Microsoft Edge carregue páginas iniciais e a nova página da guia.
 - **Páginas inicial de pré-inicialização e nova guia**: **Sim** (padrão) usa o comportamento padrão do sistema operacional, que pode ser inicializar essas páginas. Iniciar previamente ajuda o desempenho do Microsoft Edge e minimiza o tempo necessário para iniciar o Microsoft Edge. **Não** impede o Microsoft Edge de inicializar previamente as páginas inicial e a nova guia.
-
-Selecione **OK** para guardar as alterações.
 
 ### <a name="favorites-and-search"></a>Favoritos e pesquisa
 
@@ -346,7 +326,7 @@ Selecione **OK** para guardar as alterações.
   - **Oculto**: Oculta a barra de favoritos em todas as páginas. Os usuários finais não podem alterar essa configuração.
 - **Permitir alterações em favoritos**: **Sim** (padrão) usa o padrão do sistema operacional, que permite aos usuários alterar a lista. **Não** impede que os usuários finais adicionem, importem, classifiquem ou editem a lista de favoritos.
   - **Lista de favoritos**: Adicione uma lista de URLs ao arquivo de favoritos. Por exemplo, adicione `http://contoso.com/favorites.html`.
-- **Sincronizar favoritos entre** os navegadores da Microsoft (Somente desktop): **Sim** força o Windows a sincronizar os favoritos entre o Internet Explorer e o Microsoft Edge. Adições, exclusões, modificações e alterações de pedidos a favoritos são compartilhadas entre navegadores.  **Não** (padrão) usa o padrão do sistema operacional, que pode fornecer aos usuários a opção de sincronizar os favoritos entre os navegadores.
+- **Sincronizar favoritos entre os navegadores da Microsoft** (Somente desktop): **Sim** força o Windows a sincronizar os favoritos entre o Internet Explorer e o Microsoft Edge. Adições, exclusões, modificações e alterações de pedidos a favoritos são compartilhadas entre navegadores.  **Não** (padrão) usa o padrão do sistema operacional, que pode fornecer aos usuários a opção de sincronizar os favoritos entre os navegadores.
 - **Mecanismo de pesquisa padrão**: Escolha o mecanismo de pesquisa padrão no dispositivo. Os utilizadores finais podem alterar este valor em qualquer altura. As opções são:
   - Mecanismo de pesquisa nas configurações do Microsoft Edge do cliente
   - Bing
@@ -357,8 +337,6 @@ Selecione **OK** para guardar as alterações.
 - **Permitir alterações no mecanismo de pesquisa**: **Sim** (padrão) permite que os usuários adicionem novos mecanismos de pesquisa ou alterem o mecanismo de pesquisa padrão no Microsoft Edge. Escolha **não** para impedir que os usuários personalizem o mecanismo de pesquisa.
 
   Essa configuração só está disponível quando executada no [modo normal (quiosque de vários aplicativos)](#use-microsoft-edge-kiosk-mode).
-
-Selecione **OK** para guardar as alterações.
 
 ### <a name="privacy-and-security"></a>Privacidade e segurança
 
@@ -383,8 +361,6 @@ Quando "bloquear e habilitar substituição de usuário" está selecionado, o us
 - **Permitir coleta de dados de bloco dinâmico**: **Sim** (padrão) permite que o Microsoft Edge colete informações de blocos dinâmicos fixados no menu iniciar. **Não** impede a coleta dessas informações, o que pode fornecer aos usuários uma experiência limitada.
 - O **usuário pode substituir erros de certificado**: **Sim** (padrão) permite que os usuários acessem sites que têm erros de protocolo SSL/TLS (segurança da camada de transporte). **Não** (recomendado para maior segurança) impede que os usuários acessem sites com erros SSL ou TLS.
 
-Selecione **OK** para guardar as alterações.
-
 ### <a name="additional"></a>Adicionais
 
 - **Permitir navegador Microsoft Edge** (somente dispositivos móveis): **Sim** (padrão) permite usar o navegador da Web Microsoft Edge no dispositivo móvel. **Não** impede o uso do Microsoft Edge no dispositivo. Se você escolher **não**, as outras configurações individuais se aplicarão somente ao desktop.
@@ -399,9 +375,7 @@ Selecione **OK** para guardar as alterações.
 - **Permitir Sideload de extensões de desenvolvedor**: **Sim** (padrão) usa o padrão do sistema operacional, que pode permitir o Sideload. O Sideload instala e executa extensões não verificadas. **Não** impede o Microsoft Edge de Sideload usando o recurso de **extensões de carregamento** . Ele não impede extensões de Sideload usando outras maneiras, como o PowerShell.
 - **Extensões necessárias**: Escolha quais extensões não podem ser desativadas pelos usuários finais no Microsoft Edge. Insira os nomes da família de pacotes e selecione **Adicionar**. [Encontre um nome de família de pacotes (PFN)](https://docs.microsoft.com/sccm/protect/deploy-use/find-a-pfn-for-per-app-vpn) que fornece algumas diretrizes.
 
-  Você também pode **importar** um arquivo CSV que inclui os nomes da família de pacotes. Ou então , exporte os nomes de família de pacotes que você inserir.
-
-Selecione **OK** para guardar as alterações.
+  Você também pode **importar** um arquivo CSV que inclui os nomes da família de pacotes. Ou então, **exporte** os nomes de família de pacotes que você inserir.
 
 ## <a name="network-proxy"></a>Proxy de rede
 
@@ -415,8 +389,6 @@ Essas configurações usam o [CSP da política do NetworkProxy](https://docs.mic
   - **Número da porta**: Insira o número da porta do seu servidor proxy.
   - **Exceções de proxy**: Insira as URLs que não devem usar o servidor proxy. Utilize um ponto e vírgula para separar cada item.
   - **Ignorar servidor proxy para endereço local**: **Não configurado** (padrão) impede o uso de um servidor proxy para endereços locais na sua intranet. **Permitir** usa um servidor proxy para endereços locais.
-
-Selecione **OK** para guardar as alterações.
 
 ## <a name="password"></a>Palavra-passe
 
@@ -466,8 +438,6 @@ Essas configurações usam o [CSP da política do DeviceLock](https://docs.micro
 
   [Autenticação/CSP PreferredAadTenantDomainName](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-preferredaadtenantdomainname)
 
-Selecione **OK** para guardar as alterações.
-
 ## <a name="per-app-privacy-exceptions"></a>Exceções de privacidade por aplicação
 
 Você pode adicionar aplicativos que devem ter um comportamento de privacidade diferente do que você define em "privacidade padrão".
@@ -496,23 +466,17 @@ Você pode adicionar aplicativos que devem ter um comportamento de privacidade d
 - **Comentários e diagnósticos**: Defina se este aplicativo pode acessar informações de diagnóstico.
 - **Sincronizar com dispositivos**: Escolha se este aplicativo pode compartilhar e sincronizar informações automaticamente com dispositivos sem fio que não emparelham explicitamente com o dispositivo.
 
-Selecione **OK** para guardar as alterações.
-
 ## <a name="personalization"></a>Personalização
 
 Essas configurações usam o [CSP de política de personalização](https://docs.microsoft.com/windows/client-management/mdm/personalization-csp), que também lista as edições do Windows com suporte.
 
 - **URL da imagem de fundo da área de trabalho (somente desktop)** : Insira a URL para uma imagem no formato. jpg,. jpeg ou. png que você deseja usar como o papel de parede da área de trabalho do Windows. Os utilizadores não podem alterar a imagem. Por exemplo, introduza `https://contoso.com/logo.png`.
 
-Selecione **OK** para guardar as alterações.
-
 ## <a name="printer"></a>Impressora
 
 - **Impressoras**: Lista de impressoras locais que foram adicionadas.
 - **Impressora padrão**: Defina a impressora padrão.
 - **Acesso do usuário para adicionar novas impressoras**: Permitir ou bloquear o uso de impressoras locais.
-
-Selecione **OK** para guardar as alterações.
 
 ## <a name="privacy"></a>Privacidade
 
@@ -524,8 +488,6 @@ Essas configurações usam o [CSP de política de privacidade](https://docs.micr
 - **Apenas atividades locais**: **Bloquear** impede experiências compartilhadas e a descoberta de recursos usados recentemente no alternador de tarefas, com base apenas na atividade local. **Não configurado** (padrão) habilita esse recurso.
 
 Você pode configurar informações que todos os aplicativos no dispositivo podem acessar. Além disso, defina exceções em uma base por aplicativo usando **exceções de privacidade por aplicativo**.
-
-Selecione **OK** para guardar as alterações.
 
 ### <a name="exceptions"></a>Exceções
 
@@ -548,8 +510,6 @@ Selecione **OK** para guardar as alterações.
 - **Comentários e diagnósticos**: Escolha se este aplicativo pode acessar informações de diagnóstico.
 - **Sincronização com dispositivos** – defina se esta aplicação pode partilhar e sincronizar automaticamente informações com dispositivos sem fios que não sejam emparelhados especificamente com o PC, tablet ou telefone.
 
-Selecione **OK** para guardar as alterações.
-
 ## <a name="projection"></a>Projeção
 
 Essas configurações usam o [CSP da política do WirelessDisplay](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-wirelessdisplay), que também lista as edições do Windows com suporte.
@@ -557,8 +517,6 @@ Essas configurações usam o [CSP da política do WirelessDisplay](https://docs.
 - **Entrada do usuário de receptores de exibição sem fio**: **Bloquear** impede a entrada do usuário de receptores de vídeo sem fio. **Não configurado** (padrão) permite que uma exibição sem fio envie teclado, mouse, caneta e entrada por toque de volta para o dispositivo de origem.
 - **Projeção neste computador**: **Bloquear** impede que outros dispositivos localizem o dispositivo para projeção. **Não configurado** (padrão) permite que o dispositivo seja detectável e possa projetar no dispositivo acima da tela de bloqueio.
 - **Exigir PIN para emparelhamento**: Escolha **exigir** para sempre solicitar um PIN ao se conectar a um dispositivo de projeção. **Não configurado** (padrão) não requer um PIN para emparelhar o dispositivo a um dispositivo de projeção.
-
-Selecione **OK** para guardar as alterações.
 
 ## <a name="reporting-and-telemetry"></a>Relatórios e telemetria
 
@@ -579,7 +537,7 @@ Selecione **OK** para guardar as alterações.
 
   [CSP do navegador/ConfigureTelemetryForMicrosoft365Analytics](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-configuretelemetryformicrosoft365analytics)
 
-- **Servidor proxy**de telemetria: Insira o nome de domínio totalmente qualificado (FQDN) ou o endereço IP de um servidor proxy para encaminhar as experiências de usuário conectadas e as solicitações de telemetria usando uma conexão protocolo SSL (SSL). O formato para esta definição é *servidor*:*porta*. Se o proxy nomeado falhar ou se um proxy não for inserido ao habilitar essa política, os dados de experiência de usuário conectados e telemetria não serão enviados e permanecerão no dispositivo local.
+- **Servidor proxy de telemetria**: Insira o nome de domínio totalmente qualificado (FQDN) ou o endereço IP de um servidor proxy para encaminhar as experiências de usuário conectadas e as solicitações de telemetria usando uma conexão protocolo SSL (SSL). O formato para esta definição é *servidor*:*porta*. Se o proxy nomeado falhar ou se um proxy não for inserido ao habilitar essa política, os dados de experiência de usuário conectados e telemetria não serão enviados e permanecerão no dispositivo local.
 
   Formatos de exemplo:
 
@@ -603,8 +561,6 @@ Essas configurações usam o [CSP de política de pesquisa](https://docs.microso
   - **Moderado**: Filtragem moderada contra conteúdo adulto. Os resultados de pesquisa válidos não são filtrados.
 - **Exibir resultados da Web na pesquisa**: Quando definido como **Bloquear**, os usuários não podem pesquisar e os resultados da Web não são mostrados na pesquisa. **Não configurado** (padrão) permite que os usuários pesquisem a Web e os resultados sejam mostrados no dispositivo.
 
-Selecione **OK** para guardar as alterações.
-
 ## <a name="start"></a>Start
 
 Essas configurações usam o [CSP de política inicial](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start), que também lista as edições do Windows com suporte.  
@@ -612,7 +568,7 @@ Essas configurações usam o [CSP de política inicial](https://docs.microsoft.c
 - **Layout do menu iniciar**: Substitua o layout de início padrão e personalize o menu iniciar em dispositivos de desktop. Carregue um arquivo XML que inclui suas personalizações, incluindo a ordem em que os aplicativos são listados e muito mais. Os usuários não podem alterar o layout do menu iniciar inserido.
 - **Fixe sites a blocos no menu iniciar**: Importe imagens do Microsoft Edge que são mostradas como links no menu Iniciar do Windows para dispositivos de desktop.
 - **Desafixar aplicativos da barra de tarefas**: **Bloquear** impede que os usuários desafixam aplicativos da barra de tarefas. **Não configurado** (padrão) permite que os usuários desafixem aplicativos da barra de tarefas.
-- **Troca rápida de usuário**: **Bloquear** impede a alternância entre os usuários que fizeram logon simultaneamente sem fazer logoff. **Não configurado** (padrão) mostra o **usuário** do comutador no bloco do usuário.
+- **Troca rápida de usuário**: **Bloquear** impede a alternância entre os usuários que fizeram logon simultaneamente sem fazer logoff. **Não configurado** (padrão) mostra o **usuário do comutador** no bloco do usuário.
 - **Aplicativos mais usados**: **Bloquear** oculta a exibição dos aplicativos mais usados no menu iniciar. Também desativa o seletor correspondente na aplicação Definições. **Não configurado** (padrão) mostra os aplicativos mais usados.
 - **Aplicativos adicionados recentemente**: **Bloquear** oculta aplicativos adicionados recentemente da exibição no menu iniciar. Também desativa o seletor correspondente na aplicação Definições. **Não configurado** (padrão) mostra os aplicativos adicionados recentemente no menu iniciar.
 - **Modo de tela inicial**: Escolha como a tela inicial é mostrada. As opções são:
@@ -629,11 +585,11 @@ Essas configurações usam o [CSP de política inicial](https://docs.microsoft.c
 - **Bloco do usuário**: **Bloquear** oculta o bloco do usuário de mostrar no menu iniciar. **Não configurado** (padrão) mostra o bloco do usuário e também define as seguintes configurações:
   - **Bloqueio**: **Bloquear** oculta a opção de **bloqueio** da exibição no bloco do usuário no menu iniciar. **Não configurado** (padrão) mostra a opção de **bloqueio** .
   - **Sair**: **Bloquear** oculta a opção **sair** da exibição no bloco do usuário no menu iniciar. **Não configurado** (padrão) mostra a opção **sair** .
-- **Desligar**: **Bloquear** oculta as opções de **atualização e** desligamento e desligamento da exibição no botão de energia no menu iniciar. **Não configurado** (padrão) mostra essas opções.
+- **Desligar**: **Bloquear** oculta as opções de **atualização e** desligamento e **desligamento** da exibição no botão de energia no menu iniciar. **Não configurado** (padrão) mostra essas opções.
 - **Suspensão**: **Bloquear** oculta a opção de **suspensão** da exibição no botão de energia no menu iniciar. **Não configurado** (padrão) mostra essa opção.
 - **Hibernação**: **Bloquear** oculta a opção **hibernar** da exibição no botão de energia no menu iniciar. **Não configurado** (padrão) mostra essa opção.
-- **Alternar conta**: **Bloquear** oculta a **conta** do comutador de mostrar no bloco do usuário no menu iniciar. **Não configurado** (padrão) mostra essa opção.
-- **Opções**de reinicialização:  **Bloquear** oculta as opções de **atualização e** reinicialização e reinicialização de mostrar no botão de energia no menu iniciar. **Não configurado** (padrão) mostra essas opções.
+- **Alternar conta**: **Bloquear** oculta a **conta do comutador** de mostrar no bloco do usuário no menu iniciar. **Não configurado** (padrão) mostra essa opção.
+- **Opções de reinicialização**:  **Bloquear** oculta as opções de **atualização e reinicialização** e **reinicialização** de mostrar no botão de energia no menu iniciar. **Não configurado** (padrão) mostra essas opções.
 - **Documentos em Iniciar**: Oculte ou mostre a pasta documentos no menu Iniciar do Windows. As opções são:
   - **Não configurado** (predefinição): Nenhuma configuração é forçada. Os usuários optam por mostrar ou ocultar o atalho.
   - **Ocultar**: O atalho está oculto e desabilita a configuração no aplicativo configurações.
@@ -675,8 +631,6 @@ Essas configurações usam o [CSP de política inicial](https://docs.microsoft.c
   - **Ocultar**: O atalho está oculto e desabilita a configuração no aplicativo configurações.
   - **Mostrar**: O atalho é mostrado e desabilita a configuração no aplicativo configurações.
 
-Selecione **OK** para guardar as alterações.
-
 ## <a name="windows-defender-smart-screen"></a>Windows Defender SmartScreen
 
 - **SmartScreen para Microsoft Edge**: **Exigir** desativa o Windows Defender SmartScreen e impede que os usuários o liguem. **Não configurado** (padrão) ativa o SmartScreen. Ajuda a proteger os usuários contra possíveis ameaças e impede que os usuários o desativem.
@@ -693,8 +647,6 @@ Selecione **OK** para guardar as alterações.
 
   [CSP do navegador/PreventSmartScreenPromptOverrideForFiles](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverrideforfiles)
 
-Selecione **OK** para guardar as alterações.
-
 ## <a name="windows-spotlight"></a>Destaque do Windows
 
 Essas configurações usam o [CSP da política de experiência](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience), que também lista as edições do Windows com suporte.
@@ -709,38 +661,96 @@ Essas configurações usam o [CSP da política de experiência](https://docs.mic
   - **Personalização do destaque do Windows**: **Bloquear** impede que o Windows use dados de diagnóstico para fornecer experiências personalizadas ao usuário. **Não configurado** (padrão) permite que a Microsoft use dados de diagnóstico para fornecer recomendações, dicas e ofertas personalizadas para personalizar o Windows para as necessidades do usuário.
   - **Experiência do Windows Welcome**: **Bloquear** desativa o recurso de experiência do Windows Welcome do Windows em destaque. A experiência de boas-vindas do Windows não mostrará quando houver atualizações e alterações no Windows e em seus aplicativos. **Não configurado** (padrão) permite que a experiência de boas-vindas do Windows mostre as informações do usuário sobre os recursos novos ou atualizados.
 
-Selecione **OK** para guardar as alterações.
-
-## <a name="windows-defender-antivirus"></a>Antivírus do Windows Defender
+## <a name="microsoft-defender-antivirus"></a>Microsoft defender antivírus
 
 Essas configurações usam o [CSP de política do defender](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender), que também lista as edições do Windows com suporte.
 
-- **Monitoramento em tempo real**: **Habilitar** impede a verificação em tempo real de malware, spyware e outros softwares indesejados. **Não configurado** (padrão) permite esse recurso.
-- **Monitoramento de comportamento**: **Habilitar** impede que o defender Verifique certos padrões conhecidos de atividade suspeita em dispositivos. **Não configurado** (padrão) permite o monitoramento de comportamento do Windows Defender.
-- **Sistema de inspeção de rede (NIS)** : O NIS ajuda a proteger dispositivos contra explorações baseadas em rede. Utiliza as assinaturas de vulnerabilidades conhecidas do Microsoft Endpoint Protection Center para ajudar a detetar e bloquear tráfego malicioso.
-- **Verificar todos os downloads**: Controla se o Defender analisa todos os ficheiros transferidos da Internet.
-- **Verificar scripts carregados nos navegadores da Web da Microsoft**: **Não configurado** (padrão) permite que o defender Verifique os scripts que são usados no Internet Explorer. **Habilitar** impede esta verificação.
-- **Acesso do usuário final ao defender**: **Bloquear** oculta a interface do usuário do Windows Defender de usuários finais. Todas as notificações do Windows Defender também são suprimidas. **Não configurado** (padrão) permite que o usuário acesse a interface de usuário do Windows Defender. Quando esta definição for alterada, será aplicada da próxima vez que o PC do utilizador final for reiniciado.
-- **Intervalo de atualização de assinatura (em horas)** : Insira o intervalo para o qual o defender verifica novos arquivos de assinatura, de 0-24. As opções são:
+- **Monitoramento em tempo real**: **Enable** desliga a verificação em tempo real de malware, spyware e outros softwares indesejados. **Não configurado** (padrão) permite esse recurso.
 
-  - **Não configurado** os
-  - Não **verificar**: O defender não verifica novos arquivos de assinatura.
+  [CSP do defender/AllowRealtimeMonitoring](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowrealtimemonitoring)
+
+- **Monitoramento de comportamento**: **Habilitar** desativa o defender verifica se há certos padrões conhecidos de atividade suspeita em dispositivos. **Não configurado** (padrão) permite o monitoramento de comportamento do Windows Defender.
+
+  [CSP do defender/AllowBehaviorMonitoring](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowbehaviormonitoring)
+
+- **Sistema de inspeção de rede (NIS)** : O NIS ajuda a proteger dispositivos contra explorações baseadas em rede. Utiliza as assinaturas de vulnerabilidades conhecidas do Microsoft Endpoint Protection Center para ajudar a detetar e bloquear tráfego malicioso.
+
+  A opção **Não configurado** (predefinição) desativa esta funcionalidade. Os usuários não estão impedidos de se conectar a vulnerabilidades conhecidas. Quando definido como **habilitar**, a proteção de rede e o bloqueio de rede são ativados e os usuários não podem desativá-lo. Os usuários estão impedidos de se conectar a vulnerabilidades conhecidas.
+
+  [CSP do defender/EnableNetworkProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)
+
+- **Verificar todos os downloads**: **Não configurado** (padrão) o defender verifica todos os arquivos baixados da Internet. Quando definido como **habilitar**, esse recurso é desabilitado. Portanto, o defender não examina todos os arquivos de Internet baixados.
+
+  [CSP do defender/AllowIOAVProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowioavprotection)
+
+- **Verificar scripts carregados nos navegadores da Web da Microsoft**: **Não configurado** (padrão) permite que o defender Verifique os scripts que são usados no Internet Explorer. **Habilitar** impede esta verificação.
+
+  [CSP do defender/AllowScriptScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscriptscanning)
+
+- **Acesso do usuário final ao defender**: **Bloquear** oculta a interface do usuário do Windows Defender de usuários finais. Todas as notificações do Windows Defender também são suprimidas. **Não configurado** (padrão) permite que o usuário acesse a interface de usuário do Windows Defender. Quando esta definição for alterada, será aplicada da próxima vez que o PC do utilizador final for reiniciado.
+
+  [CSP do defender/AllowUserUIAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowuseruiaccess)
+
+- **Intervalo de atualização de inteligência de segurança (em horas)** : Insira o intervalo que o defender verifica para a nova inteligência de segurança, de 0-24. As opções são:
+
+  - **Não configurado** (predefinição): Verifique se há atualizações a cada 8 horas.
+  - Não **verificar**: Defender não verifica novas atualizações de inteligência de segurança.
   - **1-24**: `1` verifica a cada hora `2` , verifica a cada duas `24` horas, verifica todos os dias e assim por diante.
-- **Monitorar atividade de arquivos e programas**: Permite que o Defender monitorize a atividade de ficheiros e programas nos dispositivos.
-- **Dias antes da exclusão de malware em quarentena**: Continue acompanhando o malware resolvido durante o número de dias que você insere para que você possa verificar manualmente os dispositivos afetados anteriormente. Se você definir o número de dias como **0**, o malware permanecerá na pasta de quarentena e não será removido automaticamente. Quando definido como `90`, os itens de quarentena são armazenados por 90 dias no sistema e, em seguida, removidos.
-- **Limite de uso da CPU durante uma verificação**: Limite a quantidade de CPU que as verificações têm permissão para usar, de **1** a **100**.
-- **Verificar arquivos mortos**: **Habilitar** impede que o defender examine arquivos mortos, como arquivos zip ou cab. **Não configurado** (padrão) permite essa verificação.
+  
+  [CSP do defender/SignatureUpdateInterval](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-signatureupdateinterval)
+  
+- **Monitorar atividade de arquivos e programas**: Permite que o Defender monitorize a atividade de ficheiros e programas nos dispositivos. As opções são:
+
+  - **Não configurado** (predefinição): Monitora todos os arquivos
+  - **Monitoramento desabilitado**
+  - **Monitorar todos os arquivos**
+  - **Monitorar somente arquivos recebidos**
+  - **Monitorar somente arquivos de saída**
+
+  [CSP do defender/RealTimeScanDirection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-realtimescandirection)
+
+- **Dias antes da exclusão de malware em quarentena**: Continue acompanhando o malware resolvido durante o número de dias que você insere para que você possa verificar manualmente os dispositivos afetados anteriormente. Se você definir o número de dias como `0`, o malware permanecerá na pasta de quarentena e não será removido automaticamente. Quando definido como `90`, os itens de quarentena são armazenados por 90 dias no sistema e, em seguida, removidos.
+
+  [CSP do defender/DaysToRetainCleanedMalware](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-daystoretaincleanedmalware)
+
+- **Limite de uso da CPU durante uma verificação**: Limite a quantidade de CPU que as verificações têm permissão para usar, `0` de `100`para.
+- **Verificar arquivos mortos**: **Habilitar** desativa o defender da verificação de arquivos mortos, como arquivos zip ou cab. **Não configurado** (padrão) permite essa verificação.
+
+  [CSP do defender/AllowArchiveScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowarchivescanning)
+
 - **Examinar mensagens de email recebidas**: **Habilitar** permite que o defender Verifique mensagens de email à medida que elas chegam no dispositivo. **Não configurado** (padrão) impede a verificação de email.
+
+  [CSP do defender/AllowEmailScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning)
+
 - **Verificar unidades removíveis durante uma verificação completa**: **Habilitar** impede verificações completas de unidades removíveis. **Não configurado** (padrão) permite que o defender Verifique unidades removíveis, como cartões USB.
+
+  Durante uma verificação rápida, as unidades removíveis ainda podem ser verificadas.
+
+  [CSP do defender/AllowFullScanRemovableDriveScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning)
+
 - **Verificar unidades de rede mapeadas durante uma verificação completa**: **Habilitar** permite que o defender examine arquivos em unidades de rede mapeadas. **Não configurado** (padrão) impede a verificação completa. Se os arquivos na unidade forem somente leitura, o defender não poderá remover nenhum malware encontrado neles.
+
+  Durante uma verificação rápida, as unidades de rede mapeadas ainda podem ser verificadas.
+
+  [CSP do defender/AllowFullScanOnMappedNetworkDrives](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanonmappednetworkdrives)
+
 - **Verificar arquivos abertos de pastas de rede**: **Não configurado** (padrão) permite que o defender Verifique arquivos em unidades de rede compartilhadas, como arquivos acessados de um caminho UNC. **Habilitar** impede esta verificação. Se os arquivos na unidade forem somente leitura, o defender não poderá remover nenhum malware encontrado neles.
+
+  [CSP do defender/AllowScanningNetworkFiles](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles)
+
 - **Proteção da nuvem**: **Não configurado** (padrão) permite que o Microsoft Active Protection Service receba informações sobre a atividade de malware de dispositivos que você gerencia. **Habilitar** bloqueia esse recurso.
+
+  [CSP do defender/AllowCloudProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowcloudprotection)
+
 - **Avisar os usuários antes do envio de exemplo**: Controla se arquivos potencialmente mal-intencionados que podem exigir análise adicional são enviados automaticamente à Microsoft. As opções são:
-  - **Não configurado**
+
+  - **Não configurado** (predefinição): Envie amostras seguras automaticamente.
   - **Sempre avisar**
   - **Avisar antes de enviar dados pessoais**
   - **Nunca enviar dados**
-  - **Enviar todos os dados sem avisar**: Os dados são enviados automaticamente
+  - **Enviar todos os dados sem avisar**: Os dados são enviados automaticamente.
+
+  [CSP do defender/SubmitSamplesConsent](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent)
 
 - **Tempo para executar uma verificação rápida diária**: Escolha a hora para executar uma verificação rápida diária. **Não configurado** não executa uma verificação diária. Se você quiser mais personalização, configure o **tipo de verificação do sistema para executar** a configuração.
 
@@ -756,25 +766,32 @@ Essas configurações usam o [CSP de política do defender](https://docs.microso
     - **Dia agendado**: Escolha o dia para executar a verificação.
     - **Hora agendada**: Escolha a hora para executar a verificação.
 
-  Essa configuração pode entrar em conflito com o **tempo para executar uma configuração de verificação rápida diária** . Algumas recomendações:
-
-  - Para executar uma verificação rápida diária, configure o **tempo para executar uma configuração de verificação rápida diária** .
-  - Para executar uma verificação rápida diária e uma verificação completa toda semana, configure o **tempo para executar uma verificação rápida diária**. Defina o **tipo de verificação do sistema a ser executada** em uma verificação completa com o dia e a hora.
-  - Não configure o **tempo para executar uma configuração de verificação rápida diária** simultaneamente com o **tipo de verificação do sistema para executar** a **verificação rápida**. Essas configurações podem entrar em conflito e uma verificação pode não ser executada.
-  - Para executar uma verificação rápida toda terça-feira às 18h, configure o **tipo de verificação do sistema para executar** a configuração.
+  > [!TIP]
+  > Essa configuração pode entrar em conflito com o **tempo para executar uma configuração de verificação rápida diária** . Algumas recomendações:  
+  >
+  > - Se você quiser agendar uma verificação rápida diária e uma verificação completa semanal, então:
+  >   1. Configure o **tempo para executar uma configuração de verificação rápida diária** .
+  >   2. Configure o **tipo de verificação do sistema a ser executado para realizar** uma verificação completa.
+  > 
+  > - Se você quiser apenas uma verificação rápida diária (sem verificação completa), use qualquer uma das configurações: **Tempo para executar uma verificação rápida diária ou o** **tipo de verificação do sistema a ser executado**. Por exemplo, para executar uma verificação rápida toda terça-feira às 18h, configure o **tipo de verificação do sistema para executar** a configuração.
+  > 
+  > - Não configure o **tempo para executar uma configuração de verificação rápida diária** simultaneamente com o **tipo de verificação do sistema para executar** a **verificação rápida**. Essas configurações podem entrar em conflito e uma verificação pode não ser executada.
 
   [CSP do defender/ScanParameter](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-scanparameter)  
   [CSP do defender/ScheduleScanDay](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescanday)  
   [CSP do defender/ScheduleScanTime](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescantime)
 
-- **Detectar aplicativos potencialmente**indesejados: Escolha o nível de proteção quando o Windows detectar aplicativos potencialmente indesejados. As opções são:
+- **Detectar aplicativos potencialmente indesejados**: Escolha o nível de proteção quando o Windows detectar aplicativos potencialmente indesejados. As opções são:
   - **Não configurado** (predefinição): A proteção de aplicativos potencialmente indesejados do Windows Defender está desabilitada.
   - **Bloquear**: O Windows Defender detecta aplicativos potencialmente indesejados e os itens detectados são bloqueados. Esses itens são mostrados em histórico junto com outras ameaças.
   - **Auditoria**: O Windows Defender detecta aplicativos potencialmente indesejados, mas não realiza nenhuma ação. Você pode examinar as informações sobre os aplicativos que o Windows Defender tomaria em ação. Por exemplo, pesquise eventos criados pelo Windows Defender no Visualizador de Eventos.
 
-  Para obter mais informações sobre aplicativos potencialmente indesejados, consulte [detectar e bloquear aplicativos potencialmente](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus)indesejados.
+  Para obter mais informações sobre aplicativos potencialmente indesejados, consulte [detectar e bloquear aplicativos potencialmente indesejados](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus).
 
-- **Ações sobre ameaças de malware detectadas**: Escolha as ações que você deseja que o defender assuma para cada nível de ameaça que detecta: baixa, moderada, alta e grave. Se não for possível, o Windows Defender escolherá a melhor opção para garantir que a ameaça seja corrigida. As opções são:
+  [CSP do defender/PUAProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-puaprotection)
+
+- **Ações sobre ameaças de malware detectadas**: Escolha como você deseja tratar os threads de malware. **Não configurado** (padrão) permite que o Microsoft defender escolha a melhor opção. Quando definido como **habilitar**, escolha as ações que você deseja que o defender assuma para cada nível de ameaça que detectar: baixa, moderada, alta e grave. As opções são:
+  
   - **Limpar**
   - **Quarentena**
   - **Remove**
@@ -782,7 +799,9 @@ Essas configurações usam o [CSP de política do defender](https://docs.microso
   - **Definido pelo utilizador**
   - **Bloquear**
 
-Selecione **OK** para guardar as alterações.
+  Se a ação não for possível, o Windows Defender escolherá a melhor opção para garantir que a ameaça seja corrigida. 
+
+  [CSP do defender/ThreatSeverityDefaultAction](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-threatseveritydefaultaction)
 
 ### <a name="windows-defender-antivirus-exclusions"></a>Exclusões do Antivírus do Windows Defender
 
@@ -790,8 +809,6 @@ Selecione **OK** para guardar as alterações.
 - **Extensões de arquivo a serem excluídas das verificações e da proteção em tempo real**: Adicione uma ou mais extensões de ficheiro, como **jpg** ou **txt**, à lista de exclusões. Todos os arquivos com essas extensões não são incluídos em verificações em tempo real ou programadas.
 - **Processos a serem excluídos das verificações e da proteção em tempo real**: Adicione um ou mais processos do tipo **.exe**, **.com** ou **.scr** à lista de exclusões. Esses processos não estão incluídos em verificações em tempo real ou programadas.
 
-Selecione **OK** para guardar as alterações.
-
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Passos Seguintes
 
 Para obter os detalhes técnicos adicionais de cada definição e quais as edições do Windows suportadas, veja [Windows 10 Policy CSP Reference](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider) (Referência de CSP de Políticas do Windows 10)
