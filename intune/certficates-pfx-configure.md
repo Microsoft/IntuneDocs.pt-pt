@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bf4559d03f7dfc8ec8c48242defa391b4b49e41a
-ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
+ms.openlocfilehash: 25beef7e6593865b92e349163768ded5ce3b9e2d
+ms.sourcegitcommit: 5bb46d3c0bf8c5595132c4200849b1c4bcfe7cdb
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70122403"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70376940"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>Configurar e utilizar certificados PKCS com o Intune
 
@@ -63,7 +63,7 @@ Para usar certificados PKCS com o Intune, você precisará da seguinte infraestr
   O Microsoft Intune Certificate Connector também dá suporte ao modo padrão FIPS (FIPS). O FIPS não é obrigatório, mas pode emitir e revogar certificados quando está ativado.
 
 - **Conector de certificado pfx para Microsoft Intune**:  
-  Se você planeja usar a criptografia de email S/MIME, use o portal do Intune para baixar o conector para *certificados PFX*importados.  Vá para **configuração** > do dispositivo**conectores** > de certificado**Adicionar**e siga as *etapas para instalar o conector para certificados PFX*importados. Use o link de download no portal para iniciar o download do instalador **PfxCertificateConnectorBootstrapper. exe**. 
+  Se você planeja usar a criptografia de email S/MIME, use o portal do Intune para baixar o conector para *certificados PFX importados*.  Vá para **configuração** > do dispositivo**conectores** > de certificado**Adicionar**e siga as *etapas para instalar o conector para certificados PFX importados*. Use o link de download no portal para iniciar o download do instalador **PfxCertificateConnectorBootstrapper. exe**. 
 
   Cada locatário do Intune dá suporte a uma única instância desse conector. Você pode instalar esse conector no mesmo servidor que uma instância do conector de certificado Microsoft Intune.
 
@@ -73,7 +73,7 @@ Para usar certificados PKCS com o Intune, você precisará da seguinte infraestr
   - Instale o conector de certificado PFX importado para Microsoft Intune no servidor.  
   - Para receber atualizações importantes automaticamente, verifique se os firewalls estão abertos e permita que o conector entre em contato com o **AutoUpdate.msappproxy.net** na porta **443**.   
 
-  Para obter mais informações sobre todos os pontos de extremidade de rede que o conector deve ser capaz de acessar, consulte [Microsoft Intune Certificate Connector](intune-endpoints.md#microsoft-intune-certificate-connector).
+  Para obter mais informações sobre todos os pontos de extremidade de rede que o conector deve ser capaz de acessar, consulte [Microsoft Intune Certificate Connector](intune-endpoints.md).
 
 - **Windows Server**:  
   Você usa um Windows Server para hospedar:
@@ -157,7 +157,7 @@ Para autenticar um dispositivo com VPN, WiFi ou outros recursos, um dispositivo 
 5. O Microsoft Intune Certificate Connector abre a guia **registro** . Para ativar a ligação ao Intune, selecione **Sign In** (Iniciar Sessão) e introduza uma conta com permissões administrativas globais.
 6. No separador **Avançadas**, recomendamos que deixe a opção **Utilizar a conta SYSTEM deste computador (predefinição)** selecionada.
 7. **Aplicar** > **Fechar**
-8. Volte para o portal do Intune (conectores de**certificação**de**configuração** > de dispositivo do**Intune** > ). Após alguns instantes, uma marca de seleção verde é mostrada e o **status da conexão** é **ativo**. Agora o servidor do conector pode comunicar com o Intune.
+8. Volte para o portal do Intune (**conectores de certificação**de**configuração** > de dispositivo do**Intune** > ). Após alguns instantes, uma marca de seleção verde é mostrada e o **status da conexão** é **ativo**. Agora o servidor do conector pode comunicar com o Intune.
 9. Se você tiver um proxy Web no seu ambiente de rede, talvez precise de configurações adicionais para permitir que o conector funcione. Para obter mais informações, consulte [trabalhar com servidores proxy locais existentes](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-connectors-with-proxy-servers) na documentação do Azure Active Directory.
 
 > [!NOTE]  
@@ -176,7 +176,7 @@ Para autenticar um dispositivo com VPN, WiFi ou outros recursos, um dispositivo 
 
 5. O PFX Certificate Connector for Microsoft Intune abre o separador **Enrollment** (Inscrição) após a instalação. Para ativar a ligação ao Intune, selecione **Sign In** (Iniciar Sessão) e introduza uma conta com permissão de administrador global do Azure ou de administrador do Intune.
 6. Feche a janela.
-7. Volte para a Portal do Azure (conectores de**certificação**de**configuração** > de dispositivo do**Intune** > ). Após alguns instantes, uma marca de seleção verde é mostrada e o **status da conexão** é **ativo**. Agora o servidor do conector pode comunicar com o Intune.
+7. Volte para a Portal do Azure (**conectores de certificação**de**configuração** > de dispositivo do**Intune** > ). Após alguns instantes, uma marca de seleção verde é mostrada e o **status da conexão** é **ativo**. Agora o servidor do conector pode comunicar com o Intune.
 
 ## <a name="create-a-trusted-certificate-profile"></a>Criar um perfil de certificado fidedigno
 
@@ -282,7 +282,7 @@ O *conector de certificados PFX para Microsoft Intune* [dá suporte a atualizaç
   - Corrigido um problema em que o conector pode falhar ao se registrar no Intune depois de entrar no conector com uma conta de administrador global.  
 
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Passos Seguintes
 
 O perfil está criado, mas ainda não está ativo. Em seguida, [atribua o perfil](device-profile-assign.md) e [monitorize o estado](device-profile-monitor.md).
 
