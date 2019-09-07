@@ -12,63 +12,57 @@ ms.localizationpriority: high
 ms.technology: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5a5c9dea847ace51c7d6f06cfa43c44beead18f8
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: 6df42d908169ab591150e88e03f2f419710c9e54
+ms.sourcegitcommit: e477e399cba673a2a9e1fa342e8303ed993801eb
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373423"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70739211"
 ---
-# <a name="add-ios-software-update-policies-in-intune"></a>Adicionar políticas de atualização de software iOS no Intune
+# <a name="add-ios-software-update-policies-in-intune"></a>Adicionar políticas de atualização de software do iOS no Intune
 
 As políticas de atualização de software permitem-lhe forçar os dispositivos iOS supervisionados a instalarem automaticamente as atualizações de SO disponíveis mais recentes. Ao configurar uma política, pode adicionar os dias e as horas em que não quer que os dispositivos instalem uma atualização. 
 
 Esta funcionalidade aplica-se a:
 
-- iOS 10.3 ou posterior (supervisionado)
+- iOS 10,3 e posterior (supervisionado)
 
 O dispositivo comunica com o Intune aproximadamente de 8 em 8 horas. Se uma atualização estiver disponível num período de tempo não restringido, o dispositivo irá transferir e instalar a atualização de SO mais recente. Não é necessária nenhuma interação do utilizador para atualizar o dispositivo. A política não impede um utilizador de atualizar manualmente o SO.
 
 ## <a name="configure-the-policy"></a>Configurar a política
 
-1. Inicie sessão no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Selecione **Atualizações de Software** > **Atualizar políticas para iOS** > **Criar**.
 3. Introduza as seguintes definições:
 
-    - **Nome**: Introduza um nome para a política de atualizações de software. Por exemplo, introduza `iOS restricted update times`.
-    - **Descrição**: Introduza uma descrição para a sua política. Esta definição é opcional, mas recomendada.
+    - **Nome**: Insira um nome para a política de atualizações de software. Por exemplo, introduza `iOS restricted update times`.
+    - **Descrição**: Insira uma descrição para a política. Esta definição é opcional, mas recomendada.
 
-4. Selecione **definições > configurar**. Introduza as seguintes definições:
+4. Selecione **configurações > configurar**. Introduza as seguintes definições:
 
-    - **Selecionar horas para impedir instalações de atualização**: Especifique um intervalo de tempo limitado quando as atualizações a forçar não estão instaladas. 
-      - Blocos de dia não são suportados e poderão não funcionar. Por exemplo, não configure uma política com uma *hora de início* de 8 PM e um *hora de fim* de 6 da Manhã.
-      - Uma política que começa em 12 AM e termina às 12h, mas é avaliada como 0 horas e não de 24 horas, que resulta em nenhuma restrição.
+    - **Selecione horários para evitar instalações de atualização**: Especifique um período de tempo restrito quando as atualizações não forem instaladas de modo forçado. 
+      - Blocos noturnos não têm suporte e podem não funcionar. Por exemplo, não configure uma política com uma *hora de início* de 8 p.m. e uma *hora de término* de 18:00.
+      - Uma política que começa às 12 AM e termina às 12 horas é avaliada como 0 hora e não 24 horas, o que resulta em nenhuma restrição.
 
-      Ao definir o período de tempo limitado, introduza os seguintes detalhes:
+      Ao definir o período de tempo restrito, insira os seguintes detalhes:
 
-      - **Dias**: Escolha o dia da semana, quando as atualizações não estiverem instaladas (s). Por exemplo, confira segunda-feira, quarta-feira e sexta-feira para impedir que as atualizações sejam instalados no hoje em dia.
+      - **Dias**: Escolha os dias da semana em que as atualizações não estão instaladas. Por exemplo, verifique segunda-feira, quarta-feira e sexta-feira para impedir que as atualizações sejam instaladas nestes dias.
       - **Fuso horário**: Escolha um fuso horário.
-      - **Hora de início**: Escolha a hora de início do intervalo de tempo limitado. Por exemplo, introduza 5 AM, para que as atualizações não são instaladas a partir de às 05:00.
-      - **Hora de fim**: Escolha a hora de fim do período de tempo limitado. Por exemplo, introduza 1 AM, para que as atualizações podem ser instaladas a partir de 1 AM.
+      - **Hora de início**: Escolha a hora de início do período de tempo restrito. Por exemplo, digite 5 para que as atualizações não sejam instaladas a partir das 17:00.
+      - **Hora de término**: Escolha a hora de término do período de tempo restrito. Por exemplo, digite 1. portanto, as atualizações podem ser instaladas a partir de 1 A.M.
 
-    - **Atrasar a visibilidade das atualizações de software para os usuários finais sem alterações atualizações agendadas (dias)** : 
+    - **Atrasar a visibilidade das atualizações de software para os usuários finais sem alteração nas atualizações agendadas (dias)** : 
 
-      **Esta definição movida para [restrições de dispositivos](device-restrictions-ios.md#general). Esta será removida a partir desta localização no portal do**. Para um curto período de tempo, as políticas existentes podem ser alteradas aqui. Depois de sobre um mês, esta definição será removida das políticas existentes.
+      \* * Se você quiser atrasar a visibilidade de atualizações de software por um período específico em seus dispositivos iOS supervisionados, defina essas configurações em [restrições de dispositivo](device-restrictions-ios.md#general).
+     
+      > [! Fundamental  
+      > Uma política que tem uma *hora de início* e *hora de término* definida como 12 am é avaliada como 0 hora e não 24 horas. Isso resulta em nenhuma restrição.  
 
-      Para limitar o impacto, recomendamos:
-        - Remova a política existente a partir desta localização no portal.
-        - Criar uma nova [política de restrição de dispositivos](device-restrictions-ios.md#general).
-        - Segmenta os mesmos utilizadores como a política original.
-
-      Se houver um conflito, esta definição não faz nada *, a menos que* os dois valores são idênticos. Para evitar um conflito, certifique-se de que alterar ou remover a política existente a partir desta localização no portal.
-      > [! Importante]  
-      > Uma política que tem um *hora de início* e *hora de fim* conjunto até as 12:00 é avaliado como 0 horas e não de 24 horas. Isso resulta em nenhuma restrição.  
-
-5. Selecione **OK** > **criar** para guardar as alterações e criar a política.
+5. Selecione **OK** > **criar** para salvar as alterações e criar a política.
 
 O perfil é criado e apresentado na lista de políticas.
 
-Para obter orientações da equipa de suporte do Intune, veja [atrasar a visibilidade das atualizações de software no Intune para dispositivos supervisionados](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Delaying-visibility-of-software-updates-in-Intune-for-supervised/ba-p/345753).
+Para obter diretrizes da equipe de suporte do Intune, consulte [atrasar a visibilidade das atualizações de software no Intune para dispositivos supervisionados](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Delaying-visibility-of-software-updates-in-Intune-for-supervised/ba-p/345753).
 
 > [!NOTE]
 > A MDM da Apple não lhe permite forçar um dispositivo a instalar atualizações numa determinada hora ou data.
@@ -84,7 +78,7 @@ Para obter orientações da equipa de suporte do Intune, veja [atrasar a visibil
     3. Introduza a hora de início e a hora de fim das horas bloqueadas
 
     > [!NOTE]
-    > Se o **hora de início** e **hora de fim** estão ambas definidas como 12h, mas, em seguida, o Intune não verifica para restrições sobre o quando instalar atualizações. Isso significa que quaisquer configurações que tem para **selecione vezes para impedir instalações de atualização** são ignoradas, e as atualizações podem instalar em qualquer altura.  
+    > Se a **hora de início** e a **hora de término** forem definidas como 12AM, o Intune não verificará se há restrições de quando instalar atualizações. Isso significa que as configurações que você tem para **selecionar os horários para evitar que as instalações de atualização** sejam ignoradas e as atualizações podem ser instaladas a qualquer momento.  
 
 ## <a name="assign-the-policy-to-users"></a>Atribuir uma política de atualização de iOS a utilizadores
 
@@ -99,7 +93,7 @@ Os dispositivos utilizados pelos utilizadores abrangidos pela política são ava
 
 ## <a name="monitor-device-installation-failures"></a>Monitorizar as falhas de instalação em dispositivos
 <!-- 1352223 -->
-**Atualizações de software** > **falhas de instalação para dispositivos iOS** mostra uma lista de iOS supervisionados dispositivos visado por uma política de atualização, tentaram uma atualização e não foi possível atualizar. Pode ver o estado com o motivo pelo qual cada um dos dispositivos não foi atualizado automaticamente. Os dispositivos atualizados e em bom estado de funcionamento não são apresentados na lista. Os dispositivos atualizados incluem as atualizações mais recentes suportadas pelos mesmos.
+**As** > **falhas de instalação de atualizações de software para dispositivos IOS** mostram uma lista de dispositivos IOS supervisionados direcionados por uma política de atualização, tentou uma atualização e não puderam ser atualizadas. Pode ver o estado com o motivo pelo qual cada um dos dispositivos não foi atualizado automaticamente. Os dispositivos atualizados e em bom estado de funcionamento não são apresentados na lista. Os dispositivos atualizados incluem as atualizações mais recentes suportadas pelos mesmos.
 
 ## <a name="next-steps"></a>Passos Seguintes
 

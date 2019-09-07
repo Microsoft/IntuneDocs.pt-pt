@@ -1,26 +1,26 @@
 ---
 title: Usar o Microsoft defender ATP no Microsoft Intune – Azure | Microsoft Docs
-description: Use a proteção avançada contra ameaças do Microsoft defender (Microsoft defender ATP) com o Intune, incluindo instalação e configuração, integração de seus dispositivos do Intune com ATP e, em seguida, use uma avaliação de risco ATP de dispositivos com a conformidade do dispositivo do Intune e a condicional políticas de acesso para proteger os recursos de rede.
+description: Use a proteção avançada contra ameaças do Microsoft defender (Microsoft defender ATP) com o Intune, incluindo instalação e configuração, integração de seus dispositivos Intune com ATP e, em seguida, use uma avaliação de risco ATP de dispositivos com a conformidade do dispositivo do Intune e condicional políticas de acesso para proteger os recursos de rede.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/26/2019
+ms.date: 09/06/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
-ms.reviewer: joglocke
+ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b148abfaeffaf02178e34c3e9abfe86f70fb529c
-ms.sourcegitcommit: ec22a186a9cfa489a8490698e387624e480892d8
+ms.openlocfilehash: 0d9fe180e81c9e661954dd0986f05ac3b5e749ed
+ms.sourcegitcommit: e477e399cba673a2a9e1fa342e8303ed993801eb
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68960657"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70739191"
 ---
 # <a name="enforce-compliance-for-microsoft-defender-atp-with-conditional-access-in-intune"></a>Impor a conformidade para o Microsoft defender ATP com acesso condicional no Intune  
 
@@ -101,6 +101,7 @@ Quando você estabeleceu a conexão com o Microsoft defender ATP, o Intune receb
 
 Depois de carregar um dispositivo usando o pacote de configuração, você não precisará fazê-lo novamente. Também pode carregar dispositivos através de uma [política de grupo ou o System Center Configuration Manager (SCCM)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
 
+
 ### <a name="create-the-device-configuration-profile"></a>Criar o perfil de configuração do dispositivo
 
 1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
@@ -113,15 +114,16 @@ Depois de carregar um dispositivo usando o pacote de configuração, você não 
    - **Tipo de pacote de configuração de cliente do Microsoft defender ATP**: Selecione **carregar** para adicionar o pacote de configuração ao perfil. Selecione **Descarregar** para remover o pacote de configuração do perfil.
   
      > [!NOTE]  
-     > Se você estabeleceu corretamente uma conexão com o Microsoft defender ATP, o Intune integrará automaticamente o perfil de configuração para você e a configuração do **tipo de pacote de configuração do cliente Microsoft defender ATP** não estará disponível.
+     > Se você estabeleceu corretamente uma conexão com o Microsoft defender ATP, o Intune **integrará automaticamente o perfil de configuração** para você e a configuração do **tipo de pacote de configuração do cliente Microsoft defender ATP** não estará disponível.
   
     - **Compartilhamento de amostra para todos os arquivos**: **Habilitar** permite que os exemplos sejam coletados e compartilhados com o Microsoft defender ATP. Por exemplo, se você vir um arquivo suspeito, poderá enviá-lo para o Microsoft defender ATP para análise profunda. **Não configurado** não compartilha amostras para o Microsoft defender ATP.
-    - **Acelere a frequência de relatórios**de telemetria: Para dispositivos que estão em alto risco, **habilite** essa configuração para que ela relate a telemetria ao serviço Microsoft defender ATP com mais frequência.
+    - **Acelere a frequência de relatórios de telemetria**: Para dispositivos que estão em alto risco, **habilite** essa configuração para que ela relate a telemetria ao serviço Microsoft defender ATP com mais frequência.
 
     [Carregar computadores Windows 10 usando System Center Configuration Manager](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-sccm) tem mais detalhes sobre essas configurações do Microsoft defender ATP.
 
 7. Selecione **OK** e **Criar** para guardar as alterações. O perfil será criado.
 8. [Atribua o perfil de configuração do dispositivo](device-profile-assign.md) aos dispositivos que você deseja avaliar com o Microsoft defender ATP.  
+
 
 ## <a name="create-and-assign-the-compliance-policy"></a>Criar e atribuir a política de conformidade  
 
@@ -180,7 +182,10 @@ Em seguida, monitore o estado dos dispositivos que têm a política de conformid
 2. Selecione **Conformidade do dispositivo** > **Conformidade com a política**.
 3. Localize sua política do Microsoft defender ATP na lista e veja quais dispositivos estão em conformidade ou em não conformidade.
 
-## <a name="next-steps"></a>Passos seguintes  
+## <a name="view-onboarding-status"></a>Exibir status de integração
+Para exibir o status de integração de todos os dispositivos Windows 10 gerenciados pelo Intune, você pode ir para **conformidade** > **do dispositivo Microsoft defender ATP**. Nessa página, você também pode iniciar a criação de um perfil de configuração de dispositivo para integração de mais dispositivos ao Microsoft defender ATP.
+
+## <a name="next-steps"></a>Passos Seguintes  
 
 [Acesso condicional do Microsoft defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/conditional-access)   
 [Painel de riscos do Microsoft defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/security-operations-dashboard)  

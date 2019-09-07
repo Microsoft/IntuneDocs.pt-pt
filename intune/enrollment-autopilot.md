@@ -17,17 +17,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0316138451c6105f22c196d17c1f2ec3b1f2e375
-ms.sourcegitcommit: 6c74ff568267d85fd1d44fda75e3e24ead87cb2b
+ms.openlocfilehash: 07f1a994f6ca7da83d7e98b339021997c506534d
+ms.sourcegitcommit: e477e399cba673a2a9e1fa342e8303ed993801eb
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70062944"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70739257"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Inscrever dispositivos Windows no Intune com o Windows Autopilot  
 O Windows Autopilot simplifica a inscrição de dispositivos no Intune. A criação e manutenção de imagens personalizadas do sistema operativo são um processo moroso. Também poderá demorar a aplicar estas imagens personalizadas do sistema operativo a novos dispositivos para as preparar para utilização antes de as disponibilizar aos seus utilizadores finais. Com o Microsoft Intune e o Autopilot, pode fornecer novos dispositivos aos seus utilizadores finais sem ter de criar, manter e aplicar imagens de sistema operativo personalizadas aos dispositivos. Ao utilizar o Intune para gerir dispositivos do Autopilot, pode gerir políticas, perfis, aplicações, entre outros, após estes serem inscritos. Para uma descrição geral das vantagens, cenários e pré-requisitos, veja [Descrição geral do Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
 
-Há quatro tipos de implantação do AutoPilot: [Modo](https://docs.microsoft.com/windows/deployment/windows-autopilot/self-deploying) de autoimplantação para quiosques, pôsteres digitais ou um dispositivo compartilhado, o [White diferenciada](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove) permite que os parceiros ou a equipe de ti Desprovisione previamente um PC com Windows 10 para que ele seja totalmente configurado e pronto para os negócios, o AutoPilot [para dispositivos existentes](https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices) permite você implante facilmente a versão mais recente do Windows 10 em seus dispositivos existentes e no [modo controlado pelo usuário](https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven) para usuários tradicionais. 
+Há quatro tipos de implantação do AutoPilot:
+- [Modo de autoimplantação](https://docs.microsoft.com/windows/deployment/windows-autopilot/self-deploying) para quiosques, pôsteres digitais ou um dispositivo compartilhado
+- O [diferenciada branco](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove) permite que os parceiros ou a equipe de ti pré-provisionar um PC com Windows 10 para que ele seja totalmente configurado e o[piloto automático pronto para os negócios para dispositivos existentes](https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices) permite que você implante facilmente a versão mais recente do Windows 10 em seus dispositivos existentes
+- [Modo controlado pelo usuário](https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven) para usuários tradicionais. 
 
 
 ## <a name="prerequisites"></a>Pré-requisitos
@@ -93,7 +96,7 @@ Os perfis de implementação do Autopilot são utilizados para configurar os dis
 4. Selecione **Seguinte**.
 5. Na página **OOBE (instalação inicial do uso)** , para o modo de **implantação**, escolha uma destas duas opções:
     - **Controlado pelo usuário**: Os dispositivos com este perfil estão associados ao utilizador que inscreve o dispositivo. Precisa de credenciais de utilizador para inscrever o dispositivo.
-    - **Autoimplantação (visualização)** : os dispositivos do Windows 10, versão 1809 ou posteriores com esse perfil não estão associados ao usuário que está registrando o dispositivo. Não são necessárias credenciais de utilizador para inscrever o dispositivo.
+    - **Autoimplantação (visualização)** : os dispositivos do Windows 10, versão 1809 ou posteriores com esse perfil não estão associados ao usuário que está registrando o dispositivo. Não são necessárias credenciais de utilizador para inscrever o dispositivo. Quando um dispositivo não tem nenhum usuário associado a ele, as políticas de conformidade baseadas no usuário não se aplicam a ele. Ao usar o modo de implantação automática, somente as políticas de conformidade direcionadas ao dispositivo serão aplicadas.
 
     ![Captura de tela da página OOBE](media/enrollment-autopilot/create-profile-outofbox.png)
 
@@ -178,7 +181,7 @@ A remoção completa de um dispositivo do seu locatário exige que você exclua 
 
 1. Se os dispositivos estiverem registrados no Intune, você deverá primeiro [excluí-los da folha todos os dispositivos do Intune](devices-wipe.md#delete-devices-from-the-azure-active-directory-portal).
 
-2. Exclua os dispositivos em dispositivos de > Azure Active Directory em dispositivos dispositivos**do Azure ad**.
+2. Exclua os dispositivos em dispositivos de **Azure Active Directory em** > dispositivos dispositivos**do Azure ad**.
 
 3. Exclua os dispositivos do Windows AutoPilot **no registro** > de dispositivo**dispositivos**de**registro** > do Windows. Escolha os dispositivos que você deseja excluir e, em seguida, escolha **excluir**. A exclusão do dispositivo do Windows AutoPilot pode levar alguns minutos para ser concluída.
 
