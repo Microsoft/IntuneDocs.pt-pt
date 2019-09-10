@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/06/2019
+ms.date: 09/09/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 890d398de938680447b71a46d4e329a6bdf52616
-ms.sourcegitcommit: ec22a186a9cfa489a8490698e387624e480892d8
+ms.openlocfilehash: d87b617f49a3df71b767fe91f1f03f88f36ee8a3
+ms.sourcegitcommit: a25cd79a33feb536d9b2fc11aa7d3e3972f1ca5a
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68960588"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70842196"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune autônomo-gerenciamento de aplicativos do Win32
 
@@ -292,7 +292,7 @@ Você pode escolher se deseja ou não instalar cada aplicativo dependente automa
 
 Para adicionar uma dependência de aplicativo ao seu aplicativo Win32, use as seguintes etapas:
 
-1. No Intune, selecione aplicativos de **aplicativos** > cliente para exibir sua lista de aplicativos cliente adicionados. 
+1. No Intune,**selecione aplicativos de** **aplicativos** > cliente para exibir sua lista de aplicativos cliente adicionados. 
 2. Selecione um aplicativo **do Windows (Win32)** adicionado. 
 3. Selecione **dependências** para adicionar os aplicativos dependentes que devem ser instalados antes que o aplicativo Win32 possa ser instalado. 
 4. Clique em **Adicionar** para adicionar uma dependência de aplicativo.
@@ -324,7 +324,7 @@ A imagem a seguir notifica o usuário final que as alterações de aplicativo es
 ![Captura de tela notificando o usuário de que as alterações do aplicativo estão sendo feitas](./media/apps-win32-app-09.png)    
 
 ## <a name="toast-notifications-for-win32-apps"></a>Notificações do sistema para aplicativos Win32 
-Se necessário, você pode suprimir a exibição de notificações do sistema de usuário final por atribuição de aplicativo. No Intune, selecione aplicativos de **aplicativos** > cliente > selecione as **atribuições** > de > de aplicativo**incluem grupos**. 
+Se necessário, você pode suprimir a exibição de notificações do sistema de usuário final por atribuição de aplicativo. No Intune,**selecione aplicativos de** **aplicativos** > cliente > selecione as **atribuições** > de > de aplicativo**incluem grupos**. 
 
 > [!NOTE]
 > As aplicações Win32 instaladas da extensão de gestão do Intune não serão desinstaladas em dispositivos não inscritos. Os administradores podem tirar partido da exclusão de atribuição para não oferecer aplicações Win32 em dispositivos BYOD.

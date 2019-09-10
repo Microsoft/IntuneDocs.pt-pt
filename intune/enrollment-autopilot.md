@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 07f1a994f6ca7da83d7e98b339021997c506534d
-ms.sourcegitcommit: e477e399cba673a2a9e1fa342e8303ed993801eb
+ms.openlocfilehash: e0f1f7d937f08e32b30ee9facdcca03d263bc27e
+ms.sourcegitcommit: a25cd79a33feb536d9b2fc11aa7d3e3972f1ca5a
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70739257"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70842171"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Inscrever dispositivos Windows no Intune com o Windows Autopilot  
 O Windows Autopilot simplifica a inscrição de dispositivos no Intune. A criação e manutenção de imagens personalizadas do sistema operativo são um processo moroso. Também poderá demorar a aplicar estas imagens personalizadas do sistema operativo a novos dispositivos para as preparar para utilização antes de as disponibilizar aos seus utilizadores finais. Com o Microsoft Intune e o Autopilot, pode fornecer novos dispositivos aos seus utilizadores finais sem ter de criar, manter e aplicar imagens de sistema operativo personalizadas aos dispositivos. Ao utilizar o Intune para gerir dispositivos do Autopilot, pode gerir políticas, perfis, aplicações, entre outros, após estes serem inscritos. Para uma descrição geral das vantagens, cenários e pré-requisitos, veja [Descrição geral do Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
@@ -77,9 +77,9 @@ Pode adicionar dispositivos Windows Autopilot ao importar um ficheiro CSV com as
     3. Para **Tipo de associação**, selecione **Atribuído** ou **Dispositivo Dinâmico**.
 3. Se optou por **Atribuído** para o **Tipo de associação** no passo anterior, no painel **Grupo**, selecione **Membros** e adicione dispositivos do Autopilot ao grupo.
     Os dispositivos Autopilot que ainda não estão inscritos são dispositivos em que o nome é igual ao número de série do dispositivo.
-4. Se acima optou por **Dispositivo Dinâmico** para o **Tipo de associação**, no painel **Grupo**, selecione **Membros de dispositivo dinâmicos** e escreva o seguinte código na caixa **Regra avançada**.
+4. Se acima optou por **Dispositivo Dinâmico** para o **Tipo de associação**, no painel **Grupo**, selecione **Membros de dispositivo dinâmicos** e escreva o seguinte código na caixa **Regra avançada**. Somente os dispositivos AutoPilot são coletados por essas regras, pois eles direcionam atributos que são apenas possuía por dispositivos AutoPilot.
     - Se você quiser criar um grupo que inclui todos os seus dispositivos de piloto automático, digite:`(device.devicePhysicalIDs -any _ -contains "[ZTDId]")`
-    - O campo de marca de grupo do Intune é mapeado para o atributo OrderID em dispositivos do Azure AD. Se você quiser criar um grupo que inclui todos os seus dispositivos de piloto automático com uma marca de grupo (OrderID) específica, digite:`(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`
+    - O campo de marca de grupo do Intune é mapeado para o atributo OrderID em dispositivos do Azure AD. Se você quiser criar um grupo que inclui todos os seus dispositivos de piloto automático com uma marca de grupo específica (o dispositivo OrderID do Azure AD), você deve digitar:`(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`
     - Se quiser criar um grupo que inclua todos os seus dispositivos do Autopilot com um ID de Nota de Encomenda específico, escreva `(device.devicePhysicalIds -any _ -eq "[PurchaseOrderId]:76222342342")`
     
     Depois de adicionar o código da **Regra avançada**, selecione **Guardar**.

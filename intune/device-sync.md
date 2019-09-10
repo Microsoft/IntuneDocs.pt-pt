@@ -1,13 +1,12 @@
 ---
-title: Sincronizar dispositivos com o Microsoft Intune – Azure | Microsoft Docs
+title: Sincronizar dispositivos com o Microsoft Intune-Azure | Microsoft Docs
 description: Sincronize dispositivos registados ou geridos com o Microsoft Intune para obter as políticas e ações mais recentes. Inclui os passos para sincronizar através do portal do Azure e lista os códigos de erro que podem ser repetidos.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/28/2019
+ms.date: 06/21/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -16,19 +15,17 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6f13e00abad5b48dcd7996cf9df1cc5756f250d3
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 30910de4ae17aa3fde573155bde4643e2c3d67f7
+ms.sourcegitcommit: 1925eba3fb0b30592f07a924119e20b661588d12
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57388101"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70808640"
 ---
 # <a name="sync-devices-to-get-the-latest-policies-and-actions-with-intune"></a>Sincronizar dispositivos para obter as políticas e ações mais recentes com o Intune
 
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
-
-A ação **Sincronizar** dispositivo força o dispositivo selecionado a registar-se imediatamente com o Intune. Quando um dispositivo dá entrada, recebe imediatamente todas as ações ou políticas pendentes que foram atribuídas ao mesmo. Esta funcionalidade pode ajudá-lo a validar e resolver imediatamente problemas de políticas que atribuiu, sem esperar pela próxima entrada agendada.
+A ação **Sincronizar** dispositivo força o dispositivo selecionado a registar-se imediatamente com o Intune. Quando um dispositivo dá entrada, recebe imediatamente todas as ações ou políticas pendentes que foram atribuídas ao mesmo. Esta funcionalidade pode ajudá-lo a validar e resolver imediatamente problemas de políticas que atribuiu, sem esperar pela próxima entrada agendada.
 
 ## <a name="supported-platforms"></a>Plataformas suportadas
 
@@ -40,15 +37,14 @@ A ação **Sincronizar** dispositivo força o dispositivo selecionado a registar
 
 ## <a name="sync-a-device"></a>Sincronizar um dispositivo
 
-1. Inicie sessão no [portal do Azure](https://portal.azure.com).
-2. Selecione **Todos os serviços**, filtre por **Intune** e, em seguida, selecione **Microsoft Intune**. 
+1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973). 
 3. No **Intune**, selecione **Dispositivos** > **Todos os dispositivos**.
-4. Na lista de dispositivos que gere, selecione um dispositivo, selecione **Mais** e, em seguida, selecione **Sincronizar**.
+4. Na lista de dispositivos que você gerencia, selecione um dispositivo para abrir seu painel *visão geral* e, em seguida, selecione **sincronizar**.
 5. Para confirmar, selecione **Sim**.
 
 Para ver o estado da ação de sincronização, selecione **Dispositivos** > **Ações de dispositivos**.
 
-Pode encontrar padrão Intune política entrada frequências no [tempos de ciclo de atualização](device-profiles.md).
+Você pode encontrar frequências de check-in de política do Intune padrão nos [tempos de ciclo de atualização](device-profile-troubleshoot.md#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned).
 
 ## <a name="retryable-error-codes"></a>Códigos de erro repetíveis
 
@@ -64,12 +60,12 @@ Quando um administrador executa a ação de dispositivo **Sincronizar**, as apli
 | 2016330894 | Perdeu a ligação à Internet. Reinicie a sua ligação. | Sim |
 | 2016330893 | Perdeu a ligação à Internet. Reinicie a sua ligação. | Sim|
 | 2016330892 | O roaming internacional está desativado. | Não|
-| 2016330891 | A ligação de dados via rede móvel para este dispositivo não pode ser acedida durante uma chamada. Aguarde a conclusão da chamada. | Sim|
-| 2016330890 | A rede móvel deste dispositivo. Neste momento, estes dispositivos não podem ser utilizados. | Não|
+| 2016330891 | A conexão de dados de celular para este dispositivo não pode ser acessada enquanto uma chamada telefônica está sendo feita. Aguarde a conclusão da chamada. | Sim|
+| 2016330890 | A rede móvel deste dispositivo. Esses dispositivos não puderam ser usados neste momento. | Não|
 | 2016330889 | A ligação segura falhou. Reinicie a sua ligação. | Sim|
 | 2016330888 | A avaliação da fidedignidade do servidor falhou. | Não|
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Passos seguintes
 
 Pode [verificar os detalhes](device-inventory.md) do dispositivo.
  
