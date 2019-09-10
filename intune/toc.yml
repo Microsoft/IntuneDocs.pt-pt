@@ -857,8 +857,8 @@
                   href: custom-settings-windows-10.md
             - name: Linhas de base de segurança
               items:
-                - name: Definições de linha de base do Windows 10
-                  href: security-baseline-settings-mdm.md
+                - name: Windows 10 MDM baseline settings (Definições de linha de base de MDM do Windows 10)
+                  href: security-baseline-settings-mdm-all.md
                 - name: Definições de linha de base do Microsoft Defender ATP
                   href: security-baseline-settings-defender-atp.md
             - name: Windows update settings (Definições do Windows Update)
@@ -1047,10 +1047,6 @@
               href: troubleshoot-software-updates-in-microsoft-intune.md
             - name: Erros comuns da proteção de pontos finais
               href: troubleshoot-endpoint-protection-in-microsoft-intune.md
-        - name: Security baselines archive (Arquivo das linhas de base de segurança)
-          items:
-            - name: Archived MDM security baselines (Linhas de base de segurança MDM arquivadas)
-              href: security-baseline-settings-mdm-archive.md
     - name: Guias de implementação de cenários
       items:
         - name: Proteger o Exchange Online
