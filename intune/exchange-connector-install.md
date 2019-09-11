@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5cf6299f46ed8db4fdca02947ce15a920816d110
-ms.sourcegitcommit: c715c93bb242f4fe44bbdf2fd585909854ed72b6
+ms.openlocfilehash: 3bc5f8a3f0094c363a705b37b904435ef9e91781
+ms.sourcegitcommit: 47b06bf2d32e2f84c382dec3366d6f4a31d98012
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68660948"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70864488"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune"></a>Configurar o Exchange Connector local do Intune no Microsoft Intune
 As informações neste artigo o ajudarão a instalar e monitorar o Exchange Active Sync Connector local para o Intune.  Use o Exchange Connector local do Intune com suas políticas de [acesso condicional para permitir ou bloquear o acesso às suas caixas de correio locais do Exchange](conditional-access-exchange-create.md). 
@@ -125,6 +125,9 @@ Execute os seguintes passos para instalar o Exchange Connector no local do Intun
 
 6. No campo **Palavra-passe**, forneça a palavra-passe desta conta para permitir que o Intune aceda ao Exchange Server.
 
+   > [!NOTE]
+   > Para que a conexão seja bem-sucedida, a conta que você usa para entrar no locatário precisa ter pelo menos o administrador de serviços do Intune. Sem ele, você receberá uma falha na conexão com o erro: "O servidor remoto retornou um erro: (400) solicitação inadequada ".
+
 7. Escolha **Ligar**.
 
    > [!NOTE]
@@ -209,5 +212,5 @@ Pode forçar a execução de uma sincronização por parte do conector ao utiliz
    2. Selecione **Exchange local Access**.
    3. Selecione o conector que pretende sincronizar e, em seguida, selecione **Sincronização Rápida** ou **Sincronização Completa**.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Passos Seguintes
 [Criar uma política de acesso condicional para o Exchange local](conditional-access-exchange-create.md)

@@ -11,17 +11,18 @@ ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
+ROBOTS: NOINDEX
 ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d02bbac925381d66f05d51a2f2abccee5d890dec
-ms.sourcegitcommit: 393953dd2a15aff68b246d3633b47566dd43f7cc
+ms.openlocfilehash: 6df943fdc0105b0f32401b79434045811f065bef
+ms.sourcegitcommit: 47b06bf2d32e2f84c382dec3366d6f4a31d98012
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70815540"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70864533"
 ---
 <!-- This article contains the exact baseline details for baseline versions that were previously published in security-baseline-settings-mdm.md.  -->
 
@@ -33,7 +34,7 @@ Quando uma nova linha de base de segurança do MDM é liberada, a lista anterior
 
 Quando uma versão de linha de base não tiver mais suporte para uso, ela será então removida deste artigo.
 
-- Exibir as configurações que estão disponíveis na [linha de base de segurança do MDM atual](https://docs.microsoft.com/intune/security-baseline-settings-mdm-all?pivots=mdm-may-2019) 
+- Exiba as configurações que estão disponíveis na [linha de base de segurança do MDM atual](https://docs.microsoft.com/intune/security-baseline-settings-mdm-all?pivots=mdm-may-2019). 
 - Saiba mais sobre [linhas de base de segurança](security-baselines.md)e como atualizar a versão de linha de base em seus perfis de linha de base de segurança.
 
 ## <a name="preview-mdm-security-baseline-for-october-2018"></a>Visualizar: Linha de base de segurança do MDM para outubro de 2018  
@@ -1438,7 +1439,7 @@ Para obter mais informações, consulte [Policy CSP-WindowsPowerShell](https://d
   
   **Padrão**: Enabled
  
-## <a name="next-steps"></a>Passos seguintes  
+## <a name="next-steps"></a>Passos Seguintes  
 
 [Exibir a versão de linha de base atual](https://docs.microsoft.com/intune/security-baseline-settings-mdm-all?pivots=mdm-may-2019)  
 [Atualizar perfis para usar uma nova versão de linha de base](security-baselines.md#change-the-baseline-version-for-a-profile)

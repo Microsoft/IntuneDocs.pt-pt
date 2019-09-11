@@ -11,17 +11,18 @@ ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
+ROBOTS: NOINDEX
 ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ecb3c8bff59f4fc99c6f819823dee1498228612b
-ms.sourcegitcommit: 1925eba3fb0b30592f07a924119e20b661588d12
+ms.openlocfilehash: d7bba4617aa756c5f7168a2febf1a3f1ffdd2029
+ms.sourcegitcommit: 47b06bf2d32e2f84c382dec3366d6f4a31d98012
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70808656"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70864553"
 ---
 # <a name="mdm-security-baseline-settings-for-intune"></a>Configurações de linha de base de segurança do MDM para o Intune  
 
@@ -1841,7 +1842,7 @@ A *linha de base de segurança do MDM para o modelo 2019 de maio* tem as seguint
 As seguintes configurações são:
 - *Novo* nesta versão mais recente da linha de base.
 - *Removido* desta versão de linha de base mais recente, mas estava presente na versão anterior.
-- *Revisado* de alguma forma de como as configurações apareciam na versão anterior. 
+- Revisado de alguma forma de como as configurações apareciam na versão anterior. 
 
 *[Novo]* [**Acima do bloqueio**](#above-lock):
 - **Ativar voz de aplicativos da tela bloqueada**    
@@ -1873,7 +1874,7 @@ As seguintes configurações são:
 - **Suporte à criptografia do Internet Explorer**  
 
 *[Revisado]* [**Internet Explorer**](#internet-explorer):
-- **Prompt automático da zona Internet do Internet Explorer para downloads de arquivo** > o valor padrão agora está **desabilitado**. Em visualização, isso foi definido como habilitado.
+- **Prompt automático da zona Internet do Internet Explorer para downloads de arquivo** > o valorpadrão agora está desabilitado. Em visualização, isso foi definido como habilitado.
 
 *[Novo]* [**Assistência remota**](#remote-assistance):  
 - **Assistência remota solicitada** 
