@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: c64ea07cb87bc980d01864468d788229bfc58a5f
-ms.sourcegitcommit: a6385b8370c20a44d0869f7920d6b2866edaa5e2
+ms.openlocfilehash: 469bdc54385f943fd0c42ccfd921293970b03b64
+ms.sourcegitcommit: 05139901411d14a85c2340c0ebae02d2c178a851
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/26/2019
-ms.locfileid: "70027378"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70905048"
 ---
 # <a name="monitor-device-encryption-with-intune"></a>Monitorar a criptografia de dispositivo com o Intune   
 
@@ -201,8 +201,7 @@ O Intune dá suporte a várias opções para girar e recuperar as chaves de recu
   1. Entre no site do *portal da empresa do Intune* em qualquer dispositivo.  
   2. No portal, vá para **dispositivos** e selecione o dispositivo MacOS que é criptografado com FileVault.  
   3. Selecione **obter chave de recuperação**. A chave de recuperação atual é exibida.  
-  
-     Em um iPhone, você deve selecionar os *três* pontos antes que a opção *obter chave de recuperação* seja exibida.  
+ 
 
 ## <a name="bitlocker-recovery-keys"></a>Chaves de recuperação do BitLocker  
 
@@ -220,6 +219,6 @@ Quando as chaves não estiverem no Azure AD, o Intune não exibirá *nenhuma cha
 
 As informações do BitLocker são obtidas usando o [provedor de serviços de configuração do BitLocker](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) (CSP). O CSP do BitLocker tem suporte no Windows 10 versão 1703 e posterior e para o Windows 10 pro versão 1809 e posterior.  
 
-## <a name="next-steps"></a>Passos seguintes  
+## <a name="next-steps"></a>Passos Seguintes  
 
 Criar uma política de [conformidade do dispositivo](compliance-policy-create-windows.md) .

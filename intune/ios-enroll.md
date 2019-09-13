@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2254c1e83764e9b29ab6fb99c016edef75aad43e
-ms.sourcegitcommit: bc3450fc7f19006b500edf5b395c01559b483ea4
+ms.openlocfilehash: 9fbd74bef87de873013a7d16c6ccd5198b0d7578
+ms.sourcegitcommit: b10cd30f1d2c3472b376be877764ac2fafccc8ba
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68738282"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70923254"
 ---
 # <a name="enroll-ios-devices-in-intune"></a>Inscrever dispositivos iOS no Intune
 
@@ -39,7 +39,7 @@ Antes de poder ativar dispositivos iOS, conclua os seguintes passos:
 
 ## <a name="user-owned-ios-devices-byod"></a>Dispositivos iOS propriedade do utilizador (BYOD)
 
-Pode permitir que os seus utilizadores inscrevam os respetivos dispositivos pessoais na gestão do Intune. Chama-se a isto "bring your own device (traga o seu próprio dispositivo)", ou BYOD. Após concluir os pré-requisitos e atribuir licenças aos utilizadores, estes podem transferir a aplicação Portal da Empresa do Intune a partir da App Store e seguir as instruções da inscrição na aplicação.
+Pode permitir que os seus utilizadores inscrevam os respetivos dispositivos pessoais na gestão do Intune. Chama-se a isto "bring your own device (traga o seu próprio dispositivo)", ou BYOD. Após concluir os pré-requisitos e atribuir licenças aos utilizadores, estes podem transferir a aplicação Portal da Empresa do Intune a partir da App Store e seguir as instruções da inscrição na aplicação. Você pode personalizar a declaração de privacidade Portal da Empresa em dispositivos iOS, conforme explicado na [personalização da política de privacidade](company-portal-app.md#privacy-statement-customization).
 
 ## <a name="company-owned-ios-devices"></a>Dispositivos iOS pertencentes à empresa
 Para as organizações que compram dispositivos para os respetivos utilizadores, o Intune suporta os seguintes métodos de inscrição de dispositivos iOS pertencentes à empresa:

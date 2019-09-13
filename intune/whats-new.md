@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 48474ca9fcfafcd050b7ef9c5a64adb56388b9a4
-ms.sourcegitcommit: a25cd79a33feb536d9b2fc11aa7d3e3972f1ca5a
+ms.openlocfilehash: 3abf0b45abfe7567692f6bb653c7c2a1c3986546
+ms.sourcegitcommit: f5d216e1b8230045161bb10afbc33d9608782229
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70842152"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70936661"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 
@@ -228,7 +228,7 @@ Você pode definir perfis de Programa de registro de dispositivos para ignorar a
 Para obter mais informações sobre a personalização do assistente de configuração, consulte [criar um perfil de registro da Apple para IOS](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile) e [criar um perfil de registro da Apple para MacOS ](device-enrollment-program-enroll-macos.md#create-an-apple-enrollment-profile).
 
 #### <a name="add-a-user-column-to-the-autopilot-device-csv-upload-process----3823054---"></a>Adicionar uma coluna de usuário ao processo de carregamento de CSV de dispositivo do AutoPilot <!-- 3823054 -->
-Agora você pode adicionar uma coluna de usuário ao upload de CSV para dispositivos do AutoPilot. Isso permite que você atribua usuários em massa no momento em que importar o CSV. O novo formato para as linhas no CSV tem esta aparência: número de série, Windows-Product-ID, hardware-hash, opcional-Group-tag, opcional-Assign-User. Para obter mais informações, consulte [registrar dispositivos Windows no Intune usando o piloto automático do Windows](enrollment-autopilot.md).
+Agora você pode adicionar uma coluna de usuário ao upload de CSV para dispositivos do AutoPilot. Isso permite que você atribua usuários em massa no momento em que importar o CSV. Para obter mais informações, consulte [registrar dispositivos Windows no Intune usando o piloto automático do Windows](enrollment-autopilot.md).
 
 
 ### <a name="device-management"></a>Gestão de dispositivos
@@ -1160,7 +1160,7 @@ O Portal da Empresa do Intune no macOS agora dá suporte ao modo escuro para mac
 ### <a name="app-management"></a>Gestão de aplicações
 
 #### <a name="toast-notifications-for-win32-apps----3136566-----"></a>Notificações do sistema para aplicativos Win32 <!-- 3136566   -->
-Você pode suprimir a exibição de notificações do sistema de usuário final por atribuição de aplicativo. No Intune,**selecione aplicativos de** **aplicativos** > cliente > selecione as **atribuições** > de > de aplicativo**incluem grupos**. 
+Você pode suprimir a exibição de notificações do sistema de usuário final por atribuição de aplicativo. No Intune, selecione aplicativos de **aplicativos** > cliente > selecione as **atribuições** > de > de aplicativo**incluem grupos**. 
 
 #### <a name="intune-app-protection-policies-ui-update----3251427----"></a>Atualização da interface do usuário das políticas de proteção de aplicativo <!-- 3251427  -->
 Alteramos os rótulos de configurações e botões para a proteção de aplicativo do Intune para facilitar a compreensão. Algumas das alterações incluem:  

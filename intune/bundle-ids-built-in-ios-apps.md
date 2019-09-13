@@ -1,7 +1,7 @@
 ---
-title: IDs de pacotes de iOS para as aplicações incorporadas no Microsoft Intune – Azure | Documentos da Microsoft
+title: IDs de pacote do iOS para aplicativos internos no Microsoft Intune-Azure | Microsoft Docs
 titleSuffix: ''
-description: Ver uma lista de IDs de coleção para aplicações iOS incorporadas. Utilize estes IDs de pacote para permitir explicitamente as aplicações nos perfis de configuração do dispositivo e as políticas no Microsoft Intune.
+description: Consulte uma lista das IDs de pacote para os aplicativos iOS internos. Use essas IDs de pacote para permitir explicitamente aplicativos em perfis de configuração de dispositivo e políticas no Microsoft Intune.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -15,26 +15,27 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ff5b411f14fef4ad294b0dd8b265680fd67df08
-ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
+ms.openlocfilehash: 04cafd2cf69bbd42a35ade3ae180e8af8789c938
+ms.sourcegitcommit: e8d788d033be4320cd72c98c892b383e1bb77e18
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402770"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70912821"
 ---
-# <a name="bundle-ids-for-built-in-ios-apps-you-can-use-in-intune"></a>IDs de pacote para aplicações iOS incorporadas, que pode utilizar no Intune
+# <a name="bundle-ids-for-built-in-ios-apps-you-can-use-in-intune"></a>IDs de pacote para aplicativos iOS internos que você pode usar no Intune
 
-Quando configurar funcionalidades em dispositivos iOS, também pode adicionar as aplicações incorporadas em dispositivos iOS. Este artigo apresenta uma lista de IDs de algumas aplicações iOS comuns incorporadas de coleção. Para localizar o ID do pacote de outras aplicações, contacte o fabricante de software. Ver lista da Apple dos [IDs de pacotes iOS](https://support.apple.com/guide/mdm/ios-bundle-ids-mdm90f60c1ce/web) (abre o site da Apple).
+Ao configurar recursos em dispositivos iOS, você também pode adicionar os aplicativos internos em dispositivos iOS. Este artigo lista as IDs de pacote de alguns aplicativos iOS internos comuns. Para localizar o ID do pacote de outras aplicações, contacte o fabricante de software. Consulte a lista de [IDs de pacote do IOS](https://support.apple.com/guide/mdm/ios-bundle-ids-mdm90f60c1ce/web) da Apple (abre o site da Apple).
 
 ## <a name="bundle-ids"></a>IDs de pacote
 
 | ID do Pacote                   | Nome da Aplicação     | Fabricante |
 |-----------------------------|--------------|-----------|
-| com.apple.AppStore          | App Store    | Apple     |
+| com. Apple. Store             | App Store    | Apple     |
 | com.apple.calculator        | Calculadora   | Apple     |
 | com.apple.mobilecal         | Calendário     | Apple     |
 | com.apple.camera            | Câmara       | Apple     |
 | com.apple.mobiletimer       | Relógio        | Apple     |
+| com. Apple. clips             | Corta        | Apple     |
 | com.apple.compass           | Bússola      | Apple     |
 | com.apple.MobileAddressBook | Contactos     | Apple     |
 | com.apple.facetime          | FaceTime     | Apple     |
@@ -74,8 +75,8 @@ Quando configurar funcionalidades em dispositivos iOS, também pode adicionar as
 | com.apple.VoiceMemos        | VoiceMemos   | Apple     |
 | com.apple.Passbook          | Wallet       | Apple     |
 | com.apple.Bridge            | Watch        | Apple     |
-| com.apple.weather           | Meteorologia      | Apple     |
+| com.apple.weather           | Meteorologia      | Apple     |      
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Passos seguintes
 
-Utilize estes IDs de pacote para configurar [funcionalidades do dispositivo](ios-device-features-settings.md) e, a [permitir ou restringir algumas definições](device-restrictions-ios.md) em dispositivos iOS.
+Use essas IDs de pacote para configurar [recursos de dispositivo](ios-device-features-settings.md) e para [permitir ou restringir algumas configurações](device-restrictions-ios.md) em dispositivos IOS.

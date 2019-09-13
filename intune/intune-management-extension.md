@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 230f226cba70a7fc61efd236cc0fde0ca6b7fa68
-ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
+ms.openlocfilehash: 9cf3a3735688d12e69dc297aa42ab2869c69bfc9
+ms.sourcegitcommit: 05139901411d14a85c2340c0ebae02d2c178a851
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68374964"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70904970"
 ---
 # <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>Usar scripts do PowerShell em dispositivos Windows 10 no Intune
 
@@ -194,7 +194,29 @@ Para ver se o dispositivo está registrado automaticamente, você pode:
 
   - Para testar a execução do script sem o Intune, execute os scripts na conta do sistema usando a [ferramenta PsExec](https://docs.microsoft.com/sysinternals/downloads/psexec) localmente:
 
-    `psexec -i -s`
+    `psexec -i -s`  
+    
+  - Se a execução de script relatar um sucesso, mas o resultado não estiver acontecendo (por exemplo, o script acima não cria um arquivo), o antivírus poderá estar em área restrita AgentExecutor. O script a seguir sempre deve relatar uma falha no Intune – se ele reportar um êxito, consulte AgentExecutor. log para confirmar a saída de erro-o comprimento deve ser > 2 se o script estiver sendo executado de forma alguma:
+
+    ```powershell
+    Write-Error -Message "Forced Fail" -Category OperationStopped
+    mkdir "c:\temp" 
+    echo "Forced Fail" | out-file c:\temp\Fail.txt
+    ```
+    
+  - Se você precisar capturar o. Error e. Output, o trecho a seguir executará o script por meio de AgentExecutor para PSx86 e deixará os logs por trás da coleção (já que a extensão de gerenciamento do Intune limpa os logs após a execução):
+  
+    ```powershell
+    $scriptPath = read-host "Enter the path to the script file to execute"
+    $logFolder = read-host "Enter the path to a folder to output the logs to"
+    $outputPath = $logFolder+"\output.output"
+    $errorPath =  $logFolder+"\error.error"
+    $timeoutPath =  $logFolder+"\timeout.timeout"
+    $timeoutVal = 60000 
+    $PSFolder = "C:\Windows\SysWOW64\WindowsPowerShell\v1.0"
+    $AgentExec = "C:\Program Files (x86)\Microsoft Intune Management Extension\agentexecutor.exe"
+    &$AgentExec -powershell  $scriptPath $outputPath $errorPath $timeoutPath $timeoutVal $PSFolder 0 0
+    ```
 
 ## <a name="next-steps"></a>Passos Seguintes
 
