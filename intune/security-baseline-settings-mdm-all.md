@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b45dde2958535259206c6f99ca1c06a51b28b9d4
-ms.sourcegitcommit: 393953dd2a15aff68b246d3633b47566dd43f7cc
+ms.openlocfilehash: 845f798c246d1872080d26ec269662cec154eee2
+ms.sourcegitcommit: c9725ddae6c0f82a491de27c87f240254d32716b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70816036"
+ms.lasthandoff: 09/13/2019
+ms.locfileid: "70986374"
 ---
 # <a name="windows-mdm-security-baseline-settings-for-intune"></a>Configurações de linha de base de segurança do MDM do Windows para o Intune
 Exiba as configurações de linha de base de segurança do MDM com suporte pelo Microsoft Intune para dispositivos que executam o Windows 10 ou posterior. Os valores padrão para as configurações nessa linha de base representam a configuração recomendada para os dispositivos aplicáveis e podem não corresponder os padrões de linha de base de outras linhas de base de segurança ou de outras versões dessa linha de base.
@@ -135,17 +135,28 @@ Para obter mais informações, [consulte CSP de política](https://docs.microsof
 
   - **Exigir criptografia para acesso de gravação**  
     **Padrão**: Sim  
+
 ::: zone-end
 ::: zone pivot="mdm-preview"
-    - **Método de criptografia**  
-      **Padrão**: CBC 256bit do AES  
+
+- **Política de unidade removível do armário de bits**  
+  Essa configuração de política é usada para controlar o método de criptografia e a intensidade de codificação. Os valores dessa política determinam a força da codificação que o BitLocker usa para criptografia. As empresas podem querer controlar o nível de criptografia para aumentar a segurança (o AES-256 é mais seguro do que o AES-128). Se você habilitar essa configuração, poderá configurar um algoritmo de criptografia e a intensidade de codificação de chave para unidades de dados fixas, unidades do sistema operacional e unidades de dados removíveis individualmente. Para unidades fixas e do sistema operacional, recomendamos que você use o algoritmo XTS-AES. Para unidades removíveis, você deve usar AES-CBC 128-bit ou AES-CBC 256-bit se a unidade for usada em outros dispositivos que não estão executando o Windows 10, versão 1511 ou posterior. A alteração do método de criptografia não terá efeito se a unidade já estiver criptografada ou se a criptografia estiver em andamento. Nesses casos, essa configuração de política é ignorada.  
+  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067140) 
+
+  Para política de unidade removível de armário de bits, defina a seguinte configuração:
+
+  - **Exigir criptografia para acesso de gravação**  
+    **Padrão**: Sim  
+
+  - **Método de criptografia**  
+    **Padrão**: CBC 256bit do AES  
 
 - **Política de unidade fixa do armário de bits**  
   Essa configuração de política é usada para controlar o método de criptografia e a intensidade de codificação. Os valores dessa política determinam a força da codificação que o BitLocker usa para criptografia. As empresas podem querer controlar o nível de criptografia para aumentar a segurança (o AES-256 é mais seguro do que o AES-128). Se você habilitar essa configuração, poderá configurar um algoritmo de criptografia e a intensidade de codificação de chave para unidades de dados fixas, unidades do sistema operacional e unidades de dados removíveis individualmente. Para unidades fixas e do sistema operacional, recomendamos que você use o algoritmo XTS-AES. Para unidades removíveis, você deve usar AES-CBC 128-bit ou AES-CBC 256-bit se a unidade for usada em outros dispositivos que não estão executando o Windows 10, versão 1511 ou posterior. A alteração do método de criptografia não terá efeito se a unidade já estiver criptografada ou se a criptografia estiver em andamento. Nesses casos, essa configuração de política é ignorada.  
  
-   Para política de unidade fixa do armário de bits, defina as seguintes configurações: 
-   - 
-     **Padrão**do método de criptografia: XTS 256bit AES  
+  Para política de unidade fixa do armário de bits, defina as seguintes configurações: 
+  - 
+    **Padrão**do método de criptografia: XTS 256bit AES  
 
 - **Política de unidade do sistema do armário de bits**  
   Essa configuração de política é usada para controlar o método de criptografia e a intensidade de codificação. Os valores dessa política determinam a força da codificação que o BitLocker usa para criptografia. As empresas podem querer controlar o nível de criptografia para aumentar a segurança (o AES-256 é mais seguro do que o AES-128). Se você habilitar essa configuração, poderá configurar um algoritmo de criptografia e a intensidade de codificação de chave para unidades de dados fixas, unidades do sistema operacional e unidades de dados removíveis individualmente. Para unidades fixas e do sistema operacional, recomendamos que você use o algoritmo XTS-AES. Para unidades removíveis, você deve usar AES-CBC 128-bit ou AES-CBC 256-bit se a unidade for usada em outros dispositivos que não estão executando o Windows 10, versão 1511 ou posterior. A alteração do método de criptografia não terá efeito se a unidade já estiver criptografada ou se a criptografia estiver em andamento. Nesses casos, essa configuração de política é ignorada.  
@@ -1469,7 +1480,9 @@ Para obter mais informações, consulte [CSP da política – Power](https://doc
 ::: zone-end
 ::: zone pivot="mdm-may-2019"
 
-## <a name="remote-assistance"></a>Assistência Remota
+## <a name="remote-assistance"></a>Assistência Remota   
+Para obter mais informações, consulte [Policy CSP-RemoteAssistance](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-remoteassistance#remoteassistance-solicitedremoteassistance) na documentação do Windows.  
+
 - **Assistência remota solicitada**  
   Essa configuração de política permite ativar ou desativar a assistência remota solicitada (solicitar) neste computador. 
   - *Se você habilitar essa configuração de política*, os usuários neste computador poderão usar o email ou a transferência de arquivos para pedir ajuda a alguém. Além disso, os usuários podem usar programas de mensagens instantâneas para permitir conexões com este computador, e você pode definir configurações de assistência remota adicionais. 
@@ -1804,7 +1817,7 @@ Para obter mais informações, consulte [Policy CSP-defender](https://docs.micro
 ::: zone-end
 ::: zone pivot="mdm-may-2019"
 ## <a name="windows-defender-firewall"></a>Firewall do Windows Defender  
-Para obter mais informações, consulte [2.2.2 FW_PROFILE_TYPOE]( https://docs.microsoft.com/openspecs/windows_protocols/ms-fasp/7704e238-174d-4a5e-b809-5f3787dd8acc) na documentação de protocolos do Windows.  
+Para obter mais informações, consulte [2.2.2 FW_PROFILE_TYPE]( https://docs.microsoft.com/openspecs/windows_protocols/ms-fasp/7704e238-174d-4a5e-b809-5f3787dd8acc) na documentação de protocolos do Windows.  
 
 - **Domínio do perfil de firewall**  
   Especifica os perfis aos quais a regra pertence: Domínio, privado, público. Esse valor representa o perfil para redes que estão conectadas a domínios.  
@@ -1930,7 +1943,7 @@ A *linha de base de segurança do MDM para o modelo 2019 de maio* tem as seguint
 As seguintes configurações são:
 - *Novo* nesta versão mais recente da linha de base.
 - *Removido* desta versão de linha de base mais recente, mas estava presente na versão anterior.
-- *Revisado* de alguma forma de como as configurações apareciam na versão anterior. 
+- Revisado de alguma forma de como as configurações apareciam na versão anterior. 
 
 *[Novo]* [**Acima do bloqueio**](#above-lock):
 - **Ativar voz de aplicativos da tela bloqueada**    
@@ -1962,7 +1975,7 @@ As seguintes configurações são:
 - **Suporte à criptografia do Internet Explorer**  
 
 *[Revisado]* [**Internet Explorer**](#internet-explorer):
-- **Prompt automático da zona Internet do Internet Explorer para downloads de arquivo** > o valor padrão agora está **desabilitado**. Em visualização, isso foi definido como habilitado.
+- **Prompt automático da zona Internet do Internet Explorer para downloads de arquivo** > o valorpadrão agora está desabilitado. Em visualização, isso foi definido como habilitado.
 
 *[Novo]* [**Assistência remota**](#remote-assistance):  
 - **Assistência remota solicitada** 

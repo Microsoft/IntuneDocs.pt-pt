@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d96167eb37ac7c3c90bad82783e9ce06814f8c88
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 08066c0742ad4ad02f907e55cc84eb65068c9b99
+ms.sourcegitcommit: c9725ddae6c0f82a491de27c87f240254d32716b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67884784"
+ms.lasthandoff: 09/13/2019
+ms.locfileid: "70986430"
 ---
 # <a name="data-collection-in-intune"></a>Recolha de dados no Intune
 
@@ -33,6 +33,9 @@ Quando os utilizadores inscrevem os respetivos dispositivos pessoais ou de empre
 - Informações de diagnóstico, desempenho e utilização.
 
 Destas origens, o Intune recolhe informações que se encaixam nas três categorias seguintes: [identificados](#identified-data), [com pseudónimo](#pseudonymized-data) e [agregados](#aggregated-data).
+
+> [!NOTE]
+> Não vendemos nenhum dado coletado por nosso serviço para terceiros por qualquer motivo.
 
 ## <a name="identified-data"></a>Dados identificados
 
@@ -133,6 +136,6 @@ Os dados agregados que o Intune recolhe podem incluir, entre outros:
   - notInstalledDeviceCount: O número de dispositivos para os quais o aplicativo é aplicável, mas não está instalado.
   - pendingInstallDeviceCount: O numerador de dispositivos para os quais o aplicativo é aplicável e a instalação está pendente.
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Passos seguintes
 
 Saiba mais sobre como o Intune [armazena e processa](privacy-data-store-process.md) e [partilha](privacy-data-secure-share.md) dados pessoais. 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3abf0b45abfe7567692f6bb653c7c2a1c3986546
-ms.sourcegitcommit: f5d216e1b8230045161bb10afbc33d9608782229
+ms.openlocfilehash: f5ea00f2e2631433ece3e9053b8f9ea9d9e359c8
+ms.sourcegitcommit: c9725ddae6c0f82a491de27c87f240254d32716b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70936661"
+ms.lasthandoff: 09/13/2019
+ms.locfileid: "70986406"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 
@@ -64,6 +64,10 @@ O aplicativo Microsoft Intune para Android foi atualizado com os seguintes aprim
 - Adicionada uma página adicional que mostra o perfil do usuário.
 - Adicionada a exibição de notificações acionáveis no aplicativo para o usuário, como a necessidade de atualizar suas configurações de dispositivo.
 - Adicionada a exibição de notificações por push personalizadas, alinhando o aplicativo com o suporte adicionado recentemente no aplicativo Portal da Empresa para iOS e Android. Para obter mais informações, consulte [enviar notificações personalizadas no Intune](custom-notifications.md).
+
+#### <a name="for-ios-devices-customize-the-enrollment-process-privacy-screen-of-the-company-portal----4394993---"></a>Para dispositivos iOS, personalize a tela de privacidade do processo de registro do Portal da Empresa <!-- 4394993 -->
+Usando a redução, você pode personalizar a tela de privacidade do Portal da Empresa que os usuários finais veem durante o registro do iOS. Especificamente, você poderá personalizar a lista de coisas que sua organização não pode ver ou fazer no dispositivo. Para obter mais informações, consulte [como configurar o aplicativo portal da empresa do Intune](company-portal-app.md#privacy-statement-customization).
+
 
 ## <a name="week-of-september-2-2019"></a>Semana de 2 de setembro de 2019
 
