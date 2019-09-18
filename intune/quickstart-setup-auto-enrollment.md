@@ -8,19 +8,19 @@ ms.localizationpriority: high
 ms.topic: quickstart
 ms.date: 03/26/2019
 ms.author: erikje
-ms.reviewer: angerobe
+ms.reviewer: spshumwa
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3b81525034f69b43abeb60f562e4d6ee6a46b866
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: e44bbf9396cd2aff3f2b2b134c72eb871f719a91
+ms.sourcegitcommit: d2989b9992d10d133573d9bc31479659fb7e242c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61511833"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71080119"
 ---
-# <a name="quickstart-set-up-automatic-enrollment-for-windows-10-devices"></a>Início rápido: Configurar a inscrição automática para dispositivos Windows 10
+# <a name="quickstart-set-up-automatic-enrollment-for-windows-10-devices"></a>Início rápido: Configurar o registro automático para dispositivos Windows 10
 
 Neste início rápido, vai configurar o Microsoft Intune para inscrever dispositivos automaticamente mediante o início de sessão de utilizadores específicos em dispositivos com o Windows 10.
 
@@ -39,7 +39,7 @@ Inicie sessão no [Intune](https://aka.ms/intuneportal) enquanto Administrador G
 
 Neste exemplo, irá utilizar a inscrição na MDM para que seja possível inscrever automaticamente dispositivos empresariais e BYOD. Irá inscrever-se numa subscrição gratuita do Azure Active Directory Premium.
 
-1. No Azure, selecione **Azure Active Directory** > **Mobilidade (MDM e MAM)**.
+1. No Azure, selecione **Azure Active Directory** > **Mobilidade (MDM e MAM)** .
 2. Selecione **Obtenha uma versão de avaliação Premium gratuita para utilizar esta funcionalidade**. Selecionar esta opção irá permitir a inscrição automática através da versão de avaliação Premium gratuita do Azure Active Directory. 
 
     ![Selecione a versão de avaliação Premium gratuita do Azure Active Directory](media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-01.png)
@@ -76,4 +76,4 @@ Neste início rápido, aprendeu a configurar a inscrição automática para disp
 Para seguir esta série de guias de início rápido do Intune, continue para o próximo guia de início rápido.
 
 > [!div class="nextstepaction"]
-> [Início rápido: Inscrever o seu dispositivo Windows 10](quickstart-enroll-windows-device.md)
+> [TUTORIAIS Registrar seu dispositivo Windows 10](quickstart-enroll-windows-device.md)

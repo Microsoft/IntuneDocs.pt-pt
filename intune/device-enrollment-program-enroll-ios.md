@@ -12,17 +12,17 @@ ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 7ddbf360-0c61-11e8-ba89-0ed5f89f718b
-ms.reviewer: dagerrit
+ms.reviewer: tisilver
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: df090e0e942291d5430b101db378aca296466bf9
-ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
+ms.openlocfilehash: cd4a195af0b3be5038a34b44606abcddf02c5a1e
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69549992"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71071561"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Inscrever automaticamente dispositivos iOS com o Programa de Inscrição de Dispositivos da Apple
 
@@ -142,21 +142,21 @@ Agora que instalou o seu token, pode criar um perfil de inscrição para disposi
     ![Autentique com o Portal da Empresa.](./media/device-enrollment-program-enroll-ios/authenticatewithcompanyportal.png)
 
     > [!NOTE]
-    > Se você quiser fazer o seguinte, defina **selecionar onde os usuários devem** se autenticar para **portal da empresa**.
+    > Se você quiser fazer o seguinte, defina **selecionar onde os usuários devem se autenticar** para **portal da empresa**.
     >    - utilizar a autenticação multifator
     >    - pedir aos utilizadores para alterar a palavra-passe ao iniciar sessão pela primeira vez
     >    - Pedir aos utilizadores para reporem as respetivas palavras-passe expiradas durante a inscrição
     >
     > Estas ações não são suportadas durante a autenticação com o Assistente de Configuração da Apple.
 
-6. Se você escolher **portal da empresa** para **selecionar onde os usuários devem**se autenticar, poderá usar um token VPP para instalar automaticamente o portal da empresa no dispositivo. Neste caso, o utilizador não tem de fornecer um ID Apple. Para instalar o Portal da Empresa com um token VPP, selecione um token em **Instalar Portal da Empresa com o VPP**. Requer que o Portal da Empresa já tenha sido adicionado ao token VPP. Não configurar uma política para exigir o aplicativo para os usuários, o Intune instalará automaticamente o Portal da Empresa em dispositivos com esse perfil de registro aplicado. Certifique-se de que o token não expira e que tem licenças de dispositivos suficientes para a aplicação Portal da Empresa. Se o token expirar ou se esgotar as licenças, o Intune instalará o Portal da Empresa a partir da App Store e pedirá um ID Apple. 
+6. Se você escolher **portal da empresa** para **selecionar onde os usuários devem se autenticar**, poderá usar um token VPP para instalar automaticamente o portal da empresa no dispositivo. Neste caso, o utilizador não tem de fornecer um ID Apple. Para instalar o Portal da Empresa com um token VPP, selecione um token em **Instalar Portal da Empresa com o VPP**. Requer que o Portal da Empresa já tenha sido adicionado ao token VPP. Não configurar uma política para exigir o aplicativo para os usuários, o Intune instalará automaticamente o Portal da Empresa em dispositivos com esse perfil de registro aplicado. Certifique-se de que o token não expira e que tem licenças de dispositivos suficientes para a aplicação Portal da Empresa. Se o token expirar ou se esgotar as licenças, o Intune instalará o Portal da Empresa a partir da App Store e pedirá um ID Apple. 
 
     > [!NOTE]
-    > Quando **selecionar onde os usuários devem** se autenticar é **portal da empresa**, certifique-se de que o processo de registro do dispositivo seja executado nas primeiras 24 horas do portal da empresa que está sendo baixado para o dispositivo Dep. Caso contrário, o registro pode falhar e uma redefinição de fábrica será necessária para registrar o dispositivo.
+    > Quando **selecionar onde os usuários devem se autenticar** é **portal da empresa**, certifique-se de que o processo de registro do dispositivo seja executado nas primeiras 24 horas do portal da empresa que está sendo baixado para o dispositivo Dep. Caso contrário, o registro pode falhar e uma redefinição de fábrica será necessária para registrar o dispositivo.
     
     ![Captura de ecrã a mostrar a opção Instalar Portal da Empresa com o VPP.](./media/device-enrollment-program-enroll-ios/install-cp-with-vpp.png)
 
-7. Se você escolheu o **Assistente de configuração** para **selecionar onde os usuários devem**se autenticar, mas também deseja usar o acesso condicional ou implantar aplicativos da empresa nos dispositivos, você deve instalar o portal da empresa nos dispositivos. Para fazer isso, escolha **Sim** para **instalar portal da empresa**.  Se você quiser que os usuários recebam o Portal da Empresa sem precisar se autenticar na App Store, opte por **instalar portal da empresa com o VPP** e selecione um token VPP. Certifique-se de que o token não expire e que você tenha licenças de dispositivo suficientes para que o aplicativo de Portal da Empresa seja implantado corretamente.
+7. Se você escolheu o **Assistente de configuração** para **selecionar onde os usuários devem se autenticar**, mas também deseja usar o acesso condicional ou implantar aplicativos da empresa nos dispositivos, você deve instalar o portal da empresa nos dispositivos. Para fazer isso, escolha **Sim** para **instalar portal da empresa**.  Se você quiser que os usuários recebam o Portal da Empresa sem precisar se autenticar na App Store, opte por **instalar portal da empresa com o VPP** e selecione um token VPP. Certifique-se de que o token não expire e que você tenha licenças de dispositivo suficientes para que o aplicativo de Portal da Empresa seja implantado corretamente.
 
 8. Se tiver escolhido um token para **Instalar o Portal da Empresa com o VPP**, poderá bloquear o dispositivo no Modo de Aplicação Única (nomeadamente, a aplicação do Portal da Empresa) logo após a conclusão do Assistente de Configuração. Selecione **Sim** para **Execute o Portal da Empresa no Modo de Aplicação Única até à autenticação** para definir esta opção. Para utilizar o dispositivo, tem de autenticar primeiro o utilizador ao iniciar sessão com o Portal da Empresa.
 
@@ -230,7 +230,7 @@ Agora que instalou o seu token, pode criar um perfil de inscrição para disposi
     | <strong>Migração de dispositivo para dispositivo</strong> | Conceda ao usuário a opção de migrar dados de seu dispositivo antigo para este dispositivo.|
     
 
-16. Escolha **Avançar** para ir para a página revisar **+ criar** .
+16. Escolha **Avançar** para ir para a página **revisar + criar** .
 
 17. Para guardar o perfil, escolha **Criar**.
 

@@ -12,17 +12,17 @@ ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
-ms.reviewer: damionw
+ms.reviewer: tisilver
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c3ec5bf1ed668f5775cf5a7c46a2c19d02eb227d
-ms.sourcegitcommit: 05139901411d14a85c2340c0ebae02d2c178a851
+ms.openlocfilehash: cbfe0e30794ddfe5b2f089d50456f9cbdd031e6d
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70905022"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71071390"
 ---
 # <a name="enroll-devices-in-intune-by-using-a-device-enrollment-manager-account"></a>Inscrever dispositivos no Intune ao utilizar uma conta de Gestor de inscrição de dispositivos
 

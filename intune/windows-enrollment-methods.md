@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: ''
-ms.openlocfilehash: 4a0df4f32513eb37bd7396d8e6249f9c6e71a4e4
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: a0d77ab53db473f44c307e3796721c94839e86b5
+ms.sourcegitcommit: d2989b9992d10d133573d9bc31479659fb7e242c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67884186"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71080004"
 ---
 # <a name="intune-enrollment-methods-for-windows-devices"></a>Métodos de registro do Intune para dispositivos Windows
 
@@ -53,6 +53,6 @@ Os administradores podem configurar os seguintes métodos de registro que não e
 - O [registro em massa](windows-bulk-enroll.md) permite que um usuário autorizado ingresse em um grande número de novos dispositivos corporativos para Azure Active Directory e o Intune. Você cria um pacote de provisionamento com o aplicativo do Windows Configuration designer (WCD). Em seguida, usando a mídia USB durante a experiência inicial do Windows OOBE ou do computador Windows existente, você instala o pacote de provisionamento para registrar automaticamente os dispositivos no Intune. Esse método não permite o uso de acesso condicional. 
 - O [registro de dispositivos Windows IOT Core](https://docs.microsoft.com/windows/iot-core/manage-your-device/intunedeviceenrollment) é realizado usando o painel do Windows IOT Core para preparar o dispositivo e, em seguida, usar o designer de configuração do Windows para criar um pacote de provisionamento. Em seguida, usando mídia de cartão SD durante a inicialização inicial, ele instala o pacote de provisionamento para registrar automaticamente os dispositivos no Intune.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Passos Seguintes
 
 [Conheça os recursos dos métodos de registro do Windows](enrollment-method-capab.md)

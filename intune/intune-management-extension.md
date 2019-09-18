@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/27/2019
+ms.date: 09/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9cf3a3735688d12e69dc297aa42ab2869c69bfc9
-ms.sourcegitcommit: 05139901411d14a85c2340c0ebae02d2c178a851
+ms.openlocfilehash: cbf2031a316b1f7c2e22d165363cca12cfd70291
+ms.sourcegitcommit: 27e63a96d15bc4062af68c2764905631bd928e7b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70904970"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71061583"
 ---
 # <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>Usar scripts do PowerShell em dispositivos Windows 10 no Intune
 
@@ -181,7 +181,7 @@ Para ver se o dispositivo está registrado automaticamente, você pode:
 - Examine os logs para verificar se há erros. Consulte [logs de extensão de gerenciamento do Intune](#intune-management-extension-logs) (neste artigo).
 - Para possíveis problemas de permissão, verifique se as propriedades do script do PowerShell estão definidas `Run this script using the logged on credentials`como. Verifique também se o usuário conectado tem as permissões apropriadas para executar o script.
 
-- Para isolar problemas de script, execute as seguintes etapas:
+- Para isolar problemas de script, você pode:
 
   - Examine a configuração de execução do PowerShell em seus dispositivos. Consulte a [política de execução do PowerShell](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-6) para obter diretrizes.
   - Execute um script de exemplo usando a extensão de gerenciamento do Intune. Por exemplo, crie o `C:\Scripts` diretório e conceda a todos controle total. Execute o seguintes script:
@@ -196,15 +196,17 @@ Para ver se o dispositivo está registrado automaticamente, você pode:
 
     `psexec -i -s`  
     
-  - Se a execução de script relatar um sucesso, mas o resultado não estiver acontecendo (por exemplo, o script acima não cria um arquivo), o antivírus poderá estar em área restrita AgentExecutor. O script a seguir sempre deve relatar uma falha no Intune – se ele reportar um êxito, consulte AgentExecutor. log para confirmar a saída de erro-o comprimento deve ser > 2 se o script estiver sendo executado de forma alguma:
-
+  - Se o script relatar que teve êxito, mas não foi realmente bem-sucedido, é possível que seu serviço antivírus possa estar em área restrita AgentExecutor. O script a seguir sempre relata uma falha no Intune. Como um teste, você pode usar este script:
+  
     ```powershell
     Write-Error -Message "Forced Fail" -Category OperationStopped
     mkdir "c:\temp" 
     echo "Forced Fail" | out-file c:\temp\Fail.txt
     ```
-    
-  - Se você precisar capturar o. Error e. Output, o trecho a seguir executará o script por meio de AgentExecutor para PSx86 e deixará os logs por trás da coleção (já que a extensão de gerenciamento do Intune limpa os logs após a execução):
+
+    Se o script relatar um êxito, examine o `AgentExecutor.log` para confirmar a saída de erro. Se o script for executado, o comprimento deverá ser > 2.
+
+  - Para capturar os arquivos. Error e. Output, o trecho a seguir executa o script por meio de AgentExecutor para`C:\Windows\SysWOW64\WindowsPowerShell\v1.0`PSx86 (). Ele mantém os logs para sua análise. Lembre-se de que a extensão de gerenciamento do Intune limpa os logs após a execução do script:
   
     ```powershell
     $scriptPath = read-host "Enter the path to the script file to execute"

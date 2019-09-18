@@ -12,17 +12,17 @@ ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 439c33a6-e80c-4da9-ba09-a51fc36f62ad
-ms.reviewer: dagerrit
+ms.reviewer: tisilver
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9fbd74bef87de873013a7d16c6ccd5198b0d7578
-ms.sourcegitcommit: b10cd30f1d2c3472b376be877764ac2fafccc8ba
+ms.openlocfilehash: 3f7018b791d5ab22ebcf6bbc45ac01963d2c5d42
+ms.sourcegitcommit: d2989b9992d10d133573d9bc31479659fb7e242c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70923254"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71079952"
 ---
 # <a name="enroll-ios-devices-in-intune"></a>Inscrever dispositivos iOS no Intune
 

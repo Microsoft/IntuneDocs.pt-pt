@@ -12,17 +12,17 @@ ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
-ms.reviewer: damionw
+ms.reviewer: priyar
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fba9bc63a2ee9d68fdc1d6e41698435144676b2e
-ms.sourcegitcommit: 3db8af810b95c3a6ed3f8cc00f6ce79076ebb9db
+ms.openlocfilehash: 0bf683aebee50b4f2172f11ce205a910a47d0845
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71012473"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71071139"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>Implantar dispositivos ingressados no Azure AD híbrido usando o Intune e o piloto automático do Windows
 Você pode usar o Intune e o piloto automático do Windows para configurar dispositivos ingressados no Azure Active Directory híbrido (Azure AD). Para fazer isso, siga as etapas neste artigo.
@@ -183,14 +183,17 @@ Depois que os dispositivos do AutoPilot forem registrados, seus nomes se tornar�
 Os perfis de implementação do Autopilot são utilizados para configurar os dispositivos do Autopilot.
 
 1. No [Intune](https://aka.ms/intuneportal), selecione **registro** > de dispositivo**Windows registro** > **perfis** > de implantação**Criar perfil**.
-1. Digite um **nome** e, opcionalmente, uma **Descrição**.
-1. Para o **modo de implantação**, selecione **controlado pelo usuário**.
-1. Na caixa **ingressar no Azure ad como** , selecione **ingressado no Azure ad híbrido (versão prévia)** .
-1. Selecione **OOBE (configuração inicial do box)** , configure as opções conforme necessário e, em seguida, selecione **salvar**.
-1. Selecione **Criar** para criar o perfil. 
-1. No painel perfil, selecione **atribuições**.
-1. Selecione **Selecionar grupos**.
-1. No painel **Selecionar grupos** , selecione o grupo de dispositivos e, em seguida, clique em **selecionar**.
+2. Na página **noções básicas** , digite um **nome** e uma **Descrição**opcional.
+3. Se pretender que todos os dispositivos nos grupos atribuídos sejam convertidos automaticamente no Autopilot, defina **Converter todos os dispositivos visados para o Piloto Automático** para **Sim**. Todos os dispositivos fora do Autopilot em grupos atribuídos serão registados com o serviço de implementação do Autopilot. O processo de registo demora até 48 horas, pelo que deverá aguardar. Quando a inscrição do dispositivo for anulada e o dispositivo for reposto, o Autopilot irá inscrevê-lo. Após registar um dispositivo desta forma, desativar esta opção ou remover a atribuição de perfil não irá remover o dispositivo do serviço de implementação do Autopilot. Em alternativa, tem de [remover o dispositivo diretamente](enrollment-autopilot.md#delete-autopilot-devices).
+4. Selecione **Seguinte**.
+5. Na página de **OOBE (experiência do usuário)** , para o modo de **implantação**, selecione **controlado por usuários**.
+6. Na caixa **ingressar no Azure ad como** , selecione **ingressado no Azure ad híbrido**.
+7. Configure as opções restantes na página de **configuração inicial do uso (OOBE)** , conforme necessário.
+8. Selecione **Seguinte**.
+9. Na página **marcas de escopo** , selecione [marcas de escopo](scope-tags.md) para este perfil.
+10. Selecione **Seguinte**.
+11. Na página **atribuições** , selecione **Selecionar grupos para incluir** > Pesquisar e selecione o grupo de dispositivos > **selecione**.
+12. Selecione **Avançar** > **criar**.
 
 Demora cerca de 15 minutos para que o status do perfil do dispositivo seja alterado de *não atribuído* para *atribuição* e, por fim, para *atribuído*.
 
@@ -225,6 +228,6 @@ Demora cerca de 15 minutos para que o status do perfil do dispositivo seja alter
 > [!NOTE]
 > Os recursos de nomenclatura do Windows AutoPilot para o ingresso no Azure AD híbrido não dão suporte a variáveis como% SERIAL% e apenas prefixos de suporte para o nome do computador.
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Passos seguintes
 
 Após configurar o Windows Autopilot, saiba como gerir os seus dispositivos. Para obter mais informações, consulte [o que é Microsoft InTune gerenciamento de dispositivo?](device-management.md).

@@ -17,12 +17,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 97bc1658dcd432bdd5e31c7100022959e96c3039
-ms.sourcegitcommit: a25cd79a33feb536d9b2fc11aa7d3e3972f1ca5a
+ms.openlocfilehash: 83b10bdfacbcf76b9f75b90d99e094b6854d525e
+ms.sourcegitcommit: 27e63a96d15bc4062af68c2764905631bd928e7b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70842074"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71061667"
 ---
 # <a name="tutorial-configure-slack-to-use-intune-for-emm-and-app-configuration"></a>Destina Configurar a margem de atraso para usar o Intune para EMM e a configuração do aplicativo
 
@@ -77,7 +77,6 @@ Adicione uma política de configuração de aplicativo para a margem de atraso d
 5. Selecione **aplicativo associado**.
 6. Na barra de pesquisa, insira "margem de atraso para EMM" e selecione o aplicativo.
 7. Clique em **OK**e, em seguida, selecione **definições de configuração**. 
-    - Para obter informações sobre chaves de configuração e seus valores, consulte a documentação na guia "técnico" da [página da Web do AppConfig da margem de atraso](https://www.appconfig.org/company/slack/).
 8. Selecione **OK**e, em seguida, selecione **Adicionar**.
 9. Na barra de pesquisa, insira "teste de política de configuração de aplicativo de margem de atraso" e selecione a política que você acabou de adicionar.
 10. Em gerenciar, selecione **atribuições**.
@@ -158,7 +157,7 @@ Crie uma política de conformidade de dispositivos do Intune para definir as con
 
 Com as políticas que você acabou de criar, todos os dispositivos de perfil de trabalho iOS ou Android que tentarem entrar em um de seus espaços de trabalho precisarão ser registrados no Intune. Para testar esse cenário, tente iniciar a margem de atraso para EMM em um dispositivo iOS registrado pelo Intune ou iniciar a margem de atraso em um dispositivo de perfil de trabalho do Android registrado no Intune. 
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Passos Seguintes
 
 Neste tutorial:
 - Você define o Intune como o provedor de gerenciamento de mobilidade empresarial (EMM) em sua grade empresarial de margem de atraso. 

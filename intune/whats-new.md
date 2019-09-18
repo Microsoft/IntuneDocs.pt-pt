@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 09/09/2019
+ms.date: 09/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f5ea00f2e2631433ece3e9053b8f9ea9d9e359c8
-ms.sourcegitcommit: c9725ddae6c0f82a491de27c87f240254d32716b
+ms.openlocfilehash: 7b7b4453d441d2f2367b19a6bf0505dabd8e6e48
+ms.sourcegitcommit: 27e63a96d15bc4062af68c2764905631bd928e7b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/13/2019
-ms.locfileid: "70986406"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71061685"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 
@@ -53,6 +53,21 @@ Saiba mais sobre as novidades todas as semanas no Microsoft Intune. Você també
 -->  
 
 <!-- ########################## -->
+
+## <a name="week-of-september-16-2019"></a>Semana de 16 de setembro de 2019
+
+### <a name="app-management"></a>Gestão de aplicações
+
+#### <a name="macos-support-for-web-apps----3174427---"></a>suporte para macOS para aplicativos Web <!-- 3174427 -->
+Os aplicativos Web, que permitem adicionar um atalho a uma URL na Web, podem ser instalados no Dock usando o Portal da Empresa macOS. Os usuários finais podem acessar a ação de **instalação** na página de detalhes do aplicativo para um aplicativo Web no MacOS portal da empresa. Para obter mais informações sobre o tipo de aplicativo de **link da Web** , consulte [adicionar aplicativos ao Microsoft Intune](apps-add.md) e [adicionar aplicativos Web ao Microsoft Intune](web-app.md).
+
+#### <a name="macos-support-for-vpp-apps----3173501----"></a>suporte do macOS para aplicativos VPP <!-- 3173501  -->
+aplicativos macOS, adquiridos usando o Apple Business Manager, são exibidos no console do quando os tokens de VPP da Apple são sincronizados no Intune. Você pode atribuir, revogar e reatribuir licenças baseadas no usuário e no dispositivo para grupos usando o console do Intune. Microsoft Intune ajuda a gerenciar aplicativos VPP adquiridos para uso em sua empresa:
+- Comunicar informações sobre a licença a partir da App Store.
+- Controlar o número de licenças que utilizou.
+- Ajudando você não a instalar mais cópias do aplicativo do que você possui.
+
+Para obter mais informações sobre o Intune e o VPP, consulte [gerenciar aplicativos e livros adquiridos por volume com o Microsoft Intune](vpp-apps.md).
 
 ## <a name="week-of-september-9-2019"></a>Semana de 9 de setembro de 2019
 

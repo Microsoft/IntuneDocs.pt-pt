@@ -12,17 +12,17 @@ ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 2cc3c960-1fdd-47ca-a693-420d47b403de
-ms.reviewer: chrisbal
+ms.reviewer: chmaguir
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3a51951d02d73a0d79f6246dd9502c3c7fe89759
-ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
+ms.openlocfilehash: 318eacc6aed5b15f29da22d80c2c53d5aa826d7d
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69550085"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71070962"
 ---
 # <a name="manage-android-work-profile-devices-with-intune"></a>Gerir dispositivos com perfil de trabalho do Android com o Intune
 
@@ -89,6 +89,6 @@ Para obter mais informações, veja [Configurar um perfil de certificado para os
 
 Os perfis de Wi-Fi gerenciados pelo Android Enterprise são removidos quando o dispositivo é desativado do Intune e o perfil de trabalho é excluído. Para obter mais informações, veja [Como configurar definições de Wi-Fi no Microsoft Intune](wi-fi-settings-configure.md).
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Passos Seguintes
 - [Inscrever dispositivos Android](android-enroll.md)
 - [Atribuir aplicativos a dispositivos Android Enterprise de perfil de trabalho com o Intune](apps-add-android-for-work.md)

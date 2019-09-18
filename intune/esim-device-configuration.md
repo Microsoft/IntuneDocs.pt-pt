@@ -14,19 +14,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e4a171255c545e2f2c55adf4695476107d06aefe
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: 863d8d03836573a7425f2958e52a1e0331b34a10
+ms.sourcegitcommit: d2989b9992d10d133573d9bc31479659fb7e242c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68354381"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71080077"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>Configurar perfis celulares eSIM no Intune – pré-visualização pública
-
-> [!NOTE]
-> A Microsoft quer saber a sua opinião. Envie perguntas ou inicie um debate ao enviar um e-mail para `eSIMonIntune@microsoft.com`.
-
-## <a name="introduction"></a>Introdução
 
 O eSIM é um chip SIM incorporado e permite-lhe ligar-se à Internet através de uma ligação de dados celular num dispositivo compatível com eSIM, como o [Surface Pro LTE](https://www.microsoft.com/surface/business/surface-pro). Com um eSIM, não precisa de obter um cartão SIM junto do seu operador de rede móvel. Enquanto viajante global, pode também alternar entre operadores de redes móveis e planos de dados para estar sempre ligado.
 
@@ -196,5 +191,5 @@ O perfil eSIM também será removido quando o dispositivo for [extinto](devices-
   - **Formato de arquivo não adequado**: Consulte **a etapa 1: Adicione códigos** de ativação de celular (neste artigo) sobre como formatar corretamente o arquivo.
   - **Falha de ativação de celular, contate a operadora móvel**: O código de ativação não pode ser ativado em sua rede. Também é possível que a ativação celular e a transferência do perfil tenham falhado.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Passos Seguintes
 [Configurar perfis de dispositivo](device-profiles.md)

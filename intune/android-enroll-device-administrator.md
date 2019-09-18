@@ -12,19 +12,19 @@ ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
-ms.reviewer: chrisbal
+ms.reviewer: chmaguir
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cdd3bf3bfdbc14f4324da4b5edc8d131f3f4f170
-ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
+ms.openlocfilehash: 1dc495e6356a35215943415e03a46496a72bddf1
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68671184"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71071037"
 ---
-# <a name="android-device-administrator-enrollment"></a>Registro de administrador do dispositivo Android
+# <a name="android-device-administrator-enrollment"></a>Inscrição de administrador de dispositivos Android
 
 O administrador do dispositivo Android (às vezes chamado de gerenciamento do Android "herdado" e lançado com o Android 2,2) é uma maneira de gerenciar dispositivos Android. No entanto, a funcionalidade de gerenciamento aprimorada agora está disponível com o [Android Enterprise](https://www.android.com/enterprise/management/) (lançado com Android 5,0). Em um esforço para migrar para o gerenciamento de dispositivos moderno, mais avançado e seguro, o Google está diminuindo o suporte ao administrador de dispositivos em novas versões do Android.
 
@@ -64,6 +64,6 @@ Para bloquear dispositivos Android de administrador de dispositivo ou bloquear s
 
 
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Passos seguintes
 - [Atribuir políticas de conformidade](compliance-policy-create-android.md)
 - [Gerenciando aplicativos](app-management.md)

@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cda0453009855d96e7c13e170ba908479a0773ea
-ms.sourcegitcommit: 513e805bbea8bf652c2901dfc5460e34946077df
+ms.openlocfilehash: c0cbc2c7334675e91450b9c2d7129a098498d978
+ms.sourcegitcommit: 27e63a96d15bc4062af68c2764905631bd928e7b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70160516"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71061601"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Políticas de configuração de aplicações para o Microsoft Intune
 
 As políticas de configuração de aplicativo podem ajudá-lo a eliminar problemas de configuração de aplicativo, permitindo que você atribua definições de configuração a uma política atribuída aos usuários finais antes de executar o aplicativo. As configurações são então fornecidas automaticamente quando o aplicativo é configurado no dispositivo dos usuários finais e os usuários finais não precisam tomar medidas de ação. As definições de configuração são exclusivas para cada aplicativo. 
 
-Você pode criar e usar políticas de configuração de aplicativo para fornecer definições de configuração para aplicativos iOS ou Android. Essas definições de configuração permitem que um aplicativo seja personalizado usando uma [abordagem padrão do setor](https://www.appconfig.org/) para configuração e gerenciamento de aplicativos. As definições de política de configuração são usadas quando o aplicativo verifica essas configurações, normalmente na primeira vez em que o aplicativo é executado. 
+Você pode criar e usar políticas de configuração de aplicativo para fornecer definições de configuração para aplicativos iOS ou Android. Essas definições de configuração permitem que um aplicativo seja personalizado usando a configuração e o gerenciamento de aplicativos. As definições de política de configuração são usadas quando o aplicativo verifica essas configurações, normalmente na primeira vez em que o aplicativo é executado. 
 
 Uma configuração de aplicativo, por exemplo, pode exigir que você especifique qualquer um dos seguintes detalhes:
 
@@ -60,7 +60,7 @@ Você tem duas opções para usar as políticas de configuração de aplicativo 
 ## <a name="apps-that-support-app-configuration"></a>Aplicações que suportam a configuração de aplicações
 
 ### <a name="managed-devices"></a>Dispositivos geridos
-Você pode usar políticas de configuração de aplicativo para aplicativos que dão suporte a ela. Para dar suporte à configuração de aplicativo no Intune, os aplicativos devem ser escritos para dar suporte ao uso de configurações de aplicativo conforme definido pela [comunidade AppConfig](https://www.appconfig.org/members). Consulte o seu fornecedor de aplicações para obter detalhes.
+Você pode usar políticas de configuração de aplicativo para aplicativos que dão suporte a ela. Para dar suporte à configuração de aplicativo no Intune, os aplicativos devem ser escritos para dar suporte ao uso de configurações de aplicativo, conforme definido pelo sistema operacional. Consulte o fornecedor do aplicativo para obter detalhes sobre quais chaves de configuração de aplicativo dão suporte.
 
 ### <a name="managed-apps"></a>Aplicações geridas
 Você pode preparar seus aplicativos de linha de negócios incorporando o SDK do aplicativo do [Intune](app-sdk.md) no aplicativo ou encapsulando o aplicativo após ele ser desenvolvido usando a [ferramenta de disposição do aplicativo do Intune](apps-prepare-mobile-application-management.md). O SDK do aplicativo do Intune se esforça para minimizar a quantidade de alterações de código necessárias do desenvolvedor do aplicativo. Para obter mais informações, veja [Descrição geral do SDK da Aplicação Intune](app-sdk.md). Para obter uma comparação entre o SDK de aplicativo do Intune e a ferramenta de encapsulamento de aplicativos do Intune, consulte [preparar aplicativos de linha de negócios para políticas de proteção de aplicativo](apps-prepare-mobile-application-management.md#feature-comparison).
@@ -70,7 +70,7 @@ A seleção de **aplicativos gerenciados** como o **tipo de registro de disposit
 ![Tipo de registro do dispositivo](./media/app-configuration-policy-overview/device-enrollment-type.png)
 
 > [!NOTE]
-> Para aplicativos de várias identidades, como o Microsoft Outlook, as preferências do usuário podem ser consideradas. A caixa de entrada focada, por exemplo, respeitará a configuração do usuário e não alterará a configuração. Outros parâmetros permitem controlar se um usuário pode ou não alterar a configuração. Para obter mais informações, consulte Implantando [definições de configuração de aplicativo do Outlook para IOS e Android](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune).
+> Para aplicativos de várias identidades, como o Microsoft Outlook, as preferências do usuário podem ser consideradas. A caixa de entrada focada, por exemplo, respeitará a configuração do usuário e não alterará a configuração. Outros parâmetros permitem controlar se um usuário pode ou não alterar a configuração. Para obter mais informações, consulte [implantando definições de configuração de aplicativo do Outlook para IOS e Android](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune).
 
 ## <a name="validate-the-applied-app-configuration-policy"></a>Validar a política de configuração de aplicativo aplicada
 
