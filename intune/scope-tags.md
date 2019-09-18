@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 90865b8a8881ab85089fb379a8398e276574b771
-ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
+ms.openlocfilehash: 061a3c4615de6d84b5400b2f5d2a4c39d53dc3ab
+ms.sourcegitcommit: d2989b9992d10d133573d9bc31479659fb7e242c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69550034"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71080145"
 ---
 # <a name="use-role-based-access-control-rbac-and-scope-tags-for-distributed-it"></a>Usar o controle de acesso baseado em função (RBAC) e marcas de escopo para distribuição de ti
 
@@ -114,7 +114,7 @@ Ao trabalhar com marcas de escopo, lembre-se destes detalhes:
 - Você só pode direcionar grupos listados no escopo (grupos) de sua atribuição de função.
 - Se você tiver uma marca de escopo atribuída à sua função, não poderá excluir todas as marcas de escopo em um objeto do Intune. Pelo menos uma marca de escopo é necessária.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Passos Seguintes
 
 Saiba como as marcas de escopo se comportam quando há [várias atribuições de função](role-based-access-control.md#multiple-role-assignments).
 Efetue a gestão das suas [funções](role-based-access-control.md) e [perfis](device-profile-assign.md).

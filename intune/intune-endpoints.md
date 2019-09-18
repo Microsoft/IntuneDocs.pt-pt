@@ -12,17 +12,17 @@ ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
-ms.reviewer: angerobe
+ms.reviewer: kerimh
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 32b358f4f1a51eb8a9c99acef1fb5dd014c0099e
-ms.sourcegitcommit: 5ddc2568c6a12264a9513ef834cf9aa8b236b403
+ms.openlocfilehash: 18c5622d9ce2566d5edf6ac5ebdfc931c8638418
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "70987988"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71071650"
 ---
 # <a name="network-endpoints-for-microsoft-intune"></a>Pontos de extremidade de rede para Microsoft Intune  
 

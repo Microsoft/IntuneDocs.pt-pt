@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8774b5af7555462b7754e4d0f8a6f50a330854ff
-ms.sourcegitcommit: 58a22f1b4a3fffffb1f7da228f470b3b0774fc42
+ms.openlocfilehash: cde8269ca9d2ca2348fb6da377ad46150c90015a
+ms.sourcegitcommit: 27e63a96d15bc4062af68c2764905631bd928e7b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/26/2019
-ms.locfileid: "70021820"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71061551"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Guia para programadores do SDK da Aplicação do Microsoft Intune para iOS
 
@@ -412,9 +412,6 @@ Estes métodos delegados devolvem um objeto `IntuneMAMEnrollmentStatus` com as s
 * Um código de estado que indica o resultado do pedido
 * Cadeia de erro com uma descrição do código de estado
 * Um objeto `NSError`. Este objeto é definido em `IntuneMAMEnrollmentStatus.h`, juntamente com os códigos de estado específicos que podem ser devolvidos.
-
-> [!NOTE]
-> Estas informações são apenas para fins de depuração. Nenhuma lógica de negócio na sua aplicação deve ser baseada nestas notificações. Estas informações podem ser enviadas para um serviço de telemetria, para fins de depuração ou monitorização.
 
 ### <a name="sample-code"></a>Código de exemplo
 

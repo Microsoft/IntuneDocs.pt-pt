@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 30910de4ae17aa3fde573155bde4643e2c3d67f7
-ms.sourcegitcommit: 1925eba3fb0b30592f07a924119e20b661588d12
+ms.openlocfilehash: 4f59f7a0a53061a49655c85c3fda9d5939f59daa
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70808640"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71070788"
 ---
 # <a name="sync-devices-to-get-the-latest-policies-and-actions-with-intune"></a>Sincronizar dispositivos para obter as políticas e ações mais recentes com o Intune
 
@@ -65,7 +65,7 @@ Quando um administrador executa a ação de dispositivo **Sincronizar**, as apli
 | 2016330889 | A ligação segura falhou. Reinicie a sua ligação. | Sim|
 | 2016330888 | A avaliação da fidedignidade do servidor falhou. | Não|
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Passos Seguintes
 
 Pode [verificar os detalhes](device-inventory.md) do dispositivo.
  
