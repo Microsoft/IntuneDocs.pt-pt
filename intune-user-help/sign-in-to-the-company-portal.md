@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 04/19/2019
+ms.date: 09/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,29 +18,28 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6bfd8496061b4b3aba2589b73c3e98bce94a5011
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 16d7142e6dc38a177f8820f60e7335b8b23a1eeb
+ms.sourcegitcommit: 8934b1abec96e18cee15a77107d37551766f7666
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528644"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71099789"
 ---
-# <a name="sign-in-to-company-portal"></a>Inicie sessão no Portal da empresa  
+# <a name="sign-in-to-company-portal"></a>Entrar no Portal da Empresa  
 
-Existem três formas de iniciar sessão na aplicação Portal da empresa:
+Há três maneiras de entrar no aplicativo Portal da Empresa:
 
-* Inicie sessão com o seu endereço de e-mail de trabalho e a palavra-passe.  
-* Inicie sessão com autenticação baseada em certificados.  
-* Iniciar sessão a partir de outro dispositivo.    
+* Entre com seu endereço de email e senha de trabalho.  
+* Entre com a autenticação baseada em certificado.  
+* Entre em outro dispositivo.    
 
 
-## <a name="sign-in-with-your-email-address-and-password"></a>Inicie sessão com o seu endereço de e-mail e palavra-passe
-Os passos seguintes mostram as capturas de ecrã do Portal da empresa para iOS.  
+## <a name="sign-in-with-your-email-address-and-password"></a>Entre com seu endereço de email e senha
+As etapas a seguir mostram capturas de tela do Portal da Empresa para iOS.  
 
-1. Abra a aplicação no seu dispositivo e toque em **sessão**.  
+1. Abra o aplicativo em seu dispositivo e toque **em entrar**.  
 
-   ![A página de início de sessão do Portal da Empresa, com o ícone de uma pessoa à frente de uma representação gráfica de um site. Abaixo disso é o texto "Obter acesso a recursos da empresa e mantê-los seguros" e o botão "Iniciar sessão". Uma ligação na parte inferior direciona para as informações de Privacidade e Cookies da Microsoft.](/intune-user-help/media/cp_ios_aad_signin_after_1804_001.png)
-
+   [![Captura de tela de exemplo da página de entrada portal da empresa. ](/intune-user-help/media/intune-ios-cp-signin-1908.png)](/intune-user-help/media/intune-ios-cp-signin-lightbox-1908.png#lightbox)  
 
 
 2. Introduza a sua **Conta escolar ou profissional** e toque em **Seguinte**.
@@ -51,11 +50,11 @@ Os passos seguintes mostram as capturas de ecrã do Portal da empresa para iOS.
 
    ![É pedido ao utilizador que indique a palavra-passe depois de ter sido aceite o endereço de e-mail.](/intune-user-help/media/cp_ios_aad_signin_after_1804_003.png)
 
-4. A aplicação irá verificar as suas credenciais. Quando terminar, pode aceder aos recursos da sua organização e instalar as aplicações disponíveis.  
+4. O aplicativo verificará suas credenciais. Quando terminar, você poderá acessar os recursos da sua organização e instalar os aplicativos disponíveis.  
 
-   ![Depois de passar pelo processo de autenticação, a aplicação Portal da empresa inicia sessão, mostra uma barra de carregamento.](/intune-user-help/media/cp_ios_aad_signin_after_1804_004.png)
+   ![Depois de passar pelo processo de autenticação, o aplicativo Portal da Empresa faz logon, mostra uma barra de carregamento.](/intune-user-help/media/cp_ios_aad_signin_after_1804_004.png)
 
-## <a name="sign-in-with-certificate-based-authentication"></a>Inicie sessão com a autenticação baseada em certificado
+## <a name="sign-in-with-certificate-based-authentication"></a>Entrar com autenticação baseada em certificado
 
 1. Abra a aplicação Portal da Empresa no dispositivo.  
 
@@ -65,25 +64,25 @@ Os passos seguintes mostram as capturas de ecrã do Portal da empresa para iOS.
 
 4. Toque em **Continuar** para utilizar o certificado.  
 
-## <a name="sign-in-from-another-device"></a>Iniciar sessão a partir de outro dispositivo
+## <a name="sign-in-from-another-device"></a>Entrar de outro dispositivo
 
-Se a sua empresa utiliza smart cards para aceder aos seus computadores, é provável que tem de autenticar ao iniciar sessão a partir de outro dispositivo.  
+Se sua empresa usa cartões inteligentes para acessar seus computadores, é provável que você precise se autenticar entrando em outro dispositivo.  
 
-1. Abra a aplicação Portal da Empresa no dispositivo. Certifique-se de que é o dispositivo que irá utilizar para aceder aos recursos de trabalho.       
+1. Abra a aplicação Portal da Empresa no dispositivo. Verifique se ele é o dispositivo que você usará para acessar seus recursos de trabalho.       
 
-1. Selecione **iniciar sessão a partir de outro dispositivo**.  
+1. Selecione **entrar em outro dispositivo**.  
 
-   ![Página de início de sessão do Portal da empresa pede-lhe para endereço de e-mail.  Mostra o botão "Seguinte" e uma ligação para "Início de sessão de outro dispositivo." Além disso, inclui uma ligação para "Não consegue aceder à conta?" Uma ligação na parte inferior direciona para as informações de Privacidade e Cookies da Microsoft.](/intune-user-help/media/cp_ios_aad_signin_after_1804_005.png)
+   ![A página de entrada do Portal da Empresa solicita ao usuário o endereço de email.  Mostra o botão "Avançar" e um link para "entrar de outro dispositivo". Além disso, inclui uma ligação para "Não consegue aceder à conta?" Uma ligação na parte inferior direciona para as informações de Privacidade e Cookies da Microsoft.](/intune-user-help/media/cp_ios_aad_signin_after_1804_005.png)
 
 2. Receberá um código único e exclusivo para iniciar sessão no Portal da Empresa. Copie o código.
 
    ![As instruções indicam para ir para a página https://microsoft.com/devicelogin com um código de acesso exclusivo a partir do computador de trabalho e, em seguida, para utilizar o código para iniciar sessão.](/intune-user-help/media/cp_ios_aad_signin_after_1804_006.png)
 
-3. No seu outro dispositivo (aquele que está a utilizar para autenticar), abra o browser e aceda a [ https://microsoft.com/devicelogin ](https://microsoft.com/devicelogin). Introduza ou cole o código.  
+3. Em seu outro dispositivo (aquele que você está usando para autenticar), abra o navegador e vá [https://microsoft.com/devicelogin](https://microsoft.com/devicelogin)para. Insira ou cole o código.  
 
    ![Uma imagem do browser do utilizador no computador de trabalho em vez da aplicação Portal da Empresa. A página “Início de sessão do dispositivo” apresentada solicita ao utilizador o código que recebeu na aplicação Portal da Empresa.](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_004.png)
 
-4. Selecione __continuar__ para permitir ao Portal da empresa iniciar sessão no seu dispositivo de trabalho.   
+4. Selecione __continuar__ para permitir que o portal da empresa entre no seu dispositivo de trabalho.   
 
    ![O utilizador introduziu o seu código exclusivo no campo e o site “Início de sessão do dispositivo” pediu a confirmação de que o Portal da Empresa do Intune foi a aplicação correta para receber a autorização para iniciar sessão.](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_005.png)
 
@@ -91,7 +90,7 @@ Se a sua empresa utiliza smart cards para aceder aos seus computadores, é prov�
 
    ![Uma página de confirmação que indica que o utilizador tem agora sessão iniciada na aplicação Portal da Empresa no seu dispositivo e que esta página pode ser fechada.](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_006.png)
 
-6. A aplicação Portal da empresa iniciada no seu dispositivo de trabalho.  
+6. O aplicativo Portal da Empresa entra no seu dispositivo de trabalho.  
 
    ![Depois do processo de autenticação, a aplicação Portal da Empresa inicia sessão, apresentando o respetivo processo com uma barra de carregamento.](/intune-user-help/media/cp_ios_aad_signin_after_1804_007.png)
 

@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/06/2017
+ms.date: 09/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9333cda33142b9a0a4e0995b4bafe5365f7cb69f
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: c15f2434f67ec08baf04883da6f9525b5f803823
+ms.sourcegitcommit: 8934b1abec96e18cee15a77107d37551766f7666
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67545856"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71099818"
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-ios-device-in-intune"></a>O que acontece se instalar a aplicação Portal da Empresa e inscrever o seu dispositivo iOS no Intune?
 
@@ -37,7 +37,10 @@ Quando instalar a aplicação Portal da Empresa e inscrever o seu dispositivo iO
 
 - Configurar automaticamente a sua conta de e-mail profissional.
 
-Quando inscreve o seu dispositivo no Intune, está a dar permissão ao suporte da empresa para gerir o seu dispositivo de forma a ajudar a proteger as informações da empresa no dispositivo.
+> [!NOTE]
+> Não vendemos nenhum dado coletado por nosso serviço para terceiros por qualquer motivo.  
+
+Quando inscreve o seu dispositivo no Intune, está a dar permissão ao suporte da empresa para gerir o seu dispositivo de forma a ajudar a proteger as informações da empresa no dispositivo.  
 
 Quando o seu dispositivo está inscrito, o suporte da empresa pode:
 
@@ -64,5 +67,7 @@ Quando o seu dispositivo está inscrito, o suporte da empresa pode:
 - Ativar ou desativar as chamadas em roaming no seu dispositivo. Se o roaming de voz for permitido, pode incorrer em tarifas de roaming.
 
 - Ativar ou desativar a sincronização automática de ficheiros no modo de roaming no seu dispositivo. Se a sincronização automática de ficheiros for permitida, pode incorrer em tarifas de roaming.
+
+
 
 Se tiver dúvidas, contacte o suporte da sua empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

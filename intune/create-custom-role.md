@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 10366a41be05dbedee5cd84a1222a727a02a1b93
-ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
+ms.openlocfilehash: 6b7e8f5077f2052a11c980ae3f5629af810a8a0b
+ms.sourcegitcommit: 49f25efb9bc0f16f587f27878cf45de5e4e6a27f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71071463"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71094700"
 ---
 # <a name="create-a-custom-role-in-intune"></a>Criar uma função personalizada no Intune
 
@@ -41,7 +41,7 @@ Para criar, editar ou atribuir funções, a sua conta tem de ter uma das seguint
 
 4. No painel **Adicionar Função Personalizada**, introduza um nome e uma descrição para a nova função e, em seguida, clique em **Permissões**.
 
-5. No painel **Permissões**, escolha as permissões que quer utilizar com esta função. Utilize a [Tabela de RBAC do Intune](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a) para ajudá-lo a decidir quais as permissões que quer aplicar.
+5. No painel **Permissões**, escolha as permissões que quer utilizar com esta função.
 
 6. Na folha **escopo (marcas)** , escolha as marcas para essa função. Essa função pode acessar recursos que também têm essas marcas.
 
@@ -49,6 +49,6 @@ Para criar, editar ou atribuir funções, a sua conta tem de ter uma das seguint
 
 8. No painel **Adicionar Função Personalizada**, clique em **Criar**. A nova função é exibida na lista na folha **funções do Intune – todas as funções** .
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Passos Seguintes
 - [Atribuir uma função a um usuário](assign-role.md)
 - [Saiba mais sobre o controle de acesso baseado em função no Intune](role-based-access-control.md)

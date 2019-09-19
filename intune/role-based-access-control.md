@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e636e2df8271210d8938727eb99491e1ffdd5bdc
-ms.sourcegitcommit: d2989b9992d10d133573d9bc31479659fb7e242c
+ms.openlocfilehash: a5372d079b08a3a324d8ef1d98d26c07073ccd45
+ms.sourcegitcommit: 49f25efb9bc0f16f587f27878cf45de5e4e6a27f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 09/18/2019
-ms.locfileid: "71080038"
+ms.locfileid: "71094669"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>RBAC (controle de acesso baseado em função) com Microsoft Intune
 
@@ -43,7 +43,7 @@ Para ver uma função, escolha**funções** > do **Intune** > **todas as funçõ
 - **Atribuições**: Uma lista de [atribuições de função]( assign-role.md) que definem quais usuários têm acesso a quais usuários/dispositivos. Uma função pode ter várias atribuições e um usuário pode estar em várias atribuições.
 
 ### <a name="built-in-roles"></a>Funções incorporadas
-Você pode atribuir funções internas a grupos sem configuração adicional. Você não pode excluir ou editar o nome, a descrição, o tipo ou as permissões de uma função interna. Para obter uma lista completa das permissões para cada função interna, consulte a [tabela RBAC do Intune](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a).
+Você pode atribuir funções internas a grupos sem configuração adicional. Você não pode excluir ou editar o nome, a descrição, o tipo ou as permissões de uma função interna.
 
 - **Operador de suporte técnico**: Executa tarefas remotas em usuários e dispositivos e pode atribuir aplicativos ou políticas a usuários ou dispositivos.
 - **Gerenciador de políticas e perfis**: Gerencia política de conformidade, perfis de configuração, registro da Apple, identificadores de dispositivos corporativos e linhas de base de segurança.

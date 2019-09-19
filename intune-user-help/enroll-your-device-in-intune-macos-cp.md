@@ -18,12 +18,12 @@ ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ee17e963964b6d2e4aa9d3e05c7a562f3c61bbf5
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 9047dd9bbc55162eae4693d3035cb05ff4becb91
+ms.sourcegitcommit: 8934b1abec96e18cee15a77107d37551766f7666
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67545735"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71099852"
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>Inscrever o seu dispositivo macOS no Intune com a aplicação Portal da Empresa
 
@@ -46,7 +46,7 @@ Se, após a inscrição, a sua organização aplicar um novo requisito de segura
 Para obter mais informações sobre a inscrição, veja [O que acontece quando instalo a aplicação Portal da Empresa e inscrevo o meu dispositivo?](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-macos.md)  
 
 ## <a name="get-your-device-managed"></a>Gerir o seu dispositivo  
-Utilize os passos seguintes para inscrever dispositivos macOS com o OS X El Capitan 10.11 e posterior.   
+Use as etapas a seguir para registrar dispositivos macOS que executam o macOS 10,12 e posterior.   
 
 
 1. Para aceder ao site do Portal da Empresa, abra uma nova janela no __Safari__ e aceda a https://portal.manage.microsoft.com.  
@@ -60,7 +60,7 @@ Utilize os passos seguintes para inscrever dispositivos macOS com o OS X El Capi
 
 4. A página __Dispositivos__ irá apresentar uma lista de dispositivos geridos ou uma faixa. O que é apresentado varia em função de já ter ou não um dispositivo gerido. 
     * Para adicionar um dispositivo que não esteja apresentado, selecione a faixa com a mensagem **Toque aqui para indicar que dispositivo está a utilizar ou adicionar um novo dispositivo**.
-    * Se não tiver todos os dispositivos, a faixa lê: **Não tem quaisquer dispositivos geridos. Adicione este dispositivo ao tocar aqui.** Clique na faixa para adicionar o seu dispositivo.  
+    * Se você não tiver nenhum dispositivo, a faixa lerá: **Você não tem nenhum dispositivo gerenciado. Adicione este dispositivo ao tocar aqui.** Clique na faixa para adicionar o seu dispositivo.  
 
      ![Uma captura de ecrã da página Dispositivos, com um quadrado vermelho à volta da opção de faixa para realçar a opção a clicar.](./media/CP-enroll-MACOS-1808.png)  
 5. Conclua o passo abaixo que corresponder à mensagem atualmente apresentada no Portal da Empresa.  

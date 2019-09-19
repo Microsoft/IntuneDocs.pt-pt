@@ -7,12 +7,12 @@ ms.topic: include
 ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 0721c62d44234a44881cdc562376c9bb62412187
-ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
+ms.openlocfilehash: 1d9903de9d23532174e138709cb40c9cdf49995f
+ms.sourcegitcommit: 8934b1abec96e18cee15a77107d37551766f7666
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68775910"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71107323"
 ---
 Esses avisos fornecem informações importantes que podem ajudá-lo a se preparar para futuras alterações e recursos do Intune. 
 
@@ -66,7 +66,7 @@ Você não precisa realizar nenhuma ação, mas pode considerar atualizar suas d
 #### <a name="additional-information"></a>Informações adicionais 
 https://aka.ms/intune_fullscreen
 
-### <a name="plan-for-change-intune-moving-to-support-ios-11-and-higher-in-september----4665342--"></a>Planejar alteração: O Intune está mudando para dar suporte ao iOS 11 e superior em setembro <!-- 4665342-->
+### <a name="plan-for-change-intune-moving-to-support-ios-11-and-higher-in-september----4665324--"></a>Planejar alteração: O Intune está mudando para dar suporte ao iOS 11 e superior em setembro <!-- 4665324-->
 Em setembro, esperamos que o iOS 13 seja lançado pela Apple. O registro do Intune, o Portal da Empresa e o Managed Browser serão movidos para dar suporte ao iOS 11 e posterior logo após a liberação do iOS 13.
 
 #### <a name="how-does-this-affect-me"></a>Como é que isto me afeta?
@@ -76,7 +76,7 @@ Contanto que os aplicativos móveis do O365 tenham suporte no iOS 11,0 e superio
 - iPhone 5c
 - iPad (4ª geração)
 
-A partir de julho, os dispositivos registrados no MDM com iOS 10 e o Portal da Empresa receberão uma solicitação para atualizar seu sistema operacional ou dispositivo. Se você usar políticas de proteção de aplicativo (aplicativo), também poderá definir a configuração de acesso "exigir o sistema operacional mínimo do iOS (somente aviso)".
+Se você usar políticas de proteção de aplicativo (aplicativo), também poderá definir a configuração de acesso "exigir o sistema operacional mínimo do iOS (somente aviso)".
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>O que preciso de fazer para me preparar para esta alteração?
 Verifique seus relatórios do Intune para ver quais dispositivos ou usuários podem ser afetados. Vá para **dispositivos** > **todos os dispositivos** e filtre por sistema operacional. Você pode adicionar colunas adicionais para ajudar a identificar quem em sua organização tem dispositivos que executam o iOS 10. Solicite que os usuários finais atualizem seus dispositivos para uma versão do sistema operacional com suporte antes de setembro.
