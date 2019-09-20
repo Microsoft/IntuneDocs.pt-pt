@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cd4a195af0b3be5038a34b44606abcddf02c5a1e
-ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
+ms.openlocfilehash: 8ca3cf1cfed2d19a4b40aa667c0b6a1325eee531
+ms.sourcegitcommit: 89a973bbfa1702b2d275af6814874e4305bdcb77
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71071561"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71140774"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Inscrever automaticamente dispositivos iOS com o Programa de Inscrição de Dispositivos da Apple
 
@@ -115,7 +115,7 @@ Com o certificado push, o Intune pode inscrever e gerir dispositivos iOS ao envi
 
 ## <a name="create-an-apple-enrollment-profile"></a>Criar um perfil de inscrição da Apple
 
-Agora que instalou o seu token, pode criar um perfil de inscrição para dispositivos DEP. Um perfil de inscrição de dispositivos especifica as definições aplicadas a um grupo de dispositivos durante a inscrição.
+Agora que instalou o seu token, pode criar um perfil de inscrição para dispositivos DEP. Um perfil de inscrição de dispositivos especifica as definições aplicadas a um grupo de dispositivos durante a inscrição. Há um limite de 100 perfis de registro por token de DEP.
 
 > [!NOTE]
 > Os dispositivos serão bloqueados se não houver licenças Portal da Empresa suficientes para um token VPP ou se o token tiver expirado. O Intune apresentará um alerta quando um token estiver prestes a expirar ou se existirem poucas licenças.

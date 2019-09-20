@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2b96fa9fac25f6de4180d3dcc9ee4022a2cc43fe
-ms.sourcegitcommit: 7484ef8006f6b81d8976c328dd704512a31872ec
+ms.openlocfilehash: 6ab2e258553c049223806ddf199976c84ff6bcba
+ms.sourcegitcommit: 89a973bbfa1702b2d275af6814874e4305bdcb77
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70190242"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71140694"
 ---
 # <a name="in-development-for-microsoft-intune---september-2019"></a>Em desenvolvimento para Microsoft Intune-setembro de 2019
 
@@ -59,7 +59,7 @@ Para ajudá-lo em sua preparação e planejamento, esta página lista as atualiz
 ## <a name="app-management"></a>Gestão de aplicações
 
 ### <a name="managed-google-play-private-lob-apps----1464182----"></a>Aplicativos LOB privados Google Play gerenciados <!-- 1464182  -->
-O Intune permitirá que os administradores de ti publiquem aplicativos LOB Android privados em Google Play gerenciados por meio de um iframe inserido no console do Intune.  Atualmente, os administradores de ti precisam publicar aplicativos LOB diretamente no console de publicação de reprodução do Google, que requer muitas etapas e está muito demorando.  Esse novo recurso permite a publicação fácil de aplicativos LOB com um conjunto mínimo de etapas sem a necessidade de sair do console do Intune.  Qualquer um dos cenários de gerenciamento do Android Enterprise que usam Google Play gerenciados pode aproveitar esse recurso (perfil de trabalho, dispositivos dedicados, totalmente gerenciados e não registrados).  No Intune, selecione aplicativos **cliente** >  > aplicativos**Adicionar**. Em seguida, selecione **Google Play gerenciado** na lista **tipo de aplicativo** . Para obter mais informações sobre aplicativos Google Play gerenciados, consulte [adicionar aplicativos gerenciados de Google Play a dispositivos Android Enterprise com o Intune](apps-add-android-for-work.md).
+O Intune permitirá que os administradores de ti publiquem aplicativos LOB Android privados em Google Play gerenciados por meio de um iframe inserido no console do Intune.  Atualmente, os administradores de ti precisam publicar aplicativos LOB diretamente no console de publicação de reprodução do Google, que requer muitas etapas e está muito demorando.  Esse novo recurso permite a publicação fácil de aplicativos LOB com um conjunto mínimo de etapas sem a necessidade de sair do console do Intune.  Qualquer um dos cenários de gerenciamento do Android Enterprise que usam Google Play gerenciados pode aproveitar esse recurso (perfil de trabalho, dispositivos dedicados, totalmente gerenciados e não registrados).  No Intune,**selecione aplicativos** >  **cliente** > aplicativos**Adicionar**. Em seguida, selecione **Google Play gerenciado** na lista **tipo de aplicativo** . Para obter mais informações sobre aplicativos Google Play gerenciados, consulte [adicionar aplicativos gerenciados de Google Play a dispositivos Android Enterprise com o Intune](apps-add-android-for-work.md).
 
 ### <a name="company-portal-app-installation-status-messages----2514416----"></a>Portal da Empresa mensagens de status de instalação do aplicativo <!-- 2514416  -->
 O aplicativo Portal da Empresa mostrará mensagens de status de instalação de aplicativo adicionais aos usuários finais. As seguintes condições serão aplicadas a novos recursos de dependência do Win32:
@@ -68,7 +68,7 @@ O aplicativo Portal da Empresa mostrará mensagens de status de instalação de 
 - O aplicativo está no processo de instalação, mas requer uma reinicialização para continuar.
 
 ### <a name="managed-google-play-iframe-support----2871756----"></a>Suporte a Google Play iframe gerenciado <!-- 2871756  -->
-O Intune fornecerá suporte para adicionar e gerenciar links da Web diretamente no console do Intune, por meio do iframe Google Playdor gerenciado.  Isso permite que os administradores de ti enviem um gráfico de URL e ícone e, em seguida, implantem esses links em dispositivos como aplicativos Android regulares. Qualquer um dos cenários de gerenciamento do Android Enterprise que usam Google Play gerenciados pode aproveitar esse recurso (perfil de trabalho, dispositivos dedicados, totalmente gerenciados e não registrados).  No Intune, selecione aplicativos **cliente** >  > aplicativos**Adicionar**. Em seguida, selecione **Google Play gerenciado** na lista **tipo de aplicativo** . Para obter mais informações sobre aplicativos Google Play gerenciados, consulte [adicionar aplicativos gerenciados de Google Play a dispositivos Android Enterprise com o Intune](apps-add-android-for-work.md).
+O Intune fornecerá suporte para adicionar e gerenciar links da Web diretamente no console do Intune, por meio do iframe Google Playdor gerenciado.  Isso permite que os administradores de ti enviem um gráfico de URL e ícone e, em seguida, implantem esses links em dispositivos como aplicativos Android regulares. Qualquer um dos cenários de gerenciamento do Android Enterprise que usam Google Play gerenciados pode aproveitar esse recurso (perfil de trabalho, dispositivos dedicados, totalmente gerenciados e não registrados).  No Intune,**selecione aplicativos** >  **cliente** > aplicativos**Adicionar**. Em seguida, selecione **Google Play gerenciado** na lista **tipo de aplicativo** . Para obter mais informações sobre aplicativos Google Play gerenciados, consulte [adicionar aplicativos gerenciados de Google Play a dispositivos Android Enterprise com o Intune](apps-add-android-for-work.md).
 
 ### <a name="macos-support-for-vpp-apps----3173501----"></a>suporte do macOS para aplicativos VPP <!-- 3173501  -->
 os aplicativos macOS que você comprou usando o Apple Business Manager serão exibidos no console do quando os tokens de VPP da Apple forem sincronizados no Intune. Você pode atribuir, revogar e reatribuir licenças baseadas em usuário e dispositivo para grupos usando o console do. Microsoft Intune ajuda a gerenciar aplicativos VPP adquiridos para uso em sua empresa:
@@ -81,7 +81,7 @@ Para obter mais informações sobre o Intune e o VPP, consulte [gerenciar aplica
 Você poderá instalar aplicativos Web, que permitem adicionar um atalho a uma URL na Web, para o Dock usando o macOS Portal da Empresa. Os usuários finais podem acessar a ação de **instalação** na página de detalhes do aplicativo para um aplicativo Web no MacOS portal da empresa. Para obter mais informações sobre o tipo de aplicativo de **link da Web** , consulte [adicionar aplicativos ao Microsoft Intune](apps-add.md).
 
 #### <a name="assign-microsoft-edge-beta-for-macos----4678761----"></a>Atribuir o Microsoft Edge beta para macOS <!-- 4678761  -->
-Você poderá adicionar e atribuir a versão mais recente do Microsoft Edge beta ao Intune para dispositivos macOS. No Intune, selecione aplicativos >  **cliente** > aplicativos**Adicionar aplicativo** > **Microsoft Edge-MacOS**. Em seguida, atribua o Microsoft Edge beta aos grupos pretendidos. O Microsoft AutoUpdate (MAU) mantém o Microsoft Edge atualizado. Para obter mais informações sobre o Microsoft Edge, consulte [gerenciar o acesso via Web usando o Microsoft Edge com o Microsoft Intune](manage-microsoft-edge.md).
+Você poderá adicionar e atribuir a versão mais recente do Microsoft Edge beta ao Intune para dispositivos macOS. No Intune, selecione aplicativos **cliente** >  > aplicativos**Adicionar aplicativo** > **Microsoft Edge-MacOS**. Em seguida, atribua o Microsoft Edge beta aos grupos pretendidos. O Microsoft AutoUpdate (MAU) mantém o Microsoft Edge atualizado. Para obter mais informações sobre o Microsoft Edge, consulte [gerenciar o acesso via Web usando o Microsoft Edge com o Microsoft Intune](manage-microsoft-edge.md).
 
 ### <a name="read-and-write-graph-api-operations-for-intune-apps----5031704----"></a>Ler e gravar API do Graph operações para aplicativos do Intune <!-- 5031704  -->
 Os aplicativos poderão chamar o API do Graph do Intune com operações de leitura e gravação usando a identidade do aplicativo sem credenciais do usuário. Para obter mais informações sobre como acessar a API de Microsoft Graph para o Intune, consulte [trabalhando com o Intune no Microsoft Graph](https://docs.microsoft.com/graph/api/resources/intune-graph-overview?view=graph-rest-1.0).
@@ -132,7 +132,7 @@ Em uma atualização futura, haverá novas configurações que você pode contro
 - **Controle de voz**: Habilita o controle de voz no dispositivo no modo de quiosque.
 - **Modificação do controle de voz**: Permitir que os usuários alterem a configuração de controle de voz no dispositivo no modo de quiosque.
 
-Para ver as configurações atuais, vá para [configurações do quiosque do IOS (apenas](device-restrictions-ios.md#kiosk-supervised-only)no modo supervisionado).
+Para ver as configurações atuais, vá para [configurações do quiosque do IOS (apenas no modo supervisionado)](device-restrictions-ios.md#kiosk-supervised-only).
 
 Aplica-se a:
 
@@ -213,8 +213,8 @@ Adicionaremos o seguinte suporte para dispositivos Android totalmente gerenciado
     - Criar perfil SCEP sob a seção do Android Enterprise
     - vincular certificados SCEP para fazer o perfil de Wi-Fi para autenticação
     - vincular certificados SCEP a perfis de VPN para autenticação
-    - vincular certificados SCEP para os perfis de email para autenticação (via AppConfig)
-- Os aplicativos do sistema terão suporte em dispositivos Android Enterprise. No > Intune, você adicionará um aplicativo Android Enterprise System selecionando **aplicativos** > cliente aplicativos**Adicionar**. Na lista **tipo de aplicativo** , selecione **aplicativo Android Enterprise System**. Para obter mais informações sobre como adicionar aplicações ao Intune, veja [Adicionar aplicações ao Microsoft Intune](apps-add.md). <!-- 4062195 -->
+    - vincular certificados SCEP para perfis de email para autenticação (por meio da configuração de aplicativo)
+- Os aplicativos do sistema terão suporte em dispositivos Android Enterprise. No Intune, você adicionará um aplicativo Android Enterprise System selecionando **aplicativos** >  > cliente aplicativos**Adicionar**. Na lista **tipo de aplicativo** , selecione **aplicativo Android Enterprise System**. Para obter mais informações sobre como adicionar aplicações ao Intune, veja [Adicionar aplicações ao Microsoft Intune](apps-add.md). <!-- 4062195 -->
 - Em **conformidade** > do dispositivo**Android Enterprise** > **dispositivo proprietário**, você poderá criar uma política de conformidade que defina o nível de atestado do Google SafetyNet.   <!-- 4631425 -->
 - Em dispositivos Android Enterprise totalmente gerenciados, haverá suporte para os provedores de defesa contra ameaças móveis. Em **conformidade** > do dispositivo**Android Enterprise** > **dispositivo proprietário**, você pode escolher um nível de ameaça aceitável. <!-- 4631440 --> [As configurações do Android Enterprise para marcar dispositivos como compatíveis ou não compatíveis usando o Intune](compliance-policy-create-android-for-work.md#device-owner) listam as configurações atuais.
 

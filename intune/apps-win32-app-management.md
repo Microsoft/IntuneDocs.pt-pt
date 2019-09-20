@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d87b617f49a3df71b767fe91f1f03f88f36ee8a3
-ms.sourcegitcommit: a25cd79a33feb536d9b2fc11aa7d3e3972f1ca5a
+ms.openlocfilehash: 452602ee98378ecd61ee0cfae8eb16f7fb69cb42
+ms.sourcegitcommit: 89a973bbfa1702b2d275af6814874e4305bdcb77
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70842196"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71140758"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune autônomo-gerenciamento de aplicativos do Win32
 
@@ -187,13 +187,15 @@ Os seguintes passos fornecem orientação para ajudá-lo a adicionar uma aplica�
         - **Selecione o tipo de dados de saída**: Selecione o tipo de dados usado ao determinar uma correspondência de regra de requisito.
 4. Quando tiver terminado, selecione **OK**.
 
-### <a name="step-6-configure-app-detection-rules"></a>Etapa 6: Configurar regras de detecção de aplicativo
+### <a name="step-6-configure-app-detection-rules"></a>Passo 6: Configurar regras de detecção de aplicativo
 
 1. No painel **Adicionar aplicação**, selecione **Regras de deteção** para configurar as regras para detetar a presença da aplicação.
 2. No campo **Formato de regras**, selecione a forma como a presença da aplicação será detetada. Pode optar por configurar manualmente as regras de deteção ou utilizar um script personalizado para detetar a presença da aplicação. Tem de escolher, pelo menos, uma regra de deteção. 
 
     > [!NOTE]
     > No painel **Regras de deteção**, pode optar por adicionar múltiplas regras. As condições para **todas** as regras têm de ser cumpridas para detetar a aplicação.
+    >
+    > Se o Intune detectar que o aplicativo não está presente no dispositivo, o Intune oferecerá o aplicativo novamente após 24 horas. Isso só ocorrerá para aplicativos direcionados com a intenção necessária.
 
     - **Configurar regras de deteção manualmente** – pode selecionar um dos seguintes tipos de regra:
         1. **MSI** – verificar com base na verificação da versão MSI. Esta opção só pode ser adicionada uma vez. Ao escolher este tipo de regra, tem duas definições:
@@ -248,7 +250,7 @@ Os seguintes passos fornecem orientação para ajudá-lo a adicionar uma aplica�
 
         4. Depois de adicionar a(s) regra(s), selecione **Adicionar** > **OK**.
 
-### <a name="step-7-configure-app-return-codes"></a>Etapa 7: Configurar códigos de retorno do aplicativo
+### <a name="step-7-configure-app-return-codes"></a>Passo 7: Configurar códigos de retorno do aplicativo
 
 1. No painel **Adicionar aplicação**, selecione **Códigos de retorno** para adicionar os códigos de retorno utilizados para especificar o comportamento de tentativa de instalação da aplicação ou o comportamento após a instalação. As entradas de código de retorno são adicionadas por predefinição durante a criação de aplicações. No entanto, pode adicionar códigos de retorno adicionais ou alterar os códigos de retorno existentes. 
 2. No painel **Códigos de retorno**, adicione códigos de retorno adicionais ou altere os códigos de retorno existentes.
@@ -259,7 +261,7 @@ Os seguintes passos fornecem orientação para ajudá-lo a adicionar uma aplica�
     - **Bem Sucedido** – o valor de retorno que indica que a aplicação foi instalada com êxito.
 3. Selecione **OK** depois de adicionar ou alterar a lista de códigos de retorno.
 
-### <a name="step-8-add-the-app"></a>Etapa 8: Adicionar a aplicação
+### <a name="step-8-add-the-app"></a>Passo 8: Adicionar a aplicação
 
 1. No painel **Adicionar aplicação**, verifique se configurou as informações da aplicação corretamente.
 2. Selecione **Adicionar** para carregar a aplicação para o Intune.
@@ -292,7 +294,7 @@ Você pode escolher se deseja ou não instalar cada aplicativo dependente automa
 
 Para adicionar uma dependência de aplicativo ao seu aplicativo Win32, use as seguintes etapas:
 
-1. No Intune,**selecione aplicativos de** **aplicativos** > cliente para exibir sua lista de aplicativos cliente adicionados. 
+1. No Intune, selecione aplicativos de **aplicativos** > cliente para exibir sua lista de aplicativos cliente adicionados. 
 2. Selecione um aplicativo **do Windows (Win32)** adicionado. 
 3. Selecione **dependências** para adicionar os aplicativos dependentes que devem ser instalados antes que o aplicativo Win32 possa ser instalado. 
 4. Clique em **Adicionar** para adicionar uma dependência de aplicativo.
@@ -324,7 +326,7 @@ A imagem a seguir notifica o usuário final que as alterações de aplicativo es
 ![Captura de tela notificando o usuário de que as alterações do aplicativo estão sendo feitas](./media/apps-win32-app-09.png)    
 
 ## <a name="toast-notifications-for-win32-apps"></a>Notificações do sistema para aplicativos Win32 
-Se necessário, você pode suprimir a exibição de notificações do sistema de usuário final por atribuição de aplicativo. No Intune,**selecione aplicativos de** **aplicativos** > cliente > selecione as **atribuições** > de > de aplicativo**incluem grupos**. 
+Se necessário, você pode suprimir a exibição de notificações do sistema de usuário final por atribuição de aplicativo. No Intune, selecione aplicativos de **aplicativos** > cliente > selecione as **atribuições** > de > de aplicativo**incluem grupos**. 
 
 > [!NOTE]
 > As aplicações Win32 instaladas da extensão de gestão do Intune não serão desinstaladas em dispositivos não inscritos. Os administradores podem tirar partido da exclusão de atribuição para não oferecer aplicações Win32 em dispositivos BYOD.
@@ -389,6 +391,6 @@ No comando do PowerShell acima, substitua `<path to binary file>` pelo caminho d
 
 Para obter mais informações sobre como solucionar problemas de aplicativos Win32, consulte [solução de problemas de instalação do aplicativo Win32](troubleshoot-app-install.md#win32-app-installation-troubleshooting).
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Passos seguintes
 
 - Para obter mais informações sobre como adicionar aplicações ao Intune, veja [Adicionar aplicações ao Microsoft Intune](apps-add.md).

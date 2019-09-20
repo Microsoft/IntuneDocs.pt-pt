@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/29/2019
+ms.date: 09/17/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cde8269ca9d2ca2348fb6da377ad46150c90015a
-ms.sourcegitcommit: 27e63a96d15bc4062af68c2764905631bd928e7b
+ms.openlocfilehash: eb9d6921a3a2bfa3556e0a8b010e42dddc62a656
+ms.sourcegitcommit: 89a973bbfa1702b2d275af6814874e4305bdcb77
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71061551"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71140740"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Guia para programadores do SDK da Aplicação do Microsoft Intune para iOS
 
@@ -276,6 +276,9 @@ WebViewHandledURLSchemes | Matriz de Cadeias | Especifica os esquemas de URL pro
 ### <a name="overview"></a>Descrição geral
 
 Para receber a política de proteção de aplicações do Intune, as aplicações têm de iniciar um pedido de inscrição com o serviço MAM do Intune. As aplicações podem ser configuradas na consola do Intune para obterem a política de proteção de aplicações, com ou sem a inscrição de dispositivos. A política de proteção de aplicações sem a inscrição de dispositivos, também conhecida como **APP-WE** ou MAM-WE, permite que as aplicações sejam geridas pelo Intune sem a necessidade de o dispositivo ser inscrito na gestão de dispositivos móveis (MDM) do Intune. Em ambos os casos, precisa da inscrição com o serviço MAM do Intune para receber a política.
+
+> [!Important]
+> O SDK de aplicativos do Intune para iOS usa chaves de criptografia de 256 bits quando a criptografia é habilitada pelas políticas de proteção de aplicativo. Todos os aplicativos precisarão ter uma versão atual do SDK para permitir o compartilhamento de dados protegidos.
 
 ### <a name="apps-that-already-use-adal-or-msal"></a>Aplicativos que já usam ADAL ou MSAL
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7b7b4453d441d2f2367b19a6bf0505dabd8e6e48
-ms.sourcegitcommit: 27e63a96d15bc4062af68c2764905631bd928e7b
+ms.openlocfilehash: a39c4a5830f5ce3d724508f5e6da64767c0bcdd0
+ms.sourcegitcommit: 89a973bbfa1702b2d275af6814874e4305bdcb77
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71061685"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71140714"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 
@@ -57,6 +57,9 @@ Saiba mais sobre as novidades todas as semanas no Microsoft Intune. Você també
 ## <a name="week-of-september-16-2019"></a>Semana de 16 de setembro de 2019
 
 ### <a name="app-management"></a>Gestão de aplicações
+
+#### <a name="company-portal-experience----1473353-3598357---"></a>Experiência Portal da Empresa <!-- 1473353, 3598357 -->
+O Portal da Empresa está sendo atualizado. Você poderá usar vários filtros na página de aplicativos dentro do Portal da Empresa. A página de detalhes do dispositivo também está sendo atualizada com uma experiência de usuário aprimorada. Estamos no processo de distribuir essas atualizações para todos os clientes e esperar que sejam concluídas até o final da próxima semana.
 
 #### <a name="macos-support-for-web-apps----3174427---"></a>suporte para macOS para aplicativos Web <!-- 3174427 -->
 Os aplicativos Web, que permitem adicionar um atalho a uma URL na Web, podem ser instalados no Dock usando o Portal da Empresa macOS. Os usuários finais podem acessar a ação de **instalação** na página de detalhes do aplicativo para um aplicativo Web no MacOS portal da empresa. Para obter mais informações sobre o tipo de aplicativo de **link da Web** , consulte [adicionar aplicativos ao Microsoft Intune](apps-add.md) e [adicionar aplicativos Web ao Microsoft Intune](web-app.md).

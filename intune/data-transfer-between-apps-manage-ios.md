@@ -17,32 +17,32 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9a1e370b65d8bfd7e61562347323bf1455dfe55b
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: eaf381d6d7b6bf8e9508eac4ccfc5431aa008658
+ms.sourcegitcommit: 89a973bbfa1702b2d275af6814874e4305bdcb77
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68354308"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71140698"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Como gerir a transferência de dados entre aplicações iOS no Microsoft Intune
 
 Para ajudar a proteger os dados da empresa, restrinja as transferências de arquivos somente para os aplicativos que você gerencia. Pode gerir aplicações iOS das seguintes formas:
 
-- Evitar a perda de dados da empresa Configurando uma política de proteção de aplicativo para os aplicativos, que chamamos de aplicativos **gerenciados por política** . Veja [todas as aplicações geridas pelo Intune que pode gerir com a política de proteção de aplicações](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)
+- Proteja os dados da organização para contas corporativas ou de estudante Configurando uma política de proteção de aplicativo para os aplicativos. que chamamos de *aplicativos gerenciados por política*.  Veja [todas as aplicações geridas pelo Intune que pode gerir com a política de proteção de aplicações](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)
 
-- Implante e gerencie aplicativos por meio do **canal MDM**, que exige que os dispositivos se registrem em uma solução de MDM (gerenciamento de dispositivo móvel). Os aplicativos que você implanta podem ser aplicativos **gerenciados por política** ou outros aplicativos gerenciados.
+- Implante e gerencie os aplicativos por meio do gerenciamento de dispositivos iOS, o que exige que os dispositivos se registrem em uma solução de MDM (gerenciamento de dispositivo móvel). Os aplicativos que você implanta podem ser *aplicativos gerenciados por política* ou outros aplicativos gerenciados do Ios.
 
-A funcionalidade **Gestão Open in** dos dispositivos iOS pode limitar as transferências de ficheiros entre as aplicações que são implementadas através do **canal MDM**. Defina as restrições de *Gerenciamento em aberto* nas definições de configuração e implante-as usando sua solução de MDM.  Quando um usuário instala o aplicativo implantado, as restrições que você define são aplicadas.
+O recurso de **Gerenciamento do Open-in** para dispositivos IOS registrados pode limitar transferências de arquivos entre aplicativos gerenciados do Ios. Definir restrições de *Gerenciamento de abertura* em definições de configuração e implantá-las usando sua solução de MDM.  Quando um usuário instala o aplicativo implantado, as restrições que você define são aplicadas.
 
 ## <a name="use-app-protection-with-ios-apps"></a>Usar a proteção de aplicativo com aplicativos iOS
-Use as políticas de proteção de aplicativo com o recurso iOS **Open in Management** para proteger os dados da empresa das seguintes maneiras:
+Use as políticas de proteção de aplicativo com o recurso de **gerenciamento aberto** do IOS para proteger os dados da empresa das seguintes maneiras:
 
-- **Dispositivos de Propriedade do funcionário não gerenciados por nenhuma solução de MDM:** Você pode definir as configurações de política de proteção de aplicativo para **permitir que o aplicativo transfira dados somente para aplicativos gerenciados por política**. O comportamento de *abertura* em um aplicativo gerenciado por política apresenta apenas outros aplicativos gerenciados por política como opções para compartilhamento. Se um usuário tentar enviar um arquivo protegido por política como um anexo do OneDrive no aplicativo de email nativo, esse arquivo ficará ilegível.
+- **Dispositivos não gerenciados por nenhuma solução de MDM:** Você pode definir as configurações de política de proteção de aplicativo para controlar o compartilhamento de dados com outros aplicativos por meio de *extensões de compartilhamento*ou *abertas* .  Para fazer isso, configure a configuração **enviar dados org para outro aplicativo** para **aplicativos gerenciados por política com o valor de filtragem de compartilhamento/entrada** .  O comportamento de *abrir/compartilhar* no *aplicativo gerenciado por política* apresenta apenas outros *aplicativos gerenciados por política* como opções para compartilhamento. 
 
 - **Dispositivos gerenciados por soluções de MDM**: Para dispositivos registrados no Intune ou soluções de MDM de terceiros, o compartilhamento de dados entre aplicativos com políticas de proteção de aplicativo e outros aplicativos iOS gerenciados implantados por meio do MDM é controlado pelas políticas de aplicativo do Intune e pelo recurso de **gerenciamento aberto do** Ios. Para garantir que os aplicativos implantados usando uma solução de MDM também estejam associados às políticas de proteção de aplicativo do Intune, defina a configuração de UPN do usuário, conforme descrito na seção a seguir, [defina configuração de UPN do usuário](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm). Para especificar como você deseja permitir a transferência de dados para outros aplicativos, habilite **enviar dados da organização para outros aplicativos** e, em seguida, escolha o nível de compartilhamento preferencial. Para especificar como você deseja permitir que um aplicativo receba dados de outros aplicativos, habilite **receber dados de outros aplicativos** e, em seguida, escolha o nível preferencial de recebimento de dados. Para obter mais informações sobre a receção e partilha de dados de aplicações, veja [Definições de reposicionamento de dados](app-protection-policy-settings-ios.md#data-protection).
 
 ## <a name="configure-user-upn-setting-for-microsoft-intune-or-third-party-emm"></a>Configurar a definição de UPN do utilizador para o Microsoft Intune ou EMM de terceiros
-A configuração da definição de UPN do utilizador é **obrigatória** para dispositivos geridos pelo Intune ou por uma solução de EMM de terceiros. A configuração de UPN funciona com as políticas de proteção de aplicativo que você implanta do Intune. O procedimento a seguir é um fluxo geral sobre como definir a configuração de UPN e a experiência do usuário resultante:
+Definir a configuração de UPN do usuário é **necessário** para dispositivos que são gerenciados pelo Intune ou uma solução do EMM de terceiros para identificar a conta de usuário registrado. A configuração de UPN funciona com as políticas de proteção de aplicativo que você implanta do Intune. O procedimento a seguir é um fluxo geral sobre como definir a configuração de UPN e a experiência do usuário resultante:
 
 1. No [portal do Azure](https://portal.azure.com), [crie e atribua uma política de proteção de aplicações](app-protection-policies.md) para dispositivos iOS. Configure definições de política em conformidade com os requisitos da sua empresa e selecione as aplicações iOS que devem ter esta política.
 
@@ -85,26 +85,40 @@ A configuração da definição de UPN do utilizador é **obrigatória** para di
 
 ### <a name="example-2-end-user-experience"></a>Exemplo 2: Experiência do utilizador final
 
-1. Um usuário instala o aplicativo Microsoft Word em um dispositivo.
+*Compartilhamento de um* aplicativo gerenciado por política *para outros aplicativos com compartilhamento de so*
 
-2. O usuário inicia o aplicativo de email nativo gerenciado para acessar seus emails.
+1. Um usuário abre o aplicativo Microsoft OneDrive em um dispositivo iOS registrado e entra em sua conta corporativa.  A conta que o usuário insere deve corresponder ao UPN da conta que você especificou nas definições de configuração do aplicativo Microsoft OneDrive.
 
-3. O usuário tenta abrir um documento do email nativo no Microsoft Word.
+2. Depois de entrar, suas configurações de aplicativo configuradas pelo administrador se aplicam à conta de usuário no Microsoft OneDrive.  Isso inclui a configuração de **enviar dados org para outros aplicativos** para os **aplicativos gerenciados por política com o valor de compartilhamento do sistema operacional** .
 
-4. Quando o aplicativo do Word é iniciado, o usuário é solicitado a entrar com sua conta corporativa. A conta que o usuário insere deve corresponder à conta especificada nas definições de configuração de aplicativo do aplicativo Microsoft Word.
+3. O usuário visualiza um arquivo de trabalho e tenta compartilhar por meio do Open-in para o aplicativo gerenciado do iOS.  
+
+4. A transferência de dados é realizada com sucesso e os dados agora são protegidos pelo **Gerenciamento do Open-in** no aplicativo gerenciado do Ios.  O aplicativo do Intune não se aplica a aplicativos que não são *aplicativos gerenciados por política*.
+
+*Compartilhamento de um* aplicativo gerenciado do IOS *para um* aplicativo gerenciado *por política com dados de entrada da organização*
+
+1. Um usuário abre o email nativo em um dispositivo iOS registrado com um perfil de email gerenciado.  
+
+1. O usuário abre um anexo de documento de trabalho do email nativo para o Microsoft Word.
+
+1. Quando o aplicativo Word é iniciado, uma das duas experiências ocorre:
+   1. Os dados são protegidos pelo aplicativo do Intune quando:
+      - O usuário é conectado à sua conta corporativa que corresponde ao UPN da conta que você especificou nas definições de configuração do aplicativo Microsoft Word. 
+      - As configurações do aplicativo configurado pelo administrador se aplicam à conta de usuário no Microsoft Word.  Isso inclui configurar a configuração **receber dados de outros aplicativos** para **todos os aplicativos com o valor de entrada de dados da organização** .
+      - A transferência de dados é realizada com sucesso e o documento é marcado com a identidade de trabalho no aplicativo.  O aplicativo do Intune protege as ações do usuário para o documento.
+   1. Os dados **não** são protegidos pelo aplicativo do Intune quando:
+      - O usuário **não** está conectado à sua conta corporativa.
+      - As configurações definidas pelo administrador **não** são aplicadas ao Microsoft Word porque o usuário não está conectado.
+      - A transferência de dados é realizada com sucesso e o documento **não** é marcado com a identidade de trabalho no aplicativo.  O aplicativo do Intune **não** protege as ações do usuário para o documento porque ele não está ativo.
 
     > [!NOTE]
     > O usuário pode adicionar e usar suas contas pessoais com o Word. As políticas de proteção de aplicativo não se aplicam quando o usuário usa o Word fora de um contexto de trabalho. 
-
-5. Após a entrada, as configurações de política de proteção de aplicativo se aplicam ao aplicativo Word.
-
-6. A transferência de dados será efetuada e o documento será etiquetado com uma identidade da empresa na aplicação.  Os dados são tratados em um contexto de trabalho e as configurações de política se aplicam. 
 
 ### <a name="validate-user-upn-setting-for-third-party-emm"></a>Validar a definição de UPN de utilizador para EMM de terceiros
 
 Depois de definir a configuração de UPN do usuário, valide a capacidade do aplicativo iOS de receber e obedecer à política de proteção de aplicativo do Intune.
 
-Por exemplo, a configuração exigir política de **PIN do aplicativo** é fácil de testar. Quando a configuração de política for igual a **Sim**, o usuário deverá ver um prompt para definir ou inserir um PIN antes que possa acessar os dados da empresa.
+Por exemplo, a configuração exigir política de **PIN do aplicativo** é fácil de testar. Quando a configuração de política for igual a **exigir**, o usuário deverá ver um prompt para definir ou inserir um PIN antes que possa acessar os dados da empresa.
 
 Em primeiro lugar, [crie e atribua uma política de proteção de aplicações](app-protection-policies.md) à aplicação iOS. Para obter mais informações sobre como testar a política de proteção do aplicativo, consulte [validar políticas de proteção do aplicativo](app-protection-policies-validate.md).
 
