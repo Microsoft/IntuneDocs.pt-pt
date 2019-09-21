@@ -1,5 +1,5 @@
 ---
-title: Usando os documentos do Intune
+title: Using the Intune docs (Utilizar a documentação do Intune)
 titleSuffix: Microsoft Intune
 description: Saiba como Pesquisar os documentos do Intune, fornecer comentários de documentos e contribuir com os documentos.
 ms.date: 09/15/2019
@@ -10,14 +10,14 @@ author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ede8d8a55bf9573bb81daaeb9f5ac174196a8911
-ms.sourcegitcommit: 3db8af810b95c3a6ed3f8cc00f6ce79076ebb9db
+ms.openlocfilehash: 278ba505bcc5acd73adcfc4a356dee07fc06d5f7
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71017938"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167737"
 ---
-# <a name="using-the-intune-docs"></a>Usando os documentos do Intune
+# <a name="using-the-intune-docs"></a>Using the Intune docs (Utilizar a documentação do Intune)
 
 Este artigo fornece informações para ajudá-lo a pesquisar as informações do Microsoft Intune docs, fornecer comentários sobre os documentos do Intune e mostrar como você pode contribuir com rapidez e facilidade para os documentos.
 
@@ -67,7 +67,7 @@ Use os problemas do GitHub para enviar os seguintes tipos de comentários:
 - Localizar Comentários sobre a conversão de conteúdo.
 - Otimização do mecanismo de pesquisa (SEO): Comentários sobre os problemas de pesquisa de conteúdo. Inclua o mecanismo de pesquisa, as palavras-chave e o artigo de destino nos comentários.
 
-Se forem gerados problemas para tópicos não relacionados ao documento, como [comentários sobre produtos](https://microsoftintune.uservoice.com/forums/291681-ideas), [perguntas sobre produtos](https://social.technet.microsoft.com/Forums/en-US/home?forum=microsoftintuneprod)ou [solicitações de suporte](https://docs.microsoft.com/intune/get-support), esses problemas serão fechados e o usuário será redirecionado para o canal de comentários adequado.
+Se forem gerados problemas para tópicos não relacionados ao documento, como [comentários sobre produtos](https://microsoftintune.uservoice.com/forums/291681-ideas), [perguntas sobre produtos](https://social.technet.microsoft.com/Forums/en-US/home?forum=microsoftintuneprod)ou [solicitações de suporte](get-support.md), esses problemas serão fechados e o usuário será redirecionado para o canal de comentários adequado.
 
 Para compartilhar comentários sobre a plataforma docs.microsoft.com, consulte [comentários de documentos](https://aka.ms/sitefeedback). A plataforma inclui todos os componentes de wrapper, como o cabeçalho, o Sumário e o menu à direita. Além disso, como os artigos são renderizados no navegador, como a fonte, as caixas de alerta e as âncoras de página.
 

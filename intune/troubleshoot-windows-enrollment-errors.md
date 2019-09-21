@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e8af18192a3a15fee15dd2204ada572e6a67be1c
-ms.sourcegitcommit: 6c74ff568267d85fd1d44fda75e3e24ead87cb2b
+ms.openlocfilehash: 0f78f069f46ce036752fde80519abc03dc7c424c
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70063000"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167785"
 ---
 # <a name="troubleshoot-windows-device-enrollment-problems-in-microsoft-intune"></a>Solucionar problemas de registro de dispositivo Windows no Microsoft Intune
 
@@ -299,7 +299,7 @@ Atualize o chip do TPM para a versão 2,0.
 
 Se o problema persistir, verifique se o mesmo dispositivo está em dois grupos atribuídos, com cada grupo sendo atribuído a um perfil de piloto automático diferente. Se estiver em dois grupos, determine qual perfil do AutoPilot deve ser aplicado ao dispositivo e, em seguida, remova a atribuição do outro perfil.
 
-Para obter mais informações sobre como implantar um dispositivo Windows no modo de quiosque com o piloto automático, consulte Implantando [um quiosque usando o Windows AutoPilot](https://blogs.technet.microsoft.com/mniehaus/2018/06/07/deploying-a-kiosk-using-windows-autopilot/).
+Para obter mais informações sobre como implantar um dispositivo Windows no modo de quiosque com o piloto automático, consulte [implantando um quiosque usando o Windows AutoPilot](https://blogs.technet.microsoft.com/mniehaus/2018/06/07/deploying-a-kiosk-using-windows-autopilot/).
 
 
 ### <a name="securing-your-hardware-failed-0x800705b4"></a>Protegendo seu hardware (falha: 0x800705b4).
@@ -322,7 +322,7 @@ Registering your device for mobile management (Previous step failed)
 #### <a name="resolution"></a>Resolução
 Verifique se o dispositivo de destino atende aos dois requisitos descritos na seção **causa** .
 
-Para obter mais informações sobre como implantar um dispositivo Windows no modo de quiosque com o piloto automático, consulte Implantando [um quiosque usando o Windows AutoPilot](https://blogs.technet.microsoft.com/mniehaus/2018/06/07/deploying-a-kiosk-using-windows-autopilot/).
+Para obter mais informações sobre como implantar um dispositivo Windows no modo de quiosque com o piloto automático, consulte [implantando um quiosque usando o Windows AutoPilot](https://blogs.technet.microsoft.com/mniehaus/2018/06/07/deploying-a-kiosk-using-windows-autopilot/).
 
 
 ### <a name="something-went-wrong-error-code-80070774"></a>Algo deu errado. Código de erro 80070774.
@@ -388,4 +388,4 @@ Esse problema é geralmente causado pela delegação incorreta de permissões pa
 - [Faça uma pergunta no fórum do Intune](https://social.technet.microsoft.com/Forums/%7Blang-locale%7D/home?category=microsoftintune&filter=alltypes&sort=lastpostdesc)
 - [Consulte o blog da equipe de suporte do Microsoft Intune](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/bg-p/IntuneCustomerSuccess)
 - [Confira o blog do Microsoft Enterprise Mobility e segurança](https://techcommunity.microsoft.com/t5/Azure-Active-Directory-Identity/Announcing-the-public-preview-of-Azure-AD-group-based-license/ba-p/245210)
-- [Obter suporte para Microsoft Intune](https://docs.microsoft.com/intune/get-support) 
+- [Obter suporte para Microsoft Intune](get-support.md)

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6ab2e258553c049223806ddf199976c84ff6bcba
-ms.sourcegitcommit: 89a973bbfa1702b2d275af6814874e4305bdcb77
+ms.openlocfilehash: 4bd5392abba3ea22127cb9bcbbb53ec4929f2d5e
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71140694"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166355"
 ---
 # <a name="in-development-for-microsoft-intune---september-2019"></a>Em desenvolvimento para Microsoft Intune-setembro de 2019
 
@@ -90,7 +90,7 @@ Os aplicativos poderão chamar o API do Graph do Intune com operações de leitu
 As políticas de proteção de aplicativo do Intune (aplicativo) em dispositivos Android e iOS permitirão que você controle o conteúdo de notificação do aplicativo para contas da organização. Este recurso exigirá suporte de aplicativos e pode não estar disponível para todos os aplicativos habilitados para aplicativo. Para obter mais informações sobre o aplicativo, consulte [o que são políticas de proteção de aplicativo?](app-protection-policy.md).
 
 ### <a name="available-google-play-app-reporting-for-android-work-profiles----3041956----"></a>Relatórios de aplicativos Google Play disponíveis para perfis de trabalho do Android <!-- 3041956  -->
-Para instalações de aplicativos disponíveis em dispositivos Android de perfil de trabalho, você pode exibir o status de instalação do aplicativo e a versão instalada dos aplicativos gerenciados Google Play. Para obter mais informações, consulte [como monitorar políticas de proteção de aplicativo](app-protection-policies-monitor.md), [gerenciar dispositivos de perfil de trabalho Android com o Intune](android-enterprise-overview.md) e o tipo de [aplicativo Google Play gerenciado](apps-add-android-for-work.md#managed-google-play-app-type).
+Para instalações de aplicativos disponíveis em dispositivos Android de perfil de trabalho, você pode exibir o status de instalação do aplicativo e a versão instalada dos aplicativos gerenciados Google Play. Para obter mais informações, consulte [como monitorar políticas de proteção de aplicativo](app-protection-policies-monitor.md), [gerenciar dispositivos de perfil de trabalho Android com o Intune](android-enterprise-overview.md) e o tipo de [aplicativo Google Play gerenciado](apps-add-android-for-work.md#managed-google-play-app-types).
 
 <!-- ***********************************************-->
 ## <a name="device-configuration"></a>Configuração do dispositivo
@@ -132,7 +132,7 @@ Em uma atualização futura, haverá novas configurações que você pode contro
 - **Controle de voz**: Habilita o controle de voz no dispositivo no modo de quiosque.
 - **Modificação do controle de voz**: Permitir que os usuários alterem a configuração de controle de voz no dispositivo no modo de quiosque.
 
-Para ver as configurações atuais, vá para [configurações do quiosque do IOS (apenas no modo supervisionado)](device-restrictions-ios.md#kiosk-supervised-only).
+Para ver as configurações atuais, vá para [configurações do quiosque do IOS (apenas no modo supervisionado)](device-restrictions-ios.md#kiosk).
 
 Aplica-se a:
 
@@ -167,7 +167,7 @@ Você pode inserir a URL da iTunes App Store, `https://itunes.apple.com/us/app/w
 - `https://itunes.apple.com/us/app/work-folders/id950878067?mt=8`
 - `https://apps.apple.com/us/app/work-folders/id950878067?mt=8`
 
-Para obter mais informações sobre essas configurações, consulte [Mostrar ou ocultar aplicativos (somente supervisionado)](device-restrictions-ios.md#show-or-hide-apps-supervised-only).
+Para obter mais informações sobre essas configurações, consulte [Mostrar ou ocultar aplicativos](device-restrictions-ios.md#show-or-hide-apps).
 
 Aplica-se a:
 
@@ -191,7 +191,7 @@ Os recursos de administrador do dispositivo do Android foram substituídos pelo 
 
 Os locatários existentes não sofrerão alteração em seus ambientes. 
 
-Para obter mais informações sobre o administrador do dispositivo Android no Intune, consulte [registro do administrador do dispositivo Android](https://docs.microsoft.com/intune/android-enroll-device-administrator).
+Para obter mais informações sobre o administrador do dispositivo Android no Intune, consulte [registro do administrador do dispositivo Android](android-enroll-device-administrator.md).
 
 ### <a name="for-ios-devices-customize-the-enrollment-process-privacy-screen-of-the-company-portal----4394993----"></a>Para dispositivos iOS, personalize a tela de privacidade do processo de registro do Portal da Empresa <!-- 4394993  -->
 Usando a redução, você poderá personalizar a tela de privacidade do Portal da Empresa que os usuários finais veem durante o registro do iOS. Especificamente, você poderá personalizar a lista de coisas que sua organização não pode ver ou fazer no dispositivo.

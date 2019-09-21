@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 08/02/2019
+ms.date: 09/19/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 97674627ac1894aa7fcf3f6a6550677b89e1a150
-ms.sourcegitcommit: 3f0cc80c5dbb4d04519c5aa98eae8426dad8cb30
+ms.openlocfilehash: 80b904893f118bac1f4d0d79da0cd10498b9f2ed
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70158027"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71162875"
 ---
 # <a name="macos-endpoint-protection-settings-in-intune"></a>Configurações do MacOS Endpoint Protection no Intune  
 
@@ -105,13 +105,6 @@ Para obter mais informações sobre as configurações do Apple FileVault, consu
     - **Desabilitar** – desabilitar o prompt na saída.
 
     **Padrão**: Não configurado  
-
-     > [!IMPORTANT]  
-     > Há um problema conhecido quando a configuração **desabilitar prompt em sair** está definida como *desabilitar*. Quando definido como *desabilitado*, a configuração do **número de vezes permitido para bypass** deve ser definida como um valor e não deve ser definida como *não*configurada. Se definido como *não configurado*, o perfil falha no dispositivo. Nesse cenário, o dispositivo relata que é um **Resumo de estado de perfil** como **erro** sem mais detalhes.
-     > 
-     > Quando **desabilitar prompt na saída** estiver definido como *não configurado*, o **número de vezes permitido para bypass** pode *não ser configurado* ou ter um valor.  
-     > 
-     > Esse problema será resolvido em uma atualização futura. 
 
   - **Número de vezes com permissão para ignorar**  
   Defina o número de vezes que um usuário pode ignorar prompts para habilitar FileVault antes que FileVault seja necessário para que o usuário entre.  

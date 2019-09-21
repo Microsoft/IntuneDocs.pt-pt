@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/14/2019
+ms.date: 09/18/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8bd537315a09c0c7cf338ac0892fc4ae3d1dc8fc
-ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
+ms.openlocfilehash: 53a9c3e8b80f611bc9e293ba7e07c1aece0cfc58
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69550181"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71163043"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Definições de dispositivos do Android Enterprise para permitir ou restringir funcionalidades com o Intune
 
@@ -201,6 +201,9 @@ Use essas configurações para configurar uma experiência em estilo de quiosque
 - **Remoção de usuário**: Escolha **Bloquear** para impedir que os usuários removam usuários. **Não configurado** permite aos utilizadores remover outros utilizadores do dispositivo.
 - **Alterações de conta**: Escolha **Bloquear** para impedir que os usuários modifiquem contas. **Não configurado** permite aos usuários atualizar as contas de utilizador no dispositivo.
 
+  > [!NOTE]
+  > Essa configuração não é respeitada em dispositivos de proprietário do dispositivo (totalmente gerenciado). Se você definir essa configuração, a configuração será ignorada e não terá nenhum impacto.
+
 ### <a name="applications"></a>Aplicações
 
 - **Permitir a instalação de fontes**desconhecidas: Escolha **permitir** para que os usuários possam ativar **fontes**desconhecidas. Essa configuração permite que os aplicativos instalem de fontes desconhecidas, incluindo fontes diferentes da Google Play Store. **Não configurado** impede que os utilizadores de ativarem **origens desconhecidas**.
@@ -270,6 +273,10 @@ Use essas configurações para configurar uma experiência em estilo de quiosque
 - **Pesquisar contatos de trabalho do perfil pessoal**: Escolha **Bloquear** para impedir que os usuários pesquisem contatos de trabalho em aplicativos no perfil pessoal. **Não é necessário** permite procurar contactos de trabalho no perfil pessoal.
 
 - **Câmara**: Escolha **Bloquear** para impedir o acesso à câmera no dispositivo no perfil de trabalho. A câmara na parte pessoal não é afetada por esta definição. **Não é necessário** permite o acesso à câmara no perfil de trabalho.
+
+- **Permitir widgets de aplicativos de perfil de trabalho**: **Habilitar** permite que os usuários finais coloquem widgets expostos por aplicativos na tela inicial. A opção **Não configurado** (predefinição) desativa esta funcionalidade.
+
+  Por exemplo, o Outlook é instalado nos perfis de trabalho de seus usuários. Quando definido como **habilitar**, os usuários podem colocar o widget pauta na tela inicial do dispositivo.
 
 #### <a name="work-profile-password"></a>Palavra-passe de perfil de trabalho
 

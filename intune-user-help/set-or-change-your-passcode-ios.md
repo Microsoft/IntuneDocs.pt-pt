@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/14/2017
+ms.date: 09/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,20 +16,21 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 346e6219c10cc8b90d3bf83170adffa677c6c484
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: dddcb16a0067ed6e278ff3f9032695e075a0fb6a
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61503928"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71163286"
 ---
 # <a name="set-or-change-your-passcode"></a>Definir ou alterar o código de acesso
 
-Se o seu dispositivo iOS não estiver em conformidade com a política de código de acesso do suporte da empresa, é apresentada uma mensagem que descreve resumidamente o problema e explica o que precisa de fazer para que o código de acesso cumpra os requisitos.
+Crie uma nova senha ou altere uma existente para atender aos requisitos da sua organização. A senha impedirá que pessoas não autorizadas desbloqueiem e usem seu dispositivo. 
 
-O suporte da empresa pode definir mais do que um requisito de código de acesso. Por exemplo, o código de acesso pode ter como requisito conter um determinado número de carateres e pode ter de ter uma mistura de números, letras e carateres. Uma vez que pode ser definido mais do que um requisito, estas instruções só podem explicar como definir ou alterar o código de acesso. Não explicam cada combinação possível de requisitos. Estes códigos de acesso são utilizados, por exemplo, para aceder ao dispositivo a partir do ecrã de bloqueio.
+Sua organização pode definir mais de um requisito de senha. Para obter uma lista de requisitos de senha comuns, consulte [requisitos de senha do dispositivo para dispositivos registrados](password-does-not-meet-it-administrator-requirements.md).  
 
-Caso tenha problemas em configurar um código de acesso que cumpra os requisitos de código de acesso, contacte o suporte da empresa para obter ajuda.
+Se você tiver problemas para criar ou alterar sua senha, entre em contato com o seu profissional de suporte de ti.  
+
 
 ## <a name="set-your-passcode"></a>Definir o código de acesso
 

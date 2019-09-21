@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/03/2019
+ms.date: 09/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0e553229530f826ead91be981ff446b7cb3ebbf2
-ms.sourcegitcommit: 7269abaefb2857bc8b343896bb2138bdb01bf8dc
+ms.openlocfilehash: a9091b4623e456f5b00134542282b2032ce70e6a
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70214276"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71163745"
 ---
 # <a name="create-and-assign-scep-certificate-profiles-in-intune"></a>Criar e atribuir perfis de certificado SCEP no Intune
 
@@ -38,9 +38,19 @@ Depois de [configurar sua infraestrutura](certificates-scep-configure.md) para d
 3. Introduza um **Nome** e uma **Descrição** para o perfil de certificado SCEP.
 4. Na lista suspensa **plataforma** , selecione uma [plataforma de dispositivo com suporte](certificates-configure.md#supported-platforms-and-certificate-profiles) para este certificado SCEP. 
 5. Na lista suspensa **tipo de perfil** , selecione **certificado SCEP**.  
+   
+   Para a plataforma **Android Enterprise** , o *tipo de perfil* é dividido em duas categorias, *somente proprietário do dispositivo* e *somente perfil de trabalho*. Certifique-se de selecionar o perfil de certificado SCEP correto para os dispositivos que você gerencia.  
 
-   > [!NOTE]  
-   > Para a plataforma **Android Enterprise** , o *tipo de perfil* é dividido em duas categorias: *Somente o proprietário do dispositivo* e o *perfil de trabalho*.  Os perfis de certificado SCEP só têm suporte para o *perfil de trabalho*.
+   Os perfis de certificado SCEP para o perfil *somente proprietário do dispositivo* têm as seguintes limitações:  
+
+   1. Não há suporte para as seguintes variáveis:  
+
+      - CN = {{OnPrem_Distinguished_Name}}  
+      - CN = {{onPremisesSamAccountName}}  
+
+   2. Em monitoramento, o relatório de certificados não está disponível para perfis de certificado SCEP do proprietário do dispositivo.
+   
+   3. A revogação de certificados provisionados por perfis de certificado SCEP para o proprietário do dispositivo não é suportada por meio do Intune, mas pode ser gerenciada por meio de um processo externo ou diretamente com a autoridade de certificação.
 
 6. Selecione **configurações**e, em seguida, conclua as seguintes configurações:
 
@@ -249,6 +259,6 @@ Atribua perfis de certificado SCEP da mesma maneira que [implanta perfis de disp
 > Em dispositivos iOS, quando um perfil de certificado SCEP é associado a um perfil adicional, como um perfil de Wi-Fi ou VPN, o dispositivo recebe um certificado para cada um desses perfis adicionais. Isso resulta no dispositivo iOS com vários certificados entregues pela solicitação de certificado SCEP.  Se desejar um único certificado, você deverá usar certificados PKCS em vez de certificados SCEP.  Isso se deve às diferenças em como os certificados SCEP e PKCS são entregues aos dispositivos.
 
 
-## <a name="next-steps"></a>Passos Seguintes  
+## <a name="next-steps"></a>Passos seguintes  
 
 [Atribuir perfis](device-profile-assign.md)  

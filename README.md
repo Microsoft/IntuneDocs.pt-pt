@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 1c716f48a46e4fd2dc24d203426c364dd4cd88c0
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 8d76ff182ea4402b6a4cd3242b15288d8bea16b9
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67545240"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166462"
 ---
 ## <a name="microsoft-open-source-code-of-conduct"></a>Código de Conduta Open Source da Microsoft
 
@@ -16,30 +16,30 @@ Para obter mais informações, veja as [FAQ do Código de Conduta](https://opens
 Encontrou um dos repositórios do GitHub que armazena as fontes dos conteúdos publicados em [https://docs.microsoft.com](https://docs.microsoft.com/.), o local onde se encontram todos os conteúdos técnicos do Departamento de Nuvem e Empresas da Microsoft.
 
 ## <a name="contribute-to-your-documentation"></a>Contribuições para a documentação
-Estamos **querem e incentivar contribuições** da Comunidade (utilizadores, os clientes, parceiros, amigos em outros planetas) e dos funcionários da Microsoft para aprimorar a sua documentação. Eis algumas sugestões:
+Queremos **e incentive contribuições** de nossa comunidade (usuários, clientes, parceiros, amigos em outros planetas) e funcionários da Microsoft para aprimorar sua documentação. Eis algumas sugestões:
 
-* **Criar uma conta do GitHub**: Início de sessão é gratuito em [GitHub.com](https://www.github.com).
+* **Crie uma conta do GitHub**: Inscreva-se é gratuito em [github.com](https://www.github.com).
 
-* **Utilizar o browser**: Existem duas opções: 
+* **Use seu navegador**: Existem duas opções: 
 
-    **Opção 1: Editar diretamente a partir do docs.microsoft.com**  
-    1. Vá para o tópico, como [ https://docs.microsoft.com/intune/troubleshoot-policies-in-microsoft-intune ](https://docs.microsoft.com/intune/troubleshoot-policies-in-microsoft-intune). 
-    2. Selecione **editar** (canto superior direito). Isso mostra o ficheiro de markdown no repositório do GitHub.
-    3. Selecione o ícone de lápis. Quando paira o rato sobre o ícone de lápis, verá a **editar este ficheiro** dica de ferramenta. 
-    4. Faça as alterações e, em seguida **consolidação** as suas alterações. 
-    5. Crie pedido pull.
+    **Opção 1: Editar diretamente do docs.microsoft.com**  
+    1. Vá para o tópico, [https://docs.microsoft.com/intune/troubleshoot-policies-in-microsoft-intune](troubleshoot-policies-in-microsoft-intune.md)como. 
+    2. Selecione **Editar** (canto superior direito). Isso mostra o arquivo de redução no repositório GitHub.
+    3. Selecione o ícone de lápis. Ao passar o mouse sobre o ícone de lápis, você verá a dica de ferramenta **Editar este arquivo** . 
+    4. Faça suas alterações e, em seguida, **confirme** suas alterações. 
+    5. Crie a solicitação de pull.
     
-    **Opção 2: Localize o artigo neste repositório e atualizar**  
-    1. A maioria dos tópicos estão em `https://github.com/MicrosoftDocs/IntuneDocs/tree/master/intune`. Nesta pasta, procurar o nome do tópico, como `troubleshoot-policies-in-microsoft-intune`. 
-    2. Selecione a ligação e clique no ícone de lápis. Quando paira o rato sobre o ícone de lápis, verá a **editar este ficheiro** dica de ferramenta. 
-    3. Faça as alterações e, em seguida **consolidação** as suas alterações. 
-    4. Crie pedido pull. 
+    **Opção 2: Encontre o artigo neste repositório e atualize**  
+    1. A maioria dos tópicos `https://github.com/MicrosoftDocs/IntuneDocs/tree/master/intune`estão no. Nessa pasta, procure o nome do tópico, como `troubleshoot-policies-in-microsoft-intune`. 
+    2. Selecione o link e clique no ícone de lápis. Ao passar o mouse sobre o ícone de lápis, você verá a dica de ferramenta **Editar este arquivo** . 
+    3. Faça suas alterações e, em seguida, **confirme** suas alterações. 
+    4. Crie a solicitação de pull. 
 
   Ao fazer uma atualização, poderá ser-lhe pedido que assine um contrato de licença. Trata-se de uma tarefa única. Assim não terá de assinar novamente atualizações futuras feitas com o seu nome de utilizador do GitHub. 
   
-  O valor a `author` apresenta uma lista de metadados (na parte superior de cada tópico) o autor do GitHub. Na `troubleshoot-policies-in-microsoft-intune` exemplo, verá `MandiOhlinger`. No seu pedido pull, pode também mencionar (@*authorValue*) o autor se preferir.
+  O valor nos `author` metadados (na parte superior de cada tópico) lista o autor do github. No exemplo, você verá `MandiOhlinger`. `troubleshoot-policies-in-microsoft-intune` Em sua solicitação de pull, você também pode mencionar (@*authorvalue*) o autor, se desejar.
   
-* **Os funcionários da MSFT**: Depois de criar uma conta do GitHub, ligá-lo para o seu endereço de e-mail da Microsoft. Quando a sua conta estiver associada, não terá de assinar um contrato de licença para fazer uma alteração. passos:
+* **Funcionários do MSFT**: Depois de criar uma conta do GitHub, vincule-a ao seu endereço de email da Microsoft. Quando a sua conta estiver associada, não terá de assinar um contrato de licença para fazer uma alteração. Tarefas
 
   1. Num dispositivo de rede empresarial, aceda a [GitHub account setup](https://review.docs.microsoft.com/en-us/help/contribute/contribute-get-started-setup-github?branch=master) (Configuração da conta do GitHub). Se não estiver na rede empresarial, esta ligação mostra uma mensagem de erro 404.
   
@@ -54,5 +54,5 @@ Estamos **querem e incentivar contribuições** da Comunidade (utilizadores, os 
 ## <a name="use-markdown-to-format-your-topic"></a>Utilize o markdown para formatar o tópico
 Todos os artigos neste repositório utilizam o markdown do GitHub. Eis uma lista de recursos para começar:
 
-* [Noções básicas do markdown](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
-* [Cábula de markdown imprimível](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+* [Noções básicas de redução](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
+* [Cola de redução imprimível](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)

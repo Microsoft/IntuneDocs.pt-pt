@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/28/2018
+ms.date: 09/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,21 +18,20 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f2cd69725ad10c08f7c137f4444cce831160dd88
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 690fb81350c0c264677c6c75b8942e9cdcd4e8f0
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67546793"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71163367"
 ---
 # <a name="how-to-reset-your-device-passcode-from-the-company-portal-website"></a>Como repor o código de acesso do dispositivo a partir do site do Portal da Empresa
 
-Se perder o PIN ou a palavra-passe do seu dispositivo, pode utilizar o [site do Portal da Empresa](https://portal.manage.microsoft.com) para efetuar a reposição.  
+Se perder o PIN ou a palavra-passe do seu dispositivo, pode utilizar o [site do Portal da Empresa](https://portal.manage.microsoft.com) para efetuar a reposição. 
 
-Se estiver a utilizar um dispositivo pertencente à empresa, poderá não ser apresentada a opção para repor o código de acesso do dispositivo. Contacte o suporte da empresa para que este reponha o código de acesso.
+A opção Redefinir senha pode não aparecer para um dispositivo registrado pela empresa. Nesse caso, entre em contato com o suporte de sua empresa para que ele seja redefinido para você.  
 
-   > [!NOTE]
-   > Não é possível repor o código de acesso para dispositivos Android 7.0 e posterior. Se se esquecer o código de acesso, tem de repor o dispositivo para as definições de fábrica. 
+A redefinição de senha não está disponível para dispositivos que executam o Android 7,0 e posterior. Se você esquecer sua senha em um desses dispositivos, deverá redefini-la para as configurações de fábrica.  
 
 ## <a name="reset-your-passcode"></a>Repor o código de acesso
 
@@ -40,15 +39,15 @@ Se estiver a utilizar um dispositivo pertencente à empresa, poderá não ser ap
 
 2. Selecione o dispositivo que necessita de uma reposição do código de acesso.  
 
-    ![Uma captura de ecrã da página Dispositivos, com dois mosaicos que mostram dispositivos não identificados com um nome genérico. Uma faixa cinzenta está diretamente abaixo dos dispositivos e pede ao utilizador que identifique o dispositivo que está a utilizar ou adicione um novo.](./media/rename-reset-device-step2-1808.png) 
+    ![Uma captura de tela da página dispositivos, com dois blocos que mostram dispositivos não identificados, genericamente nomeados. Uma faixa cinza fica diretamente abaixo dos dispositivos e solicita que o usuário identifique o dispositivo que está usando ou adicione um novo.](./media/rename-reset-device-step2-1808.png) 
 
 3. Selecione **Repor Código de Acesso**. Se a opção de código de acesso não estiver visível na parte superior da sua página, selecione **Mais (…)**  > **Repor Código de Acesso**.   
 
    ![A página de detalhes do dispositivo para um dispositivo selecionado no site do Portal da Empresa, com uma lista de ligações na parte superior que apresenta Mudar o Nome, Remover, Repor Dispositivo, Repor Código de Acesso e Bloqueio Remoto. ](./media/rename-reset-device-1808.png)   
 
-    ![Vista ampliada do ícone Mais, realçado com uma seta vermelha.](./media/rename-reset-device-step3-more-1808.png)  
+    ![Captura de tela do ícone mais, realçado com uma seta vermelha.](./media/rename-reset-device-step3-more-1808.png)  
 
-4. Quando lhe for pedido, clique em **Terminar Sessão**. Quando lhe for pedido novamente, volte a iniciar sessão. Tem de iniciar sessão novamente no site do Portal da Empresa dentro de cinco minutos, caso contrário o Portal da Empresa não irá repor o código de acesso do dispositivo.  
+4. Quando lhe for pedido, clique em **Terminar Sessão**. Quando lhe for pedido novamente, volte a iniciar sessão. Entre novamente no site do Portal da Empresa em cinco minutos ou Portal da Empresa não redefinirá a senha do dispositivo.  
 
    > [!NOTE]
    > Tem de iniciar sessão novamente para confirmar a sua identidade. Este procedimento serve para impedir que o código de acesso do seu dispositivo seja reposto através de tentativas maliciosas.
@@ -61,7 +60,7 @@ Se estiver a utilizar um dispositivo pertencente à empresa, poderá não ser ap
 
    ![Captura de ecrã de exemplo que mostra a segunda mensagem de reposição do código de acesso. Inclui uma ligação para saber mais sobre como definir um novo código de acesso na documentação e botões individuais para repor o código de acesso e cancelar.](./media/iwp-reset-passcode-popup2-1808.png) 
 
-6. Se estiver a repor o código de acesso de um dispositivo iOS, o respetivo código de acesso existente será removido. Para dispositivos Windows ou Android, será emitido um código de acesso temporário para desbloquear o dispositivo e definir um novo código de acesso. 
+6. Se estiver a repor o código de acesso de um dispositivo iOS, o respetivo código de acesso existente será removido. Para dispositivos Windows ou Android, você receberá uma senha temporária para desbloquear o dispositivo e definir uma nova senha. 
 
    > [!NOTE]
    > Pode encontrar a palavra-passe temporária para dispositivos Windows e Android no Portal da Empresa, na página de detalhes do dispositivo. Veja a secção [Configurar um novo código de acesso](reset-your-passcode-cpwebsite.md#set-up-a-new-passcode) para obter descrições de códigos de acesso mais específicas do sistema operativo.  
@@ -74,12 +73,12 @@ Se estiver a utilizar um dispositivo pertencente à empresa, poderá não ser ap
 
 Esta secção descreve a reposição do código de acesso e o comportamento da palavra-passe temporária para a plataforma de cada dispositivo.  
 
-**Android**: Remove o código de acesso existente e cria um código de acesso temporário constituído por letras e números.
+**Android**: Remove a senha existente e cria uma senha temporária composta por letras e números.
 
-**iOS**: Remove o código de acesso existente e não cria um código de acesso temporário. Se utilizar o scanner de impressões digitais Touch ID para abrir o seu dispositivo ou fazer compras, terá de configurá-lo novamente.  
+**iOS**: Remove a senha existente e não cria uma senha temporária. Se você usar o Touch ID para abrir o dispositivo ou fazer compras, deverá configurá-lo novamente.  
 
-**Windows 10 Mobile**: Remove o código de acesso existente e cria um código de acesso temporário constituído por letras e números. Se estiver configurado, o reconhecimento facial do Windows Hello irá continuar a funcionar com o dispositivo.
+**Windows 10 Mobile**: Remove a senha existente e cria uma senha temporária composta por letras e números. Se estiver configurado, o reconhecimento facial do Windows Hello irá continuar a funcionar com o dispositivo.
 
-**Windows Phone 8.1**: Remove o código de acesso existente e cria um código de acesso temporário constituído por números.  
+**Windows Phone 8.1**: Remove a senha existente e cria uma senha temporária composta por números.  
 
 Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  

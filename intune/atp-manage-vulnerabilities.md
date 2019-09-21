@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b58b27264e2f6955ae4f16843bb3493e5fdc993e
-ms.sourcegitcommit: fe67741c62749fc9114e9191092ed8b786dd4ffa
+ms.openlocfilehash: 69f214b4fd3f3b7767e719c0f68f19e178a8e29c
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68270287"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167247"
 ---
 # <a name="use-intune-to-remediate-vulnerabilities-identified-by-microsoft-defender-atp"></a>Usar o Intune para corrigir vulnerabilidades identificadas pelo Microsoft defender ATP  
 
@@ -37,13 +37,15 @@ No console da central de segurança do Microsoft defender, os administradores de
 Quando uma tarefa é aceita, o administrador do Intune age a corrigir a vulnerabilidade por meio do Intune, usando as diretrizes fornecidas como parte da tarefa de segurança.  
 
 As ações comuns para correção incluem:  
+
 - **Bloquear** a execução de um aplicativo  
 - **Implante** uma atualização do sistema operacional para atenuar a vulnerabilidade.  
 - **Modifique** um valor de registro.  
 - **Desabilitar** ou **habilitar** uma configuração para afetar a vulnerabilidade.  
 - **Exigir atenção** alerta o administrador para a ameaça quando não há recomendação adequada para fornecer.  
 
-Um fluxo de trabalho de exemplo:  
+Um fluxo de trabalho de exemplo:
+
 - No Microsoft defender ATP, uma vulnerabilidade para um aplicativo chamado contoso Media Player v4 é descoberta e um administrador cria uma tarefa de segurança para atualizar esse aplicativo. O player de mídia da Contoso é um aplicativo não gerenciado que foi implantado com o Intune.  
 
   Essa tarefa de segurança aparece no console do Intune com um status de pendente:  
@@ -61,13 +63,16 @@ Um fluxo de trabalho de exemplo:
 ## <a name="prerequisites"></a>Pré-requisitos  
 
 **Assinaturas**:  
+
 - Microsoft Intune  
 - Proteção avançada contra ameaças do Microsoft defender ([Inscreva-se para uma avaliação gratuita](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-main-abovefoldlink)).  
 
 **Configurações do Intune para ATP**:  
+
 - Configure um serviço para conexão de serviço com o Microsoft defender ATP.  
 - Implante uma política de conformidade do dispositivo com um tipo de perfil do **Microsoft defender ATP (Windows 10 Desktop)** para dispositivos que terão risco avaliado pela ATP.
-  Para obter informações sobre como configurar o Intune para funcionar com ATP, consulte [impor a conformidade para o Microsoft defender ATP com acesso condicional no Intune](https://docs.microsoft.com/intune/advanced-threat-protection#enable-microsoft-defender-atp-in-intune).  
+
+  Para obter informações sobre como configurar o Intune para funcionar com ATP, consulte [impor a conformidade para o Microsoft defender ATP com acesso condicional no Intune](advanced-threat-protection.md#enable-microsoft-defender-atp-in-intune).  
 
 ## <a name="work-with-security-tasks"></a>Trabalhar com tarefas de segurança  
 
@@ -89,6 +94,6 @@ Um fluxo de trabalho de exemplo:
 Após a correção ser bem-sucedida, a pontuação de exposição de risco na ATP pode ser descartada, com base nas novas informações dos dispositivos corrigidos. 
 
 ## <a name="next-steps"></a>Próximos Passos
-Saiba mais sobre o Intune e [o Microsoft defender ATP](https://docs.microsoft.com/intune/advanced-threat-protection)  
-Examinar a [defesa contra ameaças móveis](https://docs.microsoft.com/intune/mobile-threat-defense) do Intune  
+Saiba mais sobre o Intune e [o Microsoft defender ATP](advanced-threat-protection.md)  
+Examinar a [defesa contra ameaças móveis](mobile-threat-defense.md) do Intune  
 Examinar o [painel Threat & gerenciamento](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/tvm-dashboard-insights) de vulnerabilidades no Microsoft defender ATP

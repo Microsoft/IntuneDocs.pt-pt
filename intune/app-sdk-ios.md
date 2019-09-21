@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eb9d6921a3a2bfa3556e0a8b010e42dddc62a656
-ms.sourcegitcommit: 89a973bbfa1702b2d275af6814874e4305bdcb77
+ms.openlocfilehash: ea31c06019643a3eaf10d79857dfdc319a8453c3
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71140740"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167210"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Guia para programadores do SDK da Aplicação do Microsoft Intune para iOS
 
@@ -215,7 +215,7 @@ Se seu aplicativo já usa ADAL ou MSAL, as seguintes configurações são necess
 
 Além disso, as aplicações podem substituir estas definições do Azure AD no runtime. Para tal, basta definir as propriedades `aadAuthorityUriOverride`, `aadClientIdOverride` e `aadRedirectUriOverride` na instância `IntuneMAMPolicyManager`.
 
-4. Verifique se as etapas para dar permissões ao aplicativo iOS para o serviço de política de proteção de aplicativo (aplicativo) foram seguidas. Use as instruções no [guia Introdução ao SDK do Intune](https://docs.microsoft.com/intune/app-sdk-get-started#next-steps-after-integration) em "Dê ao[seu aplicativo acesso ao serviço de proteção de aplicativo do Intune (opcional)](https://docs.microsoft.com/intune/app-sdk-get-started#give-your-app-access-to-the-intune-app-protection-service-optional)".  
+4. Verifique se as etapas para dar permissões ao aplicativo iOS para o serviço de política de proteção de aplicativo (aplicativo) foram seguidas. Use as instruções no [guia Introdução ao SDK do Intune](app-sdk-get-started.md#next-steps-after-integration) em "Dê ao[seu aplicativo acesso ao serviço de proteção de aplicativo do Intune (opcional)](app-sdk-get-started.md#give-your-app-access-to-the-intune-app-protection-service-optional)".  
 
 > [!NOTE]
 > Para todas as definições que são estáticas e que não precisam de ser determinadas no runtime, recomenda-se a abordagem do ficheiro Info.plist. Os valores atribuídos às propriedades `IntuneMAMPolicyManager` têm precedência sobre quaisquer valores correspondentes especificados no ficheiro Info.plist e serão mantidos, mesmo depois de a aplicação ser reiniciada. O SDK continuará a utilizá-los para os registos da política até que a inscrição do utilizador seja anulada ou os valores sejam limpos ou alterados.
@@ -593,7 +593,7 @@ Os administradores do Intune podem direcionar e implementar dados de configuraç
 
 Para obter mais informações sobre as funcionalidades da Graph API, veja [Referência da Graph API](https://developer.microsoft.com/graph/docs/concepts/overview).
 
-Para obter mais informações sobre como criar uma política de configuração de aplicações de MAM direcionada no iOS, veja a secção na configuração de aplicação de MAM direcionada em [Como utilizar políticas de configuração da aplicação Microsoft Intune para iOS](https://docs.microsoft.com/intune/app-configuration-policies-use-ios).
+Para obter mais informações sobre como criar uma política de configuração de aplicações de MAM direcionada no iOS, veja a secção na configuração de aplicação de MAM direcionada em [Como utilizar políticas de configuração da aplicação Microsoft Intune para iOS](app-configuration-policies-use-ios.md).
 
 ## <a name="telemetry"></a>Telemetria
 

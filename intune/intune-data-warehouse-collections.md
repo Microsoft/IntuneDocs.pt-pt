@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b333c848368f00f005ed0febc61f67f098ee7e5e
-ms.sourcegitcommit: 76d59edfd5900ce33c64470ae604eb3db016c8ca
+ms.openlocfilehash: eb470885be8f09f0c99dfe26a1d982570644ac8a
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69979193"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167615"
 ---
 # <a name="intune-data-warehouse-collections"></a>Coleções do Armazém de Dados do Intune
 
@@ -466,7 +466,7 @@ A entidade **MamApplicationInstance** lista aplicações geridas da Gestão de A
 |       DeletedDateUtc       |                                                                             Data e hora em UTC em que a propriedade IsDeleted foi alterada para True.                                                                              |        11/23/2016 12:00:00 AM        |
 | RowLastModifiedDateTimeUtc |                                                           Data e hora em UTC em que esta instância da aplicação MAM foi modificada pela última vez no armazém de dados.                                                            |        11/23/2016 12:00:00 AM        |
 
-## <a name="mamcheckins"></a>MamCheckins
+## <a name="mamcheckins"></a>mamCheckins
 
 A entidade **MamCheckin** representa dados recolhidos quando uma instância de Gestão de Aplicações Móveis (MAM) deu entrada no Serviço do Intune. 
 
@@ -494,7 +494,7 @@ A entidade **MamDeviceHealth** representa dispositivos que têm políticas de Ge
 | DeviceHealthName |Representa o estado do dispositivo. <br>Not available: não existem informações sobre este dispositivo. <br>Healthy: o dispositivo não foi desbloqueado por jailbreak. <br>Unhealthy: o dispositivo foi desbloqueado por jailbreak. |Not Available Healthy Unhealthy |
 | RowLastModifiedDateTimeUtc |Data e hora em UTC em que o Estado de Funcionamento deste Dispositivo MAM específico foi modificado pela última vez no armazém de dados. |11/23/2016 12:00:00 AM |
 
-## <a name="mamplatforms"></a>MamPlatforms
+## <a name="mamplatforms"></a>mamPlatforms
 
 A entidade **MamPlatform** lista os nomes e tipos de plataformas em que uma aplicação da Gestão de Aplicações Móveis (MAM) foi instalada.
 
@@ -729,7 +729,6 @@ A entidade **vppProgramType** apresenta uma lista de tipos de programas VPP poss
 | 00000000-0000-0000-0000-000000000000 | Ainda não está disponível | Valor predefinido, Sem VPP.   |
 | B54814E0-68EA-4BA4-8088-B5AAB58E737B | Apple               | Programa VPP da Apple.     |
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Passos seguintes
 
-Para obter mais informações sobre o Armazém de Dados do Intune, veja [Modelo de dados do Armazém de Dados](https://docs.microsoft.com/intune/reports-ref-data-model).
-
+Para obter mais informações sobre o Armazém de Dados do Intune, veja [Modelo de dados do Armazém de Dados](reports-ref-data-model.md).

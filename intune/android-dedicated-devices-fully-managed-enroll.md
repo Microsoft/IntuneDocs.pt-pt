@@ -17,14 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 99ccc8c61aa781bdcb6ac79c76202253597b8ef6
-ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
+ms.openlocfilehash: 4012dc4046eccf836c73e15409dae182eaf12231
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71070998"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71163261"
 ---
-# <a name="enroll-your-android-enterprise-dedicated-devices-or-fully-managed-devices-preview"></a>Registrar seus dispositivos Android Enterprise dedicados ou dispositivos totalmente gerenciados (versão prévia)
+# <a name="enroll-your-android-enterprise-dedicated-devices-or-fully-managed-devices"></a>Registrar seus dispositivos Android Enterprise dedicados ou dispositivos totalmente gerenciados
 
 Depois de configurar seus [dispositivos Android Enterprise dedicados](android-kiosk-enroll.md) ou [dispositivos totalmente gerenciados](android-fully-managed-enroll.md) no Intune, você pode registrar os dispositivos. A maneira como você registra seus dispositivos Android Enterprise depende do sistema operacional.
 
@@ -91,7 +91,7 @@ Para utilizar o sistema Zero Touch da Google, o dispositivo tem de o suportar e 
 4. Escolha **Aplicar**.
 
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Passos seguintes
 - [Implementar aplicações Android](apps-deploy.md)
 - [Adicionar políticas de configuração para Android](device-profiles.md)
 

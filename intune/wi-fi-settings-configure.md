@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/06/2019
+ms.date: 09/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 75cdd958d9663d5b2d330a947a19963c219feaea
-ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
+ms.openlocfilehash: 80e70db4b64770af1a96ee7f24a3cf875269adce
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69545927"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71163497"
 ---
 # <a name="add-and-use-wi-fi-settings-on-your-devices-in-microsoft-intune"></a>Adicionar e utilizar definições de Wi-Fi nos seus dispositivos no Microsoft Intune
 
@@ -57,7 +57,7 @@ Os perfis de Wi-Fi suportam as seguintes plataformas de dispositivos:
 
       - **Android**
       - **Android Enterprise**
-      - **iOS**
+      - **iOS/iPadOS**
       - **macOS**
       - **Windows 8.1 e posterior**
       - **Windows 10 e posterior**
@@ -73,7 +73,7 @@ Os perfis de Wi-Fi suportam as seguintes plataformas de dispositivos:
 
     - [Android](wi-fi-settings-android.md)
     - [Android Enterprise](wi-fi-settings-android-enterprise.md), incluindo dispositivos dedicados
-    - [iOS](wi-fi-settings-ios.md)
+    - [iOS/iPadOS](wi-fi-settings-ios.md)
     - [macOS](wi-fi-settings-macos.md)
     - [Windows 10 e posterior](wi-fi-settings-windows.md)
     - [Windows 8.1 e posterior](wi-fi-settings-import-windows-8-1.md), incluindo o Windows Holographic for Business
@@ -82,6 +82,6 @@ Os perfis de Wi-Fi suportam as seguintes plataformas de dispositivos:
 
 O perfil é criado e mostrado na lista de perfis (**perfis**de**configuração** > de dispositivo).
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Passos seguintes
 
 O perfil é criado, mas não faz nada. Em seguida, [atribua esse perfil](device-profile-assign.md) e [monitore seu status.](device-profile-monitor.md)..

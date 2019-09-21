@@ -1,6 +1,6 @@
 ---
 title: Como remover o seu dispositivo Android do Intune | Documentos da Microsoft
-description: Remover o seu dispositivo Android a partir do Portal da empresa do Intune
+description: Remova seu dispositivo Android do Portal da Empresa do Intune
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b68ea31a6c5d902e66c0eda8127e0f68383910f8
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 0a472e4d8c3ef7b922f02b4d2407362ba738486c
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67529126"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167539"
 ---
 # <a name="unenroll-your-android-device-from-management"></a>Anular a inscrição do seu dispositivo Android na gestão  
 
@@ -35,43 +35,47 @@ Remova um dispositivo Android inscrito para que deixe de ser gerido pela sua org
 * As definições alteradas no seu dispositivo quando o adicionou (por exemplo, a desativação da câmara ou o comprimento necessário específico de uma palavra-passe) deixam de ser aplicáveis.  
 
 > [!NOTE]
-> Não é possível anular a inscrição ou remover o seu dispositivo pertencente à empresa a partir da aplicação do Microsoft Intune. O dispositivo foi inscrito durante a configuração inicial do dispositivo e têm de estar inscritos para aceder aos recursos da sua organização.  
+> Você não pode cancelar o registro ou remover seu dispositivo de propriedade corporativa do aplicativo Microsoft Intune. O dispositivo foi registrado durante a instalação inicial do dispositivo e deve ser registrado para acessar os recursos da sua organização.  
 
 1. No Portal da Empresa, no canto superior direito, toque nos três pontos verticais. É aberto o menu de ação.
 
-   ![Uma captura de ecrã da aplicação Portal da empresa para Android, com o menu de ação aberto no canto superior direito. A nova opção “Remover Portal da Empresa” está disponível como a terceira opção, abaixo de “O Meu Perfil” e “Definições” e acima de “Termos e Condições”, “Ajuda e Comentários” e “Acerca de”.](./media/android_remove_cp_menu_action_after_1705.png)
+   ![Uma captura de tela do aplicativo Portal da Empresa do Android, com o menu Ação aberto no canto superior direito. A nova opção “Remover Portal da Empresa” está disponível como a terceira opção, abaixo de “O Meu Perfil” e “Definições” e acima de “Termos e Condições”, “Ajuda e Comentários” e “Acerca de”.](./media/android_remove_cp_menu_action_after_1705.png)
 
 2. Toque em **Remover Portal da Empresa**.  
 
 3. É apresentada uma mensagem com informações sobre o que acontece depois de anular a inscrição do seu dispositivo. Toque em **OK** para confirmar que quer remover o dispositivo do Portal da Empresa.
 
-   ![Uma captura de ecrã de confirmação disponível depois de selecionar a nova opção "Remover portal da empresa" no menu de ação.](./media/android_remove_cp_menu_confirmation_after_1705.png)
+   ![Uma captura de tela da confirmação disponível após a seleção da nova opção "remover portal da empresa" no menu Ação.](./media/android_remove_cp_menu_confirmation_after_1705.png)
 
-## <a name="remove-data-collected-by-the-company-portal-app"></a>Remover dados recolhidos pela aplicação Portal da empresa  
+## <a name="remove-data-collected-by-the-company-portal-app"></a>Remover dados coletados pelo aplicativo Portal da Empresa  
 
 Para remover todos os dados que a aplicação Portal da Empresa para Android armazena no seu dispositivo:
 
-- Limpar dados de aplicação ao tocar em **aplicativos** >  **[*nome da aplicação*]**  > **limpar dados**.
-- Elimine a pasta seguinte: \storage\internal storage\Android\data\com.microsoft.windowsintune.companyportal.
+- Limpe os dados do aplicativo tocando em **aplicativos** > **[*nome do aplicativo*]**  > **limpar dados**.
+- Exclua a seguinte pasta: \storage\internal storage\Android\data\com.microsoft.windowsintune.companyportal.
 
-## <a name="uninstall-the-company-portal-app"></a>Desinstalar a aplicação Portal da Empresa  
-Portal da empresa é uma aplicação de gestão de dispositivos. Ele não pode ser desinstalado até que anula a inscrição do dispositivo no seu gerenciamento. Depois de concluir esse procedimento, toque sem soltar no ícone da aplicação Portal da Empresa, até surgir **Desinstalar**. Toque em **Desinstalar** para remover a aplicação do seu dispositivo.  
+## <a name="uninstall-the-company-portal-app"></a>Desinstalar a aplicação Portal da Empresa
 
-Em alternativa, toque em **configurações** > **aplicações** > **Portal da empresa** > **desinstalação**.  
+Portal da Empresa é um aplicativo de gerenciamento de dispositivo. Ele não poderá ser desinstalado até que você cancele o registro do seu dispositivo de seu gerenciamento. Depois de concluir esse procedimento, toque sem soltar no ícone da aplicação Portal da Empresa, até surgir **Desinstalar**. Toque em **Desinstalar** para remover a aplicação do seu dispositivo.  
 
-### <a name="remove-the-company-portal-app-as-a-device-administrator"></a>Remover a aplicação Portal da empresa como um administrador do dispositivo  
-Como último recurso, pode desinstalar a aplicação a partir do seu dispositivo como um administrador do dispositivo.  
+Como alternativa, toque em **configurações** > **aplicativos** > **portal da empresa** > **desinstalar**.  
 
-Se tiver um dispositivo da empresa, a sua organização pode exigir que o Portal da empresa ser no seu dispositivo durante todo o tempo. Se desinstalá-lo, poderá perder o acesso a recursos protegidos da empresa como e-mail, aplicações, Wi-Fi ou VPN, até que a aplicação é reinstalada. Para obter mais informações sobre como instalar, atualizar ou remover as aplicações necessárias, consulte [adicionar aplicações ao Microsoft Intune](https://docs.microsoft.com/intune/apps-add#apps-that-are-added-automatically-by-intune).  
+### <a name="remove-the-company-portal-app-as-a-device-administrator"></a>Remover o aplicativo Portal da Empresa como um administrador de dispositivo
 
-Eis como desativar o Portal da empresa como um administrador do dispositivo. Os nomes reais de cada configuração podem variar no seu dispositivo Android.  
+Como último recurso, você pode desinstalar o aplicativo do seu dispositivo como um administrador de dispositivo.  
+
+Se você tiver um dispositivo de propriedade da empresa, sua organização poderá exigir que Portal da Empresa esteja em seu dispositivo em todos os momentos. Se você desinstalá-lo, poderá perder o acesso a recursos protegidos da empresa, como email, aplicativos, Wi-Fi ou VPN, até que o aplicativo seja reinstalado. Para obter mais informações sobre como instalar, atualizar ou remover aplicativos necessários, consulte [adicionar aplicativos ao Microsoft Intune](https://docs.microsoft.com/intune/apps-add.md#apps-that-are-added-automatically-by-intune).  
+
+Veja como desabilitar Portal da Empresa como um administrador de dispositivo. Os nomes reais de cada configuração podem variar em seu dispositivo Android.  
 
 **Opção 1**:  
-1. Selecione **configurações** > **segurança** > **configurações de segurança adicionais** > **administradores de dispositivos** .  
-2. Limpar o **Portal da empresa** seleção.  
 
-**Opção 2**:  
-1. Selecione **configurações** > **bloqueio de ecrã e segurança** > **outras definições de segurança** > **administração de dispositivos aplicações**.  
-2. Limpar o **Portal da empresa** seleção.    
+1. Selecione **configurações** > **segurança** **configurações de segurança adicional** **Administradores de dispositivo.**  >  >   
+2. Desmarque a seleção de **portal da empresa** .  
+
+**Opção 2**:
+
+1. Selecione **configurações** > **tela de bloqueio e segurança** > **outras configurações** > de segurança**aplicativos administradores de dispositivo**.
+2. Desmarque a seleção de **portal da empresa** .
 
 Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

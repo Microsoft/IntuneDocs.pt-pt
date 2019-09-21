@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1710fd315803c4b47ad3be343893f93f7d155135
-ms.sourcegitcommit: 27e63a96d15bc4062af68c2764905631bd928e7b
+ms.openlocfilehash: c8378986b1cf405a92e34b4c5bd805b169feaf32
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71061691"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167873"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Atualização da IU para aplicações de utilizadores finais do Intune
 Saiba mais sobre as atualizações mais recentes para os aplicativos Microsoft Intune. Nós adicionamos regularmente e melhoramos o aplicativo Portal da Empresa do Intune e o site. Se você for um administrador do Intune ou uma pessoa de suporte, este artigo fornecerá as informações necessárias para:
@@ -120,7 +120,7 @@ Uma nova tela chamada **categorias de aplicativo** foi adicionada para melhorar 
 ## <a name="week-of-november-12-2018"></a>Semana de 12 de novembro de 2018
 
 ### <a name="windows-company-portal-keyboard-shortcuts----2771518---"></a>Atalhos de teclado do Portal da Empresa do Windows <!-- 2771518 -->
-Os usuários finais agora poderão disparar ações de dispositivo e de aplicativo no Portal da Empresa do Windows [usando atalhos de teclado (aceleradores)](https://docs.microsoft.com/intune/company-portal-app#windows-company-portal-keyboard-shortcuts).
+Os usuários finais agora poderão disparar ações de dispositivo e de aplicativo no Portal da Empresa do Windows [usando atalhos de teclado (aceleradores)](company-portal-app.md#windows-company-portal-keyboard-shortcuts).
 
 ## <a name="week-of-october-22-2018"></a>Semana de 22 de outubro de 2018
 
@@ -572,4 +572,4 @@ Saiba como planeamos melhorar a experiência de utilizador através da atualiza�
 ## <a name="see-also"></a>Consulte também
 * [Blogue do Microsoft Intune](http://go.microsoft.com/fwlink/?LinkID=273882)
 * [Roteiro da Cloud Platform](https://www.microsoft.com/cloud-platform/roadmap)
-* [Novidades do Intune](https://docs.microsoft.com/intune/whats-new)
+* [Novidades do Intune](whats-new.md)

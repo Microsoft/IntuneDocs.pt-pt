@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8a282662032fe77cbf39da279c587bff31ad9e24
-ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
+ms.openlocfilehash: 682d51269798dff181a3bd8384268da862118a70
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70129555"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167755"
 ---
 # <a name="intune-certificate-connector-events-and-diagnostic-codes"></a>Eventos do Intune Certificate Connector e códigos de diagnóstico
 
@@ -60,7 +60,7 @@ A partir da versão 6.1806.X.X, o Serviço do Intune Connector regista eventos n
 | -------------   | -------------   | -------------      |
 | 0x00000000 | Êxito  | Êxito |
 | 0x00000400 | PKCS_Issue_CA_Unavailable  | A autoridade de certificação não é válida ou está inacessível. Verifique se a autoridade de certificação está disponível e se o servidor consegue comunicar com a mesma. |
-| 0x00000401 | Symantec_ClientAuthCertNotFound  | O certificado Symantec Client Auth não foi encontrado no arquivo de certificados local. Veja o artigo [Instalar o certificado de autorização de registo da Symantec](https://docs.microsoft.com/intune/certificates-symantec-configure#install-the-symantec-registration-authorization-certificate) para obter mais informações.  |
+| 0x00000401 | Symantec_ClientAuthCertNotFound  | O certificado Symantec Client Auth não foi encontrado no arquivo de certificados local. Veja o artigo [Instalar o certificado de autorização de registo da Symantec](certificates-digicert-configure.md#install-the-digicert-ra-certificate) para obter mais informações.  |
 | 0x00000402 | RevokeCert_AccessDenied  | A conta especificada não tem permissões para revogar um certificado de AC. Veja o campo Nome da AC nos detalhes da mensagem de evento para determinar a AC emissora.  |
 | 0x00000403 | CertThumbprint_NotFound  | Não foi possível localizar um certificado que corresponda à sua pesquisa. Inscreva o conector do certificado e tente novamente. |
 | 0x00000404 | Certificate_NotFound  | Não foi possível localizar um certificado que corresponda às informações fornecidas. Volte a inscrever o conector do certificado e tente novamente. |
@@ -72,5 +72,5 @@ A partir da versão 6.1806.X.X, o Serviço do Intune Connector regista eventos n
 | 0x0FFFFFFFF | Unknown_Error  | Não conseguimos concluir o pedido porque ocorreu um erro do lado do servidor. Tente novamente. |
 
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Passos seguintes
 Para obter assistência adicional, use a [implantação do perfil de certificado SCEP de solução de problemas no guia Microsoft Intune](https://support.microsoft.com/help/4457481/troubleshooting-scep-certificate-profile-deployment-in-intune) .

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e18279fd9cca88de5f04c57a8bcccce1c211c6de
-ms.sourcegitcommit: 4f3fcc6dcbfe2c4e0651d54a130907a25a4ff66e
+ms.openlocfilehash: 4494d5f75336f7152668cfa1bb6fa1cd1a94305c
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69894338"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167855"
 ---
 # <a name="create-an-intune-report-from-the-odata-feed-with-power-bi"></a>Criar um relatório do Intune no feed OData com Power BI
 
@@ -105,7 +105,7 @@ Agora, tem um elemento visual que mostra a distribuição dos fabricantes de dis
 
 Pode adicionar um filtro ao seu treemap para poder responder a perguntas adicionais com a sua aplicação.
 
-1. Para adicionar um filtro, selecione a tela de relatório e, em seguida, selecione o **ícone** de segmentação (![mapa de janela](media/reports-create-slicer.png)com o modelo de dados e relações com suporte) em **visualizações**. A visualização de segmentação vazia será exibida na tela.
+1. Para adicionar um filtro, selecione a tela de relatório e, em seguida, selecione o **ícone** de segmentação (![mapa de janela](media/reports-create-slicer.png)com o modelo de dados e relações com suporte) em **visualizações**. A visualização de **segmentação** vazia será exibida na tela.
 2. No painel **campos** , localize a `ownerTypes` tabela.
 3. Expanda `ownerTypes` a tabela e selecione `ownerTypeName` o campo de dados.
 4. Arraste o `onwerTypeName` campo `ownerTypes` de dados da tabela para o painel **filtros** e solte-o na seção **filtros nesta página** na caixa rotulada **adicionar campos de dados aqui**.  
@@ -119,7 +119,7 @@ Agora tem um filtro interativo que pode utilizar para alternar entre dispositivo
 1. Selecione **empresa** dentro da segmentação para ver a distribuição de dispositivos de propriedade da empresa.
 2. Selecione **pessoal** na segmentação para ver os dispositivos de propriedade pessoal.
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Passos seguintes
 
 - Saiba mais sobre como [criar e gerir relações](https://powerbi.microsoft.com/documentation/powerbi-desktop-create-and-manage-relationships/) no Power BI Desktop na documentação do Power BI.
-- Consulte o [Modelo do Armazém de Dados do Intune](https://docs.microsoft.com/intune/reports-ref-data-model).
+- Consulte o [Modelo do Armazém de Dados do Intune](reports-ref-data-model.md).

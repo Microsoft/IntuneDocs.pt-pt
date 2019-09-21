@@ -7,18 +7,18 @@ ms.topic: include
 ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 1d9903de9d23532174e138709cb40c9cdf49995f
-ms.sourcegitcommit: 8934b1abec96e18cee15a77107d37551766f7666
+ms.openlocfilehash: 041f37e56e85b0ac26a4dd7a9dbbdb49bc0ebd9e
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71107323"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166353"
 ---
 Esses avisos fornecem informações importantes que podem ajudá-lo a se preparar para futuras alterações e recursos do Intune. 
 
 
 ### <a name="decreasing-support-for-android-device-administrator"></a>Diminuindo o suporte para o administrador do dispositivo Android 
-O administrador do dispositivo Android (às vezes chamado de gerenciamento do Android "herdado" e lançado com o Android 2,2) é uma maneira de gerenciar dispositivos Android. No entanto, a funcionalidade de gerenciamento aprimorada agora está disponível com o [Android Enterprise]( https://docs.microsoft.com/intune/connect-intune-android-enterprise) (lançado com Android 5,0). Em um esforço para migrar para o gerenciamento de dispositivos moderno, mais avançado e seguro, o Google está diminuindo o suporte ao administrador de dispositivos em novas versões do Android.
+O administrador do dispositivo Android (às vezes chamado de gerenciamento do Android "herdado" e lançado com o Android 2,2) é uma maneira de gerenciar dispositivos Android. No entanto, a funcionalidade de gerenciamento aprimorada agora está disponível com o [Android Enterprise](../connect-intune-android-enterprise.md) (lançado com Android 5,0). Em um esforço para migrar para o gerenciamento de dispositivos moderno, mais avançado e seguro, o Google está diminuindo o suporte ao administrador de dispositivos em novas versões do Android.
 
 #### <a name="how-does-this-affect-me"></a>Como é que isto me afeta?
 Devido a essas alterações feitas pelo Google, os usuários do Intune serão afetados das seguintes maneiras: 
@@ -96,7 +96,7 @@ Verifique seus aplicativos Microsoft, de terceiros e de linha de negócios (LOB)
 Você também deve atualizar sua documentação ou orientação para o desenvolvedor, se aplicável, para incluir essa alteração no suporte para o SDK.
 
 #### <a name="additional-information"></a>Informações adicionais
-https://docs.microsoft.com/intune/apps-prepare-mobile-application-management
+[Preparar aplicativos de linha de negócios para políticas de proteção de aplicativo](../apps-prepare-mobile-application-management.md)
 
 ### <a name="plan-for-change-new-windows-updates-settings-in-intune----4464404---"></a>Planejar alteração: Novas configurações de atualizações do Windows no Intune <!-- 4464404 -->
 A partir da versão de agosto para o serviço do Intune ou 1908, estamos adicionando novas "configurações de prazos", que podem ser configuradas em vez das configurações "permitir que o usuário reinicie (reinício envolvido)". Planejamos desabilitar as configurações de reinicialização envolvidas na interface do usuário no 1909 ou a atualização de setembro e, em seguida, removê-las completamente do console até o final de outubro. 

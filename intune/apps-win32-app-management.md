@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 452602ee98378ecd61ee0cfae8eb16f7fb69cb42
-ms.sourcegitcommit: 89a973bbfa1702b2d275af6814874e4305bdcb77
+ms.openlocfilehash: 22cf93aa7418e5e8be2338e70f762a451bb3bdcf
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71140758"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167155"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune autônomo-gerenciamento de aplicativos do Win32
 
@@ -280,7 +280,7 @@ Os seguintes passos fornecem orientação para ajudá-lo a adicionar uma aplica�
 7. No painel **Adicionar grupo**, selecione **OK**.
 8. No painel **Atribuições** de aplicações, selecione **Guardar**.
 
-Neste ponto, você concluiu as etapas para adicionar um aplicativo Win32 ao Intune. Para obter informações sobre a atribuição e monitorização de aplicações, veja [Atribuir aplicações a grupos com o Microsoft Intune](https://docs.microsoft.com/intune/apps-deploy) e [Monitorizar informações e atribuições da aplicação com o Microsoft Intune](https://docs.microsoft.com/intune/apps-monitor).
+Neste ponto, você concluiu as etapas para adicionar um aplicativo Win32 ao Intune. Para obter informações sobre a atribuição e monitorização de aplicações, veja [Atribuir aplicações a grupos com o Microsoft Intune](apps-deploy.md) e [Monitorizar informações e atribuições da aplicação com o Microsoft Intune](apps-monitor.md).
 
 ## <a name="app-dependencies"></a>Dependências do aplicativo
 

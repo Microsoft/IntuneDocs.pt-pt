@@ -1,6 +1,6 @@
 ---
-title: Reposição do dispositivo da aplicação do Portal da empresa do Intune | Documentos da Microsoft
-description: Repor o dispositivo para as definições de fábrica a partir do Portal da empresa para Windows 10.
+title: Redefinir o dispositivo do aplicativo Portal da Empresa do Intune | Microsoft Docs
+description: Redefina o dispositivo para as configurações de fábrica de Portal da Empresa para Windows 10.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -18,34 +18,35 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser; intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 882248261f4386a8191067a0e8533c4c24fc2a5b
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: e5aff186d3850e8f9a6081168a5adc9956504019
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61504422"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71163347"
 ---
-# <a name="reset-device-from-the-company-portal-app"></a>Repor o dispositivo a partir da aplicação Portal da empresa  
+# <a name="reset-device-from-the-company-portal-app"></a>Redefinir o dispositivo do aplicativo Portal da Empresa  
 
-Repor um dispositivo utilizado, perdido ou roubado para as definições de fábrica a partir da aplicação Portal da empresa.  
+Redefina um dispositivo usado, perdido ou roubado para suas configurações de fábrica do aplicativo Portal da Empresa.  
 
-Depois de repor um dispositivo, já não irá aparecer no Portal da empresa. Seus aplicativos existentes e os ficheiros serão eliminados e restaurá-lo para as respetivas definições de out-of-box.  
+Depois de redefinir um dispositivo, ele não aparecerá mais no Portal da Empresa. Seus aplicativos e arquivos existentes serão apagados e serão restaurados para as configurações prontas para uso.  
 
-1. Portal da empresa de Open.  
-2. Sob **os meus dispositivos**, selecione o dispositivo que pretende repor.   
 
-    ![Captura de ecrã do exemplo de aplicação do Portal da empresa, ecrã principal, realce secção os meus dispositivos.](./media/1802-cp-app-windows-home.png)  
+1. Abra Portal da Empresa.  
+2. Em **meus dispositivos**, selecione o dispositivo que você deseja redefinir.   
 
-3. Sobre o **detalhes do dispositivo** ecrã, selecione a **ver mais** menu.  
+    ![Captura de tela de exemplo do aplicativo Portal da Empresa, Home Screen, destacando a seção meus dispositivos.](./media/1802-cp-app-windows-home.png)  
 
-    ![Captura de ecrã do exemplo de aplicação do Portal da empresa, dispositivo tela de detalhes, consulte de realce menu mais.](./media/1802-cp-app-windows-device-details.png)  
+3. Na tela **detalhes do dispositivo** , selecione o menu **Ver mais** .  
+
+    ![Exemplo de captura de tela de Portal da Empresa aplicativo, detalhes do dispositivo, realce ver mais menus.](./media/1802-cp-app-windows-device-details.png)  
 
 4. Selecione **Repor**.  
 
-     ![Captura de ecrã do exemplo de aplicação do Portal da empresa, ecrã de detalhes do dispositivo, realce a ação de reposição. ](./media/1802-cp-app-windows-device-details-reset.png)  
+     ![Captura de tela de exemplo da Portal da Empresa aplicativo, detalhes do dispositivo, realçando a ação de redefinição. ](./media/1802-cp-app-windows-device-details-reset.png)  
 
-5. Quando lhe for pedido para confirmar, selecione **repor**. O dispositivo será reposto em si.  
+5. Quando for solicitado a confirmar, selecione **Redefinir**. O dispositivo será redefinido.  
 
-     ![Captura de ecrã do exemplo de aplicação do Portal da empresa, mensagem de confirmação de reposição, realce o botão Redefinir. ](./media/1802-cp-app-windows-reset-confirm.png)  
+     ![Captura de tela de exemplo do aplicativo Portal da Empresa, redefinir mensagem de confirmação, realçando o botão redefinir. ](./media/1802-cp-app-windows-reset-confirm.png)  
 
 Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  

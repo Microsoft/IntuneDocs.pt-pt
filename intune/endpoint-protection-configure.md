@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/18/2019
+ms.date: 09/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 mr.reviewer: karthib
-ms.openlocfilehash: 13e8c7fd0c822a2bdfbf7c183ea6752f99cf7991
-ms.sourcegitcommit: d2ac912b834c4840de9cc92ba1815b6ecfbfb52b
+ms.openlocfilehash: 8248991e1facc78def580d75a5b7e7e6ba353c98
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68482778"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71163676"
 ---
 # <a name="add-endpoint-protection-settings-in-intune"></a>Adicionar definições de proteção de ponto final no Intune  
 
@@ -54,7 +54,6 @@ Antes de criar um perfil, examine os seguintes artigos que detalham as configura
    O perfil é criado e apresentado na página da lista de perfis. Para atribuir este perfil a grupos, veja [atribuir perfis de dispositivo](device-profile-assign.md).  
 
 ## <a name="add-custom-firewall-rules-for-windows-10-devices"></a>Adicionar regras de firewall personalizadas para dispositivos Windows 10  
-***As regras de firewall personalizadas estão em visualização pública.***  
 
 Ao configurar o Windows Defender firewall como parte de um perfil que inclui regras do Endpoint Protection para Windows 10, você pode configurar regras personalizadas para firewalls. As regras personalizadas permitem que você expanda o conjunto predefinido de regras de firewall com suporte para o Windows 10.  
 
@@ -84,6 +83,6 @@ As regras de firewall que o Intune pode gerenciar são detalhadas no [provedor d
 8. Para alterar a ordem na qual as regras são exibidas, selecione o ícone de seta para *cima e para baixo* na parte superior da lista de regras.  
 
 
-## <a name="next-steps"></a>Passos Seguintes  
+## <a name="next-steps"></a>Passos seguintes  
 
 Para atribuir um perfil a grupos, veja [atribuir perfis de dispositivo](device-profile-assign.md).  

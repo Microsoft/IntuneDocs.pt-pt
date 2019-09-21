@@ -18,12 +18,12 @@ ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c592b558ace0a2a39059de9f64531f1e078c539d
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 40fe8f1f54779d3ab0a49951ad13c0cb2d0f0ff5
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61494987"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166787"
 ---
 # <a name="enroll-your-organization-provided-ios-device-in-management"></a>Inscrever um dispositivo iOS fornecido pela organização para gestão
 
@@ -34,15 +34,16 @@ Os dispositivos iOS que são fornecidos pela sua empresa ou escola são, muitas 
 Para iniciar a configuração, ligue o seu dispositivo e inicie sessão com as credenciais da sua conta escolar ou profissional. O resto deste artigo descreve os passos e ecrãs que irá ver à medida que avançar no Assistente de Configuração. 
 
 ## <a name="what-is-apple-dep"></a>O que é o DEP da Apple?
-A sua organização poderá ter comprado os respetivos dispositivos através de algo designado por *Programa de Registo de Aparelho da Apple* (DEP). O DEP da Apple permite que as organizações comprem grandes quantidades de dispositivos iOS ou macOS. Posteriormente, podem configurar e gerir esses dispositivos no respetivo fornecedor de gestão de dispositivos móveis preferido, como o Intune. Se for administrador e quiser obter mais informações sobre o DEP da Apple, veja [Inscrever automaticamente dispositivos iOS com o Programa de Registo de Aparelho da Apple](https://docs.microsoft.com/intune/device-enrollment-program-enroll-ios).  
 
-## <a name="set-up-your-ios-device"></a>Configurar o dispositivo iOS  
+A sua organização poderá ter comprado os respetivos dispositivos através de algo designado por *Programa de Registo de Aparelho da Apple* (DEP). O DEP da Apple permite que as organizações comprem grandes quantidades de dispositivos iOS ou macOS. Posteriormente, podem configurar e gerir esses dispositivos no respetivo fornecedor de gestão de dispositivos móveis preferido, como o Intune. Se for administrador e quiser obter mais informações sobre o DEP da Apple, veja [Inscrever automaticamente dispositivos iOS com o Programa de Registo de Aparelho da Apple](https://docs.microsoft.com/intune/device-enrollment-program-enroll-ios.md).  
+
+## <a name="set-up-your-ios-device"></a>Configurar o dispositivo iOS
+
 Se estiver a utilizar o seu próprio dispositivo iOS em vez de um dispositivo fornecido pela organização, siga os passos para [dispositivos pessoais e BYOD](enroll-your-device-in-intune-ios.md).  
 
-1. Ligue o seu dispositivo iOS. 
+1. Ligue o seu dispositivo iOS.
 2. Após selecionar o seu **Idioma**, ligue o seu dispositivo ao Wi-Fi.
-3. No ecrã **Configurar o dispositivo iOS**, selecione se pretende: 
- 
+3. No ecrã **Configurar o dispositivo iOS**, selecione se pretende:
    - **Configurar como um novo dispositivo**
    - **Restaurar a partir da cópia de segurança do iCloud**
    - **Restaurar a partir da cópia de segurança do iTunes**
@@ -53,7 +54,7 @@ Se estiver a utilizar o seu próprio dispositivo iOS em vez de um dispositivo fo
  
    **A configuração é fornecida por: a Equipa iOS da [Sua Empresa] [Endereço]**
 
-5. Inicie sessão com o seu ID Apple. Iniciar sessão permite-lhe instalar a aplicação Portal da Empresa e instalar o perfil de gestão que permite que a sua empresa lhe dê acesso aos recursos dela, como e-mails e aplicações. 
+5. Inicie sessão com o seu ID Apple. Iniciar sessão permite-lhe instalar a aplicação Portal da Empresa e instalar o perfil de gestão que permite que a sua empresa lhe dê acesso aos recursos dela, como e-mails e aplicações.
 6. Concorde com os **Termos e Condições** e decida se quer enviar as informações de diagnóstico à Apple.
 7. Após concluir a inscrição, o seu dispositivo poderá pedir-lhe para efetuar mais ações. Alguns destes passos poderão incluir a introdução da sua palavra-passe de acesso ao e-mail ou a configuração de um código de acesso.
 
