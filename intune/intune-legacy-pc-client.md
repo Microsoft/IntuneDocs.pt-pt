@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c626bb50868e6b966eb7c8867f4c4ff7178eadcf
-ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
+ms.openlocfilehash: f3891ce150ea740baa3ba18591139c66d78d9d00
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "68756535"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166362"
 ---
 # <a name="intune-on-azure-console-and-legacy-intune-pc-client"></a>Intune na consola do Azure e o cliente de PC do Intune legado
 
@@ -31,7 +31,7 @@ Quando utilizar o Intune no Azure para gerir os dispositivos Windows da sua orga
 
 ## <a name="manage-windows-10-devices-by-using-mdm"></a>Gerir dispositivos Windows 10 com a MDM
 
-Recomendamos que utilize a [Gestão de Dispositivos Móveis (MDM) para gerir os dispositivos Windows 10](https://docs.microsoft.com/intune/device-restrictions-windows-10), em vez de utilizar o cliente de PC do Intune legado. A capacidade para gerir o Windows 10 com a MDM está disponível no Intune no portal do Azure. A MDM do Windows 10 proporciona muitas capacidades de segurança e gestão novas que não estão disponíveis através do cliente de PC do Intune legado.
+Recomendamos que utilize a [Gestão de Dispositivos Móveis (MDM) para gerir os dispositivos Windows 10](device-restrictions-windows-10.md), em vez de utilizar o cliente de PC do Intune legado. A capacidade para gerir o Windows 10 com a MDM está disponível no Intune no portal do Azure. A MDM do Windows 10 proporciona muitas capacidades de segurança e gestão novas que não estão disponíveis através do cliente de PC do Intune legado.
 
 ## <a name="legacy-pc-client-features-are-only-available-in-the-silverlight-console"></a>As funcionalidades do Cliente de PC legadas só estão disponíveis na consola do Silverlight
 
@@ -54,7 +54,7 @@ Para o Windows 7, que não pode ser gerido através da MDM, vamos continuar a s
 
 ## <a name="mdm-capabilities"></a>Capacidades da MDM
 
-Para ver uma comparação detalhada entre as capacidades da MDM e do Cliente de PC, veja [Comparar a gestão de PCs Windows como computadores ou dispositivos móveis](pc-management-comparison.md). As atualizações da MDM continuarão a proporcionar novas capacidades de gestão aos dispositivos Windows 10 inscritos na MDM, incluindo opções de avaliação para aplicações do Win32. Veja as [Novidades](https://docs.microsoft.com/intune/whats-new) para estar a par de tudo o que foi adicionado ao serviço nas versões mais recentes.
+Para ver uma comparação detalhada entre as capacidades da MDM e do Cliente de PC, veja [Comparar a gestão de PCs Windows como computadores ou dispositivos móveis](pc-management-comparison.md). As atualizações da MDM continuarão a proporcionar novas capacidades de gestão aos dispositivos Windows 10 inscritos na MDM, incluindo opções de avaliação para aplicações do Win32. Veja as [Novidades](whats-new.md) para estar a par de tudo o que foi adicionado ao serviço nas versões mais recentes.
 
 ## <a name="switch-from-pc-client-to-mdm"></a>Mudar do Cliente de PC para a MDM
 
@@ -62,9 +62,7 @@ Para mudar da gestão de dispositivos Windows 10 com o Cliente de PC do Intune 
 
 1. Na consola do Silverlight, execute uma **Eliminação seletiva** para anular a inscrição do dispositivo do Cliente de PC.
   ![Aviso popup com o botão de opção ' Apagar seletivamente o dispositivo ' selecionado](media/intune-legacy-pc-client/image02.png)
-2. Volte a inscrever o dispositivo através da [MDM (e/ou Associação Azure AD)](https://docs.microsoft.com/intune/windows-enroll). 
+2. Volte a inscrever o dispositivo através da [MDM (e/ou Associação Azure AD)](windows-enroll.md).
 
 ## <a name="next-steps"></a>Passos Seguintes
-[Inscrever dispositivos Windows](https://docs.microsoft.com/intune/windows-enroll)
-
- 
+[Inscrever dispositivos Windows](windows-enroll.md)
