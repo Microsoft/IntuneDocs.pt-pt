@@ -272,8 +272,8 @@ Para obter mais informações, [consulte Policy CSP-](https://docs.microsoft.com
 ::: zone-end
 ::: zone pivot="mdm-may-2019"
 
--  
-  **padrão**de segurança baseada em virtualização: Habilitar VBS com inicialização segura
+- **padrão**de segurança baseada em **virtualização** 
+  : Habilitar VBS com inicialização segura
 ::: zone-end
 ::: zone pivot="mdm-preview,mdm-may-2019"
 
