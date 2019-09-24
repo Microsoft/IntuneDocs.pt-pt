@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fbdd143e25e632601ec1f8ee4b57c9b77c3b3caf
-ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
+ms.openlocfilehash: 35d64aba1c4c9a06e295699ac862198c29d8b9b1
+ms.sourcegitcommit: 9f91d803dfc39336a954b79ccec6420e58375d31
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71166900"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211559"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 
@@ -92,15 +92,6 @@ Quando a encriptação está ativada por políticas de proteção de aplicaçõe
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="device-configuration"></a>Configuração do dispositivo
-
-#### <a name="allow-or-restrict-adding-app-widgets-to-the-home-screen-on-android-enterprise-work-profile-devices----1109650--wnstaged--"></a>Permitir ou restringir a adição de widgets de aplicativo à tela inicial em dispositivos Android Enterprise Work Profile <!-- 1109650  wnstaged--> 
-
-Em dispositivos Android Enterprise, você pode configurar recursos no perfil de trabalho (**perfis** > de**configuração** > de dispositivo**Criar perfil** > **Android Enterprise** para plataforma >  **Perfil de trabalho somente > restrições de dispositivo** para o tipo de perfil). Nessa atualização, você pode permitir que os usuários adicionem widgets expostos por aplicativos de perfil de trabalho à tela inicial do dispositivo.
-
-Para ver as configurações que você pode definir, vá para [configurações de dispositivo do Android Enterprise para permitir ou restringir recursos usando o Intune](device-restrictions-android-for-work.md).
-
-Aplica-se a:
-- Perfil de trabalho do Android Enterprise
 
 #### <a name="support-for-ikev2-vpn-profiles-for-ios----1943438-----"></a>Suporte para perfis VPN IKEv2 para iOS <!-- 1943438   -->
 Nessa atualização, você pode criar perfis de VPN para o cliente VPN nativo do iOS usando o protocolo IKEv2. IKEv2 é um novo tipo de conexão **no dispositivo** > **perfis** > de configuração**Criar perfil** > **Ios** para plataforma > **VPN** para tipo de perfil > **tipo de conexão**.
@@ -189,6 +180,14 @@ Aplica-se a:
  #### <a name="updated-ui-for-configuring-microsoft-exchange-on-premises-access-------4092920---"></a>Interface do usuário atualizada para configurar o acesso no local do Microsoft Exchange    <!-- 4092920 -->  
 Atualizamos o console do onde você configura o acesso do [Microsoft Exchange no local](conditional-access-exchange-create.md). Todas as configurações para o acesso ao Exchange local agora estão disponíveis no mesmo painel do console em que você habilita o *controle de acesso local do Exchange*.  
 
+#### <a name="allow-or-restrict-adding-app-widgets-to-the-home-screen-on-android-enterprise-work-profile-devices----1109650----"></a>Permitir ou restringir a adição de widgets de aplicativo à tela inicial em dispositivos Android Enterprise Work Profile <!-- 1109650  --> 
+Em dispositivos Android Enterprise, você pode configurar recursos no perfil de trabalho (**perfis** > de**configuração** > de dispositivo**Criar perfil** > **Android Enterprise** para plataforma >  **Perfil de trabalho somente > restrições de dispositivo** para o tipo de perfil). Nessa atualização, você pode permitir que os usuários adicionem widgets expostos por aplicativos de perfil de trabalho à tela inicial do dispositivo.
+
+Para ver as configurações que você pode definir, vá para [configurações de dispositivo do Android Enterprise para permitir ou restringir recursos usando o Intune](device-restrictions-android-for-work.md).
+
+Aplica-se a:
+- Perfil de trabalho do Android Enterprise
+
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="device-enrollment"></a>Inscrição de dispositivos
 
@@ -216,7 +215,7 @@ Adicionamos o seguinte suporte para dispositivos Android totalmente gerenciados:
 - Os aplicativos do sistema têm suporte em dispositivos Android Enterprise. No Intune, adicione um aplicativo Android Enterprise System selecionando **aplicativos** >  > cliente aplicativos**Adicionar**. Na lista **tipo de aplicativo** , selecione **aplicativo Android Enterprise System**. Para obter mais informações, consulte [adicionar aplicativos do Android Enterprise System a Microsoft Intune](apps-ae-system.md). <!-- 4062195 -->
 - Em **conformidade** > do dispositivo**Android Enterprise** > **dispositivo proprietário**, você pode criar uma política de conformidade que define o nível de atestado do Google SafetyNet.   <!-- 4631425 -->
 - Em dispositivos Android Enterprise totalmente gerenciados, há suporte para os provedores de defesa contra ameaças móveis. Em **conformidade** > do dispositivo**Android Enterprise** > **dispositivo proprietário**, você pode escolher um nível de ameaça aceitável. <!-- 4631440 --> [As configurações do Android Enterprise para marcar dispositivos como compatíveis ou não compatíveis usando o Intune](compliance-policy-create-android-for-work.md#device-owner) listam as configurações atuais.
-- Em dispositivos Android Enterprise totalmente gerenciados, o aplicativo Microsoft Launcher agora pode ser configurado por meio de políticas de proteção de aplicativo para permitir uma experiência de usuário final padronizada no dispositivo totalmente gerenciado. O aplicativo Microsoft Launcher pode ser usado para personalizar seu dispositivo Android. Usando o aplicativo junto com uma conta de conta Microsoft ou de trabalho/escola, você pode acessar seu calendário, documentos e atividades recentes em seu feed personalizado. Você também pode abrir fotos, documentos e páginas da Web em seu computador Windows, para serem produtivos em seus dispositivos. <!-- 5334044 -->
+- Em dispositivos Android Enterprise totalmente gerenciados, o aplicativo Microsoft Launcher agora pode ser configurado por meio de políticas de proteção de aplicativo para permitir uma experiência de usuário final padronizada no dispositivo totalmente gerenciado. O aplicativo Microsoft Launcher pode ser usado para personalizar seu dispositivo Android. Usando o aplicativo junto com uma conta de conta Microsoft ou de trabalho/escola, você pode acessar seu calendário, documentos e atividades recentes em seu feed personalizado. <!-- 5334044 -->
 
 Com essa atualização, estamos felizes em anunciar que o suporte do Intune para Android Enterprise totalmente gerenciado já está disponível para o público geral. 
 
