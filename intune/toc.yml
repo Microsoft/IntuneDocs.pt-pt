@@ -1,6 +1,6 @@
 - name: Documentação do Microsoft Intune
   href: index.yml
-- name: Descrição geral
+- name: Descrição Geral
   expanded: true
   items:
     - name: O que é o Intune?
@@ -15,7 +15,7 @@
           href: whats-new-app-ui.md
         - name: Features in development (Funcionalidades em desenvolvimento)
           href: in-development.md
-- name: Guias de Introdução
+- name: Inícios Rápidos
   items:
     - name: Experimentar o Intune gratuitamente
       href: free-trial-sign-up.md
@@ -28,7 +28,7 @@
       href: quickstart-setup-auto-enrollment.md
     - name: Inscrever o seu dispositivo Windows 10
       href: quickstart-enroll-windows-device.md
-    - name: Criar uma política de conformidade de dispositivo
+    - name: Criar uma política de conformidade do dispositivo
       href: quickstart-set-password-length-android.md
     - name: Send notifications to noncompliant devices (Enviar notificações para dispositivos que não estejam em conformidade)
       href: quickstart-send-notification.md
@@ -82,7 +82,7 @@
       href: windows-information-protection-configure.md
     - name: FAQ DE MAM
       href: mam-faq.md
-- name: How-to guides (Guias de procedimentos)
+- name: Manuais de instruções
   items:
     - name: Implementação de planos
       items:
@@ -259,7 +259,7 @@
         - name: Resolver problemas de inscrição de dispositivos
           href: troubleshoot-device-enrollment-in-intune.md
           displayName: sso
-    - name: Efetue a gestão dos dispositivos
+    - name: Gerir dispositivos
       items:
         - name: Device management overview (Descrição geral da gestão de dispositivos)
           href: device-management.md
@@ -311,7 +311,7 @@
           href: create-compliance-policy.md
         - name: Conformidade baseada em localizações
           href: use-network-locations.md
-        - name: Ações de não conformidade
+        - name: Ações para não conformidade
           href: actions-for-noncompliance.md
         - name: Monitorizar a conformidade do dispositivo
           href: compliance-policy-monitor.md
@@ -321,30 +321,33 @@
           href: device-profiles.md
         - name: Criar um perfil
           href: device-profile-create.md
-        - name: Administrative templates (Modelos administrativos)
+        - name: Modelos administrativos no Windows
           href: administrative-templates-windows.md
-        - name: Funcionalidades do dispositivo
+          displayName: 'group policy, gpo, admx'
+        - name: Funcionalidades de dispositivos no iOS e macOS
           href: device-features-configure.md
         - name: Restringir definições e funcionalidades de dispositivos
           href: device-restrictions-configure.md
           displayName: Device restrictions
-        - name: Atualizações da entrega
+        - name: Atualizações
           href: delivery-optimization-windows.md
-          displayName: delivery optimization; updates
+          displayName: delivery optimization; Windows update
         - name: Atualizar edições e modo S
           href: edition-upgrade-configure-windows-10.md
-        - name: Configurar o e-mail
+        - name: E-mail
           href: email-settings-configure.md
-        - name: Ativar o modo de quiosque
+        - name: Quiosques e dispositivos dedicados
           href: kiosk-settings.md
-        - name: Adicionar uma VPN
+        - name: Shared multi-user devices (Dispositivos multiutilizador partilhados)
+          href: shared-user-device-settings.md
+        - name: VPN
           href: vpn-settings-configure.md
           items:
             - name: VPN por aplicação para Android
               href: android-pulse-secure-per-app-vpn.md
             - name: VPN por aplicação para iOS
               href: vpn-setting-configure-per-app.md
-        - name: Adicionar uma rede Wi-Fi sem fios
+        - name: Rede Wi-Fi
           href: wi-fi-settings-configure.md
           displayName: wifi
           items:
@@ -354,8 +357,6 @@
           href: kernel-extensions-overview-macos.md
         - name: Aplicação Fazer um Teste de educação
           href: education-settings-configure.md
-        - name: Shared multi-user devices (Dispositivos multiutilizador partilhados)
-          href: shared-user-device-settings.md
         - name: Mobility Extensions on Zebra devices (Extensões de Mobilidade em dispositivos Zebra)
           href: android-zebra-mx-overview.md
           displayName: mx
@@ -594,6 +595,8 @@
                   href: app-sideload-windows.md
                 - name: Aplicações LOB macOS
                   href: lob-apps-macos.md
+            - name: Aplicações do sistema Android Enterprise
+              href: apps-ae-system.md
             - name: Gestão de aplicação Win32
               href: apps-win32-app-management.md
             - name: Scripts PowerShell
@@ -623,12 +626,24 @@
               href: app-configuration-policies-use-ios.md
             - name: Android dispositivos geridos
               href: app-configuration-policies-use-android.md
-            - name: Configurar o Managed Home Screen
-              href: app-configuration-managed-home-screen-app.md
-            - name: Aplicações geridas
+            - name: Configurar aplicações geridas sem inscrição
               href: app-configuration-policies-managed-app.md
             - name: Utilizar perfis de aprovisionamento de aplicações iOS
               href: app-provisioning-profile-ios.md
+            - name: Configurar aplicações específicas
+              items:
+                - name: Configurar o Managed Home Screen
+                  href: app-configuration-managed-home-screen-app.md
+                - name: Configurar o Portal da Empresa
+                  href: company-portal-app.md
+                - name: Configurar o Managed Browser
+                  href: app-configuration-managed-browser.md
+                - name: Configurar o Microsoft Launcher
+                  href: configure-microsoft-launcher.md
+                - name: Configure Microsoft Edge (Configurar o Microsoft Edge)
+                  href: manage-microsoft-edge.md
+                - name: Configurar o Outlook
+                  href: app-configuration-policies-outlook.md
             - name: Aplicações e livros comprados em volume
               items:
                 - name: Manage VPP apps and books (Gerir aplicações e livros do VPP)
@@ -640,14 +655,6 @@
                   href: windows-store-for-business.md
                 - name: eBooks do iOS
                   href: vpp-ebooks-ios.md
-            - name: Configurar o Portal da Empresa
-              href: company-portal-app.md
-            - name: Configurar o Managed Browser
-              href: app-configuration-managed-browser.md
-            - name: Configure Microsoft Edge (Configurar o Microsoft Edge)
-              href: manage-microsoft-edge.md
-            - name: Configurar o Outlook
-              href: app-configuration-policies-outlook.md
         - name: Proteger aplicações
           items:
             - name: Eliminação seletiva de aplicações
@@ -712,7 +719,7 @@
       items:
         - name: Tenant status (Estado do inquilino)
           href: tenant-status.md
-        - name: Resolver Problemas
+        - name: Resolução de problemas
           items:
             - name: Ajudar os utilizadores a resolver problemas
               href: help-desk-operators.md
@@ -885,7 +892,7 @@
                   href: kiosk-settings-holographic.md
                 - name: Personalizar
                   href: custom-settings-windows-holographic.md
-        - name: Windows 8.1
+        - name: 'Windows 8,1'
           items:
             - name: Definições da política de conformidade
               href: compliance-policy-create-windows-8-1.md

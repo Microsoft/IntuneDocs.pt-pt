@@ -60,7 +60,7 @@
 ##### [Utilizar o Zimperium zIPS](you-need-to-resolve-a-threat-found-by-zips-android.md)
 
 ## [Utilizar o seu dispositivo iOS](using-your-iOS-device-with-intune.md)
-### [O que acontece ao inscrever um dispositivo iOS?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
+### [Efeitos da reposição do dispositivo iOS](effects-of-device-reset-company-portal-ios.md)
 ### [Instalar e iniciar sessão no Portal da Empresa](install-and-sign-in-to-the-intune-company-portal-app-ios.md)
 ### [Inscrever o seu dispositivo iOS](enroll-your-device-in-intune-ios.md)
 ### [Inscrever o seu dispositivo iOS fornecido pela organização](enroll-your-device-dep-ios.md)
