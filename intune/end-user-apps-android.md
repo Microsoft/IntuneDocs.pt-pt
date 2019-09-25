@@ -5,9 +5,8 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/21/2017
+ms.date: 09/16/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,48 +16,54 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f4169f5625965ebc7d2bbbf9153cb4183fcd22b3
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 960c440372613fed2c92ce00c604d97e1f122e8f
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57388091"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71239825"
 ---
 # <a name="how-your-android-users-get-their-apps"></a>Como os utilizadores de dispositivos Android obtêm as aplicações
 
 [!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
-Utilize estas informações para saber como e onde é que os seus utilizadores finais de Android podem obter as aplicações que distribuir através do Microsoft Intune. As informações podem variar de acordo com o tipo de dispositivo (dispositivos Android nativos ou dispositivos Samsung Knox Standard).
+Este artigo ajuda você a entender como e onde os usuários finais do Android obtêm os aplicativos que você distribui por meio de Microsoft Intune. As informações podem variar de acordo com o tipo de dispositivo (dispositivos Android nativos ou dispositivos Samsung Knox Standard).
 
 ## <a name="native-non-samsung-knox-standard-android-devices"></a>Dispositivos Android nativos (não Samsung Knox Standard)
 
 | Tipo de aplicação | Aplicações de linha de negócio (LOB) | Aplicações da Play Store  |
 | ------------- |-------------| -----|
-| Aplicações disponíveis      | Os utilizadores tocam em **instalar** no Portal da Empresa. É apresentada uma notificação, na qual os utilizadores tocam para iniciar a instalação. Depois de a instalação ter sido concluída com êxito, a notificação desaparece. | Os utilizadores tocam na aplicação no Portal da Empresa e são encaminhados para uma página da aplicação na Play Store, onde podem iniciar a instalação.|
-| Required apps      | É apresentada uma notificação aos utilizadores, que não pode ser rejeitada, a indicar que têm de instalar uma aplicação. Os utilizadores tocam na notificação para iniciar a instalação. Depois de a instalação ter sido concluída com êxito, a notificação desaparece.    | É apresentada uma notificação aos utilizadores, que não pode ser rejeitada, a indicar que têm de instalar uma aplicação. Os utilizadores tocam na notificação e são encaminhados para uma página da aplicação na Play Store, onde podem iniciar a instalação. Depois de a instalação ter sido concluída com êxito, a notificação desaparece. |
+| Aplicações disponíveis      | Os utilizadores tocam em **instalar** no Portal da Empresa. É apresentada uma notificação, na qual os utilizadores tocam para iniciar a instalação. Depois de a instalação ter sido concluída com êxito, a notificação desaparece. | Os usuários tocam o aplicativo na Portal da Empresa e são levados para uma página de aplicativo no Play Store. É aqui que eles iniciam a instalação.|
+| Required apps      | Os usuários são mostrados uma notificação, que não podem ser descartados, indicando que eles precisam instalar um aplicativo. Os utilizadores tocam na notificação para iniciar a instalação. Depois de a instalação ter sido concluída com êxito, a notificação desaparece.    | Os usuários são mostrados uma notificação, que não podem ser descartados, indicando que eles precisam instalar um aplicativo. Os usuários tocam na notificação e são levados para uma página de aplicativo no Play Store. É aqui que eles iniciam a instalação. Depois de a instalação ter sido concluída com êxito, a notificação desaparece. |
 
-Os seus utilizadores finais têm de permitir a instalação a partir de origens desconhecidas para instalar [Aplicações LOB](lob-apps-android.md). Normalmente, estas aplicações encontram-se em dois locais:
+Os usuários finais precisam permitir a instalação de fontes desconhecidas para instalar [aplicativos LOB](lob-apps-android.md). Essa configuração normalmente é encontrada em dois locais diferentes:
 
-* **Android 7.1.2 e inferior**: **As definições** > **Security** > **origens desconhecidas**
-* **Android 8.0 e posterior**: **As definições** > **aplicações e notificações** > **acesso de aplicações especiais** > **instalar aplicações desconhecidas**  >  **Portal da empresa** > **permitir desta fonte**
+* **Android 7.1.2 e inferior**: > Segurançadas > configurações**fontes desconhecidas**
+* **Android 8,0 e superior**: **Configurações** > aplicativos&**notificações** > **acesso** > de aplicativo especial instalar aplicativos desconhecidos portal da empresa permitir desta fonte >  > 
 
 Neste caso, a aplicação Portal da Empresa irá informar e orientar o utilizador final consoante a definição adequada. 
-
 
 ## <a name="samsung-knox-standard-android-devices"></a>Dispositivos Android Samsung Knox Standard
 
 | Tipo de aplicação | Aplicações de linha de negócio (LOB) | Aplicações da Play Store  |
 | ------------- |-------------| -----|
-| Aplicações disponíveis      | Os utilizadores tocam em **instalar** no Portal da Empresa. A aplicação é instalada sem intervenção do utilizador adicional. | Os utilizadores tocam na aplicação no Portal da Empresa e são encaminhados para uma página da aplicação na Play Store, onde podem iniciar a instalação.|
-| Required apps      | A aplicação é instalada sem qualquer intervenção do utilizador.    | É apresentada uma notificação aos utilizadores, que não pode ser rejeitada, a indicar que têm de instalar uma aplicação. Os utilizadores tocam na notificação e são encaminhados para uma página da aplicação na Play Store, onde podem iniciar a instalação. Depois de a instalação ter sido concluída com êxito, a notificação desaparece. |
+| Aplicações disponíveis      | Os utilizadores tocam em **instalar** no Portal da Empresa. A aplicação é instalada sem intervenção do utilizador adicional. | Os usuários tocam o aplicativo na Portal da Empresa e são levados para uma página de aplicativo no Play Store. É aqui que eles iniciam a instalação.|
+| Required apps      | A aplicação é instalada sem qualquer intervenção do utilizador.    | Os usuários são mostrados uma notificação, que não podem ser descartados, indicando que eles precisam instalar um aplicativo. Os usuários tocam na notificação e são levados para uma página de aplicativo no Play Store. É aqui que eles iniciam a instalação. Depois de a instalação ter sido concluída com êxito, a notificação desaparece. |
 
 As aplicações podem ser geridas ou não geridas, conforme descrito abaixo. O processo para tornar as aplicações geridas é igual para todos os tipos de dispositivos Android.
 
-**Aplicações geridas** – são as aplicações que podem ser geridas através das políticas. Foram "encapsuladas" pelo Intune ou compiladas com o SDK da Aplicação Intune. Estas aplicações podem ser geridas pelo Intune e podem ser aplicadas políticas de aplicação às mesmas.
+**Aplicativos gerenciados** -esses aplicativos são gerenciados por meio de políticas. Elas foram "encapsuladas" pelo Intune ou compiladas com o SDK de aplicativos do Intune. Estas aplicações podem ser geridas pelo Intune e podem ser aplicadas políticas de aplicação às mesmas.
 
-**Aplicações não geridas** – são as aplicações que não podem ser geridas através das políticas. Não foram encapsuladas pelo Intune ou não fazem parte do SDK da Aplicação Intune. Não é possível aplicar políticas de aplicação a estas aplicações.
+**Aplicativos não gerenciados** -esses aplicativos não são gerenciados por meio de políticas. Eles não foram encapsulados pelo Intune ou não incorporam o SDK de aplicativos do Intune. As políticas de aplicativo não podem ser aplicadas a esses aplicativos.
 
-### <a name="see-also"></a>Consulte também
+## <a name="zebra-devices-with-zebra-mobility-extensions"></a>Dispositivos pretas com extensões de mobilidade pretas
+
+O Intune usa o kit de ferramentas do pretas Mobility Extensions (MX) para instalar silenciosamente aplicativos em dispositivos pretas gerenciados pelo administrador do dispositivo. Esse recurso permite implantar e atualizar aplicativos em dispositivos pretas sem a intervenção do usuário. Se a versão MX em seu dispositivo for 4,2 ou mais antiga, os aplicativos não serão instalados silenciosamente. Para obter mais informações, consulte [Full MX Feature Matrix](http://techdocs.zebra.com/mx/compatibility/) no site da pretas.
+
+Os aplicativos LOB implantados em dispositivos pretas devem ser instalados de um local público no dispositivo. O pacote do aplicativo. apk pode ser acessível a outros aplicativos e serviços que também tenham acesso ao armazenamento público no dispositivo. Normalmente, esse acesso é uma pequena janela entre a conclusão do download do aplicativo e no início da instalação. Essa janela pode permitir um ataque de tempo. Por exemplo, um pacote. apk poderia ser alterado durante esta janela. O Intune minimiza a quantidade de tempo que o. apk gasta no armazenamento público e não permite que aplicativos não assinados sejam instalados. Para ajudar a minimizar o risco de segurança, certifique-se de que os arquivos. apk carregados não contenham informações confidenciais.
+
+## <a name="see-also"></a>Consulte também
+
 [Adicionar aplicações com o Microsoft Intune](apps-add.md)
 
 [Como os utilizadores de dispositivos iOS obtêm as aplicações](end-user-apps-ios.md)

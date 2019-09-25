@@ -1,5 +1,5 @@
 ---
-title: Configurar o Microsoft Intune
+title: Configurar Microsoft Intune
 description: Requisitos e pré-requisitos para começar a utilizar a sua subscrição do Intune
 keywords: ''
 author: ErikjeMS
@@ -7,7 +7,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 01/24/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b5944f7bacd87e2ef1e1117dd44eb80b6fe572e6
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5dbebfee60c0c558a8d876471ddba93fb2979831
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57391917"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "71238284"
 ---
 # <a name="set-up-intune"></a>Configurar o Intune
 
@@ -32,14 +31,14 @@ Estes passos de configuração ajudam-no a ativar a gestão de dispositivos móv
 
 Alguns passos, como configurar uma subscrição do Intune e definir a autoridade de MDM, são obrigatórios na maioria dos cenários. Outros passos, tal como configurar um domínio personalizado ou adicionar aplicações, são opcionais, consoante as necessidades da sua empresa.
 
-Se estiver a utilizar atualmente o Microsoft System Center Configuration Manager para gerir computadores e servidores, pode [-anexo da nuvem do Configuration Manager com cogestão](https://docs.microsoft.com/sccm/comanage/overview).
+Se estiver usando o Microsoft System Center Configuration Manager no momento para gerenciar computadores e servidores, você poderá [anexar a nuvem Configuration Manager com o cogerenciamento](https://docs.microsoft.com/sccm/comanage/overview).
 
 >[!TIP]
 >Se comprar pelo menos 150 licenças do Intune num plano elegível, pode utilizar o *Benefício do FastTrack Center*. Com este serviço, os especialistas da Microsoft trabalham consigo para preparar o seu ambiente para o Intune. Veja [Benefícios do FastTrack Center do Enterprise Mobility + Security (EMS)](https://docs.microsoft.com/enterprise-mobility-security/Solutions/enterprise-mobility-fasttrack-program).
 
 
 
-| Passos |                                                                                                                       Estado                                                                                                                       |
+| Passos |                                                                                                                       State                                                                                                                       |
 |-------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |   1   |                                        [Configurações suportadas](supported-devices-browsers.md) – o que precisa de saber antes de começar. Estão incluídos os requisitos de rede e as configurações suportadas.                                         |
 |   2   |                                                                 [Iniciar sessão no Intune](account-sign-up.md) – inicie sessão na sua subscrição da avaliação gratuita ou crie uma nova subscrição do Intune.                                                                  |

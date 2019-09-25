@@ -8,7 +8,6 @@ ms.author: lanewsad
 manager: dougeby
 ms.date: 03/09/2017
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,31 +16,34 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2168c39c80369e16284078df608bdab5f29858c6
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
-ms.translationtype: HT
+ms.openlocfilehash: 1ed123bcf8c5c1a5df1a356cf8d2522caad20ea2
+ms.sourcegitcommit: c9725ddae6c0f82a491de27c87f240254d32716b
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59894970"
+ms.lasthandoff: 09/13/2019
+ms.locfileid: "71239337"
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>Ajudar os utilizadores finais a compreender as mensagens da aplicação Portal da Empresa
 
 [!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 > [!NOTE]
-> As seguintes informações aplicam-se apenas a dispositivos com o Android 6.0 e posterior.
+> As informações a seguir se aplicam somente a dispositivos com Android 6.0 + e iOS 10 +.
 
 Compreenda as diferentes mensagens de aplicações que os utilizadores finais poderão ver no Portal da Empresa. Estas mensagens de aplicações são normalmente apresentadas em diferentes fases do processo de inscrição. Saiba onde as mensagens são apresentadas, o que significam e o que acontece se os utilizadores negarem o acesso. Para além disso, saiba como melhor explicar estas mensagens aos utilizadores.
 
 - __Permitir que o Portal da Empresa efetue e faça a gestão de chamadas telefónicas?__
 - __Permitir que o Portal da Empresa aceda às fotografias, multimédia e ficheiros no dispositivo?__
 
+> [!NOTE]
+> Não vendemos nenhum dado coletado por nosso serviço para terceiros por qualquer motivo.
+
 ## <a name="allow-company-portal-to-make-and-manage-phone-calls"></a>Permitir que o Portal da Empresa efetue e faça a gestão de chamadas telefónicas?
 
 ### <a name="where-it-appears"></a>Onde aparece
 A mensagem **Permitir que o Portal da Empresa efetue e faça a gestão de chamadas telefónicas?** é apresentada quando os utilizadores tocam em **Inscrever** na aplicação Portal da Empresa quando inscrevem os dispositivos.
 
-### <a name="what-it-means"></a>O que significa
+### <a name="what-it-means"></a>O que representa
 Ao aceitarem este pedido, os utilizadores permitem que os números IMEI e de telefone do dispositivo sejam enviados para o serviço Intune. Estes números serão apresentados na consola de administração na página __Hardware__.
 
 > [!NOTE]
@@ -64,7 +66,7 @@ Para obterem mais informações, indique aos utilizadores para acederem a [Inscr
 ### <a name="where-it-appears"></a>Onde aparece
 A mensagem **Permitir que o Portal da Empresa aceda aos seus contactos?** é apresentada quando os utilizadores tocam em **Inscrever** na aplicação Portal da Empresa quando inscrevem os dispositivos.
 
-### <a name="what-it-means"></a>O que significa
+### <a name="what-it-means"></a>O que representa
 Ao aceitarem este pedido, os utilizadores permitem que o Intune crie a conta profissional deles e faça a gestão da identidade do Azure Active Directory que está registada para o utilizador nesse dispositivo.
 
 > [!NOTE]
@@ -85,7 +87,7 @@ Para obterem mais informações, indique aos utilizadores para acederem a [Inscr
 ### <a name="where-it-appears"></a>Onde aparece
 A mensagem **Permitir que o Portal da Empresa aceda às fotografias, multimédia e ficheiros no dispositivo?** é apresentada quando os utilizadores tocam em **Enviar Dados** para enviar os registos de dados para o administrador de TI.
 
-### <a name="what-it-means"></a>O que significa
+### <a name="what-it-means"></a>O que representa
 Ao aceitar esta mensagem, os utilizadores permitem que o dispositivo escreva registos de dados no cartão SD do mesmo. Esses registos também podem ser movidos através de um cabo USB.   
 
 > [!NOTE]
@@ -132,7 +134,7 @@ Quando instalar essas aplicações com o Portal da Empresa e iniciar a aplicaç�
 
 3. Selecione **Perfil de Gestão** > **Aplicação empresarial**.
 4. Selecione o nome do programador.
-5. Prima **Confiar em _nome do programador_**.
+5. Prima **Confiar em _nome do programador_** .
 6. Confirme a aplicação ao selecionar **Confiar** na mensagem de pop-up de instalação da aplicação.
 
    ![IU do dispositivo iOS – Mensagem de confiança na aplicação](./media/end-user-company-portal-messages/end-user-company-portal-messages-03.png)
@@ -140,5 +142,5 @@ Quando instalar essas aplicações com o Portal da Empresa e iniciar a aplicaç�
     Deverá conseguir iniciar e utilizar a aplicação da empresa.
 
 
-### <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte também
 [O que dizer aos utilizadores finais sobre a utilização do Intune](end-user-educate.md)

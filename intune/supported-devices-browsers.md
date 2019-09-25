@@ -6,9 +6,8 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/03/2018
+ms.date: 07/29/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc0cf701450e594fd4b72a8e0565246994bb8a9e
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5946f8ffb8179bb5109de45df8f89012ec706023
+ms.sourcegitcommit: 3baa9965095bb874d9b8c7a3cbb4aa925ed52cae
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460619"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "71239596"
 ---
 # <a name="supported-operating-systems-and-browsers-in-intune"></a>Sistemas operativos e browsers no Intune
 
@@ -33,7 +32,7 @@ Antes de configurar o Microsoft Intune, reveja os sistemas operativos e browsers
 
 Para obter ajuda na instalação do Intune no seu dispositivo, consulte [utilizar dispositivos geridos para trabalhar](/intune-user-help/company-portal-frequently-asked-questions) e [utilização de largura de banda de rede do Intune](network-bandwidth-use.md).
 
-Para obter mais informações sobre o suporte de fornecedor de serviço de configuração, visite o [referência de fornecedor de serviço de configuração](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference).
+Para obter mais informações sobre o suporte ao provedor de serviços de configuração, visite a [referência do provedor de serviços de configuração](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference).
 
 ## <a name="intune-supported-operating-systems"></a>Sistemas operativos suportados pelo Intune
 
@@ -101,7 +100,7 @@ You can manage [Exchange ActiveSync devices](device-enrollment.md#mobile-device-
 As diferentes tarefas administrativas necessitam que utilize um dos seguintes sites administrativos.
 
 - [Centro de administração do Microsoft 365](http://go.microsoft.com/fwlink/p/?LinkId=698854)
-- [Portal do Azure](https://portal.azure.com/)
+- [Azure portal](https://portal.azure.com/)
 
 Os seguintes browsers são suportados para estes portais:
 - Microsoft Edge (versão mais recente)
@@ -115,12 +114,12 @@ Os seguintes browsers são suportados para estes portais:
 
 ### <a name="intune-classic-portal"></a>Portal clássico do Intune
 
-As funcionalidades só clássicas do Intune, tais como o cliente de software de PC do Intune e a integração com os parceiros de Defesa Contra Ameaças para Dispositivos Móveis, só estão disponíveis no portal clássico do Intune (https://manage.microsoft.com). O portal clássico do Intune necessita do suporte do browser Silverlight.
+O portal clássico do Intune é usado somente para gerenciar dispositivos registrados com o cliente de software de computador do https://manage.microsoft.com) Intune (. O portal clássico do Intune necessita do suporte do browser Silverlight.
 
 Os seguintes browsers Silverlight suportam a consola do Intune:
 - Internet Explorer 10 ou posterior
 - Google Chrome (versões anteriores à versão 42)
-- Mozilla Firefox com o Silverlight ativado – [Saiba mais](https://go.microsoft.com/fwlink/?linkid=836872)
+- Mozilla Firefox com Silverlight habilitado (versões anteriores à versão 56)
 
 > [!Note]
 > O Microsoft Edge e os browsers para dispositivos móveis não são suportados no portal clássico do Intune porque não suportam o [Microsoft Silverlight](https://msdn.microsoft.com/library/cc838158(v=vs.95).aspx).

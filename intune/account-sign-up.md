@@ -7,7 +7,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 01/02/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 956fe061912e0eb96a18c410e1455252874d6b84
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 22e5c38be9dc5a8a09888651e471f64bf6739c72
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57459956"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71238893"
 ---
 # <a name="sign-up-or-sign-in-to-microsoft-intune"></a>Inscrever-se ou iniciar sessão no Microsoft Intune
 
@@ -37,7 +36,7 @@ Se já tiver uma conta escolar ou profissional, **inicie sessão** com a mesma e
 >[!WARNING]
 >Não pode combinar uma conta escolar ou profissional existente após inscrever-se numa conta nova.
 
-## <a name="how-to-sign-up-or-sign-in-to-intune"></a>Como se inscrever ou iniciar sessão no Intune
+## <a name="how-to-sign-up-for-intune"></a>Como se inscrever no Intune
 
 1. Visite a página [Inscrição no Intune](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20).
 
@@ -48,4 +47,32 @@ Se já tiver uma conta escolar ou profissional, **inicie sessão** com a mesma e
 ## <a name="post-sign-up-considerations"></a>Considerações de pós-inscrição
 Depois de se inscrever numa nova subscrição, recebe uma mensagem de e-mail com as informações da sua conta para o endereço de e-mail que indicou durante o processo de inscrição. Este e-mail confirma que a sua subscrição está ativa.
 
-Depois de concluir o processo de inscrição são direcionados para o Centro de administração do Microsoft 365, utilizado para adicionar utilizadores e atribuir-lhes licenças. Se tiver apenas contas baseadas na cloud com o seu nome de domínio onmicrosoft.com predefinido, pode adicionar utilizadores e atribuir licenças neste momento. Contudo, se planear utilizar o [nome de domínio personalizado](custom-domain-name-configure.md) da sua organização ou as [informações de conta de utilizador sincronizada](users-add.md#sync-active-directory-and-add-users-to-intune) do Active Directory no local, pode fechar essa janela do browser.
+Depois de concluir o processo de inscrição, você será direcionado para o centro de administração do Microsoft 365, usado para adicionar usuários e atribuir licenças a eles. Se tiver apenas contas baseadas na cloud com o seu nome de domínio onmicrosoft.com predefinido, pode adicionar utilizadores e atribuir licenças neste momento. Contudo, se planear utilizar o [nome de domínio personalizado](custom-domain-name-configure.md) da sua organização ou as [informações de conta de utilizador sincronizada](users-add.md#sync-active-directory-and-add-users-to-intune) do Active Directory no local, pode fechar essa janela do browser.
+
+## <a name="sign-in-to-microsoft-intune"></a>Entrar no Microsoft Intune
+Depois de se inscrever no Intune, você pode usar qualquer dispositivo com um [navegador com suporte](supported-devices-browsers.md#intune-supported-web-browsers) para entrar no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) para administrar o serviço.
+
+Por padrão, sua conta deve ter uma das seguintes permissões no Azure AD:
+- Administrador Global
+- Administrador de serviços do Intune (também conhecido como administrador do Intune)
+
+Para conceder acesso para administrar o serviço para usuários com outras permissões, consulte [controle de acesso baseado em função](role-based-access-control.md)
+
+### <a name="intune-admin-portal-url"></a>URL do portal de administração do Intune
+
+Centro de administração do Microsoft 365: https://devicemanagement.microsoft.com
+
+Portal do Azure do Intune: https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade
+
+Intune para Educação: https://intuneeducation.portal.azure.com
+
+Portal clássico do Intune: https://manage.microsoft.com O portal clássico do Intune é usado somente para gerenciar dispositivos registrados com o cliente de software do Intune PC
+
+### <a name="urls-for-intune-services-provided-by-office-365"></a>URLs para serviços do Intune fornecidos pelo Office 365
+
+Microsoft 365 Business: https://portal.microsoft.com/adminportal
+
+Gerenciamento de dispositivo móvel do Office 365: https://portal.office.com/adminportal/home#/MifoDevices
+
+## <a name="see-also"></a>Consulte também
+[Não é possível entrar no Office 365, no Azure ou no Intune](https://support.microsoft.com/help/2412085)

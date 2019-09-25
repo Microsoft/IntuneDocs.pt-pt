@@ -8,7 +8,6 @@ ms.author: lanewsad
 manager: dougeby
 ms.date: 06/01/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4f8405aceaa1fd9c00b966d03a1f7b80e5946d96
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
+ms.openlocfilehash: 52f8af06fffb3643714ed318e474b73be21963ed
+ms.sourcegitcommit: 6a946a055a2014e00a4ca9d71986727a4ebbc777
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59898484"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71239786"
 ---
 # <a name="how-to-educate-your-end-users-about-microsoft-intune"></a>Como dar formação aos seus utilizadores finais sobre o Microsoft Intune
 
@@ -44,7 +43,7 @@ __Qual é o nível de experiência em tecnologia dos utilizadores?__ O conhecime
 
 __O que é que significa para os utilizadores a gestão da mobilidade?__ Os utilizadores poderão não compreender totalmente o acesso que tem (ou que não tem) aos dispositivos e informações deles. Os utilizadores têm provavelmente alguma preocupação com a possibilidade de as suas ações serem controladas pelo departamento de TI e pela liderança. Os utilizadores de dispositivos menos experientes poderão acreditar que todas as atividades nos seus dispositivos são privadas. 
 
-__De que forma pode o Intune incomodar os utilizadores?__  Reconheça e respeite o tempo que os utilizadores demoram a instalar aplicações, inscrever dispositivos e manter a conformidade. A principal prioridade de todas as implementações do Intune é a proteção dos dados empresariais. No entanto, a atitude do utilizador relativamente à gestão de dispositivos pode ser afetada negativamente se emitir políticas que, por exemplo:  
+__De que forma pode o Intune incomodar os utilizadores?__  Reconheça e respeite o tempo que os utilizadores demoram a instalar aplicações, inscrever dispositivos e manter a conformidade. A principal prioridade de todas as implementações do Intune é a proteção dos dados empresariais. No entanto, as atitudes do usuário para o gerenciamento de dispositivos podem ser afetadas negativamente se você enviar por push políticas que, por exemplo:  
 * Exijam códigos de acesso injustificados nos dispositivos pessoais
 * Enviem atualizações de aplicações necessárias a meio de chamadas de negócio importantes  
 
@@ -58,9 +57,9 @@ Leia a seguinte lista de sugestões para facilitar a implementação do Intune n
 
 * __Seja acessível.__ Informe os utilizadores sobre onde podem procurar ajuda para os problemas dos seus dispositivos. Ao [personalizar o Portal da Empresa](company-portal-customize.md), não se esqueça de incluir as informações de contacto do seu administrador de TI.
 
-* __Seja específico.__ Forneça instruções específicas para a implementação da sua organização. Esta ação demonstra aos utilizadores que se preocupa com a experiência deles. Utilize este [modelo personalizável de inscrição de utilizadores do Intune](https://gallery.technet.microsoft.com/office/Intune-End-User-Enrollment-3a0c9b0c) para criar as suas próprias instruções de inscrição para os seus utilizadores.
+* __Seja específico.__ Forneça instruções específicas para a implementação da sua organização. Esta ação demonstra aos utilizadores que se preocupa com a experiência deles. Use este kit de [adoção do Intune](https://aka.ms/IntuneAdoptionKit) personalizável para criar suas próprias instruções de registro para seus usuários.
 
-* __Encontre formas diferentes de comunicar.__ Os utilizadores têm [diferentes estilos de aprendizagem](https://www.umassd.edu/dss/resources/facultystaff/howtoteachandaccommodate/howtoaccommodatedifferentlearningstyles/) e maneiras preferenciais de consumir informações. Para pessoas que aprendem melhor visualmente, o Intune fornece [versões de vídeo sobre como inscrever vários tipos de dispositivos](https://channel9.msdn.com/Series/IntuneEnrollment) no Canal 9. Os vídeos podem ser incorporados diretamente no seu próprio [site do SharePoint](https://support.office.com/article/Embed-a-video-from-Office-365-Video-59e19984-c34e-4be8-889b-f6fa93910581). Também pode transferir cópias locais do vídeo e da faixa de áudio.
+* __Encontre formas diferentes de comunicar.__ Os utilizadores têm [diferentes estilos de aprendizagem](https://www.umassd.edu/dss/resources/faculty--staff/how-to-teach-and-accommodate/how-to-accommodate-different-learning-styles/) e maneiras preferenciais de consumir informações. Para pessoas que aprendem melhor visualmente, o Intune fornece [versões de vídeo sobre como inscrever vários tipos de dispositivos](https://channel9.msdn.com/Series/IntuneEnrollment) no Canal 9. Os vídeos podem ser incorporados diretamente no seu próprio [site do SharePoint](https://support.office.com/article/Embed-a-video-from-Office-365-Video-59e19984-c34e-4be8-889b-f6fa93910581). Também pode transferir cópias locais do vídeo e da faixa de áudio.
 
 * __Esteja atento.__ A experiência de utilizador do Intune também afeta a sua produtividade. Compreender a experiência dos utilizadores faz com que seja mais fácil para si resolver problemas relacionados com dispositivos e utilizadores. Por exemplo, pode saber mais e compreender a forma como os utilizadores adquirem as suas aplicações. Conhecer estas informações com antecedência fará com que seja mais fácil e rápido diagnosticar e corrigir problemas.
 

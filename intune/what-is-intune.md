@@ -1,13 +1,12 @@
 ---
 title: O que é o Microsoft Intune
-description: Saiba como o Microsoft Intune é o componente de gestão (MAM) de aplicação móvel do Enterprise Mobility + solução de segurança e gestão de dispositivos móveis (MDM) e como o ajuda a proteger dados da empresa.
+description: Saiba como Microsoft Intune é o componente MDM (gerenciamento de dispositivo móvel) e MAM (gerenciamento de aplicativo móvel) da solução Enterprise Mobility + Security e como ele ajuda a proteger os dados da empresa.
 keywords: o que é o Intune
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 02/26/2019
+ms.date: 06/20/2019
 ms.topic: overview
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,19 +16,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 511e672193ec609f817c10572c99ac73831c54ae
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 2cde4e37889b981decfd18138feeb4edac46c4c8
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460585"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "71238262"
 ---
 # <a name="what-is-microsoft-intune"></a>O que é o Microsoft Intune?
 
 [!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
-O Microsoft Intune é um serviço baseado na nuvem no espaço de gestão (EMM) de mobilidade empresarial que ajuda a sua força de trabalho ser produtivo, mantendo os seus dados empresariais protegidos. Tal como outros serviços do Azure, o Microsoft Intune está disponível no portal do Azure. Com o Intune, pode:
-* Gerir os dispositivos móveis e PCs em que sua força de trabalho utiliza para aceder a dados da empresa.
+Microsoft Intune é um serviço baseado em nuvem no espaço de gerenciamento de mobilidade empresarial (EMM) que ajuda a permitir que sua força de negócios seja produtiva enquanto mantém seus dados corporativos protegidos. Tal como outros serviços do Azure, o Microsoft Intune está disponível no portal do Azure. Com o Intune, pode:
+* Gerencie os dispositivos móveis e os computadores que sua força de equipe usa para acessar os dados da empresa.
 * Gerir as aplicações móveis que a sua força de trabalho utiliza.
 * Proteger as informações da sua empresa ao ajudar a controlar a forma como a sua força de trabalho acede às mesmas e as partilha.
 * Garantir que os dispositivos e as aplicações são compatíveis com os requisitos de segurança da empresa.
@@ -45,7 +44,7 @@ O Microsoft Intune é um serviço baseado na nuvem no espaço de gestão (EMM) d
 
 
 ## <a name="how-does-intune-work"></a>Como é que o Intune funciona?
-O Intune é o componente do Enterprise Mobility + suite Security (EMS) que gere dispositivos móveis e aplicações da Microsoft. Integra-se com outros componentes de EMS, como o Azure Active Directory (Azure AD) para controlo de acesso e identidade, e o Azure Information Protection para proteção de dados. Ao utilizá-lo com o Office 365, pode fomentar a produtividade da sua força de trabalho em todos os dispositivos e, ao mesmo tempo, manter as informações da sua organização protegidas.
+O Intune é o componente do pacote de Enterprise Mobility + Security da Microsoft (EMS) que gerencia dispositivos móveis e aplicativos. Integra-se com outros componentes de EMS, como o Azure Active Directory (Azure AD) para controlo de acesso e identidade, e o Azure Information Protection para proteção de dados. Ao utilizá-lo com o Office 365, pode fomentar a produtividade da sua força de trabalho em todos os dispositivos e, ao mesmo tempo, manter as informações da sua organização protegidas.
 
 ![Imagem da arquitetura do Intune](./media/intunearch_sm.png)
 
@@ -64,7 +63,7 @@ A gestão de dispositivos do Intune funciona através de protocolos ou APIs disp
 * A criação de relatórios e a medição da conformidade dos dispositivos com as normas empresariais
 * A remoção de dados empresariais dos dispositivos geridos  
 
-Por vezes, as pessoas pensam **controlar o acesso a dados empresariais** é uma funcionalidade de gestão do dispositivo. Não pensamos dessa forma, porque não é algo que seja fornecido pelo sistema operativo do dispositivo móvel. Em vez disso, é algo proporcionado pelo fornecedor de identidade. No nosso caso, o fornecedor de identidade é o Azure Active Directory (Azure AD), o sistema de gestão de identidade e acesso da Microsoft.  
+Às vezes, as pessoas acham **que o controle de acesso aos dados corporativos** é um recurso de gerenciamento de dispositivos. Não pensamos dessa forma, porque não é algo que seja fornecido pelo sistema operativo do dispositivo móvel. Em vez disso, é algo proporcionado pelo fornecedor de identidade. No nosso caso, o fornecedor de identidade é o Azure Active Directory (Azure AD), o sistema de gestão de identidade e acesso da Microsoft.  
 
 O Intune está integrado no Azure AD para possibilitar um conjunto abrangente de cenários de controlo de acesso. Por exemplo, pode exigir que um dispositivo móvel esteja em conformidade com as normas empresariais que define no Intune para que o mesmo possa aceder a um serviço empresarial, como o Exchange. Da mesma forma, pode bloquear o serviço empresarial para um conjunto específico de aplicações móveis. Por exemplo, pode bloquear o Exchange Online para que seja apenas acedido pelo Outlook ou o Outlook Mobile.
 
@@ -78,15 +77,15 @@ Quando mencionamos gestão de aplicações, isso traduz-se em:
 * A criação de relatórios sobre o inventário de aplicações móveis
 * O controlo da utilização de aplicações móveis
 
-O termo gestão de aplicações móveis (MAM) tem sido utilizado para designar qualquer dessas noções individualmente ou combinações específicas. Em particular, é comum a combinar o conceito de configuração de aplicações com o conceito de proteção de dados empresariais de aplicações móveis. Isso acontece porque algumas aplicações móveis apresentam definições que permitem a configuração das respetivas funcionalidades de segurança de dados.
+O termo gestão de aplicações móveis (MAM) tem sido utilizado para designar qualquer dessas noções individualmente ou combinações específicas. Em particular, é comum que os colegas combinem o conceito de configuração de aplicativo com o conceito de proteção de dados corporativos em aplicativos móveis. Isso acontece porque algumas aplicações móveis apresentam definições que permitem a configuração das respetivas funcionalidades de segurança de dados.
 
 Quando mencionamos a configuração de aplicações em conjunto com o Intune, referimo-nos especificamente a tecnologias como a [configuração de aplicações geridas em iOS](https://developer.apple.com/library/content/samplecode/sc2279/Introduction/Intro.html).
 
-Ao utilizar o Intune com outros serviços do EMS, pode proporcionar a segurança de aplicações móveis à sua organização acima do que é fornecido pelo sistema operativo móvel e pelas próprias aplicações móveis através da configuração de aplicações. Uma aplicação gerida com o EMS tem acesso a um conjunto mais vasto de aplicações móveis e funcionalidades de proteção de dados que inclui:
+Ao utilizar o Intune com outros serviços do EMS, pode proporcionar a segurança de aplicações móveis à sua organização acima do que é fornecido pelo sistema operativo móvel e pelas próprias aplicações móveis através da configuração de aplicações. Um aplicativo gerenciado com o EMS tem acesso a um conjunto mais amplo de recursos de proteção de dados e aplicativos móveis que inclui:
 
 * [Início de sessão único](https://docs.microsoft.com/azure/active-directory/active-directory-appssoaccess-whatis)  
-*   [Autenticação multifator](https://docs.microsoft.com/azure/active-directory/authentication/multi-factor-authentication)
-* [Acesso condicional a aplicações – permite o acesso se a aplicação móvel contiver dados empresariais](app-based-conditional-access-intune.md)
+* [Autenticação multifator](https://docs.microsoft.com/azure/active-directory/authentication/multi-factor-authentication)
+* [Acesso condicional do aplicativo – permitir acesso se o aplicativo móvel contiver dados corporativos](app-based-conditional-access-intune.md)
 * [Separação entre dados empresariais e dados pessoais na mesma aplicação](app-protection-policy.md)
 * [Política de proteção de aplicações (PIN, encriptação, Guardar Como, área de transferência, etc.)](app-protection-policies.md)
 * [Eliminação de dados empresariais de uma aplicação móvel](apps-selective-wipe.md)
@@ -100,16 +99,16 @@ Proporcionar a segurança das aplicações faz parte da gestão de aplicações 
 * Restringir as ações que os utilizadores podem efetuar com informações empresariais, como copiar, cortar/colar, guardar e ver
 * Remover dados empresariais de aplicações móveis, algo também conhecido como eliminação seletiva ou eliminação empresarial
 
-Uma forma Intune fornece segurança de aplicações móveis é por meio de seus **política de proteção de aplicações** funcionalidade. A política de proteção de aplicações utiliza a identidade do Azure AD para separar os dados empresariais dos dados pessoais. Dados que são acedidos utilizando as credenciais empresariais receberão proteções empresariais adicionais.
+Uma maneira que o Intune fornece segurança de aplicativo móvel é por meio de seu recurso de **política de proteção de aplicativo** . A política de proteção de aplicações utiliza a identidade do Azure AD para separar os dados empresariais dos dados pessoais. Os dados acessados usando credenciais corporativas receberão proteções corporativas adicionais.
 
-Por exemplo, quando um utilizador inicia sessão no seu dispositivo com as credenciais da empresa, a identidade empresarial permite-lhes aceder aos dados negados à sua identidade pessoal. À medida que os dados empresariais são utilizados, as políticas de proteção de aplicações controlam como os mesmos são guardados e partilhados. Essas mesmas proteções não são aplicadas aos dados que são acedidos quando o utilizador inicia sessão nos respetivos dispositivos com a respetiva identidade pessoal. Dessa forma, IT tem controlo sobre os dados da empresa enquanto o utilizador final mantém o controlo e a privacidade sobre os seus dados pessoais.
+Por exemplo, quando um usuário faz logon em seu dispositivo com suas credenciais corporativas, sua identidade corporativa permite que eles acessem dados que são negados à sua identidade pessoal. À medida que os dados empresariais são utilizados, as políticas de proteção de aplicações controlam como os mesmos são guardados e partilhados. Essas mesmas proteções não são aplicadas aos dados que são acessados quando o usuário faz logon em seu dispositivo com sua identidade pessoal. Dessa forma, ele tem controle dos dados corporativos, enquanto o usuário final mantém o controle e a privacidade sobre seus dados pessoais.
 
 ## <a name="emm-with-and-without-device-enrollment"></a>EMM com e sem a inscrição de dispositivos
 A maioria das soluções de gestão da mobilidade empresarial suporta dispositivos móveis básicos e tecnologias de aplicações móveis. Estas estão normalmente relacionadas com a inscrição do dispositivo na solução de gestão de dispositivos móveis (MDM) da sua organização. O Intune suporta estes cenários, bem como vários cenários "sem inscrição".  
 
-As organizações divergem na forma de adoção de cenários "sem inscrição". Algumas organizações efetuam uma padronização. Outras permitem dispositivos complementares, como um tablet pessoal. Outras não suportam nenhuma das situações. Mesmo neste último caso, em que uma organização requer que todos os dispositivos dos funcionários estejam inscritos na MDM, normalmente suporta cenários "sem inscrição" para subcontratados, fornecedores e outros dispositivos que tenham uma isenção específica.
+As organizações divergem na forma de adoção de cenários "sem inscrição". Algumas organizações efetuam uma padronização. Outras permitem dispositivos complementares, como um tablet pessoal. Outras não suportam nenhuma das situações. Mesmo neste último caso, em que uma organização exige que todos os dispositivos de funcionários sejam registrados no MDM, eles normalmente dão suporte a cenários de "sem registro" para prestadores de contrato, fornecedores e outros dispositivos que têm uma isenção específica.
 
-Pode até utilizar a tecnologia "sem inscrição" do Intune em dispositivos inscritos. Por exemplo, um dispositivo inscrito na MDM pode ter proteções "Open-in" fornecidas pelo sistema operativo móvel. Proteção "Open-in" é uma funcionalidade do iOS da Apple que impede a abertura de um documento de uma aplicação, como o Outlook, para outra aplicação, como o Word, a menos que ambas as aplicações são geridas pelo fornecedor MDM da mesmo. Além disso, IT podem aplicar-se a política de proteção de aplicações para aplicações móveis geridas pelo EMS, ao controle guardar-como, ou para fornecer autenticação multifator.
+Pode até utilizar a tecnologia "sem inscrição" do Intune em dispositivos inscritos. Por exemplo, um dispositivo inscrito na MDM pode ter proteções "Open-in" fornecidas pelo sistema operativo móvel. A proteção "aberta" é um recurso do iOS da Apple que o impede de abrir um documento de um aplicativo, como o Outlook, em outro aplicativo, como o Word, a menos que ambos os aplicativos sejam gerenciados pelo mesmo provedor de MDM. Além disso, ele pode aplicar a política de proteção de aplicativo aos aplicativos móveis gerenciados pelo EMS para controlar o Save-as ou para fornecer a autenticação multifator.
 
 Qualquer que seja a posição da sua organização relativamente às aplicações e aos dispositivos móveis inscritos e não inscritos, o Intune, como parte do EMS, dispõe de ferramentas que o irão ajudar a aumentar a produtividade da força de trabalho, protegendo os seus dados empresariais.
 
@@ -149,7 +148,7 @@ Atualmente, são suportados os seguintes browsers:
 
 Consulte o [portal do Azure](https://docs.microsoft.com/azure/azure-preview-portal-supported-browsers-devices) para obter as informações mais recentes sobre browsers suportados.
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Passos seguintes
 * Ler sobre algumas das [formas comuns de utilizar o Intune](common-scenarios.md).
 * Familiarizar-se com o produto [com uma avaliação de 30 dias do Intune](free-trial-sign-up.md).
 * Aprofundar conhecimentos sobre os [requisitos técnicos e as capacidades](supported-devices-browsers.md) do Intune

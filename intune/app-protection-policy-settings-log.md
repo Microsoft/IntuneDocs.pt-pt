@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7f9ee4d978bcb44f3b13ddcf9aafa4a3210f0f7e
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: ea64a8b9c4e8fb044e0fd66be32dcc71e4a5aefc
+ms.sourcegitcommit: 6a946a055a2014e00a4ca9d71986727a4ebbc777
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67885074"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71239436"
 ---
 # <a name="review-client-app-protection-logs"></a>Rever registos de proteção de aplicações cliente
 
@@ -31,14 +31,14 @@ Saiba mais sobre as definições que pode rever nos registos de proteção de ap
 O processo para habilitar e coletar logs varia de acordo com a plataforma:
 - **Dispositivos Android** -Use o *portal da empresa*. Consulte [os logs de email para o suporte de sua empresa](/intune-user-help/send-logs-to-your-it-admin-by-email-android).
 - **dispositivos IOS** – Use um Managed browser ou *o Microsoft Edge* para coletar logs. Para obter detalhes, consulte o blog da equipe de suporte do Intune [novo console de diagnóstico do Intune para envio de log no Intune Managed browser](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-New-Intune-Diagnostic-Console-for-Log-Submission-in/ba-p/280021). 
-- **Dispositivos Windows 10** – use *MDMDiag* e logs de eventos. Consulte [diagnosticar falhas de MDM no Windows 10](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10) no conteúdo de gerenciamento de cliente do Windows e o blog [Solucionando problemas de falhas de política do Windows 10 Intune](http://configmgrdogsarchive.com/2018/08/09/troubleshooting-windows-10-intune-policy-failures)
+- **Dispositivos Windows 10** – use *MDMDiag* e logs de eventos. Consulte [diagnosticar falhas de MDM no Windows 10](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10) no conteúdo de gerenciamento de cliente do Windows e o blog [Solucionando problemas de falhas de política do Windows 10 Intune](https://blogs.technet.microsoft.com/configmgrdogs/2018/08/09/troubleshooting-windows-10-intune-policy-failures/).
 
 
 A tabela a seguir lista o nome e uma explicação das configurações registradas no log.
 
 ## <a name="app-protection-policy-settings"></a>Definições de políticas de proteção de aplicações
 
-| Nome                        | Valores possíveis                                                                                                                                                                                                                                                                                           | Definição no portal de Gestão de Aplicações Móveis do Azure Intune                                                                                                                            |
+| Name                        | Valores possíveis                                                                                                                                                                                                                                                                                           | Definição no portal de Gestão de Aplicações Móveis do Azure Intune                                                                                                                            |
 |-----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | AccessRecheckOfflineTimeout | x minutos                                                                                                                                                                                                                                                                                                   | [Acesso] Verificar novamente os requisitos de acesso – Período de Tolerância Offline<br>Nota: Esse é o período de tempo antes que os requisitos de acesso para o aplicativo sejam verificados novamente se o dispositivo estiver offline.             |
 | AccessRecheckOnlineTimeout  | _x_ minutos                                                                                                                                                                                                                                                                                                   | [Acesso] Verificar novamente os requisitos de acesso – Tempo Limite.<br>Nota: Esse é o período de tempo antes que os requisitos de acesso para o aplicativo sejam verificados novamente depois que o aplicativo for iniciado se o dispositivo estiver online. |
@@ -70,7 +70,7 @@ A tabela a seguir lista o nome e uma explicação das configurações registrada
 | SimplePINAllowed            | 0 = Não<br>1 = Sim                                                                                                                                                                                                                                                                                           | [Acesso] Permitir PIN Simples.                                                                                                                                                               |
 | TouchIDEnabled              | 0 = Não<br>1 = Sim                                                                                                                                                                                                                                                                                           | [Acesso] Permitir impressões digitais em vez do PIN (iOS 8+).                                                                                                                                      |
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Passos seguintes
 
 - Para saber mais sobre as políticas de proteção de aplicações, veja [O que são as políticas de proteção de aplicações?](app-protection-policy.md)
 - O Intune oferece um conjunto de ferramentas para o ajudar a resolver problemas no seu ambiente. Para obter mais informações, veja [Utilizar o portal de resolução de problemas](help-desk-operators.md).

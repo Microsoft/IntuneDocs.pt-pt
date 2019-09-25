@@ -5,9 +5,8 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/28/2016
+ms.date: 05/07/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 368eeec3c47b53d00e9130f41d36f05976a66b8f
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 8f069405d75b196c26c9c844e0d0a4bd57299199
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57394251"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "71239309"
 ---
 # <a name="how-your-ios-users-get-their-apps"></a>Como os utilizadores de dispositivos iOS obtêm as aplicações
 
@@ -36,7 +35,7 @@ Utilize estas informações para saber como e onde é que os seus utilizadores f
 
 **Aplicações geridas** – aplicações que podem ser geridas através de políticas e foram "encapsuladas" pelo Intune ou incorporadas no Intune App Software Development Kit (SDK). Estas aplicações podem ser geridas pelo Intune e podem ser-lhes aplicadas políticas de proteção de aplicações.
 
-**Aplicações não geridas** – aplicações que podem ser geridas através de políticas e que não foram encapsuladas pelo Intune ou que não incorporam o SDK da Aplicação Intune. Não é possível aplicar políticas de aplicação a estas aplicações.
+**Aplicativos não gerenciados**– aplicativos que os usuários podem baixar da iOS App Store que não estão integrados com o SDK de aplicativos do Intune. O Intune não tem nenhum controle sobre a distribuição, o gerenciamento ou o apagamento seletivo desses aplicativos.  
 
 As restrições da Apple proíbem as aplicações da App Store geridas e as aplicações de linha de negócio de serem indicadas na aplicação Portal da Empresa. Para resolver este problema, os mosaicos na aplicação Portal da Empresa para iOS direcionam os utilizadores para diferentes vistas numa única localização (o site do Portal da Empresa) para todas as suas aplicações.
 
@@ -53,7 +52,7 @@ Os utilizadores inscritos obtêm as respetivas aplicações ao tocar nos seguint
 
 Para obter mais informações sobre como adicionar aplicações, veja [Como adicionar uma aplicação ao Microsoft Intune](apps-add.md).
 
-### <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte também
 [Como os utilizadores de dispositivos Android obtêm as aplicações](end-user-apps-android.md)
 
 [Como os utilizadores de dispositivos Windows obtêm as aplicações](end-user-apps-windows.md)
