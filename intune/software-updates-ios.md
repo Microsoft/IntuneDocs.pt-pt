@@ -12,12 +12,12 @@ ms.localizationpriority: high
 ms.technology: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6df42d908169ab591150e88e03f2f419710c9e54
-ms.sourcegitcommit: e477e399cba673a2a9e1fa342e8303ed993801eb
+ms.openlocfilehash: eeaf3dc1e7f1dfa1cfc3ff0da554f65d416a354b
+ms.sourcegitcommit: 62c41976c4da43b36015b715bc255397ebb8c6ad
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70739211"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71274817"
 ---
 # <a name="add-ios-software-update-policies-in-intune"></a>Adicionar políticas de atualização de software do iOS no Intune
 
@@ -51,9 +51,9 @@ O dispositivo comunica com o Intune aproximadamente de 8 em 8 horas. Se uma atua
       - **Hora de início**: Escolha a hora de início do período de tempo restrito. Por exemplo, digite 5 para que as atualizações não sejam instaladas a partir das 17:00.
       - **Hora de término**: Escolha a hora de término do período de tempo restrito. Por exemplo, digite 1. portanto, as atualizações podem ser instaladas a partir de 1 A.M.
 
-    - **Atrasar a visibilidade das atualizações de software para os usuários finais sem alteração nas atualizações agendadas (dias)** : 
+    - **Atrasar a visibilidade das atualizações de software para os usuários finais sem alterar as atualizações agendadas na política de atualização de software (dias)** : 
 
-      \* * Se você quiser atrasar a visibilidade de atualizações de software por um período específico em seus dispositivos iOS supervisionados, defina essas configurações em [restrições de dispositivo](device-restrictions-ios.md#general).
+      \* * Se você quiser atrasar a visibilidade de atualizações de software por um período específico em seus dispositivos iOS supervisionados, defina essas configurações em [restrições de dispositivo](device-restrictions-ios.md#general). As políticas de atualização de software substituem quaisquer restrições de dispositivo. Se você tiver ambos definido, a política de atualização de software virá primeiro a cada vez. 
      
       > [! Fundamental  
       > Uma política que tem uma *hora de início* e *hora de término* definida como 12 am é avaliada como 0 hora e não 24 horas. Isso resulta em nenhuma restrição.  
@@ -95,6 +95,6 @@ Os dispositivos utilizados pelos utilizadores abrangidos pela política são ava
 <!-- 1352223 -->
 **As** > **falhas de instalação de atualizações de software para dispositivos IOS** mostram uma lista de dispositivos IOS supervisionados direcionados por uma política de atualização, tentou uma atualização e não puderam ser atualizadas. Pode ver o estado com o motivo pelo qual cada um dos dispositivos não foi atualizado automaticamente. Os dispositivos atualizados e em bom estado de funcionamento não são apresentados na lista. Os dispositivos atualizados incluem as atualizações mais recentes suportadas pelos mesmos.
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Passos seguintes
 
 [Atribua o perfil](device-profile-assign.md) e [monitorize o respetivo estado](device-profile-monitor.md).

@@ -6,9 +6,8 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/08/2019
+ms.date: 08/15/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 888c136934deca80877d75879e270807af194a1e
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
-ms.translationtype: HT
+ms.openlocfilehash: fcc4939e5469cd69914d59af33be84beff9b2cf1
+ms.sourcegitcommit: 6b5907046f920279bbda3ee6c93e98594624c05c
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59895758"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "71304184"
 ---
 # <a name="use-ios-app-provisioning-profiles-to-prevent-your-apps-from-expiring"></a>Utilizar perfis de aprovisionamento de aplicações iOS para impedir as aplicações de expirar
 
@@ -44,17 +43,16 @@ Enquanto administrador, pode incluir e excluir grupos de segurança para atribui
 
 ## <a name="how-to-create-an-ios-mobile-app-provisioning-profile"></a>Como criar um perfil de aprovisionamento de aplicação móvel de iOS
 
-1. Inicie sessão no [portal do Azure](https://portal.azure.com).
-2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
+1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. No painel **Intune**, selecione **Aplicações do cliente**.
-1.  Na carga de trabalho **Aplicações do cliente**, selecione **Gerir** > **Perfis de aprovisionamento da aplicação iOS**.
-2.  No painel Lista de perfis, selecione **Criar perfil**.
+1. Na carga de trabalho **Aplicações do cliente**, selecione **Gerir** > **Perfis de aprovisionamento da aplicação iOS**.
+2. No painel Lista de perfis, selecione **Criar perfil**.
 3. No painel **Criar perfil**, configure os seguintes valores:
     - **Nome** – indique um nome para este perfil de aprovisionamento móvel.
     - **Descrição** - opcionalmente, indique uma descrição para a política.
     - **Carregar ficheiro de perfil** – escolha o ícone **Abrir** e, em seguida, escolha um ficheiro de Perfil de Configuração Móvel da Apple (com a extensão `.mobileprovision`) que transferiu do [site Apple Developer](https://developer.apple.com/).
 4. Quando tiver terminado, escolha **Criar**.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
 Atribua o perfil aos dispositivos iOS necessários. Para obter mais informações, siga os passos em [Como atribuir perfis de dispositivo](device-profile-assign.md).

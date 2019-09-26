@@ -1,13 +1,12 @@
 ---
-title: Criar um perfil Wi-Fi com uma chave pré-partilhada – Microsoft Intune – Azure | Microsoft Docs
+title: Criar perfil de WiFi com chave pré-compartilhada-Microsoft Intune-Azure | Microsoft Docs
 description: Utilize um perfil personalizado para criar um perfil Wi-Fi com uma chave pré-partilhada e obter código XML de exemplo para perfis Android, Windows e perfis Wi-Fi baseados em EAP no Microsoft Intune
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/26/2019
+ms.date: 06/25/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7bf859075e675ef0205b24e0575fca5ab74f312c
-ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
+ms.openlocfilehash: 632bf2c68133f80a44950f154e1b5d9092da3cab
+ms.sourcegitcommit: a63b9eaa59867ab2b0a6aa415c19d9fff4fda874
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58490633"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "71303264"
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key---intune"></a>Utilizar um perfil de dispositivo personalizado para criar um perfil Wi-Fi com uma chave pré-partilhada – Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -38,7 +37,7 @@ As chaves pré-partilhadas (PSK) são normalmente utilizadas para autenticar uti
 - Poderá ser mais fácil copiar o código de um computador com ligação a essa rede, conforme descrito mais à frente neste artigo.
 - Pode adicionar várias redes e chaves, adicionando mais definições de OMA-URI.
 - Para iOS, utilize o Apple Configurator numa estação Mac para configurar o perfil.
-- O PSK necessita de uma cadeia de 64 dígitos hexadecimais ou uma frase de acesso de 8 a 63 carateres ASCII imprimíveis. Alguns carateres, tal como o asterisco (*), não são suportados.
+- O PSK necessita de uma cadeia de 64 dígitos hexadecimais ou uma frase de acesso de 8 a 63 carateres ASCII imprimíveis. Não há suporte para alguns caracteres, como asterisco (*).
 
 ## <a name="create-a-custom-profile"></a>Criar um perfil personalizado
 Pode criar um perfil personalizado com uma chave pré-partilhada para perfis Android, Windows e perfis Wi-Fi baseados em EAP. Para criar o perfil através do portal do Azure, veja [Criar definições personalizadas de dispositivos](custom-settings-configure.md). Ao criar o perfil de dispositivo, selecione **Personalizado** na plataforma de dispositivos. Não selecione o perfil Wi-Fi. Ao selecionar Personalizado, certifique-se de que: 
@@ -60,7 +59,7 @@ Pode criar um perfil personalizado com uma chave pré-partilhada para perfis And
      > [!NOTE]
      > Certifique-se de que inclui o caráter de ponto no início.
 
-     SSID é o SSID para o qual está a criar a política. Por exemplo, introduza `./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`.
+     SSID é o SSID para o qual está a criar a política. Por exemplo, se o Wi-Fi for nomeado `Hotspot-1`, insira `./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`.
 
    e. **Campo de Valor** é onde cola o código XML. Veja os exemplos neste artigo. Atualize cada valor para corresponder às suas definições de rede. A secção de comentários do código inclui algumas indicações.
 3. Selecione **OK**, guarde e, em seguida, atribua a política.
@@ -74,26 +73,28 @@ Da próxima vez que cada dispositivo for registado, a política será aplicada e
 
 O seguinte exemplo inclui o código XML de um perfil Android ou Wi-Fi do Windows. O exemplo é disponibilizado para mostrar o formato correto e indicar mais detalhes. Ele é apenas um exemplo e não foi concebido como uma configuração recomendada para o seu ambiente.
 
-> [!IMPORTANT]
->
-> - `<protected>false</protected>` tem de ser definido como **falso**. Se estiver definido como **verdadeiro**, poderá fazer com que o dispositivo espere uma palavra-passe encriptada e, em seguida, tente decifrá-la, o que poderá resultar numa falha de ligação.
->
-> - `<hex>53534944</hex>` deve estar definido para o valor hexadecimal de `<name><SSID of wifi profile></name>`.
->  Os dispositivos com Windows 10 podem devolver um erro *0x87D1FDE8 A remediação falhou* falso, mas o dispositivo continuará a conter o perfil.
->
-> - XML tem carateres especiais, como o `&` ("e" comercial). Utilizar carateres especiais pode impedir que o XML funcionar conforme esperado. 
+### <a name="important-considerations"></a>Considerações importantes
 
-```
+- `<protected>false</protected>` tem de ser definido como **falso**. Se estiver definido como **verdadeiro**, poderá fazer com que o dispositivo espere uma palavra-passe encriptada e, em seguida, tente decifrá-la, o que poderá resultar numa falha de ligação.
+
+- `<hex>53534944</hex>` deve estar definido para o valor hexadecimal de `<name><SSID of wifi profile></name>`. Dispositivos Windows 10 podem retornar um erro `x87D1FDE8 Remediation failed` falso, mas o dispositivo ainda contém o perfil.
+
+- O XML tem caracteres especiais, como o `&` (e comercial). O uso de caracteres especiais pode impedir que o XML funcione conforme o esperado. 
+
+### <a name="example"></a>Exemplo
+
+``` xml
 <!--
-<Name of wifi profile> = Name of profile
-<SSID of wifi profile> = Plain text of SSID. Does not need to be escaped, could be <name>Your Company's Network</name>
+<hex>53534944</hex> = The hexadecimal value of <name><SSID of wifi profile></name>
+<Name of wifi profile> = Name of profile shown to users. It could be <name>Your Company's Network</name>.
+<SSID of wifi profile> = Plain text of SSID. Does not need to be escaped. It could be <name>Your Company's Network</name>.
 <nonBroadcast><true/false></nonBroadcast>
 <Type of authentication> = Type of authentication used by the network, such as WPA2PSK.
-<Type of encryption> = Type of encryption used by the network
+<Type of encryption> = Type of encryption used by the network, such as AES.
 <protected>false</protected> do not change this value, as true could cause device to expect an encrypted password and then try to decrypt it, which may result in a failed connection.
-<password> = Password to connect to the network
-x>53534944</hex> should be set to the hexadecimal value of <name><SSID of wifi profile></name>
+<password> = Plain text of the password to connect to the network
 -->
+
 <WLANProfile
 xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
   <name><Name of wifi profile></name>
@@ -129,7 +130,7 @@ xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
 O seguinte exemplo inclui o código XML de um perfil Wi-Fi baseado em EAP: O exemplo é disponibilizado para mostrar o formato correto e indicar mais detalhes. Ele é apenas um exemplo e não foi concebido como uma configuração recomendada para o seu ambiente.
 
 
-```
+```xml
     <WLANProfile xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
       <name>testcert</name>
       <SSIDConfig>
@@ -210,18 +211,29 @@ O seguinte exemplo inclui o código XML de um perfil Wi-Fi baseado em EAP: O exe
 ```
 
 ## <a name="create-the-xml-file-from-an-existing-wi-fi-connection"></a>Criar o ficheiro XML a partir de uma ligação Wi-Fi existente
-Também pode criar um ficheiro XML a partir de uma ligação Wi-Fi existente através dos seguintes passos: 
 
-1. Num computador que esteja ligado ou que tenha ligado recentemente à rede sem fios, abra a pasta `\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\{guid}`.
+Você também pode criar um arquivo XML de uma conexão Wi-Fi existente. Em um computador com Windows, use as seguintes etapas:
 
-   É melhor utilizar um computador que não tenha estabelecido ligação a muitas redes sem fios. Caso contrário, poderá ter de procurar cada perfil para encontrar o correto.
+1. Crie uma pasta local para os perfis W-Fi exportados, como c:\WiFi.
+2. Abra um prompt de comando como administrador (clique com o botão `cmd`direito do mouse em  >  **Executar como administrador**)
+3. Execute `netsh wlan show profiles`. Os nomes de todos os perfis são listados.
+4. Execute `netsh wlan export profile name="YourProfileName" folder=c:\Wifi`. Este comando cria um arquivo chamado `Wi-Fi-YourProfileName.xml` em c:\Wifi.
 
-2. Procure nos ficheiros XML para localizar o ficheiro com o nome correto.
-3. Após encontrar o ficheiro XML correto, copie e cole o código XML no campo **Dados** da página de definições de OMA-URI.
+    - Se você estiver exportando um perfil de Wi-Fi que inclui uma chave pré-compartilhada, `key=clear` adicione ao comando:
+  
+      `netsh wlan export profile name="YourProfileName" key=clear folder=c:\Wifi`
+
+      `key=clear`exporta a chave em texto sem formatação, o que é necessário para usar o perfil com êxito.
+
+Depois de ter o arquivo XML, copie e cole a sintaxe XML em configurações OMA-URI > **tipo de dados**. [Criar um perfil personalizado](#create-a-custom-profile) (neste artigo) lista as etapas.
+
+> [!TIP]
+> `\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\{guid}`também inclui todos os perfis no formato XML.
 
 ## <a name="best-practices"></a>Melhores práticas
+
 - Antes de implementar um perfil de Wi-Fi com PSK, confirme que o dispositivo consegue ligar diretamente ao ponto final.
 
-- Quando alternar chaves (palavras-passe ou frases de acesso), espere a ocorrência de um período de indisponibilidade e planeie as suas implementações em conformidade. Considere emitir novos perfis de Wi-Fi durante as horas de descanso. Além disso, avise os utilizadores de que a conectividade poderá ser afetada.
+- Ao girar chaves (senhas ou frases secretas), espere tempo de inatividade e planeje suas implantações. Considere emitir novos perfis de Wi-Fi durante as horas de descanso. Além disso, avise os usuários de que a conectividade pode ser afetada.
 
-- Para garantir uma transição tranquila, certifique-se de que o dispositivo do utilizador final tem uma ligação alternativa à Internet. Por exemplo, o utilizador final tem de conseguir mudar para a rede Guest Wi-Fi (ou outra rede Wi-Fi ) ou ter dados móveis para comunicar com o Intune. A ligação adicional permite ao utilizador receber atualizações da política quando o Perfil de Wi-Fi empresarial for atualizado no dispositivo.
+- Para uma transição suave, verifique se o dispositivo do usuário final tem uma conexão alternativa com a Internet. Por exemplo, o usuário final pode voltar para o convidado WiFi (ou outra rede WiFi) ou ter conectividade celular para se comunicar com o Intune. A ligação adicional permite ao utilizador receber atualizações da política quando o Perfil de Wi-Fi empresarial for atualizado no dispositivo.

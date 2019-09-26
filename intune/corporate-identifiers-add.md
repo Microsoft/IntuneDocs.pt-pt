@@ -8,22 +8,21 @@ ms.author: erikje
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
-ms.reviewer: dagerrit
+ms.reviewer: spshumwa
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 28ad1e492c4bdd7c87371611530cd3f8e2abc2e1
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
-ms.translationtype: HT
+ms.openlocfilehash: 0d8478683ddc7b159dfd069b7a97fd7d1ad99b9c
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59900966"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71305027"
 ---
 # <a name="identify-devices-as-corporate-owned"></a>Identificar os dispositivos como pertencentes à empresa
 
@@ -43,7 +42,16 @@ Após a inscrição, pode [alterar a definição de propriedade](#change-device-
 
 ## <a name="identify-corporate-owned-devices-with-imei-or-serial-number"></a>Identificar dispositivos pertencentes à empresa com o número de série IMEI
 
-Enquanto administrador do Intune, pode criar e importar um ficheiro de valores separados por vírgulas (.csv) que indica os números de série ou os números IMEI de 14 dígitos. O Intune utiliza estes identificadores para especificar a propriedade dos dispositivos como empresarial durante a inscrição do dispositivo. Pode declarar os números IMEI das plataformas suportadas. Só pode declarar números de série para dispositivos iOS, macOS e Android. Cada número IMEI ou número de série pode ter detalhes especificados na lista para fins administrativos.
+Enquanto administrador do Intune, pode criar e importar um ficheiro de valores separados por vírgulas (.csv) que indica os números de série ou os números IMEI de 14 dígitos. O Intune utiliza estes identificadores para especificar a propriedade dos dispositivos como empresarial durante a inscrição do dispositivo. Cada número IMEI ou número de série pode ter detalhes especificados na lista para fins administrativos.
+
+Esse recurso tem suporte para as seguintes plataformas:
+
+| Plataforma | Números IMEI | Números de série |
+|---|---|---|
+| Windows | Com suporte (Windows Phone) | Não suportado |
+| iOS/macOS | Não suportado | Suportadas |
+| Sistema operacional Android gerenciada pelo administrador do dispositivo v10 | Não suportado | Não suportado |
+| Outros Android | Não suportado | Suportadas |
 
 <!-- When you upload serial numbers for corporate-owned iOS devices, they must be paired with a corporate enrollment profile. Devices must then be enrolled using either Apple’s device enrollment program (DEP) or Apple Configurator to have them appear as corporate-owned. -->
 
@@ -69,14 +77,14 @@ Se visualizar este ficheiro .csv num editor de texto, este é apresentado como:
 
 > [!IMPORTANT]
 > Alguns dispositivos Android e iOS têm vários números IMEI. O Intune só lê um número IMEI por cada dispositivo inscrito. Se importar um número IMEI, mas não for um número inventariado pelo Intune, o dispositivo será classificado como um dispositivo pessoal em vez de um dispositivo pertencente à empresa. Se importar múltiplos números IMEI para um dispositivo, os números não inventariados apresentarão o estado de inscrição **Desconhecido**.<br>
->Tenha também em atenção: Os números de série são a forma recomendada de identificação dos dispositivos iOS.
+>Observe também: Os números de série são a forma recomendada de identificação dos dispositivos iOS.
 >Não se garante que os Números de série do Android sejam exclusivos ou estejam presentes. Contacte o fornecedor do seu dispositivo para saber se o número de série é um ID de dispositivo fiável.
 >Os números de série comunicados pelo dispositivo ao Intune poderão não corresponder ao ID apresentado nos menus Definições/Acerca do Android no dispositivo. Verifique o tipo de número de série comunicado pelo fabricante do dispositivo.
 >Tentar carregar um ficheiro com números de série que contenham pontos (.) irá fazer com que o carregamento falhe. Os números de série com pontos não são suportados.
 
 ### <a name="upload-a-csv-list-of-corporate-identifiers"></a>Carregar uma lista .csv de identificadores empresariais
 
-1. No [Intune, no portal do Azure](https://portal.azure.com), selecione **Inscrição de dispositivos** > **Identificadores de dispositivo da empresa** > **Adicionar** > **Carregar o ficheiro CSV**.
+1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), escolha **registro** > de dispositivo**identificadores** > de dispositivo corporativo**Adicionar** > **carregar arquivo CSV**.
 
    ![Área de trabalho de identificador do dispositivo empresarial com o botão Adicionar realçado](./media/add-corp-id.png)
 
@@ -88,11 +96,11 @@ Se visualizar este ficheiro .csv num editor de texto, este é apresentado como:
 
 ## <a name="manually-enter-corporate-identifiers"></a>Introduzir identificadores empresariais manualmente
 
-1. No [Intune, no portal do Azure](https://portal.azure.com), selecione **Inscrição de dispositivos** > **Identificadores de dispositivo da empresa** > **Adicionar** > **Introduzir manualmente**.
+1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), escolha **registro** > de dispositivo**identificadores** > de dispositivos corporativos**Adicionar** > **Enter manualmente**.
 
 2. No painel **Adicionar identificadores**, especifique o tipo de identificador: **IMEI** ou **Série**.
 
-3. Introduza o **Identificador** e os **Detalhes** para cada identificador que pretende adicionar. Quando terminar de introduzir identificadores, selecione **Adicionar**.
+3. Insira o **identificador** e os **detalhes** para cada identificador que você deseja adicionar. Quando terminar de introduzir identificadores, selecione **Adicionar**.
 
 5. Se introduziu identificadores empresariais que já se encontram no Intune, mas que têm detalhes diferentes, é apresentado o pop-up **Reveja os identificadores duplicados**. Selecione os identificadores que pretende substituir no Intune e selecione **OK** para adicionar os identificadores. Para cada identificador, apenas o primeiro duplicado será comparado.
 
@@ -102,7 +110,7 @@ Os dispositivos importados não são necessariamente inscritos. Os dispositivos 
 
 ## <a name="delete-corporate-identifiers"></a>Eliminar identificadores empresariais
 
-1. No [Intune, no portal do Azure](https://portal.azure.com), selecione **Inscrição de Dispositivos** > **Identificadores de dispositivo da empresa**.
+1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), escolha **registro** > de dispositivo**identificadores de dispositivo corporativo**.
 2. Selecione os identificadores de dispositivo que pretende eliminar e selecione **Eliminar**.
 3. Confirme a eliminação.
 
@@ -116,7 +124,7 @@ Para obter especificações detalhadas sobre os Identificadores Internacionais d
 As propriedades dos dispositivos apresentam a **Propriedade** para os registos de cada dispositivo no Intune. Enquanto administrador, pode especificar dispositivos como **Pessoal** ou **Empresarial**.
 
 **Para alterar a propriedade dos dispositivos:**
-1. No [Intune, no portal do Azure](https://portal.azure.com), aceda a **Dispositivos** e selecione o dispositivo.
+1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), vá para **dispositivos** e escolha o dispositivo.
 2. Selecione **Propriedades**.
 3. Especifique a **Propriedade do dispositivo** como **Pessoal** ou **Empresarial**.
 

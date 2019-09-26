@@ -1,13 +1,12 @@
 ---
-title: Registos de utilização StageNow em dispositivos das riscas das Android no Microsoft Intune – Azure | Documentos da Microsoft
-description: Ver problemas e resoluções comuns ao utilizar StageNow em dispositivos Android com o Microsoft Intune. Além disso, saiba como obter registos e ver exemplos de como ler os registos para o êxito ou erros.
+title: Usar logs do StageNow em dispositivos Android pretas no Microsoft Intune-Azure | Microsoft Docs
+description: Consulte problemas comuns e resoluções ao usar o StageNow em dispositivos Android com Microsoft Intune. Além disso, saiba como obter logs e veja exemplos de como ler os logs para obter êxito ou erros.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/26/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: ''
 ms.technology: ''
@@ -17,63 +16,63 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 36476820805c00cefafcd9f64dd2f08a014762c0
-ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
+ms.openlocfilehash: 6110476aace30daa27450326aea3f4abd4fb3ea0
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58490546"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "71303897"
 ---
-# <a name="troubleshoot-and-see-potential-issues-on-android-zebra-devices-in-microsoft-intune"></a>Resolver problemas e ver problemas potenciais em dispositivos das riscas das Android no Microsoft Intune
+# <a name="troubleshoot-and-see-potential-issues-on-android-zebra-devices-in-microsoft-intune"></a>Solucione problemas e veja possíveis problemas em dispositivos Android pretas no Microsoft Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-No Microsoft Intune, pode utilizar [extensões de mobilidade as riscas das (MX) para gerir as riscas das Android dispositivos](android-zebra-mx-overview.md). Ao utilizar dispositivos as riscas das, criar perfis no StageNow para gerir as definições e carregá-los para o Intune. O Intune utiliza a aplicação de StageNow para aplicar as definições nos dispositivos. A aplicação de StageNow também cria um ficheiro de registo detalhado no dispositivo que é utilizado para resolver.
+No Microsoft Intune, você pode usar o [MX (pretas Mobility Extensions) para gerenciar dispositivos Android pretas](android-zebra-mx-overview.md). Ao usar dispositivos pretas, você cria perfis no StageNow para gerenciar as configurações e carregá-las no Intune. O Intune usa o aplicativo StageNow para aplicar as configurações nos dispositivos. O aplicativo StageNow também cria um arquivo de log detalhado no dispositivo que é usado para solucionar problemas.
 
 Esta funcionalidade aplica-se a:
 
 - Android
 
-Por exemplo, criar um perfil no StageNow para configurar um dispositivo. Quando cria o perfil de StageNow, a última etapa gera um ficheiro para testar o perfil. Consumir este ficheiro com a aplicação de StageNow no dispositivo.
+Por exemplo, você cria um perfil no StageNow para configurar um dispositivo. Quando você cria o perfil StageNow, a última etapa gera um arquivo para testar o perfil. Você consome esse arquivo com o aplicativo StageNow no dispositivo.
 
-Noutro exemplo, criar um perfil no StageNow e testá-lo. No Intune, adicionar o perfil de StageNow e, em seguida, atribuí-la para os seus dispositivos as riscas das. Ao verificar o estado do perfil atribuído, o perfil mostra um Estado de alto nível.
+Em outro exemplo, você cria um perfil no StageNow e o testa. No Intune, você adiciona o perfil StageNow e, em seguida, atribui-o aos seus dispositivos pretas. Ao verificar o status do perfil atribuído, o perfil mostra um status de alto nível.
 
-Em ambos os casos, pode obter mais detalhes do ficheiro de registo StageNow, que é guardado no dispositivo sempre que um perfil de StageNow aplica-se.
+Em ambos os casos, você pode obter mais detalhes do arquivo de log StageNow, que é salvo no dispositivo sempre que um perfil StageNow se aplica.
 
-Alguns problemas não estão relacionados com o conteúdo do perfil StageNow e não são apresentados nos registos.
+Alguns problemas não estão relacionados ao conteúdo do perfil StageNow e não são refletidos nos logs.
 
-Este artigo mostra-lhe como ler os logs de StageNow e apresenta uma lista de alguns outros problemas potenciais com dispositivos das riscas das que não podem ser apresentados nos registos.
+Este artigo mostra como ler os logs do StageNow e lista alguns outros problemas em potencial com dispositivos pretas que podem não ser refletidos nos logs.
 
-[Utilizar e gerir as riscas das dispositivos com as riscas das extensões de mobilidade](android-zebra-mx-overview.md) tem mais informações sobre esta funcionalidade.
+[Usar e gerenciar dispositivos pretas com o pretas Mobility Extensions](android-zebra-mx-overview.md) tem mais informações sobre esse recurso.
 
-## <a name="get-the-logs"></a>Obter os registos
+## <a name="get-the-logs"></a>Obter os logs
 
-### <a name="use-the-stagenow-app-on-the-device"></a>Utilizar a aplicação de StageNow no dispositivo
-Quando testar um perfil diretamente usando StageNow no seu computador, em vez de usar [Intune para implementar o perfil](android-zebra-mx-overview.md#step-4-create-a-device-management-profile-in-stagenow), a aplicação de StageNow no dispositivo guarda os registos do teste. Para obter o ficheiro de registo, utilize o **(...) mais**  opção na aplicação StageNow no dispositivo.
+### <a name="use-the-stagenow-app-on-the-device"></a>Usar o aplicativo StageNow no dispositivo
+Quando você testa um perfil diretamente usando o StageNow em seu computador no, em vez de usar [o Intune para implantar o perfil](android-zebra-mx-overview.md#step-4-create-a-device-management-profile-in-stagenow), o aplicativo StageNow no dispositivo salva os logs do teste. Para obter o arquivo de log, use a opção **mais (...)** no aplicativo StageNow no dispositivo.
 
-### <a name="get-logs-using-android-debug-bridge"></a>Obter registos com Bridge de depuração do Android
-Para obter os registos, depois do perfil já tenha sido implementado com o Intune, ligue o dispositivo a um computador com [Bridge de depuração do Android (adb)](https://developer.android.com/studio/command-line/adb) (abre o site da web do Android).
+### <a name="get-logs-using-android-debug-bridge"></a>Obter logs usando Android Debug Bridge
+Para obter logs depois que o perfil já estiver implantado com o Intune, conecte o dispositivo a um computador com o [Android Debug Bridge (ADB)](https://developer.android.com/studio/command-line/adb) (abre o site do Android).
 
-No dispositivo, os registos são guardados em `/sdcard/Android/data/com.microsoft.windowsintune.companyportal/files`
+No dispositivo, os logs são salvos em`/sdcard/Android/data/com.microsoft.windowsintune.companyportal/files`
 
-### <a name="get-logs-from-email"></a>Obter registos do e-mail
-Para obter os registos, depois do perfil já tenha sido implementado com o Intune, os utilizadores finais pode enviar um e-mail, os registos através de uma aplicação de e-mail no dispositivo. No dispositivo as riscas das, abra a aplicação do Portal da empresa, e [enviar os registos](https://docs.microsoft.com/intune-user-help/send-logs-to-your-it-admin-by-email-android). Utilizar a funcionalidade de registos de envio também cria um PowerLift incidentes ID, que pode referenciar se contactar o suporte da Microsoft.
+### <a name="get-logs-from-email"></a>Obter logs de email
+Para obter logs depois que o perfil já estiver implantado com o Intune, os usuários finais poderão enviar por email os logs usando um aplicativo de email no dispositivo. No dispositivo pretas, abra o aplicativo Portal da Empresa e [envie os logs](https://docs.microsoft.com/intune-user-help/send-logs-to-your-it-admin-by-email-android). Usar o recurso de logs de envio também cria uma ID de incidente PowerLift, que você pode referenciar se entrar em contato com o suporte da Microsoft.
 
-## <a name="read-the-logs"></a>Leia os registos
+## <a name="read-the-logs"></a>Ler os logs
 
-Ao examinar os registos, existe um erro sempre que visualizar a `<characteristic-error>` marca. Detalhes do erro são escritos para o `<parm-error>` tag > `desc` propriedade.
+Ao examinar os logs, há um erro sempre que você vê a `<characteristic-error>` marca. Os detalhes do erro são gravados na `desc` Propriedade > de `<parm-error>` marca.
 
-## <a name="error-types"></a>Tipos de erros
+## <a name="error-types"></a>Tipos de erro
 
-Os dispositivos das riscas das incluem diferentes níveis de comunicação de erros:
+Os dispositivos pretas incluem níveis diferentes de relatório de erros:
 
-- O CSP não é suportado no dispositivo. Por exemplo, o dispositivo não é um dispositivo móvel e não tem um Gerenciador de celular.
-- A versão MX ou OSX é sem correspondência. Cada CSP tem a mesma versão. Para uma matriz de suporte completo, consulte [documentação das riscas das](http://techdocs.zebra.com/mx/) (abre o site da web das riscas das).
-- O dispositivo comunica outro problema ou erro.
+- O CSP não tem suporte no dispositivo. Por exemplo, o dispositivo não é um dispositivo de celular e não tem um Gerenciador de celular.
+- A versão MX ou OSX não corresponde. Cada CSP tem controle de versão. Para obter uma matriz de suporte completo, consulte a [documentação do pretas](http://techdocs.zebra.com/mx/) (abre o site da pretas).
+- O dispositivo relata outro problema ou erro.
 
 ## <a name="examples"></a>Exemplos
 
-Por exemplo, tem o seguinte perfil de entrada:
+Por exemplo, você tem o seguinte perfil de entrada:
 
 ```xml
 <wap-provisioningdoc>
@@ -86,7 +85,7 @@ Por exemplo, tem o seguinte perfil de entrada:
 </wap-provisioningdoc>
 ```
 
-O registo, o XML é idêntico de entrada. Este resultado correspondente significa que o perfil aplicado com êxito para o dispositivo sem erros:
+No log, o XML é idêntico à entrada. Essa saída correspondente significa que o perfil foi aplicado com êxito ao dispositivo sem erros:
 
 ```xml
 <wap-provisioningdoc>
@@ -99,7 +98,7 @@ O registo, o XML é idêntico de entrada. Este resultado correspondente signific
 </wap-provisioningdoc>
 ```
 
-Noutro exemplo, tem a seguinte entrada:
+Em outro exemplo, você tem a seguinte entrada:
 
 ```xml
 <wap-provisioningdoc>
@@ -113,7 +112,7 @@ Noutro exemplo, tem a seguinte entrada:
 </wap-provisioningdoc>
 ```
 
-O registo mostra um erro, porque contém um `<characteristic-error>` marca. Neste cenário, o perfil tentou instalar um pacote de Android (ficheiro. APK) que não existe no caminho especificado:
+O log mostra um erro, pois ele contém uma `<characteristic-error>` marca. Nesse cenário, o perfil tentou instalar um pacote Android (APK) que não existe no caminho fornecido:
 
 ```xml
 <wap-provisioningdoc>
@@ -127,28 +126,28 @@ O registo mostra um erro, porque contém um `<characteristic-error>` marca. Nest
 </wap-provisioningdoc>
 ```
 
-## <a name="other-potential-issues-with-zebra-devices"></a>Outros problemas potenciais com os dispositivos as riscas das
+## <a name="other-potential-issues-with-zebra-devices"></a>Outros problemas potenciais com dispositivos pretas
 
-Esta seção apresenta uma lista de outros possíveis problemas que poderá ver quando utilizar dispositivos as riscas com o administrador de dispositivos. Esses problemas não são reportados nos registos StageNow.
+Esta seção lista outros possíveis problemas que você pode ver ao usar dispositivos pretas com o administrador do dispositivo. Esses problemas não são relatados nos logs do StageNow.
 
-### <a name="android-system-webview-is-out-of-date"></a>Android System WebView está desatualizada
+### <a name="android-system-webview-is-out-of-date"></a>Android System WebView está desatualizado
 
-Dispositivos mais antigos que iniciar sessão com a aplicação Portal da empresa, utilizadores poderão ver uma mensagem que o componente System WebView está desatualizado e precisa atualizado. Se o dispositivo tiver o Google Play instalado, ligá-la à internet e procurar atualizações. Se o dispositivo não tiver instalado o Google Play, obter a versão atualizada do componente e aplicá-la para os dispositivos. Ou, atualize para o dispositivo mais recente sistema operacional emitido pelas riscas das.
+Quando dispositivos mais antigos entram usando o aplicativo Portal da Empresa, os usuários podem ver uma mensagem informando que o componente WebView do sistema está desatualizado e precisa ser atualizado. Se o dispositivo tiver Google Play instalado, conecte-o à Internet e verifique se há atualizações. Se o dispositivo não tiver Google Play instalado, obtenha a versão atualizada do componente e aplique-o aos dispositivos. Ou atualize para o sistema operacional mais recente do dispositivo emitido pelo pretas.
 
-### <a name="management-actions-take-a-long-time"></a>Ações de gestão demoram muito tempo
+### <a name="management-actions-take-a-long-time"></a>As ações de gerenciamento levam muito tempo
 
-Se os serviços do Google Play não estão disponíveis, algumas tarefas demorar até 8 horas a concluir. [Aplicação do Portal de limitações da empresa do Intune para Android](https://support.microsoft.com/help/3211588/limitations-of-intune-company-portal-app-for-android-in-china) (abre-se outro web site da Microsoft) pode ser um bom recurso.
+Se os serviços do Google Play não estiverem disponíveis, algumas tarefas levarão até 8 horas para serem concluídas. [Limitações do aplicativo portal da empresa do Intune para Android](https://support.microsoft.com/help/3211588/limitations-of-intune-company-portal-app-for-android-in-china) (abre outro site da Microsoft) pode ser um bom recurso.
 
-### <a name="device-spoofing-suspected-shows-in-intune"></a>"Dispositivo spoofing suspeito" mostra no Intune
+### <a name="device-spoofing-suspected-shows-in-intune"></a>"Suspeita de dispositivo suspeito" mostra no Intune
 
-Este erro significa que o Intune suspeita de que um não - as riscas das dispositivo Android está a comunicar seu modelo e fabricante como um dispositivo das riscas das.
+Esse erro significa que o Intune suspeita que um dispositivo Android não pretas está relatando seu modelo e fabricante como um dispositivo pretas.
 
-### <a name="company-portal-app-is-older-than-minimum-required-version"></a>Aplicação Portal da empresa é anterior à versão mínima necessária
+### <a name="company-portal-app-is-older-than-minimum-required-version"></a>Portal da Empresa aplicativo é mais antigo que a versão mínima necessária
 
-Atualizar a versão mínima necessária da aplicação Portal da empresa o Intune. Se o Google Play não estiver instalado no dispositivo, a aplicação Portal da empresa não é atualizada automaticamente. Se o mínimo necessário de versão é mais recente do que a versão instalada, a aplicação Portal da empresa deixa de funcionar. Atualização para a mais recente através de aplicação de Portal da empresa [sideload em dispositivos as riscas das](android-zebra-mx-overview.md#sideload-the-company-portal-app).
+O Intune pode atualizar a versão mínima necessária do aplicativo Portal da Empresa. Se Google Play não estiver instalado no dispositivo, o aplicativo Portal da Empresa não será atualizado automaticamente. Se a versão mínima necessária for mais nova do que a versão instalada, o aplicativo Portal da Empresa parará de funcionar. Atualize para o aplicativo Portal da Empresa mais recente usando [Sideload em dispositivos pretas](android-zebra-mx-overview.md#sideload-the-company-portal-app).
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Passos seguintes
 
-[Quadros de discussão as riscas das](https://developer.zebra.com/community/home/discussions) (abre o site da web das riscas das)
+[Quadros de discussão do pretas](https://developer.zebra.com/community/home/discussions) (abre o site da pretas)
 
-[Utilizar e gerir as riscas das dispositivos com as riscas das extensões de mobilidade no Intune](android-zebra-mx-overview.md)
+[Usar e gerenciar dispositivos pretas com as extensões de mobilidade do pretas no Intune](android-zebra-mx-overview.md)

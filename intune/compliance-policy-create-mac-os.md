@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 04/04/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b3224e7400ad56f971488aba53bb073a0d33bb9d
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
-ms.translationtype: HT
+ms.openlocfilehash: f0e3164c84c9a4088068fcf920903c6bb76cd30a
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59896665"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "71305065"
 ---
 # <a name="macos-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Definições do macOS para marcar dispositivos como conformes ou não conformes com o Intune
 
@@ -63,7 +62,7 @@ Enquanto administrador do Intune, utilize estas definições de conformidade par
     Definir um número mais relevado exige que o utilizador crie uma palavra-passe mais complexa.
 
 - **Minutos de inatividade antes de a palavra-passe ser exigida**: introduza o tempo de inatividade antes de o utilizador ter de reintroduzir a palavra-passe.
-- **Expiração da palavra-passe (dias)**: selecione o número de dias antes de a palavra-passe expirar e ser necessário criar uma nova.
+- **Expiração da palavra-passe (dias)** : selecione o número de dias antes de a palavra-passe expirar e ser necessário criar uma nova.
 - **Número de palavras-passe anteriores para impedir a reutilização**: introduza o número de palavras-passe utilizadas anteriormente que não podem ser utilizadas.
 
     > [!IMPORTANT]
@@ -94,7 +93,7 @@ Para obter mais informações, veja [Controlador de chamadas no macOS](https://s
 
 Selecione **OK** > **Criar** para guardar as alterações.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
 - [Adicionar ações para dispositivos não conformes](actions-for-noncompliance.md) e [utilizar etiquetas de âmbito para filtrar políticas](scope-tags.md).
 - [Monitorizar as políticas de conformidade](compliance-policy-monitor.md).

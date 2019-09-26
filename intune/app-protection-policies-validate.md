@@ -6,8 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/08/2019
-ms.prod: ''
+ms.date: 08/15/2019
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.topic: conceptual
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 760ff85bc31cf66e66a3bf98f7da22d5ce48eee0
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
-ms.translationtype: HT
+ms.openlocfilehash: 3d191bdd4484a302caf4606a9124e26811ce8c2b
+ms.sourcegitcommit: 6b5907046f920279bbda3ee6c93e98594624c05c
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59896331"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "71303630"
 ---
 # <a name="how-to-validate-your-app-protection-policy-setup-in-microsoft-intune"></a>Como validar a configuração das políticas de proteção de aplicações no Microsoft Intune
 
@@ -43,8 +42,7 @@ Se os testes mostrarem que o comportamento da política de proteção de aplica�
 - O estado de cada uma das aplicações de proteção dos utilizadores é o previsto? Os estados possíveis para as aplicações são **Verificado** e **Não verificado**.
 
 ### <a name="user-app-protection-status"></a>Estado da proteção de aplicações do utilizador
-1. Inicie sessão no [portal do Azure](https://portal.azure.com).
-2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
+1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. Selecione **Aplicações cliente** >  **Estado de proteção de aplicações** e, em seguida, selecione o mosaico **Utilizadores atribuídos**. 
 4. Na página **Relatório da aplicação**, selecione **Selecionar utilizador** para abrir uma lista de utilizadores e grupos. 
 5. Procure e selecione um utilizador na lista e, em seguida, escolha **Selecionar utilizador**. No parte superior do painel **Relatório da aplicação**, pode ver se o utilizador tem uma licença a proteção de aplicações. Também pode ver se o utilizador tem uma licença do Office 365 e o estado da aplicação de todos os dispositivos do utilizador.

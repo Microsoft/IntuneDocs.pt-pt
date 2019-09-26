@@ -6,79 +6,47 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 12/31/2018
+ms.date: 7/23/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f276d98c-b077-452a-8835-41919d674db5
-ms.reviewer: chrisbal
+ms.reviewer: chmaguir
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b76b461d445bfbec5fe2e8d355cd2a4f228735df
-ms.sourcegitcommit: 47eb67df69f237121f5197b2ac904a177aab5400
+ms.openlocfilehash: 7dcde377dbf3e97e94957ab5c984aa6dfede9136
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59671850"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71303930"
 ---
 # <a name="enroll-android-devices"></a>Inscrever dispositivos Android
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Como administrador do Intune, pode gerir os seguintes dispositivos Android:
-- Dispositivos Android, incluindo dispositivos Samsung Knox Standard e [dispositivos as riscas das](android-zebra-mx-overview.md).
-- Android dispositivos de empresa, incluindo:
-    - **Dispositivos de perfil de trabalho do Android Enterprise**: Dispositivos pessoais concedida permissão para aceder a dados empresariais. Os administradores podem gerir contas de trabalho, aplicações e dados. Dados pessoais no dispositivo são mantidos separados dos dados de trabalho e os administradores não controlam configurações pessoais ou dados. 
-    - **Dispositivos dedicados do Android Enterprise**: Dispositivos de utilização única, empresa, como digital signage, impressão de permissão ou gestão de inventário. Os administradores bloqueiam a utilização de um conjunto limitado de aplicações e ligações Web num dispositivo. Além disso, também impede os utilizadores de adicionarem outras aplicações ou de efetuarem outras ações no dispositivo.
-    - **Android Enterprise dispositivos totalmente geridos**: Utilizador único pertencentes à empresa, os dispositivos utilizados exclusivamente para o trabalho e pessoais não utilizar. Os administradores podem gerir todo o dispositivo e impor controlos de política indisponíveis para perfis de trabalho. 
+Como administrador do Intune, você pode registrar dispositivos Android das seguintes maneiras:
+- Android Enterprise (oferecendo um conjunto de opções de registro que fornecem aos usuários os recursos mais atualizados e seguros):
+    - [**Perfil de trabalho do Android Enterprise**](android-work-profile-enroll.md): Para dispositivos pessoais concedeu permissão para acessar dados corporativos. Os administradores podem gerenciar contas de trabalho, aplicativos e dados. Os dados pessoais no dispositivo são mantidos separados dos dados de trabalho e os administradores não controlam as configurações ou os dados pessoais. 
+    - [**Android Enterprise dedicado**](android-kiosk-enroll.md): Para dispositivos corporativos, de uso único, como pôsteres digitais, impressão de tíquete ou gerenciamento de estoque. Os administradores bloqueiam a utilização de um conjunto limitado de aplicações e ligações Web num dispositivo. Além disso, também impede os utilizadores de adicionarem outras aplicações ou de efetuarem outras ações no dispositivo.
+    - [**Android Enterprise totalmente gerenciado**](android-fully-managed-enroll.md): Para dispositivos de usuário único e de propriedade corporativa usados exclusivamente para trabalho e não para uso pessoal. Os administradores podem gerenciar todo o dispositivo e impor controles de política indisponíveis para perfis de trabalho. 
+- [**Administrador de dispositivo Android**](android-enroll-device-administrator.md), incluindo dispositivos Samsung Knox Standard e [dispositivos pretas](android-zebra-mx-overview.md). 
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
 Para se preparar para gerir dispositivos móveis, tem de definir a autoridade de gestão de dispositivos móveis (MDM) para o **Microsoft Intune**. Veja [Set the MDM authority (Definir a autoridade de MDM)](mdm-authority-set.md) para obter instruções. Este item só é definido uma vez, quando está a configurar pela primeira vez o Intune para a gestão de dispositivos móveis.
 
-Para dispositivos fabricados pelas riscas das tecnologias, terá de conceder as permissões adicionais de Portal da empresa consoante as capacidades do dispositivo específico. [Extensões de mobilidade em dispositivos as riscas das](android-zebra-mx-overview.md) inclui mais detalhes.
+Para dispositivos fabricados pelo pretas Technologies, talvez seja necessário conceder a Portal da Empresa permissões adicionais dependendo dos recursos do dispositivo específico. [As extensões de mobilidade em dispositivos pretas](android-zebra-mx-overview.md) têm mais detalhes.
 
-## <a name="set-up-android-enrollment"></a>Configurar inscrição do Android
+Para dispositivos Samsung Knox Standard, há [mais pré-requisitos](android-samsung-knox-mobile-enroll.md).
 
-Por predefinição, o Intune permite a inscrição de dispositivos Android, Samsung Knox Standard e as riscas das. Depois de satisfazer os pré-requisitos, os administradores simplesmente precisam [informar os utilizadores como devem inscrever os dispositivos](/intune-user-help/enroll-your-device-in-intune-android).
+## <a name="next-steps"></a>Passos seguintes
 
-Depois de um utilizador concluir a inscrição, pode começar a gerir os respetivos dispositivos no Intune, incluindo [atribuir políticas de conformidade](compliance-policy-create-android.md), [gerir aplicações](app-management.md) e mais.
+- [Configurar registros de perfil de trabalho do Android Enterprise](android-work-profile-enroll.md)
+- [Configurar registros de dispositivo dedicado ao Android Enterprise](android-kiosk-enroll.md)
+- [Configurar registros totalmente gerenciados do Android Enterprise](android-fully-managed-enroll.md)
+- [Configurar o registro de administrador do dispositivo Android](android-enroll-device-administrator.md)
 
-Para obter informações sobre outras tarefas do utilizador, veja estes artigos:
-
-- [Recursos sobre a experiência do utilizador final com o Microsoft Intune](end-user-educate.md)
-- [Utilizar o dispositivo Android com o Intune](https://docs.microsoft.com/intune-user-help/using-your-android-device-with-intune)
-
-Para impedir a inscrição de dispositivos Android ou apenas de dispositivos Android pessoais, veja [Set device type restrictions (Definir restrições de tipos de dispositivos)](enrollment-restrictions-set.md).
-
-## <a name="set-up-android-enterprise-enrollment"></a>Configurar a inscrição do Android Enterprise
-
-Android Enterprise oferece um conjunto de opções de inscrição que fornecer aos utilizadores com os recursos mais atualizados e seguros. Opções de inscrição do Android Enterprise incluem o perfil de trabalho, dispositivos totalmente geridos e dedicados.
-
-- [Configurar inscrições de perfil de trabalho do Android Enterprise](android-work-profile-enroll.md)
-- [Configurar inscrições de dispositivos Android Enterprise dedicado](android-kiosk-enroll.md)
-- [Configurar inscrições do Android Enterprise totalmente gerido](android-fully-managed-enroll.md)
-
-## <a name="end-user-experience-when-enrolling-a-samsung-knox-device"></a>Experiência de utilizador final ao inscrever um dispositivo Samsung Knox
-
-Dispositivos Samsung Knox Standard são suportados para gestão de vários utilizadores pelo Intune. Isto significa que os utilizadores podem iniciar e terminar sessão num dispositivo com as respetivas credenciais do Azure AD. O dispositivo é gerido centralmente independentemente de estar a ser utilizado. Quando os utilizadores iniciam sessão, têm acesso às aplicações e, além disso, obtêm as políticas aplicadas às mesmas. Quando os utilizadores iniciam sessão todos os dados de aplicação está desmarcada.
-
-Existem várias considerações a ter em conta ao inscrever dispositivos Samsung Knox:
--   Mesmo que nenhuma política exija um PIN, o dispositivo tem de ter um PIN de pelo menos quatro dígitos para concluir a inscrição. Se o dispositivo não tiver um PIN, será pedido ao utilizador para criar um.
--   Não é necessária nenhuma interação do utilizador para os Certificados de Associação à Área de Trabalho (WPJ).
--   É pedido ao utilizador que indique as informações de Inscrição do Serviço e o que a aplicação pode fazer.
--   É pedido ao utilizador que indique as informações de Inscrição do Knox e o que o Knox pode fazer.
--   Se uma Política de Encriptação for imposta, os utilizadores terão de definir uma palavra-passe Complexa de Seis Carateres para o código de acesso do dispositivo.
--   Não existem pedidos de utilizador adicionais para instalar certificados enviados por um serviço de Acesso aos Recursos da Empresa.
-- Alguns dispositivos Knox mais antigos irão pedir ao utilizador para fornecer certificados adicionais utilizados para o Acesso aos Recursos da Empresa.
-- Se um dispositivo Samsung Mini não conseguir instalar a WPJ e apresentar o erro **Certificado Não Encontrado** ou **Não é Possível Registar o Dispositivo**, instale as Atualizações de Firmware do Samsung mais recentes.
-
-## <a name="next-steps"></a>Passos Seguintes
-
-- [Configurar inscrições de perfil de trabalho do Android Enterprise](android-work-profile-enroll.md)
-- [Configurar inscrições de dispositivos Android Enterprise dedicado](android-kiosk-enroll.md)
-- [Configurar inscrições do Android Enterprise totalmente gerido](android-fully-managed-enroll.md)

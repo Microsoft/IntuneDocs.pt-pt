@@ -8,7 +8,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 08/27/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 23af88f4d595669589b8f7104cbac0c5b695602f
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
+ms.openlocfilehash: 15c2cbd80f30db73b5459d1c838ebc2fa0aab887
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59898841"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71303584"
 ---
 # <a name="logout-the-current-user-on-intune-managed-ios-devices"></a>Terminar a sessão do utilizador atual em dispositivos iOS geridos pelo Intune
 
@@ -41,12 +40,12 @@ A ação **Terminar sessão do utilizador atual** termina a sessão do utilizado
 
 ## <a name="how-to-log-out-the-current-user"></a>Como terminar a sessão do utilizador atual
 
-1.  Inicie sessão no portal do Azure.
-2.  Escolha **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
-3.  No painel **Intune**, escolha **Dispositivos**.
-4.  No painel **Dispositivos e grupos**, selecione **Todos os dispositivos**.
-5.  Na lista de dispositivos que gere, selecione um dispositivo iOS e, em seguida, selecione a ação remota de dispositivos **Terminar sessão do utilizador atual**.
+1. Inicie sessão no portal do Azure.
+2. Escolha **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
+3. No painel **Intune**, escolha **Dispositivos**.
+4. No painel **Dispositivos e grupos**, selecione **Todos os dispositivos**.
+5. Na lista de dispositivos que gere, selecione um dispositivo iOS e, em seguida, selecione a ação remota de dispositivos **Terminar sessão do utilizador atual**.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
 Para ver o estado da ação que acabou de realizar, no painel **Dispositivos e grupos**, escolha **Ações de Dispositivos**.

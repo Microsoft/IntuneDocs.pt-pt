@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 04afc9c44bc1c4898950e6f3aff5dac7cb93370f
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 3aadafbcf9c9208e7c87504c5459731de1e402b5
+ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "56323432"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "71302612"
 ---
 ## <a name="enable-windows-10-automatic-enrollment"></a>Ativar a inscrição automática de dispositivos Windows 10
 
@@ -21,7 +21,7 @@ A inscrição automática permite que os utilizadores inscrevam os respetivos di
 
    ![Captura de ecrã do portal do Azure](../media/auto-enroll-azure-main.png)
 
-2. Selecione **Mobilidade (MDM e MAM)**.
+2. Selecione **Mobilidade (MDM e MAM)** .
 
    ![Captura de ecrã do portal do Azure](../media/auto-enroll-mdm.png)
 
@@ -36,12 +36,12 @@ A inscrição automática permite que os utilizadores inscrevam os respetivos di
    - **Todos** – Todos os utilizadores podem inscrever automaticamente os dispositivos Windows 10
 
       > [!IMPORTANT]
-      > Para dispositivos BYOD, o âmbito de utilizador MAM tem prioridade se o âmbito de utilizador MAM e o âmbito do utilizador MDM (inscrição na MDM automática) estiverem ativadas para todos os utilizadores (ou os mesmos grupos de utilizadores). O dispositivo irá utilizar as políticas de Windows Information Protection (WIP) (se configurada-los) em vez de ser inscritos na MDM.
+      > Para dispositivos BYOD, o escopo de usuário MAM terá precedência se o escopo do usuário de MAM e o escopo do usuário do MDM (registro automático do MDM) estiverem habilitados para todos os usuários (ou os mesmos grupos de usuários). O dispositivo usará as políticas de WIP (proteção de informações do Windows) (se você as configurou) em vez de ser registrado em MDM.
       >
-      > Para dispositivos da empresa, o âmbito do utilizador MDM terá prioridade se ambos os âmbitos são ativados. Os dispositivos obtém inscritos na MDM.
+      > Para dispositivos corporativos, o escopo de usuário do MDM terá precedência se ambos os escopos estiverem habilitados. Os dispositivos obtêm MDM registrado.
 
    > [!NOTE]
-   > Âmbito de utilizador MAM tem de ser definido para um grupo de utilizadores ou uma coleção.
+   > O escopo de usuário do MDM deve ser definido como um grupo do Azure AD que contém objetos de usuário.
 
    ![Captura de ecrã do portal do Azure](../media/auto-enroll-scope.png)
 

@@ -8,21 +8,21 @@ ms.author: erikje
 manager: dougeby
 ms.date: 01/31/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ab396092-907a-44b7-a157-aabee62176a9
+ms.reviewer: coferro
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3b0aceac9cef968222ee4f183eed87e2ac0b5849
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 980b87ae5bc2f4e78f1de07d4680c375244c14e1
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57392023"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71304919"
 ---
 # <a name="erase-all-data-from-a-macos-device"></a>Apagar todos os dados de um dispositivo macOS
 

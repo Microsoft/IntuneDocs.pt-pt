@@ -7,7 +7,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 04/25/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 66a3ba7d57d71aeb446bf86449f39c4a557eed62
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 2e327d545e64a3edca12c57e399c405a72630b9c
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57392294"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71304734"
 ---
 # <a name="enable-lost-mode-on-ios-devices-with-intune"></a>Ativar o Modo Perdido em dispositivos iOS com o Intune
 
@@ -41,8 +40,7 @@ Esta funcionalidade não é suportada para os seguintes sistemas:
 
 ## <a name="enable-lost-mode"></a>Ativar o modo perdido
 
-1. Inicie sessão no [portal do Azure](https://portal.azure.com).
-2. Selecione **Todos os serviços**, filtre por **Intune** e selecione **Microsoft Intune**.
+1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. Selecione **Dispositivos** e, em seguida, selecione **Todos os dispositivos**.
 4. Na lista de dispositivos que gere, selecione um dispositivo iOS e selecione **…Mais**. Em seguida, selecione a ação remota **Modo perdido**.
 5. No **Modo perdido**, ative esta funcionalidade. Em seguida, introduza a mensagem a apresentar e um número de telefone de contacto.
@@ -57,6 +55,6 @@ Ao ativar o modo perdido, bloqueia qualquer utilização do dispositivo. O utili
 - Os dados de localização são encriptados quando são armazenados e, igualmente, quando estão a ser transmitidos.
 - Na mensagem que introduzir para apresentar no ecrã de bloqueio, não se esqueça de incluir detalhes específicos para devolver o dispositivo perdido.
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Passos seguintes
 
 Para ver o estado de ativação da funcionalidade Modo perdido, aceda a **Dispositivos** e selecione **Ações do dispositivo**.

@@ -6,9 +6,8 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/26/2019
+ms.date: 07/24/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0c73e4c8aa5f71fb80110d4a223b9872c8dbaff3
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
+ms.openlocfilehash: 7d51d504f63e9a9c942bbcbc689c67bc63d74a2c
+ms.sourcegitcommit: d2ac912b834c4840de9cc92ba1815b6ecfbfb52b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59899861"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "71304930"
 ---
 # <a name="move-your-intune-data-warehouse-account-data"></a>Mover os dados da conta do Armazém de Dados do Intune 
 
@@ -80,7 +79,7 @@ Após mover a conta do Armazém de Dados, verá no Intune que o Armazém de Dado
 
 O cliente X pede que uma conta seja movida a 01/06/2018. Em resposta ao pedido, o cliente receberá uma ligação para ver documentação com detalhes sobre os passos a realizar se quiser fazer uma cópia de segurança do Armazém de Dados anterior. A 01/06/2018, o Armazém de Dados e os gráficos que suporta serão repostos e começarão a armazenar dados no novo datacenter. 
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
- - Saiba mais sobre [as novidades todas as semanas no Intune](whats-new.md). Também pode descobrir quais são as alterações futuras, os avisos importantes sobre o serviço e as informações sobre versões anteriores.
- - Leia o [Blogue do Microsoft Intune](https://go.microsoft.com/fwlink/?LinkID=273882).
+- Saiba mais sobre [as novidades todas as semanas no Intune](whats-new.md). Também pode descobrir quais são as alterações futuras, os avisos importantes sobre o serviço e as informações sobre versões anteriores.
+- Leia o [Blogue do Microsoft Intune](https://go.microsoft.com/fwlink/?LinkID=273882).

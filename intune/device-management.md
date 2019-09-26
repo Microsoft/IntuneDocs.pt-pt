@@ -5,9 +5,8 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 04/02/2018
+ms.date: 09/19/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dbed5ee5ca31a85f1ab227916619b0750a1b84e5
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: a68a6ef0224cde88d0414b5225610448b01218f1
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57393984"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71304783"
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>O que é a gestão de dispositivos do Microsoft Intune?
 
@@ -33,8 +32,7 @@ A carga de trabalho **Dispositivos** dá-lhe informações aprofundadas sobre os
 
 ## <a name="get-to-your-devices"></a>Aceder aos seus dispositivos
 
-1. Inicie sessão no [portal do Azure](https://portal.azure.com).
-2. Selecione **Todos os serviços**, filtre por **Intune** e selecione **Microsoft Intune**.
+1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. Selecione **Dispositivos**. Esta vista mostra informações detalhadas sobre os dispositivos dos utilizadores e o que pode fazer com as mesmas, incluindo:
 
    - **Descrição geral:** mostra um instantâneo visual dos dispositivos inscritos e também mostra quantos dispositivos estão a utilizar as diferentes plataformas, incluindo Android, iOS e mais.
@@ -42,7 +40,7 @@ A carga de trabalho **Dispositivos** dá-lhe informações aprofundadas sobre os
 
      Utilize a funcionalidade **Exportar** para criar uma lista .csv de todos os dispositivos, em incrementos de 10 000 (Internet Explorer) ou 30 000 (Microsoft Edge, Chrome).
 
-     Selecione um dispositivo para [ver os detalhes adicionais sobre esse dispositivo](device-inventory.md), incluindo detalhes de hardware, as aplicações instaladas, o estado de política de conformidade e mais.
+     Selecione qualquer dispositivo para [Exibir detalhes adicionais sobre esse dispositivo](device-inventory.md), incluindo detalhes de hardware, aplicativos instalados, seu status de política de conformidade e muito mais.
 
    - **Dispositivos do Azure AD:** mostra uma lista dos dispositivos registados ou associados ao Azure Active Directory (Azure AD). Saiba mais sobre a [gestão de dispositivos do Azure AD](https://docs.microsoft.com/azure/active-directory/device-management-introduction).
    - **Ações do dispositivo:** inclui um histórico das ações remotas realizadas nos diferentes dispositivos, incluindo a ação, o respetivo estado, quem a iniciou e quando.
@@ -50,7 +48,7 @@ A carga de trabalho **Dispositivos** dá-lhe informações aprofundadas sobre os
      ![Captura de ecrã das ações de monitorização do dispositivo](./media/monitor-device-actions.png)
 
    - **Registos de auditoria:** é um registo das atividades que geram uma alteração no Microsoft Intune. O tópico [Registos de auditoria](monitor-audit-logs.md) fornece mais detalhes.
-   - **Conector do TeamViewer:** é um serviço que permite que os utilizadores de dispositivos Android geridos pelo Intune obtenham assistência remota por parte do administrador de TI. Saiba mais sobre o [TeamViewer](device-profile-android-teamviewer.md).
+   - **Conector do TeamViewer:** é um serviço que permite que os utilizadores de dispositivos Android geridos pelo Intune obtenham assistência remota por parte do administrador de TI. Saiba mais sobre o [TeamViewer](teamviewer-support.md).
    - **Ajuda e Suporte:** fornece um atalho para sugestões de resolução de problemas, pedir suporte ou verificar o estado do Intune.
 
 ## <a name="available-device-actions"></a>Ações do dispositivo disponíveis
@@ -58,20 +56,21 @@ As ações disponíveis dependem da plataforma do dispositivo e da configuraçã
 
 - [Ver o inventário de dispositivos](device-inventory.md)
 - Realize as ações remotas de dispositivos:
-    - [Extinguir](devices-wipe.md#retire)
-    - [Eliminação](devices-wipe.md#wipe)
-    - [Bloqueio remoto](device-remote-lock.md)
-    - [Repor código de acesso](device-passcode-reset.md)
-    - [Ignorar Bloqueio de Ativação](device-activation-lock-bypass.md) (apenas em iOS)
-    - [Começar do Zero](device-fresh-start.md) (apenas no Windows)
-    - [Modo perdido](device-lost-mode.md) (apenas em iOS)
-    - [Localizar dispositivo](device-locate.md) (apenas em iOS)
-    - [Reiniciar](device-restart.md) (apenas no Windows)
-    - [Reposição do PIN do Windows 10](device-windows-pin-reset.md)
-    - [Controlo remoto do Android](device-profile-android-teamviewer.md)
-    - [Sincronizar o dispositivo](device-sync.md)
+  - [Extinguir](devices-wipe.md#retire)
+  - [Eliminação](devices-wipe.md#wipe)
+  - [Bloqueio remoto](device-remote-lock.md)
+  - [Repor código de acesso](device-passcode-reset.md)
+  - [Ignorar Bloqueio de Ativação](device-activation-lock-bypass.md) (apenas em iOS)
+  - [Começar do Zero](device-fresh-start.md) (apenas no Windows)
+  - [Modo perdido](device-lost-mode.md) (apenas em iOS)
+  - [Localizar dispositivo](device-locate.md) (apenas em iOS)
+  - [Reiniciar](device-restart.md) (apenas no Windows)
+  - [Reposição do PIN do Windows 10](device-windows-pin-reset.md)
+  - [Controlo remoto do Android](teamviewer-support.md)
+  - [Sincronizar o dispositivo](device-sync.md)
+  - [Enviar notificação personalizada](custom-notifications.md#send-a-custom-notification-to-a-single-device) (Android, iOS)
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Passos seguintes
 
 - Em **Todos os dispositivos**, selecione um dispositivo para ver mais detalhes sobre esse dispositivo específico.
 - Selecione **Ações do dispositivo** para ver o estado das ações efetuadas nos dispositivos que gere.

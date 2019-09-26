@@ -8,7 +8,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 04/05/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 38763d5c16d5cba36220c03e9d74b30a465d752b
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
-ms.translationtype: HT
+ms.openlocfilehash: f6eca8e2f4544255f67d3a4e0e1673e415123967
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59899606"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "71304599"
 ---
 # <a name="use-a-microsoft-intune-custom-profile-to-create-a-per-app-vpn-profile-for-android-devices"></a>Utilizar um perfil personalizado do Microsoft Intune para criar um perfil VPN por aplicação para dispositivos Android
 
@@ -41,8 +40,7 @@ Depois de atribuir a política ao seu dispositivo Android ou grupos de utilizado
 ## <a name="step-1-create-a-vpn-profile"></a>Passo 1: Criar um perfil da VPN
 
 
-1. Inicie sessão no [portal do Azure](https://portal.azure.com).
-2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
+1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. No painel **Intune**, selecione **Configuração do dispositivo**.
 2. No painel **Configuração do dispositivo**, na secção **Gerir**, selecione **Perfis**.
 2. No painel da lista de perfis, selecione **Criar perfil**.
@@ -55,8 +53,7 @@ Tome nota do valor **Nome da Ligação** que especificar ao criar o perfil de VP
 
 ## <a name="step-2-create-a-custom-configuration-policy"></a>Passo 2: Criar uma política de configuração personalizada
 
-1. Inicie sessão no [portal do Azure](https://portal.azure.com).
-2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
+1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. No painel **Intune**, selecione **Configuração do dispositivo**.
 2. No painel **Configuração do dispositivo**, na secção **Gerir**, selecione **Perfis**.
 3. No painel Perfis, clique em **Criar Perfil**.
@@ -75,11 +72,11 @@ Tome nota do valor **Nome da Ligação** que especificar ao criar o perfil de VP
 ### <a name="set-your-app-list-to-blacklist-or-whitelist-optional"></a>Definir a lista de aplicações como lista de bloqueados ou lista de permitidos (opcional)
   Pode especificar uma lista de aplicações que *não* utilize a ligação VPN com o valor **BLACKLIST**. Todas as outras aplicações são ligadas através da VPN.
 Em alternativa, pode utilizar o valor **WHITELIST** para especificar uma lista de aplicações que *possa* utilizar a ligação VPN. As aplicações que não estejam na lista não são ligadas através da VPN.
-  1.    No painel **Definições OMA-URI Personalizadas**, selecione **Adicionar**.
-  2.    Introduza um nome para a definição.
-  3.    Para **OMA-URI**, utilize esta cadeia: **./Vendor/MSFT/VPN/Profile/*Nome*/Mode**, em que *Nome* é o nome do perfil VPN que anotou no Passo 1. No nosso exemplo, a cadeia seria **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/Mode**.
-  4.    Para **Tipo de dados**, especifique **Cadeia**.
-  5.    Para **Valor**, introduza **BLACKLIST** ou **WHITELIST**.
+  1. No painel **Definições OMA-URI Personalizadas**, selecione **Adicionar**.
+  2. Introduza um nome para a definição.
+  3. Para **OMA-URI**, utilize esta cadeia: **./Vendor/MSFT/VPN/Profile/*Nome*/Mode**, em que *Nome* é o nome do perfil VPN que anotou no Passo 1. No nosso exemplo, a cadeia seria **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/Mode**.
+  4. Para **Tipo de dados**, especifique **Cadeia**.
+  5. Para **Valor**, introduza **BLACKLIST** ou **WHITELIST**.
 
 
 

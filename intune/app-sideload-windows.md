@@ -6,7 +6,7 @@ keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/25/2019
+ms.date: 09/24/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4d30f2f392a760701337fb17b902458ea01ed00b
-ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
+ms.openlocfilehash: a1e952acc2fe8eafc6376b0cab9012af52b0acf4
+ms.sourcegitcommit: 62c41976c4da43b36015b715bc255397ebb8c6ad
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71238848"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71274853"
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Assine aplicações de linha de negócio para que possam ser implementadas nos dispositivos Windows com o Intune
 
@@ -28,7 +28,10 @@ ms.locfileid: "71238848"
 
 Como administrador do Intune, você pode implantar aplicativos universais de linha de negócios (LOB) para Windows 8.1 desktop ou Windows 10 desktop & dispositivos móveis, incluindo o aplicativo Portal da Empresa. Para implantar aplicativos. Appx no Windows 8.1 desktop ou no Windows 10 desktop & dispositivos móveis, você pode usar o certificado de assinatura de código de uma autoridade de certificação pública já confiável por seus dispositivos Windows ou pode usar sua própria autoridade de certificação.
 
-Windows 8.1 Desktop requer uma política corporativa para habilitar o Sideload ou o uso de chaves de Sideload (habilitadas automaticamente para dispositivos ingressados no domínio). Para obter mais informações, consulte [Sideload do Windows 8](https://blogs.technet.microsoft.com/scd-odtsp/2012/09/27/windows-8-sideloading-requirements-from-technet/).
+ > [!NOTE]
+ > Windows 8.1 Desktop requer uma política corporativa para habilitar o Sideload ou o uso de chaves de Sideload (habilitadas automaticamente para dispositivos ingressados no domínio). Para obter mais informações, consulte [Sideload do Windows 8](https://blogs.technet.microsoft.com/scd-odtsp/2012/09/27/windows-8-sideloading-requirements-from-technet/).
+
+## <a name="windows-10-sideloading"></a>Sideload do Windows 10
 
 No Windows 10, o Sideload é diferente em versões anteriores do Windows:
 
@@ -36,18 +39,17 @@ No Windows 10, o Sideload é diferente em versões anteriores do Windows:
 
 - Os certificados de telefone da Symantec e as chaves de licença de Sideload não são necessários. No entanto, se uma autoridade de certificação local não estiver disponível, talvez seja necessário obter um certificado de assinatura de código de uma autoridade de certificação pública. Para obter mais informações, consulte [introdução à assinatura de código](https://docs.microsoft.com/windows/desktop/SecCrypto/cryptography-tools#introduction-to-code-signing).
 
+### <a name="code-sign-your-app"></a>Assinar o código do seu aplicativo
 
-## <a name="code-sign-your-app"></a>Assinar o código do seu aplicativo
+A primeira etapa é assinar o código do seu pacote Appx. Para obter detalhes, consulte [assinar o pacote do aplicativo usando Signtool](https://docs.microsoft.com/windows/uwp/packaging/sign-app-package-using-signtool).
 
-A primeira etapa é assinar o código do pacote Appx, confira [assinar o pacote do aplicativo usando Signtool](https://docs.microsoft.com/windows/uwp/packaging/sign-app-package-using-signtool)
+### <a name="upload-your-app"></a>Carregar seu aplicativo
 
-## <a name="upload-your-app"></a>Carregar seu aplicativo
-
-Em seguida, você carregaria o arquivo Appx assinado, conforme descrito em [carregar aplicativo LOB Windows](lob-apps-windows.md)
+Em seguida, você deve carregar o arquivo Appx assinado. Para obter detalhes, consulte [Adicionar um aplicativo de linha de negócios do Windows para Microsoft Intune](lob-apps-windows.md).
 
 Se você implantar o aplicativo conforme necessário para usuários ou dispositivos, não precisará do aplicativo Inutne Portal da Empresa. No entanto, se você implantar o aplicativo como disponível para os usuários, eles poderão usar o aplicativo Portal da Empresa da Microsoft Store pública, usar o aplicativo Portal da Empresa do Microsoft Store particular para empresas ou você precisará assinar e implantar manualmente a empresa do Intune Aplicativo do Portal.
 
-## <a name="upload-the-code-signing-certificate"></a>Carregar o certificado de assinatura de código
+### <a name="upload-the-code-signing-certificate"></a>Carregar o certificado de assinatura de código
 
 Se o seu dispositivo Windows 10 ainda não confiar na autoridade de certificação, depois de assinar o pacote Appx e carregá-lo no serviço do Intune, você precisará carregar o certificado de assinatura de código no portal do Intune:
 1. Clique em aplicativos cliente
@@ -61,7 +63,7 @@ O Intune implanta apenas o arquivo. cer mais recente que foi carregado. Se você
 
 ## <a name="how-to-renew-the-symantec-enterprise-code-signing-certificate"></a>Como renovar o certificado empresarial de assinatura com código da Symantec
 
-O certificado usado para implantar Windows Phone aplicativos móveis 8,1 foi descontinuado em 28 2019 de fevereiro e não está mais disponível para renovação da Symantec. Se você estiver implantando no WIndows 10 Mobile, poderá continuar a usar os certificados de assinatura de código do Symantec Desktop Enterprise seguindo as instruções do Windows 10.
+O certificado usado para implantar Windows Phone aplicativos móveis 8,1 foi descontinuado em 28 2019 de fevereiro e não está mais disponível para renovação da Symantec. Se você estiver implantando no WIndows 10 Mobile, poderá continuar a usar os certificados de assinatura de código do Symantec Desktop Enterprise seguindo as instruções de [Sideload do Windows 10](app-sideload-windows.md#windows-10-sideloading) .
 
 ## <a name="how-to-install-the-updated-certificate-for-line-of-business-lob-apps"></a>Como instalar o certificado atualizado para aplicações de linha de negócio (LOB)
 

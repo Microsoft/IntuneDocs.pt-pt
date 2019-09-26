@@ -1,11 +1,11 @@
 ---
-title: Configurar definições de restrição de dispositivos no Microsoft Intune – Azure | Microsoft Docs
-description: Adicionar um perfil de dispositivo para restringir funcionalidades em dispositivos Android, macOS, iOS, Windows Phone e com o Windows 10 no Microsoft Intune
+title: Restringir recursos de dispositivos usando a política no Microsoft Intune-Azure | Microsoft Docs
+description: Adicionar um perfil de dispositivo para restringir recursos em dispositivos Android, macOS, iOS, iPadOS, Windows Phone e Windows 10 no Microsoft Intune
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/20/2018
+ms.date: 09/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -14,46 +14,56 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4cae90723c7ff92a8042f068fb49c1709506c7ff
-ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
+ms.openlocfilehash: 8030d3c12ca3f0eda3afef39a940cce6d53bc5e8
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66412430"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71302400"
 ---
 # <a name="configure-device-restriction-settings-in-microsoft-intune"></a>Configurar definições de restrição de dispositivos no Microsoft Intune
 
-As restrições do dispositivo permitem-lhe controlar uma vasta gama de definições e funcionalidades que gere em várias categorias, tais como:
-- Segurança
-- Browser
-- Hardware
-- Definições de partilha de dados
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Por exemplo, pode criar um perfil de restrição do dispositivo para impedir que os utilizadores dos dispositivos iOS acedam à câmara do dispositivo.
+O Intune inclui políticas de restrição de dispositivo que ajudam os administradores a controlar dispositivos Android, iOS, macOS e Windows. Essas restrições permitem controlar uma ampla gama de configurações e recursos para proteger os recursos da sua organização. Por exemplo, os administradores podem:
 
-Obtenha mais noções básicas sobre perfis de restrição de dispositivos e leia mais artigos sobre cada plataforma para aprender sobre as especificações de cada dispositivo.
+- Permitir ou bloquear a câmera do dispositivo
+- Controlar o acesso a Google Play, lojas de aplicativos, exibição de documentos e jogos
+- Bloquear aplicativos internos ou criar uma lista de aplicativos que são permitidos ou proibidos
+- Permitir ou impedir o backup de arquivos em contas de armazenamento e nuvem
+- Definir um comprimento mínimo da senha e bloquear senhas simples
+
+Esses recursos estão disponíveis no Intune e podem ser configurados pelo administrador. O Intune usa "perfis de configuração" para criar e personalizar essas configurações para as necessidades da sua organização. Depois de adicionar esses recursos em um perfil, você pode enviar por Push ou implantar o perfil em dispositivos na sua organização.
+
+Este artigo mostra como criar um perfil de restrições de dispositivo. Você também pode ver todas as configurações disponíveis para as diferentes plataformas.
 
 ## <a name="create-the-profile"></a>Criar o perfil
 
-1. Inicie sessão no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Selecione **Configuração do dispositivo** > **Perfis** > **Criar perfil**.
-3. Introduza um **Nome** e uma **Descrição** para o perfil de restrição de dispositivos.
-4. Na lista pendente **Plataforma**, selecione a plataforma do dispositivo à qual pretende aplicar as definições personalizadas. Atualmente, pode escolher uma das seguintes plataformas para definições de restrição de dispositivos:
+3. Introduza as seguintes propriedades:
 
-    - **Android**
-    - **Android Enterprise**
-    - **iOS**
-    - **macOS**
-    - **Windows Phone 8.1**
-    - **Windows 8.1 e posterior**
-    - **Windows 10 e posterior**
+    - **Nome**: introduza um nome descritivo para a política. Atribua nomes às políticas de forma que possa identificá-las facilmente mais tarde. Por exemplo, um bom nome de política **é Ios: Bloquear câmera em dispositivos**.
+    - **Descrição**: introduza uma descrição para a política. Esta definição é opcional, mas recomendada.
+    - **Plataforma**: escolha a plataforma dos dispositivos. As opções são:  
 
-5. Na lista pendente **Tipo de perfil**, selecione **Restrições do dispositivo**. Para criar um dispositivo restrições de perfil para dispositivos Windows 10 Team, como o Surface Hub, em seguida, escolha **restrições de dispositivos (Windows 10 Team)** .
-6. Consoante a plataforma que escolheu, as definições que pode configurar variam. Escolha a sua plataforma para definições detalhadas:
+        - **Android**
+        - **Android Enterprise**
+        - **iOS/iPadOS**
+        - **macOS**
+        - **Windows Phone 8.1**
+        - **Windows 8.1 e posterior**
+        - **Windows 10 e posterior**
+
+    - **Tipo de perfil**: Selecione **restrições de dispositivo**.
+
+        Para criar um perfil de restrições de dispositivo para dispositivos Windows 10 Team, como Surface Hub, escolha **restrições de dispositivo (Windows 10 Team)** .
+
+4. Consoante a plataforma que escolheu, as definições que pode configurar variam. Escolha sua plataforma para configurações detalhadas:
 
     - [Definições do Android](device-restrictions-android.md)
-    - [Definições do Android enterprise](device-restrictions-android-for-work.md)
-    - [Definições do iOS](device-restrictions-ios.md)
+    - [Configurações do Android Enterprise](device-restrictions-android-for-work.md)
+    - [configurações do iOS/iPadOS](device-restrictions-ios.md)
     - [Definições do macOS](device-restrictions-macos.md)
     - [Definições do Windows Phone 8.1](device-restrictions-windows-phone-8-1.md)
     - [Windows 8.1](device-restrictions-windows-8-1.md)
@@ -61,13 +71,13 @@ Obtenha mais noções básicas sobre perfis de restrição de dispositivos e lei
     - [Definições do Windows 10 Team](device-restrictions-windows-10-teams.md)
     - [Definições do Windows Holographic for Business](device-restrictions-windows-holographic.md)
 
-7. Assim que terminar, selecione **OK** > **Criar** para guardar as alterações.
+5. Assim que terminar, selecione **OK** > **Criar** para guardar as alterações.
 
-O perfil é criado e apresentado na lista de perfis.
+O perfil é criado e mostrado na lista de perfis.
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Passos seguintes
 
-Depois do perfil é criado, está pronto para ser atribuído. Em seguida, [atribua o perfil](device-profile-assign.md) e [monitorize o estado](device-profile-monitor.md).
+Depois que o perfil é criado, ele está pronto para ser atribuído. Em seguida, [atribua o perfil](device-profile-assign.md) e [monitorize o estado](device-profile-monitor.md).
 
 <!--  Removing image as part of design review; retaining source until we known the disposition.
 

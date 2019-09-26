@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 09/20/2019
+ms.date: 09/23/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 657f30748d3c4e6c4a819c5ed888c541bcb7b5c1
-ms.sourcegitcommit: 6a946a055a2014e00a4ca9d71986727a4ebbc777
+ms.openlocfilehash: 235cb317625786c1254ecf572726c66480c01b2e
+ms.sourcegitcommit: 62c41976c4da43b36015b715bc255397ebb8c6ad
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71238218"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71274829"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 
@@ -51,6 +51,21 @@ Saiba mais sobre as novidades todas as semanas no Microsoft Intune. Você també
 ### Role-based access control
 
 -->  
+
+<!-- ########################## -->
+
+## <a name="week-of-september-23-2019"></a>Semana de 23 de setembro de 2019
+
+#### <a name="ios-user-enrollment-in-preview----4817900---"></a>Registro de usuário do iOS em versão prévia <!-- 4817900 -->
+A versão iOS 13,1 da Apple inclui o registro de usuário, uma nova forma de gerenciamento leve para dispositivos iOS. Ele pode ser usado no lugar do registro de dispositivo ou do registro de dispositivo automatizado (anteriormente Programa de registro de dispositivos) para dispositivos de propriedade pessoal. A versão prévia do Intune oferece suporte a esse conjunto de recursos, permitindo que você:
+
+- Direcionar o registro de usuário para grupos de usuários.
+- Dê aos usuários finais a capacidade de selecionar entre o registro mais leve do usuário ou o registro de dispositivo mais forte quando registrarem seus dispositivos.
+
+A partir do 9/24/2019 com o lançamento do iOS 31,1, estamos no processo de distribuir essas atualizações para todos os clientes e esperar que sejam concluídas até o final da próxima semana.
+Aplica-se a:
+
+iOS 13,1 e posterior
 
 <!-- ########################## -->
 

@@ -7,7 +7,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 04/08/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 896008594e17c3773831edede263c8c47cde3c48
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
-ms.translationtype: HT
+ms.openlocfilehash: 0424c9749a15e5505dd8f9eacc7e44a92439cfbc
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59900537"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71302257"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Remover dispositivos ao apagar os dados, extinguir ou anular a inscrição do dispositivo de forma manual
 
@@ -34,12 +33,16 @@ Ao realizar as ações **Extinguir** ou **Limpar**, pode remover do Intune os di
 
 ## <a name="wipe"></a>Eliminação
 
-A ação **Limpar** restaura um dispositivo para as predefinições de fábrica. Os dados do utilizador são mantidos se selecionar a caixa de verificação **Reter estado de inscrição e conta de utilizador**. Caso contrário, a unidade será apagada em segurança.
+A ação **Limpar** restaura um dispositivo para as predefinições de fábrica. Os dados do utilizador são mantidos se selecionar a caixa de verificação **Reter estado de inscrição e conta de utilizador**. Caso contrário, todos os dados, aplicativos e configurações serão removidos.
 
 |Ação Limpar|**Reter estado de inscrição e conta de utilizador**|Removido da gestão do Intune|Descrição|
 |:-------------:|:------------:|:------------:|------------|
 |**Eliminação**| Opção não selecionada | Sim | Apaga todas as contas, dados, políticas de MDM e definições do utilizador. Repõe as definições e estado predefinidos do sistema operativo.|
 |**Eliminação**| Opção selecionada | Não | Apaga todas as políticas de MDM. Mantém os dados e as contas do utilizador. Repõe as definições predefinidas do utilizador. Repõe as definições e estado predefinidos do sistema operativo.|
+
+
+> [!NOTE]
+> A ação de apagamento não está disponível para dispositivos iOS registrados com o registro do usuário.
 
 A opção **Reter estado de inscrição e conta de utilizador** só está disponível para a versão 1709 ou posterior do Windows 10.
 
@@ -49,8 +52,7 @@ Apagar é útil para repor um dispositivo antes de o atribuir a um novo utilizad
 
 ### <a name="wiping-a-device"></a>Limpar um dispositivo
 
-1. Inicie sessão no [portal do Azure](https://portal.azure.com).
-2. Selecione **Todos os serviços**, filtre por **Intune** e selecione **Microsoft Intune**.
+1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. Selecione **Dispositivos** > **Todos os dispositivos**.
 4. Selecione o nome do dispositivo que pretende apagar.
 5. No painel que mostra o nome do dispositivo, selecione **Limpar**.
@@ -73,7 +75,7 @@ Se o dispositivo estiver ativado e ligado, a ação **Limpar** propaga-se a todo
 
 ## <a name="retire"></a>Extinguir
 
-A ação **Extinguir** remove os dados de aplicações geridas (quando aplicável), definições e perfis de e-mail atribuídos através do Intune. O dispositivo é removido da gestão do Intune. Essa extinção ocorrerá na próxima vez que o dispositivo for registado e receber a ação remota **Extinguir**.
+A ação **Extinguir** remove os dados de aplicações geridas (quando aplicável), definições e perfis de e-mail atribuídos através do Intune. O dispositivo é removido da gestão do Intune. Essa extinção ocorrerá na próxima vez que o dispositivo for registado e receber a ação remota **Extinguir**. O dispositivo ainda aparecerá no Intune até que o dispositivo Verifique. Se você quiser remover dispositivos obsoletos imediatamente, use a [ação Excluir](devices-wipe.md#delete-devices-from-the-intune-portal) em vez disso.
 
 A ação **Extinguir** mantém os dados pessoais do utilizador no dispositivo.  
 
@@ -88,7 +90,7 @@ As seguintes tabelas descrevem os dados que são removidos e o efeito da ação 
 |Definições de perfis de Wi-Fi e da VPN|Removidos.|
 |Definições de perfil de certificado|Os certificados são removidos e revogados.|
 |Agente de gestão|O perfil de gestão é removido.|
-|E-mail|Os perfis de e-mail aprovisionados através do Intune são removidos. O e-mail em cache no dispositivo é eliminado.|
+|Email|Os perfis de e-mail aprovisionados através do Intune são removidos. O e-mail em cache no dispositivo é eliminado.|
 |Anulação da associação ao Azure AD|O registo do Azure AD é removido.|
 
 ### <a name="android"></a>Android
@@ -104,7 +106,7 @@ As seguintes tabelas descrevem os dados que são removidos e o efeito da ação 
 |Definições de perfis de Wi-Fi e da VPN|Removidos.|Removidos.|
 |Definições de perfil de certificado|Os certificados são revogados, mas não removidos.|Os certificados são removidos e revogados.|
 |Agente de gestão|O privilégio de Administrador de Dispositivos é revogado.|O privilégio de Administrador de Dispositivos é revogado.|
-|E-mail|N/D (os perfis de e-mail não são suportados por dispositivos Android)|Os perfis de e-mail aprovisionados através do Intune são removidos. O e-mail em cache no dispositivo é eliminado.|
+|Email|N/D (os perfis de e-mail não são suportados por dispositivos Android)|Os perfis de e-mail aprovisionados através do Intune são removidos. O e-mail em cache no dispositivo é eliminado.|
 |Anulação da associação ao Azure AD|O registo do Azure AD é removido.|O registo do Azure AD é removido.|
 
 ### <a name="android-work-profile"></a>Perfil de trabalho do Android
@@ -124,19 +126,22 @@ Só pode limpar dispositivos de quiosque. Não é possível extinguir dispositiv
 |Definições de perfis de Wi-Fi e da VPN|Removidos.|
 |Definições de perfil de certificado|Os certificados que foram implementados através da MDM são removidos e revogados.|
 |Agente de gestão|O perfil de gestão é removido.|
-|Outlook|Se o acesso condicional estiver ativado, o dispositivo deixará de receber correio novo.|
+|Outlook|Se o acesso condicional estiver habilitado, o dispositivo não receberá novos emails.|
 |Anulação da associação ao Azure AD|O registo do Azure AD é removido.|
 
 ### <a name="windows"></a>Windows
 
-|Tipo de dados|Windows 8.1 (MDM) e Windows RT 8.1|Windows RT|Windows Phone 8.1 e Windows Phone 8|Windows 10|
+|Tipo de dados|Windows 8.1 (MDM) e Windows RT 8.1|Windows RT|Windows Phone 8.1 e Windows Phone 8|Windows 10|
 |-------------|----------------------------------------------------------------|--------------|-----------------------------------------|--------|
 |Aplicações da empresa e dados associados instalados pelo Intune|As chaves para ficheiros protegidos por EFS são revogadas. O utilizador não consegue abrir os ficheiros.|As aplicações da empresa não são removidas.|As aplicações instaladas originalmente através do Portal da Empresa são desinstaladas. Os dados da aplicação da empresa são removidos.|As aplicações são desinstaladas. As chaves de sideload são removidas.<br>Na versão 1703 do Windows 10 (Atualização para Criativos) e posterior, as aplicações do Office 365 ProPlus não são removidas. As aplicações Win32 instaladas da extensão de gestão do Intune não serão desinstaladas em dispositivos não inscritos. Os administradores podem tirar partido da exclusão de atribuição para não oferecer aplicações Win32 em dispositivos BYOD.|
 |Definições|As configurações que foram definidas pela política do Intune já não são impostas. Os utilizadores podem alterar as definições.|As configurações que foram definidas pela política do Intune já não são impostas. Os utilizadores podem alterar as definições.|As configurações que foram definidas pela política do Intune já não são impostas. Os utilizadores podem alterar as definições.|As configurações que foram definidas pela política do Intune já não são impostas. Os utilizadores podem alterar as definições.|
-|Definições de perfis de Wi-Fi e da VPN|Removidos.|Removidos.|Não suportada.|Removidos.|
-|Definições de perfil de certificado|Os certificados são removidos e revogados.|Os certificados são removidos e revogados.|Não suportada.|Os certificados são removidos e revogados.|
-|E-mail|Remove e-mails com o EFS ativado. Isto inclui e-mails e anexos na aplicação Correio para Windows.|Não suportada.|Os perfis de e-mail aprovisionados através do Intune são removidos. O e-mail em cache no dispositivo é eliminado.|Remove e-mails com o EFS ativado. Isto inclui e-mails e anexos na aplicação Correio para Windows. Remove as contas de e-mail que tenham sido aprovisionadas pelo Intune.|
-|Anulação da associação ao Azure AD|Não.|Não.|O registo do Azure AD é removido.|Não aplicável. No Windows 10, não pode extinguir dispositivos associados ao Azure AD.|
+|Definições de perfis de Wi-Fi e da VPN|Removidos.|Removidos.|Não suportado.|Removidos.|
+|Definições de perfil de certificado|Os certificados são removidos e revogados.|Os certificados são removidos e revogados.|Não suportado.|Os certificados são removidos e revogados.|
+|Email|Remove e-mails com o EFS ativado. Isto inclui e-mails e anexos na aplicação Correio para Windows.|Não suportado.|Os perfis de e-mail aprovisionados através do Intune são removidos. O e-mail em cache no dispositivo é eliminado.|Remove e-mails com o EFS ativado. Isto inclui e-mails e anexos na aplicação Correio para Windows. Remove as contas de e-mail que tenham sido aprovisionadas pelo Intune.|
+|Anulação da associação ao Azure AD|Não.|Não.|O registo do Azure AD é removido.|O registo do Azure AD é removido.|
+
+> [!NOTE]
+> Para dispositivos Windows 10 que ingressam no Azure AD durante a configuração inicial (OOBE), o comando de desativação removerá todas as contas do Azure AD do dispositivo. Siga as etapas em [Iniciar seu computador no modo de segurança](https://support.microsoft.com/en-us/help/12376/windows-10-start-your-pc-in-safe-mode) para fazer logon como um administrador local e reobter o acesso aos dados locais do usuário. 
 
 ### <a name="retire"></a>Extinguir
 
@@ -158,7 +163,7 @@ Se pretender remover dispositivos do portal do Intune, poderá eliminá-los no p
 Pode configurar o Intune de forma a eliminar automaticamente dispositivos que parecem estar inativos, obsoletos ou sem resposta. Estas regras de limpeza monitorizam o inventário do seu dispositivo de forma contínua para que os registos do mesmo se mantenham atualizados. Os dispositivos eliminados desta forma são removidos da gestão do Intune.
 1. Inicie sessão no [Intune no portal do Azure](https://aka.ms/intuneportal).
 2. Selecione **Dispositivos** > **Regras de limpeza do dispositivo** > **Sim**.
-3. Na caixa **Eliminar dispositivos que não tenham dado entrada por este número de dias**, introduza um número entre 90 e 270.
+3. Na caixa **excluir dispositivos que não fizeram check-in neste número de dias** , insira um número entre 30 e 270.
 4. Escolha **Guardar**.
 
 
@@ -167,13 +172,13 @@ Pode configurar o Intune de forma a eliminar automaticamente dispositivos que pa
 
 Poderá ter de eliminar dispositivos do Azure AD devido a problemas de comunicação ou dispositivos em falta. Pode utilizar a ação **Eliminar** para remover registos de dispositivos do portal do Azure para dispositivos que sabe que são inacessíveis e pouco prováveis de voltar a comunicar com o Azure. A ação **Eliminar** não remove um dispositivo da gestão.
 
-1.  Inicie sessão no [Azure Active Directory no portal do Azure](http://aka.ms/accessaad) com as suas credenciais de administrador. Também pode iniciar sessão no [centro de administração do Microsoft 365](https://admin.microsoft.com). A partir do menu, selecione **Centros de administração** > **Azure AD**.
-2.  Se não tiver uma, crie uma Subscrição do Azure. Isto não deve exigir um cartão de crédito ou pagamento se tiver uma conta paga (selecione a ligação de subscrição **Registar o Azure Active Directory gratuito**).
-3.  Selecione **Azure Active Directory** e, em seguida, selecione a sua organização.
-4.  Selecione o separador **Utilizadores** .
+1. Inicie sessão no [Azure Active Directory no portal do Azure](https://aka.ms/accessaad) com as suas credenciais de administrador. Também pode iniciar sessão no [centro de administração do Microsoft 365](https://admin.microsoft.com). A partir do menu, selecione **Centros de administração** > **Azure AD**.
+2. Se não tiver uma, crie uma Subscrição do Azure. Isto não deve exigir um cartão de crédito ou pagamento se tiver uma conta paga (selecione a ligação de subscrição **Registar o Azure Active Directory gratuito**).
+3. Selecione **Azure Active Directory** e, em seguida, selecione a sua organização.
+4. Selecione o separador **Utilizadores** .
 5. Selecione o utilizador associado ao dispositivo que pretende eliminar.
-6.  Selecione **Dispositivos**.
-7.  Remova os dispositivos conforme adequado. Por exemplo, poderá remover dispositivos que já não estão em utilização ou que têm definições incorretas.
+6. Selecione **Dispositivos**.
+7. Remova os dispositivos conforme adequado. Por exemplo, poderá remover dispositivos que já não estão em utilização ou que têm definições incorretas.
 
 ## <a name="retire-an-apple-dep-device-from-intune"></a>Extinguir um dispositivo DEP da Apple no Intune
 
@@ -182,20 +187,18 @@ Se pretender remover completamente um dispositivo DEP da Apple da gestão pelo I
 1. Inicie sessão no [Intune no portal do Azure](https://aka.ms/intuneportal).
 2. Selecione **Dispositivos** > **Todos os dispositivos** > selecione o dispositivo > **Extinguir**.
 ![Captura de ecrã da extinção](./media/devices-wipe/retire.png)
-3. Selecione **Inscrição de dispositivos** > **Inscrição da Apple** > **Tokens do programa de inscrição** > selecione o token > **Dispositivos** > selecione a caixa de verificação do dispositivo > **Eliminar** > **Sim**.
-![Captura de ecrã da opção para eliminar dispositivos](./media/devices-wipe/delete-device.png)
-4. Aceda a [deploy.apple.com](http://deploy.apple.com) e procure o dispositivo através do respetivo número de série.
-5. No menu **Atribuído a**, selecione **Não atribuído**.
+3. Aceda a [deploy.apple.com](http://deploy.apple.com) e procure o dispositivo através do respetivo número de série.
+4. No menu **Atribuído a**, selecione **Não atribuído**.
 
-6. Selecione **Reatribuir**.
+5. Selecione **Reatribuir**.
 
     ![Captura de ecrã da opção Reatribuir da Apple](./media/devices-wipe/apple-reassign.png)
 
 ## <a name="fresh-start"></a>Começar do Zero
 
-Aplicável aos dispositivos Windows 10. Leia mais sobre [Começar do Zero](https://docs.microsoft.com/intune/device-fresh-start).
+Aplicável aos dispositivos Windows 10. Leia mais sobre [Começar do Zero](device-fresh-start.md).
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
 Se pretender reinscrever um dispositivo eliminado, veja [Opções de inscrição](enrollment-options.md).
 

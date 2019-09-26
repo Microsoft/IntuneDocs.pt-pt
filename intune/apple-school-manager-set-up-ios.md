@@ -1,5 +1,5 @@
 ---
-title: Inscrição do Programa Apple School Manager para dispositivos iOS
+title: Inscrição do programa do Apple School Manager para dispositivos iOS
 titleSuffix: Microsoft Intune
 description: Saiba como configurar a inscrição do programa do Apple School Manager para dispositivos iOS da empresa com o Intune.
 keywords: ''
@@ -8,28 +8,27 @@ ms.author: erikje
 manager: dougeby
 ms.date: 12/06/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 4c35a23e-0c61-11e8-ba89-0ed5f89f718b
-ms.reviewer: dagerrit
+ms.reviewer: tisilver
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 023db9e63f9495d9c96342e33bfac811238c0f39
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
-ms.translationtype: HT
+ms.openlocfilehash: 6a0aa33de088b39cf0e2013320bc29f8c11ca1be
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59897892"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71305432"
 ---
 # <a name="set-up-ios-device-enrollment-with-apple-school-manager"></a>Configurar a inscrição de dispositivos iOS com o Apple School Manager
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Pode configurar o Intune para inscrever os dispositivos iOS adquiridos através do programa [Apple School Manager](https://school.apple.com/). Ao utilizar o Intune com o Apple School Manager, pode inscrever um grande número de dispositivos iOS sem sequer tocar nos mesmos. Quando um estudante ou professor ativar o dispositivo, o Assistente de Configuração é executado com as predefinições configuradas e o dispositivo é inscrito para gestão.
+Pode configurar o Intune para inscrever dispositivos iOS adquiridos através do [Apple School Manager](https://school.apple.com/) programa. Ao utilizar o Intune com o Apple School Manager, pode inscrever um grande número de dispositivos iOS sem sequer tocar nos mesmos. Quando um estudante ou professor ativar o dispositivo, o Assistente de Configuração é executado com as predefinições configuradas e o dispositivo é inscrito para gestão.
 
 Para ativar a inscrição do Apple School Manager, utilize os portais do Intune e do Apple School Manager. É necessária uma lista de números de série ou um número de encomenda para poder atribuir dispositivos ao Intune para gestão. São criados os perfis de inscrição DEP com as definições aplicadas aos dispositivos durante a inscrição.
 
@@ -57,15 +56,15 @@ Para poder inscrever dispositivos iOS da empresa através do Apple School Manage
 
 ### <a name="step-2-download-a-token-and-assign-devices"></a>Passo 2. Transferir um token e atribuir dispositivos
 1. Escolha **Criar um token através do Apple School Manager** e inicie sessão no Apple School com o Apple ID da sua empresa. Pode utilizar este ID Apple para renovar o seu token do Apple School Manager.
-2.  No [portal do Apple School Manager](https://school.apple.com), aceda a **Servidores MDM** e, em seguida, selecione **Adicionar Servidor MDM** (canto superior direito).
-3.  Introduza o **Nome do Servidor MDM**. O nome do servidor é uma referência para identificar o servidor de gestão de dispositivos móveis (MDM). Não é o nome nem o URL do servidor do Microsoft Intune.
+2. No [portal do Apple School Manager](https://school.apple.com), aceda a **Servidores MDM** e, em seguida, selecione **Adicionar Servidor MDM** (canto superior direito).
+3. Introduza o **Nome do Servidor MDM**. O nome do servidor é uma referência para identificar o servidor de gestão de dispositivos móveis (MDM). Não é o nome nem o URL do servidor do Microsoft Intune.
    ![Captura de ecrã do portal do Apple School Manager com a opção Número de Série selecionada](./media/asm-server-assignment.png)
 
-4.  Selecione **Carregar Ficheiro...** no portal da Apple, procure o ficheiro .pem e selecione **Guardar Servidor MDM** (canto inferior direito).
-5.  Selecione **Obter Token** e, em seguida, transfira o ficheiro do token do servidor (.p7m) para o computador.
+4. Selecione **Carregar Ficheiro...** no portal da Apple, procure o ficheiro .pem e selecione **Guardar Servidor MDM** (canto inferior direito).
+5. Selecione **Obter Token** e, em seguida, transfira o ficheiro do token do servidor (.p7m) para o computador.
 6. Vá para **Atribuições de Dispositivo** e **Escolher Dispositivo** através da introdução manual dos **Números de Série**, **Número do Pedido** ou **Carregar Ficheiro CSV**.
      ![Captura de ecrã do portal do Apple School Manager com a opção Número de Série selecionada](./media/asm-device-assignment.png)
-7.  Selecione a ação **Atribuir ao Servidor** e selecione o **Servidor MDM** que criou.
+7. Selecione a ação **Atribuir ao Servidor** e selecione o **Servidor MDM** que criou.
 8. Especifique como irá **Escolher Dispositivos** e, em seguida, forneça as informações e detalhes do dispositivo.
 9. Selecione **Atribuir ao Servidor**, selecione o &lt;NomeDoServidor&gt; especificado para o Microsoft Intune e, em seguida, selecione **OK**.
 
@@ -84,7 +83,7 @@ Agora que instalou o seu token, pode criar um perfil de inscrição para disposi
 1. No [Intune](https://aka.ms/intuneportal), escolha **Inscrição de dispositivos** > **Inscrição da Apple** > **Tokens do programa de inscrição**.
 2. Selecione um token, escolha **Perfis** e, em seguida, escolha **Criar perfil**.
 
-3. Em **Criar Perfil**, introduza um **Nome** e uma **Descrição** para o perfil para efeitos administrativos. Os utilizadores não verão estes detalhes. Pode utilizar este campo **Nome** para criar um grupo dinâmico no Azure Active Directory. Utilize o nome de perfil para definir o parâmetro enrollmentProfileName para atribuir dispositivos com este perfil de inscrição. Saiba mais sobre os [grupos dinâmicos do Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal#using-attributes-to-create-rules-for-device-objects).
+3. Em **Criar Perfil**, introduza um **Nome** e uma **Descrição** para o perfil para efeitos administrativos. Os utilizadores não verão estes detalhes. Pode utilizar este campo **Nome** para criar um grupo dinâmico no Azure Active Directory. Utilize o nome de perfil para definir o parâmetro enrollmentProfileName para atribuir dispositivos com este perfil de inscrição. Saiba mais sobre os [grupos dinâmicos do Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal#rules-for-devices).
 
     ![Nome do perfil e descrição.](./media/device-enrollment-program-enroll-ios/image05.png)
 
@@ -167,10 +166,10 @@ Depois de atribuída a permissão ao Intune para gerir os dispositivos associado
 
 No [Intune](https://aka.ms/intuneportal), escolha **Inscrição de dispositivos** > **Inscrição da Apple** > **Tokens do programa de inscrição** > escolha um token na lista > **Dispositivos** > **Sincronizar**. ![Captura de ecrã do nó Dispositivos do Programa de Inscrição e a ligação Sincronizar.](./media/device-enrollment-program-enroll-ios/image06.png)
 
-  Para cumprir os termos da Apple para um tráfego aceitável do programa de inscrição, o Intune impõe as seguintes restrições:
-  - As sincronizações completas não podem ser executadas mais do que uma vez a cada sete dias. Durante uma sincronização completa, o Intune atualiza todos os números de série da Apple atribuídos ao Intune. Se for tentada uma sincronização completa no prazo de sete dias após a sincronização completa anterior, o Intune apenas atualizará os números de série que ainda não estejam listados no Intune.
-  - São atribuídos 15 minutos a qualquer pedido de sincronização para ser concluído. Durante este tempo ou até o pedido ser concluído com êxito, o botão **Sync (Sincronizar)** está desativado.
-  - O Intune sincroniza os dispositivos novos e removidos com a Apple a cada 24 horas.
+Para cumprir os termos da Apple para um tráfego aceitável do programa de inscrição, o Intune impõe as seguintes restrições:
+- As sincronizações completas não podem ser executadas mais do que uma vez a cada sete dias. Durante uma sincronização completa, o Intune atualiza todos os números de série da Apple atribuídos ao Intune. Se for tentada uma sincronização completa no prazo de sete dias após a sincronização completa anterior, o Intune apenas atualizará os números de série que ainda não estejam listados no Intune.
+- São atribuídos 15 minutos a qualquer pedido de sincronização para ser concluído. Durante este tempo ou até o pedido ser concluído com êxito, o botão **Sync (Sincronizar)** está desativado.
+- O Intune sincroniza os dispositivos novos e removidos com a Apple a cada 24 horas.
 
 >[!NOTE]
 >Também pode atribuir números de série do Apple School Manager aos perfis do painel **Programa de Inscrição de Dispositivos**.

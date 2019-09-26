@@ -5,9 +5,8 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/12/2019
+ms.date: 07/03/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -15,154 +14,159 @@ ms.reviewer: coryfe
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 05fd362ff6f068669b85b9b78cb1dfd7d3c8011f
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: c7e144c91f91da998a868868880e9a12d2370e81
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57397280"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "71302454"
 ---
 # <a name="manage-software-updates-in-intune"></a>Gerir atualizações de software no Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Utilize o Intune para definir os anéis de atualização que especificar como e quando o Windows como um serviço atualiza os dispositivos Windows 10. Cadências de atualização são as políticas que atribuir aos grupos de dispositivos. Ao utilizar anéis de atualização, pode criar uma estratégia de atualização que reflete as necessidades da sua empresa. Para obter mais informações, veja [Manage updates using Windows Update for Business (Gerir atualizações através do Windows Update para Empresas)](https://technet.microsoft.com/itpro/windows/manage/waas-manage-updates-wufb).
+Use o Intune para definir os anéis de atualização que especificam como e quando o Windows como um serviço atualiza seus dispositivos Windows 10. Os anéis de atualização são as políticas que você atribui a grupos de dispositivos. Ao utilizar anéis de atualização, pode criar uma estratégia de atualização que reflete as necessidades da sua empresa. Para obter mais informações, veja [Manage updates using Windows Update for Business (Gerir atualizações através do Windows Update para Empresas)](https://technet.microsoft.com/itpro/windows/manage/waas-manage-updates-wufb).
 
 Com o Windows 10, as novas Atualizações de Funcionalidades e Atualizações de Qualidade incluem os conteúdos de todas as atualizações anteriores. Desde que instale a atualização mais recente, pode ter a certeza de que os seus dispositivos com o Windows 10 estão atualizados. Ao contrário das versões anteriores do Windows, agora tem de instalar toda a atualização em vez de parte de uma atualização.
 
 
-Ao utilizar o Windows Update para Empresas, pode simplificar a experiência de gestão de atualizações. Não precisa de aprovar atualizações individuais de grupos de dispositivos. Pode gerir o risco nos seus ambientes ao configurar uma estratégia de implementação de atualizações. O Intune fornece a capacidade de [configurar definições de atualização](windows-update-settings.md) em dispositivos e dá-lhe a capacidade de diferir a instalação da atualização. O Intune não armazena as atualizações, mas apenas a atribuição da política de atualização. Os dispositivos acedem diretamente ao Windows Update para obter as atualizações. Esta coleção de definições que configura quando as atualizações do Windows 10 são instaladas é chamada um *cadência de atualização do Windows 10*.
+Ao utilizar o Windows Update para Empresas, pode simplificar a experiência de gestão de atualizações. Não precisa de aprovar atualizações individuais de grupos de dispositivos. Pode gerir o risco nos seus ambientes ao configurar uma estratégia de implementação de atualizações. O Intune fornece a capacidade de [definir configurações de atualização](windows-update-settings.md) em dispositivos e oferece a capacidade de adiar a instalação da atualização. O Intune não armazena as atualizações, mas apenas a atribuição da política de atualização. Os dispositivos acedem diretamente ao Windows Update para obter as atualizações. Essa coleção de configurações que define quando as atualizações do Windows 10 são instaladas é chamada de um *anel de atualização do Windows 10*.
 
-Suporte de cadências de atualização do Windows 10 [etiquetas de âmbito](scope-tags.md). Pode utilizar etiquetas de âmbito com cadências de atualização para o ajudar a filtrar e gerir conjuntos de configurações que utilizar.
+Os anéis de atualização do Windows 10 dão suporte a [marcas de escopo](scope-tags.md). Você pode usar marcas de escopo com anéis de atualização para ajudá-lo a filtrar e gerenciar conjuntos de configurações que você usa.
 
 ## <a name="prerequisites"></a>Pré-requisitos  
 
-Tem de ser cumpridos os seguintes pré-requisitos para utilizar as atualizações do Windows para dispositivos Windows 10 no Intune.  
+Os pré-requisitos a seguir devem ser atendidos para usar as atualizações do Windows para dispositivos Windows 10 no Intune.  
 
-- Windows 10 PCs tem de executar, pelo menos, Windows 10 Pro com a atualização de aniversário do Windows ou posterior (versão 1607 ou posterior)
-- Windows Update suporta as seguintes edições do Windows 10:
+- Os PCs com Windows 10 devem executar pelo menos o Windows 10 pro com a atualização de aniversário do Windows ou posterior (versão 1607 ou posterior)
+- O Windows Update dá suporte às seguintes edições do Windows 10:
   - Windows 10
   - Windows 10 Team (para dispositivos Surface Hub)
   - Windows Holographic for Business  
 
-    Windows Holographic for Business suporta um subconjunto das definições de atualizações do Windows, incluindo:
+    O Windows Holographic for Business dá suporte a um subconjunto de configurações para atualizações do Windows, incluindo:
     - **Comportamento de atualização automática**
     - **Atualizações de produtos da Microsoft**
-    - **Canal de serviço**: Suporta **canal semianual** e **canal semianual (direcionada)** opções  
+    - **Canal de manutenção**: Dá suporte a opções de canal **semestral** e **canal Semianual (direcionado)** . Para obter mais informações, consulte [gerenciar o Windows Holographic](windows-holographic-for-business.md).  
 
-    Para obter mais informações, consulte [gerir Windows Holographic](windows-holographic-for-business.md)  
-  
-  Os dispositivos com o Windows 10 Mobile não são suportados.
+    > [!NOTE]  
+    > **Versões e edições sem suporte**:
+    > - Windows 10 Mobile  
+    > - Windows 10 Enterprise LTSC. O Windows Update for Business (WUfB) atualmente não dá suporte a versões de *canal de serviço de longo prazo* . Planeje usar métodos alternativos de aplicação de patches, como o WSUS ou o Configuration Manager.  
 
-- Em dispositivos Windows, **comentários e diagnósticos** > **dados de diagnóstico e utilização** tem de ser definido como **básica**, **avançado**, ou **completo**.  
+- Em dispositivos Windows, **comentários &**  > **diagnóstico de diagnóstico e dados de uso** devem ser definidos como **básico**, **avançado**ou **completo**.  
 
-  Pode configurar esta definição manualmente ou utilizar um perfil de restrição de dispositivos Intune para Windows 10 e posterior. Para utilizar o perfil de restrição de dispositivos, configure a definição **gerais** > **submissão de dados de diagnóstico** para, pelo menos, **básica**. Para obter mais informações sobre os perfis de dispositivo, veja [Configurar definições de restrições de dispositivos](device-restrictions-configure.md).  
+  Você pode definir a configuração de *dados de diagnóstico e de uso* para dispositivos Windows 10 manualmente ou usar um perfil de restrição de dispositivo do Intune para Windows 10 e posterior. Se você usar um perfil de restrição de dispositivo, defina a [configuração de restrição de dispositivo](device-restrictions-windows-10.md#reporting-and-telemetry) de **compartilhar dados de uso** para pelo menos **básico**. Essa configuração é encontrada na categoria **relatórios e telemetria** quando você configura uma política de restrição de dispositivo para o Windows 10 ou posterior.
 
-- Se utilizar o portal clássico do Azure, [migre as suas definições para o portal do Azure](#migrate-update-settings-to-the-azure-portal).  
+  Para obter mais informações sobre os perfis de dispositivo, veja [Configurar definições de restrições de dispositivos](device-restrictions-configure.md).  
+
+- Se você usar o portal clássico do Azure, [migre suas configurações para o portal do Azure](#migrate-update-settings-to-the-azure-portal).  
+
 
 ## <a name="create-and-assign-update-rings"></a>Criar e atribuir cadências de atualização
 
-1. Inicie sessão no [portal do Azure](https://portal.azure.com).
-2. Selecione **Todos os serviços**, filtre por **Intune** e, em seguida, selecione **Microsoft Intune**.
+1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. Selecione **Atualizações de software** > **Cadências de Atualização do Windows 10** > **Criar**.
 4. Introduza um nome, uma descrição (opcional) e, em seguida, selecione **Configurar**.
-5. Na **definições**, configurar as definições para as suas necessidades de negócio. Para obter informações sobre as definições disponíveis, consulte [Windows atualizar as definições de](windows-update-settings.md).  
+5. Em **configurações**, defina as configurações para suas necessidades de negócios. Para obter informações sobre as configurações disponíveis, consulte [configurações do Windows Update](windows-update-settings.md).  
 6. Quando terminar, selecione **OK**. Em **Criar Cadência de Atualização**, selecione **Criar**. O novo anel de atualização é apresentado na lista de anéis de atualização.
-7. Para atribuir o anel, na lista de cadências de atualização, selecione um anel e, em seguida, no \<nome do anel > separador, escolha **atribuições**.
-8. Utilize o **inclusão** e **excluir** separadores para definir que agrupa Este anel está atribuído a e, em seguida, selecione **guardar** para concluir a atribuição.
+7. Para atribuir o anel, na lista de anéis de atualização, selecione um anel e, na \<guia nome do anel >, escolha **atribuições**.
+8. Use as guias **incluir** e **excluir** para definir a quais grupos este anel será atribuído e, em seguida, selecione **salvar** para concluir a atribuição.
 
-## <a name="manage-your-windows-10-update-rings"></a>Gerir a sua cadência de atualização do Windows 10
-No portal, pode selecionar uma cadência de atualização do Windows 10 para abrir o respetivo **descrição geral** painel. Neste painel pode ver o estado de atribuição de anéis e realizar ações adicionais para gerir o anel. 
-### <a name="to-view-an-updates-rings-overview-pane"></a>Para ver um painel de descrição geral de cadência de atualizações: 
+## <a name="manage-your-windows-10-update-rings"></a>Gerenciar seus anéis de atualização do Windows 10
+No portal, você pode selecionar um anel de atualização do Windows 10 para abrir seu painel de **visão geral** . Nesse painel, você pode exibir o status de atribuição de anéis e executar ações adicionais para gerenciar o anel. 
+### <a name="to-view-an-updates-rings-overview-pane"></a>Para exibir um painel de visão geral dos anéis de atualizações: 
 1. Inicie sessão no Portal do Azure.
-2. Navegue para **Intune** > **atualizações de Software** > **Cadências de atualização do Windows 10**.
-3. Selecione a cadência de atualização que pretende ver ou gerir.  
+2. Navegue até > **as**atualizações > de software do Intune**anéis de atualização do Windows 10**.
+3. Selecione o anel de atualização que você deseja exibir ou gerenciar.  
 
-Além de visualizar o estado da atribuição, pode selecionar as seguintes ações na parte superior do painel de descrição geral para gerir o anel de atualização:  
+Além de exibir o status de atribuição, você pode selecionar as seguintes ações na parte superior do painel Visão geral para gerenciar o anel de atualização:  
 - [Eliminar](#delete)  
-- [Colocar em pausa](#pause)  
-- [Retomar](#resume)  
-- [Extend](#extend)  
-- [Uninstall](#uninstall)  
+- [Temporariamente](#pause)  
+- [Volte](#resume)  
+- [Estender](#extend)  
+- [Desinstalar](#uninstall)  
 
 ![Ações disponíveis](./media/windows-update-for-business-configure/overview-actions.png)
 
 ### <a name="delete"></a>Eliminar  
-Selecione **eliminar** para parar de impor as definições do anel de atualização do Windows 10 selecionado. A eliminar um anel remove a respetiva configuração do Intune para que o Intune já não se aplica e impõe essas definições.  
+Selecione **excluir** para parar de impor as configurações do anel de atualização do Windows 10 selecionado. A exclusão de um anel remove sua configuração do Intune para que o Intune não se aplique mais e aplique essas configurações.  
 
-A eliminar um anel do Intune não modifica as definições nos dispositivos que foram atribuídos a cadência de atualização.  Em vez disso, o dispositivo mantém as definições atuais. Isso é porque dispositivos não mantêm um registro histórico de quais as definições foram anteriormente no local e uma vez que o dispositivo pode receber definições de cadências de atualização adicionais que permanecem ativas.  
+A exclusão de um anel do Intune não modifica as configurações em dispositivos aos quais foi atribuído o anel de atualização.  Em vez disso, o dispositivo mantém suas configurações atuais. Isso ocorre porque os dispositivos não mantêm um registro histórico de quais configurações estavam anteriormente em vigor e porque o dispositivo pode receber configurações de anéis de atualização adicionais que permanecem ativas.  
 
-#### <a name="to-delete-a-ring"></a>Para eliminar um anel  
-1. Ao visualizar a página de descrição geral para uma cadência de atualização, selecione **eliminar**.  
+#### <a name="to-delete-a-ring"></a>Para excluir um anel  
+1. Ao exibir a página Visão geral de um anel de atualização, selecione **excluir**.  
 2. Selecione **OK**.  
 
 ### <a name="pause"></a>Colocar em pausa  
-Selecione **colocar em pausa** para impedir que os dispositivos atribuídos a receber atualizações de funcionalidades ou atualizações de qualidade até 35 dias desde o momento em que colocar em pausa o anel. Após ter decorrido o número máximo de dias, a funcionalidade de pausa expira automaticamente e o dispositivo procura atualizações aplicáveis nas Atualizações do Windows. Após esta procura, pode colocar as atualizações em pausa novamente. Se retomar uma pausa cadência de atualização e, em seguida, colocar em pausa novamente, esse anel reposições de período de pausa 35 dias.  
+Selecione **Pausar** para impedir que os dispositivos atribuídos recebam atualizações de recursos ou atualizações de qualidade por até 35 dias a partir do momento em que você pausar o anel. Após ter decorrido o número máximo de dias, a funcionalidade de pausa expira automaticamente e o dispositivo procura atualizações aplicáveis nas Atualizações do Windows. Após esta procura, pode colocar as atualizações em pausa novamente. Se você retomar um anel de atualização em pausa e, em seguida, pausar esse anel novamente, o período de pausa será redefinido para 35 dias.  
 
- #### <a name="to-pause-a-ring"></a>Para colocar em pausa um anel  
-1. Ao visualizar a página de descrição geral para uma cadência de atualização, selecione **pausa**.  
-2. Selecione **funcionalidade** ou **qualidade** para colocar em pausa esse tipo de atualização e, em seguida, selecione **OK**.  
-3. Depois de colocar em pausa o tipo de uma atualização, pode selecionar a colocar em pausa novamente para colocar em pausa o outro tipo de atualização.  
+#### <a name="to-pause-a-ring"></a>Para pausar um anel  
+1. Ao exibir a página Visão geral de um anel de atualização, selecione **Pausar**.  
+2. Selecione **recurso** ou **qualidade** para pausar o tipo de atualização e, em seguida, selecione **OK**.  
+3. Depois de pausar um tipo de atualização, você pode selecionar pausar novamente para pausar o outro tipo de atualização.  
 
-Quando um tipo de atualização está em pausa, o painel de descrição geral para esse anel mostra quantos dias faltam para essa atualização escreva retoma.
+Quando um tipo de atualização é pausado, o painel de visão geral desse anel exibe o número de dias restantes antes que o tipo de atualização seja retomado.
 
 > [!IMPORTANT]  
-> Depois de emitir um comando de pausa, dispositivos receberão este comando da próxima vez que se registarem no serviço. É possível que instalem uma atualização agendada antes do registo. Além disso, se um dispositivo de destino for desativado quando emitir o comando de pausa, ao desativá-lo, este poderá transferir e instalar atualizações agendadas antes do registo no Intune.
+> Depois de emitir um comando Pause, os dispositivos receberão esse comando na próxima vez que fizerem check-in no serviço. É possível que instalem uma atualização agendada antes do registo. Além disso, se um dispositivo de destino for desativado quando emitir o comando de pausa, ao desativá-lo, este poderá transferir e instalar atualizações agendadas antes do registo no Intune.
 
 ### <a name="resume"></a>Retomar  
-Embora uma cadência de atualização está em pausa, pode selecionar **retomar** para restaurar as atualizações de qualidade e de funcionalidades para esse anel para operação do Active Directory. Após retomar uma cadência de atualização, pode interromper esse anel novamente.  
+Enquanto um anel de atualização é pausado, você pode selecionar **retomar** para restaurar as atualizações de recursos e qualidade desse anel para a operação ativa. Depois de retomar um anel de atualização, você pode pausar o anel novamente.  
 
 #### <a name="to-resume-a-ring"></a>Para retomar um anel  
-1. Ao visualizar a página de descrição geral para um anel de atualização em pausa, selecione **retomar**.  
-2. Selecione entre as opções disponíveis para retomar a qualquer um **funcionalidade** ou **qualidade** atualizações e, em seguida, selecione **OK**.  
-3. Após retomar um tipo de atualização, pode selecionar retomar novamente para retomar o outro tipo de atualização.  
+1. Ao exibir a página Visão geral de um anel de atualização em pausa, selecione **retomar**.  
+2. Selecione entre as opções disponíveis para retomar as atualizações de **recurso** ou **qualidade** e, em seguida, selecione **OK**.  
+3. Depois de retomar um tipo de atualização, você pode selecionar retomar novamente para retomar o outro tipo de atualização.  
 
-### <a name="extend"></a>Expandir  
-Embora uma cadência de atualização está em pausa, pode selecionar **expandir** repor o período de pausa de atualizações de qualidade e funcionalidade para esse anel de atualização para 35 dias.  
+### <a name="extend"></a>Estender  
+Enquanto um anel de atualização é pausado, você pode selecionar **estender** para redefinir o período de pausa para as atualizações de recurso e qualidade desse anel de atualização para 35 dias.  
 
 #### <a name="to-extend-the-pause-period-for-a-ring"></a>Para estender o período de pausa para um anel  
-1. Ao visualizar a página de descrição geral para um anel de atualização em pausa, selecione **expandir**. 
-2. Selecione entre as opções disponíveis para retomar a qualquer um **funcionalidade** ou **qualidade** atualizações e, em seguida, selecione **OK**.  
-3. Depois de expandir a pausa para o tipo de uma atualização, pode selecionar expandir novamente para estender o outro tipo de atualização.  
+1. Ao exibir a página Visão geral de um anel de atualização em pausa, selecione **estender**. 
+2. Selecione entre as opções disponíveis para retomar as atualizações de **recurso** ou **qualidade** e, em seguida, selecione **OK**.  
+3. Depois de estender a pausa para um tipo de atualização, você pode selecionar estender novamente para estender o outro tipo de atualização.  
 
 ### <a name="uninstall"></a>Desinstalar  
-Um administrador do Intune pode utilizar **desinstalação** desinstalar (reverter) a versão mais recente *funcionalidade* atualização ou a versão mais recente *qualidade* atualização para uma cadência de atualização do Active Directory ou em pausa. Após a desinstalação de um tipo, em seguida, pode desinstalar o outro tipo. Intune não suporta ou gerir a capacidade de utilizadores para desinstalar as atualizações.  
+Um administrador do Intune pode usar a **desinstalação** para desinstalar (reverter) a atualização de *recursos* mais recente ou a atualização de *qualidade* mais recente para um anel de atualização ativo ou em pausa. Após a desinstalação de um tipo, você pode desinstalar o outro tipo. O Intune não dá suporte ou gerencia a capacidade dos usuários de desinstalar atualizações.  
 
-Para desinstalação seja concluída com êxito:  
-- Um dispositivo tem de executar o Windows 10 de Abril de 2018 atualização (versão 1803) ou posterior.  
+Para que a desinstalação seja bem-sucedida:  
+- Um dispositivo deve executar a atualização do Windows 10 de abril de 2018 (versão 1803) ou posterior.  
 
-Um dispositivo tem de ter instalado a atualização mais recente. Uma vez que as atualizações são cumulativas, dispositivos que instalam a atualização mais recente terão a atualização mais recente de funcionalidade e qualidade. É um exemplo de quando utilizar esta opção para reverter a última atualização deve detetar um problema de última hora nos seus computadores Windows 10.  
+Um dispositivo deve ter instalado a atualização mais recente. Como as atualizações são cumulativas, os dispositivos que instalam a atualização mais recente terão o recurso e a atualização de qualidade mais recentes. Um exemplo de quando você pode usar essa opção é reverter a última atualização caso você descubra um problema de interrupção em suas máquinas com Windows 10.  
 
-Quando usar a desinstalação, considere o seguinte:  
+Ao usar a desinstalação, considere o seguinte:  
 - A desinstalação de uma atualização da funcionalidade ou qualidade só está disponível para o canal de serviço onde o dispositivo está ativado.  
 
-- Usando desinstalar funcionalidade ou as atualizações de qualidade aciona uma política para restaurar a atualização anterior nas suas máquinas do Windows 10.  
+- Usar a desinstalação para atualizações de recursos ou de qualidade dispara uma política para restaurar a atualização anterior em seus computadores com Windows 10.  
 
-- Num dispositivo Windows 10, após uma atualização de qualidade é revertida com êxito, os utilizadores finais continuam a ver a atualização listada no **definições do Windows** > **atualiza**  >  **Histórico de atualização**.  
+- Em um dispositivo Windows 10, depois que uma atualização de qualidade for revertida com êxito, os usuários finais continuarão vendo a atualização listada nas **configurações** >  > do Windows**Atualizar histórico** **de atualizações.**  
 
-- Para atualizações de funcionalidades especificamente, o tempo, pode desinstalar a atualização de funcionalidade é limitado de 2-60 dias, conforme configurado pela definição de atualização de anéis de atualização **período (2 – 60 dias) de desinstalação de atualização de funcionalidades do conjunto**. Não é possível reverter uma atualização de funcionalidade que foi instalada num dispositivo após a atualização de funcionalidade foi instalada para o período de tempo superior configurada período de desinstalação.  
+- Para atualizações de recursos especificamente, o tempo que você pode desinstalar a atualização de recurso é limitado de 2-60 dias, conforme configurado pela configuração de atualização de anéis de atualização **definir o período de desinstalação da atualização de recurso (2 a 60 dias)** . Não é possível reverter uma atualização de recurso que foi instalada em um dispositivo após a instalação da atualização do recurso por mais tempo do que o período de desinstalação configurado.  
 
-  Por exemplo, considere uma cadência de atualização com uma funcionalidade de desinstalação de atualizações de período de 20 dias. Após 25 dias optar por revertê-lo a atualização mais recente do recurso e utilize a opção de desinstalação.  Dispositivos que instalaram a atualização de funcionalidade há mais de 20 dias não é possível desinstalá-lo como foram removidos os bits necessários como parte da sua manutenção. No entanto, os dispositivos que apenas instalaram a atualização de funcionalidade cópia de segurança para 19 dias atrás podem desinstalar a atualização se eles com êxito der entrada para receber o comando de desinstalação antes de exceder o período de desinstalação de 20 dias.  
+  Por exemplo, considere um anel de atualização com um período de desinstalação de atualização de recurso de 20 dias. Depois de 25 dias, você decide reverter a atualização de recursos mais recente e usar a opção de desinstalação.  Os dispositivos que instalaram a atualização de recursos há mais de 20 dias não podem desinstalá-lo, pois eles removeram os bits necessários como parte de sua manutenção. No entanto, os dispositivos que instalaram apenas a atualização de recursos até 19 dias atrás poderão desinstalar a atualização se eles fizerem check-in com êxito para receber o comando de desinstalação antes de exceder o período de desinstalação de 20 dias.  
 
-Para obter mais informações sobre as políticas de atualização do Windows, consulte [atualizar CSP](https://docs.microsoft.com/windows/client-management/mdm/update-csp) na documentação de gestão de cliente do Windows.  
+Para obter mais informações sobre políticas de Windows Update, consulte [Update CSP](https://docs.microsoft.com/windows/client-management/mdm/update-csp) na documentação de gerenciamento de cliente do Windows.  
 
 #### <a name="to-uninstall-the-latest-windows-10-update"></a>Para desinstalar a atualização mais recente do Windows 10  
-1. Ao visualizar a página de descrição geral para um anel de atualização em pausa, selecione **desinstalação**.  
-2. Selecione entre as opções disponíveis para desinstalar o **funcionalidade** ou **qualidade** atualizações e, em seguida, selecione **OK**.  
-3. Depois de acionar a desinstalação para o tipo de uma atualização, pode selecionar desinstalar novamente para desinstalar o tipo de atualização restantes.  
+1. Ao exibir a página Visão geral de um anel de atualização em pausa, selecione **desinstalar**.  
+2. Selecione entre as opções disponíveis para desinstalar as atualizações de **recurso** ou **qualidade** e, em seguida, selecione **OK**.  
+3. Depois de disparar a desinstalação para um tipo de atualização, você pode selecionar desinstalar novamente para desinstalar o tipo de atualização restante.  
 
-## <a name="migrate-update-settings-to-the-azure-portal"></a>Migrar definições de atualização para o portal do Azure  
-O portal clássico do Azure também tem um número limitado de outras definições de atualizações do Windows 10 no perfil de configuração do dispositivo. Se tiver qualquer uma destas definições configuradas quando migrar para o portal do Azure, recomendamos vivamente que siga o seguinte procedimento:  
+## <a name="migrate-update-settings-to-the-azure-portal"></a>Migrar configurações de atualização para o portal do Azure  
+O portal clássico do Azure também tem um número limitado de outras definições de atualizações do Windows 10 no perfil de configuração do dispositivo. Se você tiver uma dessas configurações configuradas ao migrar para o portal do Azure, é altamente recomendável que você faça as seguintes ações:  
 
 1. No portal do Azure, crie anéis de atualização do Windows 10 com as definições de que precisa. A definição **Permitir funcionalidades de pré-lançamento** não é suportada no portal do Azure, porque já não é aplicável às compilações do Windows 10 mais recentes. Pode configurar as outras três definições, bem como outras definições de atualizações do Windows 10, quando cria os anéis de atualização.  
 
    > [!NOTE]  
    > As definições das atualizações do Windows 10 criadas no portal clássico não são apresentadas no portal do Azure após a migração. No entanto, estas definições são aplicadas. Se migrar qualquer uma destas definições e editar a política migrada a partir do portal do Azure, estas definições serão removidas da política.  
 
-2. Elimine as definições de atualização no portal clássico. Depois de migrar para o portal do Azure e adicionar as mesmas definições a uma cadência de atualização, terá de eliminar as definições no portal clássico para evitar potenciais conflitos de políticas. Por exemplo, quando a mesma definição está configurada com valores diferentes, não existe um conflito. Não existem é uma forma fácil de saber por que motivo a definição configurada no portal clássico não apresentada no portal do Azure.  
+2. Elimine as definições de atualização no portal clássico. Depois de migrar para o portal do Azure e adicionar as mesmas definições a uma cadência de atualização, terá de eliminar as definições no portal clássico para evitar potenciais conflitos de políticas. Por exemplo, quando a mesma definição está configurada com valores diferentes, não existe um conflito. Não há uma maneira fácil de saber porque a configuração configurada no portal clássico não é exibida na portal do Azure.  
 
-## <a name="next-steps"></a>Passos Seguintes
-[Windows atualizar as definições suportadas pelo Intune](windows-update-settings.md)  
+## <a name="next-steps"></a>Passos seguintes
+[Configurações do Windows Update com suporte pelo Intune](windows-update-settings.md)  
 
 [Relatórios de conformidade do Intune para atualizações](windows-update-compliance-reports.md)
+
+[Solução de problemas de anéis de atualização do Windows 10](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Troubleshooting-Windows-10-Update-Ring-Policies/ba-p/714046)
 

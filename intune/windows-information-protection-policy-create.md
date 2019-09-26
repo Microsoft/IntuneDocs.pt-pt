@@ -1,14 +1,13 @@
 ---
-title: Política de proteção de aplicações do Windows Information Protection (WIP)
+title: Política de proteção de aplicativo WIP (proteção de informações do Windows)
 titleSuffix: Microsoft Intune
 description: Criar e implementar a política de proteção de aplicações do Windows Information Protection (WIP) com o Microsoft Intune
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/15/2019
+ms.date: 08/23/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8aaa94428a5a8606a7ba05f0661e96600f24e2d4
-ms.sourcegitcommit: 8c795b041cd39e3896595f64f53ace48be0ec84c
+ms.openlocfilehash: 869491098afc9e68ea1bbcb21bf6e7720e80564c
+ms.sourcegitcommit: c8cb314256c4896e838918f015ffaefb8f00ace5
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/16/2019
-ms.locfileid: "59587421"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "71303236"
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Criar e implementar a política de proteção de aplicações do Windows Information Protection (WIP) com o Intune
 
@@ -37,15 +36,15 @@ Tem de compreender alguns conceitos ao adicionar uma política WIP:
 
 ### <a name="list-of-allowed-and-exempt-apps"></a>Lista de aplicações permitidas e excluídas
 
--   **Aplicações protegidas:** Estas aplicações são as aplicações que precisam de cumprir esta política.
+- **Aplicativos protegidos:** Esses aplicativos são os aplicativos que precisam aderir a essa política.
 
--   **Excluir aplicações:** Estas aplicações estão excluídas desta política e podem aceder a dados empresariais sem restrições.
+- **Aplicativos isentos:** Esses aplicativos são isentos dessa política e podem acessar dados corporativos sem restrições.
 
 ### <a name="types-of-apps"></a>Tipos de aplicações
 
--   **Aplicações recomendadas:** Uma lista preenchida previamente de (em grande parte do Microsoft Office) que pode facilmente importar para a política.
--   **Aplicações de Store:** Pode adicionar qualquer aplicação da loja Windows à política.
--   **Aplicativos de desktop do Windows:** Pode adicionar qualquer aplicativos de desktop tradicionais do Windows à política (por exemplo, .exe,. dll)
+- **Aplicativos recomendados:** Uma lista preenchida previamente de aplicativos (principalmente Microsoft Office) que permitem importar facilmente para a política.
+- **Aplicativos da loja:** Você pode adicionar qualquer aplicativo da Windows Store à política.
+- **Aplicativos da área de trabalho do Windows:** Você pode adicionar todos os aplicativos tradicionais da área de trabalho do Windows à política (por exemplo,. exe,. dll)
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
@@ -56,8 +55,8 @@ Para poder criar uma política de proteção de aplicações do WIP, tem de conf
 
 Além disso, tem de ter a seguinte licença e atualização:
 
--   Licença do [Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium)
--   [Atualização para Criativos do Windows](https://blogs.windows.com/windowsexperience/2017/04/11/how-to-get-the-windows-10-creators-update/#o61bC2PdrHslHG5J.97)
+- Licença do [Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium)
+- [Atualização para Criativos do Windows](https://blogs.windows.com/windowsexperience/2017/04/11/how-to-get-the-windows-10-creators-update/#o61bC2PdrHslHG5J.97)
 
 
 
@@ -77,11 +76,11 @@ Depois de configurar o Intune na sua organização, pode criar uma política esp
 4. Selecione **Políticas de proteção de aplicações** no painel **Aplicações do cliente**.
 5. Selecione **Adicionar uma política** para apresentar o painel **Adicionar uma política**.
 6. Adicione os seguintes valores:
-    - **Nome:** Escreva um nome (obrigatório) para a nova política.
-    - **Descrição:** (Opcional) Escreva uma descrição.
-    - **Plataforma:** Escolher **Windows 10** como a plataforma suportada para a política de proteção de aplicações.
-    - **Estado da inscrição:** Escolher **sem inscrição** como o estado de inscrição para a sua política.
-7.  Selecione **Criar**. A política é criada e apresentada na tabela no painel **Políticas de proteção de aplicações**.
+    - **Nomes** Digite um nome (obrigatório) para sua nova política.
+    - **Descrição:** Adicional Digite uma descrição.
+    - **Plataforma** Escolha **Windows 10** como a plataforma com suporte para sua política de proteção de aplicativo.
+    - **Estado do registro:** Escolha **sem registro** como o estado de registro para a política.
+7. Selecione **Criar**. A política é criada e apresentada na tabela no painel **Políticas de proteção de aplicações**.
 
 ## <a name="to-add-recommended-apps-to-your-protected-apps-list"></a>Para adicionar aplicações recomendadas à lista de aplicações protegidas
 
@@ -150,11 +149,11 @@ Depois de desativar o WIP, é realizada uma tentativa para desencriptar quaisque
 
 ### <a name="add-a-protection-mode"></a>Adicionar um modo de proteção
 
-1.  No painel **Adicionar política**, selecione o nome da sua política e, em seguida, selecione **Definições necessárias**.
+1. No painel **Adicionar política**, selecione o nome da sua política e, em seguida, selecione **Definições necessárias**.
 
-    ![Captura de ecrã do painel de modo de aprendizagem](./media/learning-mode-sc1.png)
+    ![Captura de tela do painel de modo de aprendizado](./media/learning-mode-sc1.png)
 
-1.  Selecione uma definição e, em seguida, selecione **Guardar**.
+1. Selecione uma definição e, em seguida, selecione **Guardar**.
 
 ### <a name="use-wip-learning"></a>Utilizar a Aprendizagem de WIP
 
@@ -188,12 +187,12 @@ Além de definir a opção **Permitir que o Indexador do Windows Search procure 
 
 Depois de criar a política de proteção de aplicações do WIP, tem de a implementar na sua organização através da MAM.
 
-1.  No painel **Políticas de aplicações**, selecione a política de proteção de aplicações criada recentemente e, em seguida, selecione **Grupos de utilizadores** > **Adicionar grupo de utilizadores**.
+1. No painel **Políticas de aplicações**, selecione a política de proteção de aplicações criada recentemente e, em seguida, selecione **Grupos de utilizadores** > **Adicionar grupo de utilizadores**.
 
     É apresentada uma lista de grupos de utilizadores, composta por todos os grupos de segurança no Azure Active Directory, no painel **Adicionar grupo de utilizadores**.
 
-2.  Selecione o grupo ao qual pretende aplicar a sua política e, em seguida, escolha **Selecionar** para implementá-la.
+2. Selecione o grupo ao qual pretende aplicar a sua política e, em seguida, escolha **Selecionar** para implementá-la.
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Passos seguintes
 
 Para saber mais sobre o Windows Information Protection, veja [Proteger os dados empresariais com o Windows Information Protection (WIP)](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip).

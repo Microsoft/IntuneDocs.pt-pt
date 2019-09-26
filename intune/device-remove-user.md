@@ -8,7 +8,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 53c4e02f32fa421c745f5bfa15e97023f47ece88
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
+ms.openlocfilehash: ab6325cac0e41a2d1b52c959b13dea3d85044e25
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59897465"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71304680"
 ---
 # <a name="remove-a-user-from-a-shared-ios-device"></a>Remover um utilizador de um dispositivo iOS partilhado
 
@@ -41,14 +40,13 @@ A ação **Remover utilizador** elimina um utilizador selecionado da cache local
 
 ## <a name="remove-a-user"></a>Remover um utilizador
 
-1. Inicie sessão no [portal do Azure](https://portal.azure.com).
-2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
+1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. No painel **Intune**, selecione **Dispositivos**.
 4. No painel **Dispositivos**, selecione **Todos os dispositivos**.
 5. Na lista de dispositivos que gere, selecione um dispositivo iOS.
 6. No painel do dispositivo, selecione **Utilizadores**.
 7. Na lista, clique com o botão direito do rato no utilizador que pretende remover e, em seguida, selecione **Remover utilizador**.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
 - Para ver o estado da ação **Remover utilizador**, selecione **Dispositivos** > **Ações do dispositivo**.

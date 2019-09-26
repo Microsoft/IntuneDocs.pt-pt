@@ -1,14 +1,13 @@
 ---
 title: Adicionar manualmente a aplicação Portal da Empresa do Windows 10
 titleSuffix: Microsoft Intune
-description: Saiba como sua força de trabalho pode adicionar manualmente a aplicação Portal da empresa do Windows 10 a seus PCs da Microsoft Store.
+description: Saiba como sua força de funcionários pode adicionar manualmente o aplicativo do Windows 10 Portal da Empresa ao seu PC por meio do Microsoft Store.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/19/2018
+ms.date: 07/26/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a55993e564297016c6c926c6d3be46c32fe1d86b
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 50846ae3bfdea435a24e0a387817b5b1a96cf535
+ms.sourcegitcommit: 293dfbea2b4756bb9b7df1705a2b5f752dfaa807
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57394499"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "71303158"
 ---
 # <a name="manually-add-the-windows-10-company-portal-app-by-using-microsoft-intune"></a>Adicionar manualmente a aplicação Portal da Empresa do Windows 10 através do Microsoft Intune
 
@@ -47,24 +46,25 @@ Para gerir dispositivos e instalar aplicações, os seus utilizadores podem inst
 3. Selecione **Obter a aplicação** para adquirir e adicionar a aplicação offline Portal da Empresa ao seu inventário.
 4. Na página da aplicação **Portal da empresa**, selecione **Gerir**.
 5. Em **Plataforma**, selecione **Todos os dispositivos Windows 10**, e, em seguida, selecione a **Versão mínima** adequada, a **Arquitetura** e os valores de **metadados da aplicação Transferir**. 
-6. Selecione **Transferir** para guardar o ficheiro no seu computador local.
+6. Selecione **baixar** em **detalhes do pacote** para salvar o arquivo em seu computador local.
 
-    ![Dispositivos Windows 10, em que arquitetura é igual a X86, está selecionada](./media/Win10CP-all-devices.png)
+    ![Dispositivos Windows 10, em que arquitetura é igual a x86, é selecionado](./media/Win10CP-all-devices.png)
 
 7. Transfira todos os pacotes em "Arquiteturas necessárias" ao selecionar **Transferir**.  
-    Esta ação deve ser concluída para as arquiteturas x86, x64 e ARM, e perfazer um total de 12 pacotes.
-8. Antes de carregar a aplicação Portal da empresa ao Intune, crie uma pasta (por exemplo: Portal de C:\Company) com os pacotes estruturados da seguinte forma:
-   - Coloque o pacote do Portal da Empresa na pasta C:\Portal da Empresa. Crie também uma subpasta *Dependências* nesta localização.  
 
-     ![Pasta Dependências guardada com o ficheiro APPXBUN](./media/Win10CP-Dependencies-save.png)
+    Esta ação deve ser concluída para arquiteturas x86, x64 e ARM:<br> 
+    *Há 9 pacotes de estrutura necessários ao selecionar 1507 como a versão mínima do sistema operacional, 12 pacotes ao selecionar 1511 e 15 pacotes ao selecionar 1607.*
 
-   - Coloque os pacotes de dependências na pasta *Dependências*. 
+8. No Microsoft Intune no portal do Azure, carregue a aplicação Portal da Empresa como uma nova aplicação. Você adiciona o aplicativo selecionando aplicativo de linha de negócios como o **tipo de aplicativo** no painel **Adicionar aplicativo** . Em seguida, selecione o arquivo de pacote do aplicativo (extensão. AppxBundle).
+
+9. Em **selecionar arquivos de aplicativo de dependência** , selecione todas as dependências que você baixou na etapa 7 usando Shift-clique e verifique se a coluna **adicionada** exibe **Sim** para as arquiteturas de que você precisa.
 
      > [!NOTE]
-     > Se as dependências não forem colocadas no formato correto, o Intune não consegue reconhecer e carregar os ficheiros durante o carregamento do pacote, o que fará com que o carregamento falhe e apresente um erro.
+     > Se as dependências não forem adicionadas, o aplicativo poderá não ser instalado nos tipos de dispositivo especificados.
 
-9. No Microsoft Intune no portal do Azure, carregue a aplicação Portal da Empresa como uma nova aplicação. 
-10. Atribua a aplicação Portal da Empresa como obrigatória para o conjunto de utilizadores-alvo que selecionou.  
+10. Clique em **OK**, insira as **informações de aplicativo**desejadas e clique em **Adicionar**.
+
+11. Atribua o aplicativo Portal da Empresa como um aplicativo necessário ao conjunto selecionado de grupos de usuários ou dispositivos.  
 
 Para obter mais informações sobre como o Intune processa as dependências de aplicações Universais, veja [Deploying an appxbundle with dependencies via Microsoft Intune MDM](https://blogs.technet.microsoft.com/configmgrdogs/2016/11/30/deploying-an-appxbundle-with-dependencies-via-microsoft-intune-mdm/) (Implementar um appxbundle com dependências através da MDM do Microsoft Intune).  
 
@@ -106,7 +106,7 @@ Veja a seguir como pode assinar e atribuir a aplicação desta forma:
 
 Quando a execução do script tiver terminado, este irá transmitir a versão assinada da aplicação Portal da Empresa do Windows 10. Em seguida, pode atribuir a versão assinada da aplicação como uma aplicação de linha de negócio (LOB) através do Intune, que atualiza as versões atualmente atribuídas a esta aplicação nova.  
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Passos seguintes
 
 - [Atribuir aplicações a grupos](apps-deploy.md)
 

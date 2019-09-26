@@ -8,7 +8,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 02/26/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f1fbf8f37b989112025bd6d54328dd61246913f7
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 88c3292405f159874c2a9fc1d4357e15152603c4
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57400216"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "71304965"
 ---
 # <a name="data-intune-sends-to-apple"></a>Dados que o Intune envia para a Apple
 
@@ -44,7 +43,7 @@ A seguinte tabela lista os dados que o Microsoft Intune envia de um dispositivo 
 |---|---| ---|
 | [APNS](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/3-MDM_Protocol/MDM_Protocol.html#//apple_ref/doc/uid/TP40017387-CH3-SW2) | Token, PushMagic | Se o servidor aceitar o dispositivo, o dispositivo fornece o seu token de notificação push ao servidor. O servidor deve utilizar este token para enviar mensagens push para o dispositivo. Esta mensagem de registo também contém uma cadeia PushMagic. O servidor tem de memorizar esta cadeia e incluí-la em todas as mensagens push que enviar para o dispositivo. |
 | [ASM/DEP](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/3-MDM_Protocol/MDM_Protocol.html#//apple_ref/doc/uid/TP40017387-CH3-SW2) | Token do servidor | Token de dispositivo de notificação push utilizado para autenticar no serviço da Apple. |
-| ASM/DEP | server_name | Um nome identificável para o servidor MDM. |
+| ASM/DEP | nome_do_servidor | Um nome identificável para o servidor MDM. |
 | ASM/DEP | uuid_do_servidor | Um identificador de servidor gerado pelo sistema. |
 | ASM/DEP | id_do_administrador | Um ID Apple da pessoa que gerou os tokens atualmente em utilização. |
 | ASM/DEP | nome_da_organização | O nome da organização. |

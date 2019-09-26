@@ -1,14 +1,13 @@
 ---
 title: Como eliminar apenas os dados empresariais das aplicações
 titleSuffix: Microsoft Intune
-description: Saiba como eliminar seletivamente apenas dados empresariais de aplicações geridas do Intune com o Microsoft Intune.
+description: Saiba como Apagar seletivamente somente dados corporativos de aplicativos gerenciados pelo Intune com o Microsoft Intune.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/24/2019
+ms.date: 07/08/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 83cc1f43faba1ee98bde680b1ff2b74c78ff65e4
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 0f444288e46a933576606429f170753217182e78
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57389495"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "71305356"
 ---
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>Como eliminar apenas dados empresariais de aplicações geridas pelo Intune
 
@@ -32,35 +31,35 @@ ms.locfileid: "57389495"
 Quando um dispositivo se perde ou é roubado ou se o funcionário sair da sua empresa, quer ter a certeza de que os dados empresariais da aplicação são removidos do dispositivo. No entanto, é recomendável não remover os dados pessoais do dispositivo, especialmente se o dispositivo pertencer ao funcionário.
 
 >[!NOTE]
-> O iOS, Android e Windows 10 plataformas são as únicas plataformas atualmente suportadas para eliminar os dados empresariais das aplicações geridas pelo Intune. Intune as aplicações geridas são aplicações que incluem o SDK da aplicação Intune e tem uma conta de usuário licenciado para a sua organização. Implementação de políticas de proteção de aplicações não são necessários para ativar a eliminação seletiva de aplicações.
+> As plataformas iOS, Android e Windows 10 são as únicas plataformas com suporte no momento para apagar dados corporativos de aplicativos gerenciados pelo Intune. Os aplicativos gerenciados do Intune são aplicativos que incluem o SDK de aplicativo do Intune e têm uma conta de usuário licenciado para sua organização. A implantação de políticas de proteção de aplicativo não é necessária para habilitar o apagamento seletivo do aplicativo.
 
 Para remover seletivamente os dados de aplicações da empresa, utilize os passos neste tópico para criar um pedido de eliminação de dados. Depois de concluir o pedido, da próxima vez que a aplicação for executada no dispositivo, os dados da empresa são removidos da aplicação. Para além de criar um pedido de eliminação, pode configurar uma eliminação seletiva dos dados da sua organização como uma nova ação, caso as definições de Acesso de Políticas de Proteção de Aplicações (APP) não sejam cumpridas. Esta funcionalidade ajuda-o a proteger e remover automaticamente dados confidenciais da organização de aplicações com base em critérios pré-configurados.
 
 >[!IMPORTANT]
 > Os contactos sincronizados diretamente da aplicação para o livro de endereços nativo são removidos. Não é possível eliminar contactos que sejam sincronizados do livro de endereços nativo para outra origem externa. Atualmente, é aplicável apenas à aplicação Microsoft Outlook.
 
-## <a name="deployed-wip-policies-without-user-enrollment"></a>Políticas implementadas do WIP sem inscrição de utilizadores
-Políticas de Windows Information Protection (WIP) podem ser implementadas sem a necessidade dos utilizadores MDM inscrever o dispositivo Windows 10. Esta configuração permite que as empresas protejam os seus documentos empresariais com base na configuração do WIP, o que permite que o utilizador mantenha a gestão dos seus próprios dispositivos Windows. Assim que os documentos estiverem protegidos com uma política WIP, os dados protegidos poderão ser eliminados seletivamente por um administrador do Intune. Ao selecionar o utilizador e o dispositivo, e ao enviar um pedido de eliminação de dados, todos os dados protegidos através da política WIP ficarão inutilizáveis. A partir do Intune no portal do Azure, selecione **aplicação de cliente** > **eliminação seletiva de aplicações**. Para obter mais informações, veja [Criar e implementar a política de proteção de aplicações do Windows Information Protection (WIP) com o Intune](windows-information-protection-policy-create.md).
+## <a name="deployed-wip-policies-without-user-enrollment"></a>Políticas WIP implantadas sem registro de usuário
+As políticas de WIP (proteção de informações do Windows) podem ser implantadas sem exigir que os usuários do MDM registrem seu dispositivo Windows 10. Esta configuração permite que as empresas protejam os seus documentos empresariais com base na configuração do WIP, o que permite que o utilizador mantenha a gestão dos seus próprios dispositivos Windows. Assim que os documentos estiverem protegidos com uma política WIP, os dados protegidos poderão ser eliminados seletivamente por um administrador do Intune. Ao selecionar o utilizador e o dispositivo, e ao enviar um pedido de eliminação de dados, todos os dados protegidos através da política WIP ficarão inutilizáveis. No Intune na portal do Azure, selecione**apagamento seletivo do aplicativo**de **aplicativo** > cliente. Para obter mais informações, veja [Criar e implementar a política de proteção de aplicações do Windows Information Protection (WIP) com o Intune](windows-information-protection-policy-create.md).
 
 ## <a name="create-a-wipe-request"></a>Criar um pedido de eliminação
 
-1.  Inicie sessão no [portal do Azure](https://portal.azure.com).
+1. Inicie sessão no [portal do Azure](https://portal.azure.com).
 
-2.  Selecione **Todos os serviços**, introduza **Intune** na caixa de texto de filtro e selecione **Intune**. Quando o painel Intune for aberto, selecione o painel **Aplicações do cliente**.
+2. Selecione **Todos os serviços**, introduza **Intune** na caixa de texto de filtro e selecione **Intune**. Quando o painel Intune for aberto, selecione o painel **Aplicações do cliente**.
 
     ![Captura de ecrã a mostrar o painel Microsoft Intune](./media/apps-selective-wipe01.png)
 
-3.  No **painel Aplicações cliente**, selecione **Eliminação seletiva da aplicação**.
+3. No **painel Aplicações cliente**, selecione **Eliminação seletiva da aplicação**.
 
-4.  Selecione **Novo pedido de eliminação**. É aberta a página **Novo pedido de eliminação**.
+4. Selecione **Novo pedido de eliminação**. É aberta a página **Novo pedido de eliminação**.
 
     ![Captura de ecrã da página Novo pedido de eliminação](./media/AzurePortal_MAM_NewWipeRequest.png)
 
-5.  Selecione um utilizador e, em seguida, selecione **Selecionar** para selecionar um utilizador cujos dados da aplicação quer apagar.
+5. Selecione um utilizador e, em seguida, selecione **Selecionar** para selecionar um utilizador cujos dados da aplicação quer apagar.
 
-6.  Em seguida, selecione **Dispositivo** no painel **Novo pedido de apagamento**. Esta ação abre o painel **Selecionar Dispositivo**, que apresenta uma lista com todos os dispositivos associados ao utilizador selecionado e também disponibiliza duas colunas: o nome do dispositivo, que é um nome amigável definido pelo utilizador, e o tipo de dispositivo, a plataforma do dispositivo. Selecione o dispositivo que pretende eliminar.
+6. Em seguida, selecione **Dispositivo** no painel **Novo pedido de apagamento**. Esta ação abre o painel **Selecionar Dispositivo**, que apresenta uma lista com todos os dispositivos associados ao utilizador selecionado e também disponibiliza duas colunas: o nome do dispositivo, que é um nome amigável definido pelo utilizador, e o tipo de dispositivo, a plataforma do dispositivo. Selecione o dispositivo que pretende eliminar.
 
-7.  Está agora novamente no painel **Novo pedido de apagamento**. Selecione **OK** para fazer um pedido de apagamento.
+7. Está agora novamente no painel **Novo pedido de apagamento**. Selecione **OK** para fazer um pedido de apagamento.
 
 O serviço cria e controla um pedido de eliminação separado para cada aplicação protegida no dispositivo, bem como o utilizador associado ao pedido de eliminação.
 
@@ -68,7 +67,7 @@ O serviço cria e controla um pedido de eliminação separado para cada aplicaç
 
 Pode obter um relatório resumido que mostra o estado geral do pedido de eliminação e inclui o número de pedidos pendentes e de falhas. Para obter mais detalhes, siga estes passos:
 
-1.  No painel **Aplicações Cliente – Eliminação seletiva da aplicação**, pode ver a lista dos pedidos agrupados por utilizadores. Uma vez que o sistema cria um pedido de eliminação para cada aplicação protegida em execução no dispositivo, poderá ver múltiplos pedidos para um utilizador. O estado indica se um pedido de eliminação está **pendente**, **falhou** ou se teve **êxito**.
+1. No painel **Aplicações Cliente – Eliminação seletiva da aplicação**, pode ver a lista dos pedidos agrupados por utilizadores. Uma vez que o sistema cria um pedido de eliminação para cada aplicação protegida em execução no dispositivo, poderá ver múltiplos pedidos para um utilizador. O estado indica se um pedido de eliminação está **pendente**, **falhou** ou se teve **êxito**.
 
     ![Captura de ecrã do estado do pedido de eliminação no painel Eliminação seletiva de aplicações](./media/wipe-request-status-1.png)
 
@@ -81,15 +80,15 @@ Além disso, pode ver o nome do dispositivo e o respetivo tipo de dispositivo, o
 
 As eliminações em estado pendente são apresentadas até que as elimine manualmente. Para eliminar manualmente um pedido de eliminação:
 
-1.  No painel **Aplicações Cliente – Eliminação seletiva da aplicação**.
+1. No painel **Aplicações Cliente – Eliminação seletiva da aplicação**.
 
-2.  Na lista, clique com o botão direito do rato no pedido de eliminação que pretende eliminar e, em seguida, selecione **Eliminar pedido de eliminação**.
+2. Na lista, clique com o botão direito do rato no pedido de eliminação que pretende eliminar e, em seguida, selecione **Eliminar pedido de eliminação**.
 
     ![Captura de ecrã da lista do pedido de eliminação no painel Eliminação seletiva de aplicações](./media/delete-wipe-request.png)
 
-3.  Quando lhe for pedido para confirmar a eliminação, escolha **Sim** ou **Não** e, em seguida, clique em **OK**.
+3. Quando lhe for pedido para confirmar a eliminação, escolha **Sim** ou **Não** e, em seguida, clique em **OK**.
 
-### <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Consulte também
 [O que é uma política de proteção de aplicações](app-protection-policy.md)
 
 [O que é a gestão de aplicações](app-management.md)

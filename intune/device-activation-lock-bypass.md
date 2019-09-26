@@ -8,21 +8,21 @@ ms.author: erikje
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 9ca3b0ba-e41c-45fb-af28-119dff47c59f
+ms.reviewer: coferro
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 406a08788663603340ab4af78217a07e68e66604
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
+ms.openlocfilehash: 962202b3d46d7e162f564e35fd5d58946f406358
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59898416"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71303654"
 ---
 # <a name="bypass-activation-lock-on-supervised-ios-devices-with-intune"></a>Ignorar o Bloqueio de Ativação em dispositivos iOS Supervisionados com o Intune
 
@@ -73,8 +73,7 @@ Antes de poder ignorar o Bloqueio de Ativação em dispositivos, tem de ativá-l
 
 A ação remota de dispositivos **Ignorar Bloqueio de Ativação** do Intune remove o Bloqueio de Ativação de um dispositivo iOS sem exigir o Apple ID e a palavra-passe do utilizador. Depois de ignorar o Bloqueio de Ativação, o dispositivo ativa novamente o Bloqueio de Ativação quando a aplicação Encontrar o Meu iPhone é iniciada. Ignore o Bloqueio de Ativação apenas se tiver acesso físico ao dispositivo.
 
-1. Inicie sessão no [portal do Azure](https://portal.azure.com).
-2. Selecione **Todos os serviços** > **Intune**.
+1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. No painel do **Intune**, selecione **Dispositivos**.
 4. No painel **Dispositivos**, selecione **Todos os dispositivos**.
 5. Na lista de dispositivos que gere, selecione a ação remota de dispositivos **Ignorar Bloqueio de Ativação**.
@@ -83,10 +82,10 @@ A ação remota de dispositivos **Ignorar Bloqueio de Ativação** do Intune rem
     >[!NOTE]
     >Copie o código para ignorar antes de limpar o dispositivo. Se repuser as definições do dispositivo antes de copiar o código, este será removido do Azure.
 
-7.  Aceda ao painel **Descrição geral** do dispositivo e, em seguida, selecione **Limpar**.
-8.  Depois de repor o dispositivo, é-lhe pedido o *ID Apple* e a *Palavra-passe*. Deixe o campo *ID* em branco e, em seguida, introduza o **código para ignorar** no campo *palavra-passe*. Esta ação remove a conta do dispositivo. 
+7. Aceda ao painel **Descrição geral** do dispositivo e, em seguida, selecione **Limpar**.
+8. Depois de repor o dispositivo, é-lhe pedido o *ID Apple* e a *Palavra-passe*. Deixe o campo *ID* em branco e, em seguida, introduza o **código para ignorar** no campo *palavra-passe*. Esta ação remove a conta do dispositivo. 
 
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
 Pode determinar o estado do pedido de desbloqueio na página de detalhes do dispositivo na carga de trabalho **Gerir dispositivos**.

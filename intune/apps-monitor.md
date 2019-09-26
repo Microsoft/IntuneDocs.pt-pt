@@ -6,9 +6,8 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/12/2019
+ms.date: 07/22/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 041a8198f8017bff88e139e4020e3364c05be5c8
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
-ms.translationtype: HT
+ms.openlocfilehash: b4c1db48d0e61db88c3f6336e06be606cbf24462
+ms.sourcegitcommit: 8023ba7d42e61bd37305c69f52a649cf83bf72e2
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59899640"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "71305259"
 ---
 # <a name="monitor-app-information-and-assignments-with-microsoft-intune"></a>Monitorizar informações e atribuições da aplicação com o Microsoft Intune
 
@@ -31,14 +30,13 @@ ms.locfileid: "59899640"
 
 O Intune fornece várias formas de monitorizar as propriedades de aplicações que gere e de gerir o estado de atribuição da aplicação.
 
-1. Inicie sessão no [portal do Azure](https://portal.azure.com).
-2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
-3. No menu **Intune**, selecione **Aplicações do cliente**.
+1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+3. No painel **Intune**, selecione **Aplicações do cliente**.
 4. Na secção **Gerir** do menu, selecione **Aplicações**.
 5. Na lista de aplicações, selecione uma aplicação a monitorizar. Em seguida, verá o painel de aplicações, que inclui uma descrição geral do estado dos dispositivos e dos utilizadores.
 
 > [!NOTE]
-> As aplicações Android Store que são implementadas como **Disponíveis** e as aplicações LOB para Android implementadas como **Disponíveis com ou sem inscrição** não comunicam o estado de instalação.
+> As aplicações da Loja Android que são implementadas como **Disponíveis** não comunicam o respetivo estado de instalação.
 
 ## <a name="app-overview-pane"></a>Painel Descrição geral da aplicação
 
@@ -50,7 +48,7 @@ A secção **Essentials** contém as seguintes informações sobre a aplicação
  | **Detalhes da aplicação**            | **Descrição**                                                      |
 |------------------------|------------------------------------------------------------------|
 | **Publicador**          | O publicador da aplicação.                                            |
-| **Sistema operativo**   | O sistema operativo da aplicação (Windows, iOS, Android, etc.). |
+| **Sistema Operacional**   | O sistema operativo da aplicação (Windows, iOS, Android, etc.). |
 | **Criado**             | A data e hora em que esta revisão foi criada. <b>**Nota**: este valor de data é atualizado quando um administrador de TI altera os metadados da aplicação, por exemplo, altera a categoria ou a descrição da aplicação.                        |
 | **Atribuído**           | Se a aplicação foi atribuída (**Sim** ou **Não**).                  |
 
@@ -59,19 +57,14 @@ Os gráficos mostram o número de aplicações para os seguintes estados:
 
 | **Estado do dispositivo**       | **Descrição**                                       |
 |-----------------------|-------------------------------------------------------|
-| **Instalada**         | O número de aplicações instaladas.                         |
+| **Recém-instalado**         | O número de aplicações instaladas.                         |
 | **Não Instalado**     | O número de aplicações não instaladas.                     |
-| **Falhou**            | O número de instalações falhadas.                   |
+| **Falha ao**            | O número de instalações falhadas.                   |
 | **Instalação Pendente**   | O número de aplicações no processo de serem instaladas. |
 | **Não Aplicável**           | O número de aplicações em que o estado não é aplicável.            |
 
 > [!NOTE]
-> O número de aplicações detetadas pode não corresponder à contagem de estados de instalação da aplicação. As causas de possíveis inconsistências incluem:
->    - A alteração de direcionamento numa aplicação gerida instalada pode fazer com que a contagem de instalações no painel Estado diminua, embora continue a ser incluída nas aplicações detetadas.
->    - Abranger múltiplas instâncias da mesma aplicação num inquilino irá resultar em contagens diferentes, devido à potencial sobreposição de utilizadores ou dispositivos. Cada instância da aplicação irá contabilizar os utilizadores sobrepostos, mas as aplicações detetadas apresentarão contagens duplicadas.
->    - As aplicações detetadas e o estado da aplicação são recolhidos em intervalos de tempo diferentes, o que pode provocar uma discrepância nas contagens de aplicações.
-> 
-> Além disso, lembre-se de que as aplicações Android implementadas como **Disponíveis com ou sem inscrição** apenas comunicam o estado de instalação das aplicações dos dispositivos inscritos. O estado de instalação das aplicações não está disponível para dispositivos que não estão inscritos no Intune.
+> Lembre-se de que os aplicativos LOB Android (. APK) implantado como **disponível com ou sem registro** apenas o status de instalação do aplicativo de relatório para dispositivos registrados. O estado de instalação das aplicações não está disponível para dispositivos que não estão inscritos no Intune.
 
 ### <a name="device-install-status"></a>Estado de instalação do dispositivo
 
@@ -94,14 +87,14 @@ Uma lista de estados do utilizador é apresentada ao selecionar **Estado de inst
 
 | **Coluna do utilizador**     | **Descrição**                           |
 |---------------------|-------------------------------------------|
-| **Nome**            | O nome do utilizador no Azure Active Directory.         |
+| **Name**            | O nome do utilizador no Azure Active Directory.         |
 | **Nome de utilizador**       | O nome exclusivo do utilizador.              |
 | **Instalações**   | O número de aplicações instaladas pelo utilizador. |
 | **Falhas**        | O número de falhas nas instalações das aplicações para o utilizador.     |
 | **Não instalado**   | O número de aplicações não instaladas pelo utilizador. |
 
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
 - Para obter mais informações sobre como trabalhar com os dados do seu Intune, veja [Utilizar o Armazém de Dados do Intune](reports-nav-create-intune-reports.md).
 - Para saber mais sobre as políticas de configuração de aplicações, veja [Políticas de configuração de aplicações do Intune](app-configuration-policies-overview.md).

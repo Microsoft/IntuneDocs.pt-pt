@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 66abce3b3dd2adc645695c9aab5fe6729713bbdc
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.translationtype: MT
+ms.contentlocale: pt-PT
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "71301805"
+---
 
 1. Inicie sessão no [portal do Azure](https://portal.azure.com).  
 2. Selecione **Todos os Serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.  
@@ -5,5 +13,5 @@
 4. Localize e selecione a sua aplicação na lista de aplicações.  
 5. No painel **Descrição geral**, selecione **Propriedades**.  
 6. Selecione **Ficheiro de pacote de aplicação**.  
-7. Selecione no ícone da pasta e procure a localização do seu ficheiro de aplicação atualizado. Selecione **Abrir**. As informações da aplicação são atualizadas com as informações do pacote.  
+7. Selecione no ícone da pasta e procure a localização do seu ficheiro de aplicação atualizado. Selecione **Open** (Abrir). As informações da aplicação são atualizadas com as informações do pacote.  
 8. Verifique se a **Versão da aplicação** reflete o pacote de aplicação atualizado.  

@@ -1,14 +1,12 @@
 ---
-title: Definições de VPN para dispositivos macOS no Microsoft Intune
-titleSuffix: ''
-description: Saiba mais sobre as definições do Intune que pode utilizar para configurar ligações VPN em dispositivos macOS.
+title: Definir configurações de VPN para dispositivos macOS no Microsoft Intune-Azure | Microsoft Docs
+description: Adicione ou crie um perfil de configuração de VPN (rede virtual privada), incluindo os detalhes da conexão, túnel dividido, configurações de VPN personalizadas com os pares identificador, chave e valor, configurações de proxy com um script de configuração, endereço IP ou FQDN e porta TCP em Microsoft Intune em dispositivos que executam o macOS.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/6/2018
+ms.date: 09/09/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -16,14 +14,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f752ec33ca7a69d698ffe2c06c726f3881cc35ce
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
-ms.translationtype: HT
+ms.openlocfilehash: ed9796a71343ce6d35e62056ece87783ea3b354b
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59900609"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71303287"
 ---
-# <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-macos"></a>Configurar definições de VPN no Microsoft Intune para dispositivos com macOS
+# <a name="add-vpn-settings-on-macos-devices-in-microsoft-intune"></a>Adicionar configurações de VPN em dispositivos macOS no Microsoft Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -31,21 +29,28 @@ Este artigo mostra as definições do Intune que pode utilizar para configurar l
 
 Consoante as definições que escolher, nem todos os valores na lista seguinte serão configuráveis.
 
+## <a name="before-you-begin"></a>Antes de começar
+
+[Criar um perfil de configuração do dispositivo](vpn-settings-configure.md).
+
+> [!NOTE]
+> Essas configurações estão disponíveis para todos os tipos de registro. Para obter mais informações sobre os tipos de registro, consulte [registro do MacOS](macos-enroll.md).
+
 ## <a name="base-vpn-settings"></a>Definições de VPN Base
 
-**Nome da ligação** – Introduza um nome para esta ligação. Os utilizadores finais verão este nome quando procurarem no dispositivo a lista de ligações VPN disponíveis.
-- **Endereço IP ou FQDN** – forneça o endereço IP ou nome de domínio completamente qualificado do servidor VPN ao qual os dispositivos são ligados. Exemplos: **192.168.1.1**, **vpn.contoso.com**.
-- **Método de autenticação** – escolha como os dispositivos serão autenticados no servidor VPN em:
-    - **Certificados** – Em **Certificado de autenticação**, escolha um perfil de certificado SCEP ou PKCS que criou anteriormente para autenticar a ligação. Para obter mais detalhes sobre os perfis de certificado, veja [Como configurar certificados](certificates-configure.md).
-    - **Nome de utilizador e palavra-passe** – Os utilizadores finais têm de indicar um nome de utilizador e uma palavra-passe para iniciar sessão no servidor VPN.
-- **Tipo de ligação** – selecione o tipo de ligação VPN a partir da seguinte lista de fornecedores:
-    - **Check Point Capsule VPN**
-    - **Cisco AnyConnect**
-    - **SonicWall Mobile Connect**
-    - **F5 Edge Client**
-    - **Pulse Secure**
-    - **VPN Personalizada**
-- **Dividir túnel** - **Ative** ou **Desative** esta opção para permitir que os dispositivos decidam qual a ligação a utilizar consoante o tráfego. Por exemplo, um utilizador num hotel utiliza a ligação VPN para aceder aos ficheiros de trabalho, mas utiliza a rede padrão do hotel para a navegação normal na Internet.
+**Nome da conexão**: Insira um nome para esta conexão. Os utilizadores finais verão este nome quando procurarem no dispositivo a lista de ligações VPN disponíveis.
+- **Endereço IP ou FQDN**: Forneça o endereço IP ou o nome de domínio totalmente qualificado do servidor VPN ao qual os dispositivos se conectam. Exemplos: **192.168.1.1**, **vpn.contoso.com**.
+- **Método de autenticação**: Escolha como os dispositivos são autenticados no servidor VPN de:
+  - **Certificados**: Em **certificado de autenticação**, escolha um perfil de certificado SCEP ou PKCS criado anteriormente para autenticar a conexão. Para obter mais informações sobre os perfis de certificado, veja [Como configurar certificados](certificates-configure.md).
+  - **Nome de usuário e senha**: Os usuários finais devem fornecer um nome de usuário e senha para fazer logon no servidor VPN.
+- **Tipo de conexão**: Selecione o tipo de conexão VPN na lista de fornecedores a seguir:
+  - **Check Point Capsule VPN**
+  - **Cisco AnyConnect**
+  - **SonicWall Mobile Connect**
+  - **F5 Edge Client**
+  - **Pulse Secure**
+  - **VPN Personalizada**
+- **Túnel dividido**: **Habilite** ou **desabilite** essa opção que permite que os dispositivos decidam qual conexão usar dependendo do tráfego. Por exemplo, um utilizador num hotel utiliza a ligação VPN para aceder aos ficheiros de trabalho, mas utiliza a rede padrão do hotel para a navegação normal na Internet.
 
 <!--- **Per-app VPN** - Select this option if you want to associate this VPN connection with an iOS or macOS app so that the connection will be opened when the app is run. You can associate the VPN profile with an app when you assign the software. For more information, see [How to assign and monitor apps](apps-deploy.md). --->
 
@@ -53,12 +58,17 @@ Consoante as definições que escolher, nem todos os valores na lista seguinte s
 
 Se tiver selecionado **VPN Personalizada**, configure estas definições adicionais:
 
-- **Identificador VPN** – É o identificador da aplicação VPN que está a utilizar e é disponibilizado pelo seu fornecedor de VPN.
-- **Introduzir pares de chave e valor para os atributos de VPN personalizados** – Adicione ou importe **Chaves** e **Valores** para personalizar a ligação VPN. Mais uma vez, estes valores são habitualmente disponibilizados pelo seu fornecedor de VPN.
-
+- **Identificador de VPN**: Insira um identificador para o aplicativo VPN que você está usando. Esse identificador é fornecido pelo seu provedor de VPN.
+- **Insira os pares de chave e valor para os atributos de VPN personalizados**: Adicione ou importe **chaves** e **valores** que personalizam sua conexão VPN. Esses valores normalmente são fornecidos pelo seu provedor de VPN.
 
 ## <a name="proxy-settings"></a>Definições de proxy
 
-- **Script de configuração automática** – Utilize um ficheiro para configurar o servidor proxy. Introduza o **URL do servidor proxy**, que contém o ficheiro de configuração. Por exemplo, introduza `http://proxy.contoso.com`.
-- **Endereço** – Introduza o endereço do servidor proxy (como um endereço IP).
-- **Número de porta** – Introduza o número de porta associado ao servidor proxy.
+- **Script de configuração automática**: Use um arquivo para configurar o servidor proxy. Introduza o **URL do servidor proxy**, que contém o ficheiro de configuração. Por exemplo, introduza `http://proxy.contoso.com`.
+- **Endereço**: Insira o endereço do servidor proxy (como um endereço IP).
+- **Número da porta**: Insira o número da porta associada ao servidor proxy.
+
+## <a name="next-steps"></a>Passos seguintes
+
+O perfil está criado, mas ainda não está ativo. Em seguida, [atribua o perfil](device-profile-assign.md) e [monitorize o estado](device-profile-monitor.md).
+
+Defina as configurações de VPN em dispositivos [Android](vpn-settings-android.md), [Android Enterprise](vpn-settings-android-enterprise.md), [Ios](vpn-settings-ios.md)e [Windows 10](vpn-settings-windows-10.md) .

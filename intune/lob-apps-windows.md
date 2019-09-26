@@ -6,9 +6,8 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/10/2019
+ms.date: 07/29/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0eadff455a25a22d53d58d87790a356072f9db66
-ms.sourcegitcommit: b0cf661145ccc6e3518db620af199786a623a0d9
+ms.openlocfilehash: eae10cc2a7e1965d83d2c0c59d138b44eafcddf0
+ms.sourcegitcommit: 3baa9965095bb874d9b8c7a3cbb4aa925ed52cae
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64764722"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "71303388"
 ---
 # <a name="add-a-windows-line-of-business-app-to-microsoft-intune"></a>Adicionar aplicações de linha de negócio Windows ao Microsoft Intune
 
@@ -33,8 +32,7 @@ Uma aplicação de linha de negócio (LOB) é uma aplicação que adiciona a par
 
 ## <a name="step-1-specify-the-software-setup-file"></a>Passo 1: Especificar o ficheiro de configuração do software
 
-1. Inicie sessão no [portal do Azure](https://portal.azure.com).
-2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
+1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. No painel **Intune**, selecione **Aplicações do cliente**.
 4. Na carga de trabalho **Aplicações do cliente**, selecione **Gerir** > **Aplicações**.
 5. Acima da lista de aplicações, selecione **Adicionar**.
@@ -63,7 +61,7 @@ Uma aplicação de linha de negócio (LOB) é uma aplicação que adiciona a par
     - **Apresentar como aplicação em destaque no Portal da Empresa**: Apresente a aplicação de forma bem visível na página principal do portal da empresa quando os utilizadores procurarem aplicações.
     - **URL de informações**: opcionalmente, introduza o URL de um site que contenha informações sobre a aplicação. O URL aparece no portal da empresa.
     - **URL de privacidade**: opcionalmente, introduza o URL de um site que contenha informações sobre a privacidade da aplicação. O URL aparece no portal da empresa.
-    - **Argumentos da linha de comandos**: opcionalmente, pode introduzir qualquer argumento da linha de comandos que pretenda aplicar ao ficheiro .msi quando este for executado.  Um exemplo é **/q**. Não inclua o comando msiexec ou os argumentos, tal como **/i** ou **/x**, como são utilizadas automaticamente. Para obter mais informações, consulte [opções de linha de comandos](https://docs.microsoft.com/windows/desktop/Msi/command-line-options). 
+    - **Argumentos da linha de comandos**: opcionalmente, pode introduzir qualquer argumento da linha de comandos que pretenda aplicar ao ficheiro .msi quando este for executado.  Um exemplo é **/q**. Não inclua o comando msiexec ou argumentos, como **/i** ou **/x**, pois eles são usados automaticamente. Para obter mais informações, consulte [Opções de linha de comando](https://docs.microsoft.com/windows/desktop/Msi/command-line-options). Se o. O arquivo MSI precisa de opções de linha de comando adicionais considere o uso do [Gerenciamento de aplicativos Win32](apps-win32-app-management.md).
     - **Programador**: opcionalmente, introduza o nome do programador da aplicação.
     - **Proprietário**: opcionalmente, introduza o nome do proprietário desta aplicação. Por exemplo, **Departamento de RH**.
     - **Notas**: introduza quaisquer notas que queira associar a esta aplicação.
@@ -79,6 +77,9 @@ Uma aplicação de linha de negócio (LOB) é uma aplicação que adiciona a par
 
 [!INCLUDE [shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]
 
+   > [!NOTE]
+   > Para que o serviço do Intune implante com êxito um novo arquivo Appx no dispositivo, você deve incrementar `Version` a cadeia de caracteres no arquivo AppxManifest. xml em seu pacote Appx.
+    
 ## <a name="configure-a-self-updating-mobile-msi-app-to-ignore-the-version-check-process"></a>Configurar uma aplicação MSI móvel de atualização automática para ignorar o processo de verificação da versão
 
 Pode configurar uma aplicação MSI móvel de atualização automática conhecida para ignorar o processo de verificação da versão. 
@@ -87,7 +88,7 @@ Algumas aplicações baseadas no programa de instalação MSI são automaticamen
 
 Esta funcionalidade é útil para evitar que ocorra uma condição race. Por exemplo, pode ocorrer uma condição race quando a aplicação é atualizada automaticamente pelo programador e pelo Intune. Ambos podem tentar impor uma versão da aplicação num cliente Windows, o que cria um conflito.
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Passos seguintes
 
 - A aplicação criada aparece na lista de aplicações. Agora pode atribuí-la aos grupos que escolher. Para obter ajuda, veja [Como atribuir aplicações a grupos](apps-deploy.md).
 

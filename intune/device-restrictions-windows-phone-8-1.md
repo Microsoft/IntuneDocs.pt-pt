@@ -8,7 +8,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c75923440b8b8147f7ed75a06df2435ed6eb0981
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 3bcfad3937b4ab6f533cd7ac915a964f2551be45
+ms.sourcegitcommit: 1d4aec7b79c70d35ec3fc29df6ff9c6a1403412e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565286"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "71302294"
 ---
 # <a name="microsoft-intune-windows-phone-81-device-restriction-settings"></a>Definições de restrição de dispositivos Windows Phone 8.1 no Microsoft Intune
 
@@ -32,30 +31,30 @@ Este artigo mostra-lhe as definições de restrição de dispositivos do Microso
 
 ## <a name="general"></a>Geral
 
--   **Câmara** – Permite ou bloqueia a câmara do dispositivo.
--   **Copiar e colar** – Permite ou bloqueia a funcionalidade de copiar e colar nos dispositivos.
--   **Armazenamento amovível** – Permite ao dispositivo utilizar armazenamento amovível, como cartões SD.
--   **Geolocalização** – Permite ao dispositivo utilizar informações de localização.
--   **Conta Microsoft** – Permita ou bloqueie a ligação de uma conta Microsoft ao dispositivo por parte do utilizador.
--   **Captura de ecrã** – Permite ao utilizador capturar o conteúdo do ecrã como um ficheiro de imagem.
--   **Submissão de dados de diagnóstico** – Permite ao dispositivo enviar informações de diagnóstico para a Microsoft.
--   **Sincronização de contas de e-mail personalizadas** – Permite ao dispositivo ligar-se a contas de e-mail não Microsoft.
+- **Câmara** – Permite ou bloqueia a câmara do dispositivo.
+- **Copiar e colar** – Permite ou bloqueia a funcionalidade de copiar e colar nos dispositivos.
+- **Armazenamento amovível** – Permite ao dispositivo utilizar armazenamento amovível, como cartões SD.
+- **Geolocalização** – Permite ao dispositivo utilizar informações de localização.
+- **Conta Microsoft** – Permita ou bloqueie a ligação de uma conta Microsoft ao dispositivo por parte do utilizador.
+- **Captura de ecrã** – Permite ao utilizador capturar o conteúdo do ecrã como um ficheiro de imagem.
+- **Submissão de dados de diagnóstico** – Permite ao dispositivo enviar informações de diagnóstico para a Microsoft.
+- **Sincronização de contas de e-mail personalizadas** – Permite ao dispositivo ligar-se a contas de e-mail não Microsoft.
 
 ## <a name="password"></a>Palavra-passe
 
--   **Palavra-passe** – exija que o utilizador final introduza uma palavra-passe para aceder ao dispositivo.
-    -   **Tipo de palavra-passe necessária** – Especifica o tipo de palavra-passe que será necessária, como alfanumérica ou apenas numérica.
-    -   **Comprimento mínimo da palavra-passe** – Especifica o número mínimo de carateres necessários na palavra-passe.
-    -   **Palavras-passe simples** – Especifica que se pode utilizar palavras-passe simples, como “0000” e “1234”.
-    -   **Número de falhas de início de sessão antes de eliminar os dados do dispositivo** – Especifica o número de vezes que uma palavra-passe incorreta pode ser introduzida antes de os dados do dispositivo serem eliminados.
-    -   **Máximo de minutos de inatividade até o ecrã bloquear** – Especifica a quantidade de tempo durante o qual um dispositivo tem de permanecer inativo até o ecrã ser automaticamente bloqueado.
-    -   **Expiração de palavra-passe (dias)** – Especifica o número de dias antes de ser preciso alterar a palavra-passe do dispositivo.
-    -   **Impedir a reutilização de palavras-passe anteriores** – Especifica quantas palavras-passe utilizadas anteriormente podem ser memorizadas.
--   **Encriptação** – Requer que os dados nos dispositivos móveis suportados sejam encriptados.
+- **Palavra-passe** – exija que o utilizador final introduza uma palavra-passe para aceder ao dispositivo.
+  - **Tipo de palavra-passe necessária** – Especifica o tipo de palavra-passe que será necessária, como alfanumérica ou apenas numérica.
+  - **Comprimento mínimo da palavra-passe** – Especifica o número mínimo de carateres necessários na palavra-passe.
+  - **Palavras-passe simples** – Especifica que se pode utilizar palavras-passe simples, como “0000” e “1234”.
+  - **Número de falhas de início de sessão antes de eliminar os dados do dispositivo** – Especifica o número de vezes que uma palavra-passe incorreta pode ser introduzida antes de os dados do dispositivo serem eliminados.
+  - **Máximo de minutos de inatividade até o ecrã bloquear** – Especifica a quantidade de tempo durante o qual um dispositivo tem de permanecer inativo até o ecrã ser automaticamente bloqueado.
+  - **Expiração de palavra-passe (dias)** – Especifica o número de dias antes de ser preciso alterar a palavra-passe do dispositivo.
+  - **Impedir a reutilização de palavras-passe anteriores** – Especifica quantas palavras-passe utilizadas anteriormente podem ser memorizadas.
+- **Encriptação** – Requer que os dados nos dispositivos móveis suportados sejam encriptados.
 
 ## <a name="app-store"></a>App Store
 
--   **Loja de aplicações** – Permite que os utilizadores se liguem à loja de aplicações a partir do dispositivo.
+- **Loja de aplicações** – Permite que os utilizadores se liguem à loja de aplicações a partir do dispositivo.
 
 ## <a name="restricted-apps"></a>Aplicações restritas
 
@@ -74,24 +73,24 @@ Na página [Loja Windows Phone](https://www.microsoft.com/store/apps/windows-pho
 
 Abra a página da aplicação e copie o URL para a área de transferência. Agora, pode utilizar este URL na lista de aplicações permitidas ou bloqueadas.
 
-Exemplo: Procure na loja a aplicação Skype. O URL que deve utilizar é `http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51`.
+Exemplo: Pesquise o aplicativo Skype na loja. O URL que deve utilizar é `http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51`.
 
 
 
 ### <a name="additional-options"></a>Opções adicionais
 
-Também pode clicar em **Importar** para preencher a lista a partir de um ficheiro csv, no formato <*url da aplicação*>, <*nome da aplicação*>, <app publisher> ou clicar em **Exportar** para criar um ficheiro csv que inclua o conteúdo da lista de aplicações restritas no mesmo formato.
+Você também pode clicar em **importar** para popular a lista de um arquivo CSV no formato <*url do aplicativo*>, < nome do*aplicativo*>, < do*Publicador de aplicativos*> ou clique em **Exportar** para criar um arquivo CSV contendo o conteúdo da restrição lista de aplicativos no mesmo formato.
 
 
 ## <a name="browser"></a>Browser
 
--   **Browser** – Permite ou bloqueia o browser incorporado nos dispositivos.
+- **Browser** – Permite ou bloqueia o browser incorporado nos dispositivos.
 
 ## <a name="cellular-and-connectivity"></a>Rede Móvel e Conectividade
 
--   **Wi-Fi** – Ativa ou desativa a funcionalidade Wi-Fi do dispositivo.
--   **Tethering Wi-Fi** – Permite a utilização de tethering Wi-Fi no dispositivo.
--   **Ligar automaticamente a hotspots Wi-Fi** – Permite ao dispositivo ligar-se automaticamente a hotspots Wi-Fi gratuitos e aceitar automaticamente quaisquer termos de utilização.
--   **Relatórios de hotspots de Wi-Fi** – Envia informações sobre ligações Wi-Fi para ajudar o utilizador a detetar ligações próximas.
--   **NFC** – Ativa ou desativa operações que utilizam a comunicação de proximidade em dispositivos que a suportam.
--   **Bluetooth** – Ativa ou desativa a funcionalidade Bluetooth do dispositivo.
+- **Wi-Fi** – Ativa ou desativa a funcionalidade Wi-Fi do dispositivo.
+- **Tethering Wi-Fi** – Permite a utilização de tethering Wi-Fi no dispositivo.
+- **Ligar automaticamente a hotspots Wi-Fi** – Permite ao dispositivo ligar-se automaticamente a hotspots Wi-Fi gratuitos e aceitar automaticamente quaisquer termos de utilização.
+- **Relatórios de hotspots de Wi-Fi** – Envia informações sobre ligações Wi-Fi para ajudar o utilizador a detetar ligações próximas.
+- **NFC** – Ativa ou desativa operações que utilizam a comunicação de proximidade em dispositivos que a suportam.
+- **Bluetooth** – Ativa ou desativa a funcionalidade Bluetooth do dispositivo.

@@ -1,13 +1,12 @@
 ---
 title: Criar perfis de dispositivo no Microsoft Intune – Azure | Microsoft Docs
-description: Adicione ou configure um perfil de configuração de dispositivos no Microsoft Intune. Selecione o tipo de plataforma, configure as definições e adicione uma etiqueta de âmbito.
+description: Adicione ou configure um perfil de configuração de dispositivos no Microsoft Intune. Selecione o tipo de plataforma, defina as configurações, adicione uma marca de escopo.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/03/2019
+ms.date: 09/04/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 08c6ece37a4ff6eceaa4df735f365453a4bc7d88
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
-ms.translationtype: HT
+ms.openlocfilehash: 5adb094dad9c9e09874c83daecd39ce1d45156ed
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59898858"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71303528"
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>Criar um perfil de dispositivo no Microsoft Intune
 
@@ -34,13 +33,14 @@ Este artigo:
 
 - Apresenta os passos para criar um perfil.
 - Mostra-lhe como adicionar uma etiqueta de âmbito para “filtrar” o perfil.
+- Descreve as regras de aplicabilidade em dispositivos Windows 10 e mostra como criar uma regra.
 - Apresenta os tempos de ciclos de atualização de entrada quando os dispositivos recebem perfis e atualizações de perfis.
 
 ## <a name="create-the-profile"></a>Criar o perfil
 
-1. No [portal do Azure](https://portal.azure.com), selecione **Todos os Serviços** > filtre o **Intune** > selecione  **Intune**.
+1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 
-2. Selecione **Configuração do dispositivo**. Tem as seguintes opções:
+2. Selecione **Configuração do dispositivo**. Você tem as seguintes opções:
 
     - **Descrição geral**: indica o estado dos perfis e fornece detalhes adicionais sobre os perfis que atribuiu aos utilizadores e dispositivos.
     - **Gerir**: crie perfis de dispositivo, carregue [scripts do PowerShell](intune-management-extension.md) personalizados para executar no perfil e adicione planos de dados aos dispositivos com o [eSIM](esim-device-configuration.md).
@@ -55,7 +55,7 @@ Este artigo:
 
        - **Android**
        - **Android Enterprise**
-       - **iOS**
+       - **iOS/iPadOS**
        - **macOS**
        - **Windows Phone 8.1**
        - **Windows 8.1 e posterior**
@@ -65,13 +65,13 @@ Este artigo:
    - **Definições**: Os seguintes artigos descrevem as definições para cada tipo de perfil:
 
        - [Modelos administrativos](administrative-templates-windows.md)
-       - [Personalizar](custom-settings-configure.md)
+       - [Personalizado](custom-settings-configure.md)
        - [Otimização da entrega](delivery-optimization-windows.md)
        - [Funcionalidades do dispositivo](device-features-configure.md)
        - [Restrições de dispositivos](device-restrictions-configure.md)
        - [Atualização da edição e alteração do modo ](edition-upgrade-configure-windows-10.md)
        - [Educação](education-settings-configure.md)
-       - [E-mail](email-settings-configure.md)
+       - [e-mail](email-settings-configure.md)
        - [Proteção de ponto final](endpoint-protection-configure.md)
        - [Proteção de identidade](identity-protection-configure.md)  
        - [Modo de Quiosque](kiosk-settings.md)
@@ -84,7 +84,7 @@ Este artigo:
        - [Windows Defender ATP](advanced-threat-protection.md)
        - [Windows Information Protection](windows-information-protection-configure.md)
 
-     Por exemplo, se selecionar **iOS** para a plataforma, as opções de tipo de perfil terão um aspeto semelhante ao seguinte perfil:
+     Por exemplo, se você selecionar **Ios/iPadOS** para a plataforma, suas opções de tipo de perfil são semelhantes ao seguinte perfil:
 
      ![Criar um perfil iOS no Intune](./media/create-device-profile.png)
 
@@ -98,36 +98,67 @@ Para obter mais informações sobre etiquetas de âmbito e o que pode fazer, vej
 
 ### <a name="add-a-scope-tag"></a>Adicionar etiqueta de âmbito
 
-1. Selecionar **Âmbito (Etiquetas)**.
+1. Selecionar **Âmbito (Etiquetas)** .
 2. Selecione **Adicionar** para criar uma nova etiqueta de âmbito. Em alternativa, selecione uma etiqueta de âmbito existente na lista.
 3. Selecione **OK** para guardar as alterações.
 
+## <a name="applicability-rules"></a>Regras de aplicabilidade
+
+Aplica-se a:
+
+- Windows 10 e posterior
+
+As regras de aplicabilidade permitem que os administradores direcionem dispositivos em um grupo que atenda a critérios específicos. Por exemplo, você cria um perfil de restrições de dispositivo que se aplica ao grupo **todos os dispositivos Windows 10** . E, você só quer o perfil atribuído a dispositivos que executam o Windows 10 Enterprise.
+
+Para executar essa tarefa, crie uma **regra de aplicabilidade**. Essas regras são ótimas para os seguintes cenários:
+
+- Você usa o Windows 10 Education (EDU). Na faculdade Bellows, você deseja direcionar todos os dispositivos EDU do Windows 10 entre RS3 e RS4.
+- Você deseja ter como alvo todos os usuários em recursos humanos na contoso, mas quer apenas dispositivos Windows 10 Professional ou Enterprise.
+
+Para abordar esses cenários, você:
+
+- Crie um grupo de dispositivos que inclua todos os dispositivos na faculdade Bellows. No perfil, adicione uma regra de aplicabilidade para que ela se aplique se a versão mínima `16299` do so for e a `17134`versão máxima for. Atribua esse perfil ao grupo de dispositivos do Bellows College.
+
+  Quando atribuído, o perfil se aplica a dispositivos entre as versões mínima e máxima inseridas. Para dispositivos que não estão entre as versões mínima e máxima inseridas, seu status aparece como **não aplicável**.
+
+- Crie um grupo de usuários que inclua todos os usuários em recursos humanos (RH) na contoso. No perfil, adicione uma regra de aplicabilidade para que ela se aplique a dispositivos que executam o Windows 10 Professional ou Enterprise. Atribua esse perfil ao grupo de usuários de RH.
+
+  Quando atribuído, o perfil se aplica a dispositivos que executam o Windows 10 Professional ou Enterprise. Para dispositivos que não estão executando essas edições, seu status aparece como **não aplicável**.
+
+- Se houver dois perfis com as mesmas configurações exatas, o perfil sem uma regra de aplicabilidade será aplicado. 
+
+  Por exemplo, o outfilea tem como destino o grupo de dispositivos Windows 10, habilita o BitLocker e não tem uma regra de aplicabilidade. ProfileB tem como alvo o mesmo grupo de dispositivos Windows 10, habilita o BitLocker e tem uma regra de aplicabilidade para aplicar apenas o perfil ao Windows 10 Enterprise.
+
+  Quando ambos os perfis são atribuídos, o perfila é aplicado porque ele não tem uma regra de aplicabilidade. 
+
+Quando você atribui o perfil aos grupos, as regras de aplicabilidade agem como um filtro e apenas direcionam os dispositivos que atendem aos seus critérios.
+
+### <a name="add-a-rule"></a>Adicionar uma regra
+
+1. Selecione **regras de aplicabilidade**. Você pode escolher a **regra**, a **Propriedade**e a **edição do sistema operacional**:
+
+    ![Adicionar uma regra de aplicabilidade a um perfil de configuração de dispositivo no Microsoft Intune](./media/applicability-rules.png)
+
+2. Em **regra**, escolha se deseja incluir ou excluir usuários ou grupos. As opções são:
+
+    - **Atribuir perfil se**: Inclui usuários ou grupos que atendem aos critérios inseridos.
+    - **Não atribuir perfil se**: Exclui usuários ou grupos que atendem aos critérios inseridos.
+
+3. Em **Propriedade**, escolha seu filtro. As opções são: 
+
+    - **Edição do sistema operacional**: Na lista, verifique as edições do Windows 10 que você deseja incluir (ou excluir) em sua regra.
+    - **Versão do so**: Insira os números de versão **mín** e **máx** do Windows 10 que você deseja incluir (ou excluir) em sua regra. Ambos os valores são obrigatórios.
+
+      Por exemplo, você pode inserir `10.0.16299.0` (RS3 ou 1709) para a versão mínima `10.0.17134.0` e (RS4 ou 1803) para a versão máxima. Ou, você pode ser mais granular e `10.0.16299.001` inserir para a versão `10.0.17134.319` mínima e para a versão máxima.
+
+4. Selecione **Adicionar** para salvar as alterações.
+
 ## <a name="refresh-cycle-times"></a>Tempos de ciclos de atualização
 
-O Intune utiliza os seguintes ciclos de atualização para verificar a existência de atualizações para os perfis de configuração:
-
-| Platform | Ciclo de atualização|
-| --- | --- |
-| iOS | A cada 6 horas |
-| macOS | A cada 6 horas |
-| Android | A cada 8 horas |
-| PCs com o Windows 10 inscritos como dispositivos | A cada 8 horas |
-| Windows Phone | A cada 8 horas |
-| Windows 8.1 | A cada 8 horas |
-
-Se o dispositivo tiver sido inscrito recentemente, a entrada é executada com mais frequência:
-
-| Platform | Frequência |
-| --- | --- |
-| iOS | A cada 15 minutos durante 6 horas e, em seguida, a cada 6 horas |  
-| macOS | A cada 15 minutos durante 6 horas e, em seguida, a cada 6 horas | 
-| Android | A cada 3 minutos durante 15 minutos, depois a cada 15 minutos durante 2 horas e, em seguida, a cada 8 horas | 
-| PCs com o Windows 10 inscritos como dispositivos | A cada 3 minutos durante 30 minutos e, em seguida, a cada 8 horas | 
-| Windows Phone | A cada 5 minutos durante 15 minutos, depois a cada 15 minutos durante 2 horas e, em seguida, a cada 8 horas | 
-| Windows 8.1 | A cada 5 minutos durante 15 minutos, depois a cada 15 minutos durante 2 horas e, em seguida, a cada 8 horas | 
+O Intune usa ciclos de atualização diferentes para verificar se há atualizações de perfis de configuração. Se o dispositivo tiver sido registrado recentemente, o check-in será executado com mais frequência. [Ciclos de atualização de política e perfil](device-profile-troubleshoot.md#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned) lista os tempos de atualização estimados.
 
 Em qualquer altura, os utilizadores podem abrir a aplicação do Portal da Empresa e sincronizar o dispositivo para verificarem imediatamente se existem as atualizações de perfis.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
 [Atribua o perfil](device-profile-assign.md) e [monitorize o respetivo estado](device-profile-monitor.md).

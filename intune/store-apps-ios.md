@@ -6,9 +6,8 @@ keywords: Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/19/2018
+ms.date: 08/27/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 454000ccc7ac2d6f531b5ab43bb7652541559992
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
-ms.translationtype: HT
+ms.openlocfilehash: 40bb5e1b14fa0c8c9b1af4e5a07e6a855808324a
+ms.sourcegitcommit: 6c74ff568267d85fd1d44fda75e3e24ead87cb2b
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59896121"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "71303132"
 ---
 # <a name="add-ios-store-apps-to-microsoft-intune"></a>Adicionar aplicações da loja iOS ao Microsoft Intune
 
@@ -41,15 +40,13 @@ Só pode atribuir aplicações com este método se forem gratuitas na App Store.
 >[!NOTE]
 >Ao trabalhar com o Microsoft Intune, recomendamos que utilize o browser Microsoft Edge ou Google Chrome.
 
-1. Inicie sessão no [portal do Azure](https://portal.azure.com).
-2. Selecione **Todos os serviços** > **Intune**.  
-    O Intune encontra-se na secção **Monitorização + Gestão**.
+1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. No painel **Intune**, selecione **Aplicações do cliente**.
 4. No painel da carga de trabalho **Aplicações do cliente**, em **Gerir**, selecione **Aplicações**.
 5. No painel **Aplicações**, selecione **Adicionar**.
 6. Na lista **Tipo de aplicação**, nos tipos de **Aplicação da loja**, selecione **iOS**.
 7. Selecione **Procurar na App Store**.
-8. No painel **Procurar na App Store**, selecione a região da App Store.
+8. No painel **Pesquisar na loja de aplicativos** , selecione a localidade país/região da loja de aplicativos.
 9. Na caixa **Procurar**, escreva o nome (ou parte do mesmo) da aplicação.  
     O Intune procura na loja e apresenta uma lista de resultados relevantes.
 10. Na lista de resultados, selecione a aplicação que pretende e, em seguida, selecione **Selecionar**.
@@ -74,6 +71,6 @@ Só pode atribuir aplicações com este método se forem gratuitas na App Store.
 
 A aplicação criada é apresentada na lista de aplicações, onde a pode atribuir aos grupos que selecionar.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
 - [Atribuir aplicações a grupos](apps-deploy.md)

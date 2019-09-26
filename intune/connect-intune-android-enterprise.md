@@ -6,30 +6,36 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 6/21/2018
+ms.date: 5/13/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
-ms.reviewer: chrisbal
+ms.reviewer: chmaguir
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 19efd0821deeac0e76c60ee67e6230da554391a0
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
-ms.translationtype: HT
+ms.openlocfilehash: bebf4e6fa5ed9e37937be6e7d25b6bd7a6523c23
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59898018"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71304000"
 ---
 # <a name="connect-your-intune-account-to-your-managed-google-play-account"></a>Ligue a conta do Intune à conta do Managed Google Play
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Para suportar o [Perfil de trabalho do Android Enterprise](android-work-profile-enroll.md), o [Android Enterprise totalmente gerido](android-fully-managed-enroll.md) e os [Dispositivos dedicados do Android Enterprise](android-kiosk-enroll.md), tem de ligar a conta de inquilino do Intune à conta do Managed Google Play.  
+
+Para facilitar a configuração e o uso do gerenciamento corporativo do Android, ao se conectar ao Google Play, o Intune adicionará automaticamente quatro aplicativos comuns do Android Enterprise ao console de administração do Intune. Os quatro aplicativos do Android Enterprise são os seguintes:
+
+- **[Microsoft Intune](https://play.google.com/store/apps/details?id=com.microsoft.intune)** -usados para cenários totalmente gerenciados do Android Enterprise.
+- **[Microsoft Authenticator](https://play.google.com/store/apps/details?id=com.azure.authenticator)** -ajuda você a entrar em suas contas se usar a verificação de dois fatores.
+- **[Portal da empresa do Intune](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)** -usado para as políticas de proteção de aplicativo (aplicativo) e cenários de perfil de trabalho do Android Enterprise.
+- [Tela inicial gerenciada](https://play.google.com/store/apps/details?id=com.microsoft.launcher.enterprise) -usada para cenários do Android Enterprise dedicado/quiosque.
 
 > [!NOTE]
 > Devido a uma interação entre os domínios da Google e da Microsoft, poderá ser necessário ajustar as definições do browser.  Certifique-se de que tanto "portal.azure.com" como "play.google.com" se encontram na mesma zona de segurança do seu browser.
@@ -54,12 +60,12 @@ Para suportar o [Perfil de trabalho do Android Enterprise](android-work-profile-
 
 ## <a name="disconnect-your-android-enterprise-administrative-account"></a>Desligar a conta administrativa do Android Enterprise
 
-Pode desativar a gestão e a inscrição do Android Enterprise. Para tal, tem de remover todos os dispositivos com perfil de trabalho do Android Enterprise inscritos. Em seguida, escolha **Desligar** na consola de administração do Intune para remover todos os dispositivos com perfil de trabalho do Android Enterprise e dispositivos dedicados inscritos. Esta ação também remove a relação entre a conta do Managed Google Play e o Intune.
+Pode desativar a gestão e a inscrição do Android Enterprise. Para fazer isso, primeiro você deve desativar qualquer dispositivo Android Enterprise registrado, incluindo dispositivos de perfil de trabalho, dispositivos dedicados e dispositivos totalmente gerenciados. Em seguida, escolha **Desconectar** no console de administração do Intune para remover todos os dispositivos de perfil de trabalho do Android Enterprise registrados, dispositivos dedicados e dispositivos totalmente gerenciados do registro. Esta ação também remove a relação entre a conta do Managed Google Play e o Intune.
 
-1. Como administrador do Intune, no [portal do Azure](https://portal.azure.com), selecione **Todos os Serviços** > **Monitorização + Gestão** > **Intune**.
+1. Como administrador do Intune, entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Selecione **Inscrição de dispositivos** > **Inscrição Android** > **Google Play Gerido** > **Desligar**.
 3. Selecione **Sim** para desligar e anular a inscrição dos dispositivos Android Enterprise do Intune.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
-Depois de ligar à conta do Managed Google Play, pode [configurar dispositivos com perfil de trabalho do Android Enterprise](android-work-profile-enroll.md) e [configurar dispositivos dedicados do Android Enterprise](android-kiosk-enroll.md).
+Depois de se conectar à conta de Google Play gerenciado, você pode [configurar dispositivos Android Enterprise Work Profile](android-work-profile-enroll.md), [configurar dispositivos Android Enterprise dedicados](android-kiosk-enroll.md) e [configurar dispositivos Android Enterprise totalmente gerenciados](android-kiosk-enroll.md)

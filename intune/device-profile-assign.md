@@ -5,9 +5,8 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/08/2019
+ms.date: 09/17/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0c950efdd95fd8d856ec677385712a022dead870
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
-ms.translationtype: HT
+ms.openlocfilehash: 568c1e0dfe711ef95c5713854315f65ecf16607c
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59898739"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71304725"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>Atribuir perfis de utilizador e dispositivo no Microsoft Intune
 
@@ -34,7 +33,7 @@ O artigo mostra como atribuir um perfil, inclui também alguma informação sobr
 
 ## <a name="assign-a-device-profile"></a>Atribuir um perfil do dispositivo
 
-1. No [portal do Azure](https://portal.azure.com), selecione **Todos os Serviços** > filtre o **Intune** > selecione  **Intune**.
+1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Selecione **Configuração do dispositivo** > **Perfis**. Todos os perfis são apresentados.
 3. Selecione o perfil que quer atribuir > **Atribuições**.
 4. Escolha **Incluir** ou **Excluir** grupos e, em seguida, selecione os grupos. Ao selecionar os seus grupos, estará a escolher um grupo do Azure AD. Para selecionar vários grupos, mantenha premida a tecla **Ctrl** e selecione os grupos.
@@ -52,25 +51,30 @@ Quando atribui o perfil, também pode **Avaliar** quantos utilizadores são afet
 
 Se o botão **Avaliar** ficar cinzento, verifique se o perfil foi atribuído a um ou mais grupos.
 
+## <a name="use-scope-tags-or-applicability-rules"></a>Usar marcas de escopo ou regras de aplicabilidade
 
-## <a name="use-scope-tags"></a>Utilizar etiquetas de âmbito
-
-Quando criar ou atualizar um perfil, também pode adicionar etiquetas de âmbito ao perfil.
+Ao criar ou atualizar um perfil, você também pode adicionar marcas de escopo e regras de aplicabilidade ao perfil.
 
 As **etiquetas de âmbito** são uma ótima forma de atribuir e filtrar políticas para grupos específicos, tais como Recursos Humanos ou Todos os funcionários dos EUA. Para obter mais informações, veja [Utilizar o RBAC e etiquetas de âmbito para TI distribuídas](scope-tags.md).
 
+Em dispositivos Windows 10, você pode adicionar **regras de aplicabilidade** para que o perfil se aplique somente a uma versão específica do sistema operacional ou a uma edição específica do Windows. [As regras de aplicabilidade](device-profile-create.md#applicability-rules) têm mais informações.
+
 ## <a name="exclude-groups-from-a-profile-assignment"></a>Excluir grupos de uma atribuição de perfis
 
-Os perfis de configuração de dispositivos do Intune permitem-lhe excluir grupos da atribuição de políticas. Por exemplo, pode atribuir um perfil de dispositivo ao grupo **Todos os utilizadores da empresa** e excluir membros do grupo **Equipa de Direção**.
+Os perfis de configuração de dispositivos do Intune permitem-lhe excluir grupos da atribuição de políticas.
 
-Ao excluir grupos, exclua apenas utilizadores ou grupos de dispositivos (e não uma mistura de grupos) de uma atribuição, dado que o Intune não contempla relações entre utilizador e dispositivo. Incluir grupos de utilizadores e excluir grupos de dispositivos poderá não gerar os resultados esperados. Ao utilizar grupos misturados ou se existirem outros conflitos, a inclusão terá prioridade sobre a exclusão.
+O Intune não analisa as relações de grupo de usuário para dispositivo. Incluir grupos de utilizadores e excluir grupos de dispositivos poderá não gerar os resultados esperados. Em cenários de grupo de usuários para grupo de usuários e grupos de dispositivos para dispositivos, a exclusão tem precedência sobre a inclusão.
 
-Por exemplo, suponha que pretende atribuir um perfil do dispositivo a todos os dispositivos na sua organização, exceto a dispositivos de local público. Deve incluir o grupo **Todos os Utilizadores** e excluir o grupo **Todos os Dispositivos**. Neste caso, a política será aplicada a todos os utilizadores e aos dispositivos deles, mesmo que esses dispositivos façam parte do grupo **Todos os Dispositivos**.
+Por exemplo, você atribui um perfil de dispositivo ao grupo de usuários **todos os usuários corporativos** , mas exclui membros do grupo de usuários da **equipe de gerenciamento sênior** . Como ambos os grupos são grupos de usuários, todos os membros da **equipe de gerenciamento sênior** são excluídos da política, mesmo que eles sejam membros do grupo **todos os usuários corporativos** .
 
-A exclusão contempla apenas os membros diretos do grupo. Não inclui dispositivos associados a um utilizador. No entanto, os dispositivos que não estiverem associados a um utilizador não receberão a política. Tal acontece porque esses dispositivos não têm qualquer relação com o grupo **Todos os Utilizadores**.
+A inclusão tem precedência sobre a exclusão ao usar grupos mistos, como grupo de usuários a dispositivo, ou grupo de grupos de dispositivos para usuários.
+
+Por exemplo, você deseja atribuir um perfil de dispositivo a todos os usuários em sua organização, exceto dispositivos de quiosque. Deve incluir o grupo **Todos os Utilizadores** e excluir o grupo **Todos os Dispositivos**. Neste caso, a política será aplicada a todos os utilizadores e aos dispositivos deles, mesmo que esses dispositivos façam parte do grupo **Todos os Dispositivos**.
+
+A exclusão contempla apenas os membros diretos do grupo. Não inclui dispositivos associados a um utilizador. No entanto, os dispositivos que não têm um usuário não obtêm a política. Esse comportamento ocorre porque os dispositivos sem usuários não têm nenhuma relação com o grupo **todos os usuários** .
 
 Se incluir o grupo **Todos os Dispositivos** e excluir **Todos os Utilizadores**, todos os dispositivos irão receber a política. Neste cenário, o objetivo é excluir desta política os dispositivos que tiverem um utilizador associado. No entanto, isto não exclui os dispositivos porque a exclusão só compara membros diretos do grupo.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
 Veja [monitorizar perfis de dispositivos](device-profile-monitor.md) para obter orientações sobre como monitorizar os perfis e os dispositivos que executam os seus perfis.

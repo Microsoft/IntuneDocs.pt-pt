@@ -1,13 +1,12 @@
 ---
 title: Políticas de conformidade de dispositivos no Microsoft Intune – Azure | Microsoft Docs
-description: Introdução à utilização das políticas de conformidade de dispositivos, à descrição geral de estados e níveis de gravidade, à utilização do estado InGracePeriod, ao trabalho com o acesso condicional, ao processamento de dispositivos sem uma política atribuída e às diferenças de conformidade no portal do Azure e no portal clássico no Microsoft Intune
+description: Comece a usar as políticas de conformidade do dispositivo, visão geral dos níveis de status e gravidade, usando o status do InGracePeriod, trabalhando com o acesso condicional, manipulando dispositivos sem uma política atribuída e as diferenças de conformidade no portal do Azure e Portal clássico no Microsoft Intune
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/08/2019
+ms.date: 05/22/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -16,18 +15,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: da0aa98774f25bf290391225c6ccae56a3859c22
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
-ms.translationtype: HT
+ms.openlocfilehash: b7519b07b3ac2d40734c32b79466c6d7f4f5d4e8
+ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59896053"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "71303963"
 ---
 # <a name="create-a-compliance-policy-in-microsoft-intune"></a>Criar uma política de conformidade no Microsoft Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-As políticas de conformidade de dispositivos são um elemento fundamental ao utilizar o Intune para proteger os recursos da sua organização. No Intune, pode criar regras e definições que os dispositivos têm de cumprir para serem considerados como estando em conformidade, como a versão mínima do SO. Se o dispositivo não estiver em conformidade, pode bloquear o acesso aos dados e recursos através do [acesso condicional](conditional-access.md).
+As políticas de conformidade de dispositivos são um elemento fundamental ao utilizar o Intune para proteger os recursos da sua organização. No Intune, pode criar regras e definições que os dispositivos têm de cumprir para serem considerados como estando em conformidade, como a versão mínima do SO. Se o dispositivo não estiver em conformidade, você poderá bloquear o acesso a dados e recursos usando o [acesso condicional](conditional-access.md).
 
 Também pode tomar medidas quanto à não conformidade, tais como enviar um e-mail de notificação ao utilizador. Para obter uma descrição geral do que fazem e como são utilizadas as políticas de conformidade, veja [introdução à conformidade de dispositivos](device-compliance-get-started.md).
 
@@ -45,7 +44,7 @@ Para utilizar as políticas de conformidade de dispositivos:
 - Utilize as seguintes subscrições:
 
   - Intune
-  - Se utilizar o acesso condicional, precisará da edição Premium do Azure Active Directory (AD). A página [Preços do Azure Active Directory](https://azure.microsoft.com/pricing/details/active-directory/) descreve as funcionalidades das diferentes edições. A conformidade no Intune não exige o Microsoft Azure AD.
+  - Se você usar o acesso condicional, precisará do Azure Active Directory (AD) Premium Edition. A página [Preços do Azure Active Directory](https://azure.microsoft.com/pricing/details/active-directory/) descreve as funcionalidades das diferentes edições. A conformidade no Intune não exige o Microsoft Azure AD.
 
 - Utilize uma plataforma suportada:
 
@@ -63,13 +62,13 @@ Para utilizar as políticas de conformidade de dispositivos:
 
 ## <a name="create-the-policy"></a>Criar a política
 
-1. No [portal do Azure](https://portal.azure.com), selecione **Todos os serviços** > filtre o **Intune** > selecione  **Intune**.
-2. Selecione **Conformidade do dispositivo**. Tem as seguintes opções:
+1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+2. Selecione **Conformidade do dispositivo**. Você tem as seguintes opções:
 
     - **Descrição geral**: mostra um resumo e o número de dispositivos conformes, não avaliados e assim por diante. Também apresenta as políticas e as definições individuais nas suas políticas. Para obter mais informações, veja [Monitorizar as políticas de conformidade dos dispositivos do Intune](compliance-policy-monitor.md).
     - **Gerir**: crie políticas de dispositivos, envie [notificações](quickstart-send-notification.md) para dispositivos não conformes e ative a [barreira de rede](use-network-locations.md).
     - **Monitorizar**: verifique o estado de conformidade dos dispositivos ao nível das definições e das políticas. O artigo [Monitorizar as políticas de conformidade dos dispositivos do Intune](compliance-policy-monitor.md) pode ser útil. Além disso, veja os registos e verifique o estado do agente de ameaças dos dispositivos.
-    - **Configurar**: utilize as [políticas de conformidade incorporadas](device-compliance-get-started.md#ways-to-deploy-device-compliance-policies), ative a [proteção avançada contra ameaças (ATP) do Windows Defender](advanced-threat-protection.md), adicione um [conector de defesa contra ameaças móveis](mobile-threat-defense.md) e utilize o [Jamf](conditional-access-integrate-jamf.md).
+    - **Configurar**: Use as [políticas de conformidade internas](device-compliance-get-started.md#ways-to-deploy-device-compliance-policies), habilite a [ATP (proteção avançada contra ameaças) do Microsoft defender](advanced-threat-protection.md), adicione um [conector de defesa contra ameaças móveis](mobile-threat-defense.md)e use o [JAMF](conditional-access-integrate-jamf.md).
 
 3. Selecione **Políticas** > **Criar Política**. Introduza as seguintes propriedades:
 
@@ -129,29 +128,9 @@ As etiquetas de âmbito são uma ótima forma de atribuir e filtrar políticas p
 
 ## <a name="refresh-cycle-times"></a>Tempos de ciclos de atualização
 
-Quando verifica a conformidade, o Intune utiliza o mesmo tempo de ciclo de atualização dos perfis de configuração. Em geral, os tempos são:
+O Intune usa ciclos de atualização diferentes para verificar se há atualizações de políticas de conformidade. Se o dispositivo tiver sido registrado recentemente, o check-in será executado com mais frequência. [Ciclos de atualização de política e perfil](device-profile-troubleshoot.md#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned) lista os tempos de atualização estimados.
 
-| Platform | Ciclo de atualização|
-| --- | --- |
-| iOS | A cada 6 horas |
-| macOS | A cada 6 horas |
-| Android | A cada 8 horas |
-| PCs com o Windows 10 inscritos como dispositivos | A cada 8 horas |
-| Windows Phone | A cada 8 horas |
-| Windows 8.1 | A cada 8 horas |
-
-Se o dispositivo tiver sido inscrito recentemente, a entrada de conformidade será executada com mais frequência:
-
-| Platform | Frequência |
-| --- | --- |
-| iOS | A cada 15 minutos durante 6 horas e, em seguida, a cada 6 horas |  
-| macOS | A cada 15 minutos durante 6 horas e, em seguida, a cada 6 horas | 
-| Android | A cada 3 minutos durante 15 minutos, depois a cada 15 minutos durante 2 horas e, em seguida, a cada 8 horas | 
-| PCs com o Windows 10 inscritos como dispositivos | A cada 3 minutos durante 30 minutos e, em seguida, a cada 8 horas | 
-| Windows Phone | A cada 5 minutos durante 15 minutos, depois a cada 15 minutos durante 2 horas e, em seguida, a cada 8 horas | 
-| Windows 8.1 | A cada 5 minutos durante 15 minutos, depois a cada 15 minutos durante 2 horas e, em seguida, a cada 8 horas | 
-
-Em qualquer altura, os utilizadores podem abrir a aplicação do Portal da Empresa e sincronizar o dispositivo para verificarem imediatamente a política.
+A qualquer momento, os usuários podem abrir o aplicativo Portal da Empresa e sincronizar o dispositivo para verificar imediatamente se há atualizações de política.
 
 ### <a name="assign-an-ingraceperiod-status"></a>Atribuir um estado InGracePeriod
 
@@ -159,9 +138,9 @@ O estado InGracePeriod de uma política de conformidade é um valor. Este valor 
 
 Mais concretamente, se um dispositivo tiver um estado NonCompliant para uma política de conformidade atribuída e:
 
-- o dispositivo não tiver um período de tolerância atribuído, então o valor atribuído para a política de conformidade é NonCompliant
-- o dispositivo tiver um período de tolerância expirado, então o valor atribuído para a política de conformidade é NonCompliant
-- o dispositivo tiver um período de tolerância futuro, então o valor atribuído para a política de conformidade é InGracePeriod
+- O dispositivo não tem nenhum período de carência atribuído a ele; em seguida, o valor atribuído para a política de conformidade é não compatível
+- O dispositivo tem um período de carência que expirou e, em seguida, o valor atribuído para a política de conformidade é não compatível
+- O dispositivo tem um período de carência no futuro e, em seguida, o valor atribuído para a política de conformidade é InGracePeriod
 
 A tabela seguinte apresenta um resumo destas opções:
 
@@ -177,19 +156,19 @@ Para obter mais informações sobre a monitorização de políticas de conformid
 
 Se um dispositivo tiver múltiplas políticas de conformidade e estados de conformidade diferentes para duas ou mais políticas de conformidade atribuídas, isso significa que está atribuído um único resultado de estado de conformidade. Esta atribuição baseia-se num nível de gravidade concetual atribuído a cada estado de conformidade. Cada estado de conformidade tem o seguinte nível de gravidade:
 
-|Estado  |Gravidade  |
+|State  |Severity  |
 |---------|---------|
-|Unknown     |1|
+|Desconhecido     |1|
 |NotApplicable     |2|
 |Compatível|3|
 |InGracePeriod|4|
 |NonCompliant|5|
-|Error|6|
+|Erro|6|
 
 Quando um dispositivo tem múltiplas políticas de conformidade, é atribuído o nível de gravidade mais elevado de todas as políticas a esse dispositivo.
 
 Por exemplo, um dispositivo tem três políticas de conformidade atribuídas: uma com o estado Desconhecido (gravidade = 1), outra com o estado Conforme (gravidade = 3) e uma com o estado Em Período de Tolerância (gravidade = 4). O estado Em Período de Tolerância tem o nível de gravidade mais elevado. Por isso, todas as três políticas têm o estado de conformidade Em Período de Tolerância.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
 [Monitorizar as políticas](compliance-policy-monitor.md).

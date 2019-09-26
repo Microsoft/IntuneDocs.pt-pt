@@ -7,12 +7,12 @@ ms.topic: include
 ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 041f37e56e85b0ac26a4dd7a9dbbdb49bc0ebd9e
-ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
+ms.openlocfilehash: 90c770fec5bd9456151e601188254a3a022cd13f
+ms.sourcegitcommit: 62c41976c4da43b36015b715bc255397ebb8c6ad
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71166353"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71279909"
 ---
 Esses avisos fornecem informações importantes que podem ajudá-lo a se preparar para futuras alterações e recursos do Intune. 
 
@@ -66,38 +66,6 @@ Você não precisa realizar nenhuma ação, mas pode considerar atualizar suas d
 #### <a name="additional-information"></a>Informações adicionais 
 https://aka.ms/intune_fullscreen
 
-### <a name="plan-for-change-intune-moving-to-support-ios-11-and-higher-in-september----4665324--"></a>Planejar alteração: O Intune está mudando para dar suporte ao iOS 11 e superior em setembro <!-- 4665324-->
-Em setembro, esperamos que o iOS 13 seja lançado pela Apple. O registro do Intune, o Portal da Empresa e o Managed Browser serão movidos para dar suporte ao iOS 11 e posterior logo após a liberação do iOS 13.
-
-#### <a name="how-does-this-affect-me"></a>Como é que isto me afeta?
-Contanto que os aplicativos móveis do O365 tenham suporte no iOS 11,0 e superior, isso pode não afetar você; Você provavelmente já atualizou seu sistema operacional ou dispositivos. No entanto, se você tiver qualquer um dos dispositivos listados abaixo, ou decidir registrar qualquer um dos dispositivos listados abaixo, saiba que os dispositivos abaixo não dão suporte a um sistema operacional maior do que o iOS 10. Esses dispositivos precisarão ser atualizados para um dispositivo que ofereça suporte ao iOS 11 ou superior:
-
-- iPhone 5
-- iPhone 5c
-- iPad (4ª geração)
-
-Se você usar políticas de proteção de aplicativo (aplicativo), também poderá definir a configuração de acesso "exigir o sistema operacional mínimo do iOS (somente aviso)".
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>O que preciso de fazer para me preparar para esta alteração?
-Verifique seus relatórios do Intune para ver quais dispositivos ou usuários podem ser afetados. Vá para **dispositivos** > **todos os dispositivos** e filtre por sistema operacional. Você pode adicionar colunas adicionais para ajudar a identificar quem em sua organização tem dispositivos que executam o iOS 10. Solicite que os usuários finais atualizem seus dispositivos para uma versão do sistema operacional com suporte antes de setembro.
-
-### <a name="plan-for-change-support-for-version-811-and-higher-of-intune-app-sdk-for-ios----3586942--"></a>Planejar alteração: Suporte para a versão 8.1.1 e superior do SDK de aplicativo do Intune para iOS <!-- 3586942-->
-A partir de setembro de 2019, o Intune será movido para dar suporte a aplicativos iOS com o SDK de aplicativos do Intune 8.1.1 e superior. Aplicativos criados com versões do SDK inferiores a 8.1.1 não terão mais suporte. Essa alteração entrará em vigor com o lançamento da Apple do iOS 13, que deve vir em volta de setembro e também ser anunciada em MC181399.
-
-#### <a name="how-does-this-affect-me"></a>Como é que isto me afeta?
-Com o SDK de aplicativo do Intune ou integração de encapsulamento de aplicativo, você pode proteger dados corporativos de aplicativos e usuários não aprovados por meio da criptografia de dados. O SDK de aplicativo do Intune para iOS usará chaves de criptografia de 256 bits por padrão quando a criptografia for habilitada por políticas de Proteção de Aplicativo do Intune (aplicativo). Após essa alteração, todos os aplicativos iOS em versões do SDK anteriores ao 8.1.1, que usam chaves de criptografia de 128 bits, não poderão mais compartilhar dados com aplicativos integrados com o SDK 8.1.1 ou usando as chaves de 256 bits. Todos os aplicativos iOS precisarão ter uma versão do SDK 8.1.1 ou superior para permitir o compartilhamento de dados protegidos.
-
-#### <a name="what-can-i-do-to-prepare-for-this-change"></a>O que posso fazer para me preparar para esta alteração?
-Verifique seus aplicativos Microsoft, de terceiros e de linha de negócios (LOB). Verifique se todos os aplicativos protegidos com o aplicativo do Intune estão usando o SDK versão 8.1.1 ou posterior.
-
-- Para aplicativos LOB: Talvez seja necessário republicar seus aplicativos integrados com o SDK versão 8.1.1 ou posterior. Recomendamos a versão mais recente do SDK. Para obter informações sobre como preparar seus aplicativos LOB para políticas de proteção de aplicativo, consulte [preparar aplicativos de linha de negócios para políticas de proteção de aplicativo](../apps-prepare-mobile-application-management.md).
-- Para aplicativos da Microsoft/de terceiros: Certifique-se de que você está implantando a versão mais recente desses aplicativos para seus usuários.
-
-Você também deve atualizar sua documentação ou orientação para o desenvolvedor, se aplicável, para incluir essa alteração no suporte para o SDK.
-
-#### <a name="additional-information"></a>Informações adicionais
-[Preparar aplicativos de linha de negócios para políticas de proteção de aplicativo](../apps-prepare-mobile-application-management.md)
-
 ### <a name="plan-for-change-new-windows-updates-settings-in-intune----4464404---"></a>Planejar alteração: Novas configurações de atualizações do Windows no Intune <!-- 4464404 -->
 A partir da versão de agosto para o serviço do Intune ou 1908, estamos adicionando novas "configurações de prazos", que podem ser configuradas em vez das configurações "permitir que o usuário reinicie (reinício envolvido)". Planejamos desabilitar as configurações de reinicialização envolvidas na interface do usuário no 1909 ou a atualização de setembro e, em seguida, removê-las completamente do console até o final de outubro. 
 
@@ -132,3 +100,19 @@ Abaixo, encontre uma lista de dispositivos comuns registrados no Intune que exec
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>O que preciso de fazer para me preparar para esta alteração?
 Encapsular seus aplicativos com o SDK de aplicativos do Intune mais recente. Você também pode definir a configuração de inicialização condicional "exigir versão mínima do so (somente aviso)" para notificar os usuários finais sobre os dispositivos pessoais a serem atualizados.
+
+
+### <a name="intune-plan-for-change-nearing-end-of-support-for-windows-7----3042987---"></a>Plano do Intune para alteração: próximo ao fim do suporte para o Windows 7 <!-- 3042987 -->
+À medida que recebemos a mensagem de MC148476 lançada no último de setembro de 2018 e novamente no MC176794 de março de 2019, o Windows 7 atinge o fim do suporte estendido em 14 de janeiro de 2020. Nesse momento, o Intune desativará o suporte para dispositivos que executam o Windows 7, para que possamos focar nosso investimento em dar suporte a tecnologias mais novas e fornecer novas experiências de usuário final. Após essa data, a assistência técnica e as atualizações automáticas que ajudam a proteger seu PC com Windows 7 não estarão mais disponíveis por meio do Intune. A Microsoft recomenda enfaticamente que você mude para o Windows 10 antes de janeiro de 2020, para evitar um cenário em que você precisa de serviço ou suporte que não esteja mais disponível. Leia mais sobre o ciclo de vida do suporte do Windows [aqui](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet).
+
+#### <a name="how-does-this-affect-me"></a>Como é que isto me afeta?
+Você está recebendo esta mensagem porque está gerenciando o PC do Windows 7 usando o agente de software de computador do Intune herdado. Com menos de um ano restante antes do fim do suporte estendido do Windows 7, incentivamos a sua organização a começar a atualizar para o Windows 10 assim que possível. Os recursos de gerenciamento de PC são criados diretamente no sistema operacional Windows 10, e você não precisa mais instalar um agente cliente, como o cliente de software do Intune para Windows 7. A partir do Windows 8.1, a Microsoft usa a arquitetura de MDM (gerenciamento de dispositivo móvel) para provisionar, configurar, atualizar e gerenciar computadores Windows. Depois de configurar o Intune, você pode simplificar o registro do Windows [registrando computadores Windows 10 no Intune](..\windows-enroll.md) por meio do canal MDM. Recomendamos que você use essa solução de gerenciamento de MDM "sem agente" para gerenciar seus PCs com Windows 10.
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>O que preciso de fazer para me preparar para esta alteração?
+Incentivamos sua organização a considerar imediatamente este plano de ação:
+
+- Planeje e atualize o Windows 7 frota para o Windows 10 antes de 14 de janeiro de 2020.
+- Explore o [suporte à implantação do Windows 10](https://docs.microsoft.com/windows/deployment/) para saber mais sobre como atualizar sua frota existente de PCs com Windows 7 para o Windows 10.
+- Examine o [aplicativo de desktop garanta](https://www.microsoft.com/fasttrack/microsoft-365/desktop-app-assure?rtc=1) a oferta por meio do Fast Track que ajudará com a promessa de compatibilidade de aplicativos da Microsoft.
+- Migre os dispositivos gerenciados de cliente de software do Intune herdados existentes para a solução recomendada pela Microsoft para gerenciar o Windows 10 usando o gerenciamento de MDM. Registre todos os novos PCs com Windows 10 usando o gerenciamento de MDM para Intune no portal do Azure.
+- Consulte o [Blog postado aqui](https://aka.ms/Windows7_Intune) para obter mais informações.

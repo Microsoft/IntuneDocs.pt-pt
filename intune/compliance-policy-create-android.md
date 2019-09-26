@@ -5,9 +5,8 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/08/2019
+ms.date: 07/25/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7670af46657fed048bfe10b8659eae6d45db7620
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
-ms.translationtype: HT
+ms.openlocfilehash: e7c6cec515bfda95fed922785705b0e0b5339983
+ms.sourcegitcommit: 1d4aec7b79c70d35ec3fc29df6ff9c6a1403412e
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59897984"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "71305084"
 ---
 # <a name="android-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Definições do Android para marcar dispositivos como conformes ou não conformes com o Intune
 
@@ -43,7 +42,7 @@ Enquanto administrador do Intune, utilize estas definições de conformidade par
 ## <a name="device-health"></a>Device health
 
 - **Dispositivos desbloqueados por rooting**: escolha **Bloquear** para marcar os dispositivos desbloqueados por rooting (jailbreak) como não conformes. Quando seleciona **Não configurado** (predefinição), esta definição não é avaliada quanto à conformidade ou não conformidade.
-- **Exigir que o dispositivo esteja ao nível ou abaixo do Nível de Ameaça de Dispositivos**: utilize esta definição para assumir a avaliação de riscos da solução Lookout MTP como uma condição para conformidade. Quando seleciona **Não configurado** (predefinição), esta definição não é avaliada quanto à conformidade ou não conformidade. Para utilizar esta definição, selecione o nível de ameaça permitido:
+- **Exigir que o dispositivo esteja ao nível ou abaixo do Nível de Ameaça de Dispositivos**: Use essa configuração para fazer a avaliação de risco da solução de segurança de ponto de extremidade móvel de consulta como uma condição para conformidade. Quando seleciona **Não configurado** (predefinição), esta definição não é avaliada quanto à conformidade ou não conformidade. Para utilizar esta definição, selecione o nível de ameaça permitido:
   - **Protegido**: esta opção é a mais segura, uma vez que o dispositivo não pode ter qualquer ameaça. Se forem detetadas ameaças de qualquer nível no dispositivo, o mesmo será avaliado como não conforme.
   - **Baixo**: o dispositivo será avaliado como conforme se só estiverem presentes ameaças de nível baixo. Qualquer nível mais alto coloca o dispositivo num estado de não conforme.
   - **Médio**: o dispositivo será avaliado como estando em conformidade se as ameaças existentes forem de nível baixo ou médio. Se forem detetadas ameaças de nível alto no dispositivo, este será determinado como não conforme.
@@ -78,7 +77,7 @@ Enquanto administrador do Intune, utilize estas definições de conformidade par
 - **Exigir uma palavra-passe para desbloquear os dispositivos móveis**: **exija** que os utilizadores introduzam uma palavra-passe para poderem aceder aos dispositivos. Quando seleciona **Não configurado** (predefinição), esta definição não é avaliada quanto à conformidade ou não conformidade.
 - **Comprimento mínimo da palavra-passe**: introduza o número mínimo de dígitos ou carateres que a palavra-passe do utilizador tem de conter.
 - **Tipo obrigatório de palavra-passe**: escolha se uma palavra-passe deve incluir apenas carateres numéricos ou uma combinação de números e de outros carateres. As opções são:
-  - **Dispositivo Predefinido**
+  - **Padrão do dispositivo**: Para avaliar a conformidade de senha, certifique-se de selecionar uma senha que não seja o **padrão do dispositivo**.
   - **Biométrica de segurança baixa**
   - **Pelo menos, numérico** (predefinição)
   - **Complexo numérico**: os números repetidos ou consecutivos, tal como `1111` ou `1234`, não são permitidos.
@@ -87,7 +86,7 @@ Enquanto administrador do Intune, utilize estas definições de conformidade par
   - **Pelo menos alfanumérica com símbolos**
 
 - **Minutos de inatividade antes de a palavra-passe ser exigida**: introduza o tempo de inatividade antes de o utilizador ter de reintroduzir a palavra-passe. Quando seleciona **Não configurado** (predefinição), esta definição não é avaliada quanto à conformidade ou não conformidade.
-- **Expiração da palavra-passe (dias)**: selecione o número de dias antes de a palavra-passe expirar e ser necessário que o utilizador final crie uma nova.
+- **Expiração da palavra-passe (dias)** : selecione o número de dias antes de a palavra-passe expirar e ser necessário que o utilizador final crie uma nova.
 - **Número de palavras-passe anteriores para impedir a reutilização**: introduza o número de palavras-passe recentes que não podem ser reutilizadas. Utilize esta definição para impedir o utilizador final de criar palavras-passe utilizadas anteriormente.
 
 ### <a name="encryption"></a>Encriptação
@@ -126,7 +125,7 @@ Na sua política, pode forçar a conformidade com a localização do dispositivo
 2. Na lista, verifique a sua localização > **Selecionar**.
 3. **Guarde** a política.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
 - [Adicionar ações para dispositivos não conformes](actions-for-noncompliance.md) e [utilizar etiquetas de âmbito para filtrar políticas](scope-tags.md).
 - [Monitorizar as políticas de conformidade](compliance-policy-monitor.md).

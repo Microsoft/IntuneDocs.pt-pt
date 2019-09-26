@@ -8,7 +8,6 @@ ms.author: lanewsad
 manager: dougeby
 ms.date: 12/06/2018
 ms.topic: archived
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4e0b8230a842a7b4e3b1368388cb186defa8df72
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 8747a398447dc1f477e2b0149104c4c65d3ed741
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566595"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "71302198"
 ---
 # <a name="configure-intune-education-settings-for-shared-ipad-devices"></a>Configurar definições de educação do Intune para dispositivos iPad partilhados
 
@@ -68,8 +67,7 @@ Pode importar informações para o SDS através de um dos seguintes métodos:
 
 ### <a name="configure-general-settings"></a>Configurar as definições gerais
 
-1. Inicie sessão no [Portal do Azure](https://portal.azure.com).
-2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
+1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. No painel **Intune**, selecione **Configuração do dispositivo**.
 2. No painel **Configuração do dispositivo**, na secção **Gerir**, selecione **Perfis**.
 5. No painel de perfis, selecione **Criar perfil**.
@@ -139,8 +137,7 @@ O perfil será criado e apresentado no painel Lista de perfis.
 
 ## <a name="step-3---create-a-device-category"></a>Passo 3 – criar uma categoria de dispositivo
 
-1. Inicie sessão no [Portal do Azure](https://portal.azure.com).
-2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
+1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. No painel **Intune**, selecione **Inscrição de dispositivos**.
 4. No painel **Inscrição de dispositivos – Descrição geral**, selecione **Categorias de dispositivos**.
 5. No painel **Inscrição de dispositivos – Categorias de dispositivos**, selecione **Criar**.
@@ -151,8 +148,7 @@ A categoria de dispositivos é criada no painel **Inscrição – Categorias de 
 
 ## <a name="step-4--create-a-dynamic-group"></a>Passo 4 – criar um grupo dinâmico
 
-1. Inicie sessão no [Portal do Azure](https://portal.azure.com).
-2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
+1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. No painel **Intune**, selecione **Grupos**.
 4. No painel **Utilizadores e Grupos – Todos os Grupos**, selecione **Novo grupo**.
 5. No painel **Grupo**, selecione um **Tipo de grupo** e, em seguida, introduza um **Nome** e uma **Descrição** para o grupo.
@@ -169,8 +165,7 @@ O grupo dinâmico é criado no painel **Utilizadores e Grupos – Todos os Grupo
 
 ## <a name="step-5--assign-a-device-to-a-category-carts"></a>Passo 5 – atribuir um dispositivo a uma categoria (Carrinhos)
 
-1. Inicie sessão no [Portal do Azure](https://portal.azure.com).
-2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
+1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. No painel **Intune**, selecione **Dispositivos**.
 4. No painel **Dispositivos**, selecione **Todos os dispositivos**.
 5. No painel **Dispositivos – Todos os dispositivos**, selecione um dispositivo.
@@ -182,14 +177,13 @@ O dispositivo está agora associado à categoria de dispositivos. Repita este pr
 
 ## <a name="step-6--create-classroom-profiles"></a>Passo 6 – criar perfis de sala de aula
 
-1. Inicie sessão no [Portal do Azure](https://portal.azure.com).
-2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
+1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. No painel **Intune**, selecione **Configuração do dispositivo**.
 4. No painel **Configuração do dispositivo**, selecione **Gerir** > **Perfis do Carrinho**.
 5. No painel de perfis, selecione **Criar Perfil**.
 6. No painel **Criar Associação**, introduza um **Nome** e uma **Descrição**.
 7. Selecione a opção **Selecionar Classes** > **Configurar** para associar grupos ao Perfil do Carrinho.
-8. Selecione as turmas a incluir no Perfil do Carrinho e, em seguida, selecione **Selecionar**. 
+8. Selecione as turmas a incluir no Perfil do Carrinho e, em seguida, selecione **Selecionar**. 
 9. Selecione a opção **Selecionar Carrinhos** > **Configurar** para associar grupos ao Perfil do Carrinho.
 10. Selecione os grupos a incluir no Perfil do Carrinho e, em seguida, selecione **Selecionar**.
 11. No painel **Criar Associação**, selecione **Guardar** para guardar o Perfil do Carrinho.
@@ -198,13 +192,12 @@ O perfil será criado e apresentado no painel Lista de perfis.
 
 ## <a name="step-7---assign-the-cart-profile-to-classes"></a>Passo 7 – atribuir o Perfil do Carrinho a turmas
 
-1. Inicie sessão no [Portal do Azure](https://portal.azure.com).
-2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
+1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. No painel **Intune**, selecione **Configuração do dispositivo**.
 4. No painel **Configuração do dispositivo**, selecione **Monitorizar** > **Estado da atribuição**.
 5. No painel **Estado da atribuição**, selecione o **Perfil do Carrinho** que criou.
 6. No painel **Perfil do Carrinho**, selecione **Atribuições** e, em **Incluir**, selecione **Selecionar grupos para incluir**.
-7. Selecione as turmas para as quais será direcionado o perfil do carrinho (não selecione um grupo) e, em seguida, selecione **Selecionar**. 
+7. Selecione as turmas para as quais será direcionado o perfil do carrinho (não selecione um grupo) e, em seguida, selecione **Selecionar**. 
 8. Quando terminar, selecione **Guardar**.
 
 A atribuição fica concluída e o Intune implementa o perfil de Sala de Aula aos dispositivos visados com base na atribuição de sala de aula.

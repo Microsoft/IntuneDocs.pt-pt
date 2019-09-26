@@ -8,7 +8,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,18 +16,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6f63c5a3dbeb7c8626ec1412dbcee661b82afc88
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
-ms.translationtype: HT
+ms.openlocfilehash: 2bf0d7a972aea8a82e731100931332e42cbc100f
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59896019"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "71303574"
 ---
 # <a name="categorize-devices-into-groups"></a>Categorizar dispositivos em grupos
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Para facilitar a gestão dos dispositivos, pode utilizar categorias de dispositivos do Microsoft Intune para adicionar automaticamente dispositivos a grupos com base nas categorias que definir.
+Para facilitar a gestão de dispositivos, pode utilizar categorias de dispositivos do Microsoft Intune para adicionar automaticamente dispositivos a grupos com base nas categorias que definir.
 
 As categorias de dispositivos utilizam o fluxo de trabalho seguinte:
 1. Crie categorias para os utilizadores escolherem quando inscrevem o dispositivo.
@@ -64,11 +63,11 @@ Depois de configurar os grupos de dispositivos e os utilizadores inscreverem o d
 
 ### <a name="view-the-categories-of-devices-that-you-manage"></a>Ver as categorias de dispositivos que gere
 
-1.  No [Intune, no portal do Azure](https://aka.ms/intuneportal), selecione **Dispositivos**.
+1. No [Intune, no portal do Azure](https://aka.ms/intuneportal), selecione **Dispositivos**.
 
-2.  Em **Gerir**, selecione **Todos os dispositivos**.
+2. Em **Gerir**, selecione **Todos os dispositivos**.
 
-3.  Na lista de dispositivos, examine a coluna **Categoria de dispositivo**.
+3. Na lista de dispositivos, examine a coluna **Categoria de dispositivo**.
 
 Se a coluna **Categoria de dispositivos** não for apresentada, selecione **Colunas**. Selecione **Categoria de dispositivos** na lista e, em seguida, selecione **Aplicar**.
 

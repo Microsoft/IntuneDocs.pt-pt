@@ -6,9 +6,8 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/09/2019
+ms.date: 08/22/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f31c623196abd4ffcdfc4f5ccded088c12d5d992
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
+ms.openlocfilehash: 293c370100bcd3343c4bb3501badff203147c686
+ms.sourcegitcommit: 89a973bbfa1702b2d275af6814874e4305bdcb77
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59901000"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71302666"
 ---
 # <a name="how-to-manage-ios-ebooks-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Como gerir eBooks do iOS comprados através de um programa de compra em grandes volumes com o Microsoft Intune
 
@@ -53,15 +52,16 @@ Antes de começar, obtenha um token VPP da Apple e carregue o mesmo para a sua c
 * Atualmente, não pode atribuir livros a categorias de utilizador final do mesmo modo que para as aplicações.
 * Não pode recuperar uma licença quando o livro é atribuído.
 * Quando um utilizador com um dispositivo elegível tenta instalar um livro VPP pela primeira vez, é necessário associar-se ao Apple Volume Purchase Program para poder instalar um livro. Também pode atribuir licenças a grupos de segurança com IDs Apple geridas. Se fizer isso, não será pedida aos utilizadores a sua ID Apple quando é instalado um livro.
+* Os dispositivos devem ser registrados com a afinidade do usuário, pois os e-books só podem ser atribuídos a grupos de usuários.   
+
 
 ## <a name="to-get-and-upload-an-apple-vpp-token"></a>Para obter e carregar um token Apple VPP
 
-1. Inicie sessão no [portal do Azure](https://portal.azure.com).
-2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
+1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. No painel **Intune**, selecione **Aplicações do cliente**.
-1.  Na carga de trabalho **Aplicações do cliente**, selecione **Configurar** > **Tokens VPP para iOS**.
-2.  No painel da lista de tokens VPP, clique em **Criar**.
-3.  No painel **Novo Token VPP**, especifique as seguintes informações:
+1. Na carga de trabalho **Aplicações do cliente**, selecione **Configurar** > **Tokens VPP para iOS**.
+2. No painel da lista de tokens VPP, clique em **Criar**.
+3. No painel **Novo Token VPP**, especifique as seguintes informações:
     - **Ficheiro de token VPP** – verifique se se inscreveu no Volume Purchase Program for Business ou no Volume Purchase Program for Education. Em seguida, transfira o token VPP da Apple para a sua conta e selecione-o aqui.
     - **ID Apple** – Introduza o ID Apple da conta associada ao programa de compra em volume.
     - **Tipo de conta VPP** – Escolha entre **Empresas** ou **Educação**.
@@ -76,13 +76,13 @@ Pode sincronizar os dados retidos pela Apple com o Intune em qualquer altura, se
 
 3. No painel **Intune**, selecione **eBooks**.
 1. Na carga de trabalho **eBooks**, escolha **Gerir** > **Todos os eBooks**.
-2. No painel da lista de livros, selecione o livro que pretende atribuir e, em seguida, selecione "**...**" > **Atribuir Grupos**.
+2. No painel da lista de livros, selecione o livro que pretende atribuir e, em seguida, selecione " **...** " > **Atribuir Grupos**.
 3. No painel <*nome do livro*> - **Grupos Atribuídos**, selecione **Gerir** > **Grupos Atribuídos**.
 4. Selecione **Atribuir Grupos** e, no painel **Selecionar grupos**, selecione os grupos de utilizadores do Azure AD aos quais quer atribuir o livro. Os grupos de dispositivos não são atualmente suportados.
 Selecione a ação de atribuição **Disponível** ou **Obrigatório**. 
 5. Assim que tiver terminado, escolha **Guardar**.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
 Veja [Como monitorizar aplicações](apps-monitor.md) para obter informações que o ajudam a monitorizar as atribuições de livros.
 

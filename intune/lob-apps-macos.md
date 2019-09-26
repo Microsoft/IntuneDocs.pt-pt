@@ -6,9 +6,8 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/09/2019
+ms.date: 07/24/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 90684c2994ccd3c90116a90e255ed6b9be1f6a76
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
-ms.translationtype: HT
+ms.openlocfilehash: 1695a01ff9d58269e5c6fe35d4e29a897e21d672
+ms.sourcegitcommit: d2ac912b834c4840de9cc92ba1815b6ecfbfb52b
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59897566"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "71301824"
 ---
 # <a name="how-to-add-macos-line-of-business-lob-apps-to-microsoft-intune"></a>Como adicionar aplicações de linha de negócio (LOB) macOS ao Microsoft Intune
 
@@ -36,17 +35,24 @@ Utilize as informações neste artigo para adicionar aplicações de linha de ne
 
 ## <a name="before-your-start"></a>Antes de começar
 
-Tem de transferir uma ferramenta externa para pré-processar os ficheiros *.pkg* para poder carregar o ficheiro de linha de negócio para o Microsoft Intune. O pré-processamento dos ficheiros *.pkg* tem de ser realizado num dispositivo macOS. Utilize a Ferramenta de Encapsulamento de Aplicações do Intune para Mac para permitir que as aplicações Mac sejam geridas pelo Microsoft Intune.
+Você deve baixar uma ferramenta externa, marcar a ferramenta baixada como um executável e processar previamente seus arquivos *. pkg* com a ferramenta antes de carregar seu arquivo de linha de negócios para Microsoft Intune. O pré-processamento dos ficheiros *.pkg* tem de ser realizado num dispositivo macOS. Utilize a Ferramenta de Encapsulamento de Aplicações do Intune para Mac para permitir que as aplicações Mac sejam geridas pelo Microsoft Intune.
 
 > [!IMPORTANT]
-> Apenas os ficheiros *.pkg* podem servir para carregar aplicações LOB macOS para o Microsoft Intune. A conversão de outros formatos, como *.dmg* em *.pkg*, não é suportada.
+> O arquivo *. pkg* deve ser assinado usando o certificado "instalador de ID do desenvolvedor", obtido de uma conta de desenvolvedor da Apple. Apenas os ficheiros *.pkg* podem servir para carregar aplicações LOB macOS para o Microsoft Intune. A conversão de outros formatos, como *.dmg* em *.pkg*, não é suportada.
+>
 
-1. Transfira e execute a [Ferramenta de Encapsulamento de Aplicações do Intune para Mac](https://github.com/msintuneappsdk/intune-app-wrapping-tool-mac).
+1. Baixe a [ferramenta de encapsulamento de aplicativos do Intune para Mac](https://github.com/msintuneappsdk/intune-app-wrapping-tool-mac).
 
     > [!NOTE]
-    > A **Ferramenta de Encapsulamento de Aplicações do Intune para Mac** tem de ser executada numa máquina macOS.
+    > A **Ferramenta de Encapsulamento de Aplicações do Intune para Mac** tem de ser executada numa máquina macOS. 
 
-2. Utilize o comando `IntuneAppUtil` na **Ferramenta de Encapsulamento de Aplicações do Intune para Mac** para encapsular o ficheiro da aplicação LOB *.pkg* num ficheiro *.intunemac*.<br>
+2. Marque a ferramenta baixada como um executável:
+   - Inicie o aplicativo de terminal.
+   - Altere o diretório para o local onde `IntuneAppUtil` está localizado.
+   - Execute o seguinte comando para tornar o executável da ferramenta:<br> 
+       `chmod +x IntuneAppUtil`
+
+3. Utilize o comando `IntuneAppUtil` na **Ferramenta de Encapsulamento de Aplicações do Intune para Mac** para encapsular o ficheiro da aplicação LOB *.pkg* num ficheiro *.intunemac*.<br>
 
     Comandos de exemplo a utilizar para a Ferramenta de Encapsulamento de Aplicações do Intune para Mac:
     
@@ -61,8 +67,7 @@ Tem de transferir uma ferramenta externa para pré-processar os ficheiros *.pkg*
 
 ## <a name="step-1---specify-the-software-setup-file"></a>Passo 1 – Especificar o ficheiro de configuração do software
 
-1. Inicie sessão no [portal do Azure](https://portal.azure.com).
-2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
+1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. No painel **Intune**, selecione **Aplicações do cliente**.
 4. Na carga de trabalho **Aplicações do cliente**, escolha **Gerir** > **Aplicações**.
 5. Acima da lista de aplicações, escolha **Adicionar**.
@@ -110,7 +115,7 @@ A aplicação que criou é apresentada na lista de aplicações, onde pode atrib
 > [!NOTE]
 > Para o serviço do Intune implementar com êxito um novo ficheiro *.pkg* no dispositivo, tem de incrementar o pacote `version` e a cadeia `CFBundleVersion` no ficheiro *packageinfo* do pacote *.pkg*.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos seguintes
 
 - A aplicação que criou é apresentada na lista de aplicações. Agora pode atribuí-la aos grupos que escolher. Para obter ajuda, veja [Como atribuir aplicações a grupos](apps-deploy.md).
 

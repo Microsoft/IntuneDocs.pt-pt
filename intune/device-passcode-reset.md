@@ -7,7 +7,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 09/18/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -16,18 +15,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a7a2b39307f97fa6839095b2595f36a7f554dc35
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 9eb46a557dfbd21d45ab3b395ccaf169d187bf1f
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57389112"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71303506"
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>Repor ou remover um código de acesso do dispositivo no Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Este documento aborda a reposição de códigos de acesso ao nível do dispositivo e do perfil de trabalho em dispositivos Android Enterprise (anteriormente denominado Android for Work ou AfW). É importante observar esta distinção, uma vez que os requisitos de cada um podem variar. Uma reposição de código de acesso ao nível do dispositivo repõe o código de acesso de todo o dispositivo. Uma reposição de código de acesso do perfil de trabalho repõe apenas o código de acesso do perfil de trabalho do utilizador em dispositivos Android Enterprise.
+Este documento discute a redefinição de senha no nível do dispositivo e a redefinição de senha do perfil de trabalho no Android Enterprise (anteriormente chamado de dispositivos Android for Work ou AfW). É importante observar essa distinção, pois os requisitos de cada um podem variar. Uma reposição de código de acesso ao nível do dispositivo repõe o código de acesso de todo o dispositivo. Uma reposição de código de acesso do perfil de trabalho repõe apenas o código de acesso do perfil de trabalho do utilizador em dispositivos Android Enterprise.
 
 ## <a name="supported-platforms-for-device-level-passcode-reset"></a>Plataformas suportadas para reposição de códigos de acesso ao nível do dispositivo
 
@@ -36,12 +35,13 @@ Este documento aborda a reposição de códigos de acesso ao nível do dispositi
 | Dispositivos Android com a versão 6.X ou anterior | Sim |
 | Dispositivos Android Enterprise no modo de quiosque | Sim |
 | Dispositivos iOS | Sim |
-| Dispositivos Android inscritos com um perfil de trabalho com a versão 7.0 e anterior | Não |
+| dispositivos iOS registrados com o registro de usuário | Não |
+| Dispositivos Android registrados com um perfil de trabalho | Não |
 | Dispositivos Android com a versão 7.0 ou posterior | Não |
 | macOS | Não |
 | Windows | Não |
 
-Para dispositivos Android, isto significa efetivamente que a reposição de códigos de acesso ao nível do dispositivo só é suportada em dispositivos com a versão 6.X ou anterior ou em dispositivos Android Enterprise com o modo de quiosque a ser executado. Isto acontece porque a Google removeu o suporte da reposição de códigos de acesso/palavras-passe para dispositivos Android 7 a partir de uma aplicação concedida ao Administrador de Dispositivos e aplica-se a todos os fornecedores MDM.
+Para dispositivos Android, isso significa que a redefinição de senha no nível do dispositivo só tem suporte em dispositivos que executam o 6. x ou anterior, ou em dispositivos Android Enterprise em execução no modo de quiosque. Isto acontece porque a Google removeu o suporte da reposição de códigos de acesso/palavras-passe para dispositivos Android 7 a partir de uma aplicação concedida ao Administrador de Dispositivos e aplica-se a todos os fornecedores MDM.
 
 ## <a name="supported-platforms-for-android-enterprise-work-profile-passcode-reset"></a>Plataformas suportadas para reposição de códigos de acesso do perfil de trabalho do Android Enterprise
 
@@ -50,15 +50,13 @@ Para dispositivos Android, isto significa efetivamente que a reposição de cód
 | Dispositivos Android Enterprise inscritos com um perfil de trabalho e com a versão 8.0 e posterior | Sim |
 | Dispositivos Android Enterprise inscritos com um perfil de trabalho e com a versão 7.X e anterior | Não |
 | Dispositivos Android com a versão 7.X e anterior | Não |
-| iOS | Não |
-| macOS | Não |
 
 Para criar um novo código de acesso de perfil de trabalho, utilize a ação Repor Código de Acesso. Esta ação solicita uma reposição do código de acesso e cria um código de acesso novo e temporário apenas para o perfil de trabalho. 
 
 ## <a name="reset-a-passcode"></a>Repor um código de acesso
 
 
-1. Inicie sessão para o [portal do Azure](https://portal.azure.com) com qualquer uma das seguintes funções: Administrador Global do Azure Active Directory, o Admin de serviço do Intune do Azure Active Directory, o operador de assistência técnica ou o administrador de função. Para obter uma lista completa de funções e permissões, consulte a [tabela de RBAC do Intune](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a).
+1. Entre no [portal do Azure](https://portal.azure.com) com qualquer uma das seguintes funções: Azure Active Directory administrador global, Azure Active Directory administrador de serviços do Intune, operador de assistência técnica ou administradores de função.
 2. Selecione **Todos os serviços**, filtre por **Intune** e, em seguida, selecione **Microsoft Intune**.
 3. Selecione **Dispositivos** e, em seguida, selecione **Todos os dispositivos**.
 4. Na lista de dispositivos que gere, selecione um dispositivo e selecione **…Mais**. Em seguida, selecione a ação remota **Remover código de acesso** do dispositivo.
@@ -74,6 +72,6 @@ Para dispositivos Android Enterprise com a versão 8.X ou posterior e inscritos 
 
 Em vez de serem repostos, os códigos de acesso são removidos dos dispositivos iOS. Se estiver definida uma política de conformidade de código de acesso, o dispositivo pedirá ao utilizador para definir um novo código de acesso nas Definições.
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Passos seguintes
 
 Para ver o estado da ação que acabou de realizar, em **Dispositivos**, selecione **Ações do dispositivo**.

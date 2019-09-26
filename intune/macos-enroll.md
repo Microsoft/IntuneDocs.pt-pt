@@ -8,22 +8,21 @@ ms.author: erikje
 manager: dougeby
 ms.date: 08/13/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 46429114-2e26-4ba7-aa21-b2b1a5643e01
-ms.reviewer: chrisbal
+ms.reviewer: tisilver
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c2a968334ecf3ddb90a3f97841cc191c553b39ca
-ms.sourcegitcommit: 1cae690ca2ac6cc97bbcdf656f54b31878297ae8
-ms.translationtype: HT
+ms.openlocfilehash: ef8bbe90b9cc3f1b04300646c8b56676cbd23766
+ms.sourcegitcommit: d2989b9992d10d133573d9bc31479659fb7e242c
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59893872"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71303367"
 ---
 # <a name="set-up-enrollment-for-macos-devices-in-intune"></a>Configurar a inscrição para dispositivos macOS no Intune
 
@@ -37,6 +36,7 @@ Enquanto administrador do Intune, pode configurar a inscrição para dispositivo
 
 Antes de configurar a inscrição de dispositivos macOS, tem de cumprir os seguintes pré-requisitos:
 
+- [Verifique se o dispositivo está qualificado para o registro de dispositivo da Apple](https://support.apple.com/en-us/HT204142#eligibility).
 - [Configurar domínios](custom-domain-name-configure.md)
 - [Definir a Autoridade de MDM](mdm-authority-set.md)
 - [Criar grupos](groups-add.md)
@@ -83,6 +83,6 @@ Para ser um utilizador aprovado, o utilizador final, depois da inscrição atrav
 
 Para saber se um dispositivo é um Utilizador Aprovado, aceda ao portal do Intune e escolha **Dispositivos** > **Todos os dispositivos**> escolha o dispositivo > **Hardware**. Marque o campo **Utilizador Aprovado**.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 Assim que os dispositivos macOS forem inscritos, pode [criar definições personalizadas para dispositivos macOS](custom-settings-macos.md).

@@ -8,22 +8,21 @@ ms.author: erikje
 manager: dougeby
 ms.date: 05/04/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 671e4d76-0c61-11e8-ba89-0ed5f89f718b
-ms.reviewer: dagerrit
+ms.reviewer: tisilver
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ab4ecfe3f407082d0a51910b35ad8ac8d6724f9c
-ms.sourcegitcommit: 47eb67df69f237121f5197b2ac904a177aab5400
+ms.openlocfilehash: eead9845c2d525dbc3974824dc9b72739bbbe661
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59671888"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71305515"
 ---
 # <a name="set-up-ios-device-enrollment-with-apple-configurator"></a>Configurar a inscrição de dispositivos iOS com o Apple Configurator
 
@@ -119,13 +118,13 @@ Após criar o perfil e atribuir números de série, tem de exportar o perfil do 
 1. Num computador Mac, abra o **Apple Configurator 2**. Na barra de menus, selecione **Apple Configurator 2** e selecione **Preferências**.
     > [!WARNING]
     > Os dispositivos são repostos para as configurações de fábrica durante o processo de inscrição. Como melhor prática, reponha o dispositivo e ligue-o. Os dispositivos deverão aparecer no ecrã **Hello** quando liga o dispositivo.
-    > Se o dispositivo já foi registado com a conta de Apple ID, o dispositivo deve ser excluído do iCloud da Apple antes de iniciar o processo de inscrição. O erro de linha de comandos é apresentado como "Não é possível ativar [nome do dispositivo]".
+    > Se o dispositivo já foi registrado com a conta ID da Apple, o dispositivo deve ser excluído do iCloud da Apple antes de iniciar o processo de registro. O erro de prompt aparece como "não é possível ativar [nome do dispositivo]".
 
 2. No painel **preferências**, selecione **Servidores** e selecione o símbolo de adição (+) para iniciar o assistente do Servidor MDM. Selecione **Next**.
 3. Introduza o **Nome do anfitrião ou URL** e o **URL de inscrição** do servidor MDM em Inscrição do Assistente de Configuração para dispositivos iOS com Microsoft Intune. Para o URL de Inscrição, introduza o URL do perfil de inscrição exportado do Intune. Selecione **Next**.  
     Pode ignorar o aviso "URL do servidor não verificado" em segurança. Para continuar, selecione **Seguinte** até que o assistente esteja concluído.
-4.  Ligue os dispositivos móveis iOS ao computador Mac com um adaptador USB.
-5.  Selecione os dispositivos iOS que pretende gerir e, em seguida, selecione **Preparar**. No painel **Preparar o Dispositivo iOS**, selecione **Manual** e escolha **Seguinte**.
+4. Ligue os dispositivos móveis iOS ao computador Mac com um adaptador USB.
+5. Selecione os dispositivos iOS que pretende gerir e, em seguida, selecione **Preparar**. No painel **Preparar o Dispositivo iOS**, selecione **Manual** e escolha **Seguinte**.
 6. No painel **Inscrever no Servidor MDM**, selecione o nome do servidor que criou e escolha **Seguinte**.
 7. No painel **Supervisionar Dispositivos**, selecione o nível de supervisão e, em seguida, selecione **Seguinte**.
 8. No painel **Criar uma Organização**, escolha a **Organização** ou crie uma nova e escolha **Seguinte**.
