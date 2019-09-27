@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 235cb317625786c1254ecf572726c66480c01b2e
-ms.sourcegitcommit: 62c41976c4da43b36015b715bc255397ebb8c6ad
+ms.openlocfilehash: 7b7a0df354c505272ced187ead615734ae1c830f
+ms.sourcegitcommit: 022f52cb03e25d555229019599cdafc994427327
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71274829"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71313435"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 
@@ -62,7 +62,7 @@ A versão iOS 13,1 da Apple inclui o registro de usuário, uma nova forma de ger
 - Direcionar o registro de usuário para grupos de usuários.
 - Dê aos usuários finais a capacidade de selecionar entre o registro mais leve do usuário ou o registro de dispositivo mais forte quando registrarem seus dispositivos.
 
-A partir do 9/24/2019 com o lançamento do iOS 31,1, estamos no processo de distribuir essas atualizações para todos os clientes e esperar que sejam concluídas até o final da próxima semana.
+A partir do 9/24/2019 com o lançamento do iOS 13,1, estamos no processo de distribuir essas atualizações para todos os clientes e esperar que sejam concluídas até o final da próxima semana.
 Aplica-se a:
 
 iOS 13,1 e posterior

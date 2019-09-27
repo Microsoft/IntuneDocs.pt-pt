@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/24/2019
+ms.date: 09/26/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e31fc3b199f6437bbdd7b12e4be8b17ead689c7e
-ms.sourcegitcommit: 6a946a055a2014e00a4ca9d71986727a4ebbc777
+ms.openlocfilehash: 4b9b2db7aa58d2db519615ca2741b28c09f29096
+ms.sourcegitcommit: ec0a69c88fdb30b538df1ac4f407a62a28ddf8d1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71302376"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71320033"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>configurações do dispositivo iOS e iPadOS para permitir ou restringir recursos usando o Intune
 
@@ -130,36 +130,51 @@ Estas definições são adicionadas a um perfil de configuração do dispositivo
 
 ## <a name="password"></a>Palavra-passe
 
+> [!NOTE]
+> Em uma versão futura, essas configurações de senha na interface do usuário do Intune estão sendo atualizadas para corresponder ao tipo de registro.
+
 ### <a name="settings-apply-to-all-enrollment-types"></a>As configurações se aplicam a: Todos os tipos de registro
 
 - **Palavra-passe**: **Exigir** que o utilizador final introduza uma palavra-passe para aceder ao dispositivo. **Não configurado** (padrão) permite que os usuários acessem o dispositivo sem inserir uma senha.
-  - **Palavras-passe simples**: escolha **Bloquear** para exigir palavras-passe mais complexas. **Não configurado** permite palavras-passe simples, tais como `0000` e `1234`.
-  - **Tipo obrigatório de palavra-passe**: escolha o tipo de palavra-passe exigido pela sua organização. As opções são:
+
+### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>As configurações se aplicam a: Registro de dispositivo, registro de dispositivo automatizado (supervisionado)
+
+> [!IMPORTANT]
+> Em dispositivos registrados pelo usuário, se você definir qualquer configuração de senha, as configurações de **senhas simples** serão automaticamente definidas como **Bloquear**e um PIN de 6 dígitos será imposto.
+>
+> Por exemplo, você define a configuração de **expiração de senha** e envia por push essa política para dispositivos registrados pelo usuário. Nos dispositivos, acontece o seguinte:
+>
+>  - A configuração de **expiração de senha** é ignorada.
+>  - Senhas simples, `1111` como ou `1234`, não são permitidas.
+>  - Um PIN de 6 dígitos é imposto. 
+
+- **Palavras-passe simples**: escolha **Bloquear** para exigir palavras-passe mais complexas. **Não configurado** permite palavras-passe simples, tais como `0000` e `1234`.
+
+- **Tipo obrigatório de palavra-passe**: escolha o tipo de palavra-passe exigido pela sua organização. As opções são:
     - **Predefinição do dispositivo**
     - **Numérico**
     - **Alfanumérico**
-  - **Número de carateres não alfanuméricos na palavra-passe**: especifique o número de caracteres de símbolos, tais como `#` ou `@`, que têm de ser incluídos na palavra-passe.
-  - **Comprimento mínimo da palavra-passe**: Insira o comprimento mínimo que um usuário deve inserir, entre 4 e 14 caracteres. Em dispositivos registrados pelo usuário, insira um comprimento entre 4 e 6 caracteres.
-  
-    > [!NOTE]
-    > Para dispositivos que são registrados pelo usuário:
-    >  - Se um PIN existente for maior que 6 caracteres, somente os primeiros 6 caracteres serão usados. Por exemplo, se o PIN for `12345678`, o PIN será reduzido para. `123456`
-    >  - Se os usuários inserirem um novo PIN com mais de 6 caracteres, somente os primeiros 6 caracteres serão usados. Por exemplo, se você inserir `12345678` como o PIN, o PIN será reduzido para. `123456`
+- **Número de carateres não alfanuméricos na palavra-passe**: especifique o número de caracteres de símbolos, tais como `#` ou `@`, que têm de ser incluídos na palavra-passe.
 
-  - **Número de falhas de início de sessão antes de apagar o dispositivo**: Insira o número de entradas com falha a serem permitidas antes que o dispositivo seja apagado (entre 4-11).
+- **Comprimento mínimo da palavra-passe**: Insira o comprimento mínimo que um usuário deve inserir, entre 4 e 14 caracteres. Em dispositivos registrados pelo usuário, insira um comprimento entre 4 e 6 caracteres.
   
-    o iOS tem segurança interna que pode afetar essa configuração. Por exemplo, o iOS pode atrasar o disparo da política dependendo do número de falhas de entrada. Ele também pode considerar a inserção repetida da mesma senha como uma única tentativa. O [Guia de segurança do IOS](https://www.apple.com/business/site/docs/iOS_Security_Guide.pdf) da Apple (abre o site da Apple) é um bom recurso e fornece detalhes mais específicos sobre as senhas.
+  > [!NOTE]
+  > Para dispositivos registrados pelo usuário, os usuários podem definir um PIN maior que 6 dígitos. No entanto, no máximo seis dígitos são impostos no dispositivo. Por exemplo, um administrador define o comprimento mínimo como `8`. Em dispositivos registrados pelo usuário, os usuários só precisam definir um PIN de 6 dígitos. O Intune não força um PIN maior que 6 dígitos em dispositivos registrados pelo usuário.
+
+- **Número de falhas de início de sessão antes de apagar o dispositivo**: Insira o número de entradas com falha a serem permitidas antes que o dispositivo seja apagado (entre 4-11).
   
-  - **Máximo de minutos após o bloqueio de ecrã antes de ser exigida a palavra-passe**<sup>1</sup>: introduza o período de tempo durante o qual o dispositivo permanece inativo antes de o utilizador ter de reintroduzir a palavra-passe. Se o tempo introduzido for maior do que o valor definido no dispositivo, o dispositivo ignorará o tempo introduzido. Suportado no iOS 8.0 e em dispositivos mais recentes.
-  - **Máximo de minutos de inatividade até o ecrã ser bloqueado**<sup>1</sup>: introduza o número máximo de minutos de inatividade permitidos no dispositivo até o ecrã bloquear. Se o tempo introduzido for maior do que o valor definido no dispositivo, o dispositivo ignorará o tempo introduzido. Quando definido como **imediatamente**, a tela é bloqueada com base no tempo mínimo do dispositivo. No iPhone, é de 30 segundos. No iPad, são dois minutos.
-  - **Expiração da palavra-passe (dias)** : introduza o número de dias antes de ser necessário alterar a palavra-passe do dispositivo.
-  - **Impedir a reutilização de palavras-passe anteriores**: introduza o número de novas palavras-passe que têm de ser utilizadas para que uma palavra-passe antiga possa ser reutilizada.
-  - **Bloqueio de ID de toque e ID de face**: Escolha **Bloquear** para impedir o uso de uma impressão digital ou uma face para desbloquear o dispositivo. **Não configurado** permite que o usuário desbloqueie o dispositivo usando esses métodos.
+  o iOS tem segurança interna que pode afetar essa configuração. Por exemplo, o iOS pode atrasar o disparo da política dependendo do número de falhas de entrada. Ele também pode considerar a inserção repetida da mesma senha como uma única tentativa. O [Guia de segurança do IOS](https://www.apple.com/business/site/docs/iOS_Security_Guide.pdf) da Apple (abre o site da Apple) é um bom recurso e fornece detalhes mais específicos sobre as senhas.
+  
+- **Máximo de minutos após o bloqueio de ecrã antes de ser exigida a palavra-passe**<sup>1</sup>: introduza o período de tempo durante o qual o dispositivo permanece inativo antes de o utilizador ter de reintroduzir a palavra-passe. Se o tempo introduzido for maior do que o valor definido no dispositivo, o dispositivo ignorará o tempo introduzido. Suportado no iOS 8.0 e em dispositivos mais recentes.
+- **Máximo de minutos de inatividade até o ecrã ser bloqueado**<sup>1</sup>: introduza o número máximo de minutos de inatividade permitidos no dispositivo até o ecrã bloquear. Se o tempo introduzido for maior do que o valor definido no dispositivo, o dispositivo ignorará o tempo introduzido. Quando definido como **imediatamente**, a tela é bloqueada com base no tempo mínimo do dispositivo. No iPhone, é de 30 segundos. No iPad, são dois minutos.
+- **Expiração da palavra-passe (dias)** : introduza o número de dias antes de ser necessário alterar a palavra-passe do dispositivo.
+- **Impedir a reutilização de palavras-passe anteriores**: introduza o número de novas palavras-passe que têm de ser utilizadas para que uma palavra-passe antiga possa ser reutilizada.
+- **Bloqueio de ID de toque e ID de face**: Escolha **Bloquear** para impedir o uso de uma impressão digital ou uma face para desbloquear o dispositivo. **Não configurado** permite que o usuário desbloqueie o dispositivo usando esses métodos.
 
-    O bloqueio dessa configuração também impede o uso da autenticação de Faceid para desbloquear o dispositivo.
+  O bloqueio dessa configuração também impede o uso da autenticação de Faceid para desbloquear o dispositivo.
 
-    A ID de face se aplica a:  
-    - iOS 11,0 e mais recente
+  A ID de face se aplica a:  
+  - iOS 11,0 e mais recente
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>As configurações se aplicam a: Registro de dispositivo automatizado (supervisionado)
 
