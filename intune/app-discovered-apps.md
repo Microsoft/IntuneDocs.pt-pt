@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1d545e5848330e8c4f34eca21a992ad05ca8c85d
-ms.sourcegitcommit: ffbd1542d33810ab97a0be8faf26f8061328c228
+ms.openlocfilehash: f2e2e203c1d592d6313591f1bea18a37b1fcfeff
+ms.sourcegitcommit: 01a4e09eb27bfed14121de1a4ad56142b7d56eb2
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/31/2019
-ms.locfileid: "70206399"
+ms.lasthandoff: 09/28/2019
+ms.locfileid: "71481934"
 ---
 # <a name="intune-discovered-apps"></a>Aplicativos descobertos do Intune
 
@@ -45,7 +45,7 @@ O Intune também fornece a lista de aplicativos descobertos para o dispositivo i
 1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. No painel Intune, selecione **dispositivos** > **todos os dispositivos**.
 3. Selecione um dispositivo.
-4. Para exibir os aplicativos detectados para este dispositivo, selecione **aplicativos** descobertos na seção **monitorar** . 
+4. Para exibir os aplicativos detectados para este dispositivo, selecione **aplicativos descobertos** na seção **monitorar** . 
 
 ## <a name="details-of-discovered-apps"></a>Detalhes de aplicativos descobertos
 
@@ -64,14 +64,14 @@ A lista a seguir fornece o tipo de plataforma de aplicativo, os aplicativos que 
 | Android Enterprise | Somente aplicativos gerenciados | Somente aplicativos instalados no perfil de trabalho | A cada 7 dias do registro do dispositivo |
 
 > [!NOTE]
->Dispositivos ingressados no Azure AD híbrido do Windows 10 com a extensão de gerenciamento do Intune atualmente não coletam o inventário de aplicativos de acordo com o agendamento acima. Esse é um problema conhecido. Todas as alterações ou atualizações sobre esse comportamento são anunciadas no [desenvolvimento](in-development.md) e/ou [novidades](whats-new.md).
+> Dispositivos ingressados no Azure AD híbrido do Windows 10, conforme mostrado na carga de trabalho de gerenciamento de aplicativos no SCCM, atualmente não coletam o inventário de aplicativos por meio da extensão de gerenciamento do Intune (IME) de acordo com o agendamento acima. Para atenuar esse problema, a carga de trabalho de gerenciamento de aplicativos no SCCM deve ser alternada para o Intune para que o IME seja instalado no dispositivo (o IME é necessário para o inventário do Win32 e a implantação do PowerShell). Observe que todas as alterações ou atualizações desse comportamento são anunciadas no [desenvolvimento](in-development.md) e/ou [novidades](whats-new.md).
 
 O número de aplicações detetadas pode não corresponder à contagem de estados de instalação da aplicação. As causas de possíveis inconsistências incluem:
 - A alteração de direcionamento numa aplicação gerida instalada pode fazer com que a contagem de instalações no painel Estado diminua, embora continue a ser incluída nas aplicações detetadas.
 - Abranger múltiplas instâncias da mesma aplicação num inquilino irá resultar em contagens diferentes, devido à potencial sobreposição de utilizadores ou dispositivos. Cada instância da aplicação irá contabilizar os utilizadores sobrepostos, mas as aplicações detetadas apresentarão contagens duplicadas.
 - As aplicações detetadas e o estado da aplicação são recolhidos em intervalos de tempo diferentes, o que pode provocar uma discrepância nas contagens de aplicações.
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Passos seguintes
 
 - [Tipos de aplicativo no Microsoft Intune](apps-add.md#app-types-in-microsoft-intune)
 - [Monitorar as informações e atribuições de aplicativo com Microsoft Intune](apps-monitor.md)
