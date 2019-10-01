@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7b7a0df354c505272ced187ead615734ae1c830f
-ms.sourcegitcommit: 022f52cb03e25d555229019599cdafc994427327
+ms.openlocfilehash: 6be3bcac9cde5c234964591d15fbbcfcd62c7f6f
+ms.sourcegitcommit: 734545054ce4e16c5c9ca2bb13f39da72e6c3afd
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71313435"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "71687453"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 
@@ -66,6 +66,9 @@ A partir do 9/24/2019 com o lançamento do iOS 13,1, estamos no processo de dist
 Aplica-se a:
 
 iOS 13,1 e posterior
+
+#### <a name="intune-support-for-ipados-and-ios-131-devices---5439574--"></a>Suporte do Intune para dispositivos iPadOS e iOS 13,1 <!--5439574-->
+O Intune agora dá suporte ao gerenciamento de dispositivos iPadOS e iOS 13,1. Para obter mais informações, veja [esta mensagem do blogue](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Microsoft-Intune-Support-for-iOS-13-1-and-iPadOS/ba-p/873094).
 
 <!-- ########################## -->
 

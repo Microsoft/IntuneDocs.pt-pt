@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8b91420d4c90c38420b20080b25e91f23510503f
-ms.sourcegitcommit: ec0a69c88fdb30b538df1ac4f407a62a28ddf8d1
+ms.openlocfilehash: 3a08fb08792e4095235161079594ab40cf110e31
+ms.sourcegitcommit: 2be16108b759caa8e067e8217e53a100d2880637
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71320047"
+ms.lasthandoff: 09/30/2019
+ms.locfileid: "71681694"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Inscrever dispositivos Windows no Intune com o Windows Autopilot  
 O Windows Autopilot simplifica a inscrição de dispositivos no Intune. A criação e manutenção de imagens personalizadas do sistema operativo são um processo moroso. Também poderá demorar a aplicar estas imagens personalizadas do sistema operativo a novos dispositivos para as preparar para utilização antes de as disponibilizar aos seus utilizadores finais. Com o Microsoft Intune e o Autopilot, pode fornecer novos dispositivos aos seus utilizadores finais sem ter de criar, manter e aplicar imagens de sistema operativo personalizadas aos dispositivos. Ao utilizar o Intune para gerir dispositivos do Autopilot, pode gerir políticas, perfis, aplicações, entre outros, após estes serem inscritos. Para uma descrição geral das vantagens, cenários e pré-requisitos, veja [Descrição geral do Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
@@ -108,7 +108,7 @@ Os perfis de implementação do Autopilot são utilizados para configurar os dis
     >O valor padrão para a configuração de dados de diagnóstico varia entre as versões do Windows. Para dispositivos que executam o Windows 10, versão 1903, o valor padrão é definido como completo durante a experiência inicial do uso. Para obter mais informações, consulte [dados de diagnóstico do Windows](https://docs.microsoft.com/windows/privacy/windows-diagnostic-data) <br>
     
     - **Ocultar opções de conta de alteração (requer o Windows 10, versão 1809 ou posterior)** : Escolha **ocultar** para impedir que as opções alterar conta sejam exibidas nas páginas entrada da empresa e erro de domínio. Esta opção requer a [configuração da imagem corporativa da empresa no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding).
-    - **Tipo de conta de usuário**: Escolha o tipo de conta do usuário (**administrador** ou usuário **padrão** ).
+    - **Tipo de conta de usuário**: Escolha o tipo de conta do usuário (**administrador** ou usuário **padrão** ). Permitimos que o usuário que está ingressando o dispositivo seja um administrador local adicionando-o ao grupo de Administradores local. Não habilitamos o usuário como o administrador padrão no dispositivo.
     - **Permitir OOBE de diferenciada branco** (requer o Windows 10, versão 1903 ou posterior; [requisitos físicos adicionais](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove#prerequisites)): Escolha **Sim** para permitir suporte a diferenciada branco.
     - **Aplicar modelo de nome de dispositivo** (requer o Windows 10, versão 1809 ou posterior): Escolha **Sim** para criar um modelo a ser usado ao nomear um dispositivo durante o registro. Os nomes têm de ter 15 carateres ou menos e podem conter letras, números e hífenes. Não podem conter apenas números. Utilize a [macro %SERIAL%](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) para adicionar um número de série específico de hardware. Em alternativa, utilize a [macro %RAND:x%](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) para adicionar uma cadeia de números aleatória na qual x corresponde ao número de dígitos a adicionar. 
     - **Idioma (região)** \*: Escolha o idioma a ser usado para o dispositivo. Esta opção só está disponível se tiver optado pela **Implementação personalizada** no **Modo de implementação**.
