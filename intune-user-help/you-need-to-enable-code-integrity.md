@@ -18,12 +18,12 @@ ms.reviewer: scottduf
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6a545bff8624f4447ca9805aecf6d4d288fe4314
-ms.sourcegitcommit: 6a946a055a2014e00a4ca9d71986727a4ebbc777
+ms.openlocfilehash: 6f37e5c8d700d33e368966c8c3c31abd4f42d3b9
+ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71239524"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71721195"
 ---
 # <a name="enable-code-integrity"></a>Habilitar integridade de código
 
@@ -35,7 +35,7 @@ Se você se identificar como um usuário de dispositivo avançado e quiser exper
 
 ## <a name="additional-resources-for-it-administrators"></a>Recursos adicionais para administradores de ti
 
-Se você for um administrador do Intune e quiser saber mais sobre as configurações de conformidade de integridade do dispositivo do Intune, consulte [Adicionar uma política de conformidade do dispositivo para dispositivos Windows 10 no Intune](https://docs.microsoft.com/intune/compliance-policy-create-windows). Para obter uma visão detalhada das ações de conformidade que você pode executar no Intune, consulte o [CSP do HealthAttestation](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp#step-8-take-appropriate-policy-action-based-on-evaluation-results).  
+Se você for um administrador do Intune e quiser saber mais sobre as configurações de conformidade de integridade do dispositivo do Intune, consulte [Adicionar uma política de conformidade do dispositivo para dispositivos Windows 10 no Intune](https://docs.microsoft.com/intune/protect/compliance-policy-create-windows.md). Para obter uma visão detalhada das ações de conformidade que você pode executar no Intune, consulte o [CSP do HealthAttestation](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp#step-8-take-appropriate-policy-action-based-on-evaluation-results).  
 
 ## <a name="next-steps"></a>Passos seguintes
 

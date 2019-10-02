@@ -7,18 +7,18 @@ ms.topic: include
 ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 90c770fec5bd9456151e601188254a3a022cd13f
-ms.sourcegitcommit: 62c41976c4da43b36015b715bc255397ebb8c6ad
+ms.openlocfilehash: fa251a0edd943d566849b138af5cbab0be248a53
+ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71279909"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71731760"
 ---
 Esses avisos fornecem informações importantes que podem ajudá-lo a se preparar para futuras alterações e recursos do Intune. 
 
 
 ### <a name="decreasing-support-for-android-device-administrator"></a>Diminuindo o suporte para o administrador do dispositivo Android 
-O administrador do dispositivo Android (às vezes chamado de gerenciamento do Android "herdado" e lançado com o Android 2,2) é uma maneira de gerenciar dispositivos Android. No entanto, a funcionalidade de gerenciamento aprimorada agora está disponível com o [Android Enterprise](../connect-intune-android-enterprise.md) (lançado com Android 5,0). Em um esforço para migrar para o gerenciamento de dispositivos moderno, mais avançado e seguro, o Google está diminuindo o suporte ao administrador de dispositivos em novas versões do Android.
+O administrador do dispositivo Android (às vezes chamado de gerenciamento do Android "herdado" e lançado com o Android 2,2) é uma maneira de gerenciar dispositivos Android. No entanto, a funcionalidade de gerenciamento aprimorada agora está disponível com o [Android Enterprise](../enrollment/connect-intune-android-enterprise.md) (lançado com Android 5,0). Em um esforço para migrar para o gerenciamento de dispositivos moderno, mais avançado e seguro, o Google está diminuindo o suporte ao administrador de dispositivos em novas versões do Android.
 
 #### <a name="how-does-this-affect-me"></a>Como é que isto me afeta?
 Devido a essas alterações feitas pelo Google, os usuários do Intune serão afetados das seguintes maneiras: 
@@ -67,10 +67,11 @@ Você não precisa realizar nenhuma ação, mas pode considerar atualizar suas d
 https://aka.ms/intune_fullscreen
 
 ### <a name="plan-for-change-new-windows-updates-settings-in-intune----4464404---"></a>Planejar alteração: Novas configurações de atualizações do Windows no Intune <!-- 4464404 -->
-A partir da versão de agosto para o serviço do Intune ou 1908, estamos adicionando novas "configurações de prazos", que podem ser configuradas em vez das configurações "permitir que o usuário reinicie (reinício envolvido)". Planejamos desabilitar as configurações de reinicialização envolvidas na interface do usuário no 1909 ou a atualização de setembro e, em seguida, removê-las completamente do console até o final de outubro. 
+A partir da versão de agosto para o serviço do Intune ou 1908, estamos adicionando novas "configurações de prazos", que podem ser configuradas em vez das configurações "permitir que o usuário reinicie (reinício envolvido)". Planejamos desabilitar as configurações de reinicialização envolvidas na interface do usuário no 1909 ou a atualização de setembro e, em seguida, removê-las completamente do console até o final de outubro.
 
 #### <a name="how-does-this-affect-me"></a>Como é que isto me afeta?
-Se você gerenciar dispositivos Windows 10 em seu ambiente: 
+Se você gerenciar dispositivos Windows 10 em seu ambiente:
+
 - Com a atualização do Intune de agosto ou 1908, você verá novas configurações de prazo no console, além das antigas configurações de reinicialização envolvidas.
 - Quando ambas as configurações antigas e novas estiverem definidas, os valores das configurações de prazo substituirão os valores de configuração de reinício envolvidos.
 - As configurações de prazo substituirão a opção "permitir que o usuário reinicie (reinício envolvido) no console do na atualização 1910.
@@ -78,7 +79,7 @@ Se você gerenciar dispositivos Windows 10 em seu ambiente:
 #### <a name="what-can-i-do-to-prepare-for-this-change"></a>O que posso fazer para me preparar para esta alteração?
 Comece a usar as configurações de prazo em 1908, configurando-as com os valores desejados. Depois de fazer isso, você pode definir a configuração de reinicialização envolvida como "não configurado" para se preparar para que essas configurações sejam removidas do console em outubro.
 
-Atualize sua documentação e todos os scripts de automação, se necessário. 
+Atualize sua documentação e todos os scripts de automação, se necessário.
 
 Manteremos você atualizado e poste um lembrete no centro de mensagens antes de removermos as configurações de reinicialização envolvidas.
 
@@ -86,12 +87,13 @@ Manteremos você atualizado e poste um lembrete no centro de mensagens antes de 
 O Intune mudará para oferecer suporte a Android 5. x (pirulito) e superior em outubro. Atualize todos os aplicativos encapsulados com o SDK de aplicativos do Intune mais recente e atualize seus dispositivos.
 
 #### <a name="how-does-this-affect-me"></a>Como é que isto me afeta?
-Se você não estiver usando o ou planeja usar o SDK ou o aplicativo para Android, essa alteração não afetará você. Se você estiver usando o SDK de aplicativos do Intune, certifique-se de atualizar para a versão mais recente e também atualizar seus dispositivos para Android 5. x e superior. Se você não atualizar, os aplicativos não receberão atualizações, e a qualidade da sua experiência diminuirá ao longo do tempo. 
+Se você não estiver usando o ou planeja usar o SDK ou o aplicativo para Android, essa alteração não afetará você. Se você estiver usando o SDK de aplicativos do Intune, certifique-se de atualizar para a versão mais recente e também atualizar seus dispositivos para Android 5. x e superior. Se você não atualizar, os aplicativos não receberão atualizações, e a qualidade da sua experiência diminuirá ao longo do tempo.
 
 Abaixo, encontre uma lista de dispositivos comuns registrados no Intune que executam o Android versão 4. x. Se você tiver um desses dispositivos, execute as etapas apropriadas para certificar-se de que este dispositivo dará suporte à versão 5,0 ou superior do Android ou que ele será substituído por um dispositivo que dá suporte à versão 5,0 ou superior do Android. Esta lista não é exaustiva em todos os dispositivos que talvez precisem ser avaliados:
+
 - Samsung SM-T561  
-- Samsung SM-T365 
-- Samsung GT-I9195 
+- Samsung SM-T365
+- Samsung GT-I9195
 - Samsung SM-G800F
 - Samsung SM-G357FZ
 - XT1080 Motorola
@@ -100,7 +102,6 @@ Abaixo, encontre uma lista de dispositivos comuns registrados no Intune que exec
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>O que preciso de fazer para me preparar para esta alteração?
 Encapsular seus aplicativos com o SDK de aplicativos do Intune mais recente. Você também pode definir a configuração de inicialização condicional "exigir versão mínima do so (somente aviso)" para notificar os usuários finais sobre os dispositivos pessoais a serem atualizados.
-
 
 ### <a name="intune-plan-for-change-nearing-end-of-support-for-windows-7----3042987---"></a>Plano do Intune para alteração: próximo ao fim do suporte para o Windows 7 <!-- 3042987 -->
 À medida que recebemos a mensagem de MC148476 lançada no último de setembro de 2018 e novamente no MC176794 de março de 2019, o Windows 7 atinge o fim do suporte estendido em 14 de janeiro de 2020. Nesse momento, o Intune desativará o suporte para dispositivos que executam o Windows 7, para que possamos focar nosso investimento em dar suporte a tecnologias mais novas e fornecer novas experiências de usuário final. Após essa data, a assistência técnica e as atualizações automáticas que ajudam a proteger seu PC com Windows 7 não estarão mais disponíveis por meio do Intune. A Microsoft recomenda enfaticamente que você mude para o Windows 10 antes de janeiro de 2020, para evitar um cenário em que você precisa de serviço ou suporte que não esteja mais disponível. Leia mais sobre o ciclo de vida do suporte do Windows [aqui](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet).

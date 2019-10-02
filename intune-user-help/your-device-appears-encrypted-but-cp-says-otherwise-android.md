@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: caae22e59e8adb6952e9a69ff03c575ae4467b2d
-ms.sourcegitcommit: 6a946a055a2014e00a4ca9d71986727a4ebbc777
+ms.openlocfilehash: 13f22b66b5a0700eadda28b20e0db6edce507021
+ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71238979"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71721174"
 ---
 # <a name="device-encrypted-but-apps-say-otherwise"></a>Dispositivo criptografado, mas aplicativos dizem de outra forma
 
@@ -50,7 +50,7 @@ Esta seção se aplica somente ao aplicativo Portal da Empresa. Se o seu disposi
 
 Alguns dispositivos Android na versão 7,0 e posteriores criptografam dados de maneiras inconsistentes com determinados padrões da plataforma Android. Esses métodos de criptografia colocam as informações do dispositivo em risco. Como resultado, esses dispositivos não têm suporte.
 
-Para obter uma lista não completa de dispositivos Android com suporte, consulte o artigo [sistemas operacionais e navegadores com suporte no Intune](https://docs.microsoft.com/intune/supported-devices-browsers#supported-samsung-knox-standard-devices). Se o dispositivo não estiver listado, consulte o fabricante do dispositivo ou contate a pessoa de suporte.
+Para obter uma lista não completa de dispositivos Android com suporte, consulte o artigo [sistemas operacionais e navegadores com suporte no Intune](https://docs.microsoft.com/intune/fundamentals/supported-devices-browsers#supported-samsung-knox-standard-devices). Se o dispositivo não estiver listado, consulte o fabricante do dispositivo ou contate a pessoa de suporte.
 
 > [!Note]
 > A Microsoft trabalha com os fabricantes para resolver quaisquer problemas que encontrarmos durante o teste ou que os usuários se reportam a nós. Atualizaremos este artigo sempre que estiverem disponíveis novas informações.
