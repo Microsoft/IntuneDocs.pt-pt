@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: f42baa1ca6e3ac6dca3c95a0eb9e422df2506031
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.sourcegitcommit: 3f0cc80c5dbb4d04519c5aa98eae8426dad8cb30
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67882013"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "71729216"
 ---
 ### <a name="apple"></a>Apple
 - Apple iOS 9.0 e posterior
