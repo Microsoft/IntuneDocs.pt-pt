@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 8d76ff182ea4402b6a4cd3242b15288d8bea16b9
-ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
+ms.openlocfilehash: f87848b43e040681085f3e89b063d5006f904464
+ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71166462"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71720918"
 ---
 ## <a name="microsoft-open-source-code-of-conduct"></a>Código de Conduta Open Source da Microsoft
 
@@ -23,7 +23,7 @@ Queremos **e incentive contribuições** de nossa comunidade (usuários, cliente
 * **Use seu navegador**: Existem duas opções: 
 
     **Opção 1: Editar diretamente do docs.microsoft.com**  
-    1. Vá para o tópico, [https://docs.microsoft.com/intune/troubleshoot-policies-in-microsoft-intune](troubleshoot-policies-in-microsoft-intune.md)como. 
+    1. Vá para o tópico, [https://docs.microsoft.com/intune/troubleshoot-policies-in-microsoft-intune](intune/protect/troubleshoot-policies-in-microsoft-intune.md)como. 
     2. Selecione **Editar** (canto superior direito). Isso mostra o arquivo de redução no repositório GitHub.
     3. Selecione o ícone de lápis. Ao passar o mouse sobre o ícone de lápis, você verá a dica de ferramenta **Editar este arquivo** . 
     4. Faça suas alterações e, em seguida, **confirme** suas alterações. 
