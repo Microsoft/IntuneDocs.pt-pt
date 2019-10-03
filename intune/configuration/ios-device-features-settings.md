@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/16/2019
+ms.date: 10/02/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e22a50e066959f7e7b6bb206f75fd55cff33160b
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: b8cd38174b9332f285e0dc4f938d99dbd5aecf74
+ms.sourcegitcommit: f04e21ec459998922ba9c7091ab5f8efafd8a01c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 10/02/2019
-ms.locfileid: "71730588"
+ms.locfileid: "71816878"
 ---
 # <a name="ios-and-ipados-device-settings-to-use-common-ios-features-in-intune"></a>configurações do dispositivo iOS e iPadOS para usar recursos comuns do iOS no Intune
 
@@ -276,7 +276,7 @@ Esta funcionalidade aplica-se a:
 
 ### <a name="settings-apply-to-all-enrollment-types"></a>As configurações se aplicam a: Todos os tipos de registro
 
-- **Tipo de extensão do aplicativo SSO**: Escolha o tipo de extensão de aplicativo de SSO de credencial. As opções são:
+- **Tipo de extensão do aplicativo SSO**: Escolha o tipo de extensão de aplicativo de SSO de credencial. Ao salvar o perfil de extensão do aplicativo SSO, você não pode alterar o tipo de extensão do aplicativo SSO. As opções são:
 
   - **Não configurado**: Extensões de aplicativo não são usadas. Para desabilitar uma extensão de aplicativo, você pode alternar o tipo de extensão do aplicativo SSO de **Kerberos** ou **credencial** para **não configurado**.
   - **Credencial**: Use uma extensão de aplicativo de credencial genérica e personalizável para executar o SSO. Certifique-se de que você conhece a ID de extensão para a extensão de aplicativo de SSO da sua organização.

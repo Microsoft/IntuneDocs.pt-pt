@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/29/2019
+ms.date: 10/02/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c853608f46bb01263ddd08193f729cdfb018fed9
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 04e943f573fb2485a2ef7f1e3245f08d4222d142
+ms.sourcegitcommit: fc356fd69beaeb3d69982b47e2bdffb6f7127f8c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71731192"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71830567"
 ---
 # <a name="windows-10-app-deployment-using-microsoft-intune"></a>Implementação de aplicações para Windows 10 através do Microsoft Intune 
 
@@ -36,6 +36,8 @@ As aplicações de linha de negócio (LOB) e as aplicações da Microsoft Store 
 > - Para o Windows 10 1709: [21 de junho de 2018 – KB4284822 (Compilação 16299.522 do SO)](https://support.microsoft.com/help/4284822).
 >
 > Somente o Windows 10 1803 e superior dão suporte à instalação de aplicativos quando não há um usuário primário associado.
+>
+> Não há suporte para a implantação de aplicativos LOB em dispositivos que executam o Windows 10 Home Editions.
 
 ## <a name="windows-10-line-of-business-apps"></a>Aplicações de linha de negócio do Windows 10
 

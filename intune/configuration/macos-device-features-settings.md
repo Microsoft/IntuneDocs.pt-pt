@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/16/2019
+ms.date: 10/02/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e3e270fc3efcc92a138fe97cbe599f7bd2bf1e55
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 2ae9637e827330fb33c407122450deb014b3725a
+ms.sourcegitcommit: f04e21ec459998922ba9c7091ab5f8efafd8a01c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 10/02/2019
-ms.locfileid: "71730568"
+ms.locfileid: "71816859"
 ---
 # <a name="macos-device-feature-settings-in-intune"></a>configurações de recurso de dispositivo macOS no Intune
 
@@ -128,7 +128,7 @@ Esta funcionalidade aplica-se a:
 
 ### <a name="settings-apply-to-all-enrollment-types"></a>As configurações se aplicam a: Todos os tipos de registro 
 
-- **Tipo de extensão do aplicativo SSO**: Escolha o tipo de extensão de aplicativo de SSO de credencial. As opções são:
+- **Tipo de extensão do aplicativo SSO**: Escolha o tipo de extensão de aplicativo de SSO de credencial. Ao salvar o perfil de extensão do aplicativo SSO, você não pode alterar o tipo de extensão do aplicativo SSO. As opções são:
 
   - **Não configurado**: Extensões de aplicativo não são usadas. Para desabilitar uma extensão de aplicativo SSO, alterne o tipo de extensão do aplicativo SSO de **Kerberos** ou **credencial** para **não configurado**.
   - **Credencial**: Use uma extensão de aplicativo de credencial genérica e personalizável para usar o SSO. Certifique-se de que você conhece a ID da extensão e a ID da equipe para a extensão do aplicativo de SSO da sua organização.  
@@ -207,6 +207,8 @@ Esta funcionalidade aplica-se a:
   `osascript -e 'id of app "ExampleApp"'`
 
 - **Domínio**: Insira o domínio do site para associar a um aplicativo. O domínio inclui um tipo de serviço e um nome de host totalmente `webcredentials:www.contoso.com`qualificado, como.
+
+  Você pode corresponder a todos os subdomínios de um domínio associado inserindo `*.` (um curinga de asterisco e um ponto) antes do início do domínio. O período é necessário. Os domínios exatos têm uma prioridade mais alta do que os domínios curinga. Portanto, os padrões de domínios pai serão correspondidos *se* uma correspondência não for encontrada no subdomínio totalmente qualificado.
 
   O tipo de serviço pode ser:
 

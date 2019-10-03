@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/19/2019
+ms.date: 10/02/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 80b904893f118bac1f4d0d79da0cd10498b9f2ed
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 6090d329eee6f27da21b6133a2b7ccdc7072feb3
+ms.sourcegitcommit: f04e21ec459998922ba9c7091ab5f8efafd8a01c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 10/02/2019
-ms.locfileid: "71729300"
+ms.locfileid: "71814119"
 ---
 # <a name="macos-endpoint-protection-settings-in-intune"></a>Configurações do MacOS Endpoint Protection no Intune  
 
@@ -107,13 +107,13 @@ Para obter mais informações sobre as configurações do Apple FileVault, consu
     **Padrão**: Não configurado  
 
   - **Número de vezes com permissão para ignorar**  
-  Defina o número de vezes que um usuário pode ignorar prompts para habilitar FileVault antes que FileVault seja necessário para que o usuário entre.  
+  Defina o número de vezes que um usuário pode ignorar prompts para habilitar FileVault antes que FileVault seja necessário para que o usuário entre. 
 
     - **Não configurado** -a criptografia no dispositivo é necessária antes que a próxima entrada seja permitida.  
     - **1** a **10** -permite que um usuário ignore o prompt de 1 a 10 vezes antes de exigir a criptografia no dispositivo.  
     - **Sem limite, sempre avisar** -o usuário é solicitado a habilitar FileVault, mas a criptografia nunca é necessária.  
  
-    **Padrão**: Não configurado  
+    **Padrão**: *Varia* -quando a configuração de *desabilitar prompt em sair* está definida como **não configurado**, essa configuração assume como padrão **não configurado**. Quando *desabilitar prompt na saída* estiver definido como **desabilitar**, essa configuração padrão será **1** e o valor **não configurado não** será uma opção.
 
 Para obter mais informações sobre o FileVault com o Intune, consulte [chaves de recuperação do FileVault](encryption-monitor.md#filevault-recovery-keys).
 

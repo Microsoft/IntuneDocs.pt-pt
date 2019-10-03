@@ -17,62 +17,68 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ce9a92a9fffad13c6723504735b1b1cb9442f61f
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 449e799dfc0531958c1578179cf07440d348ecf8
+ms.sourcegitcommit: f04e21ec459998922ba9c7091ab5f8efafd8a01c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 10/02/2019
-ms.locfileid: "71729316"
+ms.locfileid: "71813940"
 ---
 # <a name="data-jamf-pro-sends-to-intune"></a>Dados que o Jamf Pro envia para o Intune
 
 Quando você usa o [JAMF pro](https://www.jamf.com) para gerenciar seus Macs de usuários finais com o Intune, o JAMF pro captura informações de inventário sobre dispositivos MacOS gerenciados. 
 
 ## <a name="data"></a>Data  
-O Jamf Pro reporta as seguintes informações ao Intune:  
+Para obter a lista de dados que o JAMF pro compartilha com o Intune, consulte [Appendix: Informações de inventário compartilhadas com Microsoft Intune @ no__t-0 na documentação técnica do JAMF pro. 
 
-* ID do Azure AD do Dispositivo
-* Estado de Inventário do JAMF (estado de inventário de um computador registado através do Jamf Pro nas últimas 24 horas)
-* Versão do SO
-* ID do Azure AD do Utilizador
-* Dados encriptados (FileVault 2)
-* Estado do Controlador de Chamadas
-* Palavra-passe: número mínimo de conjuntos de carateres
-* Expiração da Palavra-passe (dias)
-* Tipo de Palavra-passe – simples, alfanumérico ou desconhecido
-* Impedir o Início de Sessão Automático
-* Comprimento do Código de Acesso Necessário
-* Palavra-passe: número de palavras-passe anteriores para impedir a reutilização
-* Proteção da Integridade do Sistema
-* Hora do Último Registo
-* Tipo de Arquitetura
-* Ranhuras de RAM Disponíveis
-* Capacidade de Bateria
-* ROM de Arranque
-* Velocidade do Barramento
-* Tamanho da Cache
-* Nome do dispositivo
-* Associação a um Domínio
-* ID do Jamf
-* Endereço MAC
-* Criar
-* Modelo
-* Identificador do Modelo
-* Velocidade da NIC
-* Número de Núcleos
-* Número de Processadores
+<!--  
+Jamf Pro reports the following information to Intune:  
+
+* Device Azure AD ID
+* JAMF Inventory State (inventory state of a computer checked in with Jamf Pro within the last 24 hours)
+* OS Version
+* User Azure AD ID
+* Encrypted (FileVault 2)
+* Gatekeeper Status
+* Password: minimum number of character sets
+* Password expiration (days)
+* Password Type - simple, alphanumeric, or unknown
+* Prevent Auto Login
+* Required Passcode Length
+* Password: number of previous passwords to prevent reuse
+* System Integrity Protection
+* Last Check-In Time
+* Architecture Type
+* Available RAM Slots
+* Battery Capacity
+* Boot ROM
+* Bus Speed
+* Cache Size
+* Device Name
+* Domain Join
+* Jamf ID
+* MAC address
+* Make
+* Model
+* Model Identifier
+* NIC Speed
+* Number of Cores
+* Number of Processors
 * OS
-* Plataforma
-* Velocidade do Processador
-* Tipo de processador
-* Endereço MAC Secundário
-* Número de Série
-* Versão do SMC
-* Total de RAM
+* Platform
+* Processor Speed
+* Processor Type
+* Secondary MAC Address
+* Serial Number
+* SMC Version
+* Total RAM
 * UDID
-* E-mail do Utilizador
+* User Email
+--> 
 
-Pode remover um dispositivo gerido por Jamf a partir da consola do Intune ao selecionar **Eliminar** na vista **Todos os dispositivos**. A eliminação de dispositivos em massa pode ser ativada ao selecionar múltiplos dispositivos e clicar em **Eliminar**.
+<!-- 
+You can remove a Jamf-managed device from the Intune console by selecting **Delete** in the **All devices** view. Bulk device deletion can be enabled by selecting multiple devices and clicking **Delete**.
+-->
 
 ## <a name="next-steps"></a>Passos seguintes
 Obtenha informações sobre como [remover um dispositivo gerido por Jamf na documentação do Jamf Pro](https://www.jamf.com/jamf-nation/articles/80/unmanaging-computers-while-preserving-their-inventory-information). Também pode enviar um pedido de suporte para o [suporte do Jamf](https://www.jamf.com/support/) para obter ajuda adicional. 

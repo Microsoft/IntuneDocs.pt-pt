@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 6ec8f8a613d3b0a0b17f2615de634e70fa282fd7
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 8483ed3d4198e228bdaaf4723b2c9c0dca9cecfc
+ms.sourcegitcommit: fc356fd69beaeb3d69982b47e2bdffb6f7127f8c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68229262"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71830516"
 ---
 <!-- This include is part of the Intune Data Warehouse documentation. -->
 
@@ -18,4 +18,4 @@ Os requisitos de acesso ao Armazém de Dados do Intune (incluindo a API) são:
   - Administrador global do Azure AD
   - Um administrador de serviços do Intune
   - Utilizador com acesso baseado em funções ao recurso **armazém de dados do Intune**
-  - Autenticação sem utilizador com [autenticação apenas com a aplicação](../data-warehouse-app-only-auth.md) 
+  - Autenticação sem utilizador com [autenticação apenas com a aplicação](../developer/data-warehouse-app-only-auth.md) 

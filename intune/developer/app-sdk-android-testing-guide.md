@@ -5,7 +5,7 @@ keywords: SDK
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/09/2019
+ms.date: 10/02/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a8ffc81ec2dba3eac0af4eeb94e22002ec8afa87
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 1484567721283ddb91f3ecebbc448e7356ceaf5a
+ms.sourcegitcommit: fc356fd69beaeb3d69982b47e2bdffb6f7127f8c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71730360"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71830541"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developers-testing-guide"></a>Guia de testes do SDK do Microsoft Intune app para desenvolvedores Android
 
@@ -41,9 +41,6 @@ Novas contas podem ser criadas com e sem dados gerados previamente. Para criar u
 
 > [!NOTE]
 > Se seu aplicativo não estiver listado no portal do Azure, você poderá direcioná-lo com uma política selecionando a opção **mais aplicativos** e fornecendo o nome do pacote na caixa de texto.
-
-> [!IMPORTANT]
-> Para que uma política de configuração de aplicativo seja aplicada, o usuário de registro deve ser direcionado por uma [política de proteção de aplicativo do Intune](../apps/app-protection-policy.md).
 
 ## <a name="test-cases"></a>Casos de teste
 
