@@ -1,7 +1,7 @@
 ---
 title: Solucionar problemas comuns do Intune Exchange Connector
 titleSuffix: Microsoft Intune
-description: Solucionar e resolver problemas comuns para o Microsoft Intune Exchange Connector local
+description: Solucionar e resolver problemas comuns do Exchange Connector local Microsoft Intune.
 author: brenduns
 ms.author: brenduns
 manager: dougeby
@@ -16,48 +16,46 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4219d9d4f7d7e8c56acc218d16d8277ed2cf3821
-ms.sourcegitcommit: f04e21ec459998922ba9c7091ab5f8efafd8a01c
+ms.openlocfilehash: 14da6274546cbd4c1867975c08c60ece313714b1
+ms.sourcegitcommit: 78f9750712c254d8b123ef15b74f30ca999aa128
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71817537"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71917987"
 ---
-# <a name="resolve-common-problems-for-the-intune-exchange-connector"></a>Resolver problemas comuns do Intune Exchange Connector
+# <a name="resolve-common-problems-with-the-intune-exchange-connector"></a>Resolver problemas comuns com o Intune Exchange Connector
  
-Este artigo pode ajudar o administrador do Intune a resolver problemas comuns para a operação do Intune Exchange Connector.  
+Este artigo pode ajudar o administrador do Intune a resolver problemas comuns com a operação do Intune Exchange Connector.  
 
-Antes de continuar, examine solucionar problemas do Exchange Connector local do Intune para obter informações básicas sobre o conector antes de iniciar a solução de problemas e problemas comuns para a configuração do conector. 
+Antes de iniciar a solução de problemas, examine [solucionar problemas do Exchange Connector local do Intune](troubleshoot-exchange-connector.md) para obter informações básicas sobre o conector. Examine também problemas comuns para a configuração do conector. 
 
-## <a name="exchange-activesync-device-not-discovered-from-exchange"></a>Dispositivo do Exchange ActiveSync não detetado a partir do Exchange
+## <a name="an-exchange-activesync-device-isnt-discovered-from-exchange"></a>Um dispositivo do Exchange ActiveSync não é descoberto no Exchange
 
-[Monitorize a atividade do conector do Exchange](exchange-connector-install.md#on-premises-intune-exchange-connector-high-availability-support) para ver se o conector do Exchange está a sincronizar com o servidor Exchange. Se uma sincronização rápida ou uma sincronização completa foi concluída com êxito desde que o dispositivo foi associado, pode verificar a existência de outros possíveis problemas, que se encontram listados abaixo. Se não tiver sido efetuada uma sincronização, recolha os registos de sincronização e anexe-os a um pedido de suporte.  
+Quando um dispositivo do Exchange ActiveSync não for descoberto do Exchange, [monitore a atividade do Exchange Connector](exchange-connector-install.md#on-premises-intune-exchange-connector-high-availability-support) para ver se o Exchange Connector está sincronizando com o Exchange Server. Se nenhuma sincronização ocorreu desde que o dispositivo ingressou, colete os logs de sincronização e anexe-os a uma solicitação de suporte. Se uma sincronização completa ou sincronização rápida tiver sido concluída com êxito desde que o dispositivo ingressou, verifique os seguintes problemas: 
 
-- Se um utilizador não tiver uma licença do Intune, o conector do Exchange não irá detetar os respetivos dispositivos.  
+- Verifique se os usuários têm uma licença do Intune. Caso contrário, o Exchange Connector não descobrirá seus dispositivos.  
 
-- Se o endereço SMTP principal de um utilizador for diferente do respetivo UPN no Azure Active Directory (Azure AD), o Exchange Connector não detetará dispositivos para esse utilizador. Corrija o endereço SMTP principal para resolver o problema.  
+- Se o endereço SMTP primário do usuário for diferente do nome principal do usuário (UPN) no Azure Active Directory (Azure AD), o Exchange Connector não descobrirá nenhum dispositivo para esse usuário. Corrija o endereço SMTP principal para resolver o problema.  
 
-- Se você tiver servidores de caixa de correio do Exchange 2010 e do Exchange 2013 em seu ambiente, é recomendável apontar o Exchange Connector para um servidor de acesso para cliente (CAS) do Exchange 2013. Caso contrário, se o Exchange Connector estiver configurado para se comunicar com uma CAS do Exchange 2010, o Exchange Connector não descobrirá nenhum dispositivo dos usuários do Exchange 2013.  
+- Se você tiver servidores de caixa de correio do Exchange 2010 e do Exchange 2013 em seu ambiente, é recomendável apontar o Exchange Connector para um servidor de acesso para cliente (CAS) do Exchange 2013. Se o Exchange Connector estiver configurado para se comunicar com uma CAS do Exchange 2010, o Exchange Connector não descobrirá nenhum dispositivo de usuário no Exchange 2013.  
 
-- Para ambientes do Exchange Online dedicado, você deve apontar o Exchange Connector para uma CAS do Exchange 2013 (não um CAS do Exchange 2010) no ambiente dedicado durante a configuração inicial, pois o conector se comunicará com essas CAS somente durante a execução Cmdlets do PowerShell.  
+- Para ambientes do Exchange Online dedicado, você deve apontar o Exchange Connector para uma CAS do Exchange 2013 (não um CAS do Exchange 2010) no ambiente dedicado durante a configuração inicial. O conector se comunicará somente com uma CAS do Exchange 2013 quando ele executar os cmdlets do PowerShell.  
 
 
 ## <a name="problems-with-the-notification-email-message"></a>Problemas com a mensagem de email de notificação  
 
-Para dar suporte a dispositivos não Knox Android para acesso condicional para caixas de correio locais, o registro do Intune deve começar da mensagem de email "comece agora mesmo" enviada pelo Exchange Connector do Intune. Iniciar o registro da mensagem garante que o dispositivo receba uma ActiveSyncid exclusiva em todas as plataformas (Exchange, Azure AD, Intune).  
+Para dar suporte ao acesso condicional para caixas de correio locais em dispositivos que não executam o Android Knox, verifique se o registro do Intune começa com a mensagem de email "comece agora mesmo" que o Intune Exchange Connector envia. Iniciar o registro da mensagem garante que o dispositivo receba uma ActiveSyncid exclusiva em todas as plataformas (Exchange, Azure AD, Intune).  
 
-Há várias razões pelas quais um usuário pode não receber a mensagem de email de notificação:  
+Um usuário pode não receber a mensagem de email de notificação porque:  
 
-- A conta de notificação não está configurada corretamente.
-- A descoberta automática falha para a conta de notificação.
-- A solicitação do EWS para enviar a mensagem de email falha.
+- A conta de notificação foi configurada incorretamente.
+- Falha na descoberta automática da conta de notificação.
+- A solicitação do EWS (serviços Web do Exchange) para enviar a mensagem de email falhou.
 
-Use o seguinte para solucionar problemas de notificação por email.
+Examine as seções a seguir para solucionar problemas de notificação por email.
 
-### <a name="review-the-notification-account-thats-used-to-retrieve-autodiscover-settings"></a>Examinar a conta de notificação que é usada para recuperar as configurações de descoberta automática
-1. Verifique se o serviço descoberta automática e os serviços Web do Exchange estão configurados nos serviços de acesso para cliente do Exchange. Para obter mais informações, consulte [serviços de acesso para cliente](https://docs.microsoft.com/Exchange/architecture/client-access/client-access).
-
-   Para obter mais informações, consulte [serviço de descoberta automática no Exchange Server](https://docs.microsoft.com/Exchange/architecture/client-access/autodiscover?view=exchserver-2019).
+### <a name="check-the-notification-account-that-retrieves-autodiscover-settings"></a>Verificar a conta de notificação que recupera as configurações de descoberta automática
+1. Verifique se o serviço descoberta automática e o EWS estão configurados nos serviços de acesso para cliente do Exchange. Para obter mais informações, consulte [serviços de acesso para cliente](https://docs.microsoft.com/Exchange/architecture/client-access/client-access) e [serviço descoberta automática no Exchange Server](https://docs.microsoft.com/Exchange/architecture/client-access/autodiscover?view=exchserver-2019).
 
 
 2. Verifique se sua conta de notificação atende aos seguintes requisitos:
@@ -66,41 +64,37 @@ Use o seguinte para solucionar problemas de notificação por email.
 
    - O UPN da conta corresponde ao endereço SMTP.
 
-3. Para que a descoberta automática funcione, o servidor DNS deve ter um registro DNS para **autodiscover.SMTPdomain.com** (por exemplo autodiscover.contoso.com) que aponte para o servidor de acesso para cliente do Exchange. Para verificar se o registro está presente, faça o seguinte, ao especificar o FQDN no lugar do *autodiscover.SMTPdomain.com*:
+3. A descoberta automática requer um servidor DNS que tenha um registro DNS para **autodiscover.SMTPdomain.com** (por exemplo autodiscover.contoso.com) que aponte para o servidor de acesso para cliente do Exchange. Para verificar o registro, especifique o FQDN no lugar de *autodiscover.SMTPdomain.com* e siga estas etapas:
 
-   1. Em um prompt de comando, digite **nslookup**e pressione Enter.  
+   1. Em um prompt de comando, digite *nslookup*.  
 
-   2. Digite **autodiscover.SMTPdomain.com**e pressione Enter.
+   2. Insira *autodiscover.SMTPdomain.com*. A saída deve ser semelhante à imagem a seguir:  
+      resultados de ![Nslookup @ no__t-1
 
-      A saída deve ser semelhante à imagem a seguir:  
-      ![Resultados do nslookup](./media/troubleshoot-exchange-connector-common-problems/nslookup-results.png
-)
-
-   Você também pode testar o serviço descoberta automática da Internet em https://testconnectivity.microsoft.com/ ou de um domínio local usando a ferramenta Analisador de conectividade da Microsoft. Para obter mais informações, consulte a [ferramenta Analisador de conectividade da Microsoft](https://docs.microsoft.com/en-us/previous-versions/office/exchange-remote-connectivity/jj851141(v=exchg.80)). Baixe a [ferramenta Analisador de conectividade da Microsoft](http://go.microsoft.com/fwlink/?LinkID=313782).
+   Você também pode testar o serviço descoberta automática da Internet em https://testconnectivity.microsoft.com. Ou testá-lo de um domínio local usando a ferramenta Microsoft Connectivity Analyzer. Para obter mais informações, consulte a [ferramenta Analisador de conectividade da Microsoft](https://docs.microsoft.com/en-us/previous-versions/office/exchange-remote-connectivity/jj851141(v=exchg.80)). Se necessário, [Baixe a ferramenta Analisador de conectividade da Microsoft](http://go.microsoft.com/fwlink/?LinkID=313782).
 
 
-### <a name="review-autodisocvery"></a>Examinar Autodisocvery  
+### <a name="check-autodiscovery"></a>Verificar descoberta automática  
 
 Se a descoberta automática falhar, tente as seguintes etapas:
 1. [Configure um registro DNS de descoberta automática válido](https://docs.microsoft.com/previous-versions/exchange-server/exchange-150/mt473798(v=exchg.150)). 
 
-2. Codifique a URL do EWS no arquivo de configuração do Intune Exchange Connector, da seguinte maneira:
+2. Codifique a URL do EWS no arquivo de configuração do Intune Exchange Connector:
 
-   1. Determine a URL do EWS. A URL do EWS padrão para o Exchange é **https://<mailServerFQDN>/EWS/Exchange. asmx**, embora suas possam ser diferentes. Contate o administrador do Exchange para verificar a URL correta para o seu ambiente.
+   1. Determine a URL do EWS. A URL do EWS padrão para o Exchange é `https://<mailServerFQDN>/ews/exchange.asmx`, mas sua URL pode ser diferente. Contate o administrador do Exchange para verificar a URL correta para o seu ambiente.
 
-   2. Edite o arquivo **OnPremisesExchangeConnectorServiceConfiguration. xml** . Por padrão, o arquivo está localizado em **%ProgramData%\Microsoft\Windows Intune Exchange Connector** no computador que está executando o Exchange Connector. Abra o arquivo usando um editor de texto e, em seguida, altere a seguinte linha para refletir a URL do EWS para seu ambiente: `<ExchangeWebServiceURL> https://<YourExchangeHOST>/EWS/Exchange.asmx</ExchangeWebServiceURL>`
+   2. Edite o arquivo *OnPremisesExchangeConnectorServiceConfiguration. xml* . Por padrão, o arquivo está localizado em *%ProgramData%\Microsoft\Windows Intune Exchange Connector* no computador que executa o Exchange Connector. Abra o arquivo em um editor de texto e, em seguida, altere a seguinte linha para refletir a URL do EWS para seu ambiente: `<ExchangeWebServiceURL> https://<YourExchangeHOST>/EWS/Exchange.asmx</ExchangeWebServiceURL>`
     
 
-3. Salve o arquivo e reinicie o computador ou reinicie o serviço de Microsoft Intune Exchange Connector.
+3. Salve o arquivo e reinicie o computador ou reinicie o serviço do conector do Exchange Microsoft Intune.
 
 >[!NOTE]
 > Nessa configuração, o Intune Exchange Connector interrompe o uso da descoberta automática e, em vez disso, conecta-se diretamente à URL do EWS.
 
 ## <a name="next-steps"></a>Passos seguintes  
 
-O artigo a seguir pode ajudar a resolver erros específicos:
-- [Resolva erros comuns para o Intune Exchange Connector](troubleshoot-exchange-connector-common-errors.md).
+Para obter ajuda com erros específicos, tente [resolver erros comuns para o Intune Exchange Connector](troubleshoot-exchange-connector-common-errors.md).
 
-Procure assistência do suporte ou da Comunidade do Intune.
-- Consulte [obter suporte](../fundamentals/get-support.md) para usar o console do Intune para ajudar a solucionar o problema ou para abrir um caso de suporte com a Microsoft. 
+Para obter suporte ou para obter ajuda da Comunidade do Intune:
+- Consulte [obter suporte](../fundamentals/get-support.md) para usar o console do Intune para solucionar o problema ou para abrir um caso de suporte com a Microsoft. 
 - Poste seu problema nos [fóruns de Microsoft Intune](https://social.technet.microsoft.com/Forums/en-US/home?forum=microsoftintuneprod).  

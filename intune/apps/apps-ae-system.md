@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ffc99b34016eba6511f63d1df2184abc3cae858
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 19f398f58c643928497d8083c173f88862cb0c24
+ms.sourcegitcommit: 223d64a72ec85fe222f5bb10639da729368e6d57
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71731252"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71940060"
 ---
 # <a name="add-android-enterprise-system-apps-to-microsoft-intune"></a>Adicionar aplicativos do Android Enterprise System ao Microsoft Intune
 
@@ -42,9 +42,15 @@ Você pode adicionar um aplicativo Android Enterprise System ao Intune por meio 
 5. Selecione **OK**.
 6. Selecione **Adicionar**.
 
+> [!NOTE]
+> Você precisará trabalhar com o OEM do seu dispositivo para localizar o nome do pacote do aplicativo que deseja habilitar/desabilitar.
+
 A aplicação criada é apresentada na lista de aplicações, onde a pode atribuir aos grupos que selecionar. 
 
 Os aplicativos do Android Enterprise System habilitarão ou desabilitarão aplicativos que já fazem parte da plataforma. Para habilitar um aplicativo, atribua o aplicativo do sistema conforme **necessário**. Para desabilitar um aplicativo, atribua o aplicativo do sistema como **desinstalação**. Os aplicativos do sistema não podem ser atribuídos como disponíveis para um usuário.
+
+> [!TIP]
+> Chame se você pode habilitar um aplicativo de sistema depois de tê-lo desabilitado sem a redefinição de fábrica.
 
 ## <a name="next-steps"></a>Passos seguintes
 

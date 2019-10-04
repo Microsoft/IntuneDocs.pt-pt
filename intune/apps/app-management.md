@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a0d495265580bc9801a1fadb636a62274a4f728a
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 8b630709646b2f4489cbfea6284689c9436798ca
+ms.sourcegitcommit: 78f9750712c254d8b123ef15b74f30ca999aa128
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71731440"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71916341"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>O que é a gestão de aplicações do Microsoft Intune?
 
@@ -67,7 +67,7 @@ O Intune oferece várias funcionalidades para o ajudar a obter as aplicações d
 | Aplicações de uma loja | Sim | Sim | Não | Sim | Sim |
 | Atualizar aplicações | Sim | Sim | Não | Sim | Sim |
 
-<sup>1</sup> Considere a utilização do [Windows Information Protection](../windows-information-protection-configure.md) para proteger aplicações em dispositivos com o Windows 10.<br>
+<sup>1</sup> Considere a utilização do [Windows Information Protection](../protect/windows-information-protection-configure.md) para proteger aplicações em dispositivos com o Windows 10.<br>
 <sup>2</sup> Aplica-se apenas a dispositivos geridos pelo Intune.<br>
 <sup>3</sup> O Intune suporta as aplicações disponíveis na loja do Managed Google Play em dispositivos Android Enterprise.<br>
 <sup>4</sup> O Intune não permite a instalação de um atalho para aplicações como uma ligação Web em dispositivos padrão do Android Enterprise. No entanto, o suporte da ligação Web é fornecido para [vários dispositivos dedicados de várias aplicações do Android Enterprise](../configuration/device-restrictions-android-for-work.md#dedicated-device-settings). 

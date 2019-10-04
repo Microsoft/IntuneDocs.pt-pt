@@ -1,33 +1,33 @@
 ---
-ms.openlocfilehash: 3aadafbcf9c9208e7c87504c5459731de1e402b5
-ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
+ms.openlocfilehash: 6f5b0c8df86cf5bf1206c1cccb879e37c7944a21
+ms.sourcegitcommit: 78f9750712c254d8b123ef15b74f30ca999aa128
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "71302612"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71912776"
 ---
 ## <a name="enable-windows-10-automatic-enrollment"></a>Ativar a inscrição automática de dispositivos Windows 10
 
 A inscrição automática permite que os utilizadores inscrevam os respetivos dispositivos com Windows 10 no Intune. Para se inscreverem, os utilizadores adicionam as respetivas contas profissionais aos dispositivos pessoais ou associam os dispositivos pertencentes à empresa ao Azure Active Directory. Em segundo plano, o dispositivo é registado e associa-se ao Azure Active Directory. Depois de registado, o dispositivo é gerido com o Intune.
 
 **Pré-requisitos**
+
 - Subscrição do Azure Active Directory Premium ([subscrição de avaliação](http://go.microsoft.com/fwlink/?LinkID=816845))
 - Subscrição do Microsoft Intune
-
 
 ### <a name="configure-automatic-mdm-enrollment"></a>Configurar a inscrição MDM automática
 
 1. Inicie sessão no [portal do Azure](https://portal.azure.com) e selecione **Azure Active Directory**.
 
-   ![Captura de ecrã do portal do Azure](../media/auto-enroll-azure-main.png)
+   ![Captura de ecrã do portal do Azure](../enrollment/media/windows-enroll/auto-enroll-azure-main.png)
 
 2. Selecione **Mobilidade (MDM e MAM)** .
 
-   ![Captura de ecrã do portal do Azure](../media/auto-enroll-mdm.png)
+   ![Captura de ecrã do portal do Azure](../enrollment/media/windows-enroll/auto-enroll-mdm.png)
 
 3. Selecione **Microsoft Intune**.
 
-   ![Captura de ecrã do portal do Azure](../media/auto-enroll-intune.png)
+   ![Captura de ecrã do portal do Azure](../enrollment/media/windows-enroll/auto-enroll-intune.png)
 
 4. Configure **Âmbito do Utilizador de MDM**. Especifique os dispositivos de utilizadores que devem ser geridos pelo Microsoft Intune. Os dispositivos com Windows 10 podem ser automaticamente inscritos na gestão com o Microsoft Intune.
 
@@ -43,7 +43,7 @@ A inscrição automática permite que os utilizadores inscrevam os respetivos di
    > [!NOTE]
    > O escopo de usuário do MDM deve ser definido como um grupo do Azure AD que contém objetos de usuário.
 
-   ![Captura de ecrã do portal do Azure](../media/auto-enroll-scope.png)
+   ![Captura de ecrã do portal do Azure](../enrollment/media/windows-enroll/auto-enroll-scope.png)
 
 5. Utilize os valores predefinidos para os seguintes URLs:
     - **URL dos Termos de utilização de MDM**
