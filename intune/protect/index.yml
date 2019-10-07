@@ -1,0 +1,137 @@
+### YamlMime:Landing
+title: Proteger Dados e Dispositivos com o Intune
+summary: O Intune ajuda a proteger os dispositivos e os dados empresarias com ferramentas como linhas de base de segurança, acesso condicional do Azure Active Directory e parceiros para Defesa Contra Ameaças para Dispositivos Móveis.
+metadata:
+  title: Proteger Dados e Dispositivos com o Intune
+  description: O Intune ajuda a proteger os dispositivos e os dados empresarias com ferramentas como linhas de base de segurança, acesso condicional do Azure Active Directory e parceiros para Defesa Contra Ameaças para Dispositivos Móveis.
+  services: service
+  ms.service: microsoft-intune
+  ms.subservice: subservice
+  ms.topic: landing-page
+  ms.collection: collection
+  author: brenduns
+  ms.author: brenduns
+  ms.date: 08/20/2019
+  ms.openlocfilehash: 073177f7cd7426a86a110fc1cee7812b37fa083f
+  ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+  ms.translationtype: HT
+  ms.contentlocale: pt-PT
+  ms.lasthandoff: 10/02/2019
+  ms.locfileid: "71728708"
+landingContent:
+- title: Definir regras em dispositivos para permitir o acesso a recursos
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Descrição geral da conformidade
+      url: ../device-compliance-get-started.md
+  - linkListType: quickstart
+    links:
+    - text: Criar uma política de conformidade de dispositivo
+      url: ../quickstart-set-password-length-android.md
+  - linkListType: tutorial
+    links:
+    - text: Proteger o e-mail do Exchange Online em dispositivos geridos
+      url: ../tutorial-protect-email-on-enrolled-devices.md
+  - linkListType: how-to-guide
+    links:
+    - text: Criar uma política
+      url: ../create-compliance-policy.md
+    - text: Conformidade baseada na localização
+      url: ../use-network-locations.md
+    - text: Ações de não conformidade
+      url: ../actions-for-noncompliance.md
+- title: Gerir privacidade e dados pessoais
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Dados pessoais e privacidade
+      url: ../privacy-personal-data.md
+  - linkListType: concept
+    links:
+    - text: Recolha de dados
+      url: ../privacy-data-collect.md
+    - text: Data storage and processing (Processamento e armazenamento de dados)
+      url: ../privacy-data-store-process.md
+    - text: Partilha e segurança de dados
+      url: ../privacy-data-secure-share.md
+  - linkListType: how-to-guide
+    links:
+    - text: Dados que o Intune partilha
+      url: ../privacy-data-secure-share.md
+    - text: Audit, export, delete (Auditar, exportar ou eliminar)
+      url: ../privacy-data-audit-export-delete.md
+    - text: View and correct personal data (Ver e corrigir dados pessoais)
+      url: ../privacy-data-view-correct.md
+- title: Proteger dispositivos e redes
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Proteção de dispositivos
+      url: ../device-protect.md
+    - text: Defesa Contra Ameaças para Dispositivos Móveis
+      url: ../mobile-threat-defense.md
+  - linkListType: how-to-guide
+    links:
+    - text: Microsoft Defender ATP
+      url: ../advanced-threat-protection.md
+    - text: Parceiros de Defesa Contra Ameaças a Dispositivos Móveis
+      url: ../mtd-apps-ios-app-configuration-policy-add-assign.md
+    - text: Linhas de base de segurança
+      url: ../security-baselines.md
+    - text: Proteção de ponto final
+      url: ../endpoint-protection-configure.md
+    - text: Controlo de acesso à rede
+      url: ../network-access-control-integrate.md
+    - text: Encriptar dispositivos
+      url: ../encrypt-devices.md
+- title: Utilizar métodos de autenticação seguros
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Certificados e Intune
+      url: ../certificates-configure.md
+  - linkListType: how-to-guide
+    links:
+    - text: Perfis de certificado de SCEP
+      url: ../certificates-scep-configure.md
+    - text: Perfis de certificados PKCS
+      url: ../certficates-pfx-configure.md
+    - text: Certificados PFX Importados
+      url: ../certificates-imported-pfx-configure.md
+    - text: Windows Hello para Empresas
+      url: ../windows-hello.md
+- title: Gerir atualizações de software
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: iOS
+      url: ../software-updates-ios.md
+    - text: Windows
+      url: ../windows-update-for-business-configure.md
+- title: Utilizar o Acesso Condicional
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Conditional Access overview (Descrição geral do Acesso Condicionado)
+      url: ../conditional-access.md
+    - text: Proteger o Exchange Online
+      url: ../exchange-online-protect.md
+  - linkListType: tutorial
+    links:
+    - text: Protect email on managed devices (Proteger o e-mail em dispositivos geridos)
+      url: ../tutorial-protect-email-on-enrolled-devices.md
+    - text: Proteger o e-mail em dispositivos não geridos
+      url: ../tutorial-protect-email-on-unmanaged-devices.md
+  - linkListType: concept
+    links:
+    - text: ADAL e Intune
+      url: ../app-modern-authentication-block.md
+  - linkListType: how-to-guide
+    links:
+    - text: Criar e atribuir a política de acesso condicional
+      url: ../conditional-access-exchange-create.md
+    - text: Formas comuns de utilizar o acesso condicional
+      url: ../conditional-access-intune-common-ways-use.md
+    - text: Jamf Pro para macOS
+      url: ../conditional-access-integrate-jamf.md

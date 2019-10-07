@@ -1,0 +1,85 @@
+### YamlMime:Landing
+title: Noções básicas do Microsoft Intune
+summary: O Microsoft Intune é um serviço baseado na cloud que ajuda a sua força de trabalho a ser produtiva, ao mesmo tempo que mantém os seus dados empresariais protegidos. Saiba mais sobre o planeamento, a migração e a configuração de noções básicas para o Intune.
+metadata:
+  title: Noções básicas do Intune
+  description: Saiba mais sobre o planeamento, a migração e a configuração de noções básicas para o Intune.
+  services: service
+  ms.service: microsoft-intune
+  ms.topic: landing-page
+  ms.collection: collection
+  author: dougeby
+  ms.author: erikre
+  ms.manager: dougeby
+  ms.date: 09/29/2019
+  ms.openlocfilehash: c0d75116a31c668971950d144645009a9564654c
+  ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+  ms.translationtype: HT
+  ms.contentlocale: pt-PT
+  ms.lasthandoff: 10/02/2019
+  ms.locfileid: "71728742"
+landingContent:
+- title: Acerca do Microsoft Intune
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: O que é o Intune?
+      url: what-is-intune.md
+    - text: Novidades
+      url: whats-new.md
+    - text: Features in development (Funcionalidades em desenvolvimento)
+      url: in-development.md
+  - linkListType: tutorial
+    links:
+    - text: Instruções para o Intune no portal do Azure
+      url: tutorial-walkthrough-intune-portal.md
+  - linkListType: concept
+    links:
+    - text: O que é a gestão de dispositivos?
+      url: what-is-device-management.md
+    - text: Arquitetura geral
+      url: high-level-architecture.md
+    - text: Formas comuns de utilizar o Intune
+      url: common-scenarios.md
+    - text: Decisões tecnológicas para BYOD com o EMS
+      url: byod-technology-decisions.md
+- title: Adoção do Intune
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Planear as comunicações
+      url: migration-guide-communication-plan.md
+    - text: Planning guide (Guia de planeamento)
+      url: planning-guide.md
+    - text: Guia de migração
+      url: migration-guide.md
+    - text: Kit de Adoção do Intune
+      url: https://www.microsoft.com/download/details.aspx?id=58348
+- title: Configurar o Intune
+  linkLists:
+  - linkListType: quickstart
+    links:
+    - text: Experimentar o Intune gratuitamente
+      url: free-trial-sign-up.md
+  - linkListType: concept
+    links:
+    - text: Configurações suportadas
+      url: supported-devices-browsers.md
+    - text: Requisitos de configuração da rede
+      url: network-bandwidth-use.md
+    - text: Pontos finais da rede do Intune
+      url: intune-endpoints.md
+    - text: Controlo de acesso baseado em funções
+      url: role-based-access-control.md
+    - text: Licenças do Intune
+      url: licenses.md
+  - linkListType: how-to-guide
+    links:
+    - text: Passos para configurar o Intune
+      url: setup-steps.md
+    - text: Adicionar utilizadores
+      url: users-add.md
+    - text: Adicionar grupos
+      url: groups-add.md
+    - text: Utilizar etiquetas de âmbito
+      url: scope-tags.md

@@ -1,0 +1,81 @@
+### YamlMime:Landing
+title: Orientação para programadores
+summary: Saiba como utilizar recursos para programadores do Intune, como o SDK da Aplicação do Intune e a Ferramenta de Encapsulamento de Aplicações para proteger aplicações LOB, relatórios e a API do Armazém de Dados do Intune para monitorizar o sucesso do Intune e o Microsoft Graph para aceder à funcionalidade do Intune com o Azure Active Directory.
+metadata:
+  title: Orientação para programadores
+  description: Saiba como utilizar recursos para programadores do Intune, como o SDK da Aplicação do Intune e a Ferramenta de Encapsulamento de Aplicações para proteger aplicações LOB, relatórios e a API do Armazém de Dados do Intune para monitorizar o sucesso do Intune e o Microsoft Graph para aceder à funcionalidade do Intune com o Azure Active Directory.
+  services: service
+  ms.service: microsoft-intune
+  ms.topic: landing-page
+  ms.collection: collection
+  author: erikre
+  ms.author: erikre
+  ms.manager: dougeby
+  ms.date: 09/23/2019
+  ms.openlocfilehash: f7d48e1b5473d84743adee4a7ef7b6c83b960d19
+  ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+  ms.translationtype: HT
+  ms.contentlocale: pt-PT
+  ms.lasthandoff: 10/02/2019
+  ms.locfileid: "71728878"
+landingContent:
+- title: Proteger aplicações com o SDK da Aplicação Intune
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Descrição geral do SDK da Aplicação Microsoft Intune
+      url: app-sdk.md
+  - linkListType: concept
+    links:
+    - text: Introdução ao SDK da Aplicação do Microsoft Intune
+      url: app-sdk-get-started.md
+    - text: Preparar as aplicações de linha de negócios para a proteção de aplicações
+      url: apps-prepare-mobile-application-management.md
+  - linkListType: how-to-guide
+    links:
+    - text: SDK da Aplicação do Intune para iOS
+      url: app-sdk-ios.md
+    - text: Preparar as aplicações iOS para as políticas de proteção de aplicações
+      url: app-wrapper-prepare-ios.md
+    - text: SDK da Aplicação do Intune para Android
+      url: app-wrapper-prepare-android.md
+- title: Utilizar o Armazém de Dados do Intune
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Descrição geral do armazém de dados
+      url: reports-nav-create-intune-reports.md
+    - text: Registo de alterações da API do Armazém de Dados
+      url: reports-changelog.md
+    - text: Descrição geral da API do Armazém de Dados do Intune
+      url: reports-nav-intune-data-warehouse.md
+    - text: Descrição geral do modelo de dados do Armazém de Dados do Intune
+      url: reports-ref-data-model.md
+  - linkListType: concept
+    links:
+    - text: Coleções do Armazém de Dados do Intune
+      url: intune-data-warehouse-collections.md
+  - linkListType: how-to-guide
+    links:
+    - text: Estabelecer uma ligação ao Armazém de Dados com o Power BI
+      url: reports-proc-get-a-link-powerbi.md
+    - text: Criar um relatório do Intune a partir do feed OData com o Power BI
+      url: reports-proc-create-with-odata.md
+    - text: Obter dados a partir da API do Armazém de Dados do Intune com um cliente REST
+      url: reports-proc-data-rest.md
+    - text: Ponto final da API do Armazém de Dados do Intune
+      url: reports-api-url.md
+- title: Aceder às APIs do Intune no Microsoft Graph
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Graph APIs e CSPs do Windows 10 correspondentes utilizados no Intune
+      url: graph-apis-used-by-intune-device-configuration-windows.md
+  - linkListType: how-to-guide
+    links:
+    - text: Utilizar o Azure Active Directory para aceder às APIs do Intune no Microsoft Graph
+      url: intune-graph-apis.md
+  - linkListType: reference
+    links:
+    - text: Referência da Graph API do Intune
+      url: https://docs.microsoft.com/graph/api/resources/intune-graph-overview?view=graph-rest-beta

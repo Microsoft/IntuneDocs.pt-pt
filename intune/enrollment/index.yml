@@ -1,0 +1,111 @@
+### YamlMime:Landing
+title: Inscrever dispositivos no Microsoft Intune
+summary: Existem vários métodos para inscrever os dispositivos da força de trabalho. Cada método depende da propriedade do dispositivo (pessoal ou empresarial), do tipo de dispositivo (iOS, Windows, Android) e dos requisitos de gestão (reposições, afinidade, bloqueio).
+metadata:
+  title: Inscrição no Microsoft Intune
+  description: Página de destino da inscrição no Microsoft Intune
+  services: service
+  ms.service: microsoft-intune
+  ms.subservice: enrollment
+  ms.topic: landing-page
+  author: dougeby
+  ms.author: dougeby
+  manager: dougeby
+  ms.date: 08/07/2019
+  ms.openlocfilehash: a32d8c309e1008f28816fffdd7b101537af7947a
+  ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+  ms.translationtype: HT
+  ms.contentlocale: pt-PT
+  ms.lasthandoff: 10/02/2019
+  ms.locfileid: "71728810"
+landingContent:
+- title: Mais informações sobre a inscrição
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: O que é a inscrição de dispositivos?
+      url: device-enrollment.md
+    - text: Funcionalidades de gestão de dispositivos inscritos
+      url: device-management-capabilities.md
+    - text: Opções de inscrição
+      url: enrollment-options.md
+- title: Inscrição do Windows
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Acerca da inscrição do Windows
+      url: windows-enrollment-methods.md
+    - text: Capacidades de método de inscrição
+      url: enrollment-method-capab.md
+  - linkListType: quickstart
+    links:
+    - text: Configurar a inscrição automática para dispositivos com o Windows 10
+      url: quickstart-setup-auto-enrollment.md
+    - text: Inscrever o seu dispositivo Windows 10
+      url: quickstart-enroll-windows-device.md
+  - linkListType: tutorial
+    links:
+    - text: Use Autopilot to enroll Windows devices (Utilizar o Autopilot para inscrever dispositivos Windows)
+      url: tutorial-use-autopilot-enroll-devices.md
+  - linkListType: how-to-guide
+    links:
+    - text: Configurar a inscrição do Windows
+      url: windows-enroll.md
+    - text: Configurar a inscrição em massa para dispositivos Windows
+      url: windows-bulk-enroll.md
+- title: Inscrição do Android
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Acerca da inscrição do Android
+      url: android-enroll.md
+  - linkListType: how-to-guide
+    links:
+    - text: Ligar a conta do Intune à conta do Managed Google Play
+      url: connect-intune-android-enterprise.md
+    - text: Configurar a inscrição de dispositivos com perfil de trabalho do Android Enterprise
+      url: android-work-profile-enroll.md
+    - text: Configurar a inscrição de dispositivos com perfil de trabalho do Android Enterprise
+      url: android-work-profile-enroll.md
+    - text: Configurar a inscrição de dispositivos dedicados do Android Enterprise
+      url: android-kiosk-enroll.md
+    - text: Configurar a inscrição de dispositivos totalmente geridos do Android Enterprise no Intune (pré-visualização)
+      url: android-fully-managed-enroll.md
+- title: Inscrição do iOS
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Acerca da inscrição do iOS
+      url: ios-enroll.md
+  - linkListType: tutorial
+    links:
+    - text: Utilizar as funcionalidades da Inscrição de Dispositivos da Empresa da Apple para inscrever dispositivos iOS
+      url: tutorial-use-device-enrollment-program-enroll-ios.md
+  - linkListType: how-to-guide
+    links:
+    - text: Configurar a inscrição do iOS
+      url: ios-enroll.md
+    - text: Inscrever automaticamente dispositivos iOS com o Programa de Inscrição de Dispositivos da Apple
+      url: device-enrollment-program-enroll-ios.md
+    - text: Configurar a inscrição de dispositivos iOS com o Apple School Manager
+      url: apple-school-manager-set-up-ios.md
+    - text: Configurar a inscrição de dispositivos iOS com o Apple Configurator
+      url: apple-configurator-enroll-ios.md
+- title: Inscrição do macOS
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Acerca da inscrição do macOS
+      url: macos-enroll.md
+  - linkListType: tutorial
+    links:
+    - text: Utilizar as funcionalidades da Inscrição de Dispositivos da Empresa da Apple para inscrever dispositivos iOS
+      url: tutorial-use-device-enrollment-program-enroll-ios.md
+  - linkListType: how-to-guide
+    links:
+    - text: Configurar a inscrição de macOS
+      url: macos-enroll.md
+    - text: Inscrever automaticamente dispositivos macOS com o Programa de Registo de Aparelho ou o Apple School Manager
+      url: device-enrollment-program-enroll-macos.md
+    - text: Configurar a inscrição de dispositivos iOS com o Apple Configurator
+      url: apple-configurator-enroll-ios.md

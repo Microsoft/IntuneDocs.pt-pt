@@ -1,0 +1,264 @@
+- name: Noções básicas do Microsoft Intune
+  href: index.yml
+- name: Descrição geral
+  expanded: true
+  items:
+    - name: Descrição geral do Microsoft Intune
+      href: what-is-intune.md
+      displayName: ems; emm; azure ad; active directory; ad
+    - name: O que pode o Intune fazer pela minha empresa?
+      href: get-started-evaluation.md
+    - name: Novidades
+      href: whats-new.md
+      items:
+        - name: Novidades na IU da aplicação
+          href: whats-new-app-ui.md
+        - name: Features in development (Funcionalidades em desenvolvimento)
+          href: in-development.md
+- name: Guias de Introdução
+  items:
+    - name: Experimentar o Intune gratuitamente
+      href: free-trial-sign-up.md
+      displayName: 'tenant; trial; get started, start; help'
+    - name: Criar um utilizador
+      href: quickstart-create-user.md
+    - name: Criar um grupo
+      href: quickstart-create-group.md
+    - name: Criar e atribuir uma função personalizada
+      href: quickstart-create-custom-role.md
+- name: Tutorials (Tutoriais)
+  items:
+    - name: Instruções para o Intune no portal do Azure
+      href: tutorial-walkthrough-intune-portal.md
+- name: Conceitos
+  items:
+    - name: O que é a gestão de dispositivos?
+      href: what-is-device-management.md
+      displayName: teamviewer
+    - name: O que é o Intune for Education?
+      href: introduction-intune-education.md
+    - name: Arquitetura geral
+      href: high-level-architecture.md
+    - name: Ciclo de vida dos dispositivos
+      href: device-lifecycle.md
+    - name: Ciclo de vida das aplicações
+      href: ../apps/app-lifecycle.md
+    - name: Cenários comuns
+      href: common-scenarios.md
+    - name: Decisões tecnológicas para BYOD com o EMS
+      href: byod-technology-decisions.md
+    - name: Gerir versões de sistemas operativos
+      href: manage-os-versions.md
+    - name: Gerir Windows Holographic
+      href: windows-holographic-for-business.md
+- name: How-to guides (Guias de procedimentos)
+  items:
+    - name: Implementação de planos
+      items:
+        - name: Planning guide (Guia de planeamento)
+          href: planning-guide.md
+          items:
+            - name: Determinar metas e objetivos
+              href: planning-guide-deployment-goals.md
+            - name: Identificar cenários
+              href: planning-guide-scenarios.md
+            - name: Determinar requisitos
+              href: planning-guide-requirements.md
+            - name: Desenvolver um plano de implementação
+              href: planning-guide-rollout-plan.md
+            - name: Desenvolver um plano de comunicação
+              href: planning-guide-communication-plan.md
+            - name: Desenvolver um plano de suporte
+              href: planning-guide-support-plan.md
+            - name: Estrutura
+              href: planning-guide-design.md
+            - name: Configurar
+              href: planning-guide-onboarding.md
+            - name: Testar e validar
+              href: planning-guide-test-validation.md
+            - name: Recursos adicionais
+              href: planning-guide-resources.md
+        - name: Guia de migração
+          href: migration-guide.md
+          items:
+            - name: Preparar o Intune
+              href: migration-guide-prepare.md
+              items:
+                - name: Configuração básica
+                  href: migration-guide-setup.md
+                - name: Configurar políticas de gestão de aplicações e de dispositivos
+                  href: migration-guide-configure-policies.md
+                - name: Configurar políticas de proteção de aplicações
+                  href: migration-guide-app-protection-policies.md
+                - name: Considerações de migração
+                  href: migration-guide-considerations.md
+            - name: Campanha de migração
+              href: migration-guide-campaign.md
+              items:
+                - name: Planear as comunicações
+                  href: migration-guide-communication-plan.md
+                - name: Adoção de unidades
+                  href: migration-guide-drive-adoption.md
+                - name: Ciclo de migração típico
+                  href: migration-guide-cycle.md
+        - name: Planear as comunicações
+          href: migration-guide-communication-plan.md
+        - name: Dar formação aos utilizadores
+          items:
+            - name: Como dar formação aos utilizadores finais
+              href: end-user-educate.md
+            - name: Mensagens do Portal da Empresa
+              href: end-user-company-portal-messages.md
+            - name: Proteção de aplicações no Android
+              href: end-user-mam-apps-android.md
+            - name: Proteção de aplicações no iOS
+              href: end-user-mam-apps-ios.md
+            - name: Como obter aplicações para Android
+              href: end-user-apps-android.md
+            - name: Como obter aplicações para iOS
+              href: end-user-apps-ios.md
+            - name: Como obter aplicações para Windows
+              href: end-user-apps-windows.md
+            - name: Dados que o Intune envia para a Apple
+              href: ../protect/data-intune-sends-to-apple.md
+            - name: Dados que o Intune envia para a Google
+              href: ../protect/data-intune-sends-to-google.md
+            - name: Dados que a Apple envia para o Intune
+              href: ../protect/data-apple-sends-to-intune.md
+            - name: Dados que a Google envia para o Intune
+              href: ../protect/data-google-sends-to-intune.md
+    - name: Configurar o Intune
+      items:
+        - name: Passos para configurar o Intune
+          href: setup-steps.md
+          displayName: fasttrack
+        - name: Configurações suportadas
+          href: supported-devices-browsers.md
+          items:
+            - name: Configuração de rede
+              href: network-bandwidth-use.md
+            - name: Intune endpoints (Pontos finais do Intune)
+              href: intune-endpoints.md
+            - name: Intune US government endpoints (Pontos finais da administração pública dos EUA do Intune)
+              href: intune-us-government-endpoints.md
+        - name: Iniciar sessão no Intune
+          href: account-sign-up.md
+        - name: Configurar domínios
+          href: custom-domain-name-configure.md
+        - name: Adicionar utilizadores
+          href: users-add.md
+        - name: Adicionar grupos
+          href: groups-add.md
+        - name: Atribuir licenças
+          href: licenses-assign.md
+        - name: Licenças do Intune
+          href: licenses.md
+        - name: Definir a autoridade de MDM
+          href: mdm-authority-set.md
+        - name: Gerir funções
+          items:
+            - name: Controlo de acesso baseado em funções
+              href: role-based-access-control.md
+            - name: Atribuir uma função a um utilizador
+              href: assign-role.md
+            - name: Criar uma função personalizada
+              href: create-custom-role.md
+            - name: Utilizar etiquetas de âmbito
+              href: scope-tags.md
+    - name: Inscrever dispositivos
+      href: ../enrollment/index.yml
+    - name: Gerir dispositivos remotamente
+      href: ../remote-actions/index.yml
+    - name: Criar regras de conformidade
+      href: ../protect/index.yml
+    - name: Controlar as definições e as funcionalidades do dispositivo
+      href: ../configuration/index.yml
+    - name: Proteger dispositivos e dados
+      href: ../protect/index.yml
+    - name: Gerir e proteger aplicações
+      href: ../apps/index.yml
+    - name: Orientação para programadores
+      href: ../developer/index.yml
+    - name: Obter ajuda e suporte
+      items:
+        - name: Tenant status (Estado do inquilino)
+          href: tenant-status.md
+        - name: Ajudar os utilizadores a resolver problemas
+          href: help-desk-operators.md
+        - name: Registos de auditoria para atividades do Intune
+          href: monitor-audit-logs.md
+        - name: Rever registos com o Azure Monitor
+          href: review-logs-using-azure-monitor.md
+        - name: Using the Intune docs (Utilizar a documentação do Intune)
+          href: use-docs.md
+        - name: Obter suporte
+          href: get-support.md
+- name: Referência
+  items:
+    - name: Códigos de erro e descrições
+      items:
+        - name: Resolução de problemas de acesso aos recursos da empresa
+          href: troubleshoot-company-resource-access-problems.md
+- name: Recursos
+  items:
+    - name: Arquivo
+      items:
+        - name: Novidades – Arquivo
+          items:
+            - name: Novidades no arquivo (portal do Azure)
+              href: whats-new-archive.md
+            - name: Novidades no arquivo (portal clássico)
+              href: whats-new-archive-classic.md
+        - name: Funcionalidades clássicas do Intune no Azure
+          href: ui-changes.md
+        - name: Grupos clássicos do Intune
+          href: groups-get-started.md
+        - name: Definições de educação para iOS
+          items:
+            - name: iPad
+              href: education-settings-configure-ios.md
+            - name: iPads partilhados
+              href: education-settings-configure-ios-shared.md
+        - name: Cliente de PC legado do Intune
+          href: intune-legacy-pc-client.md
+        - name: Gerir PCs com o agente de software
+          href: manage-windows-pcs-with-microsoft-intune.md
+          items:
+            - name: Comparar a gestão de PCs
+              href: pc-management-comparison.md
+            - name: Instalar o cliente de PC
+              href: install-the-windows-pc-client-with-microsoft-intune.md
+            - name: Tarefas de gestão comuns do PC
+              href: common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md
+              items:
+                - name: Políticas de PCs
+                  href: use-policies-to-simplify-windows-pc-management.md
+                - name: Ver inventário
+                  href: view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune.md
+                - name: Extinguir PCs
+                  href: retire-a-windows-pc-with-microsoft-intune.md
+                - name: Associar PCs a utilizadores
+                  href: manage-user-device-linking-for-windows-pcs-with-microsoft-intune.md
+                - name: Assistência remota
+                  href: request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md
+            - name: Políticas para proteger PCs Windows
+              href: policies-to-protect-windows-pcs-in-microsoft-intune.md
+              items:
+                - name: Atualizações de software
+                  href: keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md
+                - name: Firewall do Windows
+                  href: help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md
+                - name: Endpoint Protection
+                  href: help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md
+            - name: Adicionar aplicações a PCs do cliente Intune
+              href: add-apps-for-windows-pcs-in-microsoft-intune.md
+            - name: Gerir contratos de licença
+              href: manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md
+            - name: Resolver conflitos de políticas
+              href: resolve-gpo-and-microsoft-intune-policy-conflicts.md
+            - name: Resolver problemas de atualizações de software
+              href: troubleshoot-software-updates-in-microsoft-intune.md
+            - name: Erros comuns da proteção de pontos finais
+              href: troubleshoot-endpoint-protection-in-microsoft-intune.md
+    - name: Documentação para utilizadores finais do Intune
+      href: /intune-user-help/use-managed-devices-to-get-work-done
