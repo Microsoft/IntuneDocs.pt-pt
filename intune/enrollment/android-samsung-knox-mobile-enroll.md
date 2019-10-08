@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 02006acc58789f2a6fb5944e677a1983f7ea9614
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: b16dca0b6a73e7228e65c840bfbc91f3577bb59a
+ms.sourcegitcommit: 29b1113dc04534c4c87c33c773c5a0e24266e042
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71730068"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71999280"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>Inscrever automaticamente dispositivos Android através do Samsung Knox Mobile Enrollment
 
@@ -109,7 +109,8 @@ Para os dispositivos inscritos no Intune com o KME para Android, pode configurar
 
 > [!NOTE]
 >
->A associação do utilizador aplica-se apenas à inscrição do Android. Se a associação do utilizador estiver definida, apenas o utilizador associado poderá inscrever o dispositivo através do KME. Isto acontece mesmo após uma reposição de fábrica do dispositivo. Se não estiver definida nenhuma associação do utilizador no portal do Knox, todos os utilizadores com uma licença válida do Intune poderão inscrever o dispositivo com o KME.
+>A associação de usuário só se aplica ao registro de administrador do dispositivo Android. Se a associação do utilizador estiver definida, apenas o utilizador associado poderá inscrever o dispositivo através do KME. Isto acontece mesmo após uma reposição de fábrica do dispositivo. Se não estiver definida nenhuma associação do utilizador no portal do Knox, todos os utilizadores com uma licença válida do Intune poderão inscrever o dispositivo com o KME.
+>Para dispositivos Android Enterprise totalmente gerenciados, mesmo que a associação de usuário seja definida, ela não será passada para o dispositivo nem vinculará o dispositivo ao usuário.
 >
 
 ## <a name="distribute-devices"></a>Distribuir dispositivos
@@ -120,13 +121,13 @@ Ainda precisa de ajuda? Confira o [Guia do usuário do KME](https://docs.samsung
 
 ## <a name="frequently-asked-questions"></a>Perguntas mais frequentes
 
-- **Suporte ao proprietário do dispositivo:**  - **suporte ao proprietário do dispositivo:** O Intune dá suporte ao registro de dispositivos dedicados e totalmente gerenciados usando o portal do KME. Outros modos de proprietário de dispositivos Android Enterprise serão suportados à medida que forem disponibilizados no Intune.
+- **Suporte ao proprietário do dispositivo:** **suporte ao proprietário do dispositivo**  - : O Intune dá suporte ao registro de dispositivos dedicados e totalmente gerenciados usando o portal do KME. Outros modos de proprietário de dispositivos Android Enterprise serão suportados à medida que forem disponibilizados no Intune.
 
 - **Nenhum suporte de perfil de trabalho:** O KME é um método de registro de dispositivo corporativo e os dispositivos registrados no perfil de trabalho do Android garantem que os dados pessoais e de trabalho sejam separados em dispositivos pessoais. Portanto, o registro de dispositivo para o perfil de trabalho usando KME não é um cenário com suporte no Intune.
 
 - **Redefinição de fábrica para registrar no Android Enterprise:** Se os dispositivos de redefinição de objetivos já tiverem sido configurados, os dispositivos precisam ser redefinidos de fábrica durante o registro no Android Enterprise.
 
-- **Atualizações usando a conta de Google Play:** Google Play conta não é necessária para registrar o dispositivo no Microsoft Intune. No entanto, as atualizações futuras da aplicação Portal da Empresa do Intune poderão precisar de uma conta do Google Play no dispositivo. Google Play conta não é necessária ao registrar-se no proprietário do dispositivo Google.
+- **Atualizações usando a conta de Google Play:** Google Play conta não é necessária para registrar o dispositivo no Microsoft Intune. Mas, para registros de administrador do dispositivo Android, atualizações futuras para o aplicativo Portal da Empresa do Intune podem exigir uma conta de Google Play no dispositivo. Google Play conta não é necessária ao registrar-se no proprietário do dispositivo Google.
 
 - **O campo "senha" é ignorado:** Se o campo de **senha** for preenchido nos **detalhes do dispositivo** no portal do Knox, ele será ignorado pelo aplicativo portal da empresa do Intune durante o registro do Android. O utilizador final tem de introduzir uma palavra-passe no dispositivo para concluir a inscrição do dispositivo.
 

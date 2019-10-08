@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2e9b5eb15cf446b317818a93baa075cdbd33afd2
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 19389a21aa28f5fa957f62c988753f46bf1bc731
+ms.sourcegitcommit: 46322ca7a92971e18dc0b230f436b9ca892b90c5
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71729992"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72008340"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Inscrever automaticamente dispositivos iOS com o Programa de Inscrição de Dispositivos da Apple
 
@@ -31,6 +31,9 @@ Pode configurar o Intune para inscrever os dispositivos iOS adquiridos através 
 Para ativar a inscrição DEP, deve utilizar os portais do Intune e do Apple DEP. É necessária uma lista de números de série ou um número de encomenda para poder atribuir dispositivos ao Intune para gestão. São criados os perfis de inscrição DEP com as definições aplicadas aos dispositivos durante a inscrição.
 
 A propósito, a inscrição DEP não funciona com o [gestor de inscrição de dispositivos](device-enrollment-manager-enroll.md).
+
+> [!NOTE]
+> O DEP define configurações de dispositivo que não podem ser removidas pelo usuário final. Portanto, antes de [migrar para o Dep](../fundamentals/migration-guide-considerations.md), o dispositivo deve ser apagado para retorná-lo a um estado (novo) pronto para uso.
 
 ## <a name="dep-and-the-company-portal"></a>DEP e o Portal da Empresa
 
@@ -132,7 +135,7 @@ Agora que instalou o seu token, pode criar um perfil de inscrição para disposi
 
     ![Nome do perfil e descrição.](./media/device-enrollment-program-enroll-ios/image05.png)
 
-4. Selecione **avançar: Configurações**de gerenciamento de dispositivo.
+4. Selecione **Next: Configurações de gerenciamento de dispositivo @ no__t-0.
 
 5. Na **Afinidade do Utilizador**, escolha se os dispositivos com este perfil têm de ser inscritos com ou sem um utilizador atribuído.
     - **Inscrever com Afinidade de Utilizador**: selecione esta opção para os dispositivos que pertençam aos utilizadores e que queiram utilizar o Portal da Empresa para serviços como a instalação de aplicações. Se estiver a utilizar o ADFS e o perfil de inscrição tiver **Autenticar com o Portal da Empresa em vez do Assistente de Configuração** definido como **Não**, o [ponto final WS-Trust 1.3 Username/Mixed](https://technet.microsoft.com/library/adfs2-help-endpoints) [Saiba mais](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint) é necessário.
@@ -190,7 +193,7 @@ Agora que instalou o seu token, pode criar um perfil de inscrição para disposi
 
 13. Você pode especificar um formato de nomenclatura para dispositivos que são aplicados automaticamente quando eles se registram e após cada check-in sucessivo. Para criar um modelo de nomenclatura, selecione **Sim** em **Aplicar modelo de nome de dispositivo**. Em seguida, na caixa **Modelo de Nome do Dispositivo**, introduza o modelo a utilizar para os nomes com este perfil. Pode especificar um formato de modelo para incluir o tipo de dispositivo e o número de série. 
 
-14. escolha **Seguinte: Personalização**do assistente de configuração.
+14. escolha **Seguinte: Personalização do assistente de configuração @ no__t-0.
 
 15. Na página **personalização do assistente de configuração** , defina as seguintes configurações de perfil: ![Personalização do Assistente de Configuração.](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png)
 

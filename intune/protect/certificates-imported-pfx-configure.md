@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 48a7fe51c2fa6bc27ed4dda206335a3171c2500c
-ms.sourcegitcommit: f04e21ec459998922ba9c7091ab5f8efafd8a01c
+ms.openlocfilehash: fead8b9d69f5356876c0b3a2a4ce02e9b754128e
+ms.sourcegitcommit: 29b1113dc04534c4c87c33c773c5a0e24266e042
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71814159"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71999337"
 ---
 # <a name="configure-and-use-imported-pkcs-certificates-with-intune"></a>Configurar e usar certificados PKCS importados com o Intune
 
@@ -64,13 +64,13 @@ Quando você usa o Intune para implantar um **certificado pfx importado** para u
 
 ## <a name="download-install-and-configure-the-pfx-certificate-connector-for-microsoft-intune"></a>Baixar, instalar e configurar o conector de certificado PFX para Microsoft Intune
 
-1. No portal do [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) , selecione **configuração** > do dispositivo**conectores** > de certificação**Adicionar**
+1. No portal do [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) , selecione **configuração do dispositivo** > **conectores de certificação** > **Adicionar**
 
    ![Conector de certificado PFX para download de Microsoft Intune](./media/certificates-imported-pfx-configure/download-imported-pfxconnector.png)
 
 2. Siga as orientações para baixar o *conector de certificado pfx para Microsoft Intune* em um local acessível do servidor em que você vai instalar o conector.
 3. Após a conclusão do download, entre no servidor e execute o instalador (PfxCertificateConnectorBootstrapper. exe).  
-   - Quando você aceita o local de instalação padrão, o conector é `Program Files\Microsoft Intune\PFXCertificateConnector`instalado no.
+   - Quando você aceita o local de instalação padrão, o conector é instalado no `Program Files\Microsoft Intune\PFXCertificateConnector`.
    - O serviço do conector é executado na conta do sistema local. Se um proxy for necessário para acesso à Internet, confirme se a conta de serviço local pode acessar as configurações de proxy no servidor.
 
 4. O PFX Certificate Connector for Microsoft Intune abre o separador **Enrollment** (Inscrição) após a instalação. Para ativar a ligação ao Intune, selecione **Sign In** (Iniciar Sessão) e introduza uma conta com permissão de administrador global do Azure ou de administrador do Intune.
@@ -79,7 +79,7 @@ Quando você usa o Intune para implantar um **certificado pfx importado** para u
    > Por padrão, na configuração de **segurança avançada do IE** do Windows Server é definida como **on** , que pode causar problemas com a entrada no Office 365.
 
 5. Feche a janela.
-6. No portal do Intune, volte para **configuração** > do dispositivo**conectores de certificação**. Em alguns instantes, uma marca de seleção verde é exibida e o **status da conexão** é **ativo**. O servidor do conector agora pode se comunicar com o Intune.
+6. No portal do Intune, volte para **configuração do dispositivo** > **conectores de certificação**. Em alguns instantes, uma marca de seleção verde é exibida e o **status da conexão** é **ativo**. O servidor do conector agora pode se comunicar com o Intune.
 
 ## <a name="import-pfx-certificates-to-intune"></a>Importar certificados PFX para o Intune
 
@@ -101,7 +101,7 @@ Para fazer uso dos cmdlets do PowerShell, você mesmo cria o projeto usando o Vi
 
    ![Opção de compilação do Visual Studio](./media/certificates-imported-pfx-configure/vs-build-release.png)
 
-5. O processo de compilação cria uma nova pasta com o módulo do `.\Intune-Resource-Access-develop\src\PFXImportPowershell\PFXImportPS\bin\Release`PowerShell em.
+5. O processo de compilação cria uma nova pasta com o módulo do PowerShell em `.\Intune-Resource-Access-develop\src\PFXImportPowershell\PFXImportPS\bin\Release`.
 
    Você usará essa pasta de **lançamento** para as próximas etapas.
 
@@ -116,12 +116,12 @@ O módulo do PowerShell fornece métodos para criar uma chave usando a criptogra
 1. Copie a pasta de *liberação* que é criada pelo Visual Studio para o servidor em que você instalou o **conector de certificado pfx para Microsoft Intune**. Essa pasta contém o módulo do PowerShell.  
 2. No servidor, abra o *PowerShell* como administrador e, em seguida, navegue até a pasta de *liberação* que contém o módulo do PowerShell.
 3. Para importar o módulo, execute `Import-Module .\IntunePfxImport.psd1` para importar o módulo.
-4. Em seguida, execute`Add-IntuneKspKey "Microsoft Software Key Storage Provider" "PFXEncryptionKey"`
+4. Em seguida, execute `Add-IntuneKspKey "Microsoft Software Key Storage Provider" "PFXEncryptionKey"`
 
    > [!TIP]  
    > O provedor usado deve ser selecionado novamente quando você importar certificados PFX. Você pode usar o **provedor de armazenamento de chaves de software da Microsoft**, embora tenha suporte para usar um provedor diferente. O nome da chave também é fornecido como um exemplo, e você pode usar um nome de chave diferente de sua escolha.  
 
-   Se você planeja importar o certificado de sua estação de trabalho, você pode exportar essa chave para um arquivo com o seguinte comando:`Export-IntunePublicKey -ProviderName "<ProviderName>" -KeyName "<KeyName>" -FilePath "<File path to write to>"`
+   Se você planeja importar o certificado de sua estação de trabalho, você pode exportar essa chave para um arquivo com o seguinte comando: `Export-IntunePublicKey -ProviderName "<ProviderName>" -KeyName "<KeyName>" -FilePath "<File path to write to>"`
 
    A chave privada deve ser importada no servidor que hospeda o conector de certificado PFX para Microsoft Intune para que os certificados PFX importados possam ser processados com êxito.  
 
@@ -153,22 +153,22 @@ Selecione o provedor de armazenamento de chaves que corresponde ao provedor usad
 
 1. Exporte os certificados de qualquer autoridade de certificação (CA) seguindo a documentação do provedor.  Para os serviços de certificados do Microsoft Active Directory, você pode usar [este script de exemplo](https://gallery.technet.microsoft.com/Export-CMPfxCertificatesFro-d55f687b).   
 2. No servidor, abra o *PowerShell* como administrador e, em seguida, navegue até a pasta de *liberação* que contém o módulo do PowerShell.
-3. Para importar o módulo, execute`Import-Module .\IntunePfxImport.psd1`  
-4. Para autenticar no Intune Graph, execute`$authResult = Get-IntuneAuthenticationToken -AdminUserName "<Admin-UPN>"`
+3. Para importar o módulo, execute `Import-Module .\IntunePfxImport.psd1`  
+4. Para autenticar no grafo do Intune, execute `$authResult = Get-IntuneAuthenticationToken -AdminUserName "<Admin-UPN>"`
 
    > [!NOTE]
    > Como a autenticação é executada no grafo, você deve fornecer permissões para a AppID. Se for a primeira vez que você usou esse utilitário, um *administrador global* será necessário. Os cmdlets do PowerShell usam o mesmo AppID que aquele usado com os [exemplos do PowerShell Intune](https://github.com/microsoftgraph/powershell-intune-samples).   
-5. Converta a senha para cada arquivo PFX que você está importando para uma `$SecureFilePassword = ConvertTo-SecureString -String "<PFXPassword>" -AsPlainText -Force`cadeia de caracteres segura executando.  
-6. Para criar um objeto **UserPFXCertificate** , execute`$userPFXObject = New-IntuneUserPfxCertificate -PathToPfxFile "<FullPathPFXToCert>" $SecureFilePassword "<UserUPN>" "<ProviderName>" "<KeyName>" "<IntendedPurpose>" "<PaddingScheme>"`
+5. Converta a senha para cada arquivo PFX que você está importando para uma cadeia de caracteres segura executando `$SecureFilePassword = ConvertTo-SecureString -String "<PFXPassword>" -AsPlainText -Force`.  
+6. Para criar um objeto **UserPFXCertificate** , execute `$userPFXObject = New-IntuneUserPfxCertificate -PathToPfxFile "<FullPathPFXToCert>" $SecureFilePassword "<UserUPN>" "<ProviderName>" "<KeyName>" "<IntendedPurpose>" "<PaddingScheme>"`
 
    Por exemplo: `$userPFXObject = New-IntuneUserPfxCertificate -PathToPfxFile "C:\temp\userA.pfx" $SecureFilePassword "userA@contoso.com" "Microsoft Software Key Storage Provider" "PFXEncryptionKey" "smimeEncryption" "pkcs1"`
 
    > [!NOTE]  
-   > Quando você importa o certificado de um sistema que não seja o servidor em que o conector está instalado, use o comando a seguir que inclui o caminho do arquivo de chave:`$userPFXObject = New-IntuneUserPfxCertificate -PathToPfxFile "<FullPathPFXToCert>" $SecureFilePassword "<UserUPN>" "<ProviderName>" "<KeyName>" "<IntendedPurpose>" "<PaddingScheme>" "<File path to public key file>"`
+   > Quando você importa o certificado de um sistema diferente do servidor em que o conector está instalado, use o comando a seguir que inclui o caminho do arquivo de chave: `$userPFXObject = New-IntuneUserPfxCertificate -PathToPfxFile "<FullPathPFXToCert>" $SecureFilePassword "<UserUPN>" "<ProviderName>" "<KeyName>" "<IntendedPurpose>" "<PaddingScheme>" "<File path to public key file>"`
 
-7. Importe o objeto **UserPFXCertificate** para o Intune executando`Import-IntuneUserPfxCertificate -AuthenticationResult $authResult -CertificateList $userPFXObject`
+7. Importe o objeto **UserPFXCertificate** para o Intune executando `Import-IntuneUserPfxCertificate -AuthenticationResult $authResult -CertificateList $userPFXObject`
 
-8. Para validar que o certificado foi importado, execute`Get-IntuneUserPfxCertificate -AuthenticationResult $authResult -UserList "<UserUPN>"`
+8. Para validar que o certificado foi importado, execute `Get-IntuneUserPfxCertificate -AuthenticationResult $authResult -UserList "<UserUPN>"`
 
 Para obter mais informações sobre outros comandos disponíveis, consulte o arquivo Leiame em [projeto do PFXImport PowerShell no GitHub](https://github.com/microsoft/Intune-Resource-Access/tree/develop/src/PFXImportPowershell).
 
@@ -176,7 +176,7 @@ Para obter mais informações sobre outros comandos disponíveis, consulte o arq
 
 Após importar certificados para o Intune, crie um perfil de **certificado PKCS importado** e atribua-o a grupos do Azure Active Directory.
 
-1. No portal [do Intune](https://go.microsoft.com/fwlink/?linkid=2090973) , foram obtidos**perfis** > de **configuração** > de dispositivo**Criar perfil**.
+1. No portal do [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) , foram obtidas **configurações de dispositivo** > **perfis** > **Criar perfil**.
 2. Introduza as seguintes propriedades:
 
    - O **Nome** do perfil
@@ -186,7 +186,7 @@ Após importar certificados para o Intune, crie um perfil de **certificado PKCS 
 
 3. Aceda a **Definições** e introduza as seguintes propriedades:
 
-   - **Finalidade pretendida**: Especifique a finalidade pretendida dos certificados que são importados para esse perfil. Os administradores podem importar certificados com diferentes finalidades pretendidas (como autenticação, assinatura S/MIME ou criptografia S/MIME). A finalidade selecionada no perfil do certificado corresponde ao perfil do certificado com os certificados importados adequados. A finalidade pretendida é uma marca para agrupar certificados importados e não garante que os certificados importados com essa marca atendam à finalidade pretendida.  
+   - **Finalidade pretendida**: Especifique a finalidade pretendida dos certificados que são importados para esse perfil. Os administradores podem importar certificados com diferentes finalidades pretendidas (como assinatura S/MIME ou criptografia S/MIME). A finalidade selecionada no perfil do certificado corresponde ao perfil do certificado com os certificados importados adequados. A finalidade pretendida é uma marca para agrupar certificados importados e não garante que os certificados importados com essa marca atendam à finalidade pretendida.  
    - **Período de validade do certificado**: A menos que o período de validade tenha sido alterado no modelo de certificado, essa opção usa como padrão um ano.  
    - **Provedor de armazenamento de chaves (KSP)** : Para o Windows, selecione onde armazenar as chaves no dispositivo.  
 

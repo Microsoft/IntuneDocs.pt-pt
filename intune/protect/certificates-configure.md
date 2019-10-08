@@ -16,22 +16,23 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 74b920deeb5255f6f938f0c8b07eaab6d765e68e
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 345d039fede2a77ba0485944cb601683bdcebfda
+ms.sourcegitcommit: 29b1113dc04534c4c87c33c773c5a0e24266e042
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71729884"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71999299"
 ---
 # <a name="use-certificates-for-authentication-in-microsoft-intune"></a>Usar certificados para autenticação no Microsoft Intune  
 
 Use certificados com o Intune para autenticar seus usuários em aplicativos e recursos corporativos por meio de VPN, Wi-Fi ou perfis de email. Quando você usa certificados para autenticar essas conexões, os usuários finais não precisam inserir nomes de usuário e senhas, o que ajuda a tornar seu acesso contínuo. Os certificados também são usados para assinatura e criptografia de email usando S/MIME.
 
-O Intune dá suporte aos seguintes tipos de certificado:  
-
-- Protocolo SCEP (Simple Certificate Enrollment Protocol)  
-- PKCS#12 (ou PFX)  
-- Certificados PKCS importados
+## <a name="intune-supported-certificates-and-usage"></a>Certificados e uso com suporte do Intune
+| Type              | Authentication | Assinatura S/MIME | Criptografia S/MIME  |
+|--|--|--|--|
+| Certificado PKCS importado |  | ![Suportadas](./media/certificates-configure/green-check.png) | ![Suportadas](./media/certificates-configure/green-check.png)|
+| PKCS#12 (ou PFX)    | ![Suportadas](./media/certificates-configure/green-check.png) | ![Suportadas](./media/certificates-configure/green-check.png) |  |
+| Protocolo SCEP (Simple Certificate Enrollment Protocol)  | ![Suportadas](./media/certificates-configure/green-check.png) | ![Suportadas](./media/certificates-configure/green-check.png) | |
 
 Para implantar esses certificados, você criará e atribuirá perfis de certificado a dispositivos.  
 

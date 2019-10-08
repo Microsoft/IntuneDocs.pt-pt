@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 09/27/2019
+ms.date: 10/07/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 009b9cf22bcdd73eb563c772cc9995047f05a9c1
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 0e7c4e5ed45455dda941fb0c61c989c12c57135d
+ms.sourcegitcommit: 29b1113dc04534c4c87c33c773c5a0e24266e042
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71731756"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71999320"
 ---
 # <a name="in-development-for-microsoft-intune---october-2019"></a>Em desenvolvimento para Microsoft Intune-outubro de 2019
 
@@ -35,7 +35,7 @@ Para ajudá-lo em sua preparação e planejamento, esta página lista as atualiz
 > [!Note]
 > Esses itens refletem as expectativas atuais da Microsoft sobre os recursos do Intune que estão chegando em uma versão futura. As datas e os recursos individuais podem mudar. Nem todos os itens no desenvolvimento têm uma descrição de recurso nesta página.
 
-**RSS feed**: Seja notificado quando esta página for atualizada copiando e colando a seguinte URL em seu leitor de feed:`https://docs.microsoft.com/api/search/rss?search=%22in+development+-+microsoft+intune%22&locale=en-us`
+**RSS feed**: Seja notificado quando esta página for atualizada copiando e colando a seguinte URL em seu leitor de feed: `https://docs.microsoft.com/api/search/rss?search=%22in+development+-+microsoft+intune%22&locale=en-us`
 
 <!--
 ## What's coming to Intune in the Azure portal 
@@ -59,7 +59,7 @@ Para ajudá-lo em sua preparação e planejamento, esta página lista as atualiz
 ## <a name="app-management"></a>Gestão de aplicações
 
 ### <a name="additional-app-configuration-variable-available----4969237----"></a>Variável de configuração de aplicativo adicional disponível <!-- 4969237  -->
-Ao criar uma política de configuração de aplicativo, você poderá incluir a variável de configuração `AAD Device ID` como parte de suas definições de configuração. No Intune, selecione **aplicativos** > cliente**políticas** > de configuração de aplicativo**Adicionar**. Insira os detalhes da política de configuração e selecione **definições de configuração** para exibir a folha de **definições de configuração** .
+Ao criar uma política de configuração de aplicativo, você poderá incluir a variável de configuração `AAD Device ID` como parte de suas definições de configuração. No Intune, selecione **aplicativos cliente** > **políticas de configuração de aplicativo** > **Adicionar**. Insira os detalhes da política de configuração e selecione **definições de configuração** para exibir a folha de **definições de configuração** .
 
 ### <a name="dark-mode-for-ios-company-portal----4911422----"></a>Modo escuro para iOS Portal da Empresa <!-- 4911422  -->
 O modo escuro está planejado para o Portal da Empresa do iOS. Baixe os aplicativos da empresa, gerencie seus dispositivos e obtenha suporte no esquema de cores de sua escolha. Para obter mais informações sobre o Portal da Empresa do iOS, consulte [como configurar o aplicativo de portal da empresa de Microsoft Intune](../apps/company-portal-app.md).
@@ -80,7 +80,7 @@ Os conjuntos de políticas permitem que você crie um pacote de referências a e
 Você poderá instalar e executar aplicativos Win32 em dispositivos gerenciados por modo do Windows 10 S. Você poderá criar uma ou mais políticas complementares para o modo S usando as ferramentas do PowerShell do Windows Defender Application Control (WDAC). Assine as políticas complementares com o portal de assinatura do Device Guard e, em seguida, carregue e distribua as políticas por meio do Intune. No Intune, você encontrará esse recurso selecionando **aplicativos cliente** > **políticas complementares do Windows 10 S**. 
 
 ### <a name="set-app-availability-based-on-a-date-and-time----3510685----"></a>Definir a disponibilidade do aplicativo com base em uma data e hora <!-- 3510685  -->
-Como administrador, você poderá configurar a hora de início e a hora do prazo para um aplicativo necessário. Na hora de início, a extensão de gerenciamento do Intune iniciará o download do conteúdo do aplicativo e o armazenará em cache. O aplicativo será instalado na hora do prazo. Para aplicativos disponíveis, a hora de início será ditada quando o aplicativo estiver visível no Portal da Empresa. No Intune, selecione**aplicativos**de **aplicativos** > cliente. Em seguida, selecione um aplicativo específico na lista ou selecione **Adicionar** para adicionar um novo aplicativo. Na folha do aplicativo, selecione **atribuições** > **Adicionar grupo**. Defina o **tipo de atribuição** como **obrigatório** e, em seguida, selecione **grupos incluídos**. Defina **tornar este aplicativo necessário para todos os usuários** para **Sim** e selecione **Editar** para modificar as opções de **experiência do usuário final** . Na folha **experiência do usuário final** , defina o **tempo disponível do software** conforme necessário. Para obter mais informações sobre como adicionar aplicativos, consulte [adicionar aplicativos ao Microsoft Intune](../apps/apps-add.md).
+Como administrador, você poderá configurar a hora de início e a hora do prazo para um aplicativo necessário. Na hora de início, a extensão de gerenciamento do Intune iniciará o download do conteúdo do aplicativo e o armazenará em cache. O aplicativo será instalado na hora do prazo. Para aplicativos disponíveis, a hora de início será ditada quando o aplicativo estiver visível no Portal da Empresa. No Intune, selecione **aplicativos cliente** > **aplicativos**. Em seguida, selecione um aplicativo específico na lista ou selecione **Adicionar** para adicionar um novo aplicativo. Na folha do aplicativo, selecione **atribuições** > **Adicionar grupo**. Defina o **tipo de atribuição** como **obrigatório** e, em seguida, selecione **grupos incluídos**. Defina **tornar este aplicativo necessário para todos os usuários** para **Sim** e selecione **Editar** para modificar as opções de **experiência do usuário final** . Na folha **experiência do usuário final** , defina o **tempo disponível do software** conforme necessário. Para obter mais informações sobre como adicionar aplicativos, consulte [adicionar aplicativos ao Microsoft Intune](../apps/apps-add.md).
 
 ### <a name="require-win32-apps-to-restart----3136567----"></a>Exigir que aplicativos Win32 reiniciem <!-- 3136567  -->
 Você poderá exigir que um aplicativo Win32 precise ser reiniciado após uma instalação bem-sucedida. Além disso, você poderá escolher a quantidade de tempo (o período de carência) antes que a reinicialização deva ocorrer.
@@ -95,7 +95,7 @@ O aplicativo Portal da Empresa mostrará mensagens de status de instalação de 
 - O aplicativo está no processo de instalação, mas requer uma reinicialização para continuar.
 
 #### <a name="assign-microsoft-edge-beta-for-macos----4678761----"></a>Atribuir o Microsoft Edge beta para macOS <!-- 4678761  -->
-Você poderá adicionar e atribuir a versão mais recente do Microsoft Edge beta ao Intune para dispositivos macOS. No Intune, selecione aplicativos **cliente** >  > aplicativos**Adicionar aplicativo** > **Microsoft Edge-MacOS**. Em seguida, atribua o Microsoft Edge beta aos grupos pretendidos. O Microsoft AutoUpdate (MAU) mantém o Microsoft Edge atualizado. Para obter mais informações sobre o Microsoft Edge, consulte [gerenciar o acesso via Web usando o Microsoft Edge com o Microsoft Intune](../apps/manage-microsoft-edge.md).
+Você poderá adicionar e atribuir a versão mais recente do Microsoft Edge beta ao Intune para dispositivos macOS. No Intune, selecione **aplicativos cliente** > **aplicativos** > **Adicionar aplicativo** > **Microsoft Edge-MacOS**. Em seguida, atribua o Microsoft Edge beta aos grupos pretendidos. O Microsoft AutoUpdate (MAU) mantém o Microsoft Edge atualizado. Para obter mais informações sobre o Microsoft Edge, consulte [gerenciar o acesso via Web usando o Microsoft Edge com o Microsoft Intune](../apps/manage-microsoft-edge.md).
 
 ### <a name="configure-app-notification-content-for-organization-accounts----2576686---"></a>Configurar conteúdo de notificação do aplicativo para contas da organização <!-- 2576686 -->
 As políticas de proteção de aplicativo do Intune (aplicativo) em dispositivos Android e iOS permitirão que você controle o conteúdo de notificação do aplicativo para contas da organização. Este recurso exigirá suporte de aplicativos e pode não estar disponível para todos os aplicativos habilitados para aplicativo. Para obter mais informações sobre o aplicativo, consulte [o que são políticas de proteção de aplicativo?](../apps/app-protection-policy.md).
@@ -131,7 +131,7 @@ Aplica-se a:
 - Android Enterprise
 
 ### <a name="create-a-global-http-proxy-on-android-enterprise-device-owner-devices----4816339----"></a>Criar um proxy HTTP global em dispositivos Android Enterprise do proprietário do dispositivo <!-- 4816339  -->
-Em dispositivos Android Enterprise, você pode criar um perfil VPN com diferentes clientes VPN (**configuração do dispositivo**@no__t-**1 perfis** > **Criar perfil** > **Android Enterprise** para plataforma > proprietário do **dispositivo > Restrições de dispositivo** para o tipo de perfil > **conectividade**). Você poderá configurar um proxy HTTP global para atender aos padrões de navegação na Web de sua organização. Todos os aplicativos que vão para sites HTTP usam esse proxy.
+Em dispositivos Android Enterprise, você pode configurar um proxy HTTP global para atender aos padrões de navegação na Web de sua organização (**configuração de dispositivo** > **perfis** > **Criar perfil** > **Android Enterprise** para plataforma > **proprietário do dispositivo > restrições de dispositivo** para o tipo de perfil > **conectividade**). Uma vez configurado, todo o tráfego HTTP usará esse proxy.
 
 Aplica-se a:
 - Proprietário do dispositivo corporativo Android
@@ -139,10 +139,10 @@ Aplica-se a:
 ### <a name="new-device-firmware-configuration-interface-profile-for-windows-10-and-later-devices----2266073----"></a>Novo perfil de interface de configuração de firmware de dispositivo para dispositivos Windows 10 e posteriores <!-- 2266073  -->
 No Windows 10 e posterior, você pode criar um perfil de configuração de dispositivo para controlar as configurações e os recursos (**configuração do dispositivo** > **perfis** > **Criar perfil** > **Windows 10 e posterior** para plataforma). Haverá um novo tipo de perfil de interface de configuração de firmware de dispositivo que permite ao Intune gerenciar configurações de UEFI (BIOS).
 
-Para ver uma visão geral de todas as configurações que você pode definir, consulte [aplicar recursos e configurações em seus dispositivos usando perfis de dispositivo no Microsoft Intune](../configuration/device-profiles.md).
+Para ver uma visão geral de todas as configurações atuais que você pode configurar, consulte [aplicar recursos e configurações em seus dispositivos usando perfis de dispositivo no Microsoft Intune](../configuration/device-profiles.md).
 
 Aplica-se a:
-- Windows 10 RS5 (1809) e mais recente em alguns OEMs
+- Windows 10 RS5 (1809) e mais recente em dispositivos selecionados
 
 ### <a name="pkcs-certificates-for-macos-----1333650------------------"></a>Certificados PKCS para macOS  <!-- 1333650                -->
 Adicionaremos suporte completo para certificados PKCS em dispositivos que executam o macOS. Os usuários poderão implantar certificados de usuário e de dispositivo com os campos de entidade de personalização e nome alternativo da entidade. Também teremos uma nova configuração permitir acesso de todos os aplicativos, que habilitando o acesso à chave privada a todos os aplicativos associados. Para obter mais detalhes sobre essa configuração, visite a seguinte documentação da Apple: https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf.

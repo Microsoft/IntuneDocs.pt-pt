@@ -6,7 +6,7 @@ keywords: Armazém de Dados do Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/14/2019
+ms.date: 10/07/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5ee5cdb6bbdcce229fbc217726a1ee118f77beff
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 9e8fadb625073af2a70d605d3ceabb9ba97906ae
+ms.sourcegitcommit: 46322ca7a92971e18dc0b230f436b9ca892b90c5
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71730204"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72008331"
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>Estabelecer uma ligação ao Armazém de Dados com o Power BI
 
@@ -76,9 +76,10 @@ Com um cliente autenticado no Azure AD, o URL de OData liga-se ao ponto final RE
 
 1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Clique em **Configurar o Intune data warehouse** na seção **outras tarefas** no lado direito da folha visão geral. A folha **data warehouse do Intune** será exibida.
-3. Recupere a URL do feed personalizado da folha de relatórios, por exemplo:`https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=v1.0`
+3. Recupere a URL do feed personalizado da folha de relatórios, por exemplo:<br>
+    `https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=v1.0`
 4. Abra o **Power BI Desktop**.
-5. Selecione **Base** > **Obter Dados**. Selecione **Feed OData**.
+5. Escolha **arquivo** > **obter dados**. Selecione **Feed OData**.
 6. Selecione **Básico**.
 7. Escreva ou cole o **URL de OData** na caixa URL.
 8. Selecione **OK**.
