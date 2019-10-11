@@ -1,6 +1,6 @@
 ---
-title: Criar um perfil de certificado no Microsoft Intune – Azure | Microsoft Docs
-description: Para os seus dispositivos, adicione ou crie um perfil de certificado ao configurar um ambiente de certificado SCEP ou PKCS, exporte o certificado público, crie o perfil no portal do Azure e, em seguida, atribua o SCEP ou PKCS ao perfil de certificado no Microsoft Intune no portal do Azure
+title: Criar perfil de certificados no Microsoft Intune – Azure | Microsoft Docs
+description: Para seus dispositivos, adicione ou crie um perfil de certificado Configurando o ambiente de certificado SCEP ou PKCS, exporte o certificado público, crie o perfil no portal do Azure e, em seguida, atribua o SCEP ou PKCS aos perfis de certificado no Microsoft Intune no Azure Portal
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -16,23 +16,23 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 345d039fede2a77ba0485944cb601683bdcebfda
-ms.sourcegitcommit: 29b1113dc04534c4c87c33c773c5a0e24266e042
+ms.openlocfilehash: e993df5c37cfed8d5dd0481543b406dd25ad1a49
+ms.sourcegitcommit: b1e97211db7cb949eb39be6776b3a11d434fdab0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71999299"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72251557"
 ---
 # <a name="use-certificates-for-authentication-in-microsoft-intune"></a>Usar certificados para autenticação no Microsoft Intune  
 
 Use certificados com o Intune para autenticar seus usuários em aplicativos e recursos corporativos por meio de VPN, Wi-Fi ou perfis de email. Quando você usa certificados para autenticar essas conexões, os usuários finais não precisam inserir nomes de usuário e senhas, o que ajuda a tornar seu acesso contínuo. Os certificados também são usados para assinatura e criptografia de email usando S/MIME.
 
 ## <a name="intune-supported-certificates-and-usage"></a>Certificados e uso com suporte do Intune
-| Type              | Authentication | Assinatura S/MIME | Criptografia S/MIME  |
+| Tipo              | Autenticação | Assinatura S/MIME | Criptografia S/MIME  |
 |--|--|--|--|
-| Certificado PKCS importado |  | ![Suportadas](./media/certificates-configure/green-check.png) | ![Suportadas](./media/certificates-configure/green-check.png)|
-| PKCS#12 (ou PFX)    | ![Suportadas](./media/certificates-configure/green-check.png) | ![Suportadas](./media/certificates-configure/green-check.png) |  |
-| Protocolo SCEP (Simple Certificate Enrollment Protocol)  | ![Suportadas](./media/certificates-configure/green-check.png) | ![Suportadas](./media/certificates-configure/green-check.png) | |
+| Certificado importado PKCS |  | ![Suportadas](./media/certificates-configure/green-check.png) | ![Suportadas](./media/certificates-configure/green-check.png)|
+| PKCS n º 12 (ou PFX)    | ![Suportadas](./media/certificates-configure/green-check.png) | ![Suportadas](./media/certificates-configure/green-check.png) |  |
+| Protocolo SCEP (SCEP)  | ![Suportadas](./media/certificates-configure/green-check.png) | ![Suportadas](./media/certificates-configure/green-check.png) | |
 
 Para implantar esses certificados, você criará e atribuirá perfis de certificado a dispositivos.  
 
@@ -51,11 +51,12 @@ Cada perfil de certificado individual que você cria oferece suporte a uma únic
 | Plataforma              | Perfil de certificado confiável | Perfil de certificado PKCS | Perfil de certificado SCEP | Perfil de certificado importado PKCS  |
 |--|--|--|--|---|
 | Administrador do dispositivo Android | ![Suportadas](./media/certificates-configure/green-check.png) | ![Suportadas](./media/certificates-configure/green-check.png) | ![Suportadas](./media/certificates-configure/green-check.png)|  ![Suportadas](./media/certificates-configure/green-check.png) |
-| Android Enterprise <br> -Proprietário do dispositivo   | ![Suportadas](./media/certificates-configure/green-check.png) |   |  |   |
+| Android Enterprise <br> -Totalmente gerenciado (proprietário do dispositivo)   | ![Suportadas](./media/certificates-configure/green-check.png) |   | ![Suportadas](./media/certificates-configure/green-check.png) |   |
+| Android Enterprise <br> -Dedicado (proprietário do dispositivo)   |  |   |  |   |
 | Android Enterprise <br> -Perfil de trabalho    | ![Suportadas](./media/certificates-configure/green-check.png) | ![Suportadas](./media/certificates-configure/green-check.png) | ![Suportadas](./media/certificates-configure/green-check.png) | ![Suportadas](./media/certificates-configure/green-check.png) |
 | iOS                   | ![Suportadas](./media/certificates-configure/green-check.png) | ![Suportadas](./media/certificates-configure/green-check.png) | ![Suportadas](./media/certificates-configure/green-check.png) | ![Suportadas](./media/certificates-configure/green-check.png) |
 | macOS                 | ![Suportadas](./media/certificates-configure/green-check.png) |   |![Suportadas](./media/certificates-configure/green-check.png)|![Suportadas](./media/certificates-configure/green-check.png)|
-| Windows Phone 8.1     |![Suportadas](./media/certificates-configure/green-check.png)  |  | ![Suportadas](./media/certificates-configure/green-check.png)| ![Suportadas](./media/certificates-configure/green-check.png) |
+| Windows Phone 8,1     |![Suportadas](./media/certificates-configure/green-check.png)  |  | ![Suportadas](./media/certificates-configure/green-check.png)| ![Suportadas](./media/certificates-configure/green-check.png) |
 | Windows 8.1 e posterior |![Suportadas](./media/certificates-configure/green-check.png)  |  |![Suportadas](./media/certificates-configure/green-check.png) |   |
 | Windows 10 e posterior  | ![Suportadas](./media/certificates-configure/green-check.png) | ![Suportadas](./media/certificates-configure/green-check.png) | ![Suportadas](./media/certificates-configure/green-check.png) | ![Suportadas](./media/certificates-configure/green-check.png) |
 
@@ -72,19 +73,19 @@ Crie um perfil de certificado confiável antes de criar um perfil de certificado
 Crie um perfil de certificado confiável separado para cada plataforma de dispositivo à qual você deseja dar suporte, assim como você fará para os perfis de certificado SCEP, PCKS e PKCS importados.  
 
 
-### <a name="to-create-a-trusted-certificate-profile"></a>Para criar um perfil de certificado fidedigno  
+### <a name="to-create-a-trusted-certificate-profile"></a>Para criar um perfil de certificado confiável  
 
 1. Entre no portal do [Intune](https://aka.ms/intuneportal).  
-2. Selecione **Configuração do dispositivo** > **Gerir** > **Perfis** > **Criar perfil**.  
+2. Selecione **configuração do dispositivo**@no__t-**1 gerenciar** **perfis** >   > **Criar perfil**.  
 3. Insira um **nome e uma descrição** para o perfil de certificado confiável.  
-4. Na lista pendente **Plataforma**, selecione a plataforma do dispositivo para este certificado fidedigno.  
-5. Na lista pendente **Tipo de perfil**, selecione **Certificado fidedigno**.  
+4. Na lista suspensa **plataforma** , selecione a plataforma de dispositivo para este certificado confiável.  
+5. Na lista suspensa **tipo de perfil** , escolha **certificado confiável**.  
 6. Navegue até o arquivo. cer do certificado de AC raiz confiável que você exportou para uso com este perfil de certificado e selecione **OK**.  
-7. Apenas para os dispositivos Windows 8.1 e Windows 10, selecione o **Arquivo de Destino** do certificado fidedigno em:  
-   - **Arquivo de certificados no computador – Raiz**
-   - **Arquivo de certificados no computador – Intermédio**
-   - **Armazenamento de certificados de utilizador – Intermédio**
-8. Quando tiver terminado, selecione **OK**, volte ao painel **Criar perfil** e selecione **Criar**.
+7. Somente para dispositivos Windows 8.1 e Windows 10, selecione o **repositório de destino** do certificado confiável de:  
+   - **Repositório de certificados do computador-raiz**
+   - **Repositório de certificados do computador-intermediário**
+   - **Repositório de certificados do usuário-intermediário**
+8. Quando terminar, escolha **OK**, volte para o painel **Criar perfil** e selecione **criar**.
 O perfil aparece na lista de perfis no painel *configuração do dispositivo –* exibição de perfis, com um tipo de perfil de **certificado confiável**.  Certifique-se de atribuir esse perfil a dispositivos que usarão certificados SCEP ou PCKS. Para atribuir o perfil a grupos, consulte [atribuir perfis de dispositivo](../configuration/device-profile-assign.md).
 
 > [!NOTE]  
@@ -92,7 +93,7 @@ O perfil aparece na lista de perfis no painel *configuração do dispositivo –
 
 ## <a name="additional-resources"></a>Recursos adicionais  
 - [Atribuir perfis de dispositivo](../configuration/device-profile-assign.md)  
-- [Use S/MIME to sign and encrypt emails (Utilizar S/MIME para assinar e encriptar e-mails)](certificates-s-mime-encryption-sign.md)  
+- [Usar S/MIME para assinar e criptografar emails](certificates-s-mime-encryption-sign.md)  
 - [Usar autoridade de certificação de terceiros](certificate-authority-add-scep-overview.md)  
 
 ## <a name="next-steps"></a>Passos seguintes  

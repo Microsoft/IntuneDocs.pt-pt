@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/09/2019
+ms.date: 10/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 593c2d2b509047115ebeb3415393d6112484a6a9
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 21192d259de0711ad38fa35b294ea82c7d913292
+ms.sourcegitcommit: fca2670142c083d7562c0a36547a6a451863e315
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71731196"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "72036490"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune autônomo-gerenciamento de aplicativos do Win32
 
@@ -30,6 +30,9 @@ O [Intune autônomo](../fundamentals/mdm-authority-set.md) agora permite um maio
 
 > [!NOTE]
 > Essa funcionalidade de gerenciamento de aplicativo dá suporte à arquitetura do sistema operacional de 32 bits e 64 bits para aplicativos do Windows.
+
+> [!IMPORTANT]
+> Ao implantar aplicativos Win32, considere usar a [extensão de gerenciamento do Intune](../apps/intune-management-extension.md) exclusivamente, especialmente quando você tiver um instalador de aplicativo do Win32 com vários arquivos. Se você misturar a instalação de aplicativos Win32 e aplicativos de linha de negócios durante o registro do AutoPilot, a instalação do aplicativo poderá falhar.  
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
@@ -57,7 +60,7 @@ Você pode baixar a [ferramenta de preparação de conteúdo do Microsoft Win32]
 
 ### <a name="run-the-microsoft-win32-content-prep-tool"></a>Executar a ferramenta de preparação de conteúdo do Microsoft Win32
 
-Se você executar `IntuneWinAppUtil.exe` a partir da janela de comando sem parâmetros, a ferramenta irá orientá-lo a inserir os parâmetros necessários passo a passo. Ou, você pode adicionar os parâmetros ao comando com base nos seguintes parâmetros de linha de comando disponíveis.
+Se você executar `IntuneWinAppUtil.exe` na janela de comando sem parâmetros, a ferramenta irá orientá-lo a inserir os parâmetros necessários passo a passo. Ou, você pode adicionar os parâmetros ao comando com base nos seguintes parâmetros de linha de comando disponíveis.
 
 ### <a name="available-command-line-parameters"></a>Parâmetros da linha de comandos disponíveis 
 
@@ -89,7 +92,7 @@ Tal como uma aplicação de linha de negócio (LOB), pode adicionar uma aplicaç
 
 ### <a name="process-flow-to-add-a-win32-app-to-intune"></a>Fluxo do processo para adicionar um aplicativo Win32 ao Intune
 
-   ![Fluxo do processo para adicionar um aplicativo Win32 ao Intune](./media/apps-win32-app-management/add-win32-app.svg)
+<img alt="Process flow to add a Win32 app to Intune" src="./media/apps-win32-app-management/add-win32-app.svg" width="500">
 
 ### <a name="add-a-win32-app-to-intune"></a>Adicionar um aplicativo Win32 ao Intune
 
@@ -141,7 +144,7 @@ Os seguintes passos fornecem orientação para ajudá-lo a adicionar uma aplica�
     `msiexec /p “MyApp123.msp”`<p>
     E, se o aplicativo for `ApplicationName.exe`, o comando será o nome do aplicativo seguido pelos argumentos do comando (switches) com suporte no pacote. <br>Por exemplo:<br>
     `ApplicationName.exe /quiet`<br>
-    No comando acima, o `ApplicationName.exe` pacote dá suporte ao argumento de `/quiet` comando.<p> 
+    No comando acima, o pacote `ApplicationName.exe` dá suporte ao argumento de comando `/quiet`.<p> 
     Para os argumentos específicos com suporte no pacote de aplicativos, contate o fornecedor do aplicativo.
 
 3. Adicione a linha de comandos de desinstalação completa para desinstalar a aplicação com base no GUID da aplicação. 
@@ -294,7 +297,7 @@ Você pode escolher se deseja ou não instalar cada aplicativo dependente automa
 
 Para adicionar uma dependência de aplicativo ao seu aplicativo Win32, use as seguintes etapas:
 
-1. No Intune, selecione aplicativos de **aplicativos** > cliente para exibir sua lista de aplicativos cliente adicionados. 
+1. No Intune, selecione **aplicativos cliente** > **aplicativos** para exibir sua lista de aplicativos cliente adicionados. 
 2. Selecione um aplicativo **do Windows (Win32)** adicionado. 
 3. Selecione **dependências** para adicionar os aplicativos dependentes que devem ser instalados antes que o aplicativo Win32 possa ser instalado. 
 4. Clique em **Adicionar** para adicionar uma dependência de aplicativo.
@@ -307,7 +310,7 @@ O usuário final verá as notificações do sistema do Windows indicando que os 
 - 1 ou mais requisitos de aplicativo dependente não atendidos
 - 1 ou mais aplicativos dependentes estão aguardando a reinicialização do dispositivo
 
-Se você optar por não **instalar automaticamente** uma dependência, a instalação do aplicativo Win32 não será tentada. Além disso, o relatório de aplicativo mostrará que a dependência `failed` foi sinalizada como e também fornecerá um motivo de falha. Você pode exibir a falha na instalação da dependência clicando em uma falha (ou aviso) fornecida nos [detalhes da instalação](troubleshoot-app-install.md#win32-app-installation-troubleshooting)do aplicativo Win 32. 
+Se você optar por não **instalar automaticamente** uma dependência, a instalação do aplicativo Win32 não será tentada. Além disso, o relatório de aplicativo mostrará que a dependência foi sinalizada como `failed` e também fornecerá um motivo de falha. Você pode exibir a falha na instalação da dependência clicando em uma falha (ou aviso) fornecida nos [detalhes da instalação](troubleshoot-app-install.md#win32-app-installation-troubleshooting)do aplicativo Win 32. 
 
 Cada dependência aderirá à lógica de repetição do aplicativo Win32 do Intune (tente instalar três vezes após aguardar 5 minutos) e o agendamento de reavaliação global. Além disso, as dependências só são aplicáveis no momento da instalação do aplicativo Win32 no dispositivo. As dependências não são aplicáveis para desinstalar um aplicativo Win32. Para excluir uma dependência, você deve clicar nas reticências (três pontos) à esquerda do aplicativo dependente localizado no final da linha da lista de dependências. 
 
@@ -326,7 +329,7 @@ A imagem a seguir notifica o usuário final que as alterações de aplicativo es
 ![Captura de tela notificando o usuário de que as alterações do aplicativo estão sendo feitas](./media/apps-win32-app-management/apps-win32-app-09.png)    
 
 ## <a name="toast-notifications-for-win32-apps"></a>Notificações do sistema para aplicativos Win32 
-Se necessário, você pode suprimir a exibição de notificações do sistema de usuário final por atribuição de aplicativo. No Intune, selecione aplicativos de **aplicativos** > cliente > selecione as **atribuições** > de > de aplicativo**incluem grupos**. 
+Se necessário, você pode suprimir a exibição de notificações do sistema de usuário final por atribuição de aplicativo. No Intune, selecione **aplicativos cliente** > **aplicativos** > selecione o aplicativo > **atribuições** > **incluir grupos**. 
 
 > [!NOTE]
 > As aplicações Win32 instaladas da extensão de gestão do Intune não serão desinstaladas em dispositivos não inscritos. Os administradores podem tirar partido da exclusão de atribuição para não oferecer aplicações Win32 em dispositivos BYOD.
@@ -368,10 +371,10 @@ exit 1
 }
 ```
 
-No comando do PowerShell acima, substitua a `<path to binary file>` cadeia de caracteres pelo caminho para o arquivo do aplicativo Win32. Um caminho de exemplo seria semelhante ao seguinte:<br>
+No comando do PowerShell acima, substitua a cadeia de caracteres `<path to binary file>` pelo caminho para o arquivo do aplicativo Win32. Um caminho de exemplo seria semelhante ao seguinte:<br>
 `C:\Program Files (x86)\Microsoft SQL Server Management Studio 18\Common7\IDE\ssms.exe`
 
-Além disso, substitua `<file version of successfully detected file>` a cadeia de caracteres pela versão do arquivo que você precisa detectar. Uma cadeia de caracteres de versão de arquivo de exemplo seria semelhante ao seguinte:<br>
+Além disso, substitua a cadeia de caracteres `<file version of successfully detected file>` pela versão do arquivo que você precisa detectar. Uma cadeia de caracteres de versão de arquivo de exemplo seria semelhante ao seguinte:<br>
 `2019.0150.18118.00 ((SSMS_Rel).190420-0019)`
 
 Se você precisar obter as informações de versão do seu aplicativo Win32, poderá usar o seguinte comando do PowerShell:

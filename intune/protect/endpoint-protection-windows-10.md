@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/19/2019
+ms.date: 10/08/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0b9b9119294fe0757671568eb6b627974796b2de
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 22e3779cd0772753ccd8843cd1f1ff38617298d6
+ms.sourcegitcommit: 884654da8e72a63bfaea6b5def6c7891b065f251
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71729252"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72163588"
 ---
 # <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>Configurações do Windows 10 (e posterior) para proteger dispositivos usando o Intune  
 
@@ -269,8 +269,8 @@ As configurações a seguir são listadas neste artigo uma única vez, mas todas
 
   - **Não configurado**  
   - **Bloquear** -as regras de firewall do aplicativo autorizado no repositório local são ignoradas e não são impostas.  
-  - **Permitir** Escolha habilitar aplica regras de firewall no repositório local para que elas sejam reconhecidas e impostas. -
-     
+  - **Permitir que** -
+   Choose **habilite** aplica regras de firewall no repositório local para que sejam reconhecidas e impostas.  
 
 - **Regras de porta global do Windows Defender Firewall do repositório local**  
   **Padrão**: Não configurado  
@@ -776,26 +776,27 @@ Essas configurações se aplicam especificamente a unidades de dados removíveis
  
 ## <a name="windows-defender-exploit-guard"></a>Windows Defender Exploit Guard  
 
-Utilize o [Windows Defender Exploit Guard](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/windows-defender-exploit-guard) para gerir e reduzir a superfície de ataque de aplicações utilizadas pelos seus funcionários.  
+Use a [proteção contra Exploit](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exploit-protection) para gerenciar e reduzir a superfície de ataque de aplicativos usados por seus funcionários.  
 
 ### <a name="attack-surface-reduction"></a>Redução da Superfície de Ataque  
 
-Para obter informações sobre as regras de *redução da superfície de ataque* , consulte reduzir as superfícies de [ataque com o Windows Defender Exploit Guard](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard) na documentação do Windows Defender Exploit Guard.  
+As regras de redução da superfície de ataque ajudam a evitar comportamentos que o malware geralmente usa para infectar computadores com código mal-intencionado.  
 
 #### <a name="attack-surface-reduction-rules"></a>Regras de redução da superfície de ataque  
 
 - **Marcar o roubo de credenciais do sistema de autoridade de segurança local do Windows**  
   **Padrão**: Não configurado  
-  Exploit Guard: [Regras de redução da superfície de ataque](https://go.microsoft.com/fwlink/?linkid=874499)
+  Régua [Bloquear o roubo de credenciais do subsistema de autoridade de segurança local do Windows (Lsass. exe)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-credential-stealing-from-the-windows-local-security-authority-subsystem-lsassexe)
 
   Ajude a evitar ações e aplicativos que normalmente são usados por malware de busca de exploração para infectar computadores.  
+
   - **Não configurado**  
   - **Habilitar** -sinalizar roubo de credencial do subsistema de autoridade de segurança local do Windows (Lsass. exe).  
   - **Somente auditoria**  
 
 - **Criação de processo do Adobe Reader (beta)**  
   **Padrão**: Não configurado  
-  Exploit Guard: [Regras de redução da superfície de ataque](https://go.microsoft.com/fwlink/?linkid=853979)  
+  Régua [Bloquear o Adobe Reader de criar processos filho](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-adobe-reader-from-creating-child-processes)  
 
   - **Não configurado**  
   - **Habilitar** -bloquear processos filho que são criados a partir do Adobe Reader.  
@@ -807,7 +808,7 @@ Impeça as aplicações do Office de realizarem as seguintes ações:
 
 - **Aplicações do Office a injetar noutros processos (sem exceções)**  
   **Padrão**: Não configurado  
-  [Documentação do Exploit Guard](https://go.microsoft.com/fwlink/?linkid=872974)  
+  Régua [Bloquear aplicativos do Office de injetar código em outros processos](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-office-applications-from-injecting-code-into-other-processes)  
 
   - **Não configurado**  
   - **Bloqueie a injeção** de aplicativos do Office em outros processos.  
@@ -815,7 +816,7 @@ Impeça as aplicações do Office de realizarem as seguintes ações:
 
 - **Aplicações/macros do Office a criar conteúdo executável**  
   **Padrão**: Não configurado  
-  [Documentação do Exploit Guard](https://go.microsoft.com/fwlink/?linkid=872975)  
+  Régua [Impedir que aplicativos do Office criem conteúdo executável](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-office-applications-from-creating-executable-content)  
 
   - **Não configurado**  
   - **Bloqueie o** bloqueio de aplicativos e macros do Office de criar conteúdo executável.  
@@ -823,7 +824,7 @@ Impeça as aplicações do Office de realizarem as seguintes ações:
 
 - **Aplicações do Office a iniciar processos subordinados**  
   **Padrão**: Não configurado  
-  [Documentação do Exploit Guard](https://go.microsoft.com/fwlink/?linkid=872976)  
+  Régua [Impedir que todos os aplicativos do Office criem processos filho](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-all-office-applications-from-creating-child-processes)  
 
   - **Não configurado**  
   - **Bloquear o** bloqueio de aplicativos do Office para iniciar processos filho.  
@@ -831,7 +832,7 @@ Impeça as aplicações do Office de realizarem as seguintes ações:
   
 - **Importações do Win32 provenientes de código macro do Office**  
   **Padrão**: Não configurado  
-  [Documentação do Exploit Guard](https://go.microsoft.com/fwlink/?linkid=872977)  
+  Régua [Bloquear chamadas à API do Win32 de macros do Office](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-win32-api-calls-from-office-macros)  
 
   - **Não configurado**  
   - **Bloco** -bloquear importações do Win32 do código de macro no Office.  
@@ -839,7 +840,7 @@ Impeça as aplicações do Office de realizarem as seguintes ações:
   
 - **Criação de processos de produtos de comunicação do Office**  
   **Padrão**: Não configurado  
-  [Documentação do Exploit Guard](https://go.microsoft.com/fwlink/?linkid=874499)  
+  Régua [Bloquear o aplicativo de comunicação do Office de criar processos filho](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-office-communication-application-from-creating-child-processes)  
 
   - **Não configurado**  
   - **Habilitar** -Bloquear criação de processo filho de aplicativos de comunicações do Office.  
@@ -851,7 +852,7 @@ Bloqueie os itens seguintes para impedir ameaças de script:
 
 - **Código macro js/vbs/ps/ oculto**  
   **Padrão**: Não configurado  
-  [Documentação do Exploit Guard](https://go.microsoft.com/fwlink/?linkid=872978)    
+  Régua [Bloquear a execução de scripts potencialmente ofuscados](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-execution-of-potentially-obfuscated-scripts)    
 
   - **Não configurado**  
   - **Bloquear-bloquear** qualquer código js/vbs/PS/macro ofuscado.  
@@ -859,7 +860,7 @@ Bloqueie os itens seguintes para impedir ameaças de script:
 
 - **js/vbs a executar payload transferido da Internet (sem exceções)**  
   **Padrão**: Não configurado  
-  [Documentação do Exploit Guard](https://go.microsoft.com/fwlink/?linkid=872979)  
+  Régua [Bloquear JavaScript ou VBScript de iniciar conteúdo executável baixado](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-javascript-or-vbscript-from-launching-downloaded-executable-content)  
 
   - **Não configurado**  
   - **Bloquear** -bloquear js/vbs da carga de execução baixada da Internet.  
@@ -867,7 +868,7 @@ Bloqueie os itens seguintes para impedir ameaças de script:
 
 - **Processo de criação de comandos PSExec e WMI**  
   **Padrão**: Não configurado  
-  [Documentação do Exploit Guard](https://go.microsoft.com/fwlink/?linkid=874500)  
+  Régua [Bloquear criações de processo originadas de comandos do PSExec e do WMI](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-process-creations-originating-from-psexec-and-wmi-commands)  
 
   - **Não configurado**  
   - Criações de processo de bloqueio de **bloco** provenientes de comandos do PsExec e do WMI.  
@@ -876,7 +877,7 @@ Bloqueie os itens seguintes para impedir ameaças de script:
 
 - **Processos não fidedignos e não assinados que executam a partir de USB**  
   **Padrão**: Não configurado  
-  [Documentação do Exploit Guard](https://go.microsoft.com/fwlink/?linkid=874502)    
+  Régua [Bloquear processos não confiáveis e não assinados que são executados a partir do USB](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-untrusted-and-unsigned-processes-that-run-from-usb)    
 
   - **Não configurado**  
   - Bloquear **bloqueia** processos não confiáveis e não assinados que são executados do USB.  
@@ -884,7 +885,7 @@ Bloqueie os itens seguintes para impedir ameaças de script:
   
 - **Ficheiros executáveis que não correspondam a uma prevalência, idade ou lista de critérios de confiança**  
   **Padrão**: Não configurado  
-  [Documentação do Exploit Guard](https://go.microsoft.com/fwlink/?linkid=874503)    
+  Régua [Bloquear a execução de arquivos executáveis a menos que eles atendam a um critério de prevalência, idade ou lista confiável](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion)    
 
   - **Não configurado**  
   - **Bloqueie a** execução de arquivos executáveis, a menos que eles atendam a um critério de prevalência, idade ou lista confiável.  
@@ -896,7 +897,7 @@ Bloqueie o seguinte para impedir ameaças de e-mail:
 
 - **Execução de conteúdo executável (exe, dll, ps, js, vbs, etc.) retirado do e-mail (webmail/cliente de correio) (sem exceções)**  
   **Padrão**: Não configurado  
-  [Documentação do Exploit Guard](https://go.microsoft.com/fwlink/?linkid=872980)  
+  Régua [Bloquear conteúdo executável do cliente de email e webmail](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-executable-content-from-email-client-and-webmail)  
 
   - **Não configurado**  
   - **Bloquear a execução** de conteúdo executável (exe, dll, PS, js, vbs, etc.) removido do email (webmail/email).  
@@ -906,7 +907,7 @@ Bloqueie o seguinte para impedir ameaças de e-mail:
 
 - **Proteção de ransomware avançada**  
   Predefinição:  Não configurado  
-  [Documentação do Exploit Guard](https://go.microsoft.com/fwlink/?linkid=874504)  
+  Régua [Usar proteção avançada contra ransomware](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#use-advanced-protection-against-ransomware)  
 
   - **Não configurado**  
   - **Habilitar** -usar proteção agressiva de ransomware.  
@@ -932,7 +933,7 @@ Bloqueie o seguinte para impedir ameaças de e-mail:
 
 ### <a name="controlled-folder-access"></a>Acesso a pastas controladas  
 
-Ajude a [proteger dados valiosos](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard) de aplicativos mal-intencionados e ameaças, como ransomware.  
+Ajude a [proteger dados valiosos](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/controlled-folders) de aplicativos mal-intencionados e ameaças, como ransomware.  
 
 - **Proteção de pasta**  
   **Padrão**: Não configurado  
@@ -979,7 +980,7 @@ Bloquear conexões de saída de qualquer aplicativo para endereços IP ou domín
 - **Carregar XML**  
   **Padrão**: *Não configurado*  
 
-  Para usar a proteção contra Exploit para [proteger dispositivos contra explorações](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection), crie um arquivo XML que inclui as configurações de mitigação do sistema e do aplicativo que você deseja. Há dois métodos para criar o arquivo XML:  
+  Para usar a proteção contra Exploit para [proteger dispositivos contra explorações](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection), crie um arquivo XML que inclui as configurações de mitigação do sistema e do aplicativo que você deseja. Há dois métodos para criar o arquivo XML:  
 
   - *PowerShell* -use um ou mais dos cmdlets do PowerShell *Get-ProcessMitigation*, *set-ProcessMitigation*e *ConvertTo-ProcessMitigationPolicy* . Os cmdlets configuram definições de mitigação e exportam uma representação XML deles.  
 
@@ -1029,7 +1030,7 @@ O Windows Defender Credential Guard protege contra ataques de roubo de credencia
 
   Quando você *habilita* o Credential Guard, os seguintes recursos necessários também são habilitados:  
   
-  - **Segurança baseada em virtualização** VBS  
+  - **Segurança baseada em virtualização** (vbs)  
     Ativa durante a próxima reinicialização. A segurança baseada em Virtualização utiliza o Windows Hypervisor para dar suporte aos serviços de segurança e requer o Windows Hypervisor.  
   - **Inicialização segura com acesso à memória do diretório**  
     Ativa o VBS com a inicialização segura e proteções de DMA (acesso direto à memória). As proteções de DMA necessitam de suporte de hardware e são ativadas apenas em dispositivos configurados corretamente.  
@@ -1332,8 +1333,8 @@ Utilize estas opções para configurar as definições da segurança local em di
   - **Enable** -oculta o nome de usuário.  
   - **Não configurado** -mostra o último nome de usuário.  
 
-- **Ocultar nome de usuário no**
-  **padrão**de entrada: Não Configurado  
+- **Ocultar nome de usuário na entrada**
+  **padrão**: Não Configurado  
   CSP LocalPoliciesSecurityOptions: [InteractiveLogon_DoNotDisplayUsernameAtSignIn](https://go.microsoft.com/fwlink/?linkid=867959)  
 
   

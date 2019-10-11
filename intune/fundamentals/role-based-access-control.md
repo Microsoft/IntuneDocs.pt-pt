@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eab50a21ea01cd4075bd78add980d2839606a1a2
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 6e9df15efc7a16a0ce1ee6b0412f9160831efdec
+ms.sourcegitcommit: 884654da8e72a63bfaea6b5def6c7891b065f251
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71729488"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72163516"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>RBAC (controle de acesso baseado em função) com Microsoft Intune
 
@@ -36,7 +36,7 @@ Para obter conselhos e sugestões sobre o Intune RBAC, você pode conferir esta 
 ## <a name="roles"></a>Funções
 Uma função define o conjunto de permissões concedidos aos usuários atribuídos a essa função.
 Você pode usar as funções internas e personalizadas. As funções internas abrangem alguns cenários comuns do Intune. Você pode [criar suas próprias funções personalizadas](create-custom-role.md) com o conjunto exato de permissões necessárias. Várias funções Azure Active Directory têm permissões para o Intune.
-Para ver uma função, escolha**funções** > do **Intune** > **todas as funções** > escolha uma função. Você verá as seguintes páginas:
+Para ver uma função, escolha **Intune** > **funções** > **todas as funções** > escolher uma função. Você verá as seguintes páginas:
 
 - **Propriedades**: O nome, a descrição, o tipo, as atribuições e as marcas de escopo da função. 
 - **Permissões**: Lista um longo conjunto de alternâncias que definem quais permissões a função tem.
@@ -66,6 +66,7 @@ Você pode criar suas próprias funções com permissões personalizadas. Para o
 | Leitor de segurança | Só de leitura | Só de leitura |
 | Administrador de conformidade | Nenhum | Só de leitura |
 | Administrador de dados de conformidade | Nenhum | Só de leitura |
+| Leitor global | Só de Leitura | Só de Leitura |
 
 > [!TIP]
 > O Intune também mostra três extensões do Azure AD: **Usuários**, **grupos**e **acesso condicional**, que são controlados usando o RBAC do Azure AD. Além disso, o **Administrador da Conta de Utilizador** só executa as atividades do utilizador/grupo do AAD e não tem permissões completas para executar todas as atividades no Intune. Para obter mais informações, consulte [RBAC com o Azure ad](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).
@@ -82,7 +83,7 @@ Uma atribuição de função define:
 - quais recursos eles podem alterar.
 
 Você pode atribuir funções personalizadas e internas a seus usuários. Para receber uma função do Intune, o usuário deve ter uma licença do Intune.
-Para ver uma atribuição de função, escolha**funções** > do **Intune** > **todas as funções** > escolha uma função > escolha uma atribuição. Você verá as seguintes páginas:
+Para ver uma atribuição de função, escolha **Intune** > **funções** > **todas as funções** > escolha uma função > escolha uma atribuição. Você verá as seguintes páginas:
 
 - **Propriedades**: O nome, a descrição, a função, os membros, os escopos e as marcas da atribuição.
 - **Membros**: Todos os usuários nos grupos de segurança do Azure listados têm permissão para gerenciar os usuários/dispositivos listados em escopo (grupos).

@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3f9b78685e2bbe40a91c80fe71403123dbfaac90
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: e8df5f46f411a6aee1c3040fa4a1a37fb49d5fb2
+ms.sourcegitcommit: fca2670142c083d7562c0a36547a6a451863e315
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71729844"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "72036427"
 ---
 # <a name="add-partner-certification-authority-in-intune-using-scep"></a>Adicionar autoridades de certificação parceiras no Intune com o SCEP
 
@@ -72,7 +72,7 @@ Certifique-se de que tem as permissões obrigatórias para registar uma aplicaç
 
 #### <a name="create-an-application-in-azure-active-directory"></a>Criar um aplicativo no Azure Active Directory  
 
-1. Na [portal do Azure](https://portal.azure.com), vá para **Azure Active Directory** > **registros de aplicativo**e, em seguida, selecione **novo registro**.  
+1. Na [portal do Azure](https://portal.azure.com), acesse **Azure Active Directory** **registros do aplicativo** >  e, em seguida, selecione **novo registro**.  
 
 2. Na página **registrar um aplicativo** , especifique os seguintes detalhes:  
    - Na seção **nome** , insira um nome de aplicativo significativo.  
@@ -124,6 +124,7 @@ As seguintes autoridades de certificação de terceiros suportam o Intune:
 - [IDnomic](https://www.idnomic.com/)
 - [Sectigo](https://sectigo.com/products)
 - [DigiCert](https://knowledge.digicert.com/tutorials/microsoft-intune.html)
+- [Venafi](https://www.venafi.com/platform/enterprise-mobility)
 - [SCEPman](https://azuremarketplace.microsoft.com/marketplace/apps/gluckkanja.scepman)
 
 Se for uma autoridade de certificação de terceiros interessada em integrar o seu produto com o Intune, reveja a documentação de orientação da API:

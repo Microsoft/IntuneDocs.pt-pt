@@ -1,5 +1,5 @@
 ---
-title: Resolução de problemas de perfis de dispositivo no Microsoft Intune – Azure | Microsoft Docs
+title: Solucionar problemas de perfis de dispositivo no Microsoft Intune – Azure | Microsoft Docs
 description: Perguntas e respostas comuns com perfis e políticas de dispositivo, incluindo alterações de perfil não aplicadas a usuários ou dispositivos, quanto tempo leva para que novas políticas sejam enviadas para os dispositivos, quais configurações são aplicadas quando há várias políticas, o que acontece quando um o perfil é excluído ou removido e mais com Microsoft Intune.
 keywords: ''
 author: MandiOhlinger
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 618f88d6dbacb886f250b74f6a462b8449b59b18
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: f8fa8e1940a5b5b9c6938abfdd0813a2b8c537f8
+ms.sourcegitcommit: f1bd3b866f3ba62a562d88fdae07eef64ac11cbb
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71730796"
+ms.lasthandoff: 10/11/2019
+ms.locfileid: "72262507"
 ---
 # <a name="common-questions-issues-and-resolutions-with-device-policies-and-profiles-in-microsoft-intune"></a>Perguntas comuns, problemas e resoluções com perfis e políticas de dispositivo no Microsoft Intune
 
@@ -29,21 +29,21 @@ ms.locfileid: "71730796"
 
 Obtenha respostas para perguntas comuns ao trabalhar com perfis de dispositivo e políticas no Intune. Este artigo também lista os intervalos de tempo de check-in, fornece mais Detains em conflitos e muito mais.
 
-## <a name="why-doesnt-a-user-get-a-new-profile-when-changing-a-password-or-passphrase-on-an-existing-wi-fi-profile"></a>Por que razão um utilizador não obtém um novo perfil quando altera uma palavra-passe ou frase de acesso num perfil de Wi-Fi existente?
+## <a name="why-doesnt-a-user-get-a-new-profile-when-changing-a-password-or-passphrase-on-an-existing-wi-fi-profile"></a>Por que um usuário não recebe um novo perfil ao alterar uma senha ou frase secreta em um perfil de Wi-Fi existente?
 
-Suponhamos que cria um perfil de Wi-Fi empresarial, implementa o perfil num grupo, altera a palavra-passe e guarda o perfil. Quando o perfil é alterado, alguns utilizadores podem não receber o novo perfil.
+Você cria um perfil de Wi-Fi corporativo, implanta o perfil em um grupo, altera a senha e salva o perfil. Quando o perfil é alterado, alguns usuários não podem obter o novo perfil.
 
-Para mitigar este problema, configure o Wi-Fi de convidado. Se o Wi-Fi empresarial falhar, os utilizadores podem ligar-se ao Wi-Fi de convidado. Certifique-se de que ativa todas as definições de ligação automática. Implemente o perfil de Wi-Fi convidado para todos os utilizadores.
+Para atenuar esse problema, configure o Wi-Fi convidado. Se o Wi-Fi corporativo falhar, os usuários poderão se conectar ao Wi-Fi convidado. Certifique-se de habilitar as configurações de conexão automaticamente. Implante o perfil Wi-Fi convidado para todos os usuários.
 
 Algumas recomendações adicionais:  
 
-- Se a rede Wi-Fi à qual você está se conectando usar uma senha ou frase secreta, verifique se você pode se conectar ao roteador Wi-Fi diretamente. Pode testar com um dispositivo iOS.
-- Depois de se ligar com êxito ao ponto final do Wi-Fi (router do Wi-Fi), tenha em atenção o SSID e a credencial utilizados (este valor será a palavra-passe ou a frase de acesso).
-- Introduza o SSID e a credencial (palavra-passe ou frase de acesso) no campo Chave Pré-partilhada. 
-- Implemente num grupo de teste com um número de utilizadores limitado, preferencialmente apenas a equipa de TI. 
-- Sincronize o seu dispositivo iOS com o Intune. Inscreva-o caso ainda não o tenha feito. 
-- Tente ligar-se novamente ao mesmo ponto final do Wi-Fi (como mencionado no primeiro passo).
-- Implemente em grupos maiores e, por fim, em todos os utilizadores esperados na sua organização. 
+- Se a rede Wi-Fi à qual você está se conectando usar uma senha ou frase secreta, verifique se você pode se conectar ao roteador Wi-Fi diretamente. Você pode testar com um dispositivo iOS.
+- Depois de se conectar com êxito ao ponto de extremidade Wi-Fi (Roteador Wi-Fi), observe o SSID e a credencial usada (esse valor é a senha ou frase secreta).
+- Insira o SSID e a credencial (senha ou frase secreta) no campo chave pré-compartilhada. 
+- Implante em um grupo de teste que tenha um número limitado de usuários, preferivelmente apenas a equipe de ti. 
+- Sincronize seu dispositivo iOS para o Intune. Registre-se se você ainda não tiver se inscrito. 
+- Teste a conexão com o mesmo ponto de extremidade Wi-Fi (conforme mencionado na primeira etapa) novamente.
+- Distribua para grupos maiores e, eventualmente, para todos os usuários esperados em sua organização. 
 
 ## <a name="how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned"></a>Quanto tempo leva para os dispositivos obterem uma política, um perfil ou um aplicativo depois de serem atribuídos?
 
@@ -56,7 +56,7 @@ Se um dispositivo não fizer check-in para obter a política ou o perfil após a
 | iOS | Aproximadamente a cada 8 horas |
 | macOS | Aproximadamente a cada 8 horas |
 | Android | Aproximadamente a cada 8 horas |
-| PCs com o Windows 10 inscritos como dispositivos | Aproximadamente a cada 8 horas |
+| Computadores Windows 10 registrados como dispositivos | Aproximadamente a cada 8 horas |
 | Windows Phone | Aproximadamente a cada 8 horas |
 | Windows 8.1 | Aproximadamente a cada 8 horas |
 
@@ -67,7 +67,7 @@ Se o dispositivo tiver sido registrado recentemente, o check-in de conformidade 
 | iOS | A cada 15 minutos por 1 hora e, em seguida, a cada 8 horas |  
 | macOS | A cada 15 minutos por 1 hora e, em seguida, a cada 8 horas | 
 | Android | A cada 3 minutos por 15 minutos, então a cada 15 minutos por 2 horas e, em seguida, a cada 8 horas | 
-| PCs com o Windows 10 inscritos como dispositivos | A cada 3 minutos por 30 minutos e, em seguida, a cada 8 horas | 
+| Computadores Windows 10 registrados como dispositivos | A cada 3 minutos por 15 minutos, então a cada 15 minutos por 2 horas e, em seguida, a cada 8 horas | 
 | Windows Phone | A cada 5 minutos por 15 minutos, então a cada 15 minutos por 2 horas e, em seguida, a cada 8 horas | 
 | Windows 8.1 | A cada 5 minutos por 15 minutos, então a cada 15 minutos por 2 horas e, em seguida, a cada 8 horas | 
 
@@ -77,7 +77,7 @@ Para dispositivos sem afinidade de usuário, a frequência de sincronização im
 
 Como prática recomendada, verifique se os dispositivos estão online por pelo menos oito horas consecutivas para obter os melhores resultados.
 
-## <a name="what-actions-cause-intune-to-immediately-send-a-notification-to-a-device"></a>Que ações fazem o Intune enviar de imediato uma notificação para um dispositivo?
+## <a name="what-actions-cause-intune-to-immediately-send-a-notification-to-a-device"></a>Quais ações fazem com que o Intune envie imediatamente uma notificação para um dispositivo?
 
 Há diferentes ações que disparam uma notificação, como quando uma política, um perfil ou um aplicativo é atribuído (ou não atribuído), atualizado, excluído e assim por diante. Esses tempos de ação variam entre as plataformas.
 
@@ -85,7 +85,7 @@ Os dispositivos fazem check-in no Intune quando recebem uma notificação para f
 
 Outras alterações, como a revisão das informações de contato no aplicativo Portal da Empresa, não causam uma notificação imediata para os dispositivos.
 
-## <a name="if-multiple-policies-are-assigned-to-the-same-user-or-device-how-do-i-know-which-settings-gets-applied"></a>Se forem atribuídas várias políticas ao mesmo utilizador ou dispositivo, como posso saber que definições serão aplicadas?
+## <a name="if-multiple-policies-are-assigned-to-the-same-user-or-device-how-do-i-know-which-settings-gets-applied"></a>Se várias políticas forem atribuídas ao mesmo usuário ou dispositivo, como saber quais configurações são aplicadas?
 
 Quando duas ou mais políticas são atribuídas ao mesmo usuário ou dispositivo, a configuração que se aplica ocorre no nível de configuração individual:
 
@@ -93,69 +93,69 @@ Quando duas ou mais políticas são atribuídas ao mesmo usuário ou dispositivo
 
 - Se uma política de conformidade for avaliada em relação à mesma configuração em outra política de conformidade, a configuração de política de conformidade mais restritiva será aplicada.
 
-- Se uma definição de política de configuração estiver em conflito com uma configuração em outra política de configuração, esse conflito será mostrado no Intune. Deve resolver estes conflitos manualmente.
+- Se uma definição de política de configuração estiver em conflito com uma configuração em outra política de configuração, esse conflito será mostrado no Intune. Resolva esses conflitos manualmente.
 
-## <a name="what-happens-when-app-protection-policies-conflict-with-each-other-which-one-is-applied-to-the-app"></a>O que acontece quando as políticas de proteção de aplicações estão em conflito entre si? Qual delas é aplicada na aplicação?
+## <a name="what-happens-when-app-protection-policies-conflict-with-each-other-which-one-is-applied-to-the-app"></a>O que acontece quando as políticas de proteção de aplicativo entram em conflito entre si? Qual deles é aplicado ao aplicativo?
 
 Os valores de conflito são as configurações mais restritivas disponíveis em uma política de proteção de aplicativo, *exceto* pelos campos de entrada de número, como tentativas de PIN antes da redefinição. Os campos de entrada de número são definidos da mesma forma que os valores, como se você criasse uma política de MAM usando a opção de configurações recomendadas.
 
-Os conflitos ocorrem quando duas configurações de perfil são iguais. Por exemplo, se configurou duas políticas MAM idênticas, à exceção da definição de copiar/colar. Neste cenário, a definição de copiar/colar está definida para o valor mais restritivo, mas as definições restantes são aplicadas conforme configuradas.
+Os conflitos ocorrem quando duas configurações de perfil são iguais. Por exemplo, você configurou duas políticas de MAM que são idênticas, exceto para a configuração copiar/colar. Nesse cenário, a configuração copiar/colar é definida como o valor mais restritivo, mas o restante das configurações é aplicado como configurado.
 
-Uma política é implantada no aplicativo e entra em vigor. Uma segunda política é implantada. Nesse cenário, a primeira política tem precedência e permanece aplicada. A segunda política mostra um conflito. Se ambos forem aplicados ao mesmo tempo, o que significa que não há política anterior, ambos estarão em conflito. As definições em conflito são definidas para os valores mais restritivos.
+Uma política é implantada no aplicativo e entra em vigor. Uma segunda política é implantada. Nesse cenário, a primeira política tem precedência e permanece aplicada. A segunda política mostra um conflito. Se ambos forem aplicados ao mesmo tempo, o que significa que não há política anterior, ambos estarão em conflito. Todas as configurações conflitantes são definidas para os valores mais restritivos.
 
-## <a name="what-happens-when-ios-custom-policies-conflict"></a>O que acontece quando políticas personalizadas do iOS entram em conflito?
+## <a name="what-happens-when-ios-custom-policies-conflict"></a>O que acontece quando as políticas personalizadas do iOS entram em conflito?
 
-O Intune não avalia o payload dos ficheiros do Apple Configurator nem de políticas OMA-URI (Open Mobile Alliance Uniform Resource Identifier) personalizadas. Serve apenas como o mecanismo de entrega.
+O Intune não avalia a carga de arquivos de configuração da Apple ou uma política de OMA-URI (Open Mobile Alliance Uniform Resource Identifier) personalizada. Ele simplesmente serve como mecanismo de entrega.
 
 Ao atribuir uma política personalizada, confirme se as configurações definidas não entram em conflito com a conformidade, configuração ou outras políticas personalizadas. Se uma política personalizada e suas configurações entrarem em conflito, as configurações serão aplicadas aleatoriamente.
 
-## <a name="what-happens-when-a-profile-is-deleted-or-no-longer-applicable"></a>O que acontece quando um perfil é eliminado ou deixa de ser aplicável?
+## <a name="what-happens-when-a-profile-is-deleted-or-no-longer-applicable"></a>O que acontece quando um perfil é excluído ou não é mais aplicável?
 
 Quando você exclui um perfil ou remove um dispositivo de um grupo que tem o perfil, o perfil e as configurações são removidos do dispositivo conforme descrito:
 
-- Perfis de Wi-Fi, VPN, certificado e email: Esses perfis são removidos de todos os dispositivos registrados com suporte.
+- Wi-Fi, VPN, certificado e perfis de email: esses perfis são removidos de todos os dispositivos registrados com suporte.
 - Todos os outros tipos de perfil:  
 
-  - **Dispositivos Windows e Android**: As configurações não são removidas do dispositivo
-  - **Dispositivos Windows Phone 8,1**: As seguintes definições são removidas:  
+  - **Dispositivos Windows e Android**: as configurações não são removidas do dispositivo
+  - **Dispositivos Windows Phone 8,1**: as seguintes configurações foram removidas:  
   
-    - Palavra-passe obrigatória para desbloquear os dispositivos móveis
-    - Permitir palavras-passe simples
-    - Comprimento mínimo da palavra-passe
-    - Tipo obrigatório de palavra-passe
-    - Expiração da Palavra-passe (dias)
-    - Memorizar histórico de palavras-passe
-    - Número de falhas de início de sessão consecutivas a permitir antes do dispositivo ser apagado
-    - Minutos de inatividade antes da palavra-passe ser exigida
-    - Tipo de palavra-passe obrigatório – Número mínimo de conjuntos de carateres
-    - Permitir câmara
-    - Encriptação obrigatória no dispositivo móvel
-    - Permitir armazenamento amovível
-    - Permitir browser
-    - Permitir loja de aplicações
-    - Permitir captura de ecrã
+    - Exigir uma senha para desbloquear dispositivos móveis
+    - Permitir senhas simples
+    - Comprimento mínimo da senha
+    - Tipo de senha necessária
+    - Expiração da senha (dias)
+    - Lembrar histórico de senha
+    - Número de falhas de entrada repetidas permitidas antes que o dispositivo seja apagado
+    - Minutos de inatividade antes que a senha seja exigida
+    - Tipo de senha necessária – número mínimo de conjuntos de caracteres
+    - Permitir câmera
+    - Exigir criptografia no dispositivo móvel
+    - Permitir armazenamento removível
+    - Permitir navegador da Web
+    - Permitir repositório de aplicativos
+    - Permitir captura de tela
     - Permitir geolocalização
     - Permitir conta Microsoft
     - Permitir copiar e colar
-    - Permitir tethering Wi-Fi
-    - Permitir ligação automática a hotspots Wi-Fi
-    - Permitir relatórios de hotspots Wi-Fi
-    - Permitir a limpeza
+    - Permitir compartilhamento de Internet por Wi-Fi
+    - Permitir conexão automática para pontos de acesso Wi-Fi gratuitos
+    - Permitir relatório de hotspot Wi-Fi
+    - Permitir apagamento
     - Permitir Bluetooth
     - Permitir NFC
     - Permitir Wi-Fi
 
-  - **iOS**: Todas as configurações são removidas, exceto:
+  - **Ios**: todas as configurações são removidas, exceto:
   
-    - Permitir chamadas em roaming
+    - Permitir roaming de voz
     - Permitir roaming de dados
-    - Permitir sincronização automática em roaming
+    - Permitir sincronização automática durante o roaming
 
-## <a name="i-changed-a-device-restriction-profile-but-the-changes-havent-taken-effect"></a>Alterei um perfil de restrição de dispositivos, mas as alterações ainda não foram aplicadas
+## <a name="i-changed-a-device-restriction-profile-but-the-changes-havent-taken-effect"></a>Alterei um perfil de restrição de dispositivo, mas as alterações não entraram em vigor
 
 Uma vez definido, os dispositivos Windows Phone não permitem que as políticas de segurança definidas usando MDM ou EAS sejam reduzidas em segurança. Por exemplo, você define um **número mínimo de caracteres de senha** como 8. Você tenta reduzi-lo para 4. O perfil mais restritivo já está aplicado ao dispositivo.
 
-Para alterar o perfil para um valor menos seguro, redefina as políticas de segurança. Por exemplo, em Windows 8.1, na área de trabalho, passe o dedo da direita > selecione **configurações** > **painel de controle**. Selecione a miniaplicação **Contas de Utilizador** . No menu de navegação à esquerda, há um link **Redefinir políticas de segurança** (em direção à parte inferior). Selecione-a e, em seguida, selecione **Repor Políticas**.
+Para alterar o perfil para um valor menos seguro, redefina as políticas de segurança. Por exemplo, em Windows 8.1, na área de trabalho, passe o dedo da direita > selecione **configurações** > **painel de controle**. Selecione o miniaplicativo **contas de usuário** . No menu de navegação à esquerda, há um link **Redefinir políticas de segurança** (em direção à parte inferior). Selecione-o e escolha **Redefinir políticas**.
 
 Outros dispositivos MDM, como Android, Windows Phone 8,1 e posterior, iOS e Windows 10 podem precisar ser desativados e registrados novamente no Intune para aplicar um perfil menos restritivo.
 
@@ -170,4 +170,4 @@ Para saber mais sobre os requisitos de versão e SKU para as diferentes configur
 
 ## <a name="next-steps"></a>Passos seguintes
 
-Precisa de ajuda adicional? Veja [Como obter suporte para o Microsoft Intune](../fundamentals/get-support.md).
+Precisa de ajuda adicional? Consulte [como obter suporte para Microsoft Intune](../fundamentals/get-support.md).

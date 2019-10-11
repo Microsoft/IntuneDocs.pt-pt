@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eee3d4187dd513cd3945e86aff478fe96b341660
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 52420375ae5ed88ab713a1da3e927e43e433db83
+ms.sourcegitcommit: 884654da8e72a63bfaea6b5def6c7891b065f251
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71729504"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72163488"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Configurações de linha de base de proteção avançada contra ameaças do Microsoft defender para Intune
 
@@ -42,17 +42,17 @@ Para obter mais informações, consulte [WINDOWSDEFENDERAPPLICATIONGUARD CSP](ht
 
 Ao usar o Microsoft Edge, o Microsoft defender Application Guard protege seu ambiente de sites que não são confiáveis para sua organização. Quando os usuários visitam sites que não estão listados em seu limite de rede isolado, os sites são abertos em uma sessão de navegação virtual do Hyper-V. Sites confiáveis são definidos por um limite de rede.  
 
-- **Configurações do Application Guard** -  */AllowWindowsDefenderApplicationGuard*  
+- **Application Guard** - *configurações/AllowWindowsDefenderApplicationGuard*  
   Selecione *Sim* para ativar esse recurso, que abre sites não confiáveis em um contêiner de navegação virtualizado do Hyper-V. Quando definido como *não configurado*, qualquer site (confiável e não confiável) é aberto no dispositivo e não em um contêiner virtualizado.  
 
   **Padrão**: Sim
  
-  - **Conteúdo externo em configurações de sites** - corporativos */BlockNonEnterpriseContent*  
+  - **Conteúdo externo em sites corporativos** - *configurações/BlockNonEnterpriseContent*  
     Selecione *Sim* para bloquear o carregamento de conteúdo de sites não aprovados. Quando definido como *não configurado*, os sites que não são corporativos podem abrir no dispositivo. 
  
     **Padrão**: Sim
 
-  -  - Configurações de comportamento da área de transferência */ClipboardSettings*  
+  - **Comportamento da área de transferência** - *configurações/ClipboardSettings*  
     Escolha quais ações de copiar e colar são permitidas entre o computador local e o navegador virtual do Application Guard.  As opções incluem:
     - *Não configurado*  
     - *Bloquear ambos os* dados não podem ser transferidos entre o PC e o navegador virtual.  
@@ -86,7 +86,7 @@ Para obter mais informações, consulte [CSP da política-SmartScreen](https://d
 ## <a name="attack-surface-reduction"></a>Redução da Superfície de Ataque  
 
 - **Tipo de processo filho de lançamento de aplicativos do Office**  
-  [Regra de redução da superfície de ataque](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) – quando definido como *Bloquear*, os aplicativos do Office não poderão criar processos filho. Os aplicativos do Office incluem Word, Excel, PowerPoint, OneNote e Access. A criação de um processo filho é um comportamento típico de malware, especialmente para ataques baseados em macro que tentam usar aplicativos do Office para iniciar ou baixar executáveis mal-intencionados.  
+  [Regra de redução da superfície de ataque](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) – quando definido como *Bloquear*, os aplicativos do Office não poderão criar processos filho. Os aplicativos do Office incluem Word, Excel, PowerPoint, OneNote e Access. A criação de um processo filho é um comportamento típico de malware, especialmente para ataques baseados em macro que tentam usar aplicativos do Office para iniciar ou baixar executáveis mal-intencionados.  
 
   **Padrão**: Bloquear
 
@@ -101,7 +101,7 @@ Para obter mais informações, consulte [CSP da política-SmartScreen](https://d
   **Padrão**: Ativar
 
 - **Tipo de execução de conteúdo de email**  
-  [Regra de redução da superfície de ataque](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) – quando definido como *Bloquear*, essa regra impede que os seguintes tipos de arquivo sejam executados ou iniciados de um email visto no Microsoft Outlook ou webmail (como gmail.com ou Outlook.com):  
+  [Regra de redução da superfície de ataque](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) – quando definido como *Bloquear*, essa regra impede que os seguintes tipos de arquivo sejam executados ou iniciados de um email visto no Microsoft Outlook ou webmail (como gmail.com ou Outlook.com):  
 
   - Arquivos executáveis (como. exe,. dll ou. SCR)  
   - Arquivos de script (como um arquivo PowerShell. PS, VisualBasic. vbs ou JavaScript. js)  
@@ -110,17 +110,17 @@ Para obter mais informações, consulte [CSP da política-SmartScreen](https://d
   **Padrão**: Bloquear
 
 - **Lançamento do Adobe Reader em um processo filho**  
-  [Regra de redução da superfície de ataque](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) – *habilite* essa regra para impedir que o Adobe Reader crie um processo filho. Por meio de engenharia social ou explorações, o malware pode baixar e iniciar cargas adicionais e dividir o Adobe Reader.  
+  [Regra de redução da superfície de ataque](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) – *habilite* essa regra para impedir que o Adobe Reader crie um processo filho. Por meio de engenharia social ou explorações, o malware pode baixar e iniciar cargas adicionais e dividir o Adobe Reader.  
 
   **Padrão**: Ativar
 
 - **Script de tipo de código de macro ofuscado**  
-  [Regra de redução da superfície de ataque](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) – malware e outras ameaças podem tentar ofuscar ou ocultar seu código mal-intencionado em alguns arquivos de script. Essa regra impede que os scripts que parecem estar ofuscados sejam executados.  
+  [Regra de redução da superfície de ataque](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) – malware e outras ameaças podem tentar ofuscar ou ocultar seu código mal-intencionado em alguns arquivos de script. Essa regra impede que os scripts que parecem estar ofuscados sejam executados.  
     
   **Padrão**: Bloquear
 
 - **Tipo de processo USB não confiável**  
-  [Regra de redução da superfície de ataque](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) – quando definido para *Bloquear*, não assinados ou arquivos executáveis não confiáveis de unidades removíveis USB e os cartões SD não podem ser executados.
+  [Regra de redução da superfície de ataque](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) – quando definido para *Bloquear*, não assinados ou arquivos executáveis não confiáveis de unidades removíveis USB e os cartões SD não podem ser executados.
 
   Os arquivos executáveis incluem:
   - Arquivos executáveis (como. exe,. dll ou. SCR)
@@ -129,22 +129,22 @@ Para obter mais informações, consulte [CSP da política-SmartScreen](https://d
   **Padrão**: Bloquear
 
 - **Outro tipo de injeção de processo de aplicativos do Office**  
-  [Regra de redução da superfície de ataque](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) -quando definido como *Bloquear*, os aplicativos do Office, incluindo o Word, o Excel, o PowerPoint e o OneNote, não podem injetar código em outros processos. A injeção de código é normalmente usada por malware para executar código mal-intencionado em uma tentativa de ocultar a atividade de mecanismos de verificação antivírus.  
+  [Regra de redução da superfície de ataque](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) -quando definido como *Bloquear*, os aplicativos do Office, incluindo o Word, o Excel, o PowerPoint e o OneNote, não podem injetar código em outros processos. A injeção de código é normalmente usada por malware para executar código mal-intencionado em uma tentativa de ocultar a atividade de mecanismos de verificação antivírus.  
 
   **Padrão**: Bloquear
 
 - **Código de macro do Office permitir tipo de importações do Win32**  
-  [Regra de redução da superfície de ataque](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) – quando definido como *Bloquear*, essa regra tenta bloquear os arquivos do Office que contêm o código de macro que pode importar as DLLs do Win32. Os arquivos do Office incluem Word, Excel, PowerPoint e OneNote. O malware pode usar o código de macro em arquivos do Office para importar e carregar as DLLs do Win32, que são usadas para fazer chamadas à API para permitir infecções adicionais em todo o sistema.  
+  [Regra de redução da superfície de ataque](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) – quando definido como *Bloquear*, essa regra tenta bloquear os arquivos do Office que contêm o código de macro que pode importar as DLLs do Win32. Os arquivos do Office incluem Word, Excel, PowerPoint e OneNote. O malware pode usar o código de macro em arquivos do Office para importar e carregar as DLLs do Win32, que são usadas para fazer chamadas à API para permitir infecções adicionais em todo o sistema.  
 
   **Padrão**: Bloquear
 
 - **Aplicativos de comunicação do Office são iniciados em um processo filho**  
-  [Regra de redução da superfície de ataque](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) – quando definido como *habilitar*, essa regra impede que o Outlook Crie processos filho. Ao bloquear a criação de um processo filho, essa regra protege contra ataques de engenharia social e impede que o código de exploração abusando uma vulnerabilidade no Outlook.  
+  [Regra de redução da superfície de ataque](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) – quando definido como *habilitar*, essa regra impede que o Outlook Crie processos filho. Ao bloquear a criação de um processo filho, essa regra protege contra ataques de engenharia social e impede que o código de exploração abusando uma vulnerabilidade no Outlook.  
 
   **Padrão**: Ativar
 
 - **Criação de conteúdo executável de aplicativos do Office ou tipo de inicialização**  
-  [Regra de redução da superfície de ataque](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) – quando definido como *Bloquear*, os aplicativos do Office não podem criar conteúdo executável. Os aplicativos do Office incluem Word, Excel, PowerPoint, OneNote e Access.  
+  [Regra de redução da superfície de ataque](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) – quando definido como *Bloquear*, os aplicativos do Office não podem criar conteúdo executável. Os aplicativos do Office incluem Word, Excel, PowerPoint, OneNote e Access.  
 
   Essa regra destina-se a comportamentos típicos usados por Complementos suspeitos e mal-intencionados e scripts (extensões) que criam ou iniciam arquivos executáveis. Essa é uma técnica típica de malware. As extensões são impedidas de serem usadas pelos aplicativos do Office. Normalmente, essas extensões usam o Windows Scripting Host (arquivos. WSH) para executar scripts que automatizam determinadas tarefas ou fornecem recursos de complemento criados pelo usuário.
 
@@ -258,7 +258,7 @@ Para obter mais informações, o [BitLocker política de grupo configurações](
 ## <a name="endpoint-detection-and-response"></a>Detecção e resposta de ponto de extremidade  
 Para obter mais informações, consulte [WINDOWSADVANCEDTHREATPROTECTION CSP](https://docs.microsoft.com/windows/client-management/mdm/windowsadvancedthreatprotection-csp) na documentação do Windows.  
 
-- **Agilizar** - a configuração de frequência de relatório de telemetria */TelemetryReportingFrequency*  
+- **Agilize a frequência de relatório de telemetria** - *Configuration/TelemetryReportingFrequency*  
 
   Acelere a frequência de relatórios de telemetria da proteção avançada contra ameaças do Microsoft defender.  
 
@@ -273,7 +273,7 @@ Para obter mais informações, consulte [WINDOWSADVANCEDTHREATPROTECTION CSP](ht
 ## <a name="exploit-protection"></a>Proteção contra Exploit  
 
 - **Exploração de XML de proteção**  
-  Para obter mais informações, consulte [importar, exportar e implantar configurações de proteção de exploração](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/import-export-exploit-protection-emet-xml) na documentação do Windows.  
+  Para obter mais informações, consulte [importar, exportar e implantar configurações de proteção de exploração](/windows/security/threat-protection/microsoft-defender-atp/import-export-exploit-protection-emet-xml) na documentação do Windows.  
 
   Permite que o administrador de ti envie uma configuração que representa o sistema desejado e as opções de mitigação de aplicativo para todos os dispositivos na organização. A configuração é representada por um XML. 
 
@@ -390,7 +390,7 @@ Para obter mais informações, consulte [Policy CSP-defender](https://docs.micro
   **Padrão**: Sim
 
 - **Ação de aplicativo potencialmente indesejado defender**  
-  [Defender/PUAProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-puaprotection) – o Windows Defender antivírus pode identificar e bloquear o download e a instalação de *aplicativos potencialmente* indesejados (puas) em pontos de extremidade em sua rede. 
+  [Defender/PUAProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-puaprotection) – o Windows Defender antivírus pode identificar e bloquear o download e a instalação de *aplicativos potencialmente indesejados* (puas) em pontos de extremidade em sua rede. 
  
   - Quando definido como *Bloquear*, o Windows Defender bloqueia puas e lista-os em histórico junto com outras ameaças.
   - Quando definido como *auditoria*, o Windows Defender detecta o puas, mas não os bloqueia. As informações sobre os aplicativos nos quais o Windows Defender teria feito a ação podem ser encontradas pesquisando eventos que foram criados pelo Windows Defender no Visualizador de Eventos.  
@@ -466,19 +466,19 @@ Para obter mais informações, consulte [Policy CSP-defender](https://docs.micro
 ## <a name="windows-defender-firewall"></a>Firewall do Windows Defender
 Para obter mais informações, consulte [CSP do firewall](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp) na documentação do Windows.
 
-- **Tempo ocioso de associação de segurança antes da exclusão** - *MdmStore/global/SaIdleTime*   
+- **Tempo ocioso de associação de segurança antes da exclusão** - *MdmStore/Global/SaIdleTime*   
   As associações de segurança são excluídas após o tráfego de rede não ser visto para esse número de segundos.  
   **Padrão**: 300
 
-- ProtocoloFTP - *MdmStore/global/DisableStatefulFtp*   
+- **Protocolo FTP** - *MdmStore/Global/DisableStatefulFtp*   
   Bloqueia protocolo FTP com estado (FTP).  
   **Padrão**: Sim
 
--  - Enfileiramento de pacotes*MdmStore/global/EnablePacketQueue*    
+- **Enfileiramento de pacotes** - *MdmStore/Global/EnablePacketQueue*    
   Especifique como o dimensionamento do software no lado de recebimento está habilitado para recebimento criptografado e texto não criptografado para o cenário de gateway de túnel IPsec. Isso garante que a ordem dos pacotes seja preservada.  
   **Padrão**: Padrão do dispositivo
 
-- **Perfil do firewall domínio** - *FirewallRules/FirewallRuleName/perfis*  
+- **Domínio do perfil de Firewall** - *FirewallRules/FirewallRuleName/perfis*  
   Especifica os perfis aos quais a regra pertence: Domínio, privado, público. Esse valor representa o perfil para redes que estão conectadas a domínios.  
 
   Configurações disponíveis:  
@@ -506,7 +506,7 @@ Para obter mais informações, consulte [CSP do firewall](https://docs.microsoft
   - **Regras de política da política de grupo não mesclada**  
     **Padrão**: Sim
 
-- **Perfil do firewall** - -*FirewallRules/FirewallRuleName/perfis* públicos  
+- **Perfil de Firewall @no__t público**-1*FirewallRules/FirewallRuleName/perfis*  
   Especifica os perfis aos quais a regra pertence: Domínio, privado, público. Esse valor representa o perfil para redes públicas. Essas redes são classificadas como públicas pelos administradores no host do servidor. A classificação ocorre na primeira vez que o host se conecta à rede. Normalmente, essas redes estão em aeroportos, cafeterias e outros locais públicos onde os colegas na rede ou o administrador de rede não são confiáveis.  
 
   Configurações disponíveis:
@@ -547,7 +547,7 @@ Para obter mais informações, consulte [CSP do firewall](https://docs.microsoft
   - **Regras de política da política de grupo não mesclada**  
     **Padrão**: Sim  
 
-- **Perfil de firewall** - *FirewallRules/FirewallRuleName/perfis* privados  
+- **Perfil de Firewall @no__t privada**-1*FirewallRules/FirewallRuleName/perfis*  
   Especifica os perfis aos quais a regra pertence: Domínio, privado, público. Esse valor representa o perfil para redes privadas.  
 
   Configurações disponíveis: 
@@ -598,7 +598,7 @@ Para obter mais informações, consulte [CSP do firewall](https://docs.microsoft
 
 Para obter mais informações, consulte [PASSPORTFORWORK CSP](https://docs.microsoft.com/windows/client-management/mdm/passportforwork-csp) na documentação do Windows.
 
-- **Configurar** - o*locatárioid/políticas/UsePassportForWork* do Windows Hello para empresas    
+- **Configurar o Windows Hello para empresas** - *Tenantid/Policies/UsePassportForWork*    
   O Windows Hello para empresas é um método alternativo para entrar no Windows, substituindo senhas, cartões inteligentes e cartões inteligentes virtuais.  
 
   - Quando definido como *Sim*, você habilita essa política e o dispositivo provisiona o Windows Hello para empresas.  
@@ -614,12 +614,12 @@ O Windows Hello para empresas é um método alternativo para entrar no Windows, 
 
   **Padrão**: Sim  
 
-- **Exigir letras minúsculas no PIN** - *tenantid/Policies/PINComplexity/LowercaseLetters*  
+- **Exigir letras minúsculas no PIN** - *Tenantid/Policies/PINComplexity/LowercaseLetters*  
   **Padrão**: Permitido  
 
-- **Exigir caracteres especiais no PIN** - *tenantid/Policies/PINComplexity/SpecialCharacters*  
+- **Exigir caracteres especiais no PIN** - *Tenantid/Policies/PINComplexity/SpecialCharacters*  
   **Padrão**: Permitido  
 
-- **Exigir letras maiúsculas no PIN** - *tenantid/Policies/PINComplexity/UppercaseLetters*   
+- **Exigir letras maiúsculas no PIN** - *Tenantid/Policies/PINComplexity/UppercaseLetters*   
   **Padrão**: Permitido  
 
