@@ -1,6 +1,6 @@
 ---
-title: Políticas de conformidade do dispositivo no Microsoft Intune – Azure | Microsoft Docs
-description: Comece a usar as políticas de conformidade do dispositivo, visão geral dos níveis de status e gravidade, usando o status do InGracePeriod, trabalhando com o acesso condicional, manipulando dispositivos sem uma política atribuída e as diferenças de conformidade no portal do Azure e Portal clássico no Microsoft Intune
+title: Criar políticas de conformidade do dispositivo no Microsoft Intune-Azure | Microsoft Docs
+description: Crie políticas de conformidade do dispositivo, visão geral dos níveis de status e gravidade, usando o status InGracePeriod, trabalhando com o acesso condicional, manipulando dispositivos sem uma política atribuída e as diferenças de conformidade no portal do Azure e no portal clássico no Microsoft Intune
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ffd1e120a364be1ecaa98e01ff71ac723672b546
-ms.sourcegitcommit: a50a1ca123ecc2c5ac129f112f73838748f56476
+ms.openlocfilehash: 0ec8003264c28ea40d53731c8fb8c3eddef7fded
+ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "72237200"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306574"
 ---
 # <a name="create-a-compliance-policy-in-microsoft-intune"></a>Criar uma política de conformidade no Microsoft Intune
 

@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3bf8fd189e50a704e96fc24d0804c5c5d6f91bb4
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 64a560dc79d3c03f52b8e9389c3e47e3e256ee58
+ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71732512"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306674"
 ---
 # <a name="integrate-wandera-mobile-threat-protection-with-intune"></a>Integre a proteção contra ameaças móveis do com o Intune  
 
@@ -28,10 +28,10 @@ Conclua as etapas a seguir para integrar a solução de defesa contra ameaças m
 ## <a name="before-you-begin"></a>Antes de começar  
 
 Antes de iniciar o processo de integração do com o Intune, verifique se você tem os seguintes pré-requisitos em vigor:
-- Subscrição do Microsoft Intune  
-- Credenciais de administrador do Azure Active Directory para conceder as seguintes permissões:  
-  - Iniciar sessão e ler o perfil de utilizador  
-  - Aceder ao diretório como o utilizador com sessão iniciada  
+- Assinatura Microsoft Intune  
+- Azure Active Directory credenciais de administrador para conceder as seguintes permissões:  
+  - Entrar e ler o perfil do usuário  
+  - Acessar o diretório como o usuário conectado  
   - Ler dados do diretório  
   - Enviar informações do dispositivo para o Intune  
 
@@ -72,7 +72,7 @@ A instalação do *EMM Connect* para o backr requer um processo de configuraçã
 
 7. No console de RADAR, copie o nome do grupo **SyncOnly** que aparece abaixo do **EMM Label**. Você usará esse nome para configurar um grupo no Intune para sincronização com o.
 
-   ![Integrações e permissões](./media/wandera-mtd-connector-integration/sync-group-name.png) 
+   ![Grupo de sincronização](./media/wandera-mtd-connector-integration/sync-group-name.png) 
 
 8. Retorne ao console do [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) e edite o conector do MTD. Defina as alternâncias disponíveis como **ativado**e **salve** a configuração.  
 
@@ -98,8 +98,8 @@ Depois de criar os aplicativos, retorne aqui para criar o grupo de sincronizaç�
 1. Obtenha o nome do grupo **SyncOnly** que aparece abaixo do **rótulo EMM** de dentro do console de radar do backit. Você pode ter salvo esse nome durante a etapa 7 enquanto [habilita o suporte para](#enable-support-for-wandera-in-intune)o no Intune. Use esse nome como o nome do grupo no Intune para sincronização de innovat.  
 
 2. No console do Intune, vá para **grupos** e selecione **novo grupo**. Especifique o seguinte para configurar o grupo de sincronização para uso pelo:
-   - **Tipo de grupo**: **Segurança**
-   - **Nome do grupo**: Especifique o nome do **SyncOnly** que você recuperou do console de administração de radar do backit.
+   - **Tipo de grupo**: **segurança**
+   - **Nome do grupo**: especifique o nome do **SyncOnly** que você recuperou do console de administração de radar do backit.
 
    ![configurar o grupo de sincronização](./media/wandera-mtd-connector-integration/configure-sync-group.png)
 

@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8b41405e2256d6d2608b05a9c7e8a40cbb3ab349
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 0d4bf6a52fd860695433e0020e9ec7390f98eca6
+ms.sourcegitcommit: 45d7c76e760c5117bf134fb57f7e248e5b6c4ad5
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71730948"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72314643"
 ---
 # <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Use os modelos do Windows 10 para definir as configurações de política de grupo no Microsoft Intune
 
@@ -38,25 +38,25 @@ Este artigo lista as etapas para criar um modelo para dispositivos Windows 10 e 
 
 - Algumas dessas configurações estão disponíveis a partir do Windows 10 versão 1703 (RS2). Algumas configurações não estão incluídas em todas as edições do Windows. Para obter a melhor experiência, é recomendável usar o Windows 10 Enterprise versão 1903 (19H1) e mais recente.
 
-- As configurações do Windows usam [CSPs da política do Windows](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies). Os CSPs funcionam em diferentes edições do Windows, como Home, Professional, Enterprise e assim por diante. Para ver se um CSP funciona em uma edição específica, vá para [CSPs da política do Windows](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies).
+- As configurações do Windows usam [CSPs da política do Windows](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#policies-supported-by-group-policy-and-admx-backed-policies). Os CSPs funcionam em diferentes edições do Windows, como Home, Professional, Enterprise e assim por diante. Para ver se um CSP funciona em uma edição específica, vá para [CSPs da política do Windows](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#policies-supported-by-group-policy-and-admx-backed-policies).
 
 ## <a name="create-a-template"></a>Criar um modelo
 
 1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selecione **Configuração do dispositivo** > **Perfis** > **Criar perfil**.
-3. Introduza as seguintes propriedades:
+2. Selecione **configuração do dispositivo** > **perfis** > **Criar perfil**.
+3. Insira as seguintes propriedades:
 
     - **Nome**: Insira um nome para o perfil.
-    - **Descrição**: introduza uma descrição para o perfil. Esta definição é opcional, mas recomendada.
-    - **Plataforma**: Selecione **Windows 10 e posterior**.
-    - **Tipo de perfil**: Selecione **modelos administrativos**.
+    - **Descrição**: Insira uma descrição para o perfil. Essa configuração é opcional, mas recomendada.
+    - **Plataforma**: selecione **Windows 10 e posterior**.
+    - **Tipo de perfil**: selecione **modelos administrativos**.
 
 4. Selecione **Criar**. Na nova janela, selecione **configurações**. Todas as configurações são listadas e você pode usar as setas antes e próximo para ver mais configurações:
 
     ![Veja um exemplo de lista de configurações e use os botões anterior e próximo](./media/administrative-templates-windows/administrative-templates-sample-settings-list.png)
 
     > [!TIP]
-    > As configurações do Windows no Intune correlacionam-se ao caminho da política de grupo local que você`gpedit`vê no editor de política de grupo local ().
+    > As configurações do Windows no Intune correlacionam-se ao caminho da política de grupo local que você vê no Editor de Política de Grupo Local (`gpedit`).
 
 5. Por padrão, a lista suspensa mostra **todos os produtos**. Na lista, você também pode filtrar as configurações para mostrar apenas as configurações do **Windows** , mostrar apenas as configurações **do Office** , ou mostrar apenas as configurações de **borda versão 77 ou posteriores** :
 
@@ -71,9 +71,9 @@ Este artigo lista as etapas para criar um modelo para dispositivos Windows 10 e 
     > - Windows 10 19H1 e mais recente com [KB 4512941](https://support.microsoft.com/kb/4512941) instalado
 
 6. Selecione qualquer configuração. Por exemplo, filtre no **Office**e selecione **Ativar navegação restrita**. Uma descrição detalhada da configuração é mostrada. Escolha **habilitado**, **desabilitado**ou deixe a configuração como **não configurado** (padrão). A descrição detalhada também explica o que acontece quando você escolhe **habilitado**, **desabilitado**ou **não configurado**.
-7. Selecione **OK** para guardar as alterações.
+7. Selecione **OK** para salvar as alterações.
 
-Continue a percorrer a lista de configurações e defina as configurações desejadas em seu ambiente. Aqui estão alguns exemplos:
+Continue a percorrer a lista de configurações e defina as configurações desejadas em seu ambiente. Eis alguns exemplos:
 
 - Use a configuração de **configurações de notificação de macro do VBA** para lidar com macros do VBA em diferentes programas de Microsoft Office, incluindo o Word e o Excel.
 - Use a configuração **permitir downloads de arquivos** para permitir ou impedir downloads do Internet Explorer.
@@ -87,15 +87,15 @@ Continue a percorrer a lista de configurações e defina as configurações dese
 
 Há centenas de configurações disponíveis nesses modelos. Para facilitar a localização de configurações específicas, use os recursos internos:
 
-- Em seu modelo, selecione as colunas **configurações**, **estado**, **tipo de configuração**ou **caminho** para classificar a lista. Por exemplo, selecione a coluna **caminho** para ver todas as configurações no `Microsoft Excel` caminho:
+- Em seu modelo, selecione as colunas **configurações**, **estado**, **tipo de configuração**ou **caminho** para classificar a lista. Por exemplo, selecione a coluna **caminho** para ver todas as configurações no caminho `Microsoft Excel`:
 
   ![Clique em caminho para mostrar todas as configurações agrupadas pela política de grupo ou caminho ADMX em modelos administrativos no Intune](./media/administrative-templates-windows/path-filter-shows-excel-options.png)
 
-- Em seu modelo, use a caixa de **pesquisa** para localizar configurações específicas. Você pode pesquisar definindo o título ou o caminho. Por exemplo, pesquise por `copy`. Todas as configurações com `copy` são mostradas:
+- Em seu modelo, use a caixa de **pesquisa** para localizar configurações específicas. Você pode pesquisar definindo o título ou o caminho. Por exemplo, pesquise `copy`. Todas as configurações com `copy` são mostradas:
 
   ![Procurar cópia para mostrar todas as configurações do Windows e do Office em modelos administrativos no Intune](./media/administrative-templates-windows/search-copy-settings.png) 
 
-  Em outro exemplo, pesquise `microsoft word`. Você verá todas as configurações que pode definir para o programa Microsoft Word. `explorer` Procure para ver todas as configurações do Internet Explorer que você pode adicionar ao seu modelo.
+  Em outro exemplo, pesquise `microsoft word`. Você verá todas as configurações que pode definir para o programa Microsoft Word. Pesquise `explorer` para ver todas as configurações do Internet Explorer que você pode adicionar ao seu modelo.
 
 ## <a name="next-steps"></a>Passos seguintes
 

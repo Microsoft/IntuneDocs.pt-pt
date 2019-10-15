@@ -1,6 +1,7 @@
 ---
-title: Auditar, exportar ou eliminar dados pessoais
-description: Saiba como auditar, exportar ou eliminar dados pessoais.
+title: Auditar, exportar ou excluir dados pessoais
+titleSuffix: Microsoft Intune
+description: Saiba como auditar, exportar ou excluir dados pessoais.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -16,73 +17,73 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1fb30e8e07d71b72e337a8c2b27b3ed751c9d03e
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 74428abf8141c648b5b81bba3177cc89a3cb01d2
+ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71729544"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306812"
 ---
-# <a name="audit-export-or-delete-personal-data-in-intune"></a>Auditar, exportar ou eliminar dados pessoais no Intune
+# <a name="audit-export-or-delete-personal-data-in-intune"></a>Auditar, exportar ou excluir dados pessoais no Intune
 
-Os administradores do Intune podem utilizar os registos de auditoria para controlar atividades relacionadas com os dados pessoais. Também podem exportar e eliminar dados pessoais.
+Os administradores do Intune podem usar logs de auditoria para controlar atividades em torno de dados pessoais. Os administradores também podem exportar e excluir dados pessoais.
 
 [!INCLUDE [GDPR-related guidance](../includes/gdpr-intro-sentence.md)]
 
 ## <a name="audit-personal-data"></a>Auditar dados pessoais
 
-Os registos de auditoria proporcionam aos administradores de inquilinos um registo das atividades que geram uma alteração no Microsoft Intune. Os registos de auditoria estão disponíveis para muitas atividades de gestão e, normalmente, criam, atualizam (editam), eliminam e atribuem ações. Também podem ser revistas tarefas remotas que geram eventos de auditoria. Estes registos de auditoria poderão conter dados pessoais de utilizadores cujos dispositivos estão inscritos no Intune.  
+Os logs de auditoria fornecem aos administradores de locatários um registro de atividades que geram uma alteração no Microsoft Intune. Os logs de auditoria estão disponíveis para muitas atividades de gerenciamento e normalmente criam, atualizam (editam), excluem e atribuem ações. Tarefas remotas que geram eventos de auditoria também podem ser revisadas. Esses logs de auditoria podem conter dados pessoais de usuários cujos dispositivos estão registrados no Intune.  
 
-Por motivos de segurança, o Intune poderá manter os registos de auditoria das ações do utilizador e do dispositivo durante um ano. Estes registos são eliminados automaticamente após o período de retenção de um ano.
+Para fins de segurança, o Intune pode manter logs de auditoria para ações de usuário e dispositivo por um período de um ano. Esses logs são excluídos automaticamente após o período de retenção de um ano.
 
-Para rever os registos de auditoria, veja [Registos de auditoria das atividades do Intune](../fundamentals/monitor-audit-logs.md). 
+Para examinar os logs de auditoria, consulte [logs de auditoria para atividades do Intune](../fundamentals/monitor-audit-logs.md). 
 
-Os administradores não podem eliminar os registos de auditoria.
+Os administradores não podem excluir os logs de auditoria.
 
-Estes eventos de auditoria são retidos durante um ano. Os administradores de inquilinos podem solicitar os registos de auditoria através [deste formulário de pedido de suporte](https://privacy.microsoft.com/en-US/privacy-questions?).
+Esses eventos de auditoria são mantidos por um ano. Os administradores de locatários podem solicitar logs de auditoria usando [esse formulário de solicitação de suporte](https://privacy.microsoft.com/en-US/privacy-questions?).
 
 ## <a name="export-personal-data"></a>Exportar dados pessoais
 
-Os administradores podem exportar dados pessoais do utilizador final, incluindo contas, dados do serviço e registos associados, para cumprir as exigências associadas aos Direitos do Titular dos Dados. A decisão de fornecer ou não uma cópia dos dados pessoais ao titular dos dados é sua e da sua organização ou se tiver um motivo profissional legítimo para reter os dados. Se optar por fornecê-los, pode disponibilizar uma cópia do documento, uma versão não confidencial adequada ou uma captura de ecrã das partes que considera adequadas para partilhar.
+Os administradores podem exportar dados pessoais do usuário final, incluindo contas, dados de serviço e logs associados para atender a solicitações de direitos de entidade de dados. Cabe a você e à sua organização decidir se deseja ou não fornecer a entidade de dados com uma cópia dos dados pessoais ou se você tem um motivo comercial legítimo para retenções. Se você optar por fornecê-lo, poderá fornecê-los com uma cópia do documento real, uma versão corretamente redigida ou uma captura de tela das partes que você considerou que precisa compartilhar.
 
-Para exportar os dados pessoais de um utilizador, pode utilizar: 
-- o painel Dispositivo de MDM do Intune para exportar uma lista de dispositivos. Também pode copiar diretamente dados do dispositivo.
-- o [Export-IntuneData.ps1 script](https://aka.ms/intunedataexport).
+Para exportar dados pessoais de um usuário, você pode usar: 
+- a folha do dispositivo MDM do Intune para exportar uma lista de dispositivos. Você também pode copiar os dados do dispositivo diretamente.
+- o [script Export-IntuneData. ps1](https://aka.ms/intunedataexport).
 
-## <a name="delete-end-user-personal-data"></a>Eliminar dados pessoais do utilizador final
+## <a name="delete-end-user-personal-data"></a>Excluir dados pessoais do usuário final
 
-Existem três formas de remover os dados pessoais da gestão do Intune:
-- Eliminar o utilizador do Azure Active Directory
-- Repor as predefinições de fábrica do dispositivo
-- Remoção automática por parte do utilizador
+Há três maneiras de remover dados pessoais do gerenciamento do Intune:
+- Excluir o usuário do Azure Active Directory
+- Redefinir o dispositivo para as configurações de fábrica
+- Remoção automática do usuário
 
-### <a name="delete-a-user-from-intune"></a>Eliminar um utilizador do Intune
+### <a name="delete-a-user-from-intune"></a>Excluir um usuário do Intune
 
-Para eliminar os dados pessoais de um utilizador final do Intune, o administrador tem de [eliminar o utilizador do Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory#delete-a-user). Quando o utilizador é eliminado do AAD (eliminado definitivamente), o Intune recebe o sinal de eliminação do AAD e, em seguida, inicia automaticamente a remoção de todos os dados pessoais desse utilizador do serviço do Intune. As informações do utilizador serão eliminadas do serviço do Intune no prazo de 30 dias após a ação de remoção.
+Para excluir os dados pessoais de um usuário final do Intune, um administrador deve [excluir o usuário do Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory#delete-a-user). Quando o usuário é excluído do AAD (com exclusão complexa), o Intune recebe o sinal de exclusão do AAD e, em seguida, começa automaticamente a limpar todos os dados pessoais do usuário do serviço do Intune. As informações do usuário serão excluídas do serviço do Intune dentro de 30 dias após a ação de remoção.
 
-### <a name="reset-device-to-factory-settings"></a>Repor as predefinições de fábrica do dispositivo
-A reposição das predefinições de fábrica restaura todas as definições e dados pessoais empresariais para as predefinições de fábrica. Isto é útil quando se fornece um dispositivo a outro colaborador. São removidos ficheiros do utilizador, aplicações instaladas pelo utilizador e definições não predefinidas. Estes dados são eliminados do serviço do Intune no prazo de 30 dias após a ação de remoção.
+### <a name="reset-device-to-factory-settings"></a>Redefinir o dispositivo para as configurações de fábrica
+Redefinir para as configurações de fábrica restaura todas as configurações e dados pessoais e da empresa para as configurações de fábrica originais. É útil para fornecer um dispositivo para o próximo funcionário. Os arquivos do usuário, os aplicativos instalados pelo usuário e as configurações não padrão são removidos e esses dados são excluídos do serviço do Intune dentro de 30 dias após a ação de remoção.
 
-### <a name="user-self-removal-from-intune-management"></a>Remoção automática da gestão do Intune por parte do utilizador
-Os utilizadores podem remover os respetivos dispositivos pessoais [Android, Apple ou Windows](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-android) da gestão do Intune sem assistência administrativa.   
+### <a name="user-self-removal-from-intune-management"></a>Remoção automática do usuário do gerenciamento do Intune
+Os usuários podem remover seu dispositivo pessoal do [Android, Apple ou Windows](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-android) do gerenciamento do Intune sem assistência de administrador.   
 
-### <a name="retire"></a>Extinguir
-A ação **Extinguir** remove dados aprovisionados do Intune, tais como aplicações da empresa, dados sobre aplicações geridas pelo Intune, definições de política e perfis de e-mail aprovisionados através do Intune. Esta ação mantém os dados pessoais do utilizador no dispositivo.
+### <a name="retire"></a>Desativar
+A ação **desativar** remove dados provisionados pelo Intune, como aplicativos da empresa, dados sobre aplicativos que o Intune está gerenciando, configurações de política e perfis de email que são provisionados por meio do Intune. Essa ação deixa os dados pessoais do usuário no dispositivo.
 
-### <a name="delete-a-tenant-from-microsoft-intune"></a>Eliminar um inquilino do Microsoft Intune
+### <a name="delete-a-tenant-from-microsoft-intune"></a>Excluir um locatário de Microsoft Intune
 
-Se um cliente inquilino do Intune cancelar a respetiva conta do Intune, todos os dados do inquilino são eliminados no prazo de 180 dias após o cliente fechar a conta do Intune. Se o inquilino do AAD estiver associado a outras subscrições do Microsoft Enterprise (Azure, Office 365), são eliminados apenas os Dados de Cliente do Intune. Mantém-se o recurso de inquilino do AAD para ser utilizado pelas outras subscrições. Se a conta do Intune for a única subscrição associada ao inquilino do AAD, o inquilino será eliminado, bem como todos os recursos e Dados do Cliente.
+Se um cliente de locatário do Intune cancelar sua conta do Intune, todos os dados de locatário serão excluídos dentro de 180 dias depois que o cliente fechar a conta do Intune. Se o locatário do AAD estiver associado a outras assinaturas corporativas da Microsoft (Azure, Office 365), somente os dados do cliente do Intune serão excluídos. O recurso de locatário do AAD é mantido para ser usado pelas outras assinaturas. Se a conta do Intune for a única assinatura associada ao locatário do AAD, o locatário será excluído e todos os recursos e dados do cliente também serão excluídos.
 
-### <a name="delete-a-user-in-a-hybrid-mobile-device-management-mdm-environment"></a>Eliminar um utilizador num ambiente híbrido de Gestão de Dispositivos Móveis (MDM)
-Quando tiver um ambiente híbrido de MDM (Intune integrado com o Configuration Manager), tem de concluir as seguintes ações (por ordem) para eliminar totalmente um utilizador e removê-lo completamente do seu Active Directory local, do Configuration Manager e do Intune.
+### <a name="delete-a-user-in-a-hybrid-mobile-device-management-mdm-environment"></a>Excluir um usuário em um ambiente de MDM (gerenciamento de dispositivo móvel) híbrido
+Quando você tem um ambiente de MDM híbrido (o Intune integrado com o Configuration Manager), você deve concluir as seguintes ações (em ordem) para excluir completamente um usuário e removê-los completamente do seu Active Directory local, Configuration Manager e Intune.
 
-1. Elimine o utilizador do seu Active Directory (AD) local. Isto impedirá a sincronização do utilizador com o Azure Active Directory e a deteção deste pelo Configuration Manager. 
-2. Elimine o utilizador da consola do Configuration Manager para remover o utilizador e os dados associados do Configuration Manager. Na consola, aceda a **Ativos e Conformidade** > **Utilizadores**, clique com o botão direito no utilizador a eliminar e clique em **Eliminar**.
-3. [Eliminar o utilizador do AAD](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory#delete-a-user) remove o utilizador e os dados associados do Azure Active Directory e do Intune ao mesmo tempo. Quando o utilizador é eliminado do AAD (eliminado definitivamente), o Intune recebe o sinal de eliminação do AAD e, em seguida, inicia automaticamente a remoção de todos os dados pessoais desse utilizador do serviço do Intune. As informações do utilizador serão eliminadas do serviço do Intune no prazo de 30 dias após a ação de remoção.
+1. Exclua o usuário do seu Active Directory local (AD). Isso impedirá que o usuário seja sincronizado com o Azure AD e também descoberto pela descoberta de Configuration Manager. 
+2. Exclua o usuário do console de Configuration Manager para remover o usuário e os dados associados do Configuration Manager. No console do, acesse **ativo e conformidade** > **usuários**, clique com o botão direito do mouse no usuário a ser excluído e clique em **excluir**.
+3. [Exclua o usuário do AAD](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory#delete-a-user), que remove o usuário e os dados associados do Azure Active Directory e do Intune ao mesmo tempo. Quando o usuário é excluído do AAD (com exclusão complexa), o Intune recebe o sinal de exclusão do AAD e, em seguida, começa automaticamente a limpar todos os dados pessoais do usuário do serviço do Intune. As informações do usuário serão excluídas do serviço do Intune dentro de 30 dias após a ação de remoção.
 
 > [!Important]
->A inclusão de novos clientes da MDM híbrida foi preterida. Para obter mais informações, veja a mensagem de blogue [Move from Hybrid Mobile Device Management to Intune on Azure](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150) (Mudar da Gestão de Dispositivos Móveis Híbrida para o Intune no Azure).
+>A integração de novos clientes híbridos do MDM foi preterida. Para obter mais informações, consulte a postagem [do blog mover do gerenciamento de dispositivo móvel híbrido para o Intune no Azure](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150) .
 
 ## <a name="next-steps"></a>Passos seguintes
 
-Saiba como [auditar, exportar ou eliminar](privacy-data-audit-export-delete.md) dados pessoais no Intune.
+Descubra como [auditar, exportar ou excluir](privacy-data-audit-export-delete.md) dados pessoais no Intune.

@@ -1,6 +1,7 @@
 ---
-title: Partilha e segurança de dados no Intune
-description: Saiba como os dados pessoais são protegidos e partilhados no Intune.
+title: Segurança e compartilhamento de dados no Intune
+titleSuffix: Microsoft Intune
+description: Saiba como os dados pessoais são protegidos e compartilhados no Intune.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -16,63 +17,63 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 631d76aca2c393be3c81cb8b6f532605664f4ce4
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 53480b7a2e008af46f4f8929cc6321e10b042b33
+ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71729528"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306753"
 ---
-# <a name="data-security-and-sharing-in-intune"></a>Partilha e segurança de dados no Intune
+# <a name="data-security-and-sharing-in-intune"></a>Segurança e compartilhamento de dados no Intune
 
 
-## <a name="data-security"></a>Segurança de dados
+## <a name="data-security"></a>Segurança dos dados
 
-O Microsoft Intune é um componente fundamental da oferta do serviço Microsoft Enterprise Mobility and Security Suite. Para apoiar a [estratégia de governação de dados](https://www.microsoft.com/en-us/TrustCenter/Security/default.aspx), todos os serviços cloud da Microsoft são desenvolvidos com metodologias de [Privacidade da Microsoft](https://www.microsoft.com/en-us/trustcenter/privacy) e de [Segurança da Microsoft](https://www.microsoft.com/en-us/trustcenter/security/).  
+Microsoft Intune é um componente fundamental da oferta de serviço de nuvem do Microsoft Enterprise Mobility e Security Suite. Para dar suporte à [estratégia de governança de dados](https://www.microsoft.com/en-us/TrustCenter/Security/default.aspx), todos os serviços de nuvem da Microsoft são desenvolvidos com as metodologias de [privacidade](https://www.microsoft.com/en-us/trustcenter/privacy) e [segurança](https://www.microsoft.com/en-us/trustcenter/security/) da Microsoft.  
 
-O Microsoft Intune segue as mesmas medidas técnicas e organizacionais que as equipas de serviço do Microsoft Azure tomam para a proteção contra processos de falha de segurança de dados.
+Microsoft Intune segue as mesmas medidas técnicas e organizacionais que as equipes de serviço Microsoft Azure usam para proteger contra processos de violação de dados.
 
-Para obter mais informações, veja o [Portal de Confiança do Serviço](https://www.microsoft.com/en-us/TrustCenter/stp).
+Para obter mais informações, consulte o [portal de confiança do serviço](https://www.microsoft.com/en-us/TrustCenter/stp).
 
-O Intune recorre a técnicas de minimização de dados, tais como
+O Intune usa técnicas de minimização de dados, como
 
-- agregação
-- recolha de dados opcional para algumas funcionalidades
-- dados menos precisos ou sensíveis
+- Aggregation
+- coleta de dados opcional para alguns recursos
+- dados feitos menos precisos ou confidenciais
 
-O Intune recorre também a técnicas, tais como o RBAC e a segurança JiT em caso de incidentes de suporte, para garantir a Proteção de Dados por Defeito. 
+O Intune também usa técnicas como RBAC e segurança JiT para incidentes de suporte para garantir a proteção de dados por padrão. 
 
-### <a name="data-breach-reporting"></a>Relatórios de falha de segurança de dados
+### <a name="data-breach-reporting"></a>Relatório de violação de dados
 
-Quando é identificado um Incidente de Segurança Comunicável pelo Cliente (CRSI), os clientes são notificados. Este processo envolve a colaboração com a equipa do Microsoft Office 365 para comunicar a notificação da falha de segurança a todos os clientes do Microsoft Office 365 que utilizam o Intune.
+Quando um incidente de segurança reportable do cliente (CRSI) é identificado, os clientes são notificados. Esse processo inclui o trabalho com a equipe do Microsoft O365 para comunicar notificações de violação para quaisquer clientes do Microsoft O365 usando o Intune.
 
-## <a name="data-sharing"></a>Partilha de dados
+## <a name="data-sharing"></a>Compartilhamento de dados
 
-Quando os administradores de inquilinos ativam determinadas funcionalidades, por exemplo, o Programa de Registo de Aparelho Apple, o Microsoft Intune obtém o consentimento do administrador para partilhar dados com terceiros adequados. Nestes casos, o Intune poderá partilhar dados pessoais com:
+Quando os administradores de locatários ativam determinadas funcionalidades (como a Apple Programa de registro de dispositivos), Microsoft Intune Obtém o consentimento do administrador para compartilhar dados com as terceiras partes apropriadas. Nesses casos, o Intune pode compartilhar dados pessoais com:
 
-- Terceiros que atuem como agentes da Microsoft.
-- Terceiros que não atuem como agentes da Microsoft, mas apenas quando os administradores de inquilinos concederem explicitamente permissão ao Intune para o fazer.
+- Terceiros atuando como agentes da Microsoft.
+- Terceiros que não atuam como agentes da Microsoft, mas somente quando os administradores de locatários concedem explicitamente permissão do Intune para fazer isso.
 
-Os terceiros que atuem como agentes da Microsoft estão incluídos na [lista de Subcontratantes dos Serviços Online](https://aka.ms/Online_Serv_Subcontractor_List).
+Todas as terceiros que atuam como agentes da Microsoft são incluídas na [lista subcontratados dos serviços online](https://aka.ms/Online_Serv_Subcontractor_List).
 
-Os dados são partilhados com estas entidades para ajudar o cliente e o suporte técnico, a manutenção do serviço e outras operações.
+O compartilhamento de dados com essas entidades é feito para auxiliar o cliente e o suporte técnico, manutenção do serviço e outras operações.
 
-Os dados pessoais constantes no Intune mantidos em serviços de terceiros são regidos por um contrato de inquilino com terceiros. Este contrato também permite que o Intune transmita os dados para os serviços de terceiros.  
+O contrato de um locatário com o terceiro rege os dados pessoais do Intune mantidos no serviço de terceiros. Ele também concede ao Intune a permissão para transmitir dados para o serviço de terceiros.  
 
-Para obter informações sobre os dados partilhados com alguns terceiros, veja os seguintes artigos:
-- [Dados que o Intune envia para a Apple](data-intune-sends-to-apple.md)
-- [Dados que o Intune envia para a Google](data-intune-sends-to-google.md)
-- [Dados que a Apple envia para o Intune](data-apple-sends-to-intune.md)
-- [Dados que a Google envia para o Intune](data-google-sends-to-intune.md)
+Para obter informações sobre os dados compartilhados com certos terceiros, consulte os seguintes artigos:
+- [Dados enviados pelo Intune à Apple](data-intune-sends-to-apple.md)
+- [Dados enviados pelo Intune ao Google](data-intune-sends-to-google.md)
+- [Dados enviados pela Apple ao Intune](data-apple-sends-to-intune.md)
+- [Dados enviados pelo Google ao Intune](data-google-sends-to-intune.md)
 - [O data JAMF pro envia ao Intune](data-jamf-sends-to-intune.md)
 
-### <a name="system-center-configuration-manager-data-sharing"></a>Partilha de dados do System Center Configuration Manager
+### <a name="system-center-configuration-manager-data-sharing"></a>Compartilhamento de dados System Center Configuration Manager
 
-O Microsoft Intune não partilha dados com o System Center Configuration Manager. O System Center Configuration Manager é um produto implementado, gerido e operado no local diretamente pelo cliente. Os diagnósticos e dados de utilização recolhidos pelo Configuration Manager destinam-se apenas a melhorar a experiência de instalação, qualidade e segurança de versões futuras.
+Microsoft Intune não compartilha nenhum dado com o System Center Configuration Manager. System Center Configuration Manager é um produto local implantado, gerenciado e operado diretamente pelo cliente. Os dados de diagnóstico e de uso coletados pelo Configuration Manager são apenas para melhorar a experiência de instalação, a qualidade e a segurança de versões futuras.
 
-Para saber mais, veja [Diagnósticos e dados de utilização do SCCM](https://docs.microsoft.com/sccm/core/plan-design/diagnostics/diagnostics-and-usage-data). 
+Para saber mais, consulte [dados de diagnóstico e de uso para o SCCM](https://docs.microsoft.com/sccm/core/plan-design/diagnostics/diagnostics-and-usage-data). 
 
 
 ## <a name="next-steps"></a>Passos seguintes
 
-Saiba como [ver e corrigir](privacy-data-view-correct.md) dados pessoais no Intune.
+Descubra como [Exibir e corrigir](privacy-data-view-correct.md) dados pessoais no Intune.

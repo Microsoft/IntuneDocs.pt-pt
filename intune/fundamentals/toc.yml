@@ -6,8 +6,9 @@
     - name: Descrição geral do Microsoft Intune
       href: what-is-intune.md
       displayName: ems; emm; azure ad; active directory; ad
-    - name: O que pode o Intune fazer pela minha empresa?
-      href: get-started-evaluation.md
+    - name: Device management overview (Descrição geral da gestão de dispositivos)
+      href: what-is-device-management.md
+      displayName: teamviewer
     - name: Novidades
       href: whats-new.md
       items:
@@ -32,9 +33,6 @@
       href: tutorial-walkthrough-intune-portal.md
 - name: Conceitos
   items:
-    - name: O que é a gestão de dispositivos?
-      href: what-is-device-management.md
-      displayName: teamviewer
     - name: O que é o Intune for Education?
       href: introduction-intune-education.md
     - name: Arquitetura geral

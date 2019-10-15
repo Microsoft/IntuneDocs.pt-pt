@@ -1,5 +1,6 @@
 ---
 title: Armazenamento e processamento de dados no Intune
+titleSuffix: Microsoft Intune
 description: Saiba como os dados pessoais são armazenados e processados no Intune.
 keywords: ''
 author: ErikjeMS
@@ -16,30 +17,30 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b2947969c1c07d595a0a5baa48be11ba7a941424
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 9c9a8bd5888ab0977d1ca553d059c1e96cccda75
+ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71731996"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306895"
 ---
 # <a name="data-storage-and-processing-in-intune"></a>Armazenamento e processamento de dados no Intune
 
-Depois de o Intune [recolher os dados](privacy-data-collect.md), o armazenamento e processamento desses dados são feitos da forma descrita abaixo.
+Depois que [o Intune coleta os dados, o](privacy-data-collect.md)armazenamento e o processamento desses dados prosseguem conforme detalhado abaixo.
 
-## <a name="storing-personal-data"></a>Armazenamento de dados pessoais
+## <a name="storing-personal-data"></a>Armazenando dados pessoais
 
-Todos os dados recolhidos que não sejam telemétricos são processados através do serviço do Intune e armazenados em uma ou mais das localizações de armazenamento seguintes: 
+Todos os dados não telemétricos coletados são processados por meio do serviço do Intune e são armazenados em um ou mais dos seguintes locais de armazenamento: 
 
 - SQLAzure 
-- Coleções Fiáveis (Service Fabric)  
-- Armazenamento do Azure 
+- Coleções confiáveis (Service Fabric)  
+- Storage do Azure 
 
-A telemetria (registos de serviço, registos de desempenho, erros, etc.) que é essencial para a monitorização e o fornecimento de um serviço estável é enviada para os arquivos de dados telemétricos da Microsoft.
+A telemetria (logs de serviço, logs de desempenho, erros etc.) que são fundamentais para monitorar e fornecer um serviço estável são enviadas para armazenamentos de dados de telemetria da Microsoft.
 
-### <a name="storage-locations"></a>Localizações de armazenamento
+### <a name="storage-locations"></a>Locais de armazenamento
 
-A Microsoft disponibiliza e opera serviços do Intune em muitas regiões do mundo. O Intune respeita as escolhas do administrador quanto à localização de armazenamento dos Dados do Cliente.
+A Microsoft oferece e opera serviços do Intune em muitas regiões em todo o mundo. O Intune respeita as eleições de local de armazenamento feitas pelo administrador para dados do cliente.
 
 Para obter mais informações, consulte [onde os dados estão localizados?](https://www.microsoft.com/trust-center/privacy/data-location)
 
@@ -49,25 +50,25 @@ Em geral, os dados pessoais são retidos pelo Intune até 30 dias depois que o u
 
 Os dados de telemetria coletados como parte do uso do Intune são mantidos por um máximo de 30 dias.
 
-Os registos de auditoria são retidos por um período máximo de um ano.
+Os logs de auditoria são mantidos por até um ano.
 
-## <a name="processing-personal-data"></a>Processamento de dados pessoais
+## <a name="processing-personal-data"></a>Processando dados pessoais
 
-O Intune processa os dados pessoais através de sistemas com certificação ISO. Para obter mais informações, veja o [Portal de Confiança do Serviço](https://www.microsoft.com/en-us/TrustCenter/stp).
+O Intune processa dados pessoais com sistemas de certificação ISO. Para obter mais informações, consulte o [portal de confiança do serviço](https://www.microsoft.com/en-us/TrustCenter/stp).
 
-### <a name="profiling-and-marketing"></a>Criação de perfis e marketing
+### <a name="profiling-and-marketing"></a>Criação de perfil e marketing
 
-O Microsoft Intune não utiliza os dados pessoais recolhidos como parte do fornecimento do serviço para efeitos de criação de perfis ou marketing. 
+Microsoft Intune não usa nenhum dado pessoal coletado como parte do fornecimento do serviço para fins de criação de perfil ou marketing. 
 
-### <a name="restrict-processing-of-personal-data"></a>Restrição do processamento de dados pessoais
+### <a name="restrict-processing-of-personal-data"></a>Restringir o processamento de dados pessoais
 
-Para restringir o processamento de dados pessoais do utilizador, pode eliminar a conta do utilizador ao:
-1. Exportar uma cópia eletrónica dos dados pessoais do utilizador, incluindo
-    - contas
-    - dados do serviço
-    - registos associados
-2. Eliminar a conta do utilizador e os dados associados do Intune.
+Para restringir o processamento dos dados pessoais de um usuário, você pode excluir a conta de usuários:
+1. Exportar uma cópia eletrônica dos dados pessoais do usuário, incluindo
+    - accounts
+    - dados de serviço
+    - logs associados
+2. Excluindo a conta do usuário e os dados associados do Intune.
 
 ## <a name="next-steps"></a>Passos seguintes
 
-Saiba mais sobre como o Intune [protege e partilha](privacy-data-secure-share.md) dados pessoais. 
+Saiba mais sobre como o Intune [protege e compartilha](privacy-data-secure-share.md) dados pessoais. 

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 14da6274546cbd4c1867975c08c60ece313714b1
-ms.sourcegitcommit: 78f9750712c254d8b123ef15b74f30ca999aa128
+ms.openlocfilehash: 2d31df7ba639f703c89345440b737c990949ccc9
+ms.sourcegitcommit: a2654f3642b43b29ab0e1cbb2dfa2b56aae18d0e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "71917987"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72310888"
 ---
 # <a name="resolve-common-problems-with-the-intune-exchange-connector"></a>Resolver problemas comuns com o Intune Exchange Connector
  
@@ -35,7 +35,7 @@ Quando um dispositivo do Exchange ActiveSync não for descoberto do Exchange, [m
 
 - Verifique se os usuários têm uma licença do Intune. Caso contrário, o Exchange Connector não descobrirá seus dispositivos.  
 
-- Se o endereço SMTP primário do usuário for diferente do nome principal do usuário (UPN) no Azure Active Directory (Azure AD), o Exchange Connector não descobrirá nenhum dispositivo para esse usuário. Corrija o endereço SMTP principal para resolver o problema.  
+- Se o endereço SMTP primário do usuário for diferente do nome principal do usuário (UPN) no Azure Active Directory (Azure AD), o Exchange Connector não descobrirá nenhum dispositivo para esse usuário. Corrija o endereço SMTP primário para resolver o problema.  
 
 - Se você tiver servidores de caixa de correio do Exchange 2010 e do Exchange 2013 em seu ambiente, é recomendável apontar o Exchange Connector para um servidor de acesso para cliente (CAS) do Exchange 2013. Se o Exchange Connector estiver configurado para se comunicar com uma CAS do Exchange 2010, o Exchange Connector não descobrirá nenhum dispositivo de usuário no Exchange 2013.  
 
@@ -71,7 +71,7 @@ Examine as seções a seguir para solucionar problemas de notificação por emai
    2. Insira *autodiscover.SMTPdomain.com*. A saída deve ser semelhante à imagem a seguir:  
       resultados de ![Nslookup @ no__t-1
 
-   Você também pode testar o serviço descoberta automática da Internet em https://testconnectivity.microsoft.com. Ou testá-lo de um domínio local usando a ferramenta Microsoft Connectivity Analyzer. Para obter mais informações, consulte a [ferramenta Analisador de conectividade da Microsoft](https://docs.microsoft.com/en-us/previous-versions/office/exchange-remote-connectivity/jj851141(v=exchg.80)). Se necessário, [Baixe a ferramenta Analisador de conectividade da Microsoft](http://go.microsoft.com/fwlink/?LinkID=313782).
+   Você também pode testar o serviço descoberta automática da Internet em https://testconnectivity.microsoft.com. Ou testá-lo de um domínio local usando a ferramenta Microsoft Connectivity Analyzer. Para obter mais informações, consulte a [ferramenta Analisador de conectividade da Microsoft](https://docs.microsoft.com/en-us/previous-versions/office/exchange-remote-connectivity/jj851141(v=exchg.80)). Se necessário, [Baixe a ferramenta Analisador de conectividade da Microsoft](https://go.microsoft.com/fwlink/?LinkID=313782).
 
 
 ### <a name="check-autodiscovery"></a>Verificar descoberta automática  
