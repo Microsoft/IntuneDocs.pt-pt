@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b32d34c1878bc0355c510ca342091010af43bca7
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 419fd15f747c8b41377f3aca94c4b96d7c4910c1
+ms.sourcegitcommit: b8127c7a62d9ac4d0f768980fa1424567bb58733
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71731176"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72350014"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Como configurar a aplicação Portal da Empresa do Microsoft Intune
 
@@ -78,7 +78,7 @@ Aplique a cor do tema ao Portal da Empresa. Selecione uma cor padrão ou introdu
 |**Selecionar uma cor padrão ou introduzir um código hexadecimal de seis dígitos**| Escolha **Padrão** para selecionar visualmente uma cor. Escolha **Personalizada** para selecionar uma cor específica com base num valor de código hexadecimal.|
 |**Escolher a cor do tema**| Selecione a cor do tema que pretende aplicar ao Portal da Empresa. Pode escolher uma cor padrão ou introduzir um código hexadecimal específico. |
 |**Apresentar**| Selecione se pretende apresentar o **Logótipo e o nome da empresa**, **Apenas o logótipo da empresa** ou **Apenas o nome da empresa**. |
-|**Carregar o logótipo da empresa**|Pode carregar o logótipo da empresa para mostrar no Portal da Empresa. Tenha em atenção que a cor do texto será automaticamente escolhida para proporcionar o maior nível de contraste. Para obter o melhor aspeto, carregue um logótipo com um fundo transparente.<p><ul><li>Tamanho máximo da imagem: 400 px x 400 px</li><li>Tamanho máximo do ficheiro: 750 KB</li><li>Tipo de ficheiro: PNG, JPG ou JPEG</li></ul>|
+|**Carregar o logótipo da empresa**|Pode carregar o logótipo da empresa para mostrar no Portal da Empresa. Tenha em atenção que a cor do texto será automaticamente escolhida para proporcionar o maior nível de contraste. Para obter o melhor aspeto, carregue um logótipo com um fundo transparente.<p><ul><li>Tamanho máximo da imagem: 400 x 400 px</li><li>Tamanho máximo do ficheiro: 750 KB</li><li>Tipo de ficheiro: PNG, JPG ou JPEG</li></ul>|
 
 Depois de carregar o logótipo, a área de pré-visualização mostrará o logótipo com a cor do tema. Se optar por apresentar o nome da sua empresa, este será mostrado em preto ou branco no Portal da Empresa e será automaticamente escolhido para proporcionar o maior nível de contraste com base na cor do seu tema. A área de pré-visualização no ecrã não apresentará o nome da sua empresa. 
 
@@ -87,7 +87,7 @@ Escolha o logótipo que ficará melhor em fundos brancos ou claros.
 
 |Nome do campo|Mais informações|
 |---|---|
-|**Carregar o logótipo**| Esta opção está disponível se tiver optado por mostrar o logótipo da empresa. Para obter o melhor aspeto, carregue um logótipo com um fundo transparente.<p><ul><li>Tamanho máximo da imagem: 400 px x 400 px</li><li>Tamanho máximo do ficheiro: 750 KB</li><li>Tipo de ficheiro: PNG, JPG ou JPEG</li></ul>|
+|**Carregar o logótipo**| Esta opção está disponível se tiver optado por mostrar o logótipo da empresa. Para obter o melhor aspeto, carregue um logótipo com um fundo transparente.<p><ul><li>Tamanho máximo da imagem: 400 x 400 px</li><li>Tamanho máximo do ficheiro: 750 KB</li><li>Tipo de ficheiro: PNG, JPG ou JPEG</li></ul>|
 
 ### <a name="brand-image-for-company-portal"></a>Imagem de marca do Portal da Empresa
 
@@ -95,7 +95,7 @@ Apresente uma imagem de marca que reflita a marca da sua empresa. Depois de guar
 
 |Nome do campo|Mais informações|
 |---|---|
-|**Carregar a imagem de marca**| Esta opção permite-lhe apresentar uma imagem de marca. No Portal da Empresa do iOS, é apresentada como uma imagem de fundo na página de perfil do utilizador.<p><ul><li>Largura recomendada da imagem: Maior que 1125px (necessário para ser pelo menos 650 px)</li><li>Tamanho máximo da imagem: 1,3 MB</li><li>Tipo de ficheiro: PNG, JPG ou JPEG</li></ul>|
+|**Carregar a imagem de marca**| Esta opção permite-lhe apresentar uma imagem de marca. No Portal da Empresa do iOS, é apresentada como uma imagem de fundo na página de perfil do utilizador.<p><ul><li>Largura de imagem recomendada: maior que 1125px (necessário para ser pelo menos 650 px)</li><li>Tamanho máximo da imagem: 1,3 MB</li><li>Tipo de ficheiro: PNG, JPG ou JPEG</li></ul>|
 
 A imagem de marca correta pode melhorar a confiança do utilizador no Portal da Empresa ao apresentar uma imagem sólida da marca da sua empresa. Aqui estão algumas sugestões que poderá considerar para comprar, escolher e otimizar a imagem do Portal da Empresa. 
 
@@ -123,7 +123,7 @@ A imagem seguinte mostra um exemplo de imagem corporativa no iPhone:
 
 Você pode personalizar a declaração de privacidade que aparece para sua organização em dispositivos iOS gerenciados. Esta mensagem lista os itens que sua organização não pode ver ou fazer em dispositivos iOS gerenciados.
 
-Em **portal da empresa** > **mensagem de privacidade e gerenciamento de dispositivo**de personalização, você pode:
+Em **portal da empresa personalização** > **Gerenciamento de dispositivo e mensagem de privacidade**, você pode:
 
 - Aceite o **padrão** para usar a lista, conforme mostrado, ou
 - Escolha **personalizado** para personalizar a lista de itens que sua organização não pode ver ou fazer em dispositivos IOS gerenciados. Você pode usar a [redução](https://daringfireball.net/projects/markdown/) para adicionar marcadores, negrito, itálico e links.
@@ -134,19 +134,19 @@ Os utilizadores finais podem ativar ações de navegação, de aplicação e de 
 
 Os atalhos de teclado seguintes estão disponíveis na aplicação Portal da Empresa do Windows.
 
-| Área | Descrição | Atalho de teclado |
+| Área | Description | Atalho de teclado |
 |:------------------:|:--------------:|:-----------------:|
-| Menu de navegação | Navegação | Alt+M |
-|  | Casa | Alt+H |
-|  | Todas as aplicações | Alt+A |
+| Menu de navegação | Navegação | Alt + M |
+|  | Casa | ALT + H |
+|  | Todas as aplicações | ALT + A |
 |  | Aplicações instaladas | Alt+I |
-|  | Enviar feedback | Alt+F |
-|  | O meu perfil | Alt+U |
-|  | Definições | Alt+T |
-| Base – Mosaico Dispositivo | Mudar o Nome | F2 |
+|  | Enviar feedback | ALT + F |
+|  | O meu perfil | Alt + U |
+|  | Definições | ALT + T |
+| Base – Mosaico Dispositivo | Mudar o nome | F2 |
 |  | Remove | Ctrl+D ou Delete |
 |  | Verificar o acesso | Ctrl+M ou F9 |
-| Detalhes do dispositivo | Mudar o Nome | F2 |
+| Detalhes do dispositivo | Mudar o nome | F2 |
 |  | Remove | Ctrl+D ou Delete |
 |  | Verificar o acesso | Ctrl+M ou F9 |
 | Detalhes da aplicação | Instalar | Ctrl+I |
@@ -165,28 +165,28 @@ Os usuários podem executar ações em seus dispositivos locais ou remotos por m
 - **Sincronização** – essa ação inicia um check-in de dispositivo com o serviço do Intune. Isso mostra como **verificar o status** na portal da empresa.
 - **Bloqueio remoto** – bloqueia o dispositivo, exigindo um PIN para desbloqueá-lo.
 - **Redefinir senha** – esta ação é usada para redefinir a senha do dispositivo. Em dispositivos iOS, a senha será removida e o usuário final será solicitado a inserir um novo código em configurações. Em dispositivos Android com suporte, uma nova senha é gerada pelo Intune e exibida temporariamente no Portal da Empresa.
-- **Recuperação de chave** – essa ação é usada para recuperar uma chave de criptografia para dispositivos criptografados.
+- **Recuperação de chave** – essa ação é usada para recuperar uma chave de recuperação pessoal para dispositivos MacOS criptografados do site Portal da empresa. 
 
 ### <a name="self-service-actions"></a>Ações de autoatendimento
 
 Algumas plataformas e configurações não permitem ações de dispositivo de autoatendimento. Esta tabela abaixo fornece mais detalhes sobre as ações de autoatendimento:
 
-|     Plataforma    |    Extinguir    |    Eliminação     |    Renomear<sup>(4)</sup>    |    Sincronização    |    Bloqueio Remoto    |    Redefinir senha    |    Recuperação de Chaves    |
+|     Platform    |    Extinguir    |    Eliminação     |    Renomear<sup>(4)</sup>    |    Sincronizá    |    Bloqueio Remoto    |    Redefinir senha    |    Recuperação de chave    |
 |------------------------|--------------------|--------------------|-----------------|-----------------|--------------------------|--------------------------|--------------------|
-|    Windows 10<sup>(3)</sup>    |    Disponível<sup>(1)</sup>    |    Disponível    |    Disponível    |    Disponível    |    Somente Windows Phone    |    Somente Windows Phone    |    ND    |
-|    iOS<sup>(3)</sup>    |    Disponível    |    Disponível    |    Disponível    |    Disponível    |    Disponível    |    Disponível    |    ND    |
-|    MacOS<sup>(3)</sup><sup>(5)</sup>    |    Disponível    |    ND    |    Disponível    |    Disponível    |    Disponível    |    ND    |    Disponível<sup>(2)</sup>    |
-|    Android<sup>(3)</sup>    |    Disponível<sup>(7)</sup>    |    Disponível<sup>(7)</sup>    |    Disponível    |    Disponível    |    Disponível    |    Disponível<sup>(6)</sup>    |    ND    |
+|    Windows 10<sup>(3)</sup>    |    Disponível<sup>(1)</sup>    |    Disponível    |    Disponível    |    Disponível    |    Somente Windows Phone    |    Somente Windows Phone    |    NA    |
+|    iOS<sup>(3)</sup>    |    Disponível    |    Disponível    |    Disponível    |    Disponível    |    Disponível    |    Disponível    |    NA    |
+|    MacOS<sup>(3)</sup><sup>(5)</sup>    |    Disponível    |    NA    |    Disponível    |    Disponível    |    Disponível    |    NA    |    Disponível<sup>(2)</sup>    |
+|    Android<sup>(3)</sup>    |    Disponível<sup>(7)</sup>    |    Disponível<sup>(7)</sup>    |    Disponível    |    Disponível    |    Disponível    |    Disponível<sup>(6)</sup>    |    NA    |
 
 
 <sup>(1)</sup> a desativação é sempre bloqueada em dispositivos Windows ingressados no Azure AD.<br>
-<sup>(2)</sup> a recuperação de chave para MacOS só está disponível por meio do portal da Web.<br>
+<sup>(2)</sup> a recuperação de chave pessoal para MacOS só está disponível por meio do site Portal da empresa.<br> 
 <sup>(3)</sup> todas as ações remotas serão desabilitadas se você usar um registro do Gerenciador de registro de dispositivo.<br>
 <sup>(4)</sup> renomear apenas altera o nome do dispositivo no aplicativo portal da empresa ou site, não no dispositivo.<br>
 <sup>(5)</sup> o apagamento remoto não está disponível em dispositivos MacOS.<br>
 <sup>(6)</sup> não há suporte para a redefinição de senha em algumas configurações empresariais Android e Android. Para obter mais informações, consulte [redefinir ou remover uma senha de dispositivo no Intune](../remote-actions/device-passcode-reset.md).<br>
 <sup>(7)</sup> desativar e apagar não está disponível nos cenários do proprietário do dispositivo Android Enterprise (enCOBO, COSU).<br> 
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 - [Adicionar manualmente a aplicação Portal da Empresa do Windows 10 através do Microsoft Intune](company-portal-app.md)

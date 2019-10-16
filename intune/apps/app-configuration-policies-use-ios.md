@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 542d9c7890f9484311ca8e6400d0a75a41e13d7c
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 94480c8dcfe44dc451ea6a2409f52f06c2a87cf5
+ms.sourcegitcommit: b8127c7a62d9ac4d0f768980fa1424567bb58733
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71731424"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72350083"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Adicionar políticas de configuração da aplicação para dispositivos iOS geridos
 
@@ -105,10 +105,10 @@ Para dispositivos iOS, use os seguintes pares de chave/valor:
 
 | **Chave** | IntuneMAMAllowedAccountsOnly |
 |--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Valores** | <ul><li>**Habilitado**: A única conta permitida é a conta de usuário gerenciado definida pela chave [IntuneMAMUPN](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm) .</li><li>**Desabilitado** (ou qualquer valor que não seja uma correspondência de maiúsculas e minúsculas para **habilitado**): Qualquer conta é permitida.</li></ul> |.
+| **Os** | <ul><li>**Ativada**: a única conta autorizada é a conta de utilizador gerido definida pela chave [IntuneMAMUPN](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).</li><li>**Desativado** (ou qualquer valor que não seja sensível a maiúsculas/minúsculas que corresponda a **ativado**): qualquer conta é permitida.</li></ul> |.
 
    > [!NOTE]
-   > Você deve usar o OneDrive para iOS 10,34 ou posterior e o Outlook para iOS 2.99.0 ou posterior e o aplicativo deve ser direcionado com [as políticas de proteção de aplicativo do Intune](app-protection-policy.md) ao permitir apenas contas de organização configuradas com várias identidades.
+   > Você deve usar o OneDrive para iOS 10,34 ou posterior, o Outlook para iOS 2.99.0 ou posterior ou o Edge para iOS 44.8.7 ou posterior e o aplicativo deve ser direcionado com [políticas de proteção de aplicativo do Intune](app-protection-policy.md) ao permitir apenas contas de organização configuradas com várias identidades.
 
 ## <a name="enter-xml-data"></a>Introduzir dados XML
 
@@ -181,8 +181,8 @@ Além disso, o Intune suporta os seguintes tipos de tokens na lista de proprieda
 Os registros de DEP (Programa de registro de dispositivos da Apple) não são compatíveis com a versão da loja de aplicativos do aplicativo Portal da Empresa. No entanto, você pode configurar o aplicativo Portal da Empresa para dar suporte a dispositivos DEP com iOS usando as etapas a seguir.
 
 1. No Intune portal do Azure:
-    - Adicione o portal da empresa do Intune, se necessário, acessando aplicativos**cliente** >  > do **Intune** > **Adicionar**.
-    - Vá para **aplicativos** > cliente**políticas de configuração de aplicativo**para criar uma política de configuração de aplicativo para o aplicativo portal da empresa.
+    - Adicione o Portal da Empresa do Intune, se necessário, acessando**aplicativos cliente**do **Intune** >   > **aplicativos** > **Adicionar**.
+    - Vá para **aplicativos cliente** > **políticas de configuração de aplicativo**para criar uma política de configuração de aplicativo para o aplicativo portal da empresa.
 2. Crie uma política de configuração de aplicativo com o XML abaixo. Mais informações sobre como criar uma política de configuração de aplicativo e inserir dados XML podem ser encontradas em [Adicionar políticas de configuração de aplicativo para dispositivos IOS gerenciados](app-configuration-policies-use-ios.md) ou para MDM híbrido, [aplicar configurações a aplicativos Ios com políticas de configuração de aplicativo no System Center Configuration Manager](https://docs.microsoft.com/sccm/mdm/deploy-use/configure-ios-apps-with-app-configuration-policies).
 
     ``` xml
@@ -207,6 +207,6 @@ Assim que a política de configuração for atribuída, pode monitorizar o estad
 
 - [Implantando definições de configuração de aplicativo do Outlook para iOS e Android](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune)
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Continue a [atribuir](apps-deploy.md) e [monitorizar](apps-monitor.md) a aplicação.
