@@ -1,0 +1,39 @@
+- name: Docs
+  tocHref: /
+  topicHref: /
+  items:
+    - name: Enterprise Mobility + Security
+      tocHref: /enterprise-mobility-security/
+      topicHref: /enterprise-mobility-security/
+      items:
+        - name: Intune
+          tocHref: /intune/
+          topicHref: /intune/
+          items:
+            - name: Intune para a educação
+              tocHref: /intune-education/
+              topicHref: /intune-education/
+            - name: Intune user help (Ajuda para utilizadores do Intune)
+              tocHref: /intune-user-help/
+              topicHref: /intune-user-help/
+            - name: Aplicações
+              tocHref: /intune/apps/
+              topicHref: /intune/apps/
+            - name: Noções básicas
+              tocHref: /intune/fundamentals/
+              topicHref: /intune/fundamentals/
+            - name: Inscrição
+              tocHref: /intune/enrollment/
+              topicHref: /intune/enrollment/
+            - name: Ações remotas
+              tocHref: /intune/remote-actions/
+              topicHref: /intune/remote-actions/
+            - name: Configuração
+              tocHref: /intune/configuration/
+              topicHref: /intune/configuration/
+            - name: Proteger
+              tocHref: /intune/protect/
+              topicHref: /intune/protect/
+            - name: Programador
+              tocHref: /intune/developer/
+              topicHref: /intune/developer/

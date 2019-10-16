@@ -158,7 +158,7 @@
                   href: app-protection-policy-settings-android.md
                 - name: Definições do iOS
                   href: app-protection-policy-settings-ios.md
-                - name: Ações de Acesso
+                - name: Iniciação condicional
                   href: app-protection-policies-access-actions.md
                 - name: Exceções de transferência de dados
                   href: app-protection-policies-exception.md
