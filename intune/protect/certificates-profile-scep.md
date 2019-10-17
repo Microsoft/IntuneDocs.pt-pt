@@ -6,9 +6,9 @@ author: brenduns
 ms.author: brenduns
 manager: dougeby
 ms.date: 09/19/2019
-ms.topic: article
-ms.prod: ''
+ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: lacranda
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8e6b9f7d6aeda219af0f0cf3d0f5c34a3f03d258
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 16a6e35fd1d7b60d9abce5e2b3491fee1efb41c3
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71729856"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502541"
 ---
 # <a name="create-and-assign-scep-certificate-profiles-in-intune"></a>Criar e atribuir perfis de certificado SCEP no Intune
 
@@ -55,11 +55,11 @@ Depois de [configurar sua infraestrutura](certificates-scep-configure.md) para d
 6. Selecione **configurações**e, em seguida, conclua as seguintes configurações:
 
    - **Tipo de certificado**:   
-     *(Aplica-se a:  Android, Android Enterprise, iOS, macOS, Windows 8.1 e posterior e Windows 10 e posterior.)*  
+     *(Aplica-se a: Android, Android Enterprise, iOS, macOS, Windows 8.1 e posterior e Windows 10 e posterior.)*  
 
       Selecione um tipo dependendo de como você usará o perfil de certificado:
-      - **Usuário**: Os certificados de *usuário* podem conter os atributos de usuário e de dispositivo no assunto e na San do certificado.  
-      - **Dispositivo**:  Certificados de *dispositivo* só podem conter atributos de dispositivo no assunto e San do certificado.  
+      - **Usuário**: certificados de *usuário* podem conter atributos de usuário e de dispositivo no assunto e San do certificado.  
+      - **Dispositivo**: certificados de *dispositivo* só podem conter atributos de dispositivo no assunto e San do certificado.  
       
         Use o **dispositivo** para cenários como dispositivos sem usuário, como quiosques ou para dispositivos Windows. Em dispositivos Windows, o certificado é colocado no repositório de certificados do computador local.  
 
@@ -67,7 +67,7 @@ Depois de [configurar sua infraestrutura](certificates-scep-configure.md) para d
      Selecione como o Intune cria automaticamente o nome da entidade na solicitação de certificado. As opções para o formato de nome da entidade dependem do tipo de certificado selecionado, seja **usuário** ou **dispositivo**.  
 
      > [!NOTE]  
-     > Há um [problema conhecido](#avoid-certificate-signing-requests-with-escaped-special-characters) para usar o SCEP para obter certificados quando o nome da entidade na CSR (solicitação de assinatura de certificado) resultante inclui um dos seguintes caracteres como um caractere de escape (continuado por uma \\barra invertida):
+     > Há um [problema conhecido](#avoid-certificate-signing-requests-with-escaped-special-characters) para usar o SCEP para obter certificados quando o nome da entidade na CSR (solicitação de assinatura de certificado) resultante inclui um dos seguintes caracteres como um caractere de escape (continuado por uma barra invertida \\):
      > - \+
      > - ;
      > - ,
@@ -81,17 +81,17 @@ Depois de [configurar sua infraestrutura](certificates-scep-configure.md) para d
        - **Nome comum como e-mail**
        - **Identidade Internacional do Equipamento Móvel (IMEI)**
        - **Número de série**
-       - **Personalizado**: Quando você seleciona essa opção, uma caixa de texto **personalizada** também é mostrada. Utilize este campo para introduzir um formato de nome de requerente personalizado, incluindo variáveis. O formato personalizado dá suporte a duas variáveis: **CN (nome comum)** e **email (E)** . O **Nome Comum (CN)** pode ser definido para qualquer uma das seguintes variáveis:
+       - **Personalizado**: ao selecionar esta opção, é também apresentada a caixa de texto **Personalizado**. Utilize este campo para introduzir um formato de nome de requerente personalizado, incluindo variáveis. O formato personalizado suporta duas variáveis: **Nome Comum (CN)** e **E-mail (E)** . O **Nome Comum (CN)** pode ser definido para qualquer uma das seguintes variáveis:
 
-         - **CN={{UserName}}** : O nome UPN do usuário, janedoe@contoso.comcomo.
-         - **CN={{AAD_Device_ID}}** : Uma ID atribuída quando você registra um dispositivo no Azure Active Directory (AD). Este ID é normalmente utilizado na autenticação com o Azure AD.
-         - **CN={{SERIALNUMBER}}** : O número de série exclusivo (SN) normalmente usado pelo fabricante para identificar um dispositivo.
-         - **CN={{IMEINumber}}** : O número exclusivo IMEI (identidade de equipamentos móveis internacional) usado para identificar um telefone celular.
-         - **CN = {{OnPrem_Distinguished_Name}}** : Uma sequência de nomes distintos relativos separados por vírgula, como *CN = Jane Doe, ou = accounts, DC = Corp, DC = contoso, DC = com*.
+         - **CN = {{username}}** : o nome UPN do usuário, como janedoe@contoso.com.
+         - **CN={{AAD_Device_ID}}** : um ID atribuído ao registar um dispositivo no Azure Active Directory (AD). Este ID é normalmente utilizado na autenticação com o Azure AD.
+         - **CN = {{SERIALNUMBER}}** : o número de série exclusivo (SN) normalmente usado pelo fabricante para identificar um dispositivo.
+         - **CN = {{IMEINumber}}** : o número exclusivo IMEI (identidade de equipamentos móveis internacional) usado para identificar um telefone celular.
+         - **CN = {{OnPrem_Distinguished_Name}}** : uma sequência de nomes distintos relativos separados por vírgula, como *CN = Jane Doe, ou = accounts, DC = Corp, DC = contoso, DC = com*.
 
            Para usar a variável *{{OnPrem_Distinguished_Name}}* , certifique-se de sincronizar o atributo de usuário *onpremisesdistinguishedname* usando [Azure ad Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) ao Azure AD.
 
-         - **CN={{onPremisesSamAccountName}}** : Os administradores podem sincronizar o atributo samAccountName de Active Directory ao Azure AD usando o Azure AD Connect em um atributo chamado *onPremisesSamAccountName*. O Intune pode substituir essa variável como parte de uma solicitação de emissão de certificado no assunto de um certificado. O atributo samAccountName é o nome de entrada do usuário usado para dar suporte a clientes e servidores de uma versão anterior do Windows (anterior ao Windows 2000). O formato do nome de entrada do usuário é: *DomainName\testUser*ou somente *testuser*.
+         - **CN = {{onPremisesSamAccountName}}** : os administradores podem sincronizar o atributo samAccountName de Active Directory ao Azure ad usando o Azure ad Connect em um atributo chamado *onPremisesSamAccountName*. O Intune pode substituir essa variável como parte de uma solicitação de emissão de certificado no assunto de um certificado. O atributo samAccountName é o nome de entrada do usuário usado para dar suporte a clientes e servidores de uma versão anterior do Windows (anterior ao Windows 2000). O formato do nome de entrada do usuário é: *DomainName\testUser*ou somente *testuser*.
 
             Para usar a variável *{{onPremisesSamAccountName}}* , certifique-se de sincronizar o atributo de usuário *onPremisesSamAccountName* usando [Azure ad Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) ao Azure AD.
 
@@ -111,7 +111,7 @@ Depois de [configurar sua infraestrutura](certificates-scep-configure.md) para d
         - **{{WiFiMacAddress}}**
         - **{{IMEI}}**
         - **{{DeviceName}}**
-        - **{{FullyQualifiedDomainName}}** *(Aplicável somente para dispositivos Windows e ingressados no domínio)*
+        - **{{FullyQualifiedDomainName}}** *(aplicável somente para dispositivos Windows e ingressados no domínio)*
         - **{{MEID}}**
         
         Você pode especificar essas variáveis, seguidas pelo texto da variável, na caixa de texto. Por exemplo, o nome comum para um dispositivo chamado *Device1* pode ser adicionado como **CN = {{DeviceName}} Device1**.
@@ -155,11 +155,11 @@ Depois de [configurar sua infraestrutura](certificates-scep-configure.md) para d
         - **{{FullyQualifiedDomainName}}**
         - **{{MEID}}**
 
-        Para especificar um valor para um atributo, inclua o nome da variável com chaves, seguido pelo texto para essa variável. Por exemplo, um valor para o atributo DNS pode ser adicionado **{{AzureADDeviceId}}. domain. com** onde *. domain.com* é o texto. Para um usuário chamado *user1* , um endereço de email pode aparecer como {{FullyQualifiedDomainNameUser1@Contoso.com}}.  
+        Para especificar um valor para um atributo, inclua o nome da variável com chaves, seguido pelo texto para essa variável. Por exemplo, um valor para o atributo DNS pode ser adicionado **{{AzureADDeviceId}}. domain. com** onde *. domain.com* é o texto. Para um usuário chamado *user1* , um endereço de email pode aparecer como {{FullyQualifiedDomainName}} User1@Contoso.com.  
 
         > [!IMPORTANT]  
         > - Ao usar uma variável de certificado de dispositivo, coloque o nome da variável entre chaves {}.  
-        > - Não use chaves **{}** , símbolos **|** de pipe e ponto-e-vírgula **;** , no texto que segue a variável.  
+        > - Não use chaves **{}** , símbolos de pipe **|** e ponto-e-vírgulas **;** no texto que segue a variável.  
         > - As propriedades de dispositivo usadas no *assunto* ou *San* de um certificado de dispositivo, como **IMEI**, **SerialNumber**e **FullyQualifiedDomainName**, são propriedades que podem ser falsificadas por uma pessoa com acesso ao dispositivo.  
         > - Um dispositivo deve dar suporte a todas as variáveis especificadas em um perfil de certificado para que esse perfil seja instalado nesse dispositivo.  Por exemplo, se **{{IMEI}}** for usado na San de um perfil SCEP e for atribuído a um dispositivo que não tem um número IMEI, o perfil não será instalado.
 
@@ -169,7 +169,7 @@ Depois de [configurar sua infraestrutura](certificates-scep-configure.md) para d
      Por exemplo, se o período de validade do certificado no modelo de certificado for dois anos, pode introduzir um valor de um ano, mas não um valor de cinco anos. O valor deve também ser inferior ao período de validade restante do certificado da AC emissora.
 
    - **Provedor de armazenamento de chaves (KSP)** :  
-     *(Aplica-se a:  Windows 8.1 e posterior e Windows 10 e posterior)*  
+     *(Aplica-se a: Windows 8.1 e posterior e Windows 10 e posterior)*  
      
      Especifique onde a chave para o certificado é armazenada. Escolha um dos seguintes valores:  
      - **Inscrever em KSP de Trusted Platform Module (TPM) se estiver presente, caso contrário, KSP de Software**
@@ -180,8 +180,8 @@ Depois de [configurar sua infraestrutura](certificates-scep-configure.md) para d
    - **Uso da chave**:  
      Selecione as opções de uso de chave para o certificado:
 
-     - **Assinatura digital**: Permita a troca de chaves somente quando uma assinatura digital ajudar a proteger a chave.
-     - **Codificação de chave**: Permitir troca de chaves somente quando a chave for criptografada.  
+     - **Assinatura digital**: permita a troca de chaves somente quando uma assinatura digital ajudar a proteger a chave.
+     - **Codificação de chave**: permitir troca de chaves somente quando a chave for criptografada.  
 
    - **Tamanho da chave (bits)** :  
      Selecione o número de bits contidos na chave.  
@@ -223,7 +223,7 @@ Quando o nome da entidade incluir um dos caracteres especiais, use uma das opç�
 - **Remova a vírgula**: *CN = test User (TestCompany LLC), ou = accounts, DC = Corp, DC = contoso, DC = com*
 
  No entanto, as tentativas de escapar a vírgula usando um caractere de barra invertida falharão com um erro nos logs do CRP:  
-- **Vírgula com escape**: *CN = usuário de teste (\\TestCompany, LLC), ou = accounts, DC = Corp, DC = contoso, DC = com*
+- **Vírgula com escape**: *CN = usuário de teste (TestCompany @ no__t-2, LLC), ou = accounts, DC = Corp, DC = contoso, DC = com*
 
 O erro é semelhante ao seguinte erro: 
 
@@ -259,6 +259,6 @@ Atribua perfis de certificado SCEP da mesma maneira que [implanta perfis de disp
 > Em dispositivos iOS, quando um perfil de certificado SCEP é associado a um perfil adicional, como um perfil de Wi-Fi ou VPN, o dispositivo recebe um certificado para cada um desses perfis adicionais. Isso resulta no dispositivo iOS com vários certificados entregues pela solicitação de certificado SCEP.  Se desejar um único certificado, você deverá usar certificados PKCS em vez de certificados SCEP.  Isso se deve às diferenças em como os certificados SCEP e PKCS são entregues aos dispositivos.
 
 
-## <a name="next-steps"></a>Passos seguintes  
+## <a name="next-steps"></a>Próximos passos  
 
 [Atribuir perfis](../configuration/device-profile-assign.md)  
