@@ -9,18 +9,19 @@ manager: dougeby
 ms.date: 3/6/2018
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 35dbc39d01780f23dcc325a203d7a9c33b98e296
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 20e25b2a2d1b20e577e99cf0b391945c16c67c64
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71730728"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72489877"
 ---
 # <a name="microsoft-intune-windows-10-team-device-restriction-settings"></a>Definições de restrição de dispositivos Windows 10 Team do Microsoft Intune
 
@@ -32,7 +33,7 @@ Este artigo mostra-lhe as definições de restrição de dispositivos do Microso
 ## <a name="apps-and-experience"></a>Aplicações e experiência
 
 - **Ativar ecrã quando alguém entra na sala** – Permite ao dispositivo ser reativado automaticamente quando o sensor deteta alguém na sala.
-- **Informações sobre a reunião apresentadas no ecrã de boas-vindas** – ative esta opção para escolher as informações que são apresentadas no mosaico Reuniões do ecrã de boas-vindas. Pode:
+- **Informações sobre a reunião apresentadas no ecrã de boas-vindas** – ative esta opção para escolher as informações que são apresentadas no mosaico Reuniões do ecrã de boas-vindas. É possível:
   - **Mostrar apenas organizador e hora**
   - **Mostrar organizador, hora e assunto (assunto oculto para reuniões privadas)**
 - **URL da imagem de fundo do ecrã de boas-vindas** – Ative esta definição para apresentar um fundo personalizado no ecrã **Bem-vindo** dos dispositivos Windows 10 Team a partir do URL especificado.<br>A imagem tem de estar no formato PNG e o URL tem de começar por **https://** .
@@ -53,6 +54,6 @@ Para ligar às Informações Operacionais do Azure, tem de especificar um **ID d
 - **Canal de projeção sem fios Miracast** – selecione o canal Miracast que é utilizado para estabelecer a ligação.
 
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Utilize as informações em [Como configurar definições de restrições de dispositivos](../device-restrictions-configure.md) para guardar e atribuir o perfil a utilizadores e dispositivos.

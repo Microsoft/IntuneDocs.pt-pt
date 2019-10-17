@@ -6,9 +6,9 @@ author: ralms
 ms.author: brenduns
 manager: dougeby
 ms.date: 10/02/2019
-ms.topic: article
-ms.prod: ''
+ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fead8b9d69f5356876c0b3a2a4ce02e9b754128e
-ms.sourcegitcommit: 29b1113dc04534c4c87c33c773c5a0e24266e042
+ms.openlocfilehash: fd54a5af6714d09072f9b69107436ef3fc4dc285
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71999337"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72509585"
 ---
 # <a name="configure-and-use-imported-pkcs-certificates-with-intune"></a>Configurar e usar certificados PKCS importados com o Intune
 
@@ -53,14 +53,14 @@ Para usar certificados PKCS importados com o Intune, você precisará da seguint
 
   Para dar suporte ao conector, o servidor deve executar o .NET 4,6 Framework ou superior. Se o .NET 4,6 Framework não estiver instalado quando você iniciar a instalação do conector, a instalação do conector o instalará automaticamente.
 
-- **Visual Studio 2015 ou superior** (opcional): Use o Visual Studio para criar o módulo auxiliar do PowerShell com cmdlets para importar certificados PFX para Microsoft Intune. Para obter os cmdlets do PowerShell auxiliar, consulte [projeto do PFXImport PowerShell no GitHub](https://github.com/microsoft/Intune-Resource-Access/tree/develop/src/PFXImportPowershell).
+- **Visual studio 2015 ou superior** (opcional): Use o Visual Studio para criar o módulo auxiliar do PowerShell com cmdlets para importar certificados PFX para Microsoft Intune. Para obter os cmdlets do PowerShell auxiliar, consulte [projeto do PFXImport PowerShell no GitHub](https://github.com/microsoft/Intune-Resource-Access/tree/develop/src/PFXImportPowershell).
 
 ## <a name="how-it-works"></a>Como funciona
 
 Quando você usa o Intune para implantar um **certificado pfx importado** para um usuário, há dois componentes em jogo, além do dispositivo: 
 
-- **Serviço do Intune**: Armazena os certificados PFX em um estado criptografado e manipula a implantação do certificado para o dispositivo de usuário.  As senhas que protegem as chaves privadas dos certificados são criptografadas antes de serem carregadas usando um HSM (módulo de segurança de hardware) ou criptografia do Windows, garantindo que o Intune não possa acessar a chave privada a qualquer momento.
-- **Conector de certificado pfx para Microsoft Intune**: Quando um dispositivo solicita um certificado PFX que foi importado para o Intune, a senha criptografada, o certificado e a chave pública do dispositivo são enviados para o conector.  O conector descriptografa a senha usando a chave privada local e, em seguida, criptografa novamente a senha (e quaisquer perfis do plist se usar o iOS) com a chave do dispositivo antes de enviar o certificado de volta para o Intune.  O Intune, em seguida, entrega o certificado para o dispositivo e o dispositivo é capaz de descriptografá-lo com a chave privada do dispositivo e instalar o certificado.
+- **Serviço do Intune**: armazena os certificados PFX em um estado criptografado e manipula a implantação do certificado para o dispositivo do usuário.  As senhas que protegem as chaves privadas dos certificados são criptografadas antes de serem carregadas usando um HSM (módulo de segurança de hardware) ou criptografia do Windows, garantindo que o Intune não possa acessar a chave privada a qualquer momento.
+- **Conector de certificado pfx para Microsoft Intune**: quando um dispositivo solicita um certificado PFX que foi importado para o Intune, a senha criptografada, o certificado e a chave pública do dispositivo são enviados para o conector.  O conector descriptografa a senha usando a chave privada local e, em seguida, criptografa novamente a senha (e quaisquer perfis do plist se usar o iOS) com a chave do dispositivo antes de enviar o certificado de volta para o Intune.  O Intune, em seguida, entrega o certificado para o dispositivo e o dispositivo é capaz de descriptografá-lo com a chave privada do dispositivo e instalar o certificado.
 
 ## <a name="download-install-and-configure-the-pfx-certificate-connector-for-microsoft-intune"></a>Baixar, instalar e configurar o conector de certificado PFX para Microsoft Intune
 
@@ -187,8 +187,8 @@ Após importar certificados para o Intune, crie um perfil de **certificado PKCS 
 3. Aceda a **Definições** e introduza as seguintes propriedades:
 
    - **Finalidade pretendida**: Especifique a finalidade pretendida dos certificados que são importados para esse perfil. Os administradores podem importar certificados com diferentes finalidades pretendidas (como assinatura S/MIME ou criptografia S/MIME). A finalidade selecionada no perfil do certificado corresponde ao perfil do certificado com os certificados importados adequados. A finalidade pretendida é uma marca para agrupar certificados importados e não garante que os certificados importados com essa marca atendam à finalidade pretendida.  
-   - **Período de validade do certificado**: A menos que o período de validade tenha sido alterado no modelo de certificado, essa opção usa como padrão um ano.  
-   - **Provedor de armazenamento de chaves (KSP)** : Para o Windows, selecione onde armazenar as chaves no dispositivo.  
+   - **Período de validade do certificado**: a menos que o período de validade tenha sido alterado no modelo de certificado, essa opção usa como padrão um ano.  
+   - **Fornecedor de armazenamento de chaves (KSP)** : para dispositivos com Windows, selecione onde armazenar as chaves no dispositivo.  
 
 4. Selecione **OK** > **Criar** para guardar o perfil.
 5. Para atribuir o novo perfil a um ou mais dispositivos, veja [Atribuir perfis de dispositivo no Microsoft Intune](../configuration/device-profile-assign.md).

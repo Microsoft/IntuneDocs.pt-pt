@@ -6,8 +6,9 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/26/2019
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: ''
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 324550836cd8e7c8ea2786d15618d5f5010a043f
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: e7ed93c86d3fbe7ed7a6ac5d4b1a3494fb55f2bc
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71730956"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506985"
 ---
 # <a name="troubleshoot-and-see-potential-issues-on-android-zebra-devices-in-microsoft-intune"></a>Solucione problemas e veja possíveis problemas em dispositivos Android pretas no Microsoft Intune
 
@@ -53,14 +54,14 @@ Quando você testa um perfil diretamente usando o StageNow em seu computador no,
 ### <a name="get-logs-using-android-debug-bridge"></a>Obter logs usando Android Debug Bridge
 Para obter logs depois que o perfil já estiver implantado com o Intune, conecte o dispositivo a um computador com o [Android Debug Bridge (ADB)](https://developer.android.com/studio/command-line/adb) (abre o site do Android).
 
-No dispositivo, os logs são salvos em`/sdcard/Android/data/com.microsoft.windowsintune.companyportal/files`
+No dispositivo, os logs são salvos em `/sdcard/Android/data/com.microsoft.windowsintune.companyportal/files`
 
 ### <a name="get-logs-from-email"></a>Obter logs de email
 Para obter logs depois que o perfil já estiver implantado com o Intune, os usuários finais poderão enviar por email os logs usando um aplicativo de email no dispositivo. No dispositivo pretas, abra o aplicativo Portal da Empresa e [envie os logs](https://docs.microsoft.com/intune-user-help/send-logs-to-your-it-admin-by-email-android). Usar o recurso de logs de envio também cria uma ID de incidente PowerLift, que você pode referenciar se entrar em contato com o suporte da Microsoft.
 
 ## <a name="read-the-logs"></a>Ler os logs
 
-Ao examinar os logs, há um erro sempre que você vê a `<characteristic-error>` marca. Os detalhes do erro são gravados na `desc` Propriedade > de `<parm-error>` marca.
+Ao examinar os logs, há um erro sempre que você vir a marca `<characteristic-error>`. Os detalhes do erro são gravados na marca `<parm-error>` > Propriedade `desc`.
 
 ## <a name="error-types"></a>Tipos de erro
 
@@ -112,7 +113,7 @@ Em outro exemplo, você tem a seguinte entrada:
 </wap-provisioningdoc>
 ```
 
-O log mostra um erro, pois ele contém uma `<characteristic-error>` marca. Nesse cenário, o perfil tentou instalar um pacote Android (APK) que não existe no caminho fornecido:
+O log mostra um erro, pois ele contém uma marca `<characteristic-error>`. Nesse cenário, o perfil tentou instalar um pacote Android (APK) que não existe no caminho fornecido:
 
 ```xml
 <wap-provisioningdoc>
@@ -136,7 +137,7 @@ Quando dispositivos mais antigos entram usando o aplicativo Portal da Empresa, o
 
 ### <a name="management-actions-take-a-long-time"></a>As ações de gerenciamento levam muito tempo
 
-Se os serviços do Google Play não estiverem disponíveis, algumas tarefas levarão até 8 horas para serem concluídas. [Limitações do aplicativo portal da empresa do Intune para Android](https://support.microsoft.com/help/3211588/limitations-of-intune-company-portal-app-for-android-in-china) (abre outro site da Microsoft) pode ser um bom recurso.
+Se os serviços do Google Play não estiverem disponíveis, algumas tarefas levarão até 8 horas para serem concluídas. As [limitações do aplicativo portal da empresa do Intune para Android](https://support.microsoft.com/help/3211588/limitations-of-intune-company-portal-app-for-android-in-china) (abre outro site da Microsoft) podem ser um bom recurso.
 
 ### <a name="device-spoofing-suspected-shows-in-intune"></a>"Suspeita de dispositivo suspeito" mostra no Intune
 
@@ -146,7 +147,7 @@ Esse erro significa que o Intune suspeita que um dispositivo Android não pretas
 
 O Intune pode atualizar a versão mínima necessária do aplicativo Portal da Empresa. Se Google Play não estiver instalado no dispositivo, o aplicativo Portal da Empresa não será atualizado automaticamente. Se a versão mínima necessária for mais nova do que a versão instalada, o aplicativo Portal da Empresa parará de funcionar. Atualize para o aplicativo Portal da Empresa mais recente usando [Sideload em dispositivos pretas](android-zebra-mx-overview.md#sideload-the-company-portal-app).
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 [Quadros de discussão do pretas](https://developer.zebra.com/community/home/discussions) (abre o site da pretas)
 

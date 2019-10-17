@@ -9,18 +9,19 @@ manager: dougeby
 ms.date: 3/6/2018
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ec832e6eb78df9b7ee977705e8b60c5ee2e898fa
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 0df55e79dbc54926c0507889620f2667d7b8bd7b
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71730720"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72489828"
 ---
 # <a name="microsoft-intune-windows-81-and-later-device-restriction-settings"></a>Definições de restrição de dispositivos no Microsoft Intune para dispositivos Windows 8.1 e posterior
 
@@ -43,7 +44,7 @@ Este artigo mostra-lhe as definições de restrição de dispositivos do Microso
 - **Expiração de palavra-passe (dias)** – especifica o número de dias antes de ser preciso alterar a palavra-passe do dispositivo.
 - **Impedir a reutilização de palavras-passe anteriores** – Especifica se o utilizador pode utilizar as palavras-passe utilizadas anteriormente.
 - **PIN e palavra-passe por imagem** – Permite a utilização de um PIN e de uma palavra-passe por imagem. Uma palavra-passe por imagem permite ao utilizador iniciar sessão com gestos numa imagem. Um PIN permite aos utilizadores iniciar sessão rapidamente com um código de quatro dígitos.
-- **Encriptação** – Requer que os ficheiros no dispositivo estejam encriptados.<br>Para impor a encriptação nos dispositivos que executam o Windows 8.1, tem de instalar a [atualização de cliente MDM para Windows de dezembro de 2014](https://support.microsoft.com/kb/3013816) em cada dispositivo.
+- **Encriptação** – requer que os ficheiros no dispositivo estejam encriptados.<br>Para impor a encriptação nos dispositivos que executam o Windows 8.1, tem de instalar a [atualização de cliente MDM para Windows de dezembro de 2014](https://support.microsoft.com/kb/3013816) em cada dispositivo.
 Se ativar esta definição em dispositivos com o Windows 8.1, todos os utilizadores do dispositivo têm de ter uma conta Microsoft.
 Para que a encriptação funcione, o dispositivo tem de estar em conformidade com os requisitos de certificação de hardware do [InstantGo da Microsoft](https://blogs.windows.com/windowsexperience/2014/06/19/instantgo-a-better-way-to-sleep/#IBHULcTfI4PokO8X.97).
 Quando impõe a encriptação a um dispositivo, a chave de recuperação só é acessível a partir da conta Microsoft do utilizador, que é acedida a partir da respetiva conta do OneDrive. Não pode recuperar esta chave em nome de um utilizador. 

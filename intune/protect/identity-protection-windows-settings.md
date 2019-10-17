@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 06/20/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
@@ -15,12 +16,12 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: shpate
-ms.openlocfilehash: f1727e22f7fdab2ef3971667f9a60c70ee7b3702
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: f49ea9e1e59fadcb90a773e362ec3ef41e25ab63
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71729240"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502237"
 ---
 # <a name="windows-10-device-settings-to-enable-windows-hello-for-business-in-intune"></a>Configurações do dispositivo Windows 10 para habilitar o Windows Hello para empresas no Intune
 
@@ -42,19 +43,19 @@ Para saber mais sobre os perfis do Windows Hello para empresas no Intune, consul
   - **Desabilitado** -se você não quiser usar o Windows Hello para empresas, selecione essa configuração. Todas as outras definições no ecrã não estão disponíveis.
   - **Habilitado** – Selecione essa configuração se desejar definir as configurações do Windows Hello para empresas.  
   
-  **Padrão**: Não configurado
+  **Padrão**: não configurado
 
   Quando definido como *habilitado*, as seguintes configurações estão disponíveis:
 
   - **Comprimento mínimo do PIN**  
     Especifique um comprimento mínimo de PIN para dispositivos, para ajudar a proteger a entrada. Os padrões de dispositivo do Windows têm seis caracteres, mas essa configuração pode impor um mínimo de quatro a 127 caracteres. 
 
-    **Padrão**: *Não configurado*
+    **Padrão**: *não configurado*
 
   - **Comprimento máximo do PIN**  
   Especifique um comprimento máximo de PIN para dispositivos, para ajudar a proteger a entrada. Os padrões de dispositivo do Windows têm seis caracteres, mas essa configuração pode impor um mínimo de quatro a 127 caracteres.  
 
-    **Padrão**: *Não configurado*  
+    **Padrão**: *não configurado*  
 
   - **Letras minúsculas no PIN**  
     Você pode impor um PIN mais forte exigindo que os usuários finais incluam letras minúsculas. As opções são:
@@ -78,17 +79,17 @@ Para saber mais sobre os perfis do Windows Hello para empresas no Intune, consul
     - **Permitido** – permitir que os usuários usem letras maiúsculas no PIN, mas isso não é necessário.
     - **Obrigatório** -os usuários devem incluir pelo menos uma letra maiúscula no PIN. Por exemplo, é prática comum exigir pelo menos uma letra maiúscula e um caráter especial.
 
-    **Padrão**: Não permitido
+    **Padrão**: não permitido
 
   - **Expiração do PIN (dias)**  
     É recomendável especificar um período de expiração para um PIN, após o qual os utilizadores têm de alterá-lo. Os padrões de dispositivo do Windows são de 41 dias.
 
-    **Padrão**: Não Configurado
+    **Padrão**: não configurado
 
   - **Lembrar histórico de PIN**  
     Restringe a reutilização de PINs utilizados anteriormente. Os dispositivos Windows são padrão para impedir a reutilização dos últimos cinco PINs.  
 
-    **Padrão**: Não Configurado  
+    **Padrão**: não configurado  
 
   - **Habilitar**@no__t de recuperação de PIN-1  
     Permite que o usuário use o serviço de recuperação de PIN do Windows Hello para empresas. 
@@ -96,7 +97,7 @@ Para saber mais sobre os perfis do Windows Hello para empresas no Intune, consul
     - **Habilitado** -o segredo de recuperação do PIN é armazenado no dispositivo e o usuário pode alterar seu PIN, se necessário.  
     - **Desabilitado** -o segredo de recuperação não é criado ou armazenado.
 
-    **Padrão**: Não configurado
+    **Padrão**: não configurado
 
   - **Usar um Trusted Platform Module (TPM)**    
     Um chip TPM fornece uma camada adicional de segurança de dados.  
@@ -104,7 +105,7 @@ Para saber mais sobre os perfis do Windows Hello para empresas no Intune, consul
     - **Habilitado** -somente dispositivos com um TPM acessível podem provisionar o Windows Hello para empresas.
     - **Não configurado** -os dispositivos primeiro tentam usar um TPM. Se não estiver disponível, podem utilizar a encriptação de software.
     
-    **Padrão**: Não configurado
+    **Padrão**: não configurado
 
   - **Permitir autenticação biométrica**  
      Permite a autenticação biométrica, como reconhecimento facial ou impressão digital, como alternativa a um PIN, no Windows Hello para Empresas. Os utilizadores continuam a ter de configurar um PIN, para a eventualidade de a autenticação biométrica falhar. Escolha entre:
@@ -112,21 +113,21 @@ Para saber mais sobre os perfis do Windows Hello para empresas no Intune, consul
     - **Habilitar** -o Windows Hello para empresas permite a autenticação biométrica.
     - **Não configurado** -o Windows Hello para empresas impede a autenticação biométrica (para todos os tipos de conta).
 
-    **Padrão**: Não configurado
+    **Padrão**: não configurado
 
   - **Usar antifalsificação avançada, quando disponível**  
     Configura se as funcionalidades de anti-spoofing do Windows Hello são utilizadas nos dispositivos que o suportam (por exemplo, detetar uma fotografia de um rosto em vez de um rosto real).  
     - **Habilitar** -o Windows exige que todos os usuários usem a antifalsificação para recursos faciais quando houver suporte.
     - **Não configurado** -o Windows honra as configurações anti-falsificação no dispositivo.
 
-    **Padrão**: Não configurado
+    **Padrão**: não configurado
 
   - **Certificado para recursos locais**  
 
     - **Habilitar** – permite que o Windows Hello para empresas Use certificados para autenticar para recursos locais.
     - **Não configurado** – impede que o Windows Hello para empresas Use certificados para autenticar para recursos locais. Em vez disso, os dispositivos usam o comportamento padrão de *autenticação de chave confiável no local*. Para obter mais informações, consulte [certificado de usuário para autenticação local](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-cert-trust-policy-settings#use-certificate-for-on-premises-authentication) na documentação do Windows Hello.  
 
-  **Padrão**: Não configurado
+  **Padrão**: não configurado
 
 - **Usar chaves de segurança para entrar**  
   Essa configuração está disponível para dispositivos que executam o Windows 10 versão 1903 ou posterior. Use-o para gerenciar o suporte ao uso de chaves de segurança do Windows Hello para entrada.  
@@ -134,8 +135,8 @@ Para saber mais sobre os perfis do Windows Hello para empresas no Intune, consul
   - **Habilitado** -os usuários podem usar uma chave de segurança do Windows Hello como uma credencial de logon para PCs com essa política. 
   - **Desabilitado** -as chaves de segurança estão desabilitadas e os usuários não podem usá-las para entrar em PCs.   
 
-  **Padrão**: Não configurado
+  **Padrão**: não configurado
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 [Atribua o perfil](../configuration/device-profile-assign.md) e [monitorize o respetivo estado](../configuration/device-profile-monitor.md).

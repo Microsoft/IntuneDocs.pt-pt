@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 3/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 4f82ee0c-4bd6-4623-9b10-9249d316ccf5
@@ -16,12 +17,12 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6fe203de969f848da92fecfc00787e905d0a946d
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: c2ce184a2dbd0ca4b66740f0687302d1ed007878
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71732152"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72505016"
 ---
 # <a name="intune-testing-and-validation"></a>Teste e validação do Intune
 
@@ -33,15 +34,15 @@ Recomendamos que incorpore a sua equipa de suporte de TI e de suporte técnico n
 
 Recomendamos que documente o seguinte:
 
-- **Critérios de teste:** Identifique os parâmetros de comparação a serem medidos.
+- **Critérios de teste:** identifica os testes de avaliação.
 
-- **Componentes de design:** Deve existir em pelo menos um critério de teste.
+- **Componentes de estrutura:** estes componentes têm de existir em, pelo menos, um critério de teste.
 
 Se não existir um componente de estrutura em, pelo menos, um critério de teste ajustado a um requisito ou cenário, pondere se o componente de estrutura é necessário ou não. Além disso, certifique-se de que tem os seguintes itens:
 
-- **As** Contas de teste que são licenciadas para o EMS e o Office 365 para testar todos os cenários de caso de uso.
+- **Contas:** contas de teste com licenças do EMS e do Office 365 para testar todos os cenários de casos de utilização.
 
-- **Pseudodispositivos** Dispositivos de teste que podem ser apagados ou redefinidos para os padrões de fábrica.
+- **Dispositivos:** dispositivos de teste que podem ser apagados ou repostos para as predefinições de fábrica.
 
 - **Componentes de integração:** Todos os componentes de integração (conectores de certificado e o conector do Exchange local do Intune) devem ser instalados e configurados se necessário.
 
@@ -63,7 +64,7 @@ A validação funcional consiste no teste de cada componente e configuração pa
 
 ## <a name="use-case-validation-testing"></a>Testes de validação de casos de utilização
 
-Efetue testes de validação de casos de utilização para verificar se os cenários estão completos e funcionais. Há dois tipos de cenários de caso de uso: Administrador de ti e usuário final.
+Efetue testes de validação de casos de utilização para verificar se os cenários estão completos e funcionais. Existem dois tipos de cenários de casos de utilização: administrador de TI e utilizador final.
 
 ### <a name="it-admin"></a>Administrador de TI
 
@@ -77,7 +78,7 @@ Efetue testes de validação do utilizador final para verificar se a experiênci
 
 ![Tabela 3, secção 9](./media/planning-guide-test-validation/section-9-image-3-table.PNG)
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Agora que testou e validou os cenários funcionais e de casos de utilização do Intune, está pronto para a [implementação de produção do Intune](../planning-guide-rollout-plan.md).
 

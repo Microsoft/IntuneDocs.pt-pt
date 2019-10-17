@@ -9,20 +9,20 @@ manager: dougeby
 ms.date: 07/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
-ms.technology: ''
-ms.assetid: ''
+ms.assetid: b8d9aef2-8757-4e22-9b24-a0833d27304c
 ms.reviewer: kerimh
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 18c5622d9ce2566d5edf6ac5ebdfc931c8638418
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 2503013e6ca0d907a05c81f895b44878784dbbd4
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71731560"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502717"
 ---
 # <a name="network-endpoints-for-microsoft-intune"></a>Pontos de extremidade de rede para Microsoft Intune  
 
@@ -47,7 +47,7 @@ Os dispositivos geridos requerem configurações que permitam a **Todos os Utili
 
 As tabelas que se seguem listam as portas e os serviços a que o cliente do Intune acede:
 
-|Domínios    |Endereço IP      |
+|Domains    |Endereço IP      |
 |-----------|----------------|
 |login.microsoftonline.com <br> *. officeconfig.msocdn.com <br> config.office.com <br> graph.windows.net| Mais informações em [Intervalos de endereços IP e URLs do Office 365](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2) |
 |portal.manage.microsoft.com<br> m.manage.microsoft.com |52.175.12.209<br>20.188.107.228<br>52.138.193.149<br>51.144.161.187<br>52.160.70.20<br>52.168.54.64 <br>13.72.226.202<br>52.189.220.232|
@@ -95,31 +95,31 @@ Se você estiver usando o Intune para implantar scripts do PowerShell ou aplicat
 
 |ASU | Nome do armazenamento | CDN |
 | --- | --- |--- |
-| AMSUA0601 | prodmsua06data | https:\//prodmsua06data.azureedge.net |
-| AMSUA0602 | prodamsua0602data | https:\//prodamsua0602data.azureedge.net |
-| AMSUA0101 | prodmsua01data | https:\//prodmsua01data.azureedge.net |
-| AMSUA0201 | prodmsua02data | https:\//prodmsua02data.azureedge.net |
-| AMSUA0202 | Prodmsua0202rcdata | https:\//prodamsua0202data.azureedge.net/ |
-| AMSUA0401 | prodmsua04data | https:\//prodmsua04data.azureedge.net |
-| AMSUA0402 | Prodmsua0402rcdata | https:\//prodamsua0402data.azureedge.net/ |
-| AMSUA0501 | prodmsua05data | https:\//prodmsua05data.azureedge.net |
-| AMSUA0502 | prodmsua0502data | https:\//prodmsua0502data.azureedge.net |
-| AMSUB0101 | prodmsub01data | https:\//prodmsub01data.azureedge.net |
-| AMSUB0102 | prodamsub0102data | https:\//prodamsub0102data.azureedge.net |
-| AMSUB0201 | prodmsub02data | https:\//prodmsub02data.azureedge.net |
-| AMSUB0202 | Prodmsub0202rcdata | https:\//prodamsub0202data.azureedge.net |
-| AMSUB0301 | Prodmsub03data2 | https:\//prodmsub03data2.azureedge.net |
-| AMSUB0302 | Prodmsub0302rcdata | https:\//prodamsub0302data.azureedge.net |
-| AMSUB0501 | prodmsub05data | https:\//prodmsub05data.azureedge.net |
-| AMSUC0101 | prodmsuc01data | https:\//prodmsuc01data.azureedge.net |
-| AMSUC0201 | prodmsuc02data | https:\//prodmsuc02data.azureedge.net |
-| AMSUC0301 | prodmsuc03data | https:\//prodmsuc03data.azureedge.net |
-| AMSUC0501 | prodmsuc05data | https:\//prodmsuc05data.azureedge.net |
-| AMSUA0701 | pemsua07rcdata | https:\//pemsua07data.azureedge.net |
+| AMSUA0601 | prodmsua06data | https: \//prodmsua06data. azureedge. net |
+| AMSUA0602 | prodamsua0602data | https: \//prodamsua0602data. azureedge. net |
+| AMSUA0101 | prodmsua01data | https: \//prodmsua01data. azureedge. net |
+| AMSUA0201 | prodmsua02data | https: \//prodmsua02data. azureedge. net |
+| AMSUA0202 | Prodmsua0202rcdata | https: \//prodamsua0202data. azureedge. net/ |
+| AMSUA0401 | prodmsua04data | https: \//prodmsua04data. azureedge. net |
+| AMSUA0402 | Prodmsua0402rcdata | https: \//prodamsua0402data. azureedge. net/ |
+| AMSUA0501 | prodmsua05data | https: \//prodmsua05data. azureedge. net |
+| AMSUA0502 | prodmsua0502data | https: \//prodmsua0502data. azureedge. net |
+| AMSUB0101 | prodmsub01data | https: \//prodmsub01data. azureedge. net |
+| AMSUB0102 | prodamsub0102data | https: \//prodamsub0102data. azureedge. net |
+| AMSUB0201 | prodmsub02data | https: \//prodmsub02data. azureedge. net |
+| AMSUB0202 | Prodmsub0202rcdata | https: \//prodamsub0202data. azureedge. net |
+| AMSUB0301 | Prodmsub03data2 | https: \//prodmsub03data2. azureedge. net |
+| AMSUB0302 | Prodmsub0302rcdata | https: \//prodamsub0302data. azureedge. net |
+| AMSUB0501 | prodmsub05data | https: \//prodmsub05data. azureedge. net |
+| AMSUC0101 | prodmsuc01data | https: \//prodmsuc01data. azureedge. net |
+| AMSUC0201 | prodmsuc02data | https: \//prodmsuc02data. azureedge. net |
+| AMSUC0301 | prodmsuc03data | https: \//prodmsuc03data. azureedge. net |
+| AMSUC0501 | prodmsuc05data | https: \//prodmsuc05data. azureedge. net |
+| AMSUA0701 | pemsua07rcdata | https: \//pemsua07data. azureedge. net |
 
 ## <a name="windows-push-notification-services-wns"></a>Windows Push Notification Services (WNS)  
 
-Para dispositivos Windows gerenciados pelo Intune gerenciados usando o MDM (gerenciamento de dispositivo móvel), as ações de dispositivo e outras atividades imediatas exigem o uso do WNS (Windows Push Notification Services). Para obter mais informações, consulte [permitindo o tráfego de notificação do Windows por meio](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config)de firewalls corporativos.  
+Para dispositivos Windows gerenciados pelo Intune gerenciados usando o MDM (gerenciamento de dispositivo móvel), as ações de dispositivo e outras atividades imediatas exigem o uso do WNS (Windows Push Notification Services). Para obter mais informações, consulte [permitindo o tráfego de notificação do Windows por meio de firewalls corporativos](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config).  
 
 ## <a name="delivery-optimization-port-requirements"></a>Requisitos de porta de otimização de entrega  
 
@@ -135,15 +135,15 @@ Para usar a otimização de entrega, você deve permitir solicitações de inter
 
 Permitir os nomes de host a seguir por meio do firewall para dar suporte à otimização de entrega.
 Para a comunicação entre clientes e o serviço de nuvem de otimização de entrega:
-- \*. do.dsp.mp.microsoft.com
+- \*.do.dsp.mp.microsoft.com
 
 Para metadados de otimização de entrega:
-- \*. dl.delivery.mp.microsoft.com
-- \*. emdl.ws.microsoft.com
+- \*.dl.delivery.mp.microsoft.com
+- \*.emdl.ws.microsoft.com
 
 ## <a name="apple-device-network-information"></a>Informações da rede de dispositivos Apple  
 
-|Utilizado para|Nome do anfitrião (endereço IP/sub-rede)|Protocol|Port|
+|Utilizado para|Nome do anfitrião (endereço IP/sub-rede)|Protocolo|Porta|
 |-----|--------|------|-------|
 |Obter e apresentar o conteúdo de servidores da Apple|itunes.apple.com<br>\*.itunes.apple.com<br>\*.mzstatic.com<br>\*.phobos.apple.com<br> \*.phobos.itunes-apple.com.akadns.net |    HTTP    |      80      |
 |Comunicações com os servidores do APNS|#-courier.push.apple.com<br>'#' é um número aleatório de 0 a 50.|    TCP     |  5223 e 443  |

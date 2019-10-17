@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 09/28/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: a0376ea1-eb13-4f13-84da-7fd92d8cd63c
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f4751b77362567ad18f5b775e5bda9c1081dd181
-ms.sourcegitcommit: 78f9750712c254d8b123ef15b74f30ca999aa128
+ms.openlocfilehash: 30b5debc6e1ab113a08d8930f96f6cbc9bf12b48
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "71911228"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72509530"
 ---
 # <a name="set-up-the-on-premises-intune-exchange-connector"></a>Configurar o Intune Exchange Connector local
 Para ajudar a proteger o acesso ao Exchange, o Intune conta com um componente local que é conhecido como o conector do Exchange Microsoft Intune. Esse conector também é chamado de *conector local do Exchange ActiveSync* em alguns locais do console do Intune. 
@@ -52,13 +53,13 @@ A tabela a seguir lista os requisitos para o computador no qual você instala o 
 
 |  Requisito  |   Mais informações     |
 |---------------|------------------------|
-|  Sistemas operativos        | O Intune dá suporte ao Intune Exchange Connector em um computador que executa qualquer edição do Windows Server 2008 SP2 64-bit, Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2 ou Windows Server 2016.<br /><br />Não há suporte para o conector em nenhuma instalação Server Core.  |
+|  Operating systems        | O Intune dá suporte ao Intune Exchange Connector em um computador que executa qualquer edição do Windows Server 2008 SP2 64-bit, Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2 ou Windows Server 2016.<br /><br />Não há suporte para o conector em nenhuma instalação Server Core.  |
 | Microsoft Exchange          | Os conectores no local necessitam do Microsoft Exchange 2010 SP3 ou posterior, ou o Exchange Online Dedicado legado. Para determinar se o ambiente dedicado do Exchange Online está na configuração *nova* ou *legada*, contacte o seu gestor de conta. |
 | Autoridade de gestão de dispositivos móveis           | [Definir o Intune como a autoridade de gestão de dispositivos móveis](../fundamentals/mdm-authority-set.md). |
 | Hardware              | O computador onde irá instalar o conector requer uma CPU de 1,6 GHz com 2 GB de RAM e, pelo menos, 10 GB de espaço livre no disco. |
 |  Sincronização do Active Directory             | Antes de usar o conector para conectar o Intune ao seu Exchange Server, [configure Active Directory sincronização](../fundamentals/users-add.md). Os usuários e grupos de segurança locais devem ser sincronizados com sua instância do Azure Active Directory. |
 | Software adicional         | O computador que hospeda o conector deve ter uma instalação completa do Microsoft .NET Framework 4,5 e do Windows PowerShell 2,0. |
-| Rede               | O computador no qual você instala o conector deve estar em um domínio que tenha uma relação de confiança com o domínio que hospeda o Exchange Server.<br /><br />Configure o computador para permitir que ele acesse o serviço do Intune por meio de firewalls e servidores proxy nas portas 80 e 443. O Intune usa estes domínios: <br> -manage.microsoft.com <br> @no__t -0\*manage.microsoft.com<br> @no__t -0\*.manage.microsoft.com <br><br> O Intune Exchange Connector se comunica com os seguintes serviços: <br> -Serviço do Intune: Porta HTTPS 443 <br> -Servidor de acesso para cliente do Exchange (CAS): Porta do serviço WinRM 443<br> -Descoberta automática do Exchange 443<br> -Serviços Web do Exchange (EWS) 443  |
+| Rede               | O computador no qual você instala o conector deve estar em um domínio que tenha uma relação de confiança com o domínio que hospeda o Exchange Server.<br /><br />Configure o computador para permitir que ele acesse o serviço do Intune por meio de firewalls e servidores proxy nas portas 80 e 443. O Intune usa estes domínios: <br> -manage.microsoft.com <br> @no__t -0\*manage.microsoft.com<br> @no__t -0\*.manage.microsoft.com <br><br> O Intune Exchange Connector se comunica com os seguintes serviços: <br> -Serviço do Intune: porta HTTPS 443 <br> -Servidor de acesso para cliente do Exchange (CAS): porta do serviço WinRM 443<br> -Descoberta automática do Exchange 443<br> -Serviços Web do Exchange (EWS) 443  |
 
 ### <a name="exchange-cmdlet-requirements"></a>Requisitos de cmdlets do Exchange
 
@@ -134,7 +135,7 @@ Siga estas etapas para instalar o Intune Exchange Connector. Se você tiver vár
 6. No campo **senha** , forneça a senha dessa conta para habilitar o Intune a acessar o Exchange Server.
 
    > [!NOTE]
-   > A conta usada para entrar no locatário precisa ser pelo menos um administrador de serviços do Intune. Sem essa conta de administrador, você receberá uma falha de conexão com o erro "o servidor remoto retornou um erro: (400) solicitação inadequada ".
+   > A conta usada para entrar no locatário precisa ser pelo menos um administrador de serviços do Intune. Sem essa conta de administrador, você receberá uma falha de conexão com o erro "o servidor remoto retornou um erro: (400) solicitação inadequada".
 
 7. Escolha **Ligar**.
 
@@ -183,7 +184,7 @@ Para melhorar o desempenho do Exchange Connector:
 2. Edite o arquivo *OnPremisesExchangeConnectorServiceConfiguration. xml*.
 3. Localize **EnableParallelCommandSupport** e defina o valor como **true**:  
      
-   \<EnableParallelCommandSupport > true\</EnableParallelCommandSupport >
+   \<EnableParallelCommandSupport > true @ no__t-1/EnableParallelCommandSupport >
 4. Salve o arquivo e reinicie o Microsoft Intune serviço do Exchange Connector.
 
 ## <a name="reinstall-the-intune-exchange-connector"></a>Reinstalar o Intune Exchange Connector
@@ -227,6 +228,6 @@ Você pode forçar um conector a executar uma sincronização usando as opções
    2. Selecione **Exchange local Access**.
    3. Selecione o conector que pretende sincronizar e, em seguida, selecione **Sincronização Rápida** ou **Sincronização Completa**.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Crie uma [política de acesso condicional para servidores Exchange locais](conditional-access-exchange-create.md).

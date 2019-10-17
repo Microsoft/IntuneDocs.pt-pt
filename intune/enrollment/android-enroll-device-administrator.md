@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 07/23/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1350935d78449c221a2ab74b7ea4091b1f793320
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: a72d3a16c5180b51fcc019d726a498e0d15ad1d3
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71730096"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503399"
 ---
 # <a name="android-device-administrator-enrollment"></a>Inscrição de administrador de dispositivos Android
 
@@ -50,7 +51,7 @@ Para obter mais informações sobre os recursos do Android Enterprise do Google,
 Por padrão, o Intune permite o registro de dispositivos Android com recursos de administrador do dispositivo.
 
 1. Para se preparar para gerir dispositivos móveis, tem de definir a autoridade de gestão de dispositivos móveis (MDM) para o **Microsoft Intune**. Veja [Set the MDM authority (Definir a autoridade de MDM)](../fundamentals/mdm-authority-set.md) para obter instruções. Este item só é definido uma vez, quando está a configurar pela primeira vez o Intune para a gestão de dispositivos móveis.
-2. Vá para > **registro** >  > de dispositivo do Intune registro do Android dispositivos pessoais e de propriedade corporativa com privilégios de administração de dispositivo usar dispositivo >  **administrador para gerenciar dispositivos**.
+2. Acesse o **Intune** > **registro de dispositivo** >  registro do**Android** > **dispositivos pessoais e corporativos com privilégios de administração de dispositivo** >  use o administrador do**dispositivo para gerenciar dispositivos**.
 3. [Indique aos seus utilizadores como devem inscrever os dispositivos](/intune-user-help/enroll-your-device-in-intune-android).  
 
 Depois de um utilizador concluir a inscrição, pode começar a gerir os respetivos dispositivos no Intune, incluindo [atribuir políticas de conformidade](../protect/compliance-policy-create-android.md), [gerir aplicações](../apps/app-management.md) e mais.
@@ -65,6 +66,6 @@ Para bloquear dispositivos Android de administrador de dispositivo ou bloquear s
 
 
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 - [Atribuir políticas de conformidade](../protect/compliance-policy-create-android.md)
 - [Gerenciando aplicativos](../apps/app-management.md)

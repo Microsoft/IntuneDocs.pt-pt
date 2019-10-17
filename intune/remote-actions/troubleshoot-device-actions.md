@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 08/02/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: remote-actions
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e1b3139db8b217dceb495f67e809eae8319eae0c
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 96f6dc3d1a8f8589395cf49b3bb934adadf437a4
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71731708"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508504"
 ---
 # <a name="troubleshoot-device-actions-in-intune"></a>Solucionar problemas de ações de dispositivo no Intune
 
@@ -53,7 +54,7 @@ Não. E você não precisa inserir os traços.
 ## <a name="remove-devices-action"></a>Ação remover dispositivos
 
 ### <a name="how-do-i-tell-who-started-a-retirewipe"></a>Como fazer dizer quem iniciou uma desativação/apagamento?
-Vá para > **dispositivos** do Intune ações de dispositivo > marque a coluna Iniciado por. > 
+Acesse o **Intune** > **dispositivos** > **ações de dispositivo** > marque a coluna **iniciado por** .
 Se você não vir uma entrada, a pessoa mais provável de iniciar a ação é o usuário do dispositivo. Eles provavelmente usaram o Portal da Empresa aplicativo ou o portal.manage.microsoft.com.
 
 ### <a name="why-wasnt-my-application-uninstalled-after-using-retire"></a>Por que meu aplicativo não foi desinstalado depois de usar a desativação?
@@ -68,7 +69,7 @@ Esse é o comportamento esperado. O Google não permite a redefinição de fábr
 Como desativar um dispositivo não revoga tokens de acesso. Você pode usar políticas de acesso condicional para atenuar essa condição.
 
 ### <a name="how-can-i-monitor-a-retirewipe-action-after-it-was-issued"></a>Como posso monitorar uma ação de desativar/apagar após sua emissão?
-Vá para > dispositivosdo > Intune ações de**dispositivo**.
+Acesse o **Intune** > **dispositivos** > **ações de dispositivo**.
 
 ### <a name="why-do-wipes-sometimes-show-as-pending-indefinitely"></a>Por que as limpezas às vezes são mostradas como pendentes de forma indefinida?
 Os dispositivos nem sempre relatam seu status de volta para o serviço do Intune antes que a redefinição seja iniciada. Assim, a ação é mostrada como pendente. Se você confirmou que a ação foi bem-sucedida, exclua o dispositivo do serviço.
@@ -92,6 +93,6 @@ Depois que essas etapas forem concluídas, você não deverá mais receber essa 
 ### <a name="why-am-i-prompted-to-set-a-new-passcode-on-my-ios-device-when-i-issue-the-remove-passcode-action"></a>Por que sou solicitado a definir uma nova senha no meu dispositivo iOS quando eu emitir a ação remover senha?
 Porque uma de suas políticas de conformidade requer uma senha.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Obtenha [ajuda de suporte da Microsoft](../fundamentals/get-support.md)ou use os [fóruns da Comunidade](https://social.technet.microsoft.com/Forums/en-US/home?category=microsoftintune).

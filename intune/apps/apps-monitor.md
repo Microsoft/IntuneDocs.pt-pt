@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 07/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 03c38472a3100ec2d717e802e07e189a53ac0866
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 7836b0d08367d8b021a8ea0c7f0e06311fe972b1
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71731204"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72498583"
 ---
 # <a name="monitor-app-information-and-assignments-with-microsoft-intune"></a>Monitorizar informações e atribuições da aplicação com o Microsoft Intune
 
@@ -42,14 +43,14 @@ O Intune fornece várias formas de monitorizar as propriedades de aplicações q
 
 No painel da aplicação, pode rever os detalhes acerca do estado de uma aplicação no seu ambiente.
 
-### <a name="essentials"></a>Essentials
+### <a name="essentials"></a>Essenciais
 A secção **Essentials** contém as seguintes informações sobre a aplicação:
 
  | **Detalhes da aplicação**            | **Descrição**                                                      |
 |------------------------|------------------------------------------------------------------|
 | **Publicador**          | O publicador da aplicação.                                            |
 | **Sistema Operacional**   | O sistema operativo da aplicação (Windows, iOS, Android, etc.). |
-| **Criado**             | A data e hora em que esta revisão foi criada. <b>**Nota**: este valor de data é atualizado quando um administrador de TI altera os metadados da aplicação, por exemplo, altera a categoria ou a descrição da aplicação.                        |
+| **Criado**             | A data e hora em que esta revisão foi criada. <b>**Observação**: esse valor de data é atualizado quando um administrador de ti altera os metadados do aplicativo, como alterar a categoria do aplicativo ou a descrição do aplicativo.                        |
 | **Atribuído**           | Se a aplicação foi atribuída (**Sim** ou **Não**).                  |
 
 ### <a name="device-and-user-status-graphs"></a>Gráficos de estado do utilizador e do dispositivo
@@ -87,14 +88,14 @@ Uma lista de estados do utilizador é apresentada ao selecionar **Estado de inst
 
 | **Coluna do utilizador**     | **Descrição**                           |
 |---------------------|-------------------------------------------|
-| **Name**            | O nome do utilizador no Azure Active Directory.         |
+| **Nome**            | O nome do utilizador no Azure Active Directory.         |
 | **Nome de utilizador**       | O nome exclusivo do utilizador.              |
 | **Instalações**   | O número de aplicações instaladas pelo utilizador. |
 | **Falhas**        | O número de falhas nas instalações das aplicações para o utilizador.     |
 | **Não instalado**   | O número de aplicações não instaladas pelo utilizador. |
 
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 - Para obter mais informações sobre como trabalhar com os dados do seu Intune, veja [Utilizar o Armazém de Dados do Intune](../reports-nav-create-intune-reports.md).
 - Para saber mais sobre as políticas de configuração de aplicações, veja [Políticas de configuração de aplicações do Intune](app-configuration-policies-overview.md).

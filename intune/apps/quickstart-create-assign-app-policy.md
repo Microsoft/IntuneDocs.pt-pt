@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 07/24/2019
 ms.topic: quickstart
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 2586fce0-5dca-4686-b9c4-791778838401
@@ -17,14 +18,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8642672de048b88f709fef72d2027ec78c3b4327
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: bcda312274e78d327a3a515eb6c95454e38c96f1
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71731088"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72507118"
 ---
-# <a name="quickstart-create-and-assign-an-app-protection-policy"></a>Início rápido: Criar e atribuir uma política de proteção de aplicações
+# <a name="quickstart-create-and-assign-an-app-protection-policy"></a>Guia de Início Rápido: criar e atribuir uma política de proteção de aplicações
 
 Neste guia de início rápido, irá utilizar o Intune para criar e atribuir uma política de proteção de aplicações a uma aplicação cliente no dispositivo de um utilizador final. O Intune utiliza políticas de proteção de aplicações para confirmar que as suas aplicações estão a cumprir os requisitos de proteção de dados da sua organização.
 
@@ -46,9 +47,9 @@ Use as seguintes etapas para criar uma política de proteção de aplicativo:
 2. Introduza os seguintes detalhes: 
 
     - **Nome**: *Proteção de conteúdo do Windows 10*
-    - **Descrição**: *Os usuários associados a essa política não poderão recortar, copiar ou colar qualquer conteúdo entre o aplicativo atribuído e outros aplicativos não gerenciados no dispositivo.*
+    - **Descrição**: *Os utilizadores associados a esta política não conseguirão cortar, copiar nem colar conteúdos entre a aplicação atribuída e outras aplicações não geridas no dispositivo.*
     - **Plataforma**: *Windows 10*
-    - **Estado do registro**: *Com o registro*
+    - **Estado da inscrição**: *Com inscrição*
 
 3. Selecione **Aplicações protegidas** para selecionar as aplicações que têm de cumprir esta política.
 4. Clique em **Adicionar aplicações**.
@@ -78,11 +79,11 @@ Agora já atribuiu a política de proteção de aplicações.
 > [!NOTE]
 > As políticas de proteção de aplicações só podem ser aplicadas a grupos que contenham utilizadores e não dispositivos.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Neste guia de início rápido, criou e atribuiu uma política de proteção de aplicações. Os utilizadores da aplicação aos quais foi atribuída esta política não conseguirão cortar, copiar nem colar conteúdos entre a aplicação atribuída e outras aplicações não geridas no dispositivo. Este tipo de proteção irá ajudá-lo a proteger os dados da sua organização. Para obter mais informações sobre políticas de proteção de aplicações no Intune, veja [What are app protection policies?](app-protection-policy.md) (O que são as políticas de proteção de aplicações?).
 
 Para seguir esta série de guias de início rápido do Intune, continue para o próximo guia de início rápido.
 
 > [!div class="nextstepaction"]
-> [TUTORIAIS Criar e atribuir uma função personalizada @ no__t-0
+> [Guia de Início Rápido: criar e atribuir uma função personalizada](../fundamentals/create-custom-role.md)

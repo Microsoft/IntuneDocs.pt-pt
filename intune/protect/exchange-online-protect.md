@@ -8,6 +8,7 @@ ms.author: brenduns
 manager: dougeby
 ms.date: 10/31/2017
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: medium
 ms.topic: archived
 ms.technology: ''
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 66e1d2df3d6aa3e5346104d6548df7dcb210c0f0
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 6ffcc4a7e48064e6a458126667cf6ab2c4e75777
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71729220"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502269"
 ---
 # <a name="protect-office-365-exchange-online-without-requiring-device-management"></a>Proteger o Office 365 Exchange Online sem a necessidade de uma gestão de dispositivos
 
@@ -43,7 +44,7 @@ Também pode optar por definir um sistema de gestão de dispositivos. Este tipo 
 * Peça aos seus funcionários e estudantes para transferirem e instalarem o Microsoft Outlook ou Microsoft SharePoint para iOS a partir da Apple App Store ou para Android a partir da Google Play Store. 
 * Se bloquear o acesso a aplicações que não utilizem autenticação moderna, informe os funcionários e estudantes sobre esta restrição. 
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Você usou o acesso condicional baseado em aplicativo para aumentar a segurança dos dados da empresa. Como parte dos passos seguintes, pode saber mais sobre outras formas de aumentar a proteção dos dados da sua empresa, incluindo: 
 

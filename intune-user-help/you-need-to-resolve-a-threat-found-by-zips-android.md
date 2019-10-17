@@ -9,6 +9,7 @@ ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 9ffbb656-93cd-4e0b-96c0-c5038cd2cf31
 searchScope:
@@ -16,12 +17,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c5aebe07259e2fcee009e97bc3c12d7c02933360
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: d1a0583b18d34dbf8b942cf2a31656d3d61c1600
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61490828"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72507771"
 ---
 # <a name="resolve-a-threat-found-by-zimperium-zips"></a>Resolver uma ameaça encontrada pelo Zimperium zIPS
 

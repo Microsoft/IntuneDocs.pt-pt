@@ -9,6 +9,7 @@ ms.date: 11/06/2017
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 1ed8456c-ef70-429f-9c65-081bb2dfa6ac
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: shburbid
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 59e33e75a38711e95631613e18ce1bd2fb459582
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 38862db505878099ae6a04bb152d56a11363d575
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61504558"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72507739"
 ---
 # <a name="update-your-windows-10-device"></a>Atualizar o seu dispositivo Windows 10
 

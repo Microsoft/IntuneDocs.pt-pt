@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 07/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: remote-actions
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
@@ -15,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e88371ac1ab51340f0f897d835f78562bed7d252
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: a72477351425e9230200995658cc6f73a8565fb7
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71732428"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72509486"
 ---
 # <a name="see-device-details-in-intune"></a>Consultar os detalhes do dispositivo no Intune
 
@@ -56,9 +57,9 @@ Dependendo da operadora usada pelos dispositivos, nem todos os detalhes podem se
 > [!Note]  
 > O inventário de hardware e software é atualizado no serviço do Intune a cada 7 dias.
 
-|Detalhe|Descrição|Plataforma| 
+|Detalhes|Description|Platform| 
 |--------------|----------------------|----|  
-|Name|O nome do dispositivo.|Windows, iOS|
+|Nome|O nome do dispositivo.|Windows, iOS|
 |Nome da gestão|O nome do dispositivo utilizado apenas na consola. Alterar este nome não irá alterar o nome no dispositivo.|Windows, iOS|
 |UDID|O Identificador de Dispositivo Exclusivo do dispositivo.|Windows, iOS|
 |ID de Dispositivo do Intune|Um GUID que identifica exclusivamente o dispositivo.|Windows, iOS|
@@ -66,7 +67,7 @@ Dependendo da operadora usada pelos dispositivos, nem todos os detalhes podem se
 |Dispositivo partilhado|Se definido como **Sim**, o dispositivo é partilhado por mais do que um utilizador.|Windows, iOS|
 |Inscrição de utilizador aprovado|Em caso **afirmativo**, o dispositivo tem o registro aprovado pelo usuário que permite que os administradores gerenciem determinadas configurações de segurança no dispositivo.|Windows, iOS|
 |Sistema operativo|O sistema operativo utilizado no dispositivo.|Windows, iOS|
-|Versão do sistema operativo|A versão do sistema operativo do dispositivo.|Windows, iOS|
+|Versão do sistema operativo|A versão do sistema operacional no dispositivo.|Windows, iOS|
 |Idioma do sistema operativo|O idioma definido para o sistema operativo no dispositivo.|Windows, iOS|
 |Número de Build|O número de Build do sistema operacional.|Android|
 |Nível de patch de segurança|O nível de patch de segurança para o dispositivo.|Android|
@@ -74,8 +75,8 @@ Dependendo da operadora usada pelos dispositivos, nem todos os detalhes podem se
 |Espaço de armazenamento livre|O espaço de armazenamento não utilizado no dispositivo (em gigabytes).|Windows, iOS|
 |IMEI|A Identidade Internacional do Equipamento Móvel do dispositivo.|Windows, iOS, Android|
 |MEID|O identificador de equipamento móvel do dispositivo.|Windows, iOS, Android|
-|Fabricante|O fabricante do dispositivo.|Windows, iOS, Android|
-|Modelo|O modelo do dispositivo.|Windows, iOS, Android|
+|Manufacturer|O fabricante do dispositivo.|Windows, iOS, Android|
+|Model|O modelo do dispositivo.|Windows, iOS, Android|
 |Número de telefone|O número de telemóvel atribuído ao dispositivo.|Windows, iOS, Android|
 |Operadora subscrita|A operadora sem fios do dispositivo.|Windows, iOS, Android|
 |Tecnologia de rede móvel|O sistema de rádio utilizado pelo dispositivo.|Windows, iOS, Android|
@@ -94,5 +95,5 @@ Dependendo da operadora usada pelos dispositivos, nem todos os detalhes podem se
 
 
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 Veja o que mais pode fazer para [gerir os seus dispositivos](device-management.md) com o Intune.

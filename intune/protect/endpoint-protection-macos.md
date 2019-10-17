@@ -8,18 +8,19 @@ manager: dougeby
 ms.date: 10/02/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6090d329eee6f27da21b6133a2b7ccdc7072feb3
-ms.sourcegitcommit: f04e21ec459998922ba9c7091ab5f8efafd8a01c
+ms.openlocfilehash: 358a396e762f1f20051abadfc2f3df80f37ca8c8
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71814119"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502291"
 ---
 # <a name="macos-endpoint-protection-settings-in-intune"></a>Configurações do MacOS Endpoint Protection no Intune  
 
@@ -35,7 +36,7 @@ Este artigo mostra as configurações do Endpoint Protection que você pode conf
   - **Mac App Store e programadores identificados**  
   - **Em qualquer lugar**  
 
-  **Padrão**: Não configurado  
+  **Padrão**: não configurado  
 
 - **O usuário pode substituir o gatekeeper**  
   Impede que os usuários substituam a configuração do gatekeeper e impede que os usuários controlem clicando para instalar um aplicativo. Quando estiver ativado, os utilizadores podem manter a tecla Ctrl premida e clicar em qualquer aplicação e instalá-la.  
@@ -43,7 +44,7 @@ Este artigo mostra as configurações do Endpoint Protection que você pode conf
   - **Não configurado** -os usuários podem controlar e clicar para instalar aplicativos.  
   - **Bloquear** – impede que os usuários usem o controle-clique para instalar aplicativos.  
 
-  **Padrão**: Não configurado  
+  **Padrão**: não configurado  
 
 ## <a name="firewall"></a>Firewall  
 
@@ -55,14 +56,14 @@ Utilize a firewall para controlar ligações por aplicação e não por porta. U
   - **Não configurado**  
   - **Desabilitar**  
 
-  **Padrão**: Não configurado  
+  **Padrão**: não configurado  
 
 - **Conexões de entrada**  
   Bloqueie todas as conexões de entrada, exceto as conexões necessárias para os serviços básicos da Internet, como DHCP, Bonjour e IPSec. Esta funcionalidade também bloqueia todos os serviços de partilha, tal como a Partilha de Ficheiros e a Partilha de Ecrãs. Se estiver a utilizar serviços de partilha, mantenha esta definição como *Não configurado*.  
   - **Não configurado**  
   - **Bloquear**  
 
-  **Padrão**: Não configurado  
+  **Padrão**: não configurado  
 
 **Permitir ou bloquear conexões de entrada para aplicativos específicos.**  
 
@@ -77,7 +78,7 @@ Utilize a firewall para controlar ligações por aplicação e não por porta. U
     - **Não configurado**  
     - **Desabilitar**  
 
-    **Padrão**: Não configurado  
+    **Padrão**: não configurado  
 
 ## <a name="filevault"></a>FileVault  
 Para obter mais informações sobre as configurações do Apple FileVault, consulte [FDEFileVault](https://developer.apple.com/documentation/devicemanagement/fdefilevault) no conteúdo do desenvolvedor da Apple. 
@@ -90,7 +91,7 @@ Para obter mais informações sobre as configurações do Apple FileVault, consu
   - **Não configurado**  
   - **Desabilitar**  
 
-  **Padrão**: Não configurado  
+  **Padrão**: não configurado  
 
   - **Tipo de chave de recuperação**  
     Chaves de recuperação de *chave pessoal* são criadas para dispositivos. Defina as configurações a seguir para a chave pessoal.  
@@ -104,7 +105,7 @@ Para obter mais informações sobre as configurações do Apple FileVault, consu
     - **Não configurado**  
     - **Desabilitar** – desabilitar o prompt na saída.
 
-    **Padrão**: Não configurado  
+    **Padrão**: não configurado  
 
   - **Número de vezes com permissão para ignorar**  
   Defina o número de vezes que um usuário pode ignorar prompts para habilitar FileVault antes que FileVault seja necessário para que o usuário entre. 
@@ -113,7 +114,7 @@ Para obter mais informações sobre as configurações do Apple FileVault, consu
     - **1** a **10** -permite que um usuário ignore o prompt de 1 a 10 vezes antes de exigir a criptografia no dispositivo.  
     - **Sem limite, sempre avisar** -o usuário é solicitado a habilitar FileVault, mas a criptografia nunca é necessária.  
  
-    **Padrão**: *Varia* -quando a configuração de *desabilitar prompt em sair* está definida como **não configurado**, essa configuração assume como padrão **não configurado**. Quando *desabilitar prompt na saída* estiver definido como **desabilitar**, essa configuração padrão será **1** e o valor **não configurado não** será uma opção.
+    **Padrão**: *varia* -quando a configuração *desabilitar prompt em sair* está definida como **não configurado**, essa configuração assume como padrão **não configurado**. Quando *desabilitar prompt na saída* estiver definido como **desabilitar**, essa configuração padrão será **1** e o valor **não configurado não** será uma opção.
 
 Para obter mais informações sobre o FileVault com o Intune, consulte [chaves de recuperação do FileVault](encryption-monitor.md#filevault-recovery-keys).
 

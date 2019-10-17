@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 01/10/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 6f4de4bd-3dde-4a8d-8e22-46c5d06c3eea
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3fc42193b461b8a0364e4ef2a2c34fe3e446ada3
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: f78c628498624b62daf6c3ac597547851697c500
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71730704"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72493334"
 ---
 # <a name="use-the-take-a-test-app-on-windows-10-devices-in-microsoft-intune"></a>Usar o aplicativo fazer um teste em dispositivos Windows 10 no Microsoft Intune
 
@@ -42,9 +43,9 @@ Este artigo lista as etapas para criar um perfil de configuração de dispositiv
 3. Introduza as seguintes propriedades:
 
     - **Nome**: introduza um nome descritivo para o novo perfil.
-    - **Descrição**: introduza uma descrição para o perfil. Esta definição é opcional, mas recomendada.
-    - **Plataforma**: Escolha **Windows 10 e posterior**.
-    - **Perfil**: Escolha o **perfil de educação**.
+    - **Descrição:** introduza uma descrição para o perfil. Esta definição é opcional, mas recomendada.
+    - **Plataforma**: selecione **Windows 10 e posterior**.
+    - **Perfil**: escolha o **perfil de educação**.
 
 4. Insira as configurações que você deseja configurar:
 
@@ -54,7 +55,7 @@ Este artigo lista as etapas para criar um perfil de configuração de dispositiv
 
 Após introduzir as suas definições e criar o perfil, este será apresentado na lista de perfis. Em seguida, [atribua este perfil a alguns grupos](device-profile-assign.md).
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Consulte uma lista das [configurações de educação do Windows 10](education-settings-windows.md) e suas descrições.
 

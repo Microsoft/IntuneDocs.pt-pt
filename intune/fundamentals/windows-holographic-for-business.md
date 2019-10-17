@@ -8,20 +8,22 @@ manager: dougeby
 ms.date: 12/18/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
 ms.technology: ''
+ms.assetid: 585a2f17-106b-4f02-adf7-05f08a92dbc1
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9e50784529bb3128b08aa36859ca003f7c6f7691
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: cdb3623a61c16f69773703b8acdbb8f7c02b4ac4
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71732364"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72504738"
 ---
-# <a name="manage-and-use-different-device-management-features-on-windows-holographic-and-hololens-devices-with-intune"></a>Gerir e utilizar funcionalidades de gestão de dispositivos diferentes no Windows Holographic e dispositivos HoloLens com o Intune
+# <a name="manage-and-use-different-device-management-features-on-windows-holographic-and-hololens-devices-with-intune"></a>Gerenciar e usar diferentes recursos de gerenciamento de dispositivo em dispositivos Windows Holographic e HoloLens com o Intune
 
 O Microsoft Intune inclui muitos recursos para ajudar a gerir dispositivos que executam o Windows Holographic for Business, tais como o [Microsoft HoloLens](https://docs.microsoft.com/hololens/). Ao utilizar o Intune, pode confirmar que os dispositivos estão em conformidade com as regras da sua organização e pode personalizar o dispositivo ao adicionar uma VPN ou um perfil Wi-Fi. Outra funcionalidade importante é utilizar o dispositivo como um quiosque e executar uma aplicação específica ou um conjunto específico de aplicações.
 
@@ -33,11 +35,11 @@ Para utilizar dispositivos Windows Holographic com o Intune, crie um perfil de A
 
 O Azure Active Directory (AD) é um ótimo recurso para o ajudar a gerir e controlar os seus dispositivos com o Windows Holographic for Business. Com o Intune e o Azure AD, pode: 
 
-- **[Unir dispositivos a Azure Active Directory](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan)** : No Azure Active Directory (AD), você pode adicionar seus dispositivos Windows 10 de Propriedade do trabalho, incluindo dispositivos que executam o Windows Holographic for Business. Esta funcionalidade permite que o Azure AD controle o dispositivo. Ajuda a confirmar que os seus utilizadores estão a aceder aos recursos da empresa a partir de dispositivos que cumprem as normas de segurança e conformidade que estabeleceu.
+- **[Unir dispositivos a Azure Active Directory](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan)** : no Azure Active Directory (AD), você pode adicionar seus dispositivos Windows 10 de Propriedade do trabalho, incluindo dispositivos que executam o Windows Holographic for Business. Esta funcionalidade permite que o Azure AD controle o dispositivo. Ajuda a confirmar que os seus utilizadores estão a aceder aos recursos da empresa a partir de dispositivos que cumprem as normas de segurança e conformidade que estabeleceu.
 
-  [Gestão de dispositivos no Azure AD](https://docs.microsoft.com/azure/active-directory/devices/overview) fornece mais detalhes.
+  O [Gerenciamento de dispositivos no Azure ad](https://docs.microsoft.com/azure/active-directory/devices/overview) fornece mais detalhes.
 
-- **[Registro em massa para dispositivos Windows](../enrollment/windows-bulk-enroll.md)** : Você pode unir grandes números de novos dispositivos Windows ao Azure Active Directory (AD) e ao Intune. Esta funcionalidade chama-se inscrição em massa e utiliza pacotes de aprovisionamento. Estes pacotes associam os dispositivos com o Windows Holographic for Business ao seu inquilino do Azure AD e inscrevem-nos no Intune.
+- **[Inscrever dispositivos Windows em massa](../enrollment/windows-bulk-enroll.md)** : pode associar inúmeros dispositivos Windows novos ao Azure Active Directory e ao Intune. Esta funcionalidade chama-se inscrição em massa e utiliza pacotes de aprovisionamento. Estes pacotes associam os dispositivos com o Windows Holographic for Business ao seu inquilino do Azure AD e inscrevem-nos no Intune.
 
 ## <a name="company-portal"></a>Portal da Empresa
 **[Configurar a aplicação Portal da Empresa](../apps/company-portal-app.md)**
@@ -85,11 +87,11 @@ O Intune tem algumas ações incorporadas que permitem que os administradores de
 
 Ao utilizar dispositivos com o Windows Holographic for Business, pode realizar as seguintes ações: 
 
-- **[Apagar](../remote-actions/devices-wipe.md#wipe)** : A ação de **apagamento** remove o dispositivo do Intune e restaura o dispositivo de volta para as configurações padrão de fábrica. Utilize esta ação antes de dar o dispositivo a um novo utilizador ou se o dispositivo for perdido ou roubado.
+- **[Limpar](../remote-actions/devices-wipe.md#wipe)** : a ação **Limpar** remove o dispositivo do Intune e restaura as predefinições de fábrica do dispositivo. Utilize esta ação antes de dar o dispositivo a um novo utilizador ou se o dispositivo for perdido ou roubado.
 
-- **[Desativar](../remote-actions/devices-wipe.md#retire)** : A ação **desativar** remove o dispositivo do Intune. Também remove os dados da aplicação gerida, as definições e os perfis de e-mail atribuídos pelo Intune. Os dados pessoais do utilizador permanecem no dispositivo.
+- **[Extinguir](../remote-actions/devices-wipe.md#retire)** : a ação **Extinguir** remove o dispositivo do Intune. Também remove os dados da aplicação gerida, as definições e os perfis de e-mail atribuídos pelo Intune. Os dados pessoais do utilizador permanecem no dispositivo.
 
-- **[Sincronizar dispositivos para obter as políticas e ações mais recentes](../remote-actions/device-sync.md)** : A ação de **sincronização** força o dispositivo a fazer check-in imediatamente com o Intune. Quando um dispositivo comunica com o Intune, recebe imediatamente todas as ações ou políticas pendentes que tenham sido atribuídas ao mesmo. Esta funcionalidade ajuda a validar e resolver problemas de políticas que atribuiu, sem esperar pela próxima comunicação agendada.
+- **[Sincronizar dispositivos para obter as políticas e ações mais recentes](../remote-actions/device-sync.md)** : a ação **Sincronizar** força o dispositivo a comunicar imediatamente com o Intune. Quando um dispositivo comunica com o Intune, recebe imediatamente todas as ações ou políticas pendentes que tenham sido atribuídas ao mesmo. Esta funcionalidade ajuda a validar e resolver problemas de políticas que atribuiu, sem esperar pela próxima comunicação agendada.
 
 O tópico **[O que é a gestão de dispositivos do Microsoft Intune?](../remote-actions/device-management.md)** é um bom recurso para saber mais sobre como gerir dispositivos com o portal do Azure. 
 

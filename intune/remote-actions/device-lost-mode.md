@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 04/25/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: remote-actions
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 126a7489-fe3e-43fd-a681-defb2fe0bb66
@@ -15,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9ac83160e6604b7a679e03bb244e1dd5081a5fc5
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: aecbcd91eef668ba2a92acfc9b42e6c68df3672a
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71732648"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72509413"
 ---
 # <a name="enable-lost-mode-on-ios-devices-with-intune"></a>Ativar o Modo Perdido em dispositivos iOS com o Intune
 
@@ -55,6 +56,6 @@ Ao ativar o modo perdido, bloqueia qualquer utilização do dispositivo. O utili
 - Os dados de localização são encriptados quando são armazenados e, igualmente, quando estão a ser transmitidos.
 - Na mensagem que introduzir para apresentar no ecrã de bloqueio, não se esqueça de incluir detalhes específicos para devolver o dispositivo perdido.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Para ver o estado de ativação da funcionalidade Modo perdido, aceda a **Dispositivos** e selecione **Ações do dispositivo**.

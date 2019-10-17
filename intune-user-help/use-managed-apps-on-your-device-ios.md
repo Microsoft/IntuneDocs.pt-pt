@@ -9,6 +9,7 @@ ms.date: 01/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 3232c5c1-cb9f-45ca-806f-7e74eeb3533e
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5ae4e454a0ca41858cb670790fd5acd4d6bf998a
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 5daa9f6b9f50c561876818e75e56c9a948a8f955
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67546605"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508075"
 ---
 # <a name="use-managed-apps-on-your-ios-device"></a>Utilizar aplicações geridas no seu dispositivo iOS
 
@@ -45,12 +46,12 @@ Obtém aplicações geridas de duas formas diferentes:
 Por vezes, o suporte da empresa poderá adquirir múltiplas licenças para uma aplicação que instalar. Se vir uma mensagem a pedir que aceite o contrato do Apple Volume Purchase Program, isto é normal e pode aceitá-lo. Se não o aceitar, não poderá instalar a aplicação.
 
 ## <a name="available-apps"></a>Aplicações disponíveis   
- Sua organização seleciona as aplicações que são adequadas e útil para no trabalho ou escola. Estas aplicações são os únicos, encontrará no Portal da empresa.   
+ Sua organização seleciona aplicativos que são apropriados e úteis para você no trabalho ou na escola. Esses aplicativos são os únicos que você encontrará na Portal da Empresa.   
 
- Aplicações também são disponibilizadas para com base em seu tipo de dispositivo. Por exemplo, se estiver a utilizar a aplicação Portal da empresa para iOS, terá acesso a aplicações iOS, mas as aplicações Android não.   
+ Os aplicativos também são disponibilizados para você com base no tipo de dispositivo. Por exemplo, se você estiver usando o aplicativo Portal da Empresa para iOS, terá acesso aos aplicativos iOS, mas não aos aplicativos Android.   
 
-## <a name="request-an-app-for-work-or-school"></a>Pedido de aplicação para a empresa ou escola   
- Se existir uma aplicação precisa, mas não a vir no Portal da empresa, pode solicitá-la. Encontrar detalhes de contactos do seu **suporte técnico** na aplicação do Portal da empresa **suporte** separador. Encontrará as mesmas informações de contactos a [site do Portal da empresa](https://go.microsoft.com/fwlink/?linkid=2010980).   
+## <a name="request-an-app-for-work-or-school"></a>Solicitar um aplicativo para trabalho ou escola   
+ Se houver um aplicativo de que você precisa, mas não vir no Portal da Empresa, você poderá solicitá-lo. Encontre detalhes de contato para a **assistência técnica** na guia **suporte** do aplicativo portal da empresa. Você encontrará as mesmas informações de contato no [site Portal da empresa](https://go.microsoft.com/fwlink/?linkid=2010980).   
  
 
 ## <a name="what-can-my-company-support-manage-in-an-app"></a>O que pode gerir o suporte da minha empresa numa aplicação?  

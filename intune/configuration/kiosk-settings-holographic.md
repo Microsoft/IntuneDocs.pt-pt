@@ -8,18 +8,19 @@ manager: dougeby
 ms.date: 06/18/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e9318651dabcc93ef194c82b81b43fb25b98fb32
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: e555c62030cede57e98e34034367831c298c0ced
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71730584"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72492411"
 ---
 # <a name="windows-holographic-for-business-device-settings-to-run-as-a-kiosk-in-intune"></a>Configurações do dispositivo Windows Holographic for Business para execução como um quiosque no Intune
 
@@ -39,11 +40,11 @@ Para saber mais sobre o recurso de quiosque do Windows no Intune, consulte [defi
 
 Ao escolher o modo de quiosque de uma aplicação, introduza as seguintes definições:
 
-- **Tipo de logon do usuário**: Selecione **conta de usuário local** para inserir a conta de usuário local (para o dispositivo) ou uma conta da Microsoft (MSA) associada ao aplicativo de quiosque. Os tipos de conta de utilizador de **início de sessão automático** não são suportados pelo Windows Holographic for Business.
+- **Tipo de início de sessão de utilizador**: selecione **Conta de utilizador local** para introduzir a conta de utilizador local (no dispositivo) ou a Conta Microsoft associada à aplicação de quiosque. Os tipos de conta de utilizador de **início de sessão automático** não são suportados pelo Windows Holographic for Business.
 
-- **Tipo de aplicativo**: Selecione **aplicativo da loja**.
+- **Tipo de aplicação**: selecione **Aplicação da Loja**.
 
-- **Aplicação a executar no modo de quiosque**: Escolha **Adicionar um aplicativo da loja**e selecione um aplicativo na lista.
+- **Aplicação a executar no modo de quiosque**: escolha **Adicionar uma aplicação da loja** e selecione uma aplicação na lista.
 
     Não tem aplicações listadas? Adicione algumas através dos passos indicados em [Aplicações de Cliente](../apps/apps-add.md).
 
@@ -53,32 +54,32 @@ Ao escolher o modo de quiosque de uma aplicação, introduza as seguintes defini
 
 As aplicações neste modo estão disponíveis no menu Iniciar. Estas aplicações são as únicas aplicações que o utilizador pode abrir. Ao escolher o modo de quiosque de várias aplicações, introduza as seguintes definições:
 
-- **Direcionar dispositivos Windows 10 em modo S**: Escolha **não**. Não há suporte para o modo S no Windows Holographic for Business.
+- **Dispositivos Windows 10 no modo S de destino**: escolha **Não**. Não há suporte para o modo S no Windows Holographic for Business.
 
-- **Tipo de logon do usuário**: Adicione uma ou mais contas de usuário que podem usar os aplicativos que você adicionar. As opções são: 
+- **Tipo de início de sessão do utilizador**: adicione uma ou mais contas de utilizador que poderão utilizar as aplicações que adicionar. As opções são: 
 
-  - **Logon automático**: Sem suporte no Windows Holographic for Business.
-  - **Contas de usuário local**: **Adicione** a conta de usuário local (para o dispositivo). A conta que introduzir serve para iniciar sessão no quiosque.
-  - **Usuário ou grupo do Azure AD (Windows 10, versão 1803 e posterior)** : Requer credenciais de usuário para entrar no dispositivo. Selecione **Adicionar** para escolher os utilizadores ou grupos do Microsoft Azure AD na lista. Pode selecionar vários utilizadores e grupos. Escolha **Selecionar** para guardar as alterações.
-  - **Visitante do HoloLens**: A conta de visitante é uma conta de convidado que não requer nenhuma credencial de usuário ou autenticação, conforme descrito em [conceitos de modo de PC compartilhado](https://docs.microsoft.com/windows/configuration/set-up-shared-or-guest-pc#shared-pc-mode-concepts).
+  - **Início de sessão automático**: não suportado no Windows Holographic for Business.
+  - **Contas de utilizador local**: **adicione** a conta de utilizador local (para o dispositivo). A conta que introduzir serve para iniciar sessão no quiosque.
+  - **Utilizador ou grupo do Microsoft Azure AD (Windows 10, versão 1803 e posterior)** : requer credenciais de utilizador para iniciar sessão no dispositivo. Selecione **Adicionar** para escolher os utilizadores ou grupos do Microsoft Azure AD na lista. Pode selecionar vários utilizadores e grupos. Escolha **Selecionar** para guardar as alterações.
+  - **Visitante do HoloLens**: A conta de visitante é uma conta de convidado que não necessita de credenciais ou de autenticação do utilizador, como está descrito em [Shared PC mode concepts (Conceitos de modo de PC partilhado)](https://docs.microsoft.com/windows/configuration/set-up-shared-or-guest-pc#shared-pc-mode-concepts).
 
-- **Aplicativos**: Adicione os aplicativos a serem executados no dispositivo de quiosque. Lembre-se de que pode adicionar várias aplicações.
+- **Aplicações**: adicione as aplicações que quer executar no dispositivo de quiosque. Lembre-se de que pode adicionar várias aplicações.
 
-  - **Adicionar aplicativos da Store**: Selecione um aplicativo existente que você adicionou ou implantou no Intune como [aplicativos cliente](../apps/apps-add.md), incluindo aplicativos LOB. Se você não tiver nenhum aplicativo listado, o Intune dá suporte a muitos [tipos de aplicativos](../apps/apps-add.md) que você [adiciona ao Intune](../apps/store-apps-windows.md).
-  - **Adicionar aplicativo Win32**: Sem suporte no Windows Holographic for Business.
-  - **Adicionar por AUMID**: Use esta opção para adicionar aplicativos do Windows de caixa de entrada. Introduza as seguintes propriedades: 
+  - **Adicionar aplicativos da Store**: selecione um aplicativo existente que você adicionou ou implantou no Intune como [aplicativos cliente](../apps/apps-add.md), incluindo aplicativos LOB. Se você não tiver nenhum aplicativo listado, o Intune dá suporte a muitos [tipos de aplicativos](../apps/apps-add.md) que você [adiciona ao Intune](../apps/store-apps-windows.md).
+  - **Adicionar aplicação Win32**: não suportado no Windows Holographic for Business.
+  - **Adicionar por AUMID**: utilize esta opção para adicionar aplicações do Windows de caixa de entrada. Introduza as seguintes propriedades: 
 
-    - **Nome do aplicativo**: Necessário. Introduza um nome para a aplicação.
-    - **ID do modelo de usuário do aplicativo (AUMID)** : Necessário. Introduza o ID do modelo de utilizador da aplicação (AUMID) da aplicação Windows. Para obter este ID, veja [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (Localizar o ID do Modelo de Utilizador da Aplicação de uma aplicação instalada).
-    - **Tamanho do bloco**: Necessário. Escolha um tamanho de mosaico da aplicação: Pequeno, Médio, Largo ou Grande.
+    - **Nome da aplicação**: obrigatório. Introduza um nome para a aplicação.
+    - **ID do modelo de utilizador da aplicação (AUMID)** : obrigatório. Introduza o ID do modelo de utilizador da aplicação (AUMID) da aplicação Windows. Para obter este ID, veja [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (Localizar o ID do Modelo de Utilizador da Aplicação de uma aplicação instalada).
+    - **Tamanho do mosaico**: obrigatório. Escolha um tamanho de mosaico da aplicação: Pequeno, Médio, Largo ou Grande.
 
-- **Configurações do navegador de quiosque**: Sem suporte no Windows Holographic for Business.
+- **Definições do browser do quiosque**: não suportado no Windows Holographic for Business.
 
-- **Usar layout de início alternativo**: Escolha **Sim** para inserir um arquivo XML que descreve como os aplicativos são exibidos no menu Iniciar, incluindo a ordem dos aplicativos. Utilize esta opção se precisar de uma personalização adicional no menu Iniciar. O artigo [Customize and export start layout (Personalizar e exportar o esquema do menu Iniciar)](https://docs.microsoft.com/hololens/hololens-kiosk#start-layout-for-hololens) dá algumas orientações e inclui um ficheiro XML específico para dispositivos com o Windows Holographic for Business.
+- **Utilizar o esquema do menu Iniciar alternativo**: escolha **Sim** para introduzir um ficheiro XML que descreva como as aplicações são apresentadas no menu Iniciar, incluindo a ordem das aplicações. Utilize esta opção se precisar de uma personalização adicional no menu Iniciar. O artigo [Customize and export start layout (Personalizar e exportar o esquema do menu Iniciar)](https://docs.microsoft.com/hololens/hololens-kiosk#start-layout-for-hololens) dá algumas orientações e inclui um ficheiro XML específico para dispositivos com o Windows Holographic for Business.
 
-- **Barra de tarefas do Windows**: Sem suporte no Windows Holographic for Business.
+- **Barra de tarefas do Windows**: não suportada no Windows Holographic for Business.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 [Atribua o perfil](device-profile-assign.md) e [monitorize o respetivo estado](device-profile-monitor.md).
 

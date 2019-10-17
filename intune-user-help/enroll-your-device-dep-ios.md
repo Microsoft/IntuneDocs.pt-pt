@@ -1,5 +1,5 @@
 ---
-title: Inscrever um dispositivo iOS fornecido pela organização para gestão. | Microsoft Docs
+title: Inscrever um dispositivo iOS fornecido pela organização para gestão. | Documentos da Microsoft
 description: Descreve como pode inscrever um dispositivo iOS no Intune que foi comprado e fornecido pela sua organização
 keywords: ''
 author: lenewsad
@@ -9,6 +9,7 @@ ms.date: 08/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: f4e7d87e-56d1-43e4-8e88-2f62cf0999e2
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0719aca1dbb84358b0c54fbfac57143d2a77c0de
-ms.sourcegitcommit: 884654da8e72a63bfaea6b5def6c7891b065f251
+ms.openlocfilehash: 6e5ce83d20958f3ba4c818e49b0c226e07851d03
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72163459"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506221"
 ---
 # <a name="enroll-your-organization-provided-ios-device-in-management"></a>Inscrever um dispositivo iOS fornecido pela organização para gestão
 
@@ -50,7 +51,7 @@ Se estiver a utilizar o seu próprio dispositivo iOS em vez de um dispositivo fo
 
 4. Após estar ligado ao Wi-Fi, será apresentado o ecrã **Configuração**. Será apresentada a mensagem **A [A Sua Empresa] irá configurar automaticamente o seu dispositivo.**
 
-   **A configuração permite que a [A Sua Empresa] faça a gestão deste dispositivo através do modo over-the-air. Um administrador pode ajudá-lo a configurar contas de e-mail e de rede, instalar e configurar aplicações e ainda gerir definições de forma remota. Um administrador poderá desativar funcionalidades, instalar e remover aplicações, monitorizar e restringir o seu tráfego de Internet e apagar o dispositivo em causa de forma remota.**
+   **A configuração permite que a [sua empresa] gerencie este dispositivo pelo ar. Um administrador pode ajudá-lo a configurar contas de email e rede, instalar e configurar aplicativos e gerenciar configurações remotamente. Um administrador pode desabilitar recursos, instalar e remover aplicativos, monitorar e restringir o tráfego de Internet e apagar remotamente este dispositivo.**
 
    **A configuração é fornecida por: a Equipa iOS da [Sua Empresa] [Endereço]**
 

@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: ''
@@ -15,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0d4bf6a52fd860695433e0020e9ec7390f98eca6
-ms.sourcegitcommit: 45d7c76e760c5117bf134fb57f7e248e5b6c4ad5
+ms.openlocfilehash: a7f5a85896a2e6e7be845b2314c4f837dcaeb7b0
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72314643"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72507030"
 ---
 # <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Use os modelos do Windows 10 para definir as configurações de política de grupo no Microsoft Intune
 
@@ -43,11 +44,11 @@ Este artigo lista as etapas para criar um modelo para dispositivos Windows 10 e 
 ## <a name="create-a-template"></a>Criar um modelo
 
 1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selecione **configuração do dispositivo** > **perfis** > **Criar perfil**.
-3. Insira as seguintes propriedades:
+2. Selecione **Configuração do dispositivo** > **Perfis** > **Criar perfil**.
+3. Introduza as seguintes propriedades:
 
     - **Nome**: Insira um nome para o perfil.
-    - **Descrição**: Insira uma descrição para o perfil. Essa configuração é opcional, mas recomendada.
+    - **Descrição:** introduza uma descrição para o perfil. Esta definição é opcional, mas recomendada.
     - **Plataforma**: selecione **Windows 10 e posterior**.
     - **Tipo de perfil**: selecione **modelos administrativos**.
 
@@ -71,9 +72,9 @@ Este artigo lista as etapas para criar um modelo para dispositivos Windows 10 e 
     > - Windows 10 19H1 e mais recente com [KB 4512941](https://support.microsoft.com/kb/4512941) instalado
 
 6. Selecione qualquer configuração. Por exemplo, filtre no **Office**e selecione **Ativar navegação restrita**. Uma descrição detalhada da configuração é mostrada. Escolha **habilitado**, **desabilitado**ou deixe a configuração como **não configurado** (padrão). A descrição detalhada também explica o que acontece quando você escolhe **habilitado**, **desabilitado**ou **não configurado**.
-7. Selecione **OK** para salvar as alterações.
+7. Selecione **OK** para guardar as alterações.
 
-Continue a percorrer a lista de configurações e defina as configurações desejadas em seu ambiente. Eis alguns exemplos:
+Continue a percorrer a lista de configurações e defina as configurações desejadas em seu ambiente. Aqui estão alguns exemplos:
 
 - Use a configuração de **configurações de notificação de macro do VBA** para lidar com macros do VBA em diferentes programas de Microsoft Office, incluindo o Word e o Excel.
 - Use a configuração **permitir downloads de arquivos** para permitir ou impedir downloads do Internet Explorer.
@@ -97,6 +98,6 @@ Há centenas de configurações disponíveis nesses modelos. Para facilitar a lo
 
   Em outro exemplo, pesquise `microsoft word`. Você verá todas as configurações que pode definir para o programa Microsoft Word. Pesquise `explorer` para ver todas as configurações do Internet Explorer que você pode adicionar ao seu modelo.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 O modelo é criado, mas não está fazendo nada ainda. Em seguida, [atribua o modelo, também chamado de perfil,](device-profile-assign.md) e [monitore seu status](device-profile-monitor.md).

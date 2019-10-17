@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 01/02/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: dcfc21f9-1bcd-4371-a46d-f2e18154ec50
@@ -16,12 +17,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3341ac7bfb4e145d050440f78fc65faee1c1325f
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 492b5c0b75bf47f6fbf784939f18964663556315
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71732248"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72505262"
 ---
 # <a name="intune-migration-guide"></a>Guia de migração do Intune
 
@@ -35,7 +36,7 @@ Este guia irá orientá-lo ao longo dos vários detalhes relacionados com a migr
 
 Este guia divide o processo de migração em duas fases, que incluem tarefas, estratégias e orientações táticas que irão ajudar a orientá-lo ao longo do processo completo de migração para o Intune MDM.
 
-- [Fase 1: Preparar o Intune para o gerenciamento de dispositivos móveis](migration-guide-prepare.md)
+- [Fase 1: Preparar o Intune para a gestão de dispositivos móveis](migration-guide-prepare.md)
 
   - [Avaliar os requisitos de migração da MDM](migration-guide-prepare.md#assess-mdm-requirements)
 
@@ -47,7 +48,7 @@ Este guia divide o processo de migração em duas fases, que incluem tarefas, es
 
   - [Considerações especiais sobre a migração](migration-guide-considerations.md)
 
-- [Fase 2: Campanha de migração](migration-guide-campaign.md)
+- [Fase 2: campanha de migração](migration-guide-campaign.md)
 
   - [Plano de comunicação](migration-guide-communication-plan.md)
 
@@ -69,6 +70,6 @@ Este guia divide o processo de migração em duas fases, que incluem tarefas, es
 
 - Consulte as [formas comuns de utilizar o Intune](common-scenarios.md).
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
-[Fase 1: Preparar o Intune para o gerenciamento de dispositivos móveis](migration-guide-prepare.md)
+[Fase 1: Preparar o Intune para a gestão de dispositivos móveis](migration-guide-prepare.md)

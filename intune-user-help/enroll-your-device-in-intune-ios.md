@@ -9,6 +9,7 @@ ms.date: 09/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 6eeec7aa-1b07-4ce3-894c-13e09b89bdd4
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: tisilv
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f207f1f94d34e6aa1768bb5ae0f5179710839c71
-ms.sourcegitcommit: 8934b1abec96e18cee15a77107d37551766f7666
+ms.openlocfilehash: e468042ab81d563c9fa4b272661508a340d61aa9
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71099859"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506242"
 ---
 # <a name="set-up-ios-device-access-to-your-company-resources"></a>Configurar o acesso do dispositivo iOS aos recursos da empresa  
 
@@ -80,21 +81,21 @@ A pausa por mais de alguns minutos durante o registro pode fazer com que o aplic
 > Essas próximas etapas e telas serão diferentes dependendo da versão do iOS. Siga as etapas para sua versão do iOS. 
 
 6. O Safari abre o site Portal da Empresa em seu dispositivo. Quando for solicitado a baixar o perfil de configuração, toque em **permitir**. Se você estiver em um dispositivo que executa o:  
-    * iOS 12,2 e posterior: Quando o download for concluído, toque em **concluído.** Continue na etapa 7 neste artigo.
-    * iOS 12,1 e anterior: Você será redirecionado automaticamente para o aplicativo de configurações. Pule para a etapa 8 neste artigo.  
+    * iOS 12,2 e posterior: quando o download estiver concluído, toque em **concluído.** Continue na etapa 7 neste artigo.
+    * iOS 12,1 e anterior: você será redirecionado automaticamente para o aplicativo de configurações. Pule para a etapa 8 neste artigo.  
  
     Se você tocar acidentalmente em **ignorar**, atualize a página. Você será solicitado a abrir o aplicativo Portal da Empresa. No aplicativo, você pode tocar em **baixar novamente**.
 
   > [!NOTE]
   > Você deve instalar o perfil de gerenciamento conforme descrito nas próximas etapas dentro de 8 minutos para baixá-lo. Se você não fizer isso, o perfil será removido e você precisará reiniciar o registro.  
 
-7. iOS 12,2 e posterior somente: Quando for solicitado a abrir Portal da Empresa, toque em **abrir**. A tela **instalando o perfil de gerenciamento** lista as etapas para instalar o perfil.
+7. iOS 12,2 e posterior somente: quando solicitado a abrir o Portal da Empresa, toque em **abrir**. A tela **instalando o perfil de gerenciamento** lista as etapas para instalar o perfil.
 
     ![Captura de tela de exemplo de Portal da Empresa, instalação do perfil de gerenciamento.](./media/ios-07-cp-enroll-1904.PNG)  
 
 8. Vá para o aplicativo Configurações e toque em **perfil baixado**.  
 
-    Se o **perfil baixado** não aparecer como uma opção, vá para**perfis** **gerais** > . Se você ainda não vir o perfil, talvez seja necessário baixá-lo novamente.  
+    Se o **perfil baixado** não aparecer como uma opção, vá para**perfis** **gerais**de  > . Se você ainda não vir o perfil, talvez seja necessário baixá-lo novamente.  
 
     ![Captura de tela de exemplo do aplicativo de configurações, configuração de perfil baixado.](./media/ios-1904-settings-badge.PNG)  
 
@@ -127,7 +128,7 @@ A pausa por mais de alguns minutos durante o registro pode fazer com que o aplic
 ## <a name="it-administrator-support"></a>Suporte do administrador de ti  
 Se você for um administrador de ti e estiver em problemas ao registrar dispositivos, consulte [Solucionando problemas de registro de dispositivo IOS no Microsoft Intune](https://support.microsoft.com/en-us/help/4039809). Este artigo lista os erros comuns, suas causas e as etapas para resolvê-los.  
 
-## <a name="next-steps"></a>Passos Seguintes  
+## <a name="next-steps"></a>Próximos passos  
 Encontre aplicativos que irão ajudá-lo no trabalho ou na escola. Saiba [como os aplicativos são disponibilizados](use-managed-apps-on-your-device-ios.md) para você por meio de portal da empresa.  
 
 Ainda precisa de ajuda? Contacte o suporte da empresa. Pode encontrar as informações de contacto no [Site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  

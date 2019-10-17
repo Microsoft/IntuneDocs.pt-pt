@@ -9,6 +9,7 @@ ms.date: 09/03/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: ''
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8048b29bdd456f9db8bb3d01e84bad5899e0b9a6
-ms.sourcegitcommit: 884654da8e72a63bfaea6b5def6c7891b065f251
+ms.openlocfilehash: 822d995443ca23eac7f96f8314f9926804e0be24
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72163570"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508516"
 ---
 # <a name="get-a-recovery-key-for-a-macos-device"></a>Obter uma chave de recuperação para um dispositivo macOS
 
@@ -49,7 +50,7 @@ Se uma chave não for encontrada, mas seu dispositivo estiver criptografado corr
 
 Se você for uma pessoa de suporte de ti e quiser configurar e gerenciar a criptografia FileVault para dispositivos macOS, consulte [usar a criptografia de dispositivo com o Intune](/intune/protect/encrypt-devices).
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Descubra o que mais você pode fazer no site Portal da Empresa. Consulte [usando o site Portal da empresa do Intune](using-the-intune-company-portal-website.md) para obter a lista de ações.  
 

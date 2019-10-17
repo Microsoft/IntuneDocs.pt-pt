@@ -9,6 +9,7 @@ ms.date: 03/16/2017
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 8d3a40f5-99e9-48dc-9706-f7a3a23e5704
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f6e73b784f0e938058dcb9d6001082f86ac800ff
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 2a1d025620e37009ce283510fc8f71b6fb90993f
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67545654"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72500186"
 ---
 # <a name="your-computer-is-already-enrolled"></a>O seu computador já está inscrito
 
@@ -37,6 +38,6 @@ Para ligar o seu computador:
 
 3. Siga os pedidos para ligar o computador à sua conta de utilizador.
 
-Se preferir de anular a inscrição do seu dispositivo, utilize as instruções para o tipo de dispositivo que tem: [Android](unenroll-your-device-from-intune-android.md), [iOS](unenroll-your-device-from-intune-ios.md), ou [Windows](unenroll-your-device-from-intune-windows.md).
+Se preferir anular a inscrição do dispositivo, utilize as instruções para o seu tipo de dispositivo: [Android](unenroll-your-device-from-intune-android.md), [iOS](unenroll-your-device-from-intune-ios.md) ou [Windows](unenroll-your-device-from-intune-windows.md).
 
 Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

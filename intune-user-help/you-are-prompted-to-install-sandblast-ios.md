@@ -9,6 +9,7 @@ ms.date: 09/25/2017
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 474fe9c8-558a-4348-ac9d-f87c79f150c4
 searchScope:
@@ -16,16 +17,16 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8d4f957af4c05a66de4ce4ae7c233eda297153f8
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 7191f16ce367372429df259cef55e58b6e4423de
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67527613"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72501535"
 ---
 # <a name="you-need-to-install-sandblast-mobile-protect-on-your-ios-device"></a>Tem de instalar o SandBlast Mobile Protect no seu dispositivo iOS
 
-Antes de poder aceder ao seu trabalho, o suporte da sua empresa precisa que instale a aplicação SandBlast Mobile Protect, que ajuda a proteger o seu dispositivo ao detetar potenciais ameaças de segurança. Poderá ver pedidos diferentes no seu dispositivo, consoante a forma como a sua empresa configurar o SandBlast Mobile Protect.
+Antes de poder aceder ao seu trabalho, o suporte da empresa precisa que instale a aplicação SandBlast Mobile Protect, que ajuda a proteger o seu dispositivo ao detetar potenciais ameaças de segurança. Poderá ver pedidos diferentes no seu dispositivo, consoante a forma como a sua empresa configurar o SandBlast Mobile Protect.
 
 **O que tem de fazer:**
 

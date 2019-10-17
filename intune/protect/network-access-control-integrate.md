@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 04/25/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: aa7ecff7-8579-4009-8fd6-e17074df67de
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6e1d534ed3d631a94296a5f6c76c2a323b00afa4
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 142d24452c401f83322b71a104ed47759eb6179f
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71729552"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72509105"
 ---
 # <a name="network-access-control-nac-integration-with-intune"></a>Integração de controlo de acesso à rede (NAC) com o Intune
 
@@ -81,7 +82,7 @@ A lista seguinte é uma descrição geral sobre como a integração do NAC funci
 - Para habilitar o NAC para acesso F5:
 
   - Use F5 BIG-IP 13.1.1.5. Não há suporte para BIG-IP 14.
-  - Integre BIG-IP ao Intune para NAC. O [Overview: Configurar o APM para verificações de postura de dispositivo com sistemas de gerenciamento de ponto de extremidade @ no__t-0 F5 lista as etapas.
+  - Integre BIG-IP ao Intune para NAC. A [visão geral: Configurando o APM para verificações de postura de dispositivo com os sistemas de gerenciamento de ponto de extremidade](https://support.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-client-configuration-7-1-6/6.html#guid-0bd12e12-8107-40ec-979d-c44779a8cc89) F5 Guide lista as etapas.
   - No perfil VPN, selecione **configurações de Base** > **habilitar o NAC (controle de acesso à rede)** > selecione **concordo**.
 
   A conexão VPN é desconectada a cada 24 horas por motivos de segurança. A VPN pode ser imediatamente reconectada.
@@ -91,7 +92,7 @@ A lista seguinte é uma descrição geral sobre como a integração do NAC funci
 
 Estamos trabalhando com nossos parceiros para lançar uma solução de NAC para esses clientes mais recentes. Quando as soluções estiverem prontas, este artigo será atualizado com informações adicionais.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 - [Integrar o Cisco ISE com o Intune](https://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html)
 - [Integrar o Citrix NetScaler com o Intune](https://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html)

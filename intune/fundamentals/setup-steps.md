@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 01/24/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: d158503c-1276-422b-ab81-5f66c1cd7e7a
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 36f7e2105d27ccb996f4544ec6633babcff032b1
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 7a45160fc0e728b4c53590455a2bd0b5d904ddb1
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71729424"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72504893"
 ---
 # <a name="set-up-intune"></a>Configurar o Intune
 
@@ -36,7 +37,7 @@ Se estiver usando o Microsoft System Center Configuration Manager no momento par
 
 
 
-| Passos |                                                                                                                       State                                                                                                                       |
+| Passos |                                                                                                                       Estado                                                                                                                       |
 |-------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |   1   |                                        [Configurações suportadas](supported-devices-browsers.md) – o que precisa de saber antes de começar. Estão incluídos os requisitos de rede e as configurações suportadas.                                         |
 |   2   |                                                                 [Iniciar sessão no Intune](account-sign-up.md) – inicie sessão na sua subscrição da avaliação gratuita ou crie uma nova subscrição do Intune.                                                                  |

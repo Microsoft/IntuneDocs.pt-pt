@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 1/15/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e07952b6e7147ffa9b84cfbd1988ebb927b411dd
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: d1a1c03dc480ad66de22b4a5ee44a9b8c221980c
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71730072"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503383"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-dedicated-devices"></a>Configurar a inscrição de dispositivos dedicados do Android Enterprise no Intune
 
@@ -54,13 +55,13 @@ Para configurar a gestão dos dispositivos dedicados do Android Enterprise, siga
 ### <a name="create-an-enrollment-profile"></a>Criar um perfil de inscrição
 
 > [!NOTE]
-> Se um token tiver expirado, o perfil associado a ele não será exibido no **registro** > do dispositivo registro do**Android** > **dispositivos dedicados de propriedade corporativa**. Para ver todos os perfis associados a tokens ativos e inativos, clique em **Filtrar** e marque as caixas dos Estados de política "ativo" e "inativo". 
+> Se um token tiver expirado, o perfil associado a ele não será exibido no **registro de dispositivo** > **registro do Android** > **dispositivos dedicados de propriedade corporativa**. Para ver todos os perfis associados a tokens ativos e inativos, clique em **Filtrar** e marque as caixas dos Estados de política "ativo" e "inativo". 
 
 Tem de criar um perfil de inscrição para poder inscrever os dispositivos dedicados. Depois de criar o perfil, o mesmo fornece-lhe um token de inscrição (cadeia aleatória) e um código QR. Consoante o SO Android e a versão do dispositivo, pode utilizar o token ou o código QR para [inscrever o dispositivo dedicado](#enroll-the-dedicated-devices).
 
-1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) e escolha **registro** > de dispositivo registros**Android** > **dispositivos dedicados de propriedade corporativa**.
+1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) e escolha **registro de dispositivo** > **registro Android** > **dispositivos dedicados de propriedade corporativa**.
 2. Selecione **Criar** e preencha os campos obrigatórios.
-    - **Nome**: introduza o nome que irá utilizar quando atribuir o perfil ao grupo de dispositivos dinâmicos.
+    - **Nome**: escreva o nome que irá utilizar quando atribuir o perfil ao grupo de dispositivos dinâmico.
     - **Data de expiração do token**: a data em que o token expira. A Google impõe um máximo de 90 dias.
 3. Escolha **Criar** para guardar o perfil.
 
@@ -70,8 +71,8 @@ Pode direcionar aplicações e políticas para grupos de dispositivos dinâmicos
 
 1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) e escolha **grupos** > **todos os grupos** > **novo grupo**.
 2. No painel **Grupo**, preencha os campos obrigatórios da seguinte forma:
-    - **Tipo de grupo**: Segurança
-    - **Nome do grupo**: introduza um nome intuitivo (como Dispositivos da fábrica 1)
+    - **Tipo de grupo**: segurança
+    - **Nome do grupo**: escreva um nome intuitivo (como Dispositivos da fábrica 1)
     - **Tipo de associação**: dispositivo dinâmico
 3. Selecione **Adicionar consulta dinâmica**.
 4. No painel **Regras de associação de grupo dinâmica**, preencha os campos da seguinte forma:
@@ -85,13 +86,13 @@ Pode direcionar aplicações e políticas para grupos de dispositivos dinâmicos
 ### <a name="replace-or-remove-tokens"></a>Substituir ou remover tokens
 
 - **Substituir token**: pode gerar um novo token/código QR quando o antigo estiver prestes a expirar.
-- **Revogar token**: pode definir a expiração imediata do token/código QR. Quando o fizer, o token/código QR deixa de ser utilizável. Pode utilizar esta opção se:
+- **Revogar token**: pode expirar imediatamente o token/código QR. Quando o fizer, o token/código QR deixa de ser utilizável. Pode utilizar esta opção se:
   - partilhar acidentalmente o token/código QR com um terceiro não autorizado
   - concluir todas as inscrições e deixar de precisar do token/código QR
 
 Substituir ou revogar um token/código QR não terá efeito em dispositivos que já tenham sido inscritos.
 
-1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) e escolha **registro de dispositivo registros** > do**Android** > **corporativo dispositivos dedicados de propriedade**.
+1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) e escolha **registro de dispositivo** > **registro Android** > **dispositivos dedicados de propriedade de corporativo**.
 2. Selecione o perfil com o qual pretende trabalhar.
 3. Selecione **Token**.
 4. Para substituir o token, selecione **Substituir token**.
@@ -111,6 +112,6 @@ Para remover uma aplicação dos dispositivos dedicados do Android Enterprise, p
 - Elimine a implementação da aplicação obrigatória.
 - Crie uma implementação de desinstalação para a aplicação.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 - [Implementar aplicações Android](../apps/apps-deploy.md)
 - [Adicionar políticas de configuração para Android](../configuration/device-profiles.md)

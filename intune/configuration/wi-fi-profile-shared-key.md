@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 06/25/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 175be4d51b034745ce6fab050f68be277f1d4858
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 623c6652964ae5a4f16a9c689dda3aee99c50d31
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71730428"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506492"
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key---intune"></a>Utilizar um perfil de dispositivo personalizado para criar um perfil Wi-Fi com uma chave pré-partilhada – Intune
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -77,7 +78,7 @@ O seguinte exemplo inclui o código XML de um perfil Android ou Wi-Fi do Windows
 
 - `<protected>false</protected>` tem de ser definido como **falso**. Se estiver definido como **verdadeiro**, poderá fazer com que o dispositivo espere uma palavra-passe encriptada e, em seguida, tente decifrá-la, o que poderá resultar numa falha de ligação.
 
-- `<hex>53534944</hex>` deve estar definido para o valor hexadecimal de `<name><SSID of wifi profile></name>`. Dispositivos Windows 10 podem retornar um erro `x87D1FDE8 Remediation failed` falso, mas o dispositivo ainda contém o perfil.
+- `<hex>53534944</hex>` deve estar definido para o valor hexadecimal de `<name><SSID of wifi profile></name>`. Dispositivos Windows 10 podem retornar um erro falso `x87D1FDE8 Remediation failed`, mas o dispositivo ainda contém o perfil.
 
 - O XML tem caracteres especiais, como o `&` (e comercial). O uso de caracteres especiais pode impedir que o XML funcione conforme o esperado. 
 
@@ -127,7 +128,7 @@ xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
 ```
 
 ## <a name="eap-based-wi-fi-profile-example"></a>Exemplo de perfil Wi-Fi baseado em EAP
-O seguinte exemplo inclui o código XML de um perfil Wi-Fi baseado em EAP: O exemplo é disponibilizado para mostrar o formato correto e indicar mais detalhes. Ele é apenas um exemplo e não foi concebido como uma configuração recomendada para o seu ambiente.
+O exemplo seguinte inclui o código XML de um perfil de Wi-Fi baseado em EAP: o exemplo é disponibilizado para mostrar o formato correto e indicar mais detalhes. Ele é apenas um exemplo e não foi concebido como uma configuração recomendada para o seu ambiente.
 
 
 ```xml
@@ -215,22 +216,22 @@ O seguinte exemplo inclui o código XML de um perfil Wi-Fi baseado em EAP: O exe
 Você também pode criar um arquivo XML de uma conexão Wi-Fi existente. Em um computador com Windows, use as seguintes etapas:
 
 1. Crie uma pasta local para os perfis W-Fi exportados, como c:\WiFi.
-2. Abra um prompt de comando como administrador (clique com o botão `cmd`direito do mouse em  >  **Executar como administrador**)
+2. Abra um prompt de comando como administrador (clique com o botão direito do mouse em `cmd` @ no__t-1**Executar como administrador**)
 3. Execute `netsh wlan show profiles`. Os nomes de todos os perfis são listados.
 4. Execute `netsh wlan export profile name="YourProfileName" folder=c:\Wifi`. Este comando cria um arquivo chamado `Wi-Fi-YourProfileName.xml` em c:\Wifi.
 
-    - Se você estiver exportando um perfil de Wi-Fi que inclui uma chave pré-compartilhada, `key=clear` adicione ao comando:
+    - Se você estiver exportando um perfil de Wi-Fi que inclui uma chave pré-compartilhada, adicione `key=clear` ao comando:
   
       `netsh wlan export profile name="YourProfileName" key=clear folder=c:\Wifi`
 
-      `key=clear`exporta a chave em texto sem formatação, o que é necessário para usar o perfil com êxito.
+      `key=clear` exporta a chave em texto sem formatação, o que é necessário para usar o perfil com êxito.
 
 Depois de ter o arquivo XML, copie e cole a sintaxe XML em configurações OMA-URI > **tipo de dados**. [Criar um perfil personalizado](#create-a-custom-profile) (neste artigo) lista as etapas.
 
 > [!TIP]
-> `\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\{guid}`também inclui todos os perfis no formato XML.
+> `\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\{guid}` também inclui todos os perfis no formato XML.
 
-## <a name="best-practices"></a>Melhores práticas
+## <a name="best-practices"></a>Práticas recomendadas
 
 - Antes de implementar um perfil de Wi-Fi com PSK, confirme que o dispositivo consegue ligar diretamente ao ponto final.
 

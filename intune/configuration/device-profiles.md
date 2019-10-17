@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 09/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3afdb365d0ed88a58028287cc7010bb334e9001e
-ms.sourcegitcommit: fca2670142c083d7562c0a36547a6a451863e315
+ms.openlocfilehash: 31a55f5749b35139368b6c3543fd8ff95db6100d
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "72036442"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506834"
 ---
 # <a name="apply-features-and-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Aplicar definições e funcionalidades nos dispositivos com perfis de dispositivo no Microsoft Intune
 
@@ -60,8 +61,8 @@ Esta funcionalidade suporta:
 - Android Enterprise
 - iOS/iPadOS
 - macOS
-- Windows Phone 8.1
-- Windows 8.1
+- Wnodows Phone 8.1
+- Windows 8.1
 - Windows 10 e posterior
 
 ## <a name="custom-profile"></a>Perfil personalizado
@@ -74,7 +75,7 @@ Esta funcionalidade suporta:
 - Android Enterprise
 - iOS/iPadOS
 - macOS
-- Windows Phone 8.1
+- Wnodows Phone 8.1
 
 ## <a name="delivery-optimization"></a>Otimização da entrega
 
@@ -122,7 +123,7 @@ As [definições de educação para Windows 10](education-settings-configure.md)
 
 As [definições de educação para iOS](../fundamentals/education-settings-configure-ios-shared.md) utilizam a aplicação Sala de Aula para iOS para orientar a aprendizagem e controlar os dispositivos dos estudantes na sala de aula. Pode configurar dispositivos iPad para que vários estudantes possam partilhar um único dispositivo.
 
-## <a name="email"></a>Email
+## <a name="email"></a>E-mail
 
 As [definições de e-mail](email-settings-configure.md) criam, atribuem e monitorizam as definições de e-mail do Exchange ActiveSync nos dispositivos. Os perfis de e-mail ajudam na consistência, reduzem as chamadas de suporte e permitem que os utilizadores finais acedam ao e-mail da empresa nos seus dispositivos pessoais sem precisarem de efetuar qualquer configuração. 
 
@@ -131,7 +132,7 @@ Esta funcionalidade suporta:
 - Android
 - Android Enterprise
 - iOS/iPadOS
-- Windows Phone 8.1
+- Wnodows Phone 8.1
 - Windows 10 e posterior
 
 ## <a name="endpoint-protection"></a>Proteção de ponto final
@@ -152,7 +153,7 @@ Esta funcionalidade suporta:
 
 - O Windows 10 Fall Creators Update e posterior
 
-## <a name="extensions"></a>Extensões
+## <a name="extensions"></a>WMZ
 
 [As extensões de kernel](kernel-extensions-overview-macos.md) permitem que os administradores adicionem recursos ou programas no nível de kernel em dispositivos MacOS. Defina essas configurações para confiar em todas as extensões de um desenvolvedor ou parceiro específico ou permitir extensões de kernel específicas.
 
@@ -187,7 +188,7 @@ Esta funcionalidade suporta:
 
 - Android Enterprise (OEMConfig)
 
-## <a name="powershell-scripts"></a>Scripts do PowerShell
+## <a name="powershell-scripts"></a>Scripts PowerShell
 
 Os [scripts do PowerShell em dispositivos Windows 10](../apps/intune-management-extension.md) usam a extensão de gerenciamento do Intune para carregar seus scripts do PowerShell no Intune e, em seguida, executar esses scripts em seus dispositivos. Consulte também o que é necessário para usar a extensão, como adicioná-los ao Intune e outras informações importantes.
 
@@ -230,8 +231,8 @@ Esta funcionalidade suporta:
 - Android Enterprise
 - iOS/iPadOS
 - macOS
-- Windows Phone 8.1
-- Windows 8.1
+- Wnodows Phone 8.1
+- Windows 8.1
 - Windows 10 e posterior
 
 ## <a name="wi-fi"></a>Wi-Fi
@@ -267,6 +268,6 @@ Esta funcionalidade suporta:
 
 [Faça a gestão dos seus perfis](../device-profile-monitor.md) para verificar o estado dos dispositivos e os perfis atribuídos. Ver as definições que causam um conflito e os perfis que incluem essas definições também poderá ajudá-lo a resolver conflitos. [Problemas comuns e resoluções](device-profile-troubleshoot.md) ajuda os administradores a trabalhar com perfis. Descreve o que acontece quando se elimina um perfil, o que faz com que sejam enviadas notificações para os dispositivos e muito mais.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Escolher a plataforma e começar.

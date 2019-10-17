@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 10/2/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 57162664d6ca3a35696e56088c4e86acadf45371
-ms.sourcegitcommit: 223d64a72ec85fe222f5bb10639da729368e6d57
+ms.openlocfilehash: f201cdac0f881ce03863704dd80d8635de52074a
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71955459"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72505454"
 ---
 # <a name="set-up-ios-and-ipados-user-enrollment-preview"></a>Configurar o registro de usuário do iOS e iPadOS (visualização)
 
@@ -55,7 +56,7 @@ Um perfil de registro define as configurações aplicadas a um grupo de disposit
 
 4. Na página **configurações** , você pode optar por fornecer aos usuários a opção de qual tipo de registro eles usarão. Como alternativa, você pode definir um padrão.
 
-    ![Página de definições](./media/ios-user-enrollment/settings-page.png)
+    ![Página Configurações](./media/ios-user-enrollment/settings-page.png)
 
     - Se você quiser que todos os usuários neste perfil usem o registro de usuário, siga estas etapas:
         1. Para **exigir que o usuário selecione o tipo de dispositivo**, selecione **não configurado**.

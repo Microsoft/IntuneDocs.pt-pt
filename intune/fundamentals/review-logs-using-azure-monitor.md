@@ -8,19 +8,21 @@ manager: dougeby
 ms.date: 08/28/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
 ms.technology: ''
+ms.assetid: 95191d64-9895-4f2e-8c5b-f0e85be086d8
 ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 99799f695b9398c455f92220c436c7a6c6d76d56
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 66acf4d8b88097c3262f44493ab72b3900781eed
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71729476"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72504975"
 ---
 # <a name="send-log-data-to-storage-event-hubs-or-log-analytics-in-intune-preview"></a>Enviar dados de log para armazenamento, hubs de eventos ou log Analytics no Intune (versão prévia)
 
@@ -45,7 +47,7 @@ Este artigo mostra como usar **as configurações de diagnóstico** para enviar 
 
 Para usar esse recurso, você precisa de:
 
-* Uma assinatura do Azure: Se você não tiver uma assinatura do Azure, poderá [se inscrever para uma avaliação gratuita](https://azure.microsoft.com/free/).
+* Uma assinatura do Azure: se você não tiver uma assinatura do Azure, poderá se [inscrever para obter uma avaliação gratuita](https://azure.microsoft.com/free/).
 * Um ambiente de Microsoft Intune (locatário) no Azure
 * Um usuário que é um **administrador global** ou **administrador de serviços do Intune** para o locatário do Intune.
 
@@ -65,37 +67,37 @@ Dependendo de onde você deseja rotear os dados do log de auditoria, você preci
 3. Introduza as seguintes propriedades:
 
     - **Nome**: Insira um nome para as configurações de diagnóstico. Essa configuração inclui todas as propriedades que você inserir. Por exemplo, introduza `Route audit logs to storage account`.
-    - **Arquivar em uma conta de armazenamento**: Salva os dados de log em uma conta de armazenamento do Azure. Use esta opção se desejar salvar ou arquivar os dados.
+    - **Arquivar em uma conta de armazenamento**: salva os dados de log em uma conta de armazenamento do Azure. Use esta opção se desejar salvar ou arquivar os dados.
 
         1. Selecione esta opção > **Configurar**. 
         2. Escolha uma conta de armazenamento existente na lista > **OK**.
 
-    - **Transmitir para um hub de eventos**: Transmite os logs para um hub de eventos do Azure. Se você quiser análise nos dados de log usando ferramentas SIEM, como Splunk e QRadar, escolha essa opção.
+    - **Transmitir para um hub de eventos**: transmite os logs para um hub de eventos do Azure. Se você quiser análise nos dados de log usando ferramentas SIEM, como Splunk e QRadar, escolha essa opção.
 
         1. Selecione esta opção > **Configurar**. 
         2. Escolha um namespace do hub de eventos existente e uma política da lista > **OK**.
 
-    - **Enviar para log Analytics**: Envia os dados para o log Analytics do Azure. Se você quiser usar visualizações, monitoramento e alertas para seus logs, escolha essa opção.
+    - **Enviar para log Analytics**: envia os dados para o log Analytics do Azure. Se você quiser usar visualizações, monitoramento e alertas para seus logs, escolha essa opção.
 
         1. Selecione esta opção > **Configurar**. 
         2. Crie um novo espaço de trabalho e insira os detalhes do espaço de trabalho. Ou escolha um espaço de trabalho existente na lista > **OK**.
 
             O [espaço de trabalho do Azure log Analytics](https://docs.microsoft.com/azure/azure-monitor/learn/quick-create-workspace) fornece mais detalhes sobre essas configurações.
 
-    -  > **AuditLogs**do log: Escolha esta opção para enviar os [logs de auditoria do Intune](../monitor-audit-logs.md) para sua conta de armazenamento, Hub de eventos ou log Analytics. Os logs de auditoria mostram o histórico de cada tarefa que gera uma alteração no Intune, incluindo quem fez e quando.
+    - **LOG** > **AuditLogs**: escolha esta opção para enviar os [logs de auditoria do Intune](../monitor-audit-logs.md) para sua conta de armazenamento, Hub de eventos ou log Analytics. Os logs de auditoria mostram o histórico de cada tarefa que gera uma alteração no Intune, incluindo quem fez e quando.
 
-      Se você optar por usar uma conta de armazenamento, insira também o número de dias que deseja manter os dados (retenção). Para manter os dados para sempre, defina **retenção (dias)** como `0` (zero).
+      Se você optar por usar uma conta de armazenamento, insira também o número de dias que deseja manter os dados (retenção). Para manter os dados para sempre, defina a **retenção (dias)** para `0` (zero).
 
-    -  > **OperationalLogs**do log: Os logs operacionais (versão prévia) mostram o êxito ou a falha de usuários e dispositivos que se registram no Intune, bem como detalhes sobre dispositivos não compatíveis. Escolha esta opção para enviar os logs de registro para sua conta de armazenamento, Hub de eventos ou log Analytics.
+    - **LOG** > **OperationalLogs**: os logs operacionais (versão prévia) mostram o êxito ou a falha de usuários e dispositivos que se registram no Intune, bem como detalhes sobre dispositivos não compatíveis. Escolha esta opção para enviar os logs de registro para sua conta de armazenamento, Hub de eventos ou log Analytics.
 
-      Se você optar por usar uma conta de armazenamento, insira também o número de dias que deseja manter os dados (retenção). Para manter os dados para sempre, defina **retenção (dias)** como `0` (zero).
+      Se você optar por usar uma conta de armazenamento, insira também o número de dias que deseja manter os dados (retenção). Para manter os dados para sempre, defina a **retenção (dias)** para `0` (zero).
 
       > [!NOTE]
       > Os logs operacionais estão em versão prévia. Para fornecer comentários, incluindo informações nos logs operacionais, vá para [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas/suggestions/36613948-diagnostics-settings-feedback).
 
-    - **LOG** > **DeviceComplianceOrg**: Os logs organizacionais de conformidade do dispositivo (versão prévia) mostram o relatório organizacional para conformidade do dispositivo no Intune e detalhes de dispositivos não compatíveis. Escolha esta opção para enviar os logs de conformidade para sua conta de armazenamento, Hub de eventos ou log Analytics.
+    - **LOG** > **DeviceComplianceOrg**: os logs organizacionais de conformidade do dispositivo (versão prévia) mostram o relatório organizacional para conformidade do dispositivo no Intune e detalhes de dispositivos sem conformidade. Escolha esta opção para enviar os logs de conformidade para sua conta de armazenamento, Hub de eventos ou log Analytics.
 
-      Se você optar por usar uma conta de armazenamento, insira também o número de dias que deseja manter os dados (retenção). Para manter os dados para sempre, defina **retenção (dias)** como `0` (zero).
+      Se você optar por usar uma conta de armazenamento, insira também o número de dias que deseja manter os dados (retenção). Para manter os dados para sempre, defina a **retenção (dias)** para `0` (zero).
  
       > [!NOTE]
       > Os logs organizacionais de conformidade do dispositivo estão em versão prévia. Para fornecer comentários, incluindo informações no relatório, vá para [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas/suggestions/36613948-diagnostics-settings-feedback).
@@ -113,13 +115,13 @@ Você também pode exportar os logs de auditoria em outras partes do Intune, inc
 Por exemplo, para exportar os logs de auditoria ao usar a conformidade do dispositivo:
 
 1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selecione > monitorde > conformidade do dispositivo logs de**auditoria**:
+2. Selecione **conformidade do dispositivo** > **Monitor** > **logs de auditoria**:
 
     ![Escolha os logs de auditoria para rotear dados do Intune para Azure Monitor armazenamento, hubs de eventos ou análises](./media/review-logs-using-azure-monitor/audit-logs-under-monitor-in-compliance.png)
 
 3. Selecione **exportar configurações de dados**. Se ele não estiver habilitado, você poderá ativar **as configurações de diagnóstico**. Você também pode escolher para onde enviar os logs, conforme descrito em [enviar logs para o Azure monitor](#send-logs-to-azure-monitor) (neste artigo).
 
-## <a name="cost-considerations"></a>Considerações de custos
+## <a name="cost-considerations"></a>Considerações de custo
 
 Se você já tiver uma licença Microsoft Intune, precisará de uma assinatura do Azure para configurar a conta de armazenamento e o Hub de eventos. A assinatura do Azure normalmente é gratuita. Mas você paga para usar os recursos do Azure, incluindo a conta de armazenamento para arquivamento e o Hub de eventos para streaming. A quantidade de dados e os custos variam dependendo do tamanho do locatário.
 
@@ -142,7 +144,7 @@ As tabelas a seguir mostram uma estimativa de custo, dependendo do tamanho do lo
 
 | | |
 |---|---|
-|Eventos por dia| 15,000|
+|Eventos por dia| 15.000|
 |Volume estimado de dados por mês| 900 MB|
 |Custo estimado por mês (USD)| $0.02|
 |Custo estimado por ano (USD)| $0.24|
@@ -159,7 +161,7 @@ A tabela a seguir contém os custos estimados por mês para um hub de eventos b�
 
 | | |
 |---|---|
-|Eventos por segundo| 18|
+|Eventos por segundo| anos|
 |Eventos por intervalo de cinco minutos| 5\.400|
 |Volume por intervalo| 10,8 MB|
 |Mensagens por intervalo| 43|
@@ -170,7 +172,7 @@ A tabela a seguir contém os custos estimados por mês para um hub de eventos b�
 
 | | |
 |---|---|
-|Eventos por segundo|0.1 |
+|Eventos por segundo|0,1 |
 |Eventos por intervalo de cinco minutos| 52|
 |Volume por intervalo|104 KB |
 |Mensagens por intervalo|1 |
@@ -225,7 +227,7 @@ Sim. Para acessar os logs de seu aplicativo personalizado, você pode usar a [AP
 
 O Intune não armazena nenhum dado enviado por meio do pipeline. O Intune roteia dados para o pipeline de Azure Monitor, na autoridade do locatário. Para obter mais informações, consulte [Azure monitor visão geral](https://docs.microsoft.com/azure/azure-monitor/overview).
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 * [Arquivar logs de atividades em uma conta de armazenamento](https://docs.microsoft.com/azure/active-directory/reports-monitoring/quickstart-azure-monitor-route-logs-to-storage-account)
 * [Rotear logs de atividade para um hub de eventos](https://docs.microsoft.com/azure/active-directory/reports-monitoring/tutorial-azure-monitor-stream-logs-to-event-hub)

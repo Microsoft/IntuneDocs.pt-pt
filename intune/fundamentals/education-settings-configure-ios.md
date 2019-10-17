@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 05/9/2018
 ms.topic: archived
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
@@ -17,17 +18,17 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fbaddda6b231cf0758bc3ff3f8a4a9010bccbaab
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 893c663902f4b33ba9082550c22031fc9ab4229a
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71731900"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72510308"
 ---
 # <a name="how-to-configure-intune-settings-for-the-ios-classroom-app"></a>Como configurar as definições do Intune para a aplicação Sala de Aula do iOS
 
 > [!NOTE]
-> Definições do Intune para a aplicação sala de aula estão obsoletas no Intune. Este artigo aplica-se apenas aos utilizadores com perfis de educação existentes no Intune.
+> As configurações do Intune para o aplicativo sala de aula estão obsoletas no Intune. Este artigo aplica-se apenas aos utilizadores com perfis de educação existentes no Intune.
 
 ## <a name="introduction"></a>Introdução
 A [Sala de Aula](https://itunes.apple.com/app/id1085319084) é uma aplicação que ajuda os professores a orientar a aprendizagem e a controlar os dispositivos dos estudantes numa sala de aula. Por exemplo, através da aplicação os professores podem:
@@ -77,7 +78,7 @@ Pode importar informações para o SDS através de um dos seguintes métodos:
 
 1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. No painel **Intune**, selecione **Configuração do dispositivo**.
-2. No painel **Configuração do dispositivo**, na secção **Gerir**, selecione **Perfis**.
+2. No painel **Configuração do dispositivo** na secção **Gerir**, selecione **Perfis**.
 5. No painel de perfis, selecione **Criar perfil**.
 6. No painel **Criar perfil**, introduza um **Nome** e uma **Descrição** para o perfil de educação do iOS.
 7. Na lista pendente **Plataforma**, selecione **iOS**.
@@ -148,11 +149,11 @@ Quando concluir a configuração dos certificados, escolha **OK**.
 1. No painel **Educação**, selecione OK.
 2. No painel **Criar perfil**, selecione **Criar**.
 
-O perfil será criado e apresentado no painel Lista de perfis.
+O perfil é criado e apresentado no painel da lista de perfis.
 
 Atribua o perfil aos dispositivos dos estudantes nos grupos de sala de aula que foram criados quando sincronizou os dados escolares com o Azure AD (veja [Como atribuir perfis de dispositivo](../configuration/device-profile-assign.md).
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Agora, quando os professores utilizarem a aplicação Classroom, terão controlo total sobre os dispositivos dos estudantes.
 

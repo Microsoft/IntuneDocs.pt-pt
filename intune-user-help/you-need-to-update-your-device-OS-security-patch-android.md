@@ -1,7 +1,7 @@
 ---
-title: Necessita de atualizar o seu dispositivo Android | Documentos da Microsoft
+title: Tem de atualizar o seu dispositivo Android | Documentos da Microsoft
 titlesuffix: Microsoft Intune
-description: Tem de atualizar o sistema operativo do seu dispositivo Android.
+description: Você precisa atualizar o sistema operacional do dispositivo Android.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -10,6 +10,7 @@ ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: b3e5994c-d215-4c72-8915-349bd0b2504d
 searchScope:
@@ -17,12 +18,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 83ff4d6b50a656c996d1a7987f10da7065cb40f9
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: f72ecdea6fc9743ad4ee225b2d490e791363be1f
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61490890"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72507718"
 ---
 # <a name="you-need-to-update-your-android-devices-operating-system"></a>Tem de atualizar o sistema operativo do seu dispositivo Android
 

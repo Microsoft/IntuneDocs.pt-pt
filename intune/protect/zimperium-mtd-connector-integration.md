@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 363fd280-1865-4a61-855b-eb75c3c62753
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3eb18c45f81e427f1d14ce77086e0d7684994e82
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 9ba94a649f9d7b49437d5d97bb621b0b0a94466c
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71732448"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508697"
 ---
 # <a name="integrate-zimperium-with-intune"></a>Integrar o Zimperium com o Intune
 
@@ -74,7 +75,7 @@ Para obter mais informações sobre os aplicativos de consentimento e Azure Acti
 
 4. Selecione **Adicionar MDM** e, em seguida, selecione **Microsoft Intune** a partir da lista **Fornecedor de MDM**.
 
-5. Depois de definir Microsoft Intune como o serviço de MDM, a janela de **configuração de Microsoft Intune** aparecerá, escolha o **Azure Active Directory adicionar** para cada opção: **Zimperium zConsole**, **ZIPS Ios e Android** para autorizar o Zimperium a se comunicar com o INTUNE e o Azure ad por meio do logon único do Azure AD.
+5. Assim que definir o Microsoft Intune como serviço MDM, é apresentada a janela **Configuração do Microsoft Intune**, escolha **Adicionar Azure Active Directory** para cada opção: **Zimperium zConsole** e **Aplicações zIPS para iOS e Android** para autorizar o Zimperium a comunicar com o Intune e o Azure AD através do Início de Sessão Único do Azure AD.
 
     > [!IMPORTANT]  
     > Você deve adicionar os aplicativos Zimperium zConsole, zIPS iOS e Android para concluir o processo de integração com o Intune.
@@ -87,6 +88,6 @@ Para obter mais informações sobre os aplicativos de consentimento e Azure Acti
 
 9. Saia do console do Zimperium MTD.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 - [Configurar aplicações do Zimperium](mtd-apps-ios-app-configuration-policy-add-assign.md)

@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 02/22/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
@@ -17,14 +18,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cbfe0e30794ddfe5b2f089d50456f9cbdd031e6d
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 740a4ce34c5344fd6b2c09fe17116330bb5005f3
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71729996"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72505538"
 ---
-# <a name="enroll-devices-in-intune-by-using-a-device-enrollment-manager-account"></a>Inscrever dispositivos no Intune ao utilizar uma conta de Gestor de inscrição de dispositivos
+# <a name="enroll-devices-in-intune-by-using-a-device-enrollment-manager-account"></a>Registrar dispositivos no Intune usando uma conta do Gerenciador de registro de dispositivos
 
 Pode inscrever até 1000 dispositivos móveis com uma única conta do Azure Active Directory ao utilizar uma conta do gestor de inscrição de dispositivos (DEM). O DEM é uma permissão do Intune que pode ser aplicada a uma conta de utilizador do AAD e que permite que o utilizador inscreva até 1000 dispositivos. Uma conta DEM é útil para cenários onde os dispositivos são inscritos e preparados antes de serem distribuídos aos utilizadores. Por design, há um limite de 25 contas do DEM (Gerenciador de registro de dispositivo) em Microsoft Intune.
 
@@ -37,7 +38,7 @@ As contas de utilizador DEM e os dispositivos que estão inscritos com uma conta
 - Apenas o dispositivo local é apresentado na aplicação Portal da Empresa ou do site.
 - As contas de utilizador DEM não podem utilizar aplicações Apple Volume Purchase Program (VPP) com licenças de utilizador Apple VPP devido aos requisitos do ID Apple por utilizador para a gestão de aplicações.
 - Os dispositivos podem instalar as aplicações VPP se tiverem licenças do dispositivo Apple VPP.
-- Dispositivos estão bloqueados para o acesso condicional com a exceção do Windows 10 versão 1803 +
+- Os dispositivos são bloqueados para acesso condicional com exceção do Windows 10 1803 +
 - Todos os dispositivos registrados com as contas do DEM precisam ser devidamente licenciados para serem gerenciados pelo Intune. A licença pode ser uma licença de usuário do Intune ou uma licença de dispositivo do Intune.
 - Se você estiver [registrando dispositivos de perfil de trabalho do Android Enterprise](android-work-profile-enroll.md) usando uma conta do DEM, haverá um limite de 10 dispositivos que podem ser registrados por conta.
 

@@ -1,6 +1,6 @@
 ---
-title: Inscrever o dispositivo Android com o Portal da empresa do Intune | Documentos da Microsoft
-description: Descreve como inscrever um dispositivo Android com o Portal da empresa do Intune
+title: Registrar dispositivo Android com o Portal da Empresa do Intune | Microsoft Docs
+description: Descreve como registrar um dispositivo Android com o Portal da Empresa do Intune
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -9,6 +9,7 @@ ms.date: 04/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620
 searchScope:
@@ -18,25 +19,25 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 736b1d891207a19f281aa1127975de1a55889e8b
-ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
+ms.openlocfilehash: 1670ddf9299d12312f09d188e4410d14ac40fbe7
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66197040"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506327"
 ---
-# <a name="enroll-your-device-with-company-portal"></a>Inscrever o seu dispositivo com o Portal da empresa  
-Inscreva o seu dispositivo Android pessoal ou pertencentes à empresa para obter acesso seguro ao e-mail da empresa, aplicações e dados. Portal da empresa oferece suporte a dispositivos Android, incluindo o Samsung Knox, executar o Android 4.4 e posterior.  
+# <a name="enroll-your-device-with-company-portal"></a>Registrar seu dispositivo com o Portal da Empresa  
+Registre seu dispositivo Android pessoal ou de propriedade corporativa para obter acesso seguro a email, aplicativos e dados da empresa. O Portal da Empresa dá suporte a dispositivos Android, incluindo Samsung Knox, executando o Android 4,4 e posterior.  
 </br>
 > [!VIDEO https://www.youtube.com/embed/k0Q_sGLSx6o?rel=0]
 
 > [!NOTE]
-> Samsung Knox é um tipo de segurança utilizado por determinados dispositivos Samsung para proteção adicional fora o que proporciona o Android nativo. Para verificar se tem um dispositivo Samsung Knox, > aceda a **configurações** > **sobre o dispositivo**. Se não vir **versão Knox** aí listada, tem um dispositivo Android nativo.
+> O Samsung Knox é um tipo de segurança que determinados dispositivos Samsung usam para proteção adicional, fora do que o Android nativo fornece. Para verificar se você tem um dispositivo Samsung Knox, > vá para **configurações** > **sobre o dispositivo**. Se você não vir a **versão do Knox** listada, você terá um dispositivo Android nativo.
 
-## <a name="enroll-device"></a>Inscrever o dispositivo  
-Certifique-se de que [instalar a aplicação gratuita Portal de empresa do Intune a partir do Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal). 
+## <a name="enroll-device"></a>Registrar dispositivo  
+Certifique-se de [instalar o aplicativo gratuito portal da empresa do Intune do Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal). 
 
-Durante a inscrição, poderá ser-lhe pedido para escolher uma categoria que melhor descreve como utilizar o seu dispositivo. O suporte da empresa utiliza a sua resposta para verificar as aplicações que têm acesso a.  
+Durante o registro, você pode ser solicitado a escolher uma categoria que melhor descreva como você usa seu dispositivo. O suporte de sua empresa usa sua resposta para verificar os aplicativos aos quais você tem acesso.  
 
 1. Abra a aplicação Portal da Empresa.  
 
@@ -44,7 +45,7 @@ Durante a inscrição, poderá ser-lhe pedido para escolher uma categoria que me
 
    ![O ecrã de boas-vindas da aplicação Portal da Empresa para Android, que pede ao utilizador para iniciar sessão com a sua conta escolar ou profissional necessária. Tenha em atenção que as contas Microsoft e outras contas pessoais não são aceites.](./media/and-enroll-0-welcome-screen.png)   
 
-4. Se lhe for pedido para aceitar os termos e condições da sua organização, toque em **ACCEPT**. Este ecrã poderá ser ligeiramente diferente do exemplo captura de ecrã abaixo. 
+4. Se for solicitado que você aceite os termos e condições da sua organização, toque em **aceitar**. Essa tela pode ser um pouco diferente do exemplo de captura abaixo. 
 
    ![android-company-portal-sign-in](./media/and-enroll-3-accept-terms.png)
 
@@ -76,7 +77,7 @@ Durante a inscrição, poderá ser-lhe pedido para escolher uma categoria que me
 
    Se vir esta mensagem, toque em **PERMITIR**. É seguro tocar em PERMITIR, porque a **Microsoft nunca efetua ou gere as suas chamadas telefónicas.** A Google controla o texto da mensagem e a Microsoft não a pode alterar. Quando permite o acesso, está a permitir que o seu dispositivo envie o número de identidade internacional do equipamento móvel (IMEI) do seu dispositivo ao Intune. O número IMEI é como um número de série que identifica exclusivamente um dispositivo móvel.
 
-   Se negar o acesso, a mensagem aparecerá novamente na próxima vez que iniciar sessão no Portal da empresa. Para desativar futuras mensagens, selecione **nunca voltar a perguntar**. Para reverter a permissão de acesso, aceda a **configurações** > **aplicações** > **Portal da empresa** > **permissões**   >  **Phone**e, em seguida, ative a permissão.  
+   Se você negar o acesso, a mensagem será exibida novamente na próxima vez que você entrar no Portal da Empresa. Para desativar as mensagens futuras, selecione **nunca perguntar novamente**. Para reverter a permissão de acesso, vá para **configurações** > **aplicativos** > **Portal da Empresa** > **permissões** > **telefone**e, em seguida, ative a permissão.  
 
    - **Permitir que o Portal da Empresa aceda aos seus contactos?**
 
@@ -122,13 +123,13 @@ Durante a inscrição, poderá ser-lhe pedido para escolher uma categoria que me
 
     ![Ecrã Configuração de acesso à empresa concluída](./media/and-enroll-10-comp-access-setup-complete.png)
 
-## <a name="next-steps"></a>Passos Seguintes  
+## <a name="next-steps"></a>Próximos passos  
 
-Antes de tentar instalar aplicações da empresa, aceda a **configurações** > **segurança**e ativar **origens desconhecidas**. Se não ativar esta opção antes de tentar instalar aplicações, verá a seguinte mensagem: "Instalação bloqueada. Por motivos de segurança, o dispositivo está definido para bloquear as instalações de aplicações obtidas a partir de origens desconhecidas." Pode tocar em **Definições**, na caixa de diálogo de erro, para ir para a opção **Origens desconhecidas**.  
+Antes de tentar instalar os aplicativos da empresa, vá para configurações  > **segurança**e ative **as** **fontes desconhecidas**. Se não ativar esta opção antes de tentar instalar aplicações, verá a seguinte mensagem: "Instalação bloqueada. Por motivos de segurança, o dispositivo está definido para bloquear as instalações de aplicações obtidas a partir de origens desconhecidas." Pode tocar em **Definições**, na caixa de diálogo de erro, para ir para a opção **Origens desconhecidas**.  
 
 > [!Note]
 > Se a sua organização utilizar software de gestão de despesas de telecomunicações, terá de completar alguns passos adicionais antes de o dispositivo ficar totalmente inscrito. Saiba mais [aqui](enroll-your-device-with-telecom-expense-management-android.md).
 
-Se obtiver um erro enquanto tenta inscrever o dispositivo no Intune, pode [o suporte da empresa de e-mail](send-logs-to-your-it-admin-by-email-android.md).  
+Se você receber um erro ao tentar registrar seu dispositivo no Intune, poderá [enviar por email o suporte de sua empresa](send-logs-to-your-it-admin-by-email-android.md).  
 
 Ainda precisa de ajuda? Contacte o suporte da empresa (verifique as informações de contacto no [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980)) ou escreva para a <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with enrolling my Android device&body=Describe the issue you're experiencing here.">equipa Android da Microsoft</a>.

@@ -8,18 +8,19 @@ manager: dougeby
 ms.date: 08/06/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 642e054f7ba400fcc8b38b83ba19731c8e0998da
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: d9f52d3a7c40f27555a07682adf86b0339cef616
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71730464"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72491925"
 ---
 # <a name="android-enterprise-device-settings-to-configure-vpn-in-intune"></a>Configurações de dispositivo do Android Enterprise para configurar a VPN no Intune
 
@@ -35,17 +36,17 @@ Para saber mais sobre perfis de VPN no Intune, confira [perfis de VPN](vpn-setti
 
 [Crie um perfil de configuração de dispositivo](vpn-settings-configure.md#create-a-device-profile)e escolha **Android Enterprise**.
 
-## <a name="device-owner-only"></a>Proprietário do dispositivo apenas
+## <a name="device-owner-only"></a>Somente proprietário do dispositivo
 
-- **Nome da conexão**: Insira um nome para esta conexão. Os utilizadores finais verão este nome quando procurarem no dispositivo as ligações VPN disponíveis. Por exemplo, introduza `Contoso VPN`.
-- **Endereço IP ou FQDN**: Insira o endereço IP ou o FQDN (nome de domínio totalmente qualificado) do servidor VPN que os dispositivos se conectam. Por exemplo, introduza **192.168.1.1** ou **vpn.contoso.com**.
+- **Nome da ligação**: introduza um nome para esta ligação. Os utilizadores finais verão este nome quando procurarem no dispositivo as ligações VPN disponíveis. Por exemplo, introduza `Contoso VPN`.
+- **Endereço IP ou FQDN**: introduza o endereço IP ou nome de domínio completamente qualificado (FQDN) do servidor VPN ao qual os dispositivos são ligados. Por exemplo, introduza **192.168.1.1** ou **vpn.contoso.com**.
 
-  - **Método de autenticação**: Escolha como os dispositivos são autenticados no servidor VPN. As opções são:
+  - **Método de autenticação**: selecione como os dispositivos serão autenticados no servidor VPN. As opções são:
   
-    - **Certificados**: Selecione um perfil de certificado SCEP ou PKCS existente para autenticar a conexão. [Configurar certificados](../protect/certificates-configure.md) lista os passos para criar um perfil de certificado.
-    - **Nome de usuário e senha**: Ao entrar no servidor VPN, os usuários finais são solicitados a inserir seu nome de usuário e senha.
+    - **Certificados**: selecione um perfil de certificado SCEP ou PKCS existente para autenticar a ligação. [Configurar certificados](../protect/certificates-configure.md) lista os passos para criar um perfil de certificado.
+    - **Nome de usuário e senha**: ao entrar no servidor VPN, os usuários finais são solicitados a inserir seu nome de usuários e senha.
 
-- **Tipo de conexão**: Selecione o tipo de conexão VPN. As opções são:
+- **Tipo de ligação**: selecione o tipo de ligação VPN. As opções são:
 
   - **Cisco AnyConnect**
   - **Acesso ao F5**
@@ -53,15 +54,15 @@ Para saber mais sobre perfis de VPN no Intune, confira [perfis de VPN](vpn-setti
 
 ## <a name="work-profile-only"></a>Apenas perfil de trabalho
 
-- **Nome da conexão**: Insira um nome para esta conexão. Os utilizadores finais verão este nome quando procurarem no dispositivo as ligações VPN disponíveis. Por exemplo, introduza `Contoso VPN`.
-- **Endereço IP ou FQDN**: Insira o endereço IP ou o FQDN (nome de domínio totalmente qualificado) do servidor VPN que os dispositivos se conectam. Por exemplo, introduza **192.168.1.1** ou **vpn.contoso.com**.
+- **Nome da ligação**: introduza um nome para esta ligação. Os utilizadores finais verão este nome quando procurarem no dispositivo as ligações VPN disponíveis. Por exemplo, introduza `Contoso VPN`.
+- **Endereço IP ou FQDN**: introduza o endereço IP ou nome de domínio completamente qualificado (FQDN) do servidor VPN ao qual os dispositivos são ligados. Por exemplo, introduza **192.168.1.1** ou **vpn.contoso.com**.
 
-  - **Método de autenticação**: Escolha como os dispositivos são autenticados no servidor VPN. As opções são:
+  - **Método de autenticação**: selecione como os dispositivos serão autenticados no servidor VPN. As opções são:
   
-    - **Certificados**: Selecione um perfil de certificado SCEP ou PKCS existente para autenticar a conexão. [Configurar certificados](../protect/certificates-configure.md) lista os passos para criar um perfil de certificado.
-    - **Nome de usuário e senha**: Ao entrar no servidor VPN, os usuários finais são solicitados a inserir seu nome de usuário e senha.
+    - **Certificados**: selecione um perfil de certificado SCEP ou PKCS existente para autenticar a ligação. [Configurar certificados](../protect/certificates-configure.md) lista os passos para criar um perfil de certificado.
+    - **Nome de usuário e senha**: ao entrar no servidor VPN, os usuários finais são solicitados a inserir seu nome de usuários e senha.
 
-- **Tipo de conexão**: Selecione o tipo de conexão VPN. As opções são:
+- **Tipo de ligação**: selecione o tipo de ligação VPN. As opções são:
 
   - **Cisco AnyConnect**
   - **Acesso ao F5**
@@ -69,7 +70,7 @@ Para saber mais sobre perfis de VPN no Intune, confira [perfis de VPN](vpn-setti
   - **SonicWall Mobile Connect**
   - **Check Point Capsule VPN**
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 [Atribua o perfil](device-profile-assign.md) e [monitorize o respetivo estado](device-profile-monitor.md).
 

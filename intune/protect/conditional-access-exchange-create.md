@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 09/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 45e6f473eaec082b3f566b6bf717aed7c3b49f80
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: c18da57282a190dec363e3dfbde5293f5228cb0b
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71729776"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72504632"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Criar uma política de acesso condicional para o Exchange local e o Exchange Online dedicado herdado
 
@@ -66,7 +67,7 @@ Para poder configurar o acesso condicional, verifique se as seguintes configura�
 - Windows Phone 8.1 e posterior
 - Aplicação de e-mail nativa no iOS.
 - Clientes de correio EAS, como o Gmail para Android 4 ou posterior.
-- **Dispositivos de perfil de trabalho do Android** para clientes de email do EAS: Somente o **gmail** e o **nove funcionam para Android Enterprise** no **perfil de trabalho** têm suporte em dispositivos de perfil de trabalho do Android. Para que o acesso condicional funcione com perfis de trabalho do Android, você deve implantar um perfil de email para o Gmail ou nove trabalho para o aplicativo Android Enterprise e também implantar esses aplicativos como uma instalação necessária.
+- Clientes de correio EAS em **dispositivos com perfil de trabalho do Android:** apenas as aplicações **Gmail** e **Nine Work para Android Enterprise** são suportadas no **perfil de trabalho** em dispositivos com perfil de trabalho do Android. Para que o acesso condicional funcione com perfis de trabalho do Android, você deve implantar um perfil de email para o Gmail ou nove trabalho para o aplicativo Android Enterprise e também implantar esses aplicativos como uma instalação necessária.
 
 > [!NOTE]
 > Não há suporte para o Microsoft Outlook para Android e iOS por meio do Exchange local Connector. Se você quiser aproveitar Azure Active Directory políticas de acesso condicional e Proteção de Aplicativo do Intune políticas com o Outlook para iOS e Android para suas caixas de correio locais, consulte [usando a autenticação moderna híbrida com o Outlook para IOS e Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth) . 

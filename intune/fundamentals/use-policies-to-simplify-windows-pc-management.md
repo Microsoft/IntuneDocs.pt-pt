@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 01/01/2018
 ms.topic: archived
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: f0afda7e-f4c3-4bcd-b4bf-4304103cf73e
@@ -17,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ccedb68a7226c0d026519cf90c7b278e29678929
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 5f9990d24c97ea4e8b6d0c37fb8225a9df0e47cb
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71731620"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72504835"
 ---
 # <a name="use-policies-to-simplify-windows-pc-management"></a>Utilizar políticas para simplificar a gestão de PCs Windows
 
-[!INCLUDE [classic-portal](../../intune-classic/includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Para gerir computadores Windows como PCs ao executar o cliente de software do Intune nos mesmos, só pode utilizar as políticas em **Gestão de Computadores** na consola de administração do Intune. Todas as outras políticas listadas na consola de administração destinam-se apenas a dispositivos móveis. Através das políticas de **Gestão de Computadores**, pode configurar as definições no Microsoft Intune Center, controlar as atualizações nos PCs e configurar a Firewall do Windows para PCs.
 
@@ -45,14 +46,14 @@ Os utilizadores veem o cliente de software do Intune como o **Microsoft Intune C
 
 O Centro do Microsoft Intune é instalado em todos os computadores geridos. Pode configurar as seguintes definições numa política do Intune e estas serão apresentadas aos utilizadores no Centro do Microsoft Intune:
 
-|Definição de política|Detalhes|
+|Definição de política|Details|
 |------------------|--------------------|
-|**Name**|O nome do administrador que gere o computador.<br />Comprimento máximo: 40 caracteres|
-|**Número de telefone**|O número de telefone do administrador que gere o computador.<br />Comprimento máximo: 20 caracteres|
-|**Endereço de e-mail**|O endereço de e-mail do administrador que gere o computador.<br />Comprimento máximo: 40 caracteres|
-|**Nome do site**|O nome do seu site de suporte para utilizadores.<br />comprimento máximo de >: 40 caracteres|
-|**URL do site**|O URL do seu site de suporte.<br />Comprimento máximo: 150 caracteres|
-|**Notas**|Uma nota que é apresentada aos utilizadores.<br />Comprimento máximo: 120 caracteres|
+|**Nome**|O nome do administrador que gere o computador.<br />Comprimento máximo: 40 carateres|
+|**Número de telefone**|O número de telefone do administrador que gere o computador.<br />Comprimento máximo: 20 carateres|
+|**Endereço de e-mail**|O endereço de e-mail do administrador que gere o computador.<br />Comprimento máximo: 40 carateres|
+|**Nome do site**|O nome do seu site de suporte para utilizadores.<br />>Comprimento máximo: 40 carateres|
+|**URL do site**|O URL do seu site de suporte.<br />Comprimento máximo: 150 carateres|
+|**Notas**|Uma nota que é apresentada aos utilizadores.<br />Comprimento máximo: 120 carateres|
 
 Consulte os seguintes recursos para obter informações sobre as políticas e definições que pode configurar para PCs Windows:
 

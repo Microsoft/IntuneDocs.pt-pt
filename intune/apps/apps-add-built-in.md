@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/15/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 0ec8de66-5a0f-4c8d-afbf-c2becc7d6eec
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2a94542311bc5ff4a25b2f9c6229898b1d891c6c
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: e494f154c34a4e4866b9eb6980c713da8a7e23b6
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71731296"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72507332"
 ---
 # <a name="add-built-in-apps-to-microsoft-intune"></a>Adicionar aplicações incorporadas ao Microsoft Intune
 
@@ -36,7 +37,7 @@ Nas versões anteriores da consola do Intune, o Intune disponibilizava várias a
 ## <a name="add-a-built-in-app"></a>Adicionar uma aplicação incorporada
 
 Para adicionar uma aplicação incorporada às suas aplicações disponíveis no Microsoft Intune, faça o seguinte:
-1. Inicie sessão no Portal do Azure.
+1. Inicie sessão no portal do Azure.
 2. Para apresentar o painel do Microsoft Intune, selecione **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
 3. No painel **Intune**, selecione **Aplicações do cliente**.
 4. No painel **Aplicações do cliente**, em **Gerir**, selecione **Aplicações**.
@@ -55,20 +56,20 @@ Pode modificar as informações da aplicação incorporada. Estas informações 
 2. Em **Gerir**, selecione a opção **Propriedades**.
 3. Selecione a opção **Configurar** para modificar as informações da aplicação incorporada.
 4. No painel **Informações da aplicação**, pode modificar as seguintes informações:
-    - **Nome**: Insira o nome do aplicativo interno como ele é exibido no portal da empresa. Certifique-se de que todos os nomes que utiliza são exclusivos. Se existir o mesmo nome duas vezes, só é apresentada uma das aplicações aos utilizadores no portal da empresa.
-    - **Descrição**: Introduza uma descrição para a aplicação. 
-    - **Publicador**: Introduza o nome do publicador da aplicação.
-    - **Categoria**: Opcionalmente, selecione uma ou mais das categorias de aplicativo internas. Esta opção permite que os utilizadores encontrem a aplicação mais facilmente quando procurarem no portal da empresa.
-    - **Exibir como um aplicativo em destaque no portal da empresa**: Apresente a aplicação de forma bem visível na página principal do portal da empresa quando os utilizadores procurarem aplicações.
-    - **URL de Informações**: Opcionalmente, introduza o URL de um site que contenha informações sobre esta aplicação. O URL é apresentado aos utilizadores no portal da empresa.
-    - **URL de privacidade**: Opcionalmente, introduza o URL de um site que contenha informações sobre a privacidade desta aplicação. O URL é apresentado aos utilizadores no portal da empresa.
+    - **Nome**: introduza o nome da aplicação incorporada tal como será apresentado no portal da empresa. Certifique-se de que todos os nomes que utiliza são exclusivos. Se existir o mesmo nome duas vezes, só é apresentada uma das aplicações aos utilizadores no portal da empresa.
+    - **Descrição**: introduza uma descrição para a aplicação. 
+    - **Publicador**: introduza o nome do publicador da aplicação.
+    - **Categoria**: opcionalmente, selecione uma ou mais das categorias de aplicações incorporadas. Esta opção permite que os utilizadores encontrem a aplicação mais facilmente quando procurarem no portal da empresa.
+    - **Apresentar esta aplicação em destaque no portal da empresa**: apresente a aplicação de forma destacada na página principal do portal da empresa quando os utilizadores procurarem aplicações.
+    - **URL de Informações**: opcionalmente, introduza o URL de um site que contenha informações sobre esta aplicação. O URL é apresentado aos utilizadores no portal da empresa.
+    - **URL de Privacidade**: opcionalmente, introduza um URL para um site que contenha informações sobre a privacidade desta aplicação. O URL é apresentado aos utilizadores no portal da empresa.
     - **Programador**: opcionalmente, introduza o nome do programador da aplicação.
-    - **Proprietário**: Opcionalmente, insira um nome para o proprietário deste aplicativo (por exemplo, *departamento de RH*).
+    - **Proprietário**: opcionalmente, introduza o nome do proprietário desta aplicação (por exemplo, *Departamento de RH*).
     - **Notas**: introduza quaisquer notas que queira associar a esta aplicação.
-    - **Ícone de carregamento**: Carregue um ícone que é exibido com o aplicativo quando os usuários navegam pelo portal da empresa.
+    - **Carregar Ícone**: carregue um ícone que será apresentado com a aplicação quando os utilizadores procurarem no portal da empresa.
 4. Selecione **OK**.
 5. No painel **Propriedades**, selecione **Guardar**.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 - Agora pode atribuir as aplicações aos grupos que escolher. Para obter mais informações, veja [Atribuir aplicações a grupos](apps-deploy.md).

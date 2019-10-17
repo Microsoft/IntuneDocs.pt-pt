@@ -9,6 +9,7 @@ ms.date: 09/13/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 523caa6b-d792-4bb6-bddb-24b2479932d8
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 98fd937ee379d71874f61152d88ddc94fa5b7a09
-ms.sourcegitcommit: 3db8af810b95c3a6ed3f8cc00f6ce79076ebb9db
+ms.openlocfilehash: ca1776915d50858c28b43a49faa7c737c825c67d
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71012421"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72501853"
 ---
 # <a name="what-is-device-enrollment"></a>O que é a inscrição de dispositivos?
 Para obter acesso a recursos corporativos ou de estudante do seu dispositivo, você precisará registrar seu dispositivo com o aplicativo Portal da Empresa do Intune ou Microsoft Intune aplicativo. 
@@ -62,8 +63,8 @@ Você pode registrar os seguintes dispositivos com o Portal da Empresa:
 - Dispositivos Windows
   - Windows 10 Mobile
   - Computadores com o Windows 10
-  - Windows Phone 8.1
-  - Windows 8.1
+  - Wnodows Phone 8.1
+  - Windows 8.1
 - Dispositivos Apple
     - iOS
     - macOS
@@ -98,7 +99,7 @@ Para solucionar problemas comuns, confira estes documentos específicos da plata
 
 Você também pode entrar em contato com o seu pessoal de suporte de ti. O Portal da Empresa e o aplicativo Microsoft Intune oferecem páginas de ajuda e suporte que listam informações de contato e maneiras de relatar um problema. As informações de contato também estão disponíveis no [site Portal da empresa](https://go.microsoft.com/fwlink/?linkid=2010980)da sua organização.  
 
-## <a name="next-steps"></a>Passos Seguintes  
+## <a name="next-steps"></a>Próximos passos  
 
 Se você estiver pronto para acessar sua conta corporativa ou de estudante, siga as instruções da sua organização para registrar seu dispositivo. Você também pode encontrar orientações passo a passo de registro nos artigos a seguir.
 

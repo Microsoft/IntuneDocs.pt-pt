@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 08/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 60347012-bc3f-4b9a-a4f4-6d3c5021a6e6
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: apps; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3c351c1bef09d559ee6fb07b2c5135b25ca69d9d
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 53425b56985cbafb4033b11df54597959c0b0d59
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71731428"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72499722"
 ---
 # <a name="overview-of-the-app-lifecycle-in-microsoft-intune"></a>Descrição geral do ciclo de vida das aplicações no Microsoft Intune
 
@@ -35,7 +36,7 @@ O ciclo de vida das aplicações do Microsoft Intune começa quando uma aplicaç
 
 O primeiro passo na implementação de aplicações consiste em adicionar as aplicações que pretende gerir e atribuir no Intune. Apesar de poder utilizar muitos tipos de aplicações diferentes, os procedimentos básicos são iguais. Com o Intune, você pode adicionar diferentes tipos de aplicativo, incluindo aplicativos escritos internamente (linha de negócios), aplicativos da loja, aplicativos que são internos e aplicativos na Web. Para obter mais informações sobre cada um destes tipos de aplicações, veja [Como adicionar uma aplicação ao Microsoft Intune](apps-add.md). 
 
-## <a name="deploy"></a>Implementação
+## <a name="deploy"></a>Implementar
 
 Depois de adicionar a aplicação ao Intune, pode [atribuí-la aos utilizadores e dispositivos que gere](apps-deploy.md). O Intune facilita esse processo e, depois que o aplicativo é implantado, você pode [monitorar o sucesso](apps-monitor.md) da implantação do Intune dentro do portal do Azure. Além disso, em algumas lojas de aplicações, como a da [Apple](vpp-apps-ios.md) e do [Windows](windows-store-for-business.md), pode comprar licenças de aplicações em volume para a sua empresa. O Intune pode sincronizar os dados com estas lojas para poder implementar e monitorizar a utilização de licenças para estes tipos de aplicações diretamente a partir da consola de administração do Intune.
 
@@ -45,7 +46,7 @@ Como parte do ciclo de vida das aplicações, são lançadas regularmente novas 
 - As [políticas de configuração de aplicações iOS](app-configuration-policies-use-ios.md) fornecem definições para aplicações iOS compatíveis utilizadas quando a aplicação é executada. Por exemplo, uma aplicação pode precisar de definições de imagem corporativa específicas ou do nome de um servidor ao qual deve estabelecer ligação.
 - As [políticas de browser gerido](app-configuration-managed-browser.md) ajudam a configurar as definições para o Intune Managed Browser, que substitui o browser do dispositivo predefinido e permite restringir os sites que os utilizadores podem visitar.
 
-## <a name="protect"></a>proteger
+## <a name="protect"></a>Proteger
 
 O Intune fornece várias formas para ajudar a proteger os dados nas suas aplicações. Os métodos principais são:
 - [Acesso condicional](../protect/conditional-access.md), que controla o acesso a email e outros serviços com base nas condições que você especificar. As condições incluem tipos de dispositivos ou conformidade com uma [política de conformidade do dispositivo](../protect/device-compliance-get-started.md) que tenha implementado.
@@ -55,6 +56,6 @@ O Intune fornece várias formas para ajudar a proteger os dados nas suas aplica�
 
 Eventualmente, é provável que as aplicações implementadas fiquem desatualizadas e tenham de ser removidas. O Intune facilita a [extinção de aplicações no serviço](../remote-actions/device-management.md).
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 - Saiba mais sobre a [gestão de aplicações no Microsoft Intune](app-management.md)

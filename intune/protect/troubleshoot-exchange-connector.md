@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 10/02/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: a7e3c742-295b-40bb-9afa-17f243062500
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 230ee8c1206a4d091661b51dd239a4cb0b1a1963
-ms.sourcegitcommit: f04e21ec459998922ba9c7091ab5f8efafd8a01c
+ms.openlocfilehash: 962e66a9fdf6d8abcf6855f645775026ee4db850
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71814043"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508836"
 ---
 # <a name="troubleshoot-the-intune-exchange-connector"></a>Solucionar problemas do Intune Exchange Connector
 
@@ -64,12 +65,12 @@ Examine os [requisitos do Exchange Connector local](exchange-connector-install.m
 
 ### <a name="common-issues-for-connector-configurations"></a>Problemas comuns de configurações de conector
 
-- **Permissões de conta**: Na caixa de diálogo do Microsoft Intune Exchange Connector, certifique-se de que especificou uma conta de utilizador com as permissões adequadas para executar os [cmdlets do Windows PowerShell Exchange necessários](exchange-connector-install.md#exchange-cmdlet-requirements).
-- **Mensagens de email de notificação**: Ative as notificações e especifique uma conta de notificação.
-- **Sincronização do servidor de acesso para cliente**: Ao configurar o Exchange Connector, especifique um CAS que tenha a menor latência de rede possível para o servidor que hospeda o Exchange Connector. A latência de comunicação entre as CAS e o Exchange Connector pode atrasar a descoberta de dispositivos, especialmente ao usar o Exchange Online dedicado.
-- **Agendamento de sincronização**: Um utilizador com um dispositivo inscrito recentemente pode sofrer um atraso na obtenção de acesso até que o conector do Exchange sincronize com o CAS do Exchange. Uma sincronização completa é realizada uma vez ao dia e uma sincronização (rápida) delta ocorre várias vezes ao dia. Pode [forçar manualmente uma sincronização rápida ou uma sincronização completa](exchange-connector-install.md#manually-force-a-quick-sync-or-full-sync) para minimizar atrasos.
+- **Permissões de conta**: na caixa de diálogo Microsoft Intune Exchange Connector, verifique se você especificou uma conta de usuário que tenha as permissões apropriadas para executar os [cmdlets do Windows PowerShell Exchange necessários](exchange-connector-install.md#exchange-cmdlet-requirements).
+- **Mensagens de email de notificação**: habilite notificações e especifique uma conta de notificação.
+- **Sincronização do servidor de acesso para cliente**: ao configurar o Exchange Connector, ESPECIFIQUE um CAS que tenha a menor latência de rede possível para o servidor que hospeda o Exchange Connector. A latência de comunicação entre as CAS e o Exchange Connector pode atrasar a descoberta de dispositivos, especialmente ao usar o Exchange Online dedicado.
+- **Agendamento de sincronização**: um usuário com um dispositivo registrado recentemente pode ser atrasado para obter acesso até que o Exchange Connector Sincronize com as CAS do Exchange. Uma sincronização completa é realizada uma vez ao dia e uma sincronização (rápida) delta ocorre várias vezes ao dia. Pode [forçar manualmente uma sincronização rápida ou uma sincronização completa](exchange-connector-install.md#manually-force-a-quick-sync-or-full-sync) para minimizar atrasos.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 Os artigos a seguir podem ajudar a resolver problemas comuns e erros específicos:
 
 - [Resolva problemas comuns do Intune Exchange Connector](troubleshoot-exchange-connector-common-problems.md).

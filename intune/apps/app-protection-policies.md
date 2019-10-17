@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 10/03/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4958a35f3a83fecffacf26421e4c1d797f45ddaa
-ms.sourcegitcommit: 223d64a72ec85fe222f5bb10639da729368e6d57
+ms.openlocfilehash: 0c8507f98a757f2f80580014eab3589da12f8de8
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71940381"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72499197"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Como criar e atribuir políticas de proteção de aplicações
 
@@ -143,9 +144,9 @@ Para criar estas políticas, navegue até **Aplicações do cliente** > **Polít
 
 ### <a name="app-types"></a>Tipos de aplicações
 
-- **Aplicativos em dispositivos não gerenciados**: Dispositivos não gerenciados são dispositivos em que o gerenciamento de MDM do Intune não foi detectado. Isso inclui fornecedores de MDM de terceiros.
-- **Aplicativos em dispositivos gerenciados pelo Intune**: Os dispositivos gerenciados são gerenciados pelo MDM do Intune.
-- **Aplicativos no perfil de trabalho do Android**: Dispositivos gerenciados que foram registrados como dispositivos Android Enterprise de perfil de trabalho.
+- **Aplicativos em dispositivos não gerenciados**: dispositivos não gerenciados são dispositivos em que o gerenciamento de MDM do Intune não foi detectado. Isso inclui fornecedores de MDM de terceiros.
+- **Aplicativos em dispositivos gerenciados pelo Intune**: os dispositivos gerenciados são gerenciados pelo MDM do Intune.
+- **Aplicativos no perfil de trabalho do Android**: dispositivos gerenciados que foram registrados como dispositivos de perfil de trabalho do Android Enterprise.
 
 > Observação os dispositivos Android solicitarão a instalação do aplicativo Portal da Empresa do Intune, independentemente do tipo de aplicativo escolhido. Por exemplo, se você selecionar ' aplicativos em dispositivos gerenciados pelo Intune ', os usuários com dispositivos Android não gerenciados ainda serão solicitados.
 
@@ -164,7 +165,7 @@ Para ver uma lista completa das definições de política para iOS e Android, se
 - [Políticas para iOS](app-protection-policy-settings-ios.md)
 - [Políticas para Android](app-protection-policy-settings-android.md)
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 [Monitorizar o estado do utilizador e de conformidade](app-protection-policies-monitor.md)
 
 ## <a name="see-also"></a>Consulte também

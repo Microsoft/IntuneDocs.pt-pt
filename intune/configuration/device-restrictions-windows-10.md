@@ -1,5 +1,5 @@
 ---
-title: Configurações de restrição de dispositivo para Windows 10 no Microsoft Intune-Azure | Microsoft Docs
+title: Definições de restrição de dispositivos para Windows 10 no Microsoft Intune – Azure | Microsoft Docs
 description: Consulte uma lista de todas as configurações e suas descrições para criar restrições de dispositivo em dispositivos Windows 10 e posteriores. Use essas configurações em um perfil de configuração para controlar capturas de tela, requisitos de senha, configurações de quiosque, aplicativos na loja, navegador Microsoft Edge, Windows Defender, acesso à nuvem, menu iniciar e muito mais em Microsoft Intune.
 keywords: ''
 author: MandiOhlinger
@@ -8,18 +8,19 @@ manager: dougeby
 ms.date: 10/09/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 149da4c5aafc436156b7b29566bb5d792506de7c
-ms.sourcegitcommit: b1e97211db7cb949eb39be6776b3a11d434fdab0
+ms.openlocfilehash: 164c34f4a46ca11e2788b72dee70bdd40c25e7f3
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "72251556"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72493907"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Configurações do dispositivo Windows 10 (e mais recente) para permitir ou restringir recursos usando o Intune
 
@@ -34,17 +35,17 @@ Essas configurações são adicionadas a um perfil de configuração de disposit
 
 [Criar um perfil de configuração de dispositivo](device-restrictions-configure.md#create-the-profile).
 
-## <a name="app-store"></a>Loja de aplicativos
+## <a name="app-store"></a>App Store
 
 Essas configurações usam o [CSP da política do ApplicationManagement](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement), que também lista as edições do Windows com suporte.
 
 - **Loja de aplicativos** (somente dispositivos móveis): **não configurado** (padrão) permite que os usuários finais acessem a loja de aplicativos em dispositivos móveis. **Bloquear** impede o uso da loja de aplicativos.
 - **Atualizar automaticamente os aplicativos da loja**: **não configurado** (padrão) permite que os aplicativos instalados do Microsoft Store sejam atualizados de forma automática. **Bloquear** impede que as atualizações sejam instaladas automaticamente.
-- **Instalação de aplicativo confiável**: escolha se os aplicativos não Microsoft Store podem ser instalados, também conhecidos como Sideload. O Sideload está sendo instalado e, em seguida, executando ou testando um aplicativo que não é certificado pelo Microsoft Store. Por exemplo, um aplicativo que é interno somente à sua empresa. Suas opções:
+- **Instalação de aplicativo confiável**: escolha se os aplicativos não Microsoft Store podem ser instalados, também conhecidos como Sideload. O Sideload está sendo instalado e, em seguida, executando ou testando um aplicativo que não é certificado pelo Microsoft Store. Por exemplo, um aplicativo que é interno somente à sua empresa. As opções são:
   - **Não configurado** (padrão): usa o padrão do sistema operacional.
   - **Bloquear**: impede o Sideload. Não é possível instalar aplicativos não Microsoft Store.
   - **Permitir**: permite Sideload. Os aplicativos não Microsoft Store podem ser instalados.
-- **Desbloqueio do desenvolvedor**: permite que as configurações do desenvolvedor do Windows, como permitir que aplicativos Sideload sejam modificadas pelos usuários finais. Suas opções:
+- **Desbloqueio do desenvolvedor**: permite que as configurações do desenvolvedor do Windows, como permitir que aplicativos Sideload sejam modificadas pelos usuários finais. As opções são:
   - **Não configurado** (padrão): usa o padrão do sistema operacional.
   - **Bloquear**: impede o modo de desenvolvedor e aplicativos de Sideload.
   - **Permitir**: permite o modo de desenvolvedor e aplicativos de Sideload.
@@ -57,7 +58,7 @@ Essas configurações usam o [CSP da política do ApplicationManagement](https:/
 - **Instalar dados de aplicativo no volume do sistema**: **Bloquear** impede que os aplicativos armazenem dados no volume do sistema do dispositivo. **Não configurado** (padrão) permite que os aplicativos armazenem dados no volume de disco do sistema.
 - **Instalar aplicativos na unidade do sistema**: **Bloquear** impede que os aplicativos sejam instalados na unidade do sistema no dispositivo. **Não configurado** (padrão) permite que os aplicativos sejam instalados na unidade do sistema.
 - **DVR de jogos** (somente desktop): o **bloco** desabilita a gravação e a transmissão de jogos do Windows. **Não configurado** (padrão) permite a gravação e a difusão de jogos.
-- **Aplicativos somente da loja**: essa configuração determina a experiência do usuário quando os usuários instalam aplicativos de locais diferentes do Microsoft Store. Suas opções:
+- **Aplicativos somente da loja**: essa configuração determina a experiência do usuário quando os usuários instalam aplicativos de locais diferentes do Microsoft Store. As opções são:
 
   - **Não configurado** (padrão): permite que os usuários finais instalem aplicativos de locais diferentes do Microsoft Store, incluindo aplicativos definidos em outras configurações de política.  
   - **Em qualquer lugar**: desativa as recomendações do aplicativo e permite que os usuários instalem aplicativos de qualquer local.  
@@ -79,13 +80,13 @@ Essas configurações usam o [CSP da política do ApplicationManagement](https:/
 
   [CSP ApplicationManagement/LaunchAppAfterLogOn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-launchappafterlogon)
 
-## <a name="cellular-and-connectivity"></a>Celular e conectividade
+## <a name="cellular-and-connectivity"></a>Rede Móvel e Conectividade
 
 Essas configurações usam a [política de conectividade](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity) e os CSPs da [política de Wi-Fi](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-wifi) , que também listam as edições do Windows com suporte.
 
 - [CSP da política Wi-Fi](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-wifi)
 
-- **Canal de dados da rede celular**: escolha se os usuários finais podem usar dados, como navegar na Web, quando conectados a uma rede de celular. Suas opções:
+- **Canal de dados da rede celular**: escolha se os usuários finais podem usar dados, como navegar na Web, quando conectados a uma rede de celular. As opções são:
   - **Não configurado** (padrão): usa o padrão do sistema operacional, que pode permitir o canal de dados da rede celular. Os usuários finais podem desativá-lo.
   - **Bloquear**: não permitir o canal de dados da rede celular. Os usuários finais não podem ativá-lo.
   - **Allow (não editável)** : permite o canal de dados da rede celular. Os usuários finais não podem desativá-lo.
@@ -112,7 +113,7 @@ Essas configurações usam o [CSP de política do Bluetooth](https://docs.micros
 
   O [Guia de uso do ServicesAllowedList](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-bluetooth#servicesallowedlist-usage-guide) tem mais informações sobre a lista de serviços.
 
-## <a name="cloud-and-storage"></a>Nuvem e armazenamento
+## <a name="cloud-and-storage"></a>Cloud e Armazenamento
 
 Essas configurações usam o [CSP de política de contas](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-accounts); que também lista as edições do Windows com suporte.
 
@@ -121,7 +122,7 @@ Essas configurações usam o [CSP de política de contas](https://docs.microsoft
 - **Sincronização de configurações para conta Microsoft**: **não configurado** (padrão) permite que as configurações de dispositivo e aplicativo associadas a um conta Microsoft para sincronizar entre dispositivos. **Bloquear** impede esta sincronização.
 - **Assistente de conexão de conta da Microsoft**: quando definido como **não configurado** (padrão), os usuários finais podem iniciar e parar o serviço de WLIDSVC ( **Assistente de conexão de conta da Microsoft** ). Esse serviço de sistema operacional permite que os usuários entrem em seus conta Microsoft. **Desabilitar** impede que os usuários finais controlem o serviço de assistente de conexão da Microsoft (WLIDSVC).
 
-## <a name="cloud-printer"></a>Impressora em nuvem
+## <a name="cloud-printer"></a>Impressora em Cloud
 
 Essas configurações usam o [CSP da política do EnterpriseCloudPrint](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-enterprisecloudprint); que também lista as edições do Windows com suporte.
 
@@ -135,7 +136,7 @@ Essas configurações usam o [CSP da política do EnterpriseCloudPrint](https://
 > [!TIP]
 > Depois de configurar uma [impressão em nuvem híbrida do Windows Server](https://docs.microsoft.com/windows-server/administration/hybrid-cloud-print/hybrid-cloud-print-overview), você pode definir essas configurações e, em seguida, implantar em seus dispositivos Windows.
 
-## <a name="control-panel-and-settings"></a>Painel de controle e configurações
+## <a name="control-panel-and-settings"></a>Painel de Controlo e Definições
 
 - **Aplicativo de configurações**: **Bloquear** impede que os usuários finais acessem o aplicativo de configurações do Windows. **Não configurado** (padrão) permite que os usuários abram o aplicativo configurações no dispositivo.
   - **System**: **Bloquear** impede o acesso à área do sistema do aplicativo de configurações. **Não configurado** (padrão) permite o acesso.
@@ -157,17 +158,17 @@ Essas configurações usam o [CSP da política do EnterpriseCloudPrint](https://
   - **Privacidade**: **Bloquear** impede o acesso à área de privacidade do aplicativo de configurações no dispositivo. **Não configurado** (padrão) permite o acesso.
   - **Update and Security**: **Block** impede o acesso à área de segurança de atualização & do aplicativo de configurações no dispositivo. **Não configurado** (padrão) permite o acesso.
 
-## <a name="display"></a>Display
+## <a name="display"></a>Apresentar
 
 Essas configurações usam o [CSP de política de vídeo](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-display); que também lista as edições do Windows com suporte.
 
 O dimensionamento de DPI GDI permite que aplicativos que não têm reconhecimento de DPI se tornem com reconhecimento de DPI por monitor.
 
-- **Ativar o dimensionamento de GDI para aplicativos**: **adicione** os aplicativos herdados que você deseja que o DIMENSIONAmento de DPI GDI esteja ativado. Por exemplo, digite `filename.exe` ou `%ProgramFiles%\Path\Filename.exe`.
+- **Ativar o dimensionamento de GDI para aplicativos**: **adicione** os aplicativos herdados que você deseja que o DIMENSIONAmento de DPI GDI esteja ativado. Por exemplo, introduza: `filename.exe` ou `%ProgramFiles%\Path\Filename.exe`.
 
   O dimensionamento de DPI GDI é ativado para todos os aplicativos herdados na sua lista.
 
-- Desativar o **dimensionamento de GDI para aplicativos**: **adicione** os aplicativos herdados que você deseja que o dimensionamento de DPI GDI seja desativado. Por exemplo, digite `filename.exe` ou `%ProgramFiles%\Path\Filename.exe`.
+- Desativar o **dimensionamento de GDI para aplicativos**: **adicione** os aplicativos herdados que você deseja que o dimensionamento de DPI GDI seja desativado. Por exemplo, introduza: `filename.exe` ou `%ProgramFiles%\Path\Filename.exe`.
 
   O dimensionamento de DPI GDI é desativado para todos os aplicativos herdados na sua lista.
 
@@ -200,14 +201,14 @@ Essas configurações usam o [CSP da política de experiência](https://docs.mic
 - **Descoberta de dispositivo**: o **bloco** impede que o dispositivo seja descoberto por outros dispositivos. **Não configurado** (padrão) permite esse recurso.
 - **Alternador de tarefa** (somente dispositivos móveis): **Bloquear** impede a alternância de tarefas no dispositivo. **Não configurado** (padrão) permite esse recurso.
 - **Caixa de diálogo de erro do cartão Sim** (somente dispositivos móveis): **Bloquear** mensagens de erro de exibição no dispositivo se nenhum cartão Sim for detectado. **Não configurado** (padrão) mostra as mensagens de erro.
-- **Espaço de trabalho de tinta**: escolha se e como o usuário acessa o espaço de trabalho de tinta. Suas opções:
+- **Espaço de trabalho de tinta**: escolha se e como o usuário acessa o espaço de trabalho de tinta. As opções são:
   - **Não configurado** (padrão): ativa o espaço de trabalho de tinta e o usuário tem permissão para usá-lo acima da tela de bloqueio.
   - **Desabilitado na tela de bloqueio**: o espaço de trabalho de tinta está habilitado e o recurso está ativado. No entanto, o usuário não pode acessá-lo acima da tela de bloqueio.
   - **Desabilitado**: o acesso ao espaço de trabalho de tinta está desabilitado. O recurso está desativado.
 
   [CSP de política do WindowsInkWorkspace](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowsinkworkspace)
 
-- **Reimplantação automática**: escolha **permitir** para que os usuários com direitos administrativos possam excluir todos os dados e configurações de usuário usando **Ctrl + Win + R** na tela de bloqueio do dispositivo. O dispositivo é reconfigurado automaticamente e registrado novamente no gerenciamento do. **Não configurado** (padrão) impede esse recurso.
+- **Reimplantação automática**: escolha **permitir** para que os usuários com direitos administrativos possam excluir todos os dados e configurações de usuário usando **Ctrl + Win + R** na tela de bloqueio do dispositivo. O dispositivo é reconfigurado automaticamente e registrado novamente no gerenciamento do. **Não configurado** (predefinição) impede esta funcionalidade.
 - **Exigir que os usuários se conectem à rede durante a configuração do dispositivo**: escolha **exigir** para que o dispositivo se conecte a uma rede antes de passar pela página de rede durante a instalação do Windows. **Não configurado** (padrão) permite que os usuários passem pela página de rede, mesmo que não esteja conectado a uma rede.
 
   A configuração se tornará efetiva na próxima vez em que o dispositivo for apagado ou redefinido. Como qualquer outra configuração do Intune, o dispositivo deve ser registrado e gerenciado pelo Intune para receber as definições de configuração. Mas depois que ele é registrado e as políticas de recebimento, a redefinição do dispositivo impõe a configuração durante a próxima instalação do Windows.
@@ -218,7 +219,7 @@ Essas configurações usam o [CSP da política de experiência](https://docs.mic
 
 - **Encerrar processos do Gerenciador de tarefas**: essa configuração determina se não administradores podem usar o Gerenciador de tarefas para finalizar tarefas. **Bloquear** impede que usuários padrão (não administradores) usem o Gerenciador de tarefas para encerrar um processo ou uma tarefa no dispositivo. **Não configurado** (padrão) permite que usuários padrão encerrem um processo ou uma tarefa usando o Gerenciador de tarefas.
 
-## <a name="locked-screen-experience"></a>Experiência de tela bloqueada
+## <a name="locked-screen-experience"></a>Experiência de ecrã bloqueado
 
 - **Notificações da central de ações (somente dispositivos móveis)** : **Bloquear** impede que as notificações da central de ações sejam exibidas na tela de bloqueio do dispositivo. **Não configurado** (padrão) permite que os usuários escolham quais aplicativos mostram as notificações na tela de bloqueio.
 
@@ -249,13 +250,13 @@ Essas configurações usam o [CSP de política de mensagens](https://docs.micros
 - **MMS (somente dispositivo móvel)** : o **bloco** desabilita a funcionalidade de envio e recebimento de MMS no dispositivo. Para empresas, use essa política para desabilitar o MMS em dispositivos como parte do requisito de gerenciamento ou auditoria. **Não configurado** (padrão) permite enviar e receber MMS.
 - **RCS (somente dispositivos móveis)** : o **bloqueio** desabilita a funcionalidade de envio e recebimento de RCS (serviços de comunicação avançados) no dispositivo. Para empresas, use essa política para desabilitar o RCS nos dispositivos como parte do requisito de gerenciamento ou de auditoria. **Não configurado** (padrão) permite enviar e receber RCS.
 
-## <a name="microsoft-edge-browser"></a>Navegador Microsoft Edge
+## <a name="microsoft-edge-browser"></a>Browser Microsoft Edge
 
 Essas configurações usam o [CSP da política do navegador](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser), que também lista as edições do Windows com suporte.
 
 ### <a name="use-microsoft-edge-kiosk-mode"></a>Usar o modo de quiosque do Microsoft Edge
 
-As configurações disponíveis são alteradas dependendo do que você escolher. Suas opções:
+As configurações disponíveis são alteradas dependendo do que você escolher. As opções são:
 
 - **Não** (padrão): o Microsoft Edge não está sendo executado no modo de quiosque. Todas as configurações do Microsoft Edge estão disponíveis para você alterar e configurar.
 - **Pôsteres digitais/interativos (quiosque de aplicativo único)** : filtra as configurações do Microsoft Edge que são aplicáveis ao modo de quiosque digital/interativo de pôsteres do Microsoft Edge para uso somente em quiosques de aplicativo único do Windows 10. Escolha essa configuração para abrir uma tela inteira de URL e mostrar apenas o conteúdo nesse site. [Configurar sinais digitais](https://docs.microsoft.com/windows/configuration/setup-digital-signage) fornece mais informações sobre esse recurso.
@@ -280,7 +281,7 @@ Esse perfil de restrições de dispositivo está diretamente relacionado ao perf
 
 ### <a name="start-experience"></a>Iniciar experiência
 
-- **Iniciar o Microsoft Edge com**: escolha quais páginas são abertas quando o Microsoft Edge é iniciado. Suas opções:
+- **Iniciar o Microsoft Edge com**: escolha quais páginas são abertas quando o Microsoft Edge é iniciado. As opções são:
   - **Páginas iniciais personalizadas**: Insira as páginas iniciais, como `http://www.contoso.com`. O Microsoft Edge carrega as páginas iniciais que você inserir.
   - **Nova página de guia**: carregamento do Microsoft Edge, o que for inserido na nova configuração de **URL da guia** .
   - **Página da última sessão**: o Microsoft Edge carrega a página da última sessão.
@@ -288,12 +289,12 @@ Esse perfil de restrições de dispositivo está diretamente relacionado ao perf
 
 - **Permitir que o usuário altere as páginas iniciais**: **Sim** (padrão) permite que os usuários alterem as páginas iniciais. Os administradores podem usar o `EdgeHomepageUrls` para inserir as páginas iniciais que os usuários veem por padrão ao abrir o Microsoft Edge. **Não** impede que os usuários alterem as páginas iniciais.
 - **Permitir conteúdo da Web na nova página da guia**: quando definido como **Sim** (padrão), o Microsoft Edge abre a URL inserida na nova configuração de **URL da guia** . Se a **nova** configuração de URL da guia estiver em branco, o Microsoft Edge abrirá a nova página da guia listada em configurações do Microsoft Edge. Os usuários podem alterá-lo. Quando definido como **não**, o Microsoft Edge abre uma nova guia com uma página em branco. Os usuários não podem alterá-lo.
-- **Nova URL de guia**: Insira a URL a ser aberta na página da nova guia. Por exemplo, digite `https://www.bing.com` ou `https://www.contoso.com`.
+- **Nova URL de guia**: Insira a URL a ser aberta na página da nova guia. Por exemplo, introduza: `https://www.bing.com` ou `https://www.contoso.com`.
 
-- **Botão página inicial**: escolha o que acontece quando o botão página inicial é selecionado. Suas opções:
+- **Botão página inicial**: escolha o que acontece quando o botão página inicial é selecionado. As opções são:
   - **Páginas iniciais**: abre a opção escolhida na configuração **iniciar o Microsoft Edge com**
   - **Nova página de guia**: abre a URL que você inseriu na nova configuração de **URL de guia** .
-  - **URL do botão página inicial**: Insira a URL a ser aberta. Por exemplo, digite `https://www.bing.com` ou `https://www.contoso.com`.
+  - **URL do botão página inicial**: Insira a URL a ser aberta. Por exemplo, introduza: `https://www.bing.com` ou `https://www.contoso.com`.
   - **Ocultar botão página inicial**: oculta o botão página inicial
 - **Permitir que os usuários alterem o botão Início**: **Sim** permite que os usuários alterem o botão página inicial. As alterações do usuário substituem as configurações do administrador no botão página inicial. **Não** (padrão) impede que os usuários alterem o modo como o administrador configurou o botão página inicial.
 - **Mostrar página de experiência da primeira execução (somente dispositivo móvel)** : **Sim** (padrão) mostra a primeira página de introdução de uso no Microsoft Edge. **Não** impede que a página de introdução mostre a primeira vez que você executa o Microsoft Edge. Esse recurso permite que empresas, como organizações inscritas em zero configurações de emissões, bloqueiem essa página.
@@ -306,7 +307,7 @@ Esse perfil de restrições de dispositivo está diretamente relacionado ao perf
 - **Permitir pop-ups** (somente desktop): **Sim** (padrão) permite pop-ups no navegador da Web. **Não** impede janelas pop-up no navegador.
 - **Enviar tráfego de intranet para o Internet Explorer** (somente desktop): **Sim** permite que os usuários abram sites de intranet no Internet Explorer em vez do Microsoft Edge. Essa configuração é para compatibilidade com versões anteriores. **Não** (padrão) permite que os usuários usem o Microsoft Edge.
 - **Local da lista de sites do modo empresarial** (somente desktop): Insira a URL que aponta para o arquivo XML que contém uma lista de sites que são abertos no modo empresarial. Os usuários não podem alterar essa lista. Por exemplo, introduza `https://www.contoso.com/sites.xml`.
-- **Mensagem ao abrir sites no Internet Explorer**: Use essa configuração para configurar o Microsoft Edge para mostrar uma notificação antes que um site seja aberto no Internet Explorer 11. Suas opções:
+- **Mensagem ao abrir sites no Internet Explorer**: Use essa configuração para configurar o Microsoft Edge para mostrar uma notificação antes que um site seja aberto no Internet Explorer 11. As opções são:
   - **Não mostrar mensagem**: o comportamento padrão do sistema operacional é usado, o que pode não mostrar uma mensagem.
   - **Mostrar mensagem que o site está aberto no Internet Explorer 11**: mostrar a mensagem ao abrir sites no IE. Sites abertos no IE. 
   - **Mostrar mensagem com a opção de abrir sites no Microsoft Edge**: Mostre a mensagem ao abrir sites no Microsoft Edge. A mensagem inclui um link **continuar a usar o Microsoft Edge** para que os usuários possam escolher o Microsoft Edge em vez do IE.
@@ -320,14 +321,14 @@ Esse perfil de restrições de dispositivo está diretamente relacionado ao perf
 
 ### <a name="favorites-and-search"></a>Favoritos e pesquisa
 
-- **Mostrar barra de favoritos**: escolha o que acontece com a barra de favoritos em qualquer página do Microsoft Edge. Suas opções:
+- **Mostrar barra de favoritos**: escolha o que acontece com a barra de favoritos em qualquer página do Microsoft Edge. As opções são:
   - **Nas páginas inicial e nova guia**: mostra a barra favoritos quando o Microsoft Edge é iniciado e em todas as páginas da guia. Os usuários finais podem alterar essa configuração.
   - **Em todas as páginas**: mostra a barra de favoritos em todas as páginas. Os usuários finais não podem alterar essa configuração.
   - **Hidden**: oculta a barra de favoritos em todas as páginas. Os usuários finais não podem alterar essa configuração.
 - **Permitir alterações em favoritos**: **Sim** (padrão) usa o padrão do sistema operacional, que permite aos usuários alterar a lista. **Não** impede que os usuários finais adicionem, importem, classifiquem ou editem a lista de favoritos.
   - **Lista de favoritos**: Adicione uma lista de URLs ao arquivo de favoritos. Por exemplo, adicione `http://contoso.com/favorites.html`.
 - **Sincronizar favoritos entre os navegadores da Microsoft** (somente desktop): **Sim** força o Windows a sincronizar os favoritos entre o Internet Explorer e o Microsoft Edge. Adições, exclusões, modificações e alterações de pedidos a favoritos são compartilhadas entre navegadores.  **Não** (padrão) usa o padrão do sistema operacional, o que pode dar aos usuários a opção de sincronizar os favoritos entre os navegadores.
-- **Mecanismo de pesquisa padrão**: escolha o mecanismo de pesquisa padrão no dispositivo. Os usuários finais podem alterar esse valor a qualquer momento. Suas opções:
+- **Mecanismo de pesquisa padrão**: escolha o mecanismo de pesquisa padrão no dispositivo. Os utilizadores finais podem alterar este valor em qualquer altura. As opções são:
   - Mecanismo de pesquisa nas configurações do Microsoft Edge do cliente
   - Bing
   - Google
@@ -343,7 +344,7 @@ Esse perfil de restrições de dispositivo está diretamente relacionado ao perf
 - **Permitir navegação InPrivate**: **Sim** (padrão) permite navegação InPrivate no Microsoft Edge. Depois de fechar todas as guias InPrivate, o Microsoft Edge exclui os dados de navegação do dispositivo. **Não** impede que os usuários finais Abram sessões de navegação InPrivate.
 - **Salvar histórico de navegação**: **Sim** (padrão) permitir salvar o histórico de navegação no Microsoft Edge. **Não** impede que o histórico de navegação seja salvo.
 - **Limpar dados de navegação ao sair** (somente desktop): **Sim** limpa o histórico e procurando dados quando o usuário sai do Microsoft Edge. **Não** (padrão) usa o padrão do sistema operacional, que pode armazenar em cache os dados de navegação.
-- **Sincronizar configurações do navegador entre dispositivos do usuário**: escolha como você deseja sincronizar as configurações do navegador entre os dispositivos. Suas opções:
+- **Sincronizar configurações do navegador entre dispositivos do usuário**: escolha como você deseja sincronizar as configurações do navegador entre os dispositivos. As opções são:
   - **Permitir**: permitir a sincronização das configurações do navegador Microsoft Edge entre os dispositivos do usuário
   - **Bloquear e habilitar substituição de usuário**: bloqueia a sincronização das configurações do navegador Microsoft Edge entre os dispositivos do usuário. Os usuários podem substituir essa configuração.
   - **Bloquear**: bloquear a sincronização da configuração do navegador Microsoft Edge entre os dispositivos dos usuários. Os usuários não podem substituir essa configuração.
@@ -351,7 +352,7 @@ Esse perfil de restrições de dispositivo está diretamente relacionado ao perf
 Quando "bloquear e habilitar substituição de usuário" está selecionado, o usuário pode substituir a designação de administrador.
 
 - **Permitir Gerenciador de senhas**: **Sim** (padrão) permite que o Microsoft Edge use automaticamente o Gerenciador de senhas, que permite que os usuários salvem e gerenciem senhas no dispositivo. **Não** impede que o Microsoft Edge use o Gerenciador de senhas.
-- **Cookies**: escolha como os cookies são tratados no navegador da Web. Suas opções:
+- **Cookies**: escolha como os cookies são tratados no navegador da Web. As opções são:
   - **Permitir**: cookies são armazenados no dispositivo.
   - **Bloquear todos os cookies**: os cookies não são armazenados no dispositivo.
   - **Bloquear somente cookies**de terceiros: os cookies de terceiros ou parceiros não são armazenados no dispositivo.
@@ -361,7 +362,7 @@ Quando "bloquear e habilitar substituição de usuário" está selecionado, o us
 - **Permitir coleta de dados de bloco dinâmico**: **Sim** (padrão) permite que o Microsoft Edge colete informações de blocos dinâmicos fixados no menu iniciar. **Não** impede a coleta dessas informações, o que pode fornecer aos usuários uma experiência limitada.
 - O **usuário pode substituir erros de certificado**: **Sim** (padrão) permite que os usuários acessem sites que têm erros de protocolo SSL/TLS (segurança de camada de transporte). **Não** (recomendado para maior segurança) impede que os usuários acessem sites com erros SSL ou TLS.
 
-### <a name="additional"></a>Adicionais
+### <a name="additional"></a>Obter
 
 - **Permitir navegador Microsoft Edge** (somente dispositivos móveis): **Sim** (padrão) permite usar o navegador da Web Microsoft Edge no dispositivo móvel. **Não** impede o uso do Microsoft Edge no dispositivo. Se você escolher **não**, as outras configurações individuais se aplicarão somente ao desktop.
 - **Permitir lista suspensa de barra de endereços**: **Sim** (padrão) permite que o Microsoft Edge mostre o menu suspenso da barra de endereços com uma lista de sugestões. **Não** impede o Microsoft Edge de mostrar uma lista de sugestões em uma lista suspensa quando você digita. Quando definido como **não**, você:
@@ -387,7 +388,7 @@ Essas configurações usam o [CSP da política do NetworkProxy](https://docs.mic
 - **Usar servidor proxy manual**: escolha **permitir** para inserir manualmente o nome ou endereço IP e o número da porta TCP de um servidor proxy. **Não configurado** (padrão) não permite que você insira manualmente os detalhes de um servidor proxy.
   - **Endereço**: Insira o nome ou o endereço IP do servidor proxy.
   - **Número da porta**: Insira o número da porta do servidor proxy.
-  - **Exceções de proxy**: Insira as URLs que não devem usar o servidor proxy. Use um ponto e vírgula para separar cada item.
+  - **Exceções de proxy**: Insira as URLs que não devem usar o servidor proxy. Utilize um ponto e vírgula para separar cada item.
   - **Ignorar servidor proxy para endereço local**: **não configurado** (padrão) impede o uso de um servidor proxy para endereços locais na sua intranet. **Permitir** usa um servidor proxy para endereços locais.
 
 ## <a name="password"></a>Palavra-passe
@@ -396,7 +397,7 @@ Essas configurações usam o [CSP da política do DeviceLock](https://docs.micro
 
 - **Senha**: **exige** que o usuário final Insira uma senha para acessar o dispositivo. **Não configurado** (padrão) permite o acesso ao dispositivo sem uma senha. Aplica-se somente a contas locais. As senhas de conta de domínio permanecem configuradas pelo Active Directory (AD) e pelo Azure AD.
 
-  - **Tipo de senha necessária**: escolha o tipo de senha. Suas opções:
+  - **Tipo de senha necessária**: escolha o tipo de senha. As opções são:
     - **Não configurado**: a senha pode incluir números e letras.
     - **Numeric**: a senha deve ser apenas números.
     - **Alfanumérico**: a senha deve ser uma combinação de números e letras.
@@ -413,7 +414,7 @@ Essas configurações usam o [CSP da política do DeviceLock](https://docs.micro
   - **Expiração da senha (dias)** : Insira o período de tempo em dias em que a senha do dispositivo deve ser alterada, de 1-365. Por exemplo, digite `90` para expirar a senha após 90 dias.
   - **Evitar a reutilização de senhas anteriores**: Insira o número de senhas usadas anteriormente que não podem ser usadas, de 1-24. Por exemplo, digite `5` para que os usuários não possam definir uma nova senha para sua senha atual ou com qualquer uma de suas quatro senhas anteriores.
   - **Exigir senha quando o dispositivo retorna do estado ocioso** (móvel e Holographic): escolha **exigir** para que os usuários precisem inserir uma senha para desbloquear o dispositivo depois de ficar ocioso. **Não configurado** (padrão) não exige um PIN ou senha quando o dispositivo é retomado do estado ocioso.
-  - **Senhas simples**: Defina como **Bloquear** para que os usuários não possam criar senhas simples, como `1234` ou `1111`. Defina como **não configurado** (padrão) para permitir que os usuários criem senhas como `1234` ou `1111`. Essa configuração também permite ou bloqueia o uso de senhas de imagem do Windows.
+  - **Senhas simples**: Defina como **Bloquear** para que os usuários não possam criar senhas simples, como `1234` ou `1111`. Defina como **não configurado** (padrão) para permitir que os usuários criem senhas como `1234` ou `1111`. Esta definição também permite ou bloqueia a utilização de palavras-passe por imagem do Windows.
 - **Criptografia automática durante a AADJ**: o **bloqueio** impede a criptografia de dispositivo BitLocker automática quando o dispositivo está preparado para o primeiro uso, quando o dispositivo é ingressado no Azure AD. **Não configurado** (padrão) usa o padrão do sistema operacional, o que pode habilitar a criptografia. Mais sobre a [criptografia de dispositivo do BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption).
 
   [Segurança/PreventAutomaticDeviceEncryptionForAzureADJoinedDevices CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-preventautomaticdeviceencryptionforazureadjoineddevices)
@@ -426,7 +427,7 @@ Essas configurações usam o [CSP da política do DeviceLock](https://docs.micro
 
   [Autenticação/CSP AllowSecondaryAuthenticationDevice](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-allowsecondaryauthenticationdevice)
 
-- **Entrada na Web**: habilita o suporte de entrada do Windows para provedores federados não ADFS (serviços de Federação do Active Directory (AD FS)), como Security ASSERTION MARKUP Language (SAML). O SAML usa tokens seguros que fornecem aos navegadores da Web uma experiência de logon único (SSO). Suas opções:
+- **Entrada na Web**: habilita o suporte de entrada do Windows para provedores federados não ADFS (serviços de Federação do Active Directory (AD FS)), como Security ASSERTION MARKUP Language (SAML). O SAML usa tokens seguros que fornecem aos navegadores da Web uma experiência de logon único (SSO). As opções são:
 
   - **Não configurado** (padrão): usa o padrão do sistema operacional no dispositivo.
   - **Habilitado**: o provedor de credenciais da Web está habilitado para entrada.
@@ -438,14 +439,14 @@ Essas configurações usam o [CSP da política do DeviceLock](https://docs.micro
 
   [Autenticação/CSP PreferredAadTenantDomainName](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-preferredaadtenantdomainname)
 
-## <a name="per-app-privacy-exceptions"></a>Exceções de privacidade por aplicativo
+## <a name="per-app-privacy-exceptions"></a>Exceções de privacidade por aplicação
 
 Você pode adicionar aplicativos que devem ter um comportamento de privacidade diferente do que você define em "privacidade padrão".
 
 - **Nome do pacote**: nome da família de pacotes de aplicativos.
 - **Nome do aplicativo**: o nome do aplicativo.
 
-### <a name="exceptions"></a>Exceções
+### <a name="exceptions"></a>Exceção
 
 - **Informações da conta**: Defina se este aplicativo pode acessar o nome de usuário, a imagem e outras informações de contato.
 - **Aplicativos em segundo plano**: Defina se este aplicativo pode ser executado em segundo plano.
@@ -460,7 +461,7 @@ Você pode adicionar aplicativos que devem ter um comportamento de privacidade d
 - **Movimento**: Defina se este aplicativo pode acessar informações de movimento do dispositivo.
 - **Notificações**: Defina se este aplicativo pode acessar notificações.
 - **Telefone**: Defina se este aplicativo pode acessar o telefone.
-- **Rádios**: alguns aplicativos usam rádios (por exemplo, Bluetooth) em seu dispositivo para enviar e receber dados e precisam ativar ou desativar essas rádios. Defina se este aplicativo pode controlar essas rádios.
+- **Rádios**: alguns aplicativos usam rádios (por exemplo, Bluetooth) em seu dispositivo para enviar e receber dados e precisam ativar ou desativar essas rádios. Defina se esta aplicação pode controlar estes rádios.
 - **Tarefas**: Defina se este aplicativo pode acessar suas tarefas.
 - **Dispositivos confiáveis**: escolha se este aplicativo pode usar dispositivos confiáveis. Os dispositivos confiáveis são o hardware que você já conectou ou o hardware que vem com o dispositivo. Por exemplo, use TVs, projetores e assim por diante, como dispositivos confiáveis.
 - **Comentários e diagnóstico**: Defina se este aplicativo pode acessar informações de diagnóstico.
@@ -470,7 +471,7 @@ Você pode adicionar aplicativos que devem ter um comportamento de privacidade d
 
 Essas configurações usam o [CSP de política de personalização](https://docs.microsoft.com/windows/client-management/mdm/personalization-csp), que também lista as edições do Windows com suporte.
 
-- **URL da imagem de fundo da área de trabalho (somente desktop)** : Insira a URL para uma imagem no formato. jpg,. jpeg ou. png que você deseja usar como papel de parede da área de trabalho do Windows. Os usuários não podem alterar a imagem. Por exemplo, introduza `https://contoso.com/logo.png`.
+- **URL da imagem de fundo da área de trabalho (somente desktop)** : Insira a URL para uma imagem no formato. jpg,. jpeg ou. png que você deseja usar como papel de parede da área de trabalho do Windows. Os utilizadores não podem alterar a imagem. Por exemplo, introduza `https://contoso.com/logo.png`.
 
 ## <a name="printer"></a>Impressora
 
@@ -489,7 +490,7 @@ Essas configurações usam o [CSP de política de privacidade](https://docs.micr
 
 Você pode configurar informações que todos os aplicativos no dispositivo podem acessar. Além disso, defina exceções em uma base por aplicativo usando **exceções de privacidade por aplicativo**.
 
-### <a name="exceptions"></a>Exceções
+### <a name="exceptions"></a>Exceção
 
 - **Informações da conta**: Defina se este aplicativo pode acessar o nome de usuário, a imagem e outras informações de contato.
 - **Aplicativos em segundo plano**: Defina se este aplicativo pode ser executado em segundo plano.
@@ -504,11 +505,11 @@ Você pode configurar informações que todos os aplicativos no dispositivo pode
 - **Movimento**: Defina se este aplicativo pode acessar informações de movimento do dispositivo.
 - **Notificações**: Defina se este aplicativo pode acessar notificações.
 - **Telefone**: Defina se este aplicativo pode acessar o telefone.
-- **Rádios**: alguns aplicativos usam rádios (por exemplo, Bluetooth) em seu dispositivo para enviar e receber dados e precisam ativar ou desativar essas rádios. Defina se este aplicativo pode controlar essas rádios.
+- **Rádios**: alguns aplicativos usam rádios (por exemplo, Bluetooth) em seu dispositivo para enviar e receber dados e precisam ativar ou desativar essas rádios. Defina se esta aplicação pode controlar estes rádios.
 - **Tarefas**: Defina se este aplicativo pode acessar suas tarefas.
 - **Dispositivos confiáveis**: escolha se este aplicativo pode usar dispositivos confiáveis. Os dispositivos confiáveis são o hardware que você já conectou ou o hardware que acompanha o dispositivo. Por exemplo, use TVs, projetores e assim por diante, como dispositivos confiáveis.
 - **Comentários e diagnóstico**: escolha se este aplicativo pode acessar informações de diagnóstico.
-- **Sincronizar com dispositivos** – defina se este aplicativo pode compartilhar e sincronizar informações automaticamente com dispositivos sem fio que não emparelham explicitamente com este PC, Tablet ou telefone.
+- **Sincronização com dispositivos** – defina se esta aplicação pode partilhar e sincronizar automaticamente informações com dispositivos sem fios que não sejam emparelhados especificamente com o PC, tablet ou telefone.
 
 ## <a name="projection"></a>Projeção
 
@@ -518,9 +519,9 @@ Essas configurações usam o [CSP da política do WirelessDisplay](https://docs.
 - **Projeção neste PC: o** **bloco** impede que outros dispositivos localizem o dispositivo para projeção. **Não configurado** (padrão) permite que o dispositivo seja detectável e pode projetar no dispositivo acima da tela de bloqueio.
 - **Exigir PIN para emparelhamento**: escolha **exigir** para sempre solicitar um PIN ao se conectar a um dispositivo de projeção. **Não configurado** (padrão) não exige um PIN para emparelhar o dispositivo a um dispositivo de projeção.
 
-## <a name="reporting-and-telemetry"></a>Relatório e telemetria
+## <a name="reporting-and-telemetry"></a>Relatórios e telemetria
 
-- **Compartilhar dados de uso**: escolha o nível de dados de diagnóstico que é enviado. Suas opções:
+- **Compartilhar dados de uso**: escolha o nível de dados de diagnóstico que é enviado. As opções são:
   - **Não configurado**: nenhum dado é compartilhado.
   - **Segurança**: informações necessárias para ajudar a manter o Windows mais seguro, incluindo dados sobre as configurações de componentes de telemetria e experiência do usuário conectado, a ferramenta de remoção de software mal-intencionado e o Windows Defender.
   - **Básico**: informações básicas do dispositivo, incluindo dados relacionados à qualidade, compatibilidade de aplicativos, dados de uso do aplicativo e dados do nível de segurança.
@@ -529,7 +530,7 @@ Essas configurações usam o [CSP da política do WirelessDisplay](https://docs.
 
   [CSP do sistema/AllowTelemetry](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowtelemetry)
 
-- **Enviar dados de navegação do Microsoft Edge para Microsoft 365 Analytics**: para usar esse recurso, defina as configurações de **dados de uso do compartilhamento** como **avançado** ou **completo**. Esse recurso controla quais dados o Microsoft Edge envia para Microsoft 365 análise para dispositivos empresariais com uma ID comercial configurada. Suas opções:
+- **Enviar dados de navegação do Microsoft Edge para Microsoft 365 Analytics**: para usar esse recurso, defina as configurações de **dados de uso do compartilhamento** como **avançado** ou **completo**. Esse recurso controla quais dados o Microsoft Edge envia para Microsoft 365 análise para dispositivos empresariais com uma ID comercial configurada. As opções são:
   - **Não configurado**: usa o padrão do sistema operacional, que pode não enviar nenhum dado de histórico de navegação
   - **Somente enviar dados da intranet**: permite que o administrador envie o histórico de dados da intranet
   - **Somente enviar dados da Internet**: permite que o administrador envie o histórico de dados da Internet
@@ -537,7 +538,7 @@ Essas configurações usam o [CSP da política do WirelessDisplay](https://docs.
 
   [CSP do navegador/ConfigureTelemetryForMicrosoft365Analytics](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-configuretelemetryformicrosoft365analytics)
 
-- **Servidor proxy de telemetria**: Insira o FQDN (nome de domínio totalmente qualificado) ou o endereço IP de um servidor proxy para encaminhar as experiências de usuário conectadas e as solicitações de telemetria usando uma conexão protocolo SSL (SSL). O formato dessa configuração é *Server*:*Port*. Se o proxy nomeado falhar ou se um proxy não for inserido ao habilitar essa política, os dados de experiência de usuário conectados e telemetria não serão enviados e permanecerão no dispositivo local.
+- **Servidor proxy de telemetria**: Insira o FQDN (nome de domínio totalmente qualificado) ou o endereço IP de um servidor proxy para encaminhar as experiências de usuário conectadas e as solicitações de telemetria usando uma conexão protocolo SSL (SSL). O formato para esta definição é *servidor*:*porta*. Se o proxy nomeado falhar ou se um proxy não for inserido ao habilitar essa política, os dados de experiência de usuário conectados e telemetria não serão enviados e permanecerão no dispositivo local.
 
   Formatos de exemplo:
 
@@ -549,19 +550,19 @@ Essas configurações usam o [CSP da política do WirelessDisplay](https://docs.
 
   [CSP do sistema/TelemetryProxy](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-telemetryproxy)
 
-Selecione **OK** para salvar as alterações.
+Selecione **OK** para guardar as alterações.
 
-## <a name="search"></a>Procurar
+## <a name="search"></a>Procura
 
 Essas configurações usam o [CSP de política de pesquisa](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-search), que também lista as edições do Windows com suporte. 
 
-- **Pesquisa segura (somente dispositivos móveis)** : controle como a Cortana filtra conteúdo adulto nos resultados da pesquisa. Suas opções:
+- **Pesquisa segura (somente dispositivos móveis)** : controle como a Cortana filtra conteúdo adulto nos resultados da pesquisa. As opções são:
   - **Definido pelo usuário**: permitir que os usuários finais escolham suas próprias configurações.
   - **Estrito**: filtragem mais alta contra conteúdo adulto.
   - **Moderado**: filtragem moderada contra conteúdo adulto. Os resultados de pesquisa válidos não são filtrados.
 - **Exibir resultados da Web na pesquisa**: quando definido como **Bloquear**, os usuários não podem pesquisar e os resultados da Web não são mostrados na pesquisa. **Não configurado** (padrão) permite que os usuários pesquisem a Web e os resultados sejam mostrados no dispositivo.
 
-## <a name="start"></a>Iniciar
+## <a name="start"></a>Iniciar,
 
 Essas configurações usam o [CSP de política inicial](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start), que também lista as edições do Windows com suporte.  
 
@@ -569,14 +570,14 @@ Essas configurações usam o [CSP de política inicial](https://docs.microsoft.c
 - **Fixe sites a blocos no menu iniciar**: importe imagens do Microsoft Edge que são mostradas como links no menu Iniciar do Windows para dispositivos de desktop.
 - **Desafixar aplicativos da barra de tarefas**: o **bloco** impede que os usuários desafixam aplicativos da barra de tarefas. **Não configurado** (padrão) permite que os usuários desafixem aplicativos da barra de tarefas.
 - **Troca rápida de usuário**: **Bloquear** impede a troca de usuários que estão conectados simultaneamente sem fazer logoff. **Não configurado** (padrão) mostra o **usuário do comutador** no bloco do usuário.
-- **Aplicativos mais usados**: o **bloco** oculta a exibição dos aplicativos mais usados no menu iniciar. Ele também desabilita a alternância correspondente no aplicativo configurações. **Não configurado** (padrão) mostra os aplicativos mais usados.
-- **Aplicativos adicionados recentemente**: **Bloquear** oculta aplicativos adicionados recentemente da exibição no menu iniciar. Ele também desabilita a alternância correspondente no aplicativo configurações. **Não configurado** (padrão) mostra os aplicativos adicionados recentemente no menu iniciar.
-- **Modo de tela inicial**: escolha como a tela inicial é mostrada. Suas opções:
+- **Aplicativos mais usados**: o **bloco** oculta a exibição dos aplicativos mais usados no menu iniciar. Também desativa o seletor correspondente na aplicação Definições. **Não configurado** (padrão) mostra os aplicativos mais usados.
+- **Aplicativos adicionados recentemente**: **Bloquear** oculta aplicativos adicionados recentemente da exibição no menu iniciar. Também desativa o seletor correspondente na aplicação Definições. **Não configurado** (padrão) mostra os aplicativos adicionados recentemente no menu iniciar.
+- **Modo de tela inicial**: escolha como a tela inicial é mostrada. As opções são:
   - **Definido pelo usuário**: não força o tamanho do início. Os usuários podem definir o tamanho.
   - **Tela inteira**: força um tamanho de tela inicial.
   - **Tela não completa**: força o tamanho de não-tela inicial.
-- **Itens abertos recentemente nas listas de atalhos**: **Bloquear** oculta as listas de atalhos recentes de serem mostradas no menu iniciar e na barra de tarefas. Ele também desabilita a alternância correspondente no aplicativo configurações. **Não configurado** (padrão) mostra os itens abertos recentemente no atalhos.
-- **Lista de aplicativos**: escolha como as listas todos os aplicativos são mostradas. Suas opções:
+- **Itens abertos recentemente nas listas de atalhos**: **Bloquear** oculta as listas de atalhos recentes de serem mostradas no menu iniciar e na barra de tarefas. Também desativa o seletor correspondente na aplicação Definições. **Não configurado** (padrão) mostra os itens abertos recentemente no atalhos.
+- **Lista de aplicativos**: escolha como as listas todos os aplicativos são mostradas. As opções são:
   - **Definido pelo usuário**: nenhuma configuração é forçada. Os usuários escolhem como a lista de aplicativos é mostrada no dispositivo.
   - **Recolher**: ocultar a lista todos os aplicativos.
   - **Recolha e desabilite a lista configurações aplicativo**: Ocultar todos os aplicativos e desabilite **Mostrar lista de aplicativos no menu iniciar** no aplicativo configurações.
@@ -590,48 +591,48 @@ Essas configurações usam o [CSP de política inicial](https://docs.microsoft.c
 - **Hibernar**: **Bloquear** oculta a opção **hibernar** da exibição no botão de energia no menu iniciar. **Não configurado** (padrão) mostra essa opção.
 - **Alternar conta**: o **bloco** oculta a **conta do comutador** da exibição no bloco do usuário no menu iniciar. **Não configurado** (padrão) mostra essa opção.
 - **Opções de reinicialização**: o **bloco** oculta as opções de **atualização e reinicialização** e **reinicialização** de mostrar no botão de energia no menu iniciar. **Não configurado** (padrão) mostra essas opções.
-- **Documentos em Iniciar**: oculta ou mostra a pasta documentos no menu Iniciar do Windows. Suas opções:
+- **Documentos em Iniciar**: oculta ou mostra a pasta documentos no menu Iniciar do Windows. As opções são:
   - **Não configurado** (padrão): nenhuma configuração é forçada. Os usuários optam por mostrar ou ocultar o atalho.
   - **Ocultar**: o atalho está oculto e desabilita a configuração no aplicativo configurações.
   - **Mostrar**: o atalho é mostrado e desabilita a configuração no aplicativo configurações.
-- **Downloads em Iniciar**: oculta ou mostra a pasta de downloads no menu Iniciar do Windows. Suas opções:
+- **Downloads em Iniciar**: oculta ou mostra a pasta de downloads no menu Iniciar do Windows. As opções são:
   - **Não configurado** (padrão): nenhuma configuração é forçada. Os usuários optam por mostrar ou ocultar o atalho.
   - **Ocultar**: o atalho está oculto e desabilita a configuração no aplicativo configurações.
   - **Mostrar**: o atalho é mostrado e desabilita a configuração no aplicativo configurações.
-- **Explorador de arquivos em Iniciar**: oculta ou mostra o explorador de arquivos no menu Iniciar do Windows. Suas opções:
+- **Explorador de arquivos em Iniciar**: oculta ou mostra o explorador de arquivos no menu Iniciar do Windows. As opções são:
   - **Não configurado** (padrão): nenhuma configuração é forçada. Os usuários optam por mostrar ou ocultar o atalho.
   - **Ocultar**: o atalho está oculto e desabilita a configuração no aplicativo configurações.
   - **Mostrar**: o atalho é mostrado e desabilita a configuração no aplicativo configurações.
-- **Grupo doméstico em Iniciar**: oculta ou mostra o atalho do grupo doméstico no menu Iniciar do Windows. Suas opções:
+- **Grupo doméstico em Iniciar**: oculta ou mostra o atalho do grupo doméstico no menu Iniciar do Windows. As opções são:
   - **Não configurado** (padrão): nenhuma configuração é forçada. Os usuários optam por mostrar ou ocultar o atalho.
   - **Ocultar**: o atalho está oculto e desabilita a configuração no aplicativo configurações.
   - **Mostrar**: o atalho é mostrado e desabilita a configuração no aplicativo configurações.
-- **Música em Iniciar**: oculte ou mostre a pasta música no menu Iniciar do Windows. Suas opções:
+- **Música em Iniciar**: oculte ou mostre a pasta música no menu Iniciar do Windows. As opções são:
   - **Não configurado** (padrão): nenhuma configuração é forçada. Os usuários optam por mostrar ou ocultar o atalho.
   - **Ocultar**: o atalho está oculto e desabilita a configuração no aplicativo configurações.
   - **Mostrar**: o atalho é mostrado e desabilita a configuração no aplicativo configurações.
-- **Rede ao iniciar**: ocultar ou mostrar entrada na rede menu Iniciar do Windows. Suas opções:
+- **Rede ao iniciar**: ocultar ou mostrar entrada na rede menu Iniciar do Windows. As opções são:
   - **Não configurado** (padrão): nenhuma configuração é forçada. Os usuários optam por mostrar ou ocultar o atalho.
   - **Ocultar**: o atalho está oculto e desabilita a configuração no aplicativo configurações.
   - **Mostrar**: o atalho é mostrado e desabilita a configuração no aplicativo configurações.
-- **Pasta pessoal em Iniciar**: ocultar ou mostrar a pasta pessoal no menu Iniciar do Windows. Suas opções:
+- **Pasta pessoal em Iniciar**: ocultar ou mostrar a pasta pessoal no menu Iniciar do Windows. As opções são:
   - **Não configurado** (padrão): nenhuma configuração é forçada. Os usuários optam por mostrar ou ocultar o atalho.
   - **Ocultar**: o atalho está oculto e desabilita a configuração no aplicativo configurações.
   - **Mostrar**: o atalho é mostrado e desabilita a configuração no aplicativo configurações.
-- **Imagens em Iniciar**: oculte ou mostre a pasta para imagens no menu Iniciar do Windows. Suas opções:
+- **Imagens em Iniciar**: oculte ou mostre a pasta para imagens no menu Iniciar do Windows. As opções são:
   - **Não configurado** (padrão): nenhuma configuração é forçada. Os usuários optam por mostrar ou ocultar o atalho.
   - **Ocultar**: o atalho está oculto e desabilita a configuração no aplicativo configurações.
   - **Mostrar**: o atalho é mostrado e desabilita a configuração no aplicativo configurações.
-- **Configurações em Iniciar**: oculta ou mostra o atalho configurações no menu Iniciar do Windows. Suas opções:
+- **Configurações em Iniciar**: oculta ou mostra o atalho configurações no menu Iniciar do Windows. As opções são:
   - **Não configurado** (padrão): nenhuma configuração é forçada. Os usuários optam por mostrar ou ocultar o atalho.
   - **Ocultar**: o atalho está oculto e desabilita a configuração no aplicativo configurações.
   - **Mostrar**: o atalho é mostrado e desabilita a configuração no aplicativo configurações.
-- **Vídeos em Iniciar**: oculta ou mostra a pasta para vídeos no menu Iniciar do Windows. Suas opções:
+- **Vídeos em Iniciar**: oculta ou mostra a pasta para vídeos no menu Iniciar do Windows. As opções são:
   - **Não configurado** (padrão): nenhuma configuração é forçada. Os usuários optam por mostrar ou ocultar o atalho.
   - **Ocultar**: o atalho está oculto e desabilita a configuração no aplicativo configurações.
   - **Mostrar**: o atalho é mostrado e desabilita a configuração no aplicativo configurações.
 
-## <a name="windows-defender-smart-screen"></a>Tela inteligente do Windows Defender
+## <a name="windows-defender-smart-screen"></a>Windows Defender SmartScreen
 
 - **SmartScreen para Microsoft Edge**: **exigir** desativa o Windows Defender SmartScreen e impede que os usuários o liguem. **Não configurado** (padrão) ativa o SmartScreen. Ajuda a proteger os usuários contra possíveis ameaças e impede que os usuários o desativem.
 
@@ -655,7 +656,7 @@ Essas configurações usam o [CSP da política de experiência](https://docs.mic
 
   - **Destaque do Windows na tela de bloqueio**: **Bloquear** impede que o destaque do Windows exiba informações na tela de bloqueio do dispositivo. **Não configurado** (padrão) habilita esse recurso.
   - **Sugestões de terceiros no Windows Spotlight**: **Bloquear** impede o destaque do Windows de sugerir conteúdo que não é publicado pela Microsoft. **Não configurado** (padrão) permite sugestões de aplicativos e conteúdo de Publicadores de software de parceiros em recursos de destaque do Windows, como o destaque da tela de bloqueio, aplicativos sugeridos no menu iniciar e dicas do Windows.
-  - **Recursos do consumidor**: **bloco** desativa as experiências que normalmente são apenas para consumidores, como sugestões de início, notificações de associação, instalação do aplicativo de experiência de lançamento e blocos de redirecionamento. **Não configurado** (padrão) permite esses recursos.
+  - **Recursos do consumidor**: **bloco** desativa as experiências que normalmente são apenas para consumidores, como sugestões de início, notificações de associação, instalação do aplicativo de experiência de lançamento e blocos de redirecionamento. **Não configurado** (predefinição) permite estas funcionalidades.
   - **Dicas do Windows**: **Bloquear** desabilita dicas pop-up do Windows. **Não configurado** (padrão) permite que as dicas do Windows sejam exibidas.
   - **Destaque do Windows na central de ações**: **Bloquear** impede que notificações de destaque do Windows sejam exibidas na central de ações. **Não configurado** (padrão) pode mostrar notificações na central de ações que sugerem aplicativos ou recursos para ajudar os usuários a serem mais produtivos no Windows.
   - **Personalização de destaque do Windows**: **Bloquear** impede que o Windows use dados de diagnóstico para fornecer experiências personalizadas ao usuário. **Não configurado** (padrão) permite que a Microsoft use dados de diagnóstico para fornecer recomendações, dicas e ofertas personalizadas para personalizar o Windows para as necessidades do usuário.
@@ -681,7 +682,7 @@ Essas configurações usam o [CSP de política do defender](https://docs.microso
 
   [CSP do defender/AllowBehaviorMonitoring](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowbehaviormonitoring)
 
-- **Sistema de inspeção de rede (NIS)** : o NIS ajuda a proteger dispositivos contra explorações baseadas em rede. Ele usa as assinaturas de vulnerabilidades conhecidas do centro de Endpoint Protection da Microsoft para ajudar a detectar e bloquear o tráfego mal-intencionado.
+- **Sistema de inspeção de rede (NIS)** : o NIS ajuda a proteger dispositivos contra explorações baseadas em rede. Utiliza as assinaturas de vulnerabilidades conhecidas do Microsoft Endpoint Protection Center para ajudar a detetar e bloquear tráfego malicioso.
 
   **Habilitar** ativa a proteção de rede e o bloqueio de rede. Os usuários não podem desativá-lo. Quando habilitado, os usuários são impedidos de se conectar a vulnerabilidades conhecidas.
 
@@ -713,11 +714,11 @@ Essas configurações usam o [CSP de política do defender](https://docs.microso
 
   O Intune não desativa esse recurso. Para desabilitá-lo, use um URI personalizado.
 
-  Quando essa configuração for alterada, ela entrará em vigor na próxima vez em que o computador do usuário final for reiniciado.
+  Quando esta definição for alterada, será aplicada da próxima vez que o PC do utilizador final for reiniciado.
 
   [CSP do defender/AllowUserUIAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowuseruiaccess)
 
-- **Intervalo de atualização de inteligência de segurança (em horas)** : Insira o intervalo que o defender verifica para obter uma nova inteligência de segurança, de 0-24. Suas opções:
+- **Intervalo de atualização de inteligência de segurança (em horas)** : Insira o intervalo que o defender verifica para obter uma nova inteligência de segurança, de 0-24. As opções são:
 
   - **Não configurado** (padrão): verificar se há atualizações a cada 8 horas.
   - Não **verificar**: o defender não verifica se há novas atualizações de inteligência de segurança.
@@ -725,7 +726,7 @@ Essas configurações usam o [CSP de política do defender](https://docs.microso
   
   [CSP do defender/SignatureUpdateInterval](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-signatureupdateinterval)
   
-- **Monitorar a atividade de arquivos e programas**: permite que o defender monitore a atividade de arquivos e programas nos dispositivos. Suas opções:
+- **Monitorar a atividade de arquivos e programas**: permite que o defender monitore a atividade de arquivos e programas nos dispositivos. As opções são:
 
   - **Não configurado** (padrão): monitora todos os arquivos
   - **Monitoramento desabilitado**
@@ -792,7 +793,7 @@ Essas configurações usam o [CSP de política do defender](https://docs.microso
 
   [CSP do defender/AllowCloudProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowcloudprotection)
 
-- **Avisar os usuários antes do envio de exemplo**: controla se arquivos potencialmente mal-intencionados que podem exigir análise adicional são enviados automaticamente à Microsoft. Suas opções:
+- **Avisar os usuários antes do envio de exemplo**: controla se arquivos potencialmente mal-intencionados que podem exigir análise adicional são enviados automaticamente à Microsoft. As opções são:
 
   - **Não configurado** (padrão): enviar amostras seguras automaticamente.
   - **Sempre avisar**
@@ -806,7 +807,7 @@ Essas configurações usam o [CSP de política do defender](https://docs.microso
 
   [CSP do defender/ScheduleQuickScanTime](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulequickscantime)
 
-- **Tipo de verificação do sistema a ser executada**: agendar uma verificação do sistema, incluindo o nível de verificação e o dia e hora para executar a verificação. Suas opções:
+- **Tipo de verificação do sistema a ser executada**: agendar uma verificação do sistema, incluindo o nível de verificação e o dia e hora para executar a verificação. As opções são:
   - **Não configurado**: não agenda uma verificação do sistema no dispositivo. Os usuários finais podem executar verificações manualmente conforme necessário ou desejados em seus dispositivos.
   - **Desabilitar**: desabilita qualquer verificação do sistema no dispositivo. Escolha esta opção se você estiver usando uma solução antivírus de parceiro que verifica os dispositivos.
   - **Verificação rápida**: examina locais comuns em que pode haver malware registrado, como chaves do registro e pastas de inicialização conhecidas do Windows.
@@ -831,7 +832,7 @@ Essas configurações usam o [CSP de política do defender](https://docs.microso
   [CSP do defender/ScheduleScanDay](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescanday)  
   [CSP do defender/ScheduleScanTime](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescantime)
 
-- **Detectar aplicativos potencialmente indesejados**: escolha o nível de proteção quando o Windows detecta aplicativos potencialmente indesejados. Suas opções:
+- **Detectar aplicativos potencialmente indesejados**: escolha o nível de proteção quando o Windows detecta aplicativos potencialmente indesejados. As opções são:
   - **Não configurado** (padrão): a proteção de aplicativos potencialmente indesejados do Windows Defender está desabilitada.
   - **Bloquear**: o Windows Defender detecta aplicativos potencialmente indesejados e os itens detectados são bloqueados. Esses itens são mostrados em histórico junto com outras ameaças.
   - **Auditoria**: o Windows Defender detecta aplicativos potencialmente indesejados, mas não realiza nenhuma ação. Você pode examinar as informações sobre os aplicativos que o Windows Defender tomaria em ação. Por exemplo, pesquise eventos criados pelo Windows Defender no Visualizador de Eventos.
@@ -840,25 +841,25 @@ Essas configurações usam o [CSP de política do defender](https://docs.microso
 
   [CSP do defender/PUAProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-puaprotection)
 
-- **Ações sobre ameaças de malware detectadas**: escolha como você deseja tratar os threads de malware. **Não configurado** (padrão) permite que o Microsoft defender escolha a melhor opção. Quando definido como **habilitar**, escolha as ações que você deseja que o defender assuma para cada nível de ameaça que detectar: baixa, moderada, alta e grave. Suas opções:
+- **Ações sobre ameaças de malware detectadas**: escolha como você deseja tratar os threads de malware. **Não configurado** (padrão) permite que o Microsoft defender escolha a melhor opção. Quando definido como **habilitar**, escolha as ações que você deseja que o defender assuma para cada nível de ameaça que detectar: baixa, moderada, alta e grave. As opções são:
   
   - **Limpar**
   - **Quarentena**
-  - **Exclu**
+  - **Remove**
   - **Permitir**
-  - **Definido pelo usuário**
-  - **Impeça**
+  - **Definido pelo utilizador**
+  - **Bloquear**
 
   Se a ação não for possível, o Windows Defender escolherá a melhor opção para garantir que a ameaça seja corrigida. 
 
   [CSP do defender/ThreatSeverityDefaultAction](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-threatseveritydefaultaction)
 
-### <a name="windows-defender-antivirus-exclusions"></a>Exclusões do Windows Defender antivírus
+### <a name="windows-defender-antivirus-exclusions"></a>Exclusões do Antivírus do Windows Defender
 
-- **Arquivos e pastas a serem excluídos das verificações e da proteção em tempo real**: Adiciona um ou mais arquivos e pastas como **C:\Path** ou **%ProgramFiles%\Path\filename.exe** à lista de exclusões. Esses arquivos e pastas não estão incluídos em verificações em tempo real ou programadas.
+- **Arquivos e pastas a serem excluídos das verificações e da proteção em tempo real**: Adiciona um ou mais arquivos e pastas como **C:\Path** ou **%ProgramFiles%\Path\filename.exe** à lista de exclusões. Estes ficheiros e pastas não são incluídos em análises em tempo real ou agendadas.
 - **Extensões de arquivo a serem excluídas de verificações e proteção em tempo real**: Adicione uma ou mais extensões de arquivo, como **jpg** ou **txt** , à lista de exclusões. Todos os arquivos com essas extensões não são incluídos em verificações em tempo real ou programadas.
 - **Processos a serem excluídos de verificações e proteção em tempo real**: Adicione um ou mais processos do tipo **. exe**, **. com**ou **. scr** à lista de exclusões. Esses processos não estão incluídos em verificações em tempo real ou programadas.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
-Para obter detalhes técnicos adicionais sobre cada configuração e quais edições do Windows têm suporte, consulte [referência do CSP de política do Windows 10](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider)
+Para obter os detalhes técnicos adicionais de cada definição e quais as edições do Windows suportadas, veja [Windows 10 Policy CSP Reference](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider) (Referência de CSP de Políticas do Windows 10)

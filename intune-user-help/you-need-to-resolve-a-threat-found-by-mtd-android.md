@@ -9,6 +9,7 @@ ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 9e176e10-72fd-42fe-94ef-b41d57a4914f
 searchScope:
@@ -16,12 +17,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c0357744619f3e1905b97b27b5dbd2ec3ea5e0dc
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 9df7b5e1386b5731b9c2bc82e70a1bc7c8dfa744
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61490285"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72507789"
 ---
 # <a name="resolve-a-threat-found-by-a-mobile-threat-defense-app"></a>Resolver uma ameaça detetada pela aplicação Defesa Contra Ameaças para Dispositivos Móveis
 

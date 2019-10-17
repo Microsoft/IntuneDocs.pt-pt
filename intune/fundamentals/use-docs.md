@@ -4,18 +4,19 @@ titleSuffix: Microsoft Intune
 description: Saiba como Pesquisar os documentos do Intune, fornecer comentários de documentos e contribuir com os documentos.
 ms.date: 09/15/2019
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.topic: conceptual
 ms.assetid: e6e44225-cc9e-47c2-913b-1e629ba9a71e
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6fa3529866b786e75892b495102ca5cab46b09a5
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 42e16be44dba539007967dd921da4c8d4f095ec4
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71731636"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72504814"
 ---
 # <a name="using-the-intune-docs"></a>Using the Intune docs (Utilizar a documentação do Intune)
 
@@ -27,11 +28,11 @@ Para obter ajuda geral e suporte para o Intune, consulte [obter suporte para o I
 
  Use as seguintes dicas de pesquisa para ajudá-lo a encontrar as informações necessárias:  
 
-- Ao usar seu mecanismo de pesquisa preferido para localizar conteúdo para Microsoft Intune, `Intune` inclua junto com suas palavras-chave de pesquisa.  
+- Ao usar seu mecanismo de pesquisa preferido para localizar conteúdo para Microsoft Intune, inclua `Intune` junto com suas palavras-chave de pesquisa.  
 
   - Procure os resultados de docs.microsoft.com. Os resultados de technet.microsoft.com ou msdn.microsoft.com são para versões mais antigas do produto.  
 
-  - Para concentrar ainda mais os resultados da pesquisa na biblioteca de conteúdo atual `site:docs.microsoft.com` , inclua o escopo do mecanismo de pesquisa.  
+  - Para concentrar ainda mais os resultados da pesquisa na biblioteca de conteúdo atual, inclua `site:docs.microsoft.com` para fazer o escopo do mecanismo de pesquisa.  
 
 - Use termos de pesquisa que correspondam à terminologia na interface do usuário e na documentação online. Evite termos ou abreviações não oficiais que você possa ver no conteúdo da Comunidade.
 
@@ -59,13 +60,13 @@ Você também verá problemas existentes abertos ou fechados para o artigo de de
 
 Use os problemas do GitHub para enviar os seguintes tipos de comentários:
 
-- Bug do documento: O conteúdo está desatualizado, não é claro, confuso ou está desfeito.
-- Aprimoramento do documento: Uma sugestão para melhorar o artigo.
-- Pergunta do documento: Você precisa de ajuda para encontrar a documentação existente.
-- Ideia do documento: Uma sugestão para um novo artigo. Use esse método em vez de UserVoice para obter comentários sobre a documentação.
-- Kudos Comentários positivos sobre um artigo útil ou informativo!
-- Localizar Comentários sobre a conversão de conteúdo.
-- Otimização do mecanismo de pesquisa (SEO): Comentários sobre os problemas de pesquisa de conteúdo. Inclua o mecanismo de pesquisa, as palavras-chave e o artigo de destino nos comentários.
+- Bug do documento: o conteúdo está desatualizado, não é claro, confuso ou está desfeito.
+- Aprimoramento de documento: uma sugestão para melhorar o artigo.
+- Pergunta do documento: você precisa de ajuda para encontrar a documentação existente.
+- Ideia do documento: uma sugestão para um novo artigo. Use esse método em vez de UserVoice para obter comentários sobre a documentação.
+- Kudos: comentários positivos sobre um artigo útil ou informativo!
+- Localização: comentários sobre a conversão de conteúdo.
+- SEO (otimização do mecanismo de pesquisa): comentários sobre problemas de pesquisa de conteúdo. Inclua o mecanismo de pesquisa, as palavras-chave e o artigo de destino nos comentários.
 
 Se forem gerados problemas para tópicos não relacionados ao documento, como [comentários sobre produtos](https://microsoftintune.uservoice.com/forums/291681-ideas), [perguntas sobre produtos](https://social.technet.microsoft.com/Forums/en-US/home?forum=microsoftintuneprod)ou [solicitações de suporte](../get-support.md), esses problemas serão fechados e o usuário será redirecionado para o canal de comentários adequado.
 
@@ -93,7 +94,7 @@ A equipe de escrita receberá sua solicitação de pull, atribuirá o item ao gr
 
 Se você estiver interessado em contribuir, mas não souber por onde começar, consulte as seguintes sugestões:  
 
-- Revise um artigo para obter exatidão. Em seguida, atualize os metadados **MS. Date** usando `mm/dd/yyyy` o formato. Essa contribuição ajuda a manter o conteúdo atualizado.  
+- Revise um artigo para obter exatidão. Em seguida, atualize os metadados **MS. Date** usando o formato `mm/dd/yyyy`. Essa contribuição ajuda a manter o conteúdo atualizado.  
 
 - Adicione esclarecimentos, exemplos ou diretrizes com base em sua experiência. Essa contribuição usa o poder da Comunidade para compartilhar conhecimento.
 

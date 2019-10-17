@@ -9,18 +9,19 @@ manager: dougeby
 ms.date: 06/05/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9832089cf73405a9e39795b076e9ead84bc7d7cd
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: abcd7b96de8f5f3984c2d4407abaf11b7b6b7e4f
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71730592"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72492495"
 ---
 # <a name="add-macos-kernel-extensions-in-intune"></a>Adicionar extensões de kernel macOS no Intune
 
@@ -42,7 +43,7 @@ Para usar esse recurso, os dispositivos devem ser:
 
   OU
 
-- Registrado no Intune com "registro aprovado pelo usuário" (termo da Apple). [Preparar-se para alterações nas extensões de kernel no MacOS High Sierra](https://support.apple.com/en-us/HT208019) (abre o site da Apple) tem mais informações.
+- Registrado no Intune com "registro aprovado pelo usuário" (termo da Apple). [Preparar para alterações em extensões de kernel no MacOS High Sierra](https://support.apple.com/en-us/HT208019) (abre o site da Apple) tem mais informações.
 
 O Intune usa "perfis de configuração" para criar e personalizar essas configurações para as necessidades da sua organização. Depois de adicionar esses recursos em um perfil, você pode enviar por Push ou implantar o perfil para dispositivos macOS em sua organização.
 
@@ -71,10 +72,10 @@ Este artigo mostra como criar um perfil de configuração de dispositivo usando 
 3. Introduza as seguintes propriedades:
 
     - **Nome**: introduza um nome descritivo para o novo perfil.
-    - **Descrição**: introduza uma descrição para o perfil. Esta definição é opcional, mas recomendada.
-    - **Plataforma**: Selecione **MacOS**
-    - **Tipo de perfil**: Selecione **extensões**.
-    - **Definições**: Insira as configurações que você deseja configurar. Para obter uma lista de todas as configurações e o que elas fazem, consulte:
+    - **Descrição:** introduza uma descrição para o perfil. Esta definição é opcional, mas recomendada.
+    - **Plataforma**: selecione **MacOS**
+    - **Tipo de perfil**: selecione **extensões**.
+    - **Configurações**: Insira as configurações que você deseja configurar. Para obter uma lista de todas as configurações e o que elas fazem, consulte:
 
         - [macOS](kernel-extensions-settings-macos.md)
 
@@ -82,6 +83,6 @@ Este artigo mostra como criar um perfil de configuração de dispositivo usando 
 
 O perfil é criado e mostrado na lista. Certifique-se de [atribuir o perfil](../device-profile-assign.md) e [monitorar seu status](../device-profile-monitor.md).
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Depois que o perfil é criado, ele está pronto para ser atribuído. Em seguida, [atribua o perfil](../device-profile-assign.md) e [monitorize o estado](../device-profile-monitor.md).

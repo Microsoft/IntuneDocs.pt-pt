@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 09/17/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: developer
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2eb9705d1e530924b2cad98985997e8778880581
-ms.sourcegitcommit: 60ed93682a21860e9d99ba1592ede120477f2b4d
+ms.openlocfilehash: 93b48fd5f6482669da923e4c15dcb09c7d328197
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 10/16/2019
-ms.locfileid: "72379843"
+ms.locfileid: "72503450"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Guia para programadores do SDK da Aplicação do Microsoft Intune para iOS
 

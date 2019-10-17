@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 07/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: joglocke
@@ -15,18 +16,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 06fdd8a6b64dfd58457b5d9b92144530aa2856cd
-ms.sourcegitcommit: 223d64a72ec85fe222f5bb10639da729368e6d57
+ms.openlocfilehash: 65213dab28210ad8162a7c18fe0e733ec7964571
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71940481"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502581"
 ---
 # <a name="use-intune-to-remediate-vulnerabilities-identified-by-microsoft-defender-atp"></a>Usar o Intune para corrigir vulnerabilidades identificadas pelo Microsoft defender ATP  
 
 Ao integrar o Intune à ATP (proteção avançada contra ameaças) do Microsoft defender, você pode aproveitar o ATPs Threat (gerenciamento de vulnerabilidades & TVM) e usar o Intune para corrigir o ponto fraco do ponto de extremidade identificado pelo TVM. Essa integração oferece uma abordagem baseada em risco à descoberta e à priorização de vulnerabilidades que podem melhorar o tempo de resposta de correção em seu ambiente.  
 
-O gerenciamento de vulnerabilidades de [& de ameaças](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/next-gen-threat-and-vuln-mgt) faz parte da [proteção avançada contra ameaças do Microsoft defender](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection).  
+O [Gerenciamento de vulnerabilidades de & de ameaças](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/next-gen-threat-and-vuln-mgt) faz parte da [proteção avançada contra ameaças do Microsoft defender](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection).  
 
 ## <a name="how-integration-works"></a>Como funciona a integração  
 
@@ -52,7 +53,7 @@ Um fluxo de trabalho de exemplo:
   ![Exibir a lista de tarefas de segurança no console do Intune](./media/atp-manage-vulnerabilities/temp-security-tasks.png)
  
 - O administrador do Intune seleciona a tarefa de segurança para exibir detalhes sobre a tarefa.  O administrador seleciona **aceitar**, que atualiza o status no Intune e, em ATP, para ser *aceito*.  
-  ![Aceitar ou rejeitar uma tarefa de segurança](./media/atp-manage-vulnerabilities/temp-accept-task.png) 
+  ![Accept ou rejeitar uma tarefa de segurança @ no__t-1 
  
 - Em seguida, o administrador corrige a tarefa com base nas diretrizes fornecidas.  A orientação varia dependendo do tipo de correção necessária. Quando disponível, as diretrizes de correção incluem links que abrem painéis relevantes para configurações no Intune. 
 
@@ -76,7 +77,7 @@ Um fluxo de trabalho de exemplo:
 
 ## <a name="work-with-security-tasks"></a>Trabalhar com tarefas de segurança  
 
-1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) e vá para **Device Security** > Security**Tasks**.  
+1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) e vá para **segurança do dispositivo** > **tarefas de segurança**.  
 2. Selecione uma tarefa na lista para abrir uma janela de recurso que exibe detalhes adicionais para essa tarefa de segurança.  
 3. Ao exibir a janela de recursos da tarefa de segurança, você pode selecionar links adicionais:  
    - APLICATIVOS GERENCIADOs – exiba o aplicativo que está vulnerável. Quando a vulnerabilidade se aplica a vários aplicativos, você verá uma lista filtrada de aplicativos.  
@@ -93,7 +94,7 @@ Um fluxo de trabalho de exemplo:
 
 Após a correção ser bem-sucedida, a pontuação de exposição de risco na ATP pode ser descartada, com base nas novas informações dos dispositivos corrigidos. 
 
-## <a name="next-steps"></a>Próximos Passos
+## <a name="next-steps"></a>Passos Seguintes
 Saiba mais sobre o Intune e [o Microsoft defender ATP](advanced-threat-protection.md)  
 Examinar a [defesa contra ameaças móveis](mobile-threat-defense.md) do Intune  
-Examinar o [painel Threat & gerenciamento](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/tvm-dashboard-insights) de vulnerabilidades no Microsoft defender ATP
+Examinar o [painel Threat & gerenciamento de vulnerabilidades](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/tvm-dashboard-insights) no Microsoft defender ATP

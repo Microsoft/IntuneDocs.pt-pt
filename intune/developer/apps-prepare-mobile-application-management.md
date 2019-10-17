@@ -1,5 +1,5 @@
 ---
-title: Preparar as aplicações para gestão de aplicações móveis com o Microsoft Intune
+title: Preparar aplicativos para o gerenciamento de aplicativos móveis com o Microsoft Intune
 description: As informações neste tópico ajudam-no a decidir quando deve utilizar a ferramenta de encapsulamento de aplicações e o SDK da Aplicação para permitir que as suas aplicações de linha de negócio personalizadas utilizem políticas de gestão de aplicações móveis.
 keywords: ''
 author: Erikre
@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 09/09/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: developer
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 64cd277b2e4c6bf5727dc3caed403ad470bc0156
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: c1750f789cfac98af998ebbd86b10a4e93a1772a
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71730288"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72490828"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Preparar aplicações de linha de negócios para as políticas de proteção de aplicações
 
@@ -32,7 +33,7 @@ Pode utilizar a Ferramenta de Encapsulamento de Aplicações do Intune ou o SDK 
 ## <a name="intune-app-wrapping-tool"></a>Ferramenta de Encapsulamento de Aplicações do Intune
 A Ferramenta de Encapsulamento de Aplicações é utilizada principalmente para aplicações **internas** de linha de negócio (LOB). A ferramenta é uma aplicação de linha de comandos que cria um wrapper em torno da aplicação, que permite que a aplicação seja, então, gerida por uma política de proteção de aplicações do Intune. Ao proteger uma aplicação fornecida por um fabricante independente de software (ISV), é importante esclarecer se o ISV continuará a suportar a aplicação encapsulada.
 
-Não precisa do código de origem para utilizar a ferramenta, mas precisa das credenciais de início de sessão. Para obter mais informações sobre as credenciais de início de sessão, consulte o [Blogue do Intune](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/). Para obter a documentação da ferramenta de disposição do aplicativo, consulte [ferramenta de disposição do aplicativo do Android](app-wrapper-prepare-android.md) e ferramenta de disposição do [aplicativo IOS](app-wrapper-prepare-ios.md).
+Não precisa do código de origem para utilizar a ferramenta, mas precisa das credenciais de início de sessão. Para obter mais informações sobre as credenciais de início de sessão, veja o [Intune Blog (Blogue do Intune)](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/). Para obter a documentação da ferramenta de disposição do aplicativo, consulte [ferramenta de disposição do aplicativo do Android](app-wrapper-prepare-android.md) e ferramenta de disposição do [aplicativo IOS](app-wrapper-prepare-ios.md).
 
 A Ferramenta de Encapsulamento de Aplicações **não** suporta aplicações da Apple App Store ou da Google Play Store. Também não suporta determinadas funcionalidades que requerem integração do programador (consulte a tabela de comparação de funcionalidades seguinte).
 
@@ -103,7 +104,7 @@ Esta tabela lista as definições que pode utilizar no SDK da Aplicação e na F
 |Bloquear captura de ecrã (apenas Android)|X|X|
 |Suporte para MAM sem a inscrição de dispositivos|X|X|
 |Apagamento completo de dados de aplicativo|X|X|
-|Apagamento seletivo de dados corporativos e de estudante em cenários de várias identidades <br><br>**Nota:** Para o iOS, quando o perfil de gerenciamento é removido, o aplicativo também é removido.|X||
+|Apagamento seletivo de dados corporativos e de estudante em cenários de várias identidades <br><br>**Nota:** no iOS, se o perfil de gestão for removido, a aplicação também é removida.|X||
 |Impedir "Guardar como"|X||
 |Configuração de aplicativo de destino (ou configuração de aplicativo por meio do "canal de MAM")|X|X|
 |Suporte para Identidades Múltiplas|X||
@@ -118,7 +119,7 @@ Esta tabela lista as definições que pode utilizar no SDK da Aplicação e na F
 |Atestado de dispositivo SafetyNet (somente Android)|X|X|
 |Verificação de ameaças em aplicativos (somente Android)|X|X|
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Para saber mais sobre as políticas de proteção de aplicações e o Intune, veja os seguintes tópicos:
 

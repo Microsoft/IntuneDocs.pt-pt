@@ -1,7 +1,7 @@
 ---
 title: A sua versão do iOS ainda não é suportada | Documentos da Microsoft
 titlesuffix: Microsoft Intune
-description: Ainda não é suportada a versão do sistema operativo do seu dispositivo iOS.
+description: Ainda não há suporte para a versão do sistema operacional do seu dispositivo iOS.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -10,6 +10,7 @@ ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: ada223d7-2a80-4415-bd85-5bdf9eca7ace
 searchScope:
@@ -19,12 +20,12 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 645a844a3566f7d72138c602c3dc12e5a0fafa67
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 0e0699758b31a8ca32b8522969379e8a3e502889
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61503839"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72499784"
 ---
 # <a name="your-ios-devices-operating-system-version-isnt-yet-supported"></a>A versão do sistema operativo iOS do dispositivo ainda não é suportada
 

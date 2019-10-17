@@ -1,7 +1,7 @@
 ---
-title: Obter um certificado Push de MDM da Apple para o Intune
+title: Obter um Certificado Push de MDM da Apple para o Intune
 titleSuffix: ''
-description: Obtenha um certificado Push de MDM da Apple para gerir dispositivos iOS com o Intune.
+description: Obtenha um Certificado Push de MDM da Apple para gerir dispositivos iOS com o Intune.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 03/08/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 805c3da286acddcda16d845182ba192124f88d21
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: d15fd73a608c799745c92c4b07df4b9705d00106
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71730048"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72490314"
 ---
 # <a name="get-an-apple-mdm-push-certificate"></a>Obter um certificado push de MDM da Apple
 
@@ -40,14 +41,14 @@ Quando um certificado push expira, tem de renová-lo. Ao renovar, certifique-se 
 
 
 ## <a name="steps-to-get-your-certificate"></a>Passos para obter o seu certificado
-Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), escolha **registro** > de dispositivo**Apple MDM Push Certificate**de**registro** > da Apple e siga estas etapas no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), escolha **registro de dispositivo** > **registro da Apple** > **Apple MDM Push Certificate**e siga estas etapas no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 
 ### <a name="step-1-grant-microsoft-permission-to-send-user-and-device-information-to-apple"></a>Passo 1. conceder permissão à Microsoft para enviar informações sobre o utilizador e o dispositivo à Apple
 Selecione **Concordo** para conceder permissão à Microsoft para enviar dados à Apple.
 
 ![O ecrã Configurar Certificado Push de MDM da Apple com o Push de MDM não configurado.](./media/apple-mdm-push-certificate-get/create-mdm-push-certificate.png)
 
-### <a name="step-2-download-the-intune-certificate-signing-request-required-to-create-an-apple-mdm-push-certificate"></a>Passo 2. transferir o pedido de assinatura de certificado do Intune obrigatório para criar um Certificado Push de MDM da Apple
+### <a name="step-2-download-the-intune-certificate-signing-request-required-to-create-an-apple-mdm-push-certificate"></a>Passo 2: transferir o pedido de assinatura de certificado do Intune obrigatório para criar um Certificado Push de MDM da Apple
 Selecione **Transferir o CSR** para transferir e guardar o ficheiro de pedido localmente. O ficheiro é utilizado para pedir um certificado de relação de confiança do Portal de Certificados Apple Push.
 
 ### <a name="step-3-create-an-apple-mdm-push-certificate"></a>Passo 3: criar um certificado push de MDM da Apple
@@ -67,7 +68,7 @@ O certificado push de MDM da Apple é válido durante um ano e tem de ser renova
 
 O certificado está associado ao ID Apple utilizado para criar o mesmo. Renove o certificado push de MDM com o ID Apple utilizado para criar o mesmo.
 
-1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), escolha **registro** > do dispositivo registro da**Apple**e, em seguida, escolha o bloco **Apple MDM Push Certificate** na área de detalhes.
+1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), escolha **registro de dispositivo** > **registro da Apple**e, em seguida, escolha o bloco **Apple MDM Push Certificate** na área de detalhes.
 2. Selecione **Transferir o CSR** para transferir e guardar o ficheiro de pedido localmente. O ficheiro é utilizado para pedir um certificado de relação de confiança do Portal de Certificados Apple Push.
 3. Selecione **Criar o Certificado Push de MDM** para aceder ao Portal de Certificados Push da Apple. Encontre o certificado que pretende renovar e selecione **Renovar**.
 4. No ecrã **Renovar Certificado Push**, introduza notas para ajudá-lo a identificar o certificado no futuro, selecione **Escolher Ficheiro** para navegar até ao novo ficheiro de pedido que transferiu e selecione **Carregar**.

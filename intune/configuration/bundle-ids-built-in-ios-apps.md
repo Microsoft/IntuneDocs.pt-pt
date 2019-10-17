@@ -9,18 +9,19 @@ manager: dougeby
 ms.date: 05/30/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: ''
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 04cafd2cf69bbd42a35ade3ae180e8af8789c938
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 1eda7fef3ee9c2ca4e4a13d9b6effba2ed121b0e
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71730924"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506948"
 ---
 # <a name="bundle-ids-for-built-in-ios-apps-you-can-use-in-intune"></a>IDs de pacote para aplicativos iOS internos que você pode usar no Intune
 
@@ -28,7 +29,7 @@ Ao configurar recursos em dispositivos iOS, você também pode adicionar os apli
 
 ## <a name="bundle-ids"></a>IDs de pacote
 
-| ID do Pacote                   | Nome da Aplicação     | Fabricante |
+| ID do Pacote                   | Nome da Aplicação     | Publisher |
 |-----------------------------|--------------|-----------|
 | com. Apple. Store             | App Store    | Apple     |
 | com.apple.calculator        | Calculadora   | Apple     |
@@ -39,7 +40,7 @@ Ao configurar recursos em dispositivos iOS, você também pode adicionar os apli
 | com.apple.compass           | Bússola      | Apple     |
 | com.apple.MobileAddressBook | Contactos     | Apple     |
 | com.apple.facetime          | FaceTime     | Apple     |
-| com.apple.DocumentsApp      | Ficheiros        | Apple     |
+| com.apple.DocumentsApp      | arquivos        | Apple     |
 | com.apple.mobileme.fmf1     | Encontrar Amigos | Apple     |
 | com.apple.mobileme.fmip1    | Localizar iPhone  | Apple     |
 | com.apple.gamecenter        | Centro de Jogos  | Apple     |
@@ -53,14 +54,14 @@ Ao configurar recursos em dispositivos iOS, você também pode adicionar os apli
 | com.apple.itunesu           | iTunes U     | Apple     |
 | com.apple.Keynote           | Keynote      | Apple     |
 | com.apple.mobilemail        | Correio         | Apple     |
-| com.apple.Maps              | Maps         | Apple     |
+| com.apple.Maps              | Mapas         | Apple     |
 | com.apple.MobileSMS         | Mensagens     | Apple     |
 | com.apple.Music             | Música        | Apple     |
 | com.apple.news              | Notícias         | Apple     |
 | com.apple.mobilenotes       | Notas        | Apple     |
 | com.apple.Numbers           | Números      | Apple     |
 | com.apple.Pages             | Páginas        | Apple     |
-| com.apple.mobilephone       | Phone        | Apple     |
+| com. Apple. MobilePhone       | Telemóvel        | Apple     |
 | com.apple.Photo-Booth       | Photo Booth  | Apple     |
 | com.apple.mobileslideshow   | Fotografias       | Apple     |
 | com.apple.podcasts          | Podcasts     | Apple     |
@@ -70,13 +71,13 @@ Ao configurar recursos em dispositivos iOS, você também pode adicionar os apli
 | com.apple.SiriViewService   | Siri         | Apple     |
 | com.apple.stocks            | Bolsa       | Apple     |
 | com.apple.tips              | Sugestões         | Apple     |
-| com.apple.tv                | PROGRAMAS DE TV           | Apple     |
+| com.apple.tv                | TV           | Apple     |
 | com.apple.videos            | Vídeos       | Apple     |
 | com.apple.VoiceMemos        | VoiceMemos   | Apple     |
 | com.apple.Passbook          | Wallet       | Apple     |
 | com.apple.Bridge            | Watch        | Apple     |
 | com.apple.weather           | Meteorologia      | Apple     |      
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Use essas IDs de pacote para configurar [recursos de dispositivo](ios-device-features-settings.md) e para [permitir ou restringir algumas configurações](device-restrictions-ios.md) em dispositivos IOS.

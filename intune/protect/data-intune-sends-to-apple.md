@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 02/26/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: b204a956-18ec-11e8-accf-0ed5f89f718b
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bbd0f0cafdf6de6b067e1350ce4c61e0980660d2
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: a2f1be7a2457cca7da62883370c9e273168c6a29
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71729708"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502440"
 ---
 # <a name="data-intune-sends-to-apple"></a>Dados que o Intune envia para a Apple
 
@@ -43,7 +44,7 @@ A seguinte tabela lista os dados que o Microsoft Intune envia de um dispositivo 
 |---|---| ---|
 | [APNS](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/3-MDM_Protocol/MDM_Protocol.html#//apple_ref/doc/uid/TP40017387-CH3-SW2) | Token, PushMagic | Se o servidor aceitar o dispositivo, o dispositivo fornece o seu token de notificação push ao servidor. O servidor deve utilizar este token para enviar mensagens push para o dispositivo. Esta mensagem de registo também contém uma cadeia PushMagic. O servidor tem de memorizar esta cadeia e incluí-la em todas as mensagens push que enviar para o dispositivo. |
 | [ASM/DEP](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/3-MDM_Protocol/MDM_Protocol.html#//apple_ref/doc/uid/TP40017387-CH3-SW2) | Token do servidor | Token de dispositivo de notificação push utilizado para autenticar no serviço da Apple. |
-| ASM/DEP | nome_do_servidor | Um nome identificável para o servidor MDM. |
+| ASM/DEP | server_name | Um nome identificável para o servidor MDM. |
 | ASM/DEP | uuid_do_servidor | Um identificador de servidor gerado pelo sistema. |
 | ASM/DEP | id_do_administrador | Um ID Apple da pessoa que gerou os tokens atualmente em utilização. |
 | ASM/DEP | nome_da_organização | O nome da organização. |
@@ -63,7 +64,7 @@ A seguinte tabela lista os dados que o Microsoft Intune envia de um dispositivo 
 | ASM/DEP | nome_do_perfil | Cadeia. Um nome legível por humanos para o perfil. |
 | ASM/DEP | número_de_telefone_de_suporte | Opcional. Cadeia. Um número de telefone de suporte da organização. |
 | ASM/DEP | endereço_de_e-mail_de_suporte | Opcional. Cadeia. Um endereço de e-mail de suporte da organização. Esta chave é válida na versão 2 do Protocolo do Servidor X e posterior. |
-| ASM/DEP | Departamento | Opcional. Cadeia. O nome do departamento ou localização definido pelo utilizador. |
+| ASM/DEP | departamento | Opcional. Cadeia. O nome do departamento ou localização definido pelo utilizador. |
 | ASM/DEP | dispositivos | Matriz de cadeias com números de série de dispositivos. (Poderá estar vazio.) |
 | VPP | GUID do UserId do Intune | GUID gerado pelo Intune. |
 | VPP | UPN do ID Apple gerido | O ID Apple especificado pelo Administrador ao configurar a ligação do token VPP com a Apple. |

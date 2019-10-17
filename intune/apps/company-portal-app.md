@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 419fd15f747c8b41377f3aca94c4b96d7c4910c1
-ms.sourcegitcommit: b8127c7a62d9ac4d0f768980fa1424567bb58733
+ms.openlocfilehash: 37c2a85162c781db7272b6ead11fbb3320a08343
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72350014"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72498011"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Como configurar a aplicação Portal da Empresa do Microsoft Intune
 
@@ -174,7 +175,7 @@ Algumas plataformas e configurações não permitem ações de dispositivo de au
 |     Platform    |    Extinguir    |    Eliminação     |    Renomear<sup>(4)</sup>    |    Sincronizá    |    Bloqueio Remoto    |    Redefinir senha    |    Recuperação de chave    |
 |------------------------|--------------------|--------------------|-----------------|-----------------|--------------------------|--------------------------|--------------------|
 |    Windows 10<sup>(3)</sup>    |    Disponível<sup>(1)</sup>    |    Disponível    |    Disponível    |    Disponível    |    Somente Windows Phone    |    Somente Windows Phone    |    NA    |
-|    iOS<sup>(3)</sup>    |    Disponível    |    Disponível    |    Disponível    |    Disponível    |    Disponível    |    Disponível    |    NA    |
+|    iOS<sup>(3)</sup>    |    Disponível    |    Disponível<sup>(8)</sup>    |    Disponível    |    Disponível    |    Disponível<sup>(8)</sup>    |    Disponível    |    NA    |
 |    MacOS<sup>(3)</sup><sup>(5)</sup>    |    Disponível    |    NA    |    Disponível    |    Disponível    |    Disponível    |    NA    |    Disponível<sup>(2)</sup>    |
 |    Android<sup>(3)</sup>    |    Disponível<sup>(7)</sup>    |    Disponível<sup>(7)</sup>    |    Disponível    |    Disponível    |    Disponível    |    Disponível<sup>(6)</sup>    |    NA    |
 
@@ -185,7 +186,8 @@ Algumas plataformas e configurações não permitem ações de dispositivo de au
 <sup>(4)</sup> renomear apenas altera o nome do dispositivo no aplicativo portal da empresa ou site, não no dispositivo.<br>
 <sup>(5)</sup> o apagamento remoto não está disponível em dispositivos MacOS.<br>
 <sup>(6)</sup> não há suporte para a redefinição de senha em algumas configurações empresariais Android e Android. Para obter mais informações, consulte [redefinir ou remover uma senha de dispositivo no Intune](../remote-actions/device-passcode-reset.md).<br>
-<sup>(7)</sup> desativar e apagar não está disponível nos cenários do proprietário do dispositivo Android Enterprise (enCOBO, COSU).<br> 
+<sup>(7)</sup> desativar e apagar não está disponível nos cenários do proprietário do dispositivo Android Enterprise (enCOBO, COSU).<br>os  
+<sup>(8)</sup> apagar e redefinir a senha não estão disponíveis em dispositivos IOS registrados com o registro do usuário.<br> 
 
 ## <a name="next-steps"></a>Próximos passos
 

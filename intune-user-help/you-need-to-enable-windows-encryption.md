@@ -1,7 +1,7 @@
 ---
 title: Necessita de avaliar a encriptação | Documentos da Microsoft
 titlesuffix: Microsoft Intune
-description: Tem de ativar a encriptação no dispositivo.
+description: Você precisa habilitar a criptografia em seu dispositivo.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -10,6 +10,7 @@ ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: e0c5993b-3fa5-411e-bae0-93fb66c49bea
 searchScope:
@@ -19,12 +20,12 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6099b24dd84863c0af2d75307e1e635c45d3db81
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 1d0e2f3c87feb1b2a28cc41dbd6e7f179f61eafb
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61504915"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72507865"
 ---
 # <a name="you-need-to-enable-encryption"></a>Necessita de avaliar a encriptação
 

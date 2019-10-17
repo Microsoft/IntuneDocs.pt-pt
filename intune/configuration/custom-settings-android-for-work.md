@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 07/01/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 4724d6e5-05e5-496c-9af3-b74f083141f8
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: baa202ba5fdb554af56724279456cf43961ff82d
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: d85793dcf0ee6fa0186147606c9fd695a268e529
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71730916"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506972"
 ---
 # <a name="use-custom-settings-for-android-enterprise-devices-in-microsoft-intune"></a>Utilizar definições personalizadas para dispositivos Android Enterprise no Microsoft Intune
 
@@ -31,9 +32,9 @@ Os perfis personalizados do Android Enterprise utilizam as definições Open Mob
 
 O Intune dá suporte a um número limitado de perfis personalizados do Android Enterprise, incluindo:
 
-- ./Vendor/MSFT/WiFi/Profile/SSID/Settings: [Criar um perfil de Wi-Fi com uma chave pré-compartilhada](wi-fi-profile-shared-key.md) tem alguns exemplos.
-- ./Vendor/MSFT/VPN/Profile/Name/PackageList: [Criar um perfil de VPN por aplicativo](android-pulse-secure-per-app-vpn.md) tem alguns exemplos.
-- ./Vendor/MSFT/WorkProfile/DisallowCrossProfileCopyPaste: Consulte o [exemplo](#example) (neste artigo).
+- ./Vendor/MSFT/WiFi/Profile/SSID/Settings: [criar um perfil de Wi-Fi com uma chave pré-compartilhada](wi-fi-profile-shared-key.md) tem alguns exemplos.
+- ./Vendor/MSFT/VPN/Profile/Name/PackageList: [criar um perfil de VPN por aplicativo](android-pulse-secure-per-app-vpn.md) tem alguns exemplos.
+- ./Vendor/MSFT/WorkProfile/DisallowCrossProfileCopyPaste: consulte o [exemplo](#example) (neste artigo).
 
 Se você precisar de configurações adicionais, consulte [OEMConfig para Android Enterprise](android-oem-configuration-overview.md).
 
@@ -45,17 +46,17 @@ Este artigo mostra-lhe como criar um perfil personalizado para dispositivos Andr
 2. Selecione **Configuração do dispositivo** > **Perfis** > **Criar perfil**.
 3. Introduza as seguintes definições:
 
-    - **Nome**: Insira um nome para o perfil, como `android enterprise custom profile`
-    - **Descrição**: Insira uma descrição para o perfil
-    - **Plataforma**: Escolher **Android Enterprise**
-    - **Tipo de perfil**: Escolher **personalizado**
+    - **Nome**: introduza um nome para o perfil, como `android enterprise custom profile`.
+    - **Descrição:** introduza uma descrição para o perfil.
+    - **Plataforma**: selecione **Android Enterprise**.
+    - **Tipo de perfil**: selecione **Personalizado**.
 
 4. Em **Definições OMA-URI Personalizadas**, selecione **Adicionar**. Introduza as seguintes definições:
 
-    - **Nome**: Insira um nome exclusivo para a configuração de OMA-URI para que você possa encontrá-la facilmente.
-    - **Descrição**: Insira uma descrição que dê uma visão geral da configuração e quaisquer outros detalhes importantes.
-    - **OMA-URI**: Insira o OMA-URI que você deseja usar como uma configuração.
-    - **Tipo de dados**: Escolha o tipo de dados que você usará para essa configuração de OMA-URI. As opções são:
+    - **Nome**: introduza um nome exclusivo para a definição OMA-URI, para poder encontrá-la facilmente.
+    - **Descrição**: introduza uma descrição que lhe permita obter uma descrição geral da definição e outros detalhes importantes.
+    - **OMA-URI**: introduza o OMA-URI que quer utilizar como uma definição.
+    - **Tipo de dados**: selecione o tipo de dados que irá utilizar para esta definição OMA-URI. As opções são:
 
       - Cadeia
       - Cadeia (ficheiro XML)
@@ -65,7 +66,7 @@ Este artigo mostra-lhe como criar um perfil personalizado para dispositivos Andr
       - Booleano
       - Base64 (ficheiro)
 
-    - **Valor**: Insira o valor de dados que você deseja associar ao OMA-URI que você inseriu. O valor depende do tipo de dados que selecionou. Por exemplo, se optar por **Data e hora**, selecione o valor num seletor de datas.
+    - **Valor**: introduza o valor de dados que pretende associar à definição OMA-URI que introduziu. O valor depende do tipo de dados que selecionou. Por exemplo, se optar por **Data e hora**, selecione o valor num seletor de datas.
 
     Depois de adicionar algumas definições, pode selecionar **Exportar**. A opção **Exportar** cria uma lista de todos os valores que adicionou num ficheiro de valores separados por vírgulas (.csv).
 
@@ -80,18 +81,18 @@ Neste exemplo, irá criar um perfil personalizado que restringe as ações de co
 2. Selecione **Configuração do dispositivo** > **Perfis** > **Criar perfil**.
 3. Introduza as seguintes definições:
 
-    - **Nome**: Insira um nome para o perfil, como `android ent block copy paste custom profile`.
-    - **Descrição**: introduza uma descrição para o perfil.
-    - **Plataforma**: Escolha **Android Enterprise**.
-    - **Tipo de perfil**: Escolha **personalizado**.
+    - **Nome**: introduza um nome para o perfil, como `android ent block copy paste custom profile`.
+    - **Descrição:** introduza uma descrição para o perfil.
+    - **Plataforma**: selecione **Android Enterprise**.
+    - **Tipo de perfil**: selecione **Personalizado**.
 
 4. Em **Definições OMA-URI Personalizadas**, selecione **Adicionar**. Introduza as seguintes definições:
 
-    - **Nome**: Insira algo como `Block copy and paste`.
-    - **Descrição**: Insira algo como `Blocks copy/paste between work and personal apps`.
-    - **OMA-URI**: Insira `./Vendor/MSFT/WorkProfile/DisallowCrossProfileCopyPaste`.
-    - **Tipo de dados**: Escolha **booliano** para que o valor para esse OMA-URI seja **true** ou **false**.
-    - **Valor**: Escolha **verdadeiro**.
+    - **Nome**: introduza algo como `Block copy and paste`.
+    - **Descrição**: introduza algo como `Blocks copy/paste between work and personal apps`.
+    - **OMA-URI**: introduza `./Vendor/MSFT/WorkProfile/DisallowCrossProfileCopyPaste`.
+    - **Tipo de dados**: selecione **Booleano** para que o valor deste OMA-URI seja **True** ou **False**.
+    - **Valor**: selecione **True**.
 
 5. Depois de introduzir as definições, o seu ambiente deverá ter um aspeto semelhante à imagem seguinte:
 
@@ -99,7 +100,7 @@ Neste exemplo, irá criar um perfil personalizado que restringe as ações de co
 
 Ao atribuir este perfil aos dispositivos Android Enterprise que gere, a funcionalidade Copiar e Colar é bloqueada entre aplicações nos perfis de trabalho e pessoais.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 O perfil está criado, mas ainda não está ativo. Em seguida, [atribua o perfil](device-profile-assign.md).
 

@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 10/02/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: developer
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 4ef8f421-9610-4d34-a464-cc02eb1578a9
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9a41d41464ace665301241a5962f59396a131107
-ms.sourcegitcommit: 60ed93682a21860e9d99ba1592ede120477f2b4d
+ms.openlocfilehash: 9eada01f2b1e876d6d3b47140c671e3ff7eeab02
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 10/16/2019
-ms.locfileid: "72379785"
+ms.locfileid: "72503504"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-testing-guide"></a>Guia de testes do SDK do Microsoft Intune app para Android
 

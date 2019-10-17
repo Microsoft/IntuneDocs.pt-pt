@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dac7069e30c173d80f15977ba2f06fcabcb7179b
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: a63bf187d0774b9f50351b45e53095d994720878
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71731012"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72496654"
 ---
 # <a name="how-to-manage-ios-and-macos-apps-purchased-through-apple-volume-purchase-program-with-microsoft-intune"></a>Como gerenciar aplicativos iOS e macOS adquiridos por meio de Apple Volume Purchase Program com Microsoft Intune
 
@@ -83,7 +84,7 @@ Antes de começar, tem de obter um token VPP da Apple e carregá-lo para a sua c
 ## <a name="to-get-and-upload-an-apple-vpp-token"></a>Para obter e carregar um token Apple VPP
 
 1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. No painel **Intune** , escolha **aplicativos** > cliente**tokens de VPP da Apple** em **instalação**.
+3. No painel **Intune** , escolha **aplicativos cliente** > **tokens de VPP da Apple** na **instalação**.
 4. No painel da lista de tokens VPP, selecione **Criar**.
 5. No painel **Criar token VPP**, especifique as seguintes informações:
     - **Ficheiro de token VPP** – se ainda não o fez, inscreva-se no Volume Purchase Program for Business ou no Volume Purchase Program for Education. Após a inscrição, transfira o token VPP da Apple para a sua conta e selecione-o aqui.
@@ -123,13 +124,13 @@ O utilizador final irá receber pedidos de instalação de aplicações VPP em v
 
 | # | Cenário                                | Convite para Apple VPP                              | Pedido de instalação da aplicação | Pedido de ID Apple |
 |---|--------------------------------------------------|-------------------------------------------------------------------------------------------------|---------------------------------------------|-----------------------------------|
-| 1 | BYOD – utilizador com licença                             | S                                                                                               | S                                           | S                                 |
-| 2 | Corp – utilizador com licença (dispositivo não supervisionado)     | S                                                                                               | S                                           | S                                 |
-| 3 | Corp – utilizador com licença (dispositivo supervisionado)         | S                                                                                               | N                                           | S                                 |
-| 4 | BYOD – dispositivo com licença                           | N                                                                                               | S                                           | N                                 |
-| 5 | CORP – dispositivo com licença (dispositivo não supervisionado)                           | N                                                                                               | S                                           | N                                 |
-| 6 | CORP – dispositivo com licença (dispositivo supervisionado)                           | N                                                                                               | N                                           | N                                 |
-| 7 | Modo de local público (dispositivo supervisionado) – dispositivo com licença | N                                                                                               | N                                           | N                                 |
+| 1 | BYOD – utilizador com licença                             | Iar                                                                                               | Iar                                           | Iar                                 |
+| 2 | Corp – utilizador com licença (dispositivo não supervisionado)     | Iar                                                                                               | Iar                                           | Iar                                 |
+| 3 | Corp – utilizador com licença (dispositivo supervisionado)         | Iar                                                                                               | P                                           | Iar                                 |
+| 4 | BYOD – dispositivo com licença                           | P                                                                                               | Iar                                           | P                                 |
+| 5 | CORP – dispositivo com licença (dispositivo não supervisionado)                           | P                                                                                               | Iar                                           | P                                 |
+| 6 | CORP – dispositivo com licença (dispositivo supervisionado)                           | P                                                                                               | P                                           | P                                 |
+| 7 | Modo de local público (dispositivo supervisionado) – dispositivo com licença | P                                                                                               | P                                           | P                                 |
 | 8 | Modo de local público (dispositivo supervisionado) – utilizador com licença   | --- | ---                                          | ---                                |
 
 > [!Note]  
@@ -171,8 +172,8 @@ Atualmente, não é possível eliminar uma aplicação VPP do iOS no Microsoft I
 
 O acesso a tokens de VPP da Apple e aplicativos de VPP pode ser controlado independentemente usando permissões atribuídas a funções de administrador personalizadas no Intune.
 
-* Para permitir que uma função personalizada do Intune gerencie tokens de VPP da Apple em **aplicativos** > cliente**tokens do VPP da Apple**, atribua permissões para **aplicativos gerenciados**.
-* Para permitir que uma função personalizada do Intune Gerencie aplicativos adquiridos usando tokens VPP do Ios em**aplicativos** **cliente** > aplicativos, atribua permissões para **aplicativos móveis**. 
+* Para permitir que uma função personalizada do Intune gerencie tokens de VPP da Apple em **aplicativos cliente** > **tokens de VPP da Apple**, atribua permissões para **aplicativos gerenciados**.
+* Para permitir que uma função personalizada do Intune Gerencie aplicativos adquiridos usando tokens VPP do iOS em **aplicativos cliente** > **aplicativos**, atribua permissões para **aplicativos móveis**. 
 
 ## <a name="additional-information"></a>Informações adicionais
 
@@ -191,8 +192,8 @@ A licença deverá ser atualizada dentro de algumas horas após a instalação o
 Sim. O administrador do Intune pode exceder as capacidades de subscrição de uma aplicação. Por exemplo, se o administrador adquirir 100 licenças para a aplicação XYZ e, em seguida, direcionar a aplicação para um grupo com 500 membros. Os primeiros 100 membros (utilizadores ou dispositivos) irão ter uma licença atribuída, mas a atribuição de licenças aos restantes membros falhará.
 
 ### <a name="how-frequently-does-intune-sync-vpp-tokens-with-apple"></a>Com que frequência o Intune sincroniza tokens VPP com a Apple?
-O Intune sincroniza tokens VPP e licenças duas vezes por dia com a Apple. O administrador do Intune pode iniciar uma sincronização manual em **aplicativos** > cliente**tokens do VPP da Apple**.
+O Intune sincroniza tokens VPP e licenças duas vezes por dia com a Apple. O administrador do Intune pode iniciar uma sincronização manual em **aplicativos cliente** > **TOKENs de VPP da Apple**.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Veja [Como monitorizar aplicações](apps-monitor.md) para obter informações que o ajudam a monitorizar as atribuições de aplicações.

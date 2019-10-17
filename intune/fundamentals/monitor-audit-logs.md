@@ -8,17 +8,18 @@ manager: dougeby
 ms.date: 03/18/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 6ee841cc-5694-4ba1-8f66-1d58edec30a4
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d999603abc539fda4d152d15dd1ab965c465f39e
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: b4be1755a07e6ec304edb7bceba8041d5b58263e
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71732264"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72510001"
 ---
 # <a name="use-audit-logs-to-track-and-monitor-events-in-microsoft-intune"></a>Usar logs de auditoria para acompanhar e monitorar eventos no Microsoft Intune
 
@@ -53,21 +54,21 @@ Para obter mais informações sobre esse recurso, consulte [enviar dados de log 
 
 ## <a name="review-audit-events"></a>Rever eventos de auditoria
 
-![Escolha logs de auditoria no Intune para ver as ações e datas em que os eventos ocorreram](./media/monitor-audit-logs/monitor-audit-logs.png "nos logs de auditoria")
+![Escolha logs de auditoria no Intune para ver as ações e datas em que os eventos ocorreram](./media/monitor-audit-logs/monitor-audit-logs.png "Logs de auditoria")
 
 Um registo de auditoria tem uma vista de lista predefinida que mostra os seguintes itens:
 
 - Data e hora da ocorrência
 - Iniciado por (Ator)
-- Nome da Aplicação
+- Nome do aplicativo
 - Atividade
 - Destino(s)
 - Category
-- State
+- Estado
 
 Para ver informações mais específicas sobre um evento, selecione um item na lista:
 
-![Obter informações mais específicas sobre quem fez o que nos logs de auditoria nos detalhes do log de auditoria do Intune](./media/monitor-audit-logs/monitor-audit-log-detail.png "")
+![Obter informações mais específicas sobre quem fez o que nos logs de auditoria no Intune](./media/monitor-audit-logs/monitor-audit-log-detail.png "Detalhes do log de auditoria")
 
 > [!NOTE]
 > **Iniciado por (ator)** inclui informações sobre quem executou a tarefa e onde ela foi executada. Por exemplo, se você executar a atividade no Intune na portal do Azure, o **aplicativo** sempre listará **Microsoft Intune extensão do portal** e a **ID do aplicativo** sempre usará o mesmo GUID.
@@ -82,7 +83,7 @@ Cada carga de trabalho tem um item de menu que filtra previamente a categoria de
 
 Para obter detalhes sobre como usar a API do Graph para obter até um ano de eventos de auditoria, consulte [list auditEvents](https://docs.microsoft.com/graph/api/intune-auditing-auditevent-list?view=graph-rest-1.0).
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 [Enviar dados de log para armazenamento, hubs de eventos ou log Analytics](review-logs-using-azure-monitor.md).
 

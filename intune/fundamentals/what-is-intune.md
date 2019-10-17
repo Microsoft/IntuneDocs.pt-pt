@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 10/14/2019
 ms.topic: overview
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 56c76663330cae5cb771358542fd22ff09398118
-ms.sourcegitcommit: 45d7c76e760c5117bf134fb57f7e248e5b6c4ad5
+ms.openlocfilehash: c3c03c67a99b78804c999250f8d1148a4b3d1d97
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72314721"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72504760"
 ---
 # <a name="microsoft-intune-is-an-mdm-and-mam-provider-for-your-devices"></a>Microsoft Intune é um provedor de MDM e MAM para seus dispositivos
 
@@ -29,9 +30,9 @@ Microsoft Intune é um serviço baseado em nuvem que se concentra no gerenciamen
 
 ![Imagem da arquitetura do Intune](./media/what-is-intune/intunearch_sm.png)
 
-Exiba uma [versão maior](./media/what-is-intune/intunearchitecture.svg) do diagrama de arquitetura do Intune.
+Veja uma [versão maior](./media/what-is-intune/intunearchitecture.svg) do diagrama da arquitetura do Intune.
 
-Com o Intune, você pode:
+Com o Intune, pode:
 
 - Escolha ser 100% Cloud com o Intune ou ser [cogerenciado](https://docs.microsoft.com/sccm/comanage/overview) com o Configuration Manager e o Intune.
 - Defina regras e defina configurações em dispositivos pessoais e de propriedade da organização para acessar dados e redes.
@@ -39,7 +40,7 @@ Com o Intune, você pode:
 - Proteja as informações da empresa controlando a maneira como os usuários acessam e compartilham informações.
 - Certifique-se de que os dispositivos e aplicativos estejam em conformidade com seus requisitos de segurança.
 
-## <a name="manage-devices"></a>Gerir dispositivos
+## <a name="manage-devices"></a>Efetue a gestão dos dispositivos
 
 No Intune, você gerencia dispositivos usando uma abordagem adequada para você. Para dispositivos de propriedade da organização, talvez você queira controle total sobre os dispositivos, incluindo configurações, recursos e segurança. Nessa abordagem, os dispositivos e os usuários desses dispositivos "registram-se" no Intune. Depois de registrados, eles recebem suas regras e configurações por meio de políticas configuradas no Intune. Por exemplo, você pode definir os requisitos de senha e PIN, criar uma conexão VPN, configurar a proteção contra ameaças e muito mais.
 
@@ -55,11 +56,11 @@ Quando os dispositivos são registrados e gerenciados no Intune, os administrado
 
 **Recursos online**:
 
-- [O que é o registro de dispositivo?](../enrollment/device-enrollment.md)
+- [O que é a inscrição de dispositivos?](../enrollment/device-enrollment.md)
 
 - [Aplicar recursos e configurações em seus dispositivos usando perfis de dispositivo](../configuration/device-profiles.md)
 
-- [Proteger dispositivos com o Microsoft Intune](../protect/device-protect.md)
+- [Proteger dispositivos com Microsoft Intune](../protect/device-protect.md)
 
 ## <a name="manage-apps"></a>Gerir aplicações
 
@@ -82,11 +83,11 @@ Por exemplo, um usuário entra em um dispositivo com suas credenciais de organiz
 
 E você pode usar o Intune com outros serviços no EMS. Esse recurso fornece segurança de aplicativo móvel da sua organização além do que está incluído no sistema operacional e em qualquer aplicativo. Os aplicativos gerenciados com o EMS têm acesso a um conjunto mais amplo de recursos de proteção de dados e aplicativos móveis.
 
-![Imagem que mostra os níveis de segurança de dados de gerenciamento de aplicativo](./media/what-is-intune/managing-mobile-apps.png)
+![Imagem que mostra os níveis da segurança de dados de gestão de aplicações](./media/what-is-intune/managing-mobile-apps.png)
 
 ## <a name="compliance-and-conditional-access"></a>Conformidade e acesso condicional
 
-O Intune se integra ao Azure AD para habilitar um amplo conjunto de cenários de controle de acesso. Por exemplo, exigir que os dispositivos móveis estejam em conformidade com os padrões da organização definidos no Intune antes de acessar recursos de rede, como email ou SharePoint. Da mesma forma, você pode bloquear os serviços para que eles fiquem disponíveis apenas para um conjunto específico de aplicativos móveis. Por exemplo, você pode bloquear o Exchange Online para que ele seja acessado somente pelo Outlook ou pelo Outlook Mobile.
+O Intune está integrado no Azure AD para possibilitar um conjunto abrangente de cenários de controlo de acesso. Por exemplo, exigir que os dispositivos móveis estejam em conformidade com os padrões da organização definidos no Intune antes de acessar recursos de rede, como email ou SharePoint. Da mesma forma, você pode bloquear os serviços para que eles fiquem disponíveis apenas para um conjunto específico de aplicativos móveis. Por exemplo, você pode bloquear o Exchange Online para que ele seja acessado somente pelo Outlook ou pelo Outlook Mobile.
 
 **Recursos online**:
 
@@ -104,7 +105,7 @@ O Intune está disponível:
 
 O Intune é usado em muitos setores, incluindo [governo](https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-govt-service-description), [educação](https://www.microsoft.com/en-us/education/intune), [quiosque ou dispositivo dedicado](../configuration/kiosk-settings.md) para fabricação e varejo e muito mais.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 - Leia alguns dos [problemas de negócios comuns que o Intune ajuda a resolver](https://docs.microsoft.com/intune/common-scenarios).
 - Comece com uma [avaliação de 30 dias do Intune](free-trial-sign-up.md).

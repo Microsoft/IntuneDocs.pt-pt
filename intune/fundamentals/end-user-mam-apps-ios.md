@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 02/15/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: b57e6525-b57c-4cb4-a84c-9f70ba1e8e19
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a4e272a9d3bbe770a17f82bdf367b8394414eb90
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 807b33867d827415165eb65d81b91683830735f5
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71729396"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502867"
 ---
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>O que esperar quando a sua aplicação iOS é gerida por políticas de proteção de aplicações
 
@@ -60,11 +61,11 @@ Quando existe uma conta gerida numa aplicação:
 
 Leia o seguinte cenário de exemplo para obter uma compreensão mais aprofundada de como são tratadas as várias contas de utilizador.
 
-O utilizador A trabalha para duas empresas — a **Empresa X** e a **Empresa Y**. O utilizador A tem uma conta profissional para cada empresa e ambas utilizam o Intune para implementar políticas de proteção de aplicações. A **Empresa X** implementa políticas de proteção de aplicações **antes da** **Empresa Y**. A política de proteção de aplicações é aplicada primeiro à conta associada à **Empresa X**. Se pretender que a conta de utilizador que está associada à Empresa Y seja gerida pelas políticas de proteção de aplicações, terá de remover a conta de utilizador que está associada à Empresa X e adicionar a conta de utilizador que está associada à Empresa Y.
+O usuário A trabalha para duas empresas:**empresa X** e **empresa Y**. O usuário A tem uma conta de trabalho para cada empresa e ambos usam o Intune para implantar políticas de proteção de aplicativo. A **empresa X** implanta políticas de proteção de aplicativo **antes** **da empresa Y**. A conta associada à **empresa X** Obtém a política de proteção do aplicativo primeiro. Se pretender que a conta de utilizador que está associada à Empresa Y seja gerida pelas políticas de proteção de aplicações, terá de remover a conta de utilizador que está associada à Empresa X e adicionar a conta de utilizador que está associada à Empresa Y.
 
 ### <a name="add-a-second-account"></a>Adicionar uma segunda conta
 
 Se estiver a utilizar um dispositivo iOS, quando tentar adicionar uma segunda conta profissional nesse dispositivo, poderá ver uma mensagem a informá-lo de que essa ação não é permitida. As contas são apresentadas e, em seguida, pode escolher a conta que pretende remover.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 [O que esperar quando a aplicação Android é gerida por políticas de proteção de aplicações](end-user-mam-apps-android.md)

@@ -8,18 +8,19 @@ manager: dougeby
 ms.date: 04/04/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f37fbd4cf2cc67e8e102ae5bdd4647e0073aa2da
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 322d6f1e23464f1f75cc79346d839a9ccdbd7bc7
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71729780"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72504650"
 ---
 # <a name="windows-81-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Definições do Windows 8.1 para marcar dispositivos como conformes ou não conformes com o Intune
 
@@ -29,7 +30,7 @@ Este artigo apresenta e descreve as definições de conformidade diferentes que 
 
 Esta funcionalidade aplica-se a:
 
-- Windows Phone 8.1
+- Wnodows Phone 8.1
 - Windows 8.1 e posterior
 
 Enquanto administrador do Intune, utilize estas definições de conformidade para ajudar a proteger os recursos da sua organização. Para saber mais sobre as políticas de conformidade e para o que servem, veja a [introdução à conformidade de dispositivos](device-compliance-get-started.md).
@@ -40,8 +41,8 @@ Enquanto administrador do Intune, utilize estas definições de conformidade par
 
 ## <a name="device-properties"></a>Propriedades do dispositivo
 
-- **SO mínimo obrigatório**: introduza a versão mínima permitida. Quando um dispositivo não cumpre o requisito de versão mínima do SO, será reportado como não conforme. É apresentada uma ligação com informações sobre como atualizar. O utilizador final pode optar por atualizar o dispositivo e, em seguida, obter acesso aos recursos da empresa.
-- **Versão máxima de SO permitida**: introduza a versão máxima permitida. Quando um dispositivo utiliza uma versão do SO posterior à versão introduzida na regra, o acesso aos recursos da empresa é bloqueado. É pedido ao utilizador para contactar o administrador de TI. O dispositivo não pode aceder a recursos organizacionais até que altere a regra para permitir a versão do SO.
+- **Sistema operacional mínimo necessário**: Insira a versão mínima permitida. quando um dispositivo não cumpre o requisito de versão mínima do SO, será reportado como não conforme. É apresentada uma ligação com informações sobre como atualizar. O utilizador final pode optar por atualizar o dispositivo e, em seguida, obter acesso aos recursos da empresa.
+- **Versão máxima do sistema operacional permitida**: Insira a versão máxima permitida. Quando um dispositivo utiliza uma versão do SO posterior à versão introduzida na regra, o acesso aos recursos da empresa é bloqueado. O usuário é solicitado a entrar em contato com o administrador de ti. O dispositivo não pode acessar os recursos organizacionais até que você altere a regra para permitir a versão do sistema operacional.
 
 Os PCs Windows 8.1 devolvem a versão **3**. Se a regra da versão do SO estiver definida como Windows 8.1 para o Windows, o dispositivo será reportado como não conforme, mesmo que tenha o sistema operativo Windows 8.1.
 
@@ -49,7 +50,7 @@ Os PCs Windows 8.1 devolvem a versão **3**. Se a regra da versão do SO estive
 
 ### <a name="password"></a>Palavra-passe
 
-- **Exigir uma palavra-passe para desbloquear os dispositivos móveis**: **exija** que os utilizadores introduzam uma palavra-passe para poderem aceder aos dispositivos.
+- **Exigir uma palavra-passe para desbloquear os dispositivos móveis**: **exige** que os utilizadores introduzam uma palavra-passe para poderem aceder aos dispositivos.
 - **Palavras-passe simples**: defina como **Bloquear** para que os utilizadores não possam criar palavras-passe simples, como **1234** ou **1111**. Defina como **Não configurado** para permitir aos utilizadores criar palavras-passe como **1234** ou **1111**.
 - **Comprimento mínimo da palavra-passe**: introduza o número mínimo de dígitos ou carateres que a palavra-passe tem de ter.
 
@@ -59,7 +60,7 @@ Os PCs Windows 8.1 devolvem a versão **3**. Se a regra da versão do SO estive
 
 - **Tipo de palavra-passe**: escolha se uma palavra-passe deve ter apenas carateres **Numéricos** ou se deve existir uma combinação de números e de outros carateres (**Alfanuméricos**).
   
-  - **Número de carateres não alfanuméricos na palavra-passe**: Se **Tipo obrigatório de palavra-passe** estiver definido como **Alfanumérico**, esta definição especifica o número mínimo de conjuntos de carateres que a palavra-passe tem de ter. Os quatro conjuntos de carateres são:
+  - **Número de carateres não alfanuméricos na palavra-passe**: se o **Tipo obrigatório de palavra-passe** estiver definido como **Alfanumérico**, esta definição especificará o número mínimo de conjuntos de carateres que a palavra-passe tem de conter. Os quatro conjuntos de carateres são:
     - Letras minúsculas
     - Letras maiúsculas
     - Símbolos
@@ -70,9 +71,9 @@ Os PCs Windows 8.1 devolvem a versão **3**. Se a regra da versão do SO estive
     - Se o comprimento mínimo da palavra-passe é superior a oito carateres
     - Ou, se o número mínimo de conjuntos de carateres é superior a dois
 
-- **Minutos de inatividade antes de a palavra-passe ser exigida**: introduza o tempo de inatividade antes de o utilizador ter de reintroduzir a palavra-passe.
-- **Expiração da palavra-passe (dias)** : selecione o número de dias antes de a palavra-passe expirar e ser necessário criar uma nova.
-- **Número de palavras-passe anteriores para impedir a reutilização**: introduza o número de palavras-passe utilizadas anteriormente que não podem ser utilizadas.
+- **Máximo de minutos de inatividade antes de ser exigida a palavra-passe**: introduza o tempo de inatividade antes de o utilizador ter de reintroduzir a palavra-passe.
+- **Expiração da palavra-passe (dias)** : selecione o número de dias antes de a palavra-passe expirar e ser preciso criar uma nova.
+- **Número de senhas anteriores para evitar a reutilização**: Insira o número de senhas usadas anteriormente que não podem ser usadas.
 
 ### <a name="encryption"></a>Encriptação
 
@@ -80,7 +81,7 @@ Os PCs Windows 8.1 devolvem a versão **3**. Se a regra da versão do SO estive
 
 Selecione **OK** > **Criar** para guardar as alterações.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 - [Adicionar ações para dispositivos não conformes](actions-for-noncompliance.md) e [utilizar etiquetas de âmbito para filtrar políticas](../fundamentals/scope-tags.md).
 - [Monitorizar as políticas de conformidade](compliance-policy-monitor.md).

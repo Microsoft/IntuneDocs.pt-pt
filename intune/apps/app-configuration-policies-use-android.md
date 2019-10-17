@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 09/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d31126a259274a2c75f933428632e274d8710aa6
-ms.sourcegitcommit: b8127c7a62d9ac4d0f768980fa1424567bb58733
+ms.openlocfilehash: 6fecdc56e6140a939959ac92bbe8fa410d43ccc5
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72350029"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72507523"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-enterprise-devices"></a>Adicionar políticas de configuração de aplicativo para dispositivos Android Enterprise gerenciados
 

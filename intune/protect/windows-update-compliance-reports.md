@@ -9,18 +9,19 @@ manager: dougeby
 ms.date: 02/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: aiwang
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 09f3cafc16d8a08885731aa244a089367c6c0933
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 55fa1109fde57e3104c8bb15e1f45761d661c735
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71732472"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508723"
 ---
 # <a name="intune-compliance-reports-for-updates"></a>Relatórios de conformidade do Intune para atualizações
 Quando você usa o Intune para implantar o Windows Update em dispositivos Windows 10, veja detalhes sobre a conformidade da atualização usando o Intune ou uma solução gratuita chamada *conformidade de atualizações*, que faz parte do Microsoft Operations Management Suite (OMS).
@@ -53,15 +54,15 @@ No console do Intune, você usa as configurações de OMA-URI de uma política p
 O caminho OMA-URI (com distinção entre maiúsculas e minúsculas) para configurar a ID comercial é: *./VENDOR/MSFT/DMCLIENT/Provider/MS DM Server/commercialid*  
 
 Por exemplo, pode utilizar os seguintes valores na **Definição Adicionar ou editar OMA-URI**:
-- **Nome da configuração**: ID comercial do Windows Analytics
-- **Descrição da configuração**: Configurando a ID comercial para soluções do Windows Analytics
+- **Nome da Definição**: ID Comercial do Windows Analytics
+- **Descrição da Definição**: configurar o ID comercial para soluções do Windows Analytics
 - **OMA-URI** (diferencia maiúsculas de minúsculas): *./Vendor/MSFT/DMClient/Provider/MS DM Server/commercialid*
-- **Tipo de dados**: Cadeia
-- **Valor**: \<Use o GUID mostrado na guia telemetria do Windows em seu espaço de trabalho do OMS >
+- **Tipo de Dados:** cadeia
+- **Valor**: \<USE o GUID mostrado na guia telemetria do Windows em seu espaço de trabalho do OMS >
  
 > [!NOTE]  
 > Para obter mais informações sobre o servidor de DM MS, veja [Fornecedor de serviço de configuração (CSP) do DMClient]( https://docs.microsoft.com/windows/client-management/mdm/dmclient-csp).
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 [Gerenciar atualizações de software no Intune](windows-update-for-business-configure.md)
 

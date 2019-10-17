@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 10/24/2018
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 494b3892-916e-4b40-9b67-61adec889bdf
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6150359843e5e089226717dd07f3d932ab21f6d6
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 17f0b30d0a8c706a7fdff1c7da722eeccdf097eb
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71730896"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72495785"
 ---
 # <a name="use-custom-settings-for-android-devices-in-microsoft-intune"></a>Utilizar definições personalizadas para dispositivos Android no Microsoft Intune
 
@@ -46,17 +47,17 @@ Este artigo mostra-lhe como criar um perfil personalizado para dispositivos Andr
 2. Selecione **Configuração do dispositivo** > **Perfis** > **Criar perfil**.
 3. Introduza as seguintes definições:
 
-    - **Nome**: Insira um nome para o perfil, como `android custom profile`.
-    - **Descrição**: introduza uma descrição para o perfil.
-    - **Plataforma**: Escolha **Android**.
-    - **Tipo de perfil**: Escolha **personalizado**.
+    - **Nome**: introduza um nome para o perfil, como `android custom profile`.
+    - **Descrição:** introduza uma descrição para o perfil.
+    - **Plataforma**: selecione **Android**.
+    - **Tipo de perfil**: selecione **Personalizado**.
 
 4. Em **Definições OMA-URI Personalizadas**, selecione **Adicionar**. Introduza as seguintes definições:
 
-    - **Nome**: Insira um nome exclusivo para a configuração de OMA-URI para que você possa encontrá-la facilmente.
-    - **Descrição**: Insira uma descrição que dê uma visão geral da configuração e quaisquer outros detalhes importantes.
-    - **OMA-URI**: Insira o OMA-URI que você deseja usar como uma configuração.
-    - **Tipo de dados**: Escolha o tipo de dados que você usará para essa configuração de OMA-URI. As opções são:
+    - **Nome**: introduza um nome exclusivo para a definição OMA-URI, para poder encontrá-la facilmente.
+    - **Descrição**: introduza uma descrição que lhe permita obter uma descrição geral da definição e outros detalhes importantes.
+    - **OMA-URI**: introduza o OMA-URI que quer utilizar como uma definição.
+    - **Tipo de dados**: selecione o tipo de dados que irá utilizar para esta definição OMA-URI. As opções são:
 
       - Cadeia
       - Cadeia (ficheiro XML)
@@ -66,14 +67,14 @@ Este artigo mostra-lhe como criar um perfil personalizado para dispositivos Andr
       - Booleano
       - Base64 (ficheiro)
 
-    - **Valor**: Insira o valor de dados que você deseja associar ao OMA-URI que você inseriu. O valor depende do tipo de dados que selecionou. Por exemplo, se optar por **Data e hora**, selecione o valor num seletor de datas.
+    - **Valor**: introduza o valor de dados que pretende associar à definição OMA-URI que introduziu. O valor depende do tipo de dados que selecionou. Por exemplo, se optar por **Data e hora**, selecione o valor num seletor de datas.
 
     Depois de adicionar algumas definições, pode selecionar **Exportar**. A opção **Exportar** cria uma lista de todos os valores que adicionou num ficheiro de valores separados por vírgulas (.csv).
 
 5. Selecione **OK** para guardar as alterações. Continue a adicionar mais definições conforme necessário. 
 6. Quanto terminar, selecione **OK** > **Criar** para criar o perfil do Intune. Depois de criado, o perfil é apresentado na lista **Configuração do dispositivo – Perfis**.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 O perfil está criado, mas ainda não está ativo. Em seguida, [atribua o perfil](device-profile-assign.md).
 

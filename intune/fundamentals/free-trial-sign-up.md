@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 10/02/2019
 ms.topic: quickstart
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 195931c0-8208-43bd-b0af-b1f8e469a32c
@@ -17,14 +18,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1f1e19822aaf90761e6429b2e91194eacccf467a
-ms.sourcegitcommit: 223d64a72ec85fe222f5bb10639da729368e6d57
+ms.openlocfilehash: b1264f5113ded280ed9d5cb9b9d4ece8e0187fe7
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71940510"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502877"
 ---
-# <a name="quickstart-try-microsoft-intune-for-free"></a>Início rápido: Experimente o Microsoft Intune gratuitamente
+# <a name="quickstart-try-microsoft-intune-for-free"></a>Início Rápido: experimentar gratuitamente o Microsoft Intune
 
 O Microsoft Intune ajuda-o a proteger os dados empresariais da sua força de trabalho através da gestão de dispositivos e aplicações. Neste início rápido, criará uma subscrição gratuita para experimentar o Intune num ambiente de teste.
 
@@ -124,11 +125,11 @@ Existem dois portais que pode utilizar:
 - O dashboard do Intune no Azure ([portal.azure.com](https://portal.azure.com)) é o local onde poderá explorar as [funcionalidades do Intune](what-is-intune.md). Normalmente, irá realizar o seu trabalho no dashboard do Intune.
 - O[admin.Microsoft.com](https://admin.microsoft.com)(centro de administração do Microsoft 365) é onde você pode adicionar e gerenciar usuários, se você não estiver usando Azure Active Directory para isso. Também pode gerir outros aspetos da sua conta, incluindo faturação e suporte.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Neste guia de início rápido, criou uma subscrição gratuita para experimentar o Intune num ambiente de teste. Para obter mais informações sobre como configurar o Intune, veja [Configurar o Intune](setup-steps.md).
 
 Para seguir esta série de guias de início rápido do Intune, continue para o próximo guia de início rápido.
 
 > [!div class="nextstepaction"]
-> [TUTORIAIS Criar um usuário e atribuir uma licença a ele](quickstart-create-user.md)
+> [Guia de Início Rápido: criar um utilizador e atribuir uma licença ao mesmo](quickstart-create-user.md)

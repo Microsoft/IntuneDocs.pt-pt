@@ -9,6 +9,7 @@ ms.date: 10/03/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 3bb659cc-9b57-4d19-8631-2c26749fa71c
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9047dd9bbc55162eae4693d3035cb05ff4becb91
-ms.sourcegitcommit: 8934b1abec96e18cee15a77107d37551766f7666
+ms.openlocfilehash: ee725d118353e18924858569ac861992d19f839a
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71099852"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506199"
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>Inscrever o seu dispositivo macOS no Intune com a aplicação Portal da Empresa
 
@@ -60,7 +61,7 @@ Use as etapas a seguir para registrar dispositivos macOS que executam o macOS 10
 
 4. A página __Dispositivos__ irá apresentar uma lista de dispositivos geridos ou uma faixa. O que é apresentado varia em função de já ter ou não um dispositivo gerido. 
     * Para adicionar um dispositivo que não esteja apresentado, selecione a faixa com a mensagem **Toque aqui para indicar que dispositivo está a utilizar ou adicionar um novo dispositivo**.
-    * Se você não tiver nenhum dispositivo, a faixa lerá: **Você não tem nenhum dispositivo gerenciado. Adicione este dispositivo ao tocar aqui.** Clique na faixa para adicionar o seu dispositivo.  
+    * Se você não tiver nenhum dispositivo, a faixa lerá: **você não tem nenhum dispositivo gerenciado. Adicione este toque aqui.** Clique na faixa para adicionar o seu dispositivo.  
 
      ![Uma captura de ecrã da página Dispositivos, com um quadrado vermelho à volta da opção de faixa para realçar a opção a clicar.](./media/CP-enroll-MACOS-1808.png)  
 5. Conclua o passo abaixo que corresponder à mensagem atualmente apresentada no Portal da Empresa.  
@@ -76,7 +77,7 @@ Use as etapas a seguir para registrar dispositivos macOS que executam o macOS 10
 
 7. Quando o instalador concluir a operação, aceda ao **Launchpad** e abra o **Portal da Empresa**.  
 
-8. O seu dispositivo macOS irá pedir-lhe que confirme se pretende abrir a aplicação Portal da Empresa. Clique em **aberto**.  
+8. O seu dispositivo macOS irá pedir-lhe que confirme se pretende abrir a aplicação Portal da Empresa. Clique em **Abrir**.  
 
    > [!TIP]
    > O Intune precisa de aceder ao seu computador para confirmar que o dispositivo é suficientemente seguro para aceder aos recursos da sua organização. Se o seu computador se recusar a abrir a aplicação Portal da Empresa, [desative o Gatekeeper](https://support.apple.com/HT202491). Em seguida, abra a aplicação.
@@ -100,7 +101,7 @@ Além disso, uma vez que esses outros perfis não exigem verificações individu
 
 A atualização da aplicação Portal da Empresa é feita da mesma forma que qualquer outra aplicação do Office, através do Microsoft AutoUpdate para Mac. Saiba mais sobre como [atualizar aplicações da Microsoft para macOS aqui](https://support.office.com/article/Check-for-Office-for-Mac-updates-automatically-bfd1e497-c24d-4754-92ab-910a4074d7c1).  
 
-## <a name="next-steps"></a>Próximos Passos  
+## <a name="next-steps"></a>Passos Seguintes  
 Precisa de ajuda adicional? Contacte o suporte da empresa. Pode encontrar as informações de contacto no [Site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  
 
 

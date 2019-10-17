@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/27/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: c59514d7-1256-4576-9380-e7a0b85a0378
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 68976c9a71ab1c1886fd5f975df563acb44dc731
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: c53166b6e6dc6ab3f780ccdfd4f11eb4c6a9d730
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71731032"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72497557"
 ---
 # <a name="add-ios-store-apps-to-microsoft-intune"></a>Adicionar aplicações da loja iOS ao Microsoft Intune
 
@@ -52,16 +53,16 @@ Só pode atribuir aplicações com este método se forem gratuitas na App Store.
 10. Na lista de resultados, selecione a aplicação que pretende e, em seguida, selecione **Selecionar**.
 11. No painel **Adicionar aplicação**, selecione **Informações da aplicação** para configurar a aplicação.
 12. No painel **Informações da aplicação**, adicione as informações da aplicação. Consoante a aplicação que tenha selecionado, alguns dos valores neste painel podem ter sido preenchidos automaticamente:
-    - **Nome**: Introduza o nome da aplicação tal como deve ser apresentado no portal da empresa. Certifique-se de que utiliza nomes de aplicação que sejam exclusivos. Se um nome de aplicação for duplicado, apenas um deles será apresentado aos utilizadores no portal da empresa.
-    - **Descrição**: Introduza uma descrição para a aplicação. Esta descrição é apresentada aos utilizadores no portal da empresa.
-    - **Publicador**: Introduza o nome do publicador da aplicação.
-    - **URL da App Store**: introduza o URL da App Store da aplicação que pretende criar.
-    - **Sistema operativo mínimo**: selecione na lista a versão mínima do sistema operativo em que a aplicação pode ser instalada. Se atribuir a aplicação a um dispositivo com um sistema operativo anterior, não será instalada.
-    - **Tipo de dispositivo aplicável**: selecione na lista os dispositivos utilizados pela aplicação.
+    - **Nome**: introduza o nome da aplicação tal como deve ser apresentado no portal da empresa. Certifique-se de que utiliza nomes de aplicação que sejam exclusivos. Se um nome de aplicação for duplicado, apenas um deles será apresentado aos utilizadores no portal da empresa.
+    - **Descrição**: introduza uma descrição para a aplicação. Esta descrição é apresentada aos utilizadores no portal da empresa.
+    - **Publicador**: introduza o nome do publicador da aplicação.
+    - **URL da Loja de Aplicações**: escreva o URL da Loja de Aplicações da aplicação que pretende criar.
+    - **Sistema operativo mínimo**: na lista, selecione a versão mínima do sistema operativo em que a aplicação pode ser instalada. Se atribuir a aplicação a um dispositivo com um sistema operativo anterior, não será instalada.
+    - **Tipo de dispositivo aplicável**: na lista, selecione os dispositivos utilizados pela aplicação.
     - **Categoria**: opcionalmente, selecione uma ou mais categorias de aplicações incorporadas ou uma categoria criada por si. Desta forma, permitirá que os utilizadores encontrem a aplicação mais facilmente quando procurarem no portal da empresa.
-    - **Apresentar como aplicação em destaque no Portal da Empresa**: selecione esta opção para apresentar a aplicação de forma bem visível na página principal do portal da empresa quando os utilizadores procurarem aplicações.
-    - **URL de informações**: Opcionalmente, introduza o URL de um site que contenha informações sobre esta aplicação. O URL é apresentado aos utilizadores no portal da empresa.
-    - **URL de privacidade**: Opcionalmente, introduza o URL de um site que contenha informações sobre a privacidade desta aplicação. O URL é apresentado aos utilizadores no portal da empresa.
+    - **Apresentar como aplicação em destaque no Portal da Empresa**: selecione esta opção para apresentar o conjunto de aplicações em destaque na página principal do portal da empresa quando os utilizadores procurarem aplicações.
+    - **URL de Informações**: opcionalmente, introduza o URL de um site que contenha informações sobre esta aplicação. O URL é apresentado aos utilizadores no portal da empresa.
+    - **URL de Privacidade**: opcionalmente, introduza um URL para um site que contenha informações sobre a privacidade desta aplicação. O URL é apresentado aos utilizadores no portal da empresa.
     - **Programador**: opcionalmente, introduza o nome do programador da aplicação. Este campo só é visível para administradores e não para os utilizadores.
     - **Proprietário**: opcionalmente, introduza o nome do proprietário desta aplicação (por exemplo, *Departamento de RH*). Este campo só é visível para administradores e não para os utilizadores.
     - **Notas**: opcionalmente, introduza quaisquer notas que queira associar a esta aplicação. Este campo só é visível para o administrador e não estará visível para os utilizadores finais.
@@ -71,6 +72,6 @@ Só pode atribuir aplicações com este método se forem gratuitas na App Store.
 
 A aplicação criada é apresentada na lista de aplicações, onde a pode atribuir aos grupos que selecionar.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 - [Atribuir aplicações a grupos](apps-deploy.md)

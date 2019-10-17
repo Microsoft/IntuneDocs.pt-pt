@@ -9,17 +9,18 @@ manager: dougeby
 ms.date: 06/27/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: cde4d389-1770-4226-85a3-a2f3b3fb92a3
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b1e881886a060646af700fa7affe4b65b5685087
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 563b117583f8b8c1f4da08d5d4e3399d5939bf97
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71732004"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72504366"
 ---
 # <a name="pradeo-mobile-threat-defense-connector-with-intune"></a>Conector da Defesa Contra Ameaças para Dispositivos Móveis do Pradeo com o Intune
 
@@ -95,7 +96,7 @@ Detete ameaças à sua rede, tal como ataques **Man-in-the-middle**, e impeça a
 
   - Para obter mais informações, consulte o [site do Pradeo](https://www.pradeo.com/en-US/mobile-threat-protection).
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 - [Integrar o Pradeo com o Intune](pradeo-mtd-connector-integration.md)
 

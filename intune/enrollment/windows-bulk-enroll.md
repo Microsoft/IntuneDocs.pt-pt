@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 5/21/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
@@ -16,12 +17,12 @@ ms.reviewer: spshumwa
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ed71676b434dfe30c7591ad3a3391d2252c3275d
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 60b38e80a8d477220c0a6cfd59b521ac815c5ae6
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71729648"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503065"
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Inscrição em massa para dispositivos Windows
 
@@ -94,5 +95,5 @@ O aprovisionamento destina-se a ser utilizado em dispositivos Windows novos. As 
 
 Os dispositivos inscritos em massa não podem utilizar certificados direcionados ao utilizador e a implementação por Wi-Fi. Terá de utilizar [certificados ao nível do dispositivo](../protect/certificates-configure.md) para gerir estas ligações. 
 
-### <a name="conditional-access"></a>Acesso Condicional
+### <a name="conditional-access"></a>Conditional Access
 O acesso condicional não está disponível para dispositivos Windows registrados usando o registro em massa.

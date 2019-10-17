@@ -1,5 +1,5 @@
 ---
-title: O que acontece se repuser o seu dispositivo Windows? | Microsoft Docs
+title: O que acontece se repuser o seu dispositivo Windows? | Documentos da Microsoft
 description: ''
 keywords: ''
 author: lenewsad
@@ -9,6 +9,7 @@ ms.date: 10/25/2016
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 1ee6e275-d1ec-4da3-bbef-d5da2c61a02a
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0390be417648a5fd4ea667b6aee26731448a460f
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: fb1a5e56a0c328a1338498bd0606bb33f06486fa
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61501073"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72505984"
 ---
 # <a name="what-happens-if-you-reset-your-windows-device-using-the-company-portal"></a>O que acontece se repuser o seu dispositivo Windows com o Portal da Empresa?
 
@@ -35,4 +36,4 @@ Ao utilizar a aplicação do Portal da Empresa ou o [site do Portal da Empresa](
 |O dispositivo pode aceder apenas ao e-mail da empresa|**Windows Phone 8.1**<br />O dispositivo deixará de aparecer no Portal da Empresa e a sua conta de e-mail da empresa e os e-mails não guardados serão eliminados.<br /><br />**Windows 7 ou Windows Vista**<br />Não pode repor um computador com o Windows 7 ou anterior que seja utilizado apenas para e-mails.<br /><br />**Windows 8.1 e Windows 8**<br />O dispositivo deixará de aparecer no Portal da Empresa e a sua conta de e-mail da empresa e os e-mails não guardados serão eliminados.|
 |PCs e portáteis|**Windows 8.1 e Windows 8**<br />Só pode repor um computador com o Windows 8 ou Windows 8.1 se este for utilizado apenas para e-mails.<br /><br />**Windows 7 ou Windows Vista**<br />Não pode repor um computador com o Windows 7 ou anterior.|
 
-Se tiver dúvidas, contacte o suporte da sua empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+Se tiver dúvidas, contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

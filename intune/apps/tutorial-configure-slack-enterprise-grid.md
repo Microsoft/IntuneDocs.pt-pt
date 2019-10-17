@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 09/09/2019
 ms.topic: tutorial
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 55db37c5-0da7-4d9c-8027-525afb1c6349
@@ -17,18 +18,18 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a210e45ddb181da4db1c1cff1e63a5d9b9ea2343
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 86e9d100847641064f472f0c3da0c9ec694f72dd
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71731020"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72496718"
 ---
-# <a name="tutorial-configure-slack-to-use-intune-for-emm-and-app-configuration"></a>Destina Configurar a margem de atraso para usar o Intune para EMM e a configuração do aplicativo
+# <a name="tutorial-configure-slack-to-use-intune-for-emm-and-app-configuration"></a>Tutorial: configurar a margem de atraso para usar o Intune para EMM e a configuração de aplicativo
 
 A margem de atraso é um aplicativo de colaboração que você pode usar com Microsoft Intune.   
 
-Neste tutorial, irá:
+Neste tutorial, você vai:
 > [!div class="checklist"]
 > - Defina o Intune como o provedor de gerenciamento de mobilidade empresarial (EMM) em sua grade empresarial de margem de atraso. Você poderá limitar o acesso aos espaços de trabalho do seu plano de grade para dispositivos gerenciados do Intune.
 > - Crie políticas de configuração de aplicativo para gerenciar a margem de atraso do aplicativo EMM no iOS e o aplicativo de margem de atraso para dispositivos de perfil de trabalho do Android.
@@ -54,7 +55,7 @@ Adicione a margem de atraso do aplicativo iOS para EMM ao seu locatário do Intu
 
 ### <a name="add-slack-for-emm-to-intune"></a>Adicionar margem de atraso para EMM no Intune
 Adicione a margem de atraso do EMM como um aplicativo iOS gerenciado no Intune e atribua seus usuários de margem de atraso. Os aplicativos são específicos da plataforma, portanto, você precisa adicionar um aplicativo do Intune separado para seus usuários de margem de atraso em dispositivos Android.
-1. No Intune,**selecione aplicativos** >  **cliente** > aplicativos**Adicionar**.
+1. No Intune, selecione **aplicativos cliente** > **aplicativos** > **Adicionar**.
 2. Em tipo de aplicativo, selecione **Store app-IOS**.
 3. Selecione **Procurar na App Store**. Insira o termo de pesquisa "margem de atraso para EMM" e selecione o aplicativo.
 4. Selecione **informações do aplicativo** e configure as alterações como desejar.
@@ -70,7 +71,7 @@ Adicione a margem de atraso do EMM como um aplicativo iOS gerenciado no Intune e
 
 ### <a name="add-an-app-configuration-policy-for-slack-for-emm"></a>Adicionar uma política de configuração de aplicativo para a margem de atraso do EMM
 Adicione uma política de configuração de aplicativo para a margem de atraso do EMM iOS. As políticas de configuração de aplicativo para dispositivos gerenciados são específicas da plataforma, portanto, você precisa adicionar uma política separada para seus usuários de margem de atraso em dispositivos Android.
-1. No Intune, selecione **aplicativos** > cliente**políticas** > de configuração de aplicativo**Adicionar**.
+1. No Intune, selecione **aplicativos cliente** > **políticas de configuração de aplicativo** > **Adicionar**.
 2. Em nome, digite margem de atraso configuração do aplicativo teste de política.
 3. Em tipo de registro do dispositivo, selecione **dispositivos gerenciados**.
 4. Em plataforma, selecione **Ios**.
@@ -106,7 +107,7 @@ Adicione a margem de atraso gerenciada Google Play aplicativo ao seu locatário 
 
 ### <a name="add-slack-to-intune"></a>Adicionar margem de atraso ao Intune
 Adicione a margem de atraso como um aplicativo gerenciado do Google Play no Intune e atribua seus usuários de margem de atraso. Os aplicativos são específicos da plataforma, portanto, você precisa adicionar um aplicativo do Intune separado para seus usuários de margem de atraso em dispositivos iOS.
-1. No Intune,**selecione aplicativos** >  **cliente** > aplicativos**Adicionar**.
+1. No Intune, selecione **aplicativos cliente** > **aplicativos** > **Adicionar**.
 2. Em tipo de aplicativo, selecione **armazenar aplicativo – Google Play gerenciado**.
 3. Selecione **Google Play gerenciado-aprovar**. Insira o termo de pesquisa "margem de atraso para EMM" e selecione o aplicativo.
 4. Selecione **aprovar**.
@@ -121,7 +122,7 @@ Adicione a margem de atraso como um aplicativo gerenciado do Google Play no Intu
 
 ### <a name="add-an-app-configuration-policy-for-slack"></a>Adicionar uma política de configuração de aplicativo para a margem de atraso
 Adicione uma política de configuração de aplicativo para a margem de atraso. As políticas de configuração de aplicativo para dispositivos gerenciados são específicas da plataforma, portanto, você precisa adicionar uma política separada para seus usuários de margem de atraso em dispositivos iOS.
-1. No Intune, selecione **aplicativos** > cliente**políticas** > de configuração de aplicativo**Adicionar**.
+1. No Intune, selecione **aplicativos cliente** > **políticas de configuração de aplicativo** > **Adicionar**.
 2. Em nome, digite margem de atraso configuração do aplicativo teste de política.
 3. Em tipo de registro do dispositivo, selecione **dispositivos gerenciados**.
 4. Em plataforma, selecione **Android**.
@@ -157,7 +158,7 @@ Crie uma política de conformidade de dispositivos do Intune para definir as con
 
 Com as políticas que você acabou de criar, todos os dispositivos de perfil de trabalho iOS ou Android que tentarem entrar em um de seus espaços de trabalho precisarão ser registrados no Intune. Para testar esse cenário, tente iniciar a margem de atraso para EMM em um dispositivo iOS registrado pelo Intune ou iniciar a margem de atraso em um dispositivo de perfil de trabalho do Android registrado no Intune. 
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Neste tutorial:
 - Você define o Intune como o provedor de gerenciamento de mobilidade empresarial (EMM) em sua grade empresarial de margem de atraso. 

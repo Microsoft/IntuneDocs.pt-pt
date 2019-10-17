@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 09/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: remote-actions
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d3c21e255db1142ec5ab15c99e8da6bc41de01cf
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 002989bd61167d6f0d20e2c5cb3fa80a4051a99c
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71732452"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508671"
 ---
 # <a name="send-custom-notifications-in-intune"></a>Enviar notificações personalizadas no Intune  
 
@@ -44,8 +45,8 @@ As mensagens de notificação personalizadas incluem um título curto e um corpo
 - O dispositivo deve ser registrado como MDM.
 
 **Permissões**:
-- Para enviar notificações aos grupos, sua conta deve ter a seguinte permissão de RBAC no Intune: > **Atualização**da organização.
-- Para enviar notificações para um dispositivo, sua conta deve ter a seguinte permissão de RBAC no Intune: *As tarefas* > remotas**enviam notificações personalizadas**.
+- Para enviar notificações aos grupos, sua conta deve ter a seguinte permissão de RBAC no Intune: *organização* > **atualização**.
+- Para enviar notificações para um dispositivo, sua conta deve ter a seguinte permissão de RBAC no Intune: *tarefas remotas* > **enviar notificações personalizadas**.
 
 **Criando notificações**:  
 - Para criar uma mensagem, use uma conta que seja atribuída a uma função do Intune que inclua a permissão **Atualizar** para a **organização**. Para atribuir permissões a um usuário, consulte [atribuições de função](../fundamentals/role-based-access-control.md#role-assignments)  
@@ -111,6 +112,6 @@ Em dispositivos iOS, se o aplicativo Portal da Empresa estiver aberto quando a n
 
 A notificação permanece até que o usuário a descarte.  
 
-## <a name="next-steps"></a>Passos seguintes  
+## <a name="next-steps"></a>Próximos passos  
 
 [Gerir dispositivos](device-management.md)

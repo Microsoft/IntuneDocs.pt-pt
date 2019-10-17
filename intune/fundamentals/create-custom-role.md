@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 03/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6b7e8f5077f2052a11c980ae3f5629af810a8a0b
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: b60e4d801d09a834e11119260d3054cf43251bbd
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71731572"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502968"
 ---
 # <a name="create-a-custom-role-in-intune"></a>Criar uma função personalizada no Intune
 
@@ -37,7 +38,7 @@ Para criar, editar ou atribuir funções, a sua conta tem de ter uma das seguint
 
 2. Selecione **Todos os serviços** no menu à esquerda e, em seguida, escreva **Intune** no filtro da caixa de texto.
 
-3. Escolha > **funções** > doIntunetodasasfunçõesadicionar. > 
+3. Escolha **Intune** > **funções** > **todas as funções** > **Adicionar**.
 
 4. No painel **Adicionar Função Personalizada**, introduza um nome e uma descrição para a nova função e, em seguida, clique em **Permissões**.
 
@@ -49,6 +50,6 @@ Para criar, editar ou atribuir funções, a sua conta tem de ter uma das seguint
 
 8. No painel **Adicionar Função Personalizada**, clique em **Criar**. A nova função é exibida na lista na folha **funções do Intune – todas as funções** .
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 - [Atribuir uma função a um usuário](assign-role.md)
 - [Saiba mais sobre o controle de acesso baseado em função no Intune](role-based-access-control.md)

@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 03/11/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
@@ -16,12 +17,12 @@ ms.reviewer: sumitp
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5c766f824f9a76ed4da3084ae81e2dde5656e673
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 0094cdd12b2594cb60260d768daec8c5bed04c9c
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71731800"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72510247"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>Utilizar o portal de resolução de problemas para ajudar os utilizadores na sua empresa
 
@@ -60,12 +61,12 @@ Pode utilizar o painel **Resolução de problemas** para analisar as informaçõ
 
 ![Painel de solução de problemas, com áreas numeradas descritas na tabela a seguir](./media/help-desk-operators/troubleshooting-dash.png)
 
-| Área | Name | Descrição |
+| Área | Nome | Description |
 | ---  | ---  | ---         |
 | 1.   | Estado da conta  | Mostra o estado do inquilino do Intune atual como **Ativo** ou **Inativo**.       |
 | 2.   | Seleção do utilizador  | O nome do utilizador atualmente selecionado. Clique em **Alterar utilizador** para selecionar um novo utilizador.       |
 | 3.   | Estado de utilizador  | Apresenta o estado da licença do Intune do utilizador, número de dispositivos, conformidade de cada dispositivo, número de aplicações e conformidade das aplicações.       |
-| 4.   | Informações do utilizador  | Utilize a lista para selecionar os detalhes a consultar no painel. <br>Pode selecionar: <ul><li>Aplicações do cliente<li>Políticas de conformidade<li> Políticas de configuração<li>Políticas de proteção de aplicações <li>Restrições de inscrição</ul>      |
+| 4.   | Informações do usuário  | Utilize a lista para selecionar os detalhes a consultar no painel. <br>Pode selecionar: <ul><li>Aplicações do cliente<li>Políticas de conformidade<li> Políticas de configuração<li>Políticas de proteção de aplicações <li>Restrições de inscrição</ul>      |
 | 5.   | Associação a grupos  | Mostra os grupos atuais dos quais o utilizador selecionado é membro.       |
 
 <!-- this section needs to be updated
@@ -247,18 +248,18 @@ An app protection policy is available to mobile apps that integrate with EMS tec
 
 A tabela Falhas de Inscrição lista as tentativas de inscrição que falharam. Um dispositivo listado na tabela abaixo pode ter sido inscrito posteriormente com êxito durante outra tentativa. É possível que algumas tentativas falhadas não sejam listadas. As informações de mitigação não estão disponíveis para todas as falhas.
 
-| Coluna de tabela | Descrição |
+| Coluna de tabela | Description |
 |-------------|----------|
 | Início da inscrição | A hora de início em que o utilizador começou a inscrição. |
-| OS | O sistema operativo do dispositivo. |
+| SO | O sistema operativo do dispositivo. |
 | Versão do SO | A versão do sistema operativo do dispositivo. |
-| Falha | O motivo da falha. |
+| Failure | O motivo da falha. |
 
 ### <a name="failure-details"></a>Detalhes da falha
 
 Ao selecionar uma linha de falha, são fornecidos mais detalhes.
 
-| Section | Descrição |
+| Section | Description |
 |-------------|----------|
 | Detalhes da falha | Uma explicação em maior detalhe sobre a falha. |
 | Potenciais remediações | Passos sugeridos para resolver o erro. Poderão não existir remediações para determinadas falhas. |
@@ -266,7 +267,7 @@ Ao selecionar uma linha de falha, são fornecidos mais detalhes.
 
 ### <a name="enrollment-errors"></a>Erros de inscrição
 
-| Erro | Detalhes |
+| Error | Details |
 |-------------|----------|
 | Tempo limite ou Falha de dispositivos iOS | Exceder do tempo limite entre o dispositivo e o Intune devido ao utilizador demorar demasiado tempo a concluir a inscrição. |
 | Utilizador não encontrado ou licenciado | O utilizador não possui uma licença ou foi removido do serviço. |
@@ -298,7 +299,7 @@ Utilize os seguintes recursos para ajudar a recolher dados de dispositivos ao re
 - [Enviar registos de dados de diagnóstico para o seu administrador de TI através de e-mail](/intune-user-help/send-logs-to-your-it-admin-by-email-android)
 - [Enviar erros de inscrição de dispositivos Android para o seu administrador de TI](/intune-user-help/send-enrollment-errors-to-your-it-administrator-android)
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Pode saber mais sobre o Controlo de administração baseada em funções (RBAC) para definir funções no seu dispositivo organizacional, gestão de aplicações móveis e tarefas de proteção de dados. Para obter mais informações, veja [Controlo de administração baseada em funções (RBAC) com o Intune](/intune/role-based-access-control).
 

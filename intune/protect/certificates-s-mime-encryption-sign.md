@@ -8,18 +8,19 @@ manager: dougeby
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 27c0c9e4aac737c53358354d973fc41ef121f8ad
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 7b16953b3402bf8aa48f0a01e5e11d9f90d56f2d
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71729848"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502499"
 ---
 # <a name="smime-overview-to-sign-and-encrypt-email-in-intune"></a>Visão geral de S/MIME para assinar e criptografar email no Intune
 
@@ -43,13 +44,13 @@ Os certificados utilizados para assinatura permitem à aplicação de e-mail de 
 
 Para usar certificados de assinatura, crie um modelo na sua autoridade de certificação (CA) que se concentre na assinatura. Relativamente à Autoridade de Certificação do Microsoft Active Directory, o artigo [Configure the server certificate template](https://docs.microsoft.com/windows-server/networking/core-network-guide/cncg/server-certs/configure-the-server-certificate-template) (Configurar o modelo de certificado de servidor) inclui os passos para criar modelos de certificados.
 
-Os certificados de assinatura no Intune utilizam certificados PKCS. O artigo [Configurar e utilizar certificados PKCS](certficates-pfx-configure.md) descreve como implementar e utilizar certificados PKCS no seu ambiente do Intune. Estes passos incluem:
+Os certificados de assinatura no Intune utilizam certificados PKCS. O artigo [Configurar e utilizar certificados PKCS](certficates-pfx-configure.md) descreve como implementar e utilizar certificados PKCS no seu ambiente do Intune. Essas etapas incluem:
 
 - Transferir e instalar o Microsoft Intune Certificate Connector para suportar pedidos de certificados PKCS.
 - Criar um perfil de certificado de raiz fidedigna para os seus dispositivos. Este passo inclui utilizar certificados de raiz fidedigna e intermédios para a sua autoridade de certificação e, em seguida, implementar o perfil nos dispositivos.
 - Criar um perfil de certificado PKCS através de um modelo de certificado que criou. Este perfil emite certificados de assinatura para os dispositivos e implementa o perfil de certificado PKCS nos dispositivos.
 
-Também pode importar um certificado de assinatura para um utilizador específico. O certificado de autenticação é implantado em qualquer dispositivo registrado pelo usuário. Para importar certificados para o Intune, utilize os [cmdlets no PowerShell no GitHub](https://github.com/Microsoft/Intune-Resource-Access). Para implementar um certificado PKCS importado no Intune para ser utilizado para assinatura de e-mail, siga os passos em [Configurar e utilizar certificados PKCS com o Intune](certficates-pfx-configure.md). Estes passos incluem:
+Também pode importar um certificado de assinatura para um utilizador específico. O certificado de autenticação é implantado em qualquer dispositivo registrado pelo usuário. Para importar certificados para o Intune, utilize os [cmdlets no PowerShell no GitHub](https://github.com/Microsoft/Intune-Resource-Access). Para implementar um certificado PKCS importado no Intune para ser utilizado para assinatura de e-mail, siga os passos em [Configurar e utilizar certificados PKCS com o Intune](certficates-pfx-configure.md). Essas etapas incluem:
 
 - Transferir e instalar o PFX Certificate Connector for Microsoft Intune. Este conector entrega certificados PKCS importados nos dispositivos.
 - Importar certificados de assinatura de e-mail com S/MIME para o Intune.
@@ -65,7 +66,7 @@ Recomenda-se que os certificados de encriptação de e-mail não sejam criados n
 
 Para implementar certificados S/MIME com o Intune, tem de importar todos os certificados de encriptação de um utilizador para o Intune. Em seguida, o Intune implanta todos esses certificados em cada dispositivo registrado por um usuário. Para importar certificados para o Intune, utilize os [cmdlets no PowerShell no GitHub](https://github.com/Microsoft/Intune-Resource-Access).
 
-Para implementar um certificado PKCS importado no Intune para ser utilizado para encriptação de e-mails, siga os passos em [Configurar e utilizar certificados PKCS com o Intune](certficates-pfx-configure.md). Estes passos incluem:
+Para implementar um certificado PKCS importado no Intune para ser utilizado para encriptação de e-mails, siga os passos em [Configurar e utilizar certificados PKCS com o Intune](certficates-pfx-configure.md). Essas etapas incluem:
 
 - Transferir e instalar o PFX Certificate Connector for Microsoft Intune. Este conector entrega certificados PKCS importados nos dispositivos.
 - Importar certificados de encriptação de e-mails com S/MIME para o Intune.
@@ -78,7 +79,7 @@ Para implementar um certificado PKCS importado no Intune para ser utilizado para
 
 Após ter criado os perfis de certificado de encriptação e assinatura S/MIME, pode [ativar o S/MIME para o correio nativo de iOS](../configuration/email-settings-ios.md).
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 - [Usar SCEP para certificados](certificates-scep-configure.md)
 - [Usar certificados PKCS](certficates-pfx-configure.md)

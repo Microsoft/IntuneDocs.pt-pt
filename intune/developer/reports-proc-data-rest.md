@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/15/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: developer
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: D6D15039-4036-446C-A58F-A5E18175720A
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 301e453baa15ce71e411ebc143d9201f4cb67aee
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: bbe8cd6179875cc2bd985eb467ea173e9c914e2c
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71730212"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72490386"
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>Obter dados a partir da API do Armazém de Dados do Intune com um cliente REST
 
@@ -68,7 +69,7 @@ Agora tem uma aplicação definida no Azure. Conceda acesso à API do Microsoft 
     ![Ativar o acesso – API do Microsoft Intune](./media/reports-proc-data-rest/reports-get_rest_data_client_access.png)
 
 9. Selecione **Selecionar**.
-10. Selecione **Done** (Concluído).
+10. Selecione **Concluído**.
 11. Opcionalmente, selecione **Conceder Permissões** no painel Permissões obrigatórias. Esta ação irá conceder acesso a todas as contas no diretório atual. Esta ação irá impedir a apresentação da caixa de diálogo de consentimento para cada utilizador no inquilino. Para obter mais informações, veja [Integrating applications with Azure Active Directory (Integrar aplicações com o Azure Active Directory)](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications).
 12. Selecione **Sim**.
 
@@ -80,7 +81,7 @@ Pode trabalhar com a API do Armazém de Dados do Intune com um cliente REST gen�
 
 Precisa das seguintes informações para efetuar uma chamada REST através do Postman:
 
-| Atributo        | Descrição                                                                                                                                                                          | Exemplo                                                                                       |
+| Atributo        | Description                                                                                                                                                                          | Exemplo                                                                                       |
 |------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
 | URL de chamada de retorno     | Defina este como o URL de chamada de retorno na sua página de definições da aplicação.                                                                                                                              | https://www.getpostman.com/oauth2/callback                                                    |
 | Nome do Token       | Uma cadeia utilizada para transferir as credenciais para a aplicação Azure. O processo gera o seu token para poder efetuar uma chamada para a API do Armazém de Dados.                          | Portador                                                                                        |
@@ -226,7 +227,7 @@ O seguinte exemplo inclui um cliente REST simples. O código utiliza a classe **
 
 11. Reveja o resultado da consola. O resultado inclui dados num formato JSON retirados da entidade **Datas** no seu inquilino do Intune.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Pode encontrar detalhes sobre a autorização, a estrutura do URL da API e os pontos finais OData em [Use the Intune Data Warehouse API (Utilizar a API do Armazém de Dados do Intune)](../reports-api-url.md).
 

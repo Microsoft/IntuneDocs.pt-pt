@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 01/02/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 4b3c9af9-78da-44d2-8bd2-3f0f8885952d
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c852d89a12e2f06b2286699bc262a8e2f5b3d203
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 96ebae46fd4935c3070319f16d35d5b53888e94c
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71732156"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72505171"
 ---
 # <a name="identify-mobile-device-management-use-case-scenarios"></a>Identificar cenários de casos de utilização da gestão de dispositivos móveis
 
@@ -80,7 +81,7 @@ O próximo passo consiste em identificar as plataformas de dispositivos móveis 
 
 Por exemplo, o seu cenário de casos de utilização empresarial poderá suportar plataformas de dispositivos Samsung Knox Android e iOS. A política de BYOD poderá incluir suporte para plataformas de dispositivos móveis adicionais como Android (não Samsung Knox) e Windows 10 Mobile. Com base nos exemplos anteriores, associámos plataformas de dispositivos móveis a cada cenário de casos de utilização.
 
-| **Casos de utilização** | **Casos de subutilização** | **Grupos** | **Plataformas de dispositivos** |   
+| **Casos de utilização** | **Casos de subutilização** | **GRUPOS** | **Plataformas de dispositivos** |   
 |:---:|:---:|:---:|:---:|
 | Empresarial | Técnico de informação | RH, Finanças | iOS |                                                           
 | Empresarial | Executivos | RH, Finanças | iOS |                                                           
@@ -88,6 +89,6 @@ Por exemplo, o seu cenário de casos de utilização empresarial poderá suporta
 | BYOD | Técnico de informação | Marketing, Vendas | iOS |                                                           
 | BYOD | Executivos | Marketing, Vendas | iOS |
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 A secção seguinte fornece orientações sobre como [identificar os requisitos do Intune para cada cenário de caso de utilização](../planning-guide-requirements.md).

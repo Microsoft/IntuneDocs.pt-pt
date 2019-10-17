@@ -7,8 +7,8 @@ ms.author: lanewsad
 manager: dougeby
 ms.date: 10/05/2018
 ms.topic: article
-ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: ''
 searchScope:
@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1b4c1575c72e0563c4c55e262756c9b4aa0eddde
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 49075fd750ade6aaa412d551f4177822b52ce7f2
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61499407"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72490097"
 ---
 # <a name="check-access-from-company-portal-app-for-windows"></a>Verificar o acesso a partir da aplicação Portal da Empresa para Windows
 

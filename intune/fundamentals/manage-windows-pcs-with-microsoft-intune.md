@@ -8,24 +8,24 @@ manager: dougeby
 ms.date: 10/15/2019
 ms.topic: archived
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: medium
-ms.technology: ''
 ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 89382f70b0a982c4acc406ff373b02013f75cf7b
-ms.sourcegitcommit: b8127c7a62d9ac4d0f768980fa1424567bb58733
+ms.openlocfilehash: fb9fb439bd0bc59ae2c69ec966587d58c8c97bf4
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72350069"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72510098"
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Gerir PCs Windows como computadores através do cliente de software do Intune
 
-[!INCLUDE [classic-portal](../../intune-classic/includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 > [!WARNING]
 > A Microsoft anunciou que [o suporte do Windows 7 termina a 14 de Janeiro de 2020](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020). Nesta data, o Intune também retira o suporte para dispositivos com o Windows 7. A Microsoft recomenda vivamente que passe para o Windows 10 para evitar interrupções de serviço ou suporte.

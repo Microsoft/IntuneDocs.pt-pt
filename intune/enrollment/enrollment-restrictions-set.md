@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/17/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3f041c76b4d9b3814a020d51ad4cbb8e33df6c27
-ms.sourcegitcommit: 60ed93682a21860e9d99ba1592ede120477f2b4d
+ms.openlocfilehash: 83a0533ee7767035ea26fa971a6dbe73470f1717
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 10/16/2019
-ms.locfileid: "72379802"
+ms.locfileid: "72503197"
 ---
 # <a name="set-enrollment-restrictions"></a>Definir restrições de inscrição
 

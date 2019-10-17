@@ -1,14 +1,14 @@
 ---
-title: Obtenha ajuda e suporte no Portal da empresa para Windows 10 | Documentos da Microsoft
-description: Enviar registos, contacte o suporte técnico e ler FAQs na página de ajuda do Portal de empresa e de suporte.
+title: Obtenha ajuda e suporte no Portal da Empresa para Windows 10 | Microsoft Docs
+description: Envie logs, contate a assistência técnica e leia as perguntas frequentes na página de suporte do Portal da Empresa Help &.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
 ms.date: 01/09/2019
 ms.topic: article
-ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: bd428c14-7d75-42de-9322-b57323a01f06
 searchScope:
@@ -18,44 +18,44 @@ ms.reviewer: scottduf
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b2544ddf5d925d7dc62438a9fcc8c5e4e6b60828
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 5eb532f830d20d9e4ff6c323fd3b7788bd3a11b2
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61498495"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72505883"
 ---
-# <a name="get-help-and-support-in-company-portal-for-windows-10"></a>Obtenha ajuda e suporte no Portal da empresa para Windows 10
+# <a name="get-help-and-support-in-company-portal-for-windows-10"></a>Obtenha ajuda e suporte no Portal da Empresa para Windows 10
 
-Visite o Portal da empresa **ajuda e suporte** página para iniciar a resolução de problemas de acesso e aplicação.   
+Visite a página de suporte do Portal da Empresa **Help &** para iniciar a solução de problemas de aplicativo e acesso.   
 
-Partir **ajuda e suporte** , pode:  
+Em **ajuda & suporte** , você pode:  
 
-* Obtenha ajuda com problemas de aplicações
-* Ver detalhes de contactos de suporte técnico
-* Encontre respostas para suas perguntas mais frequentes (FAQ) 
-* Problemas de relatório de aplicações para a Microsoft
+* Obter ajuda com problemas de aplicativo
+* Exibir detalhes de contato do helpdesk
+* Encontre respostas para suas perguntas frequentes (FAQs) 
+* Relatar problemas de aplicativo à Microsoft
 
-![Captura de ecrã de exemplo da aplicação Portal da empresa para Windows 10, ajuda e suporte de página, realce cada título de secção.](./media/1812_UCP_Help_Support_sections.png)  
+![Captura de tela de exemplo do aplicativo Portal da Empresa para Windows 10, ajuda & página de suporte, realçando cada título de seção.](./media/1812_UCP_Help_Support_sections.png)  
 
-## <a name="get-help-with-app-problems"></a>Obtenha ajuda com problemas de aplicações
+## <a name="get-help-with-app-problems"></a>Obter ajuda com problemas de aplicativo
 
-E-mail a sua organização sobre eventuais problemas de que experiência no Portal da empresa. Selecione **obter ajuda** começar descrevendo o problema. Sua organização irá utilizar as informações que fornecer para resolver o problema. Se necessitar de mais ajuda para determinar o problema, a sua organização irá utilizar o ID de diagnóstico&ndash;automaticamente incluído no e-mail&ndash;para entrar em contacto com a equipa de suporte da Microsoft.  
+Envie por email sua organização sobre quaisquer problemas que você tiver em Portal da Empresa. Selecione **obter ajuda** para começar a descrever o problema. Sua organização usará as informações que você fornecer para solucionar o problema. Se mais ajuda for necessária para determinar o problema, sua organização usará a ID de diagnóstico @ no__t-0automatically incluída no email @ no__t-1to entrará em contato com a equipe de suporte da Microsoft.  
 
-Para o procedimento passo a passo, consulte [envie registos para a sua empresa oferecer suporte a partir da aplicação Portal da empresa para Windows 10](send-logs-to-your-it-admin-cp-windows.md).  
+Para obter o procedimento passo a passo, consulte [enviar logs para o suporte de sua empresa no aplicativo portal da empresa para Windows 10](send-logs-to-your-it-admin-cp-windows.md).  
 
-## <a name="view-helpdesk-contact-details"></a>Ver detalhes de contactos de suporte técnico  
-Utilize detalhes de suporte técnico da sua organização, como o número de telefone, mensagens de correio eletrónico e Web site para resolver rapidamente problemas de acesso escolar ou profissional.  
+## <a name="view-helpdesk-contact-details"></a>Exibir detalhes de contato do helpdesk  
+Use os detalhes da assistência técnica da sua organização, como número de telefone, emails e site para solucionar rapidamente o acesso corporativo ou de estudante.  
 
-## <a name="find-answers-to-frequently-asked-questions"></a>Encontre respostas para perguntas mais frequentes  
-Nós reunimos uma lista de perguntas frequentes para ajudar a resposta ou resolver problemas de suas preocupações de inscrição e o acesso. Selecione qualquer tópico para ver o seu artigo de ajuda no Microsoft.docs.com.  
+## <a name="find-answers-to-frequently-asked-questions"></a>Encontre respostas para perguntas frequentes  
+Reunimos uma lista de perguntas frequentes para ajudar a responder ou solucionar problemas de registro e de acesso. Selecione qualquer tópico para exibir seu artigo de ajuda em Microsoft.docs.com.  
 
-## <a name="report-app-problems-to-microsoft"></a>Problemas de relatório de aplicações para a Microsoft  
-Quando seleciona **problema de relatório para a Microsoft**, vamos para o **enviar comentários** página. A partir daí, pode:
+## <a name="report-app-problems-to-microsoft"></a>Relatar problemas de aplicativo à Microsoft  
+Ao selecionar **problema de relatório para a Microsoft**, você vai para a página **enviar comentários** . A partir daí, você pode:
 
-* Comunicar um problema ou bug que vê na aplicação  
-* Enviar uma sugestão ou a ideia de que ter para a aplicação  
-* Deixar uma revisão da aplicação na Microsoft Store   
+* Relatar um problema ou bug que você vê no aplicativo  
+* Enviar uma sugestão ou ideia de que você tem para o aplicativo  
+* Deixe uma revisão para o aplicativo no Microsoft Store   
 
 
 Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

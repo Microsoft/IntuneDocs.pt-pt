@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 01/02/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: fd8cb5f7-19f0-4d80-8825-2bafa49624af
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 703509c316a22995d26223f6c386de0a2ec66c31
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 7c72cf963822284702f6b924ca506f8ec1157e91
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71732176"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72505133"
 ---
 # <a name="determine-use-case-scenario-requirements"></a>Determinar os requisitos de cenários de casos de utilização
 
@@ -34,7 +35,7 @@ Também poderá ter grupos organizacionais para o cenário de caso de utilizaç�
 
 Veja alguns exemplos de requisitos de casos de utilização de uma organização que apresentam diferentes conjuntos de requisitos para cada cenário de casos de utilização e casos de subutilização, grupo organizacional e plataforma de dispositivo móvel. Também pode utilizar a tabela seguinte para introduzir os requisitos de caso de utilização da sua organização:
 
-| **Casos de utilização** | **Casos de subutilização** | **Grupos** | **Plataformas de dispositivos** | **Requisitos** |
+| **Casos de utilização** | **Casos de subutilização** | **GRUPOS** | **Plataformas de dispositivos** | **Requirements** |
 |:---:|:---:|:---:|:---:|:---:|
 | Empresarial | Técnico de informação | RH, Finanças | iOS | E-mail seguro, definições do dispositivo, perfis, aplicações |                                                          
 | Empresarial | Executivos | RH, Finanças | iOS | E-mail seguro, definições do dispositivo, perfis, aplicações |                                                         
@@ -66,6 +67,6 @@ Veja mais alguns exemplos que podem ser utilizados na coluna “Requisitos”:
   - Office 365 com políticas de proteção de aplicações
   - Linha de negócio (LOB) com políticas de proteção de aplicações
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 A secção seguinte fornece orientações relativas a [como pode desenvolver um plano de implementação do Intune](planning-guide-rollout-plan.md).

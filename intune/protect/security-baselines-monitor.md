@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 06/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -15,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b16b4ee95647b3bb182af075bbe7f7aad71351f0
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 1be2ba947a5b92b6982e8c868e935460c4eaa5bb
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71731948"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508940"
 ---
 # <a name="monitor-security-baseline-and-profiles-in-microsoft-intune"></a>Monitorar a linha de base e os perfis de segurança no Microsoft Intune  
 
@@ -52,7 +53,7 @@ O painel Visão geral exibe um resumo baseado em gráfico de quantos dispositivo
 
 ![Verificar o status dos dispositivos](./media/security-baselines-monitor/overview.png)
 
-Quando um dispositivo tem status diferente de diferentes categorias na linha de base, o dispositivo é representado por um único status. O status que representa o dispositivo é obtido da seguinte ordem de precedência: **Configurado incorretamente**, não **corresponde à linha de base**, **não aplicável**, **corresponde à linha de base**.  
+Quando um dispositivo tem status diferente de diferentes categorias na linha de base, o dispositivo é representado por um único status. O status que representa o dispositivo é obtido da seguinte ordem de precedência: **configurado incorretamente**, não **corresponde à linha de base**, **não aplicável**, **corresponde à linha de base**.  
 
 Por exemplo, se um dispositivo tiver uma configuração classificada como *configurada incorretamente* e uma ou mais configurações classificadas como não *corresponderem à linha de base*, o dispositivo será classificado como *configurado incorretamente*.  
 
@@ -125,6 +126,6 @@ Em dispositivos Windows 10, há um relatório interno de informações de diagn�
 > - Algumas configurações também listam o GUID. Você pode pesquisar esse GUID no registro local (regedit) para qualquer valor definido.
 > - Os logs de Visualizador de Eventos também podem incluir algumas informações de erro sobre a configuração problemática (**Visualizar eventos** > **logs de aplicativos e serviços** > **Microsoft** > **Windows** >  **DeviceManagement-Enterprise-Diagnostics-Provider** > **admin**).
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 [Monitore perfis de dispositivo](../configuration/device-profile-monitor.md) e [Veja alguns problemas comuns e resoluções](../configuration/device-profile-troubleshoot.md).

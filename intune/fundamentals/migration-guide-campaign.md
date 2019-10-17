@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 01/02/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f781b029-50f2-46ee-8ff7-03b4a6719e80
@@ -16,14 +17,14 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 35c0c6e6b65350d3b27c9dc1d9ab55d375dac070
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 490f2c538a9fd5c10f9812679c9f72fd78fefed5
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71732324"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72505363"
 ---
-# <a name="phase-2-migration-campaign"></a>Fase 2: Campanha de migração
+# <a name="phase-2-migration-campaign"></a>Fase 2: campanha de migração
 
 Selecione uma abordagem de migração mais adequada às necessidades da sua organização e ajuste as táticas de implementação com base nos seus requisitos específicos. O resto deste guia proporciona as ferramentas de que precisa para alcançar o objetivo de inscrever os dispositivos dos seus utilizadores no Intune.
 
@@ -68,6 +69,6 @@ Quando estiver satisfeito com a primeira fase de migrações, repita o [ciclo de
 > [!IMPORTANT]
 > Não configure o Intune e a sua solução de MDM de terceiros existente para aplicar controlos de acesso a recursos, tais como o Exchange ou o SharePoint Online. Além disso, só deve inscrever os dispositivos numa solução de cada vez.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Crie o seu [plano de comunicação](migration-guide-communication-plan.md).

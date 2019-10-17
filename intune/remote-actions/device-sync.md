@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 06/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: remote-actions
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 02ad249e-f098-421f-861f-6b2ff733ac7c
@@ -15,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 173d3e4729b3d620167180fb17fcee6c618604eb
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 86dc2e26e3c4091785cb6462a84e75b770634881
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71732576"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508546"
 ---
 # <a name="sync-devices-to-get-the-latest-policies-and-actions-with-intune"></a>Sincronizar dispositivos para obter as políticas e ações mais recentes com o Intune
 
@@ -54,7 +55,7 @@ Quando um administrador executa a ação de dispositivo **Sincronizar**, as apli
 | Código de erro  | Descrição sugerida | Repetível |
 |---|---|---|
 | 2016330898 | Ocorreu um erro desconhecido. | Não |
-| 2016330897 | A sua ligação ao Intune excedeu o limite de tempo. Reinicie a sua ligação. | Sim |
+| 2016330897 | Sua conexão com o Intune atingiu o tempo limite. Redefina a conexão. | Sim |
 | 2016330896 | Perdeu a ligação à Internet. Reinicie a sua ligação. | Sim |
 | 2016330895 | Perdeu a ligação à Internet. Reinicie a sua ligação. | Sim |
 | 2016330894 | Perdeu a ligação à Internet. Reinicie a sua ligação. | Sim |
@@ -65,7 +66,7 @@ Quando um administrador executa a ação de dispositivo **Sincronizar**, as apli
 | 2016330889 | A ligação segura falhou. Reinicie a sua ligação. | Sim|
 | 2016330888 | A avaliação da fidedignidade do servidor falhou. | Não|
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Pode [verificar os detalhes](device-inventory.md) do dispositivo.
  

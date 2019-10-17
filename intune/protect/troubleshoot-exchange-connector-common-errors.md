@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 10/02/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aa4dbfb7c13d767df41655b391767fc7aa13d914
-ms.sourcegitcommit: f04e21ec459998922ba9c7091ab5f8efafd8a01c
+ms.openlocfilehash: b30a7e843850d6918abc2e76f84397a1f197516f
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71817541"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508853"
 ---
 # <a name="resolve-common-errors-for-the-intune-exchange-connector"></a>Resolver erros comuns para o Intune Exchange Connector
 
@@ -86,7 +87,7 @@ Esse erro pode ocorrer se um servidor proxy for usado para se conectar à Intern
 
 
 
-## <a name="event-7000-or-7041-microsoft-intune-exchange-connector-service-wont-start"></a>Evento 7000 ou 7041: Microsoft Intune Exchange Connector serviço não iniciar
+## <a name="event-7000-or-7041-microsoft-intune-exchange-connector-service-wont-start"></a>Evento 7000 ou 7041: Microsoft Intune Exchange Connector serviço não será iniciado
 
 **Problema**:  
 Um dispositivo iOS falha ao registrar no Intune e gera uma das seguintes mensagens de erro:  
@@ -137,7 +138,7 @@ Para atribuir o direito de usuário **fazer logon como um serviço** à conta de
 
 Se o direito de usuário **fazer logon como um serviço** foi atribuído a **WIEC_User** , mas foi removido posteriormente, contate o administrador de domínio para determinar se uma configuração de política de grupo está substituindo-a.  
 
-## <a name="next-steps"></a>Passos seguintes  
+## <a name="next-steps"></a>Próximos passos  
 
 O artigo a seguir pode ajudar a resolver erros específicos:
 - [Resolver problemas comuns do Intune Exchange Connector](troubleshoot-exchange-connector-common-problems.md). git 

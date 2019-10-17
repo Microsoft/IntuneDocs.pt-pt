@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 07/05/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: remote-actions
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -15,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 35fae5ea1b3294772db4f4db51179892e08ed5d1
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 9fbf555f204e54a65e11c4b14f0a461213b61746
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71732604"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72509376"
 ---
 # <a name="rename-a-device-in-intune"></a>Renomear um dispositivo no Intune
 
@@ -46,6 +47,6 @@ No momento, esse recurso não dá suporte à renomeação de dispositivos Window
 
 
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Para ver o status da ação **renomear** dispositivo, verifique a página **visão geral** do dispositivo.

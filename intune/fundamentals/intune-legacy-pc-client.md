@@ -1,5 +1,5 @@
 ---
-title: Cliente de PC do Intune legado e o Intune no Azure
+title: Cliente de PC do Intune herdado e Intune no Azure
 description: Considerações sobre quando utilizar o Intune no Azure para gerir os dispositivos Windows da sua organização.
 keywords: ''
 author: ErikjeMS
@@ -8,24 +8,24 @@ manager: dougeby
 ms.date: 06/15/2018
 ms.topic: archived
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: medium
-ms.technology: ''
-ms.assetid: ''
+ms.assetid: 1f104923-12df-453c-9c20-942ef65a0945
 ms.reviewer: owenyen
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fe6b5967a5980304ba2f6c9af75491463dae1b4b
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 5ab1be3d34d52e824d1ff06124e28206fb7b07a1
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71732052"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72510186"
 ---
-# <a name="intune-on-azure-console-and-legacy-intune-pc-client"></a>Intune na consola do Azure e o cliente de PC do Intune legado
+# <a name="intune-on-azure-console-and-legacy-intune-pc-client"></a>Intune no console do Azure e cliente de PC herdado do Intune
 
-O Intune utiliza uma arquitetura de serviço de aplicações SaaS baseadas no Azure. O Azure oferece melhorias significativas ao nível da escala, capacidade e desempenho. Isso oferece ocorre com o administrador do Intune melhoradas e otimizadas para fluxos de trabalho no portal do Azure. 
+O Intune usa uma arquitetura de serviço de aplicativo SaaS baseada no Azure. O Azure oferece melhorias significativas ao nível da escala, capacidade e desempenho. Isso oferece experiências de administração do Intune aprimoradas e fluxos de trabalho otimizados no portal do Azure. 
 
 Quando utilizar o Intune no Azure para gerir os dispositivos Windows da sua organização, tenha em consideração os seguintes aspetos:
 
@@ -34,6 +34,8 @@ Quando utilizar o Intune no Azure para gerir os dispositivos Windows da sua orga
 Recomendamos que utilize a [Gestão de Dispositivos Móveis (MDM) para gerir os dispositivos Windows 10](../configuration/device-restrictions-windows-10.md), em vez de utilizar o cliente de PC do Intune legado. A capacidade para gerir o Windows 10 com a MDM está disponível no Intune no portal do Azure. A MDM do Windows 10 proporciona muitas capacidades de segurança e gestão novas que não estão disponíveis através do cliente de PC do Intune legado.
 
 ## <a name="legacy-pc-client-features-are-only-available-in-the-silverlight-console"></a>As funcionalidades do Cliente de PC legadas só estão disponíveis na consola do Silverlight
+
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Os fluxos de trabalho de gestão do Cliente de PC do Intune utilizam a [Consola de Administração do Intune baseada no Silverlight](https://manage.microsoft.com/), que tem as seguintes consequências:
 
@@ -61,8 +63,8 @@ Para ver uma comparação detalhada entre as capacidades da MDM e do Cliente de 
 Para mudar da gestão de dispositivos Windows 10 com o Cliente de PC do Intune para a gestão com a MDM, siga estes passos:
 
 1. Na consola do Silverlight, execute uma **Eliminação seletiva** para anular a inscrição do dispositivo do Cliente de PC.
-  ![Aviso popup com o botão de opção ' Apagar seletivamente o dispositivo ' selecionado](./media/intune-legacy-pc-client/image02.png)
+  pop-up ![Warning com o botão de opção ' Apagar seletivamente o dispositivo ' selecionado @ no__t-1
 2. Volte a inscrever o dispositivo através da [MDM (e/ou Associação Azure AD)](../enrollment/windows-enroll.md).
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Próximos passos
 [Inscrever dispositivos Windows](../enrollment/windows-enroll.md)

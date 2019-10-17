@@ -9,18 +9,19 @@ manager: dougeby
 ms.date: 3/6/2018
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bd48b6f75d68f8078eaa01508f01d13e8490da2a
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 12267ce4e29fe2d53d01aa8115cafbf2196d50ed
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71730440"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72490852"
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-windows-81"></a>Configurar definições de VPN no Microsoft Intune para dispositivos com o Windows 8.1
 
@@ -34,7 +35,7 @@ Consoante as definições que escolher, nem todos os valores na lista seguinte s
 
 
 - **Aplicar todas as definições apenas ao Windows 8.1** – Esta é uma definição que pode configurar no portal clássico do Intune. No portal do Azure, esta definição não pode ser alterada. Se esta definição estiver definida como **Configurada**, as definições só são aplicadas a dispositivos com o Windows 8.1. Se estiver definida como **Não configurada**, estas definições também são aplicadas a dispositivos com o Windows 10.
-- **Nome da ligação** – Introduza um nome para esta ligação. Os utilizadores verão este nome quando procurarem a lista de ligações VPN disponíveis no dispositivo.
+- **Nome da ligação** – introduza um nome para esta ligação. Os utilizadores verão este nome quando procurarem a lista de ligações VPN disponíveis no dispositivo.
 - **Servidores** – adicione um ou mais servidores VPN aos quais os dispositivos são ligados.
   - **Adicionar** – abre o painel **Adicionar Linha**, onde pode especificar as seguintes informações:
     - **Descrição** – Especifique um nome descritivo para o servidor, como **Servidor VPN Contoso**.

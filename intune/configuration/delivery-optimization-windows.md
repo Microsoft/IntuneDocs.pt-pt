@@ -8,18 +8,19 @@ manager: dougeby
 ms.date: 03/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: kerimh
-ms.openlocfilehash: 4357a3235386d9fd17c1df23004e9bc8ddeb28ca
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 7d94a2c7e47b3cfcc9f4592faf0a4c2a09a24ac4
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71730848"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72495240"
 ---
 # <a name="delivery-optimization-settings-in-microsoft-intune"></a>Configurações de otimização de entrega no Microsoft Intune
 
@@ -43,13 +44,13 @@ Para saber mais sobre a otimização de entrega no Windows 10, consulte [atualiz
 3. Introduza as seguintes propriedades:
 
     - **Nome**: introduza um nome descritivo para o novo perfil.
-    - **Descrição**: introduza uma descrição para o perfil. Esta definição é opcional, mas recomendada.
-    - **Plataforma**: Selecione a plataforma:  
+    - **Descrição:** introduza uma descrição para o perfil. Esta definição é opcional, mas recomendada.
+    - **Plataforma**: selecione a plataforma:  
 
         - **Windows 10 e posterior**
 
-    - **Tipo de perfil**: Selecione **otimização de entrega**.
-    - **Definições**: Defina as configurações que definem como você deseja que as atualizações e os aplicativos sejam baixados. Para obter informações sobre as configurações disponíveis, consulte [configurações de otimização de entrega para o Intune](../delivery-optimization-settings.md).
+    - **Tipo de perfil**: selecione **otimização de entrega**.
+    - **Configurações**: defina as configurações que definem como você deseja que as atualizações e os aplicativos sejam baixados. Para obter informações sobre as configurações disponíveis, consulte [configurações de otimização de entrega para o Intune](../delivery-optimization-settings.md).
 
 4. Quando terminar, selecione **OK** > **Criar** para guardar as alterações.
 
@@ -65,10 +66,10 @@ Configurações de **otimização de entrega** substituir **atualizações de so
     2. Introduza as seguintes propriedades:
 
         - **Nome**: introduza um nome descritivo para o novo perfil.
-        - **Descrição**: introduza uma descrição para o perfil. Esta definição é opcional, mas recomendada.
-        - **Plataforma**: Selecione **Windows 10 e posterior**.
-        - **Tipo de perfil**: Selecione **otimização de entrega**.
-        - **Definições**: Para o **modo de download da otimização de entrega**, escolha o mesmo modo usado pelo anel de atualização de software existente, a menos que você queira alterar as configurações aplicadas aos seus dispositivos. As opções são:
+        - **Descrição:** introduza uma descrição para o perfil. Esta definição é opcional, mas recomendada.
+        - **Plataforma**: selecione **Windows 10 e posterior**.
+        - **Tipo de perfil**: selecione **otimização de entrega**.
+        - **Configurações**: para o **modo de download da otimização de entrega**, escolha o mesmo modo usado pelo anel de atualização de software existente, a menos que você queira alterar as configurações aplicadas aos seus dispositivos. As opções são:
             - **Não configurado**
             - **Somente HTTP, sem emparelhamento**
             - **HTTP combinado com emparelhamento por trás do mesmo NAT**
@@ -85,7 +86,7 @@ Configurações de **otimização de entrega** substituir **atualizações de so
     3. Nas configurações, defina o **modo de download de otimização de entrega** como **não configurado**.
     4. **OK** > **salve** suas alterações.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 [Atribua o perfil](device-profile-assign.md) e [monitore seu](device-profile-monitor.md) status.  
 Exiba as [configurações de otimização de entrega](../delivery-optimization-settings.md) para o Intune.

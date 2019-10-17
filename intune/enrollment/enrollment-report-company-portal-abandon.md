@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 2/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -16,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9b67adeac619e26de785addbab4c6312915a58f0
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: ae3c2380aa27096be2490d2404858179ea9d222e
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71729704"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503188"
 ---
 # <a name="incomplete-user-enrollments-report"></a>Relatório incompleto de registros de usuário
 
 Este relatório informa onde os usuários do processo de registro de Portal da Empresa não estão concluindo o processo de registro.
 
-Para ver o relatório, escolha**registro de dispositivo** > do **Intune** > registros de**usuário incompletos**.
+Para ver o relatório, escolha **Intune** > **registro de dispositivo** > **registros de usuário incompletos**.
 
 Usando essas informações, você pode atualizar seus documentos de integração para ajudar os usuários a concluir o registro. Por exemplo, se existirem muitos utilizadores a desistir nos Termos de Utilização, pode investigar essa área e torná-la mais intuitiva para os utilizadores.
 
@@ -53,9 +54,9 @@ Pode filtrar o intervalo de datas, o sistema operativo e a secção de inscriç�
 
 Na parte superior do relatório, você pode ver o número e a porcentagem de registros incompletos em relação a todos os registros.
 
-- Registros iniciados: O número de tentativas de registro.
-- Registros incompletos: O número de tentativas de registro que não resultaram em um dispositivo totalmente registrado e em conformidade.
-- Taxa incompleta: A porcentagem de tentativas de registro que foram abandonadas (registros abandonados/inscrições iniciadas).
+- Inscrições iniciadas: o número de tentativas de inscrição.
+- Inscrições incompletas: o número de registros tentados que não resultaram em um dispositivo totalmente registrado e em conformidade.
+- Taxa incompleta: a porcentagem de tentativas de registro que foram abandonadas (registros abandonados/inscrições iniciadas).
 
 ### <a name="line-graph"></a>Gráfico de linha
 
@@ -63,7 +64,7 @@ O gráfico de linhas mostra os registros diários incompletos para cada uma das 
 
 - Lista de verificação da configuração
 - Ecrãs de plataforma
-- Termos de utilização
+- Termos de Utilização
 - Conformidade/Ativação
 
 ### <a name="user-abandonment-actions"></a>Ações de abandono do utilizador
@@ -73,7 +74,7 @@ As tabelas a seguir mostram a lista de ações do usuário que se qualificam ao 
 
 #### <a name="setup-checklist-section"></a>Secção da lista de verificação da configuração
 
-| Nome da ação | Ecrã ou fluxo | Plataforma | Action |
+| Nome da ação | Ecrã ou fluxo | Platform | Ação |
 | ---- |---- |---- |---- |
 | EnrollmentWrapUp | Pedido para abrir uma página no Portal da Empresa | iOS/Android | **Cancelar** |
 | EnrollmentWrapUp | Ecrã de inscrição do dispositivo até à conclusão da operação **A carregar recursos da empresa** | iOS/Android | Demorou mais de 30 minutos |
@@ -83,7 +84,7 @@ As tabelas a seguir mostram a lista de ações do usuário que se qualificam ao 
 
 #### <a name="platform-screens-section"></a>Secção dos ecrãs de plataforma
 
-| Nome da ação | Ecrã ou fluxo | Plataforma | Action |
+| Nome da ação | Ecrã ou fluxo | Platform | Ação |
 | ---- |---- |---- |---- |
 | iOSProfileLaunch | Pedido para mostrar um perfil de configuração | iOS | **Ignorar** |
 | iOSProfileLaunch | Ecrã de instalação do perfil | iOS | **Cancelar** |
@@ -96,20 +97,20 @@ As tabelas a seguir mostram a lista de ações do usuário que se qualificam ao 
 
 #### <a name="terms-of-use-section"></a>Secção dos termos de utilização
 
-| Nome da ação | Ecrã ou fluxo | Plataforma | Action |
+| Nome da ação | Ecrã ou fluxo | Platform | Ação |
 | ---- |---- |---- |---- |
 | TermsofUse | Termos de utilização (se configurado pelo administrador) | iOS/Android | **Recusar Tudo** |
 | TermsofUse | Termos de utilização até **Aceitar tudo** | iOS/Android | Demorou mais de 30 minutos |
 
 #### <a name="complianceactivation-section"></a>Secção de Conformidade/Ativação
 
-| Nome da ação | Ecrã ou fluxo | Plataforma | Action |
+| Nome da ação | Ecrã ou fluxo | Platform | Ação |
 | ---- |---- |---- |---- |
 | Conformidade | A conformidade do dispositivo (se configurado pelo administrador) é apresentada como não verde na fase de pós-inscrição da configuração do acesso| iOS/Android | **Adiar** |
 | Conformidade | A conformidade do dispositivo é apresentada como não verde até ser atualizada e ficar a verde | iOS/Android | Demorou mais de 30 minutos |
-| Ativação | A ativação da inscrição (se configurado pelo administrador) é apresentada como não verde na configuração do acesso | iOS/Android | **Adiar** |
+| Ativá | A ativação da inscrição (se configurado pelo administrador) é apresentada como não verde na configuração do acesso | iOS/Android | **Adiar** |
 | Conformidade | A ativação do dispositivo é apresentada como não verde até ser atualizada e ficar a verde | iOS/Android | Demorou mais de 30 minutos |
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Depois de verificar suas taxas de registro incompletas, você pode examinar as [Opções de registro](enrollment-options.md) para ver se é possível fazer alterações para melhorar o registro.

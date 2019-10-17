@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 10/20/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 4a3a11a8-9c0c-4334-8c6b-6fea4d0a2efb
@@ -17,14 +18,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2ef002b508e484d6967bbdd0908729332d866046
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 0718fae09228b9359b073901f3a344a09a6176e7
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71731740"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72509243"
 ---
-# <a name="terms-and-conditions-for-user-access"></a>Termos e condições de acesso de utilizador
+# <a name="terms-and-conditions-for-user-access"></a>Termos e condições do acesso dos utilizadores
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
@@ -50,8 +51,8 @@ Conclua estes passos para criar os termos e condições. O nome a apresentar e a
 3. Selecione **Criar**.
 4. Na página **noções básicas** , especifique as seguintes informações:
 
-   - **Nome**: o nome dos termos no portal do Azure. Os utilizadores não veem este nome.
-   - **Descrição**: detalhes opcionais que ajudam a identificar este conjunto de termos no portal do Azure.
+   - **Nome**: o nome dos termos na portal do Azure. Os utilizadores não veem este nome.
+   - **Descrição**: detalhes opcionais que ajudam a identificar este conjunto de termos no Portal do Azure.
 
     ![Captura de tela da portal do Azure mostrando a página noções básicas para termos e condições](./media/terms-and-conditions-create/terms-basics-page.png)
 
@@ -66,10 +67,10 @@ Conclua estes passos para criar os termos e condições. O nome a apresentar e a
 7. Escolha **selecionar marcas de escopo**, selecione as marcas de escopo que você deseja atribuir a estes termos e condições e, em seguida, escolha **selecionar**. 
 
 8. Escolha **Avançar** para ir para a página **atribuições** e escolha uma das seguintes opções para **atribuir a**:
-    - **Todos os usuários**: Escolha esta opção para atribuir esses termos e condições a todos os usuários.
-    - **Selecionar grupos**: Escolha esta opção para atribuir esses termos e condições a todos os grupos que você identificar escolhendo **Selecionar grupos a serem incluídos**.
+    - **Todos os usuários**: escolha esta opção para atribuir esses termos e condições a todos os usuários.
+    - **Selecionar grupos**: escolha esta opção para atribuir esses termos e condições a todos os grupos que você identificar escolhendo **Selecionar grupos a serem incluídos**.
 
-9. Escolha **Avançar** > **criar**.
+9. Escolha **avançar** > **criar**.
 
 ## <a name="see-how-terms-are-displayed-to-your-users"></a>Ver como os termos são apresentados para os utilizadores
 O exemplo a seguir mostra o **Título** e o **Resumo de Termos** na consola de administração e no Portal da Empresa.

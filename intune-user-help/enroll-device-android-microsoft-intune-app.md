@@ -9,6 +9,7 @@ ms.date: 08/07/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ef7ec650c65206eeab69d8f666dc4fb39052bbdb
-ms.sourcegitcommit: 549352bdea93cc2809e3e0010bfcc10bd44dc728
+ms.openlocfilehash: 81c842eb27b1b9131c164ced5aeed86a78a37353
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68862242"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506289"
 ---
 # <a name="enroll-your-corporate-device-with-the-microsoft-intune-app"></a>Registrar seu dispositivo corporativo no aplicativo Microsoft Intune
 
@@ -32,7 +33,7 @@ Registre seu dispositivo Android corporativo para obter acesso seguro a emails, 
 Há quatro maneiras de se registrar. Sua organização deve permitir que você saiba qual opção usar.
  
 * NFC (comunicação a curta distância)  
-* Certificado de  
+* Token  
 * Código QR   
 * Google Zero Touch  
 
@@ -44,24 +45,24 @@ Conclua estas etapas para configurar e registrar seu dispositivo.
 
 1. Ative seu dispositivo novo ou de redefinição de fábrica.  
 2. No ecrã **Bem-vindo**, selecione o seu idioma.   Se você foi instruído a se registrar com um código QR ou NFC, siga a etapa abaixo que corresponde ao método.  
-     * NFC: Toque em seu dispositivo com suporte a NFC em um dispositivo programador para se conectar à rede da sua organização. Siga os prompts na tela. Quando você chegar à tela para os termos de serviço do Chrome, continue na etapa 5.  
+     * NFC: toque em seu dispositivo com suporte a NFC em um dispositivo programador para se conectar à rede da sua organização. Siga os prompts na tela. Quando você chegar à tela para os termos de serviço do Chrome, continue na etapa 5.  
 
-     * Código QR: Conclua as etapas no [registro de código QR](#qr-code-enrollment).  
+     * Código QR: conclua as etapas no [registro de código QR](#qr-code-enrollment).  
 
      Se você foi instruído a usar outro método, continue na etapa 3.    
 
 3. Conecte-se ao Wi-Fi e toque **em Avançar**. Siga a etapa que corresponde ao seu método de registro. 
 
-    * Token Quando você chegar à tela de entrada do Google, conclua as etapas em [registro de token](#token-enrollment).  
-    * Google Zero Touch: Depois de se conectar ao Wi-Fi, seu dispositivo será reconhecido pela sua organização. Continue na etapa 4 e siga os prompts na tela até que a instalação seja concluída.    
+    * Token: quando você chegar à tela de entrada do Google, conclua as etapas em [registro de token](#token-enrollment).  
+    * Google Zero Touch: depois de se conectar ao Wi-Fi, seu dispositivo será reconhecido por sua organização. Continue na etapa 4 e siga os prompts na tela até que a instalação seja concluída.    
  
        ![Imagem de exemplo da tela de termos do Google que você vê se estiver usando o Google Zero Touch, realçando aceitar & botão continuar.](./media/google-zero-touch-intune-app-01.png)   
    
-4. Examine os termos do Google. Em seguida, toque em **aceitar &AMP; continuar**.  
+4. Examine os termos do Google. Em seguida, toque em **aceitar & continuar**.  
 
       ![Imagem de exemplo da tela de termos do Google, realçando aceitar & botão continuar.](./media/fully-managed-intune-app-04.png)   
 
-6. Examine os termos de serviço do Chrome. Em seguida, toque em **aceitar &AMP; continuar**.  
+6. Examine os termos de serviço do Chrome. Em seguida, toque em **aceitar & continuar**.  
 
    ![Exemplo de imagem da tela de termos de serviço do Chrome, realçando aceitar & botão continuar.](./media/fully-managed-intune-app-06.png)   
 
@@ -101,7 +102,7 @@ Nesta seção, você examinará o código QR fornecido pela empresa.  Quando ter
    ![Imagem de exemplo da tela de boas-vindas de instalação do dispositivo, destacando as instruções para tocar na tela.](./media/qr-code-intune-app-01.png)  
 
 2. Siga as instruções na tela para se conectar ao Wi-Fi.  
-3. Se o dispositivo não tiver um scanner de código QR, as telas de instalação mostrarão o progresso à medida que um scanner for instalado. Aguarde pela conclusão da instalação.  
+3. Se o dispositivo não tiver um scanner de código QR, as telas de instalação mostrarão o progresso à medida que um scanner for instalado. Aguarde a conclusão da instalação.  
 4. Quando solicitado, digitalize o código QR do perfil de registro que sua organização forneceu a você.  
 5. Retorne para [registrar o dispositivo](#enroll-device), etapa 4 para continuar a instalação.  
 
@@ -118,7 +119,7 @@ Nesta seção, você inserirá o token fornecido pela empresa. Quando terminar, 
 
 4. Selecione **Inserir código**.  
 
-5. Na tela **examinar ou inserir código** , digite o código que sua organização forneceu a você.  Clique depois em **Seguinte**.  
+5. Na tela **examinar ou inserir código** , digite o código que sua organização forneceu a você.  em seguida, clique em **Avançar**.  
 
    ![Imagem de exemplo da tela de verificação ou de inserção de código, realçando o botão Avançar.](./media/token-intune-app-04.png)  
 
@@ -126,5 +127,5 @@ Nesta seção, você inserirá o token fornecido pela empresa. Quando terminar, 
 
 
 
-## <a name="next-steps"></a>Passos Seguintes   
+## <a name="next-steps"></a>Próximos passos   
 Ainda precisa de ajuda? Contacte o suporte da empresa (verifique as informações de contacto no [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980)) ou escreva para a <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with enrolling my Android device&body=Describe the issue you're experiencing here.">equipa Android da Microsoft</a>.  

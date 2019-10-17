@@ -9,6 +9,7 @@ ms.date: 04/19/2017
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 6d8c6372-f2ce-4558-8886-1d7c1966699c
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 828afc63bdf1735188d921cb9dc441218564f414
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 84098d4d2152d62eda888cdcde1cf88e5081a470
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61499186"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506171"
 ---
 # <a name="enroll-your-ios-device-in-telecom-expense-management"></a>Inscrever o dispositivo iOS na gestão de despesas de telecomunicações
 
@@ -44,7 +45,7 @@ Selecione a opção adequada para receber uma notificação e instalar a aplica�
 
    ![Uma imagem do ecrã Definições da aplicação Datalert, que apresenta um campo de número de telefone para inscrever um dispositivo na metade superior do ecrã e “inscrever-se com conta Microsoft” na parte inferior, desde que tenha uma conta do Microsoft Office 365 e uma subscrição do Intune.](./media/ios-enroll-11a-tem-datalert-enroll-msft-account.png)
 
-2. Receberá uma notificação a indicar que __“Datalert” pretende abrir o “Authenticator”__. Selecione __Abrir__.
+2. Receberá uma notificação a indicar que __“Datalert” pretende abrir o “Authenticator”__ . Selecione __Abrir__.
 
    ![Uma imagem do pop-up a pedir ao utilizador para abrir a aplicação Authenticator a pedido da aplicação Datalert.](./media/ios-enroll-11b-tem-datalert-open-authenticator.png)
 

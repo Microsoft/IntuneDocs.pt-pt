@@ -9,6 +9,7 @@ ms.date: 01/03/2017
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 4a120c3d-d520-4d48-ae4c-3338ca4e7bde
 searchScope:
@@ -18,23 +19,23 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dd15e960b3c2802930981271cb6cd9ffea841cee
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 01b03e986cd2540c364f2b6d8d3e20412fd5b82e
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67545493"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506161"
 ---
 # <a name="enroll-your-windows-phone-81-device-in-intune"></a>Inscrever o seu dispositivo Windows Phone 8.1 no Intune  
 
-Inscreva os dispositivos para obter acesso a trabalho ou e-mail da instituição de ensino, ficheiros e outros recursos. Quando inscreve os seus dispositivos, a sua empresa pode manter os dados empresariais seguros. Para saber mais sobre a inscrição, veja [What happens if you install the Company Portal app and enroll your device in Intune? (O que acontece quando instala a aplicação Portal da Empresa e inscreve o seu dispositivo no Intune?)](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) e [What your company support can and can't see on your device (O que o suporte da empresa pode ver e não pode ver no seu dispositivo?)](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).  
+Registre seus dispositivos para obter acesso a emails corporativos ou de estudante, arquivos e outros recursos. Quando inscreve os seus dispositivos, a sua empresa pode manter os dados empresariais seguros. Para saber mais sobre a inscrição, veja [What happens if you install the Company Portal app and enroll your device in Intune? (O que acontece quando instala a aplicação Portal da Empresa e inscreve o seu dispositivo no Intune?)](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) e [What your company support can and can't see on your device (O que o suporte da empresa pode ver e não pode ver no seu dispositivo?)](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).  
 
-Para inscrever o dispositivo no Intune, siga o conjunto de instruções que correspondem ao seu estado de conta atual ou permissões.
+Para registrar seu dispositivo no Intune, siga o conjunto de instruções que correspondem às suas permissões ou ao status da conta atual.
 
-## <a name="enroll-through-company-portal"></a>Inscrever-se através do Portal da empresa  
-Siga estes passos, pode instalar a aplicação Portal da empresa a partir da Microsoft Store. 
+## <a name="enroll-through-company-portal"></a>Registrar por meio de Portal da Empresa  
+Siga estas etapas se você puder instalar o aplicativo Portal da Empresa do Microsoft Store. 
 
-1. Toque em **começar** > **Store**.  
+1. Toque em **iniciar** > **armazenamento**.  
 
 2. Toque em **Pesquisar** e, em seguida, escreva **portal da empresa**.  
 
@@ -57,7 +58,7 @@ Inscrever o dispositivo:
 
 3. Percorra até **Os Meus Dispositivos**.  
 
-4. Selecione **tocar para inscrever ou identificar este dispositivo**.  
+4. Selecione **tocar para registrar ou identificar este dispositivo**.  
 
 
     ![Ecrã Tocar para inscrever ou identificar este dispositivo](./media/WP81-enroll-1-swipe-my-devices.png)  
@@ -77,8 +78,8 @@ Inscrever o dispositivo:
 
     ![Ecrã de conta adicionada](./media/WP81-enroll-4-account-added.png)  
 
-## <a name="enroll-through-settings-app"></a>Inscrever-se através da aplicação de definições  
-Siga estes passos, se não conseguir aceder a Microsoft Store a partir do seu dispositivo Windows Phone ou se não tiver uma Account Microsoft.
+## <a name="enroll-through-settings-app"></a>Registrar no aplicativo de configurações  
+Siga estas etapas se você não puder acessar o Microsoft Store de seu dispositivo Windows Phone, ou se você não tiver uma conta da Microsoft.
 
 1. Toque em **Definições** &gt; **área de trabalho**.  
 

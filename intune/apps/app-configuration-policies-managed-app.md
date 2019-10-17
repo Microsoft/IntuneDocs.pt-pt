@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: E61C1618-79D0-41A1-B61F-4123FB6672FC
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7716eeb496567eb4e4a35a703b66597ed47e87a6
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 3a31a4777537db6f656dbf9eaf0b30a6e95412a8
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71731468"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72499761"
 ---
 # <a name="add-app-configuration-policies-for-managed-apps-without-device-enrollment"></a>Adicionar políticas de configuração da aplicação para aplicações geridas sem inscrição de dispositivos
 
@@ -37,7 +38,7 @@ Pode utilizar políticas de configuração da aplicação com aplicações gerid
 3. Selecione a carga de trabalho **Aplicações do cliente**.
 4. Selecione **Políticas de configuração da aplicação** no grupo **Gerir** e, em seguida, selecione **Adicionar**.
 5. Defina os seguintes detalhes:
-    - **Name**  
+    - **Nome**  
       O nome do perfil que será apresentado no portal do Azure.
     - **Descrição**  
       A descrição do perfil que será apresentada no portal do Azure.
@@ -67,6 +68,6 @@ O Intune suporta os seguintes tipos de tokens nas definições de configuração
 > [!Note]  
 > Os carateres \{\{ e \}\} são utilizados apenas por tipos de token e não devem ser utilizados para outros fins.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Continue a [atribuir](apps-deploy.md) e [monitorizar](apps-monitor.md) a aplicação como é habitual.

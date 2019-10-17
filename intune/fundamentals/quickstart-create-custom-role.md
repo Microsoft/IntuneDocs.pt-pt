@@ -4,23 +4,25 @@ description: Início Rápido – criar e atribuir uma função personalizada a u
 services: microsoft-intune
 author: ErikjeMS
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
 ms.topic: quickstart
 ms.date: 03/26/2019
 ms.author: erikje
+ms.assetid: 0b3ac749-4a61-4717-bf08-e0e6a15c3b0a
 ms.reviewer: pjain
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1d84e4d63c16911d83754cf6f70609f830cd709f
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 2c61449e17b96151d2717365e5193fd6c4bdaae3
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71732116"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72509890"
 ---
-# <a name="quickstart-create-and-assign-a-custom-role"></a>Início rápido: Criar e atribuir uma função personalizada
+# <a name="quickstart-create-and-assign-a-custom-role"></a>Início Rápido: criar e atribuir uma função personalizada
 
 Neste início rápido do Intune, vai criar e atribuir uma função personalizada com permissões específicas a um serviço de segurança operacional. Em seguida, vai atribuir a função a um grupo desses operadores. Há várias funções predefinidas que pode utilizar de imediato. Contudo, ao criar funções personalizadas como esta, tem controlo de acesso preciso em relação a todas as partes de seu sistema de gestão de dispositivos móveis.
 
@@ -68,11 +70,11 @@ Agora todos os elementos do grupo são membros da função *Operações de segur
 
 Se não quiser continuar a utilizar a nova função personalizada, pode eliminá-la. Selecione **Funções** > **Todas as funções** > selecione as reticências que se encontram junto à função > **Eliminar**.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Neste início rápido, criou uma função de operações de segurança personalizada e atribui-a a um grupo. Para obter mais informações sobre funções no Intune, veja [Controlo de administração baseada em funções (RBAC) com o Microsoft Intune](role-based-access-control.md).
 
 Para seguir esta série de guias de início rápido do Intune, continue para o próximo guia de início rápido.
 
 > [!div class="nextstepaction"]
-> [TUTORIAIS Criar um perfil de dispositivo de email para iOS](../configuration/quickstart-email-profile.md)
+> [Guia de Início Rápido: criar um perfil de dispositivo de e-mail para iOS](../configuration/quickstart-email-profile.md)

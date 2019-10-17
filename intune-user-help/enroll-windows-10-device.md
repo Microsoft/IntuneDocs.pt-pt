@@ -9,6 +9,7 @@ ms.date: 05/21/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 812e82df-76df-402b-bfe9-29302838f40e
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2e4def9f0e4e91f7db9e0a81e2ad55852df524f7
-ms.sourcegitcommit: 0d1a02fb3d2a801a95c2244e9ef13ecf22be2eb1
+ms.openlocfilehash: ca8b24a1e8d0da4386ab185533fec38d9b34eb21
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71302469"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506265"
 ---
 # <a name="enroll-windows-10-devices-with-intune-company-portal"></a>Registrar dispositivos Windows 10 com o Portal da Empresa do Intune
 
@@ -61,7 +62,7 @@ Estas etapas descrevem como registrar um dispositivo que é executado no Windows
 
 7. Tudo pronto **!** selecione **Concluído**. O dispositivo está agora inscrito.  
 
-8. Para verificar a conexão novamente, volte para **configurações** > **contas** > **acesso corporativo ou de estudante**.  Sua conta agora deve estar listada.  
+8. Para verificar a conexão novamente, volte para **configurações** > **contas** > **acessam trabalho ou escola**.  Sua conta agora deve estar listada.  
 
 
     ![Validar a definição correta da ligação](./media/w10-enroll-rs1-validate-successful-enrollment.png)  
@@ -96,7 +97,7 @@ Continua sem aceder ao seu e-mail, ficheiros ou outros dados do trabalho ou da e
 
 Se você for um administrador de ti e estiver em problemas ao registrar dispositivos, consulte [Solucionando problemas de registro de dispositivo Windows no Microsoft Intune](https://support.microsoft.com/help/4469913). Este artigo lista os erros comuns, suas causas e as etapas para resolvê-los. 
 
-## <a name="next-steps"></a>Passos seguintes  
+## <a name="next-steps"></a>Próximos passos  
 Se precisar de ajuda com Portal da Empresa ou registro, entre em contato com a equipe de suporte de ti de sua organização. Você encontrará suas informações de contato no [site Portal da empresa](https://go.microsoft.com/fwlink/?linkid=2010980). Entre no site com sua conta corporativa ou de estudante.  
 
  

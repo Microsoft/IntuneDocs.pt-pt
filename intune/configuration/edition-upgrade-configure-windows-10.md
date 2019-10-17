@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 04/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ae8b6528-7979-47d8-abe0-58cea1905270
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ad2977597ca9e5b6eef82fb3539917ea15ca2e31
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: f5519429bae69fe277c72b12a2801a1875295824
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71730700"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72493782"
 ---
 # <a name="upgrade-windows-10-editions-or-switch-out-of-s-mode-on-devices-using-microsoft-intune"></a>Atualizar as edições do Windows 10 ou sair do modo S em dispositivos usando Microsoft Intune
 
@@ -29,7 +30,7 @@ ms.locfileid: "71730700"
 
 Como parte da sua solução de MDM (gerenciamento de dispositivo móvel), talvez você queira atualizar seus dispositivos Windows 10. Por exemplo, você deseja atualizar seus dispositivos Windows 10 Professional para o Windows 10 Enterprise. Ou, você deseja que o dispositivo mude para fora do modo S.
 
-[Modo Windows 10 S](https://support.microsoft.com/help/4456067/windows-10-switch-out-of-s-mode) (abre outro site da Microsoft) foi projetado para segurança e desempenho. Você pode usar o Intune para desativar o modo S. Sair do modo S é definitivo. Depois de sair do modo S, não pode voltar para o modo Windows 10 S.
+O [modo Windows 10 S](https://support.microsoft.com/help/4456067/windows-10-switch-out-of-s-mode) (abre outro site da Microsoft) foi projetado para segurança e desempenho. Você pode usar o Intune para desativar o modo S. Sair do modo S é definitivo. Depois de sair do modo S, não pode voltar para o modo Windows 10 S.
 
 Veja algumas [perguntas frequentes](https://support.microsoft.com/help/4020089/windows-10-in-s-mode-faq) sobre o modo S.
 
@@ -54,21 +55,21 @@ Antes de atualizar os dispositivos, verifique se você tem os seguintes pré-req
 - Para as edições Windows 10 Mobile e Windows 10 Holographic, você pode usar um arquivo de licença da Microsoft. O arquivo de licença inclui as informações de licenciamento para instalar a edição atualizada em todos os dispositivos que você tem como destino com a política.
 - Os dispositivos Windows 10 aos quais atribuir a política estão inscritos no Microsoft Intune. Não é possível utilizar a política de atualização de edição com PCs que executam o software de cliente de PCs do Intune.
 
-## <a name="supported-upgrade-paths"></a>Caminhos de atualização suportados
+## <a name="supported-upgrade-paths"></a>Caminhos de atualização com suporte
 
 A seguinte tabela indica os caminhos de atualização suportados para o perfil de atualização de edição do Windows 10.
 
 | Atualizar a partir do | Atualizar para o |
 |---|---|
-| Windows 10 Pro | Windows 10 Education <br/>Windows 10 Enterprise <br/>Windows 10 Pro Education |
+| Windows 10 pro | Educação do Windows 10 <br/>Windows 10 Enterprise <br/>Windows 10 Pro Education |
 | Edição Windows 10 Pro N | Edição Windows 10 Education N <br/>Edição Windows 10 Enterprise N <br/>Edição Windows 10 Pro Education N | 
-| Windows 10 Pro Education | Windows 10 Education | 
+| Windows 10 Pro Education | Educação do Windows 10 | 
 | Edição Windows 10 Pro Education N | Edição Windows 10 Education N |
-| Windows 10 Cloud | Windows 10 Education <br/>Windows 10 Enterprise <br/>Windows 10 Pro <br/>Windows 10 Pro Education | 
+| Windows 10 Cloud | Educação do Windows 10 <br/>Windows 10 Enterprise <br/>Windows 10 pro <br/>Windows 10 Pro Education | 
 | Edição Windows 10 Cloud N | Edição Windows 10 Education N <br/>Edição Windows 10 Enterprise N <br/>Edição Windows 10 Pro N <br/>Edição Windows 10 Pro Education N | 
-| Windows 10 Enterprise | Windows 10 Education | 
+| Windows 10 Enterprise | Educação do Windows 10 | 
 | Edição Windows 10 Enterprise N | Edição Windows 10 Education N | 
-| Windows 10 Core | Windows 10 Education <br/>Windows 10 Enterprise <br/>Windows 10 Pro Education | 
+| Windows 10 Core | Educação do Windows 10 <br/>Windows 10 Enterprise <br/>Windows 10 Pro Education | 
 | Edição Windows 10 Core N | Edição Windows 10 Education N <br/>Edição Windows 10 Enterprise N <br/>Edição Windows 10 Pro Education N | 
 | Windows 10 Holographic | Windows 10 Holographic for Business |
 | Windows 10 Mobile | Windows 10 Mobile Enterprise |
@@ -100,13 +101,13 @@ A seguinte tabela indica os caminhos de atualização suportados para o perfil d
 3. Introduza as seguintes propriedades:
 
     - **Nome**: introduza um nome descritivo para o novo perfil. Por exemplo, insira algo como `Windows 10 edition upgrade profile` ou `Windows 10 switch off S mode`.
-    - **Descrição**: introduza uma descrição para o perfil. Esta definição é opcional, mas recomendada.
-    - **Plataforma**: Selecione a plataforma:  
+    - **Descrição:** introduza uma descrição para o perfil. Esta definição é opcional, mas recomendada.
+    - **Plataforma**: selecione a plataforma:  
 
         - **Windows 10 e posterior**
 
-    - **Tipo de perfil**: Selecione **atualização de edição**.
-    - **Definições**: Insira as configurações que você deseja configurar. Para obter uma lista de todas as configurações e o que elas fazem, consulte:
+    - **Tipo de perfil**: selecione **atualização de edição**.
+    - **Configurações**: Insira as configurações que você deseja configurar. Para obter uma lista de todas as configurações e o que elas fazem, consulte:
 
         - [Atualização do Windows 10 e modo S](edition-upgrade-windows-settings.md)
         - [Windows Holographic for Business](holographic-upgrade.md)
@@ -115,7 +116,7 @@ A seguinte tabela indica os caminhos de atualização suportados para o perfil d
 
 O perfil é criado e mostrado na lista. Certifique-se de [atribuir o perfil](device-profile-assign.md) e [monitorar seu status](device-profile-monitor.md).
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Depois que o perfil é criado, ele está pronto para ser atribuído. Em seguida, [atribua o perfil](device-profile-assign.md) e [monitorize o estado](device-profile-monitor.md).
 

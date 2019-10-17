@@ -1,6 +1,6 @@
 ---
 title: Usar autoridades de certificação (CA) de terceiros com o SCEP no Microsoft Intune-Azure | Microsoft Docs
-description: No Microsoft Intune, você pode adicionar um fornecedor ou uma autoridade de certificação (CA) de terceiros para emitir certificados para dispositivos móveis usando o protocolo SCEP. Nesta visão geral, um aplicativo Azure Active Directory (Azure AD) fornece permissões de Microsoft Intune para validar certificados. Em seguida, use a ID do aplicativo, a chave de autenticação e a ID do locatário do aplicativo do AAD na instalação do servidor de SCEP para emitir certificados.
+description: No Microsoft Intune, você pode adicionar um fornecedor ou uma autoridade de certificação (CA) de terceiros para emitir certificados para dispositivos móveis usando o protocolo SCEP. Nesta descrição geral, uma aplicação do Azure Active Directory (Azure AD) fornece permissões ao Microsoft Intune para validar certificados. Em seguida, utilize o ID da aplicação, a chave de autenticação e o ID do inquilino da aplicação do AAD para configurar o servidor do SCEP para emitir certificados.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 07/03/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: ''
@@ -15,62 +16,62 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4b82124fe8f6da7116c8333e293f219d7c667f9c
-ms.sourcegitcommit: a2654f3642b43b29ab0e1cbb2dfa2b56aae18d0e
+ms.openlocfilehash: 61771ce2b6179b2e74a4d13f72794ece97907034
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72310909"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502568"
 ---
-# <a name="add-partner-certification-authority-in-intune-using-scep"></a>Adicionar autoridade de certificação de parceiro no Intune usando o SCEP
+# <a name="add-partner-certification-authority-in-intune-using-scep"></a>Adicionar autoridades de certificação parceiras no Intune com o SCEP
 
 Use autoridades de certificação (CA) de terceiros com o Intune. CAs de terceiros podem provisionar dispositivos móveis com certificados novos ou renovados usando o protocolo SCEP (SCEP) e podem dar suporte a dispositivos Windows, iOS, Android e macOS.
 
-Há duas partes para usar esse recurso: API de software livre e as tarefas de administrador do Intune.
+Existem duas partes para utilizar esta funcionalidade: API open source e tarefas de administrador do Intune.
 
-**Parte 1-usar uma API de código-fonte aberto**  
+**Parte 1 – utilizar uma API open source**  
 A Microsoft criou uma API para integração com o Intune. Embora a API você possa validar certificados, enviar notificações de êxito ou falha e usar SSL, especificamente a Factory de soquete SSL, para se comunicar com o Intune.
 
-A API está disponível no [repositório GitHub público da API SCEP do Intune](https://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/CsrValidation) para você baixar e usar em suas soluções. Use essa API com servidores de SCEP de terceiros para executar a validação de desafio personalizada no Intune antes que o SCEP provisione um certificado para um dispositivo.
+A API está disponível para transferência no [Repositório do GitHub público da API do SCEP no Intune](https://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/CsrValidation) e pode utilizá-la nas suas soluções. Use essa API com servidores de SCEP de terceiros para executar a validação de desafio personalizada no Intune antes que o SCEP provisione um certificado para um dispositivo.
 
-[Integrar com a solução de gerenciamento de SCEP do Intune](scep-libraries-apis.md) fornece mais detalhes sobre como usar a API, seus métodos e testar a solução que você cria.
+A secção [Integração com a solução de gestão do SCEP no Intune](scep-libraries-apis.md) fornece mais detalhes sobre como utilizar a API, os seus métodos e como testar a solução que criar.
 
-**Parte 2-criar o aplicativo e o perfil**  
-Usando um aplicativo Azure Active Directory (Azure AD), você pode delegar direitos ao Intune para lidar com solicitações SCEP provenientes de dispositivos. O aplicativo Azure AD inclui a ID do aplicativo e os valores de chave de autenticação que são usados na solução de API que o desenvolvedor cria. Em seguida, os administradores criam e implantam perfis de certificados SCEP usando o Intune e podem exibir relatórios sobre o status da implantação nos dispositivos.
+**Parte 2 – criar a aplicação e o perfil**  
+Ao utilizar uma aplicação do Azure Active Directory (Azure AD), pode delegar direitos ao Intune para processar pedidos de SCEP provenientes de dispositivos. A aplicação do Azure AD inclui o ID da aplicação e os valores de chave de autenticação que são utilizados na solução de API criada pelo programador. Em seguida, os administradores criam e implantam perfis de certificados SCEP usando o Intune e podem exibir relatórios sobre o status da implantação nos dispositivos.
 
-Este artigo fornece uma visão geral desse recurso de uma perspectiva de administrador, incluindo a criação do aplicativo do Azure AD.
+Este artigo fornece uma descrição geral desta funcionalidade a partir da perspetiva do administrador, incluindo como criar a aplicação do Azure AD.
 
-## <a name="overview"></a>Visão geral
+## <a name="overview"></a>Overview
 
 As etapas a seguir fornecem uma visão geral do uso do SCEP para certificados no Intune:
 
-1. No Intune, um administrador cria um perfil de certificado SCEP e, em seguida, direciona o perfil para usuários ou dispositivos.
-2. O dispositivo faz check-in no Intune.
-3. O Intune cria um desafio SCEP exclusivo. Ele também adiciona informações adicionais de verificação de integridade, como o que o assunto esperado e a SAN devem ser.
-4. O Intune criptografa e assina as informações de desafio e de verificação de integridade e, em seguida, envia essas informações ao dispositivo com a solicitação SCEP.
-5. O dispositivo gera uma solicitação de assinatura de certificado (CSR) e um par de chaves pública/privada no dispositivo com base no perfil de certificado SCEP enviado por push do Intune.
-6. O CSR e o desafio criptografado/assinado são enviados para o ponto de extremidade do servidor SCEP de terceiros.
-7. O servidor SCEP envia o CSR e o desafio para o Intune. Em seguida, o Intune valida a assinatura, descriptografa a carga e compara o CSR com as informações de verificação de integridade.
-8. O Intune envia de volta uma resposta para o servidor de SCEP e indica se a validação do desafio foi bem-sucedida ou não.  
-9. Se o desafio for verificado com êxito, o servidor de SCEP emitirá o certificado para o dispositivo.
+1. No Intune, um administrador cria um perfil de certificado SCEP e, em seguida, direciona o perfil para utilizadores ou dispositivos.
+2. O dispositivo é registado no Intune.
+3. O Intune cria um desafio SCEP exclusivo. Também adiciona outras informações de verificação de integridade, tal como o assunto e o SAN esperado.
+4. O Intune encripta e assina as informações de verificação de integridade e o desafio e, em seguida, envia estas informações para o dispositivo com o pedido de SCEP.
+5. O dispositivo gera um pedido de assinatura do certificado (CSR) e o par de chaves pública/privada no dispositivo com base no perfil de certificado SCEP que é emitido pelo Intune.
+6. O CSR e o desafio encriptado/assinado são enviados para o ponto final do servidor do SCEP de terceiros.
+7. O servidor do SCEP envia o CSR e o desafio para o Intune. Em seguida, o Intune valida a assinatura, desencripta o payload e compara o CSR às informações de verificação de integridade.
+8. O Intune envia de volta uma resposta para o servidor do SCEP e indica se a validação do desafio ocorreu com êxito.  
+9. Se o desafio for verificado com êxito, o servidor do SCEP emite o certificado para o dispositivo.
 
-O diagrama a seguir mostra um fluxo detalhado de integração de SCEP de terceiros com o Intune:
+O seguinte diagrama mostra um fluxo detalhado da integração do SCEP de terceiros com o Intune:
 
-![Como o SCEP da autoridade de certificação de terceiros se integra ao Microsoft Intune](./media/certificate-authority-add-scep-overview/scep-certificate-vendor-integration.png)
+![Como é que o SCEP da autoridade de certificação de terceiros se integra com o Microsoft Intune](./media/certificate-authority-add-scep-overview/scep-certificate-vendor-integration.png)
 
-## <a name="set-up-third-party-ca-integration"></a>Configurar integração de CA de terceiros
+## <a name="set-up-third-party-ca-integration"></a>Configurar a integração de autoridades de certificação de terceiros
 
-### <a name="validate-third-party-certification-authority"></a>Validar autoridade de certificação de terceiros
+### <a name="validate-third-party-certification-authority"></a>Validar autoridades de certificação de terceiros
 
-Antes de integrar as autoridades de certificação de terceiros ao Intune, confirme se a AC que você está usando oferece suporte ao Intune. [Parceiros de autoridade de certificação de terceiros](#third-party-certification-authority-partners) (neste artigo) incluem uma lista. Você também pode verificar as diretrizes da autoridade de certificação para obter mais informações. A autoridade de certificação pode incluir instruções de instalação específicas à sua implementação.
+Antes de integrar as autoridades de certificação de terceiros com o Intune, confirme se a autoridade de certificação que está a utilizar suporta o Intune. A secção [Parceiros de autoridades de certificação de terceiros](#third-party-certification-authority-partners) (neste artigo) inclui uma lista. Também pode verificar a documentação de orientação da autoridade de certificação para obter mais informações. A autoridade de certificação pode incluir instruções de configuração específicas à respetiva implementação.
 
 ### <a name="authorize-communication-between-ca-and-intune"></a>Autorizar a comunicação entre a AC e o Intune
 
-Para permitir que um servidor de SCEP de terceiros execute a validação de desafio personalizada com o Intune, crie um aplicativo no Azure AD. Este aplicativo concede direitos delegados ao Intune para validar solicitações SCEP.
+Para permitir que um servidor do SCEP de terceiros execute a validação do desafio personalizado com o Intune, crie uma aplicação no Azure AD. Esta aplicação fornece direitos delegados ao Intune para validar pedidos de SCEP.
 
-Verifique se você tem as permissões necessárias para registrar um aplicativo do Azure AD. Consulte [as permissões necessárias](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-create-service-principal-portal#required-permissions), na documentação do Azure AD.
+Certifique-se de que tem as permissões obrigatórias para registar uma aplicação do Azure AD. Consulte [as permissões necessárias](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-create-service-principal-portal#required-permissions), na documentação do Azure AD.
 
-#### <a name="create-an-application-in-azure-active-directory"></a>Criar uma Aplicação no Azure Active Directory  
+#### <a name="create-an-application-in-azure-active-directory"></a>Criar um aplicativo no Azure Active Directory  
 
 1. Na [portal do Azure](https://portal.azure.com), acesse **Azure Active Directory** **registros do aplicativo** >  e, em seguida, selecione **novo registro**.  
 
@@ -103,22 +104,22 @@ Verifique se você tem as permissões necessárias para registrar um aplicativo 
 
 
 
-### <a name="configure-and-deploy-a-scep-certificate-profile"></a>Configurar e implantar um perfil de certificado SCEP
-Como administrador, crie um perfil de certificado SCEP para ser direcionado a usuários ou dispositivos. Em seguida, atribua o perfil.
+### <a name="configure-and-deploy-a-scep-certificate-profile"></a>Configurar e implementar um perfil de certificado SCEP
+Enquanto administrador, crie um perfil de certificado SCEP para direcionar para utilizadores ou dispositivos. Em seguida, atribua o perfil.
 
 - [Criar um perfil de certificado SCEP](certificates-profile-scep.md#create-a-scep-certificate-profile)
 
 - [Atribuir o perfil de certificado](certificates-profile-scep.md#assign-the-certificate-profile)
 
-## <a name="removing-certificates"></a>Removendo certificados
+## <a name="removing-certificates"></a>Remover certificados
 
-Quando você cancela o registro ou apaga o dispositivo, os certificados são removidos. Os certificados não são revogados.
+Quando anula a inscrição ou apaga os dados do dispositivo, os certificados são removidos. Os certificados não são revogados.
 
-## <a name="third-party-certification-authority-partners"></a>Parceiros de autoridade de certificação de terceiros
-As seguintes autoridades de certificação de terceiros dão suporte ao Intune:
+## <a name="third-party-certification-authority-partners"></a>Parceiros de autoridades de certificação de terceiros
+As seguintes autoridades de certificação de terceiros suportam o Intune:
 
 - [Entrust Datacard](https://info.entrustdatacard.com/pki-eval-tool)
-- [Versão de código-fonte aberto do EJBCA GitHub](https://github.com/agerbergt/intune-ejbca-connector)
+- [Versão open source do GitHub do EJBCA](https://github.com/agerbergt/intune-ejbca-connector)
 - [EverTrust](https://evertrust.fr/en/products/)
 - [GlobalSign](https://downloads.globalsign.com/acton/attachment/2674/f-6903f60b-9111-432d-b283-77823cc65500/1/-/-/-/-/globalsign-aeg-microsoft-intune-integration-guide.pdf)
 - [IDnomic](https://www.idnomic.com/)
@@ -127,13 +128,13 @@ As seguintes autoridades de certificação de terceiros dão suporte ao Intune:
 - [Venafi](https://www.venafi.com/platform/enterprise-mobility)
 - [SCEPman](https://azuremarketplace.microsoft.com/marketplace/apps/gluckkanja.scepman)
 
-Se você for uma CA de terceiros interessada em integrar seu produto com o Intune, examine as diretrizes da API:
+Se for uma autoridade de certificação de terceiros interessada em integrar o seu produto com o Intune, reveja a documentação de orientação da API:
 
-- [Repositório GitHub da API SCEP do Intune](https://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/CsrValidation)
-- [Diretrizes da API SCEP do Intune para CAs de terceiros](scep-libraries-apis.md)
+- [Repositório do GitHub da API do SCEP no Intune](https://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/CsrValidation)
+- [Documentação de orientação da API do SCEP no Intune para ACs de terceiros](scep-libraries-apis.md)
 
-## <a name="see-also"></a>Ver também
+## <a name="see-also"></a>Consulte também
 
 - [Configurar perfis de certificado](certificates-scep-configure.md)
-- [Repositório GitHub da API SCEP do Intune](https://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/CsrValidation)
-- [Diretrizes da API SCEP do Intune para CAs de terceiros](scep-libraries-apis.md)
+- [Repositório do GitHub da API do SCEP no Intune](https://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/CsrValidation)
+- [Documentação de orientação da API do SCEP no Intune para ACs de terceiros](scep-libraries-apis.md)

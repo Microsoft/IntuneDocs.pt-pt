@@ -8,18 +8,19 @@ manager: dougeby
 ms.date: 08/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 05a4b6cac61bf7dc76ba80862d562e93dadbd533
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 131e3e54ae4794ff552daff8f40bf218783a039a
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71729348"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72504690"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Monitorizar as políticas de conformidade do Dispositivo do Intune
 
@@ -57,20 +58,20 @@ Quando o dashboard é aberto, obtém uma descrição geral com todos os relatór
 
 ### <a name="device-compliance-status-report"></a>Relatório do estado de conformidade do dispositivo
 
-O gráfico mostra os estados de conformidade de todos os dispositivos inscritos no Intune. Os Estados de conformidade do dispositivo são mantidos em dois bancos de dados diferentes: Intune e Azure Active Directory. 
+O gráfico mostra os estados de conformidade de todos os dispositivos inscritos no Intune. Os estados de conformidade do dispositivo são mantidos em duas bases de dados diferentes: Intune e Azure Active Directory. 
 
 > [!IMPORTANT]
 > O Intune segue o agendamento de registo do dispositivo para todas as avaliações de conformidade no dispositivo. [Saiba mais sobre o agendamento de registo do dispositivo](../configuration/device-profile-troubleshoot.md#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned).
 
 Descrições dos diferentes estados de política de conformidade do dispositivo:
 
-- Em **conformidade**: O dispositivo aplicou com êxito uma ou mais configurações da política de conformidade do dispositivo.
+- **Conforme**: o dispositivo aplicou com êxito uma ou mais definições de política de conformidade do dispositivo.
 
-- **Período de carência:** O dispositivo é direcionado com uma ou mais configurações de política de conformidade do dispositivo. Porém, o utilizador ainda não aplicou as políticas. Isto significa que o dispositivo não está em conformidade embora se encontre no período de tolerância definido pelo administrador.
+- **Período de tolerância**: o dispositivo é visado com uma ou mais definições de política de conformidade do dispositivo. Porém, o utilizador ainda não aplicou as políticas. Isto significa que o dispositivo não está em conformidade embora se encontre no período de tolerância definido pelo administrador.
 
   - Saiba mais sobre [Ações para dispositivos não conformes](actions-for-noncompliance.md).
 
-- **Não avaliado**: Um estado inicial para dispositivos registrados recentemente. Outros motivos possíveis para esse Estado incluem:
+- **Não avaliado**: um estado inicial de dispositivos recentemente inscritos Outros motivos possíveis para esse Estado incluem:
 
   - Dispositivos que não são atribuídos a uma política de conformidade e não têm um gatilho para verificar a conformidade
   - Dispositivos que não fizeram check-in desde a última atualização da política de conformidade
@@ -79,13 +80,13 @@ Descrições dos diferentes estados de política de conformidade do dispositivo:
     - Quiosque Android ou dispositivos Android Enterprise dedicados
   - Dispositivos registrados com uma conta do DEM (Gerenciador de registro de dispositivo)
 
-- **Não compatível:** O dispositivo não pôde aplicar uma ou mais configurações de política de conformidade do dispositivo. ou o utilizador não respeitou as políticas.
+- **Não conforme**: o dispositivo não aplicou com êxito uma ou mais definições de política de conformidade do dispositivo ou o utilizador não respeitou as políticas.
 
-- **Dispositivo não sincronizado:** O dispositivo falhou ao relatar seu status de política de conformidade do dispositivo porque um dos seguintes motivos:
+- **Dispositivo não sincronizado:** o dispositivo não comunicou o seu estado de política de conformidade do dispositivo devido a um dos motivos seguintes:
 
-  - **Desconhecido**: O dispositivo está offline ou falhou ao se comunicar com o Intune ou com o Azure AD por outros motivos.
+  - **Desconhecido**: o dispositivo está offline ou não conseguiu comunicar com o Intune ou o Azure AD por outros motivos.
 
-  - **Erro**: O dispositivo falhou ao se comunicar com o Intune e o Azure AD e recebeu uma mensagem de erro com o motivo.
+  - **Erro**: o dispositivo não conseguiu comunicar com o Intune e o Azure AD e recebeu uma mensagem de erro com o motivo.
 
 > [!IMPORTANT]
 > Os dispositivos que estão inscritos no Intune, mas não visados pelas políticas de conformidade do dispositivo, são incluídos neste relatório sob o registo **Conforme**.
@@ -165,11 +166,11 @@ Esta funcionalidade está incluída no relatório de estado do dispositivo:
 1. Selecione **Conformidade do dispositivo** > **Políticas**. É apresentada uma lista de políticas, incluindo a plataforma, se a política estiver atribuída, e mais detalhes.
 2. Selecione uma política > **Descrição Geral**. Nesta vista, a atribuição de política inclui os seguintes estados:
 
-    - Foi A política é aplicada
-    - Erro: Falha ao aplicar a política. Normalmente, a mensagem é apresentada com um código de erro que direciona para uma explicação. 
-    - Houver Duas configurações são aplicadas ao mesmo dispositivo e o Intune não pode classificar o conflito. Um administrador deve rever a situação.
-    - Pendente O dispositivo ainda não fez check-in no Intune para receber a política. 
-    - Não aplicável: O dispositivo não pode receber a política. Por exemplo, a política atualiza uma definição específica para o iOS 11.1, mas o dispositivo está a utilizar o iOS 10. 
+    - Êxito: a política é aplicada
+    - Erro: falha ao aplicar a política. Normalmente, a mensagem é apresentada com um código de erro que direciona para uma explicação. 
+    - Conflito: duas definições são aplicadas ao mesmo dispositivo e o Intune não consegue resolver o conflito. Um administrador deve rever a situação.
+    - Pendente: o dispositivo ainda não foi registado no Intune para receber a política. 
+    - Não aplicável: o dispositivo não pode receber a política. Por exemplo, a política atualiza uma definição específica para o iOS 11.1, mas o dispositivo está a utilizar o iOS 10. 
 
 3. Para ver detalhes sobre os dispositivos que utilizam esta política, selecione um dos estados. Por exemplo, selecione **Com êxito**. Na janela seguinte, são indicados detalhes dos dispositivos específicos, incluindo o nome do dispositivo e o estado de implementação.
 

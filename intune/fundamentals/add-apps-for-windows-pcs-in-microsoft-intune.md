@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/29/2018
 ms.topic: archived
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: bc8c8be9-7f4f-4891-9224-55fc40703f0b
@@ -17,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 162a502bbb95adb248d09bb8184ffbbd5c05c465
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 23868303d598be1bc2e45f0852edfd3cf8338ab3
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71729632"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72509155"
 ---
 # <a name="add-apps-for-windows-pcs-that-run-the-intune-software-client"></a>Adicionar aplicações para PCs Windows que executam o cliente de software do Intune
 
-[!INCLUDE [classic-portal](../../intune-classic/includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Utilize as informações deste tópico para saber como adicionar aplicações ao Intune antes de implementá-las.
 
@@ -41,7 +42,7 @@ Pode permitir que os utilizadores controlem a instalação de aplicações. Se e
 ## <a name="add-the-app"></a>Adicionar a aplicação
 Utilize o Intune Software Publisher para configurar as propriedades da aplicação e carregá-la para o seu espaço de armazenamento na cloud através do seguinte procedimento:
 
-1. Na [consola do administrador do Microsoft Intune](https://manage.microsoft.com), selecione **Aplicações** &gt; **Adicionar Aplicações** para iniciar o Intune Software Publisher.
+1. Na [consola do administrador do Microsoft Intune](https://manage.microsoft.com), selecione **Aplicações** &gt; **Adicionar Aplicações** para iniciar o Publicador de Software do Intune.
 
    > [!TIP]
    > Poderá ter de introduzir o seu nome de utilizador e palavra-passe do Intune para que o publicador seja iniciado.
@@ -52,7 +53,7 @@ Utilize o Intune Software Publisher para configurar as propriedades da aplicaç�
    - **Especificar a localização dos ficheiros de configuração do software**. Introduza a localização dos ficheiros de instalação ou escolha **Procurar** para selecionar a localização numa lista.
    - **Incluir ficheiros e subpastas adicionais da mesma pasta**. Algum software que utiliza o Windows Installer requer ficheiros de suporte. Estes têm de estar localizados na mesma pasta que o ficheiro de instalação. Selecione esta opção se pretender também implementar estes ficheiros de suporte.
 
-   Por exemplo, se pretender publicar uma aplicação com o nome Application.msi no Intune, a página teria o seguinte aspeto: página de instalação do ![Software do Publicador @ no__t-1
+   Por exemplo, se pretendesse publicar uma aplicação com o nome Application.msi no Intune, a página teria o seguinte aspeto: ![Página de configuração de software do publicador](./media/add-apps-for-windows-pcs-in-microsoft-intune/publisher-for-pc.png)
 
    Este tipo de instalação utiliza algum do seu espaço de armazenamento na cloud.
 
@@ -62,12 +63,12 @@ Utilize o Intune Software Publisher para configurar as propriedades da aplicaç�
    > Dependendo do ficheiro do instalador que está a utilizar, alguns destes valores podem ter sido introduzidos automaticamente ou podem não aparecer.
 
    - **Publicador**. Introduza o nome do publicador da aplicação.
-   - **Nome**. Introduza o nome da aplicação tal como será apresentado no portal da empresa.<br />Certifique-se de que todos os nomes de aplicações que utiliza são exclusivos. Se existir o mesmo nome duas vezes, só é apresentada uma das aplicações aos utilizadores no portal da empresa.
+   - **Name (Nome)** . Introduza o nome da aplicação tal como será apresentado no portal da empresa.<br />Certifique-se de que todos os nomes de aplicações que utiliza são exclusivos. Se existir o mesmo nome duas vezes, só é apresentada uma das aplicações aos utilizadores no portal da empresa.
    - **Descrição**. Introduza uma descrição para a aplicação. A descrição será apresentada aos utilizadores no portal da empresa.
    - **URL para informações de software** (opcional). Introduza o URL de um site que contenha informações sobre esta aplicação. O URL será apresentado aos utilizadores no portal da empresa.
    - **URL de privacidade** (opcional). Introduza o URL de um site que contenha informações sobre a privacidade desta aplicação. O URL será apresentado aos utilizadores no portal da empresa.
    - **Categoria** (opcional). Selecione uma das categorias de aplicações incorporadas. Isto irá permitir que os utilizadores encontrem a aplicação mais facilmente quando procurarem no portal da empresa.
-   - **Ícone** (opcional). Carregue um ícone que será associado à aplicação. Este é o ícone que será apresentado com a aplicação quando os utilizadores procurarem no portal da empresa.
+   - **Icon** (opcional). Carregue um ícone que será associado à aplicação. Este é o ícone que será apresentado com a aplicação quando os utilizadores procurarem no portal da empresa.
 
 4. Na página **Requisitos**, selecione os requisitos que têm de ser cumpridos antes de ser possível instalar a aplicação. Escolha entre:
 
@@ -83,15 +84,15 @@ Utilize o Intune Software Publisher para configurar as propriedades da aplicaç�
 
    Se a aplicação satisfizer qualquer uma das regras que tiver configurado, esta não será instalada.
 
-6. Somente para o tipo de arquivo **Windows Installer** (. msi e. exe): Na página **argumentos de linha de comando** , escolha se deseja fornecer argumentos de linha de comando opcionais para o instalador.
+6. Apenas para o tipo de ficheiro do **Windows Installer** (.msi e .exe): na página **Argumentos de linha de comandos**, escolha se pretende fornecer argumentos de linha de comandos opcionais para o instalador.
    Os parâmetros seguintes são adicionados automaticamente pelo Intune:
    - Para ficheiros .exe, é adicionado **/install**.
    - Para ficheiros .msi, é adicionado **/quiet**.
    Tenha em atenção que estas opções só funcionarão se o criador do pacote de aplicações tiver ativado as respetivas funcionalidades.
 
-7. Somente para o tipo de arquivo **Windows Installer** (. exe): Na página **códigos de retorno** , você pode adicionar novos códigos de erro que o Intune interpreta quando o aplicativo é instalado em um computador Windows gerenciado.
+7. Apenas para o tipo de ficheiro do **Windows Installer** (apenas .exe): na página **Códigos de retorno**, pode adicionar novos códigos de erro que o Intune interpreta quando a aplicação é instalada num PC Windows gerido.
 
-   Por padrão, o Intune usa códigos de retorno padrão do setor para relatar a falha ou o êxito de uma instalação de pacote de aplicativo: **0** (êxito) ou **3010** (êxito com reinicialização). Também pode adicionar os seus códigos de retorno a esta lista. Se especificar uma lista de códigos de retorno e a instalação da aplicação devolver um código que não esteja na lista, será interpretado como uma falha.
+   Por predefinição, o Intune utiliza códigos de retorno comuns da indústria para comunicar a instalação falhada ou com êxito de um pacote de aplicações: **0** (Êxito) ou **3010** (Êxito ao reiniciar). Também pode adicionar os seus códigos de retorno a esta lista. Se especificar uma lista de códigos de retorno e a instalação da aplicação devolver um código que não esteja na lista, será interpretado como uma falha.
 
 8. Na página **Resumo**, reveja as informações que especificou. Quando estiver pronto, selecione **Carregar**.
 
@@ -99,8 +100,8 @@ Utilize o Intune Software Publisher para configurar as propriedades da aplicaç�
 
 A aplicação é apresentada no nó **Aplicações** da área de trabalho **Aplicações**.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Depois de criar uma aplicação, o passo seguinte é implementá-la. Para saber mais, veja [Atribuir aplicações a grupos com o Microsoft Intune](../apps/apps-deploy.md).
 
-Se você quiser ler mais informações sobre dicas e truques para implantar o software em computadores Windows, consulte a postagem do blog @no__t dica de 0Support: Práticas recomendadas para distribuição de software do Intune para o @ no__t-0 do PC.
+Se quiser ler mais informações sobre sugestões e truques para implementar software para PCs com Windows, veja a mensagem do blogue [Sugestão de Suporte: Melhores Práticas para Distribuição de Software do Intune para PCs](https://support.microsoft.com/en-US/help/2583929).

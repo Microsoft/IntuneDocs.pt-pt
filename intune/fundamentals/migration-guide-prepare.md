@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 01/02/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 58591442-6606-4f39-a06b-f17a1f25af25
@@ -16,14 +17,14 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 29ae889e99a843a8569782bad2b1303c7bb4304c
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: fe44d2215c3c70de504e9bf95596b274a613f42a
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71732252"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72505275"
 ---
-# <a name="phase-1-prepare-microsoft-intune-for-mobile-device-management-mdm"></a>Fase 1: Preparar Microsoft Intune para MDM (gerenciamento de dispositivo móvel)
+# <a name="phase-1-prepare-microsoft-intune-for-mobile-device-management-mdm"></a>Fase 1: preparar o Microsoft Intune para a gestão de dispositivos móveis (MDM)
 
 Antes de explorar os detalhes da configuração do Intune, vamos rever os requisitos da gestão de dispositivos móveis da sua organização. Poderá ser útil executar relatórios de utilizadores ativos no seu fornecedor de MDM atual para identificar os grupos de utilizadores críticos. Em seguida, você pode começar a abordar as perguntas na seção [avaliar requisitos de MDM](migration-guide-prepare.md#assess-mdm-requirements) .
 
@@ -76,7 +77,7 @@ Antes de explorar os detalhes da configuração do Intune, vamos rever os requis
   <br/><br/>
 - Podem ser feitas exceções temporárias para determinados requisitos de forma a evitar períodos de inatividade? Ou os dispositivos com acesso cumprem sempre todos os requisitos de segurança?
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 Leia estes [casos práticos](https://customers.microsoft.com/story/mwh-global-now-part-of-stantec-secures-mobile-devices-with-intune) de setores da indústria diferentes para ver como as organizações avaliaram os respetivos requisitos para a gestão de dispositivos móveis.
 
 Reveja a [configuração básica do Intune](migration-guide-setup.md).

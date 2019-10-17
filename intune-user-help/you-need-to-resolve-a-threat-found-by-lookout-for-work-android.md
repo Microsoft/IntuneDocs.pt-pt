@@ -9,6 +9,7 @@ ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 5656b3e6-e812-4264-a170-b17c9c03e4d4
 searchScope:
@@ -16,12 +17,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 03463bebfd9279173179dff56ce8df9d80b1707b
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 0cc2f84ad73c86a823984e6caa11dad5d4aec8a8
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61490764"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72507820"
 ---
 # <a name="resolve-a-threat-found-by-lookout-for-work"></a>Resolver uma ameaça detetada pelo Lookout for Work  
 
@@ -51,7 +52,7 @@ Recupere o acesso aos recursos da sua empresa quando a aplicação Lookout for W
 
 Se instalar uma aplicação que o Lookout for Work identifica como uma ameaça, receberá uma mensagem semelhante à mostrada na captura de ecrã abaixo.  
 
-![Captura de ecrã de exemplo que mostra uma mensagem de Alerta de Vírus do Lookout sobre a interface da aplicação do Lookout for Work. Mostra os três botões: "Fechar," "Obter mais informações," e "Desinstalar".](./media/lookout-virus-alert-android.png)  
+![Captura de ecrã de exemplo que mostra uma mensagem de Alerta de Vírus do Lookout sobre a interface da aplicação do Lookout for Work. Mostra três botões: "Fechar", "Mais informações" e "Desinstalar".](./media/lookout-virus-alert-android.png)  
 
 Para recuperar o acesso que perdeu ao e-mail e aos dados da sua empresa, desinstale a aplicação duvidosa. Enquanto a aplicação permanecer no seu dispositivo, não poderá aceder aos recursos da empresa.    
 

@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 09/19/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: remote-actions
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: d2412418-d91a-4767-a3d6-bc88bb29caa2
@@ -15,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cd1d99e0c3853a7bf607dd2f64046c503068566d
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: a3ee6240d9efb0d09c41a6a9b1260cd4189927a8
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71732644"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72509428"
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>O que é a gestão de dispositivos do Microsoft Intune?
 
@@ -68,9 +69,9 @@ As ações disponíveis dependem da plataforma do dispositivo e da configuraçã
   - [Reposição do PIN do Windows 10](device-windows-pin-reset.md)
   - [Controlo remoto do Android](teamviewer-support.md)
   - [Sincronizar o dispositivo](device-sync.md)
-  - [Enviar notificação personalizada](custom-notifications.md#send-a-custom-notification-to-a-single-device) (Android, iOS)
+  - [Enviar notificação personalizada](custom-notifications.md#send-a-custom-notification-to-a-single-device) (Android, Ios)
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 - Em **Todos os dispositivos**, selecione um dispositivo para ver mais detalhes sobre esse dispositivo específico.
 - Selecione **Ações do dispositivo** para ver o estado das ações efetuadas nos dispositivos que gere.

@@ -9,6 +9,7 @@ ms.date: 09/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: cfd214bc-f072-4808-af2e-a3cbf7af9bca
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 16d7142e6dc38a177f8820f60e7335b8b23a1eeb
-ms.sourcegitcommit: 8934b1abec96e18cee15a77107d37551766f7666
+ms.openlocfilehash: 68a44027c14e0a52d72fc032a6ab42413fa8df96
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71099789"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508298"
 ---
 # <a name="sign-in-to-company-portal"></a>Entrar no Portal da Empresa  
 
@@ -39,7 +40,7 @@ As etapas a seguir mostram capturas de tela do Portal da Empresa para iOS.
 
 1. Abra o aplicativo em seu dispositivo e toque **em entrar**.  
 
-   [![Captura de tela de exemplo da página de entrada portal da empresa. ](/intune-user-help/media/intune-ios-cp-signin-1908.png)](/intune-user-help/media/intune-ios-cp-signin-lightbox-1908.png#lightbox)  
+   [captura de tela ![Example da página de entrada de Portal da Empresa. ](/intune-user-help/media/intune-ios-cp-signin-1908.png)](/intune-user-help/media/intune-ios-cp-signin-lightbox-1908.png#lightbox)  
 
 
 2. Introduza a sua **Conta escolar ou profissional** e toque em **Seguinte**.
@@ -78,7 +79,7 @@ Se sua empresa usa cartões inteligentes para acessar seus computadores, é prov
 
    ![As instruções indicam para ir para a página https://microsoft.com/devicelogin com um código de acesso exclusivo a partir do computador de trabalho e, em seguida, para utilizar o código para iniciar sessão.](/intune-user-help/media/cp_ios_aad_signin_after_1804_006.png)
 
-3. Em seu outro dispositivo (aquele que você está usando para autenticar), abra o navegador e vá [https://microsoft.com/devicelogin](https://microsoft.com/devicelogin)para. Insira ou cole o código.  
+3. Em seu outro dispositivo (aquele que você está usando para autenticar), abra o navegador e vá para [https://microsoft.com/devicelogin](https://microsoft.com/devicelogin). Insira ou cole o código.  
 
    ![Uma imagem do browser do utilizador no computador de trabalho em vez da aplicação Portal da Empresa. A página “Início de sessão do dispositivo” apresentada solicita ao utilizador o código que recebeu na aplicação Portal da Empresa.](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_004.png)
 

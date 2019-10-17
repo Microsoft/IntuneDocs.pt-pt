@@ -8,18 +8,19 @@ manager: dougeby
 ms.date: 01/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 19641a36cf429773a8c0e06a90ee279d2baa06f7
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 271b49a4c927bccb5cd967ea99b0d7bd5c2bd515
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71730576"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72492350"
 ---
 # <a name="windows-10-and-windows-holographic-for-business-device-settings-to-run-as-a-dedicated-kiosk-using-intune"></a>Configurações do dispositivo Windows 10 e Windows Holographic para empresas para execução como um quiosque dedicado usando o Intune
 
@@ -43,15 +44,15 @@ Este artigo mostra como criar um perfil de configuração de dispositivo. Para o
 3. Introduza as seguintes propriedades:
 
    - **Nome**: introduza um nome descritivo para o novo perfil.
-   - **Descrição**: introduza uma descrição para o perfil. Esta definição é opcional, mas recomendada.
-   - **Plataforma**: Selecione **Windows 10 e posterior**
-   - **Tipo de perfil**: Selecionar **quiosque**
+   - **Descrição:** introduza uma descrição para o perfil. Esta definição é opcional, mas recomendada.
+   - **Plataforma**: selecione **Windows 10 e posterior**
+   - **Tipo de perfil**: selecione **quiosque**
 
 4. Em **configurações**, selecione um **modo de quiosque**. O **modo de quiosque** identifica o tipo de modo de quiosque suportado pela política. As opções incluem:
 
-    - **Não configurado** (padrão): A política não habilita o modo de quiosque.
-    - **Aplicativo único, quiosque de tela inteira**: O dispositivo é executado como uma conta de usuário único e o bloqueia em um único aplicativo da loja. Quando o utilizador inicia sessão, é iniciada uma aplicação específica. Este modo também impede que o utilizador abra novas aplicações ou mude a aplicação em execução.
-    - **Quiosque de vários aplicativos**: O dispositivo executa vários aplicativos da loja, aplicativos Win32 ou aplicativos de caixa de entrada do Windows usando a AUMID (ID do modelo de usuário do aplicativo). Apenas as aplicações que adicionar estarão disponíveis no dispositivo.
+    - **Não configurado** (predefinição): a política não ativa o modo de quiosque.
+    - **Quiosque de uma aplicação de ecrã inteiro**: o dispositivo é executado como uma única conta de utilizador e bloqueia-a para uma única aplicação da Loja. Quando o utilizador inicia sessão, é iniciada uma aplicação específica. Este modo também impede que o utilizador abra novas aplicações ou mude a aplicação em execução.
+    - **Quiosque de várias aplicações**: o dispositivo executa várias aplicações da Loja, aplicações Win32 ou aplicações do Windows da caixa de entrada através do ID do Modelo de Utilizador da Aplicação (AUMID). Apenas as aplicações que adicionar estarão disponíveis no dispositivo.
 
         A vantagem de um quiosque de várias aplicações ou dispositivos de objetivo fixo é o facto de proporcionar uma experiência fácil de compreender pelos utilizadores através do acesso às aplicações de que precisam. Além disso, também não lhes permite ver as aplicações de que não precisam.
 
@@ -63,7 +64,7 @@ Este artigo mostra como criar um perfil de configuração de dispositivo. Para o
 
 O perfil é criado e mostrado na lista de perfis. Em seguida, [atribua](device-profile-assign.md) o perfil.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 [Atribua o perfil](device-profile-assign.md) e [monitorize o respetivo estado](device-profile-monitor.md).
 

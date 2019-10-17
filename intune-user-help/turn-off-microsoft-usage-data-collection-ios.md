@@ -9,6 +9,7 @@ ms.date: 09/19/2017
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 6515f4c4-3821-49b0-9bfe-abdf8143c8d1
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2778a81e74937756624f7b988c302e7fa558dcc6
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: b2296c8d2096dec982d9f72ab461c3cffbfcd8cf
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61500971"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508187"
 ---
 # <a name="how-to-turn-off-microsoft-data-collection"></a>Como desativar a recolha de dados da Microsoft
 

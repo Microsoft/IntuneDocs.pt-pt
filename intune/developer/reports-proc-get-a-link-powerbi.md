@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 10/07/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: developer
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 5E5A35D3-88F8-441B-8A0B-C5D7A1E5137B
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9e8fadb625073af2a70d605d3ceabb9ba97906ae
-ms.sourcegitcommit: 46322ca7a92971e18dc0b230f436b9ca892b90c5
+ms.openlocfilehash: 8d7a5f67dfd8f7256559cb54d873ed48205ad751
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72008331"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72490421"
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>Estabelecer uma ligação ao Armazém de Dados com o Power BI
 
@@ -87,10 +88,10 @@ Com um cliente autenticado no Azure AD, o URL de OData liga-se ao ponto final RE
     1. Selecione **Conta organizacional**.  
     2. Escreva o nome de utilizador e a palavra-passe.  
     3. Selecione **Iniciar Sessão**.  
-    4. Selecione **Ligar**.  
+    4. Selecione **conectar**.  
 10. Selecione **Carregar**.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Pode encontrar respostas a perguntas sobre o seu ambiente, como o número de dispositivos inscritos por dia durante a última semana. Pode obter informações sobre o seu inquilino do Intune e população de clientes através dos relatórios do Power BI do Data Warehouse do Intune obtido no painel do Azure. No entanto, o Intune proporciona muitas outras formas de expandir ou reutilizar os dados. O Power BI e a API do Data Warehouse do Intune fornecem funcionalidades adicionais, por exemplo:
 

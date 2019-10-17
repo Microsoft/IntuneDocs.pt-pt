@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 12/09/2017
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: df4ce3f6-a093-432c-ab86-7a83865e389e
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c8a93bbb0d6defb6a71b2cd53c995129629e4574
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: be8fbb0bd96891eb3af3157deddfc325ebc5f2b9
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71731940"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508923"
 ---
 # <a name="symantec-endpoint-protection-mobile-connector"></a>Conector do Symantec Endpoint Protection Mobile
 
@@ -114,7 +115,7 @@ Detete ameaças na rede, tais como ataques **Man-in-the-middle**, e impeça a si
 
 Para obter mais informações, veja o [site da Symantec](https://www.skycure.com/skycure-microsoft-integration/).
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Veja a seguir os passos necessários para integrar o Intune com o SEP Mobile:
 

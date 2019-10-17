@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 01/01/2018
 ms.topic: archived
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 002241bf-6cd0-4c75-a4f0-891ac7e6721a
@@ -17,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8de39d0265b6ef4ce7e78f9bbe512928d2e098de
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 535ae4dd986940da17d247136b37185cfaa58b57
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71731792"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72510219"
 ---
 # <a name="help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune"></a>Ajude a proteger os PCs Windows com o Endpoint Protection para o Microsoft Intune
 
-[!INCLUDE [classic-portal](../../intune-classic/includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 O Microsoft Intune pode ajudá-lo a proteger os seus computadores geridos com o Endpoint Protection, que proporciona proteção em tempo real contra ameaças de software maligno, mantém as definições de software maligno atualizadas e analisa automaticamente os computadores. O Endpoint Protection também proporciona ferramentas que o ajudam a gerir e monitorizar ataques de software maligno.
 
@@ -74,9 +75,9 @@ Pode ver a política implementada do Endpoint Protection na página **Todas as P
 
 ## <a name="specify-endpoint-protection-service-settings"></a>Especificar as definições de serviço do Endpoint Protection
 
-|                                                 Definição de política                                                  |                                                                                                                                                                                                                                                                                                                                                                                                             Detalhes                                                                                                                                                                                                                                                                                                                                                                                                             |
+|                                                 Definição de política                                                  |                                                                                                                                                                                                                                                                                                                                                                                                             Details                                                                                                                                                                                                                                                                                                                                                                                                             |
 |-----------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                                  <strong>Instalar o Endpoint Protection</strong>                                   | Defina como <strong>Sim</strong> para instalar o Endpoint Protection em computadores geridos. Se uma aplicação de proteção de pontos finais de terceiros for detetada durante a instalação, o Endpoint Protection só será instalado se a definição <strong>Instalar o Endpoint Protection mesmo que se encontre instalada uma aplicação de proteção de pontos finais de terceiros</strong> estiver definida como <strong>Sim</strong>. <strong>Nota:</strong> Por padrão, o Intune Endpoint Protection é instalado em computadores gerenciados. Se não quiser instalar o Endpoint Protection nos seus computadores geridos, tem de definir explicitamente esta política para <strong>Não</strong>. Se o Endpoint Protection tiver sido anteriormente instalado e a política for atualizada para <strong>Não</strong>, o cliente do Endpoint Protection será desinstalado.<br />Valor recomendado: <strong>Sim</strong> |
+|                                  <strong>Instalar o Endpoint Protection</strong>                                   | Defina como <strong>Sim</strong> para instalar o Endpoint Protection em computadores geridos. Se uma aplicação de proteção de pontos finais de terceiros for detetada durante a instalação, o Endpoint Protection só será instalado se a definição <strong>Instalar o Endpoint Protection mesmo que se encontre instalada uma aplicação de proteção de pontos finais de terceiros</strong> estiver definida como <strong>Sim</strong>. <strong>Nota:</strong> o Endpoint Protection do Intune é instalado em computadores geridos por predefinição. Se não quiser instalar o Endpoint Protection nos seus computadores geridos, tem de definir explicitamente esta política para <strong>Não</strong>. Se o Endpoint Protection tiver sido anteriormente instalado e a política for atualizada para <strong>Não</strong>, o cliente do Endpoint Protection será desinstalado.<br />Valor recomendado: <strong>Sim</strong> |
 | <strong>Instalar o Endpoint Protection mesmo que se encontre instalada uma aplicação de proteção de pontos finais de terceiros</strong> |                                                                                                                                                                                                                                                                                                                Defina como <strong>Sim</strong> para instalar o Endpoint Protection do Microsoft Intune mesmo que seja detetada uma aplicação de proteção de pontos finais de terceiros.<br /><br />Valor recomendado: <strong>Sim</strong>                                                                                                                                                                                                                                                                                                                |
 |                                   <strong>Ativar o Endpoint Protection</strong>                                   |                                                                                                                                                                                                            Defina como <strong>Sim</strong> para ativar o Endpoint Protection do Microsoft Intune nos computadores que têm o cliente do Endpoint Protection.<br /><br />Se definir como <strong>Não</strong> e o Endpoint Protection do Microsoft Intune estiver instalado, a interface de utilizador do cliente do Endpoint Protection não será apresentada aos utilizadores e todas as funcionalidades de proteção estarão inativas.<br /><br />Valor recomendado: <strong>Sim</strong>                                                                                                                                                                                                             |
 |                                       <strong>Desativar IU de Cliente</strong>                                        |                                                                                                                                                                                                                                                                                                      Defina como <strong>Sim</strong> para ocultar a interface de utilizador do cliente Endpoint Protection do Microsoft Intune dos utilizadores (é necessário reiniciar o computador cliente para que as alterações sejam aplicadas).<br /><br />Valor recomendado: <strong>Não</strong>                                                                                                                                                                                                                                                                                                       |
@@ -90,12 +91,12 @@ Se tiver definido os valores da política das definições **Instalar o Endpoint
 
 ### <a name="specify-real-time-protection-settings"></a>Especificar definições de proteção em tempo real
 
-|Definição de política|Detalhes|
+|Definição de política|Details|
 |------------------|--------------------|
 |**Ativar proteção em tempo real**|Ativa a monitorização e análise de todos os ficheiros e aplicações acedidos. Também bloqueia aplicações e ficheiros maliciosos antes de estes serem executados em computadores.<br /><br />Valor recomendado: **Sim**|
 |**Analisar todas as transferências**|Permite a análise de todos os ficheiros e anexos transferidos da Internet para computadores.<br /><br />Valor recomendado: **Sim**|
 |**Monitorizar a atividade de programas e ficheiros em computadores**|Ativa a monitorização de ficheiros recebidos e ficheiros enviados e a atividade de programas em computadores. Com esta definição, o Endpoint Protection pode monitorizar a altura em que os ficheiros e programas começam a ser executados e alertá-lo relativamente a ações realizadas pelos mesmos ou ações efetuadas nos mesmos.<br /><br />Valor recomendado: **Sim**|
-|**Ficheiros monitorizados**|Permite-lhe escolher se apenas os ficheiros recebidos, os ficheiros enviados ou se todos os ficheiros são monitorizados.<br /><br />Valor recomendado: **Monitorar todos os arquivos**|
+|**Ficheiros monitorizados**|Permite-lhe escolher se apenas os ficheiros recebidos, os ficheiros enviados ou se todos os ficheiros são monitorizados.<br /><br />Valor recomendado: **Monitorizar todos os ficheiros**|
 |**Ativar a monitorização de comportamento**|Permite ao Endpoint Protection do Microsoft Intune verificar a existência de padrões específicos de atividades suspeitas em computadores cliente.<br /><br />Valor recomendado: **Sim**|
 |**Ativar o Sistema de Inspeção de Rede**|Ativa o Sistema de Inspeção de Rede (NIS) em computadores cliente. O NIS utiliza assinaturas de vulnerabilidades conhecidas do [Centro Microsoft de Proteção Contra Software Maligno](https://go.microsoft.com/fwlink/?LinkId=234249) para ajudar a detetar e a bloquear tráfego de rede malicioso.<br /><br />Valor recomendado: **Sim**|
 
@@ -112,7 +113,7 @@ Se tiver definido os valores da política das definições **Instalar o Endpoint
 
 ### <a name="specify-scan-options-settings"></a>Especificar definições de opções de análise
 
-|Definição de política|Detalhes|
+|Definição de política|Details|
 |------------------|--------------------|
 |**Executar uma análise completa após a instalação do Endpoint Protection**|Defina como **Sim** para permitir que o Endpoint Protection execute automaticamente uma análise completa do sistema após a instalação em computadores. Esta análise apenas é executada quando os computadores estão inativos, de forma a minimizar as consequências na produtividade do utilizador.<br /><br />Valor recomendado: **Sim**|
 |**Executar automaticamente uma análise completa, quando necessário, após remoção de software maligno**|Defina como **Sim** para permitir que o Endpoint Protection execute automaticamente uma análise completa do sistema em computadores após a remoção de software maligno, para ajudar a confirmar que não foram afetados outros ficheiros.<br /><br />Valor recomendado: **Sim**|
@@ -129,7 +130,7 @@ Se tiver definido os valores da política das definições **Instalar o Endpoint
 
 A definição **Escolher como o Endpoint Protection age em software maligno dos seguintes níveis de alerta** especifica a ação predefinida que o Endpoint Protection executa quando é detetado software maligno de vários níveis de alerta. Para cada nível de alerta, pode remover o software maligno, colocá-lo em quarentena ou efetuar a ação recomendada da Microsoft.
 
-Valor recomendado: **Ação recomendada**, que permite Endpoint Protection para a ação de recomendar.   
+Valor recomendado: **Ação recomendada**, que permite que o Endpoint Protection efetue uma ação recomendada.   
 
 ### <a name="decide-whether-to-choose-the-excluded-files-and-folders-settings"></a>Decidir se deve selecionar as definições de pastas e ficheiros excluídos
 
@@ -157,7 +158,7 @@ As tarefas seguintes ajudam-no a realizar várias tarefas de gestão em computad
   - Computador gerido – Inicie o software do cliente Endpoint Protection a partir da área de notificação do Windows. Selecione o separador **Atualizar** e, em seguida, selecione **Atualizar**.
 - Executar uma análise de software maligno:
   - Consola do Intune – a partir da área de trabalho **Grupos**, selecione os computadores que pretende analisar. Selecione **Executar uma Análise Completa de Software Maligno** ou **Executar uma Análise Rápida de Software Maligno**.
-  - Computador gerido – inicie o software do cliente Endpoint Protection a partir da área de notificação do Windows. Selecione **Rápida**, **Completa** ou **Personalizada** e, em seguida, selecione **Analisar agora**.
+  - Computador gerido – Inicie o software do cliente Endpoint Protection a partir da área de notificação do Windows. Selecione **Rápida**, **Completa** ou **Personalizada** e, em seguida, selecione **Analisar agora**.
 
 Pode ver o estado de uma tarefa remota ao selecionar a ligação **Tarefas Remotas** no canto inferior direito da consola do Intune. A caixa de diálogo **Estado da Tarefa Remota** indica as tarefas remotas atuais, o estado da tarefa, o nome do dispositivo e quaisquer erros comunicados. Também fornece uma ligação para informações de resolução de problemas, se adequado.
 
@@ -195,7 +196,7 @@ O Intune pode executar uma análise de software maligno completa ou rápida ao u
 2. Selecione a lista pendente **Tarefas Remotas** e, em seguida, selecione a tarefa para executar no computador remoto.
 
 ## <a name="need-more-help"></a>Precisa de mais ajuda?
-Para mais ajuda e suporte, consulte [Resolução de Problemas do Endpoint Protection no Microsoft Intune](troubleshoot-endpoint-protection-in-microsoft-intune.md).
+Para obter ajuda e suporte, consulte [Resolução de problemas do Endpoint Protection no Microsoft Intune](troubleshoot-endpoint-protection-in-microsoft-intune.md).
 
 ## <a name="see-also"></a>Consulte também
 [Políticas para proteger PCs Windows](policies-to-protect-windows-pcs-in-microsoft-intune.md)

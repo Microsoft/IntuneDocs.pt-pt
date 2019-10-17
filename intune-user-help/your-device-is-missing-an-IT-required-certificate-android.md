@@ -9,6 +9,7 @@ ms.date: 07/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: f0ba4cbb-ef0a-4335-86bf-f1d006867fa2
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 16c6708fb730c459f41fec573a939bfb4fb5ddda
-ms.sourcegitcommit: 549352bdea93cc2809e3e0010bfcc10bd44dc728
+ms.openlocfilehash: 25ec84946aec9562aedce12b4199269f8de06f76
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68862143"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72500026"
 ---
 # <a name="install-missing-certificate-required-by-your-organization"></a>Instalar o certificado ausente exigido pela sua organização  
 
@@ -42,7 +43,7 @@ Conclua as etapas para habilitar o acesso ao navegador primeiro. Depois disso, s
 Conclua estas etapas para habilitar o acesso ao navegador. Depois de habilitar o acesso, o Portal da Empresa instalará o certificado apropriado e continuará o registro.    
 
 1. No aplicativo Portal da Empresa, vá para o canto direito e selecione o menu.  
-2. Selecione **definições**.  
+2. Selecione **Definições**.  
 3. Ao lado de **habilitar o acesso ao navegador** , selecione **habilitar**.  
 4. Na tela administrador do dispositivo, selecione **Ativar**. 
 
@@ -83,6 +84,6 @@ Conclua estas etapas para identificar e instalar manualmente o certificado em se
 
 Se vir a mesma mensagem que diz "certificado em falta", como mostrado anteriormente, e já tiver seguido os passos, significa que, provavelmente, ainda há outro certificado que o suporte da empresa o vai ter de ajudar a instalar. Contacte o suporte da empresa para obter ajuda, ao utilizar as informações de contacto disponibilizadas no [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
 
-## <a name="next-steps"></a>Passos Seguintes  
+## <a name="next-steps"></a>Próximos passos  
 
 Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  

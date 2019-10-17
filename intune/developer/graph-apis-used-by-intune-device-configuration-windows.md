@@ -9,22 +9,23 @@ manager: dougeby
 ms.date: 03/04/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: developer
 ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1b87d87017b0e1df0b649cb1e50dd6353cb0d2e9
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: c99c166713b9e3d8614ebe8f2756a586356c5b3b
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71730304"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72490727"
 ---
-# <a name="graph-apis-and-matching-windows-10-csps-used-in-intune"></a>APIs de grafo e CSPs correspondentes do Windows 10 usados no Intune
+# <a name="graph-apis-and-matching-windows-10-csps-used-in-intune"></a>Graph APIs e CSPs do Windows 10 correspondentes utilizados no Intune
 
-Microsoft Intune usa as [entidades de API do Graph](https://docs.microsoft.com/graph/api/resources/intune-graph-overview) (abre outro site de documentos) para configurar dispositivos (**configuração de dispositivo**do**Intune** > ) executando o Windows 10 e posterior. O API do Graph usa CSPs (provedores de serviços de configuração) para ler, definir, alterar e/ou excluir definições de configuração em dispositivos.
+Microsoft Intune usa as [entidades de API do Graph](https://docs.microsoft.com/graph/api/resources/intune-graph-overview) (abre outro site de documentos) para configurar dispositivos (**Intune** > **configuração de dispositivo**) que executam o Windows 10 e posterior. O API do Graph usa CSPs (provedores de serviços de configuração) para ler, definir, alterar e/ou excluir definições de configuração em dispositivos.
 
 Esta lista se aplica a:
 
@@ -34,7 +35,7 @@ Este artigo lista as entidades de grafo e seus CSPs e URIs de deslocamento corre
 
 Essas informações são úteis para uma variedade de cenários. Por exemplo, consulte o que é usado pelo Intune, consulte configurações para incluir em configurações de OMA-URI personalizadas e assim por diante. 
 
-## <a name="windows-10-csps"></a>Windows 10 CSPs
+## <a name="windows-10-csps"></a>CSPs do Windows 10
 
 Para obter mais informações sobre os provedores de serviço de configuração do Windows 10, consulte a [referência do provedor de serviços de configuração](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference) (abre outro site de documentos).
 
@@ -44,15 +45,15 @@ A lista a seguir mostra a maioria das entidades de API do Graph usadas pelo Micr
 
 Para ver as versões do Windows 10 as APIs a seguir se aplicam, use a [referência do provedor de serviços de configuração](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference) do Windows 10 (abre outro site de documentos).
 
-### <a name="editionupgradeconfigurationlicense"></a>EditionUpgradeConfiguration.License 
+### <a name="editionupgradeconfigurationlicense"></a>EditionUpgradeConfiguration. License 
 **CSP**:./Device/Vendor/MSFT/WindowsLicensing  
 **URI de deslocamento**:/UpgradeEditionWithLicense
 
-### <a name="editionupgradeconfigurationlicensetype"></a>EditionUpgradeConfiguration.LicenseType 
+### <a name="editionupgradeconfigurationlicensetype"></a>EditionUpgradeConfiguration. LicenseType 
 **CSP**:./Device/Vendor/MSFT/WindowsLicensing  
 **URI de deslocamento**:/LicenseKeyType
 
-### <a name="editionupgradeconfigurationproductkey"></a>EditionUpgradeConfiguration.ProductKey 
+### <a name="editionupgradeconfigurationproductkey"></a>EditionUpgradeConfiguration. ProductKey 
 **CSP**:./Device/Vendor/MSFT/WindowsLicensing  
 **URI de deslocamento**:/UpgradeEditionWithProductKey
 
@@ -61,75 +62,75 @@ Para ver as versões do Windows 10 as APIs a seguir se aplicam, use a [referênc
 **URI de deslocamento**:/SMode/SwitchingPolicy
 
 ### <a name="sharedpcconfigurationaccountmanagerpolicy"></a>SharedPCConfiguration.AccountManagerPolicy 
-**CSP**: ./Vendor/MSFT/SharedPC  
-**Offset URI**: /DeletionPolicy, /DiskLevelCaching, /InactiveThreshold, /DiskLevelDeletion
+**CSP**:./Vendor/MSFT/SharedPC  
+**URI de deslocamento**:/DeletionPolicy,/DiskLevelCaching,/InactiveThreshold,/DiskLevelDeletion
 
 ### <a name="sharedpcconfigurationaccountmanagerpolicy-windows-holographic-for-business-edition-targeted-devices"></a>SharedPCConfiguration. AccountManagerPolicy (dispositivos Windows Holographic for Business Edition direcionados) 
-**CSP**: ./Vendor/MSFT/AccountManagement  
-**Offset URI**: /DeletionPolicy, /StorageCapacityStartDeletion, /StorageCapacityStopDeletion, /ProfileInactivityThreshold
+**CSP**:./Vendor/MSFT/AccountManagement  
+**URI de deslocamento**:/DeletionPolicy,/StorageCapacityStartDeletion,/StorageCapacityStopDeletion,/ProfileInactivityThreshold
 
 ### <a name="sharedpcconfigurationallowedaccounts"></a>SharedPCConfiguration.AllowedAccounts 
-**CSP**: ./Vendor/MSFT/SharedPC  
+**CSP**:./Vendor/MSFT/SharedPC  
 **URI de deslocamento**:/AccountModel
 
 ### <a name="sharedpcconfigurationallowlocalstorage"></a>SharedPCConfiguration.AllowLocalStorage 
-**CSP**: ./Vendor/MSFT/SharedPC  
+**CSP**:./Vendor/MSFT/SharedPC  
 **URI de deslocamento**:/RestrictLocalStorage
 
 ### <a name="sharedpcconfigurationdisableaccountmanager"></a>SharedPCConfiguration.DisableAccountManager 
-**CSP**: ./Vendor/MSFT/SharedPC  
+**CSP**:./Vendor/MSFT/SharedPC  
 **URI de deslocamento**:/EnableAccountManager
 
 ### <a name="sharedpcconfigurationdisableedupolicies"></a>SharedPCConfiguration.DisableEduPolicies 
-**CSP**: ./Vendor/MSFT/SharedPC  
+**CSP**:./Vendor/MSFT/SharedPC  
 **URI de deslocamento**:/SetEduPolicies
 
 ### <a name="sharedpcconfigurationdisablepowerpolicies"></a>SharedPCConfiguration.DisablePowerPolicies 
-**CSP**: ./Vendor/MSFT/SharedPC  
+**CSP**:./Vendor/MSFT/SharedPC  
 **URI de deslocamento**:/SetPowerPolicies
 
 ### <a name="sharedpcconfigurationdisablesigninonresume"></a>SharedPCConfiguration.DisableSignInOnResume 
-**CSP**: ./Vendor/MSFT/SharedPC  
+**CSP**:./Vendor/MSFT/SharedPC  
 **URI de deslocamento**:/SignInOnResume
 
-### <a name="sharedpcconfigurationenabled"></a>SharedPCConfiguration.Enabled 
-**CSP**: ./Vendor/MSFT/SharedPC  
+### <a name="sharedpcconfigurationenabled"></a>SharedPCConfiguration. Enabled 
+**CSP**:./Vendor/MSFT/SharedPC  
 **URI de deslocamento**:/EnableSharedPCMode
 
 ### <a name="sharedpcconfigurationidletimebeforesleepinseconds"></a>SharedPCConfiguration.IdleTimeBeforeSleepInSeconds 
-**CSP**: ./Vendor/MSFT/SharedPC  
+**CSP**:./Vendor/MSFT/SharedPC  
 **URI de deslocamento**:/InactiveThreshold
 
 ### <a name="sharedpcconfigurationkioskappdisplayname"></a>SharedPCConfiguration.KioskAppDisplayName 
-**CSP**: ./Vendor/MSFT/SharedPC  
+**CSP**:./Vendor/MSFT/SharedPC  
 **URI de deslocamento**:/KioskModeUserTileDisplayText
 
 ### <a name="sharedpcconfigurationkioskappusermodelid"></a>SharedPCConfiguration.KioskAppUserModelId 
-**CSP**: ./Vendor/MSFT/SharedPC  
+**CSP**:./Vendor/MSFT/SharedPC  
 **URI de deslocamento**:/KioskModeAUMID
 
-### <a name="sharedpcconfigurationlocalstorage"></a>SharedPCConfiguration.LocalStorage 
-**CSP**: ./Vendor/MSFT/SharedPC  
+### <a name="sharedpcconfigurationlocalstorage"></a>SharedPCConfiguration. LocalStorage 
+**CSP**:./Vendor/MSFT/SharedPC  
 **URI de deslocamento**:/RestrictLocalStorage
 
 ### <a name="sharedpcconfigurationmaintenancestarttime"></a>SharedPCConfiguration.MaintenanceStartTime 
-**CSP**: ./Vendor/MSFT/SharedPC  
+**CSP**:./Vendor/MSFT/SharedPC  
 **URI de deslocamento**:/MaintenanceStartTime
 
-### <a name="sharedpcconfigurationsetaccountmanager"></a>SharedPCConfiguration.SetAccountManager
-**CSP**: ./Vendor/MSFT/SharedPC  
+### <a name="sharedpcconfigurationsetaccountmanager"></a>SharedPCConfiguration. accountmanager
+**CSP**:./Vendor/MSFT/SharedPC  
 **URI de deslocamento**:/EnableAccountManager
 
 ### <a name="sharedpcconfigurationsetedupolicies"></a>SharedPCConfiguration.SetEduPolicies 
-**CSP**: ./Vendor/MSFT/SharedPC  
+**CSP**:./Vendor/MSFT/SharedPC  
 **URI de deslocamento**:/SetEduPolicies
 
 ### <a name="sharedpcconfigurationsetpowerpolicies"></a>SharedPCConfiguration.SetPowerPolicies 
-**CSP**: ./Vendor/MSFT/SharedPC  
+**CSP**:./Vendor/MSFT/SharedPC  
 **URI de deslocamento**:/SetPowerPolicies
 
 ### <a name="sharedpcconfigurationsigninonresume"></a>SharedPCConfiguration.SignInOnResume 
-**CSP**: ./Vendor/MSFT/SharedPC  
+**CSP**:./Vendor/MSFT/SharedPC  
 **URI de deslocamento**:/SignInOnResume
 
 ### <a name="windows10endpointconfigurationsmartscreenblockoverrideforfiles"></a>Windows10endpointconfiguration.smartScreenBlockOverrideForFiles 
@@ -137,79 +138,79 @@ Para ver as versões do Windows 10 as APIs a seguir se aplicam, use a [referênc
 **URI de deslocamento**:/config/SmartScreen/PreventOverrideForFilesInShell
 
 ### <a name="windows10endpointprotectionconfigurationapplicationguardallowfilesaveonhost"></a>Windows10EndpointProtectionConfiguration.ApplicationGuardAllowFileSaveOnHost 
-**CSP**: ./Device/Vendor/MSFT/WindowsDefenderApplicationGuard  
+**CSP**:./Device/Vendor/MSFT/WindowsDefenderApplicationGuard  
 **URI de deslocamento**:/Settings/SaveFilesToHost
 
 ### <a name="windows10endpointprotectionconfigurationapplicationguardallowpersistence"></a>Windows10EndpointProtectionConfiguration.ApplicationGuardAllowPersistence 
-**CSP**: ./Device/Vendor/MSFT/WindowsDefenderApplicationGuard  
+**CSP**:./Device/Vendor/MSFT/WindowsDefenderApplicationGuard  
 **URI de deslocamento**:/Settings/AllowPersistence
 
 ### <a name="windows10endpointprotectionconfigurationapplicationguardallowprinttolocalprinters"></a>Windows10EndpointProtectionConfiguration.ApplicationGuardAllowPrintToLocalPrinters 
-**CSP**: ./Device/Vendor/MSFT/WindowsDefenderApplicationGuard  
+**CSP**:./Device/Vendor/MSFT/WindowsDefenderApplicationGuard  
 **URI de deslocamento**:/Settings/PrintingSettings
 
 ### <a name="windows10endpointprotectionconfigurationapplicationguardallowprinttonetworkprinters"></a>Windows10EndpointProtectionConfiguration.ApplicationGuardAllowPrintToNetworkPrinters 
-**CSP**: ./Device/Vendor/MSFT/WindowsDefenderApplicationGuard  
+**CSP**:./Device/Vendor/MSFT/WindowsDefenderApplicationGuard  
 **URI de deslocamento**:/Settings/PrintingSettings
 
 ### <a name="windows10endpointprotectionconfigurationapplicationguardallowprinttopdf"></a>Windows10EndpointProtectionConfiguration.ApplicationGuardAllowPrintToPDF 
-**CSP**: ./Device/Vendor/MSFT/WindowsDefenderApplicationGuard  
+**CSP**:./Device/Vendor/MSFT/WindowsDefenderApplicationGuard  
 **URI de deslocamento**:/Settings/PrintingSettings
 
 ### <a name="windows10endpointprotectionconfigurationapplicationguardallowprinttoxps"></a>Windows10EndpointProtectionConfiguration.ApplicationGuardAllowPrintToXPS 
-**CSP**: ./Device/Vendor/MSFT/WindowsDefenderApplicationGuard  
+**CSP**:./Device/Vendor/MSFT/WindowsDefenderApplicationGuard  
 **URI de deslocamento**:/Settings/PrintingSettings
 
 ### <a name="windows10endpointprotectionconfigurationapplicationguardallowvirtualgpu"></a>Windows10EndpointProtectionConfiguration.ApplicationGuardAllowVirtualGPU 
-**CSP**: ./Device/Vendor/MSFT/WindowsDefenderApplicationGuard  
+**CSP**:./Device/Vendor/MSFT/WindowsDefenderApplicationGuard  
 **URI de deslocamento**:/Settings/AllowVirtualGPU
 
 ### <a name="windows10endpointprotectionconfigurationapplicationguardblockclipboardsharing"></a>Windows10EndpointProtectionConfiguration.ApplicationGuardBlockClipboardSharing 
-**CSP**: ./Device/Vendor/MSFT/WindowsDefenderApplicationGuard  
+**CSP**:./Device/Vendor/MSFT/WindowsDefenderApplicationGuard  
 **URI de deslocamento**:/Settings/ClipboardSettings
 
 ### <a name="windows10endpointprotectionconfigurationapplicationguardblockfiletransfer"></a>Windows10EndpointProtectionConfiguration.ApplicationGuardBlockFileTransfer 
-**CSP**: ./Device/Vendor/MSFT/WindowsDefenderApplicationGuard  
+**CSP**:./Device/Vendor/MSFT/WindowsDefenderApplicationGuard  
 **URI de deslocamento**:/Settings/ClipboardFileType
 
 ### <a name="windows10endpointprotectionconfigurationapplicationguardblocknonenterprisecontent"></a>Windows10EndpointProtectionConfiguration.ApplicationGuardBlockNonEnterpriseContent 
-**CSP**: ./Device/Vendor/MSFT/WindowsDefenderApplicationGuard  
+**CSP**:./Device/Vendor/MSFT/WindowsDefenderApplicationGuard  
 **URI de deslocamento**:/Settings/BlockNonEnterpriseContent
 
 ### <a name="windows10endpointprotectionconfigurationapplicationguardenabled"></a>Windows10EndpointProtectionConfiguration.ApplicationGuardEnabled 
-**CSP**: ./Device/Vendor/MSFT/WindowsDefenderApplicationGuard  
+**CSP**:./Device/Vendor/MSFT/WindowsDefenderApplicationGuard  
 **URI de deslocamento**:/Settings/AllowWindowsDefenderApplicationGuard
 
 ### <a name="windows10endpointprotectionconfigurationapplicationguardforceauditing"></a>Windows10EndpointProtectionConfiguration.ApplicationGuardForceAuditing 
-**CSP**: ./Device/Vendor/MSFT/WindowsDefenderApplicationGuard  
+**CSP**:./Device/Vendor/MSFT/WindowsDefenderApplicationGuard  
 **URI de deslocamento**:/Audit/AuditApplicationGuard
 
 ### <a name="windows10endpointprotectionconfigurationbitlockerallowstandarduserencryption"></a>Windows10EndpointProtectionConfiguration.BitLockerAllowStandardUserEncryption 
-**CSP**: ./Device/Vendor/MSFT/BitLocker  
+**CSP**:./Device/Vendor/MSFT/BitLocker  
 **URI de deslocamento**:/AllowStandardUserEncryption
 
 ### <a name="windows10endpointprotectionconfigurationbitlockerdisablewarningforotherdiskencryption"></a>Windows10EndpointProtectionConfiguration.BitLockerDisableWarningForOtherDiskEncryption 
-**CSP**: ./Device/Vendor/MSFT/BitLocker  
+**CSP**:./Device/Vendor/MSFT/BitLocker  
 **URI de deslocamento**:/AllowWarningForOtherDiskEncryption
 
 ### <a name="windows10endpointprotectionconfigurationbitlockerenablestoragecardencryptiononmobile"></a>Windows10EndpointProtectionConfiguration.BitLockerEnableStorageCardEncryptionOnMobile 
-**CSP**: ./Device/Vendor/MSFT/BitLocker  
+**CSP**:./Device/Vendor/MSFT/BitLocker  
 **URI de deslocamento**:/RequireStorageCardEncryption
 
 ### <a name="windows10endpointprotectionconfigurationbitlockerencryptdevice"></a>Windows10EndpointProtectionConfiguration.BitLockerEncryptDevice 
-**CSP**: ./Device/Vendor/MSFT/BitLocker  
+**CSP**:./Device/Vendor/MSFT/BitLocker  
 **URI de deslocamento**:/RequireDeviceEncryption
 
 ### <a name="windows10endpointprotectionconfigurationbitlockerfixeddrivepolicy"></a>Windows10EndpointProtectionConfiguration.BitLockerFixedDrivePolicy 
-**CSP**: ./Device/Vendor/MSFT/BitLocker  
+**CSP**:./Device/Vendor/MSFT/BitLocker  
 **URI de deslocamento**:/EncryptionMethodByDriveType,/FixedDrivesRequireEncryption,/FixedDrivesRecoveryOptions
 
 ### <a name="windows10endpointprotectionconfigurationbitlockerremovabledrivepolicy"></a>Windows10EndpointProtectionConfiguration.BitLockerRemovableDrivePolicy 
-**CSP**: ./Device/Vendor/MSFT/BitLocker  
+**CSP**:./Device/Vendor/MSFT/BitLocker  
 **URI de deslocamento**:/EncryptionMethodByDriveType,/RemovableDrivesRequireEncryption
 
 ### <a name="windows10endpointprotectionconfigurationbitlockersystemdrivepolicy"></a>Windows10EndpointProtectionConfiguration.BitLockerSystemDrivePolicy 
-**CSP**: ./Device/Vendor/MSFT/BitLocker  
+**CSP**:./Device/Vendor/MSFT/BitLocker  
 **URI de deslocamento**:/EncryptionMethodByDriveType,/SystemDrivesRequireStartupAuthentication,/SystemDrivesMinimumPINLength,/SystemDrivesRecoveryMessage,/SystemDrivesRecoveryOptions
 
 ### <a name="windows10endpointprotectionconfigurationclientconnectionencryptionlevel"></a>windows10endpointprotectionconfiguration.clientConnectionEncryptionLevel 
@@ -518,7 +519,7 @@ Para ver as versões do Windows 10 as APIs a seguir se aplicam, use a [referênc
 **CSP**:./Vendor/MSFT/firewall  
 **URI de deslocamento**:/EnableFirewall,/DisableStealthMode,/shielded,/DisableUnicastResponsesToMulticastBroadcast,/DisableInboundNotifications,/AuthAppsAllowUserPrefMerge,/GlobalPortsAllowUserPrefMerge,/AllowLocalPolicyMerge,/ Outboundaction,/DefaultInboundAction,/DisableStealthModeIpsecSecuredPacketExemption,/AllowLocalIpsecPolicyMerge
 
-### <a name="windows10endpointprotectionconfigurationfirewallprofileprivatefirewallenabled"></a>windows10endpointprotectionconfiguration.firewallProfilePrivate.firewallEnabled 
+### <a name="windows10endpointprotectionconfigurationfirewallprofileprivatefirewallenabled"></a>windows10endpointprotectionconfiguration. firewallProfilePrivate. firewall habilitado 
 **CSP**:./Device/Vendor/MSFT/firewall  
 **URI de deslocamento**:/MdmStore/PrivateProfile/EnableFirewall
 
@@ -542,7 +543,7 @@ Para ver as versões do Windows 10 as APIs a seguir se aplicam, use a [referênc
 **CSP**:./Device/Vendor/MSFT/firewall  
 **URI de deslocamento**:/MdmStore/publicprofile/AllowLocalIpsecPolicyMerge
 
-### <a name="windows10endpointprotectionconfigurationfirewallprofilepublicfirewallenabled"></a>windows10endpointprotectionconfiguration.firewallProfilePublic.firewallEnabled 
+### <a name="windows10endpointprotectionconfigurationfirewallprofilepublicfirewallenabled"></a>windows10endpointprotectionconfiguration. firewallProfilePublic. firewall habilitado 
 **CSP**:./Device/Vendor/MSFT/firewall  
 **URI de deslocamento**:/MdmStore/publicprofile/EnableFirewall
 
@@ -564,7 +565,7 @@ Para ver as versões do Windows 10 as APIs a seguir se aplicam, use a [referênc
 
 ### <a name="windows10endpointprotectionconfigurationlanmanagerauthenticationlevel"></a>Windows10EndpointProtectionConfiguration.LanManagerAuthenticationLevel 
 **CSP**:./Vendor/MSFT/Policy  
-**URI de deslocamento**:\_/config/LocalPoliciesSecurityOptions/NetworkSecurity LANManagerAuthenticationLevel
+**URI de deslocamento**:/config/LocalPoliciesSecurityOptions/NetworkSecurity @ No__t-1LANManagerAuthenticationLevel
 
 ### <a name="windows10endpointprotectionconfigurationlanmanagerworkstationdisableinsecureguestlogons"></a>Windows10EndpointProtectionConfiguration.LanManagerWorkstationDisableInsecureGuestLogons 
 **CSP**:./Device/Vendor/MSFT/Policy  
@@ -576,195 +577,195 @@ Para ver as versões do Windows 10 as APIs a seguir se aplicam, use a [referênc
 
 ### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsadministratoraccountname"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsAdministratorAccountName 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI de deslocamento**:\_/config/LocalPoliciesSecurityOptions/accounts RenameAdministratorAccount
+**URI de deslocamento**:/config/LocalPoliciesSecurityOptions/accounts @ No__t-1RenameAdministratorAccount
 
 ### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsadministratorelevationpromptbehavior"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsAdministratorElevationPromptBehavior
 **CSP**:./Vendor/MSFT/Policy  
-**URI de deslocamento**:\_/config/LocalPoliciesSecurityOptions/userAccountControl BehaviorOfTheElevationPromptForAdministrators
+**URI de deslocamento**:/config/LocalPoliciesSecurityOptions/userAccountControl @ No__t-1BehaviorOfTheElevationPromptForAdministrators
 
 ### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsallowanonymousenumerationofsamaccountsandshares"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsAllowAnonymousEnumerationOfSAMAccountsAndShares 
 **CSP**:./Vendor/MSFT/Policy  
-**URI de deslocamento**:\_/config/LocalPoliciesSecurityOptions/NetworkAccess DoNotAllowAnonymousEnumerationOfSamAccountsAndShares
+**URI de deslocamento**:/config/LocalPoliciesSecurityOptions/NetworkAccess @ No__t-1DoNotAllowAnonymousEnumerationOfSamAccountsAndShares
 
 ### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsallowpku2uauthenticationrequests"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsAllowPKU2UAuthenticationRequests 
 **CSP**:./Vendor/MSFT/Policy  
-**URI de deslocamento**:\_/config/LocalPoliciesSecurityOptions/NetworkSecurity AllowPKU2UAuthenticationRequests
+**URI de deslocamento**:/config/LocalPoliciesSecurityOptions/NetworkSecurity @ No__t-1AllowPKU2UAuthenticationRequests
 
 ### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsallowremotecallstosecurityaccountsmanager"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsAllowRemoteCallsToSecurityAccountsManager 
 **CSP**:./Vendor/MSFT/Policy  
-**URI de deslocamento**:\_/config/LocalPoliciesSecurityOptions/NetworkAccess RestrictClientsAllowedToMakeRemoteCallsToSAM
+**URI de deslocamento**:/config/LocalPoliciesSecurityOptions/NetworkAccess @ No__t-1RestrictClientsAllowedToMakeRemoteCallsToSAM
 
 ### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsallowremotecallstosecurityaccountsmanagerhelperbool"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsAllowRemoteCallsToSecurityAccountsManagerHelperBool 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI de deslocamento**:\_/config/LocalPoliciesSecurityOptions/NetworkAccess RestrictClientsAllowedToMakeRemoteCallsToSAM
+**URI de deslocamento**:/config/LocalPoliciesSecurityOptions/NetworkAccess @ No__t-1RestrictClientsAllowedToMakeRemoteCallsToSAM
 
 ### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsallowsystemtobeshutdownwithouthavingtologon"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsAllowSystemToBeShutDownWithoutHavingToLogOn 
 **CSP**:./Vendor/MSFT/Policy  
-**URI de deslocamento**:\_/config/LocalPoliciesSecurityOptions/Shutdown AllowSystemToBeShutDownWithoutHavingToLogOn
+**URI de deslocamento**:/config/LocalPoliciesSecurityOptions/Shutdown @ No__t-1AllowSystemToBeShutDownWithoutHavingToLogOn
 
 ### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsallowuiaccessapplicationelevation"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsAllowUIAccessApplicationElevation 
 **CSP**:./Vendor/MSFT/Policy  
-**URI de deslocamento**:\_/config/LocalPoliciesSecurityOptions/userAccountControl AllowUIAccessApplicationsToPromptForElevation
+**URI de deslocamento**:/config/LocalPoliciesSecurityOptions/userAccountControl @ No__t-1AllowUIAccessApplicationsToPromptForElevation
 
 ### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsallowuiaccessapplicationsforsecurelocations"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsAllowUIAccessApplicationsForSecureLocations 
 **CSP**:./Vendor/MSFT/Policy  
-**URI de deslocamento**:\_/config/LocalPoliciesSecurityOptions/userAccountControl OnlyElevateUIAccessApplicationsThatAreInstalledInSecureLocations
+**URI de deslocamento**:/config/LocalPoliciesSecurityOptions/userAccountControl @ No__t-1OnlyElevateUIAccessApplicationsThatAreInstalledInSecureLocations
 
 ### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsallowundockwithouthavingtologon"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsAllowUndockWithoutHavingToLogon 
 **CSP**:./Vendor/MSFT/Policy  
-**URI de deslocamento**:\_/config/LocalPoliciesSecurityOptions/Devices AllowUndockWithoutHavingToLogon
+**URI de deslocamento**:/config/LocalPoliciesSecurityOptions/Devices @ No__t-1AllowUndockWithoutHavingToLogon
 
 ### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsblockmicrosoftaccounts"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsBlockMicrosoftAccounts 
 **CSP**:./Vendor/MSFT/Policy  
-**URI de deslocamento**:\_/config/LocalPoliciesSecurityOptions/accounts BlockMicrosoftAccounts
+**URI de deslocamento**:/config/LocalPoliciesSecurityOptions/accounts @ No__t-1BlockMicrosoftAccounts
 
 ### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsblockremotelogonwithblankpassword"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsBlockRemoteLogonWithBlankPassword 
 **CSP**:./Vendor/MSFT/Policy  
-**URI de deslocamento**:\_/config/LocalPoliciesSecurityOptions/accounts LimitLocalAccountUseOfBlankPasswordsToConsoleLogonOnly
+**URI de deslocamento**:/config/LocalPoliciesSecurityOptions/accounts @ No__t-1LimitLocalAccountUseOfBlankPasswordsToConsoleLogonOnly
 
 ### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsblockremoteopticaldriveaccess"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsBlockRemoteOpticalDriveAccess 
 **CSP**:./Vendor/MSFT/Policy  
-**URI de deslocamento**:\_/config/LocalPoliciesSecurityOptions/Devices RestrictCDROMAccessToLocallyLoggedOnUserOnly
+**URI de deslocamento**:/config/LocalPoliciesSecurityOptions/Devices @ No__t-1RestrictCDROMAccessToLocallyLoggedOnUserOnly
 
 ### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsblockusersinstallingprinterdrivers"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsBlockUsersInstallingPrinterDrivers 
 **CSP**:./Vendor/MSFT/Policy  
-**URI de deslocamento**:\_/config/LocalPoliciesSecurityOptions/Devices PreventUsersFromInstallingPrinterDriversWhenConnectingToSharedPrinters
+**URI de deslocamento**:/config/LocalPoliciesSecurityOptions/Devices @ No__t-1PreventUsersFromInstallingPrinterDriversWhenConnectingToSharedPrinters
 
 ### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsclearvirtualmemorypagefile"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsClearVirtualMemoryPageFile 
 **CSP**:./Vendor/MSFT/Policy  
-**URI de deslocamento**:\_/config/LocalPoliciesSecurityOptions/Shutdown ClearVirtualMemoryPageFile
+**URI de deslocamento**:/config/LocalPoliciesSecurityOptions/Shutdown @ No__t-1ClearVirtualMemoryPageFile
 
 ### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsclientdigitallysigncommunicationsalways"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsClientDigitallySignCommunicationsAlways 
 **CSP**:./Vendor/MSFT/Policy  
-**URI de deslocamento**:\_/config/LocalPoliciesSecurityOptions/MicrosoftNetworkClient DigitallySignCommunicationsAlways
+**URI de deslocamento**:/config/LocalPoliciesSecurityOptions/MicrosoftNetworkClient @ No__t-1DigitallySignCommunicationsAlways
 
 ### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsclientsendunencryptedpasswordtothirdpartysmbservers"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsClientSendUnencryptedPasswordToThirdPartySMBServers 
 **CSP**:./Vendor/MSFT/Policy  
-**URI de deslocamento**:\_/config/LocalPoliciesSecurityOptions/MicrosoftNetworkClient SendUnencryptedPasswordToThirdPartySMBServers
+**URI de deslocamento**:/config/LocalPoliciesSecurityOptions/MicrosoftNetworkClient @ No__t-1SendUnencryptedPasswordToThirdPartySMBServers
 
 ### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsdetectapplicationinstallationsandpromptforelevation"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsDetectApplicationInstallationsAndPromptForElevation 
 **CSP**:./Vendor/MSFT/Policy  
-**URI de deslocamento**:\_/config/LocalPoliciesSecurityOptions/userAccountControl DetectApplicationInstallationsAndPromptForElevation
+**URI de deslocamento**:/config/LocalPoliciesSecurityOptions/userAccountControl @ No__t-1DetectApplicationInstallationsAndPromptForElevation
 
 ### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsdisableadministratoraccount"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsDisableAdministratorAccount 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI de deslocamento**:\_/config/LocalPoliciesSecurityOptions/accounts EnableAdministratorAccountStatus
+**URI de deslocamento**:/config/LocalPoliciesSecurityOptions/accounts @ No__t-1EnableAdministratorAccountStatus
 
 ### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsdisableclientdigitallysigncommunicationsifserveragrees"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsDisableClientDigitallySignCommunicationsIfServerAgrees 
 **CSP**:./Vendor/MSFT/Policy  
-**URI de deslocamento**:\_/config/LocalPoliciesSecurityOptions/MicrosoftNetworkClient DigitallySignCommunicationsIfServerAgrees
+**URI de deslocamento**:/config/LocalPoliciesSecurityOptions/MicrosoftNetworkClient @ No__t-1DigitallySignCommunicationsIfServerAgrees
 
 ### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsdisableguestaccount"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsDisableGuestAccount 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI de deslocamento**:\_/config/LocalPoliciesSecurityOptions/accounts EnableGuestAccountStatus
+**URI de deslocamento**:/config/LocalPoliciesSecurityOptions/accounts @ No__t-1EnableGuestAccountStatus
 
 ### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsdisableserverdigitallysigncommunicationsalways"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsDisableServerDigitallySignCommunicationsAlways 
 **CSP**:./Vendor/MSFT/Policy  
-**URI de deslocamento**:\_/config/LocalPoliciesSecurityOptions/MicrosoftNetworkServer DigitallySignCommunicationsAlways
+**URI de deslocamento**:/config/LocalPoliciesSecurityOptions/MicrosoftNetworkServer @ No__t-1DigitallySignCommunicationsAlways
 
 ### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsdisableserverdigitallysigncommunicationsifclientagrees"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsDisableServerDigitallySignCommunicationsIfClientAgrees 
 **CSP**:./Vendor/MSFT/Policy  
-**URI de deslocamento**:\_/config/LocalPoliciesSecurityOptions/MicrosoftNetworkServer DigitallySignCommunicationsIfClientAgrees
+**URI de deslocamento**:/config/LocalPoliciesSecurityOptions/MicrosoftNetworkServer @ No__t-1DigitallySignCommunicationsIfClientAgrees
 
 ### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsdonotallowanonymousenumerationofsamaccounts"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsDoNotAllowAnonymousEnumerationOfSAMAccounts 
 **CSP**:./Vendor/MSFT/Policy  
-**URI de deslocamento**:\_/config/LocalPoliciesSecurityOptions/NetworkAccess DoNotAllowAnonymousEnumerationOfSAMAccounts
+**URI de deslocamento**:/config/LocalPoliciesSecurityOptions/NetworkAccess @ No__t-1DoNotAllowAnonymousEnumerationOfSAMAccounts
 
 ### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsdonotrequirectrlaltdel"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsDoNotRequireCtrlAltDel 
 **CSP**:./Vendor/MSFT/Policy  
-**URI de deslocamento**:\_/config/LocalPoliciesSecurityOptions/InteractiveLogon DoNotRequireCTRLALTDEL
+**URI de deslocamento**:/config/LocalPoliciesSecurityOptions/InteractiveLogon @ No__t-1DoNotRequireCTRLALTDEL
 
 ### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsdonotstorelanmanagerhashvalueonnextpasswordchange"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsDoNotStoreLANManagerHashValueOnNextPasswordChange 
 **CSP**:./Vendor/MSFT/Policy  
-**URI de deslocamento**:\_/config/LocalPoliciesSecurityOptions/NetworkSecurity DoNotStoreLANManagerHashValueOnNextPasswordChange
+**URI de deslocamento**:/config/LocalPoliciesSecurityOptions/NetworkSecurity @ No__t-1DoNotStoreLANManagerHashValueOnNextPasswordChange
 
 ### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsenableadministratoraccount"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsEnableAdministratorAccount 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI de deslocamento**:\_/config/LocalPoliciesSecurityOptions/accounts EnableAdministratorAccountStatus
+**URI de deslocamento**:/config/LocalPoliciesSecurityOptions/accounts @ No__t-1EnableAdministratorAccountStatus
 
 ### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsenableguestaccount"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsEnableGuestAccount 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI de deslocamento**:\_/config/LocalPoliciesSecurityOptions/accounts EnableGuestAccountStatus
+**URI de deslocamento**:/config/LocalPoliciesSecurityOptions/accounts @ No__t-1EnableGuestAccountStatus
 
 ### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsformatandejectofremovablemediaalloweduser"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsFormatAndEjectOfRemovableMediaAllowedUser 
 **CSP**:./Vendor/MSFT/Policy  
-**URI de deslocamento**:\_/config/LocalPoliciesSecurityOptions/Devices AllowedToFormatAndEjectRemovableMedia
+**URI de deslocamento**:/config/LocalPoliciesSecurityOptions/Devices @ No__t-1AllowedToFormatAndEjectRemovableMedia
 
 ### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsguestaccountname"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsGuestAccountName 
 **CSP**:./Vendor/MSFT/Policy  
-**URI de deslocamento**:\_/config/LocalPoliciesSecurityOptions/accounts RenameGuestAccount
+**URI de deslocamento**:/config/LocalPoliciesSecurityOptions/accounts @ No__t-1RenameGuestAccount
 
 ### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionshidelastsignedinuser"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsHideLastSignedInUser 
 **CSP**:./Vendor/MSFT/Policy  
-**URI de deslocamento**:\_/config/LocalPoliciesSecurityOptions/InteractiveLogon DoNotDisplayLastSignedIn
+**URI de deslocamento**:/config/LocalPoliciesSecurityOptions/InteractiveLogon @ No__t-1DoNotDisplayLastSignedIn
 
 ### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionshideusernameatsignin"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsHideUsernameAtSignIn 
 **CSP**:./Vendor/MSFT/Policy  
-**URI de deslocamento**:\_/config/LocalPoliciesSecurityOptions/InteractiveLogon DoNotDisplayUsernameAtSignIn
+**URI de deslocamento**:/config/LocalPoliciesSecurityOptions/InteractiveLogon @ No__t-1DoNotDisplayUsernameAtSignIn
 
 ### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsinformationdisplayedonlockscreen"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsInformationDisplayedOnLockScreen 
 **CSP**:./Vendor/MSFT/Policy  
-**URI de deslocamento**:\_/config/LocalPoliciesSecurityOptions/InteractiveLogon DisplayUserInformationWhenTheSessionIsLocked
+**URI de deslocamento**:/config/LocalPoliciesSecurityOptions/InteractiveLogon @ No__t-1DisplayUserInformationWhenTheSessionIsLocked
 
 ### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsinformationshownonlockscreen"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsInformationShownOnLockScreen 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI de deslocamento**:\_/config/LocalPoliciesSecurityOptions/InteractiveLogon DisplayUserInformationWhenTheSessionIsLocked
+**URI de deslocamento**:/config/LocalPoliciesSecurityOptions/InteractiveLogon @ No__t-1DisplayUserInformationWhenTheSessionIsLocked
 
 ### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionslogonmessagetext"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsLogOnMessageText 
 **CSP**:./Vendor/MSFT/Policy  
-**URI de deslocamento**:\_/config/LocalPoliciesSecurityOptions/InteractiveLogon MessageTextForUsersAttemptingToLogOn
+**URI de deslocamento**:/config/LocalPoliciesSecurityOptions/InteractiveLogon @ No__t-1MessageTextForUsersAttemptingToLogOn
 
 ### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionslogonmessagetitle"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsLogOnMessageTitle 
 **CSP**:./Vendor/MSFT/Policy  
-**URI de deslocamento**:\_/config/LocalPoliciesSecurityOptions/InteractiveLogon MessageTitleForUsersAttemptingToLogOn
+**URI de deslocamento**:/config/LocalPoliciesSecurityOptions/InteractiveLogon @ No__t-1MessageTitleForUsersAttemptingToLogOn
 
 ### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsmachineinactivitylimit"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsMachineInactivityLimit 
 **CSP**:./Vendor/MSFT/Policy  
-**URI de deslocamento**:\_/config/LocalPoliciesSecurityOptions/InteractiveLogon MachineInactivityLimit
+**URI de deslocamento**:/config/LocalPoliciesSecurityOptions/InteractiveLogon @ No__t-1MachineInactivityLimit
 
 ### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsmachineinactivitylimitinminutes"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsMachineInactivityLimitInMinutes 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI de deslocamento**:\_/config/LocalPoliciesSecurityOptions/InteractiveLogon MachineInactivityLimit
+**URI de deslocamento**:/config/LocalPoliciesSecurityOptions/InteractiveLogon @ No__t-1MachineInactivityLimit
 
 ### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsminimumsessionsecurityforntlmsspbasedclients"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsMinimumSessionSecurityForNtlmSspBasedClients 
 **CSP**:./Vendor/MSFT/Policy  
-**URI de deslocamento**:\_/config/LocalPoliciesSecurityOptions/NetworkSecurity MinimumSessionSecurityForNTLMSSPBasedClients
+**URI de deslocamento**:/config/LocalPoliciesSecurityOptions/NetworkSecurity @ No__t-1MinimumSessionSecurityForNTLMSSPBasedClients
 
 ### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsminimumsessionsecurityforntlmsspbasedservers"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsMinimumSessionSecurityForNtlmSspBasedServers 
 **CSP**:./Vendor/MSFT/Policy  
-**URI de deslocamento**:\_/config/LocalPoliciesSecurityOptions/NetworkSecurity MinimumSessionSecurityForNTLMSSPBasedServers
+**URI de deslocamento**:/config/LocalPoliciesSecurityOptions/NetworkSecurity @ No__t-1MinimumSessionSecurityForNTLMSSPBasedServers
 
 ### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsonlyelevatesignedexecutables"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsOnlyElevateSignedExecutables 
 **CSP**:./Vendor/MSFT/Policy  
-**URI de deslocamento**:\_/config/LocalPoliciesSecurityOptions/userAccountControl OnlyElevateExecutableFilesThatAreSignedAndValidated
+**URI de deslocamento**:/config/LocalPoliciesSecurityOptions/userAccountControl @ No__t-1OnlyElevateExecutableFilesThatAreSignedAndValidated
 
 ### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsrestrictanonymousaccesstonamedpipesandshares"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsRestrictAnonymousAccessToNamedPipesAndShares 
 **CSP**:./Vendor/MSFT/Policy  
-**URI de deslocamento**:\_/config/LocalPoliciesSecurityOptions/NetworkAccess RestrictAnonymousAccessToNamedPipesAndShares
+**URI de deslocamento**:/config/LocalPoliciesSecurityOptions/NetworkAccess @ No__t-1RestrictAnonymousAccessToNamedPipesAndShares
 
 ### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionssmartcardremovalbehavior"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsSmartCardRemovalBehavior 
 **CSP**:./Vendor/MSFT/Policy  
-**URI de deslocamento**:\_/config/LocalPoliciesSecurityOptions/InteractiveLogon SmartCardRemovalBehavior
+**URI de deslocamento**:/config/LocalPoliciesSecurityOptions/InteractiveLogon @ No__t-1SmartCardRemovalBehavior
 
 ### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsstandarduserelevationpromptbehavior"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsStandardUserElevationPromptBehavior 
 **CSP**:./Vendor/MSFT/Policy  
-**URI de deslocamento**:\_/config/LocalPoliciesSecurityOptions/userAccountControl BehaviorOfTheElevationPromptForStandardUsers
+**URI de deslocamento**:/config/LocalPoliciesSecurityOptions/userAccountControl @ No__t-1BehaviorOfTheElevationPromptForStandardUsers
 
 ### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsswitchtosecuredesktopwhenpromptingforelevation"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsSwitchToSecureDesktopWhenPromptingForElevation 
 **CSP**:./Vendor/MSFT/Policy  
-**URI de deslocamento**:\_/config/LocalPoliciesSecurityOptions/userAccountControl SwitchToTheSecureDesktopWhenPromptingForElevation
+**URI de deslocamento**:/config/LocalPoliciesSecurityOptions/userAccountControl @ No__t-1SwitchToTheSecureDesktopWhenPromptingForElevation
 
 ### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsuseadminapprovalmode"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsUseAdminApprovalMode 
 **CSP**:./Vendor/MSFT/Policy  
-**URI de deslocamento**:\_/config/LocalPoliciesSecurityOptions/userAccountControl UseAdminApprovalMode
+**URI de deslocamento**:/config/LocalPoliciesSecurityOptions/userAccountControl @ No__t-1UseAdminApprovalMode
 
 ### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsuseadminapprovalmodeforadministrators"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsUseAdminApprovalModeForAdministrators 
 **CSP**:./Vendor/MSFT/Policy  
-**URI de deslocamento**:\_/config/LocalPoliciesSecurityOptions/userAccountControl RunAllAdministratorsInAdminApprovalMode
+**URI de deslocamento**:/config/LocalPoliciesSecurityOptions/userAccountControl @ No__t-1RunAllAdministratorsInAdminApprovalMode
 
 ### <a name="windows10endpointprotectionconfigurationlocalsecurityoptionsvirtualizefileandregistrywritefailurestoperuserlocations"></a>Windows10EndpointProtectionConfiguration.LocalSecurityOptionsVirtualizeFileAndRegistryWriteFailuresToPerUserLocations 
 **CSP**:./Vendor/MSFT/Policy  
-**URI de deslocamento**:\_/config/LocalPoliciesSecurityOptions/userAccountControl VirtualizeFileAndRegistryWriteFailuresToPerUserLocations
+**URI de deslocamento**:/config/LocalPoliciesSecurityOptions/userAccountControl @ No__t-1VirtualizeFileAndRegistryWriteFailuresToPerUserLocations
 
 ### <a name="windows10endpointprotectionconfigurationnetworkicmpredirectsoverrideospfgeneratedroutes"></a>Windows10EndpointProtectionConfiguration.NetworkIcmpRedirectsOverrideOspfGeneratedRoutes 
 **CSP**:./Device/Vendor/MSFT/Policy  
@@ -820,7 +821,7 @@ Para ver as versões do Windows 10 as APIs a seguir se aplicam, use a [referênc
 
 ### <a name="windows10endpointprotectionconfigurationremotemanagementclientbasicauthentication"></a>Windows10EndpointProtectionConfiguration.RemoteManagementClientBasicAuthentication 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI de deslocamento**:\_cliente/config/RemoteManagement/AllowBasicAuthentication
+**URI de deslocamento**:/config/RemoteManagement/AllowBasicAuthentication @ No__t-1Client
 
 ### <a name="windows10endpointprotectionconfigurationremotemanagementclientdigestauthentication"></a>Windows10EndpointProtectionConfiguration.RemoteManagementClientDigestAuthentication 
 **CSP**:./Device/Vendor/MSFT/Policy  
@@ -828,11 +829,11 @@ Para ver as versões do Windows 10 as APIs a seguir se aplicam, use a [referênc
 
 ### <a name="windows10endpointprotectionconfigurationremotemanagementclientunencryptedtraffic"></a>Windows10EndpointProtectionConfiguration.RemoteManagementClientUnencryptedTraffic 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI de deslocamento**:\_cliente/config/RemoteManagement/AllowUnencryptedTraffic
+**URI de deslocamento**:/config/RemoteManagement/AllowUnencryptedTraffic @ No__t-1Client
 
 ### <a name="windows10endpointprotectionconfigurationremotemanagementservicebasicauthentication"></a>Windows10EndpointProtectionConfiguration.RemoteManagementServiceBasicAuthentication 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI de deslocamento**:\_serviço/config/RemoteManagement/AllowBasicAuthentication
+**URI de deslocamento**:/config/RemoteManagement/AllowBasicAuthentication @ No__t-1Service
 
 ### <a name="windows10endpointprotectionconfigurationremotemanagementservicestoringrunascredentials"></a>Windows10EndpointProtectionConfiguration.RemoteManagementServiceStoringRunAsCredentials 
 **CSP**:./Device/Vendor/MSFT/Policy  
@@ -840,7 +841,7 @@ Para ver as versões do Windows 10 as APIs a seguir se aplicam, use a [referênc
 
 ### <a name="windows10endpointprotectionconfigurationremotemanagementserviceunencryptedtraffic"></a>Windows10EndpointProtectionConfiguration.RemoteManagementServiceUnencryptedTraffic 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**URI de deslocamento**:\_serviço/config/RemoteManagement/AllowUnencryptedTraffic
+**URI de deslocamento**:/config/RemoteManagement/AllowUnencryptedTraffic @ No__t-1Service
 
 ### <a name="windows10endpointprotectionconfigurationrpcunauthenticatedclientoptions"></a>Windows10EndpointProtectionConfiguration.RpcUnauthenticatedClientOptions 
 **CSP**:./Device/Vendor/MSFT/Policy  
@@ -870,7 +871,7 @@ Para ver as versões do Windows 10 as APIs a seguir se aplicam, use a [referênc
 **CSP**:./Device/VENDOR/MSFT/Policy **offset URI**:/config/DeviceGuard/RequirePlatformSecurityFeatures
 
 ### <a name="windows10endpointprotectionconfigurationsmartscreenenableinshell"></a>Windows10EndpointProtectionConfiguration.SmartScreenEnableInShell 
-**CSP**: ./Device/Vendor/MSFT/Policy **Offset URI**: /Config/SmartScreen/EnableSmartScreenInShell
+**CSP**:./Device/VENDOR/MSFT/Policy **offset URI**:/config/SmartScreen/EnableSmartScreenInShell
 
 ### <a name="windows10endpointprotectionconfigurationsolicitedremoteassistance"></a>windows10endpointprotectionconfiguration.solicitedRemoteAssistance 
 **CSP**:./Device/Vendor/MSFT/Policy  
@@ -886,7 +887,7 @@ Para ver as versões do Windows 10 as APIs a seguir se aplicam, use a [referênc
 
 ### <a name="windows10endpointprotectionconfigurationuserrightsactaspartoftheoperatingsystem"></a>Windows10EndpointProtectionConfiguration.userRightsActAsPartOfTheOperatingSystem 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**Offset URI**: /Config/UserRights/ActAsPartOfTheOperatingSystem
+**URI de deslocamento**:/config/UserRights/ActAsPartOfTheOperatingSystem
 
 ### <a name="windows10endpointprotectionconfigurationuserrightsallowaccessfromnetwork"></a>Windows10EndpointProtectionConfiguration.UserRightsAllowAccessFromNetwork 
 **CSP**:./Device/Vendor/MSFT/Policy  
@@ -1022,14 +1023,14 @@ Para ver as versões do Windows 10 as APIs a seguir se aplicam, use a [referênc
 
 ### <a name="windows10endpointprotectionconfigurationxboxserviceslivegamesaveservicestartupmode"></a>Windows10EndpointProtectionConfiguration.XboxServicesLiveGameSaveServiceStartupMode 
 **CSP**:./Vendor/MSFT/Policy  
-**Offset URI**: /Config/SystemServices/XboxServicesLiveGameSaveServiceStartupMode
+**URI de deslocamento**:/config/SystemServices/XboxServicesLiveGameSaveServiceStartupMode
 
 ### <a name="windows10endpointprotectionconfigurationxboxserviceslivenetworkingservicestartupmode"></a>Windows10EndpointProtectionConfiguration.XboxServicesLiveNetworkingServiceStartupMode 
 **CSP**:./Vendor/MSFT/Policy  
 **URI de deslocamento**:/config/SystemServices/ConfigureXboxLiveNetworkingServiceStartupMode
 
 ### <a name="windows10enterprisemodernappmanagementconfigurationuninstallbuiltinapps"></a>Windows10EnterpriseModernAppManagementConfiguration.UninstallBuiltInApps
-**CSP**: N/A API do Graph apenas chamar **URI de deslocamento**: N/r API do Graph somente chamada
+**CSP**: n/a API do Graph chamar apenas o **URI de deslocamento**: n/a API do Graph chamada somente
 
 ### <a name="windows10generalconfigurationaccountsblockaddingnonmicrosoftaccountemail"></a>Windows10GeneralConfiguration.AccountsBlockAddingNonMicrosoftAccountEmail 
 **CSP**:./Vendor/MSFT/Policy  
@@ -1060,15 +1061,15 @@ Para ver as versões do Windows 10 as APIs a seguir se aplicam, use a [referênc
 **URI de deslocamento**:/config/AppRuntime/AllowMicrosoftAccountsToBeOptional
 
 ### <a name="windows10generalconfigurationassignedaccessmultimodeprofiles"></a>Windows10GeneralConfiguration.AssignedAccessMultiModeProfiles 
-**CSP**: ./Device/Vendor/MSFT/AssignedAccess  
+**CSP**:./Device/Vendor/MSFT/AssignedAccess  
 **URI de deslocamento**:/configuração
 
 ### <a name="windows10generalconfigurationassignedaccesssinglemodeappusermodelid"></a>Windows10GeneralConfiguration.AssignedAccessSingleModeAppUserModelId 
-**CSP**: ./Device/Vendor/MSFT/AssignedAccess  
+**CSP**:./Device/Vendor/MSFT/AssignedAccess  
 **URI de deslocamento**:/configuração
 
 ### <a name="windows10generalconfigurationassignedaccesssinglemodeusername"></a>Windows10GeneralConfiguration.AssignedAccessSingleModeUserName 
-**CSP**: ./Device/Vendor/MSFT/AssignedAccess  
+**CSP**:./Device/Vendor/MSFT/AssignedAccess  
 **URI de deslocamento**:/configuração
 
 ### <a name="windows10generalconfigurationauthenticationallowfidodevice"></a>Windows10GeneralConfiguration.AuthenticationAllowFIDODevice 
@@ -1095,7 +1096,7 @@ Para ver as versões do Windows 10 as APIs a seguir se aplicam, use a [referênc
 **CSP**:./Device/Vendor/MSFT/Policy  
 **URI de deslocamento**:/config/Autoplay/DisallowAutoplayForNonVolumeDevices
 
-### <a name="windows10generalconfigurationautoplaymode"></a>Windows10GeneralConfiguration.AutoPlayMode 
+### <a name="windows10generalconfigurationautoplaymode"></a>Windows10GeneralConfiguration. autoplaymode 
 **CSP**:./Device/Vendor/MSFT/Policy  
 **URI de deslocamento**:/config/Autoplay/TurnOffAutoPlay
 
@@ -1509,7 +1510,7 @@ Para ver as versões do Windows 10 as APIs a seguir se aplicam, use a [referênc
 
 ### <a name="windows10generalconfigurationenterprisecloudprintdiscoverymaxlimit"></a>Windows10GeneralConfiguration.EnterpriseCloudPrintDiscoveryMaxLimit 
 **CSP**:./User/Vendor/MSFT/Policy  
-**Offset URI**: /Config/EnterpriseCloudPrint/DiscoveryMaxPrinterLimit
+**URI de deslocamento**:/config/EnterpriseCloudPrint/DiscoveryMaxPrinterLimit
 
 ### <a name="windows10generalconfigurationenterprisecloudprintmopriadiscoveryresourceidentifier"></a>Windows10GeneralConfiguration.EnterpriseCloudPrintMopriaDiscoveryResourceIdentifier 
 **CSP**:./User/Vendor/MSFT/Policy  
@@ -1517,15 +1518,15 @@ Para ver as versões do Windows 10 as APIs a seguir se aplicam, use a [referênc
 
 ### <a name="windows10generalconfigurationenterprisecloudprintoauthauthority"></a>Windows10GeneralConfiguration.EnterpriseCloudPrintOAuthAuthority 
 **CSP**:./User/Vendor/MSFT/Policy  
-**Offset URI**: /Config/EnterpriseCloudPrint/CloudPrintOAuthAuthority
+**URI de deslocamento**:/config/EnterpriseCloudPrint/CloudPrintOAuthAuthority
 
 ### <a name="windows10generalconfigurationenterprisecloudprintoauthclientidentifier"></a>Windows10GeneralConfiguration.EnterpriseCloudPrintOAuthClientIdentifier 
 **CSP**:./User/Vendor/MSFT/Policy  
-**Offset URI**: /Config/EnterpriseCloudPrint/CloudPrintOAuthAuthority
+**URI de deslocamento**:/config/EnterpriseCloudPrint/CloudPrintOAuthAuthority
 
 ### <a name="windows10generalconfigurationenterprisecloudprintresourceidentifier"></a>Windows10GeneralConfiguration.EnterpriseCloudPrintResourceIdentifier 
 **CSP**:./User/Vendor/MSFT/Policy  
-**Offset URI**: /Config/EnterpriseCloudPrint/CloudPrintResourceId
+**URI de deslocamento**:/config/EnterpriseCloudPrint/CloudPrintResourceId
 
 ### <a name="windows10generalconfigurationexperienceblockconsumerspecificfeatures"></a>Windows10GeneralConfiguration.ExperienceBlockConsumerSpecificFeatures 
 **CSP**:./Device/Vendor/MSFT/Policy  
@@ -1669,7 +1670,7 @@ Para ver as versões do Windows 10 as APIs a seguir se aplicam, use a [referênc
 
 ### <a name="windows10generalconfigurationinternetexplorerinternetzonedonotrunantimalwareagainstactivexcontrols"></a>Windows10GeneralConfiguration.InternetExplorerInternetZoneDoNotRunAntimalwareAgainstActiveXControls 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**Offset URI**: /Config/InternetExplorer/InternetZoneDoNotRunAntimalwareAgainstActiveXControls
+**URI de deslocamento**:/config/InternetExplorer/InternetZoneDoNotRunAntimalwareAgainstActiveXControls
 
 ### <a name="windows10generalconfigurationinternetexplorerinternetzonedotnetframeworkreliantcomponents"></a>Windows10GeneralConfiguration.InternetExplorerInternetZoneDotNetFrameworkReliantComponents 
 **CSP**:./Device/Vendor/MSFT/Policy  
@@ -1754,7 +1755,7 @@ Para ver as versões do Windows 10 as APIs a seguir se aplicam, use a [referênc
 
 ### <a name="windows10generalconfigurationinternetexplorerinternetzonesecuritywarningforpotentiallyunsafefiles"></a>Windows10GeneralConfiguration.InternetExplorerInternetZoneSecurityWarningForPotentiallyUnsafeFiles 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**Offset URI**: /Config/InternetExplorer/InternetZoneShowSecurityWarningForPotentiallyUnsafeFiles
+**URI de deslocamento**:/config/InternetExplorer/InternetZoneShowSecurityWarningForPotentiallyUnsafeFiles
 
 ### <a name="windows10generalconfigurationinternetexplorerinternetzonesmartscreen"></a>Windows10GeneralConfiguration.InternetExplorerInternetZoneSmartScreen 
 **CSP**:./Device/Vendor/MSFT/Policy  
@@ -1782,7 +1783,7 @@ Para ver as versões do Windows 10 as APIs a seguir se aplicam, use a [referênc
 
 ### <a name="windows10generalconfigurationinternetexplorerlocalmachinezonedonotrunantimalwareagainstactivexcontrols"></a>Windows10GeneralConfiguration.InternetExplorerLocalMachineZoneDoNotRunAntimalwareAgainstActiveXControls 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**Offset URI**: /Config/InternetExplorer/LocalMachineZoneDoNotRunAntimalwareAgainstActiveXControls
+**URI de deslocamento**:/config/InternetExplorer/LocalMachineZoneDoNotRunAntimalwareAgainstActiveXControls
 
 ### <a name="windows10generalconfigurationinternetexplorerlocalmachinezonejavapermissions"></a>Windows10GeneralConfiguration.InternetExplorerLocalMachineZoneJavaPermissions 
 **CSP**:./Device/Vendor/MSFT/Policy  
@@ -1894,7 +1895,7 @@ Para ver as versões do Windows 10 as APIs a seguir se aplicam, use a [referênc
 
 ### <a name="windows10generalconfigurationinternetexplorerrestrictedzonedonotrunantimalwareagainstactivexcontrols"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneDoNotRunAntimalwareAgainstActiveXControls 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**Offset URI**: /Config/InternetExplorer/RestrictedSitesZoneDoNotRunAntimalwareAgainstActiveXControls
+**URI de deslocamento**:/config/InternetExplorer/RestrictedSitesZoneDoNotRunAntimalwareAgainstActiveXControls
 
 ### <a name="windows10generalconfigurationinternetexplorerrestrictedzonedotnetframeworkreliantcomponents"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneDotNetFrameworkReliantComponents 
 **CSP**:./Device/Vendor/MSFT/Policy  
@@ -1998,7 +1999,7 @@ Para ver as versões do Windows 10 as APIs a seguir se aplicam, use a [referênc
 
 ### <a name="windows10generalconfigurationinternetexplorerrestrictedzonesecuritywarningforpotentiallyunsafefiles"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneSecurityWarningForPotentiallyUnsafeFiles 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**Offset URI**: /Config/InternetExplorer/RestrictedSitesZoneShowSecurityWarningForPotentiallyUnsafeFiles
+**URI de deslocamento**:/config/InternetExplorer/RestrictedSitesZoneShowSecurityWarningForPotentiallyUnsafeFiles
 
 ### <a name="windows10generalconfigurationinternetexplorerrestrictedzonesmartscreen"></a>Windows10GeneralConfiguration.InternetExplorerRestrictedZoneSmartScreen 
 **CSP**:./Device/Vendor/MSFT/Policy  
@@ -2026,7 +2027,7 @@ Para ver as versões do Windows 10 as APIs a seguir se aplicam, use a [referênc
 
 ### <a name="windows10generalconfigurationinternetexplorertrustedzonedonotrunantimalwareagainstactivexcontrols"></a>Windows10GeneralConfiguration.InternetExplorerTrustedZoneDoNotRunAntimalwareAgainstActiveXControls 
 **CSP**:./Device/Vendor/MSFT/Policy  
-**Offset URI**: /Config/InternetExplorer/TrustedSitesZoneDoNotRunAntimalwareAgainstActiveXControls
+**URI de deslocamento**:/config/InternetExplorer/TrustedSitesZoneDoNotRunAntimalwareAgainstActiveXControls
 
 ### <a name="windows10generalconfigurationinternetexplorertrustedzoneinitializeandscriptactivexcontrolsnotmarkedassafe"></a>Windows10GeneralConfiguration.InternetExplorerTrustedZoneInitializeAndScriptActiveXControlsNotMarkedAsSafe 
 **CSP**:./Device/Vendor/MSFT/Policy  
@@ -2138,7 +2139,7 @@ Para ver as versões do Windows 10 as APIs a seguir se aplicam, use a [referênc
 
 ### <a name="windows10generalconfigurationonedrivedisablefilesync"></a>Windows10GeneralConfiguration.OneDriveDisableFileSync 
 **CSP**:./Vendor/MSFT/Policy  
-**Offset URI**: /Config/System/DisableOneDriveFileSync
+**URI de deslocamento**:/config/System/DisableOneDriveFileSync
 
 ### <a name="windows10generalconfigurationpasswordblocksimple"></a>Windows10GeneralConfiguration.PasswordBlockSimple 
 **CSP**:./Vendor/MSFT/Policy  
@@ -2224,7 +2225,7 @@ Para ver as versões do Windows 10 as APIs a seguir se aplicam, use a [referênc
 **CSP**:./User/Vendor/MSFT/Policy  
 **URI de deslocamento**:/config/Education/DefaultPrinterName
 
-### <a name="windows10generalconfigurationprinternames"></a>Windows10GeneralConfiguration.PrinterNames 
+### <a name="windows10generalconfigurationprinternames"></a>Windows10GeneralConfiguration. Printernames 
 **CSP**:./User/Vendor/MSFT/Policy  
 **URI de deslocamento**:/config/Education/PrinterNames
 
@@ -2529,7 +2530,7 @@ Para ver as versões do Windows 10 as APIs a seguir se aplicam, use a [referênc
 **URI de deslocamento**:/config/taskmanager/AllowEndTask
 
 ### <a name="windows10generalconfigurationtenantlockdownrequirenetworkduringoutofboxexperience"></a>Windows10GeneralConfiguration.TenantLockdownRequireNetworkDuringOutOfBoxExperience 
-**CSP**: ./Vendor/MSFT/TenantLockdown  
+**CSP**:./Vendor/MSFT/TenantLockdown  
 **URI de deslocamento**:/RequireNetworkInOOBE
 
 ### <a name="windows10generalconfigurationusbblocked"></a>Windows10GeneralConfiguration.UsbBlocked 
@@ -2629,151 +2630,151 @@ Para ver as versões do Windows 10 as APIs a seguir se aplicam, use a [referênc
 **URI de deslocamento**:/config/ControlPolicyConflict/MDMWinsOverGP
 
 ### <a name="windows10secureassessmentconfigurationallowprinting"></a>Windows10SecureAssessmentConfiguration.AllowPrinting 
-**CSP**: ./Vendor/MSFT/SecureAssessment  
+**CSP**:./Vendor/MSFT/SecureAssessment  
 **URI de deslocamento**:/RequirePrinting
 
 ### <a name="windows10secureassessmentconfigurationallowscreencapture"></a>Windows10SecureAssessmentConfiguration.AllowScreenCapture 
-**CSP**: ./Vendor/MSFT/SecureAssessment  
+**CSP**:./Vendor/MSFT/SecureAssessment  
 **URI de deslocamento**:/AllowScreenMonitoring
 
 ### <a name="windows10secureassessmentconfigurationallowtextsuggestion"></a>Windows10SecureAssessmentConfiguration.AllowTextSuggestion 
-**CSP**: ./Vendor/MSFT/SecureAssessment  
+**CSP**:./Vendor/MSFT/SecureAssessment  
 **URI de deslocamento**:/AllowTextSuggestions
 
 ### <a name="windows10secureassessmentconfigurationconfigurationaccount"></a>Windows10SecureAssessmentConfiguration.ConfigurationAccount 
-**CSP**: ./Vendor/MSFT/SecureAssessment  
+**CSP**:./Vendor/MSFT/SecureAssessment  
 **URI de deslocamento**:/TesterAccount
 
 ### <a name="windows10secureassessmentconfigurationconfigurationaccounttype"></a>Windows10SecureAssessmentConfiguration.ConfigurationAccountType 
-**CSP**: ./Vendor/MSFT/SecureAssessment  
+**CSP**:./Vendor/MSFT/SecureAssessment  
 **URI de deslocamento**:/TesterAccount
 
 ### <a name="windows10secureassessmentconfigurationlaunchuri"></a>Windows10SecureAssessmentConfiguration.LaunchUri 
-**CSP**: ./Vendor/MSFT/SecureAssessment  
+**CSP**:./Vendor/MSFT/SecureAssessment  
 **URI de deslocamento**:/LaunchURI
 
 ### <a name="windows10teamgeneralconfigurationazureoperationalinsightsblocktelemetry"></a>Windows10TeamGeneralConfiguration.AzureOperationalInsightsBlockTelemetry 
-**CSP**: ./Vendor/MSFT/SurfaceHub  
+**CSP**:./Vendor/MSFT/SurfaceHub  
 **URI de deslocamento**:/MOMAgent/WorkspaceID e/MOMAgent/WorkspaceKey
 
 ### <a name="windows10teamgeneralconfigurationazureoperationalinsightsworkspaceid"></a>Windows10TeamGeneralConfiguration.AzureOperationalInsightsWorkspaceId 
-**CSP**: ./Vendor/MSFT/SurfaceHub  
+**CSP**:./Vendor/MSFT/SurfaceHub  
 **URI de deslocamento**:/MOMAgent/WorkspaceID
 
 ### <a name="windows10teamgeneralconfigurationazureoperationalinsightsworkspacekey"></a>Windows10TeamGeneralConfiguration.AzureOperationalInsightsWorkspaceKey 
-**CSP**: ./Vendor/MSFT/SurfaceHub  
+**CSP**:./Vendor/MSFT/SurfaceHub  
 **URI de deslocamento**:/MOMAgent/WorkspaceKey
 
 ### <a name="windows10teamgeneralconfigurationconnectappblockautolaunch"></a>Windows10TeamGeneralConfiguration.ConnectAppBlockAutoLaunch 
-**CSP**: ./Vendor/MSFT/SurfaceHub  
+**CSP**:./Vendor/MSFT/SurfaceHub  
 **URI de deslocamento**:/InBoxApps/Connect/AutoLaunch
 
 ### <a name="windows10teamgeneralconfigurationdeviceaccountblockexchangeservices"></a>Windows10TeamGeneralConfiguration.DeviceAccountBlockExchangeServices 
-**CSP**: ./Vendor/MSFT/SurfaceHub  
+**CSP**:./Vendor/MSFT/SurfaceHub  
 **URI de deslocamento**:/DeviceAccount/email
 
 ### <a name="windows10teamgeneralconfigurationdeviceaccountemailaddress"></a>Windows10TeamGeneralConfiguration.DeviceAccountEmailAddress 
-**CSP**: ./Vendor/MSFT/SurfaceHub  
+**CSP**:./Vendor/MSFT/SurfaceHub  
 **URI de deslocamento**:/DeviceAccount/email
 
 ### <a name="windows10teamgeneralconfigurationdeviceaccountexchangeserveraddress"></a>Windows10TeamGeneralConfiguration.DeviceAccountExchangeServerAddress 
-**CSP**: ./Vendor/MSFT/SurfaceHub  
+**CSP**:./Vendor/MSFT/SurfaceHub  
 **URI de deslocamento**:/DeviceAccount/ExchangeServer
 
 ### <a name="windows10teamgeneralconfigurationdeviceaccountrequirepasswordrotation"></a>Windows10TeamGeneralConfiguration.DeviceAccountRequirePasswordRotation 
-**CSP**: ./Vendor/MSFT/SurfaceHub  
+**CSP**:./Vendor/MSFT/SurfaceHub  
 **URI de deslocamento**:/DeviceAccount/PasswordRotationEnabled
 
 ### <a name="windows10teamgeneralconfigurationdeviceaccountsessioninitiationprotocoladdress"></a>Windows10TeamGeneralConfiguration.DeviceAccountSessionInitiationProtocolAddress 
-**CSP**: ./Vendor/MSFT/SurfaceHub  
+**CSP**:./Vendor/MSFT/SurfaceHub  
 **URI de deslocamento**:/DeviceAccount/SipAddress
 
 ### <a name="windows10teamgeneralconfigurationmaintenancewindowblocked"></a>Windows10TeamGeneralConfiguration.MaintenanceWindowBlocked 
-**CSP**: ./Vendor/MSFT/SurfaceHub  
+**CSP**:./Vendor/MSFT/SurfaceHub  
 **URI de deslocamento**:/MaintenanceHoursSimple/hours/Duration e/MaintenanceHoursSimple/hours/StartTime
 
 ### <a name="windows10teamgeneralconfigurationmaintenancewindowdurationinhours"></a>Windows10TeamGeneralConfiguration.MaintenanceWindowDurationInHours 
-**CSP**: ./Vendor/MSFT/SurfaceHub  
+**CSP**:./Vendor/MSFT/SurfaceHub  
 **URI de deslocamento**:/MaintenanceHoursSimple/hours/Duration
 
 ### <a name="windows10teamgeneralconfigurationmaintenancewindowstarttime"></a>Windows10TeamGeneralConfiguration.MaintenanceWindowStartTime 
-**CSP**: ./Vendor/MSFT/SurfaceHub  
+**CSP**:./Vendor/MSFT/SurfaceHub  
 **URI de deslocamento**:/MaintenanceHoursSimple/hours/StartTime
 
 ### <a name="windows10teamgeneralconfigurationmiracastblocked"></a>Windows10TeamGeneralConfiguration.MiracastBlocked 
-**CSP**: ./Vendor/MSFT/SurfaceHub  
+**CSP**:./Vendor/MSFT/SurfaceHub  
 **URI de deslocamento**:/InBoxApps/WirelessProjection/Enabled
 
 ### <a name="windows10teamgeneralconfigurationmiracastchannel"></a>Windows10TeamGeneralConfiguration.MiracastChannel 
-**CSP**: ./Vendor/MSFT/SurfaceHub  
+**CSP**:./Vendor/MSFT/SurfaceHub  
 **URI de deslocamento**:/InBoxApps/WirelessProjection/Channel
 
 ### <a name="windows10teamgeneralconfigurationmiracastrequirepin"></a>Windows10TeamGeneralConfiguration.MiracastRequirePin 
-**CSP**: ./Vendor/MSFT/SurfaceHub  
+**CSP**:./Vendor/MSFT/SurfaceHub  
 **URI de deslocamento**:/InBoxApps/WirelessProjection/PINRequired
 
 ### <a name="windows10teamgeneralconfigurationsettingsblockmymeetingsandfiles"></a>Windows10TeamGeneralConfiguration.SettingsBlockMyMeetingsAndFiles 
-**CSP**: ./Vendor/MSFT/SurfaceHub  
+**CSP**:./Vendor/MSFT/SurfaceHub  
 **URI de deslocamento**:/Properties/DoNotShowMyMeetingsAndFiles
 
 ### <a name="windows10teamgeneralconfigurationsettingsblocksessionresume"></a>Windows10TeamGeneralConfiguration.SettingsBlockSessionResume 
-**CSP**: ./Vendor/MSFT/SurfaceHub  
+**CSP**:./Vendor/MSFT/SurfaceHub  
 **URI de deslocamento**:/Properties/AllowSessionResume
 
 ### <a name="windows10teamgeneralconfigurationsettingsblocksigninsuggestions"></a>Windows10TeamGeneralConfiguration.SettingsBlockSigninSuggestions 
-**CSP**: ./Vendor/MSFT/SurfaceHub  
+**CSP**:./Vendor/MSFT/SurfaceHub  
 **URI de deslocamento**:/Properties/DisableSigninSuggestions
 
 ### <a name="windows10teamgeneralconfigurationsettingsdefaultvolume"></a>Windows10TeamGeneralConfiguration.SettingsDefaultVolume 
-**CSP**: ./Vendor/MSFT/SurfaceHub  
+**CSP**:./Vendor/MSFT/SurfaceHub  
 **URI de deslocamento**:/Properties/DefaultVolume
 
 ### <a name="windows10teamgeneralconfigurationsettingsscreentimeoutinminutes"></a>Windows10TeamGeneralConfiguration.SettingsScreenTimeoutInMinutes 
-**CSP**: ./Vendor/MSFT/SurfaceHub  
+**CSP**:./Vendor/MSFT/SurfaceHub  
 **URI de deslocamento**:/Properties/ScreenTimeout
 
 ### <a name="windows10teamgeneralconfigurationsettingssessiontimeoutinminutes"></a>Windows10TeamGeneralConfiguration.SettingsSessionTimeoutInMinutes 
-**CSP**: ./Vendor/MSFT/SurfaceHub  
+**CSP**:./Vendor/MSFT/SurfaceHub  
 **URI de deslocamento**:/Properties/SessionTimeout
 
 ### <a name="windows10teamgeneralconfigurationsettingssleeptimeoutinminutes"></a>Windows10TeamGeneralConfiguration.SettingsSleepTimeoutInMinutes 
-**CSP**: ./Vendor/MSFT/SurfaceHub  
+**CSP**:./Vendor/MSFT/SurfaceHub  
 **URI de deslocamento**:/Properties/SleepTimeout
 
 ### <a name="windows10teamgeneralconfigurationwelcomescreenbackgroundimageurl"></a>Windows10TeamGeneralConfiguration.WelcomeScreenBackgroundImageUrl 
-**CSP**: ./Vendor/MSFT/SurfaceHub  
+**CSP**:./Vendor/MSFT/SurfaceHub  
 **URI de deslocamento**:/InBoxApps/Welcome/CurrentBackgroundPath
 
 ### <a name="windows10teamgeneralconfigurationwelcomescreenblockautomaticwakeup"></a>Windows10TeamGeneralConfiguration.WelcomeScreenBlockAutomaticWakeUp 
-**CSP**: ./Vendor/MSFT/SurfaceHub  
+**CSP**:./Vendor/MSFT/SurfaceHub  
 **URI de deslocamento**:/InBoxApps/Welcome/AutoWakeScreen
 
 ### <a name="windows10teamgeneralconfigurationwelcomescreenmeetinginformation"></a>Windows10TeamGeneralConfiguration.WelcomeScreenMeetingInformation 
-**CSP**: ./Vendor/MSFT/SurfaceHub  
+**CSP**:./Vendor/MSFT/SurfaceHub  
 **URI de deslocamento**:/InBoxApps/Welcome/MeetingInfoOption
 
 ### <a name="windowsdefenderadvancedthreatprotectionconfigurationadvancedthreatprotectionoffboardingblob"></a>WindowsDefenderAdvancedThreatProtectionConfiguration.AdvancedThreatProtectionOffboardingBlob 
-**CSP**: ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection  
+**CSP**:./Device/Vendor/MSFT/WindowsAdvancedThreatProtection  
 **URI de deslocamento**:/Offboarding 
 
 ### <a name="windowsdefenderadvancedthreatprotectionconfigurationadvancedthreatprotectionoffboardingfilename"></a>WindowsDefenderAdvancedThreatProtectionConfiguration.AdvancedThreatProtectionOffboardingFilename
-**CSP**: ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection  
+**CSP**:./Device/Vendor/MSFT/WindowsAdvancedThreatProtection  
 **URI de deslocamento**:/Offboarding 
 
 ### <a name="windowsdefenderadvancedthreatprotectionconfigurationadvancedthreatprotectiononboardingblob"></a>WindowsDefenderAdvancedThreatProtectionConfiguration.AdvancedThreatProtectionOnboardingBlob 
-**CSP**: ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection  
+**CSP**:./Device/Vendor/MSFT/WindowsAdvancedThreatProtection  
 **URI de deslocamento**:/Onboarding 
 
 ### <a name="windowsdefenderadvancedthreatprotectionconfigurationadvancedthreatprotectiononboardingfilename"></a>WindowsDefenderAdvancedThreatProtectionConfiguration.AdvancedThreatProtectionOnboardingFilename 
-**CSP**: ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection  
+**CSP**:./Device/Vendor/MSFT/WindowsAdvancedThreatProtection  
 **URI de deslocamento**:/Onboarding 
 
 ### <a name="windowsdefenderadvancedthreatprotectionconfigurationallowsamplesharing"></a>WindowsDefenderAdvancedThreatProtectionConfiguration.AllowSampleSharing 
-**CSP**: ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection  
+**CSP**:./Device/Vendor/MSFT/WindowsAdvancedThreatProtection  
 **URI de deslocamento**:/Configuration/SampleSharing
 
 ### <a name="windowsdefenderadvancedthreatprotectionconfigurationenableexpeditedtelemetryreporting"></a>WindowsDefenderAdvancedThreatProtectionConfiguration.EnableExpeditedTelemetryReporting 
-**CSP**: ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection  
+**CSP**:./Device/Vendor/MSFT/WindowsAdvancedThreatProtection  
 **URI de deslocamento**:/Configuration/TelemetryReportingFrequency
 
 ### <a name="windowsdeliveryoptimizationconfigurationdeliveryoptimizationmode"></a>WindowsDeliveryOptimizationConfiguration.DeliveryOptimizationMode 
@@ -2925,16 +2926,16 @@ Para ver as versões do Windows 10 as APIs a seguir se aplicam, use a [referênc
 **URI de deslocamento**:/config/Update/PauseFeatureUpdatesStartTime
 
 ### <a name="windowsupdateforbusinessconfigurationfeatureupdatesrollbackstartdatetime"></a>WindowsUpdateForBusinessConfiguration.FeatureUpdatesRollbackStartDateTime
-**CSP**: N/A-API do Graph apenas **URI de deslocamento**: Somente API do Graph N/A
+**CSP**: n/a-API do Graph apenas **URI de deslocamento**: n/a-API do Graph somente
 
 ### <a name="windowsupdateforbusinessconfigurationfeatureupdateswillberolledback"></a>WindowsUpdateForBusinessConfiguration.FeatureUpdatesWillBeRolledBack 
-**CSP**: N/A-API do Graph apenas **URI de deslocamento**: Somente API do Graph N/A
+**CSP**: n/a-API do Graph apenas **URI de deslocamento**: n/a-API do Graph somente
 
 ### <a name="windowsupdateforbusinessconfigurationfeatureupdatesrollbackwindowindays"></a>WindowsUpdateForBusinessConfiguration.FeatureUpdatesRollbackWindowInDays
-**CSP**: N/A-API do Graph apenas **URI de deslocamento**: Somente API do Graph N/A
+**CSP**: n/a-API do Graph apenas **URI de deslocamento**: n/a-API do Graph somente
 
 ### <a name="windowsupdateforbusinessconfigurationinstallationschedule"></a>WindowsUpdateForBusinessConfiguration.InstallationSchedule
-**CSP**: ./Device/Vendor/MSFT/Policy **Offset URI**: /Config/Update/ActiveHoursStart, /Config/Update/ActiveHoursEnd, /Config/Update/ScheduledInstallDay,  /Config/Update/ScheduledInstallTime
+**CSP**:./Device/VENDOR/MSFT/Policy **offset URI**:/config/Update/ActiveHoursStart,/config/Update/ActiveHoursEnd,/config/Update/ScheduledInstallDay,/config/Update/ScheduledInstallTime
 
 ### <a name="windowsupdateforbusinessconfigurationmicrosoftupdateserviceallowed"></a>WindowsUpdateForBusinessConfiguration.MicrosoftUpdateServiceAllowed 
 **CSP**:./Device/Vendor/MSFT/Policy  
@@ -2957,10 +2958,10 @@ Para ver as versões do Windows 10 as APIs a seguir se aplicam, use a [referênc
 **URI de deslocamento**:/config/Update/PauseQualityUpdatesStartTime
 
 ### <a name="windowsupdateforbusinessconfigurationqualityupdatesrollbackstartdatetime"></a>WindowsUpdateForBusinessConfiguration.QualityUpdatesRollbackStartDateTime
-**CSP**: N/A-API do Graph apenas **URI de deslocamento**: Somente API do Graph N/A
+**CSP**: n/a-API do Graph apenas **URI de deslocamento**: n/a-API do Graph somente
 
 ### <a name="windowsupdateforbusinessconfigurationqualityupdateswillberolledback"></a>WindowsUpdateForBusinessConfiguration.QualityUpdatesWillBeRolledBack 
-**CSP**: N/A-API do Graph apenas **URI de deslocamento**: Somente API do Graph N/A
+**CSP**: n/a-API do Graph apenas **URI de deslocamento**: n/a-API do Graph somente
 
 ### <a name="windowsupdateforbusinessconfigurationscheduleimminentrestartwarninginminutes"></a>WindowsUpdateForBusinessConfiguration.ScheduleImminentRestartWarningInMinutes 
 **CSP**:./Device/Vendor/MSFT/Policy  
@@ -2983,7 +2984,7 @@ Para ver as versões do Windows 10 as APIs a seguir se aplicam, use a [referênc
 **URI de deslocamento**:/config/Update/SetDisablePauseUXAccess
 
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 - [Visão geral da configuração do dispositivo](../configuration/device-profiles.md)
 - [Referência do provedor de serviços de configuração](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference) (abre outro site de documentos)

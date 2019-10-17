@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 08/26/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: e31df2d2-bb1b-491b-9a71-04e0b18829c1
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c2b4e57ba348fcc6e6907159e395e50dbdf35d1f
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: e34e1cb30469593c8ec9e756659ad03589ae38bc
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71731660"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72509772"
 ---
 # <a name="endpoint-protection-issues-and-possible-solutions-in-microsoft-intune"></a>Problemas do Endpoint Protection e soluções possíveis no Microsoft Intune
 
@@ -36,7 +37,7 @@ Examine os logs de eventos e os códigos de erro para [solucionar problemas com 
 
 ### <a name="endpoint-protection-engine-unavailable"></a>Motor do Endpoint Protection indisponível
 
-**Causa potencial**: O motor do Intune Endpoint Protection foi danificado ou eliminado.
+**Causa potencial**: o mecanismo do Endpoint Protection do Intune foi corrompido ou excluído.
 
 **Soluções possíveis**:
 
@@ -57,30 +58,30 @@ Você pode receber uma mensagem informando que alguns recursos estão desabilita
 `Script scanning disabled`  
 `Network Inspection System disabled`  
 
-**Soluções possíveis**: Habilite esses recursos. Para obter diretrizes, consulte:
+**Soluções possíveis**: habilite esses recursos. Para obter diretrizes, consulte:
 
 - [Adicionar configurações do Endpoint Protection](../protect/endpoint-protection-configure.md)
 - [Windows Defender antivírus](../configuration/device-restrictions-windows-10.md#microsoft-defender-antivirus)
-- [Usuários finais: Ativar a proteção em tempo real para acessar os recursos da empresa](/intune-user-help/turn-on-defender-windows)
+- [Usuários finais: Ative a proteção em tempo real para acessar os recursos da empresa](/intune-user-help/turn-on-defender-windows)
 
 ### <a name="malware-definitions-out-of-date"></a>Definições de software maligno desatualizadas
 
 Esse status mostra quando as definições de malware no dispositivo estão desatualizadas em 14 dias ou mais. Por exemplo, a mensagem pode mostrar se o dispositivo está desconectado da Internet ou se as definições de malware estão desatualizadas.
 
-**Soluções possíveis**: Se as definições de malware estiverem desatualizadas, atualize as definições usando o [Windows Defender antivírus](../configuration/device-restrictions-windows-10.md#microsoft-defender-antivirus).
+**Soluções possíveis**: se as definições de malware estiverem desatualizadas, atualize as definições usando o [Windows Defender antivírus](../configuration/device-restrictions-windows-10.md#microsoft-defender-antivirus).
 
 ### <a name="full-scan-overdue-or-quick-scan-overdue"></a>Verificação completa vencida ou verificação rápida vencida
 
 Uma verificação completa ou verificação rápida não foi concluída por 14 dias. Esse cenário pode acontecer se o dispositivo for reiniciado durante uma verificação completa.
 
-**Soluções possíveis**: Se uma verificação estiver atrasada, você poderá executar uma verificação única ou agendar verificações recorrentes. Veja [Antivírus do Windows Defender](../configuration/device-restrictions-windows-10.md#microsoft-defender-antivirus).
+**Soluções possíveis**: se uma verificação estiver atrasada, você poderá executar uma verificação única ou agendar verificações recorrentes. Veja [Antivírus do Windows Defender](../configuration/device-restrictions-windows-10.md#microsoft-defender-antivirus).
 
 ### <a name="another-endpoint-protection-application-running"></a>Outra aplicação de Endpoint Protection em execução
 
 Outro aplicativo de proteção de ponto de extremidade está em execução e o dispositivo está íntegro.
 
-**Soluções possíveis**: Se outro aplicativo de proteção de ponto de extremidade estiver instalado e o Intune detectar esse aplicativo, o dispositivo poderá ficar instável.
+**Soluções possíveis**: se outro aplicativo de proteção de ponto de extremidade estiver instalado e o Intune detectar esse aplicativo, o dispositivo poderá ficar instável.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Obtenha [ajuda de suporte da Microsoft](get-support.md)ou use os [fóruns da Comunidade](https://social.technet.microsoft.com/Forums/en-US/home?category=microsoftintune).

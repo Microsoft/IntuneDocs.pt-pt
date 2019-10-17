@@ -8,18 +8,19 @@ manager: dougeby
 ms.date: 09/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 61a8815bdbb0121d727c80dda0421922e0531cf7
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: b7b4597106d1fffb65f112feae750aa7c8feefc0
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71730784"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72493980"
 ---
 # <a name="configure-device-restriction-settings-in-microsoft-intune"></a>Configurar definições de restrição de dispositivos no Microsoft Intune
 
@@ -43,9 +44,9 @@ Este artigo mostra como criar um perfil de restrições de dispositivo. Você ta
 2. Selecione **Configuração do dispositivo** > **Perfis** > **Criar perfil**.
 3. Introduza as seguintes propriedades:
 
-    - **Nome**: introduza um nome descritivo para a política. Atribua nomes às políticas de forma que possa identificá-las facilmente mais tarde. Por exemplo, um bom nome de política **é Ios: Bloquear câmera em dispositivos**.
-    - **Descrição**: introduza uma descrição para a política. Esta definição é opcional, mas recomendada.
-    - **Plataforma**: escolha a plataforma dos dispositivos. As opções são:  
+    - **Nome**: Insira um nome descritivo para a política. Atribua nomes às políticas de forma que possa identificá-las facilmente mais tarde. Por exemplo, um bom nome de política é **Ios: bloquear câmera em dispositivos**.
+    - **Descrição**: Insira uma descrição para a política. Esta definição é opcional, mas recomendada.
+    - **Plataforma**: escolha a plataforma dos seus dispositivos. As opções são:  
 
         - **Android**
         - **Android Enterprise**
@@ -55,7 +56,7 @@ Este artigo mostra como criar um perfil de restrições de dispositivo. Você ta
         - **Windows 8.1 e posterior**
         - **Windows 10 e posterior**
 
-    - **Tipo de perfil**: Selecione **restrições de dispositivo**.
+    - **Tipo de perfil**: selecione **restrições de dispositivo**.
 
         Para criar um perfil de restrições de dispositivo para dispositivos Windows 10 Team, como Surface Hub, escolha **restrições de dispositivo (Windows 10 Team)** .
 
@@ -75,7 +76,7 @@ Este artigo mostra como criar um perfil de restrições de dispositivo. Você ta
 
 O perfil é criado e mostrado na lista de perfis.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Depois que o perfil é criado, ele está pronto para ser atribuído. Em seguida, [atribua o perfil](../device-profile-assign.md) e [monitorize o estado](../device-profile-monitor.md).
 

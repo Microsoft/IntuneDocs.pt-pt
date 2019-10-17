@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/23/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: developer
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: E85DBB2D-67BB-4E10-82D6-E43046B9C43C
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3a1e797f1ed7b0e60d0f9550eaa9e571b8701ca4
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: f9740eed3ab727d76a9af4e46642d8279b310fd9
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71730236"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72490519"
 ---
 # <a name="change-log-for-the-intune-data-warehouse-api"></a>Registo de alterações da API do Armazém de Dados do Intune
 
@@ -37,12 +38,12 @@ _Lançado em abril de 2019_
 
 A tabela a seguir lista as coleções removidas recentes e as coleções de substituições no data warehouse do Intune.
 
-|    Collection                          |    Alterar     |    Informações adicionais                                                                                                                                                                                                                                                                                                                                                                 |
+|    Cole                          |    Alteração     |    Informações adicionais                                                                                                                                                                                                                                                                                                                                                                 |
 |----------------------------------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    mobileAppDeviceUserInstallStatus    |    Removidas    |    Use [mobileAppInstallStatusCounts](intune-data-warehouse-collections.md#mobileappinstallstatuscounts) em vez disso.                                                                                                                                                                                                                                                                     |
 |    enrollmentTypes                     |    Removidas    |    Use [deviceEnrollmentTypes](intune-data-warehouse-collections.md#deviceenrollmenttypes) em vez disso.                                                                                                                                                                                                                                                                                      |
 |    mdmStatuses                         |    Removidas    |    Use [complianceStates](intune-data-warehouse-collections.md#compliancestates) em vez disso.                                                                                                                                                                                                                                                                                               |
-|    workPlaceJoinStateTypes             |    Removidas    |    Em vez `azureAdRegistered` disso, use a propriedade nas coleções [Devices](intune-data-warehouse-collections.md#devices) e [devicePropertyHistories](intune-data-warehouse-collections.md#devicepropertyhistories) .                                                                                                                                                                                                             |
+|    workPlaceJoinStateTypes             |    Removidas    |    Em vez disso, use a propriedade `azureAdRegistered` nas coleções [dispositivos](intune-data-warehouse-collections.md#devices) e [devicePropertyHistories](intune-data-warehouse-collections.md#devicepropertyhistories) .                                                                                                                                                                                                             |
 |    clientRegistrationStateTypes        |    Removidas    |    Use [deviceRegistrationStates](intune-data-warehouse-collections.md#deviceregistrationstates) em vez disso.                                                                                                                                                                                                                                                                             |
 |    currentUser                         |    Removidas    |    Em vez disso, use a coleção [Users](intune-data-warehouse-collections.md#users) .                                                                                                                                                                                                                                                                                                      |
 |    mdmDeviceInventoryHistories         |    Removidas    |    Muitas das propriedades eram redundantes ou agora podem ser encontradas nas coleções [devicePropertyHistories](intune-data-warehouse-collections.md#devicepropertyhistories) ou [Devices](intune-data-warehouse-collections.md#devices) . Todas as propriedades **mdmDeviceInventoryHistories** que ainda não estiverem listadas com essas duas coleções não estarão mais disponíveis. Veja os detalhes abaixo.    |
@@ -51,7 +52,7 @@ A tabela a seguir lista as propriedades antigas encontradas anteriormente na col
 
 |    Propriedade antiga                |    Alteração/substituição                                                           |
 |--------------------------------|---------------------------------------------------------------------------------|
-|    CellularTechnology          |    cellularTechnology na coleção de dispositivos                                     |
+|    cellularTechnology          |    cellularTechnology na coleção de dispositivos                                     |
 |    deviceClientId              |    DeviceID na coleção de dispositivos                                               |
 |    deviceManufacturer          |    fabricante na coleção de dispositivos                                           |
 |    deviceModel                 |    modelo na coleção de dispositivos                                                  |
@@ -59,7 +60,7 @@ A tabela a seguir lista as propriedades antigas encontradas anteriormente na col
 |    deviceOsPlatform            |    deviceTypeKey na coleção de dispositivos                                          |
 |    deviceOsVersion             |    osVersion na coleção devicePropertyHistories                              |
 |    deviceType                  |    deviceTypeKey na coleção de dispositivos, referenciando a coleção deviceTypes    |
-|    encryptionState             |    Propriedade EncryptionState na coleção Devices                           |
+|    criptografiastate             |    Propriedade EncryptionState na coleção Devices                           |
 |    exchangeActiveSyncId        |    Propriedade easDeviceId na coleção Devices                               |
 |    exchangeDeviceId            |    easDeviceId na coleção de dispositivos                                            |
 |    imei                        |    IMEI na coleção de dispositivos                                                   |
@@ -70,7 +71,7 @@ A tabela a seguir lista as propriedades antigas encontradas anteriormente na col
 |    osName                      |    deviceTypeKey na coleção de dispositivos, referenciando a coleção deviceTypes    |
 |    phoneNumber                 |    phoneNumber na coleção de dispositivos                                            |
 |    platformType                |    modelo na coleção de dispositivos                                                  |
-|    product                     |    deviceTypeKey na coleção de dispositivos                                          |
+|    produto                     |    deviceTypeKey na coleção de dispositivos                                          |
 |    productVersion              |    osVersion na coleção devicePropertyHistories                              |
 |    serialNumber                |    serialNumber na coleção de dispositivos                                           |
 |    storageFree                 |    Propriedade freeStorageSpaceInBytes na coleção Devices                   |
@@ -82,10 +83,10 @@ A tabela a seguir lista as alterações nas propriedades encontradas na coleçã
 
 |    Propriedade antiga                  |    Alteração/substituição                                               |
 |----------------------------------|---------------------------------------------------------------------|
-|    categoryId                    |    deviceCategoryKey, fazendo referência à coleção deviceCategories       |
+|    Categoria                    |    deviceCategoryKey, fazendo referência à coleção deviceCategories       |
 |    certExpirationDate            |    Removidas                                                          |
 |    clientRegistrationStateKey    |    deviceRegistrationStateKey                                       |
-|    CreatedDate                   |    enrolledDateTime na coleção de dispositivos                           |
+|    createdDate                   |    enrolledDateTime na coleção de dispositivos                           |
 |    deviceTypeKey                 |    deviceTypeKey na coleção de dispositivos                              |
 |    easID                         |    easDeviceId na coleção de dispositivos                                |
 |    enrolledByUser                |    userId na coleção de dispositivos                                     |
@@ -98,13 +99,13 @@ A tabela a seguir lista as alterações nas propriedades encontradas na coleçã
 |    lastExchangeStatusUtc         |    Removidas                                                          |
 |    lastModifiedDateTimeUTC       |    Removidas                                                          |
 |    lastPolicyUpdateUtc           |    Removidas                                                          |
-|    ManagementAgentKey            |    managementStateKey                                               |
+|    managementAgentKey            |    managementStateKey                                               |
 |    fabricante                  |    fabricante na coleção de dispositivos                               |
 |    mdmStatusKey                  |    complianceStateKey, fazendo referência à coleção complianceStates    |
 |    modelo                         |    modelo na coleção de dispositivos                                      |
 |    osFamily                      |    conjunto de operatingSystem na coleção de dispositivos                            |
 |    osRevisionNumber              |    osVersion na coleção de dispositivos                                  |
-|    processorArchitecture         |    Removidas                                                          |
+|    ProcessorArchitecture         |    Removidas                                                          |
 |    referenceId                   |    azureAdDeviceId na coleção de dispositivos                            |
 |    serialNumber                  |    serialNumber na coleção de dispositivos                               |
 |    workplaceJoinStateKey         |    azureAdRegistered                                                |
@@ -113,12 +114,12 @@ A tabela a seguir lista as alterações nas propriedades encontradas na coleçã
 
 |    Propriedade antiga                  |    Alteração/substituição                                               |
 |----------------------------------|---------------------------------------------------------------------|
-|    categoryId                    |    deviceCategoryKey, fazendo referência à coleção deviceCategories       |
+|    Categoria                    |    deviceCategoryKey, fazendo referência à coleção deviceCategories       |
 |    certExpirationDate            |    Removidas                                                          |
 |    clientRegistrationStateKey    |    deviceRegistrationStateKey                                       |
-|    CreatedDate                   |    enrolledDateTime                                                 |
+|    createdDate                   |    enrolledDateTime                                                 |
 |    easId                         |    easDeviceId                                                      |
-|    enrolledByUser                |    userId                                                           |
+|    enrolledByUser                |    ID                                                           |
 |    enrollmentTypeKey             |    deviceEnrollmentTypeKey                                          |
 |    graphDeviceIsCompliant        |    Removidas                                                          |
 |    graphDeviceIsManaged          |    Removidas                                                          |
@@ -128,8 +129,8 @@ A tabela a seguir lista as alterações nas propriedades encontradas na coleçã
 |    lastExchangeStatusUtc         |    Removidas                                                          |
 |    lastPolicyUpdateUtc           |    Removidas                                                          |
 |    mdmStatusKey                  |    complianceStateKey, fazendo referência à coleção complianceStates    |
-|    osFamily                      |    operatingSystem                                                  |
-|    processorArchitecture         |    Removidas                                                          |
+|    osFamily                      |    Operacional                                                  |
+|    ProcessorArchitecture         |    Removidas                                                          |
 |    referenceId                   |    azureAdDeviceId                                                  |
 |    workplaceJoinStateKey         |    azureAdRegistered                                                |
 
@@ -143,7 +144,7 @@ A tabela a seguir lista as alterações nas propriedades encontradas na coleçã
 
 |    Propriedade antiga       |    Alteração/substituição    |
 |-----------------------|--------------------------|
-|    ApplicationKey     |    mamApplicationKey     |
+|    applicationKey     |    mamApplicationKey     |
 |    applicationName    |    mamApplicationName    |
 |    applicationId      |    mamApplicationId      |
 
@@ -160,7 +161,7 @@ A tabela a seguir lista as alterações nas propriedades encontradas na coleçã
 
 |    Propriedade antiga      |    Alteração/substituição    |
 |----------------------|--------------------------|
-|    ApplicationKey    |    mamApplicationKey     |
+|    applicationKey    |    mamApplicationKey     |
 
 A tabela a seguir lista as alterações nas propriedades encontradas na coleção de [usuários](intune-data-warehouse-collections.md#users) : 
 
@@ -168,7 +169,7 @@ A tabela a seguir lista as alterações nas propriedades encontradas na coleçã
 |-----------------------------|--------------------------|
 |    startDateInclusiveUtc    |    Removidas               |
 |    endDateInclusiveUtc      |    Removidas               |
-|    IsCurrent                |    Removidas               |
+|    isCurrent                |    Removidas               |
 
 ## <a name="1903"></a>1903
 _Lançado em março de 2019_
@@ -262,6 +263,6 @@ Agora pode criar relatórios e visualizações de dados com as informações de 
 - A entidade [**UserDeviceAssociation**](reports-ref-user-device.md) foi adicionada. A entidade **UserDeviceAssociation** contém associações de dispositivos do utilizador na sua organização. Agora pode criar relatórios e visualizações de dados com as informações de associação de dispositivos do utilizador que associam o utilizador às coleções de dispositivos de entidades.  
 - A entidade [**IntuneManagementExtension**](reports-ref-intunemanagementextension.md) foi adicionada. **IntuneManagementExtension** contém entidades para dispositivos móveis que controlam informações como o estado da versão e da instalação.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 - Saiba mais sobre [as novidades todas as semanas no Intune](../fundamentals/whats-new.md). Também pode descobrir quais são as alterações futuras, os avisos importantes sobre o serviço e as informações sobre versões anteriores.
 - Leia o [Blogue do Microsoft Intune](https://go.microsoft.com/fwlink/?LinkID=273882).

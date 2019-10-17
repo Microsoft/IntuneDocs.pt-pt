@@ -9,24 +9,24 @@ manager: dougeby
 ms.date: 01/01/2018
 ms.topic: archived
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: medium
-ms.technology: ''
 ms.assetid: 53c99d63-c312-442a-8a71-de1b10fcd39b
 ms.reviewer: owenyen
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0f9ad0474f3e69c8b55d1b7c6fa3d8e11c4423dc
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: b21ee66139cb37aba80d6f1b2e3f40b5ab3c77a3
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71732088"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502669"
 ---
 # <a name="manage-user-device-linking-for-windows-pcs"></a>Gerir a associação utilizador-dispositivo para PCs Windows
 
-[!INCLUDE [classic-portal](../../intune-classic/includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 As informações neste tópico aplicam-se apenas a computadores Windows que está a gerir como PCs através do cliente de software do Intune. 
 
@@ -46,7 +46,7 @@ Para associar um utilizador a um PC:
 
    - Para deixar o PC associado ao utilizador atual, se existir um, selecione **Cancelar**.
 
-   - Para remover o link para o usuário atual, se houver um, escolha <strong>remover link **&gt;** ok</strong>.
+   - Para remover o link para o usuário atual, se houver um, escolha <strong>remover link **&gt;** Ok</strong>.
 
    - Para associar o PC a um novo utilizador, selecione um utilizador na lista **Todos os utilizadores**. Confirme que os dados do utilizador estão corretos e, em seguida, escolha **OK**.
 

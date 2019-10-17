@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 07/15/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 099101e8-4b22-40ac-ba19-82ba5c71944c
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 59cde9d38523c3683d56c54b66b563b7a95c49f9
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 4c9b11e8968426a39c3bfc3d13a0a42c97a04f27
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71731116"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72497803"
 ---
 # <a name="add-an-ios-line-of-business-app-to-microsoft-intune"></a>Adicionar aplicações de linha de negócio iOS ao Microsoft Intune
 
@@ -35,7 +36,7 @@ Utilize as informações neste artigo para o ajudar a adicionar aplicações de 
 >
 >As aplicações LOB iOS têm um limite de tamanho máximo de 4 GB por aplicação.
 
-## <a name="step-1-specify-the-software-setup-file"></a>Passo 1: Especificar o ficheiro de configuração do software
+## <a name="step-1-specify-the-software-setup-file"></a>Passo 1: especificar o ficheiro de configuração do software
 
 1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. No painel **Intune**, selecione **Aplicações do cliente**.
@@ -43,32 +44,32 @@ Utilize as informações neste artigo para o ajudar a adicionar aplicações de 
 5. Acima da lista de aplicações, selecione **Adicionar**.
 6. No painel **Adicionar Aplicação**, selecione **Aplicação de linha de negócio**.
 
-## <a name="step-2-configure-the-app-package-file"></a>Passo 2: Configurar o ficheiro do pacote de aplicação
+## <a name="step-2-configure-the-app-package-file"></a>Passo 2: configurar o ficheiro de pacote de aplicação
 
 1. No painel **Adicionar aplicação**, selecione **Ficheiro de pacote de aplicação**.
 2. No painel **Ficheiro de pacote de aplicação**, selecione o botão Procurar. Em seguida, selecione um ficheiro de instalação do iOS com a extensão **.ipa**.
 3. Quando tiver terminado, selecione **OK**.
 
 
-## <a name="step-3-configure-app-information"></a>Passo 3: Configurar as informações da aplicação
+## <a name="step-3-configure-app-information"></a>Passo 3: configurar as informações da aplicação
 
 1. No painel **Adicionar aplicação**, selecione **Informações da aplicação**.
 2. No painel **Informações da aplicação**, adicione os detalhes da sua aplicação. Consoante a aplicação que tenha escolhido, alguns dos valores neste painel podem ser preenchidos automaticamente.
     - **Nome**: introduza o nome da aplicação tal como aparece no portal da empresa. Certifique-se de que todos os nomes de aplicações que utiliza são exclusivos. Se existir o mesmo nome duas vezes, só aparece uma das aplicações no portal da empresa.
-    - **Descrição**: Introduza uma descrição para a aplicação. A descrição aparece no portal da empresa.
-    - **Publicador**: Introduza o nome do publicador da aplicação.
-    - **Sistema operacional mínimo**: Na lista, escolha a versão mínima do sistema operacional na qual o aplicativo pode ser instalado. Se atribuir a aplicação a um dispositivo com um sistema operativo anterior, não será instalada.
-    - **Categoria**: selecione uma ou mais das categorias de aplicações incorporadas ou selecione uma categoria que tenha criado. As categorias permitem que os utilizadores encontrem a aplicação mais facilmente quando procurarem no portal da empresa.
-    - **Apresentar como aplicação em destaque no Portal da Empresa**: Apresente a aplicação de forma bem visível na página principal do portal da empresa quando os utilizadores procurarem aplicações.
-    - **URL de Informações**: Opcionalmente, introduza o URL de um site que contenha informações sobre esta aplicação. O URL aparece no portal da empresa.
-    - **URL de Privacidade**: Opcionalmente, introduza o URL de um site que contenha informações sobre a privacidade desta aplicação. O URL aparece no portal da empresa.
+    - **Descrição**: introduza uma descrição para a aplicação. A descrição aparece no portal da empresa.
+    - **Publicador**: introduza o nome do publicador da aplicação.
+    - **Sistema Operativo Mínimo**: na lista, escolha a versão mínima do sistema operativo no qual a aplicação pode ser instalada. Se atribuir a aplicação a um dispositivo com um sistema operativo anterior, não será instalada.
+    - **Categoria**: selecione uma ou mais categorias das aplicações incorporadas ou, em alternativa, uma categoria criada por si. As categorias permitem que os utilizadores encontrem a aplicação mais facilmente quando procurarem no portal da empresa.
+    - **Apresentar esta aplicação em destaque no Portal da Empresa**: apresente a aplicação de forma destacada na página principal do portal da empresa quando os utilizadores procurarem aplicações.
+    - **URL de Informações**: opcionalmente, introduza o URL de um site que contenha informações sobre esta aplicação. O URL aparece no portal da empresa.
+    - **URL de Privacidade**: opcionalmente, introduza um URL para um site que contenha informações sobre a privacidade desta aplicação. O URL aparece no portal da empresa.
     - **Programador**: opcionalmente, introduza o nome do programador da aplicação.
     - **Proprietário**: opcionalmente, introduza o nome do proprietário desta aplicação. Por exemplo, **Departamento de RH**.
     - **Notas**: introduza quaisquer notas que queira associar a esta aplicação.
     - **Logótipo**: carregue um ícone associado à aplicação. Este ícone é apresentado com a aplicação quando os utilizadores procurarem no portal da empresa.
 3. Quando tiver terminado, selecione **OK**.
 
-## <a name="step-4-finish-up"></a>Passo 4: Concluir
+## <a name="step-4-finish-up"></a>Passo 4: concluir
 
 1. No painel **Adicionar aplicação**, verifique se os detalhes da sua aplicação estão corretos.
 2. Selecione **Adicionar** para carregar a aplicação para o Intune.
@@ -78,7 +79,7 @@ A aplicação criada agora aparece na lista de aplicações. Na lista, pode atri
 > [!NOTE]
 > Os perfis de aprovisionamento de aplicações LOB para iOS apresentam um aviso com 30 dias de antecedência antes de expirarem.
 
-## <a name="step-5-update-a-line-of-business-app"></a>Passo 5: Atualizar uma aplicação de linha de negócio
+## <a name="step-5-update-a-line-of-business-app"></a>Passo 5: atualizar uma aplicação de linha de negócio
 
 [!INCLUDE [shared-proc-lob-updateapp](../includes/shared-proc-lob-updateapp.md)]
 
@@ -87,7 +88,7 @@ A atualização para o aplicativo de linha de negócios será instalada automati
 > [!NOTE]
 > Para o serviço do Intune implementar com êxito um novo ficheiro IPA no dispositivo, tem de incrementar a cadeia `CFBundleVersion` no ficheiro Info.plist do pacote IPA.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 - A aplicação criada aparece na lista de aplicações. Agora pode atribuí-la aos grupos que escolher. Para obter ajuda, veja [Como atribuir aplicações a grupos](apps-deploy.md).
 

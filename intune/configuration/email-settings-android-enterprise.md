@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 08/07/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
@@ -15,18 +16,18 @@ search.appverid: MET150
 ms.reviewer: maholdaa
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 62fad2a881332470a6c3e95b7cdcab0403ba1839
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 92d81e383a9964aaecbdd151397879236ffcb726
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71730672"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72493554"
 ---
 # <a name="android-enterprise-device-settings-to-configure-email-authentication-and-synchronization-in-intune"></a>Configurações de dispositivo do Android Enterprise para configurar email, autenticação e sincronização no Intune
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-Este artigo lista e descreve as diferentes configurações de email que você pode controlar em dispositivos Android Enterprise. Como parte da sua solução de gestão (MDM) de dispositivos móveis, utilize estas definições para configurar um servidor de e-mail, utilize o SSL para encriptar mensagens de correio eletrónico e muito mais.
+Este artigo lista e descreve as diferentes configurações de email que você pode controlar em dispositivos Android Enterprise. Como parte da sua solução de MDM (gerenciamento de dispositivo móvel), use essas configurações para configurar um servidor de email, usar SSL para criptografar emails e muito mais.
 
 Como administrador do Intune, você pode criar e atribuir configurações de email a dispositivos Android Enterprise no perfil de trabalho.
 
@@ -38,27 +39,27 @@ Crie um [perfil de configuração de dispositivo](email-settings-configure.md#cr
 
 ## <a name="android-enterprise"></a>Android Enterprise
 
-- **Aplicativo de email**: Selecione o **gmail** ou **nove trabalho**
-- **Servidor de email**: O nome do host do seu servidor Exchange. Por exemplo, introduza `outlook.office365.com`.
-- **Atributo de nome de usuário do AAD**: Esse nome é o atributo que o Intune obtém de Azure Active Directory (Azure AD). O Intune gera de forma dinâmica o nome de utilizador utilizado por este perfil. As opções são:
+- **Aplicação de e-mail**: selecione **Gmail** ou **Nine Work**
+- **Servidor de e-mail**: o nome de anfitrião do seu servidor Exchange. Por exemplo, introduza `outlook.office365.com`.
+- **Atributo de nome de utilizador do AAD**: este nome é o atributo que o Intune obtém do Azure Active Directory (Azure AD). O Intune gera de forma dinâmica o nome de utilizador utilizado por este perfil. As opções são:
 
-  - **Nome principal do usuário**: Obtém o nome, `user1` como ou`user1@contoso.com`
-  - **Nome de usuário**: Obtém somente o nome, como`user1`
+  - **Nome Principal de Utilizador**: obtém o nome, como `user1` ou `user1@contoso.com`.
+  - **Nome de utilizador**: obtém apenas o nome como `user1`
 
-- **Atributo de endereço de email do AAD**: Esse nome é o atributo de email que o Intune obtém do Azure AD. O Intune gera dinamicamente o endereço de email usado por esse perfil. As opções são:
-  - **Nome principal do usuário**:  Usa o nome de entidade de segurança completo `user1@contoso.com` , `user1`como ou, como o endereço de email.
-  - **Endereço SMTP primário**: Usa o endereço SMTP primário, `user1@contoso.com`como, para entrar no Exchange.
+- **Atributo de endereço de email do AAD**: esse nome é o atributo de email que o Intune obtém do Azure AD. O Intune gera dinamicamente o endereço de email usado por esse perfil. As opções são:
+  - **Nome principal do usuário**: usa o nome da entidade de segurança completa, como `user1@contoso.com` ou `user1`, como o endereço de email.
+  - **Endereço SMTP primário**: usa o endereço SMTP primário, como `user1@contoso.com`, para entrar no Exchange.
 
-- **Método de autenticação**: Selecione **nome de usuário e senha** ou **certificados** como o método de autenticação usado pelo perfil de email.
+- **Método de autenticação**: selecione **nome de usuário e senha** ou **certificados** como o método de autenticação usado pelo perfil de email.
   - Se tiver selecionado **Certificado**, selecione um perfil de certificado SCEP ou PKCS de cliente criado anteriormente para autenticar a ligação ao Exchange.
-- **SSL**: Escolha **habilitar** para usar a comunicação de protocolo SSL (SSL) ao enviar emails, receber emails e comunicar-se com o Exchange Server.
-- **Quantidade de email para sincronizar**: Escolha a quantidade de tempo de email que você deseja sincronizar. Ou selecione **ilimitado** para sincronizar todos os emails disponíveis.
-- **Tipo de conteúdo a ser sincronizado** (Nove somente trabalho): Escolha quais dados você deseja sincronizar nos dispositivos. As opções são:
-  - **Contatos**: Escolha **habilitar** para permitir que os usuários finais sincronizem contatos com seus dispositivos.
-  - **Calendário**: Escolha **habilitar** para permitir que os usuários finais sincronizem o calendário com seus dispositivos.
-  - **Tarefas**: Escolha **habilitar** para permitir que os usuários finais sincronizem tarefas para seus dispositivos.
+- **SSL**: escolha **habilitar** para usar a comunicação de protocolo SSL (SSL) ao enviar emails, receber emails e comunicar-se com o Exchange Server.
+- **Quantidade de email para sincronizar**: escolha a quantidade de tempo de email que você deseja sincronizar. Ou selecione **ilimitado** para sincronizar todos os emails disponíveis.
+- **Tipo de conteúdo a ser sincronizado** (apenas nove trabalho): escolha quais dados você deseja sincronizar nos dispositivos. As opções são:
+  - **Contatos**: escolha **habilitar** para permitir que os usuários finais sincronizem contatos com seus dispositivos.
+  - **Calendário**: escolha **habilitar** para permitir que os usuários finais sincronizem o calendário com seus dispositivos.
+  - **Tarefas**: escolha **habilitar** para permitir que os usuários finais sincronizem tarefas para seus dispositivos.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 [Atribua o perfil](device-profile-assign.md) e [monitorize o respetivo estado](device-profile-monitor.md).
 

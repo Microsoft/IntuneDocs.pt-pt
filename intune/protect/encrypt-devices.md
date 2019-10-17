@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/02/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.reviewer: annovich
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: f885cbddf8ecb984dc6e98db38c9adbc6a07119a
-ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
+ms.openlocfilehash: 2fd5f686e837194af2672b4ad864590a49ec0cd1
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72306849"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502324"
 ---
 # <a name="use-device-encryption-with-intune"></a>Usar a criptografia de dispositivo com o Intune  
 
@@ -111,7 +112,7 @@ Configure o BitLocker ao criar um [perfil de configuração de dispositivo](../c
 
 Depois que o Intune criptografar um dispositivo Windows 10 com o BitLocker, você poderá exibir e recuperar as chaves de recuperação do BitLocker ao exibir o [relatório de criptografia](encryption-monitor.md)do Intune.  
 
-## <a name="next-steps"></a>Passos seguintes  
+## <a name="next-steps"></a>Próximos passos  
 
 Criar [uma política de conformidade do dispositivo](compliance-policy-create-windows.md)  
 

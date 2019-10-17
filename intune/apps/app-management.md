@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/23/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8b630709646b2f4489cbfea6284689c9436798ca
-ms.sourcegitcommit: 78f9750712c254d8b123ef15b74f30ca999aa128
+ms.openlocfilehash: 56814550cae814bd89d55a6f72df98dd24df4caf
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "71916341"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72507460"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>O que é a gestão de aplicações do Microsoft Intune?
 
@@ -43,14 +44,14 @@ A [gestão de aplicações móveis do Intune](app-lifecycle.md) refere-se ao con
 O MAM permite que você gerencie e proteja os dados de sua organização dentro de um aplicativo. Com o **Mam sem registro** (MAM-We), um aplicativo relacionado ao trabalho ou à escola que contém dados confidenciais pode ser gerenciado em quase qualquer [dispositivo](app-management.md#app-management-capabilities-by-platform), incluindo dispositivos pessoais em cenários BYOD ( **traga seu próprio dispositivo** ). Muitas aplicações de produtividade, como as aplicações do Microsoft Office, podem ser geridas pela MAM do Intune. Consulte a lista oficial de [aplicativos protegidos do Microsoft Intune](apps-supported-intune-apps.md) disponíveis para uso público.
 
 A MAM do Intune suporta dois tipos de configurações:
-- **MDM + Mam do Intune**: Os administradores de TI só podem gerir as aplicações através da MAM e das políticas de proteção de aplicações em dispositivos que estejam inscritos na gestão de dispositivos móveis do Intune (MDM). Para gerir aplicações com a MDM + MAM, os clientes devem utilizar a consola do Intune no portal do Azure em https://portal.azure.com.
-- **Mam sem registro de dispositivo**: MAM sem registro de dispositivo ou MAM-WE permite que os administradores de ti gerenciem aplicativos usando MAM e políticas de proteção de aplicativo em dispositivos não registrados com o MDM do Intune. Isto significa que as aplicações podem ser geridas pelo Intune em dispositivos inscritos em fornecedores de EMM terceiros. Para gerir aplicações com a MAM-WE, os clientes devem utilizar a consola do Intune no portal do Azure em https://portal.azure.com. Além disso, as aplicações podem ser geridas pelo Intune nos dispositivos inscritos em fornecedores de Gestão de Mobilidade da Empresa (EMM) de terceiros ou não inscritos numa MDM. Para obter mais informações sobre o BYOD e o EMS da Microsoft, consulte [decisões tecnológicas para habilitar o BYOD com Microsoft Enterprise Mobility + Security (EMS)](../fundamentals/byod-technology-decisions.md).
+- **Intune MDM + MAM**: os administradores de TI só podem gerir as aplicações através da MAM e das políticas de proteção de aplicações em dispositivos que estejam inscritos na gestão de dispositivos móveis do Intune (MDM). Para gerir aplicações com a MDM + MAM, os clientes devem utilizar a consola do Intune no portal do Azure em https://portal.azure.com.
+- **MAM sem inscrição de dispositivos**: a MAM sem inscrição de dispositivos, ou MAM-WE, permite aos administradores de TI gerir as aplicações com a MAM e as políticas de proteção de aplicações nos dispositivos que não estejam inscritos na MDM do Intune. Isto significa que as aplicações podem ser geridas pelo Intune em dispositivos inscritos em fornecedores de EMM terceiros. Para gerir aplicações com a MAM-WE, os clientes devem utilizar a consola do Intune no portal do Azure em https://portal.azure.com. Além disso, as aplicações podem ser geridas pelo Intune nos dispositivos inscritos em fornecedores de Gestão de Mobilidade da Empresa (EMM) de terceiros ou não inscritos numa MDM. Para obter mais informações sobre o BYOD e o EMS da Microsoft, consulte [decisões tecnológicas para habilitar o BYOD com Microsoft Enterprise Mobility + Security (EMS)](../fundamentals/byod-technology-decisions.md).
 
 ## <a name="app-management-capabilities-by-platform"></a>Capacidades de gestão de aplicações por plataforma
 
 O Intune oferece várias funcionalidades para o ajudar a obter as aplicações de que precisa, nos dispositivos nos quais quer executá-las. A seguinte tabela mostra um resumo das funcionalidades de gestão de aplicações.
 
-|  | Android/Android Enterprise | iOS | macOS | Windows 10 | Windows Phone 8.1 |
+|  | Android/Android Enterprise | iOS | macOS | Windows 10 | Wnodows Phone 8.1 |
 |-------------------------------------------------------------------------------------|---------|-----|-------|------------|-------------------|
 | Adicionar e atribuir aplicações a dispositivos e utilizadores | Sim | Sim | Sim | Sim | Sim |
 | Atribuir aplicações a dispositivos não inscritos no Intune | Sim | Sim | Não | Não | Não |
@@ -93,7 +94,7 @@ As próximas quatro secções descrevem as opções disponíveis no painel **Apl
   - [Políticas de configuração de aplicações do Intune](app-configuration-policies-overview.md).
     - [Políticas de configuração de aplicações iOS](app-configuration-policies-use-ios.md).
     - [Políticas de configuração de aplicações Android](app-configuration-policies-use-android.md).
-- **Políticas de proteção de aplicações** : selecione esta opção para associar definições a uma aplicação e ajudar a proteger os dados da empresa que utiliza. Por exemplo, pode restringir as capacidades de uma aplicação para comunicar com outras aplicações ou exigir que o utilizador introduza um PIN para aceder a uma aplicação da empresa. Para obter mais informações, consulte:
+- **Políticas de proteção de aplicações**: selecione esta opção para associar definições a uma aplicação e ajudar a proteger os dados da empresa que utiliza. Por exemplo, pode restringir as capacidades de uma aplicação para comunicar com outras aplicações ou exigir que o utilizador introduza um PIN para aceder a uma aplicação da empresa. Para obter mais informações, consulte:
   - [Políticas de proteção de aplicações ](app-protection-policies.md).
 - **Eliminação seletiva de aplicações**: selecione esta opção para remover apenas os dados empresariais do dispositivo de um utilizador selecionado. Para obter mais informações, consulte:
   - [Eliminação seletiva de aplicações](apps-selective-wipe.md).
@@ -102,29 +103,29 @@ As próximas quatro secções descrevem as opções disponíveis no painel **Apl
 
 Para obter mais informações sobre esta secção, veja [Gerir aplicações](app-management.md).
 
-### <a name="monitor"></a>Monitorizar
+### <a name="monitor"></a>Monitor
 - **Licenças de aplicações**: veja, atribua e monitorize as aplicações compradas em volume nas lojas de aplicações. Para obter mais informações, consulte:
   - [Aplicações iOS do programa de compras em volume (VPP)](vpp-apps-ios.md).
   - [Aplicações compradas em volume na Microsoft Store para Empresas](windows-store-for-business.md).
 - **Aplicações Detetadas**: veja as aplicações que foram atribuídas pelo Intune ou instaladas num dispositivo. Para obter mais informações, consulte [aplicativos descobertos do Intune](app-discovered-apps.md).
-- **Estado de Instalação da Aplicação**: veja o estado da atribuição de uma aplicação que criou. Para obter mais informações, veja [Como monitorizar informações e atribuições da aplicação com o Microsoft Intune](apps-monitor.md#device-and-user-status-graphs).
-- **Estado da proteção de aplicações**: veja o estado da política de proteção de uma aplicação de um utilizador selecionado.
+- **Estado da Instalação da Aplicação**: veja o estado da atribuição de uma aplicação que criou. Para obter mais informações, veja [Como monitorizar informações e atribuições da aplicação com o Microsoft Intune](apps-monitor.md#device-and-user-status-graphs).
+- **Estado da proteção da aplicação**: veja o estado da política de proteção de uma aplicação de um utilizador selecionado.
 - **Registos de auditoria**: veja a atividade relacionada com a aplicação do Intune realizada por todos os administradores de TI.
 
 Para obter mais informações sobre esta secção, veja [Monitorizar aplicações](apps-monitor.md).
 
 ### <a name="set-up"></a>Configurar
-- **Tokens VPP do iOS**: aplique e veja as suas licenças do Volume Purchase Program (VPP) para iOS. Para obter mais informações, consulte:
+- **Tokens VPP do iOS**: aplique e veja as suas licenças iOS do Programa de Compras em Volume (VPP). Para obter mais informações, consulte:
   - [aplicativos iOS adquiridos por volume](vpp-apps-ios.md)
 - **Certificado empresarial do Windows**: aplique ou veja o estado de um certificado de assinatura de código que serve para distribuir aplicações de linha de negócio nos dispositivos Windows geridos.
-- **Certificado da Symantec do Windows**: aplique ou veja o estado de um certificado de assinatura de código da Symantec, que é preciso para distribuir ficheiros appx XAP e WP8.x aos dispositivos Windows 10 Mobile.
-- **Microsoft Store para Empresas**: configure a integração com a Microsoft Store para Empresas. Em seguida, pode sincronizar com o Intune as aplicações compradas, atribuí-las e controlar a utilização das suas licenças. Para obter mais informações, consulte:
+- **Certificado da Symantec do Windows**: aplique ou veja o estado de um certificado de assinatura de código da Symantec, que é preciso para distribuir ficheiros appx de XAP e WP8.x aos dispositivos Windows 10 Mobile.
+- **Microsoft Store para Empresas**: configure a integração na Microsoft Store para Empresas. Em seguida, pode sincronizar com o Intune as aplicações compradas, atribuí-las e controlar a utilização das suas licenças. Para obter mais informações, consulte:
   - [Aplicações compradas em volume na Microsoft Store para Empresas](windows-store-for-business.md).
 - **Chaves de sideloading do Windows**: adicione uma chave de sideloading do Windows que pode utilizar para instalar uma aplicação diretamente nos dispositivos, em vez de publicar e transferir a aplicação da Loja Windows. Para obter mais informações, consulte:
   - [Fazer sideload de uma aplicação Windows](app-sideload-windows.md).
 - **Imagem corporativa do Portal da Empresa**: personalize o Portal da Empresa para lhe dar a imagem corporativa da sua empresa. Para obter mais informações, consulte:
   - [Configuração do Portal da Empresa](company-portal-app.md).
-- **Categorias das aplicações**: adicione, afixe e elimine nomes de categorias de aplicações.
+- **Categorias de aplicações**: adicione, afixe e elimine nomes de categorias de aplicações.
 - **Perfil de trabalho do Android**: aprove e sincronize as aplicações que aprovou para a sua empresa. Para obter mais informações, consulte:
   - [Aplicações do perfil de trabalho do Android](apps-add-android-for-work.md).
 
@@ -132,6 +133,6 @@ Para obter mais informações sobre esta secção, veja [Monitorizar aplicaçõe
 - **Ajuda e suporte**: resolva problemas, peça suporte ou veja o estado do Intune. Para obter mais informações, consulte:
   - [Resolver problemas](../fundamentals/help-desk-operators.md).
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 - [Adicionar uma aplicação ao Microsoft Intune](apps-add.md)

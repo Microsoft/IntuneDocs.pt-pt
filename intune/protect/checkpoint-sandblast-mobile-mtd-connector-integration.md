@@ -1,5 +1,5 @@
 ---
-title: Integrar MTD do Check Point SandBlast
+title: Integrar o Check Point SandBlast MTD
 titleSuffix: Microsoft Intune
 description: Como configurar a Defesa Contra Ameaças para Dispositivos Móveis (MTD) do Check Point SandBlast com o Intune para controlar o acesso de dispositivos móveis aos seus recursos empresariais.
 keywords: ''
@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 07/03/2017
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 1e9b1576-b239-48cc-a672-da6b5fb7be0a
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3c3c19c927618cec4b5cb55eb08f097ea21ebc47
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: f2f3dbafb10b91f221af27f965ffed06cce199fb
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71729836"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72509558"
 ---
 # <a name="integrate-check-point-sandblast-mobile-with-intune"></a>Integrar o Check Point SandBlast Mobile com o Intune
 
@@ -82,6 +83,6 @@ O processo de autorização da aplicação Check Point SandBlast consiste no seg
 
 8. Selecione **Verificar**. Assim que o grupo de segurança do Azure AD for verificado com êxito, selecione **Guardar**.
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Próximos passos
 
 - [Set up Check Point SandBlast Mobile apps (Configurar aplicações do Check Point SandBlast Mobile)](mtd-apps-ios-app-configuration-policy-add-assign.md)

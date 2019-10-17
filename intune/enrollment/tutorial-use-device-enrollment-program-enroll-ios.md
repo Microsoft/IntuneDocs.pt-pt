@@ -9,19 +9,20 @@ manager: dougeby
 ms.date: 04/30/2019
 ms.topic: tutorial
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 Customer intent: As an Intune admin, I want to set up the Apple's corporate device enrollment features so that corporate devices can automatically enroll in Intune.
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e221e67afa141612d6b565a511866087ce237d25
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 83a9467065bb5c1d1cde2035df936541bb804ddc
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71729664"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503075"
 ---
-# <a name="tutorial-use-apples-corporate-device-enrollment-features-in-apple-business-manager-abm-to-enroll-ios-devices-in-intune"></a>Destina Usar os recursos de registro de dispositivo corporativo da Apple no Apple Business Manager (ABM) para registrar dispositivos iOS no Intune
+# <a name="tutorial-use-apples-corporate-device-enrollment-features-in-apple-business-manager-abm-to-enroll-ios-devices-in-intune"></a>Tutorial: usar os recursos de registro de dispositivo corporativo da Apple no Apple Business Manager (ABM) para registrar dispositivos iOS no Intune
 Os recursos de registro de dispositivo no Apple Business Manager simplificam o cadastramento de dispositivos. O Intune também dá suporte ao portal de DEP (Programa de registro de dispositivos mais antigo) da Apple, mas incentivamos você a começar com o Apple Business Manager. Com a Microsoft Intune e o registro de dispositivo corporativo da Apple, os dispositivos são automaticamente inscritos na primeira vez que o usuário liga o dispositivo. Portanto, você pode enviar dispositivos para muitos usuários sem precisar configurar cada dispositivo individualmente. 
 
 Neste tutorial, ficará a saber como:
@@ -131,7 +132,7 @@ Tem de atribuir um perfil do programa de inscrição aos dispositivos para poder
 
 Você configurou o gerenciamento e a sincronização entre o Apple e o Intune e atribuiu um perfil para permitir que seus dispositivos DEP se registrem. Agora pode distribuir os dispositivos aos utilizadores. Os dispositivos com afinidade do utilizador necessitam que seja atribuída uma licença do Intune a cada utilizador.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Você pode encontrar mais informações sobre outras opções disponíveis para registrar dispositivos iOS.
 

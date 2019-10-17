@@ -9,6 +9,7 @@ ms.date: 02/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 42e26c51-5373-4c2e-9321-34d85560f3d1
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 430881acd1bf42ba1e44c643318c32091fead34d
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: b7a3ed1a90696665f15e3e956e28969c5a0ed24e
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61497285"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72505745"
 ---
 # <a name="installing-office-365-on-your-windows-10-device"></a>Instalar o Office 365 no seu dispositivo Windows 10
 

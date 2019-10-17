@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dfd651550cd0959efc7b1dddc2a018d5346baa8c
-ms.sourcegitcommit: 29b1113dc04534c4c87c33c773c5a0e24266e042
+ms.openlocfilehash: ab90dc9a95e461ad8c5913131a23a0355e9d072c
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71999378"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72509213"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>Implantar dispositivos ingressados no Azure AD híbrido usando o Intune e o piloto automático do Windows
 Você pode usar o Intune e o piloto automático do Windows para configurar dispositivos ingressados no Azure Active Directory híbrido (Azure AD). Para fazer isso, siga as etapas neste artigo.
@@ -210,9 +211,9 @@ Demora cerca de 15 minutos para que o status do perfil do dispositivo seja alter
 1. No [Intune](https://aka.ms/intuneportal), selecione **configuração do dispositivo** > **perfis** > **Criar perfil**.
 1. Introduza as seguintes propriedades:
    - **Nome**: introduza um nome descritivo para o novo perfil.
-   - **Descrição**: introduza uma descrição para o perfil.
-   - **Plataforma**: Selecione **Windows 10 e posterior**.
-   - **Tipo de perfil**: Selecione **ingresso no domínio (versão prévia)** .
+   - **Descrição:** introduza uma descrição para o perfil.
+   - **Plataforma**: selecione **Windows 10 e posterior**.
+   - **Tipo de perfil**: selecione **ingresso no domínio (versão prévia)** .
 1. Selecione **configurações**e, em seguida, forneça um **prefixo de nome de computador**, nome de **domínio**e (opcional) **unidade organizacional** no [formato DN](https://docs.microsoft.com/windows/desktop/ad/object-names-and-identities#distinguished-name). 
    > [!NOTE]
    > Não use aspas ao contrário do valor na **unidade organizacional**.
@@ -230,6 +231,6 @@ Demora cerca de 15 minutos para que o status do perfil do dispositivo seja alter
 > [!NOTE]
 > Os recursos de nomenclatura do Windows AutoPilot para o ingresso no Azure AD híbrido não dão suporte a variáveis como% SERIAL% e apenas prefixos de suporte para o nome do computador.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Após configurar o Windows Autopilot, saiba como gerir os seus dispositivos. Para obter mais informações, consulte [o que é Microsoft InTune gerenciamento de dispositivo?](../remote-actions/device-management.md).

@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/23/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 4a95e575-2c63-4bfc-b9c4-f0a132eef618
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b47d19517549d062e0bfae3add4870868ac7d503
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 12218ec20f8cc00ebcf2294387f711ea39d79256
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71731040"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72507075"
 ---
 # <a name="add-windows-phone-81-store-apps-to-microsoft-intune"></a>Adicionar aplicações da loja do Windows Phone 8.1 ao Microsoft Intune
 
@@ -39,14 +40,14 @@ Pode adicionar uma aplicação da loja do Windows Phone 8.1 ao Intune a partir d
 5. No painel **Aplicações**, selecione **Adicionar**.
 6. No painel **Adicionar aplicação**, selecione um **Tipo de aplicação** do **Windows Phone 8.1** e, em seguida, selecione **Informações da aplicação**.
 7. No painel **Informações da aplicação**, adicione as informações da aplicação. Consoante a aplicação que tenha selecionado, alguns dos valores neste painel podem ter sido preenchidos automaticamente:
-    - **Nome**: Introduza o nome da aplicação tal como deve ser apresentado no portal da empresa. Certifique-se de que utiliza nomes de aplicação que sejam exclusivos. Se um nome de aplicação for duplicado, apenas um deles será apresentado aos utilizadores no portal da empresa.
-    - **Descrição**: Introduza uma descrição para a aplicação. Esta descrição é apresentada aos utilizadores no portal da empresa.
-    - **Publicador**: Introduza o nome do publicador da aplicação.
-    - **URL da App Store**: introduza o URL da App Store da aplicação que pretende criar.
+    - **Nome**: introduza o nome da aplicação tal como deve ser apresentado no portal da empresa. Certifique-se de que utiliza nomes de aplicação que sejam exclusivos. Se um nome de aplicação for duplicado, apenas um deles será apresentado aos utilizadores no portal da empresa.
+    - **Descrição**: introduza uma descrição para a aplicação. Esta descrição é apresentada aos utilizadores no portal da empresa.
+    - **Publicador**: introduza o nome do publicador da aplicação.
+    - **URL da Loja de Aplicações**: escreva o URL da Loja de Aplicações da aplicação que pretende criar.
     - **Categoria**: opcionalmente, selecione uma ou mais categorias de aplicações incorporadas ou uma categoria criada por si. Desta forma, permitirá que os utilizadores encontrem a aplicação mais facilmente quando procurarem no portal da empresa.
-    - **Apresentar como aplicação em destaque no Portal da Empresa**: selecione esta opção para apresentar a aplicação de forma bem visível na página principal do portal da empresa quando os utilizadores procurarem aplicações.
-    - **URL de informações**: Opcionalmente, introduza o URL de um site que contenha informações sobre esta aplicação. O URL é apresentado aos utilizadores no portal da empresa.
-    - **URL de privacidade**: Opcionalmente, introduza o URL de um site que contenha informações sobre a privacidade desta aplicação. O URL é apresentado aos utilizadores no portal da empresa.
+    - **Apresentar como aplicação em destaque no Portal da Empresa**: selecione esta opção para apresentar o conjunto de aplicações em destaque na página principal do portal da empresa quando os utilizadores procurarem aplicações.
+    - **URL de Informações**: opcionalmente, introduza o URL de um site que contenha informações sobre esta aplicação. O URL é apresentado aos utilizadores no portal da empresa.
+    - **URL de Privacidade**: opcionalmente, introduza um URL para um site que contenha informações sobre a privacidade desta aplicação. O URL é apresentado aos utilizadores no portal da empresa.
     - **Programador**: opcionalmente, introduza o nome do programador da aplicação.
     - **Proprietário**: opcionalmente, introduza o nome do proprietário desta aplicação (por exemplo, *Departamento de RH*).
     - **Notas**: opcionalmente, introduza quaisquer notas que queira associar a esta aplicação.
@@ -56,6 +57,6 @@ Pode adicionar uma aplicação da loja do Windows Phone 8.1 ao Intune a partir d
 
 A aplicação que criou será apresentada na lista de aplicações, onde a pode atribuir aos grupos que selecionar.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 - [Atribuir aplicações a grupos](apps-deploy.md)

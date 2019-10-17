@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 07/24/2019
 ms.topic: quickstart
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: dab6f5c8-1ebb-42c4-a7a7-7af001f94e15
@@ -17,14 +18,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5c5a6b35f7f051ff3060976c12abad1c1e4e7131
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 8ed8df1f7a9edb62b5c9c8a9050031aedea7397a
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71731092"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72497665"
 ---
-# <a name="quickstart-add-and-assign-a-client-app"></a>Início rápido: Adicionar e atribuir um aplicativo cliente
+# <a name="quickstart-add-and-assign-a-client-app"></a>Guia de Início Rápido: adicionar e atribuir uma aplicação cliente
 
 Neste guia de início rápido, irá utilizar o Intune para adicionar e atribuir uma aplicação cliente à força de trabalho da sua empresa. Uma das prioridades de um administrador é garantir que os utilizadores finais têm acesso às aplicações que precisam para trabalhar. 
 
@@ -90,17 +91,17 @@ Tem de instalar e utilizar a aplicação Portal da Empresa para instalar a aplic
 4. Clique na aplicação que adicionou com o Intune. Neste guia de início rápido, adicionou a aplicação **Conjunto de Aplicações do Microsoft Office 365**.
 
     > [!NOTE]
-    > Se você não atribuiu com êxito nenhum aplicativo ao usuário do Intune, verá a seguinte mensagem: *O administrador de ti não disponibilizou nenhum aplicativo para você.*
+    > Se não tiver atribuído com êxito nenhuma aplicação ao utilizador do Intune, verá a seguinte mensagem: *O seu administrador de TI não lhe disponibilizou nenhuma aplicação.*
 
 5. Clique em **Instalar**.
 
 Se as suas necessidades empresariais incluírem a atribuição da aplicação Portal da Empresa à sua força de trabalho, pode atribuir manualmente a aplicação Portal da Empresa do Windows 10 diretamente a partir do Intune. Para obter mais informações, veja [Adicionar manualmente a aplicação Portal da Empresa do Windows 10 através do Microsoft Intune](../company-portal-app.md).
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Neste guia de início rápido, adicionou aplicações ao Intune, atribuiu as aplicações a um grupo e instalou as aplicações no dispositivo inscrito com o Windows 10 Desktop. Para obter mais informações sobre a gestão de aplicações no Intune, veja [O que é a gestão de aplicações do Microsoft Intune?](app-management.md)
 
 Para seguir esta série de guias de início rápido do Intune, continue para o próximo guia de início rápido.
 
 > [!div class="nextstepaction"]
-> [TUTORIAIS Criar e atribuir uma política de proteção de aplicativo @ no__t-0
+> [Guia de Início Rápido: criar e atribuir uma política de proteção de aplicações](quickstart-create-assign-app-policy.md)

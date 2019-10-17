@@ -8,18 +8,19 @@ manager: dougeby
 ms.date: 07/18/2018
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 841be002cf9ed99142ce95a1f9cafda761d1b856
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 40569af35a812074cc62546e3f85929416202b3b
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71730356"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506422"
 ---
 # <a name="import-wi-fi-settings-for-windows-devices-in-intune"></a>Importar definições de Wi-Fi para dispositivos Windows no Intune
 
@@ -40,7 +41,7 @@ Num computador Windows que já tenha o perfil Wi-Fi necessário instalado, siga 
 1. Crie uma pasta local para os perfis Wi-Fi exportados, como **c:\WiFi**.
 2. Abra uma Linha de Comandos como administrador.
 3. Execute o comando `netsh wlan show profiles` e tome nota do nome do perfil que pretende exportar. Neste exemplo, o nome do perfil é **WiFiName**.
-4. Execute o `netsh wlan export profile name="ProfileName" folder=c:\Wifi` comando. Este comando o cria um ficheiro do perfil Wi-Fi com o nome **Wi-Fi-WiFiName.xml** na sua pasta de destino.
+4. Execute o comando `netsh wlan export profile name="ProfileName" folder=c:\Wifi`. Este comando o cria um ficheiro do perfil Wi-Fi com o nome **Wi-Fi-WiFiName.xml** na sua pasta de destino.
 
 ## <a name="import-the-wi-fi-settings-into-intune"></a>Importar as definições de Wi-Fi para o Intune
 
@@ -57,12 +58,12 @@ Num computador Windows que já tenha o perfil Wi-Fi necessário instalado, siga 
 4. Em **Plataforma**, selecione **Windows 8.1 e versões posteriores**.
 5. Em **Tipo de perfil**, selecione **Wi-Fi importado**.
 6. Configure as seguintes definições:
-    - **Nome da conexão**: Insira um nome para a conexão Wi-Fi. Este nome é apresentado aos utilizadores finais ao procurarem redes Wi-Fi disponíveis.
-    - **XML do perfil**: Selecione o botão procurar e escolha o arquivo XML que contém as configurações de perfil de Wi-Fi que você deseja importar.
-    - **Conteúdo do arquivo**: Mostra o código XML para o perfil de configuração selecionado.
+    - **Nome da ligação**: introduza um nome para a ligação Wi-Fi. Este nome é apresentado aos utilizadores finais ao procurarem redes Wi-Fi disponíveis.
+    - **XML do Perfil**: selecione o botão Procurar e escolha o ficheiro XML que contém as definições de perfil Wi-Fi que quer importar.
+    - **Conteúdos do ficheiro**: mostra o código XML do perfil de configuração que selecionou.
 7. Assim que terminar, selecione **OK** > **Criar** para guardar as alterações. O perfil é criado e é apresentado na lista de perfis.
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Próximos passos
 
 O perfil é criado, mas não faz nada. Em seguida, [atribua este perfil](device-profile-assign.md).
 

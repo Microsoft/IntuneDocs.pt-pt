@@ -9,6 +9,7 @@ ms.date: 01/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 038747fb-5b52-47c4-a2b6-f9218da4cfe1
 searchScope:
@@ -18,24 +19,24 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3f8d1ff89f948715890eb9a31535e90b8787a856
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 9e88fa55391ace4f8a86416412489ca055083503
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61504153"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502045"
 ---
 # <a name="send-logs-to-your-company-support-from-the-settings-app-for-windows-10"></a>Enviar registos ao suporte da empresa a partir da aplicação Definições para Windows 10
 
-Utilize a aplicação de definições para resolver problemas relacionados com o Portal da empresa para Windows 10. Caso se depare com um problema ao utilizar a aplicação no seu dispositivo Windows 10, pode enviar um e-mail a equipa de suporte para obter ajuda. Eventos e erros que ocorrem na aplicação Portal da empresa são guardados no dispositivo, num documento especial denominado um _registo de diagnóstico_. Eles podem conter informações adicionais sobre o erro e quando exportado são úteis para dar suporte a equipes.
+Use o aplicativo configurações para solucionar problemas Portal da Empresa para Windows 10. Se você tiver um problema ao usar o aplicativo em seu dispositivo Windows 10, poderá enviar por email sua equipe de suporte para obter ajuda. Eventos e erros que ocorrem no aplicativo Portal da Empresa são salvos em seu dispositivo em um documento especial chamado log de _diagnóstico_. Eles podem conter informações adicionais sobre o erro e, quando exportadas, são úteis para as equipes de suporte.
 
-1. Para abrir o **definições** aplicação, vá para o **iniciar** menu > **definições**. Também pode procurar *definições* na barra de pesquisa.
+1. Para abrir o aplicativo **configurações** , vá para o menu **Iniciar** > **configurações**. Você também pode procurar *configurações* na barra de pesquisa.
 2. Vá para **Contas** > **Acesso profissional ou escolar**.
-3. Selecione **exportar os ficheiros de registo de gestão**.
+3. Selecione **exportar seus arquivos de log de gerenciamento**.
 
    ![O “ecrã Acesso profissional ou escolar”, que apresenta a opção Exportar sob o cabeçalho “Definições relacionadas”.](./media/w10-export-logs.png)
 
-4. Os registos serão guardados em **C:\Users\Public\Public Documents\MDMDiagnostics**. Serão criados dois ficheiros: um é o registo em si e o outro é um documento especial que permite que o seu administrador analise os registos em programas diferentes, tais como o Microsoft Excel. Anexe ambos os ficheiros a uma mensagem de e-mail e envie o e-mail para o seu administrador. Se fizer isto mais do que uma vez, basta escolher os ficheiros do dia em que criou os registos. 
+4. Os registos serão guardados em **C:\Users\Public\Public Documents\MDMDiagnostics**. Serão criados dois ficheiros: um é o registo em si e o outro é um documento especial que permite que o seu administrador analise os registos em programas diferentes, tais como o Microsoft Excel. Anexe esses dois arquivos a um email e envie esse email para o administrador. Se você fizer isso mais de uma vez, basta escolher os arquivos do dia em que você criou os logs. 
 
 Também poderá ser necessário enviar [registos da aplicação Portal da Empresa](send-logs-to-your-it-admin-cp-windows.md) para fornecer ao suporte da empresa mais ajuda para tentar resolver quaisquer problemas que possa encontrar. 
 

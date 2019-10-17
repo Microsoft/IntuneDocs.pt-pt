@@ -9,6 +9,7 @@ ms.date: 07/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 33ffff16-0280-43bf-87b3-74ddf4439bfa
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bff8f2d74b06d1cd4ee7dffe594917b4d0946d5c
-ms.sourcegitcommit: 2bce5e43956b6a5244a518caa618f97f93b4f727
+ms.openlocfilehash: 50e4bde49f671a7f828ddb982fa18a3e68de25f6
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68467320"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506277"
 ---
 # <a name="enroll-device-with-android-work-profile"></a>Registrar dispositivo com o perfil de trabalho do Android
 
@@ -49,7 +50,7 @@ Saiba mais sobre [o que acontece quando cria um perfil de trabalho](what-happens
 
     ![Captura de tela das próximas telas](./media/android-wp-04-1908.png)
 
-5. A próxima tela mostra os termos do Google para criar um perfil de trabalho. Leia os termos e toque em **aceitar &AMP; continuar**. A aparência dessa tela variará com base na versão do Android do seu dispositivo. 
+5. A próxima tela mostra os termos do Google para criar um perfil de trabalho. Leia os termos e toque em **aceitar & continuar**. A aparência dessa tela variará com base na versão do Android do seu dispositivo. 
 
     ![Captura de tela dos termos do perfil de trabalho do Google](./media/android-wp-05-1908.png)  
 
@@ -80,6 +81,6 @@ Saiba mais sobre [o que acontece quando cria um perfil de trabalho](what-happens
 
 Agora você pode instalar aplicativos da empresa em seu dispositivo. Vá para o repositório de Google Play gerenciado para localizar e instalar esses aplicativos. 
 
-## <a name="next-steps"></a>Passos Seguintes  
+## <a name="next-steps"></a>Próximos passos  
 
 Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

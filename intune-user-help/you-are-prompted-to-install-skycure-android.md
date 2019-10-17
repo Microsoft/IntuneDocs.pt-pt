@@ -9,6 +9,7 @@ ms.date: 09/25/2017
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 627cd171-6e1b-439e-809a-2e6f007c4b3d
 searchScope:
@@ -16,12 +17,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b9c489e6bdfa2842f0939d7ee5cd43b258ef2b50
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: e48930639e59ca4381ecbdb077d2d725db535cbe
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61500818"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72507920"
 ---
 # <a name="install-symantec-endpoint-protection-mobile-on-your-android-device"></a>Instalar o Symantec Endpoint Protection Mobile no seu dispositivo Android
 
@@ -35,11 +36,11 @@ Se tiver problemas com a instalação, experimente os passos de resolução de p
 
 2. É direcionado para a página de instalação do SEP Mobile na Play Store. Instale o SEP Mobile e, em seguida, toque em **ACEITAR** para permitir que o SEP Mobile aceda ao seu dispositivo.
 
-3. Abra o SEP Mobile e, em seguida, toque em **VERIFY (VERIFICAR)**.
+3. Abra o SEP Mobile e, em seguida, toque em **VERIFY (VERIFICAR)** .
 
 4. Toque em **Sign in with Azure Active Directory (Iniciar sessão com o Azure Active Directory)** e introduza a conta que utiliza para aceder aos seus ficheiros e e-mail escolares ou profissionais.
 
-5. Selecione a conta que utiliza para aceder aos e-mails e ficheiros do seu trabalho ou escola e, em seguida, toque em **ADD ACCOUNT (ADICIONAR CONTA)**.
+5. Selecione a conta que utiliza para aceder aos e-mails e ficheiros do seu trabalho ou escola e, em seguida, toque em **ADD ACCOUNT (ADICIONAR CONTA)** .
 
 6. Toque em **Accept (Aceitar)** para conceder permissão ao SEP Mobile para iniciar a sua sessão e ler o seu perfil.
 

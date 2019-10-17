@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 05/17/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 0f737d48-24bc-44cd-aadd-f0a1d59f6893
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5b4983031d0e5d0723e306a1b9cbefadac2f91fe
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 4a3ecf2872832af6199620863a05b4275731db5c
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71732232"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72505244"
 ---
 # <a name="intune-network-configuration-requirements-and-bandwidth"></a>Largura de banda e requisitos de configuração de rede do Intune
 
@@ -62,7 +63,7 @@ Um servidor proxy de colocação em cache que recebe pedidos de conteúdo de cli
 Seguem-se as definições típicas para utilizar um servidor proxy que coloca conteúdos em cache para os clientes do Intune.
 
 
-|          Definição           |           Valor recomendado           |                                                                                                  Detalhes                                                                                                  |
+|          Definição           |           Valor recomendado           |                                                                                                  Details                                                                                                  |
 |----------------------------|---------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |         Tamanho da cache         |             De 5 GB até 30 GB             | O valor varia com base no número de computadores clientes na sua rede e nas configurações que utiliza. Para impedir que os ficheiros sejam eliminados demasiado cedo, ajuste o tamanho da cache do seu ambiente. |
 | Tamanho do ficheiro de cache individual |                950 MB                 |                                                                     Esta definição pode não estar disponível em todos os servidores proxy com colocação em cache.                                                                     |
@@ -93,7 +94,7 @@ Os clientes Intune podem utilizar o BranchCache para reduzir o tráfego da rede 
 
 - Windows 7
 - Windows 8.0
-- Windows 8.1
+- Windows 8.1
 - Windows 10
 
 Para utilizar o BranchCache, o computador cliente tem de ter o BranchCache ativado e, em seguida, ser configurado para o **modo de cache distribuída**.
@@ -106,7 +107,7 @@ Se utiliza o BranchCache, trabalhe em conjunto com outros administradores na sua
 > Você pode usar Microsoft Intune para gerenciar computadores Windows [como dispositivos móveis com o MDM (gerenciamento de dispositivo móvel)](../enrollment/windows-enroll.md) ou como computadores com o cliente de software do Intune. A Microsoft recomenda que os clientes [usem a solução de gerenciamento de MDM](../enrollment/windows-enroll.md) sempre que possível. Quando gerenciada dessa forma, o BranchCache não tem suporte. Para obter mais informações, consulte [comparar o gerenciamento de computadores Windows como computadores ou dispositivos móveis](../pc-management-comparison.md).
 
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 [Examinar pontos de extremidade do Intune](../intune-endpoints.md)
 

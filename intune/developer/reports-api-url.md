@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 10/03/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: developer
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: A7A174EC-109D-4BB8-B460-F53AA2D033E6
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f73e80fed5de74bc074e26502270467b7d846e5c
-ms.sourcegitcommit: 223d64a72ec85fe222f5bb10639da729368e6d57
+ms.openlocfilehash: 170ed2fbf300299796401b10a906d875b6f50bf5
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71940153"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72490453"
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Ponto final da API do Armazém de Dados do Intune
 
@@ -48,7 +49,7 @@ O URL do Intune utiliza o seguinte formato:
 
 O URL contém os seguintes elementos:
 
-| Elemento | Exemplo | Descrição |
+| Elemento | Exemplo | Description |
 |-------------------|------------|--------------------------------------------------------------------------------------------------------------------|
 | location | msua06 | O URL base pode ser encontrado ao ver o painel API do Armazém de Dados no portal do Azure. |
 | entity-collection | devicePropertyHistories | O nome da coleção da entidade do OData. Para obter mais informações sobre as coleções e entidades no modelo de dados, veja [Modelo de Dados](reports-ref-data-model.md). |
@@ -63,7 +64,7 @@ Pode experimentar as nossas funcionalidades mais recentes do Armazém de Dados c
 
 ## <a name="odata-query-options"></a>Opções de consulta de OData
 
-A versão atual dá suporte aos seguintes parâmetros de consulta `$filter`OData `$select`: `$skip,` , `$top`e. No `$filter`, somente `DateKey` o `RowLastModifiedDateTimeUTC` ou o pode ter suporte quando as colunas são aplicáveis e outras propriedades disparam uma solicitação inválida.
+A versão atual dá suporte aos seguintes parâmetros de consulta OData: `$filter`, `$select`, `$skip,` e `$top`. No `$filter`, somente `DateKey` ou `RowLastModifiedDateTimeUTC` podem ter suporte quando as colunas são aplicáveis e outras propriedades disparam uma solicitação inválida.
 
 ## <a name="datekey-range-filters"></a>Filtros de Intervalo DateKey
 
@@ -77,10 +78,10 @@ Os filtros de intervalo `DateKey` podem ser utilizados para limitar a quantidade
 > [!NOTE]
 > Os exemplos de filtro pressupõem que hoje é 2/21/2019.
 
-|                             Filtro                             |           Otimização do Desempenho           |                                          Descrição                                          |
+|                             Filtro                             |           Otimização do Desempenho           |                                          Description                                          |
 |:--------------------------------------------------------------:|:--------------------------------------------:|:---------------------------------------------------------------------------------------------:|
 |    `maxhistorydays=7`                                            |    Completo                                      |    Devolver dados com um `DateKey` entre 20180214 e 20180221.                                     |
 |    `$filter=DateKey eq 20180214`                                 |    Completo                                      |    Devolver dados com um `DateKey` igual a 20180214.                                                    |
 |    `$filter=DateKey ge 20180214 and DateKey lt 20180221`         |    Completo                                      |    Devolver dados com um `DateKey` entre 20180214 e 20180220.                                     |
 |    `maxhistorydays=7&$filter=DateKey eq 20180214`                |    Completo                                      |    Devolver dados com um `DateKey` igual a 20180214. `maxhistorydays` é ignorado.                            |
-|    `$filter=RowLastModifiedDateTimeUTC ge 2018-02-21T23:18:51.3277273Z`                                |    Completo                                       |    Retornar dados com `RowLastModifiedDateTimeUTC` é maior ou igual a`2018-02-21T23:18:51.3277273Z`                             |
+|    `$filter=RowLastModifiedDateTimeUTC ge 2018-02-21T23:18:51.3277273Z`                                |    Completo                                       |    Retornar dados com `RowLastModifiedDateTimeUTC` é maior ou igual a `2018-02-21T23:18:51.3277273Z`                             |

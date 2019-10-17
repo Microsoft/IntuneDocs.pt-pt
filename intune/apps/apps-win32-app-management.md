@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 10/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: efdc196b-38f3-4678-ae16-cdec4303f8d2
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 21192d259de0711ad38fa35b294ea82c7d913292
-ms.sourcegitcommit: fca2670142c083d7562c0a36547a6a451863e315
+ms.openlocfilehash: 8d6fb5a703aad09592bfac3b5a16390389059d33
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "72036490"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72498024"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune autônomo-gerenciamento de aplicativos do Win32
 
@@ -98,7 +99,7 @@ Tal como uma aplicação de linha de negócio (LOB), pode adicionar uma aplicaç
 
 Os seguintes passos fornecem orientação para ajudá-lo a adicionar uma aplicação Windows ao Intune.
 
-### <a name="step-1-specify-the-software-setup-file"></a>Passo 1: Especificar o ficheiro de configuração do software
+### <a name="step-1-specify-the-software-setup-file"></a>Passo 1: especificar o ficheiro de configuração do software
 
 1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. No painel **Intune**, selecione **Aplicações do cliente** > **Aplicações** > **Adicionar**.
@@ -106,7 +107,7 @@ Os seguintes passos fornecem orientação para ajudá-lo a adicionar uma aplica�
 
     ![Captura de tela da caixa suspensa adicionar folha de aplicativos – adicionar tipo](./media/apps-win32-app-management/apps-win32-app-01.png)
 
-### <a name="step-2-upload-the-app-package-file"></a>Passo 2: Carregar o arquivo de pacote do aplicativo
+### <a name="step-2-upload-the-app-package-file"></a>Passo 2: carregar o ficheiro de pacote de aplicação
 
 1. No painel **Adicionar aplicação**, selecione **Ficheiro de pacote de aplicação** para selecionar um ficheiro. O painel Ficheiro de pacote de aplicação será apresentado.
 
@@ -119,24 +120,24 @@ Os seguintes passos fornecem orientação para ajudá-lo a adicionar uma aplica�
 
 3. Quando tiver terminado, selecione **OK**.
 
-### <a name="step-3-configure-app-information"></a>Passo 3: Configurar as informações da aplicação
+### <a name="step-3-configure-app-information"></a>Passo 3: configurar as informações da aplicação
 
 1. No painel **Adicionar aplicação**, selecione **Informações da aplicação** para configurar a aplicação.
-2. No painel **Informações da aplicação**, configure as seguintes informações. Alguns dos valores neste painel podem ser preenchidos automaticamente.
+2. No painel **Informações da aplicação**, configure as informações seguintes. Alguns dos valores neste painel podem ser preenchidos automaticamente.
     - **Nome**: introduza o nome da aplicação tal como aparece no portal da empresa. Se existir o mesmo nome de aplicação duas vezes, cada aplicação irá aparecer no portal da empresa.
-    - **Descrição**: Introduza uma descrição para a aplicação. A descrição aparece no portal da empresa.
-    - **Publicar**r: Introduza o nome do publicador da aplicação.
-    - **Categoria**: Selecione uma ou mais das categorias de aplicativo internas ou selecione uma categoria que você criou. As categorias permitem que os utilizadores encontrem a aplicação mais facilmente quando procurarem no portal da empresa.
-    - **Apresentar como aplicação em destaque no Portal da Empresa**: Apresente a aplicação de forma bem visível na página principal do portal da empresa quando os utilizadores procurarem aplicações.
-    - **URL de informações**: opcionalmente, introduza o URL de um site que contenha informações sobre a aplicação. O URL aparece no portal da empresa.
-    - **URL de privacidade**: opcionalmente, introduza o URL de um site que contenha informações sobre a privacidade da aplicação. O URL aparece no portal da empresa.
+    - **Descrição**: introduza uma descrição para a aplicação. A descrição aparece no portal da empresa.
+    - **Publicador**: introduza o nome do fabricante da aplicação.
+    - **Categoria**: selecione uma ou mais categorias das aplicações incorporadas ou, em alternativa, uma categoria criada por si. As categorias permitem que os utilizadores encontrem a aplicação mais facilmente quando procurarem no portal da empresa.
+    - **Apresentar esta aplicação em destaque no Portal da Empresa**: apresente a aplicação de forma destacada na página principal do portal da empresa quando os utilizadores procurarem aplicações.
+    - **URL de Informações**: opcionalmente, pode introduzir o URL para um site que contenha informações sobre a aplicação. O URL aparece no portal da empresa.
+    - **URL de Privacidade**: opcionalmente, pode introduzir o URL para um site que contenha informações sobre a privacidade da aplicação. O URL aparece no portal da empresa.
     - **Programador**: opcionalmente, introduza o nome do programador da aplicação.
     - **Proprietário**: opcionalmente, introduza o nome do proprietário desta aplicação. Por exemplo, **Departamento de RH**.
     - **Notas**: introduza quaisquer notas que queira associar a esta aplicação.
     - **Logótipo**: carregue um ícone associado à aplicação. O ícone é apresentado com a aplicação quando os utilizadores procurarem no portal da empresa.
 3. Quando tiver terminado, selecione **OK**.
 
-### <a name="step-4-configure-app-installation-details"></a>Passo 4: Configurar detalhes de instalação do aplicativo
+### <a name="step-4-configure-app-installation-details"></a>Passo 4: configurar os detalhes de instalação da aplicação
 1. No painel **Adicionar aplicação**, selecione **Programa** para configurar a instalação da aplicação e os comandos de remoção da aplicação.
 2. Adicione a linha de comandos de instalação completa para instalar a aplicação. 
 
@@ -160,37 +161,37 @@ Os seguintes passos fornecem orientação para ajudá-lo a adicionar uma aplica�
 
 4. Quando tiver terminado, selecione **OK**.
 
-### <a name="step-5-configure-app-requirements"></a>Passo 5: Configurar requisitos do aplicativo
+### <a name="step-5-configure-app-requirements"></a>Passo 5: configurar os requisitos da aplicação
 
 1. No painel **Adicionar aplicação**, selecione **Requisitos** para configurar os requisitos que os dispositivos têm de cumprir antes de a aplicação ser instalada.
 2. No painel **Adicionar uma regra de requisito** , configure as informações a seguir. Alguns dos valores neste painel podem ser preenchidos automaticamente.
-    - **Arquitetura do sistema operacional**: Escolha as arquiteturas necessárias para instalar o aplicativo.
-    - **Sistema operativo mínimo**: Selecione o sistema operacional mínimo necessário para instalar o aplicativo.
-    - **Espaço em disco necessário (MB)** : Opcionalmente, adicione o espaço livre em disco necessário na unidade do sistema para instalar o aplicativo.
-    - **Memória física necessária (MB)** : Opcionalmente, adicione a memória física (RAM) necessária para instalar o aplicativo.
-    - **Número mínimo de processadores lógicos necessários**: Opcionalmente, adicione o número mínimo de processadores lógicos necessários para instalar o aplicativo.
-    - **Velocidade mínima de CPU necessária (MHz)** : Opcionalmente, adicione a velocidade mínima da CPU necessária para instalar o aplicativo.
+    - **Arquitetura de sistema operativo**: selecione as arquiteturas necessárias para instalar a aplicação.
+    - **Sistema operativo mínimo**: selecione o sistema operativo mínimo necessário para instalar a aplicação.
+    - **Espaço em disco necessário (MB)** : opcionalmente, adicione o espaço livre em disco necessário na unidade do sistema para instalar a aplicação.
+    - **Memória física necessária (MB)** : opcionalmente, adicione a memória física (RAM) necessária para instalar a aplicação.
+    - **Número mínimo de processadores lógicos necessários**: opcionalmente, adicione o número mínimo de processadores lógicos necessários para instalar a aplicação.
+    - **Velocidade de CPU mínima necessária (MHz)** : opcionalmente, adicione a velocidade mínima de CPU necessária para instalar a aplicação.
 
 3. Clique em **Adicionar** para exibir a folha **Adicionar uma regra de requisito** e configurar regras de requisito adicionais. Selecione o **tipo de requisito** para escolher o tipo de regra que será usado para determinar como um requisito é validado. As regras de requisito podem ser baseadas em informações do sistema de arquivos, valores de registro ou scripts do PowerShell. 
-    - **Arquivo**: Quando você escolhe **arquivo** como o **tipo de requisito**, a regra de requisito deve detectar um arquivo ou pasta, data, versão ou tamanho. 
+    - **Arquivo**: quando você escolhe **arquivo** como o **tipo de requisito**, a regra de requisito deve detectar um arquivo ou pasta, data, versão ou tamanho. 
         - **Caminho** – o caminho completo da pasta que contém o ficheiro ou pasta a detetar.
         - **Ficheiro ou pasta** – o ficheiro ou pasta a detetar.
         - **Propriedade** – selecione o tipo de regra usado para validar a presença do aplicativo.
         - **Associado a uma aplicação de 32 bits em clientes de 64 bits** – selecione **Sim** para expandir as variáveis de ambiente de caminho no contexto de 32 bits em clientes de 64 bits. Selecione **Não** (predefinição) para expandir as variáveis de caminho no contexto de 64 bits em clientes de 64 bits. Os clientes de 32 bits utilizarão sempre o contexto de 32 bits.
-    - **Registro**: Quando você escolhe **registro** como o **tipo de requisito**, a regra de requisito deve detectar uma configuração de registro com base no valor, na cadeia de caracteres, no número inteiro ou na versão.
+    - **Registro**: quando você escolhe o **registro** como o **tipo de requisito**, a regra de requisito deve detectar uma configuração de registro com base no valor, na cadeia de caracteres, no número inteiro ou na versão.
         - **Caminho da chave** – o caminho completo da entrada de registo que contém o valor a detetar.
         - **Nome do valor** – o nome do valor do registo a detetar. Se este valor estiver vazio, a deteção irá ocorrer na chave. O valor (predefinido) de uma chave será utilizado como valor de deteção, se o método de deteção for diferente da existência de ficheiro ou pasta.
         - **Requisito de chave do registro** – selecione o tipo de comparação de chave do registro usado para determinar como a regra de requisito é validada.
         - **Associado a uma aplicação de 32 bits em clientes de 64 bits** – selecione **Sim** para procurar o registo de 32 bits em clientes de 64 bits. Selecione **Não** (predefinição) para procurar o registo de 64 bits em clientes de 64 bits. Os clientes de 32 bits irão sempre procurar o registo de 32 bits.
-    - **Script**: Escolha **script** como o **tipo de requisito**, quando não for possível criar uma regra de requisito com base no arquivo, no registro ou em qualquer outro método disponível no console do Intune.
+    - **Script**: escolha o **script** como o **tipo de requisito**, quando não for possível criar uma regra de requisito com base no arquivo, no registro ou em qualquer outro método disponível no console do Intune.
         - **Arquivo de script** – para regra de requisito baseada em script do PowerShell, se o código existir for 0, detectaremos o stdout mais detalhadamente. Por exemplo, podemos detectar STDOUT como um inteiro que tem um valor de 1.
         - **Executar script como processo de 32 bits em clientes de 64 bits** -selecione **Sim** para executar o script em um processo de 32 bits em clientes de 64 bits. Selecione **não** (padrão) para executar o script em um processo de 64 bits em clientes de 64 bits. Os clientes de 32 bits executam o script em um processo de 32 bits.
-        - **Execute este script usando as credenciais conectadas**: Selecione **Sim** para executar o script usando as credenciais de dispositivo conectado * *.
+        - **Executar este script usando as credenciais conectadas**: selecione **Sim** para executar o script usando as credenciais de dispositivo conectado * *.
         - **Impor a verificação de assinatura do script** – selecione **Sim** para verificar se o script está assinado por um editor fidedigno, o que permitirá que o script seja executado sem avisos ou instruções apresentados. O script será executado desbloqueado. Selecione **Não** (predefinição) para executar o script com a confirmação do utilizador final sem verificação da assinatura.
-        - **Selecione o tipo de dados de saída**: Selecione o tipo de dados usado ao determinar uma correspondência de regra de requisito.
+        - **Selecionar tipo de dados de saída**: selecione o tipo de dados usado ao determinar uma correspondência de regra de requisito.
 4. Quando tiver terminado, selecione **OK**.
 
-### <a name="step-6-configure-app-detection-rules"></a>Passo 6: Configurar regras de detecção de aplicativo
+### <a name="step-6-configure-app-detection-rules"></a>Passo 6: configurar as regras de deteção da aplicação
 
 1. No painel **Adicionar aplicação**, selecione **Regras de deteção** para configurar as regras para detetar a presença da aplicação.
 2. No campo **Formato de regras**, selecione a forma como a presença da aplicação será detetada. Pode optar por configurar manualmente as regras de deteção ou utilizar um script personalizado para detetar a presença da aplicação. Tem de escolher, pelo menos, uma regra de deteção. 
@@ -253,7 +254,7 @@ Os seguintes passos fornecem orientação para ajudá-lo a adicionar uma aplica�
 
         4. Depois de adicionar a(s) regra(s), selecione **Adicionar** > **OK**.
 
-### <a name="step-7-configure-app-return-codes"></a>Passo 7: Configurar códigos de retorno do aplicativo
+### <a name="step-7-configure-app-return-codes"></a>Passo 7: configurar os códigos de retorno da aplicação
 
 1. No painel **Adicionar aplicação**, selecione **Códigos de retorno** para adicionar os códigos de retorno utilizados para especificar o comportamento de tentativa de instalação da aplicação ou o comportamento após a instalação. As entradas de código de retorno são adicionadas por predefinição durante a criação de aplicações. No entanto, pode adicionar códigos de retorno adicionais ou alterar os códigos de retorno existentes. 
 2. No painel **Códigos de retorno**, adicione códigos de retorno adicionais ou altere os códigos de retorno existentes.
@@ -264,19 +265,19 @@ Os seguintes passos fornecem orientação para ajudá-lo a adicionar uma aplica�
     - **Bem Sucedido** – o valor de retorno que indica que a aplicação foi instalada com êxito.
 3. Selecione **OK** depois de adicionar ou alterar a lista de códigos de retorno.
 
-### <a name="step-8-add-the-app"></a>Passo 8: Adicionar a aplicação
+### <a name="step-8-add-the-app"></a>Passo 8: adicionar a aplicação
 
 1. No painel **Adicionar aplicação**, verifique se configurou as informações da aplicação corretamente.
 2. Selecione **Adicionar** para carregar a aplicação para o Intune.
 
-### <a name="step-9-assign-the-app"></a>Etapa 9: Atribuir o aplicativo
+### <a name="step-9-assign-the-app"></a>Passo 9: atribuir a aplicação
 
 1. No painel da aplicação, selecione **Atribuições**.
 2. Selecione **Adicionar Grupo** para abrir o painel **Adicionar grupo** que está relacionado com a aplicação.
 3. Para a aplicação específica, selecione um **tipo de atribuição**:
-    - **Disponível para dispositivos inscritos**: Os usuários instalam o aplicativo do Portal da Empresa aplicativo ou Portal da Empresa site.
+    - **Disponível para dispositivos inscritos**: os utilizadores instalam a aplicação a partir da aplicação ou site Portal da Empresa.
     - **Obrigatório**: a aplicação é instalada em dispositivos nos grupos selecionados.
-    - **Desinstalar**: O aplicativo é desinstalado dos dispositivos nos grupos selecionados.
+    - **Desinstalar**: a aplicação é desinstalada dos dispositivos nos grupos selecionados.
 4. Selecione **Grupos Incluídos** e atribua os grupos que irão utilizar esta aplicação.
 5. No painel **Atribuir**, selecione **OK** para concluir a seleção de grupos incluídos.
 6. Selecione **Excluir Grupos** se quiser excluir grupos de utilizadores de serem afetados por esta atribuição de aplicações.
@@ -394,6 +395,6 @@ No comando do PowerShell acima, substitua `<path to binary file>` pelo caminho d
 
 Para obter mais informações sobre como solucionar problemas de aplicativos Win32, consulte [solução de problemas de instalação do aplicativo Win32](troubleshoot-app-install.md#win32-app-installation-troubleshooting).
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 - Para obter mais informações sobre como adicionar aplicações ao Intune, veja [Adicionar aplicações ao Microsoft Intune](apps-add.md).

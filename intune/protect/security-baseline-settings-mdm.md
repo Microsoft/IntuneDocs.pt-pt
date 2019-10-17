@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 07/25/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1938f6862fa7b74dccc4ea23ac139fcd955d77d7
-ms.sourcegitcommit: a50a1ca123ecc2c5ac129f112f73838748f56476
+ms.openlocfilehash: 21d70bb0322ec05ceb091844827151ce746cda6f
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "72237265"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508968"
 ---
 # <a name="mdm-security-baseline-settings-for-intune"></a>Configurações de linha de base de segurança do MDM para o Intune  
 
@@ -62,7 +63,7 @@ Para obter mais informações, consulte [Policy CSP-AppRuntime](https://docs.mic
   
   **Padrão**: habilitado  
 
-## <a name="application-management"></a>Gestão de Aplicações   
+## <a name="application-management"></a>Gerenciamento de aplicativos   
 Para obter mais informações, consulte [Policy CSP-ApplicationManagement](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement) na documentação do Windows.  
 
 - **Bloquear o controle do usuário sobre instalações**  
@@ -154,7 +155,7 @@ Para obter mais informações, consulte [Policy CSP-browser](https://docs.micros
   
   **Padrão**: Sim  
 
-## <a name="connectivity"></a>Ligação  
+## <a name="connectivity"></a>Conectividade  
 Para obter mais informações, consulte [CSP da política-conectividade](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity) na documentação do Windows.  
 
 - **Bloquear o download da Internet para publicação na Web e assistentes de ordenação online**  
@@ -198,7 +199,7 @@ Para obter mais informações, consulte [Policy CSP-CredentialsUI](https://docs.
   
   **Padrão**: desabilitado  
 
-## <a name="data-protection"></a>Data Protection  
+## <a name="data-protection"></a>Proteção de dados  
 Para obter mais informações, consulte [CSP de política-dataprotection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection
 ) na documentação do Windows.  
 
@@ -208,7 +209,7 @@ Para obter mais informações, consulte [CSP de política-dataprotection](https:
   
   **Padrão**: Sim  
 
-## <a name="device-guard"></a>Device Guard  
+## <a name="device-guard"></a>Proteção do dispositivo  
 Para obter mais informações, consulte [Policy CSP-DeviceGuard](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceguard
 ) na documentação do Windows.  
 
@@ -219,7 +220,7 @@ Para obter mais informações, consulte [Policy CSP-DeviceGuard](https://docs.mi
   **Padrão**: habilitar com bloqueio de UEFI 
 
 - **Habilitar a segurança baseada em virtualização**   
-  Ativa a VBS (segurança baseada em virtualização) na próxima reinicialização. A segurança baseada em virtualização usa o hipervisor do Windows para fornecer suporte aos serviços de segurança.  
+  Ativa a VBS (segurança baseada em virtualização) na próxima reinicialização. A segurança baseada em Virtualização utiliza o Windows Hypervisor para dar suporte aos serviços de segurança e requer o Windows Hypervisor.  
   [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067066)  
   
   **Padrão**: Sim  
@@ -289,25 +290,25 @@ Para obter mais informações, consulte [Policy CSP-DeviceLock](https://docs.mic
     
     **Padrão**: 3  
 
-  - **Número de falhas de entrada antes de apagar o dispositivo**  
+  - **Número de falhas de início de sessão antes de eliminar os dados do dispositivo**  
     O número de falhas de autenticação permitidas antes que o dispositivo seja apagado. Um valor de 0 desabilita A funcionalidade de apagamento do dispositivo.  
     [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067030)  
       
     **Padrão**: 10  
 
-  - **Expiração da senha (dias)**  
+  - **Expiração da Palavra-passe (dias)**  
     A configuração de política de duração máxima da senha determina o tempo (em dias) que uma senha pode ser usada antes que o sistema exija que o usuário a altere. Você pode definir senhas para expirar após um número de dias entre 1 e 999, ou pode especificar que as senhas nunca expirem definindo o número de dias como 0. Se a duração máxima da senha estiver entre 1 e 999 dias, a duração mínima da senha deverá ser menor que a duração máxima da senha. Se a duração máxima da senha for definida como 0, a duração mínima da senha poderá ser qualquer valor entre 0 e 998 dias.  
     [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067028)  
     
     **Padrão**: 60  
 
-  - **Tipo de senha necessária**  
+  - **Tipo obrigatório de palavra-passe**  
     Determina o tipo de PIN ou senha necessária.  
     [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067027)  
     
     **Padrão**: alfanumérico  
 
-  - **Comprimento mínimo da senha**  
+  - **Comprimento mínimo da palavra-passe**  
     A configuração de política comprimento mínimo da senha determina o número mínimo de caracteres que podem criar uma senha para uma conta de usuário. Você pode definir um valor entre 1 e 14 caracteres ou pode estabelecer que nenhuma senha seja necessária definindo o número de caracteres como 0.  
     [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067024)  
     
@@ -320,7 +321,7 @@ Para obter mais informações, consulte [Policy CSP-DeviceLock](https://docs.mic
     **Padrão**: Sim  
       *Uma configuração de Sim impede o uso de senhas simples.* 
 
-  - **Evitar a reutilização de senhas anteriores**  
+  - **Impedir a reutilização de palavras-passe anteriores**  
     Especifica quantas senhas podem ser armazenadas no histórico que não podem ser usadas. O valor inclui a senha atual do usuário. Por exemplo, com uma configuração de *1* , o usuário não pode reutilizar sua senha atual ao escolher uma nova senha. Uma configuração de *5* significa que um usuário não pode definir sua nova senha para sua senha atual ou com qualquer uma de suas quatro senhas anteriores.  
     [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2066795)  
     
@@ -368,7 +369,7 @@ Para obter mais informações, consulte [Policy CSP-EventLogService](https://doc
   
   **Padrão**: 32768  
 
-## <a name="experience"></a>Ocorrer  
+## <a name="experience"></a>Experiência  
 Para obter mais informações, consulte [Policy CSP-Experience](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience) na documentação do Windows.  
 
 - **Bloquear destaque do Windows**  
@@ -1190,7 +1191,7 @@ Para obter mais informações, consulte [Policy CSP-LocalPoliciesSecurityOptions
   **Padrão**: Sim
   
 - **Exigir comunicações de assinatura digital do servidor sempre**  
-  Essa configuração de segurança determina se o cliente SMB tenta negociar a assinatura de pacotes SMB. O protocolo SMB fornece a base para o compartilhamento de arquivos e impressão da Microsoft e muitas outras operações de rede, como a administração remota do Windows. Para evitar ataques man-in-the-Middle que modificam pacotes SMB em trânsito, o protocolo SMB dá suporte à assinatura digital de pacotes SMB. Essa configuração de política determina se o componente cliente SMB tenta negociar a assinatura de pacote SMB quando se conecta a um servidor SMB. Se essa configuração estiver habilitada, o cliente de rede da Microsoft solicitará que o servidor execute a assinatura de pacote SMB na configuração da sessão. Se a assinatura de pacotes tiver sido habilitada no servidor, a assinatura de pacotes será negociada. Se essa política estiver desabilitada, o cliente SMB nunca negociará a assinatura de pacotes SMB.  
+  Essa configuração de segurança determina se o cliente SMB tenta negociar a assinatura de pacotes SMB. O protocolo SMB fornece a base para o compartilhamento de arquivos e impressão da Microsoft e muitas outras operações de rede, como a administração remota do Windows. Para evitar ataques man-in-the-Middle que modificam pacotes SMB em trânsito, o protocolo SMB dá suporte à assinatura digital de pacotes SMB. Essa configuração de política determina se o componente cliente SMB tenta negociar a assinatura de pacote SMB quando se conecta a um servidor SMB. Se essa configuração estiver habilitada, o cliente de rede da Microsoft solicitará que o servidor execute a assinatura de pacote SMB na configuração da sessão. Se a assinatura de pacotes tiver sido ativada no servidor, a assinatura de pacotes será negociada. Se essa política estiver desabilitada, o cliente SMB nunca negociará a assinatura de pacotes SMB.  
   [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067319)  
   
   **Padrão**: Sim
@@ -1223,7 +1224,7 @@ Para obter mais informações, consulte [Policy CSP-LocalPoliciesSecurityOptions
   - *Nenhuma ação*. 
   - *Bloquear estação de trabalho* -a estação de trabalho é bloqueada quando o cartão inteligente é removido, permitindo que os usuários saiam da área, usem seu cartão inteligente e ainda mantenham uma sessão protegida.
   - *Forçar logoff* – o usuário é desconectado automaticamente quando o cartão inteligente é removido.
-  - *Desconectar área de trabalho remota sessão* – a remoção do cartão inteligente desconecta a sessão sem fazer logoff do usuário. Isso permite que o usuário insira o cartão inteligente e retome a sessão mais tarde, ou em outro computador equipado com leitor de cartão inteligente, sem precisar fazer logon novamente. Se a sessão for local, essa política funcionará de forma idêntica para bloquear a estação de trabalho.
+  - *Desconectar área de trabalho remota sessão* – a remoção do cartão inteligente desconecta a sessão sem fazer logoff do usuário. Isso permite que o usuário insira o cartão inteligente e retome a sessão mais tarde, ou em outro computador equipado com leitor de cartão inteligente, sem precisar fazer logon novamente. Se a sessão for local, esta política funciona da mesma forma que Bloquear Estação de Trabalho.
   
   [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067331) 
     
@@ -1396,7 +1397,7 @@ Para obter mais informações, consulte [CSP da política – Power](https://doc
   
   **Padrão**: habilitado
 
-## <a name="remote-assistance"></a>Assistência remota
+## <a name="remote-assistance"></a>Assistência Remota
 - **Assistência remota solicitada**  
   Essa configuração de política permite ativar ou desativar a assistência remota solicitada (solicitar) neste computador. 
   - *Se você habilitar essa configuração de política*, os usuários neste computador poderão usar o email ou a transferência de arquivos para pedir ajuda a alguém. Além disso, os usuários podem usar programas de mensagens instantâneas para permitir conexões com este computador, e você pode definir configurações de assistência remota adicionais. 
@@ -1422,7 +1423,7 @@ Para obter mais informações, consulte [CSP da política – Power](https://doc
     **Padrão**: MAPI simples
 
   
-## <a name="remote-desktop-services"></a>Serviços de Ambiente de Trabalho Remoto  
+## <a name="remote-desktop-services"></a>Serviços de Área de Trabalho Remota  
 Para obter mais informações, consulte [Policy CSP-RemoteDesktopServices](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-remotedesktopservices) na documentação do Windows.  
 
 - **Bloquear salvamento de senha**  
@@ -1512,11 +1513,11 @@ Para obter mais informações, consulte [Policy CSP-RemoteProcedureCall](https:/
 
   **Padrão**: autenticado
 
-## <a name="search"></a>Procurar 
+## <a name="search"></a>Procura 
 Para obter mais informações, consulte [CSP da política – Pesquisar](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-search) na documentação do Windows.  
 
 - **Desabilitar a indexação de itens criptografados**  
-  Permite ou não a indexação de itens. Essa opção é para o indexador do Windows Search, que controla se ele indexará itens que são criptografados, como os arquivos protegidos por WIP (proteção de informações do Windows). Quando a política está habilitada, os itens protegidos por WIP são indexados e os metadados sobre eles são armazenados em um local não criptografado. Os metadados incluem itens como o caminho do arquivo e a data de modificação. Quando a política estiver desabilitada, os itens protegidos por WIP não serão indexados e não aparecerão nos resultados na Cortana ou no explorador de arquivos. Também pode haver um impacto no desempenho em fotos e aplicativos do Groove se houver muitos arquivos de mídia protegidos por WIP no dispositivo.  
+  Permite ou proíbe a indexação de itens. Essa opção é para o indexador do Windows Search, que controla se ele indexará itens que são criptografados, como os arquivos protegidos por WIP (proteção de informações do Windows). Quando a política está ativada, os itens protegidos pelo WIP são indexados e os respetivos metadados são armazenados numa localização não encriptada. Os metadados incluem conteúdos como o caminho do ficheiro e a data de modificação. Quando a política estiver desabilitada, os itens protegidos por WIP não serão indexados e não aparecerão nos resultados na Cortana ou no explorador de arquivos. O desempenho das aplicações de fotografias e do Groove também poderá ser afetado se existirem muitos ficheiros multimédia protegidos pelo WIP no dispositivo.  
   [Saiba mais]( https://go.microsoft.com/fwlink/?linkid=2067303)  
   
   **Padrão**: Sim
@@ -1665,7 +1666,7 @@ Para obter mais informações, consulte [Policy CSP-defender](https://docs.micro
   
   **Padrão**: Sim  
   
-- **Verificar arquivos mortos**  
+- **Analisar ficheiros de arquivo**  
   Defender verificar arquivos mortos.
   
   **Padrão**: Sim
@@ -1719,7 +1720,7 @@ Para obter mais informações, consulte [Policy CSP-defender](https://docs.micro
   
   **Padrão**: bloquear
 
-## <a name="windows-defender-firewall"></a>Windows Defender firewall  
+## <a name="windows-defender-firewall"></a>Firewall do Windows Defender  
 Para obter mais informações, consulte [2.2.2 FW_PROFILE_TYPOE]( https://docs.microsoft.com/openspecs/windows_protocols/ms-fasp/7704e238-174d-4a5e-b809-5f3787dd8acc) na documentação de protocolos do Windows.  
 
 - **Domínio do perfil de firewall**  

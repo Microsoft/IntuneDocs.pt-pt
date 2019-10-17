@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 09/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.suite: ems
@@ -15,12 +16,12 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 mr.reviewer: karthib
-ms.openlocfilehash: f8923f3c4e1610be2501dccbd3ac551b9c994c24
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 884e4211a880feb3eb533238a5e7246b2738ce46
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71729308"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502315"
 ---
 # <a name="add-endpoint-protection-settings-in-intune"></a>Adicionar definições de proteção de ponto final no Intune  
 
@@ -66,7 +67,7 @@ As regras de firewall que o Intune pode gerenciar são detalhadas no [provedor d
 
 ### <a name="to-add-custom-firewall-rules-to-an-endpoint-protection-profile"></a>Para adicionar regras de firewall personalizadas a um perfil do Endpoint Protection  
 
-1. No Intune, vá para **configuração** > do dispositivo**perfis** > **Criar perfil**.  
+1. No Intune, acesse **configuração do dispositivo** > **perfis** > **Criar perfil**.  
 
 2. Para *plataforma*, selecione **Windows 10 e posterior**e, em seguida, para *tipo de perfil* , selecione **Endpoint Protection**.  
 
@@ -83,6 +84,6 @@ As regras de firewall que o Intune pode gerenciar são detalhadas no [provedor d
 8. Para alterar a ordem na qual as regras são exibidas, selecione o ícone de seta para *cima e para baixo* na parte superior da lista de regras.  
 
 
-## <a name="next-steps"></a>Passos seguintes  
+## <a name="next-steps"></a>Próximos passos  
 
 Para atribuir um perfil a grupos, veja [atribuir perfis de dispositivo](../configuration/device-profile-assign.md).  

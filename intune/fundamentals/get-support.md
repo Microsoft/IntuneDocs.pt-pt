@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/01/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 7fc95d17-098e-4da5-8a09-a96476569dd9
@@ -17,18 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8c4d40d3f15fe23511f3f15f7c13181a0fa72f6b
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 26165681195a47da0fcfeb86e4cfdbe2da942ec9
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71731836"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72510329"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Como obter suporte para o Microsoft Intune  
 
 [!INCLUDE [azure_portal](../../intune-classic/includes/note-for-both-portals.md)]  
   
-A Microsoft fornece suporte global técnico, de pré-vendas, de faturação e de subscrição para o Microsoft Intune. O suporte está disponível tanto online como por telefone para subscrições pagas ou de avaliação. O suporte técnico online está disponível em inglês e japonês. O suporte por telefone e suporte de faturação online estão disponíveis em idiomas adicionais.
+A Microsoft fornece suporte global técnico, de pré-vendas, de faturação e de subscrição para o Microsoft Intune. O suporte está disponível tanto online como por telefone para subscrições pagas ou de avaliação. O suporte técnico online está disponível em inglês e japonês. O suporte por telefone e o suporte de faturação online estão disponíveis em idiomas adicionais.
 
 Enquanto administrador do Intune, pode utilizar a opção **Ajuda e Suporte** para enviar um pedido de suporte online do Intune a partir do portal do Azure. Para criar e gerenciar um incidente de suporte, sua conta deve ter uma função Azure Active Directory (Azure AD) que inclua a *ação* **Microsoft. office365. supportTickets/tickets/Manage**. Para obter informações sobre funções do Microsoft Azure AD e as permissões que são necessários para criar um pedido de suporte, veja as [funções de administrador no Microsoft Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal).  
 
@@ -86,11 +87,11 @@ Para aceder a Ajuda e suporte, utilize as seguintes opções:
 
 
 Quando você abre a *ajuda e o suporte*, o portal exibe uma exibição que depende se você tem ou não incidentes de suporte ativos, e quando você tem suporte Premier, alguns elementos e opções adicionais:
-- **Nenhum incidente de suporte ativo**: Você verá a página **precisa de ajuda?** , como visto na imagem a seguir do painel de gerenciamento de dispositivos.  
-- **Incidentes de suporte ativos**: Você verá a página [tíquetes de suporte](#view-support-cases) , que exibe a lista de seus incidentes ativos.  
-- **Contrato de suporte Premier**: Sua experiência é a mesma das duas primeiras opções, embora você veja os seguintes elementos adicionais sobre a necessidade de ajuda? Web 
+- **Nenhum incidente de suporte ativo**: você verá a página **precisa de ajuda?** , como visto na imagem a seguir do painel de gerenciamento de dispositivos.  
+- **Incidentes de suporte ativos**: você verá a página [tíquetes de suporte](#view-support-cases) , que exibe a lista de seus incidentes ativos.  
+- **Contrato de suporte Premier**: sua experiência é a mesma das duas primeiras opções, embora você veja os seguintes elementos adicionais sobre a necessidade de ajuda? Web 
   - Depois que o título da página **precisar de ajuda?** , você verá a faixa suporte Premier:  
-    ![Faixa de suporte Premier](./media/get-support/premier-banner.png)
+    faixa de suporte do ![Premier @ no__t-1
   - Na seção **obter suporte** da página, você pode definir o nível de **severidade** inicial ao criar uma solicitação de serviço por telefone.
 
 
@@ -191,20 +192,20 @@ Quando sua assinatura do Intune é hospedada na GCC (nuvem de computação gover
    ![Imagem da ligação Novo pedido de suporte realçada na página de ajuda e suporte](./media/get-support/azure-support-ticket-link.png)
 
 3. No separador **Básico**, para a maioria dos problemas de suporte técnico do Intune, selecione as seguintes opções:
-   - **Tipo de problema**: **Técnico**
+   - **Tipo de problema**: **técnico**
    - **Subscrição**: <*a sua subscrição*>
    - **Serviço**: **Microsoft Intune**
-   - **Tipo de problema**: escolha o tipo de problema no menu pendente.
-   - **Subtipo de problema**: escolha o subtipo de problema no menu pendente.
-   - **Assunto**: descreva resumidamente o problema para o qual pretende obter ajuda.
+   - **Tipo de problema**: escolha o tipo de problema no menu suspenso.
+   - **Subtipo de problema**: escolha o subtipo de problema no menu suspenso.
+   - **Assunto**: Descreva brevemente o problema com o qual você deseja obter ajuda.
 
    ![Imagem do separador Básico na Ajuda + suporte – Nova página de pedido de suporte](./media/get-support/help-new-support-case-basics.png)
 
-   escolha **Seguinte: Soluções** para continuar.
-4. No separador **Soluções**, reveja os passos recomendados que podem ajudá-lo a resolver o seu problema sem enviar um pedido de suporte. Se pretender continuar a criar um pedido de suporte depois de verificar os passos, clique em **Seguinte: Detalhes**.
+   Escolha **Avançar: soluções** para continuar.
+4. No separador **Soluções**, reveja os passos recomendados que podem ajudá-lo a resolver o seu problema sem enviar um pedido de suporte. Se você ainda quiser criar uma solicitação de suporte depois de examinar as etapas, clique em **Avançar: detalhes**.
 
    ![Imagem do separador Soluções na Ajuda + suporte – Nova página de pedido de suporte](./media/get-support/help-new-support-case-solutions.png)
-5. No separador **Detalhes**, preencha os detalhes para o seu problema, o método de suporte, as informações de contacto e clique em **Seguinte: Rever + criar**.
+5. Na guia **detalhes** , preencha os detalhes do problema, o método de suporte, suas informações de contato e clique em **Avançar: revisar + criar**.
 
    ![Imagem do separador Detalhes na Ajuda + suporte – Nova página de pedido de suporte](./media/get-support/help-new-support-case-details.png)
 6. Reveja as informações, verifique se estão corretas e escolha **Criar** para submeter o pedido de suporte.

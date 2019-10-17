@@ -9,6 +9,7 @@ ms.date: 09/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 4fa3255b-9d1e-42d5-bd8b-70963dcf2d86
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 690fb81350c0c264677c6c75b8942e9cdcd4e8f0
-ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
+ms.openlocfilehash: 2056d37b00f5e2ae7b36c6e1c02f20dc244eb290
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71163367"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502122"
 ---
 # <a name="how-to-reset-your-device-passcode-from-the-company-portal-website"></a>Como repor o código de acesso do dispositivo a partir do site do Portal da Empresa
 
@@ -47,7 +48,7 @@ A redefinição de senha não está disponível para dispositivos que executam o
 
     ![Captura de tela do ícone mais, realçado com uma seta vermelha.](./media/rename-reset-device-step3-more-1808.png)  
 
-4. Quando lhe for pedido, clique em **Terminar Sessão**. Quando lhe for pedido novamente, volte a iniciar sessão. Entre novamente no site do Portal da Empresa em cinco minutos ou Portal da Empresa não redefinirá a senha do dispositivo.  
+4. Quando solicitado, clique em **sair**. Quando solicitado novamente, entre novamente. Entre novamente no site do Portal da Empresa em cinco minutos ou Portal da Empresa não redefinirá a senha do dispositivo.  
 
    > [!NOTE]
    > Tem de iniciar sessão novamente para confirmar a sua identidade. Este procedimento serve para impedir que o código de acesso do seu dispositivo seja reposto através de tentativas maliciosas.
@@ -73,12 +74,12 @@ A redefinição de senha não está disponível para dispositivos que executam o
 
 Esta secção descreve a reposição do código de acesso e o comportamento da palavra-passe temporária para a plataforma de cada dispositivo.  
 
-**Android**: Remove a senha existente e cria uma senha temporária composta por letras e números.
+**Android**: remove o código de acesso existente e cria um código de acesso alfanumérico temporário.
 
-**iOS**: Remove a senha existente e não cria uma senha temporária. Se você usar o Touch ID para abrir o dispositivo ou fazer compras, deverá configurá-lo novamente.  
+**Ios**: Remove a senha existente e não cria uma senha temporária. Se você usar o Touch ID para abrir o dispositivo ou fazer compras, deverá configurá-lo novamente.  
 
-**Windows 10 Mobile**: Remove a senha existente e cria uma senha temporária composta por letras e números. Se estiver configurado, o reconhecimento facial do Windows Hello irá continuar a funcionar com o dispositivo.
+**Windows 10 Mobile**: remove o código de acesso existente e cria um código de acesso alfanumérico temporário. Se estiver configurado, o reconhecimento facial do Windows Hello irá continuar a funcionar com o dispositivo.
 
-**Windows Phone 8.1**: Remove a senha existente e cria uma senha temporária composta por números.  
+**Windows Phone 8.1**: remove o código de acesso existente e cria um código de acesso numérico temporário.  
 
 Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  

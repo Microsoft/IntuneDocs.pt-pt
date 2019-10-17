@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 07/24/2019
 ms.topic: quickstart
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 723f4b4e-3090-4811-84ff-6af652abea5a
@@ -17,14 +18,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ccf0f06993ef0edf06ca60ba4de7973ed878441a
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 09cf321fc04939257090ec8f46139cb16281e250
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71732100"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72504991"
 ---
-# <a name="quickstart-create-a-group-to-manage-users"></a>Início rápido: Criar um grupo para gerenciar usuários
+# <a name="quickstart-create-a-group-to-manage-users"></a>Início Rápido: criar um grupo para gerir utilizadores
 
 Neste início rápido, utilizará o Intune para criar um grupo com base num utilizador existente. Os grupos são utilizados para gerir os utilizadores e controlar o acesso dos seus funcionários aos recursos da sua empresa. Estes recursos podem fazer parte da intranet da sua empresa ou podem ser recursos externos, tais como sites do SharePoint, aplicações SaaS ou aplicações Web.
 
@@ -58,11 +59,11 @@ Irá criar um grupo que será utilizado mais tarde nesta série de início rápi
 
 Assim que tiver criado o grupo com êxito, este será apresentado na lista **Todos os grupos**. 
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Neste início rápido, utilizou o Intune para criar um grupo com base num utilizador existente. Para obter mais informações sobre como adicionar grupos ao Intune, veja [Adicionar grupos para organizar utilizadores e dispositivos](../groups-add.md).
 
 Para seguir esta série de guias de início rápido do Intune, continue para o próximo guia de início rápido.
 
 > [!div class="nextstepaction"]
-> [TUTORIAIS Configurar o registro automático para dispositivos Windows 10 @ no__t-0
+> [Guia de Início Rápido: configurar a inscrição automática para dispositivos com o Windows 10](../enrollment/quickstart-setup-auto-enrollment.md)

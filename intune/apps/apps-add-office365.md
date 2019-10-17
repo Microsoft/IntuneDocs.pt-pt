@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/15/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 38cc8ebc7be09d6ca0322a916d71f1fc86d3e49b
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 35545d6c01e3acf7e54c3b932a4450c93f3dd4a9
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71731264"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72507306"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Atribuir aplicações do Office 365 a dispositivos Windows 10 com o Microsoft Intune
 
@@ -74,21 +75,21 @@ Para obter mais informações sobre a opção **inserir dados XML** , consulte [
 
 ## <a name="configure-app-suite-information"></a>Configurar informações do pacote de aplicativos
 
-Neste passo, vai fornecer as informações acerca do conjunto de aplicações. Estas informações ajudam-no a identificar o conjunto de aplicações no Intune e também ajudam os utilizadores a encontrá-lo no portal da empresa.
+Neste passo, vai fornecer as informações acerca do conjunto de aplicações. Estas informações ajudam-no a identificar o conjunto de aplicações no Intune e também ajuda os utilizadores a encontrá-la no portal da empresa.
 
 1. No painel **Adicionar Aplicação**, selecione **Informações do Conjunto de Aplicações**.
 2. No painel **Informações do Conjunto de Aplicações**, faça o seguinte:
-    - **Nome do pacote**: Insira o nome do pacote de aplicativos conforme ele é exibido no portal da empresa. Confirme que todos os nomes de conjuntos de aplicações que utiliza são exclusivos. Se o nome de um conjunto de aplicações existir em duplicado, apenas uma das aplicações será apresentada aos utilizadores no portal da empresa.
-    - **Descrição do pacote**: Insira uma descrição para o pacote de aplicativos. Por exemplo, pode listar as aplicações que selecionou para inclusão.
-    - **Publicador**: A Microsoft aparece como o Publicador.
-    - **Categoria**: Opcionalmente, selecione uma ou mais das categorias de aplicativo internas ou uma categoria que você criou. Esta definição irá permitir que os utilizadores encontrem o conjunto de aplicações mais facilmente quando procurarem no portal da empresa.
-    - **Apresentar como aplicação em destaque no Portal da Empresa**: selecione esta opção para apresentar a aplicação de forma bem visível na página principal do portal da empresa quando os utilizadores procurarem aplicações.
-    - **URL de informações**: Opcionalmente, introduza o URL de um site que contenha informações sobre esta aplicação. O URL é apresentado aos utilizadores no portal da empresa.
-    - **URL de privacidade**: Opcionalmente, introduza o URL de um site que contenha informações sobre a privacidade desta aplicação. O URL é apresentado aos utilizadores no portal da empresa.
-    - **Programador**: A Microsoft aparece como desenvolvedor.
-    - **Proprietário**: A Microsoft é exibida como o proprietário.
+    - **Nome do Conjunto**: introduza o nome do conjunto de aplicações tal como será apresentado no portal da empresa. Confirme que todos os nomes de conjuntos de aplicações que utiliza são exclusivos. Se o nome de um conjunto de aplicações existir em duplicado, apenas uma das aplicações será apresentada aos utilizadores no portal da empresa.
+    - **Descrição do Conjunto**: introduza uma descrição para o conjunto de aplicações. Por exemplo, pode listar as aplicações que selecionou para inclusão.
+    - **Publicador**: a Microsoft aparece como o publicador.
+    - **Categoria**: em alternativa, selecione uma ou mais categorias de aplicações incorporadas ou uma categoria criada por si. Esta definição irá permitir que os utilizadores encontrem o conjunto de aplicações mais facilmente quando procurarem no portal da empresa.
+    - **Apresentar como aplicação em destaque no Portal da Empresa**: selecione esta opção para apresentar o conjunto de aplicações em destaque na página principal do portal da empresa quando os utilizadores procurarem aplicações.
+    - **URL de Informações**: opcionalmente, introduza o URL de um site que contenha informações sobre esta aplicação. O URL é apresentado aos utilizadores no portal da empresa.
+    - **URL de Privacidade**: opcionalmente, introduza um URL para um site que contenha informações sobre a privacidade desta aplicação. O URL é apresentado aos utilizadores no portal da empresa.
+    - **Programador**: a Microsoft aparece como o programador.
+    - **Proprietário**: a Microsoft aparece como o proprietário.
     - **Notas**: introduza quaisquer notas que queira associar a esta aplicação.
-    - **Logótipo**: O logotipo do Office 365 é exibido com o aplicativo quando os usuários navegam pelo portal da empresa.
+    - **Logótipo**: o logótipo do Office 365 é apresentado com a aplicação quando os utilizadores procuram no portal da empresa.
 3. Selecione **OK**.
 
 ## <a name="configure-app-suite"></a>Configurar pacote de aplicativos
@@ -106,8 +107,8 @@ Se você tiver selecionado a opção **Designer de configuração** na caixa sus
 
 1. No painel **Adicionar Aplicação**, selecione **Definições do Conjunto de Aplicações**.
 2. No painel **Definições do Conjunto de Aplicações**, faça o seguinte:
-    - **Versão do Office**: Escolha se deseja atribuir a versão de 32 bits ou de 64 bits do Office. Pode instalar a versão de 32 bits em dispositivos de 32 e de 64 bits, mas só pode instalar a versão de 64 bits em dispositivos de 64 bits.
-    - **Atualizar canal**: Escolha como o Office é atualizado nos dispositivos. Para obter mais informações sobre os vários canais de atualização, veja a [Descrição geral dos canais de atualização do Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus). Escolha entre:
+    - **Versão do Office**: selecione se quer atribuir a versão de 32 bits ou de 64 bits do Office. Pode instalar a versão de 32 bits em dispositivos de 32 e de 64 bits, mas só pode instalar a versão de 64 bits em dispositivos de 64 bits.
+    - **Atualizar Canal**: selecione a forma como o Office é atualizado nos dispositivos. Para obter mais informações sobre os vários canais de atualização, veja a [Descrição geral dos canais de atualização do Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus). Escolha entre:
         - **Mensalmente**
         - **Via de Atualizações Mensais (Direcionada)**
         - **Via de Atualizações Mensais Semianuais**
@@ -122,9 +123,9 @@ Se você tiver selecionado a opção **Designer de configuração** na caixa sus
         Para obter mais informações, veja [Overview of update channels for Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus) (Descrição geral dos canais de atualização do Office 365 ProPlus).
 
     - **Remover MSI dos dispositivos de utilizador final**: escolha se pretende remover as aplicações .MSI do Office já existentes dos dispositivos de utilizador final. A instalação não será concluída com êxito se existirem aplicações MSI já existentes em dispositivos de utilizador final. As aplicações a desinstalar não se limitam às selecionadas para instalação em **Configurar o Conjunto de Aplicações**, na medida em que irá remover todas as aplicações do Office (MSI) do dispositivo de utilizador final. Para obter mais informações, veja [Remover versões MSI do Office existentes ao atualizar para o Office 365 ProPlus](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version). Quando o Intune reinstalar o Office nos computadores dos seus utilizadores finais, estes terão automaticamente os mesmos pacotes de idiomas de que dispunham com instalações anteriores do Office .MSI. 
-    - **Aceitar automaticamente o contrato de licença de usuário final do aplicativo**: Selecione esta opção se você não exigir que os usuários finais aceitem o contrato de licença. O Intune irá aceitar automaticamente o contrato.
-    - **Use a ativação do computador compartilhado**: Selecione esta opção quando vários usuários compartilharem um computador. Para obter mais informações, veja [Overview of shared computer activation for Office 365](https://docs.microsoft.com/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus)(Descrição geral da ativação de computadores partilhados para o Office 365).
-    - **Idiomas**: O Office é instalado automaticamente em qualquer um dos idiomas com suporte instalados com o Windows no dispositivo do usuário final. Selecione esta opção se quiser instalar idiomas adicionais no conjunto de aplicações. <p></p>
+    - **Aceitar automaticamente o contrato de licença do utilizador final**: selecione esta opção se não precisar que os utilizadores finais aceitem o contrato de licença. O Intune irá aceitar automaticamente o contrato.
+    - **Utilizar a ativação de computadores partilhados**:selecione esta opção quando existirem múltiplos utilizadores a partilhar um computador. Para obter mais informações, veja [Overview of shared computer activation for Office 365](https://docs.microsoft.com/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus)(Descrição geral da ativação de computadores partilhados para o Office 365).
+    - **Idiomas**: o Office é instalado automaticamente em qualquer dos idiomas suportados que vierem instalados com o Windows no dispositivo dos utilizadores finais. Selecione esta opção se quiser instalar idiomas adicionais no conjunto de aplicações. <p></p>
     Pode implementar idiomas adicionais para aplicações do Office 365 Pro Plus geridas através do Intune. A lista de idiomas disponíveis inclui o **Tipo** do pacote de idiomas (núcleo, parcial e verificação). No portal do Azure, selecione **Microsoft Intune** > **Aplicações do cliente** > **Aplicações** > **Adicionar**. Na lista **Tipo de aplicação**, no painel **Adicionar aplicação**, selecione **Windows 10** em **Office 365 Suite**. Selecione **Idiomas** no painel **Definições do Conjunto de Aplicações**. Para obter informações adicionais, veja [Descrição geral da implementação de idiomas no Office 365 ProPlus](https://docs.microsoft.com/deployoffice/overview-of-deploying-languages-in-office-365-proplus).
 
 ## <a name="select-scope-tags-optional"></a>Selecionar marcas de escopo (opcional)
@@ -143,7 +144,7 @@ Se você tiver selecionado a opção **inserir dados XML** na caixa suspensa **f
 
 Quando tiver concluído, no painel **Adicionar Aplicação**, selecione **Adicionar**. A aplicação que criou é apresentada na lista de aplicações.
 
-## <a name="troubleshooting"></a>Resolução de problemas
+## <a name="troubleshooting"></a>Resolução de Problemas
 O Intune usa a [ferramenta de implantação do Office](https://docs.microsoft.com/DeployOffice/overview-of-the-office-2016-deployment-tool) para baixar e implantar o Office 365 ProPlus em seus computadores cliente usando a CDN do [Office 365](https://docs.microsoft.com/office365/enterprise/content-delivery-networks). Referencie as práticas recomendadas descritas em [Gerenciando pontos de extremidade do Office 365](https://docs.microsoft.com/office365/enterprise/managing-office-365-endpoints) para garantir que sua configuração de rede permita que os clientes acessem a CDN diretamente, em vez de rotear o tráfego da CDN por meio de proxies centrais para evitar a introdução desnecessária MOLAP.
 
 Execute o [suporte da Microsoft e o assistente de recuperação para o Office 365](https://diagnostics.office.com) em um dispositivo de destino se você encontrar problemas de instalação ou tempo de execução.
@@ -156,7 +157,7 @@ A seguinte tabela lista códigos de erro comuns que poderá encontrar e o seu si
 
 ### <a name="status-for-office-csp"></a>Estado do CSP do Office
 
-| State | Fase | Descrição |
+| Estado | Fase | Description |
 |--------------------------------------------------|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1460 (ERROR_TIMEOUT) | Transferência | Falha ao transferir a Ferramenta de Implementação do Office |
 | 13 (ERROR_INVALID_DATA) | - | Não foi possível verificar a assinatura da Ferramenta de Implementação do Office transferida |
@@ -173,7 +174,7 @@ A seguinte tabela lista códigos de erro comuns que poderá encontrar e o seu si
 
 | Cenário | Código de retorno | IU | Nota |
 |------------------------------------------------------------------------------------------------------------------|---------------------------------------|----------------------------------------------------|------------------------------------|
-| Tentativa de desinstalação quando não existe nenhuma instalação Clique-e-Use ativa | -2147418113, 0x8000ffff ou 2147549183 | Código de erro: Código de 30088-1008Error: 30125-1011 (404) | Ferramenta de Implementação do Office |
+| Tentativa de desinstalação quando não existe nenhuma instalação Clique-e-Use ativa | -2147418113, 0x8000ffff ou 2147549183 | Código de erro: código de 30088-1008Error: 30125-1011 (404) | Ferramenta de Implementação do Office |
 | Instalação quando já existe uma versão MSI instalada | 1603 | - | Ferramenta de Implementação do Office |
 | Instalação cancelada pelo utilizador ou por outra instalação | 17002 | - | Clique-e-Use |
 | Tentativa de instalação da versão de 64 bits num dispositivo com a versão de 32 bits instalada. | 1603 | - | Código de retorno da Ferramenta de Implementação do Office |
@@ -182,6 +183,6 @@ A seguinte tabela lista códigos de erro comuns que poderá encontrar e o seu si
 | O cliente da versão Clique-e-Use falhou ao iniciar (inesperado) | 17000 | - | Clique-e-Use |
 | O cliente da versão Clique-e-Use falhou ao colocar o cenário em fila (inesperado) | 17001 | - | Clique-e-Use |
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 - Para atribuir as aplicações aos grupos que escolher, veja [Atribuir aplicações a grupos](/intune-azure/manage-apps/deploy-apps).

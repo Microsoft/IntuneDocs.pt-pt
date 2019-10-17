@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 09/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: ''
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8c46caf4d1c9f9a32a7f324fc5e1734dbe8043bd
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 81a5293f0c7ef998b74e59efdfb43a633b780e5c
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71730960"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72507006"
 ---
 # <a name="use-and-manage-android-enterprise-devices-with-oemconfig-in-microsoft-intune"></a>Usar e gerenciar dispositivos Android Enterprise com o OEMConfig no Microsoft Intune
 
@@ -35,7 +36,7 @@ Esta funcionalidade aplica-se a:
 
 Este artigo descreve o OEMConfig, lista os pré-requisitos, mostra como criar um perfil de configuração e lista os aplicativos OEMConfig com suporte no Intune.
 
-## <a name="overview"></a>Descrição geral
+## <a name="overview"></a>Overview
 
 As políticas de OEMConfig são um tipo especial de política de configuração de dispositivo semelhante à [política de configuração de aplicativo](../apps/app-configuration-policies-overview.md). OEMConfig é um padrão definido pelo Google que aproveita a configuração de aplicativo no Android para enviar configurações de dispositivo para aplicativos escritos por OEMs (fabricantes originais de equipamento). Esse padrão permite que OEMs e EMMs (gerenciamento de mobilidade empresarial) criem e ofereçam suporte a recursos específicos de OEM de forma padronizada. [Saiba mais sobre o OEMConfig](https://blog.google/products/android-enterprise/oemconfig-supports-enterprise-device-features/).
 
@@ -84,9 +85,9 @@ Verifique se o dispositivo dá suporte a OEMConfig, se o aplicativo OEMConfig co
 3. Introduza as seguintes propriedades:
 
     - **Nome**: introduza um nome descritivo para o novo perfil.
-    - **Descrição**: introduza uma descrição para o perfil. Esta definição é opcional, mas recomendada.
-    - **Plataforma**: Selecione **Android Enterprise**.
-    - **Tipo de perfil**: Selecione **OEMConfig**.
+    - **Descrição:** introduza uma descrição para o perfil. Esta definição é opcional, mas recomendada.
+    - **Plataforma**: selecione **Android Enterprise**.
+    - **Tipo de perfil**: selecione **OEMConfig**.
 
 4. Selecione **aplicativo associado**, selecione um aplicativo OEMConfig existente que você adicionou anteriormente > **OK**. Certifique-se de escolher o aplicativo OEMConfig correto para os dispositivos para os quais você está atribuindo a política.
 
@@ -98,9 +99,9 @@ Verifique se o dispositivo dá suporte a OEMConfig, se o aplicativo OEMConfig co
 5. Em **definir configurações com**, escolha usar o **Designer de configuração** ou o **Editor de JSON**:
 
     > [!TIP]
-    > Leia a documentação do OEM para certificar-se de que você está configurando as propriedades corretamente. Essas propriedades de aplicativo são incluídas pelo OEM, não pelo Intune. O Intune faz a validação mínima das propriedades ou o que você insere. Por exemplo, se você inserir `abcd` para um número de porta, o perfil salvará como está e será implantado em seus dispositivos com os valores que você configurar. Certifique-se de inserir as informações corretas.
+    > Leia a documentação do OEM para certificar-se de que você está configurando as propriedades corretamente. Essas propriedades de aplicativo são incluídas pelo OEM, não pelo Intune. O Intune faz a validação mínima das propriedades ou o que você insere. Por exemplo, se você inserir `abcd` para um número de porta, o perfil salvará no estado em que se encontra e será implantado em seus dispositivos com os valores que você configurar. Certifique-se de inserir as informações corretas.
 
-    - **Designer de configuração**: Quando você seleciona essa opção, as propriedades disponíveis no esquema do aplicativo são mostradas para você configurar.
+    - **Designer de configuração**: quando você seleciona essa opção, as propriedades disponíveis no esquema do aplicativo são mostradas para você configurar.
 
       - Menus de contexto no designer de configuração indicam que mais opções estão disponíveis. Por exemplo, o menu de contexto pode permitir que você adicione, exclua e reordene as configurações. Essas opções são incluídas pelo OEM. Certifique-se de ler a documentação do aplicativo OEM para saber como essas opções devem ser usadas para criar perfis.
 
@@ -110,7 +111,7 @@ Verifique se o dispositivo dá suporte a OEMConfig, se o aplicativo OEMConfig co
         
       - Se você criar um pacote vazio (não configurado) no designer de configuração, ele será excluído ao alternar para o editor de JSON.
 
-    - **Editor de JSON**: Quando você seleciona essa opção, um editor de JSON é aberto com um modelo para o esquema de configuração completo inserido no aplicativo. No editor, personalize o modelo com valores para as diferentes configurações. Se você usar o **Designer de configuração** para alterar seus valores, o editor de JSON substituirá o modelo por valores do designer de configuração.
+    - **Editor de JSON**: quando você seleciona essa opção, um editor de JSON é aberto com um modelo para o esquema de configuração completo inserido no aplicativo. No editor, personalize o modelo com valores para as diferentes configurações. Se você usar o **Designer de configuração** para alterar seus valores, o editor de JSON substituirá o modelo por valores do designer de configuração.
     
       - Se você estiver atualizando um perfil existente, o editor de JSON mostrará as configurações que foram salvas pela última vez com o perfil.
 
@@ -120,7 +121,7 @@ Verifique se o dispositivo dá suporte a OEMConfig, se o aplicativo OEMConfig co
 
     Todas as alterações feitas no designer de configuração também são feitas automaticamente no editor de JSON. Da mesma forma, todas as alterações feitas no editor de JSON são feitas automaticamente no designer de configuração. Se sua entrada contiver valores inválidos, você não poderá alternar entre o designer de configuração e o editor de JSON até corrigir os problemas.
 
-6. Selecione **OK** > **Adicionar** para salvar suas alterações. A política é criada e apresentada na lista.
+6. Selecione **OK** > **Adicionar** para salvar as alterações. A política é criada e apresentada na lista.
 
 Certifique-se de [atribuir o perfil](device-profile-assign.md) e [monitorar seu status](device-profile-monitor.md).
 
@@ -140,18 +141,18 @@ Em comparação com os aplicativos padrão, os aplicativos OEMConfig expandem os
 
 | OEM | ID do Pacote | Documentação do OEM (se disponível) |
 | --- | --- | ---|
-| Samsung | com.samsung.android.knox.kpu | [Guia de administração do plug-in do Knox Service](https://docs.samsungknox.com/knox-service-plugin/admin-guide/welcome.htm) |
+| Samsung | com. Samsung. Android. Knox. KPU | [Guia de administração do plug-in do Knox Service](https://docs.samsungknox.com/knox-service-plugin/admin-guide/welcome.htm) |
 | Tecnologias pretas | com. pretas. oemconfig. Common | [Visão geral do pretas OEMConfig](http://techdocs.zebra.com/oemconfig ) |
 | Datalogic | com. Datalogic. oemconfig | [Documentação do usuário para Datalogic OEMConfig](https://datalogic.github.io/oemconfig/) |
 | Honeywell | com. Honeywell. oemconfig |  |
 
 -----------------
 
-Se um aplicativo OEMConfig existir para seu dispositivo, mas não estiver na tabela acima, ou não estiver aparecendo no console do Intune, envie um `IntuneOEMConfig@microsoft.com`email para.
+Se um aplicativo OEMConfig existir para seu dispositivo, mas não estiver na tabela acima ou não estiver aparecendo no console do Intune, envie um email `IntuneOEMConfig@microsoft.com`.
 
 > [!NOTE]
 > Os aplicativos OEMConfig devem ser integrados pelo Intune antes que possam ser configurados com perfis OEMConfig. Quando um aplicativo tem suporte, você não precisa entrar em contato com a Microsoft sobre como configurá-lo em seu locatário. Basta seguir as instruções nesta página.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 - [Atribua o perfil](device-profile-assign.md) e [monitorize o respetivo estado](device-profile-monitor.md).

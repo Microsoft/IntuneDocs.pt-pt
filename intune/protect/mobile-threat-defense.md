@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 06/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ac77b590-a7ec-45a0-9516-ebf5243b6210
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 97efe5c2445263bba11ee083e89d36fde1986dc1
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 16f5be886a1c62ac6743502207e043e1582ce5e7
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71732396"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72504469"
 ---
 # <a name="what-is-mobile-threat-defense-integration-with-intune"></a>O que é a integração da Defesa Contra Ameaças para Dispositivos Móveis com o Intune?
 O Intune pode integrar dados de um fornecedor de defesa contra ameaças móveis como uma fonte de informações para políticas de conformidade e regras de acesso condicional. Você pode usar essas informações para ajudar a proteger recursos corporativos, como o Exchange e o SharePoint, bloqueando o acesso de dispositivos móveis comprometidos.  
@@ -36,7 +37,7 @@ Normalmente, as empresas são proativas na proteção de PCs contra vulnerabilid
 
 O Intune usa um conector de defesa contra ameaças móveis para criar um canal de comunicação entre o Intune e seu fornecedor de defesa contra ameaças móveis escolhido. Os parceiros de defesa contra ameaças móveis do Intune oferecem aplicativos intuitivos e fáceis de implantar para dispositivos móveis. Esses aplicativos examinam e analisam ativamente as informações de ameaças para compartilhar com o Intune. O Intune pode usar os dados para fins de relatório ou imposição.  
 
-Por exemplo: Um aplicativo de defesa contra ameaças móveis conecta-se ao fornecedor de defesa contra ameaças móveis que um telefone em sua rede está conectado atualmente a uma rede que está vulnerável a ataques de interceptação. Essas informações são categorizadas para um nível de risco apropriado de baixo, médio ou alto. Esse nível de risco é comparado com as concessões de nível de risco definidas no Intune. Com base nessa comparação, o acesso a determinados recursos de sua escolha pode ser revogado enquanto o dispositivo é comprometido.
+Por exemplo: um aplicativo de defesa contra ameaças móveis conecta-se ao fornecedor de defesa contra ameaças móveis que um telefone em sua rede está conectado atualmente a uma rede que está vulnerável a ataques de interceptação. Essas informações são categorizadas para um nível de risco apropriado de baixo, médio ou alto. Esse nível de risco é comparado com as concessões de nível de risco definidas no Intune. Com base nessa comparação, o acesso a determinados recursos de sua escolha pode ser revogado enquanto o dispositivo é comprometido.
 
 ## <a name="what-data-does-intune-collect-for-mobile-threat-defense"></a>Que dados são recolhidos pelo Intune para a Defesa Contra Ameaças para Dispositivos Móveis?
 

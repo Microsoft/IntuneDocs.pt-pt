@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 01/02/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 301159ad-5f7e-4fcc-86c7-f72a71701ff4
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a369abd2f3873d970e9efc1ebf3ea814a9295fec
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 03b228795d7601647c57ea86b5adf7576b669c45
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71729760"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72504576"
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>Reatribuir políticas de acesso condicional do portal clássico do Intune para o portal do Azure
 
@@ -47,7 +48,7 @@ Se você estiver pronto para mover para a portal do Azure, siga as etapas neste 
       - Remova gradualmente os usuários dos grupos de segurança que têm políticas de acesso condicional direcionadas para eles no portal clássico do Intune.
       - Após confirmar que a nova política está a funcionar para estes utilizadores, pode desativar a política no portal clássico do Intune. 
 <br /><br />
-- Se você tiver suas configurações de política de acesso condicional configuradas para usar o EAS (Exchange ActiveSync) no portal clássico do Intune, consulte as [instruções neste tópico](#reassign-intune-device-based-conditional-access-policies-for-eas-clients) para reatribuir **as configurações da política de acesso condicional do EAS no portal do Azure**.
+- Se você tiver suas configurações de política de acesso condicional configuradas para usar o EAS (Exchange ActiveSync) no portal clássico do Intune, consulte as [instruções neste tópico](#reassign-intune-device-based-conditional-access-policies-for-eas-clients) para **reatribuir as configurações da política de acesso condicional do EAS no portal do Azure**.
 
 ### <a name="to-verify-your-device-based-conditional-access-policies-in-the-intune-classic-portal"></a>Para verificar as políticas de acesso condicional com base no dispositivo no portal clássico do Intune
 

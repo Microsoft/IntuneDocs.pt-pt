@@ -9,18 +9,19 @@ manager: dougeby
 ms.date: 3/6/2018
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 536e3a7f8c793808558f41ba8dde4e1ad1ee3601
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 69de660e65ed2a0f3b6c9c7e4ce774a6fcde2676
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71730432"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506513"
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-windows-phone-81"></a>Configurar definições de VPN no Microsoft Intune para dispositivos com o Windows Phone 8.1
 
@@ -33,8 +34,8 @@ Consoante as definições que escolher, nem todos os valores na lista seguinte s
 
 ## <a name="base-vpn-settings"></a>Definições de VPN Base
 
-- **Aplicar todas as definições apenas ao Windows Phone 8.1** – Esta é uma definição que pode configurar no portal clássico do Intune. No portal do Azure, esta definição não pode ser alterada. Se esta definição estiver definida como **Configurada**, as definições só são aplicadas a dispositivos com o Windows Phone 8.1. Se estiver definida como **Não configurada**, estas definições também são aplicadas a dispositivos com o Windows 10 Mobile.
-- **Nome da ligação** – Introduza um nome para esta ligação. Os utilizadores verão este nome quando procurarem a lista de ligações VPN disponíveis no dispositivo.
+- **Aplicar todas as definições apenas ao Windows Phone 8.1** – Esta é uma definição que pode configurar no portal clássico do Intune. No portal do Azure, esta definição não pode ser alterada. Se esta definição estiver definida como **Configurada**, as definições só são aplicadas a dispositivos com o Windows Phone 8.1. Se estiver definida como **Não configurada**, estas definições também são aplicadas a dispositivos com o Windows 10 Mobile.
+- **Nome da ligação** – introduza um nome para esta ligação. Os utilizadores verão este nome quando procurarem a lista de ligações VPN disponíveis no dispositivo.
 - **Método de autenticação** – escolha como os dispositivos serão autenticados no servidor VPN em:
   - **Certificados** – Em **Certificado de autenticação**, escolha um perfil de certificado SCEP ou PKCS que criou anteriormente para autenticar a ligação. Para obter mais detalhes sobre os perfis de certificado, veja [Como configurar certificados](../protect/certificates-configure.md).
   - **Nome de utilizador e palavra-passe** – Os utilizadores finais têm de indicar um nome de utilizador e uma palavra-passe para iniciar sessão no servidor VPN.

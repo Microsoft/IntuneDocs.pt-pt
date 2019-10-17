@@ -9,6 +9,7 @@ ms.date: 11/08/2017
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: d16dd2de-3ed5-474f-a04b-36dcd350162c
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: shburbid
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8d51e9db367925442c7b6c735b1de86891e05856
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 3e8fd6941a94a24dd3b6bf98daf6adc9a47f9fa7
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61505578"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72501935"
 ---
 # <a name="turn-on-windows-defender-to-access-company-resources"></a>Ativar o Windows Defender para aceder aos recursos da empresa
 

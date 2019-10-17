@@ -1,6 +1,6 @@
 ---
 title: Enviar registos ao suporte da empresa para dispositivos Windows 10 | Documentos da Microsoft
-description: Detalhes de erros e registos de e-mail para ajudar o suporte da empresa corrigir problemas de aplicações
+description: Detalhes de erro de email e log para ajudar o suporte da empresa a corrigir problemas do aplicativo
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -9,6 +9,7 @@ ms.date: 01/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: bd428c14-7d75-42de-9322-b57323a01f06
 searchScope:
@@ -18,44 +19,44 @@ ms.reviewer: scottduf
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5df4fce5c07f416d5fa53ef653d62d9166fb1a11
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 4ee2a83945e4b9e6c5509abff7c32605f64ca545
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528770"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508352"
 ---
-# <a name="email-your-company-support-about-problem-from-company-portal-for-windows"></a>O suporte da empresa sobre o problema a partir do Portal da empresa para Windows de e-mail
+# <a name="email-your-company-support-about-problem-from-company-portal-for-windows"></a>Envie por email o suporte de sua empresa sobre o problema de Portal da Empresa para Windows
 
-Resolva seus problemas de aplicações na aplicação Portal da empresa para Windows 10. Caso se depare com um problema enquanto no seu dispositivo Windows 10, pode enviar um e-mail a equipa de suporte para obter ajuda. 
+Solucionar problemas de aplicativo no aplicativo Portal da Empresa para Windows 10. Se você tiver um problema no seu dispositivo Windows 10, você poderá enviar por email sua equipe de suporte para obter ajuda. 
 
-Quando pedir ajuda, uma mensagem de e-mail pré-preenchida abre-se em que possa descrever o problema em detalhes. Ele também inclui um ID de registo de diagnóstico. Se a sua equipa de suporte não é possível resolver o problema com base em sua descrição, que irá contactá-Microsoft para obter ajuda. Microsoft terá o diagnóstico ID para fazer referência a registos da aplicação.   
+Quando você solicita ajuda, um email preenchido é aberto, no qual você pode descrever o problema em detalhes. Ele também inclui uma ID de log de diagnóstico. Se sua equipe de suporte não puder resolver o problema com base na sua descrição, ele entrará em contato com a Microsoft para obter ajuda. A Microsoft precisará da ID de diagnóstico para fazer referência aos logs do aplicativo.   
 
 
 > [!Note]
-> Depois de clicar em **obter ajuda**, o Portal da empresa enviará automaticamente os registos para a equipa de suporte da Microsoft. Este passo é uma proativa, o que torna mais fácil resolver problemas que estão a ser escalados ao suporte da Microsoft. Conforme mencionado acima, a equipa de suporte da Microsoft pode extrair dos registos com o ID de diagnóstico no seu e-mail.  
+> Depois de clicar em **obter ajuda**, o portal da empresa enviará automaticamente seus logs para a equipe de suporte da Microsoft. Esta etapa é uma tarefa pró-ativa que facilita a solução de problemas e a resolução do suporte da Microsoft. Conforme mencionado acima, a equipe de suporte da Microsoft pode extrair logs usando a ID de diagnóstico em seu email.  
 
-## <a name="what-is-a-diagnostic-log"></a>O que é um registo de diagnóstico?
+## <a name="what-is-a-diagnostic-log"></a>O que é um log de diagnóstico?
 
-Eventos e erros que ocorrem na aplicação Portal da empresa são guardados no dispositivo, num documento especial denominado um _registo de diagnóstico_. Podem revelar os registos:  
-* Quando Ocorreu um problema.  
-* Os passos que levou ao problema.  
-* O estado da aplicação quando é apresentado o problema.   
+Eventos e erros que ocorrem no aplicativo Portal da Empresa são salvos em seu dispositivo em um documento especial chamado log de _diagnóstico_. Os logs podem revelar:  
+* Quando ocorreu um problema.  
+* As etapas que levam ao problema.  
+* O estado do aplicativo quando o problema apareceu.   
 
-## <a name="steps-to-get-help"></a>Passos para obter ajuda  
+## <a name="steps-to-get-help"></a>Etapas para obter ajuda  
 
 1. Abra a aplicação **Portal da Empresa**.
-2. Selecione **ajuda e suporte** > **obter ajuda**.  
+2. Selecione **ajuda & suporte** > **obter ajuda**.  
 
-   ![Captura de ecrã da página de ajuda e suporte, realce a barra de navegação esquerda e a seção de obter ajuda.](./media/1812_UCP_Help_Support_Get_Help_Logs.png)    
+   ![Captura de tela da página de suporte do & de ajuda, destacando a barra de navegação à esquerda e obter a seção de ajuda.](./media/1812_UCP_Help_Support_Get_Help_Logs.png)    
 
-3. Quando o **partilha** é apresentado o ecrã, selecione **correio**. O **correio** aplicação irá criar uma mensagem de e-mail para si. Escreva uma descrição do problema que ocorreu, para que a equipa de suporte tem uma ideia do que procurar.  
+3. Quando a tela **compartilhar** for exibida, selecione **email**. O aplicativo de **email** criará uma mensagem de email para você. Digite uma descrição do problema que você experimentou para que a equipe de suporte tenha uma ideia do que procurar.  
 
-   ![Captura de ecrã do ecrã de partilha, realce o ícone de aplicação de correio.](./media/1811_Mail_Logs_Windows_CPapp.png)  
+   ![Captura da tela de compartilhamento, realçando o ícone do aplicativo de email.](./media/1811_Mail_Logs_Windows_CPapp.png)  
 
 
-   ![Captura de ecrã da mensagem de e-mail pré-preenchida que abre na aplicação Mail.](./media/1811_Get_Help_Email_Windows_CPapp.png)  
+   ![Captura de tela do email previamente preenchido que é aberto no aplicativo de email.](./media/1811_Get_Help_Email_Windows_CPapp.png)  
 
-Se a sua empresa precisa obter informações adicionais sobre a atividade da aplicação ou dispositivo, poderá ter de enviar [registos da aplicação definições](send-logs-to-your-it-admin-settings-windows.md).  
+Se sua empresa precisar de informações adicionais sobre a atividade do aplicativo ou do dispositivo, talvez seja necessário enviar [logs do aplicativo Configurações](send-logs-to-your-it-admin-settings-windows.md).  
 
 Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  

@@ -1,5 +1,5 @@
 ---
-title: Como encontro o número de série no meu dispositivo iOS? | Microsoft Docs
+title: Como encontro o número de série no meu dispositivo iOS? | Documentos da Microsoft
 description: ''
 keywords: ''
 author: lenewsad
@@ -9,6 +9,7 @@ ms.date: 03/16/2017
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: e6c4fedc-47b6-44b1-8c59-2fb81417f978
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c6d56fca4776d6130667bc43a331cd9daac82794
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: a6f4c77a8369ef6ddafe96aebe515dd7f0a74889
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61495038"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72505864"
 ---
 # <a name="how-do-i-find-the-serial-number-on-my-device"></a>Como encontro o número de série no meu dispositivo?
 

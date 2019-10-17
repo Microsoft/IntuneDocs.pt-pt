@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 07/03/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 6f4de4bd-3dde-4a8d-8e22-46c5d06c3eea
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 07d3488d509339fc48eb8449b12725b757775eb5
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 7d89f512c06dcfbf6f6ddaba5e17ac9ca6f0becf
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71730680"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506804"
 ---
 # <a name="configure-the-take-a-test-app-on-windows-10-devices-using-intune"></a>Configurar o aplicativo fazer um teste em dispositivos Windows 10 usando o Intune
 
@@ -33,28 +34,28 @@ Depois de configurar o perfil, atribua-o e implante-o para seus alunos.
 
 ## <a name="before-you-begin"></a>Antes de começar
 
-[Criar um perfil de configuração do dispositivo](education-settings-configure.md#create-a-device-profile).
+[Criar um perfil de configuração de dispositivo](education-settings-configure.md#create-a-device-profile).
 
 ## <a name="take-a-test-settings"></a>Fazer uma configuração de teste
 Depois de criar um perfil de configuração de dispositivo, vá para **tipo de perfil** e selecione **avaliação segura (educação)** . Você encontrará as seguintes configurações do aplicativo fazer um teste. 
 
 
-- **Tipo de conta**: Escolha como os usuários entram no teste. As opções são:
+- **Tipo de conta**: escolha como os usuários entram no teste. As opções são:
   - Conta do Azure AD
   - Conta de domínio
   - Conta local
-  - Conta de convidado local: Disponível somente em dispositivos que executam o Windows 10, versão 1903 e posterior.    
+  - Conta de convidado local: disponível somente em dispositivos que executam o Windows 10, versão 1903 e posterior.    
 - **Nome de usuário da conta**: Insira o nome de usuário da conta usada com o aplicativo fazer um teste. Você pode inserir contas no seguinte formato:
   - `user@contoso.com`
   - `domain\username`
   - `user@contoso.com`
   - `computerName\username`
-- **Nome da conta**: Para configurar um tipo de conta de convidado local, insira o nome da conta usada com o aplicativo fazer um teste. O nome da conta será exibido como um bloco na tela de entrada. Os alunos clicam no bloco para iniciar o teste.  
+- **Nome da conta**: para configurar um tipo de conta de convidado local, insira o nome da conta usada com o aplicativo fazer um teste. O nome da conta será exibido como um bloco na tela de entrada. Os alunos clicam no bloco para iniciar o teste.  
 - **URL de avaliação**: Insira a URL do teste que você deseja que os usuários executem. Para obter mais informações sobre como obter a URL, consulte a [documentação de fazer um teste](https://docs.microsoft.com/education/windows/take-tests-in-windows-10).
-- **Conexão de impressora**: Escolha **exigir** para permitir apenas o acesso ao aplicativo fazer um teste de dispositivos que estão conectados a uma impressora. Essa configuração também torna o botão Imprimir do aplicativo disponível para Test-Takers. **Não configurado** permite que os alunos acessem o aplicativo de dispositivos que não estão conectados a uma impressora.  
-- **Monitoramento de tela**: Escolha **permitir** para monitorar a atividade de tela enquanto os usuários estão fazendo um teste. **Não configurado** impede que você monitore a tela durante o teste.
-- **Sugestões de texto**: Escolha **permitir** para que o teste Takers possa ver sugestões de texto. **Não configurado** bloqueia sugestões de texto enquanto os usuários estão fazendo um teste.
+- **Conexão de impressora**: escolha **exigir** para permitir apenas o acesso ao aplicativo fazer um teste de dispositivos que estão conectados a uma impressora. Essa configuração também torna o botão Imprimir do aplicativo disponível para Test-Takers. **Não configurado** permite que os alunos acessem o aplicativo de dispositivos que não estão conectados a uma impressora.  
+- **Monitoramento de tela**: escolha **permitir** para monitorar a atividade de tela enquanto os usuários estão fazendo um teste. **Não configurado** impede que você monitore a tela durante o teste.
+- **Sugestões de texto**: escolha **permitir** para que o teste Takers possa ver sugestões de texto. **Não configurado** bloqueia sugestões de texto enquanto os usuários estão fazendo um teste.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Certifique-se de [atribuir o perfil](device-profile-assign.md)e [monitore seu status](device-profile-monitor.md).

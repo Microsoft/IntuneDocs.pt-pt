@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 04/19/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: cf27fdb8-f408-425c-9a7c-146de1534425
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b316e305afa5aaae2c65c3aa062ff0343a845ffe
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 383469c848726eb2cfbcd7d863931f1e84f2275a
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71729720"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72504508"
 ---
 # <a name="data-apple-sends-to-intune"></a>Dados que a Apple envia para o Intune
 
@@ -42,15 +43,15 @@ Antes de o Microsoft Intune poder estabelecer uma ligação, tem de criar uma co
 
 A tabela seguinte lista os dados que um dispositivo da Apple envia para o Intune. [O Intune também envia dados para a Apple](data-intune-sends-to-apple.md). 
 
-| Serviço | Message | Dados enviados para o Intune | Utilizado para |
+| Serviço | Mensagem | Dados enviados para o Intune | Utilizado para |
 |:---:|:---:|:---:| ---|
 | [APNs](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/3-MDM_Protocol/MDM_Protocol.html#//apple_ref/doc/uid/TP40017387-CH3-SW2) | Autenticar | MessageType | O tipo de mensagem: autenticar. |
 | [APNs](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/3-MDM_Protocol/MDM_Protocol.html#//apple_ref/doc/uid/TP40017387-CH3-SW2) | Autenticar | Tópico | O tópico que o dispositivo irá escutar. |
 | [APNs](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/3-MDM_Protocol/MDM_Protocol.html#//apple_ref/doc/uid/TP40017387-CH3-SW2) | Autenticar | MesUDID | O UDID dos dispositivos. |
 | [APNs](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/3-MDM_Protocol/MDM_Protocol.html#//apple_ref/doc/uid/TP40017387-CH3-SW2) | Autenticar | OSVersion | A versão do SO do dispositivo. |
 | [APNs](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/3-MDM_Protocol/MDM_Protocol.html#//apple_ref/doc/uid/TP40017387-CH3-SW2) | Autenticar | BuildVersion | A versão da compilação do dispositivo. |
-| [APNs](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/3-MDM_Protocol/MDM_Protocol.html#//apple_ref/doc/uid/TP40017387-CH3-SW2) | Autenticar | ProductName | O nome do produto do dispositivo. |
-| [APNs](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/3-MDM_Protocol/MDM_Protocol.html#//apple_ref/doc/uid/TP40017387-CH3-SW2) | Autenticar | serialNumber | O número de série do dispositivo. |
+| [APNs](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/3-MDM_Protocol/MDM_Protocol.html#//apple_ref/doc/uid/TP40017387-CH3-SW2) | Autenticar | NomeDoProduto | O nome do produto do dispositivo. |
+| [APNs](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/3-MDM_Protocol/MDM_Protocol.html#//apple_ref/doc/uid/TP40017387-CH3-SW2) | Autenticar | SerialNumber | O número de série do dispositivo. |
 | [APNs](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/3-MDM_Protocol/MDM_Protocol.html#//apple_ref/doc/uid/TP40017387-CH3-SW2) | Autenticar | IMEI | A Identidade Internacional do Equipamento Móvel do dispositivo. |
 | [APNs](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/3-MDM_Protocol/MDM_Protocol.html#//apple_ref/doc/uid/TP40017387-CH3-SW2) | Autenticar | MEID | O Identificador de Equipamento Móvel do dispositivo |
 | [APNs](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/3-MDM_Protocol/MDM_Protocol.html#//apple_ref/doc/uid/TP40017387-CH3-SW2) | TokenUpdate | Tópico | O tópico que o dispositivo irá escutar. |
@@ -62,13 +63,13 @@ A tabela seguinte lista os dados que um dispositivo da Apple envia para o Intune
 | [APNs](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/3-MDM_Protocol/MDM_Protocol.html#//apple_ref/doc/uid/TP40017387-CH3-SW2) | Finalização da compra | MessageType | O tipo de mensagem: finalização da compra. |
 | [APNs](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/3-MDM_Protocol/MDM_Protocol.html#//apple_ref/doc/uid/TP40017387-CH3-SW2) | Finalização da compra | Tópico | O tópico que o dispositivo irá escutar. |
 | [APNs](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/3-MDM_Protocol/MDM_Protocol.html#//apple_ref/doc/uid/TP40017387-CH3-SW2) | Finalização da compra | UDID | O UDID do dispositivo |
-| [APNs](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/3-MDM_Protocol/MDM_Protocol.html#//apple_ref/doc/uid/TP40017387-CH3-SW2) | Protocolo de MDM | State | Estado.  |
+| [APNs](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/3-MDM_Protocol/MDM_Protocol.html#//apple_ref/doc/uid/TP40017387-CH3-SW2) | Protocolo de MDM | Estado | Estado.  |
 | [APNS](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/3-MDM_Protocol/MDM_Protocol.html#//apple_ref/doc/uid/TP40017387-CH3-SW2) | Protocolo de MDM | UDID |O UDID do dispositivo.  |
 | [APNs](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/3-MDM_Protocol/MDM_Protocol.html#//apple_ref/doc/uid/TP40017387-CH3-SW2) | Protocolo de MDM | CommandUUID | O UUID do comando ao qual se destina esta resposta. |
 | [APNs](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/3-MDM_Protocol/MDM_Protocol.html#//apple_ref/doc/uid/TP40017387-CH3-SW2) | Protocolo de MDM | ErrorChain | Matriz de dicionários que representa a cadeia de erros que ocorreram.  |
 | [ASM/DEP](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/3-MDM_Protocol/MDM_Protocol.html#//apple_ref/doc/uid/TP40017387-CH3-SW2) | Token do Programa de Inscrição | Número de série | O número de série do dispositivo. |
 | [ASM/DEP](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/3-MDM_Protocol/MDM_Protocol.html#//apple_ref/doc/uid/TP40017387-CH3-SW2) | Token do Programa de Inscrição | modelo | O nome do modelo do dispositivo. |
-| [ASM/DEP](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/3-MDM_Protocol/MDM_Protocol.html#//apple_ref/doc/uid/TP40017387-CH3-SW2) | Token do Programa de Inscrição | Descrição | Uma descrição do dispositivo. |
+| [ASM/DEP](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/3-MDM_Protocol/MDM_Protocol.html#//apple_ref/doc/uid/TP40017387-CH3-SW2) | Token do Programa de Inscrição | Description | Uma descrição do dispositivo. |
 | [ASM/DEP](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/3-MDM_Protocol/MDM_Protocol.html#//apple_ref/doc/uid/TP40017387-CH3-SW2) | Token do Programa de Inscrição | Cor | A cor do dispositivo. |
 | [ASM/DEP](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/3-MDM_Protocol/MDM_Protocol.html#//apple_ref/doc/uid/TP40017387-CH3-SW2) | Token do Programa de Inscrição | Etiqueta de recursos | A etiqueta de recursos do dispositivo. |
 | [ASM/DEP](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/3-MDM_Protocol/MDM_Protocol.html#//apple_ref/doc/uid/TP40017387-CH3-SW2) | Token do Programa de Inscrição | Estado do perfil | O estado da instalação do perfil. |
@@ -77,7 +78,7 @@ A tabela seguinte lista os dados que um dispositivo da Apple envia para o Intune
 | [ASM/DEP](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/3-MDM_Protocol/MDM_Protocol.html#//apple_ref/doc/uid/TP40017387-CH3-SW2) | Token do Programa de Inscrição | Hora de envio do perfil | O carimbo de data/hora no formato ISO 8601 que indica quando um perfil foi enviado para o dispositivo.|
 | [ASM/DEP](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/3-MDM_Protocol/MDM_Protocol.html#//apple_ref/doc/uid/TP40017387-CH3-SW2) | Token do Programa de Inscrição | Data da atribuição do dispositivo | O carimbo de data/hora no formato ISO 8601 que indica quando um dispositivo foi inscrito no Programa de registo de aparelho. |
 | [ASM/DEP](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/3-MDM_Protocol/MDM_Protocol.html#//apple_ref/doc/uid/TP40017387-CH3-SW2) | Token do Programa de Inscrição | Dispositivo atribuído pelo | O e-mail da pessoa que atribuiu o dispositivo. |
-| [ASM/DEP](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/3-MDM_Protocol/MDM_Protocol.html#//apple_ref/doc/uid/TP40017387-CH3-SW2) | Token do Programa de Inscrição | OS | O sistema operativo do dispositivo. |
+| [ASM/DEP](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/3-MDM_Protocol/MDM_Protocol.html#//apple_ref/doc/uid/TP40017387-CH3-SW2) | Token do Programa de Inscrição | SO | O sistema operativo do dispositivo. |
 | [ASM/DEP](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/3-MDM_Protocol/MDM_Protocol.html#//apple_ref/doc/uid/TP40017387-CH3-SW2) | Token do Programa de Inscrição | Família de dispositivos | A família de produtos Apple do dispositivo. |
 | [VPP](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/5-Web_Service_Protocol_VPP/webservice.html#//apple_ref/doc/uid/TP40017387-CH8-SW1) | Token de Apple VPP | ID de Utilizador da Apple | Um ID de utilizador gerado pela Apple. |
 | [VPP](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/5-Web_Service_Protocol_VPP/webservice.html#//apple_ref/doc/uid/TP40017387-CH8-SW1) | Token de Apple VPP | descrição da aplicação | A descrição de uma aplicação VPP. |
@@ -95,7 +96,7 @@ A tabela seguinte lista os dados que um dispositivo da Apple envia para o Intune
 | [VPP](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/5-Web_Service_Protocol_VPP/webservice.html#//apple_ref/doc/uid/TP40017387-CH8-SW1) | Token de Apple VPP | GUID do UserId do Intune | O GUID gerado pelo Intune. |
 | [VPP](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/5-Web_Service_Protocol_VPP/webservice.html#//apple_ref/doc/uid/TP40017387-CH8-SW1) | Token de Apple VPP | isIrrevocable | A Apple devolve verdadeiro se a licença não puder ser revogada. Se puder ser revogada, devolve falso. |
 | [VPP](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/5-Web_Service_Protocol_VPP/webservice.html#//apple_ref/doc/uid/TP40017387-CH8-SW1) | Token de Apple VPP | ID de licença | O ID gerado pela Apple para identificar uma licença específica. |
-| [VPP](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/5-Web_Service_Protocol_VPP/webservice.html#//apple_ref/doc/uid/TP40017387-CH8-SW1) | Token de Apple VPP | Location | Localização armazenada nos dados de configuração de Apple VPP. |
+| [VPP](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/5-Web_Service_Protocol_VPP/webservice.html#//apple_ref/doc/uid/TP40017387-CH8-SW1) | Token de Apple VPP | Localização | Localização armazenada nos dados de configuração de Apple VPP. |
 | [VPP](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/5-Web_Service_Protocol_VPP/webservice.html#//apple_ref/doc/uid/TP40017387-CH8-SW1) | Token de Apple VPP | UPN do ID Apple gerido | O e-mail do AppleID para o utilizador, o administrador e o membro facilitador. |
 | [VPP](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/5-Web_Service_Protocol_VPP/webservice.html#//apple_ref/doc/uid/TP40017387-CH8-SW1) | Token de Apple VPP | OrganizationId | O ID da Organização atribuído pela Apple. |
 | [VPP](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/5-Web_Service_Protocol_VPP/webservice.html#//apple_ref/doc/uid/TP40017387-CH8-SW1) | Token de Apple VPP | pricingParam | O tipo de preços da Apple para uma aplicação. |

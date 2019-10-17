@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 02/11/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: b399fba0-5dd4-4777-bc9b-856af038ec41
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 46ff51c872c2e8c87d044bde3c262203d5f55e8e
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 2d3cae06c3ce763fe8ca94bbed9bf35e8abef52c
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71729916"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502611"
 ---
 # <a name="app-based-conditional-access-with-intune"></a>Acesso condicional baseado em aplicativo com o Intune
 
@@ -84,7 +85,7 @@ Neste exemplo, o administrador aplicou políticas de proteção de aplicativo ao
 
 11. O e-mail empresarial é entregue na caixa de correio do utilizador.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 [Criar uma política de acesso condicional com base no aplicativo](app-based-conditional-access-intune-create.md)
 
 [Bloquear aplicações que não tenham autenticação moderna](app-modern-authentication-block.md)

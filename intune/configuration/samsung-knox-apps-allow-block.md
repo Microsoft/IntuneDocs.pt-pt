@@ -9,18 +9,19 @@ manager: dougeby
 ms.date: 3/5/2018
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a8486e121e6497eefdd2d098c2421f2f3b53b8a2
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: afaee427b593cfaed957279b520765242a1aacd3
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71730540"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506643"
 ---
 # <a name="use-custom-policies-in-microsoft-intune-to-allow-and-block-apps-for-samsung-knox-standard-devices"></a>Utilizar políticas personalizadas no Microsoft Intune para permitir e bloquear aplicações para dispositivos Samsung Knox Standard 
 
@@ -38,11 +39,11 @@ Estas definições só podem ser utilizadas por dispositivos com o Samsung Knox 
 1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. No painel **Intune**, selecione **Configuração do dispositivo**.
 2. No painel **Configuração do dispositivo**, selecione **Gerir** > **Perfis**.
-2. No painel Lista de perfis, selecione **Criar perfil**.
+2. No painel da lista de perfis, selecione **Criar perfil**.
 3. No painel **Criar perfil**, introduza um **Nome** e uma **Descrição** opcional para este perfil de dispositivo.
 2. Selecione uma **Plataforma** de **Android** e um **Tipo de perfil** de **Personalizado**.
 3. Clique em **Definições**.
-3. No painel **Definições OMA-URI Personalizadas**, selecione **Adicionar**.
+3. No painel **Definições OMA-URI personalizadas**, selecione **Adicionar**.
 4. Na caixa de diálogo **Adicionar ou Editar Definição OMA-URI**, especifique as seguintes definições:
 
    Para uma lista de aplicações que estão impedidas de executar no dispositivo:

@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/28/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 834B4557-80A9-48C0-A72C-C98F6AF79708
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 08017be16e4257ef0bd7bfb775197feaa20baf75
-ms.sourcegitcommit: 223d64a72ec85fe222f5bb10639da729368e6d57
+ms.openlocfilehash: 42d17c15a2a32f828c5715dfad51f34c5e531e76
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71940361"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72507543"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Políticas de configuração de aplicações para o Microsoft Intune
 
@@ -84,7 +85,7 @@ Você pode validar a política de configuração de aplicativo usando os três m
 
       ![Segunda captura de tela do status de instalação do dispositivo](./media/app-configuration-policies-overview/device-install-status-2.png)
 
-      Além disso, em**dispositivos** -> do **Intune** -> **todos os dispositivos** no lado esquerdo da tela, a opção de **configuração de aplicativo** exibirá todas as políticas atribuídas e seu estado:
+      Além disso, no **Intune** -> **dispositivos** -> **todos os dispositivos** no lado esquerdo da tela, a opção de **configuração de aplicativo** exibirá todas as políticas atribuídas e seu estado:
 
       ![Captura de tela da configuração do aplicativo](./media/app-configuration-policies-overview/app-configuration.png)
 
@@ -100,7 +101,7 @@ Você pode validar a configuração do iOS com o **log de diagnóstico do Intune
 4. Clique em **compartilhar logs**.
 5. Use o aplicativo de email de sua escolha para enviar o log para você mesmo para que eles possam ser exibidos em seu computador. 
 6. Examine o **IntuneMAMDiagnostics. txt** no Visualizador de arquivos de texto.
-7. Procurar `ApplicationConfiguration`. Os resultados se parecerão com o seguinte:
+7. Procure as `ApplicationConfiguration`. Os resultados se parecerão com o seguinte:
 
     ``` JSON
         {
@@ -144,13 +145,13 @@ Você pode validar a configuração do iOS com o **log de diagnóstico do Intune
 4. Clique em **compartilhar logs**.
 5. Use o aplicativo de email de sua escolha para enviar o log para você mesmo para que eles possam ser exibidos em seu computador. 
 6. Examine o **IntuneMAMDiagnostics. txt** no Visualizador de arquivos de texto.
-7. Procurar `AppConfig`. Os resultados devem corresponder às políticas de configuração de aplicativo configuradas para seu locatário.
+7. Procure as `AppConfig`. Os resultados devem corresponder às políticas de configuração de aplicativo configuradas para seu locatário.
 
 ### <a name="android-configuration-on-managed-devices"></a>Configuração do Android em dispositivos gerenciados
 
 Você pode validar a configuração do iOS com o **log de diagnóstico do Intune** em dispositivos gerenciados para a configuração do aplicativo gerenciado.
 
-Para coletar logs de um dispositivo Android, você ou o usuário final deve baixar os logs do dispositivo por meio de uma conexão USB (ou o **Explorador de arquivos** equivalente no dispositivo). Eis os passos:
+Para coletar logs de um dispositivo Android, você ou o usuário final deve baixar os logs do dispositivo por meio de uma conexão USB (ou o **Explorador de arquivos** equivalente no dispositivo). Aqui estão as etapas:
 
 1. Conecte o dispositivo Android ao computador com o cabo USB.
 2. No computador, procure um diretório com o nome do seu dispositivo. Nesse diretório, localize `Android Device\Phone\Android\data\com.microsoft.windowsintune.companyportal`.
@@ -163,12 +164,12 @@ Para coletar logs de um dispositivo Android, você ou o usuário final deve baix
 
 Você pode usar API do Graph para realizar tarefas de configuração de aplicativo. Para obter mais detalhes, veja [Graph API Reference MAM Targeted Config (Configuração de MAM Direcionada de Referência para Graph API)](https://graph.microsoft.io/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create).
 
-## <a name="troubleshooting"></a>Resolução de problemas
+## <a name="troubleshooting"></a>Resolução de Problemas
 
 ### <a name="using-logs-to-show-a-configuration-parameter"></a>Usando logs para mostrar um parâmetro de configuração
 Quando os logs mostram um parâmetro de configuração que é confirmado para ser aplicado, mas não parece funcionar, pode haver um problema com a implementação da configuração pelo desenvolvedor do aplicativo. Entrar em contato com esse desenvolvedor de aplicativos primeiro ou verificar sua base de dados de conhecimento pode poupar a você uma chamada de suporte com a Microsoft. Se for um problema de como a configuração está sendo tratada em um aplicativo, ele precisaria ser resolvido em uma versão atualizada futura do aplicativo.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 ### <a name="managed-devices"></a>Dispositivos geridos
 

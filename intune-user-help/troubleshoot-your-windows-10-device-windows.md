@@ -9,6 +9,7 @@ ms.date: 03/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 4ab630b6-47ff-443b-a2a5-be23388bcea7
 searchScope:
@@ -18,15 +19,15 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bbd4f8f0925aac5aada44277c4d21a71b412e0e7
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: bbc251479652079cb33b1ca4dd08103103b91aa9
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67546685"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508189"
 ---
 # <a name="troubleshoot-your-windows-10-device-enrollment"></a>Resolver problemas de inscrição no dispositivo Windows 10
-Se tiver inscrito o seu dispositivo, mas continua sem aceder ao seu trabalho ou e-mail e ficheiros escolares, experimente estes passos de resolução de problemas.  
+Se você registrou seu dispositivo, mas ainda não consegue acessar seus emails e arquivos corporativos ou de estudante, tente essas etapas de solução de problemas.  
 
 1. Observe os dois ecrãs abaixo e veja qual deles se parece com o que vê no seu dispositivo. Siga os passos que acompanham o ecrã que aparece no seu dispositivo.
 
@@ -44,22 +45,22 @@ Se tiver inscrito o seu dispositivo, mas continua sem aceder ao seu trabalho ou 
 
 2. Efetue uma das seguintes ações:
 
-   - Se vir uma ligação que tem um aspeto semelhante à imagem abaixo, toque na mesma e, em seguida, confira se vê as opções Gerir, Informações e Desligar. Se vir estas opções, está agora inscrito e ligado.
+   - Se vir uma ligação que tem um aspeto semelhante à imagem abaixo, toque na mesma e, em seguida, confira se vê as opções Gerir, Informações e Desligar. Se você vir essas opções, agora você está registrado e conectado.
 
      ![validate-successful-enrollment](./media/w10-enroll-rs1-validate-successful-enrollment.png)
 
-   - Se não vir as informações de ligação mostradas acima, ou vê-lo, mas faltarem algumas das opções, toque em **Connect**. Em seguida, inicie sessão com as suas credenciais escolares ou profissionais para ligar.  
+   - Se você não vir as informações de conexão mostradas acima, ou você a vir, mas não tiver algumas opções, toque em **conectar**. Em seguida, entre com suas credenciais corporativas ou de estudante para se conectar.  
 
 ## <a name="troubleshooting-steps-to-follow-if-you-see-your-account"></a>Passos de resolução de problemas a seguir se vir "A sua conta"
 
 Se seguiu os passos acima, mas continua a não conseguir aceder ao e-mail, aos ficheiros e a outros dados profissionais ou escolares, volte a **Contas** e toque em **Acesso profissional**.
 
-- Se vir o seu trabalho ou escolar conta listada, está ligado.  
+- Se você vir sua conta corporativa ou de estudante listada, você estará conectado.  
 
 - Se não vir a sua conta profissional ou escolar, toque em **Ligar** e, em seguida, inicie sessão com as credenciais da sua conta profissional ou escolar.
 
 ## <a name="troubleshooting-steps-to-follow-if-you-see-set-up-a-work-or-school-account"></a>Passos de resolução de problemas a seguir se vir "Configurar uma conta escolar ou profissional"
 
-Se vir uma mensagem com a indicação <strong>Não foi possível detetar automaticamente um ponto final de gestão correspondente ao nome de utilizador introduzido. Verifique o nome de utilizador e tente novamente. Se souber o URL do ponto final de gestão, introduza-o.</strong> e, em seguida, deverá tentar reintroduzir o seu nome de utilizador e palavra-passe. Se o URL continuar a não funcionar, deve consultar o suporte da empresa para saber qual o site que precisa de fornecer na caixa de texto <strong>Ponto final de gestão</strong>. É provável que este site se assemelhe a <strong>www.asuaempresa.onmicrosoft.com</strong>.
+Se você vir uma mensagem dizendo que <strong>não foi possível descobrir automaticamente um ponto de extremidade de gerenciamento correspondente ao nome de usuário inserido. Verifique seu nome de usuário e tente novamente. Se você souber a URL para o ponto de extremidade de gerenciamento, insira-a.</strong>em seguida, você deve tentar inserir novamente seu nome de usuário e senha. Se o URL continuar a não funcionar, deve consultar o suporte da empresa para saber qual o site que precisa de fornecer na caixa de texto <strong>Ponto final de gestão</strong>. É provável que este site se assemelhe a <strong>www.asuaempresa.onmicrosoft.com</strong>.
 
 Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

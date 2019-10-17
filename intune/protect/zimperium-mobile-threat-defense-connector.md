@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 12/29/2017
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 975d8d84-792a-41ad-925a-4a7f1ae4dcaf
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 33d4039e430699c5b8e15c1f9b817d8e2a25d029
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: b4ff350bd8c1c16eedd30a6b7af4f3927bce3c3e
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71732456"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508764"
 ---
 # <a name="zimperium-mobile-threat-defense-connector-with-intune"></a>Conector Zimperium Mobile Threat Defense com o Intune
 
@@ -98,7 +99,7 @@ Detete ameaças na rede, tais como ataques **Man-in-the-middle**, e impeça a si
 
   - Para obter mais informações, consulte o [site do Zimperium](https://www.zimperium.com/zips-mobile-ips).
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 - [Integrar o Zimperium com o Intune](zimperium-mtd-connector-integration.md)
 

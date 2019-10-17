@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 07/25/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1a02e403fdba34b576aa90b82062b7a602cbb517
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: e7c7ec23d0408aa4d4cf81baff2d7cdf749fb65e
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71731700"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72509242"
 ---
 # <a name="troubleshoot-ios-device-enrollment-problems-in-microsoft-intune"></a>Solucionar problemas de registro de dispositivo iOS no Microsoft Intune
 
@@ -46,7 +47,7 @@ Colete as seguintes informações sobre o problema:
 
 ### <a name="profile-installation-failed-a-network-error-has-occurred"></a>Falha na instalação do perfil. Ocorreu um erro de rede.
 
-**Faz** Há um problema não especificado com o iOS no dispositivo.
+**Causa:** Há um problema não especificado com o iOS no dispositivo.
 
 #### <a name="resolution"></a>Resolução
 
@@ -56,10 +57,10 @@ Colete as seguintes informações sobre o problema:
 
 ### <a name="profile-installation-failed-connection-to-the-server-could-not-be-established"></a>Falha na instalação do perfil. Não foi possível estabelecer a conexão com o servidor.
 
-**Faz** Seu locatário do Intune está configurado para permitir somente dispositivos de propriedade corporativa. 
+**Causa:** Seu locatário do Intune está configurado para permitir somente dispositivos de propriedade corporativa. 
 
 #### <a name="resolution"></a>Resolução
-1. Inicie sessão no Portal do Azure.
+1. Inicie sessão no portal do Azure.
 2. Selecione **mais serviços**, pesquise Intune e, em seguida, selecione **Intune**.
 3. Selecione **Inscrição de dispositivos** > **Restrições de inscrição**.
 4. Em **restrições de tipo de dispositivo**, selecione a restrição que você deseja definir **> Propriedades** > **selecione plataformas** > selecione **permitir** para **Ios**e clique em **OK**.
@@ -68,7 +69,7 @@ Colete as seguintes informações sobre o problema:
 
 ### <a name="this-service-is-not-supported-no-enrollment-policy"></a>Não há suporte para esse serviço. Nenhuma política de registro.
 
-**Causa**: Um certificado de push do MDM da Apple não está configurado no Intune ou o certificado é inválido. 
+**Causa**: um certificado de push de MDM da Apple não está configurado no Intune ou o certificado é inválido. 
 
 #### <a name="resolution"></a>Resolução
 
@@ -77,7 +78,7 @@ Colete as seguintes informações sobre o problema:
 
 ### <a name="company-portal-temporarily-unavailable-the-company-portal-app-encountered-a-problem-if-the-problem-persists-contact-your-system-administrator"></a>Portal da Empresa temporariamente indisponível. O aplicativo Portal da Empresa encontrou um problema. Se o problema persistir, contate o administrador do sistema.
 
-**Faz** O aplicativo Portal da Empresa está desatualizado ou corrompido.
+**Causa:** O aplicativo Portal da Empresa está desatualizado ou corrompido.
 
 #### <a name="resolution"></a>Resolução
 1. Remova o aplicativo Portal da Empresa do dispositivo.
@@ -86,7 +87,7 @@ Colete as seguintes informações sobre o problema:
 
 ### <a name="device-cap-reached"></a>Limite do dispositivo atingido
 
-**Faz** O usuário tenta registrar mais dispositivos do que o limite de registro do dispositivo.
+**Causa:** O usuário tenta registrar mais dispositivos do que o limite de registro do dispositivo.
 
 #### <a name="resolution"></a>Resolução
 1. Abra o [portal de administração do Intune](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview) > **dispositivos** > **todos os dispositivos**e verifique o número de dispositivos que o usuário registrou.
@@ -98,7 +99,7 @@ Colete as seguintes informações sobre o problema:
 
 ### <a name="workplace-join-failed"></a>Falha na Workplace Join
 
-**Faz** O aplicativo Portal da Empresa está desatualizado ou corrompido.  
+**Causa:** O aplicativo Portal da Empresa está desatualizado ou corrompido.  
 
 #### <a name="resolution"></a>Resolução
 1. Remova o aplicativo Portal da Empresa do dispositivo.
@@ -107,7 +108,7 @@ Colete as seguintes informações sobre o problema:
 
 ### <a name="user-license-type-invalid"></a>Tipo de licença de usuário inválido
 
-**Faz** O usuário que está tentando registrar o dispositivo não tem uma licença do Intune válida.
+**Causa:** O usuário que está tentando registrar o dispositivo não tem uma licença do Intune válida.
 
 #### <a name="resolution"></a>Resolução
 1. Vá para o [centro de administração do Microsoft 365](https://portal.office.com/adminportal/home#/homepage)e escolha **usuários** > **usuários ativos**.
@@ -117,7 +118,7 @@ Colete as seguintes informações sobre o problema:
 
 ### <a name="user-name-not-recognized-this-user-account-is-not-authorized-to-use-microsoft-intune-contact-your-system-administrator-if-you-think-you-have-received-this-message-in-error"></a>Nome de usuário não reconhecido. Esta conta de usuário não está autorizada a usar Microsoft Intune. Contate o administrador do sistema se você considerar que recebeu esta mensagem por erro.
 
-**Faz** O usuário que está tentando registrar o dispositivo não tem uma licença do Intune válida.
+**Causa:** O usuário que está tentando registrar o dispositivo não tem uma licença do Intune válida.
 
 1. Vá para o [centro de administração do Microsoft 365](https://portal.office.com/adminportal/home#/homepage)e escolha **usuários** > **usuários ativos**.
 2. Selecione a conta de usuário afetada e escolha **licenças de produto** > **Editar**.
@@ -126,7 +127,7 @@ Colete as seguintes informações sobre o problema:
 
 ### <a name="profile-installation-failed-the-new-mdm-payload-does-not-match-the-old-payload"></a>Falha na instalação do perfil. A nova carga de MDM não corresponde à carga antiga.
 
-**Faz** Um perfil de gerenciamento já está instalado no dispositivo.
+**Causa:** Um perfil de gerenciamento já está instalado no dispositivo.
 
 #### <a name="resolution"></a>Resolução
 
@@ -136,14 +137,14 @@ Colete as seguintes informações sobre o problema:
 
 ### <a name="noenrollmentpolicy"></a>NoEnrollmentPolicy
 
-**Faz** O certificado do Apple Push Notification Service (APNs) está ausente, inválido ou expirou.
+**Causa:** O certificado do Apple Push Notification Service (APNs) está ausente, inválido ou expirou.
 
 #### <a name="resolution"></a>Resolução
 Verifique se um certificado APNs válido foi adicionado ao Intune. Para obter mais informações, consulte [Configurar o gerenciamento de dispositivos IOS e Mac](https://docs.microsoft.com/intune-classic/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune). 
 
 ### <a name="accountnotonboarded"></a>AccountNotOnboarded
 
-**Faz** Há um problema com o certificado APNs (Apple Push Notification Service) configurado no Intune.
+**Causa:** Há um problema com o certificado APNs (Apple Push Notification Service) configurado no Intune.
 
 #### <a name="resolution"></a>Resolução
 Renove o certificado APNs e registre novamente o dispositivo.
@@ -167,7 +168,7 @@ iPhone com.apple.accessibility.AccessibilityUIServer(MobileAsset)[288] <Notice>:
 iPhone mobileassetd[83] <Notice>: 0x1a49aebc0 Client connection: XPC_TYPE_ERROR Connection invalid <error: 0x1a49aebc0> { count = 1, transaction: 0, voucher = 0x0, contents = "XPCErrorDescription" => <string: 0x1a49aee18> { length = 18, contents = "Connection invalid" }
 ```
 
-**Faz** Há um problema de conexão entre o dispositivo e o serviço de DEP da Apple.
+**Causa:** Há um problema de conexão entre o dispositivo e o serviço de DEP da Apple.
 
 #### <a name="resolution"></a>Resolução
 Corrija o problema de conexão ou use uma conexão de rede diferente para registrar o dispositivo. Talvez você também precise entrar em contato com a Apple se o problema persistir.
@@ -178,22 +179,22 @@ Corrija o problema de conexão ou use uma conexão de rede diferente para regist
 ### <a name="dep-enrollment-doesnt-start"></a>O registro de DEP não é iniciado
 Quando você ativa um dispositivo gerenciado por DEP que recebe um perfil de registro, o processo de registro do Intune não é iniciado.
 
-**Faz** O perfil de registro é criado antes do token de DEP ser carregado no Intune.
+**Causa:** O perfil de registro é criado antes do token de DEP ser carregado no Intune.
 
 #### <a name="resolution"></a>Resolução
 
 1. Edite o perfil de registro. Você pode fazer qualquer alteração no perfil. A finalidade é atualizar a hora de modificação do perfil.
-2. Sincronizar dispositivos gerenciados por DEP: Abra o portal do Intune > **Admin** > **Gerenciamento de dispositivo móvel** > **Ios** > **programa de registro de dispositivos**a**sincronização** >  agora. É enviado um pedido de sincronização para a Apple.
+2. Sincronizar dispositivos gerenciados por DEP: Abra o portal do Intune > **Admin** > **Gerenciamento de dispositivo móvel** > **Ios** > **programa de registro de dispositivos**a sincronização  > **agora**. É enviado um pedido de sincronização para a Apple.
 
 ### <a name="dep-enrollment-stuck-at-user-login"></a>Registro de DEP travado no logon do usuário
 Quando você ativa um dispositivo gerenciado por DEP que recebe um perfil de registro, a instalação inicial se une depois que você insere as credenciais.
 
-**Faz** A autenticação multifator (MFA) está habilitada. Atualmente, o MFA não funciona durante o registro em dispositivos DEP.
+**Causa:** A autenticação multifator (MFA) está habilitada. Atualmente, o MFA não funciona durante o registro em dispositivos DEP.
 
 #### <a name="resolution"></a>Resolução
 Desabilite o MFA e registre novamente o dispositivo.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 - [Resolução de problemas de inscrição de dispositivos no Intune](../troubleshoot-device-enrollment-in-intune.md)
 - [Faça uma pergunta no fórum do Intune](https://social.technet.microsoft.com/Forums/%7Blang-locale%7D/home?category=microsoftintune&filter=alltypes&sort=lastpostdesc)

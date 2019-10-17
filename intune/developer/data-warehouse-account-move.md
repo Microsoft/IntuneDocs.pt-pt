@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 07/24/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: developer
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ee3ccbf9-82fc-4fbf-9d3d-8f05e431d090
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fb86b066755c85208e9d9c2b5b823305f6011df9
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 34ef2e25a8661bbb64ed42a32c94a373edba8906
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71730276"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72490785"
 ---
 # <a name="move-your-intune-data-warehouse-account-data"></a>Mover os dados da conta do Armazém de Dados do Intune 
 
@@ -79,7 +80,7 @@ Após mover a conta do Armazém de Dados, verá no Intune que o Armazém de Dado
 
 O cliente X pede que uma conta seja movida a 01/06/2018. Em resposta ao pedido, o cliente receberá uma ligação para ver documentação com detalhes sobre os passos a realizar se quiser fazer uma cópia de segurança do Armazém de Dados anterior. A 01/06/2018, o Armazém de Dados e os gráficos que suporta serão repostos e começarão a armazenar dados no novo datacenter. 
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 - Saiba mais sobre [as novidades todas as semanas no Intune](../fundamentals/whats-new.md). Também pode descobrir quais são as alterações futuras, os avisos importantes sobre o serviço e as informações sobre versões anteriores.
 - Leia o [Blogue do Microsoft Intune](https://go.microsoft.com/fwlink/?LinkID=273882).

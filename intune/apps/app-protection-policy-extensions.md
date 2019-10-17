@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f38f22d7aaf03f278fad86061aa8198c8e37f31f
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 1a94f3d175fe5c036c5e90635a66467263b23122
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71731360"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72499125"
 ---
 # <a name="protecting-application-extensions"></a>Protegendo extensões de aplicativo
 
@@ -50,7 +51,7 @@ As ligações de conta do LinkedIn permitem aos utilizadores ver informações d
 > [!NOTE]
 > Atualmente, a integração do LinkedIn não está disponível para clientes do Governo dos Estados Unidos nem para organizações com caixas de correio do Exchange Online alojadas na África do Sul, Alemanha, Austrália, Canadá, China, Coreia do Sul, França, Índia, Japão e Reino Unido.
 
-As políticas de proteção da aplicação Intune e do SDK do Intune não incluem suporte para a gestão de ligações de conta do LinkedIn, mas existem outras formas de as gerir. Pode desativar as ligações de conta do LinkedIn para toda a sua organização ou ativar estas ligações para grupos de utilizadores específicos na sua organização. Estas definições afetam as ligações do LinkedIn em todas as aplicações do Office 365 em todas as plataformas (Web, móveis e de ambiente de trabalho). Pode:
+As políticas de proteção da aplicação Intune e do SDK do Intune não incluem suporte para a gestão de ligações de conta do LinkedIn, mas existem outras formas de as gerir. Pode desativar as ligações de conta do LinkedIn para toda a sua organização ou ativar estas ligações para grupos de utilizadores específicos na sua organização. Estas definições afetam as ligações do LinkedIn em todas as aplicações do Office 365 em todas as plataformas (Web, móveis e de ambiente de trabalho). É possível:
 
 - Ativar ou desativar as ligações de conta do LinkedIn para o seu inquilino no portal do Azure. 
 - Ativar ou desativar as ligações de conta do LinkedIn para as aplicações do Office 2016 da sua organização que utilizem a Política de Grupo.
@@ -63,12 +64,12 @@ Se a integração do LinkedIn estiver ativada para o seu inquilino, os utilizado
 Se um utilizador consentir partilhar dados entre as contas, tal como os suplementos do Office, a integração do LinkedIn utilizará as APIs do Microsoft Graph existentes. A integração do LinkedIn só utiliza um subconjunto de APIs disponível aos suplementos do Office e suporta várias exclusões.
 
 
-|Permissões do Microsoft Graph  |Descrição  |
+|Permissões do Microsoft Graph  |Description  |
 |---------|---------|
 |Permissões de leitura para [Pessoas](https://developer.microsoft.com/graph/docs/concepts/permissions_reference#people-permissions)     |Permite que a aplicação leia uma lista com classificações de pessoas relevantes para o utilizador com sessão iniciada. A lista pode incluir contactos locais, contactos de redes sociais ou do diretório da sua organização e pessoas de comunicações recentes (como e-mail e Skype).         |
 |Permissões de leitura para [Calendários](https://developer.microsoft.com/graph/docs/concepts/permissions_reference#calendars-permissions)     |Permite que a aplicação leia eventos nos calendários dos utilizadores. Inclui as reuniões nos calendários de utilizadores com sessão iniciada, as respetivas horas, localizações e participantes.         |
 |Permissões de leitura para [Perfil de Utilizador](https://developer.microsoft.com/graph/docs/concepts/permissions_reference#user-permissions)     |Permite que os utilizadores iniciem sessão na aplicação e permite que a aplicação leia o perfil dos utilizadores com sessão iniciada. Também permite que a aplicação leia informações básicas sobre a empresa dos utilizadores com sessão iniciada.         |
-|Subscrições     |Este âmbito não está disponível e ainda não está em utilização. Inclui subscrições de aplicações e serviços Microsoft, como o Office 365, fornecidas pela organização do utilizador.         |
+|Subscriptions     |Este âmbito não está disponível e ainda não está em utilização. Inclui subscrições de aplicações e serviços Microsoft, como o Office 365, fornecidas pela organização do utilizador.         |
 |Informações     |Este âmbito não está disponível e ainda não está em utilização. Inclui os interesses associados à conta do utilizador com sessão iniciada, com base na respetiva utilização dos serviços Microsoft.         |
 
 ### <a name="learn-more"></a>Saiba mais

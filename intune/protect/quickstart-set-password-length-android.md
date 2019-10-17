@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/23/2019
 ms.topic: quickstart
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 81b4fa08-5333-4c54-9f49-8db5f6984ed2
@@ -17,14 +18,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c2969c57a598acbc0239e07d4ed347739c9719c2
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: f73bc84be46252cb99a47966b480e585545dde12
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71731984"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72504163"
 ---
-# <a name="quickstart-create-a-password-compliance-policy-for-android-devices"></a>Início rápido: Criar uma política de conformidade de senha para dispositivos Android
+# <a name="quickstart-create-a-password-compliance-policy-for-android-devices"></a>Guia de Início Rápido: criar uma política de conformidade de palavra-passe para dispositivos Android
 
 Neste início rápido, vai utilizar o Microsoft Intune para exigir aos utilizadores de dispositivos Android da sua força de trabalho que introduzam uma palavra-passe com um comprimento específico antes de lhes conceder acesso às informações nos dispositivos Android. 
 
@@ -61,11 +62,11 @@ Quando tiver criado a política com êxito, esta será apresentada na sua lista 
 
 Quando já não for necessária, elimine a política. Para tal, selecione a política de conformidade e clique em **Eliminar**.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Neste início rápido, utilizou o Intune para criar uma política de conformidade para os dispositivos Android da sua força de trabalho para exigir uma palavra-passe de, pelo menos, seis carateres de comprimento. Para obter mais informações sobre a criação de políticas de conformidade, veja [Introdução às políticas de conformidade de dispositivos no Intune](device-compliance-get-started.md).
 
 Para seguir esta série de guias de início rápido do Intune, continue para o próximo guia de início rápido.
 
 > [!div class="nextstepaction"]
-> [TUTORIAIS Enviar notificações para dispositivos não compatíveis @ no__t-0
+> [Guia de Início Rápido: enviar notificações para dispositivos não conformes](../quickstart-send-notification.md)

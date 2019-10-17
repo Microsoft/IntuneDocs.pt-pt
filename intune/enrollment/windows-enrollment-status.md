@@ -1,7 +1,7 @@
 ---
 title: Configurar uma página de status de registro
 titleSuffix: Microsoft Intune
-description: Configure uma página de saudação para os utilizadores a inscrição de dispositivos Windows 10.
+description: Configure uma página de saudação para os utilizadores que inscrevem dispositivos Windows 10.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 06/28/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8bc472a8b15746a46b5e0cda3a8fe11db7aa4974
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: d2a6b427552e545421e329b900833c889e67bf35
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71729640"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503035"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>Configurar uma página de status de registro
  
@@ -54,8 +55,7 @@ Você também pode definir a ordem de prioridade de cada perfil para considerar 
 <tr><td>Permitir que os usuários redefinam o dispositivo se ocorrer um erro de instalação<td>Um botão <b>Redefinir dispositivo</b> será exibido se houver uma falha na instalação.<td>O botão <b>Redefinir dispositivo</b> não será exibido se houver uma falha na instalação.
 <tr><td>Permitir que os usuários usem o dispositivo se ocorrer um erro de instalação<td>Um botão <b>continuar qualquer assim</b> será exibido se houver uma falha na instalação.<td>O botão <b>continuar mesmo assim</b> não será exibido se houver uma falha na instalação.
 <tr><td>Mostrar erro de tempo limite quando a instalação demorar mais do que o número especificado de minutos<td colspan="2">Especifique o número de minutos a aguardar a conclusão da instalação. Um valor padrão de 60 minutos é inserido.
-<tr><td>Mostrar mensagem personalizada quando ocorrer um erro<td>Uma caixa de texto é fornecida onde você pode especificar uma mensagem personalizada para exibir se ocorrer um erro de instalação.<td>A mensagem padrão é exibida: <br><b>A instalação excedeu o limite de tempo definido por sua organização. Tente novamente ou contate a pessoa de suporte de ti para obter ajuda.<b>
-<tr><td>Permitir que os usuários coletem logs sobre erros de instalação<td>Se houver um erro de instalação, um botão <b>coletar logs</b> será exibido. <br>Se o usuário clicar nesse botão, será solicitado a escolher um local para salvar o arquivo de log <b>MDMDiagReport. cab</b><td>O botão <b>coletar logs</b> não será exibido se houver um erro de instalação.
+<tr><td>Mostrar mensagem personalizada quando ocorrer um erro<td>Uma caixa de texto é fornecida onde você pode especificar uma mensagem personalizada para exibir se ocorrer um erro de instalação.<td>A mensagem padrão é exibida: <br><b>Installation excedeu o limite de tempo definido por sua organização. Tente novamente ou contate a pessoa de suporte de ti para obter ajuda. <b> @ no__t-1<tr><td>Permitir que os usuários coletem logs sobre erros de instalação<td>Se houver um erro de instalação, um botão <b>coletar logs</b> será exibido. <br>Se o usuário clicar nesse botão, será solicitado a escolher um local para salvar o arquivo de log <b>MDMDiagReport. cab</b><td>O botão <b>coletar logs</b> não será exibido se houver um erro de instalação.
 <tr><td>Bloquear o uso do dispositivo até que esses aplicativos necessários sejam instalados se eles forem atribuídos ao usuário/dispositivo<td colspan="2">Escolha <b>tudo</b> ou <b>selecionado</b>. <br><br>Se <b>selecionado</b> for escolhido, um botão <b>selecionar aplicativos</b> será exibido, permitindo que você escolha quais aplicativos devem ser instalados antes de habilitar o dispositivo.
 </table>
 
@@ -63,14 +63,14 @@ Você também pode definir a ordem de prioridade de cada perfil para considerar 
 
 Para ativar a página status do registro, siga as etapas abaixo.
  
-1. No [Intune](https://aka.ms/intuneportal), escolha **registro** > de dispositivo inscrição no registro do**Windows** > **página status**.
+1. No [Intune](https://aka.ms/intuneportal), escolha **registro de dispositivo** > **registro do Windows** > **página status de registro**.
 2. No painel **Página de Estado de Inscrição**, selecione **Predefinição** > **Definições**.
 3. Para **Mostrar progresso de instalação de aplicações e perfis**, selecione **Sim**.
 4. Selecione as outras definições que pretende ativar e, em seguida, selecione **Guardar**.
 
 ## <a name="create-enrollment-status-page-profile-and-assign-to-a-group"></a>Criar perfil de página de status de registro e atribuir a um grupo
 
-1. No [Intune](https://aka.ms/intuneportal), escolha **registro** > de dispositivo inscrição no registro do**Windows** > **página** > de status**Criar perfil**.
+1. No [Intune](https://aka.ms/intuneportal), escolha **registro de dispositivo**@no__t-**2 registro do Windows** > **página status de registro** > **Criar perfil**.
 2. Forneça um **Nome** e uma **Descrição**.
 3. Selecione **Criar**.
 4. Selecione o novo perfil na lista **Página de Estado de Inscrição**.
@@ -81,20 +81,20 @@ Para ativar a página status do registro, siga as etapas abaixo.
 
 Um usuário pode estar em muitos grupos e ter muitos perfis de página de status de registro. Para lidar com esses conflitos, você pode definir as prioridades para cada perfil. Ao registrar, se alguém tiver mais de um perfil de página de status de registro, somente o perfil de prioridade mais alta será aplicado ao dispositivo registrado.
 
-1. No [Intune](https://aka.ms/intuneportal), escolha **registro** > de dispositivo inscrição no registro do**Windows** > **página status**.
+1. No [Intune](https://aka.ms/intuneportal), escolha **registro de dispositivo** > **registro do Windows** > **página status de registro**.
 2. Paire o cursor sobre o perfil na lista.
 3. Utilize os três pontos verticais para arrastar o perfil para a posição pretendida na lista.
 
-## <a name="block-access-to-a-device-until-a-specific-application-is-installed"></a>Bloquear o acesso a um dispositivo até que uma aplicação específica está instalado
+## <a name="block-access-to-a-device-until-a-specific-application-is-installed"></a>Bloquear o acesso a um dispositivo até que uma aplicação específica esteja instalada
 
-Pode especificar que aplicações têm de ser instalados antes do usuário pode acessar a área de trabalho.
+Pode especificar que aplicações têm de ser instaladas para o utilizador poder aceder à área de trabalho.
 
-1. No Intune, escolha **registro** > de dispositivo inscrição no registro do**Windows** > **página status**.
-2. Escolha um perfil > **definições**.
-3. Escolher **Sim** para **Mostrar o progresso de instalação de aplicação e perfil**.
-4. Escolher **Sim** para **bloquear a utilização de dispositivos, até que todas as aplicações e perfis são instalados**.
+1. No Intune, escolha **registro de dispositivo** > **registro do Windows** > **página status de registro**.
+2. Escolha um perfil > **Definições**.
+3. Escolha **Sim** para **Mostrar progresso de instalação de aplicações e perfis**.
+4. Escolha **Sim** para **Bloquear a utilização de dispositivos até que todas as aplicações e perfis sejam instalados**.
 5. Escolha **selecionado** para **bloquear o uso do dispositivo até que esses aplicativos necessários sejam instalados se eles forem atribuídos ao usuário/dispositivo**.
-6. Escolher **selecionar aplicações** > Selecione as aplicações > **selecione** > **guardar**.
+6. Escolha **Selecionar aplicações** > escolha as aplicações > **Selecionar** > **Guardar**.
 
 ## <a name="enrollment-status-page-tracking-information"></a>Informações de rastreamento de página de status de registro
 
@@ -141,7 +141,7 @@ Para a configuração da conta, a página status do registro acompanhará os seg
 - Certificados
   - Perfis de certificados atribuídos a Todos os Utilizadores ou a um grupo de utilizadores de que seja membro o utilizador que inscreve o dispositivo.
 
-### <a name="troubleshooting"></a>Resolução de problemas
+### <a name="troubleshooting"></a>Resolução de Problemas
 Principais perguntas para solução de problemas.
 
 - Por que meus aplicativos não foram instalados durante a fase de configuração do dispositivo durante a implantação do AutoPilot que está usando a página de status de registro?
@@ -198,9 +198,9 @@ Abaixo estão os problemas conhecidos.
     - o usuário deve inserir as credenciais novamente antes de prosseguir da fase de configuração do dispositivo para a fase de configuração da conta
 - O ESP está preso por um longo tempo ou nunca conclui a fase de "identificação". O Intune computa as políticas ESP durante a fase de identificação. Um dispositivo pode nunca concluir a computação das políticas de ESP se o usuário atual não tiver um licenciamento do Intune atribuído.  
 - Configurar o controle de aplicativos do Windows Defender faz com que uma solicitação seja reinicializada durante o piloto automático. Configurar o aplicativo do Windows Defender (AppLocker CSP) requer uma reinicialização. Quando essa política é configurada, ela pode fazer com que um dispositivo seja reinicializado durante o piloto automático. Atualmente, não há como suprimir ou adiar a reinicialização.
-- Quando a política de DeviceLock https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock) (estiver habilitada como parte de um perfil ESP, o OOBE ou o usuário da área de trabalho de logon automático poderá falhar unexpectantly por dois motivos.
+- Quando a política de DeviceLock (https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock) é habilitada como parte de um perfil ESP, o OOBE ou o usuário da área de trabalho de logon automático pode falhar unexpectantly por dois motivos.
   - Se o dispositivo não for reinicializado antes de sair da fase de instalação do dispositivo ESP, o usuário poderá ser solicitado a inserir suas credenciais do Azure AD. Esse prompt ocorre em vez de um logon automático bem-sucedido em que o usuário vê a animação do primeiro logon do Windows.
   - O autologn falhará se o dispositivo for reinicializado depois que o usuário inserir suas credenciais do Azure AD, mas antes de sair da fase de instalação do dispositivo ESP. Essa falha ocorre porque a fase de instalação do dispositivo ESP nunca foi concluída. A solução alternativa é redefinir o dispositivo.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 Depois de configurar as suas páginas de inscrição do Windows, saiba como gerir dispositivos Windows. Para obter mais informações, veja [O que é a gestão de dispositivos do Microsoft Intune?](../remote-actions/device-management.md)

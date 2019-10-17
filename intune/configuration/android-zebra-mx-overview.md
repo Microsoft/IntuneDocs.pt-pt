@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 09/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: ''
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: beeef8775e6399b252d612f2b5f944d230fe1dd4
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 13e5e7d49ec7e808f7cb5ba419dc881717539564
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71730936"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72496049"
 ---
 # <a name="use-and-manage-zebra-devices-with-zebra-mobility-extensions-in-microsoft-intune"></a>Utilizar e gerir dispositivos Zebra com as Extensões de Mobilidade Zebra no Microsoft Intune
 
@@ -52,7 +53,7 @@ Com o Intune, pode inscrever dispositivos Zebra para implementar as aplicações
 - Não deixe de ver [Zebra's full MX feature matrix](http://techdocs.zebra.com/mx/compatibility) (Matriz completa de funcionalidades MX da Zebra) (abre o site da Zebra) para confirmar que os perfis que cria são compatíveis com a versão da MX, a versão do SO e o modelo do dispositivo.
 - Determinados dispositivos, como os dispositivos TC20/25, não suportam todas as funcionalidades MX disponíveis no StageNow. Não deixe de ver [Zebra's feature matrix](http://techdocs.zebra.com/mx/tc2x/) (Matriz de funcionalidades da Zebra) (abre o site da Zebra) para obter informações de suporte atualizadas.
 
-## <a name="step-1-install-the-latest-company-portal-app"></a>Passo 1: Instalar a aplicação do Portal da Empresa mais recente
+## <a name="step-1-install-the-latest-company-portal-app"></a>Etapa 1: instalar o aplicativo Portal da Empresa mais recente
 
 No dispositivo, abra o repositório Google Play. Baixe e instale o aplicativo Portal da Empresa do Intune da Microsoft. Quando instalada a partir do Google Play, a aplicação do Portal da Empresa obtém as atualizações e as correções automaticamente.
 
@@ -78,7 +79,7 @@ Avance para publicar o perfil e consuma-o com a aplicação StageNow no disposit
 > [!TIP]
 > Para obter mais informações sobre o StageNow e para que serve, veja [StageNow Android device staging](https://www.zebra.com/us/en/products/software/mobile-computers/mobile-app-utilities/stagenow.html) (Transição de dispositivos Android com StageNow) (abre o site da Zebra).
 
-## <a name="step-2-confirm-the-company-portal-app-has-device-administrator-role"></a>Passo 2: Confirmar que a aplicação do Portal da Empresa tem a função de administrador de dispositivos
+## <a name="step-2-confirm-the-company-portal-app-has-device-administrator-role"></a>Etapa 2: confirmar se o aplicativo Portal da Empresa tem a função de administrador do dispositivo
 
 A aplicação do Portal da Empresa exige um Administrador de Dispositivos para gerir os dispositivos Android. Para ativar a função de Administrador de Dispositivos, alguns dispositivos Zebra incluem uma interface de utilizador (IU) no dispositivo. Se o dispositivo incluir uma IU, a aplicação do Portal da Empresa avisará o utilizador final para atribuir o Administrador de Dispositivos durante a [inscrição](#step-3-enroll-the-device-in-to-intune) (neste artigo).
 
@@ -95,17 +96,17 @@ O artigo [Set battery swap mode as device administrator](https://zebratechnologi
 
 Avance para publicar o perfil e consuma-o com a aplicação StageNow no dispositivo. É atribuída à aplicação do Portal da Empresa a função de Administrador de Dispositivos.
 
-## <a name="step-3-enroll-the-device-in-to-intune"></a>Passo 3: Inscrever o dispositivo no Intune
+## <a name="step-3-enroll-the-device-in-to-intune"></a>Etapa 3: registrar o dispositivo no Intune
 
 Depois de concluir os dois primeiros passos, a aplicação do Portal da Empresa é instalada no dispositivo. O dispositivo está pronto para ser inscrito no Intune.
 
 Veja [Inscrever dispositivos Android](../enrollment/android-enroll.md) para obter os passos. Se tiver muitos dispositivos Zebra, talvez prefira utilizar uma [conta de gestor de inscrição de dispositivos (DEM)](../enrollment/device-enrollment-manager-enroll.md). A utilização de uma conta DEM também remove a opção para anular a inscrição da aplicação do Portal da Empresa, para que os utilizadores não possam anular facilmente a inscrição do dispositivo.
 
-## <a name="step-4-create-a-device-management-profile-in-stagenow"></a>Passo 4: Criar um perfil de gestão de dispositivos no StageNow
+## <a name="step-4-create-a-device-management-profile-in-stagenow"></a>Etapa 4: criar um perfil de gerenciamento de dispositivo no StageNow
 
 Utilize o StageNow para criar um perfil que configura as definições que quer gerir no dispositivo. Para obter detalhes específicos, veja a documentação da Zebra. O artigo [Profiles](http://techdocs.zebra.com/stagenow/3-2/stagingprofiles/) (Perfis) (abre o site da Zebra) pode ser uma boa opção.
 
-Quando cria o perfil no StageNow, no último passo, selecione **Exportar para MDM**. Esta etapa gera um arquivo XML. Guarde este ficheiro. pois precisará dele num passo posterior.
+Quando cria o perfil no StageNow, no último passo, selecione **Exportar para MDM**. Esta etapa gera um arquivo XML. Guarde este ficheiro, pois precisará dele num passo posterior.
 
 - É recomendado testar o perfil antes de o implementar nos dispositivos da sua organização. Para testar, no último passo da criação de perfis com o StageNow no computador, utilize as opções **Testar**. Em seguida, consuma o ficheiro gerado pelo StageNow com a aplicação StageNow no dispositivo.
 
@@ -128,7 +129,7 @@ Depois de testar o ficheiro, o próximo passo é implementar o perfil nos dispos
   >
   > Se a mesma propriedade for configurada várias vezes em um único perfil MX, a última configuração vence.
 
-## <a name="step-5-create-a-profile-in-intune"></a>Passo 5: Criar um perfil no Intune
+## <a name="step-5-create-a-profile-in-intune"></a>Etapa 5: criar um perfil no Intune
 
 No Intune, crie um perfil de configuração de dispositivos:
 
@@ -137,9 +138,9 @@ No Intune, crie um perfil de configuração de dispositivos:
 3. Introduza as seguintes propriedades:
 
     - **Nome**: introduza um nome descritivo para o novo perfil.
-    - **Descrição**: introduza uma descrição para o perfil. Esta definição é opcional, mas recomendada.
-    - **Plataforma**: Selecione **Android**.
-    - **Tipo de perfil**: selecione **Perfil MX (apenas Zebra)** .
+    - **Descrição:** introduza uma descrição para o perfil. Esta definição é opcional, mas recomendada.
+    - **Plataforma**: selecione **Android**.
+    - **Tipo de perfil**: selecione o **perfil MX (somente pretas)** .
 
 4. Em **Perfil MX no formato .xml**, adicione o ficheiro XML do perfil que [exportou do StageNow](#step-4-create-a-device-management-profile-in-stagenow) (neste artigo).
 5. Selecione **OK** > **Criar** para guardar as alterações. A política é criada e apresentada na lista.
@@ -158,7 +159,7 @@ Para atualizar a configuração de MX específico de um dispositivo pretas, voc�
 - Crie um arquivo XML StageNow atualizado, edite o perfil MX do Intune existente e carregue o novo arquivo XML StageNow. Esse novo arquivo substituirá a política anterior no perfil e substituirá a configuração anterior.
 - Crie um novo arquivo XML StageNow que define configurações diferentes, crie um novo perfil MX do Intune, carregue o novo arquivo XML StageNow e atribua-o ao mesmo grupo. Vários perfis são implantados. Se o novo perfil definir as configurações que já existem nos perfis existentes, ocorrerão conflitos.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 - [Atribua o perfil](device-profile-assign.md) e [monitorize o respetivo estado](device-profile-monitor.md).
 - [Utilizar registos do StageNow para resolver problemas de dispositivos Zebra](android-zebra-mx-logs-troubleshoot.md).

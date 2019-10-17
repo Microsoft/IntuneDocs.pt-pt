@@ -9,6 +9,7 @@ ms.date: 07/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: ''
 searchScope:
@@ -18,16 +19,16 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 328ec3111aae5f8363f2743d423a56eafc47d765
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 289d99603314be7c1097d54d59d4a0e90cae0bed
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67546260"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508327"
 ---
 # <a name="sync-your-windows-device-manually"></a>Sincronizar o seu dispositivo Windows manualmente
 
-Quando a velocidade de instalação da aplicação estiver abaixo do ideal, inicie a sincronização manual do dispositivo. A sincronização manual força o seu dispositivo a ligar-se ao Intune para obter as comunicações e atualizações mais recentes. A velocidade de instalação pode aumentar após a sincronização do dispositivo estar concluída.
+Quando a velocidade de instalação do aplicativo for inferior à ideal, inicie uma sincronização manual do dispositivo. As sincronizações manuais forçam seu dispositivo a se conectar com o Intune para obter as atualizações e comunicações mais recentes. A velocidade de instalação pode aumentar após a sincronização do dispositivo estar concluída.
 
 O Intune suporta a sincronização manual a partir da aplicação Portal da Empresa, da barra de tarefas do ambiente de trabalho ou do Menu Iniciar e da aplicação Definições do dispositivo. A funcionalidade da aplicação Portal da Empresa é suportada em dispositivos com o Windows 10 a executar a Atualização para Criativos (1703) ou superior. 
 
@@ -104,7 +105,7 @@ Conclua estes passos para sincronizar manualmente os seus dispositivos Microsoft
 
     ![Selecionar o nome da empresa para a gestão de dispositivos](./media/win10pc-sync-4-tap-com-name.png)
 
-3. Clique em **Sincronizar**. O botão permanece desativado até a sincronização estar concluída.
+3. Clique em **sincronizar**. O botão permanece desabilitado até que a sincronização seja concluída.
 
     ![Selecionar o botão sincronizar](./media/win10pc-sync-5-tap-sync.png)  
 
@@ -133,9 +134,9 @@ Estas instruções aplicam-se a dispositivos HoloLens a executar a Atualização
 2. Selecione **Contas** > **Acesso a Trabalho**.  
     ![Captura de ecrã da aplicação Definições do HoloLens com a ligação Contas realçada](./media/RS1_holoLens_SettingsRS1_Accounts_06.png)  
 
-3. Selecione a sua conta ligada > **Sincronizar**.  ![Captura de ecrã da aplicação Definições do HoloLens com o botão Sincronizar realçado](./media/RS1_holoLens_SyncRS1_Sync_08.png)  
+3. Selecione sua conta conectada > **sincronizar**.  ![Screenshot aplicativo de configurações do HoloLens, botão Sincronizar realçado @ no__t-2  
 
-### <a name="windows-phone-81"></a>Windows Phone 8.1
+### <a name="windows-phone-81"></a>Wnodows Phone 8.1
 
 1. Aceda a **Todas as aplicações** > **Definições** > **área de trabalho**.
 

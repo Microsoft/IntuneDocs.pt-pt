@@ -8,16 +8,17 @@ manager: dougeby
 ms.date: 04/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 54e6cc0b3df95c74abf4b4ef1b827f8e121e3645
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: c5313cae6aa903af910471cb79f021e30a3263dd
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71731880"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503722"
 ---
 # <a name="add-ios-software-update-policies-in-intune"></a>Adicionar políticas de atualização de software do iOS no Intune
 
@@ -40,16 +41,16 @@ O dispositivo comunica com o Intune aproximadamente de 8 em 8 horas. Se uma atua
 
 4. Selecione **configurações > configurar**. Introduza as seguintes definições:
 
-    - **Selecione horários para evitar instalações de atualização**: Especifique um período de tempo restrito quando as atualizações não forem instaladas de modo forçado.
+    - **Selecionar horários para evitar instalações de atualização**: especifique um período de tempo restrito quando as atualizações não forem instaladas de modo forçado.
       - Blocos noturnos não têm suporte e podem não funcionar. Por exemplo, não configure uma política com uma *hora de início* de 8 p.m. e uma *hora de término* de 18:00.
       - Uma política que começa às 12 AM e termina às 12 horas é avaliada como 0 hora e não 24 horas, o que resulta em nenhuma restrição.
 
       Ao definir o período de tempo restrito, insira os seguintes detalhes:
 
-      - **Dias**: Escolha os dias da semana em que as atualizações não estão instaladas. Por exemplo, verifique segunda-feira, quarta-feira e sexta-feira para impedir que as atualizações sejam instaladas nestes dias.
-      - **Fuso horário**: Escolha um fuso horário.
-      - **Hora de início**: Escolha a hora de início do período de tempo restrito. Por exemplo, digite 5 para que as atualizações não sejam instaladas a partir das 17:00.
-      - **Hora de término**: Escolha a hora de término do período de tempo restrito. Por exemplo, digite 1. portanto, as atualizações podem ser instaladas a partir de 1 A.M.
+      - **Dias**: escolha os dias da semana em que as atualizações não estão instaladas. Por exemplo, verifique segunda-feira, quarta-feira e sexta-feira para impedir que as atualizações sejam instaladas nestes dias.
+      - **Fuso horário**: escolha um fuso horário.
+      - **Hora de início**: escolha a hora de início do período de tempo restrito. Por exemplo, digite 5 para que as atualizações não sejam instaladas a partir das 17:00.
+      - **Hora de término**: escolha a hora de término do período de tempo restrito. Por exemplo, digite 1. portanto, as atualizações podem ser instaladas a partir de 1 A.M.
 
     - **Atrasar a visibilidade das atualizações de software para os usuários finais sem alterar as atualizações agendadas na política de atualização de software (dias)** : 
 
@@ -93,8 +94,8 @@ Os dispositivos utilizados pelos utilizadores abrangidos pela política são ava
 
 ## <a name="monitor-device-installation-failures"></a>Monitorizar as falhas de instalação em dispositivos
 <!-- 1352223 -->
-**As** > **falhas de instalação de atualizações de software para dispositivos IOS** mostram uma lista de dispositivos IOS supervisionados direcionados por uma política de atualização, tentou uma atualização e não puderam ser atualizadas. Pode ver o estado com o motivo pelo qual cada um dos dispositivos não foi atualizado automaticamente. Os dispositivos atualizados e em bom estado de funcionamento não são apresentados na lista. Os dispositivos atualizados incluem as atualizações mais recentes suportadas pelos mesmos.
+**As atualizações de Software** > **falhas de instalação para dispositivos IOS** mostram uma lista de dispositivos IOS supervisionados direcionados por uma política de atualização, tentou uma atualização e não puderam ser atualizadas. Pode ver o estado com o motivo pelo qual cada um dos dispositivos não foi atualizado automaticamente. Os dispositivos atualizados e em bom estado de funcionamento não são apresentados na lista. Os dispositivos atualizados incluem as atualizações mais recentes suportadas pelos mesmos.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 [Atribua o perfil](../configuration/device-profile-assign.md) e [monitorize o respetivo estado](../configuration/device-profile-monitor.md).

@@ -8,18 +8,19 @@ manager: dougeby
 ms.date: 09/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2b96de28e517a989fc1e749176039e6c02ef51e0
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 5628ba39cafe38cc66827d69584d009c15326bd4
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71730448"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72491761"
 ---
 # <a name="create-vpn-profiles-to-connect-to-vpn-servers-in-intune"></a>Criar perfis VPN para se conectar a servidores VPN no Intune
 
@@ -43,22 +44,22 @@ Por exemplo, você deseja configurar todos os dispositivos iOS com as configura�
 
 Pode criar perfis VPN com os seguintes tipos de ligação:
 
-|Tipo de ligação|Plataforma|
+|Tipo de ligação|Platform|
 |-|-|
 |Automático|Windows 10|
 |Check Point Capsule VPN|-Android<br/>-Perfis de trabalho do Android Enterprise<br/>-iOS<br/>-macOS<br/>-Windows 10<br/>-Windows 8.1<br/>-Windows Phone 8,1|
 |Cisco AnyConnect|-Android<br/>-Perfis de trabalho do Android Enterprise<br/>-Proprietário do dispositivo Android Enterprise (totalmente gerenciado)<br/>-iOS<br/>-macOS|
 |Cisco (IPSec)|iOS|
-|Citrix SSO|-Android<br/>-Perfis de trabalho do Android Enterprise: Usar [política de configuração de aplicativo](../apps/app-configuration-policies-use-android.md)<br/>-iOS<br/>-Windows 10|
+|Citrix SSO|-Android<br/>-Perfis de trabalho do Android Enterprise: usar [política de configuração de aplicativo](../apps/app-configuration-policies-use-android.md)<br/>-iOS<br/>-Windows 10|
 |VPN Personalizada|-iOS<br/>-macOS|
 |F5 Access|-Android<br/>-Perfis de trabalho do Android Enterprise<br/>-Proprietário do dispositivo Android Enterprise (totalmente gerenciado)<br/>-iOS<br/>-macOS<br/>-Windows 10<br/>-Windows 8.1<br/>-Windows Phone 8,1|
-|IKEv2|Windows 10|
+|IKEv2| -iOS<br/>-Windows 10|
 |L2TP|Windows 10|
-|Palo Alto Networks GlobalProtect|-Perfis de trabalho do Android Enterprise: Usar [política de configuração de aplicativo](../apps/app-configuration-policies-use-android.md)<br/>-iOS<br/>-Windows 10|
+|Palo Alto Networks GlobalProtect|-Perfis de trabalho do Android Enterprise: usar [política de configuração de aplicativo](../apps/app-configuration-policies-use-android.md)<br/>-iOS<br/>-Windows 10|
 |PPTP|Windows 10|
 |Pulse Secure|-Android<br/>-Perfis de trabalho do Android Enterprise<br/>-Proprietário do dispositivo Android Enterprise (totalmente gerenciado)<br/>-iOS<br/>-macOS<br/>-Windows 10<br/>-Windows 8.1<br/>-Windows Phone 8,1|
 |SonicWall Mobile Connect|-Android<br/>-Perfis de trabalho do Android Enterprise<br/>-iOS<br/>-macOS<br/>-Windows 10<br/>-Windows 8.1<br/>-Windows Phone 8,1|
-|Zscaler|-Perfis de trabalho do Android Enterprise: Usar [política de configuração de aplicativo](../apps/app-configuration-policies-use-android.md)<br/>-iOS|
+|Zscaler|-Perfis de trabalho do Android Enterprise: usar [política de configuração de aplicativo](../apps/app-configuration-policies-use-android.md)<br/>-iOS|
 
 > [!IMPORTANT]
 > Para poder utilizar os perfis VPN atribuídos a um dispositivo, tem de instalar a aplicação VPN aplicável ao perfil. Pode utilizar as informações do artigo [O que é a gestão de aplicações do Microsoft Intune?](../apps/app-management.md) para ajudá-lo a atribuir a aplicação através do Intune.  
@@ -67,23 +68,23 @@ Saiba como criar perfis VPN personalizados com definições URI em [Criar um per
 
 ## <a name="create-a-device-profile"></a>Criar um perfil de dispositivo
 
-1. No [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), selecione **dispositivo** > **perfis** > de configuração**Criar perfil**.
+1. No [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), selecione **configuração do dispositivo** > **perfis** > **Criar perfil**.
 2. Introduza as seguintes propriedades:
 
-    - **Nome**: introduza um nome descritivo para o perfil. Atribua nomes aos perfis de forma que possa identificá-los facilmente mais tarde. Por exemplo, um bom nome de perfil é o **perfil de VPN para toda a empresa**.
-    - **Descrição**: introduza uma descrição para o perfil. Esta definição é opcional, mas recomendada.
-    - **Plataforma**: escolha a plataforma dos dispositivos. As opções são:
+    - **Nome**: Insira um nome descritivo para o perfil. Atribua nomes aos perfis de forma que possa identificá-los facilmente mais tarde. Por exemplo, um bom nome de perfil é o **perfil de VPN para toda a empresa**.
+    - **Descrição:** introduza uma descrição para o perfil. Esta definição é opcional, mas recomendada.
+    - **Plataforma**: escolha a plataforma dos seus dispositivos. As opções são:
 
       - **Android**
-      -  > **Somente proprietário do dispositivo** Android Enterprise
-      -  > **Somente perfil de trabalho** do Android Enterprise
+      - **Android Enterprise** > **somente proprietário do dispositivo**
+      - **Android Enterprise** > **perfil de trabalho somente**
       - **iOS/iPadOS**
       - **macOS**
       - **Windows Phone 8.1**
       - **Windows 8.1 e posterior**
       - **Windows 10 e posterior**
 
-    - **Tipo de perfil**: Selecione **VPN**.
+    - **Tipo de perfil**: selecione **VPN**.
 
 3. Consoante a plataforma que escolheu, as definições que pode configurar variam. Consulte os seguintes artigos para obter configurações detalhadas em cada plataforma:
 
@@ -97,7 +98,7 @@ Saiba como criar perfis VPN personalizados com definições URI em [Criar um per
 
 4. Quando terminar, **crie** seu perfil.
 
-O perfil será criado e apresentado na lista de perfis. Para atribuir este perfil a grupos, veja [atribuir perfis de dispositivo](device-profile-assign.md).
+O perfil é criado e apresentado na lista de perfis. Para atribuir este perfil a grupos, veja [atribuir perfis de dispositivo](device-profile-assign.md).
 
 ## <a name="secure-your-vpn-profiles"></a>Proteger seus perfis de VPN
 
@@ -113,7 +114,7 @@ Para obter mais informações sobre como criar e utilizar perfis de certificado 
 
 O utilizador é autenticado no servidor VPN ao fornecer um nome de utilizador e uma palavra-passe.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 O perfil não estará ativo assim que for criado. Em seguida, [atribua o perfil](device-profile-assign.md) a alguns dispositivos.
 

@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 1/15/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -17,25 +18,25 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c54d82e2f0035272acce93f54f4080aca53579b9
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 2ad96c80a2cad71feec2afdfa87da767aa72fdb1
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71731516"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72505606"
 ---
 # <a name="enroll-your-android-enterprise-dedicated-devices-or-fully-managed-devices"></a>Registrar seus dispositivos Android Enterprise dedicados ou dispositivos totalmente gerenciados
 
-Depois de configurar seus [dispositivos Android Enterprise dedicados](android-kiosk-enroll.md) ou [dispositivos totalmente gerenciados](android-fully-managed-enroll.md) no Intune, você pode registrar os dispositivos. A maneira como você registra seus dispositivos Android Enterprise depende do sistema operacional.
+Depois de configurar seus [dispositivos Android Enterprise dedicados](android-kiosk-enroll.md) ou [dispositivos totalmente gerenciados](android-fully-managed-enroll.md) no Intune, você pode registrar os dispositivos. O registro do Intune para dispositivos dedicados e dispositivos totalmente gerenciados começa com uma redefinição de fábrica. A maneira como você registra seus dispositivos Android Enterprise depende do sistema operacional.
 
 | Método de inscrição | Versão mínima do sistema operacional Android para dispositivos dedicados e totalmente gerenciados |
 | ----- | ----- |
 | Comunicação de Proximidade | 5.1 |
-| Entrada de token | 6.0 |
-| Código QR | 7.0 |
-| Zero Touch  | 8,0\* |
+| Entrada de token | 6,0 |
+| Código QR | 7,0 |
+| Zero Touch  | 8.0 @ no__t-0 |
 
-\*Em fabricantes participantes.
+\* em fabricantes participantes.
 
 ## <a name="enroll-by-using-near-field-communication-nfc"></a>Inscrever com NFC (Comunicação de Proximidade)
 
@@ -91,7 +92,7 @@ Para utilizar o sistema Zero Touch da Google, o dispositivo tem de o suportar e 
 4. Escolha **Aplicar**.
 
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 - [Implementar aplicações Android](../apps/apps-deploy.md)
 - [Adicionar políticas de configuração para Android](../configuration/device-profiles.md)
 

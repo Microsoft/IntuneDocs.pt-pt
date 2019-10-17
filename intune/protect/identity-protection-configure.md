@@ -8,18 +8,19 @@ manager: dougeby
 ms.date: 01/29/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7d81396dda2cbd8129d9bbcae961435b99946d74
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 333b94bf3226c99ed50c4b433f4b477814b8e4bb
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71729244"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72509541"
 ---
 # <a name="use-windows-hello-for-business-on-windows-10-devices-with-microsoft-intune"></a>Use o Windows Hello para empresas em dispositivos Windows 10 com Microsoft Intune
 
@@ -48,14 +49,14 @@ Este artigo mostra como criar um perfil de configuração de dispositivo. Para o
 3. Introduza as seguintes propriedades:
 
     - **Nome**: introduza um nome descritivo para o novo perfil.
-    - **Descrição**: introduza uma descrição para o perfil. Esta definição é opcional, mas recomendada.
-    - **Plataforma**: Selecione **Windows 10 e posterior**. O Windows Hello para Empresas só é suportado em dispositivos com o Windows 10 e versões posteriores.
-    - **Tipo de perfil**: Selecione **proteção de identidade**.
-    - **Configurar o Windows Hello para empresas**: Escolha como você deseja configurar o Windows Hello para empresas. As opções são:
+    - **Descrição:** introduza uma descrição para o perfil. Esta definição é opcional, mas recomendada.
+    - **Plataforma**: selecione **Windows 10 e posterior**. O Windows Hello para Empresas só é suportado em dispositivos com o Windows 10 e versões posteriores.
+    - **Tipo de perfil**: selecione **proteção de identidade**.
+    - **Configurar o Windows Hello para empresas**: escolha como você deseja configurar o Windows Hello para empresas. As opções são:
 
-        - **Não configurado**: [Provisiona o Windows Hello para empresas](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-how-it-works-provisioning) no dispositivo. Quando atribuir perfis de proteção de identidade apenas a utilizadores, o contexto do dispositivo assume a predefinição **Não configurado**.
-        - **Desativado**: Se você não quiser usar o Windows Hello para empresas, selecione essa opção. Essa opção desabilita o Windows Hello para empresas para todos os usuários.
-        - **Habilitado**: Escolha esta opção para [provisionar](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-how-it-works-provisioning)e definir as configurações do Windows Hello para empresas no Intune. Insira as configurações que você deseja configurar. Para obter uma lista de todas as configurações e o que elas fazem, consulte:
+        - **Não configurado**: [provisiona o Windows Hello para empresas](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-how-it-works-provisioning) no dispositivo. Quando atribuir perfis de proteção de identidade apenas a utilizadores, o contexto do dispositivo assume a predefinição **Não configurado**.
+        - **Desabilitado**: se você não quiser usar o Windows Hello para empresas, selecione esta opção. Essa opção desabilita o Windows Hello para empresas para todos os usuários.
+        - **Habilitado**: escolha esta opção para [provisionar](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-how-it-works-provisioning)e definir as configurações do Windows Hello para empresas no Intune. Insira as configurações que você deseja configurar. Para obter uma lista de todas as configurações e o que elas fazem, consulte:
 
             - [Configurações do dispositivo Windows 10 para habilitar o Windows Hello para empresas](identity-protection-windows-settings.md)
 
@@ -73,7 +74,7 @@ In this high-level example, you'll create a device restriction policy that block
 
 -->
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 - Veja uma lista de todas as [configurações e o que elas fazem](identity-protection-windows-settings.md).
 - [Atribua o perfil](../configuration/device-profile-assign.md) e [monitorize o respetivo estado](../configuration/device-profile-monitor.md).

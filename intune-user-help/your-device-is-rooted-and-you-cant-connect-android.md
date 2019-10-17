@@ -9,6 +9,7 @@ ms.date: 01/23/2017
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 9786b71a-d2ff-4d95-a2d9-47ece0aec8ca
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 872fda55e47d517fdc67584c0621975dd065af11
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 4b191cf44f66cf8a71ed29d2be20c0a2809b27a6
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61503924"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72499796"
 ---
 # <a name="your-android-device-is-rooted-so-you-cant-connect"></a>O seu dispositivo Android tem root e, por isso, não liga
 

@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, get-started, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ee266d33b247941140569e416c4b43643bcd6a0f
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 31bb0e2ff4379c55829afc65fb99b768c9099a47
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71731316"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72498945"
 ---
 # <a name="app-protection-policies-overview"></a>Descrição geral das políticas de proteção de aplicações
 
@@ -41,14 +42,14 @@ Pode utilizar as políticas de proteção de aplicações do Intune **independen
 
 As políticas de proteção de aplicações podem ser configuradas para aplicações executadas em dispositivos que estão:
 
-- **Inscritos no Microsoft Intune**: estes dispositivos são, normalmente, pertencentes à empresa.
+- **Inscritos no Microsoft Intune:** estes dispositivos pertencem, normalmente, à empresa.
 
-- **Inscritos numa solução de Gestão de dispositivos móveis (MDM) de terceiros:** estes dispositivos são, normalmente, pertencentes à empresa.
+- **Inscritos numa solução de gestão de dispositivos móveis (MDM) de terceiros:** estes dispositivos pertencem, normalmente, à empresa.
 
   > [!NOTE]
   > As políticas de gestão de aplicações móveis não devem ser utilizadas com soluções de gestão de aplicações móveis ou de contentores seguros de terceiros.
 
-- **Não inscritos em nenhuma solução de gestão de dispositivos móveis:** Normalmente, esses dispositivos são dispositivos de Propriedade do funcionário que não são gerenciados ou registrados no Intune ou outras soluções de MDM.
+- **Não registrado em nenhuma solução de gerenciamento de dispositivo móvel:** Normalmente, esses dispositivos são dispositivos de Propriedade do funcionário que não são gerenciados ou registrados no Intune ou outras soluções de MDM.
 
 > [!IMPORTANT]
 > Pode criar políticas de gestão de aplicações móveis para as aplicações móveis do Office que se ligam aos serviços do Office 365. Também pode proteger o acesso a caixas de correio do Exchange no local ao criar políticas de proteção de aplicações do Intune para o Outlook para iOS e Android com Autenticação Moderna híbrida. Antes de utilizar esta funcionalidade, certifique-se de que cumpre os [requisitos do Outlook para iOS e Android](https://technet.microsoft.com/library/mt846639(v=exchg.160).aspx). As políticas de proteção de aplicações não são suportadas para outras aplicações que se ligam aos serviços do SharePoint ou do Exchange no local.
@@ -193,7 +194,7 @@ Por predefinição, só pode existir uma política **Global** por inquilino. No 
 
 Embora a política **Global** se aplique a todos os utilizadores no seu inquilino, qualquer política de proteção de aplicações padrão do Intune substituirá estas definições.
 
-## <a name="app-protection-features"></a>Funcionalidades de proteção de aplicações
+## <a name="app-protection-features"></a>Funcionalidades da proteção de aplicações
 
 ### <a name="multi-identity"></a>Várias identidades
 
@@ -341,7 +342,7 @@ Google Play proteger as verificações de API do SafetyNet exigem que o usuário
 ### <a name="google-play-protect-apis-and-google-play-services"></a>Google Play proteger APIs e Google Play Services
 As configurações de política de proteção de aplicativo que aproveitam Google Play proteger APIs exigem Google Play Services para funcionar. As configurações de **atestado de dispositivo SafetyNET**e **verificação de ameaças em aplicativos** exigem a versão do Google determinada do Google Play Services para funcionar corretamente. Como essas são configurações que se enquadram na área de segurança, o usuário final será bloqueado se eles tiverem sido direcionados a essas configurações e não atenderem à versão apropriada do Google Play Services ou não tiverem acesso a Google Play Services.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 [Como criar e implementar políticas de proteção de aplicações com o Microsoft Intune](app-protection-policies.md)
 

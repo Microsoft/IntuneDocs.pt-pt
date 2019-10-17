@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 10/03/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 42605e6e-5b84-44ff-b86e-346ea123b53e
@@ -17,18 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 50ea427f1365285e08b6ad0e5a098b67421f941f
-ms.sourcegitcommit: 223d64a72ec85fe222f5bb10639da729368e6d57
+ms.openlocfilehash: a5bcdf9c3218df91bea85858ea21e88718e81633
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71940262"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72498326"
 ---
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>Como eliminar apenas dados empresariais de aplicações geridas pelo Intune
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-Quando um dispositivo se perde ou é roubado ou se o funcionário sair da sua empresa, quer ter a certeza de que os dados empresariais da aplicação são removidos do dispositivo. No entanto, é recomendável não remover os dados pessoais do dispositivo, especialmente se o dispositivo pertencer ao funcionário.
+Quando um dispositivo se perde ou é roubado ou se o empregado sair da sua empresa, quer ter a certeza de que os dados empresariais da aplicação são removidos do dispositivo. No entanto, é recomendável não remover os dados pessoais do dispositivo, especialmente se o dispositivo pertencer ao funcionário.
 
 >[!NOTE]
 > As plataformas iOS, Android e Windows 10 são as únicas plataformas com suporte no momento para apagar dados corporativos de aplicativos gerenciados pelo Intune. Os aplicativos gerenciados do Intune são aplicativos que incluem o SDK de aplicativo do Intune e têm uma conta de usuário licenciado para sua organização. A implantação de políticas de proteção de aplicativo não é necessária para habilitar o apagamento seletivo do aplicativo.
@@ -39,9 +40,9 @@ Para remover seletivamente os dados de aplicações da empresa, utilize os passo
 > Os contactos sincronizados diretamente da aplicação para o livro de endereços nativo são removidos. Não é possível eliminar contactos que sejam sincronizados do livro de endereços nativo para outra origem externa. Atualmente, é aplicável apenas à aplicação Microsoft Outlook.
 
 ## <a name="deployed-wip-policies-without-user-enrollment"></a>Políticas WIP implantadas sem registro de usuário
-As políticas de WIP (proteção de informações do Windows) podem ser implantadas sem exigir que os usuários do MDM registrem seu dispositivo Windows 10. Esta configuração permite que as empresas protejam os seus documentos empresariais com base na configuração do WIP, o que permite que o utilizador mantenha a gestão dos seus próprios dispositivos Windows. Assim que os documentos estiverem protegidos com uma política WIP, os dados protegidos poderão ser eliminados seletivamente por um administrador do Intune. Ao selecionar o utilizador e o dispositivo, e ao enviar um pedido de eliminação de dados, todos os dados protegidos através da política WIP ficarão inutilizáveis. No Intune na portal do Azure, selecione**apagamento seletivo do aplicativo**de **aplicativo** > cliente. Para obter mais informações, veja [Criar e implementar a política de proteção de aplicações do Windows Information Protection (WIP) com o Intune](windows-information-protection-policy-create.md).
+As políticas de WIP (proteção de informações do Windows) podem ser implantadas sem exigir que os usuários do MDM registrem seu dispositivo Windows 10. Esta configuração permite que as empresas protejam os seus documentos empresariais com base na configuração do WIP, o que permite que o utilizador mantenha a gestão dos seus próprios dispositivos Windows. Assim que os documentos estiverem protegidos com uma política WIP, os dados protegidos poderão ser eliminados seletivamente por um administrador do Intune. Ao selecionar o utilizador e o dispositivo, e ao enviar um pedido de eliminação de dados, todos os dados protegidos através da política WIP ficarão inutilizáveis. No Intune na portal do Azure, selecione **aplicativo cliente** > **apagamento seletivo de aplicativo**. Para obter mais informações, veja [Criar e implementar a política de proteção de aplicações do Windows Information Protection (WIP) com o Intune](windows-information-protection-policy-create.md).
 
-## <a name="create-a-wipe-request"></a>Criar um pedido de eliminação
+## <a name="create-a-wipe-request"></a>Criar um pedido de apagamento
 
 1. Inicie sessão no [portal do Azure](https://portal.azure.com).
 

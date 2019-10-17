@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 12/06/2018
 ms.topic: archived
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
@@ -17,19 +18,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8a3129ee1590ba183ce60f6e4f1ad1318dd49e96
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 839a62e32c2fafcaaa591e38cd5b2e297ed3750f
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71731892"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502939"
 ---
-# <a name="configure-intune-education-settings-for-shared-ipad-devices"></a>Configurar definições de educação do Intune para dispositivos iPad partilhados
+# <a name="configure-intune-education-settings-for-shared-ipad-devices"></a>Definir configurações de educação do Intune para dispositivos iPad compartilhados
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 > [!NOTE]
-> Definições do Intune para a aplicação sala de aula estão obsoletas no Intune. Este artigo aplica-se apenas aos utilizadores com perfis de educação existentes no Intune.
+> As configurações do Intune para o aplicativo sala de aula estão obsoletas no Intune. Este artigo aplica-se apenas aos utilizadores com perfis de educação existentes no Intune.
 
 O Intune suporta a aplicação Sala de Aula para iOS, que ajuda os professores a orientar a aprendizagem e a controlar os dispositivos dos estudantes na sala de aula. Além da aplicação Sala de Aula, a Apple suporta a possibilidade de configurar os dispositivos iPad dos estudantes de forma a que múltiplos estudantes possam partilhar um único dispositivo. Este documento fornece-lhe orientações para alcançar este objetivo com o Intune.
 
@@ -69,7 +70,7 @@ Pode importar informações para o SDS através de um dos seguintes métodos:
 
 1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. No painel **Intune**, selecione **Configuração do dispositivo**.
-2. No painel **Configuração do dispositivo**, na secção **Gerir**, selecione **Perfis**.
+2. No painel **Configuração do dispositivo** na secção **Gerir**, selecione **Perfis**.
 5. No painel de perfis, selecione **Criar perfil**.
 6. No painel **Criar perfil**, introduza um **Nome** e uma **Descrição** para o perfil de educação do iOS.
 7. Na lista pendente **Plataforma**, selecione **iOS**.
@@ -133,7 +134,7 @@ Quando concluir a configuração dos certificados, selecione **OK**.
 1. No painel **Educação**, selecione **OK**.
 2. No painel **Criar perfil**, selecione **Criar**.
 
-O perfil será criado e apresentado no painel Lista de perfis.
+O perfil é criado e apresentado no painel da lista de perfis.
 
 ## <a name="step-3---create-a-device-category"></a>Passo 3 – criar uma categoria de dispositivo
 
@@ -188,7 +189,7 @@ O dispositivo está agora associado à categoria de dispositivos. Repita este pr
 10. Selecione os grupos a incluir no Perfil do Carrinho e, em seguida, selecione **Selecionar**.
 11. No painel **Criar Associação**, selecione **Guardar** para guardar o Perfil do Carrinho.
 
-O perfil será criado e apresentado no painel Lista de perfis.
+O perfil é criado e apresentado no painel da lista de perfis.
 
 ## <a name="step-7---assign-the-cart-profile-to-classes"></a>Passo 7 – atribuir o Perfil do Carrinho a turmas
 
@@ -202,6 +203,6 @@ O perfil será criado e apresentado no painel Lista de perfis.
 
 A atribuição fica concluída e o Intune implementa o perfil de Sala de Aula aos dispositivos visados com base na atribuição de sala de aula.
 
-## <a name="next-steps"></a>Próximos Passos
+## <a name="next-steps"></a>Passos Seguintes
 
 Agora, os estudantes podem partilhar dispositivos entre si e selecionar qualquer iPad numa sala de aula, iniciar sessão com um PIN e personalizá-lo com os seus conteúdos. Para obter mais informações sobre iPads Partilhados, veja o [site da Apple](https://www.apple.com/education/it/).

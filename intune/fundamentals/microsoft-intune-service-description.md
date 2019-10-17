@@ -8,20 +8,20 @@ manager: dougeby
 ms.date: 05/30/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
-ms.technology: ''
 ms.assetid: 40fa5a2e-6c0f-4150-9740-d5ddc0cdbda0
 ms.reviewer: cacamp
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 57d715726d1856cdc69fa68c2552621f3282ca9f
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: b5d65882c3811b05f7f8f137f76dc919e18f0da5
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71732332"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72505318"
 ---
 # <a name="microsoft-intune-service-description"></a>Descrição do serviço Microsoft Intune
 
@@ -29,7 +29,7 @@ O Intune é um serviço de gestão de mobilidade empresarial (EMM) baseado na cl
 * Gerir os dispositivos móveis que a sua força de trabalho utiliza para aceder aos dados da empresa.
 * Gerir as aplicações cliente que a sua força de trabalho utiliza.
 * Proteger as informações da sua empresa ao ajudar a controlar a forma como a sua força de trabalho acede às mesmas e as partilha.
-* Garantir que os dispositivos e as aplicações são compatíveis com os requisitos de segurança da empresa.
+* Garantir que os dispositivos e as aplicações estão em conformidade com os requisitos de segurança da empresa.
 
 O Intune está estreitamente integrado no Azure Active Directory (Azure AD) para controlo de identidade e de acesso e no Azure Information Protection para proteção de dados. Também pode integrá-lo no System Center Configuration Manager para expandir as funcionalidades de gestão.
 
@@ -102,7 +102,7 @@ You can set up Intune in several ways to manage and help protect your company's 
 - **Intune with System Center Configuration Manager.** Use the Configuration Manager management console to manage computers and mobile devices in your enterprise. This configuration can help you to manage all your organization’s devices through a single console, the Configuration Manager Admin Console. Configuration Manager supports large numbers of mobile devices, servers, and computers. For more about Configuration Manager, see [Hybrid mobile device management (MDM) with System Center Configuration Manager and Microsoft Intune](/sccm/mdm/understand/hybrid-mobile-device-management). For more help deciding which approach is right for you, see [Choose between Microsoft Intune standalone and hybrid mobile device management with Configuration Manager](/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management).--->
 
 ## <a name="language-support"></a>Suporte de idiomas
-O Intune é executado no portal do Azure, que dá suporte a estes idiomas: Chinês (simplificado), chinês (tradicional), tcheco, holandês, inglês, alemão, húngaro, italiano, japonês, Português (Brasil), Português (Portugal), russo, espanhol, inglês, francês, coreano, polonês, Sueco, Turco.
+O Intune é executado no portal do Azure que suporta os seguintes idiomas: alemão, checo, chinês (simplificado), chinês (tradicional), coreano, espanhol, francês, húngaro, inglês, italiano, japonês, neerlandês, polaco, português (Brasil), português (Portugal), russo, sueco e turco.
 
 A Consola de Administração do Intune e as experiências em dispositivos móveis destinadas ao utilizador suportam dinamarquês, grego, finlandês, norueguês e romeno, para além de todos os idiomas suportados pelo portal do Azure.
 

@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 07/24/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f9015e3a-c22c-42eb-90e6-ba48dee3a41d
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2ada0f7fc7ed21750adf20a63d229f9a188cf34f
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 01c3bfe853d87f42a6171999f6b358fb73844fb1
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71731372"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72499475"
 ---
 # <a name="how-to-create-exceptions-to-the-intune-mobile-application-management-mam-data-transfer-policy"></a>Como criar exceções para a política de transferência de dados da Gestão de Aplicações Móveis (MAM) do Intune
 
@@ -52,20 +53,20 @@ Para uma política destinada a dispositivos Android, pode configurar as exceçõ
 ### <a name="example"></a>Exemplo
 Adicionar o pacote **WebEx** como uma exceção à politica de transferência de dados da MAM permite que as ligações WebEx numa mensagem de e-mail do Outlook gerido sejam abertas diretamente na aplicação WebEx. A transferência de dados é restrita noutras aplicações não geridas.
 
-- exemplo de **WebEx** do IOS:   Para isentar o aplicativo **WebEx** para que ele possa ser invocado por aplicativos gerenciados pelo Intune, você deve adicionar uma exceção de transferência de dados para a seguinte cadeia de caracteres: <code>wbx</code>
+- exemplo de **WebEx** do IOS: para isentar o aplicativo **WebEx** para que ele possa ser invocado por aplicativos gerenciados pelo Intune, você deve adicionar uma exceção de transferência de dados para a seguinte cadeia de caracteres: <code>wbx</code>
     
-- exemplo de **mapas** do IOS:   Para isentar o aplicativo nativo **Maps** para que ele possa ser invocado por aplicativos gerenciados pelo Intune, você deve adicionar uma exceção de transferência de dados para a seguinte cadeia de caracteres: <code>maps</code>
+- exemplo de **mapas** do IOS: para isentar o aplicativo do **Maps** nativo para que ele possa ser invocado por aplicativos gerenciados pelo Intune, você deve adicionar uma exceção de transferência de dados para a seguinte cadeia de caracteres: <code>maps</code>
 
-- Exemplo de **WebEx** do Android:   Para isentar o aplicativo **WebEx** para que ele possa ser invocado por aplicativos gerenciados pelo Intune, você deve adicionar uma exceção de transferência de dados para a seguinte cadeia de caracteres: <code>com.cisco.webex.meetings</code>
+- Exemplo de **WebEx** do Android: para isentar o aplicativo **WebEx** para que ele possa ser invocado por aplicativos gerenciados pelo Intune, você deve adicionar uma exceção de transferência de dados para a seguinte cadeia de caracteres: <code>com.cisco.webex.meetings</code>
     
-- Exemplo de **SMS** do Android:   Para isentar o aplicativo **SMS** nativo para que ele possa ser invocado por aplicativos gerenciados pelo Intune em diferentes aplicativos de mensagens e dispositivos Android, você deve adicionar exceções de transferência de dados para as seguintes cadeias de caracteres: 
+- Exemplo de **SMS** do Android: para isentar o aplicativo **SMS** nativo para que ele possa ser invocado por aplicativos gerenciados pelo Intune em diferentes aplicativos de mensagens e dispositivos Android, você deve adicionar exceções de transferência de dados para as seguintes cadeias de caracteres: 
     <code>com.google.android.apps.messaging</code>
     
     <code>com.android.mms</code>
     
     <code>com.samsung.android.messaging</code>
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 - [Criar e implementar políticas de proteção de aplicações](app-protection-policies.md)
 - [Definições de políticas de proteção de aplicações iOS – isenções de transferência de dados](app-protection-policy-settings-ios.md#data-transfer-exemptions)

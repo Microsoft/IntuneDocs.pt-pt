@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 02/22/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: remote-actions
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 9ca3b0ba-e41c-45fb-af28-119dff47c59f
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0974c783bf749b3b7448cd8560ff30c32bd1cc60
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 7a813d3bb574ae940b0003ac451b6e76638a0dd0
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71732528"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508658"
 ---
 # <a name="bypass-activation-lock-on-supervised-ios-devices-with-intune"></a>Ignorar o Bloqueio de Ativação em dispositivos iOS Supervisionados com o Intune
 
@@ -86,6 +87,6 @@ A ação remota de dispositivos **Ignorar Bloqueio de Ativação** do Intune rem
 8. Depois de repor o dispositivo, é-lhe pedido o *ID Apple* e a *Palavra-passe*. Deixe o campo *ID* em branco e, em seguida, introduza o **código para ignorar** no campo *palavra-passe*. Esta ação remove a conta do dispositivo. 
 
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Pode determinar o estado do pedido de desbloqueio na página de detalhes do dispositivo na carga de trabalho **Gerir dispositivos**.

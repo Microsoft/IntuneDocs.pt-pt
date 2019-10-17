@@ -9,6 +9,7 @@ ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 35a34ef8-efbb-4edf-88eb-a03c1b27a026
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 48b20381355c15c4f5df065382923789b94e8061
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 7674366cc0332afd8eba2a4f145f47e40d5472e2
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61491240"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508448"
 ---
 # <a name="rename-your-device-from-the-company-portal-website"></a>Mudar o nome do dispositivo a partir do site do Portal da Empresa
 
@@ -35,7 +36,7 @@ Mudar o nome de um dispositivo gerido inscrito a partir do site do Portal da Emp
 
     ![Uma captura de ecrã da página Dispositivos, com dois mosaicos que mostram dispositivos não identificados com um nome genérico. Uma faixa cinzenta está diretamente abaixo dos dispositivos e pede ao utilizador que identifique o dispositivo que está a utilizar ou adicione um novo.](./media/rename-reset-device-step2-1808.png)   
 
-3. Selecione **Mudar o nome**. Se a opção de mudança do nome não estiver visível na parte superior da sua página, selecione **Mais (…)** > **Mudar o Nome**.   
+3. Selecione **Mudar o nome**. Se a opção de mudança do nome não estiver visível na parte superior da sua página, selecione **Mais (…)**  > **Mudar o Nome**.   
 
    ![A página de detalhes do dispositivo para um dispositivo selecionado no site do Portal da Empresa, com uma lista de ligações na parte superior que apresenta Mudar o Nome, Remover, Repor Dispositivo, Repor Código de Acesso e Bloqueio Remoto. ](./media/rename-reset-device-1808.png)   
 

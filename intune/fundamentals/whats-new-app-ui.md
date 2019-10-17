@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 09/09/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a1257d3bc6ab4c391faa0778e32e041d475ed7fc
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 7517a2b60c4b5a893b90b09be72ddb363f23552a
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71731580"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72509975"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Atualização da IU para aplicações de utilizadores finais do Intune
 
@@ -60,7 +61,7 @@ A página novos **aplicativos instalados** do portal da empresa site lista todos
 ![Captura de tela do site Portal da Empresa, página aplicativos instalados.](./media/whats-new-app-ui/intune-installed-apps-1907.png)     
 
 ### <a name="new-view-lets-app-users-see-all-managed-apps-installed-on-device----2352913---"></a>Nova exibição permite que os usuários do aplicativo vejam todos os aplicativos gerenciados instalados no dispositivo <!-- 2352913 -->
-O aplicativo Portal da Empresa para Windows agora lista todos os aplicativos gerenciados (necessários e disponíveis) que estão instalados no dispositivo de um usuário. Os usuários também podem ver tentativas e instalações de Aplicativos pendentes e seus status atuais. Se você não tiver feito aplicativos necessários ou disponíveis para seus usuários, eles verão uma mensagem explicando que nenhum aplicativo da empresa foi instalado. Para ver o novo modo de exibição, acesse o painel de navegação portal da empresa **e selecione** > aplicativos**instalados aplicativos**.   
+O aplicativo Portal da Empresa para Windows agora lista todos os aplicativos gerenciados (necessários e disponíveis) que estão instalados no dispositivo de um usuário. Os usuários também podem ver tentativas e instalações de Aplicativos pendentes e seus status atuais. Se você não tiver feito aplicativos necessários ou disponíveis para seus usuários, eles verão uma mensagem explicando que nenhum aplicativo da empresa foi instalado. Para ver a nova exibição, vá para o painel de navegação Portal da Empresa e selecione **aplicativos** > **aplicativos instalados**.   
 
 ![Captura de tela de exemplo do aplicativo Portal da Empresa para o Windows 10, página aplicativos instalados. ](./media/whats-new-app-ui/installed-apps-cp-1906.png)  
 
@@ -143,7 +144,7 @@ Verá algumas das atualizações que se seguem:
 - Desempenho melhorado para grandes catálogos de aplicações
 - Acessibilidade melhorada para todos os utilizadores  
 
-|Atualizada|Anterior|
+|Atualizações|Anterior|
 |---|---|
 |![A página do dispositivo atualizada mostra o dispositivo corretamente alinhado acima das informações do dispositivo, deixando de aparecer acima da lista completa.](./media/whats-new-app-ui/iwp-device-after-1803.png)|![A versão anterior da página do dispositivo.](./media/whats-new-app-ui/iwp-device-before-1803.png)|
 |![A página de instalação da aplicação atualizada mostra a aplicação por cima de uma descrição e várias informações sobre a instalação, incluindo a data de publicação, a versão e o tipo de aplicação.](./media/whats-new-app-ui/iwp-app-install-after-1803.png)|![A versão anterior da página de instalação da aplicação.](./media/whats-new-app-ui/iwp-app-install-before-1803.png)|  
@@ -212,8 +213,8 @@ Atualizámos a aplicação Portal da Empresa para Android para seguir as diretri
 |![01](./media/whats-new-app-ui/android_about_before_1803.png)|![01](./media/whats-new-app-ui/androidCP_about_after_1803.png)|
 |![02](./media/whats-new-app-ui/android_contact_it_before_1803.png)|![02](./media/whats-new-app-ui/android_contact_it_after_1803.png)|
 |![03](./media/whats-new-app-ui/android_devices_before_1803.png)|![03](./media/whats-new-app-ui/androidCP_devicelist_after_1803.png)|
-|![04](./media/whats-new-app-ui/android_device_details_before_1803.png)|![05](./media/whats-new-app-ui/androidCP_devicedetails_1_after1803.png)|
-|![05](./media/whats-new-app-ui/android_device_details_update_settings_before_1803.png)|![05](./media/whats-new-app-ui/androidCP_devicedetails_red_box_2_after1803.png)|
+|![04](./media/whats-new-app-ui/android_device_details_before_1803.png)|![2005](./media/whats-new-app-ui/androidCP_devicedetails_1_after1803.png)|
+|![2005](./media/whats-new-app-ui/android_device_details_update_settings_before_1803.png)|![2005](./media/whats-new-app-ui/androidCP_devicedetails_red_box_2_after1803.png)|
 |![06](./media/whats-new-app-ui/android_profile_before_1803.png)|![06](./media/whats-new-app-ui/android_profile_after_1803.png)|
 |![07](./media/whats-new-app-ui/androidCP_Setup01_before_1803.png)|![07](./media/whats-new-app-ui/androidCP_Setup01_after_1803.png)|
 
@@ -233,7 +234,7 @@ Se ativou o [mapeamento do grupo de dispositivos](../enrollment/device-group-map
 Melhorámos o fluxo de trabalho da configuração de dispositivos na aplicação Portal da Empresa para iOS. O tipo de linguagem é mais simples. Além disso, combinámos os ecrãs sempre que possível. Também tornámos o tipo de linguagem mais específico para a sua empresa ao utilizar o nome da mesma em todo o texto de configuração.
 
 > [!NOTE]
-> Utilizamos o nome da empresa definido no Portal do Azure em **Microsoft Intune** > **Aplicações do Cliente** > **Imagem corporativa do Portal da Empresa** > **Nome da empresa**. Se não tiver definido este valor, utilizaremos o nome do inquilino definido em **Azure Active Directory** > **Propriedades** > **Nome**. Se não tiver definido um nome de empresa na imagem corporativa do Portal da Empresa e não pretender que o nome do inquilino seja apresentado, recomendamos que defina o nome da empresa no separador Imagem corporativa do Portal da Empresa. Se não pretender que esta cadeia seja apresentada no cabeçalho do Portal da Empresa, poderá desmarcar a caixa de verificação “Mostrar o nome da empresa ao lado do logótipo”.
+> Utilizamos o nome da empresa definido no Portal do Azure em **Microsoft Intune** > **Aplicações do Cliente** > **Imagem corporativa do Portal da Empresa** > **Nome da empresa**. Se não tiver definido este valor, utilizaremos o nome do inquilino definido em **Azure Active Directory** > **Propriedades** > **Nome**. Se você não tiver definido um nome de empresa na identidade visual Portal da Empresa e não quiser que o nome do locatário seja exibido, recomendamos que você defina o nome da empresa na guia de identidade visual do Portal da Empresa. Se não quiser que essa cadeia de caracteres seja mostrada no cabeçalho em Portal da Empresa, você poderá desmarcar a caixa de seleção "Mostrar nome da empresa ao lado do logotipo".
 
 |Antes|Depois|
 |---|---|
@@ -241,7 +242,7 @@ Melhorámos o fluxo de trabalho da configuração de dispositivos na aplicação
 |![02](./media/whats-new-app-ui/ios_cp_enroll_02_before_1711.png)|*Combinado com o passo anterior*|
 |![03](./media/whats-new-app-ui/ios_cp_enroll_03_before_1711.png)|![03](./media/whats-new-app-ui/ios_cp_enroll_03_after_1711.png)|
 |![04](./media/whats-new-app-ui/ios_cp_enroll_04_before_1711.png)|![04](./media/whats-new-app-ui/ios_cp_enroll_04_after_1711.png)|
-|![05](./media/whats-new-app-ui/ios_cp_enroll_05_before_1711.png)|![05](./media/whats-new-app-ui/ios_cp_enroll_05_after_1711.png)|
+|![2005](./media/whats-new-app-ui/ios_cp_enroll_05_before_1711.png)|![2005](./media/whats-new-app-ui/ios_cp_enroll_05_after_1711.png)|
 |![06](./media/whats-new-app-ui/ios_cp_enroll_06_before_1711.png)|![06](./media/whats-new-app-ui/ios_cp_enroll_06_after_1711.png)|
 |![07](./media/whats-new-app-ui/ios_cp_enroll_07_before_1711.png)|![07](./media/whats-new-app-ui/ios_cp_enroll_07_after_1711.png)|
 
@@ -292,7 +293,7 @@ Foram melhorados os passos adicionais em dispositivos com perfil de trabalho do 
 |Antes|Depois|
 |---|---|
 |![04](./media/whats-new-app-ui/android_work_cp_enroll_01_before_1710.png)|![04](./media/whats-new-app-ui/android_work_cp_enroll_01_after_1710.png)|
-|![05](./media/whats-new-app-ui/android_work_cp_enroll_02_before_1710.png)| *Combinado com o passo anterior* |
+|![2005](./media/whats-new-app-ui/android_work_cp_enroll_02_before_1710.png)| *Combinado com o passo anterior* |
 |![06](./media/whats-new-app-ui/android_work_cp_enroll_03_before_1710.png)|![06](./media/whats-new-app-ui/android_work_cp_enroll_03_after_1710.png)|
 |![07](./media/whats-new-app-ui/android_work_cp_enroll_04_before_1710.png)|![07](./media/whats-new-app-ui/android_work_cp_enroll_04_after_1710.png)|
 |![08](./media/whats-new-app-ui/android_work_cp_enroll_05_before_1710.png)| *Combinado com o passo anterior* |
@@ -316,7 +317,7 @@ O texto do processo de inscrição da aplicação Portal da Empresa para Android
 |![02](./media/whats-new-app-ui/android_cp_enroll_02_before_1709.png)|![02](./media/whats-new-app-ui/android_cp_enroll_02_post_1709.png)|
 |![03](./media/whats-new-app-ui/android_cp_enroll_03_before_1709.png)|![03](./media/whats-new-app-ui/android_cp_enroll_03_post_1709.png)|
 |![04](./media/whats-new-app-ui/android_cp_enroll_04_before_1709.png)|![04](./media/whats-new-app-ui/android_cp_enroll_04_post_1709.png)|
-|![05](./media/whats-new-app-ui/android_cp_enroll_05_before_1709.png)|![05](./media/whats-new-app-ui/android_cp_enroll_05_post_1709.png)|
+|![2005](./media/whats-new-app-ui/android_cp_enroll_05_before_1709.png)|![2005](./media/whats-new-app-ui/android_cp_enroll_05_post_1709.png)|
 
 
 ## <a name="august-2017"></a>Agosto de 2017
@@ -538,11 +539,11 @@ A partir de março, a aplicação Portal da Empresa para Android seguirá as [di
 
 ![À esquerda, uma imagem da aplicação Portal da Empresa para Android antes da atualização. À direita, uma imagem da aplicação Portal da Empresa para Android depois da atualização. Ambas as imagens mostram o separador Dispositivos como o separador selecionado dos três separadores disponíveis (Aplicações, Dispositivos e Contactar TI).](./media/whats-new-app-ui/CP_Android_DevicesTab_BeforeAfter.png)
 
-* __Interface__: Os botões __aplicativos em destaque__ e __todos os aplicativos__ foram atualizados na guia __aplicativos__ . O botão __Procurar__ é agora um botão de ação flutuante.
+* __Interface__: os botões __aplicativos em destaque__ e __todos os aplicativos__ foram atualizados na guia __aplicativos__ . O botão de __pesquisa__ agora é um botão de ação flutuante.
 
 ![À esquerda, uma imagem da aplicação Portal da Empresa para Android antes da atualização. À direita, uma imagem da aplicação Portal da Empresa para Android depois da atualização. Ambas as imagens mostram o separador Aplicações como o separador selecionado dos três separadores disponíveis (Aplicações, Dispositivos e Contactar TI).](./media/whats-new-app-ui/CP_Android_AppsTab_BeforeAfter.png)
 
-* __Navegação__: Todos os aplicativos mostra uma exibição com guias de __todas as__ __categorias__ , em __destaque__, para facilitar a navegação. O separador __Contactar TI__ foi simplificado para facilitar a leitura.
+* __Navegação__: a secção Todas as Aplicações mostra uma vista com os separadores __Em destaque__, __Todas__ e __Categorias__ para uma navegação mais fácil. O separador __Contactar TI__ foi simplificado para facilitar a leitura.
 
 <html>
 <body>

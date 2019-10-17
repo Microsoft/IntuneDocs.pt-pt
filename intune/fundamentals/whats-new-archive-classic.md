@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 06/08/2017
 ms.topic: archived
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ed2db991-4729-49a7-a1e6-be2ffa0d03d1
@@ -16,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3507e863904d914fbc7791e5a89510dd806a67f4
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 8c3f96b6a548536459162e81d0ea34d102ef8d1c
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71731588"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72509743"
 ---
 # <a name="whats-new-in-the-intune-classic-portal---previous-months"></a>Novidades no portal clássico do Intune – meses anteriores
 
-[!INCLUDE [classic-portal](../../intune-classic/includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Esta página apresenta as novas funcionalidades e avisos anunciados anteriormente na [página Novidades](whats-new.md) do portal clássico do Intune.
 
@@ -59,7 +60,7 @@ Serão apresentadas novas mensagens mais específicas na aplicação Portal da E
 
 #### <a name="improved-app-install-status-for-the-windows-10-company-portal-app---676495--"></a>Status de instalação de aplicativo aprimorado para o aplicativo Portal da Empresa do Windows 10 <!--676495-->
 
-Novas melhorias para a instalação da aplicação a utilizar na aplicação Portal da empresa do Windows 10 incluem:
+As novas melhorias para a instalação do aplicativo iniciadas no aplicativo Portal da Empresa do Windows 10 incluem:
 - Relatórios mais rápidos do progresso da instalação para pacotes MSI
 - Relatórios mais rápidos do progresso da instalação para aplicações modernas em dispositivos com a Atualização de Aniversário do Windows 10 e versões superiores
 - Nova barra de progresso para as instalações de aplicações modernas em dispositivos com a Atualização de Aniversário do Windows 10 e versões superiores
@@ -68,7 +69,7 @@ Pode ver a nova barra de progresso na [página Novidades na IU da aplicação In
 
 #### <a name="bulk-enroll-windows-10-devices----747607---"></a>Inscrever dispositivos Windows 10 em massa <!-- 747607 -->
 
-Agora, pode juntar-se a um grande número de dispositivos que executam a atualização para Criativos do Windows 10 para o Azure Active Directory e o Intune com o Windows Configuration Designer (WCD). Para ativar a [inscrição na MDM em massa](../enrollment/windows-bulk-enroll.md) para o seu inquilino do Azure AD, crie um pacote de aprovisionamento que associe dispositivos ao seu inquilino do Azure AD através do Windows Configuration Designer e aplique o pacote aos dispositivos pertencentes à empresa que pretende inscrever e gerir em massa. Assim que o pacote for aplicado aos dispositivos, estes são associados ao Azure AD, inscritos no Intune e estarão prontos para os seus utilizadores do Azure AD iniciarem sessão.  Os utilizadores do Azure AD são utilizadores padrão nestes dispositivos e obtêm as políticas atribuídas e as aplicações necessárias. De momento, os cenários self-service e Portal da Empresa não são suportados.
+Agora, pode juntar-se a um grande número de dispositivos que executam a atualização para Criativos do Windows 10 para o Azure Active Directory e o Intune com o Windows Configuration Designer (WCD). Para ativar a [inscrição na MDM em massa](../enrollment/windows-bulk-enroll.md) para o seu inquilino do Azure AD, crie um pacote de aprovisionamento que associe dispositivos ao seu inquilino do Azure AD através do Windows Configuration Designer e aplique o pacote aos dispositivos pertencentes à empresa que pretende inscrever e gerir em massa. Assim que o pacote for aplicado aos dispositivos, estes são associados ao Azure AD, inscritos no Intune e estarão prontos para os seus utilizadores do Azure AD iniciarem sessão.  Os utilizadores do Azure AD são utilizadores padrão nestes dispositivos e obtêm as políticas atribuídas e as aplicações necessárias. De momento, os cenários Self-service e Portal da Empresa não são suportados.
 
 ### <a name="whats-new-in-the-public-preview-of-intune-in-the-azure-portal--736542--"></a>O que há de novo na visualização pública do Intune no portal do Azure<!--736542-->
 
@@ -114,7 +115,7 @@ Anunciamos uma alteração que ficará disponível nos próximos meses e irá me
 
 Pode encontrar capturas de ecrã da experiência de início de sessão anterior, a nova experiência de início de sessão com credenciais e a experiência de início de sessão a partir de outro dispositivo na página [Novidades na IU da aplicação](whats-new-app-ui.md).
 
-#### <a name="plan-for-change-intune-is-changing-the-intune-partner-portal-experience----1050016---"></a>Planejar alteração: O Intune está mudando a experiência do portal de parceiros do Intune <!-- 1050016 -->
+#### <a name="plan-for-change-intune-is-changing-the-intune-partner-portal-experience----1050016---"></a>Plano para alteração: o Intune está alterando a experiência do portal de parceiros do Intune <!-- 1050016 -->
 
 A partir da atualização de serviço que se realizará em meados de maio de 2017, iremos remover a página Parceiro do Intune de manage.microsoft.com.  
 
@@ -142,17 +143,17 @@ Agora você pode controlar o acesso de dispositivos móveis a recursos corporati
 - Defesa da aplicação
 - Defesa contra vulnerabilidades
 
-Você pode configurar políticas de acesso condicional do EMS com base na avaliação de risco do Symantec Endpoint Protection Mobile (Skycure) habilitada por meio das políticas de conformidade do dispositivo do Intune. Pode utilizar estas políticas para permitir ou bloquear o acesso de dispositivos não conformes aos recursos empresariais, com base nas ameaças detetadas. Para obter mais informações, consulte [conector do Symantec Endpoint Protection Mobile](../protect/skycure-mobile-threat-defense-connector.md).
+Você pode configurar políticas de acesso condicional do EMS com base na avaliação de risco do Symantec Endpoint Protection Mobile (Skycure) habilitada por meio das políticas de conformidade do dispositivo do Intune. Pode utilizar estas políticas para permitir ou bloquear o acesso de dispositivos não conformes aos recursos empresariais, com base nas ameaças detetadas. Para obter mais informações, consulte [Symantec Endpoint Protection Mobile Connector](../protect/skycure-mobile-threat-defense-connector.md).
 
 #### <a name="new-user-experience-for-the-company-portal-app-for-android---621622--"></a>Nova experiência do usuário para o aplicativo Portal da Empresa para Android <!--621622-->
 
 A aplicação Portal da Empresa para Android irá atualizar a respetiva interface de utilizador para obter um aspeto mais moderno e a melhor experiência de utilizador. As atualizações relevantes são:
 
-- Cores Portal da Empresa cabeçalhos de guia são coloridos na identidade visual definida pela ti.
-- Os Na guia **aplicativos** , os botões **aplicativos em destaque** e **todos os aplicativos** são atualizados.
-- Procurando Na guia **aplicativos** , o botão **Pesquisar** é um botão de ação flutuante.
-- Navegando por aplicativos: A exibição **todos os aplicativos** mostra uma exibição com guias de **destaque**, **tudo**e **categorias** para facilitar a navegação.
-- Support As guias **meus dispositivos** e **contatar ti** são atualizadas para melhorar a legibilidade.
+- Cores: os cabeçalhos dos separadores do Portal da Empresa têm as cores da imagem corporativa definida pelas TI.
+- Aplicações: no separador **Aplicações**, os botões **Aplicações em Destaque** e **Todas as Aplicações** são atualizados.
+- Pesquisar: no separador **Aplicações**, o botão **Pesquisar** é um botão de ação flutuante.
+- Navegar em Aplicações: a vista **Todas as Aplicações** mostra uma vista com os separadores **Em Destaque**, **Todas** e **Categorias** para uma navegação mais fácil.
+- Suporte: os separadores **Os Meus Dispositivos** e **Contactar TI** são atualizados para melhorar a legibilidade.
 
 Para obter mais detalhes sobre estas alterações, veja [Atualização da IU para aplicações de utilizadores finais do Intune](whats-new-app-ui.md).
 
@@ -194,7 +195,7 @@ A Microsoft está continuamente a melhorar o Intune ao adicionar novas funções
 
 #### <a name="microsoft-teams-is-now-enabled-for-mam-on-ios-and-android"></a>O Microsoft Teams está agora ativado para a MAM no iOS e no Android
 
-A Microsoft anunciou a disponibilidade geral do Microsoft Teams. As aplicações Microsoft Teams atualizadas para iOS e Android estão agora ativadas com capacidades de gestão de aplicações móveis (MAM) do Intune para permitir que as suas equipas trabalhem livremente em vários dispositivos, garantindo que as conversações e os dados empresariais estão sempre protegidos. Para obter mais detalhes, veja [o anúncio do Microsoft Teams](https://blogs.technet.microsoft.com/enterprisemobility/2017/03/14/microsoft-teams-is-now-generally-available-and-mam-enabled-on-ios-and-android/) no blogue do Enterprise Mobility and Security.
+A Microsoft anunciou a disponibilidade geral do Microsoft Teams. As aplicações Microsoft Teams atualizadas para iOS e Android estão agora ativadas com capacidades de gestão de aplicações móveis (MAM) do Intune para permitir que as suas equipas trabalhem livremente em vários dispositivos, garantindo que as conversas e os dados empresariais estão sempre protegidos. Para obter mais detalhes, veja [o anúncio do Microsoft Teams](https://blogs.technet.microsoft.com/enterprisemobility/2017/03/14/microsoft-teams-is-now-generally-available-and-mam-enabled-on-ios-and-android/) no blogue do Enterprise Mobility and Security.
 
 
 ## <a name="february-2017"></a>Fevereiro de 2017
@@ -229,9 +230,9 @@ Os utilizadores do Windows e do Windows Phone não conseguirão inscrever um dis
 A partir de março, a aplicação Portal da Empresa para Android seguirá as [diretrizes de conceção do material](https://material.io/guidelines/material-design/introduction.html) para criar um aspeto e funcionalidade mais modernos. Esta experiência de utilizador melhorada inclui:
 
 * __Cores__: os cabeçalhos dos separadores podem ser coloridos de acordo com a sua paleta de cores personalizada.
-* __Interface__: Os botões aplicativos em destaque e todos os aplicativos foram atualizados na guia aplicativos. O botão Procurar é agora um botão de ação flutuante.
-* __Navegação__: Todos os aplicativos mostra uma exibição com guias de todas as categorias, em destaque, para facilitar a navegação.
-* __Serviço__: As guias meus dispositivos e contatar ti têm legibilidade aprimorada.
+* __Interface__: os botões aplicativos em destaque e todos os aplicativos foram atualizados na guia aplicativos. O botão de pesquisa agora é um botão de ação flutuante.
+* __Navegação__: a secção Todas as Aplicações mostra uma vista com os separadores Em destaque, Todas e Categorias para uma navegação mais fácil.
+* __Serviço__: os separadores Os Meus Dispositivos e Contactar TI foram melhorados para facilitar a leitura.
 
 Poderá encontrar imagens de antes e depois na [página de atualizações de IU](whats-new-app-ui.md).
 
@@ -253,7 +254,7 @@ Pode encontrar as novidades na pré-visualização do Intune no Azure [aqui](wha
 ### <a name="new-capabilities"></a>Novas Funcionalidades
 
 #### <a name="in-console-reports-for-mam-without-enrollment---677961--"></a>Relatórios no console para MAM sem registro <!--677961-->
-Foram adicionados novos relatórios de proteção de aplicações para dispositivos inscritos e não inscritos. Obter mais informações sobre como pode [monitorizar políticas de gestão de aplicações móveis com o Intune](../apps/app-protection-policies-monitor.md).
+Foram adicionados novos relatórios de proteção de aplicações para dispositivos inscritos e não inscritos. Saiba mais sobre como você pode [monitorar as políticas de gerenciamento de aplicativo móvel com o Intune](../apps/app-protection-policies-monitor.md).
 
 #### <a name="android-711-support---694397--"></a>Suporte a 7.1.1 do Android <!--694397-->
 Agora, o Intune suporta e gere totalmente o Android 7.1.1.
@@ -322,8 +323,8 @@ O Intune marca todos os novos dispositivos como pessoais, a menos que o administ
 __Autenticação multifator no registro migrando para o portal do Azure__ <!--VSO 750545-->
 Anteriormente, os administradores utilizariam a consola do Intune ou a consola do Gestor de Configuração (anterior à versão de outubro 2016) para configurar a MFA para inscrições no Intune. Com esta funcionalidade atualizada, irá agora iniciar a sessão no [portal do Microsoft Azure](https://manage.windowsazure.com) com as suas credenciais do Intune e configurar as definições da MFA através do Azure AD. Saiba mais sobre o assunto [aqui](https://aka.ms/mfa_ad).
 
-__Portal da Empresa aplicativo para Android agora disponível na China__ <!--VSO 658093-->
-Estamos a disponibilizar a aplicação Portal da Empresa para Android para transferência na China. Devido à ausência da Google Play Store na China, os dispositivos Android têm de obter aplicações a partir de mercados de aplicações chineses. A aplicação do Portal da Empresa para Android estará disponível para transferência através das seguintes lojas:
+__Portal da empresa aplicativo para Android agora disponível na China__ <!--VSO 658093-->
+Estamos a disponibilizar a aplicação Portal da Empresa para Android para transferência na China. Devido à ausência de Google Play Store na China, os dispositivos Android devem obter aplicativos de Marketplaces de aplicativos chineses. A aplicação Portal da Empresa para Android estará disponível para transferência através das seguintes lojas:
 * [Baidu](https://go.microsoft.com/fwlink/?linkid=836946)
 * [Huawei](https://go.microsoft.com/fwlink/?linkid=836948)
 * [Tencent](https://go.microsoft.com/fwlink/?linkid=836949)

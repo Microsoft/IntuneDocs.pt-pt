@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 10/07/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 35f52e80f83426c076ac7925d308daacf4595f88
-ms.sourcegitcommit: b1e97211db7cb949eb39be6776b3a11d434fdab0
+ms.openlocfilehash: 5b80b0dbd8128606db9220178baf0d05af1a3800
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "72251500"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72498793"
 ---
 # <a name="configure-google-chrome-for-android-devices-using-intune"></a>Configurar o Google Chrome para dispositivos Android usando o Intune 
 
@@ -73,7 +74,7 @@ Para obter detalhes adicionais sobre como adicionar um aplicativo Google Play ge
     As configurações acima criam indicadores e permitem o acesso a todos os sites, exceto `baidu.com`, `yahoo.com` e `chrome://`.
 
 5. Clique em **OK** e **adicione** para adicionar sua política de configuração ao Intune.
-6. Atribua essa política de configuração a um grupo de usuários. Para obter mais informações, consulte [atribuir aplicativos a grupos com Microsoft Intune](~/apps/apps-deploy.md). 
+6. Atribua essa política de configuração a um grupo de usuários. Para obter mais informações, veja [Atribuir aplicações a grupos com o Microsoft Intune](~/apps/apps-deploy.md). 
 
 ## <a name="verify-the-device-settings"></a>Verificar as configurações do dispositivo
 
@@ -95,7 +96,7 @@ Inicie o Google Chrome e você encontrará as configurações aplicadas.
    Guia Incognito:<br>
    <img alt="Incognito tab" src="~/apps/media/apps-configure-chrome-android/incognito-tab.png" width="350">
 
-## <a name="troubleshooting"></a>Resolução de problemas
+## <a name="troubleshooting"></a>Resolução de Problemas
 
 1. Verifique o portal do Intune para monitorar o status de implantação da política.
 
@@ -105,11 +106,11 @@ Inicie o Google Chrome e você encontrará as configurações aplicadas.
 
     ![Confirmar que as configurações foram aplicadas com êxito](~/apps/media/apps-configure-chrome-android/confirm.png)
 
-## <a name="additional-information"></a>Informação adicional
+## <a name="additional-information"></a>Informações adicionais
 
 - [Adicionar políticas de configuração de aplicativo para dispositivos Android Enterprise gerenciados](~/app-configuration-policies-use-android.md)
 - [Lista de políticas do Chrome Enterprise](https://cloud.google.com/docs/chrome-enterprise/policies/)
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 - Para obter mais informações sobre dispositivos Android Enterprise totalmente gerenciados, consulte [Configurar o registro do Intune do Android Enterprise gerenciar totalmente os dispositivos](~/enrollment/android-fully-managed-enroll.md).

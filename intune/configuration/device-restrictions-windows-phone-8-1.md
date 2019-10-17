@@ -9,18 +9,19 @@ manager: dougeby
 ms.date: 3/6/2018
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eb5ffa2fe17c3272cb98c670fa42e69f189e7004
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: bc29a7a5026691371370b167a4445bfd70cc76bd
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71730708"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72489800"
 ---
 # <a name="microsoft-intune-windows-phone-81-device-restriction-settings"></a>Definições de restrição de dispositivos Windows Phone 8.1 no Microsoft Intune
 
@@ -48,7 +49,7 @@ Este artigo mostra-lhe as definições de restrição de dispositivos do Microso
   - **Palavras-passe simples** – Especifica que se pode utilizar palavras-passe simples, como “0000” e “1234”.
   - **Número de falhas de início de sessão antes de eliminar os dados do dispositivo** – Especifica o número de vezes que uma palavra-passe incorreta pode ser introduzida antes de os dados do dispositivo serem eliminados.
   - **Máximo de minutos de inatividade até o ecrã bloquear** – Especifica a quantidade de tempo durante o qual um dispositivo tem de permanecer inativo até o ecrã ser automaticamente bloqueado.
-  - **Expiração de palavra-passe (dias)** – Especifica o número de dias antes de ser preciso alterar a palavra-passe do dispositivo.
+  - **Expiração de palavra-passe (dias)** – especifica o número de dias antes de ser preciso alterar a palavra-passe do dispositivo.
   - **Impedir a reutilização de palavras-passe anteriores** – Especifica quantas palavras-passe utilizadas anteriormente podem ser memorizadas.
 - **Encriptação** – Requer que os dados nos dispositivos móveis suportados sejam encriptados.
 
@@ -73,7 +74,7 @@ Na página [Loja Windows Phone](https://www.microsoft.com/store/apps/windows-pho
 
 Abra a página da aplicação e copie o URL para a área de transferência. Agora, pode utilizar este URL na lista de aplicações permitidas ou bloqueadas.
 
-Exemplo: Pesquise o aplicativo Skype na loja. O URL que deve utilizar é `http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51`.
+Exemplo: procure a aplicação Skype na loja. O URL que deve utilizar é `http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51`.
 
 
 

@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: c123de600d91f2ba44f9ae728d7f21c8adebed25
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 4d53179ed43697769ec7142ace6b62c08a67f31a
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71732380"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502346"
 ---
 # <a name="monitor-device-encryption-with-intune"></a>Monitorar a criptografia de dispositivo com o Intune   
 
@@ -46,9 +47,9 @@ O painel relatório de criptografia exibe uma lista dos dispositivos que você g
 - **Nome do dispositivo** -o nome do dispositivo.  
 - **Sistema operacional** – a plataforma do dispositivo, como Windows ou MacOS.  
 - **Versão do sistema operacional** – a versão do Windows ou MacOS no dispositivo.  
-- **Versão do TPM** *(Aplica-se somente ao Windows 10)* – a versão do chip do Trusted Platform Module (TPM) no dispositivo Windows 10.  
+- **Versão do TPM** *(aplica-se somente ao Windows 10)* – a versão do chip Trusted Platform Module (TPM) no dispositivo Windows 10.  
 - **Prontidão de criptografia** – uma avaliação da preparação dos dispositivos para dar suporte a uma tecnologia de criptografia aplicável, como o BitLocker ou a criptografia FileVault. Os dispositivos são identificados como:  
-  - **Pronto**: O dispositivo pode ser criptografado usando a política de MDM, que exige que o dispositivo atenda aos seguintes requisitos:  
+  - **Pronto**: o dispositivo pode ser criptografado usando a política de MDM, que exige que o dispositivo atenda aos seguintes requisitos:  
     
     **Para dispositivos MacOS**:  
     - MacOS versão 10,13 ou posterior  
@@ -59,8 +60,8 @@ O painel relatório de criptografia exibe uma lista dos dispositivos que você g
     
     Para obter mais informações, consulte o [provedor de serviços de configuração do BitLocker (CSP)](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) na documentação do Windows.  
 
-  - **Não está pronto**: O dispositivo não tem recursos de criptografia completos, mas ainda oferece suporte à criptografia. Por exemplo, um dispositivo Windows pode ser criptografado manualmente por um usuário ou por meio de Política de Grupo que pode ser definido para permitir a criptografia sem um TPM.
-  - **Não aplicável**: Não há informações suficientes para classificar este dispositivo.  
+  - **Não está pronto**: o dispositivo não tem recursos de criptografia completos, mas ainda oferece suporte à criptografia. Por exemplo, um dispositivo Windows pode ser criptografado manualmente por um usuário ou por meio de Política de Grupo que pode ser definido para permitir a criptografia sem um TPM.
+  - **Não aplicável**: não há informações suficientes para classificar este dispositivo.  
 
 - **Status de criptografia** – se a unidade do sistema operacional está criptografada.  
 
@@ -74,7 +75,7 @@ Quando você seleciona um dispositivo no relatório de criptografia, o Intune ex
 
 - **Prontidão para criptografia** -uma avaliação da preparação dos dispositivos para dar suporte à criptografia por meio da política de MDM.  
   
-  Por exemplo: Quando um dispositivo Windows 10 tem uma prontidão de *não estar pronto*, ele ainda pode dar suporte à criptografia. Para ter a designação *pronta* , o dispositivo Windows 10 deve ter um chip TPM. Os chips do TPM não são necessários para dar suporte à criptografia. (Para obter mais informações, consulte *prontidão de criptografia* na seção anterior.)  
+  Por exemplo: quando um dispositivo Windows 10 tem uma prontidão de *não estar pronto*, ele ainda pode dar suporte à criptografia. Para ter a designação *pronta* , o dispositivo Windows 10 deve ter um chip TPM. Os chips do TPM não são necessários para dar suporte à criptografia. (Para obter mais informações, consulte *prontidão de criptografia* na seção anterior.)  
 
 - **Status de criptografia** – se a unidade do sistema operacional está criptografada. Pode levar até 24 horas para que o Intune relate o status de criptografia de um dispositivo ou uma alteração nesse status. Esse tempo inclui o tempo para o sistema operacional criptografar, mais o tempo para o dispositivo relatar de volta para o Intune.  
 
@@ -82,7 +83,7 @@ Quando você seleciona um dispositivo no relatório de criptografia, o Intune ex
 
 - **Perfis** – uma lista dos perfis de *configuração do dispositivo* que se aplicam a este dispositivo e são configurados com os seguintes valores:  
 
-  - macOS:
+  - MacOS
     - Tipo de perfil = *Endpoint Protection*  
     - Configurações > FileVault > FileVault = *habilitar*
 
@@ -94,7 +95,7 @@ Quando você seleciona um dispositivo no relatório de criptografia, o Intune ex
 
 - **Resumo do estado do perfil** – um resumo dos perfis que se aplicam a este dispositivo. O resumo representa a condição menos favorável nos perfis aplicáveis. Por exemplo, se apenas um dos vários perfis aplicáveis resultar em um erro, o *Resumo do estado do perfil* exibirá um *erro*.  
   
-  Para exibir mais detalhes de um status, vá para**perfis**de**configuração** > de dispositivo do **Intune** > e selecione o perfil. Opcionalmente, selecione **status do dispositivo** e, em seguida, selecione um dispositivo.  
+  Para exibir mais detalhes de um status, acesse **Intune** > **configuração de dispositivo** > **perfis**e selecione o perfil. Opcionalmente, selecione **status do dispositivo** e, em seguida, selecione um dispositivo.  
 
 - **Detalhes do status** – detalhes avançados sobre o estado de criptografia do dispositivo.  
 
@@ -105,26 +106,26 @@ Quando você seleciona um dispositivo no relatório de criptografia, o Intune ex
 
   Veja a seguir exemplos dos detalhes de status que o Intune pode relatar:  
   
-  **macOS**:
+  **MacOS**:
   - A chave de recuperação ainda não foi recuperada e armazenada. Provavelmente, o dispositivo não foi desbloqueado ou não fez check-in.  
  
-    *Aconselhável Esse resultado não representa necessariamente uma condição de erro, mas um estado temporário que pode ser devido ao tempo no dispositivo em que a caução para chaves de recuperação deve ser configurada antes que a solicitação de criptografia seja enviada para o dispositivo. Esse status também pode indicar que o dispositivo permanece bloqueado ou não fez check-in no Intune recentemente. Por fim, como a criptografia FileVault não é iniciada até que um dispositivo seja conectado (carregando), é possível que um usuário receba uma chave de recuperação para um dispositivo que ainda*não esteja criptografado.  
+    *Considere: esse resultado não representa necessariamente uma condição de erro, mas um estado temporário que pode ser devido ao tempo no dispositivo em que a caução para chaves de recuperação deve ser configurada antes que a solicitação de criptografia seja enviada para o dispositivo. Esse status também pode indicar que o dispositivo permanece bloqueado ou não fez check-in no Intune recentemente. Por fim, como a criptografia FileVault não é iniciada até que um dispositivo seja conectado (carregando), é possível que um usuário receba uma chave de recuperação para um dispositivo que ainda não esteja criptografado*.  
 
   - O usuário está desfazendo a criptografia ou está atualmente no processo de criptografia.  
  
-    *Aconselhável O usuário ainda não fez logoff depois de receber a solicitação de criptografia, o que é necessário antes que o FileVault possa criptografar o dispositivo ou o usuário tenha descriptografado manualmente o dispositivo. O Intune não pode impedir que um usuário descriptografe seu dispositivo.*  
+    *Considere: o usuário ainda não fez logoff depois de receber a solicitação de criptografia, o que é necessário antes que o FileVault possa criptografar o dispositivo ou o usuário tenha descriptografado manualmente o dispositivo. O Intune não pode impedir que um usuário descriptografe seu dispositivo.*  
 
   - O dispositivo já está criptografado. O usuário do dispositivo deve descriptografar o dispositivo para continuar.  
  
-    *Aconselhável O Intune não pode configurar o FileVault em um dispositivo que já está criptografado. Em vez disso, o usuário precisa descriptografar manualmente seu dispositivo antes que ele possa ser gerenciado por uma política*de configuração de dispositivo e o Intune. 
+    *Considere: o Intune não pode configurar o FileVault em um dispositivo que já está criptografado. Em vez disso, o usuário precisa descriptografar manualmente seu dispositivo antes que ele possa ser gerenciado por uma política de configuração de dispositivo e o Intune*. 
  
   - O FileVault precisa que o usuário aprove seu perfil de gerenciamento no MacOS Catalina e superior.  
  
-    *Aconselhável Começando com o MacOS versão 10,15 (Catalina), as configurações de registro aprovadas pelo usuário podem resultar no requisito de que os usuários aprovem manualmente a criptografia FileVault. Para obter mais informações, consulte [registro aprovado pelo usuário](../enrollment/macos-enroll.md) na documentação*do Intune.  
+    *Considere: a partir da versão 10,15 do MacOS, as configurações de registro aprovadas pelo usuário podem resultar no requisito de que os usuários aprovem manualmente a criptografia FileVault. Para obter mais informações, consulte [registro aprovado pelo usuário](../enrollment/macos-enroll.md) na documentação do Intune*.  
 
   - Conhecidos.  
 
-    *Aconselhável Uma possível causa de um status desconhecido é que o dispositivo está bloqueado e o Intune não pode iniciar o processo de caução ou de criptografia. Depois que o dispositivo estiver desbloqueado, o*progresso poderá continuar.  
+    *Considere: uma possível causa de um status desconhecido é que o dispositivo está bloqueado e o Intune não pode iniciar o processo de caução ou de criptografia. Depois que o dispositivo estiver desbloqueado, o progresso poderá continuar*.  
 
   **Windows 10**:  
   - A política do BitLocker requer consentimento do usuário para iniciar o assistente de Criptografia de Unidade de Disco BitLocker para iniciar a criptografia do volume do sistema operacional, mas o usuário não consentiu.  
@@ -179,12 +180,12 @@ O Intune dá suporte a várias opções para girar e recuperar as chaves de recu
 
 ### <a name="rotate-recovery-keys"></a>Girar as chaves de recuperação  
 
-- **Rotação automática**: Como administrador, você pode configurar a rotação de chave de recuperação pessoal de configuração FileVault para gerar automaticamente novas chaves de recuperação periodicamente.  Quando uma nova chave é gerada para um dispositivo, a chave não é exibida para o usuário. Em vez disso, o usuário deve obter a chave de um administrador ou usando o aplicativo do portal da empresa.  
+- **Rotação automática**: como administrador, você pode configurar a FileVault configuração de chave de recuperação pessoal para gerar automaticamente a nova chave de recuperação periodicamente.  Quando uma nova chave é gerada para um dispositivo, a chave não é exibida para o usuário. Em vez disso, o usuário deve obter a chave de um administrador ou usando o aplicativo do portal da empresa.  
 
-- **Rotação manual**: Como administrador, você pode exibir informações para um dispositivo que você gerencia com o Intune e que é criptografado com o FileVault. Você pode optar por girar manualmente a chave de recuperação para dispositivos corporativos. Não é possível girar as chaves de recuperação para dispositivos pessoais.  
+- **Rotação manual**: como administrador, você pode exibir informações para um dispositivo que você gerencia com o Intune e que é criptografado com o FileVault. Você pode optar por girar manualmente a chave de recuperação para dispositivos corporativos. Não é possível girar as chaves de recuperação para dispositivos pessoais.  
 
   Para girar uma chave de recuperação: 
-  1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), vá para **dispositivos** e, em seguida, em gerenciar, selecione **todos os dispositivos**.  
+  1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), vá para **dispositivos** and, em gerenciar, selecione **todos os dispositivos**.  
   2. Na lista de dispositivos, selecione o dispositivo que está criptografado e para o qual você deseja girar sua chave. Em monitor, selecione **chaves de recuperação**.  
   3. No painel chaves de recuperação, selecione **girar chave de recuperação FileVault**.  
   
@@ -192,9 +193,9 @@ O Intune dá suporte a várias opções para girar e recuperar as chaves de recu
 
 
 ### <a name="recover-recovery-keys"></a>Recuperar chaves de recuperação  
-- **Administrador**: Os administradores não podem exibir chaves de recuperação pessoal para dispositivos que são criptografados com o FileVault.  
+- **Administrador**: os administradores não podem exibir chaves de recuperação pessoal para dispositivos que são criptografados com o FileVault.  
 
-- **Usuário final**: Os usuários finais usam o site Portal da Empresa de qualquer dispositivo para exibir a chave de recuperação pessoal atual para qualquer um de seus dispositivos gerenciados. Não é possível exibir as chaves de recuperação do aplicativo Portal da Empresa.  
+- **Usuário final**: os usuários finais usam o site Portal da empresa de qualquer dispositivo para exibir a chave de recuperação pessoal atual para qualquer um de seus dispositivos gerenciados. Não é possível exibir as chaves de recuperação do aplicativo Portal da Empresa.  
 
  
   Para exibir uma chave de recuperação:  
@@ -219,6 +220,6 @@ Quando as chaves não estiverem no Azure AD, o Intune não exibirá *nenhuma cha
 
 As informações do BitLocker são obtidas usando o [provedor de serviços de configuração do BitLocker](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) (CSP). O CSP do BitLocker tem suporte no Windows 10 versão 1703 e posterior e para o Windows 10 pro versão 1809 e posterior.  
 
-## <a name="next-steps"></a>Passos seguintes  
+## <a name="next-steps"></a>Próximos passos  
 
 Criar uma política de [conformidade do dispositivo](compliance-policy-create-windows.md) .

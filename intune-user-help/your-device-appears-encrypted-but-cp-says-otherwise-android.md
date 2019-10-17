@@ -9,6 +9,7 @@ ms.date: 08/14/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: ba593c08-1a78-4013-8525-b45a948772ec
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 13f22b66b5a0700eadda28b20e0db6edce507021
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: af1c7d1f9d8236fd95413317acefbe8887d90f47
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71721174"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72507677"
 ---
 # <a name="device-encrypted-but-apps-say-otherwise"></a>Dispositivo criptografado, mas aplicativos dizem de outra forma
 
@@ -59,6 +60,6 @@ Para obter uma lista não completa de dispositivos Android com suporte, consulte
 
 Se você não atualizou seu dispositivo para a versão mais recente do Android, vá para o aplicativo de **configurações** do dispositivo e selecione **Atualizar**.  
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Ainda precisa de ajuda? Contacte o suporte da empresa (verifique as informações de contacto no [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980)) ou escreva para a <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with enrolling my Android device&body=Describe the issue you're experiencing here.">equipa Android da Microsoft</a>.  

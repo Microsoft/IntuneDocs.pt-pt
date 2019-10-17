@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 05/29/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: d17b70f4-17b4-4d89-88fd-70fa4f34fbea
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f3deb023a7e3683658139c2319945c7c3aaeb8ee
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 8ad8d904f72df169eea136c625a2f44d645cafbc
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71731668"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72509769"
 ---
 # <a name="troubleshoot-software-updates-in-microsoft-intune"></a>Resolver problemas de atualizações de software no Microsoft Intune
 
@@ -47,8 +48,8 @@ Esse problema pode ocorrer se atualizações substituídas (atualizações são 
 3. Recusar todas as atualizações substituídas que podem se aplicar ao Windows 7 ou a aplicativos, como Microsoft Office, que foram instalados nos clientes afetados.
 4. Reinicie os clientes afetados.
 
-Se você estiver executando o Windows 7, verifique se a seguinte atualização está instalada: [3050265 Windows Update Client para Windows 7: Junho de 2015 @ no__t-0.
+Se você estiver executando o Windows 7, verifique se a seguinte atualização está instalada:[3050265 Windows Update Client para Windows 7: junho de 2015](https://support.microsoft.com/kb/3050265).
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Obtenha [ajuda de suporte da Microsoft](get-support.md)ou use os [fóruns da Comunidade](https://social.technet.microsoft.com/Forums/en-US/home?category=microsoftintune).

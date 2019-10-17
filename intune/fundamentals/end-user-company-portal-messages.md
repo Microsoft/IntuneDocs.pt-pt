@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 03/09/2017
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 3df993aa-48c5-4799-b68d-c85fe4f7b02c
@@ -16,12 +17,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 686a347273648ce2abac55a0e1990b06c4782d32
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 9a9fb3e006489603a04039e0810684a6fef152dd
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71729400"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72510282"
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>Ajudar os utilizadores finais a compreender as mensagens da aplicação Portal da Empresa
 
@@ -43,7 +44,7 @@ Compreenda as diferentes mensagens de aplicações que os utilizadores finais po
 ### <a name="where-it-appears"></a>Onde aparece
 A mensagem **Permitir que o Portal da Empresa efetue e faça a gestão de chamadas telefónicas?** é apresentada quando os utilizadores tocam em **Inscrever** na aplicação Portal da Empresa quando inscrevem os dispositivos.
 
-### <a name="what-it-means"></a>O que representa
+### <a name="what-it-means"></a>O que significa
 Ao aceitarem este pedido, os utilizadores permitem que os números IMEI e de telefone do dispositivo sejam enviados para o serviço Intune. Estes números serão apresentados na consola de administração na página __Hardware__.
 
 > [!NOTE]
@@ -66,7 +67,7 @@ Para obterem mais informações, indique aos utilizadores para acederem a [Inscr
 ### <a name="where-it-appears"></a>Onde aparece
 A mensagem **Permitir que o Portal da Empresa aceda aos seus contactos?** é apresentada quando os utilizadores tocam em **Inscrever** na aplicação Portal da Empresa quando inscrevem os dispositivos.
 
-### <a name="what-it-means"></a>O que representa
+### <a name="what-it-means"></a>O que significa
 Ao aceitarem este pedido, os utilizadores permitem que o Intune crie a conta profissional deles e faça a gestão da identidade do Azure Active Directory que está registada para o utilizador nesse dispositivo.
 
 > [!NOTE]
@@ -87,7 +88,7 @@ Para obterem mais informações, indique aos utilizadores para acederem a [Inscr
 ### <a name="where-it-appears"></a>Onde aparece
 A mensagem **Permitir que o Portal da Empresa aceda às fotografias, multimédia e ficheiros no dispositivo?** é apresentada quando os utilizadores tocam em **Enviar Dados** para enviar os registos de dados para o administrador de TI.
 
-### <a name="what-it-means"></a>O que representa
+### <a name="what-it-means"></a>O que significa
 Ao aceitar esta mensagem, os utilizadores permitem que o dispositivo escreva registos de dados no cartão SD do mesmo. Esses registos também podem ser movidos através de um cabo USB.   
 
 > [!NOTE]

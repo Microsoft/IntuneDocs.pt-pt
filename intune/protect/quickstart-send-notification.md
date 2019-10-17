@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 07/24/2019
 ms.topic: quickstart
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: a1b89f2d-7937-46bb-926b-b05f6fa9c749
@@ -17,14 +18,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5fe05152b2221f17df4497d30e6a028523b878fd
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 8f8de97178beedf7e5017330bae106824c329b32
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71729520"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72504213"
 ---
-# <a name="quickstart-send-notifications-to-noncompliant-devices"></a>Início rápido: Send notifications to noncompliant devices (Enviar notificações para dispositivos que não estejam em conformidade)
+# <a name="quickstart-send-notifications-to-noncompliant-devices"></a>Guia de Início Rápido: enviar notificações para dispositivos não conformes
 
 Neste guia de início rápido, irá utilizar o Microsoft Intune para enviar uma notificação por e-mail para os membros da sua força de trabalho que tiverem dispositivos não conformes.
 
@@ -48,12 +49,12 @@ Para enviar um e-mail aos seus utilizadores, crie um modelo de mensagem de notif
 1. No Intune, selecione **Conformidade do dispositivo** > **Notificações** > **Criar notificação**. 
 2. Introduza as seguintes informações:
 
-   - **Nome**: *Administrador da contoso*
+   - **Nome**: *Administrador da Contoso*
    - **Assunto**: *Conformidade do dispositivo*
-   - **Mensagem**: *No momento, o dispositivo não atende aos requisitos de conformidade de nossa organização.*
-   - **Cabeçalho do email – incluir o logotipo da empresa**: Defina como **habilitado** para mostrar o logotipo da sua organização.
-   - **Rodapé do email – incluir o nome da empresa**: Defina como **habilitado** para mostrar o nome da sua organização.
-   - **Rodapé do email – incluir informações de contato**: Defina como **habilitado** para mostrar as informações de contato da sua organização.
+   - **Mensagem**: *o dispositivo não atende aos requisitos de conformidade de nossa organização no momento.*
+   - **Cabeçalho do e-mail – Incluir logótipo da empresa**: defina a opção como **Ativado** para mostrar o logótipo da sua organização.
+   - **Rodapé do e-mail – Incluir nome da empresa**: defina a opção como **Ativado** para mostrar o nome da sua organização.
+   - **Rodapé do e-mail – Incluir informações de contacto**: defina a opção como **Ativado** para mostrar as informações de contacto da sua organização.
 
    ![Exemplo de uma mensagem de notificação de conformidade no Intune](./media/quickstart-send-notification/quickstart-send-notification-01.png)
 
@@ -74,7 +75,7 @@ Os seguintes passos descrevem como pode criar uma política de conformidade para
 2. Selecione **Políticas** > **Criar Política**.
 3. Introduza as seguintes informações:
 
-   - **Nome**: *Conformidade com o Windows 10*
+   - **Nome**: *Política de conformidade do Windows 10*
    - **Descrição**: *Política de conformidade do Windows 10*
    - **Plataforma**: Windows 10 e posterior
 
@@ -105,11 +106,11 @@ Pode atribuir a política de conformidade a um grupo específico de utilizadores
 
 Quando tiver criado e guardado a política com êxito, será apresentada na lista de **Conformidade do dispositivo – Políticas**. Repare se a opção **Atribuído** na lista está definida como **Sim**.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Neste guia de início rápido, utilizou o Intune para criar e atribuir uma política de conformidade aos dispositivos com o Windows 10 da sua força de trabalho para exigir uma palavra-passe de pelo menos seis carateres de comprimento. Para obter mais informações sobre como criar políticas de conformidade para dispositivos Windows, veja [Adicionar uma política de conformidade para dispositivos Windows no Intune](compliance-policy-create-windows.md).
 
 Para seguir esta série de guias de início rápido do Intune, continue para o próximo guia de início rápido.
 
 > [!div class="nextstepaction"]
-> [TUTORIAIS Adicionar e atribuir um aplicativo cliente @ no__t-0
+> [Guia de Início Rápido: adicionar e atribuir uma aplicação cliente](../apps/quickstart-add-assign-app.md)

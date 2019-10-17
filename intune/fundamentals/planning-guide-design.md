@@ -1,5 +1,5 @@
 ---
-title: Criar a sua estrutura do Microsoft Intune
+title: Criar seu design de Microsoft Intune
 titleSuffix: Microsoft Intune
 description: Este artigo ajuda-o a criar uma estrutura para uma estruturação e implementação apenas na cloud do Microsoft Intune.
 keywords: ''
@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 3/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: a8e38e29-f5e3-4a71-a170-d3b1a06e37c6
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 709faf0ec3141e934f8e8c54601303bb5ea5e808
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 24f15cb179dfc2b12b642f5f196d04dce58d4377
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71732196"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72505213"
 ---
 # <a name="create-a-design"></a>Criar uma estrutura
 
@@ -131,7 +132,7 @@ Se a sua organização tiver uma presença global, quando subscrever o serviço,
 
 As dependências externas são produtos e serviços que estão separados do Intune, mas são um requisito do Intune ou podem integrar-se com o Intune. É importante identificar os requisitos de dependências externas e como configurá-las. Alguns exemplos de dependências externas comuns são:
 
-- identidade
+- Identidade
 
 - Grupos de utilizadores e de dispositivos
 
@@ -139,7 +140,7 @@ As dependências externas são produtos e serviços que estão separados do Intu
 
 A seguir, exploraremos essas dependências externas comuns com mais detalhes.
 
-### <a name="identity"></a>identidade
+### <a name="identity"></a>Identidade
 
 A identidade é a forma como identificamos os utilizadores que pertencem à sua organização e estão a inscrever um dispositivo. O Intune necessita do Azure Active Directory (Azure AD) como fornecedor de identidade do utilizador. Se já estiver a utilizar este serviço, pode utilizar a sua identidade existente na cloud. Além disso, o Azure AD Connect é a ferramenta recomendada para sincronizar as suas identidades de utilizador no local com os serviços da Microsoft na cloud. Se a sua organização já utilizar o Office 365, é importante que o Intune utilize o mesmo ambiente do Azure AD.
 
@@ -216,7 +217,7 @@ Pode [transferir um modelo da tabela acima](https://gallery.technet.microsoft.co
 
 O Intune suporta dispositivos pessoais e dispositivos pertencentes à empresa. Um dispositivo é considerado propriedade da empresa se for inscrito por um gestor de inscrição de dispositivos ou programa de registo de aparelho. Por exemplo, um dispositivo é inscrito com o Programa de Registo de Aparelho (DEP) da Apple, marcado como empresarial e colocado num grupo de dispositivos que recebe políticas e aplicações empresariais filtradas.
 
-Consulte a [seção 3: Determine os requisitos](planning-guide-requirements.md) do cenário de caso de uso para obter mais informações sobre casos de uso corporativo e BYOD.
+Veja a [Secção 3: determinar requisitos de cenários de casos de utilização](planning-guide-requirements.md) para obter mais informações sobre os casos de utilização empresarial e BYOD.
 
 ### <a name="bulk-enrollment"></a>Inscrição em massa
 
@@ -232,11 +233,11 @@ Nestas secções, analisamos as seguintes funcionalidades e capacidades que est�
 
 - Perfis de recursos
 
-- Aplicações
+- Apps
 
 - Política de conformidade
 
-- Acesso Condicional
+- Conditional Access
 
 Analisemos cada uma destas áreas mais detalhadamente.
 
@@ -262,10 +263,10 @@ Deve criar pelo menos uma política de configuração por plataforma. Se for nec
 
 | **Nome da política** | **Plataforma de dispositivo** | **Definições** | **Grupo de destino** |   
 |:---:|:---:|:---:|:---:|
-| Empresarial – iOS | iOS | O PIN é necessário, comprimento: 6, restringir o backup na nuvem | Dispositivos Empresariais |                                                           
-| Empresarial – Android | Android | O PIN é necessário, comprimento: 6, restringir o backup na nuvem | Dispositivos Empresariais |                                                           
-| BYOD – iOS  | iOS | O PIN é necessário, comprimento: 4 | Dispositivos BYOD |
-| BYOD – Android  | Android | O PIN é necessário, comprimento: 4 | Dispositivos BYOD |
+| Empresarial – iOS | iOS | O PIN é obrigatório, Comprimento: 6, Cópia de Segurança na Cloud Restrita | Dispositivos Empresariais |                                                           
+| Empresarial – Android | Android | O PIN é obrigatório, Comprimento: 6, Cópia de Segurança na Cloud Restrita | Dispositivos Empresariais |                                                           
+| BYOD – iOS  | iOS | O PIN é obrigatório, Comprimento: 4 | Dispositivos BYOD |
+| BYOD – Android  | Android | O PIN é obrigatório, Comprimento: 4 | Dispositivos BYOD |
 
 
 Pode [transferir um modelo da tabela acima](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) para identificar as suas necessidades de políticas de configuração.
@@ -344,7 +345,7 @@ Segue-se um exemplo de como documentar a estrutura de perfis de e-mail:
 | Perfil de e-mail | Perfil de e-mail Android Knox | Android Knox | BYOD |
 
 Pode [transferir um modelo da tabela acima](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) para identificar as suas necessidades de perfis de e-mail.
-### <a name="apps"></a>Aplicações
+### <a name="apps"></a>Apps
 
 Pode utilizar o Intune para disponibilizar aplicações aos utilizadores ou dispositivos de várias formas. O tipo de aplicação inclui aplicações de instalador de software, aplicações de uma loja de aplicações pública, ligações externas ou aplicações iOS geridas. Além das implementações de aplicações individuais, pode gerir e implementar aplicações compradas em volume obtidas através dos programas de aquisição em volume para iOS e Windows. Saiba mais sobre:
 
@@ -375,7 +376,7 @@ Uma vez que as aplicações podem ser implementadas para utilizadores e disposit
 
 As políticas de proteção de aplicações minimizam a perda de dados ao definir como a aplicação gere os dados empresariais. O Intune suporta políticas de proteção de aplicações para qualquer aplicação criada para funcionar com a gestão de aplicações móveis. Ao estruturar a política de proteção de aplicações, tem de decidir que restrições pretende atribuir aos dados empresariais numa determinada aplicação. Recomendamos que reveja como funcionam as [políticas de proteção de aplicações](../apps/app-protection-policy.md). Segue-se um exemplo de como documentar as aplicações existentes e que proteção é necessária.
 
-| **Aplicação** | **Objetivo** | **Plataformas** | **Caso de utilização** | **Política de proteção de aplicações** |
+| **Application** | **Objetivo** | **Plataformas** | **Caso de utilização** | **Política de proteção de aplicações** |
 |:---:|:---:|:---:|:---:|:---:|
 | Outlook Mobile  | Disponível | iOS | Empresarial – Executivos | Não pode ser desbloqueado por jailbreak, encriptar ficheiros |                                                         
 | Word | Disponível | iOS, Android – Samsung Knox, não Knox, Windows 10 Mobile | Empresarial, BYOD | Não pode ser desbloqueado por jailbreak, encriptar ficheiros |                                                         
@@ -413,6 +414,6 @@ Veja um exemplo de como documentar políticas de acesso condicional:
 
 Você pode [baixar um modelo da tabela acima](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) para identificar suas necessidades de política de acesso condicional.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 A próxima secção fornece orientações sobre o [processo de implementação do Intune](planning-guide-onboarding.md).

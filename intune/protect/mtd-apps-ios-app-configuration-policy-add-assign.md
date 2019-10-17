@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 06/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 00356258-76a8-4a84-9cf5-64ceedb58e72
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 08a4b6b4bbb9922395bca7b331fee259cb49fbd8
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: f5ca8b7c94569861ccc5c4235315a7a57de9d838
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71729568"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72504404"
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>Adicionar e atribuir aplicações de MTD (Defesa Contra Ameaças para Dispositivos Móveis) com o Intune  
 
@@ -56,7 +57,7 @@ Selecione a secção que corresponde ao seu fornecedor de MTD:
 - [Pradeo](#configure-pradeo-apps)
 - [Better Mobile](#configure-better-mobile-apps)
 - [Sophos Mobile](#configure-sophos-apps)
-- [Wandera](#configure-wandera-apps)
+- [Vaga](#configure-wandera-apps)
 
 ### <a name="configure-lookout-for-work-apps"></a>Configurar as aplicações Lookout for Work  
 - **Android**  
@@ -204,7 +205,7 @@ Crie a política de configuração de aplicativo iOS conforme descrito no artigo
 
 ### <a name="wandera-app-configuration-policy"></a>Política de configuração de aplicativo do  
 Confira as instruções para [usar Microsoft Intune políticas de configuração de aplicativo para IOS](../apps/app-configuration-policies-use-ios.md) para adicionar a política de configuração de aplicativo do Ios.
-- Na **etapa 8**, use a opção **inserir dados XML**. Entre no portal de entrada de seu radar e navegue até **configurações** > **EMM integração** > do**aplicativo enviar por push**. Selecione **Intune**e copie o conteúdo abaixo e cole-o no corpo da política de configuração.  
+- Na **etapa 8**, use a opção **inserir dados XML**. Entre no portal de entrada de seu RADAR e navegue até **configurações** > **EMM integração** > **push de aplicativo**. Selecione **Intune**e copie o conteúdo abaixo e cole-o no corpo da política de configuração.  
 
       <dict><key>secretKey</key>
        <string>SeeRADAR</string>
@@ -224,5 +225,5 @@ Confira as instruções para [usar Microsoft Intune políticas de configuração
 ## <a name="assign-apps-to-groups"></a>Atribuir aplicações a grupos  
 - Este passo aplica-se a todos os parceiros de MTD. Veja as instruções para [atribuir aplicações a grupos com o Intune](../apps/apps-deploy.md).
 
-## <a name="next-steps"></a>Passos seguintes  
+## <a name="next-steps"></a>Próximos passos  
 - [Configurar a política de conformidade de dispositivos da MTD](mtd-device-compliance-policy-create.md)

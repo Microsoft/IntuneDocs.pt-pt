@@ -9,6 +9,7 @@ ms.date: 10/08/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 0de5f03a-c288-423b-b9ea-493a39eb715a
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 85856e77fc8ebbd4054ef819a9110e0fa258ced3
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: c5accdf3699770444b7aafeb39d431755f9d3ba9
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61491041"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72501830"
 ---
 # <a name="using-your-windows-device-with-intune-company-portal"></a>Utilizar o seu dispositivo Windows com o Portal da Empresa do Intune
 
@@ -41,7 +42,7 @@ Atualmente, o Portal da Empresa suporta dispositivos com as seguintes versões d
 * Windows 10 (versões Home, Pro, Education, modo S e Enterprise)
 * Windows Phone 8.1 e posterior
 * Windows 8.1 RT
-* Windows 8.1
+* Windows 8.1
 
 Outras versões do Windows, como o [Windows 10 Holographic](https://www.microsoft.com/hololens), são suportadas no Portal da Empresa. No entanto, estas versões não estão abrangidas neste artigo por se destinarem a utilizações muito específicas.
 
@@ -66,7 +67,7 @@ Outras versões do Windows, como o [Windows 10 Holographic](https://www.microsof
 * [A minha versão do Windows não é suportada](your-windows-version-isnt-yet-supported.md)
 * [Atualizar o meu dispositivo Windows](you-need-to-update-your-windows-device.md)
 * [Enviar registos da aplicação Portal da Empresa](send-logs-to-your-it-admin-cp-windows.md)
-* [Enviar registos da aplicação Definições do dispositivo](send-logs-to-your-it-admin-settings-windows.md)
+* [Enviar registos a partir do dispositivo da aplicação Definições](send-logs-to-your-it-admin-settings-windows.md)
 * [Instalar o Office 365 no meu dispositivo Windows 10](install-office-windows.md)
 * [O meu dispositivo tem de ser encriptado](you-need-to-enable-windows-encryption.md)
 * [Obter software anti-malware](your-device-needs-antimalware-software.md)

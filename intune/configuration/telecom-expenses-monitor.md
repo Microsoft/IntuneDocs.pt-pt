@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 05/09/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a3e459e4e22c7985e2e68e624c413ce967e1a8ba
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: ce9a6916cc77714a87aeac33555c0be1e59463f5
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71730524"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506637"
 ---
 # <a name="set-up-a-telecom-expense-management-service-in-intune"></a>Configurar um serviço de gestão de despesas de telecomunicações no Intune
 
@@ -47,7 +48,7 @@ Para usar o serviço Datalert com o Intune, há algumas definições de configur
 
 - Android 4,4 e dispositivos mais recentes que são compatíveis com Knox (Samsung)
 
-  [Versões do Android que dão suporte a Knox](https://seap.samsung.com/faq/what-versions-android-support-knox-standard-and-knox-premium-sdks-0) (abre o site da Samsung) lista as versões com suporte do Knox.
+  As [versões do Android que dão suporte ao Knox](https://seap.samsung.com/faq/what-versions-android-support-knox-standard-and-knox-premium-sdks-0) (abre o site da Samsung) lista as versões com suporte do Knox.
 
 - iOS 8.0 e posterior
 
@@ -64,7 +65,7 @@ O Intune integra-se com o seguinte provedor de gerenciamento de despesas de tele
 
 ## <a name="deploy-the-intune-and-datalert-solution"></a>Implantar a solução Intune e Datalert
 
-### <a name="step-1-connect-the-datalert-service-to-intune"></a>Passo 1: Conectar o serviço Datalert ao Intune
+### <a name="step-1-connect-the-datalert-service-to-intune"></a>Etapa 1: conectar o serviço Datalert ao Intune
 
 1. Entre no console de gerenciamento do Datalert com as credenciais de administrador.
 
@@ -72,7 +73,7 @@ O Intune integra-se com o seguinte provedor de gerenciamento de despesas de tele
 
 3. Selecione **desbloquear**. **Desbloquear** permite que você altere ou atualize as configurações na página.
 
-4. No servidor de >  **conexão do Intune/Datalert** **MDM**, selecione **Microsoft Intune**.
+4. No **Intune/Datalert conexão** > **MDM do servidor**, selecione **Microsoft Intune**.
 
 5. Para o **domínio do Azure ad**, insira sua ID de locatário do Azure. Selecione **conexão**.
 
@@ -104,17 +105,17 @@ O Intune integra-se com o seguinte provedor de gerenciamento de despesas de tele
 
    ![Página do Datalert a mostrar uma ligação estabelecida com êxito](./media/telecom-expenses-monitor/tem-datalert-mdm-profiles.png)
 
-### <a name="step-2-confirm-telecom-expense-management-is-active-in-intune"></a>Passo 2: Confirmar se o gerenciamento de despesas de telecomunicações está ativo no Intune
+### <a name="step-2-confirm-telecom-expense-management-is-active-in-intune"></a>Etapa 2: confirmar se o gerenciamento de despesas de telecomunicações está ativo no Intune
 
 Depois de concluir a etapa 1, sua conexão será habilitada automaticamente. No Intune, o status da conexão mostra **ativo**. Para confirmar se o status está ativo, use as seguintes etapas:
 
 1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 
-2. Selecione **configuração** > do dispositivo**Gerenciamento de despesas de telecomunicações**. Procure o status da conexão **ativa** :
+2. Selecione **configuração do dispositivo** > **Gerenciamento de despesas de telecomunicações**. Procure o status da conexão **ativa** :
 
    ![Página do Intune a mostrar o estado de ligação Ativo do Datalert](./media/telecom-expenses-monitor/tem-azure-portal-enable-service.png)
 
-### <a name="step-3-deploy-the-datalert-app-to-devices"></a>Passo 3: Implantar o aplicativo Datalert em dispositivos
+### <a name="step-3-deploy-the-datalert-app-to-devices"></a>Etapa 3: implantar o aplicativo Datalert em dispositivos
 
 Para confirmar se o uso de dados de apenas linhas de propriedade da organização é coletado, certifique-se de:
 
@@ -137,7 +138,7 @@ Essas categorias são mostradas aos usuários durante o registro ([registrar dis
 
 As etapas a seguir adicionam o aplicativo Datalert. Por exemplo, o iOS é usado. [Adicionar aplicativos](../apps/apps-add.md) e [usar marcas de escopo](../fundamentals/scope-tags.md) têm informações mais específicas sobre essas etapas.
 
-1. No **[Intune](https://go.microsoft.com/fwlink/?linkid=2090973)** ,**selecione aplicativos** >  > cliente aplicativos**Adicionar**.
+1. No **[Intune](https://go.microsoft.com/fwlink/?linkid=2090973)** , selecione **aplicativos cliente** > **aplicativos** > **Adicionar**.
 
 2. Selecione o **tipo de aplicativo**. Por exemplo, para iOS, selecione **Store app-IOS**.
 
@@ -151,7 +152,7 @@ As etapas a seguir adicionam o aplicativo Datalert. Por exemplo, o iOS é usado.
 
    ![Insira as propriedades do aplicativo, incluindo o nome, a descrição, escolha o sistema operacional e mais configurações para o aplicativo no Intune](./media/telecom-expenses-monitor/tem-steps-to-create-the-app.png)
 
-6. Selecione **OK** > **Adicionar** para salvar suas alterações. O aplicativo Datalert é mostrado na lista.
+6. Selecione **OK** > **Adicionar** para salvar as alterações. O aplicativo Datalert é mostrado na lista.
 
 #### <a name="assign-the-datalert-app-to-the-corporate-device-group"></a>Atribuir a aplicação Datalert ao grupo de dispositivos da empresa
 
@@ -163,7 +164,7 @@ As etapas a seguir adicionam o aplicativo Datalert. Por exemplo, o iOS é usado.
 
    ![Captura de ecrã do painel Adicionar uma política](./media/telecom-expenses-monitor/tem-assign-datalert-app-to-device-group.png)
 
-### <a name="step-4-add-organization-phone-lines-to-the-datalert-console"></a>Passo 4: Adicionar linhas de telefone da organização ao console do Datalert
+### <a name="step-4-add-organization-phone-lines-to-the-datalert-console"></a>Etapa 4: adicionar linhas de telefone da organização ao console do Datalert
 
 Os serviços do Intune e do Datalert agora estão configurados para se comunicar entre si. Em seguida, adicione as linhas de telefone pagas da sua organização ao console do Datalert. E insira limites e ações para quaisquer violações de uso de celular ou roaming. Você pode adicionar manualmente linhas telefônicas pagas corporativas ao console do Datalert ou adicioná-las automaticamente depois que o dispositivo for registrado no Intune.
 
@@ -182,7 +183,7 @@ Para a experiência do usuário final, os artigos a seguir podem ajudar:
 
 ## <a name="turn-off-the-datalert-service"></a>Desligar o serviço Datalert
 
-1. No **[Intune](https://go.microsoft.com/fwlink/?linkid=2090973)** , selecione **configuração** > do dispositivo**Gerenciamento de despesas de telecomunicações**.
+1. No **[Intune](https://go.microsoft.com/fwlink/?linkid=2090973)** , selecione **configuração do dispositivo** > **Gerenciamento de despesas de telecomunicações**.
 2. Defina **habilitar o gerenciamento de despesas de telecomunicações e bloquear os dados de celular ou roaming em dispositivos que excedem as cotas de uso que você configura** para **desabilitar**.
 3. **Guarde** as suas alterações.
 
@@ -193,6 +194,6 @@ Para a experiência do usuário final, os artigos a seguir podem ajudar:
 > - Os utilizadores deixam de estar bloqueados em relação ao acesso a dados e roaming.
 > - O Intune ainda recebe os sinais provenientes do serviço, mas o Intune ignora os sinais.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 O relatório de uso de dados está disponível no console de gerenciamento do Datalert do Saaswedo.

@@ -9,18 +9,19 @@ manager: dougeby
 ms.date: 09/24/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c1d039d5be449d1c1b8cc13e69b84e1bd7f7dd2b
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 4a89392dabe695cf49e989351cef822852676916
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71731288"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72507380"
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Assine aplicações de linha de negócio para que possam ser implementadas nos dispositivos Windows com o Intune
 
@@ -67,7 +68,7 @@ O certificado usado para implantar Windows Phone aplicativos móveis 8,1 foi des
 
 ## <a name="how-to-install-the-updated-certificate-for-line-of-business-lob-apps"></a>Como instalar o certificado atualizado para aplicações de linha de negócio (LOB)
 
-Windows Phone 8.1
+Wnodows Phone 8.1
 
 O serviço do Intune não poderá mais implantar aplicativos LOB para essa plataforma depois que o certificado de assinatura de código existente do Symantec Mobile Enterprise expirar. Ainda será possível Sideload arquivos XAP/APPX não assinados usando um cartão SD ou baixando o arquivo para o dispositivo. Para obter mais informações, consulte [como instalar arquivos XAP no Windows Phone](https://answers.microsoft.com/en-us/mobiledevices/forum/mdlumia-mdapps/how-to-install-xap-file-in-windows-phone-8/da09ee72-51ae-407c-9b85-bc148df89280).
 
@@ -84,7 +85,7 @@ Se você não quiser fornecer acesso ao Microsoft Store, poderá implantar manua
 1. Entre em sua conta no [Microsoft Store for Business](https://www.microsoft.com/business-store) e adquira a versão de **licença offline** do aplicativo portal da empresa.  
 2. Assim que a aplicação tiver sido comprada, selecione a aplicação na página **Inventário**.  
 3. Selecione **Todos os dispositivos Windows 10** como a **Plataforma** e, em seguida, a **Arquitetura** adequada e transfira. Não é preciso um ficheiro de licença de aplicação para esta aplicação.
-   ![Imagem dos detalhes do pacote do Windows 10 x86 para download](./media/app-sideload-windows/Win10CP-all-devices.png)
+   ![Image de detalhes do pacote do Windows 10 x86 para baixar @ no__t-1
 4. Transfira todos os pacotes em “Arquiteturas necessárias”. Esta ação deve ser feita para as arquiteturas x86, x64 e ARM, resultando num total de nove pacotes, conforme mostrado abaixo.
 
    ![Imagem dos ficheiros de dependência para Transferência ](./media/app-sideload-windows/Win10CP-dependent-files.png)
@@ -121,7 +122,7 @@ Veja a seguir como pode assinar e implementar a aplicação desta forma:
 2. Transfira a aplicação Portal da Empresa do Windows 10 na Loja Microsoft para Empresas, conforme detalhado acima.  
 3. Execute o script com os parâmetros de entrada detalhados no cabeçalho do script para assinar a aplicação Portal da Empresa do Windows 10 (extraída abaixo). As dependências não precisam de ser transmitidas para o script. Só são precisas quando a aplicação está a ser carregada para a Consola de Administração do Intune.
 
-|       Parâmetro       |                                                                    Descrição                                                                    |
+|       Parâmetro       |                                                                    Description                                                                    |
 |-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
 | InputWin10AppxBundle  |                                             O caminho onde está localizado o ficheiro appxbundle de origem.                                              |
 | OutputWin10AppxBundle |                                                  O caminho de saída do ficheiro appxbundle assinado.                                                  |

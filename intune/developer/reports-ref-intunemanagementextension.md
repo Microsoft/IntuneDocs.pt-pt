@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 10/03/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: developer
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 73DF3B90-6D52-4EF6-AFFD-1873A18C7421
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 19b63172c8901059239c44aaf56fc49f0d7a01ad
-ms.sourcegitcommit: 223d64a72ec85fe222f5bb10639da729368e6d57
+ms.openlocfilehash: ae99e747f9c0540418c15f24fbe0c27c585f869c
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71940404"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72490298"
 ---
 # <a name="reference-for-intune-management-extensions"></a>Referência para extensões de gerenciamento do Intune
 
@@ -35,19 +36,19 @@ A categoria **intuneManagementExtensions** contém entidades para dispositivos m
 
 A entidade **intuneManagementExtensionVersion** lista todas as versões usadas pelo intuneManagementExtensions.
 
-| Propriedade  | Descrição | Exemplo |
+| Propriedade  | Description | Exemplo |
 |---------|------------|--------|
-| ExtensionVersionKey |Identificador exclusivo da versão do intuneManagementExtensions. | 1 |
-| ExtensionVersion |O número da versão de quatro dígitos. |1.0.2.0 |
+| extensionVersionKey |Identificador exclusivo da versão do intuneManagementExtensions. | 1 |
+| extensionVersion |O número da versão de quatro dígitos. |1.0.2.0 |
 
 ## <a name="intunemanagementextensionhealthstates"></a>intuneManagementExtensionHealthStates
 
 O **intuneManagementExtensionHealthState** lista todos os Estados de integridade possíveis do intuneManagementExtensions.
 
-| Propriedade  | Descrição | Exemplo |
+| Propriedade  | Description | Exemplo |
 |---------|------------|--------|
-| ExtensionStateKey |Identificador exclusivo do estado de funcionamento. | 2 |
-| Extensãostate |Estado de funcionamento de uma IntuneManagementExtension. | Bom estado de funcionamento |
+| extensionStateKey |Identificador exclusivo do estado de funcionamento. | 2 |
+| extensãostate |Estado de funcionamento de uma IntuneManagementExtension. | Íntegro |
 
 ## <a name="intunemanagementextensions"></a>intuneManagementExtensions
 
@@ -55,11 +56,11 @@ O **intuneManagementExtension** lista a integridade do IntuneManagementExtension
 Os dados são mantidos relativamente aos últimos 60 dias. 
 
 
-|      Propriedade       |                         Descrição                         | Exemplo |
+|      Propriedade       |                         Description                         | Exemplo |
 |---------------------|-------------------------------------------------------------|---------|
 |       dateKey       |               Identificador exclusivo da Data.                |   123   |
-|      TenantKey      |              Identificador exclusivo do Inquilino.               |   456   |
-|      DeviceKey      |              Identificador exclusivo do Dispositivo.               |   789   |
-| ExtensionVersionKey | Identificador exclusivo da versão do intuneManagementExtension. |    1    |
-|  ExtensionStateKey  |             Identificador exclusivo do estado de funcionamento.              |    2    |
+|      tenantKey      |              Identificador exclusivo do Inquilino.               |   456   |
+|      deviceKey      |              Identificador exclusivo do Dispositivo.               |   789   |
+| extensionVersionKey | Identificador exclusivo da versão do intuneManagementExtension. |    1    |
+|  extensionStateKey  |             Identificador exclusivo do estado de funcionamento.              |    2    |
 

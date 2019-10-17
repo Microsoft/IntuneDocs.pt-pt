@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 02/15/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 53c8e2ad-f627-425b-9adc-39ca69dbb460
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cffde7e677215d7e25da644bc690c1512762d72a
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: fbe0aa4797de32936e2be7def4aeb670c78a4945
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71731848"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502911"
 ---
 # <a name="what-to-expect-when-your-android-app-is-managed-by-app-protection-policies"></a>O que esperar quando a aplicação Android é gerida por políticas de proteção de aplicações
 
@@ -54,7 +55,7 @@ Quando existe uma conta gerida numa aplicação:
 
 Leia o seguinte cenário de exemplo para obter uma compreensão mais aprofundada de como são tratadas as várias contas de utilizador.
 
-O utilizador A trabalha para duas empresas — a **Empresa X** e a **Empresa Y**. O utilizador A tem uma conta profissional para cada empresa e ambas utilizam o Intune para implementar políticas de proteção de aplicações. A **Empresa X** implementa políticas de proteção de aplicações **antes da** **Empresa Y**. A conta que está associada à **Empresa X** obtém a política de proteção de aplicações, mas a conta que está associada à Empresa Y não. Se pretender que a conta de utilizador que está associada à Empresa Y seja gerida pelas políticas de proteção de aplicações, terá de remover a conta de utilizador que está associada à Empresa X e adicionar a conta que está associada à Empresa Y.
+O usuário A trabalha para duas empresas:**empresa X** e **empresa Y**. O usuário A tem uma conta de trabalho para cada empresa e ambos usam o Intune para implantar políticas de proteção de aplicativo. A **empresa X** implanta políticas de proteção de aplicativo **antes** **da empresa Y**. A conta associada à **empresa X** Obtém a política de proteção do aplicativo, mas não a conta associada à empresa Y. Se você quiser que a conta de usuário associada à empresa Y seja gerenciada pelas políticas de proteção de aplicativo, será necessário remover a conta de usuário associada à empresa X e adicionar a conta associada à empresa Y.
 ### <a name="add-a-second-account"></a>Adicionar uma segunda conta
 #### <a name="android"></a>Android
 Se estiver a utilizar um dispositivo Android, poderá ver uma mensagem a informá-lo de que essa ação não é permitida, com instruções sobre como remover a conta existente e adicionar uma nova.  Para remover a conta existente, aceda a **Definições &gt;Geral &gt; Gestor de Aplicações &gt;Portal da Empresa.** Em seguida, escolha **Limpar Dados**.
@@ -68,15 +69,15 @@ Transfira esta aplicação a partir da Google Play store.
 
 São suportados os seguintes tipos de ficheiro:
 
-* **Sonoro** AAC LC, HE-AACv1 (AAC +), ele-AACv2 (AAC + avançado), AAC ELD (AAC de baixa atraso aprimorado), AMR-NB, AMR-WB, FLAC, MP3, MIDI, OGG Vorbis, PCM/WAVE
-* **Monitor** H. 263, H. 264 AVC, MPEG-4 SP, VP8
+* **Áudio:** AAC LC, HE-AACv1 (AAC+), HE-AACv2 (AAC+ melhorado), AAC ELD (AAC de atraso lento melhorado), AMR-NB, AMR-WB, FLAC, MP3, MIDI, Ogg Vorbis, PCM/WAVE
+* **Vídeo:** H.263, H.264 AVC, MPEG-4 SP, VP8
 * **Imagem:** .jpg, .pjpg, .png, .ppng, .bmp, .pbmp, .gif, .pgif, .jpeg, .pjpeg
-* **Documento** PDF, PPDF
+* **:** PDF, PPDF
 
 
 |**pfile**|
 |----|
 |Pfile é um formato de "encapsulamento" genérico para ficheiros protegidos que encapsula o conteúdo encriptado e as licenças do Azure Information Protection. Pode servir para proteger qualquer tipo de ficheiro.|
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 [O que esperar quando a sua aplicação iOS é gerida por políticas de proteção de aplicações](end-user-mam-apps-ios.md)

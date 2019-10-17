@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 10/19/2018
 ms.topic: tutorial
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -18,14 +19,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 40ac69b3cd5a3d3e1162f2ab5e982a27f89b271f
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 39ea8b3859d3d2525433c4cafdf566e7a2c8d2ab
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71731696"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72509193"
 ---
-# <a name="tutorial-use-autopilot-to-enroll-windows-devices-in-intune"></a>Destina Usar o AutoPilot para registrar dispositivos Windows no Intune
+# <a name="tutorial-use-autopilot-to-enroll-windows-devices-in-intune"></a>Tutorial: Utilizar o Autopilot para inscrever dispositivos Windows no Intune
 
 O Windows Autopilot simplifica a inscrição de dispositivos. Com o Microsoft Intune e o Autopilot, pode disponibilizar novos dispositivos aos seus utilizadores finais sem ter de criar, manter e aplicar imagens de sistema operativo personalizadas.
 
@@ -69,7 +70,7 @@ O primeiro passo na configuração do Windows Autopilot é adicionar os disposit
 
 5. Escolha **Importar** para iniciar a importação das informações do dispositivo. A importação poderá demorar alguns minutos.
 
-4. Depois de a importação estar concluída, escolha **Inscrição de dispositivos** > **Inscrição no Windows** > **Windows Autopilot** > **Dispositivos** > **Sincronizar**. Uma mensagem indica que a sincronização está em curso. A conclusão do processo poderá demorar alguns minutos, consoante o número de dispositivos que está a sincronizar.
+4. Após a conclusão da importação, **escolha registro de dispositivo** >  registro do**Windows** > **Windows AutoPilot** > **dispositivos** > **sincronização**. Uma mensagem exibe que a sincronização está em andamento. A conclusão do processo poderá demorar alguns minutos, consoante o número de dispositivos que está a sincronizar.
 
 5. Atualize a vista para ver os novos dispositivos.
 
@@ -96,9 +97,9 @@ Depois de criar um grupo de dispositivos, tem de criar um perfil de implementaç
 5. Na página de **OOBE (experiência do usuário)** , para o modo de **implantação**, escolha **orientado por usuários**. Os dispositivos com este perfil estão associados ao utilizador que inscreve o dispositivo. Precisa de credenciais de utilizador para inscrever o dispositivo.
 6. Na caixa **Aderir ao Azure AD como**, selecione **Associado ao Azure AD**.
 7. Configure as seguintes opções e deixe outras definidas como o padrão:
-    - **Contrato de licença de usuário final (EULA)** : **Exibe**
-    - **Configurações de privacidade**: **programa**
-    - **Tipo de conta de usuário**: **Standard**
+    - **Contrato de licença do utilizador final (EULA)** :**Ocultar**
+    - **Definições de privacidade**: **Mostrar**
+    - **Tipo de conta de utilizador**: **Padrão**
 8. Selecione **Seguinte**.
 9. Na página **atribuições** , escolha **grupos selecionados** para **atribuir a**.
 10. Escolha **Selecionar grupos a serem incluídos**, escolha **grupo piloto automático**.
@@ -121,7 +122,7 @@ Se você não quiser mais usar os dispositivos de piloto automático, poderá ex
 
 4. Confirme a eliminação ao escolher **Sim**. A eliminação pode demorar alguns minutos.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Pode encontrar mais informações sobre outras opções disponíveis para o Windows Autopilot.
 

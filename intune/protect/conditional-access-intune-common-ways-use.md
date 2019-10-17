@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 07/23/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fa4157d82ae63336503a9348851ad75f3b8243f9
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 00743e020fc9d42970dca5efa130908a53c6c5bf
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71729764"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72504588"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>Quais são as maneiras comuns de usar o acesso condicional com o Intune?
 
@@ -84,7 +85,7 @@ O acesso condicional para PCs fornece funcionalidades semelhantes às que se enc
 
 - **Ingressado no domínio do AD local:** Essa opção é normalmente usada por organizações que são razoavelmente confortáveis com a forma como eles já estão gerenciando seus PCs por meio de políticas de grupo do AD ou System Center Configuration Manager.
 
-- **Azure AD ingressado no domínio e gerenciamento do Intune:** Esse cenário destina-se a organizações que desejam ser a primeira nuvem (ou seja, usam principalmente serviços de nuvem, com um objetivo de reduzir o uso de uma infraestrutura local) ou somente em nuvem (sem infraestrutura local). O ingresso no Azure AD funciona bem em um ambiente híbrido, permitindo o acesso a aplicativos e recursos locais e na nuvem. O dispositivo se une ao Azure AD e é registrado no Intune, que pode ser usado como critério de acesso condicional ao acessar recursos corporativos.
+- **Azure ad ingressado no domínio e gerenciamento do Intune:** Esse cenário destina-se a organizações que desejam ser a primeira nuvem (ou seja, usam principalmente serviços de nuvem, com um objetivo de reduzir o uso de uma infraestrutura local) ou somente em nuvem (sem infraestrutura local). O ingresso no Azure AD funciona bem em um ambiente híbrido, permitindo o acesso a aplicativos e recursos locais e na nuvem. O dispositivo se une ao Azure AD e é registrado no Intune, que pode ser usado como critério de acesso condicional ao acessar recursos corporativos.
 
 - **System Center Configuration Manager e ingresso no domínio do AD:** A partir do Branch atual, o System Center Configuration Manager fornece recursos de acesso condicional que podem avaliar critérios de conformidade específicos, além de serem um PC ingressado no domínio:
 
@@ -96,7 +97,7 @@ O acesso condicional para PCs fornece funcionalidades semelhantes às que se enc
 
 #### <a name="bring-your-own-device-byod"></a>Bring your own device (BYOD)
 
-- **Ingresso no local de trabalho e gerenciamento do Intune:** Aqui, o usuário pode ingressar seus dispositivos pessoais para acessar recursos e serviços corporativos. Você pode usar o ingresso no local de trabalho e registrar dispositivos no MDM do Intune para receber políticas no nível do dispositivo, que são outra opção para avaliar critérios de acesso condicional.
+- **Associação à área de trabalho e gestão do Intune:** aqui, o utilizador pode associar os seus dispositivos pessoais para aceder a serviços e recursos da empresa. Você pode usar o ingresso no local de trabalho e registrar dispositivos no MDM do Intune para receber políticas no nível do dispositivo, que são outra opção para avaliar critérios de acesso condicional.
 
 Saiba mais sobre o [Gerenciamento de dispositivos no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/devices/overview).
 
@@ -160,7 +161,7 @@ O Exchange Server fornece API e infraestrutura para mover os dispositivos para q
 > [!IMPORTANT]
 > Tenha em mente que o usuário que está usando o dispositivo deve ter um perfil de conformidade e a licença do Intune atribuídos a eles para que o dispositivo possa ser avaliado quanto à conformidade. Se não estiver implementada nenhuma política de conformidade para o utilizador, o dispositivo será tratado como compatível e não serão aplicadas restrições de acesso.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 [Como configurar o acesso condicional no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)
 

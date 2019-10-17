@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 07/24/2019
 ms.topic: tutorial
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: e892d8a3-7f74-498c-98d5-e968a8fbb049
@@ -17,18 +18,18 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b3caa2d8d8ac0a9b3ad1590d610618094c1fadcc
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: d6c627f5c9074bf6ce0a391174f5fe74b95b7885
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71731672"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72504914"
 ---
-# <a name="tutorial-walkthrough-of-microsoft-intune-in-the-azure-portal"></a>Destina Walkthrough de Microsoft Intune no portal do Azure
+# <a name="tutorial-walkthrough-of-microsoft-intune-in-the-azure-portal"></a>Tutorial: passo a passos de Microsoft Intune no portal do Azure
 
 O [Azure](https://docs.microsoft.com/learn/modules/welcome-to-azure) contém mais de 100 serviços para ajudá-lo com uma variedade de cenários e possibilidades de computação em nuvem. Microsoft Intune é um dos vários serviços disponíveis no Azure. O Intune ajuda a garantir que os dispositivos, aplicativos e dados da sua empresa atendam aos requisitos de segurança da sua empresa. Você tem o controle para definir quais requisitos precisam ser verificados e o que acontece quando esses requisitos não são atendidos. Pode encontrar o serviço Microsoft Intune no [portal do Azure](https://portal.azure.com). A compreensão dos recursos disponíveis no Intune ajudará você a realizar várias tarefas de MDM (gerenciamento de dispositivo móvel) e MAM (gerenciamento de aplicativo móvel).
 
-Neste tutorial, irá:
+Neste tutorial, você vai:
 > [!div class="checklist"]
 > * Microsoft Intune de Tour
 > * Configurar o portal do Azure
@@ -165,9 +166,9 @@ Também pode adicionar mosaicos diretamente ao seu dashboard a partir de qualque
 
 Esta funcionalidade ser-lhe-á mais relevante após adicionar mais conteúdos, tais como grupos e utilizadores, ao Intune.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Para ser executado rapidamente em Microsoft Intune, percorra os guias de início rápido do Intune primeiro Configurando uma conta gratuita do Intune.
 
 > [!div class="nextstepaction"]
-> [TUTORIAIS Experimente o Microsoft Intune gratuitamente](free-trial-sign-up.md)
+> [Início rápido: Experimente o Microsoft Intune gratuitamente](free-trial-sign-up.md)

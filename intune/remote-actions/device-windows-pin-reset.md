@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 03/07/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: remote-actions
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 5027d012-d6c2-4971-a9ac-217f91d67d87
@@ -15,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cb34490b6b88d6a62fa9fb29a64b7a391eed7c6b
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 445737a1b0a72e380844af6225cdb735cd3ec02c
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71732580"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72509346"
 ---
 # <a name="reset-the-passcode-on-windows-devices-using-intune"></a>Repor o código de acesso nos dispositivos Windows com o Intune
 
@@ -41,9 +42,9 @@ As seguintes plataformas **não** são suportadas:
 Para repor o código de acesso nos dispositivos Windows, carregue o serviço de reposição do PIN para o seu inquilino do Intune.
 
 1. Aceda à [produção do Serviço de Reposição do PIN da Microsoft](https://login.windows.net/common/oauth2/authorize?response_type=code&client_id=b8456c59-1230-44c7-a4a2-99b085333e84&resource=https%3A%2F%2Fgraph.windows.net&redirect_uri=https%3A%2F%2Fcred.microsoft.com&state=e9191523-6c2f-4f1d-a4f9-c36f26f89df0&prompt=admin_consent) e inicie sessão com a conta de administrador inquilino.
-2. **Aceite** o consentimento para que o serviço de redefinição de PIN acesse sua conta: ![Accept a solicitação do servidor de redefinição de PIN para permissões @ no__t-1
+2. Clique em **Aceitar** para permitir que o serviço de reposição do PIN aceda à sua conta: ![Aceitar o pedido do Servidor de Reposição do PIN para permissões](./media/device-windows-pin-reset/pin-reset-service-home-screen.png)
 3. Aceda à [produção do Cliente de Reposição do PIN da Microsoft](https://login.windows.net/common/oauth2/authorize?response_type=code&client_id=9115dd05-fad5-4f9c-acc7-305d08b1b04e&resource=https%3A%2F%2Fcred.microsoft.com%2F&redirect_uri=ms-appx-web%3A%2F%2FMicrosoft.AAD.BrokerPlugin%2F9115dd05-fad5-4f9c-acc7-305d08b1b04e&state=6765f8c5-f4a7-4029-b667-46a6776ad611&prompt=admin_consent) e inicie sessão com a conta de administrador inquilino. Clique em **Aceitar** para permitir que o cliente de reposição do PIN aceda à sua conta.
-4. Na [portal do Azure](https://portal.azure.com), confirme se os serviços de redefinição de PIN estão listados em aplicativos empresariais (todos os aplicativos): ![Página de permissões do serviço de reposição do PIN](./media/device-windows-pin-reset/pin-reset-service-application.png)
+4. No [portal do Azure](https://portal.azure.com), confirme se os serviços de reposição do PIN estão listados nas aplicações Empresariais (Todas as aplicações): ![Página de permissões do serviço de reposição do PIN](./media/device-windows-pin-reset/pin-reset-service-application.png)
 
 > [!NOTE]
 > Depois de Aceitar os pedidos de reposição do PIN, poderá receber a mensagem `Page not found` ou poderá parecer que nada aconteceu. Este comportamento é normal. Lembre-se de confirmar se as duas aplicações de Reposição do PIN estão listadas para o seu inquilino.

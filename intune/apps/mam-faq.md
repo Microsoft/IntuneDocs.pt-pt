@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 09/09/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1e77d303b3f9100c688b64feae6ca330d515df1b
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 0880d06e23b84c54cd6e24b6b61b5028c2a1d9bb
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71731104"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72507137"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Perguntas mais frequentes sobre a MAM e a proteção de aplicações
 
@@ -37,9 +38,9 @@ A MAM protege os dados de uma empresa dentro da aplicação. Com a MAM sem inscr
 
 **Que configurações de dispositivos suporta a MAM?**<br></br>
 A MAM do Intune suporta dois tipos de configurações:
-- **MDM + Mam do Intune**: Os administradores de TI só podem gerir as aplicações através da MAM e das políticas de proteção de aplicações em dispositivos que estejam inscritos na gestão de dispositivos móveis do Intune (MDM). Para gerir aplicações com a MDM + MAM, os clientes devem utilizar a consola do Intune no portal do Azure em https://portal.azure.com.
+- **Intune MDM + MAM**: os administradores de TI só podem gerir as aplicações através da MAM e das políticas de proteção de aplicações em dispositivos que estejam inscritos na gestão de dispositivos móveis do Intune (MDM). Para gerir aplicações com a MDM + MAM, os clientes devem utilizar a consola do Intune no portal do Azure em https://portal.azure.com.
 
-- **Mam sem registro de dispositivo**: MAM sem registro de dispositivo ou MAM-WE permite que os administradores de ti gerenciem aplicativos usando MAM e políticas de proteção de aplicativo em dispositivos não registrados com o MDM do Intune. Isto significa que as aplicações podem ser geridas pelo Intune em dispositivos inscritos em fornecedores de EMM terceiros. Para gerenciar aplicativos usando o MAM-WE, os clientes devem usar o console do Intune no portal do Azure em [https://portal.azure.com](https://portal.azure.com). Além disso, as aplicações podem ser geridas pelo Intune nos dispositivos inscritos em fornecedores de Gestão de Mobilidade da Empresa (EMM) de terceiros ou não inscritos numa MDM.
+- **MAM sem inscrição de dispositivos**: a MAM sem inscrição de dispositivos, ou MAM-WE, permite aos administradores de TI gerir as aplicações com a MAM e as políticas de proteção de aplicações nos dispositivos que não estejam inscritos na MDM do Intune. Isto significa que as aplicações podem ser geridas pelo Intune em dispositivos inscritos em fornecedores de EMM terceiros. Para gerenciar aplicativos usando o MAM-WE, os clientes devem usar o console do Intune no portal do Azure em [https://portal.azure.com](https://portal.azure.com). Além disso, as aplicações podem ser geridas pelo Intune nos dispositivos inscritos em fornecedores de Gestão de Mobilidade da Empresa (EMM) de terceiros ou não inscritos numa MDM.
 
 
 ## <a name="app-protection-policies"></a>Políticas de proteção de aplicações
@@ -105,7 +106,7 @@ O Intune marca todos os dados na aplicação como "empresariais" ou "pessoais". 
 **Quais são os requisitos adicionais para utilizar o Skype para Empresas?**<br></br>
 Veja os requisitos de licença do [Skype para Empresas](https://products.office.com/skype-for-business/it-pros). Para as configurações híbridas e no local do Skype para Empresas (SfB), veja [Hybrid Modern Auth for SfB and Exchange goes GA](https://techcommunity.microsoft.com/t5/Skype-for-Business-Blog/Hybrid-Modern-Auth-for-SfB-and-Exchange-goes-GA/ba-p/134756) (Autenticação Híbrida Moderna para SfB e o Exchange está em disponibilidade geral) e [Modern Auth for SfB OnPrem with AAD](https://techcommunity.microsoft.com/t5/Skype-for-Business-Blog/Modern-Auth-for-SfB-OnPrem-with-AAD/ba-p/180910) (Autenticação Moderna para SfB Local com o AAD), respetivamente.
 
-## <a name="app-protection-features"></a>Funcionalidades de proteção de aplicações
+## <a name="app-protection-features"></a>Funcionalidades da proteção de aplicações
 
 **O que é o suporte de identidades múltiplas?**<br></br>
 O suporte de identidades múltiplas é a capacidade do SDK da Aplicação Intune de só aplicar as políticas de proteção de aplicações à conta profissional ou escolar que tenha sessão iniciada na aplicação. Se uma conta pessoal tiver sessão iniciada na aplicação, os dados permanecem inalterados.
@@ -123,9 +124,9 @@ O Número de Identificação Pessoal (PIN) é um código de acesso utilizado par
 
 - **Com que frequência será pedido ao utilizador para introduzir o PIN do Intune?**<br></br> O administrador de TI pode configurar a definição“Reverificar os requisitos de acesso após (minutos)” da política de proteção de aplicações do Intune na consola de administração do Intune. Esta definição especifica o período de tempo antes da verificação dos requisitos de acesso no dispositivo e de uma nova apresentação do ecrã de PIN da aplicação. Contudo, os detalhes importantes sobre o PIN que afetam a frequência de solicitação do utilizador incluem: 
 
-  - **O PIN é compartilhado entre aplicativos do mesmo editor para melhorar a usabilidade:** No iOS, um PIN de aplicativo é compartilhado entre todos os aplicativos **do mesmo editor de aplicativos**. No Android, um PIN da aplicação é partilhado entre todas as aplicações.
-  - **O comportamento ' verificar novamente os requisitos de acesso após (minutos) ' após a reinicialização do dispositivo:** Um "timer de fixação" controla o número de minutos de inatividade que determinam quando mostrar o PIN do aplicativo do Intune em seguida. No iOS, o temporizador do PIN não é afetado pelo reinício do dispositivo. Desta forma, o reinício do dispositivo não afeta o número de minutos que o utilizador esteve inativo numa aplicação iOS que tenha a política de PIN do Intune. No Android, o temporizador do PIN é reposto ao reiniciar o dispositivo. Como tal, é provável que as aplicações Android com a política de PIN do Intune peçam um PIN da aplicação, independentemente do valor definido na opção "Reverificar os requisitos de acesso após (minutos)" **após reiniciar o dispositivo**.  
-  - **A natureza de sobreversão do temporizador associado ao PIN:** Depois que um PIN é inserido para acessar um aplicativo (aplicativo A) e o aplicativo deixa o primeiro plano (foco de entrada principal) no dispositivo, o timer de PIN é redefinido para esse PIN. Não será pedido nenhum PIN às aplicações (aplicação B) que partilhem este PIN, uma vez que o temporizador foi reposto. O pedido aparecerá novamente depois de o valor “Reverificar os requisitos de acesso após (minutos)” ter sido atingido.
+  - **O PIN é partilhado entre as aplicações do mesmo publicador para melhorar a facilidade de utilização:** no iOS, o PIN de uma aplicação é partilhado entre todas as aplicações **do mesmo publicador**. No Android, um PIN da aplicação é partilhado entre todas as aplicações.
+  - **O comportamento "Reverificar os requisitos de acesso após (minutos)" depois de um reinício de dispositivo:** um "temporizador do PIN" controla o número de minutos de inatividade que determina quando mostrar novamente o PIN da aplicação do Intune. No iOS, o temporizador do PIN não é afetado pelo reinício do dispositivo. Desta forma, o reinício do dispositivo não afeta o número de minutos que o utilizador esteve inativo numa aplicação iOS que tenha a política de PIN do Intune. No Android, o temporizador do PIN é reposto ao reiniciar o dispositivo. Como tal, é provável que as aplicações Android com a política de PIN do Intune peçam um PIN da aplicação, independentemente do valor definido na opção "Reverificar os requisitos de acesso após (minutos)" **após reiniciar o dispositivo**.  
+  - **A natureza flexível do temporizador associado ao PIN:** após introduzir um PIN para aceder a uma aplicação (aplicação A) e esta sair de primeiro plano (foco de introdução principal) no dispositivo, o temporizador deste PIN é reposto. Não será pedido nenhum PIN às aplicações (aplicação B) que partilhem este PIN, uma vez que o temporizador foi reposto. O pedido aparecerá novamente depois de o valor “Reverificar os requisitos de acesso após (minutos)” ter sido atingido.
 
 No caso dos dispositivos iOS, mesmo que o PIN seja partilhado entre aplicações de diferentes publicadores, o pedido aparecerá novamente quando o valor **Reverificar os requisitos de acesso após (minutos)** for alcançado novamente para a aplicação que não é o foco de introdução principal. Por exemplo, um utilizador tem a aplicação _A_ do publicador _X_ e a aplicação _B_ do publicador _Y_ e essas duas aplicações partilham o mesmo PIN. O utilizador está concentrado na aplicação _A_ (primeiro plano) e a aplicação _B_ está minimizada. O PIN seria necessário depois de o valor **Reverificar os requisitos de acesso após (minutos)** ser alcançado e de o utilizador mudar para a aplicação _B_.
 
@@ -208,8 +209,8 @@ As políticas de proteção de aplicações do Intune permitem o controlo sobre 
 
 A intenção é continuar a manter os dados da sua organização na aplicação em segurança e protegidos ao nível da aplicação. Esta funcionalidade só está disponível para iOS e requer a participação de aplicações que integrem o SDK da aplicação Intune para iOS, versão 9.0.1 ou posterior. Precisa da integração do SDK para que o comportamento possa ser imposto nas aplicações de destino. Esta integração decorre de forma gradual e está dependente das equipas específicas da aplicação. Algumas aplicações participantes incluem: WXP, Outlook, Managed Browser e Yammer.
   
-**Posso utilizar a extensão de partilha do iOS para abrir dados escolares ou profissionais em aplicações não geridas, mesmo com a política de transferência de dados definida para "apenas aplicações geridas" ou "nenhuma aplicação". Isto não resulta numa fuga de dados?**<br></br>
-A política de proteção de aplicações do Intune não consegue controlar a extensão de partilha do iOS se o dispositivo não for gerido. Por isso, o _**Intune encripta os dados "empresariais" antes de estes serem partilhados fora da aplicação**_ . Para comprovar, pode tentar abrir o ficheiro "empresarial" fora da aplicação gerida. O ficheiro deverá estar encriptado, e não deverá ser possível abri-lo fora da aplicação gerida.
+**Consigo usar a extensão de compartilhamento do iOS para abrir dados corporativos ou de estudante em aplicativos não gerenciados, mesmo com a política de transferência de dados definida como "somente aplicativos gerenciados" ou "nenhum aplicativo". Isso não causa perda de dados?**<br></br>
+A política de proteção de aplicações do Intune não consegue controlar a extensão de partilha do iOS se o dispositivo não for gerido. Por isso, o _**Intune encripta os dados "empresariais" antes de estes serem partilhados fora da aplicação**_ . Para o confirmar, pode tentar abrir o ficheiro "empresarial" fora da aplicação gerida. O ficheiro deverá estar encriptado, e não deverá ser possível abri-lo fora da aplicação gerida.
 
 **Como é que múltiplas definições de acesso de proteção de aplicações do Intune configuradas para o mesmo conjunto de aplicações e utilizadores funcionam no iOS?**<br></br>
 As políticas de proteção de aplicações do Intune para acesso serão aplicadas numa ordem específica nos dispositivos dos utilizadores finais à medida que tentam aceder a uma aplicação direcionada a partir da respetiva conta empresarial. Em geral, uma limpeza teria precedência, seguida de um bloqueio e de um aviso que pode ser dispensado. Por exemplo, se for aplicável ao utilizador/aplicação específico, uma definição de sistema operativo iOS mínimo que avisa um utilizador para atualizar a respetiva versão do iOS será aplicada após a definição de sistema operativo iOS mínimo bloquear o acesso do utilizador. Portanto, no cenário em que o administrador de TI configura o sistema operativo iOS mínimo para 11.0.0.0 e o sistema operativo iOS mínimo (apenas Aviso) para 11.1.0.0, embora o dispositivo que tentava aceder à aplicação tivesse o iOS 10, o utilizador final seria bloqueado com base na definição mais restrita de versão mínima de sistema operativo iOS que resulta num bloqueio do acesso.

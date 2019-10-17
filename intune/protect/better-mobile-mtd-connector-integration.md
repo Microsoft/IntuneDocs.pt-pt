@@ -9,17 +9,18 @@ manager: dougeby
 ms.date: 07/25/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ef94fff88c4318d6e3d387a58ca8359467fcc028
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 9faf34a9b417962e412eaa730cf91cd821ff7eb6
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71729428"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72509631"
 ---
 # <a name="integrate-better-mobile-with-intune"></a>Integrar o Better Mobile com o Intune
 
@@ -70,9 +71,9 @@ O processo de autorização da aplicação Better Mobile consiste no seguinte:
 5. Na janela **Microsoft Sign in** (Início de Sessão Microsoft), introduza as suas credenciais do Intune.
 6. Na janela **Permissions requested** (Permissões pedidas), selecione **Accept** (Aceitar).
 7. Procure os Grupos de Segurança do Azure AD cujos dispositivos pretende que o Better Mobile sincronize e selecione-os a partir da lista. Em seguida, selecione **Continue** (Continuar).
-8. Selecione **Done** (Concluído).
+8. Selecione **Concluído**.
 9. A página **Add account** (Adicionar conta) voltará a ser apresentada. Feche a página. 
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 - [Configurar Melhores Aplicações Cliente](mtd-apps-ios-app-configuration-policy-add-assign.md)

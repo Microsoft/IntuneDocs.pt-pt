@@ -1,5 +1,5 @@
 ---
-title: Definições personalizadas – Windows Holographic for Business dispositivos – Microsoft Intune
+title: Configurações personalizadas – dispositivos Windows Holographic for Business-Microsoft Intune
 description: Adicione ou crie um perfil personalizado para utilizar as definições OMA-URI para dispositivos com o Windows Holographic for Business no Microsoft Intune, incluindo o Microsoft Hololens. Pode configurar definições de fornecedor de serviços de configuração da política (CSP) AllowFastReconnect, AllowVPN, AllowUpdateService, UpdateServiceURL, RequireUpdatesApproval, ApprovedUpdates e ApplicationLaunchRestrictions.
 keywords: ''
 author: MandiOhlinger
@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 12/06/2018
 ms.article: article
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.topic: reference
 ms.technology: ''
@@ -15,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6547149a7de81b06ed82d308ece0527151225d28
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 54c38bac5ddf9eee1dd5f1dc6d544de3fa2395ab
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71730860"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506913"
 ---
 # <a name="use-custom-settings-for-windows-holographic-for-business-devices-in-intune"></a>Utilizar definições personalizadas para dispositivos com o Windows Holographic for Business no Intune
 
@@ -40,17 +41,17 @@ Este artigo mostra-lhe como criar um perfil personalizado para dispositivos com 
 2. Selecione **Configuração do dispositivo** > **Perfis** > **Criar perfil**.
 3. Introduza as seguintes definições:
 
-    - **Nome**: Insira um nome para o perfil, como `hololens custom profile`.
-    - **Descrição**: introduza uma descrição para o perfil.
-    - **Plataforma**: Escolha **Windows 10 e posterior**.
-    - **Tipo de perfil**: Escolha **personalizado**.
+    - **Nome**: introduza um nome para o perfil, como `hololens custom profile`.
+    - **Descrição:** introduza uma descrição para o perfil.
+    - **Plataforma**: selecione **Windows 10 e posterior**.
+    - **Tipo de perfil**: selecione **Personalizado**.
 
 4. Em **Definições OMA-URI Personalizadas**, selecione **Adicionar**. Introduza as seguintes definições:
 
-    - **Nome**: Introduza um nome exclusivo para a definição OMA-URI para o ajudar a identificá-la na lista de definições.
-    - **Descrição**: Insira uma descrição que dê uma visão geral da configuração e quaisquer outros detalhes importantes.
-    - **OMA-URI** (diferencia maiúsculas de minúsculas): Insira o OMA-URI que você deseja usar como uma configuração.
-    - **Tipo de dados**: Escolha o tipo de dados que você usará para essa configuração de OMA-URI. As opções são:
+    - **Nome** – introduza um nome exclusivo para a definição OMA-URI para o ajudar a identificá-la na lista de definições.
+    - **Descrição**: introduza uma descrição que lhe permita obter uma descrição geral da definição e outros detalhes importantes.
+    - **OMA-URI** (sensível a maiúsculas e minúsculas): introduza a definição OMA-URI que pretende utilizar.
+    - **Tipo de dados**: selecione o tipo de dados que irá utilizar para esta definição OMA-URI. As opções são:
 
         - Cadeia
         - Cadeia (ficheiro XML)
@@ -60,7 +61,7 @@ Este artigo mostra-lhe como criar um perfil personalizado para dispositivos com 
         - Booleano
         - Base64 (ficheiro)
 
-    - **Valor**: Insira o valor de dados que você deseja associar ao OMA-URI que você inseriu. O valor depende do tipo de dados que selecionou. Por exemplo, se optar por **Data e hora**, selecione o valor num seletor de datas.
+    - **Valor**: introduza o valor de dados que pretende associar à definição OMA-URI que introduziu. O valor depende do tipo de dados que selecionou. Por exemplo, se optar por **Data e hora**, selecione o valor num seletor de datas.
 
     Depois de adicionar algumas definições, pode selecionar **Exportar**. A opção **Exportar** cria uma lista de todos os valores que adicionou num ficheiro de valores separados por vírgulas (.csv).
 
@@ -169,7 +170,7 @@ Pode consultar a lista completa de todos os fornecedores de serviços de configu
 
 Além disso, o Intune não suporta todas as definições apresentadas em [CSPs supported in Windows Holographic](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#hololens) (CSPs suportados no Windows Holographic). Para saber se o Intune suporta a definição que pretende, abra o artigo referente a essa definição. Cada página de definição mostra a respetiva operação suportada. Para trabalhar com o Intune, a definição tem de suportar as operações **Adicionar** ou **Substituir**.
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Próximos passos
 
 O perfil está criado, mas ainda não está ativo. Em seguida, [atribua o perfil](device-profile-assign.md).
 

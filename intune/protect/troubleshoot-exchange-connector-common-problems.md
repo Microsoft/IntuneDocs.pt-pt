@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 10/02/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2d31df7ba639f703c89345440b737c990949ccc9
-ms.sourcegitcommit: a2654f3642b43b29ab0e1cbb2dfa2b56aae18d0e
+ms.openlocfilehash: e9542212e1b75d97c96c024eed20e20e610e2b5d
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72310888"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503643"
 ---
 # <a name="resolve-common-problems-with-the-intune-exchange-connector"></a>Resolver problemas comuns com o Intune Exchange Connector
  
@@ -35,7 +36,7 @@ Quando um dispositivo do Exchange ActiveSync não for descoberto do Exchange, [m
 
 - Verifique se os usuários têm uma licença do Intune. Caso contrário, o Exchange Connector não descobrirá seus dispositivos.  
 
-- Se o endereço SMTP primário do usuário for diferente do nome principal do usuário (UPN) no Azure Active Directory (Azure AD), o Exchange Connector não descobrirá nenhum dispositivo para esse usuário. Corrija o endereço SMTP primário para resolver o problema.  
+- Se o endereço SMTP primário do usuário for diferente do nome principal do usuário (UPN) no Azure Active Directory (Azure AD), o Exchange Connector não descobrirá nenhum dispositivo para esse usuário. Corrija o endereço SMTP principal para resolver o problema.  
 
 - Se você tiver servidores de caixa de correio do Exchange 2010 e do Exchange 2013 em seu ambiente, é recomendável apontar o Exchange Connector para um servidor de acesso para cliente (CAS) do Exchange 2013. Se o Exchange Connector estiver configurado para se comunicar com uma CAS do Exchange 2010, o Exchange Connector não descobrirá nenhum dispositivo de usuário no Exchange 2013.  
 
@@ -91,7 +92,7 @@ Se a descoberta automática falhar, tente as seguintes etapas:
 >[!NOTE]
 > Nessa configuração, o Intune Exchange Connector interrompe o uso da descoberta automática e, em vez disso, conecta-se diretamente à URL do EWS.
 
-## <a name="next-steps"></a>Passos seguintes  
+## <a name="next-steps"></a>Próximos passos  
 
 Para obter ajuda com erros específicos, tente [resolver erros comuns para o Intune Exchange Connector](troubleshoot-exchange-connector-common-errors.md).
 

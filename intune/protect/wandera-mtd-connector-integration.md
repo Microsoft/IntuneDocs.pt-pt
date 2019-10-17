@@ -9,17 +9,18 @@ manager: dougeby
 ms.date: 06/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 64a560dc79d3c03f52b8e9389c3e47e3e256ee58
-ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
+ms.openlocfilehash: a548b1e1728928ca74ca7207b7e60d91ba5fc8aa
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72306674"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503592"
 ---
 # <a name="integrate-wandera-mobile-threat-protection-with-intune"></a>Integre a proteção contra ameaças móveis do com o Intune  
 
@@ -28,10 +29,10 @@ Conclua as etapas a seguir para integrar a solução de defesa contra ameaças m
 ## <a name="before-you-begin"></a>Antes de começar  
 
 Antes de iniciar o processo de integração do com o Intune, verifique se você tem os seguintes pré-requisitos em vigor:
-- Assinatura Microsoft Intune  
-- Azure Active Directory credenciais de administrador para conceder as seguintes permissões:  
-  - Entrar e ler o perfil do usuário  
-  - Acessar o diretório como o usuário conectado  
+- Subscrição do Microsoft Intune  
+- Credenciais de administrador do Azure Active Directory para conceder as seguintes permissões:  
+  - Iniciar sessão e ler o perfil de utilizador  
+  - Aceder ao diretório como o utilizador com sessão iniciada  
   - Ler dados do diretório  
   - Enviar informações do dispositivo para o Intune  
 
@@ -121,6 +122,6 @@ Repita o procedimento a seguir para o aplicativo do onit que você criou para iO
 4. Selecione **grupos incluídos**e **selecione grupos a serem incluídos**. Especifique o grupo que você criou para a sincronização de e, em seguida, clique em **selecionar** > **OK** > **OK**. Selecione **salvar** para concluir a atribuição de grupo.  
  
 
-## <a name="next-steps"></a>Próximos Passos  
+## <a name="next-steps"></a>Passos Seguintes  
 Agora que você configurou a integração, pode iniciar a configuração de políticas, configurar o acesso condicional avançado e exibir relatórios no console de administração do inicioa. Para saber mais sobre como gerenciar e configurar o, consulte o [Guia do centro de suporte introdução](https://radar.wandera.com/?return_to=https://wandera.force.com/Customer/s/getting-started) na documentação do backcenter.  
  

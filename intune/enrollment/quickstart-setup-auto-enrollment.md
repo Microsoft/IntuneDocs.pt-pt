@@ -3,7 +3,9 @@ title: Início Rápido – Configurar a inscrição automática no Intune
 description: 'Início Rápido: configurar a inscrição automática para dispositivos Windows 10 no Intune.'
 services: microsoft-intune
 author: ErikjeMS
+manager: dougeby
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.topic: quickstart
 ms.date: 03/26/2019
@@ -13,14 +15,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dbd00f507b4e1587e360c364719cf380759e8081
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 6e64c7d977fef66af0fedf556eea34bef9b9079d
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71731852"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503124"
 ---
-# <a name="quickstart-set-up-automatic-enrollment-for-windows-10-devices"></a>Início rápido: Configurar o registro automático para dispositivos Windows 10
+# <a name="quickstart-set-up-automatic-enrollment-for-windows-10-devices"></a>Início Rápido: configurar a inscrição automática para dispositivos com o Windows 10
 
 Neste início rápido, vai configurar o Microsoft Intune para inscrever dispositivos automaticamente mediante o início de sessão de utilizadores específicos em dispositivos com o Windows 10.
 
@@ -69,11 +71,11 @@ Neste exemplo, irá utilizar a inscrição na MDM para que seja possível inscre
 
 Para reconfigurar a inscrição automática do Intune, veja [Configurar a inscrição para dispositivos Windows](windows-enroll.md).
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Neste início rápido, aprendeu a configurar a inscrição automática para dispositivos com o Windows 10. Para obter mais informações sobre a inscrição de dispositivos, veja [O que é a inscrição de dispositivos?](device-enrollment.md)
 
 Para seguir esta série de guias de início rápido do Intune, continue para o próximo guia de início rápido.
 
 > [!div class="nextstepaction"]
-> [TUTORIAIS Registrar seu dispositivo Windows 10](../quickstart-enroll-windows-device.md)
+> [Guia de Início Rápido: inscrever o seu dispositivo com o Windows 10](../quickstart-enroll-windows-device.md)

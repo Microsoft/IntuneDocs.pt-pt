@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/23/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 40bb96000513bb1de09ec8f8865735d70bddcd43
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: c8e61be086323a16a6220573874ed80ce4e9bd32
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71731268"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72498984"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Adicionar aplicações ao Microsoft Intune 
 
@@ -108,7 +109,7 @@ Utilize o [Guia de planeamento, estruturação e implementação do Intune](../f
 Pode selecionar de entre os seguintes tipos de aplicações:
 - **Aplicações da loja**: as aplicações que foram carregadas para a Microsoft Store, a loja iOS ou a loja Android são lojas de aplicações. O fornecedor da aplicação da loja encarrega-se da manutenção e disponibiliza atualizações à aplicação. Tem de selecionar a aplicação na lista da loja e adicioná-la com o Intune como uma aplicação disponível para os seus utilizadores.
 - **Aplicações escritas internamente (linha de negócio)** : as aplicações criadas internamente são aplicações de linha de negócio (LOB). A funcionalidade desse tipo de aplicativo foi criada para uma das plataformas com suporte do Intune, como Windows, iOS, macOS ou Android. A sua organização cria e fornece atualizações como um ficheiro separado. Tem de fornecer atualizações da aplicação aos utilizadores ao adicionar e implementar as atualizações com o Intune.
-- **Aplicações na Web**: as aplicações Web são aplicações cliente/servidor. O servidor proporciona a aplicação Web, que inclui a IU, conteúdos e funcionalidades. Além disso, normalmente as plataformas de alojamento na Web modernas oferecem segurança, balanceamento de carga e outras vantagens. A manutenção deste tipo de aplicação é feita separadamente na Web. Tem de utilizar o Intune para apontar para este tipo de aplicação. Também tem de designar que grupos de utilizadores podem aceder à aplicação. Tenha em atenção que o Android não suporta aplicações Web.
+- **Aplicações na Web**: são aplicações de servidor de cliente. O servidor proporciona a aplicação Web, que inclui a IU, conteúdos e funcionalidades. Além disso, normalmente as plataformas de alojamento na Web modernas oferecem segurança, balanceamento de carga e outras vantagens. A manutenção deste tipo de aplicação é feita separadamente na Web. Tem de utilizar o Intune para apontar para este tipo de aplicação. Também tem de designar que grupos de utilizadores podem aceder à aplicação. Tenha em atenção que o Android não suporta aplicações Web.
 
 Ao determinar as aplicações necessárias para a sua organização, tenha em consideração a forma como estas aplicações se integram com serviços cloud, os dados aos quais as aplicações podem aceder, se as aplicações estão disponíveis para utilizadores BYOD e se as aplicações precisam de acesso à Internet.
 
@@ -125,9 +126,9 @@ As aplicações geridas pelo Intune também permitem a proteção de aplicaçõe
 
 ### <a name="understanding-licensed-apps"></a>Compreender as aplicações licenciadas
 Para além de compreender as aplicações Web, aplicações da loja e aplicações LOB, também deve ter em atenção o destino das aplicações licenciadas e aplicações de programa de compras em volume, tais como: 
-- **Volume Purchase Program for Business (iOS) da Apple**: a iOS App Store permite-lhe comprar várias licenças para uma aplicação que pretende executar na sua empresa. A compra de várias cópias ajuda-o a gerir aplicações na sua empresa de forma eficiente. Para obter mais informações, veja [Gerir aplicações iOS compradas em volume](vpp-apps-ios.md).
-- **Perfil de trabalho do Android**: A forma como atribui aplicações em dispositivos com perfil de trabalho do Android é diferente em dispositivos Android padrão. Todas as aplicações que instala em dispositivos com perfil de trabalho do Android são provenientes da Google Play Store gerida. Pode utilizar o Intune para procurar as aplicações pretendidas e aprová-las. Em seguida, a aplicação aparece no nó **Aplicações licenciadas** do portal do Azure e pode gerir a atribuição da aplicação como faria com qualquer outra aplicação.
-- **Microsoft Store para Empresas (Windows 10)** : na Microsoft Store para Empresas pode encontrar e adquirir aplicações para a sua organização, individualmente ou em volume. Ao ligar a loja ao Microsoft Intune, pode gerir as aplicações compradas em volume no portal do Azure. Para obter mais informações, veja [Gerir aplicações a partir da Microsoft Store para Empresas](windows-store-for-business.md).
+- **Apple Volume Purchasing Program for Business (iOS)** : a App Store do iOS permite-lhe comprar múltiplas licenças para uma aplicação que pretende executar na sua empresa. A compra de várias cópias ajuda-o a gerir aplicações na sua empresa de forma eficiente. Para obter mais informações, veja [Gerir aplicações iOS compradas em volume](vpp-apps-ios.md).
+- **Perfil de trabalho do Android**: a forma como atribui aplicações em dispositivos com perfil de trabalho do Android é diferente em dispositivos Android padrão. Todas as aplicações que instala em dispositivos com perfil de trabalho do Android são provenientes da Google Play Store gerida. Pode utilizar o Intune para procurar as aplicações pretendidas e aprová-las. Em seguida, a aplicação aparece no nó **Aplicações licenciadas** do portal do Azure e pode gerir a atribuição da aplicação como faria com qualquer outra aplicação.
+- **Microsoft Store para Empresas (Windows 10)** : a Microsoft Store para Empresas dá-lhe um local para encontrar e comprar aplicações para a sua organização, individualmente ou em volume. Ao ligar a loja ao Microsoft Intune, pode gerir as aplicações compradas em volume no portal do Azure. Para obter mais informações, veja [Gerir aplicações a partir da Microsoft Store para Empresas](windows-store-for-business.md).
 
     > [!NOTE]
     > As extensões de ficheiros de aplicações do Windows incluem **.msi**, **.appx**, **.appxbundle**, **.msix** e **.msixbundle**.  
@@ -189,7 +190,7 @@ O Intune irá reinstalar, atualizar ou remover automaticamente uma aplicação n
 
 Para obter detalhes sobre os erros de instalação da aplicação Intune, veja [Erros de instalação da aplicação](troubleshoot-app-install.md#app-installation-errors).
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Para saber como adicionar aplicações para cada plataforma ao Intune, veja:
 

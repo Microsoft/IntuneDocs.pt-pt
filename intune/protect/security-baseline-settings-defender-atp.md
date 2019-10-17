@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 07/25/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 52420375ae5ed88ab713a1da3e927e43e433db83
-ms.sourcegitcommit: 884654da8e72a63bfaea6b5def6c7891b065f251
+ms.openlocfilehash: a2cb5d7375ae5b76a24861872d4abf786f199dfd
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72163488"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72509003"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Configurações de linha de base de proteção avançada contra ameaças do Microsoft defender para Intune
 
@@ -60,7 +61,7 @@ Ao usar o Microsoft Edge, o Microsoft defender Application Guard protege seu amb
     - *Bloquear contêiner para host* -os dados não podem transferir do navegador virtual para o PC host.
     - *Bloquear nenhum* -nenhum bloco de conteúdo existe.  
 
-    **Padrão**: Bloquear ambos  
+    **Padrão**: bloquear ambos  
 
 - **Política de isolamento de rede do Windows – nomes de domínio de rede corporativa**  
   Para obter mais informações, consulte [Policy CSP-NetworkIsolation](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-networkisolation) na documentação do Windows.
@@ -88,17 +89,17 @@ Para obter mais informações, consulte [CSP da política-SmartScreen](https://d
 - **Tipo de processo filho de lançamento de aplicativos do Office**  
   [Regra de redução da superfície de ataque](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) – quando definido como *Bloquear*, os aplicativos do Office não poderão criar processos filho. Os aplicativos do Office incluem Word, Excel, PowerPoint, OneNote e Access. A criação de um processo filho é um comportamento típico de malware, especialmente para ataques baseados em macro que tentam usar aplicativos do Office para iniciar ou baixar executáveis mal-intencionados.  
 
-  **Padrão**: Bloquear
+  **Padrão**: bloquear
 
 - **Tipo de execução de conteúdo baixado por script**  
   [Defender/PUAProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-puaprotection) – especifique um nível de detecção para aplicativos potencialmente indesejados que são baixados ou tentam ser instalados.  
 
-  **Padrão**: Bloquear 
+  **Padrão**: bloquear 
 
 - **Impedir tipo de roubo de credencial**  
-  Defina como *habilitar* para [proteger as credenciais de domínio derivadas com o Credential Guard](https://docs.microsoft.com/windows/security/identity-protection/credential-guard/credential-guard). O Windows Defender Credential Guard usa segurança baseada em virtualização para isolar segredos para que somente o software de sistema privilegiado possa acessá-los. O acesso não autorizado a estes segredos pode levar a ataques de roubo de credenciais, tal como Ataques PtH ou PtT. O Windows Defender Credential Guard impede esses ataques ao proteger os hashes de senha NTLM, tíquetes de concessão de permissão Kerberos e credenciais armazenadas por aplicativos como credenciais de domínio.  
+  Defina como *habilitar* para [proteger as credenciais de domínio derivadas com o Credential Guard](https://docs.microsoft.com/windows/security/identity-protection/credential-guard/credential-guard). O Windows Defender Credential Guard usa segurança baseada em virtualização para isolar segredos para que somente o software de sistema privilegiado possa acessá-los. O acesso não autorizado a esses segredos pode levar a ataques de roubo de credenciais, como Pass-the-hash ou Pass-the-ticket. O Windows Defender Credential Guard impede esses ataques ao proteger os hashes de senha NTLM, tíquetes de concessão de permissão Kerberos e credenciais armazenadas por aplicativos como credenciais de domínio.  
 
-  **Padrão**: Ativar
+  **Padrão**: habilitar
 
 - **Tipo de execução de conteúdo de email**  
   [Regra de redução da superfície de ataque](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) – quando definido como *Bloquear*, essa regra impede que os seguintes tipos de arquivo sejam executados ou iniciados de um email visto no Microsoft Outlook ou webmail (como gmail.com ou Outlook.com):  
@@ -107,17 +108,17 @@ Para obter mais informações, consulte [CSP da política-SmartScreen](https://d
   - Arquivos de script (como um arquivo PowerShell. PS, VisualBasic. vbs ou JavaScript. js)  
   - Arquivos mortos de script  
 
-  **Padrão**: Bloquear
+  **Padrão**: bloquear
 
 - **Lançamento do Adobe Reader em um processo filho**  
   [Regra de redução da superfície de ataque](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) – *habilite* essa regra para impedir que o Adobe Reader crie um processo filho. Por meio de engenharia social ou explorações, o malware pode baixar e iniciar cargas adicionais e dividir o Adobe Reader.  
 
-  **Padrão**: Ativar
+  **Padrão**: habilitar
 
 - **Script de tipo de código de macro ofuscado**  
   [Regra de redução da superfície de ataque](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) – malware e outras ameaças podem tentar ofuscar ou ocultar seu código mal-intencionado em alguns arquivos de script. Essa regra impede que os scripts que parecem estar ofuscados sejam executados.  
     
-  **Padrão**: Bloquear
+  **Padrão**: bloquear
 
 - **Tipo de processo USB não confiável**  
   [Regra de redução da superfície de ataque](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) – quando definido para *Bloquear*, não assinados ou arquivos executáveis não confiáveis de unidades removíveis USB e os cartões SD não podem ser executados.
@@ -126,29 +127,29 @@ Para obter mais informações, consulte [CSP da política-SmartScreen](https://d
   - Arquivos executáveis (como. exe,. dll ou. SCR)
   - Arquivos de script (como um arquivo PowerShell. PS, VisualBasic. vbs ou JavaScript. js)  
 
-  **Padrão**: Bloquear
+  **Padrão**: bloquear
 
 - **Outro tipo de injeção de processo de aplicativos do Office**  
   [Regra de redução da superfície de ataque](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) -quando definido como *Bloquear*, os aplicativos do Office, incluindo o Word, o Excel, o PowerPoint e o OneNote, não podem injetar código em outros processos. A injeção de código é normalmente usada por malware para executar código mal-intencionado em uma tentativa de ocultar a atividade de mecanismos de verificação antivírus.  
 
-  **Padrão**: Bloquear
+  **Padrão**: bloquear
 
 - **Código de macro do Office permitir tipo de importações do Win32**  
   [Regra de redução da superfície de ataque](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) – quando definido como *Bloquear*, essa regra tenta bloquear os arquivos do Office que contêm o código de macro que pode importar as DLLs do Win32. Os arquivos do Office incluem Word, Excel, PowerPoint e OneNote. O malware pode usar o código de macro em arquivos do Office para importar e carregar as DLLs do Win32, que são usadas para fazer chamadas à API para permitir infecções adicionais em todo o sistema.  
 
-  **Padrão**: Bloquear
+  **Padrão**: bloquear
 
 - **Aplicativos de comunicação do Office são iniciados em um processo filho**  
   [Regra de redução da superfície de ataque](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) – quando definido como *habilitar*, essa regra impede que o Outlook Crie processos filho. Ao bloquear a criação de um processo filho, essa regra protege contra ataques de engenharia social e impede que o código de exploração abusando uma vulnerabilidade no Outlook.  
 
-  **Padrão**: Ativar
+  **Padrão**: habilitar
 
 - **Criação de conteúdo executável de aplicativos do Office ou tipo de inicialização**  
   [Regra de redução da superfície de ataque](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) – quando definido como *Bloquear*, os aplicativos do Office não podem criar conteúdo executável. Os aplicativos do Office incluem Word, Excel, PowerPoint, OneNote e Access.  
 
   Essa regra destina-se a comportamentos típicos usados por Complementos suspeitos e mal-intencionados e scripts (extensões) que criam ou iniciam arquivos executáveis. Essa é uma técnica típica de malware. As extensões são impedidas de serem usadas pelos aplicativos do Office. Normalmente, essas extensões usam o Windows Scripting Host (arquivos. WSH) para executar scripts que automatizam determinadas tarefas ou fornecem recursos de complemento criados pelo usuário.
 
-  **Padrão**: Bloquear
+  **Padrão**: bloquear
 
 ## <a name="bitlocker"></a>BitLocker  
 
@@ -168,7 +169,7 @@ Para obter mais informações, o [BitLocker política de grupo configurações](
     **Padrão**: Sim
 
   - **Método de criptografia**  
-    **Padrão**: CBC 128bit do AES
+    **Padrão**: AES 128bit CBC
 
 - **Política de unidade fixa do armário de bits**  
   Os valores dessa política determinam a força da codificação que o BitLocker usa para a criptografia de unidades fixas. As empresas podem controlar o nível de criptografia para aumentar a segurança (o AES-256 é mais seguro do que o AES-128). Se você habilitar essa configuração, poderá configurar um algoritmo de criptografia e a intensidade de codificação de chave para unidades de dados fixas, unidades do sistema operacional e unidades de dados removíveis individualmente. Para unidades fixas e do sistema operacional, recomendamos que você use o algoritmo XTS-AES. Para unidades removíveis, você deve usar AES-CBC 128-bit ou AES-CBC 256-bit se a unidade for usada em outros dispositivos que não estão executando o Windows 10, versão 1511 ou posterior. A alteração do método de criptografia não terá efeito se a unidade já estiver criptografada ou se a criptografia estiver em andamento. Nesses casos, essa configuração de política é ignorada.
@@ -179,7 +180,7 @@ Para obter mais informações, o [BitLocker política de grupo configurações](
     **Padrão**: Sim
 
   - **Método de criptografia**  
-    **Padrão**: XTS 128bit AES
+    **Padrão**: AES 128bit XTS
 
 - **Política de unidade do sistema do armário de bits**  
   Os valores dessa política determinam a força da codificação que o BitLocker usa para a criptografia da unidade do sistema. As empresas podem querer controlar o nível de criptografia para aumentar a segurança (o AES-256 é mais seguro do que o AES-128). Se você habilitar essa configuração, poderá configurar um algoritmo de criptografia e a intensidade de codificação de chave para unidades de dados fixas, unidades do sistema operacional e unidades de dados removíveis individualmente. Para unidades fixas e do sistema operacional, recomendamos que você use o algoritmo XTS-AES. Para unidades removíveis, você deve usar AES-CBC 128-bit ou AES-CBC 256-bit se a unidade for usada em outros dispositivos que não estão executando o Windows 10, versão 1511 ou posterior. A alteração do método de criptografia não terá efeito se a unidade já estiver criptografada ou se a criptografia estiver em andamento. Nesses casos, essa configuração de política é ignorada.  
@@ -187,14 +188,14 @@ Para obter mais informações, o [BitLocker política de grupo configurações](
   Para a política de unidade do sistema do armário de bits, defina as seguintes configurações:  
 
   - **Método de criptografia**  
-    **Padrão**: XTS 128bit AES
+    **Padrão**: AES 128bit XTS
 
 ## <a name="device-control"></a>Controle de dispositivo  
 
 - **Verificar unidades removíveis durante uma verificação completa**  
   [Defender/AllowFullScanRemovableDriveScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning) -quando definido como *Sim*, o defender verifica se há software mal-intencionado e indesejado em unidades removíveis, como unidades flash, durante uma verificação completa. O defender antivírus examina todos os arquivos em dispositivos USB antes que os arquivos no dispositivo USB possam ser executados.
 
-  Configuração relacionada nesta lista: *Defender/AllowFullScanOnMappedNetworkDrives*  
+  Configuração relacionada nesta lista: *defender/AllowFullScanOnMappedNetworkDrives*  
 
   **Padrão**: Sim
 
@@ -212,23 +213,23 @@ Para obter mais informações, o [BitLocker política de grupo configurações](
   - *Permitir todos* -todos os dispositivos PCIe com capacidade para DMA externos serão enumerados a qualquer momento
   - *Bloquear todos os* dispositivos com remapeamento de DMA os drivers compatíveis têm permissão para enumerar a qualquer momento. Dispositivos com remapeamento de DMA drivers incompatíveis nunca terão permissão para iniciar e executar DMA a qualquer momento.
 
-  **Padrão**: Padrão do dispositivo
+  **Padrão**: dispositivo padrão
 
 - **Instalação de dispositivo de hardware por identificadores de dispositivo**  
   [DeviceInstallation/PreventInstallationOfMatchingDeviceIDs](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-preventinstallationofmatchingdeviceids) -com essa política, você especifica uma lista de plug and Play IDs de hardware e IDs compatíveis para dispositivos que o Windows é impedido de instalar. Essa configuração de política tem precedência sobre qualquer outra configuração de diretiva que permita que o Windows instale um dispositivo. Se você habilitar essa configuração de política (definida para *bloquear a instalação do dispositivo de hardware*), o Windows será impedido de instalar um dispositivo cuja ID de hardware ou ID compatível apareça na lista que você criar. Se você habilitar essa configuração de política em um servidor de área de trabalho remota, a política afetará o redirecionamento dos dispositivos especificados de um cliente de área de trabalho remota para o servidor de área de trabalho remota. Se você desabilitar ou não definir essa configuração de política (definida para *permitir a instalação do dispositivo de hardware*), os dispositivos poderão instalar e atualizar conforme permitido ou impedido por outras configurações de política.  
 
-  **Padrão**: Bloquear a instalação do dispositivo de hardware  
+  **Padrão**: bloquear a instalação do dispositivo de hardware  
 
   Quando *Bloquear instalação de dispositivo de hardware* estiver selecionado, as configurações a seguir estarão disponíveis.
   - **Remover dispositivos de hardware correspondentes**  
     Essa configuração está disponível somente quando *a instalação do dispositivo de hardware por identificadores de dispositivo* está definida para *bloquear a instalação do dispositivo de hardware*.  
 
-    **Padrão**: *Nenhuma configuração padrão*
+    **Padrão**: *nenhuma configuração padrão*
 
   - **Identificadores de dispositivo de hardware que são bloqueados**  
     Essa configuração está disponível somente quando *a instalação do dispositivo de hardware por identificadores de dispositivo* está definida para *bloquear a instalação do dispositivo de hardware*. Para definir essa configuração, expanda a opção, selecione **+ Adicionar**e especifique o identificador de dispositivo de hardware que você deseja bloquear.  
 
-    **Padrão**: *Nenhum dispositivo bloqueado*  
+    **Padrão**: *nenhum dispositivo está bloqueado*  
 
 - **Bloquear o acesso direto à memória**  
   [Dataprotection/AllowDirectMemoryAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess) -Use essa configuração de política para bloquear o DMA (acesso direto à memória) para todas as portas de downstream PCI conectadas a quente em um dispositivo, até que um usuário faça logon no Windows. Quando um usuário fizer logon, o Windows enumerará os dispositivos PCI conectados às portas PCI plug-host. Toda vez que o usuário bloqueia a máquina, o DMA é bloqueado em portas PCI de plugue a quente sem dispositivos filhos até que o usuário faça logon novamente. Os dispositivos que já foram enumerados quando o computador foi desbloqueado continuarão funcionando até serem desconectados. 
@@ -241,19 +242,19 @@ Para obter mais informações, o [BitLocker política de grupo configurações](
 - **Instalação de dispositivo de hardware por classes de instalação**  
   [DeviceInstallation/AllowInstallationOfMatchingDeviceSetupClasses](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-allowinstallationofmatchingdevicesetupclasses) -com essa política, você pode especificar uma lista de identificadores exclusivos (GUIDs) de classe de instalação de dispositivo para drivers de dispositivo que o Windows é impedido de instalar. Essa configuração de política tem precedência sobre qualquer outra configuração de diretiva que permita que o Windows instale um dispositivo. Se você habilitar essa configuração de política (definida para *bloquear a instalação do dispositivo de hardware*), o Windows será impedido de instalar ou atualizar drivers de dispositivo cujos GUIDs de classe de instalação do dispositivo apareçam na lista que você criar. Se você habilitar essa configuração de política em um servidor de área de trabalho remota, a configuração de política afetará o redirecionamento dos dispositivos especificados de um cliente de área de trabalho remota para o servidor de área de trabalho remota. Se você desabilitar ou não definir essa configuração de política (definida para *permitir a instalação do dispositivo de hardware*), o Windows poderá instalar e atualizar dispositivos conforme permitido ou impedido por outras configurações de política.  
 
-  **Padrão**: Bloquear a instalação do dispositivo de hardware
+  **Padrão**: bloquear a instalação do dispositivo de hardware
 
   Quando *Bloquear instalação de dispositivo de hardware* estiver selecionado, as configurações a seguir estarão disponíveis.  
 
   - **Remover dispositivos de hardware correspondentes**  
     Essa configuração está disponível somente quando *a instalação do dispositivo de hardware por classes de instalação* está definida para *bloquear a instalação do dispositivo de hardware*.  
  
-    **Padrão**: *Nenhuma configuração padrão*  
+    **Padrão**: *nenhuma configuração padrão*  
 
   - **Identificadores de dispositivo de hardware que são bloqueados**  
     Essa configuração está disponível somente quando a instalação do dispositivo de hardware por classes de instalação está definida para bloquear a instalação do dispositivo de hardware. Para definir essa configuração, expanda a opção, selecione **+ Adicionar**e especifique o identificador de dispositivo de hardware que você deseja bloquear.  
  
-    **Padrão**: *Nenhum dispositivo bloqueado*
+    **Padrão**: *nenhum dispositivo está bloqueado*
 
 ## <a name="endpoint-detection-and-response"></a>Detecção e resposta de ponto de extremidade  
 Para obter mais informações, consulte [WINDOWSADVANCEDTHREATPROTECTION CSP](https://docs.microsoft.com/windows/client-management/mdm/windowsadvancedthreatprotection-csp) na documentação do Windows.  
@@ -290,7 +291,7 @@ Para obter mais informações, consulte [WINDOWSADVANCEDTHREATPROTECTION CSP](ht
   
    Proteja ficheiros e pastas contra alterações não autorizadas por aplicações não fidedignas.
 
-  **Padrão**: Modo de auditoria
+  **Padrão**: modo de auditoria
 
 ## <a name="web--network-protection"></a>Proteção de rede & Web  
 
@@ -304,7 +305,7 @@ Para obter mais informações, consulte [WINDOWSADVANCEDTHREATPROTECTION CSP](ht
 
   Quando definido como *definido pelo usuário*, os usuários e aplicativos não são impedidos de se conectar a domínios perigosos e as informações sobre conexões não estão disponíveis na central de segurança do Windows Defender.  
 
-  **Padrão**: Modo de auditoria
+  **Padrão**: modo de auditoria
 
 - **Exigir SmartScreen para o Microsoft Edge**  
   O [navegador/AllowSmartScreen](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen) -Microsoft Edge usa o Windows Defender SmartScreen (ativado) para proteger os usuários contra possíveis golpes de phishing e softwares mal-intencionados por padrão. Por padrão, essa política está habilitada (definida como *Sim*) e, quando habilitada, impede que os usuários desativem o Windows Defender SmartScreen.  Quando a política efetiva de um dispositivo é igual a não configurado, os usuários podem desativar o Windows Defender SmartScreen, o que deixa o dispositivo desprotegido.  
@@ -338,7 +339,7 @@ Para obter mais informações, consulte [Policy CSP-defender](https://docs.micro
 - **Tipo de consentimento de envio de amostra do defender**  
   [Defender/SubmitSamplesConsent](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent) -verifica o nível de consentimento do usuário no Windows Defender para enviar dados. Se o consentimento necessário já tiver sido concedido, o Windows defender os enviará. Se não (e se o usuário tiver especificado nunca perguntar), a interface do usuário será iniciada para solicitar o consentimento do usuário (quando a *proteção fornecida pela nuvem* estiver definida como *Sim*) antes de enviar dados.  
 
-  **Padrão**: Enviar amostras seguras automaticamente
+  **Padrão**: enviar amostras seguras automaticamente
 
 - **Sistema de Inspeção de Rede (NIS)**  
   [Defender/EnableNetworkProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection) -bloqueia o tráfego mal-intencionado detectado por assinaturas no sistema de inspeção de rede (NIS).  
@@ -363,7 +364,7 @@ Para obter mais informações, consulte [Policy CSP-defender](https://docs.micro
 - **Tipo de verificação do sistema a ser executada**  
   Tipo de verificação do [defender/ScanParameter](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-scanparameter) -defender.  
 
-  **Padrão**: Verificação rápida
+  **Padrão**: verificação rápida
 
 - **Analisar todas as transferências**  
   [Defender/AllowIOAVProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowioavprotection) -quando definido como *Sim*, o defender examina todos os arquivos e anexos baixados.  
@@ -378,9 +379,9 @@ Para obter mais informações, consulte [Policy CSP-defender](https://docs.micro
 - **Hora de início da verificação agendada**  
   [Defender/ScheduleScanTime](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescantime) – agende uma hora do dia para o defender verificar dispositivos. 
   
-  Opção relacionada nesta lista: *Defender/ScheduleScanDay*   
+  Opção relacionada nesta lista: *defender/ScheduleScanDay*   
 
-  **Padrão**: 2 AM
+  **Padrão**: 2 am
 
 - **Proteção entregue na nuvem**  
   [Defender/AllowCloudProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowcloudprotection) – quando definido como *Sim*, o Windows Defender envia informações à Microsoft sobre quaisquer problemas encontrados. A Microsoft analisará essas informações, aprenderá mais sobre problemas que afetam você e outros clientes, além de oferecer soluções aprimoradas.
@@ -396,7 +397,7 @@ Para obter mais informações, consulte [Policy CSP-defender](https://docs.micro
   - Quando definido como *auditoria*, o Windows Defender detecta o puas, mas não os bloqueia. As informações sobre os aplicativos nos quais o Windows Defender teria feito a ação podem ser encontradas pesquisando eventos que foram criados pelo Windows Defender no Visualizador de Eventos.  
   - Quando definido como *padrão do dispositivo*, a proteção pua está desativada.  
  
-  **Padrão**: Bloquear
+  **Padrão**: bloquear
 
 - **Tempo limite estendido do defender Cloud**  
   [Defender/CloudExtendedTimeout](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-cloudextendedtimeout) – especifique a quantidade máxima de tempo adicional que o Windows Defender antivírus deve bloquear um arquivo enquanto aguarda um resultado da nuvem. A quantidade de tempo de base que o Windows Defender espera é de 10 segundos. Qualquer tempo adicional que você especificar aqui (até 50 segundos) será adicionado a esses 10 segundos. Na maioria dos casos, a verificação leva menos tempo do que o máximo. Alargar o período de tempo permite que a cloud investigue ficheiros suspeitos de forma mais minuciosa.  
@@ -413,9 +414,9 @@ Para obter mais informações, consulte [Policy CSP-defender](https://docs.micro
 - **Agenda de verificação do sistema do defender**  
   [Defender/ScheduleScanDay](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescanday) -agenda em que o defender de dias verifica os dispositivos. 
  
-  Opção relacionada nesta lista: *Defender/ScheduleScanTime*
+  Opção relacionada nesta lista: *defender/ScheduleScanTime*
 
-  **Padrão**: Definido pelo usuário
+  **Padrão**: definido pelo usuário
 
 - **Monitoramento de comportamento**  
   [Defender/AllowBehaviorMonitoring](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowbehaviormonitoring) – defina como *Sim* para ativar a funcionalidade de monitoramento de comportamento do Windows Defender. Inserido no Windows 10, os sensores de monitoramento de comportamento do Windows Defender coletam e processam sinais comportamentais do sistema operacional e enviam esses dados de sensor para sua instância privada, isolada e de nuvem do Microsoft defender ATP.  
@@ -434,7 +435,7 @@ Para obter mais informações, consulte [Policy CSP-defender](https://docs.micro
   - Blocos de proteção mais altos e agressivos de bloqueio e aplicação de medidas adicionais (podem afetar o desempenho do cliente)
   - Tolerância zero-bloquear todos os arquivos executáveis desconhecidos
 
-  **Padrão**: Não Configurado
+  **Padrão**: não configurado
 
 - **Monitoramento em tempo real**  
   [Defender/AllowRealtimeMonitoring](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowrealtimemonitoring) – defina como *Sim* para permitir o monitoramento do Windows Defender em tempo real.  
@@ -449,7 +450,7 @@ Para obter mais informações, consulte [Policy CSP-defender](https://docs.micro
 - **Verificar unidades de rede mapeadas durante uma verificação completa**  
   [Defender/AllowFullScanOnMappedNetworkDrives](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanonmappednetworkdrives) -defina como *Sim* para que o Windows Defender Verifique os arquivos na rede. O usuário não pode remover o malware detectado de arquivos somente leitura,
 
-  Configuração relacionada nesta lista: *Defender/AllowScanningNetworkFiles*
+  Configuração relacionada nesta lista: *defender/AllowScanningNetworkFiles*
 
   **Padrão**: Sim
 
@@ -461,7 +462,7 @@ Para obter mais informações, consulte [Policy CSP-defender](https://docs.micro
 - **Hora de início da verificação rápida**  
   [Defender/ScheduleQuickScanTime](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulequickscantime) -agende uma hora do dia para o defender executar uma verificação rápida.  
 
-  **Padrão**: 2 AM
+  **Padrão**: 2 am
 
 ## <a name="windows-defender-firewall"></a>Firewall do Windows Defender
 Para obter mais informações, consulte [CSP do firewall](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp) na documentação do Windows.
@@ -476,10 +477,10 @@ Para obter mais informações, consulte [CSP do firewall](https://docs.microsoft
 
 - **Enfileiramento de pacotes** - *MdmStore/Global/EnablePacketQueue*    
   Especifique como o dimensionamento do software no lado de recebimento está habilitado para recebimento criptografado e texto não criptografado para o cenário de gateway de túnel IPsec. Isso garante que a ordem dos pacotes seja preservada.  
-  **Padrão**: Padrão do dispositivo
+  **Padrão**: dispositivo padrão
 
 - **Domínio do perfil de Firewall** - *FirewallRules/FirewallRuleName/perfis*  
-  Especifica os perfis aos quais a regra pertence: Domínio, privado, público. Esse valor representa o perfil para redes que estão conectadas a domínios.  
+  Especifica os perfis aos quais a regra pertence: domínio, privado, público. Esse valor representa o perfil para redes que estão conectadas a domínios.  
 
   Configurações disponíveis:  
   - **Respostas unicast para difusões multicast necessárias**  
@@ -498,7 +499,7 @@ Para obter mais informações, consulte [CSP do firewall](https://docs.microsoft
     **Padrão**: Sim
 
   - **Firewall habilitado**  
-    **Padrão**: Permitido
+    **Padrão**: permitido
 
   - **Regras de segurança de conexão da política de grupo não mescladas**  
     **Padrão**: Sim
@@ -507,7 +508,7 @@ Para obter mais informações, consulte [CSP do firewall](https://docs.microsoft
     **Padrão**: Sim
 
 - **Perfil de Firewall @no__t público**-1*FirewallRules/FirewallRuleName/perfis*  
-  Especifica os perfis aos quais a regra pertence: Domínio, privado, público. Esse valor representa o perfil para redes públicas. Essas redes são classificadas como públicas pelos administradores no host do servidor. A classificação ocorre na primeira vez que o host se conecta à rede. Normalmente, essas redes estão em aeroportos, cafeterias e outros locais públicos onde os colegas na rede ou o administrador de rede não são confiáveis.  
+  Especifica os perfis aos quais a regra pertence: domínio, privado, público. Esse valor representa o perfil para redes públicas. Essas redes são classificadas como públicas pelos administradores no host do servidor. A classificação ocorre na primeira vez que o host se conecta à rede. Normalmente, essas redes estão em aeroportos, cafeterias e outros locais públicos onde os colegas na rede ou o administrador de rede não são confiáveis.  
 
   Configurações disponíveis:
 
@@ -536,7 +537,7 @@ Para obter mais informações, consulte [CSP do firewall](https://docs.microsoft
     **Padrão**: Sim
 
   - **Firewall habilitado**  
-    **Padrão**: Permitido  
+    **Padrão**: permitido  
 
   - **Regras de segurança de conexão da política de grupo não mescladas**  
     **Padrão**: Sim  
@@ -548,7 +549,7 @@ Para obter mais informações, consulte [CSP do firewall](https://docs.microsoft
     **Padrão**: Sim  
 
 - **Perfil de Firewall @no__t privada**-1*FirewallRules/FirewallRuleName/perfis*  
-  Especifica os perfis aos quais a regra pertence: Domínio, privado, público. Esse valor representa o perfil para redes privadas.  
+  Especifica os perfis aos quais a regra pertence: domínio, privado, público. Esse valor representa o perfil para redes privadas.  
 
   Configurações disponíveis: 
 
@@ -574,7 +575,7 @@ Para obter mais informações, consulte [CSP do firewall](https://docs.microsoft
     **Padrão**: Sim  
 
   - **Firewall habilitado**  
-    **Padrão**: Permitido
+    **Padrão**: permitido
 
   - **Regras de aplicativo autorizado da política de grupo não mescladas**  
     **Padrão**: Sim
@@ -592,7 +593,7 @@ Para obter mais informações, consulte [CSP do firewall](https://docs.microsoft
   **Padrão**: UTF8
 
 - **Verificação da lista de certificados revogados**  
-  **Padrão**: Padrão do dispositivo
+  **Padrão**: dispositivo padrão
 
 ## <a name="windows-hello-for-business"></a>Windows Hello para Empresas  
 
@@ -615,11 +616,11 @@ O Windows Hello para empresas é um método alternativo para entrar no Windows, 
   **Padrão**: Sim  
 
 - **Exigir letras minúsculas no PIN** - *Tenantid/Policies/PINComplexity/LowercaseLetters*  
-  **Padrão**: Permitido  
+  **Padrão**: permitido  
 
 - **Exigir caracteres especiais no PIN** - *Tenantid/Policies/PINComplexity/SpecialCharacters*  
-  **Padrão**: Permitido  
+  **Padrão**: permitido  
 
 - **Exigir letras maiúsculas no PIN** - *Tenantid/Policies/PINComplexity/UppercaseLetters*   
-  **Padrão**: Permitido  
+  **Padrão**: permitido  
 

@@ -8,18 +8,19 @@ manager: dougeby
 ms.date: 02/13/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 9d078c2e94f775d995e990c7a33e29871819d561
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: a2c71e04cf842fda7b16fb8ad4a05668ccbfaa84
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71731488"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72507595"
 ---
 # <a name="application-protection-policies-and-work-profiles-on-android-enterprise-devices-in-intune"></a>Políticas de proteção de aplicativo e perfis de trabalho em dispositivos Android Enterprise no Intune
 
@@ -30,9 +31,9 @@ Em muitas organizações, os administradores são desafiados a proteger recursos
 
 Os cenários de implantação APP-WE e Android de perfil de trabalho incluem os seguintes recursos principais importantes para ambientes BYOD:
 
-1. **Proteção e segregação de dados gerenciados pela organização**: Ambas as soluções protegem os dados da organização impondo os controles de prevenção contra perda de dados (DLP) em dados gerenciados pela organização. Essas proteções impedem vazamentos acidentais de dados protegidos, como um usuário final que o compartilha acidentalmente para um aplicativo ou conta pessoal. Eles também servem para garantir que um dispositivo acessando os dados esteja íntegro e não seja comprometido.
+1. **Proteção e segregação de dados gerenciados pela organização**: ambas as soluções protegem dados da organização impondo controles de DLP (prevenção contra perda de dados) em dados gerenciados pela organização. Essas proteções impedem vazamentos acidentais de dados protegidos, como um usuário final que o compartilha acidentalmente para um aplicativo ou conta pessoal. Eles também servem para garantir que um dispositivo acessando os dados esteja íntegro e não seja comprometido.
 
-2. **Privacidade do usuário final**: Os perfis de trabalho corporativos APP-WE e Android separam o conteúdo dos usuários finais no dispositivo e os dados gerenciados pelo administrador do MDM (gerenciamento de dispositivo móvel). Em ambos os cenários, os administradores de ti impõem políticas, como a autenticação somente PIN em aplicativos gerenciados pela organização ou identidades. Os administradores de ti não conseguem ler, acessar ou apagar dados pertencentes ou controlados pelos usuários finais.
+2. **Privacidade do usuário final**: os perfis de trabalho corporativos app-We e Android separam o conteúdo dos usuários finais no dispositivo e os dados gerenciados pelo administrador do MDM (gerenciamento de dispositivo móvel). Em ambos os cenários, os administradores de ti impõem políticas, como a autenticação somente PIN em aplicativos gerenciados pela organização ou identidades. Os administradores de ti não conseguem ler, acessar ou apagar dados pertencentes ou controlados pelos usuários finais.
 
 Se você escolher os perfis de trabalho do APP-WE ou Android Enterprise para sua implantação do BYOD depende de seus requisitos e necessidades de negócios. O objetivo deste artigo é fornecer orientações para ajudá-lo a decidir.
 
@@ -44,17 +45,17 @@ Os aplicativos Android individuais são habilitados para o aplicativo de algumas
 
 1. **Integrado nativamente aos aplicativos primários da Microsoft**: Microsoft Office aplicativos para Android e uma seleção de outros aplicativos da Microsoft, vêm com o aplicativo do Intune interno. Esses aplicativos do Office, como Word, OneDrive, Outlook e assim por diante, não precisam de mais personalização para aplicar políticas. Esses aplicativos podem ser instalados pelos usuários finais diretamente do Google Play Store.
 
-2. **Integrado a compilações de aplicativos por desenvolvedores usando o SDK do Intune**: Os desenvolvedores de aplicativos podem integrar o SDK do Intune em seu código-fonte e recompilar seus aplicativos para dar suporte aos recursos de política de aplicativo do Intune.
+2. **Integrado a compilações de aplicativos por desenvolvedores usando o SDK do Intune**: os desenvolvedores de aplicativos podem integrar o SDK do Intune em seu código-fonte e recompilar seus aplicativos para dar suporte aos recursos de política de aplicativo do Intune.
 
-3. **Encapsulado usando a ferramenta de disposição do aplicativo do Intune**: Alguns clientes compilam aplicativos Android (. Arquivo APK) sem acesso ao código-fonte. Sem o código-fonte, o desenvolvedor não pode se integrar ao SDK do Intune. Sem o SDK, eles não podem habilitar seu aplicativo para políticas de aplicativo. O desenvolvedor deve modificar ou recodificar o aplicativo para dar suporte a políticas de aplicativo.
+3. **Encapsulado usando a ferramenta de disposição do aplicativo do Intune**: alguns clientes compilam aplicativos Android (. Arquivo APK) sem acesso ao código-fonte. Sem o código-fonte, o desenvolvedor não pode se integrar ao SDK do Intune. Sem o SDK, eles não podem habilitar seu aplicativo para políticas de aplicativo. O desenvolvedor deve modificar ou recodificar o aplicativo para dar suporte a políticas de aplicativo.
 
-    Para ajudar, o Intune inclui a ferramenta de ferramenta de encapsulamento de **aplicativos** para aplicativos Android existentes (APKs) e cria um aplicativo que reconhece as políticas de aplicativo.
+    Para ajudar, o Intune inclui a ferramenta de **ferramenta de encapsulamento de aplicativos** para aplicativos Android existentes (APKs) e cria um aplicativo que reconhece as políticas de aplicativo.
 
     Para obter mais informações sobre essa ferramenta, consulte [preparar aplicativos de linha de negócios para políticas de proteção de aplicativo](../developer/apps-prepare-mobile-application-management.md).
 
 Para ver uma lista de aplicativos habilitados com o aplicativo, consulte [aplicativos gerenciados com um rico conjunto de políticas de proteção de aplicativo móvel](https://www.microsoft.com/cloud-platform/microsoft-intune-apps).
 
-## <a name="deployment-scenarios"></a>Cenários de implementação
+## <a name="deployment-scenarios"></a>Cenários de implantação
 
 Esta seção descreve as características importantes dos cenários de implantação de perfil de trabalho do APP-WE e Android Enterprise.
 
@@ -81,9 +82,9 @@ Esta funcionalidade aplica-se a:
 
 Um perfil de trabalho inclui os seguintes recursos:
 
-- **Funcionalidade de MDM tradicional**: Os principais recursos do MDM, como o gerenciamento do ciclo de vida do aplicativo usando o Google Play gerenciado, estão disponíveis em qualquer cenário do Android Enterprise. O Google Play gerenciado fornece uma experiência robusta para instalar e atualizar aplicativos sem nenhuma intervenção do usuário. Ele também pode enviar por push definições de configuração de aplicativo para aplicativos organizacionais. Ele também não exige que os usuários finais permitam instalações de fontes desconhecidas. Outras atividades comuns do MDM, como a implantação de certificados, a configuração de Wi-Fi/VPNs, e a definição de senhas de dispositivo estão disponíveis com perfis de trabalho.
+- **Funcionalidade de MDM tradicional**: os principais recursos do MDM, como o gerenciamento do ciclo de vida do aplicativo usando o Google Play gerenciado, estão disponíveis em qualquer cenário do Android Enterprise. O Google Play gerenciado fornece uma experiência robusta para instalar e atualizar aplicativos sem nenhuma intervenção do usuário. Ele também pode enviar por push definições de configuração de aplicativo para aplicativos organizacionais. Ele também não exige que os usuários finais permitam instalações de fontes desconhecidas. Outras atividades comuns do MDM, como a implantação de certificados, a configuração de Wi-Fi/VPNs, e a definição de senhas de dispositivo estão disponíveis com perfis de trabalho.
 
-- **DLP no limite do perfil de trabalho**: Como o APP-WE, ele pode impor políticas de proteção de dados. Com um perfil de trabalho, as políticas de DLP são impostas no nível do perfil de trabalho, não no nível do aplicativo. Por exemplo, a proteção copiar/colar é imposta pelas configurações do aplicativo aplicadas a um aplicativo ou imposta pelo perfil de trabalho. Quando o aplicativo é implantado em um perfil de trabalho, os administradores podem pausar a proteção de copiar/colar no perfil de trabalho desativando essa política no nível do aplicativo.
+- **DLP no limite do perfil de trabalho**: como app-We, ele pode impor políticas de proteção de dados. Com um perfil de trabalho, as políticas de DLP são impostas no nível do perfil de trabalho, não no nível do aplicativo. Por exemplo, a proteção copiar/colar é imposta pelas configurações do aplicativo aplicadas a um aplicativo ou imposta pelo perfil de trabalho. Quando o aplicativo é implantado em um perfil de trabalho, os administradores podem pausar a proteção de copiar/colar no perfil de trabalho desativando essa política no nível do aplicativo.
 
 ## <a name="tips-to-optimize-the-work-profile-experience"></a>Dicas para otimizar a experiência do perfil de trabalho
 
@@ -101,7 +102,7 @@ Por exemplo, você precisa que os usuários finais insiram um PIN ao abrir um ap
 
 ### <a name="control-multi-identity-behavior-in-work-profiles"></a>Controlar o comportamento de várias identidades em perfis de trabalho
 
-Os aplicativos do Office, como o Outlook e o OneDrive, têm comportamento de "várias identidades". Dentro de uma instância do aplicativo, o usuário final pode adicionar conexões a várias contas distintas ou locais de armazenamento em nuvem. Dentro do aplicativo, os dados recuperados desses locais podem ser separados ou mesclados. E, o usuário pode alternar o contexto entre identidadesuser@outlook.compessoais () e identidades de organização (user@contoso.com).
+Os aplicativos do Office, como o Outlook e o OneDrive, têm comportamento de "várias identidades". Dentro de uma instância do aplicativo, o usuário final pode adicionar conexões a várias contas distintas ou locais de armazenamento em nuvem. Dentro do aplicativo, os dados recuperados desses locais podem ser separados ou mesclados. E, o usuário pode alternar o contexto entre identidades pessoais (user@outlook.com) e identidades de organização (user@contoso.com).
 
 Ao usar perfis de trabalho, talvez você queira desabilitar esse comportamento de várias identidades. Quando você o desabilita, as instâncias com notificação do aplicativo no perfil de trabalho só podem ser configuradas com uma identidade de organização. Use a definição de configuração de aplicativo de contas permitidas para dar suporte a aplicativos Android do Office.
 
@@ -132,5 +133,5 @@ Por exemplo, os clientes do ou que têm usuários na China não podem usar o ger
 
 Usando o Intune, os perfis de trabalho do APP-WE e do Android Enterprise estão disponíveis para seu programa Android BYOD. Para escolher os perfis de aplicativo ou de trabalho depende de seus requisitos de negócios e de uso. Em resumo, use perfis de trabalho se precisar de atividades MDM em dispositivos gerenciados, como implantação de certificado, push de aplicativo e assim por diante. Usar o aplicativo – se você não quiser ou não puder gerenciar dispositivos e estiver usando somente aplicativos habilitados para aplicativos do Intune.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 [Comece a usar as políticas de proteção de aplicativo](app-protection-policy.md)ou [Registre seus dispositivos](../enrollment/android-enroll.md).

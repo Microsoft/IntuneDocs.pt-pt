@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 09/06/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: shpate
@@ -15,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b1e72e16eba8bb29adc7360db9e923a15d144b6e
-ms.sourcegitcommit: b8127c7a62d9ac4d0f768980fa1424567bb58733
+ms.openlocfilehash: d5234a8568911de075b1c8ee5d679ae40c6c494a
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72350050"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502626"
 ---
 # <a name="enforce-compliance-for-microsoft-defender-atp-with-conditional-access-in-intune"></a>Impor a conformidade para o Microsoft defender ATP com acesso condicional no Intune  
 

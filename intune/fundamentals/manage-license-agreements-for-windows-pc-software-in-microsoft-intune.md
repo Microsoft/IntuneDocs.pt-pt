@@ -9,24 +9,24 @@ manager: dougeby
 ms.date: 01/01/2018
 ms.topic: archived
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: medium
-ms.technology: ''
 ms.assetid: c59d8635-3f66-40f5-824a-a71c738e0341
 ms.reviewer: owenyen
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8d144fbc7cbda903df547116e459925c25e7b79c
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: ab5e5d3e645410b876a5d3d0be0eafed9c790780
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71731520"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502649"
 ---
 # <a name="manage-license-agreements-for-windows-pc-software-in-microsoft-intune"></a>Gerir contratos de licença para software para computadores com Windows no Microsoft Intune
 
-[!INCLUDE [classic-portal](../../intune-classic/includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 O Microsoft Intune permite-lhe adicionar e gerir informações de contratos de licença para software comprado através de contratos de Licenciamento em Volume da Microsoft. Também pode fazê-lo para software pertencente ou não à Microsoft que tenha sido comprado através de outros meios. Pode organizar estas informações em grupos lógicos.
 
@@ -77,11 +77,11 @@ Os contratos de Licenciamento em Volume do Intune apresentam informações de li
 
         Pode criar este ficheiro adicionando os pares de contratos a um documento de texto simples num dos formatos seguintes, dependendo do tipo de organização que registou no VLSC. Especifique um par de números de contratos por linha.
 
-        - **Clientes do Open Value:** *Número do contrato*, número do contrato de *repetição*, *nome do contrato*
+        - **Clientes Open Value:** *Número do contrato*, *repetir número do contrato*, *nome do contrato*
 
-        - **Clientes abertos:** *Número de autorização*, *número de licença relacionado*, *nome do contrato*
+        - **Clientes Open:** *Número de autorização*, *número de licença relacionado*, *nome do contrato*
 
-        - **Clientes do Select e Enterprise:** *Número do contrato*, *número de registro relacionado*, *nome do contrato*
+        - **Clientes Select e Enterprise:** *Número do contrato*, *número de inscrição relacionado*, *nome do contrato*
 
         O formulário **Adicionar Contratos** pede-lhe que procure este ficheiro quando adicionar um novo contrato.
 
@@ -181,9 +181,9 @@ Os contratos de licenciamento de software podem ser adicionados a grupos de lice
 
 |                            |                                                                                                                                                                                                                                                                                                                                                                          |
 |----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|            Tarefa            |                                                                                                                                                                                 Detalhes                                                                                                                                                                                  |
-|   Criar um grupo de licenças   |                                                            Na página <strong>Descrição Geral</strong> da área de trabalho <strong>Licenças</strong>, escolha <strong>Criar Grupo de Licenças</strong> no menu <strong>Tarefas</strong>. <strong>Nota:</strong> Você pode criar um total máximo de 500 grupos de licenças.                                                             |
+|            Tarefa            |                                                                                                                                                                                 Details                                                                                                                                                                                  |
+|   Criar um grupo de licenças   |                                                            Na página <strong>Descrição Geral</strong> da área de trabalho <strong>Licenças</strong>, escolha <strong>Criar Grupo de Licenças</strong> no menu <strong>Tarefas</strong>. <strong>Nota:</strong> pode criar um total máximo de 500 grupos de licenças.                                                             |
 |   Remover um grupo de licenças   |                                                                                                      Na área de trabalho <strong>Licenças</strong>, escolha um grupo de licenças e, em seguida, escolha <strong>Editar Grupo de Licenças</strong> no menu <strong>Tarefas</strong>.                                                                                                       |
-|   Eliminar um grupo de licenças   |                                 Na área de trabalho <strong>Licenças</strong>, escolha um grupo de licenças e, em seguida, escolha <strong>Eliminar Grupo de Licenças</strong> no menu <strong>Tarefas</strong>. <strong>Dicas</strong> Todas as licenças que estavam no grupo excluído são movidas para o grupo de licenças <strong>contratos não atribuídos</strong> .                                 |
-| Eliminar um contrato de licença | Na área de trabalho <strong>Licenças</strong>, escolha um contrato e, em seguida, escolha <strong>Eliminar</strong>. <strong>Dicas</strong> Depois de excluir contratos de licenciamento por volume, para atualizar as informações de licença, escolha <strong>Atualizar agora</strong> na página <strong>visão geral de licenças</strong> ou na guia <strong>geral</strong> de um grupo de licenças específico. |
+|   Eliminar um grupo de licenças   |                                 Na área de trabalho <strong>Licenças</strong>, escolha um grupo de licenças e, em seguida, escolha <strong>Eliminar Grupo de Licenças</strong> no menu <strong>Tarefas</strong>. <strong>Sugestão:</strong> As licenças que estavam no grupo eliminado são movidas para o grupo de licenças <strong>Contratos Não Atribuídos</strong>.                                 |
+| Eliminar um contrato de licença | Na área de trabalho <strong>Licenças</strong>, escolha um contrato e, em seguida, escolha <strong>Eliminar</strong>. <strong>Sugestão:</strong> depois de eliminar contratos de Licenciamento em Volume, para atualizar as informações da licença, escolha <strong>Atualizar Agora</strong>, na página <strong>Descrição Geral de Licenças</strong> ou no separador <strong>Geral</strong>, se se tratar de um grupo de licenças específico. |
 

@@ -9,6 +9,7 @@ ms.date: 04/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: ed10a62c-b026-4ad3-ac41-641933522df2
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: efcb622681e4f3b3fba7b686551cca7db6bb4c3a
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 24d4193b3e43b7c406a1fb6c9c8d987caa6cbeea
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67546043"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72501892"
 ---
 # <a name="use-managed-apps-on-your-android-device"></a>Utilizar aplicações geridas no seu dispositivo Android
 As aplicações geridas são configuradas para cumprir os requisitos de segurança da sua organização e proteger os dados profissionais e escolares. Estas aplicações estão disponíveis para instalação ou utilização automaticamente no seu dispositivo. 
@@ -52,25 +53,25 @@ Seguem-se exemplos das aplicações geridas necessárias ou disponíveis mais co
 - Microsoft Word, Excel e PowerPoint
 
 ## <a name="how-do-i-get-managed-apps"></a>Como obtenho aplicações geridas?
-Existem três formas de obter aplicações geridas.  
+Há três maneiras de obter aplicativos gerenciados.  
 * A sua organização instala aplicações automaticamente no seu dispositivo no momento da inscrição.  
 * Irá instalar uma aplicação através da Google Play Store e, em seguida, iniciar sessão na aplicação com a sua conta escolar ou profissional.    
-* A sua organização disponibiliza aplicações geridas no Portal da Empresa. Vá para a aplicação Portal da empresa ou do site para procurar, ver e instalar as aplicações disponíveis. Para obter mais informações sobre estas aplicações, veja a secção seguinte, [aplicações disponíveis](#available-apps).  
+* A sua organização disponibiliza aplicações geridas no Portal da Empresa. Vá para o aplicativo Portal da Empresa ou site para pesquisar, exibir e instalar aplicativos disponíveis. Para obter mais informações sobre esses aplicativos, consulte a próxima seção, [aplicativos disponíveis](#available-apps).  
 
 ### <a name="available-apps"></a>Aplicações disponíveis   
- Sua organização pode selecionar aplicações que são adequadas e útil para no trabalho ou escola e disponibilizá-los para no Portal da empresa.  
+ Sua organização pode selecionar aplicativos que são apropriados e úteis para você no trabalho ou na escola e disponibilizá-los para você em Portal da Empresa.  
 
- Aplicações também são disponibilizadas para com base em seu tipo de dispositivo. Por exemplo, se estiver a utilizar a aplicação Portal da empresa para Android, terá acesso a aplicações Android, mas não aplicações de iOS.   
+ Os aplicativos também são disponibilizados para você com base no tipo de dispositivo. Por exemplo, se você estiver usando o aplicativo Portal da Empresa para Android, terá acesso aos aplicativos Android, mas não aos aplicativos iOS.   
 
-## <a name="request-an-app-for-work-or-school"></a>Pedido de aplicação para a empresa ou escola   
- Se existir uma aplicação precisa, mas não a vir no Portal da empresa, pode solicitá-la. Encontrar detalhes de contactos do seu **suporte técnico** em qualquer aplicativo **contactar TI** separador. Encontrará as mesmas informações de contactos a [site do Portal da empresa](https://go.microsoft.com/fwlink/?linkid=2010980).   
+## <a name="request-an-app-for-work-or-school"></a>Solicitar um aplicativo para trabalho ou escola   
+ Se houver um aplicativo de que você precisa, mas não vir no Portal da Empresa, você poderá solicitá-lo. Encontre detalhes de contato para a **assistência técnica** na guia **contate a ti** do aplicativo. Você encontrará as mesmas informações de contato no [site Portal da empresa](https://go.microsoft.com/fwlink/?linkid=2010980).   
 
 ## <a name="what-can-my-company-support-manage-in-an-app"></a>O que pode gerir o suporte da minha empresa numa aplicação?  
 A lista seguinte descreve as definições que o suporte da sua empresa pode gerir numa aplicação. Estas definições afetam a forma como visualiza, acede a e utiliza dados escolares ou profissionais no seu dispositivo:
 
 * Acesso a sites específicos  
 
-* Acesso a sites internos da empresa com o Microsoft Edge e o proxy do Azure Active Directory  
+* Acesso a sites internos da empresa usando o Microsoft Edge e o proxy de Azure Active Directory  
 
 * Versão mínima da aplicação, versão do SO
 

@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 5/13/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8c447b6b21021573d95a5ece3297e548f216b7a0
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 4339f98ed133c3426faee8bd4b18024fd2648606
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71730060"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503348"
 ---
 # <a name="set-up-enrollment-of-android-enterprise-work-profile-devices"></a>Configurar a inscrição de dispositivos com perfil de trabalho do Android Enterprise
 
@@ -34,8 +35,8 @@ Para configurar a gestão de perfis de trabalho do Android Enterprise, siga este
 
 1. [Ligue a sua conta do inquilino do Intune à sua conta do Android Enterprise](connect-intune-android-enterprise.md).
 2. Especifique as definições de inscrição dos perfis de trabalho do Android Enterprise. Os perfis de trabalho do Android Enterprise [só são suportados em determinados dispositivos Android](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012%20style=%22target=new_window%22). Qualquer dispositivo que dê suporte a perfis de trabalho Android Enterprise também dá suporte ao gerenciamento de administrador de dispositivos Android. O Intune permite-lhe especificar a forma como os dispositivos que suportam os perfis de trabalho do Android Enterprise devem ser geridos a partir das [Restrições de Inscrição](enrollment-restrictions-set.md).
-    - **Bloquear**:  Todos os dispositivos Android, incluindo dispositivos que dão suporte a perfis de trabalho Android Enterprise, serão registrados como dispositivos de administrador de dispositivo Android, a menos que o registro de administrador do dispositivo Android também seja bloqueado. 
-    - **Permitir (definido por padrão)** : todos os dispositivos que suportem os perfis de trabalho do Android Enterprise são inscritos como dispositivos com perfil de trabalho do Android. Qualquer dispositivo Android que não dê suporte a perfis de trabalho do Android Enterprise é registrado como um dispositivo de administrador de dispositivo Android, a menos que o registro de administrador do dispositivo Android seja bloqueado. 
+    - **Bloquear**: todos os dispositivos Android, incluindo dispositivos que dão suporte a perfis de trabalho Android Enterprise, serão registrados como dispositivos de administrador de dispositivo Android, a menos que o registro de administrador do dispositivo Android também seja bloqueado. 
+    - **Permitir (definido por padrão)** : todos os dispositivos que dão suporte aos perfis de trabalho do Android Enterprise são registrados como dispositivos Android Enterprise de perfil de trabalho. Qualquer dispositivo Android que não dê suporte a perfis de trabalho do Android Enterprise é registrado como um dispositivo de administrador de dispositivo Android, a menos que o registro de administrador do dispositivo Android seja bloqueado. 
 > [!NOTE]
 > O padrão definido como **permitir** é verdadeiro para novos locatários a partir de julho de 2019. Todos os locatários anteriores não terão nenhuma alteração nas restrições de registro e verão quaisquer políticas definidas nas restrições de registro. Para locatários anteriores que nunca tiveram alterações de restrições de registro, o **bloqueio** ainda será o padrão para perfis de trabalho do Android Enterprise.
 

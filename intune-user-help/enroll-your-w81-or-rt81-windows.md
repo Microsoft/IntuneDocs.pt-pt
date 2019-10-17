@@ -9,6 +9,7 @@ ms.date: 01/23/2017
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 28984f26-1070-4f7a-877c-669a59375c0c
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 45937f54926178615cf9d84230feb63d1ef242b5
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 085ec1f329eb9b423797a110ada53eb7693edf6f
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67545563"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506133"
 ---
 # <a name="how-to-enroll-your-windows-81-or-windows-rt-81-device-in-intune"></a>Como inscrever o dispositivo Windows 8.1 ou Windows RT 8.1 no Intune  
 
@@ -36,7 +37,7 @@ Inscrever o dispositivo Windows 8.1 ou Windows RT 8.1
 
     ![nav-to-workplace](./media/W81-1-workplacejoin.png)  
 
-2. Introduza o seu e-mail escolar ou profissional do ID de Utilizador, se necessário, e toque em **Participar**. Se o seu ID de utilizador não for necessário, é utilizado o endereço de e-mail introduzido quando iniciou sessão neste dispositivo.  
+2. Introduza o seu e-mail escolar ou profissional do ID de Utilizador, se necessário, e toque em **Participar**. Se sua ID de usuário não for necessária, o endereço de email que você inseriu quando entrou nesse dispositivo será usado.  
 
 3. Introduza a palavra-passe para o seu e-mail escolar ou profissional.  
 

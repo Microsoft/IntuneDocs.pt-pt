@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 10/2/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: acf1112f96b28b156b3c4857485de30d7ad553ef
-ms.sourcegitcommit: 223d64a72ec85fe222f5bb10639da729368e6d57
+ms.openlocfilehash: 96c802e76aab673aa6a9108dc0a14f553c26b96b
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71955435"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72505413"
 ---
 # <a name="intune-actions-and-options-supported-with-apple-user-enrollment"></a>Ações e opções do Intune com suporte com o registro de usuário da Apple
 
@@ -34,7 +35,7 @@ Em dispositivos de registro de usuário, se você definir qualquer configuraçã
 
 Por exemplo, você define a configuração de **expiração de senha** e envia por push essa política para dispositivos registrados pelo usuário. Nos dispositivos, acontece o seguinte:
 - A configuração de **expiração de senha** é ignorada.
-- Senhas simples, `1111` como ou `1234`, não são permitidas.
+- Senhas simples, como `1111` ou `1234`, não são permitidas.
 - Um PIN de 6 dígitos é imposto.
 
 ## <a name="administrator-remote-device-actions-and-options"></a>Ações e opções de dispositivo remoto do administrador
@@ -42,7 +43,7 @@ Os administradores podem executar as seguintes ações e opções em dispositivo
 - Extinguir
 - Eliminar
 - Bloqueio Remoto
-- Sincronização
+- Sincronizá
 
 Não há suporte para todas as outras ações.
 
@@ -57,7 +58,7 @@ Em dispositivos de registro de usuário, os usuários finais podem executar essa
 
 As opções a seguir têm suporte no Intune para dispositivos registrados usando o registro de usuário da Apple:
 - VPN por aplicativo. Esse suporte exclui os domínios do Safari, pois o registro de usuário não dá suporte à definição das configurações do Safari.
-- Wi-Fi 
+- Fio 
 - Remoção do aplicativo corporativo após o cancelamento do registro
 - Implantação de aplicativo por meio do VPP (plano de compra por volume) licenciado pelo usuário
 - Detecção de jailbreak
@@ -97,6 +98,6 @@ As opções a seguir não têm suporte em dispositivos registrados com o registr
 - As políticas de proteção de aplicativo ainda serão aplicadas a esses aplicativos. No entanto, você não poderá assumir o gerenciamento ou implantar uma versão gerenciada desses aplicativos, a menos que o usuário os exclua de seus dispositivos.
 - Ações, configurações, configurações e comandos que exigem supervisão. 
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 [Configurar o registro de usuário do iOS e iPadOS](ios-user-enrollment.md)

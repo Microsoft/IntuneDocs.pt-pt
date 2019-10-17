@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 09/04/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: b613f364-0150-401f-b9b8-2b09470b34f4
@@ -16,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3aadad0b185f72d9137ed0f2d807df6d035a9ba7
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: e1067c8ef23add50c921217b9e4b115346be2951
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71731048"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72497043"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>Resolver problemas com a instalação de aplicações
 
@@ -98,7 +99,7 @@ Há requisitos específicos que devem ser seguidos para coletar arquivos de log:
 - Você pode especificar variáveis de ambiente para coleta de log, como as seguintes:<br>
   *% PROGRAMFILES%,% PROGRAMDATA%% PUBLIC%,% WINDIR%,% TEMP%,% TMP%*
 - Somente as extensões de arquivo exatas são permitidas, como:<br>
-  *.log, .txt, .dmp, .cab, .zip, .xml*
+  *. log,. txt,. dmp,. cab,. zip,. xml*
 - O arquivo de log máximo a ser carregado é 60 MB ou 25 arquivos, o que ocorrer primeiro. 
 - A coleta de log de instalação do aplicativo Win32 está habilitada para aplicativos que atendem à tentativa de atribuição de aplicativo necessária, disponível e desinstalação.
 - Os logs armazenados são criptografados para proteger qualquer informação de identificação pessoal contida nos logs.
@@ -112,7 +113,7 @@ As seguintes mensagens de erro e descrições fornecem detalhes sobre erros de i
 
 Esta seção menciona tanto o administrador do dispositivo quanto o registro Samsung Knox. Para obter mais informações, consulte [registro de administrador do dispositivo Android](../enrollment/android-enroll-device-administrator.md) e [registrar automaticamente dispositivos Android usando o registro móvel do Knox do Samsung](../enrollment/android-samsung-knox-mobile-enroll.md). 
 
-| Mensagem de erro/código | Descrição |
+| Mensagem de erro/código | Description |
 |---------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Falha ao instalar o aplicativo. (0xC7D14FB5) | Essa mensagem de erro é exibida quando o Intune não pode determinar a causa raiz do erro de instalação do aplicativo do Android. Não são fornecidas informações pelo Android durante a falha. Esse erro é retornado quando o download do APK foi bem-sucedido, mas a instalação do aplicativo falhou. Esse erro pode ocorrer com mais frequência devido a um arquivo APK inadequado que não pode ser instalado no dispositivo. Uma possível causa pode ser quando Google Play proteger bloqueia a instalação do aplicativo devido a questões de segurança. Outra causa possível desse erro é quando um dispositivo não dá suporte ao aplicativo. Por exemplo, se o aplicativo exigir a versão da API 21 + e o dispositivo tiver a versão 19 da API no momento. O Intune retorna esse erro para os dispositivos DA e KNOX e, embora possa haver uma notificação de que os usuários possam clicar para tentar novamente, se houver um problema com o APK, ele nunca continuará a falhar. Se o aplicativo for um aplicativo disponível, a notificação poderá ser ignorada. No entanto, se a aplicação for necessária, a notificação não pode ser dispensada. |
 | A instalação do aplicativo foi cancelada porque o arquivo de instalação (APK) foi excluído após o download, mas antes da instalação. (0xC7D14FBA) | O download do APK foi bem-sucedido, mas antes de o usuário instalar o aplicativo, o arquivo foi removido do dispositivo. Isso pode acontecer se houvesse uma grande diferença de tempo entre download e instalação. Por exemplo, o usuário cancelou a instalação original, esperou e, em seguida, clicou na notificação para tentar novamente. Essa mensagem de erro é retornada para apenas cenários DA dos. Os cenários do KNOX podem ser realizados silenciosamente. Apresentamos uma notificação para tentar novamente para que o usuário possa aceitar em vez de cancelar. Se o aplicativo for um aplicativo disponível, a notificação poderá ser ignorada. No entanto, se a aplicação for necessária, a notificação não pode ser dispensada. |
@@ -153,8 +154,8 @@ Esta seção menciona tanto o administrador do dispositivo quanto o registro Sam
 | O usuário deve entrar na loja de aplicativos (-2016330855). | O usuário precisa entrar na App Store para que o aplicativo possa ser instalado. |
 | Problema desconhecido. Tente novamente (-2016330854). | A instalação do aplicativo falhou devido a um motivo desconhecido. Tente novamente mais tarde. |
 | Falha na instalação do aplicativo. O Intune tentará novamente na próxima vez em que o dispositivo for sincronizado (-2016330853). | A instalação do aplicativo encontrou um erro de dispositivo. Sincronize o dispositivo para tentar instalar o aplicativo novamente. |
-| A atribuição de licença falhou com o erro da Apple ' não há licenças de VPP restantes ' (0x87d13b7e) | Este comportamento é por predefinição. Para resolver isso, adquira licenças VPP adicionais ou solicite licenças de usuários que não são mais direcionadas. |
-| Falha na instalação do aplicativo 12024: Causa desconhecida. (0x87d13b6e) | A Apple não nos forneceu informações suficientes para determinar por que a instalação falhou. Nada para relatar. |
+| A atribuição de licença falhou com o erro da Apple ' não há licenças de VPP restantes ' (0x87d13b7e) | Esse comportamento é por design. Para resolver isso, adquira licenças VPP adicionais ou solicite licenças de usuários que não são mais direcionadas. |
+| Falha na instalação do aplicativo 12024: causa desconhecida. (0x87d13b6e) | A Apple não nos forneceu informações suficientes para determinar por que a instalação falhou. Nada para relatar. |
 | Política de configuração de aplicativo necessária não presente, verifique se a política é destinada aos mesmos grupos. (0x87d13b7f) | O aplicativo requer configuração de aplicativo, mas nenhuma configuração de aplicativo é direcionada. O administrador deve garantir que os grupos aos quais o aplicativo se destina também tenham a configuração de aplicativo necessária direcionada para os grupos. |
 | O licenciamento do VPP do dispositivo é aplicável somente a dispositivos iOS 9.0 +. (0x87d13b69) | Atualizar dispositivos iOS afetados para iOS 9.0 +. |
 | O aplicativo está instalado no dispositivo, mas não é gerenciado. (0x87d13b8f) | Esse erro ocorre apenas para aplicativos LOB. O aplicativo foi instalado fora do Intune. Para resolver esse erro, desinstale o aplicativo do dispositivo. Na próxima vez que a sincronização do dispositivo ocorrer, o dispositivo deverá instalar o aplicativo do Intune. |
@@ -165,7 +166,7 @@ Esta seção menciona tanto o administrador do dispositivo quanto o registro Sam
 
 ### <a name="other-installation-errors"></a>Outros erros de instalação
 
-|  Mensagem de erro/código  |  Descrição  |
+|  Mensagem de erro/código  |  Description  |
 |-----------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |  0x80073CFF, 0x80CF201C (erro do cliente)  |  Para instalar esta aplicação, precisa de ter um sistema preparado para sideloading. Verifique se o pacote do aplicativo está assinado com uma assinatura confiável e instalado em um dispositivo ingressado no domínio que tenha a política **AllowAllTrustedApps** habilitada ou um dispositivo que tenha uma licença de Sideload do Windows com a política **AllowAllTrustedApps** habilitado. Para obter mais informações, consulte [solução de problemas de empacotamento, implantação e consulta de aplicativos da Windows Store](https://docs.microsoft.com/windows/desktop/appxpkg/troubleshooting).   |
 |  0x80073CF0  |  Não foi possível abrir o pacote. Causas possíveis:<ul><li> O pacote não está assinado.</li><li> O nome do Publicador não corresponde ao assunto do certificado de autenticação.</li></ul> Verifique o log de eventos do **AppxPackagingOM** para obter informações. Para obter mais informações, consulte [solução de problemas de empacotamento, implantação e consulta de aplicativos da Windows Store](https://docs.microsoft.com/windows/desktop/appxpkg/troubleshooting).  |
@@ -184,7 +185,7 @@ As informações presentes no tópico [Resolução de problemas de empacotamento
 - [Solucionando problemas de implantações de aplicativo MSI no Microsoft Intune](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Troubleshooting-MSI-App-deployments-in-Microsoft/ba-p/359125)
 - [Práticas recomendadas para distribuição de software para o agente do computador Windows clássico do Intune](https://support.microsoft.com/en-us/help/2583929/best-practices-for-intune-software-distribution-to-windows-pc)
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 - Para obter informações adicionais de resolução de problemas, veja [Utilizar o portal de resolução de problemas para ajudar os utilizadores na sua empresa](../fundamentals/help-desk-operators.md). 
 - Saiba mais sobre os problemas conhecidos no Microsoft Intune. Para obter mais informações, consulte [sucesso do cliente do Intune](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/bg-p/IntuneCustomerSuccess).

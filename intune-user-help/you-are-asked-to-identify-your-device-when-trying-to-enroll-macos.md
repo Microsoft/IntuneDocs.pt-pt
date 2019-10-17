@@ -9,6 +9,7 @@ ms.date: 12/06/2017
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: fc21444f-65d6-4693-915e-47cc44ff880c
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4ef70964523b165c748fe540c2dfcf3504d54c21
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 472b19802b3f82e8b8474ef21744e0298d09b05b
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61505017"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72507975"
 ---
 # <a name="you-need-to-identify-your-device-when-youre-trying-to-enroll"></a>Tem de identificar o seu dispositivo quando está a tentar inscrever-se
 

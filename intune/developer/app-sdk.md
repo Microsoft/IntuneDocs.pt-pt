@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/15/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: developer
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
@@ -17,19 +18,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 580e9f51532a5606ca8955abc5bf3b3fa3a63713
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 17b5a4a510dd8310b9c9c7bcc00a63752cdd4155
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71730292"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72505715"
 ---
 # <a name="microsoft-intune-app-sdk-overview"></a>Descrição geral do SDK da Aplicação Microsoft Intune
 O SDK de aplicativos do Intune, disponível para iOS e Android, permite que seu aplicativo dê suporte a [políticas de proteção de aplicativo](../apps/app-protection-policy.md)do Intune. Quando seu aplicativo tem políticas de proteção de aplicativo aplicadas, ele pode ser gerenciado pelo Intune e é reconhecido pelo Intune como um aplicativo gerenciado. O SDK se esforça para minimizar a quantidade de alterações de código necessárias do desenvolvedor do aplicativo. Irá descobrir que pode ativar a maioria das funcionalidades SDK sem alterar o comportamento da sua aplicação. Para aprimorar a experiência do usuário final e do administrador de ti, você pode utilizar as APIs do SDK para personalizar o comportamento do aplicativo para oferecer suporte a recursos que exigem a participação do aplicativo.
 
 Depois de habilitar seu aplicativo para dar suporte a políticas de proteção de aplicativo do Intune, os administradores de ti podem implantar essas políticas para proteger seus dados corporativos no aplicativo.
 
-## <a name="app-protection-features"></a>Funcionalidades de proteção de aplicações
+## <a name="app-protection-features"></a>Funcionalidades da proteção de aplicações
 
 Seguem-se exemplos de funcionalidades de proteção de aplicações do Intune que podem ser ativadas com o SDK.
 
@@ -78,6 +79,6 @@ Pode gerir dispositivos e aplicações ao combinar o Citrix XenMobile MDX e o Mi
  
 Para saber mais sobre a Citrix MDX, veja [About the MDX Toolkit](https://docs.citrix.com/en-us/mdx-toolkit/10/about-mdx-toolkit.html) (Acerca do MDX Toolkit), [Citrix MDX app wrapper for iOS](https://docs.citrix.com/en-us/mdx-toolkit/10/xmob-mdx-kit-app-wrap-ios.html) (Encapsulamento de aplicações Citrix MDX para iOS) e [Citrix MDX app wrapper for Android](https://docs.citrix.com/en-us/mdx-toolkit/10/xmob-mdx-kit-app-wrap-android.html) (Encapsulamento de aplicações Citrix MDX para Android).
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 - [Introdução ao SDK do aplicativo Microsoft Intune](app-sdk-get-started.md).

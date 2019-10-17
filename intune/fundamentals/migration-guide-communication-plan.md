@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: e6a52506-2d29-41f7-a171-5d684a740dd4
@@ -16,26 +17,26 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5728b912d5483a62d9469ad6720d3ff9badcae99
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: c4637a4f9f137e9db665d72118fd7a97d7a9f75a
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71732292"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72510128"
 ---
 # <a name="plan-communications"></a>Planear as comunicações
 
 O plano de comunicação é um elemento fundamental para uma migração do Intune. As ferramentas e os modelos a seguir são fornecidos para ajudá-lo a conscientizar os usuários finais. O kit de adoção do Intune inclui modelos de email, um guia de registro do Intune e links para vídeos instrutivos para o registro do usuário final.  
 
-Baixar  [Kit de adoção do Intune](https://aka.ms/IntuneAdoptionKit)
+Download: [Kit de adoção do Intune](https://aka.ms/IntuneAdoptionKit)
 
 ## <a name="email-templates"></a>Modelos de e-mail
 
 Recomendamos o seguinte plano de comunicação de e-mails. Você pode editar o texto para alinhá-lo ao sistema operacional e ao ambiente de seus usuários. Fornecemos modelos para que você se adapte ao seu plano de comunicação:
 
-- **#1 de email**: Explique os benefícios, as expectativas e os cronogramas. Aproveite esta oportunidade para apresentar outros serviços novos cujo acesso será concedido a dispositivos geridos pelo Intune.
+- **#1 de email**: explique os benefícios, as expectativas e os cronogramas. Aproveite esta oportunidade para apresentar outros serviços novos cujo acesso será concedido a dispositivos geridos pelo Intune.
 
-- **#2 de email**: Anuncie que os serviços agora estão prontos para acesso por meio do Intune. Informe os utilizadores para se inscreverem agora. Forneça aos usuários uma linha do tempo antes que seu acesso seja afetado. Notificar os utilizadores dos benefícios e dos motivos estratégicos da migração.
+- **#2 de email**: anuncie que os serviços agora estão prontos para acesso por meio do Intune. Informe os utilizadores para se inscreverem agora. Forneça aos usuários uma linha do tempo antes que seu acesso seja afetado. Notificar os utilizadores dos benefícios e dos motivos estratégicos da migração.
 
 Após um determinado período, você pode começar a impor a conformidade por meio de políticas de acesso condicional e usá-la como critério para acessar dados corporativos, conforme explicado em [conduzir a adoção do usuário final com acesso condicional](migration-guide-drive-adoption.md).
 
@@ -55,7 +56,7 @@ Criamos vídeos passo a passo curtos para ajudar os usuários a registrar facilm
 - [Inscrever o seu dispositivo macOS](https://www.youtube.com/watch?v=Pa2pfhwq_yk)
 - [Registrar suas janelas](https://www.youtube.com/watch?v=TKQxEckBHiE)
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 O Intune tem recursos adicionais que você pode usar para promover o registro de dispositivo com seus usuários:
 

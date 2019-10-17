@@ -6,20 +6,21 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 08/06/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.technology: ''
-ms.assetid: ''
+ms.assetid: a21d3039-f2ed-4f43-b6fa-d00c071edbc4
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 458a7444597fce26822f333dfdb932a47d4218bf
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 6b92dca399afeb035bf58d998efdd469318de389
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71729452"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72504953"
 ---
 # <a name="use-role-based-access-control-rbac-and-scope-tags-for-distributed-it"></a>Usar o controle de acesso baseado em função (RBAC) e marcas de escopo para distribuição de ti
 
@@ -42,18 +43,18 @@ O recurso de marca de escopo padrão é semelhante ao recurso de escopos de segu
 
 ## <a name="to-create-a-scope-tag"></a>Para criar uma etiqueta de âmbito
 
-1. No Intune, escolha > **escopo de funções (marcas)**  > **criar**.
+1. No Intune, escolha **funções** > **escopo (marcas)**  > **criar**.
 
     ![Captura de tela da criação de uma marca de escopo.](./media/scope-tags/create-scope-tag.png)
 
 3. Se você quiser todos os dispositivos em grupos específicos, escolha **atribuir marca de escopo a todos os dispositivos nos grupos selecionados**.
     1. Na página **Selecionar grupos a serem incluídos** , escolha os grupos que contêm os dispositivos aos quais você deseja atribuir essa marca de escopo.
-    2. Escolha **Selecionar**.
+    2. Clique em **Selecionar**.
 4. Selecione **Criar**.
 
 ## <a name="to-assign-a-scope-tag-to-a-role"></a>Para atribuir uma etiqueta de âmbito a uma função
 
-1. No Intune, escolha **funções** > **todas as funções** > escolha uma função > > atribuições**atribuir**.
+1. No Intune, escolha **funções** > **todas as funções** > escolha uma função > **atribuições** > **atribuir**.
 
     ![Captura de tela de atribuir escopo a uma função.](./media/scope-tags/assign-scope-to-role.png)
 
@@ -62,7 +63,7 @@ O recurso de marca de escopo padrão é semelhante ao recurso de escopos de segu
 
     ![Captura de tela de selecionar grupos de membros.](./media/scope-tags/select-member-groups.png)
 
-4. Se você quiser gerenciar usuários/dispositivos em um conjunto específico de grupos, escolha **escopo (grupos)**  > **grupos** > selecionados**Selecione os grupos a serem incluídos** > escolha os grupos > **selecione** > **OK** . Todos os usuários/dispositivos nesse grupo serão gerenciados pelos administradores nos Membros (grupo).
+4. Se você quiser gerenciar usuários/dispositivos em um conjunto específico de grupos, escolha **escopo (grupos)**  > **grupos selecionados** > **Selecione os grupos a serem incluídos** > escolha os grupos > **selecione** > **OK**. Todos os usuários/dispositivos nesse grupo serão gerenciados pelos administradores nos Membros (grupo).
 
     ![Captura de tela de selecionar grupos de escopo.](./media/scope-tags/select-scope-groups.png)
 
@@ -80,16 +81,16 @@ O recurso de marca de escopo padrão é semelhante ao recurso de escopos de segu
 
 Para objetos que dão suporte a marcas de escopo, marcas de escopo geralmente aparecem em **Propriedades**. Por exemplo, para atribuir uma marca de escopo a um perfil de configuração, siga estas etapas:
 
-1. No Intune, escolha**perfis** de **configuração** > de dispositivo > escolha um perfil.
+1. No Intune, escolha **configuração do dispositivo** > **perfis** > escolha um perfil.
 
     ![Captura de tela de selecionar perfil.](./media/scope-tags/choose-profile.png)
 
-2. Escolha > **escopo de Propriedades (marcas)**  > **Adicionar**.
+2. Escolha **propriedades** > **escopo (marcas)**  > **Adicionar**.
 
     ![Captura de tela de adicionar marcas de escopo.](./media/scope-tags/add-scope-tags.png)
 
 3. Em **selecionar marcas**, escolha as marcas que você deseja adicionar ao perfil.
-4. Escolha **selecionar** > OkSalvar > .
+4. Escolha **selecionar** > **OK** > **salvar**.
 
 
 ## <a name="scope-tag-details"></a>Detalhes da marca de escopo
@@ -113,7 +114,7 @@ Ao trabalhar com marcas de escopo, lembre-se destes detalhes:
 - Você só pode direcionar grupos listados no escopo (grupos) de sua atribuição de função.
 - Se você tiver uma marca de escopo atribuída à sua função, não poderá excluir todas as marcas de escopo em um objeto do Intune. Pelo menos uma marca de escopo é necessária.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Saiba como as marcas de escopo se comportam quando há [várias atribuições de função](role-based-access-control.md#multiple-role-assignments).
 Efetue a gestão das suas [funções](role-based-access-control.md) e [perfis](../configuration/device-profile-assign.md).

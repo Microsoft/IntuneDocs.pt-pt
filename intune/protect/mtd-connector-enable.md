@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 07/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: dbb6a37e-ba47-4b69-922c-d25e66c279f6
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9ac49edcd4ea71bdbc83cfa093f2bb5e42aefd54
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: e53f50c42e768eeb652a8602bea49c04d29364c7
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71729564"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72504420"
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune"></a>Ativar o conector da Defesa Contra Ameaças para Dispositivos Móveis no Intune
 
@@ -40,7 +41,7 @@ Políticas de acesso condicional clássico para aplicativos MTD:
 - São diferentes das políticas de acesso condicional que você pode criar para ajudar a gerenciar o MTD.
 - Por padrão, não interaja com outras políticas de acesso condicional usadas para avaliação.  
 
-Para exibir políticas de acesso condicional clássico, no [Azure](https://portal.azure.com/#home), acesse **Azure Active Directory** > **políticas clássicas**de**acesso** > condicional.
+Para exibir políticas de acesso condicional clássico, no [Azure](https://portal.azure.com/#home), acesse **Azure Active Directory** > **políticas clássicas**de**acesso** > .
 
 
 ## <a name="to-enable-the-mtd-connector"></a>Para ativar o conector da MTD
@@ -61,17 +62,17 @@ Para exibir políticas de acesso condicional clássico, no [Azure](https://porta
 
 Pode decidir quais as opções de alternância da MTD que necessita de ativar de acordo com os requisitos da sua organização. Veja a seguir mais detalhes:
 
-- **Conecte dispositivos Android 4.1 + ao [nome do parceiro do MTD] for Work MTD**: Ao habilitar essa opção, você pode fazer com que os dispositivos Android 4.1 + relatem o risco de segurança para o Intune.
-  - **Marcar como não compatível se nenhum dado for recebido**: Se o Intune não receber dados sobre um dispositivo nesta plataforma do parceiro MTD, considere o dispositivo não compatível.
+- **Ligar dispositivos Android 4.1 ou posterior à MTD do [nome do parceiro MTD] for Work**: quando ativa esta opção, pode ter dispositivos Android 4.1 ou posterior a comunicar riscos de segurança para o Intune.
+  - **Marcar como não conforme se não forem recebidos dados**: se o Intune não receber dados sobre um dispositivo nesta plataforma a partir do parceiro MTD, considere o dispositivo como não conforme.
 <br></br>
-- **Conecte dispositivos IOS 8.0 + ao [nome do parceiro do MTD] for Work MTD**: Ao habilitar essa opção, você pode fazer com que os dispositivos iOS 8.0 + relatem o risco de segurança para o Intune.
-  - **Marcar como não compatível se nenhum dado for recebido**: Se o Intune não receber dados sobre um dispositivo nesta plataforma do parceiro MTD, considere o dispositivo não compatível.
+- **Ligar dispositivos com o iOS 8.0 ou posterior à MTD do [nome do parceiro MTD] for Work**: quando ativa esta opção, pode ter dispositivos com o iOS 8.0 ou posterior a comunicar riscos de segurança para o Intune.
+  - **Marcar como não conforme se não forem recebidos dados**: se o Intune não receber dados sobre um dispositivo nesta plataforma a partir do parceiro MTD, considere o dispositivo como não conforme.
 <br></br>
-- **Habilitar a sincronização de aplicativos para dispositivos IOS**: Permite que este parceiro de defesa contra ameaças móveis solicite metadados de aplicativos iOS do Intune para serem usados para fins de análise de ameaças.
+- **Ativar Sincronização de Aplicações para Dispositivos iOS**: permite que o parceiro de Defesa Contra Ameaças para Dispositivos Móveis peça metadados de aplicações iOS a partir do Intune para utilizar para fins de análise de ameaças.
 
-- **Bloquear versões de sistema operacional sem suporte**: Bloquear se o dispositivo estiver executando um sistema operacional inferior à versão mínima com suporte.
+- **Bloquear versões do SO não suportadas**: bloquear se o dispositivo estiver a executar um sistema operativo inferior à versão mínima suportada.
 
-- **Número de dias até que o parceiro não responda**: Número de dias de inatividade antes de o Intune considerar que o parceiro não está respondendo, pois a conexão foi perdida. O Intune ignora o estado de conformidade para parceiros MTD não responsivos.
+- **Número de dias até o parceiro ficar não responsivo**: número de dias de inatividade antes de o Intune considerar o parceiro como não responsivo devido a perda da ligação. O Intune ignora o estado de conformidade para parceiros MTD não responsivos.
 
 > [!IMPORTANT] 
 > Quando possível, recomendamos que você adicione e atribua os aplicativos MTD antes de criar a conformidade do dispositivo e as regras de política de acesso condicional. Isso ajuda a garantir que o aplicativo MTD esteja pronto e disponível para que os usuários finais instalem antes que possam obter acesso ao email ou a outros recursos da empresa.

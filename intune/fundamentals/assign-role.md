@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 03/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 83e321e932fa2214612836ec994a9a0aa8174dd7
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: d9e337d47757e3c5507c94433f90d5c2863bc1b0
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71729604"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503020"
 ---
 # <a name="assign-a-role-to-an-intune-user"></a>Atribuir uma função a um usuário do Intune
 
@@ -31,7 +32,7 @@ Para criar, editar ou atribuir funções, a sua conta tem de ter uma das seguint
 - **Administrador Global**
 - **Administrador de Serviços do Intune**
 
-1. Inicie sessão no [Portal do Azure](https://portal.azure.com).
+1. Inicie sessão no [portal do Azure](https://portal.azure.com).
 
 2. Selecione **Todos os serviços** > **Intune**. O Intune encontra-se na secção **Monitorização + Gestão**.
 
@@ -39,7 +40,7 @@ Para criar, editar ou atribuir funções, a sua conta tem de ter uma das seguint
 
 4. Na folha **funções do Intune – todas as funções** , escolha a função interna que você deseja atribuir.
 
-5. Na folha*nome da função*de < >- **visão geral** , escolha **gerenciar** > **atribuições**.
+5. Na folha*nome da função*de < >- **visão geral** , escolha **gerenciar** **atribuições** > .
 
 6. No painel de função personalizada, escolha **Atribuir**.
 
@@ -54,6 +55,6 @@ Para criar, editar ou atribuir funções, a sua conta tem de ter uma das seguint
 11. Quando tiver terminado, selecione **OK**. A nova atribuição é apresentada na lista de atribuições.
 
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 - [Saiba mais sobre o controle de acesso baseado em função no Intune](role-based-access-control.md)
 - [Criar uma função personalizada](create-custom-role.md)

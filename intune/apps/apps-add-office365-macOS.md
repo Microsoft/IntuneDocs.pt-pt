@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 10/03/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 2372332a-7e3a-4a9c-91a9-86654e0fabe2
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 889cacbb56fb390b88c7db9c9516b8b43e4c3770
-ms.sourcegitcommit: 223d64a72ec85fe222f5bb10639da729368e6d57
+ms.openlocfilehash: 796b1709260c7f507e78aa8404129fa996b59088
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71940198"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72498806"
 ---
 # <a name="assign-office-365-to-macos-devices-with-microsoft-intune"></a>Atribuir o Office 365 a dispositivos macOS com o Microsoft Intune
 
@@ -48,17 +49,17 @@ Adicionar o Office 365 a partir do painel **Aplicações**.
 7. Para obter informações sobre o conjunto de aplicações, selecione **Informações do Conjunto de Aplicações**.  
     Estas informações ajudam-no a identificar o conjunto de aplicações no Intune e também ajuda os utilizadores a encontrá-la no portal da empresa.
 8. Introduza as seguintes informações:
-    - **Nome do pacote**: Insira o nome do pacote de aplicativos conforme ele é exibido no portal da empresa. Confirme que todos os nomes de conjuntos de aplicações que utiliza são exclusivos. Se o nome de um conjunto de aplicações existir em duplicado, apenas uma das aplicações será apresentada aos utilizadores no portal da empresa.
-    - **Descrição do pacote**: Insira uma descrição para o pacote de aplicativos.
-    - **Publicador**: A Microsoft aparece como o Publicador.
-    - **Categoria**: Selecione uma ou mais categorias das aplicações incorporadas ou, em alternativa, uma categoria criada por si. Esta definição irá permitir que os utilizadores encontrem o conjunto de aplicações mais facilmente quando procurarem no portal da empresa.
-    - **Apresentar como aplicação em destaque no Portal da Empresa**: selecione esta opção para apresentar a aplicação de forma bem visível na página principal do portal da empresa quando os utilizadores procurarem aplicações.
-    - **URL de informações**: Opcionalmente, introduza o URL de um site que contenha informações sobre esta aplicação. O URL é apresentado aos utilizadores no portal da empresa.
-    - **URL de privacidade**: Opcionalmente, introduza o URL de um site que contenha informações sobre a privacidade desta aplicação. O URL é apresentado aos utilizadores no portal da empresa.
-    - **Programador**: A Microsoft aparece como desenvolvedor.
-    - **Proprietário**: A Microsoft é exibida como o proprietário.
+    - **Nome do Conjunto**: introduza o nome do conjunto de aplicações tal como será apresentado no portal da empresa. Confirme que todos os nomes de conjuntos de aplicações que utiliza são exclusivos. Se o nome de um conjunto de aplicações existir em duplicado, apenas uma das aplicações será apresentada aos utilizadores no portal da empresa.
+    - **Descrição do Conjunto**: introduza uma descrição para o conjunto de aplicações.
+    - **Publicador**: a Microsoft aparece como o publicador.
+    - **Categoria**: selecione uma ou mais categorias das aplicações incorporadas ou, em alternativa, uma categoria criada por si. Esta definição irá permitir que os utilizadores encontrem o conjunto de aplicações mais facilmente quando procurarem no portal da empresa.
+    - **Apresentar como aplicação em destaque no Portal da Empresa**: selecione esta opção para apresentar o conjunto de aplicações em destaque na página principal do portal da empresa quando os utilizadores procurarem aplicações.
+    - **URL de Informações**: opcionalmente, introduza o URL de um site que contenha informações sobre esta aplicação. O URL é apresentado aos utilizadores no portal da empresa.
+    - **URL de Privacidade**: opcionalmente, introduza um URL para um site que contenha informações sobre a privacidade desta aplicação. O URL é apresentado aos utilizadores no portal da empresa.
+    - **Programador**: a Microsoft aparece como o programador.
+    - **Proprietário**: a Microsoft aparece como o proprietário.
     - **Notas**: opcionalmente, introduza quaisquer notas que queira associar a esta aplicação.
-    - **Logótipo**: O logotipo do Office 365 é exibido com o aplicativo quando os usuários navegam pelo portal da empresa.
+    - **Logótipo**: o logótipo do Office 365 é apresentado com a aplicação quando os utilizadores procuram no portal da empresa.
 9. Selecione **OK**.
 10. No painel **Adicionar aplicação**, selecione **Adicionar**.  
     O conjunto é apresentado na lista de aplicações como uma única entrada.
@@ -81,7 +82,7 @@ Neste passo, configure as atribuições do conjunto de aplicações.
 6. No painel **Adicionar grupo**, selecione **OK**.
 7. Para consolidar as suas atribuições, selecione **Guardar**.
 
-## <a name="next-steps"></a>Passos seguintes
+## <a name="next-steps"></a>Próximos passos
 
 - Para saber mais sobre a adição de aplicações do Office 365 a dispositivos Windows 10, veja [Atribuir aplicações do Office 365 ProPlus 2016 para dispositivos Windows 10 com o Microsoft Intune](apps-add-office365.md).
 - Para saber mais sobre como incluir e excluir atribuições de aplicações a partir de grupos de utilizadores, veja [Incluir e excluir atribuições de aplicações](apps-inc-exl-assignments.md).

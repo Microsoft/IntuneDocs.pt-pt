@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 03/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 60cfa440-0723-4ea0-bacf-3c5d26f9a1d3
@@ -15,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 45f3c0c9a561b488f6a972c1ae5048408c2d19c7
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 7ca0983b7b637b7e85bef97cd77e6c870c4e43eb
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71732260"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72510009"
 ---
 # <a name="basic-setup"></a>Configuração básica
 
@@ -28,7 +29,7 @@ Depois de avaliar o seu ambiente, está na altura de configurar o Microsoft Intu
 
 ## <a name="external-dependencies-for-an-intune-deployment"></a>Dependências externas para uma implementação do Intune
 
-### <a name="identity"></a>identidade
+### <a name="identity"></a>Identidade
 
 O Intune precisa do Azure Active Directory (AAD) como o fornecedor de identidades e de agrupamentos de utilizadores. Saiba mais sobre:
 
@@ -55,7 +56,7 @@ Se estiver a planear utilizar a autenticação baseada em certificados para perf
 
 ## <a name="task-list-for-an-intune-setup"></a>Lista de tarefas para uma configuração do Intune
 
-### <a name="task-1-intune-subscription"></a>Tarefa 1: Subscrição do Intune
+### <a name="task-1-intune-subscription"></a>Tarefa 1: Subscrição do Intune
 
 Para poder migrar para o Intune, precisa primeiro de uma subscrição do Intune.
 
@@ -65,13 +66,13 @@ Para poder migrar para o Intune, precisa primeiro de uma subscrição do Intune.
 
   - Ligar a subscrição do Intune ao iniciar sessão num inquilino do AAD existente.
 
-### <a name="task-2-assign-intune-user-licenses"></a>Tarefa 2: Atribuir licenças de usuário do Intune
+### <a name="task-2-assign-intune-user-licenses"></a>Tarefa 2: Atribuir licenças de utilizador do Intune
 
 - Saiba [como atribuir licenças de utilizador do Intune](licenses-assign.md).
 
 - Se tiver criado um novo inquilino do Azure Active Directory, saiba [como criar novos utilizadores ou sincronizar o utilizador a partir do seu Active Directory (AD) no local.](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect)
 
-### <a name="task-3-set-your-mdm-authority-to-intune"></a>Tarefa 3: Definir sua autoridade de MDM para o Intune
+### <a name="task-3-set-your-mdm-authority-to-intune"></a>Tarefa 3: Definir a autoridade MDM para o Intune
 
 O Intune pode ser gerido através do portal do Azure ou da consola do Configuration Manager Current Branch. A menos que precise de integrar o Intune com uma implementação do Configuration Manager Current Branch, recomendamos que faça a gestão do Intune a partir do [Portal do Azure](https://portal.azure.com).
 

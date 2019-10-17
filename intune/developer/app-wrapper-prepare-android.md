@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 10/02/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: developer
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dfea74c70b81cadfa06c578dc33cdad401fa9e45
-ms.sourcegitcommit: 223d64a72ec85fe222f5bb10639da729368e6d57
+ms.openlocfilehash: 107624ac5d0c5eab423c0d5051ceca45e41de0b9
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71940057"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72490750"
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparar as aplicações Android para as políticas de proteção de aplicações com a Ferramenta de Encapsulamento de Aplicações do Intune
 
@@ -53,7 +54,7 @@ Antes de executar a ferramenta, consulte as [Considerações de segurança para 
     > [!NOTE]
     > A Ferramenta de Encapsulamento de Aplicações do Intune não suporta esquemas de assinatura v2 e v3 da Google para a assinatura de aplicações. Depois de encapsular o ficheiro .apk com a Ferramenta de Encapsulamento de Aplicações do Intune, é recomendado utilizar a [ferramenta Apksigner fornecida pela Google]( https://developer.android.com/studio/command-line/apksigner). Isto irá garantir que, assim que a sua aplicação chegar aos dispositivos dos utilizadores finais, poderá ser iniciada corretamente de acordo com os padrões do Android. 
 
-- Adicional Às vezes, um aplicativo pode atingir o limite de tamanho do executável do Dalvik (DEX) devido às classes do SDK do MAM do Intune que são adicionadas durante o encapsulamento. Os ficheiros do DEX fazem parte da compilação de uma aplicação Android. A ferramenta de encapsulamento de aplicativos do Intune manipula automaticamente o estouro de arquivo Dex durante a disposição para aplicativos com um nível de API [mínimo de 21 ou superior (a partir de v. 1.0.2501.1](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android/releases)). Para aplicativos com um nível de API Mín de < 21, a prática recomendada seria aumentar o nível mínimo de API usando o sinalizador `-UseMinAPILevelForNativeMultiDex` do wrapper. Para os clientes não conseguirem aumentar o nível de API mínimo do aplicativo, as seguintes soluções alternativas de estouro de DEX estão disponíveis. Em determinadas organizações, isso pode exigir o trabalho com quem compila o aplicativo (ou seja, a equipe de Build do aplicativo):
+- Adicional Às vezes, um aplicativo pode atingir o limite de tamanho do executável do Dalvik (DEX) devido às classes do SDK do MAM do Intune que são adicionadas durante o encapsulamento. Os ficheiros do DEX fazem parte da compilação de uma aplicação Android. A ferramenta de encapsulamento de aplicativos do Intune manipula automaticamente o estouro de arquivo DEX durante o encapsulamento de aplicativos com um nível de API mínimo de 21 ou superior (a partir de [v. 1.0.2501.1](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android/releases)). Para aplicativos com um nível de API Mín de < 21, a prática recomendada seria aumentar o nível mínimo de API usando o sinalizador de `-UseMinAPILevelForNativeMultiDex` do wrapper. Para os clientes não conseguirem aumentar o nível de API mínimo do aplicativo, as seguintes soluções alternativas de estouro de DEX estão disponíveis. Em determinadas organizações, isso pode exigir o trabalho com quem compila o aplicativo (ou seja, a equipe de Build do aplicativo):
 * Use o ProGuard para eliminar referências de classes não utilizadas do arquivo DEX primário do aplicativo.
 * Para clientes que usam o v 3.1.0 ou superior do plug-in Android gradle, desabilite o [dexer D8](https://android-developers.googleblog.com/2018/04/android-studio-switching-to-d8-dexer.html).  
 
@@ -63,7 +64,7 @@ Antes de executar a ferramenta, consulte as [Considerações de segurança para 
 
 2. Aceite o contrato de licença e conclua a instalação.
 
-Não se esqueça da pasta na qual instalou a ferramenta. O local padrão é: C:\Arquivos de programas (x86) \Microsoft Intune Mobile Application Management\Android\App endisposição Tool.
+Não se esqueça da pasta na qual instalou a ferramenta. A localização predefinida é: C:\Program Files (x86)\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool.
 
 ## <a name="run-the-app-wrapping-tool"></a>executar a Ferramenta de Encapsulamento de Aplicações
 

@@ -1,5 +1,5 @@
 ---
-title: O que acontece se repuser o seu dispositivo Android? | Microsoft Docs
+title: O que acontece se repuser o seu dispositivo Android? | Documentos da Microsoft
 description: ''
 keywords: ''
 author: lenewsad
@@ -9,6 +9,7 @@ ms.date: 04/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 5d4e31a2-7bda-4d62-a0ba-c31e77ecea03
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cecc5380ca6f4e52eeef821e776a4174874b1950
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 2a4337eecdd22175e6fdc987d7bd6aa1f73dc191
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61500600"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72501869"
 ---
 # <a name="what-happens-if-you-reset-your-android-device-using-the-company-portal"></a>O que acontece se repuser o seu dispositivo Android com o Portal da Empresa?
 
@@ -35,4 +36,4 @@ Se tiver um dispositivo Samsung Knox, pode fazer uma "eliminação seletiva", es
 - E-mail, VPN e Wi-Fi.
 - A capacidade do suporte da empresa de impor determinadas definições.
 
-Se tiver dúvidas, contacte o suporte da sua empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+Se tiver dúvidas, contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
