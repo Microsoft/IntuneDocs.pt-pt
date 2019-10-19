@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/26/2019
+ms.date: 10/08/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4e39464705b0a3bac70616d49eb80681515db801
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: a26af380ef00c85c681beccdcdf188c343da1b94
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72489978"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72584897"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>configurações do dispositivo iOS e iPadOS para permitir ou restringir recursos usando o Intune
 
@@ -268,6 +268,11 @@ Estas definições são adicionadas a um perfil de configuração do dispositivo
 
   A partir do iOS 13,0, essa configuração requer dispositivos supervisionados.
 
+- **Acesso à unidade de rede no aplicativo de arquivos**: usando o protocolo SMB, os dispositivos podem acessar arquivos ou outros recursos em um servidor de rede. **Desabilitar** impede o acesso a arquivos em uma unidade SMB de rede. **Não configurado** (padrão) permite o acesso.
+
+  Esta funcionalidade aplica-se a:  
+  - iOS e iPadOS 13,0 e mais recentes
+
 ## <a name="built-in-apps"></a>Aplicações Incorporadas
 
 ### <a name="settings-apply-to-all-enrollment-types"></a>As configurações se aplicam a: todos os tipos de registro
@@ -378,7 +383,7 @@ Aplica-se a dispositivos que executam o iOS 9,3 ou mais recente.
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>As configurações se aplicam a: registro de dispositivo automatizado (supervisionado)
 
-- **Tipo de lista de aplicativos**: Crie uma lista de aplicativos para mostrar ou ocultar. As opções são:
+- **Tipo de lista de aplicativos**: Crie uma lista de aplicativos para mostrar ou ocultar. Você pode mostrar ou ocultar aplicativos internos e aplicativos de linha de negócios. O site da Apple tem uma lista de [aplicativos da Apple internos](https://support.apple.com/HT208094). As opções são:
 
   - **Aplicativos ocultos**: Insira uma lista de aplicativos que estão ocultos dos usuários. Os utilizadores não podem ver nem abrir estas aplicações.
   - **Aplicativos visíveis**: Insira uma lista de aplicativos que os usuários podem exibir e iniciar. Mais nenhuma outra aplicação pode ser vista ou lançada.
@@ -433,7 +438,12 @@ Para adicionar aplicações, pode:
   - iOS 12,2 e mais recente
 
 - **Unir redes Wi-Fi usando somente perfis de configuração**: **exigir** força o dispositivo a usar apenas redes Wi-Fi configuradas por meio de perfis de configuração do Intune. **Não configurado** (predefinição) permite que o dispositivo utilize outras redes Wi-Fi.
-- **Modificação do estado de Wi-Fi**: **não configurado** (padrão) permite que os usuários ativem ou desativem o Wi-Fi no dispositivo. **Bloquear** impede a ativação ou desativação de Wi-Fi.
+- **Wi-Fi sempre ativado**: quando definido como **exigir**, o Wi-Fi permanece no aplicativo de configurações. Ele não pode ser desativado em configurações ou no centro de controle, mesmo quando o dispositivo está no modo avião. **Não configurado** (padrão) permite que o usuário controle a ativação ou desativação do Wi-Fi.
+
+  Definir essa configuração não impede que os usuários selecionem uma rede Wi-Fi.
+
+  Esta funcionalidade aplica-se a:  
+  - iOS e iPadOS 13,0 e mais recentes
 
 ## <a name="connected-devices"></a>Dispositivos Ligados
 
@@ -459,6 +469,11 @@ Para adicionar aplicações, pode:
 
   Esta funcionalidade aplica-se a:  
   - iOS 11,0 e mais recente
+
+- **Acesso a arquivos na unidade USB**: os dispositivos podem se conectar e abrir arquivos em uma unidade USB. **Desabilitar** impede o acesso do dispositivo à unidade USB no aplicativo arquivos quando um USB está conectado ao dispositivo. Desabilitar esse recurso também impede que os usuários finais transfiram arquivos para uma unidade USB conectada a um iPad. **Não configurado** (padrão) permite o acesso a uma unidade USB no aplicativo arquivos.
+
+  Esta funcionalidade aplica-se a:  
+  - iOS e iPadOS 13,0 e mais recentes
 
 ## <a name="keyboard-and-dictionary"></a>Teclado e Dicionário
 

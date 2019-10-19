@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 68ac751ee169e74c117e14bf80a2ee09b3e3e775
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 8029c62aeec431c19db080ec444c02565905443f
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72505504"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585314"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Registrar dispositivos Windows no Intune usando o piloto automático do Windows  
 O Windows AutoPilot simplifica o registro de dispositivos no Intune. A criação e manutenção de imagens personalizadas do sistema operativo são um processo moroso. Também poderá demorar a aplicar estas imagens personalizadas do sistema operativo a novos dispositivos para as preparar para utilização antes de as disponibilizar aos seus utilizadores finais. Com o Microsoft Intune e o Autopilot, pode fornecer novos dispositivos aos seus utilizadores finais sem ter de criar, manter e aplicar imagens de sistema operativo personalizadas aos dispositivos. Ao utilizar o Intune para gerir dispositivos do Autopilot, pode gerir políticas, perfis, aplicações, entre outros, após estes serem inscritos. Para uma descrição geral das vantagens, cenários e pré-requisitos, veja [Descrição geral do Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
@@ -80,7 +80,7 @@ Pode adicionar dispositivos Windows Autopilot ao importar um ficheiro CSV com as
     Os dispositivos Autopilot que ainda não estão inscritos são dispositivos em que o nome é igual ao número de série do dispositivo.
 4. Se acima optou por **Dispositivo Dinâmico** para o **Tipo de associação**, no painel **Grupo**, selecione **Membros de dispositivo dinâmicos** e escreva o seguinte código na caixa **Regra avançada**. Somente os dispositivos AutoPilot são coletados por essas regras, pois eles direcionam atributos que são apenas possuía por dispositivos AutoPilot. A criação de um grupo com base em atributos não AutoPilot não garantirá que os dispositivos incluídos no grupo estejam realmente registrados no piloto automático.
     - Se você quiser criar um grupo que inclui todos os seus dispositivos do AutoPilot, digite: `(device.devicePhysicalIDs -any _ -contains "[ZTDId]")`
-    - O campo de marca de grupo do Intune é mapeado para o atributo OrderID em dispositivos do Azure AD. Se você quiser criar um grupo que inclui todos os seus dispositivos do AutoPilot com uma marca de grupo específica (o dispositivo OrderID do Azure AD), deverá digitar: `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`
+    - O campo de marca de grupo do Intune é mapeado para o atributo OrderID em dispositivos do Azure AD. Se você quiser criar um grupo que inclua todos os seus dispositivos de piloto automático com uma marca de grupo específica (o dispositivo OrderID do Azure AD), você deve digitar: `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`
     - Se quiser criar um grupo que inclua todos os seus dispositivos do Autopilot com um ID de Nota de Encomenda específico, escreva `(device.devicePhysicalIds -any _ -eq "[PurchaseOrderId]:76222342342")`
     
     Depois de adicionar o código da **Regra avançada**, selecione **Guardar**.
@@ -143,6 +143,18 @@ Após ter criado um perfil de implementação do Autopilot, poderá editar deter
 > [!NOTE]
 > As alterações ao perfil são aplicadas aos dispositivos atribuídos a esse perfil. No entanto, o perfil atualizado não será aplicado a um dispositivo já inscrito no Intune até que o dispositivo tenha sido reposto e reinscrito.
 
+## <a name="edit-autopilot-device-attributes"></a>Editar atributos de dispositivo de piloto automático
+Depois de carregar um dispositivo de piloto automático, você poderá editar determinados atributos do dispositivo.
+
+1. No Intune no portal do Azure, escolha **registro de dispositivo**.
+2. Em **registro do Windows**, na seção **Windows AutoPilot** , escolha **dispositivos**.
+3. Selecione o dispositivo que você deseja editar.
+4. No painel à direita da tela, você pode editar o nome do dispositivo, a marca do grupo ou o nome amigável do usuário (se você tiver atribuído um usuário).
+5. Selecione **Guardar**.
+
+> [!NOTE]
+> Os nomes de dispositivo podem ser configurados para todos os dispositivos, mas são ignorados em implantações Unidas do Azure AD híbridos. O nome do dispositivo ainda vem do perfil de ingresso no domínio para dispositivos híbridos do Azure AD.
+
 ## <a name="alerts-for-windows-autopilot-unassigned-devices-----163236---"></a>Alertas para dispositivos Windows AutoPilot não atribuídos  <!-- 163236 -->  
 
 Os alertas irão indicar quantos dispositivos do programa Autopilot não têm perfis de implementação do Autopilot. Utilize as informações no alerta para criar perfis e atribui-los aos dispositivos não atribuídos. Quando clica no alerta, é-lhe apresentada uma lista completa dos dispositivos Windows Autopilot e informações detalhadas sobre os mesmos.
@@ -169,6 +181,11 @@ Pré-requisitos: Azure Active Directory Portal da Empresa foi configurado e Wind
 
 4. Selecione **OK**.
 
+## <a name="autopilot-deployments-report"></a>Relatório de implantações do AutoPilot
+Você pode ver detalhes em cada dispositivo implantado por meio do piloto automático do Windows.
+Para ver o relatório, acesse **Intune** e, em **Monitor**, escolha **implantações de piloto automático**.
+Os dados ficam disponíveis por 30 dias após a implantação.
+
 
 ## <a name="delete-autopilot-devices"></a>Eliminar dispositivos Autopilot
 
@@ -180,7 +197,7 @@ A remoção completa de um dispositivo do seu locatário exige que você exclua 
 
 1. Se os dispositivos estiverem registrados no Intune, você deverá primeiro [excluí-los da folha todos os dispositivos do Intune](../remote-actions/devices-wipe.md#delete-devices-from-the-azure-active-directory-portal).
 
-2. Exclua os dispositivos **em dispositivos Azure Active Directory em dispositivos @no__t-** 1**dispositivos do Azure ad**.
+2. Exclua os dispositivos **em dispositivos Azure Active Directory em dispositivos  > ** **dispositivos do Azure ad**.
 
 3. Exclua os dispositivos do Windows AutoPilot no **registro de dispositivo** >  registro do**Windows** > **dispositivos**. Escolha os dispositivos que você deseja excluir e, em seguida, escolha **excluir**. A exclusão do dispositivo do Windows AutoPilot pode levar alguns minutos para ser concluída.
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/18/2019
+ms.date: 10/10/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 890dc68afd11862d11effd3e2d3a160815d6ad8c
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 3137db9d1ab82ebb99686f8f98aa768dae222caf
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507354"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72584964"
 ---
 # <a name="add-managed-google-play-apps-to-android-enterprise-devices-with-intune"></a>Adicionar aplicações do Managed Google Play a dispositivos Android Enterprise com o Intune
 
@@ -49,9 +49,9 @@ Para facilitar a configuração e o uso do gerenciamento corporativo do Android,
 ## <a name="managed-google-play-app-types"></a>Tipos de aplicativo Google Play gerenciados
 Há três tipos de aplicativos que estão disponíveis com Google Play gerenciados:
 
-* **Aplicativo gerenciado do Google Play Store** -aplicativos públicos que estão geralmente disponíveis no Play Store. Gerencie esses aplicativos no Intune procurando os aplicativos que você deseja gerenciar, aprovando-os e, em seguida, sincronizando-os no Intune.
-* **Aplicativo gerenciado Google Play privado** -esses são aplicativos LOB publicados para Google Play gerenciados pelos administradores do Intune.  Esses aplicativos são privados e estão disponíveis somente para seu locatário do Intune. É assim que os aplicativos LOB são gerenciados e implantados com o Google Play gerenciado e o Android Enterprise.
-* **Link da Web do Google Play gerenciado** -links da Web com ícones definidos pelo administrador de ti que são implantáveis em dispositivos Android Enterprise. Eles aparecem em dispositivos na lista de aplicativos do dispositivo, assim como aplicativos regulares.
+- **Aplicativo gerenciado do Google Play Store** -aplicativos públicos que estão geralmente disponíveis no Play Store. Gerencie esses aplicativos no Intune procurando os aplicativos que você deseja gerenciar, aprovando-os e, em seguida, sincronizando-os no Intune.
+- **Aplicativo gerenciado Google Play privado** -esses são aplicativos LOB publicados para Google Play gerenciados pelos administradores do Intune.  Esses aplicativos são privados e estão disponíveis somente para seu locatário do Intune. É assim que os aplicativos LOB são gerenciados e implantados com o Google Play gerenciado e o Android Enterprise.
+- **Link da Web do Google Play gerenciado** -links da Web com ícones definidos pelo administrador de ti que são implantáveis em dispositivos Android Enterprise. Eles aparecem em dispositivos na lista de aplicativos do dispositivo, assim como aplicativos regulares.
 
 ## <a name="managed-google-play-store-apps"></a>Aplicativos gerenciados da Store Google Play
 Há duas maneiras de procurar e aprovar aplicativos gerenciados da Google Play Store com o Intune:
@@ -210,8 +210,7 @@ Em alternativa, pode configurar o Google Play para reaprovar automaticamente as 
 
 ## <a name="additional-managed-google-play-app-reporting-for-android-enterprise-work-profile-devices"></a>Relatórios adicionais da aplicação do Managed Google Play para dispositivos de perfil de trabalho do Android Enterprise
 
-Para as aplicações do Managed Google Play implementadas para dispositivos de perfil de trabalho do Android Enterprise, pode ver o número de versão específica da aplicação instalada num dispositivo. Tal só se aplica às aplicações obrigatórias. 
-
+Para aplicativos gerenciados Google Play implantados em dispositivos Android Enterprise Work Profile, você pode exibir o status e o número de versão do aplicativo instalado em um dispositivo usando o Intune. 
 
 ## <a name="delete-managed-google-play-apps"></a>Eliminar aplicações do Managed Google Play
 Quando necessário, pode eliminar as aplicações do Managed Google Play do Microsoft Intune. Para eliminar uma aplicação do Managed Google Play, abra o Microsoft Intune no portal do Azure e selecione **Aplicações cliente** > **Aplicações**. Na lista de aplicações, selecione as reticências (...) à direita da aplicação do Managed Google Play e, em seguida, selecione **Eliminar** na lista apresentada. Quando elimina uma aplicação do Managed Google Play da lista de aplicações, essa aplicação passa automaticamente a não aprovada.

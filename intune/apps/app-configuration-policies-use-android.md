@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/16/2019
+ms.date: 10/08/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6fecdc56e6140a939959ac92bbe8fa410d43ccc5
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 9561c50e21a9667ccec3f9de3627e7a933cf0736
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507523"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72584983"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-enterprise-devices"></a>Adicionar políticas de configuração de aplicativo para dispositivos Android Enterprise gerenciados
 
@@ -69,14 +69,16 @@ Pode escolher as seguintes opções, se selecionar a variável como o tipo de va
 
 | Opção | Exemplo |
 |----|----|
-| Correio | john@contoso.com |
-| Nome principal do usuário | john@contoso.com |
-| UPN Parcial | joão |
-| Domínio | Contoso.com |
-| Nome de utilizador | João Silva |
+| ID do dispositivo do AAD | dc0dc142-11d8-4b12-bfea-cae2a8514c82 |
 | ID de conta | fc0dc142-71d8-4b12-bbea-bae2a8514c81 |
+| ID de Dispositivo do Intune | b9841cd9-9843-405f-be28-b2265c59ef97 |
+| Domínio | Contoso.com |
+| Correio | john@contoso.com |
+| UPN Parcial | joão |
 | ID de usuário | 3ec2c00f-b125-4519-acf0-302ac3761822 |
-| ID do dispositivo | b9841cd9-9843-405f-be28-b2265c59ef97 |
+| Nome de utilizador | João Silva |
+| Nome principal do usuário | john@contoso.com |
+
 
 ### <a name="allow-only-configured-organization-accounts-in-multi-identity-apps"></a>Permitir apenas contas de organização configuradas nas aplicações de várias identidades 
 

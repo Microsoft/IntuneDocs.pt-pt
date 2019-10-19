@@ -16,17 +16,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9fbf555f204e54a65e11c4b14f0a461213b61746
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: c1c02248b3208073a3bb09cafe69cf0473eacb2b
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509376"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72584525"
 ---
 # <a name="rename-a-device-in-intune"></a>Renomear um dispositivo no Intune
-
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 A ação **renomear dispositivo** permite renomear um dispositivo registrado no Intune. O nome do dispositivo é alterado no Intune e no dispositivo.
 
@@ -45,6 +42,15 @@ No momento, esse recurso não dá suporte à renomeação de dispositivos Window
 5. Se você quiser reiniciar o dispositivo depois de renomeá-lo, escolha **Sim** avançar para **reiniciar após a renomeação**.
 6. Escolha **renomear**.
 
+## <a name="windows-device-rename-rules"></a>Regras de renomeação de dispositivo do Windows
+Ao renomear um dispositivo Windows, o novo nome deve seguir estas regras:
+- 15 caracteres ou menos (deve ser menor ou igual a 63 bytes, não incluindo nulo à direita)
+- Não nulo ou uma cadeia de caracteres vazia
+- ASCII permitido: letras (a-z, A-Z), números (0-9) e hifens
+- Unicode permitidos: caracteres > = 0x80, deve ser um UTF8 válido, deve ser IDN-mapeável (ou seja, RtlIdnToNameprepUnicode tem sucesso; consulte RFC 3492)
+- Os nomes não devem conter apenas números
+- Nenhum espaço no nome
+- Caracteres não permitidos: {|} ~ [\] ^ ':; < = >? & @! " # $ % ` ( ) + / , . _ *)
 
 
 ## <a name="next-steps"></a>Próximos passos

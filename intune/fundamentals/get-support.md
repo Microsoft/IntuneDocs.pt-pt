@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 26165681195a47da0fcfeb86e4cfdbe2da942ec9
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 91627a47f9dccfb436e64aaadeeb392648dff821
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72510329"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585305"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Como obter suporte para o Microsoft Intune  
 
@@ -83,7 +83,7 @@ Para aceder a Ajuda e suporte, utilize as seguintes opções:
   4. Selecione a página link de ajuda e suporte do Intune.
 
 > [!NOTE]  
-> Se sua instância do Intune estiver hospedada na GCC (nuvem de computação governamental), também conhecida como nuvem soberanas como Azure governamental, consulte suporte do Intune para nuvem de computação governamental, mais adiante neste artigo. A experiência de *ajuda e suporte* do Intune não estará disponível no gcc até mais tarde neste ano. 
+> Se sua instância do Intune estiver hospedada na nuvem privada para entidades governamentais, também conhecida como nuvem soberanas como Azure governamental, consulte [suporte do Intune para nuvem privada para o governo](#intune-support-for-private-cloud-for-government), mais adiante neste artigo. A experiência de *ajuda e suporte* do Intune não estará disponível na nuvem privada para o governo até o momento neste ano. 
 
 
 Quando você abre a *ajuda e o suporte*, o portal exibe uma exibição que depende se você tem ou não incidentes de suporte ativos, e quando você tem suporte Premier, alguns elementos e opções adicionais:
@@ -91,7 +91,7 @@ Quando você abre a *ajuda e o suporte*, o portal exibe uma exibição que depen
 - **Incidentes de suporte ativos**: você verá a página [tíquetes de suporte](#view-support-cases) , que exibe a lista de seus incidentes ativos.  
 - **Contrato de suporte Premier**: sua experiência é a mesma das duas primeiras opções, embora você veja os seguintes elementos adicionais sobre a necessidade de ajuda? Web 
   - Depois que o título da página **precisar de ajuda?** , você verá a faixa suporte Premier:  
-    faixa de suporte do ![Premier @ no__t-1
+    faixa de suporte do ![Premier ](./media/get-support/premier-banner.png)
   - Na seção **obter suporte** da página, você pode definir o nível de **severidade** inicial ao criar uma solicitação de serviço por telefone.
 
 
@@ -163,20 +163,20 @@ Selecione o botão de histórico para ver os incidentes de suporte que criou.
 
 Quando você usa o painel de navegação esquerdo **ajuda + suporte**ou usa o **?** no canto superior direito do portal do Azure, você abre a experiência de ajuda + suporte do Azure, que é distinta da experiência de ajuda e suporte do Intune.  
 
-A partir de abril de 2019, não é possível acessar a experiência de *ajuda + suporte* do Azure para obter assistência com o Intune, a menos que sua assinatura esteja na gcc (nuvem de computação governamental).  
+A partir de abril de 2019, não é possível acessar a experiência de *ajuda + suporte* do Azure para obter assistência com o Intune, a menos que sua assinatura esteja em uma nuvem privada para entidades governamentais.  
 
-Se sua instância do Intune não for executada no GCC, navegar pela *ajuda do Azure + suporte* redireciona você para a experiência de *ajuda e suporte* do Intune para criar e gerenciar incidentes de suporte.  
+Se sua instância do Intune não for executada em uma nuvem privada para o governo, navegar pela ajuda do Azure *+ support* redireciona você para a experiência de *ajuda e suporte* do Intune para criar e gerenciar incidentes de suporte.  
 
 
-## <a name="intune-support-for-government-compute-cloud"></a>Suporte do Intune para nuvem de computação governamental  
+## <a name="intune-support-for-private-cloud-for-government"></a>Suporte do Intune para nuvem privada para o governo  
 
-Quando sua assinatura do Intune é hospedada na GCC (nuvem de computação governamental), que também é conhecida como uma nuvem soberanas, como o Azure governamental, você ainda não tem acesso à ajuda e à experiência de suporte mais recentes do Intune.  Em vez disso, use as informações a seguir para obter suporte para o Intune. 
+Quando sua assinatura do Intune é hospedada na nuvem privada para entidades governamentais, que também é conhecida como nuvem soberanas como Azure governamental, você ainda não tem acesso à ajuda e à experiência de suporte mais recentes do Intune.  Em vez disso, use as informações a seguir para obter suporte para o Intune. 
 
 
 ### <a name="create-an-online-support-ticket"></a>Criar um pedido de suporte online 
 
 >[!IMPORTANT]    
-> Como *ajuda e suporte* faz a transição para um novo sistema que ainda não está disponível para o gcc, quando você cria um incidente de suporte, o portal identifica um caso de suporte que usa um número de identificação de 15 dígitos. Quando o caso de 15 dígitos é criado, um espelho desse caso é criado para ser usado pelo Suporte da Microsoft. Esse caso de espelho é criado em um novo sistema de suporte, usa uma ID de caso de 8 dígitos e é usado pelos serviços de suporte para acompanhar todo o trabalho e as comunicações de seu incidente de suporte. Logo após a criação do seu caso de 15 dígitos, você receberá um email que identifica o número de 8 dígitos do caso de suporte espelhado que é usado pelos serviços de suporte.  
+> Como *ajuda e suporte* faz a transição para um novo sistema que ainda não está disponível para a nuvem privada para o governo, quando você cria um incidente de suporte, o portal identifica um caso de suporte que usa um número de identificação de 15 dígitos. Quando o caso de 15 dígitos é criado, um espelho desse caso é criado para ser usado pelo Suporte da Microsoft. Esse caso de espelho é criado em um novo sistema de suporte, usa uma ID de caso de 8 dígitos e é usado pelos serviços de suporte para acompanhar todo o trabalho e as comunicações de seu incidente de suporte. Logo após a criação do seu caso de 15 dígitos, você receberá um email que identifica o número de 8 dígitos do caso de suporte espelhado que é usado pelos serviços de suporte.  
 > 
 > Dê suporte a trabalho pessoal e comunique-se com o caso de suporte de 8 dígitos e use apenas o caso de suporte de 8 dígitos para registrar comunicações e acompanhar o progresso do incidente. Portanto, você receberá atualizações de email desse caso de suporte de 8 dígitos que serve como seu registro de faixa de trabalho de caso. Nenhum detalhe é registrado no incidente de suporte de 15 dígitos. Quando o suporte é concluído e o caso de suporte de 8 dígitos é fechado, esse status é refletido pelo caso de suporte de 15 dígitos que você pode exibir no portal do Azure.  Nenhuma outra atualização ou alteração de status deve ser esperada para o caso de suporte de 15 dígitos.  
 > 
@@ -224,7 +224,7 @@ Você pode exibir suas solicitações de suporte de dentro do portal do Azure. N
 2. Na página **ajuda + suporte** , você pode exibir a lista de **solicitações de suporte recentes**.
 
    > [!IMPORTANT]  
-   > Os clientes da nuvem de computação governamental só podem exibir o número do caso de suporte de 15 dígitos e o status do incidente. Todas as comunicações de caso e acompanhamento de trabalho ou alertas são enviados por email e fazem referência ao número de caso de suporte de 8 dígitos que é criado como um espelho do caso de suporte aberto de dentro do console do Intune.   
+   > A nuvem privada para clientes do governo só pode exibir o número do caso de suporte de 15 dígitos e o status do incidente. Todas as comunicações de caso e acompanhamento de trabalho ou alertas são enviados por email e fazem referência ao número de caso de suporte de 8 dígitos que é criado como um espelho do caso de suporte aberto de dentro do console do Intune.   
 
 ## <a name="additional-resources"></a>Recursos adicionais  
 

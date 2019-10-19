@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2c5f089edd63d55f288a606de782448fa3d29b88
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 327e0d56400a2aac545d1bae92279e242aa2006a
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509719"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585229"
 ---
 # <a name="whats-new-in-the-microsoft-intune---previous-months"></a>Novidades do Microsoft Intune – meses anteriores
 
@@ -69,7 +69,7 @@ Estamos adicionando uma configuração que permite que você personalize a apar�
 Para ver as configurações de quiosque, consulte [restrições de dispositivo do Android Enterprise](../configuration/device-restrictions-android-for-work.md).
 
 #### <a name="app-protection-policy-assignment-save-and-apply----3104570---"></a>Salvar e aplicar atribuição de política de proteção de aplicativo <!-- 3104570 -->
-Agora você tem um melhor controle sobre as [atribuições de política de proteção de aplicativo](../apps/app-protection-policies.md#deploy-a-policy-to-users). Ao selecionar *atribuições* para definir ou editar as atribuições de uma política, você deve **salvar** sua configuração antes que a alteração se aplique. Use **descartar** para limpar todas as alterações feitas sem salvar as alterações nas listas incluir ou excluir.  Ao exigir salvar ou descartar, somente os usuários aos quais você pretende receberão uma política de proteção de aplicativo.
+Agora você tem um melhor controle sobre as [atribuições de política de proteção de aplicativo](../apps/app-protection-policies.md#assign-a-windows-10-policy-to-users). Ao selecionar *atribuições* para definir ou editar as atribuições de uma política, você deve **salvar** sua configuração antes que a alteração se aplique. Use **descartar** para limpar todas as alterações feitas sem salvar as alterações nas listas incluir ou excluir.  Ao exigir salvar ou descartar, somente os usuários aos quais você pretende receberão uma política de proteção de aplicativo.
 
 #### <a name="new-microsoft-edge-browser-settings-for-windows-10-and-later----3174639---"></a>Novas configurações do navegador Microsoft Edge para Windows 10 e posterior <!-- 3174639 -->
 Essa atualização inclui novas configurações para ajudar a controlar e gerenciar o navegador Microsoft Edge em seus dispositivos. Para obter uma lista dessas configurações, consulte [restrição de dispositivo para Windows 10 (e mais recente)](../configuration/device-restrictions-windows-10.md#microsoft-edge-browser).
@@ -133,7 +133,7 @@ Esta funcionalidade será implementada para a base de utilizadores nos próximos
 Você pode escolher quais aplicativos são acompanhados na página status do registro. Até que esses aplicativos sejam instalados, o usuário não poderá usar o dispositivo. Para obter mais informações, consulte [Configurar uma página de status de registro](../enrollment/windows-enrollment-status.md).
 
 #### <a name="search-for-autopilot-device-by-serial-number---2595788---"></a>Pesquisar por um dispositivo AutoPilot por número de série <!--2595788 -->
-Agora você pode pesquisar por um número de série de dispositivos AutoPilot. Para fazer isso, escolha **registro de dispositivo**@no__t-**1 registro do Windows** > **dispositivos** > digite um número de série na caixa **Pesquisar por número de série** > pressione Enter.
+Agora você pode pesquisar por um número de série de dispositivos AutoPilot. Para fazer isso, escolha **registro de dispositivo**  > **registro do Windows**  > **dispositivos** > digite um número de série na caixa **Pesquisar por número de série** > pressione Enter.
 
 #### <a name="track-installation-of-office-proplus---2620217---"></a>Acompanhar a instalação do Office ProPlus <!--2620217 -->
 Os usuários podem acompanhar o progresso da instalação do [Office ProPlus](../apps/apps-add-office365.md) usando a [página status do registro](../enrollment/windows-enrollment-status.md). Para obter mais informações, consulte [Configurar uma página de status de registro](../enrollment/windows-enrollment-status.md).

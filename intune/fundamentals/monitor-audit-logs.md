@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 6ee841cc-5694-4ba1-8f66-1d58edec30a4
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b4be1755a07e6ec304edb7bceba8041d5b58263e
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: fd00a0ae4cb6c3b150fe40cfc6cd7b71cfa973f3
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72510001"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585246"
 ---
 # <a name="use-audit-logs-to-track-and-monitor-events-in-microsoft-intune"></a>Usar logs de auditoria para acompanhar e monitorar eventos no Microsoft Intune
 
@@ -50,7 +50,8 @@ Os logs de auditoria e os logs operacionais também podem ser roteados para Azur
 
 ![Exportar dados de log para o Azure monitor selecionando configurações de dados de exportação no Intune](./media/monitor-audit-logs/audit-logs-export-data-settings.png)
 
-Para obter mais informações sobre esse recurso, consulte [enviar dados de log para armazenamento, hubs de eventos ou log Analytics](review-logs-using-azure-monitor.md).
+> [!NOTE]
+> Para obter mais informações sobre esse recurso e revisar os pré-requisitos para usá-lo, consulte [enviar dados de log para armazenamento, hubs de eventos ou log Analytics](review-logs-using-azure-monitor.md).
 
 ## <a name="review-audit-events"></a>Rever eventos de auditoria
 
@@ -72,7 +73,7 @@ Para ver informações mais específicas sobre um evento, selecione um item na l
 
 > [!NOTE]
 > **Iniciado por (ator)** inclui informações sobre quem executou a tarefa e onde ela foi executada. Por exemplo, se você executar a atividade no Intune na portal do Azure, o **aplicativo** sempre listará **Microsoft Intune extensão do portal** e a **ID do aplicativo** sempre usará o mesmo GUID.
-> 
+>
 > A seção **destino (s)** lista vários destinos e as propriedades que foram alteradas.  
 
 ## <a name="filter-audit-events"></a>Filtrar eventos de auditoria

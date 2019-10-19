@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/04/2019
+ms.date: 10/14/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 31a55f5749b35139368b6c3543fd8ff95db6100d
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 2c578cb430bd6c62c274322ea1e46b5d37d2e143
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506834"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72584981"
 ---
 # <a name="apply-features-and-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Aplicar definições e funcionalidades nos dispositivos com perfis de dispositivo no Microsoft Intune
 
@@ -67,7 +67,7 @@ Esta funcionalidade suporta:
 
 ## <a name="custom-profile"></a>Perfil personalizado
 
-As [definições personalizadas](../custom-settings-configure.md) permitem que os administradores atribuam definições de dispositivo que não estejam incorporadas no Intune. Em dispositivos Android, pode introduzir valores OMA-URI. Para dispositivos iOS, pode importar um ficheiro de configuração que criou no Apple Configurator.
+As [definições personalizadas](custom-settings-configure.md) permitem que os administradores atribuam definições de dispositivo que não estejam incorporadas no Intune. Em dispositivos Android, pode introduzir valores OMA-URI. Para dispositivos iOS, pode importar um ficheiro de configuração que criou no Apple Configurator.
 
 Esta funcionalidade suporta:
 
@@ -79,7 +79,7 @@ Esta funcionalidade suporta:
 
 ## <a name="delivery-optimization"></a>Otimização da entrega
 
-A [otimização da entrega](../delivery-optimization-windows.md) oferece uma melhor experiência na entrega de atualizações de software. Estas definições estão a substituir as definições **Atualizações de Software** > **Cadência de atualizações do Windows 10**.
+A [otimização da entrega](delivery-optimization-windows.md) oferece uma melhor experiência na entrega de atualizações de software. Estas definições estão a substituir as definições **Atualizações de Software** > **Cadência de atualizações do Windows 10**.
 
 Utilize estas definições para controlar a forma como as atualizações de software são transferidas para os dispositivos na sua organização. Por exemplo, pode permitir que os utilizadores obtenham as suas próprias atualizações ou obtenham as atualizações através dos serviços cloud de otimização de entrega num perfil de dispositivo.
 
@@ -89,7 +89,7 @@ Esta funcionalidade suporta:
 
 ## <a name="device-features"></a>Funcionalidades do dispositivo
 
-As [funcionalidades do dispositivo](../device-features-configure.md) controlam as funcionalidades nos dispositivos iOS e macOS como o AirPrint, as notificações e as mensagens de bloqueio de ecrã.
+As [funcionalidades do dispositivo](device-features-configure.md) controlam as funcionalidades nos dispositivos iOS e macOS como o AirPrint, as notificações e as mensagens de bloqueio de ecrã.
 
 Esta funcionalidade suporta:
 
@@ -211,9 +211,9 @@ Esta funcionalidade suporta:
 
 ## <a name="update-policies"></a>Políticas de atualização
 
-As [políticas de atualização do iOS](../software-updates-ios.md) mostram-lhe como criar e atribuir políticas para iOS para instalar atualizações de software nos seus dispositivos iOS. Também pode rever o estado de instalação.
+As [políticas de atualização do iOS](../protect/software-updates-ios.md) mostram-lhe como criar e atribuir políticas para iOS para instalar atualizações de software nos seus dispositivos iOS. Também pode rever o estado de instalação.
 
-Para obter as políticas de atualização em dispositivos Windows, veja [Otimização da entrega](../delivery-optimization-windows.md). 
+Para obter as políticas de atualização em dispositivos Windows, veja [Otimização da entrega](delivery-optimization-windows.md). 
 
 Esta funcionalidade suporta:
 
@@ -266,7 +266,7 @@ Esta funcionalidade suporta:
 
 ## <a name="manage-and-troubleshoot"></a>Gestão e resolução de problemas
 
-[Faça a gestão dos seus perfis](../device-profile-monitor.md) para verificar o estado dos dispositivos e os perfis atribuídos. Ver as definições que causam um conflito e os perfis que incluem essas definições também poderá ajudá-lo a resolver conflitos. [Problemas comuns e resoluções](device-profile-troubleshoot.md) ajuda os administradores a trabalhar com perfis. Descreve o que acontece quando se elimina um perfil, o que faz com que sejam enviadas notificações para os dispositivos e muito mais.
+[Faça a gestão dos seus perfis](device-profile-monitor.md) para verificar o estado dos dispositivos e os perfis atribuídos. Ver as definições que causam um conflito e os perfis que incluem essas definições também poderá ajudá-lo a resolver conflitos. [Problemas comuns e resoluções](device-profile-troubleshoot.md) ajuda os administradores a trabalhar com perfis. Descreve o que acontece quando se elimina um perfil, o que faz com que sejam enviadas notificações para os dispositivos e muito mais.
 
 ## <a name="next-steps"></a>Próximos passos
 

@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/19/2019
+ms.date: 10/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 16a6e35fd1d7b60d9abce5e2b3491fee1efb41c3
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 4e28db0d24101ae65ff8c5e49febd0ff5dddc6e2
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502541"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585441"
 ---
 # <a name="create-and-assign-scep-certificate-profiles-in-intune"></a>Criar e atribuir perfis de certificado SCEP no Intune
 
@@ -50,7 +50,7 @@ Depois de [configurar sua infraestrutura](certificates-scep-configure.md) para d
 
    2. Em monitoramento, o relatório de certificados não está disponível para perfis de certificado SCEP do proprietário do dispositivo.
    
-   3. A revogação de certificados provisionados por perfis de certificado SCEP para o proprietário do dispositivo não é suportada por meio do Intune, mas pode ser gerenciada por meio de um processo externo ou diretamente com a autoridade de certificação.
+   3. Você não pode usar o Intune para revogar certificados que foram provisionados por perfis de certificado SCEP para proprietários de dispositivo. Você pode gerenciar a revogação por meio de um processo externo ou diretamente com a autoridade de certificação. 
 
 6. Selecione **configurações**e, em seguida, conclua as seguintes configurações:
 
@@ -113,15 +113,13 @@ Depois de [configurar sua infraestrutura](certificates-scep-configure.md) para d
         - **{{DeviceName}}**
         - **{{FullyQualifiedDomainName}}** *(aplicável somente para dispositivos Windows e ingressados no domínio)*
         - **{{MEID}}**
-        
+
         Você pode especificar essas variáveis, seguidas pelo texto da variável, na caixa de texto. Por exemplo, o nome comum para um dispositivo chamado *Device1* pode ser adicionado como **CN = {{DeviceName}} Device1**.
 
         > [!IMPORTANT]  
         > - Quando você especifica uma variável, coloque o nome da variável entre chaves {}, como mostrado no exemplo, para evitar um erro.  
         > - As propriedades de dispositivo usadas no *assunto* ou *San* de um certificado de dispositivo, como **IMEI**, **SerialNumber**e **FullyQualifiedDomainName**, são propriedades que podem ser falsificadas por uma pessoa com acesso ao dispositivo.
         > - Um dispositivo deve dar suporte a todas as variáveis especificadas em um perfil de certificado para que esse perfil seja instalado nesse dispositivo.  Por exemplo, se **{{IMEI}}** for usado no nome da entidade de um perfil SCEP e for atribuído a um dispositivo que não tem um número IMEI, o perfil não será instalado.  
- 
-
 
    - **Nome alternativo da entidade**:  
      Selecione como o Intune cria automaticamente o nome alternativo da entidade (SAN) na solicitação de certificado. As opções para a SAN dependem do tipo de certificado selecionado; o **usuário** ou o **dispositivo**.  
@@ -198,15 +196,15 @@ Depois de [configurar sua infraestrutura](certificates-scep-configure.md) para d
      Adicione valores para a finalidade desejada do certificado. Na maioria dos casos, o certificado requer *autenticação de cliente* para que o usuário ou o dispositivo possa se autenticar em um servidor. Você pode adicionar mais usos de chave, conforme necessário.
 
    - **Limite de renovação (%)** :  
-     Insira a porcentagem do tempo de vida do certificado que permanece antes da renovação das solicitações de dispositivo do certificado. Por exemplo, se você inserir 20, a renovação do certificado será tentada quando o certificado for 80% expirado e continuará a ser tentado até que a renovação seja bem-sucedida. A renovação gera um novo certificado, o que resulta em um novo par de chaves pública/privada.
+     Insira a porcentagem do tempo de vida do certificado que permanece antes da renovação das solicitações de dispositivo do certificado. Por exemplo, se você inserir 20, a renovação do certificado será tentada quando o certificado for 80% expirado. As tentativas de renovação continuam até que a renovação seja bem-sucedida. A renovação gera um novo certificado, o que resulta em um novo par de chaves pública/privada.
 
    - **URLs do servidor SCEP**:  
-     Insira uma ou mais URLs para os servidores NDES que emitem certificados via SCEP. Por exemplo, insira algo como *https://ndes.contoso.com/certsrv/mscep/mscep.dll* . Você pode adicionar outras URLs de SCEP para balanceamento de carga conforme necessário, pois as URLs são enviadas aleatoriamente para o dispositivo com o perfil. Se um dos servidores de SCEP não estiver disponível, a solicitação de SCEP falhará e será possível que, em check-ins subsequentes do dispositivo, a solicitação de certificado possa ser feita no mesmo servidor que está inativo.
+     Insira uma ou mais URLs para os servidores NDES que emitem certificados via SCEP. Por exemplo, insira algo como *https://ndes.contoso.com/certsrv/mscep/mscep.dll* . Você pode adicionar outras URLs de SCEP para balanceamento de carga conforme necessário, pois as URLs são enviadas aleatoriamente para o dispositivo com o perfil. Se um dos servidores de SCEP não estiver disponível, a solicitação de SCEP falhará e será possível que, em check-ins posteriores do dispositivo, a solicitação de certificado possa ser feita no mesmo servidor que está inativo.
 
 7. Selecione **OK**e, em seguida, selecione **criar**. O perfil é criado e aparece na lista de *perfis de configuração do dispositivo* .
 
 ### <a name="avoid-certificate-signing-requests-with-escaped-special-characters"></a>Evitar solicitações de assinatura de certificado com caracteres especiais de escape
-Há um problema conhecido para solicitações de certificado SCEP que incluem um nome de entidade (CN) com um ou mais dos seguintes caracteres especiais como um caractere de escape. Os nomes de entidades que incluem um dos caracteres especiais como um caractere de escape resultam em um CSR com um nome de assunto incorreto que, por sua vez, resulta na falha na validação do desafio do SCEP do Intune e nenhum certificado emitido.  
+Há um problema conhecido para solicitações de certificado SCEP e PKCS que incluem um nome de entidade (CN) com um ou mais dos seguintes caracteres especiais como um caractere de escape. Os nomes de entidades que incluem um dos caracteres especiais como um caractere de escape resultam em um CSR com um nome de entidade incorreto. Um nome de assunto incorreto resulta na falha na validação do desafio SCEP do Intune e nenhum certificado emitido.
 
 Os caracteres especiais são:
 - \+
@@ -223,7 +221,7 @@ Quando o nome da entidade incluir um dos caracteres especiais, use uma das opç�
 - **Remova a vírgula**: *CN = test User (TestCompany LLC), ou = accounts, DC = Corp, DC = contoso, DC = com*
 
  No entanto, as tentativas de escapar a vírgula usando um caractere de barra invertida falharão com um erro nos logs do CRP:  
-- **Vírgula com escape**: *CN = usuário de teste (TestCompany @ no__t-2, LLC), ou = accounts, DC = Corp, DC = contoso, DC = com*
+- **Vírgula com escape**: *CN = usuário de teste (TestCompany \\, LLC), ou = accounts, DC = Corp, DC = contoso, DC = com*
 
 O erro é semelhante ao seguinte erro: 
 

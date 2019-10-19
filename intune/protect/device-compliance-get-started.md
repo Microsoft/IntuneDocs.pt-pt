@@ -2,8 +2,8 @@
 title: Políticas de conformidade de dispositivos no Microsoft Intune – Azure | Microsoft Docs
 description: Comece a usar as políticas de conformidade do dispositivo, visão geral dos níveis de status e gravidade, usando o status do InGracePeriod, trabalhando com o acesso condicional, manipulando dispositivos sem uma política atribuída e as diferenças de conformidade no portal do Azure e Portal clássico no Microsoft Intune
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 05/22/2019
 ms.topic: conceptual
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c6ab0fd0220b252fe2361c0721ea026afcc232c0
-ms.sourcegitcommit: 62e264052738fc7fc6f22750589fb4bee7cd9d09
-ms.translationtype: HT
+ms.openlocfilehash: 86a1822321cb606776b69a8a7328f5a62bd85630
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72531998"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585494"
 ---
 # <a name="set-rules-on-devices-to-allow-access-to-resources-in-your-organization-using-intune"></a>Definir regras em dispositivos para permitir o acesso a recursos na sua organização através do Intune
 
@@ -116,13 +116,13 @@ A tabela a seguir descreve como as configurações não compatíveis são gerenc
 
 |**Definição de política**| **Plataforma** |
 | --- | ----|
-| **Configuração do PIN ou da palavra-passe** | - **Android 4,0 e posterior**: em quarentena</br>- **Samsung Knox Standard 4,0 e posterior**: em quarentena</br>- **Android Enterprise**: em quarentena</br></br>- **iOS 8,0 e posterior**: corrigido</br>- **macOS 10,11 e posterior**: corrigido</br></br>- **Windows 8.1 e posterior**: corrigido</br>- **Windows Phone 8,1 e posterior**: corrigido|
-| **Encriptação do dispositivo** | - **Android 4,0 e posterior**: em quarentena</br>- **Samsung Knox Standard 4,0 e posterior**: em quarentena</br>- **Android Enterprise**: em quarentena</br></br>- **iOS 8,0 e posterior**: corrigido (ao definir o PIN)</br>- **macOS 10,11 e posterior**: corrigido (ao definir o PIN)</br></br>- **Windows 8.1 e posterior**: não aplicável</br>- **Windows Phone 8,1 e posterior**: corrigido |
-| **Dispositivo desbloqueado por jailbreak ou obtenção de controlo de raiz** | - **Android 4,0 e posterior**: em quarentena (não é uma configuração)</br>- **Samsung Knox Standard 4,0 e posterior**: em quarentena (não é uma configuração)</br>- **Android Enterprise**: em quarentena (não é uma configuração)</br></br>- **iOS 8,0 e posterior**: em quarentena (não é uma configuração)</br>- **macOS 10,11 e posterior**: não aplicável</br></br>- **Windows 8.1 e posterior**: não aplicável</br>- **Windows Phone 8,1 e posterior**: não aplicável |
-| **Perfil de e-mail** | - **Android 4,0 e posterior**: não aplicável</br>- **Samsung Knox Standard 4,0 e posterior**: não aplicável</br>- **Android Enterprise**: não aplicável</br></br>- **iOS 8,0 e posterior**: em quarentena</br>- **macOS 10,11 e posterior**: em quarentena</br></br>- **Windows 8.1 e posterior**: não aplicável</br>- **Windows Phone 8,1 e posterior**: não aplicável |
-| **Versão mínima do SO** | - **Android 4,0 e posterior**: em quarentena</br>- **Samsung Knox Standard 4,0 e posterior**: em quarentena</br>- **Android Enterprise**: em quarentena</br></br>- **iOS 8,0 e posterior**: em quarentena</br>- **macOS 10,11 e posterior**: em quarentena</br></br>- **Windows 8.1 e posterior**: em quarentena</br>- **Windows Phone 8,1 e posterior**: em quarentena |
-| **Versão máxima do SO** | - **Android 4,0 e posterior**: em quarentena</br>- **Samsung Knox Standard 4,0 e posterior**: em quarentena</br>- **Android Enterprise**: em quarentena</br></br>- **iOS 8,0 e posterior**: em quarentena</br>- **macOS 10,11 e posterior**: em quarentena</br></br>- **Windows 8.1 e posterior**: em quarentena</br>- **Windows Phone 8,1 e posterior**: em quarentena |
-| **Atestado do estado de funcionamento do Windows** | - **Android 4,0 e posterior**: não aplicável</br>- **Samsung Knox Standard 4,0 e posterior**: não aplicável</br>- **Android Enterprise**: não aplicável</br></br>- **iOS 8,0 e posterior**: não aplicável</br>- **macOS 10,11 e posterior**: não aplicável</br></br>- **Windows 10 e Windows 10 Mobile: em**quarentena</br>- **Windows 8.1 e posterior**: em quarentena</br>- **Windows Phone 8,1 e posterior**: não aplicável |
+| **Configuração do PIN ou da palavra-passe** | - **Android 4,0 e posterior**: em quarentena<br>- **Samsung Knox Standard 4,0 e posterior**: em quarentena<br>- **Android Enterprise**: em quarentena  <br>  <br>- **iOS 8,0 e posterior**: corrigido<br>- **macOS 10,11 e posterior**: corrigido  <br>  <br>- **Windows 8.1 e posterior**: corrigido<br>- **Windows Phone 8,1 e posterior**: corrigido|
+| **Encriptação do dispositivo** | - **Android 4,0 e posterior**: em quarentena<br>- **Samsung Knox Standard 4,0 e posterior**: em quarentena<br>- **Android Enterprise**: em quarentena<br><br>- **iOS 8,0 e posterior**: corrigido (ao definir o PIN)<br>- **macOS 10,11 e posterior**: corrigido (ao definir o PIN)<br><br>- **Windows 8.1 e posterior**: não aplicável<br>- **Windows Phone 8,1 e posterior**: corrigido |
+| **Dispositivo desbloqueado por jailbreak ou obtenção de controlo de raiz** | - **Android 4,0 e posterior**: em quarentena (não é uma configuração)<br>- **Samsung Knox Standard 4,0 e posterior**: em quarentena (não é uma configuração)<br>- **Android Enterprise**: em quarentena (não é uma configuração)<br><br>- **iOS 8,0 e posterior**: em quarentena (não é uma configuração)<br>- **macOS 10,11 e posterior**: não aplicável<br><br>- **Windows 8.1 e posterior**: não aplicável<br>- **Windows Phone 8,1 e posterior**: não aplicável |
+| **Perfil de e-mail** | - **Android 4,0 e posterior**: não aplicável<br>- **Samsung Knox Standard 4,0 e posterior**: não aplicável<br>- **Android Enterprise**: não aplicável<br><br>- **iOS 8,0 e posterior**: em quarentena<br>- **macOS 10,11 e posterior**: em quarentena<br><br>- **Windows 8.1 e posterior**: não aplicável<br>- **Windows Phone 8,1 e posterior**: não aplicável |
+| **Versão mínima do SO** | - **Android 4,0 e posterior**: em quarentena<br>- **Samsung Knox Standard 4,0 e posterior**: em quarentena<br>- **Android Enterprise**: em quarentena<br><br>- **iOS 8,0 e posterior**: em quarentena<br>- **macOS 10,11 e posterior**: em quarentena<br><br>- **Windows 8.1 e posterior**: em quarentena<br>- **Windows Phone 8,1 e posterior**: em quarentena |
+| **Versão máxima do SO** | - **Android 4,0 e posterior**: em quarentena<br>- **Samsung Knox Standard 4,0 e posterior**: em quarentena<br>- **Android Enterprise**: em quarentena<br><br>- **iOS 8,0 e posterior**: em quarentena<br>- **macOS 10,11 e posterior**: em quarentena<br><br>- **Windows 8.1 e posterior**: em quarentena<br>- **Windows Phone 8,1 e posterior**: em quarentena |
+| **Atestado do estado de funcionamento do Windows** | - **Android 4,0 e posterior**: não aplicável<br>- **Samsung Knox Standard 4,0 e posterior**: não aplicável<br>- **Android Enterprise**: não aplicável<br><br>- **iOS 8,0 e posterior**: não aplicável<br>- **macOS 10,11 e posterior**: não aplicável<br><br>- **Windows 10 e Windows 10 Mobile: em**quarentena<br>- **Windows 8.1 e posterior**: em quarentena<br>- **Windows Phone 8,1 e posterior**: não aplicável |
 
 ---------------------------
 

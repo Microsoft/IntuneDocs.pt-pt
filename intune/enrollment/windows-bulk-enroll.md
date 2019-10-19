@@ -17,12 +17,12 @@ ms.reviewer: spshumwa
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 60b38e80a8d477220c0a6cfd59b521ac815c5ae6
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 8b2ce91cea1fdef211a8e6a9dc1c19086f355385
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503065"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585281"
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Inscrição em massa para dispositivos Windows
 
@@ -90,6 +90,8 @@ O aprovisionamento destina-se a ser utilizado em dispositivos Windows novos. As 
 
 - Um pacote de aprovisionamento que tenta associar um domínio do Active Directory ou um inquilino do Azure Active Directory que não crie uma conta local pode tornar o dispositivo inacessível se o processo de associação ao domínio falhar devido à falta de conetividade de rede.
 - Os scripts executados pelo pacote de aprovisionamento são executados no contexto do sistema. Os scripts conseguem realizar alterações arbitrárias às configurações e ao sistema de ficheiros do dispositivo. Um script malicioso ou incorreto pode colocar o dispositivo num estado que só pode ser recuperado ao recriar a imagem ou limpar o dispositivo.
+
+Você pode verificar o êxito/falha das configurações em seu pacote no log do administrador de **provisionamento-Diagnostics-Provider** no Visualizador de eventos.
 
 ### <a name="bulk-enrollment-with-wi-fi"></a>Inscrição em massa por Wi-Fi 
 

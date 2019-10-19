@@ -7,12 +7,12 @@ ms.topic: include
 ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 9e18182ff8cbddff1ae41298120928f2e2cb948a
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 5ebab881a524bc361e271856b6762776974cea20
+ms.sourcegitcommit: 5807f4db4a45a093ce2fd6cb0c480bec384ec1ff
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502750"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72601542"
 ---
 Esses avisos fornecem informações importantes que podem ajudá-lo a se preparar para futuras alterações e recursos do Intune.
 
@@ -71,22 +71,6 @@ Você não precisa realizar nenhuma ação, mas pode considerar atualizar suas d
 #### <a name="additional-information"></a>Informações adicionais 
 https://aka.ms/intune_fullscreen
 
-### <a name="plan-for-change-new-windows-updates-settings-in-intune----4464404---"></a>Plano para alteração: novas configurações de atualizações do Windows no Intune <!-- 4464404 -->
-A partir da versão de agosto para o serviço do Intune ou 1908, estamos adicionando novas "configurações de prazos", que podem ser configuradas em vez das configurações "permitir que o usuário reinicie (reinício envolvido)". Planejamos desabilitar as configurações de reinicialização envolvidas na interface do usuário no 1909 ou a atualização de setembro e, em seguida, removê-las completamente do console para o final de outubro.
-
-#### <a name="how-does-this-affect-me"></a>Como é que isto me afeta?
-Se você gerenciar dispositivos Windows 10 em seu ambiente:
-
-- Com a atualização do Intune de agosto ou 1908, você verá novas configurações de prazo no console, além das configurações antigas de reinicialização envolvidas.
-- Quando ambas as configurações antigas e novas estiverem definidas, os valores das configurações de prazo substituirão os valores de configuração de reinício envolvidos.
-- As configurações de prazo substituirão a opção "permitir que o usuário reinicie (reinicialização envolvida)" no console na atualização 1910.
-
-#### <a name="what-can-i-do-to-prepare-for-this-change"></a>O que posso fazer para me preparar para esta alteração?
-Comece a usar as configurações de prazo em 1908, configurando-as com os valores desejados. Depois de fazer isso, você pode definir a configuração de reinício envolvido como "não configurado" para se preparar para que essas configurações sejam removidas do console em outubro.
-
-Atualize sua documentação e todos os scripts de automação, se necessário.
-
-Manteremos você atualizado e poste um lembrete no centro de mensagens antes de removermos as configurações de reinicialização envolvidas.
 
 ### <a name="plan-for-change-intune-app-sdk-and-app-protection-policies-for-android-moving-to-support-android-50-and-higher-in-october---4911065---"></a>Plano para alteração: SDK de aplicativo do Intune e políticas de proteção do aplicativo para Android migrando para dar suporte ao Android 5,0 e superior em outubro <!--4911065 -->
 O Intune mudará para oferecer suporte a Android 5. x (pirulito) e superior em outubro. Atualize todos os aplicativos encapsulados com o SDK de aplicativos do Intune mais recente e atualize seus dispositivos.

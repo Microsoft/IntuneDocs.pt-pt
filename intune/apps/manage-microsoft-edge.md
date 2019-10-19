@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e245ddffa91941d3b700bf1c698b33395893bb56
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 3ee68392feaa59ef5207edce75250e539407273b
+ms.sourcegitcommit: 8c25aeefb7cbc6444a8596af22fccd1c5426877a
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72497737"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72593698"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>Gerenciar o acesso via Web usando o Microsoft Edge com o Microsoft Intune
 
@@ -181,7 +181,7 @@ Use o seguinte par de chave/valor para configurar um atalho de Home Page:
 
 |    Chave    |    Valor    |
 |-------------------------------------------------------------------|-------------|
-|    com. Microsoft. Intune. Mam. managedbrowser. homepage   |    Especifique um URL válido. Os URLs incorretos são bloqueados como medida de segurança.<br>**Exemplo:**  < @ no__t-2 @ no__t-3
+|    com. Microsoft. Intune. Mam. managedbrowser. homepage   |    Especifique um URL válido. Os URLs incorretos são bloqueados como medida de segurança.<br>**Exemplo:**  < `https://www.bing.com` >
 
 ## <a name="configure-your-organizations-logo-and-brand-color-for-new-tab-pages-in-microsoft-edge"></a>Configurar o logotipo e a cor da marca da sua organização para novas páginas de guias no Microsoft Edge
 
@@ -205,7 +205,7 @@ Para facilitar o acesso, você pode configurar indicadores que você gostaria qu
 
 Aqui estão alguns detalhes:
 
-- Esses indicadores só aparecem para usuários quando estão usando o modo corporativo do Microsoft Edge. 
+- Esses indicadores só aparecem para usuários quando estão usando o [modo corporativo](https://docs.microsoft.com/intune/apps/app-configuration-managed-browser#how-to-configure-bookmarks-for-a-protected-browser) do Microsoft Edge. 
 - Esses indicadores não podem ser excluídos nem modificados pelos usuários.
 - Esses indicadores aparecem na parte superior da lista. Todos os indicadores que os usuários criam aparecem abaixo desses indicadores.
 - Se você habilitou o redirecionamento de proxy de aplicativo, poderá adicionar aplicativos Web de proxy de aplicativo usando a URL interna ou externa.

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/18/2019
+ms.date: 10/17/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a29c5fc03285535565a4db57ea013f72a2936439
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: d1d83a77d8823a05accaf1c88b57f6e380636469
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72494054"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585387"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Configurações de dispositivo do Android Enterprise para permitir ou restringir recursos usando o Intune
 
@@ -68,7 +68,7 @@ Este artigo lista e descreve as diferentes configurações que você pode contro
 - **Atualização do sistema**: escolha uma opção para definir como o dispositivo lida com as atualizações ao longo do ar:
   - **Predefinição do Dispositivo**: utiliza a predefinição do dispositivo.
   - **Automático**: as atualizações são instaladas automaticamente sem interação do utilizador. Definir esta política imediatamente instala todas as atualizações pendentes.
-  - **Adiado**: as atualizações são adiadas por 30 dias. No final dos 30 dias, o Android solicita que o usuário instale a atualização. É possível os fabricantes de dispositivos ou operadoras impedirem (isentarem) o adiamento de atualizações de segurança importantes. Uma atualização isenta mostra uma notificação de sistema ao utilizador no dispositivo. 
+  - **Adiado**: as atualizações são adiadas por 30 dias. No final dos 30 dias, o Android solicita que o usuário instale a atualização. É possível os fabricantes de dispositivos ou operadoras impedirem (isentarem) o adiamento de atualizações de segurança importantes. Uma atualização isenta mostra uma notificação de sistema ao utilizador no dispositivo.
   - **Janela de manutenção**: as atualizações são instaladas automaticamente durante uma janela de manutenção diária definida no Intune. A instalação tenta diariamente por 30 dias e pode falhar se não houver espaço ou níveis de bateria suficientes. Após 30 dias, o Android solicita a instalação do usuário. Esta janela também é utilizada para instalar atualizações para aplicações do Play. Use essa opção para dispositivos dedicados, como quiosques, como aplicativos de primeiro plano de dispositivo dedicado de aplicativo único podem ser atualizados.
 
 - **Janelas de notificação**: quando definido como **desabilitar**, as notificações de janela, incluindo solicitações de notificação, chamadas de entrada, chamadas de saída, alertas do sistema e erros do sistema não são mostradas no dispositivo. Quando definido como **não configurado**, o padrão do sistema operacional é usado, o que pode ser Mostrar notificações.
@@ -99,8 +99,8 @@ Use essas configurações para configurar uma experiência em estilo de quiosque
   > Para dispositivos dedicados de vários aplicativos, o [aplicativo de tela inicial gerenciado](https://play.google.com/work/apps/details?id=com.microsoft.launcher.enterprise) da Google Play **deve ser**:
   >   - [Adicionado como um aplicativo cliente](../apps/apps-add-android-for-work.md) no Intune
   >   - [Atribuído ao grupo de dispositivos](../apps/apps-deploy.md) criado para seus dispositivos dedicados
-  > 
-  > O aplicativo de **tela inicial gerenciado** não precisa estar no perfil de configuração, mas é necessário adicioná-lo como um aplicativo cliente. Quando o aplicativo da **tela inicial gerenciada** é adicionado como um aplicativo cliente, todos os outros aplicativos adicionados no perfil de configuração são mostrados como ícones no aplicativo de **tela inicial gerenciado** . 
+  >
+  > O aplicativo de **tela inicial gerenciado** não precisa estar no perfil de configuração, mas é necessário adicioná-lo como um aplicativo cliente. Quando o aplicativo da **tela inicial gerenciada** é adicionado como um aplicativo cliente, todos os outros aplicativos adicionados no perfil de configuração são mostrados como ícones no aplicativo de **tela inicial gerenciado** .
   >
   > Ao usar o modo de quiosque de vários aplicativos, os aplicativos de discagem/telefone podem não funcionar corretamente. 
 
@@ -242,7 +242,22 @@ Use essas configurações para configurar uma experiência em estilo de quiosque
 
   Selecione **Não configurado** para permitir que o tráfego flua através do túnel VPN ou através da rede móvel.
 
-## <a name="work-profile-only"></a>Apenas perfil de trabalho 
+- **Proxy global recomendado**: escolha **habilitar** para adicionar um proxy global aos dispositivos. Quando habilitado, o tráfego HTTP e HTTPS, incluindo alguns aplicativos no dispositivo, use o proxy que você inserir. Esse proxy é apenas uma recomendação. É possível que alguns aplicativos não usem o proxy. **Não configurado** (padrão) não adiciona um proxy global recomendado.
+
+  Para obter mais informações sobre esse recurso, consulte [setRecommendedGlobalProxy](https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setRecommendedGlobalProxy(android.content.ComponentName,%20android.net.ProxyInfo)) (abre um site do Android).
+
+  Quando habilitado, insira também o **tipo** de proxy. As opções são:
+
+  - **Direto**: escolha esta opção para inserir manualmente os detalhes do servidor proxy, incluindo:
+    - **Host**: Insira o nome de host ou endereço IP do seu servidor proxy. Por exemplo, introduza: `proxy.contoso.com` ou `127.0.0.1`.
+    - **Número da porta**: Insira o número da porta TCP usada pelo servidor proxy. Por exemplo, introduza `8080`.
+    - **Hosts excluídos**: Insira uma lista de nomes de host ou endereços IP que não usarão o proxy. Essa lista pode incluir um asterisco (`*`) curinga e vários hosts separados por ponto e vírgula (`;`) sem espaços. Por exemplo, introduza `127.0.0.1;web.contoso.com;*.microsoft.com`.
+
+  - **Configuração automática de proxy**: Insira a **URL de PAC** para um script de configuração automática de proxy. Por exemplo, introduza `https://proxy.contoso.com/proxy.pac`.
+
+    Para obter mais informações sobre arquivos PAC, consulte o [Arquivo PAC (configuração automática de proxy)](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file) (abre um site que não é da Microsoft).
+
+## <a name="work-profile-only"></a>Apenas perfil de trabalho
 
 ### <a name="work-profile-settings"></a>Definições de perfil de trabalho
 
@@ -250,9 +265,10 @@ Use essas configurações para configurar uma experiência em estilo de quiosque
 
 - **Copiar e colar entre perfis pessoais e de trabalho**: escolha **Bloquear** para evitar copiar e colar entre aplicativos pessoais e de trabalho. **Não configurado** permite que os usuários compartilhem dados usando copiar e colar com aplicativos no perfil pessoal 
 - **Compartilhamento de dados entre perfis pessoais e de trabalho**: escolha se os aplicativos no perfil de trabalho podem compartilhar com aplicativos no perfil pessoal. Por exemplo, você pode controlar ações de compartilhamento em aplicativos, como o **compartilhamento...** na aplicação do browser Chrome. Esta definição não se aplica ao comportamento da área de transferência de copiar/colar. Suas opções de compartilhamento:
-  - **Restrições de partilha predefinidas**: o comportamento de partilha predefinido do dispositivo, que varia consoante a versão do Android. Por predefinição, é permitida a partilha do perfil pessoal com o perfil de trabalho. Também por predefinição, é bloqueada a partilha do perfil de trabalho para o perfil pessoal. Esta definição impede a partilha de dados do perfil de trabalho para o perfil pessoal. Em dispositivos com a versão 6.0 e versões posteriores, a Google não bloqueia a partilha do perfil pessoal para o perfil de trabalho.
+  - **Padrão do dispositivo**: o comportamento de compartilhamento padrão do dispositivo, que varia dependendo da versão do Android. Por predefinição, é permitida a partilha do perfil pessoal com o perfil de trabalho. Também por predefinição, é bloqueada a partilha do perfil de trabalho para o perfil pessoal. Esta definição impede a partilha de dados do perfil de trabalho para o perfil pessoal. Em dispositivos com a versão 6.0 e versões posteriores, a Google não bloqueia a partilha do perfil pessoal para o perfil de trabalho.
   - **As aplicações no perfil de trabalho podem processar o pedido de partilha do perfil pessoal**: ativa a funcionalidade do Android incorporada que permite a partilha do perfil pessoal para o perfil de trabalho. Quando ativada, um pedido de partilha de uma aplicação no perfil pessoal pode partilhar com aplicações no perfil de trabalho. Esta definição é o comportamento predefinido para dispositivos Android com versões anteriores à 6.0.
-  - **Permitir partilha entre limites**: ativa a partilha entre limites do perfil de trabalho em ambas as direções. Quando seleciona esta definição, as aplicações no perfil de trabalho podem partilhar dados com aplicações sem destaque no perfil pessoal. Esta definição permite que aplicações geridas no perfil de trabalho partilhem com aplicações no lado não gerido do dispositivo. Por isso, utilize esta definição com cuidado.
+  - **Impedir qualquer compartilhamento entre limites**: impede o compartilhamento entre perfis pessoais e de trabalho.
+  - **Sem restrições no compartilhamento**: habilita o compartilhamento entre o limite do perfil de trabalho em ambas as direções. Quando seleciona esta definição, as aplicações no perfil de trabalho podem partilhar dados com aplicações sem destaque no perfil pessoal. Esta definição permite que aplicações geridas no perfil de trabalho partilhem com aplicações no lado não gerido do dispositivo. Por isso, utilize esta definição com cuidado.
 
 - **Notificações de perfil de trabalho enquanto o dispositivo está bloqueado**: controla se os aplicativos no perfil de trabalho podem mostrar dados em notificações quando o dispositivo está bloqueado. O **bloco** não mostra os dados. **Não configurado** mostra os dados.
 - **Permissões de aplicações predefinidas**: define a política de permissões predefinida para todas as aplicações do perfil de trabalho. A partir do Android 6, é pedido ao utilizador para conceder determinadas permissões necessárias pelas aplicações quando a aplicação é iniciada. Esta definição de política permite-lhe decidir se é pedido aos utilizadores a concessão de permissões para todas as aplicações no perfil de trabalho. Por exemplo, poderá atribuir uma aplicação ao perfil de trabalho que precisa de acesso de localização. Normalmente, essa aplicação pede ao utilizador para aprovar ou recusar o acesso à localização da aplicação. Utilize esta política para conceder permissões automaticamente sem aviso, recusar permissões automaticamente sem aviso ou permitir que o utilizador final decida. Escolha entre:
@@ -326,6 +342,13 @@ Essas configurações de senha se aplicam a perfis pessoais em dispositivos que 
 
    > [!Note]
    > Esta definição só funciona para dispositivos Android O e posteriores.
+
+- **Impedir instalações de aplicativos de fontes desconhecidas no perfil pessoal**: por design, os dispositivos Android Enterprise Work Profile não podem instalar aplicativos de fontes diferentes da Play Store. Por natureza, os dispositivos de perfil de trabalho devem ser de perfil duplo:
+
+  - Um perfil de trabalho gerenciado usando o MDM.
+  - Um perfil pessoal isolado do gerenciamento de MDM.
+
+  Essa configuração permite que os administradores tenham mais controle das instalações de aplicativos de fontes desconhecidas. **Não configurado** (padrão) permite instalações de aplicativos de fontes desconhecidas no perfil pessoal. **Bloquear** impede instalações de aplicativos de fontes diferentes da Play Store no perfil pessoal.
 
 ### <a name="connectivity"></a>Conectividade
 
