@@ -11,17 +11,17 @@ ms.service: microsoft-intune
 ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
-ms.reviewer: joglocke
+ms.reviewer: samyada
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: abbde2199873b9c3c2a53fef4a2dd85bb955ed43
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
-ms.translationtype: MT
+ms.openlocfilehash: c6ab0fd0220b252fe2361c0721ea026afcc232c0
+ms.sourcegitcommit: 62e264052738fc7fc6f22750589fb4bee7cd9d09
+ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72504441"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72531998"
 ---
 # <a name="set-rules-on-devices-to-allow-access-to-resources-in-your-organization-using-intune"></a>Definir regras em dispositivos para permitir o acesso a recursos na sua organização através do Intune
 

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/17/2019
+ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6579ad9eb902bcd5ad43662115f56a10681c32ba
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 26ed23e4d9d267e37ba5088fa32234c27e3935b6
+ms.sourcegitcommit: 9a2ddcec73b37a118908b63d8e5252835f257618
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506870"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72550813"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>Atribuir perfis de utilizador e dispositivo no Microsoft Intune
 
@@ -34,6 +34,10 @@ O artigo mostra como atribuir um perfil, inclui também alguma informação sobr
 
 > [!NOTE]  
 > Quando uma política é removida ou não é mais atribuída a um dispositivo, a configuração pode manter o valor existente. A configuração não reverte para um valor padrão. Para alterar a configuração para um valor diferente, crie uma nova política e atribua-a.
+
+## <a name="before-you-begin"></a>Antes de começar
+
+Verifique se você tem a função apropriada para atribuir políticas. Para obter mais informações, consulte [RBAC (controle de acesso baseado em função) com Microsoft Intune](../fundamentals/role-based-access-control.md).
 
 ## <a name="assign-a-device-profile"></a>Atribuir um perfil do dispositivo
 
