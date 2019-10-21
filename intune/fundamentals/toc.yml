@@ -41,6 +41,16 @@
       href: device-lifecycle.md
     - name: Ciclo de vida das aplicações
       href: ../apps/app-lifecycle.md
+    - name: Cenários orientados
+      items:
+        - name: Visão geral dos cenários orientados
+          href: guided-scenarios-overview.md
+        - name: Implementar o Microsoft Edge para Dispositivos Móveis
+          href: guided-scenarios-edge.md
+        - name: Área de Trabalho Moderna gerida na cloud
+          href: guided-scenarios-cloud-managed-pc.md
+        - name: Proteger as aplicação móveis do Microsoft Office
+          href: guided-scenarios-office-mobile.md
     - name: Cenários comuns
       href: common-scenarios.md
     - name: Decisões tecnológicas para BYOD com o EMS
@@ -175,6 +185,8 @@
       href: ../protect/index.yml
     - name: Gerir e proteger aplicações
       href: ../apps/index.yml
+    - name: Utilizar conjuntos de políticas
+      href: ~/fundamentals/policy-sets.md
     - name: Orientação para programadores
       href: ../developer/index.yml
     - name: Obter ajuda e suporte
