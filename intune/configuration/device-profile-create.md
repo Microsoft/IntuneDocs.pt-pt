@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d445263655d3209b900763bf6bd5b62376e0ba85
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 97227d5ca75b3584cb4e603a16601b2a22deb919
+ms.sourcegitcommit: 1a5b185acd27954b10b6d59409d82eb80fd71284
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72494727"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72681463"
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>Criar um perfil de dispositivo no Microsoft Intune
 
@@ -77,6 +77,7 @@ Este artigo:
        - [Proteção de identidade](../protect/identity-protection-configure.md)  
        - [Modo de Quiosque](kiosk-settings.md)
        - [Certificado PKCS](../protect/certficates-pfx-configure.md)
+       - [Certificado importado PKCS](../protect/certificates-imported-pfx-configure.md)
        - [Certificado SCEP](../protect/certificates-scep-configure.md)
        - [Certificado fidedigno](../protect/certificates-configure.md)
        - [Políticas de atualização](../software-updates-ios.md)

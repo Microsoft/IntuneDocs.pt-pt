@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d5234a8568911de075b1c8ee5d679ae40c6c494a
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: e0ef623fef49fdf43efc80375716af711bdbcb3c
+ms.sourcegitcommit: 1a5b185acd27954b10b6d59409d82eb80fd71284
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502626"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72681333"
 ---
 # <a name="enforce-compliance-for-microsoft-defender-atp-with-conditional-access-in-intune"></a>Impor a conformidade para o Microsoft defender ATP com acesso condicional no Intune  
 
@@ -58,6 +58,9 @@ Para usar o Microsoft defender ATP com o Intune, verifique se você tem os segui
 - O ambiente do Microsoft Intune, com dispositivos Windows 10 [geridos pelo Intune](../enrollment/windows-enroll.md) que também estão associados ao Azure AD
 - [Microsoft defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) e acesso à central de segurança do Microsoft defender (Portal ATP)
 
+> [!NOTE]
+> Não há suporte para o Microsoft defender ATP com as políticas de proteção de aplicativo do Intune.
+
 ## <a name="enable-microsoft-defender-atp-in-intune"></a>Habilitar o Microsoft defender ATP no Intune
 
 A primeira etapa é configurar a conexão serviço a serviço entre o Intune e o Microsoft defender ATP. Isso requer acesso administrativo à central de segurança do Microsoft defender e ao Intune.  
@@ -65,7 +68,7 @@ A primeira etapa é configurar a conexão serviço a serviço entre o Intune e o
 ### <a name="to-enable-defender-atp"></a>Para habilitar o defender ATP  
 
 1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selecione **conformidade do dispositivo**@no__t-**1 Microsoft defender ATP**e, depois, *configurações do conector*, selecione **abrir a central de segurança do Microsoft defender**.
+2. Selecione **conformidade do dispositivo**  > **Microsoft defender ATP**e, depois, *configurações do conector*, selecione **abrir a central de segurança do Microsoft defender**.
 
     ![Selecione para abrir a central de segurança do Microsoft defender](./media/advanced-threat-protection/atp-device-compliance-open-microsoft-defender.png)
 
@@ -189,7 +192,7 @@ Para exibir o status de integração de todos os dispositivos Windows 10 gerenci
 
 ## <a name="next-steps"></a>Próximos passos  
 
-@No__t de [acesso condicional do Microsoft defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/conditional-access)-1  
+@No__t_1 de [acesso condicional do Microsoft defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/conditional-access)  
 [Painel de riscos do Microsoft defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/security-operations-dashboard)  
 [Use tarefas de segurança com o gerenciamento de vulnerabilidades do ATPs para corrigir problemas em dispositivos](atp-manage-vulnerabilities.md).  
 [Introdução às políticas de conformidade de dispositivos](device-compliance-get-started.md)  
