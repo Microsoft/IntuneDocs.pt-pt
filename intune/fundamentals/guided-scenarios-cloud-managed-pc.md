@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c29035feeb8b35921a5837699fe0f58a3516f4a1
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
-ms.translationtype: MT
+ms.openlocfilehash: df6427f1986cd55755d2375ed00cab057e48d8c3
+ms.sourcegitcommit: 1a5b185acd27954b10b6d59409d82eb80fd71284
+ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72585901"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72681444"
 ---
 # <a name="guided-scenario---cloud-managed-modern-desktop"></a>Cenário guiado – área de trabalho moderna gerenciada pela nuvem
 
@@ -96,7 +96,7 @@ O usuário e o dispositivo serão adicionados a novos grupos de segurança. Eles
 
 ## <a name="additional-information"></a>Informações adicionais
 
-### <a name="register-device-with-windows-auto-pilot-optional"></a>Registrar dispositivo com o piloto automático do Windows (opcional)
+### <a name="register-device-with-windows-autopilot-optional"></a>Registrar dispositivo com o Windows AutoPilot (opcional)
 
 Opcionalmente, você pode optar por usar um dispositivo de piloto automático registrado. Para o piloto automático, esse cenário guiado atribuirá um perfil de implantação do AutoPilot e o profile de página de status de registro. O perfil de implantação do piloto automático será configurado da seguinte maneira:
 - Modo controlado pelo usuário – ou seja, exigir que o usuário final Insira nome de usuário e senha durante a instalação do Windows.

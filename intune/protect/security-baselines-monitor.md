@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1be2ba947a5b92b6982e8c868e935460c4eaa5bb
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 9c4d47a11f07a2099d79f5ce4ce90795a087718b
+ms.sourcegitcommit: 1a5b185acd27954b10b6d59409d82eb80fd71284
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72508940"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72681466"
 ---
 # <a name="monitor-security-baseline-and-profiles-in-microsoft-intune"></a>Monitorar a linha de base e os perfis de segurança no Microsoft Intune  
 
@@ -60,7 +60,7 @@ Por exemplo, se um dispositivo tiver uma configuração classificada como *confi
 Você pode clicar no gráfico para fazer drill-through e exibir uma lista de dispositivos com vários status. Em seguida, você pode selecionar dispositivos individuais nessa lista para exibir detalhes sobre dispositivos individuais. Por exemplo:
 - Selecione **configuração do dispositivo** > selecione o perfil com um estado de erro:
 
-  ![Verificar o status dos dispositivos](./media/security-baselines-monitor/device-configuration-profile-list.png)
+  ![Exibir o status de um perfil](./media/security-baselines-monitor/device-configuration-profile-list.png)
 
 - Selecione o perfil de erro. Uma lista de todas as configurações no perfil e seu estado é mostrado. Agora, você pode rolar para encontrar a configuração causando o erro:
 
