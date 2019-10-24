@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e5334505c0692a62f7f1025d4c360073bd2d8369
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 24b69b6da846d54d4f45ede47c932574e006f99f
+ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72498419"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72786017"
 ---
 # <a name="microsoft-intune-protected-apps"></a>Microsoft Intune aplicativos protegidos  
 
@@ -72,6 +72,7 @@ As tabelas a seguir fornecem detalhes de parceiros com suporte e aplicativos da 
 | **Visualizador do Microsoft Visio**<p><img alt="Microsoft app - Microsoft Visio Viewer icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-visio-viewer.png" width="100"> | Você pode exibir e interagir com diagramas do Visio no iPhone em qualquer lugar gratuitamente. Entre com sua conta da Microsoft ou abra um anexo do Visio por email e aproveite a incrível exibição dos diagramas do Visio em qualquer iPhone que esteja executando o iOS 9,0 ou posterior. Você também pode compartilhar os diagramas com qualquer pessoa que possa exibir diagramas do Visio em seu iPhone ou em um navegador da Web mesmo que eles não tenham o Visio instalado na área de trabalho do Windows.| [link da loja do iOS](https://itunes.apple.com/us/app/microsoft-visio-viewer-flowcharts-and-diagrams/id1139787983?mt=8) |  
 | **Microsoft Word**<p><img alt="Microsoft app - Microsoft Word icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-word.png" width="100"> | Faça com que os documentos do Word tenham uma aparência melhor do que nunca em seu Tablet e telefone. Tenha certeza de que, ao editar ou criar documentos, eles terão exatamente a aparência desejada em computadores, Macs, tablets e telefones. Esteja em funcionamento sem nenhum tempo com uma aparência familiar do Office, juntamente com uma experiência de toque intuitiva.<p><p>Esse aplicativo pode ser usado como um aplicativo de várias identidades para Android e iOS. | [Link da loja do Android](https://play.google.com/store/apps/details?id=com.microsoft.office.word),<br>[link da loja do iOS](https://itunes.apple.com/us/app/microsoft-word/id586447913?mt=8) |  
 | **Pastas de trabalho da Microsoft**<p><img alt="Microsoft app - Microsoft Work Folders icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-work-folders.png" width="100"> | Permita que os funcionários individuais acessem com segurança seus arquivos de dentro e fora do ambiente corporativo usando pastas de trabalho, um recurso do Windows Server. | [link da loja do iOS](https://itunes.apple.com/us/app/work-folders/id950878067?mt=8) | 
+| **Microsoft whiteboard**<p><img alt="Microsoft app - Microsoft Whiteboard icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-whiteboard.png" width="100"> | O aplicativo Microsoft whiteboard fornece uma tela inteligente de forma livre, em que as equipes podem ideater, criar e colaborar visualmente por meio da nuvem.  Ele aprimora o trabalho em equipe, permitindo que todos os membros de equipes editem e comentem diretamente na tela em tempo real, independentemente de onde estiverem. E todo o seu trabalho permanece seguro na nuvem, pronto para ser retirado do backup de qualquer dispositivo. | [link da loja do iOS](https://apps.apple.com/us/app/microsoft-whiteboard/id1352499399) |  
 | **Yammer**<p><img alt="Microsoft app - Yammer icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-yammer.png" width="100"> | Divida os silos organizacionais e facilite a colaboração em equipe com o Yammer. Conecte-se às pessoas certas na sua organização, Compartilhe e pesquise informações entre equipes e organize-se em projetos e ideias para que você possa fazer mais. | [Link da loja do Android](https://play.google.com/store/apps/details?id=com.yammer.v1),<br>[link da loja do iOS](https://itunes.apple.com/us/app/yammer/id289559439?mt=8) |  
 
 ## <a name="partner-apps"></a>Aplicativos de parceiros 

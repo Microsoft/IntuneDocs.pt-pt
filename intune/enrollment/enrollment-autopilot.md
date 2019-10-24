@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8029c62aeec431c19db080ec444c02565905443f
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: f2a1d964f157f33e439f659713fe8c2e02f852b3
+ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72585314"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72749406"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Registrar dispositivos Windows no Intune usando o piloto automático do Windows  
 O Windows AutoPilot simplifica o registro de dispositivos no Intune. A criação e manutenção de imagens personalizadas do sistema operativo são um processo moroso. Também poderá demorar a aplicar estas imagens personalizadas do sistema operativo a novos dispositivos para as preparar para utilização antes de as disponibilizar aos seus utilizadores finais. Com o Microsoft Intune e o Autopilot, pode fornecer novos dispositivos aos seus utilizadores finais sem ter de criar, manter e aplicar imagens de sistema operativo personalizadas aos dispositivos. Ao utilizar o Intune para gerir dispositivos do Autopilot, pode gerir políticas, perfis, aplicações, entre outros, após estes serem inscritos. Para uma descrição geral das vantagens, cenários e pré-requisitos, veja [Descrição geral do Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
@@ -142,18 +142,6 @@ Após ter criado um perfil de implementação do Autopilot, poderá editar deter
 
 > [!NOTE]
 > As alterações ao perfil são aplicadas aos dispositivos atribuídos a esse perfil. No entanto, o perfil atualizado não será aplicado a um dispositivo já inscrito no Intune até que o dispositivo tenha sido reposto e reinscrito.
-
-## <a name="edit-autopilot-device-attributes"></a>Editar atributos de dispositivo de piloto automático
-Depois de carregar um dispositivo de piloto automático, você poderá editar determinados atributos do dispositivo.
-
-1. No Intune no portal do Azure, escolha **registro de dispositivo**.
-2. Em **registro do Windows**, na seção **Windows AutoPilot** , escolha **dispositivos**.
-3. Selecione o dispositivo que você deseja editar.
-4. No painel à direita da tela, você pode editar o nome do dispositivo, a marca do grupo ou o nome amigável do usuário (se você tiver atribuído um usuário).
-5. Selecione **Guardar**.
-
-> [!NOTE]
-> Os nomes de dispositivo podem ser configurados para todos os dispositivos, mas são ignorados em implantações Unidas do Azure AD híbridos. O nome do dispositivo ainda vem do perfil de ingresso no domínio para dispositivos híbridos do Azure AD.
 
 ## <a name="alerts-for-windows-autopilot-unassigned-devices-----163236---"></a>Alertas para dispositivos Windows AutoPilot não atribuídos  <!-- 163236 -->  
 

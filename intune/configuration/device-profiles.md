@@ -5,24 +5,24 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/14/2019
+ms.date: 10/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
-ms.reviewer: ''
+ms.reviewer: karthib
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2c578cb430bd6c62c274322ea1e46b5d37d2e143
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 7c49445800f5d34fbb6ce0a845d4f29c3e587483
+ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72584981"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72749339"
 ---
 # <a name="apply-features-and-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Aplicar definições e funcionalidades nos dispositivos com perfis de dispositivo no Microsoft Intune
 
@@ -49,7 +49,7 @@ Estes modelos oferecem aos administradores uma vista simplificada das configura�
 
 Esta funcionalidade suporta:
 
-- Windows 10 e posterior
+- Windows 10 1809 e posterior em firmware com suporte.
 
 ## <a name="certificates"></a>Certificados
 
@@ -95,6 +95,14 @@ Esta funcionalidade suporta:
 
 - iOS/iPadOS
 - macOS
+
+## <a name="device-firmware-configuration-interface"></a>Interface de configuração do firmware do dispositivo
+
+O DFCI ( [interface de configuração de firmware do dispositivo](device-firmware-configuration-interface-windows.md) ) permite que os administradores habilitem ou desabilitem as configurações de UEFI (BIOS) usando o Intune. Use essas configurações para aprimorar a segurança no nível do firmware, que normalmente é mais resiliente a ataques mal-intencionados.
+
+Esta funcionalidade suporta:
+
+- Windows 10 e posterior
 
 ## <a name="device-restrictions"></a>Restrições de dispositivos
 

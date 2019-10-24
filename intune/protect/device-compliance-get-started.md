@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/22/2019
+ms.date: 10/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,16 +16,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 86a1822321cb606776b69a8a7328f5a62bd85630
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 967bf9937c71ff3ca7277f43fd969291eb5af6de
+ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72585494"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72749170"
 ---
 # <a name="set-rules-on-devices-to-allow-access-to-resources-in-your-organization-using-intune"></a>Definir regras em dispositivos para permitir o acesso a recursos na sua organização através do Intune
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 Muitas soluções de gestão de dispositivos móveis (MDM) ajudam a proteger os dados organizacionais ao exigir que os utilizadores e os dispositivos cumpram alguns requisitos. No Intune, esta funcionalidade é denominada “políticas de conformidade”. As políticas de conformidade definem as regras e as definições que os utilizadores e os dispositivos têm de cumprir para estarem em conformidade. Quando combinado com o acesso condicional, os administradores podem bloquear usuários e dispositivos que não atendem às regras.
 
@@ -90,7 +88,7 @@ O Intune também inclui um conjunto de definições de políticas de conformidad
 
 - **Marcar os dispositivos sem política de conformidade atribuída como**: esta propriedade tem dois valores:
 
-  - **Compatível**(padrão): recurso de segurança desativado
+  - **Compatível** (*padrão*): recurso de segurança desativado
   - **Não compatível**: recurso de segurança ativado
 
   Se um dispositivo não tiver uma política de conformidade atribuída, esse dispositivo será considerado em conformidade por padrão. Se você usar o acesso condicional com políticas de conformidade, recomendamos que você altere a configuração padrão para **não compatível**. Se um utilizador final não estiver em conformidade porque não foi atribuída uma política, a [aplicação do Portal da Empresa](../apps/company-portal-app.md) mostrará `No compliance policies have been assigned`.
@@ -157,8 +155,9 @@ Para utilizar as funcionalidades relacionadas com a conformidade de dispositivos
   - [Android Enterprise](compliance-policy-create-android-for-work.md)
   - [iOS](compliance-policy-create-ios.md)
   - [macOS](compliance-policy-create-mac-os.md)
-  - [Windows 10 e posterior](compliance-policy-create-windows.md)
   - [Windows Holographic for Business](compliance-policy-create-windows.md#windows-holographic-for-business)
-  - [Windows 8.1 e Windows Phone 8.1](compliance-policy-create-windows-8-1.md)
+  - [Windows Phone 8.1](compliance-policy-create-windows-8-1.md)
+  - [Windows 8.1 e posterior](compliance-policy-create-windows-8-1.md)
+  - [Windows 10 e posterior](compliance-policy-create-windows.md)
 
 - [Referência das entidades de políticas](../reports-ref-policy.md) tem informações sobre as entidades das políticas do Data Warehouse do Intune.

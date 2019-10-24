@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f8d516c0ebb03ce8c8202e1383afb73324305ef1
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 62a3f9ee2cec41f14e450158ab8ad02e1a3a2ea2
+ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72499510"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72785678"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-conditional-launch-actions-in-intune"></a>Apagar dados seletivamente usando as ações de inicialização condicional da política de proteção de aplicativo no Intune
 
@@ -60,6 +60,7 @@ Para iOS, poderá configurar ações para as seguintes definições a partir da 
 - Versão mínima da aplicação
 - Versão mínima do SDK
 - Modelos de dispositivos
+- Nível máximo de ameaça do dispositivo permitido
 
 Para utilizar a definição **Modelos de dispositivos**, introduza uma lista de identificadores de modelos de iOS separados por ponto e vírgula. Pode encontrar um identificador de modelos de iOS na coluna Tipo de Dispositivo na [documentação de suporte do HockeyApp](https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/ios-device-types).<br>
 Entrada de exemplo: *iPhone5,2;iPhone5,3*
@@ -84,6 +85,7 @@ Para Android, poderá configurar ações para as seguintes definições a partir
 - Fabricantes de dispositivos
 - Atestado de dispositivo SafetyNet
 - Análise de ameaças nas aplicações
+- Nível máximo de ameaça do dispositivo permitido
 
 Para utilizar a definição **Fabricantes de dispositivos**, introduza uma lista de fabricantes de dispositivos Android separados por ponto e vírgula. Pode encontrar o fabricante de um dispositivo Android nas definições do dispositivo.<br>
 Entrada de exemplo: *Fabricante A;Fabricante B* 
