@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f3f4a8c9be4e22f3bc64288a6e3d2ec708186de6
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: b0f31add65063665da5a7961e2caf9eb30a847e2
+ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72585194"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72787882"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>Configurar e utilizar certificados PKCS com o Intune
 
@@ -223,7 +223,7 @@ Para autenticar um dispositivo com VPN, WiFi ou outros recursos, um dispositivo 
 Quando você cria um perfil de certificado PKCS do macOS, as opções para o formato de nome da entidade dependem do tipo de certificado que você selecionar, seja **usuário** ou **dispositivo**.  
 
 > [!NOTE]  
-> Há um problema conhecido para usar o PCKS para obter certificados [que é o mesmo problema mostrado para o SCEP](certificates-profile-scep.md#avoid-certificate-signing-requests-with-escaped-special-characters) quando o nome da entidade na CSR (solicitação de assinatura de certificado) resultante inclui um dos seguintes caracteres como um caractere de escape (continuado por um barra invertida \\):
+> Há um problema conhecido para usar o PKCS para obter certificados [que é o mesmo problema mostrado para o SCEP](certificates-profile-scep.md#avoid-certificate-signing-requests-with-escaped-special-characters) quando o nome da entidade na CSR (solicitação de assinatura de certificado) resultante inclui um dos seguintes caracteres como um caractere de escape (continuado por um barra invertida \\):
 > - \+
 > - ;
 > - ,

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 67952532a452a91e771a66dd5a5b4229c07ac802
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 65ced1dfb0fe872129b7437e8dda3dde680b5d07
+ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72584814"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72786822"
 ---
 # <a name="use-certificates-for-authentication-in-microsoft-intune"></a>Usar certificados para autenticação no Microsoft Intune  
 
@@ -44,9 +44,9 @@ Cada perfil de certificado individual que você cria oferece suporte a uma únic
 - Se você usar perfis de certificado SCEP usando os serviços de certificados do Microsoft Active Directory, você configurará um servidor NDES (serviço de registro de dispositivo de rede).
 - Se você usar o SCEP com um de nossos parceiros de autoridade de certificação, você precisará [integrá-lo ao Intune](certificate-authority-add-scep-overview.md#set-up-third-party-ca-integration).
 - Os perfis de certificado SCEP e PKCS exigem que você baixe, instale e configure o Microsoft Intune Certificate Connector. 
-- PCKS certificados importados exigem que você baixe, instale e configure o conector de certificado PFX para Microsoft Intune.
+- Certificados PKCS importados exigem que você baixe, instale e configure o conector de certificado PFX para Microsoft Intune.
 - Certificados PKCS importados exigem que você exporte certificados de sua autoridade de certificação e importe-os para Microsoft Intune. Consulte [o projeto do PFXImport PowerShell](https://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/PFXImportPowershell)
-- Para que um dispositivo use perfis de certificado SCEP, PCKS ou PKCS importados, esse dispositivo deve confiar em sua autoridade de certificação raiz. Você usa um *perfil de certificado confiável* para implantar seu certificado de autoridade de certificação raiz confiável em dispositivos.  
+- Para que um dispositivo use perfis de certificado SCEP, PKCS ou PKCS importados, esse dispositivo deve confiar em sua autoridade de certificação raiz. Você usa um *perfil de certificado confiável* para implantar seu certificado de autoridade de certificação raiz confiável em dispositivos.  
 
 ## <a name="supported-platforms-and-certificate-profiles"></a>Plataformas com suporte e perfis de certificado  
 | Platform              | Perfil de certificado confiável | Perfil de certificado PKCS | Perfil de certificado SCEP | Perfil de certificado importado PKCS  |
@@ -71,7 +71,7 @@ Você usará esse arquivo. cer ao [criar perfis de certificado confiáveis](#cre
 ## <a name="create-trusted-certificate-profiles"></a>Criar perfis de certificado confiável  
 Crie um perfil de certificado confiável antes de criar um perfil de certificado SCEP, PKCS ou PKCS importado. A implantação de um perfil de certificado confiável garante que cada dispositivo reconheça a legitimidade de sua autoridade de certificação. Os perfis de certificado SCEP fazem referência direta a um perfil de certificado confiável. Os perfis de certificado PKCS não fazem referência direta ao perfil de certificado confiável, mas fazem referência direta ao servidor que hospeda sua autoridade de certificação. Os perfis de certificado PKCS importados não fazem referência direta ao perfil de certificado confiável, mas podem usá-lo no dispositivo. A implantação de um perfil de certificado confiável para dispositivos garante que essa confiança seja estabelecida. Quando um dispositivo não confiar na AC raiz, a política de perfil de certificado SCEP ou PKCS falhará.  
 
-Crie um perfil de certificado confiável separado para cada plataforma de dispositivo à qual você deseja dar suporte, assim como você fará para os perfis de certificado SCEP, PCKS e PKCS importados.  
+Crie um perfil de certificado confiável separado para cada plataforma de dispositivo à qual você deseja dar suporte, assim como você fará para perfis de certificado SCEP, PKCS e PKCS importados.  
 
 
 ### <a name="to-create-a-trusted-certificate-profile"></a>Para criar um perfil de certificado fidedigno  
@@ -87,7 +87,7 @@ Crie um perfil de certificado confiável separado para cada plataforma de dispos
    - **Arquivo de certificados no computador – Intermédio**
    - **Armazenamento de certificados de utilizador – Intermédio**
 8. Quando tiver terminado, selecione **OK**, volte ao painel **Criar perfil** e selecione **Criar**.
-O perfil aparece na lista de perfis no painel *configuração do dispositivo –* exibição de perfis, com um tipo de perfil de **certificado confiável**.  Certifique-se de atribuir esse perfil a dispositivos que usarão certificados SCEP ou PCKS. Para atribuir o perfil a grupos, consulte [atribuir perfis de dispositivo](../configuration/device-profile-assign.md).
+O perfil aparece na lista de perfis no painel *configuração do dispositivo –* exibição de perfis, com um tipo de perfil de **certificado confiável**.  Certifique-se de atribuir esse perfil a dispositivos que usarão certificados SCEP ou PKCS. Para atribuir o perfil a grupos, consulte [atribuir perfis de dispositivo](../configuration/device-profile-assign.md).
 
 > [!NOTE]  
 > Os dispositivos Android podem exibir uma mensagem de que uma terceira parte instalou um certificado confiável.  

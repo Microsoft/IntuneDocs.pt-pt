@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: df6427f1986cd55755d2375ed00cab057e48d8c3
-ms.sourcegitcommit: 1a5b185acd27954b10b6d59409d82eb80fd71284
-ms.translationtype: HT
+ms.openlocfilehash: b3372fc83e467b08b479490b3707f2be03409156
+ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72681444"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72749322"
 ---
 # <a name="guided-scenario---cloud-managed-modern-desktop"></a>Cenário guiado – área de trabalho moderna gerenciada pela nuvem
 
@@ -66,7 +66,7 @@ Se você quiser adicionar mais usuários ou dispositivos a essa configuração, 
 Verifique se o dispositivo está executando o Windows 10, versão 1903 ou posterior.  O usuário primário precisará configurar o dispositivo quando ele for recebê-lo. Há duas opções de instalação disponíveis para o usuário. 
 
 ### <a name="option-a--windows-autopilot"></a>Opção A – piloto automático do Windows
-O Windows AutoPilot automatiza a configuração de novos dispositivos para que os usuários possam configurá-los prontos para uso, sem assistência. Se o dispositivo já estiver registrado com o Windows AutoPilot, selecione-o por seu número de série. Para obter mais informações sobre como usar o Windows AutoPilot, consulte [registrar dispositivo com o piloto automático do Windows (opcional)](~/fundamentals/guided-scenarios-cloud-managed-pc.md#register-device-with-windows-auto-pilot-optional).
+O Windows AutoPilot automatiza a configuração de novos dispositivos para que os usuários possam configurá-los prontos para uso, sem assistência. Se o dispositivo já estiver registrado com o Windows AutoPilot, selecione-o por seu número de série. Para obter mais informações sobre como usar o Windows AutoPilot, consulte [registrar dispositivo com o piloto automático do Windows (opcional)](~/fundamentals/guided-scenarios-cloud-managed-pc.md#register-device-with-windows-autopilot-optional).
 
 ### <a name="option-b--manual-device-enrollment"></a>Opção B – registro manual do dispositivo
 Os usuários irão configurar manualmente e registrar seus novos dispositivos no gerenciamento de dispositivos móveis. Depois de concluir este cenário, redefina o dispositivo e forneça ao usuário primário as instruções de registro para dispositivos Windows. Para obter mais informações, consulte [unir um dispositivo Windows 10 ao Azure ad durante a experiência da primeira execução](https://docs.microsoft.com/azure/active-directory/devices/azuread-joined-devices-frx#joining-a-device).

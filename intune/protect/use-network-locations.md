@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: edc1a241d327bd98db8ae50187b1e1aed5e00e71
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 648ccd889714c2ee4f7ee1fa04301490ad9fd001
+ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503548"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72749444"
 ---
 # <a name="use-locations-network-fence-in-intune"></a>Utilizar Localizações (barreira de rede) no Intune
 
@@ -69,9 +69,8 @@ Para criar uma política de conformidade com base na localização:
 
 ## <a name="create-the-location-compliance-policy"></a>Criar a política de conformidade de localização
 
-Quando criar a política de conformidade, selecione **Android** para a **Plataforma**. Em **Localizações**, pode selecionar uma ou mais das localizações de rede que adicionou. Estas localizações fazem parte da barreira de rede que está a criar para os seus dispositivos.
+Ao [criar a política de conformidade](create-compliance-policy.md), selecione **Android** para a **plataforma**. Em **Localizações**, pode selecionar uma ou mais das localizações de rede que adicionou. Estas localizações fazem parte da barreira de rede que está a criar para os seus dispositivos. 
 
-[Criar a política de conformidade com base na localização de rede](compliance-policy-create-android.md#locations) fornece algumas orientações.
 
 ## <a name="configure-the-actions-for-noncompliance"></a>Configurar as ações de não conformidade
 
