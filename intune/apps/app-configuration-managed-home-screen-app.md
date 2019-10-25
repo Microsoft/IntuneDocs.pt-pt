@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/24/2019
+ms.date: 10/23/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d47cee2c26960775d268b317845c118e99b85fe9
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: e97e88ad78e1b914543b7fa283f47863dce185fc
+ms.sourcegitcommit: 25acfc88b366d2da71c37d354a0238e4f1168325
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507587"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72813468"
 ---
 # <a name="configure-the-microsoft-managed-home-screen-app-for-android-enterprise"></a>Configurar o aplicativo de tela inicial gerenciado pela Microsoft para Android Enterprise
 
@@ -60,25 +60,15 @@ A tabela a seguir lista as chaves de configuração, os tipos de valor, os valor
 | Chave de configuração | Tipo de Valor | Valor Predefinido | Description |
 |---------------------------------------------------------------------------------------------------------------------------|-------------|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Definir tamanho da grade | cadeia | Automático | Permite definir o tamanho da grade para que os aplicativos sejam posicionados na tela inicial gerenciada. Você pode definir o número de linhas e colunas do aplicativo para definir o tamanho da grade no seguinte formato `columns;rows`. Se você definir o tamanho da grade, o número máximo de aplicativos que serão mostrados em uma linha na tela inicial será o número de linhas que você definiu e o número máximo de aplicativos que serão mostrados em uma coluna na tela inicial seria o número de colunas que você definiu. |
-| Habilitar cabeçalho da tela | bool | TRUE | Habilita o cabeçalho superior para diferentes exibições que a tela inicial gerenciada oferece, como os cartões feed ou feed. Se você habilitar essa configuração, os usuários do dispositivo verão o cabeçalho. |
-| Habilitar barra de status do dispositivo | bool | TRUE | Habilita a barra de status na tela inicial (barra superior que exibe as conexões atuais, como WiFi e etc.). Se você habilitar essa chave de configuração, o usuário final poderá ver os ícones exibidos nas barras de status que representam conexões e aplicativos ativos. |
 | Habilitar notificação de notificações | bool | FOR | Habilita o crachá de notificação para ícones de aplicativo que mostra o número de novas notificações no aplicativo. Se você habilitar essa configuração, os usuários finais verão selos de notificação em aplicativos que têm notificações não lidas. Se você mantiver essa chave de configuração desabilitada, o usuário final não verá nenhuma notificação para aplicativos que possam ter notificações não lidas. |
 | Bloquear tela inicial | bool | TRUE | Remove a capacidade do usuário final de mover os ícones do aplicativo na tela inicial. Se você habilitar essa chave de configuração, os ícones do aplicativo na tela inicial serão bloqueados e o usuário final não poderá arrastar e soltar para diferentes posições de grade da tela inicial. Se for transformada em `false`, os usuários finais poderão se mover pelos ícones de aplicativo e weblink na tela inicial gerenciada.  |
 | Definir papel de parede do dispositivo | cadeia | Os | Permite definir um papel de parede de sua escolha digitando a URL da imagem que você deseja definir como um papel de parede. |
 | Definir o tamanho do ícone do aplicativo | número inteiro | 2 | Permite definir o tamanho do ícone para os aplicativos exibidos na tela inicial. Você pode escolher os seguintes valores nessa configuração para tamanhos diferentes-0 (menor), 1 (pequeno), 2 (regular), 3 (grande) e 4 (maior). |
 | Definir ícone de pasta de aplicativo | número inteiro | 0 | Permite que você defina a aparência das pastas de aplicativo na tela inicial. Você pode escolher a aparência dos seguintes valores: quadrado escuro (0);   Círculo escuro (1); Quadrado claro (2); Círculo claro (3). |
-| Habilitar gestos | bool | FOR | Habilite a capacidade do usuário final de atribuir ações a diferentes gestos, como passar o dedo para cima e passar o dedo para baixo. Se você desabilitar essa chave de configuração, os usuários finais só poderão passar o dedo para a direita se houver uma segunda página e voltar ao home page. |
-| Habilitar rolagem vertical | bool | FOR | Habilita a rolagem vertical na tela inicial gerenciada. Se você habilitar essa chave de configuração, o usuário final só poderá navegar para páginas diferentes verticalmente em vez de passar o dedo horizontalmente. |
-| Definir tema da tela inicial | cadeia | Tema. claro. azul | Permite que você escolha o tema da tela inicial de um conjunto predefinido de temas com cores diferentes. Você pode escolher os temas a seguir inserindo o valor da cadeia de caracteres no formato a seguir.   Theme. Light. verde. Onde a luz pode ser substituída por escuro para um tema escuro e verde pode ser substituído por azul, amarelo, rosa, vermelho, laranja e roxo. |
-| Habilitar encaixe | bool | FOR | Habilita a seção de encaixe do aplicativo em na parte inferior da tela inicial com aplicativos persistentes exibidos e ponto de entrada para todos os aplicativos instalados. Se você habilitar essa chave de configuração, o usuário final poderá acessar os aplicativos no Dock e também acessar a seção todos os aplicativos para ir para a lista de todas as aplicações instaladas nos dispositivos, independentemente de terem sido ou não permitidos ou não listados. |
 | Definir orientação da tela | número inteiro | 1 | Permite definir a orientação da tela inicial como modo retrato, modo paisagem ou permitir giro automático. Você pode definir a orientação inserindo os valores 1 (para o modo retrato), 2 (para o modo paisagem), 3 (para rotação automática). |
-| Habilitar feed de tela inicial | bool | FOR | Habilita o feed da tela inicial, que pode ser visto passando o dedo para a esquerda da tela inicial. Esse feed exibe um tipo diferente de conteúdo, como notícias, calendário, aplicativos de usuário frequentes e cartão de assistente de voz Cortana etc. Se você habilitar isso, o usuário final poderá navegar até o feed passando o dedo para a esquerda na tela inicial. |
-| Habilitar modo de visão geral | bool | FOR | Permite que os usuários finais adicionem ou removam páginas diferentes na tela inicial que podem ser acessadas passando diretamente da tela padrão. Se você habilitar isso, o usuário final poderá adicionar paginado à direita da página padrão da tela inicial, também poderá alterar a página padrão e também poderá acessar as configurações na tela inicial gerenciada do, além de poder alterá-la. |
 | Habilitar telemetria do dispositivo | bool | FOR | Habilita toda a telemetria que está sendo capturada para a tela inicial gerenciada. Se você habilitar isso, a Microsoft poderá capturar a telemetria de uso do dispositivo, como o número de vezes que um determinado aplicativo é iniciado nesse dispositivo. |
 | Definir os aplicativos listados como permitidos | bundleArray | FOR | Permite que você defina o conjunto de aplicativos visíveis na tela inicial de entre os aplicativos instalados no dispositivo. Você pode definir os aplicativos inserindo o nome do pacote de aplicativo dos aplicativos que você gostaria de tornar visíveis, por exemplo, com. Microsoft. emmx tornaria as configurações acessíveis na tela inicial. Os aplicativos que você permite-listar nesta seção já devem estar instalados no dispositivo para que fiquem visíveis na tela inicial. |
 | Definir links da Web fixados | bundleArray | FOR | Permite que você fixe sites como ícones de início rápido na tela inicial. Com essa configuração, você pode definir a URL e adicioná-la à tela inicial para o usuário final iniciar no navegador com um único toque. |
-| Habilitar barra de pesquisa | bool | FOR | Habilita a barra de pesquisa na tela inicial. Se você habilitar isso, os usuários do dispositivo verão a barra de pesquisa na tela inicial, onde poderão inserir o que quiserem Pesquisar na Web. |
-| Desabilitar aplicativo de configurações | bool | FOR | Desabilita a página de configurações da tela inicial gerenciada. Se você desabilitar isso, o usuário final do dispositivo não poderá acessar as configurações da tela inicial gerenciada. |
 | Habilitar proteção de tela | bool | FOR | Para habilitar o modo de proteção de tela ou não. Se definido como true, você pode configurar **screen_saver_image**, **screen_saver_show_time**, **inactive_time_to_show_screen_saver**e **media_detect_screen_saver**. |
 | Imagem de proteção de tela | cadeia |   | Defina a URL da imagem de proteção de tela. Se nenhuma URL for definida, os dispositivos mostrarão a imagem de proteção de tela padrão quando a proteção de tela for ativada. A imagem padrão mostra o ícone do aplicativo de tela inicial gerenciado.  |
 | Proteção de tela mostrar hora | número inteiro | 0 | Fornece a opção para definir a quantidade de tempo em segundos que o dispositivo exibirá a proteção de tela durante o modo de proteção de tela. Se definido como 0, a proteção de tela será mostrada no modo de proteção de tela indefinidamente até que o dispositivo se torne ativo.  |
@@ -116,18 +106,6 @@ Este é um exemplo de script JSON com todas as chaves de configuração disponí
     "productId": "com.microsoft.launcher.enterprise",
     "managedProperty": [
         {
-            "key": "keep_page_header",
-            "valueBool": true
-        },
-        {
-            "key": "keep_status_bar",
-            "valueBool": true
-        },
-        {
-            "key": "show_notification_badge",
-            "valueBool": false
-        },
-        {
             "key": "lock_home_screen",
             "valueBool": true
         },
@@ -144,32 +122,8 @@ Este é um exemplo de script JSON com todas as chaves de configuração disponí
             "valueInteger": 0
         },
         {
-            "key": "gesture_on",
-            "valueBool": false
-        },
-        {
-            "key": "vertical_scrolling",
-            "valueBool": false
-        },
-        {
-            "key": "theme",
-            "valueString": "Theme.Light.Blue"
-        },
-        {
-            "key": "dock_enable",
-            "valueBool": false
-        },
-        {
             "key": "screen_orientation",
             "valueInteger": 1
-        },
-        {
-            "key": "feed_enable",
-            "valueBool": false
-        },
-        {
-            "key": "allow_overview_mode",
-            "valueBool": false
         },
         {
             "key": "enable_telemetry",
@@ -204,14 +158,6 @@ Este é um exemplo de script JSON com todas as chaves de configuração disponí
                     ]
                 }
             ]
-        },
-        {
-            "key": "search_bar",
-            "valueBool": false
-        },
-        {
-            "key": "hide_settings",
-            "valueBool": false
         },
         {
             "key": "show_virtual_home",

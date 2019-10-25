@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b61281b0e82bcb839efdc31726d398eea08c364f
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: b4661b151493eb68cc6f71a5a77bd023ac27b826
+ms.sourcegitcommit: 3ace4cba6e2f6fefa9120be3807387a49b200c9b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502196"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72810217"
 ---
 # <a name="set-up-lookout-mobile-endpoint-security-integration-with-intune"></a>Configurar a integração de segurança de ponto de extremidade móvel com o Intune
 Com um ambiente que atende aos [pré-requisitos](lookout-mobile-threat-defense-connector.md#prerequisites), você pode integrar a consulta à segurança de ponto de extremidade móvel com o Intune. As informações neste artigo o orientarão na configuração da integração e na definição de configurações importantes na consulta para uso com o Intune.  
@@ -69,13 +69,16 @@ Para habilitar a integração da sua consulta de assinatura do Endpoint Mobile S
    Depois de reunir essas informações, entre em contato com o suporte à consulta (email: enterprisesupport@lookout.com). O suporte à consulta funcionará com seu contato principal para integrar sua assinatura e criar sua conta corporativa de consulta, usando as informações fornecidas.  
 
 ## <a name="configure-your-lookout-subscription"></a>Configurar sua assinatura de consulta  
+
+As etapas a seguir devem ser concluídas no console do administrador corporativo de consulta e permitirão uma conexão ao serviço de consulta para dispositivos registrados no Intune (via conformidade do dispositivo) **e** dispositivos não registrados (por meio de políticas de proteção de aplicativo).
+
 Depois que o suporte à consulta criar sua conta corporativa de consulta, o suporte à consulta enviará um email para o contato principal da sua empresa com um link para a URL de entrada: https://aad.lookout.com/les?action=consent. 
 
 ### <a name="initial-sign-in"></a>Entrada inicial  
 A primeira entrada no console do MES de consulta exibe uma página de consentimento (https://aad.lookout.com/les?action=consent). Um administrador global do Azure AD apenas entra e **aceita**. A entrada subsequente não exige que o usuário tenha esse nível de privilégio do Azure AD. 
 
  É apresentada uma página de consentimento. Selecione **Aceitar** para concluir o registo. 
-   ![screenshot da primeira página de entrada do console de consulta @ no__t-1
+   ![captura de tela da primeira página de entrada do console de consulta](./media/lookout-mtd-connector-integration/lookout_mtp_initial_login.png)
 
 Ao aceitar e consentir, você será redirecionado para o console de consulta.
 
@@ -110,20 +113,7 @@ O procedimento a seguir pressupõe que você criou anteriormente um grupo de usu
 6. Selecione **criar conector** para concluir a configuração do conector. Posteriormente, quando estiver satisfeito com os resultados, você poderá estender o registro para grupos de usuários adicionais.
 
 ## <a name="configure-intune-to-use-lookout-as-a-mobile-threat-defense-provider"></a>Configurar o Intune para usar a consulta como um provedor de defesa contra ameaças móveis
-Depois de configurar a consulta MES, você deve configurar uma conexão para a consulta no Intune.  
-
-1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-
-2. Vá para **conformidade do dispositivo** > **defesa contra ameaças móveis** e selecione **Adicionar**.
-
-3. No painel *Adicionar conector* , use a lista suspensa e selecione **Lookout for Work**.  
-
-4. Selecione **Criar**. Depois que o conector estabelece contato com a consulta MES, as *configurações do conector* tornam-se disponíveis.
-
-5. Defina **habilitar sincronização do aplicativo para dispositivos IOS** como **ativado**. 
-
-6. Selecione **salvar** para concluir a configuração.  O Intune e o MES de consulta agora estão integrados e prontos para uso.
-
+Depois de configurar a consulta MES, você deve configurar uma conexão para a consulta [no Intune](https://docs.microsoft.com/en-us/intune/protect/mtd-connector-enable).  
 
 ## <a name="additional-settings-in-the-lookout-mes-console"></a>Configurações adicionais no console do MES de consulta
 A seguir estão as configurações adicionais que podem ser definidas no console do MES de consulta.  
@@ -146,8 +136,6 @@ Para receber alertas de ameaças por email, entre no [console do mes](https://aa
 
   ![captura de tela da página preferências com a conta de usuário exibida](./media/lookout-mtd-connector-integration/lookout-mtp-email-notifications.png)
 
-
-
 ## <a name="configure-threat-classifications"></a>Configurar classificações de ameaças  
 A consulta à segurança de ponto de extremidade móvel classifica ameaças móveis de vários tipos. As classificações de ameaça de consulta têm níveis de risco padrão associados a elas. Os níveis de risco podem ser alterados a qualquer momento para atender aos requisitos da sua empresa.
 
@@ -167,4 +155,5 @@ Para obter detalhes sobre como fazer com que o aplicativo *Lookout for Work* imp
 
 ## <a name="next-steps"></a>Próximos passos
 
-[Set up Lookout apps (Configurar aplicações do Lookout)](mtd-apps-ios-app-configuration-policy-add-assign.md)
+- [Configurar aplicativos de consulta para dispositivos registrados](mtd-apps-ios-app-configuration-policy-add-assign.md)
+- [Configurar aplicativos de consulta para dispositivos não registrados](~/protect/mtd-add-apps-unenrolled-devices.md)

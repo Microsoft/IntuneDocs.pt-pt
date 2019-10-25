@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/04/2018
+ms.date: 10/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9ba94a649f9d7b49437d5d97bb621b0b0a94466c
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: d843cf707cf182655d0044dde289caca730ccd6b
+ms.sourcegitcommit: 3ace4cba6e2f6fefa9120be3807387a49b200c9b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72508697"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72810313"
 ---
 # <a name="integrate-zimperium-with-intune"></a>Integrar o Zimperium com o Intune
 
@@ -31,8 +31,7 @@ Tem de realizar os passos seguintes para integrar a solução de Defesa Contra A
 
 ## <a name="before-you-begin"></a>Antes de começar
 
-> [!NOTE]
-> Os passos seguintes devem ser realizados na [consola do Zimperium MTD](https://www.zimperium.com/platform).
+As etapas a seguir são feitas no [console do ZIMPERIUM MTD](https://www.zimperium.com/platform) e permitirão uma conexão ao serviço da consulta para os dispositivos registrados no Intune (usando a conformidade do dispositivo) e dispositivos não registrados (usando políticas de proteção de aplicativo).
 
 Antes de iniciar o processo de integração do Zimperium com o Intune, certifique-se de que tem a seguinte subscrição e credenciais:
 
@@ -90,4 +89,5 @@ Para obter mais informações sobre os aplicativos de consentimento e Azure Acti
 
 ## <a name="next-steps"></a>Próximos passos
 
-- [Configurar aplicações do Zimperium](mtd-apps-ios-app-configuration-policy-add-assign.md)
+- [Configurar aplicativos Zimperium para dispositivos registrados](mtd-apps-ios-app-configuration-policy-add-assign.md)
+- [Configurar aplicativos Zimperium para dispositivos não registrados](~/protect/mtd-add-apps-unenrolled-devices.md)
