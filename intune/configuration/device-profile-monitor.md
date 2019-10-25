@@ -5,24 +5,24 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/14/2019
+ms.date: 10/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 9deaed87-fb4b-4689-ba88-067bc61686d7
-ms.reviewer: heenamac
+ms.reviewer: karthib
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 17057100f9bc762de8c679880145014cf5806432
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: a1c68421bf7c5dea0d93d45e0cbb748204d0f66b
+ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72584849"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72749389"
 ---
 # <a name="monitor-device-profiles-in-microsoft-intune"></a>Monitorizar perfis de dispositivos no Microsoft Intune
 
@@ -80,6 +80,33 @@ Em **Dispositivos** > **Todos os dispositivos**, pode ver se existem definiçõe
 3. Selecione a política. São apresentadas todas as definições existentes nessa política que se aplicam ao dispositivo. Se um dispositivo apresentar o estado **Conflito**, selecione essa linha. Na nova janela, pode ver todos os perfis e os nomes dos perfis que têm a definição a causar o conflito.
 
 Agora que já sabe qual é a definição em conflito e as políticas que incluem essa definição, deverá ser mais fácil resolver o conflito. 
+
+## <a name="device-firmware-configuration-interface-profile-reporting"></a>Relatório de perfil da interface de configuração do firmware do dispositivo
+
+> [!WARNING]
+> O monitoramento de perfis DFCI está sendo criado no momento. Enquanto o DFCI está em visualização pública, os dados de monitoramento podem estar ausentes ou incompletos.
+
+Os perfis de DFCI são relatados por configuração, assim como outros perfis de configuração de dispositivo. Dependendo do suporte do fabricante do DFCI, algumas configurações podem não se aplicar.
+
+Com as configurações de perfil do DFCI, você pode ver os seguintes Estados:
+
+- **Compatível**: esse estado mostra quando um valor de configuração no perfil corresponde à configuração no dispositivo. Esse Estado pode ocorrer nos seguintes cenários:
+
+  - O perfil DFCI configurou com êxito a configuração no perfil.
+  - O dispositivo não tem o recurso de hardware controlado pela configuração e a configuração do perfil está **desabilitada**.
+  - A UEFI não permite que o DFCI desabilite o recurso e a configuração de perfil esteja **habilitada**.
+  - O dispositivo não tem o hardware para desabilitar o recurso e a configuração de perfil está **habilitada**.
+
+- **Não aplicável**: esse estado mostra quando um valor de configuração no perfil é **habilitado**e a configuração correspondente no dispositivo não é encontrada. Esse Estado pode acontecer se o hardware do dispositivo não tiver o recurso.
+
+- Não **compatível**: esse estado mostra quando um valor de configuração no perfil não corresponde à configuração no dispositivo. Esse Estado pode ocorrer nos seguintes cenários:
+
+  - A UEFI não permite que o DFCI desabilite uma configuração e a configuração do perfil esteja **desabilitada**.
+  - O dispositivo não tem o hardware para desabilitar o recurso e a configuração do perfil está **desabilitada**.
+  - O dispositivo não tem a versão mais recente do firmware DFCI.
+  - O DFCI foi desabilitado antes de ser registrado no Intune usando um controle "recusar" local no menu UEFI.
+  - O dispositivo foi registrado no Intune fora do registro do AutoPilot.
+  - O dispositivo não foi registrado para o piloto automático por um CSP da Microsoft ou registrado diretamente pelo OEM.
 
 ## <a name="next-steps"></a>Próximos passos
 
