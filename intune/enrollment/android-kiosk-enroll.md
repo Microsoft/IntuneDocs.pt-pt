@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d1a1c03dc480ad66de22b4a5ee44a9b8c221980c
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: edc884850b70ff7621224c5b01a68d016f27504e
+ms.sourcegitcommit: 5932da3ed8f52c7b0f0d71c1801f81c85952cf0c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503383"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72923377"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-dedicated-devices"></a>Configurar a inscrição de dispositivos dedicados do Android Enterprise no Intune
 
@@ -78,7 +78,7 @@ Pode direcionar aplicações e políticas para grupos de dispositivos dinâmicos
 4. No painel **Regras de associação de grupo dinâmica**, preencha os campos da seguinte forma:
     - **Adicionar regra de associação dinâmica**: regra simples
     - **Adicionar dispositivos onde**: enrollmentProfileName
-    - Na caixa do meio, selecione **Correspondência**.
+    - Na caixa do meio, escolha **Equals**.
     - No último campo, introduza o nome do perfil de inscrição que criou anteriormente.
     Para obter mais informações sobre regras de associação dinâmica, veja [Regras de associação dinâmica para grupos no AAD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership). 
 5. Selecione **Adicionar consulta** > **Criar**.

@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/18/2019
+ms.date: 10/23/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a085cbe1337ecfd104d858e78d452e8a4f66105d
-ms.sourcegitcommit: 5807f4db4a45a093ce2fd6cb0c480bec384ec1ff
+ms.openlocfilehash: 5e88aa93e3b3e21f16271049f66bbdc4b927383b
+ms.sourcegitcommit: 4f979ba7030e72d820113fe23ac8521ddb2433bd
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72601563"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72915802"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 
@@ -56,6 +56,43 @@ Saiba mais sobre as novidades todas as semanas no Microsoft Intune. Você també
 
 <!-- ########################## -->
 
+## <a name="week-of-october-21-2019"></a>Semana de 21 de outubro de 2019
+
+### <a name="microsoft-365-device-management"></a>Gerenciamento de dispositivos Microsoft 365
+
+#### <a name="improved-administration-experience-in-microsoft-365-device-management"></a>Experiência de administração aprimorada no gerenciamento de dispositivos Microsoft 365
+
+Uma experiência de administração atualizada e simplificada já está disponível no espaço de trabalho de especialista em gerenciamento de dispositivos Microsoft 365 em [https://devicemanagement.microsoft.com](https://devicemanagement.microsoft.com), incluindo:
+
+- **Navegação atualizada**: você encontrará uma navegação simplificada de 1º nível que agrupa logicamente os recursos.
+- **Novos filtros de plataforma**: você pode selecionar uma única plataforma, que mostra apenas as políticas e os aplicativos para a plataforma selecionada, nas páginas dispositivos e aplicativos.
+- **Um novo Home Page**: consulte rapidamente a integridade do serviço, o estado do seu locatário, notícias, etc. no novo Home Page.
+
+Para obter mais informações sobre esses aprimoramentos, consulte a [postagem no blog Enterprise Mobility + Security](https://go.microsoft.com/fwlink/?linkid=2109094) no site da comunidade de tecnologia da Microsoft.
+
+### <a name="app-management"></a>Gestão de aplicações
+
+#### <a name="add-mobile-threat-defense-apps-to-unenrolled-devices----3005337---"></a>Adicionar aplicativos de defesa contra ameaças móveis a dispositivos não registrados <!-- 3005337 -->
+Você pode criar uma política de proteção de aplicativo do Intune que pode bloquear ou Apagar seletivamente os dados corporativos dos usuários com base na integridade de um dispositivo. A integridade do dispositivo é determinada usando sua solução de MTD (defesa contra ameaças móveis) escolhida. Essa funcionalidade existe hoje com dispositivos registrados no Intune como uma configuração de conformidade do dispositivo. Com esse novo recurso, ampliamos a detecção de ameaças de um fornecedor de defesa contra ameaças móveis para funcionar em dispositivos não registrados. Para obter mais informações, consulte [criar política de proteção de aplicativo de defesa contra ameaças móveis com o Intune](~/protect/mtd-app-protection-policy.md).
+
+### <a name="device-configuration"></a>Configuração do dispositivo
+
+#### <a name="new-device-firmware-configuration-interface-profile-for-windows-10-and-later-devices----2266073----"></a>Novo perfil de interface de configuração de firmware de dispositivo para dispositivos Windows 10 e posteriores <!-- 2266073  -->
+
+No Windows 10 e posterior, você pode criar um perfil de configuração de dispositivo para controlar as configurações e os recursos (**configuração do dispositivo** > **perfis** > **Criar perfil** > **Windows 10 e posterior** para plataforma). Nesta atualização, há um novo tipo de perfil de interface de configuração de firmware de dispositivo que permite ao Intune gerenciar configurações de UEFI (BIOS). Estamos no processo de distribuir esse recurso para todos os clientes e esperar que seja concluído até o final da próxima semana.
+
+Para obter mais informações sobre esse recurso, consulte [usar perfis de DFCI em dispositivos Windows em Microsoft Intune](../configuration/device-firmware-configuration-interface-windows.md).
+
+Aplica-se a:
+- Windows 10 RS5 (1809) e mais recente em firmware com suporte
+
+### <a name="device-enrollment"></a>Inscrição de dispositivos
+
+#### <a name="toggle-to-only-show-enrollment-status-page-on-devices-provisioned-by-out-of-box-experience-oobe---3959566--"></a>Alternar para mostrar apenas a página de status de registro em dispositivos provisionados pela experiência inicial (OOBE) <!--3959566-->
+Agora você pode optar por mostrar apenas a página de status de registro em dispositivos provisionados pelo OOBE do AutoPilot.
+
+Para ver a nova alternância, escolha **Intune** > **registro de dispositivo** > **registro do Windows** > **página status do registro** > **Criar perfil** > **configurações** > **apenas mostrar a página para dispositivos provisionados pela experiência inicial (OOBE)** .
+
 ## <a name="week-of-october-14-2019"></a>Semana de 14 de outubro de 2019
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
@@ -65,7 +102,12 @@ Saiba mais sobre as novidades todas as semanas no Microsoft Intune. Você també
 Para instalações de aplicativos disponíveis em dispositivos Android Enterprise Work Profile, dedicados e totalmente gerenciados, você pode exibir o status de instalação do aplicativo, bem como a versão instalada dos aplicativos gerenciados do Google Play. Para obter mais informações, consulte [como monitorar políticas de proteção de aplicativo](~/apps/app-protection-policies-monitor.md), [gerenciar dispositivos de perfil de trabalho Android com o Intune](~/enrollment/android-enterprise-overview.md) e o tipo de [aplicativo Google Play gerenciado](~/apps/apps-add-android-for-work.md#managed-google-play-app-types).
 
 #### <a name="microsoft-edge-version-77-and-later-for-windows-10-and-macos-public-preview----3872025-4678761----"></a>Microsoft Edge versão 77 e posterior para Windows 10 e macOS (visualização pública) <!-- 3872025, 4678761  -->
-O Microsoft Edge versão 77 e posterior agora está disponível para ser implantado em computadores que executam o Windows 10 e o macOS. A visualização pública oferece canais de **desenvolvimento** e **beta** para o Windows 10 e um canal **beta** para MacOS. A implantação está em inglês (apenas EN), mas os usuários finais podem alterar o idioma de exibição no navegador em **configurações**  > **idiomas**. O Microsoft Edge é um aplicativo Win32 instalado no contexto do sistema e em arquiteturas semelhantes (aplicativo x86 no sistema operacional x86 e aplicativo x64 no sistema operacional x64). Além disso, as atualizações automáticas do navegador estão **ativadas** por padrão e o Microsoft Edge não pode ser desinstalado. Para obter mais informações, consulte [Adicionar o Microsoft Edge para Windows 10 a](~/apps/apps-windows-edge.md) documentação do Microsoft Intune e [do Microsoft Edge](https://go.microsoft.com/fwlink/?linkid=2103823).
+O Microsoft Edge versão 77 e posterior estará disponível para implantação em computadores que executam o Windows 10 e o macOS. 
+
+>[!NOTE]
+>A distribuição para este recurso foi atrasada até o momento deste mês.
+
+A visualização pública oferece canais de **desenvolvimento** e **beta** para o Windows 10 e um canal **beta** para MacOS. A implantação está em inglês (apenas EN), mas os usuários finais podem alterar o idioma de exibição no navegador em **configurações**  > **idiomas**. O Microsoft Edge é um aplicativo Win32 instalado no contexto do sistema e em arquiteturas semelhantes (aplicativo x86 no sistema operacional x86 e aplicativo x64 no sistema operacional x64). Além disso, as atualizações automáticas do navegador estão **ativadas** por padrão e o Microsoft Edge não pode ser desinstalado. Para obter mais informações, consulte [Adicionar o Microsoft Edge para Windows 10 a](~/apps/apps-windows-edge.md) documentação do Microsoft Intune e [do Microsoft Edge](https://go.microsoft.com/fwlink/?linkid=2103823).
 
 #### <a name="update-to-app-protection-ui-and-ios-app-provisioning-ui----4102027-4102029-----"></a>Atualizar para interface do usuário de proteção de aplicativo e interface do usuário de provisionamento de aplicativo iOS <!-- 4102027, 4102029   -->
 A interface do usuário para criar e editar políticas de proteção de aplicativo e perfis de provisionamento de aplicativo iOS no Intune foi atualizada. As alterações da interface do usuário incluem:
@@ -157,18 +199,12 @@ Aplica-se a:
 Usando as restrições de tipo de dispositivo do Intune, você pode usar a versão do sistema operacional do dispositivo para especificar quais dispositivos de usuário usarão o registro de perfil de trabalho do Android Enterprise ou o registro de administrador do dispositivo Android.  Para obter mais informações, consulte [definir restrições de registro](../enrollment/enrollment-restrictions-set.md).
 
 #### <a name="windows-autopilot-deployment-reports----3856172---"></a>Relatórios de implantação do Windows AutoPilot <!-- 3856172 -->
-Um novo relatório detalha cada dispositivo implantado por meio do piloto automático do Windows. Para obter mais informações, consulte [relatório de implantação do AutoPilot](../enrollment/enrollment-autopilot.md#autopilot-deployments-report).
+Um novo relatório detalha cada dispositivo implantado por meio do piloto automático do Windows. Para obter mais informações, consulte [relatório de implantação do AutoPilot](../enrollment/enrollment-autopilot.md#autopilot-deployments-report). Estamos no processo de distribuir esse recurso para todos os clientes e esperar que seja concluído até o final da próxima semana.
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="device-management"></a>Gestão de dispositivos
 
-#### <a name="edit-device-name-value-for-autopilot-devices---4816775----"></a>Editar o valor do nome do dispositivo para dispositivos de piloto automático<!-- 4816775  -->
-Você pode editar o valor do nome do dispositivo para dispositivos do piloto automático ingressados no Azure AD.  Para obter mais informações, consulte [Editar atributos de dispositivo do AutoPilot](../enrollment/enrollment-autopilot.md#edit-autopilot-device-attributes).
-
-#### <a name="edit-group-tag-value-for-autopilot-devices---4816775----"></a>Editar o valor da marca do grupo para dispositivos de piloto automático<!-- 4816775  -->
-Você pode editar o valor da marca de grupo para dispositivos de piloto automático. Para obter mais informações, consulte [Editar atributos de dispositivo do AutoPilot](../enrollment/enrollment-autopilot.md#edit-autopilot-device-attributes).
-
-#### <a name="new-restrictions-for-renaming-windows-devices----2640074----"></a>Novas restrições para renomeação de dispositivos Windows <!-- 2640074  -->
+#### <a name="new-restrictions-for-renaming-windows-devices----3478938----"></a>Novas restrições para renomeação de dispositivos Windows <!-- 3478938  -->
 Ao renomear um dispositivo Windows, você deve seguir as novas regras:
 - 15 caracteres ou menos (deve ser menor ou igual a 63 bytes, não incluindo nulo à direita)
 - Não nulo ou uma cadeia de caracteres vazia
@@ -189,7 +225,7 @@ Um novo relatório para a página Visão geral de dispositivos exibe quantos dis
 #### <a name="pkcs-certificates-for-macos-----1333650---------"></a>Certificados PKCS para macOS  <!-- 1333650       -->
 Agora você pode [usar certificados PKCS com MacOS](../protect/certficates-pfx-configure.md#create-a-pkcs-certificate-profile). Você pode selecionar o certificado PKCS como um tipo de perfil para macOS e implantar certificados de usuário e de dispositivo que tenham [campos personalizados de entidade e nome alternativo da entidade](../protect/certficates-pfx-configure.md#subject-name-format-for-macos).  
 
-O certificado PCKS para macOS também oferece suporte a uma nova configuração, _permitir acesso a todos os aplicativos_. Com essa configuração, você pode habilitar todos os aplicativos associados ao acesso à chave privada do certificado.  Para obter mais informações sobre essa configuração, consulte a documentação da Apple em https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf.
+O certificado PKCS para macOS também oferece suporte a uma nova configuração, _permitir acesso a todos os aplicativos_. Com essa configuração, você pode habilitar todos os aplicativos associados ao acesso à chave privada do certificado.  Para obter mais informações sobre essa configuração, consulte a documentação da Apple em https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf.
 
 ####   <a name="derived-credentials-to-provision-ios-mobile-devices-with-certificates----------1736036-1736037-1772050-2777333-----------"></a>Credenciais derivadas para provisionar dispositivos móveis iOS com certificados      <!--  1736036, 1736037, 1772050, 2777333         -->  
 O Intune dá suporte ao uso de [credenciais derivadas](../protect/derived-credentials.md) como um método de autenticação e à assinatura e criptografia S/MIME para dispositivos IOS. As credenciais derivadas são uma implementação do padrão *NIST (National Institute of Standards and Technology) 800-157* para a implantação de certificados em dispositivos.  
@@ -1726,7 +1762,7 @@ Ao criar um perfil de configuração para dispositivos iOS, você pode adicionar
 Em **configuração do dispositivo**  > **perfis**  > **Criar perfil**  > **Ios** para plataforma > **restrições de dispositivo** para o tipo de perfil > **loja de aplicativos, exibição de documento, jogos**, as configurações a seguir são Adicionado: permitir que aplicativos gerenciados gravem contatos em contas de contatos não gerenciados permitem que aplicativos não gerenciados leiam de contas de contatos gerenciados para ver essas configurações, vá para [restrições de dispositivo IOS](../configuration/device-restrictions-ios.md#app-store-doc-viewing-gaming).
 
 #### <a name="new-notification-hints-and-keyguard-settings-to-android-enterprise-device-owner-devices----3201839-3201843---"></a>Novas notificações, dicas e configurações de keyguard para dispositivos Android Enterprise do proprietário do dispositivo <!-- 3201839 3201843 -->
-Essa atualização inclui vários novos recursos em dispositivos Android Enterprise ao executar como proprietário do dispositivo. Para usar esses recursos, vá para **configuração do dispositivo**  > **perfis**  > **Criar perfil** > na **plataforma**, escolha **Android Enterprise** > em **tipo de perfil**, escolha **somente proprietário do dispositivo** @no__t **restrições de dispositivo**_9.
+Essa atualização inclui vários novos recursos em dispositivos Android Enterprise ao executar como proprietário do dispositivo. Para usar esses recursos, vá para **configuração do dispositivo** > **perfis** > **Criar perfil** > na **plataforma**, escolha **Android Enterprise** > em **tipo de perfil**, escolha **somente proprietário do dispositivo** @no_ **restrições de dispositivo**_t_9_.
 
 Os novos recursos incluem: 
 

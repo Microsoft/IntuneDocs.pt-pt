@@ -5,24 +5,24 @@ description: Configurações de linha de base de segurança com suporte do Intun
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/25/2019
+ms.date: 10/25/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
-ms.reviewer: karthib
+ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a2cb5d7375ae5b76a24861872d4abf786f199dfd
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: aa3cb3481de6e1fdc3790b7330ac521772e252be
+ms.sourcegitcommit: 5932da3ed8f52c7b0f0d71c1801f81c85952cf0c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509003"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72923410"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Configurações de linha de base de proteção avançada contra ameaças do Microsoft defender para Intune
 
@@ -31,12 +31,6 @@ Exiba as configurações de linha de base da proteção avançada contra ameaça
 A linha de base de proteção avançada contra ameaças do Microsoft defender está disponível quando seu ambiente atende aos pré-requisitos para usar a [proteção avançada contra ameaças do Microsoft defender](advanced-threat-protection.md#prerequisites). 
 
 Essa linha de base é otimizada para dispositivos físicos e não é recomendada no momento para uso em VMs (máquinas virtuais) ou pontos de extremidade de VDI. Determinadas configurações de linha de base podem afetar sessões interativas remotas em ambientes virtualizados. Para obter mais informações, consulte [aumentar a conformidade com a linha de base de segurança do Microsoft defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline) na documentação do Windows.
-
-
-> [!NOTE]  
-> As configurações de linha de base do ATP estão em versão **prévia**. Durante a visualização, a lista de configurações disponíveis e a ordem em que esse conteúdo apresenta essas configurações podem não corresponder ao que está disponível no Portal.  
->
-> Quando as configurações de linha de base estiverem fora de visualização, esse conteúdo será atualizado para refletir uma lista atual de configurações de linha de base de segurança às quais o Intune dá suporte.
 
 ## <a name="application-guard"></a>Proteção de aplicativo  
 Para obter mais informações, consulte [WINDOWSDEFENDERAPPLICATIONGUARD CSP](https://docs.microsoft.com/windows/client-management/mdm/windowsdefenderapplicationguard-csp) na documentação do Windows.  
@@ -55,13 +49,13 @@ Ao usar o Microsoft Edge, o Microsoft defender Application Guard protege seu amb
 
   - **Comportamento da área de transferência** - *configurações/ClipboardSettings*  
     Escolha quais ações de copiar e colar são permitidas entre o computador local e o navegador virtual do Application Guard.  As opções incluem:
-    - *Não configurado*  
-    - *Bloquear ambos os* dados não podem ser transferidos entre o PC e o navegador virtual.  
-    - *Bloquear host para contêiner* -os dados não podem transferir do PC para o navegador virtual.
-    - *Bloquear contêiner para host* -os dados não podem transferir do navegador virtual para o PC host.
-    - *Bloquear nenhum* -nenhum bloco de conteúdo existe.  
+    - Não Configurado  
+    - Bloquear copiar e colar entre PC e navegador-bloquear ambos. Os dados não podem ser transferidos entre o PC e o navegador virtual.  
+    - Permitir copiar e colar do navegador para o PC somente-os dados não podem transferir do PC para o navegador virtual.
+    - Permitir copiar e colar do PC para o navegador somente-os dados não podem transferir do navegador virtual para o PC host.
+    - Permitir copiar e colar entre PC e navegador-nenhum bloco para conteúdo existe.  
 
-    **Padrão**: bloquear ambos  
+    **Padrão**: bloquear cópia e colar entre PC e navegador  
 
 - **Política de isolamento de rede do Windows – nomes de domínio de rede corporativa**  
   Para obter mais informações, consulte [Policy CSP-NetworkIsolation](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-networkisolation) na documentação do Windows.
@@ -101,7 +95,7 @@ Para obter mais informações, consulte [CSP da política-SmartScreen](https://d
 
   **Padrão**: habilitar
 
-- **Tipo de execução de conteúdo de email**  
+- **Execução de conteúdo de email**  
   [Regra de redução da superfície de ataque](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) – quando definido como *Bloquear*, essa regra impede que os seguintes tipos de arquivo sejam executados ou iniciados de um email visto no Microsoft Outlook ou webmail (como gmail.com ou Outlook.com):  
 
   - Arquivos executáveis (como. exe,. dll ou. SCR)  
@@ -115,12 +109,12 @@ Para obter mais informações, consulte [CSP da política-SmartScreen](https://d
 
   **Padrão**: habilitar
 
-- **Script de tipo de código de macro ofuscado**  
+- **Script de código de macro ofuscado**  
   [Regra de redução da superfície de ataque](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) – malware e outras ameaças podem tentar ofuscar ou ocultar seu código mal-intencionado em alguns arquivos de script. Essa regra impede que os scripts que parecem estar ofuscados sejam executados.  
     
   **Padrão**: bloquear
 
-- **Tipo de processo USB não confiável**  
+- **Processo USB não confiável**  
   [Regra de redução da superfície de ataque](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) – quando definido para *Bloquear*, não assinados ou arquivos executáveis não confiáveis de unidades removíveis USB e os cartões SD não podem ser executados.
 
   Os arquivos executáveis incluem:
@@ -129,12 +123,12 @@ Para obter mais informações, consulte [CSP da política-SmartScreen](https://d
 
   **Padrão**: bloquear
 
-- **Outro tipo de injeção de processo de aplicativos do Office**  
+- **Outros aplicativos do Office injeção de processo**  
   [Regra de redução da superfície de ataque](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) -quando definido como *Bloquear*, os aplicativos do Office, incluindo o Word, o Excel, o PowerPoint e o OneNote, não podem injetar código em outros processos. A injeção de código é normalmente usada por malware para executar código mal-intencionado em uma tentativa de ocultar a atividade de mecanismos de verificação antivírus.  
 
   **Padrão**: bloquear
 
-- **Código de macro do Office permitir tipo de importações do Win32**  
+- **Código de macro do Office permitir importações Win32**  
   [Regra de redução da superfície de ataque](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) – quando definido como *Bloquear*, essa regra tenta bloquear os arquivos do Office que contêm o código de macro que pode importar as DLLs do Win32. Os arquivos do Office incluem Word, Excel, PowerPoint e OneNote. O malware pode usar o código de macro em arquivos do Office para importar e carregar as DLLs do Win32, que são usadas para fazer chamadas à API para permitir infecções adicionais em todo o sistema.  
 
   **Padrão**: bloquear
@@ -144,7 +138,7 @@ Para obter mais informações, consulte [CSP da política-SmartScreen](https://d
 
   **Padrão**: habilitar
 
-- **Criação de conteúdo executável de aplicativos do Office ou tipo de inicialização**  
+- **Criação ou inicialização de conteúdo executável de aplicativos do Office**  
   [Regra de redução da superfície de ataque](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) – quando definido como *Bloquear*, os aplicativos do Office não podem criar conteúdo executável. Os aplicativos do Office incluem Word, Excel, PowerPoint, OneNote e Access.  
 
   Essa regra destina-se a comportamentos típicos usados por Complementos suspeitos e mal-intencionados e scripts (extensões) que criam ou iniciam arquivos executáveis. Essa é uma técnica típica de malware. As extensões são impedidas de serem usadas pelos aplicativos do Office. Normalmente, essas extensões usam o Windows Scripting Host (arquivos. WSH) para executar scripts que automatizam determinadas tarefas ou fornecem recursos de complemento criados pelo usuário.
@@ -170,6 +164,10 @@ Para obter mais informações, o [BitLocker política de grupo configurações](
 
   - **Método de criptografia**  
     **Padrão**: AES 128bit CBC
+
+- **Criptografar cartão de armazenamento (somente dispositivos móveis)** Selecionar *Sim* irá criptografar a placa de armazenamento do dispositivo móvel.  
+
+   **Padrão**: Sim
 
 - **Política de unidade fixa do armário de bits**  
   Os valores dessa política determinam a força da codificação que o BitLocker usa para a criptografia de unidades fixas. As empresas podem controlar o nível de criptografia para aumentar a segurança (o AES-256 é mais seguro do que o AES-128). Se você habilitar essa configuração, poderá configurar um algoritmo de criptografia e a intensidade de codificação de chave para unidades de dados fixas, unidades do sistema operacional e unidades de dados removíveis individualmente. Para unidades fixas e do sistema operacional, recomendamos que você use o algoritmo XTS-AES. Para unidades removíveis, você deve usar AES-CBC 128-bit ou AES-CBC 256-bit se a unidade for usada em outros dispositivos que não estão executando o Windows 10, versão 1511 ou posterior. A alteração do método de criptografia não terá efeito se a unidade já estiver criptografada ou se a criptografia estiver em andamento. Nesses casos, essa configuração de política é ignorada.
@@ -224,12 +222,12 @@ Para obter mais informações, o [BitLocker política de grupo configurações](
   - **Remover dispositivos de hardware correspondentes**  
     Essa configuração está disponível somente quando *a instalação do dispositivo de hardware por identificadores de dispositivo* está definida para *bloquear a instalação do dispositivo de hardware*.  
 
-    **Padrão**: *nenhuma configuração padrão*
+    **Padrão**: Sim
 
   - **Identificadores de dispositivo de hardware que são bloqueados**  
     Essa configuração está disponível somente quando *a instalação do dispositivo de hardware por identificadores de dispositivo* está definida para *bloquear a instalação do dispositivo de hardware*. Para definir essa configuração, expanda a opção, selecione **+ Adicionar**e especifique o identificador de dispositivo de hardware que você deseja bloquear.  
 
-    **Padrão**: *nenhum dispositivo está bloqueado*  
+    **Padrão**: PCI\CC_0C0A
 
 - **Bloquear o acesso direto à memória**  
   [Dataprotection/AllowDirectMemoryAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess) -Use essa configuração de política para bloquear o DMA (acesso direto à memória) para todas as portas de downstream PCI conectadas a quente em um dispositivo, até que um usuário faça logon no Windows. Quando um usuário fizer logon, o Windows enumerará os dispositivos PCI conectados às portas PCI plug-host. Toda vez que o usuário bloqueia a máquina, o DMA é bloqueado em portas PCI de plugue a quente sem dispositivos filhos até que o usuário faça logon novamente. Os dispositivos que já foram enumerados quando o computador foi desbloqueado continuarão funcionando até serem desconectados. 
@@ -249,23 +247,23 @@ Para obter mais informações, o [BitLocker política de grupo configurações](
   - **Remover dispositivos de hardware correspondentes**  
     Essa configuração está disponível somente quando *a instalação do dispositivo de hardware por classes de instalação* está definida para *bloquear a instalação do dispositivo de hardware*.  
  
-    **Padrão**: *nenhuma configuração padrão*  
+    **Padrão**: Sim  
 
   - **Identificadores de dispositivo de hardware que são bloqueados**  
     Essa configuração está disponível somente quando a instalação do dispositivo de hardware por classes de instalação está definida para bloquear a instalação do dispositivo de hardware. Para definir essa configuração, expanda a opção, selecione **+ Adicionar**e especifique o identificador de dispositivo de hardware que você deseja bloquear.  
  
-    **Padrão**: *nenhum dispositivo está bloqueado*
+    **Padrão**: {d48179be-ec20-11D1-b6b8-00c04fa372a7}
 
 ## <a name="endpoint-detection-and-response"></a>Detecção e resposta de ponto de extremidade  
 Para obter mais informações, consulte [WINDOWSADVANCEDTHREATPROTECTION CSP](https://docs.microsoft.com/windows/client-management/mdm/windowsadvancedthreatprotection-csp) na documentação do Windows.  
 
-- **Agilize a frequência de relatório de telemetria** - *Configuration/TelemetryReportingFrequency*  
+- **Agilize a frequência de relatório de telemetria** - *Configuration/TelemetryReportingFrequency*
 
   Acelere a frequência de relatórios de telemetria da proteção avançada contra ameaças do Microsoft defender.  
 
   **Padrão**: Sim
 
-- **Compartilhamento de amostra para todos os arquivos** - *Configuration/SampleSharing*  
+- **Compartilhamento de amostra para todos os arquivos** - *Configuration/SampleSharing* 
 
   Retorna ou define o parâmetro de configuração de compartilhamento de exemplo de proteção avançada contra ameaças do Microsoft defender.  
 
@@ -286,43 +284,7 @@ Para obter mais informações, consulte [WINDOWSADVANCEDTHREATPROTECTION CSP](ht
   [WindowsDefenderSecurityCenter/DisallowExploitProtectionOverride](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowsdefendersecuritycenter#windowsdefendersecuritycenter-disallowexploitprotectionoverride) – defina como *Sim* para impedir que os usuários façam alterações na área de configurações da proteção de exploração na central de segurança do Windows Defender. Se você desabilitar ou não definir essa configuração, os usuários locais poderão fazer alterações na área de configurações do Exploit Protection.  
   **Padrão**: Sim  
 
-- **Acesso controlado a pastas**  
-  Consulte [defender/ControlledFolderAccessAllowedApplications](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-controlledfolderaccessallowedapplications) e [defender/ControlledFolderAccessProtectedFolders](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-controlledfolderaccessprotectedfolders) 
-  
-   Proteja ficheiros e pastas contra alterações não autorizadas por aplicações não fidedignas.
-
-  **Padrão**: modo de auditoria
-
-## <a name="web--network-protection"></a>Proteção de rede & Web  
-
-- **Tipo de proteção de rede**  
-  [Defender/EnableNetworkProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection) -essa política permite ativar ou desativar a proteção de rede no Windows Defender Exploit Guard. A proteção de rede é um recurso do Windows Defender Exploit Guard que protege os funcionários que usam qualquer aplicativo de acessar golpes de phishing, sites de Hospedagem de exploração e conteúdo mal-intencionado na Internet. Isso inclui impedir que navegadores de terceiros se conectem a sites perigosos.  
-
-  Quando definido como *habilitar* ou *modo de auditoria*, os usuários não podem desativar a proteção de rede e você pode usar a central de segurança do Windows Defender para exibir informações sobre tentativas de conexão.  
- 
-  - *Habilitar* impedirá que os usuários e aplicativos se conectem a domínios perigosos.  
-  - O *modo de auditoria* não impede que os usuários e aplicativos se conectem a domínios perigosos.  
-
-  Quando definido como *definido pelo usuário*, os usuários e aplicativos não são impedidos de se conectar a domínios perigosos e as informações sobre conexões não estão disponíveis na central de segurança do Windows Defender.  
-
-  **Padrão**: modo de auditoria
-
-- **Exigir SmartScreen para o Microsoft Edge**  
-  O [navegador/AllowSmartScreen](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen) -Microsoft Edge usa o Windows Defender SmartScreen (ativado) para proteger os usuários contra possíveis golpes de phishing e softwares mal-intencionados por padrão. Por padrão, essa política está habilitada (definida como *Sim*) e, quando habilitada, impede que os usuários desativem o Windows Defender SmartScreen.  Quando a política efetiva de um dispositivo é igual a não configurado, os usuários podem desativar o Windows Defender SmartScreen, o que deixa o dispositivo desprotegido.  
-
-  **Padrão**: Sim
-  
-- **Bloquear acesso a sites mal-intencionados**  
-  [Navegador/PreventSmartScreenPromptOverride](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverride) -por padrão, o Microsoft Edge permite que os usuários ignorem (ignoram) os avisos do Windows Defender SmartScreen sobre sites potencialmente mal-intencionados, permitindo que os usuários continuem no site. Com essa política habilitada (definida como *Sim*), o Microsoft Edge impede que os usuários ignorem os avisos e os bloqueia de continuar para o site.  
-
-  **Padrão**: Sim
-
-- **Bloquear download de arquivo não verificado**  
-  [Navegador/PreventSmartScreenPromptOverrideForFiles](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverrideforfiles) -por padrão, o Microsoft Edge permite que os usuários ignorem (ignoram) os avisos do Windows Defender SmartScreen sobre arquivos potencialmente mal-intencionados, permitindo que eles continuem baixando arquivos não verificados. Com essa política habilitada (definida como *Sim*), os usuários são impedidos de ignorar os avisos e não podem baixar arquivos não verificados.  
-
-  **Padrão**: Sim
-
-## <a name="windows-defender-anti-virus----settings-review-pending-for-this-section"></a>Antivírus do Windows Defender [revisão de configurações pendente para esta seção]
+## <a name="microsoft-defender-antivirus"></a>Microsoft defender antivírus  
 
 Para obter mais informações, consulte [Policy CSP-defender](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender) na documentação do Windows.
 
@@ -336,7 +298,7 @@ Para obter mais informações, consulte [Policy CSP-defender](https://docs.micro
 
   **Padrão**: Sim
 
-- **Tipo de consentimento de envio de amostra do defender**  
+- **Consentimento de envio de exemplo do defender**  
   [Defender/SubmitSamplesConsent](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent) -verifica o nível de consentimento do usuário no Windows Defender para enviar dados. Se o consentimento necessário já tiver sido concedido, o Windows defender os enviará. Se não (e se o usuário tiver especificado nunca perguntar), a interface do usuário será iniciada para solicitar o consentimento do usuário (quando a *proteção fornecida pela nuvem* estiver definida como *Sim*) antes de enviar dados.  
 
   **Padrão**: enviar amostras seguras automaticamente
@@ -507,7 +469,7 @@ Para obter mais informações, consulte [CSP do firewall](https://docs.microsoft
   - **Regras de política da política de grupo não mesclada**  
     **Padrão**: Sim
 
-- **Perfil de Firewall @no__t público**-1*FirewallRules/FirewallRuleName/perfis*  
+- **Perfil de Firewall** - *FirewallRules/FirewallRuleName/perfis*  
   Especifica os perfis aos quais a regra pertence: domínio, privado, público. Esse valor representa o perfil para redes públicas. Essas redes são classificadas como públicas pelos administradores no host do servidor. A classificação ocorre na primeira vez que o host se conecta à rede. Normalmente, essas redes estão em aeroportos, cafeterias e outros locais públicos onde os colegas na rede ou o administrador de rede não são confiáveis.  
 
   Configurações disponíveis:
@@ -548,7 +510,7 @@ Para obter mais informações, consulte [CSP do firewall](https://docs.microsoft
   - **Regras de política da política de grupo não mesclada**  
     **Padrão**: Sim  
 
-- **Perfil de Firewall @no__t privada**-1*FirewallRules/FirewallRuleName/perfis*  
+- **Perfil de firewall particular** - *FirewallRules/FirewallRuleName/perfis*  
   Especifica os perfis aos quais a regra pertence: domínio, privado, público. Esse valor representa o perfil para redes privadas.  
 
   Configurações disponíveis: 
@@ -594,6 +556,35 @@ Para obter mais informações, consulte [CSP do firewall](https://docs.microsoft
 
 - **Verificação da lista de certificados revogados**  
   **Padrão**: dispositivo padrão
+
+## <a name="web--network-protection"></a>Proteção de rede & Web  
+
+- **Tipo de proteção de rede**  
+  [Defender/EnableNetworkProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection) -essa política permite ativar ou desativar a proteção de rede no Windows Defender Exploit Guard. A proteção de rede é um recurso do Windows Defender Exploit Guard que protege os funcionários que usam qualquer aplicativo de acessar golpes de phishing, sites de Hospedagem de exploração e conteúdo mal-intencionado na Internet. Isso inclui impedir que navegadores de terceiros se conectem a sites perigosos.  
+
+  Quando definido como *habilitar* ou *modo de auditoria*, os usuários não podem desativar a proteção de rede e você pode usar a central de segurança do Windows Defender para exibir informações sobre tentativas de conexão.  
+ 
+  - *Habilitar* impedirá que os usuários e aplicativos se conectem a domínios perigosos.  
+  - O *modo de auditoria* não impede que os usuários e aplicativos se conectem a domínios perigosos.  
+
+  Quando definido como *definido pelo usuário*, os usuários e aplicativos não são impedidos de se conectar a domínios perigosos e as informações sobre conexões não estão disponíveis na central de segurança do Windows Defender.  
+
+  **Padrão**: modo de auditoria
+
+- **Exigir SmartScreen para o Microsoft Edge**  
+  O [navegador/AllowSmartScreen](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen) -Microsoft Edge usa o Windows Defender SmartScreen (ativado) para proteger os usuários contra possíveis golpes de phishing e softwares mal-intencionados por padrão. Por padrão, essa política está habilitada (definida como *Sim*) e, quando habilitada, impede que os usuários desativem o Windows Defender SmartScreen.  Quando a política efetiva de um dispositivo é igual a não configurado, os usuários podem desativar o Windows Defender SmartScreen, o que deixa o dispositivo desprotegido.  
+
+  **Padrão**: Sim
+  
+- **Bloquear acesso a sites mal-intencionados**  
+  [Navegador/PreventSmartScreenPromptOverride](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverride) -por padrão, o Microsoft Edge permite que os usuários ignorem (ignoram) os avisos do Windows Defender SmartScreen sobre sites potencialmente mal-intencionados, permitindo que os usuários continuem no site. Com essa política habilitada (definida como *Sim*), o Microsoft Edge impede que os usuários ignorem os avisos e os bloqueia de continuar para o site.  
+
+  **Padrão**: Sim
+
+- **Bloquear download de arquivo não verificado**  
+  [Navegador/PreventSmartScreenPromptOverrideForFiles](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverrideforfiles) -por padrão, o Microsoft Edge permite que os usuários ignorem (ignoram) os avisos do Windows Defender SmartScreen sobre arquivos potencialmente mal-intencionados, permitindo que eles continuem baixando arquivos não verificados. Com essa política habilitada (definida como *Sim*), os usuários são impedidos de ignorar os avisos e não podem baixar arquivos não verificados.  
+
+  **Padrão**: Sim
 
 ## <a name="windows-hello-for-business"></a>Windows Hello para Empresas  
 
