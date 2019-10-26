@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9d82813f1292c99cf248c56a102503413d2cb8fb
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 000b1d04dd3f520b55b1d33545a8803e23bf8965
+ms.sourcegitcommit: 0d6f323152ec62f7d383891cce12ea0a4289cd8f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507448"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72889582"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>Como monitorizar políticas de proteção de aplicações
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -76,7 +76,7 @@ Pode procurar um único utilizador e ver o estado de conformidade do mesmo. O pa
 - **Última sincronização**: quando o aplicativo foi sincronizado pela última vez com o Intune. 
 
 >[!NOTE]
-> A **última** coluna de sincronização representa o mesmo valor no relatório de status do usuário no console e no relatório de política de proteção de aplicativo [exportável. csv](https://docs.microsoft.com/intune/app-protection-policies-monitor#export-app-protection-activities-to-csv). A diferença é um pequeno atraso na sincronização entre o valor nos dois relatórios. 
+> A **última** coluna de sincronização representa o mesmo valor no relatório de status do usuário no console e no relatório de política de proteção de aplicativo [exportável. csv](https://docs.microsoft.com/intune/app-protection-policies-monitor#export-app-protection-activities). A diferença é um pequeno atraso na sincronização entre o valor nos dois relatórios. 
 >
 > O tempo referenciado na última sincronização é quando o Intune viu a instância do aplicativo pela última vez. Quando um usuário inicia um aplicativo, ele pode notificar o serviço de Proteção de Aplicativo do Intune no tempo de inicialização, dependendo de quando ele fez o último check-in. Consulte [os tempos de intervalo de repetição para check-in de política de proteção de aplicativo](https://docs.microsoft.com/en-us/intune/app-protection-policy-delivery). Se um usuário não tiver usado esse aplicativo em particular no último intervalo de check-in (que geralmente é de 30 minutos para uso ativo) e iniciar o aplicativo, então:
 >

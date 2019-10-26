@@ -5,24 +5,24 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/17/2019
+ms.date: 10/24/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f6f5414d-0e41-42fc-b6cf-e7ad76e1e06d
-ms.reviewer: heenamac
+ms.reviewer: altsou
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 26ed23e4d9d267e37ba5088fa32234c27e3935b6
-ms.sourcegitcommit: 9a2ddcec73b37a118908b63d8e5252835f257618
+ms.openlocfilehash: a19515e859f5e78f7611bbd10088aea5f7c44650
+ms.sourcegitcommit: f12bd2ce10b6241715bae2d2857f33c474287166
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72550813"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72892621"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>Atribuir perfis de utilizador e dispositivo no Microsoft Intune
 
@@ -69,19 +69,28 @@ Em dispositivos Windows 10, você pode adicionar **regras de aplicabilidade** pa
 
 ## <a name="exclude-groups-from-a-profile-assignment"></a>Excluir grupos de uma atribuição de perfis
 
-Os perfis de configuração de dispositivos do Intune permitem-lhe excluir grupos da atribuição de políticas.
+Os perfis de configuração de dispositivo do Intune permitem que você inclua e exclua grupos da atribuição de política.
 
-O Intune não analisa as relações de grupo de usuário para dispositivo. Incluir grupos de utilizadores e excluir grupos de dispositivos poderá não gerar os resultados esperados. Em cenários de grupo de usuários para grupo de usuários e grupos de dispositivos para dispositivos, a exclusão tem precedência sobre a inclusão.
+Como prática recomendada, crie e atribua políticas especificamente para seus grupos de usuários. E criar e atribuir políticas diferentes especificamente para seus grupos de dispositivos. Para obter mais informações sobre grupos, consulte [Adicionar grupos para organizar usuários e dispositivos](../fundamentals/groups-add.md).
 
-Por exemplo, você atribui um perfil de dispositivo ao grupo de usuários **todos os usuários corporativos** , mas exclui membros do grupo de usuários da **equipe de gerenciamento sênior** . Como ambos os grupos são grupos de usuários, todos os membros da **equipe de gerenciamento sênior** são excluídos da política, mesmo que eles sejam membros do grupo **todos os usuários corporativos** .
+Ao atribuir suas políticas, use a tabela a seguir ao incluir e excluir grupos. Uma marca de seleção significa que há suporte para a atribuição:
 
-A inclusão tem precedência sobre a exclusão ao usar grupos mistos, como grupo de usuários a dispositivo, ou grupo de grupos de dispositivos para usuários.
+![Opções com suporte incluem ou exclua grupos de uma atribuição de perfil](./media/device-profile-assign/include-exclude-user-device-groups.png)
 
-Por exemplo, você deseja atribuir um perfil de dispositivo a todos os usuários em sua organização, exceto dispositivos de quiosque. Deve incluir o grupo **Todos os Utilizadores** e excluir o grupo **Todos os Dispositivos**. Neste caso, a política será aplicada a todos os utilizadores e aos dispositivos deles, mesmo que esses dispositivos façam parte do grupo **Todos os Dispositivos**.
+### <a name="what-you-should-know"></a>O que você deve saber
 
-A exclusão contempla apenas os membros diretos do grupo. Não inclui dispositivos associados a um utilizador. No entanto, os dispositivos que não têm um usuário não obtêm a política. Esse comportamento ocorre porque os dispositivos sem usuários não têm nenhuma relação com o grupo **todos os usuários** .
+- A exclusão tem precedência sobre a inclusão nos seguintes cenários de tipo de Grupo:
 
-Se incluir o grupo **Todos os Dispositivos** e excluir **Todos os Utilizadores**, todos os dispositivos irão receber a política. Neste cenário, o objetivo é excluir desta política os dispositivos que tiverem um utilizador associado. No entanto, isto não exclui os dispositivos porque a exclusão só compara membros diretos do grupo.
+  - Incluindo grupos de usuários e excluindo grupos de usuários
+  - Incluindo grupos de dispositivos e excluindo o grupo de dispositivos
+
+  Por exemplo, você atribui um perfil de dispositivo ao grupo de usuários **todos os usuários corporativos** , mas exclui membros do grupo de usuários da **equipe de gerenciamento sênior** . Como ambos os grupos são grupos de usuários, **todos os usuários corporativos** , exceto a **equipe de gerenciamento sênior** , obtêm a política.
+
+- O Intune não avalia as relações de grupo de usuário para dispositivo. Se você atribuir políticas a grupos mistos, os resultados poderão não ser o que você deseja ou esperar.
+
+  Por exemplo, você atribui um perfil de dispositivo ao grupo de usuários **todos os usuários** , mas exclui um grupo de dispositivos de **todos os dispositivos pessoais** . Nessa atribuição de política de grupo mista, **todos os usuários** obtêm a política. A exclusão não se aplica.
+
+  Como resultado, não é recomendável atribuir políticas a grupos mistos.
 
 ## <a name="next-steps"></a>Próximos passos
 

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cdb3623a61c16f69773703b8acdbb8f7c02b4ac4
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: e648d2eff8fd95cd3c995e9cce1bd0c9dfff32da
+ms.sourcegitcommit: 0d6f323152ec62f7d383891cce12ea0a4289cd8f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72504738"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72889526"
 ---
 # <a name="manage-and-use-different-device-management-features-on-windows-holographic-and-hololens-devices-with-intune"></a>Gerenciar e usar diferentes recursos de gerenciamento de dispositivo em dispositivos Windows Holographic e HoloLens com o Intune
 
@@ -80,7 +80,7 @@ O Microsoft Intune pode implementar Aplicações Universais do Windows para disp
 - Para saber mais sobre como desenvolver aplicações do Microsoft HoloLens, veja [Mixed reality apps for Microsoft HoloLens](https://www.microsoft.com/hololens/apps) (Aplicações de realidade mista do Microsoft HoloLens). 
 
 > [!NOTE]
-> Os dispositivos HoloLens com o Windows 10 Holographic for Business 1607 não suportam aplicações licenciadas online da Microsoft Store para Empresas. Para saber mais, veja [Install apps on HoloLens](https://docs.microsoft.com/hololens/hololens-install-apps) (Instalar aplicações no HoloLens).
+> Os dispositivos HoloLens com o Windows 10 Holographic for Business 1607 não suportam aplicações licenciadas online da Microsoft Store para Empresas. Para saber mais, veja [Install apps on HoloLens](/hololens/holographic-store-apps) (Instalar aplicações no HoloLens).
 
 ## <a name="device-actions"></a>Ações do dispositivo
 O Intune tem algumas ações incorporadas que permitem que os administradores de TI realizem diferentes tarefas, localmente no dispositivo ou remotamente através do Intune no portal do Azure. Os utilizadores também podem emitir um comando remoto a partir do Portal da Empresa do Intune para dispositivos pessoais inscritos no Intune.

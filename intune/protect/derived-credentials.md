@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/19/2019
+ms.date: 10/24/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4c42e5ef50f8a5a8514bc43670fc743f42b1b2d6
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 1716da820fd0d9a4b6d1bbc5024440cfb141c5a1
+ms.sourcegitcommit: 0d6f323152ec62f7d383891cce12ea0a4289cd8f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72585929"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72889557"
 ---
 # <a name="use-derived-credentials-in-microsoft-intune"></a>Usar credenciais derivadas no Microsoft Intune
 
@@ -64,7 +64,7 @@ O Intune dá suporte a um emissor de credencial derivada único por locatário. 
 - **Entrust Datacard**: https://www.entrustdatacard.com/
 - **Intercedam**: https://www.intercede.com/
 
-Para obter detalhes importantes sobre como usar os diferentes emissores, consulte as diretrizes para esse emissor, incluindo o fluxo de trabalho do usuário final dos emissores. Para obter mais informações, consulte [Plan for Derived Credentials](#plan-for-derived-credentials) neste artigo.
+Para obter detalhes importantes sobre como usar os diferentes emissores, consulte as diretrizes para esse emissor<!-- , including the issuers end-user workflow-->. Para obter mais informações, consulte [Plan for Derived Credentials](#plan-for-derived-credentials) neste artigo.
 
 > [!IMPORTANT]  
 > Se você excluir um emissor de credencial derivado do seu locatário, as credenciais derivadas que foram configuradas por meio desse emissor deixarão de funcionar.  
@@ -101,11 +101,14 @@ Informações gerais:
 
 ### <a name="2-review-the-end-user-workflow-for-your-chosen-issuer"></a>2) examine o fluxo de trabalho do usuário final para o emissor escolhido
 
-A seguir estão as principais considerações para cada parceiro com suporte e links para esse fluxo de trabalho do usuário final dos emissores.  Familiarize-se com essas informações para garantir que suas políticas e configurações do Intune não bloqueiem usuários e dispositivos de concluir o registro com êxito para uma credencial derivada desse emissor.
+A seguir estão as principais considerações para cada parceiro com suporte<!--  , and links to that issuers end-user workflow -->.  Familiarize-se com essas informações para garantir que suas políticas e configurações do Intune não bloqueiem usuários e dispositivos de concluir o registro com êxito para uma credencial derivada desse emissor.
 
 #### <a name="disa-purebred"></a>DISA purebred
 
-Examine o [fluxo de trabalho do usuário para Disa purebred](https://docs.microsoft.com/intune-user-help/enroll-ios-device-disa-purebred). Os principais requisitos para esse fluxo de trabalho incluem:  
+Entenda o fluxo de trabalho do usuário final e os principais requisitos:  
+<!-- TEMP EDIT - preceeding line to be replaced with the following once user content is ready. 
+Review the [user workflow for DISA Purebred](https://docs.microsoft.com/intune-user-help/enroll-ios-device-disa-purebred). Key requirements for this workflow include:  
+-->
 
 - Os usuários precisam de acesso a um computador ou quiosque, onde podem usar seu cartão inteligente para se autenticarem no emissor. 
 
@@ -120,8 +123,11 @@ Examine o [fluxo de trabalho do usuário para Disa purebred](https://docs.micros
 Para obter informações sobre como obter e configurar o aplicativo DISA purebred, consulte [implantar o aplicativo Disa purebred](#deploy-the-disa-purebred-app) mais adiante neste artigo.  
 
 #### <a name="entrust-datacard"></a>Entrust Datacard  
-Examine o [fluxo de trabalho do usuário para Entrust Datacard](https://docs.microsoft.com/intune-user-help/enroll-ios-device-entrust). Os principais requisitos para esse fluxo de trabalho incluem: 
 
+Entenda o fluxo de trabalho do usuário final e os principais requisitos:  
+<!-- TEMP EDIT - preceeding line to be replaced with the following once user content is ready. 
+Review the [user workflow for Entrust Datacard](https://docs.microsoft.com/intune-user-help/enroll-ios-device-entrust). Key requirements for this workflow include: 
+--> 
 - Os usuários precisam de acesso a um computador ou quiosque, onde podem usar seu cartão inteligente para se autenticarem no emissor. 
 
 - Os dispositivos que serão registrados para uma credencial derivada devem instalar o aplicativo Portal da Empresa do Intune.
@@ -129,8 +135,11 @@ Examine o [fluxo de trabalho do usuário para Entrust Datacard](https://docs.mic
 - Uso de uma câmera de dispositivo para digitalizar um código QR que vincula a solicitação de autenticação à solicitação de credencial derivada do dispositivo móvel.
 
 #### <a name="intercede"></a>Intercedam
-Examine o [fluxo de trabalho do usuário para intercedam](https://docs.microsoft.com/intune-user-help/enroll-ios-device-intercede). Os principais requisitos para esse fluxo de trabalho incluem: 
 
+Entenda o fluxo de trabalho do usuário final e os principais requisitos:  
+<!-- TEMP EDIT - preceeding line to be replaced with the following once user content is ready. 
+Review the [user workflow for Intercede](https://docs.microsoft.com/intune-user-help/enroll-ios-device-intercede). Key requirements for this workflow include: 
+-->
 - Os usuários precisam de acesso a um computador ou quiosque, onde podem usar seu cartão inteligente para se autenticarem no emissor. 
 
 - Os dispositivos que serão registrados para uma credencial derivada devem instalar o aplicativo Portal da Empresa do Intune.
