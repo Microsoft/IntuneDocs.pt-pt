@@ -7,14 +7,28 @@ ms.topic: include
 ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 9965c6e85173ea9958182be43b6c93d9578d534f
-ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
+ms.openlocfilehash: 599c92d0fc00f2475bb93cda884b40862eb38575
+ms.sourcegitcommit: 259462591835f3607392aa6b179882dbac830a89
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72749360"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72999427"
 ---
 Esses avisos fornecem informações importantes que podem ajudá-lo a se preparar para futuras alterações e recursos do Intune.
+
+### <a name="plan-for-change-the-server-side-logging-for-siri-commands-setting-will-be-removed-from-the-intune-console----5468501--"></a>Plano para alteração: a configuração "log do lado do servidor para comandos Siri" será removida do console do Intune <!-- 5468501-->
+
+Planejamos remover a configuração "log do lado do servidor para comandos Siri" no console do Intune com a atualização de novembro para o serviço do Intune. Essa alteração se alinha com a Apple já ter removido a configuração no lado deles.
+
+#### <a name="how-does-this-affect-me"></a>Como é que isto me afeta?
+Quando a atualização de novembro ou 1911 for acumulada em meados de novembro, você verá que essa configuração foi removida do menu restrições de dispositivo (aplicativos internos) para perfis de configuração do iOS, no console do Intune. Ele pode aparecer em suas políticas e no perfil de gerenciamento do dispositivo de destino, mas a configuração não tem nenhum efeito em seu dispositivo. Não prevemos muito impacto na funcionalidade, pois ela atualmente não funciona em dispositivos, mesmo que você o veja no perfil de gerenciamento.
+
+Você pode escolher um dos dois caminhos:
+- Se você quiser excluir essa configuração de suas políticas, poderá ir para o perfil que tem essa configuração, fazer uma pequena edição e salvar a política. A política será recomputada no back-end e a configuração será excluída da sua política.
+- Se você optar por não realizar essa ação, os usuários finais verão essa configuração no perfil de gerenciamento do dispositivo, mas a configuração não terá nenhum efeito.
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>O que posso fazer para me preparar para esta alteração?
+Você pode tomar medidas de acordo com a seção acima ou deixar a política como está. Atualizaremos nossa página de novidades e a documentação quando essa alteração for distribuída.
 
 ### <a name="end-of-support-for-legacy-pc-management"></a>Fim do suporte para o gerenciamento de PC herdado
 

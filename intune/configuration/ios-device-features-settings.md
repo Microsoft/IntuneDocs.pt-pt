@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/08/2019
+ms.date: 10/28/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3baa1972593c5d836c49905b59e9a28932329fbe
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 3325593eed83781ffcb7059a137210e126b9c175
+ms.sourcegitcommit: 259462591835f3607392aa6b179882dbac830a89
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506736"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72980350"
 ---
 # <a name="ios-and-ipados-device-settings-to-use-common-ios-features-in-intune"></a>configurações do dispositivo iOS e iPadOS para usar recursos comuns do iOS no Intune
 
@@ -266,7 +266,7 @@ Esta funcionalidade aplica-se a:
   - **Somente sites específicos** (somente para o navegador da Web do Safari): essas URLs são adicionadas aos indicadores do navegador Safari. O usuário **só** tem permissão para visitar esses sites; nenhum outro site pode ser aberto. Utilize esta opção apenas se souber a lista exata de URLs aos quais os utilizadores podem aceder.
 
     - **URL**: Insira a URL do site que você deseja permitir. Por exemplo, introduza `https://www.contoso.com`.
-    - **Caminho do indicador**: Insira o caminho para armazenar o indicador. Por exemplo, introduza `/Contoso/Business Apps`. Se não incluir um caminho, o marcador será adicionado à pasta de marcadores predefinida no dispositivo.
+    - **Caminho do indicador**: a Apple alterou essa configuração. Todos os indicadores vão para a pasta **sites aprovados** . Os indicadores não entram no caminho do indicador que você inserir.
     - **Título**: Insira um título descritivo para o indicador.
 
     Se você não inserir nenhuma URL, os usuários finais não poderão acessar nenhum site, exceto `microsoft.com`, `microsoft.net` e `apple.com`. Essas URLs são permitidas automaticamente pelo Intune.

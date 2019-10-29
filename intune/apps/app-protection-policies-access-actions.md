@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/27/2019
+ms.date: 10/24/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 62a3f9ee2cec41f14e450158ab8ad02e1a3a2ea2
-ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
+ms.openlocfilehash: 882c542d6a1d981b9924bb33eee40f03b41689f7
+ms.sourcegitcommit: 4bf23327af734a9811d555fbd566c31239e2acd6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72785678"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "72999482"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-conditional-launch-actions-in-intune"></a>Apagar dados seletivamente usando as ações de inicialização condicional da política de proteção de aplicativo no Intune
 
@@ -84,8 +84,11 @@ Para Android, poderá configurar ações para as seguintes definições a partir
 - Versão mínima da correção
 - Fabricantes de dispositivos
 - Atestado de dispositivo SafetyNet
-- Análise de ameaças nas aplicações
+- Exigir verificação de ameaças em aplicativos
+- Versão mínima do Portal da Empresa
 - Nível máximo de ameaça do dispositivo permitido
+
+Usando a **versão mín portal da empresa**, você pode especificar uma versão específica definida mínima do portal da empresa que é imposta em um dispositivo de usuário final. Essa configuração de inicialização condicional permite definir valores para **bloquear o acesso**, **apagar dados**e **avisar** como ações possíveis quando cada valor não é atendido. Os formatos possíveis para esse valor seguem o padrão *[Major]. [ Minor]* , *[principal]. [ Secundária]. [Build]* ou *[Major]. [ Secundária]. [Build]. [Revisão]* . Considerando que alguns usuários finais podem não preferir uma atualização forçada de aplicativos no local, a opção ' WARN ' pode ser ideal ao definir essa configuração. O Google Play Store faz um bom trabalho de enviar apenas os bytes Delta para atualizações do aplicativo, mas isso ainda pode ser uma grande quantidade de dados que o usuário talvez não queira utilizar se eles estiverem em dados no momento da atualização. Forçar uma atualização e, portanto, baixar um aplicativo atualizado pode resultar em encargos de dados inesperados no momento da atualização. A configuração de **versão mín portal da empresa** , se configurada, afetará qualquer usuário final que obtém a versão 5.0.4560.0 do portal da empresa e quaisquer versões futuras do portal da empresa. Essa configuração não terá nenhum efeito sobre os usuários que usam uma versão do Portal da Empresa mais antiga do que a versão com a qual esse recurso é lançado. Os usuários finais que usam as atualizações automáticas do aplicativo em seu dispositivo provavelmente não verão nenhuma caixa de diálogo desse recurso, Considerando que eles provavelmente estarão na versão mais recente do Portal da Empresa. Essa configuração é Android somente com proteção de aplicativo para dispositivos registrados e não registrados.
 
 Para utilizar a definição **Fabricantes de dispositivos**, introduza uma lista de fabricantes de dispositivos Android separados por ponto e vírgula. Pode encontrar o fabricante de um dispositivo Android nas definições do dispositivo.<br>
 Entrada de exemplo: *Fabricante A;Fabricante B* 

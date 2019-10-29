@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/23/2019
+ms.date: 10/28/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5e88aa93e3b3e21f16271049f66bbdc4b927383b
-ms.sourcegitcommit: 4f979ba7030e72d820113fe23ac8521ddb2433bd
+ms.openlocfilehash: 8d9bbe916314d5571dccf3c073f735c6448226e6
+ms.sourcegitcommit: 4bf23327af734a9811d555fbd566c31239e2acd6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72915802"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "72999500"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 
@@ -54,10 +54,33 @@ Saiba mais sobre as novidades todas as semanas no Microsoft Intune. Você també
 -->  
 
 
-<!-- ########################## -->
+## <a name="week-of-october-28-2019"></a>Semana de 28 de outubro de 2019
 
+### <a name="app-management"></a>Gestão de aplicações 
+
+#### <a name="dark-mode-for-ios-company-portal----4911422---"></a>Modo escuro para iOS Portal da Empresa <!-- 4911422 -->
+O modo escuro está disponível para o Portal da Empresa do iOS. Os usuários podem baixar aplicativos da empresa, gerenciar seus dispositivos e obter suporte de ti no esquema de cores de sua escolha com base nas configurações do dispositivo. O Portal da Empresa do iOS corresponderá automaticamente às configurações do dispositivo do usuário final para o modo escuro ou leve. Para obter mais informações, consulte [introdução ao modo escuro no Microsoft Intune portal da empresa para IOS](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Introducing-dark-mode-on-Microsoft-Intune-Company-Portal-for-iOS/ba-p/918453). Para obter mais informações sobre o Portal da Empresa do iOS, consulte [como configurar o aplicativo de portal da empresa de Microsoft Intune](~/apps/company-portal-app.md).
+
+#### <a name="android-company-portal-enforced-minimum-app-version----2378776---"></a>O Android Portal da Empresa a versão mínima do aplicativo imposta <!-- 2378776 -->
+Usando a configuração de **versão mín portal da empresa** de uma política de proteção de aplicativo, você pode especificar uma versão específica mínima definida do portal da empresa que é imposta em um dispositivo de usuário final. Essa configuração de inicialização condicional permite **bloquear o acesso**, **apagar dados**ou **avisar** como ações possíveis quando o valor não é atendido. Os formatos possíveis para esse valor seguem o padrão *[Major]. [ Minor]* , *[principal]. [ Secundária]. [Build]* ou *[Major]. [ Secundária]. [Build]. [Revisão]* . 
+
+A configuração de **versão mín portal da empresa** , se configurada, afetará qualquer usuário final que obtém a versão 5.0.4560.0 do portal da empresa e quaisquer versões futuras do portal da empresa. Essa configuração não terá nenhum efeito sobre os usuários que usam uma versão do Portal da Empresa mais antiga do que a versão com a qual esse recurso é lançado. Os usuários finais que usam as atualizações automáticas do aplicativo em seu dispositivo provavelmente não verão nenhuma caixa de diálogo desse recurso, Considerando que eles provavelmente estarão na versão mais recente do Portal da Empresa. Essa configuração é Android somente com proteção de aplicativo para dispositivos registrados e não registrados. Para obter mais informações, consulte [configurações de política de proteção de aplicativo Android – inicialização condicional](~/apps/app-protection-policy-settings-android.md#conditional-launch).
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="device-management"></a>Gestão de dispositivos 
+#### <a name="intune-supports-ios-11-and-later----4665324-idready-wnready---"></a>O Intune dá suporte ao iOS 11 e posterior <!-- 4665324 idready wnready -->
+O registro e o Portal da Empresa do Intune agora dão suporte ao iOS versões 11 e posteriores. Não há suporte para versões mais antigas.
+
+### <a name="monitor-and-troubleshoot"></a>Monitorizar e resolver problemas
+
+#### <a name="updated-support-experience------5012398---"></a>Experiência de suporte atualizada   <!-- 5012398 -->
+
+A experiência no console para [obter ajuda e suporte para o Intune](get-support.md) é atualizada e simplificada.  Melhoramos a pesquisa no console e os comentários para problemas comuns e o fluxo de trabalho que você usa para entrar em contato com o suporte. Ao abrir um problema de suporte, você verá estimativas em tempo real de quando você pode esperar um retorno de chamada ou resposta por email, e os clientes de suporte Premier e unificado podem especificar facilmente uma severidade para seu problema, para ajudar a obter suporte mais rapidamente.
+
+<!-- ########################## -->
 ## <a name="week-of-october-21-2019"></a>Semana de 21 de outubro de 2019
 
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="microsoft-365-device-management"></a>Gerenciamento de dispositivos Microsoft 365
 
 #### <a name="improved-administration-experience-in-microsoft-365-device-management"></a>Experiência de administração aprimorada no gerenciamento de dispositivos Microsoft 365
@@ -70,10 +93,11 @@ Uma experiência de administração atualizada e simplificada já está disponí
 
 Para obter mais informações sobre esses aprimoramentos, consulte a [postagem no blog Enterprise Mobility + Security](https://go.microsoft.com/fwlink/?linkid=2109094) no site da comunidade de tecnologia da Microsoft.
 
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="app-management"></a>Gestão de aplicações
 
 #### <a name="add-mobile-threat-defense-apps-to-unenrolled-devices----3005337---"></a>Adicionar aplicativos de defesa contra ameaças móveis a dispositivos não registrados <!-- 3005337 -->
-Você pode criar uma política de proteção de aplicativo do Intune que pode bloquear ou Apagar seletivamente os dados corporativos dos usuários com base na integridade de um dispositivo. A integridade do dispositivo é determinada usando sua solução de MTD (defesa contra ameaças móveis) escolhida. Essa funcionalidade existe hoje com dispositivos registrados no Intune como uma configuração de conformidade do dispositivo. Com esse novo recurso, ampliamos a detecção de ameaças de um fornecedor de defesa contra ameaças móveis para funcionar em dispositivos não registrados. Para obter mais informações, consulte [criar política de proteção de aplicativo de defesa contra ameaças móveis com o Intune](~/protect/mtd-app-protection-policy.md).
+Você pode criar uma política de proteção de aplicativo do Intune que pode bloquear ou Apagar seletivamente os dados corporativos dos usuários com base na integridade de um dispositivo. A integridade do dispositivo é determinada usando sua solução de MTD (defesa contra ameaças móveis) escolhida. Essa funcionalidade existe hoje com dispositivos registrados no Intune como uma configuração de conformidade do dispositivo. Com esse novo recurso, ampliamos a detecção de ameaças de um fornecedor de defesa contra ameaças móveis para funcionar em dispositivos não registrados. No Android, esse recurso requer as Portal da Empresa mais recentes no dispositivo. No iOS, esse recurso estará disponível para uso quando os aplicativos integrarem o SDK do Intune mais recente (v 12.0.15 +). Atualizaremos o tópico What ' s New quando o primeiro aplicativo adotar o SDK mais recente do Intune. Os aplicativos restantes ficarão disponíveis em uma base contínua. Para obter mais informações, consulte [criar política de proteção de aplicativo de defesa contra ameaças móveis com o Intune](~/protect/mtd-app-protection-policy.md).
 
 ### <a name="device-configuration"></a>Configuração do dispositivo
 
@@ -93,6 +117,8 @@ Agora você pode optar por mostrar apenas a página de status de registro em dis
 
 Para ver a nova alternância, escolha **Intune** > **registro de dispositivo** > **registro do Windows** > **página status do registro** > **Criar perfil** > **configurações** > **apenas mostrar a página para dispositivos provisionados pela experiência inicial (OOBE)** .
 
+
+<!-- ########################## -->
 ## <a name="week-of-october-14-2019"></a>Semana de 14 de outubro de 2019
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
