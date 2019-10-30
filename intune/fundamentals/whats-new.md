@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8d9bbe916314d5571dccf3c073f735c6448226e6
-ms.sourcegitcommit: 4bf23327af734a9811d555fbd566c31239e2acd6
+ms.openlocfilehash: 0faa7c7ec70ce7647a6a91ae732d8b15878964b7
+ms.sourcegitcommit: 807ab3e35f4d9ffa18655410b7d61e5e772ab348
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "72999500"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73057631"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 
@@ -67,8 +67,27 @@ Usando a configuração de **versão mín portal da empresa** de uma política d
 A configuração de **versão mín portal da empresa** , se configurada, afetará qualquer usuário final que obtém a versão 5.0.4560.0 do portal da empresa e quaisquer versões futuras do portal da empresa. Essa configuração não terá nenhum efeito sobre os usuários que usam uma versão do Portal da Empresa mais antiga do que a versão com a qual esse recurso é lançado. Os usuários finais que usam as atualizações automáticas do aplicativo em seu dispositivo provavelmente não verão nenhuma caixa de diálogo desse recurso, Considerando que eles provavelmente estarão na versão mais recente do Portal da Empresa. Essa configuração é Android somente com proteção de aplicativo para dispositivos registrados e não registrados. Para obter mais informações, consulte [configurações de política de proteção de aplicativo Android – inicialização condicional](~/apps/app-protection-policy-settings-android.md#conditional-launch).
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
-### <a name="device-management"></a>Gestão de dispositivos 
-#### <a name="intune-supports-ios-11-and-later----4665324-idready-wnready---"></a>O Intune dá suporte ao iOS 11 e posterior <!-- 4665324 idready wnready -->
+
+### <a name="microsoft-365-device-management"></a>Gerenciamento de dispositivos Microsoft 365
+
+#### <a name="introducing-endpoint-security-node-in-microsoft-365-device-management-------5630102---"></a>Introdução ao nó do Endpoint Security no gerenciamento de dispositivos Microsoft 365    <!-- 5630102 -->
+
+O nó do **Endpoint Security** agora está disponível em Microsoft 365 espaço de trabalho especialista em gerenciamento de dispositivos em https://devicemanagement.microsoft.com, que agrupa os recursos para proteger pontos de extremidade, como:
+
+- Linhas de base de segurança: grupo pré-configurado de configurações que ajudam a aplicar um grupo conhecido de configurações e valores padrão que são recomendados pela Microsoft.
+
+- Tarefas de segurança: Tire proveito do TVM (gerenciamento de ameaças e vulnerabilidades) do Microsoft defender ATPs e use o Intune para corrigir os pontos fracos do ponto de extremidade.
+
+- Microsoft defender ATP: proteção de ameaças avançadas (ATP) integrada do Microsoft defender para ajudar a evitar violações de segurança.
+
+Essas configurações continuarão a ser acessadas de outros nós aplicáveis, como dispositivos, e o estado atual configurado será o mesmo, independentemente de onde você acessar e habilitar esses recursos.
+
+Para obter mais informações sobre esses aprimoramentos, consulte a [postagem do blog de sucesso do cliente do Intune](https://aka.ms/Endpoint_security_node) no site da comunidade de tecnologia da Microsoft.
+
+### <a name="device-management"></a>Gestão de dispositivos
+
+#### <a name="intune-supports-ios-11-and-later----4665324----"></a>O Intune dá suporte ao iOS 11 e posterior <!-- 4665324  -->
+
 O registro e o Portal da Empresa do Intune agora dão suporte ao iOS versões 11 e posteriores. Não há suporte para versões mais antigas.
 
 ### <a name="monitor-and-troubleshoot"></a>Monitorizar e resolver problemas

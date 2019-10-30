@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aecbcd91eef668ba2a92acfc9b42e6c68df3672a
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 34a4c8adeef7e8b28c90ad38579f0f9ac7c4784d
+ms.sourcegitcommit: 807ab3e35f4d9ffa18655410b7d61e5e772ab348
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509413"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73057528"
 ---
 # <a name="enable-lost-mode-on-ios-devices-with-intune"></a>Ativar o Modo Perdido em dispositivos iOS com o Intune
 
@@ -43,8 +43,10 @@ Esta funcionalidade não é suportada para os seguintes sistemas:
 
 1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. Selecione **Dispositivos** e, em seguida, selecione **Todos os dispositivos**.
-4. Na lista de dispositivos que gere, selecione um dispositivo iOS e selecione **…Mais**. Em seguida, selecione a ação remota **Modo perdido**.
-5. No **Modo perdido**, ative esta funcionalidade. Em seguida, introduza a mensagem a apresentar e um número de telefone de contacto.
+4. Na lista de dispositivos que você gerencia, escolha um dispositivo iOS e, em seguida, escolha o **modo perdido (somente supervisionado)** .
+5. Em **modo perdido**, selecione **habilitar**.
+6. Na **mensagem a ser exibida na tela de bloqueio**, digite uma mensagem a ser exibida na tela de bloqueio do dispositivo.
+7. Opcionalmente, insira um número de telefone na caixa **número de telefone a ser exibido** .
 6. Selecione **OK** para guardar as alterações.
 
 Ao ativar o modo perdido, bloqueia qualquer utilização do dispositivo. O utilizador final não pode aceder ao dispositivo até desativar o modo perdido. Quando o modo perdido estiver ativado, utilize a ação [Localizar dispositivo](device-locate.md) para localizá-lo.

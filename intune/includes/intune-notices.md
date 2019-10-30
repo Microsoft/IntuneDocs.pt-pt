@@ -7,12 +7,12 @@ ms.topic: include
 ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 599c92d0fc00f2475bb93cda884b40862eb38575
-ms.sourcegitcommit: 259462591835f3607392aa6b179882dbac830a89
+ms.openlocfilehash: a2675b1b601261e673923ab5e3ac41d0f3d83264
+ms.sourcegitcommit: 71b0cd7b81178e2f9e9f80830fa9a7985781628b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72999427"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73057323"
 ---
 Esses avisos fornecem informações importantes que podem ajudá-lo a se preparar para futuras alterações e recursos do Intune.
 
@@ -85,8 +85,8 @@ Você não precisa realizar nenhuma ação, mas pode considerar atualizar suas d
 #### <a name="additional-information"></a>Informações adicionais 
 https://aka.ms/intune_fullscreen
 
-### <a name="plan-for-change-intune-app-sdk-and-app-protection-policies-for-android-moving-to-support-android-50-and-higher-in-october---4911065---"></a>Plano para alteração: SDK de aplicativo do Intune e políticas de proteção do aplicativo para Android migrando para dar suporte ao Android 5,0 e superior em outubro <!--4911065 -->
-O Intune mudará para oferecer suporte a Android 5. x (pirulito) e superior em outubro. Atualize todos os aplicativos encapsulados com o SDK de aplicativos do Intune mais recente e atualize seus dispositivos.
+### <a name="plan-for-change-intune-app-sdk-and-app-protection-policies-for-android-moving-to-support-android-50-and-higher-in-an-upcoming-release---4911065---"></a>Plano para alteração: SDK de aplicativo do Intune e políticas de proteção do aplicativo para Android migrando para suporte para Android 5,0 e posterior em uma versão futura <!--4911065 -->
+O Intune mudará para oferecer suporte a Android 5. x (pirulito) e superior em uma versão futura. Atualize todos os aplicativos encapsulados com o SDK de aplicativos do Intune mais recente e atualize seus dispositivos.
 
 #### <a name="how-does-this-affect-me"></a>Como é que isto me afeta?
 Se você não estiver usando o ou planeja usar o SDK ou o aplicativo para Android, essa alteração não afetará você. Se você estiver usando o SDK de aplicativos do Intune, certifique-se de atualizar para a versão mais recente e também atualizar seus dispositivos para Android 5. x e superior. Se você não atualizar, os aplicativos não receberão atualizações, e a qualidade da sua experiência diminuirá ao longo do tempo.
