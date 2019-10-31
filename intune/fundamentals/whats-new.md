@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0faa7c7ec70ce7647a6a91ae732d8b15878964b7
-ms.sourcegitcommit: 807ab3e35f4d9ffa18655410b7d61e5e772ab348
+ms.openlocfilehash: 591a9af597fc64509a4a7dd19d83d25948a6118e
+ms.sourcegitcommit: d1b36501186e867355843ddd67c795ade800b76a
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73057631"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73182943"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 
@@ -57,6 +57,15 @@ Saiba mais sobre as novidades todas as semanas no Microsoft Intune. Você també
 ## <a name="week-of-october-28-2019"></a>Semana de 28 de outubro de 2019
 
 ### <a name="app-management"></a>Gestão de aplicações 
+
+#### <a name="win32-apps-on-windows-10-s-mode-devices----3747604---"></a>Aplicativos Win32 em dispositivos do modo Windows 10 S <!-- 3747604 --> 
+Você pode instalar e executar aplicativos Win32 em dispositivos gerenciados do modo Windows 10 S. Para fazer isso, você pode criar uma ou mais políticas complementares para o modo S usando as ferramentas do PowerShell do Windows Defender Application Control (WDAC). Assine as políticas complementares com o portal de assinatura do Device Guard e, em seguida, carregue e distribua as políticas por meio do Intune. No Intune, você encontrará esse recurso selecionando **aplicativos cliente** > **as políticas complementares do Windows 10 S**. Para obter mais informações, consulte [habilitar aplicativos Win32 em dispositivos em modo S](~/apps/apps-win32-s-mode.md).
+
+#### <a name="set-win32-app-availability-based-on-a-date-and-time----3510685---"></a>Definir a disponibilidade do aplicativo Win32 com base em uma data e hora <!-- 3510685 -->
+Como administrador, você pode configurar a hora de início e a hora do prazo para um aplicativo Win32 necessário. Na hora de início, a extensão de gerenciamento do Intune iniciará o download do conteúdo do aplicativo e o armazenará em cache. O aplicativo será instalado na hora do prazo. Para aplicativos disponíveis, a hora de início será ditada quando o aplicativo estiver visível no Portal da Empresa. Para obter mais informações, consulte [Gerenciamento de aplicativos Win32 do Intune](~/apps/apps-win32-app-management.md#set-win32-app-availability-and-notifications).
+
+#### <a name="require-device-restart-based-on-grace-period-after-win32-app-install----3136567---"></a>Exigir reinicialização do dispositivo com base no período de carência após a instalação do aplicativo Win32 <!-- 3136567 -->
+Você pode exigir que um dispositivo seja reiniciado depois que um aplicativo Win32 for instalado com êxito. Para obter mais informações, consulte [Gerenciamento de aplicativo Win32-configurar detalhes de instalação do aplicativo](~/apps/apps-win32-app-management.md#step-4-configure-app-installation-details).
 
 #### <a name="dark-mode-for-ios-company-portal----4911422---"></a>Modo escuro para iOS Portal da Empresa <!-- 4911422 -->
 O modo escuro está disponível para o Portal da Empresa do iOS. Os usuários podem baixar aplicativos da empresa, gerenciar seus dispositivos e obter suporte de ti no esquema de cores de sua escolha com base nas configurações do dispositivo. O Portal da Empresa do iOS corresponderá automaticamente às configurações do dispositivo do usuário final para o modo escuro ou leve. Para obter mais informações, consulte [introdução ao modo escuro no Microsoft Intune portal da empresa para IOS](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Introducing-dark-mode-on-Microsoft-Intune-Company-Portal-for-iOS/ba-p/918453). Para obter mais informações sobre o Portal da Empresa do iOS, consulte [como configurar o aplicativo de portal da empresa de Microsoft Intune](~/apps/company-portal-app.md).
@@ -148,9 +157,6 @@ Para instalações de aplicativos disponíveis em dispositivos Android Enterpris
 
 #### <a name="microsoft-edge-version-77-and-later-for-windows-10-and-macos-public-preview----3872025-4678761----"></a>Microsoft Edge versão 77 e posterior para Windows 10 e macOS (visualização pública) <!-- 3872025, 4678761  -->
 O Microsoft Edge versão 77 e posterior estará disponível para implantação em computadores que executam o Windows 10 e o macOS. 
-
->[!NOTE]
->A distribuição para este recurso foi atrasada até o momento deste mês.
 
 A visualização pública oferece canais de **desenvolvimento** e **beta** para o Windows 10 e um canal **beta** para MacOS. A implantação está em inglês (apenas EN), mas os usuários finais podem alterar o idioma de exibição no navegador em **configurações**  > **idiomas**. O Microsoft Edge é um aplicativo Win32 instalado no contexto do sistema e em arquiteturas semelhantes (aplicativo x86 no sistema operacional x86 e aplicativo x64 no sistema operacional x64). Além disso, as atualizações automáticas do navegador estão **ativadas** por padrão e o Microsoft Edge não pode ser desinstalado. Para obter mais informações, consulte [Adicionar o Microsoft Edge para Windows 10 a](~/apps/apps-windows-edge.md) documentação do Microsoft Intune e [do Microsoft Edge](https://go.microsoft.com/fwlink/?linkid=2103823).
 

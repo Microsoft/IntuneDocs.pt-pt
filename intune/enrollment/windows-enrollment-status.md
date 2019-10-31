@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d2a6b427552e545421e329b900833c889e67bf35
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: d69bd040929da08d7d23db764c5b01f6aca6a9ea
+ms.sourcegitcommit: c38a856725993a4473ada75e669a57f75ab376f8
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503035"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73143167"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>Configurar uma página de status de registro
  
@@ -55,7 +55,8 @@ Você também pode definir a ordem de prioridade de cada perfil para considerar 
 <tr><td>Permitir que os usuários redefinam o dispositivo se ocorrer um erro de instalação<td>Um botão <b>Redefinir dispositivo</b> será exibido se houver uma falha na instalação.<td>O botão <b>Redefinir dispositivo</b> não será exibido se houver uma falha na instalação.
 <tr><td>Permitir que os usuários usem o dispositivo se ocorrer um erro de instalação<td>Um botão <b>continuar qualquer assim</b> será exibido se houver uma falha na instalação.<td>O botão <b>continuar mesmo assim</b> não será exibido se houver uma falha na instalação.
 <tr><td>Mostrar erro de tempo limite quando a instalação demorar mais do que o número especificado de minutos<td colspan="2">Especifique o número de minutos a aguardar a conclusão da instalação. Um valor padrão de 60 minutos é inserido.
-<tr><td>Mostrar mensagem personalizada quando ocorrer um erro<td>Uma caixa de texto é fornecida onde você pode especificar uma mensagem personalizada para exibir se ocorrer um erro de instalação.<td>A mensagem padrão é exibida: <br><b>Installation excedeu o limite de tempo definido por sua organização. Tente novamente ou contate a pessoa de suporte de ti para obter ajuda. <b> @ no__t-1<tr><td>Permitir que os usuários coletem logs sobre erros de instalação<td>Se houver um erro de instalação, um botão <b>coletar logs</b> será exibido. <br>Se o usuário clicar nesse botão, será solicitado a escolher um local para salvar o arquivo de log <b>MDMDiagReport. cab</b><td>O botão <b>coletar logs</b> não será exibido se houver um erro de instalação.
+<tr><td>Mostrar mensagem personalizada quando ocorrer um erro<td>Uma caixa de texto é fornecida onde você pode especificar uma mensagem personalizada para exibir se ocorrer um erro de instalação.<td>A mensagem padrão é exibida: <br><b>Installation excedeu o limite de tempo definido por sua organização. Tente novamente ou contate a pessoa de suporte de ti para obter ajuda.<b>
+<tr><td>Permitir que os usuários coletem logs sobre erros de instalação<td>Se houver um erro de instalação, um botão <b>coletar logs</b> será exibido. <br>Se o usuário clicar nesse botão, será solicitado a escolher um local para salvar o arquivo de log <b>MDMDiagReport. cab</b><td>O botão <b>coletar logs</b> não será exibido se houver um erro de instalação.
 <tr><td>Bloquear o uso do dispositivo até que esses aplicativos necessários sejam instalados se eles forem atribuídos ao usuário/dispositivo<td colspan="2">Escolha <b>tudo</b> ou <b>selecionado</b>. <br><br>Se <b>selecionado</b> for escolhido, um botão <b>selecionar aplicativos</b> será exibido, permitindo que você escolha quais aplicativos devem ser instalados antes de habilitar o dispositivo.
 </table>
 
@@ -70,7 +71,7 @@ Para ativar a página status do registro, siga as etapas abaixo.
 
 ## <a name="create-enrollment-status-page-profile-and-assign-to-a-group"></a>Criar perfil de página de status de registro e atribuir a um grupo
 
-1. No [Intune](https://aka.ms/intuneportal), escolha **registro de dispositivo**@no__t-**2 registro do Windows** > **página status de registro** > **Criar perfil**.
+1. No [Intune](https://aka.ms/intuneportal), escolha **registro de dispositivo** > **registro do Windows** > **página status do registro** > **Criar perfil**.
 2. Forneça um **Nome** e uma **Descrição**.
 3. Selecione **Criar**.
 4. Selecione o novo perfil na lista **Página de Estado de Inscrição**.
@@ -190,7 +191,6 @@ Abaixo estão os problemas conhecidos.
 - Desabilitar o perfil ESP não remove a política ESP de dispositivos e os usuários ainda obtêm o ESP ao fazer logon no dispositivo pela primeira vez. A política não é removida quando o perfil ESP está desabilitado. Você deve implantar o OMA-URI para desabilitar o ESP. Consulte acima para obter instruções sobre como desabilitar o ESP usando o OMA-URI. 
 - Uma reinicialização pendente sempre causará um tempo limite. O tempo limite ocorre porque o dispositivo precisa ser reinicializado. A reinicialização é necessária para permitir que o item rastreado na página de status de registro seja concluído. Uma reinicialização fará com que a página status do registro saia e depois da reinicialização o dispositivo não entrará durante a configuração da conta após a reinicialização  Considere não exigir uma reinicialização com a instalação do aplicativo. 
 - Uma reinicialização durante a instalação do dispositivo forçará o usuário a inserir suas credenciais antes de fazer a transição para a fase de configuração de conta. As credenciais do usuário não são preservadas durante a reinicialização. Faça com que o usuário insira suas credenciais e a página status do registro possa continuar. 
-- Os certificados SCEP com as políticas do Windows Hello para empresas causarão tempo limite porque o usuário não pode concluir a configuração do PIN de saudação para permitir a competição da instalação do certificado SCEP.  Nenhuma solução alternativa. A correção ETA é o verão 2019. 
 - A página de status de registro sempre atingirá o tempo limite durante uma adição de registro de conta corporativa e de estudante em versões do Windows 10 inferiores a 1903. A página de status de registro aguarda a conclusão do registro do Azure AD. O problema é corrigido no Windows 10 versão 1903 e mais recente.  
 - A implantação do AutoPilot do Azure AD híbrido com ESP demora mais do que a duração do tempo limite definida no perfil ESP. Em implantações híbridas do Azure AD Pilot, o ESP levará 40 minutos por mais tempo do que o valor definido no perfil ESP. Esse atraso dá tempo para o AD Connector local criar o novo registro de dispositivo para o Azure AD. 
 - A página de logon do Windows não é preenchida previamente com o nome de usuário no modo orientado por usuários do AutoPilot. Se houver uma reinicialização durante a fase de instalação do dispositivo do ESP:

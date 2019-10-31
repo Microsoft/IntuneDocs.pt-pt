@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 48cca2c894067439943bdfff33b953463e513490
-ms.sourcegitcommit: e9cf372711ff186ed468b01a9204631a139bd8e5
+ms.openlocfilehash: 3d0cff4ad624d35843f3388535b60549d1893eeb
+ms.sourcegitcommit: c38a856725993a4473ada75e669a57f75ab376f8
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72776918"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73143152"
 ---
 # <a name="macos-device-feature-settings-in-intune"></a>configurações de recurso de dispositivo macOS no Intune
 
@@ -129,7 +129,7 @@ Esta funcionalidade aplica-se a:
 
 ### <a name="settings-apply-to-all-enrollment-types"></a>As configurações se aplicam a: todos os tipos de registro 
 
-- **Tipo de extensão do aplicativo SSO**: escolha o tipo de extensão do aplicativo de SSO de credencial. Ao salvar o perfil de extensão do aplicativo SSO, você não pode alterar o tipo de extensão do aplicativo SSO. As opções são:
+- **Tipo de extensão do aplicativo SSO**: escolha o tipo de extensão do aplicativo de SSO de credencial. As opções são:
 
   - **Não configurado**: as extensões de aplicativo não são usadas. Para desabilitar uma extensão de aplicativo SSO, alterne o tipo de extensão do aplicativo SSO de **Kerberos** ou **credencial** para **não configurado**.
   - **Credencial**: Use uma extensão de aplicativo de credencial genérica e personalizável para usar o SSO. Certifique-se de que você conhece a ID da extensão e a ID da equipe para a extensão do aplicativo de SSO da sua organização.  
@@ -143,7 +143,7 @@ Esta funcionalidade aplica-se a:
 
   [Localize sua ID de equipe](https://help.apple.com/developer-account/#/dev55c3c710c) (abre o site da Apple) tem mais informações.
 
-- **Realm**: Insira o nome do seu realm Kerberos. O nome do Realm deve estar em letras maiúsculas, como `CONTOSO.COM`. Normalmente, o nome do realm é o mesmo que o nome de domínio DNS, mas em letras maiúsculas.
+- **Realm**: Insira o nome do seu Realm de autenticação. O nome do Realm deve estar em letras maiúsculas, como `CONTOSO.COM`. Normalmente, o nome do realm é o mesmo que o nome de domínio DNS, mas em letras maiúsculas.
 - **Domínios**: Insira os nomes de domínio ou host dos sites que podem autenticar por meio do SSO. Por exemplo, se seu site for `mysite.contoso.com`, `mysite` será o nome do host e `contoso.com` será o nome de domínio. Quando os usuários se conectam a qualquer um desses sites, a extensão do aplicativo trata do desafio de autenticação. Essa autenticação permite que os usuários usem ID de face, Touch ID ou Apple pincode/senha para entrar.
 
   - Todos os domínios em sua extensão de aplicativo de logon único os perfis do Intune devem ser exclusivos. Não é possível repetir um domínio em nenhum perfil de extensão de aplicativo de logon, mesmo se você estiver usando tipos diferentes de extensões de aplicativo SSO.

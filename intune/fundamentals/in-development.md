@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4beb9c841cb2f4a5b7198fe031caa67da9e28842
-ms.sourcegitcommit: 4bf23327af734a9811d555fbd566c31239e2acd6
+ms.openlocfilehash: 3720b0b9a67f0c3462993feef4162ef35f7f3f92
+ms.sourcegitcommit: d1b36501186e867355843ddd67c795ade800b76a
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "72999442"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73182934"
 ---
 # <a name="in-development-for-microsoft-intune---november-2019"></a>Em desenvolvimento para Microsoft Intune – novembro de 2019
 
@@ -66,9 +66,6 @@ O Intune dará suporte a configurações personalizadas, permitindo que você ad
 
 ### <a name="assignment-type-value-in-windows-company-portal----5459950----"></a>Valor do tipo de atribuição no Windows Portal da Empresa <!-- 5459950  -->
 A página **aplicativos instalados** do aplicativo Windows portal da empresa será atualizada. A coluna **tipo de atribuição** da página **aplicativos instalados** foi atualizada para ser chamada "exigida pela sua organização". Os valores possíveis são **Sim** ou **não** para designar aplicativos necessários versus disponíveis. Essa alteração está sendo feita em resposta a alguma confusão do usuário final. Para obter mais informações sobre o portal da empresa do Windows, consulte [como configurar o aplicativo de portal da empresa de Microsoft Intune](~/apps/company-portal-app.md).
-
-### <a name="apply-dark-mode-in-ios-company-portal----4911422----"></a>Aplicar modo escuro no Portal da Empresa do iOS <!-- 4911422  -->
-O modo escuro está planejado para Portal da Empresa do iOS. Você poderá baixar aplicativos da empresa, gerenciar seus dispositivos e obter suporte de ti no esquema de cores de sua escolha. Para obter mais informações sobre Portal da Empresa do iOS, consulte [como configurar o aplicativo de portal da empresa de Microsoft Intune](../apps/company-portal-app.md).
 
 ### <a name="run-win32-apps-on-windows-10-s-mode-devices----3747604----"></a>Executar aplicativos Win32 em dispositivos de modo S do Windows 10 <!-- 3747604  --> 
 Você poderá instalar e executar aplicativos Win32 em dispositivos que são gerenciados no modo Windows 10 S. Crie uma ou mais políticas complementares para o modo S usando as ferramentas do PowerShell do Windows Defender Application Control (WDAC). Use o portal de assinatura do Device Guard para assinar as políticas complementares. Em seguida, carregue e distribua as políticas por meio do Intune. 

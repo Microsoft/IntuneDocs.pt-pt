@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/28/2019
+ms.date: 10/30/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 86ea53ef2def05f622ef49fa37965d3f93d796d9
-ms.sourcegitcommit: 4bf23327af734a9811d555fbd566c31239e2acd6
+ms.openlocfilehash: 186ab336d90bf8f2b21d273dbec1ccde67fb0d87
+ms.sourcegitcommit: c38a856725993a4473ada75e669a57f75ab376f8
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "72999713"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73143264"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Como obter suporte para o Microsoft Intune
 
@@ -42,9 +42,16 @@ A experiência da Ajuda e suporte do Intune está disponível no [portal de Gest
 
 A experiência de *ajuda e suporte* é semelhante à experiência vista no [centro de administração Microsoft 365](https://admin.microsoft.com/)e substitui a *ajuda + suporte*anterior, que permanece em vigor para outros serviços no Azure.
 
-Para aceder a Ajuda e suporte, utilize as seguintes opções:
+### <a name="options-to-access-help-and-support"></a>Opções para acessar ajuda e suporte 
 
-- **Dashboard de Gestão de Dispositivos:**
+- **No portal do Azure:**
+
+  - Selecione **ajuda e suporte** em qualquer folha ou página do Intune.
+
+  > [!NOTE]  
+  > Se sua instância do Intune estiver hospedada na nuvem privada para o governo, também conhecida como uma nuvem soberanas como Azure governamental, consulte [suporte do Intune para nuvem privada para o governo](#intune-support-for-private-cloud-for-government), mais adiante neste artigo. A experiência de *ajuda e suporte* do Intune não estará disponível na nuvem privada para o governo até o próximo ano.
+
+- **No painel de gerenciamento de dispositivos:**
   - Depois de selecionar uma área de recurso para o Intune, selecione a opção **ajuda e suporte**.
   - Em qualquer nó no portal de gerenciamento de dispositivos, selecione o **?** no canto superior direito do portal e, em seguida, use a lista suspensa para selecionar o serviço com o qual deseja obter ajuda. O **?** no portal de gerenciamento de dispositivos dá suporte a vários serviços e você deve selecionar o serviço específico para o qual deseja obter assistência.  
 
@@ -56,11 +63,7 @@ Para aceder a Ajuda e suporte, utilize as seguintes opções:
 
     ![Confirmar seu serviço](./media/get-support/confirm-your-service-selection.png)
 
-- **No portal do Azure:**
-  - Selecione **ajuda e suporte** em qualquer folha ou página do Intune.
-
-  > [!NOTE]  
-  > Se sua instância do Intune estiver hospedada na nuvem privada para o governo, também conhecida como uma nuvem soberanas como Azure governamental, consulte [suporte do Intune para nuvem privada para o governo](#intune-support-for-private-cloud-for-government), mais adiante neste artigo. A experiência de *ajuda e suporte* do Intune não estará disponível na nuvem privada para o governo até o momento neste ano.
+###  <a name="the-support-experience"></a>A experiência de suporte
 
   Quando você abre a ajuda e o suporte, o portal exibe a janela **precisa de ajuda?** :
 
@@ -72,7 +75,7 @@ Para aceder a Ajuda e suporte, utilize as seguintes opções:
 
   *Precisa de ajuda?* Abre o painel *Localizar soluções* . No entanto, se você tiver um caso de suporte ativo, a janela será aberta no painel *solicitações de serviço* , onde você poderá exibir detalhes sobre os casos de suporte ativo e fechado.
 
-### <a name="find-solutions"></a>Encontrar soluções
+#### <a name="find-solutions"></a>Encontrar soluções
 
 ![Selecione o painel Localizar soluções](./media/get-support/find-solutions.png)
 
@@ -84,7 +87,7 @@ Por exemplo, você pode inserir **erros de sincronização de senha**. Os result
 
 ![Exibir informações de solução de problemas](./media/get-support/troubleshooting-insights.png)
 
-### <a name="contact-support"></a>Contatar o suporte
+#### <a name="contact-support"></a>Contatar o suporte
 
 ![Selecione o painel de suporte do contato](./media/get-support/contact-support.png)
 
@@ -96,7 +99,7 @@ Ao solicitar assistência, forneça uma descrição do problema com o máximo de
 
 Depois de preencher as informações necessárias, selecione **entre em contato comigo** para enviar a solicitação.
 
-### <a name="service-requests"></a>Solicitações de serviço
+#### <a name="service-requests"></a>Solicitações de serviço
 
 ![Selecione o painel solicitações de serviço](./media/get-support/service-requests.png)
 
@@ -108,7 +111,7 @@ Se você tiver um número de caso de suporte ativo, poderá inseri-lo aqui para 
 
 Quando terminar de exibir detalhes de um incidente, selecione a seta para a esquerda que aparece na parte superior da janela de solicitação de serviço logo acima dos ícones para os ícones de três *necessidades ajuda?* do painel. A seta voltar retorna a exibição para a lista de incidentes de suporte que você abriu.
 
-### <a name="premier-and-unified-support-customers"></a>Clientes de suporte Premier e unificado
+#### <a name="premier-and-unified-support-customers"></a>Clientes de suporte Premier e unificado
 
 Como cliente com um contrato de suporte **Premier** ou **unificado** , você pode especificar uma severidade para o problema e agendar um retorno de chamada de suporte para um horário e dia específicos. Essas opções estão disponíveis quando você abre ou envia um novo problema e quando você edita um caso de suporte ativo.
 
@@ -123,11 +126,25 @@ A seleção de uma gravidade **a ou um** problema **crítico** limita você a um
 
 ## <a name="azure-help--support-experience"></a>Experiência da Ajuda + suporte do Azure
 
-Quando você usa o painel de navegação esquerdo **ajuda + suporte**ou usa o **?** no canto superior direito do portal do Azure, você abre a experiência de ajuda + suporte do Azure, que é distinta da experiência de ajuda e suporte do Intune.
+Você não pode mais usar a experiência de *ajuda + suporte* do Azure para obter assistência com o Intune, a menos que sua assinatura esteja em uma nuvem privada para o governo.
+Se sua instância do Intune não for executada em uma nuvem privada para o governo, navegar pela ajuda do Azure *+ support* redireciona você para a experiência de *ajuda e suporte* do Intune para criar e gerenciar incidentes de suporte:
 
-A partir de abril de 2019, não é possível acessar a experiência de *ajuda + suporte* do Azure para obter assistência com o Intune, a menos que sua assinatura esteja em uma nuvem privada para o governo. 
+Quando você usa o painel de navegação esquerdo **ajuda + suporte**ou usa o **?** para abrir o painel de *ajuda* e selecionar **ajuda + suporte**, abra a página *ajuda + suporte* do Azure. 
 
-Se sua instância do Intune não for executada em uma nuvem privada para o governo, navegar pela ajuda do Azure *+ support* redireciona você para a experiência de *ajuda e suporte* do Intune para criar e gerenciar incidentes de suporte.
+
+Nessa página, selecione **+ nova solicitação de suporte** para abrir a guia *noções básicas* da página *ajuda + suporte + nova solicitação de suporte* .
+
+![Ajuda + suporte](./media/get-support/help-plus-support.png)
+
+Nesta página:
+
+- Para *tipo de problema*, selecione **técnico**.
+- Para *serviço*, selecione **Microsoft Intune**.
+
+  Em seguida, você verá um link que redireciona para a [página de ajuda e suporte do Intune](https://aka.ms/intunehelpsupport).
+  
+  ![Nova solicitação de suporte](./media/get-support/new-request.png)
+
 
 ## <a name="intune-support-for-private-cloud-for-government"></a>Suporte do Intune para nuvem privada para o governo
 
@@ -142,7 +159,7 @@ Quando sua assinatura do Intune é hospedada na nuvem privada para o governo, qu
 >
 > Quando as transições entre as ferramentas de suporte forem concluídas neste ano, a experiência de suporte do Intune hospedada na nuvem governamental se assemelhará à *Ajuda padrão e à* experiência de suporte que está disponível atualmente para as assinaturas do Intune hospedadas no nuvem pública.
 
-1. Inicie sessão no portal do Azure (<https://portal.azure.com>) com as suas credenciais de administrador do Intune, selecione o ícone **?** no canto superior direito do portal e, em seguida, selecione **Ajuda + suporte** para aceder à página [Ajuda + suporte do Azure](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview).
+1. Inicie sessão no portal do Azure (<https://portal.azure.us>) com as suas credenciais de administrador do Intune, selecione o ícone **?** no canto superior direito do portal e, em seguida, selecione **Ajuda + suporte** para aceder à página [Ajuda + suporte do Azure](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview).
 
    ![Imagem da ligação de ponto de interrogação com a ligação de Ajuda + suporte realçada](./media/get-support/azure-get-support.png)
 

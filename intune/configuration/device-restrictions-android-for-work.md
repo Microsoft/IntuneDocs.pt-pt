@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/24/2019
+ms.date: 10/30/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ec6009096ac6ed39c8a217f8832661a575d83b78
-ms.sourcegitcommit: 4f979ba7030e72d820113fe23ac8521ddb2433bd
+ms.openlocfilehash: 14fa330b0c158d98c96e0d151f8a4ec7d0c95b97
+ms.sourcegitcommit: c38a856725993a4473ada75e669a57f75ab376f8
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72915709"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73143036"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Configurações de dispositivo do Android Enterprise para permitir ou restringir recursos usando o Intune
 
@@ -42,7 +42,7 @@ Este artigo lista e descreve as diferentes configurações que você pode contro
   - **Conceder automaticamente**: as permissões são concedidas automaticamente.
   - **Negar automaticamente**: as permissões são negadas automaticamente.
 - **Alterações de data e hora**: escolha **Bloquear** para impedir que os usuários configurem manualmente a data e a hora. **Não configurado** permite que os usuários definam a data e a hora do dispositivo.
-- **Alterações de volume**: selecione **Bloquear** para impedir que os utilizadores alterem o volume do dispositivo. **Não configurado** permite usar as configurações de volume no dispositivo.
+- **Alterações de volume**: o **bloco** impede que os usuários alterem o volume do dispositivo e também faz mudo do volume mestre. **Não configurado** permite usar as configurações de volume no dispositivo.
 - **Redefinição de fábrica**: escolha **Bloquear** para impedir que os usuários usem a opção de redefinição de fábrica nas configurações do dispositivo. **Não configurado** permite que os usuários usem essa configuração no dispositivo.
 - **Arranque seguro**: selecione **Bloquear** para impedir que os utilizadores reiniciem o dispositivo em modo de segurança. **Não configurado** permite que os usuários reiniciem o dispositivo no modo de segurança.
 - **Barra de status**: escolha **Bloquear** para impedir o acesso à barra de status, incluindo notificações e configurações rápidas. **Não configurado** permite que os usuários acessem a barra de status.
