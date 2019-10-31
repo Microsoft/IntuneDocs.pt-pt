@@ -78,6 +78,8 @@
               href: lob-apps-macos.md
             - name: Gestão de aplicação Win32
               href: apps-win32-app-management.md
+            - name: "Dispositivos no modo\_S da aplicação Win32"
+              href: apps-win32-s-mode.md
         - name: Adicionar aplicações específicas
           items:
             - name: Aplicação Portal da Empresa
