@@ -249,6 +249,8 @@
               href: security-baseline-settings-mdm-all.md
             - name: Definições de linha de base do Microsoft Defender ATP
               href: security-baseline-settings-defender-atp.md
+            - name: Microsoft Edge baseline settings (Definições de linha de base do Microsoft Edge)
+              href: security-baseline-settings-edge.md
         - name: Windows update settings (Definições do Windows Update)
           href: windows-update-settings.md
         - name: Definições de políticas de conformidade – Android
