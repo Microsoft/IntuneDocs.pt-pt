@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 93915e8371d3951a843d6d3131678c1744747c4f
-ms.sourcegitcommit: 4bf23327af734a9811d555fbd566c31239e2acd6
-ms.translationtype: HT
+ms.openlocfilehash: a20d1df2bf1e5052bcb2d3d83e919e190f8d9175
+ms.sourcegitcommit: d2d18eef64bcf16eec1a48fcb67f1362537c0245
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73415061"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "73445879"
 ---
 
 
@@ -13,12 +13,8 @@ ms.locfileid: "73415061"
 - Mac OS X 10,12 e posterior
 
 ### <a name="google"></a>Google
-- Android 4.4 e posterior (incluindo o Samsung Knox Standard 4.4 e superior)
-
-  Existe uma lista completa de dispositivos Samsung Knox Standard verificados disponível nas [Definições da política para Android e Samsung Knox Standard](/intune/supported-devices-browsers#supported-samsung-knox-standard-devices).
-
-
-- [Requisitos](https://support.google.com/work/android/answer/6174145?hl=en) do Android Enterprise.
+- Android 5,0 e posterior (incluindo Samsung KNOX Standard 2,4 e superior: [requisitos](https://www.samsungknox.com/en/knox-platform/supported-devices/2.4+))
+- Android Enterprise: [requisitos](https://support.google.com/work/android/topic/9428066)
 
 ### <a name="microsoft"></a>Microsoft
 
@@ -26,7 +22,7 @@ ms.locfileid: "73415061"
 - Windows 10 (versões Home, S, Pro, Education e Enterprise)
 - Windows 10 Enterprise 2019 LTSC
 
-  Para obter mais informações sobre como gerenciar dispositivos que executam o Windows 10 2019 LTSC, consulte [What ' s New in Windows 10 Enterprise 2019 LTSC](https://docs.microsoft.com/en-us/windows/whats-new/ltsc/whats-new-windows-10-2019)
+  Para obter mais informações sobre como gerenciar dispositivos que executam o Windows 10 2019 LTSC, consulte [What ' s New in Windows 10 Enterprise 2019 LTSC](https://docs.microsoft.com/windows/whats-new/ltsc/whats-new-windows-10-2019)
   
 - Windows 10 Mobile
 - Windows 10 Pro Enterprise (x86, x64)
@@ -37,7 +33,7 @@ ms.locfileid: "73415061"
 
 - Equipes do Windows 10 (Surface Hub)
 
-   Para obter mais informações sobre como gerenciar dispositivos que executam as equipes do Windows 10, consulte [gerenciar Surface Hub com o MDM](https://docs.microsoft.com/en-us/surface-hub/manage-settings-with-mdm-for-surface-hub)
+   Para obter mais informações sobre como gerenciar dispositivos que executam as equipes do Windows 10, consulte [gerenciar Surface Hub com o MDM](https://docs.microsoft.com/surface-hub/manage-settings-with-mdm-for-surface-hub)
 - Windows Phone 8.1, Windows 8.1 RT, PCs com o Windows 8.1 (Modo de suporte)
 
 > [!NOTE]
