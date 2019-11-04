@@ -1,15 +1,15 @@
 ---
-ms.openlocfilehash: 797d1c66c50bed91f58eab535696b34001fcb28d
-ms.sourcegitcommit: db68056e2db17dfdeaa216c684302567742e6416
-ms.translationtype: MT
+ms.openlocfilehash: 93915e8371d3951a843d6d3131678c1744747c4f
+ms.sourcegitcommit: 4bf23327af734a9811d555fbd566c31239e2acd6
+ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "71239581"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73415061"
 ---
 
 
 ### <a name="apple"></a>Apple
-- Apple iOS 10.0 e posterior
+- Apple iOS e iPadOS 11,0 e posterior
 - Mac OS X 10,12 e posterior
 
 ### <a name="google"></a>Google
@@ -33,7 +33,7 @@ ms.locfileid: "71239581"
 - Windows 10 IoT Mobile Enterprise
 - Windows Holographic for Business
 
-  Para obter mais informações sobre a gestão de dispositivos com o Windows Holographic for Business, veja [Suporte do Windows Holographic for Business](../windows-holographic-for-business.md).
+  Para obter mais informações sobre a gestão de dispositivos com o Windows Holographic for Business, veja [Suporte do Windows Holographic for Business](../fundamentals/windows-holographic-for-business.md).
 
 - Equipes do Windows 10 (Surface Hub)
 
@@ -43,6 +43,6 @@ ms.locfileid: "71239581"
 > [!NOTE]
 > Nem todas as edições do Windows oferecem suporte a todos os recursos de sistema operacional disponíveis configurados por meio do MDM. Consulte os [documentos de referência do provedor de serviços de configuração do Windows](https://docs.microsoft.com/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers). Cada CSP realça quais edições do Windows têm suporte.
 
-Os clientes com Enterprise Management + Security (EMS) também podem utilizar [do Azure Active Directory (Azure AD) para registar dispositivos Windows 10](/intune/windows-enroll).
+Os clientes com o EMS (Enterprise Management + Security) também podem usar [Azure Active Directory (Azure AD) para registrar dispositivos Windows 10](/intune/windows-enroll).
 
 

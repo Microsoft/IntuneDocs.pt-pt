@@ -6,7 +6,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/09/2019
+ms.date: 10/31/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7517a2b60c4b5a893b90b09be72ddb363f23552a
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 85f9bb72c6c40c67874326b06ebd41286d2d7220
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509975"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73415149"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Atualização da IU para aplicações de utilizadores finais do Intune
 
@@ -36,6 +36,23 @@ Se você for um funcionário ou aluno, certifique-se de conferir as capturas de 
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/whats-new-app-ui/account-move-rom-iwp-user-1712.png)--->
 
+
+## <a name="week-of-october-28-2019"></a>Semana de 28 de outubro de 2019  
+
+### <a name="improved-checklist-design-in-company-portal-app-for-android----5550857---"></a>Design de lista de verificação aprimorado no aplicativo Portal da Empresa para Android <!-- 5550857 -->  
+A lista de verificação de configuração no aplicativo Portal da Empresa para Android foi atualizada com um design leve e novos ícones. As alterações se alinham com as atualizações recentes feitas no aplicativo Portal da Empresa para iOS. Estamos no processo de distribuir as atualizações de aplicativo para todos os clientes e esperar que sejam concluídas até o final da próxima semana. Para ver as etapas de registro atualizadas, consulte [registrar com o perfil de trabalho do Android](/intune-user-help/enroll-device-android-work-profile) e [registrar seu dispositivo Android](/intune-user-help/enroll-device-android-company-portal).  
+
+As telas a seguir mostram a lista de verificação atualizada para o registro de perfil de trabalho do Android:
+
+|Atualizações|Anterior|  
+|---|---|  
+|![Imagem de exemplo da configuração do perfil de trabalho no Portal da Empresa, mostrando a lista de verificação simplificada e os novos ícones.](./media/whats-new-app-ui/work-profile-checklist-1911.png)|![Imagem de exemplo da configuração de perfil de trabalho anterior no Portal da Empresa, mostrando uma lista de verificação de mais ocupado.](./media/whats-new-app-ui/work-profile-checklist-1904.png)|   
+
+As telas a seguir mostram a lista de verificação atualizada para o registro de administrador do dispositivo Android:  
+
+|Atualizações|Anterior|  
+|---|---|  
+|![Imagem de exemplo da instalação do administrador do dispositivo Android no Portal da Empresa, mostrando a lista de verificação simplificada e os novos ícones.](./media/whats-new-app-ui/android-checklist-1911.png)|![Imagem de exemplo da configuração do administrador do dispositivo Android anterior no Portal da Empresa, mostrando uma lista de verificação de mais ocupado.](./media/whats-new-app-ui/android-checklist-1904.png)|  
 
 ## <a name="week-of-september-9-2019"></a>Semana de 9 de setembro de 2019
 
@@ -572,6 +589,6 @@ Saiba como planeamos melhorar a experiência de utilizador através da atualiza�
 
 
 ## <a name="see-also"></a>Consulte também
-* [Blogue do Microsoft Intune](http://go.microsoft.com/fwlink/?LinkID=273882)
+* [Blogue do Microsoft Intune](https://go.microsoft.com/fwlink/?LinkID=273882)
 * [Roteiro da Cloud Platform](https://www.microsoft.com/cloud-platform/roadmap)
-* [Novidades do Intune](../whats-new.md)
+* [Novidades do Intune](whats-new.md)

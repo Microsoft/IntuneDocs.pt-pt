@@ -16,24 +16,22 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f09f4ba58e3da5821eea06fcfec6e55c9c007d44
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: dcdc2b69de52ea3bf23f4e3c5d11399b62bc8daa
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502712"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414096"
 ---
 # <a name="assign-licenses-to-users-so-they-can-enroll-devices-in-intune"></a>Atribuir licenças aos utilizadores para que estes possam inscrever dispositivos no Intune
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 Quer adicione utilizadores manualmente ou sincronize a partir do Active Directory no local, tem primeiro de atribuir a cada utilizador uma licença do Intune antes de os utilizadores poderem inscrever os respetivos dispositivos no Intune. Para obter uma lista das licenças, veja [Licenses that include Intune (Licenças que incluem o Intune)](../licenses.md).
 
 ## <a name="assign-an-intune-license-in-the-microsoft-365-admin-center"></a>Atribuir uma licença do Intune no centro de administração do Microsoft 365
 
-Você pode usar o [centro de administração Microsoft 365](http://go.microsoft.com/fwlink/p/?LinkId=698854) para adicionar manualmente usuários baseados em nuvem e atribuir licenças a contas de usuário baseadas em nuvem e contas sincronizadas do seu Active Directory local ao Azure AD.
+Você pode usar o [centro de administração Microsoft 365](https://go.microsoft.com/fwlink/p/?LinkId=698854) para adicionar manualmente usuários baseados em nuvem e atribuir licenças a contas de usuário baseadas em nuvem e contas sincronizadas do seu Active Directory local ao Azure AD.
 
-1. Entre no centro de [Administração do Microsoft 365](http://go.microsoft.com/fwlink/p/?LinkId=698854) usando suas credenciais de administrador de locatários e escolha **usuários** > **usuários ativos**.
+1. Entre no centro de [Administração do Microsoft 365](https://go.microsoft.com/fwlink/p/?LinkId=698854) usando suas credenciais de administrador de locatários e escolha **usuários** > **usuários ativos**.
 
 2. Selecione a conta de utilizador à qual pretende atribuir uma licença de utilizador do Intune e, em seguida, escolha **Licenças de produtos** > **Editar**.
 
@@ -51,6 +49,7 @@ Você pode usar o [centro de administração Microsoft 365](http://go.microsoft.
 Também pode atribuir licenças do Intune aos utilizadores com o Azure Active Directory. Para obter mais informações, veja o artigo [Atribuir licenças aos utilizadores no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-licensing-group-assignment-azure-portal). 
 
 ## <a name="use-school-data-sync-to-assign-licenses-to-users-in-intune-for-education"></a>Utilizar o School Data Sync para atribuir licenças aos utilizadores do Intune for Education
+
 Se for uma organização de ensino, poderá utilizar o School Data Sync (SDS) para atribuir licenças do Intune for Education aos utilizadores sincronizados. Basta selecionar a caixa de verificação do Intune for Education quando estiver a configurar o perfil SDS.  
 
 ![Captura de ecrã da definição do perfil SDS](./media/licenses-assign/i4e-sds-profile-setup-setting.png)
@@ -62,6 +61,7 @@ Quando atribuir uma licença do Intune for Education, confirme se a licença do 
 Veja esta [descrição geral do School Data Sync](https://support.office.com/article/Overview-of-School-Data-Sync-and-Classroom-f3d1147b-4ade-4905-8518-508e729f2e91) para saber mais sobre o SDS.
 
 ## <a name="how-user-and-device-licenses-affect-access-to-services"></a>Como as licenças de utilizadores e dispositivos afetam o acesso aos serviços
+
 * Cada **usuário** ao qual você atribui uma licença de software de usuário pode acessar e usar o serviços online e o software relacionado (incluindo o software System Center) para gerenciar aplicativos e até 15 dispositivos MDM. O agente de computador do Intune permite 5 máquinas virtuais e uma máquina virtual por licença de usuário.
 * Pode adquirir licenças para qualquer dispositivo separadamente das licenças de utilizador. As licenças de dispositivo não têm de ser atribuídas aos dispositivos. Cada dispositivo que aceder a e utilizar os serviços online e outro software relacionado (incluindo software do System Center) tem de ter uma licença de dispositivo.
 * Caso um dispositivo seja utilizado por mais de um utilizador, cada um requer uma licença de software de dispositivo ou todos os utilizadores requerem uma licença de software de utilizador.
@@ -73,9 +73,6 @@ A forma como comprou o Intune determina as informações da sua subscrição:
 - Se adquiriu o Intune através de um Contrato Enterprise, pode encontrar as informações da sua subscrição no portal de Licenciamento em Volume em **Subscrições**.
 - Se adquiriu o Intune através de um Fornecedor de Soluções Cloud, contacte o seu revendedor.
 - Se adquiriu o Intune com um número de CC ou uma Fatura, a suas licenças serão baseadas no utilizador.
-
-
-
 
 ## <a name="use-powershell-to-selectively-manage-ems-user-licenses"></a>Utilizar o PowerShell para gerir seletivamente licenças de utilizador do EMS
 As organizações que utilizam Microsoft Enterprise Mobility + Security (anteriormente denominado Enterprise Mobility Suite) podem ter utilizadores que apenas necessitam do Azure Active Directory Premium ou dos serviços do Intune no pacote EMS. Pode atribuir um ou um subconjunto de serviços através dos [cmdlets do PowerShell do Azure Active Directory](https://msdn.microsoft.com/library/jj151815.aspx).
@@ -97,7 +94,6 @@ Criar um novo utilizador na linha de comandos e atribuir uma licença de EMS sem
 
     $CustomEMS = New-MsolLicenseOptions -AccountSkuId "<TenantName>:EMS" -DisabledPlans INTUNE_A
     Set-MsolUserLicense -UserPrincipalName user@<TenantName>.onmicrosoft.com -AddLicenses <TenantName>:EMS -LicenseOptions $CustomEMS
-
 
 Verificar com:
 

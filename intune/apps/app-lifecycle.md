@@ -17,16 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: apps; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 53425b56985cbafb4033b11df54597959c0b0d59
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: ef958468feb7e36f894537989675977e1d96bf8c
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72499722"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414740"
 ---
 # <a name="overview-of-the-app-lifecycle-in-microsoft-intune"></a>Descrição geral do ciclo de vida das aplicações no Microsoft Intune
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 O ciclo de vida das aplicações do Microsoft Intune começa quando uma aplicação é adicionada e avança por fases adicionais até esta ser removida. Ao compreender essas fases, você terá os detalhes necessários para começar a usar o gerenciamento de aplicativos no Intune.
 
@@ -34,7 +32,7 @@ O ciclo de vida das aplicações do Microsoft Intune começa quando uma aplicaç
 
 ## <a name="add"></a>Adicionar
 
-O primeiro passo na implementação de aplicações consiste em adicionar as aplicações que pretende gerir e atribuir no Intune. Apesar de poder utilizar muitos tipos de aplicações diferentes, os procedimentos básicos são iguais. Com o Intune, você pode adicionar diferentes tipos de aplicativo, incluindo aplicativos escritos internamente (linha de negócios), aplicativos da loja, aplicativos que são internos e aplicativos na Web. Para obter mais informações sobre cada um destes tipos de aplicações, veja [Como adicionar uma aplicação ao Microsoft Intune](apps-add.md). 
+O primeiro passo na implementação de aplicações consiste em adicionar as aplicações que pretende gerir e atribuir no Intune. Apesar de poder utilizar muitos tipos de aplicações diferentes, os procedimentos básicos são iguais. Com o Intune, você pode adicionar diferentes tipos de aplicativo, incluindo aplicativos escritos internamente (linha de negócios), aplicativos da loja, aplicativos que são internos e aplicativos na Web. Para obter mais informações sobre cada um destes tipos de aplicações, veja [Como adicionar uma aplicação ao Microsoft Intune](apps-add.md).
 
 ## <a name="deploy"></a>Implementar
 
@@ -43,12 +41,14 @@ Depois de adicionar a aplicação ao Intune, pode [atribuí-la aos utilizadores 
 ## <a name="configure"></a>Configurar
 
 Como parte do ciclo de vida das aplicações, são lançadas regularmente novas versões das aplicações. O Intune fornece ferramentas para [atualizar aplicações](apps-add.md) facilmente, que tenha implementado numa versão mais recente. Além disso, pode configurar funcionalidades adicionais para algumas aplicações, por exemplo:
+
 - As [políticas de configuração de aplicações iOS](app-configuration-policies-use-ios.md) fornecem definições para aplicações iOS compatíveis utilizadas quando a aplicação é executada. Por exemplo, uma aplicação pode precisar de definições de imagem corporativa específicas ou do nome de um servidor ao qual deve estabelecer ligação.
 - As [políticas de browser gerido](app-configuration-managed-browser.md) ajudam a configurar as definições para o Intune Managed Browser, que substitui o browser do dispositivo predefinido e permite restringir os sites que os utilizadores podem visitar.
 
 ## <a name="protect"></a>Proteger
 
 O Intune fornece várias formas para ajudar a proteger os dados nas suas aplicações. Os métodos principais são:
+
 - [Acesso condicional](../protect/conditional-access.md), que controla o acesso a email e outros serviços com base nas condições que você especificar. As condições incluem tipos de dispositivos ou conformidade com uma [política de conformidade do dispositivo](../protect/device-compliance-get-started.md) que tenha implementado.
 - As [Políticas de proteção de aplicações](app-protection-policy.md) funcionam com aplicações individuais para ajudar a proteger os dados da empresa que utilizam. Por exemplo, pode restringir a cópia de dados entre aplicações não geridas e aplicações geridas ou pode impedir a execução das aplicações nos dispositivos com jailbreak ou rooting.
 

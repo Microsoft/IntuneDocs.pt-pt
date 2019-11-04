@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 10/31/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 95cf688f3727f97aedd4126e00fa4dc4939ef6bc
-ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
+ms.openlocfilehash: 6dbe26dba4e78e9f5f29a5adedffa3de1df662a6
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72785510"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414682"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>configurações do dispositivo iOS e iPadOS para permitir ou restringir recursos usando o Intune
 
@@ -167,7 +167,33 @@ Estas definições são adicionadas a um perfil de configuração do dispositivo
   o iOS tem segurança interna que pode afetar essa configuração. Por exemplo, o iOS pode atrasar o disparo da política dependendo do número de falhas de entrada. Ele também pode considerar a inserção repetida da mesma senha como uma única tentativa. O [Guia de segurança do IOS](https://www.apple.com/business/site/docs/iOS_Security_Guide.pdf) da Apple (abre o site da Apple) é um bom recurso e fornece detalhes mais específicos sobre as senhas.
   
 - **Máximo de minutos após o bloqueio de tela antes que a senha seja necessária**<sup>1</sup>: Insira por quanto tempo o dispositivo permanece ocioso antes de o usuário precisar digitar novamente sua senha. Se o tempo introduzido for maior do que o valor definido no dispositivo, o dispositivo ignorará o tempo introduzido. Suportado no iOS 8.0 e em dispositivos mais recentes.
-- **Máximo de minutos de inatividade até a tela travar**<sup>1</sup>: Insira o número máximo de minutos de inatividade permitido no dispositivo até que a tela seja bloqueada. Se o tempo introduzido for maior do que o valor definido no dispositivo, o dispositivo ignorará o tempo introduzido. Quando definido como **imediatamente**, a tela é bloqueada com base no tempo mínimo do dispositivo. No iPhone, é de 30 segundos. No iPad, são dois minutos.
+
+- **Máximo de minutos de inatividade até a tela travar**<sup>1</sup>: Insira o número máximo de minutos de inatividade permitido no dispositivo até que a tela seja bloqueada.
+
+  **Opções do IOS**:  
+
+  - **Não configurado** (padrão): o Intune não toca nessa configuração.
+  - **Imediatamente**: bloqueios de tela após 30 segundos de inatividade.
+  - **1**: bloqueios de tela após 1 minuto de inatividade.
+  - **2**: bloqueios de tela após 2 minutos de inatividade.
+  - **3**: bloqueios de tela após 3 minutos de inatividade.
+  - **4**: bloqueios de tela após 4 minutos de inatividade.
+  - **5**: bloqueios de tela após 5 minutos de inatividade.
+    
+  **Opções de iPadOS**:  
+
+  - **Não configurado** (padrão): o Intune não toca nessa configuração.
+  - **Imediatamente**: a tela é bloqueada após 2 minutos de inatividade.
+  - **2**: bloqueios de tela após 2 minutos de inatividade.
+  - **5**: bloqueios de tela após 5 minutos de inatividade.
+  - **10**: bloqueios de tela após 10 minutos de inatividade.
+  - **15**: bloqueios de tela após 15 minutos de inatividade.
+
+  Se um valor não se aplicar ao iOS ou iPadOS, a Apple usará o *menor valor mais* próximo. Por exemplo, se você inserir `4` minutos, os dispositivos iPadOS usarão `2` minutos. Se você inserir `10` minutos, os dispositivos iOS usarão `5` minutos. Essa é uma limitação da Apple.
+  
+  > [!NOTE]
+  > A interface do usuário do Intune para essa configuração não separa os valores com suporte para iOS e iPadOS. A interface do usuário pode ser atualizada em uma versão futura.
+
 - **Expiração da senha (dias)** : Insira o número de dias antes que a senha do dispositivo deva ser alterada.
 - **Evitar a reutilização de senhas anteriores**: Insira o número de novas senhas que devem ser usadas até que uma antiga possa ser reutilizada.
 - **ID de toque e desbloqueio de ID facial**: escolha **Bloquear** para impedir o uso de uma impressão digital ou uma face para desbloquear o dispositivo. **Não configurado** permite que o usuário desbloqueie o dispositivo usando esses métodos.

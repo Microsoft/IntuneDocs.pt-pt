@@ -16,16 +16,14 @@ ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4a89392dabe695cf49e989351cef822852676916
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 7500000f8a34120e69c27ce01a6cfdb85f447abe
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507380"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414707"
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Assine aplicações de linha de negócio para que possam ser implementadas nos dispositivos Windows com o Intune
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 Como administrador do Intune, você pode implantar aplicativos universais de linha de negócios (LOB) para Windows 8.1 desktop ou Windows 10 desktop & dispositivos móveis, incluindo o aplicativo Portal da Empresa. Para implantar aplicativos. Appx no Windows 8.1 desktop ou no Windows 10 desktop & dispositivos móveis, você pode usar o certificado de assinatura de código de uma autoridade de certificação pública já confiável por seus dispositivos Windows ou pode usar sua própria autoridade de certificação.
 
@@ -53,6 +51,7 @@ Se você implantar o aplicativo conforme necessário para usuários ou dispositi
 ### <a name="upload-the-code-signing-certificate"></a>Carregar o certificado de assinatura de código
 
 Se o seu dispositivo Windows 10 ainda não confiar na autoridade de certificação, depois de assinar o pacote Appx e carregá-lo no serviço do Intune, você precisará carregar o certificado de assinatura de código no portal do Intune:
+
 1. Clique em aplicativos cliente
 2. Clique em certificados corporativos do Windows
 3. Selecione ' selecionar um arquivo ' em certificado de assinatura de código
@@ -77,6 +76,7 @@ Windows 8.1 desktop/Windows 10 desktop & Mobile
 Se o período de certificado tiver expirado, os arquivos Appx poderão parar de ser iniciados. Você deve obter um novo arquivo. cer e seguir as instruções para assinar o código de cada arquivo Appx implantado e carregar novamente todos os arquivos Appx e o arquivo. cer atualizado na seção certificados empresariais do Windows do portal do Intune
 
 ## <a name="manually-deploy-windows-10-company-portal-app"></a>Implementar manualmente a aplicação Portal da Empresa do Windows 10
+
 Se você não quiser fornecer acesso ao Microsoft Store, poderá implantar manualmente o aplicativo do Windows 10 Portal da Empresa diretamente do Intune, mesmo se não tiver integrado o Intune com o Microsoft Store for Business (MSFB). Como alternativa, se você tiver integrado, poderá implantar o aplicativo Portal da Empresa usando [implantar aplicativos usando o MSFB](store-apps-windows.md).
 
  > [!NOTE]
@@ -85,7 +85,7 @@ Se você não quiser fornecer acesso ao Microsoft Store, poderá implantar manua
 1. Entre em sua conta no [Microsoft Store for Business](https://www.microsoft.com/business-store) e adquira a versão de **licença offline** do aplicativo portal da empresa.  
 2. Assim que a aplicação tiver sido comprada, selecione a aplicação na página **Inventário**.  
 3. Selecione **Todos os dispositivos Windows 10** como a **Plataforma** e, em seguida, a **Arquitetura** adequada e transfira. Não é preciso um ficheiro de licença de aplicação para esta aplicação.
-   ![Image de detalhes do pacote do Windows 10 x86 para baixar @ no__t-1
+   Imagem ![de detalhes do pacote do Windows 10 x86 para download](./media/app-sideload-windows/Win10CP-all-devices.png)
 4. Transfira todos os pacotes em “Arquiteturas necessárias”. Esta ação deve ser feita para as arquiteturas x86, x64 e ARM, resultando num total de nove pacotes, conforme mostrado abaixo.
 
    ![Imagem dos ficheiros de dependência para Transferência ](./media/app-sideload-windows/Win10CP-dependent-files.png)
@@ -100,9 +100,11 @@ Se você não quiser fornecer acesso ao Microsoft Store, poderá implantar manua
 Para obter mais informações sobre como o Intune processa as dependências de aplicações Universais, veja [Deploying an appxbundle with dependencies via Microsoft Intune MDM (Implementar um appxbundle com dependências através da MDM do Microsoft Intune) ](https://blogs.technet.microsoft.com/configmgrdogs/2016/11/30/deploying-an-appxbundle-with-dependencies-via-microsoft-intune-mdm/).  
 
 ### <a name="how-do-i-update-the-company-portal-on-my-users-devices-if-they-have-already-installed-the-older-apps-from-the-store"></a>Como atualizo o Portal da Empresa nos dispositivos dos meus utilizadores se já tiverem instalado as aplicações mais antigas da loja?
-Se os utilizadores já tiverem instalado as aplicações Portal da Empresa do Windows 8.1 ou Windows Phone 8.1 a partir da Loja, estas deverão ser atualizadas automaticamente para a nova versão sem ser preciso realizar qualquer ação da sua parte ou do utilizador. Se a atualização não ocorrer, peça aos utilizadores para verificarem se ativaram as atualizações automáticas para as aplicações da Loja nos dispositivos.   
+
+Se os utilizadores já tiverem instalado as aplicações Portal da Empresa do Windows 8.1 ou Windows Phone 8.1 a partir da Loja, estas deverão ser atualizadas automaticamente para a nova versão sem ser preciso realizar qualquer ação da sua parte ou do utilizador. Se a atualização não ocorrer, peça aos utilizadores para verificarem se ativaram as atualizações automáticas para as aplicações da Loja nos dispositivos.
 
 ### <a name="how-do-i-upgrade-my-sideloaded-windows-81-company-portal-app-to-the-windows-10-company-portal-app"></a>Como atualizo a minha aplicação Portal da Empresa do Windows 8.1 de sideload para a aplicação Portal da Empresa do Windows 10?
+
 O nosso caminho de migração recomendado consiste em eliminar a implementação da aplicação Portal da Empresa do Windows 8.1 através da definição da ação de implementação como “Desinstalar”. Em seguida, a aplicação Portal da Empresa do Windows 10 pode ser implementada através de qualquer uma das opções acima.  
 
 Se precisar de carregar a aplicação em sideload e tiver implementado o Portal da Empresa do Windows 8.1 sem a assinar com o Certificado da Symantec, siga os passos na secção Implementar diretamente através do Intune acima para concluir a atualização.
@@ -110,6 +112,7 @@ Se precisar de carregar a aplicação em sideload e tiver implementado o Portal 
 Se precisar de carregar a aplicação em sideload e tiver assinado e implementado o Portal da Empresa do Windows 8.1 com o certificado de assinatura de código da Symantec, siga os passos da secção abaixo.  
 
 ### <a name="how-do-i-upgrade-my-signed-and-sideloaded-windows-phone-81-company-portal-app-or-windows-81-company-portal-app-to-the-windows-10-company-portal-app"></a>Como atualizo a minha aplicação Portal da Empresa do Windows Phone 8.1 ou do Windows 8.1 de sideload e assinada para a aplicação Portal da Empresa do Windows 10?
+
 O nosso caminho de migração recomendado consiste em eliminar a implementação existente da aplicação Portal da Empresa do Windows Phone 8.1 ou do Windows 8.1 através da definição da ação de implementação como “Desinstalar”. Em seguida, a aplicação Portal da Empresa do Windows 10 poderá ser implementada normalmente.  
 
 Caso contrário, a aplicação Portal da Empresa do Windows 10 terá de ser corretamente atualizada e assinada para garantir que o caminho de atualização é respeitado.  

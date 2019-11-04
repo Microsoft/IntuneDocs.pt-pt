@@ -18,23 +18,23 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 90066bf55f50819ba77babee1e1d4230bdead613
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: b5b469c759ac34a6d8de09163534a580346e48a1
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72504859"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73415031"
 ---
 # <a name="add-users-and-grant-administrative-permission-to-intune"></a>Adicionar utilizadores e conceder permissões administrativas no Intune
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 Como administrador, pode adicionar utilizadores diretamente ou sincronizar utilizadores do Active Directory no local. Depois de adicionados, os utilizadores podem inscrever dispositivos e aceder a recursos da empresa. Também pode conceder permissões adicionais aos utilizadores, incluindo permissões de *administrador global* e de *administrador de serviços*.
 
 ## <a name="add-users-to-intune"></a>Adicionar utilizadores ao Intune
+
 Pode adicionar utilizadores à sua subscrição do Intune manualmente através do [centro de administração do Microsoft 365](https://admin.microsoft.com) ou do [portal do Azure](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview). Um administrador pode editar contas de utilizador para atribuir licenças do Intune. Pode atribuir licenças no centro de administração do Microsoft 365 ou no portal do Intune no Azure. Para obter mais informações sobre como utilizar o portal de administração do Microsoft  365, veja [Adicionar utilizadores individualmente ou em volume ao centro de administração do Microsoft 365](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec).
 
 ### <a name="add-intune-users-in-the-microsoft-365-admin-center"></a>Adicionar utilizadores do Intune no centro de administração do Microsoft 365
+
 1. Inicie sessão no [centro de administração do Microsoft 365](https://admin.microsoft.com) com uma conta de administrador de gestão de utilizadores ou conta de administrador global.
 2. No menu do Office 365, selecione **Administrador**.
 3. No Centro de administração, selecione **Adicionar um utilizador**.
@@ -56,6 +56,7 @@ Pode adicionar utilizadores à sua subscrição do Intune manualmente através d
 6. Selecione **Adicionar** para criar um novo utilizador.
 
 ### <a name="add-intune-users-in-the-azure-portal"></a>Adicionar utilizadores do Intune no portal do Azure
+
 1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Selecione **Utilizadores** > **Todos os utilizadores**.
 3. No Centro de administração, selecione **Novo utilizador**.
@@ -78,6 +79,7 @@ Pode adicionar utilizadores à sua subscrição do Intune manualmente através d
 Depois de adicionar utilizadores à sua subscrição do Intune, recomendamos que conceda permissões administrativas a alguns utilizadores.  Para conceder permissões de administrador, siga estes passos:
 
 ### <a name="give-admin-permissions-in-office-365"></a>Conceder permissões de administrador no Office 365
+
 1. Inicie sessão no [centro de administração do Microsoft 365](https://admin.microsoft.com) com uma conta de administrador global.
 2. No menu do Office 365, selecione **Administrador**.
 3. No Centro de Administração, selecione **Utilizadores ativos** e, em seguida, selecione o utilizador ao qual pretende conceder permissões de administrador.
@@ -91,6 +93,7 @@ Depois de adicionar utilizadores à sua subscrição do Intune, recomendamos que
 6. Escolha **Guardar**.
 
 ### <a name="give-admin-permissions-in-the-azure-portal"></a>Conceder permissões de administrador no portal do Azure
+
 1. Inicie sessão no [portal do Azure](https://portal.azure.com) com uma conta de administrador global.
 2. No portal do Azure, escolha **Utilizador** e, em seguida, escolha o utilizador ao qual pretende conceder permissões de administrador.
 3. Selecione **Função de diretório** e, em seguida, selecione a permissão.
@@ -113,9 +116,11 @@ A conta que utilizar para criar a sua subscrição do Microsoft Intune é um adm
 Para aceder ao centro de administração do Microsoft 365, a sua conta tem de ter a opção **Início de sessão permitido** definida. No portal do Azure, em **Perfil**, defina **Bloquear início de sessão** como **Não** para permitir o acesso. Este estado é diferente de ter uma licença para a subscrição. Por predefinição, todas as contas de utilizador têm o estado **Permitido**. Os utilizadores sem permissões de administrador podem utilizar o centro de administração do Microsoft 365 para repor palavras-passe do Intune.
 
 ## <a name="sync-active-directory-and-add-users-to-intune"></a>Sincronizar o Active Directory e adicionar utilizadores ao Intune
+
 Pode configurar a sincronização de diretórios para importar contas de utilizador do Active Directory no local para o Microsoft Azure Active Directory (Azure AD) que inclui utilizadores do Intune. Ligar o serviço do Active Directory no local a todos os serviços baseados no Azure Active Directory simplifica bastante a gestão da identidade de utilizadores. Também pode configurar funcionalidades de início de sessão único para tornar a experiência de autenticação dos utilizadores familiar e fácil. Ao ligar o mesmo [inquilino do Azure AD](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/) com múltiplos serviços, as contas de utilizador que anteriormente foram sincronizados estão disponíveis para todos os serviços baseados na cloud.
 
 ### <a name="how-to-sync-on-premises-users-with-azure-ad"></a>Como sincronizar os utilizadores no local com o Azure AD
+
 A única ferramenta de que precisa para sincronizar as contas de utilizador com o Azure AD é o [Assistente do Azure AD Connect](https://www.microsoft.com/download/details.aspx?id=47594). O Assistente do Azure AD Connect proporciona uma experiência orientada e simplificada para ligar a sua infraestrutura de identidade no local à cloud. Selecione a sua topologia e as suas necessidades (apenas um ou múltiplos diretórios, sincronização de hash de palavras-passe, autenticação pass-through ou federação). O assistente implementa e configura todos os componentes necessários para que a sua ligação funcione corretamente. incluindo serviços de sincronização, Serviços de Federação do Active Directory (AD FS) e o módulo Azure AD PowerShell.
 
 > [!TIP]

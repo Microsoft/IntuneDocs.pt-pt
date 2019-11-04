@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2bfc49f772331113314e45bc49360b8435b88037
-ms.sourcegitcommit: 0d6f323152ec62f7d383891cce12ea0a4289cd8f
-ms.translationtype: MT
+ms.openlocfilehash: 5afe2414db063aad53a89fd8125a68a53457ca49
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
+ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72889579"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414657"
 ---
 # <a name="use-device-firmware-configuration-interface-profiles-on-windows-devices-in-microsoft-intune-public-preview"></a>Usar perfis de interface de configuração de firmware de dispositivo em dispositivos Windows no Microsoft Intune (visualização pública)
 
@@ -45,7 +45,7 @@ Esta funcionalidade aplica-se a:
 
 ## <a name="before-you-begin"></a>Antes de começar
 
-- O fabricante do dispositivo deve ter DFCI adicionado ao seu firmware UEFI no processo de fabricação ou como uma atualização de firmware instalada. Trabalhe com seus fornecedores de dispositivo para determinar os fabricantes que dão suporte a DFCI ou a versão de firmware necessária para usar o DFCI.
+- O fabricante do dispositivo deve ter DFCI adicionado ao seu firmware UEFI no processo de fabricação ou como uma atualização de firmware instalada. Trabalhe com seus fornecedores de dispositivo para determinar [os fabricantes que dão suporte a DFCI](https://microsoft.github.io/mu/dyn/mu_plus/DfciPkg/Docs/Scenarios/DfciScenarios/#oems-that-support-dfci)ou a versão de firmware necessária para usar o DFCI.
 
 - O dispositivo deve ser registrado para o piloto automático do Windows por um [parceiro CSP (provedor de solução Microsoft Cloud)](https://partner.microsoft.com/cloud-solution-provider)ou registrado diretamente pelo OEM. 
 

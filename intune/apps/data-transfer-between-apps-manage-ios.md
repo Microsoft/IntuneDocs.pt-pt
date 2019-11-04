@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: db583b1fc89edf72f329a605cc86363593eaaa9d
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: cdc849405b7404203faa6e86d3fed1ea8e35ec43
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72497908"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414627"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Como gerir a transferência de dados entre aplicações iOS no Microsoft Intune
 
@@ -51,7 +51,7 @@ Definir a configuração de UPN do usuário é **necessário** para dispositivos
 
 3. Implante o aplicativo com as seguintes definições de configuração de aplicativo para o dispositivo gerenciado:
 
-      **chave** = IntuneMAMUPN, **valor** =  @ no__t-3
+      **chave** = IntuneMAMUPN, **valor** = <username@company.com>
 
       Exemplo: [‘IntuneMAMUPN’, ‘janellecraig@contoso.com’]
       
@@ -68,7 +68,7 @@ Definir a configuração de UPN do usuário é **necessário** para dispositivos
 
 2. Na secção Configuração da Aplicação, introduza a definição seguinte:
 
-   **chave** = IntuneMAMUPN, **valor** =  @ no__t-3
+   **chave** = IntuneMAMUPN, **valor** = <username@company.com>
 
    A sintaxe exata do par chave/valor pode diferir com base no seu fornecedor de MDM de terceiros. A tabela a seguir mostra exemplos de provedores de MDM de terceiros e os valores exatos que você deve inserir para o par chave/valor.
 
@@ -81,7 +81,7 @@ Definir a configuração de UPN do usuário é **necessário** para dispositivos
    |Gestor de Dispositivos Móveis ManageEngine | IntuneMAMUPN | Cadeia | %upn% |
 
 > [!NOTE]  
-> Para o aplicativo do Outlook no iOS se você implantar uma política de configuração de aplicativo com a opção "usando o designer de configuração", a chave de configuração IntuneMAMUPN será configurada automaticamente nos bastidores da política. Mais detalhes sobre Veja a seção de perguntas frequentes em [novo Outlook para IOS e experiência de política de configuração de aplicativo Android – configuração geral do aplicativo](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/New-Outlook-for-iOS-and-Android-App-Configuration-Policy/ba-p/370481). 
+> Para o Outlook para iOS, se você implantar uma política de configuração de aplicativo de dispositivos gerenciados com a opção "usando o designer de configuração" e habilitar **Permitir somente contas corporativas ou de estudante**, a chave de configuração IntuneMAMUPN será configurada automaticamente em segundo plano para a política. Mais detalhes podem ser encontrados na seção de perguntas frequentes em [novo Outlook para IOS e experiência de política de configuração de aplicativo Android – configuração geral do aplicativo](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/New-Outlook-for-iOS-and-Android-App-Configuration-Policy/ba-p/370481). 
 
 
 ### <a name="example-2-end-user-experience"></a>Exemplo 2: experiência de utilizador final

@@ -17,16 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e1cd4dd270d276969d759bc9a9dccef80b281251
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: da2f080458df360667df235ff10cc8f750b049eb
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502924"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414586"
 ---
 # <a name="how-your-windows-users-get-their-apps"></a>Como os utilizadores de dispositivos Windows obtêm as aplicações
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 Utilize estas informações para saber como e onde é que os seus utilizadores podem obter as aplicações que distribuir através do Microsoft Intune.
 
@@ -39,5 +37,6 @@ Utilize estas informações para saber como e onde é que os seus utilizadores p
 As **aplicações não geridas** podem ser geridas através de políticas e não foram encapsuladas pelo Intune ou não incorporam o SDK da Aplicação Intune. Não é possível aplicar políticas de proteção de aplicações a estas aplicações.
 
 ## <a name="see-also"></a>Consulte também
+
 [Como os utilizadores de dispositivos Android obtêm as aplicações](end-user-apps-android.md)
 [Como os utilizadores de dispositivos iOS obtêm as aplicações](end-user-apps-android.md)
