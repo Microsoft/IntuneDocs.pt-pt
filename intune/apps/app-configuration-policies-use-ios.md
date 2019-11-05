@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c388e632f545b48a18ef6ed7b76132c290f16a9e
-ms.sourcegitcommit: 25acfc88b366d2da71c37d354a0238e4f1168325
+ms.openlocfilehash: 0ee3ecd64254c0e212ffc86155d677bf18ba647a
+ms.sourcegitcommit: f6b82c62af81a2643a1aaec774afa42d02eef352
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72813449"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566183"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Adicionar políticas de configuração da aplicação para dispositivos iOS geridos
 
@@ -166,8 +166,8 @@ O Intune suporta os seguintes tipos de dados numa lista de propriedades:
 ### <a name="tokens-used-in-the-property-list"></a>Tokens utilizados na lista de propriedades
 
 Além disso, o Intune suporta os seguintes tipos de tokens na lista de propriedades:
-- \{\{userprincipalname\}\} – por exemplo, **John@contoso.com**
-- \{\{mail\}\} – por exemplo, **John@contoso.com**
+- \{\{userPrincipalName\}\}— por exemplo, **John\@contoso.com**
+- \}de \{de\}de \{de email — por exemplo, **John\@contoso.com**
 - \{\{partialupn\}\} – por exemplo, **João**
 - \{\{accountid\}\} – por exemplo, **fc0dc142-71d8-4b12-bbea-bae2a8514c81**
 - \{\{deviceid\}\} – por exemplo, **b9841cd9-9843-405f-be28-b2265c59ef97**

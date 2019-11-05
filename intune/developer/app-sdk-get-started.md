@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a6886060cce77004b107dac02ecea57f2090ac8f
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 428da4581e9946b62bd6ee7c5f7d17d69f93ad9b
+ms.sourcegitcommit: ae6f2e7812e7fd36f2393b8f4b6cd8de63777b2c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503478"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73592012"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Introdução ao SDK da Aplicação Microsoft Intune
 
@@ -63,7 +63,7 @@ Utilizaremos os endereços de e-mail listados na sua resposta do questionário p
 Se a ligação avançada da aplicação for alterada no futuro, terá de voltar a registar a sua aplicação.
 
 > [!NOTE]
-> Informe-nos se atualizar a sua aplicação com uma nova versão do SDK da Aplicação Intune.
+> Você deve informar-nos se atualizar seu aplicativo com uma nova versão do SDK de aplicativos do Intune.
 
 ## <a name="download-the-sdk-files"></a>Transferir os ficheiros do SDK
 
@@ -72,7 +72,7 @@ Os SDKs da Aplicação Intune para iOS e Android nativos estão alojados numa co
 * [SDK da Aplicação Intune para iOS](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios)
 * [SDK da Aplicação Intune para Android](https://github.com/msintuneappsdk/ms-intune-app-sdk-android)
 
-Se a sua aplicação for uma aplicação Xamarin, utilize esta variante do SDK:
+Se seu aplicativo for um aplicativo Xamarin, use esta variante do SDK:
 
 * [Enlaces Xamarin do SDK da Aplicação Intune](https://github.com/msintuneappsdk/intune-app-sdk-xamarin)
 
@@ -181,6 +181,9 @@ Depois de registrar seu aplicativo em um locatário do Azure e ele estiver apare
 5. Na caixa de pesquisa, introduza **Gestão de Aplicações Móveis da Microsoft**.
 6. Em **permissões delegadas**, marque a caixa de seleção **DeviceManagementManagedApps. ReadWrite: ler e gravar os dados de gerenciamento de aplicativo do usuário***.
 7. Clique em **adicionar permissões**.
+
+> [!NOTE]
+> Se seu aplicativo restringe você de entrar devido a um erro ao acessar este recurso: https://intunemam.microsoftonline.com, você deve enviar uma observação para msintuneappsdk@microsoft.com com a ID do cliente do aplicativo. Este é um processo de aprovação manual atualmente.
 
 ### <a name="badge-your-app-optional"></a>Colocar um distintivo na aplicação (opcional)
 

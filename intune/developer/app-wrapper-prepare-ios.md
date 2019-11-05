@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 783ae8bf3216c514bac183ed1945c454cbaa1708
-ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
+ms.openlocfilehash: 98672a0f292ffd1e6c43b2b9696c345c0decb41b
+ms.sourcegitcommit: ae6f2e7812e7fd36f2393b8f4b6cd8de63777b2c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73413861"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73592103"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparar as aplicações iOS para as políticas de proteção de aplicações com a Ferramenta de Encapsulamento de Aplicações do Intune
 
@@ -289,26 +289,27 @@ Se a ferramenta de encapsulamento de aplicações não conseguir concluir com ê
 |A aplicação de entrada que especificou já foi encapsulada e encontra-se na versão mais recente do modelo de política.|A Ferramenta de Encapsulamento de Aplicações não volta a encapsular uma aplicação encapsulada existente com a versão mais recente do modelo de política.|
 |AVISO: não especificou um hash de certificado SHA1. Certifique-se de que a sua aplicação encapsulada está assinada antes de a implementar.|Certifique-se de que especifica um hash SHA1 válido que siga o sinalizador da linha de comandos –c. |
 
-### <a name="log-files-for-the-app-wrapping-tool"></a>Ficheiros de registo da Ferramenta de Encapsulamento de Aplicações
+### <a name="collecting-logs-for-your-wrapped-applications-from-the-device"></a>Coletando logs para seus aplicativos encapsulados do dispositivo
+Utilize os seguintes passos para obter registos para as aplicações encapsuladas durante a resolução de problemas.
 
-As aplicações encapsuladas com a Ferramenta de Encapsulamento de Aplicações geram registos que são escritos na consola de dispositivos de cliente iOS. Estas informações são úteis se tiver problemas com a aplicação e precisar de determinar se o problema está relacionado com a Ferramenta de Encapsulamento de Aplicações. Para obter estas informações, utilize os passos seguintes:
+1. Aceda à aplicação Definições do iOS no dispositivo e selecione a aplicação LOB.
+2. Em **Consola de Diagnóstico**, escolha **Ativar**.
+3. Inicie a aplicação LOB.
+4. Clique na ligação “Introdução”.
+5. Agora, pode partilhar os registos através do e-mail ou copiá-los para uma localização do OneDrive.
+
+> [!NOTE]
+> A funcionalidade de registo está ativada nas aplicações que tenham sido encapsuladas com a Ferramenta de Encapsulamento de Aplicações do Intune versão 7.1.13 ou superior.
+
+### <a name="collecting-crash-logs-from-the-system"></a>Coletando logs de falhas do sistema
+
+Seu aplicativo pode estar registrando informações úteis no console do dispositivo cliente iOS. Essas informações são úteis quando você está tendo problemas com o aplicativo e precisa determinar se o problema está relacionado à ferramenta de disposição do aplicativo ou ao próprio aplicativo. Para obter estas informações, utilize os passos seguintes:
 
 1. Reproduza o problema ao executar a aplicação.
 
 2. Recolha o resultado da consola ao seguir as instruções da Apple para [Depurar Aplicações iOS Implementadas](https://developer.apple.com/library/ios/qa/qa1747/_index.html).
 
-3. Filtre os registos guardados do resultado das Restrições da Aplicação ao introduzir o seguinte script na consola:
-
-    ```bash
-    grep “IntuneAppRestrictions” <text file containing console output> > <required filtered log file name>
-    ```
-
-    Pode submeter os registos filtrados à Microsoft.
-
-    > [!NOTE]
-    > No ficheiro de registo, o item "versão de compilação" representa a versão de compilação do Xcode.
-
-    As aplicações encapsuladas também apresentam aos utilizadores a opção para enviar registos diretamente a partir do dispositivo por e-mail depois de a aplicação falhar. Os utilizadores podem enviar-lhe os registos para que os examine e reencaminhe para a Microsoft se necessário.
+As aplicações encapsuladas também apresentam aos utilizadores a opção para enviar registos diretamente a partir do dispositivo por e-mail depois de a aplicação falhar. Os utilizadores podem enviar-lhe os registos para que os examine e reencaminhe para a Microsoft se necessário.
 
 ### <a name="certificate-provisioning-profile-and-authentication-requirements"></a>Certificado, perfil de aprovisionamento e requisitos de autenticação
 
@@ -442,19 +443,6 @@ Execute o seu comando de encapsulamento de aplicações geral com o sinalizador 
 ```bash
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c 12A3BC45D67EF8901A2B3CDEF4ABC5D6E7890FAB  -v true -citrix
 ```
-
-## <a name="getting-logs-for-your-wrapped-applications"></a>Obter registos para as aplicações encapsuladas
-
-Utilize os seguintes passos para obter registos para as aplicações encapsuladas durante a resolução de problemas.
-
-1. Aceda à aplicação Definições do iOS no dispositivo e selecione a aplicação LOB.
-2. Em **Consola de Diagnóstico**, escolha **Ativar**.
-3. Inicie a aplicação LOB.
-4. Clique na ligação “Introdução”.
-5. Agora, pode partilhar os registos através do e-mail ou copiá-los para uma localização do OneDrive.
-
-> [!NOTE]
-> A funcionalidade de registo está ativada nas aplicações que tenham sido encapsuladas com a Ferramenta de Encapsulamento de Aplicações do Intune versão 7.1.13 ou superior.
 
 ## <a name="see-also"></a>Consulte também
 

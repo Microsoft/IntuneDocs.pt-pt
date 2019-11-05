@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fb7f9167602aa3f5b21e1c042aa3a049f02c952c
-ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
+ms.openlocfilehash: 12c070ec9539e3fd1c87b4e61910a5660700e2bb
+ms.sourcegitcommit: ae6f2e7812e7fd36f2393b8f4b6cd8de63777b2c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73414907"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73592031"
 ---
 # <a name="whats-new-in-the-microsoft-intune---previous-months"></a>Novidades do Microsoft Intune – meses anteriores
 
@@ -69,7 +69,7 @@ Estamos adicionando uma configuração que permite que você personalize a apar�
 Para ver as configurações de quiosque, consulte [restrições de dispositivo do Android Enterprise](../configuration/device-restrictions-android-for-work.md).
 
 #### <a name="app-protection-policy-assignment-save-and-apply---3104570---"></a>Salvar e aplicar atribuição de política de proteção de aplicativo<!-- 3104570 -->
-Agora você tem um melhor controle sobre as [atribuições de política de proteção de aplicativo](../apps/app-protection-policies.md#assign-a-windows-10-policy-to-users). Ao selecionar *atribuições* para definir ou editar as atribuições de uma política, você deve **salvar** sua configuração antes que a alteração se aplique. Use **descartar** para limpar todas as alterações feitas sem salvar as alterações nas listas incluir ou excluir.  Ao exigir salvar ou descartar, somente os usuários aos quais você pretende receberão uma política de proteção de aplicativo.
+Agora você tem um melhor controle sobre as [atribuições de política de proteção de aplicativo](../apps/app-protection-policies.md). Ao selecionar *atribuições* para definir ou editar as atribuições de uma política, você deve **salvar** sua configuração antes que a alteração se aplique. Use **descartar** para limpar todas as alterações feitas sem salvar as alterações nas listas incluir ou excluir.  Ao exigir salvar ou descartar, somente os usuários aos quais você pretende receberão uma política de proteção de aplicativo.
 
 #### <a name="new-microsoft-edge-browser-settings-for-windows-10-and-later---3174639---"></a>Novas configurações do navegador Microsoft Edge para Windows 10 e posterior<!-- 3174639 -->
 Essa atualização inclui novas configurações para ajudar a controlar e gerenciar o navegador Microsoft Edge em seus dispositivos. Para obter uma lista dessas configurações, consulte [restrição de dispositivo para Windows 10 (e mais recente)](../configuration/device-restrictions-windows-10.md#microsoft-edge-browser).
