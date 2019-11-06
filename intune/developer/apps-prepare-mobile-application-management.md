@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ba1ec201cdb7e44570b53ce831b4e5ae26504973
-ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
+ms.openlocfilehash: dbddb0fcecfd5a0b021346a3a20b3c7e4f696a49
+ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73413818"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73635324"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Preparar aplicações de linha de negócios para as políticas de proteção de aplicações
 
@@ -110,7 +110,7 @@ Esta tabela lista as definições que pode utilizar no SDK da Aplicação e na F
 |Apagamento completo de dados de aplicativo|X|X|
 |Apagamento seletivo de dados corporativos e de estudante em cenários de várias identidades <br><br>**Nota:** no iOS, se o perfil de gestão for removido, a aplicação também é removida.|X||
 |Impedir "Guardar como"|X||
-|Configuração de aplicativo de destino (ou configuração de aplicativo por meio do "canal de MAM")|X|X|
+|Configuração de aplicativo de destino (ou configuração de aplicativo por meio do "canal de MAM")|X||
 |Suporte para Identidades Múltiplas|X||
 |Estilo Personalizável |X|||
 |Ligações de VPN de aplicação a pedido com o mVPN da Citrix|X|X| 

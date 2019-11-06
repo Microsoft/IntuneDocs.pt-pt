@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4f917167baecc643e045610e86e582957e535978
-ms.sourcegitcommit: 3ace4cba6e2f6fefa9120be3807387a49b200c9b
+ms.openlocfilehash: fae163cbcd97feb4f333d8ddfd44f2202dd343d6
+ms.sourcegitcommit: a4c7339ec9ff5b1b846cb3cca887cf91b5cd4baa
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72810286"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73627690"
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune"></a>Ativar o conector da Defesa Contra Ameaças para Dispositivos Móveis no Intune
 
@@ -63,8 +63,8 @@ Para exibir políticas de acesso condicional clássico, no [Azure](https://porta
 Você pode decidir quais opções de alternância de defesa contra ameaças móveis você precisa habilitar de acordo com os requisitos da sua organização. Veja a seguir mais detalhes:
 
 **Configurações de política de conformidade do MDM**
-- \* * Conectar dispositivos Android 4.1 + a *\<nome do parceiro MTD > * * *: ao habilitar essa opção, você pode fazer com que os dispositivos Android 4.1 + relatem o risco de segurança para o Intune.
-- \* * Conectar iOS 8.0 + dispositivos a *\<nome do parceiro MTD > * * *: ao habilitar essa opção, você pode fazer com que os dispositivos iOS 8.0 + relatem o risco de segurança para o Intune.
+- **Conectar dispositivos Android 4.1 + a _\<> nome do parceiro MTD_** : ao habilitar essa opção, você pode fazer com que os dispositivos Android 4.1 + relatem o risco de segurança para o Intune.
+- **Conectar dispositivos IOS 8.0 + para _\<nome do parceiro MTD >_** : ao habilitar essa opção, você pode fazer com que os dispositivos IOS 8.0 + relatem o risco de segurança para o Intune.
 - **Ativar Sincronização de Aplicações para Dispositivos iOS**: permite que o parceiro de Defesa Contra Ameaças para Dispositivos Móveis peça metadados de aplicações iOS a partir do Intune para utilizar para fins de análise de ameaças.
 - **Bloquear versões do SO não suportadas**: bloquear se o dispositivo estiver a executar um sistema operativo inferior à versão mínima suportada.
 

@@ -1,5 +1,5 @@
 ---
-title: Visão geral dos cenários guiados
+title: Visão geral dos cenários orientados
 titleSuffix: Microsoft Intune
 description: Saiba mais sobre os cenários guiados do Intune disponíveis no portal de gerenciamento de dispositivos Microsoft 365.
 keywords: ''
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 43c88366ea64182ccf8d45bc3e890a2579df20f1
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 460cabead711e6fa4559bcec39e556448cdf2237
+ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72585873"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73635372"
 ---
 # <a name="intune-guided-scenarios-overview"></a>Visão geral dos cenários guiados do Intune 
 
@@ -46,7 +46,7 @@ Cenários orientados oferecem funcionalidade específica. Os detalhes a seguir a
 
 ### <a name="launching"></a>Carregamento  
 
-Todos os cenários guiados estão disponíveis no **[portal de gerenciamento de dispositivos](https://devicemanagement.microsoft.com)**  >  solução de**problemas + ajuda**  > **cenários guiados**. 
+Todos os cenários guiados estão disponíveis no **[portal de gerenciamento de dispositivos](https://devicemanagement.microsoft.com)**  > solução de **problemas + suporte** > **cenários orientados**. 
 
 O cenário guiado começa com uma introdução explicando a finalidade do cenário e todos os pré-requisitos necessários para concluir a configuração. Neste ponto, as permissões de administrador são verificadas para verificar se você tem todos os privilégios necessários para concluir o cenário.  
 

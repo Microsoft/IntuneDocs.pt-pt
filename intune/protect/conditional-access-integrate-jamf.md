@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a75b1403e351981d1f6ab827d4c10648430b21fb
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 39d687c8c9b75182ba0e7d4020c6b840c753a231
+ms.sourcegitcommit: a4c7339ec9ff5b1b846cb3cca887cf91b5cd4baa
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72504606"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73627650"
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>Integrar o Jamf Pro com o Intune para conformidade
 
@@ -94,7 +94,7 @@ Para conectar o Intune ao JAMF pro:
 
    Selecione **adicionar permissão** para salvar essa configuração.  
 
-8. Na página **permissões de API** , selecione * * conceder consentimento de administrador para o locatário * \<your > * * * e, em seguida, selecione **Sim**.  Depois que o aplicativo é registrado com êxito, as permissões de API devem aparecer da seguinte maneira: permissões de ![Successful @ no__t-1
+8. Na página **permissões de API** , selecione **conceder consentimento de administrador para _\<seu > de locatário_** e, em seguida, selecione **Sim**.  Depois que o aplicativo é registrado com êxito, as permissões de API devem ser exibidas da seguinte maneira: ![permissões bem-sucedidas](./media/conditional-access-integrate-jamf/sucessfull-app-registration.png)
 
    O processo de registro do aplicativo no Azure AD foi concluído.
 

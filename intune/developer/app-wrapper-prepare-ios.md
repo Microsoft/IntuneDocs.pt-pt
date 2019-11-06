@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 98672a0f292ffd1e6c43b2b9696c345c0decb41b
-ms.sourcegitcommit: ae6f2e7812e7fd36f2393b8f4b6cd8de63777b2c
+ms.openlocfilehash: c5779bcf6afc0064bce7dbb259a969944187ba1c
+ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73592103"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73635450"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparar as aplicações iOS para as políticas de proteção de aplicações com a Ferramenta de Encapsulamento de Aplicações do Intune
 
@@ -44,7 +44,7 @@ Antes de executar a Ferramenta de Encapsulamento de Aplicações, terá de cumpr
 
   * O ficheiro de aplicação de entrada tem de ter a extensão **.ipa** ou **.app**.
 
-  * A aplicação de entrada tem de estar compilada para o iOS 10 ou posterior.
+  * O aplicativo de entrada deve ser compilado para o iOS 11 ou posterior.
 
   * A aplicação de entrada não pode ser encriptada.
 
