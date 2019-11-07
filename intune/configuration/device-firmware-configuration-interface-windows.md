@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/31/2019
+ms.date: 11/06/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 899d667ca271ae5c3edced18fab8da987c49b2ca
-ms.sourcegitcommit: 85c894cb4df34a5ff558e3b45e28a8b91054d9e6
+ms.openlocfilehash: f6d4b076b508316cdb2d3d5f2814fc5e46a014e7
+ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73432526"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73709514"
 ---
 # <a name="use-device-firmware-configuration-interface-profiles-on-windows-devices-in-microsoft-intune-public-preview"></a>Usar perfis de interface de configuração de firmware de dispositivo em dispositivos Windows no Microsoft Intune (visualização pública)
 
@@ -127,9 +127,11 @@ Esse perfil inclui as configurações de DFCI que você configura.
 
 Depois que os perfis são criados, eles estão [prontos para serem atribuídos](../configuration/device-profile-assign.md). Certifique-se de atribuir os perfis aos grupos de segurança do Azure AD que incluem seus dispositivos DFCI.
 
-Na próxima vez em que o dispositivo for sincronizado ou o dispositivo for reinicializado, as configurações de perfil do DFCI serão aplicadas. Após a política se aplicar, reinicialize o dispositivo.
+Quando o dispositivo executa o Windows AutoPilot, durante a página de status de registro, DFCI pode forçar uma reinicialização. Essa primeira reinicialização registra a UEFI no Intune. 
 
-Quando o dispositivo executa a instalação do dispositivo Windows, DFCI pode forçar uma reinicialização durante a página de status do registro. Após a conclusão da instalação, você pode confirmar se as configurações do DFCI estão ativas ao reinicializar o dispositivo. Em seguida, use as instruções do fabricante do dispositivo para abrir o menu UEFI.
+Se você quiser confirmar se o dispositivo está registrado, você pode reinicializar o dispositivo novamente, mas ele não é necessário. Use as instruções do fabricante do dispositivo para abrir o menu UEFI e confirme se a UEFI agora é gerenciada.
+
+Na próxima vez que o dispositivo sincronizar com o Intune, o Windows receberá as configurações de DFCI. Reinicialize o dispositivo. Essa terceira reinicialização é necessária para que a UEFI receba as configurações de DFCI do Windows.
 
 ## <a name="update-existing-dfci-settings"></a>Atualizar configurações de DFCI existentes
 

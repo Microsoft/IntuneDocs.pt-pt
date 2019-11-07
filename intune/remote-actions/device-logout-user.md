@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8336f5b29cd21bb6875285177071542080eb95f3
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: fdb23916319b06fb4d85b913209d1ac9e007d551
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509450"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713169"
 ---
 # <a name="logout-the-current-user-on-intune-managed-ios-devices"></a>Terminar a sessão do utilizador atual em dispositivos iOS geridos pelo Intune
 
@@ -41,9 +41,7 @@ A ação **Terminar sessão do utilizador atual** termina a sessão do utilizado
 
 ## <a name="how-to-log-out-the-current-user"></a>Como terminar a sessão do utilizador atual
 
-1. Inicie sessão no portal do Azure.
-2. Escolha **Mais Serviços** > **Monitorização + Gestão** > **Intune**.
-3. No painel **Intune**, escolha **Dispositivos**.
+1. Entre no [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) e selecione **dispositivos**.
 4. No painel **Dispositivos e grupos**, selecione **Todos os dispositivos**.
 5. Na lista de dispositivos que gere, selecione um dispositivo iOS e, em seguida, selecione a ação remota de dispositivos **Terminar sessão do utilizador atual**.
 

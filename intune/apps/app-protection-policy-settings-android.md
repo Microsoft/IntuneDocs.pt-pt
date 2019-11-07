@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cf2a8e55963dd3da98e20f5700a464d00c3c62a9
-ms.sourcegitcommit: 4bf23327af734a9811d555fbd566c31239e2acd6
+ms.openlocfilehash: 06784a3d0e842be791286469737c4716760ea32d
+ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "72999471"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73709946"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Definições de políticas de proteção de aplicações Android no Microsoft Intune
 Este artigo descreve as definições de políticas de proteção de aplicações para dispositivos Android. As definições de políticas descritas podem ser [configuradas](app-protection-policies.md) para uma política de proteção de aplicações no painel **Definições** no portal do Azure.
@@ -50,7 +50,7 @@ Há três categorias de configurações de política: configurações de proteç
 ### <a name="encryption"></a>Encriptação
 | Definição | Como utilizar | Valor predefinido |
 |------|------|------|
-| **Encriptar Dados organizacionais** | Escolha **exigir** para habilitar a criptografia de dados corporativos ou de estudante neste aplicativo. O Intune usa um esquema de criptografia AES de 256 bits do OpenSSL juntamente com o sistema de repositório de chaves do Android para criptografar com segurança os dados do aplicativo. Os dados são encriptados de modo síncrono durante as tarefas de E/S de ficheiros. Os conteúdos no armazenamento do dispositivo são sempre encriptados. Novos arquivos serão criptografados com chaves de 256 bits. Arquivos de 128 bits criptografados existentes passarão por uma tentativa de migração para chaves de 256 bits, mas o processo não é garantido. Arquivos criptografados com chaves de 128 bits permanecerão legíveis. <br><br> O método de criptografia é compatível com FIPS 140-2.     |  **Exigir**|  
+| **Encriptar Dados organizacionais** | Escolha **exigir** para habilitar a criptografia de dados corporativos ou de estudante neste aplicativo. O Intune usa um esquema de criptografia AES de 256 bits do OpenSSL juntamente com o sistema de repositório de chaves do Android para criptografar com segurança os dados do aplicativo. Os dados são encriptados de modo síncrono durante as tarefas de E/S de ficheiros. Os conteúdos no armazenamento do dispositivo são sempre encriptados. Novos arquivos serão criptografados com chaves de 256 bits. Arquivos de 128 bits criptografados existentes passarão por uma tentativa de migração para chaves de 256 bits, mas o processo não é garantido. Arquivos criptografados com chaves de 128 bits permanecerão legíveis. <br><br> O método de criptografia é o FIPS 140-2 validado; para obter mais informações, consulte [Guia do Android e biblioteca do OPENSSL FIPS](https://wiki.openssl.org/images/7/76/OpenSSL_FIPS_Library_and_Android_Guide.pdf).     |  **Exigir**|  
 | <ul><ui>**criptografar dados org em dispositivos registrados** | Selecione **exigir** para impor a criptografia de dados da organização com a criptografia de camada de aplicativo do Intune em todos os dispositivos. Selecione **não necessário** para não impor os dados da organização de criptografia com a criptografia de camada de aplicativo do Intune em dispositivos registrados.| **Exigir** |
 
 

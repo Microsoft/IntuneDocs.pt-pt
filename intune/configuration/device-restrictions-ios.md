@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/31/2019
+ms.date: 11/06/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6dbe26dba4e78e9f5f29a5adedffa3de1df662a6
-ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
+ms.openlocfilehash: 488794fdce8f6ebb074648c8e399cb2aecc73b25
+ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73414682"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73709752"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>configurações do dispositivo iOS e iPadOS para permitir ou restringir recursos usando o Intune
 
@@ -417,6 +417,9 @@ Aplica-se a dispositivos que executam o iOS 9,3 ou mais recente.
 - **Tipo de lista de aplicativos**: Crie uma lista de aplicativos para mostrar ou ocultar. Você pode mostrar ou ocultar aplicativos internos e aplicativos de linha de negócios. O site da Apple tem uma lista de [aplicativos da Apple internos](https://support.apple.com/HT208094). As opções são:
 
   - **Aplicativos ocultos**: Insira uma lista de aplicativos que estão ocultos dos usuários. Os utilizadores não podem ver nem abrir estas aplicações.
+  
+    A Apple impede a ocultação de alguns aplicativos nativos. Por exemplo, você não pode ocultar as **configurações** ou os aplicativos de **carteira** no dispositivo. [Excluir aplicativos da Apple internos](https://support.apple.com/HT208094) lista os aplicativos que podem ser ocultados.
+  
   - **Aplicativos visíveis**: Insira uma lista de aplicativos que os usuários podem exibir e iniciar. Mais nenhuma outra aplicação pode ser vista ou lançada.
 
 - **URL do aplicativo**: Insira a URL do aplicativo da loja do aplicativo que você deseja mostrar ou ocultar. Por exemplo:

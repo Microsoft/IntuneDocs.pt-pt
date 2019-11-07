@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 755aefb955c2d30652434f2bd2e91981145fc56f
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 44e757be5f109b81772daa6ff59505ccc0f033f8
+ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72505604"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73709426"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-fully-managed-devices"></a>Configurar o registro do Intune de dispositivos Android Enterprise totalmente gerenciados 
 
@@ -56,7 +56,7 @@ Para configurar o gerenciamento de dispositivo totalmente gerenciado do Android 
 
 ### <a name="enable-corporate-owned-user-devices"></a>Habilitar dispositivos de usuário de propriedade corporativa
 
-1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) e escolha **registro de dispositivo** > **registro Android** > **dispositivos de usuário totalmente gerenciados e de propriedade corporativa**.
+1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) e escolha **registro de dispositivo** > **registro do Android** > **dispositivos de usuário totalmente gerenciados e de propriedade corporativa**.
 2. Em **permitir que os usuários registrem dispositivos de usuário de propriedade corporativa**, escolha **Sim**.
 
 > [!NOTE]

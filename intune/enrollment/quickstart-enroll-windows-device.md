@@ -2,7 +2,7 @@
 title: 'Guia de Início Rápido: inscrever o seu dispositivo Windows 10 Desktop no Microsoft Intune'
 description: 'Guia de Início Rápido: utilizar o Portal da Empresa para inscrever o seu dispositivo Windows 10 Desktop no Microsoft Intune'
 services: microsoft-intune
-author: ErikRe
+author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 07/30/2019
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0aeeb55804a2bdd3ef1143bbb88dee968892c5c7
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 91f20411f668428c8bf3af8b0bd4ae6f4b0b545f
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509282"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713506"
 ---
 # <a name="quickstart-enroll-your-windows-10-device"></a>Guia de Início Rápido: inscrever o seu dispositivo com o Windows 10
 
@@ -91,7 +91,7 @@ Antes de inscrever o seu dispositivo Windows 10 Desktop, tem de confirmar a vers
 
 ## <a name="confirm-your-device-enrollment-in-intune"></a>Confirmar a inscrição do dispositivo no Intune
 
-1. Inicie sessão no [Intune](https://aka.ms/intuneportal) enquanto Administrador Global ou Administrador de Serviços do Intune.
+1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) como um administrador global ou um administrador de serviços do Intune.
 2. Selecione **dispositivos** > **todos os dispositivos** para exibir os dispositivos registrados no Intune.
 3. Verifique se tem um dispositivo adicional inscrito no Intune.
 

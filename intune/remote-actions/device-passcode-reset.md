@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d7ca53786d372f53d63388fef1179ca271fdb9d9
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: be6a254360d8e8e9ef1396515d261b6ff9077b87
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72508584"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713126"
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>Repor ou remover um código de acesso do dispositivo no Intune
 
@@ -57,10 +57,9 @@ Para criar um novo código de acesso de perfil de trabalho, utilize a ação Rep
 ## <a name="reset-a-passcode"></a>Repor um código de acesso
 
 
-1. Entre no [portal do Azure](https://portal.azure.com) com qualquer uma das seguintes funções: Azure Active Directory Administrador Global, Azure Active Directory administrador de serviços do Intune, operador de assistência técnica ou administrador de função.
-2. Selecione **Todos os serviços**, filtre por **Intune** e, em seguida, selecione **Microsoft Intune**.
-3. Selecione **Dispositivos** e, em seguida, selecione **Todos os dispositivos**.
-4. Na lista de dispositivos que gere, selecione um dispositivo e selecione **…Mais**. Em seguida, selecione a ação remota **Remover código de acesso** do dispositivo.
+1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) com qualquer uma das seguintes funções: Azure Active Directory Administrador Global, Azure Active Directory administrador de serviços do Intune, operador de assistência técnica ou administrador de função.
+2. Selecione **Dispositivos** e, em seguida, selecione **Todos os dispositivos**.
+3. Na lista de dispositivos que gere, selecione um dispositivo e selecione **…Mais**. Em seguida, selecione a ação remota **Remover código de acesso** do dispositivo.
 
 ## <a name="reset-android-work-profile-passcodes"></a>Repor códigos de acesso do perfil de trabalho do Android
 

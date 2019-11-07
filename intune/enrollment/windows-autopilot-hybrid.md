@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ab90dc9a95e461ad8c5913131a23a0355e9d072c
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 3724072144a78e1f4f5a17914eff941469e27242
+ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509213"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73709606"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>Implantar dispositivos ingressados no Azure AD híbrido usando o Intune e o piloto automático do Windows
 Você pode usar o Intune e o piloto automático do Windows para configurar dispositivos ingressados no Azure Active Directory híbrido (Azure AD). Para fazer isso, siga as etapas neste artigo.
@@ -42,7 +42,7 @@ Os dispositivos a ser inscritos também têm de:
 
 ## <a name="set-up-windows-10-automatic-enrollment"></a>Configurar a inscrição automática de dispositivos Windows 10
 
-1. Entre no [portal do Azure](https://portal.azure.com) e, no painel esquerdo, selecione **Azure Active Directory**.
+1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) e, no painel esquerdo, selecione **Azure Active Directory**.
 
    ![O portal do Azure](./media/windows-autopilot-hybrid/auto-enroll-azure-main.png)
 
@@ -107,17 +107,17 @@ A unidade organizacional que recebe os direitos para criar computadores deve cor
 
 O conector do Intune para Active Directory deve ser instalado em um computador que esteja executando o Windows Server 2016 ou posterior. O computador também deve ter acesso à Internet e à sua Active Directory. Para aumentar o dimensionamento e a disponibilidade ou suportar múltiplos domínios do Azure Active Directory, pode instalar múltiplos conectores no seu ambiente. É recomendável instalar o conector em um servidor que não esteja executando nenhum outro conector do Intune.
 
-1. No [Intune](https://aka.ms/intuneportal), selecione **registro de dispositivo**@no__t-**2 registro do Windows** > **conector do Intune para Active Directory** > **Adicionar**. 
+1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), selecione **registro de dispositivo** > registro do **Windows** > **conector do Intune para Active Directory** > **Adicionar**. 
 2. Siga as instruções para baixar o conector.
 3. Abra o arquivo de instalação do conector baixado, *ODJConnectorBootstrapper. exe*, para instalar o conector.
 4. No final da instalação, selecione **Configurar**.
 5. Selecione **entrar**.
 6. Insira as credenciais de administrador global do usuário ou da função de administrador do Intune.  
    A conta de usuário deve ter uma licença do Intune atribuída.
-7. Vá para **registro de dispositivo**@no__t-**1 registro do Windows** > **conector do Intune para Active Directory**e, em seguida, confirme se o status da conexão está **ativo**.
+7. Vá para **registro de dispositivo** > **registro do Windows** > **conector do Intune para Active Directory**e, em seguida, confirme se o status da conexão está **ativo**.
 
 > [!NOTE]
-> Depois de entrar no conector, pode levar alguns minutos para aparecer no [Intune](https://aka.ms/intuneportal). Ele só aparecerá se ele puder se comunicar com êxito com o serviço do Intune.
+> Depois de entrar no conector, pode levar alguns minutos para aparecer no [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431). Ele só aparecerá se ele puder se comunicar com êxito com o serviço do Intune.
 
 ### <a name="turn-off-ie-enhanced-security-configuration"></a>Desligar a configuração de segurança reforçada do IE
 Por padrão, o Windows Server tem a configuração de segurança reforçada do Internet Explorer ativada. Se não for possível entrar no conector do Intune para Active Directory desative a configuração de segurança avançada do IE para o administrador. [Como desativar a configuração de segurança reforçada do Internet Explorer](https://blogs.technet.microsoft.com/chenley/2011/03/10/how-to-turn-off-internet-explorer-enhanced-security-configuration)
@@ -128,7 +128,7 @@ Se você tiver um proxy Web no seu ambiente de rede, verifique se o conector do 
 
 
 ## <a name="create-a-device-group"></a>Criar um grupo de dispositivos
-1. No [Intune](https://aka.ms/intuneportal), selecione **grupos** > **novo grupo**.
+1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), selecione **grupos** > **novo grupo**.
 
 1. No painel **grupo** , faça o seguinte:
 
@@ -139,8 +139,8 @@ Se você tiver um proxy Web no seu ambiente de rede, verifique se o conector do 
     c. Selecione um **tipo de associação**.
 
 1. Se você selecionou **dispositivos dinâmicos** para o tipo de associação, no painel **grupo** , selecione **membros do dispositivo dinâmico** e, na caixa **regra avançada** , siga um destes procedimentos:
-    - Para criar um grupo que inclui todos os seus dispositivos do AutoPilot, digite `(device.devicePhysicalIDs -any _ -contains "[ZTDId]")`.
-    - O campo de marca de grupo do Intune é mapeado para o atributo OrderID em dispositivos do Azure AD. Se você quiser criar um grupo que inclui todos os seus dispositivos de piloto automático com uma marca de grupo específica (OrderID), digite: `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`
+    - Para criar um grupo que inclui todos os seus dispositivos do AutoPilot, insira `(device.devicePhysicalIDs -any _ -contains "[ZTDId]")`.
+    - O campo de marca de grupo do Intune é mapeado para o atributo OrderID em dispositivos do Azure AD. Se você quiser criar um grupo que inclui todos os seus dispositivos do AutoPilot com uma marca de grupo específica (OrderID), digite: `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`
     - Para criar um grupo que inclui todos os seus dispositivos AutoPilot com uma ID de ordem de compra específica, insira `(device.devicePhysicalIds -any _ -eq "[PurchaseOrderId]:76222342342")`.
     
 1. Selecione **Guardar**.
@@ -183,7 +183,7 @@ Depois que os dispositivos do AutoPilot forem registrados, seus nomes se tornar�
 ## <a name="create-and-assign-an-autopilot-deployment-profile"></a>Criar e atribuir um perfil de implementação do Autopilot
 Os perfis de implementação do Autopilot são utilizados para configurar os dispositivos do Autopilot.
 
-1. No [Intune](https://aka.ms/intuneportal), selecione **registro de dispositivo**@no__t-**2 registro do Windows** >  perfis de**implantação** > **Criar perfil**.
+1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), selecione **registro de dispositivo** > registro do **Windows** > **perfis de implantação** > **Criar perfil**.
 2. Na página **noções básicas** , digite um **nome** e uma **Descrição**opcional.
 3. Se pretender que todos os dispositivos nos grupos atribuídos sejam convertidos automaticamente no Autopilot, defina **Converter todos os dispositivos visados para o Piloto Automático** para **Sim**. Todos os dispositivos de propriedade corporativa, não autopiloto em grupos atribuídos serão registrados com o serviço de implantação do AutoPilot. Dispositivos de propriedade pessoal não serão convertidos para o piloto automático. O processo de registo demora até 48 horas, pelo que deverá aguardar. Quando a inscrição do dispositivo for anulada e o dispositivo for reposto, o Autopilot irá inscrevê-lo. Após registar um dispositivo desta forma, desativar esta opção ou remover a atribuição de perfil não irá remover o dispositivo do serviço de implementação do Autopilot. Em alternativa, tem de [remover o dispositivo diretamente](enrollment-autopilot.md#delete-autopilot-devices).
 4. Selecione **Seguinte**.
@@ -200,7 +200,7 @@ Demora cerca de 15 minutos para que o status do perfil do dispositivo seja alter
 
 ## <a name="optional-turn-on-the-enrollment-status-page"></a>Adicional Ativar a página de status de registro
 
-1. No [Intune](https://aka.ms/intuneportal), selecione **registro de dispositivo** > **registro do Windows** > **página status de registro**.
+1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), selecione **registro de dispositivo** > registro do **Windows** > **página status do registro**.
 1. No painel de **página status do registro** , selecione**configurações** **padrão**do  > .
 1. Na caixa de **progresso mostrar o aplicativo e a instalação do perfil** , selecione **Sim**.
 1. Configure as outras opções conforme seja necessário.
@@ -208,7 +208,7 @@ Demora cerca de 15 minutos para que o status do perfil do dispositivo seja alter
 
 ## <a name="create-and-assign-a-domain-join-profile"></a>Criar e atribuir um perfil de Associação a um Domínio
 
-1. No [Intune](https://aka.ms/intuneportal), selecione **configuração do dispositivo** > **perfis** > **Criar perfil**.
+1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), selecione **configuração do dispositivo** > **perfis** > **Criar perfil**.
 1. Introduza as seguintes propriedades:
    - **Nome**: introduza um nome descritivo para o novo perfil.
    - **Descrição:** introduza uma descrição para o perfil.

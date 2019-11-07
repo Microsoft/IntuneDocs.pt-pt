@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dbcc50d275a3d3e6a613640e96b363ce7608da81
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: ded91d72321257adc30d0321b5d01e74fa1d51a6
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72508579"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73712201"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Remover dispositivos ao apagar os dados, extinguir ou anular a inscrição do dispositivo de forma manual
 
@@ -53,7 +53,7 @@ Apagar é útil para repor um dispositivo antes de o atribuir a um novo utilizad
 
 ### <a name="wiping-a-device"></a>Limpar um dispositivo
 
-1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 3. Selecione **Dispositivos** > **Todos os dispositivos**.
 4. Selecione o nome do dispositivo que pretende apagar.
 5. No painel que mostra o nome do dispositivo, selecione **Limpar**.
@@ -146,7 +146,7 @@ Só pode limpar dispositivos de quiosque. Não é possível extinguir dispositiv
 
 ### <a name="retire"></a>Extinguir
 
-1. Inicie sessão no [Intune no portal do Azure](https://aka.ms/intuneportal).
+1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. No painel **Dispositivos**, selecione **Todos os dispositivos**.
 3. Selecione o nome do dispositivo que pretende extinguir.
 4. No painel que mostra o nome do dispositivo, selecione **Extinguir**. Para confirmar, selecione **Sim**.
@@ -157,12 +157,12 @@ Se o dispositivo estiver ativado e ligado, a ação **Extinguir** propaga-se a t
 
 Se pretender remover dispositivos do portal do Intune, poderá eliminá-los no painel do dispositivo específico. Da próxima vez que o dispositivo for registado, todos os dados da empresa no mesmo serão removidos.
 
-1. Inicie sessão no [Intune no portal do Azure](https://aka.ms/intuneportal).
+1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Escolha **Dispositivos** > **Todos os dispositivos** > escolha os dispositivos que quer eliminar > **Eliminar**.
 
 ### <a name="automatically-delete-devices-with-cleanup-rules"></a>Eliminar automaticamente dispositivos com regras de limpeza
 Pode configurar o Intune de forma a eliminar automaticamente dispositivos que parecem estar inativos, obsoletos ou sem resposta. Estas regras de limpeza monitorizam o inventário do seu dispositivo de forma contínua para que os registos do mesmo se mantenham atualizados. Os dispositivos eliminados desta forma são removidos da gestão do Intune.
-1. Inicie sessão no [Intune no portal do Azure](https://aka.ms/intuneportal).
+1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selecione **Dispositivos** > **Regras de limpeza do dispositivo** > **Sim**.
 3. Na caixa **excluir dispositivos que não fizeram check-in neste número de dias** , insira um número entre 30 e 270.
 4. Escolha **Guardar**.
@@ -185,7 +185,7 @@ Poderá ter de eliminar dispositivos do Azure AD devido a problemas de comunica�
 
 Se pretender remover completamente um dispositivo DEP da Apple da gestão pelo Intune, siga estes passos:
 
-1. Inicie sessão no [Intune no portal do Azure](https://aka.ms/intuneportal).
+1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selecione **Dispositivos** > **Todos os dispositivos** > selecione o dispositivo > **Extinguir**.
 ![Captura de ecrã da extinção](./media/devices-wipe/retire.png)
 3. Aceda a [deploy.apple.com](http://deploy.apple.com) e procure o dispositivo através do respetivo número de série.

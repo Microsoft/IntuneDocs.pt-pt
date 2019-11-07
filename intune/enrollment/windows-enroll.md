@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 55147de71d764feb89aa305c7e3282cfb1fff3c1
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 5eb5a8f462846afd97ae4ea84b7431ae147d918c
+ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503044"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73709199"
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Configurar a inscrição para dispositivos Windows
 
@@ -102,7 +102,7 @@ Enterpriseenrollment-s.Manage.microsoft.com é o FQDN preferencial para a inscri
 Não é suportada a utilização de um método que não seja a configuração do CNAME. Por exemplo, não é suportada a utilização de um servidor proxy para redirecionar enterpriseenrollment.contoso.com/EnrollmentServer/Discovery.svc para enterpriseenrollment-s.manage.microsoft.com/EnrollmentServer/Discovery.svc ou para manage.microsoft.com/EnrollmentServer/Discovery.svc.
 
 **Passo 2: verificar o CNAME** (opcional)<br>
-1. No [Intune no portal do Azure](https://aka.ms/intuneportal), selecione **Inscrição de dispositivos** > **Inscrição no Windows** > **Validação de CNAME**.
+1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **registro de dispositivo** > registro do **Windows** > **validação de CNAME**.
 2. Na caixa **Domínio**, introduza o site da empresa e, em seguida, selecione **Testar**.
 
 ## <a name="tell-users-how-to-enroll-windows-devices"></a>Informar os utilizadores sobre como inscrever dispositivos Windows

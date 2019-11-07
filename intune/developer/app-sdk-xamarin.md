@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 19202d4387635b7cd1f7e4604d755fb8a213d327
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: ec234a3d93127a26af4203a4776545602334858b
+ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503429"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73709566"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Enlaces Xamarin do SDK da Aplicação Microsoft Intune
 
@@ -80,7 +80,7 @@ Se seu aplicativo já estiver configurado para usar a ADAL ou MSAL e tiver sua p
 
       As aplicações poderão transmitir "nulo" se o UPN do utilizador for desconhecido no momento da chamada. Neste caso, pedir-se-á aos utilizadores para introduzirem o respetivo endereço de e-mail e palavra-passe.
       
-      Se a sua aplicação já utilizar a ADAL ou a MSAL para autenticar utilizadores, pode configurar uma experiência de início de sessão único (SSO) entre a aplicação e o SDK do Intune. Em primeiro lugar, terá de configurar a ADAL/MSAL para armazenar tokens no mesmo grupo de acesso de keychain utilizado pelos Enlaces Xamarin do Intune para iOS (com.microsoft.adalcache). Para a ADAL, você pode fazer isso [definindo a propriedade iOSKeychainSecurityGroup de AuthenticationContext](https://github.com/AzureAD/azure-activedirectory-library-for-dotnet/wiki/iOS-Keychain-Access). Para MSAL, você precisará [definir a propriedade iOSKeychainSecurityGroup de PublicClientApplication](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Xamarin-iOS-specifics#enable-keychain-access). Em seguida, terá de substituir as predefinições do AAD utilizadas pelo SDK do Intune pelas da sua aplicação. Pode fazê-lo através do dicionário IntuneMAMSettings no ficheiro Info.plist da aplicação, tal como mencionado no [Guia para Programadores do SDK da Aplicação Intune para iOS](app-sdk-ios.md#configure-settings-for-the-intune-app-sdk), ou pode utilizar as propriedades de substituição do AAD da instância IntuneMAMPolicyManager. A abordagem do ficheiro Info.plist é recomendada para aplicações cujas definições da ADAL sejam estáticas, enquanto as propriedades de substituição são recomendadas para aplicações que determinem esses valores no runtime. Depois de configurar todas as definições do SSO, a sua aplicação deve fornecer o UPN do utilizador ao método RegisterAndEnrollAccount de IntuneMAMEnrollmentManager após a autenticação bem-sucedida:
+      Se a sua aplicação já utilizar a ADAL ou a MSAL para autenticar utilizadores, pode configurar uma experiência de início de sessão único (SSO) entre a aplicação e o SDK do Intune. Primeiro, você precisará substituir as configurações padrão do AAD usadas pelo SDK do Intune com as do seu aplicativo. Você pode fazer isso por meio do dicionário IntuneMAMSettings no info. plist do aplicativo, conforme mencionado no [Guia do desenvolvedor do SDK de aplicativos do Intune para IOS](app-sdk-ios.md#configure-settings-for-the-intune-app-sdk), ou pode fazer isso no código por meio das propriedades de substituição do AAD da classe IntuneMAMSettings. A abordagem do ficheiro Info.plist é recomendada para aplicações cujas definições da ADAL sejam estáticas, enquanto as propriedades de substituição são recomendadas para aplicações que determinem esses valores no runtime. Depois de configurar todas as definições do SSO, a sua aplicação deve fornecer o UPN do utilizador ao método RegisterAndEnrollAccount de IntuneMAMEnrollmentManager após a autenticação bem-sucedida:
 
       ```csharp
       IntuneMAMEnrollmentManager.Instance.RegisterAndEnrollAccount(string identity);

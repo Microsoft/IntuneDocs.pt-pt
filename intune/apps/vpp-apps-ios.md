@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/22/2019
+ms.date: 11/06/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9625243698bffc93ed969a8c2e4b06b4f3093f4d
-ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
+ms.openlocfilehash: e76077553d4394366ca3e4403e74f4f3c9d8b996
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72785538"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73712866"
 ---
 # <a name="how-to-manage-ios-and-macos-apps-purchased-through-apple-volume-purchase-program-with-microsoft-intune"></a>Como gerenciar aplicativos iOS e macOS adquiridos por meio de Apple Volume Purchase Program com Microsoft Intune
 
@@ -89,6 +89,8 @@ Antes de começar, tem de obter um token VPP da Apple e carregá-lo para a sua c
 5. No painel **Criar token VPP**, especifique as seguintes informações:
     - **Ficheiro de token VPP** – se ainda não o fez, inscreva-se no Volume Purchase Program for Business ou no Volume Purchase Program for Education. Após a inscrição, transfira o token VPP da Apple para a sua conta e selecione-o aqui.
     - **ID Apple** – Introduza o ID Apple da conta associada ao programa de compra em volume.
+    - **Assuma o controle do token de outro MDM** -definir essa opção como **Sim** permite que o token seja reatribuído ao Intune de outro MDM.
+    - **Nome do token** – um campo administrativo para definir o nome do token.    
     - **País/região** -selecione o repositório de país/região do VPP.  O Intune sincroniza aplicativos VPP para todas as localidades do repositório de país/região do VPP especificado.
         > [!WARNING]  
         > A alteração do país/região atualizará os metadados dos aplicativos e a URL de armazenamento na próxima sincronização com o serviço Apple para aplicativos criados com esse token. O aplicativo não será atualizado se não existir no novo armazenamento de país/região.
@@ -98,6 +100,9 @@ Antes de começar, tem de obter um token VPP da Apple e carregá-lo para a sua c
 
         > [!NOTE]
         > As atualizações automáticas do aplicativo funcionam para aplicativos licenciados de dispositivo e de usuário para iOS 11,0 e superior ou macOS 10,12 e superior.
+
+    - **Eu granto a permissão da Microsoft para enviar informações do usuário e do dispositivo para a Apple.** -Você deve selecionar **concordo** para continuar. Para examinar quais dados o Microisoft envia à Apple, consulte [Data Intune SENDs to Apple](~/protect/data-intune-sends-to-apple.md).
+
 6. Quando tiver terminado, selecione **Criar**.
 
 O token é apresentado no painel da lista de tokens.

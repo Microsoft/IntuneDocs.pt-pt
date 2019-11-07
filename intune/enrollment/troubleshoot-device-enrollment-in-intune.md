@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f770db6927ed87786f7806e011cdc6cb9bae6b3f
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 190322392909a14681a4b68a79d9a3537360206b
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509265"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713493"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Solucionar problemas de registro de dispositivo no Microsoft Intune
 
@@ -64,9 +64,9 @@ Estes problemas podem ocorrer em todas as plataformas de dispositivos.
 
 Verifique se o utilizador não possui um número de dispositivos atribuídos superior ao máximo permitido ao seguir estes passos:
 
-1. No Intune, selecione **Inscrição de dispositivos** > **Restrições de inscrição** > **Restrições de limite de dispositivos**. Observe o valor apresentado na coluna **Limite de dispositivos**.
+1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **registro de dispositivo** > restrições de **registro** > restrições de **limite de dispositivo**. Observe o valor apresentado na coluna **Limite de dispositivos**.
 
-2. No Intune, selecione **Utilizadores** > **Todos os utilizadores** > selecione o utilizador > **Dispositivos**. Observe o número de dispositivos inscritos.
+2. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **usuários** > **todos os usuários** > selecione o usuário > **dispositivos**. Observe o número de dispositivos inscritos.
 
 3. Se o número de dispositivos inscritos do utilizador for igual à respetiva restrição de limite de dispositivos, o utilizador não poderá inscrever mais dispositivos até:
     - [Os dispositivos existentes serem removidos](../remote-actions/devices-wipe.md) ou

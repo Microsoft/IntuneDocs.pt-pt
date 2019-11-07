@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d69bd040929da08d7d23db764c5b01f6aca6a9ea
-ms.sourcegitcommit: c38a856725993a4473ada75e669a57f75ab376f8
+ms.openlocfilehash: 5e453002493e95bd5147cca115075a17a6e7a298
+ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73143167"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73709328"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>Configurar uma página de status de registro
  
@@ -64,14 +64,14 @@ Você também pode definir a ordem de prioridade de cada perfil para considerar 
 
 Para ativar a página status do registro, siga as etapas abaixo.
  
-1. No [Intune](https://aka.ms/intuneportal), escolha **registro de dispositivo** > **registro do Windows** > **página status de registro**.
+1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **registro de dispositivo** > registro do **Windows** > **página status do registro**.
 2. No painel **Página de Estado de Inscrição**, selecione **Predefinição** > **Definições**.
 3. Para **Mostrar progresso de instalação de aplicações e perfis**, selecione **Sim**.
 4. Selecione as outras definições que pretende ativar e, em seguida, selecione **Guardar**.
 
 ## <a name="create-enrollment-status-page-profile-and-assign-to-a-group"></a>Criar perfil de página de status de registro e atribuir a um grupo
 
-1. No [Intune](https://aka.ms/intuneportal), escolha **registro de dispositivo** > **registro do Windows** > **página status do registro** > **Criar perfil**.
+1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **registro de dispositivo** > registro do **Windows** > **página status do registro** > **Criar perfil**.
 2. Forneça um **Nome** e uma **Descrição**.
 3. Selecione **Criar**.
 4. Selecione o novo perfil na lista **Página de Estado de Inscrição**.
@@ -82,7 +82,7 @@ Para ativar a página status do registro, siga as etapas abaixo.
 
 Um usuário pode estar em muitos grupos e ter muitos perfis de página de status de registro. Para lidar com esses conflitos, você pode definir as prioridades para cada perfil. Ao registrar, se alguém tiver mais de um perfil de página de status de registro, somente o perfil de prioridade mais alta será aplicado ao dispositivo registrado.
 
-1. No [Intune](https://aka.ms/intuneportal), escolha **registro de dispositivo** > **registro do Windows** > **página status de registro**.
+1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **registro de dispositivo** > registro do **Windows** > **página status do registro**.
 2. Paire o cursor sobre o perfil na lista.
 3. Utilize os três pontos verticais para arrastar o perfil para a posição pretendida na lista.
 
@@ -90,7 +90,7 @@ Um usuário pode estar em muitos grupos e ter muitos perfis de página de status
 
 Pode especificar que aplicações têm de ser instaladas para o utilizador poder aceder à área de trabalho.
 
-1. No Intune, escolha **registro de dispositivo** > **registro do Windows** > **página status de registro**.
+1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **registro de dispositivo** > registro do **Windows** > **página status do registro**.
 2. Escolha um perfil > **Definições**.
 3. Escolha **Sim** para **Mostrar progresso de instalação de aplicações e perfis**.
 4. Escolha **Sim** para **Bloquear a utilização de dispositivos até que todas as aplicações e perfis sejam instalados**.
