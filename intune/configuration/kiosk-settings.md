@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/22/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 271b49a4c927bccb5cd967ea99b0d7bd5c2bd515
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: b7d09700847eae6a43111b0a4e865522f01862b9
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72492350"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755159"
 ---
 # <a name="windows-10-and-windows-holographic-for-business-device-settings-to-run-as-a-dedicated-kiosk-using-intune"></a>Configurações do dispositivo Windows 10 e Windows Holographic para empresas para execução como um quiosque dedicado usando o Intune
 
@@ -39,8 +39,8 @@ Este artigo mostra como criar um perfil de configuração de dispositivo. Para o
 
 ## <a name="create-the-profile"></a>Criar o perfil
 
-1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selecione **Configuração do dispositivo** > **Perfis** > **Criar Perfil**.
+1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **dispositivos** > **perfis de configuração** > **Criar perfil**.
 3. Introduza as seguintes propriedades:
 
    - **Nome**: introduza um nome descritivo para o novo perfil.
@@ -60,7 +60,7 @@ Este artigo mostra como criar um perfil de configuração de dispositivo. Para o
       - [Configurações de quiosque do Windows 10](kiosk-settings-windows.md)
       - [Configurações de quiosque do Windows Holographic para empresas](kiosk-settings-holographic.md)
 
-5. Assim que terminar, selecione **OK** > **Criar** para guardar as alterações. 
+5. Assim que terminar, selecione **OK** > **Criar** para guardar as alterações.
 
 O perfil é criado e mostrado na lista de perfis. Em seguida, [atribua](device-profile-assign.md) o perfil.
 

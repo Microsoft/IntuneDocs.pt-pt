@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/18/2019
+ms.date: 11/07/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b0f31add65063665da5a7961e2caf9eb30a847e2
-ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
+ms.openlocfilehash: 3db085e6e88f8f57eb0276afa77290df8574568f
+ms.sourcegitcommit: b5e719fb507b1bc4774674e76c856c435e69f68c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72787882"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "73801733"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>Configurar e utilizar certificados PKCS com o Intune
 
@@ -142,13 +142,14 @@ Para autenticar um dispositivo com VPN, WiFi ou outros recursos, um dispositivo 
 > [!IMPORTANT]  
 > O Microsoft Intune Certificate Connector não pode ser instalado na autoridade de certificação emissora (CA) e, em vez disso, deve ser instalado em um servidor Windows separado.  
 
-1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selecione **configuração do dispositivo** > **conectores de certificação** > **Adicionar**.
-3. Baixe e salve o arquivo do conector em um local que você possa acessar do servidor no qual você vai instalar o conector.
+1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-    ![Download de Microsoft Intune Certificate Connector](./media/certficates-pfx-configure/download-ndes-connector.png)
+2. Selecione **Administração de locatários** > **conectores e tokens** > **conectores de certificado** >  **+ Adicionar**.
+
+3. Clique em *baixar o software do conector de certificado* para o conector para #12 PKCS e salve o arquivo em um local que você possa acessar do servidor no qual você vai instalar o conector.
+
+   ![Download de Microsoft Intune Certificate Connector](./media/certficates-pfx-configure/download-ndes-connector.png)
  
-
 4. Após a transferência ser concluída, inicie sessão no servidor. Em seguida:
 
     1. Certifique-se de que o .NET 4.5 Framework ou superior está instalado, pois é necessário para o Certificate Connector do NDES. O .NET 4.5 Framework vem incluído automaticamente com o Windows Server 2012 R2 e versões mais recentes.
@@ -166,37 +167,44 @@ Para autenticar um dispositivo com VPN, WiFi ou outros recursos, um dispositivo 
 
 ## <a name="create-a-trusted-certificate-profile"></a>Criar um perfil de certificado fidedigno
 
-1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) e vá para **configuração do dispositivo** > **perfis** > **Criar perfil**.
-    ![Navigate ao Intune e criar um novo perfil para um certificado confiável ](./media/certficates-pfx-configure/certificates-pfx-configure-profile-new.png)
+1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-2. Introduza as seguintes propriedades:
+2. Selecione **dispositivos** > **perfis de configuração** > **Criar perfil**.
+
+   ![Navegue até o Intune e crie um novo perfil para um certificado confiável](./media/certficates-pfx-configure/certificates-pfx-configure-profile-new.png)
+
+3. Introduza as seguintes propriedades:
 
     - O **Nome** do perfil
     - Opcionalmente, defina uma descrição
     - A **Plataforma** na qual vai implementar o perfil
     - Defina o **Tipo de perfil** como **Certificado fidedigno**
 
-3. Aceda às **Definições** e introduza o ficheiro .cer do Certificado da AC de Raiz que exportou anteriormente.
+4. Selecione **configurações**e especifique o certificado de autoridade de certificação raiz do arquivo. cer exportado anteriormente.
 
    > [!NOTE]
    > Dependendo da plataforma escolhida na **etapa 2**, você pode ou não ter a opção de escolher o **repositório de destino** para o certificado.
 
-   ![Criar um perfil e carregar um certificado confiável](./media/certficates-pfx-configure/certificates-pfx-configure-profile-fill.png) 
+   ![Criar um perfil e carregar um certificado confiável](./media/certficates-pfx-configure/certificates-pfx-configure-profile-fill.png)
 
-4. Selecione **OK** > **Criar** para guardar o perfil.
-5. Para atribuir o novo perfil a um ou mais dispositivos, veja [Atribuir perfis de dispositivo no Microsoft Intune](../configuration/device-profile-assign.md).
+5. Selecione **OK** > **Criar** para guardar o perfil.
+
+6. Para atribuir o novo perfil a um ou mais dispositivos, veja [Atribuir perfis de dispositivo no Microsoft Intune](../configuration/device-profile-assign.md).
 
 ## <a name="create-a-pkcs-certificate-profile"></a>Criar um perfil de certificado PKCS
 
-1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) e vá para **configuração do dispositivo** > **perfis** > **Criar perfil**.
-2. Introduza as seguintes propriedades:
+1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+
+2. Selecione e vá para **dispositivos** > **perfis de configuração** > **Criar perfil**.
+
+3. Introduza as seguintes propriedades:
 
     - O **Nome** do perfil
     - Opcionalmente, defina uma descrição
     - A **Plataforma** na qual vai implementar o perfil
     - Defina o **Tipo de perfil** como **Certificado PKCS**
 
-3. Vá para **configurações**e configure as propriedades que se aplicam à plataforma selecionada:  
+4. Selecione **configurações**e configure as propriedades que se aplicam à plataforma selecionada:
    
    |Definição     | Platform     | Details   |
    |------------|------------|------------|
@@ -212,8 +220,9 @@ Para autenticar um dispositivo com VPN, WiFi ou outros recursos, um dispositivo 
    |**Permitir que todos os aplicativos acessem a chave privada** |macOS  |Defina como **habilitar** para fornecer aos aplicativos que estão configurados para o acesso do dispositivo Mac associado à chave privada Certificados PKCS. <br><br> Para obter mais informações sobre essa configuração, consulte *AllowAllAppsAccess* a seção carga do certificado da [referência do perfil de configuração](https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf) na documentação do desenvolvedor da Apple. |
    |**Certificado raiz**             |**-** Administrador do dispositivo Android <br> **-** Android Enterprise (*proprietário do dispositivo*, *perfil de trabalho*) |Selecione um perfil de certificado de autoridade de certificação raiz que foi atribuído anteriormente. |
 
-4. Selecione **OK** > **Criar** para guardar o perfil.
-5. Para atribuir o novo perfil a um ou mais dispositivos, veja [Atribuir perfis de dispositivo no Microsoft Intune](../configuration/device-profile-assign.md).
+5. Selecione **OK** > **Criar** para guardar o perfil.
+
+6. Para atribuir o novo perfil a um ou mais dispositivos, veja [Atribuir perfis de dispositivo no Microsoft Intune](../configuration/device-profile-assign.md).
 
    > [!NOTE]
    > Em dispositivos com um perfil do Android Enterprise, os certificados instalados usando um perfil de certificado PKCS não são visíveis no dispositivo. Para confirmar a implantação de certificado bem-sucedida, verifique o status do perfil no console do Intune.
@@ -238,7 +247,7 @@ Quando você cria um perfil de certificado PKCS do macOS, as opções para o for
   - **CN = {{IMEINumber}}** : o número exclusivo IMEI (identidade de equipamentos móveis internacional) usado para identificar um telefone celular.
   - **CN = {{OnPrem_Distinguished_Name}}** : uma sequência de nomes distintos relativos separados por vírgula, como *CN = Jane Doe, ou = accounts, DC = Corp, DC = contoso, DC = com*.
 
-    Para usar a variável *{{OnPrem_Distinguished_Name}}* , certifique-se de sincronizar o atributo de usuário *onpremisesdistinguishedname* usando [Azure ad Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) ao Azure AD.
+    Para usar a variável *{{OnPrem_Distinguished_Name}}* , certifique-se de sincronizar o atributo de usuário *onpremisesdistinguishedname* usando [Azure ad Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) para o Azure AD.
 
   - **CN = {{onPremisesSamAccountName}}** : os administradores podem sincronizar o atributo samAccountName de Active Directory ao Azure ad usando o Azure ad Connect em um atributo chamado *onPremisesSamAccountName*. O Intune pode substituir essa variável como parte de uma solicitação de emissão de certificado no assunto de um certificado. O atributo samAccountName é o nome de entrada do usuário usado para dar suporte a clientes e servidores de uma versão anterior do Windows (anterior ao Windows 2000). O formato do nome de entrada do usuário é: *DomainName\testUser*ou somente *testuser*.
 
@@ -262,7 +271,7 @@ Quando você cria um perfil de certificado PKCS do macOS, as opções para o for
   - **{{DeviceName}}**
   - **{{FullyQualifiedDomainName}}** *(aplicável somente para dispositivos Windows e ingressados no domínio)*
   - **{{MEID}}**
-   
+
   Você pode especificar essas variáveis, seguidas pelo texto da variável, na caixa de texto. Por exemplo, o nome comum para um dispositivo chamado *Device1* pode ser adicionado como **CN = {{DeviceName}} Device1**.
 
   > [!IMPORTANT]  
@@ -273,21 +282,25 @@ Quando você cria um perfil de certificado PKCS do macOS, as opções para o for
 
 
 ## <a name="whats-new-for-connectors"></a>O que há de novo para conectores
-As atualizações para os dois conectores de certificado são liberadas periodicamente. Quando atualizamos um conector, você pode ler sobre as alterações aqui. 
+
+As atualizações para os dois conectores de certificado são liberadas periodicamente. Quando atualizamos um conector, você pode ler sobre as alterações aqui.
 
 O *conector de certificados PFX para Microsoft Intune* [dá suporte a atualizações automáticas](#requirements), enquanto o *conector de certificado do Intune* é atualizado manualmente.
 
-### <a name="may-17-2019"></a>17 de maio de 2019  
+### <a name="may-17-2019"></a>17 de maio de 2019
+
 - **Conector de certificados PFX para 6.1905.0.404 de versão de Microsoft Intune**  
   Alterações nesta versão:  
   - Corrigido um problema em que os certificados PFX existentes continuam a ser reprocessados, o que faz com que o conector pare de processar novas solicitações. 
 
-### <a name="may-6-2019"></a>6 de maio de 2019  
+### <a name="may-6-2019"></a>6 de maio de 2019
+
 - **Conector de certificados PFX para 6.1905.0.402 de versão de Microsoft Intune**  
   Alterações nesta versão:  
   - O intervalo de sondagem para o conector é reduzido de 5 minutos a 30 segundos.
  
-### <a name="april-2-2019"></a>2 de abril de 2019  
+### <a name="april-2-2019"></a>2 de abril de 2019
+
 - **Conector de certificado do Intune – versão 6.1904.1.0**  
   Alterações nesta versão:  
   - Corrigido um problema em que o conector pode falhar ao se registrar no Intune depois de entrar no conector com uma conta de administrador global.  

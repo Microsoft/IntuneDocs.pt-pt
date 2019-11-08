@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f6d4b076b508316cdb2d3d5f2814fc5e46a014e7
-ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
+ms.openlocfilehash: e9fe2b2174252aa1081eb311d79b4b5ba37f96f2
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73709514"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755341"
 ---
 # <a name="use-device-firmware-configuration-interface-profiles-on-windows-devices-in-microsoft-intune-public-preview"></a>Usar perfis de interface de configuração de firmware de dispositivo em dispositivos Windows no Microsoft Intune (visualização pública)
 
@@ -77,8 +77,8 @@ Esse perfil garante que os dispositivos sejam verificados e habilitados para DFC
 
 Esse perfil inclui as configurações de DFCI que você configura.
 
-1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selecione **Configuração do dispositivo** > **Perfis** > **Criar perfil**.
+1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **dispositivos** > **perfis de configuração** > **Criar perfil**.
 3. Introduza as seguintes propriedades:
 
     - **Nome**: Insira um nome descritivo para o perfil. Atribua nomes às políticas de forma que possa identificá-las facilmente mais tarde. Por exemplo, um bom nome de perfil é **Windows: definir configurações de DFCI em dispositivos Windows**.
@@ -158,7 +158,7 @@ Depois de apagar o dispositivo, mova o dispositivo para o grupo atribuído os no
 
 Quando você estiver pronto para desativar o dispositivo e liberá-lo do gerenciamento, atualize o perfil DFCI para as configurações de UEFI (BIOS) que você deseja no estado de saída. Normalmente, você deseja que todas as configurações estejam habilitadas. Por exemplo:
 
-1. Abra seu perfil do DFCI (**configuração do dispositivo** **perfis**de > ).
+1. Abra seu perfil do DFCI (**dispositivos** > **perfis de configuração**).
 2. Altere o **permitir que o usuário local altere as configurações de UEFI (BIOS)** **somente para as configurações não definidas**.
 3. Defina todas as outras configurações como **não configurado**.
 4. Salve suas configurações.

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1eda7fef3ee9c2ca4e4a13d9b6effba2ed121b0e
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 27a020f4b45ae878718bed4ee6e230c3d288f260
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506948"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755409"
 ---
 # <a name="bundle-ids-for-built-in-ios-apps-you-can-use-in-intune"></a>IDs de pacote para aplicativos iOS internos que você pode usar no Intune
 
@@ -55,6 +55,7 @@ Ao configurar recursos em dispositivos iOS, você também pode adicionar os apli
 | com.apple.Keynote           | Keynote      | Apple     |
 | com.apple.mobilemail        | Correio         | Apple     |
 | com.apple.Maps              | Mapas         | Apple     |
+| com. Apple. Measure           | Mensura      | Apple     |
 | com.apple.MobileSMS         | Mensagens     | Apple     |
 | com.apple.Music             | Música        | Apple     |
 | com.apple.news              | Notícias         | Apple     |

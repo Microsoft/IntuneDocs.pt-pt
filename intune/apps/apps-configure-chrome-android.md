@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2f667940cc238fe243b05c7ab6f1459f63f18faa
-ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
+ms.openlocfilehash: 14e9aa6e82d7b3e24350de8770f02b0a08695e1a
+ms.sourcegitcommit: b5e719fb507b1bc4774674e76c856c435e69f68c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73635481"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "73801656"
 ---
 # <a name="configure-google-chrome-for-android-devices-using-intune"></a>Configurar o Google Chrome para dispositivos Android usando o Intune 
 
@@ -63,7 +63,7 @@ Para obter detalhes adicionais sobre como adicionar um aplicativo Google Play ge
 
     Veja abaixo o exemplo das configurações comuns:
     - **Bloquear o acesso a uma lista de URLs**: `["*"]`
-    - **Permitir acesso a uma lista de URLs**: `["baidu.com", "yahoo.com", "chrome://*"]`
+    - **Permitir acesso a uma lista de URLs**: `["baidu.com", "youtube.com", "chromium.org", "chrome://*"]`
     - **Indicadores gerenciados**: `[{"toplevel_name": "My managed bookmarks folder"  },  {"url": "baidu.com",   "name": "Baidu"},  {"url": "youtube.com", "name": "Youtube"},  {"name": "Chrome links",  "children": [{"url": "chromium.org", "name": "Chromium"},    {"url": "dev.chromium.org", "name": "Chromium Developers"}]}]`
     - **Disponibilidade do modo de Incognito**: `Incognito mode disabled`
 
@@ -71,7 +71,7 @@ Para obter detalhes adicionais sobre como adicionar um aplicativo Google Play ge
 
     ![Configurações comuns](~/apps/media/apps-configure-chrome-android/common-settings.png)
 
-    As configurações acima criam indicadores e permitem o acesso a todos os sites, exceto `baidu.com`, `yahoo.com` e `chrome://`.
+    As configurações acima criam indicadores e bloqueiam o acesso a todas as URLs, exceto `baidu.com`, `yahoo.com`, `chromium.org`e `chrome://`.
 
 5. Clique em **OK** e **adicione** para adicionar sua política de configuração ao Intune.
 6. Atribua essa política de configuração a um grupo de usuários. Para obter mais informações, veja [Atribuir aplicações a grupos com o Microsoft Intune](~/apps/apps-deploy.md). 

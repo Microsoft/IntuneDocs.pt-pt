@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/04/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5628ba39cafe38cc66827d69584d009c15326bd4
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 3804409acadbfc3dfc1c7d6f3372dc939b7b3630
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72491761"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755051"
 ---
 # <a name="create-vpn-profiles-to-connect-to-vpn-servers-in-intune"></a>Criar perfis VPN para se conectar a servidores VPN no Intune
 
@@ -68,8 +68,9 @@ Saiba como criar perfis VPN personalizados com definições URI em [Criar um per
 
 ## <a name="create-a-device-profile"></a>Criar um perfil de dispositivo
 
-1. No [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), selecione **configuração do dispositivo** > **perfis** > **Criar perfil**.
-2. Introduza as seguintes propriedades:
+1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **dispositivos** > **perfis de configuração** > **Criar perfil**.
+3. Introduza as seguintes propriedades:
 
     - **Nome**: Insira um nome descritivo para o perfil. Atribua nomes aos perfis de forma que possa identificá-los facilmente mais tarde. Por exemplo, um bom nome de perfil é o **perfil de VPN para toda a empresa**.
     - **Descrição:** introduza uma descrição para o perfil. Esta definição é opcional, mas recomendada.
@@ -86,7 +87,7 @@ Saiba como criar perfis VPN personalizados com definições URI em [Criar um per
 
     - **Tipo de perfil**: selecione **VPN**.
 
-3. Consoante a plataforma que escolheu, as definições que pode configurar variam. Consulte os seguintes artigos para obter configurações detalhadas em cada plataforma:
+4. Consoante a plataforma que escolheu, as definições que pode configurar variam. Consulte os seguintes artigos para obter configurações detalhadas em cada plataforma:
 
     - [Definições do Android](vpn-settings-android.md)
     - [Configurações do Android Enterprise](vpn-settings-android-enterprise.md)
@@ -96,7 +97,7 @@ Saiba como criar perfis VPN personalizados com definições URI em [Criar um per
     - [Definições do Windows 8.1](vpn-settings-windows-8-1.md)
     - [Definições do Windows 10](vpn-settings-windows-10.md) (incluindo o Windows Holographic for Business)
 
-4. Quando terminar, **crie** seu perfil.
+5. Assim que terminar, selecione **OK** > **Criar** para guardar as alterações.
 
 O perfil é criado e apresentado na lista de perfis. Para atribuir este perfil a grupos, veja [atribuir perfis de dispositivo](device-profile-assign.md).
 

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/18/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eb992747765ea087d5ef536c2da7c444bfa2d987
-ms.sourcegitcommit: 4f979ba7030e72d820113fe23ac8521ddb2433bd
+ms.openlocfilehash: e8747f3dfa9169a4f1f2de9dcf45db0f5cccadd1
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72915732"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73756753"
 ---
 # <a name="use-and-manage-android-enterprise-devices-with-oemconfig-in-microsoft-intune"></a>Usar e gerenciar dispositivos Android Enterprise com o OEMConfig no Microsoft Intune
 
@@ -80,8 +80,8 @@ Verifique se o dispositivo dá suporte a OEMConfig, se o aplicativo OEMConfig co
 
 ## <a name="create-an-oemconfig-profile"></a>Criar um perfil do OEMConfig
 
-1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selecione **Configuração do Dispositivo** > **Perfis** > **Criar perfil**.
+1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **dispositivos** > **perfis de configuração** > **Criar perfil**.
 3. Introduza as seguintes propriedades:
 
     - **Nome**: introduza um nome descritivo para o novo perfil.
@@ -108,11 +108,11 @@ Verifique se o dispositivo dá suporte a OEMConfig, se o aplicativo OEMConfig co
       - Muitas configurações têm valores padrão fornecidos pelo OEM. Para ver se há um valor padrão, passe o mouse sobre o ícone de informações ao lado da configuração. Uma dica de ferramenta mostra os valores padrão para essa configuração (se aplicável) e mais detalhes fornecidos pelo OEM.
 
       - Clicar em **limpar** exclui uma configuração do perfil. Se uma configuração não estiver no perfil, seu valor no dispositivo não será alterado quando o perfil for aplicado.
-        
+
       - Se você criar um pacote vazio (não configurado) no designer de configuração, ele será excluído ao alternar para o editor de JSON.
 
     - **Editor de JSON**: quando você seleciona essa opção, um editor de JSON é aberto com um modelo para o esquema de configuração completo inserido no aplicativo. No editor, personalize o modelo com valores para as diferentes configurações. Se você usar o **Designer de configuração** para alterar seus valores, o editor de JSON substituirá o modelo por valores do designer de configuração.
-    
+
       - Se você estiver atualizando um perfil existente, o editor de JSON mostrará as configurações que foram salvas pela última vez com o perfil.
 
       - Os esquemas OEMConfig podem ser grandes e complexos. Se preferir atualizar essas configurações usando um editor diferente, selecione o botão **baixar modelo JSON** . Use um editor de sua escolha para adicionar seus valores de configuração ao modelo. Em seguida, copie e cole o JSON atualizado no para a propriedade do **Editor JSON** .

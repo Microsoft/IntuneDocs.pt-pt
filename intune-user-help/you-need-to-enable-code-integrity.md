@@ -19,12 +19,12 @@ ms.reviewer: scottduf
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 56982c6ce10f74617471307acd176a0506655398
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 6bde7fc554496b2ecc6f13c7e1b899d7ff05bfa1
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72501222"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73754993"
 ---
 # <a name="enable-code-integrity"></a>Habilitar integridade de código
 
@@ -36,7 +36,7 @@ Se você se identificar como um usuário de dispositivo avançado e quiser exper
 
 ## <a name="additional-resources-for-it-administrators"></a>Recursos adicionais para administradores de ti
 
-Se você for um administrador do Intune e quiser saber mais sobre as configurações de conformidade de integridade do dispositivo do Intune, consulte [Adicionar uma política de conformidade do dispositivo para dispositivos Windows 10 no Intune](https://docs.microsoft.com/intune/protect/compliance-policy-create-windows.md). Para obter uma visão detalhada das ações de conformidade que você pode executar no Intune, consulte o [CSP do HealthAttestation](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp#step-8-take-appropriate-policy-action-based-on-evaluation-results).  
+Se você for um administrador do Intune e quiser saber mais sobre as configurações de conformidade de integridade do dispositivo do Intune, consulte [Adicionar uma política de conformidade do dispositivo para dispositivos Windows 10 no Intune](https://docs.microsoft.com/intune/protect/compliance-policy-create-windows). Para obter uma visão detalhada das ações de conformidade que você pode executar no Intune, consulte o [CSP do HealthAttestation](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp#step-8-take-appropriate-policy-action-based-on-evaluation-results).  
 
 ## <a name="next-steps"></a>Próximos passos
 

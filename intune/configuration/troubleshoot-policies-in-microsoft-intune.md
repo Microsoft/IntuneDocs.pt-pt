@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/20/2019
+ms.date: 11/05/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e2e7dc729879eb6d16a4ab3555d8fe319501a53e
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 687505a3ca2bbdffd26e8870705971aafb4783d2
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72492132"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73754947"
 ---
 # <a name="troubleshoot-policies-and-profiles-and-in-intune"></a>Solucionar problemas de políticas e perfis e no Intune
 
@@ -32,11 +32,12 @@ Microsoft Intune inclui alguns recursos internos de solução de problemas. Use 
 Este artigo lista algumas técnicas comuns de solução de problemas e descreve alguns problemas que podem ocorrer.
 
 ## <a name="check-tenant-status"></a>Verificar status do locatário
+
 Verifique o [status do locatário](../fundamentals/tenant-status.md) e confirme se a assinatura está ativa. Você também pode exibir detalhes de incidentes e avisos ativos que podem afetar sua política ou implantação de perfil.
 
 ## <a name="use-built-in-troubleshooting"></a>Usar a solução de problemas interna
 
-1. No [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), selecione **solucionar problemas**:
+1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), selecione **solução de problemas + suporte**:
 
     ![No Intune, acesse ajuda e suporte e selecione solucionar problemas](./media/troubleshoot-policies-in-microsoft-intune/help-and-support-troubleshoot.png)
 
@@ -102,7 +103,7 @@ Verifique o [status do locatário](../fundamentals/tenant-status.md) e confirme 
 
 ## <a name="youre-unsure-if-a-profile-is-correctly-applied"></a>Você não tem certeza se um perfil é aplicado corretamente
 
-1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selecione **dispositivos** > **todos os dispositivos** > selecione o dispositivo > **configuração do dispositivo**. 
 
     Cada dispositivo lista seus perfis. Cada perfil tem um **status**. O status se aplica quando todos os perfis atribuídos, incluindo restrições e requisitos de hardware e de so, são considerados juntos. Os status possíveis incluem:
