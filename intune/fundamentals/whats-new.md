@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/07/2019
+ms.date: 11/08/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0d1aeea4d9fb47daeef8e44f501e1a61776b0e94
-ms.sourcegitcommit: b5e719fb507b1bc4774674e76c856c435e69f68c
+ms.openlocfilehash: 37ed7bfd204289c963b8134252d9d76f2379ecba
+ms.sourcegitcommit: 768d581cb8bcc5fdcb8ade95d402b11223ab226c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "73801758"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73882499"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 
@@ -52,6 +52,14 @@ Saiba mais sobre as novidades todas as semanas no Microsoft Intune. Você també
 ### Monitor and troubleshoot
 ### Role-based access control
 -->  
+
+## <a name="week-of-november-4-2019"></a>Semana de 4 de novembro de 2019
+
+### <a name="device-security"></a>Segurança do dispositivo
+
+#### <a name="security-baselines-are-supported-on-microsoft-azure-government---4062552---"></a>As linhas de base de segurança têm suporte no Microsoft Azure Governamental<!-- 4062552 -->
+
+As instâncias do Intune hospedadas no *Microsoft Azure governamental* agora podem usar [linhas de base de segurança](../protect/security-baselines.md) para ajudá-lo a proteger e proteger seus usuários e dispositivos.
 
 ## <a name="week-of-october-28-2019"></a>Semana de 28 de outubro de 2019
 
