@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/08/2019
+ms.date: 11/12/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 40865dcca0b0109ae36f65b6691672c0035732b5
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: a6cada91cdad6c117fddd143007e2cdf40939119
+ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502278"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73984139"
 ---
 # <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>Configurações do Windows 10 (e posterior) para proteger dispositivos usando o Intune  
 
@@ -443,8 +443,6 @@ O Microsoft Edge deve ser instalado no dispositivo.
 ## <a name="windows-encryption"></a>Encriptação do Windows  
  
 ### <a name="windows-settings"></a>Definições do Windows  
-
-Essas configurações de criptografia se aplicam a todas as versões do Windows 10.  
 
 - **Criptografar dispositivos**  
   **Padrão**: não configurado  
@@ -981,7 +979,7 @@ Bloquear conexões de saída de qualquer aplicativo para endereços IP ou domín
 - **Carregar XML**  
   **Padrão**: *não configurado*  
 
-  Para usar a proteção contra Exploit para [proteger dispositivos contra explorações](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection), crie um arquivo XML que inclui as configurações de mitigação do sistema e do aplicativo que você deseja. Há dois métodos para criar o arquivo XML:  
+  Para usar a proteção contra Exploit para [proteger dispositivos contra explorações](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection), crie um arquivo XML que inclui as configurações de mitigação do sistema e do aplicativo que você deseja. Há dois métodos para criar o arquivo XML:  
 
   - *PowerShell* -use um ou mais dos cmdlets do PowerShell *Get-ProcessMitigation*, *set-ProcessMitigation*e *ConvertTo-ProcessMitigationPolicy* . Os cmdlets configuram definições de mitigação e exportam uma representação XML deles.  
 

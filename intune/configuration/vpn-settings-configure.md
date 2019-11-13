@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3804409acadbfc3dfc1c7d6f3372dc939b7b3630
-ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
+ms.openlocfilehash: 59a1b5679b81a8de90e39d6ec13bbe87dac90947
+ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73755051"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73984173"
 ---
 # <a name="create-vpn-profiles-to-connect-to-vpn-servers-in-intune"></a>Criar perfis VPN para se conectar a servidores VPN no Intune
 
@@ -50,7 +50,7 @@ Pode criar perfis VPN com os seguintes tipos de ligação:
 |Check Point Capsule VPN|-Android<br/>-Perfis de trabalho do Android Enterprise<br/>-iOS<br/>-macOS<br/>-Windows 10<br/>-Windows 8.1<br/>-Windows Phone 8,1|
 |Cisco AnyConnect|-Android<br/>-Perfis de trabalho do Android Enterprise<br/>-Proprietário do dispositivo Android Enterprise (totalmente gerenciado)<br/>-iOS<br/>-macOS|
 |Cisco (IPSec)|iOS|
-|Citrix SSO|-Android<br/>-Perfis de trabalho do Android Enterprise: usar [política de configuração de aplicativo](../apps/app-configuration-policies-use-android.md)<br/>-iOS<br/>-Windows 10|
+|Citrix SSO|-Android<br/>-Perfis de trabalho do Android Enterprise: usar [política de configuração de aplicativo](../apps/app-configuration-policies-use-android.md)<br/>-Proprietário do dispositivo Android Enterprise (totalmente gerenciado): usar [política de configuração de aplicativo](../apps/app-configuration-policies-use-android.md)<br/>-iOS<br/>-Windows 10|
 |VPN Personalizada|-iOS<br/>-macOS|
 |F5 Access|-Android<br/>-Perfis de trabalho do Android Enterprise<br/>-Proprietário do dispositivo Android Enterprise (totalmente gerenciado)<br/>-iOS<br/>-macOS<br/>-Windows 10<br/>-Windows 8.1<br/>-Windows Phone 8,1|
 |IKEv2| -iOS<br/>-Windows 10|

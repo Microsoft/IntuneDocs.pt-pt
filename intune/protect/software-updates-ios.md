@@ -13,12 +13,12 @@ ms.localizationpriority: high
 ms.technology: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ada1f6e5292684803fbea40430cdd43d61796746
-ms.sourcegitcommit: 1a5b185acd27954b10b6d59409d82eb80fd71284
+ms.openlocfilehash: 0f9750603d19d9b19697c7d2660351c4586432f6
+ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72681364"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73984184"
 ---
 # <a name="add-ios-software-update-policies-in-intune"></a>Adicionar políticas de atualização de software do iOS no Intune
 
@@ -28,7 +28,7 @@ Esta funcionalidade aplica-se a:
 
 - iOS 10,3 e posterior (supervisionado)
 
-O dispositivo comunica com o Intune aproximadamente de 8 em 8 horas. Se uma atualização estiver disponível, o dispositivo baixará e instalará, exceto durante os horários restritos. Não é necessária nenhuma interação do utilizador para atualizar o dispositivo. A política não impede um utilizador de atualizar manualmente o SO.
+O dispositivo comunica com o Intune aproximadamente de 8 em 8 horas. Se uma atualização estiver disponível, o dispositivo baixará e instalará, exceto durante os horários restritos. Embora o processo de atualização normalmente não envolva nenhuma interação do usuário, se o dispositivo tiver uma senha, o usuário será solicitado a inseri-lo para iniciar uma atualização de software. Isso se aplica ao iOS 10,3 e às versões posteriores. A política não impede um utilizador de atualizar manualmente o SO.
 
 ## <a name="configure-the-policy"></a>Configurar a política
 
@@ -80,7 +80,7 @@ Você pode editar uma política existente, incluindo a alteração dos horários
 1. Em **atualizações de software**, selecione **Atualizar políticas para IOS** e, em seguida, selecione a política que você deseja editar.
 
 2. Ao exibir as **Propriedades**de políticas, selecione **Editar** para a página de política que você deseja modificar.  
-   ![Edit uma ](./media/software-updates-ios/edit-policy.png) de vigilância   
+   ![editar uma](./media/software-updates-ios/edit-policy.png) de vigilância   
 
 3. Depois de introduzir uma alteração, selecione **revisar + salvar**  > **salvar** para salvar as edições e retornar às *Propriedades*das políticas.  
  
