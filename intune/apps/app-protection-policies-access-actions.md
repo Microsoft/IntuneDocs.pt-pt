@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 882c542d6a1d981b9924bb33eee40f03b41689f7
-ms.sourcegitcommit: 4bf23327af734a9811d555fbd566c31239e2acd6
+ms.openlocfilehash: b5983742043dca9d07242315d4aaa97de2ead8d6
+ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "72999482"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73984025"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-conditional-launch-actions-in-intune"></a>Apagar dados seletivamente usando as ações de inicialização condicional da política de proteção de aplicativo no Intune
 
@@ -44,9 +44,6 @@ Com estas definições, pode eliminar dados da empresa explicitamente do disposi
 7. Selecione uma **Definição** e introduza o **Valor** que os utilizadores têm de cumprir para iniciar sessão na sua aplicação da empresa. 
 8. Selecione a **Ação** a realizar se os utilizadores não cumprirem os seus requisitos. Em alguns casos, é possível configurar múltiplas ações para uma única definição. Para obter mais informações, veja [Como criar e atribuir políticas de proteção de aplicações](app-protection-policies.md).
 
->[!NOTE]
-> Para usar os **modelos de dispositivo ou a configuração de fabricante (s) do dispositivo** , insira uma lista separada por ponto-e-vírgula de identificadores de modelo de dispositivo (Ios) ou fabricantes de dispositivos (Android). Evite a utilização de espaços nas listas de múltiplos valores. Estes valores não são sensíveis a maiúsculas e minúsculas. 
-
 ## <a name="policy-settings"></a>Definições de política 
 
 A tabela das definições de políticas de proteção de aplicações apresenta colunas para a **Definição**, o **Valor** e a **Ação**.
@@ -62,7 +59,7 @@ Para iOS, poderá configurar ações para as seguintes definições a partir da 
 - Modelos de dispositivos
 - Nível máximo de ameaça do dispositivo permitido
 
-Para utilizar a definição **Modelos de dispositivos**, introduza uma lista de identificadores de modelos de iOS separados por ponto e vírgula. Pode encontrar um identificador de modelos de iOS na coluna Tipo de Dispositivo na [documentação de suporte do HockeyApp](https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/ios-device-types).<br>
+Para utilizar a definição **Modelos de dispositivos**, introduza uma lista de identificadores de modelos de iOS separados por ponto e vírgula. Estes valores não são sensíveis a maiúsculas e minúsculas. Além dos relatórios do Intune para a entrada de ' modelo (s) de dispositivo ', você pode encontrar um identificador de modelo do iOS na coluna tipo de dispositivo na [documentação de suporte do HockeyApp](https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/ios-device-types) ou no [repositório GitHub de terceiros](https://gist.github.com/adamawolf/3048717).<br>
 Entrada de exemplo: *iPhone5,2;iPhone5,3*
 
 Nos dispositivos dos utilizadores finais, o cliente do Intune toma medidas com base numa única correspondência de cadeias do modelo de dispositivo especificadas no Intune para as Políticas de Proteção de Aplicações. A correspondência depende inteiramente do que é comunicado pelo dispositivo. Recomendamos-lhe (ao administrador de TI) que se certifique de que o comportamento previsto está a ocorrer ao testar esta definição com base numa variedade de fabricantes e modelos de dispositivos e direcionado para um pequeno grupo de utilizadores. O valor predefinido é **Não configurado**.<br>
@@ -90,7 +87,7 @@ Para Android, poderá configurar ações para as seguintes definições a partir
 
 Usando a **versão mín portal da empresa**, você pode especificar uma versão específica definida mínima do portal da empresa que é imposta em um dispositivo de usuário final. Essa configuração de inicialização condicional permite definir valores para **bloquear o acesso**, **apagar dados**e **avisar** como ações possíveis quando cada valor não é atendido. Os formatos possíveis para esse valor seguem o padrão *[Major]. [ Minor]* , *[principal]. [ Secundária]. [Build]* ou *[Major]. [ Secundária]. [Build]. [Revisão]* . Considerando que alguns usuários finais podem não preferir uma atualização forçada de aplicativos no local, a opção ' WARN ' pode ser ideal ao definir essa configuração. O Google Play Store faz um bom trabalho de enviar apenas os bytes Delta para atualizações do aplicativo, mas isso ainda pode ser uma grande quantidade de dados que o usuário talvez não queira utilizar se eles estiverem em dados no momento da atualização. Forçar uma atualização e, portanto, baixar um aplicativo atualizado pode resultar em encargos de dados inesperados no momento da atualização. A configuração de **versão mín portal da empresa** , se configurada, afetará qualquer usuário final que obtém a versão 5.0.4560.0 do portal da empresa e quaisquer versões futuras do portal da empresa. Essa configuração não terá nenhum efeito sobre os usuários que usam uma versão do Portal da Empresa mais antiga do que a versão com a qual esse recurso é lançado. Os usuários finais que usam as atualizações automáticas do aplicativo em seu dispositivo provavelmente não verão nenhuma caixa de diálogo desse recurso, Considerando que eles provavelmente estarão na versão mais recente do Portal da Empresa. Essa configuração é Android somente com proteção de aplicativo para dispositivos registrados e não registrados.
 
-Para utilizar a definição **Fabricantes de dispositivos**, introduza uma lista de fabricantes de dispositivos Android separados por ponto e vírgula. Pode encontrar o fabricante de um dispositivo Android nas definições do dispositivo.<br>
+Para utilizar a definição **Fabricantes de dispositivos**, introduza uma lista de fabricantes de dispositivos Android separados por ponto e vírgula. Estes valores não são sensíveis a maiúsculas e minúsculas. Além dos relatórios do Intune, você pode encontrar o fabricante do Android de um dispositivo nas configurações do dispositivo. <br>
 Entrada de exemplo: *Fabricante A;Fabricante B* 
 
 >[!NOTE]

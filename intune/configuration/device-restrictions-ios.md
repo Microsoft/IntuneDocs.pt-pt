@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/06/2019
+ms.date: 11/12/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 488794fdce8f6ebb074648c8e399cb2aecc73b25
-ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
+ms.openlocfilehash: 391c5ac194d5dc7ddf492fe23907279cc4380d3d
+ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73709752"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73984127"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>configurações do dispositivo iOS e iPadOS para permitir ou restringir recursos usando o Intune
 
@@ -447,11 +447,20 @@ Para adicionar aplicações, pode:
 
 ### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>As configurações se aplicam a: registro de dispositivo, registro de dispositivo automatizado (supervisionado)
 
+Observação necessária para o roaming de dados (dica ou nota importante para ajudar com a confusão do cliente): essa configuração não aparecerá no perfil de gerenciamento do dispositivo de destino. Isso ocorre porque essa configuração é tratada como uma ação de dispositivo remoto e sempre que o estado de roaming de dados é alterado no dispositivo, ele se tornará bloqueado novamente pelo serviço do Intune. Mesmo que não esteja no perfil de gerenciamento, ele estará funcionando se ele aparecer como um sucesso do relatório no console de administração. 
 - **Roaming de dados**: escolha **Bloquear** para impedir o roaming de dados na rede celular. **Não configurado** (predefinição) permite o roaming de dados quando o dispositivo está numa rede móvel.
+
+  > [!IMPORTANT]
+  > Essa configuração é tratada como uma ação de dispositivo remoto. Portanto, essa configuração não é mostrada no perfil de gerenciamento no dispositivo. Sempre que o status de roaming de dados é alterado no dispositivo, o **roaming de dados** é bloqueado pelo serviço do Intune. No Intune, se o status do relatório mostrar um êxito, saiba que ele está funcionando, mesmo que a configuração não seja mostrada no perfil de gerenciamento no dispositivo.
+
 - **Busca em segundo plano global durante o roaming**: **Bloquear** impede o uso do recurso de busca em segundo plano global ao fazer roaming na rede celular. **Não configurado** (predefinição) permite que o dispositivo obtenha dados, como o e-mail, quando estiver a utilizar o roaming numa rede móvel.
 - **Discagem por voz**: escolha **Bloquear** para impedir que os usuários usem o recurso de discagem por voz no dispositivo. **Não configurado** (predefinição) permite a marcação por voz no dispositivo.
 - **Roaming de voz**: escolha **Bloquear** para impedir o roaming de voz na rede celular. **Não configurado** (predefinição) permite as chamadas em roaming quando o dispositivo está numa rede móvel.
 - **Hotspot pessoal**: o **bloco** desativa o hotspot pessoal no dispositivo dos usuários com cada sincronização de dispositivo. Essa configuração pode não ser compatível com algumas operadoras. **Não configurado** (predefinição) mantém a configuração do hotspot pessoal como o conjunto predefinido pelo utilizador.
+
+  > [!IMPORTANT]
+  > Essa configuração é tratada como uma ação de dispositivo remoto. Portanto, essa configuração não é mostrada no perfil de gerenciamento no dispositivo. Sempre que o status de hotspot pessoal é alterado no dispositivo, o **hotspot pessoal** é bloqueado pelo serviço do Intune. No Intune, se o status do relatório mostrar um êxito, saiba que ele está funcionando, mesmo que a configuração não seja mostrada no perfil de gerenciamento no dispositivo.
+
 - **Regras de uso de celular (somente aplicativos gerenciados)** : define os tipos de dados que os aplicativos gerenciados podem usar quando em redes de celular. As opções são:
   - **Bloquear o uso de dados da rede celular**: bloqueie o uso de dados da rede celular para **todos os aplicativos gerenciados** ou **escolha aplicativos específicos**.
   - **Bloquear o uso de dados da rede celular em roaming**: bloqueie o uso de dados da rede celular quando estiver em roaming para **todos os aplicativos gerenciados** ou **escolha aplicativos específicos**.
