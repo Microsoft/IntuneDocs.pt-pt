@@ -1,11 +1,11 @@
 ---
 title: Mensagens comuns do Endpoint Protection no Microsoft Intune-Azure | Microsoft Docs
-description: Consulte mensagens comuns e a solução possível ao usar e solucionar problemas do Endpoint Protection e do Windows Defender no Microsoft Intune.
+description: Consulte mensagens comuns e a solução possível ao usar e solucionar problemas do Endpoint Protection e do Microsoft defender no Microsoft Intune.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: Brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 08/26/2019
+ms.date: 11/13/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,20 +18,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e34e1cb30469593c8ec9e756659ad03589ae38bc
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 819586a923f5c0f3a81a6d59c4a3895898182f6b
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509772"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059162"
 ---
 # <a name="endpoint-protection-issues-and-possible-solutions-in-microsoft-intune"></a>Problemas do Endpoint Protection e soluções possíveis no Microsoft Intune
 
 Este artigo lista e descreve as possíveis causas e soluções para alguns erros e avisos. Use as informações para ajudar a resolver problemas ao usar o Endpoint Protection.
 
-## <a name="windows-defender-error-codes"></a>Códigos de erro do Windows Defender
+## <a name="microsoft-defender-error-codes"></a>Códigos de erro do Microsoft defender
 
-Examine os logs de eventos e os códigos de erro para [solucionar problemas com o Windows Defender AV](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/troubleshoot-windows-defender-antivirus).
+Examine os logs de eventos e os códigos de erro para [solucionar problemas com o Microsoft defender AV](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/troubleshoot-windows-defender-antivirus).
 
 ## <a name="common-intune-errors-and-possible-resolutions"></a>Erros comuns do Intune e possíveis resoluções
 
@@ -48,7 +48,7 @@ Examine os logs de eventos e os códigos de erro para [solucionar problemas com 
 
 ### <a name="features-are-disabled"></a>Os recursos estão desabilitados
 
-Você pode receber uma mensagem informando que alguns recursos estão desabilitados. Essas mensagens podem acontecer se o Intune Endpoint Protection ou o Windows Defender for desabilitado por um administrador usando um perfil de configuração. Ou, ele é desabilitado por um usuário final no dispositivo. Mensagens possíveis:
+Você pode receber uma mensagem informando que alguns recursos estão desabilitados. Essas mensagens podem acontecer se o Intune Endpoint Protection ou o Microsoft defender for desabilitado por um administrador usando um perfil de configuração. Ou, ele é desabilitado por um usuário final no dispositivo. Mensagens possíveis:
 
 `Endpoint Protection disabled`  
 `Real-time protection disabled`  
@@ -61,20 +61,20 @@ Você pode receber uma mensagem informando que alguns recursos estão desabilita
 **Soluções possíveis**: habilite esses recursos. Para obter diretrizes, consulte:
 
 - [Adicionar configurações do Endpoint Protection](../protect/endpoint-protection-configure.md)
-- [Windows Defender antivírus](../configuration/device-restrictions-windows-10.md#microsoft-defender-antivirus)
+- [Microsoft defender antivírus](../configuration/device-restrictions-windows-10.md#microsoft-defender-antivirus)
 - [Usuários finais: Ative a proteção em tempo real para acessar os recursos da empresa](/intune-user-help/turn-on-defender-windows)
 
 ### <a name="malware-definitions-out-of-date"></a>Definições de software maligno desatualizadas
 
 Esse status mostra quando as definições de malware no dispositivo estão desatualizadas em 14 dias ou mais. Por exemplo, a mensagem pode mostrar se o dispositivo está desconectado da Internet ou se as definições de malware estão desatualizadas.
 
-**Soluções possíveis**: se as definições de malware estiverem desatualizadas, atualize as definições usando o [Windows Defender antivírus](../configuration/device-restrictions-windows-10.md#microsoft-defender-antivirus).
+**Soluções possíveis**: se as definições de malware estiverem desatualizadas, atualize as definições usando o [Microsoft defender antivírus](../configuration/device-restrictions-windows-10.md#microsoft-defender-antivirus).
 
 ### <a name="full-scan-overdue-or-quick-scan-overdue"></a>Verificação completa vencida ou verificação rápida vencida
 
 Uma verificação completa ou verificação rápida não foi concluída por 14 dias. Esse cenário pode acontecer se o dispositivo for reiniciado durante uma verificação completa.
 
-**Soluções possíveis**: se uma verificação estiver atrasada, você poderá executar uma verificação única ou agendar verificações recorrentes. Veja [Antivírus do Windows Defender](../configuration/device-restrictions-windows-10.md#microsoft-defender-antivirus).
+**Soluções possíveis**: se uma verificação estiver atrasada, você poderá executar uma verificação única ou agendar verificações recorrentes. Consulte [Microsoft defender antivírus](../configuration/device-restrictions-windows-10.md#microsoft-defender-antivirus).
 
 ### <a name="another-endpoint-protection-application-running"></a>Outra aplicação de Endpoint Protection em execução
 

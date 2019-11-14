@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/16/2019
+ms.date: 11/13/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b3372fc83e467b08b479490b3707f2be03409156
-ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
+ms.openlocfilehash: 4a757da6cf4f4a2a3bde907f0025d4a08a52131b
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72749322"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059645"
 ---
 # <a name="guided-scenario---cloud-managed-modern-desktop"></a>Cenário guiado – área de trabalho moderna gerenciada pela nuvem
 
-A área de trabalho moderna é a plataforma de produtividade de ponta para o operador de informações. O Office 365 ProPlus e o Windows 10 são os principais componentes do desktop moderno, juntamente com as linhas de base de segurança mais recentes para a proteção avançada contra ameaças do Windows 10 e do Windows Defender. 
+A área de trabalho moderna é a plataforma de produtividade de ponta para o operador de informações. O Office 365 ProPlus e o Windows 10 são os principais componentes do desktop moderno, juntamente com as linhas de base de segurança mais recentes para a proteção avançada contra ameaças do Windows 10 e do Microsoft defender. 
 
 O gerenciamento da área de trabalho moderna da nuvem traz o benefício adicional das ações remotas de toda a Internet. O gerenciamento de nuvem utiliza as políticas de gerenciamento de dispositivo do Windows Mobile incorporadas e remove dependências na diretiva de grupo Active Directory local. 
 
@@ -118,5 +118,5 @@ Depois que o usuário ingressar no dispositivo para Azure Active Directory, as s
 
 ## <a name="next-steps"></a>Próximos passos
 
-- Se você estiver usando a detecção avançada de ameaças do Windows Defender, crie uma [política de conformidade do Intune](~/protect/advanced-threat-protection.md#create-and-assign-the-compliance-policy) para exigir a análise de ameaças do defender para atender à conformidade.
+- Se você estiver usando a detecção de ameaças avançadas do Microsoft defender, crie uma [política de conformidade do Intune](~/protect/advanced-threat-protection.md#create-and-assign-the-compliance-policy) para exigir a análise de ameaças do defender para atender à conformidade.
 - Crie uma [política de acesso condicional com base no dispositivo](~/protect/advanced-threat-protection.md#create-a-conditional-access-policy) para bloquear o acesso se o dispositivo não atender à conformidade do Intune.

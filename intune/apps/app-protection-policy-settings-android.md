@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d223fb0cac7ad7435366db70bbb5bf4117216aa0
-ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
+ms.openlocfilehash: b346f41f5198a4aabcb05dcdd4b35a8c56977f53
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 11/13/2019
-ms.locfileid: "73983968"
+ms.locfileid: "74059782"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Definições de políticas de proteção de aplicações Android no Microsoft Intune
 Este artigo descreve as definições de políticas de proteção de aplicações para dispositivos Android. As definições de políticas descritas podem ser [configuradas](app-protection-policies.md) para uma política de proteção de aplicações no painel **Definições** no portal do Azure.
@@ -45,7 +45,7 @@ Há três categorias de configurações de política: configurações de proteç
 | **Restringir cortar, copiar e colar com outras aplicações** | Especifique quando as ações de corte, cópia e colagem podem ser utilizadas com esta aplicação. Escolha entre: <ul><li>**Bloqueado**: não permitir ações de corte, cópia e colagem entre esta aplicação e outras aplicações.</li><li>**Aplicações geridas por políticas**: permitir ações de corte, cópia e colagem entre esta aplicação e outras aplicações geridas por políticas.</li><li>**Aplicações geridas por políticas com colar em**: permitir ações de corte ou cópia entre esta aplicação e outras aplicações geridas por políticas. Permitir que os dados de qualquer aplicação sejam colados nesta aplicação.</li><li>**Qualquer aplicação**: sem restrições para ações de corte, cópia e colagem de e para esta aplicação. | **Qualquer aplicação** |
 | <ul><ui>**recortar e copiar o limite de caracteres para qualquer aplicativo** | Especifique o número de carateres que podem ser cortados ou copiados de contas e de Dados organizacionais.  Isso permitirá o compartilhamento do número especificado de caracteres para qualquer aplicativo, independentemente da configuração "restringir recortar, copiar e colar com outros aplicativos".<p>Valor predefinido = 0<p>**Observação**: requer portal da empresa do Intune versão 5.0.4364.0 ou posterior.  | **0** |
 | **Captura de tela e assistente do Google** | Selecione **desabilitar** para bloquear a captura de tela e os recursos do **Assistente do Google** do dispositivo ao usar este aplicativo. A escolha de **desabilitar** também desfocará a imagem de visualização do alternador de aplicativo ao usar esse aplicativo com uma conta corporativa ou de estudante.| **Desabilitar** |
-
+| **Notificações de dados da organização** | Especifique a quantidade de dados da organização que são compartilhados por meio de notificações do sistema operacional para contas da organização. Essa configuração de política afetará o dispositivo local e todos os dispositivos conectados, como wearables e alto-falantes inteligentes. Os aplicativos podem fornecer controles adicionais para personalizar o comportamento de notificação ou podem optar por não respeitar todos os valores. Selecione entre: <ul><li>**Bloquear**: não compartilhe notificações.</li><ul><li>Se não houver suporte do aplicativo, as notificações serão permitidas.</li></ul><li>**Bloquear dados da organização**: não compartilhe dados da organização em notificações. Por exemplo, "você tem um novo email"; "Você tem uma reunião"</li><UL><li>Se não houver suporte do aplicativo, as notificações serão bloqueadas.</li></ul><li>**Permitir**: compartilha dados da organização nas notificações</li><li>**Qualquer aplicação**: sem restrições para ações de corte, cópia e colagem de e para esta aplicação.</ul> <p>**Observação**: *essa configuração requer suporte de aplicativo. Neste momento, o Outlook para Android 4.75.0 ou posterior dará suporte a essa configuração, que deve lançar a semana de 16 de dezembro de 2019.* | **Permitir**   |
   
 ### <a name="encryption"></a>Encriptação
 | Definição | Como utilizar | Valor predefinido |

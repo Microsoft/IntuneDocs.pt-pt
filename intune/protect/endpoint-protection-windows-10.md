@@ -1,11 +1,11 @@
 ---
 title: Configurações de proteção para dispositivos Windows 10 no Microsoft Intune-Azure | Microsoft Docs
-description: Em dispositivos Windows 10, use ou defina as configurações do Endpoint Protection para habilitar os recursos do Windows Defender, incluindo o Application Guard, o firewall, o SmartScreen, a criptografia e o BitLocker, o Exploit Guard, o controle de aplicativos, a central de segurança e a segurança em dispositivos locais no Microsoft Intune.
+description: Em dispositivos Windows 10, use ou defina as configurações do Endpoint Protection para habilitar recursos do Microsoft defender, incluindo Application Guard, firewall, SmartScreen, criptografia e BitLocker, Exploit Guard, controle de aplicativos, central de segurança e segurança em dispositivos locais no Microsoft Intune.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/12/2019
+ms.date: 11/13/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,20 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a6cada91cdad6c117fddd143007e2cdf40939119
-ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
+ms.openlocfilehash: e2909e7ad1ced9483a6cec58f1f3009f56946f5f
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 11/13/2019
-ms.locfileid: "73984139"
+ms.locfileid: "74058434"
 ---
-# <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>Configurações do Windows 10 (e posterior) para proteger dispositivos usando o Intune  
+# <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>Configurações do Windows 10 (e posterior) para proteger dispositivos usando o Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]  
+O Microsoft Intune inclui muitas configurações para ajudar a proteger seus dispositivos. Este artigo descreve todas as configurações que você pode habilitar e configurar no Windows 10 e em dispositivos mais recentes. Essas configurações são criadas em um perfil de configuração do Endpoint Protection no Intune para controlar a segurança, incluindo o BitLocker e o Microsoft defender.  
 
-O Microsoft Intune inclui muitas configurações para ajudar a proteger seus dispositivos. Este artigo descreve todas as configurações que você pode habilitar e configurar no Windows 10 e em dispositivos mais recentes. Essas configurações são criadas em um perfil de configuração do Endpoint Protection no Intune para controlar a segurança, incluindo o BitLocker e o Windows Defender.  
-
-Para configurar o Windows Defender antivírus, consulte [restrições de dispositivo do Windows 10](../configuration/device-restrictions-windows-10.md#microsoft-defender-antivirus).  
+Para configurar o Microsoft defender antivírus, consulte [restrições de dispositivo do Windows 10](../configuration/device-restrictions-windows-10.md#microsoft-defender-antivirus).  
 
 ## <a name="before-you-begin"></a>Antes de começar  
 
@@ -38,9 +36,9 @@ Para configurar o Windows Defender antivírus, consulte [restrições de disposi
 
 Para obter mais informações sobre provedores de serviços de configuração (CSPs), consulte [referência do provedor de serviços de configuração](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference).  
 
-## <a name="windows-defender-application-guard"></a>Windows Defender Application Guard  
+## <a name="microsoft-defender-application-guard"></a>Proteção de aplicativos do Microsoft defender  
 
-Ao utilizar o Microsoft Edge, o Windows Defender Application Guard protege o seu ambiente contra sites que a sua organização não considera como sendo de confiança. Quando os usuários visitam sites que não estão listados em seu limite de rede isolado, os sites são abertos em uma sessão de navegação virtual do Hyper-V. Os sites confiáveis são definidos por um limite de rede, que são configurados na configuração do dispositivo.  
+Ao usar o Microsoft Edge, o Microsoft defender Application Guard protege seu ambiente de sites que não são confiáveis para sua organização. Quando os usuários visitam sites que não estão listados em seu limite de rede isolado, os sites são abertos em uma sessão de navegação virtual do Hyper-V. Os sites confiáveis são definidos por um limite de rede, que são configurados na configuração do dispositivo.  
 
 O Application Guard só está disponível para dispositivos com o Windows 10 (64 bits). Se utilizar este perfil, instalará um componente do Win32 para ativar o Application Guard.  
 
@@ -122,7 +120,7 @@ O Application Guard só está disponível para dispositivos com o Windows 10 (64
   - **Habilitar** -os usuários podem baixar arquivos do navegador virtualizado para o sistema operacional do host.  
   - **Não configurado** -mantém os arquivos locais no dispositivo e não baixa os arquivos para o sistema de arquivos do host.  
 
-## <a name="windows-defender-firewall"></a>Firewall do Windows Defender  
+## <a name="microsoft-defender-firewall"></a>Microsoft defender firewall  
  
 ### <a name="global-settings"></a>Definições globais  
 
@@ -196,7 +194,7 @@ As configurações a seguir são listadas neste artigo uma única vez, mas todas
 
 #### <a name="general-settings"></a>Definições gerais  
 
-- **Firewall do Windows Defender**  
+- **Microsoft defender firewall**  
   **Padrão**: não configurado  
   CSP do firewall: [EnableFirewall](https://go.microsoft.com/fwlink/?linkid=872558)  
   
@@ -224,7 +222,7 @@ As configurações a seguir são listadas neste artigo uma única vez, mas todas
   **Padrão**: não configurado  
   CSP do firewall: [blindado](https://go.microsoft.com/fwlink/?linkid=872561)  
     - **Não configurado**  
-    - **Bloquear** – quando o Windows Defender firewall está ativado e essa configuração é definida como *Bloquear*, todo o tráfego de entrada é bloqueado, independentemente de outras configurações de política. 
+    - **Bloquear** – quando o Microsoft defender firewall está ativado e essa configuração é definida como *Bloquear*, todo o tráfego de entrada é bloqueado, independentemente de outras configurações de política. 
     - **Allow** -quando definido como *permitir*, essa configuração é desativada e o tráfego de entrada é permitido com base em outras configurações de política.
 
 - **Respostas unicast para difusões multicast**  
@@ -264,7 +262,7 @@ As configurações a seguir são listadas neste artigo uma única vez, mas todas
 
 #### <a name="rule-merging"></a>Intercalação de regras  
 
-- **Regras do Windows Defender Firewall do aplicativo autorizado do repositório local**  
+- **Regras de aplicativo autorizado do Microsoft defender Firewall do repositório local**  
   **Padrão**: não configurado  
   CSP do firewall: [AuthAppsAllowUserPrefMerge](https://go.microsoft.com/fwlink/?linkid=872565)  
 
@@ -273,7 +271,7 @@ As configurações a seguir são listadas neste artigo uma única vez, mas todas
   - **Permitir que** -
    Choose **habilite** aplica regras de firewall no repositório local para que sejam reconhecidas e impostas.  
 
-- **Regras de porta global do Windows Defender Firewall do repositório local**  
+- **Porta global regras do Microsoft defender Firewall do repositório local**  
   **Padrão**: não configurado  
   CSP do firewall: [GlobalPortsAllowUserPrefMerge](https://go.microsoft.com/fwlink/?linkid=872566)  
 
@@ -281,7 +279,7 @@ As configurações a seguir são listadas neste artigo uma única vez, mas todas
   - **Bloquear** -as regras de firewall de porta global no repositório local são ignoradas e não são impostas.  
   - **Permitir** -aplicar regras de firewall de porta global no repositório local para serem reconhecidas e impostas.  
 
-- **Regras do Windows Defender Firewall do repositório local**  
+- **Regras do Microsoft defender Firewall do repositório local**  
   **Padrão**: não configurado  
   CSP do firewall: [AllowLocalPolicyMerge](https://go.microsoft.com/fwlink/?linkid=872567)  
 
@@ -422,7 +420,7 @@ Especifique as portas locais e remotas às quais essa regra se aplica.
   Especifique uma lista de usuários locais autorizados para esta regra. Uma lista de usuários autorizados não poderá ser especificada se essa regra se aplicar a um serviço do Windows.  
 
 
-## <a name="windows-defender-smartscreen-settings"></a>Definições do Windows Defender SmartScreen  
+## <a name="microsoft-defender-smartscreen-settings"></a>Configurações do Microsoft defender SmartScreen  
  
 O Microsoft Edge deve ser instalado no dispositivo.  
 
@@ -773,7 +771,7 @@ Essas configurações se aplicam especificamente a unidades de dados removíveis
     - **Bloquear o** acesso de gravação para dispositivos configurados em outra organização.  
     - **Não configurado** -negar acesso de gravação.  
  
-## <a name="windows-defender-exploit-guard"></a>Windows Defender Exploit Guard  
+## <a name="microsoft-defender-exploit-guard"></a>Microsoft defender Exploit Guard  
 
 Use a [proteção contra Exploit](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exploit-protection) para gerenciar e reduzir a superfície de ataque de aplicativos usados por seus funcionários.  
 
@@ -969,12 +967,11 @@ Bloquear conexões de saída de qualquer aplicativo para endereços IP ou domín
 
   A intenção dessa configuração é proteger os usuários finais de aplicativos com acesso a golpes de phishing, sites de Hospedagem de exploração e conteúdo mal-intencionado na Internet. Ele também impede que navegadores de terceiros se conectem a sites perigosos.  
 
-  - **Não configurado** -desabilite esse recurso. Os usuários e aplicativos não estão impedidos de se conectar a domínios perigosos. Os administradores não podem ver essa atividade na central de segurança do Windows Defender.  
-  - **Habilitar** -ativar a proteção de rede e impedir que usuários e aplicativos se conectem a domínios perigosos. Os administradores podem ver essa atividade na central de segurança do Windows Defender.  
-  - **Somente auditoria**:-os usuários e aplicativos não são impedidos de se conectar a domínios perigosos. Os administradores podem ver essa atividade na central de segurança do Windows Defender.  
+  - **Não configurado** -desabilite esse recurso. Os usuários e aplicativos não estão impedidos de se conectar a domínios perigosos. Os administradores não podem ver essa atividade na central de segurança do Microsoft defender.  
+  - **Habilitar** -ativar a proteção de rede e impedir que usuários e aplicativos se conectem a domínios perigosos. Os administradores podem ver essa atividade na central de segurança do Microsoft defender.  
+  - **Somente auditoria**:-os usuários e aplicativos não são impedidos de se conectar a domínios perigosos. Os administradores podem ver essa atividade na central de segurança do Microsoft defender.  
 
 ### <a name="exploit-protection"></a>Exploit Protection  
- 
 
 - **Carregar XML**  
   **Padrão**: *não configurado*  
@@ -983,7 +980,7 @@ Bloquear conexões de saída de qualquer aplicativo para endereços IP ou domín
 
   - *PowerShell* -use um ou mais dos cmdlets do PowerShell *Get-ProcessMitigation*, *set-ProcessMitigation*e *ConvertTo-ProcessMitigationPolicy* . Os cmdlets configuram definições de mitigação e exportam uma representação XML deles.  
 
-  - *Interface do usuário da central de segurança do Windows Defender* -na central de segurança do Windows Defender, clique em aplicativo & controle de navegador e role até a parte inferior da tela resultante para encontrar proteção de exploração. Em primeiro lugar, utilize as definições do sistema e os separadores das definições de programa para configurar definições de atenuação. Em seguida, localize a ligação de definições de Exportação na parte inferior do ecrã para exportar uma representação XML dos mesmos.  
+  - *Interface do usuário da central de segurança do Microsoft defender* -na central de segurança do Microsoft defender, clique em aplicativo & controle de navegador e role até a parte inferior da tela resultante para encontrar proteção de exploração. Em primeiro lugar, utilize as definições do sistema e os separadores das definições de programa para configurar definições de atenuação. Em seguida, localize a ligação de definições de Exportação na parte inferior do ecrã para exportar uma representação XML dos mesmos.  
 
 - **Edição de usuário da interface de proteção de exploração**  
   **Padrão**: não configurado  
@@ -993,9 +990,9 @@ Bloquear conexões de saída de qualquer aplicativo para endereços IP ou domín
   - **Bloquear** – carregar um arquivo XML que permite configurar a memória, o fluxo de controle e as restrições de política. As definições no ficheiro XML podem servir para proteger uma aplicação de exploits.  
   - **Não configurado** -nenhuma configuração personalizada é usada.  
 
-## <a name="windows-defender-application-control"></a>Controlo de Aplicações do Windows Defender  
+## <a name="microsoft-defender-application-control"></a>Controle de aplicativo do Microsoft defender  
 
-Escolha aplicativos adicionais que precisam ser auditados pelo ou que podem ser confiáveis para execução pelo controle de aplicativos do Windows Defender. Os componentes do Windows e todas as aplicações da Microsoft Store são automaticamente considerados de confiança para serem executados.  
+Escolha aplicativos adicionais que precisam ser auditados ou que podem ser confiáveis para execução pelo controle de aplicativos do Microsoft defender. Os componentes do Windows e todas as aplicações da Microsoft Store são automaticamente considerados de confiança para serem executados.  
 
 
 - **Políticas de integridade de código de controle de aplicativo**  
@@ -1010,9 +1007,9 @@ Escolha aplicativos adicionais que precisam ser auditados pelo ou que podem ser 
  
   - **Somente auditoria** -os aplicativos não são bloqueados. Todos os eventos são registrados nos logs do cliente local.  
 
-## <a name="windows-defender-credential-guard"></a>Windows Defender Credential Guard  
+## <a name="microsoft-defender-credential-guard"></a>Microsoft defender Credential Guard  
 
-O Windows Defender Credential Guard protege contra ataques de roubo de credenciais. Isola os segredos para permitir o acesso apenas a software de sistema com privilégios.  
+O Microsoft defender Credential Guard protege contra ataques de roubo de credenciais. Isola os segredos para permitir o acesso apenas a software de sistema com privilégios.  
 
 - **Proteção de credenciais**  
   **Padrão**: desabilitar  
@@ -1034,19 +1031,19 @@ O Windows Defender Credential Guard protege contra ataques de roubo de credencia
   - **Inicialização segura com acesso à memória do diretório**  
     Ativa o VBS com a inicialização segura e proteções de DMA (acesso direto à memória). As proteções de DMA necessitam de suporte de hardware e são ativadas apenas em dispositivos configurados corretamente.  
 
-## <a name="windows-defender-security-center"></a>Centro de Segurança do Windows Defender  
+## <a name="microsoft-defender-security-center"></a>Central de segurança do Microsoft defender  
 
-O Centro de Segurança do Windows Defender funciona como uma aplicação ou processo separado de cada uma das funcionalidades individuais. Apresenta notificações através do Centro de Ação. Ele atua como um coletor ou um único local para ver o status e executar algumas configurações para cada um dos recursos. Saiba mais na documentação do [Windows Defender](https://docs.microsoft.com/windows/threat-protection/windows-defender-security-center/windows-defender-security-center).  
+A central de segurança do Microsoft defender Opera como um aplicativo separado ou um processo de cada um dos recursos individuais. Apresenta notificações através do Centro de Ação. Ele atua como um coletor ou um único local para ver o status e executar algumas configurações para cada um dos recursos. Saiba mais nos documentos do [Microsoft defender](https://docs.microsoft.com/windows/threat-protection/windows-defender-security-center/windows-defender-security-center) .  
 
-### <a name="windows-defender-security-center-app-and-notifications"></a>Aplicações e notificações do Centro de Segurança do Windows Defender  
+### <a name="microsoft-defender-security-center-app-and-notifications"></a>Aplicativo da central de segurança do Microsoft defender e notificações  
 
-Bloqueie o acesso de utilizadores finais a várias áreas da aplicação Centro de Segurança do Windows Defender. Ocultar uma secção também bloqueia notificações relacionadas.  
+Bloqueie o acesso do usuário final às várias áreas do aplicativo da central de segurança do Microsoft defender. Ocultar uma secção também bloqueia notificações relacionadas.  
 
 - **Proteção contra vírus e ameaças**  
   **Padrão**: não configurado  
   CSP WindowsDefenderSecurityCenter: [DisableVirusUI](https://go.microsoft.com/fwlink/?linkid=873662)  
 
-  Configure se os usuários finais podem exibir a área de proteção contra vírus e ameaças na central de segurança do Windows Defender. Ocultar esta seção também bloqueará todas as notificações relacionadas à proteção contra vírus e ameaças.  
+  Configure se os usuários finais podem exibir a área de proteção contra vírus e ameaças na central de segurança do Microsoft defender. Ocultar esta seção também bloqueará todas as notificações relacionadas à proteção contra vírus e ameaças.  
 
   - **Não configurado**  
   - **Exibe**  
@@ -1055,7 +1052,7 @@ Bloqueie o acesso de utilizadores finais a várias áreas da aplicação Centro 
   **Padrão**: não configurado  
   CSP WindowsDefenderSecurityCenter: [HideRansomwareDataRecovery](https://go.microsoft.com/fwlink/?linkid=873664)  
 
-  Configurar se os usuários finais puderem exibir a área de proteção contra ransomware na central de segurança do Windows Defender. Ocultar esta seção também bloqueará todas as notificações relacionadas à proteção contra ransomware.  
+  Configurar se os usuários finais puderem exibir a área de proteção contra ransomware na central de segurança do Microsoft defender. Ocultar esta seção também bloqueará todas as notificações relacionadas à proteção contra ransomware.  
 
   - **Não configurado**  
   - **Exibe**  
@@ -1064,7 +1061,7 @@ Bloqueie o acesso de utilizadores finais a várias áreas da aplicação Centro 
   **Padrão**: não configurado  
   CSP WindowsDefenderSecurityCenter: [DisableAccountProtectionUI](https://go.microsoft.com/fwlink/?linkid=873666)  
 
-  Configurar se os usuários finais puderem exibir a área proteção da conta na central de segurança do Windows Defender. Ocultar esta seção também bloqueará todas as notificações relacionadas à proteção da conta.  
+  Configurar se os usuários finais puderem exibir a área proteção da conta na central de segurança do Microsoft defender. Ocultar esta seção também bloqueará todas as notificações relacionadas à proteção da conta.  
 
   - **Não configurado**  
   - **Exibe**  
@@ -1073,7 +1070,7 @@ Bloqueie o acesso de utilizadores finais a várias áreas da aplicação Centro 
   **Padrão**: não configurado  
   CSP WindowsDefenderSecurityCenter: [DisableNetworkUI](https://go.microsoft.com/fwlink/?linkid=873668)  
 
-  Configurar se os usuários finais puderem exibir a área de proteção de firewall e rede na central de segurança do Windows Defender. Ocultar esta seção também bloqueará todas as notificações relacionadas ao firewall e à proteção de rede.  
+  Configurar se os usuários finais puderem exibir a área de proteção de firewall e rede na central de segurança do Microsoft defender. Ocultar esta seção também bloqueará todas as notificações relacionadas ao firewall e à proteção de rede.  
 
   - **Não configurado**  
   - **Exibe**  
@@ -1082,7 +1079,7 @@ Bloqueie o acesso de utilizadores finais a várias áreas da aplicação Centro 
   **Padrão**: não configurado  
   CSP WindowsDefenderSecurityCenter: [DisableAppBrowserUI](https://go.microsoft.com/fwlink/?linkid=873669)  
 
-  Configurar se os usuários finais puderem exibir a área de controle do aplicativo e do navegador na central de segurança do Windows Defender. Ocultar esta seção também bloqueará todas as notificações relacionadas ao aplicativo e ao controle de navegador.  
+  Configurar se os usuários finais puderem exibir a área de controle do aplicativo e do navegador na central de segurança do Microsoft defender. Ocultar esta seção também bloqueará todas as notificações relacionadas ao aplicativo e ao controle de navegador.  
 
   - **Não configurado**  
   - **Exibe**  
@@ -1091,7 +1088,7 @@ Bloqueie o acesso de utilizadores finais a várias áreas da aplicação Centro 
   **Padrão**: não configurado  
   CSP WindowsDefenderSecurityCenter: [DisableDeviceSecurityUI](https://go.microsoft.com/fwlink/?linkid=873670)  
 
-  Configurar se os usuários finais puderem exibir a área de proteção de hardware na central de segurança do Windows Defender. Ocultar esta seção também bloqueará todas as notificações relacionadas à proteção de hardware.  
+  Configurar se os usuários finais puderem exibir a área de proteção de hardware na central de segurança do Microsoft defender. Ocultar esta seção também bloqueará todas as notificações relacionadas à proteção de hardware.  
 
   - **Não configurado**  
   - **Exibe**  
@@ -1100,7 +1097,7 @@ Bloqueie o acesso de utilizadores finais a várias áreas da aplicação Centro 
   **Padrão**: não configurado  
   CSP WindowsDefenderSecurityCenter: [DisableHealthUI](https://go.microsoft.com/fwlink/?linkid=873671)  
 
-  Configurar se os usuários finais puderem exibir a área de desempenho e integridade do dispositivo na central de segurança do Windows Defender. Ocultar esta seção também bloqueará todas as notificações relacionadas ao desempenho e à integridade do dispositivo.  
+  Configurar se os usuários finais puderem exibir a área de desempenho e integridade do dispositivo na central de segurança do Microsoft defender. Ocultar esta seção também bloqueará todas as notificações relacionadas ao desempenho e à integridade do dispositivo.  
   
   - **Não configurado**  
   - **Exibe**  
@@ -1109,7 +1106,7 @@ Bloqueie o acesso de utilizadores finais a várias áreas da aplicação Centro 
   **Padrão**: não configurado  
   CSP WindowsDefenderSecurityCenter: [DisableFamilyUI](https://go.microsoft.com/fwlink/?linkid=873673)  
 
-  Configurar se os usuários finais puderem exibir a área de opções da família na central de segurança do Windows Defender. Ocultar esta seção também bloqueará todas as notificações relacionadas às opções da família.  
+  Configurar se os usuários finais puderem exibir a área de opções da família na central de segurança do Microsoft defender. Ocultar esta seção também bloqueará todas as notificações relacionadas às opções da família.  
   
   - **Não configurado**  
   - **Exibe**  
@@ -1118,7 +1115,7 @@ Bloqueie o acesso de utilizadores finais a várias áreas da aplicação Centro 
   **Padrão**: não configurado  
   CSP WindowsDefenderSecurityCenter: [DisableNotifications](https://go.microsoft.com/fwlink/?linkid=873675)  
 
-  Escolha quais notificações exibir para os usuários finais. As notificações não críticas incluem resumos de atividade do Antivírus do Windows Defender, incluindo notificações quando as análises forem concluídas. Todas as outras notificações são consideradas críticas.  
+  Escolha quais notificações exibir para os usuários finais. Notificações não críticas incluem resumos da atividade do Microsoft defender antivírus, incluindo notificações quando as verificações são concluídas. Todas as outras notificações são consideradas críticas.  
 
   - **Não configurado**  
   - **Bloquear notificações não críticas**  
@@ -1158,7 +1155,7 @@ Bloqueie o acesso de utilizadores finais a várias áreas da aplicação Centro 
 
 ### <a name="it-contact-information"></a>Informação de contacto de TI  
 
-Forneça as informações de contacto de TI para que sejam apresentadas na aplicação Centro de Segurança do Windows Defender e nas notificações da aplicação.  
+Forneça informações de contato de ti para que apareçam no aplicativo da central de segurança do Microsoft defender e nas notificações do aplicativo.  
 
 Pode optar por **Mostrar na aplicação e nas notificações**, **Mostrar apenas na aplicação**, **Mostrar apenas nas notificações** ou **Não mostrar**. Introduza o **Nome da organização de TI** e pelo menos uma das seguintes opções de contacto:  
 
@@ -1637,6 +1634,240 @@ Utilize estas opções para configurar as definições da segurança local em di
   - **Manual**
   - **Automático**
   - **Desabilitado**
+
+## <a name="user-rights"></a>Direitos de usuário
+
+- **Acessar o Gerenciador de credenciais como chamador confiável**  
+  **Padrão**: não configurado  
+  CSP: [UserRights/AccessCredentialManagerAsTrustedCaller](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-accesscredentialmanagerastrustedcaller)
+
+  Esse direito de usuário é usado pelo Gerenciador de credenciais durante as operações de backup e restauração. As credenciais salvas dos usuários poderão ser comprometidas se esse privilégio for concedido a outras entidades.
+  - **Não configurado**
+  - **Permitir**
+
+- **Permitir logon local**  
+  **Padrão**: não configurado  
+  CSP: [UserRights/AllowLocalLogOn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-allowlocallogon)
+
+  Esse direito de usuário determina quais usuários podem fazer logon no computador.
+  - **Não configurado**
+  - **Permitir**
+
+- **Permitir acesso da rede**  
+  **Padrão**: não configurado  
+  CSP: [UserRights/AccessFromNetwork](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-accessfromnetwork)
+
+  Esse direito de usuário determina quais usuários e grupos têm permissão para se conectar ao computador pela rede.
+  - **Não configurado**
+  - **Permitir**
+
+- **Atuar como parte do sistema operacional**  
+  **Padrão**: não configurado  
+  CSP: [UserRights/ActAsPartOfTheOperatingSystem](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-actaspartoftheoperatingsystem)
+
+  Atuar como parte do sistema operacional
+  - **Não configurado**
+  - **Permitir**  
+
+- **Arquivos e diretórios de backup**  
+  **Padrão**: não configurado  
+  CSP: [UserRights/BackupFilesAndDirectories](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-backupfilesanddirectories)
+
+  Esse direito de usuário determina quais usuários podem ignorar permissões de arquivo, diretório, registro e outros objetos persistentes ao fazer backup de arquivos e diretórios.
+  - **Não configurado**
+  - **Permitir**
+
+- **Alterar a hora do sistema**  
+  **Padrão**: não configurado  
+  CSP: [UserRights/ChangeSystemTime](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-changesystemtime)
+
+  Este direito de usuário determina quais usuários e grupos podem alterar a hora e a data no relógio interno do computador.
+  - **Não configurado**
+  - **Permitir**
+
+- **Criar objetos globais**  
+  **Padrão**: não configurado  
+  CSP: [UserRights/CreateGlobalObjects](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-createglobalobjects)
+
+  Essa configuração de segurança determina se os usuários podem criar objetos globais que estão disponíveis para todas as sessões. Os usuários que podem criar objetos globais poderiam afetar os processos executados em sessões de outros usuários, o que pode levar à falha ou corrupção de dados do aplicativo.
+  - **Não configurado**
+  - **Permitir**
+
+- **Criar arquivo de paginação**  
+  **Padrão**: não configurado  
+  CSP: [UserRights/CreatePageFile](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-createpagefile)
+
+  Esse direito de usuário determina quais usuários e grupos podem chamar uma API interna para criar e alterar o tamanho de um arquivo de paginação.
+  - **Não configurado**
+  - **Permitir**
+
+- **Criar objetos compartilhados permanentemente**  
+  **Padrão**: não configurado  
+  CSP: [UserRights/CreatePermanentSharedObjects](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-createpermanentsharedobjects)
+
+  Este direito de usuário determina quais contas podem ser usadas por processos para criar um objeto de diretório usando o Gerenciador de objetos.
+  - **Não configurado**
+  - **Permitir**
+
+- **Criar links simbólicos**  
+  **Padrão**: não configurado  
+  CSP: [UserRights/CreateSymbolicLinks](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-createsymboliclinks)
+
+  Esse direito de usuário determina se o usuário pode criar um link simbólico do computador no qual ele está conectado.
+  - **Não configurado**
+  - **Permitir**
+
+- **Criar tokens**  
+  **Padrão**: não configurado  
+  CSP: [UserRights/Createtoken](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-createtoken)
+
+  Esse direito de usuário determina quais usuários/grupos podem ser usados por processos para criar um token que pode ser usado para obter acesso a qualquer recurso local quando o processo usa uma API interna para criar um token de acesso.
+  - **Não configurado**
+  - **Permitir**
+
+- **Depurar programas**  
+  **Padrão**: não configurado  
+    CSP: [UserRights/DebugPrograms](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-debugprograms)
+
+  Este direito de usuário determina quais usuários podem anexar um depurador a qualquer processo ou ao kernel.
+  - **Não configurado**
+  - **Permitir**
+
+- **Negar acesso da rede**  
+  **Padrão**: não configurado  
+  CSP: [UserRights/DenyAccessFromNetwork](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-denyaccessfromnetwork)
+
+  Esse direito de usuário determina quais usuários são impedidos de acessar um computador pela rede.
+  - **Não configurado**
+  - **Permitir**
+
+- **Negar logon como um serviço**  
+  **Padrão**: não configurado  
+  CSP: [UserRights/DenyLocalLogOn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-denylocallogon)
+
+  Essa configuração de segurança determina quais contas de serviço são impedidas de registrar um processo como um serviço.
+  - **Não configurado**
+  - **Permitir**
+
+- **Negar logon por meio de Serviços de Área de Trabalho Remota**  
+  **Padrão**: não configurado  
+  CSP: [UserRights/DenyRemoteDesktopServicesLogOn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-denyremotedesktopserviceslogon)
+
+  Esse direito de usuário determina quais usuários e grupos são proibidos de fazer logon como um cliente Serviços de Área de Trabalho Remota.
+  - **Não configurado**
+  - **Permitir**
+
+- **Habilitar delegação**  
+  **Padrão**: não configurado  
+  CSP: [UserRights/EnableDelegation](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-enabledelegation)
+
+ Este direito de usuário determina quais usuários podem definir a configuração confiável para delegação em um objeto de usuário ou computador.
+  - **Não configurado**
+  - **Permitir**
+
+- **Gerar auditorias de segurança**  
+  **Padrão**: não configurado  
+  CSP: [UserRights/GenerateSecurityAudits](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-generatesecurityaudits)
+
+  Este direito de usuário determina quais contas podem ser usadas por um processo para adicionar entradas ao log de segurança. O log de segurança é usado para rastrear o acesso não autorizado do sistema.
+  - **Não configurado**
+  - **Permitir**
+
+- **Representar um cliente**  
+  **Padrão**: não configurado  
+  CSP: [UserRights/ImpersonateClient](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-impersonateclient)
+
+  Atribuir esse direito de usuário a um usuário permite que programas executados em nome desse usuário representem um cliente. Exigir esse direito de usuário para esse tipo de representação impede que um usuário não autorizado convença um cliente para se conectar a um serviço que ele criou e, em seguida, representar esse cliente, o que pode elevar as permissões do usuário não autorizado para níveis administrativos ou de sistema.
+  - **Não configurado**
+  - **Permitir**
+
+- **Aumentar a prioridade de agendamento**  
+  **Padrão**: não configurado  
+  CSP: [UserRights/IncreaseSchedulingPriority](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-increaseschedulingpriority)
+
+  Este direito de usuário determina quais contas podem usar um processo com acesso de propriedade de gravação a outro processo para aumentar a prioridade de execução atribuída ao outro processo.
+  - **Não configurado**
+  - **Permitir**
+
+- **Carregar e descarregar drivers de dispositivo**  
+  **Padrão**: não configurado  
+  CSP: [UserRights/LoadUnloadDeviceDrivers](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-loadunloaddevicedrivers)
+
+  Este direito de usuário determina quais usuários podem carregar e descarregar dinamicamente drivers de dispositivo ou outro código no modo kernel.
+  - **Não configurado**
+  - **Permitir**
+
+- **Bloquear páginas na memória**  
+  **Padrão**: não configurado  
+  CSP: [UserRights/LockMemory](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-lockmemory)
+
+  Esse direito de usuário determina quais contas podem usar um processo para manter os dados na memória física, o que impede que o sistema pagine os dados para a memória virtual em disco.
+  - **Não configurado**
+  - **Permitir**
+
+- **Gerenciar auditoria e log de segurança**  
+  **Padrão**: não configurado  
+  CSP: [UserRights/ManageAuditingAndSecurityLog](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-manageauditingandsecuritylog)
+
+  Esse direito de usuário determina quais usuários podem especificar opções de auditoria de acesso a objetos para recursos individuais, como arquivos, Active Directory objetos e chaves do registro.
+  - **Não configurado**
+  - **Permitir**
+
+- **Executar tarefas de manutenção de volume**  
+  **Padrão**: não configurado  
+  CSP: [UserRights/ManageVolume](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-managevolume)
+
+  Este direito de usuário determina quais usuários e grupos podem executar tarefas de manutenção em um volume, como a desfragmentação remota.
+  - **Não configurado**
+  - **Permitir**
+
+- **Modificar valores de ambiente de firmware**  
+  **Padrão**: não configurado  
+  CSP: [UserRights/ModifyFirmwareEnvironment](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-modifyfirmwareenvironment)
+
+  Esse direito de usuário determina quem pode modificar valores de ambiente de firmware.
+  - **Não configurado**
+  - **Permitir**
+
+- **Modificar um rótulo de objeto**  
+  **Padrão**: não configurado  
+  CSP: [UserRights/ModifyObjectLabel](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-modifyobjectlabel)
+
+  Este direito de usuário determina quais contas de usuário podem modificar o rótulo de integridade de objetos, como arquivos, chaves do registro ou processos pertencentes a outros usuários.
+  - **Não configurado**
+  - **Permitir**
+
+- **Perfil único de processo**  
+  **Padrão**: não configurado  
+  CSP: [UserRights/ProfileSingleProcess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-profilesingleprocess)
+
+  Este direito de usuário determina quais usuários podem usar ferramentas de monitoramento de desempenho para monitorar o desempenho de processos do sistema.
+  - **Não configurado**
+  - **Permitir**
+
+- **Desligamento remoto**  
+  **Padrão**: não configurado  
+  CSP: [UserRights/RemoteShutdown](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-remoteshutdown)
+
+  Esse direito de usuário determina quais usuários têm permissão para desligar um computador de um local remoto na rede. O uso indevido desse direito de usuário pode resultar em uma negação de serviço.
+  - **Não configurado**
+  - **Permitir**
+  
+- **Restaurar arquivos e diretórios**  
+  **Padrão**: não configurado  
+  CSP: [UserRights/RestoreFilesAndDirectories](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-restorefilesanddirectories)
+  
+  Esse direito de usuário determina quais usuários podem ignorar permissões de arquivo, diretório, registro e outros objetos persistentes ao restaurar arquivos e diretórios de backup e determina quais usuários podem definir qualquer entidade de segurança válida como o proprietário de um objeto.
+  - **Não configurado**
+  - **Permitir**
+  
+- **Apropriar-se de arquivos ou objetos**  
+  **Padrão**: não configurado  
+  CSP: [UserRights/TakeOwnership](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-takeownership)
+
+  Esse direito de usuário determina quais usuários podem apropriar-se de qualquer objeto protegível no sistema, incluindo Active Directory objetos, arquivos e pastas, impressoras, chaves do registro, processos e threads.
+  - **Não configurado**
+  - **Permitir**
 
 ## <a name="next-steps"></a>Próximos passos
 

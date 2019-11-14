@@ -1,11 +1,11 @@
 ---
 title: Funcionalidades e definições do dispositivo no Microsoft Intune – Azure | Microsoft Docs
-description: Descrição geral dos diferentes perfis de dispositivo do Microsoft Intune. Obtenha informações sobre funcionalidades, restrições, e-mail, Wi-Fi, VPN, educação, certificados, atualização do Windows 10, BitLocker e Windows Defender, Windows Information Protection, modelos administrativos e definições de configuração de dispositivos personalizadas no portal do Azure. Utilize estes perfis para gerir e proteger os dados e os dispositivos na sua empresa.
+description: Descrição geral dos diferentes perfis de dispositivo do Microsoft Intune. Obtenha informações sobre recursos, restrições, email, WiFi, VPN, educação, certificados, atualize o Windows 10, o BitLocker e o Microsoft defender, a proteção de informações do Windows, os modelos administrativos e as definições de configuração de dispositivo personalizadas no portal do Azure. Utilize estes perfis para gerir e proteger os dados e os dispositivos na sua empresa.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/21/2019
+ms.date: 11/13/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7c49445800f5d34fbb6ce0a845d4f29c3e587483
-ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
+ms.openlocfilehash: f0dd9eddd986e6717e6bf706b02a7b06f712a032
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72749339"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059904"
 ---
 # <a name="apply-features-and-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Aplicar definições e funcionalidades nos dispositivos com perfis de dispositivo no Microsoft Intune
 
@@ -145,7 +145,7 @@ Esta funcionalidade suporta:
 
 ## <a name="endpoint-protection"></a>Proteção de ponto final
 
-As [definições de proteção de ponto final para o Windows 10](../protect/endpoint-protection-windows-10.md) configuram as definições do BitLocker e Windows Defender para dispositivos com o Windows 10.
+[As configurações do Endpoint Protection para Windows 10](../protect/endpoint-protection-windows-10.md) definem as configurações do BitLocker e do Microsoft defender para dispositivos Windows 10.
 
 Para integrar o WDATP (proteção avançada contra ameaças do Microsoft defender) com o Microsoft Intune, consulte [Configurar pontos de extremidade usando ferramentas de MDM (gerenciamento de dispositivo móvel)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-mdm).
 

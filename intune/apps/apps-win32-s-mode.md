@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/30/2019
+ms.date: 11/13/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a3a9eb45898102e9d5fcde88f69026467255c513
-ms.sourcegitcommit: d2d18eef64bcf16eec1a48fcb67f1362537c0245
+ms.openlocfilehash: d2ab21321b171c8fe8f5f9dab3032507c0e740cf
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "73445266"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059759"
 ---
 # <a name="enable-win32-apps-on-s-mode-devices"></a>Habilitar aplicativos Win32 em dispositivos de modo S
 
-O [modo Windows 10 S](https://docs.microsoft.com/windows/deployment/s-mode) é um sistema operacional bloqueado que só executa aplicativos da Store. Por padrão, os dispositivos de modo S do Windows não permitem a instalação e a execução de aplicativos Win32. Esses dispositivos incluem uma única *política de base 10s do Win*, que bloqueia o dispositivo de modo S de executar qualquer aplicativo Win32 nele. No entanto, ao criar e usar uma **política complementar de modo S** no Intune, você pode instalar e executar aplicativos Win32 em dispositivos gerenciados do modo Windows 10 S. Usando as ferramentas do PowerShell do [Windows Defender Application Control (WDAC)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control) , você pode criar uma ou mais políticas complementares para o modo S do Windows. Você deve assinar as políticas complementares com o [serviço de assinatura do Device Guard (DGSS)](https://go.microsoft.com/fwlink/?linkid=2095629) ou com [SignTool. exe](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/signing-policies-with-signtool) e, em seguida, carregar e distribuir as políticas por meio do Intune. Como alternativa, você pode assinar as políticas complementares com um certificado de codesignação de sua organização, no entanto, o método preferencial é usar DGSS. Na instância em que você usa o certificado de codesignação de sua organização, o certificado raiz ao qual o certificado de codesign se encadeia, deve estar presente no dispositivo.
+O [modo Windows 10 S](https://docs.microsoft.com/windows/deployment/s-mode) é um sistema operacional bloqueado que só executa aplicativos da Store. Por padrão, os dispositivos de modo S do Windows não permitem a instalação e a execução de aplicativos Win32. Esses dispositivos incluem uma única *política de base 10s do Win*, que bloqueia o dispositivo de modo S de executar qualquer aplicativo Win32 nele. No entanto, ao criar e usar uma **política complementar de modo S** no Intune, você pode instalar e executar aplicativos Win32 em dispositivos gerenciados do modo Windows 10 S. Usando as ferramentas do PowerShell do [Microsoft defender Application Control (WDAC)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control) , você pode criar uma ou mais políticas complementares para o modo S do Windows. Você deve assinar as políticas complementares com o [serviço de assinatura do Device Guard (DGSS)](https://go.microsoft.com/fwlink/?linkid=2095629) ou com [SignTool. exe](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/signing-policies-with-signtool) e, em seguida, carregar e distribuir as políticas por meio do Intune. Como alternativa, você pode assinar as políticas complementares com um certificado de codesignação de sua organização, no entanto, o método preferencial é usar DGSS. Na instância em que você usa o certificado de codesignação de sua organização, o certificado raiz ao qual o certificado de codesign se encadeia, deve estar presente no dispositivo.
 
 Ao atribuir a política complementar do modo S no Intune, você permite que o dispositivo faça uma exceção à política de modo S existente do dispositivo, que permite o catálogo de aplicativos assinados carregado correspondente. A política define uma lista de permissões de aplicativos (o catálogo de aplicativos) que pode ser usada no dispositivo de modo S.
 
@@ -40,7 +40,7 @@ As etapas para permitir que os aplicativos Win32 sejam executados em um disposit
 
 1. Habilite dispositivos de modo S por meio do Intune como parte do processo de registro do Windows 10 S.
 2. Crie uma política complementar para permitir aplicativos Win32:
-   - Você pode usar as ferramentas [do controle de aplicativos do Windows Defender (WDAC)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control) para criar uma política complementar. A ID da política de base na política deve corresponder à ID da política base do modo S (que é embutida no cliente). Além disso, certifique-se de que a versão da política seja maior do que a versão anterior.
+   - Você pode usar as ferramentas [do controle de aplicativo do Microsoft defender (WDAC)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control) para criar uma política complementar. A ID da política de base na política deve corresponder à ID da política base do modo S (que é embutida no cliente). Além disso, certifique-se de que a versão da política seja maior do que a versão anterior.
    - Você usa o DGSS para assinar sua política complementar. Para obter mais informações, consulte [assinar política de integridade de código com assinatura do Device Guard](https://docs.microsoft.com/microsoft-store/sign-code-integrity-policy-with-device-guard-signing).
    - Você carrega a política complementar assinada no Intune criando uma política complementar do modo Windows 10 S (veja abaixo).
 3. Você permite catálogos de aplicativos Win32 por meio do Intune:

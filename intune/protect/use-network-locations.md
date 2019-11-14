@@ -2,10 +2,10 @@
 title: Vincular dispositivos Android através da localização de rede no Microsoft Intune – Azure | Microsoft Docs
 description: Crie ou configure localizações de rede para dispositivos Android no Microsoft Intune. Pode marcar dispositivos como não estando em conformidade com base na localização de rede do dispositivo. Se o dispositivo sair da localização de rede, pode bloquear o acesso aos recursos da empresa.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: Brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 05/21/2018
+ms.date: 11/13/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 648ccd889714c2ee4f7ee1fa04301490ad9fd001
-ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
+ms.openlocfilehash: 847ab759b697d402acb07d9c8d83d3a3ef9aaef2
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72749444"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74058157"
 ---
 # <a name="use-locations-network-fence-in-intune"></a>Utilizar Localizações (barreira de rede) no Intune
 
@@ -50,7 +50,7 @@ Para criar uma política de conformidade com base na localização:
 
 ## <a name="create-a-location"></a>Criar uma localização
 
-1. No Intune, selecione **Conformidade do dispositivo** > **Localizações** > **Criar**.
+1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), selecione **dispositivos** > **políticas de conformidade** > **locais** > **criar**.
 
 2. Introduza as seguintes propriedades:  
 
@@ -69,8 +69,7 @@ Para criar uma política de conformidade com base na localização:
 
 ## <a name="create-the-location-compliance-policy"></a>Criar a política de conformidade de localização
 
-Ao [criar a política de conformidade](create-compliance-policy.md), selecione **Android** para a **plataforma**. Em **Localizações**, pode selecionar uma ou mais das localizações de rede que adicionou. Estas localizações fazem parte da barreira de rede que está a criar para os seus dispositivos. 
-
+Ao [criar a política de conformidade](create-compliance-policy.md), selecione **Android** para a **plataforma**. Em **Localizações**, pode selecionar uma ou mais das localizações de rede que adicionou. Estas localizações fazem parte da barreira de rede que está a criar para os seus dispositivos.
 
 ## <a name="configure-the-actions-for-noncompliance"></a>Configurar as ações de não conformidade
 
@@ -83,5 +82,6 @@ Depois de criar a política de conformidade, a ação predefinida de não confor
 Quando o dispositivo estiver ligado às suas localizações, será apresentado como estando em conformidade na aplicação Portal da Empresa. Quando o dispositivo não estiver ligado a uma das suas localizações, será apresentado como não estando em conformidade.
 
 ## <a name="next-steps"></a>Próximos passos
+
 [Monitorizar as políticas de conformidade de dispositivos](compliance-policy-monitor.md)  
 [Introdução às políticas de conformidade](device-compliance-get-started.md)

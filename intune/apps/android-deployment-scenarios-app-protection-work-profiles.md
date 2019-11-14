@@ -2,8 +2,8 @@
 title: Políticas de proteção de aplicativo e perfis de trabalho no Microsoft Intune – Azure | Microsoft Docs
 description: Veja as diferenças e os prós e contras ao decidir usar políticas de proteção de aplicativo ou perfis de trabalho para dispositivos BYOD Android Enterprise no Microsoft Intune. Compare as diferenças e os recursos que você obtém com as políticas de proteção de aplicativo sem o registro (APP-WE) e os perfis de trabalho do Android Enterprise.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: Erikre
+ms.author: erikre
 manager: dougeby
 ms.date: 02/13/2019
 ms.topic: conceptual
@@ -15,12 +15,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a2c71e04cf842fda7b16fb8ad4a05668ccbfaa84
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: d0b4f8d5124924d013e7ac131dafc947a95c7b65
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507595"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059801"
 ---
 # <a name="application-protection-policies-and-work-profiles-on-android-enterprise-devices-in-intune"></a>Políticas de proteção de aplicativo e perfis de trabalho em dispositivos Android Enterprise no Intune
 

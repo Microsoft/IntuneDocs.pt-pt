@@ -1,11 +1,11 @@
 ---
 title: Definições de restrição de dispositivos para Windows 10 no Microsoft Intune – Azure | Microsoft Docs
-description: Consulte uma lista de todas as configurações e suas descrições para criar restrições de dispositivo em dispositivos Windows 10 e posteriores. Use essas configurações em um perfil de configuração para controlar capturas de tela, requisitos de senha, configurações de quiosque, aplicativos na loja, navegador Microsoft Edge, Windows Defender, acesso à nuvem, menu iniciar e muito mais em Microsoft Intune.
+description: Consulte uma lista de todas as configurações e suas descrições para criar restrições de dispositivo em dispositivos Windows 10 e posteriores. Use essas configurações em um perfil de configuração para controlar capturas de tela, requisitos de senha, configurações de quiosque, aplicativos na loja, navegador Microsoft Edge, Microsoft defender, acesso à nuvem, menu iniciar e muito mais em Microsoft Intune.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/09/2019
+ms.date: 11/13/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 288ff693e7e46b7953cffad3d0a54b8621141373
-ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
+ms.openlocfilehash: f0cf7d6f18b0d345a8c491984987b9ffa234d66e
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73755259"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059485"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Configurações do dispositivo Windows 10 (e mais recente) para permitir ou restringir recursos usando o Intune
 
@@ -68,7 +68,7 @@ Essas configurações usam o [CSP da política do ApplicationManagement](https:/
 
   [CSP do SmartScreen/EnableAppInstallControl](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen#smartscreen-enableappinstallcontrol)
 
-- **Controle do usuário sobre instalações**: quando definido como **não configurado** (padrão), Windows Installer impedir que os usuários alterem as opções de instalação normalmente reservadas para administradores do sistema, como inserir o diretório para instalar os arquivos . **Bloquear** permite que os usuários alterem essas opções de instalação e alguns dos recursos de segurança de Windows Installer são ignorados.
+- **Controle do usuário sobre instalações**: quando definido como **não configurado** (padrão), Windows Installer impedir que os usuários alterem as opções de instalação normalmente reservadas para administradores do sistema, como inserir o diretório para instalar os arquivos. **Bloquear** permite que os usuários alterem essas opções de instalação e alguns dos recursos de segurança de Windows Installer são ignorados.
 
   [CSP ApplicationManagement/MSIAllowUserControlOverInstall](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-msiallowusercontroloverinstall)
 
@@ -369,7 +369,7 @@ Quando "bloquear e habilitar substituição de usuário" está selecionado, o us
   - Ajude a minimizar a largura de banda de rede entre o Microsoft Edge e os serviços da Microsoft.
   - Desabilite a **exibição mostrar sugestões de pesquisa e site enquanto eu digitar** no Microsoft Edge > configurações.
 - **Permitir modo de tela inteira**: **Sim** (padrão) permite que o Microsoft Edge use o modo de fullscreen, que mostra apenas o conteúdo da Web e oculta a interface do usuário do Microsoft Edge. **Não** impede o modo de tela inteira no Microsoft Edge.
-- **Página permitir sobre sinalizadores**: **Sim** (padrão) usa o padrão do sistema operacional, que pode permitir o acesso à página `about:flags`. A página `about:flags` permite que os usuários alterem as configurações do desenvolvedor e habilitem recursos experimentais. **Não** impede que os usuários finais acessem a página `about:flags` no Microsoft Edge.
+- **Página permitir sobre sinalizadores**: **Sim** (padrão) usa o padrão do sistema operacional, que pode permitir o acesso à página de `about:flags`. A página `about:flags` permite que os usuários alterem as configurações do desenvolvedor e habilitem recursos experimentais. **Não** impede que os usuários finais acessem a página de `about:flags` no Microsoft Edge.
 - **Permitir ferramentas de desenvolvedor**: **Sim** (padrão) permite que os usuários usem as ferramentas de desenvolvedor F12 para criar e depurar páginas da Web por padrão. **Não** impede que os usuários finais usem as ferramentas de desenvolvedor F12.
 - **Permitir JavaScript**: **Sim** (padrão) permite que scripts, como JavaScript, sejam executados no navegador Microsoft Edge. **Não** impede a execução de scripts java no navegador.
 - O **usuário pode instalar extensões**: **Sim** (padrão) permite que os usuários finais instalem extensões do Microsoft Edge no dispositivo. **Não** impede a instalação.
@@ -523,7 +523,7 @@ Essas configurações usam o [CSP da política do WirelessDisplay](https://docs.
 
 - **Compartilhar dados de uso**: escolha o nível de dados de diagnóstico que é enviado. As opções são:
   - **Não configurado**: nenhum dado é compartilhado.
-  - **Segurança**: informações necessárias para ajudar a manter o Windows mais seguro, incluindo dados sobre as configurações de componentes de telemetria e experiência do usuário conectado, a ferramenta de remoção de software mal-intencionado e o Windows Defender.
+  - **Segurança**: informações necessárias para ajudar a manter o Windows mais seguro, incluindo dados sobre as configurações de componentes de telemetria e experiência do usuário conectado, a ferramenta de remoção de software mal-intencionado e o Microsoft defender.
   - **Básico**: informações básicas do dispositivo, incluindo dados relacionados à qualidade, compatibilidade de aplicativos, dados de uso do aplicativo e dados do nível de segurança.
   - **Aprimorado**: informações adicionais, incluindo: como o Windows, o Windows Server, o System Center e os aplicativos são usados, como eles executam, dados de confiabilidade avançados e dados dos níveis básico e de segurança.
   - **Completo**: todos os dados necessários para identificar e ajudar a corrigir problemas, além de dados dos níveis de segurança, básico e avançado.
@@ -632,19 +632,19 @@ Essas configurações usam o [CSP de política inicial](https://docs.microsoft.c
   - **Ocultar**: o atalho está oculto e desabilita a configuração no aplicativo configurações.
   - **Mostrar**: o atalho é mostrado e desabilita a configuração no aplicativo configurações.
 
-## <a name="windows-defender-smart-screen"></a>Windows Defender SmartScreen
+## <a name="microsoft-defender-smart-screen"></a>Tela inteligente do Microsoft defender
 
-- **SmartScreen para Microsoft Edge**: **exigir** desativa o Windows Defender SmartScreen e impede que os usuários o liguem. **Não configurado** (padrão) ativa o SmartScreen. Ajuda a proteger os usuários contra possíveis ameaças e impede que os usuários o desativem.
+- **SmartScreen para Microsoft Edge**: **requer** a desativação do Microsoft defender SmartScreen e impede que os usuários o liguem. **Não configurado** (padrão) ativa o SmartScreen. Ajuda a proteger os usuários contra possíveis ameaças e impede que os usuários o desativem.
 
-  O Microsoft Edge usa o Windows Defender SmartScreen (ativado) para proteger os usuários contra possíveis golpes de phishing e software mal-intencionado.
+  O Microsoft Edge usa o Microsoft defender SmartScreen (ativado) para proteger os usuários contra possíveis golpes de phishing e software mal-intencionado.
 
   [CSP do navegador/AllowSmartScreen](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen)
 
-- **Acesso de site mal-intencionado**: o **bloqueio** impede que os usuários ignorem os avisos do filtro do Windows Defender SmartScreen e os bloqueia de ir para o site. **Não configurado** (padrão) permite que os usuários ignorem os avisos e continuem no site.
+- **Acesso de site mal-intencionado**: o **bloqueio** impede que os usuários ignorem os avisos do filtro do Microsoft defender SmartScreen e os bloqueia de ir para o site. **Não configurado** (padrão) permite que os usuários ignorem os avisos e continuem no site.
 
   [CSP do navegador/PreventSmartScreenPromptOverride](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverride)
 
-- **Download de arquivo não verificado**: o **bloco** impede que os usuários ignorem os avisos do filtro do Windows Defender SmartScreen e os bloqueiam de baixar arquivos não verificados. **Não configurado** (padrão) permite que os usuários ignorem os avisos e continuem a baixar os arquivos não verificados.
+- **Download de arquivo não verificado**: o **bloco** impede que os usuários ignorem os avisos de filtro do Microsoft defender SmartScreen e os bloqueiam do download de arquivos não verificados. **Não configurado** (padrão) permite que os usuários ignorem os avisos e continuem a baixar os arquivos não verificados.
 
   [CSP do navegador/PreventSmartScreenPromptOverrideForFiles](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverrideforfiles)
 
@@ -736,11 +736,11 @@ Essas configurações usam o [CSP de política do defender](https://docs.microso
 
   [CSP do defender/RealTimeScanDirection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-realtimescandirection)
 
-- **Dias antes da exclusão de malware em quarentena**: Continue acompanhando o malware resolvido pelo número de dias que você inseriu para que você possa verificar manualmente os dispositivos afetados anteriormente. Se você definir o número de dias como `0`, o malware permanecerá na pasta de quarentena e não será removido automaticamente. Quando definido como `90`, os itens de quarentena são armazenados por 90 dias no sistema e, em seguida, removidos.
+- **Dias antes da exclusão de malware em quarentena**: Continue acompanhando o malware resolvido pelo número de dias que você inseriu para que você possa verificar manualmente os dispositivos afetados anteriormente. Se você definir o número de dias para `0`, o malware permanecerá na pasta de quarentena e não será removido automaticamente. Quando definido como `90`, os itens de quarentena são armazenados por 90 dias no sistema e, em seguida, removidos.
 
   [CSP do defender/DaysToRetainCleanedMalware](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-daystoretaincleanedmalware)
 
-- **Limite de uso da CPU durante uma verificação**: limite a quantidade de CPU que as verificações têm permissão para usar, de `0` a `100`.
+- **Limite de uso da CPU durante uma verificação**: limite a quantidade de CPU que as verificações têm permissão para usar, de `0` para `100`.
 - **Verificar arquivos mortos**: **habilitar** ativa o defender para que ele examine arquivos mortos, como arquivos zip ou cab. Os usuários não podem desativar essa configuração.
 
   Quando definido como **não configurado** (padrão), o Intune não toca nessa configuração. Se você habilitar a configuração e, em seguida, alterá-la novamente para **não configurado**, o Intune deixará a configuração no estado configurado anteriormente. Por padrão, o sistema operacional ativa essa verificação e permite que os usuários a alterem.
@@ -833,9 +833,9 @@ Essas configurações usam o [CSP de política do defender](https://docs.microso
   [CSP do defender/ScheduleScanTime](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescantime)
 
 - **Detectar aplicativos potencialmente indesejados**: escolha o nível de proteção quando o Windows detecta aplicativos potencialmente indesejados. As opções são:
-  - **Não configurado** (padrão): a proteção de aplicativos potencialmente indesejados do Windows Defender está desabilitada.
-  - **Bloquear**: o Windows Defender detecta aplicativos potencialmente indesejados e os itens detectados são bloqueados. Esses itens são mostrados em histórico junto com outras ameaças.
-  - **Auditoria**: o Windows Defender detecta aplicativos potencialmente indesejados, mas não realiza nenhuma ação. Você pode examinar as informações sobre os aplicativos que o Windows Defender tomaria em ação. Por exemplo, pesquise eventos criados pelo Windows Defender no Visualizador de Eventos.
+  - **Não configurado** (padrão): a proteção de aplicativos potencialmente indesejados do Microsoft defender está desabilitada.
+  - **Bloquear**: o Microsoft defender detecta aplicativos potencialmente indesejados e os itens detectados são bloqueados. Esses itens são mostrados em histórico junto com outras ameaças.
+  - **Auditoria**: o Microsoft defender detecta aplicativos potencialmente indesejados, mas não realiza nenhuma ação. Você pode examinar as informações sobre os aplicativos que o Microsoft defender tomaria em ação. Por exemplo, pesquise eventos criados pelo Microsoft defender na Visualizador de Eventos.
 
   Para obter mais informações sobre aplicativos potencialmente indesejados, consulte [detectar e bloquear aplicativos potencialmente indesejados](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus).
 
@@ -850,11 +850,11 @@ Essas configurações usam o [CSP de política do defender](https://docs.microso
   - **Definido pelo utilizador**
   - **Bloquear**
 
-  Se a ação não for possível, o Windows Defender escolherá a melhor opção para garantir que a ameaça seja corrigida. 
+  Se a ação não for possível, o Microsoft defender escolherá a melhor opção para garantir que a ameaça seja corrigida. 
 
   [CSP do defender/ThreatSeverityDefaultAction](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-threatseveritydefaultaction)
 
-### <a name="windows-defender-antivirus-exclusions"></a>Exclusões do Antivírus do Windows Defender
+### <a name="microsoft-defender-antivirus-exclusions"></a>Exclusões do Microsoft defender antivírus
 
 - **Arquivos e pastas a serem excluídos das verificações e da proteção em tempo real**: Adiciona um ou mais arquivos e pastas como **C:\Path** ou **%ProgramFiles%\Path\filename.exe** à lista de exclusões. Estes ficheiros e pastas não são incluídos em análises em tempo real ou agendadas.
 - **Extensões de arquivo a serem excluídas de verificações e proteção em tempo real**: Adicione uma ou mais extensões de arquivo, como **jpg** ou **txt** , à lista de exclusões. Todos os arquivos com essas extensões não são incluídos em verificações em tempo real ou programadas.

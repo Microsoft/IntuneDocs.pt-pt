@@ -6,7 +6,7 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 01/01/2018
+ms.date: 11/12/2019
 ms.topic: archived
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 535ae4dd986940da17d247136b37185cfaa58b57
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: f00a680d8d7799e0307021926677d1e0ed1e9a12
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72510219"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059692"
 ---
 # <a name="help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune"></a>Ajude a proteger os PCs Windows com o Endpoint Protection para o Microsoft Intune
 
@@ -189,7 +189,7 @@ O Intune pode apresentar os caminhos de até 10 das instâncias de software mali
 4. Clique com o botão direito do rato no cabeçalho da coluna. É apresentada uma lista das colunas disponíveis. Selecione a caixa de verificação **Caminhos de Deteção Recentes** na lista. A coluna **Caminhos de Deteção Recentes** aparece e apresenta até 10 das instâncias de software maligno monitorizadas mais recentemente no dispositivo.
 
 ## <a name="run-a-malware-scan-or-update-malware-definitions-on-a-computer"></a>Executar uma análise de software maligno ou atualizar as definições de software maligno num computador
-O Intune pode executar uma análise de software maligno completa ou rápida ao utilizar o Endpoint Protection ou o Windows Defender num PC gerido remotamente que tenha o cliente do Intune instalado.
+O Intune pode executar uma verificação completa ou rápida de malware usando o Endpoint Protection ou o Microsoft defender em um computador gerenciado remotamente que tenha o cliente do Intune instalado.
 
 1. Na [consola de administração do Microsoft Intune](https://manage.microsoft.com/), aceda a **Grupos** > **Descrição Geral** > **Todos os Dispositivos** > **Todos os Computadores** e, em seguida, selecione o computador que pretende direcionar.
 

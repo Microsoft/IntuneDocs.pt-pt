@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 06/28/2019
+ms.date: 11/13/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: enrollment
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5e453002493e95bd5147cca115075a17a6e7a298
-ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
+ms.openlocfilehash: 6f9c09105ab7286eb315c6bf0f04f1801706bfa8
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73709328"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059711"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>Configurar uma página de status de registro
  
@@ -197,7 +197,7 @@ Abaixo estão os problemas conhecidos.
     - as credenciais do usuário não são preservadas
     - o usuário deve inserir as credenciais novamente antes de prosseguir da fase de configuração do dispositivo para a fase de configuração da conta
 - O ESP está preso por um longo tempo ou nunca conclui a fase de "identificação". O Intune computa as políticas ESP durante a fase de identificação. Um dispositivo pode nunca concluir a computação das políticas de ESP se o usuário atual não tiver um licenciamento do Intune atribuído.  
-- Configurar o controle de aplicativos do Windows Defender faz com que uma solicitação seja reinicializada durante o piloto automático. Configurar o aplicativo do Windows Defender (AppLocker CSP) requer uma reinicialização. Quando essa política é configurada, ela pode fazer com que um dispositivo seja reinicializado durante o piloto automático. Atualmente, não há como suprimir ou adiar a reinicialização.
+- Configurar o controle de aplicativo do Microsoft defender faz com que uma solicitação seja reinicializada durante o piloto automático. A configuração do aplicativo Microsoft defender (AppLocker CSP) requer uma reinicialização. Quando essa política é configurada, ela pode fazer com que um dispositivo seja reinicializado durante o piloto automático. Atualmente, não há como suprimir ou adiar a reinicialização.
 - Quando a política de DeviceLock (https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock) é habilitada como parte de um perfil ESP, o OOBE ou o usuário da área de trabalho de logon automático pode falhar unexpectantly por dois motivos.
   - Se o dispositivo não for reinicializado antes de sair da fase de instalação do dispositivo ESP, o usuário poderá ser solicitado a inserir suas credenciais do Azure AD. Esse prompt ocorre em vez de um logon automático bem-sucedido em que o usuário vê a animação do primeiro logon do Windows.
   - O autologn falhará se o dispositivo for reinicializado depois que o usuário inserir suas credenciais do Azure AD, mas antes de sair da fase de instalação do dispositivo ESP. Essa falha ocorre porque a fase de instalação do dispositivo ESP nunca foi concluída. A solução alternativa é redefinir o dispositivo.
