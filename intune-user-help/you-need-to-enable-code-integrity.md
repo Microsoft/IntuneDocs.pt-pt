@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 02/19/2019
+ms.date: 11/14/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -19,18 +19,18 @@ ms.reviewer: scottduf
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6bde7fc554496b2ecc6f13c7e1b899d7ff05bfa1
-ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
+ms.openlocfilehash: 2b26717e2e8beed2e92f47dca17cbea0ec47a82b
+ms.sourcegitcommit: 244a75622f9cebaaaf5b33aadd8931407a2e2e48
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73754993"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "74096748"
 ---
 # <a name="enable-code-integrity"></a>Habilitar integridade de código
 
 Sua organização pode exigir que seu computador seja habilitado com um recurso de proteção contra ameaças chamado *integridade de código*. A integridade de código verifica os drivers e arquivos do sistema em seu dispositivo em busca de sinais de corrupção ou software mal-intencionado. Para que a integridade do código funcione em seu dispositivo, outro recurso de segurança chamado [*inicialização segura*](https://docs.microsoft.com/windows/security/information-protection/secure-the-windows-10-boot-process#secure-boot) também deve ser habilitado.
 
-Se o seu computador não estiver em conformidade porque a integridade de código está desabilitada, entre em contato com a equipe de suporte de ti de sua organização. Eles o ajudarão a habilitar a inicialização segura, o que irá disparar a integridade do código na próxima vez que você iniciar o dispositivo.
+Se seu computador não estiver em conformidade porque a integridade de código está desabilitada, entre em contato com o profissional de suporte de ti de sua organização. Sua pessoa de suporte ajudará você a habilitar a inicialização segura, que irá disparar a integridade do código na próxima vez que você iniciar o dispositivo. 
 
 Se você se identificar como um usuário de dispositivo avançado e quiser experimentar as etapas por conta própria, consulte [reabilitar a inicialização segura](https://docs.microsoft.com/windows-hardware/manufacture/desktop/disabling-secure-boot#re-enable-secure-boot).
 

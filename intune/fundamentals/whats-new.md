@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/08/2019
+ms.date: 11/14/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a1bbf085cc5d3ffd3b37bd2c475f015be6418f6d
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: ace59f4bfad70eece9e693d4ca74094a6d5af460
+ms.sourcegitcommit: 76ae5aea5deee7a590e24c3b2bb52f88125943e5
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74058566"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74098076"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 
@@ -53,12 +53,22 @@ Saiba mais sobre as novidades todas as semanas no Microsoft Intune. Você també
 ### Role-based access control
 -->  
 
-## <a name="week-of-november-11-2019"></a>Semana de 11 de novembro de 2019
 
-### <a name="app-management"></a>Gestão de aplicações
+## <a name="week-of-november-11-2019"></a>Semana de 11 de novembro de 2019  
+
+### <a name="app-management"></a>Gestão de aplicações  
+
+#### <a name="improved-macos-enrollment-experience-in-company-portal----5074349-wnready---"></a>Experiência aprimorada de registro do macOS no Portal da Empresa <!-- 5074349 WNready -->  
+O Portal da Empresa para a experiência de registro do macOS tem um processo de registro mais simples que se alinha com o Portal da Empresa para a experiência de registro do iOS. Os usuários do dispositivo agora veem:  
+
+* Uma interface do usuário mais elegante.  
+* Uma lista de verificação de registro aprimorada.  
+* Instruções mais claras sobre como registrar seus dispositivos.  
+* Opções de solução de problemas aprimoradas.  
 
 #### <a name="web-apps-launched-from-the-windows-company-portal-app---5030972---"></a>Aplicativos Web iniciados no aplicativo Windows Portal da Empresa<!-- 5030972 -->
 Os usuários finais agora podem iniciar aplicativos Web diretamente do aplicativo Windows Portal da Empresa. Os usuários finais podem selecionar o aplicativo Web e, em seguida, escolher a opção **abrir no navegador**. A URL da Web publicada é aberta diretamente em um navegador da Web. Essa funcionalidade será distribuída na próxima semana. Para obter mais informações sobre aplicativos Web, consulte [adicionar aplicativos Web a Microsoft Intune](~/apps/web-app.md).
+
 
 ## <a name="week-of-november-4-2019"></a>Semana de 4 de novembro de 2019
 
@@ -146,7 +156,7 @@ Você pode criar uma política de proteção de aplicativo do Intune que pode bl
 
 ### <a name="device-configuration"></a>Configuração do dispositivo
 
-#### <a name="new-device-firmware-configuration-interface-profile-for-windows-10-and-later-devices---2266073----"></a>Novo perfil de interface de configuração de firmware de dispositivo para dispositivos Windows 10 e posteriores<!-- 2266073  -->
+#### <a name="new-device-firmware-configuration-interface-profile-for-windows-10-and-later-devices-public-preview---2266073----"></a>Novo perfil de interface de configuração de firmware de dispositivo para dispositivos Windows 10 e posteriores (visualização pública)<!-- 2266073  -->
 
 No Windows 10 e posterior, você pode criar um perfil de configuração de dispositivo para controlar as configurações e os recursos (**configuração do dispositivo** > **perfis** > **Criar perfil** > **Windows 10 e posterior** para plataforma). Nesta atualização, há um novo tipo de perfil de interface de configuração de firmware de dispositivo que permite ao Intune gerenciar configurações de UEFI (BIOS).
 

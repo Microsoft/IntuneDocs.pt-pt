@@ -6,7 +6,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/07/2019
+ms.date: 11/14/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 74ef6380ed4cbc8215f4e68865e740b506f21eb4
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: a3b391bb4ab064c080083e2c31dc28483f6d419a
+ms.sourcegitcommit: 76ae5aea5deee7a590e24c3b2bb52f88125943e5
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059387"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74098217"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Atualização da IU para aplicações de utilizadores finais do Intune
 
@@ -41,7 +41,15 @@ Se você for um funcionário ou aluno, certifique-se de conferir as capturas de 
 #### <a name="web-apps-launched-from-the-windows-company-portal-app---5030972---"></a>Aplicativos Web iniciados no aplicativo Windows Portal da Empresa<!-- 5030972 -->
 Os usuários finais agora podem iniciar aplicativos Web diretamente do aplicativo Windows Portal da Empresa. Os usuários finais podem selecionar o aplicativo Web e, em seguida, escolher a opção **abrir no navegador**. A URL da Web publicada é aberta diretamente em um navegador da Web. Essa funcionalidade será distribuída na próxima semana. Para obter mais informações sobre aplicativos Web, consulte [adicionar aplicativos Web a Microsoft Intune](~/apps/web-app.md).
 
-![Exemplo de imagem de um aplicativo Web iniciado no aplicativo Windows Portal da Empresa](./media/whats-new-app-ui/webapp-open-in-browser.png)
+![Exemplo de imagem de um aplicativo Web iniciado no aplicativo Windows Portal da Empresa](./media/whats-new-app-ui/webapp-open-in-browser.png)  
+
+### <a name="improved-macos-enrollment-experience-in-company-portal----5074349-wnready---"></a>Experiência aprimorada de registro do macOS no Portal da Empresa <!-- 5074349 WNready -->  
+O Portal da Empresa para a experiência de registro do macOS tem um processo de registro mais simples que se alinha com o Portal da Empresa para a experiência de registro do iOS. Os usuários do dispositivo agora veem:  
+
+* Uma interface do usuário mais elegante.  
+* Uma lista de verificação de registro aprimorada.  
+* Instruções mais claras sobre como registrar seus dispositivos.  
+* Opções de solução de problemas aprimoradas.  
 
 ## <a name="week-of-october-28-2019"></a>Semana de 28 de outubro de 2019  
 
