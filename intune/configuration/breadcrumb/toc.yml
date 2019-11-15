@@ -10,9 +10,6 @@
           tocHref: /intune/
           topicHref: /intune/
           items:
-            - name: Aplicações
-              tocHref: /intune/fundamentals/
-              topicHref: /intune/apps/
-            - name: Aplicações
+            - name: Configuração
               tocHref: /intune/protect/
-              topicHref: /intune/apps/
+              topicHref: /intune/configuration/
