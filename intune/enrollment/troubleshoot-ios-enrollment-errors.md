@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e7c7ec23d0408aa4d4cf81baff2d7cdf749fb65e
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 03ceaf5493f544dbb815146eb67c3fae8856d29e
+ms.sourcegitcommit: 5c52879f3653e22bfeba4eef65e2c86025534dab
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509242"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74126143"
 ---
 # <a name="troubleshoot-ios-device-enrollment-problems-in-microsoft-intune"></a>Solucionar problemas de registro de dispositivo iOS no Microsoft Intune
 
@@ -84,6 +84,8 @@ Colete as seguintes informações sobre o problema:
 1. Remova o aplicativo Portal da Empresa do dispositivo.
 2. Baixe e instale o aplicativo **Microsoft Intune portal da empresa** da **loja de aplicativos**.
 3. Registre novamente o dispositivo.
+ > [!NOTE]
+    > Esse erro também pode ocorrer se o usuário estiver tentando registrar mais dispositivos do que o registro do dispositivo está configurado para permitir. Siga as etapas de resoluções para o **limite do dispositivo** que foi atingido abaixo se essas etapas não resolverem o problema.
 
 ### <a name="device-cap-reached"></a>Limite do dispositivo atingido
 
@@ -156,7 +158,7 @@ Renove o certificado APNs e registre novamente o dispositivo.
 - Para renovar o certificado APNs no Intune híbrido com Configuration Manager, consulte [Configurar o gerenciamento de dispositivo híbrido do IOS com System Center Configuration Manager e Microsoft Intune](https://docs.microsoft.com/sccm/mdm/deploy-use/enroll-hybrid-ios-mac).
 - Para renovar o certificado APNs no Office 365, consulte [criar um certificado APNs para dispositivos IOS](https://support.office.com/article/Create-an-APNs-Certificate-for-iOS-devices-522b43f4-a2ff-46f6-962a-dd4f47e546a7).
 
-### <a name="xpc_type_error-connection-invalid"></a>Conexão XPC_TYPE_ERROR inválida
+### <a name="xpc_type_error-connection-invalid"></a>XPC_TYPE_ERROR conexão inválida
 
 Quando você ativa um dispositivo gerenciado por DEP que recebe um perfil de registro, o registro falha e você recebe a seguinte mensagem de erro:
 

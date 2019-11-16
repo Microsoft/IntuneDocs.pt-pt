@@ -15,12 +15,12 @@ ms.technology: ''
 ms.assetid: ''
 Customer intent: As an Intune admin, I want to set up the Apple's corporate device enrollment features so that corporate devices can automatically enroll in Intune.
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e3fb99a363bda762ccfb834388f3abb4ab80f81a
-ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
+ms.openlocfilehash: cc950f9e60f5549a7a74c2963f33c36369d3ebd3
+ms.sourcegitcommit: 5c52879f3653e22bfeba4eef65e2c86025534dab
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73709705"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74126165"
 ---
 # <a name="tutorial-use-apples-corporate-device-enrollment-features-in-apple-business-manager-abm-to-enroll-ios-devices-in-intune"></a>Tutorial: usar os recursos de registro de dispositivo corporativo da Apple no Apple Business Manager (ABM) para registrar dispositivos iOS no Intune
 Os recursos de registro de dispositivo no Apple Business Manager simplificam o cadastramento de dispositivos. O Intune também dá suporte ao portal de DEP (Programa de registro de dispositivos mais antigo) da Apple, mas incentivamos você a começar com o Apple Business Manager. Com a Microsoft Intune e o registro de dispositivo corporativo da Apple, os dispositivos são automaticamente inscritos na primeira vez que o usuário liga o dispositivo. Portanto, você pode enviar dispositivos para muitos usuários sem precisar configurar cada dispositivo individualmente. 
@@ -90,7 +90,7 @@ Agora que você instalou o token, você pode criar um perfil de registro para di
 
 5. Determine se você deseja que seus dispositivos se registrem com ou sem **afinidade de usuário**. A afinidade do usuário é projetada para dispositivos que serão usados por usuários específicos. Se os usuários desejarem usar o Portal da Empresa para serviços como instalar aplicativos, escolha **registrar com afinidade de usuário**. Se os usuários não precisarem do Portal da Empresa ou se você quiser provisionar o dispositivo para muitos usuários, escolha **registrar sem afinidade de usuário**.
 
-6. Se você optar por se registrar com a afinidade do usuário, determine se deseja autenticar com Portal da Empresa ou o assistente de configuração da Apple. Se você quiser usar a autenticação multifator, permitir que os usuários alterem senhas na primeira entrada ou solicitar que os usuários redefinam suas senhas expiradas durante o registro, escolha **Sim** em **autenticar com portal da empresa em vez de configuração da Apple Assistente**. Se você estiver familiarizado com a autenticação HTTP básica fornecida pela Apple por meio do assistente de configuração da Apple, escolha **não**.
+6. Se você optar por se registrar com a afinidade do usuário, determine se deseja autenticar com Portal da Empresa ou o assistente de configuração da Apple. Se você quiser usar a autenticação multifator, permitir que os usuários alterem senhas na primeira entrada ou solicitar que os usuários redefinam suas senhas expiradas durante o registro, escolha **Sim** em **autenticar com portal da empresa em vez de configuração da Apple Assistente**. Se você estiver familiarizado com a autenticação HTTP básica fornecida pela Apple por meio do assistente de configuração da Apple, escolha **não**. Se você escolher **Sim** e quiser que o aplicativo de portal da empresa seja atualizado automaticamente nos dispositivos dos usuários finais, implante separadamente o portal da empresa como um aplicativo necessário para esses usuários por meio do Vpp (Volume Purchase Program) da Apple.
 
 7. Se você optar por se registrar com a afinidade do usuário e se autenticar com Portal da Empresa, determine se deseja instalar Portal da Empresa com o VPP (Volume Purchase Program) da Apple. Se você instalar o Portal da Empresa com um token VPP, o usuário não precisará inserir uma ID da Apple e uma senha para baixar o Portal da Empresa da loja de aplicativos durante o registro. Escolha **usar token:** em **instalar portal da empresa com o VPP** para selecionar um token VPP que tenha licenças gratuitas do portal da empresa disponíveis. Se você não quiser usar o VPP para implantar o Portal da Empresa, escolha **não usar VPP** em **instalar portal da empresa com o VPP**. 
 
