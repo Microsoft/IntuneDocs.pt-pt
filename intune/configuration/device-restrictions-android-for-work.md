@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 14fa330b0c158d98c96e0d151f8a4ec7d0c95b97
-ms.sourcegitcommit: c38a856725993a4473ada75e669a57f75ab376f8
+ms.openlocfilehash: 33f7c2aa6d6575dd4ebf4d3cd772bb7f02472578
+ms.sourcegitcommit: 15e099a9a1e18296580bb345610aee7cc4acd126
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73143036"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74164537"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Configurações de dispositivo do Android Enterprise para permitir ou restringir recursos usando o Intune
 
@@ -184,7 +184,7 @@ Use essas configurações para configurar uma experiência em estilo de quiosque
     - **Número de caracteres minúsculos necessários**: Insira o número de caracteres minúsculos que a senha deve ter, entre 0 e 16 caracteres.
     - **Número de caracteres maiúsculos necessários**: Insira o número de caracteres maiúsculos que a senha deve ter, entre 0 e 16 caracteres.
     - **Número de caracteres que não são de letra necessários**: Insira o número de letras que não sejam maiúsculas (algo que não seja letras no alfabeto) que a senha deve ter, entre 0 e 16 caracteres.
-    - **Número de caracteres numéricos necessários**: Insira o número de caracteres numéricos (`1`, `2`, `3` e assim por diante) que a senha deve ter, entre 0 e 16 caracteres.
+    - **Número de caracteres numéricos necessários**: Insira o número de caracteres numéricos (`1`, `2`, `3`e assim por diante) que a senha deve ter, entre 0 e 16 caracteres.
     - **Número de caracteres de símbolo necessários**: Insira o número de caracteres de símbolo (`&`, `#`, `%`e assim por diante) que a senha deve ter, entre 0 e 16 caracteres.
 
 - **Número de dias até a senha expirar**: Insira o número de dias, entre 1-365, até que a senha do dispositivo deva ser alterada. Por exemplo, para alterar a palavra-passe após 60 dias, introduza `60`. Quando a palavra-passe expirar, será pedido aos utilizadores para criar uma nova.
@@ -342,7 +342,7 @@ Essas configurações de senha se aplicam a perfis pessoais em dispositivos que 
 - **Verificação de ameaças em aplicativos**: **exige** a aplicação de que a configuração **verificar aplicativos** está habilitada para perfis pessoais e de trabalho.
 
    > [!Note]
-   > Esta definição só funciona para dispositivos Android O e posteriores.
+   > Essa configuração só funciona para dispositivos que são Android 8 (Oreo) e superior.
 
 - **Impedir instalações de aplicativos de fontes desconhecidas no perfil pessoal**: por design, os dispositivos Android Enterprise Work Profile não podem instalar aplicativos de fontes diferentes da Play Store. Por natureza, os dispositivos de perfil de trabalho devem ser de perfil duplo:
 

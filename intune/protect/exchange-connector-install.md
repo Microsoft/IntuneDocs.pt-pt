@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/28/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 30b5debc6e1ab113a08d8930f96f6cbc9bf12b48
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 62db99fc2e47bdfa1a767db3bb2916649dedc074
+ms.sourcegitcommit: 15e099a9a1e18296580bb345610aee7cc4acd126
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509530"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74164700"
 ---
 # <a name="set-up-the-on-premises-intune-exchange-connector"></a>Configurar o Intune Exchange Connector local
 Para ajudar a proteger o acesso ao Exchange, o Intune conta com um componente local que é conhecido como o conector do Exchange Microsoft Intune. Esse conector também é chamado de *conector local do Exchange ActiveSync* em alguns locais do console do Intune. 
@@ -59,7 +59,7 @@ A tabela a seguir lista os requisitos para o computador no qual você instala o 
 | Hardware              | O computador onde irá instalar o conector requer uma CPU de 1,6 GHz com 2 GB de RAM e, pelo menos, 10 GB de espaço livre no disco. |
 |  Sincronização do Active Directory             | Antes de usar o conector para conectar o Intune ao seu Exchange Server, [configure Active Directory sincronização](../fundamentals/users-add.md). Os usuários e grupos de segurança locais devem ser sincronizados com sua instância do Azure Active Directory. |
 | Software adicional         | O computador que hospeda o conector deve ter uma instalação completa do Microsoft .NET Framework 4,5 e do Windows PowerShell 2,0. |
-| Rede               | O computador no qual você instala o conector deve estar em um domínio que tenha uma relação de confiança com o domínio que hospeda o Exchange Server.<br /><br />Configure o computador para permitir que ele acesse o serviço do Intune por meio de firewalls e servidores proxy nas portas 80 e 443. O Intune usa estes domínios: <br> -manage.microsoft.com <br> @no__t -0\*manage.microsoft.com<br> @no__t -0\*.manage.microsoft.com <br><br> O Intune Exchange Connector se comunica com os seguintes serviços: <br> -Serviço do Intune: porta HTTPS 443 <br> -Servidor de acesso para cliente do Exchange (CAS): porta do serviço WinRM 443<br> -Descoberta automática do Exchange 443<br> -Serviços Web do Exchange (EWS) 443  |
+| Rede               | O computador no qual você instala o conector deve estar em um domínio que tenha uma relação de confiança com o domínio que hospeda o Exchange Server.<br /><br />Configure o computador para permitir que ele acesse o serviço do Intune por meio de firewalls e servidores proxy nas portas 80 e 443. O Intune usa estes domínios: <br> -manage.microsoft.com <br> - \*manage.microsoft.com<br> - \*. manage.microsoft.com <br><br> O Intune Exchange Connector se comunica com os seguintes serviços: <br> -Serviço do Intune: porta HTTPS 443 <br> -Servidor de acesso para cliente do Exchange (CAS): porta do serviço WinRM 443<br> -Descoberta automática do Exchange 443<br> -Serviços Web do Exchange (EWS) 443  |
 
 ### <a name="exchange-cmdlet-requirements"></a>Requisitos de cmdlets do Exchange
 
@@ -80,14 +80,15 @@ Crie uma conta de usuário Active Directory para o Intune Exchange Connector. A 
 
 ## <a name="download-the-installation-package"></a>Baixar o pacote de instalação
 
-1. Em um servidor Windows que pode dar suporte ao Intune Exchange Connector, entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973). Use uma conta que seja um administrador no Exchange Server local e que tenha uma licença para usar o Exchange Server.
+Em um servidor Windows que pode dar suporte ao Intune Exchange Connector:
 
-2. Acesse **Intune** > **acesso ao Exchange**.  
+1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).  Use uma conta que seja um administrador no Exchange Server local e que tenha uma licença para usar o Exchange Server.
+
+2. Selecione **Administração de locatários** > **acesso ao Exchange**.  
 
 3. Em **instalação**, escolha **conector local do Exchange ActiveSync** e, em seguida, selecione **Adicionar**.
 
 4. Na página **Adicionar conector** , selecione **baixar o conector local**. O Intune Exchange Connector está em uma pasta compactada (. zip) que pode ser aberta ou salva. Na caixa de diálogo **download de arquivo** , escolha **salvar** para armazenar a pasta compactada em um local seguro.
-
 
 ## <a name="install-and-configure-the-intune-exchange-connector"></a>Instalar e configurar o Intune Exchange Connector
 
@@ -95,7 +96,7 @@ Siga estas etapas para instalar o Intune Exchange Connector. Se você tiver vár
 
 1. Em um sistema operacional com suporte para o Intune Exchange Connector, extraia os arquivos em **Exchange_Connector_Setup. zip** para um local seguro.
    > [!IMPORTANT]
-   > Não renomeie ou mova os arquivos que estão na pasta *Exchange_Connector_Setup* Essas alterações podem fazer com que a instalação do conector falhe.
+   > Não renomeie ou mova os arquivos que estão na pasta *Exchange_Connector_Setup* . Essas alterações podem fazer com que a instalação do conector falhe.
 
 2. Depois que os arquivos forem extraídos, abra a pasta extraída e clique duas vezes em **Exchange_Connector_Setup. exe** para instalar o conector.
 
@@ -149,8 +150,6 @@ Depois que o Exchange Connector configura a conexão, os dispositivos móveis as
 > [!NOTE]
 > Se você instalar o Intune Exchange Connector e posteriormente precisar excluir a conexão do Exchange, será necessário desinstalar o conector do computador em que ele foi instalado.
 
-
-
 ## <a name="install-connectors-for-multiple-exchange-organizations"></a>Instalar conectores para várias organizações do Exchange
 
 O Intune dá suporte a vários conectores do Exchange do Intune por assinatura. Para um locatário que tem várias organizações do Exchange, você pode configurar apenas um conector para cada organização do Exchange. 
@@ -161,52 +160,60 @@ Cada organização do Exchange que se conecta ao Intune dá suporte à alta disp
 
 ## <a name="on-premises-intune-exchange-connector-high-availability-support"></a>Suporte de alta disponibilidade do Intune Exchange Connector local  
 
-Para o conector local, a alta disponibilidade significa que, se as CAS do Exchange que o conector usa se tornarem indisponíveis, o conector poderá mudar para uma CAS diferente para a organização do Exchange. O Exchange Connector em si não dá suporte à alta disponibilidade. Se o conector falhar, não haverá nenhum failover automático. Você deve [instalar um novo conector](#reinstall-the-intune-exchange-connector) para substituir o conector com falha. 
+Para o conector local, a alta disponibilidade significa que, se as CAS do Exchange que o conector usa se tornarem indisponíveis, o conector poderá mudar para uma CAS diferente para a organização do Exchange. O Exchange Connector em si não dá suporte à alta disponibilidade. Se o conector falhar, não haverá nenhum failover automático. Você deve [instalar um novo conector](#reinstall-the-intune-exchange-connector) para substituir o conector com falha.
 
-Para fazer failover, o conector usa as CAS especificadas para criar uma conexão bem-sucedida com o Exchange. Em seguida, ele descobre CASs adicionais para a organização do Exchange. Essa descoberta permite que o conector faça failover para outra CAS, se houver uma disponível, até que as CAS primárias se tornem disponíveis. 
+Para fazer failover, o conector usa as CAS especificadas para criar uma conexão bem-sucedida com o Exchange. Em seguida, ele descobre CASs adicionais para a organização do Exchange. Essa descoberta permite que o conector faça failover para outra CAS, se houver uma disponível, até que as CAS primárias se tornem disponíveis.
 
-Por padrão, a descoberta de CASs adicionais está habilitada. Se você precisar desativar o failover:  
-1. No servidor onde o Exchange Connector está instalado, acesse **%*ProgramData*% \ Microsoft\Windows Intune Exchange Connector**. 
+Por padrão, a descoberta de CASs adicionais está habilitada. Se você precisar desativar o failover:
+
+1. No servidor onde o Exchange Connector está instalado, acesse **%*ProgramData*% \ Microsoft\Windows Intune Exchange Connector**.
+
 2. Através de um editor de texto, abra **OnPremisesExchangeConnectorServiceConfiguration.xml**.
-3. Altere **\<IsCasFailoverEnabled >*true*\</IsCasFailoverEnabled >** para **\<IsCasFailoverEnabled >*false*\</IsCasFailoverEnabled >** .  
- 
+
+3. Altere **\<IsCasFailoverEnabled >*true*\</IsCasFailoverEnabled >** \<**IsCasFailoverEnabled >*false*\</IsCasFailoverEnabled >** .
+
 ## <a name="performance-tune-the-exchange-connector-optional"></a>Ajuste de desempenho do Exchange Connector (opcional)
 
-Quando o Exchange ActiveSync dá suporte a 5.000 ou mais dispositivos, você pode definir uma configuração opcional para melhorar o desempenho do conector. Você melhora o desempenho habilitando o Exchange a usar várias instâncias de um espaço de execução de comando do PowerShell. 
+Quando o Exchange ActiveSync dá suporte a 5.000 ou mais dispositivos, você pode definir uma configuração opcional para melhorar o desempenho do conector. Você melhora o desempenho habilitando o Exchange a usar várias instâncias de um espaço de execução de comando do PowerShell.
 
-Antes de fazer essa alteração, certifique-se de que a conta usada para executar o Exchange Connector não seja usada para outros fins de gerenciamento do Exchange. Uma conta do Exchange tem um número limitado de espaços de execução e o conector usará a maioria deles. 
+Antes de fazer essa alteração, certifique-se de que a conta usada para executar o Exchange Connector não seja usada para outros fins de gerenciamento do Exchange. Uma conta do Exchange tem um número limitado de espaços de execução e o conector usará a maioria deles.
 
-O ajuste de desempenho não é adequado para conectores que são executados em hardware mais antigo ou mais lento.  
+O ajuste de desempenho não é adequado para conectores que são executados em hardware mais antigo ou mais lento.
 
-Para melhorar o desempenho do Exchange Connector: 
+Para melhorar o desempenho do Exchange Connector:
 
-1. No servidor em que o conector do está instalado, abra o diretório de instalação do conector.  O local padrão é o *C:\ProgramData\Microsoft\Windows Intune Exchange Connector*. 
+1. No servidor em que o conector do está instalado, abra o diretório de instalação do conector.  O local padrão é o *C:\ProgramData\Microsoft\Windows Intune Exchange Connector*.
+
 2. Edite o arquivo *OnPremisesExchangeConnectorServiceConfiguration. xml*.
-3. Localize **EnableParallelCommandSupport** e defina o valor como **true**:  
-     
-   \<EnableParallelCommandSupport > true @ no__t-1/EnableParallelCommandSupport >
+
+3. Localize **EnableParallelCommandSupport** e defina o valor como **true**:
+
+   \<EnableParallelCommandSupport > true\</EnableParallelCommandSupport >
+
 4. Salve o arquivo e reinicie o Microsoft Intune serviço do Exchange Connector.
 
 ## <a name="reinstall-the-intune-exchange-connector"></a>Reinstalar o Intune Exchange Connector
 
 Talvez seja necessário reinstalar um Intune Exchange Connector. Como apenas um único conector pode se conectar a cada organização do Exchange, se você instalar um segundo conector para a organização, o novo conector que você instalar substituirá o conector original.
 
-1. Para instalar o novo conector, siga as etapas na seção [instalar e configurar o Exchange Connector](#install-and-configure-the-intune-exchange-connector) . 
-2. Quando solicitado, selecione **substituir** para instalar o novo conector.  
-   aviso de ![Configuration para substituir um conector @ no__t-1
+1. Para instalar o novo conector, siga as etapas na seção [instalar e configurar o Exchange Connector](#install-and-configure-the-intune-exchange-connector) .
+
+2. Quando solicitado, selecione **substituir** para instalar o novo conector.
+   ![aviso de configuração para substituir um conector](./media/exchange-connector-install/prompt-to-replace.png)
 
 3. Continue as etapas da seção [instalar e configurar o Intune Exchange Connector](#install-and-configure-the-intune-exchange-connector) e entre no Intune novamente.
-4. Na janela final, selecione **fechar** para concluir a instalação.  
-   instalação do ![Finish @ no__t-1
- 
+
+4. Na janela final, selecione **fechar** para concluir a instalação.
+   ![concluir a instalação](./media/exchange-connector-install/successful-reinstall.png)
 
 ## <a name="monitor-an-exchange-connector"></a>Monitorar um Exchange Connector
 
-Depois de configurar com êxito o Exchange Connector, você pode exibir o status das conexões e a última tentativa de sincronização bem-sucedida. 
+Depois de configurar com êxito o Exchange Connector, você pode exibir o status das conexões e a última tentativa de sincronização bem-sucedida.
 
 Para validar a conexão do Exchange Connector:
 
 1. No painel do Intune, escolha **Exchange Access**.
+
 2. Selecione **Exchange local Access** para verificar o status da conexão de cada conector do Exchange.
 
 Também pode ver a data e hora da última tentativa de sincronização efetuada com êxito.
@@ -219,13 +226,14 @@ Um Intune Exchange Connector sincroniza automaticamente os registros de disposit
 
 - Uma **sincronização rápida** ocorre regularmente, várias vezes por dia. Uma sincronização rápida recupera informações de dispositivo para usuários do Exchange no local e licenciados para o Intune que são direcionados para acesso condicional e que foram alterados desde a última sincronização.
 
-- Uma **sincronização completa** ocorre uma vez por dia por padrão. Uma sincronização completa recupera informações do dispositivo para todos os usuários do Exchange com licença do Intune e locais que são direcionados para acesso condicional. Uma sincronização completa também recupera informações do Exchange Server e garante que a configuração que o Intune especifica na portal do Azure seja atualizada no Exchange Server. 
-
+- Uma **sincronização completa** ocorre uma vez por dia por padrão. Uma sincronização completa recupera informações do dispositivo para todos os usuários do Exchange com licença do Intune e locais que são direcionados para acesso condicional. Uma sincronização completa também recupera informações do Exchange Server e garante que a configuração que o Intune especifica na portal do Azure seja atualizada no Exchange Server.
 
 Você pode forçar um conector a executar uma sincronização usando as opções **sincronização rápida** ou **sincronização completa** no painel do Intune:
 
    1. No painel do Intune, escolha **Exchange Access**.
+
    2. Selecione **Exchange local Access**.
+
    3. Selecione o conector que pretende sincronizar e, em seguida, selecione **Sincronização Rápida** ou **Sincronização Completa**.
 
 ## <a name="next-steps"></a>Próximos passos

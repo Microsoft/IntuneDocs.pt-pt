@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 07/25/2019
+ms.date: 11/18/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: enrollment
@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 03ceaf5493f544dbb815146eb67c3fae8856d29e
-ms.sourcegitcommit: 5c52879f3653e22bfeba4eef65e2c86025534dab
+ms.openlocfilehash: ca0702744e19c8d09533c1c0ac38356233c1d314
+ms.sourcegitcommit: 15e099a9a1e18296580bb345610aee7cc4acd126
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "74126143"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74164588"
 ---
 # <a name="troubleshoot-ios-device-enrollment-problems-in-microsoft-intune"></a>Solucionar problemas de registro de dispositivo iOS no Microsoft Intune
 
@@ -63,9 +63,53 @@ Colete as seguintes informações sobre o problema:
 1. Inicie sessão no portal do Azure.
 2. Selecione **mais serviços**, pesquise Intune e, em seguida, selecione **Intune**.
 3. Selecione **Inscrição de dispositivos** > **Restrições de inscrição**.
-4. Em **restrições de tipo de dispositivo**, selecione a restrição que você deseja definir **> Propriedades** > **selecione plataformas** > selecione **permitir** para **Ios**e clique em **OK**.
+4. Em **restrições de tipo de dispositivo**, selecione a restrição que você deseja definir > **Propriedades** > **Selecionar plataformas** > selecione **permitir** para **Ios**e clique em **OK**.
 5. Selecione **Configurar plataformas**, selecione **permitir** dispositivos IOS de propriedade pessoal e clique em **OK**.
 6. Registre novamente o dispositivo.
+
+**Causa:** Os registros CNAME necessários no DNS não existem.
+
+#### <a name="resolution"></a>Resolução
+Crie registos de recursos DNS CNAME para o domínio da sua empresa. Por exemplo, se o domínio da sua empresa for contoso.com, crie um CNAME no DNS que redireciona EnterpriseEnrollment.contoso.com para EnterpriseEnrollment-s.manage.microsoft.com.
+
+Apesar de a criação de entradas DNS CNAME ser opcional, os registos CNAME facilitam a inscrição para os utilizadores. Se não for encontrado nenhum registo CNAME de inscrição, os utilizadores receberão um pedido para introduzir manualmente o nome do servidor MDM, enrollment.manage.microsoft.com.
+
+Se houver mais de um domínio verificado, crie um registro CNAME para cada domínio. Os registos de recursos CNAME têm de conter as seguintes informações:
+
+|TIPO|Nome do anfitrião|Aponta para|TTL|
+|------|------|------|------|
+|CNAME|EnterpriseEnrollment.dominio_empresa.com|EnterpriseEnrollment-s.manage.microsoft.com|1 h|
+|CNAME|EnterpriseRegistration.dominio_empresa.com|EnterpriseRegistration.windows.net|1 h|
+
+Se a sua empresa utilizar vários domínios para as credenciais do utilizador, crie os registos CNAME para cada domínio.
+
+> [!NOTE]
+> As alterações aos registos DNS podem demorar até 72 horas a serem propagadas. Não é possível verificar a alteração de DNS no Intune até o registo DNS ser propagado.
+
+**Causa:** Você registra um dispositivo que foi registrado anteriormente com uma conta de usuário diferente e o usuário anterior não foi removido adequadamente do Intune.
+
+#### <a name="resolution"></a>Resolução
+1. Cancele qualquer instalação de perfil atual.
+2. Abra [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com) no Safari.
+3. Registre novamente o dispositivo.
+
+> [!NOTE]
+> Se o registro ainda falhar, remova os cookies no Safari (não bloqueie cookies) e registre o dispositivo novamente.
+
+**Causa:** O dispositivo já está registrado com outro provedor de MDM.
+
+#### <a name="resolution"></a>Resolução
+1. Abra **configurações** no dispositivo IOS, vá para **geral > gerenciamento de dispositivo**.
+2. Remova qualquer perfil de gerenciamento existente.
+3. Registre novamente o dispositivo.
+
+**Causa:** O usuário que está tentando registrar o dispositivo não tem uma licença de Microsoft Intune.
+
+#### <a name="resolution"></a>Resolução
+1. Vá para o [centro de administração do Office 365](https://portal.office.com/adminportal/home#/homepage)e escolha **usuários > usuários ativos**.
+2. Selecione a conta de usuário à qual você deseja atribuir uma licença de usuário do Intune e escolha **licenças de produto > editar**.
+3. Alterne a alternância para a posição **ligado** da licença que você deseja atribuir a esse usuário e, em seguida, escolha **salvar**.
+4. e-registrar o dispositivo.
 
 ### <a name="this-service-is-not-supported-no-enrollment-policy"></a>Não há suporte para esse serviço. Nenhuma política de registro.
 
@@ -113,7 +157,7 @@ Colete as seguintes informações sobre o problema:
 **Causa:** O usuário que está tentando registrar o dispositivo não tem uma licença do Intune válida.
 
 #### <a name="resolution"></a>Resolução
-1. Vá para o [centro de administração do Microsoft 365](https://portal.office.com/adminportal/home#/homepage)e escolha **usuários** > **usuários ativos**.
+1. Vá para o [centro de administração do Microsoft 365](https://portal.office.com/adminportal/home#/homepage)e, em seguida, escolha **usuários** > **usuários ativos**.
 2. Selecione a conta de usuário afetada > **licenças de produto** > **Editar**.
 3. Verifique se uma licença válida do Intune está atribuída a este usuário.
 4. Registre novamente o dispositivo.
@@ -122,7 +166,7 @@ Colete as seguintes informações sobre o problema:
 
 **Causa:** O usuário que está tentando registrar o dispositivo não tem uma licença do Intune válida.
 
-1. Vá para o [centro de administração do Microsoft 365](https://portal.office.com/adminportal/home#/homepage)e escolha **usuários** > **usuários ativos**.
+1. Vá para o [centro de administração do Microsoft 365](https://portal.office.com/adminportal/home#/homepage)e, em seguida, escolha **usuários** > **usuários ativos**.
 2. Selecione a conta de usuário afetada e escolha **licenças de produto** > **Editar**.
 3. Verifique se uma licença válida do Intune está atribuída a este usuário.
 4. Registre novamente o dispositivo.
@@ -133,7 +177,7 @@ Colete as seguintes informações sobre o problema:
 
 #### <a name="resolution"></a>Resolução
 
-1. Abra **as configurações** no dispositivo IOS >**gerenciamento de dispositivo** >  **geral**.
+1. Abra **as configurações** no dispositivo IOS > **geral** > **Gerenciamento de dispositivos**.
 2. Toque no perfil de gerenciamento existente e toque em **remover gerenciamento**.
 3. Registre novamente o dispositivo.
 
@@ -186,7 +230,7 @@ Quando você ativa um dispositivo gerenciado por DEP que recebe um perfil de reg
 #### <a name="resolution"></a>Resolução
 
 1. Edite o perfil de registro. Você pode fazer qualquer alteração no perfil. A finalidade é atualizar a hora de modificação do perfil.
-2. Sincronizar dispositivos gerenciados por DEP: Abra o portal do Intune > **Admin** > **Gerenciamento de dispositivo móvel** > **Ios** > **programa de registro de dispositivos**a sincronização  > **agora**. É enviado um pedido de sincronização para a Apple.
+2. Sincronizar dispositivos gerenciados por DEP: Abra o portal do Intune > **administração** > **Gerenciamento de dispositivo móvel** > **Ios** > **programa de registro de dispositivos** > **sincronizar agora**. É enviado um pedido de sincronização para a Apple.
 
 ### <a name="dep-enrollment-stuck-at-user-login"></a>Registro de DEP travado no logon do usuário
 Quando você ativa um dispositivo gerenciado por DEP que recebe um perfil de registro, a instalação inicial se une depois que você insere as credenciais.

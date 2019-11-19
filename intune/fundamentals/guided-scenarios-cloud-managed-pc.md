@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/13/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4a757da6cf4f4a2a3bde907f0025d4a08a52131b
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: f78f3696827ebd50084f0e4b012c5f94427eeb35
+ms.sourcegitcommit: 15e099a9a1e18296580bb345610aee7cc4acd126
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059645"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74164580"
 ---
 # <a name="guided-scenario---cloud-managed-modern-desktop"></a>Cenário guiado – área de trabalho moderna gerenciada pela nuvem
 
@@ -33,7 +33,7 @@ Se você quiser avaliar uma área de trabalho moderna gerenciada pela nuvem em s
 
 ## <a name="prerequisites"></a>Pré-requisitos
 - [Definir a autoridade de MDM para o Intune](~/fundamentals/mdm-authority-set.md#set-mdm-authority-to-intune) – a configuração de autoridade de gerenciamento de dispositivo móvel (MDM) determina como você gerencia seus dispositivos. Como administrador de TI, tem de definir uma autoridade de MDM antes de os utilizadores poderem inscrever dispositivos para gestão.
-- M356 E3 mínimo (ou M365 E5 para obter a melhor segurança)
+- M365 E3 mínimo (ou M365 E5 para obter a melhor segurança)
 - Dispositivo Windows 10 1903 (registrado com o Windows AutoPilot para a melhor experiência do usuário final)
 - Permissões de administrador do Intune necessárias para concluir este cenário guiado:
   - Configuração de dispositivo ler, criar, excluir, atribuir e atualizar
