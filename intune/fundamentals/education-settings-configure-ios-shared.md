@@ -18,19 +18,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 839a62e32c2fafcaaa591e38cd5b2e297ed3750f
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 86b61f628dc559bf0520dbe16ef58644bd360269
+ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502939"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74188450"
 ---
-# <a name="configure-intune-education-settings-for-shared-ipad-devices"></a>Definir configurações de educação do Intune para dispositivos iPad compartilhados
+# <a name="configure-intune-education-settings-for-shared-ipad-devices"></a>Configure Intune education settings for shared iPad devices
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 > [!NOTE]
-> As configurações do Intune para o aplicativo sala de aula estão obsoletas no Intune. Este artigo aplica-se apenas aos utilizadores com perfis de educação existentes no Intune.
+> Intune doesn't currently support configuring the Classroom app. This article is only applicable for users with existing iOS Education profiles in Intune.
 
 O Intune suporta a aplicação Sala de Aula para iOS, que ajuda os professores a orientar a aprendizagem e a controlar os dispositivos dos estudantes na sala de aula. Além da aplicação Sala de Aula, a Apple suporta a possibilidade de configurar os dispositivos iPad dos estudantes de forma a que múltiplos estudantes possam partilhar um único dispositivo. Este documento fornece-lhe orientações para alcançar este objetivo com o Intune.
 
@@ -68,7 +68,7 @@ Pode importar informações para o SDS através de um dos seguintes métodos:
 
 ### <a name="configure-general-settings"></a>Configurar as definições gerais
 
-1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. No painel **Intune**, selecione **Configuração do dispositivo**.
 2. No painel **Configuração do dispositivo** na secção **Gerir**, selecione **Perfis**.
 5. No painel de perfis, selecione **Criar perfil**.
@@ -138,7 +138,7 @@ O perfil é criado e apresentado no painel da lista de perfis.
 
 ## <a name="step-3---create-a-device-category"></a>Passo 3 – criar uma categoria de dispositivo
 
-1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. No painel **Intune**, selecione **Inscrição de dispositivos**.
 4. No painel **Inscrição de dispositivos – Descrição geral**, selecione **Categorias de dispositivos**.
 5. No painel **Inscrição de dispositivos – Categorias de dispositivos**, selecione **Criar**.
@@ -149,7 +149,7 @@ A categoria de dispositivos é criada no painel **Inscrição – Categorias de 
 
 ## <a name="step-4--create-a-dynamic-group"></a>Passo 4 – criar um grupo dinâmico
 
-1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. No painel **Intune**, selecione **Grupos**.
 4. No painel **Utilizadores e Grupos – Todos os Grupos**, selecione **Novo grupo**.
 5. No painel **Grupo**, selecione um **Tipo de grupo** e, em seguida, introduza um **Nome** e uma **Descrição** para o grupo.
@@ -166,7 +166,7 @@ O grupo dinâmico é criado no painel **Utilizadores e Grupos – Todos os Grupo
 
 ## <a name="step-5--assign-a-device-to-a-category-carts"></a>Passo 5 – atribuir um dispositivo a uma categoria (Carrinhos)
 
-1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. No painel **Intune**, selecione **Dispositivos**.
 4. No painel **Dispositivos**, selecione **Todos os dispositivos**.
 5. No painel **Dispositivos – Todos os dispositivos**, selecione um dispositivo.
@@ -178,7 +178,7 @@ O dispositivo está agora associado à categoria de dispositivos. Repita este pr
 
 ## <a name="step-6--create-classroom-profiles"></a>Passo 6 – criar perfis de sala de aula
 
-1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. No painel **Intune**, selecione **Configuração do dispositivo**.
 4. No painel **Configuração do dispositivo**, selecione **Gerir** > **Perfis do Carrinho**.
 5. No painel de perfis, selecione **Criar Perfil**.
@@ -193,7 +193,7 @@ O perfil é criado e apresentado no painel da lista de perfis.
 
 ## <a name="step-7---assign-the-cart-profile-to-classes"></a>Passo 7 – atribuir o Perfil do Carrinho a turmas
 
-1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. No painel **Intune**, selecione **Configuração do dispositivo**.
 4. No painel **Configuração do dispositivo**, selecione **Monitorizar** > **Estado da atribuição**.
 5. No painel **Estado da atribuição**, selecione o **Perfil do Carrinho** que criou.
