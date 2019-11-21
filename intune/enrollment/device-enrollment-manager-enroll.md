@@ -18,14 +18,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2b3c82faab08248640e19573582ccbd232e0587d
-ms.sourcegitcommit: 5932da3ed8f52c7b0f0d71c1801f81c85952cf0c
+ms.openlocfilehash: 0012a80f0e9ea60b41c94a582e42d5f647c6bbc2
+ms.sourcegitcommit: cdb2a484b059bd8d8c3985cde1e883c24a4c1cad
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72923356"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74239207"
 ---
-# <a name="enroll-devices-in-intune-by-using-a-device-enrollment-manager-account"></a>Registrar dispositivos no Intune usando uma conta do Gerenciador de registro de dispositivos
+# <a name="enroll-devices-in-intune-by-using-a-device-enrollment-manager-account"></a>Inscrever dispositivos no Intune ao utilizar uma conta de Gestor de inscrição de dispositivos
 
 Pode inscrever até 1000 dispositivos móveis com uma única conta do Azure Active Directory ao utilizar uma conta do gestor de inscrição de dispositivos (DEM). O DEM é uma permissão do Intune que pode ser aplicada a uma conta de utilizador do AAD e que permite que o utilizador inscreva até 1000 dispositivos. Uma conta DEM é útil para cenários onde os dispositivos são inscritos e preparados antes de serem distribuídos aos utilizadores. Por design, há um limite de 150 contas do DEM (Gerenciador de registro de dispositivo) no Microsoft Intune.
 
@@ -36,9 +36,10 @@ As contas de utilizador DEM e os dispositivos que estão inscritos com uma conta
 - Uma licença do Intune deve ser atribuída a um usuário da conta do DEM.
 - A limpeza não pode ser feita a partir do Portal da Empresa. A limpeza de um dispositivo inscrito por uma conta de utilizador DEM pode ser feita no portal do Azure a partir do Intune.
 - Apenas o dispositivo local é apresentado na aplicação Portal da Empresa ou do site.
-- As contas de utilizador DEM não podem utilizar aplicações Apple Volume Purchase Program (VPP) com licenças de utilizador Apple VPP devido aos requisitos do ID Apple por utilizador para a gestão de aplicações.
+- As contas de usuário do DEM não podem usar aplicativos Apple Volume Purchase Program (VPP) com licenças de usuário VPP da Apple devido a requisitos de ID da Apple por usuário para o gerenciamento de aplicativos.
+- As contas DEM não podem ser usadas ao registrar dispositivos por meio da DEP (Programa de registro de dispositivos da Apple).
 - Os dispositivos podem instalar as aplicações VPP se tiverem licenças do dispositivo Apple VPP.
-- Os dispositivos são bloqueados para acesso condicional com exceção do Windows 10 1803 +
+- Dispositivos estão bloqueados para o acesso condicional com a exceção do Windows 10 versão 1803 +
 - Todos os dispositivos registrados com as contas do DEM precisam ser devidamente licenciados para serem gerenciados pelo Intune. A licença pode ser uma licença de usuário do Intune ou uma licença de dispositivo do Intune.
 - Se você estiver [registrando dispositivos de perfil de trabalho do Android Enterprise](android-work-profile-enroll.md) usando uma conta do DEM, haverá um limite de 10 dispositivos que podem ser registrados por conta.
 

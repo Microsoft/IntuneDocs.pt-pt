@@ -18,20 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 99d946366724b03ecdf5c47d8ba7b1d820ed3055
-ms.sourcegitcommit: 15e099a9a1e18296580bb345610aee7cc4acd126
+ms.openlocfilehash: 55fc7149d23336519af76c423862bd81f065b88f
+ms.sourcegitcommit: cdb2a484b059bd8d8c3985cde1e883c24a4c1cad
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74164725"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74239238"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Inscrever automaticamente dispositivos iOS com o Programa de Inscrição de Dispositivos da Apple
 
 Pode configurar o Intune para inscrever os dispositivos iOS adquiridos através do [Programa de Registo de Aparelho (DEP)](https://deploy.apple.com) da Apple. O DEP permite-lhe inscrever um grande número de dispositivos de forma remota. Os dispositivos como iPhones e iPads podem ser enviados diretamente aos utilizadores. Quando o utilizador ativar o dispositivo, o Assistente de Configuração será executado com as predefinições configuradas e o dispositivo será inscrito na gestão.
 
-Para ativar a inscrição DEP, deve utilizar os portais do Intune e do Apple DEP. É necessária uma lista de números de série ou um número de encomenda para poder atribuir dispositivos ao Intune para gestão. São criados os perfis de inscrição DEP com as definições aplicadas aos dispositivos durante a inscrição.
-
-A propósito, a inscrição DEP não funciona com o [gestor de inscrição de dispositivos](device-enrollment-manager-enroll.md).
+Para ativar a inscrição DEP, deve utilizar os portais do Intune e do Apple DEP. É necessária uma lista de números de série ou um número de encomenda para poder atribuir dispositivos ao Intune para gestão. São criados os perfis de inscrição DEP com as definições aplicadas aos dispositivos durante a inscrição. Observe que o registro de DEP não pode ser usado com uma conta de [Gerenciador de registro de dispositivos](device-enrollment-manager-enroll.md) .
 
 > [!NOTE]
 > O DEP define configurações de dispositivo que não podem ser removidas pelo usuário final. Portanto, antes de [migrar para o Dep](../fundamentals/migration-guide-considerations.md), o dispositivo deve ser apagado para retorná-lo a um estado (novo) pronto para uso.
@@ -80,10 +78,10 @@ Pode utilizar o portal de DEP da Apple para criar um token DEP. Também pode uti
 
    ![Captura de ecrã a mostrar o painel Token do Programa de Inscrição, na área de trabalho Certificados da Apple, para transferir a chave pública.](./media/device-enrollment-program-enroll-ios/add-enrollment-program-token-pane.png)
 
-3. Selecione **Transferir a chave pública** para transferir e guardar o ficheiro da chave de encriptação (.pem) localmente. O ficheiro .pem é utilizado para pedir um certificado de relação de confiança a partir do portal do Programa de Inscrição de Dispositivos da Apple.
+3. Selecione **Transferir a chave pública** para transferir e guardar o ficheiro da chave de encriptação (.pem) localmente. O ficheiro .pem é utilizado para pedir um certificado de relação de confiança a partir do portal do Programa de Registo de Aparelho da Apple.
 
 
-### <a name="step-2-use-your-key-to-download-a-token-from-apple"></a>Passo 2: Utilize a sua chave para transferir um token a partir da Apple.
+### <a name="step-2-use-your-key-to-download-a-token-from-apple"></a>Passo 2. Utilize a sua chave para transferir um token a partir da Apple.
 
 1. Selecione **Criar um token para o Programa de Registo de Aparelho da Apple** para abrir o portal Programa de Implementação da Apple e inicie sessão com o Apple ID da sua empresa. Pode utilizar este Apple ID para renovar o seu token DEP.
 2. No [portal dos Programas de Implementação](https://deploy.apple.com) da Apple, selecione **Começar** em **Programa de Registo de Aparelho**.
@@ -199,7 +197,7 @@ Agora que instalou o seu token, pode criar um perfil de inscrição para disposi
 15. Na página **personalização do assistente de configuração** , defina as seguintes configurações de perfil: ![personalização do assistente de configuração.](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png)
 
 
-    | Definições do departamento | Description |
+    | Definições do departamento | Descrição |
     |---|---|
     | <strong>Nome do Departamento</strong> | É apresentado quando os utilizadores tocam em <strong>Acerca da Configuração</strong> durante a ativação. |
     |    <strong>Número de Telefone do Departamento</strong>     | Aparece quando o utilizador clica no botão <strong>Preciso de Ajuda</strong> durante a ativação. |
