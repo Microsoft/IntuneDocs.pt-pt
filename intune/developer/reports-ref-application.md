@@ -1,12 +1,12 @@
 ---
-title: Referência para entidades de aplicativo
+title: Reference for Application entities
 titleSuffix: Microsoft Intune
 description: Tópico de referência para a categoria Application das coleções de entidades na API do Armazém de Dados do Intune.
 keywords: Armazém de Dados do Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/02/2019
+ms.date: 11/21/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ac40be5cf3d0a0a217340b3c745daf740a24e8e7
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: a4a8fa34673340e4adca7b64707d8c79d4808460
+ms.sourcegitcommit: 1cf063c98e1caae00a6e6fab821cc3254562bca9
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72490375"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74290956"
 ---
 # <a name="reference-for-application-entities"></a>Referência para as entidades de aplicações
 
-A categoria **Application** contém entidades para dispositivos móveis que registam informações como:
+The **Application** category contains entities for devices that track information such as:
 
 - Versões de uma aplicação
 - Origem da instalação de uma aplicação
@@ -43,14 +43,14 @@ A entidade **appRevision** apresenta uma lista de todas as versões das aplicaç
 |---------|------------|--------|
 | appKey |Identificador exclusivo da Aplicação. |123 |
 | applicationId |Identificador exclusivo da Aplicação – semelhante à AppKey, mas esta é uma chave natural. |b66bc706-ffff-7437-0340-032819502773 |
-| revisão |A versão como mencionada pelo administrador durante o carregamento do binário. |2 |
+| revision |A versão como mencionada pelo administrador durante o carregamento do binário. |2 |
 | título |Nome da aplicação. |Excel |
-| Programa |Publicador da aplicação. |Microsoft |
-| UploadState |Estado de carregamento da aplicação. |1 |
+| publisher |Publicador da aplicação. |Microsoft |
+| uploadState |Estado de carregamento da aplicação. |1 |
 | appTypeKey |Referência ao AppType descrito na secção seguinte. | |
 | vppProgramTypeKey |Referência ao VppProgramType descrito abaixo. | |
 | creationTime |A hora em que esta revisão foi criada. |11/23/2016 12:00:00 AM |
-| modificadotime |A última vez em que algo relacionado com esta revisão foi alterado. |11/23/2016 12:00:00 AM |
+| modifiedTime |A última vez em que algo relacionado com esta revisão foi alterado. |11/23/2016 12:00:00 AM |
 | tamanho |Tamanho do binário. | |
 | startDateInclusiveUTC |Data e hora em UTC em que a revisão da Aplicação foi criada no armazém de dados. |11/23/2016 12:00:00 AM |
 | endDateExclusiveUTC |Data e hora em UTC em que a revisão desta aplicação se tornou obsoleta. |11/23/2016 12:00:00 AM |
@@ -108,7 +108,7 @@ A entidade **vppProgramType** apresenta uma lista de tipos de programas VPP poss
 
 ## <a name="applicationinventories"></a>applicationInventories
 
-A entidade **deinventário** lista os aplicativos encontrados no dispositivo no momento da coleta de inventário.
+The **applicationInventory** entity lists the applications found on the device at the time of inventory collection.
 
 | Propriedade  | Description |
 |---------|------------|
@@ -120,7 +120,7 @@ A entidade **deinventário** lista os aplicativos encontrados no dispositivo no 
 
 ## <a name="mobileappinstallstates"></a>mobileAppInstallStates
 
-A entidade **mobileAppInstallState** representa o estado de instalação de um aplicativo móvel depois que ele tiver sido atribuído a um grupo que contém dispositivos, usuários ou ambos.
+The **mobileAppInstallState** entity represents the install state for a mobile application after it has been assigned to a group containing devices, users or both.
 
 | Propriedade | Description |
 |---|---|
