@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 889b0a7562f1a663556e955271681e0747aeb3c4
-ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
+ms.openlocfilehash: c8c756ad2df00a97df7289491daf830e584c0045
+ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199174"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74410201"
 ---
 # <a name="enforce-compliance-for-microsoft-defender-atp-with-conditional-access-in-intune"></a>Enforce compliance for Microsoft Defender ATP with Conditional Access in Intune
 
@@ -193,6 +193,12 @@ Next, monitor the state of devices that have the Microsoft Defender ATP complian
 2. Select **Devices** > **Monitor** > **Policy compliance**.
 
 3. Find your Microsoft Defender ATP policy in the list, and see which devices are compliant or noncompliant.
+
+You can also use the *operational* report for noncompliant devices from the same location:
+
+1. Select **Devices** > **Monitor** > **Noncompliant devices**.
+
+For more information about reports, see [Intune reports](../fundamentals/reports.md).
 
 ## <a name="view-onboarding-status"></a>View onboarding status
 

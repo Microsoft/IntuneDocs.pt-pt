@@ -1,6 +1,6 @@
 ---
-title: Usar o OEMConfig em dispositivos Android Enterprise no Microsoft Intune – Azure | Microsoft Docs
-description: Use Microsoft Intune para gerenciar e usar dispositivos que executam o Android Enterprise com o OEMConfig. Consulte todas as etapas, incluindo uma visão geral, consulte os pré-requisitos, criar o perfil de configuração no Intune e ver uma lista de aplicativos OEMConfig com suporte.
+title: Use OEMConfig on Android Enterprise devices in Microsoft Intune - Azure | Microsoft Docs
+description: Use Microsoft Intune to manage and use devices running Android Enterprise with OEMConfig. See all the steps, including an overview, see the prerequisites, create the configuration profile in Intune, and see a list of supported OEMConfig apps.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -17,142 +17,147 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bacb7e26df8a5b0d6c7500b24a5e749a85ca62f2
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: 075e7a99f72de30e83447a2869154859e33356b9
+ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059635"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74390845"
 ---
-# <a name="use-and-manage-android-enterprise-devices-with-oemconfig-in-microsoft-intune"></a>Usar e gerenciar dispositivos Android Enterprise com o OEMConfig no Microsoft Intune
+# <a name="use-and-manage-android-enterprise-devices-with-oemconfig-in-microsoft-intune"></a>Use and manage Android Enterprise devices with OEMConfig in Microsoft Intune
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-No Microsoft Intune, você pode usar o OEMConfig para adicionar, criar e personalizar configurações específicas de OEM para dispositivos Android Enterprise. OEMConfig normalmente é usado para definir configurações que não são internas no Intune. Fabricantes de equipamento original (OEM) diferentes incluem configurações diferentes. As configurações disponíveis dependem do que o OEM inclui em seu aplicativo OEMConfig.
+In Microsoft Intune, you can use OEMConfig to add, create, and customize OEM-specific settings for Android Enterprise devices. OEMConfig is typically used to configure settings that aren't built in to Intune. Different original equipment manufacturers (OEM) include different settings. The available settings depend on what the OEM includes in their OEMConfig app.
 
 Esta funcionalidade aplica-se a:  
 
 - Android Enterprise
 
-Este artigo descreve o OEMConfig, lista os pré-requisitos, mostra como criar um perfil de configuração e lista os aplicativos OEMConfig com suporte no Intune.
+This article describes OEMConfig, lists the prerequisites, shows how to create a configuration profile, and lists the supported OEMConfig apps in Intune.
 
 ## <a name="overview"></a>Overview
 
-As políticas de OEMConfig são um tipo especial de política de configuração de dispositivo semelhante à [política de configuração de aplicativo](../apps/app-configuration-policies-overview.md). OEMConfig é um padrão definido pelo Google que aproveita a configuração de aplicativo no Android para enviar configurações de dispositivo para aplicativos escritos por OEMs (fabricantes originais de equipamento). Esse padrão permite que OEMs e EMMs (gerenciamento de mobilidade empresarial) criem e ofereçam suporte a recursos específicos de OEM de forma padronizada. [Saiba mais sobre o OEMConfig](https://blog.google/products/android-enterprise/oemconfig-supports-enterprise-device-features/).
+OEMConfig policies are a special type of device configuration policy similar to [app configuration policy](../apps/app-configuration-policies-overview.md). OEMConfig is a standard defined by Google that leverages app configuration in Android to send device settings to apps written by OEMs (original equipment manufacturers). This standard allows OEMs and EMMs (enterprise mobility management) to build and support OEM-specific features in a standardized way. [Learn more about OEMConfig](https://blog.google/products/android-enterprise/oemconfig-supports-enterprise-device-features/).
 
-Historicamente, o EMMs, como o Intune, cria manualmente suporte para recursos específicos do OEM depois que eles são introduzidos pelo OEM. Essa abordagem leva a esforços duplicados e a adoção lenta.
+Historically, EMMs, such as Intune, manually build support for OEM-specific features after they're introduced by the OEM. This approach leads to duplicated efforts and slow adoption.
 
-Com o OEMConfig, um OEM cria um esquema que define os recursos de gerenciamento específicos do OEM. O OEM insere o esquema em um aplicativo e, em seguida, coloca esse aplicativo em Google Play. O EMM lê o esquema do aplicativo e expõe o esquema no console do administrador do EMM. O console permite que os administradores do Intune definam as configurações no esquema.
+With OEMConfig, an OEM creates a schema that defines OEM-specific management features. The OEM embeds the schema into an app, and then puts this app on Google Play. The EMM reads the schema from the app, and exposes the schema in the EMM administrator console. The console allows Intune administrators to configure the settings in the schema.
 
-Quando o aplicativo OEMConfig é instalado em um dispositivo, ele usa as configurações definidas no console do administrador do EMM para gerenciar o dispositivo. As configurações no dispositivo são executadas pelo aplicativo OEMConfig, em vez de um agente MDM criado pelo EMM.
+When the OEMConfig app installs on a device, it uses the settings configured in the EMM administrator console to manage the device. Settings on the device are executed by the OEMConfig app, instead of an MDM agent built by the EMM.
 
-Quando o OEM adiciona e melhora os recursos de gerenciamento, o OEM também atualiza o aplicativo no Google Play. Como administrador, você obtém esses novos recursos e atualizações (incluindo correções) sem esperar que o EMMs inclua essas atualizações.
+When the OEM adds and improves management features, the OEM also updates the app in Google Play. As an administrator, you get these new features and updates (including fixes) without waiting for EMMs to include these updates.
 
 > [!TIP]
-> Você só pode usar OEMConfig com dispositivos que dão suporte a esse recurso e ter um aplicativo OEMConfig correspondente. Consulte seu OEM para obter detalhes específicos.
+> You can only use OEMConfig with devices that support this feature and have a corresponding OEMConfig app. Consult your OEM for specific details.
 
 ## <a name="before-you-begin"></a>Antes de começar
 
-Ao usar o OEMConfig, esteja ciente das seguintes informações:
+When using OEMConfig, be aware of the following information:
 
-- O Intune expõe o esquema do aplicativo OEMConfig para que você possa configurá-lo. O Intune não valida nem altera o esquema fornecido pelo aplicativo. Portanto, se o esquema estiver incorreto ou tiver dados imprecisos, esses dados ainda serão enviados aos dispositivos. Se você encontrar um problema originado no esquema, entre em contato com o OEM para obter orientação.
-- O Intune não influencia nem controla o conteúdo do esquema do aplicativo. Por exemplo, o Intune não tem nenhum controle sobre cadeias de caracteres, linguagem, as ações permitidas e assim por diante. Recomendamos entrar em contato com o OEM para obter detalhes e práticas recomendadas para gerenciar seus dispositivos com o OEMConfig.
-- A qualquer momento, os OEMs podem atualizar seus recursos e esquemas com suporte e carregar um novo aplicativo para Google Play. O Intune sempre sincroniza a versão mais recente do aplicativo OEMConfig de Google Play. O Intune não mantém versões mais antigas do esquema nem do aplicativo. Se você encontrar conflitos de versão, recomendamos entrar em contato com o OEM para obter mais informações.
-- Atribua um perfil OEMConfig a um dispositivo. Se vários perfis forem atribuídos ao mesmo dispositivo, você poderá ver um comportamento inconsistente. O modelo OEMConfig dá suporte apenas a uma única política por dispositivo.
+- Intune exposes the OEMConfig app's schema so you can configure it. Intune doesn't validate or change the schema provided by the app. So if the schema is incorrect, or has inaccurate data, then this data is still sent to devices. If you find a problem that originates in the schema, contact the OEM for guidance.
+- Intune doesn't influence or control the content of the app schema. For example, Intune doesn't have any control over strings, language, the actions allowed, and so on. We recommend contacting the OEM for details and best practices for managing their devices with OEMConfig.
+- At any time, OEMs can update their supported features and schemas, and upload a new app to Google Play. Intune always syncs the latest version of the OEMConfig app from Google Play. Intune doesn't maintain older versions of the schema or the app. If you run into version conflicts, we recommend contacting the OEM for more information.
+- Assign one OEMConfig profile to a device. If multiple profiles are assigned to the same device, you may see inconsistent behavior. The OEMConfig model only supports a single policy per device.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-Para usar o OEMConfig em seus dispositivos, certifique-se de ter os seguintes requisitos:
+To use OEMConfig on your devices, be sure you have the following requirements:
 
-- Um dispositivo Android Enterprise registrado no Intune.
-- Um aplicativo OEMConfig criado pelo OEM e carregado para Google Play. Se não estiver em Google Play, entre em contato com o OEM para obter mais informações.
-- O administrador do Intune tem permissões de RBAC (controle de acesso baseado em função) para **aplicativos móveis**, **configurações de dispositivo**e a permissão de "leitura" no **Android for Work**. Essas permissões são necessárias porque os perfis OEMConfig usam configurações de aplicativo gerenciado para gerenciar as configurações do dispositivo.
+- An Android Enterprise device enrolled in Intune.
+- An OEMConfig app built by the OEM, and uploaded to Google Play. If it's not on Google Play, contact the OEM for more information.
+- The Intune administrator has role-based access control (RBAC) permissions for **Mobile apps**, **Device Configurations**, and the "read" permission under **Android for Work**. These permissions are required because OEMConfig profiles use managed app configurations to manage device configurations.
 
-## <a name="prepare-the-oemconfig-app"></a>Preparar o aplicativo OEMConfig
+## <a name="prepare-the-oemconfig-app"></a>Prepare the OEMConfig app
 
-Verifique se o dispositivo dá suporte a OEMConfig, se o aplicativo OEMConfig correto foi adicionado ao Intune e se o aplicativo está instalado no dispositivo. Contate o OEM para obter essas informações.
+Be sure the device supports OEMConfig, the correct OEMConfig app is added to Intune, and the app is installed on the device. Contact the OEM for this information.
 
 > [!TIP] 
-> Os aplicativos OEMConfig são específicos para o OEM. Por exemplo, um aplicativo Sony OEMConfig instalado em um dispositivo pretas Technologies não faz nada.
+> OEMConfig apps are specific to the OEM. For example, a Sony OEMConfig app installed on a Zebra Technologies device doesn't do anything.
 
-1. Obtenha o aplicativo OEMConfig do Google Play Store gerenciado. [Adicionar aplicativos Google Play gerenciados a dispositivos Android Enterprise](../apps/apps-add-android-for-work.md) lista as etapas.
-2. Alguns OEMs podem enviar dispositivos com o aplicativo OEMConfig pré-instalado. Se o aplicativo não estiver pré-instalado, use o Intune para [Adicionar e implantar o aplicativo em dispositivos](../apps/apps-deploy.md).
+1. Get the OEMConfig app from the Managed Google Play Store. [Add Managed Google Play apps to Android enterprise devices](../apps/apps-add-android-for-work.md) lists the steps.
+2. Some OEMs may ship devices with the OEMConfig app pre-installed. If the app isn't preinstalled, use Intune to [add and deploy the app to devices](../apps/apps-deploy.md).
 
-## <a name="create-an-oemconfig-profile"></a>Criar um perfil do OEMConfig
+## <a name="create-an-oemconfig-profile"></a>Create an OEMConfig profile
 
-1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
-2. Selecione **dispositivos** > **perfis de configuração** > **Criar perfil**.
+1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Select **Devices** > **Configuration profiles** > **Create profile**.
 3. Introduza as seguintes propriedades:
 
     - **Nome**: introduza um nome descritivo para o novo perfil.
     - **Descrição:** introduza uma descrição para o perfil. Esta definição é opcional, mas recomendada.
-    - **Plataforma**: selecione **Android Enterprise**.
-    - **Tipo de perfil**: selecione **OEMConfig**.
+    - **Platform**: Select **Android enterprise**.
+    - **Profile type**: Select **OEMConfig**.
 
-4. Selecione **aplicativo associado**, selecione um aplicativo OEMConfig existente que você adicionou anteriormente > **OK**. Certifique-se de escolher o aplicativo OEMConfig correto para os dispositivos para os quais você está atribuindo a política.
+4. Select **Associated app**, select an existing OEMConfig app you previously added > **OK**. Be sure to choose the correct OEMConfig app for the devices you're assigning the policy to.
 
-    Se você não vir nenhum aplicativo listado, configure o Google Play gerenciado e obtenha aplicativos do repositório de Google Play gerenciado. [Adicionar aplicativos Google Play gerenciados a dispositivos Android Enterprise](../apps/apps-add-android-for-work.md) lista as etapas.
+    If you don't see any apps listed, then set up Managed Google Play, and get apps from the Managed Google Play store. [Add Managed Google Play apps to Android enterprise devices](../apps/apps-add-android-for-work.md) lists the steps.
 
     > [!IMPORTANT]
-    > Se você adicionou um aplicativo OEMConfig e o sincronizou para Google Play, mas ele não está listado como um **aplicativo associado**, talvez seja necessário entrar em contato com o Intune para carregar o aplicativo. Consulte [adicionando um novo aplicativo](#supported-oemconfig-apps) (neste artigo).
+    > If you added an OEMConfig app and synced it to Google Play, but it's not listed as an **Associated app**, you may have to contact Intune to onboard the app. See [adding a new app](#supported-oemconfig-apps) (in this article).
 
-5. Em **definir configurações com**, escolha usar o **Designer de configuração** ou o **Editor de JSON**:
+5. In **Configure settings with**, choose to use the **Configuration designer** or **JSON editor**:
 
     > [!TIP]
-    > Leia a documentação do OEM para certificar-se de que você está configurando as propriedades corretamente. Essas propriedades de aplicativo são incluídas pelo OEM, não pelo Intune. O Intune faz a validação mínima das propriedades ou o que você insere. Por exemplo, se você inserir `abcd` para um número de porta, o perfil salvará no estado em que se encontra e será implantado em seus dispositivos com os valores que você configurar. Certifique-se de inserir as informações corretas.
+    > Read the OEM documentation to make sure you're configuring the properties correctly. These app properties are included by the OEM, not Intune. Intune does minimal validation of the properties, or what you enter. For example, if you enter `abcd` for a port number, the profile saves as-is, and is deployed to your devices with the values you configure. Be sure you enter the correct information.
 
-    - **Designer de configuração**: quando você seleciona essa opção, as propriedades disponíveis no esquema do aplicativo são mostradas para você configurar.
+    - **Configuration designer**: When you select this option, the properties available within the app schema are shown for you to configure.
 
-      - Menus de contexto no designer de configuração indicam que mais opções estão disponíveis. Por exemplo, o menu de contexto pode permitir que você adicione, exclua e reordene as configurações. Essas opções são incluídas pelo OEM. Certifique-se de ler a documentação do aplicativo OEM para saber como essas opções devem ser usadas para criar perfis.
+      - Context menus in the configuration designer indicate that more options are available. For example, the context menu might let you add, delete, and reorder settings. These options are included by the OEM. Be sure to read the OEM app documentation to learn how these options should be used to create profiles.
 
-      - Muitas configurações têm valores padrão fornecidos pelo OEM. Para ver se há um valor padrão, passe o mouse sobre o ícone de informações ao lado da configuração. Uma dica de ferramenta mostra os valores padrão para essa configuração (se aplicável) e mais detalhes fornecidos pelo OEM.
+      - Many settings have default values supplied by the OEM. To see if there's a default value, hover over the info icon next to the setting. A tooltip shows the default values for that setting (if applicable), and more details provided by the OEM.
 
-      - Clicar em **limpar** exclui uma configuração do perfil. Se uma configuração não estiver no perfil, seu valor no dispositivo não será alterado quando o perfil for aplicado.
+      - Clicking **Clear** deletes a setting from the profile. If a setting isn't in the profile, its value on the device won't change when the profile is applied.
 
-      - Se você criar um pacote vazio (não configurado) no designer de configuração, ele será excluído ao alternar para o editor de JSON.
+      - If you create an empty (unconfigured) bundle in the configuration designer, it's deleted when switching to the JSON editor.
 
-    - **Editor de JSON**: quando você seleciona essa opção, um editor de JSON é aberto com um modelo para o esquema de configuração completo inserido no aplicativo. No editor, personalize o modelo com valores para as diferentes configurações. Se você usar o **Designer de configuração** para alterar seus valores, o editor de JSON substituirá o modelo por valores do designer de configuração.
+    - **JSON editor**: When you select this option, a JSON editor opens with a template for the full configuration schema embedded in the app. In the editor, customize the template with values for the different settings. If you use the **Configuration designer** to change your values, the JSON editor overwrites the template with values from the configuration designer.
 
-      - Se você estiver atualizando um perfil existente, o editor de JSON mostrará as configurações que foram salvas pela última vez com o perfil.
+      - If you're updating an existing profile, the JSON editor shows the settings that were last saved with the profile.
 
-      - Os esquemas OEMConfig podem ser grandes e complexos. Se preferir atualizar essas configurações usando um editor diferente, selecione o botão **baixar modelo JSON** . Use um editor de sua escolha para adicionar seus valores de configuração ao modelo. Em seguida, copie e cole o JSON atualizado no para a propriedade do **Editor JSON** .
+      - OEMConfig schemas can be large and complex. If you prefer to update these settings using a different editor, select the **Download JSON template** button. Use an editor of your choice to add your configuration values to the template. Then, copy and paste your updated JSON in to the **JSON editor** property.
 
-      - Você pode usar o editor de JSON para criar um backup de sua configuração. Depois de definir as configurações, use esse recurso para obter as configurações de JSON com seus valores. Copie e cole o JSON em um arquivo e salve-o. Agora você tem um arquivo de backup.
+      - You can use the JSON editor to create a backup of your configuration. After you configure your settings, use this feature to get the JSON settings with your values. Copy and paste the JSON to a file, and save it. Now you have a backup file.
 
-    Todas as alterações feitas no designer de configuração também são feitas automaticamente no editor de JSON. Da mesma forma, todas as alterações feitas no editor de JSON são feitas automaticamente no designer de configuração. Se sua entrada contiver valores inválidos, você não poderá alternar entre o designer de configuração e o editor de JSON até corrigir os problemas.
+    Any changes made in the configuration designer are also made automatically in the JSON editor. Likewise, any changes made in the JSON editor are automatically made in the configuration designer. If your input contains invalid values, you can't switch between the configuration designer and JSON editor until you fix the issues.
 
-6. Selecione **OK** > **Adicionar** para salvar as alterações. A política é criada e apresentada na lista.
+6. Select **OK** > **Add** to save your changes. A política é criada e apresentada na lista.
 
-Certifique-se de [atribuir o perfil](device-profile-assign.md) e [monitorar seu status](device-profile-monitor.md).
+Be sure to [assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).
 
  > [!NOTE]
- > Atribua um perfil a cada dispositivo. O modelo OEMConfig dá suporte apenas a uma política por dispositivo.
+ > Assign one profile to each device. The OEMConfig model only supports one policy per device.
 
-Na próxima vez que o dispositivo verificar se há atualizações de configuração, as configurações específicas do OEM que você configurou serão aplicadas ao aplicativo OEMConfig.
+The next time the device checks for configuration updates, the OEM-specific settings you configured are applied to the OEMConfig app.
 
 > [!NOTE]
-> O padrão OEMConfig atualmente não inclui o relatório de status. Portanto, por padrão, os perfis mostram um status **pendente** .
+> The OEMConfig standard doesn't currently include status reporting. So, by default, profiles show a **Pending** status.
 
-## <a name="supported-oemconfig-apps"></a>Aplicativos OEMConfig com suporte
+## <a name="supported-oemconfig-apps"></a>Supported OEMConfig apps
 
-Em comparação com os aplicativos padrão, os aplicativos OEMConfig expandem os privilégios de configurações gerenciadas concedidos pelo Google para dar suporte a esquemas mais complexos. Atualmente, o Intune dá suporte aos seguintes aplicativos OEMConfig:
+Compared to standard apps, OEMConfig apps expand the managed configurations privileges granted by Google to support more complex schemas. Intune currently supports the following OEMConfig apps:
 
 -----------------
 
-| OEM | ID do Pacote | Documentação do OEM (se disponível) |
+| OEM | ID do Pacote | OEM Documentation (if available) |
 | --- | --- | ---|
-| Samsung | com. Samsung. Android. Knox. KPU | [Guia de administração do plug-in do Knox Service](https://docs.samsungknox.com/knox-service-plugin/admin-guide/index.htm) |
-| Tecnologias pretas | com. pretas. oemconfig. Common | [Visão geral do pretas OEMConfig](http://techdocs.zebra.com/oemconfig ) |
-| Datalogic | com. Datalogic. oemconfig | [Documentação do usuário para Datalogic OEMConfig](https://datalogic.github.io/oemconfig/) |
-| Honeywell | com. Honeywell. oemconfig |  |
-| Kyocera | JP. Kyocera. enterprisedeviceconfig |  |
+| Samsung | com.samsung.android.knox.kpu | [Knox Service Plugin Admin Guide](https://docs.samsungknox.com/knox-service-plugin/admin-guide/index.htm) |
+| Zebra Technologies | com.zebra.oemconfig.common | [Zebra OEMConfig overview](http://techdocs.zebra.com/oemconfig ) |
+| Datalogic | com.datalogic.oemconfig | [User Documentation for Datalogic OEMConfig](https://datalogic.github.io/oemconfig/) |
+| Honeywell | com.honeywell.oemconfig |  |
+| Kyocera | jp.kyocera.enterprisedeviceconfig |  |
+| Spectralink - Barcodes | com.spectralink.barcode.service |  |
+| Spectralink - Buttons | com.spectralink.buttons |  |
+| Spectralink - Device | com.spectralink.slnkdevicesettings  |  |
+| Spectralink - Logging | com.spectralink.slnklogger |  |
+| Spectralink - VQO | com.spectralink.slnkvqo |  |
 
 -----------------
 
-Se um aplicativo OEMConfig existir para seu dispositivo, mas não estiver na tabela acima ou não estiver aparecendo no console do Intune, envie um email `IntuneOEMConfig@microsoft.com`.
+If an OEMConfig application exists for your device, but it isn’t in the table above, or isn't showing up in the Intune console, please email `IntuneOEMConfig@microsoft.com`.
 
 > [!NOTE]
-> Os aplicativos OEMConfig devem ser integrados pelo Intune antes que possam ser configurados com perfis OEMConfig. Quando um aplicativo tem suporte, você não precisa entrar em contato com a Microsoft sobre como configurá-lo em seu locatário. Basta seguir as instruções nesta página.
+> OEMConfig apps must on-boarded by Intune before they can be configured with OEMConfig profiles. Once an app is supported, you don't need to contact Microsoft about setting it up in your tenant. Just follow the instructions on this page.
 
 ## <a name="next-steps"></a>Próximos passos
 

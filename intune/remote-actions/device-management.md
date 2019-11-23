@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 09/19/2018
+ms.date: 11/14/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: remote-actions
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8c31bbd8eb9efb2b748163223ce1b8fa555f0dc6
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: a9937fc25ffa3dc32c1addbf0acc2516000b055b
+ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73713535"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74390885"
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>O que é a gestão de dispositivos do Microsoft Intune?
 
@@ -33,7 +33,7 @@ A carga de trabalho **Dispositivos** dá-lhe informações aprofundadas sobre os
 
 ## <a name="get-to-your-devices"></a>Aceder aos seus dispositivos
 
-1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
 3. Selecione **Dispositivos**. Esta vista mostra informações detalhadas sobre os dispositivos dos utilizadores e o que pode fazer com as mesmas, incluindo:
 
    - **Descrição geral:** mostra um instantâneo visual dos dispositivos inscritos e também mostra quantos dispositivos estão a utilizar as diferentes plataformas, incluindo Android, iOS e mais.
@@ -41,7 +41,7 @@ A carga de trabalho **Dispositivos** dá-lhe informações aprofundadas sobre os
 
      Utilize a funcionalidade **Exportar** para criar uma lista .csv de todos os dispositivos, em incrementos de 10 000 (Internet Explorer) ou 30 000 (Microsoft Edge, Chrome).
 
-     Selecione qualquer dispositivo para [Exibir detalhes adicionais sobre esse dispositivo](device-inventory.md), incluindo detalhes de hardware, aplicativos instalados, seu status de política de conformidade e muito mais.
+     Select any device to [view additional details about that device](device-inventory.md), including hardware details, installed apps, its compliance policy status, and more.
 
    - **Dispositivos do Azure AD:** mostra uma lista dos dispositivos registados ou associados ao Azure Active Directory (Azure AD). Saiba mais sobre a [gestão de dispositivos do Azure AD](https://docs.microsoft.com/azure/active-directory/device-management-introduction).
    - **Ações do dispositivo:** inclui um histórico das ações remotas realizadas nos diferentes dispositivos, incluindo a ação, o respetivo estado, quem a iniciou e quando.
@@ -69,7 +69,8 @@ As ações disponíveis dependem da plataforma do dispositivo e da configuraçã
   - [Reposição do PIN do Windows 10](device-windows-pin-reset.md)
   - [Controlo remoto do Android](teamviewer-support.md)
   - [Sincronizar o dispositivo](device-sync.md)
-  - [Enviar notificação personalizada](custom-notifications.md#send-a-custom-notification-to-a-single-device) (Android, Ios)
+  - [Send custom notification](custom-notifications.md#send-a-custom-notification-to-a-single-device) (Android, iOS)
+  - [BitLocker key rotation](../protect/encrypt-devices.md#rotate-bitlocker-recovery-keys) (Windows only)
 
 ## <a name="next-steps"></a>Próximos passos
 

@@ -1,7 +1,7 @@
 ---
-title: Dicas de solução de problemas para políticas do BitLocker no Microsoft Intune
+title: Troubleshooting tips for BitLocker policies in Microsoft Intune
 titleSuffix: Microsoft Intune
-description: Descreve como habilitar a criptografia BitLocker em um dispositivo usando a política do Intune e como verificar se a política foi implantada com êxito em um dispositivo.
+description: Describes how to enable BitLocker encryption on a device by using Intune policy and how to verify that your policy successfully deployed to a device.
 author: brenduns
 ms.author: brenduns
 manager: dougeby
@@ -16,109 +16,117 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 440eb2d457783ac71b905d064a6d83abaa966cfe
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 744277b0e49a4e3ca8b0fa3bac43c666110bb8a3
+ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503885"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74410359"
 ---
-# <a name="troubleshoot-bitlocker-policies-in-microsoft-intune"></a>Solucionar problemas de políticas do BitLocker no Microsoft Intune
+# <a name="troubleshoot-bitlocker-policies-in-microsoft-intune"></a>Troubleshoot BitLocker policies in Microsoft Intune
 
-Este artigo pode ajudar os administradores do Intune a entender como os dispositivos Windows 10 configuram o BitLocker com base na política do Intune. Este artigo também fornece orientação sobre como solucionar problemas com as configurações do BitLocker nos dispositivos gerenciados com o Intune.  
+This article can help Intune administrators understand how Windows 10 devices configure BitLocker based on Intune policy. This article also provides guidance on how to troubleshoot problems with BitLocker settings on devices you manage with Intune.  
 
-## <a name="understanding-bitlocker"></a>Noções básicas sobre o BitLocker
+## <a name="understanding-bitlocker"></a>Understanding BitLocker
 
-A criptografia de unidade de disco BitLocker é um serviço oferecido pelos sistemas operacionais Microsoft Windows que permite aos usuários criptografar dados em seus discos rígidos. O BitLocker dá suporte à criptografia para unidades do sistema operacional, unidades de mídia removíveis e unidades de dados fixas. O BitLocker também dá suporte ao uso de criptografia de 256 bits para melhor proteção de dados confidenciais.  
+BitLocker drive encryption is a service offered by Microsoft Windows operating systems that allows users to encrypt data on their hard drives. BitLocker supports encryption for operating system drives, removable media drives, and fixed data drives. BitLocker also supports use of 256-bit encryption for better protection of sensitive data.  
 
-Com o Microsoft Intune, você tem os seguintes métodos para gerenciar o BitLocker em dispositivos Windows 10:
+With Microsoft Intune, you have the following methods to manage BitLocker on Windows 10 devices:
 
-- **Políticas de configuração de dispositivo** – determinadas opções de política internas estão disponíveis no console de administração do Intune em **configuração do dispositivo** >  Endpoint Protection**política de criptografia do Windows** > . Você pode encontrar todos os recursos e opções disponíveis aqui: [criptografia do Windows](https://docs.microsoft.com/intune/endpoint-protection-windows-10#windows-encryption).
+- **Device Configuration policies** - Certain built-in policy options are available in Intune when you create a device configuration profile to manage endpoint protection. To find these options, [create a device profile for endpoint protection](endpoint-protection-configure.md#create-a-device-profile-containing-endpoint-protection-settings), selecting **Windows 10 and later** for the *Platform*, and then selecting the **Windows Encryption** category for *Settings*. 
 
-- **Linhas de base de segurança** - [linhas de base de segurança](security-baselines.md) são grupos conhecidos de configurações e valores padrão que são recomendados pela equipe de segurança relevante para ajudar a proteger dispositivos Windows. Fontes de linha de base diferentes, como a linha de base de *segurança do MDM* ou a linha de *base do Microsoft defender ATP* , podem gerenciar as mesmas configurações, bem como configurações diferentes. Eles também podem gerenciar as mesmas configurações que você gerencia com as políticas de configuração de dispositivo. 
+   You can read about the available options and features here: [Windows Encryption](https://docs.microsoft.com/intune/endpoint-protection-windows-10#windows-encryption).
 
-Além do Intune, é possível que as configurações do BitLocker sejam gerenciadas por outros meios como Política de Grupo ou definidas manualmente por um usuário do dispositivo.
+- **Security baselines** - [Security baselines](security-baselines.md) are known groups of settings and default values that are recommended by the relevant security team to help secure Windows devices. Different baseline sources, like the *MDM Security Baseline* or *Microsoft Defender ATP Baseline* can manage the same settings as well different settings than each other. They can also manage the same settings you manage with device configuration policies. 
 
-Não importa como as configurações são aplicadas a um dispositivo, as políticas do BitLocker usam o [CSP do BitLocker](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) para configurar a criptografia no dispositivo. O CSP do BitLocker é integrado ao Windows e quando o Intune implanta uma política do BitLocker em um dispositivo atribuído, é o CSP do BitLocker no dispositivo que grava os valores apropriados no registro do Windows para que as configurações da política possam entrar em vigor.
+In addition to Intune, it's possible that BitLocker settings are managed by other means like Group Policy, or manually set by a device user.
 
-Se você quiser saber mais sobre o BitLocker, consulte os recursos abaixo.
+No matter how settings are applied to a device, BitLocker policies make use of the [BitLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) to configure encryption on the device. The BitLocker CSP is built into Windows and when Intune deploys a BitLocker policy to an assigned device, it's the BitLocker CSP on the device that writes the appropriate values to the Windows registry so that settings from the policy can take effect.
 
-- [Pelo](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview)
-- [Perguntas frequentes sobre requisitos e visão geral do BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview-and-requirements-faq)
+If you'd like to learn more about BitLocker, see the following resources:
 
-Agora que você tem uma compreensão geral do que essas políticas fazem e como elas funcionam, veja como você pode verificar se as configurações do BitLocker se aplicam com êxito a um cliente do Windows.
+- [BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview)
+- [BitLocker Overview and Requirements FAQ](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview-and-requirements-faq)
 
-## <a name="verify-the-source-of-bitlocker-settings"></a>Verificar a origem das configurações do BitLocker
+Now that you have a general understanding of what these policies do and how they work, look at how you can verify if the BitLocker settings successfully apply to a Windows client.
 
-Quando você investiga um problema do BitLocker em um dispositivo Windows 10, é importante primeiro determinar se o problema está relacionado ao Intune ou ao Windows. Depois que a origem provável de falha for conhecida, você poderá concentrar seus esforços de solução de problemas no lugar certo e, se necessário, obter suporte da equipe correta.  
+## <a name="verify-the-source-of-bitlocker-settings"></a>Verify the source of BitLocker settings
 
-Como uma primeira etapa, determine se a política do Intune foi implantada com êxito no dispositivo de destino. No exemplo a seguir, você tem uma política de configuração de dispositivo que implanta as configurações de criptografia do Windows (BitLocker), conforme mostrado: 
+When you investigate a BitLocker issue on a Windows 10 device, it's important to first determine whether the issue is Intune-related or Windows-related. After the likely source of failure is known, you can then focus your troubleshooting efforts in the right place, and if necessary get support from the correct team.  
 
-![Política de configuração do dispositivo de criptografia do Windows com as configurações](./media/troubleshooting-bitlocker-policies/settings.png)
+As a first step, determine whether the Intune policy successfully deployed to the target device. In the following example, you have a device configuration policy that deploys the Windows Encryption (BitLocker) settings, as shown:
 
-Como você confirma que as configurações foram aplicadas ao dispositivo de destino? Veja a seguir algumas maneiras de fazer isso.
+![Windows Encryption device configuration policy with the settings](./media/troubleshooting-bitlocker-policies/settings.png)
 
-### <a name="device-configuration-policy-device-status"></a>Status do dispositivo da política de configuração do dispositivo  
+How do you confirm that the settings have been applied to the targeted device? Following are a few ways to do that.
 
-Ao usar a política de configuração de dispositivo para configurar o BitLocker, você pode verificar o status da política no portal do Intune. No portal, acesse **configuração do dispositivo** > **perfis** > selecione o perfil que contém as configurações do BitLocker e, em seguida, selecione **status do dispositivo**. Os dispositivos atribuídos ao perfil são listados e a coluna *status do dispositivo* indica se um dispositivo implantou o perfil com êxito. 
+### <a name="device-configuration-policy-device-status"></a>Device configuration policy device status  
 
-Lembre-se, pode haver um atraso entre um dispositivo que recebe uma política do BitLocker e a unidade que está sendo totalmente criptografada.  
+When you use Device Configuration policy to configure BitLocker, you can check the status of the policy in the Intune portal.
 
- 
-### <a name="use-control-panel-on-the-client"></a>Usar o painel de controle no cliente  
+1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-Em um dispositivo que habilitou o BitLocker e criptografou uma unidade, você pode exibir o status do BitLocker em um painel de controle de dispositivos. No dispositivo, abra o **painel de controle** > **sistema e segurança** > **criptografia de unidade de disco BitLocker**. A confirmação aparece como mostrado na imagem a seguir.  
+2. Select **Devices** > **Configuration profiles** and then select the profile that contains BitLocker settings.
 
-![O BitLocker está ativado no painel de controle](./media/troubleshooting-bitlocker-policies/control-panel.png)
+3. After you select the profile you want to view, select **Device Status**. Devices assigned to the profile are listed, and the *Device status* column indicates if a device successfully deployed the profile.
 
-### <a name="use-a-command-prompt"></a>Usar um prompt de comando  
+Remember, there can be a delay between a device receiving a BitLocker policy, and the drive being fully encrypted.  
 
-Em um dispositivo que habilitou o BitLocker e criptografou uma unidade, inicie o prompt de comando com credenciais de administrador e execute `manage-bde -status`. Os resultados devem ser semelhantes ao exemplo a seguir:  
-![A o resultado do comando de status @ no__t-1
+### <a name="use-control-panel-on-the-client"></a>Use Control Panel on the client  
 
-No exemplo: 
-- A **proteção do BitLocker** está **ativada**,  
-- O **percentual criptografado** é de **100%**  
-- O **método de criptografia** é **XTS-AES 256**.  
+On a device that has enabled BitLocker and encrypted a drive, you can view the BitLocker status from a devices Control Panel. On the device, open **Control Panel** > **System and Security** > **BitLocker Drive Encryption**. Confirmation appears as seen in the following image.  
 
-Você também pode verificar **protetores de chave** executando o seguinte comando:
+![BitLocker is turned on in Control Panel](./media/troubleshooting-bitlocker-policies/control-panel.png)
+
+### <a name="use-a-command-prompt"></a>Use a command prompt  
+
+On a device that has enabled BitLocker and encrypted a drive, launch Command Prompt with admin credentials, and then run `manage-bde -status`. The results should resemble the following example:  
+![A result of the status command](./media/troubleshooting-bitlocker-policies/command.png)
+
+In the example:
+
+- **BitLocker protection** is **On**
+- **Percentage Encrypted** is **100%**
+- **Encryption Method** is **XTS-AES 256**
+
+You can also check **Key Protectors** by running the following command:
 
 ```cmd
 Manage-bde -protectors -get c:
 ```
 
-Ou com o PowerShell:
+Or with PowerShell:
 
 ```powershell
 Confirm-SecureBootUEFI
 ```
 
-### <a name="review-the-devices-registry-key-configuration"></a>Examinar a configuração da chave do registro de dispositivos   
+### <a name="review-the-devices-registry-key-configuration"></a>Review the devices registry key configuration
 
-Depois que a política do BitLocker for implantada com êxito em um dispositivo, exiba a seguinte chave do registro no dispositivo em que você pode examinar a configuração das configurações do BitLocker: *HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\current\device\BitLocker* . Segue-se um exemplo:
+After BitLocker policy successfully deploys to a device, view the following registry key on the device where you can review the configuration of BitLocker settings:  *HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\current\device\BitLocker*. Segue-se um exemplo:
 
-![Chave do registro do BitLocker](./media/troubleshooting-bitlocker-policies/registry.png)
+![BitLocker registry key](./media/troubleshooting-bitlocker-policies/registry.png)
 
-Esses valores são configurados pelo CSP do BitLocker. Verifique se os valores das chaves correspondem às configurações especificadas na origem da sua política de criptografia do Windows do Intune. Para obter mais informações sobre cada uma dessas configurações, consulte [CSP do BitLocker](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp).
+These values are configured by the BitLocker CSP. Verify that the values of the keys match the settings specified in the source of your Intune Windows Encryption policy. For more information on each of these settings, see [BitLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp).
 
 > [!NOTE]
-> O Windows Visualizador de Eventos também conterá várias informações relacionadas ao BitLocker. Há muitos para listar aqui, mas a pesquisa pela **API do BitLocker** fornecerá muitas informações úteis.
+> The Windows Event Viewer will also contain various information related to Bitlocker. There are too many to list here but searching for **Bitlocker API** will provide you with a lot of useful information.
 
-### <a name="check-the-mdm-diagnostics-report"></a>Verificar o relatório de diagnóstico de MDM  
+### <a name="check-the-mdm-diagnostics-report"></a>Check the MDM diagnostics report
 
-Em um dispositivo que habilitou o BitLocker, você pode gerar e exibir um relatório de diagnóstico de MDM do dispositivo de destino para confirmar se a política do BitLocker está presente. Se você puder ver as configurações de política no relatório, será outra indicação de que a política foi implantada com êxito. O vídeo *ajuda da Microsoft* no seguinte link explica como capturar um relatório de diagnóstico do MDM de um dispositivo Windows. 
+On a device that has enabled BitLocker, you can generate and view an MDM diagnostic report from the targeted device to confirm that BitLocker policy is present. If you can see the policy settings in the report, it's another indication that the policy successfully deployed. The *Microsoft Helps* video at the following link explains how to capture an MDM diagnostic report from a Windows device.
 
 > [!VIDEO https://www.youtube.com/embed/WKxlcjV4TNE]
 
-Quando você analisa o relatório de diagnóstico do MDM, o conteúdo pode parecer um pouco confuso a princípio. Veja a seguir um exemplo que mostra como correlacionar o que há no relatório com as configurações em uma política:
+When you analyze the MDM diagnostics report, the contents can seem a little confusing at first. Following is an example that shows how to correlate what's in the report with the settings in a policy:
 
-![Exemplo de relatório de diagnóstico do MDM](./media/troubleshooting-bitlocker-policies/report.png)
+![MDM diagnostics report example](./media/troubleshooting-bitlocker-policies/report.png)
 
-O resultado da saída mostra os valores que correspondem aos valores de sua política do BitLocker:
+The output result shows the values that correspond to the values from your BitLocker policy:
 
-![Resultado da saída mostra os valores ](./media/troubleshooting-bitlocker-policies/output.png)
+![Output result shows the values ](./media/troubleshooting-bitlocker-policies/output.png)
 
-Resultados de saída do diagnóstico de MDM:
+MDM diagnostics output results:
 
 ```asciidoc
 EncryptionMethodWithXtsOsDropDown: 7 (The value 7 refers to the 256 bit encryption)
@@ -126,75 +134,75 @@ EncryptionMethodWithXtsFdvDropDown: 6 (The value 6 refers to the 128 bit encrypt
 EncryptionMethodWithXtsRdvDropDown: 6 (The value 6 refers to the 128 bit encryption)
 ```
 
-Você pode fazer referência à [documentação do CSP do BitLocker](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) para ver o que significa cada valor. Para este exemplo, um trecho de código é compartilhado na imagem a seguir.
+You can reference the [BitLocker CSP documentation](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) to see what each value means. For this example, a snippet is shared in the following image.
 
-![Fins de valores](./media/troubleshooting-bitlocker-policies/shared-example.png)
+![Purposes of values](./media/troubleshooting-bitlocker-policies/shared-example.png)
 
- Da mesma forma, você pode ver todos os valores e verificá-los no link do CSP do BitLocker.
+Similarly, you can see all the values and verify them from the BitLocker CSP link.
 
 > [!TIP]
-> A principal finalidade do relatório de diagnóstico do MDM é ajudar a Suporte da Microsoft ao solucionar problemas. Se você abrir um caso de suporte para o Intune e o problema envolver clientes Windows, é sempre uma boa ideia coletar esse relatório e incluí-lo em sua solicitação de suporte.
+> The primary purpose of the MDM diagnostic report is to assist Microsoft Support when troubleshooting issues. If you open a support case for Intune and the problem involves Windows clients, it's always a good idea to gather this report and include it in your support request.
 
-## <a name="troubleshooting-bitlocker-policy"></a>Solucionando problemas de política do BitLocker
+## <a name="troubleshooting-bitlocker-policy"></a>Troubleshooting BitLocker Policy
 
-Agora você deve ter uma boa ideia de como confirmar se a política do BitLocker foi implantada com êxito pelo Intune, que desligou a configuração do BitLocker para o CSP do BitLocker no WIndows.  
+You should now have a good idea how to confirm that the BitLocker policy successfully deployed by Intune, which hands-off the configuration of BitLocker to the BitLocker CSP in WIndows.
 
-A **política não consegue acessar o dispositivo** -quando sua política do Intune não está presente em nenhuma capacidade:  
-- **O dispositivo está registrado corretamente no Microsoft Intune?** Caso contrário, você precisará abordar isso antes de solucionar qualquer coisa específica à política. A ajuda para solucionar problemas de registro do Windows pode ser encontrada [aqui](../enrollment/troubleshoot-windows-enrollment-errors.md).  
-- **Há uma conexão de rede ativa no dispositivo?** Se o dispositivo estiver no modo avião ou desativado, ou se o usuário tiver o dispositivo em um local sem serviço, a política não será entregue ou aplicada até que a conectividade de rede seja restaurada.  
-- **A política do BitLocker foi implantada no usuário ou grupo de dispositivos correto?** Verifique se o usuário ou o dispositivo correto é membro dos grupos que você tem como destino.  
+**Policy fails to reach the device** - When your Intune policy isn't present in any capacity:
 
-A **política está presente, mas nem todas as configurações foram configuradas com êxito** -quando sua política do Intune atinge o dispositivo, mas nem todas as configurações estão definidas:  
-- **A implantação de toda a política falha ou é apenas determinadas configurações que não se aplicam?** Se você estiver enfrentando um cenário em que apenas algumas configurações de política não se aplicam, verifique as seguintes considerações:
+- **Is the device properly enrolled into Microsoft Intune?** If not, you'll need to address that before troubleshooting anything specific to the policy. Help with troubleshooting Windows enrollment issues can be found [here](../enrollment/troubleshoot-windows-enrollment-errors.md).
 
-  1. **Nem todas as configurações do BitLocker têm suporte em todas as versões do Windows**.  
-  A política se resume a um dispositivo como uma única unidade, portanto, se algumas configurações se aplicarem e outras não, você poderá ter certeza de que a própria política será recebida. Nesse cenário, é possível que a versão do Windows no dispositivo não dê suporte às configurações problemáticas. Consulte [CSP do BitLocker](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) na documentação do Windows para obter detalhes sobre os requisitos de versão para cada configuração.  
+- **Is there an active network connection on the device?** If the device is in airplane mode or turned off, or if the user has the device in a location with no service, the policy won't be delivered or apply until network connectivity is restored.
 
-  1. O **BitLocker não tem suporte em todos os hardwares**.  
-  Mesmo que você tenha a versão correta do Windows, é possível que o hardware do dispositivo subjacente não atenda aos requisitos de criptografia do BitLocker. Você pode encontrar os [requisitos do sistema para o BitLocker (https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview#system-requirements) na documentação do Windows, mas os principais itens a serem verificados são que o dispositivo tem um chip TPM compatível (1,2 ou posterior) e um firmware ou BIOS compatível com TCG (Trusted Computing Group).
+- **Did the BitLocker policy deploy to the correct user or device group?** Check that the correct user or device is a member of the groups you target.
 
-**Investigação de exemplo** – você implanta uma política do BitLocker em um dispositivo Windows 10 e a configuração **criptografar dispositivos** mostra um status de **erro** no Portal.
+**Policy is present but not all settings configured successfully** - When your Intune policy reaches the device, but not all configurations are set:
 
-- Como o nome sugere, essa configuração permite que um administrador exija que a criptografia seja ativada usando o *BitLocker > criptografia de dispositivo*. Usando as dicas de solução de problemas mencionadas anteriormente, primeiro você verifica o relatório de diagnóstico do MDM. O relatório confirma que a política correta foi implantada no dispositivo:
+- **Does the deployment of the entire policy fail, or is it only certain settings that don't apply?** If you find yourself faced with a scenario where only some policy settings don't apply, check the following considerations:
 
-  ![O relatório confirma que a política correta está implantada no dispositivo](./media/troubleshooting-bitlocker-policies/mdm-report.png)
+  1. **Not all BitLocker settings are supported on all Windows versions**.
+     Policy comes down to a device as a single unit, so if some settings apply and others don't, you can be confident that the policy itself is received. In this scenario, it's possible that the version of Windows on the device doesn't support the problematic settings. See [BitLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) in the Windows documentation for details on version requirements for each setting.
 
-- Você também verifica o sucesso no registro:
+  2. **BitLocker isn't supported on all hardware**.
+     Even if you have the right version of Windows, it's possible that the underlying device hardware doesn't meet the requirements for BitLocker encryption. You can find the [system requirements for BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview#system-requirements) in the Windows documentation, but the main things to check are that the device has a compatible TPM chip (1.2 or later) and a Trusted Computing Group (TCG)-compliant BIOS or UEFI firmware.
 
-  ![O valor do registro RequiredDeviceEncryption mostra 1](./media/troubleshooting-bitlocker-policies/registry-confirm.png)
+**Example investigation**
 
-- Em seguida, você verifica o status do TPM usando o PowerShell e descobre que o TPM não está disponível no dispositivo:
+- You deploy a BitLocker policy to a Windows 10 device, and the **Encrypt devices** setting shows a status of **Error** in the portal.
 
-  ![Status do TPM verificado usando o PowerShell](./media/troubleshooting-bitlocker-policies/tpm-command.png)
+- As the name suggests, this setting allows an administrator to require encryption to be turned on by using *BitLocker > Device Encryption*. Using the troubleshooting tips mentioned earlier, you first check the MDM Diagnostics report. The report confirms that the correct policy was deployed on the device:
 
-- Como o BitLocker depende do TPM, você pode concluir que o BitLocker não falha devido a um problema com o Intune ou com a política, mas porque o próprio dispositivo não tem um chip TPM ou o TPM está desabilitado no BIOS.
+  ![Report confirms the correct policy is deployed on the device](./media/troubleshooting-bitlocker-policies/mdm-report.png)
 
-  Como uma dica adicional, você pode confirmar o mesmo no Windows Visualizador de Eventos em **aplicativos e serviços log** > **API do BitLocker**do**Windows** > . No log de eventos da **API do BitLocker** , você encontrará uma ID de evento 853 que significa que o TPM não está disponível:
+- You also verify success in the registry:
 
-  ![ID do evento 853](./media/troubleshooting-bitlocker-policies/event-error.png)
+  ![RequiredDeviceEncryption registry value shows 1](./media/troubleshooting-bitlocker-policies/registry-confirm.png)
+
+- Next, you check the status of TPM using PowerShell and find that TPM isn't available on the device:
+
+  ![Checked TPM status using PowerShell](./media/troubleshooting-bitlocker-policies/tpm-command.png)
+
+- Because BitLocker relies on TPM, you could conclude that BitLocker doesn't fail because of a problem with Intune or the policy, but rather because the device itself doesn't have a TPM chip or TPM is disabled in the BIOS.
+
+  As an additional tip, you can confirm the same in the Windows Event Viewer under **Applications and Services log** > **Windows** > **BitLocker API**. In the **BitLocker API** event log, you'll find an Event ID 853 that means TPM isn't available:
+
+  ![Event ID 853](./media/troubleshooting-bitlocker-policies/event-error.png)
 
   > [!NOTE]
-  > Você também pode verificar o status do TPM executando **TPM. msc** no dispositivo.
-
-
+  > You can also check the TPM status by running **tpm.msc** on the device.
 
 ## <a name="summary"></a>Resumo
 
-Quando você soluciona problemas de política do BitLocker com o Intune e pode confirmar que a política atinge o dispositivo pretendido, é seguro supor que o problema não está diretamente relacionado ao Intune. O problema é mais provável de um problema com o sistema operacional Windows ou o hardware. Nesse caso, comece a procurar outras áreas, como a configuração do TPM, a UEFI e a inicialização segura).
-
-<!-- Unable to Verify this: 
-You can try to isolate the issue by enabling BitLocker manually. If you can turn on BitLocker manually, Intune won't be able to turn it on through policy. Also, the Windows Recovery Environment (WinRE) must be enabled on the client for BitLocker to work. When organizations use using custom images, WinRE is a common cause that is often overlooked. 
--->
+When you troubleshoot BitLocker policy issues with Intune and can confirm that policy reaches the intended device, it's safe to assume the problem isn't directly related to Intune. The problem is more likely an issue with the Windows OS or the hardware. In this case, start looking in other areas like the TPM configuration or UEFI and Secure boot).
 
 ## <a name="next-steps"></a>Próximos passos  
 
-Veja a seguir mais recursos que podem ajudar quando você trabalha com o BitLocker:
+The following are more resources that might help when you work with BitLocker:
 
-- [Documentação do produto BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview)
-- [Requisitos de sistema do BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview#system-requirements)
-- [Perguntas frequentes sobre o BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-frequently-asked-questions)
-- [Documentação do CSP do BitLocker](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp)
-- [Configurações de política de criptografia do Windows Intune](https://docs.microsoft.com/intune/endpoint-protection-windows-10#windows-encryption)
-- [Criptografia BitLocker automática independente de hardware usando AAD/MDM](https://blogs.technet.microsoft.com/home_is_where_i_lay_my_head/2017/06/07/hardware-independent-automatic-bitlocker-encryption-using-aadmdm/)
-- [Política de CSP para criptografia BitLocker em dispositivos de piloto automático](https://techcommunity.microsoft.com/t5/Windows-10-security/CSP-policy-for-bitLocker-encryption-on-autopilot-devices/m-p/284537)
-- [Walkthrough criando e implantando a política do BitLocker com o Intune](https://blogs.technet.microsoft.com/cbernier/2017/07/11/windows-10-intune-windows-bitlocker-management-yes/)
+- [BitLocker product documentation](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview)
+- [BitLocker system requirements](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview#system-requirements)
+- [BitLocker frequently asked questions](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-frequently-asked-questions)
+- [BitLocker CSP documentation](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp)
+- [Intune Windows Encryption policy settings](https://docs.microsoft.com/intune/endpoint-protection-windows-10#windows-encryption)
+- [Hardware independent automatic BitLocker encryption using AAD/MDM](https://blogs.technet.microsoft.com/home_is_where_i_lay_my_head/2017/06/07/hardware-independent-automatic-bitlocker-encryption-using-aadmdm/)
+- [CSP Policy for BitLocker Encryption on Auto-Pilot Devices](https://techcommunity.microsoft.com/t5/Windows-10-security/CSP-policy-for-bitLocker-encryption-on-autopilot-devices/m-p/284537)
+- [Walkthrough creating and deploying BitLocker policy with Intune](https://blogs.technet.microsoft.com/cbernier/2017/07/11/windows-10-intune-windows-bitlocker-management-yes/)
