@@ -43,25 +43,25 @@ Quando forem detetadas aplicações maliciosas, como software maligno, nos dispo
 ![Imagem conceitual de aplicativos mal-intencionados detectados](./media/sophos-mtd-connector/sophos_malicious_apps_blocked.png)  
 
 **Acesso concedido na correção**:  
-imagem ![Conceptual de acesso concedido após a correção @ no__t-1
+![imagem conceitual de acesso concedido após a correção](./media/sophos-mtd-connector/sophos_malicious_apps_unblocked.png)
 
 ### <a name="control-access-based-on-threat-to-network"></a>Controlar o acesso com base em ameaças à rede  
 Detecte ameaças à sua rede, como ataques man-in-the-Middle, e proteja o acesso a redes Wi-Fi com base no risco do dispositivo.  
 
 **Bloquear o acesso à rede por meio de Wi-Fi**:  
-acesso à rede ![Block por meio de Wi-Fi @ no__t-1
+![bloquear o acesso à rede por meio de Wi-Fi](./media/sophos-mtd-connector/sophos_network_wifi_blocked.png)
 
 **Acesso concedido na correção**:   
-![Access concedido na correção @ no__t-1  
+Acesso ![concedido na correção](./media/sophos-mtd-connector/sophos_network_wifi_unblocked.png)  
 
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>Controlar o acesso ao SharePoint Online com base em ameaças à rede  
 Detecte ameaças à sua rede, como ataques man-in-the-Middle, e impeça a sincronização de arquivos corporativos com base no risco do dispositivo.  
 
 **Bloquear o SharePoint Online quando ameaças à rede forem detectadas**:   
-![Block o SharePoint Online quando ameaças de rede são detectadas @ no__t-1  
+![bloquear o SharePoint Online quando ameaças de rede forem detectadas](./media/sophos-mtd-connector/sophos_network_spo_blocked.png)  
 
 **Acesso concedido na correção**:  
-![Access concedidos na correção para o SharePoint example @ no__t-1  
+Acesso ![concedido na correção do](./media/sophos-mtd-connector/sophos_network_spo_unblocked.png) de exemplo do SharePoint  
 
 ## <a name="supported-platforms"></a>Plataformas suportadas  
 - Android 5,0 e posterior

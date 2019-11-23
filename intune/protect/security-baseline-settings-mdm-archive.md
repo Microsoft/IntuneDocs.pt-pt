@@ -209,7 +209,7 @@ Para obter mais informações, consulte [Policy CSP-DeviceGuard](https://docs.mi
   
   **Padrão**: Sim  
 
-- Iniciar o @no__t do **System Guard**-1  
+- Iniciar o   do **System Guard**  
   **Padrão**: habilitado  
 
 ### <a name="device-installation"></a>Instalação do dispositivo  
@@ -266,7 +266,7 @@ Para obter mais informações, consulte [Policy CSP-DeviceLock](https://docs.mic
   Quando *exigir senha* estiver definido como *Sim*, as configurações a seguir estarão disponíveis.
 
   - **Contagem de conjunto de caracteres mínimo de senha**  
-    O número de tipos de elementos complexos (letras maiúsculas e minúsculas, números e pontuação) necessários para um PIN ou senha forte. O PIN impõe o seguinte comportamento para dispositivos móveis e de desktop: 1-dígitos somente dois dígitos e letras minúsculas são necessários três dígitos, letras minúsculas e letras maiúsculas são necessárias. Sem suporte em contas da Microsoft da área de trabalho e contas de domínio. 4-dígitos, letras minúsculas, letras maiúsculas e caracteres especiais são necessários. Sem suporte na área de trabalho. O valor padrão é 1. 
+    O número de tipos de elementos complexos (letras maiúsculas e minúsculas, números e pontuação) necessários para um PIN ou senha forte. O PIN impõe o seguinte comportamento para dispositivos móveis e de desktop: 1-dígitos somente dois dígitos e letras minúsculas são necessários três dígitos, letras minúsculas e letras maiúsculas são necessárias. Sem suporte em contas da Microsoft da área de trabalho e contas de domínio. 4-dígitos, letras minúsculas, letras maiúsculas e caracteres especiais são necessários. Sem suporte na área de trabalho. O valor predefinido é 1. 
     
     **Padrão**: 3  
   
@@ -361,7 +361,7 @@ Para obter mais informações, consulte [Policy CSP-ExploitGuard](https://docs.m
   
   **Padrão**: o *XML de exemplo é fornecido* 
  
-### <a name="file-explorer"></a>Explorador de arquivos  
+### <a name="file-explorer"></a>Explorador de Ficheiros  
 
 Para obter mais informações, consulte [CSP de política – FileExplorer](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-fileexplorer) na documentação do Windows.  
 
@@ -963,7 +963,7 @@ Para obter mais informações, consulte [Policy CSP-LocalPoliciesSecurityOptions
   **Padrão**: exigir criptografia de NTLM V2 e 128 bits  
   
 - **Minutos de inatividade de tela de bloqueio até que a proteção de tela seja ativada**  
-  O Windows observa inatividade de uma sessão de logon e, se a quantidade de tempo inativo exceder o limite de inatividade, a proteção de tela será executada, bloqueando a sessão.
+  O Windows repara na inatividade de um início de sessão e, se a quantidade de tempo inativo exceder o limite de inatividade, então, a proteção de ecrã será executado, bloqueando a sessão.
   
   **Padrão**: 15
   
@@ -1151,7 +1151,7 @@ Para obter mais informações, consulte [CSP da política – Power](https://doc
   
   **Padrão**: habilitado
   
-### <a name="remote-desktop-services"></a>Serviços de Área de Trabalho Remota  
+### <a name="remote-desktop-services"></a>Serviços de Ambiente de Trabalho Remoto  
 
 Para obter mais informações, consulte [Policy CSP-RemoteDesktopServices](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-remotedesktopservices) na documentação do Windows.  
 
@@ -1166,7 +1166,7 @@ Para obter mais informações, consulte [Policy CSP-RemoteDesktopServices](https
   **Padrão**: habilitado
   
 - **Bloquear redirecionamento de unidade**  
-  Essa configuração de política especifica se é para impedir o mapeamento de unidades cliente em uma sessão de Serviços de Área de Trabalho Remota (redirecionamento de unidade). Por padrão, um servidor Host da Sessão RD mapeia automaticamente as unidades do cliente após a conexão. As unidades mapeadas aparecem na árvore de pastas de sessões no explorador de arquivos ou no computador no formato *\<driveletter >* em *@no__t > de 3computername*. Você pode usar essa configuração de política para substituir esse comportamento. Se você habilitar essa configuração de política, o redirecionamento de unidade de cliente não será permitido em sessões de Serviços de Área de Trabalho Remota, e o redirecionamento de cópia de arquivo da área de transferência não será permitido em computadores que executam o Windows Server 2003, Windows 8 e Windows XP. Se você desabilitar essa configuração de política, o redirecionamento de unidade de cliente sempre será permitido. Além disso, o redirecionamento de cópia de arquivo da área de transferência sempre será permitido se o redirecionamento de área de transf for permitido. Se você não definir essa configuração de política, o redirecionamento de unidade de cliente e de cópia de arquivo da área de transferência não serão especificados no nível de Política de Grupo.
+  Essa configuração de política especifica se é para impedir o mapeamento de unidades cliente em uma sessão de Serviços de Área de Trabalho Remota (redirecionamento de unidade). Por padrão, um servidor Host da Sessão RD mapeia automaticamente as unidades do cliente após a conexão. As unidades mapeadas aparecem na árvore de pastas de sessões no explorador de arquivos ou no computador no formato *\<letra_da_unidade >* em *\<ComputerName >* . Você pode usar essa configuração de política para substituir esse comportamento. Se você habilitar essa configuração de política, o redirecionamento de unidade de cliente não será permitido em sessões de Serviços de Área de Trabalho Remota, e o redirecionamento de cópia de arquivo da área de transferência não será permitido em computadores que executam o Windows Server 2003, Windows 8 e Windows XP. Se você desabilitar essa configuração de política, o redirecionamento de unidade de cliente sempre será permitido. Além disso, o redirecionamento de cópia de arquivo da área de transferência sempre será permitido se o redirecionamento de área de transf for permitido. Se você não definir essa configuração de política, o redirecionamento de unidade de cliente e de cópia de arquivo da área de transferência não serão especificados no nível de Política de Grupo.
   
   **Padrão**: habilitado
   
@@ -1185,7 +1185,7 @@ Para obter mais informações, consulte [Policy CSP-RemoteDesktopServices](https
   
   **Padrão**: alto
   
-### <a name="remote-management"></a>Gerenciamento remoto  
+### <a name="remote-management"></a>Gestão Remota  
 
 Para obter mais informações, consulte [Policy CSP-RemoteManagement](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-remotemanagement) na documentação do Windows.  
 
@@ -1335,7 +1335,7 @@ Para obter mais informações, consulte [Policy CSP-defender](https://docs.micro
   **Padrão**: bloquear
   
 - **Impedir tipo de roubo de credencial**  
-  O Windows Defender Credential Guard usa segurança baseada em virtualização para isolar segredos para que somente o software de sistema privilegiado possa acessá-los. O acesso não autorizado a esses segredos pode levar a ataques de roubo de credenciais, como Pass-the-hash ou Pass-the-ticket. O Windows Defender Credential Guard impede esses ataques ao proteger os hashes de senha NTLM, tíquetes de concessão de permissão Kerberos e credenciais armazenadas por aplicativos como credenciais de domínio.
+  O Windows Defender Credential Guard usa segurança baseada em virtualização para isolar segredos para que somente o software de sistema privilegiado possa acessá-los. O acesso não autorizado a estes segredos pode levar a ataques de roubo de credenciais, tal como Ataques PtH ou PtT. O Windows Defender Credential Guard impede esses ataques ao proteger os hashes de senha NTLM, tíquetes de concessão de permissão Kerberos e credenciais armazenadas por aplicativos como credenciais de domínio.
   
   **Padrão**: habilitar
 

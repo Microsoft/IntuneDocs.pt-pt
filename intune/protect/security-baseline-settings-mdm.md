@@ -285,7 +285,7 @@ Para obter mais informações, consulte [Policy CSP-DeviceLock](https://docs.mic
   Quando *exigir senha* estiver definido como *Sim*, as configurações a seguir estarão disponíveis.
 
   - **Contagem de conjunto de caracteres mínimo de senha**  
-    O número de tipos de elementos complexos (letras maiúsculas e minúsculas, números e pontuação) necessários para um PIN ou senha forte. O PIN impõe o seguinte comportamento para dispositivos móveis e de desktop: 1-dígitos somente dois dígitos e letras minúsculas são necessários três dígitos, letras minúsculas e letras maiúsculas são necessárias. Sem suporte em contas da Microsoft da área de trabalho e contas de domínio. 4-dígitos, letras minúsculas, letras maiúsculas e caracteres especiais são necessários. Sem suporte na área de trabalho. O valor padrão é 1.  
+    O número de tipos de elementos complexos (letras maiúsculas e minúsculas, números e pontuação) necessários para um PIN ou senha forte. O PIN impõe o seguinte comportamento para dispositivos móveis e de desktop: 1-dígitos somente dois dígitos e letras minúsculas são necessários três dígitos, letras minúsculas e letras maiúsculas são necessárias. Sem suporte em contas da Microsoft da área de trabalho e contas de domínio. 4-dígitos, letras minúsculas, letras maiúsculas e caracteres especiais são necessários. Sem suporte na área de trabalho. O valor predefinido é 1.  
     [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067055)  
     
     **Padrão**: 3  
@@ -400,7 +400,7 @@ Para obter mais informações, consulte [Policy CSP-ExploitGuard](https://docs.m
   
   **Padrão**: o *XML de exemplo é fornecido* 
  
-## <a name="file-explorer"></a>Explorador de arquivos  
+## <a name="file-explorer"></a>Explorador de Ficheiros  
 Para obter mais informações, consulte [CSP de política – FileExplorer](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-fileexplorer) na documentação do Windows.  
 
 - **Bloquear a prevenção de execução de dados**  
@@ -1161,7 +1161,7 @@ Para obter mais informações, consulte [Policy CSP-LocalPoliciesSecurityOptions
   **Padrão**: exigir criptografia de NTLM V2 e 128 bits  
   
 - **Minutos de inatividade de tela de bloqueio até que a proteção de tela seja ativada**  
-  O Windows observa inatividade de uma sessão de logon e, se a quantidade de tempo inativo exceder o limite de inatividade, a proteção de tela será executada, bloqueando a sessão.  
+  O Windows repara na inatividade de um início de sessão e, se a quantidade de tempo inativo exceder o limite de inatividade, então, a proteção de ecrã será executado, bloqueando a sessão.  
   [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067210)  
   
   **Padrão**: 15
@@ -1423,7 +1423,7 @@ Para obter mais informações, consulte [CSP da política – Power](https://doc
     **Padrão**: MAPI simples
 
   
-## <a name="remote-desktop-services"></a>Serviços de Área de Trabalho Remota  
+## <a name="remote-desktop-services"></a>Serviços de Ambiente de Trabalho Remoto  
 Para obter mais informações, consulte [Policy CSP-RemoteDesktopServices](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-remotedesktopservices) na documentação do Windows.  
 
 - **Bloquear salvamento de senha**  
@@ -1461,7 +1461,7 @@ Para obter mais informações, consulte [Policy CSP-RemoteDesktopServices](https
   
   **Padrão**: alto
   
-## <a name="remote-management"></a>Gerenciamento remoto  
+## <a name="remote-management"></a>Gestão Remota  
 Para obter mais informações, consulte [Policy CSP-RemoteManagement](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-remotemanagement) na documentação do Windows.  
 
 - **Bloquear o armazenamento de credenciais executar como**  
@@ -1616,7 +1616,7 @@ Para obter mais informações, consulte [Policy CSP-defender](https://docs.micro
   **Padrão**: bloquear
   
 - **Impedir tipo de roubo de credencial**  
-  O Microsoft defender Credential Guard usa segurança baseada em virtualização para isolar segredos para que somente o software de sistema privilegiado possa acessá-los. O acesso não autorizado a esses segredos pode levar a ataques de roubo de credenciais, como Pass-the-hash ou Pass-the-ticket. O Microsoft defender Credential Guard impede esses ataques ao proteger os hashes de senha NTLM, tíquetes de concessão de permissão Kerberos e credenciais armazenadas por aplicativos como credenciais de domínio.  
+  O Microsoft defender Credential Guard usa segurança baseada em virtualização para isolar segredos para que somente o software de sistema privilegiado possa acessá-los. O acesso não autorizado a estes segredos pode levar a ataques de roubo de credenciais, tal como Ataques PtH ou PtT. O Microsoft defender Credential Guard impede esses ataques ao proteger os hashes de senha NTLM, tíquetes de concessão de permissão Kerberos e credenciais armazenadas por aplicativos como credenciais de domínio.  
   [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067065)  
   
   **Padrão**: habilitar

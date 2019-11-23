@@ -91,7 +91,7 @@ Para saber mais sobre os perfis do Windows Hello para empresas no Intune, consul
 
     **Padrão**: não configurado  
 
-  - **Habilitar**@no__t de recuperação de PIN-1  
+  - **Habilitar**  de recuperação de PIN  
     Permite que o usuário use o serviço de recuperação de PIN do Windows Hello para empresas. 
     
     - **Habilitado** -o segredo de recuperação do PIN é armazenado no dispositivo e o usuário pode alterar seu PIN, se necessário.  
@@ -115,7 +115,7 @@ Para saber mais sobre os perfis do Windows Hello para empresas no Intune, consul
 
     **Padrão**: não configurado
 
-  - **Usar antifalsificação avançada, quando disponível**  
+  - **Utilizar anti-spoofing avançado, quando disponível**  
     Configura se as funcionalidades de anti-spoofing do Windows Hello são utilizadas nos dispositivos que o suportam (por exemplo, detetar uma fotografia de um rosto em vez de um rosto real).  
     - **Habilitar** -o Windows exige que todos os usuários usem a antifalsificação para recursos faciais quando houver suporte.
     - **Não configurado** -o Windows honra as configurações anti-falsificação no dispositivo.

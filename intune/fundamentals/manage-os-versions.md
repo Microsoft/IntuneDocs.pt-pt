@@ -66,10 +66,10 @@ As políticas de proteção de aplicações e a gestão de aplicações móveis 
  
 Tem duas opções diferentes: 
 - **Warn** -avisar informa ao usuário final que eles devem ser atualizados se abrirem um aplicativo com uma política de proteção de aplicativo ou configurações de acesso de Mam em um dispositivo com uma versão de sistema operacional abaixo da versão especificada. O acesso à aplicação e aos dados organizacionais é permitido.
-  ![Image da caixa de diálogo de aviso de atualização do Android @ no__t-1 
+  Imagem de ![da caixa de diálogo de aviso de atualização do Android](./media/manage-os-versions/os-version-update-warning.png) 
 
 - Bloqueio de **bloco** informa o usuário final que ele deve atualizar quando abre um aplicativo com uma política de proteção de aplicativo ou configurações de acesso de Mam em um dispositivo com uma versão de sistema operacional abaixo da versão especificada. O acesso à aplicação e aos dados organizacionais não é permitido.
-  ![Image da caixa de diálogo de acesso bloqueado do aplicativo @ no__t-1
+  Imagem ![da caixa de diálogo bloqueado de acesso do aplicativo](./media/manage-os-versions/os-version-access-blocked.png)
 
 ### <a name="in-practice"></a>Procedimentos
 Atualmente, as organizações estão a utilizar as definições da política de proteção de aplicações quando as aplicações são abertas ou retomam uma ação, de forma a educar os utilizadores finais sobre a necessidade de manter as suas aplicações atualizadas. Um exemplo de configuração seria avisar os utilizadores que utilizarem uma versão um número abaixo da atual e bloquear os que utilizarem versões dois números abaixo da atual.

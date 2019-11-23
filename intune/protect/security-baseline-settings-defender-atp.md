@@ -37,7 +37,7 @@ Para obter mais informações, consulte [WINDOWSDEFENDERAPPLICATIONGUARD CSP](ht
 
 Ao usar o Microsoft Edge, o Microsoft defender Application Guard protege seu ambiente de sites que não são confiáveis para sua organização. Quando os usuários visitam sites que não estão listados em seu limite de rede isolado, os sites são abertos em uma sessão de navegação virtual do Hyper-V. Sites confiáveis são definidos por um limite de rede.  
 
-- **Application Guard** - *configurações/AllowWindowsDefenderApplicationGuard*  
+- Configurações de - do **Application Guard** */AllowWindowsDefenderApplicationGuard*  
   Selecione *Sim* para ativar esse recurso, que abre sites não confiáveis em um contêiner de navegação virtualizado do Hyper-V. Quando definido como *não configurado*, qualquer site (confiável e não confiável) é aberto no dispositivo e não em um contêiner virtualizado.  
 
   **Padrão**: Sim
@@ -91,7 +91,7 @@ Para obter mais informações, consulte [CSP da política-SmartScreen](https://d
   **Padrão**: bloquear 
 
 - **Impedir tipo de roubo de credencial**  
-  Defina como *habilitar* para [proteger as credenciais de domínio derivadas com o Credential Guard](https://docs.microsoft.com/windows/security/identity-protection/credential-guard/credential-guard). O Microsoft defender Credential Guard usa segurança baseada em virtualização para isolar segredos para que somente o software de sistema privilegiado possa acessá-los. O acesso não autorizado a esses segredos pode levar a ataques de roubo de credenciais, como Pass-the-hash ou Pass-the-ticket. O Microsoft defender Credential Guard impede esses ataques ao proteger os hashes de senha NTLM, tíquetes de concessão de permissão Kerberos e credenciais armazenadas por aplicativos como credenciais de domínio.  
+  Defina como *habilitar* para [proteger as credenciais de domínio derivadas com o Credential Guard](https://docs.microsoft.com/windows/security/identity-protection/credential-guard/credential-guard). O Microsoft defender Credential Guard usa segurança baseada em virtualização para isolar segredos para que somente o software de sistema privilegiado possa acessá-los. O acesso não autorizado a estes segredos pode levar a ataques de roubo de credenciais, tal como Ataques PtH ou PtT. O Microsoft defender Credential Guard impede esses ataques ao proteger os hashes de senha NTLM, tíquetes de concessão de permissão Kerberos e credenciais armazenadas por aplicativos como credenciais de domínio.  
 
   **Padrão**: habilitar
 
@@ -257,7 +257,7 @@ Para obter mais informações, o [BitLocker política de grupo configurações](
 ## <a name="endpoint-detection-and-response"></a>Detecção e resposta de ponto de extremidade  
 Para obter mais informações, consulte [WINDOWSADVANCEDTHREATPROTECTION CSP](https://docs.microsoft.com/windows/client-management/mdm/windowsadvancedthreatprotection-csp) na documentação do Windows.  
 
-- **Agilize a frequência de relatório de telemetria** - *Configuration/TelemetryReportingFrequency*
+- **Agilizar a frequência de relatório de telemetria** - *configuração/TelemetryReportingFrequency*
 
   Acelere a frequência de relatórios de telemetria da proteção avançada contra ameaças do Microsoft defender.  
 

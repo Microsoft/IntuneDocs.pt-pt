@@ -60,7 +60,7 @@ Serão apresentadas novas mensagens mais específicas na aplicação Portal da E
 
 #### <a name="improved-app-install-status-for-the-windows-10-company-portal-app---676495--"></a>Status de instalação de aplicativo aprimorado para o aplicativo Portal da Empresa do Windows 10 <!--676495-->
 
-As novas melhorias para a instalação do aplicativo iniciadas no aplicativo Portal da Empresa do Windows 10 incluem:
+Novas melhorias para a instalação da aplicação a utilizar na aplicação Portal da empresa do Windows 10 incluem:
 - Relatórios mais rápidos do progresso da instalação para pacotes MSI
 - Relatórios mais rápidos do progresso da instalação para aplicações modernas em dispositivos com a Atualização de Aniversário do Windows 10 e versões superiores
 - Nova barra de progresso para as instalações de aplicações modernas em dispositivos com a Atualização de Aniversário do Windows 10 e versões superiores
@@ -69,7 +69,7 @@ Pode ver a nova barra de progresso na [página Novidades na IU da aplicação In
 
 #### <a name="bulk-enroll-windows-10-devices----747607---"></a>Inscrever dispositivos Windows 10 em massa <!-- 747607 -->
 
-Agora, pode juntar-se a um grande número de dispositivos que executam a atualização para Criativos do Windows 10 para o Azure Active Directory e o Intune com o Windows Configuration Designer (WCD). Para ativar a [inscrição na MDM em massa](../enrollment/windows-bulk-enroll.md) para o seu inquilino do Azure AD, crie um pacote de aprovisionamento que associe dispositivos ao seu inquilino do Azure AD através do Windows Configuration Designer e aplique o pacote aos dispositivos pertencentes à empresa que pretende inscrever e gerir em massa. Assim que o pacote for aplicado aos dispositivos, estes são associados ao Azure AD, inscritos no Intune e estarão prontos para os seus utilizadores do Azure AD iniciarem sessão.  Os utilizadores do Azure AD são utilizadores padrão nestes dispositivos e obtêm as políticas atribuídas e as aplicações necessárias. De momento, os cenários Self-service e Portal da Empresa não são suportados.
+Agora, pode juntar-se a um grande número de dispositivos que executam a atualização para Criativos do Windows 10 para o Azure Active Directory e o Intune com o Windows Configuration Designer (WCD). Para ativar a [inscrição na MDM em massa](../enrollment/windows-bulk-enroll.md) para o seu inquilino do Azure AD, crie um pacote de aprovisionamento que associe dispositivos ao seu inquilino do Azure AD através do Windows Configuration Designer e aplique o pacote aos dispositivos pertencentes à empresa que pretende inscrever e gerir em massa. Assim que o pacote for aplicado aos dispositivos, estes são associados ao Azure AD, inscritos no Intune e estarão prontos para os seus utilizadores do Azure AD iniciarem sessão.  Os utilizadores do Azure AD são utilizadores padrão nestes dispositivos e obtêm as políticas atribuídas e as aplicações necessárias. De momento, os cenários self-service e Portal da Empresa não são suportados.
 
 ### <a name="whats-new-in-the-public-preview-of-intune-in-the-azure-portal--736542--"></a>O que há de novo na visualização pública do Intune no portal do Azure<!--736542-->
 
@@ -143,7 +143,7 @@ Agora você pode controlar o acesso de dispositivos móveis a recursos corporati
 - Defesa da aplicação
 - Defesa contra vulnerabilidades
 
-Você pode configurar políticas de acesso condicional do EMS com base na avaliação de risco do Symantec Endpoint Protection Mobile (Skycure) habilitada por meio das políticas de conformidade do dispositivo do Intune. Pode utilizar estas políticas para permitir ou bloquear o acesso de dispositivos não conformes aos recursos empresariais, com base nas ameaças detetadas. Para obter mais informações, consulte [Symantec Endpoint Protection Mobile Connector](../protect/skycure-mobile-threat-defense-connector.md).
+Você pode configurar políticas de acesso condicional do EMS com base na avaliação de risco do Symantec Endpoint Protection Mobile (Skycure) habilitada por meio das políticas de conformidade do dispositivo do Intune. Pode utilizar estas políticas para permitir ou bloquear o acesso de dispositivos não conformes aos recursos empresariais, com base nas ameaças detetadas. Para obter mais informações, consulte [conector do Symantec Endpoint Protection Mobile](../protect/skycure-mobile-threat-defense-connector.md).
 
 #### <a name="new-user-experience-for-the-company-portal-app-for-android---621622--"></a>Nova experiência do usuário para o aplicativo Portal da Empresa para Android <!--621622-->
 
@@ -253,13 +253,13 @@ Pode encontrar as novidades na pré-visualização do Intune no Azure [aqui](wha
 ### <a name="new-capabilities"></a>Novas Funcionalidades
 
 #### <a name="in-console-reports-for-mam-without-enrollment---677961--"></a>Relatórios no console para MAM sem registro <!--677961-->
-Foram adicionados novos relatórios de proteção de aplicações para dispositivos inscritos e não inscritos. Saiba mais sobre como você pode [monitorar as políticas de gerenciamento de aplicativo móvel com o Intune](../apps/app-protection-policies-monitor.md).
+Foram adicionados novos relatórios de proteção de aplicações para dispositivos inscritos e não inscritos. Obter mais informações sobre como pode [monitorizar políticas de gestão de aplicações móveis com o Intune](../apps/app-protection-policies-monitor.md).
 
 #### <a name="android-711-support---694397--"></a>Suporte a 7.1.1 do Android <!--694397-->
 Agora, o Intune suporta e gere totalmente o Android 7.1.1.
 
 #### <a name="resolve-issue-where-ios-devices-are-inactive-or-the-admin-console-cannot-communicate-with-them---unknown--"></a>Resolver o problema no qual os dispositivos iOS estão inativos ou a consola de administração não consegue comunicar com os mesmos <!--unknown-->
-Quando os dispositivos dos utilizadores perdem o contacto com o Intune, pode dar-lhes novos passos de resolução de problemas que os ajudem a recuperar o acesso aos recursos da empresa. Veja [Os dispositivos estão inativos ou a consola de administração não consegue comunicar com os mesmos](../enrollment/troubleshoot-device-enrollment-in-intune.md#devices-are-inactive-or-the-admin-console-cant-communicate-with-them).
+Quando os dispositivos dos utilizadores perdem o contacto com o Intune, pode dar-lhes novos passos de resolução de problemas que os ajudem a recuperar o acesso aos recursos da empresa. Consulte [Os dispositivos estão inativos ou a consola de administração não consegue comunicar com os mesmos](../enrollment/troubleshoot-device-enrollment-in-intune.md#devices-are-inactive-or-the-admin-console-cant-communicate-with-them).
 
 ### <a name="notices"></a>Avisos
 
@@ -339,7 +339,7 @@ A aplicação Portal da Empresa para Android utiliza os Serviços do Google Play
 |Bloqueio remoto|||
 |Repor código de acesso|||
 
-### <a name="deprecations"></a>Depreciação
+### <a name="deprecations"></a>Preterimentos
 
 __O Firefox não oferece mais suporte ao Silverlight__ <!--VSO TBA-->
 A Mozilla vai remover o suporte do Silverlight na versão 52 do [browser Firefox](https://www.mozilla.org/firefox), a partir de março de 2017. Como resultado, já não será possível iniciar sessão na consola do Intune existente quando utilizar versões do Firefox superiores a 51. Recomendamos que utilize o Internet Explorer 10 ou 11 para aceder à consola de administração ou uma [versão do Firefox anterior à versão 52](https://ftp.mozilla.org/pub/firefox/releases/). A transição do Intune para o portal do Azure irá permitir suportar um número de [browsers modernos](/azure/azure-preview-portal-supported-browsers-devices) sem dependência do Silverlight.
@@ -369,7 +369,7 @@ __O componente Xamarin para o SDK da Aplicação Intune agora suporta MAM sem in
 
 __O certificado de assinatura Symantec já não precisa do Portal da Empresa do Windows Phone 8 assinado para carregamento__ O carregamento do certificado de assinatura Symantec já não precisa de uma aplicação do Portal da Empresa do Windows Phone 8 assinado. O certificado pode ser carregado de forma independente.
 
-### <a name="deprecations"></a>Depreciação
+### <a name="deprecations"></a>Preterimentos
 
 __Suporte para o Portal da Empresa do Windows Phone 8__ O suporte para o Portal da Empresa do Windows Phone 8 será preterido. O suporte para as plataformas do Windows Phone 8 e do WinRT foi preterido em outubro de 2016. O suporte para o Portal da Empresa do Windows 8 também foi preterido em outubro de 2016.
 

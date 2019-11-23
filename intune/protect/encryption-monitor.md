@@ -84,7 +84,7 @@ Quando você seleciona um dispositivo no relatório de criptografia, o Intune ex
 
 - **Perfis** – uma lista dos perfis de *configuração do dispositivo* que se aplicam a este dispositivo e são configurados com os seguintes valores:
 
-  - MacOS
+  - macOS:
     - Tipo de perfil = *Endpoint Protection*
     - Configurações > FileVault > FileVault = *habilitar*
 
@@ -107,7 +107,7 @@ Quando você seleciona um dispositivo no relatório de criptografia, o Intune ex
 
   Veja a seguir exemplos dos detalhes de status que o Intune pode relatar:
 
-  **MacOS**:
+  **macOS**:
   - A chave de recuperação ainda não foi recuperada e armazenada. Provavelmente, o dispositivo não foi desbloqueado ou não fez check-in.
 
     *Considere: esse resultado não representa necessariamente uma condição de erro, mas um estado temporário que pode ser devido ao tempo no dispositivo em que a caução para chaves de recuperação deve ser configurada antes que a solicitação de criptografia seja enviada para o dispositivo. Esse status também pode indicar que o dispositivo permanece bloqueado ou não fez check-in no Intune recentemente. Por fim, como a criptografia FileVault não é iniciada até que um dispositivo seja conectado (carregando), é possível que um usuário receba uma chave de recuperação para um dispositivo que ainda não esteja criptografado*.

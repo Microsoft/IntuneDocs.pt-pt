@@ -55,7 +55,7 @@ Você também pode definir a ordem de prioridade de cada perfil para considerar 
 <tr><td>Permitir que os usuários redefinam o dispositivo se ocorrer um erro de instalação<td>Um botão <b>Redefinir dispositivo</b> será exibido se houver uma falha na instalação.<td>O botão <b>Redefinir dispositivo</b> não será exibido se houver uma falha na instalação.
 <tr><td>Permitir que os usuários usem o dispositivo se ocorrer um erro de instalação<td>Um botão <b>continuar qualquer assim</b> será exibido se houver uma falha na instalação.<td>O botão <b>continuar mesmo assim</b> não será exibido se houver uma falha na instalação.
 <tr><td>Mostrar erro de tempo limite quando a instalação demorar mais do que o número especificado de minutos<td colspan="2">Especifique o número de minutos a aguardar a conclusão da instalação. Um valor padrão de 60 minutos é inserido.
-<tr><td>Mostrar mensagem personalizada quando ocorrer um erro<td>Uma caixa de texto é fornecida onde você pode especificar uma mensagem personalizada para exibir se ocorrer um erro de instalação.<td>A mensagem padrão é exibida: <br><b>Installation excedeu o limite de tempo definido por sua organização. Tente novamente ou contate a pessoa de suporte de ti para obter ajuda.<b>
+<tr><td>Mostrar mensagem personalizada quando ocorrer um erro<td>Uma caixa de texto é fornecida onde você pode especificar uma mensagem personalizada para exibir se ocorrer um erro de instalação.<td>A mensagem padrão é exibida: <br><b>instalação excedeu o limite de tempo definido por sua organização. Tente novamente ou contate a pessoa de suporte de ti para obter ajuda.<b>
 <tr><td>Permitir que os usuários coletem logs sobre erros de instalação<td>Se houver um erro de instalação, um botão <b>coletar logs</b> será exibido. <br>Se o usuário clicar nesse botão, será solicitado a escolher um local para salvar o arquivo de log <b>MDMDiagReport. cab</b><td>O botão <b>coletar logs</b> não será exibido se houver um erro de instalação.
 <tr><td>Bloquear o uso do dispositivo até que esses aplicativos necessários sejam instalados se eles forem atribuídos ao usuário/dispositivo<td colspan="2">Escolha <b>tudo</b> ou <b>selecionado</b>. <br><br>Se <b>selecionado</b> for escolhido, um botão <b>selecionar aplicativos</b> será exibido, permitindo que você escolha quais aplicativos devem ser instalados antes de habilitar o dispositivo.
 </table>
@@ -95,7 +95,7 @@ Pode especificar que aplicações têm de ser instaladas para o utilizador poder
 3. Escolha **Sim** para **Mostrar progresso de instalação de aplicações e perfis**.
 4. Escolha **Sim** para **Bloquear a utilização de dispositivos até que todas as aplicações e perfis sejam instalados**.
 5. Escolha **selecionado** para **bloquear o uso do dispositivo até que esses aplicativos necessários sejam instalados se eles forem atribuídos ao usuário/dispositivo**.
-6. Escolha **Selecionar aplicações** > escolha as aplicações > **Selecionar** > **Guardar**.
+6. Escolher **selecionar aplicações** > Selecione as aplicações > **selecione** > **guardar**.
 
 ## <a name="enrollment-status-page-tracking-information"></a>Informações de rastreamento de página de status de registro
 

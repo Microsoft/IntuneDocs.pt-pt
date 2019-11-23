@@ -58,15 +58,15 @@ Você também pode **importar** um arquivo separado por vírgulas (. csv) que in
 Para adicionar servidores do servidor de impressão, você precisa do endereço IP da impressora, do caminho do recurso e da porta. As etapas a seguir mostram como obter essas informações.
 
 1. Em um Mac que está conectado à mesma rede local (sub-rede) que as impressoras de impressão impressa, abra o **terminal** (de **/Applications/Utilities**).
-2. No aplicativo de terminal, digite `ippfind` e selecione Enter.
+2. No aplicativo de terminal, digite `ippfind`e selecione Enter.
 
     Anote as informações da impressora. Por exemplo, ele pode retornar algo semelhante a `ipp://myprinter.local.:631/ipp/port1`. A primeira parte é o nome da impressora. A última parte (`ipp/port1`) é o caminho do recurso.
 
-3. No terminal, digite `ping myprinter.local` e selecione Enter.
+3. No terminal, digite `ping myprinter.local`e selecione Enter.
 
    Anote o endereço IP. Por exemplo, ele pode retornar algo semelhante a `PING myprinter.local (10.50.25.21)`.
 
-4. Use os valores de caminho de recurso e endereço IP. Neste exemplo, o endereço IP é `10.50.25.21` e o caminho do recurso é `/ipp/port1`.
+4. Use os valores de caminho de recurso e endereço IP. Neste exemplo, o endereço IP é `10.50.25.21`e o caminho do recurso é `/ipp/port1`.
 
 ## <a name="login-items"></a>Itens de logon
 
@@ -107,9 +107,9 @@ Para adicionar servidores do servidor de impressão, você precisa do endereço 
 - **Botão reiniciar**: **ocultar** não mostra o botão reiniciar na tela de entrada. **Não configurado** (padrão) mostra o botão reiniciar.
 - **Botão de suspensão**: **ocultar** não mostra o botão de suspensão na tela de entrada. **Não configurado** (padrão) mostra o botão de suspensão.
 
-#### <a name="other"></a>outros
+#### <a name="other"></a>Outros
 
-- **Desabilitar logon de usuário do console**: **desabilitar** oculta a linha de comando MacOS usada para entrar. Para usuários típicos, **desabilite** essa configuração. **Não configurado** (padrão) permite que os usuários avançados entrem usando a linha de comando do MacOS. Para entrar no modo de console, os usuários inserem `>console` no campo username e devem ser autenticados na janela do console.
+- **Desabilitar logon de usuário do console**: **desabilitar** oculta a linha de comando MacOS usada para entrar. Para usuários típicos, **desabilite** essa configuração. **Não configurado** (padrão) permite que os usuários avançados entrem usando a linha de comando do MacOS. Para entrar no modo de console, os usuários inserem `>console` no campo nome de usuário e devem ser autenticados na janela do console.
 
 #### <a name="apple-menu"></a>Menu da Apple
 
@@ -202,7 +202,7 @@ Esta funcionalidade aplica-se a:
 
 - **ID do aplicativo**: Insira o identificador do aplicativo a ser associado a um site. O identificador do aplicativo inclui a ID da equipe e uma ID do pacote: `TeamID.BundleID`.
 
-  A ID da equipe é uma cadeia de caracteres alfanuméricos de 10 caracteres (letras e números) gerada pela Apple para seus desenvolvedores de aplicativos, como `ABCDE12345`. [Localize sua ID de equipe](https://help.apple.com/developer-account/#/dev55c3c710c)  (abre o site da Apple) tem mais informações.
+  A ID da equipe é uma cadeia de caracteres alfanuméricos de 10 caracteres (letras e números) gerada pela Apple para seus desenvolvedores de aplicativos, como `ABCDE12345`. [Localize sua ID de equipe](https://help.apple.com/developer-account/#/dev55c3c710c) (abre o site da Apple) tem mais informações.
 
   A ID do pacote identifica exclusivamente o aplicativo e normalmente é formatada na notação de nome de domínio reverso. Por exemplo, a ID do pacote do localizador é `com.apple.finder`. Para localizar a ID do pacote, use o AppleScript no terminal:
 

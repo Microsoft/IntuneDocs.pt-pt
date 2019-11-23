@@ -70,7 +70,8 @@ Examine as seções a seguir para solucionar problemas de notificação por emai
    1. Em um prompt de comando, digite *nslookup*.  
 
    2. Insira *autodiscover.SMTPdomain.com*. A saída deve ser semelhante à imagem a seguir:  
-      resultados de ![Nslookup @ no__t-1
+      ![resultados do nslookup](./media/troubleshoot-exchange-connector-common-problems/nslookup-results.png
+)
 
    Você também pode testar o serviço descoberta automática da Internet em https://testconnectivity.microsoft.com. Ou testá-lo de um domínio local usando a ferramenta Microsoft Connectivity Analyzer. Para obter mais informações, consulte a [ferramenta Analisador de conectividade da Microsoft](https://docs.microsoft.com/en-us/previous-versions/office/exchange-remote-connectivity/jj851141(v=exchg.80)). Se necessário, [Baixe a ferramenta Analisador de conectividade da Microsoft](https://go.microsoft.com/fwlink/?LinkID=313782).
 

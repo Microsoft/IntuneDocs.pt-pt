@@ -1,5 +1,5 @@
 ---
-title: Cliente de PC do Intune herdado e Intune no Azure
+title: Cliente de PC do Intune legado e o Intune no Azure
 description: Considerações sobre quando utilizar o Intune no Azure para gerir os dispositivos Windows da sua organização.
 keywords: ''
 author: ErikjeMS
@@ -23,9 +23,9 @@ ms.contentlocale: pt-PT
 ms.lasthandoff: 10/16/2019
 ms.locfileid: "72510186"
 ---
-# <a name="intune-on-azure-console-and-legacy-intune-pc-client"></a>Intune no console do Azure e cliente de PC herdado do Intune
+# <a name="intune-on-azure-console-and-legacy-intune-pc-client"></a>Intune na consola do Azure e o cliente de PC do Intune legado
 
-O Intune usa uma arquitetura de serviço de aplicativo SaaS baseada no Azure. O Azure oferece melhorias significativas ao nível da escala, capacidade e desempenho. Isso oferece experiências de administração do Intune aprimoradas e fluxos de trabalho otimizados no portal do Azure. 
+O Intune utiliza uma arquitetura de serviço de aplicações SaaS baseadas no Azure. O Azure oferece melhorias significativas ao nível da escala, capacidade e desempenho. Isso oferece ocorre com o administrador do Intune melhoradas e otimizadas para fluxos de trabalho no portal do Azure. 
 
 Quando utilizar o Intune no Azure para gerir os dispositivos Windows da sua organização, tenha em consideração os seguintes aspetos:
 
@@ -63,7 +63,7 @@ Para ver uma comparação detalhada entre as capacidades da MDM e do Cliente de 
 Para mudar da gestão de dispositivos Windows 10 com o Cliente de PC do Intune para a gestão com a MDM, siga estes passos:
 
 1. Na consola do Silverlight, execute uma **Eliminação seletiva** para anular a inscrição do dispositivo do Cliente de PC.
-  pop-up ![Warning com o botão de opção ' Apagar seletivamente o dispositivo ' selecionado @ no__t-1
+  ![pop-up de aviso com o botão de opção ' Apagar seletivamente o dispositivo ' selecionado](./media/intune-legacy-pc-client/image02.png)
 2. Volte a inscrever o dispositivo através da [MDM (e/ou Associação Azure AD)](../enrollment/windows-enroll.md).
 
 ## <a name="next-steps"></a>Próximos passos

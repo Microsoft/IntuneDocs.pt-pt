@@ -40,7 +40,7 @@ Em **ajuda & suporte** , você pode:
 
 ## <a name="get-help-with-app-problems"></a>Obter ajuda com problemas de aplicativo
 
-Envie por email sua organização sobre quaisquer problemas que você tiver em Portal da Empresa. Selecione **obter ajuda** para começar a descrever o problema. Sua organização usará as informações que você fornecer para solucionar o problema. Se mais ajuda for necessária para determinar o problema, sua organização usará a ID de diagnóstico @ no__t-0automatically incluída no email @ no__t-1to entrará em contato com a equipe de suporte da Microsoft.  
+Envie por email sua organização sobre quaisquer problemas que você tiver em Portal da Empresa. Selecione **obter ajuda** para começar a descrever o problema. Sua organização usará as informações que você fornecer para solucionar o problema. Se mais ajuda for necessária para determinar o problema, sua organização usará a ID de diagnóstico&ndash;automaticamente incluída na&ndash;de email para entrar em contato com a equipe de suporte da Microsoft.  
 
 Para obter o procedimento passo a passo, consulte [enviar logs para o suporte de sua empresa no aplicativo portal da empresa para Windows 10](send-logs-to-your-it-admin-cp-windows.md).  
 

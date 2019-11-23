@@ -32,9 +32,9 @@ Depois de configurar seus [dispositivos Android Enterprise dedicados](android-ki
 | Método de inscrição | Versão mínima do sistema operacional Android para dispositivos dedicados e totalmente gerenciados |
 | ----- | ----- |
 | Comunicação de Proximidade | 5.1 |
-| Entrada de token | 6,0 |
-| Código QR | 7,0 |
-| Zero Touch  | 8.0 @ no__t-0 |
+| Entrada de token | 6.0 |
+| Código QR | 7.0 |
+| Zero Touch  | 8,0\* |
 
 \* em fabricantes participantes.
 

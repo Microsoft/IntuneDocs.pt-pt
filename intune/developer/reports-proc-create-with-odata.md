@@ -57,8 +57,8 @@ Instale a versão mais recente do Power BI Desktop. Pode transferir o Power BI D
 1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Abra o painel **data warehouse do Intune** selecionando o link data warehouse em **outras tarefas** no lado direito da folha **Microsoft Intune-visão geral** .
 3. Copie o URL do feed personalizado. Por exemplo: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
-4. Abra o Power BI Desktop.
-5. Na BarraDeMenu, selecione **arquivo** > **obter dados** > **feed OData**.
+4. Abra o Power BI Desktop.
+5. Na menu de menus, selecione **arquivo** > **obter dados** > **feed OData**.
 6. Cole a URL de feed personalizada, que você copiou da etapa anterior, na caixa URL na janela **feed OData** .
 7. Selecione **Básico**.
 
@@ -69,7 +69,7 @@ Instale a versão mais recente do Power BI Desktop. Pode transferir o Power BI D
 
     ![Credenciais da conta escolar ou profissional](./media/reports-proc-create-with-odata/reports-create-02-org-account.png)
 
-10. Selecione **conectar**. O Navegador será aberto e irá mostrar-lhe a lista de tabelas no Armazém de Dados do Intune.
+10. Selecione **Ligar**. O Navegador será aberto e irá mostrar-lhe a lista de tabelas no Armazém de Dados do Intune.
 
     ![Captura de tela do navegador – a lista de tabelas de data warehouse](./media/reports-proc-create-with-odata/reports-create-02-loadentities.png)
 
@@ -94,9 +94,9 @@ Um gráfico de mapa de plano mostra dados hierárquicos como caixas nas caixas. 
 
 1. No painel **visualizações** , localize e selecione **mapa**de página. O gráfico de **mapa** de plano será adicionado à tela de relatório.
 2. No painel **campos** , localize a tabela `devices`.
-3. Expanda a tabela `devices` e selecione o campo de dados `manufacturer`.
-4. Arraste o campo de dados `manufacturer` para a tela relatório e solte-o no gráfico **mapa** de plano.
-5. Arraste o campo de dados `deviceKey` da tabela `devices` para o painel **visualizações** e solte-o na seção **valores** na caixa rotulada **adicionar campos de dados aqui**.  
+3. Expanda a tabela `devices` e selecione o campo dados de `manufacturer`.
+4. Arraste o campo `manufacturer` dados para a tela relatório e solte-o no gráfico **mapa** de plano.
+5. Arraste o campo `deviceKey` dados da tabela `devices` para o painel **visualizações** e solte-o na seção **valores** na caixa rotulada **adicionar campos de dados aqui**.  
 
 Agora, tem um elemento visual que mostra a distribuição dos fabricantes de dispositivos na sua organização.
 
@@ -106,12 +106,12 @@ Agora, tem um elemento visual que mostra a distribuição dos fabricantes de dis
 
 Pode adicionar um filtro ao seu treemap para poder responder a perguntas adicionais com a sua aplicação.
 
-1. Para adicionar um filtro, selecione a tela relatório e, em seguida, selecione o **ícone de segmentação** (![Treemap com o modelo de dados e as relações com suporte @ no__t-2) em **visualizações**. A visualização de **segmentação** vazia será exibida na tela.
+1. Para adicionar um filtro, selecione a tela relatório e, em seguida, selecione o **ícone de segmentação** de dados (![o mapa de páginas com o modelo e as relações com suporte](./media/reports-proc-create-with-odata/reports-create-slicer.png)) em **visualizações**. A visualização de **segmentação** vazia será exibida na tela.
 2. No painel **campos** , localize a tabela `ownerTypes`.
-3. Expanda a tabela `ownerTypes` e selecione o campo de dados `ownerTypeName`.
-4. Arraste o campo de dados `onwerTypeName` da tabela `ownerTypes` para o painel **filtros** e solte-o na seção **filtros nesta página** na caixa denominada **adicionar campos de dados aqui**.  
+3. Expanda a tabela `ownerTypes` e selecione o campo dados de `ownerTypeName`.
+4. Arraste o campo de dados `onwerTypeName` da tabela `ownerTypes` para o painel **filtros** e solte-o na seção **filtros nesta página** na caixa rotulada **adicionar campos de dados aqui**.  
 
-   Na tabela `OwnerTypes`, há um campo de dados chamado @no__t-qual contém um dado sobre se um dispositivo é de propriedade da empresa ou pessoal. Como você gostaria de mostrar nomes amigáveis nesse filtro, procure a tabela `ownerTypes` e arraste o **ownerTypeName** para a segmentação. Este exemplo mostra de que forma o modelo de dados suporta relações entre tabelas.
+   Na tabela `OwnerTypes`, há um campo de dados chamado `OwnerTypeKey`que contém dados como se um dispositivo é de propriedade da empresa ou pessoal. Como você gostaria de mostrar nomes amigáveis nesse filtro, procure a tabela `ownerTypes` e arraste o **ownerTypeName** para a segmentação. Este exemplo mostra de que forma o modelo de dados suporta relações entre tabelas.
 
 ![Mapa de mapas com filtro-dá suporte a relações entre tabelas](./media/reports-proc-create-with-odata/reports-create-08_ownertype.png)
 

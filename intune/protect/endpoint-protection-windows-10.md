@@ -67,7 +67,7 @@ O Application Guard só está disponível para dispositivos com o Windows 10 (64
 
   Selecione o conteúdo da área de transferência permitido.  
   - **Não configurado**  
-  - **Texto**  
+  - **Text**  
   - **Imagens**  
   - **Texto e imagens**  
 
@@ -87,7 +87,7 @@ O Application Guard só está disponível para dispositivos com o Windows 10 (64
 
   Ao *permitir* a impressão, você pode definir a seguinte configuração:
   - **Tipo (s) de impressão** Selecione uma ou mais das seguintes opções:  
-    - FORMATO  
+    - PDF  
     - XPS  
     - Impressoras locais
     - Impressoras de rede  
@@ -185,7 +185,7 @@ Estas definições são aplicáveis a todos os tipos de rede.
   - **Os pacotes de fila após a descriptografia são executados somente para encaminhamento**  
   - **Configurar pacotes de entrada e de saída**  
 
-### <a name="network-settings"></a>Configurações de rede  
+### <a name="network-settings"></a>Definições de rede  
 
 As configurações a seguir são listadas neste artigo uma única vez, mas todas se aplicam aos três tipos de rede específicos:  
 - **Rede de domínio (local de trabalho)**  
@@ -268,8 +268,8 @@ As configurações a seguir são listadas neste artigo uma única vez, mas todas
 
   - **Não configurado**  
   - **Bloquear** -as regras de firewall do aplicativo autorizado no repositório local são ignoradas e não são impostas.  
-  - **Permitir que** -
-   Choose **habilite** aplica regras de firewall no repositório local para que sejam reconhecidas e impostas.  
+  - **Permitir** -
+   escolha **habilitar** aplica regras de firewall no repositório local para que elas sejam reconhecidas e impostas.  
 
 - **Porta global regras do Microsoft defender Firewall do repositório local**  
   **Padrão**: não configurado  
@@ -939,7 +939,7 @@ Ajude a [proteger dados valiosos](https://docs.microsoft.com/windows/security/th
   Proteja ficheiros e pastas contra alterações não autorizadas por aplicações não fidedignas.  
 
   - **Não configurado**  
-  - **Desabilitar**  
+  - **Ativar**  
   - **Somente auditoria**  
   - **Bloquear modificação de disco**  
   - **Modificação de disco de auditoria**  
@@ -1211,7 +1211,7 @@ Utilize estas opções para configurar as definições da segurança local em di
    - **Bloquear** – permitir que apenas contas locais com senhas em branco entrem usando o teclado do dispositivo.  
    - **Não configurado** – permitir que contas locais com senhas em branco entrem em locais diferentes do dispositivo físico.  
 
-#### <a name="admin"></a>Administração  
+#### <a name="admin"></a>Admin  
 
 - **Conta de administrador local**  
   **Padrão**: não configurado  
@@ -1606,7 +1606,7 @@ Utilize estas opções para configurar as definições da segurança local em di
   Essa configuração determina o tipo de início do serviço de gerenciamento de acessórios.  
   - **Manual**
   - **Automático**
-  - **Desabilitado**
+  - **Desativado**
 
 - **Serviço do Gerenciador de autenticação Xbox Live**  
   **Padrão**: manual  
@@ -1615,7 +1615,7 @@ Utilize estas opções para configurar as definições da segurança local em di
   Essa configuração determina o tipo de início do serviço do Gerenciador de autenticação dinâmica.  
   - **Manual**
   - **Automático**
-  - **Desabilitado**
+  - **Desativado**
  
 - **Serviço de salvamento do jogo Xbox Live**  
   **Padrão**: manual  
@@ -1624,7 +1624,7 @@ Utilize estas opções para configurar as definições da segurança local em di
   Essa configuração determina o tipo de início do serviço de salvamento de jogo ao vivo.  
   - **Manual**
   - **Automático**
-  - **Desabilitado**
+  - **Desativado**
 
 - **Serviço de rede Xbox Live**  
   **Padrão**: manual  
@@ -1633,7 +1633,7 @@ Utilize estas opções para configurar as definições da segurança local em di
   Essa configuração determina o tipo de início do serviço de rede.  
   - **Manual**
   - **Automático**
-  - **Desabilitado**
+  - **Desativado**
 
 ## <a name="user-rights"></a>Direitos de usuário
 
