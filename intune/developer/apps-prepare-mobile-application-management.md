@@ -1,5 +1,5 @@
 ---
-title: Preparar aplicativos para o gerenciamento de aplicativos móveis com o Microsoft Intune
+title: Preparar as aplicações para gestão de aplicações móveis com o Microsoft Intune
 description: As informações neste tópico ajudam-no a decidir quando deve utilizar a ferramenta de encapsulamento de aplicações e o SDK da Aplicação para permitir que as suas aplicações de linha de negócio personalizadas utilizem políticas de gestão de aplicações móveis.
 keywords: ''
 author: Erikre
@@ -32,7 +32,7 @@ Pode utilizar a Ferramenta de Encapsulamento de Aplicações do Intune ou o SDK 
 
 A Ferramenta de Encapsulamento de Aplicações é utilizada principalmente para aplicações **internas** de linha de negócio (LOB). A ferramenta é uma aplicação de linha de comandos que cria um wrapper em torno da aplicação, que permite que a aplicação seja, então, gerida por uma política de proteção de aplicações do Intune. Ao proteger uma aplicação fornecida por um fabricante independente de software (ISV), é importante esclarecer se o ISV continuará a suportar a aplicação encapsulada.
 
-Não precisa do código de origem para utilizar a ferramenta, mas precisa das credenciais de início de sessão. Para obter mais informações sobre as credenciais de início de sessão, veja o [Intune Blog (Blogue do Intune)](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/). Para obter a documentação da ferramenta de disposição do aplicativo, consulte [ferramenta de disposição do aplicativo do Android](app-wrapper-prepare-android.md) e ferramenta de disposição do [aplicativo IOS](app-wrapper-prepare-ios.md).
+Não precisa do código de origem para utilizar a ferramenta, mas precisa das credenciais de início de sessão. Para obter mais informações sobre as credenciais de início de sessão, consulte o [Blogue do Intune](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/). Para obter a documentação da ferramenta de disposição do aplicativo, consulte [ferramenta de disposição do aplicativo do Android](app-wrapper-prepare-android.md) e ferramenta de disposição do [aplicativo IOS](app-wrapper-prepare-ios.md).
 
 A Ferramenta de Encapsulamento de Aplicações **não** suporta aplicações da Apple App Store ou da Google Play Store. Também não suporta determinadas funcionalidades que requerem integração do programador (consulte a tabela de comparação de funcionalidades seguinte).
 

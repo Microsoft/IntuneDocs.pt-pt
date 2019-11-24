@@ -131,7 +131,7 @@ Se você tiver selecionado a opção **Designer de configuração** na caixa sus
 ## <a name="select-scope-tags-optional"></a>Selecionar marcas de escopo (opcional)
 Você pode usar marcas de escopo para determinar quem pode ver as informações do aplicativo cliente no Intune. Para obter detalhes completos sobre marcas de escopo, consulte [usar o controle de acesso baseado em função e marcas de escopo para distribuí-lo](../fundamentals/scope-tags.md).
 
-1. Selecione **Scope (Tags)**  > **Adicionar**.
+1. Selecione **escopo (marcas)**  > **Adicionar**.
 2. Use a caixa **selecionar** para procurar marcas de escopo.
 3. Marque a caixa de seleção ao lado das marcas de escopo que você deseja atribuir a este aplicativo.
 4. Selecione **Selecionar** > **OK**.
@@ -161,7 +161,7 @@ No diretório *Microsoft Office 15* , os arquivos do inicializador de instalaç�
 A instalação estará no modo silencioso se a atribuição do O365 Suite estiver configurada conforme necessário. Os arquivos de instalação baixados serão excluídos assim que a instalação for bem-sucedida. Se a atribuição estiver configurada como **disponível**, os aplicativos do Office aparecerão no aplicativo portal da empresa para que os usuários finais possam disparar a instalação manualmente.
 
 ## <a name="troubleshooting"></a>Resolução de Problemas
-O Intune usa a [ferramenta de implantação do Office](https://docs.microsoft.com/DeployOffice/overview-of-the-office-2016-deployment-tool) para baixar e implantar o Office 365 ProPlus em seus computadores cliente usando a CDN do [Office 365](https://docs.microsoft.com/office365/enterprise/content-delivery-networks). Referencie as práticas recomendadas descritas em [Gerenciando pontos de extremidade do Office 365](https://docs.microsoft.com/office365/enterprise/managing-office-365-endpoints) para garantir que sua configuração de rede permita que os clientes acessem a CDN diretamente, em vez de rotear o tráfego da CDN por meio de proxies centrais para evitar a introdução desnecessária MOLAP.
+O Intune usa a [ferramenta de implantação do Office](https://docs.microsoft.com/DeployOffice/overview-of-the-office-2016-deployment-tool) para baixar e implantar o Office 365 ProPlus em seus computadores cliente usando a CDN do [Office 365](https://docs.microsoft.com/office365/enterprise/content-delivery-networks). Referencie as práticas recomendadas descritas em [Gerenciando pontos de extremidade do Office 365](https://docs.microsoft.com/office365/enterprise/managing-office-365-endpoints) para garantir que sua configuração de rede permita que os clientes acessem a CDN diretamente, em vez de rotear o tráfego da CDN por meio de proxies centrais para evitar introduzir latência desnecessária.
 
 Execute o [suporte da Microsoft e o assistente de recuperação para o Office 365](https://diagnostics.office.com) em um dispositivo de destino se você encontrar problemas de instalação ou tempo de execução.
 
@@ -188,7 +188,7 @@ Depois de concluir que a infraestrutura de rede e o Intune funcionam conforme o 
   [O Office instalado com Clique para executar e Windows Installer no mesmo computador não é suportado](https://support.office.com/article/office-installed-with-click-to-run-and-windows-installer-on-same-computer-isn-t-supported-30775ef4-fa77-4f47-98fb-c5826a6926cd)
 - O usuário de conexão deve ter permissão para instalar aplicativos no dispositivo.
 - Confirme se não há nenhum problema com base no log do Windows Visualizador de Eventos **logs do windows** -> **aplicativos**.
-- Capture logs detalhados de instalação do Office durante a instalação. Para fazer isso, siga estas etapas:<br>
+- Capture logs detalhados de instalação do Office durante a instalação. Para tal, siga estes passos:<br>
     1. Ative o log detalhado para a instalação do Office nos computadores de destino. Para fazer isso, execute o seguinte comando para modificar o registro:<br>
         `reg add HKLM\SOFTWARE\Microsoft\ClickToRun\OverRide /v LogLevel /t REG_DWORD /d 3`<br>
     2. Implante o pacote do Office 365 nos dispositivos de destino novamente.<br>
@@ -205,7 +205,7 @@ A seguinte tabela lista códigos de erro comuns que poderá encontrar e o seu si
 
 ### <a name="status-for-office-csp"></a>Estado do CSP do Office
 
-| Estado | Fase | Description |
+| Estado | Fase | Descrição |
 |--------------------------------------------------|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1460 (ERROR_TIMEOUT) | Transferência | Falha ao transferir a Ferramenta de Implementação do Office |
 | 13 (ERROR_INVALID_DATA) | - | Não foi possível verificar a assinatura da Ferramenta de Implementação do Office transferida |
