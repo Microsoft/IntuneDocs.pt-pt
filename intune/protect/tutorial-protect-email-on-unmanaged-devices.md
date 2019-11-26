@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/10/2019
+ms.date: 11/21/2019
 ms.topic: tutorial
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3cc997bfb11ebcfe58a6d44705c34a7077a4f787
-ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
+ms.openlocfilehash: 810a898a3b2d1981babc231f32ed386bde37a856
+ms.sourcegitcommit: ce518a5dfe62c546a77f32ef372f36efbaad473f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74410325"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74465782"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-unmanaged-devices"></a>Tutorial: Protect Exchange Online email on unmanaged devices
 
