@@ -205,6 +205,10 @@
           href: use-docs.md
         - name: Obter suporte
           href: get-support.md
+    - name: Relatórios
+      items:
+        - name: Relatórios do Intune
+          href: reports.md
 - name: Referência
   items:
     - name: Códigos de erro e descrições
