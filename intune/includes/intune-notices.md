@@ -7,20 +7,35 @@ ms.topic: include
 ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: fa2b1c5c9d267b9f860da2268d03c928ebf7693b
-ms.sourcegitcommit: 1cf063c98e1caae00a6e6fab821cc3254562bca9
-ms.translationtype: HT
+ms.openlocfilehash: 8db05399c4a880d72d24cde885976309bf9a4fa7
+ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74309823"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74549482"
 ---
 Esses avisos fornecem informações importantes que podem ajudá-lo a se preparar para futuras alterações e recursos do Intune.
+
+### <a name="updated-support-statement-for-adobe-acrobat-reader-for-intune-mobile-app--5746776--"></a>Foi atualizada a instrução de suporte para o aplicativo móvel ' Adobe Acrobat Reader for Intune '<!--5746776-->
+Compartilhamos em MC188653 no final de agosto, que o Adobe Acrobat Reader para o aplicativo móvel do Intune estava atingindo o fim da vida útil em 1º de dezembro de 2019 e que a Adobe estava planejando dar suporte às políticas de proteção de aplicativo do Intune em seu aplicativo do Acrobat Reader principal. Desde então, recebemos comentários dos clientes que precisávamos fornecer mais tempo para continuar permitindo que os administradores de ti direcionem e os usuários finais comecem a usar o Adobe Acrobat Reader para Intune. Devido ao alto uso do Adobe Acrobat Reader para Intune em dispositivos de usuário final e sua importância em cenários empresariais, queremos garantir que qualquer experiência atenda às necessidades de proteção do aplicativo da sua organização. 
+
+Embora ainda seja recomendável direcionar o aplicativo móvel Acrobat Reader em suas políticas, já que o aplicativo móvel Acrobat Reader dá suporte a políticas de proteção de aplicativo e integrou o SDK do Intune, o aplicativo Adobe Acrobat Reader para Intune continuará a ter suporte até 31 de março de 2020. 
+
+#### <a name="how-does-this-affect-me"></a>Como é que isto me afeta?
+Você está recebendo esta mensagem porque nosso relatório indica que uma ou mais políticas em sua organização estão direcionando o aplicativo Adobe Acrobat Reader para Intune e/ou você pode ter recebido nossa comunicação de EOL anterior. 
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>O que preciso de fazer para me preparar para esta alteração?
+Permita que os usuários finais e a assistência técnica saibam dessa alteração. Você pode usar a [funcionalidade de informações de suporte do portal da empresa](../apps/company-portal-app.md#support-information) para estabelecer um canal para perguntas relacionadas ao Intune.
+
+#### <a name="additional-information"></a>Informações Adicionais
+https://helpx.adobe.com/acrobat/kb/intune-app-end-of-life.html
+
 
 ### <a name="end-support-for-windows-phone-81--3544909--"></a>Suporte final para Windows Phone 8,1<!--3544909-->
 O suporte principal da Microsoft para o Windows Phone 8,1 foi encerrado em 2017 de julho e o suporte estendido terminou em 2019 de junho. O aplicativo Portal da Empresa para Windows Phone 8,1 esteve no modo de manutenção, desde 2017 de outubro. Microsoft Intune agora terminará o suporte em 20 de fevereiro de 2020 para Windows Phone 8,1.
 
 #### <a name="how-does-this-affect-me"></a>Como é que isto me afeta?
-Após 20 de fevereiro de 2020, esses dispositivos não receberão atualizações de segurança e você não poderá registrar nenhum dispositivo novo. Os dispositivos Windows Phone 8,1 existentes permanecerão registrados (política, aplicativos, relatórios), mas observe que não haverá suporte para a solução de problemas de um registro existente após essa data, pois muitos componentes, como certificados de terceiros, já terminaram o suporte para o plataforma. O Intune irá parar o teste de compatibilidade com o Intune e Windows Phone 8,1.
+Após 20 de fevereiro de 2020, esses dispositivos não receberão nenhuma atualização de segurança e você não poderá registrar nenhum dispositivo novo. Os dispositivos Windows Phone 8,1 existentes permanecerão registrados (política, aplicativos, relatórios), mas observe que qualquer solução de problemas de um registro existente não terá suporte após essa data, pois muitos componentes, como certificados de terceiros, já terminaram o suporte para o plataforma. O Intune irá parar o teste de compatibilidade com o Intune e Windows Phone 8,1.
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>O que preciso de fazer para me preparar para esta alteração?
 Você pode verificar seus relatórios do Intune para ver quais dispositivos ou usuários podem ser afetados. Aceda a Dispositivos > Todos os dispositivos e filtre por SO. Você pode adicionar colunas adicionais para ajudar a identificar quem em sua organização tem dispositivos em execução Windows Phone 8,1. Solicite que os usuários finais atualizem seus dispositivos para uma versão do sistema operacional com suporte.
@@ -49,7 +64,7 @@ Para obter mais informações sobre configurações do aplicativo e configuraç�
 O Windows 10, versão 1703 (também conhecido como Windows 10, RS2) foi movido para fora do serviço em 8 de outubro de 2019 para as edições Enterprise e EDU. O Intune terminará o suporte para o aplicativo de Portal da Empresa correspondente para RS2/RS1 a partir de 26 de dezembro de 2019.
 
 #### <a name="how-does-this-affect-me"></a>Como é que isto me afeta?
-Adiante, você não verá novos recursos na versão específica do aplicativo Portal da Empresa, embora possamos continuar a dar suporte a essa versão do aplicativo Portal da Empresa até 26 de dezembro de 2019, incluindo fornecer quaisquer atualizações de segurança para o aplicativo Portal da Empresa como precisa. No entanto, como o Windows 10, a versão 1703 não receberá nenhuma atualização de segurança depois de sair da manutenção, é altamente recomendável que você atualize seus dispositivos Windows para uma versão mais recente do Windows e verifique se você está no aplicativo Portal da Empresa mais recente para continuar a obter novos recursos e funcionalidades adicionais.
+Avançando, você não verá novos recursos na versão específica do aplicativo Portal da Empresa, embora possamos continuar a dar suporte a essa versão do aplicativo Portal da Empresa até 26 de dezembro de 2019, incluindo fornecer quaisquer atualizações de segurança para o aplicativo Portal da Empresa como precisa. No entanto, como o Windows 10, a versão 1703 não receberá nenhuma atualização de segurança depois de sair da manutenção, é altamente recomendável que você atualize seus dispositivos Windows para uma versão mais recente do Windows e verifique se você está no aplicativo Portal da Empresa mais recente para continuar a obter novos recursos e funcionalidades adicionais.
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>O que preciso de fazer para me preparar para esta alteração?
 As etapas executadas dependem de como seu ambiente está configurado. No entanto, em geral, você deve identificar os dispositivos que têm a versão mais antiga do sistema operacional e/ou o Portal da Empresa em seu dispositivo e atualizar. Para definir os anéis de atualização do Windows 10, faça logon no Intune – > de atualizações de software – anéis de atualização do Windows 10. A versão mais recente do Portal da Empresa é a versão 10.3.5601.0. Direcione seus usuários para adquiri-lo do Microsoft Store para se manter atualizado com versões futuras. Você também pode usar o Intune para instalar a versão mais recente em seus dispositivos Windows por meio do [Microsoft Store for Business](https://docs.microsoft.com/intune/windows-store-for-business).
@@ -97,7 +112,7 @@ Você deve planejar a atualização das diretrizes do usuário final e permitir 
 
 O gerenciamento de computadores herdados está ficando sem suporte em 15 de outubro de 2020. Atualize os dispositivos para o Windows 10 e registre-os novamente como dispositivos de MDM (gerenciamento de dispositivo móvel) para mantê-los gerenciados pelo Intune.
 
-[Mais informações](https://go.microsoft.com/fwlink/?linkid=2107122)
+[Saiba mais](https://go.microsoft.com/fwlink/?linkid=2107122)
 
 ### <a name="decreasing-support-for-android-device-administrator"></a>Diminuindo o suporte para o administrador do dispositivo Android 
 O administrador do dispositivo Android (às vezes chamado de gerenciamento do Android "herdado" e lançado com o Android 2,2) é uma maneira de gerenciar dispositivos Android. No entanto, a funcionalidade de gerenciamento aprimorada agora está disponível com o [Android Enterprise](../enrollment/connect-intune-android-enterprise.md) (lançado com Android 5,0). Em um esforço para migrar para o gerenciamento de dispositivos moderno, mais avançado e seguro, o Google está diminuindo o suporte ao administrador de dispositivos em novas versões do Android.

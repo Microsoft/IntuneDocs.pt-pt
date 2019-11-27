@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f8e319c68abd8965b84323bc3b7a5451dee42bc2
-ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
+ms.openlocfilehash: bc781ea72b54468b21fb70e60e334f1c8d8832ea
+ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73709207"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74547954"
 ---
 # <a name="tutorial-use-autopilot-to-enroll-windows-devices-in-intune"></a>Tutorial: Utilizar o Autopilot para inscrever dispositivos Windows no Intune
 
@@ -60,9 +60,9 @@ O primeiro passo na configuração do Windows Autopilot é adicionar os disposit
 
 2. Guarde o ficheiro CSV.
 
-3. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **registro de dispositivo** > registro do **Windows** > **dispositivos** > **importar**.
+3. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **dispositivos** > **dispositivos** **Windows** > (no programa de **implantação do Windows AutoPilot** > **importar**.
 
-    ![Captura de ecrã dos dispositivos Windows Autopilot](./media/tutorial-use-autopilot-enroll-devices/autopilot-import-device.png)
+    ![Captura de ecrã dos dispositivos Windows Autopilot](./media/enrollment-autopilot/autopilot-import-device.png)
 
 4. Em **Adicionar dispositivos Windows Autopilot**, procure o ficheiro CSV que guardou.
 
@@ -70,7 +70,7 @@ O primeiro passo na configuração do Windows Autopilot é adicionar os disposit
 
 5. Escolha **Importar** para iniciar a importação das informações do dispositivo. A importação poderá demorar alguns minutos.
 
-4. Após a conclusão da importação, **escolha registro de dispositivo** >  registro do**Windows** > **Windows AutoPilot** > **dispositivos** > **sincronização**. Uma mensagem exibe que a sincronização está em andamento. A conclusão do processo poderá demorar alguns minutos, consoante o número de dispositivos que está a sincronizar.
+4. Após a conclusão da importação, escolha **dispositivos** > **Windows** > **registro do Windows** > **dispositivos** (no programa de **implantação do Windows AutoPilot** > **sincronizar**. Uma mensagem exibe que a sincronização está em andamento. A conclusão do processo poderá demorar alguns minutos, consoante o número de dispositivos que está a sincronizar.
 
 5. Atualize a vista para ver os novos dispositivos.
 
@@ -90,7 +90,7 @@ Em seguida, vai criar um grupo de dispositivos e colocar os dispositivos Autopil
 
 Depois de criar um grupo de dispositivos, tem de criar um perfil de implementação para poder configurar os dispositivos Autopilot.
 
-1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **registro de dispositivo** > registro do **Windows** > **perfis de implantação** > **Criar perfil**.
+1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **dispositivos** > **windows** > **registro do Windows** > perfis de **implantação** > **Criar perfil**.
 2. Na página **noções básicas** , **nome**do Tor, insira o *perfil do AutoPilot*. Em **Descrição**, introduza *Testar o perfil para dispositivos Autopilot*.
 3. Defina **Converter todos os dispositivos visados para o Autopilot** como **Sim**. Esta definição garante que todos os dispositivos na lista são registados com o serviço de implementação do Autopilot. O processo de registo demora até 48 horas, pelo que deverá aguardar.
 4. Selecione **Seguinte**.
@@ -116,9 +116,9 @@ Se você não quiser mais usar os dispositivos de piloto automático, poderá ex
 
 1. Se os dispositivos estiverem inscritos no Intune, primeiro tem de [eliminá-los do portal do Azure Active Directory](../remote-actions/devices-wipe.md#delete-devices-from-the-azure-active-directory-portal).
 
-2. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **registro de dispositivo** > registro do **Windows** > **dispositivos**.
+2. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **dispositivos** > **windows** > **registro do Windows** > **dispositivos** (em programa de **implantação do Windows AutoPilot**).
 
-3. Em **Dispositivos Windows Autopilot**, escolha os dispositivos que quer eliminar e, em seguida, **Eliminar**.
+3. Escolha os dispositivos que você deseja excluir e, em seguida, escolha **excluir**.
 
 4. Confirme a eliminação ao escolher **Sim**. A eliminação pode demorar alguns minutos.
 

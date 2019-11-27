@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/23/2019
+ms.date: 11/25/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b47ecc2363244634cb355fdeaeb51074417322e4
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: f073c8ad7a8e087a791ee756683011fac6947162
+ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507291"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74547971"
 ---
 # <a name="include-and-exclude-app-assignments-in-microsoft-intune"></a>Incluir e excluir atribuições de aplicações no Microsoft Intune
 
@@ -31,9 +31,20 @@ No Intune, pode determinar quem tem acesso a uma aplicação ao atribuir os grup
 
 Para definir a disponibilidade de uma aplicação, pode incluir e excluir atribuições de aplicações para um grupo de utilizadores ou dispositivos ao utilizar uma combinação de inclusão e exclusão de atribuições de grupo. Esta funcionalidade pode ser útil quando disponibiliza a aplicação ao incluir um grande grupo e, em seguida, limita os utilizadores selecionados ao excluir um grupo mais pequeno. O grupo mais pequeno pode ser um grupo de teste ou grupo executivo. 
 
-Ao excluir grupos de uma atribuição de aplicações, tem de excluir apenas grupos de utilizadores ou apenas grupos de dispositivo. Não pode excluir uma combinação de grupos de utilizadores e grupos de dispositivos. 
+Como prática recomendada, crie e atribua aplicativos especificamente para seus grupos de usuários e separadamente para seus grupos de dispositivos. Para obter mais informações sobre grupos, consulte [Adicionar grupos para organizar usuários e dispositivos](~/fundamentals/groups-add.md).  
 
-O Intune não tem em consideração a associação de utilizadores a dispositivos ao excluir grupos. Incluir grupos de utilizadores e excluir grupos de dispositivos provavelmente não produzirá os resultados de que precisa. A inclusão tem precedência sobre a exclusão. Por exemplo, se direcionar uma aplicação iOS para **Todos os Utilizadores** e excluir **Todos os iPads**, o resultado será que qualquer utilizador que utilize um iPad continuará a obter a aplicação. No entanto, se direcionar a aplicação iOS para **Todos os Dispositivos** e excluir **Todos os iPads**, a implementação ocorrerá com êxito.  
+Existem cenários importantes ao incluir ou excluir atribuições de aplicativo:
+
+- A exclusão tem precedência sobre a inclusão nos seguintes cenários de tipo de Grupo:
+    - Incluindo grupos de usuários e excluindo grupos de usuários ao atribuir aplicativos
+    - Incluindo grupos de dispositivos e excluindo o grupo de dispositivos ao atribuir aplicativos
+
+    Por exemplo, se você atribuir um grupo de dispositivos ao grupo de usuários **todos os usuários corporativos** , mas excluir Membros no grupo de usuários da **equipe de gerenciamento sênior** , **todos os usuários corporativos** , exceto a **equipe de gerenciamento sênior** , obterão a atribuição, pois ambos os grupos são grupos de usuários.
+- O Intune não avalia as relações de grupo de usuário para dispositivo. Se você atribuir aplicativos a grupos mistos, os resultados poderão não ser o que você deseja ou esperar.
+
+    Por exemplo, se você atribuir um grupo de dispositivos ao grupo de usuários **todos os usuários** , mas excluirá um grupo de dispositivos de **todos os dispositivos pessoais** . Nesta atribuição de aplicativo de grupo misto, **todos os usuários** obtêm o aplicativo. A exclusão não se aplica.
+
+Como resultado, não é recomendável atribuir aplicativos a grupos mistos.
 
 > [!NOTE]
 > Ao definir uma atribuição de grupo para uma aplicação, o tipo **Não Aplicável** é preterido e substituído pela exclusão de funcionalidades de grupo. 
@@ -41,7 +52,6 @@ O Intune não tem em consideração a associação de utilizadores a dispositivo
 > O Intune disponibiliza os grupos **Todos os Utilizadores** e **Todos os Dispositivos** pré-criados na consola. Os grupos têm otimizações incorporadas para sua comodidade. Recomendamos vivamente que utilize estes grupos para abranger todos os utilizadores e todos os dispositivos em vez dos grupos “todos os utilizadores” ou “todos os dispositivos” que possa criar.  
 >
 > O Android Enterprise suporta a inclusão e exclusão de grupos. Pode tirar partido dos grupos incorporados **Todos os Utilizadores** e **Todos os Dispositivos** para a atribuição de aplicações Android Enterprise. 
-
 
 ## <a name="include-and-exclude-groups-when-assigning-apps"></a>Incluir e excluir grupos ao atribuir aplicações 
 Para atribuir uma aplicação aos grupos através da atribuição de inclusão e exclusão:

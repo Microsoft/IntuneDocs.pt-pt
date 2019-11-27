@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 61771ce2b6179b2e74a4d13f72794ece97907034
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 9454353ec4f8291d4d8c0001cc977838ecec787b
+ms.sourcegitcommit: 16a9109b4028589c17695d41271ca4fee8b1d697
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502568"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74540806"
 ---
 # <a name="add-partner-certification-authority-in-intune-using-scep"></a>Adicionar autoridades de certificação parceiras no Intune com o SCEP
 
@@ -57,7 +57,8 @@ As etapas a seguir fornecem uma visão geral do uso do SCEP para certificados no
 
 O seguinte diagrama mostra um fluxo detalhado da integração do SCEP de terceiros com o Intune:
 
-![Como é que o SCEP da autoridade de certificação de terceiros se integra com o Microsoft Intune](./media/certificate-authority-add-scep-overview/scep-certificate-vendor-integration.png)
+> [!div class="mx-imgBorder"]
+> ![como a autoridade de certificação SCEP de terceiros se integra com Microsoft Intune](./media/certificate-authority-add-scep-overview/scep-certificate-vendor-integration.png)
 
 ## <a name="set-up-third-party-ca-integration"></a>Configurar a integração de autoridades de certificação de terceiros
 
@@ -73,7 +74,7 @@ Certifique-se de que tem as permissões obrigatórias para registar uma aplicaç
 
 #### <a name="create-an-application-in-azure-active-directory"></a>Criar um aplicativo no Azure Active Directory  
 
-1. Na [portal do Azure](https://portal.azure.com), acesse **Azure Active Directory** **registros do aplicativo** >  e, em seguida, selecione **novo registro**.  
+1. Na [portal do Azure](https://portal.azure.com), acesse **Azure Active Directory** > **registros de aplicativo**e, em seguida, selecione **novo registro**.  
 
 2. Na página **registrar um aplicativo** , especifique os seguintes detalhes:  
    - Na seção **nome** , insira um nome de aplicativo significativo.  
@@ -92,7 +93,7 @@ Certifique-se de que tem as permissões obrigatórias para registar uma aplicaç
 
 7. No painel de navegação do aplicativo, acesse **permissões de API** em **gerenciar**e, em seguida, selecione **Adicionar uma permissão**.  
 
-8. Na página **solicitar permissões de API** , selecione **Intune**e, em seguida, selecione **permissões de aplicativo**. Marque a caixa de seleção **scep_challenge_provider** (validação de desafio SCEP).  
+8. Na página **solicitar permissões de API** , selecione **Intune**e, em seguida, selecione **permissões de aplicativo**. Marque a caixa de seleção para **scep_challenge_provider** (validação de desafio SCEP).  
 
    Selecione **adicionar permissões** para salvar essa configuração.  
 

@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/13/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: enrollment
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6f9c09105ab7286eb315c6bf0f04f1801706bfa8
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: e81b8dc4938ea080018efae97093bb5e70dbcde8
+ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059711"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74548024"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>Configurar uma página de status de registro
  
@@ -64,14 +64,14 @@ Você também pode definir a ordem de prioridade de cada perfil para considerar 
 
 Para ativar a página status do registro, siga as etapas abaixo.
  
-1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **registro de dispositivo** > registro do **Windows** > **página status do registro**.
+1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **dispositivos** > **windows** > **registro do Windows** > **página status do registro**.
 2. No painel **Página de Estado de Inscrição**, selecione **Predefinição** > **Definições**.
 3. Para **Mostrar progresso de instalação de aplicações e perfis**, selecione **Sim**.
 4. Selecione as outras definições que pretende ativar e, em seguida, selecione **Guardar**.
 
 ## <a name="create-enrollment-status-page-profile-and-assign-to-a-group"></a>Criar perfil de página de status de registro e atribuir a um grupo
 
-1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **registro de dispositivo** > registro do **Windows** > **página status do registro** > **Criar perfil**.
+1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **dispositivos** > **windows** > **registro do Windows** > **página status do registro** > **Criar perfil**.
 2. Forneça um **Nome** e uma **Descrição**.
 3. Selecione **Criar**.
 4. Selecione o novo perfil na lista **Página de Estado de Inscrição**.
@@ -82,7 +82,7 @@ Para ativar a página status do registro, siga as etapas abaixo.
 
 Um usuário pode estar em muitos grupos e ter muitos perfis de página de status de registro. Para lidar com esses conflitos, você pode definir as prioridades para cada perfil. Ao registrar, se alguém tiver mais de um perfil de página de status de registro, somente o perfil de prioridade mais alta será aplicado ao dispositivo registrado.
 
-1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **registro de dispositivo** > registro do **Windows** > **página status do registro**.
+1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **dispositivos** > **windows** > **registro do Windows** > **página status do registro**.
 2. Paire o cursor sobre o perfil na lista.
 3. Utilize os três pontos verticais para arrastar o perfil para a posição pretendida na lista.
 
@@ -90,12 +90,12 @@ Um usuário pode estar em muitos grupos e ter muitos perfis de página de status
 
 Pode especificar que aplicações têm de ser instaladas para o utilizador poder aceder à área de trabalho.
 
-1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **registro de dispositivo** > registro do **Windows** > **página status do registro**.
+1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **dispositivos** > **windows** > **registro do Windows** > **página status do registro**.
 2. Escolha um perfil > **Definições**.
 3. Escolha **Sim** para **Mostrar progresso de instalação de aplicações e perfis**.
 4. Escolha **Sim** para **Bloquear a utilização de dispositivos até que todas as aplicações e perfis sejam instalados**.
 5. Escolha **selecionado** para **bloquear o uso do dispositivo até que esses aplicativos necessários sejam instalados se eles forem atribuídos ao usuário/dispositivo**.
-6. Escolher **selecionar aplicações** > Selecione as aplicações > **selecione** > **guardar**.
+6. Escolha **Selecionar aplicações** > escolha as aplicações > **Selecionar** > **Guardar**.
 
 ## <a name="enrollment-status-page-tracking-information"></a>Informações de rastreamento de página de status de registro
 

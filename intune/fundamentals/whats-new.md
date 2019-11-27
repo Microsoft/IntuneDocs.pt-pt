@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6114d994a9b7944f0020719197b1ed956c3423b8
-ms.sourcegitcommit: 960ffb2214c35d75ad219fa2571a999529a0abd4
-ms.translationtype: HT
+ms.openlocfilehash: 7ad5c26770537ce6a285989f8ca3804277616419
+ms.sourcegitcommit: 16a9109b4028589c17695d41271ca4fee8b1d697
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74478941"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74540777"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 
@@ -82,7 +82,7 @@ O comportamento dessa configuração de política difere ligeiramente da impleme
 Você pode direcionar grupos específicos de usuários que obterão seus [dispositivos MacOS gerenciados pelo JAMF](../protect/conditional-access-integrate-jamf.md). Isso permite aplicar a integração de conformidade do JAMF a um subconjunto de dispositivos macOS enquanto outros dispositivos são gerenciados pelo Intune. Se você já estiver usando a integração do JAMF, todos os usuários serão direcionados para a integração por padrão.
 
 #### <a name="new-exchange-activesync-settings-when-creating-an-email-device-configuration-profile-on-ios-devices---4892824-----"></a>Novas configurações do Exchange ActiveSync ao criar um perfil de configuração de dispositivo de email em dispositivos iOS<!-- 4892824   --> 
-Em dispositivos iOS/iPadOS, você pode configurar a conectividade de email em um perfil de configuração de dispositivo (**configuração do dispositivo** > **perfis** > **Criar perfil** > **Ios/iPadOS** para plataforma > **email** para o tipo de perfil). 
+Em dispositivos iOS/iPadOS, você pode configurar a conectividade de email em um perfil de configuração de dispositivo (**configuração de dispositivo** > **perfis** > **Criar perfil** > **Ios/iPadOS** para plataforma > **email** para tipo de perfil). 
 
 Há novas configurações do Exchange ActiveSync disponíveis, incluindo:
 - **Trocar dados a serem sincronizados**: escolha os serviços do Exchange para sincronizar (ou bloquear a sincronização) para calendário, contatos, lembretes, anotações e email.
@@ -175,8 +175,9 @@ Você pode usar uma ação de dispositivo do Intune para [girar remotamente as c
 #### <a name="updates-to-dedicated-device-enrollment-to-support-scep-device-certificate-deployment----5198878----"></a>Atualizações de registro de dispositivo dedicado para dar suporte à implantação de certificado de dispositivo SCEP <!-- 5198878  -->
 O Intune agora dá suporte à implantação de certificado de dispositivo SCEP em dispositivos Android Enterprise dedicados para acesso baseado em certificado a perfis Wi-Fi. O aplicativo Microsoft Intune deve estar presente no dispositivo para que a implantação funcione. Como resultado, atualizamos a experiência de registro para dispositivos Android Enterprise dedicados. Novos registros ainda iniciam o mesmo (com QR, NFC, Zero-Touch ou identificador de dispositivo), mas agora têm uma etapa que exige que os usuários instalem o aplicativo do Intune. Os dispositivos existentes começarão a fazer com que o aplicativo seja instalado automaticamente em uma base contínua.
 
-#### <a name="intune-support-for-azure-ad-business-to-business-collaboration--5670211----"></a>Suporte do Intune para colaboração entre empresas do Azure AD<!--5670211  -->
-O Intune dá suporte à colaboração B2B (Business-to-Business) do Azure Active Directory (Azure AD). A colaboração B2B do Azure AD permite que você compartilhe com segurança os aplicativos e serviços da sua empresa com usuários convidados de qualquer outra organização, mantendo o controle sobre seus próprios dados corporativos. Essa funcionalidade também fornece recursos de auditoria de usuários convidados B2B. Para obter mais informações, consulte [o que é o acesso de usuário convidado em Azure Active Directory B2B?](https://docs.microsoft.com/azure/active-directory/b2b/what-is-b2b)
+#### <a name="intune-audit-logs-for-business-to-business-collaboration--5670211---"></a>Logs de auditoria do Intune para colaboração entre empresas<!--5670211 -->
+A colaboração B2B (entre empresas) permite que você compartilhe com segurança os aplicativos e serviços de sua empresa com usuários convidados de qualquer outra organização, mantendo o controle sobre seus próprios dados corporativos. O Intune agora dá suporte a logs de auditoria para usuários convidados B2B. Por exemplo, quando os usuários convidados fizerem alterações, o Intune poderá capturar esses dados por meio de logs de auditoria. Para obter mais informações, consulte [o que é o acesso de usuário convidado em Azure Active Directory B2B?](https://docs.microsoft.com/azure/active-directory/b2b/what-is-b2b)
+
 
 <!-- ########################## -->
 ## <a name="week-of-november-11-2019"></a>Semana de 11 de novembro de 2019  
@@ -511,7 +512,7 @@ No momento, depois que o aplicativo de LOB for baixado, uma notificação de **�
 Os aplicativos podem chamar o API do Graph do Intune com operações de leitura e gravação usando a identidade do aplicativo sem credenciais do usuário. Para obter mais informações sobre como acessar a API de Microsoft Graph para o Intune, consulte [trabalhando com o Intune no Microsoft Graph](https://docs.microsoft.com/graph/api/resources/intune-graph-overview?view=graph-rest-1.0).
 
 #### <a name="protected-data-sharing-and-encryption-for-intune-app-sdk-for-ios---3586942----"></a>Compartilhamento e criptografia de dados protegidos para o SDK de aplicativos do Intune para iOS<!-- 3586942  -->
-Quando a encriptação está ativada por políticas de proteção de aplicações, o SDK da aplicação Intune para iOS utilizará as chaves de encriptação de 256 bits. Todos os aplicativos precisarão ter uma versão 8.1.1 do SDK para permitir o compartilhamento de dados protegidos.
+O SDK de aplicativo do Intune para iOS usará chaves de criptografia de 256 bits quando a criptografia for habilitada pelas políticas de proteção de aplicativo. Todos os aplicativos precisarão ter uma versão 8.1.1 do SDK para permitir o compartilhamento de dados protegidos.
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="device-configuration"></a>Configuração do dispositivo
@@ -1190,16 +1191,16 @@ Para torná-lo mais intuitivo, o nome do atributo **NúmeroDoPedido** em disposi
 ### <a name="app-management"></a>Gestão de aplicações
 
 #### <a name="intune-policies-update-authentication-method-and-company-portal-app-installation---1927359----"></a>As políticas do Intune atualizam o método de autenticação e Portal da Empresa instalação do aplicativo<!-- 1927359  -->
-Em dispositivos já registrados por meio do assistente de configuração por meio de um dos métodos de registro de dispositivo corporativo da Apple, o Intune não dará mais suporte ao Portal da Empresa quando ele é instalado manualmente pelos usuários finais da loja de aplicativos. Esta alteração é relevante apenas quando se autenticar com o Assistente de configuração da Apple durante a inscrição. Esta alteração afeta também apenas dispositivos iOS inscritos através de:  
-* Do Apple configurator
+Em dispositivos já registrados por meio do assistente de configuração por meio de um dos métodos de registro de dispositivo corporativo da Apple, o Intune não dará mais suporte ao Portal da Empresa quando ele é instalado manualmente pelos usuários finais da loja de aplicativos. Essa alteração só é relevante quando você se autentica com o assistente de configuração da Apple durante o registro. Essa alteração também afeta apenas os dispositivos iOS registrados por meio de:  
+* Configurador da Apple
 
 * Gerente de negócios da Apple
 
 * Gestor Escolar da Apple
 
-* Programa de inscrição de dispositivos Apple (DEP)
+* Apple Programa de registro de dispositivos (DEP)
 
-Se os utilizadores instalarem a aplicação Portal da empresa a partir da App store e, em seguida, tentar inscrever estes dispositivos através do mesmo, receberá um erro. Esses dispositivos deverão usar apenas o Portal da Empresa quando ele for enviado por push, automaticamente, pelo Intune durante o registro. Perfis de inscrição no Intune no portal do Azure serão atualizados para que pode especificar a forma como os dispositivos serão autenticados e se eles recebem a aplicação Portal da empresa. Se pretender que os utilizadores de dispositivos do DEP para o portal da empresa, terá de especificar as suas preferências num perfil de inscrição. 
+Se os usuários instalarem o aplicativo Portal da Empresa da App Store e tentarem registrar esses dispositivos por meio dele, eles receberão um erro. Esses dispositivos deverão usar apenas o Portal da Empresa quando ele for enviado por push, automaticamente, pelo Intune durante o registro. Os perfis de registro no Intune no portal do Azure serão atualizados para que você possa especificar como os dispositivos são autenticados e se eles receberão o aplicativo Portal da Empresa. Se você quiser que os usuários do dispositivo DEP tenham o Portal da Empresa, será necessário especificar suas preferências em um perfil de registro. 
 
 Além disso, a tela **identificar seu dispositivo** no portal da empresa do IOS está sendo removida. Portanto, os administradores que desejam habilitar o acesso condicional ou implantar aplicativos da empresa devem atualizar o perfil de registro do DEP. Esse requisito só se aplicará se o registro de DEP for autenticado com o assistente de configuração. Nesse caso, você deve enviar o Portal da Empresa para o dispositivo. Para fazer isso, escolha **Intune** > **registro de dispositivo** > **registro da Apple** > **tokens do programa de registro** > escolha um token > **perfis** > escolha um perfil > **Propriedades** > defina **instalar portal da empresa** como **Sim**.
 

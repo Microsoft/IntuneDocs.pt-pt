@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 796439581ca0ae91e788a91ab0bc2ef8f6019626
-ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
-ms.translationtype: HT
+ms.openlocfilehash: 04b284a62076122cec70b6b455151a0377470521
+ms.sourcegitcommit: 16a9109b4028589c17695d41271ca4fee8b1d697
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199349"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74540726"
 ---
 # <a name="in-development-for-microsoft-intune---december-2019"></a>Em desenvolvimento para Microsoft Intune-dezembro de 2019
 
@@ -146,7 +146,7 @@ Aplica-se a:
 - Windows 10 e posterior
 
 ### <a name="new-exchangeactivesync-settings-when-creating-an-email-device-configuration-profile-on-ios-devices---4892824----"></a>Novas configurações de ExchangeActiveSync ao criar um perfil de configuração de dispositivo de email em dispositivos iOS<!-- 4892824  --> 
-Em dispositivos iOS/iPadOS, você pode configurar a conectividade de email em um perfil de configuração de dispositivo (**configuração do dispositivo** > **perfis** > **Criar perfil** > **Ios/iPadOS** para plataforma > **email** para o tipo de perfil). 
+Em dispositivos iOS/iPadOS, você pode configurar a conectividade de email em um perfil de configuração de dispositivo (**configuração de dispositivo** > **perfis** > **Criar perfil** > **Ios/iPadOS** para plataforma > **email** para tipo de perfil). 
 
 Haverá novas configurações de ExchangeActiveSync disponíveis, incluindo:
 - Escolha os serviços a serem sincronizados (ou bloqueie a sincronização), como email, calendário e contatos.
@@ -159,7 +159,7 @@ Aplica-se a:
 - iPadOS 13,0 e mais recente
 
 ### <a name="prevent-users-from-adding-personal-google-accounts-to-android-enterprise-device-owner-and-dedicated-devices---5353228----"></a>Impedir que os usuários adicionem contas pessoais do Google ao proprietário do dispositivo Android Enterprise e dispositivos dedicados<!-- 5353228  -->
-Você poderá impedir que os usuários criem contas pessoais do Google no proprietário do dispositivo Android Enterprise e dispositivos dedicados (**configuração do dispositivo** > **perfis** > **Criar perfil** > **Android Enterprise** para plataforma > **proprietário do dispositivo apenas > restrições de dispositivo** para o tipo de perfil > configurações de **contas e usuários**).
+Você poderá impedir que os usuários criem contas pessoais do Google no proprietário do dispositivo Android Enterprise e dispositivos dedicados (**configuração do dispositivo** **perfis** de >  > **Criar perfil** > **Android Enterprise** para a plataforma > **proprietário do dispositivo, somente > restrições de dispositivo** para o tipo de perfil > configurações de **contas e usuários**).
 
 Para ver as configurações atuais que você pode definir, vá para [configurações de dispositivo do Android Enterprise para permitir ou restringir recursos usando o Intune](../configuration/device-restrictions-android-for-work.md).
 
@@ -168,7 +168,7 @@ Aplica-se a:
 - Dispositivos Android Enterprise dedicados
 
 ### <a name="server-side-logging-for-siri-commands-setting-is-removed-in-ios-device-restrictions-profile---5468501----"></a>O log do lado do servidor para a configuração de comandos Siri é removido no perfil de restrições de dispositivo iOS<!-- 5468501  -->
-Em dispositivos iOS, você pode criar um perfil de restrições de dispositivo que configura o log do lado do servidor para comandos Siri (**configuração do dispositivo** > **perfis** > **Criar perfil** > **Ios/iPadOS** para plataforma > **restrições de dispositivo** para o tipo de perfil > **aplicativos internos**). A configuração **log do lado do servidor para comandos Siri** será removida.
+Em dispositivos iOS, você pode criar um perfil de restrições de dispositivo que configura o log do lado do servidor para comandos Siri (**configuração do dispositivo** **perfis** de >  > **Criar perfil** > **Ios/iPadOS** para plataforma > **Restrições de dispositivo** para o tipo de perfil > **aplicativos internos**). A configuração **log do lado do servidor para comandos Siri** será removida.
 
 Essa configuração será removida do console de administração do Intune. Essa configuração não tem nenhum efeito no dispositivo, embora as políticas existentes que tenham essa configuração configurada continuem a mostrar a configuração. Se você quiser remover a configuração de políticas existentes, vá para a política, faça uma pequena edição, salve-a e a política será atualizada.
 
@@ -181,34 +181,12 @@ Aplica-se a:
 <!--## Device enrollment-->
 
 <!-- ***********************************************-->
-## <a name="device-management"></a>Gestão de dispositivos
+<!--## Device management-->
 
-
-
-### <a name="edit-device-name-value-for-autopilot-devices---2640074----"></a>Editar o valor do nome do dispositivo para dispositivos de piloto automático<!-- 2640074  -->
-Você poderá editar o valor do nome do dispositivo para dispositivos de piloto automático ingressados no Azure AD. Para fazer isso, acesse **Intune** > **registro de dispositivo** > **registro do Windows** > **dispositivos** **Windows AutoPilot** > > escolha o dispositivo > Altere o valor **nome do dispositivo** no painel direito > **salvar**.
-
-### <a name="edit-the-group-tag-value-for-autopilot-devices---4816775---"></a>Editar o valor da marca do grupo para dispositivos de piloto automático<!-- 4816775 -->
-Você poderá editar o valor da **marca do grupo** para dispositivos de piloto automático:
-
-1. Selecione **Intune** > **registro de dispositivo** > **registro do Windows** > **dispositivos** **Windows AutoPilot** > .
-1. Escolha o dispositivo.
-1. No painel à direita, altere o valor da **marca de grupo** .
-1. Selecione **Guardar**.
-
-### <a name="target-macos-user-groups-to-require-jamf-management---4061739---"></a>Direcione os grupos de usuários do macOS para exigir o gerenciamento de JAMF<!-- 4061739 -->
-Você poderá direcionar grupos específicos de usuários para exigir que seus dispositivos macOS sejam gerenciados pelo JAMF. Esse direcionamento permitirá que você aplique a integração de conformidade do JAMF a um subconjunto de dispositivos macOS enquanto outros dispositivos continuam a ser gerenciados pelo Intune. O direcionamento também permitirá que você migre gradualmente os dispositivos dos usuários de um sistema de MDM (gerenciamento de dispositivo móvel) para o outro.
 
 <!-- ***********************************************-->
-## <a name="intune-apps"></a>Aplicações do Intune
-
-### <a name="improved-macos-enrollment-experience-in-company-portal---5074349----"></a>Experiência aprimorada de registro do macOS no Portal da Empresa<!-- 5074349  -->
-O Portal da Empresa para a experiência de registro do macOS terá um processo de registro mais simples que se alinhará mais com o Portal da Empresa da experiência de registro do iOS. Os usuários do dispositivo verão:  
-
-* Uma interface do usuário mais elegante.  
-* Uma lista de verificação de registro aprimorada.  
-* Instruções mais claras sobre como registrar seus dispositivos.  
-* Opções de solução de problemas aprimoradas.  
+<!--## Intune apps-->
+ 
 
 <!-- ***********************************************-->
 ## <a name="monitoring-and-troubleshooting"></a>Monitoramento e solução de problemas
@@ -217,10 +195,8 @@ O Portal da Empresa para a experiência de registro do macOS terá um processo d
 Uma nova experiência de log de auditoria centralizada coletará logs de auditoria para todas as categorias em uma única página. You'l ser capaz de filtrar os logs para obter os dados que você está procurando. Para ver os logs de auditoria, acesse **Administração de locatários** > **logs de auditoria**. Para obter mais informações, consulte [alteração futura para logs de auditoria no Intune](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Upcoming-change-to-Audit-logs-in-Intune/ba-p/1015858).
 
 <!-- ***********************************************-->
-## <a name="role-based-access-control"></a>Controlo de acesso baseado em funções
+<!--## Role-based access control-->
 
-### <a name="duplicate-custom-or-built-in-roles---1081938---"></a>Duplicar funções personalizadas ou internas<!-- 1081938 -->
-Você poderá copiar funções internas e personalizadas. Para fazer isso, acesse **Intune** > **funções** > **todas as funções** > escolha uma função na lista > **duplicada**. Certifique-se de inserir um novo nome que seja exclusivo.
 
 <!-- ***********************************************-->
 
