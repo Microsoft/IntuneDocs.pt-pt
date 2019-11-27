@@ -33,7 +33,7 @@ A carga de trabalho **Dispositivos** dá-lhe informações aprofundadas sobre os
 
 ## <a name="get-to-your-devices"></a>Aceder aos seus dispositivos
 
-1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 3. Selecione **Dispositivos**. Esta vista mostra informações detalhadas sobre os dispositivos dos utilizadores e o que pode fazer com as mesmas, incluindo:
 
    - **Descrição geral:** mostra um instantâneo visual dos dispositivos inscritos e também mostra quantos dispositivos estão a utilizar as diferentes plataformas, incluindo Android, iOS e mais.
@@ -41,7 +41,7 @@ A carga de trabalho **Dispositivos** dá-lhe informações aprofundadas sobre os
 
      Utilize a funcionalidade **Exportar** para criar uma lista .csv de todos os dispositivos, em incrementos de 10 000 (Internet Explorer) ou 30 000 (Microsoft Edge, Chrome).
 
-     Select any device to [view additional details about that device](device-inventory.md), including hardware details, installed apps, its compliance policy status, and more.
+     Selecione qualquer dispositivo para [Exibir detalhes adicionais sobre esse dispositivo](device-inventory.md), incluindo detalhes de hardware, aplicativos instalados, seu status de política de conformidade e muito mais.
 
    - **Dispositivos do Azure AD:** mostra uma lista dos dispositivos registados ou associados ao Azure Active Directory (Azure AD). Saiba mais sobre a [gestão de dispositivos do Azure AD](https://docs.microsoft.com/azure/active-directory/device-management-introduction).
    - **Ações do dispositivo:** inclui um histórico das ações remotas realizadas nos diferentes dispositivos, incluindo a ação, o respetivo estado, quem a iniciou e quando.
@@ -69,10 +69,10 @@ As ações disponíveis dependem da plataforma do dispositivo e da configuraçã
   - [Reposição do PIN do Windows 10](device-windows-pin-reset.md)
   - [Controlo remoto do Android](teamviewer-support.md)
   - [Sincronizar o dispositivo](device-sync.md)
-  - [Send custom notification](custom-notifications.md#send-a-custom-notification-to-a-single-device) (Android, iOS)
-  - [BitLocker key rotation](../protect/encrypt-devices.md#rotate-bitlocker-recovery-keys) (Windows only)
+  - [Enviar notificação personalizada](custom-notifications.md#send-a-custom-notification-to-a-single-device) (Android, Ios)
+  - [Rotação de chaves do BitLocker](../protect/encrypt-devices.md#rotate-bitlocker-recovery-keys) (somente Windows)
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 - Em **Todos os dispositivos**, selecione um dispositivo para ver mais detalhes sobre esse dispositivo específico.
 - Selecione **Ações do dispositivo** para ver o estado das ações efetuadas nos dispositivos que gere.

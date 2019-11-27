@@ -1,7 +1,7 @@
 ---
-title: Use Update Compliance reports for Windows Updates in Microsoft Intune
+title: Usar Conformidade de Atualizações relatórios para atualizações do Windows no Microsoft Intune
 titleSuffix: Microsoft Intune
-description: Use OMS Update Compliance to view report data for Windows Updates you deploy with Intune.
+description: Use o OMS Conformidade de Atualizações para exibir dados de relatório para atualizações do Windows implantadas com o Intune.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -23,49 +23,49 @@ ms.contentlocale: pt-PT
 ms.lasthandoff: 11/25/2019
 ms.locfileid: "74465719"
 ---
-# <a name="intune-compliance-reports-for-updates"></a>Intune compliance reports for updates
+# <a name="intune-compliance-reports-for-updates"></a>Relatórios de conformidade do Intune para atualizações
 
-When you use Intune to deploy Windows update to Windows 10 devices, view details about update compliance by using Intune or a free solution called *Update Compliance*, which is part of the Microsoft Operations Management Suite (OMS).
+Quando você usa o Intune para implantar o Windows Update em dispositivos Windows 10, veja detalhes sobre a conformidade da atualização usando o Intune ou uma solução gratuita chamada *conformidade de atualizações*, que faz parte do Microsoft Operations Management Suite (OMS).
 
-## <a name="use-intune"></a>Use Intune
+## <a name="use-intune"></a>Usar o Intune
 
-To review a policy report on the deployment status for the Windows 10 update rings that you have configured:
+Para examinar um relatório de política sobre o status de implantação para os anéis de atualização do Windows 10 que você configurou:
 
-1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-2. Select **Devices** > **Overview** > **Software update status**. Poderá ver informações gerais sobre o estado de qualquer cadência de atualizações que tenha atribuído.
+2. Selecione **dispositivos** > **visão geral** > **status de atualização de software**. Poderá ver informações gerais sobre o estado de qualquer cadência de atualizações que tenha atribuído.
 
-3. To view additional details, select **Monitor**. Then below **Software updates**, select **Per update ring deployment state** and choose the deployment ring to review.
+3. Para exibir detalhes adicionais, selecione **Monitor**. Em seguida, abaixo **das atualizações de software**, selecione **por estado de implantação de anel de atualização** e escolha o anel de implantação a ser revisado.
 
    Na secção **Monitorizar**, selecione um dos seguintes relatórios para ver informações mais detalhadas sobre a cadência de atualização:
 
-   - **Device status**- This will show the device configuration status, for details see [Update deviceConfigurationDeviceStatus]( https://docs.microsoft.com/graph/api/intune-deviceconfig-deviceconfigurationdevicestatus-update?view=graph-rest-1.0).
+   - **Status do dispositivo**-isso mostrará o status de configuração do dispositivo, para obter detalhes, consulte [Atualizar deviceConfigurationDeviceStatus]( https://docs.microsoft.com/graph/api/intune-deviceconfig-deviceconfigurationdevicestatus-update?view=graph-rest-1.0).
 
-   - **User status**- This will show the user name, status, and last report date, for details see [List deviceConfigurationUserStatuses](https://docs.microsoft.com/graph/api/intune-deviceconfig-deviceconfigurationuserstatus-list?view=graph-rest-1.0).
+   - **Status do usuário**– isso mostrará o nome de usuário, o status e a data do último relatório, para obter detalhes, consulte [list deviceConfigurationUserStatuses](https://docs.microsoft.com/graph/api/intune-deviceconfig-deviceconfigurationuserstatus-list?view=graph-rest-1.0).
 
-   - **End user update status**- This will show the Windows device update state, for details see [windowsUpdateState](https://docs.microsoft.com/graph/api/resources/intune-shared-windowsupdatestate?view=graph-rest-beta).
+   - **Status de atualização do usuário final**– isso mostrará o estado de atualização do dispositivo Windows, para obter detalhes, consulte [windowsUpdateState](https://docs.microsoft.com/graph/api/resources/intune-shared-windowsupdatestate?view=graph-rest-beta).
 
-## <a name="use-update-compliance"></a>Use Update Compliance
+## <a name="use-update-compliance"></a>Usar Conformidade de Atualizações
 
-You can monitor Windows 10 update rollouts by using [Update Compliance](https://technet.microsoft.com/itpro/windows/manage/update-compliance-monitor), a Windows Analytics solution. Update Compliance is offered through the Azure portal and is available free for devices that meet its [prerequisites](https://docs.microsoft.com/windows/deployment/update/update-compliance-get-started#update-compliance-prerequisites).  
+Você pode monitorar as distribuições de atualização do Windows 10 usando [conformidade de atualizações](https://technet.microsoft.com/itpro/windows/manage/update-compliance-monitor), uma solução de análise do Windows. O Conformidade de Atualizações é oferecido por meio do portal do Azure e está disponível gratuitamente para dispositivos que atendem aos seus [pré-requisitos](https://docs.microsoft.com/windows/deployment/update/update-compliance-get-started#update-compliance-prerequisites).  
 
-When you use this solution, you deploy a commercial ID to any of your Intune managed Windows 10 devices for which you want to report update compliance.  
+Ao usar essa solução, você implanta uma ID comercial em qualquer um dos dispositivos Windows 10 gerenciados pelo Intune para os quais deseja relatar a conformidade da atualização.  
 
-In Intune, you use the OMA-URI settings of a custom policy to configure the commercial ID. See [Intune policy settings for Windows 10 devices in Microsoft Intune](https://docs.microsoft.com/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune).  
+No Intune, você usa as configurações de OMA-URI de uma política personalizada para configurar a ID comercial. Consulte [configurações de política do Intune para dispositivos Windows 10 no Microsoft Intune](https://docs.microsoft.com/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune).  
 
-The OMA-URI (case sensitive) path for configuring the commercial ID is: *./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID*  
+O caminho OMA-URI (com distinção entre maiúsculas e minúsculas) para configurar a ID comercial é: *./VENDOR/MSFT/DMCLIENT/Provider/MS DM Server/commercialid*  
 
 Por exemplo, pode utilizar os seguintes valores na **Definição Adicionar ou editar OMA-URI**:
 
 - **Nome da Definição**: ID Comercial do Windows Analytics
 - **Descrição da Definição**: configurar o ID comercial para soluções do Windows Analytics
-- **OMA-URI** (case sensitive): *./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID*
+- **OMA-URI** (diferencia maiúsculas de minúsculas): *./Vendor/MSFT/DMClient/Provider/MS DM Server/commercialid*
 - **Tipo de Dados:** cadeia
-- **Value**: \<Use the GUID shown on the Windows Telemetry tab in your OMS workspace>
+- **Valor**: \<use o GUID mostrado na guia telemetria do Windows em seu espaço de trabalho do OMS >
 
 > [!NOTE]
 > Para obter mais informações sobre o servidor de DM MS, veja [Fornecedor de serviço de configuração (CSP) do DMClient]( https://docs.microsoft.com/windows/client-management/mdm/dmclient-csp).
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
-[Manage software updates in Intune](windows-update-for-business-configure.md)
+[Gerenciar atualizações de software no Intune](windows-update-for-business-configure.md)

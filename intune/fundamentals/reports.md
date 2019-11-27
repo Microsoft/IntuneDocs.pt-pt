@@ -1,7 +1,7 @@
 ---
 title: Microsoft Intune reports
 titleSuffix: Microsoft Intune
-description: Intune provides specific report types with focused views that contain consistent and timely data.
+description: O Intune fornece tipos de relatórios específicos com exibições focadas que contêm dados consistentes e oportunos.
 keywords: ''
 author: erikre
 ms.author: erikre
@@ -22,134 +22,134 @@ ms.contentlocale: pt-PT
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74390935"
 ---
-# <a name="intune-reports"></a>Intune reports
-Microsoft Intune reports allows you to more effectively and proactively monitor the health and activity of endpoints across your organization, and also provides other reporting data across Intune. For example, you will be able to see reports about device compliance, device health, and device trends. In addition, you can create custom reports to obtain more specific data. 
+# <a name="intune-reports"></a>Relatórios do Intune
+Microsoft Intune relatórios permite que você monitore de forma mais eficiente e proativa a integridade e a atividade dos pontos de extremidade em sua organização e também fornece outros dados de relatório no Intune. Por exemplo, você poderá ver relatórios sobre a conformidade do dispositivo, integridade do dispositivo e tendências do dispositivo. Além disso, você pode criar relatórios personalizados para obter dados mais específicos. 
 
 > [!NOTE]
-> The Intune reporting changes will roll out gradually over a period of time to help you prepare and adapt to the new structure.
+> As alterações de relatórios do Intune serão distribuídas gradualmente em um período de tempo para ajudá-lo a se preparar e se adaptar à nova estrutura.
 
-The report types are organized into the following focus areas:
-- **Operational** - Provides timely, targeted data that helps you focus and take action. Admins, subject matter experts, and helpdesk will find these reports most helpful.
-- **Organizational** - Provides a broader summary of an overall view, such as device management state. Managers and admins will find these reports most helpful.
-- **Historical** - Provides patterns and trends over a period of time. Managers and admins will find these reports most helpful.
-- **Specialist** - Allows you to use raw data to create your own custom reports. Admins will find these reports most helpful.
+Os tipos de relatório são organizados nas seguintes áreas de foco:
+- **Operacional** – fornece dados direcionados a tempo, que ajudam você a se concentrar e tomar medidas. Administradores, especialistas no assunto e assistência técnica acharão esses relatórios mais úteis.
+- **Organizacional** – fornece um resumo mais amplo de uma exibição geral, como o estado do gerenciamento de dispositivos. Gerentes e administradores acharão esses relatórios mais úteis.
+- **Histórico** -fornece padrões e tendências ao longo de um período de tempo. Gerentes e administradores acharão esses relatórios mais úteis.
+- **Especialista** – permite que você use dados brutos para criar seus próprios relatórios personalizados. Os administradores encontrarão esses relatórios mais úteis.
 
-The reporting framework provides a consistent and more comprehensive reporting experience. The available reports provide the following functionality:
-- **Search and sort** – You can search and sort across every column, no matter how large the dataset.
-- **Data paging** – You can scan your data based on paging, either page-by-page or by jumping to a specific page.
-- **Performance** - You can quickly generate and view reports created from large tenants.
-- **Export** – You can quickly export reporting data generated from large tenants.
+A estrutura de relatórios fornece uma experiência de relatório consistente e mais abrangente. Os relatórios disponíveis fornecem a seguinte funcionalidade:
+- **Pesquisar e classificar** – você pode pesquisar e classificar em todas as colunas, independentemente do tamanho do conjunto de um.
+- **Paginação de dados** – você pode digitalizar seus dados com base na paginação, seja página por página ou saltando para uma página específica.
+- **Desempenho** -você pode gerar e exibir rapidamente relatórios criados a partir de locatários grandes.
+- **Exportar** – você pode exportar rapidamente os dados de relatório gerados de locatários grandes.
 
 ### <a name="who-can-access-the-data"></a>Quem pode aceder aos dados?
 
-Users with the following permissions can review logs:
+Os usuários com as seguintes permissões podem examinar os logs:
 
 - Administrador Global
 - Administrador de Serviços do Intune
-- Administrators assigned to an Intune role with **Read** permissions
+- Administradores atribuídos a uma função do Intune com permissões de **leitura**
 
-## <a name="non-compliant-devices-report-operational"></a>Non-compliant devices report (Operational)
-The Non-compliant devices report surfaces data typically used by Helpdesk or admin roles to identify problems and help remediate issues. The data found in these reports is timely, calls out unexpected behavior, and is meant to be actionable. The report is available alongside the workload, making the non-compliant devices report accessible without browsing away from active workflows. This report provides filtering, searching, paging, and sorting capabilities. Also, you can drill down to help troubleshoot.
+## <a name="non-compliant-devices-report-operational"></a>Relatório de dispositivos não compatíveis (operacional)
+Os dispositivos sem conformidade relatam as superfícies de dados normalmente usadas por funções de assistência técnica ou de administrador para identificar problemas e ajudar a corrigir problemas. Os dados encontrados nesses relatórios são oportunos, chamam comportamento inesperado e devem ser acionáveis. O relatório está disponível junto com a carga de trabalho, tornando o relatório de dispositivos sem conformidade acessível sem sair dos fluxos de trabalho ativos. Este relatório fornece recursos de filtragem, pesquisa, paginação e classificação. Além disso, você pode fazer uma busca detalhada para ajudar a solucionar problemas.
 
-You can view the **Noncompliant devices** report using the following steps:
+Você pode exibir o relatório de **dispositivos não compatíveis** usando as seguintes etapas:
 
-1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Select **Device compliance** > **Noncompliant devices**.
+1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+2. Selecione **conformidade do dispositivo** > **dispositivos não compatíveis**.
 
-    ![Noncompliant device report](./media/intune-reports/intune-reports-02.png)
+    ![Relatório de dispositivo não compatível](./media/intune-reports/intune-reports-02.png)
 
-## <a name="device-compliance-report-organizational"></a>Device compliance report (Organizational)
-Device compliance reports are meant to be broad in nature and provide a more traditional reporting view of data to identify aggregated metrics. This report is designed to work with large datasets to get a full device compliance picture. For example, the device compliance report for device compliance shows all the compliance states for devices to give a broader view of the data, no matter how large the dataset. This report shows the full breakdown of records in addition to a convenient visualization of aggregated metrics. This report can be generated by applying filters on it and selecting the “Generate report” button. This will refresh the data to show the latest state with the ability to view the individual records that make up the aggregate data. Like most reports in the new framework, these records can be sorted and searched upon to focus on the information you need. 
+## <a name="device-compliance-report-organizational"></a>Relatório de conformidade do dispositivo (organizacional)
+Os relatórios de conformidade do dispositivo devem ser amplos por natureza e fornecer uma exibição de relatório mais tradicional de dados para identificar métricas agregadas. Este relatório foi projetado para funcionar com grandes conjuntos de altos para obter uma imagem completa de conformidade do dispositivo. Por exemplo, o relatório de conformidade do dispositivo para conformidade do dispositivo mostra todos os Estados de conformidade para que os dispositivos forneçam uma visão mais ampla dos dados, independentemente do tamanho do DataSet. Este relatório mostra a divisão completa de registros, além de uma visualização prática de métricas agregadas. Esse relatório pode ser gerado aplicando-se filtros e selecionando o botão "gerar relatório". Isso atualizará os dados para mostrar o estado mais recente com a capacidade de exibir os registros individuais que compõem os dados agregados. Como a maioria dos relatórios na nova estrutura, esses registros podem ser classificados e pesquisados para se concentrar nas informações de que você precisa. 
 
-To see a generated report of device state, you can use the following steps:
-1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Select **Reports** to view the reports summary.
+Para ver um relatório gerado de estado do dispositivo, você pode usar as seguintes etapas:
+1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+2. Selecione **relatórios** para exibir o resumo dos relatórios.
 3. Selecione **Conformidade do dispositivo**.
-4. Select the **Compliance status**, **OS**, and **Ownership** filters to refine your report.
-5. Click **Generate report** (or **Generate again**) to retrieve current data.
+4. Selecione os filtros **status de conformidade**, **so**e **Propriedade** para refinar o relatório.
+5. Clique em **gerar relatório** (ou **gerar novamente**) para recuperar os dados atuais.
 
-    ![Device compliance report](./media/intune-reports/intune-reports-02a.png)
+    ![Relatório de conformidade do dispositivo](./media/intune-reports/intune-reports-02a.png)
 
     > [!NOTE]
-    > This **Device compliance** report provides a time stamp of when the report was last generated. 
+    > Este relatório de **conformidade do dispositivo** fornece um carimbo de data/hora de quando o relatório foi gerado pela última vez. 
 
-For related information, see [Enforce compliance for Microsoft Defender ATP with Conditional Access in Intune](~/protect/advanced-threat-protection.md).
+Para obter informações relacionadas, consulte [impor a conformidade para o Microsoft defender ATP com acesso condicional no Intune](~/protect/advanced-threat-protection.md).
 
-## <a name="reports-summary"></a>Reports summary 
+## <a name="reports-summary"></a>Resumo de relatórios 
 
-The device compliance report is available as the summary report in the **Reports** workload. Use the following steps to view the device compliance report:
+O relatório de conformidade do dispositivo está disponível como o relatório de resumo na carga de trabalho **relatórios** . Use as etapas a seguir para exibir o relatório de conformidade do dispositivo:
 
-1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Select **Reports** to view the reports summary.
+1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+2. Selecione **relatórios** para exibir o resumo dos relatórios.
 
-    ![Intune Reports summary](./media/intune-reports/intune-reports-01.png)
+    ![Resumo de relatórios do Intune](./media/intune-reports/intune-reports-01.png)
 
-## <a name="device-compliance-trend-report-historical"></a>Device compliance trend report (Historical)
-Device compliance trend reports are more likely to be used by admins and architects to identify long term trends for device compliance. The aggregated data is displayed over a period of time, and is useful for making future investment decisions, driving process improvements, or prompting investigation into any anomalies. Filters can also be applied to see specific trends. The data provided by this report is a snapshot of the current tenant state (near real-time). 
+## <a name="device-compliance-trend-report-historical"></a>Relatório de tendências de conformidade do dispositivo (histórico)
+Os relatórios de tendência de conformidade do dispositivo têm maior probabilidade de serem usados por administradores e arquitetos para identificar tendências de longo prazo para a conformidade do dispositivo. Os dados agregados são exibidos durante um período de tempo e são úteis para tomar decisões futuras de investimento, conduzir melhorias de processo ou solicitar investigação em qualquer anomalia. Os filtros também podem ser aplicados para ver tendências específicas. Os dados fornecidos por esse relatório são um instantâneo do estado atual do locatário (quase em tempo real). 
 
-A device compliance trend report for device compliance trends can show the trend of device compliance states over a period of time. You can identify where compliance peaks occurred and focus your time and effort accordingly.
+Um relatório de tendência de conformidade do dispositivo para as tendências de conformidade do dispositivo pode mostrar a tendência de Estados de conformidade do dispositivo durante um período de tempo. Você pode identificar onde os picos de conformidade ocorreram e concentrar seu tempo e esforço de acordo.
 
-You can view the **Trends** report using the following steps:
+Você pode exibir o relatório de **tendências** usando as seguintes etapas:
 
-1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Select **Reports** > **Trends** to view device compliance over a 60 day trend.
+1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+2. Selecione **relatórios** > **tendências** para exibir a conformidade do dispositivo em uma tendência de 60 dias.
 
-    ![Intune trend report](./media/intune-reports/intune-reports-03.png)
+    ![Relatório de tendências do Intune](./media/intune-reports/intune-reports-03.png)
 
-## <a name="azure-monitor-integration-reports-specialist"></a>Azure Monitor integration reports (Specialist)
-You can customize your own reports to get the data you want. The data in your reports will optionally be available via [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) using [Log Analytics](reports.md#log-analytics) and [Azure Monitor workbooks](reports.md#workbooks). These solutions allow you to create custom queries, configure alerts, and make dashboards to show the device compliance data in the manner you want. Additionally, you can retain the activity logs in your Azure storage account, integrate with the reports using [security information and event management (SIEM) tools](https://docs.microsoft.com/microsoft-365/security/office-365-security/siem-server-integration), and correlate the reports to Azure AD activity logs. Azure Monitor workbooks can be used in addition to importing dashboards for custom reporting needs.
+## <a name="azure-monitor-integration-reports-specialist"></a>Relatórios de integração do Azure Monitor (especialista)
+Você pode personalizar seus próprios relatórios para obter os dados desejados. Os dados em seus relatórios estarão, opcionalmente, disponíveis por meio de [Azure monitor](https://docs.microsoft.com/azure/azure-monitor/overview) usando [log Analytics](reports.md#log-analytics) e [Azure monitor pastas de trabalho](reports.md#workbooks). Essas soluções permitem que você crie consultas personalizadas, configure alertas e faça com que os painéis mostrem os dados de conformidade do dispositivo da maneira desejada. Além disso, você pode manter os logs de atividade em sua conta de armazenamento do Azure, integrá-los aos relatórios usando [as ferramentas Siem (gerenciamento de eventos e informações de segurança)](https://docs.microsoft.com/microsoft-365/security/office-365-security/siem-server-integration)e correlacionar os relatórios aos logs de atividade do Azure AD. Azure Monitor pastas de trabalho podem ser usadas, além de importar painéis para necessidades de relatórios personalizados.
 
 > [!NOTE]
-> Complex reporting functionality require an Azure subscription.
+> A funcionalidade de relatório complexa requer uma assinatura do Azure.
 
-An example specialist report would corelate device ownership data with platform enrollment data in a custom report. Then, this custom report could be displayed on an existing dashboard in the Azure Active Directory portal.
+Um relatório de especialista de exemplo corelacionaria dados de propriedade de dispositivo com dados de registro de plataforma em um relatório personalizado. Em seguida, esse relatório personalizado pode ser exibido em um painel existente no portal de Azure Active Directory.
 
-You can create and view custom reports using the following steps:
+Você pode criar e exibir relatórios personalizados usando as seguintes etapas:
 
-1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Select **Reports** > **Diagnostic settings** add a [diagnostic setting](reports.md#diagnostic-settings).
+1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+2. Selecione **relatórios** > **configurações de diagnóstico** adicionar uma [configuração de diagnóstico](reports.md#diagnostic-settings).
 
-    ![Intune Reports summary](./media/intune-reports/intune-reports-04.png)
+    ![Resumo de relatórios do Intune](./media/intune-reports/intune-reports-04.png)
 
-3. Click **Add diagnostic setting** to display the **Diagnostic settings** pane. 
-4. Add a **Name** for the diagnostic settings. 
-5. Select the **Send to Log Analytics** and **DeviceComplianceOrg** settings.
+3. Clique em **Adicionar configuração de diagnóstico** para exibir o painel **configurações de diagnóstico** . 
+4. Adicione um **nome** para as configurações de diagnóstico. 
+5. Selecione as configurações **Enviar para log Analytics** e **DeviceComplianceOrg** .
 
-    ![Intune Reports summary](./media/intune-reports/intune-reports-04a.png)
+    ![Resumo de relatórios do Intune](./media/intune-reports/intune-reports-04a.png)
 
 6. Clique em **Guardar**.
-7. Next, select **Log analytics** to create and run a new log query using [Log Analytics](reports.md#log-analytics).
+7. Em seguida, selecione **log Analytics** para criar e executar uma nova consulta de log usando [log Analytics](reports.md#log-analytics).
 
-   ![Log Analytics - Log query](./media/intune-reports/intune-reports-05.png)
+   ![Consulta de Log Analytics log](./media/intune-reports/intune-reports-05.png)
 
-8. Select **Workbooks** to create or open an interactive report using [Azure Monitor workbooks](reports.md#workbooks).
+8. Selecione **pastas de trabalho** para criar ou abrir um relatório interativo usando [pastas de trabalho Azure monitor](reports.md#workbooks).
 
-   ![Workbooks - Interactive reports](./media/intune-reports/intune-reports-07.png)
+   ![Pastas de trabalho-relatórios interativos](./media/intune-reports/intune-reports-07.png)
 
-### <a name="diagnostic-settings"></a>Diagnostic settings
-Each Azure resource requires its own diagnostic setting. The diagnostic setting defines the following for a resource:
+### <a name="diagnostic-settings"></a>Definições de diagnóstico
+Cada recurso do Azure requer sua própria configuração de diagnóstico. A configuração de diagnóstico define o seguinte para um recurso:
 
-- Categories of logs and metric data sent to the destinations defined in the setting. The available categories will vary for different resource types.
-- One or more destinations to send the logs. Current destinations include Log Analytics workspace, Event Hubs, and Azure Storage.
-- Retention policy for data stored in Azure Storage.
+- Categorias de logs e dados de métrica enviados aos destinos definidos na configuração. As categorias disponíveis irão variar para diferentes tipos de recursos.
+- Um ou mais destinos para enviar os logs. Os destinos atuais incluem Log Analytics espaço de trabalho, hubs de eventos e armazenamento do Azure.
+- Política de retenção para dados armazenados no armazenamento do Azure.
 
-A single diagnostic setting can define one of each of the destinations. If you want to send data to more than one of a particular destination type (for example, two different Log Analytics workspaces), then create multiple settings. Each resource can have up to 5 diagnostic settings.
+Uma única configuração de diagnóstico pode definir um de cada um dos destinos. Se você quiser enviar dados para mais de um tipo de destino específico (por exemplo, dois espaços de trabalho de Log Analytics diferentes), crie várias configurações. Cada recurso pode ter até 5 configurações de diagnóstico.
 
-For more information, about diagnostic settings, see [Create diagnostic setting to collect platform logs and metrics in Azure](https://docs.microsoft.com/azure/azure-monitor/platform/diagnostic-settings).
+Para obter mais informações, sobre configurações de diagnóstico, consulte [criar configuração de diagnóstico para coletar logs e métricas de plataforma no Azure](https://docs.microsoft.com/azure/azure-monitor/platform/diagnostic-settings).
 
 ### <a name="log-analytics"></a>Log Analytics
-Log Analytics is the primary tool in the Azure portal for writing log queries and interactively analyzing the results of the queries. Even if a log query is used elsewhere in Azure Monitor, you'll typically write and test the query first using Log Analytics. For details about using Log Analytics and creating log queries, see [Overview of log queries in Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/log-query/log-query-overview). 
+Log Analytics é a principal ferramenta na portal do Azure para escrever consultas de log e analisar interativamente os resultados das consultas. Mesmo que uma consulta de log seja usada em outro lugar na Azure Monitor, você normalmente escreverá e testará a consulta primeiro usando Log Analytics. Para obter detalhes sobre como usar Log Analytics e criar consultas de log, consulte [visão geral das consultas de log no Azure monitor](https://docs.microsoft.com/azure/azure-monitor/log-query/log-query-overview). 
 
-### <a name="workbooks"></a>Workbooks
-Workbooks combine text, Analytics queries, Azure Metrics, and parameters into rich interactive reports. Workbooks are editable by any other team members who have access to the same Azure resources. For more information about workbooks, see [Azure Monitor workbooks](https://docs.microsoft.com/azure/azure-monitor/app/usage-workbooks). Also, you can work with and contribute to workbook templates. For more information, see [Azure Monitor Workbook Templates](https://go.microsoft.com/fwlink/?linkid=867045).
+### <a name="workbooks"></a>Pastas
+As pastas de trabalho combinam texto, consultas de análise, métricas do Azure e parâmetros em relatórios interativos sofisticados. As pastas de trabalho são editáveis por outros membros da equipe que têm acesso aos mesmos recursos do Azure. Para obter mais informações sobre pastas de trabalho, consulte [Azure monitor pastas de trabalho](https://docs.microsoft.com/azure/azure-monitor/app/usage-workbooks). Além disso, você pode trabalhar com os modelos de pasta de trabalho e contribuir com eles. Para obter mais informações, consulte [Azure monitor modelos de pasta de trabalho](https://go.microsoft.com/fwlink/?linkid=867045).
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
-Learn more about the following technologies:
-- [Blog - Microsoft Intune reporting framework](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/New-Reporting-Framework-Coming-to-Intune/ba-p/1009553)
+Saiba mais sobre as seguintes tecnologias:
+- [Estrutura de relatórios de Microsoft Intune de blog](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/New-Reporting-Framework-Coming-to-Intune/ba-p/1009553)
 - [Azure Monitor](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-activity-logs-azure-monitor)
-- [What is Log Analytics?](https://docs.microsoft.com/azure/azure-monitor/log-query/log-query-overview#what-is-log-analytics)
-- [Log queries](https://docs.microsoft.com/azure/azure-monitor/log-query/log-query-overview)
-- [Get started with Log Analytics in Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/log-query/get-started-portal)
-- [Azure Monitor workbooks](https://docs.microsoft.com/azure/azure-monitor/app/usage-workbooks)
-- [Security information and event management (SIEM) tools](https://docs.microsoft.com/microsoft-365/security/office-365-security/siem-server-integration)
+- [O que é Log Analytics?](https://docs.microsoft.com/azure/azure-monitor/log-query/log-query-overview#what-is-log-analytics)
+- [Consultas de log](https://docs.microsoft.com/azure/azure-monitor/log-query/log-query-overview)
+- [Introdução ao Log Analytics no Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/log-query/get-started-portal)
+- [Azure Monitor pastas de trabalho](https://docs.microsoft.com/azure/azure-monitor/app/usage-workbooks)
+- [Ferramentas de SIEM (gerenciamento de informações e eventos de segurança)](https://docs.microsoft.com/microsoft-365/security/office-365-security/siem-server-integration)

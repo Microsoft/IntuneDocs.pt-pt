@@ -1,7 +1,7 @@
 ---
 title: Definições dos dispositivos iOS no Microsoft Intune – Azure | Microsoft Docs
 titleSuffix: ''
-description: Add, configure, or create settings on iOS devices to restrict features, including setting password requirements, control the locked screen, use built-in apps, add restricted or approved apps, handle bluetooth devices, connect to the cloud for backup and storage, enable kiosk mode, add domains, and control how users interact with the Safari web browser in Microsoft Intune.
+description: Adicione, configure ou crie configurações em dispositivos iOS para restringir recursos, incluindo a definição de requisitos de senha, controle a tela bloqueada, use aplicativos internos, adicione aplicativos restritos ou aprovados, manipule dispositivos Bluetooth, conecte-se à nuvem para backup e armazenamento, Habilite o modo de quiosque, adicione domínios e controle como os usuários interagem com o navegador da Web do Safari no Microsoft Intune.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -23,609 +23,609 @@ ms.contentlocale: pt-PT
 ms.lasthandoff: 11/25/2019
 ms.locfileid: "74465649"
 ---
-# <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>iOS and iPadOS device settings to allow or restrict features using Intune
+# <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>configurações do dispositivo iOS e iPadOS para permitir ou restringir recursos usando o Intune
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-This article lists and describes the different settings you can control on iOS and iPadOS devices. Como parte da solução de gestão de dispositivos móveis (MDM), utilize estas definições para permitir ou desativar funcionalidades, definir regras de palavra-passe, permitir ou restringir aplicações específicas e muito mais.
+Este artigo lista e descreve as diferentes configurações que você pode controlar em dispositivos iOS e iPadOS. Como parte da solução de gestão de dispositivos móveis (MDM), utilize estas definições para permitir ou desativar funcionalidades, definir regras de palavra-passe, permitir ou restringir aplicações específicas e muito mais.
 
 Estas definições são adicionadas a um perfil de configuração do dispositivo no Intune e, em seguida, atribuídas ou implementadas nos dispositivos iOS.
 
 > [!TIP]
-> These settings use Apple's MDM settings. For more information on these settings, see [Apple's mobile device management settings](https://support.apple.com/guide/mdm/welcome/web) (opens Apple's web site).
+> Essas configurações usam as configurações de MDM da Apple. Para obter mais informações sobre essas configurações, consulte [configurações de gerenciamento de dispositivo móvel da Apple](https://support.apple.com/guide/mdm/welcome/web) (abre o site da Apple).
 
 ## <a name="before-you-begin"></a>Antes de começar
 
 [Crie um perfil de configuração de restrições do dispositivo](../device-restrictions-configure.md).
 
 > [!NOTE]
-> These settings apply to different enrollment types, with some settings applying to all enrollment options. For more information on the different enrollment types, see [iOS enrollment](../ios-enroll.md).
+> Essas configurações se aplicam a diferentes tipos de registro, com algumas configurações sendo aplicadas a todas as opções de registro. Para obter mais informações sobre os diferentes tipos de registro, consulte [registro do IOS](../ios-enroll.md).
 
 ## <a name="general"></a>Geral
 
-### <a name="settings-apply-to-all-enrollment-types"></a>Settings apply to: All enrollment types
+### <a name="settings-apply-to-all-enrollment-types"></a>As configurações se aplicam a: todos os tipos de registro
 
-- **Share usage data**: Choose **Block** to prevent the device from sending diagnostic and usage data to Apple. **Não configurado** (predefinição) permite que estes dados sejam enviados.
+- **Compartilhar dados de uso**: escolha **Bloquear** para impedir que o dispositivo envie dados de diagnóstico e de uso para a Apple. **Não configurado** (predefinição) permite que estes dados sejam enviados.
 
-- **Screen capture**: Choose **Block** to prevent screenshots or screen captures on the device. In iOS 9.0 and newer, it also blocks screen recordings. **Não configurado** (predefinição) permite ao utilizador capturar o conteúdo do ecrã como uma imagem ou um vídeo.
+- **Captura de tela**: escolha **Bloquear** para impedir capturas de tela ou capturas de telas no dispositivo. No iOS 9,0 e mais recente, ele também bloqueia gravações de tela. **Não configurado** (predefinição) permite ao utilizador capturar o conteúdo do ecrã como uma imagem ou um vídeo.
 
-### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Settings apply to: Device enrollment, Automated device enrollment (supervised)
+### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>As configurações se aplicam a: registro de dispositivo, registro de dispositivo automatizado (supervisionado)
 
-- **Untrusted TLS certificates**: Choose **Block** to prevent untrusted Transport Layer Security (TLS) certificates on the device. **Não configurado** (predefinição) permite os certificados TLS.
-- **Allow over-the-air PKI updates**: **Allow** lets your users  receive software updates without connecting their devices to a computer.
-- **Limit ad tracking**: Choose **Limit** to disable the device advertising identifier. **Não configurado** (predefinição) mantém-no ativado.
+- **Certificados TLS não confiáveis**: escolha **Bloquear** para impedir certificados de TLS (segurança de camada de transporte) não confiáveis no dispositivo. **Não configurado** (predefinição) permite os certificados TLS.
+- **Permitir atualizações de PKI over-the-Air** **: permite que os** usuários recebam atualizações de software sem conectar seus dispositivos a um computador.
+- **Limitar o controle do AD**: escolha o **limite** para desabilitar o identificador de publicidade do dispositivo. **Não configurado** (predefinição) mantém-no ativado.
 
-### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Settings apply to: Automated device enrollment (supervised)
+### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>As configurações se aplicam a: registro de dispositivo automatizado (supervisionado)
 
-- **Diagnostics submission settings modification**: **Block** prevents the user from changing the diagnostic submission and app analytics settings in **Diagnostics and Usage** (device Settings). **Não configurado** (predefinição) permite ao utilizador alterar estas definições do dispositivo.
+- **Modificação das configurações de envio de diagnóstico**: o **bloco** impede que o usuário altere as configurações de envio de diagnóstico e análise de aplicativo em **diagnósticos e uso** (configurações do dispositivo). **Não configurado** (predefinição) permite ao utilizador alterar estas definições do dispositivo.
 
-  To use this setting, set the **Share usage data** setting to **Block**.
-
-  Esta funcionalidade aplica-se a:  
-  - iOS 9.3.2 and newer
-
-- **Remote screen observation by Classroom app**: Choose **Block** to prevent the Classroom app from remotely viewing the screen on the device. **Não configurado** (predefinição) permite que a aplicação Classroom da Apple veja o ecrã.
-
-  To use this setting, set the **Screen capture** setting to **Block**.
+  Para usar essa configuração, defina a configuração **compartilhar dados de uso** como **Bloquear**.
 
   Esta funcionalidade aplica-se a:  
-  - iOS 9.3 and newer
+  - iOS 9.3.2 e mais recente
 
-- **Unprompted screen observation by Classroom app**: If set to **Allow**, teachers can silently observe the screen of students iOS devices using the Classroom app without the students' knowledge. Os dispositivos de estudantes inscritos numa turma através da aplicação Classroom concedem automaticamente permissão ao professor do curso. **Não configurado** (predefinição) impede esta funcionalidade.
+- **Observação de tela remota por aplicativo de sala de aula**: escolha **Bloquear** para impedir que o aplicativo sala de aula exiba remotamente a tela no dispositivo. **Não configurado** (predefinição) permite que a aplicação Classroom da Apple veja o ecrã.
 
-  To use this setting, set the **Screen capture** setting to **Block**.
+  Para usar essa configuração, defina a configuração de **captura de tela** como **Bloquear**.
 
-- **Enterprise app trust**: Choose **Block** to remove the **Trust Enterprise Developer** button in Settings > General > Profiles & Device Management on the device. **Não configurado** (predefinição) permite que o utilizador opte por confiar nas aplicações que não são transferidas da App Store.
-- **Account modification**: When set to **Block**, the user can't update the device-specific settings from the iOS settings app. Por exemplo, o utilizador não pode criar contas novas no dispositivo nem alterar o nome de utilizador ou a palavra-passe. **Não configurado** (predefinição) permite que os utilizadores alterem estas definições.
+  Esta funcionalidade aplica-se a:  
+  - iOS 9,3 e mais recente
+
+- **Observação de tela não solicitada pelo aplicativo sala de aula**: se definido como **permitir**, os professores podem observar silenciosamente a tela de dispositivos IOS dos alunos usando o aplicativo sala de aula sem o conhecimento dos alunos. Os dispositivos de estudantes inscritos numa turma através da aplicação Classroom concedem automaticamente permissão ao professor do curso. **Não configurado** (predefinição) impede esta funcionalidade.
+
+  Para usar essa configuração, defina a configuração de **captura de tela** como **Bloquear**.
+
+- **Confiança do aplicativo empresarial**: escolha o **bloco** para remover o botão de **desenvolvedor corporativo de confiança** nas configurações > perfis de > geral & o gerenciamento de dispositivo no dispositivo. **Não configurado** (predefinição) permite que o utilizador opte por confiar nas aplicações que não são transferidas da App Store.
+- **Modificação de conta**: quando definido como **Bloquear**, o usuário não pode atualizar as configurações específicas do dispositivo do aplicativo de configurações do Ios. Por exemplo, o utilizador não pode criar contas novas no dispositivo nem alterar o nome de utilizador ou a palavra-passe. **Não configurado** (predefinição) permite que os utilizadores alterem estas definições.
 
   Esta funcionalidade também se aplica às definições acessíveis na aplicação de definições do iOS, tais como o Correio, Contactos, Calendário, Twitter e outros. A funcionalidade não se aplica a aplicações com definições da conta que não sejam configuráveis na aplicação de definições do iOS, por exemplo, a aplicação Microsoft Outlook.
 
-- **Screen time**: Choose **Block** to prevent users from setting their own restrictions in Screen Time (device settings). **Não configurado** permite que o utilizador configure as restrições do dispositivo (por exemplo, as restrições de acesso ou as restrições de conteúdo e de privacidade) no dispositivo.
+- **Hora da tela**: escolha **Bloquear** para impedir que os usuários definam suas próprias restrições no momento da tela (configurações do dispositivo). **Não configurado** permite que o utilizador configure as restrições do dispositivo (por exemplo, as restrições de acesso ou as restrições de conteúdo e de privacidade) no dispositivo.
 
   O nome desta definição foi mudado em **Ativar restrições nas definições do dispositivo**. Impacto desta alteração:  
   
-  - iOS 11.4.1 and earlier: **Block** prevents end users from setting their own restrictions in the device settings. The behavior is the same; and there are no changes for end users.
-  - iOS 12.0 and newer: **Block** prevents end users from setting their own **Screen Time** in the device settings (Settings > General > Screen Time), including content and privacy restrictions. Os dispositivos atualizados para o iOS 12.0 deixam apresentar o separador de restrições nas definições do dispositivo (Definições > Geral > Gestão de Dispositivos > Perfil de Gestão > Restrições). Estas definições estão em **Tempo do Ecrã**.
+  - iOS 11.4.1 e anterior: **Bloquear** impede que os usuários finais definam suas próprias restrições nas configurações do dispositivo. O comportamento é o mesmo; e não há nenhuma alteração para os usuários finais.
+  - iOS 12,0 e mais recente: **Bloquear** impede que os usuários finais definam seu próprio **tempo de tela** nas configurações do dispositivo (Configurações > Geral > tempo de tela), incluindo restrições de privacidade e conteúdo. Os dispositivos atualizados para o iOS 12.0 deixam apresentar o separador de restrições nas definições do dispositivo (Definições > Geral > Gestão de Dispositivos > Perfil de Gestão > Restrições). Estas definições estão em **Tempo do Ecrã**.
   
-- **Use of the erase all content and settings option on the device**: Choose **Block** so users can't use the erase all content and settings option on the device. **Não configurado** (predefinição) concede aos utilizadores acesso a estas definições.
-- **Device name modification**: Choose **Block** so the device name can't be changed. **Não configurado** (predefinição) permite ao utilizador alterar o nome do dispositivo.
-- **Notification settings modification**: Choose **Block** so the notification settings can't be changed. **Não configurado** (predefinição) permite ao utilizador alterar as definições de notificação do dispositivo.
-- **Wallpaper modification**: **Block** prevents the wallpaper from being changed. **Não configurado** (predefinição) permite ao utilizador alterar a imagem de fundo no dispositivo.
-- **Enterprise app trust settings modification**: **Block** prevents the user from changing the enterprise app trust settings on supervised devices. **Não configurado** (predefinição) permite que o utilizador confie nas aplicações que não são transferidas da App Store.
-- **Configuration profile changes**: **Block** prevents configuration profile changes on the device. **Não configurado** (predefinição) permite que o utilizador instale perfis de configuração.
-- **Activation Lock**: Choose **Allow** to enable Activation Lock on supervised iOS devices. O Bloqueio de Ativação dificulta que um dispositivo perdido ou roubado seja reativado.
-- **Block app removal**: Choose **Block** to prevent users from removing apps. **Não configurado** (predefinição) permite que os utilizadores removam aplicações do dispositivo.
-- **Blocks USB Restricted mode**: Choose **Block** to disable USB Restricted mode on supervised devices. USB Restricted mode prevents USB accessories from exchanging data with a device that's locked for over an hour. **Não configurado** (predefinição) permite o modo USB Restrito.
-- **Force automatic date and time**: **Require** forces supervised devices to set the Date & Time automatically. O fuso horário do dispositivo é atualizado quando o dispositivo está ligado à rede móvel ou ao Wi-Fi com os serviços de localização ativados.
-- **Require students to request permission to leave Classroom course**: **Require** forces students enrolled in an unmanaged course using the Classroom app to request permission from the teacher to leave the course. **Não configurado** (predefinição) não força o estudante a pedir permissão.
+- **Uso da opção apagar todo o conteúdo e as configurações no dispositivo**: escolha o **bloco** para que os usuários não possam usar a opção apagar todo o conteúdo e as configurações no dispositivo. **Não configurado** (predefinição) concede aos utilizadores acesso a estas definições.
+- **Modificação do nome do dispositivo**: escolha o **bloco** para que o nome do dispositivo não possa ser alterado. **Não configurado** (predefinição) permite ao utilizador alterar o nome do dispositivo.
+- **Modificação das configurações de notificação**: escolha **Bloquear** para que as configurações de notificação não possam ser alteradas. **Não configurado** (predefinição) permite ao utilizador alterar as definições de notificação do dispositivo.
+- **Modificação de papel de parede**: **bloco** impede que o papel de parede seja alterado. **Não configurado** (predefinição) permite ao utilizador alterar a imagem de fundo no dispositivo.
+- **Modificação das configurações de confiança do aplicativo empresarial**: o **bloco** impede que o usuário altere as configurações de confiança do aplicativo empresarial em dispositivos supervisionados. **Não configurado** (predefinição) permite que o utilizador confie nas aplicações que não são transferidas da App Store.
+- **Alterações do perfil de configuração**: **Bloquear** impede alterações no perfil de configuração no dispositivo. **Não configurado** (predefinição) permite que o utilizador instale perfis de configuração.
+- **Bloqueio de ativação**: escolha **permitir** para habilitar bloqueio de ativação em dispositivos IOS supervisionados. O Bloqueio de Ativação dificulta que um dispositivo perdido ou roubado seja reativado.
+- **Bloquear remoção de aplicativo**: escolha **Bloquear** para impedir que os usuários removam aplicativos. **Não configurado** (predefinição) permite que os utilizadores removam aplicações do dispositivo.
+- **Bloqueia o modo restrito por USB**: escolha **Bloquear** para desabilitar o modo restrito de USB em dispositivos supervisionados. O modo USB Restricted impede que os acessórios USB mudem de dados com um dispositivo bloqueado por mais de uma hora. **Não configurado** (predefinição) permite o modo USB Restrito.
+- **Forçar data e hora automáticas**: **exigir** força dispositivos supervisionados a definir a data & hora automaticamente. O fuso horário do dispositivo é atualizado quando o dispositivo está ligado à rede móvel ou ao Wi-Fi com os serviços de localização ativados.
+- **Exigir que os alunos solicitem permissão para sair do curso da sala de aula**: **exigir** força alunos inscritos em um curso não gerenciado usando o aplicativo sala de aula para solicitar permissão do professor para sair do curso. **Não configurado** (predefinição) não força o estudante a pedir permissão.
 
   Esta funcionalidade aplica-se a:  
-  - iOS 11.3 and newer
+  - iOS 11,3 e mais recente
 
-- **Allow Classroom to lock to an app and lock the device without prompting**: **Enable** allows teacher to lock apps or lock the device using the Classroom app without prompting the student. Bloquear aplicações significa que o dispositivo pode apenas aceder às aplicações especificadas pelo professor. **Não configurado** (predefinição) impede que os professores bloqueiem aplicações ou dispositivos através da aplicação Classroom sem avisar o estudante.
-
-  Esta funcionalidade aplica-se a:  
-  - iOS 11.0 and newer
-
-- **Automatically join Classroom classes without prompting**: **Enable** automatically allows students to join a class that is in the Classroom app without prompting the teacher. **Não configurado** (predefinição) aviso o professor que os estudantes querem aderir a uma turma da aplicação Classroom.
+- **Permitir que a sala de aula bloqueie um aplicativo e bloqueie o dispositivo sem avisar**: **habilitar** permite que o professor bloqueie aplicativos ou bloqueie o dispositivo usando o aplicativo sala de aula sem avisar o aluno. Bloquear aplicações significa que o dispositivo pode apenas aceder às aplicações especificadas pelo professor. **Não configurado** (predefinição) impede que os professores bloqueiem aplicações ou dispositivos através da aplicação Classroom sem avisar o estudante.
 
   Esta funcionalidade aplica-se a:  
-  - iOS 11.0 and newer
+  - iOS 11,0 e mais recente
 
-- **Block VPN creation**: **Block** prevents users from creating VPN configuration settings. **Não configurado** (predefinição) deixa que os utilizadores criem VPNs no dispositivo.
-- **Modifying eSIM settings**: **Block** prevents users from removing or adding a cellular plan to the eSIM on the device. **Não configurado** (predefinição) permite que os utilizadores alterem estas definições.
+- **Unir automaticamente as classes da sala de aula sem avisar**: **habilitar** automaticamente permite que os alunos ingressem em uma classe que esteja no aplicativo da sala de aula sem avisar o professor. **Não configurado** (predefinição) aviso o professor que os estudantes querem aderir a uma turma da aplicação Classroom.
 
   Esta funcionalidade aplica-se a:  
-  - iOS 12.1 and newer
+  - iOS 11,0 e mais recente
 
-- **Defer software updates**: When set to **Not configured** (default), software updates are shown on the device as Apple releases them. Por exemplo, se uma atualização do iOS for lançada pela Apple numa data específica, essa atualização será mostrada naturalmente no dispositivo por volta da data de lançamento.
+- **Bloquear a criação de VPN**: **Bloquear** impede que os usuários criem definições de configuração de VPN. **Não configurado** (predefinição) deixa que os utilizadores criem VPNs no dispositivo.
+- **Modificando configurações do Esim**: o **bloco** impede que os usuários removam ou adicionem um plano de celular ao Esim no dispositivo. **Não configurado** (predefinição) permite que os utilizadores alterem estas definições.
+
+  Esta funcionalidade aplica-se a:  
+  - iOS 12,1 e mais recente
+
+- **Adiar atualizações de software**: quando definido como **não configurado** (padrão), as atualizações de software são mostradas no dispositivo à medida que a Apple as libera. Por exemplo, se uma atualização do iOS for lançada pela Apple numa data específica, essa atualização será mostrada naturalmente no dispositivo por volta da data de lançamento.
 
   **Ativar** permite-lhe adiar a apresentação das atualizações de software nos dispositivos, entre 0 e 90 dias. Esta definição não controla quando as atualizações são ou não instaladas. 
 
-  - **Delay visibility of software updates**: Enter a value from 0-90 days. Quando o adiamento expirar, os utilizadores recebem uma notificação para atualizar para a versão mais antiga do SO disponível quando o adiamento foi acionado.
+  - **Atrasar a visibilidade das atualizações de software**: Insira um valor de 0-90 dias. Quando o adiamento expirar, os utilizadores recebem uma notificação para atualizar para a versão mais antiga do SO disponível quando o adiamento foi acionado.
 
     Por exemplo, se iOS 12.a estiver disponível a **1 de janeiro** e a opção **Adiar visibilidade** estiver definida como **5 dias**, a iOS 12.a não será mostrado como uma atualização disponível nos dispositivos do utilizador final. No **sexto dia** após o lançamento, essa atualização estará disponível e os utilizadores finais poderão instalá-la.
 
     Esta definição aplica-se a:  
-    - iOS 11.3 and newer
+    - iOS 11,3 e mais recente
 
 ## <a name="password"></a>Palavra-passe
 
-### <a name="settings-apply-to-all-enrollment-types"></a>Settings apply to: All enrollment types
+### <a name="settings-apply-to-all-enrollment-types"></a>As configurações se aplicam a: todos os tipos de registro
 
-- **Password**: **Require** the end user to enter a password to access the device. **Not configured** (default) allows users to access the device without entering a password.
+- **Senha**: **exige** que o usuário final Insira uma senha para acessar o dispositivo. **Não configurado** (padrão) permite que os usuários acessem o dispositivo sem inserir uma senha.
 
-### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Settings apply to: Device enrollment, Automated device enrollment (supervised)
+### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>As configurações se aplicam a: registro de dispositivo, registro de dispositivo automatizado (supervisionado)
 
 > [!IMPORTANT]
-> On user-enrolled devices, if you configure any password setting, then the **Simple passwords** settings is automatically set to **Block**, and a 6 digit PIN is enforced.
+> Em dispositivos registrados pelo usuário, se você definir qualquer configuração de senha, as configurações de **senhas simples** serão automaticamente definidas como **Bloquear**e um PIN de 6 dígitos será imposto.
 >
-> For example, you configure the **Password expiration** setting, and push this policy to user-enrolled devices. On the devices, the following happens:
+> Por exemplo, você define a configuração de **expiração de senha** e envia por push essa política para dispositivos registrados pelo usuário. Nos dispositivos, acontece o seguinte:
 >
-> - The **Password expiration** setting is ignored.
-> - Simple passwords, such as `1111` or `1234`, aren't allowed.
-> - A 6 digit pin is enforced.
+> - A configuração de **expiração de senha** é ignorada.
+> - Senhas simples, como `1111` ou `1234`, não são permitidas.
+> - Um PIN de 6 dígitos é imposto.
 
-- **Simple passwords**: Choose **Block** to require more complex passwords. **Não configurado** permite palavras-passe simples, tais como `0000` e `1234`.
+- **Senhas simples**: escolha **Bloquear** para exigir senhas mais complexas. **Não configurado** permite palavras-passe simples, tais como `0000` e `1234`.
 
-- **Required password type**: Choose the type of password your organization require. As opções são:
+- **Tipo de senha necessária**: escolha o tipo de senha que sua organização precisa. As opções são:
   - **Predefinição do dispositivo**
   - **Numérico**
   - **Alfanumérico**
-- **Number of non-alphanumeric characters in password**: Enter the number of symbol characters, such as `#` or `@`, that must be included in the password.
+- **Número de caracteres não alfanuméricos na senha**: Insira o número de caracteres de símbolo, como `#` ou `@`, que deve ser incluído na senha.
 
-- **Minimum password length**: Enter the minimum length a user must enter, between 4 and 14 characters. On user enrolled devices, enter a length between 4 and 6 characters.
+- **Comprimento mínimo da senha**: Insira o comprimento mínimo que um usuário deve inserir, entre 4 e 14 caracteres. Em dispositivos registrados pelo usuário, insira um comprimento entre 4 e 6 caracteres.
   
   > [!NOTE]
-  > For devices that are user enrolled, users can set a PIN greater than 6 digits. But, no more than 6 digits are enforced on the device. For example, an administrator sets the minimum length to `8`. On user-enrolled devices, users are only required to set a 6 digit PIN. Intune doesn't force a PIN greater than 6 digits on user-enrolled devices.
+  > Para dispositivos registrados pelo usuário, os usuários podem definir um PIN maior que 6 dígitos. No entanto, no máximo seis dígitos são impostos no dispositivo. Por exemplo, um administrador define o comprimento mínimo para `8`. Em dispositivos registrados pelo usuário, os usuários só precisam definir um PIN de 6 dígitos. O Intune não força um PIN maior que 6 dígitos em dispositivos registrados pelo usuário.
 
-- **Number of sign-in failures before wiping device**: Enter the number of failed sign-ins to allow before the device is wiped (between 4-11).
+- **Número de falhas de entrada antes de apagar o dispositivo**: Insira o número de entradas com falha a serem permitidas antes que o dispositivo seja apagado (entre 4-11).
   
-  iOS has built-in security that can impact this setting. For example, iOS may delay triggering the policy depending on the number of sign in failures. It may also consider repeatedly entering the same passcode as one attempt. Apple's [iOS security guide](https://www.apple.com/business/site/docs/iOS_Security_Guide.pdf) (opens Apple's web site) is a good resource, and provides more specific details on passcodes.
+  o iOS tem segurança interna que pode afetar essa configuração. Por exemplo, o iOS pode atrasar o disparo da política dependendo do número de falhas de entrada. Ele também pode considerar a inserção repetida da mesma senha como uma única tentativa. O [Guia de segurança do IOS](https://www.apple.com/business/site/docs/iOS_Security_Guide.pdf) da Apple (abre o site da Apple) é um bom recurso e fornece detalhes mais específicos sobre as senhas.
   
-- **Maximum minutes after screen lock before password is required**<sup>1</sup>: Enter how long the device stays idle before the user must reenter their password. Se o tempo introduzido for maior do que o valor definido no dispositivo, o dispositivo ignorará o tempo introduzido. Suportado no iOS 8.0 e em dispositivos mais recentes.
+- **Máximo de minutos após o bloqueio de tela antes que a senha seja necessária**<sup>1</sup>: Insira por quanto tempo o dispositivo permanece ocioso antes de o usuário precisar digitar novamente sua senha. Se o tempo introduzido for maior do que o valor definido no dispositivo, o dispositivo ignorará o tempo introduzido. Suportado no iOS 8.0 e em dispositivos mais recentes.
 
-- **Maximum minutes of inactivity until screen locks**<sup>1</sup>: Enter the maximum number of minutes of inactivity allowed on the device until the screen locks.
+- **Máximo de minutos de inatividade até a tela travar**<sup>1</sup>: Insira o número máximo de minutos de inatividade permitido no dispositivo até que a tela seja bloqueada.
 
-  **iOS options**:  
+  **Opções do IOS**:  
 
-  - **Not configured** (Default): Intune doesn't touch this setting.
-  - **Immediately**: Screen locks after 30 seconds of inactivity.
-  - **1**: Screen locks after 1 minute of inactivity.
-  - **2**: Screen locks after 2 minutes of inactivity.
-  - **3**: Screen locks after 3 minutes of inactivity.
-  - **4**: Screen locks after 4 minutes of inactivity.
-  - **5**: Screen locks after 5 minutes of inactivity.
+  - **Não configurado** (padrão): o Intune não toca nessa configuração.
+  - **Imediatamente**: bloqueios de tela após 30 segundos de inatividade.
+  - **1**: bloqueios de tela após 1 minuto de inatividade.
+  - **2**: bloqueios de tela após 2 minutos de inatividade.
+  - **3**: bloqueios de tela após 3 minutos de inatividade.
+  - **4**: bloqueios de tela após 4 minutos de inatividade.
+  - **5**: bloqueios de tela após 5 minutos de inatividade.
     
-  **iPadOS options**:  
+  **Opções de iPadOS**:  
 
-  - **Not configured** (Default): Intune doesn't touch this setting.
-  - **Immediately**: Screen locks after 2 minutes of inactivity.
-  - **2**: Screen locks after 2 minutes of inactivity.
-  - **5**: Screen locks after 5 minutes of inactivity.
-  - **10**: Screen locks after 10 minutes of inactivity.
-  - **15**: Screen locks after 15 minutes of inactivity.
+  - **Não configurado** (padrão): o Intune não toca nessa configuração.
+  - **Imediatamente**: a tela é bloqueada após 2 minutos de inatividade.
+  - **2**: bloqueios de tela após 2 minutos de inatividade.
+  - **5**: bloqueios de tela após 5 minutos de inatividade.
+  - **10**: bloqueios de tela após 10 minutos de inatividade.
+  - **15**: bloqueios de tela após 15 minutos de inatividade.
 
-  If a value doesn't apply to iOS or iPadOS, then Apple uses the closest *lowest* value. For example, if you enter `4` minutes, then iPadOS devices use `2` minutes. If you enter `10` minutes, then iOS devices use `5` minutes. This is an Apple limitation.
+  Se um valor não se aplicar ao iOS ou iPadOS, a Apple usará o *menor valor mais* próximo. Por exemplo, se você inserir `4` minutos, os dispositivos iPadOS usarão `2` minutos. Se você inserir `10` minutos, os dispositivos iOS usarão `5` minutos. Essa é uma limitação da Apple.
   
   > [!NOTE]
-  > The Intune UI for this setting doesn't separate the iOS and iPadOS supported values. The UI might be updated in a future release.
+  > A interface do usuário do Intune para essa configuração não separa os valores com suporte para iOS e iPadOS. A interface do usuário pode ser atualizada em uma versão futura.
 
-- **Password expiration (days)** : Enter the number of days before the device password must be changed.
-- **Prevent reuse of previous passwords**: Enter the number of new passwords that must be used until an old one can be reused.
-- **Touch ID and Face ID unlock**: Choose **Block** to prevent using a fingerprint or face to unlock the device. **Not configured** allows the user to unlock the device using these methods.
+- **Expiração da senha (dias)** : Insira o número de dias antes que a senha do dispositivo deva ser alterada.
+- **Evitar a reutilização de senhas anteriores**: Insira o número de novas senhas que devem ser usadas até que uma antiga possa ser reutilizada.
+- **ID de toque e desbloqueio de ID facial**: escolha **Bloquear** para impedir o uso de uma impressão digital ou uma face para desbloquear o dispositivo. **Não configurado** permite que o usuário desbloqueie o dispositivo usando esses métodos.
 
-  Blocking this setting also prevents using FaceID authentication to unlock the device.
+  O bloqueio dessa configuração também impede o uso da autenticação de Faceid para desbloquear o dispositivo.
 
-  Face ID applies to:  
-  - iOS 11.0 and newer
+  A ID de face se aplica a:  
+  - iOS 11,0 e mais recente
 
-### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Settings apply to: Automated device enrollment (supervised)
+### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>As configurações se aplicam a: registro de dispositivo automatizado (supervisionado)
 
-- **Passcode modification**: Choose **Block** to stop the passcode from being changed, added, or removed. As alterações às restrições do código de acesso são ignoradas nos dispositivos supervisionados após o bloqueio desta funcionalidade. **Não configurado** (predefinição) permite que os códigos de acesso sejam adicionados, alterados ou removidos.
+- **Modificação de senha**: escolha o **bloco** para impedir que a senha seja alterada, adicionada ou removida. As alterações às restrições do código de acesso são ignoradas nos dispositivos supervisionados após o bloqueio desta funcionalidade. **Não configurado** (predefinição) permite que os códigos de acesso sejam adicionados, alterados ou removidos.
 
-  - **Touch ID and Face ID modification**: **Block** stops the user from changing, adding, or removing TouchID fingerprints and Face ID. **Not configured** (default) allows the user to update the TouchID fingerprints and Face ID on the device.
+  - **Modificação de ID de toque e ID de face**: o **bloco** impede que o usuário altere, adicione ou remova as impressões digitais Touchid e a ID facial. **Não configurado** (padrão) permite que o usuário atualize as impressões digitais touchid e a ID do rosto no dispositivo.
 
-    Blocking this setting also stops the user from changing, adding, or removing FaceID authentication.
+    O bloqueio dessa configuração também impede que o usuário altere, adicione ou remova a autenticação de Faceid.
 
-    Face ID applies to:  
-    - iOS 11.0 and newer
+    A ID de face se aplica a:  
+    - iOS 11,0 e mais recente
 
-- **Block password AutoFill**: Choose **Block** to prevent using the AutoFill Passwords feature on iOS. A escolha de **Bloquear** também tem o seguinte impacto:
+- **Bloquear AutoPreenchimento de senha**: escolha **Bloquear** para impedir o uso do recurso de senhas de preenchimento automático no Ios. A escolha de **Bloquear** também tem o seguinte impacto:
 
   - Não é pedido aos utilizadores que utilizem uma palavra-passe guardada no Safari nem noutras aplicações.
   - As Palavras-passe Seguras automáticas estão desativadas, pelo que não são sugeridas aos utilizadores.
 
   **Não configurado** (predefinição) permite estas funcionalidades.
 
-- **Block password proximity requests**: Choose **Block** so a user’s device doesn't request passwords from nearby devices. **Não configurado** (predefinição) permite estes pedidos de palavras-passe.
-- **Block password sharing**: **Block** prevents sharing passwords between devices using AirDrop. **Não configurado** (predefinição) permite que as palavras-passe sejam partilhadas.
-- **Require Touch ID or Face ID authentication for password or credit card information AutoFill**: When set to **Require**, users must authenticate using TouchID or FaceID before passwords or credit card information can be auto filled in Safari and other apps. **Não configurado** (predefinição) permite que os utilizadores controlem esta funcionalidade nas definições do dispositivo.
+- **Bloquear solicitações de proximidade de senha**: escolha **Bloquear** para que o dispositivo de um usuário não solicite senhas de dispositivos próximos. **Não configurado** (predefinição) permite estes pedidos de palavras-passe.
+- **Bloquear o compartilhamento de senha**: **Bloquear** impede o compartilhamento de senhas entre dispositivos usando o essoltar. **Não configurado** (predefinição) permite que as palavras-passe sejam partilhadas.
+- **Exigir a ID de toque ou a autenticação de ID facial para senha ou preenchimento de informações de cartão de crédito**: quando definido como **exigir**, os usuários devem autenticar usando touchid ou faceid antes que as senhas ou as informações de cartão de crédito possam ser preenchidas automaticamente no Safari e em outros aplicativos. **Não configurado** (predefinição) permite que os utilizadores controlem esta funcionalidade nas definições do dispositivo.
 
   Esta funcionalidade aplica-se a:  
-  - iOS 11.0 and newer
+  - iOS 11,0 e mais recente
   
 <sup>1</sup>Quando configura as definições **Máximo de minutos de inatividade até o ecrã ser bloqueado** e **Máximo de minutos após o bloqueio de ecrã antes de ser exigida a palavra-passe**, estas são aplicadas em sequência. Por exemplo, se definir o valor de ambas as definições para **5** minutos, o ecrã desativa automaticamente passados cinco minutos e o dispositivo bloqueia após mais cinco minutos. No entanto, se o utilizador desligar o ecrã manualmente, a segunda definição será imediatamente aplicada. No mesmo exemplo, após o utilizador desativar o ecrã, o dispositivo será bloqueado passados cinco minutos.
 
 ## <a name="locked-screen-experience"></a>Experiência de Ecrã Bloqueado
 
-### <a name="settings-apply-to-all-enrollment-types"></a>Settings apply to: All enrollment types
+### <a name="settings-apply-to-all-enrollment-types"></a>As configurações se aplicam a: todos os tipos de registro
 
-- **Control Center access while device locked**: Choose **Block** to prevent access to the Control Center app while device is locked. **Not configured** (default) allows users access to the Control Center app when the device is locked.
-- **Notifications while device locked**: **Block** prevents access to notifications when the device is locked. **Not configured** (default) allows the user to access the notifications without unlocking the device.
-- **Today view while device locked**: **Block** prevents access to the Today view when the device is locked. **Not configured** (default) allows the user to see the Today view when the device is locked.
+- **Acesso ao centro de controle enquanto o dispositivo está bloqueado**: escolha **Bloquear** para impedir o acesso ao aplicativo do centro de controle enquanto o dispositivo estiver bloqueado. **Não configurado** (padrão) permite que os usuários acessem o aplicativo do centro de controle quando o dispositivo está bloqueado.
+- **Notificações enquanto o dispositivo está bloqueado**: o **bloqueio** impede o acesso a notificações quando o dispositivo está bloqueado. **Não configurado** (padrão) permite que o usuário acesse as notificações sem desbloquear o dispositivo.
+- **Exibição atual enquanto o dispositivo está bloqueado**: o **bloqueio** impede o acesso à exibição atual quando o dispositivo está bloqueado. **Não configurado** (padrão) permite que o usuário veja a exibição atual quando o dispositivo está bloqueado.
 
-### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Settings apply to: Device enrollment, Automated device enrollment (supervised)
+### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>As configurações se aplicam a: registro de dispositivo, registro de dispositivo automatizado (supervisionado)
 
-- **Wallet notifications while device locked**: **Block** prevents access to the Wallet app when the device is locked. **Not configured** (default) allows the user to access the Wallet app while the device is locked.
+- **Notificações de carteira enquanto o dispositivo estiver bloqueado**: **Bloquear** impede o acesso ao aplicativo de carteira quando o dispositivo está bloqueado. **Não configurado** (padrão) permite que o usuário acesse o aplicativo de carteira enquanto o dispositivo está bloqueado.
 
 ## <a name="app-store-doc-viewing-gaming"></a>App Store, Visualização de Documentos, Jogos
 
-### <a name="settings-apply-to-all-enrollment-types"></a>Settings apply to: All enrollment types
+### <a name="settings-apply-to-all-enrollment-types"></a>As configurações se aplicam a: todos os tipos de registro
 
-- **Viewing corporate documents in unmanaged apps**: **Block** prevents viewing corporate documents in unmanaged apps. **Not configured** (default) allows corporate documents to be viewed in any app. Por exemplo, quer impedir que os utilizadores guardem os ficheiros da aplicação OneDrive na Dropbox. Configure esta definição como **Bloquear**. Depois de o dispositivo receber a política (por exemplo, após um reinício), já não é permitido guardar.
+- **Exibindo documentos corporativos em aplicativos não gerenciados**: o **bloco** impede a exibição de documentos corporativos em aplicativos não gerenciados. **Não configurado** (padrão) permite que os documentos corporativos sejam exibidos em qualquer aplicativo. Por exemplo, quer impedir que os utilizadores guardem os ficheiros da aplicação OneDrive na Dropbox. Configure esta definição como **Bloquear**. Depois de o dispositivo receber a política (por exemplo, após um reinício), já não é permitido guardar.
 
 
   > [!NOTE]
-  > When this setting is blocked, third party keyboards installed from the App Store are also blocked.
+  > Quando essa configuração é bloqueada, teclados de terceiros instalados da loja de aplicativos também são bloqueados.
 
-  - **Allow unmanaged apps to read from managed contacts accounts**: When set to **Allow**, unmanaged apps, such as the built-in iOS Contacts app, can read and access contact information from managed apps, including the Outlook mobile app. **Not configured** (default) prevents reading, including removing duplicates, from the built-in Contacts app on the device.  
+  - **Permitir que aplicativos não gerenciados leiam de contas de contatos gerenciados**: quando definido como **permitir**, aplicativos não gerenciados, como o aplicativo interno do IOS Contacts, podem ler e acessar informações de contato de aplicativos gerenciados, incluindo o aplicativo móvel do Outlook. **Não configurado** (padrão) impede a leitura, incluindo a remoção de duplicatas, do aplicativo de contatos interno no dispositivo.  
   
-    This setting allows or prevents reading contact information. It doesn't control syncing contacts between the apps.
+    Essa configuração permite ou impede a leitura de informações de contato. Ele não controla a sincronização de contatos entre os aplicativos.
   
     Para utilizar esta definição, configure **Ver documentos empresariais em aplicações não geridas** como **Bloquear**.
 
-  For more information about these two settings, and their impact on Outlook for iOS contact export synchronization, see [Support Tip: Use Intune custom profile settings with the iOS Native Contacts App](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Use-Intune-custom-profile-settings-with-the-iOS/ba-p/298453).
+  Para obter mais informações sobre essas duas configurações e seu impacto sobre a sincronização de exportação de contato do Outlook para iOS, consulte [dica de suporte: usar configurações de perfil personalizado do Intune com o aplicativo de contatos nativos do IOS](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Use-Intune-custom-profile-settings-with-the-iOS/ba-p/298453).
 
-- **Treat AirDrop as an unmanaged destination**: **Require** forces AirDrop to be considered an unmanaged drop target. Impede que as aplicações geridas enviem dados através do Airdrop. 
-- **Viewing non-corporate documents in corporate apps**: **Block** prevents viewing non-corporate documents in corporate apps. **Not configured** (default) allows any document to be viewed in corporate managed apps.
+- **Tratar o essoltar como um destino não gerenciado**: **exigir** que o esforce seja considerado um destino de soltura não gerenciado. Impede que as aplicações geridas enviem dados através do Airdrop. 
+- **Exibindo documentos não corporativos em aplicativos corporativos**: o **bloco** impede a exibição de documentos não corporativos em aplicativos corporativos. **Não configurado** (padrão) permite que qualquer documento seja exibido em aplicativos gerenciados corporativos.
 
-  Setting to **Block** also prevents contact export synchronization in Outlook for iOS. For more information, see [Support Tip: Enabling Outlook iOS Contact Sync with iOS12 MDM Controls](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Enabling-Outlook-iOS-Contact-Sync-with-iOS12-MDM/ba-p/298453).
+  A configuração para **Bloquear** também impede a sincronização de exportação de contato no Outlook para Ios. Para obter mais informações, consulte [dica de suporte: Habilitando a sincronização de contatos do Outlook Ios com controles de MDM iOS12](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Enabling-Outlook-iOS-Contact-Sync-with-iOS12-MDM/ba-p/298453).
 
-### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Settings apply to: Device enrollment, Automated device enrollment (supervised)
+### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>As configurações se aplicam a: registro de dispositivo, registro de dispositivo automatizado (supervisionado)
 
-- **Require iTunes Store password for all purchases**: **Require** the user to enter the Apple ID password for each in-app or ITunes purchase. **Not configured** (default) allows purchases without prompting for a password every time.
-- **In-app purchases**: Choose **Block** to prevent in-app purchases from the store. **Not configured** (default) allows store purchases within a running app.
-- **Download content from iBook store flagged as 'Erotica'** : Choose **Block** to prevent stops users from downloading media from the iBook store that's tagged as erotica. **Not configured** (default) allows the user to download books with the "Erotica" category.
-- **Allow managed apps to write contacts to unmanaged contacts accounts**: When set to **Allow**, managed apps, such as the Outlook mobile app, can save or sync contact information, including business and corporate contacts, to the built-in iOS Contacts app. When set to **Not configured** (default), managed apps can't save or sync contact information to the built-in iOS Contacts app on the device.
+- **Exigir senha da iTunes Store para todas as compras**: **exige** que o usuário insira a senha da ID da Apple para cada compra no aplicativo ou iTunes. **Não configurado** (padrão) permite compras sem solicitar uma senha a cada vez.
+- **Compras no aplicativo**: escolha **Bloquear** para evitar compras no aplicativo da loja. **Não configurado** (padrão) permite a loja de compras em um aplicativo em execução.
+- **Baixar conteúdo da iBook Store sinalizado como ' erotismo '** : escolha **Bloquear** para impedir que os usuários baixem mídia da iBook Store marcada como erotismo. **Não configurado** (padrão) permite que o usuário Baixe livros com a categoria "erotismo".
+- **Permitir que aplicativos gerenciados gravem contatos em contas de contatos não gerenciados**: quando definido como **permitir**, aplicativos gerenciados, como o aplicativo móvel do Outlook, podem salvar ou sincronizar informações de contato, incluindo contatos comerciais e corporativos, para o aplicativo interno de contatos do Ios. Quando definido como **não configurado** (padrão), os aplicativos gerenciados não podem salvar ou sincronizar informações de contato com o aplicativo interno de contatos do Ios no dispositivo.
   
   Para utilizar esta definição, configure **Ver documentos empresariais em aplicações não geridas** como **Bloquear**.
 
-- **Ratings region**: Choose the ratings region you want to use for allowed downloads. And then choose the allowed ratings for **Movies**, **TV Shows**, and **Apps**.
+- **Região de classificações**: escolha a região de classificações que você deseja usar para downloads permitidos. Em seguida, escolha as classificações permitidas para **filmes**, **programas de TV**e **aplicativos**.
 
-### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Settings apply to: Automated device enrollment (supervised)
+### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>As configurações se aplicam a: registro de dispositivo automatizado (supervisionado)
 
-- **App store**: **Block** prevents access to the app store on supervised devices. **Not configured** (default) allows access.
+- **App Store**: o **bloco** impede o acesso à loja de aplicativos em dispositivos supervisionados. **Não configurado** (padrão) permite o acesso.
 
-  Starting with iOS 13.0, this setting requires supervised devices.
+  A partir do iOS 13,0, essa configuração requer dispositivos supervisionados.
 
-  - **Installing apps from App Store**: Choose **Block** to block the app store from the device home screen. Os utilizadores finais podem continuar a utilizar o iTunes ou o Apple Configurator para instalar aplicações. **Not configured** (default) allows the app store on the home screen.
-  - **Automatic app downloads**: Choose **Block** to prevent automatic downloading of apps bought on other devices. Não afeta a atualização das aplicações existentes. **Not configured** (default) allows apps bought on other iOS devices to download on the device.
+  - **Instalando aplicativos da App Store**: escolha **Bloquear** para bloquear a loja de aplicativos na tela inicial do dispositivo. Os utilizadores finais podem continuar a utilizar o iTunes ou o Apple Configurator para instalar aplicações. **Não configurado** (padrão) permite a loja de aplicativos na tela inicial.
+  - **Downloads automáticos de aplicativos**: escolha **Bloquear** para impedir o download automático de aplicativos comprados em outros dispositivos. Não afeta a atualização das aplicações existentes. **Não configurado** (padrão) permite que os aplicativos comprados em outros dispositivos IOS sejam baixados no dispositivo.
 
-- **Explicit iTunes music, podcast, or news content**: Choose **Block** to prevent explicit iTunes music, podcast, or news content. **Not configured** (default) allows the device to access content rated as adult from the store. iOS 13 and newer may require supervised only devices. 
+- **Conteúdo explícito de música, podcast ou notícias do iTunes**: escolha **Bloquear** para evitar conteúdo explícito de música, podcast ou notícias do iTunes. **Não configurado** (padrão) permite que o dispositivo acesse o conteúdo classificado como adulto da loja. o iOS 13 e mais recente podem exigir apenas dispositivos supervisionados. 
 
-  Starting with iOS 13.0, this setting requires supervised devices.
+  A partir do iOS 13,0, essa configuração requer dispositivos supervisionados.
 
-- **Adding Game Center friends**: **Block** prevents users from adding Game Center friends. **Not configured** (default) allows the user to add friends in Game Center.
+- **Adicionar Game Center amigos**: **Bloquear** impede que os usuários adicionem Game Center amigos. **Não configurado** (padrão) permite que o usuário adicione amigos em Game Center.
 
-  Starting with iOS 13.0, this setting requires supervised devices.
+  A partir do iOS 13,0, essa configuração requer dispositivos supervisionados.
 
-- **Game Center**: **Block** the use of the Game Center app. **Not configured** (default) allows using the Game Center app on the device.
-- **Multiplayer gaming**: Choose **Block** to prevent multiplayer gaming. **Not configured** (default) allows the user to play multiplayer games on the device.
+- **Game Center**: **Bloquear** o uso do aplicativo Game Center. **Não configurado** (padrão) permite usar o aplicativo Game Center no dispositivo.
+- **Jogos para vários jogadores**: escolha **Bloquear** para evitar jogos com vários participantes. **Não configurado** (padrão) permite que o usuário Jogue jogos com vários participantes no dispositivo.
 
-  Starting with iOS 13.0, this setting requires supervised devices.
+  A partir do iOS 13,0, essa configuração requer dispositivos supervisionados.
 
-- **Access to network drive in Files app**: Using the Server Message Block (SMB) protocol, devices can access files or other resources on a network server. **Disable** prevents accessing files on a network SMB drive. **Not configured** (default) allows access.
+- **Acesso à unidade de rede no aplicativo de arquivos**: usando o protocolo SMB, os dispositivos podem acessar arquivos ou outros recursos em um servidor de rede. **Desabilitar** impede o acesso a arquivos em uma unidade SMB de rede. **Não configurado** (padrão) permite o acesso.
 
   Esta funcionalidade aplica-se a:  
-  - iOS and iPadOS 13.0 and newer
+  - iOS e iPadOS 13,0 e mais recentes
 
 ## <a name="built-in-apps"></a>Aplicações Incorporadas
 
-### <a name="settings-apply-to-all-enrollment-types"></a>Settings apply to: All enrollment types
+### <a name="settings-apply-to-all-enrollment-types"></a>As configurações se aplicam a: todos os tipos de registro
 
-- **Siri**: **Block** prevents access to Siri. **Not configured** (default) allows using the Siri voice assistant on the device.
-  - **Siri while device is locked**: Choose **Block** to prevent access to Siri when the device is locked. **Not configured** (default) allows using the Siri voice assistant on the device when it's locked.
+- **Siri**: **Block** impede o acesso ao Siri. **Não configurado** (padrão) permite usar o assistente de voz Siri no dispositivo.
+  - **Siri enquanto o dispositivo estiver bloqueado**: escolha **Bloquear** para impedir o acesso ao Siri quando o dispositivo estiver bloqueado. **Não configurado** (padrão) permite usar o assistente de voz Siri no dispositivo quando ele está bloqueado.
 
-- **Safari fraud warnings**: **Require** fraud warnings to be shown in the web browser on the device. A opção **Não configurado** (predefinição) desativa esta funcionalidade.
+- **Avisos de fraude do Safari**: **exigir** que avisos de fraude sejam mostrados no navegador da Web no dispositivo. A opção **Não configurado** (predefinição) desativa esta funcionalidade.
 
-### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Settings apply to: Device enrollment, Automated device enrollment (supervised)
+### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>As configurações se aplicam a: registro de dispositivo, registro de dispositivo automatizado (supervisionado)
 
-- **Spotlight search to return results from internet**: **Block** stops Spotlight from returning any results from an Internet search. **Não configurado** (predefinição) permite que o Spotlight se ligue à Internet para fornecer resultados da pesquisa.
+- **A pesquisa de destaque para retornar resultados da Internet**: **Bloquear** impede que o Spotlight retorne qualquer resultado de uma pesquisa na Internet. **Não configurado** (predefinição) permite que o Spotlight se ligue à Internet para fornecer resultados da pesquisa.
 
-- **Safari cookies**: Choose how cookies are handled on the device. As opções são:
+- **Cookies do Safari**: escolha como os cookies são manipulados no dispositivo. As opções são:
   - Allow
   - Bloquear todos os cookies
   - Permitir cookies dos sites visitados
   - Permitir cookies do site atual
 
-- **Safari JavaScript**: **Block** prevents Java scripts in the browser from running on the device. **Not configured** (default) allows Java scripts.
+- **Safari JavaScript**: **Block** impede que scripts java no navegador sejam executados no dispositivo. **Não configurado** (padrão) permite scripts java.
 
-- **Safari Pop-ups**: **Block** to disable the pop-up blocker in the web browser. **Not configured** (default) allows the pop-up blocker.
+- **Pop-ups do Safari**: **Bloquear** para desabilitar o bloqueador de pop-ups no navegador da Web. **Não configurado** (padrão) permite o bloqueador de pop-ups.
 
-### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Settings apply to: Automated device enrollment (supervised)
+### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>As configurações se aplicam a: registro de dispositivo automatizado (supervisionado)
 
-- **Camera**: Choose **Block** to prevent access to the camera on the device. **Não configurado** (predefinição) permite o acesso à câmara do dispositivo.
+- **Câmera**: escolha **Bloquear** para impedir o acesso à câmera no dispositivo. **Não configurado** (predefinição) permite o acesso à câmara do dispositivo.
 
-  Starting with iOS 13.0, this setting requires supervised devices.
+  A partir do iOS 13,0, essa configuração requer dispositivos supervisionados.
 
-  - **FaceTime**: **Block** to prevent access to the FaceTime app. **Not configured** (default) allows access to the FaceTime app on the device.
+  - **FaceTime**: **Bloquear** para impedir o acesso ao aplicativo FaceTime. **Não configurado** (padrão) permite o acesso ao aplicativo FaceTime no dispositivo.
 
-    Starting with iOS 13.0, this setting requires supervised devices.
+    A partir do iOS 13,0, essa configuração requer dispositivos supervisionados.
 
-- **Siri profanity filter**: **Require** prevents Siri from dictating, or speaking profane language.
+- **Filtro de profanação Siri**: **exigir** que o Siri dite ou fale com linguagem obscena.
 
-  To use this setting, set the **Siri** setting to **Block**.
+  Para usar essa configuração, defina a configuração **Siri** como **Bloquear**.
 
-- **Siri to query user-generated content from the internet**: **Block** prevents Siri from accessing websites to answer questions. **Not configured** (default) allows Siri to access user-generated content from the internet.
+- **Siri para consultar o conteúdo gerado pelo usuário da Internet**: **Bloquear** impede que o Siri acesse sites para responder a perguntas. **Não configurado** (padrão) permite que o Siri acesse o conteúdo gerado pelo usuário da Internet.
 
-  To use this setting, set the **Siri** setting to **Block**.
+  Para usar essa configuração, defina a configuração **Siri** como **Bloquear**.
 
-- **Apple News**: Choose **Block** to prevent access to the Apple News app on the device. **Not configured** (default) allows using the Apple News app.
-- **iBooks store**: **Block** prevents access to the iBooks store. **Not configured** (default) allows users to browse and buy books from the iBooks store.
-- **Messages app on the device**: **Block** prevents users from using the Messages app for iMessage. If the device supports text messaging, the user can still send and receive text messages using SMS. **Not configured** (default) allows using the Messages app to send and read messages over the internet.
-- **Podcasts**: **Block** prevents users using the Podcasts app. **Not configured** (default) allows using the Podcasts app.
-- **Music service**: **Block** reverts the Music app to classic mode and disables the Music service. **Não configurado** (predefinição) permite a utilização da aplicação Apple Music.
-- **iTunes Radio service**: **Block** prevents users from using the iTunes Radio app. **Not configured** (default) allows using the iTunes Radio app.
-- **iTunes store**: **Not configured** (default) allows iTunes on the devices. **Block** prevents users from using iTunes on the device. 
-
-  Esta funcionalidade aplica-se a:  
-  - iOS 4.0 and newer
-
-- **Find my iPhone**: **Not configured** (default) allows using this Find My app feature to get the approximate location of the device. **Block** prevents this feature in the Find My app. 
+- **Apple News**: escolha **Bloquear** para impedir o acesso ao aplicativo Apple News no dispositivo. **Não configurado** (padrão) permite usar o aplicativo Apple News.
+- **iBooks Store**: **Block** impede o acesso ao armazenamento do iBooks. **Não configurado** (padrão) permite que os usuários naveguem e comprem livros da iBooks Store.
+- **Aplicativo de mensagens no dispositivo**: **Bloquear** impede que os usuários usem o aplicativo mensagens para IMessage. Se o dispositivo der suporte a mensagens de texto, o usuário ainda poderá enviar e receber mensagens de texto usando o SMS. **Não configurado** (padrão) permite usar o aplicativo mensagens para enviar e ler mensagens pela Internet.
+- **Podcasts**: **Bloquear** impede que os usuários usem o aplicativo podcasts. **Não configurado** (padrão) permite usar o aplicativo podcasts.
+- **Serviço de música**: o **bloco** reverte o aplicativo de música para o modo clássico e desabilita o serviço de música. **Não configurado** (predefinição) permite a utilização da aplicação Apple Music.
+- **serviço iTunes Radio**: **Bloquear** impede que os usuários usem o aplicativo iTunes Radio. **Não configurado** (padrão) permite usar o aplicativo iTunes Radio.
+- **iTunes Store**: **não configurado** (padrão) permite o iTunes nos dispositivos. **Bloquear** impede que os usuários usem o iTunes no dispositivo. 
 
   Esta funcionalidade aplica-se a:  
-  - iOS 13.0 and iPadOS 13.0 and newer
+  - iOS 4,0 e mais recente
 
-- **Find my Friends**: **Not configured** (default) allows using this Find My app feature to find family and friends from an Apple device or iCloud.com. **Block** prevents this feature in the Find My app.
+- **Localizar meu iPhone**: **não configurado** (padrão) permite usar o recurso Localizar meu aplicativo para obter o local aproximado do dispositivo. **Bloquear** impede esse recurso na localização de meu aplicativo. 
 
   Esta funcionalidade aplica-se a:  
-  - iOS 13.0 and iPadOS 13.0 and newer
+  - iOS 13,0 e iPadOS 13,0 e mais recentes
 
-- **Changes to the Find My Friends app settings**: **Block** prevents changes to the Find My Friends app settings. **Not configured** (default) allows the user to change settings for the Find My Friends app.
+- **Localizar meus amigos**: **não configurado** (padrão) permite usar o recurso Localizar meu aplicativo para encontrar a família e os amigos de um dispositivo Apple ou icloud.com. **Bloquear** impede esse recurso na localização de meu aplicativo.
 
-- **Spotlight search to return results from internet**: **Block** stops Spotlight from returning any results from an Internet search. **Não configurado** (predefinição) permite que o Spotlight se ligue à Internet para fornecer resultados da pesquisa.
+  Esta funcionalidade aplica-se a:  
+  - iOS 13,0 e iPadOS 13,0 e mais recentes
 
-- **Block removal of system apps from device**: Choosing **Block** disables the ability to remove system apps from the device. **Not configured** (default) allows users to remove system apps.
+- **Alterações nas configurações do aplicativo localizar meus amigos**: **Bloquear** impede alterações nas configurações do aplicativo localizar meus amigos. **Não configurado** (padrão) permite que o usuário altere as configurações para o aplicativo localizar meus amigos.
 
-- **Safari**: **Block** using the Safari browser on the device. **Not configured** (default) allows users to use the Safari browser.
+- **A pesquisa de destaque para retornar resultados da Internet**: **Bloquear** impede que o Spotlight retorne qualquer resultado de uma pesquisa na Internet. **Não configurado** (predefinição) permite que o Spotlight se ligue à Internet para fornecer resultados da pesquisa.
 
-  Starting with iOS 13.0, this setting requires supervised devices.
+- **Bloquear a remoção de aplicativos do sistema do dispositivo**: escolher **bloco** desabilita a capacidade de remover aplicativos do sistema do dispositivo. **Não configurado** (padrão) permite que os usuários removam aplicativos do sistema.
 
-- **Safari Autofill**: **Block** disables the autofill feature in Safari on the device. **Não configurado** (predefinição) permite que os utilizadores alterem as definições de preenchimento automático no browser.
+- **Safari**: **Bloquear** usando o navegador Safari no dispositivo. **Não configurado** (padrão) permite que os usuários usem o navegador Safari.
 
-  Starting with iOS 13.0, this setting requires supervised devices.
+  A partir do iOS 13,0, essa configuração requer dispositivos supervisionados.
+
+- **Preenchimento automático do Safari**: o **bloco** desabilita o recurso de preenchimento automático no Safari no dispositivo. **Não configurado** (predefinição) permite que os utilizadores alterem as definições de preenchimento automático no browser.
+
+  A partir do iOS 13,0, essa configuração requer dispositivos supervisionados.
 
 ## <a name="restricted-apps"></a>Aplicações restritas
 
-### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Settings apply to: Device enrollment, Automated device enrollment (supervised)
+### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>As configurações se aplicam a: registro de dispositivo, registro de dispositivo automatizado (supervisionado)
 
-- **Type of restricted apps list**: Create a list of apps that users aren't allowed to install or use. As opções são:
+- **Tipo de lista de aplicativos restritos**: Crie uma lista de aplicativos que os usuários não têm permissão para instalar ou usar. As opções são:
 
-  - **Not configured** (default): There are no restrictions from Intune. Users have access to apps you assign, and built-in apps.
-  - **Prohibited apps**: Apps not managed by Intune that you don't want installed on the device. Users aren't prevented from installing a prohibited app. But if a user installs an app from this list, it's reported in Intune.
-  - **Approved apps**: Apps that users are allowed to install. Os utilizadores não podem instalar aplicações que não estejam listadas. As aplicações geridas pelo Intune são automaticamente permitidas. Os utilizadores não são impedidos de instalar uma aplicação que não esteja na lista aprovada. But if they do, it's reported in Intune.
+  - **Não configurado** (padrão): não há restrições do Intune. Os usuários têm acesso aos aplicativos que você atribui e aos aplicativos internos.
+  - **Aplicativos proibidos**: aplicativos não gerenciados pelo Intune que você não deseja instalar no dispositivo. Os usuários não são impedidos de instalar um aplicativo proibido. Mas se um usuário instalar um aplicativo dessa lista, ele será relatado no Intune.
+  - **Aplicativos aprovados**: aplicativos que os usuários têm permissão para instalar. Os utilizadores não podem instalar aplicações que não estejam listadas. As aplicações geridas pelo Intune são automaticamente permitidas. Os utilizadores não são impedidos de instalar uma aplicação que não esteja na lista aprovada. Mas, se isso for feito, ele será relatado no Intune.
 
 Para adicionar aplicações a estas listas, pode:
 
-- **Adicionar** o URL do iTunes App Store da aplicação desejada. For example, to add the Microsoft Work Folders app, enter `https://itunes.apple.com/us/app/work-folders/id950878067?mt=8` or `https://apps.apple.com/us/app/work-folders/id950878067?mt=8`.
+- **Adicionar** o URL do iTunes App Store da aplicação desejada. Por exemplo, para adicionar o aplicativo de pastas de trabalho da Microsoft, digite `https://itunes.apple.com/us/app/work-folders/id950878067?mt=8` ou `https://apps.apple.com/us/app/work-folders/id950878067?mt=8`.
 
   Para localizar o URL de uma aplicação, abra o iTunes App Store e procure a aplicação. Por exemplo, procure `Microsoft Remote Desktop` ou `Microsoft Word`. Selecione a aplicação e copie o URL.
 
   Também pode utilizar o iTunes para localizar a aplicação e, em seguida, utilizar a tarefa **Copiar Ligação** para obter o URL da aplicação.
 
-- **Import** a CSV file with details about the app, including the URL. Utilize o formato `<app url>, <app name>, <app publisher>`. Or, **Export** an existing list that includes the restricted apps list in the same format.
+- **Importe** um arquivo CSV com detalhes sobre o aplicativo, incluindo a URL. Utilize o formato `<app url>, <app name>, <app publisher>`. Ou então, **exporte** uma lista existente que inclui a lista de aplicativos restritos no mesmo formato.
 
 > [!IMPORTANT]
 > Os perfis de dispositivo que utilizam as definições de aplicações restritas têm de ser atribuídos a grupos de utilizadores.
 
 ## <a name="show-or-hide-apps"></a>Mostrar ou ocultar aplicações
 
-Applies to devices running iOS 9.3 or newer.
+Aplica-se a dispositivos que executam o iOS 9,3 ou mais recente.
 
-### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Settings apply to: Automated device enrollment (supervised)
+### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>As configurações se aplicam a: registro de dispositivo automatizado (supervisionado)
 
-- **Type of apps list**: Create a list of apps to show or hide. You can show or hide built-in apps and line-of-business apps. Apple's web site has a list of [built-in Apple apps](https://support.apple.com/HT208094). As opções são:
+- **Tipo de lista de aplicativos**: Crie uma lista de aplicativos para mostrar ou ocultar. Você pode mostrar ou ocultar aplicativos internos e aplicativos de linha de negócios. O site da Apple tem uma lista de [aplicativos da Apple internos](https://support.apple.com/HT208094). As opções são:
 
-  - **Hidden apps**: Enter a list of apps that are hidden from users. Os utilizadores não podem ver nem abrir estas aplicações.
+  - **Aplicativos ocultos**: Insira uma lista de aplicativos que estão ocultos dos usuários. Os utilizadores não podem ver nem abrir estas aplicações.
   
-    Apple prevents hiding some native apps. For example, you can't hide the **Settings** or **Wallet** apps on the device. [Delete built-in Apple apps](https://support.apple.com/HT208094) lists the apps that can be hidden.
+    A Apple impede a ocultação de alguns aplicativos nativos. Por exemplo, você não pode ocultar as **configurações** ou os aplicativos de **carteira** no dispositivo. [Excluir aplicativos da Apple internos](https://support.apple.com/HT208094) lista os aplicativos que podem ser ocultados.
   
-  - **Visible apps**: Enter a list of apps that users can view and launch. Mais nenhuma outra aplicação pode ser vista ou lançada.
+  - **Aplicativos visíveis**: Insira uma lista de aplicativos que os usuários podem exibir e iniciar. Mais nenhuma outra aplicação pode ser vista ou lançada.
 
-- **App URL**: Enter the store app URL of the app you want to show or hide. Por exemplo:
+- **URL do aplicativo**: Insira a URL do aplicativo da loja do aplicativo que você deseja mostrar ou ocultar. Por exemplo:
 
-  - To add the Microsoft Work Folders app, enter `https://itunes.apple.com/us/app/work-folders/id950878067?mt=8` or `https://apps.apple.com/us/app/work-folders/id950878067?mt=8`. 
+  - Para adicionar o aplicativo de pastas de trabalho da Microsoft, digite `https://itunes.apple.com/us/app/work-folders/id950878067?mt=8` ou `https://apps.apple.com/us/app/work-folders/id950878067?mt=8`. 
 
-  - To add the Microsoft Word app, enter `https://itunes.apple.com/de/app/microsoft-word/id586447913` or `https://apps.apple.com/de/app/microsoft-word/id586447913`.
+  - Para adicionar o aplicativo Microsoft Word, digite `https://itunes.apple.com/de/app/microsoft-word/id586447913` ou `https://apps.apple.com/de/app/microsoft-word/id586447913`.
 
   Para localizar o URL de uma aplicação, abra o iTunes App Store e procure a aplicação. Por exemplo, procure `Microsoft Remote Desktop` ou `Microsoft Word`. Selecione a aplicação e copie o URL.
 
   Também pode utilizar o iTunes para localizar a aplicação e, em seguida, utilizar a tarefa **Copiar Ligação** para obter o URL da aplicação.
   
-  For more information about locating a Bundle ID, see [How to find the bundle ID for an iOS app](https://support.microsoft.com/help/4294074/how-to-find-the-bundle-id-for-an-ios-app).
+  Para obter mais informações sobre como localizar uma ID de pacote, consulte [como encontrar a ID de pacote para um aplicativo IOS](https://support.microsoft.com/help/4294074/how-to-find-the-bundle-id-for-an-ios-app).
 
-- **App Bundle ID**: Enter the app [bundle ID](bundle-ids-built-in-ios-apps.md) of the app you want. You can show or hide built-in apps and line-of-business apps. Apple's web site has a list of [built-in Apple apps](https://support.apple.com/HT208094).
-- **App name**: Enter the app name of the app you want. You can show or hide built-in apps and line-of-business apps. Apple's web site has a list of [built-in Apple apps](https://support.apple.com/HT208094).
-- **Publisher**: Enter the publisher of the app you want.
+- **ID do lote de aplicativos**: Insira a [ID de lote](bundle-ids-built-in-ios-apps.md) do aplicativo que você deseja. Você pode mostrar ou ocultar aplicativos internos e aplicativos de linha de negócios. O site da Apple tem uma lista de [aplicativos da Apple internos](https://support.apple.com/HT208094).
+- **Nome do aplicativo**: Insira o nome do aplicativo que você deseja. Você pode mostrar ou ocultar aplicativos internos e aplicativos de linha de negócios. O site da Apple tem uma lista de [aplicativos da Apple internos](https://support.apple.com/HT208094).
+- **Editor**: Insira o editor do aplicativo desejado.
 
 Para adicionar aplicações, pode:
 
-- **Add**: Select to create your list of apps.
-- **Import** a CSV file with details about the app, including the URL. Utilize o formato `<app url>, <app name>, <app publisher>`. Or, **Export** to create a list of the restricted apps you added, in the same format.
+- **Adicionar**: Selecione para criar sua lista de aplicativos.
+- **Importe** um arquivo CSV com detalhes sobre o aplicativo, incluindo a URL. Utilize o formato `<app url>, <app name>, <app publisher>`. Ou, **Exportar** para criar uma lista de aplicativos restritos que você adicionou, no mesmo formato.
 
 ## <a name="wireless"></a>Sem fios
 
-### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Settings apply to: Device enrollment, Automated device enrollment (supervised)
+### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>As configurações se aplicam a: registro de dispositivo, registro de dispositivo automatizado (supervisionado)
 
-Note needed for Data Roaming (Tip or important note to help with customer confusion): This setting will not show up on the targeted device's management profile. That is because this setting is treated as a remote device action, and every time the state of data roaming is changed on the device, it will become blocked again by the Intune service. Even though it is not in the management profile, it is working if it showing as a success from the reporting in the admin console. 
-- **Data roaming**: Choose **Block** to prevent data roaming over the cellular network. **Não configurado** (predefinição) permite o roaming de dados quando o dispositivo está numa rede móvel.
-
-  > [!IMPORTANT]
-  > This setting is treated as a remote device action. So, this setting isn't shown in the management profile on the device. Every time the data roaming status changes on the device, **Data roaming** is blocked by the Intune service. In Intune, if the reporting status shows a success, then know that it's working, even though the setting isn't shown in the management profile on the device.
-
-- **Global background fetch while roaming**: **Block** prevents using the global background fetch feature when roaming over the cellular network. **Não configurado** (predefinição) permite que o dispositivo obtenha dados, como o e-mail, quando estiver a utilizar o roaming numa rede móvel.
-- **Voice dialing**: Choose **Block** to prevent users from using the voice dialing feature on the device. **Não configurado** (predefinição) permite a marcação por voz no dispositivo.
-- **Voice roaming**: Choose **Block** to prevent voice roaming over the cellular network. **Não configurado** (predefinição) permite as chamadas em roaming quando o dispositivo está numa rede móvel.
-- **Personal Hotspot**: **Block** turns off the personal hotspot on the users' device with every device sync. This setting might not be compatible with some carriers. **Não configurado** (predefinição) mantém a configuração do hotspot pessoal como o conjunto predefinido pelo utilizador.
+Observação necessária para o roaming de dados (dica ou nota importante para ajudar com a confusão do cliente): essa configuração não aparecerá no perfil de gerenciamento do dispositivo de destino. Isso ocorre porque essa configuração é tratada como uma ação de dispositivo remoto e sempre que o estado de roaming de dados é alterado no dispositivo, ele se tornará bloqueado novamente pelo serviço do Intune. Mesmo que não esteja no perfil de gerenciamento, ele estará funcionando se ele aparecer como um sucesso do relatório no console de administração. 
+- **Roaming de dados**: escolha **Bloquear** para impedir o roaming de dados na rede celular. **Não configurado** (predefinição) permite o roaming de dados quando o dispositivo está numa rede móvel.
 
   > [!IMPORTANT]
-  > This setting is treated as a remote device action. So, this setting isn't shown in the management profile on the device. Every time the personal hotspot status changes on the device, **Personal Hotspot** is blocked by the Intune service. In Intune, if the reporting status shows a success, then know that it's working, even though the setting isn't shown in the management profile on the device.
+  > Essa configuração é tratada como uma ação de dispositivo remoto. Portanto, essa configuração não é mostrada no perfil de gerenciamento no dispositivo. Sempre que o status de roaming de dados é alterado no dispositivo, o **roaming de dados** é bloqueado pelo serviço do Intune. No Intune, se o status do relatório mostrar um êxito, saiba que ele está funcionando, mesmo que a configuração não seja mostrada no perfil de gerenciamento no dispositivo.
 
-- **Cellular usage rules (managed apps only)** : Define the data types that managed apps can use when on cellular networks. As opções são:
-  - **Block use of cellular data**: Block using cellular data for **All managed apps** or **Choose specific apps**.
-  - **Block use of cellular data when roaming**: Block using cellular data when roaming for **All managed apps** or **Choose specific apps**.
+- **Busca em segundo plano global durante o roaming**: **Bloquear** impede o uso do recurso de busca em segundo plano global ao fazer roaming na rede celular. **Não configurado** (predefinição) permite que o dispositivo obtenha dados, como o e-mail, quando estiver a utilizar o roaming numa rede móvel.
+- **Discagem por voz**: escolha **Bloquear** para impedir que os usuários usem o recurso de discagem por voz no dispositivo. **Não configurado** (predefinição) permite a marcação por voz no dispositivo.
+- **Roaming de voz**: escolha **Bloquear** para impedir o roaming de voz na rede celular. **Não configurado** (predefinição) permite as chamadas em roaming quando o dispositivo está numa rede móvel.
+- **Hotspot pessoal**: o **bloco** desativa o hotspot pessoal no dispositivo dos usuários com cada sincronização de dispositivo. Essa configuração pode não ser compatível com algumas operadoras. **Não configurado** (predefinição) mantém a configuração do hotspot pessoal como o conjunto predefinido pelo utilizador.
 
-### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Settings apply to: Automated device enrollment (supervised)
+  > [!IMPORTANT]
+  > Essa configuração é tratada como uma ação de dispositivo remoto. Portanto, essa configuração não é mostrada no perfil de gerenciamento no dispositivo. Sempre que o status de hotspot pessoal é alterado no dispositivo, o **hotspot pessoal** é bloqueado pelo serviço do Intune. No Intune, se o status do relatório mostrar um êxito, saiba que ele está funcionando, mesmo que a configuração não seja mostrada no perfil de gerenciamento no dispositivo.
 
-- **Changes to app cellular data usage settings**: Choose **Block** to prevent changes to the app cellular data usage settings. **Não configurado** (predefinição) permite que o utilizador controle quais aplicações podem utilizar os dados via rede móvel.
-- **Changes to cellular plan settings**: **Block** prevents users from changing any settings in the cellular plan. **Não configurado** (predefinição) permite que os utilizadores façam alterações.
+- **Regras de uso de celular (somente aplicativos gerenciados)** : define os tipos de dados que os aplicativos gerenciados podem usar quando em redes de celular. As opções são:
+  - **Bloquear o uso de dados da rede celular**: bloqueie o uso de dados da rede celular para **todos os aplicativos gerenciados** ou **escolha aplicativos específicos**.
+  - **Bloquear o uso de dados da rede celular em roaming**: bloqueie o uso de dados da rede celular quando estiver em roaming para **todos os aplicativos gerenciados** ou **escolha aplicativos específicos**.
 
-  Esta funcionalidade aplica-se a:  
-  - iOS 11.0 and newer
+### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>As configurações se aplicam a: registro de dispositivo automatizado (supervisionado)
 
-- **User modification of Personal Hotspot**: When set to **Block**, the user can't change the personal hotspot setting. **Not configured** (default) allows end users to enable or disable their personal hotspot.
-
-  If you block this setting and block the **Personal Hotspot** setting, the personal hotspot is turned off.
-
-  Esta funcionalidade aplica-se a:  
-  - iOS 12.2 and newer
-
-- **Join Wi-Fi networks only using configuration profiles**: **Require** forces the device to use only Wi-Fi networks set up through Intune configuration profiles. **Não configurado** (predefinição) permite que o dispositivo utilize outras redes Wi-Fi.
-- **Wi-Fi always turned on**: When set to **Require**, Wi-Fi stays on in the Settings app. It can't be turned off in Settings or in the Control Center, even when the device is in airplane mode. **Not configured** (default) allows the user to control turning on or turning off Wi-Fi.
-
-  Configuring this setting doesn't prevent users from selecting a Wi-Fi network.
+- **Alterações nas configurações de uso de dados para celular do aplicativo**: escolha **Bloquear** para evitar alterações nas configurações de uso de dados de celular do aplicativo. **Não configurado** (predefinição) permite que o utilizador controle quais aplicações podem utilizar os dados via rede móvel.
+- **Alterações nas configurações do plano celular**: o **bloco** impede que os usuários alterem as configurações no plano da rede celular. **Não configurado** (predefinição) permite que os utilizadores façam alterações.
 
   Esta funcionalidade aplica-se a:  
-  - iOS and iPadOS 13.0 and newer
+  - iOS 11,0 e mais recente
+
+- **Modificação do usuário de hotspot pessoal**: quando definido como **Bloquear**, o usuário não pode alterar a configuração de hotspot pessoal. **Não configurado** (padrão) permite que os usuários finais habilitem ou desabilitem seus hotspots pessoais.
+
+  Se você bloquear essa configuração e bloquear a configuração de ponto de interrupção **pessoal** , o hotspot pessoal será desativado.
+
+  Esta funcionalidade aplica-se a:  
+  - iOS 12,2 e mais recente
+
+- **Unir redes Wi-Fi usando somente perfis de configuração**: **exigir** força o dispositivo a usar apenas redes Wi-Fi configuradas por meio de perfis de configuração do Intune. **Não configurado** (predefinição) permite que o dispositivo utilize outras redes Wi-Fi.
+- **Wi-Fi sempre ativado**: quando definido como **exigir**, o Wi-Fi permanece no aplicativo de configurações. Ele não pode ser desativado em configurações ou no centro de controle, mesmo quando o dispositivo está no modo avião. **Não configurado** (padrão) permite que o usuário controle a ativação ou desativação do Wi-Fi.
+
+  Definir essa configuração não impede que os usuários selecionem uma rede Wi-Fi.
+
+  Esta funcionalidade aplica-se a:  
+  - iOS e iPadOS 13,0 e mais recentes
 
 ## <a name="connected-devices"></a>Dispositivos Ligados
 
-### <a name="settings-apply-to-all-enrollment-types"></a>Settings apply to: All enrollment types
+### <a name="settings-apply-to-all-enrollment-types"></a>As configurações se aplicam a: todos os tipos de registro
 
-- **Wrist detection for paired Apple watch**: **Require** forces a paired Apple watch to use wrist detection. Quando exigido, o Apple Watch não apresenta notificações quando não estiver a ser utilizado. 
+- **Detecção de pulso para Apple Watch emparelhado**: **exigir** força uma Apple Watch emparelhada a usar a detecção de pulso. Quando exigido, o Apple Watch não apresenta notificações quando não estiver a ser utilizado. 
 
-### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Settings apply to: Device enrollment, Automated device enrollment (supervised)
+### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>As configurações se aplicam a: registro de dispositivo, registro de dispositivo automatizado (supervisionado)
 
-- **Require AirPlay outgoing requests pairing password**: **Require** a pairing password when the user uses AirPlay to stream content to other Apple devices. **Não configurado** (predefinição) permite que o utilizador transmita conteúdo através do AirPlay sem introduzir uma palavra-passe.
+- **Exigir senha de emparelhamento de solicitações de saída do Airplay**: **requer** uma senha de emparelhamento quando o usuário usa o Airplay para transmitir conteúdo para outros dispositivos da Apple. **Não configurado** (predefinição) permite que o utilizador transmita conteúdo através do AirPlay sem introduzir uma palavra-passe.
 
-### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Settings apply to: Automated device enrollment (supervised)
+### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>As configurações se aplicam a: registro de dispositivo automatizado (supervisionado)
 
-- **AirDrop**: **Block** prevents using AirDrop on the device. **Não configurado** (predefinição) permite utilizar a funcionalidade AirDrop para trocar conteúdo com os dispositivos próximos.
-- **Apple Watch pairing**: **Block** prevents pairing with an Apple Watch. **Não configurado** (predefinição) permite que o dispositivo seja emparelhado com um Apple Watch.
-- **Bluetooth modification**: **Block** stops the end user from changing Bluetooth settings on the device. **Não configurado** (predefinição) permite que o utilizador altere estas definições.
-- **Host pairing to control the devices an iOS device can pair with**: **Not configured** (default) allows host pairing to let the administrator control which devices an iOS device can pair with. **Bloquear** impede o emparelhamento de anfitriões.
-- **Block AirPrint**: Choose **Block** to prevent using the AirPrint feature on the device. **Não configurado** (predefinição) permite que o utilizador utilize o AirPrint.
-  - **Block storage of AirPrint credentials in Keychain**: **Block** prevents using Keychain storage for username and password on the device. **Não configurado** (predefinição) permite o armazenamento do nome de utilizador e da palavra-passe do AirPrint na aplicação Keychain.
-  - **Require a trusted TLS certificate for AirPrint**: **Require** forces the device to use trusted certificates for TLS printing communication.
-  - **Block iBeacon discovery of AirPrint printers**: **Block** prevents malicious AirPrint Bluetooth beacons from phishing for network traffic. **Não configurado** (predefinição) permite a publicidade de impressoras AirPrint no dispositivo.
-- **Block setting up new nearby devices**: **Block** disables the prompt to set up new devices that are nearby. **Não configurado** (predefinição) permite apresentar avisos aos utilizadores para se ligarem a outros dispositivos Apple próximos.
-
-  Esta funcionalidade aplica-se a:  
-  - iOS 11.0 and newer
-
-- **Access to files on USB drive**: Devices can connect and open files on a USB drive. **Disable** prevents device access to the USB drive in the Files app when a USB is connected to the device. Disabling this feature also blocks end users from transferring files onto a USB drive connected to an iPad. **Not configured** (default) allows access to a USB drive in the Files app.
+- O **essoltar**: **Bloquear** impede o uso do essoltar no dispositivo. **Não configurado** (predefinição) permite utilizar a funcionalidade AirDrop para trocar conteúdo com os dispositivos próximos.
+- **Emparelhamento de Apple Watch**: **Bloquear** impede o emparelhamento com um Apple Watch. **Não configurado** (predefinição) permite que o dispositivo seja emparelhado com um Apple Watch.
+- **Modificação de Bluetooth**: o **bloco** impede que o usuário final altere as configurações de Bluetooth no dispositivo. **Não configurado** (predefinição) permite que o utilizador altere estas definições.
+- **Emparelhamento de host para controlar os dispositivos com os quais um dispositivo IOS pode ser emparelhado**: **não configurado** (padrão) permite o emparelhamento de host para permitir que o administrador controle quais dispositivos um dispositivo IOS pode emparelhar. **Bloquear** impede o emparelhamento de anfitriões.
+- **Bloquear o enprint**: escolha o **bloco** para impedir o uso do recurso de impressão no dispositivo. **Não configurado** (predefinição) permite que o utilizador utilize o AirPrint.
+  - **Bloquear o armazenamento de credenciais de impressão no**conjunto de chaves: o **bloco** impede o uso do armazenamento de conjunto de chaves para nome de usuário e senha no dispositivo. **Não configurado** (predefinição) permite o armazenamento do nome de utilizador e da palavra-passe do AirPrint na aplicação Keychain.
+  - **Exigir um certificado TLS confiável para o esprint**: **exigir** força o dispositivo a usar certificados confiáveis para comunicação de impressão TLS.
+  - **Bloquear a descoberta de iBeacon de impressoras de impressão**: **Bloquear** impede que beacons Bluetooth de impressão mal-intencionada de phishing para tráfego de rede. **Não configurado** (predefinição) permite a publicidade de impressoras AirPrint no dispositivo.
+- **Bloquear a configuração de novos dispositivos próximos**: o **bloco** desabilita o prompt para configurar novos dispositivos que estão próximos. **Não configurado** (predefinição) permite apresentar avisos aos utilizadores para se ligarem a outros dispositivos Apple próximos.
 
   Esta funcionalidade aplica-se a:  
-  - iOS and iPadOS 13.0 and newer
+  - iOS 11,0 e mais recente
+
+- **Acesso a arquivos na unidade USB**: os dispositivos podem se conectar e abrir arquivos em uma unidade USB. **Desabilitar** impede o acesso do dispositivo à unidade USB no aplicativo arquivos quando um USB está conectado ao dispositivo. Desabilitar esse recurso também impede que os usuários finais transfiram arquivos para uma unidade USB conectada a um iPad. **Não configurado** (padrão) permite o acesso a uma unidade USB no aplicativo arquivos.
+
+  Esta funcionalidade aplica-se a:  
+  - iOS e iPadOS 13,0 e mais recentes
 
 ## <a name="keyboard-and-dictionary"></a>Teclado e Dicionário
 
-### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Settings apply to: Automated device enrollment (supervised)
+### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>As configurações se aplicam a: registro de dispositivo automatizado (supervisionado)
 
-- **Word definition lookup**: **Block** prevents user from highlighting a word, and then looking up its definition on the device. **Não configurado** (predefinição) permite o acesso ao recurso de pesquisa de definição.
-- **Predictive keyboards**: **Not configured** (default) allows using predictive keyboards to suggest words the user might want. **Bloquear** impede esta funcionalidade.
-- **Auto-correction**: **Not configured** (default) allows the device to automatically correct misspelled words. **Bloquear** impede a utilização da correção automática.
-- **Keyboard spell-check**: **Not configured** (default) allows using spellchecker on the device. **Bloquear** não permite a verificação ortográfica.
-- **Keyboard shortcuts**: **Not configured** (default) allows using keyboard shortcuts on the device. **Bloco** impede o utilizador de utilizar os atalhos de teclado.
-- **Dictation**: **Block** stops the user from using voice input to enter text. **Não configurado** (predefinição) permite que o utilizador utilize a entrada de ditado.
-- **QuickPath**: **Not configured** (default) allows users to use QuickPath, which allows a continuous input on the device's keyboard. Users can type by swiping across the keys to create words. **Block** prevents users from using QuickPath. 
+- **Pesquisa de definição de palavra**: **Bloquear** impede que o usuário realce uma palavra e, em seguida, procure sua definição no dispositivo. **Não configurado** (predefinição) permite o acesso ao recurso de pesquisa de definição.
+- **Teclados de previsão**: **não configurado** (padrão) permite o uso de teclados de previsão para sugerir palavras que o usuário pode querer. **Bloquear** impede esta funcionalidade.
+- **Correção automática**: **não configurado** (padrão) permite que o dispositivo corrija automaticamente palavras incorretas. **Bloquear** impede a utilização da correção automática.
+- **Verificação ortográfica do teclado**: **não configurado** (padrão) permite o uso do verificador ortográfico no dispositivo. **Bloquear** não permite a verificação ortográfica.
+- **Atalhos de teclado**: **não configurado** (padrão) permite o uso de atalhos de teclado no dispositivo. **Bloco** impede o utilizador de utilizar os atalhos de teclado.
+- **Dictation**: **Block** impede que o usuário use a entrada de voz para inserir texto. **Não configurado** (predefinição) permite que o utilizador utilize a entrada de ditado.
+- **QuickPath**: **não configurado** (padrão) permite que os usuários usem o QuickPath, que permite uma entrada contínua no teclado do dispositivo. Os usuários podem digitar passando o dedo pelas chaves para criar palavras. **Bloquear** impede que os usuários usem o QuickPath. 
 
   Esta funcionalidade aplica-se a:  
-  - iOS 13.0 and iPadOS 13.0 and newer
+  - iOS 13,0 e iPadOS 13,0 e mais recentes
 
 ## <a name="cloud-and-storage"></a>Cloud e Armazenamento
 
-### <a name="settings-apply-to-all-enrollment-types"></a>Settings apply to: All enrollment types
+### <a name="settings-apply-to-all-enrollment-types"></a>As configurações se aplicam a: todos os tipos de registro
 
-- **Encrypted backup**: **Require** so device backups must be encrypted.
-- **Managed apps sync to cloud**: **Not configured** (default) allows your Intune-manages apps to sync data to the user's iCloud account. **Bloquear** impede esta sincronização de dados com o iCloud.
-- **Block Enterprise Book Backup**: Choose **Block** to prevent users from backing up enterprise books. **Not configured** (default) allows users to back up these books.
-- **Block enterprise book metadata sync (notes and highlights)** : **Block** prevents syncing notes and highlights in enterprise books. **Not configured** (default) allows the syncing.
+- **Backup criptografado**: **requer** que os backups de dispositivo sejam criptografados.
+- Os **aplicativos gerenciados sincronizam com a nuvem**: **não configurado** (padrão) permite que seus aplicativos de gerenciamento do Intune sincronizem dados com a conta do icloud do usuário. **Bloquear** impede esta sincronização de dados com o iCloud.
+- **Bloquear o backup do catálogo corporativo**: escolha **Bloquear** para impedir que os usuários façam backup de livros empresariais. **Não configurado** (padrão) permite que os usuários façam backup desses livros.
+- **Bloquear a sincronização de metadados do catálogo corporativo (observações e destaques)** : **Bloquear** impede a sincronização de anotações e destaques em livros empresariais. **Não configurado** (padrão) permite a sincronização.
 
-### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Settings apply to: Device enrollment, Automated device enrollment (supervised)
+### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>As configurações se aplicam a: registro de dispositivo, registro de dispositivo automatizado (supervisionado)
 
-- **Photo stream syncing to iCloud**: **Not configured** (default) lets users enable **My Photo Stream** on their device to sync to iCloud, and have photos available on all the user's devices. **Bloquear** impede a sincronização do fluxo de fotografias com o iCloud. Blocking this feature may cause data loss. 
-- **iCloud Photo Library**: Set to **Block** to disable using iCloud photo library to store photos and videos in the cloud. Todas as fotografias que não tiverem sido completamente transferidas da Fototeca em iCloud para o dispositivo serão removidas do dispositivo. **Not configured** (default) allows using the iCloud photo library.
-- **Shared photo stream**: Choose **Block** to disable **iCloud Photo Sharing** on the device. **Not configured** (default) allows shared photo streaming.
-- **Handoff**: **Not configured** (default) allows users to start work on an iOS device, and then continue the work they started on another iOS or macOS device. **Bloquear** impede esta passagem de informações.
+- **Sincronização de fluxo de fotos para icloud**: **não configurado** (padrão) permite que os usuários habilitem **meu fluxo de fotos** em seu dispositivo para sincronizar com o iCloud e ter fotos disponíveis em todos os dispositivos do usuário. **Bloquear** impede a sincronização do fluxo de fotografias com o iCloud. O bloqueio desse recurso pode causar perda de dados. 
+- **biblioteca de fotos do icloud**: Defina como **Bloquear** para desabilitar usando a biblioteca de fotos do icloud para armazenar fotos e vídeos na nuvem. Todas as fotografias que não tiverem sido completamente transferidas da Fototeca em iCloud para o dispositivo serão removidas do dispositivo. **Não configurado** (padrão) permite usar a biblioteca de fotos do icloud.
+- **Fluxo de fotos compartilhado**: escolha o **bloco** para desabilitar o **compartilhamento de fotos do icloud** no dispositivo. **Não configurado** (padrão) permite o streaming de fotos compartilhado.
+- **Entrega**: **não configurado** (padrão) permite que os usuários iniciem o trabalho em um dispositivo IOS e, em seguida, continuem o trabalho iniciado em outro dispositivo IOS ou MacOS. **Bloquear** impede esta passagem de informações.
 
-### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Settings apply to: Automated device enrollment (supervised)
+### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>As configurações se aplicam a: registro de dispositivo automatizado (supervisionado)
 
-- **Backup to iCloud**: **Not configured** (default) allows the user to back up the device to iCloud. **Bloquear** impede que o utilizador faça cópias de segurança do dispositivo para o iCloud.
+- **Backup no iCloud**: **não configurado** (padrão) permite que o usuário faça backup do dispositivo no iCloud. **Bloquear** impede que o utilizador faça cópias de segurança do dispositivo para o iCloud.
 
-  Starting with iOS 13.0, this setting requires supervised devices.
+  A partir do iOS 13,0, essa configuração requer dispositivos supervisionados.
 
-- **Block iCloud Document sync**: **Not configured** (default) allows document and key-value synchronization to your iCloud storage space. **Bloquear** impede o iCloud de sincronizar documentos e dados.
+- **Bloquear a sincronização de documentos do icloud**: **não configurado** (padrão) permite a sincronização de documento e chave-valor para o espaço de armazenamento do icloud. **Bloquear** impede o iCloud de sincronizar documentos e dados.
 
-  Starting with iOS 13.0, this setting requires supervised devices.
+  A partir do iOS 13,0, essa configuração requer dispositivos supervisionados.
 
-- **Block iCloud Keychain sync**: Choose **Block** to disable syncing credentials stored in the Keychain to iCloud. **Não configurado** (predefinição) permite aos utilizadores sincronizar estas credenciais.
+- **Bloquear sincronização**de conjunto de chaves do icloud: escolha o **bloco** para desabilitar a sincronização de credenciais armazenadas no conjunto de chaves no iCloud. **Não configurado** (predefinição) permite aos utilizadores sincronizar estas credenciais.
 
-  Starting with iOS 13.0, this setting requires supervised devices.
+  A partir do iOS 13,0, essa configuração requer dispositivos supervisionados.
 
-## <a name="autonomous-single-app-mode"></a>Autonomous single app mode
+## <a name="autonomous-single-app-mode"></a>Modo de aplicativo único autônomo
 
 Utilize estas definições para configurar os dispositivos iOS para executar aplicações específicas no modo de aplicação única autónomo. Quando este modo está configurado e a aplicação é executada, o dispositivo é bloqueado. Pode executar apenas essa aplicação. Por exemplo, adicione uma aplicação que permita que os utilizadores façam um teste no dispositivo. Quando as ações das aplicações forem concluídas ou quando remover esta política, o dispositivo regressa ao estado de funcionamento normal.
 
-### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Settings apply to: Automated device enrollment (supervised)
+### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>As configurações se aplicam a: registro de dispositivo automatizado (supervisionado)
 
-- **App name**: Enter the name of the app you want.
-- **App Bundle ID**: Enter the [bundle ID](bundle-ids-built-in-ios-apps.md) of the app you want.
-- **Add**: Select to create your list of apps.
+- **Nome do aplicativo**: Insira o nome do aplicativo desejado.
+- **ID do lote de aplicativos**: Insira a [ID de pacote](bundle-ids-built-in-ios-apps.md) do aplicativo desejado.
+- **Adicionar**: Selecione para criar sua lista de aplicativos.
 
-You can also **Import** a CSV file with the list of app names and their bundle IDs. Ou **Exportar** uma lista existente que inclua as aplicações.
+Você também pode **importar** um arquivo CSV com a lista de nomes de aplicativos e suas IDs de pacote. Ou **Exportar** uma lista existente que inclua as aplicações.
 
 ## <a name="kiosk"></a>Modo de Local Público
 
-### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Settings apply to: Automated device enrollment (supervised)
+### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>As configurações se aplicam a: registro de dispositivo automatizado (supervisionado)
 
-- **App to run in kiosk mode**: Choose the type of apps you want to run in kiosk mode. As opções são:
-  - **Not configured** (default): Kiosk settings aren't applied. O dispositivo não é executado no modo de quiosque.
-  - **Store App**: Enter the URL to an app in the iTunes App store.
-  - **Managed App**: Choose an app you added to Intune.
-  - **Built-In App**: Enter the [bundle ID](bundle-ids-built-in-ios-apps.md) of the built-in app.
+- **Aplicativo a ser executado no modo de quiosque**: escolha o tipo de aplicativos que você deseja executar no modo de quiosque. As opções são:
+  - **Não configurado** (padrão): as configurações de quiosque não são aplicadas. O dispositivo não é executado no modo de quiosque.
+  - **Aplicativo da loja**: Insira a URL para um aplicativo na iTunes App Store.
+  - **Aplicativo gerenciado**: escolha um aplicativo que você adicionou ao Intune.
+  - **Aplicativo interno**: Insira a ID do [pacote](bundle-ids-built-in-ios-apps.md) do aplicativo interno.
 
-- **Assistive touch**: **Require** the Assistive Touch accessibility setting be on the device. Esta funcionalidade ajuda os utilizadores com os gestos no ecrã que podem ser difíceis para eles. **Não configurado** não permite executar ou ativar esta funcionalidade no modo de quiosque.
-- **Invert colors**: **Require** the Invert Colors accessibility setting so users with visual impairments can change the display screen. **Não configurado** não permite executar ou ativar esta funcionalidade no modo de quiosque.
-- **Mono audio**: **Require** the Mono audio accessibility setting be on the device. **Não configurado** não permite executar ou ativar esta funcionalidade no modo de quiosque.
-- **Voice control**: **Require** enables voice control on the device, and allows users to fully control the OS using Siri commands. **Not configured** disables voice control on the device.
+- **Toque assistencial**: **exigir** que a configuração de acessibilidade de toque assistencial esteja no dispositivo. Esta funcionalidade ajuda os utilizadores com os gestos no ecrã que podem ser difíceis para eles. **Não configurado** não permite executar ou ativar esta funcionalidade no modo de quiosque.
+- **Inverter cores**: **requer** a configuração de acessibilidade inverter cores para que os usuários com deficiências visuais possam alterar a tela de exibição. **Não configurado** não permite executar ou ativar esta funcionalidade no modo de quiosque.
+- **Áudio mono**: **exigir** que a configuração de acessibilidade de áudio mono esteja no dispositivo. **Não configurado** não permite executar ou ativar esta funcionalidade no modo de quiosque.
+- **Controle de voz**: **requer** habilitar o controle de voz no dispositivo e permite que os usuários CONTROLEM totalmente o sistema operacional usando comandos Siri. **Não configurado** desabilita o controle de voz no dispositivo.
 
   Esta definição aplica-se a:  
-  - iOS 13.0 and newer
-  - iPadOS 13.0 and newer
+  - iOS 13,0 e mais recente
+  - iPadOS 13,0 e mais recente
   
   > [!TIP]
-  > If you have LOB apps available for your organization, and they're not **Voice Control** ready on day 0 when iOS 13.0 releases, then we recommend you leave this setting as **Not configured**.
+  > Se você tiver aplicativos LOB disponíveis para sua organização e eles não estiverem no **controle de voz** pronto no dia 0 quando versões Ios 13,0, recomendamos que você deixe essa configuração como **não configurada**.
 
-- **VoiceOver**: **Require** the VoiceOver accessibility setting be on the device to read text on the screen out loud. **Não configurado** não permite executar ou ativar esta funcionalidade no modo de quiosque.
-- **Zoom**: **Require** the Zoom setting be on the device to let users use touch to zoom in on the screen. **Não configurado** não permite executar ou ativar esta funcionalidade no modo de quiosque.
-- **Auto lock**: **Block** prevents automatic locking of the device. **Not configured** allows this feature.
-- **Ringer switch**: **Block** disables the ringer (mute) switch on the device. **Not configured** allows this feature.
-- **Screen rotation**: **Block** prevents changing the screen orientation when the user rotates the device. **Not configured** allows this feature.
-- **Screen sleep button**: Choose **Block** to disable the screen sleep wake button on the device. **Not configured** allows this feature.
-- **Touch**: **Block** disables the touchscreen on the device. **Não configurado** permite que o utilizador utilize o ecrã tátil.
-- **Volume buttons**: **Block** prevents using the volume buttons on the device. **Not configured** allows the volume buttons.
-- **Assistive touch control**: **Allow** let users use the assistive touch function. **Não configurado** desativa esta funcionalidade.
-- **Invert colors control**: **Allow** invert color changes to let users adjust the invert colors function. **Não configurado** desativa esta funcionalidade.
-- **Speak on selected text**: **Allow** the Speak Selection accessibility settings be on the device. Esta funcionalidade lê em voz alta o texto que o utilizador seleciona. **Não configurado** desativa esta funcionalidade.
-- **Voice control modification**: **Allow** users to change the state of voice control on their devices. **Not configured** blocks users from changing the state of voice control on their devices.
+- **VoiceOver**: **exigir** que a configuração de acessibilidade do VoiceOver esteja no dispositivo para ler o texto na tela em voz alta. **Não configurado** não permite executar ou ativar esta funcionalidade no modo de quiosque.
+- **Zoom**: **exigir** que a configuração de zoom esteja no dispositivo para permitir que os usuários usem o toque para ampliar na tela. **Não configurado** não permite executar ou ativar esta funcionalidade no modo de quiosque.
+- **Bloqueio automático**: **Bloquear** impede o bloqueio automático do dispositivo. **Não configurado** permite esse recurso.
+- **Opção de toque**: **Bloquear** desabilita a opção de toque (mudo) no dispositivo. **Não configurado** permite esse recurso.
+- **Rotação de tela**: **Bloquear** impede a alteração da orientação da tela quando o usuário gira o dispositivo. **Não configurado** permite esse recurso.
+- **Botão suspensão da tela**: escolha **Bloquear** para desabilitar o botão de ativação de suspensão da tela no dispositivo. **Não configurado** permite esse recurso.
+- **Touch**: **Block** desabilita a tela touch no dispositivo. **Não configurado** permite que o utilizador utilize o ecrã tátil.
+- **Botões de volume**: **bloco** impede o uso dos botões de volume no dispositivo. **Não configurado** permite os botões de volume.
+- **Controle de toque assistencial**: **permitir** que os usuários usem a função de toque assistencial. **Não configurado** desativa esta funcionalidade.
+- **Controle inverter cores**: **permitir** alterações de cores invertidas para permitir que os usuários ajustem a função inverter cores. **Não configurado** desativa esta funcionalidade.
+- **Falar sobre o texto selecionado**: **permitir que** as configurações de acessibilidade de seleção de fala estejam no dispositivo. Esta funcionalidade lê em voz alta o texto que o utilizador seleciona. **Não configurado** desativa esta funcionalidade.
+- **Modificação de controle de voz**: **permite que** os usuários alterem o estado do controle de voz em seus dispositivos. **Não configurado** impede que os usuários alterem o estado do controle de voz em seus dispositivos.
 
   Esta definição aplica-se a:  
-  - iOS 13.0 and newer
-  - iPadOS 13.0 and newer
+  - iOS 13,0 e mais recente
+  - iPadOS 13,0 e mais recente
 
-- **VoiceOver control**: **Allow** voiceover changes to let users update the VoiceOver function, such as how fast on-screen text is read out loud. **Não configurado** impede as alterações ao VoiceOver.
-- **Zoom control**: **Allow** zoom changes by the user. **Não configurado** impede as alterações ao zoom.
+- **Controle de VoiceOver**: **permitir** alterações de VoiceOver para permitir que os usuários atualizem a função VoiceOver, como o quão rápido o texto na tela é lido em alta. **Não configurado** impede as alterações ao VoiceOver.
+- **Controle de zoom**: **permitir** alterações de zoom pelo usuário. **Não configurado** impede as alterações ao zoom.
 
 > [!NOTE]
 > Para poder configurar um dispositivo iOS para o modo de local público, tem de utilizar a ferramenta Apple Configurator ou o Programa de Inscrição de Dispositivos Apple para colocar o dispositivo no modo supervisionado. Consulte o guia da Apple sobre a utilização da ferramenta Apple Configurator.
 > Se a aplicação iOS que introduziu for instalada após a atribuição do perfil, o dispositivo só entrará em modo de quiosque após ser reiniciado.
 
-## <a name="domains"></a>Domains
+## <a name="domains"></a>Domínios
 
-### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Settings apply to: Device enrollment, Automated device enrollment (supervised)
+### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>As configurações se aplicam a: registro de dispositivo, registro de dispositivo automatizado (supervisionado)
 
-- **Unmarked email domains** > **Email Domain URL**: Add one or more URLs to the list. Quando os utilizadores finais receberem um e-mail de um domínio diferentes dos introduzidos, o e-mail será marcado como não fidedigno na aplicação de E-mail do iOS.
+- **Domínios de email desmarcados** > **URL de domínio de email**: Adicione uma ou mais URLs à lista. Quando os utilizadores finais receberem um e-mail de um domínio diferentes dos introduzidos, o e-mail será marcado como não fidedigno na aplicação de E-mail do iOS.
 
 - **Domínios Web geridos** > **URL do Domínio Web**: adicione um ou mais URLs à lista. Quando forem transferidos documentos dos domínios introduzidos, estes serão considerados geridos. Esta definição só se aplica a documentos transferidos através do browser Safari.
 
-### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Settings apply to: Automated device enrollment (supervised)
+### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>As configurações se aplicam a: registro de dispositivo automatizado (supervisionado)
 
-- **Safari password autofill domains** > **Domain URL**: Add one or more URLs to the list. Os utilizadores só podem guardar as palavras-passe Web de URLs nesta lista. This setting applies only to the Safari browser, and devices in supervised mode. If you don't enter any URLs, then passwords can be saved from all web sites.
+- **Domínios de preenchimento de senha do Safari** > **URL de domínio**: Adicione uma ou mais URLs à lista. Os utilizadores só podem guardar as palavras-passe Web de URLs nesta lista. Essa configuração se aplica somente ao navegador Safari e dispositivos no modo supervisionado. Se você não inserir nenhuma URL, as senhas poderão ser salvas de todos os sites da Web.
 
   Esta definição aplica-se a:  
-  - iOS 9.3 and newer
+  - iOS 9,3 e mais recente
 
 ## <a name="settings-that-require-supervised-mode"></a>Definições que exigem o modo supervisionado
 
@@ -653,7 +653,7 @@ O modo supervisionado do iOS só pode ser ativado durante a configuração inici
 - Restrições da IU 
 - Instalação dos perfis de configuração pela IU 
 - Notícias 
-- Keyboard shortcuts 
+- Atalhos de teclado 
 - Modificações do código de acesso 
 - Alterações do nome do dispositivo 
 - Transferências automáticas de aplicações 
@@ -672,11 +672,11 @@ O modo supervisionado do iOS só pode ser ativado durante a configuração inici
 > - iTunes
 > - Conteúdos explícitos
 > - Documentos e dados do iCloud
-> - Multiplayer gaming
+> - Jogos para vários jogadores
 > - Adicionar amigos do Game Center
 > - Siri
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 [Atribua o perfil](../device-profile-assign.md) e [monitorize o respetivo estado](../device-profile-monitor.md).
 

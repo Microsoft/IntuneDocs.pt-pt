@@ -1,6 +1,6 @@
 ---
-title: Check the success or failure of security baselines in Microsoft Intune - Azure | Microsoft Docs
-description: Check the error, conflict, and success status when deploying security baselines to users and devices in Microsoft Intune MDM. See how to troubleshoot using client logs, and the report features in Intune.
+title: Verificar o êxito ou a falha das linhas de base de segurança no Microsoft Intune-Azure | Microsoft Docs
+description: Verifique o status de erro, conflito e êxito ao implantar linhas de base de segurança para usuários e dispositivos no Microsoft Intune MDM. Consulte Como solucionar problemas usando logs do cliente e os recursos de relatório no Intune.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -23,117 +23,117 @@ ms.contentlocale: pt-PT
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74410040"
 ---
-# <a name="monitor-security-baseline-and-profiles-in-microsoft-intune"></a>Monitor security baseline and profiles in Microsoft Intune
+# <a name="monitor-security-baseline-and-profiles-in-microsoft-intune"></a>Monitorar a linha de base e os perfis de segurança no Microsoft Intune
 
-Intune provides several options to monitor your security baselines. You can monitor the security baselines profile that applies to your users and devices. You can also monitor the actual baseline, and any devices that match (or don't match) the recommended values.
+O Intune fornece várias opções para monitorar suas linhas de base de segurança. Você pode monitorar o perfil de linhas de base de segurança que se aplica a seus usuários e dispositivos. Você também pode monitorar a linha de base real e todos os dispositivos que correspondam (ou não correspondam) os valores recomendados.
 
-This article walks you through both monitoring options.
+Este artigo orienta você pelas duas opções de monitoramento.
 
-[Security baselines in Intune](../security-baselines.md) provides more details on the security baselines feature in Microsoft Intune.
+As [linhas de base de segurança no Intune](../security-baselines.md) fornecem mais detalhes sobre o recurso de linhas de base de segurança no Microsoft Intune.
 
-## <a name="monitor-the-baseline-and-your-devices"></a>Monitor the baseline and your devices
+## <a name="monitor-the-baseline-and-your-devices"></a>Monitorar a linha de base e seus dispositivos
 
-When you monitor a baseline, you get insight into the security state of your devices based on Microsoft's recommendations. You can view these insights from the Overview pane of the security baseline in the Intune console.  It takes up to 24 hours for data to appear after you first assign a baseline. Later changes take up to six hours to appear.
+Ao monitorar uma linha de base, você obtém informações sobre o estado de segurança de seus dispositivos com base nas recomendações da Microsoft. Você pode exibir essas informações no painel Visão geral da linha de base de segurança no console do Intune.  Leva até 24 horas para que os dados apareçam depois que você atribui uma linha de base pela primeira vez. As alterações posteriores levam até seis horas para serem exibidas.
 
-To view monitoring data for the baseline and devices, sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431). Next, select **Endpoint security** > **Security Baselines**, select a baseline, and view the **Overview** pane.
+Para exibir dados de monitoramento para a linha de base e os dispositivos, entre no [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431). Em seguida, selecione **Endpoint security** > **linhas de base de segurança**, selecione uma linha de base e exiba o painel **visão geral** .
 
-The **Overview** pane provides two methods to monitor status:
+O painel **visão geral** fornece dois métodos para monitorar o status:
 
-- **Device view** – A summary of how many devices are in each status category for the baseline.
-- **Per-category** - A view that displays each category in the baseline and includes the percentage of devices for each status group for each baseline category.
+- **Exibição de dispositivo** – um resumo de quantos dispositivos estão em cada categoria de status para a linha de base.
+- **Por categoria** -uma exibição que exibe cada categoria na linha de base e inclui a porcentagem de dispositivos para cada grupo de status para cada categoria de linha de base.
 
-Each device is represented by one of the following statuses, which are used in both the *device* view, and the *per-category* views:
+Cada dispositivo é representado por um dos seguintes status, que são usados tanto na exibição de *dispositivo* quanto nas exibições *por categoria* :
 
-- **Matches baseline** - All the settings in the baseline match the recommended settings.
-- **Does not match baseline** - At least one setting in the baseline doesn't match the recommended settings.
-- **Misconfigured** - At least one setting isn't properly configured. This status means the setting is in a conflict, error, or a pending state.
-- **Not applicable** - At least one setting isn't applicable, and isn't applied.
+- **Corresponde à linha de base** -todas as configurações na linha de base correspondem às configurações recomendadas.
+- Não **corresponde à linha de base** -pelo menos uma configuração na linha de base não corresponde às configurações recomendadas.
+- **Configurado incorretamente – pelo** menos uma configuração não está configurada adequadamente. Esse status significa que a configuração está em um estado de conflito, erro ou pendente.
+- **Não aplicável** -pelo menos uma configuração não é aplicável e não é aplicada.
 
-### <a name="device-view"></a>Device view
+### <a name="device-view"></a>Exibição do dispositivo
 
-The Overview pane displays a chart-based summary of how many devices have a specific status for the baseline; **Security baseline posture for assigned Windows 10 devices**.
+O painel Visão geral exibe um resumo baseado em gráfico de quantos dispositivos têm um status específico para a linha de base; **Postura de linha de base de segurança para dispositivos Windows 10 atribuídos**.
 
-![Check the status of the devices](./media/security-baselines-monitor/overview.png)
+![Verificar o status dos dispositivos](./media/security-baselines-monitor/overview.png)
 
-When a device has different status from different categories in the baseline, the device is represented by a single status. The status that represents the device is taken from the following order of precedence: **Misconfigured**, **Does not match baseline**, **Not applicable**, **Matches baseline**.
+Quando um dispositivo tem status diferente de diferentes categorias na linha de base, o dispositivo é representado por um único status. O status que representa o dispositivo é obtido da seguinte ordem de precedência: **configurado incorretamente**, não **corresponde à linha de base**, **não aplicável**, **corresponde à linha de base**.
 
-For example, if a device has a setting classified as *misconfigured* and one or more settings classified as *Does not match baseline*, the device is classified as *Misconfigured*.
+Por exemplo, se um dispositivo tiver uma configuração classificada como *configurada incorretamente* e uma ou mais configurações classificadas como não *corresponderem à linha de base*, o dispositivo será classificado como *configurado incorretamente*.
 
-You can click on the chart to drill through and view a list of devices with various statuses. You can then select individual devices from that list to view details about individual devices. Por exemplo:
+Você pode clicar no gráfico para fazer drill-through e exibir uma lista de dispositivos com vários status. Em seguida, você pode selecionar dispositivos individuais nessa lista para exibir detalhes sobre dispositivos individuais. Por exemplo:
 
-- Select **Device configuration** > Select the profile with an Error state:
+- Selecione **configuração do dispositivo** > selecione o perfil com um estado de erro:
 
-  ![View the status of a profile](./media/security-baselines-monitor/device-configuration-profile-list.png)
+  ![Exibir o status de um perfil](./media/security-baselines-monitor/device-configuration-profile-list.png)
 
-- Select the Error profile. A list of all settings in the profile, and their state is shown. Now, you can scroll to find the setting causing the error:
+- Selecione o perfil de erro. Uma lista de todas as configurações no perfil e seu estado é mostrado. Agora, você pode rolar para encontrar a configuração causando o erro:
 
-  ![See the setting causing the error](./media/security-baselines-monitor/profile-with-error-status.png)
+  ![Veja a configuração que está causando o erro](./media/security-baselines-monitor/profile-with-error-status.png)
 
-Use this reporting to see any settings in a profile that are causing an issue. Also get more details of policies and profiles deployed to devices.
+Use este relatório para ver as configurações em um perfil que estão causando um problema. Obtenha também mais detalhes de políticas e perfis implantados em dispositivos.
 
 > [!NOTE]
-> When a property is set to **Not configured** in the baseline, the setting is ignored, and no restrictions are enforced. The property isn't shown in any reporting.
+> Quando uma propriedade é definida como **não configurada** na linha de base, a configuração é ignorada e nenhuma restrição é imposta. A propriedade não é mostrada em nenhum relatório.
 
-### <a name="per-category-view"></a>Per category view
+### <a name="per-category-view"></a>Exibição por categoria
 
-The Overview pane displays a per-category chart for the baseline; **Security baseline posture by category**.  This view displays each category from the baseline and identifies the percentage of devices that fall into a status classification for each of those categories.
+O painel Visão geral exibe um gráfico por categoria para a linha de base; **Postura de linha de base de segurança por categoria**.  Essa exibição mostra cada categoria da linha de base e identifica a porcentagem de dispositivos que se enquadram em uma classificação de status para cada uma dessas categorias.
 
-![Per-Category view of status](./media/security-baselines-monitor/monitor-baseline-per-category.png)
+![Exibição por categoria do status](./media/security-baselines-monitor/monitor-baseline-per-category.png)
 
-Status for **Matches baseline** does not display until 100% of devices report that status for the category.
+O status de **correspondências de linha de base** não é exibido até 100% dos dispositivos relatar esse status para a categoria.
 
-You can sort the by-category view by each column, by selecting up-down arrow icon at the top of the column.
+Você pode classificar a exibição por categoria por cada coluna selecionando o ícone de seta para cima na parte superior da coluna.
 
-## <a name="monitor-the-profile"></a>Monitor the profile
+## <a name="monitor-the-profile"></a>Monitorar o perfil
 
-Monitoring the profile gives you insight into the deployment state of your devices, but not the security state based on the baseline recommendations.
+O monitoramento do perfil fornece informações sobre o estado de implantação de seus dispositivos, mas não o estado de segurança com base nas recomendações de linha de base.
 
-1. In Intune, select **Security Baselines** > select a baseline > **Profiles created**.
+1. No Intune, selecione **linhas de base de segurança** > selecione uma linha de base > **perfis criados**.
 
-2. Select a profile. In **Overview**, the image shows how many devices and users have this profile assigned:
+2. Selecione um perfil. Em **visão geral**, a imagem mostra quantos dispositivos e usuários têm esse perfil atribuído:
 
-   ![See how many devices and users are assigned the security baselines profile](./media/security-baselines-monitor/existing-profile-overview.png)
+   ![Ver quantos dispositivos e usuários recebem o perfil de linhas de base de segurança](./media/security-baselines-monitor/existing-profile-overview.png)
 
-3. Under **Manage** > **Properties**, a list of all the settings in the baseline are shown. You can also change any of these settings:
+3. Em **gerenciar** **Propriedades**de > , uma lista de todas as configurações na linha de base é mostrada. Você também pode alterar qualquer uma dessas configurações:
 
-   ![See and update settings in the security baselines profile](./media/security-baselines-monitor/manage-settings.png)
+   ![Consulte e atualize as configurações no perfil de linhas de base de segurança](./media/security-baselines-monitor/manage-settings.png)
 
-4. In **Monitor**, you can see the deployment status of the profile on individual devices, the status for each user, and the status for each setting in the baseline:
+4. No **Monitor**, você pode ver o status da implantação do perfil em dispositivos individuais, o status de cada usuário e o status de cada configuração na linha de base:
 
-   ![See the different monitor options for a security baselines profile](./media/security-baselines-monitor/monitor-status-options.png)
+   ![Consulte as diferentes opções de monitor para um perfil de linhas de base de segurança](./media/security-baselines-monitor/monitor-status-options.png)
 
-## <a name="troubleshoot-using-per-setting-status"></a>Troubleshoot using per-setting status
+## <a name="troubleshoot-using-per-setting-status"></a>Solucionar problemas usando o status por configuração
 
-You deployed a security baseline, but the deployment status shows an error. The following steps give you some guidance on troubleshooting the error.
+Você implantou uma linha de base de segurança, mas o status da implantação mostra um erro. As etapas a seguir fornecem algumas diretrizes sobre como solucionar o erro.
 
-1. In Intune, select **Security Baselines** > select a baseline > **Profiles created**.
+1. No Intune, selecione **linhas de base de segurança** > selecione uma linha de base > **perfis criados**.
 
-2. Select a profile > Under **Monitor** > **Per-setting status**.
+2. Selecione um perfil > em **monitorar** > **status por configuração**.
 
-3. The table shows all the settings, and the status of each setting. Select the **Error** column or the **Conflict** column to see the setting causing the error.
+3. A tabela mostra todas as configurações e o status de cada configuração. Selecione a coluna **erro** ou a coluna **conflito** para ver a configuração que está causando o erro.
 
-### <a name="mdm-diagnostic-information"></a>MDM diagnostic information
+### <a name="mdm-diagnostic-information"></a>Informações de diagnóstico do MDM
 
-Now you know the problematic setting. The next step is to find out why this setting is causing an error or conflict.
+Agora você sabe a configuração problemática. A próxima etapa é descobrir por que essa configuração está causando um erro ou conflito.
 
-On Windows 10 devices, there's a built-in MDM diagnostic information report. This report includes default values, current values, lists the policy, shows if it's deployed to the device or the user, and more. Use this report to help determine why the setting is causing a conflict or error.
+Em dispositivos Windows 10, há um relatório interno de informações de diagnóstico do MDM. Este relatório inclui valores padrão, valores atuais, lista a política, mostra se ele está implantado no dispositivo ou no usuário e muito mais. Use este relatório para ajudar a determinar por que a configuração está causando um conflito ou erro.
 
-1. On the device, go to **Settings** > **Accounts** > **Access work or school**.
+1. No dispositivo, vá para **configurações** > **contas** > **acessar trabalho ou escola**.
 
-2. Select the account > **Info** > **Advanced Diagnostic Report** > **Create report**.
+2. Selecione a conta > **informações** > **relatório de diagnóstico avançado** > **criar relatório**.
 
-3. Choose **Export**, and open the generated file.
+3. Escolha **Exportar**e abra o arquivo gerado.
 
-4. In the report, look for the error or conflict setting in the different sections of the report.
+4. No relatório, procure o erro ou a configuração de conflito nas seções diferentes do relatório.
 
-  For example, look in the **Enrolled configuration sources and target resources** section or the **Unmanaged policies** section. You may get an idea of why it's causing an error or conflict.
+  Por exemplo, examine a seção **fontes de configuração e recursos de destino registrados** ou a seção **políticas não gerenciadas** . Você pode ter uma ideia de por que está causando um erro ou conflito.
 
-[Diagnose MDM failures in Windows 10](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10) provides more information on this built-in report.
+[Diagnosticar falhas de MDM no Windows 10](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10) fornece mais informações sobre esse relatório interno.
 
 > [!TIP]
-> - Some settings also list the GUID. You can search for this GUID in the local registry (regedit) for any set values.
-> - The Event Viewer logs may also include some error information on the problematic setting (**Event viewer** > **Applications and Services Logs** > **Microsoft** > **Windows** > **DeviceManagement-Enterprise-Diagnostics-Provider** > **Admin**).
+> - Algumas configurações também listam o GUID. Você pode pesquisar esse GUID no registro local (regedit) para qualquer valor definido.
+> - Os logs de Visualizador de Eventos também podem incluir algumas informações de erro sobre a configuração problemática (**Visualizar eventos** > **logs de aplicativos e serviços** > **Microsoft** > **Windows** > **DeviceManagement-Enterprise-Diagnostics-Provider** > **admin**).
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
-[Monitor device profiles](../configuration/device-profile-monitor.md) and [see some common issues and resolutions](../configuration/device-profile-troubleshoot.md).
+[Monitore perfis de dispositivo](../configuration/device-profile-monitor.md) e [Veja alguns problemas comuns e resoluções](../configuration/device-profile-troubleshoot.md).

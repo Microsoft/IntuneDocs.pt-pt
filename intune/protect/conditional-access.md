@@ -1,7 +1,7 @@
 ---
-title: Conditional Access with Microsoft Intune
+title: Acesso condicional com Microsoft Intune
 titleSuffix: Microsoft Intune
-description: Learn how to define the conditions that users, devices, and apps must meet to access company resources in Microsoft Intune.
+description: Saiba como definir as condições que os usuários, os dispositivos e os aplicativos devem atender para acessar os recursos da empresa no Microsoft Intune.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -24,43 +24,43 @@ ms.contentlocale: pt-PT
 ms.lasthandoff: 11/19/2019
 ms.locfileid: "74188285"
 ---
-# <a name="learn-about-conditional-access-and-intune"></a>Learn about Conditional Access and Intune
+# <a name="learn-about-conditional-access-and-intune"></a>Saiba mais sobre o acesso condicional e o Intune
 
-With Conditional Access, you can control the devices and apps that can connect to your email and company resources. 
+Com o acesso condicional, você pode controlar os dispositivos e aplicativos que podem se conectar ao seu email e aos recursos da empresa. 
 
-Enterprise Mobility + Security (EMS)  is not a standalone product. It's a solution that takes part on all services and products that are part of EMS. Conditional Access provides granular access control to keep your corporate data secure, while giving users an experience that allows them to do their best work from any device, and from any location.
+O EMS (Enterprise Mobility + Security) não é um produto autônomo. É uma solução que faz parte de todos os serviços e produtos que fazem parte do EMS. O acesso condicional fornece controle de acesso granular para manter seus dados corporativos seguros, oferecendo aos usuários uma experiência que permite que eles façam o melhor trabalho de qualquer dispositivo e de qualquer local.
 
 Pode definir as condições para o acesso de porta aos dados da sua empresa com base na localização, no dispositivo, no estado do utilizador e na sensibilidade das aplicações.
 
 > [!NOTE]
 > Além disso, o Acesso Condicional expande as suas capacidades a [serviços do Office 365](https://docs.microsoft.com/office365/enterprise/office-365-client-support-conditional-access).
 
-![Conditional Access diagram](./media/conditional-access/ca-diagram-1.png)
+![Diagrama de acesso condicional](./media/conditional-access/ca-diagram-1.png)
 
-## <a name="use-conditional-access-with-intune"></a>Use Conditional Access with Intune
+## <a name="use-conditional-access-with-intune"></a>Usar o acesso condicional com o Intune
 
-Conditional Access is an Azure Active Directory capability that is included with an Azure Active Directory Premium license. O Intune melhora esta funcionalidade ao adicionar à solução a conformidade de dispositivos móveis e a gestão de aplicações móveis. 
+O acesso condicional é um recurso Azure Active Directory que é incluído em uma licença Azure Active Directory Premium. O Intune melhora esta funcionalidade ao adicionar à solução a conformidade de dispositivos móveis e a gestão de aplicações móveis. 
 
-![Intune and Conditional Access when using EMS](./media/conditional-access/intune-with-ca-1.png)
+![Intune e acesso condicional ao usar o EMS](./media/conditional-access/intune-with-ca-1.png)
 
-Ways to use Conditional Access with Intune:
+Maneiras de usar o acesso condicional com o Intune:
 
-- **Device-based Conditional Access**
+- **Acesso condicional com base no dispositivo**
 
-  - Conditional Access for Exchange on-premises
+  - Acesso condicional para o Exchange local
 
-  - Conditional Access based on network access control
+  - Acesso condicional com base no controle de acesso à rede
 
-  - Conditional Access based on device risk
+  - Acesso condicional com base no risco do dispositivo
 
-  - Conditional Access for Windows PCs
+  - Acesso condicional para computadores Windows
 
     - Pertencentes à empresa
 
     - Bring your own device (BYOD)
 
-- **App-based Conditional Access**
+- **Acesso condicional baseado no aplicativo**
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
-[Common ways to use Conditional Access with Intune](conditional-access-intune-common-ways-use.md)
+[Maneiras comuns de usar o acesso condicional com o Intune](conditional-access-intune-common-ways-use.md)

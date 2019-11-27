@@ -1,7 +1,7 @@
 ---
-title: iOS bundle IDs for built-in apps in Microsoft Intune - Azure | Microsoft Docs
+title: IDs de pacote do iOS para aplicativos internos no Microsoft Intune-Azure | Microsoft Docs
 titleSuffix: ''
-description: See a list of the bundle IDs for the built-in iOS apps. Use these bundle IDs to explicitly allow apps in device configuration profiles and policies in Microsoft Intune.
+description: Consulte uma lista das IDs de pacote para os aplicativos iOS internos. Use essas IDs de pacote para permitir explicitamente aplicativos em perfis de configuração de dispositivo e políticas no Microsoft Intune.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -23,24 +23,24 @@ ms.contentlocale: pt-PT
 ms.lasthandoff: 11/25/2019
 ms.locfileid: "74465644"
 ---
-# <a name="bundle-ids-for-built-in-ios-apps-you-can-use-in-intune"></a>Bundle IDs for built-in iOS apps you can use in Intune
+# <a name="bundle-ids-for-built-in-ios-apps-you-can-use-in-intune"></a>IDs de pacote para aplicativos iOS internos que você pode usar no Intune
 
-When you configure features on iOS devices, you can also add the built-in apps on iOS devices. This article lists the bundle IDs of some common built-in iOS apps. Para localizar o ID do pacote de outras aplicações, contacte o fabricante de software. See Apple's list of [iOS bundle IDs](https://support.apple.com/guide/mdm/ios-bundle-ids-mdm90f60c1ce/web) (opens Apple's web site).
+Ao configurar recursos em dispositivos iOS, você também pode adicionar os aplicativos internos em dispositivos iOS. Este artigo lista as IDs de pacote de alguns aplicativos iOS internos comuns. Para localizar o ID do pacote de outras aplicações, contacte o fabricante de software. Consulte a lista de [IDs de pacote do IOS](https://support.apple.com/guide/mdm/ios-bundle-ids-mdm90f60c1ce/web) da Apple (abre o site da Apple).
 
-## <a name="bundle-ids"></a>Bundle IDs
+## <a name="bundle-ids"></a>IDs de pacote
 
-| ID do Pacote                   | Nome da Aplicação     | Publisher |
+| ID do Pacote                   | Nome da Aplicação     | Fabricante |
 |-----------------------------|--------------|-----------|
-| com.apple.store             | App Store    | Apple     |
+| com. Apple. Store             | App Store    | Apple     |
 | com.apple.calculator        | Calculadora   | Apple     |
 | com.apple.mobilecal         | Calendário     | Apple     |
 | com.apple.camera            | Câmara       | Apple     |
 | com.apple.mobiletimer       | Relógio        | Apple     |
-| com.apple.clips             | Clips        | Apple     |
+| com. Apple. clips             | Corta        | Apple     |
 | com.apple.compass           | Bússola      | Apple     |
 | com.apple.MobileAddressBook | Contactos     | Apple     |
 | com.apple.facetime          | FaceTime     | Apple     |
-| com.apple.DocumentsApp      | Files        | Apple     |
+| com.apple.DocumentsApp      | Ficheiros        | Apple     |
 | com.apple.mobileme.fmf1     | Encontrar Amigos | Apple     |
 | com.apple.mobileme.fmip1    | Localizar iPhone  | Apple     |
 | com.apple.gamecenter        | Centro de Jogos  | Apple     |
@@ -54,8 +54,8 @@ When you configure features on iOS devices, you can also add the built-in apps o
 | com.apple.itunesu           | iTunes U     | Apple     |
 | com.apple.Keynote           | Keynote      | Apple     |
 | com.apple.mobilemail        | Correio         | Apple     |
-| com.apple.Maps              | Mapas         | Apple     |
-| com.apple.measure           | Measure      | Apple     |
+| com.apple.Maps              | Maps         | Apple     |
+| com. Apple. Measure           | Medida      | Apple     |
 | com.apple.MobileSMS         | Mensagens     | Apple     |
 | com.apple.Music             | Música        | Apple     |
 | com.apple.news              | Notícias         | Apple     |
@@ -69,17 +69,17 @@ When you configure features on iOS devices, you can also add the built-in apps o
 | com.apple.reminders         | Lembretes    | Apple     |
 | com.apple.mobilesafari      | Safari       | Apple     |
 | com.apple.Preferences       | Definições     | Apple     |
-| com.apple.shortcuts         | Shortcuts    | Apple     |
+| com. Apple. shortcuts         | Teclado    | Apple     |
 | com.apple.SiriViewService   | Siri         | Apple     |
 | com.apple.stocks            | Bolsa       | Apple     |
 | com.apple.tips              | Sugestões         | Apple     |
-| com.apple.tv                | TV           | Apple     |
+| com.apple.tv                | PROGRAMAS DE TV           | Apple     |
 | com.apple.videos            | Vídeos       | Apple     |
 | com.apple.VoiceMemos        | VoiceMemos   | Apple     |
 | com.apple.Passbook          | Wallet       | Apple     |
 | com.apple.Bridge            | Watch        | Apple     |
 | com.apple.weather           | Meteorologia      | Apple     |      
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
-Use these bundle IDs to configure [device features](ios-device-features-settings.md) and to [allow or restrict some settings](device-restrictions-ios.md) on iOS devices.
+Use essas IDs de pacote para configurar [recursos de dispositivo](ios-device-features-settings.md) e para [permitir ou restringir algumas configurações](device-restrictions-ios.md) em dispositivos IOS.

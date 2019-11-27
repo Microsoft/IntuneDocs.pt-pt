@@ -122,6 +122,6 @@ Ao atribuir seus perfis, use a tabela a seguir ao incluir e excluir grupos. Uma 
 
   Como resultado, não é recomendável atribuir perfis a grupos mistos.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 Veja [monitorizar perfis de dispositivos](device-profile-monitor.md) para obter orientações sobre como monitorizar os perfis e os dispositivos que executam os seus perfis.

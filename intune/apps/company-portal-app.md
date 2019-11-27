@@ -62,7 +62,7 @@ Introduza as informações de suporte da sua empresa para que o colaborador tenh
 |---|---|---|
 |**Nome do contacto** | 40 | Esse nome é exibido na página **ajuda e suporte** . |
 |**Número de telefone** | 20 | Este número de contato é exibido na página **ajuda e suporte** para permitir que os funcionários entrem em contato com você para obter suporte. |
-|**Endereço de e-mail**| 40 | Este endereço de contato é exibido na página **ajuda e suporte** . Tem de inserir um endereço de e-mail válido no formato `alias@domainname.com`. |
+|**Endereço de correio eletrónico**| 40 | Este endereço de contato é exibido na página **ajuda e suporte** . Tem de inserir um endereço de e-mail válido no formato `alias@domainname.com`. |
 |**Nome do site**| 40 | Este é o nome amigável apresentado no URL do site de suporte. Se você especificar uma URL do site de suporte e nenhum nome amigável, vá para o site de ti é exibido na página **ajuda e suporte** no portal da empresa. |
 |**URL do Site**| 150 | Se tiver um site de suporte que pretende que os utilizadores usem, especifique o URL aqui. O URL tem de estar no formato `https://www.contoso.com`. Se você não especificar uma URL, nada será exibido para o site de suporte na página **ajuda e suporte** na portal da empresa. |
 | **Informações adicionais**| 120 | Exibido na página **ajuda e suporte** . |
@@ -203,6 +203,6 @@ Algumas plataformas e configurações não permitem ações de dispositivo de au
 <sup>(7)</sup> a **desativação** e o **apagamento** não estão disponíveis nos cenários do proprietário do dispositivo Android Enterprise (Cobo, COSU).<br> 
 <sup>(8)</sup> não há suporte para **Redefinir senha** em dispositivos IOS registrados pelo usuário.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 - [Adicionar manualmente a aplicação Portal da Empresa do Windows 10 através do Microsoft Intune](company-portal-app.md)

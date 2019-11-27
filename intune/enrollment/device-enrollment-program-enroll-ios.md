@@ -78,7 +78,7 @@ Pode utilizar o portal de DEP da Apple para criar um token DEP. Também pode uti
 
    ![Captura de ecrã a mostrar o painel Token do Programa de Inscrição, na área de trabalho Certificados da Apple, para transferir a chave pública.](./media/device-enrollment-program-enroll-ios/add-enrollment-program-token-pane.png)
 
-3. Selecione **Transferir a chave pública** para transferir e guardar o ficheiro da chave de encriptação (.pem) localmente. O ficheiro .pem é utilizado para pedir um certificado de relação de confiança a partir do portal do Programa de Registo de Aparelho da Apple.
+3. Selecione **Transferir a chave pública** para transferir e guardar o ficheiro da chave de encriptação (.pem) localmente. O ficheiro .pem é utilizado para pedir um certificado de relação de confiança a partir do portal do Programa de Inscrição de Dispositivos da Apple.
 
 
 ### <a name="step-2-use-your-key-to-download-a-token-from-apple"></a>Passo 2. Utilize a sua chave para transferir um token a partir da Apple.
@@ -166,7 +166,7 @@ Agora que instalou o seu token, pode criar um perfil de inscrição para disposi
 
     A autenticação multifator não tem suporte em um único dispositivo bloqueado no modo de aplicativo único. Essa limitação existe porque o dispositivo não pode alternar para um aplicativo diferente para concluir o segundo fator de autenticação. Portanto, se você quiser autenticação multifator em um dispositivo de modo de aplicativo único, o segundo fator deverá estar em um dispositivo diferente.
 
-    Esta funcionalidade só é suportada para iOS 11.3.1 e posterior.
+    Esta funcionalidade só é suportada para iOS 11.3.1 e posterior.
 
    ![Captura de ecrã do modo de aplicação única.](./media/device-enrollment-program-enroll-ios/single-app-mode.png)
 

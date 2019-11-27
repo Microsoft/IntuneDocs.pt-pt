@@ -1,7 +1,7 @@
 ---
-title: Create Mobile Threat Defense (MTD) app protection policy with Intune
+title: Criar política de proteção de aplicativo MTD (defesa contra ameaças móveis) com o Intune
 titleSuffix: Microsoft Intune
-description: Create Mobile Threat Defense (MTD) app protection policy with Microsoft Intune.
+description: Criar política de proteção de aplicativo MTD (defesa contra ameaças móveis) com Microsoft Intune.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -25,48 +25,48 @@ ms.contentlocale: pt-PT
 ms.lasthandoff: 11/19/2019
 ms.locfileid: "74188504"
 ---
-# <a name="create-mobile-threat-defense-app-protection-policy-with-intune"></a>Create Mobile Threat Defense app protection policy with Intune
+# <a name="create-mobile-threat-defense-app-protection-policy-with-intune"></a>Criar política de proteção do aplicativo de defesa contra ameaças móveis com o Intune
 
-Intune with Mobile Threat Defense (MTD) helps you detect threats and assess risk on mobile devices. You can create an Intune app protection policy that assesses risk to determine if the device is allowed to access corporate data or not.
+O Intune com defesa contra ameaças móveis (MTD) ajuda você a detectar ameaças e avaliar o risco em dispositivos móveis. Você pode criar uma política de proteção de aplicativo do Intune que avalia o risco para determinar se o dispositivo tem permissão para acessar dados corporativos ou não.
 
 
 > [!NOTE]
-> This article applies to all Mobile Threat Defense partners that support app protection policies:
+> Este artigo se aplica a todos os parceiros de defesa contra ameaças móveis que dão suporte a políticas de proteção de aplicativo:
 >
-> - Better Mobile (Android)
+> - Melhores dispositivos móveis (Android)
 > - Zimperium (iOS)
 > - Lookout for Work (Android, iOS).
 
 ## <a name="before-you-begin"></a>Antes de começar
 
-Como parte da configuração da MTD, na consola do parceiro MTD, criou uma política que classifica as várias ameaças como sendo de nível alto, médio e baixo. You now need to set the Mobile Threat Defense level in the Intune app protection policy.
+Como parte da configuração da MTD, na consola do parceiro MTD, criou uma política que classifica as várias ameaças como sendo de nível alto, médio e baixo. Agora você precisa definir o nível de defesa contra ameaças móveis na política de proteção de aplicativo do Intune.
 
-Prerequisites for app protection policy with MTD:
+Pré-requisitos para a política de proteção de aplicativo com MTD:
 
-- Set up MTD integration with Intune. Without this integration, the MTD app protection policy will have no effect.
+- Configure a integração do MTD com o Intune. Sem essa integração, a política de proteção do aplicativo MTD não terá nenhum efeito.
 
-## <a name="to-create-an-mtd-app-protection-policy"></a>To create an MTD app protection policy
+## <a name="to-create-an-mtd-app-protection-policy"></a>Para criar uma política de proteção de aplicativo MTD
 
-Use the procedure to [create an Application protection policy for either iOS/iPadOS or Android](../apps/app-protection-policies.md#app-protection-policies-for-iosipados-and-android-apps), and use the following information on the *Apps*, *Conditional launch*, and *Assignments* pages:
+Use o procedimento para [criar uma política de proteção de aplicativo para o Ios/iPadOS ou Android](../apps/app-protection-policies.md#app-protection-policies-for-iosipados-and-android-apps)e use as seguintes informações nas páginas *aplicativos*, *inicialização condicional*e *atribuições* :
 
-- **Apps**: Select the app for the Mobile Threat Defense partner you use.
-- **Conditional launch**:  Below *Device conditions*, use the drop-down box to select **Max allowed device threat level**.
+- **Aplicativos**: selecione o aplicativo para o parceiro de defesa contra ameaças móveis que você usa.
+- **Inicialização condicional**: abaixo das *condições do dispositivo*, use a caixa suspensa para selecionar o **nível máximo de ameaça do dispositivo permitido**.
 
-  Options for the threat level **Value**:
+  Opções para o **valor**de nível de ameaça:
 
-  - **Seguro**: este é o nível mais seguro. The device can't have any threats present and still access company resources. Se forem detetadas ameaças, o dispositivo será avaliado como não conforme.
+  - **Seguro**: este é o nível mais seguro. O dispositivo não pode ter nenhuma ameaça presente e ainda acessar os recursos da empresa. Se forem detetadas ameaças, o dispositivo será avaliado como não conforme.
   - **Baixo**: o dispositivo está em conformidade se só estiverem presentes ameaças de nível baixo. Qualquer nível mais alto coloca o dispositivo num estado de não conforme.
   - **Médio**: o dispositivo está em conformidade se as ameaças encontradas forem de nível baixo ou médio. Se forem detetadas ameaças de nível alto, o estado do dispositivo será determinado como não conforme.
-  - **Elevado**: este é o nível menos seguro. This allows all threat levels and uses Mobile Threat Defense for reporting purposes only. É necessário que os dispositivos tenham a aplicação de MTD ativada com esta definição.
+  - **Elevado**: este é o nível menos seguro. Isso permite todos os níveis de ameaça e usa a defesa contra ameaças móveis apenas para fins de relatório. É necessário que os dispositivos tenham a aplicação de MTD ativada com esta definição.
 
-  Options for **Action**:
+  Opções para **ação**:
 
-  - **Block access**
-  - **Wipe data**
+  - **Bloquear acesso**
+  - **Apagar dados**
 
-- **Assignments**: Assign the policy to groups of users.  The devices used by the group’s members are evaluated for access to corporate data on targeted apps via Intune app protection.
+- **Atribuições**: atribuir a política a grupos de usuários.  Os dispositivos usados pelos membros do grupo são avaliados para acesso a dados corporativos em aplicativos de destino por meio da proteção de aplicativo do Intune.
 
 
-## <a name="next-steps"></a>Próximos passos  
+## <a name="next-steps"></a>Passos Seguintes  
 
-- Learn more about [Mobile Threat Defense](~/protect/mobile-threat-defense.md) in Microsoft Intune.
+- Saiba mais sobre a [defesa contra ameaças móveis](~/protect/mobile-threat-defense.md) em Microsoft Intune.

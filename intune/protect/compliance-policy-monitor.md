@@ -36,7 +36,7 @@ Os relatórios de conformidade ajudam a analisar a conformidade de dispositivos 
 
 Abra o **dashboard de conformidade do Dispositivo do Intune**:
 
-1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 
 2. Selecione **Conformidade do dispositivo** > **Descrição Geral**. É aberto o **Dashboard de conformidade do dispositivo**.
 
@@ -57,9 +57,9 @@ Quando o dashboard é aberto, obtém uma descrição geral com todos os relatór
 
 À medida que analisar este relatório em profundidade, também poderá ver todas as definições e políticas de conformidade específicas que se aplicam a um determinado dispositivo, incluindo o estado de conformidade de cada definição.
 
-### <a name="device-compliance-status"></a>Device compliance status
+### <a name="device-compliance-status"></a>Status de conformidade do dispositivo
 
-The **Device compliance status** chart shows the compliance states for all Intune enrolled devices. Os estados de conformidade do dispositivo são mantidos em duas bases de dados diferentes: Intune e Azure Active Directory.
+O gráfico **status de conformidade do dispositivo** mostra os Estados de conformidade para todos os dispositivos registrados no Intune. Os estados de conformidade do dispositivo são mantidos em duas bases de dados diferentes: Intune e Azure Active Directory.
 
 > [!IMPORTANT]
 > O Intune segue o agendamento de registo do dispositivo para todas as avaliações de conformidade no dispositivo. [Saiba mais sobre o agendamento de registo do dispositivo](../configuration/device-profile-troubleshoot.md#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned).
@@ -72,14 +72,14 @@ Descrições dos diferentes estados de política de conformidade do dispositivo:
 
   - Saiba mais sobre [Ações para dispositivos não conformes](actions-for-noncompliance.md).
 
-- **Não avaliado**: um estado inicial de dispositivos recentemente inscritos Other possible reasons for this state include:
+- **Não avaliado**: um estado inicial de dispositivos recentemente inscritos Outros motivos possíveis para esse Estado incluem:
 
-  - Devices that aren't assigned a compliance policy and don't have a trigger to check for compliance
-  - Devices that haven't checked in since the compliance policy was last updated
-  - Devices not associated to a specific user, such as:
-    - iOS devices purchased through Apple's Device Enrollment Program (DEP) that don't have user affinity
-    - Android kiosk or Android Enterprise dedicated devices
-  - Devices enrolled with a device enrollment manager (DEM) account
+  - Dispositivos que não são atribuídos a uma política de conformidade e não têm um gatilho para verificar a conformidade
+  - Dispositivos que não fizeram check-in desde a última atualização da política de conformidade
+  - Dispositivos não associados a um usuário específico, como:
+    - dispositivos iOS adquiridos por meio de Programa de registro de dispositivos da Apple (DEP) que não têm afinidade de usuário
+    - Quiosque Android ou dispositivos Android Enterprise dedicados
+  - Dispositivos registrados com uma conta do DEM (Gerenciador de registro de dispositivo)
 
 - **Não conforme**: o dispositivo não aplicou com êxito uma ou mais definições de política de conformidade do dispositivo ou o utilizador não respeitou as políticas.
 
@@ -98,7 +98,7 @@ No gráfico **Estado de conformidade do dispositivo**, selecione um estado. Por 
 
 ![Selecionar o estado não conforme](./media/compliance-policy-monitor/select-not-compliant-status.png)
 
-That action opens the **Device compliance** window, and displays devices in a **Device status** chart. The chart shows you more details on the devices in that state, including operating system platform, last check-in date, and more. 
+Essa ação abre a janela de **conformidade do dispositivo** e exibe os dispositivos em um gráfico de **status do dispositivo** . O gráfico mostra mais detalhes sobre os dispositivos nesse estado, incluindo a plataforma do sistema operacional, a data do último check-in e muito mais. 
 
 ![Imagem do dashboard que mostra mais detalhes sobre o dispositivo nesse estado específico](./media/compliance-policy-monitor/drill-down-details.png)
 
@@ -108,21 +108,21 @@ Se quiser ver todos os dispositivos pertencentes a um utilizador específico, ta
 
 ![Selecione o Filtro e Coluna para alterar os resultados no gráfico](./media/compliance-policy-monitor/filter-columns.png)
 
-When you select the **Filter** button, the filter fly-out opens with more options, including the **Compliance** state, **Jailbroken** devices, and more. **Aplique** o filtro para atualizar os resultados.
+Quando você seleciona o botão de **filtro** , a retirada do filtro é aberta com mais opções, incluindo o estado de **conformidade** , dispositivos com **jailbreak** e muito mais. **Aplique** o filtro para atualizar os resultados.
 
 Utilize a propriedade **Colunas** para adicionar ou remover colunas do resultado do gráfico. Por exemplo, **Nome principal de utilizador** poderá mostrar o endereço de e-mail registado no dispositivo. **Aplique** as colunas para atualizar os resultados.
 
 #### <a name="device-details"></a>Detalhes do dispositivo
 
-In the **Device details** chart, select a specific device, and then select **Device compliance**:
+No gráfico **detalhes do dispositivo** , selecione um dispositivo específico e, em seguida, selecione **conformidade do dispositivo**:
 
 ![Selecione um dispositivo específico e, em seguida, Conformidade do Dispositivo para ver as políticas de conformidade aplicadas](./media/compliance-policy-monitor/see-policies-applied-specific-device.png)
 
-Intune displays more details on the device compliance policy settings applied on that device. Quando selecionar a política específica, serão apresentadas todas as definições na política.
+O Intune exibe mais detalhes sobre as configurações de política de conformidade do dispositivo aplicadas no dispositivo. Quando selecionar a política específica, serão apresentadas todas as definições na política.
 
-### <a name="devices-without-compliance"></a>Devices without compliance
+### <a name="devices-without-compliance"></a>Dispositivos sem conformidade
 
-On the *Compliance status* page, next to the *Policy compliance* chart, you can select the **Devices without compliance policy** tile to view information about devices that don't have any compliance policies assigned:
+Na página *status de conformidade* , ao lado do gráfico de *conformidade de política* , você pode selecionar o bloco **dispositivos sem política de conformidade** para exibir informações sobre dispositivos que não têm políticas de conformidade atribuídas:
 
 ![Ver dispositivos sem políticas de conformidade](./media/compliance-policy-monitor/devices-without-policies.png)
 
@@ -132,7 +132,7 @@ Quando selecionar o mosaico, serão apresentados todos os dispositivos que não 
 
 - Com a definição de segurança **Marcar os dispositivos sem política de conformidade atribuída como**, é importante identificar os dispositivos que não têm uma política de conformidade. Em seguida, pode atribuir pelo menos uma política de conformidade aos mesmos.
 
-  A definição de segurança é configurável no portal do Intune. To to **Devices** > **Compliance policies** > **Compliance policy settings**. Em seguida, defina **Marcar os dispositivos sem política de conformidade atribuída como** para **Conforme** ou **Não conforme**. 
+  A definição de segurança é configurável no portal do Intune. Para **dispositivos** > **políticas de conformidade** > **configurações de política de conformidade**. Em seguida, defina **Marcar os dispositivos sem política de conformidade atribuída como** para **Conforme** ou **Não conforme**. 
 
   Saiba mais sobre esta [melhoria de segurança no serviço Intune](https://blogs.technet.microsoft.com/intunesupport/2018/02/09/updated-upcoming-security-enhancements-in-the-intune-service/).
 
@@ -140,38 +140,38 @@ Quando selecionar o mosaico, serão apresentados todos os dispositivos que não 
 
 ### <a name="per-policy-device-compliance"></a>Conformidade do dispositivo por política
 
-The **Policy compliance** chart shows you the policies, and how many devices are compliant and noncompliant. 
+O gráfico de **conformidade de política** mostra as políticas e quantos dispositivos estão em conformidade e em não conformidade. 
 
 ![Veja uma lista que inclui a política e a quantidade de dispositivos conformes e não conformes dessa política](./media/compliance-policy-monitor/idc-8.png)
 
 ### <a name="setting-compliance"></a>Conformidade com definições
 
-The **Setting compliance** chart shows you all device compliance policy settings from all compliance policies, the platforms the policy settings are applied, and the number of noncompliant devices.
+O gráfico de **conformidade de configuração** mostra todas as configurações de política de conformidade do dispositivo de todas as políticas de conformidade, as plataformas nas quais as configurações de política são aplicadas e o número de dispositivos não compatíveis.
 
 ![Veja uma lista de todas as definições nas diferentes políticas](./media/compliance-policy-monitor/idc-10.png)
 
 > [!NOTE]
-> A policy can be assigned to a device, and a user on that same device. In some scenarios, a device may sync before the user signs in, such as when the device reboots. Compliance may evaluate this user, and show the device as non compliant. This behavior may also show the System Account as a non-compliant user.
+> Uma política pode ser atribuída a um dispositivo e um usuário no mesmo dispositivo. Em alguns cenários, um dispositivo pode ser sincronizado antes de o usuário entrar, como quando o dispositivo é reinicializado. A conformidade pode avaliar esse usuário e mostrar o dispositivo como não compatível. Esse comportamento também pode mostrar a conta do sistema como um usuário não compatível.
 >
-> This is a known issue with multi-user Windows 10 devices. Any changes or updates on this behavior are announced in [in development](../fundamentals/in-development.md) and/or [what's new](../fundamentals/whats-new.md).
+> Esse é um problema conhecido com dispositivos Windows 10 de vários usuários. Todas as alterações ou atualizações sobre esse comportamento são anunciadas no [desenvolvimento](../fundamentals/in-development.md) e/ou [novidades](../fundamentals/whats-new.md).
 
-## <a name="view-compliance-reports"></a>View compliance reports
+## <a name="view-compliance-reports"></a>Exibir relatórios de conformidade
 
-In addition to using the charts on *Compliance status*, you can view compliance reports from the *Monitor* page of the Admin Center.
+Além de usar os gráficos no *status de conformidade*, você pode exibir relatórios de conformidade na página *Monitor* do centro de administração.
 
-1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-2. Select **Devices** > **Monitor**, and then from below **Compliance** select the report you want to view. Some of the available compliance reports include:
+2. Selecione **dispositivos** > **Monitor**e, em seguida, abaixo de **conformidade** , selecione o relatório que você deseja exibir. Alguns dos relatórios de conformidade disponíveis incluem:
 
    - Conformidade do dispositivo
-   - Noncompliant devices
+   - Dispositivos não compatíveis
    - Dispositivos sem política de conformidade
    - Conformidade com definições
-   - Policy compliance
-   - Windows health attestation report
+   - Conformidade com a política
+   - Relatório de atestado de integridade do Windows
    - Estado do agente de ameaça
 
-For more information about reports, see [Intune reports](../fundamentals/reports.md)
+Para obter mais informações sobre relatórios, consulte [relatórios do Intune](../fundamentals/reports.md)
 
 ## <a name="view-status-of-device-policies"></a>Ver o estado das políticas de dispositivos
 
@@ -179,14 +179,14 @@ Pode verificar os diferentes estados das suas políticas por plataforma. Por exe
 
 Esta funcionalidade está incluída no relatório de estado do dispositivo:
 
-1. Select **Devices** > **Compliance policies** > **Policies**. É apresentada uma lista de políticas, incluindo a plataforma, se a política estiver atribuída, e mais detalhes.
+1. Selecione **dispositivos** > **políticas de conformidade** > **políticas**. É apresentada uma lista de políticas, incluindo a plataforma, se a política estiver atribuída, e mais detalhes.
 2. Selecione uma política > **Descrição Geral**. Nesta vista, a atribuição de política inclui os seguintes estados:
 
-    - **Succeeded**: Policy is applied
-    - **Error**: The policy failed to apply. Normalmente, a mensagem é apresentada com um código de erro que direciona para uma explicação. 
-    - **Conflict**: Two settings are applied to the same device, and Intune can't sort out the conflict. Um administrador deve rever a situação.
-    - **Pending**: The device hasn’t checked in with Intune to receive the policy yet. 
-    - **Not applicable**: The device can't receive the policy. Por exemplo, a política atualiza uma definição específica para o iOS 11.1, mas o dispositivo está a utilizar o iOS 10. 
+    - **Êxito**: a política é aplicada
+    - **Erro**: falha ao aplicar a política. Normalmente, a mensagem é apresentada com um código de erro que direciona para uma explicação. 
+    - **Conflito**: duas configurações são aplicadas ao mesmo dispositivo e o Intune não pode classificar o conflito. Um administrador deve rever a situação.
+    - **Pendente**: o dispositivo não fez check-in no Intune para receber a política ainda. 
+    - **Não aplicável**: o dispositivo não pode receber a política. Por exemplo, a política atualiza uma definição específica para o iOS 11.1, mas o dispositivo está a utilizar o iOS 10. 
 
 3. Para ver detalhes sobre os dispositivos que utilizam esta política, selecione um dos estados. Por exemplo, selecione **Com êxito**. Na janela seguinte, são indicados detalhes dos dispositivos específicos, incluindo o nome do dispositivo e o estado de implementação.
 

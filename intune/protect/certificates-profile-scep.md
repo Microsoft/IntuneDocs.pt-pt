@@ -1,6 +1,6 @@
 ---
-title: Use SCEP certificate profiles with Microsoft Intune - Azure | Microsoft Docs
-description: Create and assign Simple Certificate Enrollment Protocol (SCEP) certificate profiles with Microsoft Intune.
+title: Usar perfis de certificado SCEP com Microsoft Intune-Azure | Microsoft Docs
+description: Crie e atribua perfis de certificado de protocolo SCEP (SCEP) com Microsoft Intune.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -23,58 +23,58 @@ ms.contentlocale: pt-PT
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74390291"
 ---
-# <a name="create-and-assign-scep-certificate-profiles-in-intune"></a>Create and assign SCEP certificate profiles in Intune
+# <a name="create-and-assign-scep-certificate-profiles-in-intune"></a>Criar e atribuir perfis de certificado SCEP no Intune
 
-After you [configure your infrastructure](certificates-scep-configure.md) to support Simple Certificate Enrollment Protocol (SCEP) certificates, you can create and then assign SCEP certificate profiles to users and devices in Intune.
+Depois de [configurar sua infraestrutura](certificates-scep-configure.md) para dar suporte a certificados de protocolo SCEP (SCEP), você pode criar e atribuir perfis de certificado SCEP a usuários e dispositivos no Intune.
 
 > [!IMPORTANT]  
-> Before you create SCEP certificate profiles, devices that will use a SCEP certificate profile must trust your Trusted Root Certification Authority (CA). Use a *trusted certificate profile* in Intune to provision the Trusted Root CA certificate to users and devices For information about the trusted certificate profile, see [Export the trusted root CA certificate](certificates-configure.md#export-the-trusted-root-ca-certificate) and [Create trusted certificate profiles](certificates-configure.md#create-trusted-certificate-profiles) in *Use certificates for authentication in Intune*.
+> Antes de criar perfis de certificado SCEP, os dispositivos que usarão um perfil de certificado SCEP devem confiar em sua AC (autoridade de certificação) raiz confiável. Usar um *perfil de certificado confiável* no Intune para provisionar o certificado de AC raiz confiável para usuários e dispositivos para obter informações sobre o perfil de certificado confiável, consulte [exportar o certificado de AC raiz confiável](certificates-configure.md#export-the-trusted-root-ca-certificate) e [criar perfis de certificado confiável](certificates-configure.md#create-trusted-certificate-profiles) em *usar certificados para autenticação no Intune*.
 
 
 ## <a name="create-a-scep-certificate-profile"></a>Criar um perfil de certificado SCEP
 
-1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-2. Select **Devices** > **Configuration profile** > **Create profile**.
+2. Selecione **dispositivos** > **perfil de configuração** > **Criar perfil**.
 
 3. Introduza as seguintes propriedades:
 
 4. Introduza um **Nome** e uma **Descrição** para o perfil de certificado SCEP.
 
-5. From the **Platform** drop-down list, select a [supported device platform](certificates-configure.md#supported-platforms-and-certificate-profiles) for this SCEP certificate.
+5. Na lista suspensa **plataforma** , selecione uma [plataforma de dispositivo com suporte](certificates-configure.md#supported-platforms-and-certificate-profiles) para este certificado SCEP.
 
-6. From the **Profile type** drop-down list, select **SCEP certificate**.  
+6. Na lista suspensa **tipo de perfil** , selecione **certificado SCEP**.  
 
-   For the **Android Enterprise** platform, *Profile type* is divided into two categories, *Device Owner Only* and *Work Profile Only*. Be sure to select the correct SCEP certificate profile for the devices you manage.  
+   Para a plataforma **Android Enterprise** , o *tipo de perfil* é dividido em duas categorias, *somente proprietário do dispositivo* e *somente perfil de trabalho*. Certifique-se de selecionar o perfil de certificado SCEP correto para os dispositivos que você gerencia.  
 
-   SCEP certificate profiles for the *Device Owner Only* profile have the following limitations:
+   Os perfis de certificado SCEP para o perfil *somente proprietário do dispositivo* têm as seguintes limitações:
 
-   1. Under Monitoring, certificate reporting isn't available for Device Owner SCEP certificate profiles.
+   1. Em monitoramento, o relatório de certificados não está disponível para perfis de certificado SCEP do proprietário do dispositivo.
 
-   2. You can't use Intune to revoke certificates that were provisioned by SCEP certificate profiles for Device Owners. You can manage revocation through an external process or directly with the certification authority. 
+   2. Você não pode usar o Intune para revogar certificados que foram provisionados por perfis de certificado SCEP para proprietários de dispositivo. Você pode gerenciar a revogação por meio de um processo externo ou diretamente com a autoridade de certificação. 
 
-   4. For Android Enterprise dedicated devices, SCEP certificate profiles are supported for Wi-Fi network configuration and authentication only.  SCEP certificate profiles on Android Enterprise dedicated devices are not supported for VPN or app authentication.   
+   4. Para dispositivos Android Enterprise dedicados, os perfis de certificado SCEP têm suporte somente para configuração e autenticação de rede Wi-Fi.  Os perfis de certificado SCEP em dispositivos Android Enterprise dedicados não têm suporte para autenticação de aplicativo ou VPN.   
 
    
-7. Select **Settings**, and then complete the following configurations:
+7. Selecione **configurações**e, em seguida, conclua as seguintes configurações:
 
-   - **Certificate type**:
+   - **Tipo de certificado**:
 
-     *(Applies to:  Android, Android Enterprise, iOS, macOS, Windows 8.1 and later, and Windows 10 and later.)*
+     *(Aplica-se a: Android, Android Enterprise, iOS, macOS, Windows 8.1 e posterior e Windows 10 e posterior.)*
 
-     Select a type depending on how you'll use the certificate profile:
+     Selecione um tipo dependendo de como você usará o perfil de certificado:
 
-     - **User**: *User* certificates can contain both user and device attributes in the subject and SAN of the certificate.  
-     - **Device**:  *Device* certificates can only contain device attributes in the subject and SAN of the certificate.
+     - **Usuário**: certificados de *usuário* podem conter atributos de usuário e de dispositivo no assunto e San do certificado.  
+     - **Dispositivo**: certificados de *dispositivo* só podem conter atributos de dispositivo no assunto e San do certificado.
 
-       Use **Device** for scenarios such as user-less devices, like kiosks, or for Windows devices. On Windows devices, the certificate is placed in the Local Computer certificate store.
+       Use o **dispositivo** para cenários como dispositivos sem usuário, como quiosques ou para dispositivos Windows. Em dispositivos Windows, o certificado é colocado no repositório de certificados do computador local.
 
-   - **Subject name format**:
+   - **Formato do nome da entidade**:
 
-     Select how Intune automatically creates the subject name in the certificate request. Options for the subject name format depend on the Certificate type you select, either **User** or **Device**.
+     Selecione como o Intune cria automaticamente o nome da entidade na solicitação de certificado. As opções para o formato de nome da entidade dependem do tipo de certificado selecionado, seja **usuário** ou **dispositivo**.
 
      > [!NOTE]
-     > There is a [known issue](#avoid-certificate-signing-requests-with-escaped-special-characters) for using SCEP to get certificates when the subject name in the resulting Certificate Signing Request (CSR) includes one of the following characters as an escaped character (proceeded by a backslash \\):
+     > Há um [problema conhecido](#avoid-certificate-signing-requests-with-escaped-special-characters) para usar o SCEP para obter certificados quando o nome da entidade na CSR (solicitação de assinatura de certificado) resultante inclui um dos seguintes caracteres como um caractere de escape (continuado por uma barra invertida \\):
      > - \+
      > - ;
      > - ,
@@ -82,7 +82,7 @@ After you [configure your infrastructure](certificates-scep-configure.md) to sup
 
      - **Tipo de certificado Utilizador**
 
-       Format options for the *Subject name format* include:
+       As opções de formato para o *formato de nome da entidade* incluem:
 
        - **Não configurado**
        - **Nome comum**
@@ -92,28 +92,28 @@ After you [configure your infrastructure](certificates-scep-configure.md) to sup
        - **Número de série**
        - **Personalizado**: ao selecionar esta opção, é também apresentada a caixa de texto **Personalizado**. Utilize este campo para introduzir um formato de nome de requerente personalizado, incluindo variáveis. O formato personalizado suporta duas variáveis: **Nome Comum (CN)** e **E-mail (E)** . O **Nome Comum (CN)** pode ser definido para qualquer uma das seguintes variáveis:
 
-         - **CN={{UserName}}** : The user principal name of the user, such as janedoe@contoso.com.
+         - **CN = {{username}}** : o nome UPN do usuário, como janedoe@contoso.com.
          - **CN={{AAD_Device_ID}}** : um ID atribuído ao registar um dispositivo no Azure Active Directory (AD). Este ID é normalmente utilizado na autenticação com o Azure AD.
-         - **CN={{SERIALNUMBER}}** : The unique serial number (SN) typically used by the manufacturer to identify a device.
-         - **CN={{IMEINumber}}** : The International Mobile Equipment Identity (IMEI) unique number used to identify a mobile phone.
-         - **CN={{OnPrem_Distinguished_Name}}** : A sequence of relative distinguished names separated by comma, such as *CN=Jane Doe,OU=UserAccounts,DC=corp,DC=contoso,DC=com*.
+         - **CN = {{SERIALNUMBER}}** : o número de série exclusivo (SN) normalmente usado pelo fabricante para identificar um dispositivo.
+         - **CN = {{IMEINumber}}** : o número exclusivo IMEI (identidade de equipamentos móveis internacional) usado para identificar um telefone celular.
+         - **CN = {{OnPrem_Distinguished_Name}}** : uma sequência de nomes distintos relativos separados por vírgula, como *CN = Jane Doe, ou = accounts, DC = Corp, DC = contoso, DC = com*.
 
-           To use the *{{OnPrem_Distinguished_Name}}* variable, be sure to sync the *onpremisesdistinguishedname* user attribute using [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) to your Azure AD.
+           Para usar a variável *{{OnPrem_Distinguished_Name}}* , certifique-se de sincronizar o atributo de usuário *onpremisesdistinguishedname* usando [Azure ad Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) para o Azure AD.
 
-         - **CN={{onPremisesSamAccountName}}** : Admins can sync the samAccountName attribute from Active Directory to Azure AD using Azure AD connect into an attribute called *onPremisesSamAccountName*. Intune can substitute that variable as part of a certificate issuance request in the subject of a certificate. The samAccountName attribute is the user sign-in name used to support clients and servers from a previous version of Windows (pre-Windows 2000). The user sign in name format is: *DomainName\testUser*, or only *testUser*.
+         - **CN = {{onPremisesSamAccountName}}** : os administradores podem sincronizar o atributo samAccountName de Active Directory ao Azure ad usando o Azure ad Connect em um atributo chamado *onPremisesSamAccountName*. O Intune pode substituir essa variável como parte de uma solicitação de emissão de certificado no assunto de um certificado. O atributo samAccountName é o nome de entrada do usuário usado para dar suporte a clientes e servidores de uma versão anterior do Windows (anterior ao Windows 2000). O formato do nome de entrada do usuário é: *DomainName\testUser*ou somente *testuser*.
 
-            To use the *{{onPremisesSamAccountName}}* variable, be sure to sync the *onPremisesSamAccountName* user attribute using [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) to your Azure AD.
+            Para usar a variável *{{onPremisesSamAccountName}}* , certifique-se de sincronizar o atributo de usuário *onPremisesSamAccountName* usando [Azure ad Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) ao Azure AD.
 
          Através de uma combinação de uma ou várias destas variáveis e cadeias estáticas, pode criar um formato de nome de requerente personalizado, como o seguinte:  
          - **CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US**
 
-         That example includes a subject name format that uses the CN and E variables, and strings for Organizational Unit, Organization, Location, State, and Country values. O artigo [função CertStrToName](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) descreve esta função e as cadeias suportadas da mesma.
+         Esse exemplo inclui um formato de nome de entidade que usa as variáveis CN e e e cadeias de caracteres para os valores de unidade organizacional, organização, local, estado e país. O artigo [função CertStrToName](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) descreve esta função e as cadeias suportadas da mesma.
 
       - **Tipo de certificado Dispositivo**
 
-        Format options for the Subject name format include the following variables:
+        As opções de formato para o formato de nome da entidade incluem as seguintes variáveis:
 
-        - **{{AAD_Device_ID}}** or **{{AzureADDeviceId}}** - Either variable can be used to identify a device by its Azure AD ID.
+        - **{{AAD_Device_ID}}** ou **{{AzureADDeviceId}}** -qualquer variável pode ser usada para identificar um dispositivo por sua ID do Azure AD.
         - **{{Device_Serial}}**
         - **{{Device_IMEI}}**
         - **{{SerialNumber}}**
@@ -121,40 +121,40 @@ After you [configure your infrastructure](certificates-scep-configure.md) to sup
         - **{{WiFiMacAddress}}**
         - **{{IMEI}}**
         - **{{DeviceName}}**
-        - **{{FullyQualifiedDomainName}}** *(Only applicable for Windows and domain-joined devices)*
+        - **{{FullyQualifiedDomainName}}** *(aplicável somente para dispositivos Windows e ingressados no domínio)*
         - **{{MEID}}**
 
-        You can specify these variables, followed by the text for the variable, in the textbox. For example, the common name for a device named *Device1* can be added as **CN={{DeviceName}}Device1**.
+        Você pode especificar essas variáveis, seguidas pelo texto da variável, na caixa de texto. Por exemplo, o nome comum para um dispositivo chamado *Device1* pode ser adicionado como **CN = {{DeviceName}} Device1**.
 
         > [!IMPORTANT]
-        > - When you specify a variable, enclose the variable name in curly brackets { } as seen in the example, to avoid an error.  
-        > - Device properties used in the *subject* or *SAN* of a device certificate, like **IMEI**, **SerialNumber**, and **FullyQualifiedDomainName**, are properties that could be spoofed by a person with access to the device.
-        > - A device must support all variables specified in a certificate profile for that profile to install on that device.  For example, if **{{IMEI}}** is used in the subject name of a SCEP profile and is assigned to a device that doesn’t have an IMEI number, the profile fails to install.
+        > - Quando você especifica uma variável, coloque o nome da variável entre chaves {}, como mostrado no exemplo, para evitar um erro.  
+        > - As propriedades de dispositivo usadas no *assunto* ou *San* de um certificado de dispositivo, como **IMEI**, **SerialNumber**e **FullyQualifiedDomainName**, são propriedades que podem ser falsificadas por uma pessoa com acesso ao dispositivo.
+        > - Um dispositivo deve dar suporte a todas as variáveis especificadas em um perfil de certificado para que esse perfil seja instalado nesse dispositivo.  Por exemplo, se **{{IMEI}}** for usado no nome da entidade de um perfil SCEP e for atribuído a um dispositivo que não tem um número IMEI, o perfil não será instalado.
 
-   - **Subject alternative name**: Select how Intune automatically creates the subject alternative name (SAN) in the certificate request. Options for the SAN depend on the Certificate type you selected; either **User** or **Device**.
+   - **Nome alternativo da entidade**: selecione como o Intune cria automaticamente o San (nome alternativo da entidade) na solicitação de certificado. As opções para a SAN dependem do tipo de certificado selecionado; o **usuário** ou o **dispositivo**.
 
       - **Tipo de certificado Utilizador**
 
-        Select from the available attributes:
+        Selecione um dos atributos disponíveis:
 
-        - **Endereço de e-mail**
-        - **User principal name (UPN)**
+        - **Endereço de correio eletrónico**
+        - **Nome principal do usuário (UPN)**
 
-        For example, user certificate types can include the user principal name (UPN) in the subject alternative name. Se um certificado de cliente for utilizado para autenticar um Servidor de Políticas de Rede, defina o nome alternativo do requerente como UPN.
+        Por exemplo, os tipos de certificado de usuário podem incluir o nome principal do usuário (UPN) no nome alternativo da entidade. Se um certificado de cliente for utilizado para autenticar um Servidor de Políticas de Rede, defina o nome alternativo do requerente como UPN.
 
       - **Tipo de certificado Dispositivo**
 
-        Use the **Attribute** dropdown and select an attribute, assign a **Value**, and **Add** that to the certificate profile. You can add multiple values by selecting additional attributes.
+        Use a lista suspensa **atributo** e selecione um atributo, atribua um **valor**e **adicione** -o ao perfil de certificado. Você pode adicionar vários valores selecionando atributos adicionais.
 
-        Available attributes include:
+        Os atributos disponíveis incluem:
 
-        - **Endereço de e-mail**
-        - **User principal name (UPN)**
+        - **Endereço de correio eletrónico**
+        - **Nome principal do usuário (UPN)**
         - **DNS**
 
         Com o tipo de certificado *Dispositivo*, pode utilizar as seguintes variáveis de certificado de dispositivo para o valor:
 
-        - **{{AAD_Device_ID}}** or **{{AzureADDeviceId}}** - Either variable can be used to identify a device by its Azure AD ID.
+        - **{{AAD_Device_ID}}** ou **{{AzureADDeviceId}}** -qualquer variável pode ser usada para identificar um dispositivo por sua ID do Azure AD.
         - **{{Device_Serial}}**
         - **{{Device_IMEI}}**
         - **{{SerialNumber}}**
@@ -165,91 +165,91 @@ After you [configure your infrastructure](certificates-scep-configure.md) to sup
         - **{{FullyQualifiedDomainName}}**
         - **{{MEID}}**
 
-        To specify a value for an attribute, include the variable name with curly brackets, followed by the text for that variable. For example, a value for the DNS attribute can be added **{{AzureADDeviceId}}.domain.com** where *.domain.com* is the text. For a user named *User1* an Email address might appear as {{FullyQualifiedDomainName}}User1@Contoso.com.
+        Para especificar um valor para um atributo, inclua o nome da variável com chaves, seguido pelo texto para essa variável. Por exemplo, um valor para o atributo DNS pode ser adicionado **{{AzureADDeviceId}}. domain. com** onde *. domain.com* é o texto. Para um usuário chamado *user1* , um endereço de email pode aparecer como {{FullyQualifiedDomainName}}User1@Contoso.com.
 
         > [!IMPORTANT]
-        > - When using a device certificate variable, enclose the variable name in curly brackets { }.
-        > - Don’t use curly brackets **{ }** , pipe symbols **|** , and semicolons **;** , in the text that follows the variable.
-        > - Device properties used in the *subject* or *SAN* of a device certificate, like **IMEI**, **SerialNumber**, and **FullyQualifiedDomainName**, are properties that could be spoofed by a person with access to the device.
-        > - A device must support all variables specified in a certificate profile for that profile to install on that device.  For example, if **{{IMEI}}** is used in the SAN of a SCEP profile and is assigned to a device that doesn’t have an IMEI number, the profile fails to install.
+        > - Ao usar uma variável de certificado de dispositivo, coloque o nome da variável entre chaves {}.
+        > - Não use chaves **{}** , símbolos de pipe **|** e ponto-e-vírgulas **;** no texto que segue a variável.
+        > - As propriedades de dispositivo usadas no *assunto* ou *San* de um certificado de dispositivo, como **IMEI**, **SerialNumber**e **FullyQualifiedDomainName**, são propriedades que podem ser falsificadas por uma pessoa com acesso ao dispositivo.
+        > - Um dispositivo deve dar suporte a todas as variáveis especificadas em um perfil de certificado para que esse perfil seja instalado nesse dispositivo.  Por exemplo, se **{{IMEI}}** for usado na San de um perfil SCEP e for atribuído a um dispositivo que não tem um número IMEI, o perfil não será instalado.
 
-   - **Certificate validity period**:
+   - **Período de validade do certificado**:
 
-     Pode introduzir um valor inferior ao período de validade do modelo de certificado, mas não superior. If you configured the certificate template to [support a custom value that can be set from within the Intune console](certificates-scep-configure.md#modify-the-validity-period-of-the-certificate-template), use this setting to specify the amount of remaining time before the certificate expires.
+     Pode introduzir um valor inferior ao período de validade do modelo de certificado, mas não superior. Se você configurou o modelo de certificado para [dar suporte a um valor personalizado que pode ser definido no console do Intune](certificates-scep-configure.md#modify-the-validity-period-of-the-certificate-template), use essa configuração para especificar a quantidade de tempo restante antes que o certificado expire.
 
      Por exemplo, se o período de validade do certificado no modelo de certificado for dois anos, pode introduzir um valor de um ano, mas não um valor de cinco anos. O valor deve também ser inferior ao período de validade restante do certificado da AC emissora.
 
-   - **Key storage provider (KSP)** :
+   - **Provedor de armazenamento de chaves (KSP)** :
 
-     *(Applies to:  Windows 8.1 and later, and Windows 10 and later)*
+     *(Aplica-se a: Windows 8.1 e posterior e Windows 10 e posterior)*
 
-     Specify where the key to the certificate is stored. Choose from the following values:
+     Especifique onde a chave para o certificado é armazenada. Escolha um dos seguintes valores:
 
      - **Inscrever em KSP de Trusted Platform Module (TPM) se estiver presente, caso contrário, KSP de Software**
      - **Inscrever em KSP de Trusted Platform Module (TPM), caso contrário, ocorre uma falha**
      - **Inscrever em Passport, caso contrário, ocorre uma falha (Windows 10 e posterior)**
      - **Inscrever em KSP de Software**
 
-   - **Key usage**:
+   - **Uso da chave**:
 
-     Select key usage options for the certificate:
+     Selecione as opções de uso de chave para o certificado:
 
-     - **Digital signature**: Allow key exchange only when a digital signature helps protect the key.
-     - **Key encipherment**: Allow key exchange only when the key is encrypted.
+     - **Assinatura digital**: permita a troca de chaves somente quando uma assinatura digital ajudar a proteger a chave.
+     - **Codificação de chave**: permitir troca de chaves somente quando a chave for criptografada.
 
-   - **Key size (bits)** :
+   - **Tamanho da chave (bits)** :
 
-     Select the number of bits contained in the key.
+     Selecione o número de bits contidos na chave.
 
-   - **Hash algorithm**:
+   - **Algoritmo de hash**:
 
-     *(Applies to Android, Android enterprise, Windows Phone 8.1, Windows 8.1 and later, and Windows 10 and later)*
+     *(Aplica-se ao Android, Android Enterprise, Windows Phone 8,1, Windows 8.1 e posterior e Windows 10 e posterior)*
 
      Selecione um dos tipos de algoritmo hash disponíveis para utilizar com este certificado. Selecione o maior nível de segurança que os dispositivos de ligação suportam.
 
-   - **Root Certificate**:
+   - **Certificado raiz**:
 
-     Select the *trusted certificate profile* you previously configured and assigned to applicable users and devices for this SCEP certificate profile. The trusted certificate profile is used to provision users and devices with the Trusted Root CA certificate. For information about the trusted certificate profile, see [Export your trusted root CA certificate](certificates-configure.md#export-the-trusted-root-ca-certificate) and [Create trusted certificate profiles](certificates-configure.md#create-trusted-certificate-profiles) in *Use certificates for authentication in Intune*. If you have a root Certification Authority and an issuing Certification Authority, select the Trusted Root certificate profile that is associated with the issuing Certification Authority.
+     Selecione o *perfil de certificado confiável* que você configurou anteriormente e atribuiu a usuários e dispositivos aplicáveis para este perfil de certificado SCEP. O perfil de certificado confiável é usado para provisionar usuários e dispositivos com o certificado de autoridade de certificação raiz confiável. Para obter informações sobre o perfil de certificado confiável, consulte [exportar seu certificado de AC raiz confiável](certificates-configure.md#export-the-trusted-root-ca-certificate) e [criar perfis de certificado confiável](certificates-configure.md#create-trusted-certificate-profiles) em *usar certificados para autenticação no Intune*. Se você tiver uma autoridade de certificação raiz e uma autoridade de certificação emissora, selecione o perfil de certificado raiz confiável que está associado à autoridade de certificação emissora.
 
-   - **Extended key usage**:
+   - **Uso estendido de chave**:
 
-     Add values for the certificate's intended purpose. In most cases, the certificate requires *client authentication* so that the user or device can authenticate to a server. You can add additional key usages as required.
+     Adicione valores para a finalidade desejada do certificado. Na maioria dos casos, o certificado requer *autenticação de cliente* para que o usuário ou o dispositivo possa se autenticar em um servidor. Você pode adicionar mais usos de chave, conforme necessário.
 
-   - **Renewal threshold (%)** :
+   - **Limite de renovação (%)** :
 
-     Enter the percentage of the certificate lifetime that remains before the device requests renewal of the certificate. For example, if you enter 20, the renewal of the certificate will be attempted when the certificate is 80% expired. Renewal attempts continue until renewal is successful. Renewal generates a new certificate, which results in a new public/private key pair.
+     Insira a porcentagem do tempo de vida do certificado que permanece antes da renovação das solicitações de dispositivo do certificado. Por exemplo, se você inserir 20, a renovação do certificado será tentada quando o certificado for 80% expirado. As tentativas de renovação continuam até que a renovação seja bem-sucedida. A renovação gera um novo certificado, o que resulta em um novo par de chaves pública/privada.
 
-   - **SCEP Server URLs**:
+   - **URLs do servidor SCEP**:
 
-     Enter one or more URLs for the NDES Servers that issue certificates via SCEP. For example, enter something like *https://ndes.contoso.com/certsrv/mscep/mscep.dll* . You can add additional SCEP URLs for load balancing as needed as URLs are randomly pushed to the device with the profile. If one of the SCEP servers isn't available, the SCEP request will fail and it's possible that on later device check-ins, the cert request could be made against the same server that is down.
+     Insira uma ou mais URLs para os servidores NDES que emitem certificados via SCEP. Por exemplo, digite algo como *https://ndes.contoso.com/certsrv/mscep/mscep.dll* . Você pode adicionar outras URLs de SCEP para balanceamento de carga conforme necessário, pois as URLs são enviadas aleatoriamente para o dispositivo com o perfil. Se um dos servidores de SCEP não estiver disponível, a solicitação de SCEP falhará e será possível que, em check-ins posteriores do dispositivo, a solicitação de certificado possa ser feita no mesmo servidor que está inativo.
 
-8. Select **OK**, and then select **Create**. The profile is created and appears on the *Device configuration - Profiles* list.
+8. Selecione **OK**e, em seguida, selecione **criar**. O perfil é criado e aparece na lista de *perfis de configuração do dispositivo* .
 
-### <a name="avoid-certificate-signing-requests-with-escaped-special-characters"></a>Avoid certificate signing requests with escaped special characters
+### <a name="avoid-certificate-signing-requests-with-escaped-special-characters"></a>Evitar solicitações de assinatura de certificado com caracteres especiais de escape
 
-There's a known issue for SCEP and PKCS certificate requests that include a Subject Name (CN) with one or more of the following special characters as an escaped character. Subject names that include one of the special characters as an escaped character result in a CSR with an incorrect subject name. An incorrect subject name results in the Intune SCEP challenge validation failing and no certificate issued.
+Há um problema conhecido para solicitações de certificado SCEP e PKCS que incluem um nome de entidade (CN) com um ou mais dos seguintes caracteres especiais como um caractere de escape. Os nomes de entidades que incluem um dos caracteres especiais como um caractere de escape resultam em um CSR com um nome de entidade incorreto. Um nome de assunto incorreto resulta na falha na validação do desafio SCEP do Intune e nenhum certificado emitido.
 
-The special characters are:
+Os caracteres especiais são:
 - \+
 - ,
 - ;
 - =
 
-When your subject name includes one of the special characters, use one of the following options to work around this limitation:
+Quando o nome da entidade incluir um dos caracteres especiais, use uma das opções a seguir para contornar essa limitação:
 
-- Encapsulate the CN value that contains the special character with quotes.  
-- Remove the special character from the CN value.
+- Encapsula o valor CN que contém o caractere especial com aspas.  
+- Remova o caractere especial do valor CN.
 
-**For example**, you have a Subject Name that appears as *Test user (TestCompany, LLC)* .  A CSR that includes a CN that has the comma between *TestCompany* and *LLC* presents a problem.  The problem can be avoided by placing quotes around the entire CN, or by removing of the comma from between *TestCompany* and *LLC*:
+**Por exemplo**, você tem um nome de entidade que aparece como *usuário de teste (TestCompany, LLC)* .  Um CSR que inclui um CN que tem a vírgula entre *TestCompany* e *LLC* apresenta um problema.  O problema pode ser evitado colocando-se aspas em todo o CN ou removendo a vírgula entre *TestCompany* e *LLC*:
 
-- **Add quotes**: *CN=* ”Test User (TestCompany, LLC)”,OU=UserAccounts,DC=corp,DC=contoso,DC=com*
-- **Remove the comma**: *CN=Test User (TestCompany LLC),OU=UserAccounts,DC=corp,DC=contoso,DC=com*
+- **Adicionar aspas**: *CN =* "usuário de teste (TestCompany, LLC)", ou = accounts, DC = Corp, DC = contoso, DC = com *
+- **Remova a vírgula**: *CN = test User (TestCompany LLC), ou = accounts, DC = Corp, DC = contoso, DC = com*
 
- However, attempts to escape the comma by using a backslash character will fail with an error in the CRP logs:
+ No entanto, as tentativas de escapar a vírgula usando um caractere de barra invertida falharão com um erro nos logs do CRP:
  
-- **Escaped comma**: *CN=Test User (TestCompany\\, LLC),OU=UserAccounts,DC=corp,DC=contoso,DC=com*
+- **Vírgula com escape**: *CN = usuário de teste (TestCompany\\, LLC), ou = accounts, DC = Corp, DC = contoso, DC = com*
 
-The error is similar to the following error:
+O erro é semelhante ao seguinte erro:
 
 ```
 Subject Name in CSR CN="Test User (TESTCOMPANY\, LLC),OU=UserAccounts,DC=corp,DC=contoso,DC=com" and challenge CN=Test User (TESTCOMPANY\, LLC),OU=UserAccounts,DC=corp,DC=contoso,DC=com do not match  
@@ -265,23 +265,23 @@ Exception:    at Microsoft.ConfigurationManager.CertRegPoint.ChallengeValidation
 
 ## <a name="assign-the-certificate-profile"></a>Atribuir o perfil de certificado
 
-Assign SCEP certificate profiles the same way you [deploy device profiles](../configuration/device-profile-assign.md) for other purposes. However, consider the following before you continue:
+Atribua perfis de certificado SCEP da mesma maneira que [implanta perfis de dispositivo](../configuration/device-profile-assign.md) para outras finalidades. No entanto, considere o seguinte antes de continuar:
 
-- When you assign SCEP certificate profiles to groups, the Trusted Root CA certificate file (as specified in the *trusted certificate profile*) is installed on the device. The device uses the SCEP certificate profile to create a certificate request for that Trusted Root CA certificate.
+- Quando você atribui perfis de certificado SCEP a grupos, o arquivo de certificado de autoridade de certificação raiz confiável (conforme especificado no *perfil de certificado confiável*) é instalado no dispositivo. O dispositivo usa o perfil de certificado SCEP para criar uma solicitação de certificado para esse certificado de AC raiz confiável.
 
-- The SCEP certificate profile installs only on devices that run the platform you specified when you created the certificate profile.
+- O perfil de certificado SCEP é instalado somente em dispositivos que executam a plataforma que você especificou quando criou o perfil de certificado.
 
 - Pode atribuir perfis de certificado a coleções de utilizadores ou de dispositivos.
 
 - Para publicar um certificado num dispositivo rapidamente após a inscrição do mesmo, atribua o perfil de certificado a um grupo de utilizadores, em vez de atribuir a um grupo de dispositivos. Se atribuir a um grupo de dispositivos, será preciso um registo do dispositivo completo antes de o dispositivo receber políticas.
 
-- If you use co-management for Intune and Configuration Manager, in Configuration Manager [set the workload slider](https://docs.microsoft.com/sccm/comanage/how-to-switch-workloads) for Resource Access Policy to **Intune** or **Pilot Intune**. This setting allows Windows 10 clients to start the process of requesting the certificate.
+- Se você usar o cogerenciamento para o Intune e o Configuration Manager, no Configuration Manager [defina o controle deslizante da carga de trabalho](https://docs.microsoft.com/sccm/comanage/how-to-switch-workloads) para a política de acesso ao recurso para o **Intune** ou o **Intune piloto**. Essa configuração permite que os clientes do Windows 10 iniciem o processo de solicitação do certificado.
 
-- Although you create and assign the trusted certificate profile and the SCEP certificate profile separately, both must be assigned. Without both installed on a device, the SCEP certificate policy fails. Ensure that any trusted root certificate profiles are also deployed to the same groups as the SCEP profile.
+- Embora você crie e atribua o perfil de certificado confiável e o perfil de certificado SCEP separadamente, ambos devem ser atribuídos. Sem ambos instalados em um dispositivo, a política de certificado SCEP falha. Certifique-se de que todos os perfis de certificado raiz confiáveis também sejam implantados nos mesmos grupos que o perfil SCEP.
 
 > [!NOTE]
-> On iOS devices, when a SCEP certificate profile is associated with an additional profile, like a Wi-Fi or VPN profile, the device receives a certificate for each of those additional profiles. This results in the iOS device having multiple certificates delivered by the SCEP certificate request.  If a single certificate is desired, you must use PKCS certificates instead of SCEP certificates.  This is due to differences in how SCEP and PKCS certificates are delivered to devices.
+> Em dispositivos iOS, quando um perfil de certificado SCEP é associado a um perfil adicional, como um perfil de Wi-Fi ou VPN, o dispositivo recebe um certificado para cada um desses perfis adicionais. Isso resulta no dispositivo iOS com vários certificados entregues pela solicitação de certificado SCEP.  Se desejar um único certificado, você deverá usar certificados PKCS em vez de certificados SCEP.  Isso se deve às diferenças em como os certificados SCEP e PKCS são entregues aos dispositivos.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 [Atribuir perfis](../configuration/device-profile-assign.md)

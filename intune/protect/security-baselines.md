@@ -1,6 +1,6 @@
 ---
-title: Use security baselines in Microsoft Intune - Azure | Microsoft Docs
-description: Use the recommended windows security settings to protect user and data on devices with Microsoft Intune for mobile device management. Enable encryption, configure Microsoft Defender Advanced Threat Protection, control Internet Explorer, set local security policies, require a password, block internet downloads, and more.
+title: Usar linhas de base de segurança no Microsoft Intune-Azure | Microsoft Docs
+description: Use as configurações de segurança do Windows recomendadas para proteger o usuário e os dados em dispositivos com Microsoft Intune para gerenciamento de dispositivo móvel. Habilitar a criptografia, configurar a proteção avançada contra ameaças do Microsoft defender, controlar o Internet Explorer, definir políticas de segurança locais, exigir uma senha, bloquear downloads da Internet e muito mais.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -23,205 +23,205 @@ ms.contentlocale: pt-PT
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74409978"
 ---
-# <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Use security baselines to configure Windows 10 devices in Intune
+# <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Usar linhas de base de segurança para configurar dispositivos Windows 10 no Intune
 
-Use Intune's security baselines to help you secure and protect your users and devices. Security baselines are pre-configured groups of Windows settings that help you apply a known group of settings and default values that are recommended by the relevant security teams. When you create a security baseline profile in Intune, you're creating a template that consists of multiple *device configuration* profiles.
+Use as linhas de base de segurança do Intune para ajudá-lo a proteger e proteger seus usuários e dispositivos. As linhas de base de segurança são grupos pré-configurados de configurações do Windows que ajudam a aplicar um grupo conhecido de configurações e valores padrão que são recomendados pelas equipes de segurança relevantes. Ao criar um perfil de linha de base de segurança no Intune, você está criando um modelo que consiste em vários perfis de *configuração de dispositivo* .
 
 Esta funcionalidade aplica-se a:
 
-- Windows 10 version 1809 and later
+- Windows 10 versão 1809 e posterior
 
-You deploy security baselines to groups of users or devices in Intune, and the settings apply to devices that run Windows 10 or later. For example, the *MDM Security Baseline* automatically enables BitLocker for removable drives, automatically requires a password to unlock a device, automatically disables basic authentication, and more. When a default value doesn’t work for your environment, customize the baseline to apply the settings you need.
+Você implanta linhas de base de segurança para grupos de usuários ou dispositivos no Intune, e as configurações se aplicam a dispositivos que executam o Windows 10 ou posterior. Por exemplo, a *linha de base de segurança do MDM* habilita automaticamente o BitLocker para unidades removíveis, requer automaticamente uma senha para desbloquear um dispositivo, desabilita automaticamente a autenticação básica e muito mais. Quando um valor padrão não funcionar para o seu ambiente, personalize a linha de base para aplicar as configurações necessárias.
 
-Separate baseline types can include the same settings but use different default values for those settings. It's important to understand the defaults in the baselines you choose to use, and to then modify each baseline to fit your organizational needs.
+Tipos de linha de base separados podem incluir as mesmas configurações, mas usam valores padrão diferentes para essas configurações. É importante entender os padrões nas linhas de base que você escolhe usar e, em seguida, modificar cada linha de base para atender às suas necessidades organizacionais.
 
 > [!NOTE]
-> Microsoft doesn't recommend using preview versions of security baselines in a production environment. The settings in a preview baseline might change over the course of the preview.
+> A Microsoft não recomenda o uso de versões prévias de linhas de base de segurança em um ambiente de produção. As configurações em uma linha de base de visualização podem mudar ao longo do curso da versão prévia.
 
-Security baselines can help you to have an end-to-end secure workflow when working with Microsoft 365. Some of the benefits include:
+As linhas de base de segurança podem ajudá-lo a ter um fluxo de trabalho seguro de ponta a ponta ao trabalhar com Microsoft 365. Alguns dos benefícios incluem:
 
-- A security baseline includes the best practices and recommendations on settings that impact security. Intune partners with the same Windows security team that creates group policy security baselines. These recommendations are based on guidance and extensive experience.
-- If you're new to Intune, and not sure where to start, then security baselines gives you an advantage. You can quickly create and deploy a secure profile, knowing that you're helping protect your organization's resources and data.
-- If you currently use group policy, migrating to Intune for management is much easier with these baselines. These baselines are natively built in to Intune, and include a modern management experience.
+- Uma linha de base de segurança inclui as práticas recomendadas e recomendações sobre configurações que afetam a segurança. Parceiros do Intune com a mesma equipe de segurança do Windows que cria linhas de base de segurança de diretiva de grupo. Essas recomendações são baseadas em orientação e ampla experiência.
+- Se você for novo no Intune e não tiver certeza de onde começar, as linhas de base de segurança lhe dão uma vantagem. Você pode criar e implantar rapidamente um perfil seguro, sabendo que está ajudando a proteger os recursos e os dados da sua organização.
+- Se você atualmente usa a política de grupo, migrar para o Intune para gerenciamento é muito mais fácil com essas linhas de base. Essas linhas de base são criadas nativamente no Intune e incluem uma experiência de gerenciamento moderna.
 
-[Windows security baselines](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines) is a great resource to learn more about this feature. [Mobile device management](https://docs.microsoft.com/windows/client-management/mdm/) (MDM) is a great resource about MDM, and what you can do on Windows devices.
+As [linhas de base de segurança do Windows](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines) são um ótimo recurso para saber mais sobre esse recurso. O MDM ( [Gerenciamento de dispositivo móvel](https://docs.microsoft.com/windows/client-management/mdm/) ) é um excelente recurso sobre o MDM e o que você pode fazer em dispositivos Windows.
 
-## <a name="about-baseline-versions-and-instances"></a>About baseline versions and instances
+## <a name="about-baseline-versions-and-instances"></a>Sobre as versões de linha de base e instâncias
 
-Each new version instance of a baseline can add or remove settings or introduce other changes. For example, as new Windows 10 settings become available with new versions of Windows 10, the MDM Security Baseline might receive a new version instance that includes the newest settings.
+Cada nova instância da versão de uma linha de base pode adicionar ou remover configurações ou introduzir outras alterações. Por exemplo, à medida que novas configurações do Windows 10 se tornam disponíveis com as novas versões do Windows 10, a linha de base de segurança do MDM pode receber uma nova instância de versão que inclui as configurações mais recentes.
 
-In the Intune console, the tile for each baseline displays the baseline template name and basic information about that baseline. The information includes how many profiles you have that use that baseline type, how many separate instances (versions) of the baseline type are available, and a *Last Published* date that identifies when that baseline template was added to your tenant. The following example shows the tile for a well-used MDM Security Baseline:
+No console do Intune, o bloco de cada linha de base exibe o nome do modelo de linha de base e as informações básicas sobre essa linha de base. As informações incluem quantos perfis você tem que usam esse tipo de linha de base, quantas instâncias separadas (versões) do tipo de linha de base estão disponíveis e uma data da *última publicação* que identifica quando esse modelo de linha de base foi adicionado ao seu locatário. O exemplo a seguir mostra o bloco para uma linha de base de segurança do MDM bem usada:
 
-![Baseline tile](./media/security-baselines/baseline-tile.png)
+![Bloco de linha de base](./media/security-baselines/baseline-tile.png)
 
-To view more information about the baseline versions you use, select a baseline tile to open its *Overview* pane, and then select **Versions**. Intune displays details about the versions of that baseline that are in use by your profiles. On the Versions pane, you can select a single version to view deeper details about the profiles that use that version. You can also select two different versions and then choose **Compare baselines** to download a CSV file that details those differences.
+Para exibir mais informações sobre as versões de linha de base que você usa, selecione um bloco de linha de base para abrir seu painel de *visão geral* e, em seguida, selecione **versões**. O Intune exibe detalhes sobre as versões da linha de base que estão sendo usadas por seus perfis. No painel versões, você pode selecionar uma única versão para exibir detalhes mais detalhados sobre os perfis que usam essa versão. Você também pode selecionar duas versões diferentes e, em seguida, escolher **comparar linhas de base** para baixar um arquivo CSV que detalha essas diferenças.
 
-![Compare baselines](./media/security-baselines/compare-baselines.png)
+![Comparar linhas de base](./media/security-baselines/compare-baselines.png)
 
-When you create a security baseline *profile*, the profile automatically uses the most recently released security baseline instance.  You can continue to use and edit profiles that you previously created that use an earlier baseline version instance, including baselines created using a Preview version.
+Quando você cria um *perfil*de linha de base de segurança, o perfil usa automaticamente a instância de linha de base de segurança lançada mais recentemente.  Você pode continuar a usar e editar perfis que você criou anteriormente, que usam uma instância de versão de linha de base anterior, incluindo linhas de base criadas usando uma versão de visualização.
 
-You can choose to [change of the version](#change-the-baseline-version-for-a-profile) of a baseline that’s in use with a given profile. This means when a new version comes out, you don’t have to create a new baseline profile to take advantage of it. Instead, when you’re ready, you can select a baseline profile and then use the built-in option to change the instance version for that profile to a new one.
+Você pode optar por [alterar a versão](#change-the-baseline-version-for-a-profile) de uma linha de base que está em uso com um determinado perfil. Isso significa que quando uma nova versão sair, você não precisará criar um novo perfil de linha de base para tirar proveito dela. Em vez disso, quando estiver pronto, você poderá selecionar um perfil de linha de base e usar a opção interna para alterar a versão da instância para esse perfil para um novo.
 
-## <a name="available-security-baselines"></a>Available security baselines
+## <a name="available-security-baselines"></a>Linhas de base de segurança disponíveis
 
- You can use one or more of the available baselines in your Intune environment at the same time. You can also use multiple instances of the same security baselines that have different customizations.
+ Você pode usar uma ou mais das linhas de base disponíveis no ambiente do Intune ao mesmo tempo. Você também pode usar várias instâncias das mesmas linhas de base de segurança que têm personalizações diferentes.
 
-When you use multiple security baselines, review the settings in each one to identify when different baselines introduce conflicting values for the same setting. Because you can deploy security baselines that are designed for different intents, and deploy multiple instances of the same baseline that includes customized settings, you might create configuration [conflicts for devices that must be investigated and resolved](security-baselines-monitor.md#troubleshoot-using-per-setting-status).  Also be aware of your [device configuration profiles](../configuration/device-profiles.md), which can configure many of the same settings as security baselines.
+Ao usar várias linhas de base de segurança, examine as configurações em cada uma para identificar quando linhas de base diferentes apresentam valores conflitantes para a mesma configuração. Como você pode implantar linhas de base de segurança que são projetadas para diferentes intenções e implantar várias instâncias da mesma linha de base que inclui configurações personalizadas, você pode criar [conflitos de configuração para dispositivos que devem ser investigados e resolvidos](security-baselines-monitor.md#troubleshoot-using-per-setting-status).  Além disso, lembre-se dos [perfis de configuração do dispositivo](../configuration/device-profiles.md), que podem definir muitas das mesmas configurações como linhas de base de segurança.
 
-The following security baseline instances are available for use with Intune. Use the links to view the settings for the most recent instance of each baseline.
+As seguintes instâncias de linha de base de segurança estão disponíveis para uso com o Intune. Use os links para exibir as configurações da instância mais recente de cada linha de base.
 
-- **MDM Security Baseline**
-  - [MDM Security Baseline for May 2019](security-baseline-settings-mdm-all.md?pivots=mdm-may-2019)
-  - [Preview: MDM Security Baseline for October 2018](security-baseline-settings-mdm-all.md?pivots=mdm-preview)
+- **Linha de base de segurança do MDM**
+  - [Linha de base de segurança do MDM para maio de 2019](security-baseline-settings-mdm-all.md?pivots=mdm-may-2019)
+  - [Visualização: linha de base de segurança do MDM para outubro de 2018](security-baseline-settings-mdm-all.md?pivots=mdm-preview)
 
-- **Microsoft Defender ATP baseline**
-   *(To use this baseline your environment must meet the prerequisites for using [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites))* .
-  - [Microsoft Defender ATP baseline](security-baseline-settings-defender-atp.md)
+- 
+  de **linha de base do Microsoft defender ATP** *(para usar essa linha de base, seu ambiente deve atender aos pré-requisitos para usar a [proteção avançada contra ameaças do Microsoft defender](advanced-threat-protection.md#prerequisites))* .
+  - [Linha de base do Microsoft defender ATP](security-baseline-settings-defender-atp.md)
 
   > [!NOTE]
-  > The Microsoft Defender ATP security baseline has been optimized for physical devices and is currently not recommended for use on virtual machines (VMs) or VDI endpoints. Certain baseline settings can impact remote interactive sessions on virtualized environments.  For more information, see [Increase compliance to the Microsoft Defender ATP security baseline](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline) in the Windows documentation.
+  > A linha de base de segurança do Microsoft defender ATP foi otimizada para dispositivos físicos e não é recomendada no momento para uso em VMs (máquinas virtuais) ou pontos de extremidade de VDI. Determinadas configurações de linha de base podem afetar sessões interativas remotas em ambientes virtualizados.  Para obter mais informações, consulte [aumentar a conformidade com a linha de base de segurança do Microsoft defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline) na documentação do Windows.
 
-- **Microsoft Edge Baseline**
-  - [Preview: Microsoft Edge baseline](security-baseline-settings-edge.md)
+- **Linha de base do Microsoft Edge**
+  - [Visualização: linha de base do Microsoft Edge](security-baseline-settings-edge.md)
 
-You can continue to use and edit profiles that you previously created based on a preview template, even when that preview template is no longer available for creating new profiles.
+Você pode continuar a usar e editar perfis criados anteriormente com base em um modelo de visualização, mesmo quando esse modelo de visualização não está mais disponível para a criação de novos perfis.
 
-## <a name="manage-baselines"></a>Manage baselines
+## <a name="manage-baselines"></a>Gerenciar linhas de base
 
-Common tasks when you work with security baselines include:
+As tarefas comuns quando você trabalha com linhas de base de segurança incluem:
 
-- [Create a profile](#create-the-profile) – Configure the settings you want to use and assign the baseline to groups.
-- [Change the version](#change-the-baseline-version-for-a-profile) – Change the baseline version in use by a profile.
-- [Remove a baseline assignment](#remove-a-security-baseline-assignment) - Learn what happens when you stop managing settings with a security baseline.
+- [Criar um perfil](#create-the-profile) – defina as configurações que você deseja usar e atribua a linha de base a grupos.
+- [Alterar a versão](#change-the-baseline-version-for-a-profile) – altere a versão de linha de base em uso por um perfil.
+- [Remover uma atribuição de linha de base](#remove-a-security-baseline-assignment) – saiba o que acontece quando você interrompe o gerenciamento de configurações com uma linha de base de segurança.
 
 
 ### <a name="prerequisites"></a>Pré-requisitos
 
-- To manage baselines in Intune, your account must have the [Policy and Profile Manager](../fundamentals/role-based-access-control.md#built-in-roles) built-in role.
+- Para gerenciar linhas de base no Intune, sua conta deve ter a função interna do [Gerenciador de políticas e perfis](../fundamentals/role-based-access-control.md#built-in-roles) .
 
-- Use of some baselines might require you to have an active subscription to additional services, like Microsoft Defender ATP.
+- O uso de algumas linhas de base pode exigir que você tenha uma assinatura ativa para serviços adicionais, como o Microsoft defender ATP.
 
 ### <a name="create-the-profile"></a>Criar o perfil
 
-1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-2. Select **Endpoint security** > **Security baselines** to view the list of available baselines.
+2. Selecione **Endpoint security** > **linhas de base de segurança** para exibir a lista de linhas de base disponíveis.
 
-   ![Select a security baseline to configure](./media/security-baselines/available-baselines.png)
+   ![Selecione uma linha de base de segurança para configurar](./media/security-baselines/available-baselines.png)
 
-3. Select the baseline you'd like to use, and then select **Create profile**.
+3. Selecione a linha de base que você deseja usar e, em seguida, selecione **Criar perfil**.
 
-4. On the **Basics** tab, specify the following properties:
+4. Na guia **noções básicas** , especifique as seguintes propriedades:
 
-   - **Name**: Enter a name for your security baselines profile. For example, enter *Standard profile for Defender ATP*.
+   - **Nome**: Insira um nome para seu perfil de linhas de base de segurança. Por exemplo, insira *perfil padrão para o defender ATP*.
 
-   - **Description**: Enter some text that describes what this baseline does. The description is for you to enter any text you want. It's optional, but recommended.
+   - **Descrição**: Insira algum texto que descreva o que essa linha de base faz. A descrição é para que você insira qualquer texto desejado. É opcional, mas recomendado.
 
-   Select **Next** to go to the next tab. After you advanced to a new tab, you can select the tab name to return to a previously viewed tab.
+   Selecione **Avançar** para ir para a próxima guia. Depois de avançado para uma nova guia, você pode selecionar o nome da guia para retornar a uma guia exibida anteriormente.
 
-5. On the Configuration settings tab, view the groups of **Settings** that are available in the baseline you selected. You can expand a group to view the settings in that group, and the default values for those settings in the baseline. To find specific settings:
-   - Select a group to expand and review the available settings.
-   - Use the *Search* bar and specify keywords that filter the view to display only those groups that contain your search criteria.
+5. Na guia definições de configuração, exiba os grupos de **configurações** que estão disponíveis na linha de base selecionada. Você pode expandir um grupo para exibir as configurações nesse grupo e os valores padrão para essas configurações na linha de base. Para localizar configurações específicas:
+   - Selecione um grupo para expandir e examine as configurações disponíveis.
+   - Use a barra de *pesquisa* e especifique palavras-chave que filtram a exibição para exibir somente os grupos que contêm seus critérios de pesquisa.
 
-   Each setting in a baseline has a default configuration for that baseline version. Reconfigure the default settings to meet your business needs. Different baselines might contain the same setting, and use different default values for the setting, depending on the intent of the baseline.
+   Cada configuração em uma linha de base tem uma configuração padrão para essa versão de linha de base. Reconfigure as configurações padrão para atender às suas necessidades de negócios. Linhas de base diferentes podem conter a mesma configuração e usar valores padrão diferentes para a configuração, dependendo da intenção da linha de base.
 
-   ![Expand a group to view the settings for that group](./media/security-baselines/sample-list-of-settings.png)
+   ![Expanda um grupo para exibir as configurações para esse grupo](./media/security-baselines/sample-list-of-settings.png)
 
-6. On the **Scope tags** tab, select **Select scope tags** to open the *Select tags* pane to assign scope tags to the profile.
+6. Na guia **marcas de escopo** , selecione **selecionar marcas de escopo** para abrir o painel *selecionar marcas* para atribuir marcas de escopo ao perfil.
 
-7. On the **Assignments** tab, select **Select groups to include** and then  assign the baseline to one or more groups. Use **Select groups to exclude** to fine-tune the assignment.
+7. Na guia **atribuições** , selecione **Selecionar grupos para incluir** e, em seguida, atribua a linha de base a um ou mais grupos. Use **Selecionar grupos para excluir** para ajustar a atribuição.
 
    ![Atribuir um perfil](./media/security-baselines/assignments.png)
 
-8. When you're ready to deploy the baseline, advance to the **Review + create** tab and review the details for the baseline. Select **Create** to save and deploy the profile.
+8. Quando estiver pronto para implantar a linha de base, avance para a guia **revisar + criar** e examine os detalhes da linha de base. Selecione **criar** para salvar e implantar o perfil.
 
-   As soon as you create the profile, it's pushed to the assigned group and might apply immediately.
+   Assim que você criar o perfil, ele será enviado por push para o grupo atribuído e poderá ser aplicado imediatamente.
 
    > [!TIP]
-   > If you save a profile without first assigning it to groups, you can later edit the profile to do so.
+   > Se você salvar um perfil sem primeiro atribuí-lo a grupos, poderá editar o perfil posteriormente para fazer isso.
 
-   ![Review the baseline](./media/security-baselines/review.png)
+   ![Examinar a linha de base](./media/security-baselines/review.png)
 
-9. After you create a profile, edit it by going to **Device security** > **Security baselines**, select the baseline type that you configured, and then select **Profiles**. Select the profile from the list of available profiles, and then select **Properties**. You can edit settings from all the available configuration tabs, and select **Review + save** to commit your changes.
+9. Depois de criar um perfil, edite-o acessando **segurança do dispositivo** > **linhas de base de segurança**, selecione o tipo de linha de base que você configurou e, em seguida, selecione **perfis**. Selecione o perfil na lista de perfis disponíveis e, em seguida, selecione **Propriedades**. Você pode editar as configurações de todas as guias de configuração disponíveis e selecionar **revisar + salvar** para confirmar suas alterações.
 
-### <a name="change-the-baseline-version-for-a-profile"></a>Change the baseline version for a profile
+### <a name="change-the-baseline-version-for-a-profile"></a>Alterar a versão de linha de base de um perfil
 
-You can change the version of the baseline instance that in use with a profile.  When you change the version, you select an available instance of the same baseline. You can’t change between two different baseline types, such as changing a profile from using a baseline for Defender ATP to using the MDM security baseline.
+Você pode alterar a versão da instância de linha de base que está sendo usada com um perfil.  Ao alterar a versão, você seleciona uma instância disponível da mesma linha de base. Você não pode alterar entre dois tipos de linha de base diferentes, como alterar um perfil de usar uma linha de base para o defender ATP para usar a linha de base de segurança do MDM.
 
-While configuring a change of the baseline version, you can download a CSV file that lists the changes between the two baseline versions involved. You also have the choice to keep all your customizations from the original baseline version, or implement the new version using all of its default values. You don't have the option to make changes to individual settings when you change the version of a baseline for a profile.
+Ao configurar uma alteração da versão de linha de base, você pode baixar um arquivo CSV que lista as alterações entre as duas versões de linha de base envolvidas. Você também tem a opção de manter todas as suas personalizações da versão de linha de base original ou implementar a nova versão usando todos os seus valores padrão. Você não tem a opção de fazer alterações em configurações individuais quando altera a versão de uma linha de base para um perfil.
 
-Upon saving, after the conversion is complete, the baseline is immediately redeployed to assigned groups.
+Após a gravação, depois que a conversão for concluída, a linha de base será reimplantada imediatamente em grupos atribuídos.
 
-**During conversion**:
+**Durante a conversão**:
 
-- New settings that weren't in the original version you were using are added and set to use the default values.
+- Novas configurações que não estavam na versão original que você estava usando são adicionadas e definidas para usar os valores padrão.
 
-- Settings that aren't in the new baseline version you select are removed and no longer enforced by this security baseline profile.
+- As configurações que não estão na nova versão de linha de base selecionada são removidas e não são mais impostas por esse perfil de linha de base de segurança.
 
-  When a setting is no longer managed by a baseline profile, that setting isn’t reset on the device. Instead, the setting on the device remains set to its last configuration until some other process manages the setting to change it. Examples of processes that can change a setting after you stop managing it include a different baseline profile, a group policy setting, or manual configuration that’s made on the device.
+  Quando uma configuração não é mais gerenciada por um perfil de linha de base, essa configuração não é redefinida no dispositivo. Em vez disso, a configuração no dispositivo permanece definida para sua última configuração até que algum outro processo gerencie a configuração para alterá-la. Exemplos de processos que podem alterar uma configuração depois de você parar de gerenciá-lo incluem um perfil de linha de base diferente, uma configuração de política de grupo ou uma configuração manual feita no dispositivo.
 
-#### <a name="to-change-the-baseline-version-for-a-profile"></a>To change the baseline version for a profile
+#### <a name="to-change-the-baseline-version-for-a-profile"></a>Para alterar a versão de linha de base de um perfil
 
-1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431). 
+1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431). 
 
-2. Select **Endpoint security** > **Security baselines**, and then select the tile for the baseline type that has the profile you want to change.
+2. Selecione **Endpoint security** > **linhas de base de segurança**e, em seguida, selecione o bloco para o tipo de linha de base que tem o perfil que você deseja alterar.
 
-3. Next, select **Profiles**, and then select the check box for the profile you want to edit, and then select **Change Version**.
+3. Em seguida, selecione **perfis**e marque a caixa de seleção do perfil que você deseja editar e, em seguida, selecione **alterar versão**.
 
-   ![select a baseline](./media/security-baselines/select-baseline.png)
+   ![selecionar uma linha de base](./media/security-baselines/select-baseline.png)
 
-4. On the **Change Version** pane, use the **Select a security baseline to update to** dropdown, and select the version instance you want to use.
+4. No painel **alterar versão** , use a lista suspensa **selecionar uma linha de base de segurança para atualizar** e selecione a instância de versão que você deseja usar.
 
-   ![select a version](./media/security-baselines/select-instance.png)
+   ![selecionar uma versão](./media/security-baselines/select-instance.png)
 
-5. Select **Review update** to download a CSV file that displays the difference between the profiles current instance version and the new version you’ve selected. Review this file so that you understand which settings are new or removed, and what the default values for these settings are in the updated profile.
+5. Selecione **examinar atualização** para baixar um arquivo CSV que exibe a diferença entre a versão de instância atual de perfis e a nova versão que você selecionou. Examine esse arquivo para entender quais configurações são novas ou removidas e quais valores padrão para essas configurações estão no perfil atualizado.
 
-   When ready, continue to the next step.
+   Quando estiver pronto, continue para a próxima etapa.
 
-6. Choose one of the two options for **Select a method to update the profile**:
-   - **Accept baseline changes but keep my existing setting customizations** - This option keeps the customizations you made to the baseline profile and applies them to the new version you've selected to use.
-   - **Accept baseline changes and discard existing setting customizations** - This option overwrites your original profile completely. The updated profile will use the default values for all settings.
+6. Escolha uma das duas opções para **selecionar um método para atualizar o perfil**:
+   - **Aceitar alterações de linha de base, mas manter minhas personalizações de configuração existentes** – essa opção mantém as personalizações feitas no perfil de linha de base e as aplica à nova versão que você selecionou para usar.
+   - **Aceitar alterações de linha de base e descartar personalizações de configuração existentes** -essa opção substitui completamente o seu perfil original. O perfil atualizado usará os valores padrão para todas as configurações.
 
-7. Select **Submit**. The profile updates to the selected baseline version and after the conversion is complete, the baseline immediately redeploys to assigned groups.
+7. Selecione **Enviar**. As atualizações de perfil para a versão de linha de base selecionada e após a conversão são concluídas, a linha de base é reimplantada imediatamente em grupos atribuídos.
 
-### <a name="remove-a-security-baseline-assignment"></a>Remove a security baseline assignment
+### <a name="remove-a-security-baseline-assignment"></a>Remover uma atribuição de linha de base de segurança
 
-When a security baseline setting no longer applies to a device, or settings in a baseline are set to *Not configured*, those settings on a device don’t revert to a pre-managed configuration. Instead, the previously managed settings on the device keep their last configurations as received from the baseline until some other process updates those settings on the device.
+Quando uma configuração de linha de base de segurança não se aplica a um dispositivo ou as configurações em uma linha de base são definidas como *não configuradas*, essas configurações em um dispositivo não são revertidas para uma configuração previamente gerenciada. Em vez disso, as configurações anteriormente gerenciadas no dispositivo mantêm suas últimas configurações como recebidas da linha de base até que algum outro processo atualize essas configurações no dispositivo.
 
-Other processes that might later change settings on the device include a different or new security baseline, device configuration profile, Group Policy configurations, or manual edit of the setting on the device.
+Outros processos que podem alterar posteriormente as configurações no dispositivo incluem uma linha de base de segurança diferente ou nova, perfil de configuração de dispositivo, configurações de Política de Grupo ou edição manual da configuração no dispositivo.
 
-## <a name="co-managed-devices"></a>Co-managed devices
+## <a name="co-managed-devices"></a>Dispositivos cogerenciados
 
-Security baselines on Intune-managed devices are similar to co-managed devices with Configuration Manager. Co-managed devices use System Center Configuration Manager and Microsoft Intune to manage the Windows 10 devices simultaneously. It lets you cloud-attach your existing Configuration Manager investment to the benefits of Intune. [Co-management overview](https://docs.microsoft.com/sccm/comanage/overview) is a great resource if you use Configuration Manager, and also want the benefits of the cloud.
+As linhas de base de segurança em dispositivos gerenciados pelo Intune são semelhantes aos dispositivos cogerenciados com Configuration Manager. Os dispositivos cogerenciados usam System Center Configuration Manager e Microsoft Intune para gerenciar os dispositivos Windows 10 simultaneamente. Ele permite que você anexe a nuvem seu investimento de Configuration Manager existente aos benefícios do Intune. A [visão geral do cogerenciamento](https://docs.microsoft.com/sccm/comanage/overview) é um ótimo recurso se você usar Configuration Manager e também quiser os benefícios da nuvem.
 
-When using co-managed devices, you must switch the **Device configuration** workload (its settings) to Intune. [Device configuration workloads](https://docs.microsoft.com/sccm/comanage/workloads#device-configuration) provides more information.
+Ao usar dispositivos cogerenciados, você deve alternar a carga de trabalho de **configuração do dispositivo** (suas configurações) para o Intune. As [cargas de trabalho de configuração do dispositivo](https://docs.microsoft.com/sccm/comanage/workloads#device-configuration) fornecem mais informações.
 
 ## <a name="q--a"></a>Perguntas e Respostas
 
-### <a name="why-these-settings"></a>Why these settings?
+### <a name="why-these-settings"></a>Por que essas configurações?
 
-The Microsoft security team has years of experience working directly with Windows developers and the security community to create these recommendations. The settings in this baseline are considered the most relevant security-related configuration options. In each new build of Windows, the team adjusts its recommendations based on newly released features.
+A equipe de segurança da Microsoft tem anos de experiência trabalhando diretamente com desenvolvedores do Windows e a comunidade de segurança para criar essas recomendações. As configurações nessa linha de base são consideradas as opções de configuração mais relevantes relacionadas à segurança. Em cada nova compilação do Windows, a equipe ajusta suas recomendações com base em recursos recentemente lançados.
 
-### <a name="is-there-a-difference-in-the-recommendations-for-windows-security-baselines-for-group-policy-vs-intune"></a>Is there a difference in the recommendations for Windows security baselines for group policy vs. Intune?
+### <a name="is-there-a-difference-in-the-recommendations-for-windows-security-baselines-for-group-policy-vs-intune"></a>Há uma diferença nas recomendações para as linhas de base de segurança do Windows para a diretiva de grupo versus o Intune?
 
-The same Microsoft security team chose and organized the settings for each baseline. Intune includes all the relevant settings in the Intune security baseline. There are some settings in the group policy baseline that are specific to an on-premises domain controller. These settings are excluded from Intune's recommendations. All the other settings are the same.
+A mesma equipe de segurança da Microsoft escolheu e organizou as configurações para cada linha de base. O Intune inclui todas as configurações relevantes na linha de base de segurança do Intune. Há algumas configurações na linha de base da diretiva de grupo que são específicas para um controlador de domínio local. Essas configurações são excluídas das recomendações do Intune. Todas as outras configurações são as mesmas.
 
-### <a name="are-the-intune-security-baselines-cis-or-nsit-compliant"></a>Are the Intune security baselines CIS or NSIT compliant?
+### <a name="are-the-intune-security-baselines-cis-or-nsit-compliant"></a>As linhas de base de segurança do Intune estão em conformidade com o CIS ou o NSIT?
 
-Strictly speaking, no. The Microsoft security team consults organizations, such as CIS, to compile its recommendations. But, there isn't a one-to-one mapping between “CIS-compliant” and Microsoft baselines.
+Estritamente falando, não. A equipe de segurança da Microsoft consulta as organizações, como CIS, para compilar suas recomendações. No entanto, não há um mapeamento de um para um entre "conformidade com o CIS" e linhas de base da Microsoft.
 
-### <a name="what-certifications-does-microsofts-security-baselines-have"></a>What certifications does Microsoft’s security baselines have? 
+### <a name="what-certifications-does-microsofts-security-baselines-have"></a>Quais certificações as linhas de base de segurança da Microsoft têm? 
 
-- Microsoft continues to publish security baselines for group policies (GPOs) and the [Security Compliance Toolkit](https://docs.microsoft.com/windows/security/threat-protection/security-compliance-toolkit-10), as it has for many years. These baselines are used by many organizations. The recommendations in these baselines are from the Microsoft security team’s engagement with enterprise customers and external agencies, including the Department of Defense (DoD), National Institute of Standards and Technology (NIST), and more. We share our recommendations and baselines with these organizations. These organizations also have their own recommendations that closely mirror Microsoft's recommendations. As mobile device management (MDM) continues to grow into the cloud, Microsoft created equivalent MDM recommendations of these group policy baselines. These additional baselines are built in to Microsoft Intune, and include compliance reports on users, groups, and devices that follow (or don't follow) the baseline.
+- A Microsoft continua a publicar linhas de base de segurança para políticas de grupo (GPOs) e o [Security Compliance Toolkit](https://docs.microsoft.com/windows/security/threat-protection/security-compliance-toolkit-10), como há muitos anos. Essas linhas de base são usadas por muitas organizações. As recomendações nessas linhas de base são do envolvimento da equipe de segurança da Microsoft com clientes corporativos e agências externas, incluindo o departamento de defesa (DoD), National Institute of Standards and Technology (NIST) e muito mais. Compartilhamos nossas recomendações e linhas de base com essas organizações. Essas organizações também têm suas próprias recomendações que espelham de forma minuciosa as recomendações da Microsoft. Como o MDM (gerenciamento de dispositivo móvel) continua crescendo na nuvem, a Microsoft criou recomendações de MDM equivalentes dessas linhas de base de diretiva de grupo. Essas linhas de base adicionais são internas para Microsoft Intune e incluem relatórios de conformidade em usuários, grupos e dispositivos que seguem (ou não seguem) a linha de base.
 
-- Many customers are using the Intune baseline recommendations as a starting point, and then customizing it to meet their IT and security demands. Microsoft’s Windows 10 RS5 **MDM Security Baseline** is the first baseline to release. This baseline is built as a generic infrastructure that allows customers to eventually import other security baselines based on CIS, NIST, and other standards. Currently, it's available for Windows and will eventually include iOS and Android.
+- Muitos clientes estão usando as recomendações de linha de base do Intune como um ponto de partida e, em seguida, personalizando-o para atender às suas demandas de segurança e ti. A linha de base de **segurança do MDM** RS5 do Windows 10 da Microsoft é a primeira linha de base a ser lançada. Essa linha de base é criada como uma infraestrutura genérica que permite aos clientes eventualmente importar outras linhas de base de segurança com base em CIS, NIST e outros padrões. Atualmente, ele está disponível para o Windows e, eventualmente, inclui iOS e Android.
 
-- Migrating from on-premises Active Directory group policies to a pure cloud solution using Azure Active Directory (AD) with Microsoft Intune is a journey. To help, there are group policy templates included in the [Security Compliance Toolkit](https://docs.microsoft.com/windows/security/threat-protection/security-compliance-toolkit-10) that can help manage hybrid AD and Azure AD-joined devices. These devices can get MDM settings from the cloud (Intune) and group policy settings from on-premises domain controllers as needed.
+- A migração do local Active Directory políticas de grupo para uma solução de nuvem pura usando Azure Active Directory (AD) com Microsoft Intune é uma jornada. Para ajudar, há modelos de política de grupo incluídos no [Security Compliance Toolkit](https://docs.microsoft.com/windows/security/threat-protection/security-compliance-toolkit-10) que podem ajudar a gerenciar dispositivos ingressados no AD híbrido e no Azure AD. Esses dispositivos podem obter as configurações de MDM da nuvem (Intune) e as configurações de política de grupo de controladores de domínio locais, conforme necessário.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
-- View the settings in the latest versions of the available baselines:
-  - [MDM security baseline](security-baseline-settings-mdm-all.md)
-  - [Microsoft Defender ATP baseline](security-baseline-settings-defender-atp.md)
+- Exiba as configurações nas versões mais recentes das linhas de base disponíveis:
+  - [Linha de base de segurança do MDM](security-baseline-settings-mdm-all.md)
+  - [Linha de base do Microsoft defender ATP](security-baseline-settings-defender-atp.md)
 
-- Check the status and monitor the [baseline and profile](security-baselines-monitor.md)
+- Verificar o status e monitorar a [linha de base e o perfil](security-baselines-monitor.md)

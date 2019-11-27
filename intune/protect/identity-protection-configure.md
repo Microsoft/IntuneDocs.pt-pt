@@ -1,6 +1,6 @@
 ---
-title: Use a PIN to sign in to Windows 10 devices using Microsoft Intune - Azure | Microsoft Docs
-description: Use Windows Hello for Business to allow users to sign in to devices using a PIN, a fingerprint, and more. Create an identity protection configuration profile in Intune for Windows 10 devices with these settings, and assign the profile to user groups and device groups.
+title: Usar um PIN para entrar em dispositivos Windows 10 usando o Microsoft Intune-Azure | Microsoft Docs
+description: Use o Windows Hello para empresas para permitir que os usuários entrem em dispositivos usando um PIN, uma impressão digital e muito mais. Crie um perfil de configuração de proteção de identidade no Intune para dispositivos Windows 10 com essas configurações e atribua o perfil a grupos de usuários e grupos de dispositivos.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -22,13 +22,13 @@ ms.contentlocale: pt-PT
 ms.lasthandoff: 11/19/2019
 ms.locfileid: "74188239"
 ---
-# <a name="use-windows-hello-for-business-on-windows-10-devices-with-microsoft-intune"></a>Use Windows Hello for Business on Windows 10 devices with Microsoft Intune
+# <a name="use-windows-hello-for-business-on-windows-10-devices-with-microsoft-intune"></a>Use o Windows Hello para empresas em dispositivos Windows 10 com Microsoft Intune
 
-Windows Hello for Business is a method for signing in to Windows devices by replacing passwords, smart cards, and virtual smart cards. Intune includes built-in settings so Administrators can configure and use Windows Hello for Business. For example, you can use these settings to:
+O Windows Hello para empresas é um método para entrar em dispositivos Windows, substituindo senhas, cartões inteligentes e cartões inteligentes virtuais. O Intune inclui configurações internas para que os administradores possam configurar e usar o Windows Hello para empresas. Por exemplo, você pode usar essas configurações para:
 
-- Enable Windows Hello for Business for devices and users
-- Set device PIN requirements, including a minimum or maximum PIN length
-- Allow gestures, such as a fingerprint, that users can (or can't use) to sign in to devices
+- Habilitar o Windows Hello para empresas para dispositivos e usuários
+- Definir requisitos de PIN do dispositivo, incluindo um comprimento mínimo ou máximo do PIN
+- Permitir gestos, como uma impressão digital, que os usuários podem (ou não podem usar) para entrar em dispositivos
 
 Esta funcionalidade aplica-se a dispositivos que executem:
 
@@ -36,41 +36,41 @@ Esta funcionalidade aplica-se a dispositivos que executem:
 - Windows 10 Mobile
 - Windows Holographic for Business
 
-Intune uses "configuration profiles" to create and customize these settings for your organization's needs. After you add these features in a profile, push or deploy these settings to user and device groups in your organization.
+O Intune usa "perfis de configuração" para criar e personalizar essas configurações para as necessidades da sua organização. Depois de adicionar esses recursos em um perfil, envie por Push ou implante essas configurações para grupos de usuários e dispositivos em sua organização.
 
-This article shows you how to create a device configuration profile. For a list of all the settings, and what they do, see [Windows 10 device settings to enable Windows Hello for Business](identity-protection-windows-settings.md).
+Este artigo mostra como criar um perfil de configuração de dispositivo. Para obter uma lista de todas as configurações e o que elas fazem, consulte [configurações do dispositivo Windows 10 para habilitar o Windows Hello para empresas](identity-protection-windows-settings.md).
 
-## <a name="create-the-device-profile"></a>Create the device profile
+## <a name="create-the-device-profile"></a>Criar o perfil do dispositivo
 
-1. Sign in to the [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-2. Select **Devices** > **Configuration profiles** > **Create profile**.
+2. Selecione **dispositivos** > **perfis de configuração** > **Criar perfil**.
 
 3. Introduza as seguintes propriedades:
 
    - **Nome**: introduza um nome descritivo para o novo perfil.
    - **Descrição:** introduza uma descrição para o perfil. Esta definição é opcional, mas recomendada.
-   - **Platform**: Select **Windows 10 and later**. O Windows Hello para Empresas só é suportado em dispositivos com o Windows 10 e versões posteriores.
-   - **Profile type**: Select **Identity protection**.
+   - **Plataforma**: selecione **Windows 10 e posterior**. O Windows Hello para Empresas só é suportado em dispositivos com o Windows 10 e versões posteriores.
+   - **Tipo de perfil**: selecione **proteção de identidade**.
 
-4. On the *Windows Hello for Business* pane, configure the following options:
+4. No painel *Windows Hello para empresas* , configure as seguintes opções:
 
-   - **Configure Windows Hello for Business**: Choose how you want to configure Windows Hello for Business:
+   - **Configurar o Windows Hello para empresas**: escolha como você deseja configurar o Windows Hello para empresas:
 
-     - **Not configured** (default): [Provisions Windows Hello for Business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-how-it-works-provisioning) on the device. Quando atribuir perfis de proteção de identidade apenas a utilizadores, o contexto do dispositivo assume a predefinição **Não configurado**.
+     - **Não configurado** (padrão): [provisiona o Windows Hello para empresas](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-how-it-works-provisioning) no dispositivo. Quando atribuir perfis de proteção de identidade apenas a utilizadores, o contexto do dispositivo assume a predefinição **Não configurado**.
 
-     - **Disabled**: If you don't want to use Windows Hello for Business, select this option. This option disables Windows Hello for Business for all users.
+     - **Desabilitado**: se você não quiser usar o Windows Hello para empresas, selecione esta opção. Essa opção desabilita o Windows Hello para empresas para todos os usuários.
 
-     - **Enabled**: Choose this option to [provision](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-how-it-works-provisioning), and configure Windows Hello for Business settings in Intune. Enter the settings you want to configure. For a list of all settings, and what they do, see - [Windows 10 device settings to enable Windows Hello for Business](identity-protection-windows-settings.md).
+     - **Habilitado**: escolha esta opção para [provisionar](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-how-it-works-provisioning)e definir as configurações do Windows Hello para empresas no Intune. Insira as configurações que você deseja configurar. Para obter uma lista de todas as configurações e o que elas fazem, consulte [configurações do dispositivo Windows 10 para habilitar o Windows Hello para empresas](identity-protection-windows-settings.md).
 
-   - **Use security keys for sign-in**: Enable Windows Hello security key as a logon credential for all PCs in the tenant.
+   - **Usar chaves de segurança para entrada**: habilitar a chave de segurança do Windows Hello como uma credencial de logon para todos os computadores no locatário.
 
-     - **Enable**
-     - **Not configured**  (default)
+     - **Ativar**
+     - **Não configurado** (padrão)
 
 5. Assim que terminar, selecione **OK** > **Criar** para guardar as alterações.
 
-The profile is created and appears in the profiles list. Next, [assign](../configuration/device-profile-assign.md) this profile to user and device groups to meet your needs.
+O perfil é criado e aparece na lista de perfis. Em seguida, [atribua](../configuration/device-profile-assign.md) esse perfil aos grupos de usuários e dispositivos para atender às suas necessidades.
 
 <!--  Removing image as part of design review; retaining source until we known the disposition.
 
@@ -82,7 +82,7 @@ In this high-level example, you'll create a device restriction policy that block
 
 -->
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
-- See a list of all [the settings, and what they do](identity-protection-windows-settings.md).
+- Veja uma lista de todas as [configurações e o que elas fazem](identity-protection-windows-settings.md).
 - [Atribua o perfil](../configuration/device-profile-assign.md) e [monitorize o respetivo estado](../configuration/device-profile-monitor.md).

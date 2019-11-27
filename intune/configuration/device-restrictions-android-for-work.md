@@ -1,6 +1,6 @@
 ---
-title: Android Enterprise device settings in Microsoft Intune - Azure | Microsoft Docs
-description: On Android Enterprise or Android for Work devices, restrict settings on the device, including copy and paste, show notifications, app permissions, data sharing, password length, sign in failures, use fingerprint to unlock, reuse passwords, and enable bluetooth sharing of work contacts. Configure devices as a dedicated device kiosk to run one app, or multiple apps.
+title: Definições de dispositivos empresariais Android no Microsoft Intune – Azure | Documentos da Microsoft
+description: Em dispositivos Android Enterprise ou Android for Work, restrinja as configurações no dispositivo, incluindo copiar e colar, Mostrar notificações, permissões de aplicativo, compartilhamento de dados, comprimento da senha, falhas de conexão, usar impressão digital para desbloquear, reutilizar senhas e habilitar Bluetooth compartilhamento de contatos de trabalho. Configure dispositivos como um quiosque de dispositivo dedicado para executar um aplicativo ou vários aplicativos.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -22,207 +22,207 @@ ms.contentlocale: pt-PT
 ms.lasthandoff: 11/22/2019
 ms.locfileid: "74390931"
 ---
-# <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Android Enterprise device settings to allow or restrict features using Intune
+# <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Definições de dispositivos do Android Enterprise para permitir ou restringir funcionalidades com o Intune
 
-This article lists and describes the different settings you can control on Android Enterprise devices. As part of your mobile device management (MDM) solution, use these settings to allow or disable features, run apps on dedicated devices, control security, and more.
+Este artigo apresenta e descreve as diferentes definições que pode controlar em dispositivos Android Enterprise. Como parte da sua solução de MDM (gerenciamento de dispositivo móvel), use essas configurações para permitir ou desabilitar recursos, executar aplicativos em dispositivos dedicados, controlar a segurança e muito mais.
 
 ## <a name="before-you-begin"></a>Antes de começar
 
-[Create a device configuration profile](device-restrictions-configure.md).
+[Criar um perfil de configuração de dispositivo](device-restrictions-configure.md).
 
-## <a name="device-owner-only"></a>Device owner only
+## <a name="device-owner-only"></a>Proprietário do dispositivo apenas
 
 ### <a name="general-settings"></a>Definições gerais
 
-- **Screen capture**: Choose **Block** to prevent screenshots or screen captures on the device. Também impede que os conteúdos presentes sejam apresentados em dispositivos de visualização que não tenham uma saída de vídeo segura. **Not configured** lets the user capture the screen contents as an image.
-- **Camera**: Choose **Block** to prevent access to the camera on the device. **Not required** allows access to the device's camera.
+- **Captura de tela**: escolha **Bloquear** para impedir capturas de tela ou capturas de telas no dispositivo. Também impede que os conteúdos presentes sejam apresentados em dispositivos de visualização que não tenham uma saída de vídeo segura. **Não configurado** permite que o usuário Capture o conteúdo da tela como uma imagem.
+- **Câmera**: escolha **Bloquear** para impedir o acesso à câmera no dispositivo. **Não obrigatório** permite o acesso à câmera do dispositivo.
 - **Política de permissões predefinida**: esta definição configura a política de permissões predefinida para pedidos de permissões de runtime. Os valores possíveis incluem:
   - **Predefinição do dispositivo**: utiliza a predefinição do dispositivo.
   - **Pedir**: é pedido ao utilizador que aprove a permissão.
   - **Conceder automaticamente**: as permissões são concedidas automaticamente.
   - **Negar automaticamente**: as permissões são negadas automaticamente.
-- **Date and Time changes**: Choose **Block** to prevent users from manually setting the date and time. **Not configured** allows users to the set date and time on the device.
-- **Volume changes**: **Block** prevents users from changing the device's volume, and also mutes the master volume. **Not configured** allows using the volume settings on the device.
-- **Factory reset**: Choose **Block** to prevent users from using the factory reset option in the device's settings. **Not configured** allows users to use this setting on the device.
-- **Arranque seguro**: selecione **Bloquear** para impedir que os utilizadores reiniciem o dispositivo em modo de segurança. **Not configured** allows users to reboot the device in safe mode.
-- **Status bar**: Choose **Block** to prevent access to the status bar, including notifications and quick settings. **Not configured** allows users access to the status bar.
-- **Roaming data services**: Choose **Block** to prevent data roaming over the cellular network. **Not configured** allows data roaming when the device is on a cellular network.
-- **Wi-Fi setting changes**: Choose **Block** to prevent users from changing Wi-Fi settings created by the device owner. Users can create their own Wi-Fi configurations. **Not configured** allows users to change the Wi-Fi settings on the device.
-- **Wi-Fi access point configuration**: Choose **Block** to prevent users from creating or changing any Wi-Fi configurations. **Not configured** allows users to change the Wi-Fi settings on the device.
-- **Bluetooth configuration**: Choose **Block** to prevent users from configuring Bluetooth on the device. **Not configured** allows using Bluetooth on the device.
-- **Tethering and access to hotspots**: Choose **Block** to prevent tethering and access to portable hotspots. **Not configured** allows tethering and access to portable hotspots.
-- **USB storage**: Choose **Allow** to access USB storage on the device. **Not configured** prevents access to USB storage.
-- **USB file transfer**: Choose **Block** to prevent transferring files over USB. **Not configured** allows transferring files.
-- **External media**: Choose **Block** to prevent using or connecting any external media on the device. **Not configured** allows external media on the device.
-- **Beam data using NFC**: Choose **Block** to prevent using the Near Field Communication (NFC) technology to beam data from apps. **Not configured** allows using NFC to share data between devices.
-- **Debugging features**: Choose **Allow** to let users use debugging features on the device. **Not configured** prevents users from using the debugging features on the device.
-- **Microphone adjustment**: Choose **Block** to prevent users from unmuting the microphone and adjusting the microphone volume. **Not configured** allows the user to use and adjust the volume of the microphone on the device.
-- **Factory reset protection emails**: Choose **Google account email addresses**. Enter the email addresses of device administrators that can unlock the device after it's wiped. Be sure to separate the email addresses with a semi-colon, such as `admin1@gmail.com;admin2@gmail.com`. If an email isn't entered, anyone can unlock the device after it's restored to the factory settings. These emails only apply when a non-user factory reset is ran, such as running a factory reset using the recovery menu.
-- **Network escape hatch**: Choose **Enable** to allow users to turn on the network escape hatch feature. If a network connection isn't made when the device boots, then the escape hatch asks to temporarily connect to a network and refresh the device policy. Depois da aplicação da política, a rede temporária é esquecida e o dispositivo continua o arranque. This feature connects devices to a network if:
-  - There isn't a suitable network in the last policy.
-  - The device boots into an app in lock task mode.
-  - The user is unable to reach the device settings.
+- **Alterações de data e hora**: escolha **Bloquear** para impedir que os usuários configurem manualmente a data e a hora. **Não configurado** permite que os usuários definam a data e a hora do dispositivo.
+- **Alterações de volume**: o **bloco** impede que os usuários alterem o volume do dispositivo e também faz mudo do volume mestre. **Não configurado** permite usar as configurações de volume no dispositivo.
+- **Redefinição de fábrica**: escolha **Bloquear** para impedir que os usuários usem a opção de redefinição de fábrica nas configurações do dispositivo. **Não configurado** permite que os usuários usem essa configuração no dispositivo.
+- **Arranque seguro**: selecione **Bloquear** para impedir que os utilizadores reiniciem o dispositivo em modo de segurança. **Não configurado** permite que os usuários reiniciem o dispositivo no modo de segurança.
+- **Barra de status**: escolha **Bloquear** para impedir o acesso à barra de status, incluindo notificações e configurações rápidas. **Não configurado** permite que os usuários acessem a barra de status.
+- **Serviços de dados de roaming**: escolha **Bloquear** para impedir o roaming de dados na rede celular. **Não configurado** permite o roaming de dados quando o dispositivo está em uma rede de celular.
+- **Alterações de configuração de Wi-Fi**: escolha **Bloquear** para impedir que os usuários alterem as configurações de Wi-Fi criadas pelo proprietário do dispositivo. Os utilizadores podem criar suas próprias configurações de Wi-Fi. **Não configurado** permite que os usuários alterem as configurações de Wi-Fi no dispositivo.
+- **Configuração do ponto de acesso Wi-Fi**: escolha **Bloquear** para impedir que os usuários criem ou alterem configurações de Wi-Fi. **Não configurado** permite que os usuários alterem as configurações de Wi-Fi no dispositivo.
+- **Configuração de Bluetooth**: escolha **Bloquear** para impedir que os usuários configurem o Bluetooth no dispositivo. **Não configurado** permite usar o Bluetooth no dispositivo.
+- **Compartilhamento de Internet e acesso a hotspots**: escolha **Bloquear** para impedir o compartilhamento de Internet e o acesso a hotspots portáteis. **Não configurado** permite o compartilhamento de Internet e o acesso a hotspots portáteis.
+- **Armazenamento USB**: escolha **permitir** para acessar o armazenamento USB no dispositivo. **Não configurado** impede o acesso ao armazenamento USB.
+- **Transferência de arquivos USB**: escolha **Bloquear** para impedir a transferência de arquivos por USB. **Não configurado** permite transferir arquivos.
+- **Mídia externa**: escolha o **bloco** para impedir o uso ou a conexão de qualquer mídia externa no dispositivo. **Não configurado** permite a mídia externa no dispositivo.
+- **Transmitir dados usando NFC**: escolha **Bloquear** para impedir o uso da tecnologia NFC (comunicação a curta distância) para transmitir dados de aplicativos. **Não configurado** permite o uso de NFC para compartilhar dados entre dispositivos.
+- **Recursos de depuração**: escolha **permitir** para permitir que os usuários usem recursos de depuração no dispositivo. **Não configurado** impede que os usuários usem os recursos de depuração no dispositivo.
+- **Ajuste do microfone**: escolha **Bloquear** para impedir que os usuários desfaçam o mudo do microfone e ajuste o volume do microfone. **Não configurado** permite que o usuário use e ajuste o volume do microfone no dispositivo.
+- **Emails de proteção de redefinição de fábrica**: escolha **endereços de email da conta do Google**. Introduza os endereços de e-mail dos administradores de dispositivos que possam desbloquear o dispositivo depois de serem eliminado. Lembre-se de separar os endereços de email com um ponto-e-vírgula, como `admin1@gmail.com;admin2@gmail.com`. Se uma mensagem de e-mail não é inserida, qualquer pessoa pode desbloquear o dispositivo após o restauro para as definições de fábrica. Esses emails se aplicam somente quando uma redefinição de fábrica que não é de usuário é executada, como executar uma redefinição de fábrica usando o menu de recuperação.
+- **Hachura de escape de rede**: escolha **habilitar** para permitir que os usuários ativem o recurso de hachura de escape de rede. Se uma conexão de rede não é feita quando o dispositivo for arrancado, a saída de emergência pede para temporariamente ligar a uma rede e atualizar a política de dispositivo. Depois da aplicação da política, a rede temporária é esquecida e o dispositivo continua o arranque. Esta funcionalidade liga dispositivos a uma rede se:
+  - Não existe uma rede adequada na política de última.
+  - O dispositivo for arrancado numa aplicação no modo de bloqueio de tarefa.
+  - O utilizador é não é possível alcançar as definições do dispositivo.
 
-  **Not configured** prevents users from turning on the network escape hatch feature on the device.
+  **Não configurado** impede que os usuários ativem o recurso de hachura de escape de rede no dispositivo.
 
-- **System update**: Choose an option to define how the device handles over-the-air updates:
+- **Atualização do sistema**: escolha uma opção para definir como o dispositivo lida com as atualizações ao longo do ar:
   - **Predefinição do Dispositivo**: utiliza a predefinição do dispositivo.
   - **Automático**: as atualizações são instaladas automaticamente sem interação do utilizador. Definir esta política imediatamente instala todas as atualizações pendentes.
-  - **Adiado**: as atualizações são adiadas por 30 dias. At the end of the 30 days, Android prompts the user to install the update. É possível os fabricantes de dispositivos ou operadoras impedirem (isentarem) o adiamento de atualizações de segurança importantes. Uma atualização isenta mostra uma notificação de sistema ao utilizador no dispositivo.
-  - **Janela de manutenção**: as atualizações são instaladas automaticamente durante uma janela de manutenção diária definida no Intune. Installation tries daily for 30 days, and can fail if there's insufficient space or battery levels. After 30 days, Android prompts the user to install. Esta janela também é utilizada para instalar atualizações para aplicações do Play. Use this option for dedicated devices, such as kiosks, as single-app dedicated device foreground apps can be updated.
+  - **Adiado**: as atualizações são adiadas por 30 dias. No final dos 30 dias, o Android solicita ao utilizador para instalar a atualização. É possível os fabricantes de dispositivos ou operadoras impedirem (isentarem) o adiamento de atualizações de segurança importantes. Uma atualização isenta mostra uma notificação de sistema ao utilizador no dispositivo.
+  - **Janela de manutenção**: as atualizações são instaladas automaticamente durante uma janela de manutenção diária definida no Intune. Instalação tenta diariamente durante 30 dias e pode falhar se houver níveis insuficientes de espaço ou útil da bateria. Após 30 dias, o Android solicita ao utilizador que instalar. Esta janela também é utilizada para instalar atualizações para aplicações do Play. Use essa opção para dispositivos dedicados, como quiosques, como aplicativos de primeiro plano de dispositivo dedicado de aplicativo único podem ser atualizados.
 
-- **Notification windows**: When set to **Disable**, window notifications, including toasts, incoming calls, outgoing calls, system alerts, and system errors aren't shown on the device. When set to **Not configured**, the operating system default is used, which may be to show notifications.
-- **Skip first use hints**: **Enable** hides or skips suggestions from apps that step through tutorials, or hints when the app starts. When set to **Not configured**, the operating system default is used, which may show these suggestions when the app starts.
+- **Janelas de notificação**: quando definido como **desabilitar**, as notificações de janela, incluindo solicitações de notificação, chamadas de entrada, chamadas de saída, alertas do sistema e erros do sistema não são mostradas no dispositivo. Quando definido como **não configurado**, o padrão do sistema operacional é usado, o que pode ser Mostrar notificações.
+- **Ignorar dicas de primeiro uso**: **habilitar** oculta ou ignora sugestões de aplicativos que percorrem tutoriais ou dicas quando o aplicativo é iniciado. Quando definido como **não configurado**, o padrão do sistema operacional é usado, o que pode mostrar essas sugestões quando o aplicativo é iniciado.
 
 ### <a name="system-security-settings"></a>Definições de segurança do sistema
 
-- **Threat scan on apps**: **Require** (default) enables Google Play Protect to scan apps before and after they’re installed. If it detects a threat, it may warn the user to remove the app from the device. **Not configured** doesn't enable or run Google Play Protect to scan apps.
+- **Verificação de ameaças em aplicativos**: **exigir** (padrão) habilita Google Play proteger para verificar os aplicativos antes e depois que eles são instalados. Se detectar uma ameaça, ele poderá avisar o usuário para remover o aplicativo do dispositivo. **Não configurado** não habilita nem executa Google Play proteger para verificar aplicativos.
 
-### <a name="dedicated-device-settings"></a>Dedicated device settings
+### <a name="dedicated-device-settings"></a>Configurações de dispositivo dedicado
 
-Use these settings to configure a kiosk-style experience on your dedicated devices. You can configure a device to run one app, or run many apps. When a device is set with kiosk mode, only the apps you add are available. These settings apply to Android Enterprise dedicated devices. They don't apply to Android Enterprise fully managed devices.
+Use essas configurações para configurar uma experiência em estilo de quiosque em seus dispositivos dedicados. Você pode configurar um dispositivo para executar um aplicativo ou executar muitos aplicativos. Quando um dispositivo é definido com o modo de quiosque, somente os aplicativos que você adiciona estão disponíveis. Essas configurações se aplicam a dispositivos Android Enterprise dedicados. Eles não se aplicam a dispositivos Android Enterprise totalmente gerenciados.
 
-**Kiosk mode**: Choose if the device runs one app or runs multiple apps.
+**Modo de quiosque**: escolha se o dispositivo executa um aplicativo ou executa vários aplicativos.
 
-- **Single app**: Users can only access a single app on the device. When the device starts, only the specific app starts. Os utilizadores não podem abrir novas aplicações ou mudar a aplicação em execução.
+- **Aplicativo único**: os usuários só podem acessar um único aplicativo no dispositivo. Quando o dispositivo é iniciado, apenas a aplicação específica é iniciada. Os utilizadores não podem abrir novas aplicações ou mudar a aplicação em execução.
 
-  - **Select a managed app**: Select the managed Google Play app from the list.
+  - **Selecionar um aplicativo gerenciado**: selecione o aplicativo Google Play gerenciado na lista.
 
-    If you don't have any apps listed, then [add some Android apps](../apps/apps-add-android-for-work.md) to the device. Be sure to [assign the app to the device group created for your dedicated devices](../apps/apps-deploy.md).
-
-  > [!IMPORTANT]
-  > When using single-app kiosk mode, dialer/phone apps may not function properly. 
-  
-- **Multi-app**: Users can access a limited set of apps on the device. When the device starts, only the apps you add start. You can also add some web links that users can open. When the policy is applied, users see icons for the allowed apps on the home screen.
+    Se você não tiver nenhum aplicativo listado, [adicione alguns aplicativos Android](../apps/apps-add-android-for-work.md) ao dispositivo. Certifique-se de [atribuir o aplicativo ao grupo de dispositivos criado para seus dispositivos dedicados](../apps/apps-deploy.md).
 
   > [!IMPORTANT]
-  > For multi-app dedicated devices, the [Managed Home Screen app](https://play.google.com/work/apps/details?id=com.microsoft.launcher.enterprise) from Google Play **must be**:
-  >   - [Added as a client app](../apps/apps-add-android-for-work.md) in Intune
-  >   - [Assigned to the device group](../apps/apps-deploy.md) created for your dedicated devices
-  >
-  > The **Managed Home Screen** app isn't required to be in the configuration profile, but it is required to be added as a client app. When the **Managed Home Screen** app is added as a client app, any other apps you add in the configuration profile are shown as icons on the **Managed Home Screen** app.
-  >
-  > When using multi-app kiosk mode, dialer/phone apps may not function properly. 
-
-  - **Add**: Select your apps from the list.
-
-    If the **Managed Home Screen** app isn't listed, then [add it from Google Play](https://play.google.com/work/apps/details?id=com.microsoft.launcher.enterprise). Be sure to [assign the app](../apps/apps-deploy.md) to the device group created for your dedicated devices.
-
-    You can also add other [Android apps](../apps/apps-add-android-for-work.md) and [web apps](../apps/web-app.md) created by your organization to the device. Be sure to [assign the app to the device group created for your dedicated devices](../apps/apps-deploy.md).
-
-  - **Virtual home button**: A soft-key button that returns users to the Managed Home Screen so users can switch between apps. As opções são:
-
-    - **Not configured** (default): A home button isn't shown. Users must use the back button to switch between apps.
-    - **Swipe up**: A home button shows when a user swipes up on the device.
-    - **Floating**: Shows a persistent, floating home button on the device.
-
-  - **Leave kiosk mode**: Choose **Enable** to allow Administrators to temporarily pause kiosk mode to update the device. To use this feature, the administrator:
+  > Ao usar o modo de quiosque de aplicativo único, os aplicativos de discagem/telefone podem não funcionar corretamente. 
   
-    1. Continues to select the back button until the **Exit kiosk** button is shown. 
-    2. Selects the **Exit kiosk** button, and enters the **Leave kiosk mode code** PIN.
-    3. When finished, select the **Managed Home Screen** app. This step relocks the device into multi-app kiosk mode.
+- **Vários aplicativos**: os usuários podem acessar um conjunto limitado de aplicativos no dispositivo. Quando o dispositivo é iniciado, inicie apenas as aplicações que adicionar. Também pode adicionar alguns links da web que os utilizadores podem abrir. Quando a política é aplicada, os utilizadores veem ícones para aplicações permitidas na tela inicial.
 
-      When set to **Not configured**, administrators can't pause kiosk mode. If the administrator continues to select the back button, and selects the **Exit kiosk** button, then a message states that a passcode is required.
+  > [!IMPORTANT]
+  > Para dispositivos dedicados de vários aplicativos, o [aplicativo de tela inicial gerenciado](https://play.google.com/work/apps/details?id=com.microsoft.launcher.enterprise) da Google Play **deve ser**:
+  >   - [Adicionado como um aplicativo cliente](../apps/apps-add-android-for-work.md) no Intune
+  >   - [Atribuído ao grupo de dispositivos](../apps/apps-deploy.md) criado para seus dispositivos dedicados
+  >
+  > O aplicativo de **tela inicial gerenciado** não precisa estar no perfil de configuração, mas é necessário adicioná-lo como um aplicativo cliente. Quando o aplicativo da **tela inicial gerenciada** é adicionado como um aplicativo cliente, todos os outros aplicativos adicionados no perfil de configuração são mostrados como ícones no aplicativo de **tela inicial gerenciado** .
+  >
+  > Ao usar o modo de quiosque de vários aplicativos, os aplicativos de discagem/telefone podem não funcionar corretamente. 
 
-    - **Leave kiosk mode code**: Enter a 4-6 digit numeric PIN. The administrator uses this PIN to temporarily pause kiosk mode.
+  - **Adicionar**: selecione seus aplicativos na lista.
 
-  - **Set custom URL background**: Enter a URL to customize the background screen on the dedicated device.
+    Se o aplicativo de **tela inicial gerenciada** não estiver listado, [adicione-o de Google Play](https://play.google.com/work/apps/details?id=com.microsoft.launcher.enterprise). Certifique-se de [atribuir o aplicativo](../apps/apps-deploy.md) ao grupo de dispositivos criado para seus dispositivos dedicados.
+
+    Você também pode adicionar outros [aplicativos Android](../apps/apps-add-android-for-work.md) e [aplicativos Web](../apps/web-app.md) criados por sua organização ao dispositivo. Certifique-se de [atribuir o aplicativo ao grupo de dispositivos criado para seus dispositivos dedicados](../apps/apps-deploy.md).
+
+  - **Botão página inicial virtual**: um botão de chave flexível que retorna usuários para a tela inicial gerenciada para que os usuários possam alternar entre aplicativos. As opções são:
+
+    - **Não configurado** (padrão): um botão de página inicial não é mostrado. Os usuários devem usar o botão voltar para alternar entre aplicativos.
+    - **Deslizar para cima**: um botão página inicial mostra quando um usuário passa o dedo para cima no dispositivo.
+    - **Flutuante**: mostra um botão de página inicial persistente e flutuante no dispositivo.
+
+  - **Sair do modo de quiosque**: escolha **habilitar** para permitir que os administradores pausem temporariamente o modo de quiosque para atualizar o dispositivo. Para usar esse recurso, o administrador:
+  
+    1. Continua selecionando o botão voltar até que o botão **sair do quiosque** seja mostrado. 
+    2. Seleciona o botão **sair do quiosque** e entra no **código do modo de quiosque** de saída.
+    3. Quando terminar, selecione o aplicativo de **tela inicial gerenciado** . Este passo relocks o dispositivo em modo de local público de várias aplicações.
+
+      Quando definido como **não configurado**, os administradores não podem pausar o modo de quiosque. Se o administrador continuar selecionando o botão voltar e seleciona o botão **sair do quiosque** , uma mensagem informa que uma senha é necessária.
+
+    - **Deixe o código do modo de quiosque**: Insira um PIN numérico de 4-6 dígitos. O administrador utiliza este PIN para interromper temporariamente o modo de local público.
+
+  - **Definir o plano de fundo da URL personalizada**: Insira uma URL para personalizar a tela de fundo no dispositivo dedicado.
 
     > [!NOTE]
-    > For most cases, we recommend starting with images of at least the following sizes:
+    > Na maioria dos casos, é recomendável iniciar com imagens de pelo menos os seguintes tamanhos:
     >
-    > - Phone: 1080x1920 px
-    > - Tablet: 1920x1080 px
+    > - Telefone: 1080x1920 px
+    > - Tablet: 1920 x 1080 px
     >
-    > For the best experience and crisp details, it’s suggested that per device image assets be created to the display specifications.
+    > Para obter a melhor experiência e os detalhes nítidos, é recomendável que os ativos por imagem do dispositivo sejam criados para as especificações de exibição.
     >
-    > Modern displays have higher pixel densities and can display equivalent 2K/4K definition images.
+    > Os monitores modernos têm densidades de pixel mais altas e podem exibir imagens de definição de 2K/4K equivalentes.
 
-  - **Wi-Fi configuration**: **Enable** shows the Wi-Fi control on the Managed Home Screen, and allows end users to connect the device to different WiFi networks. Enabling this feature also turns on device location. **Not configured** (default) doesn't show the Wi-Fi control on the Managed Home Screen. It prevents users from connecting to Wi-Fi networks while using the Managed Home Screen.
+  - **Configuração de Wi-Fi**: **habilitar** mostra o controle Wi-Fi na tela inicial gerenciada e permite que os usuários finais conectem o dispositivo a redes wifi diferentes. Habilitar esse recurso também ativa o local do dispositivo. **Não configurado** (padrão) não mostra o controle Wi-Fi na tela inicial gerenciada. Ele impede que os usuários se conectem a redes Wi-Fi usando a tela inicial gerenciada.
 
-  - **Bluetooth configuration**: **Enable** shows the Bluetooth control on the Managed Home Screen, and allows end users to pair devices over Bluetooth. Enabling this feature also turns on device location. **Not configured** (default) doesn't show the Bluetooth control on the Managed Home Screen. It prevents users from configuring Bluetooth and pairing devices while using the Managed Home Screen.
+  - **Configuração de Bluetooth**: **habilitar** mostra o controle Bluetooth na tela inicial gerenciada e permite que os usuários finais Emparelhem dispositivos via Bluetooth. Habilitar esse recurso também ativa o local do dispositivo. **Não configurado** (padrão) não mostra o controle Bluetooth na tela inicial gerenciada. Ele impede que os usuários configurem dispositivos Bluetooth e de emparelhamento ao usar a tela inicial gerenciada.
 
-  - **Flashlight access**: **Enable** shows the flashlight control on the Managed Home Screen, and allows end users to turn the flashlight on or off. **Not configured** (default) doesn't show the flashlight control on Managed Home Screen. It prevents users from using the flashlight while using the Managed Home Screen.
+  - **Acesso à lanterna**: **habilitar** mostra o controle lanterna na tela inicial gerenciada e permite que os usuários finais ativem ou desativem a lanterna. **Não configurado** (padrão) não mostra o controle lanterna na tela inicial gerenciada. Ele impede que os usuários usem a lanterna ao usar a tela inicial gerenciada.
 
-  - **Media volume control**: **Enable** shows the media volume control on the Managed Home Screen, and allows end users to adjust the device's media volume using a slider. **Not configured** (default) doesn't show the media volume control on Managed Home Screen. It prevents users from adjusting the device's media volume while using the Managed Home Screen, unless their hardware buttons support it. 
+  - **Controle de volume de mídia**: **habilitar** mostra o controle de volume de mídia na tela inicial gerenciada e permite que os usuários finais ajustem o volume de mídia do dispositivo usando um controle deslizante. **Não configurado** (padrão) não mostra o controle de volume de mídia na tela inicial gerenciada. Ele impede que os usuários ajustem o volume de mídia do dispositivo ao usar a tela inicial gerenciada, a menos que seus botões de hardware ofereçam suporte a ele. 
 
-  - **Screen saver mode**: **Enable** shows a screensaver on the Managed Home Screen when the device is locked or times out. **Not configured** (default) doesn't show a screensaver on the Managed Home Screen.
+  - **Modo de proteção de tela**: **habilitar** mostra uma barra de proteção na tela inicial gerenciada quando o dispositivo está bloqueado ou expira. **Não configurado** (padrão) não mostra uma barra de proteção na tela inicial gerenciada.
 
-    When enabled, also configure:
+    Quando habilitado, configure também:
 
-    - **Set custom screen saver image**: Enter the URL to a custom PNG, JPG, JPEG, GIF, BMP, WebP, or ICOimage. For example, enter:
+    - **Definir imagem de proteção de tela personalizada**: Insira a URL para um png personalizado, jpg, JPEG, GIF, BMP, WebP ou ICOimage. Por exemplo, digite:
 
       - `http://www.contoso.com/image.jpg`
       - `www.contoso.com/image.bmp`
       - `https://www.contoso.com/image.webp`
 
-      If you don't enter a URL, then the device's default image is used, if there is a default image.
+      Se você não inserir uma URL, a imagem padrão do dispositivo será usada, se houver uma imagem padrão.
       
       > [!TIP]
-      > Any file resource URL that can be turned into a bitmap is supported.
+      > Qualquer URL de recurso de arquivo que possa ser transformada em um bitmap é suportada.
 
-    - **Number of seconds the device shows screen saver before turning off screen**: Choose how long the device shows the screensaver. Enter a value between 0-9999999 seconds. Default is `0` seconds. When left blank, or set to zero (`0`), the screen saver is active until a user interacts with the device.
-    - **Number of seconds the device is inactive before showing screen saver**: Choose how long the device is idle before showing the screensaver. Enter a value between 1-9999999 seconds. Default is `30` seconds. You must enter a number greater than zero (`0`).
-    - **Detect media before starting screen saver**: **Enable** (default) doesn't show the screen saver if audio or video is playing on the device. **Not configured** shows the screen saver, even if audio or video is playing.
+    - **Número de segundos que o dispositivo mostra a proteção de tela antes**de desligar a tela: escolha por quanto tempo o dispositivo mostra a proteção. Insira um valor entre 0-9999999 segundos. O padrão é `0` segundos. Quando deixado em branco ou definido como zero (`0`), a proteção de tela estará ativa até que um usuário interaja com o dispositivo.
+    - **Número de segundos em que o dispositivo fica inativo antes de mostrar a proteção de tela**: escolha por quanto tempo o dispositivo estará ocioso antes de mostrar a proteção. Insira um valor entre 1-9999999 segundos. O padrão é `30` segundos. Você deve inserir um número maior que zero (`0`).
+    - **Detectar mídia antes de iniciar a proteção de tela**: **habilitar** (padrão) não mostrará a proteção de tela se áudio ou vídeo estiver sendo reproduzido no dispositivo. **Não configurado** mostra a proteção de tela, mesmo se o áudio ou vídeo estiver sendo reproduzido.
 
 ### <a name="device-password-settings"></a>Definições de palavra-passe do dispositivo
 
-- **Disable lock screen**: Choose **Disable** to prevent users from using Keyguard lock screen feature on the device. **Not configured** allows the user to use the Keyguard features.
-- **Disabled lock screen features**: When keyguard is enabled on the device, choose which features to disable. For example, when **Secure camera** is checked, the camera feature is disabled on the device. Any features not checked are enabled on the device.
+- **Desabilitar tela de bloqueio**: escolha **desabilitar** para impedir que os usuários usem o recurso de tela de bloqueio do keyguard no dispositivo. **Não configurado** permite que o usuário use os recursos do keyguard.
+- **Recursos da tela de bloqueio desabilitados**: quando o keyguard está habilitado no dispositivo, escolha quais recursos serão desabilitados. Por exemplo, quando a **câmera segura** está marcada, o recurso de câmera é desabilitado no dispositivo. Todos os recursos não verificados estão habilitados no dispositivo.
 
-  These features are available to users when the device is locked. Users won't see or access features that are checked.
+  Esses recursos estão disponíveis para os usuários quando o dispositivo está bloqueado. Os usuários não verão nem acessarão os recursos que estão marcados.
 
 - **Tipo de palavra-passe necessária**: define o tipo de palavra-passe necessária para o dispositivo. As opções são:
   - **Predefinição do dispositivo**
   - **Palavra-passe obrigatória, sem restrições**
-  - **Weak biometric**: [Strong vs. weak biometrics](https://android-developers.googleblog.com/2018/06/better-biometrics-in-android-p.html) (opens Android's web site)
-  - **Numeric**: Password must only be numbers, such as `123456789`. Introduza o **comprimento mínimo da palavra-passe** que um utilizador tem de introduzir, entre 4 e 16 carateres.
-  - **Numeric complex**: Repeated or consecutive numbers, such as "1111" or "1234", aren't allowed. Introduza o **comprimento mínimo da palavra-passe** que um utilizador tem de introduzir, entre 4 e 16 carateres.
-  - **Alphabetic**: Letters in the alphabet are required. Não são obrigatórios números nem símbolos. Introduza o **comprimento mínimo da palavra-passe** que um utilizador tem de introduzir, entre 4 e 16 carateres.
-  - **Alphanumeric**: Includes uppercase letters, lowercase letters, and numeric characters. Introduza o **comprimento mínimo da palavra-passe** que um utilizador tem de introduzir, entre 4 e 16 carateres.
-  - **Alphanumeric with symbols**: Includes uppercase letters, lowercase letters, numeric characters, punctuation marks, and symbols. Introduza também:
+  - Biometria fraco: a **biométrica** [forte versus fraca](https://android-developers.googleblog.com/2018/06/better-biometrics-in-android-p.html) (abre o site do Android)
+  - **Numeric**: a senha deve ser apenas números, como `123456789`. introduza o **comprimento mínimo da palavra-passe** que um utilizador tem de introduzir, entre 4 e 16 carateres.
+  - **Numérico complexo**: números repetidos ou consecutivos, como "1111" ou "1234", não são permitidos. introduza o **comprimento mínimo da palavra-passe** que um utilizador tem de introduzir, entre 4 e 16 carateres.
+  - **Alfabético**: as letras no alfabeto são obrigatórias. Não são obrigatórios números nem símbolos. introduza o **comprimento mínimo da palavra-passe** que um utilizador tem de introduzir, entre 4 e 16 carateres.
+  - **Alfanumérico**: inclui letras maiúsculas, letras minúsculas e caracteres numéricos. introduza o **comprimento mínimo da palavra-passe** que um utilizador tem de introduzir, entre 4 e 16 carateres.
+  - **Alfanumérico com símbolos**: inclui letras maiúsculas, letras minúsculas, caracteres numéricos, sinais de Pontuação e símbolos. Introduza também:
 
-    - **Minimum password length**: Enter the minimum length the password must have, between 4 and 16 characters.
-    - **Number of characters required**: Enter the number of characters the password must have, between 0 and 16 characters.
-    - **Number of lowercase characters required**: Enter the number of lowercase characters the password must have, between 0 and 16 characters.
-    - **Number of uppercase characters required**: Enter the number of uppercase characters the password must have, between 0 and 16 characters.
-    - **Number of non-letter characters required**: Enter the number of non-letters (anything other than letters in the alphabet) the password must have, between 0 and 16 characters.
-    - **Number of numeric characters required**: Enter the number of numeric characters (`1`, `2`, `3`, and so on) the password must have, between 0 and 16 characters.
-    - **Number of symbol characters required**: Enter the number of symbol characters (`&`, `#`, `%`, and so on) the password must have, between 0 and 16 characters.
+    - **Comprimento mínimo da senha**: Insira o comprimento mínimo que a senha deve ter, entre 4 e 16 caracteres.
+    - **Número de caracteres necessários**: Insira o número de caracteres que a senha deve ter, entre 0 e 16 caracteres.
+    - **Número de caracteres minúsculos necessários**: Insira o número de caracteres minúsculos que a senha deve ter, entre 0 e 16 caracteres.
+    - **Número de caracteres maiúsculos necessários**: Insira o número de caracteres maiúsculos que a senha deve ter, entre 0 e 16 caracteres.
+    - **Número de caracteres que não são de letra necessários**: Insira o número de letras que não sejam maiúsculas (algo que não seja letras no alfabeto) que a senha deve ter, entre 0 e 16 caracteres.
+    - **Número de caracteres numéricos necessários**: Insira o número de caracteres numéricos (`1`, `2`, `3`e assim por diante) que a senha deve ter, entre 0 e 16 caracteres.
+    - **Número de caracteres de símbolo necessários**: Insira o número de caracteres de símbolo (`&`, `#`, `%`e assim por diante) que a senha deve ter, entre 0 e 16 caracteres.
 
-- **Number of days until password expires**: Enter the number of days, between 1-365, until the device password must be changed. Por exemplo, para alterar a palavra-passe após 60 dias, introduza `60`. Quando a palavra-passe expirar, será pedido aos utilizadores para criar uma nova.
-- **Number of passwords required before user can resuse a password**: Enter the number of recent passwords that can't be reused, between 1-24. Utilize esta definição para impedir o utilizador final de criar palavras-passe utilizadas anteriormente.
-- **Number of sign-in failures before wiping device**: Enter the number, between 4-11, of failed sign-ins to allow before the device is wiped.
+- **Número de dias até a senha expirar**: Insira o número de dias, entre 1-365, até que a senha do dispositivo deva ser alterada. Por exemplo, para alterar a palavra-passe após 60 dias, introduza `60`. Quando a palavra-passe expirar, será pedido aos utilizadores para criar uma nova.
+- **Número de senhas necessárias antes que o usuário possa resuse uma senha**: Insira o número de senhas recentes que não podem ser reutilizadas, entre 1-24. Utilize esta definição para impedir o utilizador final de criar palavras-passe utilizadas anteriormente.
+- **Número de falhas de entrada antes de apagar o dispositivo**: Insira o número, entre 4-11, de entradas com falha para permitir antes que o dispositivo seja apagado.
 
 ### <a name="power-settings"></a>Definições de energia
 
-- **Time to lock screen**: Enter the maximum time a user can set until the device locks. For example, if you set this setting to **10 minutes**, then users can set the time from 15 seconds up to 10 minutes. When set to **Not configured** (default), Intune doesn't change or control this setting.
+- **Tempo para bloquear a tela**: Insira o tempo máximo que um usuário pode definir até que o dispositivo seja bloqueado. Por exemplo, se você definir essa configuração como **10 minutos**, os usuários poderão definir o tempo de 15 segundos até 10 minutos. Quando definido como **não configurado** (padrão), o Intune não altera nem controla essa configuração.
 
 - **Ecrã ligado enquanto o dispositivo está ligado**: selecione que fontes de energia fazem com que o ecrã do dispositivo permaneça ligado enquanto o dispositivo está ligado.
 
 ### <a name="users-and-accounts-settings"></a>Definições de utilizadores e contas
 
-- **Adicionar novos utilizadores**: selecione **Bloquear** para impedir que os utilizadores adicionem novos utilizadores. Each user has a personal space on the device for custom Home screens, accounts, apps, and settings. **Not configured** (default) allows users to add other users to the device.
-- **Remoção do utilizador**: selecione **Bloquear** para impedir que os utilizadores removam utilizadores. **Not configured** (default) allows users to remove other users from the device.
-- **Account changes** (dedicated devices only): Choose **Block** to prevent users from modifying accounts. **Not configured** (default) allows users to update user accounts on the device.
+- **Adicionar novos utilizadores**: selecione **Bloquear** para impedir que os utilizadores adicionem novos utilizadores. Cada utilizador tem um espaço pessoal no dispositivo para personalizado Home ecrãs, contas, aplicações e definições. **Não configurado** (padrão) permite que os usuários adicionem outros usuários ao dispositivo.
+- **Remoção do utilizador**: selecione **Bloquear** para impedir que os utilizadores removam utilizadores. **Não configurado** (padrão) permite que os usuários removam outros usuários do dispositivo.
+- **Alterações de conta** (somente dispositivos dedicados): escolha **Bloquear** para impedir que os usuários modifiquem contas. **Não configurado** (padrão) permite que os usuários atualizem contas de usuário no dispositivo.
 
   > [!NOTE]
-  > This setting isn't honored on device owner (fully managed) devices. If you configure this setting, then the setting is ignored, and has no impact.
+  > Essa configuração não é respeitada em dispositivos de proprietário do dispositivo (totalmente gerenciado). Se você definir essa configuração, a configuração será ignorada e não terá nenhum impacto.
 
-- **Personal Google Accounts**: **Block** prevents users from adding their personal Google account to the device. **Not configured** (default) allows users to add their personal Google account.
+- **Contas pessoais do Google**: **Bloquear** impede que os usuários adicionem sua conta pessoal do Google ao dispositivo. **Não configurado** (padrão) permite que os usuários adicionem sua conta pessoal do Google.
 
 ### <a name="applications"></a>Aplicações
 
-- **Allow installation from unknown sources**: Choose **Allow** so users can turn on **Unknown sources**. This setting allows apps to install from unknown sources, including sources other than the Google Play Store. **Not configured** prevents users from turning on **Unknown sources**.
-- **Allow access to all apps in Google Play store**: When set to **Allow**, users get access to all apps in Google Play store. They don't get access to the apps the administrator blocks in [Client Apps](../apps/apps-add-android-for-work.md). **Not configured** forces users to only access the apps the administrator makes available Google Play store, or apps required in [Client Apps](../apps/apps-add-android-for-work.md).
-- **App auto-updates**: Choose when automatic updates are installed. As opções são:
+- **Permitir instalação de fontes desconhecidas**: escolha **permitir** para que os usuários possam ativar **fontes desconhecidas**. Essa configuração permite que os aplicativos instalem de fontes desconhecidas, incluindo fontes diferentes da Google Play Store. **Não configurado** impede que os usuários ativem **fontes desconhecidas**.
+- **Permitir acesso a todos os aplicativos na Google Play Store**: quando definido como **permitir**, os usuários obtêm acesso a todos os aplicativos na loja Google Play. Eles não obtêm acesso aos aplicativos que o administrador bloqueia em [aplicativos cliente](../apps/apps-add-android-for-work.md). **Não configurado** força os usuários a acessar apenas os aplicativos que o administrador disponibiliza Google Play armazenamento ou aplicativos necessários em [aplicativos cliente](../apps/apps-add-android-for-work.md).
+- **Atualizações automáticas do aplicativo**: escolha quando as atualizações automáticas estão instaladas. As opções são:
   - **Não configurado**
-  - **User choice**
-  - **Never**
-  - **Wi-Fi only**
-  - **Always**
+  - **Escolha do usuário**
+  - **Nunca**
+  - **Somente Wi-Fi**
+  - **Constante**
 
-### <a name="connectivity"></a>Connectivity
+### <a name="connectivity"></a>Conectividade
 
 - **VPN always-on**: selecione **Ativar** para definir um cliente VPN para se ligar e voltar a ligar à VPN automaticamente. As ligações VPN Sempre Ativada permanecem ativadas ou ativam-se imediatamente quando o utilizador bloqueia o dispositivo, quando o dispositivo é reiniciado ou quando a rede sem fios é alterada. 
 
@@ -242,26 +242,26 @@ Use these settings to configure a kiosk-style experience on your dedicated devic
   > [!IMPORTANT]
   > - O cliente VPN que escolher tem de estar instalado no dispositivo e deve suportar a VPN por aplicação em perfis de trabalho. Caso contrário, será apresentado um erro. 
   > - Tem de aprovar a aplicação cliente VPN na **Managed Google Play Store**, sincronizar a aplicação com o Intune e implementar a aplicação no dispositivo. Depois de o fazer, a aplicação é instalada no perfil de trabalho do utilizador.
-  > - There may be known issues when using per-app VPN with F5 Access for Android 3.0.4. See [F5's release notes for F5 Access for Android 3.0.4](https://support.f5.com/kb/en-us/products/big-ip_apm/releasenotes/related/relnote-f5access-android-3-0-4.html#relnotes_known_issues_f5_access_android) for more information.
+  > - Aqui pode ser problemas conhecidos ao utilizar a VPN por aplicação com acesso de F5 para Android 3.0.4. Consulte [se BigIP Release Notes for F5 Access for 3.0.4 Android](https://support.f5.com/kb/en-us/products/big-ip_apm/releasenotes/related/relnote-f5access-android-3-0-4.html#relnotes_known_issues_f5_access_android) para obter mais informações.
 
-- **Lockdown mode**: Choose **Enable** to force all network traffic to use the VPN tunnel. Se não for estabelecida uma ligação à VPN, o dispositivo não terá acesso à rede.
+- **Modo de bloqueio**: escolha **habilitar** para forçar todo o tráfego de rede a usar o túnel VPN. Se não for estabelecida uma ligação à VPN, o dispositivo não terá acesso à rede.
 
   Selecione **Não configurado** para permitir que o tráfego flua através do túnel VPN ou através da rede móvel.
 
-- **Recommended global proxy**: Choose **Enable** to add a global proxy to the devices. When enabled, HTTP and HTTPS traffic, including some apps on the device, use the proxy you enter. This proxy is only a recommendation. It's possible some apps won't use the proxy. **Not configured** (default) doesn't add a recommended global proxy.
+- **Proxy global recomendado**: escolha **habilitar** para adicionar um proxy global aos dispositivos. Quando habilitado, o tráfego HTTP e HTTPS, incluindo alguns aplicativos no dispositivo, use o proxy que você inserir. Esse proxy é apenas uma recomendação. É possível que alguns aplicativos não usem o proxy. **Não configurado** (padrão) não adiciona um proxy global recomendado.
 
-  For more information on this feature, see [setRecommendedGlobalProxy](https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setRecommendedGlobalProxy(android.content.ComponentName,%20android.net.ProxyInfo)) (opens an Android site).
+  Para obter mais informações sobre esse recurso, consulte [setRecommendedGlobalProxy](https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setRecommendedGlobalProxy(android.content.ComponentName,%20android.net.ProxyInfo)) (abre um site do Android).
 
-  When enabled, also enter the **Type** of proxy. As opções são:
+  Quando habilitado, insira também o **tipo** de proxy. As opções são:
 
-  - **Direct**: Choose this option to manually enter the proxy server details, including:
-    - **Host**: Enter the hostname or IP address of your proxy server. Por exemplo, introduza: `proxy.contoso.com` ou `127.0.0.1`.
-    - **Port number**: Enter the TCP port number used by the proxy server. Por exemplo, introduza `8080`.
-    - **Excluded hosts**: Enter a list of host names or IP addresses that won't use the proxy. This list can include an asterisk (`*`) wildcard and multiple hosts separated by semicolons (`;`) with no spaces. Por exemplo, introduza `127.0.0.1;web.contoso.com;*.microsoft.com`.
+  - **Direto**: escolha esta opção para inserir manualmente os detalhes do servidor proxy, incluindo:
+    - **Host**: Insira o nome de host ou endereço IP do seu servidor proxy. Por exemplo, introduza: `proxy.contoso.com` ou `127.0.0.1`.
+    - **Número da porta**: Insira o número da porta TCP usada pelo servidor proxy. Por exemplo, introduza `8080`.
+    - **Hosts excluídos**: Insira uma lista de nomes de host ou endereços IP que não usarão o proxy. Essa lista pode incluir um asterisco (`*`) curinga e vários hosts separados por ponto e vírgula (`;`) sem espaços. Por exemplo, introduza `127.0.0.1;web.contoso.com;*.microsoft.com`.
 
-  - **Proxy Auto-Config**: Enter the **PAC URL** to a proxy autoconfiguration script. Por exemplo, introduza `https://proxy.contoso.com/proxy.pac`.
+  - **Configuração automática de proxy**: Insira a **URL de PAC** para um script de configuração de proxy automático. Por exemplo, introduza `https://proxy.contoso.com/proxy.pac`.
 
-    For more information on PAC files, see [Proxy Auto-Configuration (PAC) file](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file) (opens a non-Microsoft site).
+    Para obter mais informações sobre arquivos PAC, consulte o [Arquivo PAC (configuração automática de proxy)](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file) (abre um site que não é da Microsoft).
 
 ## <a name="work-profile-only"></a>Apenas perfil de trabalho
 
@@ -269,14 +269,14 @@ Use these settings to configure a kiosk-style experience on your dedicated devic
 
 #### <a name="general"></a>Geral
 
-- **Copy and paste between work and personal profiles**: Choose **Block** to prevent copy-and-paste between work and personal apps. **Not configured** allows users to share data using copy-and-paste with apps in the personal profile 
-- **Data sharing between work and personal profiles**: Choose if apps in the work profile can share with apps in the personal profile. For example, you can control sharing actions within applications, such as the **Share…** na aplicação do browser Chrome. Esta definição não se aplica ao comportamento da área de transferência de copiar/colar. Your sharing options:
-  - **Device default**: The default sharing behavior of the device, which varies depending on the Android version. Por predefinição, é permitida a partilha do perfil pessoal com o perfil de trabalho. Também por predefinição, é bloqueada a partilha do perfil de trabalho para o perfil pessoal. Esta definição impede a partilha de dados do perfil de trabalho para o perfil pessoal. Em dispositivos com a versão 6.0 e versões posteriores, a Google não bloqueia a partilha do perfil pessoal para o perfil de trabalho.
+- **Copiar e colar entre perfis pessoais e de trabalho**: escolha **Bloquear** para evitar copiar e colar entre aplicativos pessoais e de trabalho. **Não configurado** permite que os usuários compartilhem dados usando copiar e colar com aplicativos no perfil pessoal 
+- **Compartilhamento de dados entre perfis pessoais e de trabalho**: escolha se os aplicativos no perfil de trabalho podem compartilhar com aplicativos no perfil pessoal. Por exemplo, você pode controlar ações de compartilhamento em aplicativos, como o **compartilhamento...** na aplicação do browser Chrome. Esta definição não se aplica ao comportamento da área de transferência de copiar/colar. As opções de partilha:
+  - **Padrão do dispositivo**: o comportamento de compartilhamento padrão do dispositivo, que varia dependendo da versão do Android. Por predefinição, é permitida a partilha do perfil pessoal com o perfil de trabalho. Também por predefinição, é bloqueada a partilha do perfil de trabalho para o perfil pessoal. Esta definição impede a partilha de dados do perfil de trabalho para o perfil pessoal. Em dispositivos com a versão 6.0 e versões posteriores, a Google não bloqueia a partilha do perfil pessoal para o perfil de trabalho.
   - **As aplicações no perfil de trabalho podem processar o pedido de partilha do perfil pessoal**: ativa a funcionalidade do Android incorporada que permite a partilha do perfil pessoal para o perfil de trabalho. Quando ativada, um pedido de partilha de uma aplicação no perfil pessoal pode partilhar com aplicações no perfil de trabalho. Esta definição é o comportamento predefinido para dispositivos Android com versões anteriores à 6.0.
-  - **Prevent any sharing across boundaries**: Prevents sharing between work and personal profiles.
-  - **No restrictions on sharing**: Enables sharing across the work profile boundary in both directions. Quando seleciona esta definição, as aplicações no perfil de trabalho podem partilhar dados com aplicações sem destaque no perfil pessoal. Esta definição permite que aplicações geridas no perfil de trabalho partilhem com aplicações no lado não gerido do dispositivo. Por isso, utilize esta definição com cuidado.
+  - **Impedir qualquer compartilhamento entre limites**: impede o compartilhamento entre perfis pessoais e de trabalho.
+  - **Sem restrições no compartilhamento**: habilita o compartilhamento entre o limite do perfil de trabalho em ambas as direções. Quando seleciona esta definição, as aplicações no perfil de trabalho podem partilhar dados com aplicações sem destaque no perfil pessoal. Esta definição permite que aplicações geridas no perfil de trabalho partilhem com aplicações no lado não gerido do dispositivo. Por isso, utilize esta definição com cuidado.
 
-- **Work profile notifications while device locked**: Controls whether apps in the work profile can show data in notifications when the device is locked. **Block** doesn't show the data. **Not configured** shows the data.
+- **Notificações de perfil de trabalho enquanto o dispositivo está bloqueado**: controla se os aplicativos no perfil de trabalho podem mostrar dados em notificações quando o dispositivo está bloqueado. O **bloco** não mostra os dados. **Não configurado** mostra os dados.
 - **Permissões de aplicações predefinidas**: define a política de permissões predefinida para todas as aplicações do perfil de trabalho. A partir do Android 6, é pedido ao utilizador para conceder determinadas permissões necessárias pelas aplicações quando a aplicação é iniciada. Esta definição de política permite-lhe decidir se é pedido aos utilizadores a concessão de permissões para todas as aplicações no perfil de trabalho. Por exemplo, poderá atribuir uma aplicação ao perfil de trabalho que precisa de acesso de localização. Normalmente, essa aplicação pede ao utilizador para aprovar ou recusar o acesso à localização da aplicação. Utilize esta política para conceder permissões automaticamente sem aviso, recusar permissões automaticamente sem aviso ou permitir que o utilizador final decida. Escolha entre:
   - **Predefinição do dispositivo**
   - **Pedido de confirmação**
@@ -285,25 +285,25 @@ Use these settings to configure a kiosk-style experience on your dedicated devic
 
   Também pode utilizar uma política de Configuração de Aplicações para conceder permissões a aplicações individuais (**Aplicações Cliente** > **Políticas de configuração da aplicação**).
 
-- **Add and remove accounts**: Choose **Block** to prevent end users from manually adding or removing accounts in the work profile. Por exemplo, ao implementar a aplicação Gmail num perfil de trabalho do Android, pode impedir os utilizadores finais de adicionarem ou removerem contas neste perfil de trabalho. **Not configured** allows adding accounts in the work profile.  
+- **Adicionar e remover contas**: escolha **Bloquear** para impedir que os usuários finais adicionem ou removam contas manualmente no perfil de trabalho. Por exemplo, ao implementar a aplicação Gmail num perfil de trabalho do Android, pode impedir os utilizadores finais de adicionarem ou removerem contas neste perfil de trabalho. **Não configurado** permite adicionar contas no perfil de trabalho.  
 
 - **Partilha de contactos por Bluetooth**: permite aceder aos contactos do trabalho a partir de outro dispositivo, como um automóvel, que esteja emparelhado através de Bluetooth. Por predefinição, esta definição não está configurada e os contactos do perfil de trabalho não são apresentados. Selecione **Ativar** para permitir esta partilha e mostrar os contactos do perfil de trabalho. Esta definição aplica-se a dispositivos de perfil de trabalho do Android em Android OS v6.0 e mais recentes. Ativar esta definição pode permitir que determinados dispositivos Bluetooth coloquem os contactos de trabalho na cache após a primeira ligação. A desativação desta política após um emparelhamento/sincronização inicial pode não remover os contactos de trabalho dos dispositivos Bluetooth.
 
-- **Screen capture**: Choose **Block** to prevent screenshots or screen captures on the device in the work profile. Também impede que os conteúdos presentes sejam apresentados em dispositivos de visualização que não tenham uma saída de vídeo segura. **Not configured** allows getting screenshots.
+- **Captura de tela**: escolha **Bloquear** para impedir capturas de tela ou capturas de telas no dispositivo no perfil de trabalho. Também impede que os conteúdos presentes sejam apresentados em dispositivos de visualização que não tenham uma saída de vídeo segura. **Não configurado** permite obter capturas de tela.
 
-- **Display work contact caller-id in personal profile**: When enabled (**Not configured**), the work contact caller details are displayed in the personal profile. When set to **Block**, the work contact caller number isn't displayed in the personal profile. Aplica-se ao Android OS v6.0 e a versões mais recentes.
+- **Exibir ID do chamador do contato comercial no perfil pessoal**: quando habilitado (**não configurado**), os detalhes do chamador de contato de trabalho são exibidos no perfil pessoal. Quando definido como **Bloquear**, o número do chamador de contato de trabalho não é exibido no perfil pessoal. Aplica-se ao Android OS v6.0 e a versões mais recentes.
 
-- **Search work contacts from personal profile**: Choose **Block** to prevent users from searching for work contacts in apps in the personal profile. **Not required** allows searching for work contacts in the personal profile.
+- **Pesquisar contatos de trabalho do perfil pessoal**: escolha **Bloquear** para impedir que os usuários pesquisem contatos de trabalho em aplicativos no perfil pessoal. **Não obrigatório** permite pesquisar contatos de trabalho no perfil pessoal.
 
-- **Camera**: Choose **Block** to prevent access to the camera on the device in the work profile. A câmara na parte pessoal não é afetada por esta definição. **Not required** allows access to the camera in the work profile.
+- **Câmera**: escolha **Bloquear** para impedir o acesso à câmera no dispositivo no perfil de trabalho. A câmara na parte pessoal não é afetada por esta definição. **Não obrigatório** permite o acesso à câmera no perfil de trabalho.
 
-- **Allow widgets from work profile apps**: **Enable** allows end users to put widgets exposed by apps on the home screen. A opção **Não configurado** (predefinição) desativa esta funcionalidade.
+- **Permitir widgets de aplicativos de perfil de trabalho**: **habilitar** permite que os usuários finais coloquem widgets expostos por aplicativos na tela inicial. A opção **Não configurado** (predefinição) desativa esta funcionalidade.
 
-  For example, Outlook is installed on your users' work profiles. When set to **Enable**, users can put the agenda widget on the device home screen.
+  Por exemplo, o Outlook é instalado nos perfis de trabalho de seus usuários. Quando definido como **habilitar**, os usuários podem colocar o widget pauta na tela inicial do dispositivo.
 
-#### <a name="work-profile-password"></a>Work Profile Password
+#### <a name="work-profile-password"></a>Palavra-passe de perfil de trabalho
 
-- **Exigir Palavra-passe de Perfil de Trabalho**: aplica-se ao Android 7.0 e posterior com o perfil de trabalho ativado. Choose **Require** to enter a passcode policy that applies only to the apps in the work profile. Por predefinição, o utilizador final pode utilizar os dois PINs definidos separadamente ou pode optar por combinar os PINs no mais forte dos dois. **Not configured** allows the user to use work apps, without entering a password.
+- **Exigir Palavra-passe de Perfil de Trabalho**: aplica-se ao Android 7.0 e posterior com o perfil de trabalho ativado. Escolha **exigir** para inserir uma política de senha que se aplica somente aos aplicativos no perfil de trabalho. Por predefinição, o utilizador final pode utilizar os dois PINs definidos separadamente ou pode optar por combinar os PINs no mais forte dos dois. **Não configurado** permite que o usuário use aplicativos de trabalho, sem inserir uma senha.
 - **Comprimento mínimo da palavra-passe**: introduza o número mínimo de carateres que a palavra-passe do utilizador tem de ter, de **4**-**16**.
 - **Máximo de minutos de inatividade até ao bloqueio do perfil de trabalho**: selecione a quantidade de tempo antes de o perfil de trabalho ser bloqueado. Em seguida, o utilizador tem de introduzir as credenciais para recuperar o acesso.
 - **Número de falhas de início de sessão antes de limpar o dispositivo**: introduza o número de vezes que uma palavra-passe incorreta pode ser introduzida antes de o perfil de trabalho do dispositivo ser eliminado.
@@ -318,12 +318,12 @@ Use these settings to configure a kiosk-style experience on your dedicated devic
   - **Pelo menos alfanumérica**
   - **Pelo menos alfanumérica com símbolos**
 - **Impedir a reutilização de palavras-passe anteriores**: introduza o número de novas palavras-passe que têm de ser utilizadas antes de poder ser reutilizada uma antiga (**1**-**24**).
-- **Fingerprint unlock**: Choose **Block** to prevent end users from using the device fingerprint scanner to unlock the device. **Not configured** allows users to unlock devices with a fingerprint in the work profile.
-- **Smart Lock and other trust agents**: Choose **Block** to prevent Smart Lock or other trust agents from adjusting lock screen settings on compatible devices. This feature, also known as a trust agent, lets you disable or bypass the device lock screen password if the device is in a trusted location. Por exemplo, ignore a palavra-passe do perfil de trabalho quando o dispositivo está ligado a um dispositivo Bluetooth específico ou quando está próximo de uma etiqueta NFC. Utilize esta definição para impedir que os utilizadores configurem o Smart Lock.
+- **Desbloqueio de impressão digital**: escolha **Bloquear** para impedir que os usuários finais usem o scanner de impressão digital do dispositivo para desbloquear o dispositivo. **Não configurado** permite que os usuários desbloqueiem dispositivos com uma impressão digital no perfil de trabalho.
+- **Smart Lock e outros agentes de confiança**: escolha **Bloquear** para impedir que Smart Lock ou outros agentes de confiança ajustem as configurações da tela de bloqueio em dispositivos compatíveis. Esse recurso, também conhecido como agente de confiança, permite desabilitar ou ignorar a senha da tela de bloqueio do dispositivo se o dispositivo estiver em um local confiável. Por exemplo, ignore a palavra-passe do perfil de trabalho quando o dispositivo está ligado a um dispositivo Bluetooth específico ou quando está próximo de uma etiqueta NFC. Utilize esta definição para impedir que os utilizadores configurem o Smart Lock.
 
 ### <a name="device-password"></a>Palavra-passe do dispositivo
 
-These password settings apply to personal profiles on devices that use a work profile.
+Estas definições de palavra-passe aplicam-se aos perfis pessoais nos dispositivos que utilizam um perfil de trabalho.
 
 - **Comprimento mínimo da palavra-passe**: introduza o número mínimo de carateres que a palavra-passe do utilizador tem de ter, de **4**-**14**.
 - **Máximo de minutos de inatividade até o ecrã ser bloqueado**: selecione a quantidade de tempo antes de um dispositivo inativo ser automaticamente bloqueado
@@ -339,24 +339,24 @@ These password settings apply to personal profiles on devices that use a work pr
   - **Pelo menos alfanumérica**
   - **Pelo menos alfanumérica com símbolos**
 - **Impedir a reutilização de palavras-passe anteriores**: introduza o número de novas palavras-passe que têm de ser utilizadas antes de poder ser reutilizada uma antiga (**1**-**24**).
-- **Fingerprint unlock**: Choose **Block** to prevent end user from using the device fingerprint scanner to unlock the device. **Não configurado** permite ao utilizador desbloquear o dispositivo através de uma impressão digital.
-- **Smart Lock and other trust agents**: Choose **Block** to prevent Smart Lock or other trust agents from adjusting lock screen settings on compatible devices. This feature, also known as a trust agent, lets you disable or bypass the device lock screen password if the device is in a trusted location. Por exemplo, ignore a palavra-passe do perfil de trabalho quando o dispositivo está ligado a um dispositivo Bluetooth específico ou quando está próximo de uma etiqueta NFC. Utilize esta definição para impedir que os utilizadores configurem o Smart Lock.
+- **Desbloqueio de impressão digital**: escolha **Bloquear** para impedir que o usuário final use o scanner de impressão digital do dispositivo para desbloquear o dispositivo. **Não configurado** permite ao utilizador desbloquear o dispositivo através de uma impressão digital.
+- **Smart Lock e outros agentes de confiança**: escolha **Bloquear** para impedir que Smart Lock ou outros agentes de confiança ajustem as configurações da tela de bloqueio em dispositivos compatíveis. Esse recurso, também conhecido como agente de confiança, permite desabilitar ou ignorar a senha da tela de bloqueio do dispositivo se o dispositivo estiver em um local confiável. Por exemplo, ignore a palavra-passe do perfil de trabalho quando o dispositivo está ligado a um dispositivo Bluetooth específico ou quando está próximo de uma etiqueta NFC. Utilize esta definição para impedir que os utilizadores configurem o Smart Lock.
 
-### <a name="system-security"></a>System security
+### <a name="system-security"></a>Segurança do sistema
 
-- **Threat scan on apps**: **Require** enforces that the **Verify Apps** setting is enabled for work and personal profiles.
+- **Verificação de ameaças em aplicativos**: **exige** a aplicação de que a configuração **verificar aplicativos** está habilitada para perfis pessoais e de trabalho.
 
    > [!Note]
-   > This setting only works for devices that are Android 8 (Oreo) and above.
+   > Essa configuração só funciona para dispositivos que são Android 8 (Oreo) e superior.
 
-- **Prevent app installations from unknown sources in the personal profile**: By design, Android Enterprise work profile devices can't install apps from sources other than the Play Store. By nature, work profile devices are intended to be dual-profile:
+- **Impedir instalações de aplicativos de fontes desconhecidas no perfil pessoal**: por design, os dispositivos Android Enterprise Work Profile não podem instalar aplicativos de fontes diferentes da Play Store. Por natureza, os dispositivos de perfil de trabalho devem ser de perfil duplo:
 
-  - A work profile managed using MDM.
-  - A personal profile that's isolated from MDM management.
+  - Um perfil de trabalho gerenciado usando o MDM.
+  - Um perfil pessoal isolado do gerenciamento de MDM.
 
-  This setting allows administrators more control of app installations from unknown sources. **Not configured** (default) allows app installations from unknown sources in the personal profile. **Block** prevents app installations from sources other than the Play Store in the personal profile.
+  Essa configuração permite que os administradores tenham mais controle das instalações de aplicativos de fontes desconhecidas. **Não configurado** (padrão) permite instalações de aplicativos de fontes desconhecidas no perfil pessoal. **Bloquear** impede instalações de aplicativos de fontes diferentes da Play Store no perfil pessoal.
 
-### <a name="connectivity"></a>Connectivity
+### <a name="connectivity"></a>Conectividade
 
 - **VPN always-on**: selecione **Ativar** para definir um cliente VPN para se ligar e voltar a ligar à VPN automaticamente. As ligações VPN Sempre Ativada permanecem ativadas ou ativam-se imediatamente quando o utilizador bloqueia o dispositivo, quando o dispositivo é reiniciado ou quando a rede sem fios é alterada. 
 
@@ -376,18 +376,18 @@ These password settings apply to personal profiles on devices that use a work pr
   > [!IMPORTANT]
   > - O cliente VPN que escolher tem de estar instalado no dispositivo e deve suportar a VPN por aplicação em perfis de trabalho. Caso contrário, será apresentado um erro. 
   > - Tem de aprovar a aplicação cliente VPN na **Managed Google Play Store**, sincronizar a aplicação com o Intune e implementar a aplicação no dispositivo. Depois de o fazer, a aplicação é instalada no perfil de trabalho do utilizador.
-  > - There may be known issues when using per-app VPN with F5 Access for Android 3.0.4. See [F5's release notes for F5 Access for Android 3.0.4](https://support.f5.com/kb/en-us/products/big-ip_apm/releasenotes/related/relnote-f5access-android-3-0-4.html#relnotes_known_issues_f5_access_android) for more information.
+  > - Aqui pode ser problemas conhecidos ao utilizar a VPN por aplicação com acesso de F5 para Android 3.0.4. Consulte [se BigIP Release Notes for F5 Access for 3.0.4 Android](https://support.f5.com/kb/en-us/products/big-ip_apm/releasenotes/related/relnote-f5access-android-3-0-4.html#relnotes_known_issues_f5_access_android) para obter mais informações.
 
-- **Lockdown mode**: Choose **Enable** to force all network traffic to use the VPN tunnel. Se não for estabelecida uma ligação à VPN, o dispositivo não terá acesso à rede.
+- **Modo de bloqueio**: escolha **habilitar** para forçar todo o tráfego de rede a usar o túnel VPN. Se não for estabelecida uma ligação à VPN, o dispositivo não terá acesso à rede.
 
   Selecione **Não configurado** para permitir que o tráfego flua através do túnel VPN ou através da rede móvel.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 [Atribua o perfil](device-profile-assign.md) e [monitorize o respetivo estado](device-profile-monitor.md).
 
-You can also create dedicated device kiosk profiles for [Android](device-restrictions-android.md#kiosk) and [Windows 10](kiosk-settings.md) devices.
+Você também pode criar perfis de quiosque de dispositivo dedicados para dispositivos [Android](device-restrictions-android.md#kiosk) e [Windows 10](kiosk-settings.md) .
 
 ## <a name="see-also"></a>Consulte também
 
-[Configuring and troubleshooting Android enterprise devices in Microsoft Intune](https://support.microsoft.com/help/4476974)
+[Configurando e Solucionando problemas de dispositivos Android Enterprise no Microsoft Intune](https://support.microsoft.com/help/4476974)
