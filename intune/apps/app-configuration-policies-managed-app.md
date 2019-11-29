@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/22/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6ddb9ec795b9cc8842cbc6c9d33897b5e0f45e88
-ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
+ms.openlocfilehash: 68032f47be043e8c49b6ad922392d14549293c35
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74547999"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564282"
 ---
 # <a name="add-app-configuration-policies-for-managed-apps-without-device-enrollment"></a>Adicionar políticas de configuração da aplicação para aplicações geridas sem inscrição de dispositivos
 
@@ -31,18 +31,15 @@ ms.locfileid: "74547999"
 
 Pode utilizar políticas de configuração da aplicação com aplicações geridas que suportem o SDK da Aplicação do Intune, até em dispositivos que não estejam inscritos. 
 
-1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. Selecione a carga de trabalho **Aplicações do cliente**.
-4. Selecione **Políticas de configuração da aplicação** no grupo **Gerir** e, em seguida, selecione **Adicionar**.
-5. Defina os seguintes detalhes:
+1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Escolha os **aplicativos** > **políticas de configuração de aplicativo** > **Adicionar** > **aplicativos gerenciados**.
+3. Defina os seguintes detalhes:
     - **Nome**  
       O nome do perfil que será apresentado no portal do Azure.
     - **Descrição**  
       A descrição do perfil que será apresentada no portal do Azure.
-    - **Tipo de inscrição do dispositivo**  
-      Selecione **Gerir aplicações**.
-6. Selecione **Aplicação associada** para escolher a aplicação que vai configurar. Selecione a aplicação na lista de aplicações que aprovou e sincronizou com o Intune.
-7. Para cada definição de configuração que a aplicação suporta, escreva o **Nome** e o **Valor** e selecione as reticências ( **...** ).  
+4. Escolha **selecionar aplicativos públicos** ou **selecione aplicativos personalizados** para escolher o aplicativo que você vai configurar. Selecione a aplicação na lista de aplicações que aprovou e sincronizou com o Intune.
+5. Para cada definição de configuração que o aplicativo dá suporte, digite o **nome** e o **valor**.  
     Para eliminar uma configuração, selecione as reticências ( **...** ) e selecione **Eliminar**.  
     
 As aplicações ativadas pelo SDK da Aplicação do Intune suportam configurações em pares chave-valor. Para saber mais sobre que configurações de chave-valor são suportadas, consulte a documentação de cada aplicação. Tenha em atenção que pode utilizar os tokens que serão dinamicamente preenchidos com dados gerados pela aplicação. Para obter informações sobre as definições de política de configuração da aplicação Outlook para iOS, veja [Gerir a configuração da aplicação Outlook para iOS com o Microsoft Intune](https://technet.microsoft.com/library/mt813789(v=exchg.150).aspx).

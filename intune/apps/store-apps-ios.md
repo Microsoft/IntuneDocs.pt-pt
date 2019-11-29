@@ -6,7 +6,7 @@ keywords: Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/27/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c53166b6e6dc6ab3f780ccdfd4f11eb4c6a9d730
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: c5616b27b97d5623958ec872390e2a6de79db3c5
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72497557"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563456"
 ---
 # <a name="add-ios-store-apps-to-microsoft-intune"></a>Adicionar aplicações da loja iOS ao Microsoft Intune
 
@@ -41,18 +41,16 @@ Só pode atribuir aplicações com este método se forem gratuitas na App Store.
 >[!NOTE]
 >Ao trabalhar com o Microsoft Intune, recomendamos que utilize o browser Microsoft Edge ou Google Chrome.
 
-1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. No painel **Intune**, selecione **Aplicações do cliente**.
-4. No painel da carga de trabalho **Aplicações do cliente**, em **Gerir**, selecione **Aplicações**.
-5. No painel **Aplicações**, selecione **Adicionar**.
-6. Na lista **Tipo de aplicação**, nos tipos de **Aplicação da loja**, selecione **iOS**.
-7. Selecione **Procurar na App Store**.
-8. No painel **Pesquisar na loja de aplicativos** , selecione a localidade país/região da loja de aplicativos.
-9. Na caixa **Procurar**, escreva o nome (ou parte do mesmo) da aplicação.  
+1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **aplicativos** > **todos os aplicativos** > **Adicionar**.
+3. Na lista **Tipo de aplicação**, nos tipos de **Aplicação da loja**, selecione **iOS**.
+4. Selecione **Procurar na App Store**.
+5. No painel **Pesquisar na loja de aplicativos** , selecione a localidade país/região da loja de aplicativos.
+6. Na caixa **Procurar**, escreva o nome (ou parte do mesmo) da aplicação.  
     O Intune procura na loja e apresenta uma lista de resultados relevantes.
-10. Na lista de resultados, selecione a aplicação que pretende e, em seguida, selecione **Selecionar**.
-11. No painel **Adicionar aplicação**, selecione **Informações da aplicação** para configurar a aplicação.
-12. No painel **Informações da aplicação**, adicione as informações da aplicação. Consoante a aplicação que tenha selecionado, alguns dos valores neste painel podem ter sido preenchidos automaticamente:
+7. Na lista de resultados, selecione a aplicação que pretende e, em seguida, selecione **Selecionar**.
+8. No painel **Adicionar aplicação**, selecione **Informações da aplicação** para configurar a aplicação.
+9. No painel **Informações da aplicação**, adicione as informações da aplicação. Consoante a aplicação que tenha selecionado, alguns dos valores neste painel podem ter sido preenchidos automaticamente:
     - **Nome**: introduza o nome da aplicação tal como deve ser apresentado no portal da empresa. Certifique-se de que utiliza nomes de aplicação que sejam exclusivos. Se um nome de aplicação for duplicado, apenas um deles será apresentado aos utilizadores no portal da empresa.
     - **Descrição**: introduza uma descrição para a aplicação. Esta descrição é apresentada aos utilizadores no portal da empresa.
     - **Publicador**: introduza o nome do publicador da aplicação.
@@ -67,8 +65,8 @@ Só pode atribuir aplicações com este método se forem gratuitas na App Store.
     - **Proprietário**: opcionalmente, introduza o nome do proprietário desta aplicação (por exemplo, *Departamento de RH*). Este campo só é visível para administradores e não para os utilizadores.
     - **Notas**: opcionalmente, introduza quaisquer notas que queira associar a esta aplicação. Este campo só é visível para o administrador e não estará visível para os utilizadores finais.
     - **Logótipo**: opcionalmente, carregue um ícone que será associado à aplicação. Este ícone é apresentado com a aplicação quando os utilizadores procurarem no portal da empresa.
-13. Selecione **OK**.
-14. Selecione **Adicionar**.
+10. Selecione **OK**.
+11. Selecione **Adicionar**.
 
 A aplicação criada é apresentada na lista de aplicações, onde a pode atribuir aos grupos que selecionar.
 

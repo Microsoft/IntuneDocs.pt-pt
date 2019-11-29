@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3724072144a78e1f4f5a17914eff941469e27242
-ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
+ms.openlocfilehash: dc618f2502647ba33a16cff4305b9f4671e05996
+ms.sourcegitcommit: fc4b38660129d615068f34ad4b96b900d73f7b53
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73709606"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74558191"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>Implantar dispositivos ingressados no Azure AD híbrido usando o Intune e o piloto automático do Windows
 Você pode usar o Intune e o piloto automático do Windows para configurar dispositivos ingressados no Azure Active Directory híbrido (Azure AD). Para fazer isso, siga as etapas neste artigo.
@@ -42,7 +42,7 @@ Os dispositivos a ser inscritos também têm de:
 
 ## <a name="set-up-windows-10-automatic-enrollment"></a>Configurar a inscrição automática de dispositivos Windows 10
 
-1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) e, no painel esquerdo, selecione **Azure Active Directory**.
+1. Entre no Azure, no painel esquerdo, selecione **Azure Active Directory**.
 
    ![O portal do Azure](./media/windows-autopilot-hybrid/auto-enroll-azure-main.png)
 
@@ -76,7 +76,7 @@ A unidade organizacional que recebe os direitos para criar computadores deve cor
 
     ![O comando de controle de representante](./media/windows-autopilot-hybrid/delegate-control.png)
 
-1. No assistente **de delegação de controle** , selecione **Avançar** > **Adicionar** **tipos de objeto** > .
+1. No assistente **de delegação de controle** , selecione **avançar** > **Adicionar** > **tipos de objeto**.
 
 1. No painel **tipos de objeto** , marque a caixa de seleção **computadores** e, em seguida, selecione **OK**.
 
@@ -107,14 +107,14 @@ A unidade organizacional que recebe os direitos para criar computadores deve cor
 
 O conector do Intune para Active Directory deve ser instalado em um computador que esteja executando o Windows Server 2016 ou posterior. O computador também deve ter acesso à Internet e à sua Active Directory. Para aumentar o dimensionamento e a disponibilidade ou suportar múltiplos domínios do Azure Active Directory, pode instalar múltiplos conectores no seu ambiente. É recomendável instalar o conector em um servidor que não esteja executando nenhum outro conector do Intune.
 
-1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), selecione **registro de dispositivo** > registro do **Windows** > **conector do Intune para Active Directory** > **Adicionar**. 
+1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), selecione **dispositivos** > **windows** > **registro do windows** > **conector do Intune para Active Directory** > **Adicionar**. 
 2. Siga as instruções para baixar o conector.
 3. Abra o arquivo de instalação do conector baixado, *ODJConnectorBootstrapper. exe*, para instalar o conector.
 4. No final da instalação, selecione **Configurar**.
 5. Selecione **entrar**.
 6. Insira as credenciais de administrador global do usuário ou da função de administrador do Intune.  
    A conta de usuário deve ter uma licença do Intune atribuída.
-7. Vá para **registro de dispositivo** > **registro do Windows** > **conector do Intune para Active Directory**e, em seguida, confirme se o status da conexão está **ativo**.
+7. Vá para **dispositivos** > **Windows** > **registro do Windows** > **conector do Intune para Active Directory**e, em seguida, confirme se o status da conexão está **ativo**.
 
 > [!NOTE]
 > Depois de entrar no conector, pode levar alguns minutos para aparecer no [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431). Ele só aparecerá se ele puder se comunicar com êxito com o serviço do Intune.
@@ -167,12 +167,12 @@ Se os seus dispositivos ainda não estiverem inscritos, pode registá-los. Para 
 Se comprar novos dispositivos, alguns OEMs podem registar os dispositivos por si. Para obter mais informações, veja a [página do Windows Autopilot](https://aka.ms/WindowsAutopilot).
 
 Quando os dispositivos do AutoPilot são *registrados*, antes de serem inscritos no Intune, eles são exibidos em três locais (com nomes definidos para seus números de série):
-- O painel de **dispositivos do piloto automático** no Intune no portal do Azure. Selecione **registro de dispositivo** > **registro do Windows** > **dispositivos**.
+- O painel de **dispositivos do piloto automático** no Intune no portal do Azure. Selecione **registro de dispositivo** > **dispositivos**de > de **registro do Windows** .
 - O painel **dispositivos do Azure ad** no Intune no portal do Azure. Selecione **dispositivos** > **dispositivos do Azure ad**.
 - O painel **todos os dispositivos do Azure ad** no Azure Active Directory no portal do Azure selecionando **dispositivos** > **todos os dispositivos**.
 
 Depois que os dispositivos do AutoPilot são *registrados*, eles são exibidos em quatro locais:
-- O painel de **dispositivos do piloto automático** no Intune no portal do Azure. Selecione **registro de dispositivo** > **registro do Windows** > **dispositivos**.
+- O painel de **dispositivos do piloto automático** no Intune no portal do Azure. Selecione **registro de dispositivo** > **dispositivos**de > de **registro do Windows** .
 - O painel **dispositivos do Azure ad** no Intune no portal do Azure. Selecione **dispositivos** > **dispositivos do Azure ad**.
 - O painel **todos os dispositivos do Azure ad** no Azure Active Directory no portal do Azure. Selecione **dispositivos** > **todos os dispositivos**.
 - O painel **todos os dispositivos** no Intune no portal do Azure. Selecione **dispositivos** > **todos os dispositivos**.
@@ -183,7 +183,7 @@ Depois que os dispositivos do AutoPilot forem registrados, seus nomes se tornar�
 ## <a name="create-and-assign-an-autopilot-deployment-profile"></a>Criar e atribuir um perfil de implementação do Autopilot
 Os perfis de implementação do Autopilot são utilizados para configurar os dispositivos do Autopilot.
 
-1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), selecione **registro de dispositivo** > registro do **Windows** > **perfis de implantação** > **Criar perfil**.
+1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), selecione **dispositivos** > **windows** > **registro do Windows** > perfis de **implantação** > **Criar perfil**.
 2. Na página **noções básicas** , digite um **nome** e uma **Descrição**opcional.
 3. Se pretender que todos os dispositivos nos grupos atribuídos sejam convertidos automaticamente no Autopilot, defina **Converter todos os dispositivos visados para o Piloto Automático** para **Sim**. Todos os dispositivos de propriedade corporativa, não autopiloto em grupos atribuídos serão registrados com o serviço de implantação do AutoPilot. Dispositivos de propriedade pessoal não serão convertidos para o piloto automático. O processo de registo demora até 48 horas, pelo que deverá aguardar. Quando a inscrição do dispositivo for anulada e o dispositivo for reposto, o Autopilot irá inscrevê-lo. Após registar um dispositivo desta forma, desativar esta opção ou remover a atribuição de perfil não irá remover o dispositivo do serviço de implementação do Autopilot. Em alternativa, tem de [remover o dispositivo diretamente](enrollment-autopilot.md#delete-autopilot-devices).
 4. Selecione **Seguinte**.
@@ -200,15 +200,15 @@ Demora cerca de 15 minutos para que o status do perfil do dispositivo seja alter
 
 ## <a name="optional-turn-on-the-enrollment-status-page"></a>Adicional Ativar a página de status de registro
 
-1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), selecione **registro de dispositivo** > registro do **Windows** > **página status do registro**.
-1. No painel de **página status do registro** , selecione**configurações** **padrão**do  > .
+1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), selecione **dispositivos** > **windows** > **registro do Windows** > **página status do registro**.
+1. No painel de **página status do registro** , selecione **configurações** **padrão** de > .
 1. Na caixa de **progresso mostrar o aplicativo e a instalação do perfil** , selecione **Sim**.
 1. Configure as outras opções conforme seja necessário.
 1. Selecione **Guardar**.
 
 ## <a name="create-and-assign-a-domain-join-profile"></a>Criar e atribuir um perfil de Associação a um Domínio
 
-1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), selecione **configuração do dispositivo** > **perfis** > **Criar perfil**.
+1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), selecione **dispositivos** > **perfis de configuração** > **Criar perfil**.
 1. Introduza as seguintes propriedades:
    - **Nome**: introduza um nome descritivo para o novo perfil.
    - **Descrição:** introduza uma descrição para o perfil.

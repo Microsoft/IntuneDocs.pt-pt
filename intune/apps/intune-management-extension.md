@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/16/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1d73d28f34258bce99199731579969604c0a3d97
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: cef30238a4470395ccf58cf4d0619db78dd85b5a
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059729"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563469"
 ---
 # <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>Usar scripts do PowerShell em dispositivos Windows 10 no Intune
 
@@ -62,7 +62,7 @@ A extensão de gerenciamento do Intune tem os seguintes pré-requisitos. Depois 
     
     - O usuário entra no dispositivo usando sua conta do Azure AD e, em seguida, registra-se no Intune.
 
-  - Dispositivos cogerenciados que usam o Configuration Manager e o Intune. Verifique se a carga de trabalho **aplicativos cliente** está definida como **piloto do Intune** ou **Intune**. Consulte os seguintes artigos para obter orientação: 
+  - Dispositivos cogerenciados que usam o Configuration Manager e o Intune. Verifique se a carga de trabalho **aplicativos** está definida para o Intune **ou Intune** **piloto** . Consulte os seguintes artigos para obter orientação: 
   
     - [O que é cogerenciamento](https://docs.microsoft.com/sccm/comanage/overview) 
     - [Carga de trabalho de aplicativos cliente](https://docs.microsoft.com/sccm/comanage/workloads#client-apps)
@@ -73,8 +73,8 @@ A extensão de gerenciamento do Intune tem os seguintes pré-requisitos. Depois 
 
 ## <a name="create-a-script-policy-and-assign-it"></a>Criar uma política de script e atribuí-la
 
-1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selecione **Configuração do dispositivo** > **Scripts do PowerShell** > **Adicionar**.
+1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **dispositivos** > **scripts do PowerShell** > **Adicionar**.
 
     ![Adicionar e usar scripts do PowerShell no Microsoft Intune](./media/intune-management-extension/mgmt-extension-add-script.png)
 
@@ -155,7 +155,7 @@ Em **Scripts do PowerShell**, clique com o botão direito no script e selecione 
 
 Para ver se o dispositivo está registrado automaticamente, você pode:
 
-  1. Acesse **configurações** > **contas** > **acessam trabalho ou escola**.
+  1. Acesse **configurações** > **contas** > **acessar trabalho ou escola**.
   2. Selecione a conta unida > **informações**.
   3. Em **relatório de diagnóstico avançado**, selecione **criar relatório**.
   4. Abra o `MDMDiagReport` em um navegador da Web.
@@ -205,7 +205,7 @@ Para ver se o dispositivo está registrado automaticamente, você pode:
     echo "Forced Fail" | out-file c:\temp\Fail.txt
     ```
 
-    Se o script relatar um êxito, examine o `AgentExecutor.log` para confirmar a saída de erro. Se o script for executado, o comprimento deverá ser > 2.
+    Se o script relatar um êxito, examine a `AgentExecutor.log` para confirmar a saída de erro. Se o script for executado, o comprimento deverá ser > 2.
 
   - Para capturar os arquivos. Error e. Output, o trecho a seguir executa o script por meio de AgentExecutor para PSx86 (`C:\Windows\SysWOW64\WindowsPowerShell\v1.0`). Ele mantém os logs para sua análise. Lembre-se de que a extensão de gerenciamento do Intune limpa os logs após a execução do script:
   

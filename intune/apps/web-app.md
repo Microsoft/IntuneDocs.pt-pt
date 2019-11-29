@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/13/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 997cf043f8ea61133d6e61f4584ad9349aedbf73
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: 514977be976c83f5cd8dcb8d56ab5c232ff0d193
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74060048"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74562487"
 ---
 # <a name="add-web-apps-to-microsoft-intune"></a>Adicionar aplicações Web ao Microsoft Intune
 
@@ -41,13 +41,11 @@ O Intune cria um atalho para o aplicativo Web no dispositivo do usuário. Para d
 ## <a name="add-a-web-app-to-intune"></a>Adicionar uma aplicação Web ao Intune
 Para adicionar uma aplicação ao Intune como um atalho para uma aplicação na Web, faça o seguinte:
 
-1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. No painel **Intune**, selecione **Aplicações do cliente**.
-4. No painel da carga de trabalho **Aplicações do cliente**, em **Gerir**, selecione **Aplicações**.
-5. No painel **Aplicações**, selecione **Adicionar**.
-6. No painel **Adicionar aplicação**, na lista pendente **Tipo de aplicação** selecione **Ligação Web**.
-7. Selecione **Configurar**.
-8. No painel **Informações da aplicação**, adicione as informações seguintes:
+1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **aplicativos** > **todos os aplicativos** > **Adicionar**.
+3. No painel **Adicionar aplicação**, na lista pendente **Tipo de aplicação** selecione **Ligação Web**.
+4. Selecione **Configurar**.
+5. No painel **Informações da aplicação**, adicione as informações seguintes:
     - **Nome**: introduza o nome da aplicação tal como deve ser apresentado no portal da empresa. 
 
         > [!NOTE]
@@ -60,8 +58,8 @@ Para adicionar uma aplicação ao Intune como um atalho para uma aplicação na 
     - **Apresentar como aplicação em destaque no Portal da Empresa**: selecione esta opção para apresentar o conjunto de aplicações em destaque na página principal do portal da empresa quando os utilizadores procurarem aplicações.
     - **Exigir um browser gerido para abrir esta ligação**: selecione esta opção para atribuir uma ligação a um site ou uma aplicação Web aos utilizadores para que possam abri-la no browser gerido do Intune. Este browser deve estar instalado nos respetivos dispositivos.
     - **Logótipo**: carregue um ícone que será associado à aplicação. Este ícone é apresentado com a aplicação quando os utilizadores procurarem no portal da empresa.
-9. Selecione **OK**.
-10. No painel **Adicionar aplicação**, selecione **Adicionar**.
+6. Selecione **OK**.
+7. No painel **Adicionar aplicação**, selecione **Adicionar**.
 
 > [!Note]
 > Os utilizadores têm de adicionar o widget do Intune ao ecrã principal para apresentar aplicações Web que tenham sido atribuídas a dispositivos Android.

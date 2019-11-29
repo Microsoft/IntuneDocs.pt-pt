@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/04/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6df77d168bb8be3775c566f63833b46130515b36
-ms.sourcegitcommit: 5807f4db4a45a093ce2fd6cb0c480bec384ec1ff
+ms.openlocfilehash: 6f4c7b5e3cca06a3ec10ea1b3dfc5e45546c841f
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72601583"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563910"
 ---
 # <a name="add-a-windows-line-of-business-app-to-microsoft-intune"></a>Adicionar aplicações de linha de negócio Windows ao Microsoft Intune
 
@@ -36,11 +36,9 @@ Uma aplicação de linha de negócio (LOB) é uma aplicação que adiciona a par
 
 ## <a name="step-1-specify-the-software-setup-file"></a>Passo 1: especificar o ficheiro de configuração do software
 
-1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. No painel **Intune**, selecione **Aplicações do cliente**.
-4. Na carga de trabalho **Aplicações do cliente**, selecione **Gerir** > **Aplicações**.
-5. Acima da lista de aplicações, selecione **Adicionar**.
-6. No painel **Adicionar aplicação**, selecione **Aplicação de linha de negócio**.
+1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **aplicativos** > **todos os aplicativos** > **Adicionar**.
+3. No painel **Adicionar aplicativo** , selecione **aplicativo de linha de negócios** como o tipo de **aplicativo**.
 
 ## <a name="step-2-configure-the-app-package-file"></a>Passo 2: configurar o ficheiro de pacote de aplicação
 
@@ -82,7 +80,7 @@ Uma aplicação de linha de negócio (LOB) é uma aplicação que adiciona a par
 [!INCLUDE [shared-proc-lob-updateapp](../includes/shared-proc-lob-updateapp.md)]
 
    > [!NOTE]
-   > Para que o serviço do Intune implante com êxito um novo arquivo APPX no dispositivo, você deve incrementar a cadeia de caracteres `Version` no arquivo AppxManifest. xml em seu pacote APPX.
+   > Para que o serviço do Intune implante com êxito um novo arquivo APPX no dispositivo, você deve incrementar a `Version` cadeia de caracteres no arquivo AppxManifest. xml em seu pacote APPX.
 
 ## <a name="configure-a-self-updating-mobile-msi-app-to-ignore-the-version-check-process"></a>Configurar uma aplicação MSI móvel de atualização automática para ignorar o processo de verificação da versão
 

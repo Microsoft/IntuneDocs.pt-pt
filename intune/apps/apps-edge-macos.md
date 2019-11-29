@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/09/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,19 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c6726f731fba5bc41893f999ac627bff9a8aca1e
-ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
+ms.openlocfilehash: c31dd652022ae0d394ab2229a0c25b362ad8574d
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73754831"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563593"
 ---
 # <a name="add-microsoft-edge-to-macos-devices-using-microsoft-intune"></a>Adicionar o Microsoft Edge a dispositivos macOS usando o Microsoft Intune
 
 Para poder implantar, configurar, monitorar ou proteger aplicativos, você deve adicioná-los ao Intune. Um dos tipos de [aplicativo](~/apps/apps-add.md#app-types-in-microsoft-intune) disponíveis é o Microsoft Edge *versão 77 e posterior*. Ao selecionar esse tipo de aplicativo no Intune, você pode atribuir e instalar o Microsoft Edge *versão 77 e posterior* para os dispositivos gerenciados que executam o MacOS. Esse tipo de aplicativo facilita a atribuição do Microsoft Edge a dispositivos macOS sem a necessidade de usar a ferramenta de encapsulamento de aplicativos macOS. Para ajudar a manter os aplicativos mais seguros e atualizados, o aplicativo é fornecido com o Microsoft AutoUpdate (MAU).
 
 > [!IMPORTANT]
-> Este tipo de aplicativo está em **Visualização pública** e oferece canais de desenvolvedor e beta para MacOS. A implantação está em inglês (apenas EN), mas os usuários finais podem alterar o idioma de exibição no navegador em **configurações**  > **idiomas**. 
+> Este tipo de aplicativo está em **Visualização pública** e oferece canais de desenvolvedor e beta para MacOS. A implantação está em inglês (apenas EN), mas os usuários finais podem alterar o idioma de exibição no navegador em **configurações** > **idiomas**. 
 
 > [!NOTE]
 > O Microsoft Edge *versão 77 e posterior* está disponível para o Windows 10 também.
@@ -40,15 +40,15 @@ Para poder implantar, configurar, monitorar ou proteger aplicativos, você deve 
 ## <a name="add-microsoft-edge-to-intune"></a>Adicionar o Microsoft Edge ao Intune
 Você pode adicionar o Microsoft Edge versão 77 e posterior ao Intune usando as seguintes etapas:
 
-1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. No painel **Intune**, selecione **Aplicações do cliente** > **Aplicações** > **Adicionar**.
+1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **aplicativos** > **todos os aplicativos** > **Adicionar**.
 3. Na lista **tipo de aplicativo** no **Microsoft Edge, versão 77 e posterior**, selecione **MacOS**.
 
 ## <a name="configure-app-information"></a>Configurar as informações da aplicação
 Nesta etapa, você fornece informações sobre essa implantação de aplicativo. Essas informações ajudam a identificar o aplicativo no Intune e ajudam os usuários a localizar o aplicativo no portal da empresa.
 
-1. Clique em **informações do aplicativo** para exibir a folha informações do **aplicativo** .
-2. Na folha **informações do aplicativo** , você fornece informações sobre essa implantação de aplicativo. Essas informações ajudam a identificar o aplicativo no Intune e ajudam os usuários a localizar o aplicativo no portal da empresa.
+1. Clique em **informações do aplicativo** para exibir o painel de informações do **aplicativo** .
+2. No painel de **informações do aplicativo** , você fornece informações sobre essa implantação de aplicativo. Essas informações ajudam a identificar o aplicativo no Intune e ajudam os usuários a localizar o aplicativo no portal da empresa.
     - **Nome**: Insira o nome do aplicativo como ele será exibido no portal da empresa. Verifique se todos os nomes são exclusivos. Se existir o mesmo nome duas vezes, só é apresentada uma das aplicações aos utilizadores no portal da empresa.
     - **Descrição**: introduza uma descrição para a aplicação. Por exemplo, você pode listar os usuários de destino na descrição.
     - **Publicador**: a Microsoft aparece como o publicador.
@@ -64,8 +64,8 @@ Nesta etapa, você fornece informações sobre essa implantação de aplicativo.
 ## <a name="configure-microsoft-edge-settings"></a>Definir configurações do Microsoft Edge
 Nesta etapa, configure as opções de instalação para o aplicativo.
 
-1. Na folha **Adicionar aplicativo** , selecione **configurações do aplicativo**.
-2. Na folha **configurações do aplicativo** , o canal **beta** é selecionado automaticamente e não pode ser alterado.
+1. No painel **Adicionar aplicativo** , selecione **configurações do aplicativo**.
+2. No painel **configurações do aplicativo** , o canal **beta** é selecionado automaticamente e não pode ser alterado.
     - O canal **beta** é a experiência de visualização mais estável do Microsoft Edge e a melhor opção para um piloto completo em sua organização. Com atualizações principais a cada seis semanas.
 
     > [!NOTE]
@@ -74,13 +74,13 @@ Nesta etapa, configure as opções de instalação para o aplicativo.
 
 ## <a name="select-scope-tags-optional"></a>Selecionar marcas de escopo (opcional)
 Você pode usar marcas de escopo para determinar quem pode ver as informações do aplicativo cliente no Intune. Para obter detalhes completos sobre marcas de escopo, consulte usar o controle de acesso baseado em função e marcas de escopo para distribuí-lo.
-1.  Selecione **Scope (Tags)**  > **Adicionar**.
+1.  Selecione **escopo (marcas)**  > **Adicionar**.
 2.  Use a caixa **selecionar** para procurar marcas de escopo.
 3.  Marque a caixa de seleção ao lado das marcas de escopo que você deseja atribuir a este aplicativo.
-4.  Clique em **selecionar**  > **OK**.
+4.  Clique em **selecionar** > **OK**.
 
 ## <a name="add-the-app"></a>Adicionar a aplicação
-Quando você tiver concluído a configuração, selecione **Adicionar** na folha **aplicativo de aplicativo** . 
+Quando você tiver concluído a configuração, selecione **Adicionar** no painel **aplicativo de aplicativo** . 
 
 A aplicação criada é apresentada na lista de aplicações, onde a pode atribuir aos grupos que selecionar. 
 

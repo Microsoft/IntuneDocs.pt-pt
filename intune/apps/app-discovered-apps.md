@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8519ad00024be43371cd118e3f37ae2fbc57898b
-ms.sourcegitcommit: 25acfc88b366d2da71c37d354a0238e4f1168325
+ms.openlocfilehash: eff4ccdc8b40da4d72394001b88446653ff71bd0
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72813362"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564251"
 ---
 # <a name="intune-discovered-apps"></a>Aplicativos descobertos do Intune
 
@@ -33,18 +33,18 @@ ms.locfileid: "72813362"
 
 O Intune fornece uma lista agregada de aplicativos detectados nos dispositivos registrados no Intune em seu locatário.
 
-1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. No painel **Intune** , selecione **aplicativos cliente** > **aplicativos descobertos**.
+1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **aplicativos** > **monitorar** > **aplicativos descobertos**.
 
 >[!NOTE]
->Você pode exportar a lista de aplicativos descobertos para um arquivo. csv selecionando **Exportar** na folha **aplicativos descobertos** .
+>Você pode exportar a lista de aplicativos descobertos para um arquivo. csv selecionando **Exportar** no painel **aplicativos descobertos** .
 >
 >Para aplicativos Win32 descobertos, não há nenhuma contagem de agregação no momento. Esse tipo de dados só pode ser exibido em uma base por dispositivo.
 
 O Intune também fornece a lista de aplicativos descobertos para o dispositivo individual em seu locatário.
 
-1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. No painel Intune, selecione **dispositivos** > **todos os dispositivos**.
+1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **dispositivos** > **todos os dispositivos**.
 3. Selecione um dispositivo.
 4. Para exibir os aplicativos detectados para este dispositivo, selecione **aplicativos descobertos** na seção **monitorar** .
 
@@ -69,7 +69,7 @@ A lista a seguir fornece o tipo de plataforma de aplicativo, os aplicativos que 
 
 O número de aplicações detetadas pode não corresponder à contagem de estados de instalação da aplicação. As causas de possíveis inconsistências incluem:
 
-- A alteração de direcionamento numa aplicação gerida instalada pode fazer com que a contagem de instalações no painel Estado diminua, embora continue a ser incluída nas aplicações detetadas.
+- Uma alteração de destino de um aplicativo gerenciado instalado pode fazer com que a contagem de instalação no painel de status seja decrementada, mas permaneça relatada nos aplicativos detectados.
 - Abranger múltiplas instâncias da mesma aplicação num inquilino irá resultar em contagens diferentes, devido à potencial sobreposição de utilizadores ou dispositivos. Cada instância da aplicação irá contabilizar os utilizadores sobrepostos, mas as aplicações detetadas apresentarão contagens duplicadas.
 - As aplicações detetadas e o estado da aplicação são recolhidos em intervalos de tempo diferentes, o que pode provocar uma discrepância nas contagens de aplicações.
 

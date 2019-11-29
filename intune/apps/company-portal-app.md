@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/21/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b750c09207b1950aa27a5f2cae1267503537b6e7
-ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
+ms.openlocfilehash: 7a4d6db4f61dea1b073ccce7c4c3f727a91402c1
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199200"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563644"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Como configurar a aplicação Portal da Empresa do Microsoft Intune
 
@@ -37,7 +37,7 @@ O portal da empresa do Microsoft Intune é onde os utilizadores acedem aos dados
 > [!Tip]
 > Quando personaliza o Portal da Empresa, as configurações aplicam-se tanto ao site do Portal da Empresa, como às aplicações do Portal da Empresa. Tenha em atenção que os utilizadores têm de ter uma licença do Intune atribuída para poderem aceder ao site do Portal da Empresa.
 
-A personalização do Portal da Empresa ajuda a proporcionar uma experiência familiar e útil aos utilizadores finais. Para tal, no portal do Intune, selecione **Aplicações cliente** > **Marca e personalização** e, em seguida, configure as definições necessárias.
+A personalização do Portal da Empresa ajuda a proporcionar uma experiência familiar e útil aos utilizadores finais. Para fazer isso, no portal do Intune, selecione **aplicativos** > **identidade visual e personalização**e, em seguida, defina as configurações necessárias.
 
 Quando um usuário estiver instalando um aplicativo iOS do Portal da Empresa ele receberá um prompt. Isso ocorre quando o aplicativo iOS está vinculado à loja de aplicativos, vinculado a um VPP (programa de compra por volume) ou vinculado a um aplicativo de linha de negócios (LOB). O prompt permite que os usuários aceitem a ação ou permitam o gerenciamento do aplicativo. O prompt exibirá o nome da empresa ou, quando o nome da sua empresa estiver indisponível, **portal da empresa** será exibido. 
 
@@ -62,7 +62,7 @@ Introduza as informações de suporte da sua empresa para que o colaborador tenh
 |---|---|---|
 |**Nome do contacto** | 40 | Esse nome é exibido na página **ajuda e suporte** . |
 |**Número de telefone** | 20 | Este número de contato é exibido na página **ajuda e suporte** para permitir que os funcionários entrem em contato com você para obter suporte. |
-|**Endereço de correio eletrónico**| 40 | Este endereço de contato é exibido na página **ajuda e suporte** . Tem de inserir um endereço de e-mail válido no formato `alias@domainname.com`. |
+|**Endereço de e-mail**| 40 | Este endereço de contato é exibido na página **ajuda e suporte** . Tem de inserir um endereço de e-mail válido no formato `alias@domainname.com`. |
 |**Nome do site**| 40 | Este é o nome amigável apresentado no URL do site de suporte. Se você especificar uma URL do site de suporte e nenhum nome amigável, vá para o site de ti é exibido na página **ajuda e suporte** no portal da empresa. |
 |**URL do Site**| 150 | Se tiver um site de suporte que pretende que os utilizadores usem, especifique o URL aqui. O URL tem de estar no formato `https://www.contoso.com`. Se você não especificar uma URL, nada será exibido para o site de suporte na página **ajuda e suporte** na portal da empresa. |
 | **Informações adicionais**| 120 | Exibido na página **ajuda e suporte** . |
@@ -92,7 +92,7 @@ Escolha o logótipo que ficará melhor em fundos brancos ou claros.
 
 ### <a name="brand-image-for-company-portal"></a>Imagem de marca do Portal da Empresa
 
-Apresente uma imagem de marca que reflita a marca da sua empresa. Depois de guardar as alterações, pode optar por **Pré-visualizar as definições** no Portal Web do Intune na parte superior do painel para ver qual será o aspeto das configurações. Tenha em atenção que só poderá pré-visualizar a imagem de marca num dispositivo iOS e não no Portal Web do Intune. 
+Apresente uma imagem de marca que reflita a marca da sua empresa. Depois de salvar as alterações, você pode escolher **Visualizar suas configurações** no portal da Web do Intune na parte superior do painel para ver como as configurações serão exibidas. Tenha em atenção que só poderá pré-visualizar a imagem de marca num dispositivo iOS e não no Portal Web do Intune. 
 
 |Nome do campo|Mais informações|
 |---|---|
@@ -147,19 +147,19 @@ Os utilizadores finais podem ativar ações de navegação, de aplicação e de 
 
 Os atalhos de teclado seguintes estão disponíveis na aplicação Portal da Empresa do Windows.
 
-| Área | Descrição | Atalho de teclado |
+| Área | Description | Atalho de teclado |
 |:------------------:|:--------------:|:-----------------:|
-| Menu de navegação | Navegação | Alt+M |
-|  | Casa | Alt+H |
-|  | Todas as aplicações | Alt+A |
+| Menu de navegação | Navegação | Alt + M |
+|  | Casa | ALT + H |
+|  | Todas as aplicações | ALT + A |
 |  | Aplicações instaladas | Alt+I |
-|  | Enviar feedback | Alt+F |
-|  | O meu perfil | Alt+U |
-|  | Definições | Alt+T |
-| Base – Mosaico Dispositivo | Mudar o Nome | F2 |
+|  | Enviar feedback | ALT + F |
+|  | O meu perfil | Alt + U |
+|  | Definições | ALT + T |
+| Base – Mosaico Dispositivo | Mudar o nome | F2 |
 |  | Remove | Ctrl+D ou Delete |
 |  | Verificar o acesso | Ctrl+M ou F9 |
-| Detalhes do dispositivo | Mudar o Nome | F2 |
+| Detalhes do dispositivo | Mudar o nome | F2 |
 |  | Remove | Ctrl+D ou Delete |
 |  | Verificar o acesso | Ctrl+M ou F9 |
 | Detalhes da aplicação | Instalar | Ctrl+I |
@@ -187,12 +187,12 @@ Algumas plataformas e configurações não permitem ações de dispositivo de au
 |  | Windows 10<sup>(3)</sup> | iOS/iPadOS<sup>(3)</sup> | MacOS<sup>(3)</sup> | Android<sup>(3)</sup> |
 |----------------------|--------------------------|-------------------|-----------------------------------|-------------------------|
 | Extinguir | Disponível<sup>(1)</sup> | Disponível | Disponível | Disponível<sup>(7)</sup> |
-| Eliminação | Disponível | Disponível<sup>(5)</sup> | ND | Disponível<sup>(7)</sup> |
+| Eliminação | Disponível | Disponível<sup>(5)</sup> | NA | Disponível<sup>(7)</sup> |
 | Renomear<sup>(4)</sup> | Disponível | Disponível | Disponível | Disponível |
 | Sincronizá | Disponível | Disponível | Disponível | Disponível |
 | Bloqueio Remoto | Somente Windows Phone | Disponível | Disponível | Disponível |
-| Redefinir senha | Somente Windows Phone | Disponível<sup>(8)</sup> | ND | Disponível<sup>(6)</sup> |
-| Recuperação de Chaves | ND | ND | Disponível<sup>(2)</sup> | ND |
+| Redefinir senha | Somente Windows Phone | Disponível<sup>(8)</sup> | NA | Disponível<sup>(6)</sup> |
+| Recuperação de chave | NA | NA | Disponível<sup>(2)</sup> | NA |
 
 <sup>(1)</sup> a **desativação** é sempre bloqueada em dispositivos Windows ingressados no Azure AD.<br>
 <sup>(2)</sup> a **recuperação de chave** para MacOS só está disponível por meio do portal da Web.<br>
@@ -203,6 +203,6 @@ Algumas plataformas e configurações não permitem ações de dispositivo de au
 <sup>(7)</sup> a **desativação** e o **apagamento** não estão disponíveis nos cenários do proprietário do dispositivo Android Enterprise (Cobo, COSU).<br> 
 <sup>(8)</sup> não há suporte para **Redefinir senha** em dispositivos IOS registrados pelo usuário.
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Próximos passos
 
 - [Adicionar manualmente a aplicação Portal da Empresa do Windows 10 através do Microsoft Intune](company-portal-app.md)

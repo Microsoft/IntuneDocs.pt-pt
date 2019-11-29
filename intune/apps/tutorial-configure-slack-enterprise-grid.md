@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/09/2019
+ms.date: 11/26/2019
 ms.topic: tutorial
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 86e9d100847641064f472f0c3da0c9ec694f72dd
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: a3b01c1444b44e3f5c66fc129f78f321c9c9f5aa
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72496718"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563404"
 ---
 # <a name="tutorial-configure-slack-to-use-intune-for-emm-and-app-configuration"></a>Tutorial: configurar a margem de atraso para usar o Intune para EMM e a configuração de aplicativo
 
@@ -55,7 +55,7 @@ Adicione a margem de atraso do aplicativo iOS para EMM ao seu locatário do Intu
 
 ### <a name="add-slack-for-emm-to-intune"></a>Adicionar margem de atraso para EMM no Intune
 Adicione a margem de atraso do EMM como um aplicativo iOS gerenciado no Intune e atribua seus usuários de margem de atraso. Os aplicativos são específicos da plataforma, portanto, você precisa adicionar um aplicativo do Intune separado para seus usuários de margem de atraso em dispositivos Android.
-1. No Intune, selecione **aplicativos cliente** > **aplicativos** > **Adicionar**.
+1. No Intune, selecione **aplicativos** > **todos os aplicativos** > **Adicionar**.
 2. Em tipo de aplicativo, selecione **Store app-IOS**.
 3. Selecione **Procurar na App Store**. Insira o termo de pesquisa "margem de atraso para EMM" e selecione o aplicativo.
 4. Selecione **informações do aplicativo** e configure as alterações como desejar.
@@ -71,7 +71,7 @@ Adicione a margem de atraso do EMM como um aplicativo iOS gerenciado no Intune e
 
 ### <a name="add-an-app-configuration-policy-for-slack-for-emm"></a>Adicionar uma política de configuração de aplicativo para a margem de atraso do EMM
 Adicione uma política de configuração de aplicativo para a margem de atraso do EMM iOS. As políticas de configuração de aplicativo para dispositivos gerenciados são específicas da plataforma, portanto, você precisa adicionar uma política separada para seus usuários de margem de atraso em dispositivos Android.
-1. No Intune, selecione **aplicativos cliente** > **políticas de configuração de aplicativo** > **Adicionar**.
+1. No Intune, selecione **aplicativos** > **políticas de configuração de aplicativo** > **Adicionar**.
 2. Em nome, digite margem de atraso configuração do aplicativo teste de política.
 3. Em tipo de registro do dispositivo, selecione **dispositivos gerenciados**.
 4. Em plataforma, selecione **Ios**.
@@ -107,7 +107,7 @@ Adicione a margem de atraso gerenciada Google Play aplicativo ao seu locatário 
 
 ### <a name="add-slack-to-intune"></a>Adicionar margem de atraso ao Intune
 Adicione a margem de atraso como um aplicativo gerenciado do Google Play no Intune e atribua seus usuários de margem de atraso. Os aplicativos são específicos da plataforma, portanto, você precisa adicionar um aplicativo do Intune separado para seus usuários de margem de atraso em dispositivos iOS.
-1. No Intune, selecione **aplicativos cliente** > **aplicativos** > **Adicionar**.
+1. No Intune, selecione **aplicativos** > **todos os aplicativos** > **Adicionar**.
 2. Em tipo de aplicativo, selecione **armazenar aplicativo – Google Play gerenciado**.
 3. Selecione **Google Play gerenciado-aprovar**. Insira o termo de pesquisa "margem de atraso para EMM" e selecione o aplicativo.
 4. Selecione **aprovar**.
@@ -122,7 +122,7 @@ Adicione a margem de atraso como um aplicativo gerenciado do Google Play no Intu
 
 ### <a name="add-an-app-configuration-policy-for-slack"></a>Adicionar uma política de configuração de aplicativo para a margem de atraso
 Adicione uma política de configuração de aplicativo para a margem de atraso. As políticas de configuração de aplicativo para dispositivos gerenciados são específicas da plataforma, portanto, você precisa adicionar uma política separada para seus usuários de margem de atraso em dispositivos iOS.
-1. No Intune, selecione **aplicativos cliente** > **políticas de configuração de aplicativo** > **Adicionar**.
+1. No Intune, selecione **aplicativos** > **políticas de configuração de aplicativo** > **Adicionar**.
 2. Em nome, digite margem de atraso configuração do aplicativo teste de política.
 3. Em tipo de registro do dispositivo, selecione **dispositivos gerenciados**.
 4. Em plataforma, selecione **Android**.

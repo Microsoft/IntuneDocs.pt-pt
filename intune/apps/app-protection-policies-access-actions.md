@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/24/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b5983742043dca9d07242315d4aaa97de2ead8d6
-ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
+ms.openlocfilehash: a0440e2d6f5890b20ccf020c40bb1037bcfcae38
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "73984025"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564129"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-conditional-launch-actions-in-intune"></a>Apagar dados seletivamente usando as ações de inicialização condicional da política de proteção de aplicativo no Intune
 
@@ -33,16 +33,16 @@ Com estas definições, pode eliminar dados da empresa explicitamente do disposi
 
 ## <a name="create-an-app-protection-policy-using-conditional-launch-actions"></a>Criar uma política de proteção de aplicativo usando ações de inicialização condicionais
 
-1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. No painel **Intune**, selecione **Aplicações do cliente** > **Políticas de proteção de aplicações**.
-4. Clique em **Adicionar uma política** (também pode editar uma política existente). 
-5. Clique em **Configurar definições obrigatórias** para ver a lista de definições disponíveis a configurar para a política. 
-6. Rolando para baixo no painel configurações, você verá uma seção intitulada **inicialização condicional** com uma tabela editável.
+1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **aplicativos** > **políticas de proteção de aplicativo**.
+3. Clique em **criar política** e selecione a plataforma do dispositivo para a política. 
+4. Clique em **Configurar definições obrigatórias** para ver a lista de definições disponíveis a configurar para a política. 
+5. Rolando para baixo no painel configurações, você verá uma seção intitulada **inicialização condicional** com uma tabela editável.
 
     ![Captura de ecrã a mostrar as ações de acesso de proteção de aplicações do Intune](./media/app-protection-policies-access-actions/apps-selective-wipe-access-actions01.png)
 
-7. Selecione uma **Definição** e introduza o **Valor** que os utilizadores têm de cumprir para iniciar sessão na sua aplicação da empresa. 
-8. Selecione a **Ação** a realizar se os utilizadores não cumprirem os seus requisitos. Em alguns casos, é possível configurar múltiplas ações para uma única definição. Para obter mais informações, veja [Como criar e atribuir políticas de proteção de aplicações](app-protection-policies.md).
+6. Selecione uma **Definição** e introduza o **Valor** que os utilizadores têm de cumprir para iniciar sessão na sua aplicação da empresa. 
+7. Selecione a **Ação** a realizar se os utilizadores não cumprirem os seus requisitos. Em alguns casos, é possível configurar múltiplas ações para uma única definição. Para obter mais informações, veja [Como criar e atribuir políticas de proteção de aplicações](app-protection-policies.md).
 
 ## <a name="policy-settings"></a>Definições de política 
 

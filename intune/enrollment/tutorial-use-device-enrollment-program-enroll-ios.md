@@ -15,12 +15,12 @@ ms.technology: ''
 ms.assetid: ''
 Customer intent: As an Intune admin, I want to set up the Apple's corporate device enrollment features so that corporate devices can automatically enroll in Intune.
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cc950f9e60f5549a7a74c2963f33c36369d3ebd3
-ms.sourcegitcommit: 5c52879f3653e22bfeba4eef65e2c86025534dab
+ms.openlocfilehash: 56b8ab9507acda8fc1145bd65c4438da838dd806
+ms.sourcegitcommit: fc4b38660129d615068f34ad4b96b900d73f7b53
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "74126165"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74558173"
 ---
 # <a name="tutorial-use-apples-corporate-device-enrollment-features-in-apple-business-manager-abm-to-enroll-ios-devices-in-intune"></a>Tutorial: usar os recursos de registro de dispositivo corporativo da Apple no Apple Business Manager (ABM) para registrar dispositivos iOS no Intune
 Os recursos de registro de dispositivo no Apple Business Manager simplificam o cadastramento de dispositivos. O Intune também dá suporte ao portal de DEP (Programa de registro de dispositivos mais antigo) da Apple, mas incentivamos você a começar com o Apple Business Manager. Com a Microsoft Intune e o registro de dispositivo corporativo da Apple, os dispositivos são automaticamente inscritos na primeira vez que o usuário liga o dispositivo. Portanto, você pode enviar dispositivos para muitos usuários sem precisar configurar cada dispositivo individualmente. 
@@ -44,7 +44,7 @@ Antes de registrar dispositivos iOS com os recursos de registro corporativo da A
 
 Você usa o ABM ou o portal de DEP para criar um token de registro de dispositivo. Você também usa os portais para atribuir dispositivos ao Intune para gerenciamento.
 
-1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **registro de dispositivo** > registro da **Apple** > **tokens do programa de registro** > **Adicionar**.
+1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **dispositivos** > **ios** > **registro do IOS** > **tokens do programa de registro** > **Adicionar**.
 
 2. Conceda permissão à Microsoft para enviar informações sobre o utilizador e o dispositivo à Apple, ao selecionar **Concordo**.
 
@@ -80,7 +80,7 @@ Você usa o ABM ou o portal de DEP para criar um token de registro de dispositiv
 ## <a name="create-an-apple-enrollment-profile"></a>Criar um perfil de inscrição da Apple
 Agora que você instalou o token, você pode criar um perfil de registro para dispositivos iOS corporativos. Um perfil de inscrição de dispositivos especifica as definições aplicadas a um grupo de dispositivos durante a inscrição.
 
-1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **registro de dispositivo** > registro da **Apple** > **tokens do programa de registro**.
+1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **dispositivos** > **ios** > **registro do IOS** > **tokens do programa de registro**.
 
 2. Selecione o token que você acabou de instalar, escolha **perfis** > **Criar perfil**.
 
@@ -90,7 +90,7 @@ Agora que você instalou o token, você pode criar um perfil de registro para di
 
 5. Determine se você deseja que seus dispositivos se registrem com ou sem **afinidade de usuário**. A afinidade do usuário é projetada para dispositivos que serão usados por usuários específicos. Se os usuários desejarem usar o Portal da Empresa para serviços como instalar aplicativos, escolha **registrar com afinidade de usuário**. Se os usuários não precisarem do Portal da Empresa ou se você quiser provisionar o dispositivo para muitos usuários, escolha **registrar sem afinidade de usuário**.
 
-6. Se você optar por se registrar com a afinidade do usuário, determine se deseja autenticar com Portal da Empresa ou o assistente de configuração da Apple. Se você quiser usar a autenticação multifator, permitir que os usuários alterem senhas na primeira entrada ou solicitar que os usuários redefinam suas senhas expiradas durante o registro, escolha **Sim** em **autenticar com portal da empresa em vez de configuração da Apple Assistente**. Se você estiver familiarizado com a autenticação HTTP básica fornecida pela Apple por meio do assistente de configuração da Apple, escolha **não**. Se você escolher **Sim** e quiser que o aplicativo de portal da empresa seja atualizado automaticamente nos dispositivos dos usuários finais, implante separadamente o portal da empresa como um aplicativo necessário para esses usuários por meio do Vpp (Volume Purchase Program) da Apple.
+6. Se você optar por se registrar com a afinidade do usuário, determine se deseja autenticar com Portal da Empresa ou o assistente de configuração da Apple. Se você quiser usar a autenticação multifator, permitir que os usuários alterem senhas na primeira entrada ou solicitar que os usuários redefinam suas senhas expiradas durante o registro, escolha **Sim** em **autenticar com portal da empresa em vez de assistente de configuração da Apple**. Se você estiver familiarizado com a autenticação HTTP básica fornecida pela Apple por meio do assistente de configuração da Apple, escolha **não**. Se você escolher **Sim** e quiser que o aplicativo de portal da empresa seja atualizado automaticamente nos dispositivos dos usuários finais, implante separadamente o portal da empresa como um aplicativo necessário para esses usuários por meio do Vpp (Volume Purchase Program) da Apple.
 
 7. Se você optar por se registrar com a afinidade do usuário e se autenticar com Portal da Empresa, determine se deseja instalar Portal da Empresa com o VPP (Volume Purchase Program) da Apple. Se você instalar o Portal da Empresa com um token VPP, o usuário não precisará inserir uma ID da Apple e uma senha para baixar o Portal da Empresa da loja de aplicativos durante o registro. Escolha **usar token:** em **instalar portal da empresa com o VPP** para selecionar um token VPP que tenha licenças gratuitas do portal da empresa disponíveis. Se você não quiser usar o VPP para implantar o Portal da Empresa, escolha **não usar VPP** em **instalar portal da empresa com o VPP**. 
 
@@ -118,13 +118,13 @@ Agora que você instalou o token, você pode criar um perfil de registro para di
 
 Depois de configurar um token do programa de registro com o portal ABM, ASM ou DEP e atribuir dispositivos lá ao servidor MDM, você pode aguardar que esses dispositivos sejam sincronizados com o serviço do Intune ou enviar por push manualmente uma sincronização. Sem uma sincronização manual, os dispositivos podem levar até 24 horas para serem exibidos na portal do Azure.
 
-1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **registro de dispositivo** > registro da **Apple** > **tokens do programa de registro** > escolha um token na lista > **dispositivos** > **sincronização**.
+1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **dispositivos** > **ios** > **registro do IOS** > **tokens do programa de registro** > escolha um token na lista > **dispositivos** > **sincronização**.
 
 ## <a name="assign-an-enrollment-profile-to-ios-devices"></a>Atribuir um perfil de registro a dispositivos iOS
 
 Tem de atribuir um perfil do programa de inscrição aos dispositivos para poder inscrevê-los. Esses dispositivos são sincronizados com o Intune da Apple e devem ser atribuídos ao token apropriado do servidor MDM no portal ABM, ASM ou DEP.
 
-1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **registro de dispositivo** > registro da **Apple** > **tokens do programa de registro** > escolha o token na lista.
+1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **dispositivos** > **ios** > **registro do IOS** > **tokens do programa de registro** > escolha o token na lista.
 2. Escolha **Dispositivos** > escolha dispositivos na lista > **Atribuir perfil**.
 3. Em **Atribuir perfil**, escolha um perfil para os dispositivos > **Atribuir**.
 

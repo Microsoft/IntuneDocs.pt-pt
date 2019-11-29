@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1b2f483415d050486ae9979899d9308154a9b131
-ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
+ms.openlocfilehash: 348d1fe2fd236a2af11f7e58dc11530a5ce397bc
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74412017"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564190"
 ---
 # <a name="configure-smime-with-outlook-for-ios"></a>Configurar S/MIME com o Outlook para iOS
 
@@ -62,14 +62,14 @@ O Outlook para iOS dá suporte a duas maneiras de entregar certificados a dispos
 Para configurar o Outlook para iOS S/MIME no Gerenciador de pontos de extremidade, incluindo a entrega automática de certificados S/MIME que o Outlook para iOS pode usar, use as seguintes etapas:
 
 ### <a name="add-the-microsoft-outlook-app"></a>Adicionar o aplicativo Microsoft Outlook
-1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Adicione o aplicativo Microsoft Outlook para iOS da loja de aplicativos ao Gerenciador de pontos de extremidade ou Sincronize o Outlook para iOS no Apple Volume Purchase Program. Para obter mais informações, consulte [adicionar aplicativos da loja do Ios ao Microsoft Intune](~/apps/store-apps-ios.md) ou [como gerenciar aplicativos Ios e MacOS adquiridos por meio de Apple Volume Purchase Program com Microsoft Intune](~/apps/vpp-apps-ios.md).
 
 ### <a name="create-the-outlook-for-ios-smime-configuration-policy"></a>Criar a política de configuração do Outlook para iOS S/MIME
 
 As etapas a seguir permitem criar e configurar a política do Outlook para iOS S/MIME no Gerenciador de pontos de extremidade. Essas configurações fornecem entrega automatizada dos certificados de assinatura e criptografia.
 
-1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), selecione **aplicativos** > **políticas de configuração de aplicativos** > **Adicionar**.<br>
+1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) e selecione **aplicativos** > políticas de **configuração de aplicativos** > **Adicionar**.<br>
 O painel **Adicionar política de configuração** será exibido.
 2. Insira o **nome** e a **Descrição** da política de configuração.
 3. Selecione **dispositivos gerenciados** como o **tipo de registro de dispositivo**.
@@ -100,6 +100,6 @@ O painel **Adicionar política de configuração** será exibido.
     
 13. Selecione **atribuições** para atribuir a política de configuração de aplicativo aos grupos do Azure AD. Para obter mais informações, veja [Atribuir aplicações a grupos com o Microsoft Intune](~/apps/apps-deploy.md).
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Próximos passos
 
 - Para obter mais informações, consulte [políticas de configuração de aplicativo para Microsoft Intune](app-configuration-policies-overview.md).

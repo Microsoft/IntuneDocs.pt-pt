@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 55fc7149d23336519af76c423862bd81f065b88f
-ms.sourcegitcommit: cdb2a484b059bd8d8c3985cde1e883c24a4c1cad
+ms.openlocfilehash: 1d0ba000a54e57635d44287ef261871570af84b4
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74239238"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74562831"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Inscrever automaticamente dispositivos iOS com o Programa de Inscrição de Dispositivos da Apple
 
@@ -70,7 +70,7 @@ Pode utilizar o portal de DEP da Apple para criar um token DEP. Também pode uti
 
 ### <a name="step-1-download-the-intune-public-key-certificate-required-to-create-the-token"></a>Passo 1. Transfira o certificado de chave pública do Intune, que é obrigatório para criar o token.
 
-1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **registro de dispositivo** > registro da **Apple** > **tokens do programa de registro** > **Adicionar**.
+1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **dispositivos** > **ios** > **registro do IOS** > **tokens do programa de registro** > **Adicionar**.
 
     ![Obtenha um token do programa de inscrição.](./media/device-enrollment-program-enroll-ios/image01.png)
 
@@ -81,7 +81,7 @@ Pode utilizar o portal de DEP da Apple para criar um token DEP. Também pode uti
 3. Selecione **Transferir a chave pública** para transferir e guardar o ficheiro da chave de encriptação (.pem) localmente. O ficheiro .pem é utilizado para pedir um certificado de relação de confiança a partir do portal do Programa de Inscrição de Dispositivos da Apple.
 
 
-### <a name="step-2-use-your-key-to-download-a-token-from-apple"></a>Passo 2. Utilize a sua chave para transferir um token a partir da Apple.
+### <a name="step-2-use-your-key-to-download-a-token-from-apple"></a>Passo 2: Utilize a sua chave para transferir um token a partir da Apple.
 
 1. Selecione **Criar um token para o Programa de Registo de Aparelho da Apple** para abrir o portal Programa de Implementação da Apple e inicie sessão com o Apple ID da sua empresa. Pode utilizar este Apple ID para renovar o seu token DEP.
 2. No [portal dos Programas de Implementação](https://deploy.apple.com) da Apple, selecione **Começar** em **Programa de Registo de Aparelho**.
@@ -125,7 +125,7 @@ Agora que instalou o seu token, pode criar um perfil de inscrição para disposi
 > Os dispositivos serão bloqueados se não houver licenças Portal da Empresa suficientes para um token VPP ou se o token tiver expirado. O Intune apresentará um alerta quando um token estiver prestes a expirar ou se existirem poucas licenças.
  
 
-1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **registro de dispositivo** > registro da **Apple** > **tokens do programa de registro**.
+1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **dispositivos** > **ios** > **registro do IOS** > **tokens do programa de registro**.
 2. Selecione um token, escolha **perfis** > **Criar perfil** > **Ios**.
 
     ![Crie uma captura de ecrã de perfil.](./media/device-enrollment-program-enroll-ios/image04.png)
@@ -166,7 +166,7 @@ Agora que instalou o seu token, pode criar um perfil de inscrição para disposi
 
     A autenticação multifator não tem suporte em um único dispositivo bloqueado no modo de aplicativo único. Essa limitação existe porque o dispositivo não pode alternar para um aplicativo diferente para concluir o segundo fator de autenticação. Portanto, se você quiser autenticação multifator em um dispositivo de modo de aplicativo único, o segundo fator deverá estar em um dispositivo diferente.
 
-    Esta funcionalidade só é suportada para iOS 11.3.1 e posterior.
+    Esta funcionalidade só é suportada para iOS 11.3.1 e posterior.
 
    ![Captura de ecrã do modo de aplicação única.](./media/device-enrollment-program-enroll-ios/single-app-mode.png)
 
@@ -197,7 +197,7 @@ Agora que instalou o seu token, pode criar um perfil de inscrição para disposi
 15. Na página **personalização do assistente de configuração** , defina as seguintes configurações de perfil: ![personalização do assistente de configuração.](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png)
 
 
-    | Definições do departamento | Descrição |
+    | Definições do departamento | Description |
     |---|---|
     | <strong>Nome do Departamento</strong> | É apresentado quando os utilizadores tocam em <strong>Acerca da Configuração</strong> durante a ativação. |
     |    <strong>Número de Telefone do Departamento</strong>     | Aparece quando o utilizador clica no botão <strong>Preciso de Ajuda</strong> durante a ativação. |
@@ -241,7 +241,7 @@ Agora que instalou o seu token, pode criar um perfil de inscrição para disposi
 ## <a name="sync-managed-devices"></a>Sincronizar dispositivos geridos
 Agora que o Intune tem permissão para gerir os seus dispositivos, pode sincronizar o Intune com a Apple para ver os seus dispositivos geridos no Intune no portal do Azure.
 
-1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **registro de dispositivo** > registro da **Apple** > **tokens do programa de registro** > escolha um token na lista > **dispositivos** > **sincronização**. ![captura de tela do nó dispositivos do programa de registro e do link de sincronização.](./media/device-enrollment-program-enroll-ios/image06.png)
+1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **dispositivos** > **ios** > **registro do IOS** > **tokens do programa de registro** > escolha um token na lista > **dispositivos** > **sincronização**. ![captura de tela do nó dispositivos do programa de registro e do link de sincronização.](./media/device-enrollment-program-enroll-ios/image06.png)
 
    Para cumprir os termos da Apple para um tráfego aceitável do programa de inscrição, o Intune impõe as seguintes restrições:
    - As sincronizações completas não podem ser executadas mais do que uma vez a cada sete dias. Durante uma sincronização completa, o Intune obtém a lista atualizada completa de números de série atribuídos ao servidor de MDM da Apple ligado ao Intune. Se um dispositivo DEP for eliminado do portal do Intune, a sua atribuição deverá ser anulada no servidor MDM da Apple no portal DEP. Se a atribuição não for anulada, não será importado novamente para o Intune até que a sincronização completa seja executada.   
@@ -254,7 +254,7 @@ Tem de atribuir um perfil do programa de inscrição aos dispositivos para poder
 >[!NOTE]
 >Também pode atribuir números de série a perfis a partir do painel **Números de Série da Apple**.
 
-1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **registro de dispositivo** > registro da **Apple** > **tokens do programa de registro** > escolha um token na lista.
+1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **dispositivos** > **ios** > **registro do IOS** > **tokens do programa de registro** > escolha um token na lista.
 2. Escolha **Dispositivos** > escolha dispositivos na lista > **Atribuir perfil**.
 3. Em **Atribuir perfil**, escolha um perfil para os dispositivos > **Atribuir**.
 
@@ -262,7 +262,7 @@ Tem de atribuir um perfil do programa de inscrição aos dispositivos para poder
 
 Pode escolher um perfil predefinido a aplicar a todos os dispositivos que inscrever com um token específico.
 
-1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **registro de dispositivo** > registro da **Apple** > **tokens do programa de registro** > escolha um token na lista.
+1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **dispositivos** > **ios** > **registro do IOS** > **tokens do programa de registro** > escolha um token na lista.
 2. Escolha **Definir o Perfil Predefinido**, escolha um perfil na lista pendente e, em seguida, escolha **Guardar**. Este perfil será aplicado a todos os dispositivos inscritos com o token.
 
 ## <a name="distribute-devices"></a>Distribuir dispositivos
@@ -278,7 +278,7 @@ Veja [Inscrever o dispositivo iOS no Intune com o Programa de Registo de Aparelh
     ![Captura de ecrã a mostrar a criação de um novo token.](./media/device-enrollment-program-enroll-ios/generatenewtoken.png)
 
 4. Selecione **Token do Seu Servidor**.  
-5. No [Intune no portal do Azure](https://aka.ms/intuneportal), selecione **Inscrição de dispositivos** > **Inscrição da Apple** > **Tokens do programa de inscrição** > selecione o token.
+5. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **dispositivos** > **ios** > **registro do IOS** > **tokens do programa de registro** > escolha o token.
     ![Captura de ecrã a mostrar tokens de programas de inscrição.](./media/device-enrollment-program-enroll-ios/enrollmentprogramtokens.png)
 
 6. Selecione **Renovar token** e introduza o ID Apple utilizado para criar o token original.  

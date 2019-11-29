@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d4ff9126fec182d1e0d2f3eb75297ede8a632e2e
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 83f0d980bc4fa1bfd0b48f87839fd6efa130aa70
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390725"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563880"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-dedicated-devices"></a>Configurar a inscrição de dispositivos dedicados do Android Enterprise no Intune
 
@@ -35,7 +35,7 @@ O Intune ajuda-o a implementar aplicações e definições em dispositivos dedic
 
 Os dispositivos que gerir desta forma são inscritos no Intune sem uma conta de utilizador e não estão associados a nenhum utilizador final. Estes dispositivos não são para utilização pessoal nem para aplicações que tenham um requisito forte para dados de conta específicos do utilizador, como o Outlook ou o Gmail.
 
-## <a name="device-requirements"></a>Requisitos de dispositivos
+## <a name="device-requirements"></a>Requisitos dos dispositivos
 
 Os dispositivos têm de cumprir estes requisitos para serem geridos como um dispositivo dedicado do Android Enterprise:
 
@@ -59,7 +59,7 @@ Para configurar a gestão dos dispositivos dedicados do Android Enterprise, siga
 
 Tem de criar um perfil de inscrição para poder inscrever os dispositivos dedicados. Depois de criar o perfil, o mesmo fornece-lhe um token de inscrição (cadeia aleatória) e um código QR. Consoante o SO Android e a versão do dispositivo, pode utilizar o token ou o código QR para [inscrever o dispositivo dedicado](#enroll-the-dedicated-devices).
 
-1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) e escolha **registro de dispositivo** > **registro do Android** > **dispositivos dedicados de propriedade corporativa**.
+1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) e escolha **dispositivos** > **Android** > **registro Android** > **dispositivos dedicados de propriedade corporativa**.
 2. Selecione **Criar** e preencha os campos obrigatórios.
     - **Nome**: escreva o nome que irá utilizar quando atribuir o perfil ao grupo de dispositivos dinâmico.
     - **Data de expiração do token**: a data em que o token expira. A Google impõe um máximo de 90 dias.
@@ -92,7 +92,7 @@ Pode direcionar aplicações e políticas para grupos de dispositivos dinâmicos
 
 Substituir ou revogar um token/código QR não terá efeito em dispositivos que já tenham sido inscritos.
 
-1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) e escolha **registro de dispositivo** > **registro do Android** > **dispositivos dedicados de propriedade corporativo**.
+1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) e escolha **dispositivos** > **Android** > **registro Android** > **dispositivos dedicados de Propriedade do corporativo**.
 2. Selecione o perfil com o qual pretende trabalhar.
 3. Selecione **Token**.
 4. Para substituir o token, selecione **Substituir token**.
@@ -115,6 +115,6 @@ Para remover uma aplicação dos dispositivos dedicados do Android Enterprise, p
 - Elimine a implementação da aplicação obrigatória.
 - Crie uma implementação de desinstalação para a aplicação.
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Próximos passos
 - [Implementar aplicações Android](../apps/apps-deploy.md)
 - [Adicionar políticas de configuração para Android](../configuration/device-profiles.md)

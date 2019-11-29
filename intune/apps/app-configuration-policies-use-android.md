@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/08/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9561c50e21a9667ccec3f9de3627e7a933cf0736
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 80d6068a17e1d278f9226e26c9efab24d597e52e
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72584983"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564272"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-enterprise-devices"></a>Adicionar políticas de configuração de aplicativo para dispositivos Android Enterprise gerenciados
 
@@ -34,7 +34,7 @@ As políticas de configuração de aplicativo no Microsoft Intune fornecem confi
 > [!NOTE]  
 > Nem todas as aplicações suportam a configuração de aplicações. Consulte o desenvolvedor do aplicativo para ver se seu aplicativo dá suporte a políticas de configuração de aplicativo.
 
-1. No [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), selecione **aplicativos cliente** > **políticas de configuração de aplicativo** >  **Adicionar**.
+1. No [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), selecione **aplicativos** > **políticas de configuração de aplicativo** >  **Adicionar**.
 2. Introduza as seguintes propriedades:
 
     - **Nome**: Insira um nome descritivo para a política. Atribua nomes às políticas de forma que possa identificá-las facilmente mais tarde. Por exemplo, um bom nome de política é a **política de aplicativo de trabalho do Android Enterprise nove para toda a empresa**.
@@ -72,7 +72,7 @@ Pode escolher as seguintes opções, se selecionar a variável como o tipo de va
 | ID do dispositivo do AAD | dc0dc142-11d8-4b12-bfea-cae2a8514c82 |
 | ID de conta | fc0dc142-71d8-4b12-bbea-bae2a8514c81 |
 | ID de Dispositivo do Intune | b9841cd9-9843-405f-be28-b2265c59ef97 |
-| Domínio | Contoso.com |
+| Domínio | contoso.com |
 | Correio | john@contoso.com |
 | UPN Parcial | joão |
 | ID de usuário | 3ec2c00f-b125-4519-acf0-302ac3761822 |
@@ -110,7 +110,7 @@ Você também pode pré-configurar as permissões de aplicativo para acessar rec
 
 Por exemplo, um aplicativo usa o microfone do dispositivo. O usuário é solicitado a conceder a permissão do aplicativo para usar o microfone.
 
-1. No [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), selecione **aplicativos cliente** > **políticas de configuração de aplicativo** >  **Adicionar**.
+1. No [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), selecione **aplicativos** > **políticas de configuração de aplicativo** >  **Adicionar**.
 2. Introduza as seguintes propriedades:
 
     - **Nome**: Insira um nome descritivo para a política. Atribua nomes às políticas de forma que possa identificá-las facilmente mais tarde. Por exemplo, um bom nome de política é a **política de aplicativo de permissões de prompt do Android Enterprise para toda a empresa**.

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 11/26/2019
 ms.topic: quickstart
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3afd51fe27feb0c058ba703ed11e4a15a5ea2f0d
-ms.sourcegitcommit: 25acfc88b366d2da71c37d354a0238e4f1168325
+ms.openlocfilehash: d09857c4e5b63947a6e3b3140f673f0887f7f920
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72813419"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563417"
 ---
 # <a name="quickstart-add-and-assign-a-client-app"></a>Guia de Início Rápido: adicionar e atribuir uma aplicação cliente
 
@@ -44,7 +44,7 @@ Entre no [Intune](https://aka.ms/intuneportal) como um [administrador global ou 
 É possível incluir uma aplicação para que o Intune possa gerir aspetos da mesma. 
 
 Siga os seguintes passos para adicionar uma aplicação ao Intune:
-1. No [Intune](https://aka.ms/intuneportal), selecione **Aplicações do cliente** > **Aplicações** > **Adicionar**. 
+1. No [Intune](https://aka.ms/intuneportal), selecione **aplicativos** > **todos os aplicativos** > **Adicionar**. 
 2. Selecione **Windows 10** na secção **Office 365 Suite** da caixa pendente **Tipo de aplicação**.
 3. Selecione **Configurar o Conjunto de Aplicações** para selecionar as aplicações do Office que serão atribuídas ao utilizador do Intune.
 4. Clique em **OK** para aceitar as aplicações selecionadas por predefinição.
@@ -68,9 +68,9 @@ Depois de adicionar uma aplicação ao Microsoft Intune, pode atribuí-la a grup
 > Este guia de início rápido se baseia nos guias de início rápido anteriores desta série. Veja a secção [Pré-requisitos](quickstart-add-assign-app.md#prerequisites) deste guia de início rápido para obter mais informações.
 
 Siga os seguintes passos para atribuir uma aplicação a um grupo:
-1. No [Intune](https://aka.ms/intuneportal), selecione **Aplicações do cliente** > **Aplicações**. 
+1. No [Intune](https://aka.ms/intuneportal), selecione **aplicativos** > **todos os aplicativos**. 
 2. Selecione a aplicação que pretende atribuir a um grupo.
-3. Clique em **Atribuições** > **Adicionar grupo** para apresentar o painel **Adicionar grupo**.
+3. Clique em **atribuições** > **Adicionar grupo** para exibir o painel **Adicionar grupo** .
 4. Selecione **Disponível para dispositivos inscritos** na caixa pendente **Tipo de atribuição**. 
 5. Clique em **Grupos Incluídos** > **Selecionar grupos para incluir** > **Técnicos de Teste da Contoso**.
 6. Clique em **Selecionar** > **OK** > **OK** > **Guardar** para atribuir ao grupo.

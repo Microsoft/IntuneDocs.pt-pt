@@ -16,6 +16,8 @@
           href: whats-new-app-ui.md
         - name: Features in development (Funcionalidades em desenvolvimento)
           href: in-development.md
+        - name: Avisos importantes
+          href: 'whats-new.md#notices'
 - name: Guias de Introdução
   items:
     - name: Experimentar o Intune gratuitamente

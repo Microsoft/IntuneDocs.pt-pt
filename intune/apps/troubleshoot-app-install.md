@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/04/2019
+ms.date: 11/26/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e1067c8ef23add50c921217b9e4b115346be2951
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 4783d24e3fc25583a61f88c2e7375d4eed673186
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72497043"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563490"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>Resolver problemas com a instalação de aplicações
 
@@ -32,8 +32,8 @@ Por vezes, a instalação de aplicações em dispositivos geridos por MDM do Mic
 
 O Intune proporciona detalhes da resolução de problemas com a aplicação com base nas aplicações instaladas no dispositivo de um utilizador específico.
 
-1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. No painel **Intune**, selecione **Resolução de problemas**.
+1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+3. Selecione **solução de problemas + suporte**.
 4. Clique em **Selecionar utilizador** para selecionar um utilizador para o qual quer executar a resolução de problemas. O painel **Selecionar utilizadores** será apresentado.
 5. Selecione um utilizador ao escrever o nome ou endereço de e-mail. Clique em **Selecionar** na parte inferior do painel. As informações de resolução de problemas do utilizador são apresentadas no painel **Resolução de problemas**. 
 6. Selecione o dispositivo com o qual quer resolver problemas na lista **Dispositivos**.
@@ -57,12 +57,12 @@ As ações a seguir devem ser consideradas quando você tiver problemas ao insta
 - Se o aplicativo não for exibido no Portal da Empresa, verifique se o aplicativo está implantado com a intenção **disponível** e se o usuário está acessando o portal da empresa com o tipo de dispositivo com suporte no aplicativo.
 - Para dispositivos Windows BYOD, o usuário precisa adicionar uma conta de trabalho ao dispositivo.
 - Verifique se o usuário está acima do limite de dispositivos do AAD:
-  1. Navegue até [Azure Active Directory configurações do dispositivo](https://portal.azure.com/#blade/Microsoft_AAD_IAM/DevicesMenuBlade/DeviceSettings/menuId).
+  1. Navegue até [Azure Active Directory configurações do dispositivo](https://portal.azure.com/#pane/Microsoft_AAD_IAM/DevicesMenupane/DeviceSettings/menuId).
   2. Anote o valor definido para máximo de **dispositivos por usuário**.
-  3. Navegue até [Azure Active Directory usuários](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade/AllUsers).
+  3. Navegue até [Azure Active Directory usuários](https://portal.azure.com/#pane/Microsoft_AAD_IAM/UsersManagementMenupane/AllUsers).
   4. Selecione o usuário afetado e clique em **dispositivos**.
   5. Se o usuário estiver acima do limite definido, exclua os registros obsoletos que não são mais necessários.
-- Para dispositivos do iOS DEP, verifique se o usuário está listado como **registrado pelo usuário** na folha de visão geral do dispositivo do Intune. Se aparecer NA, implante uma política de configuração para o Portal da Empresa do Intune. Para obter mais informações, consulte [Configurar o aplicativo portal da empresa](app-configuration-policies-use-ios.md#configure-the-company-portal-app-to-support-ios-dep-devices).
+- Para dispositivos do iOS DEP, verifique se o usuário está listado como **registrado pelo usuário** no painel Visão geral do dispositivo do Intune. Se aparecer NA, implante uma política de configuração para o Portal da Empresa do Intune. Para obter mais informações, consulte [Configurar o aplicativo portal da empresa](app-configuration-policies-use-ios.md#configure-the-company-portal-app-to-support-ios-dep-devices).
 
 ## <a name="win32-app-installation-troubleshooting"></a>Solução de problemas de instalação do aplicativo Win32
 
@@ -75,7 +75,7 @@ Selecione o aplicativo Win32 que foi implantado usando a extensão de gerenciame
 
 Para coletar os logs de instalação do aplicativo Win32, primeiro siga as etapas fornecidas na seção [detalhes de solução de problemas do aplicativo](troubleshoot-app-install.md#app-troubleshooting-details). Em seguida, continue com as seguintes etapas:
 
-1. Clique na opção **coletar logs** na folha **detalhes da instalação** .
+1. Clique na opção **coletar logs** no painel **detalhes da instalação** .
 
     <image alt="Win32 app installation details - Collect log option" src="./media/troubleshoot-app-install/troubleshoot-app-install-04.png" width="500" />
 
@@ -168,7 +168,7 @@ Esta seção menciona tanto o administrador do dispositivo quanto o registro Sam
 
 |  Mensagem de erro/código  |  Description  |
 |-----------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|  0x80073CFF, 0x80CF201C (erro do cliente)  |  Para instalar esta aplicação, precisa de ter um sistema preparado para sideloading. Verifique se o pacote do aplicativo está assinado com uma assinatura confiável e instalado em um dispositivo ingressado no domínio que tenha a política **AllowAllTrustedApps** habilitada ou um dispositivo que tenha uma licença de Sideload do Windows com a política **AllowAllTrustedApps** habilitado. Para obter mais informações, consulte [solução de problemas de empacotamento, implantação e consulta de aplicativos da Windows Store](https://docs.microsoft.com/windows/desktop/appxpkg/troubleshooting).   |
+|  0x80073CFF, 0x80CF201C (erro do cliente)  |  Para instalar esta aplicação, precisa de ter um sistema preparado para sideloading. Verifique se o pacote do aplicativo está assinado com uma assinatura confiável e instalado em um dispositivo ingressado no domínio que tenha a política **AllowAllTrustedApps** habilitada ou um dispositivo que tenha uma licença de Sideload do Windows com a política **AllowAllTrustedApps** habilitada. Para obter mais informações, consulte [solução de problemas de empacotamento, implantação e consulta de aplicativos da Windows Store](https://docs.microsoft.com/windows/desktop/appxpkg/troubleshooting).   |
 |  0x80073CF0  |  Não foi possível abrir o pacote. Causas possíveis:<ul><li> O pacote não está assinado.</li><li> O nome do Publicador não corresponde ao assunto do certificado de autenticação.</li></ul> Verifique o log de eventos do **AppxPackagingOM** para obter informações. Para obter mais informações, consulte [solução de problemas de empacotamento, implantação e consulta de aplicativos da Windows Store](https://docs.microsoft.com/windows/desktop/appxpkg/troubleshooting).  |
 |  0x80073CF3  |  Falha na atualização, dependência ou validação de conflito do pacote. Causas possíveis:<ul><li> O pacote de entrada está em conflito com um pacote instalado.</li><li> Uma dependência de pacote especificada não foi encontrada.</li><li> O pacote não oferece suporte à arquitetura de processador correta.</li></ul> Verifique o log de eventos do **AppXDeployment-Server** para obter informações. Para obter mais informações, consulte [solução de problemas de empacotamento, implantação e consulta de aplicativos da Windows Store](https://docs.microsoft.com/windows/desktop/appxpkg/troubleshooting).  |
 |  0x80073CFB  |  O pacote fornecido já está instalado e a reinstalação do pacote está bloqueada. Você poderá receber esse erro se estiver instalando um pacote que não é idêntico ao pacote que já está instalado. Verifique se a assinatura digital também faz parte do pacote. Quando um pacote é reconstruído ou assinado novamente, esse pacote já não é totalmente idêntico ao pacote anteriormente instalado. Existem duas opções possíveis para corrigir este erro:<ul><li> Aumente o número de versão do aplicativo e, em seguida, recompile e assine novamente o pacote.</li><li> Remova o pacote antigo para cada usuário no sistema antes de instalar o novo pacote.</li></ul> Para obter mais informações, consulte [solução de problemas de empacotamento, implantação e consulta de aplicativos da Windows Store](https://docs.microsoft.com/windows/desktop/appxpkg/troubleshooting).  |

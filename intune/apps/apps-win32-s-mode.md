@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/13/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d2ab21321b171c8fe8f5f9dab3032507c0e740cf
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: 7e17972a3a87bd9c42db54753d4da3bb81703377
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059759"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563611"
 ---
 # <a name="enable-win32-apps-on-s-mode-devices"></a>Habilitar aplicativos Win32 em dispositivos de modo S
 
@@ -58,7 +58,7 @@ As etapas para permitir que os aplicativos Win32 sejam executados em um disposit
 Para criar uma política complementar do modo do Windows 10 S, use as seguintes etapas:
 
 1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. No painel **Intune** , selecione **aplicativos cliente** > **políticas complementares de modo S** > **criar política**.
+2. Selecione **aplicativos** > **S modo políticas complementares** > **criar política**.
 3. Antes de adicionar o **arquivo de política**, você deve criá-lo e conectá-lo. Para obter mais informações, consulte:
     - [Criar uma política WDAC usando as ferramentas do PowerShell e convertê-la em um formato binário](https://go.microsoft.com/fwlink/?linkid=2095387)
     - [Assinar usando o serviço de assinatura do Device Guard](https://go.microsoft.com/fwlink/?linkid=2095629) **(recomendado)**

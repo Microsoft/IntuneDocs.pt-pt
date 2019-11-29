@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/24/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,15 +18,15 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c420446d9293ae2a2d1905dcff218056e8e6c875
-ms.sourcegitcommit: 16a9109b4028589c17695d41271ca4fee8b1d697
+ms.openlocfilehash: 9005d501effd79a9fb7fc0f99e325f339a21a7b2
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74540723"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564116"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Definições de políticas de proteção de aplicações Android no Microsoft Intune
-Este artigo descreve as definições de políticas de proteção de aplicações para dispositivos Android. As definições de políticas descritas podem ser [configuradas](app-protection-policies.md) para uma política de proteção de aplicações no painel **Definições** no portal do Azure.
+Este artigo descreve as definições de políticas de proteção de aplicações para dispositivos Android. As configurações de política descritas podem ser [configuradas](app-protection-policies.md) para uma política de proteção de aplicativo no painel **configurações** na portal do Azure.
 Há três categorias de configurações de política: configurações de proteção de dados, requisitos de acesso e inicialização condicional. Neste artigo, o termo *aplicações geridas por políticas* menciona as aplicações configuradas com políticas de proteção de aplicações.
 
 > [!IMPORTANT]

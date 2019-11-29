@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/25/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f073c8ad7a8e087a791ee756683011fac6947162
-ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
+ms.openlocfilehash: 40cbb62a620d6e174ab8acb76798ba53080b78cf
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74547971"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563983"
 ---
 # <a name="include-and-exclude-app-assignments-in-microsoft-intune"></a>Incluir e excluir atribuições de aplicações no Microsoft Intune
 
@@ -55,34 +55,34 @@ Como resultado, não é recomendável atribuir aplicativos a grupos mistos.
 
 ## <a name="include-and-exclude-groups-when-assigning-apps"></a>Incluir e excluir grupos ao atribuir aplicações 
 Para atribuir uma aplicação aos grupos através da atribuição de inclusão e exclusão:
-1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. No painel **Intune**, selecione **Aplicações do cliente**.
-4. No painel **Aplicações do cliente**, selecione **Aplicações**. É apresentada a lista de aplicações adicionadas.
-5. Selecione a aplicação que pretende atribuir. Um dashboard apresenta informações sobre a aplicação. 
-6. Na secção **Gerir** do menu, selecione **Atribuições**. 
+1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **aplicativos** > **todos os aplicativos**. É apresentada a lista de aplicações adicionadas.
+3. Selecione a aplicação que pretende atribuir. Um dashboard apresenta informações sobre a aplicação. 
+4. Na secção **Gerir** do menu, selecione **Atribuições**. 
 
     ![Incluir atribuições de aplicativo ao atribuir aplicativos](./media/apps-inc-exl-assignments/apps-inc-exl-01.png)
-7. Selecione **Adicionar grupo** para adicionar os grupos de utilizadores que estão atribuídos à aplicação. 
-8. No painel **Adicionar grupo**, selecione um **Tipo de atribuição** nos tipos de atribuição disponíveis.
-9. Para o tipo de atribuição, selecione **Disponível com ou sem inscrição**.
+
+5. Selecione **Adicionar grupo** para adicionar os grupos de utilizadores que estão atribuídos à aplicação. 
+6. No painel **Adicionar grupo**, selecione um **Tipo de atribuição** nos tipos de atribuição disponíveis.
+7. Para o tipo de atribuição, selecione **Disponível com ou sem inscrição**.
 
     ![Atribuições de aplicações do Intune – adicionar grupo](./media/apps-inc-exl-assignments/apps-inc-exl-02.png)
-10. Selecione **Grupos Incluídos** para selecionar o grupo de utilizadores para o qual quer disponibilizar esta aplicação.
+8. Selecione **Grupos Incluídos** para selecionar o grupo de utilizadores para o qual quer disponibilizar esta aplicação.
 
     > [!NOTE]
     > Ao adicionar um grupo, se outro grupo já tiver sido incluído num determinado tipo de atribuição, a aplicação estará pré-selecionada e inalterável para outros tipos de atribuição de inclusão. O grupo que foi utilizado não poderá ser utilizado como um grupo incluído.
 
-11. Selecione **Sim** para disponibilizar esta aplicação para todos os utilizadores.
+9. Selecione **Sim** para disponibilizar esta aplicação para todos os utilizadores.
 
     ![Atribuições de aplicações do Intune – incluir grupos](./media/apps-inc-exl-assignments/apps-inc-exl-03.png)
-12. Selecione **OK** para definir o grupo a incluir.
-13. Selecione **Grupos Excluídos** para selecionar os grupos de utilizadores para os quais não quer disponibilizar esta aplicação. 
-14. Selecione os grupos a excluir. Esta ação faz com que esta aplicação fique indisponível para esses grupos.
+10. Selecione **OK** para definir o grupo a incluir.
+11. Selecione **Grupos Excluídos** para selecionar os grupos de utilizadores para os quais não quer disponibilizar esta aplicação. 
+12. Selecione os grupos a excluir. Esta ação faz com que esta aplicação fique indisponível para esses grupos.
 
     ![Atribuições de aplicações do Intune – excluir grupos](./media/apps-inc-exl-assignments/apps-inc-exl-04.png)
-15. Selecione **Selecionar** para concluir a seleção de grupos.
-16. No painel **Adicionar grupo**, selecione **OK**. É apresentada a lista de **Atribuições** de aplicações.
-17. Clique em **Guardar** para aplicar as suas atribuições de grupo à aplicação.
+13. Selecione **Selecionar** para concluir a seleção de grupos.
+14. No painel **Adicionar grupo**, selecione **OK**. É apresentada a lista de **Atribuições** de aplicações.
+15. Clique em **Guardar** para aplicar as suas atribuições de grupo à aplicação.
 
 Quando realizar atribuições de grupo, os grupos que já tiverem sido atribuídos não estarão disponíveis para serem modificados. Se quiser selecionar um grupo que esteja atualmente indisponível, primeiro remova a aplicação da lista de atribuições. 
 

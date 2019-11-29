@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/04/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2cb247ec25b134fa9810a426be88b7fc90999394
-ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
+ms.openlocfilehash: 73848ee8301362f14fe2866a57329425d5e5cfbe
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73635413"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563670"
 ---
 # <a name="add-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Adicionar aplicativos do Office 365 a dispositivos Windows 10 com Microsoft Intune
 
@@ -49,11 +49,9 @@ Antes de poder atribuir, monitorizar, configurar ou proteger aplicações, tem d
 
 ## <a name="get-started"></a>Introdução
 
-1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. No painel **Intune**, selecione **Aplicações do cliente**.
-4. No painel da carga de trabalho **Aplicações do cliente**, em **Gerir**, selecione **Aplicações**.
-5. Selecione **Adicionar**.
-6. No painel **Adicionar aplicações**, na lista **Tipo de aplicação**, em **Conjunto de Aplicações do Office 365**, selecione **Windows 10**.
+1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **aplicativos** > **todos os aplicativos** > **Adicionar**.
+3. No painel **Adicionar aplicações**, na lista **Tipo de aplicação**, em **Conjunto de Aplicações do Office 365**, selecione **Windows 10**.
 
 ## <a name="select-settings-format"></a>Selecionar formato de configurações
 
@@ -61,13 +59,13 @@ Você pode escolher um método para definir a configuração do aplicativo selec
 - Designer de configuração
 - Introduzir dados XML
 
-Quando você escolher o **Designer de configuração** , a folha **Adicionar aplicativo** será alterada para oferecer duas opções de configurações adicionais:
+Quando você escolher o **Designer de configuração** , o painel **Adicionar aplicativo** será alterado para oferecer duas opções de configurações adicionais:
 - Configurar pacote de aplicativos
 - Configurações do pacote de aplicativos
 
 <img alt="Add Office 365 - Configuration designer" src="./media/apps-add-office365/apps-add-office365-02.png" width="700">
 
-Ao escolher **inserir dados XML** , adicione a folha **Adicionar aplicativo** com exibir a opção **inserir dados XML** . Selecione para exibir a folha do **arquivo de configuração** . 
+Quando você escolhe **inserir dados XML** , o painel **Adicionar aplicativo** exibe a opção **inserir dados XML** . Selecione para exibir o painel **arquivo de configuração** . 
 
 ![Adicionar o designer de configuração do Office 365](./media/apps-add-office365/apps-add-office365-01.png)
     
@@ -94,7 +92,7 @@ Neste passo, vai fornecer as informações acerca do conjunto de aplicações. E
 
 ## <a name="configure-app-suite"></a>Configurar pacote de aplicativos
 
-Se você tiver selecionado a opção **Designer de configuração** na caixa suspensa **formato de configuração** , verá a opção **Configurar pacote de aplicativos** na folha **Adicionar aplicativo** . Selecione as aplicações do Office que quer atribuir aos dispositivos.
+Se você tiver selecionado a opção **Designer de configuração** na caixa suspensa **formato de configuração** , verá a opção **Configurar pacote de aplicativos** no painel **Adicionar aplicativo** . Selecione as aplicações do Office que quer atribuir aos dispositivos.
 
 1. No painel **Adicionar Aplicação**, selecione **Configurar Conjunto de Aplicações**.
 2. No painel **Configurar Conjunto de Aplicações**, selecione as aplicações padrão do Office que quer atribuir aos dispositivos.  
@@ -103,7 +101,7 @@ Se você tiver selecionado a opção **Designer de configuração** na caixa sus
 
 ## <a name="configure-app-suite-settings"></a>Definir configurações do pacote de aplicativos
 
-Se você tiver selecionado a opção **Designer de configuração** na caixa suspensa **formato de configuração** , verá a opção configurações do pacote de **aplicativos** na folha **Adicionar aplicativo** . Neste passo, configure as opções de instalação do conjunto de aplicações. As definições aplicam-se a todas as aplicações que adicionou ao conjunto.
+Se você tiver selecionado a opção **Designer de configuração** na caixa suspensa **formato de configuração** , verá a opção configurações do pacote de **aplicativos** no painel **Adicionar aplicativo** . Neste passo, configure as opções de instalação do conjunto de aplicações. As definições aplicam-se a todas as aplicações que adicionou ao conjunto.
 
 1. No painel **Adicionar Aplicação**, selecione **Definições do Conjunto de Aplicações**.
 2. No painel **Definições do Conjunto de Aplicações**, faça o seguinte:
@@ -126,7 +124,7 @@ Se você tiver selecionado a opção **Designer de configuração** na caixa sus
     - **Aceitar automaticamente o contrato de licença do utilizador final**: selecione esta opção se não precisar que os utilizadores finais aceitem o contrato de licença. O Intune irá aceitar automaticamente o contrato.
     - **Utilizar a ativação de computadores partilhados**:selecione esta opção quando existirem múltiplos utilizadores a partilhar um computador. Para obter mais informações, veja [Overview of shared computer activation for Office 365](https://docs.microsoft.com/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus)(Descrição geral da ativação de computadores partilhados para o Office 365).
     - **Idiomas**: o Office é instalado automaticamente em qualquer dos idiomas suportados que vierem instalados com o Windows no dispositivo dos utilizadores finais. Selecione esta opção se quiser instalar idiomas adicionais no conjunto de aplicações. <p></p>
-    Pode implementar idiomas adicionais para aplicações do Office 365 Pro Plus geridas através do Intune. A lista de idiomas disponíveis inclui o **Tipo** do pacote de idiomas (núcleo, parcial e verificação). No portal do Azure, selecione **Microsoft Intune** > **Aplicações do cliente** > **Aplicações** > **Adicionar**. Na lista **Tipo de aplicação**, no painel **Adicionar aplicação**, selecione **Windows 10** em **Office 365 Suite**. Selecione **Idiomas** no painel **Definições do Conjunto de Aplicações**. Para obter informações adicionais, veja [Descrição geral da implementação de idiomas no Office 365 ProPlus](https://docs.microsoft.com/deployoffice/overview-of-deploying-languages-in-office-365-proplus).
+    Pode implementar idiomas adicionais para aplicações do Office 365 Pro Plus geridas através do Intune. A lista de idiomas disponíveis inclui o **Tipo** do pacote de idiomas (núcleo, parcial e verificação). Na portal do Azure, selecione **Microsoft Intune** > **aplicativos** > **todos os aplicativos** > **Adicionar**. Na lista **tipo de aplicativo** do painel **Adicionar aplicativo** , selecione **Windows 10** no **pacote do Office 365**. Selecione **idiomas** no painel **configurações do pacote de aplicativos** . Para obter informações adicionais, veja [Descrição geral da implementação de idiomas no Office 365 ProPlus](https://docs.microsoft.com/deployoffice/overview-of-deploying-languages-in-office-365-proplus).
 
 ## <a name="select-scope-tags-optional"></a>Selecionar marcas de escopo (opcional)
 Você pode usar marcas de escopo para determinar quem pode ver as informações do aplicativo cliente no Intune. Para obter detalhes completos sobre marcas de escopo, consulte [usar o controle de acesso baseado em função e marcas de escopo para distribuí-lo](../fundamentals/scope-tags.md).
@@ -138,7 +136,7 @@ Você pode usar marcas de escopo para determinar quem pode ver as informações 
 
 ## <a name="enter-xml-format"></a>Inserir formato XML
 
-Se você tiver selecionado a opção **inserir dados XML** na caixa suspensa **formato de configuração** , verá a opção **Inserir formato XML** na folha **Adicionar aplicativo** . Para obter mais informações, consulte [Opções de configuração para a ferramenta de implantação do Office](https://docs.microsoft.com/DeployOffice/configuration-options-for-the-office-2016-deployment-tool).
+Se você tiver selecionado a opção **inserir dados XML** na caixa suspensa **formato de configuração** , verá a opção **Inserir formato XML** no painel **Adicionar aplicativo** . Para obter mais informações, consulte [Opções de configuração para a ferramenta de implantação do Office](https://docs.microsoft.com/DeployOffice/configuration-options-for-the-office-2016-deployment-tool).
 
 ## <a name="finish-up"></a>Concluir
 
@@ -188,7 +186,7 @@ Depois de concluir que a infraestrutura de rede e o Intune funcionam conforme o 
   [O Office instalado com Clique para executar e Windows Installer no mesmo computador não é suportado](https://support.office.com/article/office-installed-with-click-to-run-and-windows-installer-on-same-computer-isn-t-supported-30775ef4-fa77-4f47-98fb-c5826a6926cd)
 - O usuário de conexão deve ter permissão para instalar aplicativos no dispositivo.
 - Confirme se não há nenhum problema com base no log do Windows Visualizador de Eventos **logs do windows** -> **aplicativos**.
-- Capture logs detalhados de instalação do Office durante a instalação. Para tal, siga estes passos:<br>
+- Capture logs detalhados de instalação do Office durante a instalação. Para fazer isso, siga estas etapas:<br>
     1. Ative o log detalhado para a instalação do Office nos computadores de destino. Para fazer isso, execute o seguinte comando para modificar o registro:<br>
         `reg add HKLM\SOFTWARE\Microsoft\ClickToRun\OverRide /v LogLevel /t REG_DWORD /d 3`<br>
     2. Implante o pacote do Office 365 nos dispositivos de destino novamente.<br>
@@ -205,7 +203,7 @@ A seguinte tabela lista códigos de erro comuns que poderá encontrar e o seu si
 
 ### <a name="status-for-office-csp"></a>Estado do CSP do Office
 
-| Estado | Fase | Descrição |
+| Estado | Fase | Description |
 |--------------------------------------------------|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1460 (ERROR_TIMEOUT) | Transferência | Falha ao transferir a Ferramenta de Implementação do Office |
 | 13 (ERROR_INVALID_DATA) | - | Não foi possível verificar a assinatura da Ferramenta de Implementação do Office transferida |

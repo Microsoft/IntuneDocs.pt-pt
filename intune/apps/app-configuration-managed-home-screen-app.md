@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/23/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e97e88ad78e1b914543b7fa283f47863dce185fc
-ms.sourcegitcommit: 25acfc88b366d2da71c37d354a0238e4f1168325
+ms.openlocfilehash: e86aeb3191c1cfdf2fc9dfab3a4474327b3fbb06
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72813468"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564213"
 ---
 # <a name="configure-the-microsoft-managed-home-screen-app-for-android-enterprise"></a>Configurar o aplicativo de tela inicial gerenciado pela Microsoft para Android Enterprise
 
@@ -31,12 +31,12 @@ A tela inicial gerenciada é o aplicativo usado para dispositivos Android Enterp
 
 ## <a name="when-to-configure-the-microsoft-managed-home-screen-app"></a>Quando configurar o aplicativo de tela inicial gerenciado pela Microsoft
 
-Normalmente, se as configurações estiverem disponíveis para você por meio da configuração do dispositivo, defina as configurações ali. Isso poupará tempo, minimizará erros e dará uma experiência de suporte do Intune melhor. No entanto, algumas das configurações da tela inicial gerenciada estão atualmente disponíveis apenas por meio da folha **políticas de configuração de aplicativo** no console do Intune. Use este documento para saber como definir as configurações diferentes usando o designer de configuração ou um script JSON. 
+Normalmente, se as configurações estiverem disponíveis para você por meio da configuração do dispositivo, defina as configurações ali. Isso poupará tempo, minimizará erros e dará uma experiência de suporte do Intune melhor. No entanto, algumas das configurações da tela inicial gerenciada estão atualmente disponíveis apenas por meio do painel **políticas de configuração de aplicativo** no console do Intune. Use este documento para saber como definir as configurações diferentes usando o designer de configuração ou um script JSON. 
 
 > [!NOTE]
-> Atualmente, ele é possível e pode ser avisado para definir os aplicativos listados e os links da Web fixados por meio de **aplicativos cliente** e **configuração de dispositivo**. Para obter a lista completa de configurações disponíveis na **configuração do dispositivo** que afeta a tela inicial gerenciada, consulte Configurações de [dispositivo dedicadas](../configuration/device-restrictions-android-for-work.md#dedicated-device-settings).  
+> Atualmente, ele é possível e pode ser avisado para definir os aplicativos listados como permitidos e links da Web fixados por meio de **aplicativos** e **configuração de dispositivo**. Para obter a lista completa de configurações disponíveis na **configuração do dispositivo** que afeta a tela inicial gerenciada, consulte Configurações de [dispositivo dedicadas](../configuration/device-restrictions-android-for-work.md#dedicated-device-settings).  
 
-Primeiro, navegue até o console do Intune em portal do Azure e vá para **aplicativos cliente** > **políticas de configuração de aplicativo**. Adicione uma política de configuração para **dispositivos gerenciados** que executam o **Android** e escolha a **tela inicial gerenciada** como o aplicativo associado. Clique em **definições de configuração** para definir as diferentes configurações de tela inicial gerenciada disponíveis. 
+Primeiro, navegue até o [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) e selecione **aplicativos** > **políticas de configuração de aplicativo**. Adicione uma política de configuração para **dispositivos gerenciados** que executam o **Android** e escolha a **tela inicial gerenciada** como o aplicativo associado. Clique em **definições de configuração** para definir as diferentes configurações de tela inicial gerenciada disponíveis. 
 
 ## <a name="choosing-a-configuration-settings-format"></a>Escolhendo um formato de definições de configuração
 
@@ -60,28 +60,28 @@ A tabela a seguir lista as chaves de configuração, os tipos de valor, os valor
 | Chave de configuração | Tipo de Valor | Valor Predefinido | Description |
 |---------------------------------------------------------------------------------------------------------------------------|-------------|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Definir tamanho da grade | cadeia | Automático | Permite definir o tamanho da grade para que os aplicativos sejam posicionados na tela inicial gerenciada. Você pode definir o número de linhas e colunas do aplicativo para definir o tamanho da grade no seguinte formato `columns;rows`. Se você definir o tamanho da grade, o número máximo de aplicativos que serão mostrados em uma linha na tela inicial será o número de linhas que você definiu e o número máximo de aplicativos que serão mostrados em uma coluna na tela inicial seria o número de colunas que você definiu. |
-| Habilitar notificação de notificações | bool | FOR | Habilita o crachá de notificação para ícones de aplicativo que mostra o número de novas notificações no aplicativo. Se você habilitar essa configuração, os usuários finais verão selos de notificação em aplicativos que têm notificações não lidas. Se você mantiver essa chave de configuração desabilitada, o usuário final não verá nenhuma notificação para aplicativos que possam ter notificações não lidas. |
-| Bloquear tela inicial | bool | TRUE | Remove a capacidade do usuário final de mover os ícones do aplicativo na tela inicial. Se você habilitar essa chave de configuração, os ícones do aplicativo na tela inicial serão bloqueados e o usuário final não poderá arrastar e soltar para diferentes posições de grade da tela inicial. Se for transformada em `false`, os usuários finais poderão se mover pelos ícones de aplicativo e weblink na tela inicial gerenciada.  |
+| Habilitar notificação de notificações | Bool | FOR | Habilita o crachá de notificação para ícones de aplicativo que mostra o número de novas notificações no aplicativo. Se você habilitar essa configuração, os usuários finais verão selos de notificação em aplicativos que têm notificações não lidas. Se você mantiver essa chave de configuração desabilitada, o usuário final não verá nenhuma notificação para aplicativos que possam ter notificações não lidas. |
+| Bloquear tela inicial | Bool | TRUE | Remove a capacidade do usuário final de mover os ícones do aplicativo na tela inicial. Se você habilitar essa chave de configuração, os ícones do aplicativo na tela inicial serão bloqueados e o usuário final não poderá arrastar e soltar para diferentes posições de grade da tela inicial. Se for transformada em `false`, os usuários finais poderão se mover pelos ícones de aplicativo e weblink na tela inicial gerenciada.  |
 | Definir papel de parede do dispositivo | cadeia | Os | Permite definir um papel de parede de sua escolha digitando a URL da imagem que você deseja definir como um papel de parede. |
 | Definir o tamanho do ícone do aplicativo | número inteiro | 2 | Permite definir o tamanho do ícone para os aplicativos exibidos na tela inicial. Você pode escolher os seguintes valores nessa configuração para tamanhos diferentes-0 (menor), 1 (pequeno), 2 (regular), 3 (grande) e 4 (maior). |
 | Definir ícone de pasta de aplicativo | número inteiro | 0 | Permite que você defina a aparência das pastas de aplicativo na tela inicial. Você pode escolher a aparência dos seguintes valores: quadrado escuro (0);   Círculo escuro (1); Quadrado claro (2); Círculo claro (3). |
 | Definir orientação da tela | número inteiro | 1 | Permite definir a orientação da tela inicial como modo retrato, modo paisagem ou permitir giro automático. Você pode definir a orientação inserindo os valores 1 (para o modo retrato), 2 (para o modo paisagem), 3 (para rotação automática). |
-| Habilitar telemetria do dispositivo | bool | FOR | Habilita toda a telemetria que está sendo capturada para a tela inicial gerenciada. Se você habilitar isso, a Microsoft poderá capturar a telemetria de uso do dispositivo, como o número de vezes que um determinado aplicativo é iniciado nesse dispositivo. |
+| Habilitar telemetria do dispositivo | Bool | FOR | Habilita toda a telemetria que está sendo capturada para a tela inicial gerenciada. Se você habilitar isso, a Microsoft poderá capturar a telemetria de uso do dispositivo, como o número de vezes que um determinado aplicativo é iniciado nesse dispositivo. |
 | Definir os aplicativos listados como permitidos | bundleArray | FOR | Permite que você defina o conjunto de aplicativos visíveis na tela inicial de entre os aplicativos instalados no dispositivo. Você pode definir os aplicativos inserindo o nome do pacote de aplicativo dos aplicativos que você gostaria de tornar visíveis, por exemplo, com. Microsoft. emmx tornaria as configurações acessíveis na tela inicial. Os aplicativos que você permite-listar nesta seção já devem estar instalados no dispositivo para que fiquem visíveis na tela inicial. |
 | Definir links da Web fixados | bundleArray | FOR | Permite que você fixe sites como ícones de início rápido na tela inicial. Com essa configuração, você pode definir a URL e adicioná-la à tela inicial para o usuário final iniciar no navegador com um único toque. |
-| Habilitar proteção de tela | bool | FOR | Para habilitar o modo de proteção de tela ou não. Se definido como true, você pode configurar **screen_saver_image**, **screen_saver_show_time**, **inactive_time_to_show_screen_saver**e **media_detect_screen_saver**. |
+| Habilitar proteção de tela | Bool | FOR | Para habilitar o modo de proteção de tela ou não. Se definido como true, você pode configurar **screen_saver_image**, **screen_saver_show_time**, **inactive_time_to_show_screen_saver**e **media_detect_screen_saver**. |
 | Imagem de proteção de tela | cadeia |   | Defina a URL da imagem de proteção de tela. Se nenhuma URL for definida, os dispositivos mostrarão a imagem de proteção de tela padrão quando a proteção de tela for ativada. A imagem padrão mostra o ícone do aplicativo de tela inicial gerenciado.  |
 | Proteção de tela mostrar hora | número inteiro | 0 | Fornece a opção para definir a quantidade de tempo em segundos que o dispositivo exibirá a proteção de tela durante o modo de proteção de tela. Se definido como 0, a proteção de tela será mostrada no modo de proteção de tela indefinidamente até que o dispositivo se torne ativo.  |
 | Tempo inativo para habilitar a proteção de tela | número inteiro | 30 | O número de segundos que o dispositivo fica inativo antes de disparar a proteção de tela. Se definido como 0, o dispositivo nunca entrará no modo de proteção de tela. |
-| Detecção de mídia antes de mostrar a proteção de tela | bool | TRUE | Escolha se a tela do dispositivo deverá mostrar a proteção de tela se o áudio/vídeo estiver sendo reproduzido no dispositivo. Se definido como true, o dispositivo não reproduzirá áudio/vídeo, independentemente do valor em **inactive_time_to_show_scree_saver**. Se definido como false, a tela do dispositivo mostrará a proteção de tela de acordo com o valor definido em **inactive_time_to_show_screen_saver**.   |
-| Botão habilitar página inicial virtual | bool | FOR | Mude essa configuração para `True` para permitir que o usuário final tenha acesso a um botão Home da tela inicial gerenciada que retornará o usuário para a tela inicial gerenciada da tarefa atual em que eles estão.  |
-| Tipo de botão de página inicial virtual | cadeia | swipe_up | Use **swipe_up** para acessar o botão página inicial com um gesto de deslizar para cima. Use **float** para acessar um botão doméstico permanente e persistente que pode ser movido pela tela pelo usuário final. |
-| Barra de indicadores de intensidade de sinal e bateria | bool | Verdadeiro  | A desativação dessa configuração para `True` mostra a barra de indicadores de intensidade de sinal e bateria. |
+| Detecção de mídia antes de mostrar a proteção de tela | Bool | TRUE | Escolha se a tela do dispositivo deverá mostrar a proteção de tela se o áudio/vídeo estiver sendo reproduzido no dispositivo. Se definido como true, o dispositivo não reproduzirá áudio/vídeo, independentemente do valor em **inactive_time_to_show_scree_saver**. Se definido como false, a tela do dispositivo mostrará a proteção de tela de acordo com o valor definido em **inactive_time_to_show_screen_saver**.   |
+| Botão habilitar página inicial virtual | Bool | FOR | Mude essa configuração para `True` para permitir que o usuário final tenha acesso a um botão Home da tela inicial gerenciada que retornará o usuário para a tela inicial gerenciada da tarefa atual em que eles estão.  |
+| Tipo de botão de página inicial virtual | cadeia | swipe_up | Use **swipe_up** botão para acessar a página inicial com um gesto de deslizar para cima. Use **float** para acessar um botão doméstico permanente e persistente que pode ser movido pela tela pelo usuário final. |
+| Barra de indicadores de intensidade de sinal e bateria | Bool | Verdadeiro  | A desativação dessa configuração para `True` mostra a barra de indicadores de intensidade de sinal e bateria. |
 | Sair da senha do modo de tarefa de bloqueio | cadeia |   | Insira um código de 4-6 dígitos a ser usado para descartar temporariamente o modo de tarefa de bloqueio para solução de problemas. |
-| Mostrar configuração de Wi-Fi | bool | FOR | A desativação dessa configuração para `True` permite que o usuário final ligue ou desative o Wi-Fi ou conecte-se a redes Wi-Fi diferentes.  |
-| Mostrar configuração de Bluetooth | bool | FOR | A desativação dessa configuração para `True` permite que o usuário final ative ou desative o Bluetooth e se conecte a diferentes dispositivos compatíveis com Bluetooth.   |
-| Os aplicativos na pasta são ordenados por nome | bool | TRUE | A desativação dessa configuração para `False` permite que os itens em uma pasta apareçam na ordem em que são especificados. Caso contrário, eles serão exibidos na pasta em ordem alfabética.   |
-| Pedido de aplicativo habilitado | bool | FOR | A desativação dessa configuração para `True` permite que a capacidade de definir a ordem dos aplicativos, Weblinks e pastas na tela inicial gerenciada. Uma vez habilitado, defina a ordenação com **app_order**. o usuário final ativar ou desativar o Bluetooth e conectar-se a dispositivos compatíveis com Bluetooth diferentes.   |
+| Mostrar configuração de Wi-Fi | Bool | FOR | A desativação dessa configuração para `True` permite que o usuário final ligue ou desative o Wi-Fi ou se conecte a redes Wi-Fi diferentes.  |
+| Mostrar configuração de Bluetooth | Bool | FOR | A desativação dessa configuração para `True` permite que o usuário final ative ou desative o Bluetooth e se conecte a diferentes dispositivos compatíveis com Bluetooth.   |
+| Os aplicativos na pasta são ordenados por nome | Bool | TRUE | A desativação dessa configuração para `False` permite que os itens em uma pasta apareçam na ordem em que são especificados. Caso contrário, eles serão exibidos na pasta em ordem alfabética.   |
+| Pedido de aplicativo habilitado | Bool | FOR | A desativação dessa configuração para `True` permite que a capacidade de definir a ordem dos aplicativos, Weblinks e pastas na tela inicial gerenciada. Uma vez habilitado, defina a ordenação com **app_order**. o usuário final ativar ou desativar o Bluetooth e conectar-se a diferentes dispositivos compatíveis com Bluetooth.   |
 | Ordem do aplicativo | bundleArray | FOR | Permite que você especifique a ordem dos aplicativos, Weblinks e pastas na tela inicial gerenciada. Para usar essa configuração, a **tela bloquear página inicial** deve ser habilitada, **definir o tamanho da grade** deve ser definido e a ordem do **aplicativo habilitada** deve ser definida como `True`.   |
 
 ## <a name="enter-json-data"></a>Inserir dados JSON

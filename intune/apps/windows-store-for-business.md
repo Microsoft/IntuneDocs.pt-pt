@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/06/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 04bc1fac8d3362a173c4777cdf5228fed6b6349d
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: 3c1627ba89ad50b2053187a20fee6cbc7a9064e8
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73712531"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74562502"
 ---
 # <a name="how-to-manage-volume-purchased-apps-from-the-microsoft-store-for-business-with-microsoft-intune"></a>Como gerenciar aplicativos comprados por volume da Microsoft Store para empresas com o Microsoft Intune
 
@@ -51,7 +51,7 @@ Antes de iniciar a sincronização e a atribuição de aplicações da Loja Micr
 - Para utilizar esta funcionalidade, os dispositivos têm de ser associados aos Active Directory Domain Services ou à área de trabalho.
 - Os dispositivos inscritos têm de utilizar a versão 1511 do Windows 10 ou posterior.
 
-Além disso, as aplicações Licenciadas Offline e os conjuntos relacionados sincronizados a partir da Microsoft Store para Empresas serão consolidados numa única entrada de aplicação na IU. Todos os detalhes da implementação dos pacotes individuais serão migrados para uma única entrada. Para ver os conjuntos relacionados no portal do Azure, selecione **Licenças de aplicação** no painel **Aplicações do cliente**.
+Além disso, as aplicações Licenciadas Offline e os conjuntos relacionados sincronizados a partir da Microsoft Store para Empresas serão consolidados numa única entrada de aplicação na IU. Todos os detalhes da implementação dos pacotes individuais serão migrados para uma única entrada. Para exibir conjuntos relacionados no portal do Azure, selecione **licenças de aplicativo** no painel **aplicativos** .
 
 ## <a name="associate-your-microsoft-store-for-business-account-with-intune"></a>Associar a sua conta da Loja Microsoft para Empresas ao Intune
 Antes de ativar a sincronização na consola do Intune, tem de configurar a conta da loja para utilizar o Intune como ferramenta de gestão:
@@ -66,17 +66,16 @@ Agora, pode continuar e configurar a sincronização na consola do Intune.
 
 ## <a name="configure-synchronization"></a>Configurar a sincronização
 
-1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. No painel **Intune**, selecione **Aplicações do cliente**.
-1. No painel **Aplicações do cliente**, selecione **Configurar** > **Microsoft Store para Empresas**.
-2. Clique em **Ativar**.
-3. Se ainda não o fez, clique na ligação para se inscrever na Loja Microsoft para Empresas e associe a sua conta conforme explicado anteriormente.
+1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **Administração de locatários** > **conectores e tokens** > **Microsoft Store para negócios**.
+3. Clique em **Ativar**.
+4. Se ainda não o fez, clique na ligação para se inscrever na Loja Microsoft para Empresas e associe a sua conta conforme explicado anteriormente.
 5. Na lista pendente **Idioma**, selecione o idioma no qual as aplicações da Microsoft Store para Empresas são apresentadas no portal do Azure. Independentemente do idioma em que são apresentadas, serão instaladas no idioma do utilizador final, se estiver disponível.
 6. Clique em **Sincronização** para obter as aplicações que comprou na Loja Microsoft para o Intune.
 
 ## <a name="synchronize-apps"></a>Sincronizar aplicações
 
-1. Na carga de trabalho **Aplicações do cliente**, selecione **Configurar** > **Microsoft Store para Empresas**.
+1. Selecione **Administração de locatários** > **conectores e tokens** > **Microsoft Store para negócios**.
 2. Clique em **Sincronização** para obter as aplicações que comprou na Loja Microsoft para o Intune.
 
 > [!NOTE]

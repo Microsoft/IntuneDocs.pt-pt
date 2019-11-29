@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/23/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 56814550cae814bd89d55a6f72df98dd24df4caf
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 09b4cfad0490f35a85e4c72b937b2ba5c0472030
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507460"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564347"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>O que é a gestão de aplicações do Microsoft Intune?
 
@@ -76,14 +76,14 @@ O Intune oferece várias funcionalidades para o ajudar a obter as aplicações d
 
 ## <a name="get-started"></a>Introdução
 
-Pode encontrar a maior parte das informações relacionadas com aplicações na carga de trabalho **Aplicações do Cliente**, à qual pode aceder da seguinte forma:
+Você pode encontrar a maioria das informações relacionadas ao aplicativo na carga de trabalho **aplicativos** , que você pode acessar fazendo o seguinte:
 
-1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. No painel **Microsoft Intune**, selecione **Aplicações do cliente**.
+1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+3. Selecione **aplicativos**.
 
-    ![O painel da carga de trabalho "Aplicações do cliente"](./media/app-management/apps-workload.png)
+    ![O painel de carga de trabalho aplicativos](./media/app-management/apps-workload.png)
 
-As próximas quatro secções descrevem as opções disponíveis no painel **Aplicações do cliente**.
+As próximas quatro seções descrevem as opções disponíveis no painel de **aplicativos** .
 
 ### <a name="manage"></a>Gerir o Endpoint Protection do
 - **Aplicações**: selecione esta opção para adicionar, ver, atribuir e monitorizar as aplicações que a sua força de trabalho utiliza. Para obter mais informações, consulte:

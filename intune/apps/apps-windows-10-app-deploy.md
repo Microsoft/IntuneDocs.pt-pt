@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/02/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c8ce24081eae1808d3db0c5078026b306fd209d5
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: c9d792bd07ae8d7d712748874d64314dd258c5e8
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507251"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563950"
 ---
 # <a name="windows-10-app-deployment-by-using-microsoft-intune"></a>Implantação de aplicativo do Windows 10 usando Microsoft Intune 
 
@@ -51,9 +51,10 @@ Microsoft Store para aplicativos de negócios são aplicativos modernos, adquiri
 ### <a name="categorize-microsoft-store-for-business-apps"></a>Categorizar Microsoft Store para aplicativos de negócios 
 Para categorizar Microsoft Store para aplicativos de negócios: 
 
-1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selecione **aplicativos cliente** > **aplicativos**. Selecione um Microsoft Store para o aplicativo de negócios. Em seguida, selecione **informações do aplicativo** > **categoria**. 
-3. Selecione uma categoria.
+1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **aplicativos** > **todos os aplicativos**. 
+3. Selecione um Microsoft Store para o aplicativo de negócios. Em seguida, selecione **propriedades** > **informações do aplicativo** > **categoria**. 
+4. Selecione uma categoria.
 
 ## <a name="install-apps-on-windows-10-devices"></a>Instalar aplicativos em dispositivos Windows 10
 Dependendo do tipo de aplicativo, você pode instalar o aplicativo em um dispositivo Windows 10 de uma das duas maneiras:

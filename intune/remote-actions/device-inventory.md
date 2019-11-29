@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 918468bf8948ce54082f3fccc0325db07e116966
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: 5a3081ece10bb25c6381f4a8f891152433bc9661
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73713197"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564386"
 ---
 # <a name="see-device-details-in-intune"></a>Consultar os detalhes do dispositivo no Intune
 
@@ -57,7 +57,7 @@ Dependendo da operadora usada pelos dispositivos, nem todos os detalhes podem se
 > [!Note]  
 > O inventário de hardware e software é atualizado no serviço do Intune a cada 7 dias.
 
-|Detalhes|Description|Platform| 
+|detalhes|Description|Platform| 
 |--------------|----------------------|----|  
 |Nome|O nome do dispositivo.|Windows, iOS|
 |Nome da gestão|O nome do dispositivo utilizado apenas na consola. Alterar este nome não irá alterar o nome no dispositivo.|Windows, iOS|
@@ -84,7 +84,7 @@ Dependendo da operadora usada pelos dispositivos, nem todos os detalhes podem se
 |ICCID|O Identificador de Cartão de Circuito Integrado, que é o número de identificação exclusivo de um cartão SIM.|Windows, iOS, Android|
 |Data de inscrição|A data e hora em que o dispositivo foi inscrito no Intune.|Windows, iOS, Android|
 |Último contacto|A data e hora em que o dispositivo foi ligado pela última vez ao Intune.|Windows, iOS, Android|
-|Código para ignorar o bloqueio de ativação|O código que pode ser utilizado para ignorar o bloqueio de ativação.|Windows, iOS, Android|
+|Código para ignorar o bloqueio de ativação|O código que pode ser utilizado para ignorar o bloqueio de ativação.|iOS|
 |Azure AD registado|Se definido como **Sim**, o dispositivo é registado com o Azure Directory.|Windows, iOS, Android|
 |Registrado no Intune|Se **Sim**, o dispositivo está registrado no Intune|Windows, iOS, Android|
 |Conformidade|O estado de conformidade do dispositivo.|Windows, iOS, Android|

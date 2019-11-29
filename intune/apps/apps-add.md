@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/18/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ecde59d81ebeba7de64f2693eecb576faac6e722
-ms.sourcegitcommit: 15e099a9a1e18296580bb345610aee7cc4acd126
+ms.openlocfilehash: def975bc646a96a77646ac9103079b1f008f9c28
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74164711"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564060"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Adicionar aplicações ao Microsoft Intune 
 
@@ -72,7 +72,7 @@ A tabela seguinte apresenta uma lista dos tipos de aplicações específicos e c
 
 <sup>1</sup> Para obter mais informações sobre o Android Enterprise e os perfis de trabalho Android, veja [Compreender as aplicações licenciadas](apps-add.md#understanding-licensed-apps) abaixo.
 
-Pode adicionar uma aplicação no Microsoft Intune ao selecionar **Aplicações do cliente** > **Aplicações** > **Adicionar**. O painel **Adicionar aplicação** é apresentado e permite-lhe selecionar o **Tipo de aplicação**. 
+Você pode adicionar um aplicativo em Microsoft Intune selecionando **aplicativos** > **todos os aplicativos** > **Adicionar**. O painel **Adicionar aplicação** é apresentado e permite-lhe selecionar o **Tipo de aplicação**. 
 
 >[!TIP]
 > Uma aplicação LOB é uma aplicação que adiciona a partir de um ficheiro de instalação da aplicação. Por exemplo, para instalar uma aplicação LOB iOS, tem de adicionar a aplicação ao selecionar **Aplicação de linha de negócio** como o **Tipo de aplicação** no painel **Adicionar aplicação**. Em seguida, selecione o ficheiro de pacote de aplicação (extensão .ipa). Normalmente, estes tipos de aplicações são escritos internamente.
@@ -159,9 +159,8 @@ As categorias de aplicações podem ser utilizadas para o ajudar a ordenar as ap
 
 Quando adiciona uma aplicação ao Intune, é-lhe dada a opção de selecionar a categoria que quiser. Utilize os tópicos das plataformas específicas para adicionar uma aplicação e atribuir categorias. Para criar e editar as suas próprias categorias, utilize o seguinte procedimento:
 
-1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. No painel **Intune**, selecione **Aplicações do cliente**.
-4. No painel de carga de trabalho **Aplicações do cliente**, em **Configuração**, selecione **Categorias de aplicações**.  
+1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+3. Selecione **aplicativos** > **categorias de aplicativo**.  
     O painel **Categorias de aplicações** apresenta uma lista de categorias atuais. 
 5. Realize um dos seguintes procedimentos:
     - Para adicionar uma categoria, no painel **Criar categoria**, selecione **Adicionar** e, em seguida, introduza um nome para a categoria.  
