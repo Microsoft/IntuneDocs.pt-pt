@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/21/2019
+ms.date: 12/02/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9acad2e8539da7210c349ffb254af62f370af5f6
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 6ed04c1bf135793da9cece9debc2c7cdd481601a
+ms.sourcegitcommit: f26039d674eb4d61ab68264dd1a10b2e5e1d842c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390975"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74691683"
 ---
 # <a name="add-a-property-list-file-to-macos-devices-using-microsoft-intune"></a>Adicionar um arquivo de lista de propriedades a dispositivos macOS usando Microsoft Intune
 
@@ -48,7 +48,7 @@ Estas definições são adicionadas a um perfil de configuração do dispositivo
 - Somente alguns aplicativos funcionam com as preferências gerenciadas e podem não permitir que você gerencie todas as configurações.
 - Certifique-se de carregar os arquivos de lista de propriedades que direcionam as configurações de canal do dispositivo, não as configurações de canal do usuário Os arquivos de lista de propriedades direcionam todo o dispositivo.
 
-## <a name="preference-file"></a>Arquivo de preferência
+## <a name="preference-file"></a>Ficheiro de preferência
 
 - **Nome de domínio de preferência**: os arquivos de lista de propriedades são normalmente usados para navegadores da Web (Microsoft Edge), [proteção avançada contra ameaças do Microsoft defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-mac)e aplicativos personalizados. Quando você cria um domínio de preferência, uma ID de pacote também é criada. Insira a ID do pacote, como `com.company.application`. Por exemplo, digite `com.Contoso.applicationName`, `com.Microsoft.Edge` ou `com.microsoft.wdav`.
 - **Arquivo de lista de propriedades**: selecione o arquivo de lista de propriedades associado ao seu aplicativo. Certifique-se de que seja um arquivo `.plist` ou `.xml`. Por exemplo, carregue um arquivo de `YourApp-Manifest.plist` ou `YourApp-Manifest.xml`.
@@ -56,6 +56,8 @@ Estas definições são adicionadas a um perfil de configuração do dispositivo
 
 Selecione **OK** > **Criar** para guardar as alterações. O perfil é criado e mostrado na lista de perfis.
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Próximos passos
 
 O perfil está criado, mas ainda não está ativo. Em seguida, [atribua o perfil](device-profile-assign.md) e [monitorize o estado](device-profile-monitor.md).
+
+Para obter mais informações sobre arquivos de preferência para o Microsoft Edge, consulte [definir configurações de política do Microsoft Edge no MacOS](https://docs.microsoft.com/deployedge/configure-microsoft-edge-on-mac).

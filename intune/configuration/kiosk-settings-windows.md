@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/13/2019
+ms.date: 12/02/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 42ccb1d1654ba45b63672eebf00acd10fdc56a67
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: 80da0e6952c5aaab6fa8146b2d91d32259966d5d
+ms.sourcegitcommit: f26039d674eb4d61ab68264dd1a10b2e5e1d842c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059345"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74691728"
 ---
 # <a name="windows-10-and-later-device-settings-to-run-as-a-kiosk-in-intune"></a>Configurações do dispositivo Windows 10 e posterior para execução como um quiosque no Intune
 
@@ -67,7 +67,7 @@ Executa apenas um aplicativo no dispositivo.
     Para obter mais informações sobre essas opções, consulte [implantar o modo de quiosque do Microsoft Edge](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-configuration-types).
 
     > [!NOTE]
-    > Essa configuração habilita o navegador Microsoft Edge no dispositivo. Para definir configurações específicas do Microsoft Edge, crie um perfil de configuração de dispositivo (**configuração do dispositivo** > **perfis** > **Criar perfil** > **Windows 10** para plataforma > **restrições de dispositivo**  >  **navegador Microsoft Edge**). O [navegador Microsoft Edge](device-restrictions-windows-10.md#microsoft-edge-browser) lista e descreve as configurações disponíveis.
+    > Essa configuração habilita o navegador Microsoft Edge no dispositivo. Para definir configurações específicas do Microsoft Edge, crie um perfil de configuração de dispositivo (**configuração de dispositivo** > **perfis** > **Criar perfil** > **Windows 10** para plataforma > **restrições de dispositivo** >  **navegador Microsoft Edge**). O [navegador Microsoft Edge](device-restrictions-windows-10.md#microsoft-edge-browser) lista e descreve as configurações disponíveis.
 
   - **Adicionar navegador de quiosque**: selecione **configurações do navegador de quiosque**. Estas definições controlam uma aplicação de browser no quiosque. Verifique se você obteve o [aplicativo de navegador de quiosque](https://businessstore.microsoft.com/store/details/kiosk-browser/9NGB5S5XG2KP) da loja, adicione-o ao Intune como um [aplicativo cliente](../apps/apps-add.md). Em seguida, atribua o aplicativo aos dispositivos de quiosque.
 
@@ -83,16 +83,17 @@ Executa apenas um aplicativo no dispositivo.
 
     - **Atualizar o browser após um tempo de inatividade**: introduza o período de tempo de inatividade (1-1440 minutos) necessário antes de o browser do quiosque reiniciar num estado novo. O tempo de inatividade é o número de minutos decorridos desde a última interação do utilizador. Por predefinição, o valor está vazio ou em branco, o que significa que não existe nenhum tempo limite de inatividade.
 
-    - **Sites permitidos**: utilize esta definição para permitir que determinados sites sejam abertos. Por outras palavras, utilize esta funcionalidade para restringir ou impedir determinados sites no dispositivo. Por exemplo, pode permitir que todos os sites em `http://contoso.com*` sejam abertos. Por predefinição, todos os sites são permitidos.
+    - **Sites permitidos**: utilize esta definição para permitir que determinados sites sejam abertos. Por outras palavras, utilize esta funcionalidade para restringir ou impedir determinados sites no dispositivo. Por exemplo, pode permitir que todos os sites em `http://contoso.com` sejam abertos. Por predefinição, todos os sites são permitidos.
 
-      Para permitir sites específicos, carregue um ficheiro que inclua uma lista dos sites permitidos em linhas separadas. Se não adicionar um ficheiro, todos os sites serão permitidos. O Intune dá suporte a `*` (asterisco) como um curinga.
+      Para permitir sites específicos, carregue um ficheiro que inclua uma lista dos sites permitidos em linhas separadas. Se não adicionar um ficheiro, todos os sites serão permitidos. Por padrão, o Intune dá suporte a curingas. Assim, quando você inserir o domínio, como `sharepoint.com`, permitirá que os subdomínios sejam automaticamente permitidos, como `contoso.sharepoint.com`, `my.sharepoint.com`e assim por diante.
 
       O seu ficheiro de exemplo deve ser semelhante à seguinte lista:
 
       `http://bing.com`  
       `https://bing.com`  
-      `http://contoso.com/*`  
-      `https://contoso.com/*`
+      `http://contoso.com`  
+      `https://contoso.com`  
+      `office.com`
 
     > [!NOTE]
     > Os quiosques do Windows 10 com o logon automático habilitado usando o navegador de quiosque da Microsoft devem usar uma licença offline da Microsoft Store para empresas. Esse requisito é porque o logon automático usa uma conta de usuário local sem credenciais de Azure Active Directory (AD). Portanto, as licenças online não podem ser avaliadas. Para obter mais informações, consulte [distribuir aplicativos offline](https://docs.microsoft.com/microsoft-store/distribute-offline-apps).
@@ -141,7 +142,7 @@ As aplicações neste modo estão disponíveis no menu Iniciar. Estas aplicaçõ
       Para obter mais informações sobre essas opções, consulte [implantar o modo de quiosque do Microsoft Edge](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-configuration-types).
 
       > [!NOTE]
-      > Essa configuração habilita o navegador Microsoft Edge no dispositivo. Para definir configurações específicas do Microsoft Edge, crie um perfil de configuração de dispositivo (**configuração do dispositivo** > **perfis** > **Criar perfil** > **Windows 10** para plataforma > **restrições de dispositivo**  >  **navegador Microsoft Edge**). O [navegador Microsoft Edge](device-restrictions-windows-10.md#microsoft-edge-browser) lista e descreve as configurações disponíveis.
+      > Essa configuração habilita o navegador Microsoft Edge no dispositivo. Para definir configurações específicas do Microsoft Edge, crie um perfil de configuração de dispositivo (**configuração de dispositivo** > **perfis** > **Criar perfil** > **Windows 10** para plataforma > **restrições de dispositivo** >  **navegador Microsoft Edge**). O [navegador Microsoft Edge](device-restrictions-windows-10.md#microsoft-edge-browser) lista e descreve as configurações disponíveis.
 
     - **Adicionar navegador de quiosque**: essas configurações controlam um aplicativo de navegador da Web no quiosque. Garanta que implementa uma aplicação de browser para os dispositivos de quiosque com as [Aplicações de Cliente](../apps/apps-add.md).
 
