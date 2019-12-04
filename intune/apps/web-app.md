@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 514977be976c83f5cd8dcb8d56ab5c232ff0d193
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 68e2e768067a88b8ae58adeb38c17d90ac995a30
+ms.sourcegitcommit: b752acefec077c719e169e665c955adb944e85c6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74562487"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74781231"
 ---
 # <a name="add-web-apps-to-microsoft-intune"></a>Adicionar aplicações Web ao Microsoft Intune
 
@@ -33,10 +33,13 @@ O Intune suporta uma variedade de tipos de aplicações, incluindo aplicações 
 
 Antes de poder gerir e atribuir uma aplicação aos utilizadores, adicione-a ao Intune. 
 
-O Intune cria um atalho para o aplicativo Web no dispositivo do usuário. Para dispositivos iOS, um atalho para o aplicativo Web é adicionado à tela inicial. Para dispositivos Android, um atalho para o aplicativo Web é adicionado ao widget portal da empresa do Intune e o widget precisa ser fixado manualmente pelo usuário. Para dispositivos Windows, um atalho para o aplicativo Web é colocado no menu iniciar.
+O Intune cria um atalho para o aplicativo Web no dispositivo do usuário. Para dispositivos iOS, um atalho para o aplicativo Web é adicionado à tela inicial. Para dispositivos de administrador de dispositivo Android, um atalho para o aplicativo Web é adicionado ao widget portal da empresa do Intune e o widget precisa ser fixado manualmente pelo usuário. Para dispositivos Windows, um atalho para o aplicativo Web é colocado no menu iniciar.
 
 > [!Note]
 > Um navegador deve ser instalado no dispositivo do usuário para iniciar aplicativos Web. 
+
+> [!Note]
+> Para dispositivos Android Enterprise, consulte [links da Web do Managed Google Play](apps-add-android-for-work.md#managed-google-play-web-links)
 
 ## <a name="add-a-web-app-to-intune"></a>Adicionar uma aplicação Web ao Intune
 Para adicionar uma aplicação ao Intune como um atalho para uma aplicação na Web, faça o seguinte:
@@ -62,8 +65,6 @@ Para adicionar uma aplicação ao Intune como um atalho para uma aplicação na 
 7. No painel **Adicionar aplicação**, selecione **Adicionar**.
 
 > [!Note]
-> Os utilizadores têm de adicionar o widget do Intune ao ecrã principal para apresentar aplicações Web que tenham sido atribuídas a dispositivos Android.
->
 > Atualmente, a implementação de aplicações Web do Intune em dispositivos iOS está associada ao perfil de gestão, pelo que não é possível removê-la manualmente. Pode alterar o tipo de implementação para **Desinstalar** no portal do Intune. Quando o fizer, poderá remover manualmente a implementação. No entanto, se remover a implementação antes de alterar a intenção de atribuição de aplicações para **Desinstalar**, a aplicação Web ficará permanentemente no dispositivo até que se proceda à anulação da inscrição do dispositivo no Intune.
 
 Os usuários finais podem iniciar aplicativos Web diretamente do aplicativo Windows Portal da Empresa selecionando o aplicativo Web e escolhendo a opção **abrir no navegador**. A URL da Web publicada é aberta diretamente no navegador da Web. 

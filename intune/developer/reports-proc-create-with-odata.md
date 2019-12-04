@@ -6,7 +6,7 @@ keywords: Armazém de Dados do Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/15/2019
+ms.date: 12/03/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d00ae284ff4ea911cecb571cfe765eafe32fac02
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 18815fb671e853bc0463fed750d40b80ccb285fb
+ms.sourcegitcommit: 78faf608510fbaca09bc410d63df1aa5254dee45
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72490474"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74784277"
 ---
 # <a name="create-an-intune-report-from-the-odata-feed-with-power-bi"></a>Criar um relatório do Intune a partir do feed OData com o Power BI
 
@@ -57,7 +57,7 @@ Instale a versão mais recente do Power BI Desktop. Pode transferir o Power BI D
 1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Abra o painel **data warehouse do Intune** selecionando o link data warehouse em **outras tarefas** no lado direito da folha **Microsoft Intune-visão geral** .
 3. Copie o URL do feed personalizado. Por exemplo: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
-4. Abra o Power BI Desktop.
+4. Abra o Power BI Desktop.
 5. Na menu de menus, selecione **arquivo** > **obter dados** > **feed OData**.
 6. Cole a URL de feed personalizada, que você copiou da etapa anterior, na caixa URL na janela **feed OData** .
 7. Selecione **Básico**.
@@ -69,7 +69,7 @@ Instale a versão mais recente do Power BI Desktop. Pode transferir o Power BI D
 
     ![Credenciais da conta escolar ou profissional](./media/reports-proc-create-with-odata/reports-create-02-org-account.png)
 
-10. Selecione **Ligar**. O Navegador será aberto e irá mostrar-lhe a lista de tabelas no Armazém de Dados do Intune.
+10. Selecione **conectar**. O Navegador será aberto e irá mostrar-lhe a lista de tabelas no Armazém de Dados do Intune.
 
     ![Captura de tela do navegador – a lista de tabelas de data warehouse](./media/reports-proc-create-with-odata/reports-create-02-loadentities.png)
 

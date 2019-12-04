@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b32893c231ae15591aa331bcf7699d9e624efd88
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: ba3b145c3a48992b1e8a01ad2cee4be60646df6f
+ms.sourcegitcommit: b752acefec077c719e169e665c955adb944e85c6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563680"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74781248"
 ---
 # <a name="ios-app-protection-policy-settings"></a>Definições de políticas de proteção de aplicações iOS
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -88,7 +88,7 @@ Existem algumas aplicações e serviços de plataforma isentos aos quais a polí
 | <ul><ui> **Selecionar comprimento mínimo do PIN** | Especifique o número mínimo de dígitos numa sequência de PIN.  | **4**  |
 | <ul><ui> **Touch ID em vez de PIN para acesso (iOS 8 e superior)** | Selecione **Permitir** para permitir que o utilizador utilize o [Touch ID](https://support.apple.com/HT201371) em vez de um PIN para aceder à aplicação.    | **Permitir**  |
 |<ul><ui><ul><ui>**substituir a ID de toque por Pin após o tempo limite**|  Para utilizar esta definição, selecione **Exigir** e, em seguida, configure o tempo limite de inatividade.  |**Exigir**  |
-| <ul><ui><ul><ui><ul><ui> **Tempo limite (minutos de inatividade)** |  Especifique um tempo em minutos após o qual o PIN de senha ou numérico (como configurado) substituirá o uso de uma impressão digital. Esse valor de tempo limite deve ser maior que o valor especificado em ' verificar novamente os requisitos de acesso após (minutos de inatividade) '.  |**máximo**  |
+| <ul><ui><ul><ui><ul><ui> **Tempo limite (minutos de inatividade)** |  Especifique um tempo em minutos após o qual um PIN de senha ou numérico (como configurado) substituirá o uso de uma impressão digital ou face como método de acesso. Esse valor de tempo limite deve ser maior que o valor especificado em ' verificar novamente os requisitos de acesso após (minutos de inatividade) '.  |**máximo**  |
 | <ul><ui><ul><ui>**ID de face em vez de PIN para acesso (Ios 11 +)** | Selecione **Ativar** para permitir que o utilizador utilize a tecnologia de reconhecimento facial para autenticar os utilizadores em dispositivos iOS. Se ativado, o Face ID tem de ser utilizado para aceder à aplicação num dispositivo compatível com Face ID.    | **Permitir**  |
 | <ul><ui>**Reposição do PIN após número de dias** | Selecione **Sim** para exigir que os utilizadores alterem o PIN da aplicação após um determinado período de tempo, em dias.  <br><br>Quando definido como *Sim*, configure o número de dias antes de ser exigida a reposição do PIN. |**Não**  |  
 | <ul><ui><ul><ui> **Número de dias** | Configure o número de dias antes de ser exigida a reposição do PIN.  |**90**  |

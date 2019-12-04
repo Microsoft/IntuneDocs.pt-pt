@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e81b8dc4938ea080018efae97093bb5e70dbcde8
-ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
+ms.openlocfilehash: a3a470c9a92f7792af2b371acf873807ad344afb
+ms.sourcegitcommit: b752acefec077c719e169e665c955adb944e85c6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74548024"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74781112"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>Configurar uma página de status de registro
  
@@ -200,7 +200,7 @@ Abaixo estão os problemas conhecidos.
 - Configurar o controle de aplicativo do Microsoft defender faz com que uma solicitação seja reinicializada durante o piloto automático. A configuração do aplicativo Microsoft defender (AppLocker CSP) requer uma reinicialização. Quando essa política é configurada, ela pode fazer com que um dispositivo seja reinicializado durante o piloto automático. Atualmente, não há como suprimir ou adiar a reinicialização.
 - Quando a política de DeviceLock (https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock) é habilitada como parte de um perfil ESP, o OOBE ou o usuário da área de trabalho de logon automático pode falhar unexpectantly por dois motivos.
   - Se o dispositivo não for reinicializado antes de sair da fase de instalação do dispositivo ESP, o usuário poderá ser solicitado a inserir suas credenciais do Azure AD. Esse prompt ocorre em vez de um logon automático bem-sucedido em que o usuário vê a animação do primeiro logon do Windows.
-  - O autologn falhará se o dispositivo for reinicializado depois que o usuário inserir suas credenciais do Azure AD, mas antes de sair da fase de instalação do dispositivo ESP. Essa falha ocorre porque a fase de instalação do dispositivo ESP nunca foi concluída. A solução alternativa é redefinir o dispositivo.
+  - O logon automático falhará se o dispositivo for reinicializado depois que o usuário inserir suas credenciais do Azure AD, mas antes de sair da fase de instalação do dispositivo ESP. Essa falha ocorre porque a fase de instalação do dispositivo ESP nunca foi concluída. A solução alternativa é redefinir o dispositivo.
 
 ## <a name="next-steps"></a>Próximos passos
 Depois de configurar as suas páginas de inscrição do Windows, saiba como gerir dispositivos Windows. Para obter mais informações, veja [O que é a gestão de dispositivos do Microsoft Intune?](../remote-actions/device-management.md)

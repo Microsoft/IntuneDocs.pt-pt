@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 36039334f7e93b66735e10d0ac2c5d80602e2b83
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: f0cd3dd71a5999b69e3f5c34ef4cc73fb3d6a938
+ms.sourcegitcommit: b752acefec077c719e169e665c955adb944e85c6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059863"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74781163"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-for-ios-devices-in-intune"></a>Configurar a VPN (rede virtual privada) por aplicativo para dispositivos iOS no Intune
 
@@ -37,6 +37,9 @@ Verifique a documentação do seu provedor de VPN para ver se sua VPN dá suport
 Este artigo mostra como criar um perfil de VPN por aplicativo e atribuir esse perfil aos seus aplicativos. Use estas etapas para criar uma experiência de VPN por aplicativo sem interrupções para seus usuários finais. Para a maioria das VPNs que dão suporte a VPN por aplicativo, o usuário abre um aplicativo e se conecta automaticamente à VPN.
 
 Algumas VPNs permitem a autenticação de nome de usuário e senha com VPN por aplicativo. Ou seja, os usuários precisam inserir um nome de usuário e senha para se conectar à VPN.
+
+> [!IMPORTANT]
+> A VPN por aplicativo não tem suporte para perfis VPN IKEv2 para iOS.
 
 ## <a name="per-app-vpn-with-zscaler"></a>VPN por aplicativo com Zscaler
 
@@ -112,7 +115,7 @@ O perfil VPN contém o certificado SCEP ou PKCS com as credenciais do cliente, a
 
     Para obter informações sobre as outras configurações, consulte [configurações de VPN do IOS](vpn-settings-ios.md).
 
-5. Selecione a VPN **automática** > **tipo de vpn automática de** > **por aplicativo**
+5. Selecione o **tipo de** > **VPN automática** de VPN automática > **VPN por aplicativo**
 
     ![No Intune, defina VPN automática para VPN por aplicativo em dispositivos iOS](./media/vpn-setting-configure-per-app/vpn-per-app-automatic.png)
 
@@ -125,7 +128,7 @@ Depois de adicionar o perfil VPN, associe a aplicação e o grupo do Azure AD ao
 1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), selecione **aplicativos** > **todos os aplicativos**.
 2. Selecione um aplicativo na lista > **atribuições** > **Adicionar grupo**.
 3. Em **tipo de atribuição**, selecione **necessário** ou **disponível para dispositivos registrados**.
-4. Selecione **grupos incluídos** > **selecione grupos para incluir** > selecione o grupo [que você criou](#create-a-group-for-your-vpn-users) (neste artigo) > **selecione**.
+4. Selecione **grupos incluídos** > **Selecione os grupos a serem incluídos** > selecione o grupo [que você criou](#create-a-group-for-your-vpn-users) (neste artigo) > **selecione**.
 5. Em **VPNs**, selecione o perfil VPN por aplicativo [que você criou](#create-a-per-app-vpn-profile) (neste artigo).
 
     ![Atribuir um aplicativo ao perfil VPN por aplicativo no Microsoft Intune](./media/vpn-setting-configure-per-app/vpn-per-app-app-to-vpn.png)

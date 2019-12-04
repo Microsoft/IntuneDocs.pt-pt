@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 12/02/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f3c6c029a5c5864eda46a68832b2f9f655553846
-ms.sourcegitcommit: 0d6f323152ec62f7d383891cce12ea0a4289cd8f
+ms.openlocfilehash: 11cad62f0fd997610feba51a2d28dcfed5658806
+ms.sourcegitcommit: f26039d674eb4d61ab68264dd1a10b2e5e1d842c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72889530"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74691710"
 ---
 # <a name="windows-10-and-later-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Configurações do Windows 10 e posteriores para marcar dispositivos como em conformidade ou sem conformidade usando o Intune
 
@@ -161,6 +161,7 @@ Aplica-se somente a dispositivos cogerenciados que executam o Windows 10 e poste
 ### <a name="encryption"></a>Encriptação
 
 - **Encriptação do armazenamento de dados num dispositivo**:  
+  Essa configuração se aplica a todas as unidades em um dispositivo.
   - **Não configurado** (*padrão*)
   - **Exigir** -use *exigir* para criptografar o armazenamento de dados em seus dispositivos.
 

@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 52fb1ea5077b424a1d3cf10812d8d9b5f79e4752
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: e45d51feb91e0e188971133185ac0f0f13e5b1f4
+ms.sourcegitcommit: b752acefec077c719e169e665c955adb944e85c6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059804"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74781146"
 ---
 # <a name="add-vpn-settings-on-ios-devices-in-microsoft-intune"></a>Adicionar configurações de VPN em dispositivos iOS no Microsoft Intune
 
@@ -136,8 +136,8 @@ Essas configurações se aplicam quando você escolhe o **tipo de conexão** > *
   - **Médio** (padrão): envia uma mensagem de KeepAlive a cada 10 minutos.
   - **Alta**: envia uma mensagem de KeepAlive a cada 60 segundos.
 
-- **Intervalo de versão do TLS mínimo**: Insira a versão mínima do TLS a ser usada. Insira `1.0`, `1.1` ou `1.2`. Se for deixado em branco, o valor padrão de `1.0` será usado.
-- **Intervalo de versão do TLS máximo**: Insira a versão máxima do TLS a ser usada. Insira `1.0`, `1.1` ou `1.2`. Se for deixado em branco, o valor padrão de `1.2` será usado.
+- **Intervalo de versão do TLS mínimo**: Insira a versão mínima do TLS a ser usada. Insira `1.0`, `1.1`ou `1.2`. Se for deixado em branco, o valor padrão de `1.0` será usado.
+- **Intervalo de versão do TLS máximo**: Insira a versão máxima do TLS a ser usada. Insira `1.0`, `1.1`ou `1.2`. Se for deixado em branco, o valor padrão de `1.2` será usado.
 - **Sigilo perfeita no encaminhamento**: selecione **habilitar** para ativar o PFS (PFS de encaminhamento). O PFS é um recurso de segurança IP que reduz o impacto se uma chave de sessão for comprometida. **Desabilitar** (padrão) não usa PFS.
 - **Verificação de revogação de certificado**: selecione **habilitar** para garantir que os certificados não sejam revogados antes de permitir que a conexão VPN seja realizada com sucesso. Essa verificação é de melhor esforço. Se o servidor VPN expirar antes de determinar se o certificado foi revogado, o acesso será concedido. **Desabilitar** (padrão) não verifica se há certificados revogados.
 
@@ -155,8 +155,8 @@ Essas configurações se aplicam quando você escolhe o **tipo de conexão** > *
     - SHA2-256 (padrão)
     - SHA2-384
     - SHA2-512
-  - **Grupo Diffie-Hellman**: selecione o grupo desejado. O padrão é o grupo `2`.
-  - **Tempo de vida** (minutos): escolha por quanto tempo a associação de segurança permanecerá ativa até que as chaves sejam giradas. Insira um valor inteiro entre `10` e `1440` (1440 minutos é de 24 horas). O padrão é `1440`.
+  - **Grupo Diffie-Hellman**: selecione o grupo desejado. O padrão é `2`de grupo.
+  - **Tempo de vida** (minutos): escolha por quanto tempo a associação de segurança permanecerá ativa até que as chaves sejam giradas. Insira um valor inteiro entre `10` e `1440` (1440 minutos é 24 horas). O padrão é `1440`.
 
 - **Configurar um conjunto separado de parâmetros para associações de segurança filho**: o Ios permite que você configure parâmetros separados para a conexão Ike e quaisquer conexões filho. 
 
@@ -174,12 +174,12 @@ Essas configurações se aplicam quando você escolhe o **tipo de conexão** > *
     - SHA2-256 (padrão)
     - SHA2-384
     - SHA2-512
-  - **Grupo Diffie-Hellman**: selecione o grupo desejado. O padrão é o grupo `2`.
-  - **Tempo de vida** (minutos): escolha por quanto tempo a associação de segurança permanecerá ativa até que as chaves sejam giradas. Insira um valor inteiro entre `10` e `1440` (1440 minutos é de 24 horas). O padrão é `1440`.
+  - **Grupo Diffie-Hellman**: selecione o grupo desejado. O padrão é `2`de grupo.
+  - **Tempo de vida** (minutos): escolha por quanto tempo a associação de segurança permanecerá ativa até que as chaves sejam giradas. Insira um valor inteiro entre `10` e `1440` (1440 minutos é 24 horas). O padrão é `1440`.
 
 ## <a name="automatic-vpn-settings"></a>Definições Automáticas de VPN
 
-- **VPN por aplicação**: ativa a VPN por aplicação. Permite que a ligação VPN seja acionada automaticamente quando determinadas aplicações forem abertas. Também associa as aplicações com este perfil VPN. Para obter mais informações, veja as [instruções para configurar a VPN por aplicação para iOS](vpn-setting-configure-per-app.md).
+- **VPN por aplicação**: ativa a VPN por aplicação. Permite que a ligação VPN seja acionada automaticamente quando determinadas aplicações forem abertas. Também associa as aplicações com este perfil VPN. Não há suporte para VPN por aplicativo em IKEv2. Para obter mais informações, veja as [instruções para configurar a VPN por aplicação para iOS](vpn-setting-configure-per-app.md). 
   - **Tipo de Fornecedor**: disponível apenas para o Pulse Secure e a VPN Personalizada.
   - Ao utilizar perfis **VPN por aplicação** iOS com o Pulse Secure ou uma VPN Personalizada, selecione o túnel de camada de aplicação (proxy-de-aplicação) ou o túnel de nível do pacote (pacote-túnel). Defina o valor **ProviderType** para **proxy-da-aplicação**, para o túnel de camada de aplicação ou para **pacote-túnel**, para o túnel de camada de pacote. Se não tiver a certeza sobre o valor a utilizar, consulte a documentação do seu fornecedor de VPN.
   - **URLs do Safari que irão acionar esta VPN**: adicione um ou mais URLs de sites. Quando estes URLs são visitados através do browser Safari no dispositivo, a ligação VPN é estabelecida automaticamente.

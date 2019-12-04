@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e538204306ce80d6a13739fc981edf2748a622de
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: d77a275e3a48845f56b22ecc21b75f664ea619c5
+ms.sourcegitcommit: f26039d674eb4d61ab68264dd1a10b2e5e1d842c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73713465"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74691760"
 ---
 # <a name="set-up-ios-and-ipados-user-enrollment-preview"></a>Configurar o registro de usuário do iOS e iPadOS (visualização)
 
@@ -43,7 +43,7 @@ Para obter mais informações sobre as opções disponíveis com o registro de u
 
 Um perfil de registro define as configurações aplicadas a um grupo de dispositivos durante o registro. 
 
-1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **registro de dispositivo** > registro da **Apple** > **tipos de registro (versão prévia)**  > **Criar perfil** > **Ios**. Esse perfil é onde você indicará qual experiência de registro seus usuários finais do iOS e iPadOS terão em dispositivos não registrados por meio de um método corporativo da Apple. Se você quiser fazer alterações, poderá editar esse perfil depois de criá-lo.
+1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **dispositivos** > **ios** > **registro do IOS** > **tipos de registro (versão prévia)**  > **Criar perfil** > **Ios/iPadOS**. Esse perfil é onde você indicará qual experiência de registro seus usuários finais do iOS e iPadOS terão em dispositivos não registrados por meio de um método corporativo da Apple. Se você quiser fazer alterações, poderá editar esse perfil depois de criá-lo.
 
     ![Criar perfil de registro da Apple](./media/ios-user-enrollment/create-profile.png)
 
@@ -88,7 +88,7 @@ Um perfil de registro define as configurações aplicadas a um grupo de disposit
 
 Depois de criar mais de um perfil de tipo de registro, você pode alterar a ordem de prioridade na qual eles são aplicados.
 
-1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **registro de dispositivo** > registro da **Apple** > **tipos de registro (versão prévia)** .
+1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **dispositivos** > **ios** > **registro do IOS** > **tipos de registro (versão prévia)** .
 2. Arraste e solte os perfis na lista na ordem em que você deseja aplicá-los.
 
 No caso de conflitos entre os perfis de qualquer usuário, o perfil de prioridade mais alta é aplicado ao usuário.

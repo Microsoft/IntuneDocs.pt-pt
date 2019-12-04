@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e5e1e1de0c8ec80a390f76f5e8de3965d4f800a9
-ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
+ms.openlocfilehash: 6fb025e6b698eba3deeabbda788fcd990a19105f
+ms.sourcegitcommit: b752acefec077c719e169e665c955adb944e85c6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "74188160"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74781180"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Configurações do dispositivo Windows 10 (e mais recente) para permitir ou restringir recursos usando o Intune
 
@@ -101,7 +101,7 @@ Essas configurações usam a [política de conectividade](https://docs.microsoft
 - **Configuração manual de Wi-Fi**: **Bloquear** impede que os dispositivos se conectem ao Wi-Fi fora das redes instaladas pelo servidor MDM. **Não configurado** (padrão) permite que os usuários finais adicionem e configurem seus próprios SSIDs de rede de conexões Wi-Fi.
 - **Intervalo de verificação de Wi-Fi**: Insira com que frequência os dispositivos verificam redes Wi-Fi. Insira um valor de 1 (mais frequente) a 500 (menos frequente). O padrão é `0` (zero).
 
-### <a name="bluetooth"></a>Bluetooth
+### <a name="bluetooth"></a>Tecnologia
 
 Essas configurações usam o [CSP de política do Bluetooth](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-bluetooth); que também lista as edições do Windows com suporte.
 
@@ -130,7 +130,7 @@ Essas configurações usam o [CSP da política do EnterpriseCloudPrint](https://
 - **URL da autoridade de acesso à impressora**: Insira a URL do ponto de extremidade de autenticação para obter tokens OAuth. Por exemplo, introduza `https://azuretenant.contoso.com/adfs`.
 - **GUID do aplicativo cliente nativo do Azure**: Insira o GUID de um aplicativo cliente com permissão para obter tokens OAuth do OAuthAuthority. Por exemplo, introduza `E1CF1107-FF90-4228-93BF-26052DD2C714`.
 - **URI do recurso do serviço de impressão**: Insira o URI de recurso do OAuth para o serviço de impressão configurado no portal do Azure. Por exemplo, introduza `http://MicrosoftEnterpriseCloudPrint/CloudPrint`.
-- **Máximo de impressoras a serem consultadas**: Insira o número máximo de impressoras que você deseja consultar. O valor predefinido é `20`.
+- **Máximo de impressoras a serem consultadas**: Insira o número máximo de impressoras que você deseja consultar. O valor padrão é `20`.
 - **URI do recurso do serviço de descoberta de impressora**: Insira o URI de recurso do OAuth para o serviço de descoberta de impressora configurado no portal do Azure. Por exemplo, introduza `http://MopriaDiscoveryService/CloudPrint`.
 
 > [!TIP]
@@ -186,6 +186,9 @@ Essas configurações usam o [CSP da política de experiência](https://docs.mic
 
 - **Instalação manual de certificado raiz** (somente dispositivos móveis): o **bloqueio** impede que os usuários finais instalem manualmente certificados raiz e certificados de limite intermediários. **Não configurado** (padrão) permite esse recurso.
 - **Camera**: **Bloquear** impede que os usuários finais usem a câmera no dispositivo. **Não configurado** (padrão) permite esse recurso.
+
+  [CSP da câmera](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-camera)
+
 - **Sincronização de arquivos do onedrive**: o **bloco** impede que os usuários finais sincronizem arquivos no onedrive a partir do dispositivo. **Não configurado** (padrão) permite esse recurso.
 - **Armazenamento removível**: o **bloco** impede que os usuários finais usem dispositivos de armazenamento externo, como cartões SD com o dispositivo. **Não configurado** (padrão) permite esse recurso.
 - **Geolocalização**: **Bloquear** impede que os usuários finais ativem os serviços de localização no dispositivo. **Não configurado** (padrão) permite esse recurso.
@@ -364,7 +367,7 @@ Quando "bloquear e habilitar substituição de usuário" está selecionado, o us
 - **Permitir coleta de dados de bloco dinâmico**: **Sim** (padrão) permite que o Microsoft Edge colete informações de blocos dinâmicos fixados no menu iniciar. **Não** impede a coleta dessas informações, o que pode fornecer aos usuários uma experiência limitada.
 - O **usuário pode substituir erros de certificado**: **Sim** (padrão) permite que os usuários acessem sites que têm erros de protocolo SSL/TLS (segurança de camada de transporte). **Não** (recomendado para maior segurança) impede que os usuários acessem sites com erros SSL ou TLS.
 
-### <a name="additional"></a>Adicionais
+### <a name="additional"></a>Obter
 
 - **Permitir navegador Microsoft Edge** (somente dispositivos móveis): **Sim** (padrão) permite usar o navegador da Web Microsoft Edge no dispositivo móvel. **Não** impede o uso do Microsoft Edge no dispositivo. Se você escolher **não**, as outras configurações individuais se aplicarão somente ao desktop.
 - **Permitir lista suspensa de barra de endereços**: **Sim** (padrão) permite que o Microsoft Edge mostre o menu suspenso da barra de endereços com uma lista de sugestões. **Não** impede o Microsoft Edge de mostrar uma lista de sugestões em uma lista suspensa quando você digita. Quando definido como **não**, você:
@@ -448,7 +451,7 @@ Você pode adicionar aplicativos que devem ter um comportamento de privacidade d
 - **Nome do pacote**: nome da família de pacotes de aplicativos.
 - **Nome do aplicativo**: o nome do aplicativo.
 
-### <a name="exceptions"></a>Exceções
+### <a name="exceptions"></a>Exceção
 
 - **Informações da conta**: Defina se este aplicativo pode acessar o nome de usuário, a imagem e outras informações de contato.
 - **Aplicativos em segundo plano**: Defina se este aplicativo pode ser executado em segundo plano.
@@ -492,7 +495,7 @@ Essas configurações usam o [CSP de política de privacidade](https://docs.micr
 
 Você pode configurar informações que todos os aplicativos no dispositivo podem acessar. Além disso, defina exceções em uma base por aplicativo usando **exceções de privacidade por aplicativo**.
 
-### <a name="exceptions"></a>Exceções
+### <a name="exceptions"></a>Exceção
 
 - **Informações da conta**: Defina se este aplicativo pode acessar o nome de usuário, a imagem e outras informações de contato.
 - **Aplicativos em segundo plano**: Defina se este aplicativo pode ser executado em segundo plano.
@@ -554,7 +557,7 @@ Essas configurações usam o [CSP da política do WirelessDisplay](https://docs.
 
 Selecione **OK** para guardar as alterações.
 
-## <a name="search"></a>Pesquisa
+## <a name="search"></a>Procura
 
 Essas configurações usam o [CSP de política de pesquisa](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-search), que também lista as edições do Windows com suporte. 
 
@@ -564,7 +567,7 @@ Essas configurações usam o [CSP de política de pesquisa](https://docs.microso
   - **Moderado**: filtragem moderada contra conteúdo adulto. Os resultados de pesquisa válidos não são filtrados.
 - **Exibir resultados da Web na pesquisa**: quando definido como **Bloquear**, os usuários não podem pesquisar e os resultados da Web não são mostrados na pesquisa. **Não configurado** (padrão) permite que os usuários pesquisem a Web e os resultados sejam mostrados no dispositivo.
 
-## <a name="start"></a>Start
+## <a name="start"></a>Iniciar,
 
 Essas configurações usam o [CSP de política inicial](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start), que também lista as edições do Windows com suporte.  
 
@@ -732,7 +735,7 @@ Essas configurações usam o [CSP de política do defender](https://docs.microso
 
   - **Não configurado** (padrão): monitora todos os arquivos
   - **Monitoramento desabilitado**
-  - **Monitorizar todos os ficheiros**
+  - **Monitorar todos os arquivos**
   - **Monitorar somente arquivos recebidos**
   - **Monitorar somente arquivos de saída**
 
@@ -847,7 +850,7 @@ Essas configurações usam o [CSP de política do defender](https://docs.microso
   
   - **Limpar**
   - **Quarentena**
-  - **Remover**
+  - **Remove**
   - **Permitir**
   - **Definido pelo utilizador**
   - **Bloquear**
@@ -862,6 +865,6 @@ Essas configurações usam o [CSP de política do defender](https://docs.microso
 - **Extensões de arquivo a serem excluídas de verificações e proteção em tempo real**: Adicione uma ou mais extensões de arquivo, como **jpg** ou **txt** , à lista de exclusões. Todos os arquivos com essas extensões não são incluídos em verificações em tempo real ou programadas.
 - **Processos a serem excluídos de verificações e proteção em tempo real**: Adicione um ou mais processos do tipo **. exe**, **. com**ou **. scr** à lista de exclusões. Esses processos não estão incluídos em verificações em tempo real ou programadas.
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Para obter os detalhes técnicos adicionais de cada definição e quais as edições do Windows suportadas, veja [Windows 10 Policy CSP Reference](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider) (Referência de CSP de Políticas do Windows 10)

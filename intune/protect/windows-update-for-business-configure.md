@@ -15,12 +15,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 01866bba0ef47ac807b24a66f773e212c76ff7df
-ms.sourcegitcommit: 1cf063c98e1caae00a6e6fab821cc3254562bca9
+ms.openlocfilehash: a7c3398f28d7c396c873dd29f3e3fdd719c1a7c6
+ms.sourcegitcommit: f26039d674eb4d61ab68264dd1a10b2e5e1d842c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74291100"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74691779"
 ---
 # <a name="manage-windows-10-software-updates-in-intune"></a>Gerenciar atualizações de software do Windows 10 no Intune
 
@@ -122,7 +122,7 @@ A exclusão de um anel do Intune não modifica as configurações em dispositivo
 1. Ao exibir a página Visão geral de um anel de atualização, selecione **excluir**.
 2. Selecione **OK**.
 
-#### <a name="pause"></a>Colocar em pausa
+#### <a name="pause"></a>Temporariamente
 
 Selecione **Pausar** para impedir que os dispositivos atribuídos recebam atualizações de recursos ou atualizações de qualidade por até 35 dias a partir do momento em que você pausar o anel. Após ter decorrido o número máximo de dias, a funcionalidade de pausa expira automaticamente e o dispositivo procura atualizações aplicáveis nas Atualizações do Windows. Após esta procura, pode colocar as atualizações em pausa novamente.
 Se você retomar um anel de atualização em pausa e, em seguida, pausar esse anel novamente, o período de pausa será redefinido para 35 dias.
@@ -138,7 +138,7 @@ Quando um tipo de atualização é pausado, o painel de visão geral desse anel 
 > [!IMPORTANT]
 > Depois de emitir um comando Pause, os dispositivos receberão esse comando na próxima vez que fizerem check-in no serviço. É possível que instalem uma atualização agendada antes do registo. Além disso, se um dispositivo de destino for desativado quando emitir o comando de pausa, ao desativá-lo, este poderá transferir e instalar atualizações agendadas antes do registo no Intune.
 
-#### <a name="resume"></a>Retomar
+#### <a name="resume"></a>Volte
 
 Enquanto um anel de atualização é pausado, você pode selecionar **retomar** para restaurar as atualizações de recursos e qualidade desse anel para a operação ativa. Depois de retomar um anel de atualização, você pode pausar o anel novamente.
 
@@ -214,9 +214,7 @@ Quando um dispositivo recebe uma política de atualizações de recursos do Wind
   - O **período de adiamento da atualização do recurso (dias)** deve ser definido como **0**.
   - As atualizações de recurso para o anel de atualização devem estar *em execução*. Eles não devem estar em pausa.
 
-- Não há suporte para a política de *atualizações de recursos do Windows 10* com o piloto automático. O Intune não implantará a política para:
-  - Dispositivos que estão sendo provisionados pelo AutoPilot.
-  - Dispositivos que foram provisionados anteriormente com o AutoPilot.
+- As políticas de atualização de recursos do Windows 10 não podem ser aplicadas durante a OOBE (configuração inicial pelo uso) e serão aplicadas somente na primeira verificação de Windows Update depois que um dispositivo tiver concluído o provisionamento (que normalmente é um dia). Além disso, os dispositivos que foram provisionados com o piloto automático não receberão a política.
 
   Essa limitação está sendo examinada para ver se ele pode ter suporte no futuro.
 
@@ -254,7 +252,7 @@ O portal clássico do Azure também tem um número limitado de outras definiçõ
 
 2. Elimine as definições de atualização no portal clássico. Depois de migrar para o portal do Azure e adicionar as mesmas definições a uma cadência de atualização, terá de eliminar as definições no portal clássico para evitar potenciais conflitos de políticas. Por exemplo, quando a mesma configuração é configurada com valores diferentes, há um conflito. Não há uma maneira fácil de saber porque a configuração configurada no portal clássico não é exibida na portal do Azure.
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Próximos passos
 
 [Configurações do Windows Update com suporte pelo Intune](../windows-update-settings.md)
 

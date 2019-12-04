@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 04/19/2019
+ms.date: 12/03/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -19,12 +19,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 24d4193b3e43b7c406a1fb6c9c8d987caa6cbeea
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 28ba1d2d50f366e5e34fae06ae188293dd0fb8b5
+ms.sourcegitcommit: b752acefec077c719e169e665c955adb944e85c6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72501892"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74781214"
 ---
 # <a name="use-managed-apps-on-your-android-device"></a>Utilizar aplicações geridas no seu dispositivo Android
 As aplicações geridas são configuradas para cumprir os requisitos de segurança da sua organização e proteger os dados profissionais e escolares. Estas aplicações estão disponíveis para instalação ou utilização automaticamente no seu dispositivo. 
@@ -39,9 +39,7 @@ Para maximizar a proteção de dados, a sua organização poderá configurar vá
 As organizações podem exigir-lhe que utilize uma aplicação gerida para efetuar uma ação, como abrir um ficheiro de trabalho ou aceder a uma ligação Web. Se não tiver a aplicação, poderá não ser possível continuar a tarefa. Algumas aplicações geridas são disponibilizadas para instalação, mas não são necessárias.
 
 ## <a name="how-do-i-know-im-using-a-managed-app"></a>Como posso saber se estou a utilizar uma aplicação gerida?
-Ao aceder a dados profissionais ou escolares pela primeira vez numa aplicação gerida, será apresentada uma mensagem semelhante à captura de ecrã de exemplo abaixo. A mensagem pede-lhe que reinicie a aplicação para continuar.
-
-![Captura de ecrã da mensagem apresentada quando um utilizador abre uma aplicação gerida no seu dispositivo. A mensagem indica o seguinte: "A sua organização está agora a proteger os respetivos dados nesta aplicação. Tem de reiniciar a aplicação para continuar." É seguida do botão OK.](./media/managed-apps-message.png)
+Ao tentar acessar dados corporativos ou de estudante em um aplicativo gerenciado, você receberá uma mensagem na tela informando que o aplicativo está protegido pela sua organização. 
 
 ## <a name="commonly-managed-apps"></a>Aplicações geridas mais comuns  
 Seguem-se exemplos das aplicações geridas necessárias ou disponíveis mais comuns em instituições de ensino e locais de trabalho:
