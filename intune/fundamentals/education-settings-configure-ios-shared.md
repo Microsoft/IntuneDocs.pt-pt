@@ -18,14 +18,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 86b61f628dc559bf0520dbe16ef58644bd360269
-ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
+ms.openlocfilehash: 0edfd9b8ee8b45952d9c22d5365d09d125ea7710
+ms.sourcegitcommit: 78faf608510fbaca09bc410d63df1aa5254dee45
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "74188450"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74784260"
 ---
-# <a name="configure-intune-education-settings-for-shared-ipad-devices"></a>Configurar definições de educação do Intune para dispositivos iPad partilhados
+# <a name="configure-intune-education-settings-for-shared-ipad-devices"></a>Definir configurações de educação do Intune para dispositivos iPad compartilhados
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
@@ -70,8 +70,8 @@ Pode importar informações para o SDS através de um dos seguintes métodos:
 
 1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. No painel **Intune**, selecione **Configuração do dispositivo**.
-2. No painel **Configuração do dispositivo**, na secção **Gerir**, selecione **Perfis**.
-5. No painel Perfis, selecione **Criar perfil**.
+2. No painel **Configuração do dispositivo** na secção **Gerir**, selecione **Perfis**.
+5. No painel de perfis, selecione **Criar perfil**.
 6. No painel **Criar perfil**, introduza um **Nome** e uma **Descrição** para o perfil de educação do iOS.
 7. Na lista pendente **Plataforma**, selecione **iOS**.
 8. Na lista pendente **Tipo de perfil**, escolha **Educação**.
@@ -134,7 +134,7 @@ Quando concluir a configuração dos certificados, selecione **OK**.
 1. No painel **Educação**, selecione **OK**.
 2. No painel **Criar perfil**, selecione **Criar**.
 
-O perfil será criado e apresentado no painel Lista de perfis.
+O perfil é criado e apresentado no painel da lista de perfis.
 
 ## <a name="step-3---create-a-device-category"></a>Passo 3 – criar uma categoria de dispositivo
 
@@ -189,7 +189,7 @@ O dispositivo está agora associado à categoria de dispositivos. Repita este pr
 10. Selecione os grupos a incluir no Perfil do Carrinho e, em seguida, selecione **Selecionar**.
 11. No painel **Criar Associação**, selecione **Guardar** para guardar o Perfil do Carrinho.
 
-O perfil será criado e apresentado no painel Lista de perfis.
+O perfil é criado e apresentado no painel da lista de perfis.
 
 ## <a name="step-7---assign-the-cart-profile-to-classes"></a>Passo 7 – atribuir o Perfil do Carrinho a turmas
 
@@ -199,10 +199,10 @@ O perfil será criado e apresentado no painel Lista de perfis.
 5. No painel **Estado da atribuição**, selecione o **Perfil do Carrinho** que criou.
 6. No painel **Perfil do Carrinho**, selecione **Atribuições** e, em **Incluir**, selecione **Selecionar grupos para incluir**.
 7. Selecione as turmas para as quais será direcionado o perfil do carrinho (não selecione um grupo) e, em seguida, selecione **Selecionar**. 
-8. Quando terminar, escolha **Guardar**.
+8. Quando terminar, selecione **Guardar**.
 
 A atribuição fica concluída e o Intune implementa o perfil de Sala de Aula aos dispositivos visados com base na atribuição de sala de aula.
 
-## <a name="next-steps"></a>Próximos Passos
+## <a name="next-steps"></a>Passos Seguintes
 
 Agora, os estudantes podem partilhar dispositivos entre si e selecionar qualquer iPad numa sala de aula, iniciar sessão com um PIN e personalizá-lo com os seus conteúdos. Para obter mais informações sobre iPads Partilhados, veja o [site da Apple](https://www.apple.com/education/it/).
