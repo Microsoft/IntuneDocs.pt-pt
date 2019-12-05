@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e71ae2d2bcee22040c256ea711edd22b1d1fc80a
-ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
+ms.openlocfilehash: 46b46cd4a407df686e094198c588371ed4a01bb6
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199275"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74832579"
 ---
 # <a name="troubleshoot-ios-device-enrollment-problems-in-microsoft-intune"></a>Solucionar problemas de registro de dispositivo iOS no Microsoft Intune
 
@@ -36,7 +36,7 @@ Colete as seguintes informações sobre o problema:
 
 - Qual é a mensagem de erro exata?
 - Onde você vê a mensagem de erro?
-- Quando o problema foi iniciado? O registro já funcionou?
+- Quando começou o problema? O registro já funcionou?
 - Qual plataforma (Android, iOS, Windows) tem o problema?
 - Quantos usuários são afetados? Todos os usuários foram afetados ou apenas alguns?
 - Quantos dispositivos são afetados? Todos os dispositivos foram afetados ou apenas alguns?
@@ -60,7 +60,7 @@ Colete as seguintes informações sobre o problema:
 **Causa:** Seu locatário do Intune está configurado para permitir somente dispositivos de propriedade corporativa. 
 
 #### <a name="resolution"></a>Resolução
-1. Inicie sessão no Portal do Azure.
+1. Inicie sessão no portal do Azure.
 2. Selecione **mais serviços**, pesquise Intune e, em seguida, selecione **Intune**.
 3. Selecione **Inscrição de dispositivos** > **Restrições de inscrição**.
 4. Em **restrições de tipo de dispositivo**, selecione a restrição que você deseja definir > **Propriedades** > **Selecionar plataformas** > selecione **permitir** para **Ios**e clique em **OK**.
@@ -111,7 +111,7 @@ Se a sua empresa utilizar vários domínios para as credenciais do utilizador, c
 3. Alterne a alternância para a posição **ligado** da licença que você deseja atribuir a esse usuário e, em seguida, escolha **salvar**.
 4. Registre novamente o dispositivo.
 
-### <a name="this-service-is-not-supported-no-enrollment-policy"></a>Não há suporte para esse serviço. Nenhuma política de registro.
+### <a name="this-service-is-not-supported-no-enrollment-policy"></a>Este Serviço não é suportado. Nenhuma política de registro.
 
 **Causa**: um certificado de push de MDM da Apple não está configurado no Intune ou o certificado é inválido. 
 
@@ -120,7 +120,7 @@ Se a sua empresa utilizar vários domínios para as credenciais do utilizador, c
 - Se o MDM Push Certificate não estiver configurado, siga as etapas em [obter um Apple MDM Push Certificate](apple-mdm-push-certificate-get.md#steps-to-get-your-certificate).
 - Se o MDM Push Certificate for inválido, siga as etapas em [renovar Apple MDM Push Certificate](apple-mdm-push-certificate-get.md#renew-apple-mdm-push-certificate).
 
-### <a name="company-portal-temporarily-unavailable-the-company-portal-app-encountered-a-problem-if-the-problem-persists-contact-your-system-administrator"></a>Portal da Empresa temporariamente indisponível. O aplicativo Portal da Empresa encontrou um problema. Se o problema persistir, contate o administrador do sistema.
+### <a name="company-portal-temporarily-unavailable-the-company-portal-app-encountered-a-problem-if-the-problem-persists-contact-your-system-administrator"></a>Portal da Empresa temporariamente indisponível. O aplicativo Portal da Empresa encontrou um problema. Se o problema persistir, entre em contato com o administrador do sistema.
 
 **Causa:** O aplicativo Portal da Empresa está desatualizado ou corrompido.
 
@@ -131,15 +131,15 @@ Se a sua empresa utilizar vários domínios para as credenciais do utilizador, c
  > [!NOTE]
     > Esse erro também pode ocorrer se o usuário estiver tentando registrar mais dispositivos do que o registro do dispositivo está configurado para permitir. Siga as etapas de resoluções para o **limite do dispositivo** que foi atingido abaixo se essas etapas não resolverem o problema.
 
-### <a name="device-cap-reached"></a>Limite do dispositivo atingido
+### <a name="device-cap-reached"></a>Limite de Dispositivos Atingido
 
 **Causa:** O usuário tenta registrar mais dispositivos do que o limite de registro do dispositivo.
 
 #### <a name="resolution"></a>Resolução
-1. Abra o [portal de administração do Intune](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview) > **dispositivos** > **todos os dispositivos**e verifique o número de dispositivos que o usuário registrou.
+1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **dispositivos** > **todos os dispositivos**e verifique o número de dispositivos que o usuário registrou.
     > [!NOTE]
     > Você também deve ter o logon do usuário afetado no [portal do usuário do Intune](https://portal.manage.microsoft.com/) e verificar os dispositivos que foram registrados. Pode haver dispositivos que aparecem no portal do [usuário do Intune](https://portal.manage.microsoft.com/) , mas não no [portal de administração do Intune](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview), tais dispositivos também contam para o limite de registro do dispositivo.
-2. Vá para **administrador** > **Gerenciamento de dispositivo móvel** > **regras de registro** > verificar o limite de registro do dispositivo. Por padrão, o limite é definido como 15. 
+2. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **dispositivos** > **restrições de registro** > verificar o limite de registro do dispositivo. Por padrão, o limite é definido como 15. 
 3. Se o número de dispositivos registrados tiver atingido o limite, remova os dispositivos desnecessários ou aumente o limite de registro do dispositivo. Como cada dispositivo registrado consome uma licença do Intune, recomendamos que você sempre remova dispositivos desnecessários primeiro.
 4. Registre novamente o dispositivo.
 
@@ -230,7 +230,7 @@ Quando você ativa um dispositivo gerenciado por DEP que recebe um perfil de reg
 #### <a name="resolution"></a>Resolução
 
 1. Edite o perfil de registro. Você pode fazer qualquer alteração no perfil. A finalidade é atualizar a hora de modificação do perfil.
-2. Sincronizar dispositivos gerenciados por DEP: Abra o portal do Intune > **administração** > **Gerenciamento de dispositivo móvel** > **Ios** > **programa de registro de dispositivos** > **sincronizar agora**. É enviado um pedido de sincronização para a Apple.
+2. Sincronizar dispositivos gerenciados por DEP: no [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **dispositivos** > **ios** > **registro do IOS** > **tokens do programa de registro** > escolha um token > **sincronizar agora**. É enviado um pedido de sincronização para a Apple.
 
 ### <a name="dep-enrollment-stuck-at-user-login"></a>Registro de DEP travado no logon do usuário
 Quando você ativa um dispositivo gerenciado por DEP que recebe um perfil de registro, a instalação inicial se une depois que você insere as credenciais.
@@ -240,7 +240,7 @@ Quando você ativa um dispositivo gerenciado por DEP que recebe um perfil de reg
 #### <a name="resolution"></a>Resolução
 Desabilite o MFA e registre novamente o dispositivo.
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Próximos passos
 
 - [Resolução de problemas de inscrição de dispositivos no Intune](../troubleshoot-device-enrollment-in-intune.md)
 - [Faça uma pergunta no fórum do Intune](https://social.technet.microsoft.com/Forums/%7Blang-locale%7D/home?category=microsoftintune&filter=alltypes&sort=lastpostdesc)

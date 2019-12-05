@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/15/2019
+ms.date: 12/04/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4a1177a37ddbfa7f760339c4ad0cd7773d670540
-ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
+ms.openlocfilehash: d445b86359b2c5cde7b56a52a0cc6ee72a34c0ea
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199195"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74832603"
 ---
 # <a name="common-questions-issues-and-resolutions-with-device-policies-and-profiles-in-microsoft-intune"></a>Perguntas comuns, problemas e resoluções com perfis e políticas de dispositivo no Microsoft Intune
 
@@ -50,27 +50,29 @@ Algumas recomendações adicionais:
 
 O Intune notifica o dispositivo para fazer check-in no serviço do Intune. Os tempos de notificação variam, incluindo imediatamente até algumas horas. Esses tempos de notificação também variam entre as plataformas.
 
-Se um dispositivo não fizer check-in para obter a política ou o perfil após a primeira notificação, o Intune fará mais três tentativas. Um dispositivo offline, como desativado ou não conectado a uma rede, pode não receber as notificações. Nesse caso, o dispositivo Obtém a política ou o perfil em seu próximo check-in agendado com o serviço do Intune, que é **estimado** em:
+Se um dispositivo não fizer check-in para obter a política ou o perfil após a primeira notificação, o Intune fará mais três tentativas. Um dispositivo offline, como desativado ou não conectado a uma rede, pode não receber as notificações. Nesse caso, o dispositivo Obtém a política ou o perfil em seu próximo check-in agendado com o serviço do Intune. O mesmo se aplica a verificações de não conformidade, incluindo dispositivos que se movem de um estado compatível para um não compatível.
 
-| Plataforma | Ciclo de atualização|
+Frequências **estimadas** :
+
+| Platform | Ciclo de atualização|
 | --- | --- |
 | iOS | Aproximadamente a cada 8 horas |
 | macOS | Aproximadamente a cada 8 horas |
 | Android | Aproximadamente a cada 8 horas |
 | PCs com o Windows 10 inscritos como dispositivos | Aproximadamente a cada 8 horas |
 | Windows Phone | Aproximadamente a cada 8 horas |
-| Windows 8.1 | Aproximadamente a cada 8 horas |
+| Windows 8.1 | Aproximadamente a cada 8 horas |
 
-Se o dispositivo tiver sido registrado recentemente, o check-in de conformidade e configuração será executado com mais frequência, o que é **estimado** em:
+Se o dispositivo tiver sido registrado recentemente, o check-in de conformidade, não conformidade e configuração será executado com mais frequência, o que é **estimado** em:
 
-| Plataforma | Frequência |
+| Platform | Frequência |
 | --- | --- |
 | iOS | A cada 15 minutos por 1 hora e, em seguida, a cada 8 horas |  
 | macOS | A cada 15 minutos por 1 hora e, em seguida, a cada 8 horas | 
 | Android | A cada 3 minutos por 15 minutos, então a cada 15 minutos por 2 horas e, em seguida, a cada 8 horas | 
 | PCs com o Windows 10 inscritos como dispositivos | A cada 3 minutos por 15 minutos, então a cada 15 minutos por 2 horas e, em seguida, a cada 8 horas | 
 | Windows Phone | A cada 5 minutos por 15 minutos, então a cada 15 minutos por 2 horas e, em seguida, a cada 8 horas | 
-| Windows 8.1 | A cada 5 minutos por 15 minutos, então a cada 15 minutos por 2 horas e, em seguida, a cada 8 horas | 
+| Windows 8.1 | A cada 5 minutos por 15 minutos, então a cada 15 minutos por 2 horas e, em seguida, a cada 8 horas | 
 
 A qualquer momento, os usuários podem abrir o aplicativo Portal da Empresa, **configurações** > **sincronização** para verificar imediatamente se há atualizações de política ou perfil.
 
@@ -134,7 +136,7 @@ Quando você exclui um perfil ou remove um dispositivo de um grupo que tem o per
     - Permitir geolocalização
     - Permitir conta Microsoft
     - Permitir copiar e colar
-    - Permitir partilha de Wi-Fi
+    - Permitir tethering Wi-Fi
     - Permitir ligação automática a hotspots Wi-Fi
     - Permitir relatórios de hotspots Wi-Fi
     - Permitir a limpeza
@@ -165,6 +167,6 @@ Algumas configurações em dispositivos Windows 10 podem ser mostradas como "nã
 
 Para saber mais sobre os requisitos de versão e SKU para as diferentes configurações, consulte a [referência do provedor de serviços de configuração (CSP)](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference).
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Precisa de ajuda adicional? Veja [Como obter suporte para o Microsoft Intune](../fundamentals/get-support.md).

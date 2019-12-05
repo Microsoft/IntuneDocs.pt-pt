@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5a3081ece10bb25c6381f4a8f891152433bc9661
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 94c38aaf28440511720280a3c5a1ebda5b9f2ab1
+ms.sourcegitcommit: d8bcf1a427035138f7dfe1e4f8b3c971c773dcd8
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564386"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74819791"
 ---
 # <a name="see-device-details-in-intune"></a>Consultar os detalhes do dispositivo no Intune
 
@@ -57,7 +57,7 @@ Dependendo da operadora usada pelos dispositivos, nem todos os detalhes podem se
 > [!Note]  
 > O inventário de hardware e software é atualizado no serviço do Intune a cada 7 dias.
 
-|detalhes|Description|Platform| 
+|Detalhe|Description|Platform| 
 |--------------|----------------------|----|  
 |Nome|O nome do dispositivo.|Windows, iOS|
 |Nome da gestão|O nome do dispositivo utilizado apenas na consola. Alterar este nome não irá alterar o nome no dispositivo.|Windows, iOS|
@@ -67,9 +67,9 @@ Dependendo da operadora usada pelos dispositivos, nem todos os detalhes podem se
 |Dispositivo partilhado|Se definido como **Sim**, o dispositivo é partilhado por mais do que um utilizador.|Windows, iOS|
 |Inscrição de utilizador aprovado|Em caso **afirmativo**, o dispositivo tem o registro aprovado pelo usuário que permite que os administradores gerenciem determinadas configurações de segurança no dispositivo.|Windows, iOS|
 |Sistema operativo|O sistema operativo utilizado no dispositivo.|Windows, iOS|
-|Versão do sistema operativo|A versão do sistema operacional no dispositivo.|Windows, iOS|
+|Versão do sistema operativo|A versão do sistema operativo do dispositivo.|Windows, iOS|
 |Idioma do sistema operativo|O idioma definido para o sistema operativo no dispositivo.|Windows, iOS|
-|Número de Build|O número de Build do sistema operacional.|Android|
+|Número de compilação|O número de Build do sistema operacional.|Android|
 |Nível de patch de segurança|O nível de patch de segurança para o dispositivo.|Android|
 |Espaço de armazenamento total|O espaço de armazenamento total no dispositivo (em gigabytes).|Windows, iOS|
 |Espaço de armazenamento livre|O espaço de armazenamento não utilizado no dispositivo (em gigabytes).|Windows, iOS|
@@ -77,7 +77,7 @@ Dependendo da operadora usada pelos dispositivos, nem todos os detalhes podem se
 |MEID|O identificador de equipamento móvel do dispositivo.|Windows, iOS, Android|
 |Manufacturer|O fabricante do dispositivo.|Windows, iOS, Android|
 |Model|O modelo do dispositivo.|Windows, iOS, Android|
-|Número de telefone|O número de telemóvel atribuído ao dispositivo.|Windows, iOS, Android|
+|Número de telefone|O número de telemóvel atribuído ao dispositivo.|Windows, iOS, Android *|
 |Operadora subscrita|A operadora sem fios do dispositivo.|Windows, iOS, Android|
 |Tecnologia de rede móvel|O sistema de rádio utilizado pelo dispositivo.|Windows, iOS, Android|
 |MAC Wi-Fi|O endereço MAC (Media Access Control) do dispositivo.|Windows, iOS, Android|
@@ -93,7 +93,7 @@ Dependendo da operadora usada pelos dispositivos, nem todos os detalhes podem se
 |Supervisionado|Se definido como **Sim**, os administradores têm controlo avançado sobre o dispositivo.|Windows, iOS, Android|
 |Encriptado|Se definido como **Sim**, os dados armazenados no dispositivo são encriptados.|Windows, iOS, Android|
 
-
+\* não disponíveis no Android com o Google Policy Manager, como dispositivos totalmente gerenciados e dedicados
 
 ## <a name="next-steps"></a>Próximos passos
 Veja o que mais pode fazer para [gerir os seus dispositivos](device-management.md) com o Intune.

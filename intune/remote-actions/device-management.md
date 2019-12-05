@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a9937fc25ffa3dc32c1addbf0acc2516000b055b
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: b957857702de10e10c581364f2c34c869026810d
+ms.sourcegitcommit: d8bcf1a427035138f7dfe1e4f8b3c971c773dcd8
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390885"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74819756"
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>O que é a gestão de dispositivos do Microsoft Intune?
 
@@ -69,10 +69,11 @@ As ações disponíveis dependem da plataforma do dispositivo e da configuraçã
   - [Reposição do PIN do Windows 10](device-windows-pin-reset.md)
   - [Controlo remoto do Android](teamviewer-support.md)
   - [Sincronizar o dispositivo](device-sync.md)
+  - [Rename device (Mudar o nome de dispositivos)](device-rename.md)
   - [Enviar notificação personalizada](custom-notifications.md#send-a-custom-notification-to-a-single-device) (Android, Ios)
   - [Rotação de chaves do BitLocker](../protect/encrypt-devices.md#rotate-bitlocker-recovery-keys) (somente Windows)
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Próximos passos
 
 - Em **Todos os dispositivos**, selecione um dispositivo para ver mais detalhes sobre esse dispositivo específico.
 - Selecione **Ações do dispositivo** para ver o estado das ações efetuadas nos dispositivos que gere.

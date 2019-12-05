@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/21/2019
+ms.date: 12/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0c4c995322234a4a2486d8e6c5e9efd88f78dd63
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: b1d6b88b2ff6404f6c60a1c27c167c0721fa82bf
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390876"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74832600"
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>Criar um perfil de dispositivo no Microsoft Intune
 
@@ -39,7 +39,7 @@ Este artigo:
 
 1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-2. Selecione **dispositivos** > **perfis de configuração**. Você tem as seguintes opções:
+2. Selecione **dispositivos** > **perfis de configuração**. Tem as seguintes opções:
 
     - **Visão geral**: lista o status de seus perfis e fornece detalhes adicionais sobre os perfis atribuídos a usuários e dispositivos.
     - **Gerenciar**: criar perfis de dispositivo, carregar [scripts](../apps/intune-management-extension.md) personalizados do PowerShell para execução dentro do perfil e adicionar planos de dados a dispositivos usando o [Esim](esim-device-configuration.md).
@@ -70,10 +70,10 @@ Este artigo:
        - [Restrições de dispositivos](device-restrictions-configure.md)
        - [Atualização da edição e alteração do modo ](edition-upgrade-configure-windows-10.md)
        - [Educação](education-settings-configure.md)
-       - [Email](email-settings-configure.md)
+       - [E-mail](email-settings-configure.md)
        - [Proteção de ponto final](../protect/endpoint-protection-configure.md)
        - [Proteção de identidade](../protect/identity-protection-configure.md)  
-       - [Kiosk](kiosk-settings.md)
+       - [Modo de Quiosque](kiosk-settings.md)
        - [Certificado PKCS](../protect/certficates-pfx-configure.md)
        - [Certificado importado PKCS](../protect/certificates-imported-pfx-configure.md)
        - [Arquivo de preferência](preference-file-settings-macos.md)
@@ -105,7 +105,7 @@ Para obter mais informações sobre etiquetas de âmbito e o que pode fazer, vej
 
 ## <a name="applicability-rules"></a>Regras de aplicabilidade
 
-Aplica-se a:
+Aplica-se a
 
 - Windows 10 e posterior
 
@@ -180,12 +180,14 @@ Ao criar perfis, considere as seguintes recomendações:
 
 - Separe as políticas de usuário das políticas de dispositivo.
 
-  Por exemplo, [modelos administrativos no Intune](administrative-templates-windows.md) têm centenas de configurações de ADMX. Esse modelo mostra se uma configuração se aplica a usuários ou dispositivos. Ao criar modelos de administrador, atribua as configurações de usuários a um grupo de usuários e atribua as configurações de dispositivo a um grupo de dispositivos.
+  Por exemplo, [modelos administrativos no Intune](administrative-templates-windows.md) têm centenas de configurações de ADMX. Esses modelos mostram se uma configuração se aplica a usuários ou dispositivos. Ao criar modelos de administrador, atribua as configurações de usuários a um grupo de usuários e atribua as configurações de dispositivo a um grupo de dispositivos.
 
   A imagem a seguir mostra um exemplo de uma configuração que pode ser aplicada aos usuários e/ou que se aplicam a dispositivos:
 
   ![Modelo de administração do Intune que se aplica a usuários e dispositivos](./media/device-profile-create/setting-applies-to-user-and-device.png)
 
-## <a name="next-steps"></a>Passos Seguintes
+- Sempre que você criar uma política restritiva, comunique essa alteração aos seus usuários. Por exemplo, se você estiver alterando o requisito de senha de 4 caracteres para 6 caracteres, avise os usuários antes de atribuir a política.
+
+## <a name="next-steps"></a>Próximos passos
 
 [Atribua o perfil](../device-profile-assign.md) e [monitorize o respetivo estado](device-profile-monitor.md).

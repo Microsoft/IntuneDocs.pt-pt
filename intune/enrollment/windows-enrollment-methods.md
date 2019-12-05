@@ -1,5 +1,5 @@
 ---
-title: Métodos de registro do Intune para dispositivos Windows
+title: Métodos de inscrição do Intune para dispositivos Windows
 titleSuffix: Microsoft Intune
 description: Conheça as diferentes maneiras de registrar dispositivos Windows no Intune
 keywords: ''
@@ -17,14 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: ''
-ms.openlocfilehash: 59ba9ab5fb0ddeb527ed852de042568920cf38e1
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: b6144767ee69de8c1ff14e5c189c078994a9dcf4
+ms.sourcegitcommit: d8bcf1a427035138f7dfe1e4f8b3c971c773dcd8
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509190"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74819710"
 ---
-# <a name="intune-enrollment-methods-for-windows-devices"></a>Métodos de registro do Intune para dispositivos Windows
+# <a name="intune-enrollment-methods-for-windows-devices"></a>Métodos de inscrição do Intune para dispositivos Windows
 
 Para gerenciar dispositivos no Intune, os dispositivos devem primeiro ser registrados no serviço do Intune. Dispositivos pessoais e de propriedade corporativa podem ser registrados para o gerenciamento do Intune. 
 
@@ -42,7 +42,7 @@ Os usuários podem registrar automaticamente seu dispositivo Windows usando qual
 Se um administrador tiver configurado o registro automático (disponível com as assinaturas do Azure AD Premium), o usuário só precisará inserir suas credenciais uma vez. Caso contrário, eles terão que registrar separadamente por meio do registro somente MDM e reinserir suas credenciais.  
 - O **registro somente MDM** permite que os usuários registrem um grupo de trabalho existente, Active Directory ou um PC ingressado no Azure Active Directory no Intune. Os usuários se registram a partir de configurações no computador Windows existente. Esse método não é recomendado porque não registra o dispositivo em Azure Active Directory. Ele também impede o uso de recursos como o acesso condicional.
 - [Junção do Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network) – une o dispositivo com o Azure Active Directory e permite que os usuários entrem no Windows com suas credenciais do Azure AD. Se o registro automático estiver habilitado, o dispositivo será registrado automaticamente no Intune. O benefício do registro automático é um processo de etapa única para o usuário. Caso contrário, eles terão que registrar separadamente por meio do registro somente MDM e reinserir suas credenciais. Os usuários se registram dessa forma durante as configurações iniciais do Windows OOBE ou from. O dispositivo está marcado como um dispositivo de propriedade corporativa no Intune.
-- [AutoPilot](enrollment-autopilot.md) – automatiza o ingresso no Azure AD e registra novos dispositivos corporativos no Intune. Esse método simplifica a experiência inicial no uso e elimina a necessidade de aplicar imagens personalizadas do sistema operacional nos dispositivos. Quando os administradores usam o Intune para gerenciar dispositivos de piloto automático, eles podem gerenciar políticas, perfis, aplicativos e muito mais depois que eles são registrados.  Há quatro tipos de implantação automática de piloto: [modo de autoimplantação](https://docs.microsoft.com/windows/deployment/windows-autopilot/self-deploying) (para quiosques, pôsteres digitais ou um dispositivo compartilhado), [modo controlado pelo usuário](https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven) (para usuários tradicionais), [White diferenciada] (https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove) permite que os parceiros ou a equipe de ti desprovisionem previamente um PC com Windows 10 para que ele seja totalmente configurado e pronto para os negócios e [piloto automático para dispositivos existentes] (https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices) permite que você implante facilmente a versão mais recente do Windows 10 em seus dispositivos existentes.
+- [AutoPilot](enrollment-autopilot.md) – automatiza o ingresso no Azure AD e registra novos dispositivos corporativos no Intune. Esse método simplifica a experiência inicial no uso e elimina a necessidade de aplicar imagens personalizadas do sistema operacional nos dispositivos. Quando os administradores usam o Intune para gerenciar dispositivos de piloto automático, eles podem gerenciar políticas, perfis, aplicativos e muito mais depois que eles são registrados.  Há quatro tipos de implantação do AutoPilot: [modo de autoimplantação](https://docs.microsoft.com/windows/deployment/windows-autopilot/self-deploying) (para quiosques, pôsteres digitais ou um dispositivo compartilhado), [modo controlado pelo usuário](https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven) (para usuários tradicionais), o [White diferenciada](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove) permite que os parceiros ou a equipe de ti previsionar previamente um PC com Windows 10 para que ele seja totalmente configurado, e pronto para os negócios e o [piloto automático para dispositivos existentes](https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices) permite que você implante facilmente a versão mais recente do Windows 10
 
 ## <a name="administrator-based-enrollment-in-intune"></a>Registro baseado em administrador no Intune
 
