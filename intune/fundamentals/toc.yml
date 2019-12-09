@@ -31,6 +31,8 @@
       href: quickstart-create-custom-role.md
 - name: Tutorials (Tutoriais)
   items:
+    - name: Walkthrough Intune in Microsoft Endpoint Manager (Instruções para o Intune no Microsoft Endpoint Manager)
+      href: tutorial-walkthrough-endpoint-manager.md
     - name: Instruções para o Intune no portal do Azure
       href: tutorial-walkthrough-intune-portal.md
 - name: Conceitos
