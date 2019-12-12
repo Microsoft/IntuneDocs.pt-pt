@@ -20,10 +20,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: bb1538d484590a19eb7525a1451b5082ebab245d
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72506044"
 ---
 # <a name="unenroll-your-android-device-from-management"></a>Anular a inscrição do seu dispositivo Android na gestão  
@@ -59,7 +59,7 @@ Para remover todos os dados que a aplicação Portal da Empresa para Android arm
 
 Portal da Empresa é um aplicativo de gerenciamento de dispositivo. Ele não poderá ser desinstalado até que você cancele o registro do seu dispositivo de seu gerenciamento. Depois de concluir esse procedimento, toque sem soltar no ícone da aplicação Portal da Empresa, até surgir **Desinstalar**. Toque em **Desinstalar** para remover a aplicação do seu dispositivo.  
 
-Como alternativa, toque em **configurações** > **aplicativos** > **portal da empresa** **desinstalar** > .  
+Como alternativa, toque em **configurações** > **aplicativos** > **portal da empresa** > **desinstalar**.  
 
 ### <a name="remove-the-company-portal-app-as-a-device-administrator"></a>Remover o aplicativo Portal da Empresa como um administrador de dispositivo
 
@@ -76,7 +76,7 @@ Veja como desabilitar Portal da Empresa como um administrador de dispositivo. Os
 
 **Opção 2**:
 
-1. Selecione **configurações** > **tela de bloqueio e segurança** > **outras configurações de segurança** > **aplicativos de administração de dispositivo**.
+1. Selecione **configurações** > **tela de bloqueio e segurança** > **outras configurações de segurança** > **aplicativos de administração de dispositivos**.
 2. Desmarque a seleção de **portal da empresa** .
 
 Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

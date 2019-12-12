@@ -16,10 +16,10 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.openlocfilehash: d0b4f8d5124924d013e7ac131dafc947a95c7b65
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/13/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74059801"
 ---
 # <a name="application-protection-policies-and-work-profiles-on-android-enterprise-devices-in-intune"></a>Políticas de proteção de aplicativo e perfis de trabalho em dispositivos Android Enterprise no Intune
@@ -55,7 +55,7 @@ Os aplicativos Android individuais são habilitados para o aplicativo de algumas
 
 Para ver uma lista de aplicativos habilitados com o aplicativo, consulte [aplicativos gerenciados com um rico conjunto de políticas de proteção de aplicativo móvel](https://www.microsoft.com/cloud-platform/microsoft-intune-apps).
 
-## <a name="deployment-scenarios"></a>Cenários de implantação
+## <a name="deployment-scenarios"></a>Cenários de implementação
 
 Esta seção descreve as características importantes dos cenários de implantação de perfil de trabalho do APP-WE e Android Enterprise.
 

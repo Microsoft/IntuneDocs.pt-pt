@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: fbe2377bfd353dc00ddfdf53a6d091c486644194
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/13/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74059384"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>Configurar perfis celulares eSIM no Intune – pré-visualização pública
@@ -91,7 +91,7 @@ Ao trabalhar com o ficheiro CSV que contém os códigos de ativação, certifiqu
 2. A partir da segunda linha, encontram-se os códigos de ativação de utilização única e exclusiva que incluem dois valores:
 
     1. Na primeira coluna, encontra-se o ICCID exclusivo (o identificador do chip SIM)
-    2. Na segunda coluna, encontra-se o ID Correspondente, com apenas uma vírgula a separá-los (e nenhuma vírgula no final). Consulte o exemplo a seguir:
+    2. Na segunda coluna, encontra-se o ID Correspondente, com apenas uma vírgula a separá-los (e nenhuma vírgula no final). Veja o seguinte exemplo:
 
         ![Ficheiro CSV de exemplo de códigos de ativação da operadora de rede móvel](./media/esim-device-configuration/url-activation-code-examples.png)
 

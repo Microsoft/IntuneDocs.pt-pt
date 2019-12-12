@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: get-started
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 0c959102383f44eb35e1a923f39325007c6624b5
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72502890"
 ---
 # <a name="how-to-educate-your-end-users-about-microsoft-intune"></a>Como dar formação aos seus utilizadores finais sobre o Microsoft Intune

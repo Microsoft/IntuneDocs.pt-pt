@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 075e7a99f72de30e83447a2869154859e33356b9
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/22/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74390845"
 ---
 # <a name="use-and-manage-android-enterprise-devices-with-oemconfig-in-microsoft-intune"></a>Usar e gerenciar dispositivos Android Enterprise com o OEMConfig no Microsoft Intune
@@ -36,7 +36,7 @@ Esta funcionalidade aplica-se a:
 
 Este artigo descreve o OEMConfig, lista os pré-requisitos, mostra como criar um perfil de configuração e lista os aplicativos OEMConfig com suporte no Intune.
 
-## <a name="overview"></a>Descrição geral
+## <a name="overview"></a>Overview
 
 As políticas de OEMConfig são um tipo especial de política de configuração de dispositivo semelhante à [política de configuração de aplicativo](../apps/app-configuration-policies-overview.md). OEMConfig é um padrão definido pelo Google que aproveita a configuração de aplicativo no Android para enviar configurações de dispositivo para aplicativos escritos por OEMs (fabricantes originais de equipamento). Esse padrão permite que OEMs e EMMs (gerenciamento de mobilidade empresarial) criem e ofereçam suporte a recursos específicos de OEM de forma padronizada. [Saiba mais sobre o OEMConfig](https://blog.google/products/android-enterprise/oemconfig-supports-enterprise-device-features/).
 
@@ -159,6 +159,6 @@ Se um aplicativo OEMConfig existir para seu dispositivo, mas não estiver na tab
 > [!NOTE]
 > Os aplicativos OEMConfig devem ser integrados pelo Intune antes que possam ser configurados com perfis OEMConfig. Quando um aplicativo tem suporte, você não precisa entrar em contato com a Microsoft sobre como configurá-lo em seu locatário. Basta seguir as instruções nesta página.
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Próximos passos
 
 - [Atribua o perfil](device-profile-assign.md) e [monitorize o respetivo estado](device-profile-monitor.md).

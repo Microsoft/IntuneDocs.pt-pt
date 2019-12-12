@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: a4a8fa34673340e4adca7b64707d8c79d4808460
-ms.sourcegitcommit: 1cf063c98e1caae00a6e6fab821cc3254562bca9
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74290956"
 ---
 # <a name="reference-for-application-entities"></a>Referência para as entidades de aplicações
@@ -39,19 +39,19 @@ A categoria de **aplicativo** contém entidades para dispositivos que rastreiam 
 
 A entidade **appRevision** apresenta uma lista de todas as versões das aplicações.
 
-| Propriedade  | Descrição | Exemplo |
+| Propriedade  | Description | Exemplo |
 |---------|------------|--------|
 | appKey |Identificador exclusivo da Aplicação. |123 |
 | applicationId |Identificador exclusivo da Aplicação – semelhante à AppKey, mas esta é uma chave natural. |b66bc706-ffff-7437-0340-032819502773 |
-| revisão |A versão como mencionada pelo administrador durante o carregamento do binário. |2 |
-| Título |Nome da aplicação. |Excel |
-| publisher |Publicador da aplicação. |Microsoft |
+| revision |A versão como mencionada pelo administrador durante o carregamento do binário. |2 |
+| título |Nome da aplicação. |Excel |
+| publicador |Publicador da aplicação. |Microsoft |
 | UploadState |Estado de carregamento da aplicação. |1 |
 | appTypeKey |Referência ao AppType descrito na secção seguinte. | |
 | vppProgramTypeKey |Referência ao VppProgramType descrito abaixo. | |
 | creationTime |A hora em que esta revisão foi criada. |11/23/2016 12:00:00 AM |
 | modificadotime |A última vez em que algo relacionado com esta revisão foi alterado. |11/23/2016 12:00:00 AM |
-| size |Tamanho do binário. | |
+| tamanho |Tamanho do binário. | |
 | startDateInclusiveUTC |Data e hora em UTC em que a revisão da Aplicação foi criada no armazém de dados. |11/23/2016 12:00:00 AM |
 | endDateExclusiveUTC |Data e hora em UTC em que a revisão desta aplicação se tornou obsoleta. |11/23/2016 12:00:00 AM |
 | isCurrent |Indica se a versão desta Aplicação é atual ou não no armazém de dados. |True/False |
@@ -61,7 +61,7 @@ A entidade **appRevision** apresenta uma lista de todas as versões das aplicaç
 
 A entidade **appType** apresenta uma lista da origem da instalação de uma aplicação.
 
-| Propriedade  | Descrição |
+| Propriedade  | Description |
 |---------|------------|
 | appTypeID |ID do tipo |
 | appTypeKey |Chave de substituição da chave |
@@ -69,7 +69,7 @@ A entidade **appType** apresenta uma lista da origem da instalação de uma apli
 
 ### <a name="example"></a>Exemplo
 
-| AppTypeID  | Nome | Descrição |
+| AppTypeID  | Nome | Description |
 |---------|------------|--------|
 | 0 |Aplicação da loja Android | Uma aplicação da loja Android. |
 | 1 |Aplicação LOB Android | Uma aplicação de linha de negócios Android. |
@@ -90,7 +90,7 @@ A entidade **appType** apresenta uma lista da origem da instalação de uma apli
 
 A entidade **vppProgramType** apresenta uma lista de tipos de programas VPP possíveis para uma aplicação.
 
-| Propriedade  | Descrição |
+| Propriedade  | Description |
 |---------|------------|
 | vppProgramTypeID | ID do tipo. |
 | vppProgramTypeKey | Chave de substituição da chave. |
@@ -98,7 +98,7 @@ A entidade **vppProgramType** apresenta uma lista de tipos de programas VPP poss
 
 ### <a name="example"></a>Exemplo
 
-| VppProgramID  | Nome | Descrição |
+| VppProgramID  | Nome | Description |
 |---------|------------|--------|
 | 3DDA2474-470B-4503-9830-2665C21C1945 | Microsoft | Programa VPP da Microsoft. |
 | 00000000-0000-0000-0000-000000000000 | Ainda não está disponível | Valor predefinido, Sem VPP. |
@@ -110,7 +110,7 @@ A entidade **vppProgramType** apresenta uma lista de tipos de programas VPP poss
 
 A entidade **deinventário** lista os aplicativos encontrados no dispositivo no momento da coleta de inventário.
 
-| Propriedade  | Descrição |
+| Propriedade  | Description |
 |---------|------------|
 | deviceKey | Esta é uma referência à tabela de Dispositivos que contém o ID de dispositivo do Intune. |
 | dateKey | Referência à tabela de data que indica o dia do inventário. |
@@ -122,7 +122,7 @@ A entidade **deinventário** lista os aplicativos encontrados no dispositivo no 
 
 A entidade **mobileAppInstallState** representa o estado de instalação de um aplicativo móvel depois que ele tiver sido atribuído a um grupo que contém dispositivos, usuários ou ambos.
 
-| Propriedade | Descrição |
+| Propriedade | Description |
 |---|---|
 | appInstallStateKey | O ID exclusivo do estado de instalação da aplicação da sua conta. |
 | appInstallState | Valor Enum do estado de instalação da aplicação. |

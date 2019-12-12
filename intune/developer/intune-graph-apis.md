@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 1a5381d139247424d976b6b510d62681f623203a
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72490517"
 ---
 # <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>Como utilizar o Azure AD para aceder às APIs do Intune no Microsoft Graph
@@ -148,13 +148,13 @@ __Executar ações remotas que afetam o utilizador em dispositivos do Microsoft 
 __Leitura e escrita de dispositivos do Microsoft Intune__ | [DeviceManagementManagedDevices.ReadWrite.All](#mgd-rw)
 __Leitura de dispositivos do Microsoft Intune__ | [DeviceManagementManagedDevices.Read.All](#mgd-ro)
 __Leitura e escrita de definições de RBAC do Microsoft Intune__ | [DeviceManagementRBAC.ReadWrite.All](#rac-rw)
-__Leitura de definições de RBAC do Microsoft Intune__ | DeviceManagementRBAC. Read. All
+__Leitura de definições de RBAC do Microsoft Intune__ | DeviceManagementRBAC.Read.All
 __Leitura e escrita de aplicações do Microsoft Intune__ | [DeviceManagementApps.ReadWrite.All](#app-rw)
 __Leitura de aplicações do Microsoft Intune__ | [DeviceManagementApps.Read.All](#app-ro)
-__Leitura e escrita da Configuração e Políticas de Dispositivos do Microsoft Intune__ | DeviceManagementConfiguration. ReadWrite. All
+__Leitura e escrita da Configuração e Políticas de Dispositivos do Microsoft Intune__ | DeviceManagementConfiguration.ReadWrite.All
 __Leitura da Configuração e Políticas de Dispositivos do Microsoft Intune__ | [DeviceManagementConfiguration.Read.All](#cfg-ro)
 __Leitura e escrita da configuração do Microsoft Intune__ | [DeviceManagementServiceConfig.ReadWrite.All](#svc-rw)
-__Leitura da configuração do Microsoft Intune__ | DeviceManagementServiceConfig. Read. All
+__Leitura da configuração do Microsoft Intune__ | DeviceManagementServiceConfig.Read.All
 
 A tabela lista as definições tal como são apresentadas no portal do Azure. As secções a seguir descrevem os âmbitos por ordem alfabética.
 

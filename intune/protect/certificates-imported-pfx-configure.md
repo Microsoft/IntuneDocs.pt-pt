@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: d54c58523fdb44080b6c4210d639f9ad0ce476e2
-ms.sourcegitcommit: b5e719fb507b1bc4774674e76c856c435e69f68c
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/08/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73801521"
 ---
 # <a name="configure-and-use-imported-pkcs-certificates-with-intune"></a>Configurar e usar certificados PKCS importados com o Intune
@@ -145,7 +145,7 @@ O processo a seguir usa os cmdlets do PowerShell como um exemplo de como importa
 
 As opções incluem:  
 - Finalidade pretendida (agrupa certificados juntos com base em uma marca):  
-  - não atribuídos
+  - não atribuída
   - smimeEncryption
   - smimeSigning
 

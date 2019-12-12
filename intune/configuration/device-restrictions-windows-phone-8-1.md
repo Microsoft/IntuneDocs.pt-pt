@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: bc29a7a5026691371370b167a4445bfd70cc76bd
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72489800"
 ---
 # <a name="microsoft-intune-windows-phone-81-device-restriction-settings"></a>Definições de restrição de dispositivos Windows Phone 8.1 no Microsoft Intune
@@ -80,7 +80,7 @@ Exemplo: procure a aplicação Skype na loja. O URL que deve utilizar é `http:/
 
 ### <a name="additional-options"></a>Opções adicionais
 
-Você também pode clicar em **importar** para popular a lista de um arquivo CSV no formato <*url do aplicativo*>, < nome do*aplicativo*>, < do*Publicador de aplicativos*> ou clique em **Exportar** para criar um arquivo CSV contendo o conteúdo da restrição lista de aplicativos no mesmo formato.
+Você também pode clicar **em importar** para popular a lista de um arquivo CSV no formato <*url do aplicativo*>, <*nome do aplicativo*>, <*Editor do aplicativo*> ou clique em **Exportar** para criar um arquivo CSV contendo o conteúdo da lista de aplicativos restritos no mesmo formato.
 
 
 ## <a name="browser"></a>Browser

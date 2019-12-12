@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 7d89f512c06dcfbf6f6ddaba5e17ac9ca6f0becf
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72506804"
 ---
 # <a name="configure-the-take-a-test-app-on-windows-10-devices-using-intune"></a>Configurar o aplicativo fazer um teste em dispositivos Windows 10 usando o Intune
@@ -34,7 +34,7 @@ Depois de configurar o perfil, atribua-o e implante-o para seus alunos.
 
 ## <a name="before-you-begin"></a>Antes de começar
 
-[Criar um perfil de configuração de dispositivo](education-settings-configure.md#create-a-device-profile).
+[Criar um perfil de configuração do dispositivo](education-settings-configure.md#create-a-device-profile).
 
 ## <a name="take-a-test-settings"></a>Fazer uma configuração de teste
 Depois de criar um perfil de configuração de dispositivo, vá para **tipo de perfil** e selecione **avaliação segura (educação)** . Você encontrará as seguintes configurações do aplicativo fazer um teste. 

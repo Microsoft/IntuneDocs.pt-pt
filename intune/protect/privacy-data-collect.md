@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: e93e69b5cce2c54ae07410309b33870dd828f563
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72509079"
 ---
 # <a name="data-collection-in-intune"></a>Recolha de dados no Intune
@@ -45,7 +45,7 @@ A maior parte dos dados pessoais que o Intune recolhe são dados identificados. 
 
 Os dados identificados que o Intune recolhe podem incluir, entre outros: 
 
-- Informações do usuário
+- Informações do utilizador
   - Nome do proprietário/nome a apresentar do utilizador (o nome do utilizador registado no Azure conforme identificado pelo ID de Utilizador do Azure)
   - Nome Principal de Utilizador ou endereço de e-mail
   - Identidades de utilizador de terceiros (como o ID Apple)
@@ -61,10 +61,10 @@ Os dados identificados que o Intune recolhe podem incluir, entre outros:
   - Número de telefone
 - Informações de registo de auditoria, incluindo dados sobre as seguintes atividades
   - Gerir o Endpoint Protection do
-  - Criada
+  - Criar
   - Atualizar (editar)
   - Eliminar
-  - Cancele
+  - Atribuir
   - Tarefas remotas
 - Informações de suporte
   - Informações de contacto (nome, número de telefone, endereço de e-mail)
@@ -120,7 +120,7 @@ Os dados com pseudónimo que o Intune recolhe podem incluir, entre outros:
   - Etiqueta de dispositivo da aplicação gerida
   - ID de gestão de dispositivos do Intune
   - ID de dispositivo do Azure Active Directory
-  - Chaves de criptografia
+  - Chaves de encriptação
 
 ## <a name="aggregated-data"></a>Dados agregados
 

@@ -18,10 +18,10 @@ ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 7f395a9cedc72a8184cfe3e29d6fcd3117a1473d
-ms.sourcegitcommit: 259462591835f3607392aa6b179882dbac830a89
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/28/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72987450"
 ---
 # <a name="install-mobile-threat-defense"></a>Instalar a defesa contra ameaças móveis   
@@ -43,7 +43,7 @@ Sua organização não pode ver dados, como textos, emails e imagens, em seus ap
 * Pacote de aplicativo e tamanho dinâmico: a quantidade de espaço que um aplicativo usa em seu dispositivo. 
 
 
-## <a name="install-app"></a>Instalar aplicativo    
+## <a name="install-app"></a>Instalar a aplicação    
 Ao entrar em um aplicativo protegido, você será automaticamente solicitado a instalar um aplicativo MTD. Siga as etapas na tela para concluir a instalação. Use as etapas nesta seção para obter ajuda adicional.  
  
 Você também pode ser solicitado a registrar seu dispositivo. O registro é necessário para confirmar sua identidade e conectar sua conta de estudante ou corporativa ao seu dispositivo. Se você não estiver registrado, será automaticamente guiado por meio dessa configuração antes de instalar o aplicativo MTD. Quando chegar à tela **obter acesso** , você pode iniciar as etapas de instalação.  

@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 7a4d6db4f61dea1b073ccce7c4c3f727a91402c1
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/27/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74563644"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Como configurar a aplicação Portal da Empresa do Microsoft Intune
@@ -149,13 +149,13 @@ Os atalhos de teclado seguintes estão disponíveis na aplicação Portal da Emp
 
 | Área | Description | Atalho de teclado |
 |:------------------:|:--------------:|:-----------------:|
-| Menu de navegação | Navegação | Alt + M |
-|  | Casa | ALT + H |
-|  | Todas as aplicações | ALT + A |
+| Menu de navegação | Navegação | Alt+M |
+|  | Casa | Alt+H |
+|  | Todas as aplicações | Alt+A |
 |  | Aplicações instaladas | Alt+I |
-|  | Enviar feedback | ALT + F |
-|  | O meu perfil | Alt + U |
-|  | Definições | ALT + T |
+|  | Enviar feedback | Alt+F |
+|  | O meu perfil | Alt+U |
+|  | Definições | Alt+T |
 | Base – Mosaico Dispositivo | Mudar o nome | F2 |
 |  | Remove | Ctrl+D ou Delete |
 |  | Verificar o acesso | Ctrl+M ou F9 |
@@ -163,7 +163,7 @@ Os atalhos de teclado seguintes estão disponíveis na aplicação Portal da Emp
 |  | Remove | Ctrl+D ou Delete |
 |  | Verificar o acesso | Ctrl+M ou F9 |
 | Detalhes da aplicação | Instalar | Ctrl+I |
-| Dispositivos | Disponível | CTRL + D |
+| Dispositivos | Disponível | Ctrl+D |
 
 Os utilizadores finais também poderão ver os atalhos disponíveis na aplicação Portal da Empresa no Windows.
 
@@ -187,12 +187,12 @@ Algumas plataformas e configurações não permitem ações de dispositivo de au
 |  | Windows 10<sup>(3)</sup> | iOS/iPadOS<sup>(3)</sup> | MacOS<sup>(3)</sup> | Android<sup>(3)</sup> |
 |----------------------|--------------------------|-------------------|-----------------------------------|-------------------------|
 | Extinguir | Disponível<sup>(1)</sup> | Disponível | Disponível | Disponível<sup>(7)</sup> |
-| Eliminação | Disponível | Disponível<sup>(5)</sup> | NA | Disponível<sup>(7)</sup> |
+| Eliminação | Disponível | Disponível<sup>(5)</sup> | ND | Disponível<sup>(7)</sup> |
 | Renomear<sup>(4)</sup> | Disponível | Disponível | Disponível | Disponível |
-| Sincronizá | Disponível | Disponível | Disponível | Disponível |
+| Sincronizar | Disponível | Disponível | Disponível | Disponível |
 | Bloqueio Remoto | Somente Windows Phone | Disponível | Disponível | Disponível |
-| Redefinir senha | Somente Windows Phone | Disponível<sup>(8)</sup> | NA | Disponível<sup>(6)</sup> |
-| Recuperação de chave | NA | NA | Disponível<sup>(2)</sup> | NA |
+| Repor Código de Acesso | Somente Windows Phone | Disponível<sup>(8)</sup> | ND | Disponível<sup>(6)</sup> |
+| Recuperação de Chaves | ND | ND | Disponível<sup>(2)</sup> | ND |
 
 <sup>(1)</sup> a **desativação** é sempre bloqueada em dispositivos Windows ingressados no Azure AD.<br>
 <sup>(2)</sup> a **recuperação de chave** para MacOS só está disponível por meio do portal da Web.<br>

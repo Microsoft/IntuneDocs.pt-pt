@@ -1,7 +1,7 @@
 ---
 title: Tem de desativar a depuração de USB | Documentos da Microsoft
 titlesuffix: Microsoft Intune
-description: Você precisa desativar a depuração de USB em nosso dispositivo.
+description: Terá de desativar a depuração de USB no nosso dispositivo.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -19,10 +19,10 @@ ROBOTS: ''
 ms.custom: intune-enduser; seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 397244755457e784899438d307053bdf6f754fd0
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72500459"
 ---
 # <a name="you-need-to-turn-off-usb-debugging"></a>Tem de desativar a depuração de USB

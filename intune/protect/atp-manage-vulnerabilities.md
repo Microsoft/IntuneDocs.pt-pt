@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: a9529f5b3047a8d4ca2a1e9c22d2c4427761078c
-ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73754891"
 ---
 # <a name="use-intune-to-remediate-vulnerabilities-identified-by-microsoft-defender-atp"></a>Usar o Intune para corrigir vulnerabilidades identificadas pelo Microsoft defender ATP
@@ -45,7 +45,7 @@ As ações comuns para correção incluem:
 - **Desabilitar** ou **habilitar** uma configuração para afetar a vulnerabilidade.
 - **Exigir atenção** alerta o administrador para a ameaça quando não há recomendação adequada para fornecer.
 
-Um fluxo de trabalho de exemplo:
+Exemplo de fluxo de trabalho:
 
 - No Microsoft defender ATP, uma vulnerabilidade para um aplicativo chamado contoso Media Player v4 é descoberta e um administrador cria uma tarefa de segurança para atualizar esse aplicativo. O player de mídia da Contoso é um aplicativo não gerenciado que foi implantado com o Intune.
 
@@ -65,7 +65,7 @@ Um fluxo de trabalho de exemplo:
 
 ## <a name="prerequisites"></a>Pré-requisitos  
 
-**Assinaturas**:
+**Subscrições**:
 
 - Microsoft Intune  
 - Proteção avançada contra ameaças do Microsoft defender ([Inscreva-se para uma avaliação gratuita](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-main-abovefoldlink)).

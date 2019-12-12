@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 504c77fb56918cf97312e70f50b38356f9f7efef
-ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/22/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74409703"
 ---
 # <a name="create-mobile-threat-defense-mtd-device-compliance-policy-with-intune"></a>Criar a política de conformidade de dispositivos da Defesa Contra Ameaças para Dispositivos Móveis (MTD) com o Intune
@@ -77,6 +77,6 @@ Para atribuir uma política de conformidade do dispositivo aos usuários:
 
 4. Selecione salvar para concluir a atribuição. Quando você salva a atribuição, a política é implantada em seus usuários selecionados e seus dispositivos são avaliados quanto à conformidade.
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Próximos passos
 
 [Ativar a Defesa Contra Ameaças para Dispositivos Móveis no Intune](mtd-connector-enable.md)

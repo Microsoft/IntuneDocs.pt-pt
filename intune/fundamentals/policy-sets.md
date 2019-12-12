@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: e539f44fc9c9b4e7382368c0f3ad9f79bb1c98b1
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/18/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72585877"
 ---
 # <a name="use-policy-sets-to-group-collections-of-management-objects"></a>Usar conjuntos de políticas para agrupar coleções de objetos de gerenciamento
@@ -57,7 +57,7 @@ Ao criar um conjunto de políticas, você cria uma única unidade de atribuiçã
 ## <a name="how-to-create-a-policy-set"></a>Como criar um conjunto de políticas
 
 1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Na folha **Intune** , escolha **conjuntos de políticas**  > **conjuntos de políticas**  > **criar**.
+2. Na folha **Intune** , escolha **conjuntos de políticas** > **conjuntos de políticas** > **criar**.
 3. Na página **noções básicas** , adicione os seguintes valores:
     - **Nome do conjunto de políticas** – forneça um nome para esse conjunto de políticas.
     - **Descrição** – opcionalmente, forneça uma descrição para o conjunto de políticas.

@@ -1,7 +1,7 @@
 ---
 title: A sua versão do Windows ainda não é suportada | Documentos da Microsoft
 titlesuffix: Microsoft Intune
-description: Ainda não há suporte para a versão do sistema operacional do dispositivo Windows.
+description: Versão do sistema operativo do seu dispositivo Windows ainda não é suportada.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -21,10 +21,10 @@ ms.suite: ems
 ms.custom: intune-enduser; seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 122c4c9db86279b105749ae35834a4ee88c76fc6
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72507617"
 ---
 # <a name="your-windows-devices-operating-system-version-isnt-yet-supported"></a>A versão do sistema operativo Windows do dispositivo ainda não é suportada

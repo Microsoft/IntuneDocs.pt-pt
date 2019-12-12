@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 7567f0ee8c2bac5c3cf3c4e0fae027bdec35e27e
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/27/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74563559"
 ---
 # <a name="add-an-android-line-of-business-app-to-microsoft-intune"></a>Adicionar aplicações de linha de negócio Android ao Microsoft Intune

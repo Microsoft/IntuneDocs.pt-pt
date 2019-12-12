@@ -18,10 +18,10 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.openlocfilehash: 13d6a2b9cdc8596c7f5cf81218377754e9412be1
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/22/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74390310"
 ---
 # <a name="use-device-encryption-with-intune"></a>Usar a criptografia de dispositivo com o Intune
@@ -77,7 +77,7 @@ Para obter detalhes sobre a configuração de FileVault que você pode gerenciar
    >
    > Quando **desabilitar prompt na saída** estiver definido como *não configurado*, o **número de vezes permitido para bypass** pode *não ser configurado* ou ter um valor.
    >
-   > Esse problema será resolvido em uma atualização futura.
+   > Este problema será resolvido numa atualização futura.
 
 8. Conclua a configuração de configurações adicionais e salve o perfil.  
 
@@ -114,7 +114,7 @@ Configure o BitLocker ao criar um [perfil de configuração de dispositivo](../c
 
 6. Conclua a configuração de configurações adicionais e salve o perfil.
 
-### <a name="manage-bitlocker"></a>Gerenciar o BitLocker
+### <a name="manage-bitlocker"></a>Gerir o BitLocker
 
 Depois que o Intune criptografar um dispositivo Windows 10 com o BitLocker, você poderá exibir e recuperar as chaves de recuperação do BitLocker ao exibir o [relatório de criptografia](encryption-monitor.md)do Intune.
 
@@ -142,7 +142,7 @@ Os dispositivos devem atender aos seguintes pré-requisitos para dar suporte à 
 
 3. Na lista de dispositivos que você gerencia, selecione um dispositivo, selecione **mais**e, em seguida, selecione a ação remota do dispositivo de **rotação de chave do BitLocker** .
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Criar [uma política de conformidade do dispositivo](compliance-policy-create-windows.md) .
 
@@ -153,5 +153,5 @@ Use o relatório de criptografia para gerenciar:
 
 Examine as configurações de criptografia que você pode configurar com o Intune para:
 
-- [Pelo](endpoint-protection-windows-10.md#windows-encryption)
+- [BitLocker](endpoint-protection-windows-10.md#windows-encryption)
 - [FileVault](endpoint-protection-macos.md#filevault)

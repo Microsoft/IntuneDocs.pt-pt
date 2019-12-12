@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 9afaf2c8a63bfaed1fdb593baf42c8fa258d7893
-ms.sourcegitcommit: 1a22b8b31424847d3c86590f00f56c5bc3de2eb5
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74266336"
 ---
 # <a name="using-windows-10-virtual-machines-with-intune"></a>Usando máquinas virtuais do Windows 10 com o Intune

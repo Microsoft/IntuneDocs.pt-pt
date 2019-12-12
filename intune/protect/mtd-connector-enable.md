@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: b8243ae4014660a76c6327afd9c970ce8a9eae58
-ms.sourcegitcommit: 960ffb2214c35d75ad219fa2571a999529a0abd4
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/25/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74478849"
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune"></a>Ativar o conector da Defesa Contra Ameaças para Dispositivos Móveis no Intune
@@ -96,6 +96,6 @@ Para saber mais sobre como usar conectores de defesa contra ameaças móveis par
 > [!TIP]
 > Pode ver o **Estado da ligação** e a hora da **Última sincronização** entre o Intune e o parceiro MTD no painel de Defesa Contra Ameaças para Dispositivos Móveis.
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Próximos passos
 
 - [Criar política de proteção de aplicativo MTD (defesa contra ameaças móveis) com o Intune](~/protect/mtd-app-protection-policy.md).

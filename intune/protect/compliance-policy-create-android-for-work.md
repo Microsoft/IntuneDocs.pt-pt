@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: be1fbb72821b61566da84d6f98094c9a2f6ffef2
-ms.sourcegitcommit: 3ace4cba6e2f6fefa9120be3807387a49b200c9b
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/23/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72810254"
 ---
 # <a name="android-enterprise-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Definições do Android Enterprise para marcar dispositivos como conformes ou não conformes com o Intune
@@ -115,7 +115,7 @@ Enquanto administrador do Intune, utilize estas definições de conformidade par
 
     - **Número de caracteres que não são de letra necessários**: Insira o número de letras que não sejam maiúsculas (algo que não seja letras no alfabeto) que a senha deve ter, entre 0 e 16 caracteres.
 
-    - **Número de caracteres numéricos necessários**: Insira o número de caracteres numéricos (`1`, `2`, `3` e assim por diante) que a senha deve ter, entre 0 e 16 caracteres.
+    - **Número de caracteres numéricos necessários**: Insira o número de caracteres numéricos (`1`, `2`, `3`e assim por diante) que a senha deve ter, entre 0 e 16 caracteres.
     
     - **Número de caracteres de símbolo necessários**: Insira o número de caracteres de símbolo (`&`, `#`, `%`e assim por diante) que a senha deve ter, entre 0 e 16 caracteres.
  

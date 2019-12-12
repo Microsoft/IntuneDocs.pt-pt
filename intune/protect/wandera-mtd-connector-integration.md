@@ -16,10 +16,10 @@ ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: f42acb38d84394a6b61fa16072de6320b84a67b5
-ms.sourcegitcommit: 1a5b185acd27954b10b6d59409d82eb80fd71284
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/21/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72681298"
 ---
 # <a name="integrate-wandera-mobile-threat-protection-with-intune"></a>Integre a proteção contra ameaças móveis do com o Intune  
@@ -62,7 +62,7 @@ A instalação do *EMM Connect* para o backr requer um processo de configuraçã
 
 3. No painel defesa contra ameaças móveis, selecione o conector **de MTD da** lista de conectores para abrir o painel *Editar conector* . Selecione **abrir o console de administração do** onit para abrir o [radar](https://radar.wandera.com/login), o console de administração do de saída e entre. 
 
-4. No console do backit, acesse **configurações** > **EMM Integration**e selecione a guia **EMM Connect** . Use a lista suspensa *fornecedor do EMM* e selecione *Microsoft Intune*.
+4. No console do backit, acesse **configurações** > **EMM integração**e selecione a guia **EMM Connect** . Use a lista suspensa *fornecedor do EMM* e selecione *Microsoft Intune*.
 
    ![Selecione Intune](./media/wandera-mtd-connector-integration/set-up-intune-in-radar.png)
 
@@ -89,7 +89,7 @@ Para implantar o, você adicionará os aplicativos móveis do backit para as pla
 
 As seções e os procedimentos a seguir guiarão você pelo processo.
 
-Para obter mais informações sobre esse processo do, entre no [radar](https://radar.wandera.com/login)de entrada. Acesse **configurações** > **EMM integração**, selecione a guia **push de aplicativo** e, em seguida, selecione **Microsoft Intune**. A guia push de aplicativo é atualizada com instruções que são específicas para o Intune.  
+Para obter mais informações sobre esse processo do, entre no [radar](https://radar.wandera.com/login)de entrada. Vá para **configurações** > **integração do EMM**, selecione a guia **push de aplicativo** e, em seguida, selecione **Microsoft Intune**. A guia push de aplicativo é atualizada com instruções que são específicas para o Intune.  
 
 ### <a name="add-the-wandera-apps"></a>Adicionar os aplicativos do inphonea  
 Crie aplicativos cliente no Intune para implantar o aplicativo do backit em dispositivos Android e iOS. Consulte [adicionar aplicativos do MTD](mtd-apps-ios-app-configuration-policy-add-assign.md) para obter os procedimentos e detalhes personalizados específicos para os aplicativos do.  
@@ -122,7 +122,7 @@ Repita o procedimento a seguir para o aplicativo do onit que você criou para iO
 
 3. No painel *Adicionar grupo* , para *tipo de atribuição* , selecione **obrigatório**.
 
-4. Selecione **grupos incluídos**e **selecione grupos a serem incluídos**. Especifique o grupo que você criou para a sincronização de e, em seguida, clique em **selecionar** > **OK** > **OK**. Selecione **salvar** para concluir a atribuição de grupo.  
+4. Selecione **grupos incluídos**e **selecione grupos a serem incluídos**. Especifique o grupo que você criou para a sincronização de vagaa e clique em **selecionar** > **OK** > **OK**. Selecione **salvar** para concluir a atribuição de grupo.  
  
 
 ## <a name="next-steps"></a>Passos Seguintes  

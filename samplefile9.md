@@ -1,14 +1,14 @@
 ---
 ms.openlocfilehash: 5cd0183234a1b5f1e3c9a301e8ec1c8f4ca1e333
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "61509691"
 ---
 # <a name="required-metadata"></a>metadados necessários
 
-Título: [título do artigo | Descrição do nome do serviço]: palavras-chave: autor: Gestor de [nome de utilizador do GITHUB]: [ALIAS] MS: 04/28/2016 topic: artigo MS. Prod: MS. Service: MS. Technology: MS. AssetID: [obter um de guidgenerator.com]
+title: [ARTICLE TITLE | SERVICE NAME] description: keywords: author: [GITHUB USERNAME] manager: [ALIAS] ms.date: 04/28/2016 ms.topic: article ms.prod: ms.service: ms.technology: ms.assetid: [GET ONE FROM guidgenerator.com]
 
 # <a name="optional-metadata"></a>metadados opcionais
 
@@ -17,7 +17,7 @@ Título: [título do artigo | Descrição do nome do serviço]: palavras-chave: 
 #<a name="msdevlang"></a>ms.devlang:
 #<a name="msreviewer-alias"></a>ms.reviewer: [ALIAS]
 #<a name="mssuite-ems"></a>ms.suite: ems
-#<a name="mstgtpltfrm"></a>ms.tgt_pltfrm:
+#<a name="mstgt_pltfrm"></a>ms.tgt_pltfrm:
 #<a name="mscustom"></a>ms.custom:
 
 ---

@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 5092fa37f0bf6bd1320fa06fa58ac5e36f55aa3c
-ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/22/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74410191"
 ---
 # <a name="use-certificates-for-authentication-in-microsoft-intune"></a>Usar certificados para autenticação no Microsoft Intune
@@ -32,9 +32,9 @@ Use certificados com o Intune para autenticar seus usuários em aplicativos e re
 
 | Tipo              | Autenticação | Assinatura S/MIME | Criptografia S/MIME  |
 |--|--|--|--|
-| Certificado de padrões de criptografia de chave pública (PKCS) importado |  | ![Suportadas](./media/certificates-configure/green-check.png) | ![Suportadas](./media/certificates-configure/green-check.png)|
-| PKCS#12 (ou PFX)    | ![Suportadas](./media/certificates-configure/green-check.png) | ![Suportadas](./media/certificates-configure/green-check.png) |  |
-| Protocolo SCEP (Simple Certificate Enrollment Protocol)  | ![Suportadas](./media/certificates-configure/green-check.png) | ![Suportadas](./media/certificates-configure/green-check.png) | |
+| Certificado de padrões de criptografia de chave pública (PKCS) importado |  | ![Suportado](./media/certificates-configure/green-check.png) | ![Suportado](./media/certificates-configure/green-check.png)|
+| PKCS#12 (ou PFX)    | ![Suportado](./media/certificates-configure/green-check.png) | ![Suportado](./media/certificates-configure/green-check.png) |  |
+| Protocolo SCEP (Simple Certificate Enrollment Protocol)  | ![Suportado](./media/certificates-configure/green-check.png) | ![Suportado](./media/certificates-configure/green-check.png) | |
 
 Para implantar esses certificados, você criará e atribuirá perfis de certificado a dispositivos.
 
@@ -77,17 +77,17 @@ Quando você usa uma autoridade de certificação (CA) de terceiros (que não se
 
 ## <a name="supported-platforms-and-certificate-profiles"></a>Plataformas com suporte e perfis de certificado
 
-| Plataforma              | Perfil de certificado confiável | Perfil de certificado PKCS | Perfil de certificado SCEP | Perfil de certificado importado PKCS  |
+| Platform              | Perfil de certificado confiável | Perfil de certificado PKCS | Perfil de certificado SCEP | Perfil de certificado importado PKCS  |
 |--|--|--|--|---|
-| Administrador do dispositivo Android | ![Suportadas](./media/certificates-configure/green-check.png) | ![Suportadas](./media/certificates-configure/green-check.png) | ![Suportadas](./media/certificates-configure/green-check.png)|  ![Suportadas](./media/certificates-configure/green-check.png) |
-| Android Enterprise <br> -Totalmente gerenciado (proprietário do dispositivo)   | ![Suportadas](./media/certificates-configure/green-check.png) |   | ![Suportadas](./media/certificates-configure/green-check.png) |   |
-| Android Enterprise <br> -Dedicado (proprietário do dispositivo)   | ![Suportadas](./media/certificates-configure/green-check.png)  |   | ![Suportadas](./media/certificates-configure/green-check.png)  |   |
-| Android Enterprise <br> -Perfil de trabalho    | ![Suportadas](./media/certificates-configure/green-check.png) | ![Suportadas](./media/certificates-configure/green-check.png) | ![Suportadas](./media/certificates-configure/green-check.png) | ![Suportadas](./media/certificates-configure/green-check.png) |
-| iOS                   | ![Suportadas](./media/certificates-configure/green-check.png) | ![Suportadas](./media/certificates-configure/green-check.png) | ![Suportadas](./media/certificates-configure/green-check.png) | ![Suportadas](./media/certificates-configure/green-check.png) |
-| macOS                 | ![Suportadas](./media/certificates-configure/green-check.png) |  ![Suportadas](./media/certificates-configure/green-check.png) |![Suportadas](./media/certificates-configure/green-check.png)|![Suportadas](./media/certificates-configure/green-check.png)|
-| Windows Phone 8.1     |![Suportadas](./media/certificates-configure/green-check.png)  |  | ![Suportadas](./media/certificates-configure/green-check.png)| ![Suportadas](./media/certificates-configure/green-check.png) |
-| Windows 8.1 e posterior |![Suportadas](./media/certificates-configure/green-check.png)  |  |![Suportadas](./media/certificates-configure/green-check.png) |   |
-| Windows 10 e posterior  | ![Suportadas](./media/certificates-configure/green-check.png) | ![Suportadas](./media/certificates-configure/green-check.png) | ![Suportadas](./media/certificates-configure/green-check.png) | ![Suportadas](./media/certificates-configure/green-check.png) |
+| Administrador do dispositivo Android | ![Suportado](./media/certificates-configure/green-check.png) | ![Suportado](./media/certificates-configure/green-check.png) | ![Suportado](./media/certificates-configure/green-check.png)|  ![Suportado](./media/certificates-configure/green-check.png) |
+| Android Enterprise <br> -Totalmente gerenciado (proprietário do dispositivo)   | ![Suportado](./media/certificates-configure/green-check.png) |   | ![Suportado](./media/certificates-configure/green-check.png) |   |
+| Android Enterprise <br> -Dedicado (proprietário do dispositivo)   | ![Suportado](./media/certificates-configure/green-check.png)  |   | ![Suportado](./media/certificates-configure/green-check.png)  |   |
+| Android Enterprise <br> -Perfil de trabalho    | ![Suportado](./media/certificates-configure/green-check.png) | ![Suportado](./media/certificates-configure/green-check.png) | ![Suportado](./media/certificates-configure/green-check.png) | ![Suportado](./media/certificates-configure/green-check.png) |
+| iOS                   | ![Suportado](./media/certificates-configure/green-check.png) | ![Suportado](./media/certificates-configure/green-check.png) | ![Suportado](./media/certificates-configure/green-check.png) | ![Suportado](./media/certificates-configure/green-check.png) |
+| macOS                 | ![Suportado](./media/certificates-configure/green-check.png) |  ![Suportado](./media/certificates-configure/green-check.png) |![Suportado](./media/certificates-configure/green-check.png)|![Suportado](./media/certificates-configure/green-check.png)|
+| Wnodows Phone 8.1     |![Suportado](./media/certificates-configure/green-check.png)  |  | ![Suportado](./media/certificates-configure/green-check.png)| ![Suportado](./media/certificates-configure/green-check.png) |
+| Windows 8.1 e posterior |![Suportado](./media/certificates-configure/green-check.png)  |  |![Suportado](./media/certificates-configure/green-check.png) |   |
+| Windows 10 e posterior  | ![Suportado](./media/certificates-configure/green-check.png) | ![Suportado](./media/certificates-configure/green-check.png) | ![Suportado](./media/certificates-configure/green-check.png) | ![Suportado](./media/certificates-configure/green-check.png) |
 
 ## <a name="export-the-trusted-root-ca-certificate"></a>Exportar o certificado de AC raiz confiável
 
@@ -139,7 +139,7 @@ O perfil aparece na lista de perfis na janela *dispositivos – perfis de config
 - [Use S/MIME to sign and encrypt emails (Utilizar S/MIME para assinar e encriptar e-mails)](certificates-s-mime-encryption-sign.md)  
 - [Usar autoridade de certificação de terceiros](certificate-authority-add-scep-overview.md)  
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Crie perfis de certificado SCEP, PKCS ou PKCS importados para cada plataforma que você deseja usar. Para continuar, consulte os seguintes artigos:
 

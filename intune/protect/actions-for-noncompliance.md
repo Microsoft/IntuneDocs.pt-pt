@@ -16,10 +16,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 9e3867bfc2de29c059766e134bd0d2c8801e1c70
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73712883"
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices-in-intune"></a>Automatizar email e adicionar ações para dispositivos não compatíveis no Intune
@@ -80,7 +80,7 @@ Para enviar um e-mail aos seus utilizadores, crie um modelo de mensagem de notif
 
    ![Exemplo de uma mensagem de notificação de conformidade no Intune](./media/actions-for-noncompliance/actionsfornoncompliance-1.PNG)
 
-   Selecione **Avançar** para continuar.
+   Selecione **Seguinte** para continuar.
 
 5. Em **revisão + criar**, examine suas configurações para garantir que o modelo de mensagem de notificação esteja pronto para uso. Selecione **criar** para concluir a criação da notificação.
 
