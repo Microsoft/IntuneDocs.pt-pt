@@ -16,10 +16,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: cf872387d6e6f4f91af9f074f54695b081b79119
-ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/26/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74549537"
 ---
 # <a name="use-update-channel-and-target-version-settings-to-update-office-365-with-microsoft-intune-administrative-templates"></a>Use as configurações de canal de atualização e versão de destino para atualizar o Office 365 com Microsoft Intune Modelos Administrativos
@@ -30,7 +30,7 @@ Nesse cenário, você cria um modelo administrativo no Intune que atualiza o Off
 
 Para obter mais informações sobre modelos administrativos, consulte [modelos do Windows 10 para definir configurações de política de grupo](administrative-templates-windows.md).
 
-Aplica-se a:
+Aplica-se a
 
 - Windows 10 e posterior
 - Office 365

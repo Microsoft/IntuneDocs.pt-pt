@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: a104b4d41a364c552a8ebac73ff3341af71d6d21
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/27/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74564170"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Adicionar políticas de configuração da aplicação para dispositivos iOS geridos
@@ -105,7 +105,7 @@ Para dispositivos iOS, use os seguintes pares de chave/valor:
 
 | **Chave** | IntuneMAMAllowedAccountsOnly |
 |--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Os** | <ul><li>**Ativada**: a única conta autorizada é a conta de utilizador gerido definida pela chave [IntuneMAMUPN](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).</li><li>**Desativado** (ou qualquer valor que não seja sensível a maiúsculas/minúsculas que corresponda a **ativado**): qualquer conta é permitida.</li></ul> |.
+| **Valores** | <ul><li>**Ativada**: a única conta autorizada é a conta de utilizador gerido definida pela chave [IntuneMAMUPN](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).</li><li>**Desativado** (ou qualquer valor que não seja sensível a maiúsculas/minúsculas que corresponda a **ativado**): qualquer conta é permitida.</li></ul> |.
 
    > [!NOTE]
    > Você deve usar o OneDrive para iOS 10,34 ou posterior, o Outlook para iOS 2.99.0 ou posterior ou o Edge para iOS 44.8.7 ou posterior e o aplicativo deve ser direcionado com [políticas de proteção de aplicativo do Intune](app-protection-policy.md) ao permitir apenas contas de organização configuradas com várias identidades.

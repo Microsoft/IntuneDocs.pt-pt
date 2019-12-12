@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 1800fa91ed5650fd57a31d24fdb3767a60dc5816
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/27/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74563784"
 ---
 # <a name="quickstart-create-and-assign-an-app-protection-policy"></a>Guia de Início Rápido: criar e atribuir uma política de proteção de aplicações

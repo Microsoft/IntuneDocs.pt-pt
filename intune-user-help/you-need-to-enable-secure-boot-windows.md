@@ -1,6 +1,6 @@
 ---
 title: Necessita de ativar o Arranque Seguro | Documentos da Microsoft
-description: Você precisa habilitar a inicialização segura.
+description: Tem de ativar o arranque seguro.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -20,10 +20,10 @@ ms.suite: ems
 ms.custom: intune-enduser; seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: f523e78df09716b94143c4efbba24ee8492ab7bf
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72501041"
 ---
 # <a name="you-need-to-enable-secure-boot"></a>Necessita de ativar o Arranque Seguro

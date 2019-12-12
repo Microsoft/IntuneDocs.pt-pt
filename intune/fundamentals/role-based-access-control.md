@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 4a03366037f9b0eced70f0375b3f4b39401e3141
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72509820"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>RBAC (controle de acesso baseado em função) com Microsoft Intune
@@ -34,10 +34,10 @@ Para criar, editar ou atribuir funções, a sua conta tem de ter uma das seguint
 
 Para obter conselhos e sugestões sobre o Intune RBAC, você pode conferir esta série de cinco vídeos que demonstram exemplos e passo a passos: [1](https://www.youtube.com/watch?v=5deXLMLcnKY), [2](https://www.youtube.com/watch?v=38dnMBLuxbQ), [3](https://www.youtube.com/watch?v=6vqg9cAkMbY), [4](https://www.youtube.com/watch?v=5yOLajFFMHE), [5](https://www.youtube.com/watch?v=P5DDvsSF4Wk).
 
-## <a name="roles"></a>Papéis
+## <a name="roles"></a>Roles
 Uma função define o conjunto de permissões concedidos aos usuários atribuídos a essa função.
 Você pode usar as funções internas e personalizadas. As funções internas abrangem alguns cenários comuns do Intune. Você pode [criar suas próprias funções personalizadas](create-custom-role.md) com o conjunto exato de permissões necessárias. Várias funções Azure Active Directory têm permissões para o Intune.
-Para ver uma função, escolha **Intune** > **funções** > **todas as funções** > escolher uma função. Você verá as seguintes páginas:
+Para ver uma função, escolha > **funções** do **Intune** > **todas as funções** > escolher uma função. Você verá as seguintes páginas:
 
 - **Propriedades**: o nome, a descrição, o tipo, as atribuições e as marcas de escopo da função. 
 - **Permissões**: lista um longo conjunto de alternâncias que definem quais permissões a função tem.
@@ -59,14 +59,14 @@ Você pode criar suas próprias funções com permissões personalizadas. Para o
 ### <a name="azure-active-directory-roles-with-intune-access"></a>Azure Active Directory funções com acesso ao Intune
 | Azure Active Directory função | Todos os dados do Intune | Dados de auditoria do Intune |
 | --- | :---: | :---: |
-| Administrador Global | Leitura/gravação | Leitura/gravação |
-| Administrador de Serviços do Intune | Leitura/gravação | Leitura/gravação |
-| Administrador de acesso condicional | Nenhum | Nenhum |
-| Administrador de segurança | Somente leitura | Somente leitura |
-| Operador de segurança | Somente leitura | Somente leitura |
-| Leitor de segurança | Somente leitura | Somente leitura |
-| Administrador de conformidade | Nenhum | Somente leitura |
-| Administrador de dados de conformidade | Nenhum | Somente leitura |
+| Administrador Global | Leitura/escrita | Leitura/escrita |
+| Administrador de Serviços do Intune | Leitura/escrita | Leitura/escrita |
+| Administrador de Acesso Condicional | Nenhum | Nenhum |
+| Administrador de Segurança | Só de leitura | Só de leitura |
+| Operador de segurança | Só de leitura | Só de leitura |
+| Leitor de Segurança | Só de leitura | Só de leitura |
+| Administrador de conformidade | Nenhum | Só de leitura |
+| Administrador de dados de conformidade | Nenhum | Só de leitura |
 | Leitor global | Somente leitura | Somente leitura |
 
 > [!TIP]
@@ -84,7 +84,7 @@ Uma atribuição de função define:
 - quais recursos eles podem alterar.
 
 Você pode atribuir funções personalizadas e internas a seus usuários. Para receber uma função do Intune, o usuário deve ter uma licença do Intune.
-Para ver uma atribuição de função, escolha **Intune** > **funções** > **todas as funções** > escolha uma função > escolha uma atribuição. Você verá as seguintes páginas:
+Para ver uma atribuição de função, escolha > **funções** do **Intune** > **todas as funções** > escolha uma função > escolha uma atribuição. Você verá as seguintes páginas:
 
 - **Propriedades**: o nome, a descrição, a função, os membros, os escopos e as marcas da atribuição.
 - **Membros**: todos os usuários nos grupos de segurança do Azure listados têm permissão para gerenciar os usuários/dispositivos listados em escopo (grupos).

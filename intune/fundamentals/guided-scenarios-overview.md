@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 460cabead711e6fa4559bcec39e556448cdf2237
-ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
+ms.openlocfilehash: ebb17324355fff9631ef74a76388ef0ab797d437
+ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73635372"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74899132"
 ---
 # <a name="intune-guided-scenarios-overview"></a>Visão geral dos cenários guiados do Intune 
 
@@ -33,7 +33,7 @@ Cenários guiados não são um espaço de gerenciamento diferente dos fluxos de 
 
 ## <a name="types-of-guided-scenarios"></a>Tipos de cenários orientados 
 
-Para simplificar, todos os cenários guiados omitem recursos de escopo complexos, como marcas de escopo <link>, grupos de exclusão e atribuições de grupo virtual <link>. Todos os recursos criados por um cenário guiado herdarão cada marca de escopo do administrador que conclui o cenário. Determinados cenários oferecem algum nível de personalização para configuração comum para abranger cenários bem relacionados. Esses cenários oferecem suporte à atribuição de grupo apenas para grupos de inclusão. Para outros cenários orientados, todo o cenário garante uma experiência consistente ao não oferecer nenhuma personalização e gera automaticamente um novo grupo para receber todas as atribuições. Depois que o cenário guiado for concluído, você poderá usar atribuições mais sofisticadas diretamente por meio de políticas existentes, cargas de trabalho de aplicativo e perfil.  
+Para simplificar, todos os cenários guiados omitem recursos de escopo complexos, tais como marcas de escopo, grupos de exclusão e atribuições de grupo virtual. Todos os recursos criados por um cenário guiado herdarão cada marca de escopo do administrador que conclui o cenário. Determinados cenários oferecem algum nível de personalização para configuração comum para abranger cenários bem relacionados. Esses cenários oferecem suporte à atribuição de grupo apenas para grupos de inclusão. Para outros cenários orientados, todo o cenário garante uma experiência consistente ao não oferecer nenhuma personalização e gera automaticamente um novo grupo para receber todas as atribuições. Depois que o cenário guiado for concluído, você poderá usar atribuições mais sofisticadas diretamente por meio de políticas existentes, cargas de trabalho de aplicativo e perfil.  
 
 Os cenários a seguir são guiados: 
 - Implantar o Microsoft Edge para dispositivos móveis 
@@ -44,7 +44,7 @@ Os cenários a seguir são guiados:
 
 Cenários orientados oferecem funcionalidade específica. Os detalhes a seguir ajudam a explicar o que você pode e não pode fazer ao seguir um cenário guiado.
 
-### <a name="launching"></a>Carregamento  
+### <a name="launching"></a>Launching  
 
 Todos os cenários guiados estão disponíveis no **[portal de gerenciamento de dispositivos](https://devicemanagement.microsoft.com)**  > solução de **problemas + suporte** > **cenários orientados**. 
 
@@ -60,7 +60,7 @@ A próxima etapa é implantar o cenário. A implantação de um cenário cria e 
 > A lista apresentada no final do cenário guiado não é salva e só é visível enquanto o cenário guiado está aberto.  
 Se houver um erro ao implantar o cenário, todas as alterações serão revertidas. 
 
-### <a name="editing"></a>Edita 
+### <a name="editing"></a>Edição 
 
 Cenários orientados não podem ser usados para editar recursos existentes. Uma vez criado, todos os recursos, grupos e atribuições devem ser editados usando as cargas de trabalho existentes.
 
@@ -72,7 +72,7 @@ Cenários orientados não podem ser usados para monitorar recursos existentes al
 
 Cenários orientados não podem ser usados para desativar recursos existentes, além da limpeza automatizada durante um erro na implantação inicial. Uma vez criado, todos os recursos, grupos e atribuições devem ser desativados usando as cargas de trabalho existentes. 
 
-### <a name="updating"></a>Atualizada
+### <a name="updating"></a>Atualização
 
 À medida que a tecnologia evolui, o Intune pode, de tempos em tempos, atualizar um cenário guiado para melhorar a experiência do usuário, a segurança ou outros aspectos do cenário. Essa atualização afetará apenas as novas implantações feitas pelo cenário guiado. O Intune não atualizará os recursos existentes gerados anteriormente pelo cenário guiado para fazer a correspondência de novas práticas recomendadas ou recomendações.  
 

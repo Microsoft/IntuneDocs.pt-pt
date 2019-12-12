@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 62db99fc2e47bdfa1a767db3bb2916649dedc074
-ms.sourcegitcommit: 15e099a9a1e18296580bb345610aee7cc4acd126
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/18/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74164700"
 ---
 # <a name="set-up-the-on-premises-intune-exchange-connector"></a>Configurar o Intune Exchange Connector local

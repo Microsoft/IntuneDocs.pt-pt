@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: e2909e7ad1ced9483a6cec58f1f3009f56946f5f
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/13/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74058434"
 ---
 # <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>Configurações do Windows 10 (e posterior) para proteger dispositivos usando o Intune
@@ -67,7 +67,7 @@ O Application Guard só está disponível para dispositivos com o Windows 10 (64
 
   Selecione o conteúdo da área de transferência permitido.  
   - **Não configurado**  
-  - **Text**  
+  - **Texto**  
   - **Imagens**  
   - **Texto e imagens**  
 
@@ -92,7 +92,7 @@ O Application Guard só está disponível para dispositivos com o Windows 10 (64
     - Impressoras locais
     - Impressoras de rede  
 
-- **Coletar logs**  
+- **Recolher registos**  
   **Padrão**: não configurado  
   CSP do Application Guard: [auditoria/AuditApplicationGuard](https://go.microsoft.com/fwlink/?linkid=872418)  
 
@@ -301,7 +301,7 @@ Você pode **Adicionar** uma ou mais regras de firewall personalizadas. Para obt
 
 As regras de firewall personalizadas dão suporte às seguintes opções:  
 
-#### <a name="general-settings"></a>Configurações gerais:  
+#### <a name="general-settings"></a>Definições gerais:  
 
 - **Nome**  
   **Padrão**: *sem nome*  
@@ -408,7 +408,7 @@ Especifique as portas locais e remotas às quais essa regra se aplica.
   **Padrão**: 0 selecionado  
   CSP do firewall: [FirewallRules/*FirewallRuleName*/InterfaceTypes](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp#interfacetypes)  
 
-  Selecione uma das seguintes opções:  
+  As seguintes opções estão disponíveis para seleção:  
   - **Acesso remoto**  
   - **Sem fio**  
   - **Rede de área local**  
@@ -1211,7 +1211,7 @@ Utilize estas opções para configurar as definições da segurança local em di
    - **Bloquear** – permitir que apenas contas locais com senhas em branco entrem usando o teclado do dispositivo.  
    - **Não configurado** – permitir que contas locais com senhas em branco entrem em locais diferentes do dispositivo físico.  
 
-#### <a name="admin"></a>Admin  
+#### <a name="admin"></a>Administração  
 
 - **Conta de administrador local**  
   **Padrão**: não configurado  
@@ -1530,7 +1530,7 @@ Utilize estas opções para configurar as definições da segurança local em di
 - **Habilitar** – permitir que aplicativos UIAccess solicitem elevação, sem usar a área de trabalho segura.  
 - **Não configurado** -as solicitações de elevação usam uma área de trabalho segura.  
 
-#### <a name="admin-approval-mode"></a>Modo de aprovação de administrador  
+#### <a name="admin-approval-mode"></a>Modo de Aprovação de Administrador  
 
 - **Modo de aprovação de administrador para administrador interno**  
   **Padrão**: não configurado  
@@ -1596,7 +1596,7 @@ Utilize estas opções para configurar as definições da segurança local em di
   CSP: [TaskScheduler/EnableXboxGameSaveTask](https://go.microsoft.com/fwlink/?linkid=875480)  
    
   Essa configuração determina se a tarefa de salvamento do jogo Xbox está habilitada ou desabilitada.  
-  - **Habilitado**
+  - **Ativado**
   - **Não configurado**
 
 - **Serviço de gerenciamento de acessórios do Xbox**  
@@ -1635,7 +1635,7 @@ Utilize estas opções para configurar as definições da segurança local em di
   - **Automático**
   - **Desativado**
 
-## <a name="user-rights"></a>Direitos de usuário
+## <a name="user-rights"></a>Direitos do usuário
 
 - **Acessar o Gerenciador de credenciais como chamador confiável**  
   **Padrão**: não configurado  

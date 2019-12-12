@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 52f907b8762322684ec9e21910745a197c3dbe4e
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/27/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74564333"
 ---
 # <a name="manage-web-access-using-a-microsoft-intune-policy-protected-browser"></a>Gerir o acesso Web através de um browser protegido por políticas do Microsoft Intune
@@ -33,7 +33,7 @@ Ao utilizar um browser protegido com a política do Intune (Microsoft Edge ou In
 
 - Políticas de proteção de aplicações
 - Conditional Access
-- Logon único
+- Início de sessão único
 - Definições de configuração de aplicações
 - Integração do proxy de aplicações do Azure
 

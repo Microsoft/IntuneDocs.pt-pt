@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: e4761e2565402b4c3cdc993ff89cbedea8273609
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/27/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74563885"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>Gerenciar o acesso via Web usando o Microsoft Edge com o Microsoft Intune
@@ -108,7 +108,7 @@ Para criar a configuração de aplicativo para o Microsoft Edge:
     > [!NOTE]
     > O Microsoft Edge utiliza os mesmos pares de chave e valor que o Managed Browser. No Android, o Microsoft Edge deve ser direcionado às políticas de proteção de aplicativo para que as políticas de configuração de aplicativo entrem em vigor.
 
-8. Quando terminar, selecione **OK**.
+8. Quando tiver terminado, selecione **OK**.
 9. No painel **Adicionar política de configuração** , escolha **Adicionar**.<br>
     A nova configuração é criada e exibida no painel de **configuração do aplicativo** .
 
@@ -169,7 +169,7 @@ Direcione o Microsoft Edge com o seguinte par de chave/valor, para habilitar o p
 
 |    Chave    |    Valor    |
 |-------------------------------------------------------------------|-------------|
-|    com. Microsoft. Intune. Mam. managedbrowser. AppProxyRedirection    |    true    |
+|    com.microsoft.intune.mam.managedbrowser.AppProxyRedirection    |    true    |
 
 Para obter mais informações sobre como usar o Microsoft Edge e o Azure Proxy de Aplicativo do AD em tandem para acesso contínuo (e protegido) a aplicativos Web locais, consulte [melhor juntos: Intune e Azure Active Directory equipe para melhorar o acesso do usuário](https://cloudblogs.microsoft.com/enterprisemobility/2017/07/06/better-together-intune-and-azure-active-directory-team-up-to-improve-user-access). Esta postagem de blog faz referência à Intune Managed Browser, mas o conteúdo também se aplica ao Microsoft Edge.
 
@@ -181,7 +181,7 @@ Use o seguinte par de chave/valor para configurar um atalho de Home Page:
 
 |    Chave    |    Valor    |
 |-------------------------------------------------------------------|-------------|
-|    com. Microsoft. Intune. Mam. managedbrowser. homepage   |    Especifique um URL válido. Os URLs incorretos são bloqueados como medida de segurança.<br>**Exemplo:**  <`https://www.bing.com`>
+|    com.microsoft.intune.mam.managedbrowser.homepage   |    Especifique um URL válido. Os URLs incorretos são bloqueados como medida de segurança.<br>**Exemplo:**  <`https://www.bing.com`>
 
 ## <a name="configure-your-organizations-logo-and-brand-color-for-new-tab-pages-in-microsoft-edge"></a>Configurar o logotipo e a cor da marca da sua organização para novas páginas de guias no Microsoft Edge
 
@@ -214,7 +214,7 @@ Use o seguinte par de chave/valor para configurar indicadores gerenciados:
 
 |    Chave    |    Valor    |
 |---------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    com. Microsoft. Intune. Mam. managedbrowser. Bookmarks    |    O valor dessa configuração é uma lista de indicadores. Cada indicador consiste no título do indicador e na URL do indicador. Separe o título e a URL com o caractere de `|`.      Exemplo:<br>`Microsoft Bing|https://www.bing.com`<br>Para configurar vários indicadores, separe cada par com o caractere duplo `||`.<p>Exemplo:<br>`Microsoft Bing|https://www.bing.com||Contoso|https://www.contoso.com`    |
+|    com.microsoft.intune.mam.managedbrowser.bookmarks    |    O valor dessa configuração é uma lista de indicadores. Cada indicador consiste no título do indicador e na URL do indicador. Separe o título e a URL com o caractere de `|`.      Exemplo:<br>`Microsoft Bing|https://www.bing.com`<br>Para configurar vários indicadores, separe cada par com o caractere duplo `||`.<p>Exemplo:<br>`Microsoft Bing|https://www.bing.com||Contoso|https://www.contoso.com`    |
 
 ## <a name="display-myapps-within-microsoft-edge-bookmarks"></a>Exibir myapps nos indicadores do Microsoft Edge
 
@@ -222,7 +222,7 @@ Por padrão, os usuários são exibidos nos sites do myapps que estão configura
 
 |    Chave    |    Valor    |
 |------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
-|    com. Microsoft. Intune. Mam. managedbrowser. myapps    |    **Verdadeiro** mostra myapps nos marcadores do Microsoft Edge.<p>**False** oculta myapps no Microsoft Edge.    |
+|    com.microsoft.intune.mam.managedbrowser.MyApps    |    **Verdadeiro** mostra myapps nos marcadores do Microsoft Edge.<p>**False** oculta myapps no Microsoft Edge.    |
 
 ## <a name="specify-allowed-or-blocked-sites-list-for-microsoft-edge"></a>Especificar a lista de sites permitidos ou bloqueados para o Microsoft Edge
 Você pode usar a configuração de aplicativo para definir quais sites os usuários podem acessar ao usar seu perfil de trabalho. Se você usar uma lista de permissões, os usuários só poderão acessar os sites que você listou explicitamente. Se você usar uma lista bloqueada, os usuários poderão acessar todos os sites, exceto aqueles que você bloqueou explicitamente. Você só deve impor uma lista de permissão ou de bloqueio, não ambos. Se você impor ambos, a lista de permissões será respeitada.  
@@ -231,7 +231,7 @@ Use os seguintes pares de chave/valor para configurar uma lista de sites permiti
 
 |    Chave    |    Valor    |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    Escolha entre:<p>1. Especifique as URLs permitidas (somente essas URLs são permitidas; nenhum outro site pode ser acessado):<br>`com.microsoft.intune.mam.managedbrowser.AllowListURLs`<p>2. especificar URLs bloqueadas (todos os outros sites podem ser acessados):<br>`com.microsoft.intune.mam.managedbrowser.BlockListURLs`    |    O valor correspondente da chave é uma lista de URLs. Você insere todas as URLs que deseja permitir ou bloquear como um único valor, separados por um `|` caractere de pipe.<br>**Disso**<br>`URL1|URL2|URL3`<br>`http://.contoso.com/|https://.bing.com/|https://expenses.contoso.com`  |
+|    Escolha entre:<p>1. Especifique as URLs permitidas (somente essas URLs são permitidas; nenhum outro site pode ser acessado):<br>`com.microsoft.intune.mam.managedbrowser.AllowListURLs`<p>2. especificar URLs bloqueadas (todos os outros sites podem ser acessados):<br>`com.microsoft.intune.mam.managedbrowser.BlockListURLs`    |    O valor correspondente da chave é uma lista de URLs. Você insere todas as URLs que deseja permitir ou bloquear como um único valor, separados por um `|` caractere de pipe.<br>**Exemplos:**<br>`URL1|URL2|URL3`<br>`http://.contoso.com/|https://.bing.com/|https://expenses.contoso.com`  |
 
 ### <a name="url-formats-for-allowed-and-blocked-site-list"></a>Formatos de URL para a lista de sites permitidos e bloqueados 
 Você pode usar vários formatos de URL para criar suas listas de sites permitidos/bloqueados. Esses padrões permitidos são detalhados na tabela a seguir. Algumas observações antes de começar: 

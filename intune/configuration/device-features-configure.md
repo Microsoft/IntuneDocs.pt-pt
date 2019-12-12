@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/04/2019
+ms.date: 12/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,16 +16,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f02188e6dd6cea6048731d119f8f307224810dd9
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: d887c7bc3c7e9ea8b6719993b5ba4909e9c18ea8
+ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059956"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74992939"
 ---
 # <a name="add-ios-or-macos-device-feature-settings-in-intune"></a>Adicionar definições de funcionalidades de dispositivos iOS ou macOS no Intune
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 O Intune inclui muitos recursos e configurações que ajudam os administradores a controlar dispositivos iOS e macOS. Por exemplo, os administradores podem:
 
@@ -48,13 +46,13 @@ Para obter uma lista das configurações que você pode configurar no Intune, co
 
 Para obter mais informações sobre o impresso, consulte [sobre o esprint](https://support.apple.com/HT201311) no site da Apple.
 
-Aplica-se a:
+Aplica-se a
 
 - iOS 7,0 e mais recente
 - iPadOS 13,0 e mais recente
 - macOS 10,10 e mais recente
 
-## <a name="app-notifications"></a>Notificações de aplicativo
+## <a name="app-notifications"></a>Notificações de aplicação
 
 Escolha como os aplicativos em seus dispositivos iOS e iPad recebem notificações. Por exemplo, no Intune, envie notificações de aplicativo para que elas apareçam no centro de notificações, sejam exibidas na tela de bloqueio ou joguem um som.
 
@@ -62,14 +60,14 @@ Para obter uma lista das configurações que você pode definir no Intune, consu
 
 Para obter mais informações sobre esse recurso, consulte [notificações](https://developer.apple.com/notifications/) no site da Apple.
 
-Aplica-se a:
+Aplica-se a
 
 - iOS 9,3 e mais recente
 - iPadOS 13,0 e mais recente
 
 ## <a name="associated-domains"></a>Domínios associados
 
-Os domínios associados permitem que você crie uma relação entre seus domínios, como `contoso.com` e seus aplicativos. Esse recurso permite que você:
+Os domínios associados permitem que você crie uma relação entre seus domínios, como `contoso.com`e seus aplicativos. Esse recurso permite que você:
 
 - Compartilhe dados e conecte as credenciais entre aplicativos e sites em sua organização.
 - Use recursos de aplicativo baseados em seu site, como extensão de aplicativo de logon único, links universais e preenchimento automático de senha.
@@ -80,7 +78,7 @@ Para obter uma lista das configurações que você pode configurar no Intune, co
 
 Para obter mais informações sobre esse recurso, consulte [Configurando os domínios associados de um aplicativo](https://developer.apple.com/documentation/security/password_autofill/setting_up_an_app_s_associated_domains) no site da Apple.
 
-Aplica-se a:
+Aplica-se a
 
 - macOS 10,15 e mais recente
 
@@ -93,7 +91,7 @@ Essas configurações configuram o layout do aplicativo e as pastas nas telas de
 
 Para obter uma lista das configurações que você pode configurar no Intune, consulte [layout da tela inicial no Ios](ios-device-features-settings.md#home-screen-layout).
 
-Aplica-se a:
+Aplica-se a
 
 - iOS 9,3 e mais recente
 - iPadOS 13,0 e mais recente
@@ -106,18 +104,18 @@ Para obter uma lista das configurações que podem ser definidas no Intune, cons
 
 Para obter mais informações sobre a mensagem da tela de bloqueio, consulte [LockScreenMessage](https://developer.apple.com/documentation/devicemanagement/lockscreenmessage) no site da Apple.
 
-Aplica-se a:
+Aplica-se a
 
 - iOS 9,3 e mais recente
 - iPadOS 13,0 e mais recente
 
 ## <a name="login-items"></a>Itens de logon
 
-Use esse recurso para escolher os aplicativos, aplicativos personalizados, arquivos e pastas que são abertos quando os usuários entram nos dispositivos. 
+Use esse recurso para escolher os aplicativos, aplicativos personalizados, arquivos e pastas que são abertos quando os usuários entram nos dispositivos.
 
 Para obter uma lista das configurações que você pode configurar no Intune, consulte [itens de logon no MacOS](macos-device-features-settings.md#login-items).
 
-Aplica-se a:
+Aplica-se a
 
 - macOS 10,13 e mais recente
 
@@ -127,11 +125,11 @@ Controle a aparência da tela de logon e as funções disponíveis para os usuá
 
 Para obter uma lista das configurações que você pode configurar no Intune, consulte [janela de logon no MacOS](macos-device-features-settings.md#login-window).
 
-Aplica-se a:
+Aplica-se a
 
 - macOS 10,7 e mais recente
 
-## <a name="single-sign-on"></a>Logon único
+## <a name="single-sign-on"></a>Início de sessão único
 
 A maioria das aplicações de Linha de Negócio (LOB) exige algum nível de autenticação do utilizador para suportar a segurança. Em muitos casos, a autenticação exige que o usuário insira as mesmas credenciais repetidamente. Para melhorar a experiência do usuário, os desenvolvedores podem criar aplicativos que usam SSO (logon único). O uso do logon único reduz o número de vezes que um usuário deve inserir as credenciais.
 
@@ -144,7 +142,7 @@ Para usar o logon único, verifique se você tem:
 
 Para obter uma lista das configurações que você pode configurar no Intune, consulte [logon único no Ios](ios-device-features-settings.md#single-sign-on).
 
-Aplica-se a:
+Aplica-se a
 
 - iOS 7,0 e mais recente
 - iPadOS 13,0 e mais recente
@@ -153,47 +151,54 @@ Aplica-se a:
 
 Essas configurações configuram uma extensão de aplicativo que habilita o SSO (logon único) para seus dispositivos iOS, iPadOS e macOS. A maioria dos aplicativos de LOB (linha de negócios) e sites da organização exigem algum nível de autenticação de usuário segura. Em muitos casos, a autenticação exige que os usuários insiram as mesmas credenciais repetidamente. O SSO fornece aos usuários acesso a aplicativos e sites depois de inserir suas credenciais uma vez. Depois de entrar, os usuários podem acessar aplicativos e sites automaticamente ou usar a ID de face, a ID de toque ou a senha da Apple para obter acesso.
 
-No Intune, use essas configurações para configurar a extensão Kerberos interna da Apple ou para configurar uma extensão de aplicativo SSO criada por sua organização. A extensão do aplicativo SSO manipula a autenticação para seus usuários. Essas configurações definem as extensões de aplicativo SSO do tipo credencial, que são projetadas para fluxos de autenticação de desafio e resposta. Você pode escolher entre uma extensão de credencial específica do Kerberos fornecida pela Apple e uma extensão de credencial genérica.
+No Intune, use essas configurações para configurar uma extensão de AP de SSO criada por sua organização, provedor de identidade ou Apple. A extensão do aplicativo SSO manipula a autenticação para seus usuários. Essas configurações definem as extensões de aplicativo SSO do tipo de redirecionamento e tipo de credencial.
+
+- O tipo de redirecionamento é projetado para protocolos de autenticação modernos, como OAuth e SAML2.
+- O tipo de credencial é projetado para fluxos de autenticação de desafio e resposta. Você pode escolher entre uma extensão de credencial específica do Kerberos fornecida pela Apple e uma extensão de credencial genérica.
 
 Para obter uma lista das configurações que você pode configurar no Intune, consulte extensão de [aplicativo de SSO do IOS](ios-device-features-settings.md#single-sign-on-app-extension) e extensão de aplicativo de SSO do [MacOS](macos-device-features-settings.md#single-sign-on-app-extension).
 
-Para obter mais informações sobre como desenvolver uma extensão de aplicativo SSO, Assista ao [SSO corporativo extensível](https://developer.apple.com/videos/play/tech-talks/301) no site da Apple.
+Para obter mais informações sobre como desenvolver uma extensão de aplicativo SSO, Assista ao [SSO corporativo extensível](https://developer.apple.com/videos/play/tech-talks/301) no site da Apple. Para ler a descrição do recurso da Apple, visite [configurações de carga de extensões de logon único](https://support.apple.com/guide/mdm/single-sign-on-extensions-mdmfd9cdf845/web). 
 
 > [!NOTE]
 > O recurso de **extensão do aplicativo de logon único** é diferente do recurso de **logon único** :
 >
-> - As configurações de **extensão do aplicativo de logon único** se aplicam ao iPadOS 13,0 (e mais recente) e ao Ios 13,0 (e mais recente). As configurações de **logon único** se aplicam ao iPadOS 13,0 (e mais recente) e Ios 7,0 e mais recentes.
-> - Uma **extensão de aplicativo de logon único** manipula a autenticação com o sistema operacional. No **logon único**, um aplicativo específico manipula a autenticação.
-> - Ao usar a **extensão de aplicativo de logon único**, os usuários entram em aplicativos e sites silenciosamente, ou com ID facial, Touch ID ou pincode ou senha da Apple. Ao usar o **logon único**, os usuários entram em aplicativos e sites usando outro aplicativo.
+> - As configurações de **extensão do aplicativo de logon único** se aplicam ao iPadOS 13,0 (e mais recente), Ios 13,0 (e mais recente) e MacOS 10,15 (e mais recente). As configurações de **logon único** se aplicam ao iPadOS 13,0 (e mais recente) e Ios 7,0 e mais recentes.
 >
->    A **extensão do aplicativo de logon único** usa o sistema operacional da Apple para se autenticar. Portanto, ele pode fornecer uma melhor experiência do usuário final.
+> - As configurações de **extensão do aplicativo de logon único** definem extensões para uso por provedores de identidade ou organizações para fornecer uma experiência de logon empresarial direta. As configurações de **logon único** definem as informações da conta Kerberos para quando os usuários acessam servidores ou aplicativos.
 >
-> - Do ponto de vista do desenvolvimento, a **extensão do aplicativo de logon único** pode usar qualquer tipo de autenticação SSO de credencial. Com o **logon único**, você só pode usar a autenticação SSO Kerberos.  
+> - A **extensão do aplicativo de logon único** usa o sistema operacional da Apple para se autenticar. Portanto, ele pode fornecer uma experiência do usuário final melhor do que a do **logon único**.
+>
+> - De uma perspectiva de desenvolvimento, com **extensão de aplicativo de logon único**, você pode usar qualquer tipo de autenticação de SSO de redirecionamento SSO ou credencial. Com o **logon único**, você só pode usar a autenticação SSO Kerberos.
+>
+> - A **extensão do aplicativo de logon único** do Kerberos foi desenvolvida pela Apple e está incorporada às plataformas Ios 13.0 + e MacOS 10.15 +. A extensão Kerberos interna pode ser usada para registrar os usuários em aplicativos nativos e sites que dão suporte à autenticação Kerberos. O **logon único** não é uma implementação da Apple do Kerberos.
+>
+> - A extensão interna do **aplicativo de logon único** do Kerberos lida com os desafios do Kerberos para páginas da Web e aplicativos, assim como **logon único**. No entanto, a extensão Kerberos interna dá suporte a alterações de senha e se comporta melhor em redes corporativas. Ao decidir entre a **extensão do aplicativo de logon único** Kerberos e o **logon único**, é recomendável usar a extensão devido ao desempenho e aos recursos aprimorados.
 
-Aplica-se a:
+Aplica-se a
 
 - iOS 13,0 e mais recente
 - iPadOS 13,0 e mais recente
 - macOS 10,15 e mais recente
 
-## <a name="wallpaper"></a>Papéis
+## <a name="wallpaper"></a>Imagem de Fundo
 
 Adicione uma imagem. png,. jpg ou. jpeg personalizada aos dispositivos iOS supervisionados. Por exemplo, use o Intune para adicionar um logotipo da empresa à tela de bloqueio em seus dispositivos.
 
 Para obter uma lista das configurações que você pode configurar no Intune, consulte [papel de parede no Ios](ios-device-features-settings.md#wallpaper).
 
-Aplica-se a:
+Aplica-se a
 
 - iOS
 - iPadOS 13,0 e mais recente
 
 ## <a name="web-content-filter"></a>Filtro de conteúdo da Web
 
-Essas configurações podem usar o algoritmo de AutoFiltro interno da Apple para avaliar páginas da Web e bloquear conteúdo adulto e idioma adulto. Você também pode criar uma lista de links da Web permitidos e links da Web restritos. Por exemplo, você pode permitir que somente sites `contoso` sejam abertos.
+Essas configurações podem usar o algoritmo de AutoFiltro interno da Apple para avaliar páginas da Web e bloquear conteúdo adulto e idioma adulto. Você também pode criar uma lista de links da Web permitidos e links da Web restritos. Por exemplo, você pode permitir que apenas `contoso` sites da Web sejam abertos.
 
 Para obter uma lista das configurações que você pode configurar no Intune, consulte [filtro de conteúdo da Web no Ios](ios-device-features-settings.md#web-content-filter).
 
-Aplica-se a:
+Aplica-se a
 
 - iOS 7,0 e mais recente
 - iPadOS 13,0 e mais recente

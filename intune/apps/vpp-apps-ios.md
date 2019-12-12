@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: eed0b8a74e69bc1552ae3e2badf485364ba37e94
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/27/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74563799"
 ---
 # <a name="how-to-manage-ios-and-macos-apps-purchased-through-apple-volume-purchase-program-with-microsoft-intune"></a>Como gerenciar aplicativos iOS e macOS adquiridos por meio de Apple Volume Purchase Program com Microsoft Intune
@@ -128,13 +128,13 @@ O utilizador final irá receber pedidos de instalação de aplicações VPP em v
 
 | # | Cenário                                | Convite para Apple VPP                              | Pedido de instalação da aplicação | Pedido de ID Apple |
 |---|--------------------------------------------------|-------------------------------------------------------------------------------------------------|---------------------------------------------|-----------------------------------|
-| 1 | BYOD – utilizador com licença                             | Iar                                                                                               | Iar                                           | Iar                                 |
-| 2 | Corp – utilizador com licença (dispositivo não supervisionado)     | Iar                                                                                               | Iar                                           | Iar                                 |
-| 3 | Corp – utilizador com licença (dispositivo supervisionado)         | Iar                                                                                               | P                                           | Iar                                 |
-| 4 | BYOD – dispositivo com licença                           | P                                                                                               | Iar                                           | P                                 |
-| 5 | CORP – dispositivo com licença (dispositivo não supervisionado)                           | P                                                                                               | Iar                                           | P                                 |
-| 6 | CORP – dispositivo com licença (dispositivo supervisionado)                           | P                                                                                               | P                                           | P                                 |
-| 7 | Modo de local público (dispositivo supervisionado) – dispositivo com licença | P                                                                                               | P                                           | P                                 |
+| 1 | BYOD – utilizador com licença                             | S                                                                                               | S                                           | S                                 |
+| 2 | Corp – utilizador com licença (dispositivo não supervisionado)     | S                                                                                               | S                                           | S                                 |
+| 3 | Corp – utilizador com licença (dispositivo supervisionado)         | S                                                                                               | N                                           | S                                 |
+| 4 | BYOD – dispositivo com licença                           | N                                                                                               | S                                           | N                                 |
+| 5 | CORP – dispositivo com licença (dispositivo não supervisionado)                           | N                                                                                               | S                                           | N                                 |
+| 6 | CORP – dispositivo com licença (dispositivo supervisionado)                           | N                                                                                               | N                                           | N                                 |
+| 7 | Modo de local público (dispositivo supervisionado) – dispositivo com licença | N                                                                                               | N                                           | N                                 |
 | 8 | Modo de local público (dispositivo supervisionado) – utilizador com licença   | --- | ---                                          | ---                                |
 
 > [!Note]  

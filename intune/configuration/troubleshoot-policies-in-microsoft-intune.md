@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: a8768022872d32116add0ed4ea4caf1f8fcb800f
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/13/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74059277"
 ---
 # <a name="troubleshoot-policies-and-profiles-and-in-intune"></a>Solucionar problemas de políticas e perfis e no Intune
@@ -79,7 +79,7 @@ Verifique o [status do locatário](../fundamentals/tenant-status.md) e confirme 
             - No dispositivo Android, abra o aplicativo Portal da Empresa > **dispositivos** > escolha o dispositivo na lista > **Verifique as configurações do dispositivo**.
             - No dispositivo iOS, abra o aplicativo do portal da empresa > **dispositivos** > escolha o dispositivo na lista > **Verifique as configurações**.
 
-        - Em um dispositivo Windows, abra **configurações** > **contas** > **acessar o trabalho ou a escola** > selecione a conta ou o registro do MDM > **informações** > **sincronização**.
+        - Em um dispositivo Windows, abra **configurações** > **contas** > **acessar trabalho ou escola** > selecione a conta ou o registro de MDM > **informações** > **sincronização**.
 
     - Selecione o dispositivo para ver informações específicas da política.
 
@@ -155,7 +155,7 @@ Outras plataformas, como Android, iOS e Windows Phone 8,1, talvez precisem ser d
 
 ### <a name="microsoft-intune-policy-related-errors-in-policyplatformlog"></a>Erros relacionados com políticas do Microsoft Intune no policyplatform.log
 
-Para computadores Windows gerenciados com o cliente de software do Intune, os erros de política no arquivo `policyplatform.log` podem ser de configurações não padrão no UAC (controle de conta de usuário) do Windows no dispositivo. Algumas definições de UAC não predefinidas podem afetar as instalações de cliente do Microsoft Intune e a execução de políticas.
+Para computadores Windows gerenciados com o cliente de software do Intune, os erros de política no arquivo de `policyplatform.log` podem ser de configurações não padrão no UAC (controle de conta de usuário) do Windows no dispositivo. Algumas definições de UAC não predefinidas podem afetar as instalações de cliente do Microsoft Intune e a execução de políticas.
 
 #### <a name="resolve-uac-issues"></a>Resolver problemas de UAC
 

@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0e4f8768129ab035b4a935a900f62ab6f3379edd
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 46012b11cdb458243658e858b53c2dfb1a69dc88
+ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74832649"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74991796"
 ---
 # <a name="troubleshoot-windows-device-enrollment-problems-in-microsoft-intune"></a>Solucionar problemas de registro de dispositivo Windows no Microsoft Intune
 
@@ -205,7 +205,7 @@ Erro: "houve um problema. Sua organização não dá suporte a esta versão do W
 #### <a name="resolution"></a>Resolução
 Para corrigir esse problema em um ambiente autônomo do Intune, siga estas etapas: 
  
-1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **dispositivos** > **restrições de registro** > escolha um tipo de dispositivo restrição.    
+1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **dispositivos** > **restrições de registro** > escolha uma restrição de tipo de dispositivo.    
 2. Escolha **propriedades** > **Editar** (ao lado de **configurações de plataforma**) > **permitir** para **Windows (MDM)** .    
 3. Clique em **examinar + salvar**.    
  

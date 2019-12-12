@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: dcdc2b69de52ea3bf23f4e3c5d11399b62bc8daa
-ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/01/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73414096"
 ---
 # <a name="assign-licenses-to-users-so-they-can-enroll-devices-in-intune"></a>Atribuir licenças aos utilizadores para que estes possam inscrever dispositivos no Intune
@@ -31,7 +31,7 @@ Quer adicione utilizadores manualmente ou sincronize a partir do Active Director
 
 Você pode usar o [centro de administração Microsoft 365](https://go.microsoft.com/fwlink/p/?LinkId=698854) para adicionar manualmente usuários baseados em nuvem e atribuir licenças a contas de usuário baseadas em nuvem e contas sincronizadas do seu Active Directory local ao Azure AD.
 
-1. Entre no centro de [Administração do Microsoft 365](https://go.microsoft.com/fwlink/p/?LinkId=698854) usando suas credenciais de administrador de locatários e escolha **usuários** > **usuários ativos**.
+1. Entre no centro de [Administração do Microsoft 365](https://go.microsoft.com/fwlink/p/?LinkId=698854) usando suas credenciais de administrador de locatários e, em seguida, escolha **usuários** > **usuários ativos**.
 
 2. Selecione a conta de utilizador à qual pretende atribuir uma licença de utilizador do Intune e, em seguida, escolha **Licenças de produtos** > **Editar**.
 

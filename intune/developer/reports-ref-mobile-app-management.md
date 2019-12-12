@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: eb1833a6a54fe0a7f78958e653468921df952b4d
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72505691"
 ---
 # <a name="reference-for-mobile-app-management-mam-entities"></a>Referência para as entidades de gestão de aplicações móveis (MAM)
@@ -37,7 +37,7 @@ A categoria **Mobile App Management** contém entidades para aplicações móvei
 - Estado de inscrição
 - Tipos de plataforma
 
-## <a name="mamapplications"></a>MamApplications
+## <a name="mamapplications"></a>mamApplications
 
 A entidade **mamApplication** lista os aplicativos de linha de negócios (LOB) que são gerenciados por meio do MAM (gerenciamento de aplicativo móvel) sem registro em sua empresa.
 
@@ -52,7 +52,7 @@ A entidade **mamApplication** lista os aplicativos de linha de negócios (LOB) q
 | rowLastModifiedDateTimeUTC |Data e hora em UTC em que esta aplicação MAM foi modificada pela última vez no armazém de dados. |11/23/2016 12:00:00 AM |
 
 
-## <a name="mamapplicationinstances"></a>MamApplicationInstances
+## <a name="mamapplicationinstances"></a>mamApplicationInstances
 
 A entidade **mamApplicationInstance** lista aplicativos gerenciados de MAM (gerenciamento de aplicativo móvel) como instâncias singulares por usuário por dispositivo. Todos os utilizadores e dispositivos listados na entidade estão protegidos, ou seja, têm pelo menos uma Política de MAM atribuída.
 
@@ -60,7 +60,7 @@ A entidade **mamApplicationInstance** lista aplicativos gerenciados de MAM (gere
 |          Propriedade          |                                                                                                  Description                                                                                                  |               Exemplo                |
 |----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------|
 |   applicationInstanceKey   |                                                               Identificador exclusivo de instância da aplicação MAM no armazém de dados – chave de substituição.                                                                |                 123                  |
-|           ID           |                                                                              ID de usuário do usuário que tem esse aplicativo de MAM instalado.                                                                              | b66bc706-ffff-7437-0340-032819502773 |
+|           userId           |                                                                              ID de usuário do usuário que tem esse aplicativo de MAM instalado.                                                                              | b66bc706-ffff-7437-0340-032819502773 |
 |   applicationInstanceId    |                                              Identificador exclusivo de instância da aplicação MAM, semelhante à propriedade ApplicationInstanceKey, apesar de o identificador ser uma chave natural.                                              | b66bc706-ffff-7437-0340-032819502773 |
 | mamApplicationId | ID do aplicativo do aplicativo Mam para o qual esta instância do aplicativo Mam foi criada.   | 11/23/2016 12:00:00 AM   |
 |     applicationVersion     |                                                                                     Versão desta aplicação MAM.                                                                                      |                  2                   |
@@ -77,7 +77,7 @@ A entidade **mamApplicationInstance** lista aplicativos gerenciados de MAM (gere
 | rowLastModifiedDateTimeUtc |                                                           Data e hora em UTC em que esta instância da aplicação MAM foi modificada pela última vez no armazém de dados.                                                            |        11/23/2016 12:00:00 AM        |
 
 
-## <a name="mamcheckins"></a>MamCheckins
+## <a name="mamcheckins"></a>mamCheckins
 
 A entidade **mamCheckin** representa os dados coletados quando uma instância de aplicativo de gerenciamento de aplicativo móvel (MAM) tiver feito check-in com o serviço do Intune. 
 
@@ -117,7 +117,7 @@ A entidade **mamEffectivePolicy** lista todas as políticas efetivas de MAM (ger
 | realPolicyKey |Identificador exclusivo da política de MAM criada pelo Profissional de TI. |1 |
 | rowCreatedDateTimeUtc |Data e hora em UTC em que esta política em vigor de MAM foi criada no armazém de dados. |11/23/2016 12:00:00 AM |
 
-## <a name="mamplatforms"></a>MamPlatforms
+## <a name="mamplatforms"></a>mamPlatforms
 
 A entidade **mamPlatform** lista os nomes de plataforma e os tipos nos quais um aplicativo de gerenciamento de aplicativo móvel (MAM) foi instalado.
 

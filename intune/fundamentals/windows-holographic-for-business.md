@@ -17,13 +17,13 @@ search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 0f82fce8cc31a831f2c032b85d6464e418bd215c
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/13/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74058488"
 ---
-# <a name="manage-and-use-different-device-management-features-on-windows-holographic-and-hololens-devices-with-intune"></a>Gerenciar e usar diferentes recursos de gerenciamento de dispositivo em dispositivos Windows Holographic e HoloLens com o Intune
+# <a name="manage-and-use-different-device-management-features-on-windows-holographic-and-hololens-devices-with-intune"></a>Gerir e utilizar funcionalidades de gestão de dispositivos diferentes no Windows Holographic e dispositivos HoloLens com o Intune
 
 O Microsoft Intune inclui muitos recursos para ajudar a gerir dispositivos que executam o Windows Holographic for Business, tais como o [Microsoft HoloLens](https://docs.microsoft.com/hololens/). Ao utilizar o Intune, pode confirmar que os dispositivos estão em conformidade com as regras da sua organização e pode personalizar o dispositivo ao adicionar uma VPN ou um perfil Wi-Fi. Outra funcionalidade importante é utilizar o dispositivo como um quiosque e executar uma aplicação específica ou um conjunto específico de aplicações.
 
@@ -35,9 +35,9 @@ Para utilizar dispositivos Windows Holographic com o Intune, crie um perfil de A
 
 O Azure Active Directory (AD) é um ótimo recurso para o ajudar a gerir e controlar os seus dispositivos com o Windows Holographic for Business. Com o Intune e o Azure AD, pode: 
 
-- **[Unir dispositivos a Azure Active Directory](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan)** : no Azure Active Directory (AD), você pode adicionar seus dispositivos Windows 10 de Propriedade do trabalho, incluindo dispositivos que executam o Windows Holographic for Business. Esta funcionalidade permite que o Azure AD controle o dispositivo. Ajuda a confirmar que os seus utilizadores estão a aceder aos recursos da empresa a partir de dispositivos que cumprem as normas de segurança e conformidade que estabeleceu.
+- **[Associar dispositivos ao Azure Active Directory](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan)** : no Azure Active Directory (AD), pode adicionar seus dispositivos, Windows 10 pertencentes no trabalho, incluindo dispositivos que executam o Windows Holographic for Business. Esta funcionalidade permite que o Azure AD controle o dispositivo. Ajuda a confirmar que os seus utilizadores estão a aceder aos recursos da empresa a partir de dispositivos que cumprem as normas de segurança e conformidade que estabeleceu.
 
-  O [Gerenciamento de dispositivos no Azure ad](https://docs.microsoft.com/azure/active-directory/devices/overview) fornece mais detalhes.
+  [Gestão de dispositivos no Azure AD](https://docs.microsoft.com/azure/active-directory/devices/overview) fornece mais detalhes.
 
 - **[Inscrever dispositivos Windows em massa](../enrollment/windows-bulk-enroll.md)** : pode associar inúmeros dispositivos Windows novos ao Azure Active Directory e ao Intune. Esta funcionalidade chama-se inscrição em massa e utiliza pacotes de aprovisionamento. Estes pacotes associam os dispositivos com o Windows Holographic for Business ao seu inquilino do Azure AD e inscrevem-nos no Intune.
 

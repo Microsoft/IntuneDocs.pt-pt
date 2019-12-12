@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5a7e58fc0ceafe428646b631c55c42a6d2b119e4
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 2d9fbbbb80cf25861b2e0afbf3d01cfca3ece5fd
+ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74832661"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74991778"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Remover dispositivos ao apagar os dados, extinguir ou anular a inscrição do dispositivo de forma manual
 
@@ -59,7 +59,7 @@ Apagar é útil para repor um dispositivo antes de o atribuir a um novo utilizad
 3. Selecione **Dispositivos** > **Todos os dispositivos**.
 4. Selecione o nome do dispositivo que pretende apagar.
 5. No painel que mostra o nome do dispositivo, selecione **Limpar**.
-6. Para a versão 1709 ou posterior do Windows 10, também tem a opção **Reter estado de inscrição e conta de utilizador**. 
+6. Para o Windows 10 versão 1709 ou posterior, você também tem a opção **apagar dispositivo, mas manter o estado de registro e a conta de usuário associada** . 
     
     |Retido durante uma limpeza |Não retido|
     | -------------|------------|

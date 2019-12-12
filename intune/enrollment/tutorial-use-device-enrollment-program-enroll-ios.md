@@ -16,10 +16,10 @@ ms.assetid: ''
 Customer intent: As an Intune admin, I want to set up the Apple's corporate device enrollment features so that corporate devices can automatically enroll in Intune.
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 56b8ab9507acda8fc1145bd65c4438da838dd806
-ms.sourcegitcommit: fc4b38660129d615068f34ad4b96b900d73f7b53
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/27/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74558173"
 ---
 # <a name="tutorial-use-apples-corporate-device-enrollment-features-in-apple-business-manager-abm-to-enroll-ios-devices-in-intune"></a>Tutorial: usar os recursos de registro de dispositivo corporativo da Apple no Apple Business Manager (ABM) para registrar dispositivos iOS no Intune

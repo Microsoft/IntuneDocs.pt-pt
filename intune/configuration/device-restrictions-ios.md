@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/25/2019
+ms.date: 12/12/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,16 +16,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6fde277e16043662420864adcc0458e3dccad308
-ms.sourcegitcommit: ce518a5dfe62c546a77f32ef372f36efbaad473f
+ms.openlocfilehash: 5f9a01adaa6f5ab59819c2924172c30a437ebd8c
+ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74465649"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74992912"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>configurações do dispositivo iOS e iPadOS para permitir ou restringir recursos usando o Intune
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 Este artigo lista e descreve as diferentes configurações que você pode controlar em dispositivos iOS e iPadOS. Como parte da solução de gestão de dispositivos móveis (MDM), utilize estas definições para permitir ou desativar funcionalidades, definir regras de palavra-passe, permitir ou restringir aplicações específicas e muito mais.
 
@@ -47,12 +45,12 @@ Estas definições são adicionadas a um perfil de configuração do dispositivo
 
 - **Compartilhar dados de uso**: escolha **Bloquear** para impedir que o dispositivo envie dados de diagnóstico e de uso para a Apple. **Não configurado** (predefinição) permite que estes dados sejam enviados.
 
-- **Captura de tela**: escolha **Bloquear** para impedir capturas de tela ou capturas de telas no dispositivo. No iOS 9,0 e mais recente, ele também bloqueia gravações de tela. **Não configurado** (predefinição) permite ao utilizador capturar o conteúdo do ecrã como uma imagem ou um vídeo.
+- **Captura de ecrã**: escolha **bloco** para impedir capturas de ecrã ou ecrã capturas no dispositivo. No iOS 9,0 e mais recente, ele também bloqueia gravações de tela. **Não configurado** (predefinição) permite ao utilizador capturar o conteúdo do ecrã como uma imagem ou um vídeo.
 
 ### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>As configurações se aplicam a: registro de dispositivo, registro de dispositivo automatizado (supervisionado)
 
 - **Certificados TLS não confiáveis**: escolha **Bloquear** para impedir certificados de TLS (segurança de camada de transporte) não confiáveis no dispositivo. **Não configurado** (predefinição) permite os certificados TLS.
-- **Permitir atualizações de PKI over-the-Air** **: permite que os** usuários recebam atualizações de software sem conectar seus dispositivos a um computador.
+- **Bloquear atualizações de PKI por satélite**: o **bloco** impede que os usuários recebam atualizações de software sem conectar seus dispositivos a um computador. **Não configurado** (padrão) não atualiza essa configuração no dispositivo.
 - **Limitar o controle do AD**: escolha o **limite** para desabilitar o identificador de publicidade do dispositivo. **Não configurado** (predefinição) mantém-no ativado.
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>As configurações se aplicam a: registro de dispositivo automatizado (supervisionado)
@@ -95,7 +93,7 @@ Estas definições são adicionadas a um perfil de configuração do dispositivo
 - **Alterações do perfil de configuração**: **Bloquear** impede alterações no perfil de configuração no dispositivo. **Não configurado** (predefinição) permite que o utilizador instale perfis de configuração.
 - **Bloqueio de ativação**: escolha **permitir** para habilitar bloqueio de ativação em dispositivos IOS supervisionados. O Bloqueio de Ativação dificulta que um dispositivo perdido ou roubado seja reativado.
 - **Bloquear remoção de aplicativo**: escolha **Bloquear** para impedir que os usuários removam aplicativos. **Não configurado** (predefinição) permite que os utilizadores removam aplicações do dispositivo.
-- **Bloqueia o modo restrito por USB**: escolha **Bloquear** para desabilitar o modo restrito de USB em dispositivos supervisionados. O modo USB Restricted impede que os acessórios USB mudem de dados com um dispositivo bloqueado por mais de uma hora. **Não configurado** (predefinição) permite o modo USB Restrito.
+- **Permitir acessórios USB enquanto o dispositivo estiver bloqueado**: **permitir** permite que os acessórios USB troquem dados por um dispositivo que tenha sido bloqueado por mais de uma hora. **Não configurado** (padrão) não atualiza o modo de USB restrito no dispositivo.
 - **Forçar data e hora automáticas**: **exigir** força dispositivos supervisionados a definir a data & hora automaticamente. O fuso horário do dispositivo é atualizado quando o dispositivo está ligado à rede móvel ou ao Wi-Fi com os serviços de localização ativados.
 - **Exigir que os alunos solicitem permissão para sair do curso da sala de aula**: **exigir** força alunos inscritos em um curso não gerenciado usando o aplicativo sala de aula para solicitar permissão do professor para sair do curso. **Não configurado** (predefinição) não força o estudante a pedir permissão.
 
@@ -325,7 +323,7 @@ Estas definições são adicionadas a um perfil de configuração do dispositivo
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>As configurações se aplicam a: registro de dispositivo automatizado (supervisionado)
 
-- **Câmera**: escolha **Bloquear** para impedir o acesso à câmera no dispositivo. **Não configurado** (predefinição) permite o acesso à câmara do dispositivo.
+- **Câmara**: escolha **bloco** para impedir o acesso à câmara do dispositivo. **Não configurado** (predefinição) permite o acesso à câmara do dispositivo.
 
   A partir do iOS 13,0, essa configuração requer dispositivos supervisionados.
 
@@ -612,7 +610,7 @@ Você também pode **importar** um arquivo CSV com a lista de nomes de aplicativ
 > Para poder configurar um dispositivo iOS para o modo de local público, tem de utilizar a ferramenta Apple Configurator ou o Programa de Inscrição de Dispositivos Apple para colocar o dispositivo no modo supervisionado. Consulte o guia da Apple sobre a utilização da ferramenta Apple Configurator.
 > Se a aplicação iOS que introduziu for instalada após a atribuição do perfil, o dispositivo só entrará em modo de quiosque após ser reiniciado.
 
-## <a name="domains"></a>Domínios
+## <a name="domains"></a>Domains
 
 ### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>As configurações se aplicam a: registro de dispositivo, registro de dispositivo automatizado (supervisionado)
 
@@ -653,7 +651,7 @@ O modo supervisionado do iOS só pode ser ativado durante a configuração inici
 - Restrições da IU 
 - Instalação dos perfis de configuração pela IU 
 - Notícias 
-- Atalhos de teclado 
+- Keyboard shortcuts 
 - Modificações do código de acesso 
 - Alterações do nome do dispositivo 
 - Transferências automáticas de aplicações 
@@ -672,11 +670,11 @@ O modo supervisionado do iOS só pode ser ativado durante a configuração inici
 > - iTunes
 > - Conteúdos explícitos
 > - Documentos e dados do iCloud
-> - Jogos para vários jogadores
+> - Jogos de vários jogadores
 > - Adicionar amigos do Game Center
 > - Siri
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Próximos passos
 
 [Atribua o perfil](../device-profile-assign.md) e [monitorize o respetivo estado](../device-profile-monitor.md).
 

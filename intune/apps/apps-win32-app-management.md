@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: e8b3ee799374f4b3777f771d4bd6e186ddaeb55c
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/27/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74564029"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune autônomo-gerenciamento de aplicativos do Win32
@@ -324,7 +324,7 @@ Se você optar por não **instalar automaticamente** uma dependência, a instala
 
 Cada dependência aderirá à lógica de repetição do aplicativo Win32 do Intune (tente instalar três vezes após aguardar 5 minutos) e o agendamento de reavaliação global. Além disso, as dependências só são aplicáveis no momento da instalação do aplicativo Win32 no dispositivo. As dependências não são aplicáveis para desinstalar um aplicativo Win32. Para excluir uma dependência, você deve clicar nas reticências (três pontos) à esquerda do aplicativo dependente localizado no final da linha da lista de dependências. 
 
-## <a name="delivery-optimization"></a>Otimização de entrega
+## <a name="delivery-optimization"></a>Otimização da Entrega
 
 Os clientes do Windows 10 1709 e posteriores baixarão o conteúdo do aplicativo Win32 do Intune usando um componente de otimização de entrega no cliente do Windows 10. A otimização de entrega fornece a funcionalidade ponto a ponto que está ativada por padrão. A otimização de entrega pode ser configurada pela diretiva de grupo e por meio da configuração do dispositivo do Intune. Para obter mais informações, consulte [otimização de entrega para Windows 10](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization). 
 

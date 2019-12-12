@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/28/2019
+ms.date: 12/12/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,16 +16,14 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 381ceea979dedf9b33cb7ef9c47291e3ac6ce20c
-ms.sourcegitcommit: 737ad6c675deedfc6009f792023ff95981b06582
+ms.openlocfilehash: e73612080e52c8eb49a0c090b68e917e24fef3ab
+ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74117906"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74992953"
 ---
 # <a name="ios-and-ipados-device-settings-to-use-common-ios-features-in-intune"></a>configurações do dispositivo iOS e iPadOS para usar recursos comuns do iOS no Intune
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 O Intune inclui algumas configurações internas para permitir que os usuários do iOS usem recursos da Apple diferentes em seus dispositivos. Por exemplo, os administradores podem controlar como os usuários do iOS usam impressoras de impressão, adicionar aplicativos e pastas ao Dock e às páginas na tela inicial, Mostrar notificações do aplicativo, mostrar detalhes da marca do ativo na tela de bloqueio, usar autenticação de logon único e autenticar usuários com certificados.
 
@@ -48,7 +46,7 @@ Este artigo lista essas configurações e descreve o que cada configuração faz
 > Certifique-se de adicionar todas as impressoras ao mesmo perfil. A Apple impede que vários perfis de impressões sejam direcionados para o mesmo dispositivo.
 
 - **Endereço IP**: Insira o endereço IPv4 ou IPv6 da impressora. Se você usar nomes de host para identificar impressoras, poderá obter o endereço IP executando ping na impressora no terminal. Obter o endereço IP e o caminho (neste artigo) fornece mais detalhes.
-- **Caminho**: o caminho normalmente é `ipp/print` para impressoras em sua rede. Obter o endereço IP e o caminho (neste artigo) fornece mais detalhes.
+- **Caminho**: normalmente, o caminho é `ipp/print` para impressoras em sua rede. Obter o endereço IP e o caminho (neste artigo) fornece mais detalhes.
 - **Porta**: Insira a porta de escuta do destino de impressão. Se você deixar essa propriedade em branco, o impresso usará a porta padrão. Disponível no iOS 11,0 e posterior.
 - **TLS**: escolha **habilitar** para proteger conexões de esprint com segurança de camada de transporte (TLS). Disponível no iOS 11,0 e posterior.
 
@@ -62,15 +60,15 @@ Para adicionar servidores de impressão, você pode:
 Para adicionar servidores do servidor de impressão, você precisa do endereço IP da impressora, do caminho do recurso e da porta. As etapas a seguir mostram como obter essas informações.
 
 1. Em um Mac que está conectado à mesma rede local (sub-rede) que as impressoras de impressão impressa, abra o **terminal** (de **/Applications/Utilities**).
-2. No terminal, digite `ippfind` e selecione Enter.
+2. No terminal, digite `ippfind`e selecione Enter.
 
     Anote as informações da impressora. Por exemplo, ele pode retornar algo semelhante a `ipp://myprinter.local.:631/ipp/port1`. A primeira parte é o nome da impressora. A última parte (`ipp/port1`) é o caminho do recurso.
 
-3. No terminal, digite `ping myprinter.local` e selecione Enter.
+3. No terminal, digite `ping myprinter.local`e selecione Enter.
 
    Anote o endereço IP. Por exemplo, ele pode retornar algo semelhante a `PING myprinter.local (10.50.25.21)`.
 
-4. Use os valores de caminho de recurso e endereço IP. Neste exemplo, o endereço IP é `10.50.25.21` e o caminho do recurso é `/ipp/port1`.
+4. Use os valores de caminho de recurso e endereço IP. Neste exemplo, o endereço IP é `10.50.25.21`e o caminho do recurso é `/ipp/port1`.
 
 ## <a name="home-screen-layout"></a>Esquema do ecrã principal
 
@@ -89,7 +87,7 @@ Você pode adicionar até **seis** itens (aplicativos e pastas combinados) para 
 - **Adicionar**: Adiciona aplicativos ou pastas ao Dock no dispositivo.
 - **Tipo**: adicionar um **aplicativo** ou uma **pasta**:
 
-  - **Aplicativo**: escolha esta opção para adicionar aplicativos ao Dock na tela. Digita
+  - **Aplicativo**: escolha esta opção para adicionar aplicativos ao Dock na tela. introduza:
 
     - **Nome do aplicativo**: Insira um nome para o aplicativo. Esse nome é usado para sua referência no portal do Azure. Ele *não é* mostrado no dispositivo IOS.
     - **ID do lote de aplicativos**: Insira a ID do pacote do aplicativo. Consulte [IDs de pacote para aplicativos Ios internos](bundle-ids-built-in-ios-apps.md) para ver alguns exemplos.
@@ -165,7 +163,7 @@ Quando você atribui a política a um iPhone, a página é semelhante à imagem 
 
 ![Dispositivo iOS com o ecrã principal modificado](./media/ios-device-features-settings/Bd37PHa.png)
 
-## <a name="app-notifications"></a>Notificações de aplicativo
+## <a name="app-notifications"></a>Notificações de aplicação
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>As configurações se aplicam a: registro de dispositivo automatizado (supervisionado)
 
@@ -205,7 +203,7 @@ Esta funcionalidade aplica-se a:
   > [!NOTE]
   > As variáveis não são validadas na interface do usuário e diferenciam maiúsculas de minúsculas. Como resultado, você poderá ver os perfis salvos com entrada incorreta. Por exemplo, se você inserir `{{DeviceID}}` em vez de `{{deviceid}}`, a cadeia de caracteres literal será mostrada em vez da ID exclusiva do dispositivo. Certifique-se de inserir as informações corretas.
 
-## <a name="single-sign-on"></a>Logon único
+## <a name="single-sign-on"></a>Início de sessão único
 
 ### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>As configurações se aplicam a: registro de dispositivo, registro de dispositivo automatizado (supervisionado)
 
@@ -217,7 +215,7 @@ Esta funcionalidade aplica-se a:
 
     Também pode substituir o âmbito pelo texto que introduzir na caixa de texto **Âmbito**.
 
-    Por exemplo, a contoso tem várias regiões, incluindo Europa, Ásia e América do Norte. A contoso quer que seus usuários da Ásia usem o SSO, e o aplicativo requer o UPN no formato `username@asia.contoso.com`. Quando você seleciona **nome UPN**, o realm de cada usuário é obtido do Azure AD, que é `contoso.com`. Portanto, para usuários na Ásia, selecione **nome UPN**e digite `asia.contoso.com`. O UPN do usuário final se torna `username@asia.contoso.com`, em vez de `username@contoso.com`.
+    Por exemplo, a contoso tem várias regiões, incluindo Europa, Ásia e América do Norte. A contoso quer que seus usuários da Ásia usem o SSO, e o aplicativo requer o UPN no formato de `username@asia.contoso.com`. Quando você seleciona **nome UPN**, o realm de cada usuário é obtido do Azure AD, que é `contoso.com`. Portanto, para usuários na Ásia, selecione **nome UPN**e digite `asia.contoso.com`. O UPN do usuário final se torna `username@asia.contoso.com`, em vez de `username@contoso.com`.
 
   - **ID do dispositivo do Intune**: o Intune seleciona automaticamente a ID do dispositivo do Intune.
 
@@ -234,15 +232,15 @@ Esta funcionalidade aplica-se a:
   Por exemplo, quando um utilizador se ligar a um destes sites, o dispositivo iOS utilizará as credenciais de início de sessão único. O utilizador não tem de introduzir credenciais adicionais. Se a autenticação multifator estiver habilitada, os usuários serão solicitados a inserir a segunda autenticação.
 
   > [!NOTE]
-  > Estes URLs têm de ter um FQDN formatado adequadamente. A Apple exige que elas estejam no formato `http://<yourURL.domain>`.
+  > Estes URLs têm de ter um FQDN formatado adequadamente. A Apple exige que elas estejam no formato de `http://<yourURL.domain>`.
 
   Os padrões de correspondências do URL têm de começar com `http://` ou `https://`. Uma correspondência de cadeia de caracteres simples é executada, portanto, o prefixo de URL `http://www.contoso.com/` não corresponde `http://www.contoso.com:80/`. Com o iOS 10,0 ou posterior, um único curinga \* pode ser usado para inserir todos os valores correspondentes. Por exemplo, `http://*.contoso.com/` corresponde a `http://store.contoso.com/` e `http://www.contoso.com`.
 
-  Os padrões `http://.com` e `https://.com` correspondem a todas as URLs HTTP e HTTPS, respectivamente.
+  Os padrões de `http://.com` e `https://.com` correspondem a todas as URLs HTTP e HTTPS, respectivamente.
 
 - **Aplicações que vão utilizar o Início de Sessão Único**: **adicione** aplicações a dispositivos dos utilizadores finais que podem utilizar o início de sessão único.
 
-  A matriz `AppIdentifierMatches` deve incluir cadeias de caracteres que correspondam às IDs do pacote de aplicativo. Essas cadeias de caracteres podem ser correspondências exatas, como `com.contoso.myapp`, ou inserir uma correspondência de prefixo na ID do pacote usando o caractere curinga \*. O caractere curinga deve aparecer após um caractere de ponto (.) e pode aparecer apenas uma vez, no final da cadeia de caracteres, como `com.contoso.*`. Quando um caráter universal é incluído, todas as aplicações cujo ID da coleção de pacotes começa com o prefixo têm acesso à conta.
+  A matriz de `AppIdentifierMatches` deve incluir cadeias de caracteres que correspondem às IDs do pacote de aplicativo. Essas cadeias de caracteres podem ser correspondências exatas, como `com.contoso.myapp`, ou inserir uma correspondência de prefixo na ID do pacote usando o caractere curinga \*. O caractere curinga deve aparecer após um caractere de ponto (.) e pode aparecer apenas uma vez, no final da cadeia de caracteres, como `com.contoso.*`. Quando um caráter universal é incluído, todas as aplicações cujo ID da coleção de pacotes começa com o prefixo têm acesso à conta.
 
   Utilize o **Nome da Aplicação** para introduzir um nome simples, para o ajudar a identificar o ID do pacote.
 
@@ -269,7 +267,7 @@ Esta funcionalidade aplica-se a:
     - **Caminho do indicador**: a Apple alterou essa configuração. Todos os indicadores vão para a pasta **sites aprovados** . Os indicadores não entram no caminho do indicador que você inserir.
     - **Título**: Insira um título descritivo para o indicador.
 
-    Se você não inserir nenhuma URL, os usuários finais não poderão acessar nenhum site, exceto `microsoft.com`, `microsoft.net` e `apple.com`. Essas URLs são permitidas automaticamente pelo Intune.
+    Se você não inserir nenhuma URL, os usuários finais não poderão acessar nenhum site, exceto `microsoft.com`, `microsoft.net`e `apple.com`. Essas URLs são permitidas automaticamente pelo Intune.
 
 ## <a name="single-sign-on-app-extension"></a>Extensão do aplicativo de logon único
 
@@ -280,36 +278,43 @@ Esta funcionalidade aplica-se a:
 
 ### <a name="settings-apply-to-all-enrollment-types"></a>As configurações se aplicam a: todos os tipos de registro
 
-- **Tipo de extensão do aplicativo SSO**: escolha o tipo de extensão do aplicativo de SSO de credencial. As opções são:
+- **Tipo de extensão do aplicativo SSO**: escolha o tipo de extensão do aplicativo SSO. As opções são:
 
-  - **Não configurado**: as extensões de aplicativo não são usadas. Para desabilitar uma extensão de aplicativo, você pode alternar o tipo de extensão do aplicativo SSO de **Kerberos** ou **credencial** para **não configurado**.
-  - **Credencial**: Use uma extensão de aplicativo de credencial genérica e personalizável para executar o SSO. Certifique-se de que você conhece a ID de extensão para a extensão de aplicativo de SSO da sua organização.
+  - **Não configurado**: as extensões de aplicativo não são usadas. Para desabilitar uma extensão de aplicativo, você pode alternar o tipo de extensão do aplicativo SSO para **não configurado**.
+  - **Redirecionar**: Use uma extensão de aplicativo de redirecionamento genérica e personalizável para executar o SSO com fluxos de autenticação modernos. Certifique-se de que você conhece a ID de extensão para a extensão de aplicativo da sua organização.
+  - **Credencial**: Use uma extensão de aplicativo de credencial genérica e personalizável para executar o SSO com fluxos de autenticação de desafio e resposta. Certifique-se de que você conhece a ID de extensão para a extensão de aplicativo da sua organização.
   - **Kerberos**: Use a extensão Kerberos interna da Apple, que está incluída no Ios 13,0 (e mais recente) e iPadOS 13,0 (e mais recente). Essa opção é uma versão específica do Kerberos da extensão do aplicativo de **credencial** .
 
   > [!TIP]
-  > Com o tipo de **credencial** , você adiciona seus próprios valores de configuração para passar pela extensão. Em vez disso, considere o uso de definições de configuração internas fornecidas pela Apple no tipo **Kerberos** .
+  > Com os tipos de **redirecionamento** e de **credencial** , você adiciona seus próprios valores de configuração para passar pela extensão. Se você estiver usando **credenciais**, considere o uso de definições de configuração internas fornecidas pela Apple no tipo **Kerberos** .
 
-- **ID da extensão** (somente credencial): Insira o identificador do pacote que identifica a extensão do aplicativo SSO, como `com.apple.extensiblesso`.
-- **ID da equipe** (somente credencial): Insira o identificador de equipe de sua extensão de aplicativo SSO. Um identificador de equipe é uma cadeia de caracteres alfanuméricos de 10 caracteres (números e letras) gerada pela Apple, como `ABCDE12345`. A ID da equipe não é necessária.
+- **ID da extensão** (redirecionamento e credencial): Insira o identificador do pacote que identifica a extensão do aplicativo SSO, como `com.apple.extensiblesso`.
+
+- **ID da equipe** (redirecionamento e credencial): Insira o identificador de equipe da sua extensão de aplicativo SSO. Um identificador de equipe é uma cadeia de caracteres alfanuméricos de 10 caracteres (números e letras) gerada pela Apple, como `ABCDE12345`. A ID da equipe não é necessária.
 
   [Localize sua ID de equipe](https://help.apple.com/developer-account/#/dev55c3c710c) (abre o site da Apple) tem mais informações.
 
-- **Realm**: Insira o nome do seu realm Kerberos. O nome do Realm deve estar em letras maiúsculas, como `CONTOSO.COM`. Normalmente, o nome do realm é o mesmo que o nome de domínio DNS, mas em letras maiúsculas.
+- **Realm** (Credential e Kerberos): Insira o nome do seu Realm de autenticação. O nome do Realm deve estar em letras maiúsculas, como `CONTOSO.COM`. Normalmente, o nome do realm é o mesmo que o nome de domínio DNS, mas em letras maiúsculas.
 
-- **Domínios**: Insira os nomes de domínio ou host dos sites que podem autenticar por meio do SSO. Por exemplo, se seu site for `mysite.contoso.com`, `mysite` será o nome do host e `contoso.com` será o nome de domínio. Quando os usuários se conectam a qualquer um desses sites, a extensão do aplicativo trata do desafio de autenticação. Essa autenticação permite que os usuários usem ID de face, Touch ID ou Apple pincode/senha para entrar.
+- **Domínios** (credencial e Kerberos): Insira os nomes de domínio ou de host dos sites que podem ser autenticados por meio do SSO. Por exemplo, se seu site for `mysite.contoso.com`, `mysite` será o nome do host e `contoso.com` será o nome de domínio. Quando os usuários se conectam a qualquer um desses sites, a extensão do aplicativo trata do desafio de autenticação. Essa autenticação permite que os usuários usem ID de face, Touch ID ou Apple pincode/senha para entrar.
 
   - Todos os domínios em sua extensão de aplicativo de logon único os perfis do Intune devem ser exclusivos. Não é possível repetir um domínio em nenhum perfil de extensão de aplicativo de logon, mesmo se você estiver usando tipos diferentes de extensões de aplicativo SSO.
   - Esses domínios não diferenciam maiúsculas de minúsculas.
 
-- **Configuração adicional** (somente credencial): Insira dados específicos de extensão adicionais a serem passados para a extensão do aplicativo SSO:
-  - **Chave de configuração**: Insira o nome do item que você deseja adicionar, como `user name`.
-  - **Tipo de valor**: Insira o tipo de dados. As opções são:
+- **URLs** (somente redirecionamento): Insira os prefixos de URL de seus provedores de identidade em cujo nome a extensão do aplicativo de redirecionamento executa o SSO. Quando um usuário é redirecionado para essas URLs, a extensão do aplicativo SSO será intermediária e avisará o SSO.
+
+  - Todas as URLs em seus perfis de extensão do aplicativo de logon único do Intune devem ser exclusivas. Não é possível repetir um domínio em nenhum perfil de extensão de aplicativo SSO, mesmo que você esteja usando tipos diferentes de extensões de aplicativo SSO.
+  - As URLs devem começar com http://ou https://.
+
+- **Configuração adicional** (redirecionamento e credencial): Insira dados específicos de extensão adicionais a serem passados para a extensão do aplicativo SSO:
+  - **Chave**: Insira o nome do item que você deseja adicionar, como `user name`.
+  - **Tipo**: Insira o tipo de dados. As opções são:
 
     - Cadeia
     - Booliano: no **valor de configuração**, insira `True` ou `False`.
     - Inteiro: no **valor de configuração**, insira um número.
     
-  - **Valor de configuração**: Insira os dados.
+  - **Valor**: Insira os dados.
 
   - **Adicionar**: Selecione para adicionar suas chaves de configuração.
 
@@ -323,13 +328,18 @@ Esta funcionalidade aplica-se a:
   > - Se você tiver apenas um Realm, deixe-o **não configurado** (padrão).
 
 - **Nome da entidade de segurança** (somente Kerberos): Insira o nome de usuário da entidade de segurança Kerberos. Você não precisa incluir o nome do realm. Por exemplo, em `user@contoso.com`, `user` é o nome principal e `contoso.com` é o nome do realm.
+
+  > [!TIP]
+  > - Você também pode usar variáveis no nome da entidade de segurança digitando chaves `{{ }}`. Por exemplo, para mostrar o nome de usuário, digite `Username: {{username}}`. 
+  > - No entanto, tenha cuidado com a substituição de variáveis porque as variáveis não são validadas na interface do usuário e diferenciam maiúsculas de minúsculas. Certifique-se de inserir as informações corretas.
+
 - **Active Directory código do site** (somente Kerberos): Insira o nome do site do Active Directory que a extensão Kerberos deve usar. Talvez não seja necessário alterar esse valor, pois a extensão Kerberos pode localizar automaticamente o Active Directory código do site.
 - **Nome do cache** (somente Kerberos): Insira o nome GSS (Generic Security Services) do cache Kerberos. É mais provável que você não precise definir esse valor.
 - **IDs de pacote de aplicativo** (somente Kerberos): **adicione** os identificadores de pacote de aplicativo que devem usar o logon único em seus dispositivos. Esses aplicativos recebem acesso ao tíquete de concessão de tíquete Kerberos, ao tíquete de autenticação e autenticam usuários para serviços que eles estão autorizados a acessar.
 - **Mapeamento de realm de domínio** (somente Kerberos): **adicione** os sufixos DNS de domínio que devem ser mapeados para seu Realm. Use essa configuração quando os nomes DNS dos hosts não corresponderem ao nome do realm. É mais provável que você não precise criar esse mapeamento de domínio para Realm personalizado.
-- **Certificado PKINIT** (somente Kerberos): **selecione** o certificado de autenticação de chave pública (PKINIT) que pode ser usado para renovar a credencial Kerberos sem interação com o usuário. O certificado deve ser um certificado PKCS ou SCEP que você adicionou anteriormente ao Intune.
+- **Certificado PKINIT** (somente Kerberos): **selecione** o certificado de autenticação de chave pública (PKINIT) que pode ser usado para autenticação Kerberos. Você pode escolher entre os certificados [PKCS](../protect/certficates-pfx-configure.md) ou [SCEP](../protect/certificates-scep-configure.md) que você adicionou no Intune. Para obter mais informações sobre certificados, consulte [usar certificados para autenticação no Microsoft Intune](../protect/certificates-configure.md).
 
-## <a name="wallpaper"></a>Papéis
+## <a name="wallpaper"></a>Imagem de Fundo
 
 Você pode enfrentar um comportamento inesperado quando um perfil sem imagem é atribuído a dispositivos com uma imagem existente. Por exemplo, você cria um perfil sem uma imagem. Este perfil é atribuído a dispositivos que já têm uma imagem. Nesse cenário, a imagem pode mudar para o padrão do dispositivo ou a imagem original pode permanecer no dispositivo. Esse comportamento é controlado e limitado pela plataforma MDM da Apple.
 

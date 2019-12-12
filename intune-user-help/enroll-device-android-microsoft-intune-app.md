@@ -20,10 +20,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 81c842eb27b1b9131c164ced5aeed86a78a37353
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72506289"
 ---
 # <a name="enroll-your-corporate-device-with-the-microsoft-intune-app"></a>Registrar seu dispositivo corporativo no aplicativo Microsoft Intune
@@ -37,7 +37,7 @@ Há quatro maneiras de se registrar. Sua organização deve permitir que você s
 * Código QR   
 * Google Zero Touch  
 
-## <a name="enroll-device"></a>Registrar dispositivo 
+## <a name="enroll-device"></a>Inscrever o dispositivo 
 Conclua estas etapas para configurar e registrar seu dispositivo.  
 
 > [!NOTE]
@@ -102,7 +102,7 @@ Nesta seção, você examinará o código QR fornecido pela empresa.  Quando ter
    ![Imagem de exemplo da tela de boas-vindas de instalação do dispositivo, destacando as instruções para tocar na tela.](./media/qr-code-intune-app-01.png)  
 
 2. Siga as instruções na tela para se conectar ao Wi-Fi.  
-3. Se o dispositivo não tiver um scanner de código QR, as telas de instalação mostrarão o progresso à medida que um scanner for instalado. Aguarde a conclusão da instalação.  
+3. Se o dispositivo não tiver um scanner de código QR, as telas de instalação mostrarão o progresso à medida que um scanner for instalado. Aguarde pela conclusão da instalação.  
 4. Quando solicitado, digitalize o código QR do perfil de registro que sua organização forneceu a você.  
 5. Retorne para [registrar o dispositivo](#enroll-device), etapa 4 para continuar a instalação.  
 
@@ -119,7 +119,7 @@ Nesta seção, você inserirá o token fornecido pela empresa. Quando terminar, 
 
 4. Selecione **Inserir código**.  
 
-5. Na tela **examinar ou inserir código** , digite o código que sua organização forneceu a você.  em seguida, clique em **Avançar**.  
+5. Na tela **examinar ou inserir código** , digite o código que sua organização forneceu a você.  Clique depois em **Seguinte**.  
 
    ![Imagem de exemplo da tela de verificação ou de inserção de código, realçando o botão Avançar.](./media/token-intune-app-04.png)  
 

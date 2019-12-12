@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c83b47e70a6ef7f5eedb032846398dd669379c5c
-ms.sourcegitcommit: d8bcf1a427035138f7dfe1e4f8b3c971c773dcd8
+ms.openlocfilehash: d876c0268f38a09ea3729a7e19ee00b321ae897a
+ms.sourcegitcommit: edd06a494a241d198ca9b0d3030c92195976e0d3
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74819725"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "75000402"
 ---
 # <a name="us-government-endpoints-for-microsoft-intune"></a>Pontos de extremidade do governo dos EUA para Microsoft Intune
 
@@ -77,3 +77,5 @@ Para obter mais informações, consulte:
 
 ## <a name="next-steps"></a>Próximos passos
 [Pontos de extremidade de rede para Microsoft Intune](intune-endpoints.md)
+
+[Registro automático de dispositivo e registro do Windows 10](../enrollment/windows-enroll.md#registration-and-enrollment-cnames)

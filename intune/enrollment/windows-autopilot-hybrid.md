@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: dc618f2502647ba33a16cff4305b9f4671e05996
-ms.sourcegitcommit: fc4b38660129d615068f34ad4b96b900d73f7b53
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/27/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74558191"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>Implantar dispositivos ingressados no Azure AD híbrido usando o Intune e o piloto automático do Windows
@@ -44,7 +44,7 @@ Os dispositivos a ser inscritos também têm de:
 
 1. Entre no Azure, no painel esquerdo, selecione **Azure Active Directory**.
 
-   ![O portal do Azure](./media/windows-autopilot-hybrid/auto-enroll-azure-main.png)
+   ![Portal do Azure](./media/windows-autopilot-hybrid/auto-enroll-azure-main.png)
 
 1. Selecione **Mobilidade (MDM e MAM)** .
 
@@ -111,7 +111,7 @@ O conector do Intune para Active Directory deve ser instalado em um computador q
 2. Siga as instruções para baixar o conector.
 3. Abra o arquivo de instalação do conector baixado, *ODJConnectorBootstrapper. exe*, para instalar o conector.
 4. No final da instalação, selecione **Configurar**.
-5. Selecione **entrar**.
+5. Selecione **Iniciar Sessão**.
 6. Insira as credenciais de administrador global do usuário ou da função de administrador do Intune.  
    A conta de usuário deve ter uma licença do Intune atribuída.
 7. Vá para **dispositivos** > **Windows** > **registro do Windows** > **conector do Intune para Active Directory**e, em seguida, confirme se o status da conexão está **ativo**.

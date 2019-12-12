@@ -20,10 +20,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 8eef3af9a82e7a61bc5200bf45143657072d6db7
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72508367"
 ---
 # <a name="upload-and-email-logs"></a>Upload e logs de email  
@@ -38,7 +38,7 @@ Os detalhes de erro reais são mantidos em seu dispositivo em um documento espec
 ## <a name="upload-and-email-logs-from-company-portal"></a>Carregar e enviar logs por email de Portal da Empresa  
 
 1. No aplicativo Portal da Empresa, há duas maneiras de iniciar o suporte por email.
-    * Na tela inicial: toque em **Menu** > **ajuda** > **suporte a email**.  
+    * Na tela inicial: toque em **Menu** > **ajuda** > **suporte por email**.  
     * Em uma mensagem de erro: toque em **ajuda** ou **enviar informações**, se disponível.  
 
     > [!NOTE]

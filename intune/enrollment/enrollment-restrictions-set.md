@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5d70496a87f923b61cacb3da250e5f22ce5c7817
-ms.sourcegitcommit: aeb76032de216e5feb94559aeaf36c0357f1247d
+ms.openlocfilehash: 78f79a734d0a7b4901b2248b20abd9d304926dd2
+ms.sourcegitcommit: e75718ee6cf93c0e6c915f2776b785fe8db9f7e0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72587959"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74955512"
 ---
 # <a name="set-enrollment-restrictions"></a>Definir restrições de inscrição
 
@@ -59,15 +59,12 @@ As restrições predefinidas são fornecidas automaticamente para as restriçõe
 
 ## <a name="create-a-device-type-restriction"></a>Criar uma restrição de tipo de dispositivo
 
-1. Inicie sessão no portal do Azure.
-2. Selecione **Mais Serviços**, procure o **Intune** e, em seguida, selecione **Intune**.
-3. Selecione **registro de dispositivo**  > **restrições de registro**  > **criar restrição**  > **restrição de tipo de dispositivo**.
-    ![Screen Cap para criar uma restrição de tipo de dispositivo ](./media/enrollment-restrictions-set/create-device-type-restriction.png)
-4. Na página **noções básicas** , dê à restrição um **nome** e uma **Descrição**opcional.
-5. Escolha **Avançar** para ir para a página **configurações de plataforma** .
-6. Em **plataforma**, escolha **permitir** para as plataformas que você deseja que essa restrição permita.
-    ![Screen Cap para escolher as configurações de plataforma ](./media/enrollment-restrictions-set/choose-platform-settings.png)
-7. Em **versões**, escolha as versões mínima e máxima às quais você deseja que as plataformas permitidas ofereçam suporte. As restrições de versão se aplicam somente a dispositivos registrados com o Portal da Empresa.
+1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) > **dispositivos** > **restrições de registro** > **criar restrição** > **restrição de tipo de dispositivo**.
+2. Na página **noções básicas** , dê à restrição um **nome** e uma **Descrição**opcional.
+3. Escolha **Avançar** para ir para a página **configurações de plataforma** .
+4. Em **plataforma**, escolha **permitir** para as plataformas que você deseja que essa restrição permita.
+    ![limite de tela para escolher as configurações de plataforma](./media/enrollment-restrictions-set/choose-platform-settings.png)
+5. Em **versões**, escolha as versões mínima e máxima às quais você deseja que as plataformas permitidas ofereçam suporte. As restrições de versão se aplicam somente a dispositivos registrados com o Portal da Empresa.
      Os formatos suportados pelas versões são os seguintes:
     - O administrador do dispositivo Android e o perfil de trabalho do Android Enterprise dão suporte ao principal. Minor. Rev. Build.
     - o iOS dá suporte a Major. Minor. Rev. As versões do sistema operacional não se aplicam a dispositivos Apple que se registram com o Programa de registro de dispositivos, Apple School Manager ou o aplicativo Apple Configurator.
@@ -84,31 +81,28 @@ As restrições predefinidas são fornecidas automaticamente para as restriçõe
    > [!Note]
    > O Windows 10 não fornece o número Rev durante o registro, por exemplo, se você inserir em 10.0.17134.100 e o dispositivo for 10.0.17134.174, ele será bloqueado durante o registro.
 
-8. Em **pessoal de propriedade**, escolha **permitir** para as plataformas que você deseja permitir como dispositivos de propriedade pessoal.
-9. Escolha **Avançar** para ir para a página **atribuições** .
-10. Escolha **Selecionar grupos para incluir** e, em seguida, use a caixa Pesquisar para localizar os grupos que você deseja incluir nessa restrição. A restrição só será aplicada aos grupos à qual for atribuída. Se não atribuir uma restrição a pelo menos um grupo, a mesma não terá efeito. Em seguida, selecione **Selecionar**. 
-    ![Screen Cap para escolher as configurações de plataforma ](./media/enrollment-restrictions-set/select-groups.png)
-11. Selecione **Avançar** para ir para a página **revisar + criar** .
-12. Selecione **criar** para criar a restrição.
-13. A nova restrição é criada com uma prioridade diretamente acima das restrições predefinidas. Pode [alterar a prioridade](#change-enrollment-restriction-priority).
+6. Em **pessoal de propriedade**, escolha **permitir** para as plataformas que você deseja permitir como dispositivos de propriedade pessoal.
+7. Escolha **Avançar** para ir para a página **atribuições** .
+8. Escolha **Selecionar grupos para incluir** e, em seguida, use a caixa Pesquisar para localizar os grupos que você deseja incluir nessa restrição. A restrição só será aplicada aos grupos à qual for atribuída. Se não atribuir uma restrição a pelo menos um grupo, a mesma não terá efeito. Em seguida, selecione **Selecionar**. 
+    ![limite de tela para escolher as configurações de plataforma](./media/enrollment-restrictions-set/select-groups.png)
+9. Selecione **Avançar** para ir para a página **revisar + criar** .
+10. Selecione **criar** para criar a restrição.
+11. A nova restrição é criada com uma prioridade diretamente acima das restrições predefinidas. Pode [alterar a prioridade](#change-enrollment-restriction-priority).
 
 
 ## <a name="create-a-device-limit-restriction"></a>Criar uma restrição de limite de dispositivo
 
-1. Inicie sessão no portal do Azure.
-2. Selecione **Mais Serviços**, procure o **Intune** e, em seguida, selecione **Intune**.
-3. Selecione **registro de dispositivo**  > **restrições de registro**  > **criar restrição**  > **restrição de limite de dispositivo**.
-    ![Screen Cap para criar uma restrição de limite de dispositivo ](./media/enrollment-restrictions-set/create-device-limit-restriction.png)
-4. Na página **noções básicas** , dê à restrição um **nome** e uma **Descrição**opcional.
-5. Escolha **Avançar** para ir para a página **limite de dispositivo** .
-6. Para **limite de dispositivo**, selecione o número máximo de dispositivos que um usuário pode registrar.
-    ![Screen Cap para escolher o limite do dispositivo ](./media/enrollment-restrictions-set/choose-device-limit.png)
-7. Escolha **Avançar** para ir para a página **atribuições** .
-8. Escolha **Selecionar grupos para incluir** e, em seguida, use a caixa Pesquisar para localizar os grupos que você deseja incluir nessa restrição. A restrição só será aplicada aos grupos à qual for atribuída. Se não atribuir uma restrição a pelo menos um grupo, a mesma não terá efeito. Em seguida, selecione **Selecionar**. 
-    ![Screen Cap para selecionar grupos ](./media/enrollment-restrictions-set/select-groups-device-limit.png)
-11. Selecione **Avançar** para ir para a página **revisar + criar** .
-12. Selecione **criar** para criar a restrição.
-13. A nova restrição é criada com uma prioridade diretamente acima das restrições predefinidas. Pode [alterar a prioridade](#change-enrollment-restriction-priority).
+1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) > **dispositivos** > **restrições de registro** > **criar restrição** > **restrição de limite de dispositivo**.
+2. Na página **noções básicas** , dê à restrição um **nome** e uma **Descrição**opcional.
+3. Escolha **Avançar** para ir para a página **limite de dispositivo** .
+4. Para **limite de dispositivo**, selecione o número máximo de dispositivos que um usuário pode registrar.
+    ![a extremidade da tela para escolher o limite do dispositivo](./media/enrollment-restrictions-set/choose-device-limit.png)
+5. Escolha **Avançar** para ir para a página **atribuições** .
+6. Escolha **Selecionar grupos para incluir** e, em seguida, use a caixa Pesquisar para localizar os grupos que você deseja incluir nessa restrição. A restrição só será aplicada aos grupos à qual for atribuída. Se não atribuir uma restrição a pelo menos um grupo, a mesma não terá efeito. Em seguida, selecione **Selecionar**. 
+    ![limite de tela para selecionar grupos](./media/enrollment-restrictions-set/select-groups-device-limit.png)
+7. Selecione **Avançar** para ir para a página **revisar + criar** .
+8. Selecione **criar** para criar a restrição.
+9. A nova restrição é criada com uma prioridade diretamente acima das restrições predefinidas. Pode [alterar a prioridade](#change-enrollment-restriction-priority).
 
 Durante as inscrições BYOD, os utilizadores verão uma notificação que os informará quando atingirem o limite de dispositivos inscritos. Por exemplo, no iOS:
 
@@ -131,11 +125,9 @@ Durante as inscrições BYOD, os utilizadores verão uma notificação que os in
 
 Você pode alterar as configurações de uma restrição de registro seguindo as etapas abaixo. Essas restrições não afetam os dispositivos que já foram registrados. A inscrição de dispositivos com o [agente de PC do Intune](../fundamentals/manage-windows-pcs-with-microsoft-intune.md) não pode ser bloqueada com esta funcionalidade.
 
-1. Inicie sessão no portal do Azure.
-2. Selecione **Mais Serviços**, procure o **Intune** e, em seguida, selecione **Intune**.
-3. Selecione **registro de dispositivo** > **restrições de registro** > escolha a restrição que você deseja alterar > **Propriedades**.
-4. Escolha **Editar** ao lado das configurações que você deseja alterar.
-5. Na página **Editar** , faça as alterações desejadas e prossiga para a página **examinar + salvar** e, em seguida, escolha **salvar**.
+1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) > **dispositivos** > **restrições de registro** > escolha a restrição que você deseja alterar > **Propriedades**.
+2. Escolha **Editar** ao lado das configurações que você deseja alterar.
+3. Na página **Editar** , faça as alterações desejadas e prossiga para a página **examinar + salvar** e, em seguida, escolha **salvar**.
 
 
 ## <a name="blocking-personal-android-devices"></a>Bloquear dispositivos Android pessoais

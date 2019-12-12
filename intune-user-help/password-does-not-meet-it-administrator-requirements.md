@@ -18,10 +18,10 @@ ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 9181510dad2640fcc8ea84ce2db2856bd02cbaf5
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72502174"
 ---
 # <a name="device-password-requirements-for-enrolled-devices"></a>Requisitos de senha do dispositivo para dispositivos registrados
@@ -40,12 +40,12 @@ Para obter ajuda adicional ou para descobrir os requisitos específicos de sua o
 
 | Mensagem | Como corrigir |
 |-----------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| A senha é necessária. | Defina uma senha. Sua organização exige que você insira uma senha para desbloquear seu dispositivo. |
+| É necessária uma senha. | Defina uma palavra-passe. Sua organização exige que você insira uma senha para desbloquear seu dispositivo. |
 | A senha é muito simples. |  Certifique-se de que sua senha não contenha números sequenciais ou repetitivos, como 1234 ou 1111. |
 | A senha é muito curta.| Atualize ou defina uma senha com mais caracteres. Sua organização requer que sua senha tenha um certo comprimento. O que eles realmente escolhem variam, mas o comprimento mínimo que ele pode exigir é de 4 caracteres, e o máximo é 16. |
 | A senha deve conter apenas números. | Defina uma senha que contenha apenas números.|
 | A senha deve conter apenas caracteres alfanuméricos. | Defina uma senha que contenha uma combinação de números e letras.|
-| A senha deve conter caracteres complexos. | Adicione caracteres complexos, como números, letras maiúsculas e símbolos como `$`, `%` e `#`. Sua organização requer uma combinação de letras, números e caracteres não alfanuméricos para dificultar que outras pessoas adivinhem a senha.|  
+| A senha deve conter caracteres complexos. | Adicione caracteres complexos, como números, letras maiúsculas e símbolos como `$`, `%`e `#`. Sua organização requer uma combinação de letras, números e caracteres não alfanuméricos para dificultar que outras pessoas adivinhem a senha.|  
 | A senha expirou. | Defina uma nova senha. Sua organização exige que você altere sua senha após um determinado número de dias. |
 | Sua senha foi usada muito recentemente. | Escolha uma senha que você não usou antes. Sua organização requer que uma determinada quantidade de tempo passe antes de reutilizar uma senha. |
 
@@ -58,7 +58,7 @@ Para obter ajuda adicional ou para descobrir os requisitos específicos de sua o
 | A senha é muito curta. | Atualize ou defina uma senha com mais caracteres. Sua organização requer que sua senha tenha um comprimento determinado. O que eles realmente escolhem variam, mas o comprimento mínimo que ele pode exigir é de 4 caracteres, e o máximo é 14. Quando você altera sua senha, você pode ver um prompt da Apple informando que você digitou 6 ou mais caracteres; Esta mensagem é uma recomendação do sistema da Apple. Se sua organização exigir apenas uma senha que tenha 4 ou 5 caracteres, você não precisará inserir uma senha de 6 dígitos.|  
 | A senha deve conter apenas números. | Defina uma senha que contenha apenas números.|
 | A senha deve conter apenas caracteres alfanuméricos.| Defina uma senha que contenha uma combinação de números e letras.|
-| A senha deve conter caracteres não alfanuméricos. | Adicione caracteres especiais, como `&`, `!`, `$`, `%` e `#`. Sua organização requer uma combinação de letras, números e caracteres não alfanuméricos para dificultar que outras pessoas adivinhem a senha.|
+| A senha deve conter caracteres não alfanuméricos. | Adicione caracteres especiais, como `&`, `!`, `$`, `%`e `#`. Sua organização requer uma combinação de letras, números e caracteres não alfanuméricos para dificultar que outras pessoas adivinhem a senha.|
 | A senha expirou. | Defina uma nova senha. Sua organização exige que você altere sua senha após um determinado número de dias. |
 | Sua senha foi usada muito recentemente.| Escolha uma senha que você não usou antes. Sua organização requer que uma determinada quantidade de tempo passe antes de reutilizar uma senha. |
 |ID de toque ou autenticação de ID de face necessária. | Configure a ID de toque ou a ID do rosto. Sua organização exige que você autentique com um desses métodos antes de usar o preenchimento automático para senhas ou informações de cartão de crédito. | 
@@ -66,25 +66,25 @@ Para obter ajuda adicional ou para descobrir os requisitos específicos de sua o
 ## <a name="macos-password-requirements"></a>requisitos de senha do macOS
 | Mensagem | Como corrigir |
 |-----------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| A senha é necessária. | Defina uma senha. Sua organização exige que você insira uma senha para desbloquear seu dispositivo. |
+| É necessária uma senha. | Defina uma palavra-passe. Sua organização exige que você insira uma senha para desbloquear seu dispositivo. |
 | A senha é muito simples.|  Certifique-se de que sua senha não contenha números sequenciais ou repetitivos, como 1234 ou 1111. |
 | A senha é muito curta. | Atualize ou defina uma senha com mais caracteres. Sua organização requer que sua senha tenha um certo comprimento.|
 | A senha deve conter apenas números. | Defina uma senha que contenha apenas números.|
 | A senha deve conter apenas caracteres alfanuméricos. | Defina uma senha que contenha uma combinação de números e letras.|
-| A senha deve conter caracteres não alfanuméricos. | Adicione caracteres especiais, como `&`, `!`, `$`, `%` e `#`. Sua organização requer uma combinação de letras, números e caracteres não alfanuméricos para dificultar que outras pessoas adivinhem a senha.|
+| A senha deve conter caracteres não alfanuméricos. | Adicione caracteres especiais, como `&`, `!`, `$`, `%`e `#`. Sua organização requer uma combinação de letras, números e caracteres não alfanuméricos para dificultar que outras pessoas adivinhem a senha.|
 | A senha expirou. | Defina uma nova senha. Sua organização exige que você altere sua senha após um determinado número de dias. |
 | Sua senha foi usada muito recentemente. | Escolha uma senha que você não usou antes. Sua organização requer que uma determinada quantidade de tempo passe antes de reutilizar uma senha. |
 
 ## <a name="android-password-requirements"></a>Requisitos de senha do Android
 | Mensagem | Como corrigir |
 |-----------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| A senha é necessária. | Defina uma senha ou PIN. Sua organização exige que você insira uma senha para desbloquear seu dispositivo. |
+| É necessária uma senha. | Defina uma senha ou PIN. Sua organização exige que você insira uma senha para desbloquear seu dispositivo. |
 | A senha é muito simples. |  Certifique-se de que sua senha ou PIN não contenha números sequenciais ou repetitivos, como 1234 ou 1111. |
 | A senha é muito curta. | Atualize ou defina uma senha com mais caracteres. Sua organização requer que sua senha tenha um certo comprimento.|
 | A senha deve conter números. | Defina uma senha ou PIN que contenha números.|
 | A senha deve conter letras. | Defina uma senha que contenha letras do alfabeto.|
 | A senha deve conter caracteres alfanuméricos. | Defina uma senha que contenha uma combinação de números e letras.|
-| A senha deve conter caracteres alfanuméricos e símbolos. | Defina uma senha que contenha uma combinação de letras, números e caracteres especiais, como `&`, `!`, `$`, `%` e `#`. |
+| A senha deve conter caracteres alfanuméricos e símbolos. | Defina uma senha que contenha uma combinação de letras, números e caracteres especiais, como `&`, `!`, `$`, `%`e `#`. |
 | A senha deve usar a tecnologia biométrica.| Configure seu dispositivo para usar a autenticação biométrica, como impressão digital ou reconhecimento facial.
 | A senha expirou. | Defina uma nova senha. Sua organização exige que você altere sua senha após um determinado número de dias. |
 | Sua senha foi usada muito recentemente. | Escolha uma senha que você não usou antes. Sua organização requer que uma determinada quantidade de tempo passe antes de reutilizar uma senha. |

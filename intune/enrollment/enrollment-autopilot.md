@@ -19,14 +19,14 @@ search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: bce0e96ecdd4cf254273e26564b8cb132a6d2080
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/27/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74563864"
 ---
-# <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Registrar dispositivos Windows no Intune usando o piloto automático do Windows  
-O Windows AutoPilot simplifica o registro de dispositivos no Intune. A criação e manutenção de imagens personalizadas do sistema operativo são um processo moroso. Também poderá demorar a aplicar estas imagens personalizadas do sistema operativo a novos dispositivos para as preparar para utilização antes de as disponibilizar aos seus utilizadores finais. Com o Microsoft Intune e o Autopilot, pode fornecer novos dispositivos aos seus utilizadores finais sem ter de criar, manter e aplicar imagens de sistema operativo personalizadas aos dispositivos. Ao utilizar o Intune para gerir dispositivos do Autopilot, pode gerir políticas, perfis, aplicações, entre outros, após estes serem inscritos. Para uma descrição geral das vantagens, cenários e pré-requisitos, veja [Descrição geral do Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
+# <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Inscrever dispositivos Windows no Intune com o Windows Autopilot  
+O Windows Autopilot simplifica a inscrição de dispositivos no Intune. A criação e manutenção de imagens personalizadas do sistema operativo são um processo moroso. Também poderá demorar a aplicar estas imagens personalizadas do sistema operativo a novos dispositivos para as preparar para utilização antes de as disponibilizar aos seus utilizadores finais. Com o Microsoft Intune e o Autopilot, pode fornecer novos dispositivos aos seus utilizadores finais sem ter de criar, manter e aplicar imagens de sistema operativo personalizadas aos dispositivos. Ao utilizar o Intune para gerir dispositivos do Autopilot, pode gerir políticas, perfis, aplicações, entre outros, após estes serem inscritos. Para uma descrição geral das vantagens, cenários e pré-requisitos, veja [Descrição geral do Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
 
 Há quatro tipos de implantação do AutoPilot:
 - [Modo de autoimplantação](https://docs.microsoft.com/windows/deployment/windows-autopilot/self-deploying) para quiosques, pôsteres digitais ou um dispositivo compartilhado
@@ -113,7 +113,7 @@ Os perfis de implementação do Autopilot são utilizados para configurar os dis
     - **Allow White diferenciada OOBE** (requer o Windows 10, versão 1903 ou posterior; [requisitos físicos adicionais](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove#prerequisites)): escolha **Sim** para permitir o suporte a diferenciada branco.
     - **Aplicar modelo de nome de dispositivo** (requer o Windows 10, versão 1809 ou posterior e tipo de junção do Azure AD): escolha **Sim** para criar um modelo a ser usado ao nomear um dispositivo durante o registro. Os nomes têm de ter 15 carateres ou menos e podem conter letras, números e hífenes. Não podem conter apenas números. Utilize a [macro %SERIAL%](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) para adicionar um número de série específico de hardware. Em alternativa, utilize a [macro %RAND:x%](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) para adicionar uma cadeia de números aleatória na qual x corresponde ao número de dígitos a adicionar. Você só pode fornecer uma correção prévia para dispositivos híbridos em um [perfil de ingresso no domínio](windows-autopilot-hybrid.md#create-and-assign-a-domain-join-profile). 
     - **Idioma (Região)** \*: selecione o idioma a utilizar para o dispositivo. Esta opção só está disponível se tiver optado pela **Implementação personalizada** no **Modo de implementação**.
-    - **Configurar automaticamente** o\*de teclado: se um **idioma (região)** estiver selecionado, escolha **Sim** para ignorar a página de seleção de teclado. Esta opção só está disponível se tiver optado pela **Implementação personalizada** no **Modo de implementação**.
+    - **Configurar automaticamente o teclado**\*: se um **idioma (região)** está selecionado, escolha **Sim** para ignorar a página de seleção do teclado. Esta opção só está disponível se tiver optado pela **Implementação personalizada** no **Modo de implementação**.
 8. Selecione **Seguinte**.
 9. Na página **marcas de escopo** , adicione opcionalmente as marcas de escopo que você deseja aplicar a esse perfil. Para obter mais informações sobre marcas de escopo, consulte [usar o controle de acesso baseado em função e marcas de escopo para distribuí-lo](../fundamentals/scope-tags.md).
 10. Selecione **Seguinte**.
@@ -146,7 +146,7 @@ Após ter criado um perfil de implementação do Autopilot, poderá editar deter
 Depois de carregar um dispositivo de piloto automático, você poderá editar determinados atributos do dispositivo.
 
 1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), selecione **dispositivos** > **windows** > **registro do Windows** > **dispositivos** (no programa de **implantação do Windows AutoPilot**.
-2. Selecione o dispositivo que você deseja editar.
+2. Selecione o dispositivo que quer editar.
 3. No painel à direita da tela, você pode editar o nome do dispositivo, a marca do grupo ou o nome amigável do usuário (se você tiver atribuído um usuário).
 4. Selecione **Guardar**.
 

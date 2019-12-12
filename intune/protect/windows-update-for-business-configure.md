@@ -16,10 +16,10 @@ ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: a7c3398f28d7c396c873dd29f3e3fdd719c1a7c6
-ms.sourcegitcommit: f26039d674eb4d61ab68264dd1a10b2e5e1d842c
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/02/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74691779"
 ---
 # <a name="manage-windows-10-software-updates-in-intune"></a>Gerenciar atualizações de software do Windows 10 no Intune
@@ -93,7 +93,7 @@ Os anéis de atualização do Windows 10 dão suporte a [marcas de escopo](../fu
 
    Quando estiver pronto, selecione **Avançar** para continuar com as *atribuições*.
 
-6. Em **atribuições**, escolha **+ Selecionar grupos para incluir** e, em seguida, atribua o anel de atualização a um ou mais grupos. Use **+ selecione grupos para excluir** para ajustar a atribuição. Selecione **Avançar** para continuar.
+6. Em **atribuições**, escolha **+ Selecionar grupos para incluir** e, em seguida, atribua o anel de atualização a um ou mais grupos. Use **+ selecione grupos para excluir** para ajustar a atribuição. Selecione **Seguinte** para continuar.
 
 7. Em**revisão + criar**, examine as configurações e, em seguida, selecione **criar** quando estiver pronto para salvar o anel de atualização do Windows 10. O novo anel de atualização é exibido na lista de anéis de atualização.
 
@@ -104,7 +104,7 @@ No portal, navegue até **dispositivos** > os anéis de atualização **do Windo
 Nessa página, você pode exibir o status de atribuição de anéis e selecionar as seguintes ações na parte superior do painel de visão geral para gerenciar o anel de atualização:
 
 - [Eliminar](#delete)
-- [Temporariamente](#pause)
+- [Colocar em pausa](#pause)
 - [Volte](#resume)
 - [Estender](#extend)
 - [Desinstalar](#uninstall)
@@ -122,7 +122,7 @@ A exclusão de um anel do Intune não modifica as configurações em dispositivo
 1. Ao exibir a página Visão geral de um anel de atualização, selecione **excluir**.
 2. Selecione **OK**.
 
-#### <a name="pause"></a>Temporariamente
+#### <a name="pause"></a>Colocar em pausa
 
 Selecione **Pausar** para impedir que os dispositivos atribuídos recebam atualizações de recursos ou atualizações de qualidade por até 35 dias a partir do momento em que você pausar o anel. Após ter decorrido o número máximo de dias, a funcionalidade de pausa expira automaticamente e o dispositivo procura atualizações aplicáveis nas Atualizações do Windows. Após esta procura, pode colocar as atualizações em pausa novamente.
 Se você retomar um anel de atualização em pausa e, em seguida, pausar esse anel novamente, o período de pausa será redefinido para 35 dias.
@@ -138,7 +138,7 @@ Quando um tipo de atualização é pausado, o painel de visão geral desse anel 
 > [!IMPORTANT]
 > Depois de emitir um comando Pause, os dispositivos receberão esse comando na próxima vez que fizerem check-in no serviço. É possível que instalem uma atualização agendada antes do registo. Além disso, se um dispositivo de destino for desativado quando emitir o comando de pausa, ao desativá-lo, este poderá transferir e instalar atualizações agendadas antes do registo no Intune.
 
-#### <a name="resume"></a>Volte
+#### <a name="resume"></a>Retomar
 
 Enquanto um anel de atualização é pausado, você pode selecionar **retomar** para restaurar as atualizações de recursos e qualidade desse anel para a operação ativa. Depois de retomar um anel de atualização, você pode pausar o anel novamente.
 
@@ -148,7 +148,7 @@ Enquanto um anel de atualização é pausado, você pode selecionar **retomar** 
 2. Selecione entre as opções disponíveis para retomar as atualizações de **recurso** ou **qualidade** e, em seguida, selecione **OK**.
 3. Depois de retomar um tipo de atualização, você pode selecionar retomar novamente para retomar o outro tipo de atualização.
 
-#### <a name="extend"></a>Estender  
+#### <a name="extend"></a>Expandir  
 
 Enquanto um anel de atualização é pausado, você pode selecionar **estender** para redefinir o período de pausa para as atualizações de recurso e qualidade desse anel de atualização para 35 dias.
 
@@ -227,7 +227,7 @@ Quando um dispositivo recebe uma política de atualizações de recursos do Wind
 
 3. Em **noções básicas**, especifique um nome, uma descrição (opcional) e para **a atualização do recurso a ser implantada**, selecione a versão do Windows com o conjunto de recursos desejado e, em seguida, selecione **Avançar**.
 
-4. Em **atribuições**, escolha **+ Selecionar grupos para incluir** e, em seguida, atribua o anel de atualização a um ou mais grupos. Selecione **Avançar** para continuar.
+4. Em **atribuições**, escolha **+ Selecionar grupos para incluir** e, em seguida, atribua o anel de atualização a um ou mais grupos. Selecione **Seguinte** para continuar.
 
 5. Em **revisão + criar**, examine as configurações e selecione **criar** quando estiver pronto para salvar a política de atualizações de recursos do Windows 10.  
 

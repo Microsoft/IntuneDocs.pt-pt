@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: d8fd53e9d12dd38639d204e214aea03d733e584b
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/13/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74059206"
 ---
 # <a name="compare-managing-windows-pcs-as-computers-or-mobile-devices"></a>Comparar a gestão de PCs Windows como computadores ou dispositivos móveis
@@ -47,7 +47,7 @@ As organizações podem utilizar o Microsoft Intune para gerir PCs Windows como 
 |**Assistência remota** |TeamViewer<br>[Pedir e fornecer assistência remota para PCs Windows](request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md)|TeamViewer<br> [Utilizar o TeamViewer para administrar remotamente dispositivos do Intune](../remote-actions/teamviewer-support.md) |
 |**Implementação de aplicações** | Não disponível para a Loja Microsoft para Empresas,<br>.exe, .appx e múltiplos ficheiros .msi apenas<br>[Adicionar aplicações para PCs Windows que executam o cliente de software do Intune](add-apps-for-windows-pcs-in-microsoft-intune.md)|Disponível para aplicações da Loja Microsoft e aplicações de linha de negócio<br>[Como adicionar aplicações da loja Windows](../apps/store-apps-windows.md)<br>[Como adicionar aplicações de linha de negócio (LOB) Windows](../apps/lob-apps-windows.md)|
 |**Proteção de aplicações**|Não disponível|Disponível <br>[O que são as políticas de proteção de aplicações?](../apps/app-protection-policy.md)|
-|**Atestado de integridade**|Não disponível|Disponível|
+|**Atestado de estado de funcionamento**|Não disponível|Disponível|
 
 
 ## <a name="advantages-of-mdm-windows-pc-management"></a>Vantagens da gestão MDM de PCs Windows

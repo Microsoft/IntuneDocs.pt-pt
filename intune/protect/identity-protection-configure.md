@@ -16,10 +16,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 4fce03913042675588ea12e5399e6f5a1be04946
-ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/19/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74188239"
 ---
 # <a name="use-windows-hello-for-business-on-windows-10-devices-with-microsoft-intune"></a>Use o Windows Hello para empresas em dispositivos Windows 10 com Microsoft Intune
@@ -82,7 +82,7 @@ In this high-level example, you'll create a device restriction policy that block
 
 -->
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Próximos passos
 
 - Veja uma lista de todas as [configurações e o que elas fazem](identity-protection-windows-settings.md).
 - [Atribua o perfil](../configuration/device-profile-assign.md) e [monitorize o respetivo estado](../configuration/device-profile-monitor.md).

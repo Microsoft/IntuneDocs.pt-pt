@@ -20,10 +20,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 289d99603314be7c1097d54d59d4a0e90cae0bed
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72508327"
 ---
 # <a name="sync-your-windows-device-manually"></a>Sincronizar o seu dispositivo Windows manualmente
@@ -64,12 +64,12 @@ Também pode aceder ao controlo de sincronização fora da aplicação, a partir
 ## <a name="sync-from-settings-app"></a>Sincronizar a partir da Aplicação Definições 
 Conclua estes passos para sincronizar manualmente os seus dispositivos Microsoft HoloLens, Windows 10, Windows 10 Mobile ou Windows Phone 8.1 a partir da aplicação Definições.  
 
-### <a name="windows-10-desktop"></a>Windows 10 Desktop
+### <a name="windows-10-desktop"></a>Computadores com o Windows 10
 1. No seu dispositivo, selecione **Iniciar** > **Definições**.
 
 2. Selecione **Contas**.
 
-    ![Selecionar Contas no ecrã Definições](./media/win10pc-sync-2-settings-accounts.png)  
+    ![Selecionar Contas na página Definições](./media/win10pc-sync-2-settings-accounts.png)  
 
 3. Existem múltiplas versões do Windows 10 para computador. Compare o seu ecrã com as capturas de ecrã abaixo para determinar que passos deve seguir. 
 
@@ -136,7 +136,7 @@ Estas instruções aplicam-se a dispositivos HoloLens a executar a Atualização
 
 3. Selecione sua conta conectada > **sincronizar**.  ![captura de tela do aplicativo Configurações do HoloLens, botão Sincronizar realçado](./media/RS1_holoLens_SyncRS1_Sync_08.png)  
 
-### <a name="windows-phone-81"></a>Windows Phone 8.1
+### <a name="windows-phone-81"></a>Wnodows Phone 8.1
 
 1. Aceda a **Todas as aplicações** > **Definições** > **área de trabalho**.
 

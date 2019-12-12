@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: ffabcace189efd60e9d532172ecd1f2a048eec2c
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/27/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74562415"
 ---
 # <a name="intune-actions-and-options-supported-with-apple-user-enrollment"></a>Ações e opções do Intune com suporte com o registro de usuário da Apple
@@ -46,7 +46,7 @@ Os administradores podem executar as seguintes ações e opções em dispositivo
 - Extinguir
 - Eliminar
 - Bloqueio Remoto
-- Sincronizá
+- Sincronizar
 
 Não há suporte para todas as outras ações.
 
@@ -67,7 +67,7 @@ Os seguintes tipos de aplicativo podem ser implantados em dispositivos de regist
 
 As opções a seguir têm suporte no Intune para dispositivos registrados usando o registro de usuário da Apple:
 - VPN por aplicativo. Esse suporte exclui os domínios do Safari, pois o registro de usuário não dá suporte à definição das configurações do Safari.
-- Fio 
+- Wi-Fi 
 - Remoção do aplicativo corporativo após o cancelamento do registro
 - Detecção de jailbreak
 

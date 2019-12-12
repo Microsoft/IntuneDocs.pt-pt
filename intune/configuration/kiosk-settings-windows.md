@@ -16,10 +16,10 @@ search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 80da0e6952c5aaab6fa8146b2d91d32259966d5d
-ms.sourcegitcommit: f26039d674eb4d61ab68264dd1a10b2e5e1d842c
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/02/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74691728"
 ---
 # <a name="windows-10-and-later-device-settings-to-run-as-a-kiosk-in-intune"></a>Configurações do dispositivo Windows 10 e posterior para execução como um quiosque no Intune
@@ -36,7 +36,7 @@ Para saber mais sobre o recurso de quiosque do Windows no Intune, consulte [defi
 
 - [Crie o perfil](kiosk-settings.md#create-the-profile).
 
-- Esse perfil de quiosque está diretamente relacionado ao perfil de restrições de dispositivo que você cria usando as [configurações de quiosque do Microsoft Edge](device-restrictions-windows-10.md#microsoft-edge-browser). Para resumir:
+- Esse perfil de quiosque está diretamente relacionado ao perfil de restrições de dispositivo que você cria usando as [configurações de quiosque do Microsoft Edge](device-restrictions-windows-10.md#microsoft-edge-browser). Resumindo:
 
   1. Crie este perfil de quiosque para executar o dispositivo no modo de quiosque.
   2. Crie o [perfil de restrições de dispositivo](device-restrictions-windows-10.md#microsoft-edge-browser)e configure recursos específicos e configurações permitidas no Microsoft Edge.
@@ -165,7 +165,7 @@ As aplicações neste modo estão disponíveis no menu Iniciar. Estas aplicaçõ
       > [!NOTE]
       > Os quiosques do Windows 10 com o logon automático habilitado usando o navegador de quiosque da Microsoft devem usar uma licença offline da Microsoft Store para empresas. Esse requisito é porque o logon automático usa uma conta de usuário local sem credenciais de Azure Active Directory (AD). Portanto, as licenças online não podem ser avaliadas. Para obter mais informações, consulte [distribuir aplicativos offline](https://docs.microsoft.com/microsoft-store/distribute-offline-apps).
 
-  - **Aplicativos**
+  - **Aplicações**
 
     - **Adicionar aplicação da loja**: adicione uma aplicação na Microsoft Store para Empresas. Se não tiver aplicações listadas, poderá obter aplicações e [adicioná-las ao Intune](../apps/store-apps-windows.md). Por exemplo, pode adicionar o Browser do Quiosque, Excel, OneNote e muito mais.
 

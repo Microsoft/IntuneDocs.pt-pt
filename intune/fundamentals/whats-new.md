@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/22/2019
+ms.date: 12/09/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 72aa710e5997593cca6a18f7c3cd421f792985bd
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 77cf4745262346ec2f8bfb5d4d7e67e1ee5c5e07
+ms.sourcegitcommit: edd06a494a241d198ca9b0d3030c92195976e0d3
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74832716"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "75000385"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 
@@ -54,13 +54,29 @@ Saiba mais sobre as novidades todas as semanas no Microsoft Intune. Você també
 -->  
 
 <!-- ########################## -->
-## <a name="week-of-decmeber-2-2019"></a>Semana de Decmeber 2, 2019
+## <a name="week-of-december-9-2019"></a>Semana de 9 de dezembro de 2019
 
-#### <a name="new-system-center-configuration-manager-co-management-licensing--5027281--"></a>Novo licenciamento de cogerenciamento do System Center Configuration Manager<!--5027281-->
-Já está disponível uma nova licença que permite que System Center Configuration Manager clientes com o Software Assurance obtenha direitos de gerenciamento de computador do Intune sem precisar comprar uma licença adicional do Intune para o cogerenciamento. Os clientes não precisam mais atribuir licenças individuais do Intune/EMS aos usuários finais.
-- Os dispositivos gerenciados pelo System Center Configuration Manager e registrados no cogerenciamento têm quase os mesmos direitos que um computador gerenciado autônomo do Intune. No entanto, após a redefinição, eles não podem ser reprovisionados usando o AutoPilot.
+#### <a name="migrating-to-microsoft-edge-for-managed-browsing-scenarios---5173762---"></a>Migrando para o Microsoft Edge para cenários de navegação gerenciados<!-- 5173762 -->
+
+À medida que passamos mais perto da desativação do Intune Managed Browser, fizemos alterações nas políticas de proteção do aplicativo para simplificar as etapas necessárias para mover seus usuários para o Edge. Atualizamos as opções para a configuração de política de proteção de aplicativo **restringir a transferência de conteúdo da Web com outros aplicativos** para ser um dos seguintes:
+
+- Qualquer aplicação
+- Browser Gerido do Intune
+- Microsoft Edge
+- Navegador não gerenciado 
+
+Quando você seleciona **Microsoft Edge**, os usuários finais verão mensagens de acesso condicional notificando-os de que o Microsoft Edge é necessário para cenários de navegação gerenciados. Eles serão solicitados a baixar e entrar no Microsoft Edge com suas contas do AAD, caso ainda não tenham feito isso.  Esse será o equivalente a ter como destino seus aplicativos habilitados para MAM com a configuração de configuração do aplicativo `com.microsoft.intune.useEdge` definida como **true**. As políticas de proteção de aplicativo existentes que usaram a configuração **navegadores gerenciados por política** agora terão **Intune Managed browser** selecionado e você não verá nenhuma alteração no comportamento. Isso significa que os usuários verão mensagens para usar o Microsoft Edge se você tiver definido a configuração de aplicativo **useEdge** como **true**. Incentivamos todos os clientes que aproveitam cenários de navegação gerenciados para atualizar suas políticas de proteção de aplicativo com a **transferência de conteúdo da Web restrita com outros aplicativos** para garantir que os usuários vejam as diretrizes apropriadas para fazer a transição para o Microsoft Edge, independentemente do aplicativo do qual eles estão iniciando links. 
+
+<!-- ########################## -->
+## <a name="week-of-december-2-2019"></a>Semana de 2 de dezembro de 2019
+
+#### <a name="new-microsoft-endpoint-configuration-manager-co-management-licensing--5027281--"></a>Novo Microsoft Endpoint Configuration Manager licenciamento de cogerenciamento<!--5027281-->
+Já está disponível uma nova licença que permite que Configuration Manager clientes com o Software Assurance obtenham o cogerenciamento do Intune para PCs com Windows 10 sem precisar comprar uma licença adicional do Intune para o cogerenciamento. Os clientes não precisam mais atribuir licenças individuais do Intune/EMS aos usuários finais para gerenciar o Windows 10.
+- Os dispositivos gerenciados pelo Configuration Manager e registrados no cogerenciamento têm quase os mesmos direitos que os computadores gerenciados do MDM autônomo do Intune. No entanto, após a redefinição, eles não podem ser reprovisionados usando o AutoPilot.
 - Os dispositivos Windows 10 registrados no Intune usando outros meios exigem licenças completas do Intune.
 - Os dispositivos em outras plataformas ainda exigem licenças completas do Intune.
+
+Para obter mais informações, consulte [termos de licenciamento](https://www.microsoft.com/en-us/Licensing/product-licensing/products).
 
 
 <!-- ########################## -->
@@ -70,6 +86,10 @@ Já está disponível uma nova licença que permite que System Center Configurat
 ### <a name="app-management"></a>Gestão de aplicações
 
 #### <a name="smime-support-with-microsoft-outlook-for-ios---2669398-idready---"></a>Suporte a S/MIME com o Microsoft Outlook para iOS<!-- 2669398 idready -->
+
+   > [!NOTE]
+   > Esse recurso foi atrasado, mas será lançado em breve.
+
 O Intune dá suporte à entrega de certificados de criptografia e autenticação S/MIME que podem ser usados com o Outlook para iOS em dispositivos iOS. Para obter mais informações, consulte [Configurar S/MIME para o Outlook para IOS](~/apps/app-configuration-policies-outlook-smime.md).
 
 #### <a name="ui-update-when-selectively-wiping-app-data---4102028---"></a>Atualização da interface do usuário ao apagar dados de aplicativo seletivamente<!-- 4102028 -->

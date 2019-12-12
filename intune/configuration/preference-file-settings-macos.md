@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 6ed04c1bf135793da9cece9debc2c7cdd481601a
-ms.sourcegitcommit: f26039d674eb4d61ab68264dd1a10b2e5e1d842c
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/02/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74691683"
 ---
 # <a name="add-a-property-list-file-to-macos-devices-using-microsoft-intune"></a>Adicionar um arquivo de lista de propriedades a dispositivos macOS usando Microsoft Intune

@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 179d135ee8e216495cd7435bf38d8087e5c990e8
-ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/19/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74188285"
 ---
 # <a name="learn-about-conditional-access-and-intune"></a>Saiba mais sobre o acesso condicional e o Intune
@@ -61,6 +61,6 @@ Maneiras de usar o acesso condicional com o Intune:
 
 - **Acesso condicional baseado no aplicativo**
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Próximos passos
 
 [Maneiras comuns de usar o acesso condicional com o Intune](conditional-access-intune-common-ways-use.md)

@@ -18,10 +18,10 @@ ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: fde15da898a70e9557aabb9ed7a7ae8324cfb304
-ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/19/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74188360"
 ---
 # <a name="create-a-device-based-conditional-access-policy"></a>Criar uma política de acesso condicional com base no dispositivo
@@ -109,7 +109,7 @@ Uma política de acesso condicional especifica o aplicativo ou os serviços que 
 
 12. Selecione **Criar**.
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Próximos passos
 
 [Acesso condicional baseado em aplicativo com o Intune](app-based-conditional-access-intune.md)
 

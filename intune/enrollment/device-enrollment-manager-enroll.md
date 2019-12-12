@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0012a80f0e9ea60b41c94a582e42d5f647c6bbc2
-ms.sourcegitcommit: cdb2a484b059bd8d8c3985cde1e883c24a4c1cad
+ms.openlocfilehash: 30191aea892e8409bb6165034256a99f6f32a502
+ms.sourcegitcommit: e75718ee6cf93c0e6c915f2776b785fe8db9f7e0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74239207"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74955410"
 ---
 # <a name="enroll-devices-in-intune-by-using-a-device-enrollment-manager-account"></a>Inscrever dispositivos no Intune ao utilizar uma conta de Gestor de inscrição de dispositivos
 
@@ -46,7 +46,7 @@ As contas de utilizador DEM e os dispositivos que estão inscritos com uma conta
 
 ## <a name="add-a-device-enrollment-manager"></a>Adicionar um gestor de inscrição de dispositivos
 
-1. No [Intune no portal do Azure](https://aka.ms/intuneportal), selecione **Inscrição de dispositivos** > **Gestores de inscrições de dispositivos**.
+1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **dispositivos** > **registrar dispositivos** > **gerenciadores de registro de dispositivos**.
 
 2. Selecione **Adicionar**.
 
@@ -67,6 +67,6 @@ A remoção de um gestor de inscrição de dispositivos não afeta os dispositiv
 
 **Para remover um gestor de inscrição de dispositivos**
 
-1. No [Intune, no portal do Azure](https://aka.ms/intuneportal), selecione **Inscrição de dispositivos** e, em seguida, selecione **Gestores de inscrições de dispositivos**.
+1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **dispositivos** > **registrar dispositivos** > **gerenciadores de registro de dispositivos**.
 2. No painel **Gestores de inscrições de dispositivos**, selecione o gestor de inscrição de dispositivos e selecione **Eliminar**.
 

@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 75a875fc3ff11eb1e3befad425c16a710544f781
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72509876"
 ---
 # <a name="quickstart-create-a-user-in-intune-and-assign-them-a-license"></a>Início rápido: criar um usuário no Intune e atribuir a eles uma licença
@@ -68,7 +68,7 @@ O novo usuário do Intune ativo agora mostrará que ele está usando uma licenç
 
 ## <a name="clean-up-resources"></a>Limpar recursos
 
-Se você não precisar mais desse usuário, poderá excluir o usuário navegando até o [centro de administração Microsoft 365](http://go.microsoft.com/fwlink/p/?LinkId=698854) e escolhendo **usuários** > **usuários ativos** > *escolha o usuário na lista* > **excluir usuário** >  **Excluir usuário**0**confirmar alterações**2**Fechar**.
+Se você não precisar mais desse usuário, poderá excluir o usuário navegando até a [Microsoft 365 centro de administração](http://go.microsoft.com/fwlink/p/?LinkId=698854) e escolhendo **usuários** > **usuários ativos** > *escolher o usuário na lista* > **excluir usuário** > **excluir usuário** > **confirmar alterações** > **fechar**.
 
 ## <a name="next-steps"></a>Próximos passos
 

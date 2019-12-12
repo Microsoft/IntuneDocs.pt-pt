@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 1/14/2019
+ms.date: 12/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 844e93f3a063ae43342d2967cbd544f3ec425c21
-ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
+ms.openlocfilehash: 947472c5e589cb443c9a15d20a732c299cc48b44
+ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74410149"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74992981"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Monitorizar as políticas de conformidade do Dispositivo do Intune
 
@@ -98,9 +98,8 @@ No gráfico **Estado de conformidade do dispositivo**, selecione um estado. Por 
 
 ![Selecionar o estado não conforme](./media/compliance-policy-monitor/select-not-compliant-status.png)
 
-Essa ação abre a janela de **conformidade do dispositivo** e exibe os dispositivos em um gráfico de **status do dispositivo** . O gráfico mostra mais detalhes sobre os dispositivos nesse estado, incluindo a plataforma do sistema operacional, a data do último check-in e muito mais. 
-
-![Imagem do dashboard que mostra mais detalhes sobre o dispositivo nesse estado específico](./media/compliance-policy-monitor/drill-down-details.png)
+Essa ação abre a janela de **conformidade do dispositivo** e exibe os dispositivos em um gráfico de **status do dispositivo** . O gráfico mostra mais detalhes sobre os dispositivos nesse estado, incluindo a plataforma do sistema operacional, a data do último check-in e muito mais.
+![imagem do painel mostra mais detalhes sobre o dispositivo nesse estado específico](./media/compliance-policy-monitor/drill-down-details.png)
 
 Se quiser ver todos os dispositivos pertencentes a um utilizador específico, também pode filtrar o relatório de gráfico ao escrever o e-mail do utilizador.
 
@@ -132,7 +131,7 @@ Quando selecionar o mosaico, serão apresentados todos os dispositivos que não 
 
 - Com a definição de segurança **Marcar os dispositivos sem política de conformidade atribuída como**, é importante identificar os dispositivos que não têm uma política de conformidade. Em seguida, pode atribuir pelo menos uma política de conformidade aos mesmos.
 
-  A definição de segurança é configurável no portal do Intune. Para **dispositivos** > **políticas de conformidade** > **configurações de política de conformidade**. Em seguida, defina **Marcar os dispositivos sem política de conformidade atribuída como** para **Conforme** ou **Não conforme**. 
+  A definição de segurança é configurável no portal do Intune. Para **dispositivos** > **políticas de conformidade** > **configurações de política de conformidade**. Em seguida, defina **Marcar os dispositivos sem política de conformidade atribuída como** para **Conforme** ou **Não conforme**.
 
   Saiba mais sobre esta [melhoria de segurança no serviço Intune](https://blogs.technet.microsoft.com/intunesupport/2018/02/09/updated-upcoming-security-enhancements-in-the-intune-service/).
 
@@ -140,7 +139,7 @@ Quando selecionar o mosaico, serão apresentados todos os dispositivos que não 
 
 ### <a name="per-policy-device-compliance"></a>Conformidade do dispositivo por política
 
-O gráfico de **conformidade de política** mostra as políticas e quantos dispositivos estão em conformidade e em não conformidade. 
+O gráfico de **conformidade de política** mostra as políticas e quantos dispositivos estão em conformidade e em não conformidade.
 
 ![Veja uma lista que inclui a política e a quantidade de dispositivos conformes e não conformes dessa política](./media/compliance-policy-monitor/idc-8.png)
 
@@ -149,11 +148,6 @@ O gráfico de **conformidade de política** mostra as políticas e quantos dispo
 O gráfico de **conformidade de configuração** mostra todas as configurações de política de conformidade do dispositivo de todas as políticas de conformidade, as plataformas nas quais as configurações de política são aplicadas e o número de dispositivos não compatíveis.
 
 ![Veja uma lista de todas as definições nas diferentes políticas](./media/compliance-policy-monitor/idc-10.png)
-
-> [!NOTE]
-> Uma política pode ser atribuída a um dispositivo e um usuário no mesmo dispositivo. Em alguns cenários, um dispositivo pode ser sincronizado antes de o usuário entrar, como quando o dispositivo é reinicializado. A conformidade pode avaliar esse usuário e mostrar o dispositivo como não compatível. Esse comportamento também pode mostrar a conta do sistema como um usuário não compatível.
->
-> Esse é um problema conhecido com dispositivos Windows 10 de vários usuários. Todas as alterações ou atualizações sobre esse comportamento são anunciadas no [desenvolvimento](../fundamentals/in-development.md) e/ou [novidades](../fundamentals/whats-new.md).
 
 ## <a name="view-compliance-reports"></a>Exibir relatórios de conformidade
 
@@ -183,14 +177,15 @@ Esta funcionalidade está incluída no relatório de estado do dispositivo:
 2. Selecione uma política > **Descrição Geral**. Nesta vista, a atribuição de política inclui os seguintes estados:
 
     - **Êxito**: a política é aplicada
-    - **Erro**: falha ao aplicar a política. Normalmente, a mensagem é apresentada com um código de erro que direciona para uma explicação. 
+    - **Erro**: falha ao aplicar a política. Normalmente, a mensagem é apresentada com um código de erro que direciona para uma explicação.
     - **Conflito**: duas configurações são aplicadas ao mesmo dispositivo e o Intune não pode classificar o conflito. Um administrador deve rever a situação.
-    - **Pendente**: o dispositivo não fez check-in no Intune para receber a política ainda. 
-    - **Não aplicável**: o dispositivo não pode receber a política. Por exemplo, a política atualiza uma definição específica para o iOS 11.1, mas o dispositivo está a utilizar o iOS 10. 
+    - **Pendente**: o dispositivo não fez check-in no Intune para receber a política ainda.
+    - **Não aplicável**: o dispositivo não pode receber a política. Por exemplo, a política atualiza uma definição específica para o iOS 11.1, mas o dispositivo está a utilizar o iOS 10.
 
 3. Para ver detalhes sobre os dispositivos que utilizam esta política, selecione um dos estados. Por exemplo, selecione **Com êxito**. Na janela seguinte, são indicados detalhes dos dispositivos específicos, incluindo o nome do dispositivo e o estado de implementação.
 
 ## <a name="how-intune-resolves-policy-conflicts"></a>Como o Intune resolve conflitos de políticas
+
 Se forem aplicadas múltiplas políticas do Intune a um dispositivo, podem ocorrer conflitos de políticas. Se as definições de políticas se sobrepuserem, o Intune utiliza as seguintes regras para resolver eventuais conflitos:
 
 - Se as definições em conflito pertencerem a uma política de configuração do Intune e a uma política de conformidade, as definições da política de conformidade têm prioridade sobre as definições da política de configuração. Isto acontece mesmo que as definições na política de conformidade sejam mais seguras.

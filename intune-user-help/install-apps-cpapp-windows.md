@@ -20,10 +20,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 80fd2d54a99bc3f4ab47f48f94eb14aa1a7f630c
-ms.sourcegitcommit: 5c52879f3653e22bfeba4eef65e2c86025534dab
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74126206"
 ---
 # <a name="install-and-share-apps-on-your-device"></a>Instalar e partilhar aplicações no seu dispositivo
@@ -55,7 +55,7 @@ Instale aplicações no seu dispositivo a partir da aplicação Portal da Empres
 
 Consoante o tamanho da sua empresa, poderá ver múltiplas versões do Office disponíveis para transferência a partir do Portal da Empresa. Para obter informações específicas sobre o conjunto de aplicações do Office para dispositivos Windows, veja [Instalar o Office 365 no seu dispositivo Windows 10](./install-office-windows.md).
 
-## <a name="share-apps"></a>Compartilhar aplicativos  
+## <a name="share-apps"></a>Partilhar aplicações  
 Partilhe e recomende aplicações aos seus contactos profissionais ou escolares. Os passos seguintes descrevem como partilhar uma ligação diretamente a partir do Portal da Empresa.
 
 1. No Portal da Empresa, clique com o botão direito do rato ou mantenha premida qualquer aplicação para abrir o respetivo [menu de contexto](https://docs.microsoft.com//windows/uwp/design/controls-and-patterns/menus).  

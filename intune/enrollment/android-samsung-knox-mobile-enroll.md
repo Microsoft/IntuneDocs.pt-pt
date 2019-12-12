@@ -1,5 +1,5 @@
 ---
-title: Registrar dispositivos Android automaticamente usando o registro móvel Knox da Samsung
+title: Inscrever automaticamente dispositivos Android com a inscrição de Mobile do Samsung Knox
 titleSuffix: Microsoft Intune
 description: Saiba como inscrever dispositivos Android através do Samsung KME
 keywords: ''
@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 5f290370dd6ec05677a7073d9ca3edd854c9aa5e
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72505581"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>Inscrever automaticamente dispositivos Android através do Samsung Knox Mobile Enrollment
@@ -61,7 +61,7 @@ Quando a sua empresa for registada com êxito, pode criar o seu perfil MDM para 
 
 ### <a name="for-android-enterprise"></a>Para Android Enterprise
 
-| Campos do Perfil MDM| Obrigatório? | Os | 
+| Campos do Perfil MDM| Obrigatório? | Valores | 
 |-------------------|-----------|-------| 
 |MDM Server URI (URI do Servidor MDM)     | Não        |Deixe este campo em branco. 
 |Profile Name (Nome do Perfil)       | Sim       |Introduza um nome de perfil à sua escolha. 
@@ -77,7 +77,7 @@ Quando a sua empresa for registada com êxito, pode criar o seu perfil MDM para 
 
 Para obter orientações passo a passo, consulte as instruções do [Assistente de configuração de perfil do Samsung Knox](https://docs.samsungknox.com/KME-Getting-Started/Content/getting-started-wizard.htm) .
 
-| Campos do Perfil MDM| Obrigatório? | Os |
+| Campos do Perfil MDM| Obrigatório? | Valores |
 |-------------------|-----------|-------|
 |MDM Server URI (URI do Servidor MDM)     | Não        |Deixe este campo em branco.
 |Profile Name (Nome do Perfil)       | Sim       |Introduza um nome de perfil à sua escolha.
@@ -122,9 +122,9 @@ Ainda precisa de ajuda? Confira o [Guia do usuário do KME](https://docs.samsung
 
 ## <a name="frequently-asked-questions"></a>Perguntas mais frequentes
 
-- **Suporte ao proprietário do dispositivo:** **suporte ao proprietário do dispositivo**  - : o Intune dá suporte ao registro de dispositivos dedicados e totalmente gerenciados usando o portal do KME. Outros modos de proprietário de dispositivos Android Enterprise serão suportados à medida que forem disponibilizados no Intune.
+- **Suporte ao proprietário do dispositivo:**  - **suporte ao proprietário do dispositivo:** o Intune dá suporte ao registro de dispositivos dedicados e totalmente gerenciados usando o portal do KME. Outros modos de proprietário de dispositivos Android Enterprise serão suportados à medida que forem disponibilizados no Intune.
 
-- **Nenhum suporte de perfil de trabalho:** O KME é um método de registro de dispositivo corporativo e os dispositivos registrados no perfil de trabalho do Android garantem que os dados pessoais e de trabalho sejam separados em dispositivos pessoais. Portanto, o registro de dispositivo para o perfil de trabalho usando KME não é um cenário com suporte no Intune.
+- **Não existe suporte de perfil de trabalho:** KME é um método de inscrição de dispositivos da empresa e dispositivos inscritos no perfil de trabalho Android Certifique-se de trabalho e dados pessoais são separados em dispositivos pessoais. Portanto, o registro de dispositivo para o perfil de trabalho usando KME não é um cenário com suporte no Intune.
 
 - **Reposição de fábrica para inscrição no Android Enterprise:** se reutilizar dispositivos que já foram configurados, tem de efetuar a reposição de fábrica dos mesmos ao inscrever-se no Android Enterprise.
 

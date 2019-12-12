@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5f12feca6d43a4194e7c60639a93747c7f389f93
-ms.sourcegitcommit: fc4b38660129d615068f34ad4b96b900d73f7b53
+ms.openlocfilehash: 0b84cd52dfe2eb6332ddbc89bc00a17ec3361b79
+ms.sourcegitcommit: edd06a494a241d198ca9b0d3030c92195976e0d3
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74558201"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "75000436"
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Configurar a inscrição para dispositivos Windows
 
@@ -44,8 +44,8 @@ Dois fatores determinam como pode simplificar a inscrição de dispositivos do W
 
 ||**Azure AD Premium**|**Outros AD**|
 |----------|---------------|---------------|  
-|**Windows 10**|[Inscrição automática](#enable-windows-10-automatic-enrollment) |Registro de usuário|
-|**Versões do Windows anteriores**|Registro de usuário|Registro de usuário|
+|**Windows 10**|[Inscrição automática](#enable-windows-10-automatic-enrollment) |Inscrição do utilizador|
+|**Versões do Windows anteriores**|Inscrição do utilizador|Inscrição do utilizador|
 
 As organizações que podem utilizar a inscrição automática também podem configurar a [inscrição de dispositivos em massa](../windows-bulk-enroll.md) com a aplicação Windows Configuration Designer.
 
@@ -123,9 +123,18 @@ Azure Active Directory tem um CNAME diferente que ele usa para o registro de dis
 
 | Tipo | Nome do anfitrião | Aponta para | TTL |
 | --- | --- | --- | --- |
-| NOMES | EnterpriseRegistration. company_domain. com | EnterpriseRegistration.windows.net | 1 hora|
+| NAME | EnterpriseRegistration. company_domain. com | EnterpriseRegistration.windows.net | 1 hora|
 
 Para obter mais informações sobre o registro de dispositivo, consulte [gerenciar identidades de dispositivo usando o portal do Azure](https://docs.microsoft.com/azure/active-directory/devices/device-management-azure-portal)
+
+## <a name="windows-10-auto-enrollment-and-device-registration"></a>Registro automático de dispositivo e registro do Windows 10
+Apesar de a criação de entradas DNS CNAME ser opcional, os registos CNAME facilitam a inscrição para os utilizadores. Se nenhum registro CNAME de registro for encontrado, os usuários serão solicitados a inserir manualmente o nome do servidor MDM, enrollment.manage.microsoft.us.
+
+| Tipo | Nome do anfitrião | Aponta para | TTL |
+| --- | --- | --- | --- |
+| CNAME | EnterpriseEnrollment.dominio_empresa.com | EnterpriseEnrollment-s.manage.microsoft.us | 1 hora|
+|CNAME | EnterpriseRegistration.dominio_empresa.com | EnterpriseRegistration.windows.net | 1 hora |
+
 
 ## <a name="next-steps"></a>Próximos passos
 

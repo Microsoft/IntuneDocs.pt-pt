@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 80d6068a17e1d278f9226e26c9efab24d597e52e
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/27/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74564272"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-enterprise-devices"></a>Adicionar políticas de configuração de aplicativo para dispositivos Android Enterprise gerenciados
@@ -75,9 +75,9 @@ Pode escolher as seguintes opções, se selecionar a variável como o tipo de va
 | Domínio | contoso.com |
 | Correio | john@contoso.com |
 | UPN Parcial | joão |
-| ID de usuário | 3ec2c00f-b125-4519-acf0-302ac3761822 |
+| ID de utilizador | 3ec2c00f-b125-4519-acf0-302ac3761822 |
 | Nome de utilizador | João Silva |
-| Nome principal do usuário | john@contoso.com |
+| Nome Principal de utilizador | john@contoso.com |
 
 
 ### <a name="allow-only-configured-organization-accounts-in-multi-identity-apps"></a>Permitir apenas contas de organização configuradas nas aplicações de várias identidades 
@@ -86,7 +86,7 @@ Para os dispositivos Android, utilize os seguintes pares chave/valor:
 
 | **Chave** | com.microsoft.intune.mam.AllowedAccountUPNs |
 |---|---|
-| **Os** | <ul><li>Um ou mais UPNs delimitados por <code>;</code>.</li><li>Apenas conta(s) permitidas são as contas de utilizador geridas definidas por esta chave.</li><li> Para os dispositivos inscritos no Intune, o token <code>{{userprincipalname}}</code> pode ser utilizado para representar a conta de utilizador inscrito.</li></ul> |
+| **Valores** | <ul><li>Um ou mais UPNs delimitados por <code>;</code>.</li><li>Apenas conta(s) permitidas são as contas de utilizador geridas definidas por esta chave.</li><li> Para os dispositivos inscritos no Intune, o token <code>{{userprincipalname}}</code> pode ser utilizado para representar a conta de utilizador inscrito.</li></ul> |
 
    > [!NOTE]
    > Você deve usar o Outlook para Android 2.2.222 e posterior, Word, Excel, PowerPoint para Android 16.0.9327.1000 e posterior ou OneDrive para Android 5,28 e posterior ao permitir apenas contas de organização configuradas com várias identidades.<p></p>

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/22/2019
+ms.date: 12/04/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4aad4e2295cb7b85abcb73a9c8e94ed7501348be
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 42d07f02e76669c735d09b5d7843a4102dd0f835
+ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72490492"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74899234"
 ---
 # <a name="intune-data-warehouse-collections"></a>Coleções do Armazém de Dados do Intune
 
@@ -116,9 +116,9 @@ A tabela seguinte apresenta um resumo dos estados de atribuição de políticas 
 
 |  complianceStatus  |                       Description                      |
 |:------------------:|:------------------------------------------------------:|
-|    Unknown         |    Conhecidos.                                                                        |
+|    Unknown         |    Desconhecida.                                                                        |
 |    Compatível       |    Compatível.                                                                      |
-|    Não compatíveis    |       O dispositivo não está em conformidade e está bloqueado a partir de recursos da empresa.             |
+|    Não conforme    |       O dispositivo não está em conformidade e está bloqueado a partir de recursos da empresa.             |
 |    Conflito        |    Está em conflito com outras regras.                                                      |
 |    Error           |       Error.                                                                       |
 |    ConfigManager   |    Gerido pelo Config Manager.                                                      |
@@ -230,7 +230,7 @@ A entidade **device** lista todos os dispositivos inscritos sob gestão e as pro
 | DeviceCategoryKey          | Chave da categoria associada a este dispositivo.                                                                                                                                     |
 | DeviceEnrollmentType       | Chave do tipo de inscrição associado a este dispositivo, indicando o método de inscrição.                                                                                             |
 | ComplianceStateKey         | Chave do estado de Conformidade associado a este dispositivo.                                                                                                                             |
-| OSVersion                  | Versão do sistema operacional do dispositivo.                                                                                                                                                |
+| OSVersion                  | Versão do sistema operativo do dispositivo.                                                                                                                                                |
 | EasDeviceId                | ID do Exchange ActiveSync do dispositivo.                                                                                                                                                  |
 | SerialNumber               | SerialNumber                                                                                                                                                                           |
 | UserId                     | O Identificador Exclusivo para o utilizador associado ao dispositivo.                                                                                                                           |
@@ -284,7 +284,7 @@ A entidade **deviceType** representa o tipo de dispositivo referenciado por outr
 | 15           | HoloLens          | Dispositivo HoloLens                                       |
 | 16           | SurfaceHub        | Dispositivo Surface Hub                                  |
 | 17           | AndroidForWork    | Dispositivo Android gerido através do Proprietário do Perfil Android  |
-| anos           | AndroidEnterprise | Dispositivo empresarial Android.                          |
+| 18           | AndroidEnterprise | Dispositivo empresarial Android.                          |
 | 100          | Blackberry        | Dispositivo Blackberry                                   |
 | 101          | Palm              | Dispositivo Palm                                         |
 | 255          | Unknown           | Tipo de dispositivo desconhecido                                 |
@@ -326,7 +326,7 @@ A entidade **EnrollmentActivity** indica a atividade de um registro de dispositi
 | enrollmentFailureCategoryKey  | Chave da categoria de falha de registro (se o registro falhar).        |
 | enrollmentFailureReasonKey    | Chave do motivo da falha de registro (se o registro falhar).          |
 | osVersion                     | A versão do sistema operacional do dispositivo.                               |
-| Contar                         | Contagem total de atividades de registro que correspondem às classificações acima.  |
+| count                         | Contagem total de atividades de registro que correspondem às classificações acima.  |
 
 ## <a name="enrollmenteventstatuses"></a>enrollmentEventStatuses 
 A entidade **EnrollmentEventStatus** indica o resultado de um registro de dispositivo.
@@ -387,7 +387,7 @@ A entidade **EnrollmentFailureReason** indica um motivo mais detalhado para uma 
 | Não disponível                    | O motivo da falha no registro não está disponível.                                                                                                                                                        |
 | Unknown                          | Erro desconhecido.                                                                                                                                                                                         |
 | UserNotLicensed                  | O usuário não foi encontrado no Intune ou não tem uma licença válida.                                                                                                                                     |
-| Userunknown                      | O usuário não é conhecido pelo Intune.                                                                                                                                                                           |
+| UserUnknown                      | O usuário não é conhecido pelo Intune.                                                                                                                                                                           |
 | BulkAlreadyEnrolledDevice        | Somente um usuário pode registrar um dispositivo. Este dispositivo foi registrado anteriormente por outro usuário.                                                                                                                |
 | EnrollmentOnboardingIssue        | A autoridade de MDM (gerenciamento de dispositivo móvel) do Intune ainda não está configurada.                                                                                                                                 |
 | AppleChallengeIssue              | A instalação do perfil de gerenciamento do iOS foi atrasada ou falhou.                                                                                                                                         |
@@ -418,7 +418,7 @@ O **IntuneManagementExtensionHealthState** apresenta todos os estados de funcion
 |      Propriedade     |                   Description                  | Exemplo |
 |:-----------------:|:----------------------------------------------:|:-------:|
 | ExtensionStateKey | Identificador exclusivo do estado de funcionamento.           | 2       |
-| ExtensionState    | Estado de funcionamento de uma IntuneManagementExtension. | Íntegro |
+| ExtensionState    | Estado de funcionamento de uma IntuneManagementExtension. | Bom estado de funcionamento |
 
 ## <a name="intunemanagementextensionversions"></a>intuneManagementExtensionVersions
 A entidade **IntuneManagementExtensionVersion** apresenta todas as versões utilizadas pela **IntuneManagementExtension**.
@@ -576,8 +576,8 @@ Representa um estado de instalação da aplicação móvel para um determinado t
 | AppKey             | A chave da aplicação móvel que serve para identificar uma instância de AppRevision.                                                          |
 | DeviceTypeKey      | A chave do Tipo de Dispositivo associado à Aplicação Móvel.                                                              |
 | AppInstallStateKey | A chave do estado de instalação da aplicação que serve para identificar uma instância de MobileAppInstallState.                                         |
-| ErrorCode          | O código de erro devolvido pelo instalador de aplicações, pela plataforma móvel ou pelo serviço relativo à instalação da aplicação. |
-| Contar              | Contagem total.                                                                                                                  |
+| Código de erro          | O código de erro devolvido pelo instalador de aplicações, pela plataforma móvel ou pelo serviço relativo à instalação da aplicação. |
+| Count              | Contagem total.                                                                                                                  |
 
 ## <a name="ownertypes"></a>ownerTypes
 A entidade **ownerType** indica se um dispositivo é empresarial, pessoal ou desconhecido.
@@ -589,7 +589,7 @@ A entidade **ownerType** indica se um dispositivo é empresarial, pessoal ou des
 | ownerTypeName | Representa o tipo de proprietário dos dispositivos: corporativo-o dispositivo é de propriedade da empresa.  Personal – o dispositivo é propriedade pessoal (BYOD).   Unknown – não existem informações sobre este dispositivo. | Pessoal corporativo desconhecido |
 
 > [!Note]  
-> Para o filtro `ownerTypeName` em AzureAD ao criar grupos dinâmicos para dispositivos, você precisa definir o valor `deviceOwnership` como `Company`. Para obter mais informações, consulte [regras para dispositivos](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices). 
+> Para o filtro de `ownerTypeName` no AzureAD ao criar grupos dinâmicos para dispositivos, você precisa definir o valor `deviceOwnership` como `Company`. Para obter mais informações, consulte [regras para dispositivos](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices). 
 
 ## <a name="policies"></a>políticas
 A entidade **Policy** apresenta uma lista de perfis de configuração de dispositivos, perfis de configuração de aplicações e políticas de conformidade. Pode atribuir as políticas com a Gestão de Dispositivos Móveis (MDM) a um grupo na sua empresa.
@@ -686,7 +686,7 @@ A entidade **UserDeviceAssociation** contém associações de dispositivos do ut
 | IsDeleted          | Indica que o utilizador anulou a inscrição desse dispositivo e essa associação já não está atualizada. | True/False      |
 | EndedDateTimeUTC   | Data e hora em UTC em que a propriedade IsDeleted foi alterada para True.                                               | 6/23/2017 0:00  |
 
-## <a name="users"></a>Podem
+## <a name="users"></a>utilizadores
 A entidade **user** lista todos os utilizadores do Azure Active Directory (Azure AD) com licenças atribuídas na sua empresa.
 
 A coleção de entidades **user** contém dados do utilizador. Estes registos incluem estados do utilizador durante o período de recolha dos dados, mesmo que o utilizador tenha sido removido. Por exemplo, um utilizador pode ser adicionado ao Intune e, em seguida, removido no decorrer do mês anterior. Apesar de este utilizador não estar presente no momento do relatório, o utilizador e o estado estão presentes nos dados do mês anterior. Pode criar um relatório que mostrará a duração da presença no histórico do utilizador nos seus dados.
@@ -696,7 +696,7 @@ A coleção de entidades **user** contém dados do utilizador. Estes registos in
 | UserKey                    | Identificador exclusivo do utilizador no armazém de dados – chave de substituição.                                                                                                                                                         | 123                                  |
 | UserId                     | Identificador exclusivo do utilizador – semelhante a UserKey, mas é uma chave natural.                                                                                                                                                    | b66bc706-ffff-7437-0340-032819502773 |
 | UserEmail                  | Endereço de e-mail do utilizador.                                                                                                                                                                                                     | John@constoso.com                    |
-| UserPrincipalName                        | O nome principal do utilizador.                                                                                                                                                                                               | John@constoso.com                    |
+| userPrincipalName                        | O nome principal do utilizador.                                                                                                                                                                                               | John@constoso.com                    |
 | Nome a Apresentar                | Nome a apresentar do utilizador.                                                                                                                                                                                                      | João                                 |
 | IntuneLicensed             | Especifica se este utilizador tem ou não licença do Intune.                                                                                                                                                                              | True/False                           |
 | IsDeleted                  | Indica se todas as licenças do utilizador expiraram e se o utilizador foi, por conseguinte, removido do Intune. Para um único registo, este sinalizador não se altera. Em vez disso, é criado um novo registo para um novo estado do utilizador. | True/False                           |

@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: f0e2e2101706b9b9afa77553244a438a2299903b
-ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/01/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73414015"
 ---
 # <a name="common-ways-to-use-microsoft-intune"></a>Formas comuns de utilizar o Microsoft Intune
@@ -53,13 +53,13 @@ Nestes casos, a única forma de aceder aos dados da empresa é inscrever o dispo
 
 Proteger os dados empresariais no Office 365 (e-mail, documentos, mensagens instantâneas, contactos) não podia ser mais fácil para si ou mais integrado para os seus utilizadores.
 
-O Intune e o Microsoft Enterprise Mobility + Security fornecem uma solução de acesso condicional integrada exclusivamente que garante que nenhum usuário, aplicativo ou dispositivo possa acessar dados do Office 365, a menos que eles atendam aos requisitos de conformidade da sua empresa (executados [ autenticação multifator](../enrollment/multi-factor-authentication.md), registrado no Intune, usando o aplicativo gerenciado, versão do sistema operacional com suporte, PIN do dispositivo, baixo perfil de risco do usuário, etc.).
+O Intune e o Microsoft Enterprise Mobility + Security fornecem uma solução de acesso condicional integrada exclusivamente que garante que nenhum usuário, aplicativo ou dispositivo possa acessar os dados do Office 365, a menos que eles atendam aos requisitos de conformidade da sua empresa (realizou a [autenticação multifator](../enrollment/multi-factor-authentication.md), registrada com o Intune, usando o aplicativo gerenciado, a versão do sistema operacional com suporte, o PIN do dispositivo, o perfil de baixo risco
 
 As aplicações móveis do Office, nas respetivas lojas de aplicações, estão prontas a ser utilizadas com políticas de contenção de dados que pode configurar através do Intune. Estas funcionalidades permitem-lhe impedir que os dados sejam partilhados com aplicações (por exemplo, aplicações de e-mail nativas) e localizações de armazenamento (por exemplo, Dropbox) que não são geridas pela equipa de TI. Todas estas funcionalidades estão incorporadas no Office 365 e no EMS. Não é necessário implementar infraestruturas adicionais para obter este valor.
 
 Uma prática de implementação comum do Office 365 é exigir que os dispositivos se inscrevam na gestão, se precisarem de ser totalmente integrados com configurações de aplicações, certificados, Wi-Fi ou VPN da empresa, que é um cenário comum dos dispositivos pertencentes à empresa.  
 
-No entanto, se o usuário simplesmente precisar acessar documentos e emails corporativos, o que geralmente é o caso para dispositivos pessoais, você poderá exigir que o usuário use os aplicativos móveis do Office (aos quais você aplicou [políticas de proteção de aplicativo](../apps/app-protection-policies.md) e ignorar o registro o dispositivo completamente.  
+No entanto, se o usuário simplesmente precisar acessar documentos e emails corporativos, o que geralmente é o caso para dispositivos pessoais, você poderá exigir que o usuário use os aplicativos móveis do Office (aos quais você aplicou [as políticas de proteção de aplicativo](../apps/app-protection-policies.md) ) e ignorar completamente o registro do dispositivo.  
 
 De qualquer forma, os dados do Office 365 serão protegidos pelas políticas que definiu.
 

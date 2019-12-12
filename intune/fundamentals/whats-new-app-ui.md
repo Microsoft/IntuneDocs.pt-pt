@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: a3b391bb4ab064c080083e2c31dc28483f6d419a
-ms.sourcegitcommit: 76ae5aea5deee7a590e24c3b2bb52f88125943e5
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/15/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74098217"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Atualização da IU para aplicações de utilizadores finais do Intune
@@ -58,13 +58,13 @@ A lista de verificação de configuração no aplicativo Portal da Empresa para 
 
 As telas a seguir mostram a lista de verificação atualizada para o registro de perfil de trabalho do Android:
 
-|Atualizações|Anterior|  
+|Atualizado|Anterior|  
 |---|---|  
 |![Imagem de exemplo da configuração do perfil de trabalho no Portal da Empresa, mostrando a lista de verificação simplificada e os novos ícones.](./media/whats-new-app-ui/work-profile-checklist-1911.png)|![Imagem de exemplo da configuração de perfil de trabalho anterior no Portal da Empresa, mostrando uma lista de verificação de mais ocupado.](./media/whats-new-app-ui/work-profile-checklist-1904.png)|   
 
 As telas a seguir mostram a lista de verificação atualizada para o registro de administrador do dispositivo Android:  
 
-|Atualizações|Anterior|  
+|Atualizado|Anterior|  
 |---|---|  
 |![Imagem de exemplo da instalação do administrador do dispositivo Android no Portal da Empresa, mostrando a lista de verificação simplificada e os novos ícones.](./media/whats-new-app-ui/android-checklist-1911.png)|![Imagem de exemplo da configuração do administrador do dispositivo Android anterior no Portal da Empresa, mostrando uma lista de verificação de mais ocupado.](./media/whats-new-app-ui/android-checklist-1904.png)|  
 
@@ -175,7 +175,7 @@ Verá algumas das atualizações que se seguem:
 - Desempenho melhorado para grandes catálogos de aplicações
 - Acessibilidade melhorada para todos os utilizadores  
 
-|Atualizações|Anterior|
+|Atualizado|Anterior|
 |---|---|
 |![A página do dispositivo atualizada mostra o dispositivo corretamente alinhado acima das informações do dispositivo, deixando de aparecer acima da lista completa.](./media/whats-new-app-ui/iwp-device-after-1803.png)|![A versão anterior da página do dispositivo.](./media/whats-new-app-ui/iwp-device-before-1803.png)|
 |![A página de instalação da aplicação atualizada mostra a aplicação por cima de uma descrição e várias informações sobre a instalação, incluindo a data de publicação, a versão e o tipo de aplicação.](./media/whats-new-app-ui/iwp-app-install-after-1803.png)|![A versão anterior da página de instalação da aplicação.](./media/whats-new-app-ui/iwp-app-install-before-1803.png)|  
@@ -244,8 +244,8 @@ Atualizámos a aplicação Portal da Empresa para Android para seguir as diretri
 |![01](./media/whats-new-app-ui/android_about_before_1803.png)|![01](./media/whats-new-app-ui/androidCP_about_after_1803.png)|
 |![02](./media/whats-new-app-ui/android_contact_it_before_1803.png)|![02](./media/whats-new-app-ui/android_contact_it_after_1803.png)|
 |![03](./media/whats-new-app-ui/android_devices_before_1803.png)|![03](./media/whats-new-app-ui/androidCP_devicelist_after_1803.png)|
-|![04](./media/whats-new-app-ui/android_device_details_before_1803.png)|![2005](./media/whats-new-app-ui/androidCP_devicedetails_1_after1803.png)|
-|![2005](./media/whats-new-app-ui/android_device_details_update_settings_before_1803.png)|![2005](./media/whats-new-app-ui/androidCP_devicedetails_red_box_2_after1803.png)|
+|![04](./media/whats-new-app-ui/android_device_details_before_1803.png)|![05](./media/whats-new-app-ui/androidCP_devicedetails_1_after1803.png)|
+|![05](./media/whats-new-app-ui/android_device_details_update_settings_before_1803.png)|![05](./media/whats-new-app-ui/androidCP_devicedetails_red_box_2_after1803.png)|
 |![06](./media/whats-new-app-ui/android_profile_before_1803.png)|![06](./media/whats-new-app-ui/android_profile_after_1803.png)|
 |![07](./media/whats-new-app-ui/androidCP_Setup01_before_1803.png)|![07](./media/whats-new-app-ui/androidCP_Setup01_after_1803.png)|
 
@@ -273,7 +273,7 @@ Melhorámos o fluxo de trabalho da configuração de dispositivos na aplicação
 |![02](./media/whats-new-app-ui/ios_cp_enroll_02_before_1711.png)|*Combinado com o passo anterior*|
 |![03](./media/whats-new-app-ui/ios_cp_enroll_03_before_1711.png)|![03](./media/whats-new-app-ui/ios_cp_enroll_03_after_1711.png)|
 |![04](./media/whats-new-app-ui/ios_cp_enroll_04_before_1711.png)|![04](./media/whats-new-app-ui/ios_cp_enroll_04_after_1711.png)|
-|![2005](./media/whats-new-app-ui/ios_cp_enroll_05_before_1711.png)|![2005](./media/whats-new-app-ui/ios_cp_enroll_05_after_1711.png)|
+|![05](./media/whats-new-app-ui/ios_cp_enroll_05_before_1711.png)|![05](./media/whats-new-app-ui/ios_cp_enroll_05_after_1711.png)|
 |![06](./media/whats-new-app-ui/ios_cp_enroll_06_before_1711.png)|![06](./media/whats-new-app-ui/ios_cp_enroll_06_after_1711.png)|
 |![07](./media/whats-new-app-ui/ios_cp_enroll_07_before_1711.png)|![07](./media/whats-new-app-ui/ios_cp_enroll_07_after_1711.png)|
 
@@ -324,7 +324,7 @@ Foram melhorados os passos adicionais em dispositivos com perfil de trabalho do 
 |Antes|Depois|
 |---|---|
 |![04](./media/whats-new-app-ui/android_work_cp_enroll_01_before_1710.png)|![04](./media/whats-new-app-ui/android_work_cp_enroll_01_after_1710.png)|
-|![2005](./media/whats-new-app-ui/android_work_cp_enroll_02_before_1710.png)| *Combinado com o passo anterior* |
+|![05](./media/whats-new-app-ui/android_work_cp_enroll_02_before_1710.png)| *Combinado com o passo anterior* |
 |![06](./media/whats-new-app-ui/android_work_cp_enroll_03_before_1710.png)|![06](./media/whats-new-app-ui/android_work_cp_enroll_03_after_1710.png)|
 |![07](./media/whats-new-app-ui/android_work_cp_enroll_04_before_1710.png)|![07](./media/whats-new-app-ui/android_work_cp_enroll_04_after_1710.png)|
 |![08](./media/whats-new-app-ui/android_work_cp_enroll_05_before_1710.png)| *Combinado com o passo anterior* |
@@ -348,7 +348,7 @@ O texto do processo de inscrição da aplicação Portal da Empresa para Android
 |![02](./media/whats-new-app-ui/android_cp_enroll_02_before_1709.png)|![02](./media/whats-new-app-ui/android_cp_enroll_02_post_1709.png)|
 |![03](./media/whats-new-app-ui/android_cp_enroll_03_before_1709.png)|![03](./media/whats-new-app-ui/android_cp_enroll_03_post_1709.png)|
 |![04](./media/whats-new-app-ui/android_cp_enroll_04_before_1709.png)|![04](./media/whats-new-app-ui/android_cp_enroll_04_post_1709.png)|
-|![2005](./media/whats-new-app-ui/android_cp_enroll_05_before_1709.png)|![2005](./media/whats-new-app-ui/android_cp_enroll_05_post_1709.png)|
+|![05](./media/whats-new-app-ui/android_cp_enroll_05_before_1709.png)|![05](./media/whats-new-app-ui/android_cp_enroll_05_post_1709.png)|
 
 
 ## <a name="august-2017"></a>Agosto de 2017

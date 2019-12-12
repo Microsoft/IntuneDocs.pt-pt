@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c3d98a0e3c5bd2a5c11c9aa72d791306dfbe6578
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 4e1ee8ae54d81a050f3c8983269f40e8f61b5e75
+ms.sourcegitcommit: e75718ee6cf93c0e6c915f2776b785fe8db9f7e0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503295"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74955478"
 ---
 # <a name="identify-devices-as-corporate-owned"></a>Identificar os dispositivos como pertencentes à empresa
 
@@ -85,9 +85,7 @@ Se visualizar este ficheiro .csv num editor de texto, este é apresentado como:
 
 ### <a name="upload-a-csv-list-of-corporate-identifiers"></a>Carregar uma lista .csv de identificadores empresariais
 
-1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), escolha **registro de dispositivo** > **identificadores de dispositivo corporativo** > **Adicionar** > **carregar arquivo CSV**.
-
-   ![Área de trabalho de identificador do dispositivo empresarial com o botão Adicionar realçado](./media/corporate-identifiers-add/add-corp-id.png)
+1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **dispositivos** > **registrar dispositivos** > **identificadores de dispositivos corporativos** > **Adicionar** > **carregar arquivo CSV**.
 
 2. No painel **Adicionar identificadores**, especifique o tipo de identificador, **IMEI** ou **Série**.
 
@@ -97,7 +95,7 @@ Se visualizar este ficheiro .csv num editor de texto, este é apresentado como:
 
 ## <a name="manually-enter-corporate-identifiers"></a>Introduzir identificadores empresariais manualmente
 
-1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), escolha **registro de dispositivo** > **identificadores de dispositivo corporativo** > **Adicionar** > **Insira manualmente**.
+1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **dispositivos** > **registrar dispositivos** > **identificadores de dispositivos corporativos** > **Adicionar** > **inserir manualmente**.
 
 2. No painel **Adicionar identificadores**, especifique o tipo de identificador, **IMEI** ou **Série**.
 
@@ -111,7 +109,7 @@ Os dispositivos importados não são necessariamente inscritos. Os dispositivos 
 
 ## <a name="delete-corporate-identifiers"></a>Eliminar identificadores empresariais
 
-1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), escolha **registro de dispositivo** > **identificadores de dispositivo corporativo**.
+1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **dispositivos** > **registrar dispositivos** > **identificadores de dispositivos corporativos**.
 2. Selecione os identificadores de dispositivo que pretende eliminar e selecione **Eliminar**.
 3. Confirme a eliminação.
 
@@ -125,7 +123,7 @@ Para obter especificações detalhadas sobre os Identificadores Internacionais d
 As propriedades dos dispositivos apresentam a **Propriedade** para os registos de cada dispositivo no Intune. Enquanto administrador, pode especificar dispositivos como **Pessoal** ou **Empresarial**. Quando o tipo de propriedade de um dispositivo é alterado de pessoal para corporativo, o Intune exclui todas as informações de aplicativo coletadas anteriormente do dispositivo dentro de 7 dias. Se aplicável, o Intune também excluirá o número de telefone no registro. 
 
 **Para alterar a propriedade dos dispositivos:**
-1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), vá para **dispositivos** e escolha o dispositivo.
+1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **dispositivos** > **todos os dispositivos** > escolha o dispositivo.
 2. Selecione **Propriedades**.
 3. Especifique a **Propriedade do dispositivo** como **Pessoal** ou **Empresarial**.
 

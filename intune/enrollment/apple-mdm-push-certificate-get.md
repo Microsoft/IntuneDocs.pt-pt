@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d15fd73a608c799745c92c4b07df4b9705d00106
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 178e1a3d0f58eb925c4d48be10bfa46e68c6b2c6
+ms.sourcegitcommit: e75718ee6cf93c0e6c915f2776b785fe8db9f7e0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72490314"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74955461"
 ---
 # <a name="get-an-apple-mdm-push-certificate"></a>Obter um certificado push de MDM da Apple
 
@@ -41,7 +41,7 @@ Quando um certificado push expira, tem de renová-lo. Ao renovar, certifique-se 
 
 
 ## <a name="steps-to-get-your-certificate"></a>Passos para obter o seu certificado
-Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), escolha **registro de dispositivo** > **registro da Apple** > **Apple MDM Push Certificate**e siga estas etapas no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **dispositivos** > **registrar dispositivos** > **registro da Apple** > **Apple MDM Push Certificate**e siga estas etapas.
 
 ### <a name="step-1-grant-microsoft-permission-to-send-user-and-device-information-to-apple"></a>Passo 1. conceder permissão à Microsoft para enviar informações sobre o utilizador e o dispositivo à Apple
 Selecione **Concordo** para conceder permissão à Microsoft para enviar dados à Apple.
@@ -68,7 +68,7 @@ O certificado push de MDM da Apple é válido durante um ano e tem de ser renova
 
 O certificado está associado ao ID Apple utilizado para criar o mesmo. Renove o certificado push de MDM com o ID Apple utilizado para criar o mesmo.
 
-1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), escolha **registro de dispositivo** > **registro da Apple**e, em seguida, escolha o bloco **Apple MDM Push Certificate** na área de detalhes.
+1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **dispositivos** > **registrar dispositivos** >  > de **registro da Apple** **Apple MDM Push Certificate**.
 2. Selecione **Transferir o CSR** para transferir e guardar o ficheiro de pedido localmente. O ficheiro é utilizado para pedir um certificado de relação de confiança do Portal de Certificados Apple Push.
 3. Selecione **Criar o Certificado Push de MDM** para aceder ao Portal de Certificados Push da Apple. Encontre o certificado que pretende renovar e selecione **Renovar**.
 4. No ecrã **Renovar Certificado Push**, introduza notas para ajudá-lo a identificar o certificado no futuro, selecione **Escolher Ficheiro** para navegar até ao novo ficheiro de pedido que transferiu e selecione **Carregar**.
