@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: bd02e2b7f9582308109d1e6986d7e6a8014e5af7
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/18/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72585893"
 ---
 # <a name="guided-scenario---secure-microsoft-office-mobile-apps"></a>Cenário guiado – aplicativos móveis seguros Microsoft Office 
@@ -37,7 +37,7 @@ A proteção do aplicativo que você habilitar irá impor as seguintes ações:
 - Bloquear o acesso a arquivos de trabalho se o dispositivo estiver offline por 720 minutos.
 - Remova os arquivos de trabalho se o dispositivo estiver offline por 90 dias. 
 
-## <a name="background"></a>Seguindo
+## <a name="background"></a>Fundo
 
 Os aplicativos móveis do Office, bem como o Microsoft Edge para dispositivos móveis, dão suporte a identidade dupla. A identidade dupla permite que os aplicativos gerenciem arquivos de trabalho separadamente de arquivos pessoais. 
 
@@ -112,7 +112,7 @@ Nesta etapa, você deve configurar os requisitos para acessar e compartilhar os 
 | Verificar novamente os requisitos de acesso após (minutos de inatividade) | Se o aplicativo gerenciado por política estiver inativo por mais tempo do que o número de minutos de inatividade especificado, o aplicativo solicitará os requisitos de acesso (ou seja, Fixe, configurações de inicialização condicional) a serem verificadas novamente após o aplicativo ser iniciado. | 30 |
 | Imprimindo dados da organização | Se bloqueado, o aplicativo não poderá imprimir dados protegidos. | Bloqueio |
 | Abrir política-links de aplicativos gerenciados em navegadores não gerenciados | Se bloqueado, os links de aplicativo gerenciados por política deverão ser abertos em um navegador gerenciado. | Bloqueio |
-| Copiar dados para aplicativos não gerenciados | Se bloqueado, os dados gerenciados permanecerão em aplicativos gerenciados. | Permitir |
+| Copiar dados para aplicativos não gerenciados | Se bloqueado, os dados gerenciados permanecerão em aplicativos gerenciados. | Allow |
 
 ## <a name="step-5---assignments"></a>Etapa 5-atribuições
 

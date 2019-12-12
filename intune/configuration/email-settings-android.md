@@ -1,6 +1,6 @@
 ---
 title: Configurações de email do Android no Microsoft Intune – Azure | Microsoft Docs
-description: Crie uma configuração de dispositivo perfis de email que usam servidores Exchange e recupere atributos de Azure Active Directory. Habilitar SSL ou SMIME, autenticar usuários com certificados ou nome de usuário/senha e sincronizar email e agendas em dispositivos Android Samsung Knox usando o Microsoft Intune.
+description: Criar um dispositivo de perfis de e-mail de configuração que utilizam servidores do Exchange e obter atributos do Azure Active Directory. Habilitar SSL ou SMIME, autenticar usuários com certificados ou nome de usuário/senha e sincronizar email e agendas em dispositivos Android Samsung Knox usando o Microsoft Intune.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -16,15 +16,15 @@ search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 43a2b00ae824656621c8a586e41ba6425c69ed40
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72506761"
 ---
 # <a name="android-device-settings-to-configure-email-authentication-and-synchronization-in-intune"></a>Configurações do dispositivo Android para configurar email, autenticação e sincronização no Intune
 
-Este artigo lista e descreve as diferentes configurações de email que você pode controlar em dispositivos Android Samsung Knox no Intune. Como parte da sua solução de MDM (gerenciamento de dispositivo móvel), use essas configurações para configurar um servidor de email, usar SSL para criptografar emails e muito mais.
+Este artigo lista e descreve as diferentes configurações de email que você pode controlar em dispositivos Android Samsung Knox no Intune. Como parte da sua solução de gestão (MDM) de dispositivos móveis, utilize estas definições para configurar um servidor de e-mail, utilize o SSL para encriptar mensagens de correio eletrónico e muito mais.
 
 Como administrador do Intune, você pode criar e atribuir configurações de email a dispositivos Android Samsung Knox Standard.
 
@@ -32,7 +32,7 @@ Para saber mais sobre perfis de email no Intune, consulte [definir configuraçõ
 
 ## <a name="before-you-begin"></a>Antes de começar
 
-[Criar um perfil de configuração de dispositivo](email-settings-configure.md#create-a-device-profile).
+[Criar um perfil de configuração do dispositivo](email-settings-configure.md#create-a-device-profile).
 
 ## <a name="android-samsung-knox"></a>Android (Samsung Knox)
 

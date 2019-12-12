@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 0d673650a26f3917fa32babba42e5e2054c87e59
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/13/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74060030"
 ---
 # <a name="mdm-security-baseline-settings-for-intune"></a>Configurações de linha de base de segurança do MDM para o Intune  
@@ -209,7 +209,7 @@ Para obter mais informações, consulte [CSP de política-dataprotection](https:
   
   **Padrão**: Sim  
 
-## <a name="device-guard"></a>Proteção do dispositivo  
+## <a name="device-guard"></a>Device Guard  
 Para obter mais informações, consulte [Policy CSP-DeviceGuard](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceguard
 ) na documentação do Windows.  
 
@@ -1370,7 +1370,7 @@ Para obter mais informações, consulte [Policy CSP-MSSLegacy](https://docs.micr
 
   **Padrão**: desabilitado
   
-## <a name="power"></a>Alimentar  
+## <a name="power"></a>Ligar/desligar  
 Para obter mais informações, consulte [CSP da política – Power](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power) na documentação do Windows.  
 
 - **Exigir senha ao ativar enquanto conectado**  
@@ -1522,7 +1522,7 @@ Para obter mais informações, consulte [CSP da política – Pesquisar](https:/
   
   **Padrão**: Sim
   
-## <a name="smart-screen"></a>Tela inteligente  
+## <a name="smart-screen"></a>Smart Screen  
 Para obter mais informações, consulte [CSP da política-SmartScreen](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen) na documentação do Windows.  
 
 - **Bloquear a execução de arquivos não verificados**  
@@ -1814,7 +1814,7 @@ Para obter mais informações, consulte [2.2.2 FW_PROFILE_TYPOE]( https://docs.m
 
   **Padrão**: permitido
 
-## <a name="windows-ink-workspace"></a>Espaço de trabalho do Windows Ink  
+## <a name="windows-ink-workspace"></a>Área de Trabalho do Windows Ink  
 Para obter mais informações, consulte [Policy CSP-WindowsInkWorkspace](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowsinkworkspace) na documentação do Windows.  
 
 - **Espaço de trabalho de tinta**  

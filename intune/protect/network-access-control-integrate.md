@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 7b2083a493fd723c649bdfe2b709dbaa4c0ec663
-ms.sourcegitcommit: 3ace4cba6e2f6fefa9120be3807387a49b200c9b
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/23/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72810273"
 ---
 # <a name="network-access-control-nac-integration-with-intune"></a>Integração de controlo de acesso à rede (NAC) com o Intune
@@ -75,7 +75,7 @@ A lista seguinte é uma descrição geral sobre como a integração do NAC funci
   - Use o 12.0.59 do gateway da Citrix ou superior.  
   - Os usuários devem ter o Citrix SSO 1.1.6 ou posterior instalado.
   - [Integre o Netscaler ao Intune para NAC](https://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html) , conforme descrito na documentação do produto Citrix.
-  - No perfil VPN, selecione **configurações de Base** > **habilitar o NAC (controle de acesso à rede)** > selecione **concordo**.
+  - No perfil VPN, selecione **configurações de Base** > **habilitar o controle de acesso à rede (NAC)** > selecione **concordo**.
 
   A conexão VPN é desconectada a cada 24 horas por motivos de segurança. A VPN pode ser imediatamente reconectada.
 
@@ -83,7 +83,7 @@ A lista seguinte é uma descrição geral sobre como a integração do NAC funci
 
   - Use F5 BIG-IP 13.1.1.5. Não há suporte para BIG-IP 14.
   - Integre BIG-IP ao Intune para NAC. A [visão geral: Configurando o APM para verificações de postura de dispositivo com os sistemas de gerenciamento de ponto de extremidade](https://support.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-client-configuration-7-1-6/6.html#guid-0bd12e12-8107-40ec-979d-c44779a8cc89) F5 Guide lista as etapas.
-  - No perfil VPN, selecione **configurações de Base** > **habilitar o NAC (controle de acesso à rede)** > selecione **concordo**.
+  - No perfil VPN, selecione **configurações de Base** > **habilitar o controle de acesso à rede (NAC)** > selecione **concordo**.
 
   A conexão VPN é desconectada a cada 24 horas por motivos de segurança. A VPN pode ser imediatamente reconectada.
 

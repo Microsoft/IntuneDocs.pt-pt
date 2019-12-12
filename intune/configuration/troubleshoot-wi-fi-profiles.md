@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 77f5787509438ec3280f29be8449d78979806042
-ms.sourcegitcommit: 16a9109b4028589c17695d41271ca4fee8b1d697
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/26/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74542330"
 ---
 # <a name="troubleshoot-wi-fi-device-configuration-profiles-in-microsoft-intune"></a>Solucionar problemas de perfis de configuração de dispositivo Wi-Fi no Microsoft Intune
@@ -194,7 +194,7 @@ WiFiConfigurationServiceProvider: Node set value, type: (0x4), Result: (The oper
   1. Acesse **configurações** > **contas** > **acessar trabalho ou escola**.
   2. Selecione sua conta corporativa ou de estudante > **informações**.
   3. Na parte inferior da página **configurações** , selecione **criar relatório**.
-  4. Uma janela é aberta e mostra o caminho para os arquivos de log. Selecione **Exportar**.
+  4. Uma janela é aberta e mostra o caminho para os arquivos de log. Selecione **Export** (Exportar).
   5. Vá para o caminho de `\Users\Public\Documents\MDMDiagnostics` e exiba o relatório:
 
       > [!div class="mx-imgBorder"]

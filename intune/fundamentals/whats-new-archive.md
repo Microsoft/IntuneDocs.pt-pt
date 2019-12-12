@@ -20,10 +20,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 6a6b5585501851bb52db70ca222f8cfff7ad0597
-ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/06/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73635471"
 ---
 # <a name="whats-new-in-the-microsoft-intune---previous-months"></a>Novidades do Microsoft Intune – meses anteriores
@@ -107,7 +107,7 @@ Para saber mais sobre esse recurso, acesse [usar e gerenciar dispositivos Androi
 Aplica-se a: Android Enterprise
 
 #### <a name="windows-update-notifications---3316758-3316782----"></a>Notificações de Windows Update<!-- 3316758, 3316782  -->
-Adicionamos duas *configurações de experiência do usuário* às configurações de Windows Update Ring que você pode gerenciar no console do Intune. Agora você pode:
+Adicionamos duas *configurações de experiência do usuário* às configurações de Windows Update Ring que você pode gerenciar no console do Intune. Agora, pode:
 - Bloquear ou permitir que os usuários [verifiquem se há atualizações do Windows](../protect/windows-update-settings.md).
 - Gerencie o [nível de notificação Windows Update](../protect/windows-update-settings.md) que os usuários veem.
 
@@ -168,7 +168,7 @@ No exemplo a seguir, você verá a divisão dos controles GDPR. A Microsoft abra
 
 #### <a name="configure-profile-to-skip-some-screens-during-setup-assistant---2276470----"></a>Configurar o perfil para ignorar algumas telas durante o assistente de configuração<!-- 2276470  -->
 Ao criar um perfil de registro do macOS, você pode configurá-lo para ignorar qualquer uma das telas a seguir quando um usuário passar pelo assistente de configuração:
-- Aparência
+- Appearance
 - Sinal de Exibição
 - iCloudStorage se você criar um novo perfil ou editar um perfil, as telas ignorar selecionadas precisarão ser sincronizadas com o servidor MDM da Apple.  Os usuários podem emitir uma sincronização manual dos dispositivos para que não haja atraso na separação das alterações de perfil.
 Para obter mais informações, consulte [registrar automaticamente dispositivos MacOS com o programa de registro de dispositivos ou o Apple School Manager](../enrollment/device-enrollment-program-enroll-macos.md).
@@ -299,7 +299,7 @@ Acesso somente leitura a todos os dados do Intune:
 
 - Administrador de Segurança
 - Operador de segurança
-- Leitor de segurança
+- Leitor de Segurança
 
 Para obter mais informações, consulte [controle de acesso baseado em função](role-based-access-control.md).
 
@@ -361,13 +361,13 @@ O Intune está impondo a configuração **ChangeAtNextAuth** em dispositivos Mac
 
 Qualquer política de senha nova ou existente é alterada pelo administrador solicitando os usuários finais novamente para atualizar sua senha.
 
-Aplica-se a:  
+Aplica-se a  
 macOS
 
 #### <a name="assign-scep-certificates-to-a-userless-macos-device---2340521------"></a>Atribuir certificados SCEP a um dispositivo macOS-não-usuário<!-- 2340521    -->
 Você pode atribuir certificados de protocolo SCEP (SCEP) usando atributos de dispositivo para dispositivos macOS, incluindo dispositivos sem afinidade de usuário, e associar o perfil de certificado a perfis Wi-Fi ou VPN. Isso expande o suporte que já temos para [atribuir certificados SCEP a dispositivos com e sem afinidade de usuário](../protect/certificates-profile-scep.md) que executa Windows, Ios e Android.  Esta atualização adiciona a opção para selecionar um tipo de certificado de *dispositivo* quando você configura um perfil de certificado SCEP para o MacOS.
 
-Aplica-se a:
+Aplica-se a
 - macOS
 
 #### <a name="intune-conditional-access-ui-update---2432313-----"></a>Atualização da interface do usuário de acesso condicional do Intune<!-- 2432313   -->
@@ -404,7 +404,7 @@ Para ver os recursos e as configurações que você pode restringir, consulte:
 - [configurações de restrição de dispositivo iOS](../configuration/device-restrictions-ios.md)
 - [configurações de restrição de dispositivo macOS](../configuration/device-restrictions-macos.md)
 
-Aplica-se a:
+Aplica-se a
 
 - iOS
 - macOS
@@ -414,7 +414,7 @@ Para alinhar com a terminologia do Android, o **quiosque** é alterado para **di
 
 Para ver as configurações disponíveis, vá para [configurações do dispositivo para permitir ou restringir recursos](../configuration/device-restrictions-android-for-work.md#dedicated-device-settings).
 
-Aplica-se a:  
+Aplica-se a  
 Android Enterprise
 
 #### <a name="safari-and-delaying-user-software-update-visibility-ios-settings-are-moving-in-the-intune-ui---3640850-3803313-----"></a>O Safari e atrasando as configurações do iOS de visibilidade da atualização de software do usuário estão se movendo na interface do usuário do Intune<!-- 3640850, 3803313   -->
@@ -435,14 +435,14 @@ Esta funcionalidade aplica-se a:
 #### <a name="enabling-restrictions-in-the-device-settings-is-renamed-to-screen-time-on-ios-devices---3699164-----"></a>Habilitar restrições nas configurações do dispositivo é renomeado para tempo de tela em dispositivos iOS<!-- 3699164   -->
 Você pode configurar as **restrições de habilitação nas configurações do dispositivo** em dispositivos IOS supervisionados (**configuração do dispositivo** > **perfis** > **novo perfil** > **Ios** para plataforma > **restrições de dispositivo** para o tipo de perfil > **geral**). Nessa atualização, essa configuração é renomeada para **tempo de tela (somente supervisionado)** .
 
-O comportamento é o mesmo. Especificamente
+O comportamento é o mesmo. Especificamente:
 
 - iOS 11.4.1 e anterior: **Bloquear** impede que os usuários finais definam suas próprias restrições nas configurações do dispositivo. 
 - iOS 12,0 e posterior: **Bloquear** impede que os usuários finais definam seu próprio **tempo de tela** nas configurações do dispositivo, incluindo conteúdo & restrições de privacidade. Os dispositivos atualizados para iOS 12,0 não verão mais a guia restrições nas configurações do dispositivo. Estas definições estão em **Tempo do Ecrã**. 
 
 Para obter uma lista das configurações, consulte [restrições de dispositivo IOS](../configuration/device-restrictions-ios.md#general).
 
-Aplica-se a:
+Aplica-se a
 - iOS
 
 
@@ -808,7 +808,7 @@ Para saber mais sobre essas configurações, consulte Configurações de restri�
 
 #### <a name="autopilot-support-for-hybrid-azure-active-directory-joined-devices-preview---1048100--"></a>Suporte ao piloto automático para dispositivos ingressados no Azure Active Directory híbrido (versão prévia)<!-- 1048100-->
 Agora pode configurar dispositivos associados ao Azure Active Directory híbrido com o Autopilot. Os dispositivos têm de ser associados à rede da sua organização para utilizar a funcionalidade Autopilot híbrida. Para obter mais informações, veja [Implementar dispositivos associados ao Azure Active Directory híbrido com o Intune e o Windows Autopilot](../enrollment/windows-autopilot-hybrid.md).
-Esta funcionalidade será implementada na base de utilizadores nos próximos dias. Assim, poderá não conseguir seguir estes passos até que a mesma seja implementada na sua conta.
+Esta funcionalidade será implementada para a base de utilizadores nos próximos dias. Assim, poderá não conseguir seguir estes passos até que a mesma seja implementada na sua conta.
 
 #### <a name="select-apps-tracked-on-the-enrollment-status-page---2531007---"></a>Selecionar aplicativos acompanhados na página de status de registro<!-- 2531007 -->
 Você pode escolher quais aplicativos são acompanhados na página status do registro. Até que esses aplicativos sejam instalados, o usuário não poderá usar o dispositivo. Para obter mais informações, consulte [Configurar uma página de status de registro](../enrollment/windows-enrollment-status.md).
@@ -1039,7 +1039,7 @@ A funcionalidade das definições não muda, mas será mais fácil encontrá-las
 
 #### <a name="restricts-apps-and-block-access-to-company-resources-on-android-devices---2451462----"></a>Restringe os aplicativos e bloqueie o acesso aos recursos da empresa em dispositivos Android<!-- 2451462  -->  
 Em **Conformidade do dispositivo** > **Políticas** > **Criar política** > **Android**  > **Segurança do Sistema**, há uma nova definição na secção *Segurança do Dispositivo* chamada **Aplicações restritas**. A definição **Aplicações restritas** utiliza uma política de conformidade para bloquear o acesso aos recursos da empresa, caso determinadas aplicações estejam instaladas no dispositivo. O dispositivo é considerado não compatíveis até que as aplicações restritas sejam removidas do dispositivo.
-Aplica-se a: 
+Aplica-se a 
 - Android
 
 ### <a name="intune-apps"></a>Aplicações do Intune
@@ -1348,7 +1348,7 @@ Saiba mais sobre como [gerir perfis de configuração](../configuration/device-p
 #### <a name="new-status-for-devices-in-device-compliance---2308882---"></a>Novo estado dos dispositivos em Conformidade do dispositivo<!-- 2308882 -->
 Em **Conformidade do dispositivo** > **Políticas** > selecione uma política > **Descrição geral**, são adicionados os novos estados que se seguem:
 - com êxito
-- error
+- erro
 - conflito
 - pendente
 - não aplicável Também é apresentada uma imagem que mostra a contagem de dispositivos de uma plataforma diferente. Por exemplo, se observar um perfil iOS, o novo mosaico mostra a contagem de dispositivos não iOS atribuídos a este perfil. Veja [Políticas de conformidade do dispositivo](../protect/compliance-policy-monitor.md#view-status-of-device-policies).
@@ -1416,11 +1416,11 @@ A página de imagem corporativa do Portal da Empresa tem um novo esquema, mensag
 Você pode controlar o acesso de dispositivos móveis a recursos corporativos usando o acesso condicional com base na avaliação de risco realizada pelo Pradeo, uma solução de defesa contra ameaças móveis que se integra ao Microsoft Intune.
 
 #### <a name="use-fips-mode-with-the-ndes-certificate-connector---1333688---"></a>Utilizar o modo FIPS com o conector do Certificado NDES<!-- 1333688 -->
-Ao instalar o conector do Certificado NDES num computador com o modo FIPS (Federal Information Processing Standard) ativado, a emissão e a revogação de certificados não funcionaram como esperado. Com esta atualização, é incluído suporte para o modo FIPS com o conector do Certificado NDES. 
+Ao instalar o conector do Certificado NDES num computador com o modo FIPS (Federal Information Processing Standard) ativado, a emissão e a revogação de certificados não funcionaram como esperado. Com esta atualização, é incluído suporte para FIPS com o conector do Certificado NDES. 
 
 Esta atualização também inclui:
 
-- O conector do Certificado NDES precisa do .NET 4.5 Framework, incluído automaticamente com o Windows Server 2016 e o Windows Server 2012 R2. Anteriormente, a versão mínima necessária era o .NET 3.5 Framework.
+- O conector do Certificado NDES precisa do .NET 4.5 Framework, que é incluído automaticamente com o Windows Server 2016 e o Windows Server 2012 R2. Anteriormente, a versão mínima necessária era o .NET 3.5 Framework.
 - É incluído suporte para o TLS 1.2 com o conector do Certificado NDES. Assim, se o servidor com o Certificate Connector do NDES instalado suportar o TLS 1.2, será utilizado o TLS 1.2. Se o servidor não suportar o TLS 1.2, será utilizado o TLS 1.1. Atualmente, é utilizado o TLS 1.1 para a autenticação entre os dispositivos e o servidor.
 
 Para obter mais informações, veja [Configurar e utilizar certificados SCEP](../protect/certificates-scep-configure.md) e [Configurar e utilizar certificados PKCS](../protect/certficates-pfx-configure.md).
@@ -1588,7 +1588,7 @@ Com esta atualização, existe uma nova definição em **Android Enterprise** > 
 
 Quando a opção está ativada (não configurada), os detalhes do autor da chamada do contacto de trabalho são apresentados no perfil pessoal. Quando a opção está bloqueada, o número do autor da chamada do contacto de trabalho não é apresentado no perfil pessoal. 
 
-Aplica-se a: dispositivos de perfil de trabalho Android em Android OS v6.0 e mais recentes
+Aplica-se a: dispositivos de perfil de trabalho Android no Android OS v6.0 e mais recentes
 
 #### <a name="new-windows-defender-credential-guard-settings-added-to-endpoint-protection-settings--1102252-----from-1802-and-1804--"></a>Foram adicionadas novas definições do Windows Defender Credential Guard às definições de proteção de ponto final<!--1102252 --><!--from 1802 and 1804-->
 
@@ -1857,7 +1857,7 @@ Criar perfil\Proteção de ponto final\Windows Defender Exploit Guard.
 
 #### <a name="attack-surface-reduction"></a>Redução da Superfície de Ataque
 
-|Nome da definição  |Opções da definição  |Descrição  |
+|Nome da definição  |Opções da definição  |Description  |
 |---------|---------|---------|
 |Proteção de ransomware avançada|Ativado, Auditar, Não configurado|Utilize proteção contra ransomware intensiva.|
 |Sinalizar o roubo de credenciais do subsistema de autoridade de segurança local do Windows|Ativado, Auditar, Não configurado|Sinalize o roubo de credenciais do subsistema de autoridade de segurança local do Windows (Lsass.exe).|
@@ -1867,7 +1867,7 @@ Criar perfil\Proteção de ponto final\Windows Defender Exploit Guard.
 
 #### <a name="controlled-folder-access"></a>Acesso a pastas controladas
 
-|              Nome da definição               |                                                              Opções da definição                                                              | Descrição |
+|              Nome da definição               |                                                              Opções da definição                                                              | Description |
 |-----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|-------------|
 | Proteção de pastas (já implementada) | Não configurado, Ativar, Apenas auditoria (já implementada)<br><br> <strong>Novidade</strong><br>Bloquear modificação do disco, Auditar modificação do disco |             |
 
@@ -1896,7 +1896,7 @@ Pode criar categorias de eBook personalizadas e depois atribuir eBooks do VPP a 
 A partir de 30 de abril de 2018, a opção **Enviar Feedback** na aplicação Portal da Empresa para Windows funcionará apenas em dispositivos com a Atualização de Aniversário do Windows 10 (1607) e versões posteriores. A opção para enviar feedback já não é suportada ao utilizar a aplicação Portal da Empresa para Windows com a:  
 - Versão 1507 do Windows 10  
 - Versão 1511 do Windows 10  
-- Windows Phone 8.1 
+- Wnodows Phone 8.1 
 
 Se o seu dispositivo estiver a executar o Windows 10 RS1 ou posterior, transfira a versão mais recente da aplicação Portal da Empresa para Windows a partir da Store. Se estiver a executar uma versão não suportada, continue a enviar feedback através dos seguintes canais: 
 - Aplicação Hub de Comentários no Windows 10
@@ -2030,7 +2030,7 @@ Por exemplo, uma conta de recurso como **Sala de Conferência B41/6233**.
 
 ##### <a name="attack-surface-reduction"></a>Redução da Superfície de Ataque
 
-|Nome da definição  |Opções da definição  |Descrição  |
+|Nome da definição  |Opções da definição  |Description  |
 |---------|---------|---------|
 |Execução de conteúdos executáveis protegidos por palavra-passe a partir do e-mail|Bloquear, Auditar, Não configurado|Impeça a execução de ficheiros executáveis protegidos por palavra-passe transferidos do e-mail.|
 |Proteção de ransomware avançada|Ativado, Auditar, Não configurado|Utilize proteção contra ransomware intensiva.|
@@ -2041,7 +2041,7 @@ Por exemplo, uma conta de recurso como **Sala de Conferência B41/6233**.
 
 ##### <a name="controlled-folder-access"></a>Acesso a pastas controladas
 
-|              Nome da definição               |                                                              Opções da definição                                                              | Descrição |
+|              Nome da definição               |                                                              Opções da definição                                                              | Description |
 |-----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|-------------|
 | Proteção de pastas (já implementada) | Não configurado, Ativar, Apenas auditoria (já implementada)<br><br> <strong>Novidade</strong><br>Bloquear modificação do disco, Auditar modificação do disco |             |
 
@@ -2208,7 +2208,7 @@ Seguem-se as definições que os administradores podem configurar:
 
     Usado apenas quando a autodiscovery falhar.
 
-  - **e-mail**
+  - **E-mail**
 
     Endereço de e-mail da conta de recurso/dispositivo.
 
@@ -2328,7 +2328,7 @@ Os inventários de dispositivos iOS pessoais ou empresariais com o iOS 11 ou uma
 - A aplicação é ou não validada
 - A aplicação é ou não gerida
 
-### <a name="migrate-hybrid-mdm-users-and-devices-to-intune-standalone---1463747-wnready---"></a>Migrar usuários e dispositivos do MDM híbrido para o Intune autônomo<!-- 1463747 wnready -->
+### <a name="migrate-hybrid-mdm-users-and-devices-to-intune-standalone---1463747-wnready---"></a>Migrar os utilizadores e dispositivos da MDM híbrida para o Intune autónomo<!-- 1463747 wnready -->
 Estão agora disponíveis novos processos e ferramentas para migrar utilizadores e os respetivos dispositivos da MDM híbrida para o Intune no portal do Azure, que lhe permitem efetuar as seguintes tarefas:
 - Copiar políticas e perfis da consola do Configuration Manager para o Intune no portal do Azure
 - Mover um subconjunto de utilizadores para o Intune no portal do Azure enquanto mantém os restantes na MDM híbrida
@@ -2408,7 +2408,7 @@ Os administradores podem agora remover os requisitos de VPN por Aplicação para
 ### <a name="support-for-system-center-operations-manager-management-pack-for-exchange-connector---885457---"></a>Suporte para o pacote de gestão do System Center Operations Manager do conector do Exchange<!-- 885457 -->
 O pacote de gestão do System Center Operations Manager do conector do Exchange está agora disponível para ajudar a analisar os registos do conector do Exchange. Esta funcionalidade disponibiliza maneiras diferentes de monitorizar o serviço quando precisar de resolver problemas.
 
-### <a name="co-management-for-windows-10-devices----1243445---"></a>Cogerenciamento para dispositivos Windows 10 <!-- 1243445 -->
+### <a name="co-management-for-windows-10-devices----1243445---"></a>Cogestão para os dispositivos com Windows 10 <!-- 1243445 -->
 A cogestão é uma solução que proporciona a transição de uma gestão tradicional para uma moderna, além de permitir que faça essa transição de forma faseada. Na sua génese, a cogestão é uma solução em que os dispositivos Windows 10 são geridos simultaneamente pelo Configuration Manager e pelo Microsoft Intune, além de estar associada ao Active Directory (AD) e ao Azure Active Directory (Azure AD).  Esta configuração proporciona-lhe uma forma de modernizar a gestão com ao longo do tempo e ao ritmo mais adequado para a sua organização, caso não consiga efetuar a mudança de uma só vez.  
 
 ### <a name="restrict-windows-enrollment-by-os-version---245498---"></a>Restringir a Inscrição do Windows por versão do SO<!-- 245498 -->
@@ -3190,7 +3190,7 @@ Estão agora disponíveis duas novas definições de aplicações para o ajudar 
 
   Lista dos serviços de localização de armazenamento:
 
-  - OneDrive
+  - OneDrive para Empresas
   - SharePoint Online
   - Armazenamento local
 

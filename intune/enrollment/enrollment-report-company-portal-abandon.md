@@ -18,17 +18,17 @@ search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: ae3c2380aa27096be2490d2404858179ea9d222e
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72503188"
 ---
 # <a name="incomplete-user-enrollments-report"></a>Relatório incompleto de registros de usuário
 
 Este relatório informa onde os usuários do processo de registro de Portal da Empresa não estão concluindo o processo de registro.
 
-Para ver o relatório, escolha **Intune** > **registro de dispositivo** > **registros de usuário incompletos**.
+Para ver o relatório, escolha **Intune** > **registro de dispositivo** > registros de **usuário incompletos**.
 
 Usando essas informações, você pode atualizar seus documentos de integração para ajudar os usuários a concluir o registro. Por exemplo, se existirem muitos utilizadores a desistir nos Termos de Utilização, pode investigar essa área e torná-la mais intuitiva para os utilizadores.
 
@@ -108,7 +108,7 @@ As tabelas a seguir mostram a lista de ações do usuário que se qualificam ao 
 | ---- |---- |---- |---- |
 | Conformidade | A conformidade do dispositivo (se configurado pelo administrador) é apresentada como não verde na fase de pós-inscrição da configuração do acesso| iOS/Android | **Adiar** |
 | Conformidade | A conformidade do dispositivo é apresentada como não verde até ser atualizada e ficar a verde | iOS/Android | Demorou mais de 30 minutos |
-| Ativá | A ativação da inscrição (se configurado pelo administrador) é apresentada como não verde na configuração do acesso | iOS/Android | **Adiar** |
+| Ativação | A ativação da inscrição (se configurado pelo administrador) é apresentada como não verde na configuração do acesso | iOS/Android | **Adiar** |
 | Conformidade | A ativação do dispositivo é apresentada como não verde até ser atualizada e ficar a verde | iOS/Android | Demorou mais de 30 minutos |
 
 ## <a name="next-steps"></a>Próximos passos

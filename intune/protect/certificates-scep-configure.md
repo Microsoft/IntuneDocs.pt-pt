@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 86640c831e8836a72ad5a0a7d5023ff7d836a43a
-ms.sourcegitcommit: b5e719fb507b1bc4774674e76c856c435e69f68c
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/08/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73801557"
 ---
 # <a name="configure-infrastructure-to-support-scep-with-intune"></a>Configurar a infraestrutura para dar suporte ao SCEP com o Intune
@@ -178,8 +178,8 @@ As seções a seguir exigem conhecimento do Windows Server 2012 R2 ou posterior 
 
 O conector de certificado do Intune requer um certificado com o uso avançado de chave de *autenticação de cliente* e o nome da entidade igual ao FQDN do computador em que o conector está instalado. É necessário um modelo com as seguintes propriedades:
 
-- **Extensões** > **as políticas de aplicativo** devem conter **autenticação de cliente**
-- **Nome da entidade** > **forneça na solicitação**.
+- **Extensões** > **políticas de aplicativo** devem conter **autenticação de cliente**
+- **Nome da entidade** > **fornecer na solicitação**.
 
 Se você já tiver um modelo que inclui essas propriedades, poderá reutilizá-lo; caso contrário, crie um novo modelo duplicando um existente ou criando um modelo personalizado.
 
@@ -187,8 +187,8 @@ Se você já tiver um modelo que inclui essas propriedades, poderá reutilizá-l
 
 As comunicações entre os dispositivos gerenciados e o IIS no servidor NDES usam HTTPS, o que requer o uso de um certificado. Você pode usar o modelo de certificado do **servidor Web** para emitir esse certificado. Ou, se você preferir ter um modelo dedicado, as seguintes propriedades serão necessárias:
 
-- **Extensões**de**aplicativo**  >  devem conter **autenticação de servidor**
-- **Nome da entidade** > **forneça na solicitação**.
+- **Extensões** > **políticas de aplicativo** devem conter **autenticação de servidor**
+- **Nome da entidade** > **fornecer na solicitação**.
 
 > [!NOTE]
 > Se você tiver um certificado que satisfaça os dois requisitos dos modelos de certificado do cliente e do servidor, poderá usar um único certificado para o IIS e o conector de certificado do Intune.
@@ -227,7 +227,7 @@ Por predefinição, o Intune utiliza o valor configurado no modelo. No entanto, 
    -**net stop certsvc**
    -**net start certsvc**
 
-2. Na AC emissora, utilize o snap-in Autoridade de Certificação para publicar o modelo de certificado. Selecione o nó **modelos de certificado** , selecione **ação** > **novo**modelo de certificado  > **a ser emitido**e, em seguida, selecione o modelo de certificado que você criou na seção anterior.
+2. Na AC emissora, utilize o snap-in Autoridade de Certificação para publicar o modelo de certificado. Selecione o nó **modelos de certificado** , selecione **ação** > **novo** > **modelo de certificado a ser emitido**e selecione o modelo de certificado que você criou na seção anterior.
 
 3. Valide se o modelo foi publicado exibindo-o na pasta **modelos de certificado** .
 
@@ -298,7 +298,7 @@ Os procedimentos a seguir podem ajudá-lo a configurar o NDES (serviço de regis
 
 3. Configure a filtragem de solicitações do IIS para adicionar suporte no IIS para as URLs longas (consultas) que o serviço de NDES recebe.
 
-   1. No Gerenciador do IIS, selecione o **site padrão** > **filtragem de solicitação** > **Editar configuração de recurso** para abrir a página **Editar configurações de filtragem de solicitações** .
+   1. No Gerenciador do IIS, selecione **site padrão** > **filtragem de solicitação** > **configuração editar recurso** para abrir a página **Editar configurações de filtragem de solicitações** .
 
    2. Configure as seguintes definições:
 
@@ -376,7 +376,7 @@ O Microsoft Intune Certificate Connector é instalado no servidor que executa se
       - Ao instalar o NDES para o Intune autónomo, o serviço CRP é instalado automaticamente com o Certificate Connector.
       - Ao usar o Intune com Configuration Manager, você instala o ponto de registro de certificado como uma função de sistema de site do Configuration Manager.
 
-5. Quando for solicitado o certificado do cliente para o conector de certificado, escolha **selecionar**e selecione o certificado de **autenticação de cliente** que você instalou em seu servidor NDES durante a etapa #3 do procedimento [instalar e associar certificados no servidor que hospeda o NDES](#install-and-bind-certificates-on-the-server-that-hosts-ndes) anteriormente neste artigo.
+5. Quando for solicitado o certificado do cliente para o conector de certificado, escolha **selecionar**e selecione o certificado de **autenticação de cliente** que você instalou em seu servidor NDES durante a etapa #3 do procedimento [instalar e associar certificados no servidor que hospeda o NDES](#install-and-bind-certificates-on-the-server-that-hosts-ndes) do anterior neste artigo.
 
    Depois de selecionar o certificado de autenticação de cliente, você será devolvido ao **certificado do cliente para Microsoft Intune Certificate Connector** superfície. Embora o certificado selecionado não seja mostrado, selecione **Avançar** para exibir as propriedades desse certificado. Selecione **Seguinte** e, em seguida, **Instalar**.
 

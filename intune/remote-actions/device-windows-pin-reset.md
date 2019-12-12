@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1b2390462376c88129435de30eb98020563f3878
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: b643ed41d01b70376dac32c26a66dcf9f9735ceb
+ms.sourcegitcommit: ec69e7ccc6e6183862a48c1b03ca6a3bf573f354
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73713095"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "74907224"
 ---
 # <a name="reset-the-passcode-on-windows-devices-using-intune"></a>Repor o código de acesso nos dispositivos Windows com o Intune
 
@@ -66,7 +66,7 @@ Defina o valor deste CSP para **Verdadeiro**.
 
 1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431). 
 2. Selecione **Dispositivos** e, em seguida, selecione **Todos os dispositivos**.
-3. Selecione o dispositivo cujo código de acesso quer repor. Nas propriedades do dispositivo, selecione **Novo código de acesso**.
+3. Selecione o dispositivo cujo código de acesso quer repor. Nas propriedades do dispositivo, selecione **Redefinir senha**.
 4. Selecione **Sim** para confirmar. O código de acesso é gerado e apresentado no portal durante os sete dias seguintes.
 
 ## <a name="next-step"></a>Passo seguinte

@@ -1,11 +1,11 @@
 ---
 title: Políticas de conformidade de dispositivos no Microsoft Intune – Azure | Microsoft Docs
-description: Comece a usar as políticas de conformidade do dispositivo, visão geral dos níveis de status e gravidade, usando o status do InGracePeriod, trabalhando com o acesso condicional, manipulando dispositivos sem uma política atribuída e as diferenças de conformidade no portal do Azure e Portal clássico no Microsoft Intune
+description: Comece a usar as políticas de conformidade do dispositivo, visão geral dos níveis de status e gravidade, usando o status do InGracePeriod, trabalhando com o acesso condicional e manipulando dispositivos sem uma política atribuída.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/21/2019
+ms.date: 12/05/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 967bf9937c71ff3ca7277f43fd969291eb5af6de
-ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
+ms.openlocfilehash: 83b8c48d2bb594ca8b9c527d78922332e582363f
+ms.sourcegitcommit: 66e284fe092e19c1da72b4b770e45bf25ac7910c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72749170"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74860300"
 ---
 # <a name="set-rules-on-devices-to-allow-access-to-resources-in-your-organization-using-intune"></a>Definir regras em dispositivos para permitir o acesso a recursos na sua organização através do Intune
 
@@ -114,13 +114,13 @@ A tabela a seguir descreve como as configurações não compatíveis são gerenc
 
 |**Definição de política**| **Plataforma** |
 | --- | ----|
-| **Configuração do PIN ou da palavra-passe** | - **Android 4,0 e posterior**: em quarentena<br>- **Samsung Knox Standard 4,0 e posterior**: em quarentena<br>- **Android Enterprise**: em quarentena  <br>  <br>- **iOS 8,0 e posterior**: corrigido<br>- **macOS 10,11 e posterior**: corrigido  <br>  <br>- **Windows 8.1 e posterior**: corrigido<br>- **Windows Phone 8,1 e posterior**: corrigido|
-| **Encriptação do dispositivo** | - **Android 4,0 e posterior**: em quarentena<br>- **Samsung Knox Standard 4,0 e posterior**: em quarentena<br>- **Android Enterprise**: em quarentena<br><br>- **iOS 8,0 e posterior**: corrigido (ao definir o PIN)<br>- **macOS 10,11 e posterior**: corrigido (ao definir o PIN)<br><br>- **Windows 8.1 e posterior**: não aplicável<br>- **Windows Phone 8,1 e posterior**: corrigido |
-| **Dispositivo desbloqueado por jailbreak ou obtenção de controlo de raiz** | - **Android 4,0 e posterior**: em quarentena (não é uma configuração)<br>- **Samsung Knox Standard 4,0 e posterior**: em quarentena (não é uma configuração)<br>- **Android Enterprise**: em quarentena (não é uma configuração)<br><br>- **iOS 8,0 e posterior**: em quarentena (não é uma configuração)<br>- **macOS 10,11 e posterior**: não aplicável<br><br>- **Windows 8.1 e posterior**: não aplicável<br>- **Windows Phone 8,1 e posterior**: não aplicável |
-| **Perfil de e-mail** | - **Android 4,0 e posterior**: não aplicável<br>- **Samsung Knox Standard 4,0 e posterior**: não aplicável<br>- **Android Enterprise**: não aplicável<br><br>- **iOS 8,0 e posterior**: em quarentena<br>- **macOS 10,11 e posterior**: em quarentena<br><br>- **Windows 8.1 e posterior**: não aplicável<br>- **Windows Phone 8,1 e posterior**: não aplicável |
-| **Versão mínima do SO** | - **Android 4,0 e posterior**: em quarentena<br>- **Samsung Knox Standard 4,0 e posterior**: em quarentena<br>- **Android Enterprise**: em quarentena<br><br>- **iOS 8,0 e posterior**: em quarentena<br>- **macOS 10,11 e posterior**: em quarentena<br><br>- **Windows 8.1 e posterior**: em quarentena<br>- **Windows Phone 8,1 e posterior**: em quarentena |
-| **Versão máxima do SO** | - **Android 4,0 e posterior**: em quarentena<br>- **Samsung Knox Standard 4,0 e posterior**: em quarentena<br>- **Android Enterprise**: em quarentena<br><br>- **iOS 8,0 e posterior**: em quarentena<br>- **macOS 10,11 e posterior**: em quarentena<br><br>- **Windows 8.1 e posterior**: em quarentena<br>- **Windows Phone 8,1 e posterior**: em quarentena |
-| **Atestado do estado de funcionamento do Windows** | - **Android 4,0 e posterior**: não aplicável<br>- **Samsung Knox Standard 4,0 e posterior**: não aplicável<br>- **Android Enterprise**: não aplicável<br><br>- **iOS 8,0 e posterior**: não aplicável<br>- **macOS 10,11 e posterior**: não aplicável<br><br>- **Windows 10 e Windows 10 Mobile: em**quarentena<br>- **Windows 8.1 e posterior**: em quarentena<br>- **Windows Phone 8,1 e posterior**: não aplicável |
+| **Configuração do PIN ou da palavra-passe** | - **Android 4,0 e posterior: em**quarentena<br>- **Samsung Knox Standard 4,0 e posterior: em**quarentena<br>- **Android Enterprise**: em quarentena  <br>  <br>- **iOS 8,0 e posterior**: corrigido<br>- **macOS 10,11 e posterior**: corrigido  <br>  <br>- **Windows 8.1 e posterior**: corrigido<br>- **Windows Phone 8,1 e posterior**: corrigido|
+| **Encriptação do dispositivo** | - **Android 4,0 e posterior: em**quarentena<br>- **Samsung Knox Standard 4,0 e posterior: em**quarentena<br>- **Android Enterprise**: em quarentena<br><br>- **iOS 8,0 e posterior**: corrigido (ao definir o PIN)<br>- **macOS 10,11 e posterior**: corrigido (definindo o PIN)<br><br>- **Windows 8.1 e posterior**: não aplicável<br>- **Windows Phone 8,1 e posterior**: corrigido |
+| **Dispositivo desbloqueado por jailbreak ou obtenção de controlo de raiz** | - **Android 4,0 e posterior: em**quarentena (não é uma configuração)<br>- **Samsung Knox Standard 4,0 e posterior: em**quarentena (não é uma configuração)<br>- **Android Enterprise**: em quarentena (não é uma configuração)<br><br>- **iOS 8,0 e posterior: em**quarentena (não é uma configuração)<br>- **macOS 10,11 e posterior**: não aplicável<br><br>- **Windows 8.1 e posterior**: não aplicável<br>- **Windows Phone 8,1 e posterior**: não aplicável |
+| **Perfil de e-mail** | - **Android 4,0 e posterior**: não aplicável<br>- **Samsung Knox Standard 4,0 e posterior**: não aplicável<br>- **Android Enterprise**: não aplicável<br><br>- **iOS 8,0 e posterior: em**quarentena<br>- **macOS 10,11 e posterior: em**quarentena<br><br>- **Windows 8.1 e posterior**: não aplicável<br>- **Windows Phone 8,1 e posterior**: não aplicável |
+| **Versão mínima do SO** | - **Android 4,0 e posterior: em**quarentena<br>- **Samsung Knox Standard 4,0 e posterior: em**quarentena<br>- **Android Enterprise**: em quarentena<br><br>- **iOS 8,0 e posterior: em**quarentena<br>- **macOS 10,11 e posterior: em**quarentena<br><br>- **Windows 8.1 e posterior: em**quarentena<br>- **Windows Phone 8,1 e posterior: em**quarentena |
+| **Versão máxima do SO** | - **Android 4,0 e posterior: em**quarentena<br>- **Samsung Knox Standard 4,0 e posterior: em**quarentena<br>- **Android Enterprise**: em quarentena<br><br>- **iOS 8,0 e posterior: em**quarentena<br>- **macOS 10,11 e posterior: em**quarentena<br><br>- **Windows 8.1 e posterior: em**quarentena<br>- **Windows Phone 8,1 e posterior: em**quarentena |
+| **Atestado do estado de funcionamento do Windows** | - **Android 4,0 e posterior**: não aplicável<br>- **Samsung Knox Standard 4,0 e posterior**: não aplicável<br>- **Android Enterprise**: não aplicável<br><br>- **iOS 8,0 e posterior**: não aplicável<br>- **macOS 10,11 e posterior**: não aplicável<br><br>- **Windows 10 e Windows 10 Mobile**: em quarentena<br>- **Windows 8.1 e posterior: em**quarentena<br>- **Windows Phone 8,1 e posterior**: não aplicável |
 
 ---------------------------
 
@@ -130,21 +130,6 @@ Em **quarentena**: o sistema operacional do dispositivo não impõe conformidade
 
 - Se uma política de acesso condicional se aplicar ao usuário, o dispositivo será bloqueado.
 - A aplicação do Portal da Empresa notifica o utilizador sobre eventuais problemas de conformidade.
-
-## <a name="azure-classic-portal-vs-azure-portal"></a>Portal clássico do Azure versus portal do Azure
-
-A principal diferença ao utilizar políticas de conformidade de dispositivos no portal do Azure:
-
-- No portal do Azure, as políticas de conformidade são criadas em separado para cada plataforma suportada
-- No portal clássico do Azure, uma política de conformidade de dispositivos é comum a todas as plataformas suportadas
-
-<!--- - In the Azure portal, you have the ability to specify actions and notifications that are initiated when a device is determined to be noncompliant. This ability does not exist in the Intune admin console.
-
-- In the Azure portal, you can set a grace period to allow time for the end-user to get their device back to compliance status before they completely lose the ability to get company data on their device. This is not available in the Intune admin console.--->
-
-As políticas de conformidade de dispositivos criadas no [portal clássico do Azure](https://manage.microsoft.com) não aparecem no [portal do Azure](https://portal.azure.com). No entanto, continuam a ser direcionadas para os utilizadores e geríveis através do portal clássico.
-
-Para utilizar as funcionalidades relacionadas com a conformidade de dispositivos no portal do Azure, terá de criar novas políticas de conformidade de dispositivos no portal do Azure. Se atribuir uma política de conformidade de dispositivos no portal do Azure a um utilizador a quem também tenha sido atribuída uma política de conformidade de dispositivos do portal clássico, as políticas de conformidade de dispositivos do portal do Azure terão precedência sobre as políticas criadas no portal clássico.
 
 ## <a name="next-steps"></a>Próximos passos
 

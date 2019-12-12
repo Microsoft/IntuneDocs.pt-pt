@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: b94be3e1454c60f16ff40e73ce37f8c4e349126d
-ms.sourcegitcommit: 25acfc88b366d2da71c37d354a0238e4f1168325
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/23/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72813338"
 ---
 # <a name="user-lifetime-representation-in-the-microsoft-intune-data-warehouse"></a>Representação da duração do utilizador no Armazém de Dados do Microsoft Intune
@@ -39,14 +39,14 @@ Vamos assumir que é atribuída uma licença a um utilizador chamado **João Sil
  
 | Nome a Apresentar | IsDeleted | StartDateInclusiveUTC | EndDateExclusiveUTC | IsCurrent 
 | -- | -- | -- | -- | -- |
-| João Silva | FOR | 01/06/2017 | 31/12/9999 | TRUE
+| João Silva | FALSO | 01/06/2017 | 31/12/9999 | VERDADEIRO
  
 João Silva desiste da licença a 25/07/2017. A tabela **Utilizador** tem as seguintes entradas. As alterações nos registos existentes estão `marked`. 
 
 | Nome a Apresentar | IsDeleted | StartDateInclusiveUTC | EndDateExclusiveUTC | IsCurrent 
 | -- | -- | -- | -- | -- |
-| João Silva | FOR | 01/06/2017 | `07/26/2017` | `FALSE` 
-| João Silva | TRUE | 26/07/2017 | 31/12/9999 | TRUE 
+| João Silva | FALSO | 01/06/2017 | `07/26/2017` | `FALSE` 
+| João Silva | VERDADEIRO | 26/07/2017 | 31/12/9999 | VERDADEIRO 
 
 A primeira linha indica que João Silva existiu no Intune de 01/06/2017 a 25/07/2017. O segundo registo indica que o utilizador foi eliminado a 25/07/2017 e já não está presente no Intune.
 
@@ -54,9 +54,9 @@ Vamos assumir que é atribuída uma nova licença a João Silva a 31/08/2017. Ne
  
 | Nome a Apresentar | IsDeleted | StartDateInclusiveUTC | EndDateExclusiveUTC | IsCurrent 
 | -- | -- | -- | -- | -- |
-| João Silva | FOR | 01/06/2017 | 26/07/2017 | FOR 
-| João Silva | TRUE | 26/07/2017 | `08/31/2017` | `FALSE` 
-| João Silva | FOR | 31/08/2017 | 31/12/9999 | TRUE 
+| João Silva | FALSO | 01/06/2017 | 26/07/2017 | FALSO 
+| João Silva | VERDADEIRO | 26/07/2017 | `08/31/2017` | `FALSE` 
+| João Silva | FALSO | 31/08/2017 | 31/12/9999 | VERDADEIRO 
  
 Uma pessoa que pretenda ver o estado atual de todos os utilizadores deve aplicar um filtro em que `IsCurrent = TRUE`. 
  

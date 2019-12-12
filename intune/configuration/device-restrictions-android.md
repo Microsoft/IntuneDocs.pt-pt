@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: dfc791450eec9f17be68228bb291ca89fd7d88ce
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72506820"
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings-lists-in-intune"></a>Listas de configurações de restrição de dispositivo Android e Samsung Knox Standard no Intune
@@ -39,7 +39,7 @@ Este artigo mostra-lhe todas as definições de restrições de dispositivos do 
 - **Apagar (somente Samsung Knox)** : permite que o usuário execute uma ação de [apagamento](../remote-actions/devices-wipe.md) no dispositivo.
 - **Geolocalização (somente Samsung Knox)** : escolha **Bloquear** para desabilitar o uso de informações de localização pelo dispositivo. **Não configurado** permite que o dispositivo use as informações de local.
 - Desligar **(somente Samsung Knox)** : escolha **Bloquear** para impedir que o usuário desligue o dispositivo. Se essa configuração estiver desabilitada, o **número de falhas de entrada antes de apagar a** configuração do dispositivo não poderá ser definido e não funcionará. **Não configurado** permite que o usuário desligue o dispositivo.
-- **Captura de tela (somente Samsung Knox)** : escolha **Bloquear** para evitar capturas de telas. **Não configurado** permite que o usuário Capture o conteúdo da tela como uma imagem.
+- **Captura de tela (somente Samsung Knox)** : escolha **Bloquear** para evitar capturas de telas. **Não configurado** permite ao utilizador capturar o conteúdo do ecrã como uma imagem.
 - **Assistente de voz (somente Samsung Knox)** : escolha o **bloco** para desabilitar o serviço de voz S. **Não configurado** permite o uso do serviço de voz S e do aplicativo no dispositivo. Essa configuração não se aplica a Bixby ou ao assistente de voz para acessibilidade que lê o conteúdo da tela em voz alta.
 - **YouTube (somente Samsung Knox)** : escolha **Bloquear** para impedir que os usuários usem o aplicativo YouTube. **Não configurado** permite usar o aplicativo YouTube no dispositivo.
 - **Dispositivos compartilhados (somente Samsung Knox)** : Configure um dispositivo Samsung Knox Standard gerenciado como compartilhado. Quando definido como **permitir**, os usuários finais podem entrar e sair do dispositivo com suas credenciais do Azure AD. O dispositivo permanece gerenciado, independentemente de estar em uso ou não.</br>Quando usado em com um perfil de certificado SCEP, esse recurso permite que os usuários finais compartilhem um dispositivo com os mesmos aplicativos para todos os usuários. Mas, cada usuário tem seu próprio certificado de usuário SCEP. Quando os utilizadores terminam sessão, todos os dados das aplicações são limpos. Esta funcionalidade é limitada a aplicações LOB. </br>**Não configurado** impede que vários usuários finais entrem no aplicativo portal da empresa no dispositivo usando suas credenciais do Azure AD.
@@ -52,7 +52,7 @@ Este artigo mostra-lhe todas as definições de restrições de dispositivos do 
     > [!NOTE]
     > Os dispositivos Samsung Knox exigem automaticamente um PIN de 4 dígitos durante a inscrição na MDM. Dispositivos Android nativos podem exigir automaticamente um PIN para se tornarem compatíveis com o acesso condicional.
 
-- **Comprimento mínimo da senha**: Insira o comprimento mínimo da senha que um usuário deve inserir (entre 4 e 16 caracteres).
+- **Comprimento mínimo da palavra-passe**: introduza o comprimento mínimo da palavra-passe de um utilizador tem de introduzir (entre 4 e 16 carateres).
 - **Máximo de minutos de inatividade até a tela ser bloqueada**: Insira o número máximo de minutos de inatividade permitido no dispositivo até que a tela seja bloqueada. Num dispositivo, um utilizador final não pode definir um valor de tempo superior ao tempo configurado no perfil. Um utilizador final pode definir um valor de tempo inferior. Por exemplo, se o perfil estiver definido para 15 minutos, um utilizador final poderá definir o valor para 5 minutos. Um utilizador final não pode definir o valor para 30 minutos. 
 - **Número de falhas de entrada antes de apagar o dispositivo**: Insira o número de falhas de entrada a serem permitidas antes que o dispositivo seja apagado.
 - **Expiração da senha (dias)** : Insira o número de dias antes que a senha do dispositivo deva ser alterada.
@@ -106,7 +106,7 @@ Para adicionar o aplicativo a essas listas, você pode:
 - **Navegador da Web (somente Samsung Knox)** : escolha **Bloquear** para impedir que o navegador da Web padrão seja usado no dispositivo. **Não configurado** permite que o navegador da Web padrão do dispositivo seja usado.
 - **Preenchimento automático (somente Samsung Knox)** : escolha **Bloquear** para evitar o preenchimento automático do texto no navegador. **Não configurado** permite que a função de preenchimento automático do navegador da Web seja usada.
 - **Cookies (somente Samsung Knox)** : escolha como você deseja manipular cookies de sites no dispositivo. As opções são:
-  - Permitir
+  - Allow
   - Bloquear todos os cookies
   - Permitir cookies dos sites visitados
   - Permitir cookies do site atual
@@ -138,7 +138,7 @@ Para cada configuração, adicione uma lista de aplicativos. As opções são:
 
 ## <a name="cellular-and-connectivity"></a>Rede Móvel e Conectividade
 
-- **Roaming de dados (somente Samsung Knox)** : escolha **Bloquear** para impedir o roaming de dados na rede celular. **Não configurado** permite o roaming de dados quando o dispositivo está em uma rede de celular.
+- **Roaming de dados (somente Samsung Knox)** : escolha **Bloquear** para impedir o roaming de dados na rede celular. **Não configurado** permite dados em roaming quando o dispositivo estiver numa rede celular.
 - **Mensagens SMS/MMS (somente Samsung Knox)** : escolha **Bloquear** para impedir mensagens de texto no dispositivo. **Não configurado** permite o uso de mensagens SMS e MMS no dispositivo.
 - **Discagem por voz (somente Samsung Knox)** : escolha **Bloquear** para impedir que os usuários usem o recurso de discagem por voz no dispositivo. **Não configurado** permite a discagem por voz no dispositivo.
 - **Roaming de voz (somente Samsung Knox)** : escolha **Bloquear** para impedir o roaming de voz na rede celular. **Não configurado** permite o roaming de voz quando o dispositivo está em uma rede de celular.

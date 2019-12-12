@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/02/2019
+ms.date: 12/09/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 11cad62f0fd997610feba51a2d28dcfed5658806
-ms.sourcegitcommit: f26039d674eb4d61ab68264dd1a10b2e5e1d842c
+ms.openlocfilehash: 60a87340c1a275b8fb878ef2f3891cca23fc9c85
+ms.sourcegitcommit: f5108039f0ade52e95ea3ac1da1aa16d02224af3
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74691710"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "74946668"
 ---
 # <a name="windows-10-and-later-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Configurações do Windows 10 e posteriores para marcar dispositivos como em conformidade ou sem conformidade usando o Intune
 
@@ -199,7 +199,7 @@ Aplica-se somente a dispositivos cogerenciados que executam o Windows 10 e poste
 
 - **Antimalware do Microsoft defender**:  
   - **Não configurado** (*padrão*)-o Intune não controla o serviço nem altera as configurações existentes.
-  - **Exigir** -ativar o serviço antimalware do Microsoft defender e impedir que os usuários o desativem. 
+  - **Exigir** -ativar o serviço antimalware do Microsoft defender e impedir que os usuários o desativem.
 
 - **Versão mínima do Microsoft Defender Antimalware**:  
   Insira a versão mínima permitida do serviço antimalware do Microsoft defender. Por exemplo, introduza `4.11.0.0`. Quando deixado em branco, qualquer versão do serviço antimalware do Microsoft defender pode ser usada.  
@@ -207,10 +207,12 @@ Aplica-se somente a dispositivos cogerenciados que executam o Windows 10 e poste
   *Por padrão, nenhuma versão é configurada*.
 
 - **Inteligência de segurança antimalware do Microsoft defender atualizada**:  
-  Controla as atualizações de proteção contra ameaças e vírus de segurança do Windows nos dispositivos.  
+  Controla as atualizações de proteção contra ameaças e vírus de segurança do Windows nos dispositivos.
   - **Não configurado** (*padrão*)-o Intune não impõe nenhum requisito.
-  - **Exigir** -força a inteligência de segurança do Microsoft defender a ser atualizada. 
+  - **Exigir** -força a inteligência de segurança do Microsoft defender a ser atualizada.
 
+  [CSP do defender/Health/SignatureOutOfDate](https://docs.microsoft.com/windows/client-management/mdm/defender-csp)
+  
   Para obter mais informações, consulte [atualizações de inteligência de segurança para o Microsoft defender antivírus e outros antimalware da Microsoft](https://www.microsoft.com/en-us/wdsi/defenderupdates).
 
 - **Proteção em tempo real**:  

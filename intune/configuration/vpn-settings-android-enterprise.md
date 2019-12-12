@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d9f52d3a7c40f27555a07682adf86b0339cef616
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 647e8869caf24638f6809479274dbf7a7b967b9e
+ms.sourcegitcommit: f5108039f0ade52e95ea3ac1da1aa16d02224af3
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72491925"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "74946636"
 ---
 # <a name="android-enterprise-device-settings-to-configure-vpn-in-intune"></a>Configurações de dispositivo do Android Enterprise para configurar a VPN no Intune
 
@@ -32,11 +32,14 @@ Como administrador do Intune, você pode criar e atribuir configurações de VPN
 
 Para saber mais sobre perfis de VPN no Intune, confira [perfis de VPN](vpn-settings-configure.md).
 
+> [!NOTE]
+> Para configurar a VPN Always on, você precisa criar um perfil de VPN e também criar um perfil de [restrições de dispositivo](device-restrictions-android-for-work.md#connectivity) com a configuração de VPN AlwaysOn configurada.
+
 ## <a name="before-you-begin"></a>Antes de começar
 
 [Crie um perfil de configuração de dispositivo](vpn-settings-configure.md#create-a-device-profile)e escolha **Android Enterprise**.
 
-## <a name="device-owner-only"></a>Somente proprietário do dispositivo
+## <a name="device-owner-only"></a>Proprietário do dispositivo apenas
 
 - **Nome da ligação**: introduza um nome para esta ligação. Os utilizadores finais verão este nome quando procurarem no dispositivo as ligações VPN disponíveis. Por exemplo, introduza `Contoso VPN`.
 - **Endereço IP ou FQDN**: introduza o endereço IP ou nome de domínio completamente qualificado (FQDN) do servidor VPN ao qual os dispositivos são ligados. Por exemplo, introduza **192.168.1.1** ou **vpn.contoso.com**.

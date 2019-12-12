@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: b4661b151493eb68cc6f71a5a77bd023ac27b826
-ms.sourcegitcommit: 3ace4cba6e2f6fefa9120be3807387a49b200c9b
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/23/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72810217"
 ---
 # <a name="set-up-lookout-mobile-endpoint-security-integration-with-intune"></a>Configurar a integração de segurança de ponto de extremidade móvel com o Intune
@@ -34,7 +34,7 @@ Com um ambiente que atende aos [pré-requisitos](lookout-mobile-threat-defense-c
 ## <a name="collect-azure-ad-information"></a>Recolher informações do Azure AD  
 Para fazer a consulta integrada com o Intune, você associa seu locatário de segurança de ponto de extremidade de mobilidade de consulta à sua assinatura do Azure Active Directory (AD).
 
-Para habilitar a integração da sua consulta de assinatura do Endpoint Mobile Security com o Intune, você fornece as seguintes informações para dar suporte à consulta (enterprisesupport@lookout.com):  
+Para habilitar a integração da sua consulta de assinatura do Endpoint Mobile Security com o Intune, você fornece as seguintes informações para o suporte à consulta (enterprisesupport@lookout.com):  
 
 - **ID do diretório de locatário do Azure AD**  
 
@@ -51,12 +51,12 @@ Para habilitar a integração da sua consulta de assinatura do Endpoint Mobile S
 
 1. Entre no [portal do Azure](https://portal.azure.com) com uma conta de administrador global.
 
-2. Vá para **Azure Active Directory** **Propriedades**  >  e localize a **ID do diretório**. Use o botão *copiar* para copiar a ID do diretório e, em seguida, salve-a em um arquivo de texto.
+2. Vá para **Azure Active Directory** **Propriedades** de > e localize sua **ID de diretório**. Use o botão *copiar* para copiar a ID do diretório e, em seguida, salve-a em um arquivo de texto.
 
    ![Propriedades do Azure AD](./media/lookout-mtd-connector-integration/azure-ad-properties.png)  
 
 3. Em seguida, localize a ID do grupo do Azure AD para as contas que você usa para conceder aos usuários do Azure AD acesso ao console de consulta. Um grupo é para *acesso completo*e o segundo grupo, para *acesso restrito* , é opcional. Para obter a *ID de objeto*, para cada conta:  
-   1. Vá para **Azure Active Directory** > **grupos** para abrir o painel *grupos – todos os grupos* .  
+   1. Vá para **Azure Active Directory** **grupos** de > para abrir o painel *grupos – todos os grupos* .  
 
    2. Selecione o grupo criado para *acesso completo* para abrir seu painel *visão geral* .  
 
@@ -66,7 +66,7 @@ Para habilitar a integração da sua consulta de assinatura do Endpoint Mobile S
 
       ![ID do objeto do grupo do Azure AD](./media/lookout-mtd-connector-integration/azure-ad-group-id.png)  
 
-   Depois de reunir essas informações, entre em contato com o suporte à consulta (email: enterprisesupport@lookout.com). O suporte à consulta funcionará com seu contato principal para integrar sua assinatura e criar sua conta corporativa de consulta, usando as informações fornecidas.  
+   Depois de coletar essas informações, entre em contato com o suporte à consulta (email: enterprisesupport@lookout.com). O suporte à consulta funcionará com seu contato principal para integrar sua assinatura e criar sua conta corporativa de consulta, usando as informações fornecidas.  
 
 ## <a name="configure-your-lookout-subscription"></a>Configurar sua assinatura de consulta  
 
@@ -87,7 +87,7 @@ Depois que a entrada inicial e o consentimento forem concluídos, os usuários q
 ### <a name="configure-the-intune-connector"></a>Configurar o conector do Intune  
 O procedimento a seguir pressupõe que você criou anteriormente um grupo de usuários no Azure AD para testar sua implantação de consulta. A prática recomendada é começar com um pequeno grupo de usuários para permitir que seus administradores de consulta e do Intune se familiarizem com as integrações do produto. Depois que eles estiverem familiarizados, você poderá estender o registro para grupos de usuários adicionais.
 
-1. Entre no console do [mes](https://aad.lookout.com) de consulta e vá para**conectores**do **sistema** >  e, em seguida, selecione **Adicionar conector**.  Selecione **Intune**.
+1. Entre no console do [mes](https://aad.lookout.com) de consulta e vá para **System** > **Connectors**e, em seguida, selecione **Adicionar conector**.  Selecione **Intune**.
 
    ![Imagem do console da consulta com a opção do Intune na guia conectores](./media/lookout-mtd-connector-integration/lookout_mtp_setup-intune-connector.png)
 
@@ -95,7 +95,7 @@ O procedimento a seguir pressupõe que você criou anteriormente um grupo de usu
 
    ![Imagem da guia Configurações de conexão com frequência de pulsação configurada](./media/lookout-mtd-connector-integration/lookout-mtp-connection-settings.png)
 
-3. Selecione **Gerenciamento de registro**e, para **usar os seguintes grupos de segurança do Azure ad para identificar os dispositivos que devem ser registrados no Lookout for Work**, especifique o *nome do grupo* de um grupo do Azure ad a ser usado com a consulta e, em seguida, selecione **salvar alterações**.
+3. Selecione **Gerenciamento de registro**e, **para usar os seguintes grupos de segurança do Azure ad para identificar os dispositivos que devem ser registrados no Lookout for Work**, especifique o *nome do grupo* de um grupo do Azure ad a ser usado com a consulta e, em seguida, selecione **salvar alterações**.
 
     ![captura de ecrã da página de inscrição do conector do Intune](./media/lookout-mtd-connector-integration/lookout-mtp-enrollment.png)  
 
@@ -119,7 +119,7 @@ Depois de configurar a consulta MES, você deve configurar uma conexão para a c
 A seguir estão as configurações adicionais que podem ser definidas no console do MES de consulta.  
 
 ### <a name="configure-enrollment-settings"></a>Definir configurações de registro
-No console do MES de consulta, selecione **sistema** > **gerenciar** **configurações de registro** > .  
+No console do MES de consulta, selecione **System** > **gerenciar o registro** > configurações de **registro**.  
 
 - Para **status desconectado**, especifique o número de dias antes que um dispositivo não conectado seja marcado como desconectado.  
 

@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 5c24c120b033a4db0162e985ef185932dd931eda
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72506917"
 ---
 # <a name="use-custom-settings-for-macos-devices-in-microsoft-intune"></a>Utilizar definições personalizadas para dispositivos macOS no Microsoft Intune
@@ -59,7 +59,7 @@ Este artigo fornece algumas diretrizes sobre como usar o Apple Configurator e o 
 - **Nome do perfil de configuração personalizado**: introduza um nome para o perfil. Este nome é apresentado no dispositivo e no estado do Intune.
 - **Ficheiro de perfil de configuração**: navegue até ao perfil de configuração que criou com o Apple Configurator ou o Gestor de Perfis da Apple. O ficheiro que importou é apresentado na área **Conteúdos do ficheiro**.
 
-  Você também pode adicionar tokens de dispositivo aos arquivos `.mobileconfig`. Os tokens de dispositivo são usados para adicionar informações específicas do dispositivo. Por exemplo, para mostrar o número de série, digite `{{serialnumber}}`. No dispositivo, o texto é exibido de forma semelhante a `123456789ABC`, que é exclusivo para cada dispositivo. Ao inserir variáveis, certifique-se de usar chaves `{{ }}`. Os [tokens de configuração de aplicativo](../apps/app-configuration-policies-use-ios.md#tokens-used-in-the-property-list) incluem uma lista de variáveis que podem ser usadas. Você também pode usar `deviceid` ou qualquer outro valor específico do dispositivo.
+  Você também pode adicionar tokens de dispositivo aos seus arquivos de `.mobileconfig`. Os tokens de dispositivo são usados para adicionar informações específicas do dispositivo. Por exemplo, para mostrar o número de série, digite `{{serialnumber}}`. No dispositivo, o texto é exibido de forma semelhante a `123456789ABC`, que é exclusivo para cada dispositivo. Ao inserir variáveis, certifique-se de usar chaves `{{ }}`. Os [tokens de configuração de aplicativo](../apps/app-configuration-policies-use-ios.md#tokens-used-in-the-property-list) incluem uma lista de variáveis que podem ser usadas. Você também pode usar `deviceid` ou qualquer outro valor específico do dispositivo.
 
   > [!NOTE]
   > As variáveis não são validadas na interface do usuário e diferenciam maiúsculas de minúsculas. Como resultado, você poderá ver os perfis salvos com entrada incorreta. Por exemplo, se você inserir `{{DeviceID}}` em vez de `{{deviceid}}`, a cadeia de caracteres literal será mostrada em vez da ID exclusiva do dispositivo. Certifique-se de inserir as informações corretas.

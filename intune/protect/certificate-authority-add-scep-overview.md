@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 9454353ec4f8291d4d8c0001cc977838ecec787b
-ms.sourcegitcommit: 16a9109b4028589c17695d41271ca4fee8b1d697
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/26/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74540806"
 ---
 # <a name="add-partner-certification-authority-in-intune-using-scep"></a>Adicionar autoridades de certificação parceiras no Intune com o SCEP
@@ -72,7 +72,7 @@ Para permitir que um servidor do SCEP de terceiros execute a validação do desa
 
 Certifique-se de que tem as permissões obrigatórias para registar uma aplicação do Azure AD. Consulte [as permissões necessárias](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-create-service-principal-portal#required-permissions), na documentação do Azure AD.
 
-#### <a name="create-an-application-in-azure-active-directory"></a>Criar um aplicativo no Azure Active Directory  
+#### <a name="create-an-application-in-azure-active-directory"></a>Criar uma Aplicação no Azure Active Directory  
 
 1. Na [portal do Azure](https://portal.azure.com), acesse **Azure Active Directory** > **registros de aplicativo**e, em seguida, selecione **novo registro**.  
 

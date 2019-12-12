@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/04/2019
+ms.date: 12/09/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7d9c385ff8c08f9f1df00a081bca1f61a2a5015a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 904c3d2267decdfa3929bf29376c05a995c77eb8
+ms.sourcegitcommit: f5108039f0ade52e95ea3ac1da1aa16d02224af3
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74832558"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "74946663"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Definições de dispositivos do Android Enterprise para permitir ou restringir funcionalidades com o Intune
 
@@ -231,7 +231,7 @@ Use essas configurações para configurar uma experiência em estilo de quiosque
   Selecione **Não configurado** para desativar a VPN sempre ativada para todos os clientes VPN.
 
   > [!IMPORTANT]
-  > Certifique-se de que implementa apenas uma política de VPN Sempre Ativada num único dispositivo. Não é suportado implementar várias políticas de VPN Sempre Ativada num único dispositivo.
+  > Certifique-se de implantar apenas uma política de VPN AlwaysOn em um único dispositivo. Não há suporte para a implantação de várias políticas de VPN AlwaysOn em um único dispositivo.
 
 - **Cliente VPN**: selecione um cliente VPN que suporte a funcionalidade Always On. As opções são:
   - Cisco AnyConnect
@@ -244,6 +244,7 @@ Use essas configurações para configurar uma experiência em estilo de quiosque
   > [!IMPORTANT]
   > - O cliente VPN que escolher tem de estar instalado no dispositivo e deve suportar a VPN por aplicação em perfis de trabalho. Caso contrário, será apresentado um erro. 
   > - Tem de aprovar a aplicação cliente VPN na **Managed Google Play Store**, sincronizar a aplicação com o Intune e implementar a aplicação no dispositivo. Depois de o fazer, a aplicação é instalada no perfil de trabalho do utilizador.
+  > - Você ainda precisa configurar o cliente VPN com um [perfil VPN](vpn-settings-android-enterprise.md)ou por meio de um [perfil de configuração de aplicativo](../apps/app-configuration-policies-use-android.md).
   > - Aqui pode ser problemas conhecidos ao utilizar a VPN por aplicação com acesso de F5 para Android 3.0.4. Ver [notas de versão da F5 para acesso de F5 para Android 3.0.4](https://support.f5.com/kb/en-us/products/big-ip_apm/releasenotes/related/relnote-f5access-android-3-0-4.html#relnotes_known_issues_f5_access_android) para obter mais informações.
 
 - **Modo de bloqueio**: escolha **habilitar** para forçar todo o tráfego de rede a usar o túnel VPN. Se não for estabelecida uma ligação à VPN, o dispositivo não terá acesso à rede.

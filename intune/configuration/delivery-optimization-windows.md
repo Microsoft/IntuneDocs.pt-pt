@@ -16,10 +16,10 @@ ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: kerimh
 ms.openlocfilehash: 44078f61e4f1939b1f0b15b3dde5ac54938ffbc3
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/13/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74059968"
 ---
 # <a name="delivery-optimization-settings-in-microsoft-intune"></a>Configurações de otimização de entrega no Microsoft Intune
@@ -83,7 +83,7 @@ Configurações de **otimização de entrega** substituir **atualizações de so
     1. No centro de administração do Microsoft Endpoint Manager, acesse **atualizações de Software** > anéis de atualização do Windows 10.
     2. Na lista, selecione o anel de atualização.
     3. Nas configurações, defina o **modo de download de otimização de entrega** como **não configurado**.
-    4. **OK** > **salve** suas alterações.
+    4. **OK** > **salvar** suas alterações.
 
 ## <a name="next-steps"></a>Próximos passos
 

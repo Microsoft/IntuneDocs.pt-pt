@@ -14,10 +14,10 @@ ms.technology: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 0f9750603d19d9b19697c7d2660351c4586432f6
-ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/13/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73984184"
 ---
 # <a name="add-ios-software-update-policies-in-intune"></a>Adicionar políticas de atualização de software do iOS no Intune
@@ -82,7 +82,7 @@ Você pode editar uma política existente, incluindo a alteração dos horários
 2. Ao exibir as **Propriedades**de políticas, selecione **Editar** para a página de política que você deseja modificar.  
    ![editar uma](./media/software-updates-ios/edit-policy.png) de vigilância   
 
-3. Depois de introduzir uma alteração, selecione **revisar + salvar**  > **salvar** para salvar as edições e retornar às *Propriedades*das políticas.  
+3. Depois de introduzir uma alteração, selecione **revisar + salvar** > **salvar** para salvar as edições e retornar às *Propriedades*das políticas.  
  
 > [!NOTE]
 > Se a **hora de início** e a **hora de término** estiverem definidas como 12 am, o Intune não verificará se há restrições de quando instalar atualizações. Isso significa que as configurações que você tem para **selecionar os horários para evitar que as instalações de atualização** sejam ignoradas e as atualizações podem ser instaladas a qualquer momento.  

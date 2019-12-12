@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 170ed2fbf300299796401b10a906d875b6f50bf5
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72490453"
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Ponto final da API do Armazém de Dados do Intune
@@ -64,7 +64,7 @@ Pode experimentar as nossas funcionalidades mais recentes do Armazém de Dados c
 
 ## <a name="odata-query-options"></a>Opções de consulta de OData
 
-A versão atual dá suporte aos seguintes parâmetros de consulta OData: `$filter`, `$select`, `$skip,` e `$top`. No `$filter`, somente `DateKey` ou `RowLastModifiedDateTimeUTC` podem ter suporte quando as colunas são aplicáveis e outras propriedades disparam uma solicitação inválida.
+A versão atual dá suporte aos seguintes parâmetros de consulta OData: `$filter`, `$select`, `$skip,` e `$top`. Em `$filter`, somente `DateKey` ou `RowLastModifiedDateTimeUTC` podem ter suporte quando as colunas são aplicáveis e outras propriedades disparam uma solicitação inválida.
 
 ## <a name="datekey-range-filters"></a>Filtros de Intervalo DateKey
 
@@ -80,8 +80,8 @@ Os filtros de intervalo `DateKey` podem ser utilizados para limitar a quantidade
 
 |                             Filtro                             |           Otimização do Desempenho           |                                          Description                                          |
 |:--------------------------------------------------------------:|:--------------------------------------------:|:---------------------------------------------------------------------------------------------:|
-|    `maxhistorydays=7`                                            |    Completo                                      |    Devolver dados com um `DateKey` entre 20180214 e 20180221.                                     |
-|    `$filter=DateKey eq 20180214`                                 |    Completo                                      |    Devolver dados com um `DateKey` igual a 20180214.                                                    |
-|    `$filter=DateKey ge 20180214 and DateKey lt 20180221`         |    Completo                                      |    Devolver dados com um `DateKey` entre 20180214 e 20180220.                                     |
-|    `maxhistorydays=7&$filter=DateKey eq 20180214`                |    Completo                                      |    Devolver dados com um `DateKey` igual a 20180214. `maxhistorydays` é ignorado.                            |
-|    `$filter=RowLastModifiedDateTimeUTC ge 2018-02-21T23:18:51.3277273Z`                                |    Completo                                       |    Retornar dados com `RowLastModifiedDateTimeUTC` é maior ou igual a `2018-02-21T23:18:51.3277273Z`                             |
+|    `maxhistorydays=7`                                            |    Completa                                      |    Devolver dados com um `DateKey` entre 20180214 e 20180221.                                     |
+|    `$filter=DateKey eq 20180214`                                 |    Completa                                      |    Devolver dados com um `DateKey` igual a 20180214.                                                    |
+|    `$filter=DateKey ge 20180214 and DateKey lt 20180221`         |    Completa                                      |    Devolver dados com um `DateKey` entre 20180214 e 20180220.                                     |
+|    `maxhistorydays=7&$filter=DateKey eq 20180214`                |    Completa                                      |    Devolver dados com um `DateKey` igual a 20180214. `maxhistorydays` é ignorado.                            |
+|    `$filter=RowLastModifiedDateTimeUTC ge 2018-02-21T23:18:51.3277273Z`                                |    Completa                                       |    Retornar dados com `RowLastModifiedDateTimeUTC` é maior ou igual a `2018-02-21T23:18:51.3277273Z`                             |

@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: c31dd652022ae0d394ab2229a0c25b362ad8574d
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/27/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74563593"
 ---
 # <a name="add-microsoft-edge-to-macos-devices-using-microsoft-intune"></a>Adicionar o Microsoft Edge a dispositivos macOS usando o Microsoft Intune
@@ -61,7 +61,7 @@ Nesta etapa, você fornece informações sobre essa implantação de aplicativo.
     - **Notas**: opcionalmente, introduza quaisquer notas que queira associar a esta aplicação.
 3. Selecione **OK**.
 
-## <a name="configure-microsoft-edge-settings"></a>Definir configurações do Microsoft Edge
+## <a name="configure-microsoft-edge-settings"></a>Configurar definições do Microsoft Edge
 Nesta etapa, configure as opções de instalação para o aplicativo.
 
 1. No painel **Adicionar aplicativo** , selecione **configurações do aplicativo**.

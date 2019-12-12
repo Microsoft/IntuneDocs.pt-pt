@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 3d8aadbd876ea03da0f16acea82b71ebd85cf9be
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73712245"
 ---
 # <a name="find-the-primary-user-of-an-intune-device"></a>Localizar o usuário primário de um dispositivo do Intune
@@ -62,11 +62,11 @@ O Intune adiciona automaticamente o usuário primário aos dispositivos durante 
 | Windows | Ingresso no Azure AD (autoteste de experiência inicial do box) | Registrando usuário | Durante o registro | 
 | Windows | Registrar somente no MDM | Registrando usuário | Durante o registro | 
 | Windows | AADJ híbrido + GPO de registro automático | Primeiro usuário a entrar no Windows | Quando o primeiro usuário entra no Windows| 
-| Windows | Cogerenciamento | Primeiro usuário a entrar no Windows | Quando o primeiro usuário entra no Windows | 
+| Windows | Cogestão | Primeiro usuário a entrar no Windows | Quando o primeiro usuário entra no Windows | 
 | Windows | Ingresso no Azure AD (token de registro em massa) | Nenhum | Not applicable | 
 | Windows | Ingresso no Azure AD (modo de autoimplantação do autoteste) | Nenhum | Not applicable | 
-| Plataforma cruzada | Registro controlado pelo usuário com o aplicativo Portal da Empresa | Registrando usuário | Durante o registro |
-| Plataforma cruzada | Gerenciador de registro de dispositivo (DEM) | Registrando usuário do DEM | Durante o registro |
+| Multiplataformas | Registro controlado pelo usuário com o aplicativo Portal da Empresa | Registrando usuário | Durante o registro |
+| Multiplataformas | Gerenciador de registro de dispositivo (DEM) | Registrando usuário do DEM | Durante o registro |
 | iOS, macOS | Registro de dispositivo automatizado da Apple (DEP com afinidade de usuário | Registrando usuário | Durante o registro |
 | iOS, macOS | Registro de dispositivo automatizado da Apple (DEP sem afinidade de usuário) | Nenhum | Not applicable |
 | Android | Dispositivos Android de propriedade corporativa, dedicados | Nenhum | Not applicable |

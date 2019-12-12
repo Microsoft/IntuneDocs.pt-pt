@@ -16,10 +16,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 044b35b34a9a5b01537e82dcfddca74a284ebdcc
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72491005"
 ---
 # <a name="add-vpn-settings-on-macos-devices-in-microsoft-intune"></a>Adicionar configurações de VPN em dispositivos macOS no Microsoft Intune
@@ -32,7 +32,7 @@ Consoante as definições que escolher, nem todos os valores na lista seguinte s
 
 ## <a name="before-you-begin"></a>Antes de começar
 
-[Criar um perfil de configuração de dispositivo](vpn-settings-configure.md).
+[Criar um perfil de configuração do dispositivo](vpn-settings-configure.md).
 
 > [!NOTE]
 > Essas configurações estão disponíveis para todos os tipos de registro. Para obter mais informações sobre os tipos de registro, consulte [registro do MacOS](../enrollment/macos-enroll.md).

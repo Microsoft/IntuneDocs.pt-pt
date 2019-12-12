@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: f31e500b7a3383c5c0c53f1df72cb4a42660328f
-ms.sourcegitcommit: 1a22b8b31424847d3c86590f00f56c5bc3de2eb5
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74284146"
 ---
 
@@ -39,7 +39,7 @@ ms.locfileid: "74284146"
 > [!NOTE]
 > Nem todas as edições do Windows oferecem suporte a todos os recursos de sistema operacional disponíveis configurados por meio do MDM. Consulte os [documentos de referência do provedor de serviços de configuração do Windows](https://docs.microsoft.com/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers). Cada CSP realça quais edições do Windows têm suporte.
 
-Os clientes com o EMS (Enterprise Management + Security) também podem usar [Azure Active Directory (Azure AD) para registrar dispositivos Windows 10](/intune/windows-enroll).
+Os clientes com Enterprise Management + Security (EMS) também podem utilizar [do Azure Active Directory (Azure AD) para registar dispositivos Windows 10](/intune/windows-enroll).
 
 Para obter diretrizes sobre como usar máquinas virtuais do Windows 10 com o Intune, consulte [usando máquinas virtuais do Windows 10](../fundamentals/windows-10-virtual-machines.md).
 

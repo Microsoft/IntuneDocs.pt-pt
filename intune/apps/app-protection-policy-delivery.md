@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 7460d5ccf046b25510d798c3a7ed4aa9ecd87a8a
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72499176"
 ---
 # <a name="understand-app-protection-policy-delivery-timing"></a>Entender o tempo de entrega da política de proteção do aplicativo
@@ -33,7 +33,7 @@ Conheça as diferentes janelas de implantação para as políticas de proteção
 
 A entrega de política de proteção de aplicativo depende do estado da licença e do registro do serviço do Intune para seus usuários.  
 
-|    Estado do usuário    |    Comportamento de proteção do aplicativo     |    Intervalo de repetição (consulte a observação)    |    Por que isso acontece?    |
+|    Estado de Utilizador    |    Comportamento de proteção do aplicativo     |    Intervalo de repetição (consulte a observação)    |    Por que isso acontece?    |
 |-----------------------------------------------------|-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
 |    Locatário não integrado    |    Aguarde o próximo intervalo de repetição.  A proteção do aplicativo não está ativa para o usuário.    |    24 horas    |    Ocorre quando você não configura seu locatário para o Intune.    |
 |    Usuário não licenciado     |    Aguarde o próximo intervalo de repetição.  A proteção do aplicativo não está ativa para o usuário.     |    12 horas-no entanto, em dispositivos Android, esse intervalo requer o SDK de aplicativo do Intune versão 5.6.0 ou posterior. Caso contrário, para dispositivos Andriod, o intervalo é de 24 horas.   |    Ocorre quando você não licencia o usuário para o Intune.    |

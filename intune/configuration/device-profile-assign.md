@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/20/2019
+ms.date: 12/05/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 275b3961e87f0d0eda8299337fe3fb7ac89ef03b
-ms.sourcegitcommit: 1a22b8b31424847d3c86590f00f56c5bc3de2eb5
+ms.openlocfilehash: 651b02dc276ca2aa2003955e6aa7b0dfa6724a40
+ms.sourcegitcommit: 66e284fe092e19c1da72b4b770e45bf25ac7910c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74261697"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74860320"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>Atribuir perfis de utilizador e dispositivo no Microsoft Intune
 
@@ -61,7 +61,7 @@ Se o botão **Avaliar** ficar cinzento, verifique se o perfil foi atribuído a u
 
 Ao criar ou atualizar um perfil, você também pode adicionar marcas de escopo e regras de aplicabilidade ao perfil.
 
-As **marcas de escopo** são uma ótima maneira de atribuir e filtrar perfis a grupos específicos, como recursos humanos ou todos os funcionários de US-NC. Para obter mais informações, veja [Utilizar o RBAC e etiquetas de âmbito para TI distribuídas](../fundamentals/scope-tags.md).
+**Marcas de escopo** são uma ótima maneira de filtrar perfis para grupos específicos, como `US-NC IT Team` ou `JohnGlenn_ITDepartment`. Para obter mais informações, veja [Utilizar o RBAC e etiquetas de âmbito para TI distribuídas](../fundamentals/scope-tags.md).
 
 Em dispositivos Windows 10, você pode adicionar **regras de aplicabilidade** para que o perfil se aplique somente a uma versão específica do sistema operacional ou a uma edição específica do Windows. [As regras de aplicabilidade](device-profile-create.md#applicability-rules) têm mais informações.
 
@@ -69,7 +69,7 @@ Em dispositivos Windows 10, você pode adicionar **regras de aplicabilidade** pa
 
 Muitos usuários perguntam quando usar grupos de usuários e quando usar grupos de dispositivos. A resposta depende de sua meta. Aqui estão algumas diretrizes para você começar.
 
-### <a name="device-groups"></a>Device groups
+### <a name="device-groups"></a>Grupos de dispositivos
 
 Se você quiser aplicar as configurações em um dispositivo, independentemente de quem está conectado, atribua seus perfis a um grupo de dispositivos. As configurações aplicadas aos grupos de dispositivos sempre vão com o dispositivo, e não para o usuário.
 
@@ -83,7 +83,7 @@ Por exemplo:
 
 Para resumir, use grupos de dispositivos quando você não se importa com quem está conectado no dispositivo ou se alguém está conectado. Você deseja que suas configurações estejam sempre no dispositivo.
 
-### <a name="user-groups"></a>Grupos de utilizadores
+### <a name="user-groups"></a>Grupos de utilizadores:
 
 As configurações de perfil aplicadas a grupos de usuários sempre vão com o usuário e vão para o usuário quando entrar em seus vários dispositivos. É normal que os usuários tenham muitos dispositivos, como uma superfície Pro for Work e um dispositivo iOS pessoal. E é normal que uma pessoa acesse email e outros recursos da organização desses dispositivos.
 
@@ -122,6 +122,6 @@ Ao atribuir seus perfis, use a tabela a seguir ao incluir e excluir grupos. Uma 
 
   Como resultado, não é recomendável atribuir perfis a grupos mistos.
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Veja [monitorizar perfis de dispositivos](device-profile-monitor.md) para obter orientações sobre como monitorizar os perfis e os dispositivos que executam os seus perfis.

@@ -15,10 +15,10 @@ ms.technology: ''
 ms.assetid:
 - GET ONE FROM guidgenerator.com
 ms.openlocfilehash: 0a5e90c6bc6b352f4d7a0fc0ae22c65110563461
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 07/19/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "68354401"
 ---
 # <a name="metadata-and-markdown-template"></a>Modelo de Metadados e de Markdown
@@ -34,11 +34,11 @@ O bloco de metadados completo está acima, dividido em campos obrigatórios e op
 
 - **Tem** de existir um espaço entre os dois pontos (:) e o valor do elemento de metadados.
 - Se o elemento de metadados opcional não tiver um valor, comente o elemento com um # (não o deixe em branco nem utilize o “ND”); se adicionar um valor a um elemento que foi comentado, certifique-se de que remove o #.
-- Os dois pontos num valor (por exemplo, um título) quebram o parser de metadados. Em seu lugar, use a codificação HTML de &#58; (por exemplo, "title: O Azure&#58; Rights Management noções básicas | Azure RMS ").
-- **título**: Esse título aparecerá nos resultados do mecanismo de pesquisa. O título deve terminar com uma barra vertical (|), seguido do nome do serviço (veja o exemplo acima). O título não precisa (e provavelmente não deve) de ser idêntico ao título do cabeçalho H1. Deve ter cerca de 65 carateres (incluindo | NOME DO SERVIÇO)
-- **author**, **manager**, **reviewer**: O campo autor deve conter o **nome de usuário do GitHub** do autor, não seu alias.  Os campos “gestor” e “revisor”, por outro lado, devem conter aliases. ms.reviewer especifica o nome do PM associado ao serviço ou ao artigo.
-- **ms.assetid**: Este é o GUID do artigo de CAPS. Ao criar um novo arquivo de redução, obtenha um GUID [https://www.guidgenerator.com](https://www.guidgenerator.com)de. 
-- **ms.prod**, **ms.service**, **ms.technology**, **ms.devlang**, **ms.topic**, **ms.tgt_pltfrm**: Os valores possíveis para esses elementos podem ser encontrados [aqui](https://microsoft.sharepoint.com/teams/STBCSI/Insights/_layouts/15/WopiFrame.aspx?sourcedoc=%7b7A321BF1-0611-4184-84DA-A0E964C435FA%7d&file=WEDCS_MasterList_CSIValues.xlsx&action=default).
+- Os dois pontos num valor (por exemplo, um título) quebram o parser de metadados. Em vez disso, utilize a codificação HTML de &#58; (por exemplo, “título: Azure Rights Management&#58; noções básicas | Azure RMS”).
+- **título**: este título será apresentado nos resultados do motor de busca. O título deve terminar com uma barra vertical (|), seguido do nome do serviço (veja o exemplo acima). O título não precisa (e provavelmente não deve) de ser idêntico ao título do cabeçalho H1. Deve ter cerca de 65 carateres (incluindo | NOME DO SERVIÇO)
+- **autor**, **gestor**, **revisor**: o campo autor deve conter o **nome de utilizador do Github** do autor, não o alias.  Os campos “gestor” e “revisor”, por outro lado, devem conter aliases. ms.reviewer especifica o nome do PM associado ao serviço ou ao artigo.
+- **ms.assetid**: este é o GUID do artigo a partir de CAPS. Ao criar um novo arquivo de redução, obtenha um GUID de [https://www.guidgenerator.com](https://www.guidgenerator.com). 
+- **ms.prod**, **ms.service**, **ms.technology**, **ms.devlang**, **ms.topic**, **ms.tgt_pltfrm**: os possíveis valores para estes elementos podem ser encontrados [aqui](https://microsoft.sharepoint.com/teams/STBCSI/Insights/_layouts/15/WopiFrame.aspx?sourcedoc=%7b7A321BF1-0611-4184-84DA-A0E964C435FA%7d&file=WEDCS_MasterList_CSIValues.xlsx&action=default).
 
 ## <a name="basic-markdown-and-gfm"></a>Markdown Básico e GFM
 
@@ -78,7 +78,7 @@ Para ligar a um ficheiro de markdown no mesmo repositório, utilize [ligações 
 
 Para ligar a um cabeçalho no mesmo ficheiro de markdown, veja a origem do artigo publicado, localize o id do cabeçalho (por exemplo, `id="blockquote"` e ligue através de # + id (por exemplo, `#blockquote`).
 
-- Exemplo: [Blockquotes](#blockquote)
+- Exemplo: [Trechos em bloco](#blockquote)
 
 Para ligar a um cabeçalho num ficheiro de markdown no mesmo repositório, utilize ligações relativas + ligações de hashtag.
 
@@ -92,7 +92,7 @@ Se aparecer um URL num ficheiro de markdown, será transformado numa ligação c
 
 - Exemplo: http://www.github.com
 
-## <a name="lists"></a>Apresenta uma lista
+## <a name="lists"></a>Listas
 
 ### <a name="ordered-lists"></a>Listas ordenadas
 
@@ -112,7 +112,7 @@ Se aparecer um URL num ficheiro de markdown, será transformado numa ligação c
     1. Menina Isabel
     1. Professor Brandão
 1. ordenada
-1. incorporada
+1. com marcas
 
 
 ### <a name="unordered-lists"></a>Listas não ordenadas
@@ -128,7 +128,7 @@ Se aparecer um URL num ficheiro de markdown, será transformado numa ligação c
 
 - Esta 
 - lista 
-- list
+- com marcas
   - Sra. Corte-Real
   - Dr. Pacheco
 - contém  
@@ -183,7 +183,7 @@ Este é um exemplo de `in-line code`.
 
 ![gif animado](./media/hololens.gif)
 
-## <a name="alerts"></a>Alertas
+## <a name="alerts"></a>Alerts
 
 ### <a name="note"></a>Nota
 
@@ -227,7 +227,7 @@ Este é um exemplo de `in-line code`.
 
 > [!div class="op_single_selector"]
 - [foo](/rights-management/template.md)
-- [bar](/rights-management/scratch.md)
+- [barra](/rights-management/scratch.md)
 
 ### <a name="step-by-step"></a>Passo-a-Passo
 

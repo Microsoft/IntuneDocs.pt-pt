@@ -20,10 +20,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: e468042ab81d563c9fa4b272661508a340d61aa9
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72506242"
 ---
 # <a name="set-up-ios-device-access-to-your-company-resources"></a>Configurar o acesso do dispositivo iOS aos recursos da empresa  
@@ -95,7 +95,7 @@ A pausa por mais de alguns minutos durante o registro pode fazer com que o aplic
 
 8. Vá para o aplicativo Configurações e toque em **perfil baixado**.  
 
-    Se o **perfil baixado** não aparecer como uma opção, vá para**perfis** **gerais**de  > . Se você ainda não vir o perfil, talvez seja necessário baixá-lo novamente.  
+    Se o **perfil baixado** não aparecer como uma opção, acesse **perfis**de > **gerais** . Se você ainda não vir o perfil, talvez seja necessário baixá-lo novamente.  
 
     ![Captura de tela de exemplo do aplicativo de configurações, configuração de perfil baixado.](./media/ios-1904-settings-badge.PNG)  
 

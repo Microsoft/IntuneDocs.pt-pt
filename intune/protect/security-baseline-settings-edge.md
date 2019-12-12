@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: c75029c60609b0383e2f647e5b94144d4186248c
-ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73754875"
 ---
 # <a name="microsoft-edge-baseline-settings-for-intune"></a>Configurações de linha de base do Microsoft Edge para Intune
@@ -45,9 +45,9 @@ Exiba as configurações de linha de base do navegador da Web do Microsoft Edge 
 
   Defina uma versão mínima com suporte do SSL. Se você definir essa política como *não configurada*, o Microsoft Edge usará uma versão mínima padrão do *TLS 1,0*. Quando definido como *habilitado*, você pode selecionar uma versão mínima com base nos seguintes valores:
 
-  - TLS 1,0
-  - TLS 1,1
-  - TLS 1,2
+  - TLS 1.0
+  - TLS 1.1
+  - TLS 1.2
 
   - **Versão mínima do SSL habilitada**  
     **Padrão**: TLS 1,2
@@ -97,8 +97,8 @@ Exiba as configurações de linha de base do navegador da Web do Microsoft Edge 
   Especifica quais esquemas de autenticação HTTP têm suporte. Você pode configurar a política usando estes valores: ' Basic ', ' Digest ', ' NTLM ' e ' Negotiate '. Separe vários valores com vírgulas. Se você não configurar essa política, todos os quatro esquemas serão usados.
  
   - **Esquemas de autenticação com suporte**  
-    Selecione uma das seguintes opções: 
-    - Basic
+    As seguintes opções estão disponíveis para seleção: 
+    - Básica
     - Digest
     - NTLM *(selecionado por padrão)*
     - Negotiate *(selecionado por padrão)*

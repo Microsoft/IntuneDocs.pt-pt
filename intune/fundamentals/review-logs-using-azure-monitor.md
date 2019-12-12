@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 66acf4d8b88097c3262f44493ab72b3900781eed
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72504975"
 ---
 # <a name="send-log-data-to-storage-event-hubs-or-log-analytics-in-intune-preview"></a>Enviar dados de log para armazenamento, hubs de eventos ou log Analytics no Intune (versão prévia)
@@ -45,7 +45,7 @@ Este artigo mostra como usar **as configurações de diagnóstico** para enviar 
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-Para usar esse recurso, você precisa de:
+Para utilizar esta funcionalidade, precisa de:
 
 * Uma assinatura do Azure: se você não tiver uma assinatura do Azure, poderá se [inscrever para obter uma avaliação gratuita](https://azure.microsoft.com/free/).
 * Um ambiente de Microsoft Intune (locatário) no Azure
@@ -53,7 +53,7 @@ Para usar esse recurso, você precisa de:
 
 Dependendo de onde você deseja rotear os dados do log de auditoria, você precisa de um dos seguintes serviços:
 
-* Uma [conta de armazenamento do Azure](https://docs.microsoft.com/azure/storage/common/storage-account-overview) com permissões *ListKeys* . Recomendamos que você use uma conta de armazenamento geral e não uma conta de armazenamento de BLOBs. Para obter informações sobre preços de armazenamento, consulte a [calculadora de preços do armazenamento do Azure](https://azure.microsoft.com/pricing/calculator/?service=storage). 
+* Uma [conta de armazenamento do Azure](https://docs.microsoft.com/azure/storage/common/storage-account-overview) com permissões *ListKeys* . Recomendamos que você use uma conta de armazenamento geral e não uma conta de armazenamento de BLOBs. Para obter informações sobre os preços de armazenamento, veja a [Calculadora de preços do Armazenamento do Azure](https://azure.microsoft.com/pricing/calculator/?service=storage). 
 * Um [namespace de hubs de eventos do Azure](https://docs.microsoft.com/azure/event-hubs/event-hubs-create#create-an-event-hubs-namespace) para integrar a soluções de terceiros.
 * Um [espaço de trabalho do Azure log Analytics](https://docs.microsoft.com/azure/azure-monitor/learn/quick-create-workspace) para enviar logs para log Analytics.
 
@@ -88,14 +88,14 @@ Dependendo de onde você deseja rotear os dados do log de auditoria, você preci
 
       Se você optar por usar uma conta de armazenamento, insira também o número de dias que deseja manter os dados (retenção). Para manter os dados para sempre, defina a **retenção (dias)** para `0` (zero).
 
-    - **LOG** > **OperationalLogs**: os logs operacionais (versão prévia) mostram o êxito ou a falha de usuários e dispositivos que se registram no Intune, bem como detalhes sobre dispositivos não compatíveis. Escolha esta opção para enviar os logs de registro para sua conta de armazenamento, Hub de eventos ou log Analytics.
+    - **LOG** > **OperationalLogs**: os logs operacionais (visualização) mostram o êxito ou a falha de usuários e dispositivos que se registram no Intune, bem como detalhes sobre dispositivos sem conformidade. Escolha esta opção para enviar os logs de registro para sua conta de armazenamento, Hub de eventos ou log Analytics.
 
       Se você optar por usar uma conta de armazenamento, insira também o número de dias que deseja manter os dados (retenção). Para manter os dados para sempre, defina a **retenção (dias)** para `0` (zero).
 
       > [!NOTE]
       > Os logs operacionais estão em versão prévia. Para fornecer comentários, incluindo informações nos logs operacionais, vá para [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas/suggestions/36613948-diagnostics-settings-feedback).
 
-    - **LOG** > **DeviceComplianceOrg**: os logs organizacionais de conformidade do dispositivo (versão prévia) mostram o relatório organizacional para conformidade do dispositivo no Intune e detalhes de dispositivos sem conformidade. Escolha esta opção para enviar os logs de conformidade para sua conta de armazenamento, Hub de eventos ou log Analytics.
+    - **LOG** > **DeviceComplianceOrg**: os logs organizacionais de conformidade do dispositivo (versão prévia) mostram o relatório organizacional para conformidade do dispositivo no Intune e detalhes de dispositivos não compatíveis. Escolha esta opção para enviar os logs de conformidade para sua conta de armazenamento, Hub de eventos ou log Analytics.
 
       Se você optar por usar uma conta de armazenamento, insira também o número de dias que deseja manter os dados (retenção). Para manter os dados para sempre, defina a **retenção (dias)** para `0` (zero).
  
@@ -115,19 +115,19 @@ Você também pode exportar os logs de auditoria em outras partes do Intune, inc
 Por exemplo, para exportar os logs de auditoria ao usar a conformidade do dispositivo:
 
 1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selecione **conformidade do dispositivo** > **Monitor** > **logs de auditoria**:
+2. Selecione monitor de **conformidade do dispositivo** > **monitorar** > **logs de auditoria**:
 
     ![Escolha os logs de auditoria para rotear dados do Intune para Azure Monitor armazenamento, hubs de eventos ou análises](./media/review-logs-using-azure-monitor/audit-logs-under-monitor-in-compliance.png)
 
 3. Selecione **exportar configurações de dados**. Se ele não estiver habilitado, você poderá ativar **as configurações de diagnóstico**. Você também pode escolher para onde enviar os logs, conforme descrito em [enviar logs para o Azure monitor](#send-logs-to-azure-monitor) (neste artigo).
 
-## <a name="cost-considerations"></a>Considerações de custo
+## <a name="cost-considerations"></a>Considerações de custos
 
 Se você já tiver uma licença Microsoft Intune, precisará de uma assinatura do Azure para configurar a conta de armazenamento e o Hub de eventos. A assinatura do Azure normalmente é gratuita. Mas você paga para usar os recursos do Azure, incluindo a conta de armazenamento para arquivamento e o Hub de eventos para streaming. A quantidade de dados e os custos variam dependendo do tamanho do locatário.
 
-### <a name="storage-size-for-activity-logs"></a>Tamanho do armazenamento para logs de atividade
+### <a name="storage-size-for-activity-logs"></a>Tamanho de armazenamento para registos de atividades
 
-Cada evento de log de auditoria usa cerca de 2 KB de armazenamento de dados. Para um locatário com 100.000 usuários, você pode ter cerca de 1,5 milhões eventos por dia. Talvez seja necessário cerca de 3 GB de armazenamento de dados por dia. Como as gravações normalmente acontecem em lotes de cinco minutos, você pode esperar aproximadamente 9.000 operações de gravação por mês.
+Cada evento de registo de auditoria consome cerca de 2 KB de armazenamento de dados. Para um locatário com 100.000 usuários, você pode ter cerca de 1,5 milhões eventos por dia. Talvez seja necessário cerca de 3 GB de armazenamento de dados por dia. Como as gravações normalmente acontecem em lotes de cinco minutos, você pode esperar aproximadamente 9.000 operações de gravação por mês.
 
 As tabelas a seguir mostram uma estimativa de custo, dependendo do tamanho do locatário. Ele também inclui uma conta de armazenamento de uso geral V2 no oeste dos EUA por pelo menos um ano de retenção de dados. Para obter uma estimativa do volume de dados que você espera para seus logs, use a [calculadora de preços do armazenamento do Azure](https://azure.microsoft.com/pricing/details/storage/blobs/).
 
@@ -137,47 +137,47 @@ As tabelas a seguir mostram uma estimativa de custo, dependendo do tamanho do lo
 |---|---|
 |Eventos por dia| 1,5 milhões|
 |Volume estimado de dados por mês| 90 GB|
-|Custo estimado por mês (USD)| $1.93|
-|Custo estimado por ano (USD)| $23.12|
+|Custo estimado por mês (USD)| $1,93|
+|Custo estimado por ano (USD)| $23,12|
 
 **Log de auditoria com 1.000 usuários**
 
 | | |
 |---|---|
-|Eventos por dia| 15.000|
+|Eventos por dia| 15,000|
 |Volume estimado de dados por mês| 900 MB|
-|Custo estimado por mês (USD)| $0.02|
-|Custo estimado por ano (USD)| $0.24|
+|Custo estimado por mês (USD)| $0,02|
+|Custo estimado por ano (USD)| $0,24|
 
-### <a name="event-hub-messages-for-activity-logs"></a>Mensagens do hub de eventos para logs de atividade
+### <a name="event-hub-messages-for-activity-logs"></a>Mensagens do hub de eventos para os registos de atividades
 
 Em geral, os eventos são enviados em lotes em intervalos de cinco minutos e enviado como uma única mensagem com todos os eventos dentro desse período. Uma mensagem no Hub de eventos tem um tamanho máximo de 256 KB. Se o tamanho total de todas as mensagens dentro do período exceder esse volume, então várias mensagens serão enviadas.
 
 Por exemplo, cerca de 18 eventos por segundo geralmente acontecem para um locatário grande de mais de 100.000 usuários. Isso equivale a 5.400 eventos a cada cinco minutos (300 segundos x 18 eventos). Os logs de auditoria são cerca de 2 KB por evento. Isso equivale a 10,8 MB de dados. Portanto, 43 mensagens são enviadas para o Hub de eventos nesse intervalo de cinco minutos.
 
-A tabela a seguir contém os custos estimados por mês para um hub de eventos básico no oeste dos EUA, dependendo do volume de dados do evento. Para obter uma estimativa do volume de dados que você espera para seus logs, use a [calculadora de preços dos hubs de eventos](https://azure.microsoft.com/pricing/details/event-hubs/).
+A tabela seguinte contém os custos estimados por mês para um hub de eventos básico nos E.U.A. Oeste, consoante o volume de dados de eventos. Para obter uma estimativa do volume de dados que você espera para seus logs, use a [calculadora de preços dos hubs de eventos](https://azure.microsoft.com/pricing/details/event-hubs/).
 
 **Log de auditoria com 100.000 usuários**
 
 | | |
 |---|---|
-|Eventos por segundo| anos|
-|Eventos por intervalo de cinco minutos| 5\.400|
+|Eventos por segundo| 18|
+|Eventos por intervalo de cinco minutos| 5400|
 |Volume por intervalo| 10,8 MB|
 |Mensagens por intervalo| 43|
-|Mensagens por mês| 371.520|
-|Custo estimado por mês (USD)| $10.83|
+|Mensagens por mês| 371 520|
+|Custo estimado por mês (USD)| $10,83|
 
 **Log de auditoria com 1.000 usuários**
 
 | | |
 |---|---|
-|Eventos por segundo|0,1 |
+|Eventos por segundo|0.1 |
 |Eventos por intervalo de cinco minutos| 52|
 |Volume por intervalo|104 KB |
 |Mensagens por intervalo|1 |
-|Mensagens por mês|8\.640 |
-|Custo estimado por mês (USD)|$10.80 |
+|Mensagens por mês|8640 |
+|Custo estimado por mês (USD)|10,80 $ |
 
 ### <a name="log-analytics-cost-considerations"></a>Log Analytics considerações de custo
 
@@ -213,15 +213,15 @@ Os custos de streaming dependem do número de mensagens recebidas por minuto. Pa
 
 ### <a name="how-do-i-integrate-intune-audit-logs-with-my-siem-system"></a>Como fazer integrar os logs de auditoria do Intune ao meu sistema SIEM?
 
-Use Azure Monitor com hubs de eventos para transmitir logs para o sistema SIEM. Primeiro, [transmita os logs para um hub de eventos](https://docs.microsoft.com/azure/active-directory/reports-monitoring/tutorial-azure-monitor-stream-logs-to-event-hub). Em seguida, [configure sua ferramenta Siem](https://docs.microsoft.com/azure/active-directory/reports-monitoring/tutorial-azure-monitor-stream-logs-to-event-hub#access-data-from-your-event-hub) com o Hub de eventos configurado. 
+Utilize o Azure Monitor com os Hubs de Eventos para transmitir os registos para o seu sistema SIEM. Primeiro, [transmita os logs para um hub de eventos](https://docs.microsoft.com/azure/active-directory/reports-monitoring/tutorial-azure-monitor-stream-logs-to-event-hub). Em seguida, [configure sua ferramenta Siem](https://docs.microsoft.com/azure/active-directory/reports-monitoring/tutorial-azure-monitor-stream-logs-to-event-hub#access-data-from-your-event-hub) com o Hub de eventos configurado. 
 
 ### <a name="what-siem-tools-are-currently-supported"></a>Quais ferramentas de SIEM têm suporte atualmente?
 
-Atualmente, Azure Monitor é suportada por [Splunk](https://docs.microsoft.com/azure/active-directory/reports-monitoring/tutorial-integrate-activity-logs-with-splunk), QRadar e a [lógica do resumo](https://help.sumologic.com/Send-Data/Applications-and-Other-Data-Sources/Azure_Active_Directory) (abre um novo site). Para obter mais informações sobre como os conectores funcionam, consulte [transmitir dados de monitoramento do Azure para um hub de eventos para consumo por uma ferramenta externa](https://docs.microsoft.com/azure/azure-monitor/platform/stream-monitoring-data-event-hubs).
+Atualmente, Azure Monitor é suportada por [Splunk](https://docs.microsoft.com/azure/active-directory/reports-monitoring/tutorial-integrate-activity-logs-with-splunk), QRadar e a [lógica do resumo](https://help.sumologic.com/Send-Data/Applications-and-Other-Data-Sources/Azure_Active_Directory) (abre um novo site). Para obter mais informações sobre como funcionam os conectores, veja [Stream Azure monitoring data to an event hub for consumption by an external tool](https://docs.microsoft.com/azure/azure-monitor/platform/stream-monitoring-data-event-hubs) (Transmitir em fluxo dados de monitorização do Azure para um hub de eventos, para consumo por uma ferramenta externa).
 
 ### <a name="can-i-access-the-data-from-an-event-hub-without-using-an-external-siem-tool"></a>Posso acessar os dados de um hub de eventos sem usar uma ferramenta SIEM externa?
 
-Sim. Para acessar os logs de seu aplicativo personalizado, você pode usar a [API de hubs de eventos](https://docs.microsoft.com/azure/event-hubs/event-hubs-dotnet-standard-getstarted-receive-eph).
+Sim. Pode utilizar a [API dos Hub de Eventos](https://docs.microsoft.com/azure/event-hubs/event-hubs-dotnet-standard-getstarted-receive-eph) para aceder aos registos da sua aplicação personalizada.
 
 ### <a name="what-data-is-stored"></a>Quais dados são armazenados?
 
@@ -229,6 +229,6 @@ O Intune não armazena nenhum dado enviado por meio do pipeline. O Intune roteia
 
 ## <a name="next-steps"></a>Próximos passos
 
-* [Arquivar logs de atividades em uma conta de armazenamento](https://docs.microsoft.com/azure/active-directory/reports-monitoring/quickstart-azure-monitor-route-logs-to-storage-account)
-* [Rotear logs de atividade para um hub de eventos](https://docs.microsoft.com/azure/active-directory/reports-monitoring/tutorial-azure-monitor-stream-logs-to-event-hub)
+* [Arquivar registos de atividades numa conta de armazenamento](https://docs.microsoft.com/azure/active-directory/reports-monitoring/quickstart-azure-monitor-route-logs-to-storage-account)
+* [Encaminhar registos de atividades para um hub de eventos](https://docs.microsoft.com/azure/active-directory/reports-monitoring/tutorial-azure-monitor-stream-logs-to-event-hub)
 * [Integrar logs de atividade com Log Analytics](https://docs.microsoft.com/azure/active-directory/reports-monitoring/howto-integrate-activity-logs-with-log-analytics)

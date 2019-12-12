@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 68601d8ccf06cebf668c75857d23536e2c9e6553
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72503515"
 ---
 # <a name="add-wi-fi-settings-for-windows-10-and-later-devices-in-intune"></a>Adicionar definições de Wi-Fi para dispositivos Windows 10 e posteriores no Intune
@@ -55,7 +55,7 @@ Este artigo descreve estas definições.
   - **Fixo**: utilize esta opção se a rede estiver configurada com um limite fixo para o tráfego de rede. Uma vez atingido este limite, o acesso à rede será proibido.
   - **Variável**: utilize esta opção se o tráfego de rede for cobrado por byte (custo por byte).
 
-- **Tipo de Segurança sem Fios**: introduza o protocolo de segurança utilizado para autenticar dispositivos na sua rede. Suas opções são:
+- **Tipo de Segurança sem Fios**: introduza o protocolo de segurança utilizado para autenticar dispositivos na sua rede. As opções são:
   - **Abrir (sem autenticação)** : utilize esta opção apenas se a rede não estiver protegida.
   - **WPA/WPA2-Personal**: Uma opção mais segura, geralmente utilizada para conectividade Wi-Fi. Para obter mais segurança, também pode introduzir uma chave pré-partilhada, palavra-passe ou chave de rede.
 
@@ -94,7 +94,7 @@ Selecione **OK** > **Criar** para guardar as alterações. O perfil é criado e 
   - **Fixo**: utilize esta opção se a rede estiver configurada com um limite fixo para o tráfego de rede. Uma vez atingido este limite, o acesso à rede será proibido.
   - **Variável**: utilize esta opção se o tráfego de rede for cobrado por byte.
 
-- **Início de sessão único (SSO)** : permite-lhe configurar o início de sessão único (SSO), onde as credenciais são partilhadas para o início de sessão do computador e da rede Wi-Fi. Suas opções são:
+- **Início de sessão único (SSO)** : permite-lhe configurar o início de sessão único (SSO), onde as credenciais são partilhadas para o início de sessão do computador e da rede Wi-Fi. As opções são:
   - **Desativar**: desativa o comportamento de SSO. O utilizador tem de efetuar a autenticação na rede separadamente.
   - **Ativar antes de o utilizador iniciar sessão no dispositivo**: utilize o SSO para efetuar a autenticação na rede antes do processo de início de sessão de utilizador.
   - **Ativar após o utilizador iniciar sessão no dispositivo**: utilize o SSO para efetuar a autenticação na rede imediatamente após a conclusão do processo de início de sessão de utilizador.

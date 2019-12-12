@@ -16,10 +16,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: e45d51feb91e0e188971133185ac0f0f13e5b1f4
-ms.sourcegitcommit: b752acefec077c719e169e665c955adb944e85c6
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74781146"
 ---
 # <a name="add-vpn-settings-on-ios-devices-in-microsoft-intune"></a>Adicionar configurações de VPN em dispositivos iOS no Microsoft Intune
@@ -28,7 +28,7 @@ O Microsoft Intune inclui várias definições de VPN que podem ser implementada
 
 ## <a name="before-you-begin"></a>Antes de começar
 
-[Criar um perfil de configuração de dispositivo](vpn-settings-configure.md).
+[Criar um perfil de configuração do dispositivo](vpn-settings-configure.md).
 
 > [!NOTE]
 > Essas configurações estão disponíveis para todos os tipos de registro. Para obter mais informações sobre os tipos de registro, consulte [registro do IOS](../enrollment/ios-enroll.md).
@@ -156,7 +156,7 @@ Essas configurações se aplicam quando você escolhe o **tipo de conexão** > *
     - SHA2-384
     - SHA2-512
   - **Grupo Diffie-Hellman**: selecione o grupo desejado. O padrão é `2`de grupo.
-  - **Tempo de vida** (minutos): escolha por quanto tempo a associação de segurança permanecerá ativa até que as chaves sejam giradas. Insira um valor inteiro entre `10` e `1440` (1440 minutos é 24 horas). O padrão é `1440`.
+  - **Tempo de vida** (minutos): escolha por quanto tempo a associação de segurança permanecerá ativa até que as chaves sejam giradas. Insira um valor inteiro entre `10` e `1440` (1440 minutos é 24 horas). A predefinição é `1440`.
 
 - **Configurar um conjunto separado de parâmetros para associações de segurança filho**: o Ios permite que você configure parâmetros separados para a conexão Ike e quaisquer conexões filho. 
 
@@ -175,7 +175,7 @@ Essas configurações se aplicam quando você escolhe o **tipo de conexão** > *
     - SHA2-384
     - SHA2-512
   - **Grupo Diffie-Hellman**: selecione o grupo desejado. O padrão é `2`de grupo.
-  - **Tempo de vida** (minutos): escolha por quanto tempo a associação de segurança permanecerá ativa até que as chaves sejam giradas. Insira um valor inteiro entre `10` e `1440` (1440 minutos é 24 horas). O padrão é `1440`.
+  - **Tempo de vida** (minutos): escolha por quanto tempo a associação de segurança permanecerá ativa até que as chaves sejam giradas. Insira um valor inteiro entre `10` e `1440` (1440 minutos é 24 horas). A predefinição é `1440`.
 
 ## <a name="automatic-vpn-settings"></a>Definições Automáticas de VPN
 

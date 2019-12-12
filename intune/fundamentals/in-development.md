@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 04b284a62076122cec70b6b455151a0377470521
-ms.sourcegitcommit: 16a9109b4028589c17695d41271ca4fee8b1d697
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/26/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74540726"
 ---
 # <a name="in-development-for-microsoft-intune---december-2019"></a>Em desenvolvimento para Microsoft Intune-dezembro de 2019
@@ -91,13 +91,13 @@ Em dispositivos Android Enterprise Device Owner, haverá uma nova configuração
 
 Para ver as configurações atuais, vá para [configurações do dispositivo Android Enterprise para permitir ou restringir recursos usando o Intune](../configuration/device-restrictions-android-for-work.md).
 
-Aplica-se a:
+Aplica-se a
 - Proprietário do dispositivo corporativo Android, incluindo dispositivos dedicados e totalmente gerenciados
 
 ### <a name="wired-network-device-configuration-profiles-for-macos-devices---3508686-idready---"></a>Perfis de configuração de dispositivo de rede com fio para dispositivos macOS<!-- 3508686 idready -->
 Em dispositivos macOS, uma atualização futura incluirá um novo perfil de configuração de dispositivo que configura redes com fio (**configuração do dispositivo** > **perfis** > **Criar perfil** > **MacOS** para plataforma > **rede com fio** para o tipo de perfil). Use esse recurso para criar perfis 802.1 x para gerenciar redes com fio e implantar essas redes com fio em seus dispositivos macOS.
 
-Aplica-se a:
+Aplica-se a
 - macOS
 
 ### <a name="add-automatic-proxy-settings-to-wi-fi-profiles-for-android-enterprise-work-profiles---4490822-idready---"></a>Adicionar configurações de proxy automáticas a perfis de Wi-Fi para perfis de trabalho do Android Enterprise<!-- 4490822 idready -->
@@ -107,7 +107,7 @@ Em uma atualização futura, ao escolher o tipo Enterprise, você poderá inseri
 
 Para ver as configurações de Wi-Fi atuais que você pode configurar, vá para [Adicionar configurações de Wi-Fi para dispositivos que executam o Android Enterprise e Android quiosque no Microsoft Intune](../configuration/wi-fi-settings-android-enterprise.md).
 
-Aplica-se a:
+Aplica-se a
 - Perfil de trabalho do Android Enterprise
 
 ### <a name="enable-network-access-control-nac-with-cisco-anyconnect-vpn-on-ios-devices---4860111-idready---"></a>Habilitar o NAC (controle de acesso à rede) com o Cisco AnyConnect VPN em dispositivos iOS<!-- 4860111 idready -->
@@ -120,7 +120,7 @@ Em uma atualização futura, você poderá habilitar o NAC (controle de acesso �
 
 Para ver todas as configurações de VPN disponíveis, vá para [definir configurações de VPN em dispositivos IOS](../configuration/vpn-settings-ios.md).
 
-Aplica-se a:
+Aplica-se a
 - iOS
 
 ### <a name="updated-single-sign-on-experience-for-apps-and-websites-on-your-ios-ipados-and-macos-devices---4999578-idready---"></a>Experiência de logon único atualizada para aplicativos e sites em seus dispositivos iOS, iPadOS e macOS<!-- 4999578 idready -->
@@ -130,7 +130,7 @@ Use essas configurações para configurar uma experiência de logon único cont�
 
 Para ver as configurações de extensão do aplicativo SSO que você pode configurar, acesse [SSO no Ios](../configuration/ios-device-features-settings.md#single-sign-on-app-extension) e [SSO no MacOS](../configuration/macos-device-features-settings.md#single-sign-on-app-extension).
 
-Aplica-se a:
+Aplica-se a
 - iOS/iPadOS
 - macOS
 
@@ -142,11 +142,11 @@ No momento, você pode autenticar perfis Wi-Fi do Windows com certificados SCEP 
 
 Para obter mais informações sobre perfis Wi-Fi, consulte [Adicionar configurações de Wi-Fi para dispositivos Windows 10 e posteriores no Intune](../configuration/wi-fi-settings-windows.md).
 
-Aplica-se a:
+Aplica-se a
 - Windows 10 e posterior
 
 ### <a name="new-exchangeactivesync-settings-when-creating-an-email-device-configuration-profile-on-ios-devices---4892824----"></a>Novas configurações de ExchangeActiveSync ao criar um perfil de configuração de dispositivo de email em dispositivos iOS<!-- 4892824  --> 
-Em dispositivos iOS/iPadOS, você pode configurar a conectividade de email em um perfil de configuração de dispositivo (**configuração de dispositivo** > **perfis** > **Criar perfil** > **Ios/iPadOS** para plataforma > **email** para tipo de perfil). 
+Em dispositivos iOS/iPadOS, você pode configurar a conectividade de email em um perfil de configuração de dispositivo (**configuração do dispositivo** > **perfis** > **Criar perfil** > **Ios/iPadOS** para plataforma > **email** para o tipo de perfil). 
 
 Haverá novas configurações de ExchangeActiveSync disponíveis, incluindo:
 - Escolha os serviços a serem sincronizados (ou bloqueie a sincronização), como email, calendário e contatos.
@@ -154,27 +154,27 @@ Haverá novas configurações de ExchangeActiveSync disponíveis, incluindo:
 
 Para ver as configurações atuais, vá para [configurações de perfil de email para dispositivos IOS no Intune](../configuration/email-settings-ios.md).
 
-Aplica-se a:
+Aplica-se a
 - iOS 13,0 e mais recente
 - iPadOS 13,0 e mais recente
 
 ### <a name="prevent-users-from-adding-personal-google-accounts-to-android-enterprise-device-owner-and-dedicated-devices---5353228----"></a>Impedir que os usuários adicionem contas pessoais do Google ao proprietário do dispositivo Android Enterprise e dispositivos dedicados<!-- 5353228  -->
-Você poderá impedir que os usuários criem contas pessoais do Google no proprietário do dispositivo Android Enterprise e dispositivos dedicados (**configuração do dispositivo** **perfis** de >  > **Criar perfil** > **Android Enterprise** para a plataforma > **proprietário do dispositivo, somente > restrições de dispositivo** para o tipo de perfil > configurações de **contas e usuários**).
+Você poderá impedir que os usuários criem contas pessoais do Google no proprietário do dispositivo Android Enterprise e dispositivos dedicados (**configuração do dispositivo** > **perfis** > **Criar perfil** > **Android Enterprise** para plataforma > **proprietário do dispositivo apenas > restrições de dispositivo** para o tipo de perfil > configurações de **contas e usuários**).
 
 Para ver as configurações atuais que você pode definir, vá para [configurações de dispositivo do Android Enterprise para permitir ou restringir recursos usando o Intune](../configuration/device-restrictions-android-for-work.md).
 
-Aplica-se a:
+Aplica-se a
 - Proprietário do dispositivo corporativo Android
 - Dispositivos Android Enterprise dedicados
 
 ### <a name="server-side-logging-for-siri-commands-setting-is-removed-in-ios-device-restrictions-profile---5468501----"></a>O log do lado do servidor para a configuração de comandos Siri é removido no perfil de restrições de dispositivo iOS<!-- 5468501  -->
-Em dispositivos iOS, você pode criar um perfil de restrições de dispositivo que configura o log do lado do servidor para comandos Siri (**configuração do dispositivo** **perfis** de >  > **Criar perfil** > **Ios/iPadOS** para plataforma > **Restrições de dispositivo** para o tipo de perfil > **aplicativos internos**). A configuração **log do lado do servidor para comandos Siri** será removida.
+Em dispositivos iOS, você pode criar um perfil de restrições de dispositivo que configura o log do lado do servidor para comandos Siri (**configuração do dispositivo** > **perfis** > **Criar perfil** > **Ios/iPadOS** para plataforma > **restrições de dispositivo** para o tipo de perfil > **aplicativos internos**). A configuração **log do lado do servidor para comandos Siri** será removida.
 
 Essa configuração será removida do console de administração do Intune. Essa configuração não tem nenhum efeito no dispositivo, embora as políticas existentes que tenham essa configuração configurada continuem a mostrar a configuração. Se você quiser remover a configuração de políticas existentes, vá para a política, faça uma pequena edição, salve-a e a política será atualizada.
 
 Para ver as configurações que você pode definir, consulte [configurações do dispositivo IOS e iPadOS para permitir ou restringir recursos usando o Intune](../configuration/device-restrictions-ios.md).
 
-Aplica-se a:
+Aplica-se a
 - iOS
 
 <!-- ***********************************************-->

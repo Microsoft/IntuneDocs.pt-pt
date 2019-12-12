@@ -16,10 +16,10 @@ search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 73de0ac94ff02e43fe73ca6357f6008ba71e3b93
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/22/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74390825"
 ---
 # <a name="add-e-mail-settings-for-ios-devices-in-microsoft-intune"></a>Adicionar configurações de email para dispositivos iOS no Microsoft Intune
@@ -30,7 +30,7 @@ Este artigo lista e descreve todas as configurações de email disponíveis para
 
 ## <a name="before-you-begin"></a>Antes de começar
 
-[Criar um perfil de configuração de dispositivo](../email-settings-configure.md).
+[Criar um perfil de configuração do dispositivo](../email-settings-configure.md).
 
 > [!NOTE]
 > Essas configurações estão disponíveis para todos os tipos de registro. Para obter mais informações sobre os tipos de registro, consulte [registro do IOS](../ios-enroll.md).
@@ -40,7 +40,7 @@ Este artigo lista e descreve todas as configurações de email disponíveis para
 - **Servidor de e-mail**: introduza o nome de anfitrião do seu servidor Exchange.
 - **Nome da conta**: introduza o nome a apresentar da conta de e-mail. Este nome será apresentado nos dispositivos dos utilizadores.
 - **Atributo de nome de utilizador do AAD**: este nome é o atributo que o Intune obtém do Azure Active Directory (AAD). O Intune gera de forma dinâmica o nome de utilizador utilizado por este perfil. As opções são:
-  - **Nome Principal de Utilizador**: obtém o nome, como `user1` ou `user1@contoso.com`
+  - **Nome Principal de Utilizador**: obtém o nome, como `user1` ou `user1@contoso.com`.
   - **Endereço SMTP primário**: obtém o nome no formato de endereço de e-mail, como `user1@contoso.com`
   - **Nome da Conta SAM**: precisa do domínio, como `domain\user1`. Introduza também:  
     - **Origem de nome de domínio do utilizador**: selecione **AAD** (Azure Active Directory) ou **Personalizado**.
@@ -158,7 +158,7 @@ Este artigo lista e descreve todas as configurações de email disponíveis para
 - **Permitir que o email seja enviado de aplicativos de**terceiros: **habilitar** (padrão) permite que os usuários selecionem esse perfil como a conta padrão para enviar email. que as aplicações de terceiros abram o e-mail na aplicação de e-mail nativa, por exemplo, para anexar ficheiros ao e-mail.
 - **Sincronizar endereços de email usados recentemente**: **habilitar** (padrão) permite que os usuários sincronizem a lista de endereços de email que foram usados recentemente no dispositivo com o servidor.
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Próximos passos
 
 O perfil está criado, mas ainda não está ativo. Em seguida, [atribua o perfil](../device-profile-assign.md) e [monitorize o estado](../device-profile-monitor.md).
 

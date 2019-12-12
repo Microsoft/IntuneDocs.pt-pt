@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c8452f9b56032864380ec703bfd444dc85ef129b
-ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
+ms.openlocfilehash: ba6b8fb66d25af3833e55eebc12e8b6df2fb5ba5
+ms.sourcegitcommit: 66e284fe092e19c1da72b4b770e45bf25ac7910c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "74188268"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74860235"
 ---
 # <a name="create-a-compliance-policy-in-microsoft-intune"></a>Criar uma política de conformidade no Microsoft Intune
 
@@ -52,8 +52,8 @@ Para utilizar as políticas de conformidade de dispositivos:
   - iOS
   - macOS
   - Windows 10
-  - Windows 8.1
-  - Windows Phone 8.1
+  - Windows 8.1
+  - Wnodows Phone 8.1
 
 - Inscreva os dispositivos no Intune (necessário para ver o estado de conformidade).
 
@@ -100,7 +100,7 @@ Para utilizar as políticas de conformidade de dispositivos:
 
      Por exemplo, está a utilizar a funcionalidade Localizações e adiciona uma localização numa política de conformidade. A ação predefinida de não conformidade aplica-se quando selecionar pelo menos uma localização. Se o dispositivo não estiver ligado às localizações selecionadas, será imediatamente considerado não conforme. Pode dar aos seus utilizadores um período de tolerância, por exemplo um dia.
 
-   - **Scope (Tags)** : as marcas de escopo são uma ótima maneira de atribuir e filtrar políticas a grupos específicos, como vendas, RH, todos os funcionários de US-NC e assim por diante. Depois de adicionar as definições, também pode adicionar uma etiqueta de âmbito às políticas de conformidade. O artigo [Utilizar etiquetas de âmbito para filtrar políticas](../fundamentals/scope-tags.md) pode ser útil.
+   - **Scope (Tags)** : as marcas de escopo são uma ótima maneira de filtrar políticas para grupos específicos, como `US-NC IT Team` ou `JohnGlenn_ITDepartment`. Depois de adicionar as definições, também pode adicionar uma etiqueta de âmbito às políticas de conformidade. O artigo [Utilizar etiquetas de âmbito para filtrar políticas](../fundamentals/scope-tags.md) pode ser útil.
 
 4. Quando terminar, selecione **OK** > **Criar** para guardar as alterações. A política é criada e apresentada na lista. Em seguida, atribua a política aos grupos.
 
@@ -171,17 +171,17 @@ Se um dispositivo tiver múltiplas políticas de conformidade e estados de confo
 
 |Estado  |Gravidade  |
 |---------|---------|
-|Desconhecidos     |1|
+|Unknown     |1|
 |NotApplicable     |2|
 |Compatível|3|
 |InGracePeriod|4|
 |NonCompliant|5|
-|Erro|6|
+|Error|6|
 
 Quando um dispositivo tem múltiplas políticas de conformidade, é atribuído o nível de gravidade mais elevado de todas as políticas a esse dispositivo.
 
 Por exemplo, um dispositivo tem três políticas de conformidade atribuídas: uma com o estado Desconhecido (gravidade = 1), outra com o estado Conforme (gravidade = 3) e uma com o estado Em Período de Tolerância (gravidade = 4). O estado Em Período de Tolerância tem o nível de gravidade mais elevado. Por isso, todas as três políticas têm o estado de conformidade Em Período de Tolerância.
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Próximos passos
 
 [Monitorizar as políticas](compliance-policy-monitor.md).

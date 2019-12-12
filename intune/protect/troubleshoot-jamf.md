@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 44733eb369e520d2d5f0ff548d4f1921abcb8758
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72503574"
 ---
 # <a name="troubleshoot-integration-of-jamf-pro-with-microsoft-intune"></a>Solucionar problemas de integração do JAMF pro com o Microsoft Intune
@@ -44,7 +44,7 @@ Antes de iniciar a solução de problemas, colete algumas informações básicas
 Considere as seguintes informações ao investigar a integração do JAMF pro com o Intune: 
 - Qual é a mensagem de erro exata?
 - Onde está a mensagem de erro?
-- Quando o problema foi iniciado?  A integração do JAMF pro com o Intune já funcionou?
+- Quando começou o problema?  A integração do JAMF pro com o Intune já funcionou?
 - Quantos usuários são afetados? Todos os usuários foram afetados ou apenas alguns?
 - Quantos dispositivos são afetados? Todos os dispositivos foram afetados ou apenas alguns?
  

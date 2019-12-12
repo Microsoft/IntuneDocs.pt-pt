@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: b7e2bd869f898bbe7f894cfd9e9c767c8b42e9c4
-ms.sourcegitcommit: ce518a5dfe62c546a77f32ef372f36efbaad473f
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/25/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74465644"
 ---
 # <a name="bundle-ids-for-built-in-ios-apps-you-can-use-in-intune"></a>IDs de pacote para aplicativos iOS internos que você pode usar no Intune
@@ -29,7 +29,7 @@ Ao configurar recursos em dispositivos iOS, você também pode adicionar os apli
 
 ## <a name="bundle-ids"></a>IDs de pacote
 
-| ID do Pacote                   | Nome da Aplicação     | Fabricante |
+| ID do Pacote                   | Nome da Aplicação     | Publisher |
 |-----------------------------|--------------|-----------|
 | com. Apple. Store             | App Store    | Apple     |
 | com.apple.calculator        | Calculadora   | Apple     |
@@ -54,7 +54,7 @@ Ao configurar recursos em dispositivos iOS, você também pode adicionar os apli
 | com.apple.itunesu           | iTunes U     | Apple     |
 | com.apple.Keynote           | Keynote      | Apple     |
 | com.apple.mobilemail        | Correio         | Apple     |
-| com.apple.Maps              | Maps         | Apple     |
+| com.apple.Maps              | Mapas         | Apple     |
 | com. Apple. Measure           | Medida      | Apple     |
 | com.apple.MobileSMS         | Mensagens     | Apple     |
 | com.apple.Music             | Música        | Apple     |
@@ -69,17 +69,17 @@ Ao configurar recursos em dispositivos iOS, você também pode adicionar os apli
 | com.apple.reminders         | Lembretes    | Apple     |
 | com.apple.mobilesafari      | Safari       | Apple     |
 | com.apple.Preferences       | Definições     | Apple     |
-| com. Apple. shortcuts         | Teclado    | Apple     |
+| com. Apple. shortcuts         | Atalhos    | Apple     |
 | com.apple.SiriViewService   | Siri         | Apple     |
 | com.apple.stocks            | Bolsa       | Apple     |
 | com.apple.tips              | Sugestões         | Apple     |
-| com.apple.tv                | PROGRAMAS DE TV           | Apple     |
+| com.apple.tv                | TV           | Apple     |
 | com.apple.videos            | Vídeos       | Apple     |
 | com.apple.VoiceMemos        | VoiceMemos   | Apple     |
 | com.apple.Passbook          | Wallet       | Apple     |
 | com.apple.Bridge            | Watch        | Apple     |
 | com.apple.weather           | Meteorologia      | Apple     |      
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Use essas IDs de pacote para configurar [recursos de dispositivo](ios-device-features-settings.md) e para [permitir ou restringir algumas configurações](device-restrictions-ios.md) em dispositivos IOS.

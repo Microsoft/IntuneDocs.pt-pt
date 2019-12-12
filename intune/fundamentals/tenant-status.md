@@ -16,10 +16,10 @@ ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: c79f24d44ad0aed78ed0ae6fce0873a080b2904d
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72504855"
 ---
 # <a name="use-the-intune-tenant-status-page"></a>Usar a página status do locatário do Intune
@@ -49,7 +49,7 @@ Quando há mais de um único conector de um tipo, o status é um resumo para tod
 - **Não íntegro**
   - O certificado ou a credencial expirou
   - A última sincronização ocorreu há três ou mais dias
-- **Alerta**
+- **Aviso:**
   - O certificado ou a credencial expirará dentro de sete dias
   - A última sincronização ocorreu há mais de um dia
 - **Íntegro**
@@ -60,7 +60,7 @@ Quando você seleciona um conector na lista, o portal apresenta a página do por
 
 Por exemplo, se você selecionar o conector de **data de expiração do VPP** , a página **tokens do programa adquiridos por volume do IOS** será aberta, na qual você poderá exibir mais detalhes sobre esse conector. Você também pode criar uma nova configuração ou editar e corrigir problemas com um existente.
 
-## <a name="service-health-dashboard"></a>Painel de integridade do serviço  
+## <a name="service-health-dashboard"></a>Dashboard de estado de funcionamento do serviço  
 No painel integridade do serviço, você pode exibir detalhes de *incidentes de serviço* que afetam seu locatário e notícias do *Intune* que fornecem informações sobre atualizações e alterações planejadas.
 
 ### <a name="intune-service-health"></a>Integridade do serviço do Intune

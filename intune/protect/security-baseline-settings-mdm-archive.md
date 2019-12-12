@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 3980720101489d32b27957a2e2d3e0e951e58da6
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72509012"
 ---
 <!-- This article contains the exact baseline details for baseline versions that were previously published in security-baseline-settings-mdm.md.  -->
@@ -194,7 +194,7 @@ Para obter mais informações, consulte [CSP de política-dataprotection](https:
   
   **Padrão**: Sim  
 
-### <a name="device-guard"></a>Proteção do dispositivo  
+### <a name="device-guard"></a>Device Guard  
 
 Para obter mais informações, consulte [Policy CSP-DeviceGuard](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceguard
 ) na documentação do Windows.  
@@ -1127,7 +1127,7 @@ Para obter mais informações, consulte [Policy CSP-MSSLegacy](https://docs.micr
 - **Redirecionamentos de ICMP de rede substituem o OSPF gerado**  
   **Padrão**: desabilitado
   
-### <a name="power"></a>Alimentar  
+### <a name="power"></a>Ligar/desligar  
 
 Para obter mais informações, consulte [CSP da política – Power](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power) na documentação do Windows.  
 
@@ -1241,7 +1241,7 @@ Para obter mais informações, consulte [CSP da política – Pesquisar](https:/
   
 **Padrão**: Sim
   
-### <a name="smart-screen"></a>Tela inteligente  
+### <a name="smart-screen"></a>Smart Screen  
 
 Para obter mais informações, consulte [CSP da política-SmartScreen](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen) na documentação do Windows.  
 
@@ -1419,7 +1419,7 @@ Para obter mais informações, consulte [Policy CSP-defender](https://docs.micro
   
   **Padrão**: bloquear
 
-### <a name="windows-ink-workspace"></a>Espaço de trabalho do Windows Ink  
+### <a name="windows-ink-workspace"></a>Área de Trabalho do Windows Ink  
 
 Para obter mais informações, consulte [Policy CSP-WindowsInkWorkspace](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowsinkworkspace) na documentação do Windows.  
 

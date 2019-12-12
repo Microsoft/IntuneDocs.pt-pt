@@ -19,10 +19,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 5c484b98466c1418016f4ebc6cc805e412d7891e
-ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/01/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73415598"
 ---
 # <a name="set-up-ios-or-ipados-device-with-company-portal-and-disa-purebred"></a>Configurar o dispositivo iOS ou iPadOS com Portal da Empresa e DISA purebred  
@@ -36,7 +36,7 @@ Provavelmente, você precisará configurar uma credencial derivada se usar um ca
 * Entrar em aplicativos escolares ou de trabalho, Wi-Fi e redes virtuais privadas (VPN)
 * Assinar e criptografar emails escolares ou de trabalho usando certificados S/MIME  
 
-Neste artigo, você vai:  
+Neste artigo, vai:  
 
    * Registre um dispositivo iOS ou iPadOS móvel com Portal da Empresa do Intune.  
    * Obtenha uma credencial derivada do provedor de credenciais derivado de sua organização, [Disa purebred](https://cyber.mil/pki-pke/purebred/).  
@@ -61,7 +61,7 @@ As credenciais derivadas são uma implementação das diretrizes do National Ins
 
 Você também precisará entrar em contato com um agente ou representante do purebred durante a instalação.      
 
-## <a name="enroll-device"></a>Registrar dispositivo  
+## <a name="enroll-device"></a>Inscrever o dispositivo  
 1. Abra o aplicativo Portal da Empresa para iOS/iPadOS em seu dispositivo móvel e entre com sua conta corporativa.  
 
 2. Anote o código da tela.  

@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 6342ed23f67c37c2f5084e58594294d826a28e40
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72506712"
 ---
 # <a name="upgrade-devices-running-windows-holographic-to-windows-holographic-for-business"></a>Atualizar os dispositivos com o Windows Holographic para o Windows Holographic for Business
@@ -33,7 +33,7 @@ Para obter mais informações sobre esse recurso, consulte [atualizar as ediçõ
 
 ## <a name="before-you-begin"></a>Antes de começar
 
-[Criar um perfil de configuração de dispositivo](edition-upgrade-configure-windows-10.md#create-the-profile).
+[Criar um perfil de configuração do dispositivo](edition-upgrade-configure-windows-10.md#create-the-profile).
 
 ## <a name="edition-upgrade"></a>Atualização de edição
 

@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 340659adfa3bbd40f98ccec9d8d44e952f7ec9b9
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/13/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74059927"
 ---
 # <a name="set-up-a-telecom-expense-management-service-in-intune"></a>Configurar um serviço de gestão de despesas de telecomunicações no Intune
@@ -73,7 +73,7 @@ O Intune integra-se com o seguinte provedor de gerenciamento de despesas de tele
 
 3. Selecione **desbloquear**. **Desbloquear** permite que você altere ou atualize as configurações na página.
 
-4. No **Intune/Datalert conexão** > **MDM do servidor**, selecione **Microsoft Intune**.
+4. Na **conexão do Intune/Datalert** > **MDM do servidor**, selecione **Microsoft Intune**.
 
 5. Para o **domínio do Azure ad**, insira sua ID de locatário do Azure. Selecione **conexão**.
 

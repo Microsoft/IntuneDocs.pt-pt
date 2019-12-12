@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 0507d607bfac6c084f1ce0b1f59d7474810ec8b7
-ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/01/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73415102"
 ---
 # <a name="intune-network-configuration-requirements-and-bandwidth"></a>Largura de banda e requisitos de configuração de rede do Intune
@@ -83,7 +83,7 @@ Durante as horas que configurar, pode utilizar o BITS num computador Windows par
 
 Para saber mais sobre o BITS e computadores Windows, veja [Background Intelligent Transfer Service (Serviço de Transferência Inteligente em Segundo Plano)](https://technet.microsoft.com/library/bb968799.aspx) na Biblioteca TechNet.
 
-### <a name="delivery-optimization"></a>Otimização de entrega
+### <a name="delivery-optimization"></a>Otimização da Entrega
 
 A otimização de entrega permite usar o Intune para reduzir o consumo de largura de banda quando seus dispositivos Windows 10 baixam aplicativos e atualizações. Usando um cache distribuído de organização própria, os downloads podem ser extraídos de servidores tradicionais e fontes alternativas (como pares de rede).
 

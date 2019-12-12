@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 744277b0e49a4e3ca8b0fa3bac43c666110bb8a3
-ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/22/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74410359"
 ---
 # <a name="troubleshoot-bitlocker-policies-in-microsoft-intune"></a>Solucionar problemas de políticas do BitLocker no Microsoft Intune
@@ -45,7 +45,7 @@ Não importa como as configurações são aplicadas a um dispositivo, as políti
 
 Se você quiser saber mais sobre o BitLocker, consulte os seguintes recursos:
 
-- [Pelo](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview)
+- [BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview)
 - [Perguntas frequentes sobre requisitos e visão geral do BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview-and-requirements-faq)
 
 Agora que você tem uma compreensão geral do que essas políticas fazem e como elas funcionam, veja como você pode verificar se as configurações do BitLocker se aplicam com êxito a um cliente do Windows.
@@ -194,7 +194,7 @@ A **política está presente, mas nem todas as configurações foram configurada
 
 Quando você soluciona problemas de política do BitLocker com o Intune e pode confirmar que a política atinge o dispositivo pretendido, é seguro supor que o problema não está diretamente relacionado ao Intune. O problema é mais provável de um problema com o sistema operacional Windows ou o hardware. Nesse caso, comece a procurar outras áreas, como a configuração do TPM, a UEFI e a inicialização segura).
 
-## <a name="next-steps"></a>Passos Seguintes  
+## <a name="next-steps"></a>Próximos passos  
 
 Veja a seguir mais recursos que podem ajudar quando você trabalha com o BitLocker:
 

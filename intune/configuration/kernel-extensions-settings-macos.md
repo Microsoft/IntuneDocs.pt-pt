@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 8632f5b8df0f483de3bb4d06a6823639ba52c604
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72506709"
 ---
 # <a name="macos-device-settings-to-configure-and-use-kernel-extensions-in-intune"></a>configurações de dispositivo macOS para configurar e usar extensões de kernel no Intune
@@ -58,12 +58,12 @@ Estas definições são adicionadas a um perfil de configuração do dispositivo
 
 - **Extensões de kernel permitidas**: Use essa configuração para permitir extensões de kernel específicas. Somente as extensões de kernel inseridas são permitidas ou confiáveis. 
 
-  **Adicione** o identificador de pacote e o identificador de equipe de uma extensão de kernel que você deseja carregar. Para extensões de kernel herdadas não assinadas, use um identificador de equipe vazio. Você pode adicionar várias extensões de kernel. O identificador de equipe deve ser alfanumérico (letras e números) e ter 10 caracteres. Por exemplo, digite `com.contoso.appname.macos` para **ID do pacote**e `ABCDE12345` para o **identificador da equipe**.
+  **Adicione** o identificador de pacote e o identificador de equipe de uma extensão de kernel que você deseja carregar. Para extensões de kernel herdadas não assinadas, use um identificador de equipe vazio. Você pode adicionar várias extensões de kernel. O identificador de equipe deve ser alfanumérico (letras e números) e ter 10 caracteres. Por exemplo, insira `com.contoso.appname.macos` para **ID de pacote**e `ABCDE12345` para o **identificador de equipe**.
 
   > [!TIP]
   > Para obter a ID de pacote de uma extensão de kernel (kext) em um dispositivo macOS, você pode:
   >
-  > 1. No terminal, execute `kextstat | grep -v com.apple` e observe a saída. Instale o software ou o kext que você deseja. Execute `kextstat | grep -v com.apple` novamente e procure as alterações.
+  > 1. No terminal, execute `kextstat | grep -v com.apple`e observe a saída. Instale o software ou o kext que você deseja. Execute `kextstat | grep -v com.apple` novamente e procure as alterações.
   >
   >    No terminal, `kextstat` lista todas as extensões de kernel no sistema operacional. 
   >

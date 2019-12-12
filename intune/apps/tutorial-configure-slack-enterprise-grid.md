@@ -19,17 +19,17 @@ ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: a3b01c1444b44e3f5c66fc129f78f321c9c9f5aa
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/27/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74563404"
 ---
 # <a name="tutorial-configure-slack-to-use-intune-for-emm-and-app-configuration"></a>Tutorial: configurar a margem de atraso para usar o Intune para EMM e a configuração de aplicativo
 
 A margem de atraso é um aplicativo de colaboração que você pode usar com Microsoft Intune.   
 
-Neste tutorial, você vai:
+Neste tutorial, irá:
 > [!div class="checklist"]
 > - Defina o Intune como o provedor de gerenciamento de mobilidade empresarial (EMM) em sua grade empresarial de margem de atraso. Você poderá limitar o acesso aos espaços de trabalho do seu plano de grade para dispositivos gerenciados do Intune.
 > - Crie políticas de configuração de aplicativo para gerenciar a margem de atraso do aplicativo EMM no iOS e o aplicativo de margem de atraso para dispositivos de perfil de trabalho do Android.
@@ -66,7 +66,7 @@ Adicione a margem de atraso do EMM como um aplicativo iOS gerenciado no Intune e
     - **Disponível para dispositivos registrados** se você escolher "todos os membros (incluindo convidados)" ou
     - **Disponível com ou sem registro** se você escolher "todos os membros (exceto convidados)" ou "opcional".
 9. Selecione **grupos incluídos** e, em tornar este aplicativo disponível para todos os usuários, selecione **Sim**.
-10. Clique em **OK**e em **OK** novamente.
+10. Clique em **OK** e, em seguida, clique novamente em **OK**.
 11. Clique em **Guardar**.
 
 ### <a name="add-an-app-configuration-policy-for-slack-for-emm"></a>Adicionar uma política de configuração de aplicativo para a margem de atraso do EMM
@@ -117,7 +117,7 @@ Adicione a margem de atraso como um aplicativo gerenciado do Google Play no Intu
     - **Disponível para dispositivos registrados** se você escolher "todos os membros (incluindo convidados)" ou
     - **Disponível com ou sem registro** se você escolher "todos os membros (exceto convidados)" ou "opcional".
 8. Selecione grupos incluídos e, em tornar este aplicativo disponível para todos os usuários, selecione **Sim**.
-9. Clique em **OK**e em **OK** novamente.
+9. Clique em **OK** e, em seguida, clique novamente em **OK**.
 10. Clique em **Guardar**.
 
 ### <a name="add-an-app-configuration-policy-for-slack"></a>Adicionar uma política de configuração de aplicativo para a margem de atraso
@@ -151,7 +151,7 @@ Crie uma política de conformidade de dispositivos do Intune para definir as con
     - Para máximo de minutos após o bloqueio de tela antes que a senha seja necessária, escolha **15 minutos**.
     - Para expiração da senha (dias), digite 41.
     - Para o número de senhas anteriores para evitar a reutilização, insira 5.
-8. Clique em **OK**e em **OK** novamente.
+8. Clique em **OK** e, em seguida, clique novamente em **OK**.
 9. Clique em **Criar**.
 
 ## <a name="launch-slack"></a>Lançar margem de atraso

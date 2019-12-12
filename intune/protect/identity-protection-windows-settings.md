@@ -17,10 +17,10 @@ ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: shpate
 ms.openlocfilehash: f49ea9e1e59fadcb90a773e362ec3ef41e25ab63
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72502237"
 ---
 # <a name="windows-10-device-settings-to-enable-windows-hello-for-business-in-intune"></a>Configurações do dispositivo Windows 10 para habilitar o Windows Hello para empresas no Intune
@@ -115,7 +115,7 @@ Para saber mais sobre os perfis do Windows Hello para empresas no Intune, consul
 
     **Padrão**: não configurado
 
-  - **Utilizar anti-spoofing avançado, quando disponível**  
+  - **Usar antifalsificação avançada, quando disponível**  
     Configura se as funcionalidades de anti-spoofing do Windows Hello são utilizadas nos dispositivos que o suportam (por exemplo, detetar uma fotografia de um rosto em vez de um rosto real).  
     - **Habilitar** -o Windows exige que todos os usuários usem a antifalsificação para recursos faciais quando houver suporte.
     - **Não configurado** -o Windows honra as configurações anti-falsificação no dispositivo.

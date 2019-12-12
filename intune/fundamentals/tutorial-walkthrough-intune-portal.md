@@ -19,17 +19,17 @@ ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 9197d4f96eae1041b00b07110ef421a12a4fe338
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73712990"
 ---
 # <a name="tutorial-walkthrough-of-microsoft-intune-in-the-azure-portal"></a>Tutorial: passo a passos de Microsoft Intune no portal do Azure
 
 O [Azure](https://docs.microsoft.com/learn/modules/welcome-to-azure) contém mais de 100 serviços para ajudá-lo com uma variedade de cenários e possibilidades de computação em nuvem. Microsoft Intune é um dos vários serviços disponíveis no Azure. O Intune ajuda a garantir que os dispositivos, aplicativos e dados da sua empresa atendam aos requisitos de segurança da sua empresa. Você tem o controle para definir quais requisitos precisam ser verificados e o que acontece quando esses requisitos não são atendidos. Pode encontrar o serviço Microsoft Intune no [portal do Azure](https://portal.azure.com). A compreensão dos recursos disponíveis no Intune ajudará você a realizar várias tarefas de MDM (gerenciamento de dispositivo móvel) e MAM (gerenciamento de aplicativo móvel).
 
-Neste tutorial, você vai:
+Neste tutorial, irá:
 > [!div class="checklist"]
 > * Microsoft Intune de Tour
 > * Configurar o portal do Azure

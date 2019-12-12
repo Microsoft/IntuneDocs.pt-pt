@@ -17,10 +17,10 @@ ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 1d3a2ce9e5a31e989452141a094b70b5e75cf464
-ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/22/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74409978"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Usar linhas de base de segurança para configurar dispositivos Windows 10 no Intune
@@ -38,7 +38,7 @@ Tipos de linha de base separados podem incluir as mesmas configurações, mas us
 > [!NOTE]
 > A Microsoft não recomenda o uso de versões prévias de linhas de base de segurança em um ambiente de produção. As configurações em uma linha de base de visualização podem mudar ao longo do curso da versão prévia.
 
-As linhas de base de segurança podem ajudá-lo a ter um fluxo de trabalho seguro de ponta a ponta ao trabalhar com Microsoft 365. Alguns dos benefícios incluem:
+As linhas de base de segurança podem ajudá-lo a ter um fluxo de trabalho seguro de ponta a ponta ao trabalhar com Microsoft 365. Alguns dos benefícios são:
 
 - Uma linha de base de segurança inclui as práticas recomendadas e recomendações sobre configurações que afetam a segurança. Parceiros do Intune com a mesma equipe de segurança do Windows que cria linhas de base de segurança de diretiva de grupo. Essas recomendações são baseadas em orientação e ampla experiência.
 - Se você for novo no Intune e não tiver certeza de onde começar, as linhas de base de segurança lhe dão uma vantagem. Você pode criar e implantar rapidamente um perfil seguro, sabendo que está ajudando a proteger os recursos e os dados da sua organização.
@@ -182,7 +182,7 @@ Após a gravação, depois que a conversão for concluída, a linha de base ser�
    - **Aceitar alterações de linha de base, mas manter minhas personalizações de configuração existentes** – essa opção mantém as personalizações feitas no perfil de linha de base e as aplica à nova versão que você selecionou para usar.
    - **Aceitar alterações de linha de base e descartar personalizações de configuração existentes** -essa opção substitui completamente o seu perfil original. O perfil atualizado usará os valores padrão para todas as configurações.
 
-7. Selecione **Enviar**. As atualizações de perfil para a versão de linha de base selecionada e após a conversão são concluídas, a linha de base é reimplantada imediatamente em grupos atribuídos.
+7. Selecione **submeter**. As atualizações de perfil para a versão de linha de base selecionada e após a conversão são concluídas, a linha de base é reimplantada imediatamente em grupos atribuídos.
 
 ### <a name="remove-a-security-baseline-assignment"></a>Remover uma atribuição de linha de base de segurança
 
@@ -218,7 +218,7 @@ Estritamente falando, não. A equipe de segurança da Microsoft consulta as orga
 
 - A migração do local Active Directory políticas de grupo para uma solução de nuvem pura usando Azure Active Directory (AD) com Microsoft Intune é uma jornada. Para ajudar, há modelos de política de grupo incluídos no [Security Compliance Toolkit](https://docs.microsoft.com/windows/security/threat-protection/security-compliance-toolkit-10) que podem ajudar a gerenciar dispositivos ingressados no AD híbrido e no Azure AD. Esses dispositivos podem obter as configurações de MDM da nuvem (Intune) e as configurações de política de grupo de controladores de domínio locais, conforme necessário.
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Próximos passos
 
 - Exiba as configurações nas versões mais recentes das linhas de base disponíveis:
   - [Linha de base de segurança do MDM](security-baseline-settings-mdm-all.md)

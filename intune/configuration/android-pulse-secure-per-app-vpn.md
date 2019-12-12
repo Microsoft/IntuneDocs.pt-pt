@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 62f418e396c5030a47ea0bcb31914cd4e1069c40
-ms.sourcegitcommit: eb2e420b304c7da9d3be5ef49a676cba66766d2b
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/22/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74319848"
 ---
 # <a name="use-a-microsoft-intune-custom-profile-to-create-a-per-app-vpn-profile-for-android-devices"></a>Utilizar um perfil personalizado do Microsoft Intune para criar um perfil VPN por aplicação para dispositivos Android
@@ -65,7 +65,7 @@ Tome nota do valor **Nome da Ligação** que especificar ao criar o perfil de VP
     - **Tipo de perfil**: selecione **personalizado**.
 
 4. Escolha **Definições** > **Configurar**.
-5. No painel **Definições OMA-URI Personalizadas**, selecione **Adicionar**.
+5. No painel **Definições OMA-URI personalizadas**, selecione **Adicionar**.
     - **Nome**: Insira um nome para a sua configuração.
     - **Descrição:** introduza uma descrição para o perfil. Esta definição é opcional, mas recomendada.
     - **OMA-URI**: Insira `./Vendor/MSFT/VPN/Profile/*Name*/PackageList`, em que *nome* é o nome da conexão que você anotou na etapa 1. Neste exemplo, a cadeia de caracteres é `./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/PackageList`.
@@ -78,7 +78,7 @@ Tome nota do valor **Nome da Ligação** que especificar ao criar o perfil de VP
 
 Use o valor de lista de **bloqueios** para inserir uma listagem de aplicativos que *não podem* usar a conexão VPN. Todas as outras aplicações são ligadas através da VPN. Ou use **o valor da lista de** permissões para inserir uma lista de aplicativos que *podem* usar a conexão VPN. Os aplicativos que não estão na lista não se conectam por meio da VPN.
 
-1. No painel **Definições OMA-URI Personalizadas**, selecione **Adicionar**.
+1. No painel **Definições OMA-URI personalizadas**, selecione **Adicionar**.
 2. Introduza um nome para a definição.
 3. Em **OMA-URI**, insira `./Vendor/MSFT/VPN/Profile/*Name*/Mode`, em que *nome* é o nome do perfil VPN que você anotou na etapa 1. Em nosso exemplo, a cadeia de caracteres é `./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/Mode`.
 4. Em **tipo de dados**, insira **cadeia de caracteres**.

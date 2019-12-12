@@ -19,15 +19,15 @@ search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 5aca7dbae7a74af399bcbf21aec1dd9dd2d1e851
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/22/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74390755"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Como obter suporte para o Microsoft Intune
 
-A Microsoft fornece suporte global técnico, de pré-vendas, de faturação e de subscrição para o Microsoft Intune. O suporte está disponível tanto online como por telefone para subscrições pagas ou de avaliação. O suporte técnico online está disponível em inglês e japonês. O suporte por telefone e suporte de faturação online estão disponíveis em idiomas adicionais.
+A Microsoft fornece suporte global técnico, de pré-vendas, de faturação e de subscrição para o Microsoft Intune. O suporte está disponível tanto online como por telefone para subscrições pagas ou de avaliação. O suporte técnico online está disponível em inglês e japonês. O suporte por telefone e o suporte de faturação online estão disponíveis em idiomas adicionais.
 
 Enquanto administrador do Intune, pode utilizar a opção **Ajuda e Suporte** para enviar um pedido de suporte online do Intune a partir do portal do Azure. Para criar e gerenciar um incidente de suporte, sua conta deve ter uma função Azure Active Directory (Azure AD) que inclua a *ação* **Microsoft. office365. supportTickets**. Para obter informações sobre funções do Microsoft Azure AD e as permissões que são necessários para criar um pedido de suporte, veja as [funções de administrador no Microsoft Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal).
 
@@ -54,7 +54,7 @@ Quando você usa um locatário recém-criado para o Intune, é possível que a *
 
 Os detalhes do erro incluem uma *ID de sessão*, detalhes de *extensão* e muito mais. 
  
-Esse problema ocorre quando você ainda não autenticou sua nova conta de locatário por meio do **centro de administração do M365** em https://admin.microsoft.comou do **portal do Office 365** em https://portal.office.com. Para resolver esse problema, selecione o link para o *centro de administração do M365* na mensagem ou visite https://portal.office.come entre. Após a autenticação em qualquer site, *a ajuda e o suporte* do Intune tornam-se acessíveis.
+Esse problema ocorre quando você ainda não autenticou sua nova conta de locatário por meio do **centro de administração do M365** em https://admin.microsoft.com ou do **portal do Office 365** em https://portal.office.com. Para resolver esse problema, selecione o link para o *centro de administração do M365* na mensagem ou visite https://portal.office.com e entre. Após a autenticação em qualquer site, *a ajuda e o suporte* do Intune tornam-se acessíveis.
 
 
 **Acessar ajuda e suporte**:
@@ -90,7 +90,7 @@ Esse problema ocorre quando você ainda não autenticou sua nova conta de locat�
 
   *Precisa de ajuda?* Abre o painel *Localizar soluções* . No entanto, se você tiver um caso de suporte ativo, a janela será aberta no painel *solicitações de serviço* , onde você poderá exibir detalhes sobre os casos de suporte ativo e fechado.
 
-#### <a name="find-solutions"></a>Encontrar soluções
+#### <a name="find-solutions"></a>Encontre soluções
 
 ![Selecione o painel Localizar soluções](./media/get-support/find-solutions.png)
 

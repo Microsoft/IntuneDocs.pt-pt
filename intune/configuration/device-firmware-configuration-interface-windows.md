@@ -16,10 +16,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 38f02d694f1935e4732805f3ae7c66fd9718057a
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/13/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74059596"
 ---
 # <a name="use-device-firmware-configuration-interface-profiles-on-windows-devices-in-microsoft-intune-public-preview"></a>Usar perfis de interface de configuração de firmware de dispositivo em dispositivos Windows no Microsoft Intune (visualização pública)
@@ -54,7 +54,7 @@ Esta funcionalidade aplica-se a:
 
 ## <a name="create-your-azure-ad-security-groups"></a>Criar seus grupos de segurança do Azure AD
 
-Os perfis de implantação do AutoPilot são atribuídos aos grupos de segurança do Azure AD. Certifique-se de criar grupos que incluam seus dispositivos com suporte DFCI. Para dispositivos DFCI, a maioria das organizações pode criar grupos de dispositivos, em vez de grupos de usuários. Considere os seguintes cenários:
+Os perfis de implantação do AutoPilot são atribuídos aos grupos de segurança do Azure AD. Certifique-se de criar grupos que incluam seus dispositivos com suporte DFCI. Para dispositivos DFCI, a maioria das organizações pode criar grupos de dispositivos, em vez de grupos de usuários. Pondere os seguintes cenários:
 
 - Os recursos humanos (RH) têm diferentes dispositivos Windows. Por motivos de segurança, você não quer que ninguém nesse grupo use a câmera nos dispositivos. Nesse cenário, você pode criar um grupo de usuários de segurança de RH para que a política se aplique aos usuários no grupo RH, seja qual for o tipo de dispositivo.
 - No chão de fábrica, você tem 10 dispositivos. Em todos os dispositivos, você deseja impedir a inicialização dos dispositivos de um dispositivo USB. Nesse cenário, você pode criar um grupo de dispositivos de segurança e adicionar esses 10 dispositivos ao grupo.
@@ -148,7 +148,7 @@ Você também pode [sinalizar dispositivos para fazer check-in](../remote-action
 
 ## <a name="reuse-retire-or-recover-the-device"></a>Reutilizar, desativar ou recuperar o dispositivo
 
-### <a name="reuse"></a>Posterior
+### <a name="reuse"></a>Reutilizar
 
 Se você planeja redefinir o Windows para realocar o dispositivo, [Limpe o dispositivo](../remote-actions/devices-wipe.md). **Não** remova o registro de dispositivo do piloto automático.
 
@@ -167,7 +167,7 @@ Estas etapas desbloqueiam os menus UEFI (BIOS) do dispositivo. Os valores perman
 
 Agora você está pronto para apagar o dispositivo. Depois que o dispositivo for apagado, exclua o registro do piloto automático. A exclusão do registro impede que o dispositivo seja reregistrado automaticamente quando reinicializa.
 
-### <a name="recover"></a>Recupera
+### <a name="recover"></a>Recuperar
 
 Se você apagar um dispositivo e excluir o registro do piloto automático antes de desbloquear os menus UEFI (BIOS), os menus permanecerão bloqueados. O Intune não pode enviar atualizações de perfil para desbloqueá-lo.
 

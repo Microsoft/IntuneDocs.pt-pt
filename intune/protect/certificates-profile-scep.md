@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 321595a2ce8849b3d150b68f9dcc38dfda6ad940
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/22/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74390291"
 ---
 # <a name="create-and-assign-scep-certificate-profiles-in-intune"></a>Criar e atribuir perfis de certificado SCEP no Intune
@@ -137,7 +137,7 @@ Depois de [configurar sua infraestrutura](certificates-scep-configure.md) para d
 
         Selecione um dos atributos disponíveis:
 
-        - **Endereço de correio eletrónico**
+        - **Endereço de e-mail**
         - **Nome principal do usuário (UPN)**
 
         Por exemplo, os tipos de certificado de usuário podem incluir o nome principal do usuário (UPN) no nome alternativo da entidade. Se um certificado de cliente for utilizado para autenticar um Servidor de Políticas de Rede, defina o nome alternativo do requerente como UPN.
@@ -148,7 +148,7 @@ Depois de [configurar sua infraestrutura](certificates-scep-configure.md) para d
 
         Os atributos disponíveis incluem:
 
-        - **Endereço de correio eletrónico**
+        - **Endereço de e-mail**
         - **Nome principal do usuário (UPN)**
         - **DNS**
 
@@ -194,8 +194,8 @@ Depois de [configurar sua infraestrutura](certificates-scep-configure.md) para d
 
      Selecione as opções de uso de chave para o certificado:
 
-     - **Assinatura digital**: permita a troca de chaves somente quando uma assinatura digital ajudar a proteger a chave.
-     - **Codificação de chave**: permitir troca de chaves somente quando a chave for criptografada.
+     - **Assinatura digital**: permitir a troca de chaves apenas quando uma assinatura digital ajudar a proteger a chave.
+     - **Cifragem de chaves**: permitir a troca de chaves apenas quando a chave for encriptada.
 
    - **Tamanho da chave (bits)** :
 
@@ -223,7 +223,7 @@ Depois de [configurar sua infraestrutura](certificates-scep-configure.md) para d
 
      Insira uma ou mais URLs para os servidores NDES que emitem certificados via SCEP. Por exemplo, digite algo como *https://ndes.contoso.com/certsrv/mscep/mscep.dll* . Você pode adicionar outras URLs de SCEP para balanceamento de carga conforme necessário, pois as URLs são enviadas aleatoriamente para o dispositivo com o perfil. Se um dos servidores de SCEP não estiver disponível, a solicitação de SCEP falhará e será possível que, em check-ins posteriores do dispositivo, a solicitação de certificado possa ser feita no mesmo servidor que está inativo.
 
-8. Selecione **OK**e, em seguida, selecione **criar**. O perfil é criado e aparece na lista de *perfis de configuração do dispositivo* .
+8. Selecione **OK** e, em seguida, selecione **Criar**. O perfil é criado e aparece na lista de *perfis de configuração do dispositivo* .
 
 ### <a name="avoid-certificate-signing-requests-with-escaped-special-characters"></a>Evitar solicitações de assinatura de certificado com caracteres especiais de escape
 
@@ -282,6 +282,6 @@ Atribua perfis de certificado SCEP da mesma maneira que [implanta perfis de disp
 > [!NOTE]
 > Em dispositivos iOS, quando um perfil de certificado SCEP é associado a um perfil adicional, como um perfil de Wi-Fi ou VPN, o dispositivo recebe um certificado para cada um desses perfis adicionais. Isso resulta no dispositivo iOS com vários certificados entregues pela solicitação de certificado SCEP.  Se desejar um único certificado, você deverá usar certificados PKCS em vez de certificados SCEP.  Isso se deve às diferenças em como os certificados SCEP e PKCS são entregues aos dispositivos.
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Próximos passos
 
 [Atribuir perfis](../configuration/device-profile-assign.md)

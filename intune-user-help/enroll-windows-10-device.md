@@ -20,10 +20,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: ca8b24a1e8d0da4386ab185533fec38d9b34eb21
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72506265"
 ---
 # <a name="enroll-windows-10-devices-with-intune-company-portal"></a>Registrar dispositivos Windows 10 com o Portal da Empresa do Intune
@@ -39,14 +39,14 @@ Estas etapas descrevem como registrar um dispositivo que é executado no Windows
 
 1. Aceda a **Iniciar**. Se você estiver em um dispositivo Windows 10 Mobile, vá para a lista **todos os aplicativos** .
 
-2. Abra o aplicativo **configurações** . Se o aplicativo não estiver prontamente disponível na sua lista de aplicativos, vá para a barra de pesquisa e digite "configurações".
+2. Abra a aplicação **Definições**. Se o aplicativo não estiver prontamente disponível na sua lista de aplicativos, vá para a barra de pesquisa e digite "configurações".
 
 3. Selecione **Contas** > **Aceder a profiss./escolar** > **Ligar**.  
 
 
     ![Selecione Contas, Aceder a profiss./escolar](./media/w10-enroll-rs1-connect-to-work-or-school.png)  
 
-4. Para acessar a página de entrada do Intune da sua organização, insira seu endereço de email corporativo ou de estudante. Em seguida, selecione **Avançar**.  
+4. Para acessar a página de entrada do Intune da sua organização, insira seu endereço de email corporativo ou de estudante. e selecione **Seguinte**.  
 
 
    ![Introduza a sua conta profissional ou escolar](./media/w10-enroll-rs1-set-up-work-or-school-account.png)  
@@ -62,7 +62,7 @@ Estas etapas descrevem como registrar um dispositivo que é executado no Windows
 
 7. Tudo pronto **!** selecione **Concluído**. O dispositivo está agora inscrito.  
 
-8. Para verificar a conexão novamente, volte para **configurações** > **contas** > **acessam trabalho ou escola**.  Sua conta agora deve estar listada.  
+8. Para verificar a conexão novamente, volte para **configurações** > **contas** > **acessar trabalho ou escola**.  Sua conta agora deve estar listada.  
 
 
     ![Validar a definição correta da ligação](./media/w10-enroll-rs1-validate-successful-enrollment.png)  
@@ -74,7 +74,7 @@ Estas etapas descrevem como registrar um dispositivo que é executado no Windows
 
 1. Aceda a **Iniciar**. Se você estiver em um dispositivo Windows 10 Mobile, vá para a lista **todos os aplicativos** .
 
-2. Abra o aplicativo **configurações** . Se o aplicativo não estiver prontamente disponível na sua lista de aplicativos, vá para a barra de pesquisa e digite "configurações".
+2. Abra a aplicação **Definições**. Se o aplicativo não estiver prontamente disponível na sua lista de aplicativos, vá para a barra de pesquisa e digite "configurações".
 
 3. Selecione **contas** > **sua conta**.  
 

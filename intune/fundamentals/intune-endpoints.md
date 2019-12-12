@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 2503013e6ca0d907a05c81f895b44878784dbbd4
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72502717"
 ---
 # <a name="network-endpoints-for-microsoft-intune"></a>Pontos de extremidade de rede para Microsoft Intune  
@@ -95,27 +95,27 @@ Se você estiver usando o Intune para implantar scripts do PowerShell ou aplicat
 
 |ASU | Nome do armazenamento | CDN |
 | --- | --- |--- |
-| AMSUA0601 | prodmsua06data | https: \//prodmsua06data. azureedge. net |
-| AMSUA0602 | prodamsua0602data | https: \//prodamsua0602data. azureedge. net |
-| AMSUA0101 | prodmsua01data | https: \//prodmsua01data. azureedge. net |
-| AMSUA0201 | prodmsua02data | https: \//prodmsua02data. azureedge. net |
-| AMSUA0202 | Prodmsua0202rcdata | https: \//prodamsua0202data. azureedge. net/ |
-| AMSUA0401 | prodmsua04data | https: \//prodmsua04data. azureedge. net |
-| AMSUA0402 | Prodmsua0402rcdata | https: \//prodamsua0402data. azureedge. net/ |
-| AMSUA0501 | prodmsua05data | https: \//prodmsua05data. azureedge. net |
-| AMSUA0502 | prodmsua0502data | https: \//prodmsua0502data. azureedge. net |
-| AMSUB0101 | prodmsub01data | https: \//prodmsub01data. azureedge. net |
-| AMSUB0102 | prodamsub0102data | https: \//prodamsub0102data. azureedge. net |
-| AMSUB0201 | prodmsub02data | https: \//prodmsub02data. azureedge. net |
-| AMSUB0202 | Prodmsub0202rcdata | https: \//prodamsub0202data. azureedge. net |
-| AMSUB0301 | Prodmsub03data2 | https: \//prodmsub03data2. azureedge. net |
-| AMSUB0302 | Prodmsub0302rcdata | https: \//prodamsub0302data. azureedge. net |
-| AMSUB0501 | prodmsub05data | https: \//prodmsub05data. azureedge. net |
-| AMSUC0101 | prodmsuc01data | https: \//prodmsuc01data. azureedge. net |
-| AMSUC0201 | prodmsuc02data | https: \//prodmsuc02data. azureedge. net |
-| AMSUC0301 | prodmsuc03data | https: \//prodmsuc03data. azureedge. net |
-| AMSUC0501 | prodmsuc05data | https: \//prodmsuc05data. azureedge. net |
-| AMSUA0701 | pemsua07rcdata | https: \//pemsua07data. azureedge. net |
+| AMSUA0601 | prodmsua06data | https:\//prodmsua06data.azureedge.net |
+| AMSUA0602 | prodamsua0602data | https:\//prodamsua0602data.azureedge.net |
+| AMSUA0101 | prodmsua01data | https:\//prodmsua01data.azureedge.net |
+| AMSUA0201 | prodmsua02data | https:\//prodmsua02data.azureedge.net |
+| AMSUA0202 | Prodmsua0202rcdata | https:\//prodamsua0202data.azureedge.net/ |
+| AMSUA0401 | prodmsua04data | https:\//prodmsua04data.azureedge.net |
+| AMSUA0402 | Prodmsua0402rcdata | https:\//prodamsua0402data.azureedge.net/ |
+| AMSUA0501 | prodmsua05data | https:\//prodmsua05data.azureedge.net |
+| AMSUA0502 | prodmsua0502data | https:\//prodmsua0502data.azureedge.net |
+| AMSUB0101 | prodmsub01data | https:\//prodmsub01data.azureedge.net |
+| AMSUB0102 | prodamsub0102data | https:\//prodamsub0102data.azureedge.net |
+| AMSUB0201 | prodmsub02data | https:\//prodmsub02data.azureedge.net |
+| AMSUB0202 | Prodmsub0202rcdata | https:\//prodamsub0202data.azureedge.net |
+| AMSUB0301 | Prodmsub03data2 | https:\//prodmsub03data2.azureedge.net |
+| AMSUB0302 | Prodmsub0302rcdata | https:\//prodamsub0302data.azureedge.net |
+| AMSUB0501 | prodmsub05data | https:\//prodmsub05data.azureedge.net |
+| AMSUC0101 | prodmsuc01data | https:\//prodmsuc01data.azureedge.net |
+| AMSUC0201 | prodmsuc02data | https:\//prodmsuc02data.azureedge.net |
+| AMSUC0301 | prodmsuc03data | https:\//prodmsuc03data.azureedge.net |
+| AMSUC0501 | prodmsuc05data | https:\//prodmsuc05data.azureedge.net |
+| AMSUA0701 | pemsua07rcdata | https:\//pemsua07data.azureedge.net |
 
 ## <a name="windows-push-notification-services-wns"></a>Windows Push Notification Services (WNS)  
 
@@ -135,11 +135,11 @@ Para usar a otimização de entrega, você deve permitir solicitações de inter
 
 Permitir os nomes de host a seguir por meio do firewall para dar suporte à otimização de entrega.
 Para a comunicação entre clientes e o serviço de nuvem de otimização de entrega:
-- \*.do.dsp.mp.microsoft.com
+- \*. do.dsp.mp.microsoft.com
 
 Para metadados de otimização de entrega:
-- \*.dl.delivery.mp.microsoft.com
-- \*.emdl.ws.microsoft.com
+- \*. dl.delivery.mp.microsoft.com
+- \*. emdl.ws.microsoft.com
 
 ## <a name="apple-device-network-information"></a>Informações da rede de dispositivos Apple  
 

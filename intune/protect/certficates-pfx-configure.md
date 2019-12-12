@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 3db085e6e88f8f57eb0276afa77290df8574568f
-ms.sourcegitcommit: b5e719fb507b1bc4774674e76c856c435e69f68c
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/08/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73801733"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>Configurar e utilizar certificados PKCS com o Intune
@@ -57,7 +57,7 @@ Para usar certificados PKCS com o Intune, você precisará da seguinte infraestr
   Uma cópia exportada do certificado de raiz da AC Empresarial.
 
 - **Microsoft Intune Certificate Connector** (também chamado de *conector de certificado NDES*):  
-  No portal do Intune, vá para **configuração do dispositivo**  > **conectores de certificado**  > **Adicionar**e siga as *etapas para instalar o conector para #12 PKCS*. Use o link de download no portal para iniciar o download do instalador do conector de certificado **NDESConnectorSetup. exe**.  
+  No portal do Intune, vá para **configuração do dispositivo** > **conectores de certificado** > **Adicionar**e siga as *etapas para instalar o conector para #12 PKCS*. Use o link de download no portal para iniciar o download do instalador do conector de certificado **NDESConnectorSetup. exe**.  
 
   O Intune dá suporte a até 100 instâncias deste conector por locatário. Cada instância do conectado deve estar em um servidor Windows separado. Você pode instalar uma instância desse conector no mesmo servidor que uma instância do conector de certificado PFX para Microsoft Intune. Quando você usa vários conectores, a infraestrutura do conector dá suporte à alta disponibilidade e ao balanceamento de carga, uma vez que qualquer instância de conector disponível pode processar suas solicitações de certificado PKCS. 
 
@@ -66,7 +66,7 @@ Para usar certificados PKCS com o Intune, você precisará da seguinte infraestr
   O Microsoft Intune Certificate Connector também dá suporte ao modo padrão FIPS (FIPS). O FIPS não é obrigatório, mas pode emitir e revogar certificados quando está ativado.
 
 - **Conector de certificado pfx para Microsoft Intune**:  
-  Se você planeja usar a criptografia de email S/MIME, use o portal do Intune para baixar o *conector de certificado pfx* que dá suporte à importação de certificados PFX.  Vá para **configuração do dispositivo**  > **conectores de certificado**  > **Adicionar**e siga as *etapas para instalar o conector para certificados PFX importados*. Use o link de download no portal para iniciar o download do instalador **PfxCertificateConnectorBootstrapper. exe**. 
+  Se você planeja usar a criptografia de email S/MIME, use o portal do Intune para baixar o *conector de certificado pfx* que dá suporte à importação de certificados PFX.  Vá para **configuração do dispositivo** > **conectores de certificado** > **Adicionar**e siga as *etapas para instalar o conector para certificados PFX importados*. Use o link de download no portal para iniciar o download do instalador **PfxCertificateConnectorBootstrapper. exe**. 
 
   Cada locatário do Intune dá suporte a uma única instância desse conector. Você pode instalar esse conector no mesmo servidor que uma instância do conector de certificado Microsoft Intune.
 
@@ -93,7 +93,7 @@ Para autenticar um dispositivo com VPN, WiFi ou outros recursos, um dispositivo 
 **Use uma linha de comando**:  
 1. Faça logon no servidor de autoridade de certificação raiz com a conta de administrador.
  
-2. Vá para **iniciar** > **executar**e, em seguida, digite **cmd** para abrir o prompt de comando. 
+2. Vá para **iniciar** > **executar**e, em seguida, insira **cmd** para abrir o prompt de comando. 
     
 3. Especifique **certutil-ca. cert CA_Name. cer** para exportar o certificado raiz como um arquivo chamado *CA_Name. cer*.
 
@@ -232,7 +232,7 @@ Para autenticar um dispositivo com VPN, WiFi ou outros recursos, um dispositivo 
 Quando você cria um perfil de certificado PKCS do macOS, as opções para o formato de nome da entidade dependem do tipo de certificado que você selecionar, seja **usuário** ou **dispositivo**.  
 
 > [!NOTE]  
-> Há um problema conhecido para usar o PKCS para obter certificados [que é o mesmo problema mostrado para o SCEP](certificates-profile-scep.md#avoid-certificate-signing-requests-with-escaped-special-characters) quando o nome da entidade na CSR (solicitação de assinatura de certificado) resultante inclui um dos seguintes caracteres como um caractere de escape (continuado por um barra invertida \\):
+> Há um problema conhecido para usar o PKCS para obter certificados [que é o mesmo problema mostrado para o SCEP](certificates-profile-scep.md#avoid-certificate-signing-requests-with-escaped-special-characters) quando o nome da entidade na CSR (solicitação de assinatura de certificado) resultante inclui um dos seguintes caracteres como um caractere de escape (continuado por uma barra invertida \\):
 > - \+
 > - ;
 > - ,

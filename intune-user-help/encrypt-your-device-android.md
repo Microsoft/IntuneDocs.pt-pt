@@ -20,10 +20,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: d2965d6a017d92bd4535a29a2257c0cac5e6deaf
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72506360"
 ---
 # <a name="encrypting-your-android-device"></a>Criptografando seu dispositivo Android
@@ -53,7 +53,7 @@ Se Portal da Empresa ou o aplicativo Microsoft Intune solicitar que você cripto
 
 Dispositivos que executam o Android 4,4 e anterior podem não ter a opção de **inicialização segura** . Nesse caso, conclua as etapas a seguir para criptografar seu dispositivo.
 
-1. Vá para **configurações** > **segurança** > **dispositivo criptografar**. Os rótulos na tela variam de acordo com os dispositivos Android. Se você não vir a opção **criptografar dispositivo** , faça check-in:
+1. Vá para **configurações** > **segurança** > **criptografar dispositivo**. Os rótulos na tela variam de acordo com os dispositivos Android. Se você não vir a opção **criptografar dispositivo** , faça check-in:
     * **Armazenamento** > **criptografia de armazenamento**
     * **Armazenamento** > **tela de bloqueio e segurança** > **outras configurações de segurança** 
 

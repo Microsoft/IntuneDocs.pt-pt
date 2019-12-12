@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: ec800064d109cca42878c79ade6777de9b782015
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/27/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74563494"
 ---
 # <a name="add-android-store-apps-to-microsoft-intune"></a>Adicionar aplicações da loja Android ao Microsoft Intune
@@ -31,7 +31,7 @@ ms.locfileid: "74563494"
 
 Antes de atribuir uma aplicação a um dispositivo ou grupo de utilizadores, tem de primeiro adicionar a aplicação ao Microsoft Intune. 
 
-## <a name="add-an-app"></a>Adicionar um aplicativo
+## <a name="add-an-app"></a>Adicionar uma aplicação
 
 Pode adicionar uma aplicação da loja Android ao Intune a partir do portal do Azure ao fazer o seguinte:
 

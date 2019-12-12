@@ -8,10 +8,10 @@ ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
 ms.openlocfilehash: 7373ca24c1ae1f439096d9bedcb8e81979c95586
-ms.sourcegitcommit: d8bcf1a427035138f7dfe1e4f8b3c971c773dcd8
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/04/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74828828"
 ---
 Esses avisos fornecem informações importantes que podem ajudá-lo a se preparar para futuras alterações e recursos do Intune.

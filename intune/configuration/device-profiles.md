@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: b74cdf29999bccdefaa94c84673b9ea89c335537
-ms.sourcegitcommit: 7001dc5a9cffeb2e161748f9e6dba126bf1cb06f
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/02/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74694952"
 ---
 # <a name="apply-features-and-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Aplicar definições e funcionalidades nos dispositivos com perfis de dispositivo no Microsoft Intune
@@ -161,7 +161,7 @@ Esta funcionalidade suporta:
 
 - O Windows 10 Fall Creators Update e posterior
 
-## <a name="extensions"></a>WMZ
+## <a name="extensions"></a>Extensões
 
 [As extensões de kernel](kernel-extensions-overview-macos.md) permitem que os administradores adicionem recursos ou programas no nível de kernel em dispositivos MacOS. Defina essas configurações para confiar em todas as extensões de um desenvolvedor ou parceiro específico ou permitir extensões de kernel específicas.
 

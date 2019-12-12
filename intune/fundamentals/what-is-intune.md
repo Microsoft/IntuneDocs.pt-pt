@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: get-started
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: c3c03c67a99b78804c999250f8d1148a4b3d1d97
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72504760"
 ---
 # <a name="microsoft-intune-is-an-mdm-and-mam-provider-for-your-devices"></a>Microsoft Intune é um provedor de MDM e MAM para seus dispositivos
@@ -60,7 +60,7 @@ Quando os dispositivos são registrados e gerenciados no Intune, os administrado
 
 - [Aplicar recursos e configurações em seus dispositivos usando perfis de dispositivo](../configuration/device-profiles.md)
 
-- [Proteger dispositivos com Microsoft Intune](../protect/device-protect.md)
+- [Proteger dispositivos com o Microsoft Intune](../protect/device-protect.md)
 
 ## <a name="manage-apps"></a>Gerir aplicações
 

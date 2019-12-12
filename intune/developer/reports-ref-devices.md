@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 36407bda1f74d0c4601f78cedc2af5426e944fee
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72503427"
 ---
 # <a name="reference-for-devices-entities"></a>Referência para as entidades de dispositivos
@@ -85,7 +85,7 @@ A entidade **enrollmentActivity** indica a atividade de um registro de dispositi
 | enrollmentFailureCategoryKey  | Chave da categoria de falha de registro (se o registro falhar).        |
 | enrollmentFailureReasonKey    | Chave do motivo da falha de registro (se o registro falhar).          |
 | osVersion                     | A versão do sistema operacional do dispositivo.                               |
-| Contar                         | Contagem total de atividades de registro que correspondem às classificações acima.  |
+| count                         | Contagem total de atividades de registro que correspondem às classificações acima.  |
 
 ## <a name="enrollmenteventstatuses"></a>enrollmentEventStatuses 
 A entidade **enrollmentEventStatus** indica o resultado de um registro de dispositivo.
@@ -146,7 +146,7 @@ A entidade **EnrollmentFailureReason** indica um motivo mais detalhado para uma 
 | Não disponível                    | O motivo da falha no registro não está disponível.                                                                                                                                                        |
 | Unknown                          | Erro desconhecido.                                                                                                                                                                                         |
 | UserNotLicensed                  | O usuário não foi encontrado no Intune ou não tem uma licença válida.                                                                                                                                     |
-| Userunknown                      | O usuário não é conhecido pelo Intune.                                                                                                                                                                           |
+| UserUnknown                      | O usuário não é conhecido pelo Intune.                                                                                                                                                                           |
 | BulkAlreadyEnrolledDevice        | Somente um usuário pode registrar um dispositivo. Este dispositivo foi registrado anteriormente por outro usuário.                                                                                                                |
 | EnrollmentOnboardingIssue        | A autoridade de MDM (gerenciamento de dispositivo móvel) do Intune ainda não está configurada.                                                                                                                                 |
 | AppleChallengeIssue              | A instalação do perfil de gerenciamento do iOS foi atrasada ou falhou.                                                                                                                                         |
@@ -242,21 +242,21 @@ A entidade **dispositivos** lista todos os dispositivos registrados sob gerencia
 | deviceCategoryKey          | Chave da categoria associada a este dispositivo.                                                                                                                                     |
 | deviceEnrollmentType       | Chave do tipo de inscrição associado a este dispositivo, indicando o método de inscrição.                                                                                             |
 | complianceStateKey         | Chave do estado de Conformidade associado a este dispositivo.                                                                                                                             |
-| osVersion                  | Versão do sistema operacional do dispositivo.                                                                                                                                                |
+| osVersion                  | Versão do sistema operativo do dispositivo.                                                                                                                                                |
 | easDeviceId                | ID do Exchange ActiveSync do dispositivo.                                                                                                                                                  |
 | serialNumber               | SerialNumber                                                                                                                                                                           |
-| ID                     | O Identificador Exclusivo para o utilizador associado ao dispositivo.                                                                                                                           |
+| userId                     | O Identificador Exclusivo para o utilizador associado ao dispositivo.                                                                                                                           |
 | rowLastModifiedDateTimeUTC | A data e hora em UTC em que este dispositivo foi modificado pela última vez no armazém de dados.                                                                                                       |
 | fabricante               | Fabricante do dispositivo                                                                                                                                                             |
 | modelo                      | Modelo do dispositivo                                                                                                                                                                    |
-| Operacional            | Sistema operativo do dispositivo. Windows, iOS, etc.                                                                                                                                   |
+| operatingSystem            | Sistema operativo do dispositivo. Windows, iOS, etc.                                                                                                                                   |
 | isDeleted                  | O binário para mostrar se o dispositivo é eliminado ou não.                                                                                                                                 |
 | androidSecurityPatchLevel  | Nível do patch de segurança para Android                                                                                                                                                           |
 | MEID                       | MEID                                                                                                                                                                                   |
 | isSupervised               | Estado supervisionado do dispositivo                                                                                                                                                               |
 | freeStorageSpaceInBytes    | Armazenamento Livre em Bytes.                                                                                                                                                                 |
 | totalStorageSpaceInBytes   | Armazenamento Total em Bytes.                                                                                                                                                                |
-| criptografiastate            | Estado de encriptação no dispositivo.                                                                                                                                                      |
+| encryptionState            | Estado de encriptação no dispositivo.                                                                                                                                                      |
 | subscriberCarrier          | Operadora subscritora do dispositivo                                                                                                                                                       |
 | phoneNumber                | Número de telefone do dispositivo                                                                                                                                                             |
 | IMEI                       | IMEI                                                                                                                                                                                   |

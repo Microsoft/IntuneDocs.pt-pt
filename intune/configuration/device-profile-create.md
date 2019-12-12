@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/04/2019
+ms.date: 12/05/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b1d6b88b2ff6404f6c60a1c27c167c0721fa82bf
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 71f2bc855673b6b189ed7581b979527485e86083
+ms.sourcegitcommit: 66e284fe092e19c1da72b4b770e45bf25ac7910c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 12/05/2019
-ms.locfileid: "74832600"
+ms.locfileid: "74860388"
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>Criar um perfil de dispositivo no Microsoft Intune
 
@@ -93,7 +93,7 @@ Este artigo:
 
 ## <a name="scope-tags"></a>Scope tags (Etiquetas de âmbito)
 
-Depois de adicionar as definições, também pode adicionar uma etiqueta de âmbito ao perfil. As etiquetas de âmbito são uma ótima forma de atribuir e filtrar políticas para grupos específicos, tais como RH ou Todos os funcionários dos EUA.
+Depois de adicionar as definições, também pode adicionar uma etiqueta de âmbito ao perfil. As marcas de escopo filtram perfis para grupos de ti específicos, como `US-NC IT Team` ou `JohnGlenn_ITDepartment`.
 
 Para obter mais informações sobre etiquetas de âmbito e o que pode fazer, veja [Utilizar RBAC e etiquetas de âmbito para TI distribuídas](../fundamentals/scope-tags.md).
 

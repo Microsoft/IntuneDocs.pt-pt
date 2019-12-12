@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 42d17c15a2a32f828c5715dfad51f34c5e531e76
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72507543"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Políticas de configuração de aplicações para o Microsoft Intune
@@ -85,19 +85,19 @@ Você pode validar a política de configuração de aplicativo usando os três m
 
       ![Segunda captura de tela do status de instalação do dispositivo](./media/app-configuration-policies-overview/device-install-status-2.png)
 
-      Além disso, no **Intune** -> **dispositivos** -> **todos os dispositivos** no lado esquerdo da tela, a opção de **configuração de aplicativo** exibirá todas as políticas atribuídas e seu estado:
+      Além disso, em **dispositivos** -> do **Intune** -> **todos os dispositivos** no lado esquerdo da tela, a opção de **configuração de aplicativo** exibirá todas as políticas atribuídas e seu estado:
 
       ![Captura de tela da configuração do aplicativo](./media/app-configuration-policies-overview/app-configuration.png)
 
-## <a name="diagnostic-logs"></a>Logs de diagnóstico
+## <a name="diagnostic-logs"></a>Registos de diagnóstico
 
 ### <a name="ios-configuration-on-unmanaged-devices"></a>configuração do iOS em dispositivos não gerenciados
 
 Você pode validar a configuração do iOS com o **log de diagnóstico do Intune** em dispositivos não gerenciados para a configuração do aplicativo gerenciado.
 
 1. Se ainda não estiver instalado no dispositivo, baixe e instale o **Intune Managed browser** da loja de aplicativos. Para obter mais informações, consulte [Microsoft Intune aplicativos protegidos](apps-supported-intune-apps.md).
-2. Inicie o **Intune Managed browser** e selecione **cerca**de  > **intunehelp** na barra de navegação.
-3. Clique em **introdução**.
+2. Inicie o **Intune Managed browser** e selecione **cerca** de > **intunehelp** na barra de navegação.
+3. Clique em **Get Started** (Começar).
 4. Clique em **compartilhar logs**.
 5. Use o aplicativo de email de sua escolha para enviar o log para você mesmo para que eles possam ser exibidos em seu computador. 
 6. Examine o **IntuneMAMDiagnostics. txt** no Visualizador de arquivos de texto.
@@ -140,8 +140,8 @@ Os detalhes de configuração do aplicativo devem corresponder às políticas de
 Você pode validar a configuração do iOS com o **log de diagnóstico do Intune** em dispositivos gerenciados para a configuração do aplicativo gerenciado.
 
 1. Se ainda não estiver instalado no dispositivo, baixe e instale o **Intune Managed browser** da loja de aplicativos. Para obter mais informações, consulte [Microsoft Intune aplicativos protegidos](apps-supported-intune-apps.md).
-2. Inicie o **Intune Managed browser** e selecione **cerca**de  > **intunehelp** na barra de navegação.
-3. Clique em **introdução**.
+2. Inicie o **Intune Managed browser** e selecione **cerca** de > **intunehelp** na barra de navegação.
+3. Clique em **Get Started** (Começar).
 4. Clique em **compartilhar logs**.
 5. Use o aplicativo de email de sua escolha para enviar o log para você mesmo para que eles possam ser exibidos em seu computador. 
 6. Examine o **IntuneMAMDiagnostics. txt** no Visualizador de arquivos de texto.
@@ -151,7 +151,7 @@ Você pode validar a configuração do iOS com o **log de diagnóstico do Intune
 
 Você pode validar a configuração do iOS com o **log de diagnóstico do Intune** em dispositivos gerenciados para a configuração do aplicativo gerenciado.
 
-Para coletar logs de um dispositivo Android, você ou o usuário final deve baixar os logs do dispositivo por meio de uma conexão USB (ou o **Explorador de arquivos** equivalente no dispositivo). Aqui estão as etapas:
+Para coletar logs de um dispositivo Android, você ou o usuário final deve baixar os logs do dispositivo por meio de uma conexão USB (ou o **Explorador de arquivos** equivalente no dispositivo). Eis os passos:
 
 1. Conecte o dispositivo Android ao computador com o cabo USB.
 2. No computador, procure um diretório com o nome do seu dispositivo. Nesse diretório, localize `Android Device\Phone\Android\data\com.microsoft.windowsintune.companyportal`.

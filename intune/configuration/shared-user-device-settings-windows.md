@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/01/2019
+ms.date: 12/05/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0e59a4ba7a929df448eddaf36038c2d6deaa0a7a
-ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
+ms.openlocfilehash: 96a89301bda738f57920b8d4e233663678e3fc91
+ms.sourcegitcommit: 66e284fe092e19c1da72b4b770e45bf25ac7910c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74547925"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74860283"
 ---
 # <a name="windows-10-and-later-settings-to-manage-shared-devices-using-intune"></a>Configurações do Windows 10 e posteriores para gerenciar dispositivos compartilhados usando o Intune
 
@@ -40,6 +40,8 @@ Para obter mais informações sobre esse recurso no Intune, consulte [controlar 
 
 ## <a name="shared-multi-user-device-settings"></a>Configurações de dispositivo de vários usuários compartilhado
 
+Essas configurações usam o [CSP SharedPC](https://docs.microsoft.com/windows/client-management/mdm/sharedpc-csp).
+
 - **Modo de PC compartilhado**: escolha **habilitar** para ativar o modo de PC compartilhado. Nesse modo, apenas um usuário entra no dispositivo por vez. Outro usuário não pode entrar até o primeiro usuário sair. **Não configurado** (padrão) deixa essa configuração não gerenciada pelo Intune e não envia nenhuma política para controlar essa configuração em um dispositivo.
 - **Conta de convidado**: escolha criar uma opção de convidado na tela de entrada. As contas de convidado não exigem nenhuma credencial ou autenticação de usuário. Essa configuração cria uma nova conta local cada vez que é usada. As opções são:
   - **Convidado**: cria uma conta de convidado localmente no dispositivo.
@@ -54,12 +56,16 @@ Para obter mais informações sobre esse recurso no Intune, consulte [controlar 
 
 - **Armazenamento local**: escolha **habilitado** para impedir que os usuários salvem e exibam arquivos no disco rígido do dispositivo. Escolha **desabilitado** para permitir que os usuários vejam e salvem arquivos localmente usando o explorador de arquivos. **Não configurado** (padrão) deixa essa configuração não gerenciada pelo Intune e não envia nenhuma política para controlar essa configuração em um dispositivo.
 - **Políticas de energia**: quando definido como **habilitado**, os usuários não podem desativar a hibernação, não podem substituir todas as ações de suspensão (como fechar a tampa) e não podem alterar as configurações de energia. Quando definido como **desabilitado**, os usuários podem hibernar o dispositivo, pode fechar a tampa para suspender o dispositivo e alterar as configurações de energia. **Não configurado** (padrão) deixa essa configuração não gerenciada pelo Intune e não envia nenhuma política para controlar essa configuração em um dispositivo.
-- **Tempo limite de suspensão (em segundos)** : Insira o número de segundos inativos (0-100) antes de o dispositivo entrar no modo de suspensão. Se você não definir uma hora, o dispositivo vai para o estado de suspensão após 60 minutos.
+- **Tempo limite de suspensão (em segundos)** : Insira o número de segundos inativos (0-18000) antes de o dispositivo entrar no modo de suspensão. `0` significa que o dispositivo nunca é suspenso. Se você não definir uma hora, o dispositivo vai para o estado de suspensão após 3600 segundos (60 minutos).
 - **Entrar quando o PC é ativado**: Defina como **habilitado** para exigir que os usuários entrem com uma senha quando o dispositivo sair do modo de suspensão. Escolha **desabilitado** para que os usuários não precisem inserir seu nome de usuário e senha. **Não configurado** (padrão) deixa essa configuração não gerenciada pelo Intune e não envia nenhuma política para controlar essa configuração em um dispositivo.
 - **Hora de início da manutenção (em minutos da meia-noite)** : Insira o tempo em minutos (0-1440) quando as tarefas de manutenção automáticas, como Windows Update, são executadas. A hora de início padrão é meia-noite ou zero (`0`) minutos. Altere a hora de início inserindo uma hora de início em minutos da meia-noite. Por exemplo, se você quiser que a manutenção comece às 2h, insira `120`. Se você quiser que a manutenção comece às 20h, digite `1200`.
 - **Políticas de educação**: escolha **habilitado** para usar as configurações recomendadas para dispositivos usados em escolas, que são mais restritivas. Escolha **desabilitado** para que as políticas de educação padrão e recomendadas não sejam usadas. **Não configurado** (padrão) deixa essa configuração não gerenciada pelo Intune e não envia nenhuma política para controlar essa configuração em um dispositivo.
 
   Para obter mais informações sobre o que as políticas de educação fazem, consulte [recomendações de configuração do Windows 10 para clientes educacionais](https://docs.microsoft.com/education/windows/configure-windows-for-education).
+
+- **Primeira entrada rápida**: escolha **habilitado** para que os usuários tenham uma experiência de entrada rápida. Quando **habilitado**, o dispositivo conecta automaticamente novas contas não administrativas do Azure ad às contas locais do candidato pré-configurado. Escolha **desabilitado** para impedir a primeira experiência de entrada. **Não configurado** (padrão) deixa essa configuração não gerenciada pelo Intune e não envia nenhuma política para controlar essa configuração em um dispositivo.
+
+  [Autenticação/CSP EnableFastFirstSignIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-enablefastfirstsignin)
 
 > [!TIP]
 > [Configurar um PC compartilhado ou convidado](https://docs.microsoft.com/windows/configuration/set-up-shared-or-guest-pc) (abre outro site de documentos) é um excelente recurso nesse recurso do Windows 10, incluindo conceitos e políticas de grupo que podem ser definidos no modo compartilhado.

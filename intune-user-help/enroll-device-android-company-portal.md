@@ -20,10 +20,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 5baf0e9079cc148101a68e5cd2d3a4ed500f567f
-ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/01/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73414769"
 ---
 # <a name="enroll-your-device-with-company-portal"></a>Registrar seu dispositivo com o Portal da Empresa  
@@ -32,9 +32,9 @@ Registre seu dispositivo Android pessoal ou de propriedade corporativa para obte
 > [!VIDEO https://www.youtube.com/embed/k0Q_sGLSx6o?rel=0]
 
 > [!NOTE]
-> O Samsung Knox é um tipo de segurança que determinados dispositivos Samsung usam para proteção adicional, fora do que o Android nativo fornece. Para verificar se você tem um dispositivo Samsung Knox, > vá para **configurações** > **sobre o dispositivo**. Se você não vir a **versão do Knox** listada, você terá um dispositivo Android nativo.
+> O Samsung Knox é um tipo de segurança que determinados dispositivos Samsung usam para proteção adicional, fora do que o Android nativo fornece. Para verificar se você tem um dispositivo Samsung Knox, > vá para **configurações** > **sobre dispositivo**. Se você não vir a **versão do Knox** listada, você terá um dispositivo Android nativo.
 
-## <a name="enroll-device"></a>Registrar dispositivo  
+## <a name="enroll-device"></a>Inscrever o dispositivo  
 Certifique-se de [instalar o aplicativo gratuito portal da empresa do Intune do Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal). 
 
 Durante o registro, você pode ser solicitado a escolher uma categoria que melhor descreva como você usa seu dispositivo. O suporte de sua empresa usa sua resposta para verificar os aplicativos aos quais você tem acesso.  

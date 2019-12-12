@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: c0fac5e9d34890272253eaefd82ed13dc1014ba0
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73713476"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparar as aplicações iOS para as políticas de proteção de aplicações com a Ferramenta de Encapsulamento de Aplicações do Intune
@@ -198,8 +198,8 @@ Pode utilizar os seguintes parâmetros de linha de comandos na Ferramenta de Enc
 |**-p**|`<Path of your provisioning profile for iOS apps>`|
 |**-c**|`<SHA1 hash of the signing certificate>`|
 |**-h**| Mostra informações de utilização detalhadas sobre propriedades de linha de comandos disponíveis para a Ferramenta de Encapsulamento de Aplicações. |
-|**-AA**|(Opcional) `<Authority URI of the input app if the app uses the Azure Active Directory Authentication Library>`, ou seja `login.windows.net/common` |
-|**-AC**|(Opcional) `<Client ID of the input app if the app uses the Azure Active Directory Authentication Library>` é o GUID no campo ID do cliente é da listagem do aplicativo na folha registro do aplicativo. |
+|**-AA**|(Opcional) `<Authority URI of the input app if the app uses the Azure Active Directory Authentication Library>` ou seja `login.windows.net/common` |
+|**-AC**|(Opcional) `<Client ID of the input app if the app uses the Azure Active Directory Authentication Library>` é o GUID no campo ID do cliente é da listagem do seu aplicativo na folha de registro do aplicativo. |
 |**-ar**|(Opcional) `<Redirect/Reply URI of the input app if the app uses the Azure Active Directory Authentication Library>` é o URI de redirecionamento configurado no registro do aplicativo. Normalmente, seria o protocolo de URL do aplicativo que o aplicativo Microsoft Authenticator retornaria após a autenticação orientada. |
 |**-v**| (Opcional) Dá saída de mensagens verbosas para a consola. Recomenda-se a utilização deste sinalizador para depurar quaisquer erros. |
 |**-e**| (Opcional) Utilize este sinalizador para fazer com que a Ferramenta de Encapsulamento de Aplicações remova as elegibilidades em falta à medida que processa a aplicação. Veja [Definição de elegibilidade da aplicação](#setting-app-entitlements) para obter mais detalhes.|

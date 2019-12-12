@@ -19,13 +19,13 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 0edfd9b8ee8b45952d9c22d5365d09d125ea7710
-ms.sourcegitcommit: 78faf608510fbaca09bc410d63df1aa5254dee45
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74784260"
 ---
-# <a name="configure-intune-education-settings-for-shared-ipad-devices"></a>Definir configurações de educação do Intune para dispositivos iPad compartilhados
+# <a name="configure-intune-education-settings-for-shared-ipad-devices"></a>Configurar definições de educação do Intune para dispositivos iPad partilhados
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 

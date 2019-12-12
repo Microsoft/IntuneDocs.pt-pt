@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a8393bbc012861199bd99d97a62ab3e659c15d15
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: 443e1e2fff2a0c4641d3446bf72e455cc92ce784
+ms.sourcegitcommit: ec69e7ccc6e6183862a48c1b03ca6a3bf573f354
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73713237"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "74907292"
 ---
 # <a name="send-custom-notifications-in-intune"></a>Enviar notificações personalizadas no Intune  
 
@@ -45,7 +45,7 @@ As mensagens de notificação personalizadas incluem um título curto e um corpo
 - O dispositivo deve ser registrado como MDM.
 
 **Permissões**:
-- Para enviar notificações aos grupos, sua conta deve ter a seguinte permissão de RBAC no Intune: *organização* > **atualização**.
+- Para enviar notificações para grupos, sua conta deve ter a seguinte permissão de RBAC no Intune: *organização* > **atualização**.
 - Para enviar notificações para um dispositivo, sua conta deve ter a seguinte permissão de RBAC no Intune: *tarefas remotas* > **enviar notificações personalizadas**.
 
 **Criando notificações**:  
@@ -69,7 +69,7 @@ As mensagens de notificação personalizadas incluem um título curto e um corpo
 
 ## <a name="send-a-custom-notification-to-groups"></a>Enviar uma notificação personalizada para grupos  
 
-1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) com uma conta que tenha permissões para criar e enviar notificações e vá para **dispositivos** > **enviar notificações personalizadas**.  
+1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) com uma conta que tenha permissões para criar e enviar notificações e acesse **Administração de locatários** > **notificações personalizadas**.  
 
 2. Na guia noções básicas, especifique o seguinte e, em seguida, selecione **Avançar** para continuar.  
    - **Título** – especifique um título para esta notificação. Os títulos são limitados a 50 caracteres.  
@@ -93,7 +93,7 @@ O Intune não rastreia as notificações personalizadas que você envia e os dis
 
 2. Selecione o dispositivo para o qual você deseja enviar uma notificação.  
 
-3. Na página **visão geral** de dispositivos, selecione **... Mais** opções do lado superior esquerdo da página.  
+3. Na página **visão geral** de dispositivos, selecione a opção **...** (reticências) do lado superior direito da página.  
 
 4. Selecione a ação enviar dispositivo de **notificação personalizado** para abrir o painel *enviar notificação personalizada* onde você especifica os seguintes detalhes da mensagem:  
 

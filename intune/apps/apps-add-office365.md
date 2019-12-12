@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 73848ee8301362f14fe2866a57329425d5e5cfbe
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/27/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74563670"
 ---
 # <a name="add-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Adicionar aplicativos do Office 365 a dispositivos Windows 10 com Microsoft Intune
@@ -142,7 +142,7 @@ Se você tiver selecionado a opção **inserir dados XML** na caixa suspensa **f
 
 Quando tiver concluído, no painel **Adicionar Aplicação**, selecione **Adicionar**. A aplicação que criou é apresentada na lista de aplicações. A próxima etapa é atribuir os aplicativos aos grupos que você escolher. Para obter mais informações, veja [Atribuir aplicações a grupos](~/apps/apps-deploy.md).
 
-## <a name="deployment-details"></a>Detalhes da implantação
+## <a name="deployment-details"></a>Detalhes da implementação
 
 Depois que a política de implantação do Intune for atribuída aos computadores de destino por meio do [provedor de serviços de configuração do Office (CSP)](https://docs.microsoft.com/windows/client-management/mdm/office-csp), o dispositivo final baixará automaticamente o pacote de instalação do local *officecdn.Microsoft.com* . Você verá dois diretórios aparecendo no diretório *arquivos de programas* :
 
@@ -186,7 +186,7 @@ Depois de concluir que a infraestrutura de rede e o Intune funcionam conforme o 
   [O Office instalado com Clique para executar e Windows Installer no mesmo computador não é suportado](https://support.office.com/article/office-installed-with-click-to-run-and-windows-installer-on-same-computer-isn-t-supported-30775ef4-fa77-4f47-98fb-c5826a6926cd)
 - O usuário de conexão deve ter permissão para instalar aplicativos no dispositivo.
 - Confirme se não há nenhum problema com base no log do Windows Visualizador de Eventos **logs do windows** -> **aplicativos**.
-- Capture logs detalhados de instalação do Office durante a instalação. Para fazer isso, siga estas etapas:<br>
+- Capture logs detalhados de instalação do Office durante a instalação. Para o fazer, siga estes passos:<br>
     1. Ative o log detalhado para a instalação do Office nos computadores de destino. Para fazer isso, execute o seguinte comando para modificar o registro:<br>
         `reg add HKLM\SOFTWARE\Microsoft\ClickToRun\OverRide /v LogLevel /t REG_DWORD /d 3`<br>
     2. Implante o pacote do Office 365 nos dispositivos de destino novamente.<br>

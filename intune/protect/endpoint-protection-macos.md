@@ -16,10 +16,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 358a396e762f1f20051abadfc2f3df80f37ca8c8
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72502291"
 ---
 # <a name="macos-endpoint-protection-settings-in-intune"></a>Configurações do MacOS Endpoint Protection no Intune  
@@ -50,11 +50,11 @@ Este artigo mostra as configurações do Endpoint Protection que você pode conf
 
 Utilize a firewall para controlar ligações por aplicação e não por porta. Utilizar definições por aplicação torna mais fácil obter as vantagens de proteção da firewall. Também ajuda a impedir que aplicações indesejáveis controlem as portas da rede que estão abertas para as aplicações legítimas.  
 
-**Genéricos**
+**Geral**
 - **Firewall**  
   Habilite o firewall para configurar como as conexões de entrada são tratadas em seu ambiente.  
   - **Não configurado**  
-  - **Desabilitar**  
+  - **Ativar**  
 
   **Padrão**: não configurado  
 
@@ -76,7 +76,7 @@ Utilize a firewall para controlar ligações por aplicação e não por porta. U
   - **Modo furtivo**  
     Para impedir que o computador responda às solicitações de investigação, habilite o modo furtivo. O dispositivo continua a responder a pedidos recebidos de aplicações autorizadas. São ignorados pedidos inesperados, tais como o protocolo ICMP (ping).  
     - **Não configurado**  
-    - **Desabilitar**  
+    - **Ativar**  
 
     **Padrão**: não configurado  
 
@@ -89,7 +89,7 @@ Para obter mais informações sobre as configurações do Apple FileVault, consu
 - **FileVault**  
   Você pode *habilitar* a criptografia de disco completa usando o XTS-AES 128 com o FileVault em dispositivos que executam o MacOS 10,13 e posterior.  
   - **Não configurado**  
-  - **Desabilitar**  
+  - **Ativar**  
 
   **Padrão**: não configurado  
 

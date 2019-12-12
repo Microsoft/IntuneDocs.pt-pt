@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: ca76ffe0c8fa42f1c2cf24fcdefd287140231220
-ms.sourcegitcommit: b5e719fb507b1bc4774674e76c856c435e69f68c
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/08/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73801632"
 ---
 # <a name="set-up-intune-certificate-connector-for-digicert-pki-platform"></a>Configurar o conector de certificado do Intune para a plataforma de PKI DigiCert
@@ -95,7 +95,7 @@ Se você usar o conector somente com a AC DigiCert, poderá usar as instruções
 
    b. Forneça um nome amigável para o certificado.
 
-   c. Selecione **continuar**.
+   c. Selecione **Continuar**.
 
    d. Use o link fornecido para baixar o certificado RA para o computador local.
 
@@ -115,7 +115,7 @@ Se você usar o conector somente com a AC DigiCert, poderá usar as instruções
 
    g. Selecione o local do certificado RA que você baixou da AC DigiCert e, em seguida, selecione **Avançar**.
 
-   t. Selecione **repositório de certificados pessoais** > **Avançar**.
+   h. Selecione **repositório de certificados pessoais** > **Avançar**.
 
    i. Selecione **concluir** para importar o certificado ra e sua chave privada para o repositório **pessoal do computador local** .
 
@@ -148,7 +148,7 @@ Se você usar o conector somente com a AC DigiCert, poderá usar as instruções
 1. Escolha uma das versões do sistema operacional Windows na lista a seguir e instale-a em um computador:
    * Windows Server 2012 R2 Datacenter
    * Windows Server 2012 R2 Standard
-   * Windows Server 2016 datacenter
+   * Windows Server 2016 Datacenter
    * Windows Server 2016 Standard
 
 2. Crie um utilizador com privilégios administrativos e utilize-o para realizar os passos seguintes.
@@ -193,12 +193,12 @@ Por padrão, o Intune Certificate Connector é instalado em **%ProgramFiles%\Mic
 
 1. Na pasta **NDESConnectorSvc** , abra o arquivo **NDESConnector. exe. config** no bloco de notas.
 
-   a. Atualize o valor da chave `RACertThumbprint` com o valor de impressão digital do certificado que você copiou na seção anterior. Por exemplo:
+   a. Atualize o valor da chave de `RACertThumbprint` com o valor de impressão digital do certificado que você copiou na seção anterior. Por exemplo:
 
         <add key="RACertThumbprint"
         value="EA7A4E0CD1A4F81CF0740527C31A57F6020C17C5"/>
 
-   b. Salve e feche o arquivo.
+   b. Guarde e feche o ficheiro.
 
 2. Abra **Services. msc**:
 
@@ -312,16 +312,16 @@ Depois de concluir as etapas anteriores, o Intune Certificate Connector emitirá
 
 |Atributo | Formatos com suporte do Intune | Formatos compatíveis com a AC do DigiCert Cloud | result |
 | --- | --- | --- | --- |
-| Nome da entidade |O Intune suporta o nome do requerente apenas nos seguintes três formatos: <br><br> 1. nome comum <br> 2. nome comum que inclui email <br> 3. nome comum como email <br><br> Por exemplo: <br><br> `CN = IWUser0 <br><br> E = IWUser0@samplendes.onmicrosoft.com` | A AC DigiCert dá suporte a mais atributos.  Se você quiser selecionar mais atributos, eles deverão ser definidos com valores fixos no modelo de perfil de certificado DigiCert.| Usamos o nome comum ou o email da solicitação de certificado PKCS. <br><br> Qualquer incompatibilidade na seleção de atributo entre o perfil de certificado do Intune e o modelo de perfil de certificado DigiCert resulta em nenhum certificado emitido da AC DigiCert.|
+| Nome do requerente |O Intune suporta o nome do requerente apenas nos seguintes três formatos: <br><br> 1. nome comum <br> 2. nome comum que inclui email <br> 3. nome comum como email <br><br> Por exemplo: <br><br> `CN = IWUser0 <br><br> E = IWUser0@samplendes.onmicrosoft.com` | A AC DigiCert dá suporte a mais atributos.  Se você quiser selecionar mais atributos, eles deverão ser definidos com valores fixos no modelo de perfil de certificado DigiCert.| Usamos o nome comum ou o email da solicitação de certificado PKCS. <br><br> Qualquer incompatibilidade na seleção de atributo entre o perfil de certificado do Intune e o modelo de perfil de certificado DigiCert resulta em nenhum certificado emitido da AC DigiCert.|
 | SAN | O Intune suporta apenas os valores de campo de SAN seguintes: <br><br> **AltNameTypeEmail** <br> **AltNameTypeUpn** <br> **AltNameTypeOtherName** (valor codificado) | A AC de nuvem do DigiCert também dá suporte a esses parâmetros. Se você quiser selecionar mais atributos, eles deverão ser definidos com valores fixos no modelo de perfil de certificado DigiCert. <br><br> **AltNameTypeEmail**: se esse tipo não for encontrado na San, o Intune Certificate Connector usará o valor de **AltNameTypeUpn**.  Se **AltNameTypeUpn** também não for encontrado na San, o Intune Certificate Connector usará o valor do nome da entidade se ele estiver no formato de email.  Se o tipo ainda não for encontrado, o Intune Certificate Connector não emitirá os certificados. <br><br> Exemplo: `RFC822 Name=IWUser0@ndesvenkatb.onmicrosoft.com`  <br><br> **AltNameTypeUpn**: se esse tipo não for encontrado na San, o Intune Certificate Connector usará o valor de **AltNameTypeEmail**. Se **AltNameTypeEmail** também não for encontrado na San, o conector de certificado do Intune usará o valor do nome da entidade se ele estiver no formato de email. Se o tipo ainda não for encontrado, o Intune Certificate Connector não emitirá os certificados.  <br><br> Exemplo: `Other Name: Principal Name=IWUser0@ndesvenkatb.onmicrosoft.com` <br><br> **AltNameTypeOtherName**: se esse tipo não for encontrado na San, o Intune Certificate Connector não emitirá os certificados. <br><br> Exemplo: `Other Name: DS Object Guid=04 12 b8 ba 65 41 f2 d4 07 41 a9 f7 47 08 f3 e4 28 5c ef 2c` <br><br>  O valor desse campo tem suporte apenas no formato codificado (valor hexadecimal) pela AC DigiCert. Para qualquer valor neste campo, o Intune Certificate Connector converte-o em codificação Base64 antes de enviar a solicitação de certificado. *O Intune Certificate Connector não será validado quer este valor esteja codificado ou não.* | Nenhum |
 
 ## <a name="troubleshooting"></a>Resolução de Problemas
 
 Os logs do serviço do conector de certificado do Intune estão disponíveis em **%ProgramFiles%\Microsoft Intune\NDESConnectorSvc\Logs\Logs** no computador do conector NDES. Abra os logs em [SvcTraceViewer](https://docs.microsoft.com/dotnet/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe) e procure exceções ou mensagens de erro.
 
-| Problema/mensagem de erro | Etapas de resolução |
+| Problema/mensagem de erro | Passos de resolução |
 | --- | --- |
-| Não é possível entrar com a conta do administrador de locatário do Intune na interface do usuário do conector NDES. | Isso pode acontecer quando o conector de certificado local não está habilitado no centro de administração do Microsoft Endpoint Manager. Para resolver esse problema: <br><br> 1. entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431). <br> 2. Selecione **Administração de locatários** > **conectores e tokens** > **conectores de certificado**. <br> 3. Localize o conector de certificado e verifique se ele está habilitado. <br><br> Depois de concluir as etapas anteriores, tente entrar com a mesma conta do administrador de locatários do Intune na interface do usuário do conector NDES. |
+| Não é possível entrar com a conta do administrador de locatário do Intune na interface do usuário do conector NDES. | Isso pode acontecer quando o conector de certificado local não está habilitado no centro de administração do Microsoft Endpoint Manager. Para resolver este problema: <br><br> 1. entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431). <br> 2. Selecione **Administração de locatários** > **conectores e tokens** > **conectores de certificado**. <br> 3. Localize o conector de certificado e verifique se ele está habilitado. <br><br> Depois de concluir as etapas anteriores, tente entrar com a mesma conta do administrador de locatários do Intune na interface do usuário do conector NDES. |
 | Não foi possível encontrar o certificado do Conector do NDES. <br><br> System. ArgumentNullException: o valor não pode ser nulo. | O Intune Certificate Connector mostrará este erro se a conta de administrador de inquilino do Intune nunca tiver iniciado sessão na IU do Conector do NDES. <br><br> Se esse erro persistir, reinicie o conector de serviço do Intune. <br><br> 1. abra **Services. msc**. <br> 2. Selecione o **serviço do conector do Intune**. <br> 3. Clique com o botão direito do mouse e selecione **reiniciar**.|
 | Conector do NDES – IssuePfx – Exceção Genérica: <br> System.NullReferenceException: a referência do objeto não foi definida para uma instância de um objeto. | Este erro é transitório. Reinicie o conector de serviço do Intune. <br><br> 1. abra **Services. msc**. <br> 2. Selecione o **serviço do conector do Intune**. <br> 3. Clique com o botão direito do mouse e selecione **reiniciar**. |
 | Provedor de DigiCert-falha ao obter a política de DigiCert. <br><br>"A operação atingiu o tempo limite." | O Intune Certificate Connector recebeu um erro de tempo limite de operação ao se comunicar com a AC DigiCert. Se esse erro continuar a ocorrer, aumente o valor de tempo limite de conexão e tente novamente. <br><br> Para aumentar o tempo limite da conexão: <br> 1. vá para o computador do conector NDES. <br>2. Abra o arquivo **%ProgramFiles%\Microsoft Intune\NDESConnectorSvc\NDESConnector.exe.config** no bloco de notas. <br> 3. Aumente o valor de tempo limite para o seguinte parâmetro: <br><br> `CloudCAConnTimeoutInMilliseconds` <br><br> 4. Reinicie o serviço do Intune Certificate Connector. <br><br> Se o problema persistir, entre em contato com o suporte ao cliente do DigiCert. |

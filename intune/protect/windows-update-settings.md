@@ -16,10 +16,10 @@ ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 3f3359bc5544b3a353271ea17083c8c3acb49742
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/18/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72584456"
 ---
 # <a name="windows-update-settings-for-intune"></a>Configurações do Windows Update para o Intune  
@@ -28,7 +28,7 @@ Exiba as configurações de atualização do Windows 10 que você pode [configur
 
 Ao definir configurações para anéis de atualização do Windows 10 no Intune, você está definindo as configurações de Windows Update. Se uma configuração do Windows Update tiver uma dependência de versão do Windows 10, a dependência de versão será observada nos detalhes de configurações.  
 
-## <a name="update-settings"></a>Atualizar configurações  
+## <a name="update-settings"></a>Definições de atualização  
 
 As configurações de atualização controlam quais bits um dispositivo será baixado e quando. Para obter mais informações sobre o comportamento de cada configuração, consulte a documentação de referência do Windows.  
 
@@ -248,7 +248,7 @@ As configurações de experiência do usuário controlam a experiência do usuá
     **Padrão**: Sim Windows Update CSP: [Update/ConfigureDeadlineNoAutoReboot](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-configuredeadlinenoautoreboot)
 
     Especifica se o dispositivo deve reinicializar automaticamente antes do prazo.
-    - **Ok**
+    - **Sim**
     - **Não**
 
 ### <a name="delivery-optimization-download-mode"></a>Modo de download da otimização de entrega  

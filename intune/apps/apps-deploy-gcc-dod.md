@@ -19,15 +19,15 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 8a6c430ab15c40166e8c3afbccd6fcc7c2c5976d
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72507262"
 ---
 # <a name="deploying-apps-using-intune-on-the-gcc-high-and-dod-environments"></a>Implantando aplicativos usando o Intune nos ambientes GCC de alta e DoD 
 
-Microsoft Intune pode ser usado por administradores de locatários para distribuir aplicativos à sua força de funcionários. A força de funcionários é o funcionário da empresa, os usuários dos aplicativos. Há muitos tipos de aplicativos que podem ser implantados do Intune em ambientes GCC de alta ou DoD. Se um administrador precisar carregar e distribuir um aplicativo do Windows destinado a um público com GCC alto ou DoD que seja personalizado, criado por fornecedores terceirizados ou como um aplicativo offline baixado do [Microsoft Store for Business](https://businessstore.microsoft.com/store), o administrador poderá optar por Distribua-o como um [aplicativo de linha de negócios](apps-add.md#app-types-in-microsoft-intune).  
+Microsoft Intune pode ser usado por administradores de locatários para distribuir aplicativos à sua força de funcionários. A força de funcionários é o funcionário da empresa, os usuários dos aplicativos. Há muitos tipos de aplicativos que podem ser implantados do Intune em ambientes GCC de alta ou DoD. Se um administrador precisar carregar e distribuir um aplicativo do Windows destinado a um público com GCC alto ou DoD que seja personalizado, criado por fornecedores terceirizados ou como um aplicativo offline baixado do [Microsoft Store for Business](https://businessstore.microsoft.com/store), o administrador poderá optar por distribuí-lo como um [aplicativo de linha de negócios](apps-add.md#app-types-in-microsoft-intune).  
 
 > [!NOTE]
 > Para ambientes comerciais, um administrador de locatário pode sincronizar seu armazenamento para empresas com o Intune, no entanto, para ambientes GCC de alta e DoD, esse serviço não está disponível. Os administradores nessa situação devem implantar um aplicativo carregando diretamente no Intune.  
@@ -41,10 +41,10 @@ Para adicionar um aplicativo de linha de negócios destinado a um ambiente de GC
 Se você precisar [baixar um aplicativo licenciado offline](https://docs.microsoft.com/microsoft-store/distribute-offline-apps#download-an-offline-licensed-app) da Microsoft Store para empresas, siga estas etapas para baixar o aplicativo: 
 
 1. Entre na [loja para empresas](https://businessstore.microsoft.com/).
-2. Selecione **gerenciar** **configurações**de  > .
+2. Selecione **gerenciar** **configurações**de > .
 3. Em **experiência de compra**, defina **Mostrar aplicativos offline** como **ativado**.
 
-Ao comprar aplicativos, se uma versão offline estiver disponível, você poderá optar por alterar o tipo de licença para offline. Depois de obter o aplicativo, você pode gerenciá-lo selecionando **gerenciar**produtos  >  **& serviços** na [loja para empresas](https://businessstore.microsoft.com/). Além disso, você pode baixar o aplicativo e suas dependências. Em seguida, você pode implantar esse aplicativo baixado (e suas dependências) para usuários usando o Intune.  
+Ao comprar aplicativos, se uma versão offline estiver disponível, você poderá optar por alterar o tipo de licença para offline. Depois de obter o aplicativo, você pode gerenciá-lo selecionando **gerenciar** > **produtos & serviços** na [loja para empresas](https://businessstore.microsoft.com/). Além disso, você pode baixar o aplicativo e suas dependências. Em seguida, você pode implantar esse aplicativo baixado (e suas dependências) para usuários usando o Intune.  
 
 ## <a name="syncing-intune-to-the-store-for-business"></a>Sincronizando o Intune com a loja para empresas 
 

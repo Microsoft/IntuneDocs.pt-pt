@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 48dc7de86965741d8ed42bd5a5f29f72ae66d4f3
-ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/19/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74188504"
 ---
 # <a name="create-mobile-threat-defense-app-protection-policy-with-intune"></a>Criar política de proteção do aplicativo de defesa contra ameaças móveis com o Intune
@@ -67,6 +67,6 @@ Use o procedimento para [criar uma política de proteção de aplicativo para o 
 - **Atribuições**: atribuir a política a grupos de usuários.  Os dispositivos usados pelos membros do grupo são avaliados para acesso a dados corporativos em aplicativos de destino por meio da proteção de aplicativo do Intune.
 
 
-## <a name="next-steps"></a>Passos Seguintes  
+## <a name="next-steps"></a>Próximos passos  
 
 - Saiba mais sobre a [defesa contra ameaças móveis](~/protect/mobile-threat-defense.md) em Microsoft Intune.

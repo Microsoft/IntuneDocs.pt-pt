@@ -1,5 +1,5 @@
 ---
-title: Configurar o Check Point SandBlast MTD
+title: Configurar a MTD do Check Point SandBlast
 titleSuffix: Microsoft Intune
 description: Saiba como integrar o Intune com a solução de Defesa Contra Ameaças Check Point SandBlast Mobile para controlar o acesso aos seus recursos empresariais a partir de dispositivos móveis.
 keywords: ''
@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: c4cffafd4145ab536157ea55c732ac27bec29538
-ms.sourcegitcommit: b5e719fb507b1bc4774674e76c856c435e69f68c
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/08/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73801611"
 ---
 # <a name="check-point-sandblast-mobile-threat-defense-connector-with-intune"></a>Conector de Defesa Contra Ameaças do Check Point SandBlast Mobile no Intune

@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 644297777e8a103d6ffdc5f025ebf8f29591fda8
-ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/19/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74188458"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Criar uma política de acesso condicional para o Exchange local e o Exchange Online dedicado herdado
@@ -118,6 +118,6 @@ Antes de poder usar o procedimento a seguir para configurar o controle de acesso
 
 Em seguida, crie uma política de conformidade e atribua-a aos usuários do Intune para avaliar seus dispositivos móveis, consulte [introdução à conformidade do dispositivo](device-compliance-get-started.md).
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Próximos passos
 
 [Solucionando problemas do Exchange Connector local do Intune no Microsoft Intune](https://support.microsoft.com/help/4471887)

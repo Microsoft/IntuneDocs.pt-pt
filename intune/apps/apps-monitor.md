@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 72e1f95e2bd81d974d900acbcb0f785bb7966eaa
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/27/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74563706"
 ---
 # <a name="monitor-app-information-and-assignments-with-microsoft-intune"></a>Monitorizar informações e atribuições da aplicação com o Microsoft Intune
@@ -44,13 +44,13 @@ O Intune fornece várias formas de monitorizar as propriedades de aplicações q
 
 No painel da aplicação, pode rever os detalhes acerca do estado de uma aplicação no seu ambiente.
 
-### <a name="essentials"></a>Essenciais
+### <a name="essentials"></a>Informações Básicas
 A secção **Essentials** contém as seguintes informações sobre a aplicação:
 
  | **Detalhes da aplicação**            | **Descrição**                                                      |
 |------------------------|------------------------------------------------------------------|
 | **Publicador**          | O publicador da aplicação.                                            |
-| **Sistema Operacional**   | O sistema operativo da aplicação (Windows, iOS, Android, etc.). |
+| **Sistema operativo**   | O sistema operativo da aplicação (Windows, iOS, Android, etc.). |
 | **Criado**             | A data e hora em que esta revisão foi criada. <b>**Observação**: esse valor de data é atualizado quando um administrador de ti altera os metadados do aplicativo, como alterar a categoria do aplicativo ou a descrição do aplicativo.                        |
 | **Atribuído**           | Se a aplicação foi atribuída (**Sim** ou **Não**).                  |
 
@@ -59,9 +59,9 @@ Os gráficos mostram o número de aplicações para os seguintes estados:
 
 | **Estado do dispositivo**       | **Descrição**                                       |
 |-----------------------|-------------------------------------------------------|
-| **Recém-instalado**         | O número de aplicações instaladas.                         |
+| **Instalada**         | O número de aplicações instaladas.                         |
 | **Não Instalado**     | O número de aplicações não instaladas.                     |
-| **Falha ao**            | O número de instalações falhadas.                   |
+| **Falhou**            | O número de instalações falhadas.                   |
 | **Instalação Pendente**   | O número de aplicações no processo de serem instaladas. |
 | **Não Aplicável**           | O número de aplicações em que o estado não é aplicável.            |
 

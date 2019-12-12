@@ -16,10 +16,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 6b92dca399afeb035bf58d998efdd469318de389
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72504953"
 ---
 # <a name="use-role-based-access-control-rbac-and-scope-tags-for-distributed-it"></a>Usar o controle de acesso baseado em função (RBAC) e marcas de escopo para distribuição de ti
@@ -63,7 +63,7 @@ O recurso de marca de escopo padrão é semelhante ao recurso de escopos de segu
 
     ![Captura de tela de selecionar grupos de membros.](./media/scope-tags/select-member-groups.png)
 
-4. Se você quiser gerenciar usuários/dispositivos em um conjunto específico de grupos, escolha **escopo (grupos)**  > **grupos selecionados** > **Selecione os grupos a serem incluídos** > escolha os grupos > **selecione** > **OK**. Todos os usuários/dispositivos nesse grupo serão gerenciados pelos administradores nos Membros (grupo).
+4. Se você quiser gerenciar usuários/dispositivos em um conjunto específico de grupos, escolha **escopo (grupos)**  > **grupos selecionados** > **selecione grupos para incluir** > escolha os grupos > **selecione** > **OK**. Todos os usuários/dispositivos nesse grupo serão gerenciados pelos administradores nos Membros (grupo).
 
     ![Captura de tela de selecionar grupos de escopo.](./media/scope-tags/select-scope-groups.png)
 

@@ -1,7 +1,7 @@
 ---
 title: Necessita de atualizar o seu dispositivo Windows | Documentos da Microsoft
 titlesuffix: Microsoft Intune
-description: Para dispositivos móveis que executam o Windows, você precisa atualizar seu dispositivo.
+description: Para dispositivos móveis com o Windows, terá de atualizar o seu dispositivo.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -21,10 +21,10 @@ ms.suite: ems
 ms.custom: intune-enduser; seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 955b750ae931d3066e1a98a9baa7c989f2142e1b
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72500218"
 ---
 # <a name="you-need-to-update-your-windows-device"></a>Necessita de atualizar o seu dispositivo Windows

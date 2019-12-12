@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 2fb5208cd7df6dc68bcd20455ae9e06a9dbd7ff5
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72503142"
 ---
 # <a name="enroll-ios-devices-in-intune"></a>Inscrever dispositivos iOS no Intune
@@ -44,7 +44,7 @@ Antes de poder ativar dispositivos iOS, conclua os seguintes passos:
 Pode permitir que os seus utilizadores inscrevam os respetivos dispositivos pessoais na gestão do Intune. Chama-se a isto "bring your own device (traga o seu próprio dispositivo)", ou BYOD. Há três opções para registrar usuários:
 - As políticas de proteção de aplicativo oferecem a experiência de BYOD mais leve, fornecendo gerenciamento somente no nível do aplicativo. No entanto, se você quiser também proteger o dispositivo com um PIN complexo de seis dígitos, poderá usar essas políticas junto com o registro do usuário.
 - O registro de dispositivo é o que você pode considerar como registro típico de BYOD. Ele fornece aos administradores uma ampla variedade de opções de gerenciamento.
-- O registro de usuário é um processo de registro mais simplificado que fornece aos administradores um subconjunto de opções de gerenciamento de dispositivo. Este recurso está atualmente em visualização. 
+- O registro de usuário é um processo de registro mais simplificado que fornece aos administradores um subconjunto de opções de gerenciamento de dispositivo. Esta funcionalidade encontra-se em pré-visualização. 
 
 Depois de concluir os pré-requisitos e as licenças de usuário atribuídas, os usuários podem baixar o aplicativo Portal da Empresa do Intune da App Store e seguir as instruções de registro no aplicativo. Você pode personalizar a declaração de privacidade Portal da Empresa em dispositivos iOS, conforme explicado na [personalização da política de privacidade](../apps/company-portal-app.md#privacy-statement-customization).
 
@@ -63,7 +63,7 @@ Também pode inscrever os dispositivos iOS pertencentes à empresa com uma conta
 
 As organizações podem adquirir dispositivos iOS através do Programa de Inscrição de Dispositivos (DEP) da Apple. O DEP permite-lhe implementar um perfil de inscrição através de uma ligação sem fios para incluir os dispositivos na gestão. Para obter mais informações, consulte [programa de registro de dispositivos](device-enrollment-program-enroll-ios.md).
 
-## <a name="user-enrollment"></a>Registro de usuário
+## <a name="user-enrollment"></a>Inscrição do utilizador
 O registro de usuário fornece aos administradores um subconjunto de opções de gerenciamento em comparação com outros métodos de registro. Para obter mais informações, consulte [ações de registro de usuário com suporte, senhas e outras opções](ios-user-enrollment-supported-actions.md) e [Configurar o registro de usuário do IOS e iPadOS](ios-user-enrollment.md).
 
 ## <a name="apple-school-manager"></a>Gestor Escolar da Apple

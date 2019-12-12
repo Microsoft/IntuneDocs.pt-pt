@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 59edb9956ee117e0dbdb9d90a4fd4ef313fd5c66
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 01dae8f6c90155e649211ab226cf24eeade29b42
+ms.sourcegitcommit: f5108039f0ade52e95ea3ac1da1aa16d02224af3
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390469"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "74946687"
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>Integrar o Jamf Pro com o Intune para conformidade
 
@@ -71,7 +71,7 @@ Para conectar o Intune ao JAMF pro:
 2. Habilite o Intune para integrar com o JAMF pro.
 3. Configure o acesso condicional no JAMF pro.
 
-### <a name="create-an-application-in-azure-active-directory"></a>Criar um aplicativo no Azure Active Directory
+### <a name="create-an-application-in-azure-active-directory"></a>Criar uma Aplicação no Azure Active Directory
 
 1. Na [portal do Azure](https://portal.azure.com), acesse **Azure Active Directory** > **registros de aplicativo**e, em seguida, selecione **novo registro**.
 
@@ -90,13 +90,21 @@ Para conectar o Intune ao JAMF pro:
    > [!IMPORTANT]
    > Antes de sair dessa página, copie o valor do segredo do cliente e registre-o para uso posterior. Você precisará desse valor em procedimentos posteriores. Esse valor não está disponível novamente, sem recriar o registro do aplicativo.
 
-6. Selecione **permissões de API** em **gerenciar**. Selecione as permissões existentes e, em seguida, selecione **remover permissão** para excluir essas permissões. A remoção de todas as permissões existentes é necessária, pois você adicionará uma nova permissão e o aplicativo só funcionará se tiver a única permissão necessária.
+6. Selecione **Permissões de API** em **Gerir**. 
 
-7. Para atribuir uma nova permissão, selecione **Adicionar uma permissão**. Na página **solicitar permissões de API** , selecione **Intune**e, em seguida, selecione **permissões de aplicativo**. Marque somente a caixa de seleção para **update_device_attributes**.
+7. Na página permissões de API, selecione **Adicionar uma permissão** para adicionar uma nova permissão. Na página **solicitar permissões de API** , selecione **Intune**e, em seguida, selecione **permissões de aplicativo**. Marque somente a caixa de seleção para **update_device_attributes**.
 
-   Selecione **adicionar permissão** para salvar essa configuração.
+8. Aguarde alguns minutos para que a nova permissão possa entrar em vigor. Em seguida, selecione **conceder consentimento do administrador para _\<seu > de locatário_** . Autentique sua conta na nova janela e conceda o acesso ao aplicativo seguindo os prompts.  
 
-8. Na página **permissões de API** , selecione **conceder consentimento de administrador para _\<seu > de locatário_** e, em seguida, selecione **Sim**.  Depois que o aplicativo é registrado com êxito, as permissões de API devem ser exibidas da seguinte maneira:
+9. Talvez seja necessário aguardar outros minutos para que o consentimento do administrador possa entrar em vigor.
+
+10. Atualize a página clicando no botão **Atualizar** na parte superior da página. Confirme se o consentimento do administrador foi concedido para a permissão **update_device_attributes** . 
+
+11. Remova o consentimento do administrador da permissão **User. Read** selecionando o menu **...** e selecionando **revogar consentimento do administrador**.
+
+12. Você também precisará remover a permissão **User. Read** . Selecione o menu **...** por **usuário. ler** e selecione **remover permissão**. 
+
+8. Depois que o aplicativo é registrado com êxito, as permissões de API só devem conter uma permissão chamada **update_device_attributes** e devem aparecer da seguinte maneira:
 
    ![Permissões com êxito](./media/conditional-access-integrate-jamf/sucessfull-app-registration.png)
 
@@ -163,7 +171,7 @@ Se você não usar mais o JAMF pro para gerenciar Macs em sua organização e qu
    > [!NOTE]
    > Os dispositivos Mac da sua organização serão removidos na data (3 meses) mostrados no console.
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Próximos passos
 
 - [Aplicar políticas de conformidade a dispositivos geridos pelo Jamf](conditional-access-assign-jamf.md)
 - [JAMF de dados enviados ao Intune](data-jamf-sends-to-intune.md)

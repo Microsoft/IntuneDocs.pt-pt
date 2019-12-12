@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 96f6dc3d1a8f8589395cf49b3bb934adadf437a4
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 239dd8630eb361da8609e3a34eb2c9346a64dab0
+ms.sourcegitcommit: ec69e7ccc6e6183862a48c1b03ca6a3bf573f354
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72508504"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "74907190"
 ---
 # <a name="troubleshoot-device-actions-in-intune"></a>Solucionar problemas de ações de dispositivo no Intune
 
@@ -32,7 +32,7 @@ Microsoft Intune tem muitas ações que ajudam você a gerenciar dispositivos. E
 ## <a name="bypass-activation-lock-action"></a>Ignorar ação de Bloqueio de Ativação
 
 ### <a name="i-clicked-the-bypass-activation-lock-action-in-the-portal-but-nothing-happened-on-the-device"></a>Cliquei na ação "ignorar Bloqueio de Ativação" no portal, mas nada aconteceu no dispositivo.
-Isso é esperado. Depois de iniciar a ação ignorar Bloqueio de Ativação, o Intune solicitará um código atualizado da Apple. Você inserirá manualmente o código no campo senha depois que o dispositivo estiver na tela de Bloqueio de Ativação. Esse código só é válido por 15 dias, portanto, certifique-se de clicar na ação e copiar o código antes de emitir o apagamento.
+Isto era esperado. Depois de iniciar a ação ignorar Bloqueio de Ativação, o Intune solicitará um código atualizado da Apple. Você inserirá manualmente o código no campo senha depois que o dispositivo estiver na tela de Bloqueio de Ativação. Esse código só é válido por 15 dias, portanto, certifique-se de clicar na ação e copiar o código antes de emitir o apagamento.
 
 ### <a name="why-dont-i-see-the-bypass-activation-lock-code-in-the-hardware-overview-blade-of-my-ios-device"></a>Por que não vejo o código de Bloqueio de Ativação de bypass na folha de visão geral de hardware do meu dispositivo iOS?
 Os motivos mais prováveis incluem:
@@ -54,7 +54,7 @@ Não. E você não precisa inserir os traços.
 ## <a name="remove-devices-action"></a>Ação remover dispositivos
 
 ### <a name="how-do-i-tell-who-started-a-retirewipe"></a>Como fazer dizer quem iniciou uma desativação/apagamento?
-Acesse o **Intune** > **dispositivos** > **ações de dispositivo** > marque a coluna **iniciado por** .
+No centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), acesse **Administração de locatários** > **logs de auditoria** > marque a coluna **iniciado por** .
 Se você não vir uma entrada, a pessoa mais provável de iniciar a ação é o usuário do dispositivo. Eles provavelmente usaram o Portal da Empresa aplicativo ou o portal.manage.microsoft.com.
 
 ### <a name="why-wasnt-my-application-uninstalled-after-using-retire"></a>Por que meu aplicativo não foi desinstalado depois de usar a desativação?
@@ -63,13 +63,13 @@ Porque não era considerado um aplicativo gerenciado. Nesse contexto, um aplicat
 - O aplicativo foi implantado como disponível e, em seguida, instalado pelo usuário final de dentro do aplicativo Portal da Empresa.
 
 ### <a name="why-is-wipe-grayed-out-for-android-enterprise-work-profile-devices"></a>Por que o apagamento fica esmaecido para dispositivos Android Enterprise de perfil de trabalho?
-Esse é o comportamento esperado. O Google não permite a redefinição de fábrica de dispositivos de perfil de trabalho do provedor de MDM.
+Este comportamento está previsto. O Google não permite a redefinição de fábrica de dispositivos de perfil de trabalho do provedor de MDM.
 
 ### <a name="why-can-i-sign-back-into-my-office-apps-after-my-device-was-retired"></a>Por que posso entrar nos meus aplicativos do Office depois que meu dispositivo fosse desativado?
 Como desativar um dispositivo não revoga tokens de acesso. Você pode usar políticas de acesso condicional para atenuar essa condição.
 
 ### <a name="how-can-i-monitor-a-retirewipe-action-after-it-was-issued"></a>Como posso monitorar uma ação de desativar/apagar após sua emissão?
-Acesse o **Intune** > **dispositivos** > **ações de dispositivo**.
+No centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), acesse **Administração de locatários** > **logs de auditoria**.
 
 ### <a name="why-do-wipes-sometimes-show-as-pending-indefinitely"></a>Por que as limpezas às vezes são mostradas como pendentes de forma indefinida?
 Os dispositivos nem sempre relatam seu status de volta para o serviço do Intune antes que a redefinição seja iniciada. Assim, a ação é mostrada como pendente. Se você confirmou que a ação foi bem-sucedida, exclua o dispositivo do serviço.

@@ -20,10 +20,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: d4d6ecdc84371c0f485fc1cf26065ed681f29804
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72501916"
 ---
 # <a name="unenroll-your-macos-device-from-company-portal"></a>Cancelar o registro de seu dispositivo macOS no Portal da Empresa
@@ -36,7 +36,7 @@ Siga estes passos para anular a inscrição do seu dispositivo macOS na gestão:
 2. Vá para **dispositivos** e selecione o dispositivo que você deseja cancelar o registro.
 
 3. Selecione o ícone de menu de reticências > **remover**.
-4. Uma mensagem de confirmação é exibida. Selecione **remover** para cancelar o registro do dispositivo. 
+4. É apresentada uma mensagem de confirmação. Selecione **remover** para cancelar o registro do dispositivo. 
 
 Quando anular a inscrição do dispositivo no Intune, eis o que acontece:
 

@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 8657b6fa8110b4ea4bbf8ec0841d69197624dd9f
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/27/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74563715"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Como criar e atribuir políticas de proteção de aplicações
@@ -66,7 +66,7 @@ Quando você cria uma política de proteção de aplicativo para aplicativos iOS
     |-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | Direcionar para aplicativos em todos os tipos de dispositivos | Use esta opção para direcionar sua política para aplicativos em dispositivos de qualquer estado de gerenciamento. Escolha **não** para direcionar aplicativos em tipos de dispositivos específicos. Para obter informações, consulte [políticas de proteção de aplicativo de destino com base no estado do gerenciamento de dispositivos](#target-app-protection-policies-based-on-device-management-state) |
     |     Tipos de dispositivo | Use esta opção para especificar se essa política se aplica a dispositivos gerenciados ou dispositivos não gerenciados do MDM. Para as políticas de aplicativo iOS, selecione de dispositivos não **gerenciados** e **gerenciáveis** . Para políticas de aplicativo Android, selecione de **não gerenciado**, **administrador de dispositivo Android**e **Android Enterprise**.  |
-    | Aplicativos públicos | Clique em **selecionar aplicativos públicos** para escolher os aplicativos a serem direcionados. |
+    | Aplicações públicas | Clique em **selecionar aplicativos públicos** para escolher os aplicativos a serem direcionados. |
     | Aplicativos personalizados | Clique em **selecionar aplicativos personalizados** para selecionar aplicativos personalizados para direcionar com base em uma ID de pacote. |
     
     Os aplicativos que você selecionou aparecerão na lista de aplicativos públicos e personalizados. 
@@ -127,7 +127,7 @@ Para ver o efeito das alterações imediatamente, o utilizador final tem de term
     |-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     | Direcionar para aplicativos em todos os tipos de dispositivos | Use esta opção para direcionar sua política para aplicativos em dispositivos de qualquer estado de gerenciamento. Escolha **não** para direcionar aplicativos em tipos de dispositivos específicos. Para obter informações, consulte [políticas de proteção de aplicativo de destino com base no estado do gerenciamento de dispositivos](#target-app-protection-policies-based-on-device-management-state) |
     |     Tipos de dispositivo | Use esta opção para especificar se essa política se aplica a dispositivos gerenciados ou dispositivos não gerenciados do MDM. Para as políticas de aplicativo iOS, selecione de dispositivos não **gerenciados** e **gerenciáveis** . Para políticas de aplicativo Android, selecione de **não gerenciado**, **administrador de dispositivo Android**e **Android Enterprise**.  |
-    | Aplicativos públicos | Clique em **selecionar aplicativos públicos** para escolher os aplicativos a serem direcionados. |
+    | Aplicações públicas | Clique em **selecionar aplicativos públicos** para escolher os aplicativos a serem direcionados. |
     | Aplicativos personalizados | Clique em **selecionar aplicativos personalizados** para selecionar aplicativos personalizados para direcionar com base em uma ID de pacote. |
 
     Os aplicativos que você selecionou aparecerão na lista de aplicativos públicos e personalizados. 

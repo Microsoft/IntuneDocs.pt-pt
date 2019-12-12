@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 3595e75a73868378c9c366de6c751c21a9151ae3
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/13/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74059523"
 ---
 # <a name="upgrade-windows-10-editions-or-switch-out-of-s-mode-on-devices-using-microsoft-intune"></a>Atualizar as edições do Windows 10 ou sair do modo S em dispositivos usando Microsoft Intune
@@ -55,21 +55,21 @@ Antes de atualizar os dispositivos, verifique se você tem os seguintes pré-req
 - Para as edições Windows 10 Mobile e Windows 10 Holographic, você pode usar um arquivo de licença da Microsoft. O arquivo de licença inclui as informações de licenciamento para instalar a edição atualizada em todos os dispositivos que você tem como destino com a política.
 - Os dispositivos Windows 10 aos quais atribuir a política estão inscritos no Microsoft Intune. Não é possível utilizar a política de atualização de edição com PCs que executam o software de cliente de PCs do Intune.
 
-## <a name="supported-upgrade-paths"></a>Caminhos de atualização com suporte
+## <a name="supported-upgrade-paths"></a>Caminhos de atualização suportados
 
 A seguinte tabela indica os caminhos de atualização suportados para o perfil de atualização de edição do Windows 10.
 
 | Atualizar a partir do | Atualizar para o |
 |---|---|
-| Windows 10 pro | Educação do Windows 10 <br/>Windows 10 Enterprise <br/>Windows 10 Pro Education |
+| Windows 10 Pro | Windows 10 Education <br/>Windows 10 Enterprise <br/>Windows 10 Pro Education |
 | Edição Windows 10 Pro N | Edição Windows 10 Education N <br/>Edição Windows 10 Enterprise N <br/>Edição Windows 10 Pro Education N | 
-| Windows 10 Pro Education | Educação do Windows 10 | 
+| Windows 10 Pro Education | Windows 10 Education | 
 | Edição Windows 10 Pro Education N | Edição Windows 10 Education N |
-| Windows 10 Cloud | Educação do Windows 10 <br/>Windows 10 Enterprise <br/>Windows 10 pro <br/>Windows 10 Pro Education | 
+| Windows 10 Cloud | Windows 10 Education <br/>Windows 10 Enterprise <br/>Windows 10 Pro <br/>Windows 10 Pro Education | 
 | Edição Windows 10 Cloud N | Edição Windows 10 Education N <br/>Edição Windows 10 Enterprise N <br/>Edição Windows 10 Pro N <br/>Edição Windows 10 Pro Education N | 
-| Windows 10 Enterprise | Educação do Windows 10 | 
+| Windows 10 Enterprise | Windows 10 Education | 
 | Edição Windows 10 Enterprise N | Edição Windows 10 Education N | 
-| Windows 10 Core | Educação do Windows 10 <br/>Windows 10 Enterprise <br/>Windows 10 Pro Education | 
+| Windows 10 Core | Windows 10 Education <br/>Windows 10 Enterprise <br/>Windows 10 Pro Education | 
 | Edição Windows 10 Core N | Edição Windows 10 Education N <br/>Edição Windows 10 Enterprise N <br/>Edição Windows 10 Pro Education N | 
 | Windows 10 Holographic | Windows 10 Holographic for Business |
 | Windows 10 Mobile | Windows 10 Mobile Enterprise |

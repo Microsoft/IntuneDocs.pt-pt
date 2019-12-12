@@ -12,10 +12,10 @@ ms.author: dougeby
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 42e16be44dba539007967dd921da4c8d4f095ec4
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72504814"
 ---
 # <a name="using-the-intune-docs"></a>Using the Intune docs (Utilizar a documentação do Intune)
@@ -26,13 +26,13 @@ Para obter ajuda geral e suporte para o Intune, consulte [obter suporte para o I
 
 ## <a name="search-the-docs"></a>Pesquisar os documentos
 
- Use as seguintes dicas de pesquisa para ajudá-lo a encontrar as informações necessárias:  
+ Utilize as seguintes sugestões de procura para localizar as informações de que necessita:  
 
 - Ao usar seu mecanismo de pesquisa preferido para localizar conteúdo para Microsoft Intune, inclua `Intune` junto com suas palavras-chave de pesquisa.  
 
   - Procure os resultados de docs.microsoft.com. Os resultados de technet.microsoft.com ou msdn.microsoft.com são para versões mais antigas do produto.  
 
-  - Para concentrar ainda mais os resultados da pesquisa na biblioteca de conteúdo atual, inclua `site:docs.microsoft.com` para fazer o escopo do mecanismo de pesquisa.  
+  - Para concentrar ainda mais os resultados da pesquisa na biblioteca de conteúdo atual, inclua `site:docs.microsoft.com` para o escopo do mecanismo de pesquisa.  
 
 - Use termos de pesquisa que correspondam à terminologia na interface do usuário e na documentação online. Evite termos ou abreviações não oficiais que você possa ver no conteúdo da Comunidade.
 
@@ -86,7 +86,7 @@ Os documentos do Intune, como a maior parte do conteúdo em docs.microsoft.com, 
 
 4. Na seção propor alteração de arquivo, insira o comentário de confirmação pública *que descreve o que* você alterou. Em seguida, clique em **propor alteração de arquivo**.  
 
-5. Role para baixo e verifique as alterações feitas. Clique em **criar solicitação de pull** para abrir o formulário. Descreva *por que* você fez essa alteração. Clique em **criar solicitação de pull**.
+5. Role para baixo e verifique as alterações feitas. Clique em **criar solicitação de pull** para abrir o formulário. Descreva *por que* você fez essa alteração. Clique em **Criar pedido Pull**.
 
 A equipe de escrita receberá sua solicitação de pull, atribuirá o item ao gravador apropriado, examinará o texto e fará uma passagem de edição rápida e aprovará e mesclará as alterações ou entrará em contato com você para obter mais informações sobre a atualização.  
 

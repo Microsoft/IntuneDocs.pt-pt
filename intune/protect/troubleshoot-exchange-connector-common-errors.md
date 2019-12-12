@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: b30a7e843850d6918abc2e76f84397a1f197516f
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72508853"
 ---
 # <a name="resolve-common-errors-for-the-intune-exchange-connector"></a>Resolver erros comuns para o Intune Exchange Connector
@@ -77,7 +77,7 @@ Ao tentar configurar o Microsoft Intune Exchange Connector, você receberá a se
    Verify that you are connected to the Internet, check the Microsoft Intune Service Status, and try to connect again.  
    Error code: 0x00000006  
 ```  
-Esse erro pode ocorrer se um servidor proxy for usado para se conectar à Internet e estiver bloqueando o tráfego para o serviço do Intune. Para determinar se um proxy está em uso, acesse **painel de controle** > **Opções da Internet**, selecione a guia **conexão** e, em seguida, clique em configurações de **LAN**.
+Esse erro pode ocorrer se um servidor proxy for usado para se conectar à Internet e estiver bloqueando o tráfego para o serviço do Intune. Para determinar se um proxy está em uso, vá para **painel de controle** > **Opções da Internet**, selecione a guia **conexão** e clique em **configurações de LAN**.
 
 **Resolução**:  
 
@@ -123,20 +123,20 @@ Um dispositivo iOS falha ao registrar no Intune e gera uma das seguintes mensage
    Domain and account: .\WIEC_USER
    This service account does not have the required user right "Log on as a service."  
 ```
-Esse problema pode ocorrer se a conta **WIEC_User** não tiver o direito de usuário **fazer logon como serviço** na política local.
+Esse problema pode ocorrer se a conta de **WIEC_User** não tiver o direito de usuário **fazer logon como serviço** na política local.
 
 **Resolução**:  
 No computador que executa o Exchange Connector do Intune, atribua o direito de usuário **fazer logon como um serviço** à conta de serviço **WIEC_User** . Se o computador for um nó em um cluster, certifique-se de atribuir o direito de usuário *fazer logon como um serviço* à conta de serviço de cluster em todos os nós no cluster.  
 
-Para atribuir o direito de usuário **fazer logon como um serviço** à conta de serviço do **WIEC_User** no computador, siga estas etapas:
+Para atribuir o direito de usuário **fazer logon como um serviço** à conta de serviço **WIEC_User** no computador, siga estas etapas:
 
 1. Faça logon no computador como administrador ou como membro do grupo Administradores.
 2. Execute **secpol. msc** para abrir a política de segurança local.
 3. Vá para **configurações de segurança** > **políticas locais**e, em seguida, selecione **atribuição de direitos de usuário**.
 4. No painel direito, clique duas vezes em **fazer logon como um serviço**.
-5. Selecione **Adicionar usuário ou grupo**, adicione **WIEC_USER** à política e, em seguida, selecione **OK** duas vezes.
+5. Selecione **Adicionar usuário ou grupo**, adicionar **WIEC_USER** à política e, em seguida, selecione **OK** duas vezes.
 
-Se o direito de usuário **fazer logon como um serviço** foi atribuído a **WIEC_User** , mas foi removido posteriormente, contate o administrador de domínio para determinar se uma configuração de política de grupo está substituindo-a.  
+Se o direito de usuário **fazer logon como um serviço** foi atribuído a **WIEC_User** , mas foi removido posteriormente, contate o administrador do domínio para determinar se uma configuração de política de grupo está substituindo-a.  
 
 ## <a name="next-steps"></a>Próximos passos  
 

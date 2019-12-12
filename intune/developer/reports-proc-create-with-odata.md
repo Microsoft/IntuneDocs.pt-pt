@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 18815fb671e853bc0463fed750d40b80ccb285fb
-ms.sourcegitcommit: 78faf608510fbaca09bc410d63df1aa5254dee45
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74784277"
 ---
 # <a name="create-an-intune-report-from-the-odata-feed-with-power-bi"></a>Criar um relatório do Intune a partir do feed OData com o Power BI
@@ -69,7 +69,7 @@ Instale a versão mais recente do Power BI Desktop. Pode transferir o Power BI D
 
     ![Credenciais da conta escolar ou profissional](./media/reports-proc-create-with-odata/reports-create-02-org-account.png)
 
-10. Selecione **conectar**. O Navegador será aberto e irá mostrar-lhe a lista de tabelas no Armazém de Dados do Intune.
+10. Selecione **Ligar**. O Navegador será aberto e irá mostrar-lhe a lista de tabelas no Armazém de Dados do Intune.
 
     ![Captura de tela do navegador – a lista de tabelas de data warehouse](./media/reports-proc-create-with-odata/reports-create-02-loadentities.png)
 

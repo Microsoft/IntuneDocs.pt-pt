@@ -17,10 +17,10 @@ ms.reviewer: tycast
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 122872eff92a37c8724fd4a853091e51a0a54c66
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72506524"
 ---
 # <a name="windows-10-and-windows-holographic-device-settings-to-add-vpn-connections-using-intune"></a>Configurações do dispositivo Windows 10 e Windows Holographic para adicionar conexões VPN usando o Intune
@@ -177,7 +177,7 @@ Se um usuário estiver conectado a um sufixo DNS na lista, o usuário não se co
 
 Por exemplo, se o usuário já estiver conectado a um sufixo DNS confiável, os seguintes gatilhos serão ignorados. Especificamente, os sufixos DNS na lista cancelam todos os outros disparadores automotivos de conexão, incluindo:
 
-- AlwaysOn
+- Sempre ativado
 - Gatilho baseado em aplicativo
 - Gatilho de autodisparo do DNS
 

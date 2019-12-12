@@ -18,10 +18,10 @@ ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 810a898a3b2d1981babc231f32ed386bde37a856
-ms.sourcegitcommit: ce518a5dfe62c546a77f32ef372f36efbaad473f
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 11/25/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74465782"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-unmanaged-devices"></a>Tutorial: proteger o email do Exchange Online em dispositivos não gerenciados
@@ -79,7 +79,7 @@ Neste tutorial, vamos configurar uma política de proteção de aplicativo do In
 
    ![Selecione as configurações de realocação de dados da política de proteção de aplicativo do Outlook](./media/tutorial-protect-email-on-unmanaged-devices/data-protection-settings.png)
 
-   Selecione **Avançar** para continuar.
+   Selecione **Seguinte** para continuar.
 
 6. A página **requisitos de acesso** fornece configurações para permitir que você configure os requisitos de PIN e credenciais que os usuários devem cumprir para acessar os aplicativos em um contexto de trabalho. Defina as seguintes configurações, deixando todas as outras configurações com seus valores padrão:
 
@@ -88,7 +88,7 @@ Neste tutorial, vamos configurar uma política de proteção de aplicativo do In
 
    ![Selecione as ações de acesso à política de proteção de aplicativo do Outlook](./media/tutorial-protect-email-on-unmanaged-devices/access-requirements-settings.png)
 
-   Selecione **Avançar** para continuar.
+   Selecione **Seguinte** para continuar.
 
 7. A página de **inicialização condicional** fornece configurações para definir os requisitos de segurança de entrada para sua política de proteção de aplicativo. Para este tutorial, você não precisa definir essas configurações.
 
@@ -239,5 +239,5 @@ Quando já não precisar das políticas de teste, poderá removê-las.
 
 5. Na lista **nome da política** , selecione o menu de contexto ( **...** ) para cada uma das políticas de teste e, em seguida, selecione **excluir**. Selecione **Sim** para confirmar.
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Próximos passos
 Neste tutorial, você criou políticas de proteção de aplicativo para limitar o que o usuário pode fazer com o aplicativo Outlook e criou políticas de acesso condicional para exigir o aplicativo Outlook e exigir MFA para clientes de autenticação modernos. Para saber mais sobre como usar o Intune com acesso condicional para proteger outros aplicativos e serviços, consulte [Configurar o acesso condicional](conditional-access.md).

@@ -16,10 +16,10 @@ ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: aad6268606dfcf69c304bb5c5b270c8c4795e4b2
-ms.sourcegitcommit: 1a5b185acd27954b10b6d59409d82eb80fd71284
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 10/21/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72681289"
 ---
 # <a name="integrate-sophos-mobile-with-intune"></a>Integre o Sophos Mobile ao Intune  
@@ -56,16 +56,16 @@ O processo de autorização do aplicativo móvel do Sophos segue:
 2. Na página **Adicionar conector** , use a lista suspensa e selecione **Sophos**. E, em seguida, selecione **criar**.  
 3. Selecione o link *abrir o console de administração do Sophos*.  
 4. Entre no console de [Administração do Sophos](https://central.sophos.com/) com suas credenciais do Sophos.  
-5. Vá para**configurações** de  >  **móvel**  > **instalação**  > **configuração do Sophos**.  
+5. Vá para **configurações** de > **móvel** > **instalação** > **configuração do Sophos**.  
 6. Na página **configuração do Sophos** , selecione a guia **MTD do Intune** .  
-   ![Sophos ](./media/sophos-mtd-connector-integration/sophos-setup.png) de instalação 
+   ](./media/sophos-mtd-connector-integration/sophos-setup.png) de instalação do ![Sophos 
  
 7. Selecione **associar**e, em seguida, selecione **Sim**. O Sophos se conecta ao Intune e exige que você entre em sua assinatura do Intune. 
 8. Na janela de autenticação Microsoft Intune, insira suas credenciais do Intune e **aceite** a solicitação de permissões para a *defesa de threads móveis do Sophos*.  
-   ](./media/sophos-mtd-connector-integration/intune-authentication.png) de autenticação ![Intune
+   ![](./media/sophos-mtd-connector-integration/intune-authentication.png) de autenticação do Intune
 
 9. Na página **configuração do Sophos** , selecione **salvar** para concluir a configuração do Intune:  
-   ](./media/sophos-mtd-connector-integration/save-sophos-configuration.png) de instalação do ![Save Sophos  
+   ![salvar a instalação do Sophos](./media/sophos-mtd-connector-integration/save-sophos-configuration.png)  
 
 1. Quando a mensagem **Integração Bem-sucedida** for apresentada, significa que a integração foi concluída.  
 1. No console do Intune, o Sophos agora está disponível.  
