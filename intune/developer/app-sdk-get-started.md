@@ -179,7 +179,7 @@ Depois de registrar seu aplicativo em um locatário do Azure e ele estiver apare
 3. Clique em **+ Adicionar uma permissão**.
 4. Clique nas **APIs que minha organização usa**. 
 5. Na caixa de pesquisa, introduza **Gestão de Aplicações Móveis da Microsoft**.
-6. Em **permissões delegadas**, marque a caixa de seleção **DeviceManagementManagedApps. ReadWrite: ler e gravar os dados de gerenciamento de aplicativo do usuário***.
+6. Em **permissões delegadas**, marque a caixa de seleção **DeviceManagementManagedApps. ReadWrite: ler e gravar os dados de gerenciamento de aplicativo do usuário** *.
 7. Clique em **adicionar permissões**.
 
 > [!NOTE]

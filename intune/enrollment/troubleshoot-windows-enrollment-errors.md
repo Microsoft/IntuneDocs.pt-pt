@@ -335,7 +335,7 @@ Normalmente, esse problema ocorre antes de o dispositivo ser reiniciado em um ce
 
 #### <a name="resolution"></a>Resolução
 
-1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **dispositivos** de ** > dispositivos Windows > ** **Windows**.
+1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **dispositivos de**  > **dispositivos Windows** > **Windows**.
 2. Selecione o dispositivo que está enfrentando o problema > clique nas reticências (...) no lado mais à direita.
 3. Selecione **Cancelar atribuição de usuário** e aguarde a conclusão do processo.
 4. Verifique se o perfil de AutoPilot do Azure AD híbrido foi atribuído antes de tentar novamente o OOBE.
