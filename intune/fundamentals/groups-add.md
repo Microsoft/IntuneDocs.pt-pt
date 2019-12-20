@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6e3219e32ef9bea838f0c19258d0b22a99083a12
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: fe37ac412d01d3032685a0e66827d20e13b0db64
+ms.sourcegitcommit: 42183c87b137710b8529049f8710d47127e99900
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74261581"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75303064"
 ---
 # <a name="add-groups-to-organize-users-and-devices"></a>Adicionar grupos para organizar utilizadores e dispositivos
 
@@ -47,7 +47,7 @@ Utilize os seguintes passos para criar um novo grupo.
 
 3. Em **tipo de grupo**, escolha uma das seguintes opções:
 
-    - **Segurança**: os grupos de segurança definem quem pode acessar recursos e são recomendados para seus grupos no Intune. Por exemplo, você pode criar grupos para usuários, como **todos os funcionários de Charlotte** ou **todas as mulheres na contoso**. Ou crie grupos para dispositivos, como **todos os dispositivos IOS** ou **todos os dispositivos de aluno com Windows 10**.
+    - **Segurança**: os grupos de segurança definem quem pode acessar recursos e são recomendados para seus grupos no Intune. Por exemplo, você pode criar grupos para usuários, como **todos os funcionários de Charlotte** ou **funcionários remotos**. Ou crie grupos para dispositivos, como **todos os dispositivos IOS** ou **todos os dispositivos de aluno com Windows 10**.
 
         > [!TIP]
         > Os usuários e grupos criados também podem ser vistos no [centro de administração do Microsoft 365](https://admin.microsoft.com), no centro de administração do Azure Active Directory e [no Microsoft Intune no portal do Azure](https://go.microsoft.com/fwlink/?linkid=2090973). No locatário da sua organização, você pode criar e gerenciar grupos em todas essas áreas.
@@ -85,7 +85,7 @@ Utilize os seguintes passos para criar um novo grupo.
 > - Todos os dispositivos Android Enterprise
 > - Todos os dispositivos iOS 11 e mais antigos
 > - Marketing
-> - Recursos Humanos
+> - Recursos humanos
 > - Todos os funcionários do Charlotte
 > - Todos os funcionários do WA
 

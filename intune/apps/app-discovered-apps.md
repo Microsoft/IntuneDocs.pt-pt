@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 12/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2e7c9824711ecbfb43a7c7dde71cc01b306b7fab
-ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
+ms.openlocfilehash: 1e96f46dc0e79de3fc78739c246abdc0b9e52702
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74899418"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75205535"
 ---
 # <a name="intune-discovered-apps"></a>Aplicativos descobertos do Intune
 
@@ -54,15 +54,15 @@ A lista a seguir fornece o tipo de plataforma de aplicativo, os aplicativos que 
 
 | Platform | Para dispositivos de propriedade pessoal | Para dispositivos de propriedade da empresa | Ciclo de atualização |
 |------------------------------------------------------------------------|----------------------------------|--------------------------------------------------|---------------------------------------|
-| Windows 10 (aplicativos Win32) Observação: [requer a extensão de gerenciamento do Intune](intune-management-extension.md) no dispositivo | Não Aplicável | Todos os aplicativos Win32 encontrados na lista Adicionar/remover programas | A cada 24 horas do registro do dispositivo |
+| Windows 10 (aplicativos Win32) Observação: [requer a extensão de gerenciamento do Intune](intune-management-extension.md) no dispositivo | Não Aplicável | Somente aplicativos gerenciados | A cada 24 horas do registro do dispositivo |
 | Windows 10 (aplicativos modernos) | Somente aplicativos modernos gerenciados | Todos os aplicativos modernos instalados no dispositivo | A cada 7 dias do registro do dispositivo |
-| Windows 8.1 | Apenas aplicações geridas | Apenas aplicações geridas | A cada 7 dias do registro do dispositivo |
-| Windows Phone 8 | Apenas aplicações geridas | Apenas aplicações geridas | A cada 7 dias do registro do dispositivo |
-| Windows RT | Apenas aplicações geridas | Apenas aplicações geridas | A cada 7 dias do registro do dispositivo |
-| iOS | Apenas aplicações geridas | Todas as aplicações instaladas no dispositivo | A cada 7 dias do registro do dispositivo |
-| macOS | Apenas aplicações geridas | Todas as aplicações instaladas no dispositivo | A cada 7 dias do registro do dispositivo |
-| Android | Apenas aplicações geridas | Todas as aplicações instaladas no dispositivo | A cada 7 dias do registro do dispositivo |
-| Android Enterprise | Apenas aplicações geridas | Somente aplicativos instalados no perfil de trabalho | A cada 7 dias do registro do dispositivo |
+| Windows 8.1 | Somente aplicativos gerenciados | Somente aplicativos gerenciados | A cada 7 dias do registro do dispositivo |
+| Windows Phone 8 | Somente aplicativos gerenciados | Somente aplicativos gerenciados | A cada 7 dias do registro do dispositivo |
+| Windows RT | Somente aplicativos gerenciados | Somente aplicativos gerenciados | A cada 7 dias do registro do dispositivo |
+| iOS | Somente aplicativos gerenciados | Todos os aplicativos instalados no dispositivo | A cada 7 dias do registro do dispositivo |
+| macOS | Somente aplicativos gerenciados | Todos os aplicativos instalados no dispositivo | A cada 7 dias do registro do dispositivo |
+| Android | Somente aplicativos gerenciados | Todos os aplicativos instalados no dispositivo | A cada 7 dias do registro do dispositivo |
+| Android Enterprise | Somente aplicativos gerenciados | Somente aplicativos instalados no perfil de trabalho | A cada 7 dias do registro do dispositivo |
 
 > [!NOTE]
 > - Dispositivos ingressados no Azure AD híbrido do Windows 10, conforme mostrado na carga de trabalho de gerenciamento de aplicativos no Configuration Manager, atualmente não coletam o inventário de aplicativos por meio da extensão de gerenciamento do Intune (IME) de acordo com o agendamento acima. Para atenuar esse problema, a carga de trabalho de gerenciamento de aplicativo em Configuration Manager deve ser alternada para o Intune para que o IME seja instalado no dispositivo (o IME é necessário para o inventário do Win32 e a implantação do PowerShell). Observe que todas as alterações ou atualizações desse comportamento são anunciadas no [desenvolvimento](../fundamentals/in-development.md) e/ou [novidades](../fundamentals/whats-new.md).

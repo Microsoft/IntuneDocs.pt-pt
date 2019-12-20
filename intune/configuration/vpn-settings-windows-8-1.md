@@ -1,12 +1,11 @@
 ---
-title: Definições de VPN do Microsoft Intune para dispositivos com o Windows 8.1
-titleSuffix: ''
-description: Saiba mais sobre as definições do Intune que pode utilizar para configurar ligações VPN em dispositivos com o Windows 8.1.
+title: Definir as configurações de VPN em dispositivos Windows 8.1 no Microsoft Intune-Azure | Microsoft Docs
+description: Adicione ou crie um perfil de configuração de VPN usando as definições de configuração de VPN (rede virtual privada), incluindo os detalhes da conexão e as configurações de proxy para incluir o endereço IP ou FQDN e a porta TCP em Microsoft Intune em dispositivos que executam o Windows 8.1.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/6/2018
+ms.date: 12/19/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,16 +15,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 12267ce4e29fe2d53d01aa8115cafbf2196d50ed
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9f9a1399d5474d79ac8fd48a8aa3a844f20eb640
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72490852"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207048"
 ---
-# <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-windows-81"></a>Configurar definições de VPN no Microsoft Intune para dispositivos com o Windows 8.1
+# <a name="add-vpn-settings-on-windows-81-devices-in-microsoft-intune"></a>Adicionar configurações de VPN em dispositivos Windows 8.1 no Microsoft Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Este artigo mostra as definições do Intune que pode utilizar para configurar ligações VPN em dispositivos com o Windows 8.1.
 
@@ -33,66 +32,69 @@ Consoante as definições que escolher, nem todos os valores na lista seguinte s
 
 ## <a name="base-vpn-settings"></a>Definições de VPN Base
 
+- **Aplicar todas as configurações somente a Windows 8.1**: defina essa configuração no portal clássico do Intune. No centro de administração do Microsoft Endpoint Manager, essa configuração não pode ser alterada. Quando definido como **configurado**, todas as configurações são aplicadas somente a dispositivos Windows 8.1. Quando definido como **não configurado**, essas configurações também se aplicam a dispositivos Windows 10.
+- **Nome da ligação**: introduza um nome para esta ligação. Os utilizadores verão este nome quando procurarem a lista de ligações VPN disponíveis no dispositivo.
+- **Servidores**: adicione um ou mais servidores VPN aos quais os dispositivos são ligados.
+  - **Adicionar**: abre a página **Adicionar linha** , na qual você pode especificar as seguintes informações:
+    - **Descrição**: especifique um nome descritivo para o servidor, como o **servidor VPN da Contoso**.
+    - **Endereço IP ou FQDN**: forneça o endereço IP ou o nome de domínio totalmente qualificado do servidor VPN ao qual os dispositivos se conectam. Exemplos: **192.168.1.1**, **vpn.contoso.com**.
+    - **Servidor predefinido**: define este servidor como o servidor predefinido que os dispositivos utilizam para estabelecer a ligação. Certifique-se de que predefine apenas um servidor.
+  - **Importar**: Navegue até um arquivo separado por vírgula com a lista de servidores no formato descrição, endereço IP ou FQDN, servidor padrão. Escolha **OK** para importar estes servidores para a lista **Servidores**.
+  - **Exportar**: exporta a lista de servidores para um arquivo de valores separados por vírgula (CSV).
 
-- **Aplicar todas as definições apenas ao Windows 8.1** – Esta é uma definição que pode configurar no portal clássico do Intune. No portal do Azure, esta definição não pode ser alterada. Se esta definição estiver definida como **Configurada**, as definições só são aplicadas a dispositivos com o Windows 8.1. Se estiver definida como **Não configurada**, estas definições também são aplicadas a dispositivos com o Windows 10.
-- **Nome da ligação** – introduza um nome para esta ligação. Os utilizadores verão este nome quando procurarem a lista de ligações VPN disponíveis no dispositivo.
-- **Servidores** – adicione um ou mais servidores VPN aos quais os dispositivos são ligados.
-  - **Adicionar** – abre o painel **Adicionar Linha**, onde pode especificar as seguintes informações:
-    - **Descrição** – Especifique um nome descritivo para o servidor, como **Servidor VPN Contoso**.
-    - **Endereço IP ou FQDN** – forneça o endereço IP ou nome de domínio completamente qualificado do servidor VPN ao qual os dispositivos são ligados. Exemplos: **192.168.1.1**, **vpn.contoso.com**.
-    - **Servidor predefinido** – define este servidor como o servidor predefinido que os dispositivos utilizam para estabelecer a ligação. Certifique-se de que predefine apenas um servidor.
-  - **Importar** – Navegue até um ficheiro que contenha uma lista separada por vírgulas de servidores no formato descrição, endereço IP ou FQDN, Servidor predefinido. Escolha **OK** para importá-los para a lista **Servidores**.
-  - **Exportar** – Exporta a lista de servidores para um ficheiro de valores separados por vírgulas (csv).
+- **Tipo de ligação**: selecione o tipo de ligação VPN a partir da seguinte lista de fornecedores:
+  - **Check Point Capsule VPN**
+  - **SonicWall Mobile Connect**
+  - **F5 Edge Client**
+  - **Pulse Secure**
 
-- **Tipo de ligação** – selecione o tipo de ligação VPN a partir da seguinte lista de fornecedores:
-- **Check Point Capsule VPN**
-- **SonicWall Mobile Connect**
-- **F5 Edge Client**
-- **Pulse Secure**
+<!--- **Fingerprint** (Check Point Capsule VPN only): Specify a string (for example, "Contoso Fingerprint Code") that will be used to verify that the VPN server can be trusted. A fingerprint can be sent to the client so it knows to trust any server that presents the same fingerprint when connecting. If the device doesn’t already have the fingerprint, it will prompt the user to trust the VPN server that they are connecting to while showing the fingerprint. (The user manually verifies the fingerprint and chooses **trust** to connect.) --->
 
-<!--- **Fingerprint** (Check Point Capsule VPN only) - Specify a string (for example, "Contoso Fingerprint Code") that will be used to verify that the VPN server can be trusted. A fingerprint can be sent to the client so it knows to trust any server that presents the same fingerprint when connecting. If the device doesn’t already have the fingerprint, it will prompt the user to trust the VPN server that they are connecting to while showing the fingerprint. (The user manually verifies the fingerprint and chooses **trust** to connect.) --->
+- **Grupo de logon ou domínio** (somente SonicWALL Mobile Connect): especifique o nome do grupo de logon ou domínio ao qual você deseja se conectar.
 
-- **Grupo ou domínio de início de sessão** (apenas no SonicWall Mobile Connect) – especifique o nome do grupo ou domínio de início de sessão ao qual se pretende ligar.
+- **Função** (somente Pulse Secure): especifique o nome da função de usuário que tem acesso a essa conexão. Uma função de utilizador define opções e definições pessoais e ativa ou desativa funcionalidades de acesso específicas.
 
-- **Função** (apenas no Pulse Secure) – Especifique o nome da função de utilizador que tem acesso a esta ligação. Uma função de utilizador define opções e definições pessoais e ativa ou desativa funcionalidades de acesso específicas.
+- **Realm** (somente Pulse Secure): especifique o nome do realm de autenticação que você deseja usar. Um realm de autenticação é um agrupamento de recursos de autenticação utilizado pelo tipo de ligação Pulse Secure.
 
-- **Realm** (apenas no Pulse Secure) – Especifique o nome do realm de autenticação que pretende utilizar. Um realm de autenticação é um agrupamento de recursos de autenticação utilizado pelo tipo de ligação Pulse Secure.
+- **XML personalizado**: especifique qualquer comando XML personalizado que configure a conexão VPN.
 
+  **Exemplo de proteção de pulso**:
 
-- **XML personalizado** – Especifique todos os comandos XML personalizados que configuram a ligação VPN.
+  ```xml
+  <pulse-schema><isSingleSignOnCredential>true</isSingleSignOnCredential></pulse-schema>
+  ```
 
-**Exemplo para o Pulse Secure:**
+  **Exemplo de VPN móvel de ponto de verificação**:
 
-```xml
-    <pulse-schema><isSingleSignOnCredential>true</isSingleSignOnCredential></pulse-schema>
-```
+  ```xml
+  <CheckPointVPN port="443" name="CheckPointSelfhost" sso="true" debug="3" />
+  ```
 
-**Exemplo para o CheckPoint Mobile VPN:**
+  **Exemplo do SonicWALL Mobile Connect**:
 
-```xml
-    <CheckPointVPN port="443" name="CheckPointSelfhost" sso="true" debug="3" />
-```
+  ```xml
+  <MobileConnect><Compression>false</Compression><debugLogging>True</debugLogging><packetCapture>False</packetCapture></MobileConnect>
+  ```
 
-**Exemplo para o SonicWall Mobile Connect:**
+  **Exemplo de F5 Edge Client**:
 
-```xml
-    <MobileConnect><Compression>false</Compression><debugLogging>True</debugLogging><packetCapture>False</packetCapture></MobileConnect>
-```
+  ```xml
+  <f5-vpn-conf><single-sign-on-credential /></f5-vpn-conf>
+  ```
 
-**Exemplo para o F5 Edge Client:**
-
-```xml
-    <f5-vpn-conf><single-sign-on-credential /></f5-vpn-conf>
-```
-
-Para obter mais informações, consulte a documentação de cada fabricante relativa à VPN sobre como escrever comandos XML personalizados.
-
+  Para obter mais informações sobre como escrever comandos XML personalizados, consulte a documentação de VPN do fabricante.
 
 ## <a name="proxy-settings"></a>Definições de proxy
 
-- **Detetar automaticamente as definições de proxy** – Se o seu servidor VPN precisar de um servidor proxy para a ligação, especifique se quer que os dispositivos detetem automaticamente as definições de ligação. Para mais informações, veja a documentação do Windows Server.
-- **Script de configuração automática** – Utilize um ficheiro para configurar o servidor proxy. Introduza o **URL do servidor proxy**, que contém o ficheiro de configuração. Por exemplo, introduza `http://proxy.contoso.com`.
-- **Utilizar um servidor proxy** – Ative esta opção se quiser introduzir manualmente as definições do servidor proxy.
-  - **Endereço** – Introduza o endereço do servidor proxy (como um endereço IP).
-  - **Número de porta** – Introduza o número de porta associado ao servidor proxy.
-- **Ignorar o proxy para endereços locais** – Se o seu servidor VPN precisar de um servidor proxy para a ligação, selecione esta opção caso não pretenda utilizar o servidor proxy para endereços locais especificados. Para mais informações, veja a documentação do Windows Server.
+- **Detectar automaticamente as configurações de proxy**: se o servidor VPN exigir um servidor proxy para a conexão, especifique se deseja que os dispositivos detectem automaticamente as configurações de conexão.
+- **Script de configuração automática**: utilize um ficheiro para configurar o servidor proxy. Introduza o **URL do servidor proxy**, que contém o ficheiro de configuração. Por exemplo, introduza `http://proxy.contoso.com`.
+- **Usar servidor proxy**: Habilite esta opção se desejar inserir manualmente as configurações do servidor proxy.
+  - **Endereço**: Insira o endereço do servidor proxy (como um endereço IP).
+  - **Número de porta**: introduza o número de porta associado ao servidor proxy.
+- **Ignorar proxy para endereços locais**: se o servidor VPN exigir um servidor proxy para a conexão e você não quiser usar o servidor proxy para endereços locais inseridos, selecione essa opção.
+
+## <a name="next-steps"></a>Próximos passos
+
+O perfil está criado, mas ainda não está ativo. Em seguida, [atribua o perfil](device-profile-assign.md) e [monitorize o estado](device-profile-monitor.md).
+
+Defina as configurações de VPN em dispositivos [Android](vpn-settings-android.md), [Android Enterprise](vpn-settings-android-enterprise.md), [MacOS](vpn-settings-macos.md)e [Windows 10](vpn-settings-windows-10.md) .

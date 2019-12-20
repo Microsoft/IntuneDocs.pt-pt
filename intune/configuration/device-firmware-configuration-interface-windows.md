@@ -15,16 +15,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 38f02d694f1935e4732805f3ae7c66fd9718057a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 1d07066bcd599dc0cdbaf8fcf90ac1ee76be45fa
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059596"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206691"
 ---
 # <a name="use-device-firmware-configuration-interface-profiles-on-windows-devices-in-microsoft-intune-public-preview"></a>Usar perfis de interface de configuração de firmware de dispositivo em dispositivos Windows no Microsoft Intune (visualização pública)
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Ao usar o Intune para gerenciar dispositivos do AutoPilot, você pode gerenciar configurações de UEFI (BIOS) depois que elas são registradas, usando a DFCI (interface de configuração de firmware do dispositivo). Para obter uma visão geral dos benefícios, cenários e pré-requisitos, consulte [visão geral do DFCI](https://microsoft.github.io/mu/dyn/mu_plus/DfciPkg/Docs/Dfci_Feature/).
 
@@ -54,7 +54,7 @@ Esta funcionalidade aplica-se a:
 
 ## <a name="create-your-azure-ad-security-groups"></a>Criar seus grupos de segurança do Azure AD
 
-Os perfis de implantação do AutoPilot são atribuídos aos grupos de segurança do Azure AD. Certifique-se de criar grupos que incluam seus dispositivos com suporte DFCI. Para dispositivos DFCI, a maioria das organizações pode criar grupos de dispositivos, em vez de grupos de usuários. Pondere os seguintes cenários:
+Os perfis de implantação do AutoPilot são atribuídos aos grupos de segurança do Azure AD. Certifique-se de criar grupos que incluam seus dispositivos com suporte DFCI. Para dispositivos DFCI, a maioria das organizações pode criar grupos de dispositivos, em vez de grupos de usuários. Considere os seguintes cenários:
 
 - Os recursos humanos (RH) têm diferentes dispositivos Windows. Por motivos de segurança, você não quer que ninguém nesse grupo use a câmera nos dispositivos. Nesse cenário, você pode criar um grupo de usuários de segurança de RH para que a política se aplique aos usuários no grupo RH, seja qual for o tipo de dispositivo.
 - No chão de fábrica, você tem 10 dispositivos. Em todos os dispositivos, você deseja impedir a inicialização dos dispositivos de um dispositivo USB. Nesse cenário, você pode criar um grupo de dispositivos de segurança e adicionar esses 10 dispositivos ao grupo.
@@ -88,7 +88,7 @@ Esse perfil inclui as configurações de DFCI que você configura.
 
 4. Configure as definições:
 
-    - **Permitir que o usuário local altere as configurações de UEFI (BIOS)** : suas opções:
+    - **Permitir que o usuário local altere as configurações de UEFI (BIOS)**: suas opções:
       - **Somente configurações não definidas**: o usuário local pode alterar qualquer configuração *, exceto* as configurações definidas explicitamente para **habilitar** ou **desabilitar** pelo Intune.
       - **Nenhum**: o usuário local não pode alterar nenhuma configuração de UEFI (BIOS), incluindo as configurações não mostradas no perfil DFCI.
 
@@ -104,7 +104,7 @@ Esse perfil inclui as configurações de DFCI que você configura.
         - **Não configurado**: o Intune não toca nesse recurso e deixa todas as configurações como estão.
         - **Habilitado**: todos os microfones internos e os alto-falantes gerenciados diretamente pela UEFI (BIOS) estão habilitados. Periféricos, como dispositivos USB, não são afetados.
         - **Desabilitado**: todos os microfones internos e os alto-falantes diretamente gerenciados pela UEFI (BIOS) estão desabilitados. Periféricos, como dispositivos USB, não são afetados.
-    - **Rádios (Bluetooth, Wi-Fi, NFC, etc.)** : suas opções:
+    - **Rádios (Bluetooth, Wi-Fi, NFC, etc.)**: suas opções:
         - **Não configurado**: o Intune não toca nesse recurso e deixa todas as configurações como estão.
         - **Habilitado**: todos os rádios internos gerenciados diretamente pela UEFI (BIOS) estão habilitados. Periféricos, como dispositivos USB, não são afetados.
         - **Desabilitado**: todos os rádios internos gerenciados diretamente pela UEFI (BIOS) estão desabilitados. Periféricos, como dispositivos USB, não são afetados.
@@ -112,7 +112,7 @@ Esse perfil inclui as configurações de DFCI que você configura.
         > [!WARNING]
         > Se você desabilitar a configuração de **rádios** , o dispositivo exigirá uma conexão de rede com fio. Caso contrário, o dispositivo pode não ser gerenciável.
 
-    - **Inicialização de mídia externa (USB, SD)** : suas opções:
+    - **Inicialização de mídia externa (USB, SD)**: suas opções:
         - **Não configurado**: o Intune não toca nesse recurso e deixa todas as configurações como estão.
         - **Habilitado**: UEFI (BIOS) permite a inicialização a partir do armazenamento de disco não rígido.
         - **Desabilitado**: UEFI (BIOS) não permite a inicialização do armazenamento de disco não rígido.
@@ -148,7 +148,7 @@ Você também pode [sinalizar dispositivos para fazer check-in](../remote-action
 
 ## <a name="reuse-retire-or-recover-the-device"></a>Reutilizar, desativar ou recuperar o dispositivo
 
-### <a name="reuse"></a>Reutilizar
+### <a name="reuse"></a>Posterior
 
 Se você planeja redefinir o Windows para realocar o dispositivo, [Limpe o dispositivo](../remote-actions/devices-wipe.md). **Não** remova o registro de dispositivo do piloto automático.
 
@@ -167,7 +167,7 @@ Estas etapas desbloqueiam os menus UEFI (BIOS) do dispositivo. Os valores perman
 
 Agora você está pronto para apagar o dispositivo. Depois que o dispositivo for apagado, exclua o registro do piloto automático. A exclusão do registro impede que o dispositivo seja reregistrado automaticamente quando reinicializa.
 
-### <a name="recover"></a>Recuperar
+### <a name="recover"></a>Recupera
 
 Se você apagar um dispositivo e excluir o registro do piloto automático antes de desbloquear os menus UEFI (BIOS), os menus permanecerão bloqueados. O Intune não pode enviar atualizações de perfil para desbloqueá-lo.
 

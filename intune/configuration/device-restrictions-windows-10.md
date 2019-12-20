@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/04/2019
+ms.date: 12/19/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 78daf56f7e1d22b88d7134ac6cea86f1d999f0c6
-ms.sourcegitcommit: 66e284fe092e19c1da72b4b770e45bf25ac7910c
+ms.openlocfilehash: ae2f3b2b9d620a9b0a6822edc8aa15e656361a74
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74860252"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206963"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Configurações do dispositivo Windows 10 (e mais recente) para permitir ou restringir recursos usando o Intune
 
@@ -89,7 +89,7 @@ Essas configurações usam a [política de conectividade](https://docs.microsoft
 - **Canal de dados da rede celular**: escolha se os usuários finais podem usar dados, como navegar na Web, quando conectados a uma rede de celular. As opções são:
   - **Não configurado** (padrão): o Intune não altera nem atualiza essa configuração. Os usuários finais podem desativá-lo.
   - **Bloquear**: não permitir o canal de dados da rede celular. Os usuários finais não podem ativá-lo.
-  - **Allow (não editável)** : permite o canal de dados da rede celular. Os usuários finais não podem desativá-lo.
+  - **Allow (não editável)**: permite o canal de dados da rede celular. Os usuários finais não podem desativá-lo.
 
 - **Roaming de dados**: o **bloco** impede o roaming de dados de celular no dispositivo. **Não configurado** (padrão) permite o roaming entre redes ao acessar dados.
 - **VPN na rede celular**: **Bloquear** impede que o dispositivo acesse conexões VPN quando conectado a uma rede de celular. **Não configurado** (padrão) permite que a VPN use qualquer conexão, incluindo a rede celular.
@@ -149,7 +149,7 @@ Essas configurações usam o [CSP da política do EnterpriseCloudPrint](https://
   - **Hora e idioma**: **Bloquear** impede o acesso ao horário & área de linguagem do aplicativo de configurações no dispositivo. Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
     - **Modificação de horário do sistema**: o **bloco** impede que os usuários finais alterem as configurações de data e hora no dispositivo. Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração. Os usuários podem alterar essas configurações.
     - **Modificação das configurações de região** (somente desktop): **Bloquear** impede que os usuários finais alterem as configurações de região no dispositivo. Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração. Os usuários podem alterar essas configurações.
-    - **Modificação das configurações de idioma (somente desktop)** : **Bloquear** impede que os usuários finais alterem as configurações de idioma no dispositivo. Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração. Os usuários podem alterar essas configurações.
+    - **Modificação das configurações de idioma (somente desktop)**: **Bloquear** impede que os usuários finais alterem as configurações de idioma no dispositivo. Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração. Os usuários podem alterar essas configurações.
 
       [CSP de política de configurações](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings)
 
@@ -179,7 +179,7 @@ Você também pode **importar** um arquivo. csv com a lista de aplicativos.
 Essas configurações usam o [CSP da política de experiência](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience); que também lista as edições do Windows com suporte. 
 
 - **Captura de tela** (somente dispositivos móveis): o **bloco** impede que os usuários finais obtenham capturas no dispositivo. Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
-- **Copiar e colar (somente dispositivos móveis)** : o **bloco** impede que os usuários finais usem copiar e colar entre aplicativos no dispositivo. Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
+- **Copiar e colar (somente dispositivos móveis)**: o **bloco** impede que os usuários finais usem copiar e colar entre aplicativos no dispositivo. Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
 - **Cancelamento de registro manual**: **Bloquear** impede que os usuários finais excluam a conta da empresa usando o painel de controle do local de trabalho no dispositivo. Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração.
 
   Essa configuração de política não se aplicará se o computador for ingressado no Azure AD e o registro automático estiver habilitado.
@@ -226,12 +226,12 @@ Essas configurações usam o [CSP da política de experiência](https://docs.mic
 
 ## <a name="locked-screen-experience"></a>Experiência de ecrã bloqueado
 
-- **Notificações da central de ações (somente dispositivos móveis)** : **Bloquear** impede que as notificações da central de ações sejam exibidas na tela de bloqueio do dispositivo. **Não configurado** (padrão) permite que os usuários escolham quais aplicativos mostram as notificações na tela de bloqueio.
+- **Notificações da central de ações (somente dispositivos móveis)**: **Bloquear** impede que as notificações da central de ações sejam exibidas na tela de bloqueio do dispositivo. **Não configurado** (padrão) permite que os usuários escolham quais aplicativos mostram as notificações na tela de bloqueio.
 
   [CSP AboveLock/AllowActionCenterNotifications](https://msdn.microsoft.com/ie/dn904962(v=vs.94)#AboveLock_AllowActionCenterNotifications)
 
-- **URL da imagem da tela bloqueada (somente desktop)** : Insira a URL para uma imagem no formato jpg, JPEG ou png que é usado como o papel de parede da tela de bloqueio do Windows. Por exemplo, introduza `https://contoso.com/image.png`. Essa configuração bloqueia a imagem e não pode ser alterada posteriormente.
-- **Tempo limite de tela configurável pelo usuário (somente dispositivos móveis)** : **permitir** permite que os usuários configurem o tempo limite da tela. **Não configurado** (padrão) não dá aos usuários essa opção.
+- **URL da imagem da tela bloqueada (somente desktop)**: Insira a URL para uma imagem no formato jpg, JPEG ou png que é usado como o papel de parede da tela de bloqueio do Windows. Por exemplo, introduza `https://contoso.com/image.png`. Essa configuração bloqueia a imagem e não pode ser alterada posteriormente.
+- **Tempo limite de tela configurável pelo usuário (somente dispositivos móveis)**: **permitir** permite que os usuários configurem o tempo limite da tela. **Não configurado** (padrão) não dá aos usuários essa opção.
 
   [CSP DeviceLock/AllowScreenTimeoutWhileLockedUserConfig](https://msdn.microsoft.com/ie/dn904962(v=vs.94)#DeviceLock_AllowScreenTimeoutWhileLockedUserConfig)
 
@@ -243,7 +243,7 @@ Essas configurações usam o [CSP da política de experiência](https://docs.mic
 
   [CSP AboveLock/AllowToasts](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-abovelock#abovelock-allowtoasts)
 
-- **Tempo limite da tela (somente dispositivos móveis)** : defina a duração (em segundos) da tela bloqueando a ativação da tela. Os valores com suporte são 11-1800. Por exemplo, digite `300` para definir esse tempo limite como 5 minutos.
+- **Tempo limite da tela (somente dispositivos móveis)**: defina a duração (em segundos) da tela bloqueando a ativação da tela. Os valores com suporte são 11-1800. Por exemplo, digite `300` para definir esse tempo limite como 5 minutos.
 
   [CSP DeviceLock/ScreenTimeoutWhileLocked](https://msdn.microsoft.com/ie/dn904962(v=vs.94)#DeviceLock_ScreenTimeoutWhileLocked)
 
@@ -251,9 +251,9 @@ Essas configurações usam o [CSP da política de experiência](https://docs.mic
 
 Essas configurações usam o [CSP de política de mensagens](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-messaging); que também lista as edições do Windows com suporte.
 
-- **Sincronização de mensagens (somente dispositivos móveis)** : o **bloco** desabilita a realização de backup e restauração de mensagens de texto e de sincronização de mensagens entre dispositivos Windows. Desabilitar ajuda a evitar que informações sejam armazenadas em servidores fora do controle da organização. **Não configurado** (padrão) permite que os usuários alterem essas configurações e sincronizem suas mensagens.
-- **MMS (somente dispositivo móvel)** : o **bloco** desabilita a funcionalidade de envio e recebimento de MMS no dispositivo. Para empresas, use essa política para desabilitar o MMS em dispositivos como parte do requisito de gerenciamento ou auditoria. **Não configurado** (padrão) permite enviar e receber MMS.
-- **RCS (somente dispositivos móveis)** : o **bloqueio** desabilita a funcionalidade de envio e recebimento de RCS (serviços de comunicação avançados) no dispositivo. Para empresas, use essa política para desabilitar o RCS nos dispositivos como parte do requisito de gerenciamento ou de auditoria. **Não configurado** (padrão) permite enviar e receber RCS.
+- **Sincronização de mensagens (somente dispositivos móveis)**: o **bloco** desabilita a realização de backup e restauração de mensagens de texto e de sincronização de mensagens entre dispositivos Windows. Desabilitar ajuda a evitar que informações sejam armazenadas em servidores fora do controle da organização. **Não configurado** (padrão) permite que os usuários alterem essas configurações e sincronizem suas mensagens.
+- **MMS (somente dispositivo móvel)**: o **bloco** desabilita a funcionalidade de envio e recebimento de MMS no dispositivo. Para empresas, use essa política para desabilitar o MMS em dispositivos como parte do requisito de gerenciamento ou auditoria. **Não configurado** (padrão) permite enviar e receber MMS.
+- **RCS (somente dispositivos móveis)**: o **bloqueio** desabilita a funcionalidade de envio e recebimento de RCS (serviços de comunicação avançados) no dispositivo. Para empresas, use essa política para desabilitar o RCS nos dispositivos como parte do requisito de gerenciamento ou de auditoria. **Não configurado** (padrão) permite enviar e receber RCS.
 
 ## <a name="microsoft-edge-browser"></a>Browser Microsoft Edge
 
@@ -264,15 +264,15 @@ Essas configurações usam o [CSP da política do navegador](https://docs.micros
 As configurações disponíveis são alteradas dependendo do que você escolher. As opções são:
 
 - **Não** (padrão): o Microsoft Edge não está sendo executado no modo de quiosque. Todas as configurações do Microsoft Edge estão disponíveis para você alterar e configurar.
-- **Pôsteres digitais/interativos (quiosque de aplicativo único)** : filtra as configurações do Microsoft Edge que são aplicáveis ao modo de quiosque digital/interativo de pôsteres do Microsoft Edge para uso somente em quiosques de aplicativo único do Windows 10. Escolha essa configuração para abrir uma tela inteira de URL e mostrar apenas o conteúdo nesse site. [Configurar sinais digitais](https://docs.microsoft.com/windows/configuration/setup-digital-signage) fornece mais informações sobre esse recurso.
-- **Navegação pública InPrivate (quiosque de aplicativo único)** : filtra as configurações do Microsoft Edge que são aplicáveis para a navegação pública inprivada modo de quiosque do Microsoft Edge para uso em quiosques de aplicativo único do Windows 10. Executa uma versão de várias guias do Microsoft Edge.
-- **Modo normal (quiosque de vários aplicativos)** : filtra as configurações do Microsoft Edge que são aplicáveis para o modo de quiosque normal do Microsoft Edge. Executa uma versão completa do Microsoft Edge com todos os recursos de navegação.
-- **Navegação pública (quiosque de vários aplicativos)** : filtra as configurações do Microsoft Edge que são aplicáveis para navegação pública em um quiosque de vários aplicativos do Windows 10.  Executa uma versão de várias guias do Microsoft Edge InPrivate.
+- **Pôsteres digitais/interativos (quiosque de aplicativo único)**: filtra as configurações do Microsoft Edge que são aplicáveis ao modo de quiosque digital/interativo de pôsteres do Microsoft Edge para uso somente em quiosques de aplicativo único do Windows 10. Escolha essa configuração para abrir uma tela inteira de URL e mostrar apenas o conteúdo nesse site. [Configurar sinais digitais](https://docs.microsoft.com/windows/configuration/setup-digital-signage) fornece mais informações sobre esse recurso.
+- **Navegação pública InPrivate (quiosque de aplicativo único)**: filtra as configurações do Microsoft Edge que são aplicáveis para a navegação pública inprivada modo de quiosque do Microsoft Edge para uso em quiosques de aplicativo único do Windows 10. Executa uma versão de várias guias do Microsoft Edge.
+- **Modo normal (quiosque de vários aplicativos)**: filtra as configurações do Microsoft Edge que são aplicáveis para o modo de quiosque normal do Microsoft Edge. Executa uma versão completa do Microsoft Edge com todos os recursos de navegação.
+- **Navegação pública (quiosque de vários aplicativos)**: filtra as configurações do Microsoft Edge que são aplicáveis para navegação pública em um quiosque de vários aplicativos do Windows 10.  Executa uma versão de várias guias do Microsoft Edge InPrivate.
 
 > [!TIP]
 > Para obter mais informações sobre o que essas opções fazem, consulte [tipos de configuração do modo de quiosque do Microsoft Edge](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-configuration-types).
 
-Esse perfil de restrições de dispositivo está diretamente relacionado ao perfil de quiosque que você cria usando as [configurações de quiosque do Windows](kiosk-settings-windows.md). Resumindo:
+Esse perfil de restrições de dispositivo está diretamente relacionado ao perfil de quiosque que você cria usando as [configurações de quiosque do Windows](kiosk-settings-windows.md). Para resumir:
 
 1. Crie o perfil de [configurações de quiosque do Windows](kiosk-settings-windows.md) para executar o dispositivo no modo de quiosque. Selecione Microsoft Edge como o aplicativo e defina o modo de quiosque do Microsoft Edge no perfil de quiosque.
 2. Crie o perfil de restrições de dispositivo descrito neste artigo e configure recursos específicos e configurações permitidas no Microsoft Edge. Certifique-se de escolher o mesmo tipo de modo de quiosque do Microsoft Edge, conforme selecionado no seu perfil de quiosque ([configurações de quiosque do Windows](kiosk-settings-windows.md)). 
@@ -302,7 +302,7 @@ Esse perfil de restrições de dispositivo está diretamente relacionado ao perf
   - **URL do botão página inicial**: Insira a URL a ser aberta. Por exemplo, introduza: `https://www.bing.com` ou `https://www.contoso.com`.
   - **Ocultar botão página inicial**: oculta o botão página inicial
 - **Permitir que os usuários alterem o botão Início**: **Sim** permite que os usuários alterem o botão página inicial. As alterações do usuário substituem as configurações do administrador no botão página inicial. **Não** (padrão) impede que os usuários alterem o modo como o administrador configurou o botão página inicial.
-- **Mostrar página de experiência da primeira execução (somente dispositivo móvel)** : **Sim** (padrão) mostra a primeira página de introdução de uso no Microsoft Edge. **Não** impede que a página de introdução mostre a primeira vez que você executa o Microsoft Edge. Esse recurso permite que empresas, como organizações inscritas em zero configurações de emissões, bloqueiem essa página.
+- **Mostrar página de experiência da primeira execução (somente dispositivo móvel)**: **Sim** (padrão) mostra a primeira página de introdução de uso no Microsoft Edge. **Não** impede que a página de introdução mostre a primeira vez que você executa o Microsoft Edge. Esse recurso permite que empresas, como organizações inscritas em zero configurações de emissões, bloqueiem essa página.
 - **Local da lista de URLs de experiência da primeira execução** (somente Windows 10 Mobile): Insira a URL que aponta para o arquivo XML que contém as URLs de página da primeira execução. Por exemplo, introduza `https://www.contoso.com/sites.xml`.
 
 - **Atualizar o navegador após o tempo ocioso**: Insira o número de minutos ociosos até que o navegador seja atualizado, de 0-1440 minutos. O padrão é `5` minutos. Quando definido como `0` (zero), o navegador não é atualizado depois de ficar ocioso.
@@ -337,7 +337,7 @@ Esse perfil de restrições de dispositivo está diretamente relacionado ao perf
   - Mecanismo de pesquisa nas configurações do Microsoft Edge do cliente
   - Bing
   - Google
-  - Yahoo
+  - Instant
   - Valor personalizado: na **URL XML de OpenSearch**, insira uma URL HTTPS com o arquivo XML que inclui o nome curto e a URL para o mecanismo de pesquisa, no mínimo. Por exemplo, introduza `https://www.contoso.com/opensearch.xml`.
 - **Mostrar sugestões de pesquisa**: **Sim** (padrão) permite que o mecanismo de pesquisa sugira sites à medida que você digita frases de pesquisa na barra de endereços. **Não** impede esse recurso.
 - **Permitir alterações no mecanismo de pesquisa**: **Sim** (padrão) permite que os usuários adicionem novos mecanismos de pesquisa ou altere o mecanismo de pesquisa padrão no Microsoft Edge. Escolha **não** para impedir que os usuários personalizem o mecanismo de pesquisa.
@@ -367,7 +367,7 @@ Quando "bloquear e habilitar substituição de usuário" está selecionado, o us
 - **Permitir coleta de dados de bloco dinâmico**: **Sim** (padrão) permite que o Microsoft Edge colete informações de blocos dinâmicos fixados no menu iniciar. **Não** impede a coleta dessas informações, o que pode fornecer aos usuários uma experiência limitada.
 - O **usuário pode substituir erros de certificado**: **Sim** (padrão) permite que os usuários acessem sites que têm erros de protocolo SSL/TLS (segurança de camada de transporte). **Não** (recomendado para maior segurança) impede que os usuários acessem sites com erros SSL ou TLS.
 
-### <a name="additional"></a>Adicionais
+### <a name="additional"></a>Obter
 
 - **Permitir navegador Microsoft Edge** (somente dispositivos móveis): **Sim** (padrão) permite usar o navegador da Web Microsoft Edge no dispositivo móvel. **Não** impede o uso do Microsoft Edge no dispositivo. Se você escolher **não**, as outras configurações individuais se aplicarão somente ao desktop.
 - **Permitir lista suspensa de barra de endereços**: **Sim** (padrão) permite que o Microsoft Edge mostre o menu suspenso da barra de endereços com uma lista de sugestões. **Não** impede o Microsoft Edge de mostrar uma lista de sugestões em uma lista suspensa quando você digita. Quando definido como **não**, você:
@@ -416,7 +416,7 @@ Essas configurações usam o [CSP da política do DeviceLock](https://docs.micro
     Essa configuração também tem um impacto diferente dependendo da edição. Para obter detalhes específicos sobre essa configuração, consulte o [CSP DeviceLock/MaxDevicePasswordFailedAttempts](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts).
 
   - **Máximo de minutos de inatividade até o bloqueio da tela**: Insira o período de tempo que um dispositivo deve ficar ocioso antes que a tela seja bloqueada.
-  - **Expiração da senha (dias)** : Insira o período de tempo em dias em que a senha do dispositivo deve ser alterada, de 1-365. Por exemplo, digite `90` para expirar a senha após 90 dias.
+  - **Expiração da senha (dias)**: Insira o período de tempo em dias em que a senha do dispositivo deve ser alterada, de 1-365. Por exemplo, digite `90` para expirar a senha após 90 dias.
   - **Evitar a reutilização de senhas anteriores**: Insira o número de senhas usadas anteriormente que não podem ser usadas, de 1-24. Por exemplo, digite `5` para que os usuários não possam definir uma nova senha para sua senha atual ou com qualquer uma de suas quatro senhas anteriores.
   - **Exigir senha quando o dispositivo retorna do estado ocioso** (móvel e Holographic): escolha **exigir** para que os usuários precisem inserir uma senha para desbloquear o dispositivo depois de ficar ocioso. **Não configurado** (padrão) não exige um PIN ou senha quando o dispositivo é retomado do estado ocioso.
   - **Senhas simples**: Defina como **Bloquear** para que os usuários não possam criar senhas simples, como `1234` ou `1111`. Defina como **não configurado** (padrão) para permitir que os usuários criem senhas como `1234` ou `1111`. Esta definição também permite ou bloqueia a utilização de palavras-passe por imagem do Windows.
@@ -424,7 +424,7 @@ Essas configurações usam o [CSP da política do DeviceLock](https://docs.micro
 
   [Segurança/PreventAutomaticDeviceEncryptionForAzureADJoinedDevices CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-preventautomaticdeviceencryptionforazureadjoineddevices)
 
-- **Política de padrão FIPS (FIPS)** : **permitir** usa a política de padrão FIPS (FIPS), que é um padrão do governo dos EUA para criptografia, hash e assinatura. Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração. O padrão do sistema operacional não pode usar o FIPS.
+- **Política de padrão FIPS (FIPS)**: **permitir** usa a política de padrão FIPS (FIPS), que é um padrão do governo dos EUA para criptografia, hash e assinatura. Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração. O padrão do sistema operacional não pode usar o FIPS.
 
   [CSP de criptografia/AllowFipsAlgorithmPolicy](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-cryptography#cryptography-allowfipsalgorithmpolicy)
 
@@ -476,7 +476,7 @@ Você pode adicionar aplicativos que devem ter um comportamento de privacidade d
 
 Essas configurações usam o [CSP de política de personalização](https://docs.microsoft.com/windows/client-management/mdm/personalization-csp), que também lista as edições do Windows com suporte.
 
-- **URL da imagem de fundo da área de trabalho (somente desktop)** : Insira a URL para uma imagem no formato. jpg,. jpeg ou. png que você deseja usar como papel de parede da área de trabalho do Windows. Os utilizadores não podem alterar a imagem. Por exemplo, introduza `https://contoso.com/logo.png`.
+- **URL da imagem de fundo da área de trabalho (somente desktop)**: Insira a URL para uma imagem no formato. jpg,. jpeg ou. png que você deseja usar como papel de parede da área de trabalho do Windows. Os utilizadores não podem alterar a imagem. Por exemplo, introduza `https://contoso.com/logo.png`.
 
 ## <a name="printer"></a>Impressora
 
@@ -561,7 +561,7 @@ Selecione **OK** para guardar as alterações.
 
 Essas configurações usam o [CSP de política de pesquisa](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-search), que também lista as edições do Windows com suporte. 
 
-- **Pesquisa segura (somente dispositivos móveis)** : controle como a Cortana filtra conteúdo adulto nos resultados da pesquisa. As opções são:
+- **Pesquisa segura (somente dispositivos móveis)**: controle como a Cortana filtra conteúdo adulto nos resultados da pesquisa. As opções são:
   - **Definido pelo usuário**: permitir que os usuários finais escolham suas próprias configurações.
   - **Estrito**: filtragem mais alta contra conteúdo adulto.
   - **Moderado**: filtragem moderada contra conteúdo adulto. Os resultados de pesquisa válidos não são filtrados.
@@ -687,7 +687,7 @@ Essas configurações usam o [CSP de política do defender](https://docs.microso
 
   [CSP do defender/AllowBehaviorMonitoring](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowbehaviormonitoring)
 
-- **Sistema de inspeção de rede (NIS)** : o NIS ajuda a proteger dispositivos contra explorações baseadas em rede. Utiliza as assinaturas de vulnerabilidades conhecidas do Microsoft Endpoint Protection Center para ajudar a detetar e bloquear tráfego malicioso.
+- **Sistema de inspeção de rede (NIS)**: o NIS ajuda a proteger dispositivos contra explorações baseadas em rede. Utiliza as assinaturas de vulnerabilidades conhecidas do Microsoft Endpoint Protection Center para ajudar a detetar e bloquear tráfego malicioso.
 
   **Habilitar** ativa a proteção de rede e o bloqueio de rede. Os usuários não podem desativá-lo. Quando habilitado, os usuários são impedidos de se conectar a vulnerabilidades conhecidas.
 
@@ -723,7 +723,7 @@ Essas configurações usam o [CSP de política do defender](https://docs.microso
 
   [CSP do defender/AllowUserUIAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowuseruiaccess)
 
-- **Intervalo de atualização de inteligência de segurança (em horas)** : Insira o intervalo que o defender verifica para obter uma nova inteligência de segurança, de 0-24. As opções são:
+- **Intervalo de atualização de inteligência de segurança (em horas)**: Insira o intervalo que o defender verifica para obter uma nova inteligência de segurança, de 0-24. As opções são:
 
   - **Não configurado** (padrão): o Intune não altera nem atualiza essa configuração. O padrão do sistema operacional pode verificar se há atualizações a cada 8 horas.
   - Não **verificar**: o defender não verifica se há novas atualizações de inteligência de segurança.
@@ -846,6 +846,8 @@ Essas configurações usam o [CSP de política do defender](https://docs.microso
 
   [CSP do defender/PUAProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-puaprotection)
 
+- **Enviar exemplos de consentimento**: atualmente, essa configuração não tem impacto. Não use essa configuração. Ele pode ser removido em uma versão futura.
+
 - **Ações sobre ameaças de malware detectadas**: escolha como você deseja tratar os threads de malware. **Não configurado** (padrão) permite que o Microsoft defender escolha a melhor opção. Quando definido como **habilitar**, escolha as ações que você deseja que o defender assuma para cada nível de ameaça que detectar: baixa, moderada, alta e grave. As opções são:
   
   - **Limpar**
@@ -867,13 +869,13 @@ Essas configurações usam o [CSP de política do defender](https://docs.microso
 
 ## <a name="power-settings"></a>Definições de energia
 
-### <a name="battery"></a>Bateria
+### <a name="battery"></a>Nenhuma
 
 - **Nível da bateria para ativar a economia de energia**: quando o dispositivo estiver usando energia da bateria, insira o nível de carga da bateria para ativar a economia de energia de 0-100. Insira um valor percentual que indica o nível de carga da bateria. O valor padrão é 70%. Quando definido como 70%, a economia de energia é ativada quando a bateria tem 70% de encargo ou menos disponível.
 
   [CSP de energia/EnergySaverBatteryThresholdOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdonbattery)
 
-- **Fechamento da tampa (somente dispositivos móveis)** : quando o dispositivo estiver usando energia da bateria, escolha o que acontece quando a tampa é fechada. As opções são:
+- **Fechamento da tampa (somente dispositivos móveis)**: quando o dispositivo estiver usando energia da bateria, escolha o que acontece quando a tampa é fechada. As opções são:
 
   - **Não configurado** (padrão): o Intune não altera nem atualiza essa configuração.
   - **Nenhuma ação**: o dispositivo permanece ligado e continua a usar a energia da bateria.
@@ -913,7 +915,7 @@ Essas configurações usam o [CSP de política do defender](https://docs.microso
 
   [CSP de energia/EnergySaverBatteryThresholdPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdpluggedin)
 
-- **Fechamento da tampa (somente dispositivos móveis)** : quando o dispositivo estiver conectado, escolha o que acontece quando a tampa é fechada. As opções são:
+- **Fechamento da tampa (somente dispositivos móveis)**: quando o dispositivo estiver conectado, escolha o que acontece quando a tampa é fechada. As opções são:
 
   - **Não configurado** (padrão): o Intune não altera nem atualiza essa configuração.
   - **Nenhuma ação**: o dispositivo permanece ligado.

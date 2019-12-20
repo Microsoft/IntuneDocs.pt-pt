@@ -6,7 +6,7 @@ keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/18/2019
+ms.date: 12/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 05258c5363b43398dee1815bb91c50878803e426
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 21b83ec7b295a79dafc7527633cb31729ee40502
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74390935"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206249"
 ---
 # <a name="intune-reports"></a>Relatórios do Intune
 Microsoft Intune relatórios permite que você monitore de forma mais eficiente e proativa a integridade e a atividade dos pontos de extremidade em sua organização e também fornece outros dados de relatório no Intune. Por exemplo, você poderá ver relatórios sobre a conformidade do dispositivo, integridade do dispositivo e tendências do dispositivo. Além disso, você pode criar relatórios personalizados para obter dados mais específicos. 
@@ -53,16 +53,19 @@ Os dispositivos sem conformidade relatam as superfícies de dados normalmente us
 
 Você pode exibir o relatório de **dispositivos não compatíveis** usando as seguintes etapas:
 
-1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selecione **conformidade do dispositivo** > **dispositivos não compatíveis**.
+1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **dispositivos** > **monitorar** > **dispositivos não compatíveis**.
 
     ![Relatório de dispositivo não compatível](./media/intune-reports/intune-reports-02.png)
+
+    > [!TIP]
+    > Se você já usou o Intune no portal do Azure, encontrou os detalhes acima na portal do Azure entrando no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) e selecionando **conformidade do dispositivo** > dispositivos não **compatíveis**.
 
 ## <a name="device-compliance-report-organizational"></a>Relatório de conformidade do dispositivo (organizacional)
 Os relatórios de conformidade do dispositivo devem ser amplos por natureza e fornecer uma exibição de relatório mais tradicional de dados para identificar métricas agregadas. Este relatório foi projetado para funcionar com grandes conjuntos de altos para obter uma imagem completa de conformidade do dispositivo. Por exemplo, o relatório de conformidade do dispositivo para conformidade do dispositivo mostra todos os Estados de conformidade para que os dispositivos forneçam uma visão mais ampla dos dados, independentemente do tamanho do DataSet. Este relatório mostra a divisão completa de registros, além de uma visualização prática de métricas agregadas. Esse relatório pode ser gerado aplicando-se filtros e selecionando o botão "gerar relatório". Isso atualizará os dados para mostrar o estado mais recente com a capacidade de exibir os registros individuais que compõem os dados agregados. Como a maioria dos relatórios na nova estrutura, esses registros podem ser classificados e pesquisados para se concentrar nas informações de que você precisa. 
 
 Para ver um relatório gerado de estado do dispositivo, você pode usar as seguintes etapas:
-1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selecione **relatórios** para exibir o resumo dos relatórios.
 3. Selecione **Conformidade do dispositivo**.
 4. Selecione os filtros **status de conformidade**, **so**e **Propriedade** para refinar o relatório.
@@ -79,7 +82,7 @@ Para obter informações relacionadas, consulte [impor a conformidade para o Mic
 
 O relatório de conformidade do dispositivo está disponível como o relatório de resumo na carga de trabalho **relatórios** . Use as etapas a seguir para exibir o relatório de conformidade do dispositivo:
 
-1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selecione **relatórios** para exibir o resumo dos relatórios.
 
     ![Resumo de relatórios do Intune](./media/intune-reports/intune-reports-01.png)
@@ -91,7 +94,7 @@ Um relatório de tendência de conformidade do dispositivo para as tendências d
 
 Você pode exibir o relatório de **tendências** usando as seguintes etapas:
 
-1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selecione **relatórios** > **tendências** para exibir a conformidade do dispositivo em uma tendência de 60 dias.
 
     ![Relatório de tendências do Intune](./media/intune-reports/intune-reports-03.png)
@@ -106,7 +109,7 @@ Um relatório de especialista de exemplo corelacionaria dados de propriedade de 
 
 Você pode criar e exibir relatórios personalizados usando as seguintes etapas:
 
-1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selecione **relatórios** > **configurações de diagnóstico** adicionar uma [configuração de diagnóstico](reports.md#diagnostic-settings).
 
     ![Resumo de relatórios do Intune](./media/intune-reports/intune-reports-04.png)
@@ -140,7 +143,7 @@ Para obter mais informações, sobre configurações de diagnóstico, consulte [
 ### <a name="log-analytics"></a>Log Analytics
 Log Analytics é a principal ferramenta na portal do Azure para escrever consultas de log e analisar interativamente os resultados das consultas. Mesmo que uma consulta de log seja usada em outro lugar na Azure Monitor, você normalmente escreverá e testará a consulta primeiro usando Log Analytics. Para obter detalhes sobre como usar Log Analytics e criar consultas de log, consulte [visão geral das consultas de log no Azure monitor](https://docs.microsoft.com/azure/azure-monitor/log-query/log-query-overview). 
 
-### <a name="workbooks"></a>Livros
+### <a name="workbooks"></a>Pastas
 As pastas de trabalho combinam texto, consultas de análise, métricas do Azure e parâmetros em relatórios interativos sofisticados. As pastas de trabalho são editáveis por outros membros da equipe que têm acesso aos mesmos recursos do Azure. Para obter mais informações sobre pastas de trabalho, consulte [Azure monitor pastas de trabalho](https://docs.microsoft.com/azure/azure-monitor/app/usage-workbooks). Além disso, você pode trabalhar com os modelos de pasta de trabalho e contribuir com eles. Para obter mais informações, consulte [Azure monitor modelos de pasta de trabalho](https://go.microsoft.com/fwlink/?linkid=867045).
 
 ## <a name="next-steps"></a>Próximos passos
@@ -148,7 +151,7 @@ As pastas de trabalho combinam texto, consultas de análise, métricas do Azure 
 Saiba mais sobre as seguintes tecnologias:
 - [Estrutura de relatórios de Microsoft Intune de blog](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/New-Reporting-Framework-Coming-to-Intune/ba-p/1009553)
 - [Azure Monitor](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-activity-logs-azure-monitor)
-- [O que é o Log Analytics?](https://docs.microsoft.com/azure/azure-monitor/log-query/log-query-overview#what-is-log-analytics)
+- [O que é Log Analytics?](https://docs.microsoft.com/azure/azure-monitor/log-query/log-query-overview#what-is-log-analytics)
 - [Consultas de log](https://docs.microsoft.com/azure/azure-monitor/log-query/log-query-overview)
 - [Introdução ao Log Analytics no Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/log-query/get-started-portal)
 - [Azure Monitor pastas de trabalho](https://docs.microsoft.com/azure/azure-monitor/app/usage-workbooks)

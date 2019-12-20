@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0a888e2087b98eeec82aeeb555677dddcb3eff4e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: e9b44e50300c3bd034ca2bb3b0454a5ce953dc18
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74058227"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206980"
 ---
 # <a name="use-apis-to-add-third-party-cas-for-scep-to-intune"></a>Utilizar APIs para adicionar outras ACs para o SCEP ao Intune
 
@@ -202,7 +202,7 @@ Parâmetros:
 
     - transactionId – o ID da Transação do SCEP
     - certificateRequest – Base64 do Pedido de Certificado PKCS #10 codificado com DER codificado como uma cadeia
-    - certThumprint – thumprint do certificado aprovisionado
+    - hash SHA1 certThumprint da impressão digital do certificado provisionado
     - certSerialNumber – número de série do certificado aprovisionado
     - certExpirationDate – data de expiração do certificado aprovisionado. A cadeia de data/hora deve ter o formato de hora de UTC da Web (YYYY-MM-DDThh:mm:ss.sssTZD) – ISO 8601.
     - certIssuingAuthority – nome da autoridade que emitiu o certificado

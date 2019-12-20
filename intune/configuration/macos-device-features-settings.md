@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5519bdc405e725556db18d36fa98289c4edb5090
-ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
+ms.openlocfilehash: 791e2a1313480bdf1ad95988d48664d6620ba0b3
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74992909"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206351"
 ---
 # <a name="macos-device-feature-settings-in-intune"></a>configurações de recurso de dispositivo macOS no Intune
 
@@ -135,7 +135,7 @@ Esta funcionalidade aplica-se a:
   - **Kerberos**: Use a extensão Kerberos interna da Apple, que está incluída no macOS Catalina 10,15 e mais recente. Essa opção é uma versão específica do Kerberos da extensão do aplicativo de **credencial** .
 
   > [!TIP]
-  > Com os tipos de **redirecionamento** e de **credencial** , você adiciona seus próprios valores de configuração para passar pela extensão. Se você estiver usando uma **credencial**, considere o uso de definições de configuração internas fornecidas pela Apple no tipo **Kerberos** .
+  > Com os tipos de **redirecionamento** e de **credencial** , você adiciona seus próprios valores de configuração para passar pela extensão. Se você estiver usando **credenciais**, considere o uso de definições de configuração internas fornecidas pela Apple no tipo **Kerberos** .
 
 - **ID da extensão** (redirecionamento e credencial): Insira o identificador do pacote que identifica a extensão do aplicativo SSO, como `com.apple.ssoexample`.
 - **ID da equipe** (redirecionamento e credencial): Insira o identificador de equipe da sua extensão de aplicativo SSO. Um identificador de equipe é uma cadeia de caracteres alfanuméricos de 10 caracteres (números e letras) gerada pela Apple, como `ABCDE12345`. 

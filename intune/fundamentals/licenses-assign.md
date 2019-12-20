@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 12/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -16,30 +16,31 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dcdc2b69de52ea3bf23f4e3c5d11399b62bc8daa
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9a62cc6ef2f1b3bd6f305fe6fa23a24f95d3dd37
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414096"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207366"
 ---
 # <a name="assign-licenses-to-users-so-they-can-enroll-devices-in-intune"></a>Atribuir licenças aos utilizadores para que estes possam inscrever dispositivos no Intune
 
 Quer adicione utilizadores manualmente ou sincronize a partir do Active Directory no local, tem primeiro de atribuir a cada utilizador uma licença do Intune antes de os utilizadores poderem inscrever os respetivos dispositivos no Intune. Para obter uma lista das licenças, veja [Licenses that include Intune (Licenças que incluem o Intune)](../licenses.md).
 
-## <a name="assign-an-intune-license-in-the-microsoft-365-admin-center"></a>Atribuir uma licença do Intune no centro de administração do Microsoft 365
+> [!NOTE]
+> Os usuários atribuídos à política de proteção de aplicativo do Intune e não registrar seus dispositivos no Microsoft Intune exigirão também uma licença do Intune para receber a política. 
 
-Você pode usar o [centro de administração Microsoft 365](https://go.microsoft.com/fwlink/p/?LinkId=698854) para adicionar manualmente usuários baseados em nuvem e atribuir licenças a contas de usuário baseadas em nuvem e contas sincronizadas do seu Active Directory local ao Azure AD.
+## <a name="assign-an-intune-license-microsoft-endpoint-manager-admin-center"></a>Atribuir uma licença do Intune centro de administração do Microsoft Endpoint Manager
 
-1. Entre no centro de [Administração do Microsoft 365](https://go.microsoft.com/fwlink/p/?LinkId=698854) usando suas credenciais de administrador de locatários e, em seguida, escolha **usuários** > **usuários ativos**.
+Você pode usar o [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) para adicionar manualmente usuários baseados em nuvem e atribuir licenças a contas de usuário baseadas em nuvem e contas sincronizadas do seu Active Directory local ao Azure AD.
 
-2. Selecione a conta de utilizador à qual pretende atribuir uma licença de utilizador do Intune e, em seguida, escolha **Licenças de produtos** > **Editar**.
+1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), selecione **usuários** > **todos os usuários** > escolha um usuário > **licenças** > **atribuições**.
 
-3. Alterne o **Intune** ou o **Enterprise Mobility + Security** para **Ativado** e escolha **Guardar**.
+2. Escolha a caixa do **Intune** > **salvar**.
 
-   ![Captura de tela da seção Microsoft 365 de licenças de produto do centro de administração.](./media/licenses-assign/office-assign-license.png)
+   ![Captura de tela da seção Microsoft 365 de licenças de produto do centro de administração.](./media/licenses-assign/mem-assign-license.png)
 
-4. A conta de utilizador tem agora as permissões que são precisas para utilizar o serviço e inscrever os dispositivos para gestão.
+3. A conta de utilizador tem agora as permissões que são precisas para utilizar o serviço e inscrever os dispositivos para gestão.
 
 > [!NOTE]
 > Os usuários aparecerão no portal clássico do Intune somente depois que tiverem registrado um dispositivo usando o cliente de computador do Intune. Além disso, pode selecionar um grupo de utilizadores para editar ao mesmo tempo, ao selecionar para adicionar ou substituir uma licença para todos os utilizadores selecionados.

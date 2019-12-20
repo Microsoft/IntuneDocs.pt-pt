@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 73848ee8301362f14fe2866a57329425d5e5cfbe
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: b566dd58b01a411126ffabb46d526e4480c2ba0a
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74563670"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75205977"
 ---
 # <a name="add-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Adicionar aplicativos do Office 365 a dispositivos Windows 10 com Microsoft Intune
 
@@ -129,7 +129,7 @@ Se você tiver selecionado a opção **Designer de configuração** na caixa sus
 ## <a name="select-scope-tags-optional"></a>Selecionar marcas de escopo (opcional)
 Você pode usar marcas de escopo para determinar quem pode ver as informações do aplicativo cliente no Intune. Para obter detalhes completos sobre marcas de escopo, consulte [usar o controle de acesso baseado em função e marcas de escopo para distribuí-lo](../fundamentals/scope-tags.md).
 
-1. Selecione **escopo (marcas)**  > **Adicionar**.
+1. Selecione **escopo (marcas)** > **Adicionar**.
 2. Use a caixa **selecionar** para procurar marcas de escopo.
 3. Marque a caixa de seleção ao lado das marcas de escopo que você deseja atribuir a este aplicativo.
 4. Selecione **Selecionar** > **OK**.
@@ -142,7 +142,7 @@ Se você tiver selecionado a opção **inserir dados XML** na caixa suspensa **f
 
 Quando tiver concluído, no painel **Adicionar Aplicação**, selecione **Adicionar**. A aplicação que criou é apresentada na lista de aplicações. A próxima etapa é atribuir os aplicativos aos grupos que você escolher. Para obter mais informações, veja [Atribuir aplicações a grupos](~/apps/apps-deploy.md).
 
-## <a name="deployment-details"></a>Detalhes da implementação
+## <a name="deployment-details"></a>Detalhes da implantação
 
 Depois que a política de implantação do Intune for atribuída aos computadores de destino por meio do [provedor de serviços de configuração do Office (CSP)](https://docs.microsoft.com/windows/client-management/mdm/office-csp), o dispositivo final baixará automaticamente o pacote de instalação do local *officecdn.Microsoft.com* . Você verá dois diretórios aparecendo no diretório *arquivos de programas* :
 
@@ -186,7 +186,7 @@ Depois de concluir que a infraestrutura de rede e o Intune funcionam conforme o 
   [O Office instalado com Clique para executar e Windows Installer no mesmo computador não é suportado](https://support.office.com/article/office-installed-with-click-to-run-and-windows-installer-on-same-computer-isn-t-supported-30775ef4-fa77-4f47-98fb-c5826a6926cd)
 - O usuário de conexão deve ter permissão para instalar aplicativos no dispositivo.
 - Confirme se não há nenhum problema com base no log do Windows Visualizador de Eventos **logs do windows** -> **aplicativos**.
-- Capture logs detalhados de instalação do Office durante a instalação. Para o fazer, siga estes passos:<br>
+- Capture logs detalhados de instalação do Office durante a instalação. Para fazer isso, siga estas etapas:<br>
     1. Ative o log detalhado para a instalação do Office nos computadores de destino. Para fazer isso, execute o seguinte comando para modificar o registro:<br>
         `reg add HKLM\SOFTWARE\Microsoft\ClickToRun\OverRide /v LogLevel /t REG_DWORD /d 3`<br>
     2. Implante o pacote do Office 365 nos dispositivos de destino novamente.<br>
@@ -197,7 +197,7 @@ Depois de concluir que a infraestrutura de rede e o Intune funcionam conforme o 
 
 ## <a name="errors-during-installation-of-the-app-suite"></a>Erros durante a instalação do conjunto de aplicações
 
-Consulte [como habilitar o log ULS do Office 365 ProPlus](https://blogs.technet.microsoft.com/odsupport/2018/06/18/how-to-enable-office-365-proplus-uls-logging) para obter informações sobre como exibir logs de instalação detalhados.
+Consulte [como habilitar o log ULS do Office 365 ProPlus](/office/troubleshoot/diagnostic-logs/how-to-enable-office-365-proplus-uls-logging) para obter informações sobre como exibir logs de instalação detalhados.
 
 A seguinte tabela lista códigos de erro comuns que poderá encontrar e o seu significado.
 

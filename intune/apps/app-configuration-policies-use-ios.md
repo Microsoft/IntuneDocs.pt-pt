@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a104b4d41a364c552a8ebac73ff3341af71d6d21
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 905a37f182e326c756e3e4fb365e64bab562542c
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74564170"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75204991"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Adicionar políticas de configuração da aplicação para dispositivos iOS geridos
 
@@ -50,35 +50,35 @@ Depois de selecionar os grupos a incluir na sua política de configuração da a
 
 ## <a name="create-an-app-configuration-policy"></a>Criar uma política de configuração de aplicação
 
-1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. Escolha os **aplicativos** > **políticas de configuração de aplicativo** > **Adicionar**.
-5. Defina os seguintes detalhes:
+1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Escolha os **aplicativos** > **políticas de configuração de aplicativo** > **Adicionar** > **dispositivos gerenciados**.
+3. Defina os seguintes detalhes:
     - **Nome** – o nome do perfil que é apresentado no portal do Azure.
     - **Descrição** – a descrição do perfil que é apresentada no portal do Azure.
-    - **Tipo de registro de dispositivo** -escolha **dispositivos gerenciados** para dispositivos que foram registrados no Intune.
-6. Selecione **iOS** em **Plataforma**.
-7. Selecione **Aplicação associada**. Em seguida, no painel **Aplicação associada**, selecione a aplicação gerida à qual pretende aplicar a configuração e selecione **OK**.
-8. No painel **Adicionar política de configuração**, selecione **Definições de configuração**.
-9. Selecione **Formato das definições de configuração**. Selecione um dos seguintes métodos para adicionar informações de configuração:
+    - **Tipo de registro do dispositivo** – essa configuração é definida como **dispositivos gerenciados**.
+4. Selecione **iOS** em **Plataforma**.
+5. Selecione **Aplicação associada**. Em seguida, no painel **Aplicação associada**, selecione a aplicação gerida à qual pretende aplicar a configuração e selecione **OK**.
+6. Escolha **definições de configuração** para exibir o painel **definições de configuração** .
+7. Selecione **Formato das definições de configuração**. Selecione um dos seguintes métodos para adicionar informações de configuração:
     - **Utilizar estruturador de configuração**
     - **Introduzir dados XML**<br><br>
     Para obter detalhes sobre a utilização do estruturador de configuração, veja [Utilizar estruturador de configuração](#use-configuration-designer). Para obter detalhes sobre a introdução de dados XML, veja [Introduzir dados XML](#enter-xml-data). 
-10. Depois de adicionar as informações de configuração, escolha **OK**e, em seguida, escolha **Adicionar** para adicionar a política de configuração. O painel de descrição geral da política de configuração é apresentado.
-11. Selecione **Atribuições** para apresentar as opções de inclusão e exclusão. 
+8. Depois de adicionar as informações de configuração, escolha **OK**e, em seguida, escolha **Adicionar** para adicionar a política de configuração. O painel de descrição geral da política de configuração é apresentado.
+9. Selecione **Atribuições** para apresentar as opções de inclusão e exclusão. 
 
     ![Captura de ecrã do separador Atribuições de política – Incluir](./media/app-configuration-policies-use-ios/app-config-policy01.png)
-12. Selecione **Todos os Utilizadores** no separador **Incluir**.
+10. Selecione **Todos os Utilizadores** no separador **Incluir**.
 
     ![Captura de ecrã do menu pendente Atribuições de política – Todos os Utilizadores](./media/app-configuration-policies-use-ios/app-config-policy02.png)
-13. Selecione o separador **Excluir**. 
-14. Clique em **Selecionar grupos para excluir** para apresentar o painel relacionado.
+11. Selecione o separador **Excluir**. 
+12. Clique em **Selecionar grupos para excluir** para apresentar o painel relacionado.
 
     ![Captura de tela de atribuições de política – selecionar grupos para excluir painel](./media/app-configuration-policies-use-ios/app-config-policy03.png)
-15. Escolha os grupos que pretende excluir e, em seguida, clique em **Selecionar**.
+13. Escolha os grupos que pretende excluir e, em seguida, clique em **Selecionar**.
 
     >[!NOTE]
     >Ao adicionar um grupo, se outro grupo já tiver sido incluído num determinado tipo de atribuição, o mesmo estará pré-selecionado e inalterável para outras atribuições de inclusão. Por conseguinte, esse grupo que foi utilizado não poderá ser utilizado como um grupo excluído.
-16. Clique em **Guardar**.
+14. Clique em **Guardar**.
 
 ## <a name="use-configuration-designer"></a>Utilizar o estruturador de configuração
 
@@ -94,7 +94,7 @@ O Microsoft Intune disponibiliza definições de configuração exclusivas para 
 
 ### <a name="delete-a-setting"></a>Eliminar uma definição
 
-1. Selecione as reticências ( **...** ) junto à definição.
+1. Selecione as reticências (**...**) junto à definição.
 2. Selecione **Eliminar**.
 
 Os carateres \{\{ e \}\} são utilizados apenas por tipos de token e não devem ser utilizados para outros fins.

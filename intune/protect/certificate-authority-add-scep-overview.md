@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9454353ec4f8291d4d8c0001cc977838ecec787b
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 4d05e33dbc28707bc6f929be72ba4a77c2e0641c
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74540806"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206062"
 ---
 # <a name="add-partner-certification-authority-in-intune-using-scep"></a>Adicionar autoridades de certificação parceiras no Intune com o SCEP
 
@@ -72,7 +72,7 @@ Para permitir que um servidor do SCEP de terceiros execute a validação do desa
 
 Certifique-se de que tem as permissões obrigatórias para registar uma aplicação do Azure AD. Consulte [as permissões necessárias](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-create-service-principal-portal#required-permissions), na documentação do Azure AD.
 
-#### <a name="create-an-application-in-azure-active-directory"></a>Criar uma Aplicação no Azure Active Directory  
+#### <a name="create-an-application-in-azure-active-directory"></a>Criar um aplicativo no Azure Active Directory  
 
 1. Na [portal do Azure](https://portal.azure.com), acesse **Azure Active Directory** > **registros de aplicativo**e, em seguida, selecione **novo registro**.  
 
@@ -89,7 +89,7 @@ Certifique-se de que tem as permissões obrigatórias para registar uma aplicaç
    > [!IMPORTANT]  
    > Antes de sair dessa página, copie o valor do segredo do cliente e registre-o para uso posterior com sua implementação de autoridade de certificação de terceiros. Esse valor não é mostrado novamente. Certifique-se de examinar as diretrizes para sua autoridade de certificação de terceiros sobre como desejam a ID do aplicativo, a chave de autenticação e a ID do locatário configurados.  
 
-6. Registre sua **ID de locatário**. A ID do locatário é o texto do domínio após o sinal @ em sua conta. Por exemplo, se sua conta for *admin@name.onmicrosoft.com* , sua ID de locatário será **Name.onmicrosoft.com**.  
+6. Registre sua **ID de locatário**. A ID do locatário é o texto do domínio após o sinal @ em sua conta. Por exemplo, se sua conta for *admin@name.onmicrosoft.com*, sua ID de locatário será **Name.onmicrosoft.com**.  
 
 7. No painel de navegação do aplicativo, acesse **permissões de API** em **gerenciar**e, em seguida, selecione **Adicionar uma permissão**.  
 
@@ -119,7 +119,7 @@ Quando anula a inscrição ou apaga os dados do dispositivo, os certificados sã
 ## <a name="third-party-certification-authority-partners"></a>Parceiros de autoridades de certificação de terceiros
 As seguintes autoridades de certificação de terceiros suportam o Intune:
 
-- [Entrust Datacard](https://info.entrustdatacard.com/pki-eval-tool)
+- [Entrust Datacard](https://go.entrustdatacard.com/pki/intune/)
 - [Versão open source do GitHub do EJBCA](https://github.com/agerbergt/intune-ejbca-connector)
 - [EverTrust](https://evertrust.fr/en/products/)
 - [GlobalSign](https://downloads.globalsign.com/acton/attachment/2674/f-6903f60b-9111-432d-b283-77823cc65500/1/-/-/-/-/globalsign-aeg-microsoft-intune-integration-guide.pdf)

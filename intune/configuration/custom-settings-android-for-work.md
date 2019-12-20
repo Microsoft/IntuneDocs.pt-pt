@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/21/2019
+ms.date: 12/18/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bd2ab7ad8eb155719695bede1f539d5c264d455b
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 1bd6e2d5ceebd23e87f464d15376594d1764c5b8
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74319821"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206810"
 ---
 # <a name="use-custom-settings-for-android-enterprise-devices-in-microsoft-intune"></a>Utilizar definições personalizadas para dispositivos Android Enterprise no Microsoft Intune
 
@@ -42,21 +42,21 @@ Este artigo mostra-lhe como criar um perfil personalizado para dispositivos Andr
 
 ## <a name="create-the-profile"></a>Criar o perfil
 
-1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selecione **Configuração do dispositivo** > **Perfis** > **Criar perfil**.
+1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **dispositivos** > **perfis de configuração** > **Criar perfil**.
 3. Introduza as seguintes definições:
 
-    - **Nome**: introduza um nome para o perfil, como `android enterprise custom profile`.
-    - **Descrição:** introduza uma descrição para o perfil.
+    - **Nome**: Insira um nome descritivo para o perfil. Atribua nomes aos perfis de forma que possa identificá-los facilmente mais tarde. Por exemplo, um bom nome de perfil é o **perfil personalizado do Android Enterprise**.
+    - **Descrição:** introduza uma descrição para o perfil. Esta definição é opcional, mas recomendada.
     - **Plataforma**: selecione **Android Enterprise**.
-    - **Tipo de perfil**: selecione **Personalizado**.
+    - **Tipo de perfil**: selecione **personalizado**.
 
 4. Em **Definições OMA-URI Personalizadas**, selecione **Adicionar**. Introduza as seguintes definições:
 
     - **Nome**: introduza um nome exclusivo para a definição OMA-URI, para poder encontrá-la facilmente.
     - **Descrição**: introduza uma descrição que lhe permita obter uma descrição geral da definição e outros detalhes importantes.
     - **OMA-URI**: introduza o OMA-URI que quer utilizar como uma definição.
-    - **Tipo de dados**: selecione o tipo de dados que irá utilizar para esta definição OMA-URI. As opções são:
+    - **Tipo de dados**: selecione o tipo de dados que você usará para essa configuração de OMA-URI. As opções são:
 
       - Cadeia
       - Cadeia (ficheiro XML)
@@ -66,33 +66,33 @@ Este artigo mostra-lhe como criar um perfil personalizado para dispositivos Andr
       - Booleano
       - Base64 (ficheiro)
 
-    - **Valor**: introduza o valor de dados que pretende associar à definição OMA-URI que introduziu. O valor depende do tipo de dados que selecionou. Por exemplo, se optar por **Data e hora**, selecione o valor num seletor de datas.
+    - **Valor**: introduza o valor de dados que pretende associar à definição OMA-URI que introduziu. O valor depende do tipo de dados que selecionou. Por exemplo, se você selecionar **data e hora**, selecione o valor de um seletor de data.
 
     Depois de adicionar algumas definições, pode selecionar **Exportar**. A opção **Exportar** cria uma lista de todos os valores que adicionou num ficheiro de valores separados por vírgulas (.csv).
 
 5. Selecione **OK** para guardar as alterações. Continue a adicionar mais definições conforme necessário.
-6. Quanto terminar, selecione **OK** > **Criar** para criar o perfil do Intune. Depois de criado, o perfil é apresentado na lista **Configuração do dispositivo – Perfis**.
+6. Quando terminar, selecione **OK** > **criar** para criar o perfil do Intune. Ao concluir, seu perfil é mostrado na lista **dispositivos – perfis de configuração** .
 
 ## <a name="example"></a>Exemplo
 
 Neste exemplo, irá criar um perfil personalizado que restringe as ações de copiar e colar entre aplicações de trabalho e pessoais em dispositivos Android Enterprise.
 
-1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selecione **Configuração do dispositivo** > **Perfis** > **Criar perfil**.
+1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **dispositivos** > **perfis de configuração** > **Criar perfil**.
 3. Introduza as seguintes definições:
 
-    - **Nome**: introduza um nome para o perfil, como `android ent block copy paste custom profile`.
-    - **Descrição:** introduza uma descrição para o perfil.
+    - **Nome**: Insira um nome descritivo para o perfil. Atribua nomes aos perfis de forma que possa identificá-los facilmente mais tarde. Por exemplo, insira **Android ent Block copiar colar personalizado perfil**.
+    - **Descrição:** introduza uma descrição para o perfil. Esta definição é opcional, mas recomendada.
     - **Plataforma**: selecione **Android Enterprise**.
-    - **Tipo de perfil**: selecione **Personalizado**.
+    - **Tipo de perfil**: selecione **personalizado**.
 
 4. Em **Definições OMA-URI Personalizadas**, selecione **Adicionar**. Introduza as seguintes definições:
 
     - **Nome**: introduza algo como `Block copy and paste`.
     - **Descrição**: introduza algo como `Blocks copy/paste between work and personal apps`.
     - **OMA-URI**: introduza `./Vendor/MSFT/WorkProfile/DisallowCrossProfileCopyPaste`.
-    - **Tipo de dados**: selecione **Booleano** para que o valor deste OMA-URI seja **True** ou **False**.
-    - **Valor**: selecione **True**.
+    - **Tipo de dados**: selecione **booliano** para que o valor para esse OMA-URI seja **true** ou **false**.
+    - **Valor**: selecione **true**.
 
 5. Depois de introduzir as definições, o seu ambiente deverá ter um aspeto semelhante à imagem seguinte:
 
@@ -102,6 +102,6 @@ Ao atribuir este perfil aos dispositivos Android Enterprise que gere, a funciona
 
 ## <a name="next-steps"></a>Próximos passos
 
-O perfil está criado, mas ainda não está ativo. Em seguida, [atribua o perfil](device-profile-assign.md).
+O perfil está criado, mas ainda não está ativo. Em seguida, [atribua o perfil](../device-profile-assign.md) e [monitorize o estado](device-profile-monitor.md).
 
-Saiba como [criar o perfil em dispositivos Android](../custom-settings-android.md).
+Crie um [perfil personalizado em dispositivos Android](../custom-settings-android.md).

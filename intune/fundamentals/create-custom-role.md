@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3ca83287c58f8d2fb7c8eec5f8cc793e2c67b77a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 68c2dc7df123593513c14e16e2626c7426f50b01
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74390709"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207422"
 ---
 # <a name="create-a-custom-role-in-intune"></a>Criar uma função personalizada no Intune
 
@@ -34,36 +34,30 @@ Para criar, editar ou atribuir funções, a sua conta tem de ter uma das seguint
 
 ## <a name="to-create-a-custom-role"></a>Para criar uma função personalizada
 
-1. Inicie sessão no [portal do Azure](https://portal.azure.com) com as suas credenciais do Intune.
+1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **funções** > **todas as funções** > **Adicionar**.
 
-2. Selecione **Todos os serviços** no menu à esquerda e, em seguida, escreva **Intune** no filtro da caixa de texto.
+2. No painel **Adicionar Função Personalizada**, introduza um nome e uma descrição para a nova função e, em seguida, clique em **Permissões**.
 
-3. Escolha > **funções** do **Intune** > **todas as funções** > **Adicionar**.
+3. No painel **Permissões**, escolha as permissões que quer utilizar com esta função.
 
-4. No painel **Adicionar Função Personalizada**, introduza um nome e uma descrição para a nova função e, em seguida, clique em **Permissões**.
+4. Na folha **escopo (marcas)** , escolha as marcas para essa função. Essa função pode acessar recursos que também têm essas marcas.
 
-5. No painel **Permissões**, escolha as permissões que quer utilizar com esta função.
+5. Quando tiver terminado, selecione **OK**.
 
-6. Na folha **escopo (marcas)** , escolha as marcas para essa função. Essa função pode acessar recursos que também têm essas marcas.
-
-7. Quando tiver terminado, selecione **OK**.
-
-8. No painel **Adicionar Função Personalizada**, clique em **Criar**. A nova função é exibida na lista na folha **funções do Intune – todas as funções** .
+6. No painel **Adicionar Função Personalizada**, clique em **Criar**. A nova função é exibida na lista na folha **funções do Intune – todas as funções** .
 
 
 ## <a name="copy-a-role"></a>Copiar uma função
 
 Você também pode copiar uma função existente.
 
-1. Entre no [portal do Azure](https://portal.azure.com) com suas credenciais do Intune e selecione **Intune**.
+1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **funções** > **todas as funções** > Selecionar uma função na lista > **duplicar**.
 
-2. Selecione **funções** > **todas as funções** > Selecionar uma função na lista > **duplicar**.
+2. Em **função duplicada**, insira um nome. Certifique-se de usar um nome exclusivo.
 
-3. Em **função duplicada**, insira um nome. Certifique-se de usar um nome exclusivo.
+3. Todas as permissões e marcas de escopo da função original já serão selecionadas. Posteriormente, você pode alterar o **nome**, a **Descrição**, **as permissões**e o **escopo (marcas)** da função duplicada.
 
-4. Todas as permissões e marcas de escopo da função original já serão selecionadas. Posteriormente, você pode alterar o **nome**, a **Descrição**, **as permissões**e o **escopo (marcas)** da função duplicada.
-
-5. Selecione **Criar**. 
+4. Selecione **Criar**. 
 
 ## <a name="next-steps"></a>Próximos passos
 - [Atribuir uma função a um usuário](assign-role.md)

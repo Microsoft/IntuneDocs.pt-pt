@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/31/2019
+ms.date: 12/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c4d0772f9a0afce0607d0193bfb82ea6bd22709d
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: f9e8bc347dc6336f665fcabfb4e716fef4818515
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73445321"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207213"
 ---
 # <a name="use-derived-credentials-in-microsoft-intune"></a>Usar credenciais derivadas no Microsoft Intune
 
@@ -160,112 +160,114 @@ Evite a necessidade de usar uma credencial derivada para acessar um processo que
 
 Antes de criar políticas que exigem o uso de uma credencial derivada, configure um emissor de credencial no console do Intune. Um emissor de credencial derivado é uma configuração de todo o locatário. Os locatários dão suporte a apenas um único emissor por vez.
 
-1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) and go to **Device Configuration** > **Derived Credentials**.
+1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **Administração de locatários** > **conectores e tokens** > **credenciais derivadas**.
 
-   ![Configurar credenciais derivadas no console](./media/derived-credentials/configure-provider.png)
+    > [!div class="mx-imgBorder"]
+    > ![configurar credenciais derivadas no console](./media/derived-credentials/configure-provider.png)
 
-2. Especifique um **nome de exibição** amigável para a política de emissor de credencial derivada.  Esse nome não é mostrado para os usuários do dispositivo.
+3. Especifique um **nome de exibição** amigável para a política de emissor de credencial derivada.  Esse nome não é mostrado para os usuários do dispositivo.
 
-3. Para **emissor de credencial derivada**, selecione o emissor de credencial derivada que você escolheu para seu locatário:
+4. Para **emissor de credencial derivada**, selecione o emissor de credencial derivada que você escolheu para seu locatário:
    - DISA purebred
    - Entrust Datacard
    - Intercedam  
 
-4. Especifique uma **URL de ajuda de credencial derivada** para fornecer um link para um local que inclui instruções personalizadas para ajudar os usuários a obter credenciais derivadas para sua organização. As instruções devem ser específicas à sua organização e ao fluxo de trabalho necessário para obter uma credencial do emissor escolhido. O link aparece no aplicativo Portal da Empresa e deve ser acessível a partir do dispositivo.
+5. Especifique uma **URL de ajuda de credencial derivada** para fornecer um link para um local que inclui instruções personalizadas para ajudar os usuários a obter credenciais derivadas para sua organização. As instruções devem ser específicas à sua organização e ao fluxo de trabalho necessário para obter uma credencial do emissor escolhido. O link aparece no aplicativo Portal da Empresa e deve ser acessível a partir do dispositivo.
 
    Se você não especificar sua própria URL, o Intune fornecerá um link para detalhes genéricos que não podem abranger todos os cenários. Essa orientação genérica pode não ser precisa para o seu ambiente.
 
-5. Selecione uma ou mais opções para **tipo de notificação**. Os tipos de notificação são os métodos que você usa para informar os usuários sobre os seguintes cenários:
+6. Selecione uma ou mais opções para **tipo de notificação**. Os tipos de notificação são os métodos que você usa para informar os usuários sobre os seguintes cenários:
 
-   - Enroll a device with an issuer to get a new derived credential.
-   - Get a new derived credential when the current credential is close to expiration.
-   - Use a derived credential with a policy for Wi-Fi, VPN, email, or app authentication, and for S/MIME signing and encryption.
+   - Registre um dispositivo com um emissor para obter uma nova credencial derivada.
+   - Obtenha uma nova credencial derivada quando a credencial atual estiver perto da expiração.
+   - Use uma credencial derivada com uma política para Wi-Fi, VPN, email ou autenticação de aplicativo e para assinatura e criptografia S/MIME.
 
-6. When ready, select **Save** to complete configuration of the derived credential issuer.
+7. Quando estiver pronto, selecione **salvar** para concluir a configuração do emissor de credencial derivada.
 
-After you save the configuration, you can make changes to all fields except for the *Derived credential issuer*.  To change the issuer, see [Change the derived credential issuer](#change-the-derived-credential-issuer).
+Depois de salvar a configuração, você pode fazer alterações em todos os campos, exceto para o *emissor de credencial derivada*.  Para alterar o emissor, consulte [alterar o emissor de credencial derivada](#change-the-derived-credential-issuer).
 
-## <a name="deploy-the-disa-purebred-app"></a>Deploy the DISA Purebred app
+## <a name="deploy-the-disa-purebred-app"></a>Implantar o aplicativo DISA purebred
 
-*This section applies only when you use DISA Purebred*.
+*Esta seção se aplica somente quando você usa Disa purebred*.
 
-To use **DISA Purebred** as your derived credential issuer for Intune, you must get the DISA Purebred app and then use Intune to deploy the app to devices. Device users use the app on their device to request the derived credential from DISA Purebred.
+Para usar o **Disa purebred** como seu emissor de credencial derivado para o Intune, você deve obter o aplicativo Disa purebred e, em seguida, usar o Intune para implantar o aplicativo em dispositivos. Os usuários do dispositivo usam o aplicativo em seu dispositivo para solicitar a credencial derivada de DISA purebred.
 
-In addition to the deploying the app with Intune, configure an Intune per-app VPN for the DISA Purebred application.
+Além de implantar o aplicativo com o Intune, configure uma VPN por aplicativo do Intune para o aplicativo DISA purebred.
 
-**Complete the following tasks**:
+**Conclua as seguintes tarefas**:
   
-1. Download the [DISA Purebred application](https://cyber.mil/pki-pke/purebred/).
-2. Deploy the DISA Purebred application in Intune.  See [Add an iOS line-of-business app to Microsoft Intune](../apps/lob-apps-ios.md).
-3. [Create a per-app VPN](../configuration/vpn-settings-configure.md) for the DISA Purebred application.
+1. Baixe o [aplicativo Disa purebred](https://cyber.mil/pki-pke/purebred/).
+2. Implante o aplicativo DISA purebred no Intune.  Consulte [Adicionar um aplicativo de linha de negócios do Ios a Microsoft Intune](../apps/lob-apps-ios.md).
+3. [Crie uma VPN por aplicativo](../configuration/vpn-settings-configure.md) para o aplicativo Disa purebred.
 
-## <a name="use-derived-credentials-for-authentication-and-smime-signing-and-encryption"></a>Use derived credentials for authentication and S/MIME signing and encryption
+## <a name="use-derived-credentials-for-authentication-and-smime-signing-and-encryption"></a>Usar credenciais derivadas para autenticação e assinatura e criptografia S/MIME
 
-You can specify **Derived credential** for the following profile types and purposes:
+Você pode especificar **credenciais derivadas** para os seguintes tipos de perfil e finalidades:
 
-- [Aplicações](#use-derived-credentials-for-app-authentication)
+- [Aplicativos](#use-derived-credentials-for-app-authentication)
 - [E-mail](../configuration/email-settings-ios.md)
 - [VPN](../configuration/vpn-settings-ios.md)
-- [S/MIME signing and encryption](certificates-s-mime-encryption-sign.md)
+- [Assinatura e criptografia S/MIME](certificates-s-mime-encryption-sign.md)
 - [Wi-Fi](../configuration/wi-fi-settings-ios.md)
 
-  For Wi-Fi profiles, *Authentication method* is available only when the **EAP type** is set to one of the following values:
+  Para perfis Wi-Fi, o *método de autenticação* estará disponível somente quando o tipo de **EAP** for definido como um dos seguintes valores:
   - EAP – TLS
   - EAP-TTLS
   - PEAP
 
-### <a name="use-derived-credentials-for-app-authentication"></a>Use derived credentials for app authentication
+### <a name="use-derived-credentials-for-app-authentication"></a>Usar credenciais derivadas para autenticação de aplicativo
 
-Use derived credentials for certificate-based authentication to web sites and applications. To deliver a derived credential for app authentication, do the following steps in the Intune console:  
+Use credenciais derivadas para a autenticação baseada em certificado para sites e aplicativos da Web. Para fornecer uma credencial derivada para autenticação de aplicativo:
 
-1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) and go to **Device Configuration** > **Profiles** and select **Create Profile**.
+1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **dispositivos** > **perfis de configuração** > **Criar perfil**.
+3. Introduza as seguintes definições:
 
-2. Enter a friendly name for the profile under **Name**.
+    - **Nome**: Insira um nome descritivo para o perfil. Atribua nomes aos perfis de forma que possa identificá-los facilmente mais tarde. Por exemplo, um bom nome de perfil é uma **credencial derivada para o perfil de dispositivos IOS**.
+    - **Descrição**: introduza uma descrição que lhe permita obter uma descrição geral da definição e outros detalhes importantes.
+    - **Plataforma**: selecione **Ios/iPadOS**.
+    - **Tipo de perfil**: selecione **credencial derivada**.
 
-3. Em **Plataforma**, selecione **iOS**.
-
-4. For **Profile type**, select **Derived credential**.
-
-5. Select **OK** and then click **Create**.
-
-6. Select **Assignments** to choose which groups should receive the policy.
+4. Selecione **OK** para guardar as alterações.
+5. Quando terminar, selecione **OK** > **criar** para criar o perfil do Intune. Ao concluir, seu perfil é mostrado na lista **dispositivos – perfis de configuração** .
+6. Selecione seu novo perfil > **atribuições**. Selecione os grupos que devem receber a política.
  
-Users receive the app or email notification depending on the settings you specified when you set up the derived credential issuer. The notification informs the user to launch the Company Portal so that the derived credential policies can be processed.
+Os usuários recebem a notificação de aplicativo ou email dependendo das configurações que você especificou ao configurar o emissor de credencial derivada. A notificação informa o usuário para iniciar o Portal da Empresa para que as políticas de credenciais derivadas possam ser processadas.
 
-## <a name="renew-a-derived-credential"></a>Renew a derived credential
+## <a name="renew-a-derived-credential"></a>Renovar uma credencial derivada
 
-Derived credentials can't be extended or renewed. Instead, users must use the credential request workflow to request a new derived credential for their device.
+As credenciais derivadas não podem ser estendidas ou renovadas. Em vez disso, os usuários devem usar o fluxo de trabalho de solicitação de credenciais para solicitar uma nova credencial derivada para seu dispositivo.
 
-If you configure one or more methods for **Notification type**, Intune automatically notifies users when the current derived credential reaches 80% of its life span. The notification directs users to go through the credential request process to get a new derived credential.
+Se você configurar um ou mais métodos para o **tipo de notificação**, o Intune notificará automaticamente os usuários quando a credencial derivada atual atingir 80% de seu período de vida. A notificação direciona os usuários para passar pelo processo de solicitação de credencial para obter uma nova credencial derivada.
 
-After a device receives a new derived credential, policies that use derived credentials redeploy to that device.
+Depois que um dispositivo recebe uma nova credencial derivada, as políticas que usam credenciais derivadas Reimplantam nesse dispositivo.
 
 
-## <a name="change-the-derived-credential-issuer"></a>Change the derived credential issuer
+## <a name="change-the-derived-credential-issuer"></a>Alterar o emissor de credencial derivada
 
-At the tenant level, you can change your credential issuer, although only one issuer is supported for a tenant at a time.
+No nível do locatário, você pode alterar o emissor de credencial, embora apenas um emissor tenha suporte para um locatário por vez.
 
-After you change the issuer, users are prompted to get a new derived credential from the new issuer. They must do so before they can use a derived credential for authentication.
+Depois de alterar o emissor, os usuários receberão uma solicitação para obter uma nova credencial derivada do novo emissor. Eles devem fazer isso antes de poderem usar uma credencial derivada para autenticação.
 
-### <a name="change-the-issuer-for-your-tenant"></a>Change the issuer for your tenant
+### <a name="change-the-issuer-for-your-tenant"></a>Alterar o emissor para seu locatário
 
 > [!IMPORTANT]  
-> If you delete an issuer and immediately reconfigure that same issuer, you must still update profiles and devices to use derived credentials from that issuer. Derived credentials that were obtained before you delete the issuer are no longer valid.
+> Se você excluir um emissor e reconfigurar imediatamente esse mesmo emissor, ainda deverá atualizar perfis e dispositivos para usar credenciais derivadas desse emissor. As credenciais derivadas que foram obtidas antes da exclusão do emissor não são mais válidas.
 
-1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) and go to **Device Configuration** > **Derived Credentials**.
+1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **Administração de locatários** > **conectores e tokens** > **credenciais derivadas**.
+3. Selecione **excluir** para remover o emissor de credencial derivada atual.
+4. Configure um novo emissor.
 
-2. Select **Delete** to remove the current derived credential issuer.
+### <a name="update-profiles-that-use-derived-credentials"></a>Atualizar perfis que usam credenciais derivadas
 
-3. Configure a new issuer.
+Depois de excluir um emissor e, em seguida, adicionar um novo, edite cada perfil que usa credenciais derivadas. Essa regra se aplica mesmo se você restaurar o emissor anterior. Qualquer edição do perfil disparará uma atualização, incluindo uma edição simples para a *Descrição*do perfil.
 
-### <a name="update-profiles-that-use-derived-credentials"></a>Update profiles that use derived credentials
+### <a name="update-derived-credentials-on-devices"></a>Atualizar credenciais derivadas em dispositivos
 
-After you delete an issuer and then add a new one, edit each profile that uses derived credentials. This rule applies even if you restore the previous issuer. Any edit of the profile will trigger an update, including a simple edit to the profile *Description*.
-
-### <a name="update-derived-credentials-on-devices"></a>Update derived credentials on devices
-
-After you delete an issuer and then add a new one, device users must request a new derived credential. This rule applies even when you add the same issuer that you removed. O processo para solicitar a nova credencial derivada é o mesmo para registrar um novo dispositivo ou renovar uma credencial existente.
+Depois de excluir um emissor e, em seguida, adicionar um novo, os usuários do dispositivo deverão solicitar uma nova credencial derivada. Essa regra se aplica mesmo quando você adiciona o mesmo emissor que você removeu. O processo para solicitar a nova credencial derivada é o mesmo para registrar um novo dispositivo ou renovar uma credencial existente.
 
 ## <a name="next-steps"></a>Próximos passos
 
-[Criar perfis de configuração de dispositivo](../configuration/device-profile-create.md)
+[Criar perfis de configuração de dispositivo](../configuration/device-profile-create.md).

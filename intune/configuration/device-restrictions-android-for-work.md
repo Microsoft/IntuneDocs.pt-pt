@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/09/2019
+ms.date: 12/19/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 904c3d2267decdfa3929bf29376c05a995c77eb8
-ms.sourcegitcommit: f5108039f0ade52e95ea3ac1da1aa16d02224af3
+ms.openlocfilehash: b6afd80517df3496e0c1402fc0c76f3fc24969fa
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "74946663"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206606"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Definições de dispositivos do Android Enterprise para permitir ou restringir funcionalidades com o Intune
 
@@ -211,6 +211,7 @@ Use essas configurações para configurar uma experiência em estilo de quiosque
   > [!NOTE]
   > Essa configuração não é respeitada em dispositivos de proprietário do dispositivo (totalmente gerenciado). Se você definir essa configuração, a configuração será ignorada e não terá nenhum impacto.
 
+- O **usuário pode configurar credenciais**: **Bloquear** impede que os usuários configurem certificados atribuídos a dispositivos, até mesmo dispositivos que não estão associados a uma conta de usuário. **Não configurado** pode possibilitar que os usuários configurem ou alterem suas credenciais ao acessá-las no keystore. 
 - **Contas pessoais do Google**: **Bloquear** impede que os usuários adicionem sua conta pessoal do Google ao dispositivo. **Não configurado** (padrão) permite que os usuários adicionem sua conta pessoal do Google.
 
 ### <a name="applications"></a>Aplicações
@@ -292,6 +293,9 @@ Essas configurações se aplicam a tipos de registro do Android Enterprise, em q
 
 - **Adicionar e remover contas**: escolha **bloco** para impedir que os utilizadores finais de adicionarem ou removerem contas no perfil de trabalho manualmente. Por exemplo, ao implementar a aplicação Gmail num perfil de trabalho do Android, pode impedir os utilizadores finais de adicionarem ou removerem contas neste perfil de trabalho. **Não configurado** permite adicionar contas no perfil de trabalho.  
 
+  > [!NOTE]
+  > As contas do Google não podem ser adicionadas a um perfil de trabalho.
+
 - **Partilha de contactos por Bluetooth**: permite aceder aos contactos do trabalho a partir de outro dispositivo, como um automóvel, que esteja emparelhado através de Bluetooth. Por predefinição, esta definição não está configurada e os contactos do perfil de trabalho não são apresentados. Selecione **Ativar** para permitir esta partilha e mostrar os contactos do perfil de trabalho. Esta definição aplica-se a dispositivos de perfil de trabalho do Android em Android OS v6.0 e mais recentes. Ativar esta definição pode permitir que determinados dispositivos Bluetooth coloquem os contactos de trabalho na cache após a primeira ligação. A desativação desta política após um emparelhamento/sincronização inicial pode não remover os contactos de trabalho dos dispositivos Bluetooth.
 
 - **Captura de ecrã**: escolha **bloco** para impedir capturas de ecrã ou capturas do dispositivo no perfil de trabalho de ecrã. Também impede que os conteúdos presentes sejam apresentados em dispositivos de visualização que não tenham uma saída de vídeo segura. **Não configurado** permite obter capturas de ecrã.
@@ -312,7 +316,7 @@ Essas configurações se aplicam a tipos de registro do Android Enterprise, em q
 - **Comprimento mínimo da palavra-passe**: introduza o número mínimo de carateres que a palavra-passe do utilizador tem de ter, de **4**-**16**.
 - **Máximo de minutos de inatividade até ao bloqueio do perfil de trabalho**: selecione a quantidade de tempo antes de o perfil de trabalho ser bloqueado. Em seguida, o utilizador tem de introduzir as credenciais para recuperar o acesso.
 - **Número de falhas de início de sessão antes de limpar o dispositivo**: introduza o número de vezes que uma palavra-passe incorreta pode ser introduzida antes de o perfil de trabalho do dispositivo ser eliminado.
-- **Expiração da palavra-passe (dias)** : introduza o número de dias até ser preciso alterar a palavra-passe do utilizador final (**1**-**255**).
+- **Expiração da palavra-passe (dias)**: introduza o número de dias até ser preciso alterar a palavra-passe do utilizador final (**1**-**255**).
 - **Tipo de palavra-passe necessária**: selecione o tipo de palavra-passe que tem de ser definido no dispositivo. Escolha entre:
   - **Predefinição do dispositivo**
   - **Biométrica de segurança baixa**
@@ -333,7 +337,7 @@ Estas definições de palavra-passe aplicam-se aos perfis pessoais nos dispositi
 - **Comprimento mínimo da palavra-passe**: introduza o número mínimo de carateres que a palavra-passe do utilizador tem de ter, de **4**-**14**.
 - **Máximo de minutos de inatividade até o ecrã ser bloqueado**: selecione a quantidade de tempo antes de um dispositivo inativo ser automaticamente bloqueado
 - **Número de falhas de início de sessão antes de limpar o dispositivo**: introduza o número de vezes que uma palavra-passe incorreta pode ser introduzida antes de todos os dados do dispositivo serem eliminados
-- **Expiração da palavra-passe (dias)** : introduza o número de dias até ser preciso alterar a palavra-passe do utilizador final (**1**-**255**)
+- **Expiração da palavra-passe (dias)**: introduza o número de dias até ser preciso alterar a palavra-passe do utilizador final (**1**-**255**)
 - **Tipo de palavra-passe necessária**: selecione o tipo de palavra-passe que tem de ser definido no dispositivo. Escolha entre:
   - **Predefinição do dispositivo**
   - **Biométrica de segurança baixa**

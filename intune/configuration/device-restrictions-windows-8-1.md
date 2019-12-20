@@ -1,12 +1,12 @@
 ---
-title: Definições de restrição de dispositivos no Microsoft Intune para dispositivos com o Windows 8.1
+title: Windows 8.1 configurações de restrição de dispositivo no Microsoft Intune-Azure | Microsoft Docs
 titleSuffix: ''
 description: Saiba que definições do Intune pode utilizar para controlar as definições e funcionalidades em dispositivos com o Windows 8.1.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/6/2018
+ms.date: 12/19/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,19 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0df55e79dbc54926c0507889620f2667d7b8bd7b
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 82eaf1bc2c0737e1cc54751ff6fb5751227d180c
+ms.sourcegitcommit: 42183c87b137710b8529049f8710d47127e99900
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72489828"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75302969"
 ---
-# <a name="microsoft-intune-windows-81-and-later-device-restriction-settings"></a>Definições de restrição de dispositivos no Microsoft Intune para dispositivos Windows 8.1 e posterior
+# <a name="microsoft-intune-windows-81-device-restriction-settings"></a>Microsoft Intune Windows 8.1 configurações de restrição de dispositivo
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
-
-Este artigo mostra-lhe as definições de restrição de dispositivos do Microsoft Intune que pode configurar para dispositivos com o Windows 8.1 e posterior.
-
+Este artigo mostra as configurações Microsoft Intune restrições de dispositivo que você pode definir para dispositivos que executam o Windows 8.1.
 
 ## <a name="general"></a>Geral
 
@@ -48,8 +45,6 @@ Este artigo mostra-lhe as definições de restrição de dispositivos do Microso
 Se ativar esta definição em dispositivos com o Windows 8.1, todos os utilizadores do dispositivo têm de ter uma conta Microsoft.
 Para que a encriptação funcione, o dispositivo tem de estar em conformidade com os requisitos de certificação de hardware do [InstantGo da Microsoft](https://blogs.windows.com/windowsexperience/2014/06/19/instantgo-a-better-way-to-sleep/#IBHULcTfI4PokO8X.97).
 Quando impõe a encriptação a um dispositivo, a chave de recuperação só é acessível a partir da conta Microsoft do utilizador, que é acedida a partir da respetiva conta do OneDrive. Não pode recuperar esta chave em nome de um utilizador. 
-
-
 
 ## <a name="browser"></a>Browser
 - **Preenchimento automático** – Permite que os utilizadores alterem as definições de conclusão automática no browser.
@@ -75,3 +70,7 @@ Se selecionar esta definição, também pode especificar uma **Localização do 
 ## <a name="cloud-and-storage"></a>Cloud e Armazenamento
 - **URL de pastas de trabalho** – Define o URL da pasta de trabalho para permitir que os documentos sejam sincronizados em todos os dispositivos.
 - **Acesso à aplicação Windows Mail sem uma conta Microsoft** – Ativa o acesso à aplicação Windows Mail sem uma conta Microsoft.
+
+## <a name="next-steps"></a>Próximos passos
+
+Crie um perfil de restrições de dispositivo no [Windows 10 e mais recente](device-restrictions-windows-10.md).

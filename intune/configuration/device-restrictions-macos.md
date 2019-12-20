@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8b2efdc04414d29fc1d8d200525cb3a4a880ec01
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 6513c09f252d5a914ace4e57e5a593877a387172
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72776893"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206555"
 ---
 # <a name="macos-device-settings-to-allow-or-restrict-features-using-intune"></a>Definições dos dispositivos macOS para permitir ou restringir funcionalidades com o Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Este artigo apresenta e descreve as diferentes definições que pode controlar nos dispositivos macOS. Como parte da solução de gestão de dispositivos móveis (MDM), utilize estas definições para permitir ou desativar funcionalidades, definir regras de palavra-passe, permitir ou restringir aplicações específicas e muito mais.
 
@@ -90,12 +90,12 @@ Estas definições são adicionadas a um perfil de configuração do dispositivo
     Esta funcionalidade aplica-se a:  
     - macOS 10.10.3 e mais recente
 
-  - **Número de caracteres não alfanuméricos na senha**: especifique o número de caracteres complexos necessários na senha (**0** a **4**).<br>Um caráter complexo é um símbolo, por exemplo " **?** ".
+  - **Número de caracteres não alfanuméricos na senha**: especifique o número de caracteres complexos necessários na senha (**0** a **4**).<br>Um caráter complexo é um símbolo, por exemplo "**?**".
   - **Comprimento mínimo da senha**: Insira o comprimento mínimo da senha que um usuário deve configurar (entre **4** e **16** caracteres).
   - **Senhas simples**: permitir o uso de senhas simples, como **0000** ou **1234**.
   - **Máximo de minutos após o bloqueio de tela antes da senha ser necessária**: especifique quanto tempo o computador deve ficar inativo antes que uma senha seja necessária para desbloqueá-lo.
   - **Máximo de minutos de inatividade até a tela ser bloqueada**: especifique o período de tempo que o computador deve ficar ocioso antes que a tela seja bloqueada.
-  - **Expiração da senha (dias)** : especifique o número de dias decorridos antes que o usuário precise alterar a senha (de**1** a **255** dias).
+  - **Expiração da senha (dias)**: especifique o número de dias decorridos antes que o usuário precise alterar a senha (de**1** a **255** dias).
   - **Evitar a reutilização de senhas anteriores**: Insira o número de senhas usadas anteriormente que não podem ser reutilizadas, de **1** a **24**.
 
 - **Impedir que o usuário modifique a senha**: escolha **Bloquear** para impedir que a senha seja alterada, adicionada ou removida. **Não configurado** (predefinição) permite que os códigos de acesso sejam adicionados, alterados ou removidos.

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d887c7bc3c7e9ea8b6719993b5ba4909e9c18ea8
-ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
+ms.openlocfilehash: 1fb628d68f50ce1862b3cce51f9fd08804d042a6
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74992939"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206725"
 ---
 # <a name="add-ios-or-macos-device-feature-settings-in-intune"></a>Adicionar definições de funcionalidades de dispositivos iOS ou macOS no Intune
 
@@ -46,13 +46,13 @@ Para obter uma lista das configurações que você pode configurar no Intune, co
 
 Para obter mais informações sobre o impresso, consulte [sobre o esprint](https://support.apple.com/HT201311) no site da Apple.
 
-Aplica-se a
+Aplica-se a:
 
 - iOS 7,0 e mais recente
 - iPadOS 13,0 e mais recente
 - macOS 10,10 e mais recente
 
-## <a name="app-notifications"></a>Notificações de aplicação
+## <a name="app-notifications"></a>Notificações de aplicativo
 
 Escolha como os aplicativos em seus dispositivos iOS e iPad recebem notificações. Por exemplo, no Intune, envie notificações de aplicativo para que elas apareçam no centro de notificações, sejam exibidas na tela de bloqueio ou joguem um som.
 
@@ -60,7 +60,7 @@ Para obter uma lista das configurações que você pode definir no Intune, consu
 
 Para obter mais informações sobre esse recurso, consulte [notificações](https://developer.apple.com/notifications/) no site da Apple.
 
-Aplica-se a
+Aplica-se a:
 
 - iOS 9,3 e mais recente
 - iPadOS 13,0 e mais recente
@@ -78,7 +78,7 @@ Para obter uma lista das configurações que você pode configurar no Intune, co
 
 Para obter mais informações sobre esse recurso, consulte [Configurando os domínios associados de um aplicativo](https://developer.apple.com/documentation/security/password_autofill/setting_up_an_app_s_associated_domains) no site da Apple.
 
-Aplica-se a
+Aplica-se a:
 
 - macOS 10,15 e mais recente
 
@@ -91,7 +91,7 @@ Essas configurações configuram o layout do aplicativo e as pastas nas telas de
 
 Para obter uma lista das configurações que você pode configurar no Intune, consulte [layout da tela inicial no Ios](ios-device-features-settings.md#home-screen-layout).
 
-Aplica-se a
+Aplica-se a:
 
 - iOS 9,3 e mais recente
 - iPadOS 13,0 e mais recente
@@ -104,7 +104,7 @@ Para obter uma lista das configurações que podem ser definidas no Intune, cons
 
 Para obter mais informações sobre a mensagem da tela de bloqueio, consulte [LockScreenMessage](https://developer.apple.com/documentation/devicemanagement/lockscreenmessage) no site da Apple.
 
-Aplica-se a
+Aplica-se a:
 
 - iOS 9,3 e mais recente
 - iPadOS 13,0 e mais recente
@@ -115,7 +115,7 @@ Use esse recurso para escolher os aplicativos, aplicativos personalizados, arqui
 
 Para obter uma lista das configurações que você pode configurar no Intune, consulte [itens de logon no MacOS](macos-device-features-settings.md#login-items).
 
-Aplica-se a
+Aplica-se a:
 
 - macOS 10,13 e mais recente
 
@@ -125,7 +125,7 @@ Controle a aparência da tela de logon e as funções disponíveis para os usuá
 
 Para obter uma lista das configurações que você pode configurar no Intune, consulte [janela de logon no MacOS](macos-device-features-settings.md#login-window).
 
-Aplica-se a
+Aplica-se a:
 
 - macOS 10,7 e mais recente
 
@@ -142,7 +142,7 @@ Para usar o logon único, verifique se você tem:
 
 Para obter uma lista das configurações que você pode configurar no Intune, consulte [logon único no Ios](ios-device-features-settings.md#single-sign-on).
 
-Aplica-se a
+Aplica-se a:
 
 - iOS 7,0 e mais recente
 - iPadOS 13,0 e mais recente
@@ -175,19 +175,19 @@ Para obter mais informações sobre como desenvolver uma extensão de aplicativo
 >
 > - A extensão interna do **aplicativo de logon único** do Kerberos lida com os desafios do Kerberos para páginas da Web e aplicativos, assim como **logon único**. No entanto, a extensão Kerberos interna dá suporte a alterações de senha e se comporta melhor em redes corporativas. Ao decidir entre a **extensão do aplicativo de logon único** Kerberos e o **logon único**, é recomendável usar a extensão devido ao desempenho e aos recursos aprimorados.
 
-Aplica-se a
+Aplica-se a:
 
 - iOS 13,0 e mais recente
 - iPadOS 13,0 e mais recente
 - macOS 10,15 e mais recente
 
-## <a name="wallpaper"></a>Imagem de Fundo
+## <a name="wallpaper"></a>Papéis
 
 Adicione uma imagem. png,. jpg ou. jpeg personalizada aos dispositivos iOS supervisionados. Por exemplo, use o Intune para adicionar um logotipo da empresa à tela de bloqueio em seus dispositivos.
 
 Para obter uma lista das configurações que você pode configurar no Intune, consulte [papel de parede no Ios](ios-device-features-settings.md#wallpaper).
 
-Aplica-se a
+Aplica-se a:
 
 - iOS
 - iPadOS 13,0 e mais recente
@@ -198,7 +198,7 @@ Essas configurações podem usar o algoritmo de AutoFiltro interno da Apple para
 
 Para obter uma lista das configurações que você pode configurar no Intune, consulte [filtro de conteúdo da Web no Ios](ios-device-features-settings.md#web-content-filter).
 
-Aplica-se a
+Aplica-se a:
 
 - iOS 7,0 e mais recente
 - iPadOS 13,0 e mais recente

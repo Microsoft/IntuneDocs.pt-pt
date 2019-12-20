@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/19/2019
+ms.date: 12/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -13,12 +13,12 @@ ms.localizationpriority: high
 ms.technology: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0f9750603d19d9b19697c7d2660351c4586432f6
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: bb146fdee7a1d7d770575334eeed84f73cda8894
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73984184"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207490"
 ---
 # <a name="add-ios-software-update-policies-in-intune"></a>Adicionar políticas de atualização de software do iOS no Intune
 
@@ -32,8 +32,8 @@ O dispositivo comunica com o Intune aproximadamente de 8 em 8 horas. Se uma atua
 
 ## <a name="configure-the-policy"></a>Configurar a política
 
-1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Selecione **Atualizações de Software** > **Atualizar políticas para iOS** > **Criar**.
+1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **dispositivos** > **políticas de atualização para o Ios** > **criar**.
 3. Na guia **noções básicas** , especifique um nome para essa política, especifique uma descrição (opcional) e, em seguida, selecione **Avançar**.
 
    ![Guia básico](./media/software-updates-ios/basics-tab.png) 
@@ -47,7 +47,7 @@ O dispositivo comunica com o Intune aproximadamente de 8 em 8 horas. Se uma atua
    - **Dias**: escolha os dias da semana em que as atualizações não estão instaladas. Por exemplo, verifique segunda-feira, quarta-feira e sexta-feira para impedir que as atualizações sejam instaladas nestes dias.
    - **Fuso horário**: escolha um fuso horário.
    - **Hora de início**: escolha a hora de início do período de tempo restrito. Por exemplo, digite 5 para que as atualizações não sejam instaladas a partir das 17:00.
-   - **Hora de término**: escolha a hora de término do período de tempo restrito. Por exemplo, digite 1. portanto, as atualizações podem ser instaladas a partir de 1 A.M.
+   - **Hora de término**: escolha a hora de término do período de tempo restrito. Por exemplo, digite 1. portanto, as atualizações podem ser instaladas a partir de 1 A.M..
   
    > [!IMPORTANT]  
    > Uma política que tem uma *hora de início* e *hora de término* definida como 12 am é avaliada como 0 hora e não 24 horas. Isso resulta em nenhuma restrição.  
@@ -77,10 +77,10 @@ Para obter diretrizes da equipe de suporte do Intune, consulte [atrasar a visibi
 ## <a name="edit-a-policy"></a>Editar uma política
 Você pode editar uma política existente, incluindo a alteração dos horários restritos:
 
-1. Em **atualizações de software**, selecione **Atualizar políticas para IOS** e, em seguida, selecione a política que você deseja editar.
+1. Selecione **dispositivos** > **políticas de atualização para IOS**. Selecione a política que você deseja editar.
 
 2. Ao exibir as **Propriedades**de políticas, selecione **Editar** para a página de política que você deseja modificar.  
-   ![editar uma](./media/software-updates-ios/edit-policy.png) de vigilância   
+   ![editar uma política](./media/software-updates-ios/edit-policy.png)   
 
 3. Depois de introduzir uma alteração, selecione **revisar + salvar** > **salvar** para salvar as edições e retornar às *Propriedades*das políticas.  
  

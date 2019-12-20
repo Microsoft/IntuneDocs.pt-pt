@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/14/2018
+ms.date: 12/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: enrollment
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 684e9602e66842e26a7f8e233a8cee6db73f132d
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9cddb9b74d9132ace07c17a3156e61148b720d66
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74098196"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207184"
 ---
 # <a name="set-up-enrollment-for-macos-devices-in-intune"></a>Configurar a inscrição para dispositivos macOS no Intune
 
@@ -78,11 +78,9 @@ Para o Parallels Desktop, precisa de definir o tipo de hardware e o número de s
 Para a VMware Fusion, precisa de [editar o ficheiro .vmx](https://kb.vmware.com/s/article/1014782) para definir o número de série e o modelo de hardware da máquina virtual. Recomendamos que faça corresponder o tipo de hardware do dispositivo a executar as máquinas virtuais ao tipo de hardware das máquinas virtuais que está a criar. Pode encontrar este tipo de hardware em **Menu Apple** > **Acerca deste Mac** > **Relatório do Sistema** > **Identificador de Modelo**. 
 
 ## <a name="user-approved-enrollment"></a>Inscrição do Utilizador Aprovado
-A inscrição na MDM do Utilizador Aprovado é um tipo de inscrição de macOS que pode utilizar para gerir determinadas definições relacionadas com a segurança. Para obter mais informações, veja a [documentação de suporte da Apple](https://support.apple.com/HT208019).
-
-A partir de novembro de 2019, todos os novos registros do macOS do usuário serão aprovados, pois o usuário deve instalar manualmente o perfil de gerenciamento para se registrar com êxito. Durante [o processo de registro](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos-cp), o usuário instalará o perfil de gerenciamento da Apple em **preferências do sistema** > **perfis**.  As instruções para instalar o perfil de gerenciamento estão disponíveis no aplicativo macOS Portal da Empresa.
-
-Os dispositivos registrados antes de novembro de 2019 podem não ser aprovados pelo usuário se o usuário não aprovar manualmente o perfil de gerenciamento. No entanto, os usuários podem voltar e aprovar o perfil de gerenciamento acessando **preferências do sistema** > **perfis** > escolher o **perfil de gerenciamento** > **aprovar**.
+A inscrição na MDM do Utilizador Aprovado é um tipo de inscrição de macOS que pode utilizar para gerir determinadas definições relacionadas com a segurança. Para obter mais informações, veja a [documentação de suporte da Apple](https://support.apple.com/HT208019).  
+ 
+Durante o processo de registro BYOD, o usuário será solicitado a aprovar manualmente o perfil de gerenciamento da Apple. As instruções são fornecidas no aplicativo Portal da Empresa para macOS. Embora a aprovação do perfil de gerenciamento não seja necessária para concluir o registro, o Intune recomenda registros aprovados pelo usuário. Se o usuário não aprovar o perfil durante o registro, o usuário poderá acessar as **preferências do sistema** > **perfis**, escolher o perfil de gerenciamento e selecionar **aprovar**.    
 
 ### <a name="find-out-if-a-device-is-user-approved"></a>Descubra se um dispositivo foi aprovado pelo usuário
 1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).

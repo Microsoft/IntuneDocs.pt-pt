@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d876c0268f38a09ea3729a7e19ee00b321ae897a
-ms.sourcegitcommit: edd06a494a241d198ca9b0d3030c92195976e0d3
+ms.openlocfilehash: 02c1508dd3eb9c8a8932c1504c6f4d0a53c5a0d5
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/11/2019
-ms.locfileid: "75000402"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207388"
 ---
 # <a name="us-government-endpoints-for-microsoft-intune"></a>Pontos de extremidade do governo dos EUA para Microsoft Intune
 
@@ -31,12 +31,14 @@ Esta página lista os pontos de extremidade do governo dos EUA necessários para
 
 Para gerir dispositivos protegidos por firewalls e servidores proxy, tem de ativar as comunicações para o Intune.
 
-- O servidor proxy tem de suportar **HTTP (80)** e **HTTPS(443)** , porque os clientes do Intune utilizam ambos os protocolos
+- O servidor proxy tem de suportar **HTTP (80)** e **HTTPS(443)**, porque os clientes do Intune utilizam ambos os protocolos
 - Para certas tarefas (como transferir atualizações de software), o Intune necessita de acesso não autenticado do servidor proxy ao site manage.microsoft.com
 
 Pode modificar as definições do servidor proxy em computadores cliente individuais. Também pode utilizar as definições da Política de Grupo para alterar as definições para todos os computadores cliente localizados atrás de um servidor proxy especificado.
 
 Os dispositivos geridos requerem configurações que permitam a **Todos os Utilizadores** aceder a serviços através de firewalls.
+
+Para obter mais informações sobre o registro automático do Windows 10 e o registro de dispositivos para clientes do governo dos EUA, consulte [Configurar o registro para dispositivos Windows](../enrollment/windows-enroll.md#windows-10-auto-enrollment-and-device-registration).
 
 As tabelas que se seguem listam as portas e os serviços a que o cliente do Intune acede:
 
@@ -58,12 +60,12 @@ As tabelas que se seguem listam as portas e os serviços a que o cliente do Intu
 - MS Graph: https:\//graph.microsoft.us
 - ADRS: https:\//enterpriseregistration.microsoftonline.us
 
-## <a name="windows-push-notification-services"></a>Serviços de Notificação por Push do Windows (WNS)
+## <a name="windows-push-notification-services"></a>Notification Services de push do Windows
 Em dispositivos gerenciados pelo Intune gerenciados usando o MDM (gerenciamento de dispositivo móvel), o WNS (Windows PUsh Notification Services) é necessário para ações de dispositivo e outras atividades imediatas. Para obter mais informações, consulte [configurações de proxy e firewall corporativo para dar suporte ao tráfego WNS](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config)
 
 ## <a name="apple-device-network-information"></a>Informações da rede de dispositivos Apple
 
-|**Utilizado para**|**Nome do host (endereço IP/sub-rede)**|**Protocolo**|**Porta**|
+|**Utilizado para**|**Nome do host (endereço IP/sub-rede)**|**Protocolo**|**Porto**|
 |------------|-----------|------------|-----------|
 |Obter e apresentar o conteúdo de servidores da Apple|itunes.apple.com<br>\*.itunes.apple.com<br>\*.mzstatic.com<br>\*.phobos.apple.com<br>\*.phobos.itunes-apple.com.akadns.net|HTTP|80|
 |Comunicação com servidores APNS|#-courier.push.apple.com<br>'#' é um número aleatório de 0 a 50.|TCP|5223 e 443|
@@ -78,4 +80,3 @@ Para obter mais informações, consulte:
 ## <a name="next-steps"></a>Próximos passos
 [Pontos de extremidade de rede para Microsoft Intune](intune-endpoints.md)
 
-[Registro automático de dispositivo e registro do Windows 10](../enrollment/windows-enroll.md#registration-and-enrollment-cnames)

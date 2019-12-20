@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/12/2019
+ms.date: 12/19/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e73612080e52c8eb49a0c090b68e917e24fef3ab
-ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
+ms.openlocfilehash: 85fc8bf002a4d5d00d2163c0b75c49d11dcd9b61
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74992953"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206368"
 ---
 # <a name="ios-and-ipados-device-settings-to-use-common-ios-features-in-intune"></a>configurações do dispositivo iOS e iPadOS para usar recursos comuns do iOS no Intune
 
@@ -87,9 +87,9 @@ Você pode adicionar até **seis** itens (aplicativos e pastas combinados) para 
 - **Adicionar**: Adiciona aplicativos ou pastas ao Dock no dispositivo.
 - **Tipo**: adicionar um **aplicativo** ou uma **pasta**:
 
-  - **Aplicativo**: escolha esta opção para adicionar aplicativos ao Dock na tela. introduza:
+  - **Aplicativo**: escolha esta opção para adicionar aplicativos ao Dock na tela. Digita
 
-    - **Nome do aplicativo**: Insira um nome para o aplicativo. Esse nome é usado para sua referência no portal do Azure. Ele *não é* mostrado no dispositivo IOS.
+    - **Nome do aplicativo**: Insira um nome para o aplicativo. Esse nome é usado para sua referência no centro de administração do Microsoft Endpoint Manager. Ele *não é* mostrado no dispositivo IOS.
     - **ID do lote de aplicativos**: Insira a ID do pacote do aplicativo. Consulte [IDs de pacote para aplicativos Ios internos](bundle-ids-built-in-ios-apps.md) para ver alguns exemplos.
 
   - **Pasta**: escolha esta opção para adicionar uma pasta ao Dock na tela.
@@ -99,8 +99,8 @@ Você pode adicionar até **seis** itens (aplicativos e pastas combinados) para 
     - **Nome da pasta**: Insira o nome da pasta. Esse nome é mostrado aos usuários em seu dispositivo.
     - **Lista de páginas**: **adicione** uma página e insira as seguintes propriedades:
 
-      - **Nome da página**: Insira um nome para a página. Esse nome é usado para sua referência no portal do Azure. Ele *não é* mostrado no dispositivo IOS.
-      - **Nome do aplicativo**: Insira um nome para o aplicativo. Esse nome é usado para sua referência no portal do Azure. Ele *não é* mostrado no dispositivo IOS.
+      - **Nome da página**: Insira um nome para a página. Esse nome é usado para sua referência no centro de administração do Microsoft Endpoint Manager. Ele *não é* mostrado no dispositivo IOS.
+      - **Nome do aplicativo**: Insira um nome para o aplicativo. Esse nome é usado para sua referência no centro de administração do Microsoft Endpoint Manager. Ele *não é* mostrado no dispositivo IOS.
       - **ID do lote de aplicativos**: Insira a ID do pacote do aplicativo. Consulte [IDs de pacote para aplicativos Ios internos](bundle-ids-built-in-ios-apps.md) para ver alguns exemplos.
 
       Você pode adicionar até **20** páginas para o encaixe do dispositivo.
@@ -129,7 +129,7 @@ Você pode adicionar até **40** páginas em um dispositivo.
 
 - **Lista de páginas**: **adicione** uma página e insira as seguintes propriedades:
 
-  - **Nome da página**: Insira um nome para a página. Esse nome é usado para sua referência no portal do Azure e *não é* mostrado no dispositivo IOS.
+  - **Nome da página**: Insira um nome para a página. Esse nome é usado para sua referência no centro de administração do Microsoft Endpoint Manager e *não é* mostrado no dispositivo IOS.
 
   Você pode adicionar até **60** itens (aplicativos e pastas combinados) em um dispositivo.
 
@@ -139,7 +139,7 @@ Você pode adicionar até **40** páginas em um dispositivo.
 
       - **Aplicativo**: escolha esta opção para adicionar aplicativos a uma página na tela. Introduza também:
 
-        - **Nome do aplicativo**: Insira um nome para o aplicativo. Esse nome é usado para sua referência no portal do Azure. Ele *não é* mostrado no dispositivo IOS.
+        - **Nome do aplicativo**: Insira um nome para o aplicativo. Esse nome é usado para sua referência no centro de administração do Microsoft Endpoint Manager. Ele *não é* mostrado no dispositivo IOS.
         - **ID do lote de aplicativos**: Insira a ID do pacote do aplicativo. Consulte [IDs de pacote para aplicativos Ios internos](bundle-ids-built-in-ios-apps.md) para ver alguns exemplos.
 
       - **Pasta**: escolha esta opção para adicionar uma pasta ao Dock na tela.
@@ -149,8 +149,8 @@ Você pode adicionar até **40** páginas em um dispositivo.
         - **Nome da pasta**: Insira um nome para a pasta. Esse nome é mostrado aos usuários no dispositivo.
         - **Adicionar**: Adiciona páginas à pasta. Insira também as seguintes propriedades:
 
-          - **Nome da página**: Insira um nome para a página. Esse nome é usado para sua referência no portal do Azure. Ele *não é* mostrado no dispositivo IOS.
-          - **Nome do aplicativo**: Insira um nome para o aplicativo. Esse nome é usado para sua referência no portal do Azure. Ele *não é* mostrado no dispositivo IOS.
+          - **Nome da página**: Insira um nome para a página. Esse nome é usado para sua referência no centro de administração do Microsoft Endpoint Manager. Ele *não é* mostrado no dispositivo IOS.
+          - **Nome do aplicativo**: Insira um nome para o aplicativo. Esse nome é usado para sua referência no centro de administração do Microsoft Endpoint Manager. Ele *não é* mostrado no dispositivo IOS.
           - **ID do lote de aplicativos**: Insira a ID do pacote do aplicativo. Consulte [IDs de pacote para aplicativos Ios internos](bundle-ids-built-in-ios-apps.md) para ver alguns exemplos.
 
 #### <a name="example"></a>Exemplo
@@ -163,7 +163,7 @@ Quando você atribui a política a um iPhone, a página é semelhante à imagem 
 
 ![Dispositivo iOS com o ecrã principal modificado](./media/ios-device-features-settings/Bd37PHa.png)
 
-## <a name="app-notifications"></a>Notificações de aplicação
+## <a name="app-notifications"></a>Notificações de aplicativo
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>As configurações se aplicam a: registro de dispositivo automatizado (supervisionado)
 
@@ -172,8 +172,8 @@ Quando você atribui a política a um iPhone, a página é semelhante à imagem 
     ![Adicionar notificação de aplicativo no perfil do iOS no Intune](./media/ios-device-features-settings/ios-macos-app-notifications.png)
 
   - **ID do pacote de aplicativo**: Insira a **ID de lote** do aplicativo que você deseja adicionar. Consulte [IDs de pacote para aplicativos Ios internos](bundle-ids-built-in-ios-apps.md) para ver alguns exemplos.
-  - **Nome do aplicativo**: Insira o nome do aplicativo que você deseja adicionar. Esse nome é usado para sua referência no portal do Azure. Ele *não é* mostrado no dispositivo.
-  - **Editor**: Insira o editor do aplicativo que você está adicionando. Esse nome é usado para sua referência no portal do Azure. Ele *não é* mostrado no dispositivo.
+  - **Nome do aplicativo**: Insira o nome do aplicativo que você deseja adicionar. Esse nome é usado para sua referência no centro de administração do Microsoft Endpoint Manager. Ele *não é* mostrado no dispositivo.
+  - **Editor**: Insira o editor do aplicativo que você está adicionando. Esse nome é usado para sua referência no centro de administração do Microsoft Endpoint Manager. Ele *não é* mostrado no dispositivo.
   - **Notificações**: **habilite** ou **desabilite** o aplicativo de enviar notificações para o dispositivo.
     - **Mostrar no centro de notificações**: **habilitar** permite que o aplicativo mostre notificações no centro de notificações do dispositivo. **Desabilitar** impede que o aplicativo mostre notificações no centro de notificações.
     - **Mostrar na tela de bloqueio**: selecione **habilitar** para ver as notificações do aplicativo na tela de bloqueio do dispositivo. **Desabilitar** impede que o aplicativo mostre notificações na tela de bloqueio.
@@ -339,7 +339,7 @@ Esta funcionalidade aplica-se a:
 - **Mapeamento de realm de domínio** (somente Kerberos): **adicione** os sufixos DNS de domínio que devem ser mapeados para seu Realm. Use essa configuração quando os nomes DNS dos hosts não corresponderem ao nome do realm. É mais provável que você não precise criar esse mapeamento de domínio para Realm personalizado.
 - **Certificado PKINIT** (somente Kerberos): **selecione** o certificado de autenticação de chave pública (PKINIT) que pode ser usado para autenticação Kerberos. Você pode escolher entre os certificados [PKCS](../protect/certficates-pfx-configure.md) ou [SCEP](../protect/certificates-scep-configure.md) que você adicionou no Intune. Para obter mais informações sobre certificados, consulte [usar certificados para autenticação no Microsoft Intune](../protect/certificates-configure.md).
 
-## <a name="wallpaper"></a>Imagem de Fundo
+## <a name="wallpaper"></a>Papéis
 
 Você pode enfrentar um comportamento inesperado quando um perfil sem imagem é atribuído a dispositivos com uma imagem existente. Por exemplo, você cria um perfil sem uma imagem. Este perfil é atribuído a dispositivos que já têm uma imagem. Nesse cenário, a imagem pode mudar para o padrão do dispositivo ou a imagem original pode permanecer no dispositivo. Esse comportamento é controlado e limitado pela plataforma MDM da Apple.
 

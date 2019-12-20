@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7e17972a3a87bd9c42db54753d4da3bb81703377
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 4b2a6019a0af33cd227d88444bb5ddda5bc22715
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74563611"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75204906"
 ---
 # <a name="enable-win32-apps-on-s-mode-devices"></a>Habilitar aplicativos Win32 em dispositivos de modo S
 
@@ -57,7 +57,7 @@ As etapas para permitir que os aplicativos Win32 sejam executados em um disposit
 
 Para criar uma política complementar do modo do Windows 10 S, use as seguintes etapas:
 
-1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selecione **aplicativos** > **S modo políticas complementares** > **criar política**.
 3. Antes de adicionar o **arquivo de política**, você deve criá-lo e conectá-lo. Para obter mais informações, consulte:
     - [Criar uma política WDAC usando as ferramentas do PowerShell e convertê-la em um formato binário](https://go.microsoft.com/fwlink/?linkid=2095387)

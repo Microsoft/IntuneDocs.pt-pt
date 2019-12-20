@@ -16,16 +16,16 @@ search.appverid: MET150
 ms.reviewer: tycast
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 122872eff92a37c8724fd4a853091e51a0a54c66
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: f2bee04eabb7036d9a28ac628175b27f763d0ccb
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506524"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207065"
 ---
 # <a name="windows-10-and-windows-holographic-device-settings-to-add-vpn-connections-using-intune"></a>Configurações do dispositivo Windows 10 e Windows Holographic para adicionar conexões VPN usando o Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Você pode adicionar e configurar conexões VPN para dispositivos usando Microsoft Intune. Este artigo lista e descreve as configurações e recursos comumente usados ao criar VPNs (redes virtuais privadas). Essas configurações e recursos de VPN são usados em perfis de configuração de dispositivo no Intune que são enviados por Push ou implantados em dispositivos.
 
@@ -143,7 +143,7 @@ Para obter mais informações sobre a criação de XML de EAP, veja [Configuraç
 
   ![Selecione os três pontos e clique e arraste para mover o sufixo DNS](./media/vpn-settings-windows-10/vpn-settings-windows10-move-dns-suffix.png)
 
-- **Regras de tabela de políticas de resolução de nomes (NRPT)** : as regras de tabela de políticas de resolução de nomes (NRPT) definem como o DNS resolve nomes quando conectados à VPN. Depois que a conexão VPN é estabelecida, você escolhe quais servidores DNS a conexão VPN usa.
+- **Regras de tabela de políticas de resolução de nomes (NRPT)**: as regras de tabela de políticas de resolução de nomes (NRPT) definem como o DNS resolve nomes quando conectados à VPN. Depois que a conexão VPN é estabelecida, você escolhe quais servidores DNS a conexão VPN usa.
 
   Você pode adicionar regras à tabela que incluem o domínio, o servidor DNS, o proxy e outros detalhes para resolver o domínio que você inserir. A conexão VPN usa essas regras quando os usuários se conectam aos domínios que você inserir.
 
@@ -177,7 +177,7 @@ Se um usuário estiver conectado a um sufixo DNS na lista, o usuário não se co
 
 Por exemplo, se o usuário já estiver conectado a um sufixo DNS confiável, os seguintes gatilhos serão ignorados. Especificamente, os sufixos DNS na lista cancelam todos os outros disparadores automotivos de conexão, incluindo:
 
-- Sempre ativado
+- AlwaysOn
 - Gatilho baseado em aplicativo
 - Gatilho de autodisparo do DNS
 

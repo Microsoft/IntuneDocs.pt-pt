@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 19d02694ab5e53dc43e0861c6a427a044bf50648
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9735beff8aeebce84150c6cc8cb6df0082bd045d
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502631"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207150"
 ---
 # <a name="set-the-mobile-device-management-authority"></a>Definir a autoridade de gestão de dispositivos móveis
 
@@ -47,7 +47,7 @@ As configurações possíveis são:
 
 Se ainda não configurou a autoridade de MDM, siga os passos abaixo. Para alterar do SCCM, consulte [migrar usuários e dispositivos do MDM híbrido para o Intune autônomo](https://docs.microsoft.com/sccm/mdm/deploy-use/migrate-hybridmdm-to-intunesa).
 
-1. No [Intune na portal do Azure](https://aka.ms/intuneportal), selecione a faixa laranja para abrir a configuração **autoridade de gerenciamento de dispositivo móvel** . A faixa cor de laranja só é apresentada se ainda não tiver configurado a autoridade de MDM.
+1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), selecione a faixa laranja para abrir a configuração de **autoridade de gerenciamento de dispositivo móvel** . A faixa cor de laranja só é apresentada se ainda não tiver configurado a autoridade de MDM.
 2. Em **Autoridade de Gestão de Dispositivos Móveis**, selecione a sua autoridade de MDM a partir das seguintes opções:
    - **Autoridade de MDM do Intune**
    - **Nenhum**
@@ -77,7 +77,7 @@ Depois de mudar para a nova autoridade de MDM, provavelmente haverá um tempo de
 
 ## <a name="change-mdm-authority-to-office-365"></a>Mudar a autoridade de MDM para o Office 365
 
-Para ativar o MDM do Office 365 (ou para habilitar a coexistência de MDM além do serviço do Intune existente), vá para [https://protection.office.com](https://protection.office.com), escolha **prevenção de perda de dados** >  políticas de segurança de **dispositivo** > **Exibir lista de dispositivos gerenciados** > **vamos começar**.
+Para ativar o MDM do Office 365 (ou para habilitar a coexistência de MDM além do serviço do Intune existente), vá para [https://protection.office.com](https://protection.office.com), escolha **prevenção de perda de dados** > políticas de segurança de **dispositivo** > **Exibir lista de dispositivos gerenciados** > **vamos começar**.
 
 Para obter mais informações, veja [Set up Mobile Device Management (MDM) in Office 365](https://support.office.com/en-us/article/Set-up-Mobile-Device-Management-MDM-in-Office-365-dd892318-bc44-4eb1-af00-9db5430be3cd) (Configurar a Gestão de Dispositivos Móveis [MDM] no Office 365).
 

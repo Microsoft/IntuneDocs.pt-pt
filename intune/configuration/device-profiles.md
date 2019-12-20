@@ -1,6 +1,6 @@
 ---
 title: Funcionalidades e definições do dispositivo no Microsoft Intune – Azure | Microsoft Docs
-description: Descrição geral dos diferentes perfis de dispositivo do Microsoft Intune. Obtenha informações sobre recursos, restrições, email, WiFi, VPN, educação, certificados, atualize o Windows 10, o BitLocker e o Microsoft defender, a proteção de informações do Windows, os modelos administrativos e as definições de configuração de dispositivo personalizadas no portal do Azure. Utilize estes perfis para gerir e proteger os dados e os dispositivos na sua empresa.
+description: Descrição geral dos diferentes perfis de dispositivo do Microsoft Intune. Obter informações sobre recursos, restrições, email, WiFi, VPN, educação, certificados, atualizar o Windows 10, o BitLocker e o Microsoft defender, a proteção de informações do Windows, os modelos administrativos e as definições de configuração de dispositivo personalizadas na Microsoft Centro de administração do Endpoint Manager. Utilize estes perfis para gerir e proteger os dados e os dispositivos na sua empresa.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b74cdf29999bccdefaa94c84673b9ea89c335537
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 800bbd5199bd4389ee1ae8aa98a68e21456e7000
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74694952"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206623"
 ---
 # <a name="apply-features-and-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Aplicar definições e funcionalidades nos dispositivos com perfis de dispositivo no Microsoft Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 O Microsoft Intune inclui definições e funcionalidades que pode ativar ou desativar em diferentes dispositivos na sua organização. Estas definições e funcionalidades são adicionadas aos “perfis de configuração”. Pode criar perfis para diferentes dispositivos e diferentes plataformas, incluindo iOS, Android e Windows. Em seguida, utilizar o Intune para aplicar ou “atribuir” o perfil aos dispositivos.
 

@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 340659adfa3bbd40f98ccec9d8d44e952f7ec9b9
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9c97a3ad329ce0e431c6dc8ef318306e4e002f36
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059927"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207116"
 ---
 # <a name="set-up-a-telecom-expense-management-service-in-intune"></a>Configurar um serviço de gestão de despesas de telecomunicações no Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Usando o Intune, você pode gerenciar as despesas de telecomunicações do uso de dados em dispositivos móveis de propriedade da organização. O Intune integra-se ao [Gerenciamento de despesas de telecomunicações do Datalert](http://datalert.biz/get-started)da Saaswedo. O Datalert é uma solução de gerenciamento de despesas de telecomunicações em tempo real que gerencia o uso de dados de telecomunicações. Ele pode ajudar a evitar dados dispendiosos e inesperados e encargos de roaming para seus dispositivos gerenciados pelo Intune.
 
@@ -95,7 +95,7 @@ O Intune integra-se com o seguinte provedor de gerenciamento de despesas de tele
 
       ![Página do Datalert a mostrar uma ligação estabelecida com êxito](./media/telecom-expenses-monitor/tem-datalert-adal-consent.png)
 
-8. Em **Gerenciamento de perfis do MDM (opcional)** , defina a opção para **ativado**. Essa configuração permite que o Datalert Leia os perfis disponíveis no Intune para ajudá-lo a configurar políticas. 
+8. Em **Gerenciamento de perfis do MDM (opcional)**, defina a opção para **ativado**. Essa configuração permite que o Datalert Leia os perfis disponíveis no Intune para ajudá-lo a configurar políticas. 
 
     Na página de autenticação da Microsoft, selecione **Aceitar**.
 

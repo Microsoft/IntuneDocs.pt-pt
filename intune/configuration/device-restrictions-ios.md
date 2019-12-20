@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5f9a01adaa6f5ab59819c2924172c30a437ebd8c
-ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
+ms.openlocfilehash: 476817b70f18fdd45a678ef3e12d1d3312c03dd3
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74992912"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206538"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>configurações do dispositivo iOS e iPadOS para permitir ou restringir recursos usando o Intune
 
@@ -50,7 +50,7 @@ Estas definições são adicionadas a um perfil de configuração do dispositivo
 ### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>As configurações se aplicam a: registro de dispositivo, registro de dispositivo automatizado (supervisionado)
 
 - **Certificados TLS não confiáveis**: escolha **Bloquear** para impedir certificados de TLS (segurança de camada de transporte) não confiáveis no dispositivo. **Não configurado** (predefinição) permite os certificados TLS.
-- **Bloquear atualizações de PKI por satélite**: o **bloco** impede que os usuários recebam atualizações de software sem conectar seus dispositivos a um computador. **Não configurado** (padrão) não atualiza essa configuração no dispositivo.
+- **Bloquear atualizações de PKI por satélite**: o **bloco** impede que os usuários recebam atualizações de software, a menos que o dispositivo esteja conectado a um computador. **Não configurado** (padrão): permite que um dispositivo Receba atualizações de software sem estar conectado a um computador.
 - **Limitar o controle do AD**: escolha o **limite** para desabilitar o identificador de publicidade do dispositivo. **Não configurado** (predefinição) mantém-no ativado.
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>As configurações se aplicam a: registro de dispositivo automatizado (supervisionado)
@@ -93,7 +93,7 @@ Estas definições são adicionadas a um perfil de configuração do dispositivo
 - **Alterações do perfil de configuração**: **Bloquear** impede alterações no perfil de configuração no dispositivo. **Não configurado** (predefinição) permite que o utilizador instale perfis de configuração.
 - **Bloqueio de ativação**: escolha **permitir** para habilitar bloqueio de ativação em dispositivos IOS supervisionados. O Bloqueio de Ativação dificulta que um dispositivo perdido ou roubado seja reativado.
 - **Bloquear remoção de aplicativo**: escolha **Bloquear** para impedir que os usuários removam aplicativos. **Não configurado** (predefinição) permite que os utilizadores removam aplicações do dispositivo.
-- **Permitir acessórios USB enquanto o dispositivo estiver bloqueado**: **permitir** permite que os acessórios USB troquem dados por um dispositivo que tenha sido bloqueado por mais de uma hora. **Não configurado** (padrão) não atualiza o modo de USB restrito no dispositivo.
+- **Permitir acessórios USB enquanto o dispositivo estiver bloqueado**: **permitir** permite que os acessórios USB troquem dados por um dispositivo que tenha sido bloqueado por mais de uma hora. **Não configurado** (padrão) não atualiza o modo restrito de USB no dispositivo, e os acessórios USB serão impedidos de transferir dados do dispositivo se estiverem bloqueados por mais de uma hora.
 - **Forçar data e hora automáticas**: **exigir** força dispositivos supervisionados a definir a data & hora automaticamente. O fuso horário do dispositivo é atualizado quando o dispositivo está ligado à rede móvel ou ao Wi-Fi com os serviços de localização ativados.
 - **Exigir que os alunos solicitem permissão para sair do curso da sala de aula**: **exigir** força alunos inscritos em um curso não gerenciado usando o aplicativo sala de aula para solicitar permissão do professor para sair do curso. **Não configurado** (predefinição) não força o estudante a pedir permissão.
 
@@ -189,7 +189,7 @@ Estas definições são adicionadas a um perfil de configuração do dispositivo
   > [!NOTE]
   > A interface do usuário do Intune para essa configuração não separa os valores com suporte para iOS e iPadOS. A interface do usuário pode ser atualizada em uma versão futura.
 
-- **Expiração da senha (dias)** : Insira o número de dias antes que a senha do dispositivo deva ser alterada.
+- **Expiração da senha (dias)**: Insira o número de dias antes que a senha do dispositivo deva ser alterada.
 - **Evitar a reutilização de senhas anteriores**: Insira o número de novas senhas que devem ser usadas até que uma antiga possa ser reutilizada.
 - **ID de toque e desbloqueio de ID facial**: escolha **Bloquear** para impedir o uso de uma impressão digital ou uma face para desbloquear o dispositivo. **Não configurado** permite que o usuário desbloqueie o dispositivo usando esses métodos.
 
@@ -264,7 +264,7 @@ Estas definições são adicionadas a um perfil de configuração do dispositivo
 
 - **Exigir senha da iTunes Store para todas as compras**: **exige** que o usuário insira a senha da ID da Apple para cada compra no aplicativo ou iTunes. **Não configurado** (padrão) permite compras sem solicitar uma senha a cada vez.
 - **Compras no aplicativo**: escolha **Bloquear** para evitar compras no aplicativo da loja. **Não configurado** (padrão) permite a loja de compras em um aplicativo em execução.
-- **Baixar conteúdo da iBook Store sinalizado como ' erotismo '** : escolha **Bloquear** para impedir que os usuários baixem mídia da iBook Store marcada como erotismo. **Não configurado** (padrão) permite que o usuário Baixe livros com a categoria "erotismo".
+- **Baixar conteúdo da iBook Store sinalizado como ' erotismo '**: escolha **Bloquear** para impedir que os usuários baixem mídia da iBook Store marcada como erotismo. **Não configurado** (padrão) permite que o usuário Baixe livros com a categoria "erotismo".
 - **Permitir que aplicativos gerenciados gravem contatos em contas de contatos não gerenciados**: quando definido como **permitir**, aplicativos gerenciados, como o aplicativo móvel do Outlook, podem salvar ou sincronizar informações de contato, incluindo contatos comerciais e corporativos, para o aplicativo interno de contatos do Ios. Quando definido como **não configurado** (padrão), os aplicativos gerenciados não podem salvar ou sincronizar informações de contato com o aplicativo interno de contatos do Ios no dispositivo.
   
   Para utilizar esta definição, configure **Ver documentos empresariais em aplicações não geridas** como **Bloquear**.
@@ -450,7 +450,7 @@ Observação necessária para o roaming de dados (dica ou nota importante para a
   > [!IMPORTANT]
   > Essa configuração é tratada como uma ação de dispositivo remoto. Portanto, essa configuração não é mostrada no perfil de gerenciamento no dispositivo. Sempre que o status de hotspot pessoal é alterado no dispositivo, o **hotspot pessoal** é bloqueado pelo serviço do Intune. No Intune, se o status do relatório mostrar um êxito, saiba que ele está funcionando, mesmo que a configuração não seja mostrada no perfil de gerenciamento no dispositivo.
 
-- **Regras de uso de celular (somente aplicativos gerenciados)** : define os tipos de dados que os aplicativos gerenciados podem usar quando em redes de celular. As opções são:
+- **Regras de uso de celular (somente aplicativos gerenciados)**: define os tipos de dados que os aplicativos gerenciados podem usar quando em redes de celular. As opções são:
   - **Bloquear o uso de dados da rede celular**: bloqueie o uso de dados da rede celular para **todos os aplicativos gerenciados** ou **escolha aplicativos específicos**.
   - **Bloquear o uso de dados da rede celular em roaming**: bloqueie o uso de dados da rede celular quando estiver em roaming para **todos os aplicativos gerenciados** ou **escolha aplicativos específicos**.
 
@@ -529,7 +529,7 @@ Observação necessária para o roaming de dados (dica ou nota importante para a
 - **Backup criptografado**: **requer** que os backups de dispositivo sejam criptografados.
 - Os **aplicativos gerenciados sincronizam com a nuvem**: **não configurado** (padrão) permite que seus aplicativos de gerenciamento do Intune sincronizem dados com a conta do icloud do usuário. **Bloquear** impede esta sincronização de dados com o iCloud.
 - **Bloquear o backup do catálogo corporativo**: escolha **Bloquear** para impedir que os usuários façam backup de livros empresariais. **Não configurado** (padrão) permite que os usuários façam backup desses livros.
-- **Bloquear a sincronização de metadados do catálogo corporativo (observações e destaques)** : **Bloquear** impede a sincronização de anotações e destaques em livros empresariais. **Não configurado** (padrão) permite a sincronização.
+- **Bloquear a sincronização de metadados do catálogo corporativo (observações e destaques)**: **Bloquear** impede a sincronização de anotações e destaques em livros empresariais. **Não configurado** (padrão) permite a sincronização.
 
 ### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>As configurações se aplicam a: registro de dispositivo, registro de dispositivo automatizado (supervisionado)
 
@@ -651,7 +651,7 @@ O modo supervisionado do iOS só pode ser ativado durante a configuração inici
 - Restrições da IU 
 - Instalação dos perfis de configuração pela IU 
 - Notícias 
-- Keyboard shortcuts 
+- Atalhos de teclado 
 - Modificações do código de acesso 
 - Alterações do nome do dispositivo 
 - Transferências automáticas de aplicações 
@@ -670,7 +670,7 @@ O modo supervisionado do iOS só pode ser ativado durante a configuração inici
 > - iTunes
 > - Conteúdos explícitos
 > - Documentos e dados do iCloud
-> - Jogos de vários jogadores
+> - Jogos para vários jogadores
 > - Adicionar amigos do Game Center
 > - Siri
 

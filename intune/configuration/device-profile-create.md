@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 71f2bc855673b6b189ed7581b979527485e86083
-ms.sourcegitcommit: 66e284fe092e19c1da72b4b770e45bf25ac7910c
+ms.openlocfilehash: c8748639f0407de7b1bb83f646b7decf8c838766
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74860388"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206674"
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>Criar um perfil de dispositivo no Microsoft Intune
 
@@ -39,7 +39,7 @@ Este artigo:
 
 1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-2. Selecione **dispositivos** > **perfis de configuração**. Tem as seguintes opções:
+2. Selecione **dispositivos** > **perfis de configuração**. Você tem as seguintes opções:
 
     - **Visão geral**: lista o status de seus perfis e fornece detalhes adicionais sobre os perfis atribuídos a usuários e dispositivos.
     - **Gerenciar**: criar perfis de dispositivo, carregar [scripts](../apps/intune-management-extension.md) personalizados do PowerShell para execução dentro do perfil e adicionar planos de dados a dispositivos usando o [Esim](esim-device-configuration.md).
@@ -99,13 +99,13 @@ Para obter mais informações sobre etiquetas de âmbito e o que pode fazer, vej
 
 ### <a name="add-a-scope-tag"></a>Adicionar etiqueta de âmbito
 
-1. Selecionar **Âmbito (Etiquetas)** .
+1. Selecionar **Âmbito (Etiquetas)**.
 2. Selecione **Adicionar** para criar uma nova etiqueta de âmbito. Em alternativa, selecione uma etiqueta de âmbito existente na lista.
 3. Selecione **OK** para guardar as alterações.
 
 ## <a name="applicability-rules"></a>Regras de aplicabilidade
 
-Aplica-se a
+Aplica-se a:
 
 - Windows 10 e posterior
 

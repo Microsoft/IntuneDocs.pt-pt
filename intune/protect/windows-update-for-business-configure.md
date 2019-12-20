@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/20/2019
+ms.date: 12/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -15,12 +15,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a7c3398f28d7c396c873dd29f3e3fdd719c1a7c6
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: ad630eb34b296d7ab77081a1e3063db8dffc64f9
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74691779"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207456"
 ---
 # <a name="manage-windows-10-software-updates-in-intune"></a>Gerenciar atualizações de software do Windows 10 no Intune
 
@@ -34,7 +34,7 @@ O Intune fornece os seguintes tipos de política para gerenciar atualizações:
 
 - **Anel de atualização do Windows 10**: essa política é uma coleção de configurações que é configurada quando as atualizações do Windows 10 são instaladas.
 
-- **Atualizações de recursos do Windows 10 (visualização pública)** : essa política traz os dispositivos para a versão do Windows que você especifica e congela o conjunto de recursos nesses dispositivos até que você opte por atualizá-los para uma versão posterior do Windows.  Embora a versão do recurso permaneça estática, os dispositivos podem continuar a instalar as atualizações de qualidade e segurança disponíveis para a versão do recurso.
+- **Atualizações de recursos do Windows 10 (visualização pública)**: essa política traz os dispositivos para a versão do Windows que você especifica e congela o conjunto de recursos nesses dispositivos até que você opte por atualizá-los para uma versão posterior do Windows.  Embora a versão do recurso permaneça estática, os dispositivos podem continuar a instalar as atualizações de qualidade e segurança disponíveis para a versão do recurso.
 
 Você atribui políticas para anéis de atualização do Windows 10 e atualizações de recurso do Windows 10 a grupos de dispositivos. Você pode usar ambos os tipos de política no mesmo ambiente do Intune para gerenciar atualizações de software para seus dispositivos Windows 10 e para criar uma estratégia de atualização que espelhe suas necessidades de negócios.
 
@@ -69,9 +69,6 @@ Os pré-requisitos a seguir devem ser atendidos para usar as atualizações do W
 
   Para obter mais informações sobre os perfis de dispositivo, veja [Configurar definições de restrições de dispositivos](../configuration/device-restrictions-configure.md).
 
-- Se você usar o portal clássico do Azure, [migre suas configurações para o portal do Azure](#migrate-update-settings-to-the-azure-portal).
-
-
 ## <a name="windows-10-update-rings"></a>Anéis de atualização do Windows 10
 
 Crie anéis de atualização que especificam como e quando o Windows como um serviço atualiza seus dispositivos Windows 10 com atualizações de recursos e qualidade. Com o Windows 10, as novas Atualizações de Funcionalidades e Atualizações de Qualidade incluem os conteúdos de todas as atualizações anteriores. Desde que instale a atualização mais recente, pode ter a certeza de que os seus dispositivos com o Windows 10 estão atualizados. Ao contrário das versões anteriores do Windows, agora tem de instalar toda a atualização em vez de parte de uma atualização.
@@ -93,7 +90,7 @@ Os anéis de atualização do Windows 10 dão suporte a [marcas de escopo](../fu
 
    Quando estiver pronto, selecione **Avançar** para continuar com as *atribuições*.
 
-6. Em **atribuições**, escolha **+ Selecionar grupos para incluir** e, em seguida, atribua o anel de atualização a um ou mais grupos. Use **+ selecione grupos para excluir** para ajustar a atribuição. Selecione **Seguinte** para continuar.
+6. Em **atribuições**, escolha **+ Selecionar grupos para incluir** e, em seguida, atribua o anel de atualização a um ou mais grupos. Use **+ selecione grupos para excluir** para ajustar a atribuição. Selecione **Avançar** para continuar.
 
 7. Em**revisão + criar**, examine as configurações e, em seguida, selecione **criar** quando estiver pronto para salvar o anel de atualização do Windows 10. O novo anel de atualização é exibido na lista de anéis de atualização.
 
@@ -104,7 +101,7 @@ No portal, navegue até **dispositivos** > os anéis de atualização **do Windo
 Nessa página, você pode exibir o status de atribuição de anéis e selecionar as seguintes ações na parte superior do painel de visão geral para gerenciar o anel de atualização:
 
 - [Eliminar](#delete)
-- [Colocar em pausa](#pause)
+- [Temporariamente](#pause)
 - [Volte](#resume)
 - [Estender](#extend)
 - [Desinstalar](#uninstall)
@@ -148,7 +145,7 @@ Enquanto um anel de atualização é pausado, você pode selecionar **retomar** 
 2. Selecione entre as opções disponíveis para retomar as atualizações de **recurso** ou **qualidade** e, em seguida, selecione **OK**.
 3. Depois de retomar um tipo de atualização, você pode selecionar retomar novamente para retomar o outro tipo de atualização.
 
-#### <a name="extend"></a>Expandir  
+#### <a name="extend"></a>Estender  
 
 Enquanto um anel de atualização é pausado, você pode selecionar **estender** para redefinir o período de pausa para as atualizações de recurso e qualidade desse anel de atualização para 35 dias.
 
@@ -182,7 +179,7 @@ Ao usar a desinstalação, considere o seguinte:
 
 - Em um dispositivo Windows 10, depois que uma atualização de qualidade for revertida com êxito, os usuários do dispositivo continuarão vendo a atualização listada nas **configurações do Windows** > **atualizações** > **histórico de atualizações**.
 
-- Para atualizações de recursos especificamente, o tempo que você pode desinstalar a atualização é limitado de 2-60 dias. Esse período é configurado pela configuração de atualização de anéis de atualização **definir período de desinstalação de atualização de recurso (2 a 60 dias)** . Não é possível reverter uma atualização de recurso que foi instalada em um dispositivo depois que a atualização tiver sido instalada por mais tempo do que o período de desinstalação configurado.
+- Para atualizações de recursos especificamente, o tempo que você pode desinstalar a atualização é limitado de 2-60 dias. Esse período é configurado pela configuração de atualização de anéis de atualização **definir período de desinstalação de atualização de recurso (2 a 60 dias)**. Não é possível reverter uma atualização de recurso que foi instalada em um dispositivo depois que a atualização tiver sido instalada por mais tempo do que o período de desinstalação configurado.
 
   Por exemplo, considere um anel de atualização com um período de desinstalação de atualização de recurso de 20 dias. Depois de 25 dias, você decide reverter a atualização de recursos mais recente e usar a opção de desinstalação.  Os dispositivos que instalaram a atualização de recursos há mais de 20 dias não podem desinstalá-lo, pois eles removeram os bits necessários como parte de sua manutenção. No entanto, os dispositivos que instalaram apenas a atualização de recursos até 19 dias atrás poderão desinstalar a atualização se eles fizerem check-in com êxito para receber o comando de desinstalação antes de exceder o período de desinstalação de 20 dias.
 
@@ -227,7 +224,7 @@ Quando um dispositivo recebe uma política de atualizações de recursos do Wind
 
 3. Em **noções básicas**, especifique um nome, uma descrição (opcional) e para **a atualização do recurso a ser implantada**, selecione a versão do Windows com o conjunto de recursos desejado e, em seguida, selecione **Avançar**.
 
-4. Em **atribuições**, escolha **+ Selecionar grupos para incluir** e, em seguida, atribua o anel de atualização a um ou mais grupos. Selecione **Seguinte** para continuar.
+4. Em **atribuições**, escolha **+ Selecionar grupos para incluir** e, em seguida, atribua a implantação de atualização de recurso a um ou mais grupos. Selecione **Avançar** para continuar.
 
 5. Em **revisão + criar**, examine as configurações e selecione **criar** quando estiver pronto para salvar a política de atualizações de recursos do Windows 10.  
 
@@ -240,17 +237,6 @@ Nesse painel, você pode:
 - Selecione **excluir** para excluir a política do Intune e removê-la dos dispositivos.
 - Selecione **Propriedades** para modificar a implantação.  No painel *Propriedades* , selecione **Editar** para abrir as *configurações ou atribuições de implantação*, onde você pode modificar a implantação.
 - Selecione **status de atualização do usuário final** para exibir informações sobre a política.
-
-## <a name="migrate-update-settings-to-the-azure-portal"></a>Migrar configurações de atualização para o portal do Azure
-
-O portal clássico do Azure também tem um número limitado de outras definições de atualizações do Windows 10 no perfil de configuração do dispositivo. Se qualquer uma dessas configurações for configurada quando você migrar para o portal do Azure, é altamente recomendável que você faça as seguintes ações:
-
-1. No portal do Azure, crie anéis de atualização do Windows 10 com as definições de que precisa. A definição **Permitir funcionalidades de pré-lançamento** não é suportada no portal do Azure, porque já não é aplicável às compilações do Windows 10 mais recentes. Você pode definir as outras três configurações e as outras configurações de atualizações do Windows 10 ao criar anéis de atualização.
-
-   > [!NOTE]
-   > As definições das atualizações do Windows 10 criadas no portal clássico não são apresentadas no portal do Azure após a migração. No entanto, estas definições são aplicadas. Se migrar qualquer uma destas definições e editar a política migrada a partir do portal do Azure, estas definições serão removidas da política.
-
-2. Elimine as definições de atualização no portal clássico. Depois de migrar para o portal do Azure e adicionar as mesmas definições a uma cadência de atualização, terá de eliminar as definições no portal clássico para evitar potenciais conflitos de políticas. Por exemplo, quando a mesma configuração é configurada com valores diferentes, há um conflito. Não há uma maneira fácil de saber porque a configuração configurada no portal clássico não é exibida na portal do Azure.
 
 ## <a name="next-steps"></a>Próximos passos
 

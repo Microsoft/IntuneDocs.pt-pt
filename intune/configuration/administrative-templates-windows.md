@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ca087ec67542102a0cd3111d27a860500b23d3c4
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9b848bc3cd6461b5c31e940ffbe330bc60374795
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74547976"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206895"
 ---
 # <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Use os modelos do Windows 10 para definir as configurações de política de grupo no Microsoft Intune
 
@@ -74,7 +74,7 @@ Este artigo lista as etapas para criar um modelo para dispositivos Windows 10 e 
 6. Selecione qualquer configuração. Por exemplo, filtre no **Office**e selecione **Ativar navegação restrita**. Uma descrição detalhada da configuração é mostrada. Escolha **habilitado**, **desabilitado**ou deixe a configuração como **não configurado** (padrão). A descrição detalhada também explica o que acontece quando você escolhe **habilitado**, **desabilitado**ou **não configurado**.
 7. Selecione **OK** para guardar as alterações.
 
-Continue a percorrer a lista de configurações e defina as configurações desejadas em seu ambiente. Estes são alguns exemplos:
+Continue a percorrer a lista de configurações e defina as configurações desejadas em seu ambiente. Aqui estão alguns exemplos:
 
 - Use a configuração de **configurações de notificação de macro do VBA** para lidar com macros do VBA em diferentes programas de Microsoft Office, incluindo o Word e o Excel.
 - Use a configuração **permitir downloads de arquivos** para permitir ou impedir downloads do Internet Explorer.
@@ -92,7 +92,7 @@ Há centenas de configurações disponíveis nesses modelos. Para facilitar a lo
 
   ![Clique em caminho para mostrar todas as configurações agrupadas pela política de grupo ou caminho ADMX em modelos administrativos no Intune](./media/administrative-templates-windows/path-filter-shows-excel-options.png)
 
-- Em seu modelo, use a caixa de **pesquisa** para localizar configurações específicas. Você pode pesquisar definindo o título ou o caminho. Por exemplo, procure `copy`. Todas as configurações com `copy` são mostradas:
+- Em seu modelo, use a caixa de **pesquisa** para localizar configurações específicas. Você pode pesquisar definindo o título ou o caminho. Por exemplo, pesquise por `copy`. Todas as configurações com `copy` são mostradas:
 
   ![Procurar cópia para mostrar todas as configurações do Windows e do Office em modelos administrativos no Intune](./media/administrative-templates-windows/search-copy-settings.png) 
 

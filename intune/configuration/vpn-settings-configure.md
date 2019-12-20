@@ -15,16 +15,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9fab50e0aefd926b4dc7a2b3559576642d5d6b79
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: b11cbd3427b3b8e0a43a6e6e2af5fa80da45e16a
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059316"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206283"
 ---
 # <a name="create-vpn-profiles-to-connect-to-vpn-servers-in-intune"></a>Criar perfis VPN para se conectar a servidores VPN no Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 As VPNs (redes virtuais privadas) oferecem aos usuários acesso remoto seguro à rede da sua organização. Os dispositivos usam um perfil de conexão VPN para iniciar uma conexão com o servidor VPN. **Perfis de VPN** no Microsoft Intune atribuir configurações de VPN a usuários e dispositivos na sua organização, para que eles possam se conectar com facilidade e segurança à sua rede organizacional.
 

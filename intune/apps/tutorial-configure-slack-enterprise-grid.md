@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a3b01c1444b44e3f5c66fc129f78f321c9c9f5aa
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: dce6d71a4bc056146b581458d5c39325adad1584
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74563404"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206912"
 ---
 # <a name="tutorial-configure-slack-to-use-intune-for-emm-and-app-configuration"></a>Tutorial: configurar a margem de atraso para usar o Intune para EMM e a configuração de aplicativo
 
@@ -48,32 +48,31 @@ Você também precisará de um plano de [grade empresarial de margem de atraso](
 Ative o EMM para seu plano de grade empresarial de margem de atraso seguindo [as instruções da margem de atraso](https://get.slack.help/hc/articles/115002579426-Enable-Enterprise-Mobility-Management-for-your-org#step-2:-turn-on-emm) e [Conecte Azure Active Directory](https://docs.microsoft.com/azure/active-directory/saas-apps/slack-tutorial) como o IDP (provedor de identidade do seu plano de grade).
 
 ## <a name="sign-in-to-intune"></a>Iniciar sessão no Intune
-Inicie sessão no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) enquanto Administrador Global ou Administrador de Serviços do Intune. Se criou uma Subscrição de avaliação do Intune, a conta com a qual criou a subscrição é de Administrador global.
+Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) como um administrador global ou um administrador de serviços do Intune. Se criou uma Subscrição de avaliação do Intune, a conta com a qual criou a subscrição é de Administrador global.
 
 ## <a name="set-up-slack-for-emm-on-ios-devices"></a>Configurar a margem de atraso do EMM em dispositivos iOS
 Adicione a margem de atraso do aplicativo iOS para EMM ao seu locatário do Intune e crie uma política de configuração de aplicativo para permitir que os usuários do iOS de sua organização acessem a margem de atraso com o Intune como um provedor do EMM.
 
 ### <a name="add-slack-for-emm-to-intune"></a>Adicionar margem de atraso para EMM no Intune
 Adicione a margem de atraso do EMM como um aplicativo iOS gerenciado no Intune e atribua seus usuários de margem de atraso. Os aplicativos são específicos da plataforma, portanto, você precisa adicionar um aplicativo do Intune separado para seus usuários de margem de atraso em dispositivos Android.
-1. No Intune, selecione **aplicativos** > **todos os aplicativos** > **Adicionar**.
-2. Em tipo de aplicativo, selecione **Store app-IOS**.
-3. Selecione **Procurar na App Store**. Insira o termo de pesquisa "margem de atraso para EMM" e selecione o aplicativo.
-4. Selecione **informações do aplicativo** e configure as alterações como desejar.
-5. Selecione **Adicionar**.
-6. Na barra de pesquisa, insira "margem de atraso para EMM" e selecione o aplicativo que você acabou de adicionar.
-7. Em gerenciar, selecione **atribuições**.
-8. Selecione **Adicionar grupo**. Dependendo de quem você optou por ser afetado ao ativar o EMM para a margem de atraso, em **tipo de atribuição** , talvez você queira selecionar:
+1. No centro de administração, selecione **aplicativos** > **todos os aplicativos** > **Adicionar**.
+2. Em **tipo de aplicativo**, selecione o aplicativo da loja do **Ios** .
+3. Selecione **Procurar na App Store**. Insira o termo de pesquisa "margem de atraso para EMM" e selecione o aplicativo. Clique em **selecionar** no painel **Pesquisar na loja de aplicativos** .
+4. Selecione **informações do aplicativo** e configure as alterações como desejar. Selecione **OK** para definir as informações do aplicativo.
+5. Clique em **Adicionar**.
+6. Selecione **Atribuições**.
+7. Clique em **Adicionar grupo**. Dependendo de quem você optou por ser afetado ao ativar o EMM para a margem de atraso, em **tipo de atribuição** , talvez você queira selecionar:
     - **Disponível para dispositivos registrados** se você escolher "todos os membros (incluindo convidados)" ou
     - **Disponível com ou sem registro** se você escolher "todos os membros (exceto convidados)" ou "opcional".
-9. Selecione **grupos incluídos** e, em tornar este aplicativo disponível para todos os usuários, selecione **Sim**.
-10. Clique em **OK** e, em seguida, clique novamente em **OK**.
-11. Clique em **Guardar**.
+8. Selecione **grupos incluídos** e, em **tornar este aplicativo disponível para todos os usuários** , selecione **Sim**.
+9. Clique em **OK**e em **OK** novamente para adicionar o grupo.
+10. Clique em **Guardar**.
 
 ### <a name="add-an-app-configuration-policy-for-slack-for-emm"></a>Adicionar uma política de configuração de aplicativo para a margem de atraso do EMM
 Adicione uma política de configuração de aplicativo para a margem de atraso do EMM iOS. As políticas de configuração de aplicativo para dispositivos gerenciados são específicas da plataforma, portanto, você precisa adicionar uma política separada para seus usuários de margem de atraso em dispositivos Android.
-1. No Intune, selecione **aplicativos** > **políticas de configuração de aplicativo** > **Adicionar**.
-2. Em nome, digite margem de atraso configuração do aplicativo teste de política.
-3. Em tipo de registro do dispositivo, selecione **dispositivos gerenciados**.
+1. No centro de administração, selecione **aplicativos** > **políticas de configuração de aplicativo** > **Adicionar** > **dispositivos gerenciados**.
+2. Em nome, insira ' teste de política de configuração de aplicativo de margem de atraso '.
+3. Em tipo de registro do dispositivo, confirme se **dispositivos gerenciados** estão definidos.
 4. Em plataforma, selecione **Ios**.
 5. Selecione **aplicativo associado**.
 6. Na barra de pesquisa, insira "margem de atraso para EMM" e selecione o aplicativo.
@@ -86,7 +85,7 @@ Adicione uma política de configuração de aplicativo para a margem de atraso d
 
 ### <a name="optional-create-an-ios-device-compliance-policy"></a>Adicional Criar uma política de conformidade do dispositivo iOS
 Crie uma política de conformidade de dispositivos do Intune para definir as condições que um dispositivo tem de cumprir para ser considerado conforme. Para este tutorial, vamos criar uma política de conformidade para dispositivos iOS. As políticas de conformidade são específicas da plataforma, portanto, você precisa criar uma política separada para seus usuários de margem de atraso em dispositivos Android.
-1. No Intune, selecione **Conformidade do dispositivo** > **Políticas** > **Criar Política**.
+1. No centro de administração, selecione **conformidade do dispositivo** > **políticas** > **criar política**.
 2. Em nome, insira "teste de política de conformidade do iOS".
 3. Em descrição, insira "teste de política de conformidade do iOS".
 4. Em plataforma, selecione **Ios**.
@@ -117,7 +116,7 @@ Adicione a margem de atraso como um aplicativo gerenciado do Google Play no Intu
     - **Disponível para dispositivos registrados** se você escolher "todos os membros (incluindo convidados)" ou
     - **Disponível com ou sem registro** se você escolher "todos os membros (exceto convidados)" ou "opcional".
 8. Selecione grupos incluídos e, em tornar este aplicativo disponível para todos os usuários, selecione **Sim**.
-9. Clique em **OK** e, em seguida, clique novamente em **OK**.
+9. Clique em **OK**e em **OK** novamente.
 10. Clique em **Guardar**.
 
 ### <a name="add-an-app-configuration-policy-for-slack"></a>Adicionar uma política de configuração de aplicativo para a margem de atraso
@@ -151,7 +150,7 @@ Crie uma política de conformidade de dispositivos do Intune para definir as con
     - Para máximo de minutos após o bloqueio de tela antes que a senha seja necessária, escolha **15 minutos**.
     - Para expiração da senha (dias), digite 41.
     - Para o número de senhas anteriores para evitar a reutilização, insira 5.
-8. Clique em **OK** e, em seguida, clique novamente em **OK**.
+8. Clique em **OK**e em **OK** novamente.
 9. Clique em **Criar**.
 
 ## <a name="launch-slack"></a>Lançar margem de atraso
