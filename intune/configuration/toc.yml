@@ -9,6 +9,10 @@
   items:
     - name: Criar um perfil de dispositivo de e-mail
       href: quickstart-email-profile.md
+- name: Tutorials (Tutoriais)
+  items:
+    - name: Criar um modelo administrativo
+      href: tutorial-walkthrough-administrative-templates.md
 - name: How-to guides (Guias de procedimentos)
   items:
     - name: Criar um perfil
@@ -27,7 +31,7 @@
     - name: Definições do BIOS no Windows
       href: device-firmware-configuration-interface-windows.md
       displayName: 'DFCI, firmware'
-    - name: Updates
+    - name: Atualizações
       href: delivery-optimization-windows.md
       displayName: delivery optimization; updates
     - name: Atualizar edições e modo S
@@ -145,8 +149,6 @@
               href: vpn-settings-macos.md
             - name: Wi-Fi
               href: wi-fi-settings-macos.md
-            - name: Wired network (Rede com fios)
-              href: wired-network-settings-macos.md
             - name: Personalizar
               href: custom-settings-macos.md
         - name: Windows 10 e posterior
