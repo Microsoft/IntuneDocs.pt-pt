@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dcd1948899ec4023a65c62f7106298b065b46883
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 63ebbc22c5452c99439d34813509b5652daef1f0
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206929"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75548098"
 ---
 # <a name="use-update-channel-and-target-version-settings-to-update-office-365-with-microsoft-intune-administrative-templates"></a>Use as configurações de canal de atualização e versão de destino para atualizar o Office 365 com Microsoft Intune Modelos Administrativos
 
@@ -75,7 +75,7 @@ Depois de atribuir a política e as sincronizações de dispositivo, você pode 
     ![Modelo administrativo L_Updatebranch exemplo de chave do registro](./media/administrative-templates-update-office/admx-update-branch-registry-key.png)
 
     > [!TIP]
-    > [Gerenciar o Office 365 ProPlus com Configuration Manager](https://docs.microsoft.com/sccm/sum/deploy-use/manage-office-365-proplus-updates#bkmk_channel) lista os valores e o que eles significam. Os valores do registro se baseiam no canal de distribuição selecionado:
+    > [Gerenciar o Office 365 ProPlus com Configuration Manager](https://docs.microsoft.com/configmgr/sum/deploy-use/manage-office-365-proplus-updates#bkmk_channel) lista os valores e o que eles significam. Os valores do registro se baseiam no canal de distribuição selecionado:
     >
     >- Canal-valor mensal = "atual"
     >- Canal mensal (direcionado)-valor = "atual"
@@ -95,7 +95,7 @@ Neste ponto, a política do Intune é aplicada com êxito ao dispositivo.
     - `UpdateChannel`: uma chave dinâmica que é alterada, dependendo das configurações definidas.
     - `CDNBaseUrl`: defina quando o Office 365 é instalado no dispositivo.
 
-3. Examine o valor `UpdateChannel`. O valor informa com que frequência o Office é atualizado. [Gerencie o Office 365 ProPlus com Configuration Manager](https://docs.microsoft.com/sccm/sum/deploy-use/manage-office-365-proplus-updates#bkmk_channel) lista os valores e o que eles estão definidos como.
+3. Examine o valor `UpdateChannel`. O valor informa com que frequência o Office é atualizado. [Gerencie o Office 365 ProPlus com Configuration Manager](https://docs.microsoft.com/configmgr/sum/deploy-use/manage-office-365-proplus-updates#bkmk_channel) lista os valores e o que eles estão definidos como.
 
     Observando o exemplo a seguir, você verá `UpdateChannel` está definido como `http://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60`, o que é **mensal**:
 
@@ -173,7 +173,7 @@ Considere o uso dessas etapas para testar sua política antes de implantar a pol
 
 ## <a name="next-steps"></a>Próximos passos
 
-[Atualizar valores de canal para clientes do Office 365](https://docs.microsoft.com/sccm/sum/deploy-use/manage-office-365-proplus-updates#bkmk_channel)
+[Atualizar valores de canal para clientes do Office 365](https://docs.microsoft.com/configmgr/sum/deploy-use/manage-office-365-proplus-updates#bkmk_channel)
 
 [Visão geral do serviço de política de nuvem do Office para Office 365 ProPlus](https://docs.microsoft.com/deployoffice/overview-office-cloud-policy-service)
 

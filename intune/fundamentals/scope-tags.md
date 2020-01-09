@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4c2ec3ab62c6effd80d6a02d6ae9052b41fed23c
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: e1f81d26227bb206aa55ca495f4a4ee5e8ae9907
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207332"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75548117"
 ---
 # <a name="use-role-based-access-control-rbac-and-scope-tags-for-distributed-it"></a>Usar o controle de acesso baseado em função (RBAC) e marcas de escopo para distribuição de ti
 
@@ -39,11 +39,11 @@ Por exemplo, digamos que um administrador regional do Office de Seattle tenha a 
 ## <a name="default-scope-tag"></a>Marca de escopo padrão
 A marca de escopo padrão é automaticamente adicionada a todos os objetos não marcados que dão suporte a marcas de escopo.
 
-O recurso de marca de escopo padrão é semelhante ao recurso de escopos de segurança no System Center Configuration Manager. 
+O recurso de marca de escopo padrão é semelhante ao recurso de escopos de segurança no Microsoft Endpoint Configuration Manager. 
 
 ## <a name="to-create-a-scope-tag"></a>Para criar uma etiqueta de âmbito
 
-1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **administração de locatário** > **funções** > **escopo (marcas)** > **criar**.
+1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **administração de locatário** > **funções** > **escopo (marcas)**  > **criar**.
 
     ![Captura de tela da criação de uma marca de escopo.](./media/scope-tags/create-scope-tag.png)
 
@@ -57,11 +57,11 @@ O recurso de marca de escopo padrão é semelhante ao recurso de escopos de segu
 
 1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **administração de locatário** > **funções** > **todas as funções** > escolha uma função > **atribuições** > **atribuir**.
 2. Forneça um **nome de atribuição** e uma **Descrição**.
-3. Escolha **Membros (grupos)** > **Adicionar** > escolha os grupos que você deseja como parte dessa atribuição > **selecione** > **OK**. Os usuários nesse grupo terão permissões para gerenciar usuários/dispositivos no escopo (grupos).
+3. Escolha **Membros (grupos)**  > **Adicionar** > escolha os grupos que você deseja como parte dessa atribuição > **selecione** > **OK**. Os usuários nesse grupo terão permissões para gerenciar usuários/dispositivos no escopo (grupos).
 
     ![Captura de tela de selecionar grupos de membros.](./media/scope-tags/select-member-groups.png)
 
-4. Se você quiser gerenciar usuários/dispositivos em um conjunto específico de grupos, escolha **escopo (grupos)** > **grupos selecionados** > **selecione grupos para incluir** > escolha os grupos > **selecione** > **OK**. Todos os usuários/dispositivos nesse grupo serão gerenciados pelos administradores nos Membros (grupo).
+4. Se você quiser gerenciar usuários/dispositivos em um conjunto específico de grupos, escolha **escopo (grupos)**  > **grupos selecionados** > **selecione grupos para incluir** > escolha os grupos > **selecione** > **OK**. Todos os usuários/dispositivos nesse grupo serão gerenciados pelos administradores nos Membros (grupo).
 
     ![Captura de tela de selecionar grupos de escopo.](./media/scope-tags/select-scope-groups.png)
 
@@ -69,7 +69,7 @@ O recurso de marca de escopo padrão é semelhante ao recurso de escopos de segu
 
     ![Captura de tela de outras opções para selecionar grupos de escopo.](./media/scope-tags/scope-group-other-options.png)
     
-5. Escolha **escopo (marcas)** > **Adicionar** > escolha as marcas que você deseja adicionar a essa função > **selecione** > **OK**. Os usuários em Membros (grupos) terão acesso aos objetos do Intune que também têm a mesma marca de escopo.
+5. Escolha **escopo (marcas)**  > **Adicionar** > escolha as marcas que você deseja adicionar a essa função > **selecione** > **OK**. Os usuários em Membros (grupos) terão acesso aos objetos do Intune que também têm a mesma marca de escopo.
 
     ![Captura de tela de selecionar marcas de escopo.](./media/scope-tags/select-scope-tags.png)
 
@@ -81,7 +81,7 @@ Para objetos que dão suporte a marcas de escopo, marcas de escopo geralmente ap
 
 1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **dispositivos** > **perfis de configuração** > escolha um perfil.
 
-2. Escolha **propriedades** > **escopo (marcas)** > **Adicionar**.
+2. Escolha **propriedades** > **escopo (marcas)**  > **Adicionar**.
 
     ![Captura de tela de adicionar marcas de escopo.](./media/scope-tags/add-scope-tags.png)
 
