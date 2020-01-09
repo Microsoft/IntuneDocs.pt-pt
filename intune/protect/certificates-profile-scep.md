@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 321595a2ce8849b3d150b68f9dcc38dfda6ad940
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 88b7411095aee1b1d3a892ce4845812ceb1a9ac9
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74390291"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547071"
 ---
 # <a name="create-and-assign-scep-certificate-profiles-in-intune"></a>Criar e atribuir perfis de certificado SCEP no Intune
 
@@ -275,7 +275,7 @@ Atribua perfis de certificado SCEP da mesma maneira que [implanta perfis de disp
 
 - Para publicar um certificado num dispositivo rapidamente após a inscrição do mesmo, atribua o perfil de certificado a um grupo de utilizadores, em vez de atribuir a um grupo de dispositivos. Se atribuir a um grupo de dispositivos, será preciso um registo do dispositivo completo antes de o dispositivo receber políticas.
 
-- Se você usar o cogerenciamento para o Intune e o Configuration Manager, no Configuration Manager [defina o controle deslizante da carga de trabalho](https://docs.microsoft.com/sccm/comanage/how-to-switch-workloads) para a política de acesso ao recurso para o **Intune** ou o **Intune piloto**. Essa configuração permite que os clientes do Windows 10 iniciem o processo de solicitação do certificado.
+- Se você usar o cogerenciamento para o Intune e o Configuration Manager, no Configuration Manager [defina o controle deslizante de carga de trabalho](https://docs.microsoft.com/configmgr/comanage/how-to-switch-workloads) para políticas de acesso de recursos para o **Intune** ou o **Intune piloto**. Essa configuração permite que os clientes do Windows 10 iniciem o processo de solicitação do certificado.
 
 - Embora você crie e atribua o perfil de certificado confiável e o perfil de certificado SCEP separadamente, ambos devem ser atribuídos. Sem ambos instalados em um dispositivo, a política de certificado SCEP falha. Certifique-se de que todos os perfis de certificado raiz confiáveis também sejam implantados nos mesmos grupos que o perfil SCEP.
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cef30238a4470395ccf58cf4d0619db78dd85b5a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 3da8e89679f974c7d91cf19ae37365f75217d153
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74563469"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75548022"
 ---
 # <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>Usar scripts do PowerShell em dispositivos Windows 10 no Intune
 
@@ -64,9 +64,9 @@ A extensão de gerenciamento do Intune tem os seguintes pré-requisitos. Depois 
 
   - Dispositivos cogerenciados que usam o Configuration Manager e o Intune. Verifique se a carga de trabalho **aplicativos** está definida para o Intune **ou Intune** **piloto** . Consulte os seguintes artigos para obter orientação: 
   
-    - [O que é cogerenciamento](https://docs.microsoft.com/sccm/comanage/overview) 
-    - [Carga de trabalho de aplicativos cliente](https://docs.microsoft.com/sccm/comanage/workloads#client-apps)
-    - [Mudar as cargas de trabalho do Configuration Manager para o Intune](https://docs.microsoft.com/sccm/comanage/how-to-switch-workloads)
+    - [O que é cogerenciamento](https://docs.microsoft.com/configmgr/comanage/overview) 
+    - [Carga de trabalho de aplicativos cliente](https://docs.microsoft.com/configmgr/comanage/workloads#client-apps)
+    - [Como mudar Configuration Manager cargas de trabalho para o Intune](https://docs.microsoft.com/configmgr/comanage/how-to-switch-workloads)
   
 > [!TIP]
 > Verifique se os dispositivos [ingressaram](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network) no Azure AD. Os dispositivos que são [registrados](https://docs.microsoft.com/azure/active-directory/user-help/user-help-register-device-on-network) somente no Azure ad não receberão seus scripts.
@@ -134,7 +134,7 @@ Em **Scripts do PowerShell**, selecione o script que pretende monitorizar, selec
 
 ## <a name="intune-management-extension-logs"></a>Logs de extensão de gerenciamento do Intune
 
-Os logs de agente no computador cliente normalmente estão em `\ProgramData\Microsoft\IntuneManagementExtension\Logs`. Você pode usar [CMTrace. exe](https://docs.microsoft.com/sccm/core/support/tools) para exibir esses arquivos de log. 
+Os logs de agente no computador cliente normalmente estão em `\ProgramData\Microsoft\IntuneManagementExtension\Logs`. Você pode usar [CMTrace. exe](https://docs.microsoft.com/configmgr/core/support/cmtrace) para exibir esses arquivos de log.
 
 ![Captura de tela ou logs do agente cmtrace de exemplo em Microsoft Intune](./media/apps-win32-app-management/apps-win32-app-10.png)  
 
@@ -185,7 +185,7 @@ Para ver se o dispositivo está registrado automaticamente, você pode:
 - Para isolar problemas de script, você pode:
 
   - Examine a configuração de execução do PowerShell em seus dispositivos. Consulte a [política de execução do PowerShell](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-6) para obter diretrizes.
-  - Execute um script de exemplo usando a extensão de gerenciamento do Intune. Por exemplo, crie o diretório `C:\Scripts` e conceda a todos o controle total. Execute o seguintes script:
+  - Execute um script de exemplo usando a extensão de gerenciamento do Intune. Por exemplo, crie o diretório `C:\Scripts` e conceda a todos o controle total. Execute o seguinte script:
 
     ```powershell
     write-output "Script worked" | out-file c:\Scripts\output.txt

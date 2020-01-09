@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 60a87340c1a275b8fb878ef2f3891cca23fc9c85
-ms.sourcegitcommit: f5108039f0ade52e95ea3ac1da1aa16d02224af3
+ms.openlocfilehash: 0ca5d475f92cbe3298689273dcdf0da1644078b2
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "74946668"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547038"
 ---
 # <a name="windows-10-and-later-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Configurações do Windows 10 e posteriores para marcar dispositivos como em conformidade ou sem conformidade usando o Intune
 
@@ -102,9 +102,9 @@ Mais recursos:
 
 Aplica-se somente a dispositivos cogerenciados que executam o Windows 10 e posterior. Os dispositivos somente do Intune retornam um status não disponível.
 
-- **Exigir conformidade do dispositivo de System Center Configuration Manager**:  
+- **Exigir conformidade do dispositivo de Configuration Manager**:  
   - **Não configurado** (*padrão*)-o Intune não verifica se há configurações de Configuration Manager para fins de conformidade.
-  - **Require** -requer que todas as configurações (itens de configuração) em System Center Configuration Manager sejam compatíveis.  
+  - **Require** -requer que todas as configurações (itens de configuração) em Configuration Manager sejam compatíveis.  
 
     Por exemplo, pode exigir que todas as atualizações do software sejam instaladas nos dispositivos. No Configuration Manager, este requisito apresenta o estado "Instalado". Se algum programa no dispositivo estiver em um estado desconhecido, o dispositivo não será compatível no Intune.
 

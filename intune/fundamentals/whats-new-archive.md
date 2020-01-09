@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6a6b5585501851bb52db70ca222f8cfff7ad0597
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 8bc9dd73a9d710b529f757ab336a2ab79e3f6888
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73635471"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547700"
 ---
 # <a name="whats-new-in-the-microsoft-intune---previous-months"></a>Novidades do Microsoft Intune – meses anteriores
 
@@ -361,17 +361,17 @@ O Intune está impondo a configuração **ChangeAtNextAuth** em dispositivos Mac
 
 Qualquer política de senha nova ou existente é alterada pelo administrador solicitando os usuários finais novamente para atualizar sua senha.
 
-Aplica-se a  
+Aplica-se a:  
 macOS
 
 #### <a name="assign-scep-certificates-to-a-userless-macos-device---2340521------"></a>Atribuir certificados SCEP a um dispositivo macOS-não-usuário<!-- 2340521    -->
 Você pode atribuir certificados de protocolo SCEP (SCEP) usando atributos de dispositivo para dispositivos macOS, incluindo dispositivos sem afinidade de usuário, e associar o perfil de certificado a perfis Wi-Fi ou VPN. Isso expande o suporte que já temos para [atribuir certificados SCEP a dispositivos com e sem afinidade de usuário](../protect/certificates-profile-scep.md) que executa Windows, Ios e Android.  Esta atualização adiciona a opção para selecionar um tipo de certificado de *dispositivo* quando você configura um perfil de certificado SCEP para o MacOS.
 
-Aplica-se a
+Aplica-se a:
 - macOS
 
 #### <a name="intune-conditional-access-ui-update---2432313-----"></a>Atualização da interface do usuário de acesso condicional do Intune<!-- 2432313   -->
-Fizemos melhorias na interface do usuário para acesso condicional no console do Intune. Estas incluem:
+Fizemos melhorias na interface do usuário para acesso condicional no console do Intune. Estas atualizações incluem:
 - Substituída a folha de *acesso condicional* do Intune pela folha de Azure Active Directory. Isso garante que você terá acesso a toda a gama de configurações e configurações para [acesso condicional](../protect/conditional-access.md) (que permanece como uma tecnologia do Azure AD), no console do Intune. 
 - Renomeamos a folha de *acesso local* para *acesso ao Exchange*e realocamos a configuração do *conector de serviço do Exchange* para essa folha renomeada.  Essa alteração consolida o local em que você [configura e monitora detalhes relacionados ao Exchange Online e locais](../protect/exchange-connector-install.md).  
 
@@ -404,7 +404,7 @@ Para ver os recursos e as configurações que você pode restringir, consulte:
 - [configurações de restrição de dispositivo iOS](../configuration/device-restrictions-ios.md)
 - [configurações de restrição de dispositivo macOS](../configuration/device-restrictions-macos.md)
 
-Aplica-se a
+Aplica-se a:
 
 - iOS
 - macOS
@@ -414,7 +414,7 @@ Para alinhar com a terminologia do Android, o **quiosque** é alterado para **di
 
 Para ver as configurações disponíveis, vá para [configurações do dispositivo para permitir ou restringir recursos](../configuration/device-restrictions-android-for-work.md#dedicated-device-settings).
 
-Aplica-se a  
+Aplica-se a:  
 Android Enterprise
 
 #### <a name="safari-and-delaying-user-software-update-visibility-ios-settings-are-moving-in-the-intune-ui---3640850-3803313-----"></a>O Safari e atrasando as configurações do iOS de visibilidade da atualização de software do usuário estão se movendo na interface do usuário do Intune<!-- 3640850, 3803313   -->
@@ -442,7 +442,7 @@ O comportamento é o mesmo. Especificamente:
 
 Para obter uma lista das configurações, consulte [restrições de dispositivo IOS](../configuration/device-restrictions-ios.md#general).
 
-Aplica-se a
+Aplica-se a:
 - iOS
 
 
@@ -627,7 +627,7 @@ Esta atualização inclui uma nova definição de disco BitLocker para permitir 
 Para ver as configurações, vá para [configurações do Endpoint Protection para Windows 10](../protect/endpoint-protection-windows-10.md#windows-encryption).
 
 #### <a name="check-for-configuration-manager-compliance---2192052--eepublished----"></a>Verificar a conformidade de Configuration Manager<!-- 2192052  eepublished  -->
-Essa atualização inclui uma nova configuração de conformidade System Center Configuration Manager ( **políticas** de > de**conformidade do dispositivo** > **criar política** > **Windows 10 e posterior** > **conformidade Configuration Manager**). O Configuration Manager envia sinais de conformidade ao Intune. Usando essa configuração, você pode exigir que todos os sinais de Configuration Manager retornem "em conformidade".
+Essa atualização inclui uma nova configuração de conformidade Configuration Manager ( **políticas** de > de**conformidade do dispositivo** > **criar política** > **Windows 10 e posterior** > **conformidade Configuration Manager**). O Configuration Manager envia sinais de conformidade ao Intune. Usando essa configuração, você pode exigir que todos os sinais de Configuration Manager retornem "em conformidade".
 
 Por exemplo, pode exigir que todas as atualizações do software sejam instaladas nos dispositivos. No Configuration Manager, este requisito apresenta o estado "Instalado". Se algum programa no dispositivo estiver em um estado desconhecido, o dispositivo não será compatível no Intune.
 
@@ -768,7 +768,7 @@ Use as políticas de proteção de aplicativo para proteger dados corporativos e
 ### <a name="device-configuration"></a>Configuração do dispositivo
 
 #### <a name="support-for-ios-12-oauth-in-ios-email-profiles--2155106---"></a>Suporte para OAuth do iOS 12 em perfis de email do iOS<!--2155106 -->
-Os perfis de e-mail iOS do Intune suportam o Open Authorization (OAuth) do iOS 12. Para ver esta funcionalidade, crie um novo perfil (**Configuração do Dispositivo** > **Perfis** > **Criar perfil**  >  **iOS** para a plataforma > **E-mail** para o tipo de perfil) ou atualize um perfil de e-mail iOS existente. Se ativar o OAuth num perfil que já foi implementado para utilizadores, será pedido aos utilizadores que autentiquem e transfiram novamente o respetivo e-mail.
+Os perfis de e-mail iOS do Intune suportam o Open Authorization (OAuth) do iOS 12. Para ver esta funcionalidade, crie um novo perfil (**Configuração do Dispositivo** > **Perfis** > **Criar perfil** > **iOS** para a plataforma > **E-mail** para o tipo de perfil) ou atualize um perfil de e-mail iOS existente. Se ativar o OAuth num perfil que já foi implementado para utilizadores, será pedido aos utilizadores que autentiquem e transfiram novamente o respetivo e-mail.
 
 Pode obter mais informações sobre como utilizar o OAuth num perfil de e-mail em [iOS email profiles](../configuration/email-settings-ios.md) (Perfis de e-mail iOS).
 
@@ -808,7 +808,7 @@ Para saber mais sobre essas configurações, consulte Configurações de restri�
 
 #### <a name="autopilot-support-for-hybrid-azure-active-directory-joined-devices-preview---1048100--"></a>Suporte ao piloto automático para dispositivos ingressados no Azure Active Directory híbrido (versão prévia)<!-- 1048100-->
 Agora pode configurar dispositivos associados ao Azure Active Directory híbrido com o Autopilot. Os dispositivos têm de ser associados à rede da sua organização para utilizar a funcionalidade Autopilot híbrida. Para obter mais informações, veja [Implementar dispositivos associados ao Azure Active Directory híbrido com o Intune e o Windows Autopilot](../enrollment/windows-autopilot-hybrid.md).
-Esta funcionalidade será implementada para a base de utilizadores nos próximos dias. Assim, poderá não conseguir seguir estes passos até que a mesma seja implementada na sua conta.
+Esta funcionalidade será implementada na base de utilizadores nos próximos dias. Assim, poderá não conseguir seguir estes passos até que a mesma seja implementada na sua conta.
 
 #### <a name="select-apps-tracked-on-the-enrollment-status-page---2531007---"></a>Selecionar aplicativos acompanhados na página de status de registro<!-- 2531007 -->
 Você pode escolher quais aplicativos são acompanhados na página status do registro. Até que esses aplicativos sejam instalados, o usuário não poderá usar o dispositivo. Para obter mais informações, consulte [Configurar uma página de status de registro](../enrollment/windows-enrollment-status.md).
@@ -1007,7 +1007,7 @@ Pode aplicar um perfil do Autopilot a dispositivos com o Windows 10 inscritos e 
 Agora, pode [criar e atribuir](../enrollment/windows-enrollment-status.md) múltiplos perfis de Página de Estado de Inscrição a grupos do Azure AD.
 
 #### <a name="migration-from-device-enrollment-program-to-apple-business-manager-in-intune--2748613--"></a>Migração de Programa de registro de dispositivos para o Apple Business Manager no Intune<!--2748613-->
-O Apple Business Manager (ABM) funciona no Intune, pelo que pode atualizar versão do software da sua conta do Programa de Registo de Aparelho (DEP) para o ABM. No Intune, o processo é o mesmo. Para atualizar sua conta da Apple de DEP para ABM, vá para [https://support.apple.com/HT208817]( https://support.apple.com/HT208817).
+O Apple Business Manager (ABM) funciona no Intune, pelo que pode atualizar versão do software da sua conta do Programa de Registo de Aparelho (DEP) para o ABM. No Intune, o processo é o mesmo. Para atualizar a versão do software da sua conta Apple do DEP para o ABM, aceda a [https://support.apple.com/HT208817]( https://support.apple.com/HT208817).
 
 #### <a name="alert-and-enrollment-status-tabs-on-the-device-enrollment-overview-page--2748656--"></a>Guias de status de alerta e registro na página Visão geral do registro do dispositivo<!--2748656-->
 Os alertas e os erros ao nível das inscrições aparecem agora em separadores diferentes da página Descrição geral de inscrições de dispositivos.
@@ -1038,8 +1038,8 @@ As políticas de proteção de aplicações do Intune permitem-lhe configurar v�
 A funcionalidade das definições não muda, mas será mais fácil encontrá-las quando trabalhar no fluxo de autoria de política.
 
 #### <a name="restricts-apps-and-block-access-to-company-resources-on-android-devices---2451462----"></a>Restringe os aplicativos e bloqueie o acesso aos recursos da empresa em dispositivos Android<!-- 2451462  -->  
-Em **Conformidade do dispositivo** > **Políticas** > **Criar política** > **Android**  > **Segurança do Sistema**, há uma nova definição na secção *Segurança do Dispositivo* chamada **Aplicações restritas**. A definição **Aplicações restritas** utiliza uma política de conformidade para bloquear o acesso aos recursos da empresa, caso determinadas aplicações estejam instaladas no dispositivo. O dispositivo é considerado não compatíveis até que as aplicações restritas sejam removidas do dispositivo.
-Aplica-se a 
+Em **Conformidade do dispositivo** > **Políticas** > **Criar política** > **Android** > **Segurança do Sistema**, há uma nova definição na secção *Segurança do Dispositivo* chamada **Aplicações restritas**. A definição **Aplicações restritas** utiliza uma política de conformidade para bloquear o acesso aos recursos da empresa, caso determinadas aplicações estejam instaladas no dispositivo. O dispositivo é considerado não compatíveis até que as aplicações restritas sejam removidas do dispositivo.
+Aplica-se a: 
 - Android
 
 ### <a name="intune-apps"></a>Aplicações do Intune
@@ -1416,12 +1416,12 @@ A página de imagem corporativa do Portal da Empresa tem um novo esquema, mensag
 Você pode controlar o acesso de dispositivos móveis a recursos corporativos usando o acesso condicional com base na avaliação de risco realizada pelo Pradeo, uma solução de defesa contra ameaças móveis que se integra ao Microsoft Intune.
 
 #### <a name="use-fips-mode-with-the-ndes-certificate-connector---1333688---"></a>Utilizar o modo FIPS com o conector do Certificado NDES<!-- 1333688 -->
-Ao instalar o conector do Certificado NDES num computador com o modo FIPS (Federal Information Processing Standard) ativado, a emissão e a revogação de certificados não funcionaram como esperado. Com esta atualização, é incluído suporte para FIPS com o conector do Certificado NDES. 
+Ao instalar o conector do Certificado NDES num computador com o modo FIPS (Federal Information Processing Standard) ativado, a emissão e a revogação de certificados não funcionaram como esperado. Com esta atualização, é incluído suporte para o modo FIPS com o conector do Certificado NDES. 
 
 Esta atualização também inclui:
 
-- O conector do Certificado NDES precisa do .NET 4.5 Framework, que é incluído automaticamente com o Windows Server 2016 e o Windows Server 2012 R2. Anteriormente, a versão mínima necessária era o .NET 3.5 Framework.
-- É incluído suporte para o TLS 1.2 com o conector do Certificado NDES. Assim, se o servidor com o Certificate Connector do NDES instalado suportar o TLS 1.2, será utilizado o TLS 1.2. Se o servidor não suportar o TLS 1.2, será utilizado o TLS 1.1. Atualmente, é utilizado o TLS 1.1 para a autenticação entre os dispositivos e o servidor.
+- O conector do Certificado NDES precisa do .NET 4.5 Framework, incluído automaticamente com o Windows Server 2016 e o Windows Server 2012 R2. Anteriormente, a versão mínima necessária era o .NET 3.5 Framework.
+- É incluído suporte para o TLS 1.2 com o Certificate Connector do NDES. Assim, se o servidor com o Certificate Connector do NDES instalado suportar o TLS 1.2, será utilizado o TLS 1.2. Se o servidor não suportar o TLS 1.2, será utilizado o TLS 1.1. Atualmente, é utilizado o TLS 1.1 para a autenticação entre os dispositivos e o servidor.
 
 Para obter mais informações, veja [Configurar e utilizar certificados SCEP](../protect/certificates-scep-configure.md) e [Configurar e utilizar certificados PKCS](../protect/certficates-pfx-configure.md).
 
@@ -1588,7 +1588,7 @@ Com esta atualização, existe uma nova definição em **Android Enterprise** > 
 
 Quando a opção está ativada (não configurada), os detalhes do autor da chamada do contacto de trabalho são apresentados no perfil pessoal. Quando a opção está bloqueada, o número do autor da chamada do contacto de trabalho não é apresentado no perfil pessoal. 
 
-Aplica-se a: dispositivos de perfil de trabalho Android no Android OS v6.0 e mais recentes
+Aplica-se a: dispositivos de perfil de trabalho Android em Android OS v6.0 e mais recentes
 
 #### <a name="new-windows-defender-credential-guard-settings-added-to-endpoint-protection-settings--1102252-----from-1802-and-1804--"></a>Foram adicionadas novas definições do Windows Defender Credential Guard às definições de proteção de ponto final<!--1102252 --><!--from 1802 and 1804-->
 
@@ -1950,7 +1950,7 @@ No painel **Resolução de problemas**, pode agora ver as [restrições de inscr
 
 O Intune agora dá-lhe a opção de autenticar dispositivos através da aplicação Portal da Empresa para os seguintes métodos de inscrição:
 
-- Programa de Inscrição de Dispositivos da Apple
+- Programa de Inscrição de Dispositivos Apple
 - Gestor Escolar da Apple
 - Inscrição no Apple Configurator
 
@@ -2334,7 +2334,7 @@ Estão agora disponíveis novos processos e ferramentas para migrar utilizadores
 - Mover um subconjunto de utilizadores para o Intune no portal do Azure enquanto mantém os restantes na MDM híbrida
 - Migrar dispositivos para o Intune no portal do Azure sem precisar de voltar a inscrevê-los
 
-Para obter detalhes, veja [Migrate hybrid MDM users and devices to Intune standalone (Migrar os dispositivos e utilizadores da MDM híbrida para o Intune autónomo)](https://docs.microsoft.com/sccm/mdm/deploy-use/migrate-hybridmdm-to-intunesa).
+Para obter detalhes, veja [Migrate hybrid MDM users and devices to Intune standalone (Migrar os dispositivos e utilizadores da MDM híbrida para o Intune autónomo)](https://docs.microsoft.com/configmgr/mdm/deploy-use/migrate-hybridmdm-to-intunesa).
 
 ### <a name="on-premises-exchange-connector-high-availability-support----676614---"></a>Suporte de elevada disponibilidade do Exchange Connector no local <!-- 676614 -->
 Depois que o Exchange Connector cria uma conexão com o Exchange usando o servidor de acesso para cliente (CAS) especificado, o conector agora tem a capacidade de descobrir outros CASs. Se a CAS principal ficar indisponível, o conector realizará a ativação pós-falha de outra CAS, se disponível, até a CAS principal ficar disponível. Para obter mais informações, veja [Suporte de elevada disponibilidade do conector do Exchange no local](../protect/exchange-connector-install.md#on-premises-intune-exchange-connector-high-availability-support).
@@ -2891,7 +2891,7 @@ Adicionámos uma página dedicada ao site do Portal da Empresa que permite aos u
 ### <a name="additional-help-desk-troubleshooting-details-----applies-to-1263399-1326964-1341642----"></a>Detalhes adicionais sobre a resolução de problemas do suporte técnico<!---  Applies to 1263399, 1326964, 1341642 --->
 O Intune atualizou o ecrã de resolução de problemas e acrescentou mais informações para a equipa de administradores e suporte técnico. Agora pode ver uma tabela **Atribuições**, que resume todas as atribuições do utilizador com base na associação a grupos. Esta lista inclui:
 - Aplicações móveis
-- Políticas de conformidade
+- Compliance políticas
 - Perfis de configuração
 
 Para além disso, a tabela **Dispositivos** agora inclui as colunas **Tipo de associação Azure AD** e **Em conformidade com o Azure AD**. Para obter mais informações, veja [Ajudar os utilizadores na resolução de problemas](../help-desk-operators.md).

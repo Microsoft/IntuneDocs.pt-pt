@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bb9aa6349a88f226c063703d6cb035b3c89636fd
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: feee58d926a25e9132204798ba93d10a7c90f41e
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72503247"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547828"
 ---
 # <a name="what-is-device-enrollment"></a>O que é a inscrição de dispositivos?
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -60,7 +60,7 @@ Por predefinição, os dispositivos para todas as plataformas têm permissão pa
 |**Inscrição automática** | Não |Sim |Não | [Mais informações](windows-enroll.md#enable-windows-10-automatic-enrollment)|
 |**Autopilot** |Sim |Sim |Não | [Mais informações](enrollment-autopilot.md)
 |**Inscrição em massa** |Não |Não |Não | [Mais informações](windows-bulk-enroll.md) |
-|**Cogestão** |Não |Sim |Não | [Mais informações](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview)
+|**Cogestão** |Não |Sim |Não | [Mais informações](https://docs.microsoft.com/configmgr/core/clients/manage/co-management-overview)
 |**GPO** |Não |Sim |Não | [Mais informações](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)
 
 ## <a name="android-enrollment-methods"></a>Métodos de inscrição do Android
@@ -89,7 +89,7 @@ Os [dispositivos pertencentes à empresa (COD)](corporate-identifiers-add.md) in
 ### <a name="device-enrollment-manager"></a>Gestor de inscrição de dispositivos
 A gestão de inscrição de dispositivos (DEM) é uma conta especial do utilizador que serve para inscrever e gerir múltiplos dispositivos pertencentes à empresa. Os gestores podem instalar o Portal da Empresa e inscrever muitos dispositivos sem utilizador. Estes tipos de dispositivo são ideais, por exemplo, para aplicações de utilitários ou ponto de venda, mas não para utilizadores que necessitem de aceder a recursos de e-mail ou da empresa. Saiba mais sobre o [DEM](device-enrollment-manager-enroll.md).
 
-### <a name="apple-device-enrollment-program"></a>Programa de Inscrição de Dispositivos da Apple
+### <a name="apple-device-enrollment-program"></a>Programa de Inscrição de Dispositivos Apple
 A gestão do Programa de Registo de Aparelho (DEP) da Apple permite-lhe criar e implementar a política “através do ar” em dispositivos iOS e macOS comprados e geridos com DEP. O dispositivo é inscrito quando os utilizadores ligarem o dispositivo pela primeira vez e executarem o Assistente de Configuração. Este método suporta o modo supervisionado do iOS, que permite que um dispositivo seja configurado com funcionalidades específicas.
 
 Saiba mais sobre a inscrição do DEP para iOS:

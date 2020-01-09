@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 79e1ba2441baa6773632c27f204bef01b015b990
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 48ad9ffe32dc7493195ec161e070734776381427
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74832732"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547796"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Solucionar problemas de registro de dispositivo no Microsoft Intune
 
@@ -113,7 +113,7 @@ Para evitar atingir limites de dispositivos, certifique-se de que remove os regi
 
     4. Ative novamente o DirSync e verifique se o utilizador está agora sincronizado corretamente.
 
-3. Num cenário em que esteja a utilizar o System Center Configuration Manager com o Intune, verifique se o utilizador tem um ID de Utilizador de Cloud válido:
+3. Em um cenário em que você está usando Configuration Manager com o Intune, verifique se o usuário tem uma ID de usuário de nuvem válida:
 
     1. Abra o SQL Management Studio.
 
@@ -332,7 +332,7 @@ Para obter mais informações, veja o artigo [Práticas recomendadas para proteg
 
 5. Confirme que o Safari para iOS é o browser predefinido e que os cookies estão ativados.
 
-### <a name="enrolled-ios-device-doesnt-appear-in-console-when-using-system-center-configuration-manager-with-intune"></a>Os dispositivos iOS inscritos não aparecem na consola ao utilizar o System Center Configuration Manager com o Intune
+### <a name="enrolled-ios-device-doesnt-appear-in-console-when-using-configuration-manager-with-intune"></a>O dispositivo iOS registrado não aparece no console do ao usar o Configuration Manager com o Intune
 **Problema:** o utilizador inscreve o dispositivo iOS, mas o mesmo não é apresentado na consola de administração do Configuration Manager. O dispositivo não indica que foi inscrito. Causas possíveis:
 
 - O Conector do Microsoft Intune no seu site do Configuration Manager não está a comunicar com o serviço do Intune.
@@ -419,7 +419,7 @@ Depois de apagar os dispositivos bloqueados, pode indicar aos utilizadores que d
     3. Localize o dispositivo com o problema de inscrição. Procure pelo nome do dispositivo ou Endereço MAC/HW para restringir os seus resultados.
     4. Selecione o dispositivo > **Eliminar**. Elimine todas as outras entradas associadas ao dispositivo.  
 
-## <a name="issues-when-using-system-center-configuration-manager-with-intune"></a>Problemas quando utiliza o System Center Configuration Manager com o Intune
+## <a name="issues-when-using-configuration-manager-with-intune"></a>Problemas ao usar o Configuration Manager com o Intune
 
 ### <a name="mobile-devices-disappear"></a>Os dispositivos móveis desaparecem
 
@@ -478,7 +478,7 @@ O certificado de conta da conta anterior ainda está presente no computador.
 1. Tente voltar a inscrever.
 
     > [!IMPORTANT]
-    > Esta secção, método ou tarefa contém passos que indicam como modificar o registo. No entanto, poderão ocorrer problemas graves se modificar o registo incorretamente. Por isso, certifique-se de que segue estes passos cuidadosamente. Para maior proteção, faça uma cópia de segurança do registo antes de o modificar. Em seguida, pode restaurar o registo se ocorrer um problema.
+    > Esta secção, método ou tarefa contém passos que indicam como modificar o registo. Poderão, no entanto, ocorrer problemas graves se modificar o registo incorretamente. Por isso, certifique-se de que segue estes passos cuidadosamente. Para proteção adicional, faça uma cópia de segurança do registo antes de o modificar. Em seguida, poderá restaurar o registo se ocorrer um problema.
     > Para obter mais informações sobre como criar cópias de segurança e restaurar o registo, leia o artigo [Como fazer cópias de segurança e restaurar o registo no Windows](https://support.microsoft.com/kb/322756)
 
 ## <a name="general-enrollment-error-codes"></a>Códigos de erros de inscrição gerais

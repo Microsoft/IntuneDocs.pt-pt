@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 24f15cb179dfc2b12b642f5f196d04dce58d4377
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 5c18f3e8fb14d8592789b39856ec420790fad286
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505213"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547543"
 ---
 # <a name="create-a-design"></a>Criar uma estrutura
 
@@ -84,7 +84,7 @@ O seu ambiente atual pode influenciar decisões de estrutura e deve ser document
 
   - Como está a gerir o seu ambiente de PC e servidor?
 
-  - Está a utilizar o System Center Configuration Manager? Está a utilizar uma plataforma de gestão de sistema de terceiros?
+  - Você está usando o Microsoft Endpoint Configuration Manager? Está a utilizar uma plataforma de gestão de sistema de terceiros?
 
 - **Solução VPN**
 
@@ -101,7 +101,7 @@ Ao registar o atual ambiente MDM, certifique-se de que toma nota de todos os pro
 | **SharePoint** | SharePoint no local | Não existem planos para migrar para o SharePoint Online |  
 | **MDM atual** | Exchange ActiveSync |  |
 | **Solução de certificado** | Serviços de Certificado do Microsoft Server 2012 R2, AD | Utilizar apenas PKI para Servidores de Sites |
-| **Gestão de Sistema** | System Center Configuration Manager CB 1606 | Quer investigar uma solução híbrida do Intune |
+| **Gestão de Sistema** | Configuration Manager CB 1606 | Quer investigar uma solução híbrida do Intune |
 | **Solução VPN** | Cisco AnyConnect |  |
 
 
@@ -109,7 +109,7 @@ Pode [transferir um modelo da tabela acima](https://gallery.technet.microsoft.co
 
 ## <a name="choose-an-intune-deployment-option"></a>Selecionar uma opção de implementação do Intune
 
-O Intune oferece duas opções de implementação: autónoma e híbrida. Autônomo refere-se ao serviço do Intune em execução na nuvem, híbrido refere-se à integração do Intune com o System Center Configuration Manager. Este guia destina-se principalmente para a utilização da opção autónoma. [Escolher a opção que melhor se adapta aos seus requisitos empresariais](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management).
+O Intune oferece duas opções de implementação: autónoma e híbrida. Autônomo refere-se ao serviço do Intune em execução na nuvem, híbrido refere-se à integração do Intune com o Configuration Manager. Este guia destina-se principalmente para a utilização da opção autónoma. [Escolher a opção que melhor se adapta aos seus requisitos empresariais](https://docs.microsoft.com/configmgr/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management).
 
 > [!Important]
 >A inclusão de novos clientes da MDM híbrida foi preterida. Para obter mais informações, veja a mensagem de blogue [Move from Hybrid Mobile Device Management to Intune on Azure](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150) (Mudar da Gestão de Dispositivos Móveis Híbrida para o Intune no Azure).
@@ -163,7 +163,7 @@ Recomendamos que crie todos os grupos no Active Directory no local e, em seguida
 - [Criar grupos de utilizadores e de dispositivos](groups-add.md).
 
 ### <a name="public-key-infrastructure-pki"></a>Infraestrutura de chaves públicas (PKI)
-A infraestrutura de chaves públicas fornece certificados para dispositivos ou utilizadores de forma a autenticar a um serviço com segurança. O Intune suporta uma infraestrutura PKI da Microsoft. Os certificados de dispositivos e utilizadores podem ser emitidos para um dispositivo móvel para cumprir requisitos de autenticação baseados em certificados. Antes de utilizar certificados, tem de determinar se precisa dos mesmos, se a infraestrutura de rede suporta a autenticação baseada em certificados e se os certificados estão a ser utilizados no ambiente existente.
+A infraestrutura de chaves públicas fornece certificados para dispositivos ou utilizadores de forma a autenticar a um serviço com segurança. O Intune suporta uma infraestrutura PKI do Microsoft. Os certificados de dispositivos e utilizadores podem ser emitidos para um dispositivo móvel para cumprir requisitos de autenticação baseados em certificados. Antes de utilizar certificados, tem de determinar se precisa dos mesmos, se a infraestrutura de rede suporta a autenticação baseada em certificados e se os certificados estão a ser utilizados no ambiente existente.
 
 Se estiver a planear utilizar certificados com VPN, Wi-Fi ou perfis de e-mail com o Intune, certifique-se de que tem uma [infraestrutura PKI suportada no local](../protect/certificates-configure.md), pronta para criar e implementar perfis de certificado.
 
@@ -376,14 +376,14 @@ Uma vez que as aplicações podem ser implementadas para utilizadores e disposit
 
 As políticas de proteção de aplicações minimizam a perda de dados ao definir como a aplicação gere os dados empresariais. O Intune suporta políticas de proteção de aplicações para qualquer aplicação criada para funcionar com a gestão de aplicações móveis. Ao estruturar a política de proteção de aplicações, tem de decidir que restrições pretende atribuir aos dados empresariais numa determinada aplicação. Recomendamos que reveja como funcionam as [políticas de proteção de aplicações](../apps/app-protection-policy.md). Segue-se um exemplo de como documentar as aplicações existentes e que proteção é necessária.
 
-| **Application** | **Objetivo** | **Plataformas** | **Caso de utilização** | **Política de proteção de aplicações** |
+| **Aplicação** | **Objetivo** | **Plataformas** | **Caso de utilização** | **Política de proteção de aplicações** |
 |:---:|:---:|:---:|:---:|:---:|
 | Outlook Mobile  | Disponível | iOS | Empresarial – Executivos | Não pode ser desbloqueado por jailbreak, encriptar ficheiros |                                                         
 | Word | Disponível | iOS, Android – Samsung Knox, não Knox, Windows 10 Mobile | Empresarial, BYOD | Não pode ser desbloqueado por jailbreak, encriptar ficheiros |                                                         
 
 
 Pode [transferir um modelo da tabela acima](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) para identificar as suas necessidades de políticas de proteção de aplicações.
-#### <a name="compliance-policies"></a>Políticas de conformidade
+#### <a name="compliance-policies"></a>Compliance políticas
 
 As políticas de conformidade determinam se um dispositivo cumpre determinados requisitos. O Intune utiliza políticas de conformidade para determinar se um dispositivo é considerado como estando ou não em conformidade. O estado de conformidade pode depois ser utilizado para restringir ou permitir o acesso a recursos da empresa. Se o acesso condicional for necessário, recomendamos que você projete uma [política de conformidade do dispositivo](../protect/device-compliance-get-started.md).
 

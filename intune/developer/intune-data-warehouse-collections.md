@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 42d07f02e76669c735d09b5d7843a4102dd0f835
-ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
+ms.openlocfilehash: 7ceaf5c62f34cc248813a064de9e8e3710797779
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74899234"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547929"
 ---
 # <a name="intune-data-warehouse-collections"></a>Coleções do Armazém de Dados do Intune
 
@@ -36,9 +36,9 @@ A entidade **appRevision** apresenta uma lista de todas as versões das aplicaç
 |:--------------------------:|:-------------------------------------------------------------------------------------:|:------------------------------------:|
 | AppKey                     | Identificador exclusivo da Aplicação.                                                         | 123                                  |
 | ApplicationID              | Identificador exclusivo da Aplicação – semelhante à AppKey, mas esta é uma chave natural.        | b66bc706-ffff-7437-0340-032819502773 |
-| Revision                   | A versão como mencionada pelo administrador durante o carregamento do binário.                   | 2                                    |
+| Revisão                   | A versão como mencionada pelo administrador durante o carregamento do binário.                   | 2                                    |
 | Title                      | Nome da aplicação.                                                                     | Excel                                |
-| Publisher                  | Publicador da aplicação.                                                                 | Microsoft                            |
+| Fabricante                  | Publicador da aplicação.                                                                 | Microsoft                            |
 | UploadState                | Estado de carregamento da aplicação.                                                              | 1                                    |
 | AppTypeKey                 | Referência ao AppType descrito na secção seguinte.                            | 1                                    |
 | VppProgramTypeKey          | Referência ao VppProgramType descrito abaixo.                                        | 30876                                |
@@ -85,7 +85,7 @@ A tabela seguinte apresenta um resumo dos estados de atribuição de políticas 
 | DateKey       | Chave da data em que o resumo da política de conformidade foi criado.                                                                                                                   | 20161204 |
 | Unknown       | Número de dispositivos que estão offline ou que não conseguiram comunicar com o Intune ou o Azure AD por outros motivos.                                                                           | 5        |
 | NotApplicable | Número de dispositivos em que as políticas de conformidade visadas pelo administrador não são aplicáveis.                                                                                     | 201      |
-| Compatível     | Número de dispositivos que aplicaram com êxito uma ou mais políticas de conformidade do dispositivo visadas pelo administrador.                                                                        | 4083     |
+| conformidade     | Número de dispositivos que aplicaram com êxito uma ou mais políticas de conformidade do dispositivo visadas pelo administrador.                                                                        | 4083     |
 | InGracePeriod | Número de dispositivos que não estão em conformidade, embora se encontrem no período de tolerância definido pelo administrador.                                                                                  | 57       |
 | NonCompliant  | Número de dispositivos que não conseguiram aplicar uma ou mais definições de políticas de conformidade do dispositivo visadas pelo administrador ou nos quais o utilizador ainda não está a cumprir as políticas visadas pelo administrador. | 43       |
 |    Error      |    Número de dispositivos que não conseguiram comunicar com o Intune ou o Azure AD e devolveram uma mensagem de erro.                                                                          |    3     |
@@ -100,7 +100,7 @@ A tabela seguinte apresenta um resumo dos estados de atribuição de políticas 
 | PolicyPlatformKey | Chave do tipo de plataforma da política de conformidade para a qual o resumo foi criado.                                                                                            | 5        |
 | Unknown           | Número de dispositivos que estão offline ou que não conseguiram comunicar com o Intune ou o Azure AD por outros motivos.                                                                           | 13       |
 | NotApplicable     | Número de dispositivos em que as políticas de conformidade visadas pelo administrador não são aplicáveis.                                                                                     | 3        |
-| Compatível         | Número de dispositivos que aplicaram com êxito uma ou mais políticas de conformidade do dispositivo visadas pelo administrador.                                                                        | 45       |
+| conformidade         | Número de dispositivos que aplicaram com êxito uma ou mais políticas de conformidade do dispositivo visadas pelo administrador.                                                                        | 45       |
 | InGracePeriod     | Número de dispositivos que não estão em conformidade, embora se encontrem no período de tolerância definido pelo administrador.                                                                                  | 3        |
 | NonCompliant      | Número de dispositivos que não conseguiram aplicar uma ou mais definições de políticas de conformidade do dispositivo visadas pelo administrador ou nos quais o utilizador ainda não está a cumprir as políticas visadas pelo administrador. | 7        |
 | Error             | Número de dispositivos que não conseguiram comunicar com o Intune ou o Azure AD e devolveram uma mensagem de erro.                                                                             | 3        |
@@ -117,8 +117,8 @@ A tabela seguinte apresenta um resumo dos estados de atribuição de políticas 
 |  complianceStatus  |                       Description                      |
 |:------------------:|:------------------------------------------------------:|
 |    Unknown         |    Desconhecida.                                                                        |
-|    Compatível       |    Compatível.                                                                      |
-|    Não conforme    |       O dispositivo não está em conformidade e está bloqueado a partir de recursos da empresa.             |
+|    conformidade       |    Compatível.                                                                      |
+|    Não compatível    |       O dispositivo não está em conformidade e está bloqueado a partir de recursos da empresa.             |
 |    Conflito        |    Está em conflito com outras regras.                                                      |
 |    Error           |       Error.                                                                       |
 |    ConfigManager   |    Gerido pelo Config Manager.                                                      |
@@ -163,7 +163,7 @@ A entidade **DeviceConfigurationProfileDeviceActivity** apresenta uma lista do n
 |:---------:|:---------------------------------------------------------------------------------------------:|:--------:|
 | DateKey   | Data-chave de quando a entrada do Perfil de Configuração do Dispositivo foi registada no armazém de dados. | 20160703 |
 | Pending   | Número de Dispositivos exclusivos no estado pendente.                                                    | 123      |
-| Succeeded | Número de Dispositivos exclusivos no estado com êxito.                                                    | 12       |
+| Bem sucedida | Número de Dispositivos exclusivos no estado com êxito.                                                    | 12       |
 | Error     | Número de Dispositivos exclusivos no estado com erros.                                                      | 10       |
 | Failed    | Número de Dispositivos exclusivos no estado com falhas.                                                     | 2        |
 
@@ -174,7 +174,7 @@ A entidade **DeviceConfigurationProfileUserActivity** apresenta uma lista do nú
 |------------|----------------------------------------------------------------------------------------------|-----------|
 | DateKey  | Data-chave de quando a entrada do Perfil de Configuração do Dispositivo foi registada no armazém de dados.  | 20160703  |
 | Pending  | Número de Utilizadores exclusivos no estado pendente.  | 123  |
-| Succeeded  | Número de Utilizadores exclusivos no estado com êxito.  | 12  |
+| Bem sucedida  | Número de Utilizadores exclusivos no estado com êxito.  | 12  |
 | Error  | Número de Utilizadores exclusivos no estado com erros.  | 10  |
 | Failed  | Número de Utilizadores exclusivos no estado com falhas.  | 2  |
 
@@ -418,7 +418,7 @@ O **IntuneManagementExtensionHealthState** apresenta todos os estados de funcion
 |      Propriedade     |                   Description                  | Exemplo |
 |:-----------------:|:----------------------------------------------:|:-------:|
 | ExtensionStateKey | Identificador exclusivo do estado de funcionamento.           | 2       |
-| ExtensionState    | Estado de funcionamento de uma IntuneManagementExtension. | Bom estado de funcionamento |
+| ExtensionState    | Estado de funcionamento de uma IntuneManagementExtension. | Healthy |
 
 ## <a name="intunemanagementextensionversions"></a>intuneManagementExtensionVersions
 A entidade **IntuneManagementExtensionVersion** apresenta todas as versões utilizadas pela **IntuneManagementExtension**.
@@ -525,7 +525,7 @@ A entidade **managementAgentType** representa os agentes utilizados para gerir u
 | 3                     | EasMdm                            | O dispositivo é gerido através do Exchange Active Sync e de um agente MDM        |
 | 4                     | IntuneClient                      | O dispositivo é gerido pelo agente de PC do Intune                               |
 | 5                     | EasIntuneClient                   | O dispositivo é gerido através do Exchange Active Sync e do agente de PC do Intune |
-| 8                     | ConfigManagerClient               | O dispositivo é gerido pelo agente do System Center Configuration Manager     |
+| 8                     | ConfigManagerClient               | O dispositivo é gerenciado pelo agente de Configuration Manager     |
 | 10                    | ConfigurationManagerClientMdm     | O dispositivo é gerido pelo Configuration Manager e MDM.                    |
 | 11                    | ConfigurationManagerCLientMdmEas  | O dispositivo é gerenciado por Configuration Manager, MDM e Exchange Active Sync.               |
 | 16                    | Unknown                           | Tipo de agente de gestão desconhecido                                              |
@@ -576,8 +576,8 @@ Representa um estado de instalação da aplicação móvel para um determinado t
 | AppKey             | A chave da aplicação móvel que serve para identificar uma instância de AppRevision.                                                          |
 | DeviceTypeKey      | A chave do Tipo de Dispositivo associado à Aplicação Móvel.                                                              |
 | AppInstallStateKey | A chave do estado de instalação da aplicação que serve para identificar uma instância de MobileAppInstallState.                                         |
-| Código de erro          | O código de erro devolvido pelo instalador de aplicações, pela plataforma móvel ou pelo serviço relativo à instalação da aplicação. |
-| Count              | Contagem total.                                                                                                                  |
+| CódigoDoErro          | O código de erro devolvido pelo instalador de aplicações, pela plataforma móvel ou pelo serviço relativo à instalação da aplicação. |
+| Contagem              | Contagem total.                                                                                                                  |
 
 ## <a name="ownertypes"></a>ownerTypes
 A entidade **ownerType** indica se um dispositivo é empresarial, pessoal ou desconhecido.
@@ -612,7 +612,7 @@ A tabela seguinte mostra o número de dispositivos no estado com êxito, pendent
 |:---------:|:-----------------------------------------------------------------------------------------------:|:---------------------:|
 | DateKey   | Data-chave de quando a entrada do Perfil de Configuração do Dispositivo foi registada no armazém de dados. | 20160703              |
 | Pending   | Número de Dispositivos exclusivos no estado pendente.                                                    | 123                   |
-| Succeeded | Número de Dispositivos exclusivos no estado com êxito.                                                    | 12                    |
+| Bem sucedida | Número de Dispositivos exclusivos no estado com êxito.                                                    | 12                    |
 | PolicyKey | A chave de Política pode ser acompanhada pela Política para obter o policyName.                                  | Linha de base do Windows 10 |
 | Error     | Número de Dispositivos exclusivos no estado com erros.                                                      | 10                    |
 | Failed    | Número de Dispositivos exclusivos no estado com falhas.                                                     | 2                     |
@@ -634,7 +634,7 @@ A entidade **PolicyTypeActivity** apresenta uma lista do número cumulativo de d
 | PolicyKey     | A chave de política pode ser acompanhada pela Política para obter o policyName.                                | Linha de base do Windows 10         |
 | PolicyTypeKey | O tipo de Chave de Política pode ser acompanhado do Tipo de Política para obter o nome do tipo de política.             | Política de Compatibilidade do Windows 10 |
 | Pending       | Número de dispositivos exclusivos no estado pendente.                                                    | 123                         |
-| Succeeded     | Número de dispositivos exclusivos no estado com êxito.                                                    | 12                          |
+| Bem sucedida     | Número de dispositivos exclusivos no estado com êxito.                                                    | 12                          |
 | Error         | Número de dispositivos exclusivos no estado com erros.                                                      | 10                          |
 | Failed        | Número de dispositivos exclusivos no estado com falhas.                                                     | 2                           |
 
@@ -654,7 +654,7 @@ A tabela seguinte mostra o número de utilizadores no estado com êxito, pendent
 |:---------:|:---------------------------------------------------------------------------------------------:|:-------------------:|
 | DateKey   | Data-chave de quando a entrada do Perfil de Configuração do Dispositivo foi registada no armazém de dados. | 20160703            |
 | Pending   | Número de Dispositivos exclusivos no estado pendente.                                                    | 123                 |
-| Succeeded | Número de Dispositivos exclusivos no estado com êxito.                                                    | 12                  |
+| Bem sucedida | Número de Dispositivos exclusivos no estado com êxito.                                                    | 12                  |
 | PolicyKey | A chave de política pode ser acompanhada pela Política para obter o policyName.                                | Linha de base do Windows 10 |
 | Error     | Número de Dispositivos exclusivos no estado com erros.                                                      | 10                  |
 

@@ -6,7 +6,7 @@ keywords: Armazém de Dados do Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/03/2019
+ms.date: 01/03/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -18,18 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 36407bda1f74d0c4601f78cedc2af5426e944fee
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 85b6d49f435ec45a2c6a2b81387ea25a1c15299b
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72503427"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75654078"
 ---
 # <a name="reference-for-devices-entities"></a>Referência para as entidades de dispositivos
 
 A categoria **dispositivos** contém entidades para dispositivos móveis que rastreiam informações como:
 
-- Tipo de dispositivo
+- Tipo de Dispositivo
 - Estado do registo e inscrição dos dispositivos
 - Propriedade dos dispositivos
 - Estado da gestão dos dispositivos
@@ -46,7 +46,7 @@ A entidade **deviceTypes** representa o tipo de dispositivo referenciado por out
 |---------|------------|
 | deviceTypeID |Identificador exclusivo do tipo de dispositivo |
 | deviceTypeKey |Identificador exclusivo do tipo de dispositivo no armazém de dados – chave de substituição |
-| deviceTypeName |Tipo de dispositivo |
+| deviceTypeName |Tipo de Dispositivo |
 
 ### <a name="example"></a>Exemplo
 
@@ -218,7 +218,7 @@ A entidade **ManagementAgentType** representa os agentes usados para gerenciar u
 | 3 |EasMdm | O dispositivo é gerido através do Exchange Active Sync e de um agente MDM |
 | 4 |IntuneClient | O dispositivo é gerido pelo agente de PC do Intune |
 | 5 |EasIntuneClient | O dispositivo é gerido através do Exchange Active Sync e do agente de PC do Intune |
-| 8 |ConfigManagerClient | O dispositivo é gerido pelo agente do System Center Configuration Manager |
+| 8 |ConfigManagerClient | O dispositivo é gerenciado pelo agente de Configuration Manager |
 | 16 |Unknown | Tipo de agente de gestão desconhecido |
 
 ## <a name="devices"></a>dispositivos

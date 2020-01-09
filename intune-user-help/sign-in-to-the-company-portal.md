@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/18/2019
+ms.date: 12/31/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -19,12 +19,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 68a44027c14e0a52d72fc032a6ab42413fa8df96
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 6f736e8119230748dc5e848807afeae9e9a4e86f
+ms.sourcegitcommit: d21539e52631c589bfeaa182418390f66672736c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508298"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75564939"
 ---
 # <a name="sign-in-to-company-portal"></a>Entrar no Portal da Empresa  
 
@@ -56,6 +56,7 @@ As etapas a seguir mostram capturas de tela do Portal da Empresa para iOS.
    ![Depois de passar pelo processo de autenticação, o aplicativo Portal da Empresa faz logon, mostra uma barra de carregamento.](/intune-user-help/media/cp_ios_aad_signin_after_1804_004.png)
 
 ## <a name="sign-in-with-certificate-based-authentication"></a>Entrar com autenticação baseada em certificado
+Você só verá essa opção de entrada se sua organização permitir a autenticação baseada em certificado e você tiver um certificado disponível para uso.  
 
 1. Abra a aplicação Portal da Empresa no dispositivo.  
 
@@ -95,4 +96,4 @@ Se sua empresa usa cartões inteligentes para acessar seus computadores, é prov
 
    ![Depois do processo de autenticação, a aplicação Portal da Empresa inicia sessão, apresentando o respetivo processo com uma barra de carregamento.](/intune-user-help/media/cp_ios_aad_signin_after_1804_007.png)
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  

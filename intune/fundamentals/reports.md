@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 21b83ec7b295a79dafc7527633cb31729ee40502
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 3ae06ae3f9f76d86a792721d45f8319bfe6491fd
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206249"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75654231"
 ---
 # <a name="intune-reports"></a>Relatórios do Intune
 Microsoft Intune relatórios permite que você monitore de forma mais eficiente e proativa a integridade e a atividade dos pontos de extremidade em sua organização e também fornece outros dados de relatório no Intune. Por exemplo, você poderá ver relatórios sobre a conformidade do dispositivo, integridade do dispositivo e tendências do dispositivo. Além disso, você pode criar relatórios personalizados para obter dados mais específicos. 
@@ -143,15 +143,15 @@ Para obter mais informações, sobre configurações de diagnóstico, consulte [
 ### <a name="log-analytics"></a>Log Analytics
 Log Analytics é a principal ferramenta na portal do Azure para escrever consultas de log e analisar interativamente os resultados das consultas. Mesmo que uma consulta de log seja usada em outro lugar na Azure Monitor, você normalmente escreverá e testará a consulta primeiro usando Log Analytics. Para obter detalhes sobre como usar Log Analytics e criar consultas de log, consulte [visão geral das consultas de log no Azure monitor](https://docs.microsoft.com/azure/azure-monitor/log-query/log-query-overview). 
 
-### <a name="workbooks"></a>Pastas
+### <a name="workbooks"></a>Livros
 As pastas de trabalho combinam texto, consultas de análise, métricas do Azure e parâmetros em relatórios interativos sofisticados. As pastas de trabalho são editáveis por outros membros da equipe que têm acesso aos mesmos recursos do Azure. Para obter mais informações sobre pastas de trabalho, consulte [Azure monitor pastas de trabalho](https://docs.microsoft.com/azure/azure-monitor/app/usage-workbooks). Além disso, você pode trabalhar com os modelos de pasta de trabalho e contribuir com eles. Para obter mais informações, consulte [Azure monitor modelos de pasta de trabalho](https://go.microsoft.com/fwlink/?linkid=867045).
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Próximos passos 
 
 Saiba mais sobre as seguintes tecnologias:
 - [Estrutura de relatórios de Microsoft Intune de blog](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/New-Reporting-Framework-Coming-to-Intune/ba-p/1009553)
 - [Azure Monitor](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-activity-logs-azure-monitor)
-- [O que é Log Analytics?](https://docs.microsoft.com/azure/azure-monitor/log-query/log-query-overview#what-is-log-analytics)
+- [O que é o Log Analytics?](https://docs.microsoft.com/azure/azure-monitor/log-query/log-query-overview#what-is-log-analytics)
 - [Consultas de log](https://docs.microsoft.com/azure/azure-monitor/log-query/log-query-overview)
 - [Introdução ao Log Analytics no Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/log-query/get-started-portal)
 - [Azure Monitor pastas de trabalho](https://docs.microsoft.com/azure/azure-monitor/app/usage-workbooks)

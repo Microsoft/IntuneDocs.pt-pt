@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 46012b11cdb458243658e858b53c2dfb1a69dc88
-ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
+ms.openlocfilehash: 622c09d03507a3a47433eab5b21702a656f8bffb
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74991796"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547505"
 ---
 # <a name="troubleshoot-windows-device-enrollment-problems-in-microsoft-intune"></a>Solucionar problemas de registro de dispositivo Windows no Microsoft Intune
 
@@ -40,7 +40,7 @@ Colete as seguintes informações sobre o problema:
 - Qual plataforma (Android, iOS, Windows) tem o problema?
 - Quantos usuários são afetados? Todos os usuários foram afetados ou apenas alguns?
 - Quantos dispositivos são afetados? Todos os dispositivos foram afetados ou apenas alguns?
-- O que é a autoridade de MDM? Se for System Center Configuration Manager, qual versão do Configuration Manager você está usando?
+- O que é a autoridade de MDM? Se for Microsoft Endpoint Configuration Manager, qual versão do Configuration Manager você está usando?
 - Como o registro está sendo executado? Ele é "Traga seu próprio dispositivo" (BYOD) ou DEP (Programa de registro de dispositivos da Apple) com perfis de registro?
 
 ## <a name="error-messages"></a>Mensagens de erro
@@ -389,4 +389,4 @@ Esse problema é geralmente causado pela delegação incorreta de permissões pa
 - [Consulte o blog da equipe de suporte do Microsoft Intune](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/bg-p/IntuneCustomerSuccess)
 - [Confira o blog do Microsoft Enterprise Mobility e segurança](https://techcommunity.microsoft.com/t5/Azure-Active-Directory-Identity/Announcing-the-public-preview-of-Azure-AD-group-based-license/ba-p/245210)
 - [Obter suporte para Microsoft Intune](../fundamentals/get-support.md)
-- [Localizar erros de registro de cogerenciamento](https://docs.microsoft.com/sccm/comanage/how-to-monitor#enrollment-errors)
+- [Localizar erros de registro de cogerenciamento](https://docs.microsoft.com/configmgr/comanage/how-to-monitor#enrollment-errors)

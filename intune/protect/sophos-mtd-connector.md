@@ -15,12 +15,12 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e8823aa8467ef380223a486874c68d52926db733
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: f41d5d1ec3e302a277fe5e6ff6af9d33a7e89517
+ms.sourcegitcommit: d21539e52631c589bfeaa182418390f66672736c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72503737"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75564922"
 ---
 # <a name="sophos-mobile-threat-defense-connector-with-intune"></a>Conector de defesa contra ameaças móveis do Sophos com o Intune
 Você pode controlar o acesso de dispositivos móveis a recursos corporativos usando o acesso condicional com base na avaliação de risco realizada pelo Sophos Mobile, uma solução de MTD (defesa contra ameaças móveis) que se integra ao Microsoft Intune. O risco é avaliado com base na telemetria coletada de dispositivos que executam o aplicativo do Sophos Mobile.
@@ -72,7 +72,7 @@ Acesso ![concedido na correção do](./media/sophos-mtd-connector/sophos_network
 - Subscrição do Microsoft Intune 
 - Assinatura da defesa contra ameaças móveis do Sophos
 
-Para obter mais informações, consulte o [site do Sophos](https://www.sophos.com/products/mobile-control).  
+Para obter mais informações, consulte o [site do Sophos](https://www.sophos.com/en-us/products/mobile-control.aspx).
 
 ## <a name="next-steps"></a>Próximos passos  
 - [Integrar o Sophos ao Intune](sophos-mtd-connector-integration.md)

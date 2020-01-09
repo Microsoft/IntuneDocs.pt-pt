@@ -6,7 +6,7 @@ keywords: Armazém de Dados do Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/02/2019
+ms.date: 01/03/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 64fc1bab596715be80fd3a91c003cac1176fe787
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 1fe4fabc86e7be647fa161d68fe8a4fe35e9eb6b
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72490271"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75654129"
 ---
 # <a name="reference-for-policy-entities"></a>Referência para as entidades de políticas
 
@@ -150,7 +150,7 @@ A tabela seguinte mostra o número de dispositivos no estado com êxito, pendent
 |---------|---------|---------|
 |dateKey|Data-chave de quando a entrada do Perfil de Configuração do Dispositivo foi registada no armazém de dados.|20160703|
 |pendente|Número de Dispositivos exclusivos no estado pendente.|123|
-|Succeeded|Número de Dispositivos exclusivos no estado com êxito.|12|
+|Bem sucedida|Número de Dispositivos exclusivos no estado com êxito.|12|
 |policyKey|policyKey, pode ser Unido com a política para obter o PolicyName.|Linha de base do Windows 10|
 |erro|Número de Dispositivos exclusivos no estado com erros.|10|
 |com falhas|Número de Dispositivos exclusivos no estado com falhas.|2|

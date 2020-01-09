@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 962e66a9fdf6d8abcf6855f645775026ee4db850
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: d50db72a66ee98b773973e96e03b7786c3c2d298
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508836"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547936"
 ---
 # <a name="troubleshoot-the-intune-exchange-connector"></a>Solucionar problemas do Intune Exchange Connector
 
@@ -40,7 +40,7 @@ Antes de começar a solucionar problemas de um problema do Exchange Connector no
   - Você está configurando o conector pela primeira vez? 
   - O conector funcionou corretamente e falhou?
   - Se ele estava funcionando, quais alterações ocorreram no ambiente do Intune, no ambiente do Exchange ou no computador que executa o software do conector?
-- O que é a autoridade de MDM? Se for System Center Configuration Manager, qual versão do Configuration Manager você usa?
+- O que é a autoridade de MDM? Se for Microsoft Endpoint Configuration Manager, qual versão do Configuration Manager você usa?
 - Qual versão do Exchange você usa?
 
 ### <a name="use-powershell-to-get-more-data-on-exchange-connector-issues"></a>Usar o PowerShell para obter mais dados sobre problemas do Exchange Connector

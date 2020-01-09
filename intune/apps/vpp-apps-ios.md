@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 12/17/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eed0b8a74e69bc1552ae3e2badf485364ba37e94
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 01c95e1961871f33a3d8ed8c0b6c22502faca3a9
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74563799"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75654027"
 ---
 # <a name="how-to-manage-ios-and-macos-apps-purchased-through-apple-volume-purchase-program-with-microsoft-intune"></a>Como gerenciar aplicativos iOS e macOS adquiridos por meio de Apple Volume Purchase Program com Microsoft Intune
 
@@ -95,12 +95,12 @@ Antes de começar, tem de obter um token VPP da Apple e carregá-lo para a sua c
         > A alteração do país/região atualizará os metadados dos aplicativos e a URL de armazenamento na próxima sincronização com o serviço Apple para aplicativos criados com esse token. O aplicativo não será atualizado se não existir no novo armazenamento de país/região.
 
     - **Tipo de conta VPP** – Escolha entre **Empresas** ou **Educação**.
-    - **Atualizações automáticas da aplicação** – selecione **Ativado** ou **Desativado** para ativar as atualizações automáticas. Quando ativado, o Intune deteta as atualizações de aplicações VPP no interior da loja de aplicações e emite-as automaticamente para o dispositivo quando este entra. As atualizações automáticas da aplicação para aplicações VPP da Apple irão atualizar automaticamente apenas as aplicações implementadas com intenção de instalação **Necessária**. Para aplicativos implantados com a intenção de instalação **disponível** , a atualização automática gera uma mensagem de status para o administrador de ti informando que uma nova versão do aplicativo está disponível. Essa mensagem de status é visível selecionando o aplicativo, selecionando status de instalação do dispositivo e verificando os detalhes do status. Além disso, o utilizador irá ver que a aplicação está como não instalada no Portal da Empresa, mesmo que esteja instalada uma versão anterior da aplicação. Nesse caso, o usuário pode reinstalar o aplicativo clicando em **instalar** na tela de detalhes do aplicativo no aplicativo portal da empresa para instalar a versão mais recente do aplicativo.
+    - **Atualizações automáticas da aplicação** – selecione **Ativado** ou **Desativado** para ativar as atualizações automáticas. Quando ativado, o Intune deteta as atualizações de aplicações VPP no interior da loja de aplicações e emite-as automaticamente para o dispositivo quando este entra. As atualizações automáticas da aplicação para aplicações VPP da Apple irão atualizar automaticamente apenas as aplicações implementadas com intenção de instalação **Necessária**. Para aplicativos implantados com a intenção de instalação **disponível** , o usuário verá que o aplicativo não está instalado no portal da empresa, embora uma versão anterior do aplicativo esteja instalada. Nesse caso, o usuário pode reinstalar o aplicativo clicando em **instalar** na tela de detalhes do aplicativo no aplicativo portal da empresa para instalar a versão mais recente do aplicativo. Observe que para dispositivos iOS registrados pelo usuário, os usuários finais continuarão a ver todos os aplicativos VPP licenciados pelo usuário dentro do Portal da Empresa. 
 
         > [!NOTE]
         > As atualizações automáticas do aplicativo funcionam para aplicativos licenciados de dispositivo e de usuário para iOS 11,0 e superior ou macOS 10,12 e superior.
 
-    - **Eu granto a permissão da Microsoft para enviar informações do usuário e do dispositivo para a Apple.** -Você deve selecionar **concordo** para continuar. Para examinar quais dados o Microisoft envia à Apple, consulte [Data Intune SENDs to Apple](~/protect/data-intune-sends-to-apple.md).
+    - **Eu granto a permissão da Microsoft para enviar informações do usuário e do dispositivo para a Apple.** -Você deve selecionar **concordo** para continuar. Para examinar quais dados o Microsoft envia à Apple, consulte [Data Intune SENDs to Apple](~/protect/data-intune-sends-to-apple.md).
 
 6. Quando tiver terminado, selecione **Criar**.
 

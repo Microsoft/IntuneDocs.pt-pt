@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e4761e2565402b4c3cdc993ff89cbedea8273609
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 304a6a60ea8dbfa98e62eb8e52a69e14af795746
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74563885"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75548012"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>Gerenciar o acesso via Web usando o Microsoft Edge com o Microsoft Intune
 
@@ -199,6 +199,14 @@ Em seguida, use os seguintes pares de chave/valor para extrair a identidade visu
 |    com. Microsoft. Intune. Mam. managedbrowser. NewTabPage. BrandLogo    |    Verdadeiro    |
 |    com. Microsoft. Intune. Mam. managedbrowser. NewTabPage. BrandColor    |    Verdadeiro    |
 
+## <a name="display-relevant-industry-news-on-new-tab-pages"></a>Exibir notícias relevantes do setor em novas páginas de guias
+
+Você pode configurar a nova experiência de página de guia no Microsoft Edge Mobile para exibir notícias do setor relevantes para sua organização. Quando você habilita esse recurso, o Microsoft Edge Mobile usa o nome de domínio da sua organização para agregar notícias da Web sobre sua organização, setor da organização e comeptitors, para que os usuários possam encontrar notícias externas relevantes no centeralized novo páginas de guias no Microsoft Edge. As notícias do setor são desligadas por padrão e você pode usá-las para sua organização. 
+
+|    Chave    |    Valor    |
+|------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
+|    ' com. Microsoft. Intune. SohwIndustryNews '    |    **Verdadeiro** mostrará as notícias do setor na página de nova guia do Microsoft Edge Mobile.<p>**False** (padrão) ocultará as notícias do setor da nova página da guia.    |
+
 ## <a name="configure-managed-bookmarks-for-microsoft-edge"></a>Configurar indicadores gerenciados para o Microsoft Edge
 
 Para facilitar o acesso, você pode configurar indicadores que você gostaria que os usuários estivessem disponíveis quando estiverem usando o Microsoft Edge. 
@@ -268,7 +276,7 @@ Você pode usar vários formatos de URL para criar suas listas de sites permitid
   - `http://www.contoso.com:*`
   - `http://www.contoso.com: /*`
 
-## <a name="define-behavior-when-users-try-to-access-a-blocked-site"></a>Definir comportamento quando os usuários tentarem acessar um site bloqueado
+## <a name="transition-users-to-their-personal-context-when-trying-to-access-a-blocked-site"></a>Fazer a transição de usuários para seu contexto pessoal ao tentar acessar um site bloqueado
 
 Com o modelo de identidade dupla incorporado ao Microsoft Edge, você pode habilitar uma experiência mais flexível para seus usuários finais do que era possível com o Intune Managed Browser. Quando os usuários visitam um site bloqueado no Microsoft Edge, você pode solicitar que eles abram o link em seu contexto pessoal, em vez de seu contexto de trabalho. Isso permite que eles permaneçam protegidos, mantendo os recursos corporativos seguros. Por exemplo, se um usuário receber um link para um artigo de notícias por meio do Outlook, ele poderá abrir o link em seu contexto pessoal ou em uma guia InPrivate. Seu contexto de trabalho não permite sites de notícias. Por padrão, essas transições são permitidas.
 
@@ -276,7 +284,16 @@ Use o seguinte par de chave/valor para configurar se essas transições suaves s
 
 |    Chave    |    Valor    |
 |----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    ' com. Microsoft. Intune. Mam. managedbrowser. openInPrivateIfBlock '    |    **True** fará com que os links restritos sejam abertos diretamente na navegação InPrivate.<p>**False** (padrão) apresentará aos usuários uma opção para abrir um link restrito com a navegação InPrivate ou com sua conta pessoal (MSA).    |
+
+## <a name="open-restricted-links-directly-in-inprivate-tab-pages"></a>Abrir links restritos diretamente em páginas da guia InPrivate
+
+Você pode configurar se os links restritos devem ser abertos diretamente na navegação InPrivate, o que fornece aos usuários uma experiência de navegação mais direta. Isso economizaria os usuários da etapa de fazer a transição para seu contexto pessoal para exibir um site. A navegação InPrivate é considerada não gerenciada, portanto os usuários não poderão acessar ao usar o modo de navegação InPrivate. 
+
+|    Chave    |    Valor    |
+|----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    `com.microsoft.intune.mam.managedbrowser.AllowTransitionOnBlock`    |    **Verdadeiro** permite que o Microsoft Edge migre usuários para seu contexto pessoal para abrir sites bloqueados.<p>**Bloquear** impede que o Microsoft Edge migre usuários. Os usuários simplesmente mostram uma mensagem informando que o site que ele está tentando acessar está bloqueado.    |
+
 
 ## <a name="use-microsoft-edge-on-ios-to-access-managed-app-logs"></a>Usar o Microsoft Edge no iOS para acessar logs de aplicativos gerenciados 
 

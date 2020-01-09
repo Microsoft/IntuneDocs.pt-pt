@@ -6,7 +6,7 @@ keywords: Armazém de Dados do Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/02/2019
+ms.date: 01/03/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eb1833a6a54fe0a7f78958e653468921df952b4d
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: ef8fd91744931e1a4a8b7f52d5646c4f8201c255
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505691"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75654061"
 ---
 # <a name="reference-for-mobile-app-management-mam-entities"></a>Referência para as entidades de gestão de aplicações móveis (MAM)
 
@@ -77,7 +77,7 @@ A entidade **mamApplicationInstance** lista aplicativos gerenciados de MAM (gere
 | rowLastModifiedDateTimeUtc |                                                           Data e hora em UTC em que esta instância da aplicação MAM foi modificada pela última vez no armazém de dados.                                                            |        11/23/2016 12:00:00 AM        |
 
 
-## <a name="mamcheckins"></a>mamCheckins
+## <a name="mamcheckins"></a>MamCheckins
 
 A entidade **mamCheckin** representa os dados coletados quando uma instância de aplicativo de gerenciamento de aplicativo móvel (MAM) tiver feito check-in com o serviço do Intune. 
 
@@ -117,7 +117,7 @@ A entidade **mamEffectivePolicy** lista todas as políticas efetivas de MAM (ger
 | realPolicyKey |Identificador exclusivo da política de MAM criada pelo Profissional de TI. |1 |
 | rowCreatedDateTimeUtc |Data e hora em UTC em que esta política em vigor de MAM foi criada no armazém de dados. |11/23/2016 12:00:00 AM |
 
-## <a name="mamplatforms"></a>mamPlatforms
+## <a name="mamplatforms"></a>MamPlatforms
 
 A entidade **mamPlatform** lista os nomes de plataforma e os tipos nos quais um aplicativo de gerenciamento de aplicativo móvel (MAM) foi instalado.
 

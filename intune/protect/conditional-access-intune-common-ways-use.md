@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b9795ca8a585fd926cc269d493760b37aa7666eb
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: d30749a7eaa3d516bef2f2acff3e010d69db1c0e
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74051964"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547051"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>Quais são as maneiras comuns de usar o acesso condicional com o Intune?
 
@@ -83,11 +83,11 @@ O acesso condicional para PCs fornece funcionalidades semelhantes às que se enc
 
 #### <a name="corporate-owned"></a>Pertencentes à empresa
 
-- **Ingressado no domínio do AD local:** Essa opção é normalmente usada por organizações que são razoavelmente confortáveis com a forma como eles já estão gerenciando seus PCs por meio de políticas de grupo do AD ou System Center Configuration Manager.
+- **Ingressado no domínio do AD local:** Essa opção é normalmente usada por organizações que são razoavelmente confortáveis com a forma como eles já estão gerenciando seus PCs por meio de políticas de grupo do AD ou Configuration Manager.
 
 - **Azure ad ingressado no domínio e gerenciamento do Intune:** Esse cenário destina-se a organizações que desejam ser a primeira nuvem (ou seja, usam principalmente serviços de nuvem, com um objetivo de reduzir o uso de uma infraestrutura local) ou somente em nuvem (sem infraestrutura local). O ingresso no Azure AD funciona bem em um ambiente híbrido, permitindo o acesso a aplicativos e recursos locais e na nuvem. O dispositivo se une ao Azure AD e é registrado no Intune, que pode ser usado como critério de acesso condicional ao acessar recursos corporativos.
 
-- **System Center Configuration Manager e ingresso no domínio do AD:** A partir do Branch atual, o System Center Configuration Manager fornece recursos de acesso condicional que podem avaliar critérios de conformidade específicos, além de serem um PC ingressado no domínio:
+- **Configuration Manager e ingresso no domínio do AD:** A partir do Branch atual, o Configuration Manager fornece recursos de acesso condicional que podem avaliar critérios de conformidade específicos, além de serem um PC ingressado no domínio:
 
   - O PC está encriptado?
 

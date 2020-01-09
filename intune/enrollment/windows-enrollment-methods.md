@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: ''
-ms.openlocfilehash: b6144767ee69de8c1ff14e5c189c078994a9dcf4
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 060c3c00a228794d3f237a6362b048bf23e1a933
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74819710"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547718"
 ---
 # <a name="intune-enrollment-methods-for-windows-devices"></a>Métodos de inscrição do Intune para dispositivos Windows
 
@@ -49,7 +49,7 @@ Se um administrador tiver configurado o registro automático (disponível com as
 Os administradores podem configurar os seguintes métodos de registro que não exigem interação do usuário:
 
 - O [ingresso no Azure ad híbrido](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy) permite que os administradores configurem Active Directory política de grupo para registrar automaticamente os dispositivos que são ingressados no Azure ad híbrido. 
-- [Configuration Manager cogerenciamento](https://docs.microsoft.com/sccm/comanage/overview) permite que os administradores registrem seus dispositivos Configuration Manager gerenciados existentes no Intune para obter os benefícios duplos do Intune e Configuration Manager. 
+- [Configuration Manager cogerenciamento](https://docs.microsoft.com/configmgr/comanage/overview) permite que os administradores registrem seus dispositivos Configuration Manager gerenciados existentes no Intune para obter os benefícios duplos do Intune e Configuration Manager. 
 - O DEM ( [Gerenciador de registro de dispositivo](device-enrollment-manager-enroll.md) ) é uma conta de serviço especial. As contas do DEM têm permissões que permitem que usuários autorizados registrem e gerenciem vários dispositivos de propriedade corporativa. Estes tipos de dispositivo são ideais, por exemplo, para aplicações de utilitários ou ponto de venda, mas não para utilizadores que necessitem de aceder a recursos de e-mail ou da empresa. Esse método não permite o uso de recursos como o acesso condicional. 
 - O [registro em massa](../windows-bulk-enroll.md) permite que um usuário autorizado ingresse em um grande número de novos dispositivos corporativos para Azure Active Directory e o Intune. Você cria um pacote de provisionamento com o aplicativo do Windows Configuration designer (WCD). Em seguida, usando a mídia USB durante a experiência inicial do Windows OOBE ou do computador Windows existente, você instala o pacote de provisionamento para registrar automaticamente os dispositivos no Intune. Esse método não permite o uso de acesso condicional. 
 - O [registro de dispositivos Windows IOT Core](https://docs.microsoft.com/windows/iot-core/manage-your-device/intunedeviceenrollment) é realizado usando o painel do Windows IOT Core para preparar o dispositivo e, em seguida, usar o designer de configuração do Windows para criar um pacote de provisionamento. Em seguida, usando mídia de cartão SD durante a inicialização inicial, ele instala o pacote de provisionamento para registrar automaticamente os dispositivos no Intune.
