@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: af1c7d1f9d8236fd95413317acefbe8887d90f47
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 442f44ac22587925c8a775d51a7e88e5e72473b3
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72507677"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857172"
 ---
 # <a name="device-encrypted-but-apps-say-otherwise"></a>Dispositivo criptografado, mas aplicativos dizem de outra forma
 

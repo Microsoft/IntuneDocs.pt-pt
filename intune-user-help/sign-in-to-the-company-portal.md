@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6f736e8119230748dc5e848807afeae9e9a4e86f
-ms.sourcegitcommit: d21539e52631c589bfeaa182418390f66672736c
+ms.collection: ''
+ms.openlocfilehash: f82549cfbdd3c987b2f51f4d90b9c18cce8c25be
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75564939"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857808"
 ---
 # <a name="sign-in-to-company-portal"></a>Entrar no Portal da Empresa  
 

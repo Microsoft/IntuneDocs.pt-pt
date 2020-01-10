@@ -17,13 +17,13 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser; seodec18
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6183f6740030ab3e00710b75f9b23b9c239055c7
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 50d8c8a707b948c35a465342dad69e199dced8c8
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72500539"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857288"
 ---
 # <a name="you-need-to-turn-off-unknown-sources"></a>Tem de desativar Origens desconhecidas
 
@@ -33,4 +33,4 @@ Se vir a mensagem "A instalação a partir de origens desconhecidas tem de ser d
 
 Após desativar a opção **Origens desconhecidas**, poderá demorar alguns minutos antes de poder continuar a utilizar o dispositivo Android para aceder a dados da empresa ou escola.
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

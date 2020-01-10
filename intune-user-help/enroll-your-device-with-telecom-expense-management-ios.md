@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 84098d4d2152d62eda888cdcde1cf88e5081a470
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: c9bb0ba02b5d7576f4dafad8e612f56969e8dd57
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506171"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75855498"
 ---
 # <a name="enroll-your-ios-device-in-telecom-expense-management"></a>Inscrever o dispositivo iOS na gestão de despesas de telecomunicações
 
@@ -32,7 +32,7 @@ A sua organização poderá estar a utilizar software de gestão de despesas de 
 
   ![Uma captura do ecrã “selecionar a melhor categoria para um dispositivo” num dispositivo iOS. Mostra uma seleção de inscrição empresarial ou pessoal.](./media/ios-enroll-10-tem-select-best-category.png)
 
-Selecione a opção adequada para receber uma notificação e instalar a aplicação [ __Datalert__ ](https://itunes.apple.com/app/datalert/id771029268?mt=8) a partir da App Store. A aplicação Datalert é o modo como a sua organização pode medir a utilização de dados. Se a sua organização configurou a opção de inscrição escolar ou profissional da Microsoft, precisará de iniciar sessão com a conta escolar ou profissional. Se ainda não tiver ativado esta opção, terá de indicar informações como o número de telefone e verificar o dispositivo através de um código para se inscrever no serviço Datalert da aplicação.
+Selecione a opção adequada para receber uma notificação e instalar a aplicação [__Datalert__](https://itunes.apple.com/app/datalert/id771029268?mt=8) a partir da App Store. A aplicação Datalert é o modo como a sua organização pode medir a utilização de dados. Se a sua organização configurou a opção de inscrição escolar ou profissional da Microsoft, precisará de iniciar sessão com a conta escolar ou profissional. Se ainda não tiver ativado esta opção, terá de indicar informações como o número de telefone e verificar o dispositivo através de um código para se inscrever no serviço Datalert da aplicação.
 
   ![Uma captura do ecrã de boas-vindas da aplicação Datalert, que lhe pede para se deslocar para o ecrã seguinte depois de apresentar uma breve explicação sobre como a aplicação Datalert pode tirar o máximo partido do seu plano de dados.](./media/ios-enroll-11-tem-datalert-setup.png)
 
@@ -67,4 +67,4 @@ Selecione a opção adequada para receber uma notificação e instalar a aplica�
 
 Depois de se inscrever, começa a ver a utilização de dados na aplicação Datalert.
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/02/2019
+ms.date: 01/09/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6ed04c1bf135793da9cece9debc2c7cdd481601a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: d226a5b8ee448b7b168a03fe6b8a1c63bc1be432
+ms.sourcegitcommit: 8f56220e7cafc5bc43135940575a9acb5afde730
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74691683"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75827790"
 ---
 # <a name="add-a-property-list-file-to-macos-devices-using-microsoft-intune"></a>Adicionar um arquivo de lista de propriedades a dispositivos macOS usando Microsoft Intune
 
@@ -50,9 +50,19 @@ Estas definições são adicionadas a um perfil de configuração do dispositivo
 
 ## <a name="preference-file"></a>Ficheiro de preferência
 
-- **Nome de domínio de preferência**: os arquivos de lista de propriedades são normalmente usados para navegadores da Web (Microsoft Edge), [proteção avançada contra ameaças do Microsoft defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-mac)e aplicativos personalizados. Quando você cria um domínio de preferência, uma ID de pacote também é criada. Insira a ID do pacote, como `com.company.application`. Por exemplo, digite `com.Contoso.applicationName`, `com.Microsoft.Edge` ou `com.microsoft.wdav`.
+- **Nome de domínio de preferência**: os arquivos de lista de propriedades são normalmente usados para navegadores da Web (Microsoft Edge), [proteção avançada contra ameaças do Microsoft defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-mac)e aplicativos personalizados. Quando você cria um domínio de preferência, uma ID de pacote também é criada. Insira a ID do pacote, como `com.company.application`. Por exemplo, digite `com.Contoso.applicationName`, `com.Microsoft.Edge`ou `com.microsoft.wdav`.
 - **Arquivo de lista de propriedades**: selecione o arquivo de lista de propriedades associado ao seu aplicativo. Certifique-se de que seja um arquivo `.plist` ou `.xml`. Por exemplo, carregue um arquivo de `YourApp-Manifest.plist` ou `YourApp-Manifest.xml`.
 - **Conteúdo do arquivo**: as informações de chave no arquivo de lista de propriedades são mostradas. Se você precisar alterar as informações da chave, abra o arquivo de lista em outro editor e recarregue o arquivo no Intune.
+
+Verifique se o arquivo está formatado corretamente. O arquivo deve ter apenas pares chave-valor e não deve ser disposto em marcas `<dict>`, `<plist>`ou `<xml>`. Por exemplo, o arquivo de lista de propriedades deve ser semelhante ao seguinte arquivo:
+
+```xml
+<key>SomeKey</key>
+<string>someString</string>
+<key>AnotherKey</key>
+<false/>
+...
+```
 
 Selecione **OK** > **Criar** para guardar as alterações. O perfil é criado e mostrado na lista de perfis.
 

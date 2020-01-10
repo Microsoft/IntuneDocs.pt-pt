@@ -16,13 +16,13 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9cba684be990c45bad48bfd44423e39ffe4b1549
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: aa3eeb3737a601b80935d5655a83e1d2ef47995b
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72500447"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857253"
 ---
 # <a name="enable-security-threat-scans-on-your-device"></a>Ativar a análise de ameaças de segurança no seu dispositivo 
 Se instalar uma aplicação não segura inadvertidamente, os dados do seu dispositivo poderão ficar em risco. Para proteger os dados no seu dispositivo, recomendamos que: 
@@ -34,4 +34,4 @@ Para ativar as análises no seu dispositivo, aceda a **Definições** > **Google
 
 Em alguns dispositivos Samsung, poderá encontrar a definição em **Definições** > **Google** > **Segurança** > **Google Play Protect**.
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980). 
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980). 

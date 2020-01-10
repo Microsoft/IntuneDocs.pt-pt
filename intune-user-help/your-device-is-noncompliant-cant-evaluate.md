@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 675d0e3893bf385953d1f6846db3932a695c8748
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 70b739cca72fd5ec759b8010f0486cc593031ef8
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72499949"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858331"
 ---
 # <a name="your-device-is-noncompliant"></a>O seu dispositivo não está em conformidade
 
@@ -32,4 +32,4 @@ O seu dispositivo não está em conformidade com pelo menos uma das políticas d
 
 Na aplicação Portal da Empresa, toque em **Verificar Conformidade**. A aplicação Portal da Empresa irá então indicar o que faz com que o dispositivo não esteja em conformidade.
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

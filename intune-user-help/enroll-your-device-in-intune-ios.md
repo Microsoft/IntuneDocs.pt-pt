@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: tisilv
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: cbe0ca9991f427e11d72d85814bcd2d1b8882494
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.collection: ''
+ms.openlocfilehash: bd9fd38fdc244bc48333496c2f266ff039e55585
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75205144"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75855568"
 ---
 # <a name="set-up-ios-device-access-to-your-company-resources"></a>Configurar o acesso do dispositivo iOS aos recursos da empresa  
 
@@ -72,7 +72,7 @@ A pausa por mais de alguns minutos durante o registro pode fazer com que o aplic
 
 4. A tela **selecionar dispositivo e tipo de registro** é exibida e solicita o tipo de dispositivo.  
     * Toque **(organização) possui este dispositivo** se você recebeu seu dispositivo da sua organização. Em seguida, pule para [proteger o dispositivo inteiro](###secure-entire-device) neste artigo para concluir a instalação.  
-    * Toque em **eu proprietário deste dispositivo** se você estiver usando um dispositivo pessoal que trouxe de casa. Em seguida, continue para a próxima etapa.  
+    * Toque em **eu proprietário deste dispositivo** se você estiver usando um dispositivo pessoal que trouxe de casa. Em seguida, avance para o passo seguinte.  
 
     Se você não vir essa tela, pule para [proteger o dispositivo inteiro](enroll-your-device-in-intune-ios.md#secure-entire-device) para concluir a instalação.  
     
@@ -169,7 +169,7 @@ A pausa por mais de alguns minutos durante o registro pode fazer com que o aplic
 7. Insira a senha do dispositivo. Em seguida, toque em **instalar**.  
 
 8. Na tela de **entrada** , insira a senha para sua ID da Apple gerenciada. Na maioria dos casos, essas credenciais serão as mesmas que você usa para entrar em sua conta corporativa ou de estudante, a menos que sua organização tenha fornecido um conjunto diferente de credenciais. 
-9. Toque **em entrar**.  
+9. Toque em **Iniciar sessão**.  
 10. Uma mensagem de êxito aparecerá brevemente na tela depois que o perfil for instalado. Para verificar se o perfil está instalado, acesse os **perfis & gerenciamento de dispositivo** configurações. Você deve ver o perfil listado em **Gerenciamento de dispositivo móvel.**  
 
     ![Captura de tela de exemplo do aplicativo de configurações, perfis & configurações de gerenciamento de dispositivo, mostrando o perfil de gerenciamento.](./media/ios-12-cp-enroll-1904.PNG)  

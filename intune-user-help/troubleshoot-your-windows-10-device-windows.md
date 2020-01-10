@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: bbc251479652079cb33b1ca4dd08103103b91aa9
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 75c28fb662daaf96aba6324b468b50e7c9081fd2
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508189"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857896"
 ---
 # <a name="troubleshoot-your-windows-10-device-enrollment"></a>Resolver problemas de inscrição no dispositivo Windows 10
 Se você registrou seu dispositivo, mas ainda não consegue acessar seus emails e arquivos corporativos ou de estudante, tente essas etapas de solução de problemas.  
@@ -63,4 +63,4 @@ Se seguiu os passos acima, mas continua a não conseguir aceder ao e-mail, aos f
 
 Se você vir uma mensagem dizendo que <strong>não foi possível descobrir automaticamente um ponto de extremidade de gerenciamento correspondente ao nome de usuário inserido. Verifique seu nome de usuário e tente novamente. Se você souber a URL para o ponto de extremidade de gerenciamento, insira-a.</strong>em seguida, você deve tentar inserir novamente seu nome de usuário e senha. Se o URL continuar a não funcionar, deve consultar o suporte da empresa para saber qual o site que precisa de fornecer na caixa de texto <strong>Ponto final de gestão</strong>. É provável que este site se assemelhe a <strong>www.asuaempresa.onmicrosoft.com</strong>.
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

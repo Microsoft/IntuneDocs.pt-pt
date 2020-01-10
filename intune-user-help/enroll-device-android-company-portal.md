@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5baf0e9079cc148101a68e5cd2d3a4ed500f567f
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: e0a2297509d6077d6508adaab96ae6eb3cf9b28f
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414769"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75856739"
 ---
 # <a name="enroll-your-device-with-company-portal"></a>Registrar seu dispositivo com o Portal da Empresa  
 Registre seu dispositivo Android pessoal ou de propriedade corporativa para obter acesso seguro a email, aplicativos e dados da empresa. O Portal da Empresa dá suporte a dispositivos Android, incluindo Samsung Knox, executando o Android 4,4 e posterior.  
@@ -98,4 +98,4 @@ Antes de tentar instalar um aplicativo escolar ou de trabalho, vá para **config
 
 Se você receber um erro ao tentar registrar seu dispositivo no Intune, poderá [enviar por email o suporte de sua empresa](send-logs-to-your-it-admin-by-email-android.md).  
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  

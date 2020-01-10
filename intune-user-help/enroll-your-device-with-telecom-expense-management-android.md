@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: e1a6e2a001e8c323ba73dd7e9ad4dd82df968e6d
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 6a296b096044b23822ff5fdd368abcf6e4b896df
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506215"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75855464"
 ---
 # <a name="enroll-your-android-device-in-telecom-expense-management"></a>Inscrever o dispositivo Android na gestão de despesas de telecomunicações
 
@@ -32,7 +32,7 @@ A sua organização poderá estar a utilizar software de gestão de despesas de 
 
 ![Uma captura do ecrã “selecionar a melhor categoria para um dispositivo” num dispositivo iOS. Mostra uma seleção de inscrição empresarial ou pessoal.](./media/and-enroll-11-tem-select-best-category.png)
 
-Selecione a opção adequada para receber uma notificação e instalar a aplicação [ __Datalert__ ](https://play.google.com/store/apps/details?id=fr.memobox.databox) a partir da Google Play Store. A aplicação Datalert é o modo como a sua organização pode medir a utilização de dados. Se a sua organização tiver configurado a opção de inscrição escolar ou profissional, precisará de iniciar sessão com a conta escolar ou profissional. Se ainda não tiver ativado esta opção, terá de indicar informações como o número de telefone e verificar o dispositivo através de um código para se inscrever no serviço Datalert da aplicação.
+Selecione a opção adequada para receber uma notificação e instalar a aplicação [__Datalert__](https://play.google.com/store/apps/details?id=fr.memobox.databox) a partir da Google Play Store. A aplicação Datalert é o modo como a sua organização pode medir a utilização de dados. Se a sua organização tiver configurado a opção de inscrição escolar ou profissional, precisará de iniciar sessão com a conta escolar ou profissional. Se ainda não tiver ativado esta opção, terá de indicar informações como o número de telefone e verificar o dispositivo através de um código para se inscrever no serviço Datalert da aplicação.
 
 Toque na seta __seguinte__, no canto superior direito do ecrã, para continuar. O suporte da empresa deverá indicar-lhe se vai iniciar sessão com a __conta escolar ou profissional da Microsoft__ ou utilizar o __número de telefone__.
 
@@ -66,4 +66,4 @@ Toque na seta __seguinte__, no canto superior direito do ecrã, para continuar. 
 
 Depois de se inscrever, começa a ver a utilização de dados na aplicação Datalert.
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

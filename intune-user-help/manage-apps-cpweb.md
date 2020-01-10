@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: edc45fb3ddab43ef77a3f072c5a1a31f8f88c957
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: e9258b151c868c0f01b419631dbfcc5fc4d6b144
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506105"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75854282"
 ---
 # <a name="manage-apps-from-the-company-portal-website"></a>Gerenciar aplicativos do site Portal da Empresa 
 Visite o [site Portal da empresa](https://portal.manage.microsoft.com) para exibir e gerenciar aplicativos de sua organização. 
@@ -80,7 +80,7 @@ Selecione **refinar** para ver as opções de filtro e classificação. Filtre a
 * Nome do editor, crescente ou decrescente em ordem alfabética  
 * Data de publicação, mais antiga ou mais recente  
 
-Precisa de ajuda adicional? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  
+Precisa de ajuda adicional? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  
 
 ### <a name="available-and-required-apps"></a>Aplicativos disponíveis e necessários
 Os aplicativos são atribuídos a você pela sua organização e rotulados como disponíveis ou obrigatórios. A página **aplicativos instalados** mostra quais aplicativos você tem na coluna **tipo de atribuição** . 
@@ -99,4 +99,4 @@ Selecione um aplicativo na página **aplicativos** ou **aplicativos instalados**
    ![Captura de tela do site Portal da Empresa, página de detalhes do aplicativo.](./media/intune-app-details-1907.png)  
 
 ## <a name="next-steps"></a>Próximos passos
-Precisa de mais ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  
+Precisa de mais ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  

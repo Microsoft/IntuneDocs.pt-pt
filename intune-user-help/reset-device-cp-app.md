@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser; intune-azure
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 64612aa8a1d427284778a9aa43b966b05cb0a15f
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: dc36e2d53282b8f40f0250f40cb2f01ec920d936
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502112"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858217"
 ---
 # <a name="reset-device-from-the-company-portal-app"></a>Redefinir o dispositivo do aplicativo Portal da Empresa  
 
@@ -50,4 +50,4 @@ Depois de redefinir um dispositivo, ele não aparecerá mais no Portal da Empres
 
      ![Captura de tela de exemplo do aplicativo Portal da Empresa, redefinir mensagem de confirmação, realçando o botão redefinir. ](./media/1802-cp-app-windows-reset-confirm.png)  
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  

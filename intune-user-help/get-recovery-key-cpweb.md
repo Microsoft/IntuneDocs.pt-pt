@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 44026c379a763db2cc43912e4ef09ae542fbe7db
-ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
+ms.collection: ''
+ms.openlocfilehash: 1e7831712b4c07d015aa0f587ff6ba6183940897
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75654005"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75855241"
 ---
 # <a name="get-a-recovery-key-for-a-macos-device"></a>Obter uma chave de recuperação para um dispositivo macOS
 

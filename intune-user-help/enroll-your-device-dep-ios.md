@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6e5ce83d20958f3ba4c818e49b0c226e07851d03
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 039ec17b1a56a7339f2159d7af6ad1bd9280bf63
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506221"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75855515"
 ---
 # <a name="enroll-your-organization-provided-ios-device-in-management"></a>Inscrever um dispositivo iOS fornecido pela organização para gestão
 
@@ -59,4 +59,4 @@ Se estiver a utilizar o seu próprio dispositivo iOS em vez de um dispositivo fo
 6. Concorde com os **Termos e Condições** e decida se quer enviar as informações de diagnóstico à Apple.
 7. Após concluir a inscrição, o seu dispositivo poderá pedir-lhe para efetuar mais ações. Alguns destes passos poderão incluir a introdução da sua palavra-passe de acesso ao e-mail ou a configuração de um código de acesso.
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

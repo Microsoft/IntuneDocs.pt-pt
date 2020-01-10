@@ -16,13 +16,13 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1665882bfc565e8b157ffdd7aa45f501e2daa47c
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 191438f262b23d7be73ecec024688cceed4e804d
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72507938"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857436"
 ---
 # <a name="you-need-to-install-sandblast-mobile-protect-on-your-android-device"></a>Tem de instalar o SandBlast Mobile Protect no seu dispositivo Android
 
@@ -60,4 +60,4 @@ Se tiver problemas com a instalação, experimente os passos de resolução de p
 
 Por vezes, as instalações podem falhar devido a problemas técnicos fora do seu controlo. Se tal acontecer, experimente instalar o SandBlast Mobile Protect [manualmente a partir da Play Store](https://play.google.com/store/apps/details?id=com.lacoon.security.fox).
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

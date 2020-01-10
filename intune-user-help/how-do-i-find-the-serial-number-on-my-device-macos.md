@@ -18,16 +18,16 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 47b6417d8aca350ee68ef64245006cca5d654e7f
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: d0423b49820a0e8e7fde1043b9e45ad7d52ad0a5
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505844"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75854981"
 ---
 # <a name="how-do-i-find-the-serial-number-on-my-device"></a>Como encontro o número de série no meu dispositivo?
 
 O número de série do seu dispositivo identifica-o de forma exclusiva e pode ajudar o suporte da empresa em determinadas tarefas, como substituir o seu dispositivo por um novo. Para localizar o número de série, aceda ao **menu Apple** > **Sobre Este Mac**.
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

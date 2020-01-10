@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2f97db16161642b09dea5525797780d81cdb639c
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: b33e7c870d5f620f7c2271c71db6d5293d0049db
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506379"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75856919"
 ---
 # <a name="effects-of-company-portal-ios-device-reset"></a>Efeitos da Portal da Empresa redefinição do dispositivo iOS 
 
@@ -44,4 +44,4 @@ Se o dispositivo for configurado apenas para acessar o email corporativo ou de e
 
 A opção de redefinição de dispositivo não está disponível para todos os dispositivos iOS. Se você for um profissional de suporte de ti e quiser saber mais sobre essas limitações, consulte [remover dispositivos usando apagar, desativar ou cancelar o registro manual do dispositivo](https://docs.microsoft.com/intune/devices-wipe).  
 
-Se você tiver dúvidas, entre em contato com o seu profissional de suporte de ti. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+Se você tiver dúvidas, entre em contato com o seu profissional de suporte de ti. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

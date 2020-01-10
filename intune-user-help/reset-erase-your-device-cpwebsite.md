@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: coferro
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 68f67d50c05d2ec6bb819c507f2374eec69a961c
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 85e35707af0ea47169a5d075bfc4844ebaa87c5c
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508427"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858192"
 ---
 # <a name="reset-device-from-company-portal-website"></a>Redefinir o dispositivo do site Portal da Empresa
 
@@ -51,4 +51,4 @@ A redefinição de dispositivo no Portal da Empresa não está disponível para 
 
 4. Uma mensagem avisa que você está prestes a apagar todo o conteúdo em seu dispositivo. Toque em **Repor** para confirmar.  
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

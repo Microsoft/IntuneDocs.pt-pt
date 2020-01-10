@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 28ba1d2d50f366e5e34fae06ae188293dd0fb8b5
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 2f075aed1c9cc00963c89a9e76122484d1a430b1
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74781214"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857644"
 ---
 # <a name="use-managed-apps-on-your-android-device"></a>Utilizar aplicações geridas no seu dispositivo Android
 As aplicações geridas são configuradas para cumprir os requisitos de segurança da sua organização e proteger os dados profissionais e escolares. Estas aplicações estão disponíveis para instalação ou utilização automaticamente no seu dispositivo. 
@@ -89,4 +89,4 @@ A lista seguinte descreve as definições que o suporte da sua empresa pode geri
 
 * Requisitos de encriptação de dados  
 
-Contacte o suporte da empresa para obter mais informações sobre as aplicações geridas no seu dispositivo. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+Contacte o suporte da empresa para obter mais informações sobre as aplicações geridas no seu dispositivo. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

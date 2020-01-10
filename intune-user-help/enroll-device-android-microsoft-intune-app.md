@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 81c842eb27b1b9131c164ced5aeed86a78a37353
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 02aab98bf74664cbdb8c7d7dccbfadba701b59f6
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506289"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75856790"
 ---
 # <a name="enroll-your-corporate-device-with-the-microsoft-intune-app"></a>Registrar seu dispositivo corporativo no aplicativo Microsoft Intune
 
@@ -119,7 +119,7 @@ Nesta seção, você inserirá o token fornecido pela empresa. Quando terminar, 
 
 4. Selecione **Inserir código**.  
 
-5. Na tela **examinar ou inserir código** , digite o código que sua organização forneceu a você.  Clique depois em **Seguinte**.  
+5. Na tela **examinar ou inserir código** , digite o código que sua organização forneceu a você.  Depois, clique em **Seguinte**.  
 
    ![Imagem de exemplo da tela de verificação ou de inserção de código, realçando o botão Avançar.](./media/token-intune-app-04.png)  
 

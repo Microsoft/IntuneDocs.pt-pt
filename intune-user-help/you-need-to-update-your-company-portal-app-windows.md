@@ -18,16 +18,16 @@ ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9b45b1a171774173833d8930b55b28e70dbdc8e6
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 2e41dd1d6e51b84bfdf9d57331e91d1880f5a5a5
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72500286"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858442"
 ---
 # <a name="your-company-portal-app-for-windows-is-out-of-date"></a>A sua aplicação Portal da Empresa para Windows está desatualizada
 
-Tem de atualizar a aplicação Portal da Empresa para poder continuar a aceder ao seu e-mail empresarial, contactos e documentos. Para corrigir este problema, abra a **Loja Microsoft** e instale a nova versão da aplicação **Portal da Empresa**.
+Tem de atualizar a aplicação do Portal da Empresa para poder continuar a aceder ao seu e-mail empresarial, contactos e documentos. Para corrigir este problema, abra a **Loja Microsoft** e instale a nova versão da aplicação **Portal da Empresa**.
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

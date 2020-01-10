@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 01b03e986cd2540c364f2b6d8d3e20412fd5b82e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 20228277e496ca6f594859d40836e50609d05a8a
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506161"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75855446"
 ---
 # <a name="enroll-your-windows-phone-81-device-in-intune"></a>Inscrever o seu dispositivo Windows Phone 8.1 no Intune  
 
@@ -35,7 +35,7 @@ Para registrar seu dispositivo no Intune, siga o conjunto de instruções que co
 ## <a name="enroll-through-company-portal"></a>Registrar por meio de Portal da Empresa  
 Siga estas etapas se você puder instalar o aplicativo Portal da Empresa do Microsoft Store. 
 
-1. Toque em iniciar **repositório**de > .  
+1. Toque em **Iniciar** > **Loja**.  
 
 2. Toque em **Pesquisar** e, em seguida, escreva **portal da empresa**.  
 
@@ -44,10 +44,10 @@ Siga estas etapas se você puder instalar o aplicativo Portal da Empresa do Micr
 
     ![Resultados da pesquisa de portal da empresa](./media/WP81-1-CP-search-store-v2.png)  
 
-4. Toque em **Portal da Empresa**  &gt; **Instalar**.  
+4. Toque em **Portal da Empresa**&gt; **instalar**.  
 
 
-    ![Instalar o portal da empresa](./media/WP81-2-CP-install-v2.png)  
+    ![Instalar portal da empresa](./media/WP81-2-CP-install-v2.png)  
 
 Inscrever o dispositivo:  
 
@@ -73,7 +73,7 @@ Inscrever o dispositivo:
 
     ![Ecrã de definições da área de trabalho](./media/WP81-enroll-3-workplace-add-acct.png)  
 
-7. Introduza mais informações conforme lhe sejam pedidas e, em seguida, toque em **iniciar sessão** para concluir a inscrição. Agora, deve conseguir ver a conta da área de trabalho listada na página **Definições** &gt;  **Área de Trabalho**.  
+7. Introduza mais informações conforme lhe sejam pedidas e, em seguida, toque em **iniciar sessão** para concluir a inscrição. Agora você deve ver sua conta de local de trabalho listada na página **configurações** &gt; **local de trabalho** .  
 
 
     ![Ecrã de conta adicionada](./media/WP81-enroll-4-account-added.png)  
@@ -81,7 +81,7 @@ Inscrever o dispositivo:
 ## <a name="enroll-through-settings-app"></a>Registrar no aplicativo de configurações  
 Siga estas etapas se você não puder acessar o Microsoft Store de seu dispositivo Windows Phone, ou se você não tiver uma conta da Microsoft.
 
-1. Toque em **Definições** &gt; **área de trabalho**.  
+1. Toque em **configurações** &gt; **local de trabalho**.  
 
 2. Toque em **adicionar conta** e, em seguida, inicie sessão com a sua conta profissional.  
 
@@ -91,4 +91,4 @@ Siga estas etapas se você não puder acessar o Microsoft Store de seu dispositi
 
 Se o suporte da empresa tiver configurado o Portal da Empresa para ser instalado durante a inscrição, o Portal da Empresa irá aparecer na sua lista de aplicações.  
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 13a6e9219c29b33404c2489bb6b60de513369e74
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 972b2cb1c87cfebcff61062633388145e45e86ba
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502090"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858031"
 ---
 # <a name="send-logs-to-the-company-portal-developers-for-ios-devices"></a>Enviar registos para os programadores do Portal da Empresa para dispositivos iOS
 
@@ -35,6 +35,6 @@ Se esta situação lhe estiver a acontecer, o Portal da Empresa precisará de al
 1. Tente fazer com que o problema ocorra novamente. Se não conseguir, não há problema, mas pode facilitar o passo seguinte caso consiga.
 2. Aceda a __Definições__ > __Privacidade__ > __Análise__ > __Dados de Análise__. Esta é uma lista das atividades de aplicações que ocorreram, desde falhas a padrões de utilização geral, e não contém quaisquer informações pessoais. Esta lista está organizada da mais recente à mais antiga. Se conseguiu reproduzir o problema, este deve ser o primeiro item que aparece na lista de atividades de aplicações nesta página. Se não conseguiu reproduzir o problema, desloque-se para baixo até encontrar o primeiro item que começa com “Portal da Empresa” e, em seguida, toque nele para o abrir.
 3. Mantenha premido o item e, em seguida, arraste os pequenos pontos azuis para cima e para baixo até que todo o texto no relatório tenha sido selecionado. Toque em __Copiar__ no menu de pop-up.
-4. Abra a sua aplicação de e-mail e cole esse conteúdo no corpo do e-mail. Envie esse e-mail para <a href="mailto:IntuneCPiOSfeedback@microsoft.com?subject=My Company Portal App Closed Unexpectedly&body=Press and hold, then paste your copied Company Portal app logs here."> IntuneCPiOSfeedback@microsoft.com </a>.
+4. Abra a sua aplicação de e-mail e cole esse conteúdo no corpo do e-mail. Envie esse e-mail para <a href="mailto:IntuneCPiOSfeedback@microsoft.com?subject=My Company Portal App Closed Unexpectedly&body=Press and hold, then paste your copied Company Portal app logs here.">IntuneCPiOSfeedback@microsoft.com</a>.
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

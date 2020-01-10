@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: b2296c8d2096dec982d9f72ab461c3cffbfcd8cf
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 7cf631ae24364a56d17ac022f6cb216a93a6ff86
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508187"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857734"
 ---
 # <a name="how-to-turn-off-microsoft-data-collection"></a>Como desativar a recolha de dados da Microsoft
 
@@ -32,4 +32,4 @@ A Microsoft recolhe automaticamente determinados dados sobre os seus produtos e 
 
 Se quiser desativar a recolha de dados de utilização no seu dispositivo iOS, abra as **Definições**, toque em **Portal da Empresa** e, em seguida, desative os **Dados de Utilização**. Para dispositivos macOS, abra o menu **Portal da Empresa** > **Preferências** e, em seguida, desmarque a opção **Permitir que a Microsoft recolha dados de utilização**.
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

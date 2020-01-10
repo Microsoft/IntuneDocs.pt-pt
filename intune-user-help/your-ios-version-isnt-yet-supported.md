@@ -19,16 +19,16 @@ ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser; seodec18
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0e0699758b31a8ca32b8522969379e8a3e502889
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: e1793b4cea70933a1351e3d49a7e95257cb2d469
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72499784"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857082"
 ---
 # <a name="your-ios-devices-operating-system-version-isnt-yet-supported"></a>A versão do sistema operativo iOS do dispositivo ainda não é suportada
 
 Com o ritmo rápido de desenvolvimento da tecnologia, por vezes o seu dispositivo poderá estar adiantado em relação ao que o suporte da empresa teve a oportunidade de testar. É possível que a versão mais recente do iOS pode não funcionar com algumas das outras ferramentas da sua empresa.
 
-Terá de contactar o suporte da empresa para resolver este problema. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+Terá de contactar o suporte da empresa para resolver este problema. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

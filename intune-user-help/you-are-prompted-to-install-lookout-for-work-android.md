@@ -16,13 +16,13 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4c0809f4ed50af4a7417e8237296f657669f3300
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: fa3d400174079a0b187d7906c3d39ebeb0022022
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508038"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857490"
 ---
 # <a name="install-lookout-for-work"></a>Instalar o Lookout for Work
 
@@ -79,5 +79,5 @@ Se tiver problemas com a instalação, experimente os passos de resolução de p
 Por vezes, as instalações podem falhar devido a problemas técnicos fora do seu controlo. Se tal acontecer, tente instalar o Lookout for Work [manualmente a partir da Play Store](https://play.google.com/store/apps/details?id=com.lookout.enterprise).
 
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
 

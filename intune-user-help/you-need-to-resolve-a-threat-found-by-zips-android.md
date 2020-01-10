@@ -16,13 +16,13 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: d1a0583b18d34dbf8b942cf2a31656d3d61c1600
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 204ee3d70e2ae65eb495eb30fbf4d5064ccc3050
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72507771"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857308"
 ---
 # <a name="resolve-a-threat-found-by-zimperium-zips"></a>Resolver uma ameaça encontrada pelo Zimperium zIPS
 
@@ -53,4 +53,4 @@ Se instalar uma aplicação que seja detetada como uma ameaça para o seu dispos
 
 Para resolver o problema, selecione a aplicação na lista de ameaças no Zimperium zIPS. Em seguida, siga as instruções que aparecem no ecrã para remover e desinstalar a aplicação.    
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980). 
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980). 

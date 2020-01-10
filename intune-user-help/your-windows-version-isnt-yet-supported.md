@@ -19,16 +19,16 @@ ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser; seodec18
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 122c4c9db86279b105749ae35834a4ee88c76fc6
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 7d63ae8a567b0d89600158187a54f3bf57455912
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72507617"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857065"
 ---
 # <a name="your-windows-devices-operating-system-version-isnt-yet-supported"></a>A versão do sistema operativo Windows do dispositivo ainda não é suportada
 
 Com o ritmo rápido de desenvolvimento da tecnologia, por vezes o seu dispositivo poderá estar adiantado em relação ao que o suporte da empresa teve a oportunidade de testar. É possível que a versão mais recente do Windows não funcione com algumas das outras ferramentas da sua empresa. 
 
-Terá de contactar o suporte da empresa para resolver este problema. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+Terá de contactar o suporte da empresa para resolver este problema. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: cdc15f6880abca53ed2110daf6169cddb48464c2
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 040ab4cecb07e471a9143278c6d87e8fe9a4964b
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508475"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858385"
 ---
 # <a name="remove-your-device-from-the-company-portal"></a>Remover o seu dispositivo do Portal da Empresa
 
@@ -47,4 +47,4 @@ Para remover o dispositivo:
 
 4. É apresentada uma mensagem a avisá-lo de que está prestes a remover o seu dispositivo. Selecione **Remove** (Remover) para confirmar.  
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

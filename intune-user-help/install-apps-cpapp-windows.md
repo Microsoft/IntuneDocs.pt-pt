@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 80fd2d54a99bc3f4ab47f48f94eb14aa1a7f630c
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 11037da11e6400f157aea6aa86c0c293c9818d31
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74126206"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75855015"
 ---
 # <a name="install-and-share-apps-on-your-device"></a>Instalar e partilhar aplicações no seu dispositivo
 
@@ -97,4 +97,4 @@ Para acessar esta página, vá para o menu de navegação e selecione **aplicati
 
 Use **classificar por** para reorganizar o tipo de atribuição de aplicativos, editor, alfabeticamente por nome ou cronologicamente por data de publicação. Use **Filtrar por** para limitar os aplicativos que você vê por status da instalação.  Se nenhum aplicativo estiver disponível, você verá uma mensagem informando que nenhum aplicativo da empresa foi instalado.  
 
-Precisa de ajuda adicional? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  
+Precisa de ajuda adicional? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  

@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: f24f41f90595de753e28bfed399e7f1ef678844c
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: ed8ac596fba9e37f0814a45ef2a0948ea31eb95b
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505772"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75855066"
 ---
 # <a name="install-and-sign-in-to-the-company-portal-app"></a>Instalar e iniciar sessão na aplicação Portal da Empresa
 
@@ -40,4 +40,4 @@ Instale a aplicação Portal da Empresa no seu dispositivo iOS para obter acesso
 
     Se está a iniciar sessão na aplicação Portal da Empresa pela primeira vez e se a sua empresa ou escola utiliza o Intune, ser-lhe-á pedido que inscreva o seu dispositivo no Intune. Para se inscrever, siga os passos na secção [inscrever o dispositivo iOS no Intune](enroll-your-device-in-intune-ios.md). Também pode [iniciar sessão noutro dispositivo](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal#sign-in-from-another-device).
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

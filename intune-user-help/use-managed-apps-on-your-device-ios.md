@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5daa9f6b9f50c561876818e75e56c9a948a8f955
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 24719e6f1fcce99149fa71b566ded4e13d1808da
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508075"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858986"
 ---
 # <a name="use-managed-apps-on-your-ios-device"></a>Utilizar aplicações geridas no seu dispositivo iOS
 
@@ -75,4 +75,4 @@ Eis alguns exemplos das opções que o suporte da empresa pode gerir numa aplica
 
 - Requisitos de encriptação de dados
 
-Contacte o suporte da empresa para obter mais informações sobre as aplicações geridas no seu dispositivo. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+Contacte o suporte da empresa para obter mais informações sobre as aplicações geridas no seu dispositivo. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

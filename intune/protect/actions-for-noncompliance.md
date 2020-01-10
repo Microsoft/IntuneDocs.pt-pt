@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/06/2019
+ms.date: 01/08/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9e3867bfc2de29c059766e134bd0d2c8801e1c70
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 50478ecb615cf39bba0a205cb06f83e47728e366
+ms.sourcegitcommit: 8f56220e7cafc5bc43135940575a9acb5afde730
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73712883"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75827841"
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices-in-intune"></a>Automatizar email e adicionar ações para dispositivos não compatíveis no Intune
 
@@ -91,7 +91,7 @@ Para enviar um e-mail aos seus utilizadores, crie um modelo de mensagem de notif
 
 Quando cria uma política de conformidade do dispositivo, o Intune cria automaticamente uma ação de não conformidade. Se um dispositivo não estiver atendendo à sua política de conformidade, essa ação marcará o dispositivo como não compatível. Pode personalizar o intervalo de tempo durante o qual o dispositivo está marcado como não conforme. Esta ação não pode ser removida.
 
-Também pode adicionar outra ação quando criar uma política de conformidade ou atualizar uma política existente.
+Além da ação padrão para marcar dispositivos como sem conformidade, você pode adicionar ações opcionais ao criar uma política de conformidade ou atualizar uma política existente.
 
 1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 

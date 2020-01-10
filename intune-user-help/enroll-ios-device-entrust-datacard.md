@@ -17,13 +17,13 @@ ROBOTS: ''
 ms.reviewer: tisilver
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: bfafa4f35d0b8f1255d66a70c3f7cd0acf01a889
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: b976e9a47a56c7af1e754f5b5b0162410e278025
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73415590"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75856397"
 ---
 # <a name="set-up-ios-or-ipados-device-with-company-portal-and-entrust-datacard"></a>Configurar o dispositivo iOS ou iPadOS com Portal da Empresa e Entrust Datacard
 
@@ -115,4 +115,4 @@ Após a conclusão do registro, você terá acesso aos recursos de trabalho, com
 * [Gerenciar aplicativos do site Portal da Empresa](manage-apps-cpweb.md)  
 * [Utilizar aplicações geridas no dispositivo](use-managed-apps-on-your-device-ios.md)  
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  

@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: bb1538d484590a19eb7525a1451b5082ebab245d
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: be980a8cd2eb7f0cbe40002f73f9bc36a36d1193
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506044"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75859071"
 ---
 # <a name="unenroll-your-android-device-from-management"></a>Anular a inscrição do seu dispositivo Android na gestão  
 
@@ -74,9 +74,9 @@ Veja como desabilitar Portal da Empresa como um administrador de dispositivo. Os
 1. Selecione **configurações** > **segurança** > **configurações de segurança adicionais** > **Administradores de dispositivo**.  
 2. Desmarque a seleção de **portal da empresa** .  
 
-**Opção 2**:
+**Opção 2**:
 
 1. Selecione **configurações** > **tela de bloqueio e segurança** > **outras configurações de segurança** > **aplicativos de administração de dispositivos**.
 2. Desmarque a seleção de **portal da empresa** .
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

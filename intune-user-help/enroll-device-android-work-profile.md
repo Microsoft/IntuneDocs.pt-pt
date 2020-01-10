@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 210eb94cf77ac703076611d2c0c06c60a12cb0ed
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: ced722fd671826e828b4dd79956a7dad1010bd84
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414973"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75856756"
 ---
 # <a name="enroll-device-with-android-work-profile"></a>Registrar dispositivo com o perfil de trabalho do Android
 
@@ -83,4 +83,4 @@ Saiba mais sobre [o que acontece quando cria um perfil de trabalho](what-happens
 
 Agora que seu dispositivo está registrado, você pode instalar aplicativos de estudante ou de trabalho em seu dispositivo. Vá para o repositório de Google Play gerenciado para localizar e instalar esses aplicativos. 
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

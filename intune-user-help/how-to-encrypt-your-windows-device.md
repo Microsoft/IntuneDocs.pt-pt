@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4202ad2bc4a9c03e572b906b43dd5d67d551b768
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 224c2a36d0f95eccbaec1a3b95340b55f088c37f
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505819"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75854930"
 ---
 # <a name="how-to-encrypt-your-windows-device"></a>Como encriptar o seu dispositivo Windows
 
@@ -36,4 +36,4 @@ Se tiver um dispositivo de ambiente de trabalho, siga as instruções abaixo par
 
 2. Clique em **Ativar o BitLocker**e, em seguida, siga as instruções apresentadas para encriptar cada uma das suas unidades.
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

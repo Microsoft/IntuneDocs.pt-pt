@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4d6d54556f01ab047cc652f1f27238b74d003795
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: ec75db08304d242d3cedc7ddd105daafce38c63f
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72501974"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857752"
 ---
 # <a name="turn-off-microsoft-usage-data-collection"></a>Desativar a recolha de dados da Microsoft
 
@@ -36,4 +36,4 @@ Para desativar a coleta de dados em seu dispositivo Android:
 2. Selecione **Definições**.
 3. Na configuração dados de uso, inverta a mudança para a posição desativado. 
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

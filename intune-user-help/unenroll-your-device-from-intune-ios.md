@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: fb8aa6213585af89c20c45f38e885644f65eab51
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: bd5384945158f3d0ef3035eaf9bc2f8375d8b153
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508089"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75859020"
 ---
 # <a name="remove-your-ios-device-from-intune"></a>Remover o seu dispositivo iOS do Intune
 
@@ -53,7 +53,7 @@ Para remover o seu dispositivo do Intune, utilize estes passos ou veja este víd
 
     - As definições alteradas no seu dispositivo quando o adicionou (por exemplo, a desativação da câmara ou o comprimento necessário específico de uma palavra-passe) deixam de ser aplicáveis.
 
-    - É possível que deixe de ter acesso a alguns recursos da empresa, como partilhas de ficheiros ou sites internos, no seu dispositivo.
+    - É possível que deixe de ter acesso a alguns recursos da empresa, como partilhas de ficheiros ou web sites internos, no seu dispositivo.
 
     - Deixará de poder utilizar aplicações e dados da empresa no seu dispositivo.
 
@@ -76,4 +76,4 @@ Existem três locais onde o Portal da Empresa armazena dados locais no seu dispo
 - **Keychain**: o seu dispositivo armazena as suas palavras-passe e outras informações utilizadas para inícios de sessão no Keychain. As aplicações da Microsoft partilham as suas informações de início de sessão em aplicações desenvolvidas pela Microsoft que tem no seu dispositivo, incluindo o Microsoft Outlook e o Microsoft Authenticator. Tal como a Análise da Apple, estas informações só podem ser removidas ao repor o seu dispositivo para as definições de fábrica. Esta ação irá apagar todas as informações pessoais no seu dispositivo. Para o fazer, abra **Definições** > **Geral** > **Repor** > **Apagar Todos os Conteúdos e Definições**.
 
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: e64911ea9b1b1d3c619a82eac9dc78e4e78a53e9
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 4540c4d58bebcbec06e73eaf51d91d6685d0243b
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508121"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75859003"
 ---
 # <a name="remove-your-windows-device-from-management"></a>Remover o seu dispositivo Windows da gestão
 
@@ -77,7 +77,7 @@ Conclua os seguintes passos para remover um dispositivo com o Windows 10 da gest
 ## <a name="remove-your-windows-81-computer"></a>Remover o seu computador com o Windows 8.1
 Conclua os seguintes passos para remover um computador com o Windows 8.1 do Intune.
 
-1. Aceda a **Definições do PC** > **Rede** > **Área de Trabalho**.
+1. Aceda a **Definições do PC** > **Rede** > **Área de trabalho**.
 2. Em **Associação à Área de Trabalho**, selecione **Sair**.
 3. Em **Ativar gestão de dispositivos**, selecione **Desativar**.
 4. Na janela de pop-up que é aberta, selecione **Desativar**.
@@ -102,4 +102,4 @@ Para eliminar a cache e os registos armazenados, siga um dos seguintes passos:
 
 * Repor a aplicação Portal da Empresa. Abra a aplicação **Definições** e selecione **Aplicações** > **Portal da Empresa** > **Opções avançadas** > **Repor**. 
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

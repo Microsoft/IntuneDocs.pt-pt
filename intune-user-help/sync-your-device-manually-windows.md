@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 289d99603314be7c1097d54d59d4a0e90cae0bed
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 81a284b686ebfddcc89336e4a98060fb63666390
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508327"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857917"
 ---
 # <a name="sync-your-windows-device-manually"></a>Sincronizar o seu dispositivo Windows manualmente
 
@@ -64,7 +64,7 @@ Também pode aceder ao controlo de sincronização fora da aplicação, a partir
 ## <a name="sync-from-settings-app"></a>Sincronizar a partir da Aplicação Definições 
 Conclua estes passos para sincronizar manualmente os seus dispositivos Microsoft HoloLens, Windows 10, Windows 10 Mobile ou Windows Phone 8.1 a partir da aplicação Definições.  
 
-### <a name="windows-10-desktop"></a>Computadores com o Windows 10
+### <a name="windows-10-desktop"></a>Windows 10 Desktop
 1. No seu dispositivo, selecione **Iniciar** > **Definições**.
 
 2. Selecione **Contas**.
@@ -150,4 +150,4 @@ Estas instruções aplicam-se a dispositivos HoloLens a executar a Atualização
 
     ![Selecionar o ícone Sincronizar](./media/wp81-3-sync-tap-sync-button.png)
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

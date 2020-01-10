@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: kakyker
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: f26594435689a4f7a178035264e006a497719d3e
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.collection: ''
+ms.openlocfilehash: e04950a67938d883b0762c03efa371fcb74d0731
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75205506"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75855481"
 ---
 # <a name="enroll-your-macos-device-using-the-company-portal-app"></a>Registrar seu dispositivo macOS usando o aplicativo Portal da Empresa  
 
@@ -102,6 +102,6 @@ O perfil de gestão é o que define a ligação de canal MDM. Desde que o perfil
 A atualização do aplicativo Portal da Empresa é feita da mesma maneira que qualquer outro aplicativo do Office, por meio do Microsoft AutoUpdate para macOS. Saiba mais sobre a [atualização de aplicativos da Microsoft para MacOS](https://support.office.com/article/Check-for-Office-for-Mac-updates-automatically-bfd1e497-c24d-4754-92ab-910a4074d7c1).  
 
 ## <a name="next-steps"></a>Passos Seguintes  
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  
 
 

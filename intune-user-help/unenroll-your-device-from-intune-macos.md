@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: d4d6ecdc84371c0f485fc1cf26065ed681f29804
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 8dd81a6c850fbb3b3d36d4f7b09cd04682e5b31e
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72501916"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857695"
 ---
 # <a name="unenroll-your-macos-device-from-company-portal"></a>Cancelar o registro de seu dispositivo macOS no Portal da Empresa
 
@@ -46,7 +46,7 @@ Quando anular a inscrição do dispositivo no Intune, eis o que acontece:
 
 - Todas as definições alteradas no dispositivo quando o adicionou (por exemplo, o comprimento da palavra-passe) deixam de ser aplicáveis.
 
-- É possível que deixe de ter acesso a alguns recursos da empresa, como partilhas de ficheiros ou sites internos, no seu dispositivo.
+- É possível que deixe de ter acesso a alguns recursos da empresa, como partilhas de ficheiros ou web sites internos, no seu dispositivo.
 
 - Deixará de poder utilizar aplicações e dados da empresa no seu dispositivo.
 
@@ -54,4 +54,4 @@ Quando anular a inscrição do dispositivo no Intune, eis o que acontece:
 
 - O acesso ao e-mail da empresa pode ser removido do dispositivo.
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

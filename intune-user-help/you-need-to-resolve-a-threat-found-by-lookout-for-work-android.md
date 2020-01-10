@@ -16,13 +16,13 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0cc2f84ad73c86a823984e6caa11dad5d4aec8a8
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: f056b44301c1d0f94dde2dbb6202ed7c78e90fbf
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72507820"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857364"
 ---
 # <a name="resolve-a-threat-found-by-lookout-for-work"></a>Resolver uma ameaça detetada pelo Lookout for Work  
 
@@ -56,4 +56,4 @@ Se instalar uma aplicação que o Lookout for Work identifica como uma ameaça, 
 
 Para recuperar o acesso que perdeu ao e-mail e aos dados da sua empresa, desinstale a aplicação duvidosa. Enquanto a aplicação permanecer no seu dispositivo, não poderá aceder aos recursos da empresa.    
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  

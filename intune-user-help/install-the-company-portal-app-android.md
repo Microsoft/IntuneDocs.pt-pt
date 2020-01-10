@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0e4ed29d6a2da79b7bfd3502ebf8ce53259f1ae6
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: c13d125d44a25ec4b574ae7ba77eac3bda586dab
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506064"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75854408"
 ---
 # <a name="install-the-company-portal-app-for-android"></a>Instalar a aplicação Portal da Empresa para Android
 
@@ -48,4 +48,4 @@ O Portal da Empresa é uma aplicação que lhe concede acesso a e-mail, ligaçõ
 
 Depois de baixar o aplicativo Portal da Empresa, você provavelmente desejará [registrar seu dispositivo no Intune](enroll-device-android-company-portal.md) para obter acesso completo às suas informações de trabalho. Também pode [iniciar sessão noutro dispositivo](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal#sign-in-from-another-device).  
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

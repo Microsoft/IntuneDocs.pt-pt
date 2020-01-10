@@ -17,13 +17,13 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 61825741a5651daa55727c706ba683628e723c8a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: d2f143eea1186a667bb3255a323e95e5211b5e97
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72490295"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857027"
 ---
 # <a name="installing-the-company-portal-app-for-windows-10"></a>Instalando o aplicativo Portal da Empresa para Windows 10  
 
@@ -55,4 +55,4 @@ Ao adicionar um computador:
 
 - O suporte da empresa poderá impor políticas no computador. Por exemplo, poderá ser necessário definir uma palavra-passe ou PIN no computador. O suporte da empresa também pode limitar o número de vezes que o utilizador pode introduzir uma palavra-passe incorreta e poderá bloquear a sua utilização do computador ou eliminar todos os dados do disco rígido do computador se tentar demasiadas vezes.
 
-Se tiver dúvidas, contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+Se tiver dúvidas, contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

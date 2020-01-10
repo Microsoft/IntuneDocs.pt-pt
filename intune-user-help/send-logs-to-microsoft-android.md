@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: a7d891b65568d4277b067e0c1556da2003fd5e23
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 38c0acd3dcacc2ed499918659cb7451fe33a49d5
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508392"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858067"
 ---
 # <a name="send-logs-to-the-company-portal-developers-for-android-devices"></a>Enviar registos dos dispositivos Android para os programadores do Portal da Empresa
 
@@ -48,4 +48,4 @@ Para enviar registos para a Microsoft:
 
 Para contactar diretamente a equipa do Portal da Empresa para Android, envie um e-mail através do endereço <a href="mailto:wintunedroidfbk@microsoft.com?subject=Send logs to Microsoft&body=Describe the issue you are having.">wintunedroidfbk@microsoft.com</a>. 
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

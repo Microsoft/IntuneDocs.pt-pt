@@ -17,13 +17,13 @@ ROBOTS: ''
 ms.reviewer: scottduf
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5eb532f830d20d9e4ff6c323fd3b7788bd3a11b2
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 6c5c95b6a4fe3261befe2fc5e39fce0ebf4deecf
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505883"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75855186"
 ---
 # <a name="get-help-and-support-in-company-portal-for-windows-10"></a>Obtenha ajuda e suporte no Portal da Empresa para Windows 10
 
@@ -58,4 +58,4 @@ Ao selecionar **problema de relatório para a Microsoft**, você vai para a pág
 * Deixe uma revisão para o aplicativo no Microsoft Store   
 
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

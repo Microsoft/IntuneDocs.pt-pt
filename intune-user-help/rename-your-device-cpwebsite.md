@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7674366cc0332afd8eba2a4f145f47e40d5472e2
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 4cca8d649dbd64b0334dfbc83bbd75f2a0e36f3d
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508448"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858261"
 ---
 # <a name="rename-your-device-from-the-company-portal-website"></a>Mudar o nome do dispositivo a partir do site do Portal da Empresa
 
@@ -44,4 +44,4 @@ Mudar o nome de um dispositivo gerido inscrito a partir do site do Portal da Emp
 
 4. Na caixa onde aparece o nome do seu dispositivo, escreva um novo nome de dispositivo. Em seguida, toque no botão **Mudar o nome**. O dispositivo aparece agora com o novo nome.  
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  

@@ -16,15 +16,15 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 28577f3414125e9dba866d738e63a5df491530c4
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: f14ed6d3568964ae64cb87311800d263e38dd5f4
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72507798"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857399"
 ---
-# <a name="resolve-a-threat-found-by-symantec-endpoint-protection-mobile"></a>Resolver uma ameaça detetada pelo Symantec Endpoint Protection Mobile
+# <a name="resolve-a-threat-found-by-symantec-endpoint-protection-mobile"></a>Resolver uma ameaça encontrada pelo Symantec Endpoint Protection Mobile
 
 O Symantec Endpoint Protection (SEP) Mobile é um serviço do Mobile Threat Defender que identifica potenciais ameaças nos seus dispositivos Android. Estas ameaças são comunicadas à aplicação Portal da Empresa e são apresentadas como problemas de não conformidade por resolver. Se o seu dispositivo for identificado como não conforme, poderá não ser possível:
 
@@ -53,5 +53,5 @@ Se instalar uma aplicação que seja detetada como uma ameaça para o seu dispos
 
 Para resolver o problema, selecione a aplicação na lista de ameaças no SEP Mobile. Em seguida, siga as instruções que aparecem no ecrã para remover e desinstalar a aplicação.  
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  
 

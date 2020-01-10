@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 961c081b17d380bd00965708b6acd57b8059b2e0
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: fbe2c7933d0d012a7c85df4e9c5b6e8e94fc9805
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506317"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75856807"
 ---
 # <a name="enroll-your-organization-provided-macos-device-in-management"></a>Inscrever um dispositivo macOS fornecido pela organização para gestão
 
@@ -78,4 +78,4 @@ Transfira a aplicação Portal da Empresa do Intune para macOS no seu dispositiv
 6. Localize o seu dispositivo e clique em **Register** (Registar).
 7. Clique em **Continue** (Continuar) > **Done** (Concluído). O seu dispositivo deverá agora aparecer na aplicação Portal da Empresa como um dispositivo empresarial e em conformidade.
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

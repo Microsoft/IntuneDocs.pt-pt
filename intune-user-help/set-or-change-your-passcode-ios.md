@@ -16,13 +16,13 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 50b5db465b79e3309375a34078c645a52f0427f0
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: acdf5dfd817dcd9a76e6192749009f1a0c254d25
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508289"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857970"
 ---
 # <a name="set-or-change-your-passcode"></a>Definir ou alterar o código de acesso
 
@@ -46,4 +46,4 @@ Se você tiver problemas para criar ou alterar sua senha, entre em contato com o
 2. Toque em **Alterar Código de Acesso** e introduza a palavra-passe antiga.
 3. Introduza um novo código de acesso que cumpra os requisitos do suporte da empresa e, em seguida, introduza-o novamente para o confirmar.
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

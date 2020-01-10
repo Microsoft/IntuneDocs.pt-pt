@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 085ec1f329eb9b423797a110ada53eb7693edf6f
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 6fb6c1295947b9f51ef861b1fcc6582c6690137f
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506133"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75855429"
 ---
 # <a name="how-to-enroll-your-windows-81-or-windows-rt-81-device-in-intune"></a>Como inscrever o dispositivo Windows 8.1 ou Windows RT 8.1 no Intune  
 
@@ -33,7 +33,7 @@ Se a sua empresa ou escola utiliza o Microsoft Intune, pode inscrever os seus di
 
 Inscrever o dispositivo Windows 8.1 ou Windows RT 8.1  
 
-1. No dispositivo, toque em **Definições** &gt; **Definições do PC** &gt; **Rede** &gt; **Área de trabalho**.  
+1. No dispositivo, toque em **configurações** &gt; **PC configurações** &gt; **rede** &gt; **local de trabalho**.  
 
     ![nav-to-workplace](./media/W81-1-workplacejoin.png)  
 
@@ -59,9 +59,9 @@ Inscrever o dispositivo Windows 8.1 ou Windows RT 8.1
 
     ![enrollment-complete](./media/W81-5-enrolled-done.png)
 
-Também recomendamos a instalação da aplicação Portal da Empresa, que lhe permite identificar e obter facilmente as aplicações da empresa relevantes para si e a sua função. Consoante o modo como a empresa configurou o Intune, a aplicação Portal da Empresa pode ter sido instalada como parte do seu processo de inscrição. Para verificar se tem a aplicação, procure **Portal da Empresa** na lista de aplicações. Se não vir o Portal da Empresa na lista de aplicações, siga estes passos para instalá-lo.
+Também recomendamos a instalação da aplicação do Portal da Empresa, que lhe permite identificar e obter facilmente as aplicações da empresa relevantes para si e a sua função. Consoante o modo como a empresa configurou o Intune, a aplicação Portal da Empresa pode ter sido instalada como parte do seu processo de inscrição. Para verificar se tem a aplicação, procure **Portal da Empresa** na lista de aplicações. Se não vir o Portal da Empresa na lista de aplicações, siga estes passos para instalá-lo.
 
-1. Toque em **Iniciar** &gt; **Loja**.  
+1. Toque em iniciar **repositório**de &gt;.  
 
 2. Toque em **Pesquisar** e, em seguida, escreva **portal da empresa**.  
 
@@ -69,4 +69,4 @@ Também recomendamos a instalação da aplicação Portal da Empresa, que lhe pe
 
 4. Toque em **Instalar** ou em **Gratuito**. A opção apresentada depende da forma como a sua empresa configurou a aplicação.  
 
-Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  
+Ainda precisa de ajuda? Contacte o suporte da empresa. Para encontrar as informações de contacto dele, verifique o [Web site do Portal da Empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  
