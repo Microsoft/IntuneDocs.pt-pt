@@ -17,12 +17,12 @@ ms.reviewer: annovich
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 26013ab06cabdfd64ec3cd34254e3cfa2bb2428d
-ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
-ms.translationtype: HT
+ms.openlocfilehash: 5209ce7fba30a156de055503751104f9090d49d7
+ms.sourcegitcommit: e7052114324b80d0503b107c934bb90b8eb29704
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75654265"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75755998"
 ---
 # <a name="use-device-encryption-with-intune"></a>Usar a criptografia de dispositivo com o Intune
 
@@ -38,6 +38,8 @@ O Intune também fornece um relatório de [criptografia](encryption-monitor.md) 
 ## <a name="filevault-encryption-for-macos"></a>Criptografia FileVault para macOS
 
 Use o Intune para configurar a criptografia de disco FileVault em dispositivos que executam o macOS. Em seguida, use o relatório de criptografia do Intune para exibir os detalhes de criptografia para esses dispositivos e para gerenciar as chaves de recuperação para dispositivos criptografados FileVault.
+
+Observe que o registro de dispositivo aprovado pelo usuário é necessário para que o FileVault funcione no dispositivo. O usuário deve aprovar manualmente o perfil de gerenciamento do System Prefrences para o registro a ser considerado aprovado pelo usuário. 
 
 O FileVault é um programa de criptografia de disco completo que está incluído no macOS. Você pode usar o Intune para configurar o FileVault em dispositivos que executam o **macOS 10,13 ou posterior**.
 
@@ -72,14 +74,7 @@ Para obter detalhes sobre a configuração de FileVault que você pode gerenciar
 
 7. Defina as [configurações de FileVault](endpoint-protection-macos.md#filevault) restantes para atender às suas necessidades de negócios e selecione **OK**.
 
-   > [!IMPORTANT]
-   > Há um problema conhecido quando a configuração **desabilitar prompt em sair** está definida como *habilitar*. Quando definido como *habilitar*, a configuração para o **número de vezes permitido para bypass** deve ser definida como um valor e não deve ser definida como *não configurada*. Se definido como *não configurado*, o perfil falha no dispositivo. Nesse cenário, o dispositivo informa o **Resumo do estado do perfil** como **erro** sem mais detalhes.
-   >
-   > Quando **desabilitar prompt na saída** estiver definido como *não configurado*, o **número de vezes permitido para bypass** pode *não ser configurado* ou ter um valor.
-   >
-   > Este problema será resolvido numa atualização futura.
-
-8. Conclua a configuração de configurações adicionais e salve o perfil.  
+  8. Conclua a configuração de configurações adicionais e salve o perfil.  
 
 ### <a name="manage-filevault"></a>Gerenciar FileVault
 

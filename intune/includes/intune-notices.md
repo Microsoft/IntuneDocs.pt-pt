@@ -7,12 +7,12 @@ ms.topic: include
 ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: a6ac1a5435104c1eeae203621179e62aa2b17568
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
-ms.translationtype: HT
+ms.openlocfilehash: e745290991da4d80c7e3839250edbfdd64ef1b7a
+ms.sourcegitcommit: 01c57ac880dcb5f474908977c89810f5bedaf326
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207298"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75760976"
 ---
 Esses avisos fornecem informações importantes que podem ajudá-lo a se preparar para futuras alterações e recursos do Intune.
 
@@ -55,38 +55,6 @@ Após 20 de fevereiro de 2020, esses dispositivos não receberão nenhuma atuali
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>O que preciso de fazer para me preparar para esta alteração?
 Você pode verificar seus relatórios do Intune para ver quais dispositivos ou usuários podem ser afetados. Aceda a Dispositivos > Todos os dispositivos e filtre por SO. Você pode adicionar colunas adicionais para ajudar a identificar quem em sua organização tem dispositivos em execução Windows Phone 8,1. Solicite que os usuários finais atualizem seus dispositivos para uma versão do sistema operacional com suporte.
-
-### <a name="update-your-intune-outlook-app-protection-policies-app--2576686--"></a>Atualizar suas políticas de proteção de aplicativo do Outlook do Intune (aplicativo)<!--2576686-->
-Talvez seja necessário executar uma ação se você recebeu MC195618 em seu centro de mensagens. Como compartilhado em Microsoft 365 IDs de recurso de roteiro: 56325 e 56326, o Intune e o Outlook para iOS e Android estão distribuindo o suporte para limitar dados confidenciais em notificações de email e lembretes de calendário. Como resultado desses aprimoramentos, o Outlook para iOS e Android removerá o suporte para várias chaves de configuração de aplicativo de proteção de dados que você está aproveitando no momento para gerenciar notificações.
-
-#### <a name="how-does-this-affect-me"></a>Como é que isto me afeta?
-Embora os novos recursos não tenham sido enviados, quando isso ocorre, as seguintes chaves de configuração de aplicativo não funcionarão mais no Outlook para iOS e Android:
-- com. Microsoft. Outlook. mail. NotificationsEnabled
-- com. Microsoft. Outlook. mail. NotificationsEnabled. UserChangeAllowed
-- com. Microsoft. Outlook. Calendar. NotificationsEnabled
-- com. Microsoft. Outlook. Calendar. NotificationsEnabled. UserChangeAllowed
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>O que preciso de fazer para me preparar para esta alteração?
-Recomendamos que você defina a configuração de proteção de dados de política de Proteção de Aplicativo do Intune "notificações de dados da org" com um valor de "bloquear dados da organização" em preparação para esse novo recurso. A partir de 16 de dezembro de 2019, o Outlook para iOS e Android honrará a configuração de proteção de dados de "notificações de dados da organização" e não dará mais suporte às chaves mencionadas anteriormente. Definir essa nova configuração garantirá que os dados confidenciais não sejam vazados quando as chaves de configuração acima não forem mais suportadas. Além disso, o Outlook está fornecendo granularidade adicional quando a configuração de proteção de dados "notificações de dados da organização" está definida como "bloquear dados da organização" com uma configuração de aplicativo adicional, "notificações de calendário". A combinação das configurações de política de proteção de aplicativo e de configuração de aplicativo limita as informações confidenciais nas notificações por email, ao mesmo tempo em que expõe informações confidenciais em notificações de calendário, para que os usuários possam acessar suas reuniões por glancing rapidamente no centro de notificação ou notificação.
-
-#### <a name="additional-information"></a>Informações adicionais
-Para obter mais informações sobre configurações do aplicativo e configurações do Outlook, consulte:
-- [Configurações de política de proteção de aplicativo, Android](../apps/app-protection-policy-settings-android.md)
-- [Configurações de política de proteção de aplicativo, iOS](../apps/app-protection-policy-settings-ios.md)
-- [Implantando definições de configuração de aplicativo do Outlook para iOS e Android](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune)
-
-
-### <a name="intune-plan-for-change-windows-10-version-1703-company-portal-moving-out-of-support--5026679--"></a>Plano do Intune para alteração: Windows 10, versão 1703 Portal da Empresa saindo do suporte<!--5026679-->
-O Windows 10, versão 1703 (também conhecido como Windows 10, RS2) foi movido para fora do serviço em 8 de outubro de 2019 para as edições Enterprise e EDU. O Intune terminará o suporte para o aplicativo de Portal da Empresa correspondente para RS2/RS1 a partir de 26 de dezembro de 2019.
-
-#### <a name="how-does-this-affect-me"></a>Como é que isto me afeta?
-Avançando, você não verá novos recursos na versão específica do aplicativo Portal da Empresa, embora possamos continuar a dar suporte a essa versão do aplicativo Portal da Empresa até 26 de dezembro de 2019, incluindo fornecer quaisquer atualizações de segurança para o aplicativo Portal da Empresa como precisa. No entanto, como o Windows 10, a versão 1703 não receberá nenhuma atualização de segurança depois de sair da manutenção, é altamente recomendável que você atualize seus dispositivos Windows para uma versão mais recente do Windows e verifique se você está no aplicativo Portal da Empresa mais recente para continuar a obter novos recursos e funcionalidades adicionais.
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>O que preciso de fazer para me preparar para esta alteração?
-As etapas executadas dependem de como seu ambiente está configurado. No entanto, em geral, você deve identificar os dispositivos que têm a versão mais antiga do sistema operacional e/ou o Portal da Empresa em seu dispositivo e atualizar. Para definir os anéis de atualização do Windows 10, faça logon no Intune – > de atualizações de software – anéis de atualização do Windows 10. A versão mais recente do Portal da Empresa é a versão 10.3.5601.0. Direcione seus usuários para adquiri-lo do Microsoft Store para se manter atualizado com versões futuras. Você também pode usar o Intune para instalar a versão mais recente em seus dispositivos Windows por meio do [Microsoft Store for Business](https://docs.microsoft.com/intune/windows-store-for-business).
-
-#### <a name="additional-information"></a>Informações adicionais
-[Adicionar manualmente a aplicação Portal da Empresa do Windows 10 através do Microsoft Intune](https://docs.microsoft.com/intune/store-apps-company-portal-app)
 
 
 ### <a name="take-action-use-microsoft-edge-for-your-protected-intune-browser-experience--5728447--"></a>Agir: Use o Microsoft Edge para sua experiência de navegador do Intune protegida<!--5728447-->
