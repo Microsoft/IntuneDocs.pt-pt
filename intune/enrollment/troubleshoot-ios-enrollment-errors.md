@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 46b46cd4a407df686e094198c588371ed4a01bb6
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: de0d85b7e7fbc39e7ee78c3b54da08158b02b009
+ms.sourcegitcommit: e4602481a25a5e12379f673dfe801c611f51c35b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74832579"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75731495"
 ---
 # <a name="troubleshoot-ios-device-enrollment-problems-in-microsoft-intune"></a>Solucionar problemas de registro de dispositivo iOS no Microsoft Intune
 
@@ -40,7 +40,7 @@ Colete as seguintes informações sobre o problema:
 - Qual plataforma (Android, iOS, Windows) tem o problema?
 - Quantos usuários são afetados? Todos os usuários foram afetados ou apenas alguns?
 - Quantos dispositivos são afetados? Todos os dispositivos foram afetados ou apenas alguns?
-- O que é a autoridade de MDM? Se for System Center Configuration Manager, qual versão do Configuration Manager você está usando?
+- O que é a autoridade de MDM? Se for Configuration Manager, qual versão do Configuration Manager você está usando?
 - Como o registro está sendo executado? Ele é "Traga seu próprio dispositivo" (BYOD) ou DEP (Programa de registro de dispositivos da Apple) com perfis de registro?
 
 ## <a name="error-messages"></a>Mensagens de erro
@@ -186,7 +186,7 @@ Se a sua empresa utilizar vários domínios para as credenciais do utilizador, c
 **Causa:** O certificado do Apple Push Notification Service (APNs) está ausente, inválido ou expirou.
 
 #### <a name="resolution"></a>Resolução
-Verifique se um certificado APNs válido foi adicionado ao Intune. Para obter mais informações, consulte [Configurar o gerenciamento de dispositivos IOS e Mac](https://docs.microsoft.com/intune-classic/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune). 
+Verifique se um certificado APNs válido foi adicionado ao Intune. Para obter mais informações, consulte [Configurar o registro do IOS](ios-enroll.md).
 
 ### <a name="accountnotonboarded"></a>AccountNotOnboarded
 
@@ -199,7 +199,7 @@ Renove o certificado APNs e registre novamente o dispositivo.
 > Certifique-se de renovar o certificado APNs. Não substitua o certificado APNs. Se você substituir o certificado, será necessário registrar novamente todos os dispositivos iOS no Intune. 
 
 - Para renovar o certificado APNs no Intune autônomo, consulte [renovar Apple MDM Push Certificate](apple-mdm-push-certificate-get.md#renew-apple-mdm-push-certificate).
-- Para renovar o certificado APNs no Intune híbrido com Configuration Manager, consulte [Configurar o gerenciamento de dispositivo híbrido do IOS com System Center Configuration Manager e Microsoft Intune](https://docs.microsoft.com/sccm/mdm/deploy-use/enroll-hybrid-ios-mac).
+- Para renovar o certificado APNs no Intune híbrido com Configuration Manager, consulte [Configurar o gerenciamento de dispositivo híbrido do IOS com Configuration Manager e Microsoft Intune](https://docs.microsoft.com/configmgr/mdm/deploy-use/enroll-hybrid-ios-mac).
 - Para renovar o certificado APNs no Office 365, consulte [criar um certificado APNs para dispositivos IOS](https://support.office.com/article/Create-an-APNs-Certificate-for-iOS-devices-522b43f4-a2ff-46f6-962a-dd4f47e546a7).
 
 ### <a name="xpc_type_error-connection-invalid"></a>XPC_TYPE_ERROR conexão inválida

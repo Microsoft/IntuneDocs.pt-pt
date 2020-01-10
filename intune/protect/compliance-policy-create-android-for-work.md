@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/19/2019
+ms.date: 01/07/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 42127964f72177bda1808bf4b9285af52cf32b80
-ms.sourcegitcommit: 42183c87b137710b8529049f8710d47127e99900
+ms.openlocfilehash: 60244bb268f7becadc427c397d7c2d1562bcf6b5
+ms.sourcegitcommit: ea81ad5f33f18d9fe43254e27e02de5eaef74a05
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75303042"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75722611"
 ---
 # <a name="android-enterprise-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Definições do Android Enterprise para marcar dispositivos como conformes ou não conformes com o Intune
 
@@ -54,15 +54,7 @@ Enquanto administrador do Intune, utilize estas definições de conformidade par
   - **Alta** -essa opção é a menos segura, pois permite todos os níveis de ameaça. Poderá ser útil se utilizar esta solução apenas para fins de relatórios.
   
 > [!NOTE] 
-> Os seguintes provedores de defesa contra ameaças móveis (MTD) dão suporte a implantações de proprietário de dispositivo Android Enterprise usando a configuração de aplicativo:
-> - Melhor mobilidade 
-> - Check Point SandBlast Mobile
-> - Lookout for Work
-> - Pradeo
-> - Sophos Mobile
-> - Zimperium 
->  
->  Verifique com seu provedor MTD a configuração exata necessária para dar suporte a plataformas do proprietário do dispositivo Android Enterprise no Intune. Essa lista é atualizada, pois o MTD parters dá suporte a cenários de proprietário do dispositivo Android Enterprise. 
+> Todos os provedores de MTD (defesa contra ameaças móveis) têm suporte em implantações de proprietário do dispositivo Android Enterprise usando a configuração do aplicativo. Verifique com seu provedor MTD a configuração exata necessária para dar suporte a plataformas do proprietário do dispositivo Android Enterprise no Intune.
 
 #### <a name="google-play-protect"></a>Google Play Protect
 

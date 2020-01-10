@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/04/2019
+ms.date: 01/06/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9b848bc3cd6461b5c31e940ffbe330bc60374795
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 442432e7638c69083dcad5abc571c00e4051553d
+ms.sourcegitcommit: e4602481a25a5e12379f673dfe801c611f51c35b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206895"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75731529"
 ---
 # <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Use os modelos do Windows 10 para definir as configurações de política de grupo no Microsoft Intune
 
@@ -52,29 +52,31 @@ Este artigo lista as etapas para criar um modelo para dispositivos Windows 10 e 
     - **Plataforma**: selecione **Windows 10 e posterior**.
     - **Tipo de perfil**: selecione **modelos administrativos**.
 
-4. Selecione **Criar**. Na nova janela, selecione **configurações**. Todas as configurações são listadas e você pode usar as setas antes e próximo para ver mais configurações:
+4. Selecione **Criar**. Na janela novo, selecione a lista suspensa e selecione **todos os produtos**. Na lista, você também pode filtrar as configurações para mostrar apenas as configurações do **Windows** , mostrar apenas as configurações **do Office** , ou mostrar apenas as configurações de **borda versão 77 ou posteriores** :
 
-    ![Veja um exemplo de lista de configurações e use os botões anterior e próximo](./media/administrative-templates-windows/administrative-templates-sample-settings-list.png)
-
-    > [!TIP]
-    > As configurações do Windows no Intune correlacionam-se ao caminho da política de grupo local que você vê no Editor de Política de Grupo Local (`gpedit`).
-
-5. Na lista suspensa, selecione **todos os produtos**. Na lista, você também pode filtrar as configurações para mostrar apenas as configurações do **Windows** , mostrar apenas as configurações **do Office** , ou mostrar apenas as configurações de **borda versão 77 ou posteriores** :
-
-    ![Filtre a lista para mostrar todas as configurações do Windows ou do Office em modelos administrativos no Intune](./media/administrative-templates-windows/administrative-templates-choose-windows-office-all-products.png)
+    > [!div class="mx-imgBorder"]
+    > ![filtrar a lista para mostrar todas as janelas ou todas as configurações do Office em modelos administrativos no Intune](./media/administrative-templates-windows/administrative-templates-choose-windows-office-all-products.png)
 
     > [!NOTE]
     > As configurações do Microsoft Edge se aplicam a:
     >
-    > - Microsoft Edge versão 77 e posterior. Para configurar o Microsoft Edge versão 45 e anteriores, consulte [configurações de restrição de dispositivo do navegador Microsoft Edge](device-restrictions-windows-10.md#microsoft-edge-browser).
+    > - Microsoft Edge versão 77 e mais recente. Para configurar o Microsoft Edge versão 45 e anteriores, consulte [configurações de restrição de dispositivo do navegador Microsoft Edge](device-restrictions-windows-10.md#microsoft-edge-browser).
     > - Windows 10 RS4 e mais recente com [KB 4512509](https://support.microsoft.com/kb/4512509) instalado
     > - Windows 10 RS5 e mais recente com [KB 4512534](https://support.microsoft.com/kb/4512534) instalado
     > - Windows 10 19H1 e mais recente com [KB 4512941](https://support.microsoft.com/kb/4512941) instalado
 
+5. Todas as configurações são listadas e você pode usar as setas antes e próximo para ver mais configurações:
+
+    > [!div class="mx-imgBorder"]
+    > ![ver um exemplo de lista de configurações e usar os botões anterior e próximo](./media/administrative-templates-windows/administrative-templates-sample-settings-list.png)
+
+    > [!TIP]
+    > As configurações do Windows no Intune correlacionam-se ao caminho da política de grupo local que você vê no Editor de Política de Grupo Local (`gpedit`).
+
 6. Selecione qualquer configuração. Por exemplo, filtre no **Office**e selecione **Ativar navegação restrita**. Uma descrição detalhada da configuração é mostrada. Escolha **habilitado**, **desabilitado**ou deixe a configuração como **não configurado** (padrão). A descrição detalhada também explica o que acontece quando você escolhe **habilitado**, **desabilitado**ou **não configurado**.
 7. Selecione **OK** para guardar as alterações.
 
-Continue a percorrer a lista de configurações e defina as configurações desejadas em seu ambiente. Aqui estão alguns exemplos:
+Continue a percorrer a lista de configurações e defina as configurações desejadas em seu ambiente. Estes são alguns exemplos:
 
 - Use a configuração de **configurações de notificação de macro do VBA** para lidar com macros do VBA em diferentes programas de Microsoft Office, incluindo o Word e o Excel.
 - Use a configuração **permitir downloads de arquivos** para permitir ou impedir downloads do Internet Explorer.
@@ -88,13 +90,15 @@ Continue a percorrer a lista de configurações e defina as configurações dese
 
 Há centenas de configurações disponíveis nesses modelos. Para facilitar a localização de configurações específicas, use os recursos internos:
 
-- Em seu modelo, selecione as colunas **configurações**, **estado**, **tipo de configuração**ou **caminho** para classificar a lista. Por exemplo, selecione a coluna **caminho** para ver todas as configurações no caminho `Microsoft Excel`:
+- Em seu modelo, selecione as colunas **configurações**, **estado**, **tipo de configuração**ou **caminho** para classificar a lista. Por exemplo, selecione a coluna **caminho** e use a seta avançar para ver as configurações no caminho `Microsoft Excel`:
 
-  ![Clique em caminho para mostrar todas as configurações agrupadas pela política de grupo ou caminho ADMX em modelos administrativos no Intune](./media/administrative-templates-windows/path-filter-shows-excel-options.png)
+  > [!div class="mx-imgBorder"]
+  > ![clique em caminho para mostrar todas as configurações agrupadas pela política de grupo ou caminho ADMX em modelos administrativos no Intune](./media/administrative-templates-windows/path-filter-shows-excel-options.png)
 
-- Em seu modelo, use a caixa de **pesquisa** para localizar configurações específicas. Você pode pesquisar definindo o título ou o caminho. Por exemplo, pesquise por `copy`. Todas as configurações com `copy` são mostradas:
+- Em seu modelo, use a caixa de **pesquisa** para localizar configurações específicas. Você pode pesquisar por configuração, ou caminho. Por exemplo, procure `copy`. Todas as configurações com `copy` são mostradas:
 
-  ![Procurar cópia para mostrar todas as configurações do Windows e do Office em modelos administrativos no Intune](./media/administrative-templates-windows/search-copy-settings.png) 
+  > [!div class="mx-imgBorder"]
+  > ![Pesquisar por cópia para mostrar todas as configurações do Windows e do Office em modelos administrativos no Intune](./media/administrative-templates-windows/search-copy-settings.png) 
 
   Em outro exemplo, pesquise por `microsoft word`. Você verá todas as configurações que pode definir para o programa Microsoft Word. Pesquise `explorer` para ver todas as configurações do Internet Explorer que você pode adicionar ao seu modelo.
 
@@ -103,3 +107,5 @@ Há centenas de configurações disponíveis nesses modelos. Para facilitar a lo
 O modelo é criado, mas não está fazendo nada ainda. Em seguida, [atribua o modelo, também chamado de perfil,](device-profile-assign.md) e [monitore seu status](device-profile-monitor.md).
 
 [Atualize o Office 365 usando modelos administrativos](administrative-templates-update-office.md).
+
+[Tutorial: usar a nuvem para configurar a política de grupo em dispositivos Windows 10 com modelos ADMX e Microsoft Intune](tutorial-walkthrough-administrative-templates.md)
