@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5f290370dd6ec05677a7073d9ca3edd854c9aa5e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: ecb043300578e5eba0613b6fa5f0fb249b1e515c
+ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505581"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75692151"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>Inscrever automaticamente dispositivos Android através do Samsung Knox Mobile Enrollment
 
@@ -75,7 +75,7 @@ Quando a sua empresa for registada com êxito, pode criar o seu perfil MDM para 
 
 ### <a name="for-android"></a>Para Android
 
-Para obter orientações passo a passo, consulte as instruções do [Assistente de configuração de perfil do Samsung Knox](https://docs.samsungknox.com/KME-Getting-Started/Content/getting-started-wizard.htm) .
+Para obter orientações passo a passo, consulte as instruções de [criação de perfil do Samsung](https://docs.samsungknox.com/KME-Getting-Started/Content/create-profiles.htm) .
 
 | Campos do Perfil MDM| Obrigatório? | Valores |
 |-------------------|-----------|-------|

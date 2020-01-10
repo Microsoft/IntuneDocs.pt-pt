@@ -17,12 +17,12 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: shpate
-ms.openlocfilehash: 7ce6def40c6c0fff3a28f884c458220283979234
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 001e68fdbab7074abb4e1bbefc697d3e34c47762
+ms.sourcegitcommit: 107fef144013b01ed768ca8973373f9cb3f0f7dc
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74465769"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75683787"
 ---
 # <a name="integrate-windows-hello-for-business-with-microsoft-intune"></a>Integrar o Windows Hello para Empresas com o Microsoft Intune  
 
@@ -53,9 +53,9 @@ Utilize este artigo para criar uma política do Windows Hello para Empresas pred
 
 ## <a name="create-a-windows-hello-for-business-policy"></a>Criar uma política do Windows Hello para Empresas
 
-1. Entre no [Centro de administração do Microsoft Endpoint Manager] (https://go.microsoft.com/fwlink/?linkid=2109431.
+1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-2. Vá para **dispositivos** > registro * * > **registrar dispositivos** > **registro do Windows** > **Windows Hello para empresas**. O painel do Windows Hello para empresas é aberto.
+2. Vá para **dispositivos** >  **registro** > **registrar dispositivos** > **registro do Windows** > **Windows Hello para empresas**. O painel do Windows Hello para empresas é aberto.
 
 3. Selecione uma das seguintes opções para **Configurar o Windows Hello para empresas**:
 

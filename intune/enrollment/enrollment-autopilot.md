@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f15ddae79cdfec5635afff08abaee181e0517cc8
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: fd320dddeb7717461188bdb701044bf060e7d75e
+ms.sourcegitcommit: 0d9e1452fcf5f15a80230838f80a427b9951cdb1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207235"
+ms.lasthandoff: 12/21/2019
+ms.locfileid: "75324887"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Inscrever dispositivos Windows no Intune com o Windows Autopilot  
 O Windows Autopilot simplifica a inscrição de dispositivos no Intune. A criação e manutenção de imagens personalizadas do sistema operativo são um processo moroso. Também poderá demorar a aplicar estas imagens personalizadas do sistema operativo a novos dispositivos para as preparar para utilização antes de as disponibilizar aos seus utilizadores finais. Com o Microsoft Intune e o Autopilot, pode fornecer novos dispositivos aos seus utilizadores finais sem ter de criar, manter e aplicar imagens de sistema operativo personalizadas aos dispositivos. Ao utilizar o Intune para gerir dispositivos do Autopilot, pode gerir políticas, perfis, aplicações, entre outros, após estes serem inscritos. Para uma descrição geral das vantagens, cenários e pré-requisitos, veja [Descrição geral do Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
@@ -53,7 +53,7 @@ Pode adicionar dispositivos Windows Autopilot ao importar um ficheiro CSV com as
 
     ![Captura de ecrã dos dispositivos Windows Autopilot](./media/enrollment-autopilot/autopilot-import-device.png)
 
-2. Em **Adicionar Dispositivos do Windows Autopilot**, procure um ficheiro CSV que liste os dispositivos que pretende adicionar. O arquivo CSV deve listar os números de série, as IDs de produto do Windows, os hashes de hardware, as marcas de grupo opcionais e o usuário atribuído opcional. Você pode ter até 500 linhas na lista. Use o cabeçalho e o formato de linha mostrados abaixo:
+2. Em **Adicionar Dispositivos do Windows Autopilot**, procure um ficheiro CSV que liste os dispositivos que pretende adicionar. O arquivo CSV deve listar os números de série, as IDs de produto do Windows, os hashes de hardware, as marcas de grupo opcionais e o usuário atribuído opcional. Você pode ter até 500 linhas na lista. Para obter informações sobre como obter informações sobre o dispositivo, consulte [adicionando dispositivos ao Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/add-devices#device-identification). Use o cabeçalho e o formato de linha mostrados abaixo:
 
     `Device Serial Number,Windows Product ID,Hardware Hash,Group Tag,Assigned User`</br>
     `<serialNumber>,<ProductID>,<hardwareHash>,<optionalGroupTag>,<optionalAssignedUser>`
@@ -87,7 +87,7 @@ Pode adicionar dispositivos Windows Autopilot ao importar um ficheiro CSV com as
 5. Selecione **Criar**.  
 
 ## <a name="create-an-autopilot-deployment-profile"></a>Criar um perfil de implementação do Autopilot
-Os perfis de implementação do Autopilot são utilizados para configurar os dispositivos do Autopilot. Você pode criar até 350 perfis por locatário.
+Os perfis de implementação do Autopilot são utilizados para configurar os dispositivos Autopilot. Você pode criar até 350 perfis por locatário.
 1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **dispositivos** > **windows** > **registro do Windows** > perfis de **implantação** > **Criar perfil**.
 2. Na página **noções básicas** , digite um **nome** e uma **Descrição**opcional.
 
@@ -97,22 +97,22 @@ Os perfis de implementação do Autopilot são utilizados para configurar os dis
 4. Selecione **Seguinte**.
 5. Na página **OOBE (instalação inicial do uso)** , para o modo de **implantação**, escolha uma destas duas opções:
     - **Orientado pelo utilizador**: os dispositivos com este perfil são associados ao utilizador que inscreve o dispositivo. Precisa de credenciais de utilizador para inscrever o dispositivo.
-    - **Autoimplantação (visualização)**: os dispositivos do Windows 10, versão 1809 ou posteriores com esse perfil não estão associados ao usuário que está registrando o dispositivo. Não são necessárias credenciais de utilizador para inscrever o dispositivo. Quando um dispositivo não tem nenhum usuário associado a ele, as políticas de conformidade baseadas no usuário não se aplicam a ele. Ao usar o modo de implantação automática, somente as políticas de conformidade direcionadas ao dispositivo serão aplicadas.
+    - **Autoimplantação (visualização)** : os dispositivos do Windows 10, versão 1809 ou posteriores com esse perfil não estão associados ao usuário que está registrando o dispositivo. Não são necessárias credenciais de utilizador para inscrever o dispositivo. Quando um dispositivo não tem nenhum usuário associado a ele, as políticas de conformidade baseadas no usuário não se aplicam a ele. Ao usar o modo de implantação automática, somente as políticas de conformidade direcionadas ao dispositivo serão aplicadas.
 
     ![Captura de tela da página OOBE](./media/enrollment-autopilot/create-profile-outofbox.png)
 
 6. Na caixa **Aderir ao Azure AD como**, selecione **Associado ao Azure AD**.
 7. Configure as seguintes opções:
-    - **Contrato de licença do utilizador final (EULA)**: (Versão 1709 ou posterior do Windows 10) selecione se pretende ou não apresentar o EULA aos utilizadores.
+    - **Contrato de licença do utilizador final (EULA)** : (Versão 1709 ou posterior do Windows 10) selecione se pretende ou não apresentar o EULA aos utilizadores.
     - **Definições de privacidade**: selecione se pretende apresentar definições de privacidade aos utilizadores.
     >[!IMPORTANT]
     >O valor padrão para a configuração de dados de diagnóstico varia entre as versões do Windows. Para dispositivos que executam o Windows 10, versão 1903, o valor padrão é definido como completo durante a experiência inicial do uso. Para obter mais informações, consulte [dados de diagnóstico do Windows](https://docs.microsoft.com/windows/privacy/windows-diagnostic-data) <br>
     
-    - **Ocultar opções de conta de alteração (requer o Windows 10, versão 1809 ou posterior)**: escolha **ocultar** para impedir que as opções alterar conta sejam exibidas nas páginas entrada da empresa e erro de domínio. Esta opção requer a [configuração da imagem corporativa da empresa no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding).
+    - **Ocultar opções de conta de alteração (requer o Windows 10, versão 1809 ou posterior)** : escolha **ocultar** para impedir que as opções alterar conta sejam exibidas nas páginas entrada da empresa e erro de domínio. Esta opção requer a [configuração da imagem corporativa da empresa no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding).
     - **Tipo de conta de utilizador**: selecione o tipo de conta de utilizador (**Administrador** ou utilizador **Padrão**). Permitimos que o usuário que está ingressando o dispositivo seja um administrador local adicionando-o ao grupo de Administradores local. Não habilitamos o usuário como o administrador padrão no dispositivo.
     - **Allow White diferenciada OOBE** (requer o Windows 10, versão 1903 ou posterior; [requisitos físicos adicionais](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove#prerequisites)): escolha **Sim** para permitir o suporte a diferenciada branco.
     - **Aplicar modelo de nome de dispositivo** (requer o Windows 10, versão 1809 ou posterior e tipo de junção do Azure AD): escolha **Sim** para criar um modelo a ser usado ao nomear um dispositivo durante o registro. Os nomes têm de ter 15 carateres ou menos e podem conter letras, números e hífenes. Não podem conter apenas números. Utilize a [macro %SERIAL%](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) para adicionar um número de série específico de hardware. Em alternativa, utilize a [macro %RAND:x%](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) para adicionar uma cadeia de números aleatória na qual x corresponde ao número de dígitos a adicionar. Você só pode fornecer uma correção prévia para dispositivos híbridos em um [perfil de ingresso no domínio](windows-autopilot-hybrid.md#create-and-assign-a-domain-join-profile). 
-    - **Idioma (Região)**\*: selecione o idioma a utilizar para o dispositivo. Esta opção só está disponível se tiver optado pela **Implementação personalizada** no **Modo de implementação**.
+    - **Idioma (Região)** \*: selecione o idioma a utilizar para o dispositivo. Esta opção só está disponível se tiver optado pela **Implementação personalizada** no **Modo de implementação**.
     - **Configurar automaticamente o teclado**\*: se um **idioma (região)** está selecionado, escolha **Sim** para ignorar a página de seleção do teclado. Esta opção só está disponível se tiver optado pela **Implementação personalizada** no **Modo de implementação**.
 8. Selecione **Seguinte**.
 9. Na página **marcas de escopo** , adicione opcionalmente as marcas de escopo que você deseja aplicar a esse perfil. Para obter mais informações sobre marcas de escopo, consulte [usar o controle de acesso baseado em função e marcas de escopo para distribuí-lo](../fundamentals/scope-tags.md).
@@ -146,7 +146,7 @@ Após ter criado um perfil de implementação do Autopilot, poderá editar deter
 Depois de carregar um dispositivo de piloto automático, você poderá editar determinados atributos do dispositivo.
 
 1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), selecione **dispositivos** > **windows** > **registro do Windows** > **dispositivos** (no programa de **implantação do Windows AutoPilot**.
-2. Selecione o dispositivo que você deseja editar.
+2. Selecione o dispositivo que quer editar.
 3. No painel à direita da tela, você pode editar o nome do dispositivo, a marca do grupo ou o nome amigável do usuário (se você tiver atribuído um usuário).
 4. Selecione **Guardar**.
 
@@ -208,7 +208,7 @@ Se não estiver interessado na gestão de dispositivos móveis, pode utilizar o 
 - Sincronizar atribuições de perfil efetuadas noutro portal
 - Apresentar as alterações à lista de dispositivos que foram feitas noutro portal
 
-## <a name="windows-autopilot-for-existing-devices"></a>Windows Autopilot para dispositivos existentes
+## <a name="windows-autopilot-for-existing-devices"></a>Windows Autopilot para os dispositivos existentes
 
 Pode agrupar dispositivos Windows por um ID de correlacionador ao inscrevê-los com o [Autopilot para dispositivos existentes](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/New-Windows-Autopilot-capabilities-and-expanded-partner-support/ba-p/260430), através do Configuration Manager. O ID de correlacionador é um parâmetro do ficheiro de configuração do Autopilot. O [atributo enrollmentProfileName de dispositivos do Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices) é automaticamente definido para ser igual a "OfflineAutopilotprofile-\<correlator ID\>". Isto permite que sejam criados grupos dinâmicos do Azure AD arbitrários com base no ID de correlacionador ao utilizar o atributo enrollmentprofileName.
 

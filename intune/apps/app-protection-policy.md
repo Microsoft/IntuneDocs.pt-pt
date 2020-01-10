@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/26/2019
+ms.date: 01/06/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, get-started, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1b712922824fa9d54f33fb43114e852fbeb52a81
-ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
+ms.openlocfilehash: f11ccb51e08e96595dfcb9118c1f479f1b0fc3de
+ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74899421"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75692127"
 ---
 # <a name="app-protection-policies-overview"></a>Descrição geral das políticas de proteção de aplicações
 
@@ -34,7 +34,7 @@ As políticas de proteção de aplicativo (aplicativo) são regras que garantem 
 Políticas de proteção de aplicativo de MAM (gerenciamento de aplicativo móvel) permitem que você gerencie e proteja os dados de sua organização em um aplicativo. Com o **Mam sem registro** (MAM-We), um aplicativo relacionado ao trabalho ou à escola que contém dados confidenciais pode ser gerenciado em quase qualquer [dispositivo](app-management.md#app-management-capabilities-by-platform), incluindo dispositivos pessoais em cenários BYOD ( **traga seu próprio dispositivo** ). Muitas aplicações de produtividade, como as aplicações do Microsoft Office, podem ser geridas pela MAM do Intune. Consulte a lista oficial de [aplicativos protegidos do Microsoft Intune](apps-supported-intune-apps.md) disponíveis para uso público.
 
 ## <a name="how-you-can-protect-app-data"></a>Como pode proteger dados de aplicações
-Os seus funcionários utilizam dispositivos móveis para tarefas pessoais e profissionais. Se, por um lado, quer garantir que os seus funcionários são produtivos, por outro, quer evitar a perda de dados, intencional e não intencional. Também irá querer proteger os dados da empresa que são acedidos a partir de dispositivos que não são geridos por si.
+Os seus empregados utilizam dispositivos móveis para tarefas pessoais e profissionais. Se, por um lado, quer garantir que os seus funcionários são produtivos, por outro, quer evitar a perda de dados, intencional e não intencional. Também irá querer proteger os dados da empresa que são acedidos a partir de dispositivos que não são geridos por si.
 
 Pode utilizar as políticas de proteção de aplicações do Intune **independentemente de qualquer solução de gestão de dispositivos móveis (MDM)** . Esta independência ajuda-o a proteger dados da sua empresa com ou sem inscrição de dispositivos numa solução de gestão de dispositivos. Ao implementar **políticas ao nível da aplicação**, pode restringir o acesso aos recursos da empresa e manter os dados sob a alçada do seu departamento de TI.
 
@@ -95,7 +95,7 @@ Quando as aplicações são utilizadas sem restrições, os dados pessoais e da 
 ### <a name="data-protection-with-app-protection-policies-app"></a>Proteção de dados com políticas de proteção de aplicativo (aplicativo)
 
 Você pode usar as políticas de proteção de aplicativo para impedir que os dados da empresa sejam salvos no armazenamento local do dispositivo (consulte a imagem abaixo). Também pode restringir o movimento de dados para outras aplicações que não estão protegidas pelas Políticas de proteção de aplicações. As definições de políticas de proteção de aplicações incluem:
-- Políticas de realocação de dados como **impedir salvar como**e **restringir recortar, copiar e colar**.
+- Políticas de realocação **de dados como salvar cópias de dados da organização**e **restringir recortar, copiar e colar**.
 - Definições de política de acesso, como **Exigir PIN simples para o acesso** e **Bloquear execução de aplicações geridas em dispositivos desbloqueados por jailbreak ou rooting**.
 
 ![Imagem conceptual que mostra os dados da empresa a serem protegidos por políticas](./media/app-protection-policy/apps-with-protection-policies.png)
@@ -169,7 +169,7 @@ Os requisitos adicionais para usar os aplicativos [Word, Excel e PowerPoint](htt
 
 - O utilizador final tem de ter uma licença do [Office 365 Empresas ou Enterprise](https://products.office.com/business/compare-more-office-365-for-business-plans) associada à respetiva conta do Azure Active Directory. A subscrição tem de incluir as aplicações do Office para dispositivos móveis e pode incluir uma conta de armazenamento na cloud com o [OneDrive para Empresas](https://onedrive.live.com/about/business/). As licenças do Office 365 podem ser atribuídas no [centro de administração do Microsoft 365](https://admin.microsoft.com) seguindo estas [instruções](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).
 
-- O utilizador final tem de ter uma localização gerida, configurada através da funcionalidade granular Guardar como, na definição da política de proteção de aplicações "Impedir Guardar Como". Por exemplo, se a localização gerida for o OneDrive, a aplicação [OneDrive](https://onedrive.live.com/about/) deverá ser configurada na aplicação Word, Excel ou PowerPoint do utilizador final.
+- O usuário final deve ter um local gerenciado configurado usando a funcionalidade de salvar como granular na configuração de política "salvar cópias de dados da organização". Por exemplo, se a localização gerida for o OneDrive, a aplicação [OneDrive](https://onedrive.live.com/about/) deverá ser configurada na aplicação Word, Excel ou PowerPoint do utilizador final.
 
 - Se a localização gerida for o OneDrive, a aplicação terá de ser visada pela política de proteção de aplicações implementada para o utilizador final.
 
@@ -194,7 +194,7 @@ Por predefinição, só pode existir uma política **Global** por inquilino. No 
 
 Embora a política **Global** se aplique a todos os utilizadores no seu inquilino, qualquer política de proteção de aplicações padrão do Intune substituirá estas definições.
 
-## <a name="app-protection-features"></a>Funcionalidades da proteção de aplicações
+## <a name="app-protection-features"></a>Funcionalidades de proteção de aplicações
 
 ### <a name="multi-identity"></a>Várias identidades
 
@@ -300,7 +300,7 @@ As políticas de proteção de aplicações do Intune permitem o controlo sobre 
 A intenção desse processo é continuar a manter os dados da sua organização no aplicativo protegidos e protegidos no nível do aplicativo. Esta funcionalidade só está disponível para iOS e requer a participação de aplicações que integrem o SDK da aplicação Intune para iOS, versão 9.0.1 ou posterior. Precisa da integração do SDK para que o comportamento possa ser imposto nas aplicações de destino. Esta integração decorre de forma gradual e está dependente das equipas específicas da aplicação. Algumas aplicações participantes incluem: WXP, Outlook, Managed Browser e Yammer.
   
 ### <a name="ios-share-extension"></a>extensão de compartilhamento do iOS
-Você pode usar a extensão de compartilhamento do iOS para abrir dados corporativos ou de estudante em aplicativos não gerenciados, mesmo com a política de transferência de dados definida **somente para aplicativos gerenciados** ou **nenhum aplicativo**. A política de proteção de aplicações do Intune não consegue controlar a extensão de partilha do iOS se o dispositivo não for gerido. Por isso, o _**Intune encripta os dados "empresariais" antes de estes serem partilhados fora da aplicação**_ . Você pode validar esse comportamento de criptografia ao tentar abrir um arquivo "corporativo" fora do aplicativo gerenciado. O ficheiro deverá estar encriptado, e não deverá ser possível abri-lo fora da aplicação gerida.
+Você pode usar a extensão de compartilhamento do iOS para abrir dados corporativos ou de estudante em aplicativos não gerenciados, mesmo com a política de transferência de dados definida **somente para aplicativos gerenciados** ou **nenhum aplicativo**. A política de proteção de aplicações do Intune não consegue controlar a extensão de partilha do iOS se o dispositivo não for gerido. Por isso, o _**Intune encripta os dados "empresariais" antes de estes serem partilhados fora da aplicação**_ . Você pode validar esse comportamento de criptografia ao tentar abrir um arquivo "corporativo" fora do aplicativo gerenciado. O ficheiro deve estar encriptado e não deve ser possível abri-lo fora da aplicação gerida.
 
 ### <a name="multiple-intune-app-protection-access-settings-for-same-set-of-apps-and-users"></a>Várias configurações de acesso de proteção de aplicativo do Intune para o mesmo conjunto de aplicativos e usuários
 As políticas de proteção de aplicativo do Intune para acesso serão aplicadas em uma ordem específica em dispositivos de usuário final à medida que tentarem acessar um aplicativo de destino de sua conta corporativa. Em geral, uma limpeza teria precedência, seguida de um bloqueio e de um aviso que pode ser dispensado. Por exemplo, se for aplicável ao utilizador/aplicação específico, uma definição de sistema operativo iOS mínimo que avisa um utilizador para atualizar a respetiva versão do iOS será aplicada após a definição de sistema operativo iOS mínimo bloquear o acesso do utilizador. Portanto, no cenário em que o administrador de TI configura o sistema operativo iOS mínimo para 11.0.0.0 e o sistema operativo iOS mínimo (apenas Aviso) para 11.1.0.0, embora o dispositivo que tentava aceder à aplicação tivesse o iOS 10, o utilizador final seria bloqueado com base na definição mais restrita de versão mínima de sistema operativo iOS que resulta num bloqueio do acesso.

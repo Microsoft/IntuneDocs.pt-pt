@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ffabcace189efd60e9d532172ecd1f2a048eec2c
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: e23e582a853f0b424296d8fb42f6c7d8fdd2984c
+ms.sourcegitcommit: 0d9e1452fcf5f15a80230838f80a427b9951cdb1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74562415"
+ms.lasthandoff: 12/21/2019
+ms.locfileid: "75324870"
 ---
 # <a name="intune-actions-and-options-supported-with-apple-user-enrollment"></a>Ações e opções do Intune com suporte com o registro de usuário da Apple
 
@@ -38,7 +38,7 @@ Em dispositivos de registro de usuário, se você definir qualquer configuraçã
 
 Por exemplo, você define a configuração de **expiração de senha** e envia por push essa política para dispositivos registrados pelo usuário. Nos dispositivos, acontece o seguinte:
 - A configuração de **expiração de senha** é ignorada.
-- Senhas simples, como `1111` ou `1234`, não são permitidas.
+- Senhas simples, como `111111` ou `123456`, não são permitidas.
 - Um PIN de 6 dígitos é imposto.
 
 ## <a name="administrator-remote-device-actions-and-options"></a>Ações e opções de dispositivo remoto do administrador

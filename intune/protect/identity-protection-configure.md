@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4fce03913042675588ea12e5399e6f5a1be04946
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: a4f5d3a232cab25c60189132732a0ea3f347c74a
+ms.sourcegitcommit: 107fef144013b01ed768ca8973373f9cb3f0f7dc
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74188239"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75683804"
 ---
 # <a name="use-windows-hello-for-business-on-windows-10-devices-with-microsoft-intune"></a>Use o Windows Hello para empresas em dispositivos Windows 10 com Microsoft Intune
 
@@ -71,6 +71,9 @@ Este artigo mostra como criar um perfil de configuração de dispositivo. Para o
 5. Assim que terminar, selecione **OK** > **Criar** para guardar as alterações.
 
 O perfil é criado e aparece na lista de perfis. Em seguida, [atribua](../configuration/device-profile-assign.md) esse perfil aos grupos de usuários e dispositivos para atender às suas necessidades.
+
+> [!IMPORTANT]
+> Para permitir que vários usuários sejam provisionados em um dispositivo, especifique que a política do Windows Hello para empresas seja aplicada aos dispositivos. Se a política for aplicada somente a usuários, somente um usuário poderá ser provisionado em um dispositivo.
 
 <!--  Removing image as part of design review; retaining source until we known the disposition.
 

@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/09/2019
+ms.date: 01/02/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9742305905c5ba49930e13646bf13d8c248426b6
-ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
+ms.openlocfilehash: 3529a21483d0207dbfe55af914badf3ed895af1a
+ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74899392"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75691874"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Introdução ao SDK da Aplicação Microsoft Intune
 
@@ -60,16 +60,16 @@ Utilizaremos os endereços de e-mail listados na sua resposta do questionário p
 
 4. Por fim, a ligação avançada da sua aplicação será adicionada à próxima atualização mensal do Serviço Intune. Por exemplo, se as informações de registo estiverem concluídas em julho, a ligação avançada será suportada em meados de agosto.
 
-Se a ligação avançada da aplicação for alterada no futuro, terá de voltar a registar a sua aplicação.
+O link profundo é o link para a listagem do aplicativo na loja de aplicativos pública. Se a ligação avançada da aplicação for alterada no futuro, terá de voltar a registar a sua aplicação.
 
 > [!NOTE]
 > Você deve informar-nos se atualizar seu aplicativo com uma nova versão do SDK de aplicativos do Intune.
 
 ## <a name="download-the-sdk-files"></a>Transferir os ficheiros do SDK
 
-Os SDKs da Aplicação Intune para iOS e Android nativos estão alojados numa conta do Microsoft GitHub. Estes repositórios públicos contêm os ficheiros do SDK para iOS e Android nativo, respetivamente:
+Os SDKs da Aplicação do Intune para iOS e Android nativos estão alojados numa conta do Microsoft GitHub. Estes repositórios públicos contêm os ficheiros do SDK para iOS e Android nativo, respetivamente:
 
-* [SDK da Aplicação Intune para iOS](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios)
+* [SDK da Aplicação do Intune para iOS](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios)
 * [SDK da Aplicação Intune para Android](https://github.com/msintuneappsdk/ms-intune-app-sdk-android)
 
 Se seu aplicativo for um aplicativo Xamarin, use esta variante do SDK:
@@ -183,7 +183,7 @@ Depois de registrar seu aplicativo em um locatário do Azure e ele estiver apare
 7. Clique em **adicionar permissões**.
 
 > [!NOTE]
-> Se seu aplicativo restringe você de entrar devido a um erro ao acessar este recurso: https://intunemam.microsoftonline.com, você deve enviar uma observação para msintuneappsdk@microsoft.com com a ID do cliente do aplicativo. Este é um processo de aprovação manual atualmente.
+> Se seu aplicativo restringe você de entrar devido a um erro ao acessar este recurso: https\://intunemam.microsoftonline.com, você deve enviar uma nota para msintuneappsdk@microsoft.com com a ID do cliente do aplicativo. Este é um processo de aprovação manual atualmente.
 
 ### <a name="badge-your-app-optional"></a>Colocar um distintivo na aplicação (opcional)
 

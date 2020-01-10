@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/16/2019
+ms.date: 01/06/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bd02e2b7f9582308109d1e6986d7e6a8014e5af7
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 3399cf006543c0a3554c4c6ec812554462d74231
+ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72585893"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75691809"
 ---
 # <a name="guided-scenario---secure-microsoft-office-mobile-apps"></a>Cenário guiado – aplicativos móveis seguros Microsoft Office 
 
@@ -46,7 +46,7 @@ Os aplicativos móveis do Office, bem como o Microsoft Edge para dispositivos m�
 [As políticas de proteção de aplicativo do Intune](~/apps/app-protection-policy.md) ajudam a proteger seus arquivos de trabalho em dispositivos registrados no Intune. Também pode utilizar políticas de proteção de aplicações em dispositivos de funcionários que não estejam inscritos para gestão no Intune. Nesse caso, mesmo que sua empresa não gerencie o dispositivo, você ainda precisará certificar-se de que os arquivos de trabalho e os recursos estejam protegidos.
 
 Você pode usar as políticas de proteção de aplicativo para impedir que os usuários salvem arquivos de trabalho em locais desprotegidos. Também pode restringir o movimento de dados para outras aplicações que não estão protegidas pelas Políticas de proteção de aplicações. As definições de políticas de proteção de aplicações incluem:
-- Políticas de realocação de dados como impedir salvar como e restringir recortar, copiar e colar.
+- Políticas de realocação **de dados como salvar cópias de dados da organização**e **restringir recortar, copiar e colar**.
 - Configurações de política de acesso para exigir PIN simples para acesso e impedir que aplicativos gerenciados sejam executados em dispositivos com jailbreak ou com raiz.
 
 O acesso condicional com base em aplicações e a gestão de aplicações cliente adicionam uma camada de segurança ao garantir que apenas as aplicações cliente que suportam políticas de proteção de aplicações do Intune podem aceder ao Exchange Online e a outros serviços do Office 365.
@@ -112,7 +112,7 @@ Nesta etapa, você deve configurar os requisitos para acessar e compartilhar os 
 | Verificar novamente os requisitos de acesso após (minutos de inatividade) | Se o aplicativo gerenciado por política estiver inativo por mais tempo do que o número de minutos de inatividade especificado, o aplicativo solicitará os requisitos de acesso (ou seja, Fixe, configurações de inicialização condicional) a serem verificadas novamente após o aplicativo ser iniciado. | 30 |
 | Imprimindo dados da organização | Se bloqueado, o aplicativo não poderá imprimir dados protegidos. | Bloqueio |
 | Abrir política-links de aplicativos gerenciados em navegadores não gerenciados | Se bloqueado, os links de aplicativo gerenciados por política deverão ser abertos em um navegador gerenciado. | Bloqueio |
-| Copiar dados para aplicativos não gerenciados | Se bloqueado, os dados gerenciados permanecerão em aplicativos gerenciados. | Allow |
+| Copiar dados para aplicativos não gerenciados | Se bloqueado, os dados gerenciados permanecerão em aplicativos gerenciados. | Permitir |
 
 ## <a name="step-5---assignments"></a>Etapa 5-atribuições
 

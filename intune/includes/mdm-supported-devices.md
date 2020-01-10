@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: f31e500b7a3383c5c0c53f1df72cb4a42660328f
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 4669d02f149e7f815ff94b4daa85c4c539c26c96
+ms.sourcegitcommit: 90369aef160945171435b03d82bae395609c7a62
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74284146"
+ms.lasthandoff: 12/26/2019
+ms.locfileid: "75500184"
 ---
 
 
@@ -34,7 +34,7 @@ ms.locfileid: "74284146"
 - Equipes do Windows 10 (Surface Hub)
 
    Para obter mais informações sobre como gerenciar dispositivos que executam as equipes do Windows 10, consulte [gerenciar Surface Hub com o MDM](https://docs.microsoft.com/surface-hub/manage-settings-with-mdm-for-surface-hub)
-- Windows Phone 8.1, Windows 8.1 RT, PCs com o Windows 8.1 (Modo de suporte)
+- Windows 10 1709 (RS3) e posterior, Windows Phone 8,1, Windows 8.1 RT, computadores que executam Windows 8.1 (modo de manutenção)
 
 > [!NOTE]
 > Nem todas as edições do Windows oferecem suporte a todos os recursos de sistema operacional disponíveis configurados por meio do MDM. Consulte os [documentos de referência do provedor de serviços de configuração do Windows](https://docs.microsoft.com/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers). Cada CSP realça quais edições do Windows têm suporte.
