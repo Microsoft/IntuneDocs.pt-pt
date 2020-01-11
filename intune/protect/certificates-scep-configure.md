@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 86640c831e8836a72ad5a0a7d5023ff7d836a43a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 501bfcbef0dd46f6021fc5db16cf3b9e2f2cd0c0
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73801557"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75886001"
 ---
 # <a name="configure-infrastructure-to-support-scep-with-intune"></a>Configurar a infraestrutura para dar suporte ao SCEP com o Intune
 
@@ -256,7 +256,7 @@ Os procedimentos a seguir podem ajudá-lo a configurar o NDES (serviço de regis
         A instalação do ASP.NET 4.5 instala o .NET Framework 4.5. Ao instalar o .NET Framework 4.5, instale a funcionalidade **.NET Framework 4.5** principal, o **ASP.NET 4.5** e a funcionalidade **Serviços do WCF** > **Ativação HTTP**.
 
       - **Ferramentas de Gestão** > **Compatibilidade de Gestão do IIS 6** > **Compatibilidade com Metabase do IIS 6**
-      - **Ferramentas de Gestão** > **Compatibilidade de Gestão do IIS 6** > **Compatibilidade com WMI do IIS 6**
+      - **Ferramentas de Gestão** > **Compatibilidade de Gestão do IIS 6** > **Compatibilidade WMI do IIS 6**
       - No servidor, adicione a conta do serviço do NDES como membro do grupo local **IIS_IUSR**.
 
 2. No computador que hospeda o serviço NDES, execute o seguinte comando em um prompt de comando com privilégios elevados. O comando a seguir define o SPN da conta de serviço de NDES:
@@ -373,8 +373,7 @@ O Microsoft Intune Certificate Connector é instalado no servidor que executa se
 
    2. Execute o instalador **NDESConnectorSetup.exe**. O instalador também instala o módulo de política para NDES e o serviço Web do CRP (ponto de registro de certificado) do IIS. O serviço Web do CRP, *CertificateRegistrationSvc*, é executado como um aplicativo no IIS.
 
-      - Ao instalar o NDES para o Intune autónomo, o serviço CRP é instalado automaticamente com o Certificate Connector.
-      - Ao usar o Intune com Configuration Manager, você instala o ponto de registro de certificado como uma função de sistema de site do Configuration Manager.
+      Ao instalar o NDES para o Intune autónomo, o serviço CRP é instalado automaticamente com o Certificate Connector.
 
 5. Quando for solicitado o certificado do cliente para o conector de certificado, escolha **selecionar**e selecione o certificado de **autenticação de cliente** que você instalou em seu servidor NDES durante a etapa #3 do procedimento [instalar e associar certificados no servidor que hospeda o NDES](#install-and-bind-certificates-on-the-server-that-hosts-ndes) do anterior neste artigo.
 

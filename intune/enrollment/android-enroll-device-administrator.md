@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 309860fb5ddf6fa9488ecaf395534bf869234176
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: ebeb5830136ad6dae19babbc8ecf45c1d6e5c36c
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547854"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885979"
 ---
 # <a name="android-device-administrator-enrollment"></a>Inscrição de administrador de dispositivos Android
 
@@ -36,10 +36,6 @@ Pelos mesmos motivos, também recomendamos que você migre dispositivos fora do 
 Para obter mais informações sobre o suporte do Intune para o suporte do administrador de dispositivo Android, consulte a [seção avisos](../fundamentals/whats-new.md#decreasing-support-for-android-device-administrator).
 
 Se você ainda decidir fazer com que os usuários registrem seus dispositivos Android com o gerenciamento de administrador do dispositivo, continue na próxima seção.  
-
-
-> [!Note]  
-> Android 10 e superior não terão suporte no gerenciamento de dispositivo móvel híbrido (MDM híbrido; O Intune é gerenciado com o console do Configuration Manager) porque o MDM híbrido está fora de serviço em 1º de setembro de 2019. Se você ainda estiver usando o MDM híbrido, deverá migrar para o Intune autônomo assim que possível. Contate o suporte se precisar de ajuda para a migração. Para obter mais informações, veja [Move from Hybrid Mobile Device Management to Intune on Azure](https://aka.ms/hybrid_notification) (Mover da Gestão de Dispositivos Móveis Híbrida para o Intune no Azure).
 
 Para obter mais informações sobre os recursos do Android Enterprise do Google, consulte estes artigos:
 - [Diretrizes do Google para migração do administrador do dispositivo para Android Enterprise](http://static.googleusercontent.com/media/android.com/en/enterprise/static/2016/pdfs/enterprise/Android-Enterprise-Migration-Bluebook_2019.pdf)

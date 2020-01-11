@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 622c09d03507a3a47433eab5b21702a656f8bffb
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: 0d5c6db598a7f64f75f6f5a8e0cf25b8e4b81465
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547505"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885880"
 ---
 # <a name="troubleshoot-windows-device-enrollment-problems-in-microsoft-intune"></a>Solucionar problemas de registro de dispositivo Windows no Microsoft Intune
 
@@ -40,7 +40,7 @@ Colete as seguintes informações sobre o problema:
 - Qual plataforma (Android, iOS, Windows) tem o problema?
 - Quantos usuários são afetados? Todos os usuários foram afetados ou apenas alguns?
 - Quantos dispositivos são afetados? Todos os dispositivos foram afetados ou apenas alguns?
-- O que é a autoridade de MDM? Se for Microsoft Endpoint Configuration Manager, qual versão do Configuration Manager você está usando?
+- O que é a autoridade de MDM?
 - Como o registro está sendo executado? Ele é "Traga seu próprio dispositivo" (BYOD) ou DEP (Programa de registro de dispositivos da Apple) com perfis de registro?
 
 ## <a name="error-messages"></a>Mensagens de erro
@@ -107,7 +107,6 @@ Erro 8018000a: "algo deu errado. O dispositivo já está registrado.  Você pode
 
 **Causa:** Uma das seguintes condições é verdadeira:
 - Um usuário diferente já registrou o dispositivo no Intune ou ingressou no dispositivo no Azure AD. Para determinar se esse é o caso, acesse **configurações** > **contas** > **acesso de trabalho**. Procure uma mensagem semelhante à seguinte: "outro usuário no sistema já está conectado a um trabalho ou escola. Remova essa conexão corporativa ou de estudante e tente novamente. "    
-- O agente cliente do Configuration Manager está instalado no computador.    
 
 #### <a name="resolution"></a>Resolução
 
@@ -118,9 +117,6 @@ Use um dos seguintes métodos para resolver esse problema:
 2. Acesse **configurações** > **contas** > **acesso de trabalho**e, em seguida, remova a conta corporativa ou de estudante.
 3. Saia do Windows e entre usando sua conta.    
 4. Registre o dispositivo no Intune ou Ingresse o dispositivo no Azure AD. 
-
-##### <a name="remove-the-configuration-manager-client"></a>Remover o cliente Configuration Manager
-Remova o cliente de Configuration Manager e, em seguida, registre o dispositivo novamente.
 
 
 
@@ -160,7 +156,7 @@ Erro 80180026: "algo deu errado. Confirme se você está usando as informações
 
 **Causa:** Esse erro pode ocorrer quando você tenta ingressar um computador com Windows 10 no Azure AD e as duas condições a seguir são verdadeiras: 
 - O registro automático do MDM está habilitado no Azure.    
-- O cliente de computador do Intune (agente de PC do Intune) ou o agente cliente do Configuration Manager está instalado no computador com Windows 10.
+- O cliente de computador do Intune (agente de PC do Intune) está instalado no computador com Windows 10.
 
 #### <a name="resolution"></a>Resolução
 Use um dos seguintes métodos para resolver esse problema:
@@ -171,7 +167,7 @@ Use um dos seguintes métodos para resolver esse problema:
 3. Defina o **escopo de usuário do MDM** como **nenhum**e, em seguida, clique em **salvar**.    
      
 ##### <a name="uninstall"></a>Desinstalar
-Desinstale o cliente de computador do Intune ou o agente cliente Configuration Manager do computador.    
+Desinstale o agente cliente de computador do Intune do computador.    
 
 ### <a name="the-software-cannot-be-installed"></a>O software não pode ser instalado.
 
@@ -208,13 +204,6 @@ Para corrigir esse problema em um ambiente autônomo do Intune, siga estas etapa
 1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **dispositivos** > **restrições de registro** > escolha uma restrição de tipo de dispositivo.    
 2. Escolha **propriedades** > **Editar** (ao lado de **configurações de plataforma**) > **permitir** para **Windows (MDM)** .    
 3. Clique em **examinar + salvar**.    
- 
-Para corrigir esse problema no MDM híbrido com o Intune e o Configuration Manager, siga estas etapas: 
-1. Abra a consola do Configuration Manager.    
-2. Selecione **Administração**e, em seguida, selecione **serviços de nuvem**.    
-3. Clique com o botão direito do mouse em **Microsoft Intune assinatura**e selecione **Configurar plataformas > Windows**.    
-4. Marque **habilitar registro do Windows** > **aplicar** > **OK**.  
-
 
 ### <a name="a-setup-failure-has-occurred-during-bulk-enrollment"></a>Ocorreu uma falha na instalação durante o registro em massa.
 
