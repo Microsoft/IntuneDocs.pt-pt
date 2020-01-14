@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fd320dddeb7717461188bdb701044bf060e7d75e
-ms.sourcegitcommit: 0d9e1452fcf5f15a80230838f80a427b9951cdb1
+ms.openlocfilehash: 4e5a16a8be6fcce8c6c34d3ddf8979b17eccddd1
+ms.sourcegitcommit: fb72b19986f34907d228c856d2e6949751ec02a1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/21/2019
-ms.locfileid: "75324887"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75920129"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Inscrever dispositivos Windows no Intune com o Windows Autopilot  
 O Windows Autopilot simplifica a inscrição de dispositivos no Intune. A criação e manutenção de imagens personalizadas do sistema operativo são um processo moroso. Também poderá demorar a aplicar estas imagens personalizadas do sistema operativo a novos dispositivos para as preparar para utilização antes de as disponibilizar aos seus utilizadores finais. Com o Microsoft Intune e o Autopilot, pode fornecer novos dispositivos aos seus utilizadores finais sem ter de criar, manter e aplicar imagens de sistema operativo personalizadas aos dispositivos. Ao utilizar o Intune para gerir dispositivos do Autopilot, pode gerir políticas, perfis, aplicações, entre outros, após estes serem inscritos. Para uma descrição geral das vantagens, cenários e pré-requisitos, veja [Descrição geral do Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
@@ -178,11 +178,6 @@ Pré-requisitos: Azure Active Directory Portal da Empresa foi configurado e Wind
     ![Captura de ecrã do nome amigável](./media/enrollment-autopilot/friendly-name.png)
 
 4. Selecione **OK**.
-
-## <a name="autopilot-deployments-report"></a>Relatório de implantações do AutoPilot
-Você pode ver detalhes em cada dispositivo implantado por meio do piloto automático do Windows.
-Para ver o relatório, vá para o [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **dispositivos** > **monitorar** > **implantações do AutoPilot**.
-Os dados ficam disponíveis por 30 dias após a implantação.
 
 
 ## <a name="delete-autopilot-devices"></a>Eliminar dispositivos Autopilot

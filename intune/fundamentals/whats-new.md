@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 528b901c186099cc2680fc50a21dbdc2f34b7f65
-ms.sourcegitcommit: 637375a390b6e34f9c4415c77b99fe2980bbf554
+ms.openlocfilehash: 311941c3981e5883d392359dc0919bb85156c4be
+ms.sourcegitcommit: fb72b19986f34907d228c856d2e6949751ec02a1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75839296"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75920094"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 
@@ -190,6 +190,9 @@ Melhoramos a experiência em um dispositivo compartilhado com vários usuários 
 
 #### <a name="use-pkcs-certificate-profiles-to-provision-devices-with-certificates---2317124-2317130-2317139-2340517-2340528-2340529----"></a>Usar perfis de certificado PKCS para provisionar dispositivos com certificados<!-- 2317124, 2317130, 2317139, 2340517, 2340528, 2340529  -->
 Agora você pode usar perfis de certificado PKCS para emitir certificados para *dispositivos* que executam o Android for Work, o Ios e o Windows, quando associados a perfis como aqueles para Wi-Fi e VPN. Anteriormente, essas três plataformas suportavam apenas certificados baseados no usuário, com suporte baseado em dispositivo limitado ao macOS.
+
+> [!NOTE]
+> Não há suporte para perfis de certificado PKCS com perfis Wi-Fi. Em vez disso, use perfis de certificado SCEP ao usar um [tipo de EAP](../configuration/wi-fi-settings-windows.md#enterprise-profile).
 
 Para usar um certificado baseado em dispositivo, ao [criar um perfil de certificado PKCS](../protect/certficates-pfx-configure.md#create-a-pkcs-certificate-profile) para as plataformas com suporte, selecione **configurações**. Agora, você verá a configuração para o **tipo de certificado**, que dá suporte às opções de dispositivo ou usuário.
 

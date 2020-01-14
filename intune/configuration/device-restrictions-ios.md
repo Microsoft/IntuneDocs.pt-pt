@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/12/2019
+ms.date: 01/13/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 476817b70f18fdd45a678ef3e12d1d3312c03dd3
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 39978043428f6ad912832007f60628815d6549a6
+ms.sourcegitcommit: fb72b19986f34907d228c856d2e6949751ec02a1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206538"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75920079"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>configurações do dispositivo iOS e iPadOS para permitir ou restringir recursos usando o Intune
 
@@ -189,7 +189,7 @@ Estas definições são adicionadas a um perfil de configuração do dispositivo
   > [!NOTE]
   > A interface do usuário do Intune para essa configuração não separa os valores com suporte para iOS e iPadOS. A interface do usuário pode ser atualizada em uma versão futura.
 
-- **Expiração da senha (dias)**: Insira o número de dias antes que a senha do dispositivo deva ser alterada.
+- **Expiração da senha (dias)** : Insira o número de dias antes que a senha do dispositivo deva ser alterada.
 - **Evitar a reutilização de senhas anteriores**: Insira o número de novas senhas que devem ser usadas até que uma antiga possa ser reutilizada.
 - **ID de toque e desbloqueio de ID facial**: escolha **Bloquear** para impedir o uso de uma impressão digital ou uma face para desbloquear o dispositivo. **Não configurado** permite que o usuário desbloqueie o dispositivo usando esses métodos.
 
@@ -264,7 +264,7 @@ Estas definições são adicionadas a um perfil de configuração do dispositivo
 
 - **Exigir senha da iTunes Store para todas as compras**: **exige** que o usuário insira a senha da ID da Apple para cada compra no aplicativo ou iTunes. **Não configurado** (padrão) permite compras sem solicitar uma senha a cada vez.
 - **Compras no aplicativo**: escolha **Bloquear** para evitar compras no aplicativo da loja. **Não configurado** (padrão) permite a loja de compras em um aplicativo em execução.
-- **Baixar conteúdo da iBook Store sinalizado como ' erotismo '**: escolha **Bloquear** para impedir que os usuários baixem mídia da iBook Store marcada como erotismo. **Não configurado** (padrão) permite que o usuário Baixe livros com a categoria "erotismo".
+- **Baixar conteúdo da iBook Store sinalizado como ' erotismo '** : escolha **Bloquear** para impedir que os usuários baixem mídia da iBook Store marcada como erotismo. **Não configurado** (padrão) permite que o usuário Baixe livros com a categoria "erotismo".
 - **Permitir que aplicativos gerenciados gravem contatos em contas de contatos não gerenciados**: quando definido como **permitir**, aplicativos gerenciados, como o aplicativo móvel do Outlook, podem salvar ou sincronizar informações de contato, incluindo contatos comerciais e corporativos, para o aplicativo interno de contatos do Ios. Quando definido como **não configurado** (padrão), os aplicativos gerenciados não podem salvar ou sincronizar informações de contato com o aplicativo interno de contatos do Ios no dispositivo.
   
   Para utilizar esta definição, configure **Ver documentos empresariais em aplicações não geridas** como **Bloquear**.
@@ -312,7 +312,7 @@ Estas definições são adicionadas a um perfil de configuração do dispositivo
 - **A pesquisa de destaque para retornar resultados da Internet**: **Bloquear** impede que o Spotlight retorne qualquer resultado de uma pesquisa na Internet. **Não configurado** (predefinição) permite que o Spotlight se ligue à Internet para fornecer resultados da pesquisa.
 
 - **Cookies do Safari**: escolha como os cookies são manipulados no dispositivo. As opções são:
-  - Allow
+  - Permitir
   - Bloquear todos os cookies
   - Permitir cookies dos sites visitados
   - Permitir cookies do site atual
@@ -450,7 +450,7 @@ Observação necessária para o roaming de dados (dica ou nota importante para a
   > [!IMPORTANT]
   > Essa configuração é tratada como uma ação de dispositivo remoto. Portanto, essa configuração não é mostrada no perfil de gerenciamento no dispositivo. Sempre que o status de hotspot pessoal é alterado no dispositivo, o **hotspot pessoal** é bloqueado pelo serviço do Intune. No Intune, se o status do relatório mostrar um êxito, saiba que ele está funcionando, mesmo que a configuração não seja mostrada no perfil de gerenciamento no dispositivo.
 
-- **Regras de uso de celular (somente aplicativos gerenciados)**: define os tipos de dados que os aplicativos gerenciados podem usar quando em redes de celular. As opções são:
+- **Regras de uso de celular (somente aplicativos gerenciados)** : define os tipos de dados que os aplicativos gerenciados podem usar quando em redes de celular. As opções são:
   - **Bloquear o uso de dados da rede celular**: bloqueie o uso de dados da rede celular para **todos os aplicativos gerenciados** ou **escolha aplicativos específicos**.
   - **Bloquear o uso de dados da rede celular em roaming**: bloqueie o uso de dados da rede celular quando estiver em roaming para **todos os aplicativos gerenciados** ou **escolha aplicativos específicos**.
 
@@ -470,6 +470,11 @@ Observação necessária para o roaming de dados (dica ou nota importante para a
   - iOS 12,2 e mais recente
 
 - **Unir redes Wi-Fi usando somente perfis de configuração**: **exigir** força o dispositivo a usar apenas redes Wi-Fi configuradas por meio de perfis de configuração do Intune. **Não configurado** (predefinição) permite que o dispositivo utilize outras redes Wi-Fi.
+
+  Quando definido como **exigir**, verifique se o dispositivo tem um perfil de Wi-Fi. Se você não atribuir um perfil de Wi-Fi, essa configuração poderá impedir que o dispositivo se conecte à Internet. Em outras palavras, se esse perfil de restrições de dispositivo for atribuído antes de um perfil de Wi-Fi, o dispositivo poderá ser impedido de se conectar à Internet.
+  
+  Se ele não puder se conectar, cancele o registro do dispositivo e registre-se novamente com um perfil de Wi-Fi. Em seguida, defina essa configuração como **exigir** em um perfil de restrições de dispositivo e atribua o perfil ao dispositivo.
+
 - **Wi-Fi sempre ativado**: quando definido como **exigir**, o Wi-Fi permanece no aplicativo de configurações. Ele não pode ser desativado em configurações ou no centro de controle, mesmo quando o dispositivo está no modo avião. **Não configurado** (padrão) permite que o usuário controle a ativação ou desativação do Wi-Fi.
 
   Definir essa configuração não impede que os usuários selecionem uma rede Wi-Fi.
@@ -529,7 +534,7 @@ Observação necessária para o roaming de dados (dica ou nota importante para a
 - **Backup criptografado**: **requer** que os backups de dispositivo sejam criptografados.
 - Os **aplicativos gerenciados sincronizam com a nuvem**: **não configurado** (padrão) permite que seus aplicativos de gerenciamento do Intune sincronizem dados com a conta do icloud do usuário. **Bloquear** impede esta sincronização de dados com o iCloud.
 - **Bloquear o backup do catálogo corporativo**: escolha **Bloquear** para impedir que os usuários façam backup de livros empresariais. **Não configurado** (padrão) permite que os usuários façam backup desses livros.
-- **Bloquear a sincronização de metadados do catálogo corporativo (observações e destaques)**: **Bloquear** impede a sincronização de anotações e destaques em livros empresariais. **Não configurado** (padrão) permite a sincronização.
+- **Bloquear a sincronização de metadados do catálogo corporativo (observações e destaques)** : **Bloquear** impede a sincronização de anotações e destaques em livros empresariais. **Não configurado** (padrão) permite a sincronização.
 
 ### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>As configurações se aplicam a: registro de dispositivo, registro de dispositivo automatizado (supervisionado)
 
@@ -564,7 +569,7 @@ Utilize estas definições para configurar os dispositivos iOS para executar apl
 
 Você também pode **importar** um arquivo CSV com a lista de nomes de aplicativos e suas IDs de pacote. Ou **Exportar** uma lista existente que inclua as aplicações.
 
-## <a name="kiosk"></a>Modo de Local Público
+## <a name="kiosk"></a>Kiosk
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>As configurações se aplicam a: registro de dispositivo automatizado (supervisionado)
 
@@ -651,7 +656,7 @@ O modo supervisionado do iOS só pode ser ativado durante a configuração inici
 - Restrições da IU 
 - Instalação dos perfis de configuração pela IU 
 - Notícias 
-- Atalhos de teclado 
+- Keyboard shortcuts 
 - Modificações do código de acesso 
 - Alterações do nome do dispositivo 
 - Transferências automáticas de aplicações 
@@ -670,7 +675,7 @@ O modo supervisionado do iOS só pode ser ativado durante a configuração inici
 > - iTunes
 > - Conteúdos explícitos
 > - Documentos e dados do iCloud
-> - Jogos para vários jogadores
+> - Jogos de vários jogadores
 > - Adicionar amigos do Game Center
 > - Siri
 
