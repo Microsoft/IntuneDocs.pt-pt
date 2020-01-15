@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b4661b151493eb68cc6f71a5a77bd023ac27b826
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 331d4d312541f587077c70e19634e331f9ddc21e
+ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72810217"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75956355"
 ---
 # <a name="set-up-lookout-mobile-endpoint-security-integration-with-intune"></a>Configurar a integração de segurança de ponto de extremidade móvel com o Intune
 Com um ambiente que atende aos [pré-requisitos](lookout-mobile-threat-defense-connector.md#prerequisites), você pode integrar a consulta à segurança de ponto de extremidade móvel com o Intune. As informações neste artigo o orientarão na configuração da integração e na definição de configurações importantes na consulta para uso com o Intune.  
@@ -113,7 +113,7 @@ O procedimento a seguir pressupõe que você criou anteriormente um grupo de usu
 6. Selecione **criar conector** para concluir a configuração do conector. Posteriormente, quando estiver satisfeito com os resultados, você poderá estender o registro para grupos de usuários adicionais.
 
 ## <a name="configure-intune-to-use-lookout-as-a-mobile-threat-defense-provider"></a>Configurar o Intune para usar a consulta como um provedor de defesa contra ameaças móveis
-Depois de configurar a consulta MES, você deve configurar uma conexão para a consulta [no Intune](https://docs.microsoft.com/en-us/intune/protect/mtd-connector-enable).  
+Depois de configurar a consulta MES, você deve configurar uma conexão para a consulta [no Intune](~/protect/mtd-connector-enable.md).  
 
 ## <a name="additional-settings-in-the-lookout-mes-console"></a>Configurações adicionais no console do MES de consulta
 A seguir estão as configurações adicionais que podem ser definidas no console do MES de consulta.  

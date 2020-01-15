@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4e1ee8ae54d81a050f3c8983269f40e8f61b5e75
-ms.sourcegitcommit: e75718ee6cf93c0e6c915f2776b785fe8db9f7e0
+ms.openlocfilehash: 7cc67ce304dba500095c130e035a0b29322c84ef
+ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74955478"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75956303"
 ---
 # <a name="identify-devices-as-corporate-owned"></a>Identificar os dispositivos como pertencentes à empresa
 
@@ -62,7 +62,7 @@ Esse recurso tem suporte para as seguintes plataformas:
 ## <a name="add-corporate-identifiers-by-using-a-csv-file"></a>Adicionar identificadores empresariais com um ficheiro .csv
 Para criar a lista, crie uma lista de valores de duas colunas, separados por vírgulas (.csv) sem cabeçalho. Adicione os números de série ou os números IMEI de 14 dígitos na coluna da esquerda e os detalhes na coluna da direita. Só pode ser importado um tipo de ID, número IMEI ou número de série num único ficheiro .csv. Os detalhes estão limitados a 128 carateres e destinam-se apenas a utilização administrativa. Os detalhes não são apresentados no dispositivo. O limite atual é de 5000 linhas por ficheiro .csv.
 
-**Carregar um ficheiro .csv que contenha números de série** – crie uma lista de valores separados por vírgulas (.csv) de duas colunas sem cabeçalho, limitada até 5000 dispositivos ou 5 MB por ficheiro .csv.
+**Carregar um ficheiro .csv que contenha números de série** – crie uma lista de valores separados por vírgulas (.csv) de duas colunas sem cabeçalho, limitada até 5 000 dispositivos ou 5 MB por ficheiro .csv.
 
 |||
 |-|-|
@@ -120,7 +120,7 @@ Para obter especificações detalhadas sobre os Identificadores Internacionais d
 
 ## <a name="change-device-ownership"></a>Alterar a propriedade dos dispositivos
 
-As propriedades dos dispositivos apresentam a **Propriedade** para os registos de cada dispositivo no Intune. Enquanto administrador, pode especificar dispositivos como **Pessoal** ou **Empresarial**. Quando o tipo de propriedade de um dispositivo é alterado de pessoal para corporativo, o Intune exclui todas as informações de aplicativo coletadas anteriormente do dispositivo dentro de 7 dias. Se aplicável, o Intune também excluirá o número de telefone no registro. 
+As propriedades dos dispositivos apresentam a **Propriedade** para os registos de cada dispositivo no Intune. Enquanto administrador, pode especificar dispositivos como **Pessoal** ou **Empresarial**. Quando o tipo de propriedade de um dispositivo é alterado de corporativo para pessoal, o Intune exclui todas as informações de aplicativo coletadas anteriormente do dispositivo dentro de 7 dias. Se aplicável, o Intune também excluirá o número de telefone no registro. 
 
 **Para alterar a propriedade dos dispositivos:**
 1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **dispositivos** > **todos os dispositivos** > escolha o dispositivo.

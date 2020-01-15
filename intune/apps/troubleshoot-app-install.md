@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/14/2020
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4783d24e3fc25583a61f88c2e7375d4eed673186
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 0786174ebb90352fa1a41923f9cfce305aece49f
+ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74563490"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75956318"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>Resolver problemas com a instalação de aplicações
 
@@ -47,7 +47,7 @@ O Intune proporciona detalhes da resolução de problemas com a aplicação com 
     > A mesma aplicação pode ser atribuída a vários grupos, mas com diferentes ações pretendidas (intenções) para a aplicação. Por exemplo, uma intenção resolvida para uma aplicação apresentará a indicação **excluída** se a aplicação estiver excluída para um utilizador durante a atribuição de aplicações. Para obter mais informações, veja [Como são resolvidos conflitos entre intenções de aplicações](apps-deploy.md#how-conflicts-between-app-intents-are-resolved).<br><br>
     > Se ocorrer uma falha na instalação de uma aplicação necessária, o utilizador ou o suporte técnico poderá sincronizar o dispositivo e repetir a instalação da aplicação.
 
-Os detalhes do erro da instalação da aplicação irão indicar o problema. Pode usar estes detalhes para determinar a melhor ação a tomar para resolver o problema. Para obter mais informações sobre como solucionar problemas de instalação do aplicativo, consulte [erros de instalação do aplicativo](troubleshoot-app-install.md#app-installation-errors).
+Os detalhes do erro da instalação da aplicação irão indicar o problema. Pode usar estes detalhes para determinar a melhor ação a tomar para resolver o problema. Para obter mais informações sobre como solucionar problemas de instalação do aplicativo, consulte [erros de instalação do aplicativo Android](troubleshoot-app-install.md#android-app-installation-errors) e [erros de instalação do aplicativo IOS](troubleshoot-app-install.md#ios-app-installation-errors).
 
 > [!Note]  
 > Também pode aceder ao painel **Resolução de problemas** ao apontar o seu browser para: [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting).
@@ -105,11 +105,7 @@ Há requisitos específicos que devem ser seguidos para coletar arquivos de log:
 - Os logs armazenados são criptografados para proteger qualquer informação de identificação pessoal contida nos logs.
 - Ao abrir tíquetes de suporte para falhas de aplicativo Win32, anexe os logs de falha relacionados usando as etapas fornecidas acima.
 
-## <a name="app-installation-errors"></a>Erros de instalação da aplicação
-
-As seguintes mensagens de erro e descrições fornecem detalhes sobre erros de instalação no Android e no iOS. 
-
-### <a name="android-errors"></a>Erros do Android
+## <a name="android-app-installation-errors"></a>Erros de instalação do aplicativo Android
 
 Esta seção menciona tanto o administrador do dispositivo quanto o registro Samsung Knox. Para obter mais informações, consulte [registro de administrador do dispositivo Android](../enrollment/android-enroll-device-administrator.md) e [registrar automaticamente dispositivos Android usando o registro móvel do Knox do Samsung](../enrollment/android-samsung-knox-mobile-enroll.md). 
 
@@ -130,7 +126,9 @@ Esta seção menciona tanto o administrador do dispositivo quanto o registro Sam
 | A desinstalação do aplicativo foi cancelada porque o processo foi reiniciado durante a instalação. (0xc7d14fbc) | O processo de instalação do aplicativo foi encerrado pelo sistema operacional ou o dispositivo foi reiniciado. Tente instalar novamente e coletar logs de Portal da Empresa se esse erro ocorrer novamente. |
 | O arquivo APK de instalação do aplicativo não pode ser instalado porque não foi assinado. (0xc7d14fb6) | Por padrão, o sistema operacional Android requer que OS aplicativos sejam assinados. Verifique se o aplicativo está assinado antes da implantação. |
 
-### <a name="ios-errors"></a>Erros do iOS
+## <a name="ios-app-installation-errors"></a>erros de instalação do aplicativo iOS
+
+As seguintes mensagens de erro e descrições fornecem detalhes sobre os erros de instalação do iOS. 
 
 | Mensagem de erro/código | Descrição/dicas de solução de problemas |
 |------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -164,7 +162,7 @@ Esta seção menciona tanto o administrador do dispositivo quanto o registro Sam
 | A versão mais recente do aplicativo não pôde ser atualizada de uma versão anterior. (0x87D13B9D) | Essa mensagem de erro será exibida se o aplicativo estiver instalado e gerenciado, mas com a versão incorreta no dispositivo. Essa situação inclui quando um dispositivo recebe um comando para atualizar um aplicativo, mas a nova versão ainda não foi instalada e relatada. Esse erro será relatado para o primeiro check-in de um dispositivo depois que a atualização tiver sido implantada e ocorrerá até que o dispositivo relate que a nova versão está instalada ou falhe devido a um erro diferente.  |
 
 
-### <a name="other-installation-errors"></a>Outros erros de instalação
+## <a name="other-installation-errors"></a>Outros erros de instalação
 
 |  Mensagem de erro/código  |  Description  |
 |-----------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

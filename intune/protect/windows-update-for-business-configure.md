@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/12/2019
+ms.date: 01/14/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -15,12 +15,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ad630eb34b296d7ab77081a1e3063db8dffc64f9
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: dc9dd03714e24dae4b0c7afe9206c6a8d7d36c13
+ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207456"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75956276"
 ---
 # <a name="manage-windows-10-software-updates-in-intune"></a>Gerenciar atualizações de software do Windows 10 no Intune
 
@@ -34,7 +34,7 @@ O Intune fornece os seguintes tipos de política para gerenciar atualizações:
 
 - **Anel de atualização do Windows 10**: essa política é uma coleção de configurações que é configurada quando as atualizações do Windows 10 são instaladas.
 
-- **Atualizações de recursos do Windows 10 (visualização pública)**: essa política traz os dispositivos para a versão do Windows que você especifica e congela o conjunto de recursos nesses dispositivos até que você opte por atualizá-los para uma versão posterior do Windows.  Embora a versão do recurso permaneça estática, os dispositivos podem continuar a instalar as atualizações de qualidade e segurança disponíveis para a versão do recurso.
+- **Atualizações de recursos do Windows 10 (visualização pública)** : essa política traz os dispositivos para a versão do Windows que você especifica e congela o conjunto de recursos nesses dispositivos até que você opte por atualizá-los para uma versão posterior do Windows.  Embora a versão do recurso permaneça estática, os dispositivos podem continuar a instalar as atualizações de qualidade e segurança disponíveis para a versão do recurso.
 
 Você atribui políticas para anéis de atualização do Windows 10 e atualizações de recurso do Windows 10 a grupos de dispositivos. Você pode usar ambos os tipos de política no mesmo ambiente do Intune para gerenciar atualizações de software para seus dispositivos Windows 10 e para criar uma estratégia de atualização que espelhe suas necessidades de negócios.
 
@@ -63,7 +63,7 @@ Os pré-requisitos a seguir devem ser atendidos para usar as atualizações do W
   > - Windows 10 Mobile  
   > - Windows 10 Enterprise LTSC. O Windows Update for Business (WUfB) atualmente não dá suporte a versões de *canal de serviço de longo prazo* . Planeje usar métodos alternativos de aplicação de patches, como o WSUS ou o Configuration Manager.
 
-- Em dispositivos Windows, os **comentários & diagnósticos** > **dados de diagnóstico e de uso** devem ser definidos como **básico**, **avançado**ou **completo**.  
+- Em dispositivos Windows, os **comentários & diagnósticos** > **dados de diagnóstico e de uso** devem ser definidos como **básico**, **avançado**ou **completo**.
 
   Você pode definir a configuração de *dados de diagnóstico e de uso* para dispositivos Windows 10 manualmente ou usar um perfil de restrição de dispositivo do Intune para Windows 10 e posterior. Se você usar um perfil de restrição de dispositivo, defina a [configuração de restrição de dispositivo](../configuration/device-restrictions-windows-10.md#reporting-and-telemetry) de **compartilhar dados de uso** para pelo menos **básico**. Essa configuração é encontrada na categoria **relatórios e telemetria** quando você configura uma política de restrição de dispositivo para o Windows 10 ou posterior.
 
@@ -90,7 +90,7 @@ Os anéis de atualização do Windows 10 dão suporte a [marcas de escopo](../fu
 
    Quando estiver pronto, selecione **Avançar** para continuar com as *atribuições*.
 
-6. Em **atribuições**, escolha **+ Selecionar grupos para incluir** e, em seguida, atribua o anel de atualização a um ou mais grupos. Use **+ selecione grupos para excluir** para ajustar a atribuição. Selecione **Avançar** para continuar.
+6. Em **atribuições**, escolha **+ Selecionar grupos para incluir** e, em seguida, atribua o anel de atualização a um ou mais grupos. Use **+ selecione grupos para excluir** para ajustar a atribuição. Selecione **Seguinte** para continuar.
 
 7. Em**revisão + criar**, examine as configurações e, em seguida, selecione **criar** quando estiver pronto para salvar o anel de atualização do Windows 10. O novo anel de atualização é exibido na lista de anéis de atualização.
 
@@ -101,7 +101,7 @@ No portal, navegue até **dispositivos** > os anéis de atualização **do Windo
 Nessa página, você pode exibir o status de atribuição de anéis e selecionar as seguintes ações na parte superior do painel de visão geral para gerenciar o anel de atualização:
 
 - [Eliminar](#delete)
-- [Temporariamente](#pause)
+- [Colocar em pausa](#pause)
 - [Volte](#resume)
 - [Estender](#extend)
 - [Desinstalar](#uninstall)
@@ -145,7 +145,7 @@ Enquanto um anel de atualização é pausado, você pode selecionar **retomar** 
 2. Selecione entre as opções disponíveis para retomar as atualizações de **recurso** ou **qualidade** e, em seguida, selecione **OK**.
 3. Depois de retomar um tipo de atualização, você pode selecionar retomar novamente para retomar o outro tipo de atualização.
 
-#### <a name="extend"></a>Estender  
+#### <a name="extend"></a>Expandir  
 
 Enquanto um anel de atualização é pausado, você pode selecionar **estender** para redefinir o período de pausa para as atualizações de recurso e qualidade desse anel de atualização para 35 dias.
 
@@ -179,7 +179,7 @@ Ao usar a desinstalação, considere o seguinte:
 
 - Em um dispositivo Windows 10, depois que uma atualização de qualidade for revertida com êxito, os usuários do dispositivo continuarão vendo a atualização listada nas **configurações do Windows** > **atualizações** > **histórico de atualizações**.
 
-- Para atualizações de recursos especificamente, o tempo que você pode desinstalar a atualização é limitado de 2-60 dias. Esse período é configurado pela configuração de atualização de anéis de atualização **definir período de desinstalação de atualização de recurso (2 a 60 dias)**. Não é possível reverter uma atualização de recurso que foi instalada em um dispositivo depois que a atualização tiver sido instalada por mais tempo do que o período de desinstalação configurado.
+- Para atualizações de recursos especificamente, o tempo que você pode desinstalar a atualização é limitado de 2-60 dias. Esse período é configurado pela configuração de atualização de anéis de atualização **definir período de desinstalação de atualização de recurso (2 a 60 dias)** . Não é possível reverter uma atualização de recurso que foi instalada em um dispositivo depois que a atualização tiver sido instalada por mais tempo do que o período de desinstalação configurado.
 
   Por exemplo, considere um anel de atualização com um período de desinstalação de atualização de recurso de 20 dias. Depois de 25 dias, você decide reverter a atualização de recursos mais recente e usar a opção de desinstalação.  Os dispositivos que instalaram a atualização de recursos há mais de 20 dias não podem desinstalá-lo, pois eles removeram os bits necessários como parte de sua manutenção. No entanto, os dispositivos que instalaram apenas a atualização de recursos até 19 dias atrás poderão desinstalar a atualização se eles fizerem check-in com êxito para receber o comando de desinstalação antes de exceder o período de desinstalação de 20 dias.
 
@@ -215,6 +215,10 @@ Quando um dispositivo recebe uma política de atualizações de recursos do Wind
 
   Essa limitação está sendo examinada para ver se ele pode ter suporte no futuro.
 
+> [!IMPORTANT]
+> Para usar a política de atualizações de recursos com o Intune, os dispositivos devem ter a telemetria ativada, com uma configuração mínima de [*básico*](../configuration/device-restrictions-windows-10.md#reporting-and-telemetry). A telemetria é configurada em *relatórios e telemetria* como parte de uma [política de restrição de dispositivo](../configuration/device-restrictions-configure.md).
+>
+> Dispositivos que recebem a política de atualizações de recursos e que têm a telemetria definida como *não configurado*, o que significa que ele está desativado, pode instalar uma versão mais recente do Windows do que a definida na política de atualização de recursos. O pré-requisito para exigir telemetria está sob análise, pois esse recurso se move para a disponibilidade geral.
 
 ### <a name="create-and-assign-windows-10-feature-updates"></a>Criar e atribuir atualizações de recursos do Windows 10
 
@@ -224,7 +228,7 @@ Quando um dispositivo recebe uma política de atualizações de recursos do Wind
 
 3. Em **noções básicas**, especifique um nome, uma descrição (opcional) e para **a atualização do recurso a ser implantada**, selecione a versão do Windows com o conjunto de recursos desejado e, em seguida, selecione **Avançar**.
 
-4. Em **atribuições**, escolha **+ Selecionar grupos para incluir** e, em seguida, atribua a implantação de atualização de recurso a um ou mais grupos. Selecione **Avançar** para continuar.
+4. Em **atribuições**, escolha **+ Selecionar grupos para incluir** e, em seguida, atribua a implantação de atualização de recurso a um ou mais grupos. Selecione **Seguinte** para continuar.
 
 5. Em **revisão + criar**, examine as configurações e selecione **criar** quando estiver pronto para salvar a política de atualizações de recursos do Windows 10.  
 
@@ -245,4 +249,3 @@ Nesse painel, você pode:
 [Relatórios de conformidade do Intune para atualizações](../windows-update-compliance-reports.md)
 
 [Solução de problemas de anéis de atualização do Windows 10](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Troubleshooting-Windows-10-Update-Ring-Policies/ba-p/714046)
-

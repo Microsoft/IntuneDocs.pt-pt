@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fe37ac412d01d3032685a0e66827d20e13b0db64
-ms.sourcegitcommit: 42183c87b137710b8529049f8710d47127e99900
+ms.openlocfilehash: 237eca2f8e00f00fda5fa3cf401be87de9602743
+ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75303064"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75956268"
 ---
 # <a name="add-groups-to-organize-users-and-devices"></a>Adicionar grupos para organizar utilizadores e dispositivos
 
@@ -54,7 +54,7 @@ Utilize os seguintes passos para criar um novo grupo.
         >
         > Se sua função principal for gerenciamento de dispositivos, recomendamos que você use o [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-    - **Office 365**: esses grupos foram projetados para controlar o acesso e compartilhar recursos do Office 365. Por exemplo, você pode criar um grupo do Office 365 para compartilhar uma caixa de entrada ou calendário do Outlook. Para obter mais informações, consulte [saiba mais sobre grupos do Office 365](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2).
+    - **Office 365**: fornece oportunidades de colaboração fornecendo aos membros acesso a uma caixa de correio compartilhada, calendário, arquivos, site do SharePoint e muito mais. Esta opção também lhe permite conceder às pessoas fora da organização acesso ao grupo. Para obter mais informações, consulte [saiba mais sobre grupos do Office 365](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2).
 
 4. Insira um **nome de grupo** e uma **Descrição de grupo** para o novo grupo. Seja específico e inclua informações para que outras pessoas saibam o que é o grupo.
 
@@ -85,7 +85,7 @@ Utilize os seguintes passos para criar um novo grupo.
 > - Todos os dispositivos Android Enterprise
 > - Todos os dispositivos iOS 11 e mais antigos
 > - Marketing
-> - Recursos humanos
+> - Recursos Humanos
 > - Todos os funcionários do Charlotte
 > - Todos os funcionários do WA
 

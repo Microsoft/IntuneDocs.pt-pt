@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3f336bdb9eca9900cc0250bb174c04d368da9eb9
-ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
+ms.openlocfilehash: 7170f723707ef709ef464b35bc3f6d3297341cf1
+ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75885588"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75956188"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Adicionar aplicações ao Microsoft Intune 
 
@@ -189,7 +189,7 @@ O Intune irá reinstalar, atualizar ou remover automaticamente uma aplicação n
 
 ## <a name="app-installation-errors"></a>Erros de instalação da aplicação
 
-Para obter detalhes sobre os erros de instalação da aplicação Intune, veja [Erros de instalação da aplicação](troubleshoot-app-install.md#app-installation-errors).
+Para obter detalhes sobre os erros de instalação da aplicação Intune, veja [Erros de instalação da aplicação](troubleshoot-app-install.md).
 
 ## <a name="next-steps"></a>Próximos passos
 
