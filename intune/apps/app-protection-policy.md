@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, get-started, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3f1563c092d8dd4c34e4a18caea56910267eb623
-ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
+ms.openlocfilehash: 3c340ffaacad303c4ff395c84d92e3907e42a521
+ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
 ms.translationtype: MT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 01/15/2020
-ms.locfileid: "75956326"
+ms.locfileid: "76036644"
 ---
 # <a name="app-protection-policies-overview"></a>Descrição geral das políticas de proteção de aplicações
 
@@ -184,7 +184,7 @@ Há requisitos adicionais para usar o Skype for Business. Veja os requisitos de 
 
 ## <a name="app-protection-global-policy"></a>Política Global de proteção de aplicações
 
-Se um administrador do OneDrive navegar até **admin.office.com** e selecionar acesso por **Dispositivo**, poderá definir os controlos da **Gestão de aplicações móveis** para as aplicações cliente OneDrive e SharePoint. 
+Se um administrador do OneDrive navegar até **admin.onedrive.com** e selecionar o **acesso ao dispositivo**, ele poderá definir controles de gerenciamento de **aplicativos móveis** para os aplicativos cliente do onedrive e do SharePoint. 
 
 As definições, disponibilizadas para a consola de administração do OneDrive, configuram uma política de proteção de aplicações do Intune especial denominada política **Global**. Esta política global aplica-se a todos os utilizadores no seu inquilino e não existe nenhuma forma de controlar a segmentação da política. 
 
