@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 304a6a60ea8dbfa98e62eb8e52a69e14af795746
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: d1131eec2894aa8c7135b2f931a50ab85200e7e3
+ms.sourcegitcommit: 822a70c61f5d644216ccc401b8e8949bc39e8d4a
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75548012"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76125281"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>Gerenciar o acesso via Web usando o Microsoft Edge com o Microsoft Intune
 
@@ -217,6 +217,7 @@ Aqui estão alguns detalhes:
 - Esses indicadores não podem ser excluídos nem modificados pelos usuários.
 - Esses indicadores aparecem na parte superior da lista. Todos os indicadores que os usuários criam aparecem abaixo desses indicadores.
 - Se você habilitou o redirecionamento de proxy de aplicativo, poderá adicionar aplicativos Web de proxy de aplicativo usando a URL interna ou externa.
+- Certifique-se de prefixar todas as URLs com **http://** ou **https://** ao inseri-las na lista.
 
 Use o seguinte par de chave/valor para configurar indicadores gerenciados:
 
@@ -243,7 +244,7 @@ Use os seguintes pares de chave/valor para configurar uma lista de sites permiti
 
 ### <a name="url-formats-for-allowed-and-blocked-site-list"></a>Formatos de URL para a lista de sites permitidos e bloqueados 
 Você pode usar vários formatos de URL para criar suas listas de sites permitidos/bloqueados. Esses padrões permitidos são detalhados na tabela a seguir. Algumas observações antes de começar: 
-- Certifique-se de que adiciona o prefixo **http** ou **https** a todos os URLs quando os introduzir na lista.
+- Certifique-se de prefixar todas as URLs com **http://** ou **https://** ao inseri-las na lista.
 - Você pode usar o símbolo curinga (\*) de acordo com as regras na lista de padrões permitidos a seguir.
 - Um curinga só pode corresponder a um componente inteiro do nome do host (separado por pontos) ou a partes inteiras do caminho (separados por barras "/"). Por exemplo, **não** há suporte para `http://*contoso.com`.
 - Pode especificar os números da porta no endereço. Se não especificar um número da porta, os valores utilizados são:

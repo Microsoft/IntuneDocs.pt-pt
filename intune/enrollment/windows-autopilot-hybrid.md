@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc618f2502647ba33a16cff4305b9f4671e05996
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: d87a4b5d46a5f0d40cebe3dbcaff211ff508d667
+ms.sourcegitcommit: 822a70c61f5d644216ccc401b8e8949bc39e8d4a
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74558191"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76125315"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>Implantar dispositivos ingressados no Azure AD híbrido usando o Intune e o piloto automático do Windows
 Você pode usar o Intune e o piloto automático do Windows para configurar dispositivos ingressados no Azure Active Directory híbrido (Azure AD). Para fazer isso, siga as etapas neste artigo.
@@ -181,7 +181,7 @@ Depois que os dispositivos do AutoPilot forem registrados, seus nomes se tornar�
 
 
 ## <a name="create-and-assign-an-autopilot-deployment-profile"></a>Criar e atribuir um perfil de implementação do Autopilot
-Os perfis de implementação do Autopilot são utilizados para configurar os dispositivos do Autopilot.
+Os perfis de implementação do Autopilot são utilizados para configurar os dispositivos Autopilot.
 
 1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), selecione **dispositivos** > **windows** > **registro do Windows** > perfis de **implantação** > **Criar perfil**.
 2. Na página **noções básicas** , digite um **nome** e uma **Descrição**opcional.
@@ -209,17 +209,30 @@ Demora cerca de 15 minutos para que o status do perfil do dispositivo seja alter
 ## <a name="create-and-assign-a-domain-join-profile"></a>Criar e atribuir um perfil de Associação a um Domínio
 
 1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), selecione **dispositivos** > **perfis de configuração** > **Criar perfil**.
-1. Introduza as seguintes propriedades:
+2. Introduza as seguintes propriedades:
    - **Nome**: introduza um nome descritivo para o novo perfil.
    - **Descrição:** introduza uma descrição para o perfil.
    - **Plataforma**: selecione **Windows 10 e posterior**.
    - **Tipo de perfil**: selecione **ingresso no domínio (versão prévia)** .
-1. Selecione **configurações**e, em seguida, forneça um **prefixo de nome de computador**, nome de **domínio**e (opcional) **unidade organizacional** no [formato DN](https://docs.microsoft.com/windows/desktop/ad/object-names-and-identities#distinguished-name). 
+3. Selecione **configurações**e, em seguida, forneça um **prefixo de nome de computador**, nome de **domínio**.
+4. Adicional Forneça uma UO ( **unidade organizacional** ) no [formato DN](https://docs.microsoft.com/windows/desktop/ad/object-names-and-identities#distinguished-name). As suas opções são:
+   - Forneça uma UO na qual você tenha delegado o controle ao dispositivo Windows 2016 que está executando o conector do Intune.
+   - Forneça uma UO na qual você tenha delegado o controle aos computadores raiz em sua Active Directory local.
+   - Se você deixar isso em branco, o objeto de computador será criado no Active Directory contêiner padrão (CN = Computers se você nunca o [tiver alterado](https://support.microsoft.com/en-us/help/324949/redirecting-the-users-and-computers-containers-in-active-directory-dom)).
+   
+   Aqui estão alguns exemplos válidos:
+   - OU = nível 1, OU = Level2, DC = contoso, DC = com
+   - OU = meu, DC = contoso, DC = com
+   
+   Aqui estão alguns exemplos que não são válidos:
+   - CN = Computers, DC = contoso, DC = com (você não pode especificar um contêiner; em vez disso, deixe o valor em branco para usar o padrão para o domínio)
+   - OU = meu (você deve especificar o domínio por meio dos atributos DC =)
+     
    > [!NOTE]
    > Não use aspas ao contrário do valor na **unidade organizacional**.
-1. Selecione **OK** > **criar**.  
+5. Selecione **OK** > **criar**.  
     O perfil é criado e exibido na lista.
-1. Para atribuir o perfil, siga as etapas em [atribuir um perfil de dispositivo](../configuration/device-profile-assign.md#assign-a-device-profile) e atribua o perfil ao mesmo grupo usado nesta etapa [criar um grupo de dispositivos](windows-autopilot-hybrid.md#create-a-device-group)
+6. Para atribuir o perfil, siga as etapas em [atribuir um perfil de dispositivo](../configuration/device-profile-assign.md#assign-a-device-profile) e atribua o perfil ao mesmo grupo usado nesta etapa [criar um grupo de dispositivos](windows-autopilot-hybrid.md#create-a-device-group)
    - Implantando vários perfis de ingresso no domínio
    
      a. Crie um grupo dinâmico que inclua todos os seus dispositivos de piloto automático com um perfil de implantação do AutoPilot específico, digite (Device. enrollmentProfileName-EQ "nome do perfil do AutoPilot"). 

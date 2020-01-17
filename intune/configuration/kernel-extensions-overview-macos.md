@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/04/2019
+ms.date: 01/16/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bce6b99723c5eada8f8f29e875a1df1daa02751a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 1075054f3812e8c40f38e705a440c46ba09fdd0e
+ms.sourcegitcommit: 11cbd2a9d90dea20f6dc1f54f0a6acbeec3a71d6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059361"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76146774"
 ---
 # <a name="add-macos-kernel-extensions-in-intune"></a>Adicionar extensões de kernel macOS no Intune
 
@@ -55,7 +55,7 @@ Este artigo mostra como criar um perfil de configuração de dispositivo usando 
 ## <a name="what-you-need-to-know"></a>O que tem de saber
 
 - Extensões de kernel herdadas não assinadas podem ser adicionadas.
-- Certifique-se de inserir o identificador de equipe correto e a ID do pacote da extensão do kernel. O Intune não valida os valores inseridos. Se você inserir informações erradas, a extensão não funcionará no dispositivo.
+- Certifique-se de inserir o identificador de equipe correto e a ID do pacote da extensão do kernel. O Intune não valida os valores inseridos. Se você inserir informações erradas, a extensão não funcionará no dispositivo. Um identificador de equipe tem exatamente 10 caracteres alfanuméricos de comprimento. 
 
 > [!NOTE]
 > A Apple lançou informações sobre assinatura e notarization para todos os softwares. No macOS 10.14.5 e mais recentes, as extensões de kernel implantadas por meio do Intune não precisam atender à política de notarization da Apple.

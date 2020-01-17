@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 38f9c9721942b4c9754d4e99e4e91d751ceedcf3
-ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
+ms.openlocfilehash: f6edf3fd8d6c6aeefeb1e34c5b390360e7215f21
+ms.sourcegitcommit: 822a70c61f5d644216ccc401b8e8949bc39e8d4a
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75653789"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76125298"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Guia para programadores do SDK da Aplicação Microsoft Intune para iOS
 
@@ -465,13 +465,14 @@ IntuneMAMPolicy.h | A classe IntuneMAMPolicy expõe algumas definições da pol�
 IntuneMAMFileProtectionManager.h | A classe IntuneMAMFileProtectionManager expõe APIs que a aplicação pode utilizar para proteger explicitamente ficheiros e diretórios com base numa identidade fornecida. A identidade pode ser gerida pelo Intune ou pode não ser gerida e o SDK irá aplicar a política MAM adequada. A utilização desta classe é opcional. |
 IntuneMAMDataProtectionManager.h | A classe IntuneMAMDataProtectionManager expõe APIs que a aplicação pode utilizar para proteger memórias intermédias de dados aos quais foram fornecidas identidades. A identidade pode ser gerida pelo Intune ou pode não ser gerida e o SDK irá aplicar a encriptação adequada. |
 
-## <a name="implement-save-as-controls"></a>Implementar controlos de Guardar como
+## <a name="implement-save-as-and-open-from-controls"></a>Implementar controles Save-as e Open-from
 
-O Intune permite que os administradores de TI selecionem as localizações de armazenamento onde uma aplicação gerida pode guardar dados. As aplicações podem consultar o SDK da Aplicação do Intune para obter as localizações de armazenamento através da API `isSaveToAllowedForLocation` definida na `IntuneMAMPolicy.h`.
+O Intune permite que os administradores de ti selecionem em quais locais de armazenamento um aplicativo gerenciado pode salvar dados ou abrir dados. Os aplicativos podem consultar o SDK do MAM do Intune em busca de locais de armazenamento permitidos para salvar em, usando a API `isSaveToAllowedForLocation`, definida em `IntuneMAMPolicy.h`. Os aplicativos também podem consultar o SDK do MAM do Intune para obter os locais de armazenamento permitidos abertos, usando a API `isOpenFromAllowedForLocation`, definida em `IntuneMAMPolicy.h`.
 
 Antes de as aplicações poderem guardar dados geridos em localizações locais ou de armazenamento na cloud, estas têm de verificar a API `isSaveToAllowedForLocation` para saber se o administrador de TI permitiu que os dados fossem guardados nessas localizações.
+Antes de abrir dados em um aplicativo de um armazenamento em nuvem ou local local, o aplicativo deve verificar com a API de `isOpenFromAllowedForLocation` para saber se o administrador de ti permitiu que os dados sejam abertos a partir daí.
 
-Quando as aplicações utilizam a API `isSaveToAllowedForLocation`, estas têm de introduzir o UPN para a localização de armazenamento, se o mesmo estiver disponível.
+Quando os aplicativos usam as APIs `isSaveToAllowedForLocation` ou `isOpenFromAllowedForLocation`, eles devem passar o UPN para o local de armazenamento, se ele estiver disponível.
 
 ### <a name="supported-save-locations"></a>Localizações para guardar suportadas
 
@@ -481,12 +482,46 @@ A API `isSaveToAllowedForLocation` disponibiliza constantes para verificar se o 
 * IntuneMAMSaveLocationOneDriveForBusiness
 * IntuneMAMSaveLocationSharePoint
 * IntuneMAMSaveLocationLocalDrive
+* IntuneMAMSaveLocationAccountDocument
 
 As aplicações devem utilizar as constantes na API `isSaveToAllowedForLocation` para verificar se os dados podem ser guardados em localizações consideradas "geridas," como o OneDrive para Empresas, ou "pessoais". Além disso, a API deve ser utilizada quando a aplicação não consegue determinar se uma localização é "gerida" ou "pessoal".
 
-As localizações reconhecidas como "pessoais" são representadas pela constante `IntuneMAMSaveLocationOther`.
-
 A constante `IntuneMAMSaveLocationLocalDrive` deve ser utilizada quando a aplicação guarda dados numa localização no dispositivo local.
+
+Se a conta do local de destino for desconhecida, `nil` deverá ser passado. O local de `IntuneMAMSaveLocationLocalDrive` deve ser sempre emparelhado com uma conta de `nil`.
+
+### <a name="supported-open-locations"></a>Locais abertos com suporte
+
+A API de `isOpenFromAllowedForLocation` fornece constantes para verificar se o administrador de ti permite que os dados sejam abertos nos seguintes locais definidos em `IntuneMAMPolicy.h`.
+
+* IntuneMAMOpenLocationOther
+* IntuneMAMOpenLocationOneDriveForBusiness
+* IntuneMAMOpenLocationSharePoint
+* IntuneMAMOpenLocationCamera
+* IntuneMAMOpenLocationLocalStorage
+* IntuneMAMOpenLocationAccountDocument
+
+Os aplicativos devem usar as constantes em `isOpenFromAllowedForLocation` para verificar se os dados podem ser abertos de locais considerados "gerenciados", como o OneDrive for Business ou "pessoal". Além disso, a API deve ser usada quando o aplicativo não pode verificar se um local é "gerenciado" ou "pessoal".
+
+A constante `IntuneMAMOpenLocationCamera` deve ser usada quando o aplicativo estiver abrindo dados da câmera ou do álbum de fotos.
+
+A constante `IntuneMAMOpenLocationLocalStorage` deve ser usada quando o aplicativo estiver abrindo dados de qualquer local no dispositivo local.
+
+A constante `IntuneMAMOpenLocationAccountDocument` deve ser usada quando o aplicativo estiver abrindo um documento que tenha uma identidade de conta gerenciada (consulte a seção "dados compartilhados" abaixo)
+
+Se a conta do local de origem for desconhecida, `nil` deverá ser passado. Os locais de `IntuneMAMOpenLocationLocalStorage` e `IntuneMAMOpenLocationCamera` devem ser sempre emparelhados com uma conta de `nil`.
+
+### <a name="unknown-or-unlisted-locations"></a>Locais desconhecidos ou não listados
+
+Quando o local desejado não estiver listado no `IntuneMAMSaveLocation` ou `IntuneMAMOpenLocation` enums ou for desconhecido, um dos dois locais deverá ser usado.
+* Se o local de salvamento estiver sendo acessado com uma conta gerenciada, o local de `IntuneMAMSaveLocationAccountDocument` deverá ser usado (`IntuneMAMOpenLocationAccountDocument` para aberto).
+* Caso contrário, use o local de `IntuneMAMSaveLocationOther` (`IntuneMAMOpenLocationOther` para aberto).
+
+É importante fazer a distinção clara entre a conta gerenciada e uma conta que compartilha o UPN da conta gerenciada. Por exemplo, uma conta gerenciada com o UPN "user@contoso.com" conectado ao OneDrive não é a mesma que uma conta com o UPN "user@contoso.com" conectado ao dropbox. Se um serviço desconhecido ou não listado for acessado entrando na conta gerenciada (por exemplo, "user@contoso.com" conectado ao OneDrive), ele deverá ser representado pelo local do `AccountDocument`. Se o serviço desconhecido ou não listado entrar por meio de outra conta (por exemplo, "user@contoso.com" conectado ao dropbox), ele não está acessando o local com uma conta gerenciada e deve ser representado pelo local do `Other`.
+
+### <a name="sharing-blocked-alert"></a>Compartilhamento de alertas bloqueados
+
+Uma função auxiliar de interface do usuário pode ser usada quando a API `isSaveToAllowedForLocation` ou `isOpenFromAllowedForLocation` é chamada e encontrada para bloquear a ação salvar/abrir. Se o aplicativo quiser notificar o usuário de que a ação foi bloqueada, ele poderá chamar a API de `showSharingBlockedMessage` definida em `IntuneMAMUIHelper.h` apresentar um modo de exibição de alerta com uma mensagem genérica.
 
 ## <a name="share-data-via-uiactivityviewcontroller"></a>Partilhar dados através de UIActivityViewController
 
