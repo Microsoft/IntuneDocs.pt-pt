@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d697b2b0bc3fa5ffea4f8e8ff15cd7c62af3ad30
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: ae7dd4a1873cd7117870c4c1408e512831ecaa4f
+ms.sourcegitcommit: 665be113b593c3bc7d46b99599e720f781037dcf
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547948"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "76258474"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Configurações do dispositivo Windows 10 (e mais recente) para permitir ou restringir recursos usando o Intune
 
@@ -231,6 +231,9 @@ Essas configurações usam o [CSP da política de experiência](https://docs.mic
   [CSP AboveLock/AllowActionCenterNotifications](https://msdn.microsoft.com/ie/dn904962(v=vs.94)#AboveLock_AllowActionCenterNotifications)
 
 - **URL da imagem da tela bloqueada (somente desktop)** : Insira a URL para uma imagem no formato jpg, JPEG ou png que é usado como o papel de parede da tela de bloqueio do Windows. Por exemplo, introduza `https://contoso.com/image.png`. Essa configuração bloqueia a imagem e não pode ser alterada posteriormente.
+
+  [CSP de personalização/LockScreenImageUrl](https://docs.microsoft.com/en-us/windows/client-management/mdm/personalization-csp)
+
 - **Tempo limite de tela configurável pelo usuário (somente dispositivos móveis)** : **permitir** permite que os usuários configurem o tempo limite da tela. **Não configurado** (padrão) não dá aos usuários essa opção.
 
   [CSP DeviceLock/AllowScreenTimeoutWhileLockedUserConfig](https://msdn.microsoft.com/ie/dn904962(v=vs.94)#DeviceLock_AllowScreenTimeoutWhileLockedUserConfig)

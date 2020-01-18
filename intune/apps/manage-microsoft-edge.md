@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d1131eec2894aa8c7135b2f931a50ab85200e7e3
-ms.sourcegitcommit: 822a70c61f5d644216ccc401b8e8949bc39e8d4a
+ms.openlocfilehash: e64741a92804ec4149b654480166720ff3092e35
+ms.sourcegitcommit: 665be113b593c3bc7d46b99599e720f781037dcf
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76125281"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "76258511"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>Gerenciar o acesso via Web usando o Microsoft Edge com o Microsoft Intune
 
@@ -205,7 +205,7 @@ Você pode configurar a nova experiência de página de guia no Microsoft Edge M
 
 |    Chave    |    Valor    |
 |------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
-|    ' com. Microsoft. Intune. SohwIndustryNews '    |    **Verdadeiro** mostrará as notícias do setor na página de nova guia do Microsoft Edge Mobile.<p>**False** (padrão) ocultará as notícias do setor da nova página da guia.    |
+|    com. Microsoft. Intune. ShowIndustryNews    |    **Verdadeiro** mostrará as notícias do setor na página de nova guia do Microsoft Edge Mobile.<p>**False** (padrão) ocultará as notícias do setor da nova página da guia.    |
 
 ## <a name="configure-managed-bookmarks-for-microsoft-edge"></a>Configurar indicadores gerenciados para o Microsoft Edge
 
