@@ -44,7 +44,7 @@ Essas configurações se aplicam a tipos de registro do Android Enterprise, em q
   - **Conceder automaticamente**: as permissões são concedidas automaticamente.
   - **Negar automaticamente**: as permissões são negadas automaticamente.
 - **Alterações de data e hora**: escolha **bloco** para impedir que os utilizadores, desde a configuração manualmente a data e hora. **Não configurado** permite aos utilizadores para a data definida e a hora no dispositivo.
-- **Alterações de volume**: o **bloco** impede que os usuários alterem o volume do dispositivo e também faz mudo do volume mestre. **Não configurado** permite utilizando as definições de volume no dispositivo.
+- **Alterações de volume**: o **bloco** impede que os usuários alterem o volume do dispositivo e também faz silenciar do volume mestre. **Não configurado** permite utilizando as definições de volume no dispositivo.
 - **Reposição de fábrica**: escolha **bloco** para impedir que os utilizadores com o factory reposição opção nas definições do dispositivo. **Não configurado** permite aos utilizadores utilizar esta definição no dispositivo.
 - **Arranque seguro**: selecione **Bloquear** para impedir que os utilizadores reiniciem o dispositivo em modo de segurança. **Não configurado** permite aos utilizadores reiniciar o dispositivo em modo de segurança.
 - **Barra de status**: escolha **bloco** para impedir o acesso a barra de estado, incluindo notificações e definições rápidas. **Não configurado** permite aos utilizadores acesso a barra de status.
@@ -316,7 +316,7 @@ Essas configurações se aplicam a tipos de registro do Android Enterprise, em q
 - **Comprimento mínimo da palavra-passe**: introduza o número mínimo de carateres que a palavra-passe do utilizador tem de ter, de **4**-**16**.
 - **Máximo de minutos de inatividade até ao bloqueio do perfil de trabalho**: selecione a quantidade de tempo antes de o perfil de trabalho ser bloqueado. Em seguida, o utilizador tem de introduzir as credenciais para recuperar o acesso.
 - **Número de falhas de início de sessão antes de limpar o dispositivo**: introduza o número de vezes que uma palavra-passe incorreta pode ser introduzida antes de o perfil de trabalho do dispositivo ser eliminado.
-- **Expiração da palavra-passe (dias)**: introduza o número de dias até ser preciso alterar a palavra-passe do utilizador final (**1**-**255**).
+- **Expiração da palavra-passe (dias)** : introduza o número de dias até ser preciso alterar a palavra-passe do utilizador final (**1**-**255**).
 - **Tipo de palavra-passe necessária**: selecione o tipo de palavra-passe que tem de ser definido no dispositivo. Escolha entre:
   - **Predefinição do dispositivo**
   - **Biométrica de segurança baixa**
@@ -337,7 +337,7 @@ Estas definições de palavra-passe aplicam-se aos perfis pessoais nos dispositi
 - **Comprimento mínimo da palavra-passe**: introduza o número mínimo de carateres que a palavra-passe do utilizador tem de ter, de **4**-**14**.
 - **Máximo de minutos de inatividade até o ecrã ser bloqueado**: selecione a quantidade de tempo antes de um dispositivo inativo ser automaticamente bloqueado
 - **Número de falhas de início de sessão antes de limpar o dispositivo**: introduza o número de vezes que uma palavra-passe incorreta pode ser introduzida antes de todos os dados do dispositivo serem eliminados
-- **Expiração da palavra-passe (dias)**: introduza o número de dias até ser preciso alterar a palavra-passe do utilizador final (**1**-**255**)
+- **Expiração da palavra-passe (dias)** : introduza o número de dias até ser preciso alterar a palavra-passe do utilizador final (**1**-**255**)
 - **Tipo de palavra-passe necessária**: selecione o tipo de palavra-passe que tem de ser definido no dispositivo. Escolha entre:
   - **Predefinição do dispositivo**
   - **Biométrica de segurança baixa**

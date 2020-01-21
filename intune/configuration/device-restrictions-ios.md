@@ -594,7 +594,7 @@ Você também pode **importar** um arquivo CSV com a lista de nomes de aplicativ
 - **VoiceOver**: **exigir** que a configuração de acessibilidade do VoiceOver esteja no dispositivo para ler o texto na tela em voz alta. **Não configurado** não permite executar ou ativar esta funcionalidade no modo de quiosque.
 - **Zoom**: **exigir** que a configuração de zoom esteja no dispositivo para permitir que os usuários usem o toque para ampliar na tela. **Não configurado** não permite executar ou ativar esta funcionalidade no modo de quiosque.
 - **Bloqueio automático**: **Bloquear** impede o bloqueio automático do dispositivo. **Não configurado** permite esse recurso.
-- **Opção de toque**: **Bloquear** desabilita a opção de toque (mudo) no dispositivo. **Não configurado** permite esse recurso.
+- **Opção de toque**: **Bloquear** desabilita a opção de toque (silenciar) no dispositivo. **Não configurado** permite esse recurso.
 - **Rotação de tela**: **Bloquear** impede a alteração da orientação da tela quando o usuário gira o dispositivo. **Não configurado** permite esse recurso.
 - **Botão suspensão da tela**: escolha **Bloquear** para desabilitar o botão de ativação de suspensão da tela no dispositivo. **Não configurado** permite esse recurso.
 - **Touch**: **Block** desabilita a tela touch no dispositivo. **Não configurado** permite que o utilizador utilize o ecrã tátil.
