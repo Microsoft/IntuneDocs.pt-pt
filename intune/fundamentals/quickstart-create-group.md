@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 01/17/2020
 ms.topic: quickstart
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d73cc367e6c3308b34c2d2dd14c9fed94d80ba74
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: d9b06043dd10f92b6176d4b2e9f90f1b7c87aac9
+ms.sourcegitcommit: 70b40aa4743c8396f8d6a0163893c4a337d67c48
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72813403"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76540962"
 ---
 # <a name="quickstart-create-a-group-to-manage-users"></a>Início Rápido: criar um grupo para gerir utilizadores
 
@@ -36,22 +36,23 @@ Se não tiver uma subscrição do Intune, [inscreva-se numa conta de avaliação
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
+- Subscrição do Microsoft Intune – [inscreva-se numa conta de avaliação gratuita](../fundamentals/free-trial-sign-up.md).
 - Para concluir este início rápido, terá de [criar um utilizador](quickstart-create-user.md).
 
-## <a name="sign-in-to-intune"></a>Iniciar sessão no Intune
+## <a name="sign-in-to-intune-in-the-microsoft-endpoint-manager"></a>Entrar no Intune no Microsoft Endpoint Manager
 
-Entre no portal do [Intune](https://aka.ms/intuneportal) como um [administrador global ou um administrador de serviços do Intune](users-add.md#types-of-administrators). Se criou uma Subscrição de avaliação do Intune, a conta com a qual criou a subscrição é de Administrador global.
+Entre no [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) como um [administrador global ou um administrador de serviços do Intune](users-add.md#types-of-administrators). Se criou uma Subscrição de Avaliação do Intune, a conta com a qual criou a subscrição é de Administrador global.
 
 ## <a name="create-a-group"></a>Criar um grupo
 
 Irá criar um grupo que será utilizado mais tarde nesta série de início rápido. Para criar um grupo:
 
-1. Após abrir o painel **Microsoft Intune**, selecione **Grupos** > **Novo grupo**.
+1. Depois de abrir o **Gerenciador de pontos de extremidade da Microsoft**, selecione **grupos** > **novo grupo**.
 2. Na caixa pendente **Tipo de grupo**, selecione **Segurança**.
 3. No campo **nome do grupo** , insira o nome do novo grupo (por exemplo, **testadores contoso**).
-4. Adicione uma **Descrição** para o grupo.
+4. Adicione uma **Descrição de grupo** para o grupo.
 5. Defina o **Tipo de associação** para **Atribuído**. 
-6. Clique em **Membros** e selecione um ou mais membros para o grupo na lista.
+6. Em **Membros**, selecione o link e adicione um ou mais membros para o grupo na lista.
 
     ![Captura de ecrã da criação de um grupo no Microsoft Intune](./media/quickstart-create-group/quickstart-use-groups-01.png)
 

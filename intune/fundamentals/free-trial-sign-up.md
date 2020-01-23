@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/09/2020
+ms.date: 01/16/2020
 ms.topic: quickstart
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,18 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 35dd017eaa2dd3cd6c17dc611aaa9d457b18aca2
-ms.sourcegitcommit: 637375a390b6e34f9c4415c77b99fe2980bbf554
+ms.openlocfilehash: e1baf0b4273a9074ac7172c08240a8e3c3a9d7fa
+ms.sourcegitcommit: 70b40aa4743c8396f8d6a0163893c4a337d67c48
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75839246"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76541120"
 ---
 # <a name="quickstart-try-microsoft-intune-for-free"></a>Início Rápido: experimentar gratuitamente o Microsoft Intune
 
 O Microsoft Intune ajuda-o a proteger os dados empresariais da sua força de trabalho através da gestão de dispositivos e aplicações. Neste início rápido, criará uma subscrição gratuita para experimentar o Intune num ambiente de teste.
 
-O Intune fornece gestão de dispositivos móveis (MDM) e gestão de aplicações móveis (MAM) a partir de um serviço seguro baseado na cloud que é administrado com recurso ao portal do Microsoft Azure. A utilização do Intune permite assegurar que os recursos empresariais da sua força de trabalho (dados, dispositivos e aplicações) são configurados, acedidos e atualizados corretamente de forma a cumprir os requisitos e as políticas de conformidade da sua empresa.
+O Intune fornece MDM (gerenciamento de dispositivo móvel) e MAM (gerenciamento de aplicativo móvel) de um serviço seguro baseado em nuvem que é administrado usando o centro de administração do Microsoft Endpoint Manager. A utilização do Intune permite assegurar que os recursos empresariais da sua força de trabalho (dados, dispositivos e aplicações) são configurados, acedidos e atualizados corretamente de forma a cumprir os requisitos e as políticas de conformidade da sua empresa.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Antes de configurar o Microsoft Intune, reveja os seguintes requisitos:
@@ -60,27 +60,31 @@ Pode experimentar o Intune de forma gratuita durante 30 dias. Se já tiver uma c
 
     ![Imagem das informações da conta](./media/free-trial-sign-up/intune-end-of-sign-up-process.png) 
 
-## <a name="sign-in-to-the-azure-portal"></a>Iniciar sessão no portal do Azure
+## <a name="sign-in-to-intune-in-the-microsoft-endpoint-manager"></a>Entrar no Intune no Microsoft Endpoint Manager
 
-1. Abra uma nova janela do browser e introduza **https://portal.azure.com** na barra de endereço. 
-2. Utilize as credenciais que lhe foram fornecidas nos passos acima para iniciar sessão.
+Se você ainda não tiver entrado no portal, conclua as seguintes etapas:
 
-    ![Imagem da página de início de sessão do portal do Azure](./media/free-trial-sign-up/azure-portal-signin.png)
+1. Abra uma nova janela do browser e introduza **https://devicemanagement.microsoft.com** na barra de endereço. 
+2. Use a ID de usuário que você recebeu nas etapas acima para entrar ( *yourID@yourdomain* . onmicrosoft.com).
 
-3. Para exibir Microsoft Intune no portal do Azure, selecione **todos os serviços** na barra lateral no lado esquerdo da página.
-4. Procure **Microsoft Intune** na caixa do filtro e selecione-o.
-5. Selecione a **estrela** para adicionar o Intune à parte inferior da lista dos seus serviços preferidos e abra o dashboard do Intune.
+    ![Imagem da página de entrada do portal](./media/free-trial-sign-up/azure-portal-signin.png)
 
 Quando se inscrever numa versão de avaliação, também receberá uma mensagem de e-mail com as informações da sua conta no endereço de e-mail que indicou durante o processo de inscrição. Este e-mail confirma que a sua versão de avaliação está ativa.
 
 > [!TIP]
-> Ao trabalhar com o portal do Azure, poderá obter melhores resultados se utilizar um browser no modo normal, em vez de no modo privado.
+> Ao trabalhar com o Microsoft Endpoint Manager, você pode ter resultados melhores trabalhando com um navegador em modo normal, em vez de modo privado.
 
-## <a name="set-the-mdm-authority-to-intune"></a>Definir a autoridade de MDM como o Intune
+## <a name="confirm-the-mdm-authority-in-intune"></a>Confirmar a autoridade de MDM no Intune
 
-Depois de iniciar sessão no portal do Azure e selecionar o Intune, poderá ver uma faixa cor de laranja a indicar que ainda não definiu a autoridade de MDM. A definição da autoridade de gestão de dispositivos móveis (MDM) determina como gere os seus dispositivos. Tem de definir uma autoridade de MDM para que os utilizadores possam inscrever dispositivos para gestão.
+Por padrão, a autoridade de MDM é definida quando você cria sua avaliação gratuita. Você pode confirmar se a autoridade de MDM está definida usando as seguintes etapas:
 
-Para definir a autoridade de MDM como o Intune, siga estes passos.
+1. Se você ainda não tiver entrado, entre no Microsoft Endpoint Manager.
+2. Clique em **Administração de locatário**.
+3. Exiba os detalhes do locatário. A **autoridade de MDM** deve ser definida como **Microsoft Intune**.
+
+Se, depois de entrar no Microsoft Endpoint Manager, você vir uma faixa laranja indicando que ainda não definiu a autoridade de MDM, você poderá ativá-la no momento. A definição da autoridade de gestão de dispositivos móveis (MDM) determina como gere os seus dispositivos. Tem de definir uma autoridade de MDM para que os utilizadores possam inscrever dispositivos para gestão.
+
+### <a name="to-set-the-mdm-authority-to-intune-follow-these-steps"></a>Para definir a autoridade de MDM para o Intune, siga estas etapas:
 
 1. Abra uma nova janela do browser e introduza **https://portal.azure.com** na barra de endereço. 
 2. Selecione **Todos os serviços** > **Microsoft Intune**.
@@ -121,9 +125,9 @@ Conforme mencionado acima, se sua organização tiver seu próprio domínio pers
 
 ## <a name="admin-experiences"></a>Experiências de administrador
 
-Existem dois portais que pode utilizar:
-- O dashboard do Intune no Azure ([portal.azure.com](https://portal.azure.com)) é o local onde poderá explorar as [funcionalidades do Intune](what-is-intune.md). Normalmente, irá realizar o seu trabalho no dashboard do Intune.
-- O[admin.Microsoft.com](https://admin.microsoft.com)(centro de administração do Microsoft 365) é onde você pode adicionar e gerenciar usuários, se você não estiver usando Azure Active Directory para isso. Também pode gerir outros aspetos da sua conta, incluindo faturação e suporte.
+Há dois portais que serão usados com mais frequência:
+- O centro de administração do Microsoft Endpoint Manager ([https://devicemanagement.microsoft.com/](https://devicemanagement.microsoft.com/)) é onde você pode explorar os [recursos do Intune](what-is-intune.md). É aí que um administrador funcionaria com o Intune.
+- O[https://admin.microsoft.com](https://admin.microsoft.com)(centro de administração do Microsoft 365) é onde você pode adicionar e gerenciar usuários, se não estiver usando Azure Active Directory para isso. Também pode gerir outros aspetos da sua conta, incluindo faturação e suporte.
 
 ## <a name="next-steps"></a>Próximos passos
 

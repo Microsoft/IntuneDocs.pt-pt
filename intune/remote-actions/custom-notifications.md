@@ -18,18 +18,37 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d42651b11891f3d830c0d90e70a9ecd98ea5bfb7
-ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
+ms.openlocfilehash: 73b7617ad6a2d9aa756ddf9a8a4833289e5710ff
+ms.sourcegitcommit: af384c46ec8d8def6aa32c3b89947748dc6fd28f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "76036606"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76517514"
 ---
 # <a name="send-custom-notifications-in-intune"></a>Enviar notificações personalizadas no Intune  
 
 Use Microsoft Intune para enviar notificações personalizadas aos usuários de dispositivos iOS e Android gerenciados. Essas mensagens aparecem como notificações por push padrão do aplicativo Portal da Empresa e do aplicativo Microsoft Intune no dispositivo de um usuário, assim como as notificações de outros aplicativos no dispositivo são exibidas. As notificações personalizadas do Intune não têm suporte por dispositivos macOS e Windows.   
 
 As mensagens de notificação personalizadas incluem um título curto e um corpo de mensagem de 500 caracteres ou menos. Essas mensagens podem ser personalizadas para qualquer finalidade de comunicação geral.
+
+### <a name="what-the-notification-looks-like-on-an-ios-device"></a>A aparência da notificação em um dispositivo iOS
+
+Se você tiver o aplicativo Portal da Empresa aberto em um dispositivo iOS, a notificação será semelhante à captura de tela a seguir:
+
+> [!div class="mx-imgBorder"]
+> ![Portal da Empresa notificação de teste do iOS](./media/custom-notifications/105046-1.png)
+
+Se o dispositivo estiver bloqueado, a notificação será semelhante à captura de tela a seguir:
+
+> [!div class="mx-imgBorder"]
+> ![notificação de teste do iOS de dispositivo bloqueado](./media/custom-notifications/105046-2.png)
+
+### <a name="what-the-notification-looks-like-on-an-android-device"></a>Qual é a aparência da notificação em um dispositivo Android
+
+Se você tiver o aplicativo Portal da Empresa aberto em um dispositivo Android, a notificação será semelhante à captura de tela a seguir:
+
+> [!div class="mx-imgBorder"]
+> ![](./media/custom-notifications/105046-3.png) de notificação de teste do Android
 
 ## <a name="common-scenarios-for-sending-custom-notifications"></a>Cenários comuns para enviar notificações personalizadas  
 

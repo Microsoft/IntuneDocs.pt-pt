@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ce3f73834ffdc2648dae345f8fa2a8233d2bb8c9
-ms.sourcegitcommit: e7052114324b80d0503b107c934bb90b8eb29704
+ms.openlocfilehash: 0bbcad362ef2b2dcfdd170cd2e902d55cee00310
+ms.sourcegitcommit: af384c46ec8d8def6aa32c3b89947748dc6fd28f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "75756028"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76517597"
 ---
 # <a name="see-device-details-in-intune"></a>Consultar os detalhes do dispositivo no Intune
 
@@ -92,8 +92,6 @@ Dependendo da operadora usada pelos dispositivos, nem todos os detalhes podem se
 |ID de ativação do EAS|O identificador do Exchange ActiveSync do dispositivo.|Windows, iOS, Android|
 |Supervisionado|Se definido como **Sim**, os administradores têm controlo avançado sobre o dispositivo.|Windows, iOS, Android|
 |Encriptado|Se definido como **Sim**, os dados armazenados no dispositivo são encriptados.|Windows, iOS, Android|
-
-\* não disponíveis no Android com o Google Policy Manager, como dispositivos totalmente gerenciados e dedicados
 
 > [!Note]  
 > O número de telefone não é inventariado em dispositivos Android Enterprise dedicados ou totalmente gerenciados.

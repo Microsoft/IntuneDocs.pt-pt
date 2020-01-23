@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 81a084528fdc500bf9b6de0ca5fa847c2e0b3797
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 6b691e628b5b1b2ea2826e57fa9c4e1f2eaf7ae7
+ms.sourcegitcommit: 70b40aa4743c8396f8d6a0163893c4a337d67c48
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74563930"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76540899"
 ---
 # <a name="how-to-add-macos-line-of-business-lob-apps-to-microsoft-intune"></a>Como adicionar aplicações de linha de negócio (LOB) macOS ao Microsoft Intune
 
@@ -59,7 +59,9 @@ Você deve baixar uma ferramenta externa, marcar a ferramenta baixada como um ex
 3. Utilize o comando `IntuneAppUtil` na **Ferramenta de Encapsulamento de Aplicações do Intune para Mac** para encapsular o ficheiro da aplicação LOB *.pkg* num ficheiro *.intunemac*.<br>
 
     Comandos de exemplo a utilizar para a Ferramenta de Encapsulamento de Aplicações do Intune para Mac:
-    
+    > [!IMPORTANT]
+    > Certifique-se de que o argumento `<source_file>` não contenha espaços antes de executar os comandos `IntuneAppUtil`.
+
     - `IntuneAppUtil -h`<br>
     Este comando mostra informações de utilização da ferramenta.
     
@@ -86,9 +88,9 @@ Você deve baixar uma ferramenta externa, marcar a ferramenta baixada como um ex
 
 1. No painel **Adicionar aplicação**, selecione **Informações da aplicação**.
 2. No painel **Informações da aplicação**, adicione os detalhes da sua aplicação. Consoante a aplicação que tenha selecionado, alguns dos valores neste painel podem ter sido preenchidos automaticamente:
-    - **Nome** – introduza o nome da aplicação a apresentar no portal da empresa. Certifique-se de que todos os nomes de aplicações que utiliza são exclusivos. Se existir o mesmo nome duas vezes, só é apresentada uma das aplicações aos utilizadores no portal da empresa.
+    - **Nome** – introduza o nome da aplicação a apresentar no portal da empresa. Certifique-se de que todos os nomes de aplicações que utiliza são exclusivos. Se o mesmo nome de aplicação existir duas vezes, apenas uma das aplicações será apresentada aos utilizadores no portal da empresa.
     - **Descrição** – introduza uma descrição da aplicação a apresentar aos utilizadores no portal da empresa.
-    - **Publicador** – Introduza o nome do publicador da aplicação.
+    - **Publicador** - Introduza o nome do publicador da aplicação.
     - **Sistema Operativo Mínimo** – Na lista, escolha a versão mínima do sistema operativo no qual a aplicação pode ser instalada. Se atribuir a aplicação a um dispositivo com um sistema operativo anterior, não será instalada.
     - **Categoria** – selecione uma ou mais categorias das aplicações incorporadas ou, em alternativa, uma categoria criada por si. Isto irá permitir que os utilizadores encontrem a aplicação mais facilmente quando procurarem no portal da empresa.
     - **Apresentar esta aplicação em destaque no Portal da Empresa** – Apresente a aplicação de forma destacada na página principal do portal da empresa quando os utilizadores procurarem aplicações.

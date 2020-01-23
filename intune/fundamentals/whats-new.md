@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 311941c3981e5883d392359dc0919bb85156c4be
-ms.sourcegitcommit: fb72b19986f34907d228c856d2e6949751ec02a1
+ms.openlocfilehash: a150c7fd79235a5c76a1f460021464807fe66275
+ms.sourcegitcommit: af384c46ec8d8def6aa32c3b89947748dc6fd28f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75920094"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76517580"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 
@@ -212,7 +212,7 @@ Os detalhes da atividade do log de auditoria agora incluem informações de marc
 ## <a name="week-of-december-2-2019"></a>Semana de 2 de dezembro de 2019
 
 #### <a name="new-microsoft-endpoint-configuration-manager-co-management-licensing--5027281--"></a>Novo Microsoft Endpoint Configuration Manager licenciamento de cogerenciamento<!--5027281-->
-Já está disponível uma nova licença que permite que Configuration Manager clientes com o Software Assurance obtenham o cogerenciamento do Intune para PCs com Windows 10 sem precisar comprar uma licença adicional do Intune para o cogerenciamento. Os clientes não precisam mais atribuir licenças individuais do Intune/EMS aos usuários finais para gerenciar o Windows 10.
+Configuration Manager clientes com Software Assurance podem obter o cogerenciamento do Intune para PCs com Windows 10 sem precisar comprar uma licença adicional do Intune para o cogerenciamento. Os clientes não precisam mais atribuir licenças individuais do Intune/EMS aos usuários finais para gerenciar o Windows 10.
 - Os dispositivos gerenciados pelo Configuration Manager e registrados no cogerenciamento têm quase os mesmos direitos que os computadores gerenciados do MDM autônomo do Intune. No entanto, após a redefinição, eles não podem ser reprovisionados usando o AutoPilot.
 - Os dispositivos Windows 10 registrados no Intune usando outros meios exigem licenças completas do Intune.
 - Os dispositivos em outras plataformas ainda exigem licenças completas do Intune.

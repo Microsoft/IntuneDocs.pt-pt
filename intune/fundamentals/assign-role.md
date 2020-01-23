@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c82805bf70259d43d738644e5663b93533bcb56a
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 780a248f16a8a5028875c9c2401921ea23d0af24
+ms.sourcegitcommit: 70b40aa4743c8396f8d6a0163893c4a337d67c48
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207167"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76540933"
 ---
 # <a name="assign-a-role-to-an-intune-user"></a>Atribuir uma função a um usuário do Intune
 
@@ -32,7 +32,7 @@ Para criar, editar ou atribuir funções, a sua conta tem de ter uma das seguint
 - **Administrador Global**
 - **Administrador de Serviços do Intune**
 
-1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **funções** > **todas as funções**.
+1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **administração de locatário** > **funções** > **todas as funções**.
 
 2. Na folha **funções do Intune – todas as funções** , escolha a função interna que você deseja atribuir.
 
@@ -42,11 +42,11 @@ Para criar, editar ou atribuir funções, a sua conta tem de ter uma das seguint
 
 5. Na folha **atribuições de função** , insira um **nome de atribuição** e uma descrição de **atribuição** opcional para a atribuição.
 
-6. Para **Membros (grupos)**, escolha um grupo que contenha o usuário ao qual você deseja conceder as permissões.
+6. Para **Membros (grupos)** , escolha um grupo que contenha o usuário ao qual você deseja conceder as permissões.
 
-7. Para **escopo (grupos)**, escolha um grupo que contenha os usuários/dispositivos que o membro acima terá permissão para gerenciar.
+7. Para **escopo (grupos)** , escolha um grupo que contenha os usuários/dispositivos que o membro acima terá permissão para gerenciar.
 
-8. Para **escopo (marcas)**, escolha as marcas em que essa atribuição de função será aplicada.
+8. Para **escopo (marcas)** , escolha as marcas em que essa atribuição de função será aplicada.
 
 9. Quando tiver terminado, selecione **OK**. A nova atribuição é apresentada na lista de atribuições.
 

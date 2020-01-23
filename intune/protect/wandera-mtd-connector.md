@@ -15,12 +15,12 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 50973d883a3d31089e16dca5a9021643a821a3fb
-ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
+ms.openlocfilehash: 3ee253b50ea525f7d156c77a83f486cf990da030
+ms.sourcegitcommit: af384c46ec8d8def6aa32c3b89947748dc6fd28f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "76036619"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76517461"
 ---
 # <a name="wandera-mobile-threat-defense-connector-with-intune"></a>Conector de defesa contra ameaças móveis do com o Intune  
 
@@ -48,7 +48,7 @@ As seguintes plataformas têm suporte para o inverter quando registrados no Intu
 - Android 5,0 e posterior  
 - iOS 10,2 e posterior  
 
-Para obter mais informações sobre a plataforma e o dispositivo, consulte o [site da Web](https://www.wandera.com/classic-help-center/)de busca.
+Para obter mais informações sobre a plataforma e o dispositivo, consulte o [site da Web](https://www.wandera.com/mobile-threat-defense/)de busca.
 
 ## <a name="prerequisites"></a>Pré-requisitos  
 

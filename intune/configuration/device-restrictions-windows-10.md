@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ae7dd4a1873cd7117870c4c1408e512831ecaa4f
-ms.sourcegitcommit: 665be113b593c3bc7d46b99599e720f781037dcf
+ms.openlocfilehash: 81da5ca8e7eaa76f9a6705cc9e3c816234c461db
+ms.sourcegitcommit: af384c46ec8d8def6aa32c3b89947748dc6fd28f
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "76258474"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76517563"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Configurações do dispositivo Windows 10 (e mais recente) para permitir ou restringir recursos usando o Intune
 
@@ -850,6 +850,14 @@ Essas configurações usam o [CSP de política do defender](https://docs.microso
   [CSP do defender/PUAProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-puaprotection)
 
 - **Enviar exemplos de consentimento**: atualmente, essa configuração não tem impacto. Não use essa configuração. Ele pode ser removido em uma versão futura.
+
+- **Na proteção de acesso**: **Bloquear** impede a verificação de arquivos que foram acessados ou baixados. Os usuários não podem ativá-lo.
+
+  Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração. Se você bloquear a configuração e, em seguida, alterá-la novamente para **não configurado**, o Intune deixará a configuração no estado configurado anteriormente pelo so. Por padrão, o sistema operacional habilita esse recurso e permite que os usuários o alterem.
+
+  O Intune não ativa esse recurso. Para habilitá-lo, use um URI personalizado.
+
+  [CSP do defender/AllowOnAccessProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowonaccessprotection)
 
 - **Ações sobre ameaças de malware detectadas**: escolha como você deseja tratar os threads de malware. **Não configurado** (padrão) permite que o Microsoft defender escolha a melhor opção. Quando definido como **habilitar**, escolha as ações que você deseja que o defender assuma para cada nível de ameaça que detectar: baixa, moderada, alta e grave. As opções são:
   
