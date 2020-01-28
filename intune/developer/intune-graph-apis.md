@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1a5381d139247424d976b6b510d62681f623203a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: ac63ef1f35e7b4730e275c6c9e566c53463c72ce
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72490517"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76754801"
 ---
 # <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>Como utilizar o Azure AD para aceder às APIs do Intune no Microsoft Graph
 
@@ -62,13 +62,13 @@ Para saber mais, veja:
 
 Para registar uma aplicação para utilizar a API do Microsoft Graph:
 
-1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) usando credenciais administrativas.
+1. Inscreva-se em [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) usando credenciais administrativas.
 
     Conforme adequado, pode utilizar:
     - A conta de administrador de inquilino.
     - Uma conta de utilizador inquilino com a definição **Os utilizadores podem registar aplicações** ativada.
 
-2. No menu, escolha **Azure Active Directory** &gt; **Registos de Aplicações**.
+2. No menu, escolha **O Diretório Ativo Azure** &gt; Registos de **Aplicações.**
 
     <img src="../media/azure-ad-app-reg.png" width="157" height="170" alt="The App registrations menu command" />
 
@@ -90,15 +90,15 @@ Para registar uma aplicação para utilizar a API do Microsoft Graph:
 
     1. Tenha em conta o valor **ID da Aplicação**.
 
-    2. Escolha **Definições** &gt; **Acesso à API** &gt; **Permissões necessárias**.
+    2. Escolha **Definições** &gt; **acesso a API** &gt; **permissões necessárias**.
 
     <img src="../media/azure-ad-req-perm.png" width="483" height="186" alt="The Required permissions setting" />
 
-6. No painel **Permissões Necessárias**, escolha **Adicionar** &gt; **Adicionar acesso à API** &gt; **Selecionar uma API**.
+6. A partir da lâmina de **permissões necessárias,** escolha **adicionar** &gt; **adicionar acesso API** &gt; **Selecione um API**.
 
     <img src="../media/azure-ad-add-graph.png" width="436" height="140" alt="The Microsoft Graph setting" />
 
-7. No painel **Selecionar uma API**, escolha **Microsoft Graph** &gt; **Selecionar**.  O painel **Ativar acesso** é apresentado e indica os âmbitos de permissão disponíveis para a sua aplicação.
+7. A partir da lâmina **Select a API,** escolha o **Microsoft Graph** &gt; **Select**.  O painel **Ativar acesso** é apresentado e indica os âmbitos de permissão disponíveis para a sua aplicação.
 
     <img src="../media/azure-ad-perm-scopes.png" width="489" height="248" alt="Intune Graph API permission scopes" />
 
@@ -240,7 +240,7 @@ Neste momento, todos os âmbitos de permissão do Intune exigem acesso de admini
 
 - As seguintes ações remotas também são permitidas:
   - Localizar dispositivos
-  - Ignorar o bloqueio de ativação
+  - Bloqueio de ativação de sactivação de sactiva
   - Pedir assistência remota
 
 ### <a name="rac-ro"></a>DeviceManagementRBAC.Read.All
@@ -269,7 +269,7 @@ Neste momento, todos os âmbitos de permissão do Intune exigem acesso de admini
 - Permite o acesso de leitura às seguintes propriedades e estado da entidade:
   - Inscrição de Dispositivos
   - Certificado Apple Push Notification
-  - Programa de Inscrição de Dispositivos da Apple
+  - Programa de Inscrição de Dispositivos Apple
   - Apple Volume Purchase Program
   - Exchange Connector
   - Termos e Condições
@@ -287,7 +287,7 @@ Neste momento, todos os âmbitos de permissão do Intune exigem acesso de admini
 - As aplicações também podem configurar as seguintes funcionalidades do Intune:
   - Inscrição de Dispositivos
   - Certificado Apple Push Notification
-  - Programa de Inscrição de Dispositivos da Apple
+  - Programa de Inscrição de Dispositivos Apple
   - Apple Volume Purchase Program
   - Exchange Connector
   - Termos e Condições
@@ -344,7 +344,7 @@ Este exemplo mostra como utilizar o C# para recuperar uma lista de dispositivos 
 3. Utilize o Explorador de Soluções para adicionar o pacote Microsoft ADAL NuGet ao projeto.
 
     1. Clique com o botão direito do rato no Explorador de Soluções.
-    2. Escolha **Gerir Pacotes NuGet...** &gt;**Procurar**.
+    2. Escolha **Gerir Pacotes NuGet...** &gt; **Navegar.**
     3. Selecione `Microsoft.IdentityModel.Clients.ActiveDirectory` e, em seguida, **Instalar**.
 
     <img src="../media/aad-auth-cpp-install-package.png" width="624" height="458" alt="Selecting the Azure AD identity model module" />

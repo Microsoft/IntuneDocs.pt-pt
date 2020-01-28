@@ -18,20 +18,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4246dab0cf22053d76fdd50f99de53e827332a23
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: 699065a19087ec3cdf3d8fcbee765f968a1cbaee
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547825"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76754711"
 ---
 # <a name="set-enrollment-restrictions"></a>Definir restrições de inscrição
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-Como administrador do Intune, você pode criar e gerenciar restrições de registro que definem quais dispositivos podem ser registrados no gerenciamento com o Intune, incluindo:
+Como administrador intune, pode criar e gerir restrições de inscrição que definam quais os dispositivos que podem inscrever-se na gestão com o Intune, incluindo o:
 - Número de dispositivos.
-- Sistemas operacionais e versões.
+- Sistemas operativos e versões.
 
 Pode criar múltiplas restrições e aplicá-las a diferentes grupos de utilizadores. Pode definir uma [ordem de prioridade](#change-enrollment-restriction-priority) para as diferentes restrições.
 
@@ -48,10 +48,10 @@ As restrições de inscrição específicas que pode criar incluem:
   - macOS
   - Windows
   - Windows Mobile
-- Versão do sistema operacional da plataforma para iOS, administrador do dispositivo Android, perfil de trabalho do Android Enterprise, Windows e Windows Mobile. (Apenas as versões do Windows 10 podem ser utilizadas. Deixe em branco se o Windows 8.1 for permitido.)
+- Versão do sistema operativo da plataforma para iOS, administrador de dispositivos Android, perfil de trabalho Android Enterprise, Windows e Windows Mobile. (Apenas as versões do Windows 10 podem ser utilizadas. Deixe em branco se o Windows 8.1 for permitido.)
   - Versão mínima.
   - Versão máxima.
-- Restringir [dispositivos de propriedade pessoal](device-enrollment.md#bring-your-own-device) (Ios, administrador de dispositivo Android, perfil de trabalho corporativo do Android, MacOS, Windows e Windows Mobile somente).
+- Restringir [dispositivos pessoais](device-enrollment.md#bring-your-own-device) (iOS, administrador de dispositivos Android, perfil de trabalho Android Enterprise, macOS, Windows e Windows Mobile apenas).
 
 ## <a name="default-restrictions"></a>Restrições predefinidas
 
@@ -59,49 +59,50 @@ As restrições predefinidas são fornecidas automaticamente para as restriçõe
 
 ## <a name="create-a-device-type-restriction"></a>Criar uma restrição de tipo de dispositivo
 
-1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) > **dispositivos** > **restrições de registro** > **criar restrição** > **restrição de tipo de dispositivo**.
-2. Na página **noções básicas** , dê à restrição um **nome** e uma **Descrição**opcional.
-3. Escolha **Avançar** para ir para a página **configurações de plataforma** .
-4. Em **plataforma**, escolha **permitir** para as plataformas que você deseja que essa restrição permita.
-    ![limite de tela para escolher as configurações de plataforma](./media/enrollment-restrictions-set/choose-platform-settings.png)
-5. Em **versões**, escolha as versões mínima e máxima às quais você deseja que as plataformas permitidas ofereçam suporte. As restrições de versão se aplicam somente a dispositivos registrados com o Portal da Empresa.
+1. Inscreva-se no [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) > **Devices** > Restrições de **inscrição** > **Criar restrições** de restrição > **restrição**do tipo de dispositivo .
+2. Na página **Basics,** dê à restrição um **nome** e **descrição**opcional.
+3. Escolha **O Próximo** para ir à página de definições da **Plataforma.**
+4. No âmbito **da Plataforma,** escolha **Permitir** as plataformas que pretende que esta restrição permita.
+    ![tampa de ecrã para escolher as definições da plataforma](./media/enrollment-restrictions-set/choose-platform-settings.png)
+5. Em **Versões,** escolha as versões mínimas e máximas que deseja que as plataformas permitidas suportem. As restrições de versão aplicam-se apenas aos dispositivos matriculados no Portal da Empresa.
      Os formatos suportados pelas versões são os seguintes:
-    - O administrador do dispositivo Android e o perfil de trabalho do Android Enterprise dão suporte ao principal. Minor. Rev. Build.
-    - o iOS dá suporte a Major. Minor. Rev. As versões do sistema operacional não se aplicam a dispositivos Apple que se registram com o Programa de registro de dispositivos, Apple School Manager ou o aplicativo Apple Configurator.
-    - O Windows dá suporte a Major. Minor. Build. Rev somente para Windows 10.
+    - O administrador de dispositivos Android e o perfil de trabalho android Enterprise suportam major.minor.rev.build.
+    - O iOS suporta major.minor.rev. As versões do sistema operativo não se aplicam aos dispositivos da Apple que se inscrevam no Programa de Inscrição de Dispositivos, no Apple School Manager ou na aplicação Apple Configurator.
+    - O Windows suporta major.minor.build.rev apenas para windows 10.
     
     > [!IMPORTANT]
-    > As plataformas Android Enterprise (perfil de trabalho) e de administrador de dispositivo Android têm o seguinte comportamento:
-    > - Se ambas as plataformas forem permitidas para o mesmo grupo, os usuários serão registrados com um perfil de trabalho se o dispositivo der suporte, caso contrário, eles serão registrados como DA. 
-    > - Se ambas as plataformas forem permitidas para o grupo e refinadas para versões específicas e não sobrepostas, os usuários receberão o fluxo de registro definido para a versão do sistema operacional. 
-    > - Se ambas as plataformas forem permitidas, mas bloqueadas para as mesmas versões, os usuários em dispositivos com as versões bloqueadas serão desativados no fluxo de registro do administrador do dispositivo Android e serão bloqueados do registro e serão solicitados a sair. 
+    > As plataformas de administrador de dispositivos Android Enterprise (perfil de trabalho) e Android têm o seguinte comportamento:
+    > - Se ambas as plataformas forem permitidas para o mesmo grupo, então os utilizadores serão matriculados com um perfil de trabalho se o seu dispositivo o suportar, caso contrário se matricularão como DA. 
+    > - Se ambas as plataformas forem permitidas para o grupo e refinadas para versões específicas e não sobrepostas, então os utilizadores receberão o fluxo de inscrição definido para a sua versão OS. 
+    > - Se ambas as plataformas forem permitidas, mas bloqueadas para as mesmas versões, os utilizadores de dispositivos com as versões bloqueadas serão retirados do fluxo de inscrição do administrador do dispositivo Android e, em seguida, ficam bloqueados da inscrição e solicitados a assinar. 
     >
-    > Vale a pena observar que nenhum registro de perfil de trabalho ou de administrador do dispositivo funcionará, a menos que os selecionado pré-requisitos apropriados tenham sido concluídos no registro do Android. 
+    > Vale a pena notar que nem o perfil de trabalho nem a inscrição do administrador do dispositivo funcionarão a menos que os requisitos adequados tenham sido preenchidos no Android Registration. 
     
    > [!Note]
-   > O Windows 10 não fornece o número Rev durante o registro, por exemplo, se você inserir em 10.0.17134.100 e o dispositivo for 10.0.17134.174, ele será bloqueado durante o registro.
+   > O Windows 10 não fornece o número de rev durante as matrículas, pelo que, por exemplo, se introduzir em 10.0.17134.100 e o dispositivo for de 10.0.17134.174, será bloqueado durante a inscrição.
 
-6. Em **pessoal de propriedade**, escolha **permitir** para as plataformas que você deseja permitir como dispositivos de propriedade pessoal.
-7. Escolha **Avançar** para ir para a página **atribuições** .
-8. Escolha **Selecionar grupos para incluir** e, em seguida, use a caixa Pesquisar para localizar os grupos que você deseja incluir nessa restrição. A restrição só será aplicada aos grupos à qual for atribuída. Se não atribuir uma restrição a pelo menos um grupo, a mesma não terá efeito. Em seguida, selecione **Selecionar**. 
-    ![limite de tela para escolher as configurações de plataforma](./media/enrollment-restrictions-set/select-groups.png)
-9. Selecione **Avançar** para ir para a página **revisar + criar** .
-10. Selecione **criar** para criar a restrição.
-11. A nova restrição é criada com uma prioridade diretamente acima das restrições predefinidas. Pode [alterar a prioridade](#change-enrollment-restriction-priority).
+6. Sob **propriedade pessoal,** escolha **Permitir** as plataformas que pretende permitir como dispositivos pessoais.
+7. No **fabricante do Dispositivo,** introduza uma lista separada da vírposta dos fabricantes que pretende bloquear.
+8. Escolha **O Próximo** para ir à página de **Atribuiçãos.**
+9. Escolha **os grupos Select para incluir** e, em seguida, use a caixa de pesquisa para encontrar grupos que pretende incluir nesta restrição. A restrição só será aplicada aos grupos à qual for atribuída. Se não atribuir uma restrição a pelo menos um grupo, a mesma não terá efeito. Em seguida, selecione **Selecionar**. 
+    ![tampa de ecrã para escolher as definições da plataforma](./media/enrollment-restrictions-set/select-groups.png)
+10. Selecione **Next** para ir à página **Review + criar.**
+11. Selecione **Criar** para criar a restrição.
+12. A nova restrição é criada com uma prioridade diretamente acima das restrições predefinidas. Pode [alterar a prioridade](#change-enrollment-restriction-priority).
 
 
 ## <a name="create-a-device-limit-restriction"></a>Criar uma restrição de limite de dispositivo
 
-1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) > **dispositivos** > **restrições de registro** > **criar restrição** > **restrição de limite de dispositivo**.
-2. Na página **noções básicas** , dê à restrição um **nome** e uma **Descrição**opcional.
-3. Escolha **Avançar** para ir para a página **limite de dispositivo** .
-4. Para **limite de dispositivo**, selecione o número máximo de dispositivos que um usuário pode registrar.
-    ![a extremidade da tela para escolher o limite do dispositivo](./media/enrollment-restrictions-set/choose-device-limit.png)
-5. Escolha **Avançar** para ir para a página **atribuições** .
-6. Escolha **Selecionar grupos para incluir** e, em seguida, use a caixa Pesquisar para localizar os grupos que você deseja incluir nessa restrição. A restrição só será aplicada aos grupos à qual for atribuída. Se não atribuir uma restrição a pelo menos um grupo, a mesma não terá efeito. Em seguida, selecione **Selecionar**. 
-    ![limite de tela para selecionar grupos](./media/enrollment-restrictions-set/select-groups-device-limit.png)
-7. Selecione **Avançar** para ir para a página **revisar + criar** .
-8. Selecione **criar** para criar a restrição.
+1. Inscreva-se no [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) > **Dispositivos** > Restrições de **Inscrição** > **Criar restrições** de restrição > **restrição**de limite de dispositivo .
+2. Na página **Basics,** dê à restrição um **nome** e **descrição**opcional.
+3. Escolha **O Próximo** para ir à página limite do **Dispositivo.**
+4. Para o limite do **dispositivo,** selecione o número máximo de dispositivos que um utilizador pode inscrever.
+    ![tampa de ecrã para escolher o limite do dispositivo](./media/enrollment-restrictions-set/choose-device-limit.png)
+5. Escolha **O Próximo** para ir à página de **Atribuiçãos.**
+6. Escolha **os grupos Select para incluir** e, em seguida, use a caixa de pesquisa para encontrar grupos que pretende incluir nesta restrição. A restrição só será aplicada aos grupos à qual for atribuída. Se não atribuir uma restrição a pelo menos um grupo, a mesma não terá efeito. Em seguida, selecione **Selecionar**. 
+    ![tampa de ecrã para selecionar grupos](./media/enrollment-restrictions-set/select-groups-device-limit.png)
+7. Selecione **Next** para ir à página **Review + criar.**
+8. Selecione **Criar** para criar a restrição.
 9. A nova restrição é criada com uma prioridade diretamente acima das restrições predefinidas. Pode [alterar a prioridade](#change-enrollment-restriction-priority).
 
 Durante as inscrições BYOD, os utilizadores verão uma notificação que os informará quando atingirem o limite de dispositivos inscritos. Por exemplo, no iOS:
@@ -115,25 +116,25 @@ Durante as inscrições BYOD, os utilizadores verão uma notificação que os in
 > - Inscrições conjuntas no Azure Active Directory
 > - Inscrições conjuntas em massa no Azure Active Directory
 > - Inscrições no Autopilot
-> - Registros do Gerenciador de registro de dispositivos
+> - Inscrições do Gestor de Inscrição de Dispositivos
 >
-> Restrições de limite de dispositivo não são impostas para esses tipos de registro porque são consideradas cenários de dispositivo compartilhado.
+> As restrições de limite do dispositivo não são aplicadas para estes tipos de inscrição porque são considerados cenários de dispositivos partilhados.
 > Pode definir limites fixos para estes tipos de inscrição no [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/devices/device-management-azure-portal#configure-device-settings).
 
 
-## <a name="change-enrollment-restrictions"></a>Alterar restrições de registro
+## <a name="change-enrollment-restrictions"></a>Alterar restrições de inscrição
 
-Você pode alterar as configurações de uma restrição de registro seguindo as etapas abaixo. Essas restrições não afetam os dispositivos que já foram registrados. A inscrição de dispositivos com o [agente de PC do Intune](../fundamentals/manage-windows-pcs-with-microsoft-intune.md) não pode ser bloqueada com esta funcionalidade.
+Pode alterar as definições para uma restrição de inscrição seguindo os passos abaixo. Estas restrições não efetuam dispositivos que já foram matriculados. A inscrição de dispositivos com o [agente de PC do Intune](../fundamentals/manage-windows-pcs-with-microsoft-intune.md) não pode ser bloqueada com esta funcionalidade.
 
-1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) > **dispositivos** > **restrições de registro** > escolha a restrição que você deseja alterar > **Propriedades**.
-2. Escolha **Editar** ao lado das configurações que você deseja alterar.
-3. Na página **Editar** , faça as alterações desejadas e prossiga para a página **examinar + salvar** e, em seguida, escolha **salvar**.
+1. Inscreva-se no [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) > **Dispositivos** > Restrições de **Inscrição** > escolha a restrição que pretende alterar > **Properties**.
+2. Escolha **editar** ao lado das definições que pretende alterar.
+3. Na página **Editar,** faça as alterações que deseja e proceda à página **'Rever + guardar',** em seguida, escolha **Guardar**.
 
 
 ## <a name="blocking-personal-android-devices"></a>Bloquear dispositivos Android pessoais
-- Se você bloquear dispositivos pessoais de administrador de dispositivo Android do registro, os dispositivos de perfil de trabalho corporativo Android Enterprise ainda poderão ser registrados.
-- Por padrão, suas configurações de dispositivos de perfil de trabalho do Android Enterprise são as mesmas que suas configurações para dispositivos de administrador de dispositivo Android. Depois de alterar o perfil de trabalho do Android Enterprise ou as configurações do administrador do dispositivo Android, esse não é mais o caso.
-- Se você bloquear o registro de perfil de trabalho do Android Enterprise pessoal, somente dispositivos Android corporativos poderão ser registrados com perfis de trabalho do Android Enterprise.
+- Se bloquear dispositivos de administrador de dispositivos Android pessoalmente da inscrição, os dispositivos de perfil de trabalho Android Enterprise, propriedade pessoal, ainda podem inscrever-se.
+- Por padrão, as definições de dispositivos de perfil de trabalho do Android Enterprise são as mesmas que as definições dos dispositivos de administrador de dispositivos Android. Depois de alterar o seu perfil de trabalho Android Enterprise ou as definições do administrador do dispositivo Android, isso já não acontece.
+- Se bloquear a inscrição pessoal do perfil de trabalho do Android Enterprise, apenas os dispositivos Android de propriedade corporativa podem inscrever-se com perfis de trabalho Android Enterprise.
 
 ## <a name="blocking-personal-windows-devices"></a>Bloquear dispositivos Windows pessoais
 Se bloquear a inscrição de dispositivos Windows de propriedade pessoal, o Intune verifica se cada novo pedido de inscrição do Windows foi autorizado como uma inscrição empresarial. As inscrições não autorizadas serão bloqueadas.
@@ -157,10 +158,10 @@ Os seguintes métodos de inscrição pessoal também serão bloqueados:
 \* Não serão bloqueados se estiverem registados no Autopilot.
 
 
-## <a name="blocking-personal-ios-devices"></a>Bloqueando dispositivos iOS pessoais
-Por padrão, o Intune classifica os dispositivos iOS como de propriedade pessoal. Para ser classificado como corporativo, um dispositivo iOS deve atender a uma das seguintes condições:
-- Registrado com um número de série ou IMEI.
-- Registrado usando o registro de dispositivo automatizado (anteriormente Programa de registro de dispositivos)
+## <a name="blocking-personal-ios-devices"></a>Bloquear dispositivos pessoais iOS
+Por predefinição, intune classifica os dispositivos iOS como propriedade pessoal. Para ser classificado como propriedade corporativa, um dispositivo iOS deve preencher uma das seguintes condições:
+- Registado com um número de série ou IMEI.
+- Matriculado utilizando inscrição automática de dispositivos (anteriormente Programa de Inscrição de Dispositivos)
 
 
 ## <a name="change-enrollment-restriction-priority"></a>Alterar a prioridade das restrições de inscrição

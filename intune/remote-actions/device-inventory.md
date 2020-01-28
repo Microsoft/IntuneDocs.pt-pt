@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0bbcad362ef2b2dcfdd170cd2e902d55cee00310
-ms.sourcegitcommit: af384c46ec8d8def6aa32c3b89947748dc6fd28f
+ms.openlocfilehash: 11e3465c583197582a545cdd6f4b71bc8d24e115
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76517597"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76754206"
 ---
 # <a name="see-device-details-in-intune"></a>Consultar os detalhes do dispositivo no Intune
 
@@ -67,9 +67,9 @@ Dependendo da operadora usada pelos dispositivos, nem todos os detalhes podem se
 |Dispositivo partilhado|Se definido como **Sim**, o dispositivo é partilhado por mais do que um utilizador.|Windows, iOS|
 |Inscrição de utilizador aprovado|Em caso **afirmativo**, o dispositivo tem o registro aprovado pelo usuário que permite que os administradores gerenciem determinadas configurações de segurança no dispositivo.|Windows, iOS|
 |Sistema Operativo|O sistema operativo utilizado no dispositivo.|Windows, iOS|
-|Versão do sistema operativo|A versão do sistema operativo do dispositivo.|Windows, iOS|
+|Versão do sistema operativo|A versão do sistema operativo no dispositivo.|Windows, iOS|
 |Idioma do sistema operativo|O idioma definido para o sistema operativo no dispositivo.|Windows, iOS|
-|Número de compilação|O número de Build do sistema operacional.|Android|
+|Número de construção|O número de Build do sistema operacional.|Android|
 |Nível de patch de segurança|O nível de patch de segurança para o dispositivo.|Android|
 |Espaço de armazenamento total|O espaço de armazenamento total no dispositivo (em gigabytes).|Windows, iOS|
 |Espaço de armazenamento livre|O espaço de armazenamento não utilizado no dispositivo (em gigabytes).|Windows, iOS|
@@ -84,7 +84,7 @@ Dependendo da operadora usada pelos dispositivos, nem todos os detalhes podem se
 |ICCID|O Identificador de Cartão de Circuito Integrado, que é o número de identificação exclusivo de um cartão SIM.|Windows, iOS, Android|
 |Data de inscrição|A data e hora em que o dispositivo foi inscrito no Intune.|Windows, iOS, Android|
 |Último contacto|A data e hora em que o dispositivo foi ligado pela última vez ao Intune.|Windows, iOS, Android|
-|Código para ignorar o bloqueio de ativação|O código que pode ser utilizado para ignorar o bloqueio de ativação.|iOS|
+|Código para ignorar o bloqueio de ativação|O código que pode ser utilizado para desativar o bloqueio de ativação.|iOS|
 |Azure AD registado|Se definido como **Sim**, o dispositivo é registado com o Azure Directory.|Windows, iOS, Android|
 |Registrado no Intune|Se **Sim**, o dispositivo está registrado no Intune|Windows, iOS, Android|
 |Conformidade|O estado de conformidade do dispositivo.|Windows, iOS, Android|

@@ -1,12 +1,12 @@
 ---
-title: Implantação de aplicativo do Windows 10 usando Microsoft Intune
+title: Implementação de aplicações do Windows 10 utilizando o Microsoft Intune
 titleSuffix: ''
-description: Saiba mais sobre os cenários de implantação de aplicativos do Windows 10 disponíveis com o Microsoft Intune.
+description: Conheça os cenários de implementação de aplicações do Windows 10 disponíveis com o Microsoft Intune.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/21/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,69 +18,89 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c9d792bd07ae8d7d712748874d64314dd258c5e8
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 58f6c4e2c99c7e2c169014a71bb1cfd2bc85219b
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74563950"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755243"
 ---
-# <a name="windows-10-app-deployment-by-using-microsoft-intune"></a>Implantação de aplicativo do Windows 10 usando Microsoft Intune 
+# <a name="windows-10-app-deployment-by-using-microsoft-intune"></a>Implementação de aplicações do Windows 10 utilizando o Microsoft Intune 
 
-O Microsoft Intune dá suporte a uma variedade de tipos de aplicativos e cenários de implantação em dispositivos Windows 10. Depois de adicionar uma aplicação ao Intune, pode atribuí-la a utilizadores e dispositivos. Este artigo fornece mais detalhes sobre os cenários com suporte do Windows 10 e também aborda os principais detalhes a serem observados quando você estiver implantando aplicativos no Windows. 
+O Microsoft Intune suporta uma variedade de tipos de aplicações e cenários de implementação em dispositivos Windows 10. Depois de adicionar uma aplicação ao Intune, pode atribuí-la a utilizadores e dispositivos. Este artigo fornece mais detalhes sobre os cenários suportados pelo Windows 10, e também cobre detalhes chave para notar quando está a implementar aplicações para o Windows. 
 
-As aplicações de linha de negócio (LOB) e as aplicações da Microsoft Store para Empresas são os tipos de aplicações suportadas em dispositivos com o Windows 10. As extensões de arquivo para aplicativos do Windows incluem. msi,. Appx e. appxbundle.  
+As aplicações de linha de negócio (LOB) e as aplicações da Microsoft Store para Empresas são os tipos de aplicações suportadas em dispositivos com o Windows 10. As extensões de ficheiros para aplicações do Windows incluem .msi, .appx e .appxbundle.  
 
 > [!Note]
-> Para implantar aplicativos modernos, você precisa de pelo menos:
+> Para implementar aplicações modernas, precisa pelo menos:
 > - Para o Windows 10 1803: [23 de maio de 2018 – KB4100403 (Compilação 17134.81 do SO)](https://support.microsoft.com/help/4100403/windows-10-update-kb4100403).
 > - Para o Windows 10 1709: [21 de junho de 2018 – KB4284822 (Compilação 16299.522 do SO)](https://support.microsoft.com/help/4284822).
 >
-> Somente o Windows 10 1803 e versões posteriores dão suporte à instalação de aplicativos quando não há um usuário primário associado.
+> Apenas o Windows 10 1803 e posteriormente suportam a instalação de apps quando não há nenhum utilizador principal associado.
 >
-> Não há suporte para a implantação de aplicativos LOB em dispositivos que executam o Windows 10 Home Editions.
+> A implementação de aplicações LOB não é suportada em dispositivos que executam edições do Windows 10 Home.
 
-## <a name="windows-10-lob-apps"></a>Aplicativos de LOB do Windows 10
+## <a name="supported-windows-10-app-types"></a>Tipos de aplicativos suportados do Windows 10
 
-Você pode assinar e carregar aplicativos LOB do Windows 10 no console de administração do Intune. Eles podem incluir aplicativos modernos, como aplicativos Plataforma Universal do Windows (UWP) e pacotes de aplicativos do Windows (AppX), bem como aplicativos Win 32, como arquivos de pacote do Microsoft Installer (MSI) simples. O administrador deve carregar e implantar manualmente as atualizações de aplicativos LOB. Essas atualizações são instaladas automaticamente em dispositivos de usuário que instalaram o aplicativo. Nenhuma intervenção do usuário é necessária e o usuário não tem controle sobre as atualizações. 
+Os tipos de aplicações específicos são suportados com base na versão do Windows 10 que os seus utilizadores estão a executar. A tabela seguinte fornece o tipo de aplicação e a capacidade de suporte do Windows 10.
+
+| Tipo de aplicação | Casa | Pró | Negócios | Empresarial | Educação | Modo S | Hololense | SurfaceHub | WCOS | Mobile |
+|----------------|------|-----|----------|------------|-----------|--------|-----------|------------|------|--------|
+|  . MSI | Não | Sim | Sim | Sim | Sim | Não | Não | Não | Não | Não |
+| . IntuneWin | Não | Sim | Sim | Sim | Sim | 19H2+ | Não | Não | Não | Não |
+| Escritório C2R | Não | Sim | Sim | Sim | Sim | Não | Não | Não | Não | Não |
+| LOB: APPX/MSIX | Sim | Sim | Sim | Sim | Sim | Sim | Sim | Sim | Sim | Sim |
+| MSFB Offline | Sim | Sim | Sim | Sim | Sim | Sim | Sim | Sim | Sim | Sim |
+| MSFB Online | Sim | Sim | Sim | Sim | Sim | Sim | RS4+ | Sim | Sim | Sim |
+| Aplicações na Web | Sim | Sim | Sim | Sim | Sim | Sim | Sim<sup>1 | Sim<sup>1 | Sim | Sim |
+| Link da loja | Sim | Sim | Sim | Sim | Sim | Sim | Sim | Sim | Sim | Sim |
+
+<sup>1</sup> Lançamento apenas do portal da empresa.
+
+> [!NOTE]
+> Todos os tipos de aplicativos do Windows requerem inscrição.
+
+## <a name="windows-10-lob-apps"></a>Aplicativos Lob do Windows 10
+
+Pode assinar e carregar aplicações lob do Windows 10 para a consola intune. Estas podem incluir aplicações modernas, como aplicações universal Windows Platform (UWP) e Pacotes de Aplicações Windows (AppX), bem como aplicações Win 32, como ficheiros simples de pacotes de instalação da Microsoft (MSI). O administrador deve carregar manualmente e implementar atualizações de aplicações LOB. Estas atualizações são automaticamente instaladas em dispositivos de utilizador que tenham instalado a aplicação. Não é necessária nenhuma intervenção do utilizador e o utilizador não tem controlo sobre as atualizações. 
 
 ## <a name="microsoft-store-for-business-apps"></a>Aplicações da Loja Microsoft para Empresas
 
-Microsoft Store para aplicativos de negócios são aplicativos modernos, adquiridos no portal de administração do Microsoft Store for Business. Em seguida, eles são sincronizados para Microsoft Intune para gerenciamento. Os aplicativos podem ser licenciados online ou offline. O Microsoft Store gerencia atualizações diretamente, sem nenhuma ação adicional exigida pelo administrador. Você também pode impedir atualizações para aplicativos específicos usando um URI (Uniform Resource Identifier) personalizado. Para obter mais informações, veja [Enterprise app management - Prevent app from automatic updates](https://docs.microsoft.com/windows/client-management/mdm/enterprise-app-management#prevent-app-from-automatic-updates) (Gestão de aplicações empresariais – impedir as atualizações automáticas da aplicação). O usuário também pode desabilitar atualizações para todos os Microsoft Store para aplicativos de negócios no dispositivo. 
+As aplicações microsoft Store for Business são aplicações modernas, compradas no portal de administração da Microsoft Store para empresas. São então sincronizados com a Microsoft Intune para gestão. As aplicações podem ser licenciadas online ou offline. A Microsoft Store gere diretamente as atualizações, sem nenhuma ação adicional exigida pelo administrador. Também pode prevenir atualizações para aplicações específicas utilizando um identificador de recursos uniformes personalizado (URI). Para obter mais informações, veja [Enterprise app management - Prevent app from automatic updates](https://docs.microsoft.com/windows/client-management/mdm/enterprise-app-management#prevent-app-from-automatic-updates) (Gestão de aplicações empresariais – impedir as atualizações automáticas da aplicação). O utilizador também pode desativar atualizações para todas as aplicações da Microsoft Store for Business no dispositivo. 
 
 ### <a name="categorize-microsoft-store-for-business-apps"></a>Categorizar Microsoft Store para aplicativos de negócios 
-Para categorizar Microsoft Store para aplicativos de negócios: 
+Para categorizar as aplicações da Microsoft Store para as empresas: 
 
 1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selecione **aplicativos** > **todos os aplicativos**. 
-3. Selecione um Microsoft Store para o aplicativo de negócios. Em seguida, selecione **propriedades** > **informações do aplicativo** > **categoria**. 
+3. Selecione uma aplicação Microsoft Store for Business. Em seguida, selecione **Propriedades** > categoria **de**informações de **aplicações** > . 
 4. Selecione uma categoria.
 
-## <a name="install-apps-on-windows-10-devices"></a>Instalar aplicativos em dispositivos Windows 10
-Dependendo do tipo de aplicativo, você pode instalar o aplicativo em um dispositivo Windows 10 de uma das duas maneiras:
+## <a name="install-apps-on-windows-10-devices"></a>Instale aplicações em dispositivos Windows 10
+Dependendo do tipo de aplicação, pode instalar a aplicação num dispositivo Windows 10 de uma de duas formas:
 
-- **Contexto do usuário**: quando um aplicativo é implantado no contexto do usuário, o aplicativo gerenciado é instalado para esse usuário no dispositivo quando o usuário faz logon no dispositivo. Observe que a instalação do aplicativo não tem sucesso até que o usuário entre no dispositivo. 
-  - Aplicativos de linha de negócios modernos e Microsoft Store para aplicativos de negócios (online e offline) podem ser implantados no contexto do usuário. Os aplicativos dão suporte às tentativas obrigatórias e disponíveis.
-  - Os aplicativos Win32 criados como modo de usuário ou modo duplo podem ser implantados no contexto do usuário e dar suporte às tentativas necessárias e disponíveis. 
-- **Contexto do dispositivo**: quando um aplicativo é implantado no contexto do dispositivo, o aplicativo gerenciado é instalado diretamente no dispositivo pelo Intune.
-  - Somente os aplicativos de linha de negócios modernos e os Microsoft Store licenciados offline para aplicativos de negócios podem ser implantados no contexto do dispositivo. Esses aplicativos só dão suporte à intenção necessária.
-  - Os aplicativos Win32 criados como modo de máquina ou modo duplo podem ser implantados no contexto do dispositivo e dar suporte apenas à intenção necessária.
+- **Contexto**do utilizador : Quando uma aplicação é implementada no contexto do utilizador, a aplicação gerida é instalada para esse utilizador no dispositivo quando o utilizador insere no dispositivo. Note que a instalação da aplicação não é bem sucedida até que o utilizador inste no dispositivo. 
+  - Aplicações modernas de linha de negócios e aplicações Microsoft Store for Business (online e offline) podem ser implementadas no contexto do utilizador. As aplicações suportam as intenções necessárias e disponíveis.
+  - As aplicações Win32 construídas como Modo utilizador ou Modo Dual podem ser implementadas no contexto do utilizador e suportar as intenções necessárias e disponíveis. 
+- **Contexto**do dispositivo : Quando uma aplicação é implantada no contexto do dispositivo, a aplicação gerida é instalada diretamente no dispositivo pela Intune.
+  - Apenas aplicações modernas de linha de negócio e aplicações licenciadas offline da Microsoft Store para empresas podem ser implementadas no contexto do dispositivo. Estas aplicações apenas suportam a intenção necessária.
+  - As aplicações Win32 construídas como Modo Máquina ou Modo Dual podem ser implementadas no contexto do dispositivo, e suportam apenas a intenção necessária.
 
 > [!NOTE]
-> Para aplicativos Win32 criados como aplicativos de modo duplo, o administrador deve escolher se o aplicativo funcionará como um modo de usuário ou aplicativo de modo de máquina para todas as atribuições associadas a essa instância. O contexto de implantação não pode ser alterado por atribuição.  
+> Para aplicações Win32 construídas como aplicações dual mode, o administrador deve escolher se a aplicação funcionará como uma aplicação modo utilizador ou modo máquina para todas as atribuições associadas a essa instância. O contexto de implantação não pode ser alterado por atribuição.  
 
-Quando um aplicativo é implantado no contexto do dispositivo, a instalação só é realizada com sucesso quando é direcionada a um dispositivo que dá suporte ao contexto do dispositivo. Além disso, implementar no contexto do dispositivo suporta as seguintes condições:
-- Se um aplicativo for implantado no contexto do dispositivo e for direcionado a um usuário, a instalação falhará. O status e o erro a seguir aparecem no console do administrador:
+Quando uma aplicação é implantada no contexto do dispositivo, a instalação só tem sucesso quando direcionada a um dispositivo que suporta o contexto do dispositivo. Além disso, implementar no contexto do dispositivo suporta as seguintes condições:
+- Se uma aplicação for implementada no contexto do dispositivo e direcionada a um utilizador, a instalação falha. O seguinte estado e erro aparece na consola de administração:
   - Estado: falha.
-  - Erro: um usuário não pode ser direcionado a uma instalação de contexto de dispositivo.
-- Se um aplicativo for implantado no contexto do dispositivo, mas for direcionado a um dispositivo que não dá suporte ao contexto do dispositivo, a instalação falhará. O status e o erro a seguir aparecem no console do administrador:
+  - Erro: Um utilizador não pode ser alvo com uma instalação de contexto do dispositivo.
+- Se uma aplicação for implementada no contexto do dispositivo, mas for direcionada para um dispositivo que não suporta o contexto do dispositivo, a instalação falha. O seguinte estado e erro aparece na consola de administração:
   - Estado: falha.
   - Erro: esta plataforma não suporta instalações de contexto do dispositivo. 
 
 > [!Note]
-> Depois de salvar uma atribuição de aplicativo com uma implantação específica, você não pode alterar o contexto para essa atribuição, exceto para aplicativos modernos. Para aplicativos modernos, você pode alterar o contexto do contexto do usuário para o contexto do dispositivo. 
+> Depois de guardar uma atribuição de aplicativos com uma implementação específica, não pode alterar o contexto para essa atribuição, exceto para aplicações modernas. Para aplicações modernas, pode alterar o contexto do contexto do utilizador para o contexto do dispositivo. 
 
-Se houver um conflito nas políticas em um único usuário ou dispositivo, as seguintes prioridades se aplicarão:
+Se houver um conflito nas políticas num único utilizador ou dispositivo, aplicam-se as seguintes prioridades:
 - Uma política de contexto do dispositivo tem uma prioridade mais alta do que uma política de contexto de utilizador. 
 - Uma política de instalação tem uma prioridade mais alta do que uma política de desinstalação.
 
@@ -88,5 +108,5 @@ Para obter mais informações, veja [Incluir e excluir atribuições de aplicaç
 
 ## <a name="next-steps"></a>Próximos passos
 
-- [Atribuir aplicativos a grupos com Microsoft Intune](apps-deploy.md)
-- [Como monitorar aplicativos](apps-monitor.md)
+- [Atribuir aplicativos a grupos com o Microsoft Intune](apps-deploy.md)
+- [Como monitorizar aplicações](apps-monitor.md)

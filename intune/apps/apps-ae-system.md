@@ -1,12 +1,12 @@
 ---
-title: Adicionar aplicativos do Android Enterprise System ao Microsoft Intune
+title: Adicione aplicações do sistema Android Enterprise ao Microsoft Intune
 titleSuffix: ''
-description: Saiba como adicionar aplicativos do sistema corporativo ao Microsoft Intune.
+description: Saiba como adicionar aplicações do sistema Enterprise ao Microsoft Intune.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/23/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,37 +18,44 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d45455a97f8016527dce49839b5493f16b173d43
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 613369070d847265f371a7b228a2b6d81bf813fe
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74563647"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755260"
 ---
-# <a name="add-android-enterprise-system-apps-to-microsoft-intune"></a>Adicionar aplicativos do Android Enterprise System ao Microsoft Intune
+# <a name="add-android-enterprise-system-apps-to-microsoft-intune"></a>Adicione aplicações do sistema Android Enterprise ao Microsoft Intune
 
-Antes de atribuir uma aplicação a um dispositivo ou grupo de utilizadores, tem de primeiro adicionar a aplicação ao Microsoft Intune. Os aplicativos do sistema têm suporte em dispositivos Android Enterprise. Você pode habilitar um aplicativo de sistema para [dispositivos Android Enterprise dedicados](../enrollment/android-kiosk-enroll.md) ou [dispositivos totalmente gerenciados](../enrollment/android-fully-managed-enroll.md).
+Antes de atribuir uma aplicação a um dispositivo ou grupo de utilizadores, tem de primeiro adicionar a aplicação ao Microsoft Intune. Os aplicativos do sistema têm suporte em dispositivos Android Enterprise. Pode ativar um aplicativo de sistema para [dispositivos dedicados](../enrollment/android-kiosk-enroll.md) ao Android Enterprise ou [dispositivos totalmente geridos.](../enrollment/android-fully-managed-enroll.md)
 
 ## <a name="add-the-app"></a>Adicionar a aplicação
 
-Você pode adicionar um aplicativo Android Enterprise System ao Intune por meio do portal do Azure fazendo o seguinte:
+Pode adicionar uma aplicação do sistema Android Enterprise ao Intune a partir do portal Azure, fazendo o seguinte:
 
 1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selecione **aplicativos** > **todos os aplicativos** > **Adicionar**.
-3. No painel **Adicionar aplicativo** , sob os **outros** tipos disponíveis, selecione **aplicativo Android Enterprise System**.
-4. Para configurar as informações do aplicativo, selecione **Configurar**e forneça as seguintes informações:
-    - **Nome do aplicativo**: Insira o nome do aplicativo.
+3. No painel de **tipo de aplicação Select,** sob os **outros** tipos disponíveis, selecione **aplicação do sistema Android Enterprise**.
+4. Clique em **Selecionar**. Os passos da **aplicação Add** são apresentados.
+Na página de informações da **App,** adicione os detalhes da aplicação:
+    - Nome da **aplicação**: Introduza o nome da aplicação.
     - **Publicador**: introduza o nome do publicador da aplicação.  
-    - **Nome do pacote**: Insira um nome de pacote. O Intune validará se o nome do pacote é válido.
-5. Selecione **OK**.
-6. Selecione **Adicionar**.
+    - **Nome do pacote**: Introduza um nome de pacote. Intune validará que o nome do pacote é válido.
+5. Clique em **Seguir** para exibir a página **de tags scope.**
+8. Clique em **Selecionar etiquetas** de âmbito para adicionar opcionalmente etiquetas de âmbito para a aplicação. Para mais informações, consulte [Utilize o controlo de acesso baseado em funções (RBAC) e as etiquetas](~/fundamentals/scope-tags.md)de âmbito para TI distribuídos .
+9. Clique em **Avançar** para exibir a página **atribuições** .
+10. Selecione as atribuições de grupo para a aplicação. Para mais informações, consulte [Adicionar grupos para organizar utilizadores e dispositivos](~/fundamentals/groups-add.md). 
+11. Clique em **Seguir** para exibir a página **Review + criar.** Reveja os valores e configurações que inseriu para a aplicação.
+12. Quando terminar, clique em **Criar** para adicionar a app ao Intune.
+
+A lâmina **de visão geral** da aplicação que criou é exibida.
 
 > [!NOTE]
-> Você precisará trabalhar com o OEM do seu dispositivo para localizar o nome do pacote do aplicativo que deseja habilitar/desabilitar.
+> Terá de trabalhar com o OEM do seu dispositivo para encontrar o nome do pacote da app que deseja ativar/desativar.
 
 A aplicação criada é apresentada na lista de aplicações, onde a pode atribuir aos grupos que selecionar. 
 
-Os aplicativos do Android Enterprise System habilitarão ou desabilitarão aplicativos que já fazem parte da plataforma. Para habilitar um aplicativo, atribua o aplicativo do sistema conforme **necessário**. Para desabilitar um aplicativo, atribua o aplicativo do sistema como **desinstalação**. Os aplicativos do sistema não podem ser atribuídos como disponíveis para um usuário.
+As aplicações do sistema Android Enterprise vão ativar ou desativar aplicações que já fazem parte da plataforma. Para ativar uma aplicação, atribua a aplicação do sistema conforme **necessário**. Para desativar uma aplicação, atribua a aplicação do sistema como **Desinstalar**. As aplicações do sistema não podem ser atribuídas como disponíveis para um utilizador.
 
 
 ## <a name="next-steps"></a>Próximos passos

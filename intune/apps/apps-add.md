@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7170f723707ef709ef464b35bc3f6d3297341cf1
-ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
+ms.openlocfilehash: 099d68568cd920c9ae3f328b4e9fba95424e46fd
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75956188"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755277"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Adicionar aplicações ao Microsoft Intune 
 
@@ -74,10 +74,10 @@ A tabela seguinte apresenta uma lista dos tipos de aplicações específicos e c
 
 <sup>1</sup> Para obter mais informações sobre o Android Enterprise e os perfis de trabalho Android, veja [Compreender as aplicações licenciadas](apps-add.md#understanding-licensed-apps) abaixo.
 
-Você pode adicionar um aplicativo em Microsoft Intune selecionando **aplicativos** > **todos os aplicativos** > **Adicionar**. O painel **Adicionar aplicação** é apresentado e permite-lhe selecionar o **Tipo de aplicação**. 
+Você pode adicionar um aplicativo em Microsoft Intune selecionando **aplicativos** > **todos os aplicativos** > **Adicionar**. O painel do tipo select o tipo de **aplicação Select** é apresentado e permite-lhe selecionar o **tipo de App**. 
 
 >[!TIP]
-> Uma aplicação LOB é uma aplicação que adiciona a partir de um ficheiro de instalação da aplicação. Por exemplo, para instalar uma aplicação LOB iOS, tem de adicionar a aplicação ao selecionar **Aplicação de linha de negócio** como o **Tipo de aplicação** no painel **Adicionar aplicação**. Em seguida, selecione o ficheiro de pacote de aplicação (extensão .ipa). Normalmente, estes tipos de aplicações são escritos internamente.
+> Uma aplicação LOB é uma aplicação que adiciona a partir de um ficheiro de instalação da aplicação. Por exemplo, para instalar uma aplicação iOS LOB, adiciona a aplicação selecionando a **aplicação Line-of-business** como o **tipo app** no painel de **aplicações Select.** Em seguida, selecione o ficheiro de pacote de aplicação (extensão .ipa). Normalmente, estes tipos de aplicações são escritos internamente.
 
 ## <a name="assess-app-requirements"></a>Avaliar requisitos da aplicação
 Enquanto administrador de TI, tem de determinar as aplicações que o seu grupo tem de utilizar e as funcionalidades necessárias para cada grupo e subgrupo. Para cada aplicação, tem de determinar as plataformas necessárias, os grupos de utilizadores que precisam da aplicação, as políticas de configuração a aplicar a esses grupos e as políticas de proteção a aplicar.  

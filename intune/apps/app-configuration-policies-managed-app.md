@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/23/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 68032f47be043e8c49b6ad922392d14549293c35
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 06c1119b474d82c4d00db3276179b962ff5b5a44
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74564282"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755566"
 ---
 # <a name="add-app-configuration-policies-for-managed-apps-without-device-enrollment"></a>Adicionar políticas de configuração da aplicação para aplicações geridas sem inscrição de dispositivos
 
@@ -32,17 +32,30 @@ ms.locfileid: "74564282"
 Pode utilizar políticas de configuração da aplicação com aplicações geridas que suportem o SDK da Aplicação do Intune, até em dispositivos que não estejam inscritos. 
 
 1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
-2. Escolha os **aplicativos** > **políticas de configuração de aplicativo** > **Adicionar** > **aplicativos gerenciados**.
-3. Defina os seguintes detalhes:
-    - **Nome**  
-      O nome do perfil que será apresentado no portal do Azure.
-    - **Descrição**  
-      A descrição do perfil que será apresentada no portal do Azure.
-4. Escolha **selecionar aplicativos públicos** ou **selecione aplicativos personalizados** para escolher o aplicativo que você vai configurar. Selecione a aplicação na lista de aplicações que aprovou e sincronizou com o Intune.
-5. Para cada definição de configuração que o aplicativo dá suporte, digite o **nome** e o **valor**.  
+2. Escolha as **políticas** de **configuração** de Apps > Apps > **adicionar** > **aplicações geridas.**
+3. Na página **Basics,** delineie os seguintes detalhes:
+    - **Nome**: O nome do perfil que aparecerá no portal Azure.
+    - **Descrição**: A descrição do perfil que aparecerá no portal Azure.
+    - Tipo de **inscrição do dispositivo**: As aplicações geridas são selecionadas.
+4. Escolha **selecione aplicações públicas** ou **selecione aplicações personalizadas** para escolher a aplicação que vai configurar. Selecione a aplicação na lista de aplicações que aprovou e sincronizou com o Intune.
+5. Clique em **Seguir** para visualizar a página **Definições.**
+6. Para cada configuração que a aplicação suporta, escreva o **Nome** e **o Valor**. 
+
+   As aplicações ativadas pelo SDK da Aplicação do Intune suportam configurações em pares chave-valor. Para saber mais sobre que configurações de chave-valor são suportadas, consulte a documentação de cada aplicação. Tenha em atenção que pode utilizar os tokens que serão dinamicamente preenchidos com dados gerados pela aplicação. Para mais informações, consulte os valores de [Configuração para utilização de fichas](~/apps/app-configuration-policies-managed-app.md#configuration-values-for-using-tokens). Para obter informações sobre as definições de política de configuração da aplicação Outlook para iOS, veja [Gerir a configuração da aplicação Outlook para iOS com o Microsoft Intune](https://technet.microsoft.com/library/mt813789(v=exchg.150).aspx).
+
     Para eliminar uma configuração, selecione as reticências ( **...** ) e selecione **Eliminar**.  
-    
-As aplicações ativadas pelo SDK da Aplicação do Intune suportam configurações em pares chave-valor. Para saber mais sobre que configurações de chave-valor são suportadas, consulte a documentação de cada aplicação. Tenha em atenção que pode utilizar os tokens que serão dinamicamente preenchidos com dados gerados pela aplicação. Para obter informações sobre as definições de política de configuração da aplicação Outlook para iOS, veja [Gerir a configuração da aplicação Outlook para iOS com o Microsoft Intune](https://technet.microsoft.com/library/mt813789(v=exchg.150).aspx).
+
+7. Clique em **Avançar** para exibir a página **atribuições** .
+8. Clique em **Selecionar grupos para incluir**.
+9. Selecione um grupo nos **grupos Select para incluir** o painel e clique **em Selecionar**.
+10. Clique em **Selecionar grupos para excluir** para apresentar o painel relacionado.
+11. Escolha os grupos que pretende excluir e, em seguida, clique em **Selecionar**.
+
+    >[!NOTE]
+    >Ao adicionar um grupo, se outro grupo já tiver sido incluído num determinado tipo de atribuição, o mesmo estará pré-selecionado e inalterável para outras atribuições de inclusão. Por conseguinte, esse grupo que foi utilizado não poderá ser utilizado como um grupo excluído.
+
+12. Clique em **Seguir** para exibir a página **Review + criar.**
+13. Clique **em Criar** para adicionar a política de configuração da aplicação ao Intune.
 
 ## <a name="configuration-values-for-using-tokens"></a>Valores de configuração para utilizar tokens
 
@@ -57,7 +70,6 @@ O Intune suporta os seguintes tipos de tokens nas definições de configuração
 - \{\{userid\}\} – por exemplo, 3ec2c00f-b125-4519-acf0-302ac3761822
 - \{\{username\}\} – por exemplo, João Teixeira
 - \{\{PrimarySMTPAddress\}\} – por exemplo, testuser@ad.domain.com
-
 
 > [!Note]  
 > Os carateres \{\{ e \}\} são utilizados apenas por tipos de token e não devem ser utilizados para outros fins.

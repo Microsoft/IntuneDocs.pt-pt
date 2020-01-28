@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 01ea2f75d166e5cc6aef4b890dba5722a74c1f61
-ms.sourcegitcommit: 8f56220e7cafc5bc43135940575a9acb5afde730
+ms.openlocfilehash: 78022dc4bdfa108bcd04e180ab413cbf04d2c728
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75827824"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755617"
 ---
 # <a name="in-development-for-microsoft-intune---january-2020"></a>Em desenvolvimento para Microsoft Intune-janeiro de 2020
 
@@ -35,7 +35,7 @@ Para ajudar na preparação e no planejamento, esta página lista as atualizaç�
 > [!NOTE]
 > Esta página reflete nossas expectativas atuais sobre os recursos do Intune em uma versão futura. As datas e os recursos individuais podem mudar. Esta página não descreve todos os recursos no desenvolvimento.
 
-**RSS feed**: descubra quando essa página é atualizada copiando e colando a seguinte URL em seu leitor de feed: `https://docs.microsoft.com/api/search/rss?search=%22in+development+-+microsoft+intune%22&locale=en-us`
+**Feed RSS**: Descubra quando esta página é atualizada copiando e colando o seguinte URL no leitor de feed: `https://docs.microsoft.com/api/search/rss?search=%22in+development+-+microsoft+intune%22&locale=en-us`
 
 <!--
 ## What's coming to Intune in the Azure portal 
@@ -65,30 +65,15 @@ Atualizaremos o aplicativo Portal da Empresa em dispositivos Windows para exibir
 O aplicativo Portal da Empresa mostrará mensagens de status de instalação de aplicativo adicionais aos usuários finais. As seguintes condições serão aplicadas a novos recursos de dependência do Win32:
 - Falha ao instalar o aplicativo. As dependências definidas pelo administrador não foram atendidas.
 
-### <a name="retarget-web-clips-to-microsoft-edge-on-ios-devices---5455276-idready---"></a>Redirecionar clipes da Web para o Microsoft Edge em dispositivos iOS<!-- 5455276 idready -->
+### <a name="retarget-web-clips-to-microsoft-edge-on-ios-devices---5455276---"></a>Redirecionar clipes da Web para o Microsoft Edge em dispositivos iOS<!-- 5455276 -->
 Os clipes da Web, que atuam como aplicativos Web fixados em dispositivos iOS, precisarão ser atualizados. Os clipes da Web implantados recentemente serão abertos no Microsoft Edge em vez de Intune Managed Browser se necessário para abrir em um navegador protegido. Você deve redirecionar os clipes da Web preexistentes para garantir que eles sejam abertos no Microsoft Edge em vez de Managed Browser. 
 
-### <a name="user-experience-change-when-adding-apps-to-intune---4705829-idready---"></a>Alteração da experiência do usuário ao adicionar aplicativos ao Intune<!-- 4705829 idready -->
-Você verá uma nova experiência do usuário ao adicionar aplicativos por meio do Intune. Essa experiência fornece as mesmas configurações e os detalhes que você usou anteriormente, no entanto, a nova experiência segue um processo do tipo assistente antes de adicionar um aplicativo ao Intune. Essa nova experiência também fornece uma página de revisão antes de adicionar o aplicativo. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), selecione **aplicativos** > **todos os aplicativos** > **Adicionar**. Para obter mais informações, veja [Adicionar aplicações ao Microsoft Intune](~/apps/apps-add.md).
-
-#### <a name="require-win32-apps-to-restart----3136567--"></a>Exigir que aplicativos Win32 reiniciem <!-- 3136567-->
-Você pode exigir que um aplicativo Win32 precise ser reiniciado após uma instalação bem-sucedida. Além disso, você pode escolher a quantidade de tempo (o período de carência) antes que a reinicialização deva ocorrer.
 
 <!-- ***********************************************-->
 ## <a name="device-configuration"></a>Configuração do dispositivo
 
-### <a name="add-automatic-proxy-settings-to-wi-fi-profiles-for-android-enterprise-work-profiles---4490822-idready---"></a>Adicionar configurações de proxy automáticas a perfis de Wi-Fi para perfis de trabalho do Android Enterprise<!-- 4490822 idready -->
-Em dispositivos Android Enterprise de perfil de trabalho, você pode criar perfis de Wi-Fi. Ao escolher o tipo de empresa Wi-Fi, você também pode inserir o tipo de protocolo EAP (Extensible Authentication Protocol) usado em sua rede Wi-Fi.
-
-Em uma atualização futura, ao escolher o tipo Enterprise, você poderá inserir configurações de proxy automáticas, incluindo uma URL do servidor proxy, como `proxy.contoso.com`.
-
-Para ver as configurações de Wi-Fi atuais que você pode configurar, vá para [Adicionar configurações de Wi-Fi para dispositivos que executam o Android Enterprise e Android quiosque no Microsoft Intune](../configuration/wi-fi-settings-android-enterprise.md).
-
-Aplica-se a:
-- Perfil de trabalho do Android Enterprise
-
 ### <a name="wired-network-device-configuration-profiles-for-macos-devices---3508686----"></a>Perfis de configuração de dispositivo de rede com fio para dispositivos macOS<!-- 3508686  -->
-Um novo perfil de configuração de dispositivo macOS estará disponível para configurar redes com fio (**configuração de dispositivo** > **perfis** > **Criar perfil** > **MacOS** para plataforma > **rede com fio** para o tipo de perfil). Use esse recurso para criar perfis 802.1 x para gerenciar redes com fio e implantar essas redes com fio em seus dispositivos macOS.
+Um novo perfil de configuração do dispositivo macOS estará disponível que configura redes com fios (**configuração** do dispositivo > **Perfis** > **Criar perfil** > **macOS** para plataforma > **Rede Com fios** para tipo de perfil). Use esse recurso para criar perfis 802.1 x para gerenciar redes com fio e implantar essas redes com fio em seus dispositivos macOS.
 
 Aplica-se a:
 - macOS
@@ -120,10 +105,7 @@ Esta funcionalidade aplica-se a:
 - Android Enterprise 
 
 <!-- ***********************************************-->
-## <a name="device-enrollment"></a>Inscrição de dispositivos
-
-### <a name="block-android-enrollments-by-device-manufacturer--5197392-idready--"></a>Bloquear registros do Android por fabricante do dispositivo<!--5197392 idready-->
-Você poderá bloquear a inscrição de dispositivos com base no fabricante do dispositivo. Isso se aplica ao administrador do dispositivo Android e aos dispositivos Android Enterprise Work Profile. Para ver as restrições de registro, vá para o [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431)> **dispositivos** > **restrições de registro**.
+<!--## Device enrollment-->
 
 
 
@@ -151,9 +133,6 @@ As informações a seguir serão adicionadas à página **visão geral** para di
 
 <!-- ***********************************************-->
 ## <a name="role-based-access-control"></a>Controlo de acesso baseado em funções
-
-### <a name="new-intune-built-in-role-endpoint-security-manager--4253397-idready--"></a>Novo Gerenciador de segurança de ponto de extremidade de função interna do Intune<!--4253397 idready-->
-Uma nova função interna do Intune estará disponível: o Gerenciador de segurança do ponto de extremidade. Essa nova função dá aos administradores acesso completo ao nó do Gerenciador de ponto de extremidade no Intune e acesso somente pronto a outras áreas. A função é uma expansão da função "administrador de segurança" do Azure AD. Se atualmente você tiver apenas administradores globais como funções, não haverá nenhuma alteração necessária. Se você usar funções e quiser a granularidade que o Gerenciador de segurança de ponto de extremidade fornece, atribua essa função quando ela estiver disponível. Para obter mais informações sobre funções internas, consulte [controle de acesso baseado em função](role-based-access-control.md).
 
 ### <a name="intune-roles-user-interface-changes-coming--5801612-idready--"></a>Alterações de interface do usuário de funções do Intune recebidas<!--5801612 idready-->
 A interface do usuário para o [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) > a **Administração de locatário** as **funções** > serão alteradas para um design mais amigável e intuitivo. Essa experiência fornece as mesmas configurações e os detalhes que você usa agora, no entanto, a nova experiência emprega um processo do tipo assistente.

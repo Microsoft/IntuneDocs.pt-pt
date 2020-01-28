@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/23/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d5a3204721a0d40cfb5bf729ca17ef8e4ded1f0f
-ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
+ms.openlocfilehash: 0d4bbd0a5b57391edad726c7e936d0072a791673
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75885775"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755770"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Adicionar políticas de configuração da aplicação para dispositivos iOS geridos
 
@@ -50,35 +50,40 @@ Depois de selecionar os grupos a incluir na sua política de configuração da a
 
 ## <a name="create-an-app-configuration-policy"></a>Criar uma política de configuração de aplicação
 
-1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
-2. Escolha os **aplicativos** > **políticas de configuração de aplicativo** > **Adicionar** > **dispositivos gerenciados**.
-3. Defina os seguintes detalhes:
+1. Inscreva-se no centro de administração do [Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Escolha as **aplicações** > políticas de **configuração** de apps > **adicionar** > **dispositivos geridos**. Note que pode escolher entre **dispositivos geridos** e **aplicações geridas.** Para mais informações consulte apps que suportam a [configuração da aplicação](~/apps/app-configuration-policies-overview.md#apps-that-support-app-configuration).
+3. Na página **Basics,** delineie os seguintes detalhes:
     - **Nome** – o nome do perfil que é apresentado no portal do Azure.
     - **Descrição** – a descrição do perfil que é apresentada no portal do Azure.
-    - **Tipo de registro do dispositivo** – essa configuração é definida como **dispositivos gerenciados**.
-4. Selecione **iOS** em **Plataforma**.
-5. Selecione **Aplicação associada**. Em seguida, no painel **Aplicação associada**, selecione a aplicação gerida à qual pretende aplicar a configuração e selecione **OK**.
-6. Escolha **definições de configuração** para exibir o painel **definições de configuração** .
-7. Selecione **Formato das definições de configuração**. Selecione um dos seguintes métodos para adicionar informações de configuração:
+    - Tipo de **inscrição do dispositivo** - Esta definição está definida para **dispositivos geridos**.
+4. Selecione **iOS/iPadOS** como **plataforma**.
+5. Clique em **selecionar a aplicação** ao lado da **aplicação Targeted**. O painel de **aplicações Associado** é apresentado. 
+6. No painel de **aplicações direcionado,** escolha a aplicação gerida para associar à política de configuração e clique EM **OK**.
+7. Clique em **Seguir** para visualizar a página **Definições.**
+8. Na caixa de dropdown, selecione o formato de definições de **configuração**. Selecione um dos seguintes métodos para adicionar informações de configuração:
     - **Utilizar estruturador de configuração**
     - **Introduzir dados XML**<br><br>
     Para obter detalhes sobre a utilização do estruturador de configuração, veja [Utilizar estruturador de configuração](#use-configuration-designer). Para obter detalhes sobre a introdução de dados XML, veja [Introduzir dados XML](#enter-xml-data). 
-8. Depois de adicionar as informações de configuração, escolha **OK**e, em seguida, escolha **Adicionar** para adicionar a política de configuração. O painel de descrição geral da política de configuração é apresentado.
-9. Selecione **Atribuições** para apresentar as opções de inclusão e exclusão. 
+9. Clique em **Avançar** para exibir a página **atribuições** .
+10. Na caixa de dropdown ao lado da **Atribuição para**, selecione **grupos selecionados,** **Todos os utilizadores,** **Todos os dispositivos,** ou **todos os utilizadores e todas as pessoas se desloquem** para atribuir a política de configuração da aplicação.
 
     ![Captura de ecrã do separador Atribuições de política – Incluir](./media/app-configuration-policies-use-ios/app-config-policy01.png)
-10. Selecione **Todos os Utilizadores** no separador **Incluir**.
+
+11. Selecione **todos os utilizadores** na caixa de dropdown.
 
     ![Captura de ecrã do menu pendente Atribuições de política – Todos os Utilizadores](./media/app-configuration-policies-use-ios/app-config-policy02.png)
-11. Selecione o separador **Excluir**. 
+
 12. Clique em **Selecionar grupos para excluir** para apresentar o painel relacionado.
 
     ![Captura de tela de atribuições de política – selecionar grupos para excluir painel](./media/app-configuration-policies-use-ios/app-config-policy03.png)
+
 13. Escolha os grupos que pretende excluir e, em seguida, clique em **Selecionar**.
 
     >[!NOTE]
     >Ao adicionar um grupo, se outro grupo já tiver sido incluído num determinado tipo de atribuição, o mesmo estará pré-selecionado e inalterável para outras atribuições de inclusão. Por conseguinte, esse grupo que foi utilizado não poderá ser utilizado como um grupo excluído.
-14. Clique em **Guardar**.
+
+14. Clique em **Seguir** para exibir a página **Review + criar.**
+15. Clique **em Criar** para adicionar a política de configuração da aplicação ao Intune.
 
 ## <a name="use-configuration-designer"></a>Utilizar o estruturador de configuração
 
@@ -165,8 +170,8 @@ O Intune suporta os seguintes tipos de dados numa lista de propriedades:
 ### <a name="tokens-used-in-the-property-list"></a>Tokens utilizados na lista de propriedades
 
 Além disso, o Intune suporta os seguintes tipos de tokens na lista de propriedades:
-- \{\{userPrincipalName\}\}— por exemplo, **John\@contoso.com**
-- \}de \{de\}de \{de email — por exemplo, **John\@contoso.com**
+- \{\{nome principal de utilizador\}\}— por exemplo, **John\@contoso.com**
+- \{\{\}de\}correio - por exemplo, **John\@contoso.com**
 - \{\{partialupn\}\} – por exemplo, **João**
 - \{\{accountid\}\} – por exemplo, **fc0dc142-71d8-4b12-bbea-bae2a8514c81**
 - \{\{deviceid\}\} – por exemplo, **b9841cd9-9843-405f-be28-b2265c59ef97**

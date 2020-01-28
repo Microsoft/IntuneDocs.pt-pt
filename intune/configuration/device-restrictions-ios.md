@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 39978043428f6ad912832007f60628815d6549a6
-ms.sourcegitcommit: fb72b19986f34907d228c856d2e6949751ec02a1
+ms.openlocfilehash: f99479200e66b080e107475f0a031c5756da6051
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75920079"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76754580"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>configurações do dispositivo iOS e iPadOS para permitir ou restringir recursos usando o Intune
 
@@ -37,7 +37,7 @@ Estas definições são adicionadas a um perfil de configuração do dispositivo
 [Crie um perfil de configuração de restrições do dispositivo](../device-restrictions-configure.md).
 
 > [!NOTE]
-> Essas configurações se aplicam a diferentes tipos de registro, com algumas configurações sendo aplicadas a todas as opções de registro. Para obter mais informações sobre os diferentes tipos de registro, consulte [registro do IOS](../ios-enroll.md).
+> Estas configurações aplicam-se a diferentes tipos de matrículas, com algumas definições aplicáveis a todas as opções de inscrição. Para obter mais informações sobre os diferentes tipos de registro, consulte [registro do IOS](../ios-enroll.md).
 
 ## <a name="general"></a>Geral
 
@@ -223,7 +223,7 @@ Estas definições são adicionadas a um perfil de configuração do dispositivo
   Esta funcionalidade aplica-se a:  
   - iOS 11,0 e mais recente
   
-<sup>1</sup>Quando configura as definições **Máximo de minutos de inatividade até o ecrã ser bloqueado** e **Máximo de minutos após o bloqueio de ecrã antes de ser exigida a palavra-passe**, estas são aplicadas em sequência. Por exemplo, se definir o valor de ambas as definições para **5** minutos, o ecrã desativa automaticamente passados cinco minutos e o dispositivo bloqueia após mais cinco minutos. No entanto, se o utilizador desligar o ecrã manualmente, a segunda definição será imediatamente aplicada. No mesmo exemplo, após o utilizador desativar o ecrã, o dispositivo será bloqueado passados cinco minutos.
+<sup>1</sup> Quando configurar os **minutos máximos de inatividade até que** o ecrã bloqueie e **os minutos máximos após** o bloqueio do ecrã antes de ser necessária uma definição de senha, são aplicados em sequência. Por exemplo, se definir o valor de ambas as definições para **5** minutos, o ecrã desativa automaticamente passados cinco minutos e o dispositivo bloqueia após mais cinco minutos. No entanto, se o utilizador desligar o ecrã manualmente, a segunda definição será imediatamente aplicada. No mesmo exemplo, após o utilizador desativar o ecrã, o dispositivo será bloqueado passados cinco minutos.
 
 ## <a name="locked-screen-experience"></a>Experiência de Ecrã Bloqueado
 
@@ -273,7 +273,7 @@ Estas definições são adicionadas a um perfil de configuração do dispositivo
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>As configurações se aplicam a: registro de dispositivo automatizado (supervisionado)
 
-- **App Store**: o **bloco** impede o acesso à loja de aplicativos em dispositivos supervisionados. **Não configurado** (padrão) permite o acesso.
+- **App Store**: o **bloco** impede o acesso à loja de aplicativos em dispositivos supervisionados. **Não configurado** (predefinido) permite o acesso.
 
   A partir do iOS 13,0, essa configuração requer dispositivos supervisionados.
 
@@ -293,7 +293,7 @@ Estas definições são adicionadas a um perfil de configuração do dispositivo
 
   A partir do iOS 13,0, essa configuração requer dispositivos supervisionados.
 
-- **Acesso à unidade de rede no aplicativo de arquivos**: usando o protocolo SMB, os dispositivos podem acessar arquivos ou outros recursos em um servidor de rede. **Desabilitar** impede o acesso a arquivos em uma unidade SMB de rede. **Não configurado** (padrão) permite o acesso.
+- **Acesso à unidade de rede no aplicativo de arquivos**: usando o protocolo SMB, os dispositivos podem acessar arquivos ou outros recursos em um servidor de rede. **Desabilitar** impede o acesso a arquivos em uma unidade SMB de rede. **Não configurado** (predefinido) permite o acesso.
 
   Esta funcionalidade aplica-se a:  
   - iOS e iPadOS 13,0 e mais recentes
@@ -436,11 +436,11 @@ Para adicionar aplicações, pode:
 
 ### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>As configurações se aplicam a: registro de dispositivo, registro de dispositivo automatizado (supervisionado)
 
-Observação necessária para o roaming de dados (dica ou nota importante para ajudar com a confusão do cliente): essa configuração não aparecerá no perfil de gerenciamento do dispositivo de destino. Isso ocorre porque essa configuração é tratada como uma ação de dispositivo remoto e sempre que o estado de roaming de dados é alterado no dispositivo, ele se tornará bloqueado novamente pelo serviço do Intune. Mesmo que não esteja no perfil de gerenciamento, ele estará funcionando se ele aparecer como um sucesso do relatório no console de administração. 
+Nota necessária para roaming de dados (dica ou nota importante para ajudar na confusão do cliente): Esta definição não aparecerá no perfil de gestão do dispositivo direcionado. Isto porque esta definição é tratada como uma ação remota do dispositivo, e cada vez que o estado de roaming de dados é alterado no dispositivo, será novamente bloqueado pelo serviço Intune. Apesar de não estar no perfil de gestão, está a funcionar se mostrar como um sucesso a partir da reportagem na consola de administração. 
 - **Roaming de dados**: escolha **Bloquear** para impedir o roaming de dados na rede celular. **Não configurado** (predefinição) permite o roaming de dados quando o dispositivo está numa rede móvel.
 
   > [!IMPORTANT]
-  > Essa configuração é tratada como uma ação de dispositivo remoto. Portanto, essa configuração não é mostrada no perfil de gerenciamento no dispositivo. Sempre que o status de roaming de dados é alterado no dispositivo, o **roaming de dados** é bloqueado pelo serviço do Intune. No Intune, se o status do relatório mostrar um êxito, saiba que ele está funcionando, mesmo que a configuração não seja mostrada no perfil de gerenciamento no dispositivo.
+  > Esta definição é tratada como uma ação remota do dispositivo. Portanto, esta definição não está mostrada no perfil de gestão do dispositivo. Sempre que o estado de roaming de dados muda no dispositivo, o **roaming de dados** é bloqueado pelo serviço Intune. Em Intune, se o estado de reporte mostrar um sucesso, então saiba que está a funcionar, mesmo que a configuração não seja mostrada no perfil de gestão do dispositivo.
 
 - **Busca em segundo plano global durante o roaming**: **Bloquear** impede o uso do recurso de busca em segundo plano global ao fazer roaming na rede celular. **Não configurado** (predefinição) permite que o dispositivo obtenha dados, como o e-mail, quando estiver a utilizar o roaming numa rede móvel.
 - **Discagem por voz**: escolha **Bloquear** para impedir que os usuários usem o recurso de discagem por voz no dispositivo. **Não configurado** (predefinição) permite a marcação por voz no dispositivo.
@@ -448,7 +448,7 @@ Observação necessária para o roaming de dados (dica ou nota importante para a
 - **Hotspot pessoal**: o **bloco** desativa o hotspot pessoal no dispositivo dos usuários com cada sincronização de dispositivo. Essa configuração pode não ser compatível com algumas operadoras. **Não configurado** (predefinição) mantém a configuração do hotspot pessoal como o conjunto predefinido pelo utilizador.
 
   > [!IMPORTANT]
-  > Essa configuração é tratada como uma ação de dispositivo remoto. Portanto, essa configuração não é mostrada no perfil de gerenciamento no dispositivo. Sempre que o status de hotspot pessoal é alterado no dispositivo, o **hotspot pessoal** é bloqueado pelo serviço do Intune. No Intune, se o status do relatório mostrar um êxito, saiba que ele está funcionando, mesmo que a configuração não seja mostrada no perfil de gerenciamento no dispositivo.
+  > Esta definição é tratada como uma ação remota do dispositivo. Portanto, esta definição não está mostrada no perfil de gestão do dispositivo. Sempre que o estado do hotspot pessoal muda no dispositivo, o **Hotspot Pessoal** é bloqueado pelo serviço Intune. Em Intune, se o estado de reporte mostrar um sucesso, então saiba que está a funcionar, mesmo que a configuração não seja mostrada no perfil de gestão do dispositivo.
 
 - **Regras de uso de celular (somente aplicativos gerenciados)** : define os tipos de dados que os aplicativos gerenciados podem usar quando em redes de celular. As opções são:
   - **Bloquear o uso de dados da rede celular**: bloqueie o uso de dados da rede celular para **todos os aplicativos gerenciados** ou **escolha aplicativos específicos**.
@@ -594,7 +594,7 @@ Você também pode **importar** um arquivo CSV com a lista de nomes de aplicativ
 - **VoiceOver**: **exigir** que a configuração de acessibilidade do VoiceOver esteja no dispositivo para ler o texto na tela em voz alta. **Não configurado** não permite executar ou ativar esta funcionalidade no modo de quiosque.
 - **Zoom**: **exigir** que a configuração de zoom esteja no dispositivo para permitir que os usuários usem o toque para ampliar na tela. **Não configurado** não permite executar ou ativar esta funcionalidade no modo de quiosque.
 - **Bloqueio automático**: **Bloquear** impede o bloqueio automático do dispositivo. **Não configurado** permite esse recurso.
-- **Opção de toque**: **Bloquear** desabilita a opção de toque (silenciar) no dispositivo. **Não configurado** permite esse recurso.
+- **Opção de toque**: **Bloquear** desabilita a opção de toque (mudo) no dispositivo. **Não configurado** permite esse recurso.
 - **Rotação de tela**: **Bloquear** impede a alteração da orientação da tela quando o usuário gira o dispositivo. **Não configurado** permite esse recurso.
 - **Botão suspensão da tela**: escolha **Bloquear** para desabilitar o botão de ativação de suspensão da tela no dispositivo. **Não configurado** permite esse recurso.
 - **Touch**: **Block** desabilita a tela touch no dispositivo. **Não configurado** permite que o utilizador utilize o ecrã tátil.
@@ -636,7 +636,7 @@ O modo supervisionado do iOS só pode ser ativado durante a configuração inici
 
 - Bloqueio de Aplicação (Modo de Aplicação Única) 
 - Proxy HTTP Global 
-- Ignorar Bloqueio de Ativação 
+- Bloqueio de ativação de sactivação de sactiva 
 - Modo de Aplicação Única Autónomo 
 - Filtro de Conteúdo Web 
 - Definição de fundo e ecrã de bloqueio 
@@ -656,7 +656,7 @@ O modo supervisionado do iOS só pode ser ativado durante a configuração inici
 - Restrições da IU 
 - Instalação dos perfis de configuração pela IU 
 - Notícias 
-- Keyboard shortcuts 
+- Atalhos de teclado 
 - Modificações do código de acesso 
 - Alterações do nome do dispositivo 
 - Transferências automáticas de aplicações 

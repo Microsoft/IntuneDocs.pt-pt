@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cb98ee2974cefeebb90689207388d5fe9229dad2
-ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
+ms.openlocfilehash: a4ece1fd1d47213ff9da8b8fcc2e53155ad76628
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "76036654"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76754546"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Inscrever dispositivos Windows no Intune com o Windows Autopilot  
 O Windows Autopilot simplifica a inscrição de dispositivos no Intune. A criação e manutenção de imagens personalizadas do sistema operativo são um processo moroso. Também poderá demorar a aplicar estas imagens personalizadas do sistema operativo a novos dispositivos para as preparar para utilização antes de as disponibilizar aos seus utilizadores finais. Com o Microsoft Intune e o Autopilot, pode fornecer novos dispositivos aos seus utilizadores finais sem ter de criar, manter e aplicar imagens de sistema operativo personalizadas aos dispositivos. Ao utilizar o Intune para gerir dispositivos do Autopilot, pode gerir políticas, perfis, aplicações, entre outros, após estes serem inscritos. Para uma descrição geral das vantagens, cenários e pré-requisitos, veja [Descrição geral do Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
@@ -49,7 +49,7 @@ Para obter mais informações, consulte o cmdlet Understanding PowerShell.
 
 Pode adicionar dispositivos Windows Autopilot ao importar um ficheiro CSV com as informações dos dispositivos.
 
-1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **dispositivos** > **windows** > **registro do Windows** > **dispositivos** (no programa de **implantação do Windows AutoPilot** > **importar**.
+1. No [Microsoft Endpoint Manager Admin Center,](https://go.microsoft.com/fwlink/?linkid=2109431)escolha **dispositivos** > Windows > **dispositivos** de ** > de inscrição do** **Windows** (no âmbito do Programa de **Implementação do Piloto Automático do Windows** > **Import**.
 
     ![Captura de ecrã dos dispositivos Windows Autopilot](./media/enrollment-autopilot/autopilot-import-device.png)
 
@@ -79,8 +79,8 @@ Pode adicionar dispositivos Windows Autopilot ao importar um ficheiro CSV com as
 3. Se optou por **Atribuído** para o **Tipo de associação** no passo anterior, no painel **Grupo**, selecione **Membros** e adicione dispositivos do Autopilot ao grupo.
     Os dispositivos Autopilot que ainda não estão inscritos são dispositivos em que o nome é igual ao número de série do dispositivo.
 4. Se acima optou por **Dispositivo Dinâmico** para o **Tipo de associação**, no painel **Grupo**, selecione **Membros de dispositivo dinâmicos** e escreva o seguinte código na caixa **Regra avançada**. Somente os dispositivos AutoPilot são coletados por essas regras, pois eles direcionam atributos que são apenas possuía por dispositivos AutoPilot. A criação de um grupo com base em atributos não AutoPilot não garantirá que os dispositivos incluídos no grupo estejam realmente registrados no piloto automático.
-    - Se você quiser criar um grupo que inclui todos os seus dispositivos do AutoPilot, digite: `(device.devicePhysicalIDs -any _ -contains "[ZTDId]")`
-    - O campo de marca de grupo do Intune é mapeado para o atributo OrderID em dispositivos do Azure AD. Se você quiser criar um grupo que inclua todos os seus dispositivos de piloto automático com uma marca de grupo específica (o dispositivo OrderID do Azure AD), você deve digitar: `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`
+    - Se quiser criar um grupo que inclua todos os seus dispositivos Autopilot, escreva: `(device.devicePhysicalIDs -any _ -contains "[ZTDId]")`
+    - O campo de marca de grupo do Intune é mapeado para o atributo OrderID em dispositivos do Azure AD. Se pretender criar um grupo que inclua todos os seus dispositivos Autopilot com uma etiqueta de grupo específica (o dispositivo AD Azure OrderID), deve escrever: `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`
     - Se quiser criar um grupo que inclua todos os seus dispositivos do Autopilot com um ID de Nota de Encomenda específico, escreva `(device.devicePhysicalIds -any _ -eq "[PurchaseOrderId]:76222342342")`
     
     Depois de adicionar o código da **Regra avançada**, selecione **Guardar**.
@@ -115,7 +115,7 @@ Os perfis de implementação do Autopilot são utilizados para configurar os dis
     - **Idioma (Região)** \*: selecione o idioma a utilizar para o dispositivo. Esta opção só está disponível se tiver optado pela **Implementação personalizada** no **Modo de implementação**.
     - **Configurar automaticamente o teclado**\*: se um **idioma (região)** está selecionado, escolha **Sim** para ignorar a página de seleção do teclado. Esta opção só está disponível se tiver optado pela **Implementação personalizada** no **Modo de implementação**.
 8. Selecione **Seguinte**.
-9. Na página **marcas de escopo** , adicione opcionalmente as marcas de escopo que você deseja aplicar a esse perfil. Para obter mais informações sobre marcas de escopo, consulte [usar o controle de acesso baseado em função e marcas de escopo para distribuí-lo](../fundamentals/scope-tags.md).
+9. Na página **marcas de escopo** , adicione opcionalmente as marcas de escopo que você deseja aplicar a esse perfil. Para obter mais informações sobre etiquetas de âmbito, consulte [Utilize o controlo de acesso baseado em papéis e as etiquetas](../fundamentals/scope-tags.md)de âmbito para TI distribuídos .
 10. Selecione **Seguinte**.
 11. Na página **atribuições** , escolha **grupos selecionados** para **atribuir a**.
 
@@ -146,7 +146,7 @@ Após ter criado um perfil de implementação do Autopilot, poderá editar deter
 Depois de carregar um dispositivo de piloto automático, você poderá editar determinados atributos do dispositivo.
 
 1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), selecione **dispositivos** > **windows** > **registro do Windows** > **dispositivos** (no programa de **implantação do Windows AutoPilot**.
-2. Selecione o dispositivo que quer editar.
+2. Selecione o dispositivo que pretende editar.
 3. No painel à direita da tela, você pode editar o nome do dispositivo, a marca do grupo ou o nome amigável do usuário (se você tiver atribuído um usuário).
 4. Selecione **Guardar**.
 
@@ -158,6 +158,11 @@ Depois de carregar um dispositivo de piloto automático, você poderá editar de
 Os alertas irão indicar quantos dispositivos do programa Autopilot não têm perfis de implementação do Autopilot. Utilize as informações no alerta para criar perfis e atribui-los aos dispositivos não atribuídos. Quando clica no alerta, é-lhe apresentada uma lista completa dos dispositivos Windows Autopilot e informações detalhadas sobre os mesmos.
 
 Para ver alertas para dispositivos não atribuídos, no [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **dispositivos** > **visão geral** > **alertas de registro** > **dispositivos não atribuídos**.  
+
+## <a name="autopilot-deployments-report"></a>Relatório de implantações do AutoPilot
+Você pode ver detalhes em cada dispositivo implantado por meio do piloto automático do Windows.
+Para ver o relatório, vá para o [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **dispositivos** > **monitorar** > **implantações do AutoPilot**.
+Os dados ficam disponíveis por 30 dias após a implantação.
 
 ## <a name="assign-a-user-to-a-specific-autopilot-device"></a>Atribuir um utilizador a um dispositivo do Autopilot específico
 

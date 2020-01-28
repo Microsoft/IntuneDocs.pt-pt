@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/22/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a92699ccce4f0b2590e526b3442cd45bfda6407c
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: e299601f69a7052ea52f9da2537306cb8556982b
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74563609"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755379"
 ---
 # <a name="add-built-in-apps-to-microsoft-intune"></a>Adicionar aplicações incorporadas ao Microsoft Intune
 
@@ -39,32 +39,43 @@ Nas versões anteriores da consola do Intune, o Intune disponibilizava várias a
 Para adicionar uma aplicação incorporada às suas aplicações disponíveis no Microsoft Intune, faça o seguinte:
 1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selecione **aplicativos** > **todos os aplicativos** > **Adicionar**.
-3. No painel **Adicionar aplicação**, na lista **Tipo de aplicação**, selecione **Aplicação incorporada**.
-4. Selecione **Selecionar aplicação**.
-5. No painel **Aplicação incorporada**, selecione as aplicações que quer incluir.
-6. No painel **Adicionar aplicação**, selecione **Adicionar**.
+3. No painel do **tipo select,** sob os tipos de **aplicativos da Loja** disponíveis, selecione app **Built-In**.
+4. Clique em **Selecionar**. Os passos da **aplicação Add** são apresentados.
+5. Na página **de aplicações Select Built-in,** clique em Selecionar a **aplicação** Para selecionar as aplicações que pretende incluir.
+6. Selecione as aplicações incorporadas que pretende incluir. 
+7. Depois de ter selecionado as aplicações, clique em **Select** no painel de **aplicações Select Built-in.**
+8. Clique em **Seguir** para exibir a página **de tags scope.**
+9. Clique em **Selecionar etiquetas** de âmbito para adicionar opcionalmente etiquetas de âmbito para a aplicação. Para mais informações, consulte [Utilize o controlo de acesso baseado em funções (RBAC) e as etiquetas](~/fundamentals/scope-tags.md)de âmbito para TI distribuídos .
+10. Clique em **Avançar** para exibir a página **atribuições** .
+11. Selecione as atribuições de grupo para a aplicação. Para mais informações, consulte [Adicionar grupos para organizar utilizadores e dispositivos](~/fundamentals/groups-add.md). 
+12. Clique em **Seguir** para exibir a página **Review + criar.** Reveja os valores e configurações que inseriu para a aplicação.
+13. Quando terminar, clique em **Criar** para adicionar a app ao Intune.
 
+    A lâmina **de visão geral** da aplicação que criou é exibida.
 
 ## <a name="configure-app-information"></a>Configurar as informações da aplicação
 
 Pode modificar as informações da aplicação incorporada. Estas informações ajudam-no a identificar a aplicação no Intune e também ajudam os utilizadores a encontrá-la no portal da empresa.
-1. Selecione **aplicativos** > **todos os aplicativos** e selecione o aplicativo interno que você deseja modificar.  
+1. Selecione **Apps** > **Todas as aplicações** e selecione a aplicação incorporada que pretende modificar.  
    É apresentado um painel da aplicação incorporada.
-2. Selecione as **propriedades** > **Configurar**.
+2. Selecione **Propriedades**.
+3. **Selecione Editar** ao lado de **informações**da App .
 4. No painel **Informações da aplicação**, pode modificar as seguintes informações:
     - **Nome**: introduza o nome da aplicação incorporada tal como será apresentado no portal da empresa. Certifique-se de que todos os nomes que utiliza são exclusivos. Se existir o mesmo nome duas vezes, só é apresentada uma das aplicações aos utilizadores no portal da empresa.
     - **Descrição**: introduza uma descrição para a aplicação. 
     - **Publicador**: introduza o nome do publicador da aplicação.
     - **Categoria**: opcionalmente, selecione uma ou mais das categorias de aplicações incorporadas. Esta opção permite que os utilizadores encontrem a aplicação mais facilmente quando procurarem no portal da empresa.
-    - **Apresentar esta aplicação em destaque no portal da empresa**: apresente a aplicação de forma destacada na página principal do portal da empresa quando os utilizadores procurarem aplicações.
+    - **Mostre isto como uma aplicação em destaque no portal da empresa**: Mostrar a app em destaque na página principal do portal da empresa quando os utilizadores navegam para apps.
     - **URL de Informações**: opcionalmente, introduza o URL de um site que contenha informações sobre esta aplicação. O URL é apresentado aos utilizadores no portal da empresa.
     - **URL de Privacidade**: opcionalmente, introduza um URL para um site que contenha informações sobre a privacidade desta aplicação. O URL é apresentado aos utilizadores no portal da empresa.
     - **Programador**: opcionalmente, introduza o nome do programador da aplicação.
     - **Proprietário**: opcionalmente, introduza o nome do proprietário desta aplicação (por exemplo, *Departamento de RH*).
     - **Notas**: introduza quaisquer notas que queira associar a esta aplicação.
     - **Carregar Ícone**: carregue um ícone que será apresentado com a aplicação quando os utilizadores procurarem no portal da empresa.
-4. Selecione **OK**.
-5. No painel **Propriedades**, selecione **Guardar**.
+5. Clique em **Rever + guarde** para exibir a página **Review + criar.** Reveja os valores e configurações que inseriu para a aplicação.
+13. Quando terminar, clique em **Guardar** para atualizar a aplicação em Intune.
+
+    A lâmina **de visão geral** da aplicação que criou é exibida.
 
 ## <a name="next-steps"></a>Próximos passos
 

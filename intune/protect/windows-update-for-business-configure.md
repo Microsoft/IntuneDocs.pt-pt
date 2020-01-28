@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/14/2020
+ms.date: 01/24/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -15,12 +15,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc9dd03714e24dae4b0c7afe9206c6a8d7d36c13
-ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
+ms.openlocfilehash: beafee4eb22d641748ca41f8f4c01c48ead87741
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75956276"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76754342"
 ---
 # <a name="manage-windows-10-software-updates-in-intune"></a>Gerenciar atualizações de software do Windows 10 no Intune
 
@@ -71,7 +71,7 @@ Os pré-requisitos a seguir devem ser atendidos para usar as atualizações do W
 
 ## <a name="windows-10-update-rings"></a>Anéis de atualização do Windows 10
 
-Crie anéis de atualização que especificam como e quando o Windows como um serviço atualiza seus dispositivos Windows 10 com atualizações de recursos e qualidade. Com o Windows 10, as novas Atualizações de Funcionalidades e Atualizações de Qualidade incluem os conteúdos de todas as atualizações anteriores. Desde que instale a atualização mais recente, pode ter a certeza de que os seus dispositivos com o Windows 10 estão atualizados. Ao contrário das versões anteriores do Windows, agora tem de instalar toda a atualização em vez de parte de uma atualização.
+Crie anéis de atualização que especificam como e quando o Windows como um serviço atualiza seus dispositivos Windows 10 com atualizações de recursos e qualidade. Com o Windows 10, as novas Atualizações de Funcionalidades e Atualizações de Qualidade incluem os conteúdos de todas as atualizações anteriores. Desde que tenha instalado a mais recente atualização, sabe que os dispositivos do Windows 10 estão atualizados. Ao contrário das versões anteriores do Windows, agora tem de instalar toda a atualização em vez de parte de uma atualização.
 
 Os anéis de atualização do Windows 10 dão suporte a [marcas de escopo](../fundamentals/scope-tags.md). Você pode usar marcas de escopo com anéis de atualização para ajudá-lo a filtrar e gerenciar conjuntos de configurações que você usa.
 
@@ -82,7 +82,7 @@ Os anéis de atualização do Windows 10 dão suporte a [marcas de escopo](../fu
 2. Selecione **dispositivos** > os anéis de atualização **do Windows > ** **Windows 10** > **criar**.
 
 3. Em *noções básicas*, especifique um nome, uma descrição (opcional) e, em seguida, selecione **Avançar**.
-  ![criar um anel de atualização]( ./media/windows-update-for-business-configure/basics-tab.png)
+  ![Criar um]( ./media/windows-update-for-business-configure/basics-tab.png) de anel de atualização
   
 4. Em **Atualizar configurações de anel**, defina as configurações para suas necessidades de negócios. Para obter informações sobre as configurações disponíveis, consulte Configurações do Windows Update. Depois de definir as configurações *de atualização e experiência do usuário* , selecione **Avançar**.
 
@@ -90,9 +90,9 @@ Os anéis de atualização do Windows 10 dão suporte a [marcas de escopo](../fu
 
    Quando estiver pronto, selecione **Avançar** para continuar com as *atribuições*.
 
-6. Em **atribuições**, escolha **+ Selecionar grupos para incluir** e, em seguida, atribua o anel de atualização a um ou mais grupos. Use **+ selecione grupos para excluir** para ajustar a atribuição. Selecione **Seguinte** para continuar.
+6. Em **atribuições**, escolha **+ Selecionar grupos para incluir** e, em seguida, atribua o anel de atualização a um ou mais grupos. Use **+ selecione grupos para excluir** para ajustar a atribuição. Selecione **Next** para continuar.
 
-7. Em**revisão + criar**, examine as configurações e, em seguida, selecione **criar** quando estiver pronto para salvar o anel de atualização do Windows 10. O novo anel de atualização é exibido na lista de anéis de atualização.
+7. Em**Review + criar**, reveja as definições e, em seguida, selecione **Criar** quando estiver pronto para guardar o seu anel de atualização do Windows 10. O novo anel de atualização é exibido na lista de anéis de atualização.
 
 ### <a name="manage-your-windows-10-update-rings"></a>Gerenciar seus anéis de atualização do Windows 10
 
@@ -101,7 +101,7 @@ No portal, navegue até **dispositivos** > os anéis de atualização **do Windo
 Nessa página, você pode exibir o status de atribuição de anéis e selecionar as seguintes ações na parte superior do painel de visão geral para gerenciar o anel de atualização:
 
 - [Eliminar](#delete)
-- [Colocar em pausa](#pause)
+- [Pausa](#pause)
 - [Volte](#resume)
 - [Estender](#extend)
 - [Desinstalar](#uninstall)
@@ -145,7 +145,7 @@ Enquanto um anel de atualização é pausado, você pode selecionar **retomar** 
 2. Selecione entre as opções disponíveis para retomar as atualizações de **recurso** ou **qualidade** e, em seguida, selecione **OK**.
 3. Depois de retomar um tipo de atualização, você pode selecionar retomar novamente para retomar o outro tipo de atualização.
 
-#### <a name="extend"></a>Expandir  
+#### <a name="extend"></a>Estender  
 
 Enquanto um anel de atualização é pausado, você pode selecionar **estender** para redefinir o período de pausa para as atualizações de recurso e qualidade desse anel de atualização para 35 dias.
 
@@ -205,20 +205,22 @@ Quando um dispositivo recebe uma política de atualizações de recursos do Wind
 
 - Ao contrário do uso de *Pause* com um anel de atualização, que expira após 35 dias, a política de atualizações de recursos do Windows 10 permanece em vigor. Os dispositivos não instalarão uma nova versão do Windows até que você modifique ou remova a política de atualizações de recursos do Windows 10. Se você editar a política para especificar uma versão mais recente, os dispositivos poderão instalar os recursos dessa versão do Windows.
 
+### <a name="prerequisites-for-windows-10-feature-updates"></a>Pré-requisitos para atualizações de funcionalidades do Windows 10
+
+Os seguintes pré-requisitos devem ser cumpridos para utilizar as atualizações da funcionalidade do Windows 10 em Intune.
+
+- Os dispositivos devem ser matriculados em Intune MDM e Azure AD aderiu ou Azure AD registado.
+- Para usar a política de atualizações de recursos com o Intune, os dispositivos devem ter a telemetria ativada, com uma configuração mínima de [*básico*](../configuration/device-restrictions-windows-10.md#reporting-and-telemetry). A telemetria é configurada em *relatórios e telemetria* como parte de uma [política de restrição de dispositivo](../configuration/device-restrictions-configure.md).
+  
+  Dispositivos que recebem a política de atualizações de recursos e que têm a telemetria definida como *não configurado*, o que significa que ele está desativado, pode instalar uma versão mais recente do Windows do que a definida na política de atualização de recursos. O pré-requisito para exigir telemetria está sob análise, pois esse recurso se move para a disponibilidade geral.
+
 ### <a name="limitations-for-windows-10-feature-updates"></a>Limitações para atualizações de recursos do Windows 10
 
 - Quando você implanta uma política de *atualização de recursos do Windows 10* em um dispositivo que também recebe uma política de *anel de atualização do Windows 10* , examine o anel de atualização para as seguintes configurações:
   - O **período de adiamento da atualização do recurso (dias)** deve ser definido como **0**.
   - As atualizações de recurso para o anel de atualização devem estar *em execução*. Eles não devem estar em pausa.
 
-- As políticas de atualização de recursos do Windows 10 não podem ser aplicadas durante a OOBE (configuração inicial pelo uso) e serão aplicadas somente na primeira verificação de Windows Update depois que um dispositivo tiver concluído o provisionamento (que normalmente é um dia). Além disso, os dispositivos que foram provisionados com o piloto automático não receberão a política.
-
-  Essa limitação está sendo examinada para ver se ele pode ter suporte no futuro.
-
-> [!IMPORTANT]
-> Para usar a política de atualizações de recursos com o Intune, os dispositivos devem ter a telemetria ativada, com uma configuração mínima de [*básico*](../configuration/device-restrictions-windows-10.md#reporting-and-telemetry). A telemetria é configurada em *relatórios e telemetria* como parte de uma [política de restrição de dispositivo](../configuration/device-restrictions-configure.md).
->
-> Dispositivos que recebem a política de atualizações de recursos e que têm a telemetria definida como *não configurado*, o que significa que ele está desativado, pode instalar uma versão mais recente do Windows do que a definida na política de atualização de recursos. O pré-requisito para exigir telemetria está sob análise, pois esse recurso se move para a disponibilidade geral.
+- As políticas de atualização de funcionalidades do Windows 10 não podem ser aplicadas durante o Autopilot fora da experiência da caixa (OOBE) e só serão aplicadas na primeira análise do Windows Update depois de um dispositivo ter terminado o fornecimento (que normalmente é um dia).
 
 ### <a name="create-and-assign-windows-10-feature-updates"></a>Criar e atribuir atualizações de recursos do Windows 10
 
@@ -228,7 +230,7 @@ Quando um dispositivo recebe uma política de atualizações de recursos do Wind
 
 3. Em **noções básicas**, especifique um nome, uma descrição (opcional) e para **a atualização do recurso a ser implantada**, selecione a versão do Windows com o conjunto de recursos desejado e, em seguida, selecione **Avançar**.
 
-4. Em **atribuições**, escolha **+ Selecionar grupos para incluir** e, em seguida, atribua a implantação de atualização de recurso a um ou mais grupos. Selecione **Seguinte** para continuar.
+4. Em **Atribuições,** escolha **+ Selecione grupos para incluir** e, em seguida, atribuir a implementação da atualização de funcionalidades a um ou mais grupos. Selecione **Next** para continuar.
 
 5. Em **revisão + criar**, examine as configurações e selecione **criar** quando estiver pronto para salvar a política de atualizações de recursos do Windows 10.  
 
