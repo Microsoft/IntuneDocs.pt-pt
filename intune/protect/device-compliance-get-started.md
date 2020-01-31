@@ -1,6 +1,6 @@
 ---
 title: Políticas de conformidade de dispositivos no Microsoft Intune – Azure | Microsoft Docs
-description: Comece a usar as políticas de conformidade do dispositivo, visão geral dos níveis de status e gravidade, usando o status do InGracePeriod, trabalhando com o acesso condicional e manipulando dispositivos sem uma política atribuída.
+description: Inicie-se com as políticas de conformidade do dispositivo de utilização, visão geral dos níveis de estado e gravidade, utilizando o estado InGracePeriod, trabalhando com acesso condicional e dispositivos de manuseamento sem uma política atribuída.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 83b8c48d2bb594ca8b9c527d78922332e582363f
-ms.sourcegitcommit: 66e284fe092e19c1da72b4b770e45bf25ac7910c
+ms.openlocfilehash: a56d8f7aface3628ba5bc8985128ebb49c9cf404
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74860300"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812175"
 ---
 # <a name="set-rules-on-devices-to-allow-access-to-resources-in-your-organization-using-intune"></a>Definir regras em dispositivos para permitir o acesso a recursos na sua organização através do Intune
 
-Muitas soluções de gestão de dispositivos móveis (MDM) ajudam a proteger os dados organizacionais ao exigir que os utilizadores e os dispositivos cumpram alguns requisitos. No Intune, esta funcionalidade é denominada “políticas de conformidade”. As políticas de conformidade definem as regras e as definições que os utilizadores e os dispositivos têm de cumprir para estarem em conformidade. Quando combinado com o acesso condicional, os administradores podem bloquear usuários e dispositivos que não atendem às regras.
+Muitas soluções de gestão de dispositivos móveis (MDM) ajudam a proteger os dados organizacionais ao exigir que os utilizadores e os dispositivos cumpram alguns requisitos. No Intune, esta funcionalidade é denominada “políticas de conformidade”. As políticas de conformidade definem as regras e as definições que os utilizadores e os dispositivos têm de cumprir para estarem em conformidade. Quando combinados com o Acesso Condicional, os administradores podem bloquear utilizadores e dispositivos que não cumpram as regras.
 
 Por exemplo, um administrador do Intune pode exigir que:
 
@@ -37,7 +37,7 @@ Por exemplo, um administrador do Intune pode exigir que:
 Também pode utilizar esta funcionalidade para monitorizar o estado de conformidade dos dispositivos na sua organização.
 
 > [!IMPORTANT]
-> O Intune segue o agendamento de registo do dispositivo para todas as avaliações de conformidade no dispositivo. [Ciclos de atualização de política e perfil](../configuration/device-profile-troubleshoot.md#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned) lista os tempos de atualização estimados.
+> O Intune segue o agendamento de registo do dispositivo para todas as avaliações de conformidade no dispositivo. Os ciclos de atualização de políticas e perfis listam os [tempos estimados](../configuration/device-profile-troubleshoot.md#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned) de atualização.
 
 <!---### Actions for noncompliance
 
@@ -64,21 +64,21 @@ Remember that you need to implement Conditional Access policies in addition to c
 
 ## <a name="device-compliance-policies-work-with-azure-ad"></a>As políticas de conformidade de dispositivos funcionam com o Microsoft Azure AD
 
-O Intune usa o [acesso condicional](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) do Azure Active Directory (AD) (abre outro site de documentos) para ajudar a reforçar a conformidade. Quando um dispositivo se inscreve no Intune, é iniciado o processo de registo do Microsoft Azure AD e a informação do dispositivo é atualizada no Microsoft Azure AD. Uma das principais informações do dispositivo é o estado de conformidade do dispositivo. Esse status de conformidade é usado pelas políticas de acesso condicional para bloquear ou permitir o acesso a email e outros recursos da organização.
+Intune usa O [Acesso Condicional](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) do Diretório Ativo Azure (AD) (abre outro site docs) para ajudar a impor a conformidade. Quando um dispositivo se inscreve no Intune, é iniciado o processo de registo do Microsoft Azure AD e a informação do dispositivo é atualizada no Microsoft Azure AD. Uma das principais informações do dispositivo é o estado de conformidade do dispositivo. Este estado de conformidade é utilizado pelas políticas de Acesso Condicional para bloquear ou permitir o acesso a e-mails e outros recursos da organização.
 
 - [O que é a gestão de dispositivos no Azure Active Directory](https://docs.microsoft.com/azure/active-directory/device-management-introduction) é um excelente recurso sobre o porquê e a forma como os dispositivos são registados no Microsoft Azure AD.
 
-- O [acesso condicional](conditional-access.md) e as [maneiras comuns de usar o acesso condicional](conditional-access-intune-common-ways-use.md) descrevem esse recurso, pois ele está relacionado ao Intune.
+- [O Acesso Condicional](conditional-access.md) e [as formas comuns de utilização](conditional-access-intune-common-ways-use.md) do Acesso Condicional descrevem esta funcionalidade no que diz respeito ao Intune.
 
 ## <a name="ways-to-use-device-compliance-policies"></a>Formas de utilizar as políticas de conformidade de dispositivos
 
-### <a name="with-conditional-access"></a>Com acesso condicional
+### <a name="with-conditional-access"></a>Com Acesso Condicional
 
-Para dispositivos que estejam em conformidade com as regras da política, poderá conceder a esses dispositivos o acesso ao e-mail e a outros recursos da organização. Se os dispositivos não estiverem em conformidade com as regras da política, não obterão acesso aos recursos da organização. Esse é o acesso condicional.
+Para dispositivos que estejam em conformidade com as regras da política, poderá conceder a esses dispositivos o acesso ao e-mail e a outros recursos da organização. Se os dispositivos não estiverem em conformidade com as regras da política, não obterão acesso aos recursos da organização. Isto é acesso condicional.
 
 ### <a name="without-conditional-access"></a>Sem acesso condicional
 
-Você também pode usar políticas de conformidade do dispositivo sem qualquer acesso condicional. Quando utilizar políticas de conformidade de forma independente, os dispositivos visados são avaliados e reportados com o respetivo estado de conformidade. Por exemplo, pode obter um relatório sobre o número de dispositivos que não estão encriptados ou quais os dispositivos que foram desbloqueados por jailbreak ou rooting. Quando você usa políticas de conformidade sem acesso condicional, não há nenhuma restrição de acesso aos recursos da organização.
+Também pode utilizar as políticas de conformidade do dispositivo sem qualquer Acesso Condicional. Quando utilizar políticas de conformidade de forma independente, os dispositivos visados são avaliados e reportados com o respetivo estado de conformidade. Por exemplo, pode obter um relatório sobre o número de dispositivos que não estão encriptados ou quais os dispositivos que foram desbloqueados por jailbreak ou rooting. Quando utiliza políticas de conformidade sem acesso condicional, não existem restrições de acesso aos recursos da organização.
 
 ## <a name="ways-to-deploy-device-compliance-policies"></a>Formas de implementar as políticas de conformidade de dispositivos
 
@@ -88,12 +88,16 @@ O Intune também inclui um conjunto de definições de políticas de conformidad
 
 - **Marcar os dispositivos sem política de conformidade atribuída como**: esta propriedade tem dois valores:
 
-  - **Compatível** (*padrão*): recurso de segurança desativado
-  - **Não compatível**: recurso de segurança ativado
+  - **Conformidade** *(predefinição*): função de segurança desligada
+  - **Não conforme:** funcionalidade de segurança em
 
-  Se um dispositivo não tiver uma política de conformidade atribuída, esse dispositivo será considerado em conformidade por padrão. Se você usar o acesso condicional com políticas de conformidade, recomendamos que você altere a configuração padrão para **não compatível**. Se um utilizador final não estiver em conformidade porque não foi atribuída uma política, a [aplicação do Portal da Empresa](../apps/company-portal-app.md) mostrará `No compliance policies have been assigned`.
+  Se um dispositivo não tiver uma política de conformidade atribuída, então este dispositivo é considerado conforme por padrão. Se utilizar o Acesso Condicional com as políticas de conformidade, recomendamos que altere a definição predefinida para **Não conforme**. Se um utilizador final não estiver em conformidade porque não foi atribuída uma política, a [aplicação do Portal da Empresa](../apps/company-portal-app.md) mostrará `No compliance policies have been assigned`.
 
-- **Detecção de jailbreak avançada**: Quando habilitada, essa configuração faz com que os dispositivos IOS verifiquem com o Intune com mais frequência. A ativação desta propriedade utiliza os serviços de localização do dispositivo e afeta a utilização da bateria. Os dados de localização do utilizador não são armazenados pelo Intune.
+
+> [!NOTE]
+> A deteção de jailbreak melhorada para dispositivos iOS foi temporariamente desativada em Intune.
+
+- **Deteção melhorada da jailbreak**: Quando ativada, esta definição faz com que os dispositivos iOS entrem em insina com mais frequência. A ativação desta propriedade utiliza os serviços de localização do dispositivo e afeta a utilização da bateria. Os dados de localização do utilizador não são armazenados pelo Intune.
 
   Ativar esta definição exige que os dispositivos:
   - Ativem os serviços de localização ao nível do SO.
@@ -106,29 +110,29 @@ Pode utilizar estas políticas incorporadas para monitorizar as definições. O 
 
 Os relatórios de conformidade são uma excelente forma de verificar o estado dos dispositivos. O artigo [Monitorizar as políticas de conformidade](compliance-policy-monitor.md) inclui algumas orientações.
 
-## <a name="non-compliance-and-conditional-access-on-the-different-platforms"></a>Não conformidade e acesso condicional em diferentes plataformas
+## <a name="non-compliance-and-conditional-access-on-the-different-platforms"></a>Incumprimento e Acesso Condicional nas diferentes plataformas
 
-A tabela a seguir descreve como as configurações não compatíveis são gerenciadas quando uma política de conformidade é usada com uma política de acesso condicional.
+O quadro seguinte descreve como as configurações não conformes são geridas quando uma política de conformidade é utilizada com uma política de acesso condicional.
 
 ---------------------------
 
 |**Definição de política**| **Plataforma** |
 | --- | ----|
-| **Configuração do PIN ou da palavra-passe** | - **Android 4,0 e posterior: em**quarentena<br>- **Samsung Knox Standard 4,0 e posterior: em**quarentena<br>- **Android Enterprise**: em quarentena  <br>  <br>- **iOS 8,0 e posterior**: corrigido<br>- **macOS 10,11 e posterior**: corrigido  <br>  <br>- **Windows 8.1 e posterior**: corrigido<br>- **Windows Phone 8,1 e posterior**: corrigido|
-| **Encriptação do dispositivo** | - **Android 4,0 e posterior: em**quarentena<br>- **Samsung Knox Standard 4,0 e posterior: em**quarentena<br>- **Android Enterprise**: em quarentena<br><br>- **iOS 8,0 e posterior**: corrigido (ao definir o PIN)<br>- **macOS 10,11 e posterior**: corrigido (definindo o PIN)<br><br>- **Windows 8.1 e posterior**: não aplicável<br>- **Windows Phone 8,1 e posterior**: corrigido |
-| **Dispositivo desbloqueado por jailbreak ou obtenção de controlo de raiz** | - **Android 4,0 e posterior: em**quarentena (não é uma configuração)<br>- **Samsung Knox Standard 4,0 e posterior: em**quarentena (não é uma configuração)<br>- **Android Enterprise**: em quarentena (não é uma configuração)<br><br>- **iOS 8,0 e posterior: em**quarentena (não é uma configuração)<br>- **macOS 10,11 e posterior**: não aplicável<br><br>- **Windows 8.1 e posterior**: não aplicável<br>- **Windows Phone 8,1 e posterior**: não aplicável |
-| **Perfil de e-mail** | - **Android 4,0 e posterior**: não aplicável<br>- **Samsung Knox Standard 4,0 e posterior**: não aplicável<br>- **Android Enterprise**: não aplicável<br><br>- **iOS 8,0 e posterior: em**quarentena<br>- **macOS 10,11 e posterior: em**quarentena<br><br>- **Windows 8.1 e posterior**: não aplicável<br>- **Windows Phone 8,1 e posterior**: não aplicável |
-| **Versão mínima do SO** | - **Android 4,0 e posterior: em**quarentena<br>- **Samsung Knox Standard 4,0 e posterior: em**quarentena<br>- **Android Enterprise**: em quarentena<br><br>- **iOS 8,0 e posterior: em**quarentena<br>- **macOS 10,11 e posterior: em**quarentena<br><br>- **Windows 8.1 e posterior: em**quarentena<br>- **Windows Phone 8,1 e posterior: em**quarentena |
-| **Versão máxima do SO** | - **Android 4,0 e posterior: em**quarentena<br>- **Samsung Knox Standard 4,0 e posterior: em**quarentena<br>- **Android Enterprise**: em quarentena<br><br>- **iOS 8,0 e posterior: em**quarentena<br>- **macOS 10,11 e posterior: em**quarentena<br><br>- **Windows 8.1 e posterior: em**quarentena<br>- **Windows Phone 8,1 e posterior: em**quarentena |
-| **Atestado do estado de funcionamento do Windows** | - **Android 4,0 e posterior**: não aplicável<br>- **Samsung Knox Standard 4,0 e posterior**: não aplicável<br>- **Android Enterprise**: não aplicável<br><br>- **iOS 8,0 e posterior**: não aplicável<br>- **macOS 10,11 e posterior**: não aplicável<br><br>- **Windows 10 e Windows 10 Mobile**: em quarentena<br>- **Windows 8.1 e posterior: em**quarentena<br>- **Windows Phone 8,1 e posterior**: não aplicável |
+| **Configuração do PIN ou da palavra-passe** | - **Android 4.0 e mais tarde**: Quarentena<br>- **Samsung Knox Standard 4.0 e mais tarde**: Quarentena<br>- **Android Enterprise**: Quarentena  <br>  <br>- **iOS 8.0 e mais tarde**: Remediado<br>- **macOS 10.11 e posteriormente**: Remediado  <br>  <br>- **Windows 8.1 e mais tarde**: Remediado<br>- **Windows Phone 8.1 e mais tarde**: Remediado|
+| **Encriptação do dispositivo** | - **Android 4.0 e mais tarde**: Quarentena<br>- **Samsung Knox Standard 4.0 e mais tarde**: Quarentena<br>- **Android Enterprise**: Quarentena<br><br>- **iOS 8.0 e posteriormente:** Remediado (definindo PIN)<br>- **macOS 10.11 e posteriormente:** Remediado (definindo PIN)<br><br>- **Windows 8.1 e mais tarde**: Não aplicável<br>- **Windows Phone 8.1 e mais tarde**: Remediado |
+| **Dispositivo desbloqueado por jailbreak ou obtenção de controlo de raiz** | - **Android 4.0 e mais tarde**: Quarentena (não um cenário)<br>- **Samsung Knox Standard 4.0 e mais tarde**: Quarentena (não um cenário)<br>- **Android Enterprise**: Quarentena (não um cenário)<br><br>- **iOS 8.0 e mais tarde:** Quarentena (não um ajuste)<br>- **macOS 10.11 e posteriormente**: Não aplicável<br><br>- **Windows 8.1 e mais tarde**: Não aplicável<br>- **Windows Phone 8.1 e posteriormente**: Não aplicável |
+| **Perfil de e-mail** | - **Android 4.0 e mais tarde**: Não aplicável<br>- **Samsung Knox Standard 4.0 e mais tarde**: Não aplicável<br>- **Android Enterprise**: Não aplicável<br><br>- **iOS 8.0 e mais tarde**: Quarentena<br>- **macOS 10.11 e mais tarde:** Quarentena<br><br>- **Windows 8.1 e mais tarde**: Não aplicável<br>- **Windows Phone 8.1 e posteriormente**: Não aplicável |
+| **Versão mínima do SO** | - **Android 4.0 e mais tarde**: Quarentena<br>- **Samsung Knox Standard 4.0 e mais tarde**: Quarentena<br>- **Android Enterprise**: Quarentena<br><br>- **iOS 8.0 e mais tarde**: Quarentena<br>- **macOS 10.11 e mais tarde:** Quarentena<br><br>- **Windows 8.1 e mais tarde**: Quarentena<br>- **Windows Phone 8.1 e mais tarde**: Quarentena |
+| **Versão máxima do SO** | - **Android 4.0 e mais tarde**: Quarentena<br>- **Samsung Knox Standard 4.0 e mais tarde**: Quarentena<br>- **Android Enterprise**: Quarentena<br><br>- **iOS 8.0 e mais tarde**: Quarentena<br>- **macOS 10.11 e mais tarde:** Quarentena<br><br>- **Windows 8.1 e mais tarde**: Quarentena<br>- **Windows Phone 8.1 e mais tarde**: Quarentena |
+| **Atestado do estado de funcionamento do Windows** | - **Android 4.0 e mais tarde**: Não aplicável<br>- **Samsung Knox Standard 4.0 e mais tarde**: Não aplicável<br>- **Android Enterprise**: Não aplicável<br><br>- **iOS 8.0 e mais tarde**: Não aplicável<br>- **macOS 10.11 e posteriormente**: Não aplicável<br><br>- **Windows 10 e Windows 10 Mobile**: Quarentena<br>- **Windows 8.1 e mais tarde**: Quarentena<br>- **Windows Phone 8.1 e posteriormente**: Não aplicável |
 
 ---------------------------
 
-**Corrigido**: o sistema operacional do dispositivo impõe a conformidade. Por exemplo, forçar o utilizador a definir um PIN.
+**Remediado**: O sistema operativo do dispositivo impõe a conformidade. Por exemplo, forçar o utilizador a definir um PIN.
 
-Em **quarentena**: o sistema operacional do dispositivo não impõe conformidade. Por exemplo, os dispositivos Android e Android Enterprise não forçam o utilizador a encriptar o dispositivo. Quando o dispositivo não é conforme, são realizadas as seguintes ações:
+**Quarentena**: O sistema operativo do dispositivo não impõe a conformidade. Por exemplo, os dispositivos Android e Android Enterprise não forçam o utilizador a encriptar o dispositivo. Quando o dispositivo não é conforme, são realizadas as seguintes ações:
 
-- Se uma política de acesso condicional se aplicar ao usuário, o dispositivo será bloqueado.
+- Se uma política de acesso condicional se aplicar ao utilizador, o dispositivo está bloqueado.
 - A aplicação do Portal da Empresa notifica o utilizador sobre eventuais problemas de conformidade.
 
 ## <a name="next-steps"></a>Próximos passos

@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/06/2020
+ms.date: 01/27/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -17,39 +17,39 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: apps; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 97e70191ed133d9427a3c8565d1dbf03573b628b
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: 6ce23d77d9b9d89ce51738a9c4e244dfca9a1c59
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75692222"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812408"
 ---
 # <a name="overview-of-the-app-lifecycle-in-microsoft-intune"></a>Descrição geral do ciclo de vida das aplicações no Microsoft Intune
 
-O ciclo de vida das aplicações do Microsoft Intune começa quando uma aplicação é adicionada e avança por fases adicionais até esta ser removida. Ao compreender essas fases, você terá os detalhes necessários para começar a usar o gerenciamento de aplicativos no Intune.
+O ciclo de vida das aplicações do Microsoft Intune começa quando uma aplicação é adicionada e avança por fases adicionais até esta ser removida. Ao compreender estas fases, terá os detalhes necessários para começar com a gestão de aplicações em Intune.
 
-![O ciclo de vida do aplicativo – Adicionar, implantar, configurar, proteger e desativar.](./media/app-lifecycle/app-lifecycle.png "o ciclo de vida do aplicativo do Intune")
+![O ciclo de vida da aplicação - Adicionar, implementar, configurar, proteger e reformar- se.](./media/app-lifecycle/app-lifecycle.png "o ciclo de vida da app Intune")
 
 ## <a name="add"></a>Adicionar
 
-O primeiro passo na implementação de aplicações consiste em adicionar as aplicações que pretende gerir e atribuir no Intune. Apesar de poder utilizar muitos tipos de aplicações diferentes, os procedimentos básicos são iguais. Com o Intune, você pode adicionar diferentes tipos de aplicativo, incluindo aplicativos escritos internamente (linha de negócios), aplicativos da loja, aplicativos que são internos e aplicativos na Web. Para obter mais informações sobre cada um destes tipos de aplicações, veja [Como adicionar uma aplicação ao Microsoft Intune](apps-add.md).
+O primeiro passo na implementação de aplicações consiste em adicionar as aplicações que pretende gerir e atribuir no Intune. Apesar de poder utilizar muitos tipos de aplicações diferentes, os procedimentos básicos são iguais. Com a Intune pode adicionar diferentes tipos de aplicações, incluindo aplicações escritas internamente (linha de negócio), aplicações da loja, apps que estão incorporadas e aplicações na web. Para obter mais informações sobre cada um destes tipos de aplicações, veja [Como adicionar uma aplicação ao Microsoft Intune](apps-add.md).
 
 ## <a name="deploy"></a>Implementar
 
-Depois de adicionar a aplicação ao Intune, pode [atribuí-la aos utilizadores e dispositivos que gere](apps-deploy.md). O Intune facilita esse processo e, depois que o aplicativo é implantado, você pode [monitorar o sucesso](apps-monitor.md) da implantação do Intune dentro do portal do Azure. Além disso, em algumas lojas de aplicações, como a da [Apple](vpp-apps-ios.md) e do [Windows](windows-store-for-business.md), pode comprar licenças de aplicações em volume para a sua empresa. O Intune pode sincronizar os dados com estas lojas para poder implementar e monitorizar a utilização de licenças para estes tipos de aplicações diretamente a partir da consola de administração do Intune.
+Depois de adicionar a aplicação ao Intune, pode [atribuí-la aos utilizadores e dispositivos que gere](apps-deploy.md). Intune facilita este processo e, após a implementação da aplicação, poderá [monitorizar o sucesso](apps-monitor.md) da implementação a partir do Intune dentro do portal Azure. Além disso, em algumas lojas de aplicações, como a da [Apple](vpp-apps-ios.md) e do [Windows](windows-store-for-business.md), pode comprar licenças de aplicações em volume para a sua empresa. O Intune pode sincronizar os dados com estas lojas para poder implementar e monitorizar a utilização de licenças para estes tipos de aplicações diretamente a partir da consola de administração do Intune.
 
 ## <a name="configure"></a>Configurar
 
 Como parte do ciclo de vida das aplicações, são lançadas regularmente novas versões das aplicações. O Intune fornece ferramentas para [atualizar aplicações](apps-add.md) facilmente, que tenha implementado numa versão mais recente. Além disso, pode configurar funcionalidades adicionais para algumas aplicações, por exemplo:
 
 - As [políticas de configuração de aplicações iOS](app-configuration-policies-use-ios.md) fornecem definições para aplicações iOS compatíveis utilizadas quando a aplicação é executada. Por exemplo, uma aplicação pode precisar de definições de imagem corporativa específicas ou do nome de um servidor ao qual deve estabelecer ligação.
-- As [políticas de browser gerido](app-configuration-managed-browser.md) ajudam a configurar as definições para o Intune Managed Browser, que substitui o browser do dispositivo predefinido e permite restringir os sites que os utilizadores podem visitar.
+- [As políticas geridas](app-configuration-managed-browser.md) do navegador ajudam-no a configurar as definições para o [Microsoft Edge](~/apps/apps-supported-intune-apps.md#microsoft-apps), que substitui o navegador do dispositivo predefinido e permite restringir os websites que os seus utilizadores podem visitar.
 
 ## <a name="protect"></a>Proteger
 
 O Intune fornece várias formas para ajudar a proteger os dados nas suas aplicações. Os métodos principais são:
 
-- [Acesso condicional](../protect/conditional-access.md), que controla o acesso a email e outros serviços com base nas condições que você especificar. As condições incluem tipos de dispositivos ou conformidade com uma [política de conformidade do dispositivo](../protect/device-compliance-get-started.md) que tenha implementado.
+- [Acesso Condicional](../protect/conditional-access.md), que controla o acesso a e-mail e outros serviços com base em condições que especifica. As condições incluem tipos de dispositivos ou conformidade com uma [política de conformidade do dispositivo](../protect/device-compliance-get-started.md) que tenha implementado.
 - As [Políticas de proteção de aplicações](app-protection-policy.md) funcionam com aplicações individuais para ajudar a proteger os dados da empresa que utilizam. Por exemplo, pode restringir a cópia de dados entre aplicações não geridas e aplicações geridas ou pode impedir a execução das aplicações nos dispositivos com jailbreak ou rooting.
 
 ## <a name="retire"></a>Extinguir

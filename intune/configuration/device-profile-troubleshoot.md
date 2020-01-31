@@ -1,11 +1,11 @@
 ---
 title: Resolução de problemas de perfis de dispositivo no Microsoft Intune – Azure | Microsoft Docs
-description: Perguntas e respostas comuns com perfis e políticas de dispositivo, incluindo alterações de perfil não aplicadas a usuários ou dispositivos, quanto tempo leva para que novas políticas sejam enviadas para os dispositivos, quais configurações são aplicadas quando há várias políticas, o que acontece quando um o perfil é excluído ou removido e mais com Microsoft Intune.
+description: Perguntas e respostas comuns com políticas e perfis de dispositivos, incluindo alterações de perfil não aplicadas a utilizadores ou dispositivos, quanto tempo leva para que novas políticas sejam empurradas para dispositivos, que configurações são aplicadas quando existem múltiplas políticas, o que acontece quando a o perfil é eliminado ou removido, e muito mais com o Microsoft Intune.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/04/2019
+ms.date: 01/28/2020
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,18 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 95186e4d1e54737ffeaa5e4c9728d188c2f867d6
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 881d0f095d2144ae42db4825336275980a19f419
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206640"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812350"
 ---
-# <a name="common-questions-issues-and-resolutions-with-device-policies-and-profiles-in-microsoft-intune"></a>Perguntas comuns, problemas e resoluções com perfis e políticas de dispositivo no Microsoft Intune
+# <a name="common-questions-issues-and-resolutions-with-device-policies-and-profiles-in-microsoft-intune"></a>Questões comuns, questões e resoluções com políticas e perfis de dispositivos no Microsoft Intune
 
-
-
-Obtenha respostas para perguntas comuns ao trabalhar com perfis de dispositivo e políticas no Intune. Este artigo também lista os intervalos de tempo de check-in, fornece mais Detains em conflitos e muito mais.
+Obtenha respostas a perguntas comuns ao trabalhar com perfis e políticas de dispositivos no Intune. Este artigo também enumera os intervalos de tempo de check-in, fornece mais detenções em conflitos, e muito mais.
 
 ## <a name="why-doesnt-a-user-get-a-new-profile-when-changing-a-password-or-passphrase-on-an-existing-wi-fi-profile"></a>Por que razão um utilizador não obtém um novo perfil quando altera uma palavra-passe ou frase de acesso num perfil de Wi-Fi existente?
 
@@ -38,7 +36,7 @@ Para mitigar este problema, configure o Wi-Fi de convidado. Se o Wi-Fi empresari
 
 Algumas recomendações adicionais:  
 
-- Se a rede Wi-Fi à qual você está se conectando usar uma senha ou frase secreta, verifique se você pode se conectar ao roteador Wi-Fi diretamente. Pode testar com um dispositivo iOS.
+- Se a rede Wi-Fi que estiver a ligar utilizar uma palavra-passe ou uma palavra-passe, certifique-se de que pode ligar-se diretamente ao router Wi-Fi. Pode testar com um dispositivo iOS.
 - Depois de se ligar com êxito ao ponto final do Wi-Fi (router do Wi-Fi), tenha em atenção o SSID e a credencial utilizados (este valor será a palavra-passe ou a frase de acesso).
 - Introduza o SSID e a credencial (palavra-passe ou frase de acesso) no campo Chave Pré-partilhada. 
 - Implemente num grupo de teste com um número de utilizadores limitado, preferencialmente apenas a equipa de TI. 
@@ -46,76 +44,78 @@ Algumas recomendações adicionais:
 - Tente ligar-se novamente ao mesmo ponto final do Wi-Fi (como mencionado no primeiro passo).
 - Implemente em grupos maiores e, por fim, em todos os utilizadores esperados na sua organização. 
 
-## <a name="how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned"></a>Quanto tempo leva para os dispositivos obterem uma política, um perfil ou um aplicativo depois de serem atribuídos?
+## <a name="how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned"></a>Quanto tempo leva os dispositivos para obter uma política, perfil ou app depois de serem atribuídos?
 
-O Intune notifica o dispositivo para fazer check-in no serviço do Intune. Os tempos de notificação variam, incluindo imediatamente até algumas horas. Esses tempos de notificação também variam entre as plataformas.
+Instone notifica o dispositivo para fazer o check-in com o serviço Intune. Os tempos de notificação variam, incluindo imediatamente até algumas horas. Estes tempos de notificação também variam entre plataformas.
 
-Se um dispositivo não fizer check-in para obter a política ou o perfil após a primeira notificação, o Intune fará mais três tentativas. Um dispositivo offline, como desativado ou não conectado a uma rede, pode não receber as notificações. Nesse caso, o dispositivo Obtém a política ou o perfil em seu próximo check-in agendado com o serviço do Intune. O mesmo se aplica a verificações de não conformidade, incluindo dispositivos que se movem de um estado compatível para um não compatível.
+Se um dispositivo não fizer o check-in para obter a apólice ou perfil após a primeira notificação, Intune faz mais três tentativas. Um dispositivo offline, como desligado ou não ligado a uma rede, não pode receber as notificações. Neste caso, o dispositivo obtém a política ou perfil no seu próximo check-in agendado com o serviço Intune. O mesmo se aplica aos controlos de incumprimento, incluindo dispositivos que passam de um estado conforme a um estado não conforme.
 
-Frequências **estimadas** :
+**Frequências estimadas:**
 
 | Platform | Ciclo de atualização|
 | --- | --- |
-| iOS | Aproximadamente a cada 8 horas |
-| macOS | Aproximadamente a cada 8 horas |
-| Android | Aproximadamente a cada 8 horas |
-| PCs com o Windows 10 inscritos como dispositivos | Aproximadamente a cada 8 horas |
-| Windows Phone | Aproximadamente a cada 8 horas |
-| Windows 8.1 | Aproximadamente a cada 8 horas |
+| iOS | Cerca de 8 horas |
+| macOS | Cerca de 8 horas |
+| Android | Cerca de 8 horas |
+| PCs com o Windows 10 inscritos como dispositivos | Cerca de 8 horas |
+| Windows Phone | Cerca de 8 horas |
+| Windows 8.1 | Cerca de 8 horas |
 
-Se o dispositivo tiver sido registrado recentemente, o check-in de conformidade, não conformidade e configuração será executado com mais frequência, o que é **estimado** em:
+Se o dispositivo recentemente matriculado, o cumprimento, o incumprimento e o check-in de configuração são mais frequentemente executados, o que é **estimado** em:
 
 | Platform | Frequência |
 | --- | --- |
-| iOS | A cada 15 minutos por 1 hora e, em seguida, a cada 8 horas |  
-| macOS | A cada 15 minutos por 1 hora e, em seguida, a cada 8 horas | 
-| Android | A cada 3 minutos por 15 minutos, então a cada 15 minutos por 2 horas e, em seguida, a cada 8 horas | 
-| PCs com o Windows 10 inscritos como dispositivos | A cada 3 minutos por 15 minutos, então a cada 15 minutos por 2 horas e, em seguida, a cada 8 horas | 
-| Windows Phone | A cada 5 minutos por 15 minutos, então a cada 15 minutos por 2 horas e, em seguida, a cada 8 horas | 
-| Windows 8.1 | A cada 5 minutos por 15 minutos, então a cada 15 minutos por 2 horas e, em seguida, a cada 8 horas | 
+| iOS | A cada 15 minutos por 1 hora, e em volta de 8 horas |  
+| macOS | A cada 15 minutos por 1 hora, e em volta de 8 horas | 
+| Android | A cada 3 minutos por 15 minutos, a cada 15 minutos por 2 horas, e em volta de 8 horas | 
+| PCs com o Windows 10 inscritos como dispositivos | A cada 3 minutos por 15 minutos, a cada 15 minutos por 2 horas, e em volta de 8 horas | 
+| Windows Phone | A cada 5 minutos por 15 minutos, a cada 15 minutos por 2 horas, e em volta de 8 horas | 
+| Windows 8.1 | A cada 5 minutos por 15 minutos, a cada 15 minutos por 2 horas, e em volta de 8 horas | 
 
-A qualquer momento, os usuários podem abrir o aplicativo Portal da Empresa, **configurações** > **sincronização** para verificar imediatamente se há atualizações de política ou perfil.
+A qualquer momento, os utilizadores podem abrir a aplicação Portal da Empresa, **Definições** > **Sync** para verificar imediatamente as atualizações de política ou de perfil.
 
 ## <a name="what-actions-cause-intune-to-immediately-send-a-notification-to-a-device"></a>Que ações fazem o Intune enviar de imediato uma notificação para um dispositivo?
 
-Há diferentes ações que disparam uma notificação, como quando uma política, um perfil ou um aplicativo é atribuído (ou não atribuído), atualizado, excluído e assim por diante. Esses tempos de ação variam entre as plataformas.
+Existem diferentes ações que desencadeiam uma notificação, como quando uma política, perfil ou app é atribuída (ou não atribuída), atualizada, eliminada, e assim por diante. Estes tempos de ação variam entre plataformas.
 
-Os dispositivos fazem check-in no Intune quando recebem uma notificação para fazer check-in ou durante o check-in agendado. Quando você direciona um dispositivo ou usuário com uma ação, como bloqueio, redefinição de senha, aplicativo, perfil ou atribuição de política, o Intune notifica imediatamente o dispositivo para fazer check-in para receber essas atualizações.
+Os dispositivos fazem o check-in com o Intune quando recebem uma notificação para fazer o check-in ou durante o check-in agendado. Quando se direciona um dispositivo ou utilizador com uma ação, como bloqueio, reset de código de acesso, app, perfil ou atribuição de políticas, em seguida, Intune notifica imediatamente o dispositivo para fazer o check-in para receber estas atualizações.
 
-Outras alterações, como a revisão das informações de contato no aplicativo Portal da Empresa, não causam uma notificação imediata para os dispositivos.
+Outras alterações, como a revisão das informações de contacto na aplicação Portal da Empresa, não provocam uma notificação imediata aos dispositivos.
+
+As definições na política ou perfil são aplicadas em cada check-in. O post de blog de atualização da [política do Windows 10 MDM](https://www.petervanderwoude.nl/post/windows-10-mdm-policy-refresh/) pode ser um bom recurso.
 
 ## <a name="if-multiple-policies-are-assigned-to-the-same-user-or-device-how-do-i-know-which-settings-gets-applied"></a>Se forem atribuídas várias políticas ao mesmo utilizador ou dispositivo, como posso saber que definições serão aplicadas?
 
-Quando duas ou mais políticas são atribuídas ao mesmo usuário ou dispositivo, a configuração que se aplica ocorre no nível de configuração individual:
+Quando duas ou mais políticas são atribuídas ao mesmo utilizador ou dispositivo, então a definição que se aplica acontece ao nível de definição individual:
 
-- As configurações de política de conformidade sempre têm precedência sobre as configurações do perfil de configuração.
+- As definições de política de conformidade têm sempre precedência sobre as definições de perfil de configuração.
 
-- Se uma política de conformidade for avaliada em relação à mesma configuração em outra política de conformidade, a configuração de política de conformidade mais restritiva será aplicada.
+- Se uma política de conformidade avaliar a mesma definição noutra política de conformidade, então aplica-se a definição de política de conformidade mais restritiva.
 
-- Se uma definição de política de configuração estiver em conflito com uma configuração em outra política de configuração, esse conflito será mostrado no Intune. Deve resolver estes conflitos manualmente.
+- Se uma política de configuração que estabelece conflitos com uma definição noutra política de configuração, este conflito é mostrado em Intune. Deve resolver estes conflitos manualmente.
 
 ## <a name="what-happens-when-app-protection-policies-conflict-with-each-other-which-one-is-applied-to-the-app"></a>O que acontece quando as políticas de proteção de aplicações estão em conflito entre si? Qual delas é aplicada na aplicação?
 
-Os valores de conflito são as configurações mais restritivas disponíveis em uma política de proteção de aplicativo, *exceto* pelos campos de entrada de número, como tentativas de PIN antes da redefinição. Os campos de entrada de número são definidos da mesma forma que os valores, como se você criasse uma política de MAM usando a opção de configurações recomendadas.
+Os valores de conflito são as definições mais restritivas disponíveis numa política de proteção de aplicações, *com exceção* dos campos de entrada de números, tais como tentativas pin antes de reset. Os campos de entrada de números são definidos da mesma forma que os valores, como se tivesse criado uma política MAM utilizando a opção de definições recomendada.
 
-Os conflitos ocorrem quando duas configurações de perfil são iguais. Por exemplo, se configurou duas políticas MAM idênticas, à exceção da definição de copiar/colar. Neste cenário, a definição de copiar/colar está definida para o valor mais restritivo, mas as definições restantes são aplicadas conforme configuradas.
+Os conflitos acontecem quando duas definições de perfil são as mesmas. Por exemplo, se configurou duas políticas MAM idênticas, à exceção da definição de copiar/colar. Neste cenário, a definição de copiar/colar está definida para o valor mais restritivo, mas as definições restantes são aplicadas conforme configuradas.
 
-Uma política é implantada no aplicativo e entra em vigor. Uma segunda política é implantada. Nesse cenário, a primeira política tem precedência e permanece aplicada. A segunda política mostra um conflito. Se ambos forem aplicados ao mesmo tempo, o que significa que não há política anterior, ambos estarão em conflito. As definições em conflito são definidas para os valores mais restritivos.
+Uma política é implementada para a app e faz efeito. Uma segunda política está implementada. Neste cenário, a primeira política tem precedência e mantém-se aplicada. A segunda política mostra um conflito. Se ambos forem aplicados ao mesmo tempo, o que significa que não há política anterior, então ambos estão em conflito. As definições em conflito são definidas para os valores mais restritivos.
 
 ## <a name="what-happens-when-ios-custom-policies-conflict"></a>O que acontece quando políticas personalizadas do iOS entram em conflito?
 
 O Intune não avalia o payload dos ficheiros do Apple Configurator nem de políticas OMA-URI (Open Mobile Alliance Uniform Resource Identifier) personalizadas. Serve apenas como o mecanismo de entrega.
 
-Ao atribuir uma política personalizada, confirme se as configurações definidas não entram em conflito com a conformidade, configuração ou outras políticas personalizadas. Se uma política personalizada e suas configurações entrarem em conflito, as configurações serão aplicadas aleatoriamente.
+Ao atribuir uma política personalizada, confirme que as configurações configuradas não entram em conflito com a conformidade, configuração ou outras políticas personalizadas. Se uma política personalizada e as suas configurações entram em conflito, as definições são aplicadas aleatoriamente.
 
 ## <a name="what-happens-when-a-profile-is-deleted-or-no-longer-applicable"></a>O que acontece quando um perfil é eliminado ou deixa de ser aplicável?
 
-Quando você exclui um perfil ou remove um dispositivo de um grupo que tem o perfil, o perfil e as configurações são removidos do dispositivo conforme descrito:
+Quando elimina um perfil, ou remove um dispositivo de um grupo que tem o perfil, então o perfil e as definições são removidos do dispositivo conforme descrito:
 
 - Perfis de Wi-Fi, VPN, certificado e e-mail: estes perfis são removidos de todos os dispositivos inscritos suportados.
 - Todos os outros tipos de perfil:  
 
-  - **Dispositivos Windows e Android**: as configurações não são removidas do dispositivo
+  - **Dispositivos Windows e Android**: As definições não são removidas do dispositivo
   - **Dispositivos Windows Phone 8.1**: as definições seguintes são removidas:  
   
     - Palavra-passe obrigatória para desbloquear os dispositivos móveis
@@ -152,20 +152,20 @@ Quando você exclui um perfil ou remove um dispositivo de um grupo que tem o per
 
 ## <a name="i-changed-a-device-restriction-profile-but-the-changes-havent-taken-effect"></a>Alterei um perfil de restrição de dispositivos, mas as alterações ainda não foram aplicadas
 
-Uma vez definido, os dispositivos Windows Phone não permitem que as políticas de segurança definidas usando MDM ou EAS sejam reduzidas em segurança. Por exemplo, você define um **número mínimo de caracteres de senha** como 8. Você tenta reduzi-lo para 4. O perfil mais restritivo já está aplicado ao dispositivo.
+Uma vez definidos, os dispositivos Windows Phone não permitem que as políticas de segurança definidas utilizando MDM ou EAS sejam reduzidas em segurança. Por exemplo, define um **número mínimo de senha de caracteres** para 8. Tenta reduzi-lo a 4. O perfil mais restritivo já é aplicado ao dispositivo.
 
-Para alterar o perfil para um valor menos seguro, redefina as políticas de segurança. Por exemplo, em Windows 8.1, na área de trabalho, passe o dedo da direita > selecione **configurações** > **painel de controle**. Selecione a miniaplicação **Contas de Utilizador** . No menu de navegação à esquerda, há um link **Redefinir políticas de segurança** (em direção à parte inferior). Selecione-a e, em seguida, selecione **Repor Políticas**.
+Para mudar o perfil para um valor menos seguro, então redefinir as políticas de segurança. Por exemplo, no Windows 8.1, no ambiente de trabalho, passe para a direita > selecione **Definições** > **Painel de Controlo**. Selecione a miniaplicação **Contas de Utilizador** . No menu de navegação à esquerda, existe uma ligação de Políticas de **Segurança redefinida** (em direção ao fundo). Selecione-a e, em seguida, selecione **Repor Políticas**.
 
-Outros dispositivos MDM, como Android, Windows Phone 8,1 e posterior, iOS e Windows 10 podem precisar ser desativados e registrados novamente no Intune para aplicar um perfil menos restritivo.
+Outros dispositivos MDM, como Android, Windows Phone 8.1 e posteriormente, iOS e Windows 10 podem ter de ser retirados, e re-inscritos no Intune para aplicar um perfil menos restritivo.
 
-## <a name="some-settings-in-a-windows-10-profile-return-not-applicable"></a>Algumas configurações em um perfil do Windows 10 retornam "não aplicável"
+## <a name="some-settings-in-a-windows-10-profile-return-not-applicable"></a>Algumas definições numa devolução de perfil do Windows 10 "Não Aplicável"
 
-Algumas configurações em dispositivos Windows 10 podem ser mostradas como "não aplicável". Quando isso acontece, essa configuração específica não tem suporte na versão ou edição do Windows em execução no dispositivo. Essa mensagem pode ocorrer pelos seguintes motivos:
+Algumas definições nos dispositivos do Windows 10 podem apresentar como "Não Aplicável". Quando isso acontece, essa definição específica não é suportada na versão ou edição do Windows em execução no dispositivo. Esta mensagem pode ocorrer pelas seguintes razões:
 
-- A configuração só está disponível para versões mais recentes do Windows e não a versão atual do sistema operacional (SO) no dispositivo.
-- A configuração só está disponível para edições específicas do Windows ou SKUs específicos, como Home, Professional, Enterprise e Education.
+- A definição está apenas disponível para versões mais recentes do Windows, e não para a versão atual do sistema operativo (OS) no dispositivo.
+- A definição só está disponível para edições específicas do Windows ou SKUs específicas, tais como Home, Professional, Enterprise e Education.
 
-Para saber mais sobre os requisitos de versão e SKU para as diferentes configurações, consulte a [referência do provedor de serviços de configuração (CSP)](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference).
+Para saber mais sobre a versão e os requisitos sKU para as diferentes definições, consulte a referência do Fornecedor de Serviços de [Configuração (CSP).](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference)
 
 ## <a name="next-steps"></a>Próximos passos
 

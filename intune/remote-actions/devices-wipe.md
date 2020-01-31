@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2d9fbbbb80cf25861b2e0afbf3d01cfca3ece5fd
-ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
+ms.openlocfilehash: 7cda7404d24ccb9bb1c42d6bb66d77f29ac925ac
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74991778"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812467"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Remover dispositivos ao apagar os dados, extinguir ou anular a inscrição do dispositivo de forma manual
 
@@ -34,7 +34,7 @@ Ao realizar as ações **Extinguir** ou **Limpar**, pode remover do Intune os di
 
 ## <a name="wipe"></a>Eliminação
 
-A ação **Limpar** restaura um dispositivo para as predefinições de fábrica. Os dados do utilizador são mantidos se selecionar a caixa de verificação **Reter estado de inscrição e conta de utilizador**. Caso contrário, todos os dados, aplicativos e configurações serão removidos.
+A ação **Limpar** restaura um dispositivo para as predefinições de fábrica. Os dados do utilizador são mantidos se selecionar a caixa de verificação **Reter estado de inscrição e conta de utilizador**. Caso contrário, todos os dados, aplicações e configurações serão removidos.
 
 |Ação Limpar|**Reter estado de inscrição e conta de utilizador**|Removido da gestão do Intune|Description|
 |:-------------:|:------------:|:------------:|------------|
@@ -43,11 +43,11 @@ A ação **Limpar** restaura um dispositivo para as predefinições de fábrica.
 
 
 > [!NOTE]
-> A ação de apagamento não está disponível para dispositivos iOS registrados com o registro do usuário.
+> A ação Wipe não está disponível para dispositivos iOS matriculados com inscrição no utilizador.
 
 A opção **Reter estado de inscrição e conta de utilizador** só está disponível para a versão 1709 ou posterior do Windows 10.
 
-A opção **executar apagamento protegido** garante que a ação de apagamento não possa ser contornada desativando o dispositivo. Um apagamento protegido continuará tentando redefinir o dispositivo até que seja bem-sucedido. Em algumas configurações, essa ação pode deixar o dispositivo não conseguir reinicializar.
+A opção **'Eliminar'** não pode ser contornada a ação de limpeza não pode ser contornada desligando o dispositivo. Um apagamento protegido continuará tentando redefinir o dispositivo até que seja bem-sucedido. Em algumas configurações, essa ação pode deixar o dispositivo não conseguir reinicializar.
 
 As políticas de MDM voltarão a ser aplicadas da próxima vez que o dispositivo estabelecer ligação ao Intune.
 
@@ -59,7 +59,7 @@ Apagar é útil para repor um dispositivo antes de o atribuir a um novo utilizad
 3. Selecione **Dispositivos** > **Todos os dispositivos**.
 4. Selecione o nome do dispositivo que pretende apagar.
 5. No painel que mostra o nome do dispositivo, selecione **Limpar**.
-6. Para o Windows 10 versão 1709 ou posterior, você também tem a opção **apagar dispositivo, mas manter o estado de registro e a conta de usuário associada** . 
+6. Para a versão 1709 do Windows 10 ou mais tarde, também tem o **dispositivo Wipe, mas mantenha o estado de inscrição e a** opção de conta de utilizador associada. 
     
     |Retido durante uma limpeza |Não retido|
     | -------------|------------|
@@ -78,7 +78,7 @@ Se o dispositivo estiver ativado e ligado, a ação **Limpar** propaga-se a todo
 
 ## <a name="retire"></a>Extinguir
 
-A ação **Extinguir** remove os dados de aplicações geridas (quando aplicável), definições e perfis de e-mail atribuídos através do Intune. O dispositivo é removido da gestão do Intune. Essa extinção ocorrerá na próxima vez que o dispositivo for registado e receber a ação remota **Extinguir**. O dispositivo ainda aparecerá no Intune até que o dispositivo Verifique. Se você quiser remover dispositivos obsoletos imediatamente, use a [ação Excluir](devices-wipe.md#delete-devices-from-the-intune-portal) em vez disso.
+A ação **Extinguir** remove os dados de aplicações geridas (quando aplicável), definições e perfis de e-mail atribuídos através do Intune. O dispositivo é removido da gestão do Intune. Essa extinção ocorrerá na próxima vez que o dispositivo for registado e receber a ação remota **Extinguir**. O dispositivo ainda aparece em Intune até o dispositivo fazer o check-in. Se pretender remover imediatamente os dispositivos velhos, utilize a [ação Eliminar.](devices-wipe.md#delete-devices-from-the-intune-portal)
 
 A ação **Extinguir** mantém os dados pessoais do utilizador no dispositivo.  
 
@@ -88,7 +88,7 @@ As seguintes tabelas descrevem os dados que são removidos e o efeito da ação 
 
 |Tipo de dados|iOS|
 |-------------|-------|
-|Aplicações da empresa e dados associados instalados pelo Intune|**Aplicativos instalados usando o portal da empresa:** Para aplicativos que são fixados no perfil de gerenciamento, todos os dados do aplicativo e os aplicativos são removidos. Estas aplicações incluem aplicações instaladas originalmente a partir da App Store e mais tarde geridas como aplicações da empresa. <br /><br /> **Aplicativos da Microsoft que usam o gerenciamento de aplicativos móveis e foram instalados da loja de aplicativos:** Para aplicativos que não são gerenciados pelo Portal da Empresa, os dados de aplicativo da empresa protegidos pela criptografia de MAM (gerenciamento de aplicativo móvel) dentro do armazenamento local do aplicativo são removidos. Os dados protegidos pela encriptação MAM fora da aplicação permanecem encriptados e inutilizáveis, mas não são removidos. As aplicações pessoais e os dados não são removidos.|
+|Aplicações da empresa e dados associados instalados pelo Intune|**Apps instaladas utilizando o Portal da Empresa:** Para aplicações que estão fixadas no perfil de gestão, todos os dados da aplicação e as aplicações são removidas. Estas aplicações incluem aplicações originalmente instaladas a partir da App Store e posteriormente geridas como aplicações da empresa, a menos que a aplicação esteja configurada para não ser desinstalada na remoção do dispositivo. <br /><br /> **Aplicações da Microsoft que utilizam a gestão de aplicações móveis e foram instaladas a partir da App Store:** Para aplicações que não são geridas pelo Portal da Empresa, os dados de aplicações da empresa que estão protegidos pela encriptação mobile application management (MAM) dentro da aplicação armazenamento local é removido. Os dados protegidos pela encriptação MAM fora da aplicação permanecem encriptados e inutilizáveis, mas não são removidos. As aplicações pessoais e os dados não são removidos.|
 |Definições|As configurações que foram definidas pela política do Intune já não são impostas. Os utilizadores podem alterar as definições.|
 |Definições de perfis de Wi-Fi e da VPN|Removidos.|
 |Definições de perfil de certificado|Os certificados são removidos e revogados.|
@@ -129,7 +129,7 @@ Só pode limpar dispositivos de quiosque. Não é possível extinguir dispositiv
 |Definições de perfis de Wi-Fi e da VPN|Removidos.|
 |Definições de perfil de certificado|Os certificados que foram implementados através da MDM são removidos e revogados.|
 |Agente de gestão|O perfil de gestão é removido.|
-|Outlook|Se o acesso condicional estiver habilitado, o dispositivo não receberá novos emails.|
+|Outlook|Se o Acesso Condicional estiver ativado, o dispositivo não recebe correio novo.|
 |Anulação da associação ao Azure AD|O registo do Azure AD é removido.|
 
 ### <a name="windows"></a>Windows
@@ -138,13 +138,13 @@ Só pode limpar dispositivos de quiosque. Não é possível extinguir dispositiv
 |-------------|----------------------------------------------------------------|--------------|-----------------------------------------|--------|
 |Aplicações da empresa e dados associados instalados pelo Intune|As chaves para ficheiros protegidos por EFS são revogadas. O utilizador não consegue abrir os ficheiros.|As aplicações da empresa não são removidas.|As aplicações instaladas originalmente através do Portal da Empresa são desinstaladas. Os dados da aplicação da empresa são removidos.|As aplicações são desinstaladas. As chaves de sideload são removidas.<br>Na versão 1703 do Windows 10 (Atualização para Criativos) e posterior, as aplicações do Office 365 ProPlus não são removidas. As aplicações Win32 instaladas da extensão de gestão do Intune não serão desinstaladas em dispositivos não inscritos. Os administradores podem tirar partido da exclusão de atribuição para não oferecer aplicações Win32 em dispositivos BYOD.|
 |Definições|As configurações que foram definidas pela política do Intune já não são impostas. Os utilizadores podem alterar as definições.|As configurações que foram definidas pela política do Intune já não são impostas. Os utilizadores podem alterar as definições.|As configurações que foram definidas pela política do Intune já não são impostas. Os utilizadores podem alterar as definições.|As configurações que foram definidas pela política do Intune já não são impostas. Os utilizadores podem alterar as definições.|
-|Definições de perfis de Wi-Fi e da VPN|Removidos.|Removidos.|Não suportada.|Removidos.|
-|Definições de perfil de certificado|Os certificados são removidos e revogados.|Os certificados são removidos e revogados.|Não suportada.|Os certificados são removidos e revogados.|
-|E-mail|Remove e-mails com o EFS ativado. Isto inclui e-mails e anexos na aplicação Correio para Windows.|Não suportada.|Os perfis de e-mail aprovisionados através do Intune são removidos. O e-mail em cache no dispositivo é eliminado.|Remove e-mails com o EFS ativado. Isto inclui e-mails e anexos na aplicação Correio para Windows. Remove as contas de e-mail que tenham sido aprovisionadas pelo Intune.|
+|Definições de perfis de Wi-Fi e da VPN|Removidos.|Removidos.|Not supported.|Removidos.|
+|Definições de perfil de certificado|Os certificados são removidos e revogados.|Os certificados são removidos e revogados.|Not supported.|Os certificados são removidos e revogados.|
+|E-mail|Remove e-mails com o EFS ativado. Isto inclui e-mails e anexos na aplicação Correio para Windows.|Not supported.|Os perfis de e-mail aprovisionados através do Intune são removidos. O e-mail em cache no dispositivo é eliminado.|Remove e-mails com o EFS ativado. Isto inclui e-mails e anexos na aplicação Correio para Windows. Remove as contas de e-mail que tenham sido aprovisionadas pelo Intune.|
 |Anulação da associação ao Azure AD|Não.|Não.|O registo do Azure AD é removido.|O registo do Azure AD é removido.|
 
 > [!NOTE]
-> Para dispositivos Windows 10 que ingressam no Azure AD durante a configuração inicial (OOBE), o comando de desativação removerá todas as contas do Azure AD do dispositivo. Siga as etapas em [Iniciar seu computador no modo de segurança](https://support.microsoft.com/en-us/help/12376/windows-10-start-your-pc-in-safe-mode) para fazer logon como um administrador local e reobter o acesso aos dados locais do usuário. 
+> Para dispositivos Windows 10 que se juntem ao Azure AD durante a configuração inicial (OOBE), o comando de aposentadoria removerá todas as contas Azure AD do dispositivo. Siga os passos no [Start your PC em modo seguro](https://support.microsoft.com/en-us/help/12376/windows-10-start-your-pc-in-safe-mode) para iniciar sessão como administrador local e recuperar o acesso aos dados locais do utilizador. 
 
 ### <a name="retire"></a>Extinguir
 
@@ -166,7 +166,7 @@ Se pretender remover dispositivos do portal do Intune, poderá eliminá-los no p
 Pode configurar o Intune de forma a eliminar automaticamente dispositivos que parecem estar inativos, obsoletos ou sem resposta. Estas regras de limpeza monitorizam o inventário do seu dispositivo de forma contínua para que os registos do mesmo se mantenham atualizados. Os dispositivos eliminados desta forma são removidos da gestão do Intune.
 1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selecione **Dispositivos** > **Regras de limpeza do dispositivo** > **Sim**.
-3. Na caixa **excluir dispositivos que não fizeram check-in neste número de dias** , insira um número entre 30 e 270.
+3. Nos **dispositivos Delete que não tenham verificado esta** caixa de muitos dias, introduza um número entre 30 e 270.
 4. Escolha **Guardar**.
 
 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8452f840fb269505656bf6594d3e5c196b4d7a06
-ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
+ms.openlocfilehash: 9fa02a61148a03a64b88b38dcdc1799b30bc45db
+ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75885788"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76886739"
 ---
 # <a name="create-a-design"></a>Criar uma estrutura
 
@@ -109,7 +109,7 @@ Pode [transferir um modelo da tabela acima](https://gallery.technet.microsoft.co
 
 ## <a name="intune-tenant-location"></a>Localização de inquilinos do Intune
 
-Se a sua organização tiver uma presença global, quando subscrever o serviço, certifique-se de que planeia onde o seu inquilino reside. O país/região é definido quando você se inscreve para uma assinatura do Intune pela primeira vez e é mapeado para países/regiões em todo o mundo, listados abaixo:
+Se a sua organização tiver uma presença global, quando subscrever o serviço, certifique-se de que planeia onde o seu inquilino reside. O país/região é definido quando se inscreve pela primeira vez para uma subscrição Intune, e mapeia para países/regiões em todo o mundo, que estão listados abaixo:
 
 - América do Norte
 
@@ -118,7 +118,7 @@ Se a sua organização tiver uma presença global, quando subscrever o serviço,
 - Ásia e Pacífico
 
 >[!IMPORTANT]
-> Não é possível alterar o local do país/região e do locatário mais tarde.
+> Não é possível mudar a localização país/região e inquilino mais tarde.
 
 ## <a name="external-dependencies"></a>Dependências externas
 
@@ -130,7 +130,7 @@ As dependências externas são produtos e serviços que estão separados do Intu
 
 - Infraestrutura de chaves públicas (PKI)
 
-A seguir, exploraremos essas dependências externas comuns com mais detalhes.
+No seguinte, exploramos mais detalhadamente estas dependências externas comuns.
 
 ### <a name="identity"></a>Identidade
 
@@ -159,7 +159,7 @@ A infraestrutura de chaves públicas fornece certificados para dispositivos ou u
 
 Se estiver a planear utilizar certificados com VPN, Wi-Fi ou perfis de e-mail com o Intune, certifique-se de que tem uma [infraestrutura PKI suportada no local](../protect/certificates-configure.md), pronta para criar e implementar perfis de certificado.
 
-Além disso, se os perfis de certificado SCEP forem usados, você precisará determinar qual servidor hospedará o recurso NDES (serviço de registro de dispositivo de rede) e como a comunicação ocorrerá.
+Além disso, se os perfis de certificadoS SCEP forem utilizados, você precisa determinar qual o servidor que irá hospedar a funcionalidade Serviço de Inscrição de Dispositivos de Rede (NDES) e como a comunicação irá acontecer.
 
 Saiba mais sobre:
 
@@ -290,7 +290,7 @@ Os perfis de certificados permitem ao Intune emitir um certificado para um utili
 Recomendamos que documente que grupos de utilizadores precisam de um certificado, quantos perfis de certificado são necessários e para que grupos de utilizadores devem ser implementados.
 
 >[!NOTE]
-> Lembre-se de que o certificado raiz confiável é necessário para o perfil de certificado SCEP, portanto, certifique-se de que todos os usuários direcionados para o perfil de certificado SCEP também recebam um certificado raiz confiável. Se precisar de certificados SCEP, estruture e documente que modelos de certificados SCEP serão necessários.
+> Lembre-se de que o certificado de raiz fidedigno é necessário para o perfil do certificado SCEP, por isso certifique-se de que todos os utilizadores visados pelo perfil do certificado SCEP também recebem um certificado raiz fidedigno. Se precisar de certificados SCEP, estruture e documente que modelos de certificados SCEP serão necessários.
 
 Eis um exemplo de como pode documentar os certificados durante a estruturação:
 
@@ -308,7 +308,10 @@ Os perfis de Wi-Fi são utilizados para ligar automaticamente um dispositivo mó
 
 Segue-se um exemplo de uma estrutura de um perfil de Wi-Fi:
 
-| **tipo** | **nome do perfil** | **plataforma do dispositivo** | **casos de uso** | | Wi-Fi | Perfil Wi-Fi da Ásia | Android | Corporativo, região da Ásia BYOD | | Wi-Fi | América do Norte perfil de Wi-Fi | Android, iOS, Windows 10 Mobile | Corporativo, BYOD América do Norte região |
+| **Tipo** | **Nome do perfil** | **Plataforma de dispositivo** | **Casos de utilização** |
+|:---:|:---:|:---:|:---:|
+| Wi-Fi | Perfil de Wi-Fi na Ásia | Android | Empresarial, BYOD na região da Ásia|
+| Wi-Fi | Perfil de Wi-Fi da América do Norte | Android, iOS, Windows 10 Mobile | Empresarial, BYOD na região da América do Norte |
 
 Pode [transferir um modelo da tabela acima](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) para identificar as suas necessidades de perfis de Wi-Fi.
 
@@ -368,7 +371,7 @@ Uma vez que as aplicações podem ser implementadas para utilizadores e disposit
 
 As políticas de proteção de aplicações minimizam a perda de dados ao definir como a aplicação gere os dados empresariais. O Intune suporta políticas de proteção de aplicações para qualquer aplicação criada para funcionar com a gestão de aplicações móveis. Ao estruturar a política de proteção de aplicações, tem de decidir que restrições pretende atribuir aos dados empresariais numa determinada aplicação. Recomendamos que reveja como funcionam as [políticas de proteção de aplicações](../apps/app-protection-policy.md). Segue-se um exemplo de como documentar as aplicações existentes e que proteção é necessária.
 
-| **Aplicação** | **Objetivo** | **Plataformas** | **Caso de utilização** | **Política de proteção de aplicações** |
+| **Application** | **Objetivo** | **Plataformas** | **Caso de utilização** | **Política de proteção de aplicações** |
 |:---:|:---:|:---:|:---:|:---:|
 | Outlook Mobile  | Disponível | iOS | Empresarial – Executivos | Não pode ser desbloqueado por jailbreak, encriptar ficheiros |                                                         
 | Word | Disponível | iOS, Android – Samsung Knox, não Knox, Windows 10 Mobile | Empresarial, BYOD | Não pode ser desbloqueado por jailbreak, encriptar ficheiros |                                                         
@@ -377,7 +380,7 @@ As políticas de proteção de aplicações minimizam a perda de dados ao defini
 Pode [transferir um modelo da tabela acima](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) para identificar as suas necessidades de políticas de proteção de aplicações.
 #### <a name="compliance-policies"></a>Compliance políticas
 
-As políticas de conformidade determinam se um dispositivo cumpre determinados requisitos. O Intune utiliza políticas de conformidade para determinar se um dispositivo é considerado como estando ou não em conformidade. O estado de conformidade pode depois ser utilizado para restringir ou permitir o acesso a recursos da empresa. Se o acesso condicional for necessário, recomendamos que você projete uma [política de conformidade do dispositivo](../protect/device-compliance-get-started.md).
+As políticas de conformidade determinam se um dispositivo cumpre determinados requisitos. O Intune utiliza políticas de conformidade para determinar se um dispositivo é considerado como estando ou não em conformidade. O estado de conformidade pode depois ser utilizado para restringir ou permitir o acesso a recursos da empresa. Se for necessário acesso condicional, recomendamos que desenhe uma política de conformidade do [dispositivo.](../protect/device-compliance-get-started.md)
 
 Veja os requisitos e casos de utilização para determinar quantas políticas de conformidade do dispositivo são necessárias e quais são os grupos de utilizadores de destino. Além disso, terá de decidir durante quanto tempo um dispositivo pode estar offline sem dar entrada, antes de ser considerado como não estando em conformidade.
 
@@ -391,20 +394,20 @@ Segue-se um exemplo de como estruturar uma política de conformidade:
 Pode [transferir um modelo da tabela acima](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) para identificar as suas necessidade de políticas de conformidade.
 #### <a name="conditional-access-policies"></a>Políticas de acesso condicional
 
-O acesso condicional é usado para permitir que somente dispositivos em conformidade acessem email e outros recursos da empresa. O Intune funciona com o Enterprise Mobility + Security (EMS) para controlar o acesso aos recursos da empresa. Decida se você precisa de acesso condicional e o que deve ser protegido. Saiba mais sobre o [Acesso Condicional](../protect/conditional-access.md).
+O Acesso Condicional é utilizado para permitir que apenas dispositivos conformes acedam a emails e outros recursos da empresa. O Intune funciona com o Enterprise Mobility + Security (EMS) para controlar o acesso aos recursos da empresa. Decida se necessita de Acesso Condicional e o que deve ser garantido. Saiba mais sobre o [Acesso Condicional](../protect/conditional-access.md).
 
-Para acesso online, decida quais plataformas e grupos de usuários serão direcionados por políticas de acesso condicional. Além disso, determine se você precisa instalar ou configurar o conector do Intune para o Exchange local: 
+Para acesso online, decida quais as plataformas e grupos de utilizadores que irá direcionar através de políticas de Acesso Condicional. Além disso, determine se precisa de instalar ou configurar o conector Intune para troca no local: 
 
 - [Exchange no local](../protect/exchange-connector-install.md)
 
-Veja um exemplo de como documentar políticas de acesso condicional:
+Aqui está um exemplo de como documentar as políticas de Acesso Condicional:
 
 | **Serviço** | **Plataformas de Autenticação Moderna** | **Autenticação Básica** | **Casos de utilização** |
 |:---:|:---:|:---:|:---:|
 | Exchange online | iOS, Android | Bloquear dispositivos não conformes em plataformas suportadas pelo Intune | Empresarial, BYOD |
 | SharePoint Online | iOS, Android |  | Empresarial, BYOD |
 
-Você pode [baixar um modelo da tabela acima](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) para identificar suas necessidades de política de acesso condicional.
+Pode [descarregar um modelo da tabela acima](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) para identificar as suas necessidades de política de Acesso Condicional.
 
 ## <a name="next-steps"></a>Próximos passos
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/21/2020
+ms.date: 01/27/2020
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b8ade7676cb8f6265dd63eb1ba7847c50f526a9a
-ms.sourcegitcommit: 70b40aa4743c8396f8d6a0163893c4a337d67c48
+ms.openlocfilehash: 3502b1c1a73a9e98ed2901fc24dc69ab09136427
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76549339"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812445"
 ---
 # <a name="intune-app-installation-error-reference"></a>Referência de erro de instalação do aplicativo do Intune
 
@@ -90,9 +90,7 @@ As seguintes mensagens de erro e descrições fornecem detalhes sobre os erros d
 | 0x87D13B72 | -2016330894 | Você perdeu a conexão com a Internet.  | Falha na validação do manifesto de aplicativo devido à conectividade de rede (perda de conexão) |
 | 0x87D13B73 | -2016330893 | Você perdeu a conexão com a Internet.  | Falha na validação do manifesto de aplicativo devido à conectividade de rede (não conectada à Internet) |
 | 0x87D13B77 | -2016330889 | Falha na conexão segura.  | Falha na validação do manifesto de aplicativo devido à conectividade de rede (falha na conexão segura) |
-| 0x87D13B6F | -2016330897 |  |   |
 | 0x87D13B80 | -2016330880 | CannotConnectToITunesStoreError | Falha na instalação do aplicativo devido à falha na conexão da ITunes Store |
-| 0x87D13B6E | -2016330898 |   | Falha na validação do manifesto de aplicativo devido à conectividade de rede (desconhecida) |
 | 0x87D13B9F  | -2016330849 | O aplicativo VPP tem uma atualização disponível | Esse código é retornado quando um aplicativo VPP é instalado, mas há uma versão mais recente disponível. |
 
 ## <a name="other-installation-errors"></a>Outros erros de instalação
@@ -101,8 +99,8 @@ As seguintes mensagens de erro e descrições fornecem detalhes sobre os erros d
 |--------------------|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0x80073CFF | -2147009281 | (erro do cliente) | Para instalar este aplicativo, você deve ter um sistema habilitado para Sideload. Verifique se o pacote do aplicativo está assinado com uma assinatura confiável e instalado em um dispositivo ingressado no domínio que tenha a política AllowAllTrustedApps habilitada ou um dispositivo que tenha uma licença de Sideload do Windows com a política AllowAllTrustedApps habilitada. Para obter mais informações, consulte solução de problemas de empacotamento, implantação e consulta de aplicativos da Windows Store. |
 | 0x80CF201C  | -2133909476 | (erro do cliente) | Para instalar este aplicativo, você deve ter um sistema habilitado para Sideload. Verifique se o pacote do aplicativo está assinado com uma assinatura confiável e instalado em um dispositivo ingressado no domínio que tenha a política AllowAllTrustedApps habilitada ou um dispositivo que tenha uma licença de Sideload do Windows com a política AllowAllTrustedApps habilitada. Para obter mais informações, consulte solução de problemas de empacotamento, implantação e consulta de aplicativos da Windows Store. |
-| 0x80073CF0 | -2147009296 | O pacote não está assinado.     O nome do publicador não corresponde ao assunto do certificado de assinatura.     Verifique o log de eventos do AppxPackagingOM para obter informações. Para obter mais informações, consulte solução de problemas de empacotamento, implantação e consulta de aplicativos da Windows Store. | Não foi possível abrir o pacote. Causas possíveis: |
-| 0x80073CF3 | -2147009296 | O pacote de entrada está em conflito com um pacote instalado.     Não foi encontrada uma dependência de pacote especificada.     O pacote não suporta a arquitetura de processador correta.     Verifique o log de eventos do AppXDeployment-Server para obter informações. Para obter mais informações, consulte solução de problemas de empacotamento, implantação e consulta de aplicativos da Windows Store. | Falha na atualização, dependência ou validação de conflito do pacote. Causas possíveis: |
+| 0x80073CF0 | -2147009296 | O pacote não está assinado.     O nome do editor não corresponde ao sujeito do certificado de assinatura.     Verifique o log de eventos do AppxPackagingOM para obter informações. Para obter mais informações, consulte solução de problemas de empacotamento, implantação e consulta de aplicativos da Windows Store. | Não foi possível abrir o pacote. Causas possíveis: |
+| 0x80073CF3 | -2147009296 | O pacote de entrada está em conflito com um pacote instalado.     Não é encontrada uma dependência especificada do pacote.     O pacote não suporta a arquitetura correta do processador.     Verifique o log de eventos do AppXDeployment-Server para obter informações. Para obter mais informações, consulte solução de problemas de empacotamento, implantação e consulta de aplicativos da Windows Store. | Falha na atualização, dependência ou validação de conflito do pacote. Causas possíveis: |
 | 0x80073CFB | -2147009285 | Aumente o número de versão do aplicativo e, em seguida, recompile e assine novamente o pacote.     Remova o pacote antigo para cada usuário no sistema antes de instalar o novo pacote.     Para obter mais informações, consulte solução de problemas de empacotamento, implantação e consulta de aplicativos da Windows Store.      | O pacote fornecido já está instalado e a reinstalação do pacote está bloqueada. Você poderá receber esse erro se estiver instalando um pacote que não é idêntico ao pacote que já está instalado. Confirme se a assinatura digital também faz parte do pacote. Quando um pacote é recriado ou assinado novamente, esse pacote não é mais bit a bit idêntico ao pacote instalado anteriormente. Existem duas opções possíveis para corrigir este erro: |
 | 0x87D1041C | -2016345060 | O usuário final desinstalou o aplicativo.     As informações de identidade no pacote não correspondem aos relatórios de dispositivo para aplicativos ruins.     Para MSIs de atualização automática, a versão do produto não corresponde às informações do aplicativo depois que ele é atualizado fora do Intune.     Diga ao utilizador para reinstalar a aplicação a partir do portal da empresa. Observe que os aplicativos necessários serão reinstalados automaticamente quando o dispositivo fizer check-in. | Instalação do aplicativo bem-sucedida, mas o aplicativo não foi detectado. O aplicativo foi implantado com êxito pelo Intune e, subsequentemente, desinstalado. Os motivos para o aplicativo que está sendo desinstalado incluem: |
 | 0x8000FFFF | -2147418113 |   | Ocorreu um erro inesperado durante a instalação. Verifique os logs de instalação para obter informações adicionais. |

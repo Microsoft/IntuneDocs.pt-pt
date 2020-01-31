@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/19/2019
+ms.date: 01/28/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 81da5ca8e7eaa76f9a6705cc9e3c816234c461db
-ms.sourcegitcommit: af384c46ec8d8def6aa32c3b89947748dc6fd28f
+ms.openlocfilehash: 0dd1ecb5666b8bbb8b26a001be56372d86839f31
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76517563"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812322"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Configurações do dispositivo Windows 10 (e mais recente) para permitir ou restringir recursos usando o Intune
 
@@ -39,8 +39,11 @@ Essas configurações são adicionadas a um perfil de configuração de disposit
 
 Essas configurações usam o [CSP da política do ApplicationManagement](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement), que também lista as edições do Windows com suporte.
 
-- **Loja de aplicativos** (somente dispositivos móveis): **não configurado** (padrão) permite que os usuários finais acessem a loja de aplicativos em dispositivos móveis. **Bloquear** impede o uso da loja de aplicativos.
-- **Atualizar automaticamente os aplicativos da loja**: **não configurado** (padrão) permite que os aplicativos instalados do Microsoft Store sejam atualizados de forma automática. **Bloquear** impede que as atualizações sejam instaladas automaticamente.
+- Loja de **aplicações** (apenas para dispositivos móveis): **O bloco** impede que os utilizadores finais acedam à loja de aplicações em dispositivos móveis. Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração. Por padrão, o SISTEMA pode permitir aos utilizadores finais o acesso à loja de aplicações.
+- **Aplicações de atualização automática a partir da loja**: O **bloco** impede que as atualizações sejam instaladas automaticamente a partir da Microsoft Store. Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração. Por padrão, o SISTEMA pode permitir que as aplicações instaladas a partir da Microsoft Store sejam automaticamente atualizadas.
+
+  [Gestão de aplicações/PermitirAppStoreAutoUpdate CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowappstoreautoupdate)
+
 - **Instalação de aplicativo confiável**: escolha se os aplicativos não Microsoft Store podem ser instalados, também conhecidos como Sideload. O Sideload está sendo instalado e, em seguida, executando ou testando um aplicativo que não é certificado pelo Microsoft Store. Por exemplo, um aplicativo que é interno somente à sua empresa. As opções são:
   - **Não configurado** (padrão): o Intune não altera nem atualiza essa configuração.
   - **Bloquear**: impede o Sideload. Não é possível instalar aplicativos não Microsoft Store.
@@ -51,16 +54,36 @@ Essas configurações usam o [CSP da política do ApplicationManagement](https:/
   - **Permitir**: permite o modo de desenvolvedor e aplicativos de Sideload.
 
   [Habilitar seu dispositivo para desenvolvimento](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development) tem mais informações sobre esse recurso.
+  
+  [Gestão de aplicações/Permitir alltrustedapps CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowalltrustedapps)
 
-- **Dados de aplicativo de usuário compartilhados**: escolha **permitir** para compartilhar dados de aplicativo entre diferentes usuários no mesmo dispositivo e com outras instâncias desse aplicativo. **Não configurado** (padrão) impede o compartilhamento de dados com outros usuários e outras instâncias do mesmo aplicativo.
-- **Usar somente o repositório particular**: **permitir** que apenas os aplicativos sejam baixados de um armazenamento particular e não baixados do armazenamento público, incluindo um catálogo de varejo. **Não configurado** (padrão) permite que os aplicativos sejam baixados de um repositório particular e de um repositório público.
-- **Inicialização do aplicativo originado do repositório**: o **bloqueio** desabilita todos os aplicativos que foram pré-instalados no dispositivo ou baixados do Microsoft Store. **Não configurado** (padrão) permite que esses aplicativos sejam abertos.
-- **Instalar dados de aplicativo no volume do sistema**: **Bloquear** impede que os aplicativos armazenem dados no volume do sistema do dispositivo. **Não configurado** (padrão) permite que os aplicativos armazenem dados no volume de disco do sistema.
-- **Instalar aplicativos na unidade do sistema**: **Bloquear** impede que os aplicativos sejam instalados na unidade do sistema no dispositivo. **Não configurado** (padrão) permite que os aplicativos sejam instalados na unidade do sistema.
-- **DVR de jogos** (somente desktop): o **bloco** desabilita a gravação e a transmissão de jogos do Windows. **Não configurado** (padrão) permite a gravação e a difusão de jogos.
+- **Dados de aplicativo de usuário compartilhados**: escolha **permitir** para compartilhar dados de aplicativo entre diferentes usuários no mesmo dispositivo e com outras instâncias desse aplicativo. Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração. Por padrão, o SISTEMA pode impedir a partilha de dados com outros utilizadores e outros casos da mesma aplicação.
+
+  [Gestão de aplicações/permitiruseruserappdata cSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowshareduserappdata)
+
+- **Usar somente o repositório particular**: **permitir** que apenas os aplicativos sejam baixados de um armazenamento particular e não baixados do armazenamento público, incluindo um catálogo de varejo. Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração. Por padrão, o SISTEMA pode permitir que as aplicações sejam descarregadas de uma loja privada e de uma loja pública.
+
+  [Gestão de aplicações/RequerPrivateStore Only CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-requireprivatestoreonly)
+
+- **Inicialização do aplicativo originado do repositório**: o **bloqueio** desabilita todos os aplicativos que foram pré-instalados no dispositivo ou baixados do Microsoft Store. Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração. Por padrão, o SISTEMA pode permitir que estas aplicações se abram.
+
+  [ApplicationManagement/DisableStoreOriginadoApps CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-disablestoreoriginatedapps)
+
+- **Instalar dados de aplicativo no volume do sistema**: **Bloquear** impede que os aplicativos armazenem dados no volume do sistema do dispositivo. Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração. Por padrão, o SISTEMA pode permitir que as aplicações armazenem dados no volume do disco do sistema.
+
+  [Gestão de aplicações/restringir o volume de dados do sistema csp](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-restrictappdatatosystemvolume)
+
+- **Instalar aplicativos na unidade do sistema**: **Bloquear** impede que os aplicativos sejam instalados na unidade do sistema no dispositivo. Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração. Por padrão, o SISTEMA pode permitir que as aplicações se instalem na unidade do sistema.
+
+  [Gestão de aplicações/restringir o volume de aplicações csp](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-restrictapptosystemvolume)
+
+- **DVR de jogos** (somente desktop): o **bloco** desabilita a gravação e a transmissão de jogos do Windows. Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração. Por padrão, o SISTEMA pode permitir a gravação e transmissão de jogos.
+
+  [Gestão de aplicações/permitirGameDVR CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowgamedvr)
+
 - **Aplicativos somente da loja**: essa configuração determina a experiência do usuário quando os usuários instalam aplicativos de locais diferentes do Microsoft Store. As opções são:
 
-  - **Não configurado** (padrão): permite que os usuários finais instalem aplicativos de locais diferentes do Microsoft Store, incluindo aplicativos definidos em outras configurações de política.  
+  - **Não configurado** (padrão): o Intune não altera nem atualiza essa configuração. Por padrão, o OS poderá permitir que os utilizadores finais instalem aplicações de outros locais que não a Microsoft Store, incluindo aplicações definidas noutras definições de política.  
   - **Em qualquer lugar**: desativa as recomendações do aplicativo e permite que os usuários instalem aplicativos de qualquer local.  
   - **Somente armazenar**: força os usuários finais a instalar somente aplicativos do Microsoft Store.
   - **Recomendações**: ao instalar um aplicativo da Web que está disponível no Microsoft Store, os usuários veem uma mensagem recomendando que eles o baixem da loja.  
@@ -68,11 +91,11 @@ Essas configurações usam o [CSP da política do ApplicationManagement](https:/
 
   [CSP do SmartScreen/EnableAppInstallControl](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen#smartscreen-enableappinstallcontrol)
 
-- **Controle do usuário sobre instalações**: quando definido como **não configurado** (padrão), Windows Installer impedir que os usuários alterem as opções de instalação normalmente reservadas para administradores do sistema, como inserir o diretório para instalar os arquivos. **Bloquear** permite que os usuários alterem essas opções de instalação e alguns dos recursos de segurança de Windows Installer são ignorados.
+- **Controlo do utilizador sobre instalações**: **O bloco** impede que os utilizadores mudem as opções de instalação normalmente reservadas aos administradores do sistema, tais como a introdução do diretório para instalar os ficheiros. Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração. Por defeito, o Instalador do Windows poderá impedir que os utilizadores mudem estas opções de instalação e algumas das funcionalidades de segurança do Instalador do Windows são ignoradas.
 
   [CSP ApplicationManagement/MSIAllowUserControlOverInstall](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-msiallowusercontroloverinstall)
 
-- **Instalar aplicativos com privilégios elevados**: quando definido como **não configurado** (padrão), o sistema aplica as permissões do usuário atual quando instala programas que um administrador do sistema não implanta ou oferece. O **bloco** instrui Windows Installer a usar permissões elevadas ao instalar qualquer programa no sistema. Esses privilégios são estendidos para todos os programas.
+- **Instale aplicações com privilégios elevados**: **O Block** direciona o Instalador do Windows para utilizar permissões elevadas quando instala qualquer programa no sistema. Esses privilégios são estendidos para todos os programas. Quando definido como **não configurado** (padrão), o Intune não altera nem atualiza essa configuração. Por predefinição, o sistema pode aplicar as permissões do utilizador atual quando instala programas que um administrador do sistema não implementa ou oferece. 
 
   [CSP ApplicationManagement/MSIAlwaysInstallWithElevatedPrivileges](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-msialwaysinstallwithelevatedprivileges)
 
@@ -232,7 +255,7 @@ Essas configurações usam o [CSP da política de experiência](https://docs.mic
 
 - **URL da imagem da tela bloqueada (somente desktop)** : Insira a URL para uma imagem no formato jpg, JPEG ou png que é usado como o papel de parede da tela de bloqueio do Windows. Por exemplo, introduza `https://contoso.com/image.png`. Essa configuração bloqueia a imagem e não pode ser alterada posteriormente.
 
-  [CSP de personalização/LockScreenImageUrl](https://docs.microsoft.com/en-us/windows/client-management/mdm/personalization-csp)
+  [CSP de personalização/LockScreenImageUrl](https://docs.microsoft.com/windows/client-management/mdm/personalization-csp)
 
 - **Tempo limite de tela configurável pelo usuário (somente dispositivos móveis)** : **permitir** permite que os usuários configurem o tempo limite da tela. **Não configurado** (padrão) não dá aos usuários essa opção.
 
@@ -340,7 +363,7 @@ Esse perfil de restrições de dispositivo está diretamente relacionado ao perf
   - Mecanismo de pesquisa nas configurações do Microsoft Edge do cliente
   - Bing
   - Google
-  - Yahoo
+  - Rio Yahoo
   - Valor personalizado: na **URL XML de OpenSearch**, insira uma URL HTTPS com o arquivo XML que inclui o nome curto e a URL para o mecanismo de pesquisa, no mínimo. Por exemplo, introduza `https://www.contoso.com/opensearch.xml`.
 - **Mostrar sugestões de pesquisa**: **Sim** (padrão) permite que o mecanismo de pesquisa sugira sites à medida que você digita frases de pesquisa na barra de endereços. **Não** impede esse recurso.
 - **Permitir alterações no mecanismo de pesquisa**: **Sim** (padrão) permite que os usuários adicionem novos mecanismos de pesquisa ou altere o mecanismo de pesquisa padrão no Microsoft Edge. Escolha **não** para impedir que os usuários personalizem o mecanismo de pesquisa.
@@ -370,7 +393,7 @@ Quando "bloquear e habilitar substituição de usuário" está selecionado, o us
 - **Permitir coleta de dados de bloco dinâmico**: **Sim** (padrão) permite que o Microsoft Edge colete informações de blocos dinâmicos fixados no menu iniciar. **Não** impede a coleta dessas informações, o que pode fornecer aos usuários uma experiência limitada.
 - O **usuário pode substituir erros de certificado**: **Sim** (padrão) permite que os usuários acessem sites que têm erros de protocolo SSL/TLS (segurança de camada de transporte). **Não** (recomendado para maior segurança) impede que os usuários acessem sites com erros SSL ou TLS.
 
-### <a name="additional"></a>Servidor de
+### <a name="additional"></a>Adicional
 
 - **Permitir navegador Microsoft Edge** (somente dispositivos móveis): **Sim** (padrão) permite usar o navegador da Web Microsoft Edge no dispositivo móvel. **Não** impede o uso do Microsoft Edge no dispositivo. Se você escolher **não**, as outras configurações individuais se aplicarão somente ao desktop.
 - **Permitir lista suspensa de barra de endereços**: **Sim** (padrão) permite que o Microsoft Edge mostre o menu suspenso da barra de endereços com uma lista de sugestões. **Não** impede o Microsoft Edge de mostrar uma lista de sugestões em uma lista suspensa quando você digita. Quando definido como **não**, você:
@@ -874,7 +897,7 @@ Essas configurações usam o [CSP de política do defender](https://docs.microso
 
 ### <a name="microsoft-defender-antivirus-exclusions"></a>Exclusões do Microsoft defender antivírus
 
-- **Arquivos e pastas a serem excluídos das verificações e da proteção em tempo real**: Adiciona um ou mais arquivos e pastas como **C:\Path** ou **%ProgramFiles%\Path\filename.exe** à lista de exclusões. Estes ficheiros e pastas não são incluídos em análises em tempo real ou agendadas.
+- **Ficheiros e pastas para excluir de digitalizações e proteção em tempo real**: Adiciona um ou mais ficheiros e pastas como **C:\Path** ou **%ProgramFiles%\Path\filename.exe** à lista de exclusões. Estes ficheiros e pastas não são incluídos em análises em tempo real ou agendadas.
 - **Extensões de arquivo a serem excluídas de verificações e proteção em tempo real**: Adicione uma ou mais extensões de arquivo, como **jpg** ou **txt** , à lista de exclusões. Todos os arquivos com essas extensões não são incluídos em verificações em tempo real ou programadas.
 - **Processos a serem excluídos de verificações e proteção em tempo real**: Adicione um ou mais processos do tipo **. exe**, **. com**ou **. scr** à lista de exclusões. Esses processos não estão incluídos em verificações em tempo real ou programadas.
 
@@ -882,7 +905,7 @@ Essas configurações usam o [CSP de política do defender](https://docs.microso
 
 ### <a name="battery"></a>Bateria
 
-- **Nível da bateria para ativar a economia de energia**: quando o dispositivo estiver usando energia da bateria, insira o nível de carga da bateria para ativar a economia de energia de 0-100. Insira um valor percentual que indica o nível de carga da bateria. O valor padrão é 70%. Quando definido como 70%, a economia de energia é ativada quando a bateria tem 70% de encargo ou menos disponível.
+- **Nível da bateria para ativar a economia de energia**: quando o dispositivo estiver usando energia da bateria, insira o nível de carga da bateria para ativar a economia de energia de 0-100. Insira um valor percentual que indica o nível de carga da bateria. O valor por defeito é de 70%. Quando definido para 70%, energy saver liga quando a bateria tem 70% de carga ou menos disponível.
 
   [CSP de energia/EnergySaverBatteryThresholdOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdonbattery)
 
@@ -922,7 +945,7 @@ Essas configurações usam o [CSP de política do defender](https://docs.microso
 
 ### <a name="pluggedin"></a>PluggedIn
 
-- **Nível da bateria para ativar a economia de energia**: quando o dispositivo estiver conectado, insira o nível de carga da bateria para ativar a economia de energia de 0-100. Insira um valor percentual que indica o nível de carga da bateria. O valor padrão é 70%. Quando definido como 70%, a economia de energia é ativada quando a bateria tem 70% de encargo ou menos disponível.
+- **Nível da bateria para ativar a economia de energia**: quando o dispositivo estiver conectado, insira o nível de carga da bateria para ativar a economia de energia de 0-100. Insira um valor percentual que indica o nível de carga da bateria. O valor por defeito é de 70%. Quando definido para 70%, energy saver liga quando a bateria tem 70% de carga ou menos disponível.
 
   [CSP de energia/EnergySaverBatteryThresholdPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdpluggedin)
 

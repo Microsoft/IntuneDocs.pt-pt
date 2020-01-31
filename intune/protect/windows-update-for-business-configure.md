@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/24/2020
+ms.date: 01/29/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -15,12 +15,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: beafee4eb22d641748ca41f8f4c01c48ead87741
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: e478402f826809bda4f81315d5a1a4ff6e1a8b88
+ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76754342"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76886797"
 ---
 # <a name="manage-windows-10-software-updates-in-intune"></a>Gerenciar atualizações de software do Windows 10 no Intune
 
@@ -92,7 +92,7 @@ Os anéis de atualização do Windows 10 dão suporte a [marcas de escopo](../fu
 
 6. Em **atribuições**, escolha **+ Selecionar grupos para incluir** e, em seguida, atribua o anel de atualização a um ou mais grupos. Use **+ selecione grupos para excluir** para ajustar a atribuição. Selecione **Next** para continuar.
 
-7. Em**Review + criar**, reveja as definições e, em seguida, selecione **Criar** quando estiver pronto para guardar o seu anel de atualização do Windows 10. O novo anel de atualização é exibido na lista de anéis de atualização.
+7. Em **Review + criar**, reveja as definições e, em seguida, selecione **Criar** quando estiver pronto para guardar o seu anel de atualização do Windows 10. O novo anel de atualização é exibido na lista de anéis de atualização.
 
 ### <a name="manage-your-windows-10-update-rings"></a>Gerenciar seus anéis de atualização do Windows 10
 
@@ -234,7 +234,7 @@ Os seguintes pré-requisitos devem ser cumpridos para utilizar as atualizações
 
 5. Em **revisão + criar**, examine as configurações e selecione **criar** quando estiver pronto para salvar a política de atualizações de recursos do Windows 10.  
 
-### <a name="manage-windows-10-feature-updates"></a>Gerenciar atualizações de recursos do Windows 10
+### <a name="manage-windows-10-feature-updates"></a>Gerir atualizações de funcionalidades do Windows 10
 
 No centro de administração, vá para **dispositivos** > atualizações de recursos **do Windows > ** **Windows 10** e selecione a política que você deseja gerenciar. A política é aberta para seu painel de **visão geral** .
 
@@ -244,10 +244,12 @@ Nesse painel, você pode:
 - Selecione **Propriedades** para modificar a implantação.  No painel *Propriedades* , selecione **Editar** para abrir as *configurações ou atribuições de implantação*, onde você pode modificar a implantação.
 - Selecione **status de atualização do usuário final** para exibir informações sobre a política.
 
+## <a name="validation-and-reporting-for-windows-10-updates"></a>Validação e reportagens para atualizações do Windows 10
+
+Para ambos os anéis de atualização do Windows 10 e atualizações de funcionalidades do Windows 10, utilize relatórios de [conformidade intune para atualizações](../windows-update-compliance-reports.md) para monitorizar o estado da atualização dos dispositivos. Esta solução utiliza a Conformidade da [Atualização](https://docs.microsoft.com/windows/deployment/update/update-compliance-monitor) com a sua subscrição Azure.
+
 ## <a name="next-steps"></a>Próximos passos
 
 [Configurações do Windows Update com suporte pelo Intune](../windows-update-settings.md)
-
-[Relatórios de conformidade do Intune para atualizações](../windows-update-compliance-reports.md)
 
 [Solução de problemas de anéis de atualização do Windows 10](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Troubleshooting-Windows-10-Update-Ring-Policies/ba-p/714046)
