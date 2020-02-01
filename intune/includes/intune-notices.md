@@ -7,30 +7,30 @@ ms.topic: include
 ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: e745290991da4d80c7e3839250edbfdd64ef1b7a
-ms.sourcegitcommit: 01c57ac880dcb5f474908977c89810f5bedaf326
+ms.openlocfilehash: 9aa82268fb02f5124e48eb303f19cf32be02c284
+ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75760976"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912642"
 ---
 Esses avisos fornecem informações importantes que podem ajudá-lo a se preparar para futuras alterações e recursos do Intune.
 
-### <a name="updated-feature-new-rbac-role-coming-to-intune--4253397--"></a>Recurso atualizado: nova função RBAC chegando ao Intune<!--4253397-->
-Na atualização de serviço do Intune de Janeiro, planejamos lançar uma nova função de segurança no Intune. Você verá essa função listada como "Gerenciador de segurança de ponto de extremidade" no Intune e a função é uma expansão da função "administrador de segurança" do Azure AD.
+### <a name="updated-feature-new-rbac-role-coming-to-intune--4253397--"></a>Funcionalidade atualizada: Nova função RBAC chegando a Intune<!--4253397-->
+Na atualização de serviços intune de janeiro, planeamos lançar um novo papel de segurança no Intune. Você verá este papel listado como "Endpoint Security Manager" em Intune e o papel é uma expansão do papel de "Administrador de Segurança" da Azure AD.
  
 #### <a name="how-does-this-affect-me"></a>Como é que isto me afeta?
-Hoje, há três funções disponíveis no Azure AD para seus profissionais de segurança:
-- Função de leitor de segurança no Azure AD que fornece acesso somente leitura ao Intune.
-- Função de operador de segurança no Azure AD que fornece acesso somente leitura ao Intune.
-- Administrador de segurança no Azure AD. Quando o Intune envia a atualização de Janeiro, juntamente com as permissões somente leitura para o Intune, as novas permissões fornecidas pela função Endpoint Security Manager são as seguintes:
-    - Ler, criar, atualizar, excluir e atribuir políticas de conformidade do dispositivo
-    - Ler, excluir e atualizar dispositivos gerenciados
-    - Ler, criar, atualizar, excluir e atribuir linhas de base de segurança
+Hoje existem três funções disponíveis em Azure AD para os seus profissionais de segurança:
+- Papel do Leitor de Segurança em Azure AD, que dá acesso apenas a Intune.
+- Papel do Operador de Segurança na AD Azure, que dá acesso apenas a Intune.
+- Administrador de Segurança em Azure AD. Quando a Intune envia a atualização de janeiro, juntamente com permissões apenas de leitura para Intune, as novas permissões fornecidas pelo papel de Gestor de Segurança endpoint são as seguintes:
+    - Ler, Criar, Atualizar, Excluir e Atribuir Políticas de Conformidade de Dispositivos
+    - Ler, Eliminar e atualizar dispositivos geridos
+    - Ler, Criar, Atualizar, Excluir e Atribuir linhas de segurança
     - Ler e atualizar tarefas de segurança
  
 ### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>O que preciso de fazer para me preparar para esta alteração?
-Examine suas funções de RBAC do Intune hoje mesmo. Se atualmente você tiver apenas administradores globais como funções, não haverá nenhuma alteração necessária. Se você usar funções e quiser a granularidade que o Gerenciador de segurança de ponto de extremidade fornece, atribua essa função quando ela estiver disponível. Verifique a página [novidades do](../fundamentals/whats-new.md) Intune para obter informações atualizadas sobre a versão do Intune. 
+Reveja hoje as suas funções Intune RBAC. Se atualmente apenas tem a Global Admins como papéis, então não são necessárias alterações. Se usar papéis, e quiser a granularidade que o Gestor de Segurança endpoint proporciona, então atribua esse papel quando estiver disponível. Consulte a página Intune [What's New](../fundamentals/whats-new.md) para obter informações atualizadas sobre o lançamento do Intune. 
 
 ### <a name="updated-support-statement-for-adobe-acrobat-reader-for-intune-mobile-app--5746776--"></a>Foi atualizada a instrução de suporte para o aplicativo móvel ' Adobe Acrobat Reader for Intune '<!--5746776-->
 Compartilhamos em MC188653 no final de agosto, que o Adobe Acrobat Reader para o aplicativo móvel do Intune estava atingindo o fim da vida útil em 1º de dezembro de 2019 e que a Adobe estava planejando dar suporte às políticas de proteção de aplicativo do Intune em seu aplicativo do Acrobat Reader principal. Desde então, recebemos comentários dos clientes que precisávamos fornecer mais tempo para continuar permitindo que os administradores de ti direcionem e os usuários finais comecem a usar o Adobe Acrobat Reader para Intune. Devido ao alto uso do Adobe Acrobat Reader para Intune em dispositivos de usuário final e sua importância em cenários empresariais, queremos garantir que qualquer experiência atenda às necessidades de proteção do aplicativo da sua organização. 
@@ -51,46 +51,32 @@ https://helpx.adobe.com/acrobat/kb/intune-app-end-of-life.html
 O suporte principal da Microsoft para o Windows Phone 8,1 foi encerrado em 2017 de julho e o suporte estendido terminou em 2019 de junho. O aplicativo Portal da Empresa para Windows Phone 8,1 esteve no modo de manutenção, desde 2017 de outubro. Microsoft Intune agora terminará o suporte em 20 de fevereiro de 2020 para Windows Phone 8,1.
 
 #### <a name="how-does-this-affect-me"></a>Como é que isto me afeta?
-Após 20 de fevereiro de 2020, esses dispositivos não receberão nenhuma atualização de segurança e você não poderá registrar nenhum dispositivo novo. Os dispositivos Windows Phone 8,1 existentes permanecerão registrados (política, aplicativos, relatórios), mas observe que qualquer solução de problemas de um registro existente não terá suporte após essa data, pois muitos componentes, como certificados de terceiros, já terminaram o suporte para o plataforma. O Intune irá parar o teste de compatibilidade com o Intune e Windows Phone 8,1.
+Após 20 de fevereiro de 2020, esses dispositivos não receberão nenhuma atualização de segurança e você não poderá registrar nenhum dispositivo novo. Os dispositivos existentes do Windows Phone 8.1 permanecerão matriculados (política, apps, reportagens), mas note que qualquer resolução de problemas de uma inscrição existente não será suportada após esta data, uma vez que muitos componentes, como certificados de terceiros, já terminaram o suporte para o plataforma. O Intune irá parar o teste de compatibilidade com o Intune e Windows Phone 8,1.
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>O que preciso de fazer para me preparar para esta alteração?
 Você pode verificar seus relatórios do Intune para ver quais dispositivos ou usuários podem ser afetados. Aceda a Dispositivos > Todos os dispositivos e filtre por SO. Você pode adicionar colunas adicionais para ajudar a identificar quem em sua organização tem dispositivos em execução Windows Phone 8,1. Solicite que os usuários finais atualizem seus dispositivos para uma versão do sistema operacional com suporte.
 
 
-### <a name="take-action-use-microsoft-edge-for-your-protected-intune-browser-experience--5728447--"></a>Agir: Use o Microsoft Edge para sua experiência de navegador do Intune protegida<!--5728447-->
-Como estamos compartilhando no ano passado, o Microsoft Edge Mobile dá suporte ao mesmo conjunto de recursos de gerenciamento que o Managed Browser, oferecendo, ao mesmo tempo, uma experiência de usuário final muito aprimorada. Para ter uma forma de experiências robustas fornecidas no Microsoft Edge, iremos desativar o Intune Managed Browser. A partir de janeiro de 27, 2020, o Intune não dará mais suporte à Intune Managed Browser.  
+### <a name="take-action-use-microsoft-edge-for-your-protected-intune-browser-experience--5728447--"></a>Tomar medidas: Use microsoft edge para a sua experiência de navegador intune protegida<!--5728447-->
+Como temos vindo a partilhar ao longo do último ano, o microsoft Edge mobile suporta o mesmo conjunto de funcionalidades de gestão que o Managed Browser, ao mesmo tempo que proporciona uma experiência de utilizador final muito melhorada. Para dar lugar às experiências robustas fornecidas no Microsoft Edge, vamos retirar o Navegador Gerido Intune. A partir de 27 de janeiro de 2020, a Intune deixará de suportar o Navegador Gerido Intune.  
 
 #### <a name="how-does-this-affect-me"></a>Como é que isto me afeta? 
-A partir de 1º de fevereiro de 2020, o Intune Managed Browser não estará mais disponível na Google Play Store ou na loja de aplicativos do iOS. Neste ponto, você ainda será capaz de direcionar novas políticas de proteção de aplicativo para a Intune Managed Browser, embora novos usuários não possam baixar o aplicativo Intune Managed Browser. Além disso, no iOS, novos clipes da Web que são enviados para o dispositivo inscrito no MDM serão abertos no Microsoft Edge em vez do Intune Managed Browser.  
+A partir de 1 de fevereiro de 2020, o Navegador Gerido Intune deixará de estar disponível na Google Play Store ou na App Store iOS. Neste ponto, você ainda será capaz de direcionar novas políticas de proteção de aplicativo para a Intune Managed Browser, embora novos usuários não possam baixar o aplicativo Intune Managed Browser. Além disso, no iOS, novos clips web que são empurrados para baixo para dispositivo sinuoso serão abertos no Microsoft Edge em vez do Navegador Gerido Intune.  
 
-Em março de 31 2020, a Intune Managed Browser será removida do console do Azure. Isso significa que você não poderá mais criar novas políticas para o Intune Managed Browser. Se você tiver políticas de Intune Managed Browser existentes em vigor, elas não serão afetadas. O Intune Managed Browser aparecerá no console como um aplicativo LOB sem ícone, e as políticas existentes serão mostradas como direcionadas para o aplicativo ainda. Neste ponto, também removeremos a opção de redirecionar o conteúdo da Web para o Intune Managed Browser na seção proteção de dados das políticas de proteção do aplicativo.  
+No dia 31 de março de 2020, o Navegador Gerido Intune será removido da consola Azure. Isto significa que já não será capaz de criar novas políticas para o Navegador Gerido intune. Se você tiver políticas de Intune Managed Browser existentes em vigor, elas não serão afetadas. O Intune Managed Browser aparecerá na consola como uma aplicação LOB sem ícone, e as políticas existentes mostrarão como direcionados para a app ainda. Neste ponto, também removeremos a opção de redirecionar conteúdo web para o Navegador Gerido Intune dentro da secção de Proteção de Dados das políticas de proteção de Aplicações.  
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>O que preciso de fazer para me preparar para esta alteração? 
-Para garantir uma transição tranqüila do Intune Managed Browser para o Microsoft Edge, recomendamos que você execute as seguintes etapas proativamente: 
+Para garantir uma transição suave do Navegador Gerido Intune para o Microsoft Edge, recomendamos que tome os seguintes passos de forma proativa: 
 
-1. Direcione o Microsoft Edge para iOS e Android com política de proteção de aplicativo (também conhecida como MAM) e definições de configuração de aplicativo. Você pode reutilizar suas políticas de Intune Managed Browser para o Microsoft Edge direcionando essas políticas existentes para o Microsoft Edge também.  
-2. Verifique se todos os aplicativos protegidos por MAM em seu ambiente têm a configuração de política de proteção de aplicativo "restringir a transferência de conteúdo da Web com outros aplicativos" definida como "navegadores gerenciados por política". 
-3. Direcione todos os MAM protegidos com a configuração de aplicativo gerenciado "com. Microsoft. Intune. useEdge" definida como true. A partir do próximo mês com o lançamento do 1911, você poderá realizar as etapas 2 e 3 simplesmente definindo a configuração "restringir a transferência de conteúdo da Web com outros aplicativos" para que o "Microsoft Edge" seja selecionado na seção proteção de dados de suas políticas de proteção de aplicativo . 
+1. Target Microsoft Edge para iOS e Android com política de proteção de aplicações (também referida como MAM) e definições de config de aplicações. Você pode reutilizar suas políticas de Intune Managed Browser para o Microsoft Edge direcionando essas políticas existentes para o Microsoft Edge também.  
+2. Certifique-se de que todas as aplicações protegidas pelo MAM no seu ambiente têm a definição de política de proteção de aplicações "Restringir a transferência de conteúdos web com outras aplicações" definida para "Navegadores geridos pela política". 
+3. Direcione todos os MAM protegidos com a configuração de configuração de aplicação gerida "com.microsoft.intune.useEdge" definida como verdadeira. A partir do próximo mês com o lançamento de 1911, poderá realizar os passos 2 e 3 simplesmente configurando a definição de "Restringir a transferência de conteúdos web com outras aplicações" para ter "Microsoft Edge" selecionado na secção de Proteção de Dados das suas políticas de proteção de aplicações . 
 
-O suporte para clipes da Web no iOS e no Android está chegando. Quando esse suporte for lançado, você precisará redirecionar os clipes da Web pré-existentes para garantir que eles sejam abertos no Microsoft Edge em vez da Managed Browser. 
-
-#### <a name="additional-information"></a>Informações adicionais
-Visite nossos documentos sobre como [usar o Microsoft Edge com políticas de proteção de aplicativo](../apps/manage-microsoft-edge.md) para obter mais informações ou veja nossa [postagem no blog de suporte](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Use-Microsoft-Edge-for-your-Protected-Intune-Browser-Experience/ba-p/1004269).
-
-### <a name="plan-for-change-updated-experience-when-enrolling-android-enterprise-dedicated-devices-in-intune--5198878--"></a>Planejar alterações: experiência atualizada ao registrar dispositivos Android Enterprise dedicados no Intune<!--5198878-->
-Com a versão de novembro ou 1911 do Intune, estamos adicionando suporte para implantação de certificado de dispositivo SCEP em dispositivos Android Enterprise dedicados para habilitar o acesso baseado em certificado a perfis de Wi-Fi. Essa alteração também envolve algumas alterações secundárias no fluxo ao registrar dispositivos Android Enterprise dedicados.
-
-#### <a name="how-does-this-affect-me"></a>Como é que isto me afeta?
-Se você gerenciar dispositivos Android Enterprise dedicados em seu ambiente, você começará a ver algumas alterações distribuídas em novembro.
-
-- Para novos registros de dispositivo do Android Enterprise dedicado: os usuários finais verão um conjunto diferente de etapas nos dispositivos durante o registro. O registro ainda será iniciado da maneira como faz hoje (com QR, NFC, Zero-Touch ou identificador de dispositivo), mas após a versão de novembro do serviço, haverá uma etapa de instalação de aplicativo obrigatória.
-- Para dispositivos Android existentes registrados como dispositivos dedicados: o Intune começará a instalar automaticamente o aplicativo Microsoft Intune nos dispositivos, começando no início de novembro. Você não precisa realizar nenhuma ação. O aplicativo será baixado e instalado automaticamente em dispositivos. 
-
-#### <a name="what-can-i-do-to-prepare-for-this-change"></a>O que posso fazer para me preparar para esta alteração?
-Você deve planejar a atualização das diretrizes do usuário final e permitir que sua assistência técnica conheça essa alteração. Clique em informações adicionais para obter mais detalhes e capturas de tela. Atualizaremos a página de novidades quando essa alteração começar a ser distribuída.
+Está a chegar suporte para web clips no iOS e Android. Quando este suporte for lançado, terá de redirecionar os web clips pré-existentes para garantir que se abrem no Microsoft Edge em vez do Navegador Gerido. 
 
 #### <a name="additional-information"></a>Informações adicionais
-[https://aka.ms/Dedicated_devices_enrollment](https://aka.ms/Dedicated_devices_enrollment)
+Visite os nossos médicos ao utilizar o Microsoft Edge com políticas de [proteção de aplicações](../apps/manage-microsoft-edge.md) para mais informações, ou veja o nosso post de blog de [suporte](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Use-Microsoft-Edge-for-your-Protected-Intune-Browser-Experience/ba-p/1004269).
+
 
 ### <a name="end-of-support-for-legacy-pc-management"></a>Fim do suporte para o gerenciamento de PC herdado
 
@@ -106,7 +92,7 @@ Devido a essas alterações feitas pelo Google, os usuários do Intune serão af
 - O Intune só poderá fornecer suporte completo para dispositivos Android gerenciados pelo administrador do dispositivo que executam o Android 10 e posterior por meio do Q2 CY2020. Dispositivos gerenciados pelo administrador do dispositivo que executam o Android 10 ou posterior após esse período não poderão ser totalmente gerenciados. Em particular, os dispositivos afetados não receberão novos requisitos de senha.
     - Os dispositivos Samsung Knox não serão afetados neste período porque o suporte estendido é fornecido por meio da integração do Intune com a plataforma Knox. Isso lhe dá mais tempo para planejar a transição do gerenciamento de administradores de dispositivos.    
 - Os dispositivos Android gerenciados pelo administrador do dispositivo que permanecem em versões do Android abaixo do Android 10 não serão afetados e poderão continuar sendo totalmente gerenciados com o administrador do dispositivo.    
-- Para todos os dispositivos que executam o Android 10 e posterior, o Google restringiu a capacidade para que os agentes de gerenciamento de administrador de dispositivos, como Portal da Empresa, acessem informações de identificador de dispositivo. Essa restrição afeta os seguintes recursos do Intune após uma atualização do dispositivo para Android 10 ou posterior:  
+- Para todos os dispositivos que executam o Android 10 e posterior, o Google restringiu a capacidade para que os agentes de gerenciamento de administrador de dispositivos, como Portal da Empresa, acessem informações de identificador de dispositivo. Esta restrição afeta as seguintes funcionalidades Intune depois de um dispositivo ser atualizado para o Android 10 ou posteriormente:  
     - O controle de acesso à rede para VPN não funcionará mais.   
     - Identificar dispositivos como corporativos com um número de série ou IMEI não marcará automaticamente os dispositivos como corporativos.  
     - O IMEI e o número de série não estarão mais visíveis para os administradores de ti no Intune. 
@@ -156,8 +142,8 @@ Incentivamos sua organização a considerar imediatamente este plano de ação:
 - Planeje e atualize o Windows 7 frota para o Windows 10 antes de 14 de janeiro de 2020.
 - Explore o [suporte à implantação do Windows 10](https://docs.microsoft.com/windows/deployment/) para saber mais sobre como atualizar sua frota existente de PCs com Windows 7 para o Windows 10.
 - Examine o [aplicativo de desktop garanta](https://www.microsoft.com/fasttrack/microsoft-365/desktop-app-assure?rtc=1) a oferta por meio do FastTrack, que ajudará com a promessa de compatibilidade de aplicativos da Microsoft.
-- Migre os dispositivos gerenciados de cliente de software do Intune herdados existentes para a solução recomendada pela Microsoft para gerenciar o Windows 10 usando o gerenciamento de MDM. Registre todos os novos computadores Windows 10 usando o gerenciamento de MDM para Intune no portal do Azure.
+- Transição existente legado software Intune dispositivos geridos por clientes para a solução recomendada pela Microsoft para gerir o Windows 10 usando a gestão do MDM. Registre todos os novos computadores Windows 10 usando o gerenciamento de MDM para Intune no portal do Azure.
 
-Consulte a [postagem do blog aqui](https://aka.ms/Windows7_Intune) para obter mais informações.
+Para mais informações, consulte a publicação do [blog aqui](https://aka.ms/Windows7_Intune).
 
 

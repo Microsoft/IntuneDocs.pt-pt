@@ -18,19 +18,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f6c28b222307ee20e3198033ef6aa4af3d756e7e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 19c1bb959212ebeaea40f7089cba5533b6efeb71
+ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72681320"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912612"
 ---
 # <a name="set-up-symantec-endpoint-protection-mobile-integration-with-intune"></a>Configurar a integração do Symantec Endpoint Protection Mobile com o Intune
 
 Conclua os seguintes passos para integrar a solução Symantec Endpoint Protection Mobile (SEP Mobile) com o Intune. Tem de adicionar aplicações do SEP Mobile ao Azure AD para ter capacidades de Início de Sessão Único.
 
 > [!NOTE]
-> Este fornecedor de defesa contra ameaças móveis não tem suporte para dispositivos não registrados.
+> Este fornecedor de Defesa de Ameaças Móveis não é suportado para dispositivos não matriculados.
 
 ## <a name="before-you-begin"></a>Antes de começar
 
@@ -40,9 +40,9 @@ Conclua os seguintes passos para integrar a solução Symantec Endpoint Protecti
 - A conta do Azure AD tem de ser uma conta de administrador global para realizar a integração.
 ### <a name="network-setup"></a>Configuração da Rede
 
-Para confirmar se a sua rede está configurada corretamente para a integração com a configuração do SEP Mobile, consulte o artigo da Symantec [Setting up your network configuration](https://portal.skycure.com/articles/Documentation/Setting-up-your-network-configuration-26-8-2016) (Definir a configuração da rede).
+Pode certificar-se de que a sua rede está devidamente configurada para integração com a configuração do SEP Mobile, referindo-se ao artigo symantec [Configurando o SeP Manager após](https://support.symantec.com/us/en/article.HOWTO80819.html)a instalação .
 
-### <a name="full-integration-vs-read-only"></a>Integração completa vs. somente leitura
+### <a name="full-integration-vs-read-only"></a>Integração completa vs. Leitura
 
 O SEP Mobile suporta dois modos de integração com o Intune:
 
@@ -73,7 +73,7 @@ O SEP Mobile suporta dois modos de integração com o Intune:
 
 4. Junto a **Aplicação iOS**, escolha **Adicionar ao Active Directory**.
 
-    ![Imagem do console de gerenciamento móvel do Symantec Endpoint Protection](./media/skycure-mtd-connector-integration/symantec-portal-basic-add.png)
+    ![Imagem da consola de gestão móvel de proteção de endpoint symantec](./media/skycure-mtd-connector-integration/symantec-portal-basic-add.png)
 
 5. Quando for apresentada a página de início de sessão, introduza as suas credenciais do Intune e escolha **Aceitar**.
 
@@ -95,7 +95,7 @@ Tem de adicionar um grupo de segurança do Azure AD que contenha todos os dispo
 
 O SEP Mobile sincroniza os dispositivos que executam o serviço Defesa Contra Ameaças para Dispositivos Móveis com os grupos de segurança do Azure AD.
 
-![Imagem da configuração do grupo de segurança no console de gerenciamento do SEP Mobile](./media/skycure-mtd-connector-integration/symantec-portal-basic-status.png)
+![Imagem de configuração do grupo de segurança na consola de gestão SEP Mobile](./media/skycure-mtd-connector-integration/symantec-portal-basic-status.png)
 
 ## <a name="to-set-up-the-full-integration-between-intune-and-sep-mobile"></a>Para configurar a integração total entre o Intune e o SEP Mobile
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a8b5b323c4bb80cd15bf9c6c8f0f7a8be577d6bf
-ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
+ms.openlocfilehash: 842af9c8fffcb3755c81260739f4949768e75bac
+ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75653942"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912680"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Preparar aplicações de linha de negócios para as políticas de proteção de aplicações
 
@@ -41,7 +41,6 @@ Para obter mais informações sobre a Ferramenta de Encapsulamento de Aplicaçõ
 ### <a name="reasons-to-use-the-app-wrapping-tool"></a>Motivos para utilizar a Ferramenta de Encapsulamento de Aplicações
 
 * A aplicação não possui funcionalidades de proteção de dados incorporadas
-* A aplicação é simples
 * A aplicação é implementada internamente
 * Não tem acesso ao código de origem da aplicação
 * Não desenvolveu a aplicação
@@ -54,7 +53,7 @@ Para obter mais informações sobre a Ferramenta de Encapsulamento de Aplicaçõ
 |**iOS** |Sim|Sim|
 |**Android**|Não – utilizar os [Enlaces Xamarin do SDK da Aplicação Intune](app-sdk-xamarin.md).|Sim|
 
-## <a name="intune-app-sdk"></a>SDK da Aplicação Intune
+## <a name="intune-app-sdk"></a>SDK da Aplicação do Intune
 
 O SDK da Aplicação Intune foi concebido principalmente para clientes com aplicações na App Store da Apple ou na Google Play Store e que pretendem conseguir gerir essas aplicações no Intune. No entanto, qualquer aplicação pode tirar partido da integração com o SDK, inclusive as aplicações de linha de negócio.
 
@@ -63,7 +62,6 @@ Para mais informações sobre o SDK, consulte [Descrição Geral](app-sdk.md). P
 ### <a name="reasons-to-use-the-sdk"></a>Motivos para utilizar o SDK
 
 * A aplicação não possui funcionalidades de proteção de dados incorporadas
-* A aplicação é complexa e contém muitas experiências
 * A aplicação foi implementada numa loja de aplicações públicas, tais como o Google Play ou a App Store da Apple
 * É um programador de aplicações e tem a formação técnica para utilizar o SDK
 * A aplicação tem outras integrações SDK
@@ -76,13 +74,13 @@ Para mais informações sobre o SDK, consulte [Descrição Geral](app-sdk.md). P
 |**iOS**|Sim – utilizar os [Enlaces Xamarin do SDK da Aplicação Intune](app-sdk-xamarin.md).|Não|
 |**Android**| Sim – utilizar os [Enlaces Xamarin do SDK da Aplicação Intune](app-sdk-xamarin.md).|Não|
 
-### <a name="not-using-an-app-development-platform-listed-above"></a>Não está usando uma plataforma de desenvolvimento de aplicativo listada acima?
+## <a name="not-using-an-app-development-platform-listed-above"></a>Não está usando uma plataforma de desenvolvimento de aplicativo listada acima?
 
 A equipe de desenvolvimento do SDK do Intune testa e mantém ativamente o suporte para aplicativos criados com as plataformas nativas do Android, iOS (obj-C, Swift), Xamarin, Xamarin. Forms e Cordova. Embora alguns clientes tenham tido êxito com a integração do SDK do Intune com outras plataformas, como reagir nativo e NativeScript, não fornecemos orientações explícitas ou plug-ins para desenvolvedores de aplicativos usando algo diferente de nossas plataformas com suporte. 
 
 ## <a name="feature-comparison"></a>Comparação de funcionalidades
 
-Esta tabela lista as definições que pode utilizar no SDK da Aplicação e na Ferramenta de Encapsulamento de Aplicações.
+Esta tabela lista as definições que estão ativadas se uma aplicação utilizar o App SDK ou a Ferramenta de Embrulho de Aplicações. Algumas funcionalidades exigem que os desenvolvedores de aplicações apliquem alguma lógica fora da integração básica com o Intune SDK, e como tal, não estão ativados se a aplicação utilizar a Ferramenta de Embrulho de Aplicações. 
 
 |Funcionalidade|SDK da Aplicação|Ferramenta de Encapsulamento de Aplicações|
 |-----------|---------------------|-----------|
@@ -105,9 +103,9 @@ Esta tabela lista as definições que pode utilizar no SDK da Aplicação e na F
 |Bloquear captura de ecrã (apenas Android)|X|X|
 |Suporte para MAM sem a inscrição de dispositivos|X|X|
 |Apagamento completo de dados de aplicativo|X|X|
-|Apagamento seletivo de dados corporativos e de estudante em cenários de várias identidades <br><br>**Nota:** no iOS, se o perfil de gestão for removido, a aplicação também é removida.|X||
+|Limpeza seletiva do trabalho e dados escolares em cenários multi-identidade <br><br>**Nota:** no iOS, se o perfil de gestão for removido, a aplicação também é removida.|X||
 |Impedir "Guardar como"|X||
-|Configuração de aplicativo de destino (ou configuração de aplicativo por meio do "canal de MAM")|X||
+|Configuração de aplicativo de destino (ou configuração de aplicativo por meio do "canal de MAM")|X|X|
 |Suporte para Identidades Múltiplas|X||
 |Estilo Personalizável |X|||
 |Ligações de VPN de aplicação a pedido com o mVPN da Citrix|X|X| 
@@ -119,6 +117,11 @@ Esta tabela lista as definições que pode utilizar no SDK da Aplicação e na F
 |Exigir SDK do Intune mínimo para iOS (apenas iOS)|X|X|
 |Atestado de dispositivo SafetyNet (somente Android)|X|X|
 |Verificação de ameaças em aplicativos (somente Android)|X|X|
+|Exigir nível de risco de dispositivo de dispositivo de defesa de ameaça móvel maxmimum|X||
+|Configurar conteúdo de notificação do aplicativo para contas da organização|X|X|
+|Exigir a utilização de teclados aprovados (apenas Android)|X|X|
+|Exigir política de proteção de aplicativos (Acesso Condicional)|X||
+|Exigir aplicação de cliente aprovada (Acesso Condicional)|X||
 
 ## <a name="next-steps"></a>Próximos passos
 

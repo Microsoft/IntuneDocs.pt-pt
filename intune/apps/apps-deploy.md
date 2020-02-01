@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e990cd94c0f8622d07e59b4130566a1dc2953a1c
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 15d6a67cb41455a1e3c0830e9ed242bfa52b0269
+ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74563985"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912663"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Atribuir aplicações a grupos com o Microsoft Intune
 
@@ -61,19 +61,19 @@ A seguinte tabela indica as várias opções para atribuir as aplicações a uti
 4. Na secção **Gerir** do menu, selecione **Atribuições**.
 5. Selecione **Adicionar Grupo** para abrir o painel **Adicionar grupo** que está relacionado com a aplicação.
 6. Para a aplicação específica, selecione um **tipo de atribuição**:
-   - **Disponível para dispositivos inscritos**: atribua a aplicação a grupos de utilizadores que podem instalar a aplicação a partir de um site ou da aplicação do Portal da Empresa.
+   - **Disponível para dispositivos matriculados**: Atribuir a app a grupos de utilizadores que possam instalar a app a partir da aplicação ou website do Portal da Empresa.
    - **Disponível com ou sem inscrição**: atribua esta aplicação a grupos de utilizadores cujos dispositivos não estão inscritos no Intune. Os utilizadores tem de ser atribuídos a uma licença do Intune; veja [Licenças do Intune](../fundamentals/licenses.md).
    - **Obrigatório**: a aplicação é instalada em dispositivos nos grupos selecionados. Algumas plataformas podem ter mais avisos para o utilizador final confirmar antes de começar a instalação da aplicação.
-   - **Desinstalar**: a aplicação é desinstalada dos dispositivos nos grupos selecionados, caso o Intune tenha instalado a aplicação anteriormente no dispositivo através de um tipo de atribuição “Disponível para dispositivos inscritos” ou “Obrigatório” ao utilizar a mesma implementação. As ligações da Web não podem ser removidas após a implementação.
+   - **Desinstalar**: A aplicação não é instalada a partir de dispositivos nos grupos selecionados se a Intune tiver instalado previamente a aplicação no dispositivo através de uma atribuição "Disponível para dispositivos matriculados" ou "Obrigatório" utilizando a mesma implementação. As ligações da Web não podem ser removidas após a implementação.
 
      > [!NOTE]
      > **Apenas para aplicações iOS**:
-     > - Para configurar o que acontece com os aplicativos gerenciados quando os dispositivos não são mais gerenciados, você pode selecionar a configuração pretendida em **desinstalar na remoção do dispositivo**. Para obter mais informações, consulte [configuração de desinstalação do aplicativo para aplicativos gerenciados do IOS](apps-deploy.md#app-uninstall-setting-for-ios-managed-apps).
-     > - se tiver criado um perfil VPN para iOS que contenha definições de VPN por aplicação, poderá selecionar o perfil VPN em **VPN**. Quando a aplicação for executada, a ligação VPN será aberta. Para obter mais informações, veja [Definições VPN para dispositivos iOS](../vpn-settings-ios.md).
+     > - Para configurar o que acontece às aplicações geridas quando os dispositivos já não são geridos, pode selecionar a definição pretendida sob **desinstalar na remoção do dispositivo**. Para mais informações, consulte a [definição de desinstalação da App para aplicações geridas pelo iOS.](apps-deploy.md#app-uninstall-setting-for-ios-managed-apps)
+     > - Se criou um perfil VPN iOS que contém definições VPN por app, pode selecionar o perfil VPN em **VPN**. Quando a aplicação for executada, a ligação VPN será aberta. Para obter mais informações, veja [Definições VPN para dispositivos iOS](../vpn-settings-ios.md).
      >
-     > **Apenas para aplicações Android**: se implementar uma aplicação Android como **Disponível com ou sem inscrição**, os relatórios de estado só estarão disponíveis em dispositivos inscritos.
+     > **Apenas para aplicações Android**: Se implementar uma aplicação Android como **disponível com ou sem matrícula,** o estado de reporte só estará disponível em dispositivos matriculados.
      >
-     > **Disponível para dispositivos registrados**: O aplicativo só será exibido como disponível se o usuário conectado ao Portal da Empresa for o usuário primário que registrou o dispositivo e o aplicativo for aplicável ao dispositivo.
+     > Disponível **para dispositivos matriculados**: A aplicação só é apresentada como disponível se o utilizador que entrou no Portal da Empresa for o principal utilizador que inscreveu o dispositivo e a aplicação for aplicável ao dispositivo.
 
 7. Selecione **Grupos Incluídos** para selecionar os grupos de utilizadores que são afetados por esta atribuição de aplicações.
 8. Escolha **Selecionar** após selecionar um ou mais grupos para incluir.
@@ -87,8 +87,8 @@ A aplicação está agora atribuída aos grupos que selecionou. Para obter mais 
 
 ## <a name="how-conflicts-between-app-intents-are-resolved"></a>Como são resolvidos conflitos entre objetivos de aplicações
 
-Um único grupo é impedido de ser direcionado para várias tentativas de atribuição de aplicativo; no entanto, se um usuário ou um dispositivo for membro de vários grupos que são atribuídos com diferentes intenções, isso resultará em um conflito. Não é recomendável criar conflitos de atribuição para aplicativos.
-As informações na tabela a seguir podem ajudá-lo a entender a intenção resultante quando ocorre um conflito:
+Um único grupo é impedido de ser direcionado para múltiplas intenções de atribuição de aplicações, no entanto, se um utilizador ou um dispositivo for um membro de vários grupos que são atribuídos com diferentes intenções, resultará num conflito. Não é recomendada a criação de conflitos de atribuição de candidaturas.
+A informação na tabela seguinte pode ajudá-lo a entender a intenção resultante quando ocorre um conflito:
 
 | Objetivo do grupo 1 | Objetivo do grupo 2 | Objetivo resultante |
 |-----------------------------------|-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -115,7 +115,7 @@ As informações na tabela a seguir podem ajudá-lo a entender a intenção resu
 > [!NOTE]
 > Apenas para aplicações da loja iOS geridas: quando adiciona estas aplicações ao Microsoft Intune e as atribui como **Necessário**, estas aplicações são criadas automaticamente com as intenções **Necessário** e **Disponível**.<br><br>
 > As aplicações da Loja iOS (não aplicações iOS obtidas pelo VPP) que são direcionadas com a intenção necessária serão aplicadas no dispositivo quando registar o mesmo e também serão apresentadas na aplicação Portal da Empresa.<br><br>
-> Quando ocorrerem conflitos na configuração **de remoção de dispositivo** , o aplicativo não será removido do dispositivo quando o dispositivo não for mais gerenciado.
+> Quando ocorrem conflitos na **desinstalação na** definição de remoção do dispositivo, a aplicação não é removida do dispositivo quando o dispositivo já não é gerido.
 
 ## <a name="managed-google-play-app-deployment-to-unmanaged-devices"></a>Implementação de aplicações do Managed Google Play em dispositivos não geridos
 Para dispositivos Android num cenário de implementação de Política de Proteção de Aplicações Sem Inscrição (APP-WE), pode utilizar o Managed Google Play para implementar aplicações da loja e aplicações de linha de negócio (LOB) para os utilizadores. As aplicações do Managed Google Play visadas como **Disponíveis com ou sem inscrição** aparecerão na aplicação da Play Store no dispositivo do utilizador final e não na aplicação do Portal da Empresa. O utilizador final irá procurar e instalar as aplicações implementadas desta maneira, na aplicação Play. Uma vez que as aplicações estão a ser instaladas a partir do Managed Google Play, o utilizador final não precisará de alterar as configurações dos dispositivos para permitir a instalação de aplicações de origens desconhecidas, o que significa que os dispositivos estarão mais seguros. Se o programador da aplicação publicar uma nova versão de uma aplicação no Play, que foi instalada no dispositivo de um utilizador, a aplicação será atualizada automaticamente pelo Play. 
@@ -123,7 +123,7 @@ Para dispositivos Android num cenário de implementação de Política de Prote�
 Passos para atribuir uma aplicação do Managed Google Play a dispositivos não geridos:
 
 1. Ligue o inquilino do Intune ao Managed Google Play. Se já o tiver feito para gerir o perfil de trabalho do Android Enterprise, os dispositivos dedicados ou totalmente geridos, não será necessário fazê-lo novamente.
-2. Adicione aplicações a partir do Managed Google Play à consola do Intune.
+2. Adicione aplicações a partir do Managed Google Playà consola do Intune.
 3. Vise aplicações do Managed Google Play como **Disponíveis com ou sem inscrição** para o grupo de utilizadores pretendido. As opções **Obrigatório** e **Desinstalar** para aplicações visadas não são suportada para dispositivos não inscritos.
 4. Atribua uma Política de Proteção de Aplicações ao grupo de utilizadores.
 5. Da próxima vez que o utilizador final abrir a aplicação do Portal da Empresa, verá uma mensagem a indicar que existem aplicações disponíveis na aplicação Play Store.  O utilizador pode tocar nesta notificação para ser ir diretamente para a aplicação Play para ver as aplicações empresariais ou pode navegar para a aplicação Play Store separadamente.
@@ -131,23 +131,23 @@ Passos para atribuir uma aplicação do Managed Google Play a dispositivos não 
 
 Quando uma eliminação seletiva de aplicações é emitida na consola do Intune, a conta profissional será removida automaticamente da aplicação Play Store e o utilizador final, a partir desse momento, deixará de ver aplicações de trabalho no catálogo das aplicações da Play Store. Quando a conta profissional é removida de um dispositivo, as aplicações instaladas a partir da Play Store permanecerão instaladas no dispositivo e não serão desinstaladas. 
 
-## <a name="app-uninstall-setting-for-ios-managed-apps"></a>Configuração de desinstalação de aplicativo para aplicativos gerenciados do iOS
-Para dispositivos iOS, você pode escolher o que acontece com os aplicativos gerenciados ao cancelar o registro do dispositivo do Intune ou remover o perfil de gerenciamento usando **desinstalar na configuração de remoção de dispositivo** . Essa configuração se aplica somente a aplicativos depois que o dispositivo é registrado e os aplicativos são instalados como gerenciados. A configuração não pode ser configurada para aplicativos Web ou links da Web. 
+## <a name="app-uninstall-setting-for-ios-managed-apps"></a>App desinstalar definição para aplicações geridas iOS
+Para dispositivos iOS, pode escolher o que acontece com as aplicações geridas para não inscrever o dispositivo a partir de Intune ou remover o perfil de gestão utilizando **desinstalar na** definição de remoção do dispositivo. Esta definição só se aplica a apps depois de o dispositivo estar matriculado e as aplicações são instaladas como geridas. A definição não pode ser configurada para aplicações web ou web links. Apenas os dados protegidos pela Mobile Application Management (MAM) são removidos após a reforma por uma Limpeza Seletiva da Aplicação.
 
-Os valores padrão para a configuração são preenchidos previamente para novas atribuições da seguinte maneira:
+Os valores predefinidos para a definição são pré-povoados para novas atribuições da seguinte forma:
 
-|tipo de aplicativo iOS | Configuração padrão para "desinstalar na remoção do dispositivo" |
+|tipo de aplicativo iOS | Definição predefinida para "Desinstalar na remoção do dispositivo" |
 |--------------------|----------------|
-| Aplicativo de linha de negócios | Sim |
+| App de linha de negócios | Sim |
 | Aplicação da loja | Não |
 | Aplicativo VPP | Não |
 | Aplicação incorporada | Não |
 
 >[!NOTE]
->**Tipos de atribuição "disponíveis":** Se você estiver atualizando essa configuração para os grupos "disponível para dispositivos registrados" ou "disponível com ou sem registro", os usuários que já tiverem o aplicativo gerenciado não obterão a configuração atualizada até que sincronizem o dispositivo com o Intune e reinstalem o aplicativo. 
+>Tipos de **atribuição "disponíveis":** Se estiver a atualizar esta definição para "disponíveis para dispositivos matriculados" ou "disponíveis com ou sem matrícula", os utilizadores que já tenham a app gerida não receberão a definição atualizada até sincronizarem o dispositivo com o Intune e reinstalarem a app. 
 >
->**Atribuições preexistentes:** As atribuições que existiam antes da introdução dessa configuração não são modificadas e todos os aplicativos gerenciados serão removidos da remoção do dispositivo do gerenciamento.
+>**Atribuições pré-existentes:** As atribuições que existiam antes da introdução desta definição não são modificadas e todas as aplicações geridas serão removidas na remoção do dispositivo da gestão.
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Próximos passos
 
 Para saber mais sobre a monitorização de atribuições de aplicações, veja [Como monitorizar aplicações](apps-monitor.md).

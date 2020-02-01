@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/21/2020
+ms.date: 01/30/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 58f6c4e2c99c7e2c169014a71bb1cfd2bc85219b
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: fa4510b95e1e84d9f94158833dac555daa33c690
+ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755243"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912563"
 ---
 # <a name="windows-10-app-deployment-by-using-microsoft-intune"></a>Implementação de aplicações do Windows 10 utilizando o Microsoft Intune 
 
@@ -80,22 +80,28 @@ Para categorizar as aplicações da Microsoft Store para as empresas:
 Dependendo do tipo de aplicação, pode instalar a aplicação num dispositivo Windows 10 de uma de duas formas:
 
 - **Contexto**do utilizador : Quando uma aplicação é implementada no contexto do utilizador, a aplicação gerida é instalada para esse utilizador no dispositivo quando o utilizador insere no dispositivo. Note que a instalação da aplicação não é bem sucedida até que o utilizador inste no dispositivo. 
-  - Aplicações modernas de linha de negócios e aplicações Microsoft Store for Business (online e offline) podem ser implementadas no contexto do utilizador. As aplicações suportam as intenções necessárias e disponíveis.
+  - As aplicações LOB modernas e as aplicações Microsoft Store for Business (online e offline) podem ser implementadas no contexto do utilizador. As aplicações suportam as intenções necessárias e disponíveis.
   - As aplicações Win32 construídas como Modo utilizador ou Modo Dual podem ser implementadas no contexto do utilizador e suportar as intenções necessárias e disponíveis. 
 - **Contexto**do dispositivo : Quando uma aplicação é implantada no contexto do dispositivo, a aplicação gerida é instalada diretamente no dispositivo pela Intune.
-  - Apenas aplicações modernas de linha de negócio e aplicações licenciadas offline da Microsoft Store para empresas podem ser implementadas no contexto do dispositivo. Estas aplicações apenas suportam a intenção necessária.
+  - Apenas aplicações lob modernas e aplicações licenciadas offline Microsoft Store para empresas podem ser implementadas no contexto do dispositivo. Estas aplicações apenas suportam a intenção necessária.
   - As aplicações Win32 construídas como Modo Máquina ou Modo Dual podem ser implementadas no contexto do dispositivo, e suportam apenas a intenção necessária.
 
 > [!NOTE]
 > Para aplicações Win32 construídas como aplicações dual mode, o administrador deve escolher se a aplicação funcionará como uma aplicação modo utilizador ou modo máquina para todas as atribuições associadas a essa instância. O contexto de implantação não pode ser alterado por atribuição.  
 
-Quando uma aplicação é implantada no contexto do dispositivo, a instalação só tem sucesso quando direcionada a um dispositivo que suporta o contexto do dispositivo. Além disso, implementar no contexto do dispositivo suporta as seguintes condições:
-- Se uma aplicação for implementada no contexto do dispositivo e direcionada a um utilizador, a instalação falha. O seguinte estado e erro aparece na consola de administração:
+As aplicações só podem ser instaladas no contexto do dispositivo quando suportadas pelo dispositivo e pelo tipo de aplicação Intune. Pode instalar os seguintes tipos de aplicações no contexto do dispositivo e atribuir estas aplicações a um grupo de dispositivos:
+
+- Aplicativos Win32
+- Microsoft Store licenciada offline para aplicações empresariais
+- Aplicativos LOB (MSI, APPX e MSIX)
+- Office 365 ProPlus
+
+As aplicações Do Windows LOB (especificamente APPX e MSIX) e Microsoft Store for Business (aplicações Offline) que selecionou para instalar no contexto do dispositivo devem ser atribuídas a um grupo de dispositivos. A instalação falha se uma destas aplicações for implementada no contexto do utilizador. O seguinte estado e erro aparece na consola de administração:
   - Estado: falha.
   - Erro: Um utilizador não pode ser alvo com uma instalação de contexto do dispositivo.
-- Se uma aplicação for implementada no contexto do dispositivo, mas for direcionada para um dispositivo que não suporta o contexto do dispositivo, a instalação falha. O seguinte estado e erro aparece na consola de administração:
-  - Estado: falha.
-  - Erro: esta plataforma não suporta instalações de contexto do dispositivo. 
+
+> [!IMPORTANT]
+> Quando utilizado em combinação com um cenário de fornecimento de luvas brancas Autopilot, não existe qualquer requisito para aplicações LOB e aplicações Microsoft Store para negócios implementadas no contexto do dispositivo para direcionar um grupo de dispositivos. Para mais informações, consulte a [implementação](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove)da luva branca Do Windows Autopilot .
 
 > [!Note]
 > Depois de guardar uma atribuição de aplicativos com uma implementação específica, não pode alterar o contexto para essa atribuição, exceto para aplicações modernas. Para aplicações modernas, pode alterar o contexto do contexto do utilizador para o contexto do dispositivo. 

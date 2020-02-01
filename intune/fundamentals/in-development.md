@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 78022dc4bdfa108bcd04e180ab413cbf04d2c728
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: d71ae3c15dddedd5d9ebfaf06fcae25af89f6b82
+ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755617"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912641"
 ---
 # <a name="in-development-for-microsoft-intune---january-2020"></a>Em desenvolvimento para Microsoft Intune-janeiro de 2020
 
@@ -110,15 +110,9 @@ Esta funcionalidade aplica-se a:
 
 
 <!-- ***********************************************-->
-## <a name="device-management"></a>Gestão de dispositivos
+<!--## Device management-->
 
 
-### <a name="new-information-in-device-details---4471759-5604099----"></a>Novas informações nos detalhes do dispositivo<!-- 4471759 5604099  -->
-As informações a seguir serão adicionadas à página **visão geral** para dispositivos:
-- Capacidade de memória (quantidade de memória física no dispositivo)
-- Capacidade de armazenamento (quantidade de armazenamento físico no dispositivo) 
-- Tipo e velocidade do processador da CPU
-- RAM e dados de processador
 
 <!-- ***********************************************-->
 <!--## Intune apps-->
@@ -149,7 +143,7 @@ Você poderá usar credenciais derivadas em dispositivos Android Enterprise tota
 
 [!INCLUDE [Intune notices](../includes/intune-notices.md)]
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 Para obter detalhes sobre os desenvolvimentos recentes, consulte [What ' s New in Microsoft Intune](whats-new.md).
 
 
