@@ -8,7 +8,7 @@
       displayName: compliant; noncompliant; mfa
 - name: Guias de Introdução
   items:
-    - name: Criar uma política de conformidade de dispositivo
+    - name: Criar uma política de conformidade do dispositivo
       href: quickstart-set-password-length-android.md
     - name: Send notifications to noncompliant devices (Enviar notificações para dispositivos que não estejam em conformidade)
       href: quickstart-send-notification.md
@@ -56,7 +56,7 @@
           href: create-compliance-policy.md
         - name: Conformidade baseada em localizações
           href: use-network-locations.md
-        - name: Ações de não conformidade
+        - name: Ações para não conformidade
           href: actions-for-noncompliance.md
         - name: Monitorizar a conformidade do dispositivo
           href: compliance-policy-monitor.md
@@ -225,6 +225,20 @@
           href: troubleshoot-conditional-access.md
         - name: Resolução de problemas do conector de certificados
           href: troubleshoot-certificate-connector-events.md
+        - name: Resolver problemas com perfis de certificado SCEP
+          items:
+            - name: Resolver problemas com perfis de certificado SCEP
+              href: troubleshoot-scep-certificate-profiles.md
+            - name: Implementação de perfis em dispositivos
+              href: troubleshoot-scep-certificate-profile-deployment.md
+            - name: Comunicação entre dispositivos e o NDES
+              href: troubleshoot-scep-certificate-device-to-ndes.md
+            - name: Operações do NDES
+              href: troubleshoot-scep-certificate-ndes-policy-module.md
+            - name: Entrega de certificados a dispositivos
+              href: troubleshoot-scep-certificate-delivery.md
+            - name: Relatórios de implementação de certificados
+              href: troubleshoot-scep-certificate-reporting.md
         - name: Resolução de problemas do conector do Exchange
           items:
             - name: Resolução de problemas do conector do Exchange
@@ -267,7 +281,7 @@
           href: compliance-policy-create-windows-8-1.md
         - name: Definições de políticas de conformidade – Windows Phone 8.1
           href: compliance-policy-create-windows-8-1.md
-    - name: Códigos de erro e descrições
+    - name: Descrições e códigos de erros
       items:
         - name: Erros de atualizações de software
           href: software-update-agent-error-codes.md
