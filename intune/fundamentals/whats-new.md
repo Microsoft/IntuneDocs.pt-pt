@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 59f1aee9d00e185cbe5852725a1e7e3c4d7233ea
-ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
+ms.openlocfilehash: 1e0fab1eebfaf780cabca45d3a31e1994c2a2355
+ms.sourcegitcommit: c7c6be3833d9a63d43f31d598b555b49b33cf5cb
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76912888"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76966369"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 
@@ -60,6 +60,24 @@ Saiba mais sobre as novidades todas as semanas no Microsoft Intune. Você també
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="app-management"></a>Gestão de aplicações
+
+#### <a name="new-setting-to-remove-specific-windows-built-in-apps---6184390---"></a>Nova configuração para remover aplicações específicas do Windows incorporadas<!-- 6184390 -->
+Utilizando uma nova definição de definição de configuração de dispositivos Windows 10, pode remover as seguintes aplicações incorporadas do Windows:
+
+- Espectador de Realidade Mista
+- MSN Weather
+- Instalador de aplicativos
+- Dicas da Microsoft
+- O meu escritório
+- Coleção Microsoft Solitaire 
+- Planos Móveis
+- Centro de Feedback 
+- Xbox 
+- Groove Music
+- Correio
+- Calendário
+
+No centro de administração do Microsoft Endpoint Manager, selecione **Dispositivos** > perfis de **configuração** > **Criar perfil**. Em seguida, selecione **o Windows 10 e mais tarde** como **Plataforma**. Selecione **as restrições** do Dispositivo como o **tipo de perfil**. Selecione **App Store** no painel de restrições do **Dispositivo.** Na parte inferior do painel ao lado de **Remover aplicações incorporadas,** selecione **Remover**. Para obter mais informações sobre aplicações incorporadas, consulte [Adicionar aplicações incorporadas ao Microsoft Intune](~/apps/apps-add-built-in.md).
 
 #### <a name="intune-support-for-additional-microsoft-edge-version-77-deployment-channel-for-macos---5983950----"></a>Suporte intune para canal adicional de implementação da versão 77 do Microsoft Edge para o macOS<!-- 5983950  -->
 O Microsoft Intune suporta agora o canal de implementação **stable** adicional para a aplicação Microsoft Edge para macOS. O canal **Estável** é o canal recomendado para a implementação do Microsoft Edge em ambientes empresariais. Atualiza a cada seis semanas, cada versão incorporando melhorias do canal **Beta.** Além dos canais **Stable** e **Beta,** o Intune suporta um canal **Dev.** A pré-visualização pública oferece canais estáveis e dev para a versão 77 do Microsoft Edge e mais tarde para o macOS. As atualizações automáticas do navegador estão on por padrão. Para mais informações, consulte [Adicionar Microsoft Edge para dispositivos macOS utilizando o Microsoft Intune](~/apps/apps-edge-macos.md).

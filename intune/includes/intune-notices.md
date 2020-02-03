@@ -7,30 +7,14 @@ ms.topic: include
 ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 9aa82268fb02f5124e48eb303f19cf32be02c284
-ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
+ms.openlocfilehash: 6064fb657454106a8a7213e0bbbcecdcef765857
+ms.sourcegitcommit: c7c6be3833d9a63d43f31d598b555b49b33cf5cb
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76912642"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76966368"
 ---
 Esses avisos fornecem informações importantes que podem ajudá-lo a se preparar para futuras alterações e recursos do Intune.
-
-### <a name="updated-feature-new-rbac-role-coming-to-intune--4253397--"></a>Funcionalidade atualizada: Nova função RBAC chegando a Intune<!--4253397-->
-Na atualização de serviços intune de janeiro, planeamos lançar um novo papel de segurança no Intune. Você verá este papel listado como "Endpoint Security Manager" em Intune e o papel é uma expansão do papel de "Administrador de Segurança" da Azure AD.
- 
-#### <a name="how-does-this-affect-me"></a>Como é que isto me afeta?
-Hoje existem três funções disponíveis em Azure AD para os seus profissionais de segurança:
-- Papel do Leitor de Segurança em Azure AD, que dá acesso apenas a Intune.
-- Papel do Operador de Segurança na AD Azure, que dá acesso apenas a Intune.
-- Administrador de Segurança em Azure AD. Quando a Intune envia a atualização de janeiro, juntamente com permissões apenas de leitura para Intune, as novas permissões fornecidas pelo papel de Gestor de Segurança endpoint são as seguintes:
-    - Ler, Criar, Atualizar, Excluir e Atribuir Políticas de Conformidade de Dispositivos
-    - Ler, Eliminar e atualizar dispositivos geridos
-    - Ler, Criar, Atualizar, Excluir e Atribuir linhas de segurança
-    - Ler e atualizar tarefas de segurança
- 
-### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>O que preciso de fazer para me preparar para esta alteração?
-Reveja hoje as suas funções Intune RBAC. Se atualmente apenas tem a Global Admins como papéis, então não são necessárias alterações. Se usar papéis, e quiser a granularidade que o Gestor de Segurança endpoint proporciona, então atribua esse papel quando estiver disponível. Consulte a página Intune [What's New](../fundamentals/whats-new.md) para obter informações atualizadas sobre o lançamento do Intune. 
 
 ### <a name="updated-support-statement-for-adobe-acrobat-reader-for-intune-mobile-app--5746776--"></a>Foi atualizada a instrução de suporte para o aplicativo móvel ' Adobe Acrobat Reader for Intune '<!--5746776-->
 Compartilhamos em MC188653 no final de agosto, que o Adobe Acrobat Reader para o aplicativo móvel do Intune estava atingindo o fim da vida útil em 1º de dezembro de 2019 e que a Adobe estava planejando dar suporte às políticas de proteção de aplicativo do Intune em seu aplicativo do Acrobat Reader principal. Desde então, recebemos comentários dos clientes que precisávamos fornecer mais tempo para continuar permitindo que os administradores de ti direcionem e os usuários finais comecem a usar o Adobe Acrobat Reader para Intune. Devido ao alto uso do Adobe Acrobat Reader para Intune em dispositivos de usuário final e sua importância em cenários empresariais, queremos garantir que qualquer experiência atenda às necessidades de proteção do aplicativo da sua organização. 
