@@ -14,12 +14,12 @@ ms.service: ''
 ms.technology: ''
 ms.assetid:
 - GET ONE FROM guidgenerator.com
-ms.openlocfilehash: 0a5e90c6bc6b352f4d7a0fc0ae22c65110563461
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: ed2d00541c2d89efd0f8cd6aa60f29c527656fc0
+ms.sourcegitcommit: 5178aec0244e023e73546f3d10f1a76eaf1f4a3e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "68354401"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76971808"
 ---
 # <a name="metadata-and-markdown-template"></a>Modelo de Metadados e de Markdown
 
@@ -37,7 +37,7 @@ O bloco de metadados completo está acima, dividido em campos obrigatórios e op
 - Os dois pontos num valor (por exemplo, um título) quebram o parser de metadados. Em vez disso, utilize a codificação HTML de &#58; (por exemplo, “título: Azure Rights Management&#58; noções básicas | Azure RMS”).
 - **título**: este título será apresentado nos resultados do motor de busca. O título deve terminar com uma barra vertical (|), seguido do nome do serviço (veja o exemplo acima). O título não precisa (e provavelmente não deve) de ser idêntico ao título do cabeçalho H1. Deve ter cerca de 65 carateres (incluindo | NOME DO SERVIÇO)
 - **autor**, **gestor**, **revisor**: o campo autor deve conter o **nome de utilizador do Github** do autor, não o alias.  Os campos “gestor” e “revisor”, por outro lado, devem conter aliases. ms.reviewer especifica o nome do PM associado ao serviço ou ao artigo.
-- **ms.assetid**: este é o GUID do artigo a partir de CAPS. Ao criar um novo arquivo de redução, obtenha um GUID de [https://www.guidgenerator.com](https://www.guidgenerator.com). 
+- **ms.assetid**: este é o GUID do artigo a partir de CAPS. Ao criar um novo ficheiro de marcação, obtenha um GUID de [https://www.guidgenerator.com](https://www.guidgenerator.com). 
 - **ms.prod**, **ms.service**, **ms.technology**, **ms.devlang**, **ms.topic**, **ms.tgt_pltfrm**: os possíveis valores para estes elementos podem ser encontrados [aqui](https://microsoft.sharepoint.com/teams/STBCSI/Insights/_layouts/15/WopiFrame.aspx?sourcedoc=%7b7A321BF1-0611-4184-84DA-A0E964C435FA%7d&file=WEDCS_MasterList_CSIValues.xlsx&action=default).
 
 ## <a name="basic-markdown-and-gfm"></a>Markdown Básico e GFM
@@ -108,7 +108,7 @@ Se aparecer um URL num ficheiro de markdown, será transformado numa ligação c
 1. Aqui
 1. está
 1. uma
-1. lista
+1. incorporada
     1. Menina Isabel
     1. Professor Brandão
 1. ordenada
@@ -120,19 +120,19 @@ Se aparecer um URL num ficheiro de markdown, será transformado numa ligação c
 - Esta
 - é
 - uma
-- lista
+- com marcas
 - com marcas
 
 
 #### <a name="unordered-list-with-an-embedded-lists"></a>Lista não ordenada com listas incorporadas
 
 - Esta 
-- lista 
+- com marcas 
 - com marcas
   - Sra. Corte-Real
   - Dr. Pacheco
 - contém  
-- listas
+- outra
     1. Coronel Monteiro
     1. Senhora Ana
 - diferentes
@@ -216,7 +216,7 @@ Este é um exemplo de `in-line code`.
 
 <iframe width="420" height="315" src="https://www.youtube.com/embed/R6_eWWfNB54" frameborder="0" allowfullscreen></iframe>
 
-## <a name="docsms-extentions"></a>Extensões do docs.ms
+## <a name="docsms-extensions"></a>extensões de docs.ms
 
 ### <a name="button"></a>Botão
 

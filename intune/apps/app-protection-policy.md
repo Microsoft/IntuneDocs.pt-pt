@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, get-started, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3c340ffaacad303c4ff395c84d92e3907e42a521
-ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
+ms.openlocfilehash: e0f36e648c404858332245c5b1b457c9f6824614
+ms.sourcegitcommit: 5178aec0244e023e73546f3d10f1a76eaf1f4a3e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "76036644"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76971884"
 ---
 # <a name="app-protection-policies-overview"></a>Descrição geral das políticas de proteção de aplicações
 
@@ -82,7 +82,7 @@ O Intune oferece várias funcionalidades para o ajudar a obter as aplicações d
 O suporte para plataformas de políticas de proteção de aplicações do Intune está alinhado com o suporte para plataformas de aplicações móveis do Office para os dispositivos Android e iOS. Para obter detalhes, veja a secção **Aplicações móveis** de [Requisitos de Sistema do Office](https://products.office.com/office-system-requirements#coreui-contentrichblock-9r05pwg).
 
 > [!IMPORTANT]
-> O Portal da Empresa do Intune é necessário no dispositivo para receber as Políticas de Proteção de Aplicações do Android. Para obter mais informações, veja os [Requisitos das aplicações de acesso ao Portal da Empresa do Intune](../fundamentals/end-user-mam-apps-android.md#access-apps).
+> O Portal da Empresa Intune é necessário no dispositivo para receber Políticas de Proteção de Aplicações no Android. Para obter mais informações, veja os [Requisitos das aplicações de acesso ao Portal da Empresa do Intune](../fundamentals/end-user-mam-apps-android.md#access-apps).
 
 ## <a name="how-app-protection-policies-protect-app-data"></a>Como as políticas de proteção de aplicações protegem os dados das aplicações
 
@@ -331,7 +331,7 @@ As políticas de proteção de aplicativo do Intune fornecem a capacidade para o
 As políticas de Proteção de Aplicativo do Intune fornecem a capacidade para os administradores exigirem que os dispositivos do usuário final enviem sinais por meio da API de aplicativos de verificação do Google para dispositivos Android. As instruções sobre como fazer isso variam um pouco pelo dispositivo. O processo geral envolve ir para a Google Play Store e, em seguida, clicar em **meus aplicativos & jogos**, clicando no resultado da última verificação do aplicativo, que o levará para o menu executar proteção. Certifique-se de que a alternância para o **dispositivo de verificação para ameaças à segurança** esteja ativada.
 
 ### <a name="googles-safetynet-attestation-api"></a>API de atestado do SafetyNet do Google 
-O Intune utiliza Google Play proteger as APIs SafetyNet para adicionar às nossas verificações de detecção de raiz existentes para dispositivos não registrados. O Google desenvolveu e manteve essa API definida para aplicativos Android a adotarem se não quiserem que seus aplicativos sejam executados em dispositivos com raiz. O aplicativo de pagamento do Android incorporou isso, por exemplo. Embora o Google não compartilhe publicamente as verificações de detecção de raiz que ocorrem, esperamos que essas APIs detectem usuários que fizeram a raiz de seus dispositivos. Esses usuários podem então ser impedidos de acessar ou suas contas corporativas apagadas de seus aplicativos habilitados para políticas. **Verificar a integridade básica** informa sobre a integridade geral do dispositivo. Dispositivos com raiz, emuladores, dispositivos virtuais e dispositivos com sinais de falha de violação de integridade básica. **Verificar a integridade básica & dispositivos certificados** informa sobre a compatibilidade do dispositivo com os serviços do Google. Somente dispositivos não modificados que foram certificados pelo Google podem passar por essa verificação. Os dispositivos que falharão incluem o seguinte:
+O Intune utiliza Google Play proteger as APIs SafetyNet para adicionar às nossas verificações de detecção de raiz existentes para dispositivos não registrados. O Google desenvolveu e manteve essa API definida para aplicativos Android a adotarem se não quiserem que seus aplicativos sejam executados em dispositivos com raiz. O aplicativo de pagamento do Android incorporou isso, por exemplo. Embora o Google não compartilhe publicamente as verificações de detecção de raiz que ocorrem, esperamos que essas APIs detectem usuários que fizeram a raiz de seus dispositivos. Esses usuários podem então ser impedidos de acessar ou suas contas corporativas apagadas de seus aplicativos habilitados para políticas. **Verificar a integridade básica** informa sobre a integridade geral do dispositivo. Dispositivos enraizados, emuladores, dispositivos virtuais e dispositivos com sinais de adulteração falham a integridade básica. **Verificar a integridade básica & dispositivos certificados** informa sobre a compatibilidade do dispositivo com os serviços do Google. Apenas dispositivos não modificados certificados pela Google podem passar este cheque. Os dispositivos que falharão incluem o seguinte:
 
 - Dispositivos que falham na integridade básica
 - Dispositivos com um carregador de erro desbloqueado
@@ -356,5 +356,5 @@ As configurações de política de proteção de aplicativo que aproveitam Googl
 
 [Configurações de política de proteção de aplicativo iOS disponíveis com Microsoft Intune](app-protection-policy-settings-ios.md)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 As aplicações de terceiros como a aplicação móvel do Salesforce funcionam com o Intune de formas específicas para proteger os dados empresariais. Para obter mais informações sobre como a aplicação Salesforce em particular funciona com o Intune (incluindo configurações de aplicações de MDM), veja [Aplicação Salesforce e Microsoft Intune](https://gallery.technet.microsoft.com/Salesforce-App-and-Intune-c47d44ee/file/188000/1/Salesforce%20App%20and%20Intune%20for%20external.pdf).

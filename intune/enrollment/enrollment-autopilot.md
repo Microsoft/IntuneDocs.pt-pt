@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a4ece1fd1d47213ff9da8b8fcc2e53155ad76628
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: e9da7acfc34dbd25902fc6fb9617ba395216a9b3
+ms.sourcegitcommit: 24487f078349795922dc497c952e8358cf767a1a
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76754546"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "76977806"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Inscrever dispositivos Windows no Intune com o Windows Autopilot  
 O Windows Autopilot simplifica a inscrição de dispositivos no Intune. A criação e manutenção de imagens personalizadas do sistema operativo são um processo moroso. Também poderá demorar a aplicar estas imagens personalizadas do sistema operativo a novos dispositivos para as preparar para utilização antes de as disponibilizar aos seus utilizadores finais. Com o Microsoft Intune e o Autopilot, pode fornecer novos dispositivos aos seus utilizadores finais sem ter de criar, manter e aplicar imagens de sistema operativo personalizadas aos dispositivos. Ao utilizar o Intune para gerir dispositivos do Autopilot, pode gerir políticas, perfis, aplicações, entre outros, após estes serem inscritos. Para uma descrição geral das vantagens, cenários e pré-requisitos, veja [Descrição geral do Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
@@ -163,6 +163,8 @@ Para ver alertas para dispositivos não atribuídos, no [centro de administraç�
 Você pode ver detalhes em cada dispositivo implantado por meio do piloto automático do Windows.
 Para ver o relatório, vá para o [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **dispositivos** > **monitorar** > **implantações do AutoPilot**.
 Os dados ficam disponíveis por 30 dias após a implantação.
+
+Este relatório está em pré-visualização. Os registos de implantação do dispositivo são atualmente apenas desencadeados por novos eventos de inscrição intune. Isto significa que qualquer implantação que não desencadeie uma nova inscrição intune não será captada por este relatório. Isto inclui qualquer tipo de reset que mantenha a inscrição e a parte do utilizador da luva Branca Autopilot.
 
 ## <a name="assign-a-user-to-a-specific-autopilot-device"></a>Atribuir um utilizador a um dispositivo do Autopilot específico
 
