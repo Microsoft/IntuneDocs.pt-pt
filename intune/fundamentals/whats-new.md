@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6db39fc2ac3b162a7728aacd8d255d65516dcbd2
-ms.sourcegitcommit: 9b29478f815e10c46c8030abe0146d601ce0e28c
-ms.translationtype: HT
+ms.openlocfilehash: 988f9cce63c8119c6ce813c4ef3f3cb93379d64e
+ms.sourcegitcommit: 32391f74241ee3289a76ccd5319fe700b800d427
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "77051563"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77075727"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 
@@ -60,8 +60,12 @@ Saiba mais sobre as novidades todas as semanas no Microsoft Intune. Também pode
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="app-management"></a>Gestão de aplicações
 
+#### <a name="microsoft-edge-version-77-and-later-on-windows-10-devices---5843584---"></a>Microsoft Edge versão 77 e mais tarde em dispositivos Windows 10<!-- 5843584 -->
+Intune agora suporta desinstalar a versão 77 do Microsoft Edge e mais tarde nos dispositivos do Windows 10. Para mais informações, consulte [Adicionar o Microsoft Edge para o Windows 10 ao Microsoft Intune](~/apps/apps-windows-edge.md).
+
 #### <a name="company-portal-app-improved-performance---6178652---"></a>App do Portal da Empresa melhorou o desempenho<!-- 6178652 -->
 A aplicação Portal da Empresa foi atualizada para suportar um melhor desempenho para dispositivos que utilizam processadores ARM64, como o Surface Pro X. Anteriormente, o Portal da Empresa operava num modo ARM32 emulado. Agora, a aplicação Portal da Empresa é compilada de forma nativa para ARM64. Para obter mais informações sobre a aplicação Portal da Empresa, consulte [como configurar a aplicação Microsoft Intune Company Portal](~/apps/company-portal-app.md).
+
 
 <!-- ########################## -->
 ## <a name="week-of-january-27-2020"></a>Semana de 27 de janeiro de 2020
@@ -173,8 +177,8 @@ Agora você pode atribuir marcas de escopo a ADMX (perfis de modelo administrati
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="app-management"></a>Gestão de aplicações
 
-#### <a name="retrieve-personal-recovery-key-from-mem-encrypted-macos-devices---4851745---"></a>Recuperar a chave de recuperação pessoal de dispositivos macOS criptografados com memória<!-- 4851745 -->
-Os usuários finais podem recuperar sua chave de recuperação pessoal (FileVault Key) usando o aplicativo Portal da Empresa do iOS. O dispositivo que tem a chave de recuperação pessoal deve ser registrado com o Intune e criptografado com o FileVault por meio do Intune. Utilizando a aplicação portal da empresa iOS, um utilizador final pode recuperar a sua chave de recuperação pessoal no seu dispositivo macOS encriptado clicando na **tecla Get Recovery**. Também pode recuperar a chave de recuperação de Intune selecionando **Dispositivos** > *o dispositivo macOS encriptado e matriculado* > Obter a chave de **recuperação**. Para mais informações sobre fileVault, consulte [a encriptação FileVault para macOS](~/protect/encrypt-devices.md#filevault-encryption-for-macos).
+#### <a name="retrieve-personal-recovery-key-from-mem-encrypted-macos-devices---4851745---"></a>Recuperar a chave de recuperação pessoal dos dispositivos macOS encriptados mEM<!-- 4851745 -->
+Os usuários finais podem recuperar sua chave de recuperação pessoal (FileVault Key) usando o aplicativo Portal da Empresa do iOS. O dispositivo que tenha a chave de recuperação pessoal deve ser matriculado com Intune e encriptado com fileVault através de Intune. Utilizando a aplicação portal da empresa iOS, um utilizador final pode recuperar a sua chave de recuperação pessoal no seu dispositivo macOS encriptado clicando na **tecla Get Recovery**. Também pode recuperar a chave de recuperação de Intune selecionando **Dispositivos** > *o dispositivo macOS encriptado e matriculado* > Obter a chave de **recuperação**. Para mais informações sobre fileVault, consulte [a encriptação FileVault para macOS](~/protect/encrypt-devices.md#filevault-encryption-for-macos).
 
 #### <a name="ios-and-ipados-user-licensed-vpp-apps---5619268---"></a>aplicativos de VPP licenciados para o usuário do iOS e iPadOS<!-- 5619268 -->
 Para dispositivos iOS e iPadOS registrados pelo usuário, os usuários finais não serão mais apresentados com aplicativos VPP com licença de dispositivo recém criados implantados como disponíveis. No entanto, os usuários finais continuarão a ver todos os aplicativos VPP licenciados pelo usuário dentro do Portal da Empresa. Para obter mais informações sobre aplicações VPP, consulte [como gerir aplicações iOS e macOS adquiridas através do Apple Volume Purchase Program com](~/apps/vpp-apps-ios.md)o Microsoft Intune .

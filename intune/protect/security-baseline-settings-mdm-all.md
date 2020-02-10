@@ -1,11 +1,11 @@
 ---
-title: Configurações de linhas de base de segurança do Intune para MDM do Windows 10
+title: Definições de base de segurança insinadas para o Windows 10 MDM
 titleSuffix: Microsoft Intune
-description: Examine os padrões e as configurações disponíveis para as diferentes versões da linha de base de segurança do MDM do Windows que você pode gerenciar com o Microsoft Intune.
+description: Reveja as definições de predefinição e de definição disponíveis para as diferentes versões da linha de segurança de segurança do Windows MDM que pode gerir com o Microsoft Intune.
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/05/2019
+ms.date: 02/07/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,164 +17,164 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6b2cb1b277f78ed81dea8c2d82eff6860182ea5d
-ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
+ms.openlocfilehash: abf23bff0d8889b57ab05c55b7e1464d0a9d2436
+ms.sourcegitcommit: 32391f74241ee3289a76ccd5319fe700b800d427
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74899259"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77075795"
 ---
-# <a name="windows-mdm-security-baseline-settings-for-intune"></a>Configurações de linha de base de segurança do MDM do Windows para o Intune
+# <a name="windows-mdm-security-baseline-settings-for-intune"></a>Definições de base de segurança do Windows MDM para Intune
 
-Exiba as configurações de linha de base de segurança do MDM que o Microsoft Intune dá suporte para dispositivos que executam o Windows 10 ou posterior. Os valores padrão para as configurações nessa linha de base representam a configuração recomendada para os dispositivos aplicáveis. Os padrões para uma linha de base podem não coincidir com os padrões de outras linhas de base de segurança ou de outras versões dessa linha de base.
+Ver as definições de base de segurança do MDM que o Microsoft Intune suporta para dispositivos que executam o Windows 10 ou mais tarde. Os valores predefinidos para as definições nesta linha de base representam a configuração recomendada para dispositivos aplicáveis. As predefinições de uma linha de base podem não corresponder a incumprimentos de outras linhas de base de segurança, ou de outras versões desta linha de base.
 
-- Para saber mais sobre como usar linhas de base de segurança com o Intune e como atualizar a versão de linha de base em seus perfis de linha de base de segurança, consulte [usar linhas de base de segurança](../security-baselines.md).
-- A versão de linha de base mais recente é a **linha de base de segurança MDM para maio de 2019**
+- Para aprender a usar as linhas de base de segurança com o Intune e como atualizar a versão de base nos seus perfis de base de segurança, consulte utilize as linhas de base de [segurança](../security-baselines.md).
+- A versão mais recente é MDM **Security Baseline para maio de 2019**
 
-Certifique-se de selecionar a versão da linha de base que você deseja exibir.
+Certifique-se de selecionar a versão da linha de base que pretende ver.
 <!-- Cookies might be required to enable some browsers to display the zone options -->
 
 ::: zone pivot="mdm-may-2019"
-**Linha de base de segurança do MDM para maio de 2019**:  
+**Base de Segurança do MDM para maio de 2019:**  
 > [!NOTE]
-> Em junho de 2019, a *linha de base de segurança do MDM para o modelo 2019 de maio* foi lançada como disponível para o público geral (não em versão prévia). Esta versão da linha de base de segurança substitui a linha de base anterior, a *linha de base de segurança do MDM de outubro de 2018*.  Perfis que foram criados antes da disponibilidade da linha de base de maio de 2019 não serão atualizados para refletir as configurações e os valores que estão na versão de maio de 2019.  Embora não seja possível criar novos perfis com base no modelo de visualização, você pode editar e continuar a usar perfis criados anteriormente com base no modelo de visualização.
+> Em junho de 2019, o modelo de Base de Segurança do MDM para maio de *2019* foi lançado como geralmente disponível (não em pré-visualização). Esta versão da linha de base de segurança substitui a linha de base anterior, a Base de Segurança do *MDM para outubro de 2018.*  Os perfis criados antes da disponibilidade da linha de base de maio de 2019 não serão atualizados para refletir as definições e valores que estão na versão de maio de 2019.  Embora não possa criar novos perfis com base no modelo de pré-visualização, pode editar e continuar a utilizar perfis que criou anteriormente baseados no modelo de pré-visualização.
 
-Para saber mais sobre o que mudou nesta versão da linha de base da versão anterior, consulte [o que mudou no novo modelo](#whats-changed-in-the-new-template).
+Para saber o que mudou nesta versão da linha de base da versão anterior, veja [o que mudou no novo modelo](#whats-changed-in-the-new-template).
 
 ::: zone-end
 ::: zone pivot="mdm-preview"
-**Visualização-linha de base de segurança do MDM para outubro de 2018**:  
+**Pré-visualização - Base de Segurança do MDM para outubro de 2018**:  
 > [!NOTE]
-> Esta é a versão de visualização da linha de base de segurança do MDM, lançada em outubro de 2018. Essa linha de base de visualização foi substituída em junho de 2019 pelo lançamento da *linha de base de segurança do MDM para o modelo de 2019 de maio* , que está disponível (não em versão prévia). Os perfis criados antes da disponibilidade da linha de base de segurança do MDM para a linha de base de *maio de 2019* não serão atualizados para refletir as configurações e os valores que estão na linha de base de segurança do MDM para a versão 2019 de maio. Embora não seja possível criar novos perfis com base no modelo de visualização, você pode editar e continuar a usar perfis criados anteriormente com base no modelo de visualização.
+> Esta é a versão de pré-visualização da linha de base de segurança do MDM, lançada em outubro de 2018. Esta linha de pré-visualização foi substituída em junho de 2019 pelo lançamento do modelo de Base de Segurança do MDM para maio de *2019,* que geralmente está disponível (não em pré-visualização). Os perfis criados antes da disponibilidade da linha de base de segurança do MDM para maio de *2019* não serão atualizados para refletir as definições e valores que estão na linha de base de segurança do MDM para maio de 2019. Embora não possa criar novos perfis com base no modelo de pré-visualização, pode editar e continuar a utilizar perfis que criou anteriormente baseados no modelo de pré-visualização.
 
 ::: zone-end
 ::: zone pivot="mdm-may-2019,mdm-preview"
 
 ## <a name="above-lock"></a>Acima do bloqueio
 
-Para obter mais informações, consulte [Policy CSP-AboveLock](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-abovelock) na documentação do Windows.  
+Para mais informações, consulte [Policy CSP - AboveLock](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-abovelock) na documentação do Windows.  
 
-- **Bloquear exibição de notificações do sistema**:  
-  Essa configuração de política permite impedir que as notificações do aplicativo apareçam na tela de bloqueio. Se você habilitar essa configuração de política, nenhuma notificação de aplicativo será exibida na tela de bloqueio. Se você desabilitar ou não definir essa configuração de política, os usuários poderão escolher quais aplicativos exibem notificações na tela de bloqueio.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067101)
+- **Exibição por bloco de notificações de torradas:**  
+  Esta definição de política permite evitar que as notificações das aplicações apareçam no ecrã de bloqueio. Se ativar esta definição de política, não são apresentadas notificações de aplicações no ecrã de bloqueio. Se desativar ou não configurar esta definição de política, os utilizadores podem escolher quais as aplicações que exibem notificações no ecrã de bloqueio.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067101)
 
   **Padrão**: Sim
 
 ::: zone-end
 ::: zone pivot="mdm-may-2019"
 
-- **Ativar voz de aplicativos da tela bloqueada**:  
-  **Padrão**: desabilitado
+- **Aplicativos de ativação por voz a partir de ecrã bloqueado:**  
+  **Predefinição**: Desativado
 
 ::: zone-end
 ::: zone pivot="mdm-may-2019,mdm-preview"
 
-## <a name="app-runtime"></a>Tempo de execução do aplicativo
+## <a name="app-runtime"></a>Tempo de execução da aplicação
 
-Para obter mais informações, consulte [Policy CSP-AppRuntime](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-appruntime) na documentação do Windows.
+Para mais informações, consulte [Policy CSP - AppRuntime](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-appruntime) na documentação do Windows.
 
-- **Contas da Microsoft opcionais para aplicativos da Windows Store**:  
-  Essa configuração de política permite controlar se as contas da Microsoft são opcionais para aplicativos da Windows Store que exigem uma conta para entrar. Essa política afeta apenas os aplicativos da Windows Store que dão suporte a ela. Se você habilitar essa configuração de política, os aplicativos da Windows Store que normalmente exigem um conta Microsoft de entrada permitirão que os usuários entrem com uma conta empresarial. Se você desabilitar ou não definir essa configuração de política, os usuários deverão entrar com um conta Microsoft.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067104)
+- **A Microsoft conta opcionalmente para aplicações da Windows Store:**  
+  Esta definição de política permite controlar se as contas da Microsoft são opcionais para aplicações da Windows Store que exigem uma conta para iniciar sessão. Esta política apenas afeta aplicações da Windows Store que a suportam. Se ativar esta definição de política, as aplicações da Windows Store que normalmente exigem uma conta Microsoft para iniciar sessão permitirão que os utilizadores assinem com uma conta empresarial. Se desativar ou não configurar esta definição de política, os utilizadores devem iniciar sessão com uma conta Microsoft.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067104)
   
-  **Padrão**: habilitado
+  **Predefinição**: Ativado
 
-## <a name="application-management"></a>Gerenciamento de aplicativos
+## <a name="application-management"></a>Gestão de Aplicações
 
-Para obter mais informações, consulte [Policy CSP-ApplicationManagement](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement) na documentação do Windows.
+Para mais informações, consulte [Policy CSP - ApplicationManagement](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement) na documentação do Windows.
 
 ::: zone-end
 ::: zone pivot="mdm-may-2019"
 
-- **Bloquear controle de usuário sobre instalações**:  
-  Essa configuração de política permite que os usuários alterem as opções de instalação que normalmente estão disponíveis somente para administradores do sistema. Se você habilitar essa configuração de política, alguns dos recursos de segurança do Windows Installer serão ignorados. Ele permite que as instalações concluam que, caso contrário, seriam interrompidas devido a uma violação de segurança. Se você desabilitar ou não definir essa configuração de política, os recursos de segurança do Windows Installer evitarão que os usuários alterem as opções de instalação normalmente reservadas para administradores do sistema, como especificar o diretório no qual os arquivos são instalados. Se Windows Installer detectar que um pacote de instalação permitiu que o usuário alterasse uma opção protegida, ele interromperá a instalação e exibirá uma mensagem. Esses recursos de segurança operam somente quando o programa de instalação está sendo executado em um contexto de segurança privilegiado no qual ele tem acesso aos diretórios negados ao usuário. Essa configuração de política é projetada para ambientes menos restritivos. Ele pode ser usado para burlar erros em um programa de instalação que impede a instalação do software.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067060)
+- **Bloqueie o controlo do utilizador sobre as instalações:**  
+  Esta definição de política permite que os utilizadores alterem as opções de instalação que normalmente estão disponíveis apenas para administradores do sistema. Se ativar esta definição de política, algumas das funcionalidades de segurança do Instalador do Windows são ignoradas. Permite que as instalações completem que, de outra forma, seriam interrompidas devido a uma violação de segurança. Se desativar ou não configurar esta definição de política, as funcionalidades de segurança do Instalador do Windows impedem que os utilizadores mudem as opções de instalação normalmente reservadas aos administradores do sistema, tais como especificar o diretório para o qual os ficheiros estão instalados. Se o Instalador do Windows detetar que um pacote de instalação permitiu ao utilizador alterar uma opção protegida, esta para a instalação e exibe uma mensagem. Estas funcionalidades de segurança funcionam apenas quando o programa de instalação está a funcionar num contexto de segurança privilegiado em que tem acesso a diretórios negados ao utilizador. Esta definição de política destina-se a ambientes menos restritivos. Pode ser usado para contornar erros num programa de instalação que impede a instalação do software.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067060)
 
   **Padrão**: Sim
 
-- **Bloquear instalações de aplicativos MSI com privilégios elevados**:  
-  Essa configuração de política direciona Windows Installer para usar permissões elevadas ao instalar qualquer programa no sistema.
+- **Instalações de aplicações MSI de bloco com privilégios elevados:**  
+  Esta definição de política direciona o Instalador do Windows a utilizar permissões elevadas quando instala qualquer programa no sistema.
 
-  - *Se você habilitar essa configuração de política*, os privilégios serão estendidos para todos os programas. Normalmente, esses privilégios são reservados para programas que são atribuídos ao usuário (oferecidos na área de trabalho), atribuídos ao computador (instalado automaticamente) ou estão disponíveis em Adicionar ou remover programas no painel de controle. Essa configuração de perfil permite que os usuários instalem programas que exigem acesso a diretórios que o usuário pode não ter permissão para exibir ou alterar, incluindo diretórios em computadores altamente restritos.
+  - *Se permitir esta definição*de política, os privilégios são alargados a todos os programas. Normalmente, estes privilégios são reservados para programas que são atribuídos ao utilizador (oferecidos no ambiente de trabalho), atribuídos ao computador (instalados automaticamente), ou estão disponíveis em Programas Add ou Remove no Painel de Controlo. Esta definição de perfil permite que os utilizadores instalem programas que requerem acesso a diretórios que o utilizador possa não ter permissão para visualizar ou alterar, incluindo diretórios em computadores altamente restritos.
 
-  - *Se você desabilitar ou não definir essa configuração de política*, o sistema aplicará as permissões do usuário atual ao instalar programas que um administrador de sistema não distribui ou oferece. Observação: essa configuração de política aparece nas pastas configuração do computador e configuração do usuário. Para tornar essa configuração de política eficaz, você deve habilitá-la em ambas as pastas. Cuidado: os usuários experientes podem aproveitar as permissões que essa configuração de política concede para alterar seus privilégios e obter acesso permanente a arquivos e pastas restritos. Não há garantia de que a versão de configuração do usuário dessa configuração de política seja segura.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067134)
+  - *Se desativar ou não configurar esta definição*de política, o sistema aplica as permissões do utilizador atual quando instala programas que um administrador do sistema não distribui ou oferece. Nota: Esta definição de política aparece tanto nas pastas de Configuração do Computador como na Configuração do Utilizador. Para tornar esta definição de política eficaz, deve ative-a em ambas as pastas. Atenção: Os utilizadores qualificados podem tirar partido das permissões que esta definição de políticas concede para alterar os seus privilégios e obter acesso permanente a ficheiros e pastas restritas. A versão de Configuração do Utilizador desta definição de política não é garantida para ser segura.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067134)
 
   **Padrão**: Sim
 
 ::: zone-end
 ::: zone pivot="mdm-preview,mdm-may-2019"
 
-- **Bloquear DVR de jogos (somente desktop)** :  
-  Configura se a gravação e a difusão de jogos são permitidas.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067056)
+- **Block game DVR (apenas desktop)** :  
+  Configura se é permitida a gravação e a transmissão de jogos.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067056)
 
   **Padrão**: Sim
 
 ## <a name="auto-play"></a>Reprodução automática
 
-Para obter mais informações, consulte [CSP da política-reprodução automática](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-autoplay) na documentação do Windows.
+Para mais informações, consulte [Policy CSP - Reprodução automática](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-autoplay) na documentação do Windows.
 
-- **Comportamento de execução automática padrão de reprodução automática**:  
-  Essa configuração afeta o comportamento padrão para comandos de Autorun. Os comandos de Autorun são armazenados em arquivos autorun. inf e podem iniciar programas de instalação ou outras rotinas. Quando *habilitado*, os administradores podem alterar o comportamento padrão de Autorun em um dispositivo que executa o Windows Vista ou posterior. O comportamento pode ser definido como: a) desabilitar completamente os comandos de autorun ou b) reverter para o comportamento anterior ao Windows Vista da execução automática do comando autorun. Quando definido como *desabilitado* ou *não configurado*, os dispositivos que executam o Windows Vista ou posterior solicitam ao usuário se um comando de Autorun deve ser executado.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067133)
+- Comportamento de **execução automática de reprodução automática de reprodução automática:**  
+  Esta definição afeta o comportamento padrão dos comandos Autorun. Os comandos Autorun são armazenados em ficheiros autorun.inf e podem lançar programas de instalação ou outras rotinas. Quando *ativado,* os administradores podem alterar o comportamento de autorun predefinido num dispositivo que executa o Windows Vista ou posteriormente. O comportamento pode ser definido para: a) desativar completamente os comandos autorun, ou b) reverter para o comportamento pré-Windows Vista de executar automaticamente o comando autorun. Quando definido para *Desativado* ou *Não Configurado*, os dispositivos que executam o Windows Vista ou posteriormente solicitam ao utilizador se um comando autorun deve ser executado.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067133)
 
-  **Padrão**: não executar
+  **Predefinição**: Não executar
 
-- **Modo de reprodução automática**:  
-  Essa configuração de política permite que você desative o recurso de reprodução automática. A reprodução automática começa a ler a partir de uma unidade assim que você insere a mídia na unidade. Como resultado, o arquivo de instalação de programas e a música em mídia de áudio são iniciados imediatamente. Com o Windows XP SP2 e versões anteriores, a reprodução automática é desabilitada por padrão em unidades removíveis, como a unidade de disquete (mas não a unidade de CD-ROM) e em unidades de rede. A partir do Windows XP SP2, a reprodução automática é habilitada para unidades removíveis também, incluindo unidades zip e alguns dispositivos de armazenamento em massa USB. Se você habilitar essa configuração de política, a reprodução automática será desabilitada em unidades de CD-ROM e de mídia removível ou desabilitada em todas as unidades. Essa configuração de política desabilita a reprodução automática em tipos de unidades adicionais. Você não pode usar essa configuração para habilitar a reprodução automática em unidades nas quais ela está desabilitada por padrão. Se você desabilitar ou não definir essa configuração de política, a reprodução automática será habilitada. Observação: essa configuração de política aparece nas pastas configuração do computador e configuração do usuário. Se as configurações de política entrarem em conflito, a configuração de política na configuração do computador terá precedência sobre a configuração de política na configuração do usuário.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2066793)
+- **Modo de reprodução automática:**  
+  Esta definição de política permite-lhe desligar a função De Reprodução Automática. A reprodução automática começa a ler a partir de uma unidade assim que inserir os meios de comunicação na unidade. Como resultado, o arquivo de configuração de programas e a música nos meios de áudio começam imediatamente. Com o Windows XP SP2 e anteriormente, a Reprodução Automática é desativada por padrão em unidades amovíveis, como a unidade de disco floppy (mas não a unidade CD-ROM) e nas unidades de rede. Começando pelo Windows XP SP2, a Reprodução Automática também está ativada para unidades amovíveis, incluindo unidades Zip e alguns dispositivos de armazenamento de massa USB. Se ativar esta definição de política, a Reprodução automática é desativada em CD-ROM e unidades de mídia amovíveis ou desativada em todas as unidades. Esta definição de política desativa a reprodução automática em tipos adicionais de unidades. Não é possível utilizar esta definição para ativar a Reprodução Automática nas unidades em que é desativada por defeito. Se desativar ou não configurar esta definição de política, o AutoPlay está ativado. Nota: Esta definição de política aparece tanto nas pastas de Configuração do Computador como na Configuração do Utilizador. Se as definições de política forem contraditórias, a definição de política na Configuração do Computador tem precedência sobre a definição de política na Configuração do Utilizador.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2066793)
 
-  **Padrão**: desabilitado
+  **Predefinição**: Desativado
 
-- **Bloquear reprodução automática para dispositivos que não são de volume**:  
-  Essa configuração de política não permite a reprodução automática de dispositivos MTP, como câmeras ou telefones. Se você habilitar essa configuração de política, a reprodução automática não será permitida para dispositivos MTP, como câmeras ou telefones. Se você desabilitar ou não definir essa configuração de política, a reprodução automática será habilitada para dispositivos que não são de volume.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067106)
+- **Bloqueie a reprodução automática para dispositivos não volume:**  
+  Esta definição de política proíbe o AutoPlay para dispositivos MTP, como câmaras ou telefones. Se ativar esta definição de política, o AutoPlay não é permitido para dispositivos MTP como câmaras ou telefones. Se desativar ou não configurar esta definição de política, o AutoPlay está ativado para dispositivos não volume.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067106)
 
-  **Padrão**: habilitado
+  **Predefinição**: Ativado
 
 ## <a name="bitlocker"></a>BitLocker
 
-Para obter mais informações, consulte [CSP de política-BitLocker](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-bitlocker) na documentação do Windows.
+Para mais informações, consulte [Policy CSP - BitLocker](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-bitlocker) na documentação do Windows.
 
-- **Política de unidade removível do BitLocker**:  
-  Essa configuração de política é usada para controlar o método de criptografia e a intensidade de codificação. Os valores dessa política determinam a força da codificação que o BitLocker usa para criptografia. As empresas podem querer controlar o nível de criptografia para aumentar a segurança (o AES-256 é mais seguro do que o AES-128). Se você habilitar essa configuração, poderá configurar um algoritmo de criptografia e a intensidade de codificação de chave para unidades de dados fixas, unidades do sistema operacional e unidades de dados removíveis individualmente. Para unidades fixas e do sistema operacional, recomendamos que você use o algoritmo XTS-AES. Para unidades removíveis, você deve usar AES-CBC 128-bit ou AES-CBC 256-bit se a unidade for usada em outros dispositivos que não estão executando o Windows 10, versão 1511 ou posterior. A alteração do método de criptografia não terá efeito se a unidade já estiver criptografada ou se a criptografia estiver em andamento. Nesses casos, essa configuração de política é ignorada.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067140)
+- Política de **unidade amovível BitLocker:**  
+  Esta definição de política é usada para controlar o método de encriptação e a força da cifra. Os valores desta política determinam a força da cifra que o BitLocker utiliza para encriptação. As empresas podem querer controlar o nível de encriptação para uma maior segurança (a AES-256 é mais forte do que a AES-128). Se ativar esta definição, pode configurar um algoritmo de encriptação e a força de cifra chave para unidades de dados fixas, unidades do sistema operativo e unidades de dados amovíveis individualmente. Para unidades fixas e funcionais do sistema, recomendamos que utilize o algoritmo XTS-AES. Para unidades amovíveis, deve utilizar AES-CBC 128-bit ou AES-CBC 256-bit se a unidade for utilizada noutros dispositivos que não estejam a executar o Windows 10, versão 1511 ou mais tarde. A alteração do método de encriptação não tem qualquer efeito se a unidade já estiver encriptada ou se a encriptação estiver em curso. Nestes casos, esta definição de política é ignorada.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067140)
 
-  Para a política de unidade removível do BitLocker, defina a seguinte configuração:
+  Para a política de unidade amovível BitLocker, configure a seguinte definição:
 
-  - **Exigir criptografia para acesso de gravação**:  
+  - **Exigir encriptação para o acesso**à escrita:  
     **Padrão**: Sim
 
 ::: zone-end
 ::: zone pivot="mdm-preview"
 
-- **Política de unidade removível do BitLocker**:  
-  Essa configuração de política é usada para controlar o método de criptografia e a intensidade de codificação. Os valores dessa política determinam a força da codificação que o BitLocker usa para criptografia. As empresas podem querer controlar o nível de criptografia para aumentar a segurança (o AES-256 é mais seguro do que o AES-128). Se você habilitar essa configuração, poderá configurar um algoritmo de criptografia e a intensidade de codificação de chave para unidades de dados fixas, unidades do sistema operacional e unidades de dados removíveis individualmente. Para unidades fixas e do sistema operacional, recomendamos que você use o algoritmo XTS-AES. Para unidades removíveis, você deve usar AES-CBC 128-bit ou AES-CBC 256-bit se a unidade for usada em outros dispositivos que não estão executando o Windows 10, versão 1511 ou posterior. A alteração do método de criptografia não terá efeito se a unidade já estiver criptografada ou se a criptografia estiver em andamento. Nesses casos, essa configuração de política é ignorada.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067140)
+- Política de **unidade amovível BitLocker:**  
+  Esta definição de política é usada para controlar o método de encriptação e a força da cifra. Os valores desta política determinam a força da cifra que o BitLocker utiliza para encriptação. As empresas podem querer controlar o nível de encriptação para uma maior segurança (a AES-256 é mais forte do que a AES-128). Se ativar esta definição, pode configurar um algoritmo de encriptação e a força de cifra chave para unidades de dados fixas, unidades do sistema operativo e unidades de dados amovíveis individualmente. Para unidades fixas e funcionais do sistema, recomendamos que utilize o algoritmo XTS-AES. Para unidades amovíveis, deve utilizar AES-CBC 128-bit ou AES-CBC 256-bit se a unidade for utilizada noutros dispositivos que não estejam a executar o Windows 10, versão 1511 ou mais tarde. A alteração do método de encriptação não tem qualquer efeito se a unidade já estiver encriptada ou se a encriptação estiver em curso. Nestes casos, esta definição de política é ignorada.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067140)
 
-  Para a política de unidade removível do BitLocker, defina a seguinte configuração:
+  Para a política de unidade amovível BitLocker, configure a seguinte definição:
 
-  - **Exigir criptografia para acesso de gravação**:  
+  - **Exigir encriptação para o acesso**à escrita:  
     **Padrão**: Sim  
 
-  - **Método de criptografia**:  
+  - **Método de encriptação:**  
     **Padrão**: AES 256bit CBC  
 
-- **Política de unidade fixa do BitLocker**:  
-  Essa configuração de política é usada para controlar o método de criptografia e a intensidade de codificação. Os valores dessa política determinam a força da codificação que o BitLocker usa para criptografia. As empresas podem querer controlar o nível de criptografia para aumentar a segurança (o AES-256 é mais seguro do que o AES-128). Se você habilitar essa configuração, poderá configurar um algoritmo de criptografia e a intensidade de codificação de chave para unidades de dados fixas, unidades do sistema operacional e unidades de dados removíveis individualmente. Para unidades fixas e do sistema operacional, recomendamos que você use o algoritmo XTS-AES. Para unidades removíveis, você deve usar AES-CBC 128-bit ou AES-CBC 256-bit se a unidade for usada em outros dispositivos que não estão executando o Windows 10, versão 1511 ou posterior. A alteração do método de criptografia não terá efeito se a unidade já estiver criptografada ou se a criptografia estiver em andamento. Nesses casos, essa configuração de política é ignorada.
+- Política de **unidade fixa BitLocker:**  
+  Esta definição de política é usada para controlar o método de encriptação e a força da cifra. Os valores desta política determinam a força da cifra que o BitLocker utiliza para encriptação. As empresas podem querer controlar o nível de encriptação para uma maior segurança (a AES-256 é mais forte do que a AES-128). Se ativar esta definição, pode configurar um algoritmo de encriptação e a força de cifra chave para unidades de dados fixas, unidades do sistema operativo e unidades de dados amovíveis individualmente. Para unidades fixas e funcionais do sistema, recomendamos que utilize o algoritmo XTS-AES. Para unidades amovíveis, deve utilizar AES-CBC 128-bit ou AES-CBC 256-bit se a unidade for utilizada noutros dispositivos que não estejam a executar o Windows 10, versão 1511 ou mais tarde. A alteração do método de encriptação não tem qualquer efeito se a unidade já estiver encriptada ou se a encriptação estiver em curso. Nestes casos, esta definição de política é ignorada.
 
-  Para a política de unidade fixa do BitLocker, defina as seguintes configurações:
+  Para a política de unidade fixa BitLocker, configure as seguintes definições:
 
-  - **Método de criptografia**:  
+  - **Método de encriptação:**  
     **Padrão**: AES 256bit XTS  
 
-- **Política de unidade do sistema BitLocker**:  
-  Essa configuração de política é usada para controlar o método de criptografia e a intensidade de codificação. Os valores dessa política determinam a força da codificação que o BitLocker usa para criptografia. As empresas podem querer controlar o nível de criptografia para aumentar a segurança (o AES-256 é mais seguro do que o AES-128). Se você habilitar essa configuração, poderá configurar um algoritmo de criptografia e a intensidade de codificação de chave para unidades de dados fixas, unidades do sistema operacional e unidades de dados removíveis individualmente. Para unidades fixas e do sistema operacional, recomendamos que você use o algoritmo XTS-AES. Para unidades removíveis, você deve usar AES-CBC 128-bit ou AES-CBC 256-bit se a unidade for usada em outros dispositivos que não estão executando o Windows 10, versão 1511 ou posterior. A alteração do método de criptografia não terá efeito se a unidade já estiver criptografada ou se a criptografia estiver em andamento. Nesses casos, essa configuração de política é ignorada.
+- **Política de acionamento do sistema BitLocker:**  
+  Esta definição de política é usada para controlar o método de encriptação e a força da cifra. Os valores desta política determinam a força da cifra que o BitLocker utiliza para encriptação. As empresas podem querer controlar o nível de encriptação para uma maior segurança (a AES-256 é mais forte do que a AES-128). Se ativar esta definição, pode configurar um algoritmo de encriptação e a força de cifra chave para unidades de dados fixas, unidades do sistema operativo e unidades de dados amovíveis individualmente. Para unidades fixas e funcionais do sistema, recomendamos que utilize o algoritmo XTS-AES. Para unidades amovíveis, deve utilizar AES-CBC 128-bit ou AES-CBC 256-bit se a unidade for utilizada noutros dispositivos que não estejam a executar o Windows 10, versão 1511 ou mais tarde. A alteração do método de encriptação não tem qualquer efeito se a unidade já estiver encriptada ou se a encriptação estiver em curso. Nestes casos, esta definição de política é ignorada.
 
-  Para a política de unidade de sistema do BitLocker, defina as seguintes configurações:
+  Para a política de unidade do sistema BitLocker, configure as seguintes definições:
 
-  - **Método de criptografia**:  
+  - **Método de encriptação:**  
     **Padrão**: AES 256bit XTS
 
 ::: zone-end
@@ -182,1415 +182,1620 @@ Para obter mais informações, consulte [CSP de política-BitLocker](https://doc
 
 ## <a name="browser"></a>Browser
 
-Para obter mais informações, consulte [Policy CSP-browser](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser) na documentação do Windows.
+Para mais informações, consulte [Policy CSP - Browser](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser) na documentação do Windows.
 
-- **Exigir SmartScreen para o Microsoft Edge**:  
-  O Microsoft Edge usa o Microsoft defender SmartScreen (ativado) para proteger os usuários contra possíveis golpes de phishing e softwares mal-intencionados por padrão. Além disso, por padrão, os usuários não podem desabilitar (desligar) o Microsoft defender SmartScreen. Habilitar essa política desativa o Microsoft defender SmartScreen e impede que os usuários o liguem. Não configure essa política para permitir que os usuários optem por ativar ou desativar o Microsoft defender SmartScreen.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067029)
+- **Requerer smartScreen para o Microsoft Edge**:  
+  O Microsoft Edge utiliza o Microsoft Defender SmartScreen (ligado) para proteger os utilizadores de potenciais esquemas de phishing e software malicioso por padrão. Além disso, por padrão, os utilizadores não podem desativar (desligar) o Microsoft Defender SmartScreen. Ativar esta política desliga o Microsoft Defender SmartScreen e impede que os utilizadores o desliguem. Não configure esta política para permitir que os utilizadores optem por ligar ou desligar o SmartScreen do Microsoft.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067029)
 
   **Padrão**: Sim
 
-- **Bloquear acesso a sites mal-intencionados**:  
-  Por padrão, o Microsoft Edge permite que os usuários ignorem (ignoram) os avisos do Microsoft defender SmartScreen sobre sites potencialmente mal-intencionados, permitindo que eles continuem no site. Com essa política, no entanto, você pode configurar o Microsoft Edge para impedir que os usuários ignorem os avisos, bloqueando-os de continuar para o site.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067040)
+- **Bloqueie o acesso malicioso ao site:**  
+  Por padrão, o Microsoft Edge permite que os utilizadores contornem (ignore) os avisos do Microsoft Defender SmartScreen sobre sites potencialmente maliciosos, permitindo-lhes continuar no site. No entanto, com esta política, pode configurar o Microsoft Edge para evitar que os utilizadores convertem os avisos, impedindo-os de continuarem no site.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067040)
   
   **Padrão**: Sim
   
-- **Bloquear download de arquivo não verificado**:  
-  Por padrão, o Microsoft Edge permite que os usuários ignorem (ignoram) os avisos do Microsoft defender SmartScreen sobre arquivos potencialmente mal-intencionados, permitindo que eles continuem baixando os arquivos não verificados. Habilitar essa política impede que os usuários ignorem os avisos, bloqueando-os do download dos arquivos não verificados.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067023)
+- Bloquear o download de **ficheiros não verificados:**  
+  Por predefinição, o Microsoft Edge permite que os utilizadores contornem (ignore) os avisos do Microsoft Defender SmartScreen sobre ficheiros potencialmente maliciosos, permitindo-lhes continuar a descarregar os ficheiros não verificados. Permitir esta política impede que os utilizadores convertem os avisos, impedindo-os de descarregar os ficheiros não verificados.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067023)
   
   **Padrão**: Sim
   
-- **Bloquear Gerenciador de senhas**:  
-  Por padrão, o Microsoft Edge usa o Gerenciador de senhas automaticamente, permitindo que os usuários gerenciadorem senhas localmente. Desabilitar essa política restringe o Microsoft Edge de usar o Gerenciador de senhas. Não configure essa política se desejar permitir que os usuários escolham salvar e gerenciar senhas localmente usando o Gerenciador de senhas.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067128)
+- **Gestor de passwords de bloco**:  
+  Por padrão, o Microsoft Edge utiliza o Password Manager automaticamente, permitindo que os utilizadores registem senhas localmente. A desativação desta política impede o Microsoft Edge de utilizar o Password Manager. Não configure esta política se pretender que os utilizadores optem por guardar e gerir senhas localmente utilizando o Password Manager.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067128)
   
   **Padrão**: Sim
   
-- **Impedir substituições de erro de certificado**:  
-  Essa configuração de política impede que o usuário ignore erros de certificado de protocolo SSL/TLS (segurança de camada de transporte) que interrompem a navegação (como erros "expirados", "revogados" ou "incompatibilidade de nome") no Internet Explorer. Se você habilitar essa configuração de política, o usuário não poderá continuar a navegação. Se você desabilitar ou não definir essa configuração de política, o usuário poderá optar por ignorar os erros de certificado e continuar a navegação.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067126)
+- **Impedir o utilizador de ultrapassar erros de certificado:**  
+  Esta definição de política impede o utilizador de ignorar erros de certificado de segurança de camadas seguras (SSL/TLS) que interrompem a navegação (tais como erros "expirados", "revogados" ou "desajuste de nomes") no Internet Explorer. Se ativar esta definição de política, o utilizador não pode continuar a navegar. Se desativar ou não configurar esta definição de política, o utilizador pode optar por ignorar erros de certificado e continuar a navegar.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067126)
   
   **Padrão**: Sim
 
 ## <a name="connectivity"></a>Conectividade
 
-Para obter mais informações, consulte [CSP da política-conectividade](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity) na documentação do Windows.
+Para mais informações, consulte [Política CSP - Conectividade](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity) na documentação do Windows.
 
-- **Bloquear o download da Internet para publicação na Web e assistentes de ordenação online**:  
-  Essa configuração de política especifica se o Windows deve baixar uma lista de provedores para os assistentes de publicação na Web e de ordenação online. Esses assistentes permitem que os usuários selecionem em uma lista de empresas que fornecem serviços como armazenamento online e impressão fotográfica. Por padrão, o Windows exibe os provedores baixados de um site do Windows, além dos provedores especificados no registro. Se você habilitar essa configuração de política, o Windows não baixará os provedores e somente os provedores de serviço armazenados em cache na exibição do Registro local. Se você desabilitar ou não definir essa configuração de política, uma lista de provedores será baixada quando o usuário usar os assistentes de publicação na Web ou de ordenação online. Para obter mais informações que incluem detalhes sobre como especificar provedores de serviço no registro, consulte a documentação para os assistentes de publicação na Web e ordenação online.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067136)
+- Bloqueie o **download da Internet para editores web e assistentes**de encomendas online:  
+  Esta definição de política especifica se o Windows deve descarregar uma lista de fornecedores para os assistentes de publicação web e encomendas online. Estes assistentes permitem que os utilizadores selecionem a partir de uma lista de empresas que fornecem serviços como armazenamento on-line e impressão fotográfica. Por padrão, o Windows apresenta fornecedores descarregados de um website do Windows, além dos fornecedores especificados no registo. Se ativar esta definição de política, o Windows não descarrega fornecedores e apenas os prestadores de serviços que estão em cache no ecrã do registo local. Se desativar ou não configurar esta definição de política, uma lista de fornecedores descarrega quando o utilizador utiliza os assistentes de publicação web ou de encomendas online. Para mais informações que incluam detalhes sobre a especificação dos prestadores de serviços no registo, consulte a documentação para a publicação web e assistentes de encomendas online.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067136)
   
-  **Padrão**: habilitado
+  **Predefinição**: Ativado
 
 ::: zone-end
 ::: zone pivot="mdm-may-2019"
 
-- **Configurar o acesso seguro a caminhos UNC**:  
-  Essa configuração de política define o acesso seguro aos caminhos UNC. Se você habilitar essa política, o Windows só permitirá o acesso aos caminhos UNC especificados depois de atender aos requisitos de segurança adicionais.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067243)
+- **Configure o acesso seguro aos caminhos do CNU:**  
+  Esta definição de políticas configura o acesso assegurado aos caminhos da CNU. Se ativar esta política, o Windows só permite o acesso aos caminhos específicos do CNU após o cumprimento de requisitos de segurança adicionais.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067243)
 
-  **Padrão**: Configure o Windows para permitir o acesso somente aos caminhos UNC especificados depois de atender aos requisitos de segurança adicionais.
+  **Predefinição**: Configure o Windows apenas para permitir o acesso aos caminhos do CNU especificados após o cumprimento de requisitos de segurança adicionais.
 
-  Quando *Configurar o Windows para permitir somente o acesso aos caminhos UNC especificados depois de atender aos requisitos de segurança adicionais* estiver selecionado, você poderá configurar a *lista de caminhos UNC protegidos*.
+  Quando configurar o *Windows para permitir apenas o acesso aos caminhos específicos do CNU após* o cumprimento dos requisitos de segurança adicionais, pode configurar a lista de *caminhos unc endurecido*.
 
-  - **Lista de caminhos UNC protegidos**:  
-    Selecione **Adicionar** para especificar sinalizadores de segurança e caminhos de servidor adicionais.
+  - Lista de **caminhos endurecidos da CNU:**  
+    Selecione **Adicionar** para especificar bandeiras de segurança adicionais e caminhos do servidor.
 
 ::: zone-end
 ::: zone pivot="mdm-preview,mdm-may-2019"
 
-- **Bloquear o download de drivers de impressão via http**:  
-  Essa configuração de política especifica se deve permitir que este cliente baixe pacotes de driver de impressão via HTTP. Para configurar a impressão HTTP, os drivers que não são da caixa de entrada precisam ser baixados via HTTP. Observação: essa configuração de política não impede que o cliente imprima em impressoras na intranet ou na Internet por HTTP. Ele proíbe apenas o download de drivers que ainda não estão instalados localmente. Se você habilitar essa configuração de política, os drivers de impressão não poderão ser baixados via HTTP. Se você desabilitar ou não definir essa configuração de política, os usuários poderão baixar drivers de impressão via HTTP.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067141)
+- **Bloquear o download de condutores de impressão em HTTP:**  
+  Esta definição de política especifica se permite que este cliente descarregue os pacotes de controladores impressos em HTTP. Para configurar a impressão HTTP, os condutores que não inbox precisam de ser descarregados em HTTP. Nota: Esta definição de política não impede o cliente de imprimir para impressoras na Intranet ou na Internet através de HTTP. Apenas proíbe o download de condutores que ainda não estejam instalados localmente. Se ativar esta definição de política, os controladores de impressão não podem ser descarregados em HTTP. Se desativar ou não configurar esta definição de política, os utilizadores podem descarregar os controladores de impressão em HTTP.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067141)
   
-  **Padrão**: habilitado
+  **Predefinição**: Ativado
 
-## <a name="credentials-delegation"></a>Delegação de credenciais
+## <a name="credentials-delegation"></a>Delegação de Credenciais
 
-Para obter mais informações, consulte [Policy CSP-CredentialsDelegation](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-credentialsdelegation) na documentação do Windows.
+Para mais informações, consulte [Política CSP - CredenciaisDelegação](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-credentialsdelegation) na documentação do Windows.
 
-- **Delegação de host remoto de credenciais não exportáveis**:  
-  O host remoto permite a delegação de credenciais não exportáveis. Ao usar a delegação de credenciais, os dispositivos fornecem uma versão exportável de credenciais para o host remoto, o que expõe os usuários ao risco de roubo de credenciais de invasores no host remoto. Se você habilitar essa configuração de política, o host oferecerá suporte ao administrador restrito ou ao modo de proteção de credencial remota. Se você desabilitar ou não definir essa configuração de política, não haverá suporte para administração restrita e modo de proteção de credencial remota. O usuário sempre precisará passar suas credenciais para o host.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067103)
+- **Delegação de hospedeiroremoto de credenciais não exportáveis:**  
+  O hospedeiro remoto permite a delegação de credenciais não exportáveis. Ao utilizar a delegação credencial, os dispositivos fornecem uma versão exportável de credenciais ao hospedeiro remoto, o que expõe os utilizadores ao risco de roubo de credenciais de agressores no hospedeiro remoto. Se ativar esta definição de política, o hospedeiro suporta o modo Detenção Restrita ou Guarda Credencial Remota. Se desativar ou não configurar esta definição de política, a Administração Restrita e o modo de Guarda Credencial Remota não são suportados. O utilizador terá sempre de passar as suas credenciais ao anfitrião.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067103)
   
-  **Padrão**: habilitado
+  **Predefinição**: Ativado
 
-## <a name="credentials-ui"></a>IU de credenciais
+## <a name="credentials-ui"></a>Credenciais UI
 
-Para obter mais informações, consulte [Policy CSP-CredentialsUI](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-credentialsui) na documentação do Windows.
+Para mais informações, consulte [Policy CSP - CredentialsUI](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-credentialsui) na documentação do Windows.
 
-- **Enumerar administradores**:  
-  Essa configuração de política controla se as contas de administrador são exibidas quando um usuário tenta elevar um aplicativo em execução. Por padrão, as contas de administrador não são exibidas quando o usuário tenta elevar um aplicativo em execução. Se você habilitar essa configuração de política, todas as contas de administrador local no PC são exibidas para que o usuário possa escolher uma e digitar a senha correta. Se você desabilitar essa configuração de política, os usuários sempre precisarão digitar um nome de usuário e senha para elevar.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067021)
+- **Enumerar os administradores:**  
+  Esta definição de política controla se as contas do administrador exibem quando um utilizador tenta elevar uma aplicação em execução. Por predefinição, as contas do administrador não são apresentadas quando o utilizador tenta elevar uma aplicação de execução. Se ativar esta definição de política, todas as contas do administrador local no visor do PC para que o utilizador possa escolher uma e introduzir a palavra-passe correta. Se desativar esta definição de política, os utilizadores serão sempre obrigados a escrever um nome de utilizador e uma palavra-passe para elevar.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067021)
 
-  **Padrão**: desabilitado
+  **Predefinição**: Desativado
 
 ## <a name="data-protection"></a>Proteção de dados
 
-Para obter mais informações, consulte [CSP de política-dataprotection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection) na documentação do Windows.
+Para mais informações, consulte [Policy CSP - DataProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection) na documentação do Windows.
 
-- **Bloquear o acesso direto à memória**:  
-  Essa configuração de política permite bloquear o DMA (acesso direto à memória) para todas as portas de downstream PCI conectadas a quente até que um usuário faça logon no Windows. Quando um usuário fizer logon, o Windows enumerará os dispositivos PCI conectados às portas PCI plug-host. Toda vez que o usuário bloqueia a máquina, o DMA é bloqueado em portas PCI de plugue a quente sem dispositivos filhos até que o usuário faça logon novamente. Os dispositivos que já foram enumerados quando o computador foi desbloqueado continuarão funcionando até serem desconectados. Essa configuração de política só é imposta quando o BitLocker ou a criptografia de dispositivo está habilitada.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067031)
+- **Bloquear o acesso à memória direta:**  
+  Esta definição de política permite bloquear o acesso à memória direta (DMA) para todas as portas a jusante pluggable a quente até que um utilizador inicie sessão no Windows. Assim que um utilizador iniciar sessão, o Windows enumerará os dispositivos PCI ligados às portas PCI plug do hospedeiro. Sempre que o utilizador bloqueia a máquina, o DMA é bloqueado em portas PCI de ficha quente sem dispositivos para crianças até que o utilizador volte a entrar. Os dispositivos que já estavam enumerados quando a máquina foi desbloqueada continuarão a funcionar até desligarem a tomada. Esta definição de política só é aplicada quando o BitLocker ou a encriptação do dispositivo estiverem ativadas.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067031)
 
   **Padrão**: Sim
 
-## <a name="device-guard"></a>Device Guard
+## <a name="device-guard"></a>Guarda de Dispositivos
 
-Para obter mais informações, consulte [Policy CSP-DeviceGuard](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceguard) na documentação do Windows.
+Para mais informações, consulte [Policy CSP - DeviceGuard](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceguard) na documentação do Windows.
 
-- **Proteção de credenciais**:  
-  Essa configuração permite que os usuários ativem o Credential Guard com segurança baseada em virtualização para ajudar a proteger as credenciais na próxima reinicialização.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067044)
+- **Guarda credencial:**  
+  Esta definição permite que os utilizadores liguem a Guarda Credencial com segurança baseada em virtualização para ajudar a proteger as credenciais no próximo reboot.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067044)
 
-  **Padrão**: habilitar com bloqueio de UEFI
+  **Predefinição**: Ativar com bloqueio UEFI
 
 ::: zone-end
 ::: zone pivot="mdm-may-2019"
 
-- **Segurança baseada em virtualização**:  
-  **Padrão**: habilitar vbs com inicialização segura
+- **Segurança baseada em virtualização:**  
+  **Predefinição**: Ativar o VBS com uma bota segura
 
 ::: zone-end
 ::: zone pivot="mdm-preview,mdm-may-2019"
 
-- **Habilitar a segurança baseada em virtualização**:  
-  Ativa a VBS (segurança baseada em virtualização) na próxima reinicialização. A segurança baseada em Virtualização utiliza o Windows Hypervisor para dar suporte aos serviços de segurança e requer o Windows Hypervisor.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067066)
+- **Ativar a segurança baseada na virtualização:**  
+  Liga a segurança baseada em virtualização (VBS) no próximo reboot. A segurança baseada em Virtualização utiliza o Windows Hypervisor para dar suporte aos serviços de segurança e requer o Windows Hypervisor.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067066)
   
   **Padrão**: Sim
 
-- **Inicie o System Guard**:  
-  **Padrão**: habilitado
+- **Guarda do sistema**de lançamento:  
+  **Predefinição**: Ativado
 
-## <a name="device-installation"></a>Instalação do dispositivo
+## <a name="device-installation"></a>Instalação de Dispositivos
 
-Para obter mais informações, consulte [Policy CSP-DeviceInstallation](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation) na documentação do Windows.
+Para mais informações, consulte [Policy CSP - Instalação](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation) de Dispositivos na documentação do Windows.
 
-- **Instalação de dispositivo de hardware por identificadores de dispositivo**:  
-  Essa configuração de política permite especificar uma lista de Plug and Play IDs de hardware e IDs compatíveis para dispositivos que o Windows é impedido de instalar. Essa configuração de política tem precedência sobre qualquer outra configuração de diretiva que permita que o Windows instale um dispositivo. Se você habilitar essa configuração de política, o Windows não poderá instalar um dispositivo cuja ID de hardware ou ID compatível apareça na lista que você criar. Se você habilitar essa configuração de política em um servidor de área de trabalho remota, a configuração de política afetará o redirecionamento dos dispositivos especificados de um cliente de área de trabalho remota para o servidor de área de trabalho remota. Se você desabilitar ou não definir essa configuração de política, os dispositivos poderão instalar e atualizar conforme permitido ou impedido por outras configurações de política.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2066794)
+- Instalação de dispositivos de **hardware por identificadores**de dispositivos:  
+  Esta definição de política permite especificar uma lista de IDs de hardware plug e play e IDs compatíveis para dispositivos que o Windows está impedido de instalar. Esta definição de política tem precedência sobre qualquer outra definição de política que permita ao Windows instalar um dispositivo. Se ativar esta definição de política, o Windows não pode instalar um dispositivo cujo ID de hardware ou ID compatível aparece na lista que cria. Se ativar esta definição de política num servidor de ambiente de trabalho remoto, a definição de política afeta a reorientação dos dispositivos especificados de um cliente de ambiente de trabalho remoto para o servidor de ambiente de trabalho remoto. Se desativar ou não configurar esta definição de política, os dispositivos podem instalar e atualizar conforme permitido ou impedido por outras definições de política.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2066794)
 
-  **Padrão**: bloquear a instalação do dispositivo de hardware
+  **Predefinição**: Bloquear a instalação de dispositivos de hardware
 
-  Quando *Bloquear instalação de dispositivo de hardware* estiver selecionado, as configurações a seguir estarão disponíveis.
+  Quando a instalação do *dispositivo de hardware block* for selecionada, as seguintes definições estão disponíveis.
 
-  - **Remover dispositivos de hardware correspondentes**:  
-    Essa configuração está disponível somente quando *a instalação do dispositivo de hardware por identificadores de dispositivo* está definida para *bloquear a instalação do dispositivo de hardware*.
-
-    **Padrão**: Sim
-
-  - **Identificadores de dispositivo de hardware que são bloqueados**:  
-    Essa configuração está disponível somente quando *a instalação do dispositivo de hardware por identificadores de dispositivo* está definida para *bloquear a instalação do dispositivo de hardware*.
+  - **Remova os dispositivos de hardware correspondentes:**  
+    Esta definição só está disponível quando a instalação de dispositivos de *hardware por identificadores* de dispositivo saem definidas para bloquear a instalação do dispositivo de *hardware*.
 
     **Padrão**: Sim
 
-- **Instalação de dispositivo de hardware por classes de instalação**:  
-  Essa configuração de política permite que você especifique uma lista de identificadores globais exclusivos (GUIDs) de classe de instalação de dispositivo para drivers de dispositivo que o Windows é impedido de instalar. Essa configuração de política tem precedência sobre qualquer outra configuração de diretiva que permita que o Windows instale um dispositivo. Se você habilitar essa configuração de política, o Windows não poderá instalar ou atualizar drivers de dispositivo cujos GUIDs de classe de instalação de dispositivo aparecerão na lista que você criar. Se você habilitar essa configuração de política em um servidor de área de trabalho remota, a configuração de política afetará o redirecionamento dos dispositivos especificados de um cliente de área de trabalho remota para o servidor de área de trabalho remota. Se você desabilitar ou não definir essa configuração de política, o Windows poderá instalar e atualizar dispositivos como permitidos ou impedidos por outras configurações de política.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067048)
+  - **Identificadores de dispositivos de hardware bloqueados:**  
+    Esta definição só está disponível quando a instalação de dispositivos de *hardware por identificadores* de dispositivo saem definidas para bloquear a instalação do dispositivo de *hardware*.
 
-  **Padrão**: bloquear a instalação do dispositivo de hardware
+    **Padrão**: Sim
 
-  Quando *Bloquear instalação de dispositivo de hardware* estiver selecionado, as configurações a seguir estarão disponíveis.
+- Instalação de dispositivos de **hardware por classes de configuração:**  
+  Esta definição de política permite especificar uma lista de identificadores de configuração de dispositivos globalmente únicos (GUIDs) para os controladores de dispositivos que o Windows está impedido de instalar. Esta definição de política tem precedência sobre qualquer outra definição de política que permita ao Windows instalar um dispositivo. Se ativar esta definição de política, o Windows não pode instalar ou atualizar os controladores de dispositivos cuja classe GUIDs de configuração do dispositivo aparece na lista que cria. Se ativar esta definição de política num servidor de ambiente de trabalho remoto, a definição de política afeta a reorientação dos dispositivos especificados de um cliente de ambiente de trabalho remoto para o servidor de ambiente de trabalho remoto. Se desativar ou não configurar esta definição de política, o Windows pode instalar e atualizar dispositivos conforme permitido ou impedido por outras definições de política.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067048)
 
-  - **Remover dispositivos de hardware correspondentes**:  
-    Essa configuração está disponível somente quando *a instalação do dispositivo de hardware por classes de instalação* está definida para *bloquear a instalação do dispositivo de hardware*.
+  **Predefinição**: Bloquear a instalação de dispositivos de hardware
 
-    **Padrão**: *nenhuma configuração padrão*
+  Quando a instalação do *dispositivo de hardware block* for selecionada, as seguintes definições estão disponíveis.
 
-  - **Identificadores de dispositivo de hardware que são bloqueados**:  
-    Essa configuração está disponível somente quando *a instalação do dispositivo de hardware por classes de instalação* está definida para *bloquear a instalação do dispositivo de hardware*.
+  - **Remova os dispositivos de hardware correspondentes:**  
+    Esta definição só está disponível quando a instalação do *dispositivo de hardware por classes* de configuração estiver definida para bloquear a instalação de dispositivos de *hardware*.
 
-    **Padrão**: *nenhuma configuração padrão*
+    **Predefinição**: *Nenhuma configuração predefinida*
 
-## <a name="device-lock"></a>Bloqueio de dispositivo
+  - **Identificadores de dispositivos de hardware bloqueados:**  
+    Esta definição só está disponível quando a instalação do *dispositivo de hardware por classes* de configuração estiver definida para bloquear a instalação de dispositivos de *hardware*.
 
-Para obter mais informações, consulte [Policy CSP-DeviceLock](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock) na documentação do Windows.
+    **Predefinição**: *Nenhuma configuração predefinida*
 
-- **Impedir o uso da câmera**:  
-  Desabilita a opção de alternância da câmera da tela de bloqueio em configurações do PC e impede que uma câmera seja invocada na tela de bloqueio. Por padrão, os usuários podem habilitar a invocação de uma câmera disponível na tela de bloqueio. Se você habilitar essa configuração, os usuários não poderão habilitar ou desabilitar o acesso à câmera da tela de bloqueio nas configurações do PC e a câmera não poderá ser invocada na tela de bloqueio.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067052)
+## <a name="device-lock"></a>Bloqueio de dispositivos
 
-  **Padrão**: habilitado
+Para mais informações, consulte [Policy CSP - DeviceLock](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock) na documentação do Windows.
 
-- **Exigir senha**:  
-  Especifica se o bloqueio de dispositivo está habilitado.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067049)  
+- Impedir a **utilização da câmara:**  
+  Desativa o interruptor de alternância da câmara de bloqueio nas definições do PC e impede que uma câmara seja invocada no ecrã de bloqueio. Por predefinição, os utilizadores podem ativar a invocação de uma câmara disponível no ecrã de bloqueio. Se ativar esta definição, os utilizadores não podem ativar ou desativar o acesso da câmara de bloqueio nas definições do PC, e a câmara não pode ser invocada no ecrã de bloqueio.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067052)
+
+  **Predefinição**: Ativado
+
+- **Exigir senha:**  
+  Especifica se o bloqueio do dispositivo está ativado.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067049)  
 
   **Padrão**: Sim
   
-  Quando *exigir senha* estiver definido como *Sim*, as configurações a seguir estarão disponíveis.
+  Quando *a palavra-passe requerida* for definida para *Sim,* as seguintes definições estão disponíveis.
 
-  - **Contagem mínima de conjuntos de caracteres de senha**:  
-    O número de tipos de elementos complexos (letras maiúsculas e minúsculas, números e pontuação) necessários para um PIN ou senha forte. O PIN impõe o seguinte comportamento para dispositivos móveis e de desktop: 1-dígitos somente dois dígitos e letras minúsculas são necessários três dígitos, letras minúsculas e letras maiúsculas são necessárias. Sem suporte em contas da Microsoft da área de trabalho e contas de domínio. 4-dígitos, letras minúsculas, letras maiúsculas e caracteres especiais são necessários. Sem suporte na área de trabalho. O valor predefinido é 1.  
-    [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067055)
+  - **Contagem mínima de caracteres:**  
+    O número de tipos de elementos complexos (letras maiúsculas e minúsculas, números e pontuação) necessários para um PIN ou palavra-passe forte. Pin aplica o seguinte comportamento para dispositivos de ambiente de trabalho e dispositivos móveis: 1 - Dígitos apenas 2 - Dígitos e letras minúsculas são necessários 3 - São necessários dígitos, letras minúsculas e letras maiúsculas. Não suportado nas contas desktop da Microsoft e nas contas de domínio. 4 - São necessários dígitos, letras minúsculas, letras maiúsculas e caracteres especiais. Não suportado no ambiente de trabalho. O valor predefinido é 1.  
+    [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067055)
 
     **Padrão**: 3
 
   - **Número de falhas de início de sessão antes de apagar o dispositivo**:  
-    O número de falhas de autenticação permitidas antes que o dispositivo seja apagado. Um valor de 0 desabilita A funcionalidade de apagamento do dispositivo.  
-    [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067030)
+    O número de falhas de autenticação permitidas antes de o dispositivo ser apagado. Um valor de 0 desativa a funcionalidade de limpeza do dispositivo.  
+    [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067030)
 
     **Padrão**: 10  
 
   - **Expiração da palavra-passe (dias)** :  
-    A configuração de política de duração máxima da senha determina por quanto tempo (em dias) a senha pode ser usada antes que o sistema exija que o usuário a altere. Você pode definir senhas para expirar após um número de dias entre 1 e 999, ou pode especificar que as senhas nunca expirem definindo o número de dias como 0. Se a duração máxima da senha estiver entre 1 e 999 dias, a duração mínima da senha deverá ser menor que a duração máxima da senha. Se a duração máxima da senha for definida como 0, a duração mínima da senha poderá ser qualquer valor entre 0 e 998 dias.  
-    [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067028)
+    A definição máxima da política de idade da palavra-passe determina quanto tempo (em dias) uma palavra-passe pode ser usada antes que o sistema exija que o utilizador a altere. Pode definir senhas para expirar após um número de dias entre 1 e 999, ou pode especificar que as palavras-passe nunca expiram definindo o número de dias a 0. Se a idade máxima da senha for entre 1 e 999 dias, a idade mínima da senha deve ser inferior à idade máxima da senha. Se a idade máxima da senha for fixada para 0, a idade mínima da senha pode ser qualquer valor entre 0 e 998 dias.  
+    [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067028)
 
     **Padrão**: 60
 
   - **Tipo obrigatório de palavra-passe**:  
-    Determina o tipo de PIN ou senha necessária.  
-    [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067027)
+    Determina o tipo de PIN ou palavra-passe necessário.  
+    [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067027)
 
-    **Padrão**: alfanumérico
+    **Padrão**: Alfanumérico
 
   - **Comprimento mínimo da palavra-passe**:  
-    A configuração de política comprimento mínimo da senha determina o número mínimo de caracteres que podem criar uma senha para uma conta de usuário. Você pode definir um valor entre 1 e 14 caracteres ou pode estabelecer que nenhuma senha seja necessária definindo o número de caracteres como 0.  
-    [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067024)
+    A definição mínima de comprimento da palavra-passe determina o menor número de caracteres que podem compor uma palavra-passe para uma conta de utilizador. Pode definir um valor entre 1 e 14 caracteres, ou pode estabelecer que não é necessária nenhuma palavra-passe definindo o número de caracteres para 0.  
+    [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067024)
 
     **Padrão**: 8
 
-  - **Bloquear senhas simples**:  
-    Especifica se os PINs ou senhas, como "1111" ou "1234", são permitidos. Para a área de trabalho, ele também controla o uso de senhas de imagem.  
-    [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067127)
+  - **Bloqueie senhas simples:**  
+    Especifica se são permitidas PINs ou palavras-passe como "1111" ou "1234". Para o ambiente de trabalho, também controla a utilização de palavras-passe de imagem.  
+    [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067127)
 
     **Padrão**: Sim  
-    *Uma configuração de Sim impede o uso de senhas simples.*
+    *Uma definição de Sim impede a utilização de senhas simples.*
 
   - **Impedir a reutilização de palavras-passe anteriores**:  
-    Especifica quantas senhas são armazenadas no histórico que não podem ser usadas. O valor inclui a senha atual do usuário. Por exemplo, com uma configuração de *1* , o usuário não pode reutilizar sua senha atual ao escolher uma nova senha. Uma configuração de *5* significa que um usuário não pode definir sua nova senha para sua senha atual ou com qualquer uma de suas quatro senhas anteriores.  
-    [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2066795)
+    Especifica quantas palavras-passe são armazenadas na história que não podem ser usadas. O valor inclui a senha atual do utilizador. Por exemplo, com uma definição de *1* o utilizador não pode reutilizar a sua senha atual ao escolher uma nova senha. Uma definição de *5* significa que um utilizador não pode definir a sua nova palavra-passe para a sua senha atual ou qualquer uma das suas quatro senhas anteriores.  
+    [Mais informações](https://go.microsoft.com/fwlink/?linkid=2066795)
 
-    **Padrão**: 24
+    **Predefinição**: 24
 
-- **Impedir apresentação de slides**:  
-  Desabilita as configurações de apresentação de slides da tela de bloqueio nas configurações do computador e impede que uma apresentação de slides seja reproduzida na tela de bloqueio. Por padrão, os usuários podem habilitar uma apresentação de slides que será executada Depois de bloquear o computador. Se você habilitar essa configuração, os usuários não poderão modificar as configurações de apresentação de slides nas configurações do PC e nenhuma apresentação de slides poderá ser iniciada.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067105)
+- **Evitar a apresentação de diapositivos:**  
+  Desativa as definições de apresentação de ecrã de bloqueio nas definições do PC e impede que uma apresentação de diapositivos seja reproduzido no ecrã de bloqueio. Por predefinição, os utilizadores podem ativar uma apresentação de diapositivos que será executada depois de bloquearem a máquina. Se ativar esta definição, os utilizadores não podem modificar as definições de apresentação de diapositivos nas definições do PC e nenhuma apresentação de diapositivos pode começar.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067105)
 
-  **Padrão**: habilitado  
+  **Predefinição**: Ativado  
 
-  *Uma configuração habilitada impede que as apresentações de slides sejam executadas.*
+  *Uma definição de Ativado impede que os slides se esgotem.*
 
-- **Idade mínima da senha em dias**:  
-  A configuração de política de duração mínima da senha determina o tempo (em dias) que uma senha deve ser usada antes que o usuário possa alterá-la. Você pode definir um valor entre 1 e 998 dias ou pode permitir alterações de senha imediatamente definindo o número de dias como 0. A duração mínima da senha deve ser menor que a duração máxima da senha, a menos que a duração máxima da senha seja definida como 0, indicando que as senhas nunca expirarão. Se a duração máxima da senha for definida como 0, a duração mínima da senha poderá ser definida para qualquer valor entre 0 e 998.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067022)
+- **Idade mínima da palavra-passe em dias:**  
+  A definição mínima de definição da idade da palavra-passe determina a duração (em dias) de que uma palavra-passe deve ser utilizada antes de o utilizador a alterar. Pode definir um valor entre 1 e 998 dias, ou pode permitir alterações de senha imediatamente, definindo o número de dias para 0. A idade mínima da palavra-passe deve ser inferior à idade máxima da senha, a menos que a idade máxima da senha esteja definida para 0, indicando que as palavras-passe nunca caducarão. Se a idade máxima da senha for fixada para 0, a idade mínima da senha pode ser definida para qualquer valor entre 0 e 998.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067022)
 
   **Padrão**: 1
 
 ::: zone-end
 ::: zone pivot="mdm-may-2019"
 
-## <a name="dma-guard"></a>Proteção de DMA
+## <a name="dma-guard"></a>Guarda DMA
 
-Para obter mais informações, consulte [Policy CSP-DmaGuard](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dmaguard) na documentação do Windows.
+Para mais informações, consulte [Policy CSP - DmaGuard](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dmaguard) na documentação do Windows.
 
-- **Enumeração de dispositivos externos incompatíveis com a proteção de kernel DMA**:  
-  Essa política destina-se a fornecer segurança adicional contra dispositivos compatíveis com DMA externo. Ele permite mais controle sobre a enumeração de dispositivos compatíveis com DMA externo incompatíveis com o isolamento de memória de dispositivo/remapeamento de DMA e área restrita. Essa política só entra em vigor quando há suporte para a proteção do kernel DMA e ela é habilitada pelo firmware do sistema. A proteção de kernel DMA é um recurso de plataforma que não pode ser controlado pela política ou pelo usuário final. Ele precisa ser suportado pelo sistema no momento da fabricação. Para verificar se o sistema dá suporte à proteção de kernel DMA, verifique o campo proteção DMA do kernel na página Resumo do MSINFO32. exe.  
-  [Saiba mais](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dmaguard#dmaguard-deviceenumerationpolicy)
+- **Enumeração de dispositivos externos incompatíveis com a Proteção Kernel DMA:**  
+  Esta política destina-se a proporcionar segurança adicional contra dispositivos externos capazes de DMA. Permite um maior controlo sobre a enumeração de dispositivos externos capazes de DMA incompatíveis com o isolamento da memória de DMA/dispositivo e o sandboxing. Esta política só entra em vigor quando a Kernel DMA Protection é suportada e ativada pelo firmware do sistema. Kernel DMA Protection é uma funcionalidade de plataforma que não pode ser controlada através da política ou do utilizador final. Tem de ser apoiado pelo sistema no momento da produção. Para verificar se o sistema suporta a Proteção Kernel DMA, verifique o campo de proteção Kernel DMA na página sumária de MSINFO32.exe.  
+  [Mais informações](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dmaguard#dmaguard-deviceenumerationpolicy)
 
-  **Padrão**: bloquear tudo
+  **Padrão**: Bloquear tudo
 
 ::: zone-end
 ::: zone pivot="mdm-preview,mdm-may-2019"
 
-## <a name="event-log-service"></a>Serviço log de eventos
+## <a name="event-log-service"></a>Serviço de Log de Eventos
 
-Para obter mais informações, consulte [Policy CSP-EventLogService](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-eventlogservice) na documentação do Windows.
+Para mais informações, consulte [Policy CSP - EventLogService](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-eventlogservice) na documentação do Windows.
 
-- **Tamanho máximo do arquivo do log de segurança em KB**:  
-  Essa configuração de política especifica o tamanho máximo do arquivo de log em kilobytes. Se você habilitar essa configuração de política, poderá configurar o tamanho máximo do arquivo de log entre 1 megabyte (1024 quilobytes) e 2 terabytes (2147483647 quilobytes) em incrementos de kilobytes. Se você desabilitar ou não definir essa configuração de política, o tamanho máximo do arquivo de log será definido como o valor configurado localmente. Esse valor pode ser alterado pelo administrador local usando a caixa de diálogo Propriedades do log e o padrão é 20 megabytes.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067042)
+- Tamanho máximo de **ficheiro de registo de segurança em KB:**  
+  Esta definição de política especifica o tamanho máximo do ficheiro de registo em quilobytes. Se ativar esta definição de política, pode configurar o tamanho máximo do ficheiro de registo entre 1 megabyte (1024 quilobytes) e 2 terabytes (2147483647 quilobytes) em incrementos de kilobyte. Se desativar ou não configurar esta definição de política, o tamanho máximo do ficheiro de registo está definido para o valor configurado localmente. Este valor pode ser alterado pelo administrador local utilizando o diálogo Log Properties e não se aplica a 20 megabytes.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067042)
 
    **Padrão**: 196608
 
-- **Tamanho máximo do arquivo de log do sistema em KB**:  
-  Essa configuração de política especifica o tamanho máximo do arquivo de log em kilobytes. Se você habilitar essa configuração de política, poderá configurar o tamanho máximo do arquivo de log entre 1 megabyte (1024 quilobytes) e 2 terabytes (2147483647 quilobytes) em incrementos de kilobytes. Se você desabilitar ou não definir essa configuração de política, o tamanho máximo do arquivo de log será definido como o valor configurado localmente. Esse valor pode ser alterado pelo administrador local usando a caixa de diálogo Propriedades do log e o padrão é 20 megabytes.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2066798)
+- Tamanho máximo de **ficheiro de registo do sistema em KB:**  
+  Esta definição de política especifica o tamanho máximo do ficheiro de registo em quilobytes. Se ativar esta definição de política, pode configurar o tamanho máximo do ficheiro de registo entre 1 megabyte (1024 quilobytes) e 2 terabytes (2147483647 quilobytes) em incrementos de kilobyte. Se desativar ou não configurar esta definição de política, o tamanho máximo do ficheiro de registo está definido para o valor configurado localmente. Este valor pode ser alterado pelo administrador local utilizando o diálogo Log Properties e não se aplica a 20 megabytes.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2066798)
 
-  **Padrão**: 32768
+  **Predefinição**: 32768
 
-- **Tamanho máximo do arquivo de log do aplicativo em KB**:  
-  Essa configuração de política especifica o tamanho máximo do arquivo de log em kilobytes. Se você habilitar essa configuração de política, poderá configurar o tamanho máximo do arquivo de log entre 1 megabyte (1024 quilobytes) e 2 terabytes (2147483647 quilobytes) em incrementos de kilobytes. Se você desabilitar ou não definir essa configuração de política, o tamanho máximo do arquivo de log será definido como o valor configurado localmente. Esse valor pode ser alterado pelo administrador local usando a caixa de diálogo Propriedades do log e o padrão é 20 megabytes.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067125)
+- **Registo de aplicação tamanho máximo de ficheiro em KB:**  
+  Esta definição de política especifica o tamanho máximo do ficheiro de registo em quilobytes. Se ativar esta definição de política, pode configurar o tamanho máximo do ficheiro de registo entre 1 megabyte (1024 quilobytes) e 2 terabytes (2147483647 quilobytes) em incrementos de kilobyte. Se desativar ou não configurar esta definição de política, o tamanho máximo do ficheiro de registo está definido para o valor configurado localmente. Este valor pode ser alterado pelo administrador local utilizando o diálogo Log Properties e não se aplica a 20 megabytes.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067125)
 
-  **Padrão**: 32768
+  **Predefinição**: 32768
 
 ## <a name="experience"></a>Experiência
 
-Para obter mais informações, consulte [Policy CSP-Experience](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience) na documentação do Windows.
+Para mais informações, consulte [Policy CSP - Experience](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience) in the Windows documentação.
 
-- **Bloquear destaque do Windows**:  
-  Permite que os administradores de ti desativem todos os recursos do Windows Spotlight – janela destaque na tela de bloqueio, dicas do Windows, recursos do Microsoft Consumer e outros recursos relacionados.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067037)
+- **Holofotes das janelas do bloco:**  
+  Permite que os administradores de TI desliguem todas as funcionalidades do Windows Spotlight - Holofotes de janela no ecrã de bloqueio, Windows Tips, funcionalidades do consumidor da Microsoft e outras funcionalidades relacionadas.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067037)
 
   **Padrão**: Sim
 
-  Quando *Bloquear destaque do Windows* estiver definido como *Sim*, as configurações a seguir estarão disponíveis.
+  Quando o *Block Windows Spotlight* estiver definido para *Sim,* as seguintes definições estão disponíveis.
 
-  - **Bloquear sugestões de terceiros no destaque do Windows**:  
-    Especifica se é permitido permitir sugestões de aplicativos e conteúdo de editores de software de terceiros em recursos de destaque do Windows, como o destaque da tela de bloqueio, aplicativos sugeridos no menu iniciar e dicas do Windows. Os usuários ainda podem ver sugestões para recursos, aplicativos e serviços da Microsoft.  
-    [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067045)
-
-    **Padrão**: Sim
-
-  - **Bloquear recursos específicos do consumidor**:  
-    Permite que os administradores de ti ativem experiências que normalmente são apenas para consumidores, como sugestões de início, notificações de associação, instalação de aplicativo post-OOBE e blocos de redirecionamento.  
-    [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067054)
+  - **Bloqueie sugestões de terceiros no Windows Spotlight:**  
+    Especifica se permite sugestões de apps e conteúdos de editores de software de terceiros em funcionalidades de destaque do Windows, como os holofotes do ecrã de bloqueio, as aplicações sugeridas no menu Iniciar e as dicas do Windows. Os utilizadores podem ainda ver sugestões para funcionalidades, apps e serviços da Microsoft.  
+    [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067045)
 
     **Padrão**: Sim
 
-## <a name="exploit-guard"></a>Exploit Guard
+  - **Bloqueie as características específicas dos consumidores:**  
+    Permite que os administradores de TI liguem experiências que normalmente são apenas para consumidores, tais como sugestões de Início, notificações de Adesão, instalação de apps pós-OOBE e azulejos redirecionados.  
+    [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067054)
 
-Para obter mais informações, consulte [Policy CSP-ExploitGuard](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-exploitguard) na documentação do Windows.
+    **Padrão**: Sim
 
-- **Exploração de XML de proteção**:  
-  Permite que o administrador de ti envie uma configuração que represente as opções de mitigação de aplicativo e sistema desejadas para todos os dispositivos na organização. A configuração é representada por um XML. A proteção contra explorações ajuda a proteger dispositivos contra malware que usam explorações para disseminar e infectar. Você usa o aplicativo de segurança do Windows ou o PowerShell para criar um conjunto de atenuações (conhecido como uma configuração). Você pode exportar essa configuração como um arquivo XML e compartilhá-la com vários computadores na sua rede para que todos tenham o mesmo conjunto de configurações de mitigação. Você também pode converter e importar um arquivo XML de configuração do EMET existente em um XML de configuração do Exploit Protection.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067035)
+## <a name="exploit-guard"></a>Explorar guarda
 
-  **Padrão**: o *XML de exemplo é fornecido*
+Para mais informações, consulte [Policy CSP - ExploitGuard](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-exploitguard) na documentação do Windows.
+
+- **Carregar XML:**  
+  Permite ao administrador de TI empurrar uma configuração que represente o sistema desejado e opções de mitigação de aplicações a todos os dispositivos da organização. A configuração é representada por um XML. A proteção de exploração ajuda a proteger os dispositivos de malware que usam explorações para espalhar e infetar. Utiliza a aplicação De Segurança do Windows ou powerShell para criar um conjunto de atenuações (conhecida como configuração). Em seguida, pode exportar esta configuração como um ficheiro XML e partilhá-la com várias máquinas na sua rede para que todas tenham o mesmo conjunto de definições de mitigação. Também pode converter e importar um ficheiro XML de configuração EMET existente numa configuração de proteção de exploração XML.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067035)
+
+  **Padrão**: *A amostra xml é fornecida*
 
 ## <a name="file-explorer"></a>Explorador de Ficheiros
 
-Para obter mais informações, consulte [CSP de política – FileExplorer](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-fileexplorer) na documentação do Windows.  
+Para mais informações, consulte [Policy CSP - FileExplorer](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-fileexplorer) na documentação do Windows.  
 
-- **Bloquear a prevenção de execução de dados**:  
-  Desabilitar a prevenção de execução de dados pode permitir que determinados aplicativos de plug-in herdados funcionem sem encerrar o Explorer.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067043)  
+- **Bloquear a prevenção da execução de dados:**  
+  A desativação da prevenção da execução de dados pode permitir que certas aplicações plug-in do legado funcionem sem terminar o Explorer.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067043)  
 
-  **Padrão**: desabilitado
+  **Predefinição**: Desativado
 
-- **Bloquear terminação de heap ao corromper**:  
-  Desabilitar a terminação de heap na corrupção pode permitir que determinados aplicativos de plug-in herdados funcionem sem encerrar o Explorer imediatamente, embora o Explorer ainda possa ser encerrado inesperadamente mais tarde.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067107)
+- **Bloqueio de taque de pilha sobre corrupção:**  
+  A desativação da corrupção pode permitir que certas aplicações plug-in do legado funcionem sem terminar imediatamente o Explorer, embora o Explorer possa ainda terminar inesperadamente mais tarde.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067107)
 
-  **Padrão**: desabilitado
+  **Predefinição**: Desativado
+
+## <a name="firewall"></a>Firewall
+
+Para mais informações, consulte [2.2.2 FW_PROFILE_TYPE]( https://docs.microsoft.com/openspecs/windows_protocols/ms-fasp/7704e238-174d-4a5e-b809-5f3787dd8acc) na documentação dos Protocolos do Windows.
+
+- **Domínio do perfil da firewall:**  
+  Especifica os perfis a que a regra pertence: Domínio, Privado, Público. Este valor representa o perfil para redes ligadas a domínios.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2066796)
+
+  - **Ligações de entrada bloqueadas:**  
+    **Padrão**: Sim
+
+  - **Ligações de saída necessárias:**  
+    **Padrão**: Sim
+
+  - **Notificações de entrada bloqueadas:**  
+    **Padrão**: Sim
+
+  - **Firewall ativado:**  
+    **Padrão**: Permitido
+
+- **Perfil de firewall público**:  
+  Especifica os perfis a que a regra pertence: Domínio, Privado, Público. Para nós, este número é um eixo de uma comunidade que quer saber para onde vai e quer saber para onde vai e quer saber para onde vai e quer saber Estas redes são classificadas como públicas pelos administradores do servidor. A classificação acontece na primeira vez que o anfitrião se conecta à rede. Normalmente, estas redes são as dos aeroportos, cafés e outros locais públicos onde os pares da rede ou o administrador da rede não são de confiança.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067143)
+
+  - **Ligações de entrada bloqueadas:**  
+    **Padrão**: Sim
+
+  - **Ligações de saída necessárias:**  
+    **Padrão**: Sim
+
+  - **Notificações de entrada bloqueadas:**  
+    **Padrão**: Sim
+
+  - **Firewall ativado:**  
+    **Padrão**: Permitido
+
+  - **Regras de segurança de ligação da política do grupo não fundidas:**  
+    **Padrão**: Sim
+
+  - **As regras políticas da política de grupo não se fundem:**  
+    **Padrão**: Sim
+
+- **Perfil de firewall privado**:  
+  Especifica os perfis a que a regra pertence: Domínio, Privado, Público. Este valor representa o perfil para redes privadas.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067041)
+
+  - **Ligações de entrada bloqueadas:**  
+    **Padrão**: Sim
+
+  - **Ligações de saída necessárias:**  
+    **Padrão**: Sim
+
+  - **Notificações de entrada bloqueadas:**  
+    **Padrão**: Sim
+
+  - **Firewall ativado:**  
+    **Padrão**: Permitido
 
 ## <a name="internet-explorer"></a>Internet Explorer
 
-Para obter mais informações, consulte [CSP da política-InternetExplorer](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-internetexplorer) na documentação do Windows.
+Para mais informações, consulte [Policy CSP - InternetExplorer](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-internetexplorer) na documentação do Windows.
 
-- **Atualizações de zona restritas do Internet Explorer para a barra de status por meio do script**:  
-  Essa configuração de política permite que você gerencie se um script tem permissão para atualizar a barra de status dentro da zona.
+- **Atualizações restritas**de zonas do Internet Explorer à barra de estado através do script:  
+  Esta definição de política permite-lhe gerir se um script é permitido atualizar a barra de estado dentro da zona.
 
-  - *Se você habilitar essa configuração de política*, os scripts terão permissão para atualizar a barra de status.
-  - *Se você desabilitar ou não definir essa configuração de política*, os scripts não terão permissão para atualizar a barra de status.
+  - *Se ativar esta definição de política,* os scripts podem atualizar a barra de estado.
+  - *Se desativar ou não configurar esta definição*de política, os scripts não estão autorizados a atualizar a barra de estado.
 
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067074)
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067074)
 
-  **Padrão**: desabilitado
+  **Predefinição**: Desativado
 
 ::: zone-end
 ::: zone pivot="mdm-may-2019"
 
-- **Arrastar e soltar na zona Internet do Internet Explorer ou copiar e colar arquivos**:  
-  Essa configuração de política permite que você gerencie se os usuários podem arrastar arquivos ou copiar e colar arquivos de uma fonte dentro da zona. Se você habilitar essa configuração de política, os usuários poderão arrastar arquivos ou copiar e colar arquivos dessa zona automaticamente. Se você selecionar prompt na caixa suspensa, os usuários serão consultados para escolher se deseja arrastar ou copiar arquivos dessa zona. Se você desabilitar essa configuração de política, os usuários serão impedidos de arrastar arquivos ou copiar e colar arquivos dessa zona. Se você não definir essa configuração de política, os usuários poderão arrastar arquivos ou copiar e colar arquivos dessa zona automaticamente.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067076)
+- **Internet Explorer internet zone drag and drop or copy and paste files:**  
+  Esta definição de política permite-lhe gerir se os utilizadores podem arrastar ficheiros ou copiar e colar ficheiros a partir de uma fonte dentro da zona. Se ativar esta definição de política, os utilizadores podem arrastar ficheiros ou copiar e colar ficheiros desta zona automaticamente. Se selecionar O Aviso na caixa de entrega, os utilizadores são questionados para escolher se devem arrastar ou copiar ficheiros desta zona. Se desativar esta definição de política, os utilizadores são impedidos de arrastar ficheiros ou copiar e colar ficheiros desta zona. Se não configurar esta definição de política, os utilizadores podem arrastar ficheiros ou copiar e colar ficheiros desta zona automaticamente.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067076)
 
-  **Padrão**: desabilitar
+  **Predefinição**: Desativar
 
-- **.NET Framework componentes dependentes da zona restrita do Internet Explorer**:  
-  Use essa configuração de política para gerenciar se .NET Framework componentes que não estão assinados com Authenticode podem ser executados no Internet Explorer. Esses componentes incluem controles gerenciados referenciados de uma marca de objeto e executáveis gerenciados referenciados por meio de um link. Se você habilitar essa configuração de política, o Internet Explorer executará componentes gerenciados sem assinatura. Se você selecionar prompt na caixa suspensa, o Internet Explorer solicitará que o usuário determine se os componentes gerenciados não assinados serão executados. Se você desabilitar essa configuração de política, o Internet Explorer não executará componentes gerenciados sem assinatura. Se você não definir essa configuração de política, o Internet Explorer não executará componentes gerenciados sem assinatura.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067077)
+- Zona restrita do **Internet Explorer .NET Componentes dependentes da estrutura:**  
+  Utilize esta definição de política para gerir se os componentes .NET Framework que não estão assinados com authenticode podem ser executados a partir do Internet Explorer. Estes componentes incluem controlos geridos referenciados a partir de uma etiqueta de objeto e executáveis geridos referenciados a partir de um link. Se ativar esta definição de política, o Internet Explorer executará componentes geridos não assinados. Se selecionar O Aviso na caixa de lançamento, o Internet Explorer irá solicitar ao utilizador que determine se executa componentes geridos não assinados. Se desativar esta definição de política, o Internet Explorer não executará componentes geridos não assinados. Se não configurar esta definição de política, o Internet Explorer não executará componentes geridos não assinados.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067077)
 
-  **Padrão**: desabilitar
+  **Predefinição**: Desativar
 
-- A **zona do computador local do Internet Explorer não executa antimalware em controles ativos X**:  
-  Essa configuração de política determina se o Internet Explorer executa programas antimalware em controles ActiveX, para verificar se eles são seguros para carregar em páginas. Se você habilitar essa configuração de política, o Internet Explorer não verificará com seu programa antimalware para ver se é seguro criar uma instância do controle ActiveX. Se você desabilitar essa configuração de política, o Internet Explorer sempre verificará o programa antimalware para ver se é seguro criar uma instância do controle ActiveX. Se você não definir essa configuração de política, o Internet Explorer não verificará com seu programa antimalware para ver se é seguro criar uma instância do controle ActiveX. Os usuários podem ativar ou desativar esse comportamento, usando as configurações de segurança do Internet Explorer.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067152)
+- A zona de máquina local do **Internet Explorer não executa antimalware contra os controlos Ative X:**  
+  Esta definição de política determina se o Internet Explorer executa programas antimalware contra controlos ActiveX, para verificar se são seguros para carregar em páginas. Se ativar esta definição de política, o Internet Explorer não verificará com o seu programa antimalware para ver se é seguro criar uma instância do controlo ActiveX. Se desativar esta definição de política, o Internet Explorer verifica sempre com o seu programa antimalware para ver se é seguro criar uma instância do controlo ActiveX. Se não configurar esta definição de política, o Internet Explorer não verificará com o seu programa antimalware para ver se é seguro criar uma instância do controlo ActiveX. Os utilizadores podem ligar ou desligar este comportamento, utilizando as definições de Segurança do Internet Explorer.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067152)
 
-  **Padrão**: desabilitado
+  **Predefinição**: Desativado
 
 ::: zone-end
 ::: zone pivot="mdm-preview,mdm-may-2019"
 
-- **Acesso de zona da Internet do Internet Explorer a fontes de dados**:  
-  Essa configuração de política permite que você gerencie se o Internet Explorer pode acessar dados de outra zona de segurança usando o Microsoft XML Parser (MSXML) ou o ActiveX Data Objects (ADO). Se você habilitar essa configuração de política, os usuários poderão carregar uma página na zona que usa MSXML ou ADO para acessar dados de outro site na zona. Se você selecionar prompt na caixa suspensa, os usuários serão consultados para escolher se deseja permitir que uma página seja carregada na zona que usa MSXML ou ADO para acessar dados de outro site na zona. Se você desabilitar essa configuração de política, os usuários não poderão carregar uma página na zona que usa MSXML ou ADO para acessar dados de outro site na zona. Se você não definir essa configuração de política, os usuários não poderão carregar uma página na zona que usa MSXML ou ADO para acessar dados de outro site na zona.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067078)  
+- Acesso à zona de internet do Internet do Internet do Internet Explorer **a fontes**de dados:  
+  Esta definição de política permite-lhe gerir se o Internet Explorer pode aceder a dados de outra zona de segurança utilizando o Microsoft XML Parser (MSXML) ou ActiveX Data Objects (ADO). Se ativar esta definição de política, os utilizadores podem carregar uma página na zona que utiliza MSXML ou ADO para aceder a dados de outro site da zona. Se selecionar O Aviso na caixa de entrega, os utilizadores são questionados para escolher se permitem que uma página carregue na zona que utiliza mSXML ou ADO para aceder a dados de outro site da zona. Se desativar esta definição de política, os utilizadores não podem carregar uma página na zona que utiliza MSXML ou ADO para aceder a dados de outro site da zona. Se não configurar esta definição de política, os utilizadores não podem carregar uma página na zona que utiliza MSXML ou ADO para aceder a dados de outro site na zona.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067078)  
 
-  **Padrão**: desabilitar
+  **Predefinição**: Desativar
 
-- **Conteúdo de arrastar zona restrita do Internet Explorer de diferentes domínios no Windows**:  
-  Essa configuração de política permite que você defina opções para arrastar o conteúdo de um domínio para um domínio diferente quando a origem e o destino estiverem na mesma janela. Se você habilitar essa configuração de política e clicar em habilitar, os usuários poderão arrastar o conteúdo de um domínio para um domínio diferente quando a origem e o destino estiverem na mesma janela. Os usuários não podem alterar essa configuração. Se você habilitar essa configuração de política e clicar em Desabilitar, os usuários não poderão arrastar o conteúdo de um domínio para um domínio diferente quando a origem e o destino estiverem na mesma janela. Os usuários não podem alterar essa configuração na caixa de diálogo Opções da Internet. No Internet Explorer 10, se você desabilitar essa configuração de política ou não configurá-la, os usuários não poderão arrastar o conteúdo de um domínio para um domínio diferente quando a origem e o destino estiverem na mesma janela. Os usuários podem alterar essa configuração na caixa de diálogo Opções da Internet. No Internet Explorer 9 e versões anteriores, se você desabilitar essa configuração de política ou não configurá-la, os usuários poderão arrastar o conteúdo de um domínio para um domínio diferente quando a origem e o destino estiverem na mesma janela. Os usuários não podem alterar essa configuração na caixa de diálogo Opções da Internet.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067079)  
+- **Internet Explorer restringiu o conteúdo de arrasto de zona de diferentes domínios dentro das janelas:**  
+  Esta definição de política permite-lhe definir opções para arrastar conteúdo de um domínio para um domínio diferente quando a fonte e o destino estão na mesma janela. Se ativar esta definição de política e clicar em Ativar, os utilizadores podem arrastar o conteúdo de um domínio para um domínio diferente quando a fonte e o destino estão na mesma janela. Os usuários não podem alterar essa configuração. Se ativar esta definição de política e clicar em Desativar, os utilizadores não podem arrastar conteúdo de um domínio para um domínio diferente quando a fonte e o destino estão na mesma janela. Os utilizadores não podem alterar esta definição no diálogo das Opções de Internet. No Internet Explorer 10, se desativar esta definição de política ou não configurar, os utilizadores não podem arrastar conteúdo de um domínio para um domínio diferente quando a fonte e o destino estão na mesma janela. Os utilizadores podem alterar esta definição no diálogo das Opções de Internet. No Internet Explorer 9 e versões anteriores, se desativar esta definição de política ou não configurar, os utilizadores podem arrastar conteúdo de um domínio para um domínio diferente quando a fonte e o destino estão na mesma janela. Os utilizadores não podem alterar esta definição no diálogo das Opções de Internet.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067079)  
 
-  **Padrão**: desabilitado
+  **Predefinição**: Desativado
 
-- **Aviso de incompatibilidade de endereço de certificado do Internet Explorer**:  
-  Essa configuração de política permite ativar o aviso de segurança de incompatibilidade de endereço de certificado. Quando essa configuração de política está ativada, o usuário é avisado ao visitar sites HTTP seguros (HTTPS) que apresentam certificados emitidos para um endereço de site diferente. Esse aviso ajuda a evitar ataques de falsificação. Se você habilitar essa configuração de política, o aviso de incompatibilidade de endereço de certificado sempre aparecerá. Se você desabilitar ou não definir essa configuração de política, o usuário poderá escolher se o aviso de incompatibilidade de endereço de certificado aparecerá (usando a página avançado no painel de controle da Internet).  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067153)  
+- **Aviso de desajuste do endereço do Internet Explorer:**  
+  Esta definição de política permite-lhe ativar o aviso de segurança de desajuste do endereço do certificado. Quando esta definição de política está em curso, o utilizador é avisado ao visitar websites Secure HTTP (HTTPS) que apresentam certificados emitidos para um endereço de site diferente. Este aviso ajuda a prevenir ataques de falsificação. Se ativar esta definição de política, o aviso de desajuste do endereço do certificado aparece sempre. Se desativar ou não configurar esta definição de política, o utilizador pode escolher se o aviso de desajuste do endereço de certificado aparece (utilizando a página Avançada no painel de Controlo de Internet).  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067153)  
 
-  **Padrão**: habilitado
+  **Predefinição**: Ativado
 
-- **Sites com menos privilégios de zona restrita do Internet Explorer**:  
-  Essa configuração de política permite que você gerencie se sites de zonas com menos privilégios, como sites da Internet, podem navegar nessa zona. Se você habilitar essa configuração de política, os sites de zonas com menos privilégios poderão abrir novas janelas no ou navegar até essa zona. A zona de segurança será executada sem a camada adicional de segurança fornecida pelo recurso de segurança proteção contra elevação de zona. Se você selecionar prompt na caixa suspensa, um aviso será emitido para o usuário que a navegação potencialmente arriscada está prestes a ocorrer. Se você desabilitar essa configuração de política, a navegação possivelmente prejudicial será impedida. O recurso de segurança do Internet Explorer está ativado nessa zona como definido pelo controle de recurso de elevação de zona. Se você não definir essa configuração de política, a navegação possivelmente prejudicial será impedida. O recurso de segurança do Internet Explorer está ativado nessa zona como definido pelo controle de recurso de elevação de zona.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067148)
+- **Internet Explorer área restrita sites menos privilegiados:**  
+  Esta definição de política permite-lhe gerir se os Web sites de zonas menos privilegiadas, como sites de Internet, podem navegar para esta zona. Se ativar esta definição de política, os Web sites de zonas menos privilegiadas podem abrir novas janelas ou navegar para dentro desta zona. A zona de segurança funcionará sem a camada adicional de segurança fornecida pela função de segurança Protection from Zone Elevation. Se selecionar O Aviso na caixa de entrega, é emitido um aviso ao utilizador de que está prestes a ocorrer uma navegação potencialmente arriscada. Se desativar esta definição de política, possivelmente evita-se a navegação prejudicial. A funcionalidade de segurança do Internet Explorer está nesta zona, tal como definida pela Proteção contra o controlo da funcionalidade de elevação da zona. Se não configurar esta definição de política, possivelmente evita-se a navegação prejudicial. A funcionalidade de segurança do Internet Explorer está nesta zona, tal como definida pela Proteção contra o controlo da funcionalidade de elevação da zona.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067148)
 
-  **Padrão**: desabilitar
+  **Predefinição**: Desativar
 
-- **Prompt automático de zona restrita do Internet Explorer para downloads de arquivo**:  
-  Essa configuração de política determina se os usuários são solicitados a fornecer downloads de arquivos não iniciados pelo usuário. Independentemente dessa configuração, os usuários receberão caixas de diálogo de download de arquivo para downloads iniciados pelo usuário. Se você habilitar essa configuração, os usuários receberão uma caixa de diálogo de download de arquivo para tentativas de download automática. Se você desabilitar ou não definir essa configuração, os downloads de arquivos que não forem iniciados pelo usuário serão bloqueados e os usuários verão a barra de notificação, em vez da caixa de diálogo de download de arquivo. Os usuários podem clicar na barra de notificação para permitir o prompt de download de arquivo.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067150)
+- **Internet Explorer restrito de zona automática para downloads de ficheiros:**  
+  Esta definição de política determina se os utilizadores são solicitados para downloads de ficheiros não iniciados pelo utilizador. Independentemente desta definição, os utilizadores receberão diálogos de descarregamento de ficheiros para downloads iniciados pelo utilizador. Se ativar esta definição, os utilizadores receberão um diálogo de descarregamento de ficheiros para tentativas automáticas de descarregamento. Se desativar ou não configurar esta definição, os downloads de ficheiros que não são iniciados pelo utilizador estão bloqueados e os utilizadores verão a barra de Notificação em vez do diálogo de descarregamento de ficheiros. Os utilizadores podem então clicar na barra de Notificação para permitir o aviso de descarregamento do ficheiro.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067150)
 
-  **Padrão**: desabilitado
+  **Predefinição**: Desativado
 
-- **Componentes dependentes da Internet Internet Explorer .NET Framework**:  
-  Essa configuração de política permite que você gerencie se .NET Framework componentes que não estão assinados com Authenticode podem ser executados no Internet Explorer. Esses componentes incluem controles gerenciados referenciados de uma marca de objeto e executáveis gerenciados referenciados por meio de um link. Se você habilitar essa configuração de política, o Internet Explorer executará componentes gerenciados sem assinatura. Se você selecionar prompt na caixa suspensa, o Internet Explorer solicitará que o usuário determine se os componentes gerenciados não assinados serão executados. Se você desabilitar essa configuração de política, o Internet Explorer não executará componentes gerenciados sem assinatura. Se você não definir essa configuração de política, o Internet Explorer executará componentes gerenciados sem assinatura.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067073)
+- Zona de internet do **Internet Explorer Internet .NET Componentes dependentes do quadro:**  
+  Esta definição de política permite-lhe gerir se os componentes .NET Framework que não estão assinados com a Authenticode podem ser executados a partir do Internet Explorer. Estes componentes incluem controlos geridos referenciados a partir de uma etiqueta de objeto e executáveis geridos referenciados a partir de um link. Se ativar esta definição de política, o Internet Explorer executará componentes geridos não assinados. Se selecionar O Aviso na caixa de lançamento, o Internet Explorer irá solicitar ao utilizador que determine se executa componentes geridos não assinados. Se desativar esta definição de política, o Internet Explorer não executará componentes geridos não assinados. Se não configurar esta definição de política, o Internet Explorer executará componentes geridos não assinados.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067073)
 
-  **Padrão**: desabilitar
+  **Predefinição**: Desativar
 
-- **A zona Internet do Internet Explorer permite que somente domínios aprovados usem controles ActiveX TDC**:  
-  Essa configuração de política controla se o usuário pode executar o controle ActiveX TDC nos sites. Se você habilitar essa configuração de política, o controle ActiveX TDC não será executado de sites nesta zona. Se você desabilitar essa configuração de política, o controle ativo X TDC será executado de todos os sites nesta zona.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067151)
+- A zona de **internet do Internet Explorer permite que apenas os domínios aprovados utilizem controlos TDC ActiveX:**  
+  Esta definição de política controla se o utilizador puder executar o controlo TDC ActiveX nos websites. Se ativar esta definição de política, o controlo TDC ActiveX não será executado a partir de websites nesta zona. Se desativar esta definição de política, o controlo TDC Ative X será executado a partir de todos os sites desta zona.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067151)
 
-  **Padrão**: habilitado
+  **Predefinição**: Ativado
 
-- **Windows iniciado pelo script de zona restrita do Internet Explorer**:  
-  Essa configuração de política permite que você gerencie restrições em janelas pop-up iniciadas por script e janelas que incluem as barras de título e status. Se você habilitar essa configuração de política, a segurança das restrições do Windows não será aplicada nessa zona. A zona de segurança é executada sem a camada adicional de segurança fornecida por esse recurso. Se você desabilitar essa configuração de política, as possíveis ações prejudiciais contidas em janelas pop-up iniciadas por script e janelas que incluem as barras de título e status não poderão ser executadas. Esse recurso de segurança do Internet Explorer está ativado nessa zona, conforme ditado pela configuração de controle de recurso de restrições de segurança do Windows com script para o processo. Se você não definir essa configuração de política, as possíveis ações prejudiciais contidas em janelas pop-up iniciadas por script e janelas que incluam as barras de título e status não poderão ser executadas. Esse recurso de segurança do Internet Explorer está ativado nessa zona, conforme ditado pela configuração de controle de recurso de restrições de segurança do Windows com script para o processo.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067075)
+- **Janelas de**script de zona restrita do Internet Explorer:  
+  Esta definição de política permite-lhe gerir restrições em janelas e janelas pop-up iniciadas por scripts que incluem o título e barras de estado. Se ativar esta definição de política, a segurança das Restrições do Windows não se aplica nesta zona. A zona de segurança funciona sem a camada adicional de segurança fornecida por esta funcionalidade. Se desativar esta definição de política, as possíveis ações nocivas contidas em janelas e janelas pop-up iniciadas por scripts que incluem o título e as barras de estado não podem ser executadas. Esta funcionalidade de segurança do Internet Explorer encontra-se nesta zona, tal como dita a definição de controlo de funcionalidades de controlo de funcionalidades de restrições de segurança do Windows scripted para o processo. Se não configurar esta definição de política, as possíveis ações nocivas contidas em janelas e janelas pop-up iniciadas por scripts que incluem o título e as barras de estado não podem ser executadas. Esta funcionalidade de segurança do Internet Explorer encontra-se nesta zona, tal como dita a definição de controlo de funcionalidades de controlo de funcionalidades de restrições de segurança do Windows scripted para o processo.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067075)
 
-  **Padrão**: desabilitado
+  **Predefinição**: Desativado
 
-- **Zona Internet do Internet Explorer incluir caminho local ao carregar arquivos no servidor**:  
-  Essa configuração de política controla se as informações de caminho local são enviadas quando o usuário está carregando um arquivo por meio de um formulário HTML. Se as informações de caminho local forem enviadas, algumas informações poderão ser reveladas acidentalmente ao servidor. Por exemplo, os arquivos enviados da área de trabalho do usuário podem conter o nome de usuário como parte do caminho. Se você habilitar essa configuração de política, as informações de caminho serão enviadas quando o usuário estiver carregando um arquivo por meio de um formulário HTML. Se você desabilitar essa configuração de política, as informações de caminho serão removidas quando o usuário estiver carregando um arquivo por meio de um formulário HTML. Se você não definir essa configuração de política, o usuário poderá escolher se as informações de caminho são enviadas quando carregam um arquivo por meio de um formulário HTML. Por padrão, as informações de caminho são enviadas.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067072)
+- A zona de **internet do Internet Do Internet Explorer inclui o caminho local ao carregar ficheiros para o servidor:**  
+  Esta definição de política controla se as informações do caminho local forem enviadas quando o utilizador está a carregar um ficheiro através de um formulário HTML. Se as informações do caminho local forem enviadas, algumas informações podem ser reveladas involuntariamente ao servidor. Por exemplo, os ficheiros enviados do ambiente de trabalho do utilizador podem conter o nome do utilizador como parte do caminho. Se ativar esta definição de política, as informações do caminho são enviadas quando o utilizador está a carregar um ficheiro através de um formulário HTML. Se desativar esta definição de política, as informações do caminho são removidas quando o utilizador está a carregar um ficheiro através de um formulário HTML. Se não configurar esta definição de política, o utilizador pode escolher se as informações do caminho são enviadas quando fazem o upload de um ficheiro através de um formulário HTML. Por padrão, a informação do caminho é enviada.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067072)
 
-  **Padrão**: desabilitado
+  **Predefinição**: Desativado
 
-- O **Internet Explorer desabilita processos no modo protegido avançado**:  
-  Essa configuração de política determina se o Internet Explorer 11 usa processos de 64 bits (para maior segurança) ou processos de 32 bits (para maior compatibilidade) durante a execução em modo protegido aprimorado nas versões de 64 bits do Windows. Importante: alguns controles ActiveX e barras de ferramentas podem não estar disponíveis quando são usados processos de 64 bits. Se você habilitar essa configuração de política, o Internet Explorer 11 usará os processos de guia de 64 bits ao executar no modo protegido aprimorado nas versões de 64 bits do Windows. Se você desabilitar essa configuração de política, o Internet Explorer 11 usará os processos de guia de 32 bits ao executar no modo protegido aprimorado nas versões de 64 bits do Windows. Se você não definir essa configuração de política, os usuários poderão ativar ou desativar esse recurso usando as configurações do Internet Explorer. Esse recurso está desativado por padrão.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067149)
+- **O Internet Explorer desativa os processos em modo protegido melhorado:**  
+  Esta definição de política determina se o Internet Explorer 11 utiliza processos de 64 bits (para maior segurança) ou processos de 32 bits (para maior compatibilidade) quando funciona em Modo Protegido Melhorado em versões de 64 bits do Windows. Importante: Alguns controlos ActiveX e barras de ferramentas podem não estar disponíveis quando são utilizados processos de 64 bits. Se ativar esta definição de política, o Internet Explorer 11 utilizará processos de separadores de 64 bits quando estiver em modo protegido melhorado em versões de 64 bits do Windows. Se desativar esta definição de política, o Internet Explorer 11 utilizará processos de separador de 32 bits quando estiver em modo protegido melhorado em versões de 64 bits do Windows. Se não configurar esta definição de política, os utilizadores podem ligar ou desligar esta funcionalidade utilizando as definições do Internet Explorer. Esta funcionalidade é desligada por defeito.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067149)
 
-  **Padrão**: habilitado
+  **Predefinição**: Ativado
 
-- **Ignorar erros de certificado do Internet Explorer**:  
-  Essa configuração de política impede que o usuário ignore erros de certificado de protocolo SSL/TLS (segurança de camada de transporte) que interrompem a navegação (como erros "expirados", "revogados" ou "incompatibilidade de nome") no Internet Explorer. Se você habilitar essa configuração de política, o usuário não poderá continuar a navegação. Se você desabilitar ou não definir essa configuração de política, o usuário poderá ignorar os erros de certificado e continuar a navegação.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067071)
+- **O Internet Explorer ignora os erros**de certificado:  
+  Esta definição de política impede o utilizador de ignorar erros de certificado de segurança de camadas seguras (SSL/TLS) que interrompem a navegação (tais como erros "expirados", "revogados" ou "desajuste de nomes") no Internet Explorer. Se ativar esta definição de política, o utilizador não pode continuar a navegar. Se desativar ou não configurar esta definição de política, o utilizador pode ignorar erros de certificado e continuar a navegar.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067071)
 
-  **Padrão**: desabilitado
+  **Predefinição**: Desativado
 
-- **Carregamento da zona Internet do Internet Explorer de arquivos XAML**:  
-  Essa configuração de política permite que você gerencie o carregamento de arquivos de Extensible Application Markup Language (XAML). O XAML é uma linguagem de marcação declarativa baseada em XML comumente usada para criar interfaces de usuário avançadas e gráficos que aproveitam o Windows Presentation Foundation. Se você habilitar essa configuração de política e definir a caixa suspensa como habilitar, os arquivos XAML serão carregados automaticamente no Internet Explorer. O usuário não pode alterar esse comportamento. Se você definir a caixa suspensa como prompt, o usuário será solicitado a carregar arquivos XAML. Se você desabilitar essa configuração de política, os arquivos XAML não serão carregados no Internet Explorer. O usuário não pode alterar esse comportamento. Se você não definir essa configuração de política, o usuário poderá decidir se deseja carregar arquivos XAML dentro do Internet Explorer.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067147)
+- **Internet Explorer internet carregamento de ficheiros XAML:**  
+  Esta definição de política permite-lhe gerir o carregamento de ficheiros extensíveis de linguagem de marcação de aplicações (XAML). XAML é uma linguagem de marcação declarativa baseada em XML comumente usada para criar interfaces e gráficos de utilizador ricos que tiram partido da Fundação de Apresentação do Windows. Se ativar esta definição de política e definir a caixa de lançamento para ativar, os ficheiros XAML são automaticamente carregados dentro do Internet Explorer. O utilizador não pode mudar este comportamento. Se definir a caixa de entrega para Prompt, o utilizador é solicitado para carregar ficheiros XAML. Se desativar esta definição de política, os ficheiros XAML não são carregados dentro do Internet Explorer. O utilizador não pode mudar este comportamento. Se não configurar esta definição de política, o utilizador pode decidir se carrega ficheiros XAML dentro do Internet Explorer.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067147)
 
-  **Padrão**: desabilitar
+  **Predefinição**: Desativar
 
 ::: zone-end
 ::: zone pivot="mdm-may-2019"
 
-- **Prompt automático da zona Internet do Internet Explorer para downloads de arquivos**:  
-  Essa configuração de política determina se os usuários são solicitados a fornecer downloads de arquivos não iniciados pelo usuário. Independentemente dessa configuração, os usuários receberão caixas de diálogo de download de arquivo para downloads iniciados pelo usuário. Se você habilitar essa configuração, os usuários receberão uma caixa de diálogo de download de arquivo para tentativas de download automática. Se você desabilitar ou não definir essa configuração, os downloads de arquivos que não forem iniciados pelo usuário serão bloqueados e os usuários verão a barra de notificação, em vez da caixa de diálogo de download de arquivo. Os usuários podem clicar na barra de notificação para permitir o prompt de download de arquivo.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067117)
+- **Internet Explorer internet zone pedido automático para downloads de ficheiros:**  
+  Esta definição de política determina se os utilizadores são solicitados para downloads de ficheiros não iniciados pelo utilizador. Independentemente desta definição, os utilizadores receberão diálogos de descarregamento de ficheiros para downloads iniciados pelo utilizador. Se ativar esta definição, os utilizadores receberão um diálogo de descarregamento de ficheiros para tentativas automáticas de descarregamento. Se desativar ou não configurar esta definição, os downloads de ficheiros que não são iniciados pelo utilizador estão bloqueados e os utilizadores verão a barra de Notificação em vez do diálogo de descarregamento de ficheiros. Os utilizadores podem então clicar na barra de Notificação para permitir o aviso de descarregamento do ficheiro.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067117)
 
-  **Padrão**: desabilitado
+  **Predefinição**: Desativado
 
 ::: zone-end
 ::: zone pivot="mdm-preview"
 
-- **Prompt automático da zona Internet do Internet Explorer para downloads de arquivos**:  
-  Essa configuração de política determina se os usuários são solicitados a fornecer downloads de arquivos não iniciados pelo usuário. Independentemente dessa configuração, os usuários receberão caixas de diálogo de download de arquivo para downloads iniciados pelo usuário. Se você habilitar essa configuração, os usuários receberão uma caixa de diálogo de download de arquivo para tentativas de download automática. Se você desabilitar ou não definir essa configuração, os downloads de arquivos que não forem iniciados pelo usuário serão bloqueados e os usuários verão a barra de notificação, em vez da caixa de diálogo de download de arquivo. Os usuários podem clicar na barra de notificação para permitir o prompt de download de arquivo.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067117)
+- **Internet Explorer internet zone pedido automático para downloads de ficheiros:**  
+  Esta definição de política determina se os utilizadores são solicitados para downloads de ficheiros não iniciados pelo utilizador. Independentemente desta definição, os utilizadores receberão diálogos de descarregamento de ficheiros para downloads iniciados pelo utilizador. Se ativar esta definição, os utilizadores receberão um diálogo de descarregamento de ficheiros para tentativas automáticas de descarregamento. Se desativar ou não configurar esta definição, os downloads de ficheiros que não são iniciados pelo utilizador estão bloqueados e os utilizadores verão a barra de Notificação em vez do diálogo de descarregamento de ficheiros. Os utilizadores podem então clicar na barra de Notificação para permitir o aviso de descarregamento do ficheiro.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067117)
 
-  **Padrão**: habilitado
+  **Predefinição**: Ativado
 
 ::: zone-end
 ::: zone pivot="mdm-preview,mdm-may-2019"
 
-- **Aviso de segurança de zona restrita do Internet Explorer para arquivos potencialmente não seguros**:  
-  Essa configuração de política controla se a mensagem de "aviso de segurança de arquivo aberto" aparece quando o usuário tenta abrir arquivos executáveis ou outros arquivos potencialmente não seguros (de um compartilhamento de arquivos de intranet usando o explorador de arquivos, por exemplo). Se você habilitar essa configuração de política e definir a caixa suspensa como habilitar, esses arquivos abrirão sem um aviso de segurança. Se você definir a caixa suspensa como avisar, um aviso de segurança será exibido antes da abertura dos arquivos. Se você desabilitar essa configuração de política, esses arquivos não abrirão. Se você não definir essa configuração de política, o usuário poderá configurar como o computador lida com esses arquivos. Por padrão, esses arquivos são bloqueados na zona restrita, habilitados nas zonas da intranet e do computador local e definidos como prompt na Internet e nas zonas confiáveis.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2066797)
+- **Aviso de segurança de zona restrito do Internet Explorer para ficheiros potencialmente inseguros:**  
+  Esta definição de política controla se a mensagem "Open File - Security Warning" aparecer quando o utilizador tenta abrir ficheiros executáveis ou outros ficheiros potencialmente inseguros (a partir de uma partilha de ficheiros intranet utilizando o File Explorer, por exemplo). Se ativar esta definição de política e definir a caixa de lançamento para ativar, estes ficheiros abrem-se sem aviso de segurança. Se definir a caixa de entrega para Prompt, aparece um aviso de segurança antes de os ficheiros abrirem. Se desativar esta definição de política, estes ficheiros não abrem. Se não configurar esta definição de política, o utilizador pode configurar a forma como o computador lida com estes ficheiros. Por predefinição, estes ficheiros estão bloqueados na zona Restrita, ativadas nas zonas intranet e local de computador, e definidas para serem solicitadas nas zonas internet e trusted.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2066797)
 
-  **Padrão**: desabilitar
+  **Predefinição**: Desativar
 
-- **Filtro de script entre sites da zona Internet do Internet Explorer**:  
-  Essa política controla se o filtro XSS (script entre sites) detectará e impedirá injeçãos de script entre sites em sites nessa zona. Se você habilitar essa configuração de política, o filtro XSS estará ativado para sites nessa zona e o filtro XSS tentará bloquear as injeções de script entre sites. Se você desabilitar essa configuração de política, o filtro XSS será desativado para sites nesta zona e o Internet Explorer permitirá injeçãos de script entre sites.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067053)
+- Filtro de scripts de internet da zona de internet do **Internet Explorer:**  
+  Esta política controla se o filtro de scripts cross-site (XSS) detetar e prevenir injeções de scripts transversais em websites desta zona. Se ativar esta definição de política, o Filtro XSS está ligado para sites nesta zona e o Filtro XSS tenta bloquear as injeções de script seletivas. Se desativar esta definição de política, o Filtro XSS é desligado para sites nesta zona, e o Internet Explorer permite injeções de scripts transversais.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067053)
 
-  **Padrão**: habilitado
+  **Predefinição**: Ativado
 
-- **Fallback do Internet Explorer para SSL3**:  
-  Essa configuração de política permite bloquear um fallback inseguro para SSL 3,0. Quando essa política estiver habilitada, o Internet Explorer tentará se conectar a sites usando SSL 3,0 ou inferior quando o TLS 1,0 ou superior falhar. Para evitar um ataque man-in-the-Middle, recomendamos que você não permita o fallback inseguro. Essa política não afeta quais protocolos de segurança estão habilitados. Se você desabilitar essa política, os padrões do sistema serão usados.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067118)
+- Recuo do **Internet Explorer para SSL3:**  
+  Esta definição de política permite bloquear uma recaída insegura para SSL 3.0. Quando esta política estiver ativada, o Internet Explorer tentará ligar-se a sites que utilizem sl 3.0 ou abaixo quando o TLS 1.0 ou maior falhar. Para evitar um ataque de homem no meio, recomendamos que não permita um recuo inseguro. Esta política não afeta os protocolos de segurança que estão ativados. Se desativar esta política, são utilizados incumprimentos do sistema.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067118)
 
-  **Padrão**: nenhum site
+  **Padrão**: Sem sites
 
 ::: zone-end
 ::: zone pivot="mdm-may-2019"
 
-- **Suporte à criptografia do Internet Explorer**:  
-  Essa configuração de política permite que você desative o suporte para TLS (Transport Layer Security) 1,0, TLS 1,1, TLS 1,2, protocolo SSL (SSL) 2,0 ou SSL 3,0 no navegador. TLS e SSL são protocolos que ajudam a proteger a comunicação entre o navegador e o servidor de destino. Quando o navegador tenta configurar uma comunicação protegida com o servidor de destino, o navegador e o servidor negociam qual protocolo e versão usar. O navegador e o servidor tentam corresponder à lista de protocolos e versões com suporte, e selecionam a correspondência mais preferencial. Se você habilitar essa configuração de política, o navegador negociará ou não negociará um túnel de criptografia usando os métodos de criptografia que você selecionar na lista suspensa. Se você desabilitar ou não definir essa configuração de política, o usuário poderá selecionar o método de criptografia ao qual o navegador dá suporte.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067057)
+- **Suporte de encriptação do Internet Explorer:**  
+  Esta definição de política permite-lhe desligar o suporte para a Segurança da Camada de Transporte (TLS) 1.0, TLS 1.1, TLS 1.2, Secure Sockets Layer (SSL) 2.0 ou SSL 3.0 no navegador. TLS e SSL são protocolos que ajudam a proteger a comunicação entre o navegador e o servidor alvo. Quando o navegador tenta configurar uma comunicação protegida com o servidor alvo, o navegador e o servidor negoceiam qual o protocolo e a versão a utilizar. O navegador e o servidor tentam corresponder à lista de protocolos e versões suportados um do outro, e selecionam a correspondência mais preferida. Se ativar esta definição de política, o navegador negoceia ou não negoceia um túnel de encriptação utilizando os métodos de encriptação que seleciona a partir da lista de lançamentos. Se desativar ou não configurar esta definição de política, o utilizador pode selecionar qual o método de encriptação que o navegador suporta.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067057)
 
-  **Padrão**: 2 itens: TLS v 1.1 e TLS v 1.2  
-  *Selecione a seta para baixo para exibir as opções que você pode selecionar para essa configuração.*
+  **Predefinição**: 2 itens: TLS v1.1 e TLS v1.2  
+  *Selecione a seta para baixo para visualizar as opções que pode selecionar para esta definição.*
 
 ::: zone-end
 ::: zone pivot="mdm-preview,mdm-may-2019"
 
-- **Tela inteligente da zona da Internet bloqueada do Internet Explorer**:  
-  Essa configuração de política controla se o Filtro SmartScreen verifica as páginas nessa zona em busca de conteúdo mal-intencionado. Se você habilitar essa configuração de política, o filtro do SmartScreen verificará as páginas nessa zona em busca de conteúdo mal-intencionado. Se você desabilitar essa configuração de política, o filtro do SmartScreen não verificará as páginas nessa zona em busca de conteúdo mal-intencionado. Se você não definir essa configuração de política, o usuário poderá escolher se o filtro do SmartScreen verificará se há conteúdo mal-intencionado nas páginas dessa zona. Observação: no Internet Explorer 7, essa configuração de política controla se o filtro de phishing verifica se há conteúdo mal-intencionado nas páginas dessa zona.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067059)
+- **Internet Explorer bloqueado por tela inteligente da zona**da Internet:  
+  Esta definição de política controla se o Filtro SmartScreen digitaliza páginas nesta zona para obter conteúdo malicioso. Se ativar esta definição de política, o Filtro SmartScreen analisa as páginas desta zona para obter conteúdo malicioso. Se desativar esta definição de política, o Filtro SmartScreen não digitaliza páginas nesta zona para obter conteúdo malicioso. Se não configurar esta definição de política, o utilizador pode escolher se o Filtro SmartScreen digitaliza páginas nesta zona para obter conteúdo malicioso. Nota: No Internet Explorer 7, esta definição de política controla se o Filtro de Phishing digitaliza páginas nesta zona para conteúdos maliciosos.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067059)
 
-  **Padrão**: habilitado
+  **Predefinição**: Ativado
 
-- **Aplicativos e arquivos de inicialização de zona restrita do Internet Explorer em um iframe**:  
-  Essa configuração de política permite que você gerencie se os aplicativos podem ser executados e se os arquivos podem ser baixados de uma referência de IFRAME no HTML das páginas desta zona. Se você habilitar essa configuração de política, os usuários poderão executar aplicativos e baixar arquivos de IFRAMEs nas páginas desta zona sem a intervenção do usuário. Se você selecionar prompt na caixa suspensa, os usuários serão consultados para escolher se deseja executar aplicativos e baixar arquivos de IFRAMEs nas páginas desta zona. Se você desabilitar essa configuração de política, os usuários não poderão executar aplicativos e baixar arquivos de IFRAMEs nas páginas desta zona. Se você não definir essa configuração de política, os usuários não poderão executar aplicativos e baixar arquivos de IFRAMEs nas páginas dessa zona.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067061)
+- **Aplicações e ficheiros de lançamento de zonas restritas do Internet Explorer num iFrame:**  
+  Esta definição de política permite-lhe gerir se as aplicações podem ser executadas e os ficheiros podem ser descarregados a partir de uma referência IFRAME no HTML das páginas desta zona. Se ativar esta definição de política, os utilizadores podem executar aplicações e descarregar ficheiros a partir de IFRAMEs nas páginas desta zona sem a intervenção do utilizador. Se selecionar o Prompt na caixa de entrega, os utilizadores são questionados para escolher se executam aplicações e descarregam ficheiros a partir de IFRAMEs nas páginas desta zona. Se desativar esta definição de política, os utilizadores não podem executar aplicações e transferir ficheiros a partir de IFRAMEs nas páginas desta zona. Se não configurar esta definição de política, os utilizadores não podem executar aplicações e transferir ficheiros a partir de IFRAMEs nas páginas desta zona.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067061)
 
-  **Padrão**: desabilitar
+  **Predefinição**: Desativar
 
-- O **Internet Explorer ignora avisos de tela inteligente sobre arquivos incomuns**:  
-  Essa configuração de política determina se o usuário pode ignorar avisos do filtro do SmartScreen. O filtro do SmartScreen avisa o usuário sobre arquivos executáveis que os usuários do Internet Explorer geralmente não baixam da Internet. Se você habilitar essa configuração de política, os avisos do filtro do SmartScreen bloquearão o usuário. Se você desabilitar ou não definir essa configuração de política, o usuário poderá ignorar os avisos do filtro do SmartScreen.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067068)
+- **O Internet Explorer ignora avisos de ecrã inteligente sobre ficheiros incomuns:**  
+  Esta definição de política determina se o utilizador pode contornar as advertências do Filtro SmartScreen. O Filtro SmartScreen avisa o utilizador sobre ficheiros executáveis que os utilizadores do Internet Explorer não descarregam normalmente a partir da Internet. Se ativar esta definição de política, os avisos do Filtro SmartScreen bloqueiam o utilizador. Se desativar ou não configurar esta definição de política, o utilizador pode contornar as advertências do Filtro SmartScreen.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067068)
 
-  **Padrão**: desabilitado
+  **Predefinição**: Desativado
 
-- **Bloqueador de pop-ups de zona da Internet do Internet Explorer**:  
-  Essa configuração de política permite que você gerencie se janelas pop-up indesejadas são exibidas. Janelas pop-up que são abertas quando o usuário final clica em um link não são bloqueadas. Se você habilitar essa configuração de política, a exibição da maioria das janelas pop-up indesejadas será impedida. Se você desabilitar essa configuração de política, as janelas pop-up não serão impedidas de serem exibidas. Se você não definir essa configuração de política, a exibição da maioria das janelas pop-up indesejadas será impedida.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067069)
+- **Bloqueador popup**da zona de internet do Internet Explorer:  
+  Esta definição de política permite-lhe gerir se aparecem janelas pop-up indesejadas. As janelas pop-up que são abertas quando o utilizador final clica num link não estão bloqueadas. Se ativar esta definição de política, a maioria das janelas pop-up indesejadas estão impedidas de aparecer. Se desativar esta definição de política, as janelas pop-up não estão impedidas de aparecer. Se não configurar esta definição de política, a maioria das janelas pop-up indesejadas estão impedidas de aparecer.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067069)
 
-  **Padrão**: habilitar
+  **Padrão**: Ativar
 
-- O **Internet Explorer processa a manipulação de MIME consistente**:  
-  O Internet Explorer contém comportamentos binários dinâmicos: componentes que encapsulam funcionalidades específicas para os elementos HTML aos quais eles estão anexados. Essa configuração de política controla se a configuração de restrição de segurança de comportamento binário é impedida ou permitida. Se você habilitar essa configuração de política, os comportamentos binários serão impedidos para os processos do explorador de arquivos e do Internet Explorer. Se você desabilitar essa configuração de política, comportamentos binários serão permitidos para os processos do explorador de arquivos e do Internet Explorer. Se você não definir essa configuração de política, os comportamentos binários serão impedidos para os processos do explorador de arquivos e do Internet Explorer.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067144)  
+- **O Internet Explorer processa um manuseamento consistente de MIME:**  
+  O Internet Explorer contém comportamentos binários dinâmicos: componentes que encapsulam a funcionalidade específica para os elementos HTML aos quais estão ligados. Esta definição de política controla se a definição de restrição de segurança do comportamento binário é impedida ou permitida. Se ativar esta definição de política, os comportamentos binários são evitados para os processos do Explorador de Ficheiros e do Internet Explorer. Se desativar esta definição de política, são permitidos comportamentos binários para os processos do Explorador de Ficheiros e do Internet Explorer. Se não configurar esta definição de política, os comportamentos binários são evitados para os processos do Explorador de Ficheiros e do Internet Explorer.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067144)  
 
-  **Padrão**: habilitado
+  **Predefinição**: Ativado
 
-- **Permissões Java da zona restrita do Internet Explorer**:  
-  Essa configuração de política permite que você gerencie permissões para miniaplicativos Java. Se você habilitar essa configuração de política, poderá escolher opções na caixa suspensa. Personalizado, para controlar as configurações de permissões individualmente. A segurança baixa permite que os applets realizem todas as operações. A segurança média permite que os applets sejam executados em sua área restrita (uma área na memória fora da qual o programa não pode fazer chamadas), além de recursos como espaço transitório (uma área de armazenamento segura e seguro no computador cliente) e e/s de arquivo controlado pelo usuário. A alta segurança permite que os applets sejam executados na área restrita. Desabilite o Java para impedir que os applets sejam executados. Se você desabilitar essa configuração de política, os miniaplicativos Java não poderão ser executados. Se você não definir essa configuração de política, os miniaplicativos Java serão desabilitados.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067132)
+- **Permissões restritas**do Internet Explorer java:  
+  Esta definição de política permite-lhe gerir permissões para applets Java. Se ativar esta definição de política, pode escolher opções a partir da caixa de lançamento. Personalizado, para controlar as definições de permissões individualmente. A Low Safety permite que as applets façam todas as operações. A Medium Safety permite que as applets corram na sua caixa de areia (uma área na memória fora da qual o programa não pode fazer chamadas), além de capacidades como o espaço de risco (uma área de armazenamento segura e segura no computador cliente) e o ficheiro controlado pelo utilizador I/O. A Alta Segurança permite que as maçãs corram na sua caixa de areia. Desative Java para evitar que as maçãs se esgotem. Se desativar este cenário de política, as maçãs Java não podem correr. Se não configurar esta definição de política, as maçãs Java são desativadas.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067132)
 
-  **Padrão**: desabilitar Java
+  **Predefinição**: Desative o java
 
-- **Controles do Internet Explorer Active X no modo protegido**:  
-  Essa configuração de política impede que os controles ActiveX sejam executados no modo protegido quando o modo protegido aprimorado está habilitado. Quando um usuário tem um controle ActiveX instalado que não é compatível com o modo protegido aprimorado e um site tenta carregar o controle, o Internet Explorer notifica o usuário e dá a opção de executar o site no modo protegido normal. Essa configuração de política desabilita essa notificação e força todos os sites a serem executados no modo protegido avançado. O modo protegido avançado fornece proteção adicional contra sites mal-intencionados usando processos de 64 bits em versões de 64 bits do Windows. Para computadores que executam pelo menos o Windows 8, o modo protegido aprimorado também limita os locais em que o Internet Explorer pode ler no registro e no sistema de arquivos. Quando o modo protegido aprimorado é habilitado e um usuário entra em um site que tenta carregar um controle ActiveX que não é compatível com o modo protegido avançado, o Internet Explorer notifica o usuário e dá a opção de desabilitar o modo protegido avançado para Esse site específico. Se você habilitar essa configuração de política, o Internet Explorer não dará ao usuário a opção de desabilitar o modo protegido avançado. Todos os sites do modo protegido serão executados no modo protegido avançado. Se você desabilitar ou não definir essa configuração de política, o Internet Explorer notificará os usuários e fornecerá uma opção para executar sites com controles ActiveX incompatíveis no modo protegido normal.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067145)
+- **O Internet Explorer Ative X controla no modo protegido:**  
+  Esta definição de política impede que os controlos ActiveX sejam acionados no modo protegido quando o modo protegido melhorado estiver ativado. Quando um utilizador tem um controlo ActiveX instalado que não é compatível com o Modo Protegido Melhorado e um website tenta carregar o controlo, o Internet Explorer notifica o utilizador e dá a opção de executar o website em modo protegido regular. Esta definição de política desativa esta notificação e obriga todos os websites a funcionar em Modo Protegido Melhorado. O Modo Protegido Melhorado fornece proteção adicional contra websites maliciosos utilizando processos de 64 bits em versões de 64 bits do Windows. Para computadores que executam pelo menos o Windows 8, o Modo Protegido Melhorado também limita as localizações que o Internet Explorer pode ler no registo e no sistema de ficheiros. Quando o modo protegido melhorado está ativado, e um utilizador encontra um website que tenta carregar um controlo ActiveX que não é compatível com o Modo Protegido Melhorado, o Internet Explorer notifica o utilizador e dá a opção de desativar o Modo Protegido Melhorado para que site em particular. Se ativar esta definição de política, o Internet Explorer não dará ao utilizador a opção de desativar o Modo Protegido Melhorado. Todos os websites do Modo Protegido serão executados em Modo Protegido Melhorado. Se desativar ou não configurar esta definição de política, o Internet Explorer informa os utilizadores e oferece uma opção para executar websites com controlos ActiveX incompatíveis no modo protegido regular.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067145)
 
-  **Padrão**: desabilitado
+  **Predefinição**: Desativado
 
-- **Carregamento de zona restrita do Internet Explorer de arquivos XAML**:  
-  Essa configuração de política permite que você gerencie o carregamento de arquivos de Extensible Application Markup Language (XAML). O XAML é uma linguagem de marcação declarativa baseada em XML comumente usada para criar interfaces de usuário avançadas e gráficos que aproveitam o Windows Presentation Foundation. Se você habilitar essa configuração de política e definir a caixa suspensa como habilitar, os arquivos XAML serão carregados automaticamente no Internet Explorer. O usuário não pode alterar esse comportamento. Se você definir a caixa suspensa como prompt, o usuário será solicitado a carregar arquivos XAML. Se você desabilitar essa configuração de política, os arquivos XAML não serão carregados no Internet Explorer. O usuário não pode alterar esse comportamento. Se você não definir essa configuração de política, o usuário poderá decidir se deseja carregar arquivos XAML dentro do Internet Explorer.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067070)
+- **Internet Explorer restrito carregamento de zonas de ficheiros XAML:**  
+  Esta definição de política permite-lhe gerir o carregamento de ficheiros extensíveis de linguagem de marcação de aplicações (XAML). XAML é uma linguagem de marcação declarativa baseada em XML comumente usada para criar interfaces e gráficos de utilizador ricos que tiram partido da Fundação de Apresentação do Windows. Se ativar esta definição de política e definir a caixa de lançamento para ativar, os ficheiros XAML são automaticamente carregados dentro do Internet Explorer. O utilizador não pode mudar este comportamento. Se definir a caixa de entrega para Prompt, o utilizador é solicitado para carregar ficheiros XAML. Se desativar esta definição de política, os ficheiros XAML não são carregados dentro do Internet Explorer. O utilizador não pode mudar este comportamento. Se não configurar esta definição de política, o utilizador pode decidir se carrega ficheiros XAML dentro do Internet Explorer.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067070)
 
-  **Padrão**: desabilitar
+  **Predefinição**: Desativar
 
-- O **Internet Explorer processa as restrições de segurança de janela com script**:  
-  O Internet Explorer permite que os scripts abram, redimensionem e reposicionem as janelas de vários tipos programaticamente. O recurso de segurança restrições de janela restringe as janelas pop-up e proíbe que os scripts exibam janelas nas quais as barras de título e status não são visíveis para o usuário ou ofuscam outras barras de título e status do Windows. Se você habilitar essa configuração de política, as janelas com script serão restringidas para todos os processos. Se você desabilitar ou não definir essa configuração de política, as janelas com script não serão restringidas.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067146)
+- **O Internet Explorer processa restrições de segurança de janelas escritas:**  
+  O Internet Explorer permite que os scripts possam abrir, redimensionar e reposicionar programaticamente janelas de vários tipos. A função de segurança de Restrições de Janelas restringe as janelas popup e proíbe que os scripts apresentem janelas nas quais o título e as barras de estado não sejam visíveis para o utilizador ou obstar o título e as barras de estado de outros Windows. Se ativar esta definição de política, as janelas escritas são restritas para todos os processos. Se desativar ou não configurar esta definição de política, as janelas escritas não são restritas.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067146)
 
-  **Padrão**: habilitado
+  **Predefinição**: Ativado
 
-- A **zona restrita do Internet Explorer executa controles e plug-ins ativos X**:  
-  Essa configuração de política permite que você gerencie se os controles ActiveX e plug-ins podem ser executados em páginas da zona especificada. Se você habilitar essa configuração de política, os controles e plug-ins poderão ser executados sem a intervenção do usuário. Se você selecionou prompt na caixa suspensa, os usuários serão solicitados a escolher se deseja permitir que os controles ou o plug-in sejam executados. Se você desabilitar essa configuração de política, os controles e plug-ins serão impedidos de serem executados. Se você não definir essa configuração de política, os controles e plug-ins serão impedidos de serem executados.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067114)
+- A zona restrita do **Internet Explorer executa os controlos e os plugins ativos:**  
+  Esta definição de política permite-lhe gerir se os controlos e plug-ins do ActiveX podem ser executados em páginas a partir da zona especificada. Se ativar esta definição de política, os controlos e os plug-ins podem ser executados sem a intervenção do utilizador. Se selecionou o Prompt na caixa de entrega, pede-se aos utilizadores que escolham se permitem que os controlos ou o plug-in sejam executados. Se desativar esta definição de política, os controlos e os plug-ins são impedidos de funcionar. Se não configurar esta definição de política, os controlos e os plug-ins são impedidos de funcionar.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067114)
 
-  **Padrão**: desabilitar
+  **Predefinição**: Desativar
 
-- **Controles Active X do script de zona restrita do Internet Explorer marcados como seguros para scripts**:  
-  Essa configuração de política permite que você gerencie se um controle ActiveX marcado como seguro para scripts pode interagir com um script. Se você habilitar essa configuração de política, a interação do script poderá ocorrer automaticamente sem a intervenção do usuário. Se você selecionar prompt na caixa suspensa, os usuários serão consultados para escolher se deseja permitir a interação do script. Se você desabilitar essa configuração de política, a interação do script será impedida de ocorrer. Se você não definir essa configuração de política, a interação do script será impedida de ocorrer.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067062)
+- Script de **zona restrita do Internet Explorer Ative X controles marcados como seguros para scripts**:  
+  Esta definição de política permite-lhe gerir se um controlo ActiveX marcado como seguro para scripts pode interagir com um script. Se ativar esta definição de política, a interação do script pode ocorrer automaticamente sem a intervenção do utilizador. Se selecionar O Aviso na caixa de entrega, os utilizadores são questionados para escolher se permitem a interação do script. Se desativar esta definição de política, a interação do script está impedida de ocorrer. Se não configurar esta definição de política, a interação do script está impedida de ocorrer.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067062)
 
-  **Padrão**: desabilitar
+  **Predefinição**: Desativar
 
-- **Opções de logon de zona restrita do Internet Explorer**:  
-  Essa configuração de política permite que você gerencie configurações para opções de entrada. Se você habilitar essa configuração de política, poderá escolher entre as seguintes opções de entrada.
+- **Opções restritas**de logon do Internet Explorer:  
+  Esta definição de política permite-lhe gerir as definições para opções de início de sessão. Se ativar esta definição de política, pode escolher entre as seguintes opções de início de sessão.
 
-  - *Anônimo* -use a entrada anônima para desabilitar a autenticação http e usar a conta de convidado somente para o protocolo CIFS (Common Internet File System).
+  - *Anonymous* - Utilize o registo anónimo para desativar a autenticação HTTP e utilize a conta de hóspedes apenas para o protocolo do Sistema Comum de Ficheiros de Internet (CIFS).
 
-  - *Prompt* -use solicitar nome de usuário e senha para consultar usuários de IDs de usuário e senhas. Depois que um usuário é consultado, esses valores podem ser usados silenciosamente para o restante da sessão.
+  - *Solicitação* - Utilize o pedido de nome do utilizador e palavra-passe para consultar os utilizadores para identificações de utilizadores e palavras-passe. Depois de um utilizador ser consultado, estes valores podem ser utilizados silenciosamente durante o resto da sessão.
 
-  - *Entrada automática somente na zona da intranet* – Use esta opção para consultar usuários de IDs de usuário e senhas em outras zonas. Depois que um usuário é consultado, esses valores podem ser usados silenciosamente para o restante da sessão.
+  - *Iniciar sessão automática apenas na zona intranet* - Utilize esta opção para consultar os utilizadores de IDs e senhas de utilização noutras zonas. Depois de um utilizador ser consultado, estes valores podem ser utilizados silenciosamente durante o resto da sessão.
 
-  - *Entrar automaticamente com nome de usuário e senha atuais*-Use esta opção para tentar entrar usando a resposta de desafio do Windows NT (também conhecida como autenticação NTLM). Se o servidor oferecer suporte à resposta de desafio do Windows NT, a entrada usará o nome de usuário e a senha de rede do usuário para entrar. Se o servidor não oferecer suporte à resposta de desafio do Windows NT, o usuário será consultado para fornecer o nome de usuário e a senha.
+  - *Iniciar sessão automática com o nome de utilizador e a palavra-passe atual*- Utilize esta opção para tentar iniciar o sessão utilizando o Windows NT Challenge Response (também conhecido como autenticação NTLM). Se o servidor suportar o Windows NT Challenge Response, o sinal de utilização utiliza o nome de utilizador da rede do utilizador e a palavra-passe para iniciar sessão. Se o servidor não suportar o Windows NT Challenge Response, o utilizador é consultado para fornecer o nome de utilizador e a palavra-passe.
 
-  Se você desabilitar essa configuração de política, a entrada será definida como *logon automático somente na zona da intranet*. Se você não definir essa configuração de política, a entrada será definida para *solicitar* o nome de usuário e a senha.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067110)
+  Se desativar esta definição de política, o início de sessão é definido para *iniciar sessão automática apenas na zona Intranet*. Se não configurar esta definição de política, o iniciar sessão está definido para *O Nome de Utilizador* e palavra-passe.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067110)
 
-  **Padrão**: anônimo
+  **Padrão**: Anónimo
 
-- **Os controles de inicialização de zona confiável do Internet Explorer e script ativo X não estão marcados como seguros**:  
-  Essa configuração de política permite que você gerencie controles ActiveX não marcados como seguros. Se você habilitar essa configuração de política, os controles ActiveX são executados, carregados com parâmetros e com script sem definir a segurança de objeto para dados ou scripts não confiáveis. Essa configuração não é recomendada, exceto para zonas seguras e administradas. Essa configuração faz com que controles seguros e não seguros sejam inicializados e com script, ignorando os controles ActiveX de script marcados como seguros para a opção de script. Se você habilitar essa configuração de política e selecionar avisar na caixa suspensa, os usuários serão consultados se deseja permitir que o controle seja carregado com parâmetros ou com script. Se você desabilitar essa configuração de política, os controles ActiveX que não puderem ser tornados seguros não serão carregados com parâmetros ou com script. Se você não definir essa configuração de política, os usuários serão consultados se deseja permitir que o controle seja carregado com parâmetros ou com script.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067137)
+- **A zona fidedigna do Internet Explorer inicializa e script Ative X controlos não marcados como seguros:**  
+  Esta definição de política permite-lhe gerir os controlos ActiveX não marcados como seguros. Se ativar esta definição de política, os controlos ActiveX funcionam, carregados com parâmetros e escritos sem definir a segurança do objeto para dados ou scripts não confiáveis. Esta definição não é recomendada, exceto para zonas seguras e administradas. Esta definição faz com que os controlos inseguros e seguros sejam inicializados e scripts, ignorando os comandos Script ActiveX marcados como seguros para a opção de script. Se ativar esta definição de política e selecionar o Prompt na caixa de lançamento, os utilizadores são questionados se permitem que o controlo carregue com parâmetros ou scripts. Se desativar esta definição de política, os controlos ActiveX que não podem ser tornados seguros não são carregados com parâmetros ou scripts. Se não configurar esta definição de política, os utilizadores são questionados se permitem que o controlo carregue com parâmetros ou scripts.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067137)
 
-  **Padrão**: desabilitar
+  **Predefinição**: Desativar
 
-- **Revogação do certificado do servidor do Internet Explorer**:  
-  Essa configuração de política permite que você gerencie se o Internet Explorer verificará o status de revogação dos certificados dos servidores. Os certificados são revogados quando são comprometidos ou não são mais válidos, e essa opção protege os usuários do envio de dados confidenciais para um site que pode ser fraudulento ou não seguro. Se você habilitar essa configuração de política, o Internet Explorer verificará se os certificados de servidor foram revogados. Se você desabilitar essa configuração de política, o Internet Explorer não verificará os certificados do servidor para ver se eles foram revogados. Se você não definir essa configuração de política, o Internet Explorer não verificará os certificados do servidor para ver se eles foram revogados.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067046)
+- **Internet Explorer verificar**a revogação do certificado do servidor:  
+  Esta definição de política permite-lhe gerir se o Internet Explorer verificará o estado de revogação dos certificados dos servidores. Os certificados são revogados quando estão comprometidos ou já não são válidos, e esta opção protege os utilizadores de submeter dados confidenciais a um site que possa ser fraudulento ou não seguro. Se ativar esta definição de política, o Internet Explorer verificará se os certificados de servidor foram revogados. Se desativar esta definição de política, o Internet Explorer não verificará os certificados do servidor para ver se foram revogados. Se não configurar esta definição de política, o Internet Explorer não verificará os certificados do servidor para ver se foram revogados.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067046)
 
-  **Padrão**: habilitado
+  **Predefinição**: Ativado
 
-- **Sites com menos privilégios do Internet Explorer Internet Zone**:  
-  Essa configuração de política permite que você gerencie se sites de zonas com menos privilégios, como sites restritos, podem navegar para essa zona. Se você habilitar essa configuração de política, os sites de zonas com menos privilégios poderão abrir novas janelas no ou navegar até essa zona. A zona de segurança será executada sem a camada adicional de segurança fornecida pelo recurso de segurança proteção contra elevação de zona. Se você selecionar prompt na caixa suspensa, um aviso será emitido para o usuário que a navegação potencialmente arriscada está prestes a ocorrer. Se você desabilitar essa configuração de política, a navegação possivelmente prejudicial será impedida. O recurso de segurança do Internet Explorer está ativado nessa zona como definido pelo controle de recurso de elevação de zona. Se você não definir essa configuração de política, os sites de zonas com menos privilégios poderão abrir novas janelas no ou navegar até essa zona.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067109)
+- **Internet Explorer internet zone sites menos privilegiados:**  
+  Esta definição de política permite-lhe gerir se os Web sites de zonas menos privilegiadas, como sites restritos, podem navegar para esta zona. Se ativar esta definição de política, os Web sites de zonas menos privilegiadas podem abrir novas janelas ou navegar para dentro desta zona. A zona de segurança funcionará sem a camada adicional de segurança fornecida pela função de segurança Protection from Zone Elevation. Se selecionar O Aviso na caixa de entrega, é emitido um aviso ao utilizador de que está prestes a ocorrer uma navegação potencialmente arriscada. Se desativar esta definição de política, possivelmente evita-se a navegação prejudicial. A funcionalidade de segurança do Internet Explorer está nesta zona, tal como definida pela Proteção contra o controlo da funcionalidade de elevação da zona. Se não configurar esta definição de política, os Web sites de zonas menos privilegiadas podem abrir novas janelas ou navegar para dentro desta zona.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067109)
 
-  **Padrão**: desabilitar
+  **Predefinição**: Desativar
 
-- **Downloads de arquivos de zona restritas do Internet Explorer**:  
-  Essa configuração de política permite que você gerencie se os downloads de arquivo são permitidos da zona. Essa opção é determinada pela zona da página com o link que está causando o download, não a zona da qual o arquivo é entregue. Se você habilitar essa configuração de política, os arquivos poderão ser baixados da zona. Se você desabilitar essa configuração de política, os arquivos serão impedidos de serem baixados da zona. Se você não definir essa configuração de política, os arquivos serão impedidos de serem baixados da zona.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067038)
+- **Transferências de ficheiros de zonas restritas do Internet Explorer:**  
+  Esta definição de política permite-lhe gerir se os downloads de ficheiros são permitidos a partir da zona. Esta opção é determinada pela zona da página com o link que causa o download, e não a zona a partir da qual o ficheiro é entregue. Se ativar esta definição de política, os ficheiros podem ser descarregados a partir da zona. Se desativar esta definição de política, os ficheiros são impedidos de serem descarregados da zona. Se não configurar esta definição de política, os ficheiros são impedidos de serem descarregados da zona.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067038)
 
-  **Padrão**: desabilitar
+  **Predefinição**: Desativar
 
-- Internet **Explorer execução de zona da internet .NET Framework componentes dependentes assinados com Authenticode**:  
-  Essa configuração de política permite que você gerencie se .NET Framework componentes assinados com Authenticode podem ser executados no Internet Explorer. Esses componentes incluem controles gerenciados referenciados de uma marca de objeto e executáveis gerenciados referenciados por meio de um link. Se você habilitar essa configuração de política, o Internet Explorer executará componentes gerenciados assinados. Se você selecionar prompt na caixa suspensa, o Internet Explorer solicitará que o usuário determine se os componentes gerenciados assinados serão executados. Se você desabilitar essa configuração de política, o Internet Explorer não executará componentes gerenciados assinados. Se você não definir essa configuração de política, o Internet Explorer não executará componentes gerenciados assinados.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067033)
+- **Internet Explorer internet zone run .NET Estrutura componentes reliant assinados com Authenticode**:  
+  Esta definição de política permite-lhe gerir se os componentes .NET Framework que são assinados com authenticode podem ser executados a partir do Internet Explorer. Estes componentes incluem controlos geridos referenciados a partir de uma etiqueta de objeto e executáveis geridos referenciados a partir de um link. Se ativar esta definição de política, o Internet Explorer executará componentes geridos assinados. Se selecionar O Prompt na caixa de lançamento, o Internet Explorer irá solicitar ao utilizador que determine se executa os componentes geridos assinados. Se desativar esta definição de política, o Internet Explorer não executará componentes geridos assinados. Se não configurar esta definição de política, o Internet Explorer não executará componentes geridos assinados.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067033)
 
-  **Padrão**: desabilitar
+  **Predefinição**: Desativar
 
-- O **Internet Explorer impede a instalação por usuário de controles do Active X**:  
-  Essa configuração de política permite que você impeça a instalação de controles ActiveX por usuário. Se você habilitar essa configuração de política, os controles ActiveX não poderão ser instalados por usuário. Se você desabilitar ou não definir essa configuração de política, os controles ActiveX poderão ser instalados por usuário.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067058)
+- **O Internet Explorer impede por cada utilizador a instalação de controlos Ative X:**  
+  Esta definição de política permite-lhe impedir a instalação de controlos ActiveX por utilizador. Se ativar esta definição de política, os controlos ActiveX não podem ser instalados numa base por utilizador. Se desativar ou não configurar esta definição de política, os controlos ActiveX podem ser instalados numa base por utilizador.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067058)
 
-  **Padrão**: habilitado
+  **Predefinição**: Ativado
 
-- O **Internet Explorer impede o gerenciamento de filtro de tela inteligente**:  
-  Essa configuração de política impede que o usuário gerencie o Filtro SmartScreen, que avisa o usuário se o site que ele visita é conhecido por tentativas fraudulentas de coletar informações pessoais por meio de "phishing" ou é conhecido por hospedar malware. Se você habilitar essa configuração de política, o usuário não será solicitado a ativar o filtro do SmartScreen. Todos os endereços de sites que não estão na lista de permissões de filtros são enviados automaticamente à Microsoft sem avisar o usuário. Se você desabilitar ou não definir essa configuração de política, o usuário receberá uma solicitação para decidir se deseja ativar o filtro do SmartScreen durante a experiência da primeira execução.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067135)
+- **O Internet Explorer impede a gestão do filtro de ecrã inteligente:**  
+  Esta definição de política impede o utilizador de gerir o Filtro SmartScreen, que avisa o utilizador se o site que visita é conhecido por tentativas fraudulentas de recolher informações pessoais através de "phishing", ou é conhecido por hospedar malware. Se ativar esta definição de política, o utilizador não é solicitado a ligar o Filtro SmartScreen. Todos os endereços do site que não estejam nos filtros permitem que a lista seja enviada automaticamente para a Microsoft sem avisar o utilizador. Se desativar ou não configurar esta definição de política, o utilizador é solicitado a decidir se liga o Filtro SmartScreen durante a experiência de primeira execução.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067135)
 
-  **Padrão**: habilitar
+  **Padrão**: Ativar
 
-- O **Internet Explorer processa o recurso de segurança de detecção de MIME**:  
-  Essa configuração de política determina se a detecção de MIME do Internet Explorer impedirá a promoção de um arquivo de um tipo para um tipo de arquivo mais perigoso. Se você habilitar essa configuração de política, a detecção de MIME nunca promoverá um arquivo de um tipo para um tipo de arquivo mais perigoso. Se você desabilitar essa configuração de política, os processos do Internet Explorer permitirão que uma detecção de MIME promova um arquivo de um tipo para um tipo de arquivo mais perigoso. Se você não definir essa configuração de política, a detecção de MIME nunca promoverá um arquivo de um tipo para um tipo de arquivo mais perigoso.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067124)
+- **O Internet Explorer processa a funcionalidade de segurança de sniffing MIME:**  
+  Esta definição de política determina se o cheiro do Internet Explorer MIME impedirá a promoção de um ficheiro de um tipo para um tipo de ficheiro mais perigoso. Se ativar esta definição de política, o cheiro mime nunca promoverá um ficheiro de um tipo para um tipo de ficheiro mais perigoso. Se desativar esta definição de política, os processos do Internet Explorer permitirão que um cheiro mime promova um ficheiro de um tipo para um tipo de ficheiro mais perigoso. Se não configurar esta definição de política, o cheiro mime nunca promoverá um ficheiro de um tipo para um tipo de ficheiro mais perigoso.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067124)
 
-  **Padrão**: habilitado
+  **Predefinição**: Ativado
 
-- O **download da zona restrita do Internet Explorer controla controles ActiveX assinados**:  
-  Essa configuração de política permite que você gerencie se os usuários podem baixar controles ActiveX assinados de uma página na zona. Se você habilitar essa política, os usuários poderão baixar controles assinados sem intervenção do usuário. Se você selecionar prompt na caixa suspensa, os usuários serão consultados se deseja baixar os controles assinados por editores que não são confiáveis. O código assinado por editores confiáveis é baixado silenciosamente. Se você desabilitar a configuração de política, os controles assinados não poderão ser baixados. Se você não definir essa configuração de política, os usuários serão consultados se deseja baixar os controles assinados por editores que não são confiáveis. O código assinado por editores confiáveis é baixado silenciosamente.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067120)
+- **O descarregamento de zona restrita do Internet Explorer assinou controlos Ative X:**  
+  Esta definição de política permite-lhe gerir se os utilizadores podem descarregar controlos ActiveX assinados a partir de uma página na zona. Se ativar esta política, os utilizadores podem descarregar controlos assinados sem a intervenção do utilizador. Se selecionar o Prompt na caixa de entrega, os utilizadores são questionados se descarregam os controlos assinados por editores que não são de confiança. O código assinado por editores fidedignos é descarregado silenciosamente. Se desativar a definição de política, os controlos assinados não podem ser descarregados. Se não configurar esta definição de política, os utilizadores são questionados se descarregam os controlos assinados por editores que não são de confiança. O código assinado por editores fidedignos é descarregado silenciosamente.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067120)
 
-  **Padrão**: desabilitar
+  **Predefinição**: Desativar
 
-- **Preenchimento automático do Internet Explorer**:  
-  Esse recurso de preenchimento automático pode se lembrar e sugerir nomes de usuário e senhas em formulários. Se você habilitar essa configuração, o usuário não poderá alterar "nome de usuário e senhas em formulários" ou "avisar para salvar senhas". O recurso de preenchimento automático para nomes de usuário e senhas em formulários é ativado. Decida se deseja selecionar "avisar para salvar senhas". Se você desabilitar essa configuração, o usuário não poderá alterar "nome de usuário e senhas em formulários" ou "avisar para salvar senhas". O recurso de preenchimento automático para nomes de usuário e senhas em formulários é desativado. O usuário também não pode optar por ser solicitado a salvar senhas. Se você não definir essa configuração, o usuário terá a liberdade de ativar o preenchimento automático para nome de usuário e senhas em formulários e a opção de solicitar o salvamento de senhas. Para exibir essa opção, os usuários abrem a caixa de diálogo Opções da Internet, clicam na guia conteúdo e clicam no botão Configurações.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067122)
+- **Internet Explorer auto completo:**  
+  Esta função Auto-Complete pode lembrar-se e sugerir nomes de utilizador e palavras-passe em Formulários. Se ativar esta definição, o utilizador não pode alterar "nome de utilizador e palavras-passe nos formulários" ou "solicitar-me para guardar senhas". A função Auto Complete para nomes de utilizador e palavras-passe em Formulários é ligada. Decida se selecionar "me inste para guardar senhas". Se desativar esta definição, o utilizador não pode alterar "nome de utilizador e palavras-passe nos formulários" ou "pedir-me para guardar senhas". A funcionalidade Auto Complete para nomes de utilizador e palavras-passe em Formulários está desligada. O utilizador também não pode optar por ser solicitado para guardar palavras-passe. Se não configurar esta definição, o utilizador tem a liberdade de ligar automaticamente completo para o nome do utilizador e palavras-passe nos formulários e a opção de pedir para guardar palavras-passe. Para visualizar esta opção, os utilizadores abrem a caixa de diálogo opções de Internet, clicam no Separador Conteúdo e clicam no botão Definições.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067122)
 
-  **Padrão**: desabilitado
+  **Predefinição**: Desativado
 
-- **Internet Explorer permitir que o VBScript execute**:  
-  Essa configuração de política permite que você decida se o VBScript pode ser executado em páginas em zonas específicas do Internet Explorer. As opções incluem:
+- A zona de **internet do Internet Explorer permite que o VBscript corra:**  
+  Esta definição de política permite-lhe decidir se o VBScript pode ser executado em páginas em zonas específicas do Internet Explorer. As opções incluem:
 
-  - *Enable* -VBScript é executado em páginas em zonas específicas, sem qualquer interação.
+  - *Ativar* - O VBScript corre em páginas em zonas específicas, sem qualquer interação.
 
-  - *Prompt* -os funcionários são solicitados a permitir que o VBScript seja executado na zona.
+  - *Solicitação* - Os colaboradores são solicitados a permitir que o VBScript corra na zona.
 
-  - *Disable* -o VBScript é impedido de ser executado na zona. Se você desabilitar ou não definir essa configuração de política, o VBScript será executado sem nenhuma interação na zona especificada.
+  - *Desativar* - O VBScript está impedido de funcionar na zona. Se desativar ou não configurar esta definição de política, o VBScript funciona sem qualquer interação na zona especificada.
 
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067119)
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067119)
 
-  **Padrão**: desabilitar
+  **Predefinição**: Desativar
 
-- **A zona restrita do Internet Explorer permite que somente domínios aprovados usem controles do ativo X TDC**:  
-  Essa configuração de política controla se o usuário pode executar o controle ActiveX TDC nos sites. Se você habilitar essa configuração de política, o controle ActiveX TDC não será executado de sites nesta zona. Se você desabilitar essa configuração de política, o controle ativo X TDC será executado de todos os sites nesta zona.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067032)
+- A zona restrita do **Internet Explorer permite que apenas os domínios aprovados utilizem controlos TDC Ative X:**  
+  Esta definição de política controla se o utilizador puder executar o controlo TDC ActiveX nos websites. Se ativar esta definição de política, o controlo TDC ActiveX não será executado a partir de websites nesta zona. Se desativar esta definição de política, o controlo TDC Ative X será executado a partir de todos os sites desta zona.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067032)
 
-  **Padrão**: habilitado
+  **Predefinição**: Ativado
 
-- A **zona confiável do Internet Explorer não executa antimalware em controles ativos X**:  
-  Essa configuração de política determina se o Internet Explorer executa programas antimalware em controles ActiveX, para verificar se eles são seguros para carregar em páginas. Se você habilitar essa configuração de política, o Internet Explorer não verificará com seu programa antimalware para ver se é seguro criar uma instância do controle ActiveX. Se você desabilitar essa configuração de política, o Internet Explorer sempre verificará o programa antimalware para ver se é seguro criar uma instância do controle ActiveX. Se você não definir essa configuração de política, o Internet Explorer sempre verificará o programa antimalware para ver se é seguro criar uma instância do controle ActiveX. Os usuários podem ativar ou desativar esse comportamento, usando as configurações de segurança do Internet Explorer.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067115)
+- **A zona fidedigna do Internet Explorer não executa antimalware contra os controlos Ative X:**  
+  Esta definição de política determina se o Internet Explorer executa programas antimalware contra controlos ActiveX, para verificar se são seguros para carregar em páginas. Se ativar esta definição de política, o Internet Explorer não verificará com o seu programa antimalware para ver se é seguro criar uma instância do controlo ActiveX. Se desativar esta definição de política, o Internet Explorer verifica sempre com o seu programa antimalware para ver se é seguro criar uma instância do controlo ActiveX. Se não configurar esta definição de política, o Internet Explorer verifica sempre com o seu programa antimalware para ver se é seguro criar uma instância do controlo ActiveX. Os utilizadores podem ligar ou desligar este comportamento, utilizando as definições de Segurança do Internet Explorer.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067115)
 
-  **Padrão**: desabilitado
+  **Predefinição**: Desativado
 
-- **Permissões Java da zona do computador local do Internet Explorer**:  
-  Essa configuração de política permite que você gerencie permissões para miniaplicativos Java. Se você habilitar essa configuração de política, poderá escolher opções na caixa suspensa. Personalizado, para controlar as configurações de permissões individualmente. A segurança baixa permite que os applets realizem todas as operações. A segurança média permite que os applets sejam executados em sua área restrita (uma área na memória fora da qual o programa não pode fazer chamadas), além de recursos como espaço transitório (uma área de armazenamento segura e seguro no computador cliente) e e/s de arquivo controlado pelo usuário. A alta segurança permite que os applets sejam executados na área restrita. Desabilite o Java para impedir que os applets sejam executados. Se você desabilitar essa configuração de política, os miniaplicativos Java não poderão ser executados. Se você não definir essa configuração de política, a permissão será definida como segurança média.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067113)
+- **Permissões de java**da zona de máquina local do Internet Explorer:  
+  Esta definição de política permite-lhe gerir permissões para applets Java. Se ativar esta definição de política, pode escolher opções a partir da caixa de lançamento. Personalizado, para controlar as definições de permissões individualmente. A Low Safety permite que as applets façam todas as operações. A Medium Safety permite que as applets corram na sua caixa de areia (uma área na memória fora da qual o programa não pode fazer chamadas), além de capacidades como o espaço de risco (uma área de armazenamento segura e segura no computador cliente) e o ficheiro controlado pelo utilizador I/O. A Alta Segurança permite que as maçãs corram na sua caixa de areia. Desative Java para evitar que as maçãs se esgotem. Se desativar este cenário de política, as maçãs Java não podem correr. Se não configurar esta definição de política, a permissão é definida para a Segurança Média.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067113)
 
-  **Padrão**: desabilitar Java
+  **Predefinição**: Desative o java
 
-- A **zona da intranet do Internet Explorer não executa antimalware em controles ativos X**:  
-  Essa configuração de política determina se o Internet Explorer executa programas antimalware em controles ActiveX, para verificar se eles são seguros para carregar em páginas. Se você habilitar essa configuração de política, o Internet Explorer não verificará com seu programa antimalware para ver se é seguro criar uma instância do controle ActiveX. Se você desabilitar essa configuração de política, o Internet Explorer sempre verificará o programa antimalware para ver se é seguro criar uma instância do controle ActiveX. Se você não definir essa configuração de política, o Internet Explorer não verificará com seu programa antimalware para ver se é seguro criar uma instância do controle ActiveX. Os usuários podem ativar ou desativar esse comportamento, usando as configurações de segurança do Internet Explorer.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067138)
+- **A zona intranet do Internet Explorer não executa antimalware contra os controlos Ative X:**  
+  Esta definição de política determina se o Internet Explorer executa programas antimalware contra controlos ActiveX, para verificar se são seguros para carregar em páginas. Se ativar esta definição de política, o Internet Explorer não verificará com o seu programa antimalware para ver se é seguro criar uma instância do controlo ActiveX. Se desativar esta definição de política, o Internet Explorer verifica sempre com o seu programa antimalware para ver se é seguro criar uma instância do controlo ActiveX. Se não configurar esta definição de política, o Internet Explorer não verificará com o seu programa antimalware para ver se é seguro criar uma instância do controlo ActiveX. Os utilizadores podem ligar ou desligar este comportamento, utilizando as definições de Segurança do Internet Explorer.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067138)
 
-  **Padrão**: desabilitado
+  **Predefinição**: Desativado
 
-- **Rede de zona restrita do Internet Explorer scriptlets**:  
-  Essa configuração de política permite que você gerencie se o usuário pode executar scriptlets. Se você habilitar essa configuração de política, o usuário poderá executar scriptlets. Se você desabilitar essa configuração de política, o usuário não poderá executar o scriptlets. Se você não definir essa configuração de política, o usuário poderá habilitar ou desabilitar o scriptlets.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067112)
+- **Scriptlets**de zona restrita do Internet Explorer:  
+  Esta definição de política permite-lhe gerir se o utilizador pode executar scriptlets. Se ativar esta definição de política, o utilizador pode executar scriptlets. Se desativar esta definição de política, o utilizador não pode executar scriptlets. Se não configurar esta definição de política, o utilizador pode ativar ou desativar scriptlets.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067112)
 
-  **Padrão**: desabilitado
+  **Predefinição**: Desativado
 
-- **Barra de notificação de processos do Internet Explorer**:  
-  Essa configuração de política permite que você gerencie se a barra de notificação é exibida para processos do Internet Explorer quando instalações de arquivo ou código são restritas. Por padrão, a barra de notificação é exibida para processos do Internet Explorer. Se você habilitar essa configuração de política, a barra de notificação será exibida para os processos do Internet Explorer. Se você desabilitar essa configuração de política, a barra de notificação não será exibida para processos do Internet Explorer. Se você não definir essa configuração de política, a barra de notificação não será exibida para processos do Internet Explorer.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067139)
+- **Internet Explorer processa barra de notificação:**  
+  Esta definição de política permite-lhe gerir se a barra de notificação exibe os processos do Internet Explorer quando as instalações de ficheiros ou códigos são restritas. Por predefinição, a barra de notificação apresenta os processos do Internet Explorer. Se ativar esta definição de política, a barra de notificação apresenta os Processos do Internet Explorer. Se desativar esta definição de política, a barra de notificação não será exibida para os processos do Internet Explorer. Se não configurar esta definição de política, a barra de Notificação não exibe processos de Internet Explorer.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067139)
 
-  **Padrão**: habilitado
+  **Predefinição**: Ativado
 
-- **Controles ActiveX assinados do download de Internet Zone Internet Explorer**:  
-  Essa configuração de política permite que você gerencie se os usuários podem baixar controles ActiveX assinados de uma página na zona. Se você habilitar essa política, os usuários poderão baixar controles assinados sem intervenção do usuário. Se você selecionar prompt na caixa suspensa, os usuários serão consultados se deseja baixar os controles assinados por editores que não são confiáveis. O código assinado por editores confiáveis é baixado silenciosamente. Se você desabilitar a configuração de política, os controles assinados não poderão ser baixados. Se você não definir essa configuração de política, os usuários serão consultados se deseja baixar os controles assinados por editores que não são confiáveis. O código assinado por editores confiáveis é baixado silenciosamente.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067064)
+- O descarregamento de zona de **internet do Internet Explorer do Internet assinou controlos ActiveX:**  
+  Esta definição de política permite-lhe gerir se os utilizadores podem descarregar controlos ActiveX assinados a partir de uma página na zona. Se ativar esta política, os utilizadores podem descarregar controlos assinados sem a intervenção do utilizador. Se selecionar o Prompt na caixa de entrega, os utilizadores são questionados se descarregam os controlos assinados por editores que não são de confiança. O código assinado por editores fidedignos é descarregado silenciosamente. Se desativar a definição de política, os controlos assinados não podem ser descarregados. Se não configurar esta definição de política, os utilizadores são questionados se descarregam os controlos assinados por editores que não são de confiança. O código assinado por editores fidedignos é descarregado silenciosamente.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067064)
 
-  **Padrão**: desabilitar
+  **Predefinição**: Desativar
 
-- **Tela inteligente da zona restrita do Internet Explorer**:  
-  Essa configuração de política controla se o Filtro SmartScreen verifica as páginas nessa zona em busca de conteúdo mal-intencionado. Se você habilitar essa configuração de política, o filtro do SmartScreen verificará as páginas nessa zona em busca de conteúdo mal-intencionado. Se você desabilitar essa configuração de política, o filtro do SmartScreen não verificará as páginas nessa zona em busca de conteúdo mal-intencionado. Se você não definir essa configuração de política, o usuário poderá escolher se o filtro do SmartScreen verificará se há conteúdo mal-intencionado nas páginas dessa zona. Observação: no Internet Explorer 7, essa configuração de política controla se o filtro de phishing verifica se há conteúdo mal-intencionado nas páginas dessa zona.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067034)
+- **Tela inteligente de zona restrita do Internet Explorer:**  
+  Esta definição de política controla se o Filtro SmartScreen digitaliza páginas nesta zona para obter conteúdo malicioso. Se ativar esta definição de política, o Filtro SmartScreen analisa as páginas desta zona para obter conteúdo malicioso. Se desativar esta definição de política, o Filtro SmartScreen não digitaliza páginas nesta zona para obter conteúdo malicioso. Se não configurar esta definição de política, o utilizador pode escolher se o Filtro SmartScreen digitaliza páginas nesta zona para obter conteúdo malicioso. Nota: No Internet Explorer 7, esta definição de política controla se o Filtro de Phishing digitaliza páginas nesta zona para conteúdos maliciosos.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067034)
 
-  **Padrão**: habilitado
+  **Predefinição**: Ativado
 
-- **Botão Remover executar este tempo do Internet Explorer para controles ActiveX desatualizados**:  
-  Essa configuração de política permite impedir que os usuários vejam o botão "executar desta vez" e executem controles ActiveX desatualizados específicos no Internet Explorer. Se você habilitar essa configuração de política, os usuários não verão o botão "executar desta vez" na mensagem de aviso que aparece quando o Internet Explorer bloqueia um controle ActiveX desatualizado. Se você desabilitar ou não definir essa configuração de política, os usuários verão o botão "executar desta vez" na mensagem de aviso que aparece quando o Internet Explorer bloqueia um controle ActiveX desatualizado. Clicar nesse botão permite que o usuário execute o controle ActiveX desatualizado uma vez. Para obter mais informações, consulte "controles ActiveX desatualizados" na biblioteca do TechNet do Internet Explorer.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067123)
+- **O Internet Explorer remove o executar este botão de tempo para controlos Ative X desatualizados:**  
+  Esta definição de política permite-lhe impedir que os utilizadores vejam o botão "Run this time" e de executar controlos ActiveX desatualizados específicos no Internet Explorer. Se ativar esta definição de política, os utilizadores não verão o botão "Executar desta vez" na mensagem de aviso que aparece quando o Internet Explorer bloqueia um controlo ActiveX desatualizado. Se desativar ou não configurar esta definição de política, os utilizadores verão o botão "Executar desta vez" na mensagem de aviso que aparece quando o Internet Explorer bloqueia um controlo ActiveX desatualizado. Clicar neste botão permite ao utilizador executar o controlo ActiveX desatualizado uma vez. Para mais informações, consulte "Controlos ActiveX Desatualizados" na biblioteca do Internet Explorer TechNet.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067123)
 
-  **Padrão**: habilitado
+  **Predefinição**: Ativado
 
-- **Aplicativos e arquivos de inicialização de Internet do Internet Explorer em um iframe**:  
-  Essa configuração de política permite que você gerencie se os aplicativos podem ser executados e se os arquivos podem ser baixados de uma referência de IFRAME no HTML das páginas desta zona. Se você habilitar essa configuração de política, os usuários poderão executar aplicativos e baixar arquivos de IFRAMEs nas páginas desta zona sem a intervenção do usuário. Se você selecionar prompt na caixa suspensa, os usuários serão consultados para escolher se deseja executar aplicativos e baixar arquivos de IFRAMEs nas páginas desta zona. Se você desabilitar essa configuração de política, os usuários não poderão executar aplicativos e baixar arquivos de IFRAMEs nas páginas desta zona. Se você não definir essa configuração de política, os usuários serão consultados para escolher se deseja executar aplicativos e baixar arquivos de IFRAMEs nas páginas desta zona.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067020)
+- **Aplicações e ficheiros**de lançamento de zona de internet do Internet Do Internet Explorer num iframe:  
+  Esta definição de política permite-lhe gerir se as aplicações podem ser executadas e se os ficheiros podem ser descarregados a partir de uma referência IFRAME no HTML das páginas desta zona. Se ativar esta definição de política, os utilizadores podem executar aplicações e descarregar ficheiros a partir de IFRAMEs nas páginas desta zona sem a intervenção do utilizador. Se selecionar o Prompt na caixa de entrega, os utilizadores são questionados para escolher se executam aplicações e descarregam ficheiros a partir de IFRAMEs nas páginas desta zona. Se desativar esta definição de política, os utilizadores não podem executar aplicações e transferir ficheiros a partir de IFRAMEs nas páginas desta zona. Se não configurar esta definição de política, os utilizadores são questionados para escolher se executam aplicações e descarregam ficheiros a partir de IFRAMEs nas páginas desta zona.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067020)
 
-  **Padrão**: desabilitar
+  **Predefinição**: Desativar
 
-- **Zona restrita do Internet Explorer navegue por janelas e quadros entre domínios diferentes**:  
-  Essa configuração de política permite que você defina opções para arrastar o conteúdo de um domínio para um domínio diferente quando a origem e o destino estiverem em janelas diferentes. Se você habilitar essa configuração de política e clicar em habilitar, os usuários poderão arrastar o conteúdo de um domínio para um domínio diferente quando a origem e o destino estiverem em janelas diferentes. Os usuários não podem alterar essa configuração. Se você habilitar essa configuração de política e clicar em Desabilitar, os usuários não poderão arrastar o conteúdo de um domínio para um domínio diferente quando a origem e o destino estiverem em janelas diferentes. Os usuários não podem alterar essa configuração. No Internet Explorer 10, se você desabilitar essa configuração de política ou não configurá-la, os usuários não poderão arrastar o conteúdo de um domínio para um domínio diferente quando a origem e o destino estiverem em janelas diferentes. Os usuários podem alterar essa configuração na caixa de diálogo Opções da Internet. No Internet Explorer 9 e versões anteriores, se você desabilitar essa política ou não configurá-la, os usuários poderão arrastar o conteúdo de um domínio para um domínio diferente quando a origem e o destino estiverem em janelas diferentes. Os usuários não podem alterar essa configuração.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067050)
+- **O Internet Explorer restringiu as janelas e os quadros em diferentes domínios:**  
+  Esta definição de política permite-lhe definir opções para arrastar conteúdo de um domínio para um domínio diferente quando a fonte e o destino estão em janelas diferentes. Se ativar esta definição de política e clicar em Ativar, os utilizadores podem arrastar o conteúdo de um domínio para um domínio diferente quando a fonte e o destino estão em diferentes janelas. Os usuários não podem alterar essa configuração. Se ativar esta definição de política e clicar em Desativar, os utilizadores não podem arrastar conteúdo de um domínio para um domínio diferente quando tanto a fonte como o destino estão em diferentes janelas. Os usuários não podem alterar essa configuração. No Internet Explorer 10, se desativar esta definição de política ou não configurar, os utilizadores não podem arrastar conteúdo de um domínio para um domínio diferente quando a fonte e o destino estão em janelas diferentes. Os utilizadores podem alterar esta definição no diálogo das Opções de Internet. No Internet Explorer 9 e versões anteriores, se desativar esta política ou não a configurar, os utilizadores podem arrastar conteúdo de um domínio para um domínio diferente quando a fonte e o destino estão em diferentes janelas. Os usuários não podem alterar essa configuração.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067050)
 
-  **Padrão**: desabilitar
+  **Predefinição**: Desativar
 
-- **Tela inteligente do Internet Explorer Internet Zone**:  
-  Essa configuração de política controla se o Filtro SmartScreen verifica as páginas nessa zona em busca de conteúdo mal-intencionado. Se você habilitar essa configuração de política, o filtro do SmartScreen verificará as páginas nessa zona em busca de conteúdo mal-intencionado. Se você desabilitar essa configuração de política, o filtro do SmartScreen não verificará as páginas nessa zona em busca de conteúdo mal-intencionado. Se você não definir essa configuração de política, o usuário poderá escolher se o filtro do SmartScreen verificará se há conteúdo mal-intencionado nas páginas dessa zona. Observação: no Internet Explorer 7, essa configuração de política controla se o filtro de phishing verifica se há conteúdo mal-intencionado nas páginas dessa zona.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067047)
+- Tela inteligente da zona de **internet do Internet Explorer:**  
+  Esta definição de política controla se o Filtro SmartScreen digitaliza páginas nesta zona para obter conteúdo malicioso. Se ativar esta definição de política, o Filtro SmartScreen analisa as páginas desta zona para obter conteúdo malicioso. Se desativar esta definição de política, o Filtro SmartScreen não digitaliza páginas nesta zona para obter conteúdo malicioso. Se não configurar esta definição de política, o utilizador pode escolher se o Filtro SmartScreen digitaliza páginas nesta zona para obter conteúdo malicioso. Nota: No Internet Explorer 7, esta definição de política controla se o Filtro de Phishing digitaliza páginas nesta zona para conteúdos maliciosos.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067047)
 
-  **Padrão**: habilitado
+  **Predefinição**: Ativado
 
-- O **Internet Explorer bloqueou as permissões de Java da zona confiável**:  
-  Essa configuração de política permite que você gerencie permissões para miniaplicativos Java. Se você habilitar essa configuração de política, poderá escolher opções na caixa suspensa. Personalizado, para controlar as configurações de permissões individualmente. A segurança baixa permite que os applets realizem todas as operações. A segurança média permite que os applets sejam executados em sua área restrita (uma área na memória fora da qual o programa não pode fazer chamadas), além de recursos como espaço transitório (uma área de armazenamento segura e seguro no computador cliente) e e/s de arquivo controlado pelo usuário. A alta segurança permite que os applets sejam executados na área restrita. Desabilite o Java para impedir que os applets sejam executados. Se você desabilitar essa configuração de política, os miniaplicativos Java não poderão ser executados. Se você não definir essa configuração de política, os miniaplicativos Java serão desabilitados.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067142)
+- **Internet Explorer bloqueou permissões java zona fidedigna:**  
+  Esta definição de política permite-lhe gerir permissões para applets Java. Se ativar esta definição de política, pode escolher opções a partir da caixa de lançamento. Personalizado, para controlar as definições de permissões individualmente. A Low Safety permite que as applets façam todas as operações. A Medium Safety permite que as applets corram na sua caixa de areia (uma área na memória fora da qual o programa não pode fazer chamadas), além de capacidades como o espaço de risco (uma área de armazenamento segura e segura no computador cliente) e o ficheiro controlado pelo utilizador I/O. A Alta Segurança permite que as maçãs corram na sua caixa de areia. Desative Java para evitar que as maçãs se esgotem. Se desativar este cenário de política, as maçãs Java não podem correr. Se não configurar esta definição de política, as maçãs Java são desativadas.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067142)
 
-  **Padrão**: desabilitar Java
+  **Predefinição**: Desative o java
 
-- O **Internet Explorer verifica assinaturas em programas baixados**:  
-  Essa configuração de política permite que você gerencie se o Internet Explorer verifica assinaturas digitais (que identifica o editor de software assinado e verifica se ele não foi modificado ou adulterado) em computadores de usuários antes de baixar programas executáveis. Se você habilitar essa configuração de política, o Internet Explorer verificará as assinaturas digitais de programas executáveis e exibirá suas identidades antes de baixá-los para os computadores dos usuários. Se você desabilitar essa configuração de política, o Internet Explorer não verificará as assinaturas digitais de programas executáveis nem exibirá suas identidades antes de baixá-los nos computadores dos usuários. Se você não configurar essa política, o Internet Explorer não verificará as assinaturas digitais de programas executáveis nem exibirá suas identidades antes de baixá-los nos computadores dos usuários.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067051)
+- **Internet Explorer verifique assinaturas em programas descarregados:**  
+  Esta definição de política permite-lhe gerir se o Internet Explorer verifica as assinaturas digitais (que identifica o editor de software assinado e verifica que não foi modificado ou adulterado) nos computadores dos utilizadores antes de descarregar programas executáveis. Se ativar esta definição de política, o Internet Explorer verificará as assinaturas digitais de programas executáveis e mostrará as suas identidades antes de as descarregar para computadores de utilizador. Se desativar esta definição de política, o Internet Explorer não verificará as assinaturas digitais de programas executáveis ou mostrará as suas identidades antes de as descarregar para computadores de utilizador. Se não configurar esta política, o Internet Explorer não verificará as assinaturas digitais de programas executáveis ou mostrará as suas identidades antes de as descarregar para computadores de utilizador.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067051)
 
-  **Padrão**: habilitado
+  **Predefinição**: Ativado
 
-- **Script de zona restrita do Internet Explorer de controles de navegador da Web**:  
-  Essa configuração de política determina se uma página pode controlar controles WebBrowser inseridos por meio de script. Se você habilitar essa configuração de política, o acesso de script ao controle WebBrowser será permitido. Se você desabilitar essa configuração de política, o acesso de script ao controle WebBrowser não será permitido. Se você não definir essa configuração de política, o usuário poderá habilitar ou desabilitar o acesso de script ao controle WebBrowser. Por padrão, o acesso de script ao controle WebBrowser é permitido apenas no computador local e nas zonas da intranet.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067098)
+- **Scripts de zona restrita do Internet Explorer dos controlos do navegador web:**  
+  Esta definição de política determina se uma página pode controlar os controlos do WebBrowser incorporados através do script. Se ativar esta definição de política, é permitido o acesso ao script ao controlo WebBrowser. Se desativar esta definição de política, o acesso do script ao controlo webBrowser não é permitido. Se não configurar esta definição de política, o utilizador pode ativar ou desativar o acesso do script ao controlo do WebBrowser. Por predefinição, o acesso ao script ao controlo WebBrowser só é permitido nas zonas Local Machine e Intranet.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067098)
 
-  **Padrão**: desabilitado
+  **Predefinição**: Desativado
 
-- **Filtro de script entre sites de zona restrita do Internet Explorer**:  
-  Essa política controla se o filtro XSS (script entre sites) detectará e impedirá injeçãos de script entre sites em sites nessa zona. Se você habilitar essa configuração de política, o filtro XSS estará ativado para sites nessa zona e o filtro XSS tentará bloquear as injeções de script entre sites. Se você desabilitar essa configuração de política, o filtro XSS será desativado para sites nesta zona e o Internet Explorer permitirá injeçãos de script entre sites.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067178)
+- Filtro de **scripts de área seletiva restrita**do Internet Explorer:  
+  Esta política controla se o filtro de scripts cross-site (XSS) detetar e prevenir injeções de scripts transversais em websites desta zona. Se ativar esta definição de política, o Filtro XSS está ligado para sites nesta zona e o Filtro XSS tenta bloquear as injeções de script seletivas. Se desativar esta definição de política, o Filtro XSS é desligado para sites nesta zona, e o Internet Explorer permite injeções de scripts transversais.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067178)
 
-  **Padrão**: habilitado
+  **Predefinição**: Ativado
 
-- **Comportamentos de script e binários de zona restrita do Internet Explorer**:  
-  Essa configuração de política permite que você gerencie comportamentos binários e de script dinâmicos: componentes que encapsulam funcionalidades específicas para elementos HTML aos quais eles foram anexados. Se você habilitar essa configuração de política, os comportamentos binários e de script estarão disponíveis. Se você selecionar administrador aprovado na caixa suspensa, somente os comportamentos listados nos comportamentos aprovados pelo administrador sob a política de restrição de segurança de comportamentos binários estarão disponíveis. Se você desabilitar essa configuração de política, os comportamentos binários e de script não estarão disponíveis, a menos que os aplicativos tenham implementado um Gerenciador de segurança personalizado. Se você não definir essa configuração de política, os comportamentos binários e de script não estarão disponíveis, a menos que os aplicativos tenham implementado um Gerenciador de segurança personalizado.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067224)
+- **Comportamentos binários e scripts de zona restrita**do Internet Explorer:  
+  Esta definição de política permite-lhe gerir comportamentos binários dinâmicos e de scripts: componentes que encapsulam funcionalidades específicas para elementos HTML aos quais foram anexados. Se ativar esta definição de política, estão disponíveis comportamentos binários e scripts. Se selecionar administrador aprovado na caixa de entrega, apenas estão disponíveis comportamentos listados nos Comportamentos aprovados pela Administração ao abrigo da política de restrição de segurança de comportamentos binários. Se desativar esta definição de política, os comportamentos binários e de script não estão disponíveis, a menos que as aplicações tenham implementado um gestor de segurança personalizado. Se não configurar esta definição de política, os comportamentos binários e de script não estão disponíveis, a menos que as aplicações tenham implementado um gestor de segurança personalizado.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067224)
 
-  **Padrão**: desabilitar
+  **Predefinição**: Desativar
 
-- **Verificação de configurações de segurança do Internet Explorer**:  
-  Essa configuração de política desativa o recurso de verificação de configurações de segurança, que verifica as configurações de segurança do Internet Explorer para determinar quando as configurações colocam o Internet Explorer em risco. Se você habilitar essa configuração de política, o recurso será desativado. Se você desabilitar ou não definir essa configuração de política, o recurso será ativado.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067182)
+- **Verificação das definições**de segurança do Internet Explorer:  
+  Esta definição de política desliga a funcionalidade de verificação de definições de segurança, que verifica as definições de segurança do Internet Explorer para determinar quando as definições colocam o Internet Explorer em risco. Se ativar esta definição de política, a funcionalidade está desligada. Se desativar ou não configurar esta definição de política, a funcionalidade é ativada.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067182)
 
-  **Padrão**: habilitado
+  **Predefinição**: Ativado
 
-- **Aviso de segurança de zona da Internet do Internet Explorer para arquivos potencialmente não seguros**:  
-  Essa configuração de política controla se a mensagem de "aviso de segurança de arquivo aberto" aparece quando o usuário tenta abrir arquivos executáveis ou outros arquivos potencialmente não seguros (de um compartilhamento de arquivos de intranet usando o explorador de arquivos, por exemplo). Se você habilitar essa configuração de política e definir a caixa suspensa como habilitar, esses arquivos abrirão sem um aviso de segurança. Se você definir a caixa suspensa como avisar, um aviso de segurança será exibido antes da abertura dos arquivos. Se você desabilitar essa configuração de política, esses arquivos não abrirão. Se você não definir essa configuração de política, o usuário poderá configurar como o computador lida com esses arquivos. Por padrão, esses arquivos são bloqueados na zona restrita, habilitados nas zonas da intranet e do computador local e definidos como prompt na Internet e nas zonas confiáveis.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067204)
+- Aviso de segurança da zona de internet do **Internet Do Internet Explorer para ficheiros potencialmente inseguros:**  
+  Esta definição de política controla se a mensagem "Open File - Security Warning" aparecer quando o utilizador tenta abrir ficheiros executáveis ou outros ficheiros potencialmente inseguros (a partir de uma partilha de ficheiros intranet utilizando o File Explorer, por exemplo). Se ativar esta definição de política e definir a caixa de lançamento para ativar, estes ficheiros abrem-se sem aviso de segurança. Se definir a caixa de entrega para Prompt, aparece um aviso de segurança antes de os ficheiros abrirem. Se desativar esta definição de política, estes ficheiros não abrem. Se não configurar esta definição de política, o utilizador pode configurar a forma como o computador lida com estes ficheiros. Por predefinição, estes ficheiros estão bloqueados na zona Restrita, ativadas nas zonas intranet e local de computador, e definidas para serem solicitadas nas zonas internet e trusted.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067204)
 
-  **Padrão**: prompt
+  **Padrão**: Pronta
 
-- **Permissões Java da zona de intranet do Internet Explorer**:  
-  Essa configuração de política permite que você gerencie permissões para miniaplicativos Java. Se você habilitar essa configuração de política, poderá escolher opções na caixa suspensa. Personalizado, para controlar as configurações de permissões individualmente. A segurança baixa permite que os applets realizem todas as operações. A segurança média permite que os applets sejam executados em sua área restrita (uma área na memória fora da qual o programa não pode fazer chamadas), além de recursos como espaço transitório (uma área de armazenamento segura e seguro no computador cliente) e e/s de arquivo controlado pelo usuário. A alta segurança permite que os applets sejam executados na área restrita. Desabilite o Java para impedir que os applets sejam executados. Se você desabilitar essa configuração de política, os miniaplicativos Java não poderão ser executados. Se você não definir essa configuração de política, a permissão será definida como segurança média.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067206)
+- **Permissões**de java da zona intranet do Internet Explorer:  
+  Esta definição de política permite-lhe gerir permissões para applets Java. Se ativar esta definição de política, pode escolher opções a partir da caixa de lançamento. Personalizado, para controlar as definições de permissões individualmente. A Low Safety permite que as applets façam todas as operações. A Medium Safety permite que as applets corram na sua caixa de areia (uma área na memória fora da qual o programa não pode fazer chamadas), além de capacidades como o espaço de risco (uma área de armazenamento segura e segura no computador cliente) e o ficheiro controlado pelo utilizador I/O. A Alta Segurança permite que as maçãs corram na sua caixa de areia. Desative Java para evitar que as maçãs se esgotem. Se desativar este cenário de política, as maçãs Java não podem correr. Se não configurar esta definição de política, a permissão é definida para a Segurança Média.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067206)
 
-  **Padrão**: alta segurança
+  **Predefinição**: Alta segurança
 
-- O **Internet Explorer bloqueia controles ActiveX desatualizados**:  
-  Essa configuração de política determina se o Internet Explorer bloqueia controles ActiveX desatualizados específicos. Controles ActiveX desatualizados nunca são bloqueados na zona da intranet. Se você habilitar essa configuração de política, o Internet Explorer parará de bloquear controles ActiveX desatualizados. Se você desabilitar ou não definir essa configuração de política, o Internet Explorer continuará a bloquear controles ActiveX desatualizados específicos. Para obter mais informações, consulte "controles ActiveX desatualizados" na biblioteca do TechNet do Internet Explorer.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067203)
+- **Controlos Ative X desatualizados do bloco Internet Explorer:**  
+  Esta definição de política determina se o Internet Explorer bloqueia controlos ActiveX desatualizados específicos. Os controlos ActiveX desatualizados nunca são bloqueados na Zona intranet. Se ativar esta definição de política, o Internet Explorer deixa de bloquear controlos ActiveX desatualizados. Se desativar ou não configurar esta definição de política, o Internet Explorer continua a bloquear controlos ActiveX desatualizados específicos. Para mais informações, consulte "Controlos ActiveX Desatualizados" na biblioteca do Internet Explorer TechNet.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067203)
 
-  **Padrão**: habilitado
+  **Predefinição**: Ativado
 
-- **Bloqueador de pop-ups de zona restrita do Internet Explorer**:  
-  Essa configuração de política permite que você gerencie se janelas pop-up indesejadas são exibidas. Janelas pop-up que são abertas quando o usuário final clica em um link não são bloqueadas. Se você habilitar essa configuração de política, a exibição da maioria das janelas pop-up indesejadas será impedida. Se você desabilitar essa configuração de política, as janelas pop-up não serão impedidas de serem exibidas. Se você não definir essa configuração de política, a exibição da maioria das janelas pop-up indesejadas será impedida.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067180)
+- **Bloqueador**de popup de zona restrita do Internet Explorer:  
+  Esta definição de política permite-lhe gerir se aparecem janelas pop-up indesejadas. As janelas pop-up que são abertas quando o utilizador final clica num link não estão bloqueadas. Se ativar esta definição de política, a maioria das janelas pop-up indesejadas estão impedidas de aparecer. Se desativar esta definição de política, as janelas pop-up não estão impedidas de aparecer. Se não configurar esta definição de política, a maioria das janelas pop-up indesejadas estão impedidas de aparecer.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067180)
 
-  **Padrão**: habilitar
+  **Padrão**: Ativar
 
-- O **Internet Explorer processa a restrição de segurança do protocolo MK**:  
-  A configuração de política de restrição de segurança de protocolo MK reduz a área da superfície de ataque, impedindo o protocolo MK. Os recursos hospedados no protocolo MK falharão. Se você habilitar essa configuração de política, o protocolo MK será impedido para o explorador de arquivos e o Internet Explorer, e os recursos hospedados no protocolo MK falharão. Se você desabilitar essa configuração de política, os aplicativos poderão usar a API de protocolo MK. Os recursos hospedados no protocolo MK funcionarão para os processos do explorador de arquivos e do Internet Explorer. Se você não definir essa configuração de política, o protocolo MK será impedido para o explorador de arquivos e o Internet Explorer, e os recursos hospedados no protocolo MK falharão.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067179)
+- **O Internet Explorer processa a restrição**de segurança do protocolo MK:  
+  A definição da política de restrição de segurança do protocolo MK reduz a área de superfície de ataque, impedindo o protocolo MK. Os recursos acolhidos no protocolo MK falharão. Se ativar esta definição de política, o Protocolo MK é impedido para o File Explorer e o Internet Explorer, e os recursos alojados no protocolo MK falharão. Se desativar esta definição de política, as aplicações podem utilizar o protocolo MK API. Os recursos alojados no protocolo MK funcionarão para os processos do File Explorer e do Internet Explorer. Se não configurar esta definição de política, o Protocolo MK está impedido para o File Explorer e o Internet Explorer, e os recursos alojados no protocolo MK falharão.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067179)
 
-  **Padrão**: habilitado
+  **Predefinição**: Ativado
 
-- **Permissões Java de zona confiável do Internet Explorer**:  
-  Essa configuração de política permite que você gerencie permissões para miniaplicativos Java. Se você habilitar essa configuração de política, poderá escolher opções na caixa suspensa. Personalizado, para controlar as configurações de permissões individualmente. A segurança baixa permite que os applets realizem todas as operações. A segurança média permite que os applets sejam executados em sua área restrita (uma área na memória fora da qual o programa não pode fazer chamadas), além de recursos como espaço transitório (uma área de armazenamento segura e seguro no computador cliente) e e/s de arquivo controlado pelo usuário. A alta segurança permite que os applets sejam executados na área restrita. Desabilite o Java para impedir que os applets sejam executados. Se você desabilitar essa configuração de política, os miniaplicativos Java não poderão ser executados. Se você não definir essa configuração de política, a permissão será definida como segurança baixa.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067200)
+- **Permissões java de zona fidedigna do Internet Explorer:**  
+  Esta definição de política permite-lhe gerir permissões para applets Java. Se ativar esta definição de política, pode escolher opções a partir da caixa de lançamento. Personalizado, para controlar as definições de permissões individualmente. A Low Safety permite que as applets façam todas as operações. A Medium Safety permite que as applets corram na sua caixa de areia (uma área na memória fora da qual o programa não pode fazer chamadas), além de capacidades como o espaço de risco (uma área de armazenamento segura e segura no computador cliente) e o ficheiro controlado pelo utilizador I/O. A Alta Segurança permite que as maçãs corram na sua caixa de areia. Desative Java para evitar que as maçãs se esgotem. Se desativar este cenário de política, as maçãs Java não podem correr. Se não configurar esta definição de política, a permissão é definida para a Baixa Segurança.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067200)
 
-  **Padrão**: alta segurança
+  **Predefinição**: Alta segurança
 
-- **Script de zona restrita do Internet Explorer de miniaplicativos Java**:  
-  Essa configuração de política permite que você gerencie se os applets são expostos aos scripts dentro da zona. Se você habilitar essa configuração de política, os scripts poderão acessar miniaplicativos automaticamente sem a intervenção do usuário. Se você selecionar prompt na caixa suspensa, os usuários serão consultados para escolher se deseja permitir que os scripts acessem os applets. Se você desabilitar essa configuração de política, os scripts serão impedidos de acessar miniaplicativos. Se você não definir essa configuração de política, os scripts serão impedidos de acessar miniaplicativos.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067202)
+- **Roteiro de zona restrita do Internet Explorer de maçãs java:**  
+  Esta definição de política permite-lhe gerir se as maçãs estão expostas a scripts dentro da zona. Se ativar esta definição de política, os scripts podem aceder automaticamente aos applets sem a intervenção do utilizador. Se selecionar O Prompt na caixa de entrega, os utilizadores estão questionados para escolher se permitem que scripts acedam a applets. Se desativar esta definição de política, os scripts são impedidos de aceder a applets. Se não configurar esta definição de política, os scripts são impedidos de aceder a applets.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067202)
 
-  **Padrão**: desabilitar
+  **Predefinição**: Desativar
 
-- O **Internet Explorer bloqueou as permissões de Java da zona restrita**:  
-  Essa configuração de política permite que você gerencie permissões para miniaplicativos Java. Se você habilitar essa configuração de política, poderá escolher opções na caixa suspensa. Personalizado, para controlar as configurações de permissões individualmente. A segurança baixa permite que os applets realizem todas as operações. A segurança média permite que os applets sejam executados em sua área restrita (uma área na memória fora da qual o programa não pode fazer chamadas), além de recursos como espaço transitório (uma área de armazenamento segura e seguro no computador cliente) e e/s de arquivo controlado pelo usuário. A alta segurança permite que os applets sejam executados na área restrita. Desabilite o Java para impedir que os applets sejam executados. Se você desabilitar essa configuração de política, os miniaplicativos Java não poderão ser executados. Se você não definir essa configuração de política, os miniaplicativos Java serão desabilitados.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067181)
+- **Internet Explorer bloqueou permissões restritas**de java zona:  
+  Esta definição de política permite-lhe gerir permissões para applets Java. Se ativar esta definição de política, pode escolher opções a partir da caixa de lançamento. Personalizado, para controlar as definições de permissões individualmente. A Low Safety permite que as applets façam todas as operações. A Medium Safety permite que as applets corram na sua caixa de areia (uma área na memória fora da qual o programa não pode fazer chamadas), além de capacidades como o espaço de risco (uma área de armazenamento segura e segura no computador cliente) e o ficheiro controlado pelo utilizador I/O. A Alta Segurança permite que as maçãs corram na sua caixa de areia. Desative Java para evitar que as maçãs se esgotem. Se desativar este cenário de política, as maçãs Java não podem correr. Se não configurar esta definição de política, as maçãs Java são desativadas.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067181)
 
-  **Padrão**: desabilitar Java
+  **Predefinição**: Desative o java
 
-- **A zona Internet do Internet Explorer permite que somente domínios aprovados usem controles ActiveX**:  
-  Essa configuração de política controla se o usuário é solicitado a permitir que os controles ActiveX sejam executados em sites que não sejam o site que instalou o controle ActiveX. Se você habilitar essa configuração de política, o usuário será solicitado antes que os controles ActiveX possam ser executados de sites nesta zona. O usuário pode optar por permitir que o controle seja executado a partir do site atual ou de todos os sites. Se você desabilitar essa configuração de política, o usuário não verá o prompt do ActiveX por site e os controles ActiveX poderão ser executados de todos os sites nesta zona.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067091)
+- A zona de **internet do Internet Explorer permite que apenas os domínios aprovados utilizem controlos ActiveX:**  
+  Esta definição de política controla se o utilizador for solicitado a permitir que os controlos ActiveX possam ser executados em websites que não o website que instalou o controlo ActiveX. Se ativar esta definição de política, o utilizador é solicitado antes que os controlos ActiveX possam ser executados a partir de websites nesta zona. O utilizador pode optar por permitir que o controlo possa ser executado a partir do site atual ou de todos os sites. Se desativar esta definição de política, o utilizador não vê o pedido do ActiveX por site, e os controlos ActiveX podem ser executados a partir de todos os sites desta zona.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067091)
 
-  **Padrão**: habilitado
+  **Predefinição**: Ativado
 
-- O **Internet Explorer inclui todos os caminhos de rede**:  
-  O Internet Explorer inclui todos os caminhos de rede.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067090)
+- **O Internet Explorer inclui todos os caminhos da rede:**  
+  O Internet Explorer inclui todos os caminhos da rede.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067090)
 
-  **Padrão**: desabilitado
+  **Predefinição**: Desativado
 
-- **Modo protegido de zona Internet Explorer**:  
-  Essa configuração de política permite ativar o modo protegido. O modo protegido ajuda a proteger o Internet Explorer contra vulnerabilidades exploradas, reduzindo os locais em que o Internet Explorer pode gravar no registro e no sistema de arquivos. Se você habilitar essa configuração de política, o modo protegido será ativado. O usuário não pode desativar o modo protegido. Se você desabilitar essa configuração de política, o modo protegido será desativado. O usuário não pode ativar o modo protegido. Se você não definir essa configuração de política, o usuário poderá ativar ou desativar o modo protegido.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067171)
+- Modo protegido pela zona de **internet do Internet Explorer:**  
+  Esta definição de política permite-lhe ligar o Modo Protegido. O Modo Protegido ajuda a proteger o Internet Explorer de vulnerabilidades exploradas, reduzindo os locais a que o Internet Explorer pode escrever no registo e no sistema de ficheiros. Se ativar esta definição de política, o Modo Protegido está ligado. O utilizador não pode desligar o Modo Protegido. Se desativar esta definição de política, o Modo Protegido está desligado. O utilizador não pode ligar o Modo Protegido. Se não configurar esta definição de política, o utilizador pode ligar ou desligar o Modo Protegido.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067171)
 
-  **Padrão**: habilitar
+  **Padrão**: Ativar
 
-- **Inicialização de zona da Internet do Internet Explorer e controles do script ativo X não marcados como seguros**:  
-  Essa configuração de política permite que você gerencie controles ActiveX não marcados como seguros. Se você habilitar essa configuração de política, os controles ActiveX são executados, carregados com parâmetros e com script sem definir a segurança de objeto para dados ou scripts não confiáveis. Essa configuração não é recomendada, exceto para zonas seguras e administradas. Essa configuração faz com que controles seguros e não seguros sejam inicializados e com script, ignorando os controles ActiveX de script marcados como seguros para a opção de script. Se você habilitar essa configuração de política e selecionar avisar na caixa suspensa, os usuários serão consultados se deseja permitir que o controle seja carregado com parâmetros ou com script. Se você desabilitar essa configuração de política, os controles ActiveX que não puderem ser tornados seguros não serão carregados com parâmetros ou com script. Se você não definir essa configuração de política, os controles ActiveX que não puderem ser tornados seguros não serão carregados com parâmetros ou com script.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067170)
+- A zona de **internet do Internet Explorer do Internet inicializa e script Controlos Ative X não marcados como seguros:**  
+  Esta definição de política permite-lhe gerir os controlos ActiveX não marcados como seguros. Se ativar esta definição de política, os controlos ActiveX funcionam, carregados com parâmetros e escritos sem definir a segurança do objeto para dados ou scripts não confiáveis. Esta definição não é recomendada, exceto para zonas seguras e administradas. Esta definição faz com que os controlos inseguros e seguros sejam inicializados e scripts, ignorando os comandos Script ActiveX marcados como seguros para a opção de script. Se ativar esta definição de política e selecionar o Prompt na caixa de lançamento, os utilizadores são questionados se permitem que o controlo carregue com parâmetros ou scripts. Se desativar esta definição de política, os controlos ActiveX que não podem ser tornados seguros não são carregados com parâmetros ou scripts. Se não configurar esta definição de política, os controlos ActiveX que não podem ser tornados seguros não estão carregados com parâmetros ou scripts.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067170)
 
-  **Padrão**: desabilitar
+  **Predefinição**: Desativar
 
-- **Tela inteligente da zona restrita bloqueada pelo Internet Explorer**:  
-  Essa configuração de política controla se o Filtro SmartScreen verifica as páginas nessa zona em busca de conteúdo mal-intencionado. Se você habilitar essa configuração de política, o filtro do SmartScreen verificará as páginas nessa zona em busca de conteúdo mal-intencionado. Se você desabilitar essa configuração de política, o filtro do SmartScreen não verificará as páginas nessa zona em busca de conteúdo mal-intencionado. Se você não definir essa configuração de política, o usuário poderá escolher se o filtro do SmartScreen verificará se há conteúdo mal-intencionado nas páginas dessa zona. Observação: no Internet Explorer 7, essa configuração de política controla se o filtro de phishing verifica se há conteúdo mal-intencionado nas páginas dessa zona.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067092)
+- **Internet Explorer bloqueado por ecrã inteligente**de zona restrita:  
+  Esta definição de política controla se o Filtro SmartScreen digitaliza páginas nesta zona para obter conteúdo malicioso. Se ativar esta definição de política, o Filtro SmartScreen analisa as páginas desta zona para obter conteúdo malicioso. Se desativar esta definição de política, o Filtro SmartScreen não digitaliza páginas nesta zona para obter conteúdo malicioso. Se não configurar esta definição de política, o utilizador pode escolher se o Filtro SmartScreen digitaliza páginas nesta zona para obter conteúdo malicioso. Nota: No Internet Explorer 7, esta definição de política controla se o Filtro de Phishing digitaliza páginas nesta zona para conteúdos maliciosos.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067092)
 
-  **Padrão**: habilitado
+  **Predefinição**: Ativado
 
-- **Detecção de falhas do Internet Explorer**:  
-  Essa configuração de política permite que você gerencie o recurso de detecção de falhas do gerenciamento de Complementos. Se você habilitar essa configuração de política, uma falha no Internet Explorer exibirá o comportamento encontrado no Windows XP Professional Service Pack 1 e versões anteriores, para invocar Relatório de Erros do Windows. Todas as configurações de política para Relatório de Erros do Windows continuam a ser aplicadas. Se você desabilitar ou não definir essa configuração de política, o recurso de detecção de pane para o gerenciamento de Complementos será funcional.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067094)
+- **Deteção de acidentes do Internet Explorer:**  
+  Esta definição de política permite-lhe gerir a funcionalidade de deteção de acidentes de gestão addon. Se ativar esta definição de política, um crash no Internet Explorer irá exibir comportamentos encontrados no Windows XP Professional Service Pack 1 e anterior, nomeadamente para invocar o Windows Error Reporting. Todas as definições de política para O Relato de Erros do Windows continuam a ser aplicadas. Se desativar ou não configurar esta definição de política, a funcionalidade de deteção de colisões para gestão de suplementos está funcional.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067094)
 
-  **Padrão**: desabilitado
+  **Predefinição**: Desativado
 
-- **Permissões Java da zona Internet do Internet Explorer**:  
-  Essa configuração de política permite que você gerencie permissões para miniaplicativos Java. Se você habilitar essa configuração de política, poderá escolher opções na caixa suspensa. Personalizado, para controlar as configurações de permissões individualmente. A segurança baixa permite que os applets realizem todas as operações. A segurança média permite que os applets sejam executados em sua área restrita (uma área na memória fora da qual o programa não pode fazer chamadas), além de recursos como espaço transitório (uma área de armazenamento segura e seguro no computador cliente) e e/s de arquivo controlado pelo usuário. A alta segurança permite que os applets sejam executados na área restrita. Desabilite o Java para impedir que os applets sejam executados. Se você desabilitar essa configuração de política, os miniaplicativos Java não poderão ser executados. Se você não definir essa configuração de política, a permissão será definida como alta segurança.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067174)
+- **Permissões**java da zona de internet do Internet Explorer:  
+  Esta definição de política permite-lhe gerir permissões para applets Java. Se ativar esta definição de política, pode escolher opções a partir da caixa de lançamento. Personalizado, para controlar as definições de permissões individualmente. A Low Safety permite que as applets façam todas as operações. A Medium Safety permite que as applets corram na sua caixa de areia (uma área na memória fora da qual o programa não pode fazer chamadas), além de capacidades como o espaço de risco (uma área de armazenamento segura e segura no computador cliente) e o ficheiro controlado pelo utilizador I/O. A Alta Segurança permite que as maçãs corram na sua caixa de areia. Desative Java para evitar que as maçãs se esgotem. Se desativar este cenário de política, as maçãs Java não podem correr. Se não configurar esta definição de política, a permissão é definida para Alta Segurança.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067174)
 
-  **Padrão**: desabilitar Java
+  **Predefinição**: Desative o java
 
-- **Script ativo de zona restrita do Internet Explorer**:  
-  Essa configuração de política permite que você gerencie se o código de script em páginas na zona é executado. Se você habilitar essa configuração de política, o código de script em páginas na zona poderá ser executado automaticamente. Se você selecionar prompt na caixa suspensa, os usuários serão consultados para escolher se deseja permitir que o código de script em páginas na zona seja executado. Se você desabilitar essa configuração de política, o código de script em páginas na zona será impedido de ser executado. Se você não definir essa configuração de política, o código de script em páginas na zona será impedido de ser executado.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067172)
+- **Scripts ativos**de zona restrita do Internet Explorer:  
+  Esta definição de política permite-lhe gerir se o código de script nas páginas da zona é executado. Se ativar esta definição de política, o código de script nas páginas da zona pode ser executado automaticamente. Se selecionar O Aviso na caixa de entrega, os utilizadores são questionados para escolher se permitem que o código de script nas páginas da zona seja executado. Se desativar esta definição de política, o código de script nas páginas da zona está impedido de funcionar. Se não configurar esta definição de política, o código de script nas páginas da zona está impedido de funcionar.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067172)
 
-  **Padrão**: desabilitar
+  **Predefinição**: Desativar
 
-- **Opções de logon na Internet Zone do Internet Explorer**:  
-  Essa configuração de política permite que você gerencie configurações para opções de entrada. Se você habilitar essa configuração de política, poderá escolher entre as seguintes opções de entrada. Logon anônimo para desabilitar a autenticação HTTP e usar a conta de convidado somente para o protocolo CIFS (Common Internet File System). Solicite o nome de usuário e a senha para consultar os usuários de IDs de usuário e senhas. Depois que um usuário é consultado, esses valores podem ser usados silenciosamente para o restante da sessão. Logon automático somente na zona da intranet para consultar os usuários de IDs de usuário e senhas em outras zonas. Depois que um usuário é consultado, esses valores podem ser usados silenciosamente para o restante da sessão. Conexão automática com o nome de usuário e a senha atuais para tentar fazer logon usando a resposta de desafio do Windows NT (também conhecida como autenticação NTLM). Se o servidor oferecer suporte à resposta de desafio do Windows NT, a entrada usará o nome de usuário e a senha de rede do usuário para logon. Se o servidor não oferecer suporte à resposta de desafio do Windows NT, o usuário será consultado para fornecer o nome de usuário e a senha. Se você desabilitar essa configuração de política, a entrada será definida como logon automático somente na zona da intranet. Se você não definir essa configuração de política, a entrada será definida como logon automático somente na zona da intranet.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067194)
+- **Opções de início de sessão da internet do Internet Explorer:**  
+  Esta definição de política permite-lhe gerir as definições para opções de início de sessão. Se ativar esta definição de política, pode escolher entre as seguintes opções de início de sessão. Iniciar sessão anónima para desativar a autenticação HTTP e utilizar a conta do hóspede apenas para o protocolo do Sistema Comum de Ficheiros de Internet (CIFS). Solicita-me o nome do utilizador e a palavra-passe para consultar os utilizadores para identificações de utilizadores e palavras-passe. Depois de um utilizador ser consultado, estes valores podem ser utilizados silenciosamente durante o resto da sessão. Iniciar sessão automática apenas na zona intranet para consultar os utilizadores de IDs e senhas de utilização noutras zonas. Depois de um utilizador ser consultado, estes valores podem ser utilizados silenciosamente durante o resto da sessão. Inicie sessão automática com o nome de utilizador atual e a palavra-passe para tentar iniciar sessão utilizando o Windows NT Challenge Response (também conhecido como autenticação NTLM). Se o servidor suportar o Windows NT Challenge Response, o sessão utiliza o nome de utilizador e a palavra-passe do utilizador para iniciar sessão. Se o servidor não suportar o Windows NT Challenge Response, o utilizador é consultado para fornecer o nome de utilizador e a palavra-passe. Se desativar esta definição de política, o login é definido para iniciar sessão automática apenas na zona Intranet. Se não configurar esta definição de política, o início de sessão é definido para iniciar sessão automática apenas na zona intranet.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067194)
 
-  **Padrão**: prompt
+  **Padrão**: Pronta
 
-- **A zona restrita do Internet Explorer permite que o VBScript seja executado**:  
-  Essa configuração de política permite que você gerencie se o VBScript pode ser executado em páginas da zona especificada no Internet Explorer. Se você selecionou habilitar na caixa suspensa, o VBScript poderá ser executado sem intervenção do usuário. Se você selecionou prompt na caixa suspensa, os usuários serão solicitados a escolher se deseja permitir que o VBScript seja executado. Se você selecionou desabilitar na caixa suspensa, o VBScript será impedido de ser executado. Se você não definir ou desabilitar essa configuração de política, o VBScript será impedido de ser executado.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067173)
+- **A zona restrita do Internet Explorer permite que o VBScript corra:**  
+  Esta definição de política permite-lhe gerir se o VBScript pode ser executado em páginas a partir da zona especificada no Internet Explorer. Se selecionou Ativar na caixa de lançamento, o VBScript pode ser executado sem a intervenção do utilizador. Se selecionou o Prompt na caixa de lançamento, os utilizadores são convidados a escolher se permitem que o VBScript seja executado. Se selecionou Desativar na caixa de lançamento, o VBScript está impedido de funcionar. Se não configurar ou desativar esta definição de política, o VBScript está impedido de funcionar.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067173)
 
-  **Padrão**: desabilitar
+  **Predefinição**: Desativar
 
-- **Zona Internet do Internet Explorer arraste conteúdo de diferentes domínios no Windows**:  
-  Essa configuração de política permite que você defina opções para arrastar o conteúdo de um domínio para um domínio diferente quando a origem e o destino estiverem em janelas diferentes. Se você habilitar essa configuração de política e clicar em habilitar, os usuários poderão arrastar o conteúdo de um domínio para um domínio diferente quando a origem e o destino estiverem em janelas diferentes. Os usuários não podem alterar essa configuração. Se você habilitar essa configuração de política e clicar em Desabilitar, os usuários não poderão arrastar o conteúdo de um domínio para um domínio diferente quando a origem e o destino estiverem em janelas diferentes. Os usuários não podem alterar essa configuração. No Internet Explorer 10, se você desabilitar essa configuração de política ou não configurá-la, os usuários não poderão arrastar o conteúdo de um domínio para um domínio diferente quando a origem e o destino estiverem em janelas diferentes. Os usuários podem alterar essa configuração na caixa de diálogo Opções da Internet. No Internet Explorer 9 e versões anteriores, se você desabilitar essa política ou não configurá-la, os usuários poderão arrastar o conteúdo de um domínio para um domínio diferente quando a origem e o destino estiverem em janelas diferentes. Os usuários não podem alterar essa configuração.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067093)
+- **Internet Explorer internet zone arrastar conteúdo de diferentes domínios através de janelas:**  
+  Esta definição de política permite-lhe definir opções para arrastar conteúdo de um domínio para um domínio diferente quando a fonte e o destino estão em janelas diferentes. Se ativar esta definição de política e clicar em Ativar, os utilizadores podem arrastar o conteúdo de um domínio para um domínio diferente quando a fonte e o destino estão em diferentes janelas. Os usuários não podem alterar essa configuração. Se ativar esta definição de política e clicar em Desativar, os utilizadores não podem arrastar conteúdo de um domínio para um domínio diferente quando tanto a fonte como o destino estão em diferentes janelas. Os usuários não podem alterar essa configuração. No Internet Explorer 10, se desativar esta definição de política ou não configurar, os utilizadores não podem arrastar conteúdo de um domínio para um domínio diferente quando a fonte e o destino estão em janelas diferentes. Os utilizadores podem alterar esta definição no diálogo das Opções de Internet. No Internet Explorer 9 e versões anteriores, se desativar esta política ou não a configurar, os utilizadores podem arrastar conteúdo de um domínio para um domínio diferente quando a fonte e o destino estão em diferentes janelas. Os usuários não podem alterar essa configuração.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067093)
 
-  **Padrão**: desabilitado
+  **Predefinição**: Desativado
 
-- **Os controles de inicialização de zona da intranet do Internet Explorer e script ativo X não estão marcados como seguros**:  
-  Essa configuração de política permite que você gerencie controles ActiveX não marcados como seguros. Se você habilitar essa configuração de política, os controles ActiveX são executados, carregados com parâmetros e com script sem definir a segurança de objeto para dados ou scripts não confiáveis. Essa configuração não é recomendada, exceto para zonas seguras e administradas. Essa configuração faz com que controles seguros e não seguros sejam inicializados e com script, ignorando os controles ActiveX de script marcados como seguros para a opção de script. Se você habilitar essa configuração de política e selecionar avisar na caixa suspensa, os usuários serão consultados se deseja permitir que o controle seja carregado com parâmetros ou com script. Se você desabilitar essa configuração de política, os controles ActiveX que não puderem ser tornados seguros não serão carregados com parâmetros ou com script. Se você não definir essa configuração de política, os controles ActiveX que não puderem ser tornados seguros não serão carregados com parâmetros ou com script.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067175)
+- **A zona intranet do Internet Explorer inicializa e script Controlos Ative X não marcados como seguros:**  
+  Esta definição de política permite-lhe gerir os controlos ActiveX não marcados como seguros. Se ativar esta definição de política, os controlos ActiveX funcionam, carregados com parâmetros e escritos sem definir a segurança do objeto para dados ou scripts não confiáveis. Esta definição não é recomendada, exceto para zonas seguras e administradas. Esta definição faz com que os controlos inseguros e seguros sejam inicializados e scripts, ignorando os comandos Script ActiveX marcados como seguros para a opção de script. Se ativar esta definição de política e selecionar o Prompt na caixa de lançamento, os utilizadores são questionados se permitem que o controlo carregue com parâmetros ou scripts. Se desativar esta definição de política, os controlos ActiveX que não podem ser tornados seguros não são carregados com parâmetros ou scripts. Se não configurar esta definição de política, os controlos ActiveX que não podem ser tornados seguros não estão carregados com parâmetros ou scripts.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067175)
 
-  **Padrão**: desabilitar
+  **Predefinição**: Desativar
 
-- **Compartimentos de download do Internet Explorer**:  
-  Essa configuração de política impede que o usuário tenha os compartimentos (anexos de arquivo) baixados de um feed para o computador do usuário. Se você habilitar essa configuração de política, o usuário não poderá definir o mecanismo de sincronização de feeds para baixar um compartimento por meio da página de propriedades do feed. Um desenvolvedor não pode alterar a configuração de download por meio das APIs de feed. Se você desabilitar ou não definir essa configuração de política, o usuário poderá definir o mecanismo de sincronização de feeds para baixar um compartimento por meio da página de propriedades do feed. Um desenvolvedor pode alterar a configuração de download por meio das APIs de feed.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067245)
+- **Recintos de descarregamento do Internet Explorer:**  
+  Esta definição de política impede que o utilizador tenha recintos (anexos de ficheiros) descarregados de um feed para o computador do utilizador. Se ativar esta definição de política, o utilizador não pode definir o Motor Feed Sync para descarregar um recinto através da página da propriedade feed. Um desenvolvedor não pode alterar a definição de descarregamento através das APIs de alimentação. Se desativar ou não configurar esta definição de política, o utilizador pode definir o Motor Feed Sync para descarregar um recinto através da página de propriedade feed. Um desenvolvedor pode alterar a definição de descarregamento através das APIs de alimentação.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067245)
 
-  **Padrão**: desabilitado
+  **Predefinição**: Desativado
 
-- A **zona restrita do Internet Explorer baixa controles do Active X não assinados**:  
-  Essa configuração de política permite que você gerencie se os usuários podem baixar controles ActiveX não assinados da zona. Esse código é potencialmente prejudicial, especialmente quando provenientes de uma zona não confiável. Se você habilitar essa configuração de política, os usuários poderão executar controles não assinados sem intervenção do usuário. Se você selecionar prompt na caixa suspensa, os usuários serão consultados para escolher se deseja permitir que o controle não assinado seja executado. Se você desabilitar essa configuração de política, os usuários não poderão executar controles não assinados. Se você não definir essa configuração de política, os usuários não poderão executar controles não assinados.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067177)
+- **O Internet Explorer restringiu o descarregamento de zonas não assinadas controlos Ative X:**  
+  Esta definição de política permite-lhe gerir se os utilizadores podem descarregar controlos ActiveX não assinados a partir da zona. Este código é potencialmente prejudicial, especialmente quando se vem de uma zona não confiável. Se ativar esta definição de política, os utilizadores podem executar controlos não assinados sem a intervenção do utilizador. Se selecionar O Aviso na caixa de entrega, os utilizadores são questionados para escolher se permitem que o controlo não assinado seja executado. Se desativar esta definição de política, os utilizadores não podem executar controlos não assinados. Se não configurar esta definição de política, os utilizadores não podem executar controlos não assinados.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067177)
 
-  **Padrão**: desabilitar
+  **Predefinição**: Desativar
 
-- **Zona Internet do Internet Explorer arraste conteúdo de diferentes domínios no Windows**:  
-  Essa configuração de política permite que você gerencie se os usuários podem baixar controles ActiveX não assinados da zona. Esse código é potencialmente prejudicial, especialmente quando provenientes de uma zona não confiável. Se você habilitar essa configuração de política, os usuários poderão executar controles não assinados sem intervenção do usuário. Se você selecionar prompt na caixa suspensa, os usuários serão consultados para escolher se deseja permitir que o controle não assinado seja executado. Se você desabilitar essa configuração de política, os usuários não poderão executar controles não assinados. Se você não definir essa configuração de política, os usuários não poderão executar controles não assinados.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067095)
+- **Internet Explorer internet zone arrastar conteúdo de diferentes domínios dentro das janelas:**  
+  Esta definição de política permite-lhe gerir se os utilizadores podem descarregar controlos ActiveX não assinados a partir da zona. Este código é potencialmente prejudicial, especialmente quando se vem de uma zona não confiável. Se ativar esta definição de política, os utilizadores podem executar controlos não assinados sem a intervenção do utilizador. Se selecionar O Aviso na caixa de entrega, os utilizadores são questionados para escolher se permitem que o controlo não assinado seja executado. Se desativar esta definição de política, os utilizadores não podem executar controlos não assinados. Se não configurar esta definição de política, os utilizadores não podem executar controlos não assinados.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067095)
 
-  **Padrão**: desabilitado
+  **Predefinição**: Desativado
 
-- Os **processos do Internet Explorer restringem a instalação do Active X**:  
-  Essa configuração de política permite que os aplicativos que hospedam o controle do navegador da Web bloqueiem a solicitação automática de instalação do controle ActiveX. Se você habilitar essa configuração de política, o controle do navegador da Web bloqueará a solicitação automática de instalação do controle ActiveX para todos os processos. Se você desabilitar ou não definir essa configuração de política, o controle do navegador da Web não bloqueará a solicitação automática de instalação do controle ActiveX para todos os processos.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067250)
+- **Os processos do Internet Explorer restringem a instalação do Ative X:**  
+  Esta definição de política permite que as aplicações que hospedam o Controlo do Navegador Web bloqueiem o pedido automático de instalação de controlo ActiveX. Se ativar esta definição de política, o Controlo do Navegador Web bloqueará a instalação automática de controlo ActiveX para todos os processos. Se desativar ou não configurar esta definição de política, o Controlo do Navegador Web não bloqueará a instalação automática de controlo ActiveX para todos os processos.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067250)
 
-  **Padrão**: habilitado
+  **Predefinição**: Ativado
 
-- **Área de Internet do Internet Explorer scriptlets**:  
-  Essa configuração de política permite que você gerencie se o usuário pode executar scriptlets. Se você habilitar essa configuração de política, o usuário poderá executar scriptlets. Se você desabilitar essa configuração de política, o usuário não poderá executar o scriptlets. Se você não definir essa configuração de política, o usuário poderá habilitar ou desabilitar o scriptlets.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067176)
+- **Scriptlets**de zona de internet do Internet Explorer:  
+  Esta definição de política permite-lhe gerir se o utilizador pode executar scriptlets. Se ativar esta definição de política, o utilizador pode executar scriptlets. Se desativar esta definição de política, o utilizador não pode executar scriptlets. Se não configurar esta definição de política, o utilizador pode ativar ou desativar scriptlets.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067176)
 
-  **Padrão**: desabilitar
+  **Predefinição**: Desativar
 
-- **Arrastar e soltar zona restrita do Internet Explorer ou copiar e colar arquivos**:  
-  Essa configuração de política permite que você gerencie se os usuários podem arrastar arquivos ou copiar e colar arquivos de uma fonte dentro da zona. Se você habilitar essa configuração de política, os usuários poderão arrastar arquivos ou copiar e colar arquivos dessa zona automaticamente. Se você selecionar prompt na caixa suspensa, os usuários serão consultados para escolher se deseja arrastar ou copiar arquivos dessa zona. Se você desabilitar essa configuração de política, os usuários serão impedidos de arrastar arquivos ou copiar e colar arquivos dessa zona. Se você não definir essa configuração de política, os usuários serão consultados para escolher se deseja arrastar ou copiar arquivos dessa zona.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067096)
+- **Internet Explorer restringiu o arrasto de zona e largar ou copiar e colar ficheiros:**  
+  Esta definição de política permite-lhe gerir se os utilizadores podem arrastar ficheiros ou copiar e colar ficheiros a partir de uma fonte dentro da zona. Se ativar esta definição de política, os utilizadores podem arrastar ficheiros ou copiar e colar ficheiros desta zona automaticamente. Se selecionar O Aviso na caixa de entrega, os utilizadores são questionados para escolher se devem arrastar ou copiar ficheiros desta zona. Se desativar esta definição de política, os utilizadores são impedidos de arrastar ficheiros ou copiar e colar ficheiros desta zona. Se não configurar esta definição de política, os utilizadores são questionados para escolher se devem arrastar ou copiar ficheiros desta zona.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067096)
 
-  **Padrão**: desabilitar
+  **Predefinição**: Desativar
 
-- **Software do Internet Explorer quando a assinatura é inválida**:  
-  Essa configuração de política permite que você gerencie se o software, como controles ActiveX e downloads de arquivos, pode ser instalado ou executado pelo usuário, embora a assinatura seja inválida. Uma assinatura inválida pode indicar que alguém foi adulterado com o arquivo. Se você habilitar essa configuração de política, os usuários serão solicitados a instalar ou executar arquivos com uma assinatura inválida. Se você desabilitar essa configuração de política, os usuários não poderão executar ou instalar arquivos com uma assinatura inválida. Se você não configurar essa política, os usuários poderão optar por executar ou instalar arquivos com uma assinatura inválida.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067201)
+- **Software do Internet Explorer quando a assinatura é inválida:**  
+  Esta definição de política permite-lhe gerir se o software, como os controlos Do ActiveX e os downloads de ficheiros, pode ser instalado ou executado pelo utilizador, mesmo que a assinatura seja inválida. Uma assinatura inválida pode indicar que alguém adulterou o ficheiro. Se ativar esta definição de política, os utilizadores são solicitados a instalar ou executar ficheiros com uma assinatura inválida. Se desativar esta definição de política, os utilizadores não podem executar ou instalar ficheiros com uma assinatura inválida. Se não configurar esta política, os utilizadores podem optar por executar ou instalar ficheiros com uma assinatura inválida.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067201)
 
-  **Padrão**: desabilitado
+  **Predefinição**: Desativado
 
-- **Cópia e colagem de zona restrita do Internet Explorer via script**:  
-  Essa configuração de política permite que você gerencie se os scripts podem fazer uma operação de área de transferência (por exemplo, recortar, copiar e colar) em uma região especificada. Se você habilitar essa configuração de política, um script poderá fazer uma operação de área de transferência. Se você selecionar prompt na caixa suspensa, os usuários serão consultados sobre se as operações de área de transferência devem ser efetuadas. Se você desabilitar essa configuração de política, um script não poderá realizar uma operação de área de transferência. Se você não definir essa configuração de política, um script não poderá executar uma operação de área de transferência.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067165)
+- Cópia e pasta restrita do **Internet Explorer através do script:**  
+  Esta definição de política permite-lhe gerir se os scripts podem fazer uma operação de prancheta (por exemplo, cortar, copiar e colar) numa região especificada. Se ativar esta definição de política, um script pode fazer uma operação de prancheta. Se selecionar O Aviso na caixa de entrega, os utilizadores são questionados sobre se devem ou não fazer operações de clipboard. Se desativar esta definição de política, um guião não pode fazer uma operação de prancheta. Se não configurar esta definição de política, um script não pode fazer uma operação de prancheta.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067165)
 
-  **Padrão**: desabilitar
+  **Predefinição**: Desativar
 
-- **Conteúdo de arrastar zona restrita do Internet Explorer de domínios diferentes no Windows**:  
-  Essa configuração de política permite que você defina opções para arrastar o conteúdo de um domínio para um domínio diferente quando a origem e o destino estiverem em janelas diferentes. Se você habilitar essa configuração de política e clicar em habilitar, os usuários poderão arrastar o conteúdo de um domínio para um domínio diferente quando a origem e o destino estiverem em janelas diferentes. Os usuários não podem alterar essa configuração. Se você habilitar essa configuração de política e clicar em Desabilitar, os usuários não poderão arrastar o conteúdo de um domínio para um domínio diferente quando a origem e o destino estiverem em janelas diferentes. Os usuários não podem alterar essa configuração. No Internet Explorer 10, se você desabilitar essa configuração de política ou não configurá-la, os usuários não poderão arrastar o conteúdo de um domínio para um domínio diferente quando a origem e o destino estiverem em janelas diferentes. Os usuários podem alterar essa configuração na caixa de diálogo Opções da Internet. No Internet Explorer 9 e versões anteriores, se você desabilitar essa política ou não configurá-la, os usuários poderão arrastar o conteúdo de um domínio para um domínio diferente quando a origem e o destino estiverem em janelas diferentes. Os usuários não podem alterar essa configuração.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067166)
+- **Internet Explorer restringiu o conteúdo de arrasto de zona de diferentes domínios através das janelas:**  
+  Esta definição de política permite-lhe definir opções para arrastar conteúdo de um domínio para um domínio diferente quando a fonte e o destino estão em janelas diferentes. Se ativar esta definição de política e clicar em Ativar, os utilizadores podem arrastar o conteúdo de um domínio para um domínio diferente quando a fonte e o destino estão em diferentes janelas. Os usuários não podem alterar essa configuração. Se ativar esta definição de política e clicar em Desativar, os utilizadores não podem arrastar conteúdo de um domínio para um domínio diferente quando tanto a fonte como o destino estão em diferentes janelas. Os usuários não podem alterar essa configuração. No Internet Explorer 10, se desativar esta definição de política ou não configurar, os utilizadores não podem arrastar conteúdo de um domínio para um domínio diferente quando a fonte e o destino estão em janelas diferentes. Os utilizadores podem alterar esta definição no diálogo das Opções de Internet. No Internet Explorer 9 e versões anteriores, se desativar esta política ou não a configurar, os utilizadores podem arrastar conteúdo de um domínio para um domínio diferente quando a fonte e o destino estão em diferentes janelas. Os usuários não podem alterar essa configuração.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067166)
 
-  **Padrão**: desabilitado
+  **Predefinição**: Desativado
 
-- **Usuários do Internet Explorer adicionando sites**:  
-  Impede que os usuários adicionem ou removam sites de zonas de segurança. Uma zona de segurança é um grupo de sites com o mesmo nível de segurança. Se você habilitar essa política, as configurações de gerenciamento de site para zonas de segurança serão desabilitadas. (Para ver as configurações de gerenciamento de site para zonas de segurança, na caixa de diálogo Opções da Internet, clique na guia Segurança e, em seguida, clique no botão sites.) Se você desabilitar essa política ou não configurá-la, os usuários poderão adicionar sites ou remover sites das zonas sites confiáveis e sites restritos e alterar as configurações da zona da intranet local. Essa política impede que os usuários alterem as configurações de gerenciamento de site para zonas de segurança estabelecidas pelo administrador. Observação: a política "desabilitar a página de segurança" (localizada em \ Configuração do Computador\modelos Administrativos\Componentes do Windows\internet Explorer\painel de controle), que remove a guia Segurança da interface, tem precedência sobre essa política. Se estiver habilitado, essa política será ignorada. Além disso, consulte a política "zonas de segurança: usar apenas as configurações do computador".  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067167)
+- Utilizadores do **Internet Explorer adicionando sites:**  
+  Impede que os utilizadores adicionem ou removam sites de zonas de segurança. Uma zona de segurança é um grupo de Web sites com o mesmo nível de segurança. Se ativar esta política, as definições de gestão do site para as zonas de segurança são desativadas. (Para ver as definições de gestão do site para zonas de segurança, na caixa de diálogo opções de Internet, clique no separador Segurança e, em seguida, clique no botão Sites.) Se desativar esta política ou não a configurar, os utilizadores podem adicionar Web sites ou remover sites das zonas de Sites Fidedignos e Sites Restritos e alterar as definições para a zona intranet local. Esta política impede que os utilizadores mudem as definições de gestão do site para as zonas de segurança estabelecidas pelo administrador. Nota: A política "Desativar a página de segurança" (localizada em \User Configuration\Administrative Templates\Windows Components\Internet Explorer\Internet Control Panel), que remove o separador De Segurança da interface, tem precedência sobre esta política. Se for ativada, esta política é ignorada. Consulte também a política "Zonas de segurança: Utilize apenas as definições da máquina".  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067167)
 
-  **Padrão**: desabilitado
+  **Predefinição**: Desativado
 
-- **Windows iniciado por script de zona da Internet do Internet Explorer**:  
-  Essa configuração de política permite que você gerencie restrições em janelas pop-up iniciadas por script e janelas que incluem as barras de título e status. Se você habilitar essa configuração de política, a segurança das restrições do Windows não será aplicada nessa zona. A zona de segurança é executada sem a camada adicional de segurança fornecida por esse recurso. Se você desabilitar essa configuração de política, as possíveis ações prejudiciais contidas em janelas pop-up iniciadas por script e janelas que incluem as barras de título e status não poderão ser executadas. Esse recurso de segurança do Internet Explorer está ativado nessa zona, conforme ditado pela configuração de controle de recurso de restrições de segurança do Windows com script para o processo. Se você não definir essa configuração de política, as possíveis ações prejudiciais contidas em janelas pop-up iniciadas por script e janelas que incluam as barras de título e status não poderão ser executadas. Esse recurso de segurança do Internet Explorer está ativado nessa zona, conforme ditado pela configuração de controle de recurso de restrições de segurança do Windows com script para o processo.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067088)
+- Roteiro de zona de internet do Internet Explorer do **Internet iniciado:**  
+  Esta definição de política permite-lhe gerir restrições em janelas e janelas pop-up iniciadas por scripts que incluem o título e barras de estado. Se ativar esta definição de política, a segurança das Restrições do Windows não se aplica nesta zona. A zona de segurança funciona sem a camada adicional de segurança fornecida por esta funcionalidade. Se desativar esta definição de política, as possíveis ações nocivas contidas em janelas e janelas pop-up iniciadas por scripts que incluem o título e as barras de estado não podem ser executadas. Esta funcionalidade de segurança do Internet Explorer encontra-se nesta zona, tal como dita a definição de controlo de funcionalidades de controlo de funcionalidades de restrições de segurança do Windows scripted para o processo. Se não configurar esta definição de política, as possíveis ações nocivas contidas em janelas e janelas pop-up iniciadas por scripts que incluem o título e as barras de estado não podem ser executadas. Esta funcionalidade de segurança do Internet Explorer encontra-se nesta zona, tal como dita a definição de controlo de funcionalidades de controlo de funcionalidades de restrições de segurança do Windows scripted para o processo.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067088)
 
-  **Padrão**: desabilitado
+  **Predefinição**: Desativado
 
-- **As zonas de segurança do Internet Explorer usam apenas as configurações do computador**:  
-  Aplica informações da zona de segurança a todos os usuários do mesmo computador. Uma zona de segurança é um grupo de sites com o mesmo nível de segurança. Se você habilitar essa política, as alterações que o usuário fizer em uma zona de segurança serão aplicadas a todos os usuários desse computador. Se você desabilitar essa política ou não configurá-la, os usuários do mesmo computador poderão estabelecer suas próprias configurações de zona de segurança. Use essa política para garantir que as configurações de zona de segurança se apliquem uniformemente ao mesmo computador e não variem de usuário para usuário. Além disso, consulte a política "zonas de segurança: não permitir que os usuários alterem políticas".  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067086)
+- As zonas de **segurança do Internet Explorer utilizam apenas as definições da máquina:**  
+  Aplica informações de zona de segurança a todos os utilizadores do mesmo computador. Uma zona de segurança é um grupo de Web sites com o mesmo nível de segurança. Se ativar esta política, as alterações que o utilizador faz para uma zona de segurança aplicar-se-ão a todos os utilizadores desse computador. Se desativar esta política ou não a configurar, os utilizadores do mesmo computador podem estabelecer as suas próprias definições de zona de segurança. Utilize esta política para garantir que as definições da zona de segurança se aplicam uniformemente ao mesmo computador e não variam de utilizador para utilizador. Consulte também a política "Zonas de Segurança: não permita que os utilizadores mudem as políticas".  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067086)
 
-  **Padrão**: habilitado
+  **Predefinição**: Ativado
 
-- O **Internet Explorer bloqueou as permissões Java da zona do computador local**:  
-  Essa configuração de política permite que você gerencie permissões para miniaplicativos Java. Se você habilitar essa configuração de política, poderá escolher opções na caixa suspensa. Personalizado, para controlar as configurações de permissões individualmente. A segurança baixa permite que os applets realizem todas as operações. A segurança média permite que os applets sejam executados em sua área restrita (uma área na memória fora da qual o programa não pode fazer chamadas), além de recursos como espaço transitório (uma área de armazenamento segura e seguro no computador cliente) e e/s de arquivo controlado pelo usuário. A alta segurança permite que os applets sejam executados na área restrita. Desabilite o Java para impedir que os applets sejam executados. Se você desabilitar essa configuração de política, os miniaplicativos Java não poderão ser executados. Se você não definir essa configuração de política, os miniaplicativos Java serão desabilitados.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067253)
+- **Internet Explorer bloqueou permissões java**da zona da máquina local:  
+  Esta definição de política permite-lhe gerir permissões para applets Java. Se ativar esta definição de política, pode escolher opções a partir da caixa de lançamento. Personalizado, para controlar as definições de permissões individualmente. A Low Safety permite que as applets façam todas as operações. A Medium Safety permite que as applets corram na sua caixa de areia (uma área na memória fora da qual o programa não pode fazer chamadas), além de capacidades como o espaço de risco (uma área de armazenamento segura e segura no computador cliente) e o ficheiro controlado pelo utilizador I/O. A Alta Segurança permite que as maçãs corram na sua caixa de areia. Desative Java para evitar que as maçãs se esgotem. Se desativar este cenário de política, as maçãs Java não podem correr. Se não configurar esta definição de política, as maçãs Java são desativadas.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067253)
 
-  **Padrão**: desabilitar Java
+  **Predefinição**: Desative o java
 
-- A **zona restrita do Internet Explorer não executa antimalware em controles ativos X**:  
-  Essa configuração de política determina se o Internet Explorer executa programas antimalware em controles ActiveX, para verificar se eles são seguros para carregar em páginas. Se você habilitar essa configuração de política, o Internet Explorer não verificará com seu programa antimalware para ver se é seguro criar uma instância do controle ActiveX. Se você desabilitar essa configuração de política, o Internet Explorer sempre verificará o programa antimalware para ver se é seguro criar uma instância do controle ActiveX. Se você não definir essa configuração de política, o Internet Explorer sempre verificará o programa antimalware para ver se é seguro criar uma instância do controle ActiveX. Os usuários podem ativar ou desativar esse comportamento, usando as configurações de segurança do Internet Explorer.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067089)
+- A zona restrita do **Internet Explorer não executa antimalware contra os controlos Ative X:**  
+  Esta definição de política determina se o Internet Explorer executa programas antimalware contra controlos ActiveX, para verificar se são seguros para carregar em páginas. Se ativar esta definição de política, o Internet Explorer não verificará com o seu programa antimalware para ver se é seguro criar uma instância do controlo ActiveX. Se desativar esta definição de política, o Internet Explorer verifica sempre com o seu programa antimalware para ver se é seguro criar uma instância do controlo ActiveX. Se não configurar esta definição de política, o Internet Explorer verifica sempre com o seu programa antimalware para ver se é seguro criar uma instância do controlo ActiveX. Os utilizadores podem ligar ou desligar este comportamento, utilizando as definições de Segurança do Internet Explorer.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067089)
 
-  **Padrão**: desabilitado
+  **Predefinição**: Desativado
 
-- **A execução de zona restrita do Internet Explorer .NET Framework componentes dependentes assinados com Authenticode**:  
-  Essa configuração de política permite que você gerencie se .NET Framework componentes assinados com Authenticode podem ser executados no Internet Explorer. Esses componentes incluem controles gerenciados referenciados de uma marca de objeto e executáveis gerenciados referenciados por meio de um link. Se você habilitar essa configuração de política, o Internet Explorer executará componentes gerenciados assinados. Se você selecionar prompt na caixa suspensa, o Internet Explorer solicitará que o usuário determine se os componentes gerenciados assinados serão executados. Se você desabilitar essa configuração de política, o Internet Explorer não executará componentes gerenciados assinados. Se você não definir essa configuração de política, o Internet Explorer não executará componentes gerenciados assinados.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067169)
+- **Internet Explorer área restrita executado .NET Estrutura componentes dependentes assinados com Authenticode**:  
+  Esta definição de política permite-lhe gerir se os componentes .NET Framework que são assinados com authenticode podem ser executados a partir do Internet Explorer. Estes componentes incluem controlos geridos referenciados a partir de uma etiqueta de objeto e executáveis geridos referenciados a partir de um link. Se ativar esta definição de política, o Internet Explorer executará componentes geridos assinados. Se selecionar O Prompt na caixa de lançamento, o Internet Explorer irá solicitar ao utilizador que determine se executa os componentes geridos assinados. Se desativar esta definição de política, o Internet Explorer não executará componentes geridos assinados. Se não configurar esta definição de política, o Internet Explorer não executará componentes geridos assinados.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067169)
 
-  **Padrão**: desabilitar
+  **Predefinição**: Desativar
 
-- **Acesso à zona restrita do Internet Explorer a fontes de dados**:  
-  Essa configuração de política permite que você gerencie se o Internet Explorer pode acessar dados de outra zona de segurança usando o Microsoft XML Parser (MSXML) ou o ActiveX Data Objects (ADO). Se você habilitar essa configuração de política, os usuários poderão carregar uma página na zona que usa MSXML ou ADO para acessar dados de outro site na zona. Se você selecionar prompt na caixa suspensa, os usuários serão consultados para escolher se deseja permitir que uma página seja carregada na zona que usa MSXML ou ADO para acessar dados de outro site na zona. Se você desabilitar essa configuração de política, os usuários não poderão carregar uma página na zona que usa MSXML ou ADO para acessar dados de outro site na zona. Se você não definir essa configuração de política, os usuários não poderão carregar uma página na zona que usa MSXML ou ADO para acessar dados de outro site na zona.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067161)
+- **Internet Explorer restrito acesso de zona a fontes**de dados:  
+  Esta definição de política permite-lhe gerir se o Internet Explorer pode aceder a dados de outra zona de segurança utilizando o Microsoft XML Parser (MSXML) ou ActiveX Data Objects (ADO). Se ativar esta definição de política, os utilizadores podem carregar uma página na zona que utiliza MSXML ou ADO para aceder a dados de outro site da zona. Se selecionar O Aviso na caixa de entrega, os utilizadores são questionados para escolher se permitem que uma página carregue na zona que utiliza mSXML ou ADO para aceder a dados de outro site da zona. Se desativar esta definição de política, os utilizadores não podem carregar uma página na zona que utiliza MSXML ou ADO para aceder a dados de outro site da zona. Se não configurar esta definição de política, os utilizadores não podem carregar uma página na zona que utiliza MSXML ou ADO para aceder a dados de outro site na zona.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067161)
 
-  **Padrão**: desabilitar
+  **Predefinição**: Desativar
 
-- A **zona Internet do Internet Explorer não executa antimalware em relação aos controles ActiveX**:  
-  Essa configuração de política determina se o Internet Explorer executa programas antimalware em controles ActiveX, para verificar se eles são seguros para carregar em páginas. Se você habilitar essa configuração de política, o Internet Explorer não verificará com seu programa antimalware para ver se é seguro criar uma instância do controle ActiveX. Se você desabilitar essa configuração de política, o Internet Explorer sempre verificará o programa antimalware para ver se é seguro criar uma instância do controle ActiveX. Se você não definir essa configuração de política, o Internet Explorer sempre verificará o programa antimalware para ver se é seguro criar uma instância do controle ActiveX. Os usuários podem ativar ou desativar esse comportamento, usando as configurações de segurança do Internet Explorer.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067162)
+- A zona de **internet do Internet Explorer não executa antimalware contra os controlos ActiveX:**  
+  Esta definição de política determina se o Internet Explorer executa programas antimalware contra controlos ActiveX, para verificar se são seguros para carregar em páginas. Se ativar esta definição de política, o Internet Explorer não verificará com o seu programa antimalware para ver se é seguro criar uma instância do controlo ActiveX. Se desativar esta definição de política, o Internet Explorer verifica sempre com o seu programa antimalware para ver se é seguro criar uma instância do controlo ActiveX. Se não configurar esta definição de política, o Internet Explorer verifica sempre com o seu programa antimalware para ver se é seguro criar uma instância do controlo ActiveX. Os utilizadores podem ligar ou desligar este comportamento, utilizando as definições de Segurança do Internet Explorer.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067162)
 
-  **Padrão**: desabilitado
+  **Predefinição**: Desativado
 
-- **Cópia e colagem de zona Internet do Internet Explorer via script**:  
-  Essa configuração de política permite que você gerencie se os scripts podem fazer uma operação de área de transferência (por exemplo, recortar, copiar e colar) em uma região especificada. Se você habilitar essa configuração de política, um script poderá fazer uma operação de área de transferência. Se você selecionar prompt na caixa suspensa, os usuários serão consultados sobre se as operações de área de transferência devem ser efetuadas. Se você desabilitar essa configuração de política, um script não poderá realizar uma operação de área de transferência. Se você não definir essa configuração de política, um script poderá fazer uma operação de área de transferência.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067084)
+- Cópia e pasta da zona de **internet do Internet Explorer através do script:**  
+  Esta definição de política permite-lhe gerir se os scripts podem fazer uma operação de prancheta (por exemplo, cortar, copiar e colar) numa região especificada. Se ativar esta definição de política, um script pode fazer uma operação de prancheta. Se selecionar O Aviso na caixa de entrega, os utilizadores são questionados sobre se devem ou não fazer operações de clipboard. Se desativar esta definição de política, um guião não pode fazer uma operação de prancheta. Se não configurar esta definição de política, um script pode fazer uma operação de prancheta.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067084)
 
-  **Padrão**: desabilitar
+  **Predefinição**: Desativar
 
-- **Serviço de instalação do Internet Explorer usando o Active X Installer**:  
-  Essa configuração de política permite que você especifique como os controles ActiveX são instalados. Se você habilitar essa configuração de política, os controles ActiveX serão instalados somente se o serviço instalador do ActiveX estiver presente e tiver sido configurado para permitir a instalação de controles ActiveX. Se você desabilitar ou não definir essa configuração de política, os controles ActiveX, incluindo controles por usuário, serão instalados por meio do processo de instalação padrão.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067163)
+- O Internet Explorer utiliza o **serviço instalador Ative X:**  
+  Esta definição de política permite especificar como os controlos ActiveX são instalados. Se ativar esta definição de política, os comandos ActiveX só são instalados se o Serviço de Instalação ActiveX estiver presente e tiver sido configurado para permitir a instalação de controlos ActiveX. Se desativar ou não configurar esta definição de política, os controlos ActiveX, incluindo controlos por utilizador, são instalados através do processo de instalação padrão.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067163)
 
-  **Padrão**: habilitado
+  **Predefinição**: Ativado
 
-- O **Internet Explorer processa a proteção contra elevação de zona**:  
-  O Internet Explorer estabelece restrições em cada página da Web que ele abre. As restrições são dependentes do local da página da Web (Internet, intranet, zona do computador local e assim por diante). Por exemplo, as páginas da Web no computador local têm o mínimo de restrições de segurança e estão na zona do computador local, tornando a zona de segurança do computador local um destino principal para usuários mal-intencionados. Se você habilitar essa configuração de política, qualquer zona poderá ser protegida da elevação de zona para todos os processos. Se você desabilitar ou não definir essa configuração de política, processos diferentes do Internet Explorer ou aqueles listados na lista de processos não receberão essa proteção.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067160)
+- **O Internet Explorer processa a proteção contra a elevação da zona:**  
+  O Internet Explorer coloca restrições em cada página Web que abre. As restrições dependem da localização da página Web (Internet, Intranet, zona de Máquina Local, e assim por diante). Por exemplo, as páginas Web no computador local têm menos restrições de segurança e estão na zona local da máquina, tornando a zona de segurança da Máquina Local um alvo privilegiado para utilizadores mal-intencionados. Se ativar esta definição de política, qualquer zona pode ser protegida da elevação da zona para todos os processos. Se desativar ou não configurar esta definição de política, os processos que não o Internet Explorer ou os listados na Lista de Processos não recebem essa proteção.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067160)
 
-  **Padrão**: habilitado
+  **Predefinição**: Ativado
 
-- **Internet Zone baixar controles ActiveX não assinados**:  
-  Essa configuração de política permite que você gerencie se os usuários podem baixar controles ActiveX não assinados da zona. Esse código é potencialmente prejudicial, especialmente quando provenientes de uma zona não confiável. Se você habilitar essa configuração de política, os usuários poderão executar controles não assinados sem intervenção do usuário. Se você selecionar prompt na caixa suspensa, os usuários serão consultados para escolher se deseja permitir que o controle não assinado seja executado. Se você desabilitar essa configuração de política, os usuários não poderão executar controles não assinados. Se você não definir essa configuração de política, os usuários não poderão executar controles não assinados.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067325)
+- **Internet Explorer internet descarregue controlos ActiveX não assinados:**  
+  Esta definição de política permite-lhe gerir se os utilizadores podem descarregar controlos ActiveX não assinados a partir da zona. Este código é potencialmente prejudicial, especialmente quando se vem de uma zona não confiável. Se ativar esta definição de política, os utilizadores podem executar controlos não assinados sem a intervenção do utilizador. Se selecionar O Aviso na caixa de entrega, os utilizadores são questionados para escolher se permitem que o controlo não assinado seja executado. Se desativar esta definição de política, os utilizadores não podem executar controlos não assinados. Se não configurar esta definição de política, os utilizadores não podem executar controlos não assinados.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067325)
 
-  **Padrão**: desabilitar
+  **Predefinição**: Desativar
 
-- **Zona Internet do Internet Explorer navegue pelas janelas e quadros entre domínios diferentes**:  
-  Essa configuração de política permite que você gerencie a abertura de janelas e quadros e o acesso de aplicativos em diferentes domínios. Se você habilitar essa configuração de política, os usuários poderão abrir janelas e quadros de outros domínios e acessar aplicativos de outros domínios. Se você selecionar prompt na caixa suspensa, os usuários serão consultados se deseja permitir que janelas e quadros acessem aplicativos de outros domínios. Se você desabilitar essa configuração de política, os usuários não poderão abrir janelas e quadros para acessar aplicativos de domínios diferentes. Se você não definir essa configuração de política, os usuários poderão abrir janelas e quadros de outros domínios e acessar aplicativos de outros domínios.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067083)
+- A zona de internet do Internet Explorer do **Internet navega janelas e quadros em diferentes domínios:**  
+  Esta definição de política permite-lhe gerir a abertura de janelas e molduras e o acesso de aplicações em diferentes domínios. Se ativar esta definição de política, os utilizadores podem abrir janelas e quadros de outros domínios e aceder a aplicações de outros domínios. Se selecionar o Prompt na caixa de entrega, os utilizadores são questionados se permitem que janelas e caixilharias acedam a aplicações de outros domínios. Se desativar esta definição de política, os utilizadores não podem abrir janelas e quadros para aceder a aplicações de diferentes domínios. Se não configurar esta definição de política, os utilizadores podem abrir janelas e quadros de outros domínios e aceder a aplicações de outros domínios.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067083)
 
-  **Padrão**: desabilitar
+  **Predefinição**: Desativar
 
-- **Atualizações de zona da Internet do Internet Explorer na barra de status por meio do script**:  
-  Essa configuração de política permite que você gerencie se um script pode atualizar a barra de status dentro da zona. Se você habilitar essa configuração de política, os scripts poderão atualizar a barra de status. Se você desabilitar ou não definir essa configuração de política, o script não poderá atualizar a barra de status.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067087)
+- Atualizações da zona de **internet do Internet Explorer para barra de estado através do script:**  
+  Esta definição de política permite-lhe gerir se um script pode atualizar a barra de estado dentro da zona. Se ativar esta definição de política, os scripts podem atualizar a barra de estado. Se desativar ou não configurar esta definição de política, o script não está autorizado a atualizar a barra de estado.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067087)
 
-  **Padrão**: desabilitado
+  **Predefinição**: Desativado
 
-- **A zona restrita do Internet Explorer inclui o caminho local ao carregar arquivos no servidor**:  
-  Essa configuração de política controla se as informações de caminho local são enviadas quando o usuário está carregando um arquivo por meio de um formulário HTML. Se as informações de caminho local forem enviadas, algumas informações poderão ser reveladas acidentalmente ao servidor. Por exemplo, os arquivos enviados da área de trabalho do usuário podem conter o nome de usuário como parte do caminho. Se você habilitar essa configuração de política, as informações de caminho serão enviadas quando o usuário estiver carregando um arquivo por meio de um formulário HTML. Se você desabilitar essa configuração de política, as informações de caminho serão removidas quando o usuário estiver carregando um arquivo por meio de um formulário HTML. Se você não definir essa configuração de política, o usuário poderá escolher se as informações de caminho serão enviadas quando estiverem carregando um arquivo por meio de um formulário HTML. Por padrão, as informações de caminho são enviadas.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067085)
+- A **zona restrita do Internet Explorer inclui o caminho local ao carregar ficheiros para o servidor:**  
+  Esta definição de política controla se as informações do caminho local forem enviadas quando o utilizador estiver a carregar um ficheiro através de um formulário HTML. Se as informações do caminho local forem enviadas, algumas informações podem ser reveladas involuntariamente ao servidor. Por exemplo, os ficheiros enviados do ambiente de trabalho do utilizador podem conter o nome do utilizador como parte do caminho. Se ativar esta definição de política, as informações do caminho são enviadas quando o utilizador está a carregar um ficheiro através de um formulário HTML. Se desativar esta definição de política, as informações do caminho são removidas quando o utilizador está a carregar um ficheiro através de um formulário HTML. Se não configurar esta definição de política, o utilizador pode escolher se as informações do caminho são enviadas quando estão a enviar um ficheiro através de um formulário HTML. Por padrão, a informação do caminho é enviada.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067085)
 
-  **Padrão**: desabilitado
+  **Predefinição**: Desativado
 
-- Os **processos do Internet Explorer restringem o download do arquivo**:  
-  Essa configuração de política permite que aplicativos que hospedam o controle de navegador da Web bloqueiem a solicitação automática de downloads de arquivos que não são iniciados pelo usuário. Se você habilitar essa configuração de política, o controle de navegador da Web bloqueará a solicitação automática de downloads de arquivo que não são iniciados pelo usuário para todos os processos. Se você desabilitar essa configuração de política, o controle de navegador da Web não bloqueará a solicitação automática de downloads de arquivo que não são iniciados pelo usuário para todos os processos.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067164)
+- **Os processos do Internet Explorer restringem o download de ficheiros:**  
+  Esta definição de política permite que as aplicações que hospedam o Controlo do Navegador Web bloqueiem a solicitação automática de transferências de ficheiros que não são iniciadas pelo utilizador. Se ativar esta definição de política, o Controlo do Navegador Web bloqueará a solicitação automática de transferências de ficheiros que não são iniciados pelo utilizador para todos os processos. Se desativar esta definição de política, o Controlo de Navegador web não bloqueará a solicitação automática de transferências de ficheiros que não são iniciados pelo utilizador para todos os processos.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067164)
 
-  **Padrão**: habilitado
+  **Predefinição**: Ativado
 
-- **A zona restrita do Internet Explorer permite que somente domínios aprovados usem controles**ActiveX:  
-  Essa configuração de política controla se o usuário é solicitado a permitir que os controles ActiveX sejam executados em sites que não sejam o site que instalou o controle ActiveX. Se você habilitar essa configuração de política, o usuário será solicitado antes que os controles ActiveX possam ser executados de sites nesta zona. O usuário pode optar por permitir que o controle seja executado a partir do site atual ou de todos os sites. Se você desabilitar essa configuração de política, o usuário não verá o prompt do ActiveX por site e os controles ActiveX poderão ser executados de todos os sites nesta zona.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067233)
+- A zona restrita do **Internet Explorer permite que apenas os domínios aprovados utilizem controlos Ative X:**  
+  Esta definição de política controla se o utilizador for solicitado a permitir que os controlos ActiveX possam ser executados em websites que não o website que instalou o controlo ActiveX. Se ativar esta definição de política, o utilizador é solicitado antes que os controlos ActiveX possam ser executados a partir de websites nesta zona. O utilizador pode optar por permitir que o controlo possa ser executado a partir do site atual ou de todos os sites. Se desativar esta definição de política, o utilizador não vê o pedido do ActiveX por site, e os controlos ActiveX podem ser executados a partir de todos os sites desta zona.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067233)
 
-  **Padrão**: habilitado
+  **Predefinição**: Ativado
 
-- **Os controles de inicialização de zona restrita do Internet Explorer e script ativo X não estão marcados como seguros**:  
-  Essa configuração de política permite que você gerencie controles ActiveX não marcados como seguros. Se você habilitar essa configuração de política, os controles ActiveX são executados, carregados com parâmetros e com script sem definir a segurança de objeto para dados ou scripts não confiáveis. Essa configuração não é recomendada, exceto para zonas seguras e administradas. Essa configuração faz com que controles seguros e não seguros sejam inicializados e com script, ignorando os controles ActiveX de script marcados como seguros para a opção de script. Se você habilitar essa configuração de política e selecionar avisar na caixa suspensa, os usuários serão consultados se deseja permitir que o controle seja carregado com parâmetros ou com script. Se você desabilitar essa configuração de política, os controles ActiveX que não puderem ser tornados seguros não serão carregados com parâmetros ou com script. Se você não definir essa configuração de política, os controles ActiveX que não puderem ser tornados seguros não serão carregados com parâmetros ou com script.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067097)
+- A zona restrita do **Internet Explorer inicializa e script Controlos Ative X não marcados como seguros:**  
+  Esta definição de política permite-lhe gerir os controlos ActiveX não marcados como seguros. Se ativar esta definição de política, os controlos ActiveX funcionam, carregados com parâmetros e escritos sem definir a segurança do objeto para dados ou scripts não confiáveis. Esta definição não é recomendada, exceto para zonas seguras e administradas. Esta definição faz com que os controlos inseguros e seguros sejam inicializados e scripts, ignorando os comandos Script ActiveX marcados como seguros para a opção de script. Se ativar esta definição de política e selecionar o Prompt na caixa de lançamento, os utilizadores são questionados se permitem que o controlo carregue com parâmetros ou scripts. Se desativar esta definição de política, os controlos ActiveX que não podem ser tornados seguros não são carregados com parâmetros ou scripts. Se não configurar esta definição de política, os controlos ActiveX que não podem ser tornados seguros não estão carregados com parâmetros ou scripts.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067097)
 
-  **Padrão**: desabilitar
+  **Predefinição**: Desativar
 
-- **Usuários do Internet Explorer alterando políticas**:  
-  Impede que os usuários alterem as configurações de zona de segurança. Uma zona de segurança é um grupo de sites com o mesmo nível de segurança. Se você habilitar essa política, o botão de nível personalizado e o controle deslizante de nível de segurança na guia Segurança da caixa de diálogo Opções da Internet serão desabilitados. Se você desabilitar essa política ou não configurá-la, os usuários poderão alterar as configurações de zonas de segurança. Essa política impede que os usuários alterem as configurações de zona de segurança estabelecidas pelo administrador. Observação: a política "desabilitar a página de segurança" (localizada em \ Configuração do Computador\modelos Administrativos\Componentes do Windows\internet Explorer\painel de controle), que remove a guia Segurança do Internet Explorer no painel de controle, tem precedência sobre esta política. Se estiver habilitado, essa política será ignorada. Além disso, consulte a política "zonas de segurança: usar apenas as configurações do computador".  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067155)
+- **Os utilizadores do Internet Explorer mudam as políticas:**  
+  Impede que os utilizadores mudem as definições da zona de segurança. Uma zona de segurança é um grupo de Web sites com o mesmo nível de segurança. Se ativar esta política, o botão De Nível Personalizado e o slider de nível de segurança no separador Segurança na caixa de diálogo Opções de Internet são desativados. Se desativar esta política ou não a configurar, os utilizadores podem alterar as definições para zonas de segurança. Esta política impede que os utilizadores mudem as definições de zona de segurança estabelecidas pelo administrador. Nota: A política "Desativar a página de segurança" (localizada em \User Configuration\Administrative Templates\Windows Components\Internet Explorer\Internet Control Panel), que remove o separador de segurança do Internet Explorer no Painel de Controlo, tem precedência sobre esta política. Se for ativada, esta política é ignorada. Consulte também a política "Zonas de segurança: Utilize apenas as definições da máquina".  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067155)
 
-  **Padrão**: desabilitado
+  **Predefinição**: Desativado
 
-- **Modo protegido de zona restrita do Internet Explorer**:  
-  Essa configuração de política permite ativar o modo protegido. O modo protegido ajuda a proteger o Internet Explorer contra vulnerabilidades exploradas, reduzindo os locais em que o Internet Explorer pode gravar no registro e no sistema de arquivos. Se você habilitar essa configuração de política, o modo protegido será ativado. O usuário não pode desativar o modo protegido. Se você desabilitar essa configuração de política, o modo protegido será desativado. O usuário não pode ativar o modo protegido. Se você não definir essa configuração de política, o usuário poderá ativar ou desativar o modo protegido.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067080)
+- Modo protegido por **zonas restritas do Internet Explorer:**  
+  Esta definição de política permite-lhe ligar o Modo Protegido. O Modo Protegido ajuda a proteger o Internet Explorer de vulnerabilidades exploradas, reduzindo os locais a que o Internet Explorer pode escrever no registo e no sistema de ficheiros. Se ativar esta definição de política, o Modo Protegido está ligado. O utilizador não pode desligar o Modo Protegido. Se desativar esta definição de política, o Modo Protegido está desligado. O utilizador não pode ligar o Modo Protegido. Se não configurar esta definição de política, o utilizador pode ligar ou desligar o Modo Protegido.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067080)
 
-  **Padrão**: habilitar
+  **Padrão**: Ativar
 
-- **Persistência de dados de usuário da zona Internet do Internet Explorer**:  
-  Essa configuração de política permite que você gerencie a preservação de informações no histórico do navegador, em favoritos, em um repositório XML ou diretamente em uma página da Web salva em disco. Quando um usuário retornar a uma página persistente, o estado da página poderá ser restaurado se essa configuração de política estiver configurada adequadamente. Se você habilitar essa configuração de política, os usuários poderão preservar as informações no histórico do navegador, nos favoritos, em um repositório XML ou diretamente em uma página da Web salva em disco. Se você desabilitar essa configuração de política, os usuários não poderão preservar as informações no histórico do navegador, nos favoritos, em um repositório XML ou diretamente em uma página da Web salva em disco. Se você não definir essa configuração de política, os usuários poderão preservar as informações no histórico do navegador, nos favoritos, em um repositório XML ou diretamente em uma página da Web salva em disco.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067156)
+- Persistência de dados dos utilizadores da zona de **internet do Internet Explorer:**  
+  Esta definição de política permite-lhe gerir a preservação da informação no histórico do navegador, nos favoritos, numa loja XML, ou diretamente dentro de uma página Web guardada para disco. Quando um utilizador retorna a uma página persistiu, o estado da página pode ser restaurado se esta definição de política estiver devidamente configurada. Se ativar esta definição de política, os utilizadores podem preservar informações no histórico do navegador, nos favoritos, numa loja XML ou diretamente dentro de uma página Web guardada para disco. Se desativar esta definição de política, os utilizadores não podem preservar informações no histórico do navegador, nos favoritos, numa loja XML ou diretamente dentro de uma página Web guardada para disco. Se não configurar esta definição de política, os utilizadores podem preservar informações no histórico do navegador, nos favoritos, numa loja XML ou diretamente dentro de uma página Web guardada para disco.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067156)
 
-  **Padrão**: desabilitado
+  **Predefinição**: Desativado
 
-- **Script de Internet Internet Explorer de controles de navegador da Web**:  
-  Essa configuração de política determina se uma página pode controlar controles WebBrowser inseridos por meio de script. Se você habilitar essa configuração de política, o acesso de script ao controle WebBrowser será permitido. Se você desabilitar essa configuração de política, o acesso de script ao controle WebBrowser não será permitido. Se você não definir essa configuração de política, o usuário poderá habilitar ou desabilitar o acesso de script ao controle WebBrowser. Por padrão, o acesso de script ao controle WebBrowser é permitido apenas no computador local e nas zonas da intranet.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067157)
+- **Scripts de zona de internet do Internet Explorer do Internet dos controlos do navegador web:**  
+  Esta definição de política determina se uma página pode controlar os controlos do WebBrowser incorporados através do script. Se ativar esta definição de política, é permitido o acesso ao script ao controlo WebBrowser. Se desativar esta definição de política, o acesso do script ao controlo webBrowser não é permitido. Se não configurar esta definição de política, o utilizador pode ativar ou desativar o acesso do script ao controlo do WebBrowser. Por predefinição, o acesso ao script ao controlo WebBrowser só é permitido nas zonas Local Machine e Intranet.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067157)
 
-  **Padrão**: desabilitado
+  **Predefinição**: Desativado
 
-- **Persistência de dados de usuário de zona restrita do Internet Explorer**:  
-  Essa configuração de política permite que você gerencie a preservação de informações no histórico do navegador, em favoritos, em um repositório XML ou diretamente em uma página da Web salva em disco. Quando um usuário retornar a uma página persistente, o estado da página poderá ser restaurado se essa configuração de política estiver configurada adequadamente. Se você habilitar essa configuração de política, os usuários poderão preservar as informações no histórico do navegador, nos favoritos, em um repositório XML ou diretamente em uma página da Web salva em disco. Se você desabilitar essa configuração de política, os usuários não poderão preservar as informações no histórico do navegador, nos favoritos, em um repositório XML ou diretamente em uma página da Web salva em disco. Se você não definir essa configuração de política, os usuários não poderão preservar as informações no histórico do navegador, nos favoritos, em um repositório XML ou diretamente em uma página da Web salva em disco.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067081)
+- Persistência restrita de dados dos utilizadores da **zona do Internet Explorer:**  
+  Esta definição de política permite-lhe gerir a preservação da informação no histórico do navegador, nos favoritos, numa loja XML, ou diretamente dentro de uma página Web guardada para disco. Quando um utilizador retorna a uma página persistiu, o estado da página pode ser restaurado se esta definição de política estiver devidamente configurada. Se ativar esta definição de política, os utilizadores podem preservar informações no histórico do navegador, nos favoritos, numa loja XML ou diretamente dentro de uma página Web guardada para disco. Se desativar esta definição de política, os utilizadores não podem preservar informações no histórico do navegador, nos favoritos, numa loja XML ou diretamente dentro de uma página Web guardada para disco. Se não configurar esta definição de política, os utilizadores não podem preservar informações no histórico do navegador, nos favoritos, numa loja XML ou diretamente dentro de uma página Web guardada para disco.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067081)
 
-  **Padrão**: desabilitado
+  **Predefinição**: Desativado
 
-- **Permissões Java da zona de intranet bloqueada do Internet Explorer**:  
-  Essa configuração de política permite que você gerencie permissões para miniaplicativos Java. Se você habilitar essa configuração de política, poderá escolher opções na caixa suspensa. Personalizado, para controlar as configurações de permissões individualmente. A segurança baixa permite que os applets realizem todas as operações. A segurança média permite que os applets sejam executados em sua área restrita (uma área na memória fora da qual o programa não pode fazer chamadas), além de recursos como espaço transitório (uma área de armazenamento segura e seguro no computador cliente) e e/s de arquivo controlado pelo usuário. A alta segurança permite que os applets sejam executados na área restrita. Desabilite o Java para impedir que os applets sejam executados. Se você desabilitar essa configuração de política, os miniaplicativos Java não poderão ser executados. Se você não definir essa configuração de política, os miniaplicativos Java serão desabilitados.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067082)
+- **Internet Explorer bloqueou permissões**java da zona intranet:  
+  Esta definição de política permite-lhe gerir permissões para applets Java. Se ativar esta definição de política, pode escolher opções a partir da caixa de lançamento. Personalizado, para controlar as definições de permissões individualmente. A Low Safety permite que as applets façam todas as operações. A Medium Safety permite que as applets corram na sua caixa de areia (uma área na memória fora da qual o programa não pode fazer chamadas), além de capacidades como o espaço de risco (uma área de armazenamento segura e segura no computador cliente) e o ficheiro controlado pelo utilizador I/O. A Alta Segurança permite que as maçãs corram na sua caixa de areia. Desative Java para evitar que as maçãs se esgotem. Se desativar este cenário de política, as maçãs Java não podem correr. Se não configurar esta definição de política, as maçãs Java são desativadas.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067082)
 
-  **Padrão**: desabilitar Java
+  **Predefinição**: Desative o java
 
-- **Modo protegido do Internet Explorer aprimorado**:  
-  O modo protegido avançado fornece proteção adicional contra sites mal-intencionados usando processos de 64 bits em versões de 64 bits do Windows. Para computadores que executam pelo menos o Windows 8, o modo protegido aprimorado também limita os locais em que o Internet Explorer pode ler no registro e no sistema de arquivos. Se você habilitar essa configuração de política, o modo protegido avançado será ativado. Qualquer zona que tenha o modo protegido habilitado usará o modo protegido avançado. Os usuários não podem desabilitar o modo protegido avançado. Se você desabilitar essa configuração de política, o modo protegido avançado será desativado. Qualquer zona que tenha o modo protegido habilitado usará a versão do modo protegido introduzido no Internet Explorer 7 para Windows Vista. Se você não configurar essa política, os usuários poderão ativar ou desativar o modo protegido avançado na guia Avançado da caixa de diálogo Opções da Internet.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067158)
+- **Modo protegido melhorado do Internet Explorer:**  
+  O Modo Protegido Melhorado fornece proteção adicional contra websites maliciosos utilizando processos de 64 bits em versões de 64 bits do Windows. Para computadores que executam pelo menos o Windows 8, o Modo Protegido Melhorado também limita as localizações que o Internet Explorer pode ler no registo e no sistema de ficheiros. Se ativar esta definição de política, o modo de proteção melhorado está ligado. Qualquer zona ativada pelo modo protegido utilizará o modo protegido melhorado. Os utilizadores não podem desativar o modo protegido melhorado. Se desativar esta definição de política, o modo proteção melhorado está desligado. Qualquer zona ativada pelo Modo Protegido utilizará a versão do Modo Protegido introduzida no Internet Explorer 7 para o Windows Vista. Se não configurar esta política, os utilizadores podem ligar ou desligar o Modo Protegido Melhorado no separador Avançado do diálogo opções de Internet.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067158)
 
-  **Padrão**: habilitado
+  **Predefinição**: Ativado
 
-- **Avisos de tela inteligente de bypass do Internet Explorer**:  
-  Essa configuração de política determina se o usuário pode ignorar avisos do filtro do SmartScreen. O filtro do SmartScreen avisa o usuário sobre arquivos executáveis que os usuários do Internet Explorer geralmente não baixam da Internet. Se você habilitar essa configuração de política, os avisos do filtro do SmartScreen bloquearão o usuário. Se você desabilitar ou não definir essa configuração de política, o usuário poderá ignorar os avisos do filtro do SmartScreen.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067159)
+- **Avisos**de ecrã inteligente do Internet Explorer bypass:  
+  Esta definição de política determina se o utilizador pode contornar as advertências do Filtro SmartScreen. O Filtro SmartScreen avisa o utilizador sobre ficheiros executáveis que os utilizadores do Internet Explorer não descarregam normalmente a partir da Internet. Se ativar esta definição de política, os avisos do Filtro SmartScreen bloqueiam o utilizador. Se desativar ou não configurar esta definição de política, o utilizador pode contornar as advertências do Filtro SmartScreen.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067159)
 
-  **Padrão**: desabilitado
+  **Predefinição**: Desativado
 
-- **Meta Refresh da zona restrita do Internet Explorer**:  
-  Essa configuração de política permite que você gerencie se o navegador de um usuário pode ser redirecionado para outra página da Web se o autor da página da Web usar a configuração de meta Refresh (marca) para redirecionar os navegadores para outra página da Web. Se você habilitar essa configuração de política, o navegador de um usuário que carrega uma página que contém uma configuração de meta Refresh ativa pode ser redirecionado para outra página da Web. Se você desabilitar essa configuração de política, o navegador de um usuário que carregar uma página que contém uma configuração de meta Refresh ativa não poderá ser redirecionado para outra página da Web. Se você não definir essa configuração de política, o navegador de um usuário que carregar uma página que contém uma configuração de meta Refresh ativa não poderá ser redirecionado para outra página da Web.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067154)
+- **Internet Explorer restrita zona meta atualização:**  
+  Esta definição de política permite-lhe gerir se o navegador de um utilizador pode ser redirecionado para outra página Web se o autor da página Web utilizar a definição Meta Refresh (tag) para redirecionar os navegadores para outra página Web. Se ativar esta definição de política, o navegador de um utilizador que carregue uma página contendo uma definição de Meta Refresh ativa pode ser redirecionado para outra página Web. Se desativar esta definição de política, o navegador de um utilizador que carrega uma página contendo uma definição de Meta Refresh ativa não pode ser redirecionado para outra página Web. Se não configurar esta definição de política, o navegador de um utilizador que carrega uma página contendo uma definição de Meta Refresh ativa não pode ser redirecionado para outra página Web.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067154)
 
-  **Padrão**: desabilitado
+  **Predefinição**: Desativado
 
-## <a name="local-policies-security-options"></a>Opções de segurança de políticas locais
+## <a name="local-policies-security-options"></a>Opções de Segurança das Políticas Locais
 
-Para obter mais informações, consulte [Policy CSP-LocalPoliciesSecurityOptions](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions) na documentação do Windows.
+Para mais informações, consulte [Política CSP - LocaiSPolíticasOp](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions) na documentação do Windows.
 
-- **Restringir o acesso anônimo a pipes nomeados e compartilhamentos**:  
-  Quando habilitada, essa configuração de segurança restringe o acesso anônimo a compartilhamentos e pipes para as configurações de: (1) pipes nomeados que podem ser acessados anonimamente (2) compartilhamentos que podem ser acessados anonimamente.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067212)
+- **Restringir o acesso anónimo a tubos e partilhas nomeados:**  
+  Quando ativado, esta definição de segurança restringe o acesso anónimo a ações e tubos às definições para: (1) Tubos nomeados que podem ser acedidos anonimamente (2) Partilhas que podem ser acedidas de forma anónima.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067212)
 
   **Padrão**: Sim
 
-- **Segurança mínima de sessão para servidores baseados em NTLM SSP**:  
-  Essa configuração de segurança permite que um servidor exija a negociação de criptografia de 128 bits e segurança de sessão NTLMv2. Esses valores são dependentes do valor de configuração de segurança do nível de autenticação do LAN Manager. As opções são: exigir segurança de sessão NTLMv2: a conexão falhará se a integridade da mensagem não for negociada. Exigir criptografia de 128 bits. A conexão falhará se a criptografia forte (128 bits) não for negociada.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067246)
+- **Segurança mínima da sessão para servidores baseados em SSP NTLM:**  
+  Esta definição de segurança permite que um servidor exija a negociação de encriptação de 128 bits e segurança de sessão NTLMv2. Estes valores dependem do valor de definição de nível de segurança do Lan Manager Authentication Level. As opções são: Exigir segurança da sessão NTLMv2: A ligação falhará se a integridade da mensagem não for negociada. Requer encriptação de 128 bits. A ligação falhará se a encriptação forte (128 bits) não for negociada.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067246)
 
-  **Padrão**: exigir criptografia de NTLM V2 e 128 bits
+  **Predefinição**: Requerer encriptação NTLM V2 e 128 bits
 
-- **Minutos de inatividade de tela de bloqueio até a proteção de tela ser ativada**:  
-  O Windows repara na inatividade de um início de sessão e, se a quantidade de tempo inativo exceder o limite de inatividade, então, a proteção de ecrã será executado, bloqueando a sessão.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067210)
+- **Minutos de inatividade do ecrã de bloqueio até**que o protetor de ecrã seja ativado:  
+  O Windows nota a inatividade de uma sessão de logon e, se a quantidade de tempo inativo exceder o limite de inatividade, então o protetor de ecrã será executado, bloqueando a sessão.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067210)
 
-  **Padrão**: 15
+  **Predefinição**: 15
 
-- **Exigir que o cliente assine sempre as comunicações digitalmente**:  
-  Essa configuração de segurança determina se todo o tráfego de canal seguro iniciado pelo membro do domínio deve ser assinado ou criptografado. Quando um computador ingressa em um domínio, uma conta de computador é criada. Depois disso, quando o sistema é iniciado, ele usa a senha da conta de computador para criar um canal seguro com um controlador de domínio para seu domínio. Esse canal seguro é usado para realizar operações como autenticação de passagem NTLM, pesquisa de nome/SID de LSA e muito mais. Essa configuração determina se todo o tráfego de canal seguro iniciado pelo membro do domínio atende aos requisitos mínimos de segurança. Especificamente, ele determina se todo o tráfego de canal seguro iniciado pelo membro do domínio deve ser assinado ou criptografado. Se essa política estiver habilitada, o canal seguro não será estabelecido, a menos que a assinatura ou a criptografia de todo o tráfego de canal seguro seja negociada. Se essa política estiver desabilitada, a criptografia e a assinatura de todo o tráfego de canal seguro serão negociadas com o controlador de domínio, caso em que o nível de assinatura e criptografia depende da versão do controlador de domínio e das configurações dos dois seguintes políticas: membro do domínio: criptografar digitalmente os dados do canal seguro (quando possível) membro do domínio: assinar digitalmente dados de canal seguro (quando possível).  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067187)
-
-  **Padrão**: Sim
-
-- **Nível de autenticação**:  
-  Essa configuração de segurança determina qual protocolo de autenticação de desafio/resposta é usado para logons de rede. Essa escolha afeta o nível de protocolo de autenticação usado pelos clientes, o nível de segurança de sessão negociado e o nível de autenticação aceito pelos servidores da seguinte maneira:
-
-  - *Enviar respostas LM e NTLM* -os clientes usam a autenticação LM e NTLM e nunca usam a segurança de sessão NTLMv2; os controladores de domínio aceitam autenticação LM, NTLM e NTLMv2.
-
-  - *Enviar LM e NTLM-NTLMv2 se negociados* -os clientes usam a autenticação LM e NTLM e usam a segurança de sessão NTLMv2 se o servidor oferecer suporte a ele. Os controladores de domínio aceitam autenticação LM, NTLM e NTLMv2.
-
-  - *Enviar somente resposta NTLM* -os clientes usam somente a autenticação NTLM e usam a segurança de sessão NTLMv2 se o servidor oferecer suporte a ele; os controladores de domínio aceitam autenticação LM, NTLM e NTLMv2.
-
-  - *Enviar somente resposta NTLMv2* – os clientes usam somente a autenticação NTLMv2 e usam a segurança de sessão NTLMv2 se o servidor oferecer suporte a ele; os controladores de domínio aceitam autenticação LM, NTLM e NTLMv2.
-
-  - *Enviar somente resposta NTLMv2. Recusar LM* -os clientes usam somente a autenticação NTLMv2 e usam a segurança de sessão NTLMv2 se o servidor oferecer suporte a ele. Os controladores de domínio recusam LM (aceitam somente autenticação NTLM e NTLMv2).
-
-  - *Enviar somente resposta NTLMv2. Recusar LM e NTLM* -os clientes usam somente a autenticação NTLMv2 e usam a segurança de sessão NTLMv2 se o servidor oferecer suporte a ele. Os controladores de domínio recusam LM e NTLM (aceitam somente a autenticação NTLMv2).
-
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067189)
-
-  **Padrão**: Enviar somente resposta NTLMv2. Recusar LM e NTLM
-
-- **Impedir que os clientes enviem senhas não criptografadas para servidores SMB de**terceiros:  
-  Se essa configuração de segurança estiver habilitada, o redirecionador de protocolo SMB poderá enviar senhas de texto não criptografado a servidores SMB não Microsoft que não ofereçam suporte à criptografia de senha durante a autenticação. O envio de senhas não criptografadas é um risco à segurança.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067235)
+- **Exigir que o cliente assine sempre comunicações digitalmente:**  
+  Esta definição de segurança determina se todo o tráfego de canal seguro iniciado pelo membro do domínio deve ser assinado ou encriptado. Quando um computador se junta a um domínio, é criada uma conta de computador. Depois disso, quando o sistema começa, utiliza a palavra-passe da conta do computador para criar um canal seguro com um controlador de domínio para o seu domínio. Este canal seguro é utilizado para fazer operações como a passagem da NTLM através da autenticação, LSA SID/nome Lookup e muito mais. Esta definição determina se todo o tráfego de canal seguro iniciado pelo membro do domínio satisfaz os requisitos mínimos de segurança. Especificamente, determina se todo o tráfego de canal seguro iniciado pelo membro do domínio deve ser assinado ou encriptado. Se esta política estiver ativada, o canal seguro não será estabelecido a menos que seja negociada a assinatura ou encriptação de todo o tráfego de canais seguros. Se esta política for desativada, então a encriptação e a assinatura de todo o tráfego de canal seguro são negociados com o Controlador de Domínio, caso em que o nível de assinatura e encriptação depende da versão do Controlador de Domínio e das definições dos dois seguintes políticas: Membro do domínio: Encriptar digitalmente dados de canais seguros (quando possível) Membro do domínio: Sinal digitalmente dados de canal seguro (quando possível).  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067187)
 
   **Padrão**: Sim
 
-- **Exigir comunicações de assinatura digital do servidor sempre**:  
-  Essa configuração de segurança determina se o cliente SMB tenta negociar a assinatura de pacotes SMB. O protocolo SMB fornece a base para o compartilhamento de arquivos e impressão da Microsoft e muitas outras operações de rede, como a administração remota do Windows. Para evitar ataques man-in-the-Middle que modificam pacotes SMB em trânsito, o protocolo SMB dá suporte à assinatura digital de pacotes SMB. Essa configuração de política determina se o componente cliente SMB tenta negociar a assinatura de pacote SMB quando se conecta a um servidor SMB. Se essa configuração estiver habilitada, o cliente de rede da Microsoft solicitará que o servidor faça a assinatura de pacote SMB na configuração da sessão. Se a assinatura de pacotes tiver sido ativada no servidor, a assinatura de pacotes será negociada. Se essa política estiver desabilitada, o cliente SMB nunca negociará a assinatura de pacotes SMB.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067319)
+- **Nível de autenticação:**  
+  Esta definição de segurança determina qual o protocolo de autenticação de desafio/resposta utilizado para os logons de rede. Esta escolha afeta o nível de protocolo de autenticação utilizado pelos clientes, o nível de segurança da sessão negociado, e o nível de autenticação aceite pelos servidores da seguinte forma:
+
+  - *Enviar respostas LM e NTLM* - Os clientes usam a autenticação LM e NTLM e nunca usam a segurança da sessão NTLMv2; os controladores de domínio aceitam a autenticação LM, NTLM e NTLMv2.
+
+  - *Envie LM e NTLM - NTLMv2 se negociado* - Os clientes usam a autenticação LM e NTLM e utilizam a segurança da sessão NTLMv2 se o servidor o suportar. Os controladores de domínio aceitam a autenticação LM, NTLM e NTLMv2.
+
+  - *Enviar apenas resposta NTLM* - Os clientes usam apenas a autenticação NTLM e utilizam a segurança da sessão NTLMv2 se o servidor a suportar; os controladores de domínio aceitam a autenticação LM, NTLM e NTLMv2.
+
+  - *Enviar apenas resposta NTLMv2* - Os clientes usam apenas a autenticação NTLMv2 e utilizam a segurança da sessão NTLMv2 se o servidor a suportar; os controladores de domínio aceitam a autenticação LM, NTLM e NTLMv2.
+
+  - *Envie apenas resposta NTLMv2. Recusa LM* - Os clientes usam apenas a autenticação NTLMv2 e utilizam a segurança da sessão NTLMv2 se o servidor o suportar. Os controladores de domínio recusam LM (aceitar apenas a autenticação NTLM e NTLMv2).
+
+  - *Envie apenas resposta NTLMv2. Recusa LM e NTLM* - Os clientes usam apenas a autenticação NTLMv2 e utilizam a segurança da sessão NTLMv2 se o servidor o suportar. Os controladores de domínio recusam LM e NTLM (aceitar apenas a autenticação NTLMv2).
+
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067189)
+
+  **Predefinição**: Enviar apenas a resposta NTLMv2. Recusar LM e NTLM
+
+- **Impedir que os clientes enviem senhas não encriptadas para servidores SMB de terceiros:**  
+  Se esta definição de segurança estiver ativada, o redirector do Bloco de Mensagens do Servidor (SMB) pode enviar senhas de texto simples para servidores SMB não Microsoft que não suportem encriptação de palavra-passe durante a autenticação. Enviar senhas não encriptadas é um risco de segurança.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067235)
 
   **Padrão**: Sim
 
-- **Comportamento da solicitação de elevação do administrador**:  
-  Essa configuração de política controla o comportamento da solicitação de elevação para administradores. As opções são:
-
-  - *Elevar sem avisar* – permite que contas com privilégios realizem uma operação que requer elevação sem a necessidade de consentimento ou credenciais. Observação: Use essa opção somente nos ambientes mais restritos.
-
-  - *Solicitar credenciais na área de trabalho segura* – quando uma operação requer elevação de privilégio, o usuário é solicitado na área de trabalho segura para inserir um nome de usuário e senha privilegiados. Se o usuário inserir credenciais válidas, a operação continuará com o privilégio mais alto disponível do usuário.
-
-  - *Solicitar consentimento na área de trabalho segura* – quando uma operação requer elevação de privilégio, o usuário é solicitado na área de trabalho segura para selecionar permitir ou negar. Se o usuário selecionar permitir, a operação continuará com o privilégio mais alto disponível do usuário.
-
-  - *Solicitar credenciais* – quando uma operação requer elevação de privilégio, o usuário é solicitado a inserir um nome de usuário administrativo e uma senha. Se o usuário inserir credenciais válidas, a operação continuará com o privilégio aplicável.
-
-  - *Solicitar consentimento* -quando uma operação requer elevação de privilégio, o usuário recebe uma solicitação para selecionar permitir ou negar. Se o usuário selecionar permitir, a operação continuará com o privilégio mais alto disponível do usuário.
-
-  - *Solicitar consentimento para binários não Windows* -quando uma operação para um aplicativo que não é da Microsoft requer elevação de privilégio, o usuário é solicitado na área de trabalho segura para selecionar permitir ou negar. Se o usuário selecionar permitir, a operação continuará com o privilégio mais alto disponível do usuário.
-
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067215)
-
-  **Padrão**: solicitar consentimento na área de trabalho segura
-
-- **Segurança mínima de sessão para clientes baseados em NTLM SSP**:  
-  Essa configuração de segurança permite que um cliente exija a negociação de criptografia de 128 bits e segurança de sessão NTLMv2. Esses valores são dependentes do valor de configuração de segurança do nível de autenticação do LAN Manager. As opções são:
-
-  - *Exigir segurança de sessão NTLMv2* -a conexão falhará se o protocolo NTLMv2 não for negociado.
-
-  - *Exigir criptografia de 128 bits* -a conexão falhará se a criptografia forte (128 bits) não for negociada.
-
-  - *Exigir criptografia NTLMv2 e 128 bits*.
-
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067324)
-
-  **Padrão**: exigir criptografia NTLM v2 128
-
-- **Comportamento de remoção de cartão inteligente**:  
-  Essa configuração de segurança determina o que acontece quando o cartão inteligente de um usuário conectado é removido do leitor de cartão inteligente. As opções são:
-
-  - *Nenhuma ação*.
-
-  - *Bloquear estação de trabalho* -a estação de trabalho é bloqueada quando o cartão inteligente é removido, permitindo que os usuários saiam da área, usem seu cartão inteligente e ainda mantenham uma sessão protegida.
-
-  - *Forçar logoff* – o usuário é desconectado automaticamente quando o cartão inteligente é removido.
-
-  - *Desconectar área de trabalho remota sessão* – a remoção do cartão inteligente desconecta a sessão sem fazer logoff do usuário. Isso permite que o usuário insira o cartão inteligente e retome a sessão mais tarde, ou em outro computador equipado com leitor de cartão inteligente, sem precisar fazer logon novamente. Se a sessão for local, esta política funciona da mesma forma que Bloquear Estação de Trabalho.
-
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067331)
-
-  **Padrão**: Bloquear estação de trabalho
-
-- **Bloquear enumeração anônima de contas e compartilhamentos Sam**:  
-  Essa configuração de segurança determina se a enumeração anônima de contas e compartilhamentos SAM deve ser permitida. O Windows permite que usuários anônimos façam determinadas atividades, como a enumeração de nomes de contas de domínio e compartilhamentos de rede. Isso é conveniente, por exemplo, quando um administrador deseja conceder acesso a usuários em um domínio confiável que não mantém uma confiança recíproca. Se você não quiser permitir a enumeração anônima de contas e compartilhamentos SAM, defina essa política como *Sim*.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067191)
+- **Requerem que o servidor assine as comunicações digitalmente sempre:**  
+  Esta definição de segurança determina se o cliente SMB tenta negociar a assinatura do pacote SMB. O protocolo do bloco de mensagens do servidor (SMB) fornece a base para a partilha de ficheiros e impressão da Microsoft e muitas outras operações de networking, como a administração remota do Windows. Para evitar ataques man-in-the-Middle que modificam pacotes SMB em trânsito, o protocolo SMB dá suporte à assinatura digital de pacotes SMB. Esta definição de política determina se o componente do cliente SMB tenta negociar a assinatura de pacotes SMB quando se conecta a um servidor SMB. Se esta definição estiver ativada, o cliente da rede Microsoft pedirá ao servidor para fazer a assinatura do pacote SMB após a configuração da sessão. Se a assinatura de pacotes tiver sido ativada no servidor, a assinatura de pacotes será negociada. Se esta política for desativada, o cliente SMB nunca negociará a assinatura do pacote SMB.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067319)
 
   **Padrão**: Sim
 
-- **Bloquear logon remoto com senha em branco**:  
-  Essa configuração de segurança determina se as contas locais que não são protegidas por senha podem ser usadas para fazer logon de locais diferentes do console do computador físico. Se habilitada, as contas locais que não são protegidas por senha devem usar o teclado do computador para fazer logon.
+- **Comportamento de elevação do administrador:**  
+  Esta definição de política controla o comportamento do pedido de elevação para os administradores. As opções são:
 
-  *Aviso*: os computadores que não estão em locais fisicamente seguros sempre devem impor políticas de senha forte para todas as contas de usuário locais. Caso contrário, qualquer pessoa com acesso físico ao computador pode fazer logon usando uma conta de usuário que não tenha uma senha. Isso é especialmente importante para computadores portáteis.
+  - *Elevar sem pedir -* Permite que contas privilegiadas façam uma operação que requer elevação sem necessidade de consentimento ou credenciais. Nota: Utilize esta opção apenas nos ambientes mais constrangidos.
 
-  Se você aplicar essa política de segurança ao grupo everyone, ninguém poderá fazer logon por meio de Serviços de Área de Trabalho Remota. Essa configuração não afeta os logons que usam contas de domínio. É possível que os aplicativos que usam logons interativos remotos ignorem essa configuração.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067219)
+  - *Solicita-te credenciais no ambiente* de trabalho seguro - Quando uma operação requer elevação de privilégios, o utilizador é solicitado no ambiente de trabalho seguro para introduzir um nome de utilizador privilegiado e uma palavra-passe. Se o utilizador introduzir credenciais válidas, a operação continua com o maior privilégio disponível do utilizador.
+
+  - *Solicitação para consentimento no ambiente* de trabalho seguro - Quando uma operação requer elevação de privilégio, o utilizador é solicitado no ambiente de trabalho seguro para selecionar licença ou negar. Se o utilizador selecionar licença, a operação continua com o maior privilégio disponível do utilizador.
+
+  - *Solicitação de credenciais* - Quando uma operação requer elevação de privilégio, o utilizador é solicitado a introduzir um nome de utilizador administrativo e senha. Se o utilizador introduzir credenciais válidas, a operação continua com o privilégio aplicável.
+
+  - *Solicitação de consentimento* - Quando uma operação requer elevação de privilégio, o utilizador é solicitado a selecionar licença ou negar. Se o utilizador selecionar licença, a operação continua com o maior privilégio disponível do utilizador.
+
+  - *Solicitação de consentimento para binários não Windows* - Quando uma operação para uma aplicação não Microsoft requer elevação de privilégio, o utilizador é solicitado no ambiente de trabalho seguro para selecionar licença ou negar. Se o utilizador selecionar licença, a operação continua com o maior privilégio disponível do utilizador.
+
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067215)
+
+  **Predefinição**: Solicitação para consentimento no ambiente de trabalho seguro
+
+- **Segurança mínima de sessão para clientes baseados em NTLM SSP:**  
+  Esta definição de segurança permite que um cliente exija a negociação de encriptação de 128 bits e segurança de sessão NTLMv2. Estes valores dependem do valor de definição de nível de segurança do Lan Manager Authentication Level. As opções são:
+
+  - Exigir segurança da *sessão NTLMv2* - A ligação falhará se o protocolo NTLMv2 não for negociado.
+
+  - *Requerer encriptação de 128 bits* - A ligação falhará se a encriptação forte (128 bits) não for negociada.
+
+  - *Exija encriptação NTLMv2 e 128 bits*.
+
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067324)
+
+  **Predefinição**: Requerer encriptação NTLM V2 128
+
+- Comportamento inteligente de **remoção de cartões:**  
+  Esta definição de segurança determina o que acontece quando o cartão inteligente para um utilizador ligado é removido do leitor de cartões inteligentes. As opções são:
+
+  - *Sem ação.*
+
+  - *Lock Workstation* - A estação de trabalho fica bloqueada quando o cartão inteligente é removido, permitindo que os utilizadores saiam da área, levem consigo o seu cartão inteligente e mantenham ainda uma sessão protegida.
+
+  - *Force Logoff* - o utilizador é automaticamente desligado quando o cartão inteligente é removido.
+
+  - *Desconecte a sessão de ambiente* de trabalho remoto - A remoção do cartão inteligente desliga a sessão sem desligar o utilizador. Isto permite ao utilizador inserir o cartão inteligente e retomar a sessão mais tarde, ou em outro computador equipado com cartão inteligente, sem ter de voltar a iniciar sessão. Se a sessão for local, esta política funciona da mesma forma que Bloquear Estação de Trabalho.
+
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067331)
+
+  **Padrão**: Bloquear a estação de trabalho
+
+- **Bloqueie a enumeração anónima das contas e ações da SAM:**  
+  Esta definição de segurança determina se permite a enumeração anónima das contas e ações da SAM. O Windows permite que utilizadores anónimos façam certas atividades, tais como enumerar os nomes das contas de domínio e das partilhas de rede. Isto é conveniente, por exemplo, quando um administrador quer conceder acesso aos utilizadores num domínio de confiança que não mantenha uma confiança recíproca. Se não quiser permitir a enumeração anónima das contas e ações da SAM, então der essa política a *Sim*.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067191)
 
   **Padrão**: Sim
 
-- **Comportamento de prompt de elevação de usuário padrão**:  
-  Essa configuração de política controla o comportamento da solicitação de elevação para usuários padrão.
+- **Bloqueie o início remoto com senha em branco:**  
+  Esta definição de segurança determina se as contas locais que não estão protegidas podem ser usadas para iniciar sessão a partir de outros locais que não a consola de computador físico. Se ativadas, as contas locais que não estejam protegidas por palavra-passe devem utilizar o teclado do computador para iniciar sessão.
 
-  - *Negar automaticamente solicitações de elevação* – quando uma operação requer elevação de privilégio, uma mensagem de erro de acesso negado configurável é exibida. Uma empresa que esteja executando áreas de trabalho como usuário padrão pode escolher essa configuração para reduzir as chamadas de suporte técnico.
+  *Aviso*: Os computadores que não se localizam fisicamente devem aplicar políticas de senha fortes para todas as contas de utilizadores locais. Caso contrário, qualquer pessoa com acesso físico ao computador pode iniciar sessão utilizando uma conta de utilizador que não tenha uma senha. Isto é especialmente importante para computadores portáteis.
 
-  - *Solicitar credenciais na área de trabalho segura* – quando uma operação requer elevação de privilégio, o usuário é solicitado na área de trabalho segura para inserir um nome de usuário e senha diferentes. Se o usuário inserir credenciais válidas, a operação continuará com o privilégio aplicável.
-
-  - *Solicitar credenciais* – quando uma operação requer elevação de privilégio, o usuário é solicitado a inserir um nome de usuário administrativo e uma senha. Se o usuário inserir credenciais válidas, a operação continuará com o privilégio aplicável.
-
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067183)
-
-  **Padrão**: negar automaticamente solicitações de elevação
-
-- **Exigir modo de aprovação de administrador para administradores**:  
-  Essa configuração de política controla o comportamento de todas as configurações de política de controle de conta de usuário (UAC) para o computador. Se você alterar essa configuração de política, deverá reiniciar o computador. As opções são:
-
-  - *Não configurado* -o modo de aprovação de administrador e todas as configurações de política de UAC relacionadas estão desabilitados. Observação: se essa configuração de política estiver desabilitada, a central de segurança o notificará de que a segurança geral do sistema operacional foi reduzida.
-
-  - *Sim* – o modo de aprovação de administrador está habilitado. Essa política deve ser habilitada e as configurações de política de UAC relacionadas devem ser definidas adequadamente para permitir que a conta de administrador interna e todos os outros usuários que sejam membros do grupo Administradores sejam executados no modo de aprovação de administrador.
-
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067184)
+  Se aplicar esta política de segurança ao grupo Todos, ninguém pode iniciar sessão através dos Serviços de Ambiente de Trabalho Remoto. Esta definição não afeta os logons que utilizam contas de domínio. É possível aplicações que usam logons interativos remotos para contornar esta configuração.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067219)
 
   **Padrão**: Sim
 
-- **Impedir enumeração anônima de contas Sam**:  
-  Essa configuração de segurança determina quais permissões adicionais são concedidas para conexões anônimas ao computador. O Windows permite que usuários anônimos façam determinadas atividades, como a enumeração de nomes de contas de domínio e compartilhamentos de rede. Isso é conveniente, por exemplo, quando um administrador deseja conceder acesso a usuários em um domínio confiável que não mantém uma confiança recíproca. Essa opção de segurança permite que restrições adicionais sejam colocadas em conexões anônimas da seguinte maneira:
+- **Comportamento de elevação padrão do utilizador:**  
+  Esta definição de política controla o comportamento do pedido de elevação para os utilizadores padrão.
 
-  - *Sim* -não permitir enumeração de contas Sam. Essa opção substitui todos os usuários autenticados nas permissões de segurança para recursos.
+  - *Negar automaticamente os pedidos* de elevação - Quando uma operação requer elevação de privilégio, é apresentada uma mensagem de erro de acesso configurável. Uma empresa que esteja a executar desktops como utilizador padrão pode escolher esta definição para reduzir as chamadas de secretária de ajuda.
 
-  - *Não configurado* -sem restrições adicionais. Conte com as permissões padrão.
+  - *Solicita-te credenciais no ambiente* de trabalho seguro - Quando uma operação requer elevação de privilégios, o utilizador é solicitado no ambiente de trabalho seguro para introduzir um nome e senha de utilizador diferentes. Se o utilizador introduzir credenciais válidas, a operação continua com o privilégio aplicável.
 
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067318)
+  - *Solicitação de credenciais* - Quando uma operação requer elevação de privilégio, o utilizador é solicitado a introduzir um nome de utilizador administrativo e senha. Se o utilizador introduzir credenciais válidas, a operação continua com o privilégio aplicável.
+
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067183)
+
+  **Predefinição**: Negar automaticamente os pedidos de elevação
+
+- **Exigir o modo de aprovação da administração para os administradores:**  
+  Esta definição de política controla o comportamento de todas as definições de política de Controlo de Conta de Utilizador (UAC) para o computador. Se alterar esta definição de política, tem de reiniciar o computador. As opções são:
+
+  - *Não configurado* - O Modo de Aprovação do Administrador e todas as definições de política uac relacionadas são desativadas. Nota: Se esta definição de política for desativada, o Centro de Segurança informa que a segurança global do sistema operativo foi reduzida.
+
+  - *Sim* - O Modo de Aprovação de Administrador está ativado. Esta política deve ser ativada e as definições de política uac relacionadas devem ser definidas adequadamente para permitir que a conta de Administrador incorporado e todos os outros utilizadores que sejam membros do grupo administradores possam funcionar no Modo de Aprovação de Administradores.
+
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067184)
 
   **Padrão**: Sim
 
-- **Permitir chamadas remotas para o Gerenciador de contas de segurança**:  
-  Essa configuração de política permite restringir conexões RPC remotas ao SAM. Se não for selecionado, o descritor de segurança padrão será usado.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067209)
+- **Evitar a enumeração anónima das contas SAM:**  
+  Esta definição de segurança determina que permissões adicionais são concedidas para ligações anónimas ao computador. O Windows permite que utilizadores anónimos façam certas atividades, tais como enumerar os nomes das contas de domínio e das partilhas de rede. Isto é conveniente, por exemplo, quando um administrador quer conceder acesso aos utilizadores num domínio de confiança que não mantenha uma confiança recíproca. Esta opção de segurança permite que sejam colocadas restrições adicionais em ligações anónimas da seguinte forma:
 
-  **Padrão**: *O:bag: Bad: (A;; RC;;; BA)*
+  - *Sim* - Não permita a enumeração das contas SAM. Esta opção substitui todos os utilizadores autenticados nas permissões de segurança para recursos.
 
-- **Use o modo de aprovação de administrador**:  
-  Essa configuração de política controla o comportamento do modo de aprovação de administrador para a conta de administrador interno. As opções são:
+  - *Não configurado* - Sem restrições adicionais. Confie em permissões padrão.
 
-  - *Sim* – a conta de administrador interna usa o modo de aprovação de administrador. Por padrão, qualquer operação que exija elevação de privilégio solicitará que o usuário aprove a operação.
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067318)
 
-  - *Não configurado* -a conta de administrador interno executa todos os aplicativos com privilégio administrativo completo.
+  **Padrão**: Sim
 
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067186)
+- **Permitir chamadas remotas para o gestor de contas**de segurança:  
+  Esta definição de política permite-lhe restringir as ligações remotas de rpc à SAM. Se não for selecionado, o descritor de segurança predefinido é utilizado.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067209)
+
+  **Predefinição**: *O:BAG:BAD:(A;; RC;;; BA)*
+
+- Utilize o **modo de aprovação do administrador:**  
+  Esta definição de política controla o comportamento do Modo de Aprovação de Administradores para a conta de Administrador incorporado. As opções são:
+
+  - *Sim* - A conta de administrador incorporado utiliza o Modo de Aprovação do Administrador. Por predefinição, qualquer operação que exija elevação de privilégios levará o utilizador a aprovar a operação.
+
+  - *Não Configurado* - A conta de Administrador incorporado executa todas as aplicações com pleno privilégio administrativo.
+
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067186)
 
   **Padrão**: Sim
   
-- **Permitir aplicativos de acesso à interface do usuário para locais seguros**:  
-  Essa configuração de política controla se os programas de acessibilidade da interface do usuário (UIAccess ou UIA) podem desabilitar automaticamente a área de trabalho segura para solicitações de elevação usadas por um usuário padrão.
+- **Permitir aplicações de acesso ui para locais seguros:**  
+  Esta definição de política controla se os programas de acessibilidade da interface do utilizador (UIAccess ou UIA) podem desativar automaticamente o ambiente de trabalho seguro para obter indicações de elevação utilizadas por um utilizador padrão.
 
-  - *Sim* -UIA programas, incluindo a assistência remota do Windows, desabilita automaticamente a área de trabalho segura para solicitações de elevação. Se você não desabilitar a configuração de política "controle de conta de usuário: alternar para a área de trabalho segura ao solicitar elevação", os prompts aparecerão na área de trabalho do usuário interativo em vez da área de trabalho segura.
+  - *Sim* - Os programas UIA, incluindo o Windows Remote Assistance, desativam automaticamente o ambiente de trabalho seguro para obter indicações de elevação. Se não desativar a definição de definição de "Controlo de Conta do Utilizador: Mude para o ambiente de trabalho seguro quando pedir elevação", as indicações aparecem no ambiente de trabalho do utilizador interativo em vez do ambiente de trabalho seguro.
 
-  - *Não configurado*:-a área de trabalho segura pode ser desabilitada somente pelo usuário da área de trabalho interativa ou desabilitando a configuração de política "controle de conta de usuário: alternar para a área de trabalho segura ao solicitar elevação".
+  - *Não configurado*: - O ambiente de trabalho seguro só pode ser desativado pelo utilizador do ambiente de trabalho interativo ou desativando a definição de política "User Account Control: Switch para o ambiente de trabalho seguro quando pedir elevação".
 
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067185)
-
-  **Padrão**: Sim
-
-- **Detectar instalações de aplicativos e solicitar elevação**:  
-  Essa configuração de política controla o comportamento da detecção de instalação do aplicativo para o computador. As opções são:
-
-  - *Habilitado* – quando um pacote de instalação de aplicativo é detectado e requer elevação de privilégio, o usuário é solicitado a inserir um nome de usuário administrativo e uma senha. Se o usuário inserir credenciais válidas, a operação continuará com o privilégio aplicável.
-
-  - *Desabilitado* -os pacotes de instalação de aplicativos não são detectados e são solicitados a fornecer elevação. As empresas que executam desktops de usuário padrão e usam tecnologias de instalação delegadas, como o Política de Grupo de Instalação de Software ou o Systems Management Server (SMS), devem desabilitar essa configuração de política. Nesse caso, a detecção do instalador é desnecessária.
-
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067208)
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067185)
 
   **Padrão**: Sim
 
-- **Impedir o armazenamento do valor de hash do LAN Manager na próxima alteração de senha**:  
-  Essa configuração de segurança determina se, na próxima alteração de senha, o valor de hash do LM (LAN Manager) para a nova senha será armazenado. O hash do LM é relativamente fraco e propenso a ataques, em comparação com o hash do Windows NT criptograficamente mais forte. Como o hash do LM é armazenado no computador local no banco de dados de segurança, as senhas podem ser comprometidas se o banco de dados de segurança for atacado.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067213)
+- **Detete as instalações de aplicação e o pedido de elevação:**  
+  Esta definição de política controla o comportamento da deteção de instalação de aplicação para o computador. As opções são:
+
+  - *Ativado* - Quando é detetado um pacote de instalação de aplicação que requer elevação de privilégios, o utilizador é solicitado a introduzir um nome administrativo de utilizador e uma palavra-passe. Se o utilizador introduzir credenciais válidas, a operação continua com o privilégio aplicável.
+
+  - *Desativado* - Os pacotes de instalação de aplicação não são detetados e solicitados para elevação. As empresas que estão a executar desktops de utilizadores padrão e utilizam tecnologias de instalação delegadas, como a Instalação de Software de Política de Grupo ou o Servidor de Gestão de Sistemas (SMS) devem desativar esta definição de política. Neste caso, a deteção do instalador é desnecessária.
+
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067208)
 
   **Padrão**: Sim
 
-- **Virtualizar falhas de gravação de arquivo e registro para locais por usuário**:  
-  Essa configuração de política controla se as falhas de gravação do aplicativo são redirecionadas para os locais do registro e do sistema de arquivos definidos. Essa configuração de política reduz os aplicativos que são executados como administrador e grava dados de aplicativo em tempo de execução em *% ProgramFiles%* , *% windir%* , *%windir%\System32*ou *HKLM\Software*.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067321)
+- **Evite armazenar o valor hash do gestor lan na próxima alteração de palavra-passe:**  
+  Esta definição de segurança determina se, na próxima alteração de senha, o lan manager (LM) valor hash para a nova palavra-passe é armazenado. O hash LM é relativamente fraco e propenso a atacar, em comparação com o hash nt do Windows NT criptograficamente mais forte. Como o hash LM está armazenado no computador local na base de dados de segurança, as palavras-passe podem ser comprometidas se a base de dados de segurança for atacada.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067213)
 
   **Padrão**: Sim
 
-## <a name="ms-security-guide"></a>Guia de segurança da MS
+- Virtualize falhas de escrita de **ficheiros e registos por locais de utilizador:**  
+  Esta definição de política controla se as falhas de escrita da aplicação são redirecionadas para locais definidos de registo e sistema de ficheiros. Esta definição de política atenua aplicações que funcionam como administrador e escrevem dados de aplicações a tempo de execução para *%ProgramFiles%* , *%Windir%* , *%Windir%\system32*, ou *HKLM\Software*.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067321)
 
-Para obter mais informações, consulte [Policy CSP-MSSecurityGuide](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-mssecurityguide) na documentação do Windows.
+  **Padrão**: Sim
 
-- **Aplicar restrições de UAC a contas locais no logon de rede**:  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067188)
+## <a name="microsoft-defender"></a>Microsoft Defender
 
-  **Padrão**: habilitado
+Para mais informações, consulte [Policy CSP - Defender](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender) na documentação do Windows.
 
-- **Configuração inicial do driver de cliente SMB v1**:  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067214)
+- **Digitalizar mensagens de correio de entrada:**  
+  Permite ou proíbe a digitalização de e-mail.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067116)
 
-  **Padrão**: Driver desabilitado
+  **Padrão**: Sim
 
-- **Servidor SMB v1**:  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067190)
+- **As aplicações de escritório lançam o tipo de processo infantil:**  
+  As aplicações de escritório não serão autorizadas a criar processos infantis. Isto inclui Word, Excel, PowerPoint, OneNote e Access. Este é um comportamento típico de malware, especialmente para ataques macro-baseados que tentam usar aplicações do Office para lançar ou descarregar executáveis maliciosos.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067121)
 
-  **Padrão**: desabilitado
+  **Predefinição**: Bloco
 
-- **Autenticação Digest**:  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067193)
+- Tipo de consentimento de **submissão da amostra**defensor:  
+  Verifica o nível de consentimento do utilizador no Microsoft Defender para enviar dados. Se o consentimento exigido já tiver sido concedido, o Microsoft Defender submete-os. Caso contrário (e se o utilizador tiver especificado nunca pedir), a UI é lançada para pedir o consentimento do utilizador (quando o Defender/AllowCloudProtection é permitido) antes de enviar dados.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067131)
 
-  **Padrão**: desabilitado
+  **Predefinição**: Enviar amostras seguras automaticamente
 
-- **Manipulação de exceção estruturada substituir proteção**:  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067217)
+- Intervalo de **atualização de assinatura (em horas)** :  
+  Intervalo de atualização de assinatura de defender em horas.
 
-  **Padrão**: habilitado
+  **Padrão**: 4
 
-## <a name="mss-legacy"></a>MSS herdado
+- **Script descarregado tipo de execução**de carga útil:  
+  O script do defender descarregou o tipo de execução da carga útil.
 
-Para obter mais informações, consulte [Policy CSP-MSSLegacy](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-msslegacy) na documentação do Windows.
+  **Predefinição**: Bloco
+  
+- Evite o tipo de **roubo de credenciais:**  
+  A Microsoft Defender Credential Guard usa segurança baseada em virtualização para isolar segredos para que apenas o software privilegiado do sistema possa aceder aos mesmos. O acesso não autorizado a estes segredos pode levar a ataques de roubo de credenciais, como pass-the-Hash ou Pass-The-Ticket. A Microsoft Defender Credential Guard impede estes ataques protegendo as hashes de senha NTLM, os bilhetes de concessão de bilhetes Kerberos e credenciais armazenadas por aplicações como credenciais de domínio.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067065)
+  
+  **Padrão**: Ativar
 
-- **Nível de proteção de roteamento de origem IP da rede**:  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067220)
+- **Tipo de execução de conteúdo de e-mail:**  
+  Esta regra bloqueia os seguintes tipos de ficheiros de executar ou lançar a partir de um e-mail visto no Microsoft Outlook ou no webmail (como Gmail.com ou Outlook.com): Ficheiros executáveis (tais como ficheiros de script .exe, .dll ou .scr) (tais como powerShell .ps, VisualBasic .vbs, ou ficheiro sinuoso do Script ScriptScript .js. Script.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067063)
 
-  **Padrão**: proteção mais alta  
+  **Predefinição**: Bloco
 
-- A **rede ignora as solicitações de liberação de nome NetBIOS, exceto os servidores WINS**:  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067218)
+::: zone-end
+::: zone pivot="mdm-may-2019"
 
-  **Padrão**: habilitado
+- Lançamento do **leitor adobe num processo infantil:**  
+  **Padrão**: Ativar
 
-- **Nível de proteção de roteamento de origem IPv6 da rede**:  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067216)
+::: zone-end
+::: zone pivot="mdm-preview,mdm-may-2019"
 
-  **Padrão**: proteção mais alta
+- **Proteção da rede:**  
+  Esta política permite-lhe ativar a proteção da rede (block/audit) ou desligar no Microsoft Defender Exploit Guard. A proteção de rede é uma funcionalidade do Microsoft Defender Exploit Guard que protege os funcionários que usam qualquer aplicação para aceder a esquemas de phishing, sites de hospedagem de exploração e conteúdo malicioso na Internet. Isto inclui impedir que os navegadores de terceiros se conectem a sites perigosos. O tipo de valor é inteiro. Se ativar esta definição, a proteção da rede é ativada e os funcionários não podem desligá-lo. O seu comportamento pode ser controlado pelas seguintes opções: Bloquear e Auditar. Se ativar esta política com a opção "Block", os utilizadores e aplicações estão impedidos de se ligarem a domínios perigosos. Pode ver esta atividade no Microsoft Defender Security Center. Se ativar esta política com a opção "Auditoria", os utilizadores/aplicações não serão impedidos de se ligarem a domínios perigosos. No entanto, ainda vai ver esta atividade no Microsoft Defender Security Center. Se desativar esta política, os utilizadores/aplicações não serão impedidos de se ligarem a domínios perigosos. Não verá nenhuma atividade de rede no Microsoft Defender Security Center. Se não configurar esta política, o bloqueio da rede é desativado por defeito.  
+  [Mais informações](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/enable-network-protection)
 
-- **Redirecionamentos de ICMP de rede substituem o OSPF gerado**:  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067326)
+  **Padrão**: Ativar
 
-  **Padrão**: desabilitado
+- Dia de **exame de horário do defender:**  
+  O defender marca o dia da varredura.
 
-## <a name="power"></a>Ligar/desligar
+  **Padrão**: Todos os dias
 
-Para obter mais informações, consulte [CSP da política – Power](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power) na documentação do Windows.
+- **Proteção entregue em nuvem:**  
+  Para melhor proteger o seu PC, o Microsoft Defender enviará informações à Microsoft sobre quaisquer problemas que encontre. A Microsoft analisará essa informação, aprenderá mais sobre problemas que afetam o mesmo e outros clientes e oferecerá soluções melhoradas.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067039)
 
-- **Exigir senha ao ativar enquanto conectado**:  
-  Essa configuração de política especifica se o usuário é solicitado a fornecer uma senha quando o sistema sai do estado de suspensão. Se você habilitar ou não definir essa configuração de política, o usuário será solicitado a fornecer uma senha quando o sistema for retomado do estado de suspensão. Se você desabilitar essa configuração de política, o usuário não será solicitado a fornecer uma senha quando o sistema for retomado do estado de suspensão.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067221)
+  **Padrão**: Sim  
 
-  **Padrão**: habilitado
+- **Defender ação de aplicações potencialmente indesejadas:**  
+  A funcionalidade de proteção de aplicações potencialmente indesejadas (PUA) no Antivírus Do Microsoft Defender pode identificar e bloquear as API de descarregar e instalar em pontos finais da sua rede. Estas aplicações não são consideradas vírus, malware ou outros tipos de ameaças, mas podem fazer ações em pontos finais que afetam negativamente o seu desempenho ou uso. A PUA também pode referir-se a aplicações que são consideradas como tendo uma má reputação. O comportamento típico da PUA inclui: Vários tipos de software que agregam a injeção de anúncios em navegadores web O condutor e os otimizadores de registo que detetam problemas, solicitam o pagamento para corrigir os erros, mas permanecem no ponto final e não fazem alterações ou otimizações (também conhecidas como " programas antivírus desonestos). Estas aplicações podem aumentar o risco de a sua rede estar infetada com malware, fazer com que as infeções por malware sejam mais difíceis de identificar e podem desperdiçar recursos de TI na limpeza das aplicações.  
+  [Mais informações](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-puaprotection)
 
-- **Estados de espera quando estiverem em suspensão enquanto estiver na bateria**:  
-  Essa configuração de política gerencia se o Windows pode usar Estados de espera ao colocar o computador em estado de suspensão. Se você habilitar ou não definir essa configuração de política, o Windows usará Estados de espera para colocar o computador em estado de suspensão. Se você desabilitar essa configuração de política, os Estados de espera (S1-S3) não serão permitidos.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067195)
+  **Predefinição**: Bloco  
 
-  **Padrão**: desabilitado
+- **Script obfuscated macro código tipo:**  
+  Malware e outras ameaças podem tentar obstar ou esconder o seu código malicioso em alguns ficheiros de script. Esta regra impede que os scripts que parecem estar obfuscados de correr.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067026)
 
-- **Estados de espera quando conectados em suspensão**:  
-  Essa configuração de política gerencia se o Windows pode usar Estados de espera ao colocar o computador em estado de suspensão. Se você habilitar ou não definir essa configuração de política, o Windows usará Estados de espera para colocar o computador em estado de suspensão. Se você desabilitar essa configuração de política, os Estados de espera (S1-S3) não serão permitidos.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067196)
+  **Predefinição**: Bloco
 
-  **Padrão**: desabilitado
+- **Digitalizar unidades amovíveis durante uma varredura completa:**  
+  Permite ao Microsoft Defender procurar software malicioso e indesejado em unidades amovíveis (por exemplo, pen drives) durante uma varredura completa. O Microsoft Defender Antivírus digitaliza todos os ficheiros em dispositivos USB antes da execução.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067036)
 
-- **Exigir senha ao ativar enquanto estiver na bateria**:  
-  Essa configuração de política especifica se o usuário é solicitado a fornecer uma senha quando o sistema sai do estado de suspensão. Se você habilitar ou não definir essa configuração de política, o usuário será solicitado a fornecer uma senha quando o sistema for retomado do estado de suspensão. Se você desabilitar essa configuração de política, o usuário não será solicitado a fornecer uma senha quando o sistema for retomado do estado de suspensão.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067322)
+  **Padrão**: Sim  
 
-  **Padrão**: habilitado
+- **Digitale ficheiros de arquivo:**  
+  Os ficheiros de arquivo do Defender scan.
+
+  **Padrão**: Sim
+
+- **Monitorização do comportamento:**  
+  Permite ou proíbe a funcionalidade de Monitorização de Comportamento do Microsoft Defender. Incorporados no Windows 10, estes sensores recolhem e processam sinais comportamentais do sistema operativo e enviam estes dados de sensores para a sua instância privada, isolada e cloud do Microsoft Defender ATP.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067111)
+
+  **Padrão**: Sim
+
+- **Scaneie ficheiros abertos a partir de pastas de rede:**  
+  Se os ficheiros forem apenas de leitura, o utilizador não será capaz de remover qualquer malware detetado.
+
+  **Padrão**: Sim
+
+- Tipo de **processo USB não confiável:**  
+  Com esta regra, os administradores podem impedir que ficheiros executáveis não assinados ou não confiáveis sejam executados a partir de unidades amovíveis USB, incluindo cartões SD.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067100)
+
+  **Predefinição**: Bloco
+
+- **Aplicações de escritório outros tipos de injeção**de processo:  
+  As aplicações de escritório, incluindo Word, Excel, PowerPoint e OneNote, não podem injetar código noutros processos. Isto é normalmente usado por malware para executar código malicioso numa tentativa de esconder a atividade de motores de digitalização antivírus.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067019)
+
+  **Predefinição**: Bloco
+
+- **O código macro do escritório permite o tipo de importações Win32:**  
+  O malware pode usar o código macro nos ficheiros do Office para importar e carregar DLLs Win32, que é usado para fazer chamadas API para permitir mais infeções em todo o sistema. Esta regra tenta bloquear ficheiros do Office que contêm código macro que pode importar DLLs Win32. Isto inclui Word, Excel, PowerPoint e OneNote.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067130)
+
+  **Predefinição**: Bloco
+
+- **Nível de bloco de nuvem de defensor:**  
+  Nível de bloco de nuvem de defensor.
+
+  **Predefinição**: Não configurado
+
+- **Monitorização em tempo real:**  
+  Defender requer monitorização em tempo real.
+
+  **Padrão**: Sim
+
+::: zone-end
+::: zone pivot="mdm-may-2019"
+
+- **Aplicações de comunicação de escritório saem num processo infantil:**  
+  **Padrão**: Ativar
+
+::: zone-end
+::: zone pivot="mdm-preview,mdm-may-2019"
+
+- **Aplicações de escritório executáveis criação de conteúdo ou tipo**de lançamento:  
+  Esta regra visa comportamentos típicos usados por addons e scripts suspeitos e maliciosos (extensões) que criam ou lançam ficheiros executáveis. Esta é uma técnica típica de malware. As extensões estão bloqueadas de serem usadas por aplicações do Office. Normalmente, estas extensões utilizam o Anfitrião de Scripts windows (. Ficheiros WSH) para executar scripts que automatizam determinadas tarefas ou fornecem funcionalidades adicionais criadas pelo utilizador.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067108)
+
+  **Predefinição**: Bloco
+
+## <a name="ms-security-guide"></a>Guia de Segurança Sra.
+
+Para mais informações, consulte [Policy CSP - MSSecurityGuide](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-mssecurityguide) na documentação do Windows.
+
+- **Aplicar restrições uAC às contas locais no início da rede:**  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067188)
+
+  **Predefinição**: Ativado
+
+- Configuração de início do **controlador do cliente SMB v1:**  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067214)
+
+  **Predefinição**: Controlador deficiente
+
+- **Servidor SMB v1:**  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067190)
+
+  **Predefinição**: Desativado
+
+- **Autenticação de digestão:**  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067193)
+
+  **Predefinição**: Desativado
+
+- **Proteção por exceção estruturada:**  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067217)
+
+  **Predefinição**: Ativado
+
+## <a name="mss-legacy"></a>Legado da Sra.
+
+Para mais informações, consulte [Policy CSP - MSSLegacy](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-msslegacy) na documentação do Windows.
+
+- **Nível de proteção de encaminhamento de fonte IP**da rede:  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067220)
+
+  **Padrão**: Proteção mais elevada  
+
+- **A rede ignora os pedidos de lançamento do nome NetBIOS, exceto nos servidores WINS:**  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067218)
+
+  **Predefinição**: Ativado
+
+- **Nível de proteção de encaminhamento de fonte IPv6:**  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067216)
+
+  **Padrão**: Proteção mais elevada
+
+- **Rede ICMP redireciona os OSPF gerados:**  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067326)
+
+  **Predefinição**: Desativado
+
+## <a name="power"></a>Energia
+
+Para mais informações, consulte [Policy CSP - Power](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power) in the Windows documentação.
+
+- **Exija uma palavra-passe no velório enquanto está ligado:**  
+  Esta definição de política especifica se o utilizador for solicitado para obter uma senha quando o sistema recomeçar do sono. Se ativar ou não configurar esta definição de política, o utilizador é solicitado para obter uma palavra-passe quando o sistema recomeçar a partir do sono. Se desativar esta definição de política, o utilizador não é solicitado para obter uma palavra-passe quando o sistema retoma do sono.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067221)
+
+  **Predefinição**: Ativado
+
+- **Estados de espera ao dormir durante**a bateria:  
+  Esta definição de política gere se o Windows puder utilizar estados de espera ao colocar o computador em estado de sono. Se ativar ou não configurar esta definição de política, o Windows utiliza estados de espera para colocar o computador em estado de sono. Se desativar esta definição de política, os Estados de prontidão (S1-S3) não são permitidos.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067195)
+
+  **Predefinição**: Desativado
+
+- **Estados de espera ao dormir em estado de ligação ligada:**  
+  Esta definição de política gere se o Windows puder utilizar estados de espera ao colocar o computador em estado de sono. Se ativar ou não configurar esta definição de política, o Windows utiliza estados de espera para colocar o computador em estado de sono. Se desativar esta definição de política, os Estados de prontidão (S1-S3) não são permitidos.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067196)
+
+  **Predefinição**: Desativado
+
+- **Exija uma senha na vigília enquanto está na bateria:**  
+  Esta definição de política especifica se o utilizador for solicitado para obter uma senha quando o sistema recomeçar do sono. Se ativar ou não configurar esta definição de política, o utilizador é solicitado para obter uma palavra-passe quando o sistema recomeçar a partir do sono. Se desativar esta definição de política, o utilizador não é solicitado para obter uma palavra-passe quando o sistema retoma do sono.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067322)
+
+  **Predefinição**: Ativado
 
 ::: zone-end
 ::: zone pivot="mdm-may-2019"
 
 ## <a name="remote-assistance"></a>Assistência Remota
 
-Para obter mais informações, consulte [Policy CSP-RemoteAssistance](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-remoteassistance#remoteassistance-solicitedremoteassistance) na documentação do Windows.
+Para mais informações, consulte [Policy CSP - RemoteAssistance](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-remoteassistance#remoteassistance-solicitedremoteassistance) na documentação do Windows.
 
-- **Assistência remota solicitada**:  
-  Essa configuração de política permite ativar ou desativar a assistência remota solicitada (solicitar) neste computador.
+- **Assistência remota solicitada:**  
+  Esta definição de política permite-lhe ligar ou desligar a Assistência Remota Solicitada (Pedir) assistência remota neste computador.
   
-  - *Se você habilitar essa configuração de política*, os usuários neste computador poderão usar o email ou a transferência de arquivos para pedir ajuda a alguém. Além disso, os usuários podem usar programas de mensagens instantâneas para permitir conexões com este computador, e você pode definir configurações de assistência remota adicionais.
+  - *Se ativar esta definição*de política, os utilizadores deste computador podem usar e-mail ou transferência de ficheiros para pedir ajuda a alguém. Além disso, os utilizadores podem utilizar programas de mensagens instantâneas para permitir ligações a este computador, e pode configurar definições adicionais de Assistência Remota.
 
-  - *Se você desabilitar essa configuração de política*, os usuários neste computador não poderão usar o email ou a transferência de arquivos para pedir ajuda a alguém. Além disso, os usuários não podem usar programas de mensagens instantâneas para permitir conexões com este computador.
+  - *Se desativar esta definição*de política, os utilizadores deste computador não podem usar e-mail ou transferência de ficheiros para pedir ajuda a alguém. Além disso, os utilizadores não podem usar programas de mensagens instantâneas para permitir ligações a este computador.
 
-  - *Se você não definir essa configuração de política*, os usuários poderão ativar ou desativar a assistência remota solicitada (solicitar) em Propriedades do sistema no painel de controle. Os usuários também podem configurar as configurações de assistência remota.
+  - *Se não configurar esta definição*de política, os utilizadores podem ligar ou desligar a Assistência Remota solicitada (Pedir) a si próprias em Propriedades do Sistema no Painel de Controlo. Os utilizadores também podem configurar as definições de Assistência Remota.
 
-  Se você habilitar essa configuração de política, terá duas maneiras de permitir que os auxiliares forneçam assistência remota: "permitir que os auxiliares apenas vejam o computador" ou "permitir que os auxiliares controlem o computador remotamente". A configuração de política "tempo máximo de tíquete" define um limite na quantidade de tempo que um convite de assistência remota criado usando email ou transferência de arquivos pode permanecer aberto. A configuração "selecionar o método para enviar convites por email" especifica qual padrão de email usar para enviar convites de assistência remota. Dependendo do seu programa de email, você pode usar o padrão *mailto* (o destinatário do convite se conecta por meio de um link da Internet) ou o padrão SMAPI (Simple MAPI) (o convite é anexado à mensagem de email). Essa configuração de política não está disponível no Windows Vista porque a SMAPI é o único método com suporte. Se você habilitar essa configuração de política, também deverá habilitar as exceções de firewall apropriadas para permitir comunicações de assistência remota.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067198)
+  Se ativar esta definição de política, tem duas formas de permitir que os ajudantes forneçam assistência remota: "Permita que os ajudantes apenas vejam o computador" ou "Permita que os ajudantes controlem remotamente o computador." A definição da política "Tempo máximo de bilhete" estabelece um limite no tempo que um convite de Assistência Remota criado através da utilização de e-mail ou transferência de ficheiros pode permanecer aberto. A definição "Selecione o método de envio de convites por e-mail" especifica qual a norma de e-mail a utilizar para enviar convites de assistência remota. Dependendo do seu programa de e-mail, pode utilizar a norma *Mailto* (o destinatário do convite conecta-se através de um link de Internet) ou a norma SMAPI (MapI simples) (o convite está anexado à sua mensagem de e-mail). Esta definição de política não está disponível no Windows Vista porque o SMAPI é o único método suportado. Se ativar esta definição de política, também deve permitir exceções de firewall adequadas para permitir comunicações de assistência remota.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067198)
 
-  **Padrão**: desabilitar a assistência remota
+  **Predefinição**: Desativar a assistência remota
 
-  Quando definido para *habilitar a assistência remota*, defina as seguintes configurações adicionais:
+  Quando programado para ativar a *assistência remota,* configure as seguintes definições adicionais:
 
-  - **Permissão solicitada da assistência remota**:  
-    **Padrão**: exibição
+  - **A assistência remota solicitou autorização:**  
+    **Padrão**: Visualização
 
-  - **Valor do tempo máximo de tíquete**:  
-    **Padrão**: *não configurado*
+  - Valor máximo do **tempo de bilhete:**  
+    **Predefinição**: *Não configurado*
 
-  - **Período de tempo máximo de tíquete**:  
-    **Padrão**: minutos
+  - Período máximo de tempo de **bilhete:**  
+    **Predefinição**: Minutos
 
-  - **Método de convite por email**:  
+  - **Método de convite por e-mail:**  
     **Padrão**: MAPI simples
 
 ::: zone-end
@@ -1598,567 +1803,362 @@ Para obter mais informações, consulte [Policy CSP-RemoteAssistance](https://do
 
 ## <a name="remote-desktop-services"></a>Serviços de Ambiente de Trabalho Remoto
 
-Para obter mais informações, consulte [Policy CSP-RemoteDesktopServices](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-remotedesktopservices) na documentação do Windows.
+Para mais informações, consulte [Policy CSP - RemoteDesktopServices](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-remotedesktopservices) na documentação do Windows.
 
-- **Bloquear salvamento de senha**:  
-  Controla se as senhas podem ser salvas neste computador de Conexão de Área de Trabalho Remota. Se você habilitar essa configuração, a caixa de seleção Salvar senha no Conexão de Área de Trabalho Remota será desabilitada e os usuários não poderão salvar senhas. Quando um usuário abre um arquivo RDP usando Conexão de Área de Trabalho Remota e salva suas configurações, qualquer senha que anteriormente existia no arquivo RDP é excluída. Se você desabilitar essa configuração ou deixá-la não configurada, o usuário poderá salvar senhas usando Conexão de Área de Trabalho Remota.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067301)
+- **Bloqueie a poupança de palavra-passe:**  
+  Controla se as palavras-passe podem ser guardadas neste computador a partir da Ligação remota de ambiente de trabalho. Se ativar esta definição da caixa de verificação de poupança de palavras-passe em Remote Desktop Connection está desativada e os utilizadores não podem guardar palavras-passe. Quando um utilizador abre um ficheiro RDP utilizando a Ligação remota de ambiente de trabalho e guarde as suas definições, qualquer palavra-passe que existiu anteriormente no ficheiro RDP é eliminada. Se desativar esta definição ou a deixar não configurada, o utilizador pode guardar palavras-passe utilizando a Ligação remota de ambiente de trabalho.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067301)
 
-   **Padrão**: habilitado
+   **Predefinição**: Ativado
 
-- **Comunicação segura de RPC**:  
-  Especifica se um servidor de Host da Sessão da Área de Trabalho Remota requer comunicação de RPC segura com todos os clientes ou permite comunicação não segura. Você pode usar essa configuração para reforçar a segurança da comunicação RPC com clientes, permitindo apenas solicitações autenticadas e criptografadas. Se o status for definido como habilitado, Serviços de Área de Trabalho Remota aceitará solicitações de clientes RPC que dão suporte a solicitações seguras e não permitirá a comunicação não segura com clientes não confiáveis. Se o status for definido como desabilitado, Serviços de Área de Trabalho Remota sempre solicitará segurança para todo o tráfego RPC. No entanto, a comunicação não segura é permitida para clientes RPC que não respondem à solicitação. Se o status for definido como não configurado, a comunicação não segura será permitida. Observação: a interface RPC é usada para administrar e configurar Serviços de Área de Trabalho Remota.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067248)
+- **Comunicação RPC segura:**  
+  Especifica se um servidor de anfitrião de sessão de ambiente de trabalho remoto requer uma comunicação RPC segura com todos os clientes ou permite uma comunicação não segura. Pode utilizar esta definição para reforçar a segurança da comunicação RPC com os clientes, permitindo apenas pedidos autenticados e encriptados. Se o estado for definido para Enabled, remote Desktop Services aceita pedidos de clientes RPC que suportam pedidos seguros, e não permite comunicação não segura com clientes não confiáveis. Se o estado for definido para Desativado, os Serviços de Ambiente de Trabalho Remoto sempre solicitam segurança para todo o tráfego de RPC. No entanto, é permitida uma comunicação não segura para clientes RPC que não respondam ao pedido. Se o estado estiver definido para não configurado, é permitida uma comunicação não segura. Nota: A interface RPC é utilizada para administrar e configurar serviços de ambiente de trabalho remotos.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067248)
 
-  **Padrão**: habilitado
+  **Predefinição**: Ativado
 
-- **Bloquear redirecionamento de unidade**:  
-  Essa configuração de política especifica se é para impedir o mapeamento de unidades cliente em uma sessão de Serviços de Área de Trabalho Remota (redirecionamento de unidade). Por padrão, um servidor Host da Sessão RD mapeia automaticamente as unidades do cliente após a conexão. As unidades mapeadas aparecem na árvore de pastas de sessões no explorador de arquivos ou no computador no formato *\<letra_da_unidade >* em *\<ComputerName >* . Você pode usar essa configuração de política para substituir esse comportamento. Se você habilitar essa configuração de política, o redirecionamento de unidade de cliente não será permitido em sessões de Serviços de Área de Trabalho Remota, e o redirecionamento de cópia de arquivo da área de transferência não será permitido em computadores que executam o Windows Server 2003, Windows 8 e Windows XP. Se você desabilitar essa configuração de política, o redirecionamento de unidade de cliente sempre será permitido. Além disso, o redirecionamento de cópia de arquivo da área de transferência sempre será permitido se o redirecionamento de área de transf for permitido. Se você não definir essa configuração de política, o redirecionamento de unidade de cliente e de cópia de arquivo da área de transferência não serão especificados no nível de Política de Grupo.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067197)
+- **Redirecionamento da unidade de bloqueio:**  
+  Esta definição de política especifica se deve impedir o mapeamento das unidades do cliente numa sessão de Serviços de Ambiente de Trabalho Remoto (redirecionamento de unidade). Por predefinição, um servidor rd Session Host mapeia o cliente automaticamente após a ligação. As unidades mapeadas aparecem na pasta da sessão no File Explorer ou no Computador no formato *\<driveletter>* em *\<nome de computador>* . Pode usar esta definição de política para anular este comportamento. Se ativar esta definição de política, a redirecção de unidade do cliente não é permitida nas sessões de Serviços de Ambiente de Trabalho Remoto, e a redirecção de cópias de ficheiros de clipboard não é permitida em computadores que executam o Windows Server 2003, Windows 8 e Windows XP. Se desativar esta definição de política, a reorientação da unidade do cliente é sempre permitida. Além disso, a redirecção da cópia do ficheiro de clipboard é sempre permitida se for permitida a reorientação da área de clipboard. Se não configurar esta definição de política, a redirecção de direção do cliente e a redirecção da cópia de ficheiros de clipboard não são especificadas ao nível da Política de Grupo.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067197)
 
-  **Padrão**: habilitado
+  **Predefinição**: Ativado
 
-- **Solicitar senha na conexão**:  
-  Essa configuração de política especifica se Serviços de Área de Trabalho Remota sempre solicita uma senha ao cliente durante a conexão. Você pode usar essa configuração para impor um prompt de senha para os usuários que fazem logon no Serviços de Área de Trabalho Remota, mesmo que eles já tenham fornecido a senha no cliente do Conexão de Área de Trabalho Remota. Por padrão, Serviços de Área de Trabalho Remota permite que os usuários façam logon automaticamente digitando uma senha no cliente Conexão de Área de Trabalho Remota. Se você habilitar essa configuração de política, os usuários não poderão fazer logon automaticamente no Serviços de Área de Trabalho Remota fornecendo suas senhas no cliente Conexão de Área de Trabalho Remota. Ele será solicitado a fornecer uma senha para fazer logon. Se você desabilitar essa configuração de política, os usuários sempre poderão fazer logon no Serviços de Área de Trabalho Remota automaticamente fornecendo suas senhas no cliente Conexão de Área de Trabalho Remota. Se você não definir essa configuração de política, o logon automático não será especificado no nível de Política de Grupo.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067328)
+- **Solicitação para senha de acesso:**  
+  Esta definição de política especifica se os Serviços de Ambiente de Trabalho Remoto supor sempre o cliente para obter uma palavra-passe após a ligação. Pode utilizar esta definição para impor um pedido de senha para os utilizadores que iniciam sessão nos Serviços de Ambiente de Trabalho Remoto, mesmo que já tenham fornecido a palavra-passe no cliente de Ligação remota de ambiente de trabalho. Por predefinição, os Serviços de Ambiente de Trabalho Remoto permitem que os utilizadores iniciem automaticamente o início, inserindo uma palavra-passe no cliente de Ligação remota de ambiente de trabalho. Se ativar esta definição de política, os utilizadores não podem iniciar sessão automaticamente nos Serviços de Ambiente de Trabalho Remoto, fornecendo as suas palavras-passe no cliente de Ligação remota de ambiente de trabalho. são solicitados para que uma senha entre. Se desativar esta definição de política, os utilizadores podem sempre iniciar sessão nos Serviços de Ambiente de Trabalho Remoto sem equei, fornecendo automaticamente as suas palavras-passe no cliente de Ligação remota de ambiente de trabalho. Se não configurar esta definição de política, o logon automático não é especificado ao nível da Política de Grupo.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067328)
 
-  **Padrão**: habilitado
+  **Predefinição**: Ativado
 
-- **Nível de criptografia de conexão do cliente dos serviços de área de trabalho remota**:  
-  Especifica se o uso de um nível de criptografia específico deve ser necessário para proteger as comunicações entre computadores cliente e servidores de Host da Sessão RD durante as conexões de protocolo RDP (RDP). Essa política só se aplica quando você está usando a criptografia RDP nativa. No entanto, a criptografia RDP nativa (em oposição à criptografia SSL) não é recomendada. Esta política não se aplica à criptografia SSL. Se você habilitar essa configuração de política, todas as comunicações entre clientes e servidores de Host da Sessão RD durante conexões remotas deverão usar o método de criptografia especificado nessa configuração. Por padrão, o nível de criptografia é definido como alto. Os seguintes métodos de criptografia estão disponíveis:
+- **Nível de encriptação**de ligação ao cliente dos serviços de ambiente de trabalho remoto:  
+  Especifica se deve exigir a utilização de um nível de encriptação específico para proteger as comunicações entre computadores clientes e servidores rd session host durante as ligações do Protocolo de Ambiente de Trabalho Remoto (RDP). Esta política só se aplica quando se está a usar encriptação de RDP nativa. No entanto, a encriptação de RDP nativo (ao contrário da encriptação SSL) não é recomendada. Esta política não se aplica à encriptação SSL. Se ativar esta definição de política, todas as comunicações entre clientes e servidores rd session host durante ligações remotas devem utilizar o método de encriptação especificado nesta definição. Por padrão, o nível de encriptação está definido para Alto. Estão disponíveis os seguintes métodos de encriptação:
 
-  - *Alta* -a configuração alta criptografa os dados enviados do cliente para o servidor e do servidor para o cliente usando a criptografia de 128 bits forte. Use esse nível de criptografia em ambientes que contêm somente clientes de 128 bits (por exemplo, clientes que executam o Conexão de Área de Trabalho Remota). Os clientes que não suportam esse nível de criptografia não podem se conectar a servidores Host da Sessão RD.
+  - *High* - A configuração alta encripta os dados enviados do cliente para o servidor e do servidor para o cliente utilizando uma encriptação forte de 128 bits. Utilize este nível de encriptação em ambientes que contenham apenas 128 clientes (por exemplo, clientes que executam a Ligação remota de ambiente de trabalho). Os clientes que não suportam este nível de encriptação não podem ligar-se aos servidores rd Session Host.
 
-  - *Compatível com cliente* – a configuração compatível com o cliente criptografa os dados enviados entre o cliente e o servidor na restrição de chave máxima com suporte pelo cliente. Use esse nível de criptografia em ambientes que incluem clientes que não dão suporte à criptografia de 128 bits.
+  - *Compatível com* o cliente - A definição compatível com o Cliente encripta os dados enviados entre o cliente e o servidor na força-chave máxima suportada pelo cliente. Use este nível de encriptação em ambientes que incluem clientes que não suportam encriptação de 128 bits.
 
-  - *Baixa* -a configuração baixa criptografa apenas os dados enviados do cliente para o servidor usando a criptografia de 56 bits.  
+  - *Low* - A configuração Low encripta apenas os dados enviados do cliente para o servidor utilizando encriptação de 56 bits.  
   
-  Se você desabilitar ou não definir essa configuração, o nível de criptografia a ser usado para conexões remotas com Host da Sessão RD servidores não será aplicado por meio de Política de Grupo. A conformidade de FIPS importante pode ser configurada por meio da criptografia do sistema. Use algoritmos compatíveis com FIPS para criptografia, hash e configurações de assinatura no Política de Grupo (em configuração do computador \ \ \ \ Opções de autenticação.) A configuração compatível com FIPS criptografa e descriptografa os dados enviados do cliente para o servidor e do servidor para o cliente, com os algoritmos de criptografia do padrão FIPS (FIPS) 140, usando os módulos de criptografia da Microsoft. Use esse nível de criptografia quando as comunicações entre clientes e servidores de Host da Sessão RD exigirem o nível mais alto de criptografia.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067222)
+  Se desativar ou não configurar esta definição, o nível de encriptação a utilizar para ligações remotas aos servidores rd Session Host não é aplicado através da Política do Grupo. A conformidade importante com os FIPS pode ser configurada através da criptografia do Sistema. Utilize algoritmos compatíveis com FIPS para encriptação, hashing e definições de assinatura na Política de Grupo (em configuração de computador\Definições do Windows\Definições de segurança\Políticas locais\Opções de segurança.) A definição de definição compatível com FIPS encripta e desencripta os dados enviados do cliente para o servidor e do servidor para o cliente, com os algoritmos de encriptação Standard de Processamento de Informação Federal (FIPS) 140, utilizando módulos criptográficos da Microsoft. Utilize este nível de encriptação quando as comunicações entre clientes e servidores rd session host requerem o mais alto nível de encriptação.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067222)
 
-  **Padrão**: alto
+  **Padrão**: Alto
 
 ## <a name="remote-management"></a>Gestão Remota
 
-Para obter mais informações, consulte [Policy CSP-RemoteManagement](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-remotemanagement) na documentação do Windows.
+Para mais informações, consulte [Policy CSP - RemoteManagement](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-remotemanagement) na documentação do Windows.
 
-- **Bloquear o armazenamento de credenciais executar como**:  
+- O armazenamento de **blocos é executado como credenciais:**  
   Autenticação básica do cliente.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067300)
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067300)
 
-  **Padrão**: habilitado
+  **Predefinição**: Ativado
 
-- **Autenticação básica**:  
-  Essa configuração de política permite que você gerencie se o serviço de Gerenciamento Remoto do Windows (WinRM) aceita a autenticação básica de um cliente remoto. Se você habilitar essa configuração de política, o serviço WinRM aceitará a autenticação básica de um cliente remoto. Se você desabilitar ou não definir essa configuração de política, o serviço WinRM não aceitará a autenticação básica de um cliente remoto.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067223)
+- **Autenticação básica:**  
+  Esta definição de política permite-lhe gerir se o serviço de Gestão Remota do Windows (WinRM) aceita a autenticação Básica de um cliente remoto. Se ativar esta definição de política, o serviço WinRM aceita a autenticação Básica de um cliente remoto. Se desativar ou não configurar esta definição de política, o serviço WinRM não aceita autenticação Básica de um cliente remoto.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067223)
 
-  **Padrão**: desabilitado
+  **Predefinição**: Desativado
 
-- **Bloquear a autenticação Digest do cliente**:  
-  Essa configuração de política permite que você gerencie se o cliente do Gerenciamento Remoto do Windows (WinRM) usa a autenticação Digest. Se você habilitar essa configuração de política, o cliente WinRM não usará a autenticação Digest. Se você desabilitar ou não definir essa configuração de política, o cliente WinRM usará a autenticação Digest.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067302)
+- **Autenticação de digestão de cliente bloqueada:**  
+  Esta definição de política permite-lhe gerir se o cliente de Gestão Remota do Windows (WinRM) utiliza a autenticação Digest. Se ativar esta definição de política, o cliente WinRM não utiliza a autenticação Digest. Se desativar ou não configurar esta definição de política, o cliente WinRM utiliza a autenticação Digest.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067302)
 
-  **Padrão**: habilitado
+  **Predefinição**: Ativado
 
-- **Tráfego não criptografado**:  
-  Essa configuração de política permite que você gerencie se o serviço de Gerenciamento Remoto do Windows (WinRM) envia e recebe mensagens não criptografadas pela rede. Se você habilitar essa configuração de política, o cliente WinRM enviará e receberá mensagens não criptografadas pela rede. Se você desabilitar ou não definir essa configuração de política, o cliente WinRM enviará ou receberá somente mensagens criptografadas pela rede.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067226)
+- **Tráfego não encriptado:**  
+  Esta definição de política permite-lhe gerir se o serviço de Gestão Remota do Windows (WinRM) envia e recebe mensagens não encriptadas na rede. Se ativar esta definição de política, o cliente WinRM envia e recebe mensagens não encriptadas pela rede. Se desativar ou não configurar esta definição de política, o cliente WinRM envia ou recebe apenas mensagens encriptadas pela rede.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067226)
 
-  **Padrão**: desabilitado
+  **Predefinição**: Desativado
 
-- **Tráfego de cliente não criptografado**:  
-  Essa configuração de política permite que você gerencie se o cliente do Gerenciamento Remoto do Windows (WinRM) envia e recebe mensagens não criptografadas pela rede. Se você habilitar essa configuração de política, o cliente WinRM enviará e receberá mensagens não criptografadas pela rede. Se você desabilitar ou não definir essa configuração de política, o cliente WinRM enviará ou receberá somente mensagens criptografadas pela rede.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067304)
+- **Tráfego não encriptado do cliente:**  
+  Esta definição de política permite-lhe gerir se o cliente de Gestão Remota do Windows (WinRM) envia e recebe mensagens não encriptadas pela rede. Se ativar esta definição de política, o cliente WinRM envia e recebe mensagens não encriptadas pela rede. Se desativar ou não configurar esta definição de política, o cliente WinRM envia ou recebe apenas mensagens encriptadas pela rede.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067304)
 
-  **Padrão**: desabilitado
+  **Predefinição**: Desativado
 
-- **Autenticação básica do cliente**:  
-  Essa configuração de política permite que você gerencie se o cliente do Gerenciamento Remoto do Windows (WinRM) usa a autenticação básica. Se você habilitar essa configuração de política, o cliente WinRM usará a autenticação básica. Se o WinRM estiver configurado para usar o transporte HTTP, o nome de usuário e a senha serão enviados pela rede como texto não criptografado. Se você desabilitar ou não definir essa configuração de política, o cliente WinRM não usará a autenticação básica.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067252)
+- **Autenticação básica do cliente:**  
+  Esta definição de política permite-lhe gerir se o cliente de Gestão Remota do Windows (WinRM) utiliza a autenticação Básica. Se ativar esta definição de política, o cliente WinRM utiliza a autenticação Básica. Se o WinRM estiver configurado para utilizar o transporte HTTP, o nome do utilizador e a palavra-passe são enviados para a rede como texto claro. Se desativar ou não configurar esta definição de política, o cliente WinRM não utiliza a autenticação Básica.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067252)
 
-  **Padrão**: desabilitado
+  **Predefinição**: Desativado
 
 ## <a name="remote-procedure-call"></a>Chamada de procedimento remoto
 
-Para obter mais informações, consulte [Policy CSP-RemoteProcedureCall](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-remoteprocedurecall) na documentação do Windows.
+Para mais informações, consulte [Policy CSP - RemoteProcedureCall](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-remoteprocedurecall) na documentação do Windows.
 
-- **Opções de cliente não autenticado RPC**:  
-  Essa configuração de política controla como o tempo de execução do servidor RPC lida com clientes RPC não autenticados se conectando a servidores RPC. Essa configuração de política afeta todos os aplicativos RPC. Em um ambiente de domínio, use essa configuração de política com cuidado, pois ela pode afetar uma ampla gama de funcionalidades, incluindo o próprio processamento da diretiva de grupo. A reversão de uma alteração para essa configuração de política pode exigir intervenção manual em cada computador afetado. Não aplique essa configuração de política a um controlador de domínio. Se você desabilitar essa configuração de política, o tempo de execução do servidor RPC usará o valor "autenticado" no cliente Windows e o valor de "nenhum" em versões do Windows Server que dão suporte a essa configuração de política. Se você não definir essa configuração de política, ela permanecerá desabilitada. O tempo de execução do servidor RPC se comporta como se estivesse habilitado com o valor "autenticado" usado para o cliente Windows e o valor de "nenhum" usado para SKUs de servidor que dão suporte a essa configuração de política. Se você habilitar essa configuração de política, ela direcionará o tempo de execução do servidor RPC para restringir os clientes RPC não autenticados que se conectam a servidores RPC em execução em um computador. Um cliente será considerado um cliente autenticado se usar um pipe nomeado para se comunicar com o servidor ou se usar a segurança RPC. As interfaces RPC que solicitaram especificamente que sejam acessíveis por clientes não autenticados podem estar isentas dessa restrição, dependendo do valor selecionado para essa configuração de política.
+- **Opções de cliente não autenticadas RPC:**  
+  Esta definição de política controla a forma como o tempo de funcionamento do servidor RPC lida com clientes RPC não autenticados que se ligam aos servidores RPC. Esta definição de política tem impacto em todas as aplicações RPC. Num ambiente de domínio, utilize esta definição de política com cuidado, pois pode afetar uma vasta gama de funcionalidades, incluindo o próprio processamento da política de grupo. Reverter uma alteração a esta definição de política pode requerer uma intervenção manual em cada máquina afetada. Não aplique esta definição de política a um controlador de domínio. Se desativar esta definição de política, o tempo de execução do servidor RPC utiliza o valor de "Autenticado" no Cliente windows e o valor de "Nenhum" nas versões do Windows Server que suportam esta definição de política. Se não configurar esta definição de política, permanece desativada. O tempo de funcionação do servidor RPC comporta-se como se estivesse ativado com o valor de "Autenticado" utilizado para o Windows Client e o valor de "Nenhum" utilizado para o Server SKUs que suporta esta definição de política. Se ativar esta definição de política, direciona o tempo de execução do servidor RPC para restringir os clientes RPC não autenticados que se ligam aos servidores RPC que funcionam numa máquina. Um cliente é considerado um cliente autenticado se utilizar um tubo nomeado para comunicar com o servidor ou se utilizar a Segurança RPC. As Interfaces RPC que tenham pedido especificamente para serem acessíveis por clientes não autenticados podem estar isentas desta restrição, dependendo do valor selecionado para esta definição de política.
 
-  - *Nenhum* permite que todos os clientes RPC se conectem a servidores RPC em execução no computador no qual a configuração de política é aplicada.
+  - *Nenhum* permite que todos os clientes RPC se conectem aos Servidores RPC em execução na máquina na qual a definição de política é aplicada.
 
-  - *Autenticado* permite que somente clientes RPC autenticados (de acordo com a definição acima) se conectem a servidores RPC em execução no computador no qual a configuração de política é aplicada. As isenções são concedidas a interfaces que as solicitaram.
+  - *Autenticado* permite que apenas os Clientes RPC autenticados (de acordo com a definição acima) se conectem aos Servidores RPC em execução na máquina em que a definição de política é aplicada. São concedidas isenções às interfaces que as solicitaram.
 
-  - *Autenticado sem exceções* permite que somente clientes RPC autenticados (de acordo com a definição acima) se conectem a servidores RPC em execução no computador no qual a configuração de política é aplicada. Nenhuma exceção é permitida. Observação: essa configuração de política não será aplicada até que o sistema seja reinicializado.
+  - *Autenticado sem exceções* permite que apenas os Clientes RPC autenticados (de acordo com a definição acima) se conectem aos Servidores RPC em execução na máquina em que a definição de política é aplicada. Não são permitidas exceções. Nota: Esta definição de política não será aplicada até que o sistema seja reiniciado.
 
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067225)
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067225)
 
-  **Padrão**: autenticado
+  **Padrão**: Autenticado
 
-## <a name="search"></a>Procura
+## <a name="search"></a>Pesquisa
 
-Para obter mais informações, consulte [CSP da política – Pesquisar](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-search) na documentação do Windows.
+Para mais informações, consulte [Policy CSP - Procure](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-search) na documentação do Windows.
 
-- **Desabilitar a indexação de itens criptografados**:  
-  Permite ou proíbe a indexação de itens. Essa opção é para o indexador do Windows Search, que controla se ele indexará itens que são criptografados, como os arquivos protegidos por WIP (proteção de informações do Windows). Quando a política está ativada, os itens protegidos pelo WIP são indexados e os respetivos metadados são armazenados numa localização não encriptada. Os metadados incluem conteúdos como o caminho do ficheiro e a data de modificação. Quando a política estiver desabilitada, os itens protegidos por WIP não serão indexados e não aparecerão nos resultados na Cortana ou no explorador de arquivos. O desempenho das aplicações de fotografias e do Groove também poderá ser afetado se existirem muitos ficheiros multimédia protegidos pelo WIP no dispositivo.  
-  [Saiba mais]( https://go.microsoft.com/fwlink/?linkid=2067303)
+- **Desativar itens encriptados de indexação:**  
+  Permite ou proíbe a indexação de itens. Este switch é para o Indexante de Pesquisa do Windows, que controla se irá indexar itens que estão encriptados, como os ficheiros protegidos de Proteção de Informação do Windows (WIP). Quando a política está ativada, os itens protegidos pelo WIP são indexados e os respetivos metadados são armazenados numa localização não encriptada. Os metadados incluem conteúdos como o caminho do ficheiro e a data de modificação. Quando a apólice é desativada, os itens protegidos do WIP não são indexados e não aparecem nos resultados em Cortana ou explorador de ficheiros. O desempenho das aplicações de fotografias e do Groove também poderá ser afetado se existirem muitos ficheiros multimédia protegidos pelo WIP no dispositivo.  
+  [Mais informações]( https://go.microsoft.com/fwlink/?linkid=2067303)
 
   **Padrão**: Sim
 
 ## <a name="smart-screen"></a>Smart Screen
 
-Para obter mais informações, consulte [CSP da política-SmartScreen](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen) na documentação do Windows.
+Para mais informações, consulte [Policy CSP - SmartScreen](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen) na documentação do Windows.
 
-- **Bloquear a execução de arquivos não verificados**:  
-  Impedir que o usuário execute arquivos não verificados.
+- **Execução por bloco de ficheiros não verificados:**  
+  Bloqueie o utilizador de executar ficheiros não verificados.
 
-  - *Não configurado* -os funcionários podem ignorar os avisos do SmartScreen e executar arquivos mal-intencionados.
+  - *Não Configurado* - Os colaboradores podem ignorar os avisos smartScreen e executar ficheiros maliciosos.
 
-  - *Sim* – os funcionários não podem ignorar avisos do SmartScreen e executar arquivos mal-intencionados.
+  - *Sim* – Os colaboradores não podem ignorar os avisos do SmartScreen e executar ficheiros maliciosos.
 
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067228)
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067228)
 
   **Padrão**: Sim
 
-- **Exigir SmartScreen para aplicativos e arquivos**:  
-  Permite que os administradores de ti configurem o SmartScreen para Windows.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067168)
+- **Requerer o SmartScreen para apps e ficheiros:**  
+  Permite que os administradores de TI configurem o SmartScreen para windows.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067168)
 
   **Padrão**: Sim
 
 ## <a name="system"></a>Sistema
 
-Para obter mais informações, consulte [CSP da política – sistema](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system) na documentação do Windows.
+Para mais informações, consulte [Política CSP - Sistema](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system) na documentação do Windows.
 
-- Inicialização do **Driver Iniciar**inicialização do sistema:  
-  Essa configuração de política permite que você especifique quais drivers de inicialização inicial são inicializados com base em uma classificação determinada por um driver de inicialização de antimalware de início antecipado. O driver de inicialização de antimalware de início antecipado pode retornar as seguintes classificações para cada driver de inicialização inicial:
+- **Inicialização**do controlador do arranque do sistema:  
+  Esta definição de política permite especificar quais os controladores de arranque de arranque são inicializados com base numa classificação determinada por um controlador antimalware de lançamento precoce. O controlador de arranque antimalware de lançamento antecipado pode devolver as seguintes classificações para cada condutor de arranque de arranque:
 
-  - *Bom* -o driver foi assinado e não foi violado.
+  - *O* motorista foi contratado e não foi adulterado.
 
-  - *Mal* -o driver foi identificado como malware. Recomendamos que você não permita que drivers inválidos conhecidos sejam inicializados.
+  - *Mau* - O condutor foi identificado como malware. Recomendamos que não permita que os maus condutores conhecidos sejam inicializados.
 
-  - *Inadequado, mas necessário para inicialização* -o driver foi identificado como malware, mas o computador não pode ser inicializado com êxito sem carregar esse driver.
+  - *Mau, mas necessário para o arranque* - O condutor foi identificado como malware, mas o computador não consegue arrancar sem carregar este controlador.
 
-  - *Desconhecido* -este driver não foi atestado pelo seu aplicativo de detecção de malware e não foi classificado pelo driver de inicialização de antimalware de início antecipado.
+  - *Unknown* - Este controlador não foi atestado pela sua aplicação de deteção de malware e não foi classificado pelo controlador de arranque antimalware de lançamento precoce.
 
-  Se você habilitar essa configuração de política, poderá escolher quais drivers de inicialização inicial serão inicializados na próxima vez em que o computador for iniciado. Se você desabilitar ou não definir essa configuração de política, os drivers de início de inicialização determinoum ser bons, desconhecidos ou ruins, mas a inicialização crítica será inicializada e a inicialização de drivers determinados como defeituosos será ignorada. Se o seu aplicativo de detecção de malware não incluir um driver de inicialização de antimalware de início antecipado ou se o driver de inicialização de antimalware de início antecipado tiver sido desabilitado, essa configuração não terá nenhum efeito e todos os drivers de inicialização iniciada serão inicializados.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067307)
+  Se ativar esta definição de política, pode escolher quais os controladores de arranque para inicializar a próxima vez que o computador for iniciado. Se desativar ou não configurar esta definição de política, os controladores de arranque de arranque determinados a ser bons, desconhecidos ou maus, mas a Boot Critical são inicializadas e a inicialização dos condutores determinados a ser Mau é ignorada. Se a sua aplicação de deteção de malware não incluir um controlador de arranque antimalware de lançamento precoce ou se o seu controlador de arranque antimalware de lançamento precoce tiver sido desativado, esta definição não tem efeito e todos os controladores de arranque de arranque são inicializados.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067307)
 
-  **Padrão**: bom desconhecido e crítico incorreto
+  **Padrão**: Bom desconhecido e mau crítico
 
 ## <a name="wi-fi"></a>Wi-Fi
 
-Para obter mais informações, consulte [Policy CSP-WiFi](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-wifi) na documentação do Windows.
+Para mais informações, consulte [Policy CSP - Wifi](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-wifi) na documentação do Windows.
 
-- **Bloquear compartilhamento de Internet**:  
-  Especifica se o compartilhamento da Internet é possível no dispositivo.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067327)
-
-  **Padrão**: Sim
-
-- **Bloquear a conexão automática a hotspots Wi-Fi**:  
-  Permitir ou impedir que o dispositivo se conecte automaticamente a hotspots Wi-Fi.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067320)
+- **Partilha de Internet bloqueada:**  
+  Especifica se a partilha de internet é possível no dispositivo.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067327)
 
   **Padrão**: Sim
 
-## <a name="windows-connection-manager"></a>Gerenciador de conexões do Windows
-
-Para obter mais informações, consulte [Policy CSP-WindowsConnectionManager](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowsconnectionmanager) na documentação do Windows.
-
-- **Bloquear conexão a redes que não são de domínio**:  
-  Essa configuração de política impede que os computadores se conectem a uma rede baseada em domínio e a uma rede não baseada em domínio ao mesmo tempo. Se essa configuração de política estiver habilitada, o computador responderá a tentativas automáticas e manuais de conexão de rede com base nas seguintes circunstâncias:
-
-  - *Tentativas de conexão automática* -quando o computador já está conectado a uma rede baseada em domínio, todas as tentativas de conexão automática para redes que não são de domínio são bloqueadas. Quando o computador já estiver conectado a uma rede não baseada em domínio, as tentativas de conexão automática para redes baseadas em domínio serão bloqueadas.
-
-  - *Tentativas de conexão manual* -quando o computador já está conectado a uma rede não baseada em domínio ou a uma rede baseada em domínio por meio de mídia diferente de Ethernet, e um usuário tenta criar uma conexão manual com uma rede adicional em violação dessa configuração de política, a conexão de rede existente é desconectada e a conexão manual é permitida. Quando o computador já estiver conectado a uma rede não baseada em domínio ou a uma rede baseada em domínio pela Ethernet, e um usuário tentar criar uma conexão manual com uma rede adicional em violação dessa configuração de política, a conexão Ethernet existente será mantido e a tentativa de conexão manual é bloqueada.
-
-  Se essa configuração de política não estiver configurada ou estiver desabilitada, os computadores terão permissão para se conectar simultaneamente a redes de domínio e fora do domínio.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067323)
-
-  **Padrão**: habilitado
-
-## <a name="microsoft-defender"></a>Microsoft Defender
-
-Para obter mais informações, consulte [Policy CSP-defender](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender) na documentação do Windows.
-
-- **Examinar mensagens de email recebidas**:  
-  Permite ou não a verificação de email.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067116)
+- **Bloqueie a ligação automática aos hotspots Wi-Fi:**  
+  Permitir ou não permitir que o dispositivo se ligue automaticamente aos hotspots Wi-Fi.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067320)
 
   **Padrão**: Sim
 
-- **Tipo de processo filho de inicialização de aplicativos do Office**:  
-  Os aplicativos do Office não terão permissão para criar processos filho. Isso inclui o Word, o Excel, o PowerPoint, o OneNote e o Access. Esse é um comportamento típico de malware, especialmente para ataques baseados em macro que tentam usar aplicativos do Office para iniciar ou baixar executáveis mal-intencionados.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067121)
+## <a name="windows-connection-manager"></a>Gestor de ligação ao Windows
 
-  **Padrão**: bloquear
+Para mais informações, consulte [Policy CSP - WindowsConnectionManager](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowsconnectionmanager) na documentação do Windows.
 
-- **Tipo de consentimento de envio de exemplo do defender**:  
-  Verifica o nível de consentimento do usuário no Microsoft defender para enviar dados. Se o consentimento necessário já tiver sido concedido, o Microsoft defender os enviará. Se não (e se o usuário tiver especificado nunca para perguntar), a interface do usuário será iniciada para solicitar o consentimento do usuário (quando o defender/AllowCloudProtection for permitido) antes de enviar dados.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067131)
+- **Bloquear a ligação a redes não-domínio:**  
+  Esta definição de política impede que os computadores se conectem tanto a uma rede baseada em domínios como a uma rede não baseada em domínios ao mesmo tempo. Se esta definição de política estiver ativada, o computador responde a tentativas de ligação automática e manual de rede com base nas seguintes circunstâncias:
 
-  **Padrão**: enviar amostras seguras automaticamente
+  - *Tentativas de ligação automática* - Quando o computador já está ligado a uma rede baseada em domínios, todas as tentativas de ligação automática a redes não-domínio são bloqueadas. Quando o computador já está ligado a uma rede não baseada em domínios, as tentativas de ligação automática a redes baseadas em domínios são bloqueadas.
 
-- **Intervalo de atualização de assinatura (em horas)** :  
-  Intervalo de atualização de assinatura do defender em horas.
+  - *Tentativas* de ligação manual - Quando o computador já está ligado a uma rede não baseada em domínios ou a uma rede baseada em domínios através de meios que não o Ethernet, e um utilizador tenta criar uma ligação manual a uma rede adicional, violando esta definição de política, a ligação de rede existente desliga-se e a ligação manual é permitida. Quando o computador já está ligado a uma rede não baseada em domínios ou a uma rede baseada em domínios sobre o Ethernet, e um utilizador tenta criar uma ligação manual a uma rede adicional em violação desta definição de política, a ligação Ethernet existente é mantida e a tentativa de ligação manual está bloqueada.
 
-  **Padrão**: 4
+  Se esta definição de política não estiver configurada ou for desativada, os computadores podem ligar-se simultaneamente a redes de domínio e não-domínio.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067323)
 
-- **Tipo de execução de conteúdo baixado pelo script**:  
-  Tipo de execução de conteúdo baixado pelo script do defender.
-
-  **Padrão**: bloquear
-  
-- **Impedir tipo de roubo de credencial**:  
-  O Microsoft defender Credential Guard usa segurança baseada em virtualização para isolar segredos para que somente o software de sistema privilegiado possa acessá-los. O acesso não autorizado a estes segredos pode levar a ataques de roubo de credenciais, tal como Ataques PtH ou PtT. O Microsoft defender Credential Guard impede esses ataques ao proteger os hashes de senha NTLM, tíquetes de concessão de permissão Kerberos e credenciais armazenadas por aplicativos como credenciais de domínio.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067065)
-  
-  **Padrão**: habilitar
-
-- **Tipo de execução de conteúdo de email**:  
-  Essa regra impede que os seguintes tipos de arquivo sejam executados ou iniciados de um email visto no Microsoft Outlook ou webmail (como Gmail.com ou Outlook.com): arquivos executáveis (como. exe,. dll ou. SCR) arquivos de script (como um PowerShell. PS, VisualBasic. vbs, ou arquivo JavaScript. js) arquivos de script.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067063)
-
-  **Padrão**: bloquear
+  **Predefinição**: Ativado
 
 ::: zone-end
 ::: zone pivot="mdm-may-2019"
-
-- **Lançamento do Adobe Reader em um processo filho**:  
-  **Padrão**: habilitar
-
-::: zone-end
-::: zone pivot="mdm-preview,mdm-may-2019"
-
-- **Proteção de rede**:  
-  Essa política permite ativar a proteção de rede (bloquear/auditar) ou desativada no Microsoft defender Exploit Guard. A proteção de rede é um recurso do Microsoft defender Exploit Guard que protege os funcionários que usam qualquer aplicativo de acessar golpes de phishing, sites de Hospedagem de exploração e conteúdo mal-intencionado na Internet. Isso inclui impedir que navegadores de terceiros se conectem a sites perigosos. O tipo de valor é inteiro. Se você habilitar essa configuração, a proteção de rede será ativada e os funcionários não poderão desativá-la. Seu comportamento pode ser controlado pelas seguintes opções: bloquear e auditar. Se você habilitar essa política com a opção "bloquear", os usuários e aplicativos serão impedidos de se conectar a domínios perigosos. Você pode ver essa atividade na central de segurança do Microsoft defender. Se você habilitar essa política com a opção "auditoria", os usuários/aplicativos não serão impedidos de se conectar a domínios perigosos. No entanto, você ainda verá essa atividade na central de segurança do Microsoft defender. Se você desabilitar essa política, os usuários/aplicativos não serão impedidos de se conectar a domínios perigosos. Você não verá nenhuma atividade de rede na central de segurança do Microsoft defender. Se você não configurar essa política, o bloqueio de rede será desabilitado por padrão.  
-  [Saiba mais](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/enable-network-protection)
-
-  **Padrão**: habilitar
-
-- **Dia da verificação de agenda do defender**:  
-  Dia da verificação de agenda do defender.
-
-  **Padrão**: todos os dias
-
-- **Proteção fornecida na nuvem**:  
-  Para proteger melhor seu PC, o Microsoft defender enviará informações à Microsoft sobre quaisquer problemas encontrados. A Microsoft analisará essas informações, aprenderá mais sobre problemas que afetam você e outros clientes, além de oferecer soluções aprimoradas.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067039)
-
-  **Padrão**: Sim  
-
-- **Ação de aplicativo potencialmente indesejado defender**:  
-  O recurso de proteção de aplicativo potencialmente indesejado (PUA) no Microsoft defender antivírus pode identificar e bloquear o download e a instalação do PUAs em pontos de extremidade em sua rede. Esses aplicativos não são considerados vírus, malware ou outros tipos de ameaças, mas podem executar ações em pontos de extremidade que afetam negativamente o desempenho ou o uso. O PUA também pode se referir a aplicativos que são considerados uma má reputação. O comportamento típico do PUA inclui: vários tipos de injeção do AD de empacotamento de software em navegadores de drivers e de registro de Web browsers que detectam problemas, solicitam pagamento para corrigir os erros, mas permanecem no ponto de extremidade e não fazem alterações ou otimizações (também conhecidas como " programas antivírus não autorizados. Esses aplicativos podem aumentar o risco de sua rede ser infectada com malware, fazer com que as infecções de malware sejam mais difíceis de identificar e podem desperdiçar recursos de ti para limpar os aplicativos.  
-  [Saiba mais](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-puaprotection)
-
-  **Padrão**: bloquear  
-
-- **Script de tipo de código de macro ofuscado**:  
-  Malware e outras ameaças podem tentar ofuscar ou ocultar seu código mal-intencionado em alguns arquivos de script. Essa regra impede que os scripts que parecem estar ofuscados sejam executados.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067026)
-
-  **Padrão**: bloquear
-
-- **Verificar unidades removíveis durante uma verificação completa**:  
-  Permite que o Microsoft defender Verifique se há software mal-intencionado e indesejado em unidades removíveis (por exemplo, unidades flash) durante uma verificação completa. O Microsoft defender antivírus examina todos os arquivos em dispositivos USB antes da execução.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067036)
-
-  **Padrão**: Sim  
-
-- **Verificar arquivos mortos**:  
-  Defender verificar arquivos mortos.
-
-  **Padrão**: Sim
-
-- **Monitoramento de comportamento**:  
-  Permite ou não a funcionalidade de monitoramento de comportamento do Microsoft defender. Inserido no Windows 10, esses sensores coletam e processam sinais comportamentais do sistema operacional e enviam esses dados de sensor para sua instância privada, isolada e de nuvem do Microsoft defender ATP.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067111)
-
-  **Padrão**: Sim
-
-- **Verificar arquivos abertos de pastas de rede**:  
-  Se os arquivos forem somente leitura, o usuário não poderá remover nenhum malware detectado.
-
-  **Padrão**: Sim
-
-- **Tipo de processo USB não confiável**:  
-  Com essa regra, os administradores podem impedir que arquivos executáveis não assinados ou não confiáveis sejam executados a partir de unidades removíveis USB, incluindo cartões SD.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067100)
-
-  **Padrão**: bloquear
-
-- **Tipo de injeção de processo de outros aplicativos do Office**:  
-  Os aplicativos do Office, incluindo o Word, o Excel, o PowerPoint e o OneNote, não podem injetar código em outros processos. Normalmente, isso é usado por malware para executar código mal-intencionado em uma tentativa de ocultar a atividade de mecanismos de verificação antivírus.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067019)
-
-  **Padrão**: bloquear
-
-- **Código de macro do Office permitir tipo de importações Win32**:  
-  O malware pode usar o código de macro em arquivos do Office para importar e carregar as DLLs do Win32, que são usadas para fazer chamadas à API para permitir infecções adicionais em todo o sistema. Essa regra tenta bloquear arquivos do Office que contêm código de macro que pode importar DLLs Win32. Isso inclui o Word, o Excel, o PowerPoint e o OneNote.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067130)
-
-  **Padrão**: bloquear
-
-- **Nível de bloco do defender Cloud**:  
-  Nível de bloco do defender Cloud.
-
-  **Padrão**: não configurado
-
-- **Monitoramento em tempo real**:  
-  O defender requer monitoramento em tempo real.
-
-  **Padrão**: Sim
-
-::: zone-end
-::: zone pivot="mdm-may-2019"
-
-- Os **aplicativos de comunicação do Office são iniciados em um processo filho**:  
-  **Padrão**: habilitar
-
-::: zone-end
-::: zone pivot="mdm-preview,mdm-may-2019"
-
-- **Criação de conteúdo executável de aplicativos do Office ou tipo de inicialização**:  
-  Essa regra destina-se a comportamentos típicos usados por Complementos suspeitos e mal-intencionados e scripts (extensões) que criam ou iniciam arquivos executáveis. Essa é uma técnica típica de malware. As extensões são impedidas de serem usadas pelos aplicativos do Office. Normalmente, essas extensões usam o Windows Scripting Host (. Arquivos WSH) para executar scripts que automatizam determinadas tarefas ou fornecem recursos de complemento criados pelo usuário.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067108)
-
-  **Padrão**: bloquear
-
-::: zone-end
-::: zone pivot="mdm-may-2019"
-
-## <a name="microsoft-defender-firewall"></a>Microsoft defender firewall
-
-Para obter mais informações, consulte [2.2.2 FW_PROFILE_TYPE]( https://docs.microsoft.com/openspecs/windows_protocols/ms-fasp/7704e238-174d-4a5e-b809-5f3787dd8acc) na documentação de protocolos do Windows.
-
-- **Domínio do perfil de firewall**:  
-  Especifica os perfis aos quais a regra pertence: domínio, privado, público. Esse valor representa o perfil para redes que estão conectadas a domínios.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2066796)
-
-  - **Conexões de entrada bloqueadas**:  
-    **Padrão**: Sim
-
-  - **Conexões de saída necessárias**:  
-    **Padrão**: Sim
-
-  - **Notificações de entrada bloqueadas**:  
-    **Padrão**: Sim
-
-  - **Firewall habilitado**:  
-    **Padrão**: permitido
-
-- **Perfil de firewall público**:  
-  Especifica os perfis aos quais a regra pertence: domínio, privado, público. Esse valor representa o perfil para redes públicas. Essas redes são classificadas como públicas pelos administradores no host do servidor. A classificação ocorre na primeira vez que o host se conecta à rede. Normalmente, essas redes são os aeroportos, cafeterias e outros locais públicos onde os colegas na rede ou o administrador de rede não são confiáveis.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067143)
-
-  - **Conexões de entrada bloqueadas**:  
-    **Padrão**: Sim
-
-  - **Conexões de saída necessárias**:  
-    **Padrão**: Sim
-
-  - **Notificações de entrada bloqueadas**:  
-    **Padrão**: Sim
-
-  - **Firewall habilitado**:  
-    **Padrão**: permitido
-
-  - **Regras de segurança de conexão da política de grupo não mescladas**:  
-    **Padrão**: Sim
-
-  - **Regras de política da política de grupo não mesclada**:  
-    **Padrão**: Sim
-
-- **Perfil de firewall particular**:  
-  Especifica os perfis aos quais a regra pertence: domínio, privado, público. Esse valor representa o perfil para redes privadas.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067041)
-
-  - **Conexões de entrada bloqueadas**:  
-    **Padrão**: Sim
-
-  - **Conexões de saída necessárias**:  
-    **Padrão**: Sim
-
-  - **Notificações de entrada bloqueadas**:  
-    **Padrão**: Sim
-
-  - **Firewall habilitado**:  
-    **Padrão**: permitido
 
 ## <a name="windows-hello-for-business"></a>Windows Hello para Empresas
 
-- **Exigir antifalsificação avançada, quando disponível**
+- **Permitir a utilização de uma luta anti-falsificação melhorada, quando disponível**
 
-  Em caso afirmativo, os dispositivos usarão antifalsificação avançada, quando disponível. Se não, a antifalsificação será bloqueada. Não configurado respeitará as configurações feitas no cliente.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067192)
+  Se Sim, os dispositivos utilizarão uma maior enão, quando disponível. Se não, a falsificação será bloqueada. Não configurado irá honrar as configurações feitas no cliente.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067192)
 
   **Padrão**: Sim
 
-- **Configurar o Windows Hello para empresas**
+- **Configure o Windows Olá para negócios**
 
-  O Windows Hello para empresas é um método alternativo para entrar no Windows, substituindo senhas, cartões inteligentes e cartões inteligentes virtuais.
+  O Windows Hello for Business é um método alternativo para iniciar sessão no Windows substituindo palavras-passe, Smart Cards e Cartões Inteligentes Virtuais.
 
   > [!IMPORTANT]
-  > As opções dessa configuração são revertidas de seu significado implícito. Embora seja invertido, um valor de *Sim* não habilita o Windows Hello e, em vez disso, é tratado como *não configurado*. Quando essa configuração é definida como *não configurado*, o Windows Hello é habilitado em dispositivos que recebem essa linha de base.
+  > As opções para esta definição são invertidas do seu significado implícito. Embora invertido, um valor de *Sim* não permite o Windows Hello e, em vez disso, é tratado como *Não configurado*. Quando esta definição está definida para *Não configurar,* o Windows Hello está ativado em dispositivos que recebem esta linha de base.
   >
-  > As descrições a seguir foram revisadas para refletir esse comportamento. A reversão das configurações será corrigida em uma atualização futura para essa linha de base de segurança.
+  > As seguintes descrições foram revistas para refletir este comportamento. A inversão das definições será corrigida numa futura atualização desta linha de base de segurança.
 
-  - Quando definido como *não configurado*, o Windows Hello é habilitado e o dispositivo provisiona o Windows Hello para empresas.
-  - Quando definido como *Sim*, a linha de base não afeta a configuração de política do dispositivo. Isso significa que, se o Windows Hello para empresas estiver desabilitado em um dispositivo, ele permanecerá desabilitado. Se estiver habilitado, ele permanecerá habilitado.
+  - Quando definido para *Não configurado,* o Windows Hello está ativado e o dispositivo disponibiliza o Windows Hello for Business.
+  - Quando definido para *Sim,* a linha de base não afeta a definição de política do dispositivo. Isto significa que, se o Windows Hello for Business estiver desativado num dispositivo, permanece desativado. Se estiver ativado, permanece ativado.
   <!-- expected behavior 
   - When set to *Yes*, you  enable this policy and the device provisions Windows Hello for Business.  
   - When set to *Not configured*, the baseline does not affect the policy setting of the device. This means that if Windows Hello for Business is disabled on a device, it remains disabled. If its enabled, it remains enabled. 
   -->
 
-  Não é possível desabilitar o Windows Hello para empresas por meio desta linha de base. Você pode desabilitar o Windows Hello para empresas ao configurar o [registro do Windows](windows-hello.md)ou como parte de um perfil de configuração do dispositivo para a proteção de [identidade](identity-protection-configure.md).  
+  Não é possível desativar o Windows Hello for Business através desta linha de base. Pode desativar o Windows Hello for Business quando configurar a [inscrição](windows-hello.md)do Windows, ou como parte de um perfil de configuração do dispositivo para [proteção de identidade](identity-protection-configure.md).  
 
   **Padrão**: Sim
 
-- **Exigir letras minúsculas no PIN**:  
-  Se necessário, o PIN do usuário deve incluir pelo menos uma letra minúscula.
+- **Requerer letras minúsculas no PIN:**  
+  Se necessário, o PIN do utilizador deve incluir pelo menos uma letra minúscula.
 
-  **Padrão**: permitido
+  **Padrão**: Permitido
 
-- **Exigir caracteres especiais no PIN**:  
-  Se necessário, o PIN do usuário deve incluir pelo menos um caractere especial.
+- **Requerer caracteres especiais em PIN:**  
+  Se necessário, o PIN do utilizador deve incluir pelo menos um personagem especial.
 
-  **Padrão**: permitido
+  **Padrão**: Permitido
 
-- **Comprimento mínimo do PIN**:  
-  O comprimento mínimo do PIN deve estar entre 4 e 127.
+- **Comprimento mínimo do PIN:**  
+  O comprimento mínimo do PIN deve ser entre 4 e 127.
 
   **Padrão**: 6
 
-- **Exigir letras maiúsculas no PIN**:  
-  Se necessário, o PIN do usuário deve incluir pelo menos uma letra maiúscula.
+- **Requerer letras maiúsculas em PIN:**  
+  Se necessário, o PIN do utilizador deve incluir pelo menos uma letra maiúscula.
 
-  **Padrão**: permitido
+  **Padrão**: Permitido
 
 ::: zone-end
 ::: zone pivot="mdm-preview,mdm-may-2019"
 
-## <a name="windows-ink-workspace"></a>Área de Trabalho do Windows Ink
+## <a name="windows-ink-workspace"></a>Espaço de trabalho de tinta windows
 
-Para obter mais informações, consulte [Policy CSP-WindowsInkWorkspace](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowsinkworkspace) na documentação do Windows.
+Para mais informações, consulte [Policy CSP - WindowsInkWorkspace](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowsinkworkspace) na documentação do Windows.
 
-- **Espaço de trabalho de tinta**:  
-  Especifica se deve permitir que o usuário acesse o espaço de trabalho de tinta.
+- **Espaço de trabalho de tinta:**  
+  Especifica se permite ao utilizador aceder ao espaço de trabalho de tinta.
 
-  - *Desabilitado* -o acesso ao espaço de trabalho de tinta está desabilitado. O recurso está desativado.
+  - *Desativado* - o acesso ao espaço de trabalho de tinta é desativado. O recurso está desativado.
 
-  - *Habilitado* – o recurso de espaço de trabalho de tinta está ativado, mas o usuário não pode acessá-lo acima da tela de bloqueio.
+  - *Ativado* - A função De Trabalho da Tinta está ligada, mas o utilizador não pode aceder-lhe acima do ecrã de bloqueio.
 
-  - *Não configurado* -o recurso de espaço de trabalho de tinta está ativado e o usuário pode usá-lo acima da tela de bloqueio.
+  - *Não configurado* - A função de espaço de trabalho de tinta está ligada e o utilizador pode usá-lo acima do ecrã de bloqueio.
 
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067241)
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067241)
 
-  **Padrão**: habilitado
+  **Predefinição**: Ativado
 
 ## <a name="windows-powershell"></a>Windows PowerShell
 
-Para obter mais informações, consulte [Policy CSP-WindowsPowerShell](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowspowershell) na documentação do Windows.
+Para mais informações, consulte [Policy CSP - WindowsPowerShell](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowspowershell) na documentação do Windows.
 
-- **Log do bloco de script do shell do Power Shell**:  
-  Essa configuração de política habilita o log de todas as entradas de script do PowerShell para o log de eventos Microsoft-Windows-PowerShell/Operational. Se você habilitar essa configuração de política, o Windows PowerShell registrará em log o processamento de comandos, blocos de script, funções e scripts – sejam invocados interativamente ou através da automação. Se você desabilitar essa configuração de política, o log da entrada de script do PowerShell será desabilitado. Se você habilitar o log de invocação de bloco de script, o PowerShell também registrará eventos quando a invocação de um comando, bloco de script, função ou script iniciar ou parar. Habilitar o log de invocação gera um alto volume de logs de eventos. Observação: essa configuração de política existe na configuração do computador e na configuração do usuário no editor de Política de Grupo. A configuração da política de configuração do computador tem precedência sobre a configuração de política de configuração de usuário.  
-  [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2067330)
+- **Registo do bloco**de scripts de concha de concha de potência:  
+  Esta definição de política permite o registo de todas as entradas de script powerShell para o registo de eventos Microsoft-Windows-PowerShell/Operational. Se ativar esta definição de política, o Windows PowerShell registará o processamento de comandos, blocos de scripts, funções e scripts - seja invocado interativamente, quer através da automação. Se desativar esta definição de política, o registo da entrada do script PowerShell é desativado. Se ativar o Registo de Invocação de Bloqueio de Script, o PowerShell regista adicionalmente eventos quando a invocação de um comando, bloco de script, função ou script começa ou para. Ativar a exploração de registos de exploração gera um elevado volume de registos de eventos. Nota: Esta definição de política existe tanto na Configuração do Computador como na Configuração do Utilizador no Editor de Política do Grupo. A definição da política de configuração do computador tem precedência sobre a definição da política de configuração do utilizador.  
+  [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067330)
 
-  **Padrão**: habilitado
+  **Predefinição**: Ativado
 
 ::: zone-end
 ::: zone pivot="mdm-may-2019"
 
 ## <a name="whats-changed-in-the-new-template"></a>O que mudou no novo modelo
 
-A *linha de base de segurança do MDM para o modelo 2019 de maio* tem as seguintes alterações do modelo de *Visualização* .
+O modelo de Base de Segurança do MDM para maio de *2019* tem as seguintes alterações do modelo de *pré-visualização.*
 
-### <a name="changes-to-the-baseline-settings"></a>Alterações nas configurações de linha de base
+### <a name="changes-to-the-baseline-settings"></a>Alterações nas definições de base
 
-As seguintes configurações são:
+As seguintes definições são:
 
-- *Novo* nesta versão mais recente da linha de base.
-- *Removido* desta versão de linha de base mais recente, mas estava presente na versão anterior.
-- *Revisado* de alguma forma de como as configurações apareciam na versão anterior.
+- *Novidade* nesta última versão da linha de base.
+- *Removido* desta versão mais recente, mas esteve presente na versão anterior.
+- *Revisto de* alguma forma pela forma como as definições apareceram na versão anterior.
 
-*[Novo]* [**acima do bloqueio**](#above-lock):
+*[Novo]* [**Acima da fechadura:** ](#above-lock)
 
-- **Ativar voz de aplicativos da tela bloqueada**
+- **Aplicativos de ativação de voz a partir de ecrã bloqueado**
 
-*[Novo]* [**Gerenciamento de aplicativos**](#application-management):
+*[Nova]* [**Gestão de Aplicações:** ](#application-management)
 
-- **Bloquear o controle do usuário sobre instalações**
-- **Bloquear instalações de aplicativos MSI com privilégios elevados**
+- **Bloqueie o controlo do utilizador sobre as instalações**
+- **Instalações de aplicações Block MSI com privilégios elevados**
 
-*[Removido]* [**BitLocker**](#bitlocker):
+*[Removido]* [**BitLocker:** ](#bitlocker)
 
-- Política de unidade removível do BitLocker > **método de criptografia**
-- **Política de unidade fixa do BitLocker** *(todas as configurações)*
-- **Política de unidade de sistema do BitLocker** *(todas as configurações)*
+- BitLocker política de unidade amovível > **Método de encriptação**
+- Política de **unidade fixa BitLocker** *(todas as definições)*
+- Política de **unidade de sistema BitLocker** *(todas as configurações)*
 
-*[Novo]* [**conectividade**](#connectivity):
+*[Nova]* [**Conectividade:** ](#connectivity)
 
-- **Configurar o acesso seguro a caminhos UNC**
+- **Configure o acesso seguro aos caminhos da CNU**
 
-*[Novo]* [**proteção do dispositivo**](#device-guard):
+*[Novo]* [**Dispositivo Guarda:** ](#device-guard)
 
 - **Segurança baseada em virtualização**
 
-*[Novo]* [**proteção de DMA**](#dma-guard):
+*[Novo]* [**DMA Guarda:** ](#dma-guard)
 
-- **Enumeração de dispositivos externos incompatíveis com a proteção de kernel DMA**
+- **Enumeração de dispositivos externos incompatíveis com a Proteção Kernel DMA**
 
-*[Novo]* [**Internet Explorer**](#internet-explorer):
+*[Novo]* [**Internet Explorer:** ](#internet-explorer)
 
-- **Atualizações de zona da Internet do Internet Explorer para barra de status por meio de script**
-- **Arrastar e soltar na zona Internet do Internet Explorer ou copiar e colar arquivos**
-- **Componentes dependentes .NET Framework zona restrita do Internet Explorer**
-- **A zona do computador local do Internet Explorer não executa antimalware em controles ativos X**
-- **Suporte à criptografia do Internet Explorer**
+- **Atualizações da zona de internet do Internet Explorer para barra de estado via script**
+- **Internet Explorer internet zone drag and drop or copy and paste files**
+- **Zona restrita do Internet Explorer .NET Estrutura componentes dependentes**
+- **A zona de máquina local do Internet Explorer não executa antimalware contra os controlos Ative X**
+- **Suporte de encriptação do Internet Explorer**
 
-*[Revisado]* [**Internet Explorer**](#internet-explorer):
+*[Revisto]* [**Internet Explorer:** ](#internet-explorer)
 
-- **Prompt automático da zona Internet do Internet Explorer para downloads de arquivo** > o valor padrão agora está **desabilitado**. Em visualização, essa configuração foi definida como habilitada.
+- **Internet Explorer internet zone automatic prompt for file downloads** > O valor padrão é agora **desativado**. Na pré-visualização, esta definição foi definida para Ativar.
 
-*[Novo]* [**assistência remota**](#remote-assistance):
+*[Nova]* [**Assistência Remota:** ](#remote-assistance)
 
-- **Assistência remota solicitada**
-  - **Permissão de assistência remota solicitada**
-  - **Valor de tempo máximo de tíquete**
-  - **Período de tempo máximo de tíquete**
-  - **Método de convite por email**
+- **Assistência Remota solicitada**
+  - **Autorização solicitada pela Assistência Remota**
+  - **Valor máximo do tempo do bilhete**
+  - **Período máximo de tempo de bilhete**
+  - **Método de convite por e-mail**
 
-*[Novo]* [**Microsoft defender**](#microsoft-defender):
+*[Novo]* [**Microsoft Defender:** ](#microsoft-defender)
 
-- **Lançamento do Adobe Reader em um processo filho**
-- **Aplicativos de comunicação do Office são iniciados em um processo filho**
+- **Lançamento do leitor adobe em processo infantil**
+- **Aplicativos de comunicação do escritório lançam-se num processo infantil**
 
-*[Novo]* [ **Microsoft defender firewall**](#microsoft-defender-firewall)
+*Firewall* [](#firewall)
 
-- **Domínio do perfil de firewall**
-  - **Conexões de entrada bloqueadas**
-  - **Conexões de saída necessárias**
+- **Domínio de perfil de firewall**
+  - **Ligações de entrada bloqueadas**
+  - **Ligações de saída necessárias**
   - **Notificações de entrada bloqueadas**
-  - **Firewall habilitado**
-- **Perfil de firewall público**
-  - **Conexões de entrada bloqueadas**
-  - **Conexões de saída necessárias**
+  - **Firewall ativado**
+- **Público de perfil firewall**
+  - **Ligações de entrada bloqueadas**
+  - **Ligações de saída necessárias**
   - **Notificações de entrada bloqueadas**
-  - **Firewall habilitado**
-  - **Regras de segurança de conexão da política de grupo não mescladas**
-  - **Regras de política da política de grupo não mesclada**
+  - **Firewall ativado**
+  - **Regras de segurança de ligação da política do grupo não fundidas**
+  - **Regras políticas da política de grupo não fundidas**
 - **Perfil de firewall privado**
-  - **Conexões de entrada bloqueadas**
-  - **Conexões de saída necessárias**
+  - **Ligações de entrada bloqueadas**
+  - **Ligações de saída necessárias**
   - **Notificações de entrada bloqueadas**
-  - **Firewall habilitado**
+  - **Firewall ativado**
 
-*[Novo]* [**Windows Hello para empresas**](#windows-hello-for-business):
+*[Novo]* [**Windows Hello for Business**](#windows-hello-for-business):
 
-- **Exigir antifalsificação avançada, quando disponível**
-- **Configurar o Windows Hello para empresas**
-- **Exigir letras minúsculas no PIN**
-- **Exigir caracteres especiais no PIN**
-- **Comprimento mínimo do PIN**
-- **Exigir letras maiúsculas no PIN**
+- **Exigir uma maior enão-falsificação, quando disponível**
+- **Configure o Windows Olá para negócios**
+- **Requerem letras minúsculas em PIN**
+- **Requerem caracteres especiais em PIN**
+- **Comprimento mínimo pin**
+- **Requerer letras maiúsculas em PIN**
 
 ::: zone-end

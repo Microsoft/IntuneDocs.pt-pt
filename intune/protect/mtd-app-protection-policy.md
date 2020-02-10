@@ -1,7 +1,7 @@
 ---
-title: Criar política de proteção de aplicativo MTD (defesa contra ameaças móveis) com o Intune
+title: Criar política de proteção de aplicações mobile threat defense (MTD) com Intune
 titleSuffix: Microsoft Intune
-description: Criar política de proteção de aplicativo MTD (defesa contra ameaças móveis) com Microsoft Intune.
+description: Crie a política de proteção de aplicações Mobile Threat Defense (MTD) com a Microsoft Intune.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -18,55 +18,55 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7cc873079d9a139edfa2217d97806afe0c5bbf28
-ms.sourcegitcommit: 06dce5c8111592ad774247e86e539dd3128117e5
+ms.openlocfilehash: 7279921719677fce0845517aefc5958f57ce13cb
+ms.sourcegitcommit: 32391f74241ee3289a76ccd5319fe700b800d427
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/30/2019
-ms.locfileid: "75545961"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77075710"
 ---
-# <a name="create-mobile-threat-defense-app-protection-policy-with-intune"></a>Criar política de proteção do aplicativo de defesa contra ameaças móveis com o Intune
+# <a name="create-mobile-threat-defense-app-protection-policy-with-intune"></a>Criar política de proteção de aplicações de defesa de ameaças móveis com Intune
 
-O Intune com defesa contra ameaças móveis (MTD) ajuda você a detectar ameaças e avaliar o risco em dispositivos móveis. Você pode criar uma política de proteção de aplicativo do Intune que avalia o risco para determinar se o dispositivo tem permissão para acessar dados corporativos ou não.
+Intune with Mobile Threat Defense (MTD) ajuda-o a detetar ameaças e a avaliar o risco em dispositivos móveis. Pode criar uma política de proteção de aplicações Intune que avalie o risco para determinar se o dispositivo está autorizado a aceder ou não a dados corporativos.
 
 
 > [!NOTE]
-> Este artigo se aplica a todos os parceiros de defesa contra ameaças móveis que dão suporte a políticas de proteção de aplicativo:
+> Este artigo aplica-se a todos os parceiros de Defesa de Ameaças Móveis que apoiam políticas de proteção de aplicações:
 >
-> - Melhores dispositivos móveis (Android)
+> - Melhor Móvel (Android)
 > - Zimperium (Android, iOS)
 > - Lookout for Work (Android, iOS).
 
 ## <a name="before-you-begin"></a>Antes de começar
 
-Como parte da configuração da MTD, na consola do parceiro MTD, criou uma política que classifica as várias ameaças como sendo de nível alto, médio e baixo. Agora você precisa definir o nível de defesa contra ameaças móveis na política de proteção de aplicativo do Intune.
+Como parte da configuração da MTD, na consola do parceiro MTD, criou uma política que classifica as várias ameaças como sendo de nível alto, médio e baixo. Agora precisa de definir o nível de Defesa de Ameaças Móveis na política de proteção de aplicações Intune.
 
-Pré-requisitos para a política de proteção de aplicativo com MTD:
+Pré-requisitos para a política de proteção de aplicações com MTD:
 
-- Configure a integração do MTD com o Intune. Sem essa integração, a política de proteção do aplicativo MTD não terá nenhum efeito.
+- Instale a integração do MTD com o Intune. Sem esta integração, a política de proteção de aplicações MTD não terá qualquer efeito.
 
-## <a name="to-create-an-mtd-app-protection-policy"></a>Para criar uma política de proteção de aplicativo MTD
+## <a name="to-create-an-mtd-app-protection-policy"></a>Para criar uma política de proteção de aplicações MTD
 
-Use o procedimento para [criar uma política de proteção de aplicativo para o Ios/iPadOS ou Android](../apps/app-protection-policies.md#app-protection-policies-for-iosipados-and-android-apps)e use as seguintes informações nas páginas *aplicativos*, *inicialização condicional*e *atribuições* :
+Utilize o procedimento para criar uma política de proteção de [aplicações para iOS/iPadOS ou Android,](../apps/app-protection-policies.md#app-protection-policies-for-iosipados-and-android-apps)e utilize as seguintes informações sobre as *páginas Apps,* *Lançamento Condicional*e *Atribuição:*
 
-- **Aplicativos**: selecione o aplicativo para o parceiro de defesa contra ameaças móveis que você usa.
-- **Inicialização condicional**: abaixo das *condições do dispositivo*, use a caixa suspensa para selecionar o **nível máximo de ameaça do dispositivo permitido**.
+- **Aplicativos**: Selecione as aplicações que deseja ser alvo de políticas de proteção de aplicações. Para este conjunto de funcionalidades, estas aplicações serão bloqueadas ou limpas seletivamente com base na avaliação de risco do dispositivo do seu fornecedor de Defesa de Ameaças Móveis escolhido. 
+- **Lançamento condicional**: Abaixo as *condições*do dispositivo , utilize a caixa de drop-down para selecionar **o nível de ameaça do dispositivo Max .**
 
-  Opções para o **valor**de nível de ameaça:
+  Opções para o nível de ameaça **Valor:**
 
-  - **Seguro**: este é o nível mais seguro. O dispositivo não pode ter nenhuma ameaça presente e ainda acessar os recursos da empresa. Se forem detetadas ameaças, o dispositivo será avaliado como não conforme.
+  - **Seguro**: este é o nível mais seguro. O dispositivo não pode ter ameaças presentes e ainda aceder aos recursos da empresa. Se forem detetadas ameaças, o dispositivo será avaliado como não conforme.
   - **Baixo**: o dispositivo está em conformidade se só estiverem presentes ameaças de nível baixo. Qualquer nível mais alto coloca o dispositivo num estado de não conforme.
   - **Médio**: o dispositivo está em conformidade se as ameaças encontradas forem de nível baixo ou médio. Se forem detetadas ameaças de nível alto, o estado do dispositivo será determinado como não conforme.
-  - **Elevado**: este é o nível menos seguro. Isso permite todos os níveis de ameaça e usa a defesa contra ameaças móveis apenas para fins de relatório. É necessário que os dispositivos tenham a aplicação de MTD ativada com esta definição.
+  - **Elevado**: este é o nível menos seguro. Isto permite todos os níveis de ameaça e usa a Defesa de Ameaças Móveis apenas para fins de reporte. É necessário que os dispositivos tenham a aplicação de MTD ativada com esta definição.
 
-  Opções para **ação**:
+  Opções de **Ação:**
 
   - **Bloquear acesso**
-  - **Apagar dados**
+  - **Limpar dados**
 
-- **Atribuições**: atribuir a política a grupos de usuários.  Os dispositivos usados pelos membros do grupo são avaliados para acesso a dados corporativos em aplicativos de destino por meio da proteção de aplicativo do Intune.
+- **Atribuições**: Atribuir a política a grupos de utilizadores.  Os dispositivos utilizados pelos membros do grupo são avaliados para acesso a dados corporativos em aplicações direcionadas através da proteção de aplicações Intune.
 
 
-## <a name="next-steps"></a>Próximos passos  
+## <a name="next-steps"></a>Passos Seguintes  
 
-- Saiba mais sobre a [defesa contra ameaças móveis](~/protect/mobile-threat-defense.md) em Microsoft Intune.
+- Saiba mais sobre [a Defesa de Ameaças Móveis](~/protect/mobile-threat-defense.md) no Microsoft Intune.

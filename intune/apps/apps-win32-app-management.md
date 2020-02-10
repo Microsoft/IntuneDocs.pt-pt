@@ -1,7 +1,7 @@
 ---
-title: Adicionar e atribuir aplicativos Win32 ao Microsoft Intune
+title: Adicione e atribua aplicações Win32 ao Microsoft Intune
 titleSuffix: ''
-description: Saiba como adicionar, atribuir e gerenciar aplicativos Win32 com o Microsoft Intune. Este tópico inclui uma descrição geral das funcionalidades de gestão e da entrega de aplicações Win32 do Intune, bem como informações de resolução de problemas com aplicações Win32.
+description: Saiba como adicionar, atribuir e gerir aplicações Win32 com o Microsoft Intune. Este tópico inclui uma descrição geral das funcionalidades de gestão e da entrega de aplicações Win32 do Intune, bem como informações de resolução de problemas com aplicações Win32.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -18,57 +18,57 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c120fab1da43230888866cba9d818d7b433b711e
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: dbefd797fead7113045ee7e7655b715a0b4961fd
+ms.sourcegitcommit: 32391f74241ee3289a76ccd5319fe700b800d427
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755294"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77075829"
 ---
-# <a name="intune-standalone---win32-app-management"></a>Intune autônomo-gerenciamento de aplicativos do Win32
+# <a name="intune-standalone---win32-app-management"></a>Intune Autónomo - Gestão de aplicações Win32
 
-O [Intune autônomo](../fundamentals/mdm-authority-set.md) agora permite um maior recurso de gerenciamento de aplicativos do Win32. Embora seja possível para clientes ligados à cloud utilizarem o Configuration Manager para a gestão de aplicações Win32, os clientes exclusivos do Intune terão melhores funcionalidades de gestão para as suas aplicações Win32 de linha de negócio (LOB). Este tópico fornece uma descrição geral da funcionalidade de gestão de aplicações Win32 do Intune e informações de resolução de problemas.
+[Intune autónoma](../fundamentals/mdm-authority-set.md) agora permite maiores capacidades de gestão de aplicações Win32. Embora seja possível para clientes ligados à cloud utilizarem o Configuration Manager para a gestão de aplicações Win32, os clientes exclusivos do Intune terão melhores funcionalidades de gestão para as suas aplicações Win32 de linha de negócio (LOB). Este tópico fornece uma descrição geral da funcionalidade de gestão de aplicações Win32 do Intune e informações de resolução de problemas.
 
 > [!NOTE]
-> Essa funcionalidade de gerenciamento de aplicativo dá suporte à arquitetura do sistema operacional de 32 bits e 64 bits para aplicativos do Windows.
+> Esta capacidade de gestão de aplicações suporta a arquitetura do sistema operativo de 32 bits e 64 bits para aplicações Windows.
 
 > [!IMPORTANT]
-> Ao implantar aplicativos Win32, considere usar a [extensão de gerenciamento do Intune](../apps/intune-management-extension.md) exclusivamente, especialmente quando você tiver um instalador de aplicativo do Win32 com vários arquivos. Se você misturar a instalação de aplicativos Win32 e aplicativos de linha de negócios durante o registro do AutoPilot, a instalação do aplicativo poderá falhar.  
+> Ao implementar aplicações Win32, considere utilizar a [Intune Management Extension](../apps/intune-management-extension.md) exclusivamente, especialmente quando tiver um instalador de aplicações Win32 multi-ficheiros. Se misturar a instalação de aplicações Win32 e aplicações de linha de negócio durante a inscrição no AutoPilot, a instalação da aplicação poderá falhar.  
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-Para usar o gerenciamento de aplicativos Win32, certifique-se de atender aos seguintes critérios:
+Para utilizar a gestão de aplicações Win32, certifique-se de que cumpre os seguintes critérios:
 
-- Windows 10 versão 1607 ou posterior (versões Enterprise, pro e Education)
+- Windows 10 versão 1607 ou posterior (versões Enterprise, Pro e Education)
 - O cliente do Windows 10 tem de estar: 
-  - Os dispositivos devem ser ingressados no Azure AD e registrados automaticamente. A extensão de gerenciamento do Intune dá suporte ao ingresso no Azure AD, dispositivos de diretiva de grupo ingressados no domínio híbrido. 
+  - Os dispositivos devem ser unidos à Azure AD e inscritos automaticamente. A extensão de gestão Intune suporta a AD Azure, domínio híbrido aderido, dispositivos matriculados na política do grupo são suportados. 
   > [!NOTE]
-  > Para o cenário de política de grupo registrado-o usuário final usa a conta de usuário local para ingressar no AAD de seu dispositivo Windows 10. O usuário deve fazer logon no dispositivo usando sua conta de usuário do AAD e inscrever-se no Intune. O Intune instalará a extensão de gerenciamento do Intune no dispositivo se um script do PowerShell ou um aplicativo Win32 for direcionado para o usuário ou dispositivo.
-- O tamanho do aplicativo do Windows é limitado a 8 GB por aplicativo.
+  > Para o cenário de inscrição na política do grupo - O utilizador final utiliza a conta de utilizador local para a AAD juntar-se ao seu dispositivo Windows 10. O utilizador deve iniciar sessão no dispositivo utilizando a sua conta de utilizador AAD e inscrever-se no Intune. A Intune instalará a extensão Intune Management no dispositivo se um script PowerShell ou uma aplicação Win32 fordirecionado para o utilizador ou dispositivo.
+- O tamanho da aplicação do Windows está limitado a 8 GB por aplicação.
 
 ## <a name="prepare-the-win32-app-content-for-upload"></a>Preparar o conteúdo da aplicação Win32 para carregamento
 
-Use a [ferramenta de preparação de conteúdo do Microsoft Win32](https://go.microsoft.com/fwlink/?linkid=2065730) para pré-processar aplicativos clássicos (Win32) do Windows. A ferramenta converte os arquivos de instalação do aplicativo no formato *. intunewin* . A ferramenta também detecta alguns dos atributos exigidos pelo Intune para determinar o estado de instalação do aplicativo. Depois de usar essa ferramenta na pasta do instalador de aplicativos, você poderá criar um aplicativo Win32 no console do Intune.
+Utilize a Ferramenta de Preparação de [Conteúdo microsoft Win32](https://go.microsoft.com/fwlink/?linkid=2065730) para pré-processar as aplicações do Windows Classic (Win32). A ferramenta converte ficheiros de instalação de aplicação no formato *.intunewin.* A ferramenta também deteta alguns dos atributos exigidos por Intune para determinar o estado de instalação da aplicação. Depois de utilizar esta ferramenta na pasta do instalador de aplicações, poderá criar uma aplicação Win32 na consola Intune.
 
 > [!IMPORTANT]
-> A [ferramenta de preparação de conteúdo do Microsoft Win32](https://go.microsoft.com/fwlink/?linkid=2065730) zips todos os arquivos e subpastas ao criar o arquivo *. intunewin* . Lembre-se de manter a ferramenta de preparação de conteúdo do Microsoft Win32 separada dos arquivos e pastas do instalador, para que você não inclua a ferramenta ou outros arquivos e pastas desnecessários no arquivo *. intunewin* .
+> A Ferramenta de Preparação de [Conteúdo microsoft Win32](https://go.microsoft.com/fwlink/?linkid=2065730) fecha todos os ficheiros e subpastas quando cria o ficheiro *.intunewin.* Certifique-se de manter a Ferramenta de Preparação de Conteúdo microsoft Win32 separada dos ficheiros e pastas do instalador, para que não inclua a ferramenta ou outros ficheiros e pastas desnecessários no ficheiro *.intunewin.*
 
-Você pode baixar a [ferramenta de preparação de conteúdo do Microsoft Win32](https://go.microsoft.com/fwlink/?linkid=2065730) do GitHub como um arquivo zip. O arquivo compactado contém uma pasta chamada **Microsoft-Win32-Content-Prep-Tool-Master**. A pasta contém a ferramenta Prep, a licença, um Leiame e as notas de versão. 
+Pode descarregar a Ferramenta de Preparação de [Conteúdo microsoft Win32](https://go.microsoft.com/fwlink/?linkid=2065730) do GitHub como ficheiro zip. O ficheiro zipped contém uma pasta chamada **Microsoft-Win32-Content-Prep-Tool-master**. A pasta contém a ferramenta de preparação, a licença, um readme e as notas de lançamento. 
 
-### <a name="process-flow-to-create-intunewin-file"></a>Fluxo de processo para criar arquivo. intunewin
+### <a name="process-flow-to-create-intunewin-file"></a>Fluxo de processo para criar ficheiro .intunewin
 
    <img alt="Process flow to create a .intunewin file" src="./media/apps-win32-app-management/prepare-win32-app.svg" width="700">
 
-### <a name="run-the-microsoft-win32-content-prep-tool"></a>Executar a ferramenta de preparação de conteúdo do Microsoft Win32
+### <a name="run-the-microsoft-win32-content-prep-tool"></a>Executar a ferramenta de preparação de conteúdo microsoft Win32
 
-Se você executar `IntuneWinAppUtil.exe` na janela de comando sem parâmetros, a ferramenta irá orientá-lo a inserir os parâmetros necessários passo a passo. Ou, você pode adicionar os parâmetros ao comando com base nos seguintes parâmetros de linha de comando disponíveis.
+Se executar `IntuneWinAppUtil.exe` da janela de comando sem parâmetros, a ferramenta irá guiá-lo para inserir os parâmetros necessários passo a passo. Ou, pode adicionar os parâmetros ao comando com base nos seguintes parâmetros disponíveis da linha de comando.
 
 ### <a name="available-command-line-parameters"></a>Parâmetros da linha de comandos disponíveis 
 
 |    **Parâmetro da linha de comandos**    |    **Descrição**    |
 |:------------------------------:|:----------------------------------------------------------:|
 |    `-h`     |    Ajuda    |
-|    `-c <setup_folder>`     |    Pasta para todos os arquivos de instalação. Todos os arquivos nesta pasta serão compactados no arquivo *. intunewin* .    |
+|    `-c <setup_folder>`     |    Pasta para todos os ficheiros de configuração. Todos os ficheiros desta pasta serão comprimidos para o ficheiro *.intunewin.*    |
 |    `-s <setup_file>`     |    Ficheiro de configuração (como *setup.exe* ou *setup.msi*).    |
 |    `-o <output_folder>`     |    Pasta de saída para o ficheiro *.intunewin* gerado.    |
 |    `-q`       |    Modo silencioso    |
@@ -80,31 +80,31 @@ Se você executar `IntuneWinAppUtil.exe` na janela de comando sem parâmetros, a
 |    `IntuneWinAppUtil -h`    |    Este comando mostra informações de utilização da ferramenta.    |
 |    `IntuneWinAppUtil -c c:\testapp\v1.0 -s c:\testapp\v1.0\setup.exe -o c:\testappoutput\v1.0 -q`    |    Este comando irá gerar o ficheiro `.intunewin` a partir da pasta de origem especificada e do ficheiro de configuração. Para o ficheiro de configuração MSI, esta ferramenta irá obter as informações necessárias para o Intune. Se `-q` for especificado, o comando será executado no modo silencioso e, se o ficheiro de saída já existir, será substituído. Além disso, se a pasta de saída não existir, será criada automaticamente.    |
 
-Ao gerar um arquivo *. intunewin* , coloque todos os arquivos necessários para fazer referência a uma subpasta da pasta de instalação do. Em seguida, use um caminho relativo para fazer referência ao arquivo específico que você precisa. Por exemplo:
+Ao gerar um ficheiro *.intunewin,* coloque quaisquer ficheiros necessários para se referir numa subpasta da pasta de configuração. Em seguida, use um caminho relativo para fazer referência ao ficheiro específico de que necessita. Por exemplo:
 
-**Pasta de origem da instalação:** *c:\testapp\v1.0*<br>
-**Arquivo de licença:** *c:\testapp\v1.0\licenses\license.txt*
+**Configurar pasta de origem:** *c:\testapp\v1.0*<br>
+**Ficheiro de licença:** *c:\testapp\v1.0\licenses\license.txt*
 
-Consulte o arquivo *License. txt* usando o caminho relativo *licenses\license.txt*.
+Consulte o ficheiro *license.txt* utilizando as *licenças relativas de caminho\license.txt*.
 
 ## <a name="create-assign-and-monitor-a-win32-app"></a>Criar, atribuir e monitorizar uma aplicação Win32
 
 Tal como uma aplicação de linha de negócio (LOB), pode adicionar uma aplicação Win32 ao Microsoft Intune. Este tipo de aplicação é, normalmente, escrita internamente ou por terceiros. 
 
-### <a name="process-flow-to-add-a-win32-app-to-intune"></a>Fluxo do processo para adicionar um aplicativo Win32 ao Intune
+### <a name="process-flow-to-add-a-win32-app-to-intune"></a>Fluxo de processo para adicionar uma app Win32 ao Intune
 
 <img alt="Process flow to add a Win32 app to Intune" src="./media/apps-win32-app-management/add-win32-app.svg" width="500">
 
-### <a name="add-a-win32-app-to-intune"></a>Adicionar um aplicativo Win32 ao Intune
+### <a name="add-a-win32-app-to-intune"></a>Adicione uma aplicação Win32 ao Intune
 
 Os seguintes passos fornecem orientação para ajudá-lo a adicionar uma aplicação Windows ao Intune.
 
-1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
-2. Selecione **aplicativos** > **todos os aplicativos** > **Adicionar**.
+1. Inscreva-se no [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **Apps** > **Todas as aplicações** > **Adicionar**.
 3. No painel do **tipo select,** sob os **outros** tipos de aplicações, selecione **a aplicação Windows (Win32)** .
 
     > [!IMPORTANT]
-    > Certifique-se de usar a versão mais recente da ferramenta de preparação de conteúdo do Microsoft Win32. Se você não usar a versão mais recente, verá um aviso indicando que o aplicativo foi empacotado usando uma versão mais antiga da ferramenta de preparação de conteúdo do Microsoft Win32. 
+    > Certifique-se de que utiliza a versão mais recente da Ferramenta de Preparação de Conteúdo do Microsoft Win32. Se não utilizar a versão mais recente, verá um aviso indicando que a aplicação foi embalada utilizando uma versão mais antiga da Ferramenta de Preparação de Conteúdo do Microsoft Win32. 
 
 4. Clique em **Selecionar**. Os passos da **aplicação Add** são apresentados.
 
@@ -138,12 +138,12 @@ Os seguintes passos fornecem orientação para ajudá-lo a adicionar uma aplica�
 1. Na página **programa,** configure os comandos de instalação e remoção da aplicação para a aplicação:
     - **Instale o comando**: Adicione a linha de comando de instalação completa para instalar a aplicação. 
 
-        Por exemplo, se o nome de arquivo do aplicativo for **MyApp123**, adicione o seguinte:<br>
+        Por exemplo, se o nome do ficheiro da sua aplicação for **MyApp123,** adicione o seguinte:<br>
         `msiexec /p “MyApp123.msp”`<p>
-        E, se o aplicativo for `ApplicationName.exe`, o comando será o nome do aplicativo seguido pelos argumentos do comando (switches) com suporte no pacote. <br>Por exemplo:<br>
+        E, se a aplicação for `ApplicationName.exe`, o comando seria o nome da aplicação seguido pelos argumentos de comando (switches) suportados pelo pacote. <br>Por exemplo:<br>
         `ApplicationName.exe /quiet`<br>
-        No comando acima, o pacote de `ApplicationName.exe` dá suporte ao argumento de comando `/quiet`.<p> 
-        Para os argumentos específicos com suporte no pacote de aplicativos, contate o fornecedor do aplicativo.
+        No comando acima, o pacote de `ApplicationName.exe` suporta o argumento de comando `/quiet`.<p> 
+        Para obter os argumentos específicos suportados pelo pacote de aplicações, contacte o seu fornecedor de aplicações.
 
     - **Desinstalar**o comando : Adicione a linha de comando desinstalação completa para desinstalar a aplicação com base no GUID da aplicação. 
 
@@ -156,17 +156,17 @@ Os seguintes passos fornecem orientação para ajudá-lo a adicionar uma aplica�
         >
         > Os utilizadores finais não necessitam de ter sessão iniciada no dispositivo para instalarem aplicações Win32.
         > 
-        > A instalação e desinstalação do aplicativo Win32 será executada sob o privilégio de administrador (por padrão) quando o aplicativo for definido como instalar no contexto do usuário e o usuário final no dispositivo tiver privilégios de administrador.
+        > A instalação e desinstalação da aplicação Win32 será executada sob privilégio administrativo (por padrão) quando a aplicação estiver definida para ser instalada no contexto do utilizador e o utilizador final do dispositivo tiver privilégios de administração.
     
     - **Comportamento de reinício**do dispositivo : Selecione uma das seguintes opções:
         - **Determine o comportamento com base nos códigos**de devolução : Escolha esta opção para reiniciar o dispositivo com base nos códigos de devolução.
         - **Nenhuma ação específica**: Escolha esta opção para suprimir o reinício do dispositivo durante a instalação de aplicações baseadas em MSI.
         - **A instalação da aplicação pode forçar o reinício**do dispositivo : Escolha esta opção para permitir que a instalação da aplicação esteja concluída sem suprimir o reinício.
-        - O **Intune forçará uma reinicialização obrigatória do dispositivo**: escolha esta opção para sempre reiniciar o dispositivo após uma instalação de aplicativo bem-sucedida.
+        - **Intune forçará um reinício obrigatório**do dispositivo : Escolha esta opção para reiniciar sempre o dispositivo após uma instalação bem sucedida da aplicação.
 
     - **Especifique códigos de devolução para indicar o comportamento pós-instalação**: Adicione os códigos de devolução utilizados para especificar o comportamento de retry da instalação da aplicação ou o comportamento pós-instalação. As entradas de código de retorno são adicionadas por predefinição durante a criação de aplicações. No entanto, pode adicionar códigos de retorno adicionais ou alterar os códigos de retorno existentes.
         1. Na coluna **tipo Código,** desloque o **tipo código** para um dos seguintes:
-            - **Falha** – o valor de retorno que indica uma falha na instalação do aplicativo.
+            - **Falha –** O valor de devolução que indica uma falha na instalação da aplicação.
             - **Reinício total** – o código de retorno de reinício total não permite que as aplicações Win32 seguintes sejam instaladas no cliente sem reinício. 
             - **Reinício parcial** – o código de retorno de reinício parcial permite que a aplicação Win32 seguinte seja instalada sem a necessidade de um reinício de cliente. O reinício é necessário para concluir a instalação da aplicação atual.
             - **Tentar Novamente** – o agente de código de retorno de repetição irá tentar instalar a aplicação três vezes. Aguardará durante 5 minutos entre cada tentativa. 
@@ -184,27 +184,27 @@ Os seguintes passos fornecem orientação para ajudá-lo a adicionar uma aplica�
     - **Número mínimo de processadores lógicos necessários**: opcionalmente, adicione o número mínimo de processadores lógicos necessários para instalar a aplicação.
     - **Velocidade de CPU mínima necessária (MHz)** : opcionalmente, adicione a velocidade mínima de CPU necessária para instalar a aplicação.
     - **Configure regras de requisitos adicionais:** 
-        1. Clique em **Adicionar** para exibir o painel **Adicionar uma regra de requisito** e configurar regras de requisito adicionais. Selecione o **tipo de requisito** para escolher o tipo de regra que será usado para determinar como um requisito é validado. As regras de requisito podem ser baseadas em informações do sistema de arquivos, valores de registro ou scripts do PowerShell. 
-            - **Arquivo**: quando você escolhe **arquivo** como o **tipo de requisito**, a regra de requisito deve detectar um arquivo ou pasta, data, versão ou tamanho. 
+        1. Clique em **Adicionar** para mostrar o painel de **regra Adicionar um Requisito** e configurar regras de requisitos adicionais. Selecione o **tipo Requisito** para escolher o tipo de regra que utilizará para determinar como um requisito é validado. As regras de requisitos podem basear-se em informações do sistema de ficheiros, valores de registo ou scripts PowerShell. 
+            - **Ficheiro**: Quando escolher o **Ficheiro** como **o tipo Requisito,** a regra do requisito deve detetar um ficheiro ou pasta, data, versão ou tamanho. 
                 - **Caminho** – o caminho completo da pasta que contém o ficheiro ou pasta a detetar.
                 - **Ficheiro ou pasta** – o ficheiro ou pasta a detetar.
-                - **Propriedade** – selecione o tipo de regra usado para validar a presença do aplicativo.
+                - **Propriedade** – Selecione o tipo de regra utilizada para validar a presença da app.
                 - **Associado a uma aplicação de 32 bits em clientes de 64 bits** – selecione **Sim** para expandir as variáveis de ambiente de caminho no contexto de 32 bits em clientes de 64 bits. Selecione **Não** (predefinição) para expandir as variáveis de caminho no contexto de 64 bits em clientes de 64 bits. Os clientes de 32 bits utilizarão sempre o contexto de 32 bits.
-            - **Registro**: quando você escolhe o **registro** como o **tipo de requisito**, a regra de requisito deve detectar uma configuração de registro com base no valor, na cadeia de caracteres, no número inteiro ou na versão.
+            - **Registo**: Quando escolher o **Registo** como **o tipo requisito,** a regra da exigência deve detetar uma definição de registo baseada no valor, cadeia, inteiro ou versão.
                 - **Caminho da chave** – o caminho completo da entrada de registo que contém o valor a detetar.
                 - **Nome do valor** – o nome do valor do registo a detetar. Se este valor estiver vazio, a deteção irá ocorrer na chave. O valor (predefinido) de uma chave será utilizado como valor de deteção, se o método de deteção for diferente da existência de ficheiro ou pasta.
-                - **Requisito de chave do registro** – selecione o tipo de comparação de chave do registro usado para determinar como a regra de requisito é validada.
+                - **Requisito da chave** do registo – Selecione o tipo de comparação da chave de registo utilizada para determinar como a regra de requisito é validada.
                 - **Associado a uma aplicação de 32 bits em clientes de 64 bits** – selecione **Sim** para procurar o registo de 32 bits em clientes de 64 bits. Selecione **Não** (predefinição) para procurar o registo de 64 bits em clientes de 64 bits. Os clientes de 32 bits irão sempre procurar o registo de 32 bits.
-            - **Script**: escolha o **script** como o **tipo de requisito**, quando não for possível criar uma regra de requisito com base no arquivo, no registro ou em qualquer outro método disponível no console do Intune.
-                - **Arquivo de script** – para regra de requisito baseada em script do PowerShell, se o código existir for 0, detectaremos o stdout mais detalhadamente. Por exemplo, podemos detectar STDOUT como um inteiro que tem um valor de 1.
-                - **Executar script como processo de 32 bits em clientes de 64 bits** -selecione **Sim** para executar o script em um processo de 32 bits em clientes de 64 bits. Selecione **não** (padrão) para executar o script em um processo de 64 bits em clientes de 64 bits. Os clientes de 32 bits executam o script em um processo de 32 bits.
-                - **Executar este script usando as credenciais conectadas**: selecione **Sim** para executar o script usando as credenciais de dispositivo conectado * *.
+            - **Script**: Escolha o **Script** como **o tipo Requisito,** quando não conseguir criar uma regra de exigência baseada no ficheiro, no registo ou em qualquer outro método disponível na consola Intune.
+                - **Script file** – Para a regra de requisito baseado no script PowerShell, se o código existente for 0, detetaremos o STDOUT com mais detalhes. Por exemplo, podemos detetar O DSTOUT como um inteiro que tem um valor de 1.
+                - **Executar o script como processo de 32 bits em clientes de 64 bits** - Selecione **Sim** para executar o script num processo de 32 bits em clientes de 64 bits. Selecione **No** (padrão) para executar o script num processo de 64 bits em clientes de 64 bits. Clientes de 32 bits executam o guião num processo de 32 bits.
+                - **Executar este script utilizando as credenciais registadas**: Selecione **Sim** para executar o script utilizando as credenciais do dispositivo**.
                 - **Impor a verificação de assinatura do script** – selecione **Sim** para verificar se o script está assinado por um editor fidedigno, o que permitirá que o script seja executado sem avisos ou instruções apresentados. O script será executado desbloqueado. Selecione **Não** (predefinição) para executar o script com a confirmação do utilizador final sem verificação da assinatura.
-                - **Selecionar tipo de dados de saída**: selecione o tipo de dados usado ao determinar uma correspondência de regra de requisito.
+                - **Selecione o tipo**de dados de saída : Selecione o tipo de dados utilizado ao determinar uma regra de requisito.
         2. Quando terminar de definir as regras de exigência, selecione **OK**.
 2. Clique em **Seguir** para visualizar a página de regras de **Deteção.**   
 
-### <a name="step-4-detection-rules"></a>Passo 4: Regras de deteção
+## <a name="step-4-detection-rules"></a>Passo 4: Regras de deteção
 
 1. Na página regras de **Deteção,** configure as regras para detetar a presença da aplicação:
     
@@ -213,7 +213,7 @@ Os seguintes passos fornecem orientação para ajudá-lo a adicionar uma aplica�
     > [!NOTE]
     > No painel **Regras de deteção**, pode optar por adicionar múltiplas regras. As condições para **todas** as regras têm de ser cumpridas para detetar a aplicação.
     >
-    > Se o Intune detectar que o aplicativo não está presente no dispositivo, o Intune oferecerá o aplicativo novamente após 24 horas. Isso só ocorrerá para aplicativos direcionados com a intenção necessária.
+    > Se intune detetar que a aplicação não está presente no dispositivo, intune irá oferecer novamente a aplicação após 24 horas. Isto só ocorrerá para aplicações direcionadas com intenção necessária.
 
     - **Configurar regras de deteção manualmente** – pode selecionar um dos seguintes tipos de regra:
         1. **MSI** – verificar com base na verificação da versão MSI. Esta opção só pode ser adicionada uma vez. Ao escolher este tipo de regra, tem duas definições:
@@ -245,7 +245,7 @@ Os seguintes passos fornecem orientação para ajudá-lo a adicionar uma aplica�
             
                 ![Captura de ecrã do painel de regras de deteção – a chave de registo existe](./media/apps-win32-app-management/apps-win32-app-05.png)    
             
-            2. Verifique se o valor do registro existe.
+            2. Verifique se o valor do registo existe.
         
                 ![Captura de ecrã do painel de regras de deteção – o valor de registo existe](./media/apps-win32-app-management/apps-win32-app-06.png)    
         
@@ -257,51 +257,51 @@ Os seguintes passos fornecem orientação para ajudá-lo a adicionar uma aplica�
     
        1. **Ficheiro de script** – selecione um script do PowerShell que irá detetar a presença da aplicação no cliente. A aplicação será detetada quando o script devolver um código de saída de valor 0 e escrever um valor de cadeia de carateres em STDOUT.
 
-       2. **Executar script como processo de 32 bits em clientes de 64 bits** -selecione **Sim** para executar o script em um processo de 32 bits em clientes de 64 bits. Selecione **não** (padrão) para executar o script em um processo de 64 bits em clientes de 64 bits. Os clientes de 32 bits executam o script em um processo de 32 bits.
+       2. **Executar o script como processo de 32 bits em clientes de 64 bits** - Selecione **Sim** para executar o script num processo de 32 bits em clientes de 64 bits. Selecione **No** (padrão) para executar o script num processo de 64 bits em clientes de 64 bits. Clientes de 32 bits executam o guião num processo de 32 bits.
 
        3. **Impor a verificação de assinatura do script** – selecione **Sim** para verificar se o script está assinado por um editor fidedigno, o que permitirá que o script seja executado sem avisos ou instruções apresentados. O script será executado desbloqueado. Selecione **Não** (predefinição) para executar o script com a confirmação do utilizador final sem verificação da assinatura.
     
-            O agente do Intune verifica os resultados do script. Lê os valores escritos pelo script no fluxo de saída padrão (STDOUT), no fluxo de erro padrão (STDERR) e no código de saída. Se a saída do script tiver um valor diferente de zero, o script falha e o estado de deteção de aplicação é Não instalada. Se o código de saída for zero e STDOUT tiver dados, o estado de deteção de aplicação é Instalada. 
+            Agente intonizado verifica os resultados do guião. Lê os valores escritos pelo script no fluxo de saída padrão (STDOUT), no fluxo de erro padrão (STDERR) e no código de saída. Se a saída do script tiver um valor diferente de zero, o script falha e o estado de deteção de aplicação é Não instalada. Se o código de saída for zero e STDOUT tiver dados, o estado de deteção de aplicação é Instalada. 
 
             > [!NOTE]
-            > A Microsoft recomenda codificar seu script como UTF-8. Quando a saída do script tiver o valor de 0, a execução do script foi efetuada com êxito. O segundo canal de saída indica que foi detetada uma aplicação – os dados do STDOUT indicam que a aplicação foi encontrada no cliente. Não procuramos uma cadeia de carateres específica no STDOUT.
+            > A Microsoft recomenda codificar o seu script como UTF-8. Quando a saída do script tiver o valor de 0, a execução do script foi efetuada com êxito. O segundo canal de saída indica que foi detetada uma aplicação – os dados do STDOUT indicam que a aplicação foi encontrada no cliente. Não procuramos uma cadeia de carateres específica no STDOUT.
 
 2. Depois de adicionar a sua regra(s), selecione **Next** para exibir a página **Dependencies.**
 
-### <a name="step-5-dependencies"></a>Passo 5: Dependências
+## <a name="step-5-dependencies"></a>Passo 5: Dependências
 
-As dependências de aplicativo são aplicativos que devem ser instalados antes que seu aplicativo Win32 possa ser instalado. Você pode exigir que outros aplicativos sejam instalados como dependências. Especificamente, o dispositivo deve instalar os aplicativos dependentes antes de instalar o aplicativo Win32. Há um máximo de 100 dependências, que inclui as dependências de quaisquer dependências incluídas, bem como o próprio aplicativo. Você pode adicionar dependências do aplicativo Win32 somente depois que seu aplicativo Win32 tiver sido adicionado e carregado no Intune. Depois que seu aplicativo Win32 tiver sido adicionado, você verá a opção **Dependencies** no painel do seu aplicativo Win32. 
+As dependências das aplicações são aplicações que devem ser instaladas antes da sua aplicação Win32 poder ser instalada. Pode exigir que outras aplicações sejam instaladas como dependências. Especificamente, o dispositivo deve instalar as aplicações dependentes antes de instalar a aplicação Win32. Há um máximo de 100 dependências, que inclui as dependências de quaisquer dependências incluídas, bem como a própria app. Só pode adicionar dependências de aplicações Win32 depois da sua aplicação Win32 ter sido adicionada e enviada para Intune. Uma vez adicionada a sua aplicação Win32, verá a opção **Dependencies** no painel para a sua aplicação Win32. 
 
-Qualquer dependência de aplicativo Win32 precisa ser também um aplicativo Win32. Ele não oferece suporte dependendo de outros tipos de aplicativo, como aplicativos de LOB ou aplicativos da loja de um único MSI.
+Qualquer dependência de aplicações Win32 também precisa ser uma aplicação Win32. Não suporta dependendo de outros tipos de aplicações, tais como aplicações mSI LOB individuais ou aplicações de loja.
 
-Ao adicionar uma dependência de aplicativo, você pode pesquisar com base no nome do aplicativo e no Publicador. Além disso, você pode classificar suas dependências adicionadas com base no nome do aplicativo e no Publicador. Dependências de aplicativo adicionadas anteriormente não podem ser selecionadas na lista de dependências de aplicativo adicionadas. 
+Ao adicionar uma dependência de aplicações, pode pesquisar com base no nome da aplicação e na editora. Além disso, pode classificar as suas dependências adicionais com base no nome da aplicação e no editor. As dependências de aplicações adicionadas anteriormente não podem ser selecionadas na lista de dependência de aplicações adicionadas. 
 
-Você pode escolher se deseja ou não instalar cada aplicativo dependente automaticamente. Por padrão, a opção de **instalação automática** é definida como **Sim** para cada dependência. Ao instalar automaticamente um aplicativo dependente, mesmo que o aplicativo dependente não seja direcionado para o usuário ou dispositivo, o Intune instalará o aplicativo no dispositivo para atender à dependência antes de instalar seu aplicativo Win32. É importante observar que uma dependência pode ter subdependências recursivas e cada subdependência será instalada antes da instalação da dependência principal. Além disso, a instalação de dependências não segue uma ordem de instalação em um determinado nível de dependência.
+Pode escolher se instala ou não cada aplicação dependente automaticamente. Por predefinição, a opção de **instalação automática** está definida para **Sim** para cada dependência. Ao instalar automaticamente uma aplicação dependente, mesmo que a aplicação dependente não seja direcionada para o utilizador ou dispositivo, a Intune instalará a aplicação no dispositivo para satisfazer a dependência antes de instalar a sua aplicação Win32. É importante notar que uma dependência pode ter subdependências recursivas, e cada subdependência será instalada antes de instalar a dependência principal. Além disso, a instalação de dependências não segue uma ordem de instalação a um determinado nível de dependência.
 
 ### <a name="select-the-dependencies"></a>Selecione as dependências
 
 Na página **Dependencies,** selecione aplicações que devem ser instaladas antes da aplicação Win32 poder ser instalada:
 1. Clique em **Adicionar** para exibir o painel de **dependência adicionar.**
-3. Depois de adicionar os aplicativos dependentes, clique em **selecionar**.
+3. Depois de ter adicionado as aplicações dependentes, clique em **Selecionar**.
 4. Escolha se instala automaticamente a aplicação dependente selecionando **Sim** ou **Não** sob a coluna **Instalar automaticamente.**
 5. Clique em **Seguir** para exibir a página **de tags scope.**
 
 ### <a name="understand-additional-dependency-details"></a>Compreender detalhes adicionais de dependência
 
-O usuário final verá as notificações do sistema do Windows indicando que os aplicativos dependentes estão sendo baixados e instalados como parte do processo de instalação do aplicativo Win32. Além disso, quando um aplicativo dependente não está instalado, o usuário final normalmente verá uma das seguintes notificações:
-- 1 ou mais aplicativos dependentes não puderam ser instalados
-- 1 ou mais requisitos de aplicativo dependente não atendidos
-- 1 ou mais aplicativos dependentes estão aguardando a reinicialização do dispositivo
+O utilizador final verá notificações do Windows Toast indicando que as aplicações dependentes estão a ser descarregadas e instaladas como parte do processo de instalação da aplicação Win32. Além disso, quando uma aplicação dependente não é instalada, o utilizador final verá geralmente uma das seguintes notificações:
+- 1 ou mais aplicações dependentes não foram instaladas
+- 1 ou mais requisitos de aplicação dependentes não cumpridos
+- 1 ou mais aplicações dependentes estão pendentes de um reboot do dispositivo
 
-Se você optar por não **instalar automaticamente** uma dependência, a instalação do aplicativo Win32 não será tentada. Além disso, o relatório de aplicativo mostrará que a dependência foi sinalizada como `failed` e também fornecerá um motivo de falha. Você pode exibir a falha na instalação da dependência clicando em uma falha (ou aviso) fornecida nos [detalhes da instalação](troubleshoot-app-install.md#win32-app-installation-troubleshooting)do aplicativo Win 32. 
+Se optar por não **instalar automaticamente** uma dependência, a instalação da aplicação Win32 não será tentada. Além disso, o relatório de aplicações mostrará que a dependência foi sinalizada como `failed` e também fornecer uma razão de falha. Pode ver a falha de instalação da dependência clicando numa falha (ou aviso) fornecida nos detalhes de [instalação](troubleshoot-app-install.md#win32-app-installation-troubleshooting)da aplicação Win 32 . 
 
-Cada dependência aderirá à lógica de repetição do aplicativo Win32 do Intune (tente instalar três vezes após aguardar 5 minutos) e o agendamento de reavaliação global. Além disso, as dependências só são aplicáveis no momento da instalação do aplicativo Win32 no dispositivo. As dependências não são aplicáveis para desinstalar um aplicativo Win32. Para excluir uma dependência, você deve clicar nas reticências (três pontos) à esquerda do aplicativo dependente localizado no final da linha da lista de dependências. 
+Cada dependência irá aderir à lógica de retry da aplicação Intune Win32 (tente instalar 3 vezes depois de esperar 5 minutos) e ao calendário global de reavaliação. Além disso, as dependências só são aplicáveis no momento da instalação da aplicação Win32 no dispositivo. As dependências não são aplicáveis para desinstalar uma aplicação Win32. Para eliminar uma dependência, deve clicar nas elipses (três pontos) à esquerda da app dependente localizada no final da linha da lista de dependência. 
 
 ## <a name="step-6---select-scope-tags-optional"></a>Passo 6 - Selecione etiquetas de âmbito (opcional)
 Você pode usar marcas de escopo para determinar quem pode ver as informações do aplicativo cliente no Intune. Para mais detalhes sobre etiquetas de âmbito, consulte [Use o controlo de acesso baseado em funções e as etiquetas](../fundamentals/scope-tags.md)de âmbito para TI distribuídos .
 
 1. Clique em **Selecionar etiquetas** de âmbito para adicionar opcionalmente etiquetas de âmbito para a aplicação. 
-2. Clique em **Avançar** para exibir a página **atribuições** .
+2. Clique em **Seguir** para exibir a página **de Tarefas.**
 
 ## <a name="step-7---assignments"></a>Passo 7 - Atribuições
 
@@ -324,32 +324,32 @@ Pode selecionar as atribuições de grupo **necessárias**, **disponíveis para 
 
     A lâmina **de visão geral** para a aplicação de linha de negócio seleção é apresentada.
 
-Neste ponto, você concluiu as etapas para adicionar um aplicativo Win32 ao Intune. Para obter informações sobre a atribuição e monitorização de aplicações, veja [Atribuir aplicações a grupos com o Microsoft Intune](apps-deploy.md) e [Monitorizar informações e atribuições da aplicação com o Microsoft Intune](apps-monitor.md).
+Neste ponto, completou etapas para adicionar uma aplicação Win32 ao Intune. Para obter informações sobre a atribuição e monitorização de aplicações, veja [Atribuir aplicações a grupos com o Microsoft Intune](apps-deploy.md) e [Monitorizar informações e atribuições da aplicação com o Microsoft Intune](apps-monitor.md).
 
 ## <a name="delivery-optimization"></a>Otimização de Entrega
 
-Os clientes do Windows 10 1709 e posteriores baixarão o conteúdo do aplicativo Win32 do Intune usando um componente de otimização de entrega no cliente do Windows 10. A otimização de entrega fornece a funcionalidade ponto a ponto que está ativada por padrão. A otimização de entrega pode ser configurada pela diretiva de grupo e por meio da configuração do dispositivo do Intune. Para obter mais informações, consulte [otimização de entrega para Windows 10](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization). 
+O Windows 10 1709 e os clientes acima vão descarregar o conteúdo da aplicação Intune Win32 utilizando um componente de otimização de entregas no cliente do Windows 10. A otimização da entrega fornece uma funcionalidade peer-to-peer que é ligada por padrão. A otimização da entrega pode ser configurada pela política do grupo e através da configuração do Dispositivo Intune. Para mais informações, consulte [otimização de entrega para o Windows 10](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization). 
 
 > [!NOTE]
-> Você também pode instalar um servidor de cache conectado da Microsoft em seus pontos de distribuição Configuration Manager para armazenar em cache o conteúdo do aplicativo Win32 do Intune. Para obter mais informações, consulte [cache conectado da Microsoft em Configuration Manager-suporte para aplicativos Win32 do Intune](https://docs.microsoft.com/configmgr/core/plan-design/hierarchy/microsoft-connected-cache#bkmk_intune).
+> Também pode instalar um servidor De Cache ligado ao Microsoft no seu Gestor de Configuração para cache O conteúdo da aplicação Intune Win32. Para mais informações, consulte o Microsoft Connected Cache no Gestor de [Configuração - Suporte para aplicações Intune Win32](https://docs.microsoft.com/configmgr/core/plan-design/hierarchy/microsoft-connected-cache#bkmk_intune).
 
 ## <a name="install-required-and-available-apps-on-devices"></a>Instalar aplicações necessárias e disponíveis em dispositivos
 
-O usuário final verá as notificações do sistema do Windows para as instalações de aplicativo necessárias e disponíveis. A imagem seguinte mostra uma notificação de alerta de exemplo na qual a instalação da aplicação não é concluída até que o dispositivo seja reiniciado. 
+O utilizador final verá notificações do Windows Toast para as instalações de aplicações necessárias e disponíveis. A imagem seguinte mostra uma notificação de alerta de exemplo na qual a instalação da aplicação não é concluída até que o dispositivo seja reiniciado. 
 
-![Captura de tela de notificações do sistema do Windows para uma instalação de aplicativo](./media/apps-win32-app-management/apps-win32-app-08.png)    
+![Screenshot de notificações de torradas do Windows para uma instalação de aplicação](./media/apps-win32-app-management/apps-win32-app-08.png)    
 
-A imagem a seguir notifica o usuário final que as alterações de aplicativo estão sendo feitas no dispositivo.
+A imagem que se segue notifica o utilizador final de que estão a ser feitas alterações na aplicação no dispositivo.
 
-![Captura de tela notificando o usuário de que as alterações do aplicativo estão sendo feitas](./media/apps-win32-app-management/apps-win32-app-09.png)    
+![Screenshot notificando o utilizador de que estão a ser feitas alterações na aplicação](./media/apps-win32-app-management/apps-win32-app-09.png)    
 
 ## <a name="set-win32-app-availability-and-notifications"></a>Definir disponibilidade e notificações de aplicações Win32
 Pode configurar o tempo de início e prazo para uma aplicação Win32. Na hora de início, a extensão de gestão Intune iniciará o download e cache de conteúdo da aplicação para a intenção necessária. O aplicativo será instalado na hora do prazo. Para aplicações disponíveis, a hora de início ditará quando a aplicação for visível no Portal da Empresa e os conteúdos serão descarregados quando o utilizador final solicitar a aplicação do Portal da Empresa. Além disso, pode permitir um período de reinício da graça. 
 
 Detete a disponibilidade da aplicação com base numa data e hora para uma aplicação necessária utilizando os seguintes passos:
 
-1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
-2. Selecione **aplicativos** > **todos os aplicativos**.
+1. Inscreva-se no [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **Apps** > **Todas as aplicações.**
 3. Selecione uma aplicação Windows existente **(Win32)** da lista. 
 4. A partir do painel de aplicações, selecione **Propriedades** > **Editar** ao lado da secção **de Atribuição >** Adicionar **grupo** abaixo do tipo de atribuição **exigido.** 
    Note que a disponibilidade da aplicação pode ser definida com base no tipo de atribuição. O **tipo de Atribuição** pode ser **exigido,** **disponível para dispositivos matriculados,** ou **desinstalar**.
@@ -362,42 +362,42 @@ Detete a disponibilidade da aplicação com base numa data e hora para uma aplic
     > - **Desinstalar**: Pode optar por**desinstalar esta aplicação para todos os utilizadores** e/ou **desinstalar esta aplicação para todos os dispositivos**.
 
 6. Para modificar as opções de notificação do **utilizador Final,** selecione **Mostrar todas as notificações**de torradas .
-7. No painel **Editar atribuição** , defina as **notificações de usuário finalizador** para **Mostrar todas as notificações do sistema**. Note que pode definir **notificações finais** do utilizador para mostrar todas as notificações de **torradas,** mostrar notificações de **torradas para reiniciar o computador**ou ocultar todas as notificações de **torradas**.
+7. No painel de **atribuição editar,** detete as **notificações** do utilizador Ender para **mostrar todas as notificações**de torradas . Note que pode definir **notificações finais** do utilizador para mostrar todas as notificações de **torradas,** mostrar notificações de **torradas para reiniciar o computador**ou ocultar todas as notificações de **torradas**.
 8. Detete a disponibilidade da **App** para **Uma data e hora específicas** e selecione a sua data e hora. Esta data e hora especifica quando a aplicação é descarregada para o dispositivo de utilizadores finais. 
 9. Detete o prazo de **instalação** da App para **Uma data e hora específicas** e selecione a sua data e hora. Esta data e hora especifica quando a aplicação é instalada no dispositivo de utilizadores finais. Quando for feita mais de uma atribuição para o mesmo utilizador ou dispositivo, o prazo de instalação da aplicação é escolhido com base no mais cedo possível.
 
 10. Clique **ativado** ao lado do período de **graça restart**. O período de graça de reinício começa assim que a instalação da aplicação estiver concluída no dispositivo. Quando desativado, o aparelho pode reiniciar sem aviso prévio. <br>Pode personalizar as seguintes opções:
-    - **Período de carência da reinicialização do dispositivo (minutos)** : o valor padrão é 1440 minutos (24 horas). Este valor pode ser no máximo 2 semanas.
+    - Período de graça de reinício do **dispositivo (minutos)** : O valor predefinido é de 1440 minutos (24 horas). Este valor pode ser no máximo 2 semanas.
     - **Selecione quando deve visualizar a caixa de diálogo de contagem regressiva antes de o reinício ocorrer (minutos)** : O valor predefinido é de 15 minutos.
     - **Permitir que o utilizador ressone a notificação de reinício:** Pode escolher **Sim** ou **Não**.
         - **Selecione a duração do soneto (minutos)** : O valor predefinido é de 240 minutos (4 horas). O valor do soneca não pode ser mais do que reiniciar o período de graça.
 
 11. Clique em **Rever + salvar**.
 
-## <a name="toast-notifications-for-win32-apps"></a>Notificações do sistema para aplicativos Win32 
-Se necessário, você pode suprimir a exibição de notificações do sistema de usuário final por atribuição de aplicativo. No Intune, selecione **aplicativos** > **todos os aplicativos** > selecione o aplicativo > **atribuições** > **incluir grupos**. 
+## <a name="toast-notifications-for-win32-apps"></a>Notificações de brindes para aplicações Win32 
+Se necessário, pode suprimir a apresentação de notificações de torradas finais por aplicação. A partir de Intune, selecione **Apps** > **Todas as aplicações** > selecione a app > **Atribuições** > **Incluir Grupos.** 
 
 > [!NOTE]
 > As aplicações Win32 instaladas da extensão de gestão do Intune não serão desinstaladas em dispositivos não inscritos. Os administradores podem tirar partido da exclusão de atribuição para não oferecer aplicações Win32 em dispositivos BYOD.
 
 ## <a name="troubleshoot-win32-app-issues"></a>Resolver problemas relacionados com aplicações Win32
-Os registos de agente no computador cliente encontram-se normalmente em `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs`. Pode tirar partido de `CMTrace.exe` para ver estes ficheiros de registo. Para obter mais informações, consulte [CMTrace](https://docs.microsoft.com/configmgr/core/support/cmtrace).
+Os registos de agente no computador cliente encontram-se normalmente em `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs`. Pode tirar partido de `CMTrace.exe` para ver estes ficheiros de registo. Para mais informações, consulte [CMTrace](https://docs.microsoft.com/configmgr/core/support/cmtrace).
 
-![Captura de tela dos logs de agente no computador cliente](./media/apps-win32-app-management/apps-win32-app-10.png)    
+![Screenshot dos registos do Agente na máquina cliente](./media/apps-win32-app-management/apps-win32-app-10.png)    
 
 > [!IMPORTANT]
-> Para permitir a instalação e execução correta de aplicativos LOB Win32, as configurações de anti-malware devem excluir os seguintes diretórios de serem verificados:<p>
-> **Em computadores cliente x64**:<br>
-> *C:\Arquivos de programas (x86) \Microsoft Intune Management Extension\Content*<br>
+> Para permitir a instalação e execução adequadas das aplicações LOB Win32, as definições anti-malware devem excluir a digitalização dos seguintes diretórios:<p>
+> **Nas máquinas de clientes X64:**<br>
+> *C:\Ficheiros do programa (x86)\Microsoft Intune Management Extension\Content*<br>
 > *C:\windows\IMECache*
 >  
-> **Em computadores cliente x86**:<br>
-> *C:\Arquivos de Programas\microsoft Intune Management Extension\Content*<br>
+> **Nas máquinas de clientes X86:**<br>
+> *C:\Program Files\Microsoft Intune Management Extension\Content*<br>
 > *C:\windows\IMECache*
 
-### <a name="detecting-the-win32-app-file-version-using-powershell"></a>Detectando a versão do arquivo do aplicativo Win32 usando o PowerShell
+### <a name="detecting-the-win32-app-file-version-using-powershell"></a>Deteção da versão de ficheiro de aplicação Win32 usando powerShell
 
-Se você tiver dificuldade para detectar a versão do arquivo do aplicativo Win32, considere usar ou modificar o seguinte comando do PowerShell:
+Se tiver dificuldade em detetar a versão de ficheiro sinuoso win32, considere utilizar ou modificar o seguinte comando PowerShell:
 
 ``` PowerShell
 
@@ -417,13 +417,13 @@ exit 1
 }
 ```
 
-No comando do PowerShell acima, substitua a cadeia de caracteres `<path to binary file>` pelo caminho para o arquivo do aplicativo Win32. Um caminho de exemplo seria semelhante ao seguinte:<br>
+No comando PowerShell acima, substitua a cadeia `<path to binary file>` pelo caminho para o ficheiro da aplicação Win32. Um caminho de exemplo seria semelhante ao seguinte:<br>
 `C:\Program Files (x86)\Microsoft SQL Server Management Studio 18\Common7\IDE\ssms.exe`
 
-Além disso, substitua a cadeia de caracteres `<file version of successfully detected file>` pela versão do arquivo que você precisa detectar. Uma cadeia de caracteres de versão de arquivo de exemplo seria semelhante ao seguinte:<br>
+Além disso, substitua a cadeia `<file version of successfully detected file>` pela versão do ficheiro que precisa de detetar. Uma cadeia de versão de ficheiro de exemplo seria semelhante à seguinte:<br>
 `2019.0150.18118.00 ((SSMS_Rel).190420-0019)`
 
-Se você precisar obter as informações de versão do seu aplicativo Win32, poderá usar o seguinte comando do PowerShell:
+Se precisar de obter as informações da versão da sua aplicação Win32, pode utilizar o seguinte comando PowerShell:
 
 ``` PowerShell
 
@@ -431,15 +431,15 @@ Se você precisar obter as informações de versão do seu aplicativo Win32, pod
 
 ```
 
-No comando do PowerShell acima, substitua `<path to binary file>` pelo caminho do arquivo.
+No comando powerShell acima, substitua `<path to binary file>` pelo seu caminho de ficheiro.
 
-### <a name="additional-troubleshooting-areas-to-consider"></a>Áreas de solução de problemas adicionais a serem consideradas
+### <a name="additional-troubleshooting-areas-to-consider"></a>Áreas adicionais de resolução de problemas a considerar
 - Verificar o direcionamento para garantir que o agente está instalado no dispositivo – uma aplicação Win32 direcionada para um grupo ou um Script do PowerShell direcionado para um grupo irá criar a política de instalação de agente para o grupo de segurança.
 - Verificar a versão do SO – Windows 10 1607 e posterior.  
 - Verificar a SKU do Windows 10 – o Windows 10 S ou versões do Windows em execução com o modo S ativado não suportam a instalação da MSI.
 
-Para obter mais informações sobre como solucionar problemas de aplicativos Win32, consulte [solução de problemas de instalação do aplicativo Win32](troubleshoot-app-install.md#win32-app-installation-troubleshooting).
+Para mais informações sobre a resolução de problemas das aplicações Win32, consulte a instalação de problemas de instalação da [aplicação Win32](troubleshoot-app-install.md#win32-app-installation-troubleshooting).
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 - Para obter mais informações sobre como adicionar aplicações ao Intune, veja [Adicionar aplicações ao Microsoft Intune](apps-add.md).
