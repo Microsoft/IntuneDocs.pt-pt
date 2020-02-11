@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 957e2b8065662af1b0f1a28108a740ef253a3b3e
-ms.sourcegitcommit: 2b905913840d4133a7964fe4f54a58ea6e421e12
+ms.openlocfilehash: 3ae5a7508f27dbf15a58ba3386e744bb63bf102b
+ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "77074653"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77125018"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>Gerir o acesso à web utilizando o Microsoft Edge com o Microsoft Intune
 
@@ -293,7 +293,19 @@ Pode configurar se as ligações restritas devem ser abertas diretamente na nave
 
 |    Chave    |    Valor    |
 |----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    `com.microsoft.intune.mam.managedbrowser.AllowTransitionOnBlock`    |    **True** permite que o Microsoft Edge transeos os utilizadores para o seu contexto pessoal para abrir sites bloqueados.<p>**O bloco** impede o Microsoft Edge de transitar os utilizadores. Os utilizadores são simplesmente mostrados uma mensagem afirmando que o site a que estão a tentar aceder está bloqueado.    |
+
+## <a name="disable-microsoft-edge-prompt-to-save-passwords"></a>Desativar o pedido do Microsoft Edge para guardar senhas
+
+|    Chave    |    Valor    |
+|----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    `com.microsoft.intune.mam.managedbrowser.openInPrivateIfBlock`    |    **True** fará com que links restritos se abram diretamente na navegação InPrivate.<p>**Falso** (predefinido) apresentará aos utilizadores a opção de abrir um link restrito com a navegação InPrivate ou com a sua conta pessoal (MSA).    |
+
+Por padrão, o Microsoft Edge no iOS oferece-se para guardar as palavras-passe dos seus utilizadores para o porta-chaves. Se quiser desativar esta solicitação para a sua organização, configure a seguinte definição:
+
+|    Chave    |    Valor    |
+|-----------|-------------|
+|     'com.microsoft.intune.mam.managedbrowser.disableFeatures'    |    **a palavra-passe** irá desativar o pedido de guardar palavras-passe.    |
 
 ## <a name="use-microsoft-edge-on-ios-to-access-managed-app-logs"></a>Use o Microsoft Edge no iOS para aceder a registos de aplicações geridos 
 
