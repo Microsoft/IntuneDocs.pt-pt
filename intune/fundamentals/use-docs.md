@@ -1,7 +1,7 @@
 ---
 title: Using the Intune docs (Utilizar a documentação do Intune)
 titleSuffix: Microsoft Intune
-description: Saiba como Pesquisar os documentos do Intune, fornecer comentários de documentos e contribuir com os documentos.
+description: Aprenda a pesquisar os docs Intune, fornecer feedback do doc e contribuir para os docs.
 ms.date: 09/15/2019
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -11,106 +11,106 @@ author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 42e16be44dba539007967dd921da4c8d4f095ec4
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 607e1136fd3ab5661a2b054410d6fc7fce94994d
+ms.sourcegitcommit: 1aaff35fddb3d06458d739968d28971fed0bb2ba
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72504814"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "77155348"
 ---
 # <a name="using-the-intune-docs"></a>Using the Intune docs (Utilizar a documentação do Intune)
 
-Este artigo fornece informações para ajudá-lo a pesquisar as informações do Microsoft Intune docs, fornecer comentários sobre os documentos do Intune e mostrar como você pode contribuir com rapidez e facilidade para os documentos.
+Este artigo fornece informações para ajudá-lo a pesquisar os docs microsoft Intune para obter informações, fornecer feedback para os docs Intune, e mostra como você pode contribuir de forma rápida e fácil para os docs.
 
-Para obter ajuda geral e suporte para o Intune, consulte [obter suporte para o Intune](../get-support.md).
+Para obter ajuda geral e apoio ao Intune, consulte [Obter suporte para Intune](../get-support.md).
 
-## <a name="search-the-docs"></a>Pesquisar os documentos
+## <a name="search-the-docs"></a>Pesquise os médicos
 
  Utilize as seguintes sugestões de procura para localizar as informações de que necessita:  
 
-- Ao usar seu mecanismo de pesquisa preferido para localizar conteúdo para Microsoft Intune, inclua `Intune` junto com suas palavras-chave de pesquisa.  
+- Ao utilizar o seu motor de pesquisa preferido para localizar conteúdos para o Microsoft Intune, inclua `Intune` juntamente com as suas palavras-chave de pesquisa.  
 
-  - Procure os resultados de docs.microsoft.com. Os resultados de technet.microsoft.com ou msdn.microsoft.com são para versões mais antigas do produto.  
+  - Procure os resultados de docs.microsoft.com. Os resultados de technet.microsoft.com ou msdn.microsoft.com são para versões de produtos mais antigas.  
 
-  - Para concentrar ainda mais os resultados da pesquisa na biblioteca de conteúdo atual, inclua `site:docs.microsoft.com` para o escopo do mecanismo de pesquisa.  
+  - Para focar ainda mais os resultados da pesquisa na biblioteca de conteúdos atuais, inclua `site:docs.microsoft.com` para examinar o motor de busca.  
 
-- Use termos de pesquisa que correspondam à terminologia na interface do usuário e na documentação online. Evite termos ou abreviações não oficiais que você possa ver no conteúdo da Comunidade.
+- Utilize termos de pesquisa que correspondam à terminologia na interface do utilizador e documentação online. Evite termos ou abreviaturas não oficiais que possa ver em conteúdos comunitários.
 
-- Para pesquisar em um artigo que você está exibindo no momento, use o recurso **Localizar** do navegador. Com os navegadores da Web mais modernos, pressione **Ctrl**+**F** e insira os termos de pesquisa.  
+- Para pesquisar dentro de um artigo que está atualmente a ver, use a funcionalidade **Find** do seu navegador. Com a maioria dos navegadores web modernos, prima **Ctrl**+**F** e, em seguida, insira os seus termos de pesquisa.  
 
-- Cada artigo em docs.microsoft.com inclui os seguintes campos para ajudar a pesquisar o conteúdo:  
+- Cada artigo sobre docs.microsoft.com inclui os seguintes campos para ajudar na pesquisa do conteúdo:  
 
-  - **Pesquise** no canto superior direito. Para pesquisar todos os artigos, insira termos neste campo. A pesquisa inclui automaticamente o escopo de pesquisa do Intune.
+  - **Procure** no canto superior direito. Para pesquisar todos os artigos de entrada neste campo, é a sua vez. A pesquisa inclui automaticamente o âmbito de pesquisa Intune.
 
-  - **Filtre por título** acima do Sumário à esquerda. Para pesquisar o Sumário atual, insira termos neste campo. Esse campo corresponde apenas aos termos que aparecem nos títulos dos artigos para o nó atual. O último item nos resultados da pesquisa oferece a opção de procurar os termos em toda a documentação do Intune.
+  - **Filtrar por título** acima da tabela esquerda do conteúdo. Para pesquisar a tabela atual de conteúdos, insira os termos neste campo. Este campo apenas corresponde aos termos que aparecem nos títulos do artigo para o nó atual. O último item nos resultados da pesquisa dá-lhe a opção de procurar os termos em toda a documentação Intune.
 
-- Está tendo problemas para encontrar algo? [Comentários do arquivo!](#provide-doc-feedback) Ao arquivar o problema, forneça o mecanismo de pesquisa que você está usando, as palavras-chave que você tentou e o artigo de destino. Esse comentário ajuda a Microsoft a otimizar o conteúdo para melhor pesquisa.  
+- Tem problemas em encontrar alguma coisa? [Feedback do arquivo!](#provide-doc-feedback) Ao arquivar o problema, forneça o motor de busca que está a usar, as palavras-chave que tentou e o artigo-alvo. Este feedback ajuda a Microsoft a otimizar o conteúdo para uma melhor pesquisa.  
 
-## <a name="provide-doc-feedback"></a>Fornecer comentários de documentos
+## <a name="provide-doc-feedback"></a>Fornecer feedback do doc
 
-A seção de comentários está na parte inferior de cada artigo. Clique no link de **comentários** no canto superior direito de qualquer artigo para ir para esta seção. Os comentários são integrados a problemas do GitHub. Para obter mais informações sobre a integração com problemas do GitHub, consulte esta [postagem no blog da plataforma de documentos](https://docs.microsoft.com/teamblog/a-new-feedback-system-is-coming-to-docs).
+A secção de Feedback está na parte inferior de cada artigo. Clique no link **Feedback** no canto superior direito de qualquer artigo para ir a esta secção. O feedback está integrado com as Questões GitHub. Para obter mais informações sobre a integração com as Questões GitHub, consulte este post de blog da [plataforma docs](https://docs.microsoft.com/teamblog/a-new-feedback-system-is-coming-to-docs).
 
-Para compartilhar comentários sobre o serviço do Intune (não documentos), clique em comentários sobre o **produto**.
+Para partilhar feedback sobre o serviço Intune (não docs), clique no **feedback do Produto**.
 
-Uma [conta do GitHub](https://github.com/join) é um pré-requisito para fornecer comentários sobre a documentação. Depois de entrar, há uma autorização única para o MicrosoftDocs. Em seguida, ao clicar em **comentários de conteúdo**, insira um título e comentário e **envie comentários**. Esta ação executa um novo problema para o artigo de destino no [repositório GitHub do Intune](https://github.com/MicrosoftDocs/intunedocs/issues).
+Uma [conta GitHub](https://github.com/join) é um pré-requisito para fornecer feedback de documentação. Uma vez que você inscreveu, há uma autorização única para MicrosoftDocs. Em seguida, quando clicar no **feedback do Conteúdo,** insira um título e comente e, em seguida, **submeta feedback**. Esta ação apresenta um novo problema para o artigo-alvo no [repositório Intune GitHub](https://github.com/MicrosoftDocs/intunedocs/issues).
 
-Você também verá problemas existentes abertos ou fechados para o artigo de destino. Se houver algum, examine-os antes de enviar um novo problema. Se você encontrar um problema relacionado, clique no ícone de face para adicionar uma reação ou expanda-a para adicionar um comentário.
+Verá também questões abertas ou fechadas existentes para o artigo-alvo. Se houver, reveja-os antes de apresentar uma nova emissão. Se encontrar um problema relacionado, clique no ícone facial para adicionar uma reação, ou pode expandi-lo para adicionar um comentário.
 
-### <a name="types-of-feedback"></a>Tipos de comentários
+### <a name="types-of-feedback"></a>Tipos de feedback
 
-Use os problemas do GitHub para enviar os seguintes tipos de comentários:
+Utilize problemas gitHub para submeter os seguintes tipos de feedback:
 
-- Bug do documento: o conteúdo está desatualizado, não é claro, confuso ou está desfeito.
-- Aprimoramento de documento: uma sugestão para melhorar o artigo.
-- Pergunta do documento: você precisa de ajuda para encontrar a documentação existente.
-- Ideia do documento: uma sugestão para um novo artigo. Use esse método em vez de UserVoice para obter comentários sobre a documentação.
-- Kudos: comentários positivos sobre um artigo útil ou informativo!
-- Localização: comentários sobre a conversão de conteúdo.
-- SEO (otimização do mecanismo de pesquisa): comentários sobre problemas de pesquisa de conteúdo. Inclua o mecanismo de pesquisa, as palavras-chave e o artigo de destino nos comentários.
+- Bug do doc: O conteúdo está desatualizado, pouco claro, confuso ou quebrado.
+- Melhoria do doc: Uma sugestão para melhorar o artigo.
+- Pergunta do doc: Precisa de ajuda para encontrar a documentação existente.
+- Ideia do doc: Uma sugestão para um novo artigo. Utilize este método em vez do UserVoice para obter feedback de documentação.
+- Kudos: Feedback positivo sobre um artigo útil ou informativo!
+- Localização: Feedback sobre tradução de conteúdo.
+- Otimização do motor de busca (SEO): Feedback sobre problemas à procura de conteúdo. Inclua o motor de busca, palavras-chave e artigo de destino nos comentários.
 
-Se forem gerados problemas para tópicos não relacionados ao documento, como [comentários sobre produtos](https://microsoftintune.uservoice.com/forums/291681-ideas), [perguntas sobre produtos](https://social.technet.microsoft.com/Forums/en-US/home?forum=microsoftintuneprod)ou [solicitações de suporte](../get-support.md), esses problemas serão fechados e o usuário será redirecionado para o canal de comentários adequado.
+Se forem levantadas questões para temas não relacionados com o doc, tais como feedback do [produto,](https://microsoftintune.uservoice.com/forums/291681-ideas)questões de [produto,](https://social.technet.microsoft.com/Forums/en-US/home?forum=microsoftintuneprod)ou pedidos de [suporte,](../get-support.md)estas questões serão encerradas e o utilizador redirecionado para o canal de feedback adequado.
 
-Para compartilhar comentários sobre a plataforma docs.microsoft.com, consulte [comentários de documentos](https://aka.ms/sitefeedback). A plataforma inclui todos os componentes de wrapper, como o cabeçalho, o Sumário e o menu à direita. Além disso, como os artigos são renderizados no navegador, como a fonte, as caixas de alerta e as âncoras de página.
+Para partilhar feedback na plataforma docs.microsoft.com, consulte o feedback do [Docs](https://aka.ms/sitefeedback). A plataforma inclui todos os componentes do invólucro, tais como o cabeçalho, tabela de conteúdos e menu direito. Também como os artigos são render izados no navegador, como a fonte, caixas de alerta e âncoras de página.
 
 ## <a name="contribute-to-docs"></a>Contribua para a Documentação do Intune
 
-Os documentos do Intune, como a maior parte do conteúdo em docs.microsoft.com, são de software livre no GitHub. Essa biblioteca aceita e incentiva as contribuições da Comunidade. Para obter mais informações sobre como começar, consulte o [Guia do colaborador](https://docs.microsoft.com/contribute). A criação de uma [conta do GitHub](https://github.com/join) é o único pré-requisito.
+Os docs Intune, como a maioria dos conteúdos em docs.microsoft.com, são de código aberto no GitHub. Esta biblioteca aceita e encoraja contribuições comunitárias. Para mais informações sobre como começar, consulte o Guia do [Contribuinte.](https://docs.microsoft.com/contribute) Criar uma [conta GitHub](https://github.com/join) é o único pré-requisito.
 
-### <a name="basic-steps-to-contribute-to-docs"></a>Etapas básicas para contribuir com documentos
+### <a name="basic-steps-to-contribute-to-docs"></a>Passos básicos para contribuir para os docs
 
-1. No artigo de destino, clique em **Editar**. Essa ação abre o arquivo de origem no GitHub.  
+1. A partir do artigo-alvo, clique em **Editar**. Esta ação abre o ficheiro fonte no GitHub.  
 
-2. Para editar o arquivo de origem, clique no ícone de lápis.  
+2. Para editar o ficheiro fonte, clique no ícone do lápis.  
 
-3. Faça alterações na fonte de redução. Para obter mais informações, consulte [como usar a redução para escrever documentos](https://docs.microsoft.com/contribute/how-to-write-use-markdown).  
+3. Faça alterações na fonte de marcação. Para mais informações, consulte [Como utilizar o Markdown para escrever Docs](https://docs.microsoft.com/contribute/contribute-how-to-write-use-markdown).  
 
-4. Na seção propor alteração de arquivo, insira o comentário de confirmação pública *que descreve o que* você alterou. Em seguida, clique em **propor alteração de arquivo**.  
+4. Na secção de alteração de ficheiros Proposta, insira o comentário de compromisso público descrevendo *o que* mudou. Em seguida, clique em **Propor alterar ficheiros**.  
 
-5. Role para baixo e verifique as alterações feitas. Clique em **criar solicitação de pull** para abrir o formulário. Descreva *por que* você fez essa alteração. Clique em **Criar pedido Pull**.
+5. Desça e verifique as alterações que fez. Clique em **Criar pedido de puxar** para abrir o formulário. Descreva *por* que fez esta mudança. Clique **em Criar pedido de puxar**.
 
-A equipe de escrita receberá sua solicitação de pull, atribuirá o item ao gravador apropriado, examinará o texto e fará uma passagem de edição rápida e aprovará e mesclará as alterações ou entrará em contato com você para obter mais informações sobre a atualização.  
+A equipa de redação receberá o seu pedido de puxão, atribuirá o item ao autor apropriado, analisará o texto e fará um passe de edição rápida, e aprovará e fundirá as alterações ou contactá-lo-á para obter mais informações sobre a atualização.  
 
 ### <a name="what-to-contribute"></a>O que contribuir
 
-Se você estiver interessado em contribuir, mas não souber por onde começar, consulte as seguintes sugestões:  
+Se está interessado em contribuir, mas não sabe por onde começar, consulte as seguintes sugestões:  
 
-- Revise um artigo para obter exatidão. Em seguida, atualize os metadados **MS. Date** usando o formato `mm/dd/yyyy`. Essa contribuição ajuda a manter o conteúdo atualizado.  
+- Reveja um artigo para precisão. Em seguida, atualize os metadados **ms.date** utilizando `mm/dd/yyyy` formato. Esta contribuição ajuda a manter o conteúdo fresco.  
 
-- Adicione esclarecimentos, exemplos ou diretrizes com base em sua experiência. Essa contribuição usa o poder da Comunidade para compartilhar conhecimento.
+- Adicione esclarecimentos, exemplos ou orientações com base na sua experiência. Esta contribuição usa o poder da comunidade para partilhar conhecimento.
 
-- Corrija as traduções em um idioma diferente do inglês. Essa contribuição melhora a usabilidade do conteúdo localizado.  
+- Traduções corretas numa língua não inglesa. Esta contribuição melhora a utilização de conteúdos localizados.  
 
 > [!Note]  
-> Contribuições maiores exigem a assinatura de um CLA (contrato de licença de contribuição) se você não for um funcionário da Microsoft. O GitHub exige automaticamente que você assine este contrato quando uma contribuição atender ao limite. Você só precisa assinar este contrato uma vez.
+> Contribuições maiores requerem a assinatura de um Contrato de Licença de Contribuição (CLA) se não for um funcionário da Microsoft. O GitHub exige automaticamente que assine este acordo quando uma contribuição cumpre o limiar. Só precisa assinar este acordo uma vez.
 
 ### <a name="tips"></a>Sugestões
 
-Siga estas diretrizes gerais ao contribuir com documentos do Intune:
+Siga estas orientações gerais ao contribuir para os docs intune:
 
-- Não nos surpreenda com grandes solicitações pull. Em vez disso, [Execute um problema](#provide-doc-feedback) e inicie uma discussão. Em seguida, podemos concordar com uma direção antes de investir um grande período de tempo.  
+- Não nos surpreenda com grandes pedidos de atração. Em vez disso, [apresente um problema](#provide-doc-feedback) e inicie uma discussão. Então podemos concordar numa direção antes de investir uma grande quantidade de tempo.  
 
-- Leia o [Guia de estilo da Microsoft](https://aka.ms/MicrosoftStyle). Conheça as [10 principais dicas de estilo e voz da Microsoft](https://docs.microsoft.com/style-guide/top-10-tips-style-voice).  
+- Leia o guia de [estilo da Microsoft](https://aka.ms/MicrosoftStyle). Conheça as [10 dicas do Top 10 para o estilo e voz](https://docs.microsoft.com/style-guide/top-10-tips-style-voice)da Microsoft.  
 
-- Siga o [fluxo de trabalho de fluxo do GitHub](https://guides.github.com/introduction/flow/).  
+- Siga o [fluxo de trabalho gitHub Flow](https://guides.github.com/introduction/flow/).  
 
-- Blog e tweet (ou qualquer coisa) sobre suas contribuições com frequência!  
+- Blog e tweet (ou o que quer que seja) sobre as suas contribuições, com frequência!  
