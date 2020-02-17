@@ -18,14 +18,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc2e77db1aa322eb70c64d82ddca238f49b39fb2
-ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
+ms.openlocfilehash: cd2efc759f4edf2a2ae62c98cb04af61ff20088c
+ms.sourcegitcommit: 576b9528629981e87e775fac146932e502f07a74
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77125035"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "77258118"
 ---
-# <a name="whats-new-in-microsoft-intune"></a>O que há de novo no Microsoft Intune
+# <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 
 Saiba mais sobre as novidades todas as semanas no Microsoft Intune. Também pode encontrar [avisos importantes, lançamentos](#notices) [anteriores](whats-new-archive.md)e informações sobre [como as atualizações de serviço intune são lançadas.](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Microsoft-Intune-Service-Updates/ba-p/358728) 
 
@@ -63,11 +63,11 @@ Saiba mais sobre as novidades todas as semanas no Microsoft Intune. Também pode
 #### <a name="microsoft-edge-version-77-and-later-on-windows-10-devices---5843584---"></a>Microsoft Edge versão 77 e mais tarde em dispositivos Windows 10<!-- 5843584 -->
 Intune agora suporta desinstalar a versão 77 do Microsoft Edge e mais tarde nos dispositivos do Windows 10. Para mais informações, consulte [Adicionar o Microsoft Edge para o Windows 10 ao Microsoft Intune](~/apps/apps-windows-edge.md).
 
-#### <a name="company-portal-app-improved-performance---6178652---"></a>App do Portal da Empresa melhorou o desempenho<!-- 6178652 -->
-A aplicação Portal da Empresa foi atualizada para suportar um melhor desempenho para dispositivos que utilizam processadores ARM64, como o Surface Pro X. Anteriormente, o Portal da Empresa operava num modo ARM32 emulado. Agora, a aplicação Portal da Empresa é compilada de forma nativa para ARM64. Para obter mais informações sobre a aplicação Portal da Empresa, consulte [como configurar a aplicação Microsoft Intune Company Portal](~/apps/company-portal-app.md).
-
 #### <a name="screen-removed-from-company-portal-android-work-profile-enrollment--6103987---"></a>Ecrã removido do Portal da Empresa, inscrição de perfil de trabalho Android<!--6103987 -->
 O **ecrã What's Next?** Foi removido do fluxo de inscrição de perfil de trabalho Android no Portal da Empresa para agilizar a experiência do utilizador. Vá ao [Enroll with Android work profile](/intune-user-help/enroll-device-android-work-profile) para ver o fluxo de inscrição de perfil android atualizado.  
+
+#### <a name="company-portal-app-improved-performance---6178652---"></a>App do Portal da Empresa melhorou o desempenho<!-- 6178652 -->
+Esta funcionalidade será lançada mais tarde.
 
 <!-- ########################## -->
 ## <a name="week-of-january-27-2020"></a>Semana de 27 de janeiro de 2020
@@ -218,15 +218,15 @@ Aplica-se a:
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="app-management"></a>Gestão de aplicações
 
-#### <a name="migrating-to-microsoft-edge-for-managed-browsing-scenarios---5173762---"></a>Migrando para o Microsoft Edge para cenários de navegação gerenciados<!-- 5173762 -->
-À medida que passamos mais perto da desativação do Intune Managed Browser, fizemos alterações nas políticas de proteção do aplicativo para simplificar as etapas necessárias para mover seus usuários para o Edge. Atualizámos as opções para a definição da política de proteção de aplicações Restringir a **transferência de conteúdos web com outras aplicações** para ser uma das seguintes:
+#### <a name="migrating-to-microsoft-edge-for-managed-browsing-scenarios---5173762---"></a>Migrar para o Microsoft Edge para cenários de navegação geridos<!-- 5173762 -->
+À medida que nos aproximamos da reforma do Navegador Gerido Intune, fizemos alterações às políticas de proteção de aplicações para simplificar os passos necessários para transferir os seus utilizadores para edge. Atualizámos as opções para a definição da política de proteção de aplicações Restringir a **transferência de conteúdos web com outras aplicações** para ser uma das seguintes:
 
 - Qualquer aplicação
 - Browser Gerido do Intune
 - Microsoft Edge
-- Navegador não gerenciado 
+- Navegador não gerido 
 
-Quando selecionar o **Microsoft Edge,** os seus utilizadores finais verão mensagens de acesso condicional notificando-os de que o Microsoft Edge é necessário para cenários de navegação geridos. Eles serão solicitados a baixar e entrar no Microsoft Edge com suas contas do AAD, caso ainda não tenham feito isso.  Isto será o equivalente a ter direcionado as suas aplicações ativadas pelo MAM com a definição de `com.microsoft.intune.useEdge` de config da aplicação definida para **True**. As políticas de proteção de aplicações existentes que utilizaram a definição de **navegadores geridos** pela Política terão agora o **Navegador Gerido Intune** selecionado, e não verá nenhuma alteração de comportamento. Isto significa que os utilizadores verão mensagens para utilizar o Microsoft Edge se definirem a definição de configuração da aplicação **UseEdge** para **True**. Encorajamos todos os clientes que alavancam cenários de navegação geridos para atualizar as suas políticas de proteção de aplicações com a Transferência de **conteúdos web Restrito com outras aplicações** para garantir que os utilizadores estão a ver as orientações adequadas para a transição para o Microsoft Edge, independentemente da aplicação a partir da qual estejam a lançar links. 
+Quando selecionar o **Microsoft Edge,** os seus utilizadores finais verão mensagens de acesso condicional notificando-os de que o Microsoft Edge é necessário para cenários de navegação geridos. Serão solicitados a descarregar e iniciar sessão no Microsoft Edge com as suas contas AAD, caso ainda não o tenham feito.  Isto será o equivalente a ter direcionado as suas aplicações ativadas pelo MAM com a definição de `com.microsoft.intune.useEdge` de config da aplicação definida para **True**. As políticas de proteção de aplicações existentes que utilizaram a definição de **navegadores geridos** pela Política terão agora o **Navegador Gerido Intune** selecionado, e não verá nenhuma alteração de comportamento. Isto significa que os utilizadores verão mensagens para utilizar o Microsoft Edge se definirem a definição de configuração da aplicação **UseEdge** para **True**. Encorajamos todos os clientes que alavancam cenários de navegação geridos para atualizar as suas políticas de proteção de aplicações com a Transferência de **conteúdos web Restrito com outras aplicações** para garantir que os utilizadores estão a ver as orientações adequadas para a transição para o Microsoft Edge, independentemente da aplicação a partir da qual estejam a lançar links. 
 
 #### <a name="configure-app-notification-content-for-organization-accounts---2576686----"></a>Configurar conteúdo de notificação de aplicativos para contas de organização<!-- 2576686  -->
 As políticas de proteção de aplicativo do Intune (aplicativo) em dispositivos Android e iOS permitem controlar o conteúdo de notificação do aplicativo para contas da organização. Você pode selecionar uma opção (permitir, bloquear dados da organização ou bloquear) para especificar como as notificações para contas da organização são mostradas para o aplicativo selecionado. Este recurso requer suporte de aplicativos e pode não estar disponível para todos os aplicativos habilitados para aplicativo. O Outlook para iOS versão 4.15.0 (ou posterior) e o Outlook para Android 4.83.0 (ou posterior) oferecerão suporte a essa configuração. A definição está disponível na consola, mas a funcionalidade começará a entrar em vigor após 16 de dezembro de 2019. Para mais informações sobre app, veja [o que são as políticas de proteção de aplicações?](../apps/app-protection-policy.md)
@@ -268,7 +268,7 @@ Esta funcionalidade aplica-se a:
 
 #### <a name="wired-network-device-configuration-profiles-for-macos-devices---3508686----"></a>Perfis de configuração de dispositivos de rede com fios para dispositivos macOS<!-- 3508686  -->
    > [!NOTE]
-   > Esse recurso foi atrasado, mas será lançado em breve.
+   > Esta funcionalidade foi adiada, mas será lançada em breve.
 
 #### <a name="block-users-from-configuring-certificate-credentials-in-the-managed-keystore-on-android-enterprise-device-owner-devices---3311998---"></a>Bloqueie os utilizadores de configurar credenciais de certificado na loja de chaves gerida em dispositivos proprietários de dispositivos Android Enterprise<!-- 3311998 -->
 Nos dispositivos do Android Enterprise, pode configurar uma nova definição que impede os utilizadores de configurarem as suas credenciais de certificado na keystore gerida (**configuração** de **dispositivos** > Perfis > **Criar perfil** > **Android Enterprise** para plataforma > Dispositivo Proprietário **Apenas > Restrições** de dispositivos para o tipo de perfil > Utilizadores + **Contas).**
@@ -277,7 +277,7 @@ Nos dispositivos do Android Enterprise, pode configurar uma nova definição que
 ### <a name="device-management"></a>Gestão de dispositivos
 
 #### <a name="protected-wipe-action-now-available--51150000---"></a>Ação de apagamento protegido agora disponível<!--51150000 -->
-Agora você tem a opção de usar a ação apagar dispositivo para executar um apagamento protegido de um dispositivo. Os apagamentos protegidos são os mesmos que os apagamentos padrão, exceto que não podem ser burlados por desligar o dispositivo. Uma limpeza protegida continuará a tentar redefinir o dispositivo até ser bem sucedido. Em algumas configurações, essa ação pode deixar o dispositivo não conseguir reinicializar. Para mais informações, consulte [Retire ou limpe os dispositivos](../remote-actions/devices-wipe.md).
+Agora você tem a opção de usar a ação apagar dispositivo para executar um apagamento protegido de um dispositivo. Os apagamentos protegidos são os mesmos que os apagamentos padrão, exceto que não podem ser burlados por desligar o dispositivo. Uma limpeza protegida continuará a tentar redefinir o dispositivo até ser bem sucedido. Em algumas configurações, esta ação pode deixar o dispositivo incapaz de reiniciar. Para mais informações, consulte [Retire ou limpe os dispositivos](../remote-actions/devices-wipe.md).
 
 #### <a name="device-ethernet-mac-address-added-to-devices-overview-page--5562275---"></a>Endereço MAC Ethernet do dispositivo adicionado à página Visão geral do dispositivo<!--5562275 -->
 Pode agora ver o endereço Ethernet MAC de um dispositivo na página de detalhes do dispositivo (**Dispositivos** > **Todos os dispositivos** > escolha um dispositivo > **Visão geral**.
@@ -294,7 +294,7 @@ Melhoramos a experiência em um dispositivo compartilhado com vários usuários 
 Agora pode utilizar perfis de certificadoS PKCS para emitir certificados para *dispositivos* que executam Android para Trabalho, iOS e Windows, quando associados a perfis como os de Wi-Fi e VPN. Anteriormente, essas três plataformas suportavam apenas certificados baseados no usuário, com suporte baseado em dispositivo limitado ao macOS.
 
 > [!NOTE]
-> Não há suporte para perfis de certificado PKCS com perfis Wi-Fi. Em vez disso, utilize perfis de certificado SCEP quando utilizar um [tipo EAP](../configuration/wi-fi-settings-windows.md#enterprise-profile).
+> Os perfis de certificadoS PKCS não são suportados com perfis Wi-Fi. Em vez disso, utilize perfis de certificado SCEP quando utilizar um [tipo EAP](../configuration/wi-fi-settings-windows.md#enterprise-profile).
 
 Para utilizar um certificado baseado no dispositivo, ao mesmo tempo que cria um perfil de [certificado PKCS](../protect/certficates-pfx-configure.md#create-a-pkcs-certificate-profile) para as plataformas suportadas, selecione **Definições**. Verá agora a definição para o **tipo de Certificado,** que suporta as opções para Dispositivo, ou Utilizador.
 
@@ -313,9 +313,9 @@ Os detalhes da atividade do log de auditoria agora incluem informações de marc
 <!-- ########################## -->
 ## <a name="week-of-december-2-2019"></a>Semana de 2 de dezembro de 2019
 
-#### <a name="new-microsoft-endpoint-configuration-manager-co-management-licensing--5027281--"></a>Novo Microsoft Endpoint Configuration Manager licenciamento de cogerenciamento<!--5027281-->
-Configuration Manager clientes com Software Assurance podem obter o cogerenciamento do Intune para PCs com Windows 10 sem precisar comprar uma licença adicional do Intune para o cogerenciamento. Os clientes não precisam mais atribuir licenças individuais do Intune/EMS aos usuários finais para gerenciar o Windows 10.
-- Os dispositivos gerenciados pelo Configuration Manager e registrados no cogerenciamento têm quase os mesmos direitos que os computadores gerenciados do MDM autônomo do Intune. No entanto, após a redefinição, eles não podem ser reprovisionados usando o AutoPilot.
+#### <a name="new-microsoft-endpoint-configuration-manager-co-management-licensing--5027281--"></a>Novo licenciamento de cogestão do Microsoft Endpoint Configuration Manager<!--5027281-->
+Configuration Manager clientes com Software Assurance podem obter o cogerenciamento do Intune para PCs com Windows 10 sem precisar comprar uma licença adicional do Intune para o cogerenciamento. Os clientes já não precisam de atribuir licenças individuais Intune/EMS aos seus utilizadores finais para cogestão do Windows 10.
+- Os dispositivos geridos pelo Gestor de Configuração e matriculados na cogestão têm quase os mesmos direitos que os Computadores geridos por Intune Standalone MDM. No entanto, após a reposição, não podem ser reprovisionados usando o Autopilot.
 - Os dispositivos Windows 10 matriculados no Intune utilizando outros meios requerem licenças Intune completas.
 - Os dispositivos de outras plataformas ainda requerem licenças Intune completas.
 
@@ -329,10 +329,10 @@ Para mais informações, consulte [os termos de licenciamento.](https://www.micr
 ### <a name="app-management"></a>Gestão de aplicações
 
 #### <a name="ui-update-when-selectively-wiping-app-data---4102028---"></a>Atualização da UI ao limpar seletivamente os dados da aplicação<!-- 4102028 -->
-A UI para limpar seletivamente os dados das aplicações em Intune foi atualizada. As alterações da interface do usuário incluem:
+A UI para limpar seletivamente os dados das aplicações em Intune foi atualizada. As alterações ui incluem:
 - Uma experiência simplificada utilizando um formato de estilo de feiticeiro condensado dentro de um painel.
 - Uma atualização para o fluxo de criação para incluir atribuições.
-- Uma página resumida de todas as coisas definidas ao exibir as propriedades, antes de criar uma nova política ou ao editar uma propriedade. Além disso, ao editar propriedades, o resumo mostrará apenas uma lista de itens da categoria de propriedades que está sendo editada.
+- Uma página resumida de todas as coisas definidas ao visualizar propriedades, antes de criar uma nova política ou ao editar uma propriedade. Além disso, ao editar propriedades, o resumo apenas mostrará uma lista de itens da categoria de propriedades que estão a ser editadas.
 
 Para obter mais informações, veja [Como eliminar apenas dados empresariais de aplicações geridas pelo Intune](~/apps/apps-selective-wipe.md).
 
@@ -358,8 +358,8 @@ Para mais informações sobre estas definições, vá às definições de perfil
 
 Aplica-se a:
 
-- iOS 13,0 e mais recente
-- iPadOS 13,0 e mais recente
+- iOS 13.0 e mais recente
+- iPadOS 13.0 e mais recente
 
 #### <a name="prevent-users-from-adding-personal-google-accounts-to-android-enterprise-fully-managed-and-dedicated-devices---5353228-----"></a>Impedir que os utilizadores adicionem contas pessoais do Google ao Android Enterprise totalmente geridos e dedicados dispositivos<!-- 5353228   -->
 No Android Enterprise totalmente gerido e dedicado dispositivos, existe uma nova configuração que impede os utilizadores de criarem contas pessoais da Google (**configuração** do dispositivo > **Perfis** > **Criar perfil** > **Android Enterprise** para plataforma > Dispositivo Proprietário **Only > Restrições** de dispositivos para **definições** de tipo de perfil > Utilizadores e Contas > **Contas Pessoais do Google).**
@@ -476,7 +476,7 @@ O Portal da Empresa > **Apps instaladas** > coluna tipo **assignment** foi renom
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="device-security"></a>Segurança do dispositivo
 
-#### <a name="security-baselines-are-supported-on-microsoft-azure-government---4062552---"></a>As linhas de base de segurança têm suporte no Microsoft Azure Governamental<!-- 4062552 -->
+#### <a name="security-baselines-are-supported-on-microsoft-azure-government---4062552---"></a>As linhas de base de segurança são suportadas no Governo do Microsoft Azure<!-- 4062552 -->
 
 Os casos de Intune que estão hospedados no *Microsoft Azure Government* podem agora usar linhas de base de [segurança](../protect/security-baselines.md) para o ajudar a proteger e proteger os seus utilizadores e dispositivos.
 
