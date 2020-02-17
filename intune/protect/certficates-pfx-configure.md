@@ -68,11 +68,11 @@ Para utilizar certificados PKCS com Intune, necessitará da seguinte infraestrut
 - **Conector de certificado PFX para Microsoft Intune**:  
   Se planeia utilizar encriptação de e-mail S/MIME, utilize o portal Intune para descarregar o *Conector* de Certificado PFX que suporta a importação de certificados PFX.  Vá à **configuração** do dispositivo > **Conectores** de certificados > **Adicionar,** e siga os *Passos para instalar o conector para certificados PFX importados*. Utilize o link de descarregamento no portal para iniciar o download do instalador **PfxCertificateConnectorBootstrapper.exe**. 
 
-  Cada locatário do Intune dá suporte a uma única instância desse conector. Você pode instalar esse conector no mesmo servidor que uma instância do conector de certificado Microsoft Intune.
+  Cada inquilino intune suporta uma única instância deste conector. Pode instalar este conector no mesmo servidor que uma instância do conector Microsoft Intune Certificate.
 
-  Esse conector lida com solicitações para arquivos PFX importados para o Intune para criptografia de email S/MIME para um usuário específico.  
+  Este conector trata dos pedidos de ficheiros PFX importados para Intune para encriptação de e-mail S/MIME para um utilizador específico.  
 
-  Esse conector pode se atualizar automaticamente quando novas versões forem disponibilizadas. Para utilizar a capacidade de atualização, deve:
+  Este conector pode atualizar-se automaticamente quando novas versões estiverem disponíveis. Para utilizar a capacidade de atualização, deve:
   - Instale o Conector de Certificado PFX para microsoft Intune no seu servidor.  
   - Para receber automaticamente atualizações importantes, certifique-se de que as firewalls estão abertas que permitem ao conector contactar **autoupdate.msappproxy.net** na porta **443**.   
 
@@ -204,7 +204,7 @@ Para autenticar um dispositivo com VPN, WiFi ou outros recursos, um dispositivo 
 
 4. Selecione **Definições**e configure as propriedades que se aplicam à plataforma selecionada:
    
-   |Definição     | Platform     | Detalhes   |
+   |Definição     | Plataforma     | Detalhes   |
    |------------|------------|------------|
    |**Limiar de renovação (%)**        |<ul><li>Todas         |Recomendado é 20%  | 
    |**Período de validade do certificado**  |<ul><li>Todas         |Se não alterar o modelo de certificado, esta opção pode ser definida para um ano. |
@@ -320,7 +320,7 @@ O *Conector de CertificadoPFX para microsoft Intune* [suporta atualizações aut
   - Corrigiu um problema em que o conector pode não se inscrever na Intune depois de iniciar a sessão no conector com uma conta de administrador global.  
 
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 O perfil está criado, mas ainda não está ativo. Em seguida, [atribua o perfil](../configuration/device-profile-assign.md) e [monitorize o estado](../configuration/device-profile-monitor.md).
 

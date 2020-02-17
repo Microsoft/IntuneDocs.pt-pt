@@ -20,12 +20,12 @@ ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: cd2efc759f4edf2a2ae62c98cb04af61ff20088c
 ms.sourcegitcommit: 576b9528629981e87e775fac146932e502f07a74
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-PT
 ms.lasthandoff: 02/14/2020
 ms.locfileid: "77258118"
 ---
-# <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
+# <a name="whats-new-in-microsoft-intune"></a>O que há de novo no Microsoft Intune
 
 Saiba mais sobre as novidades todas as semanas no Microsoft Intune. Também pode encontrar [avisos importantes, lançamentos](#notices) [anteriores](whats-new-archive.md)e informações sobre [como as atualizações de serviço intune são lançadas.](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Microsoft-Intune-Service-Updates/ba-p/358728) 
 
