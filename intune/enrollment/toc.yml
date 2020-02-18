@@ -20,7 +20,7 @@
   items:
     - name: Use Autopilot to enroll Windows devices (Utilizar o Autopilot para inscrever dispositivos Windows)
       href: tutorial-use-autopilot-enroll-devices.md
-    - name: Utilizar o DEP para inscrever dispositivos iOS
+    - name: Utilizar o DEP para inscrever dispositivos iOS/iPadOS
       href: tutorial-use-device-enrollment-program-enroll-ios.md
 - name: Conceitos
   items:
@@ -84,12 +84,12 @@
         - name: Samsung Knox Mobile Enrollment
           href: android-samsung-knox-mobile-enroll.md
           displayName: kda; kme
-    - name: Configurar a inscrição do iOS
+    - name: Configurar a inscrição do iOS/iPadOS
       href: ios-enroll.md
       items:
         - name: Programa de Inscrição de Dispositivos
           href: device-enrollment-program-enroll-ios.md
-        - name: Configurar a Inscrição de Utilizadores do iOS e iPadOS
+        - name: Configurar a Inscrição de Utilizadores do iOS/iPadOS
           href: ios-user-enrollment.md
         - name: Opções e ações suportadas da Inscrição de Utilizadores
           href: ios-user-enrollment-supported-actions.md
@@ -109,7 +109,7 @@
         - name: Resolver problemas de inscrição de dispositivos
           href: troubleshoot-device-enrollment-in-intune.md
           displayName: sso
-        - name: Troubleshoot iOS device enrollment (Resolver problemas de inscrição de dispositivos iOS)
+        - name: Troubleshoot iOS/iPadOS device enrollment (Resolver problemas de inscrição de dispositivos iOS/iPadOS)
           href: troubleshoot-ios-enrollment-errors.md
         - name: Resolver problemas de inscrição de dispositivos Windows
           href: troubleshoot-windows-enrollment-errors.md
