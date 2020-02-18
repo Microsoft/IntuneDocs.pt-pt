@@ -1,7 +1,7 @@
 ---
-title: Localize o usuário primário de um dispositivo Microsoft Intune.
+title: Encontre o utilizador principal de um dispositivo Microsoft Intune.
 titleSuffix: ''
-description: Localize o usuário primário (ou a afinidade de dispositivo de usuário) de um dispositivo do Intune.
+description: Encontre o utilizador principal (ou Afinidade do Dispositivo de Utilizador) de um dispositivo Intune.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -17,62 +17,62 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3d8aadbd876ea03da0f16acea82b71ebd85cf9be
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: fbafca746c43dada6281ffbfe1e34f01afa8ab91
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73712245"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77413684"
 ---
-# <a name="find-the-primary-user-of-an-intune-device"></a>Localizar o usuário primário de um dispositivo do Intune
+# <a name="find-the-primary-user-of-an-intune-device"></a>Encontre o utilizador principal de um dispositivo Intune
 
-O usuário primário, também conhecido como afinidade de dispositivo de usuário, é uma propriedade de cada dispositivo do Intune. Um dispositivo do Intune pode ter zero ou um usuário primário atribuído a ele. Quando não há nenhum usuário primário atribuído, o dispositivo é chamado de "dispositivo compartilhado".
+O Utilizador Primário, também conhecido como Afinidade do Dispositivo de Utilizador, é uma propriedade de cada dispositivo Intune. Um dispositivo Intune pode ter zero ou um utilizador primário atribuído ao mesmo. Quando não há utilizador primário atribuído, o dispositivo é referido como um "Dispositivo Partilhado".
 
-## <a name="how-to-find-a-devices-primary-user"></a>Como localizar o usuário primário de um dispositivo
+## <a name="how-to-find-a-devices-primary-user"></a>Como encontrar o principal utilizador de um dispositivo
 
-1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
-2. Escolha **dispositivos** > escolha um dispositivo.
-3. Na página **visão geral** , escolha **Ver mais** e você verá o usuário primário listado.
+1. Inscreva-se no [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Escolha **Dispositivos** > escolha um dispositivo.
+3. Na página **'Visão Geral',** escolha **mais ver mais** e verá o utilizador principal listado.
 
-## <a name="what-is-the-primary-user"></a>O que é o usuário principal?
-A propriedade usuário primário é usada para mapear um usuário do Intune licenciado para seus dispositivos no:
-- O aplicativo Portal da Empresa
-- Site do usuário final
-- Experiências de profissionais de ti, como as páginas de solução de problemas no portal do Azure. Essas páginas mapeiam contas de usuário para dispositivos usando o usuário primário.    
+## <a name="what-is-the-primary-user"></a>Qual é o utilizador principal?
+A propriedade principal do utilizador é usada para mapear um utilizador Intune licenciado para os seus dispositivos em:
+- A aplicação Portal da Empresa
+- Website do utilizador final
+- Experiências profissionais de TI, como páginas de resolução de problemas no portal Azure. Estas páginas mapeiam as contas dos utilizadores para os dispositivos utilizando o utilizador principal.    
 
-### <a name="company-portal-app"></a>Aplicação Portal da Empresa
-O aplicativo Portal da Empresa espera que a conta de usuário que entrou no Portal da Empresa seja o usuário principal desse dispositivo. Se outro usuário tiver sido atribuído como o usuário primário, o Portal da Empresa mostrará um aviso:
+### <a name="company-portal-app"></a>Aplicação do Portal da Empresa
+A aplicação Portal da Empresa espera que a conta de utilizador que assinou no Portal da Empresa seja o principal utilizador desse dispositivo. Se outro utilizador tiver sido designado como utilizador principal, o Portal da Empresa mostra um aviso:
 
-"Este dispositivo já está atribuído a alguém em sua organização. Contate o suporte da empresa sobre como se tornar o usuário do dispositivo primário. Você pode continuar a usar Portal da Empresa, mas a funcionalidade será limitada. "
+"Este dispositivo já está atribuído a alguém da sua organização. Contacte o suporte da empresa para se tornar o utilizador principal do dispositivo. Pode continuar a utilizar o Portal da Empresa, mas a funcionalidade será limitada."
 
-Se um dispositivo do Intune não tiver um usuário primário atribuído, o aplicativo Portal da Empresa o detectará como um dispositivo compartilhado. Os dispositivos compartilhados são visualmente identificáveis com um rótulo "compartilhado" que aparece no bloco do dispositivo. Nesse modo, o Portal da Empresa ainda pode ser usado para solicitar e instalar aplicativos disponíveis. No entanto, as ações de autoatendimento (redefinir/renomear/desativar) não estão disponíveis.  
+Se um dispositivo Intune não tiver nenhum utilizador primário atribuído, então a aplicação Portal da Empresa deteta-o como um dispositivo partilhado. Os dispositivos partilhados são visualmente identificáveis com uma etiqueta "partilhada" aparecendo no azulejo do dispositivo. Neste modo, o Portal da Empresa ainda pode ser utilizado para solicitar e instalar aplicações disponíveis. No entanto, as ações de self-service (reset/rename/retire) não estão disponíveis.  
 
-Para aparecer na Portal da Empresa em dispositivos compartilhados, os aplicativos disponíveis devem ser atribuídos a um grupo de usuários. Eles serão instalados no contexto do sistema ou no contexto do usuário, dependendo de como o aplicativo foi configurado pelo administrador de ti. Para obter mais informações sobre o contexto do aplicativo, consulte [Instalando aplicativos em dispositivos Windows 10](../apps/apps-windows-10-app-deploy.md). Portal da Empresa versão 10.3.4651.0 ou posterior é necessária para usar esse recurso.
+Para aparecer no Portal da Empresa em dispositivos partilhados, as aplicações disponíveis devem ser atribuídas a um grupo de utilizadores. Serão instalados no contexto do sistema ou no contexto do utilizador, dependendo da forma como a aplicação foi configurada pelo administrador de TI. Para obter mais informações sobre o contexto da aplicação, consulte [a instalação de aplicações nos dispositivos do Windows 10.](../apps/apps-windows-10-app-deploy.md) A versão 10.3.4651.0 ou posterior do Portal da Empresa é obrigada a utilizar esta funcionalidade.
 
 
-## <a name="who-is-assigned-as-the-primary-user"></a>Quem é atribuído como o usuário primário?
-O Intune adiciona automaticamente o usuário primário aos dispositivos durante ou logo após o registro. O método de registro determina quando o usuário primário é adicionado a um dispositivo.
+## <a name="who-is-assigned-as-the-primary-user"></a>Quem é designado como o utilizador principal?
+Intone automaticamente o utilizador primário aos dispositivos durante ou logo após a inscrição. O método de inscrição determina quando o utilizador primário é adicionado a um dispositivo.
 
-| Platform | Método de inscrição | Usuário primário atribuído | O usuário primário é atribuído |
+| Platform | Método de inscrição | Utilizador primário atribuído | Utilizador primário é atribuído |
 | ---- | ---- | ---- | ---- |
-| Windows | Adicionar trabalho ou escola (orientado pelo usuário) | Registrando usuário | Durante o registro |   
-| Windows | Entrada de aplicativo moderno (orientada pelo usuário) | Registrando usuário | Durante o registro | 
-| Windows | Registrar somente no MDM (orientado pelo usuário) | Registrando usuário | Durante o registro | 
-| Windows | Ingresso no Azure AD (experiência inicial na caixa) | Registrando usuário | Durante o registro | 
-| Windows | Ingresso no Azure AD (autoteste de experiência inicial do box) | Registrando usuário | Durante o registro | 
-| Windows | Registrar somente no MDM | Registrando usuário | Durante o registro | 
-| Windows | AADJ híbrido + GPO de registro automático | Primeiro usuário a entrar no Windows | Quando o primeiro usuário entra no Windows| 
-| Windows | Cogestão | Primeiro usuário a entrar no Windows | Quando o primeiro usuário entra no Windows | 
-| Windows | Ingresso no Azure AD (token de registro em massa) | Nenhum | Not applicable | 
-| Windows | Ingresso no Azure AD (modo de autoimplantação do autoteste) | Nenhum | Not applicable | 
-| Multiplataformas | Registro controlado pelo usuário com o aplicativo Portal da Empresa | Registrando usuário | Durante o registro |
-| Multiplataformas | Gerenciador de registro de dispositivo (DEM) | Registrando usuário do DEM | Durante o registro |
-| iOS, macOS | Registro de dispositivo automatizado da Apple (DEP com afinidade de usuário | Registrando usuário | Durante o registro |
-| iOS, macOS | Registro de dispositivo automatizado da Apple (DEP sem afinidade de usuário) | Nenhum | Not applicable |
-| Android | Dispositivos Android de propriedade corporativa, dedicados | Nenhum | Not applicable |
+| Windows | Adicionar trabalho ou escola (orientado pelo utilizador) | Utilizador inscrito | Durante a inscrição |   
+| Windows | Inscrição na Aplicação Moderna (orientada pelo utilizador) | Utilizador inscrito | Durante a inscrição | 
+| Windows | Matricule-se apenas no MDM (acionado pelo utilizador) | Utilizador inscrito | Durante a inscrição | 
+| Windows | Azure AD junta-se (fora da experiência box) | Utilizador inscrito | Durante a inscrição | 
+| Windows | Azure AD junta-se (Autopilot fora da experiência box) | Utilizador inscrito | Durante a inscrição | 
+| Windows | Matricule-se apenas no MDM | Utilizador inscrito | Durante a inscrição | 
+| Windows | Híbrido AADJ + GPO de inscrição automática | Primeiro utilizador a iniciar sessão no Windows | Quando o primeiro utilizador entra no Windows| 
+| Windows | Cogestão | Primeiro utilizador a iniciar sessão no Windows | Quando o primeiro utilizador entra no Windows | 
+| Windows | Azure AD junta-se (símbolo de inscrição a granel) | Nenhum | Não aplicável | 
+| Windows | AD Azure (modo de auto-implantação autopiloto) | Nenhum | Não aplicável | 
+| Plataforma cruzada | Inscrição orientada pelo utilizador com App Portal da Empresa | Utilizador inscrito | Durante a inscrição |
+| Plataforma cruzada | Gestor de Inscrição de Dispositivos (DEM) | Inscrição do utilizador DEM | Durante a inscrição |
+| iOS/iPadOS, macOS | Apple Automated Device Matricula (DEP com afinidade do utilizador | Utilizador inscrito | Durante a inscrição |
+| iOS/iPadOS, macOS | Apple Automated Device Registration (DEP sem afinidade do utilizador) | Nenhum | Não aplicável |
+| Android | Dispositivos Android Corporate-Owned, dedicados | Nenhum | Não aplicável |
 
-## <a name="primary-user-and-azure-ad-device-owner"></a>Usuário primário e proprietário do dispositivo do Azure AD
-Em alguns casos, o usuário principal do Intune pode ser diferente da propriedade **proprietário** do dispositivo do Azure AD (visível em **dispositivos** > **dispositivos do Azure ad**). O proprietário do dispositivo do Azure AD é adicionado durante o registro de um dispositivo no Azure Active Directory.
+## <a name="primary-user-and-azure-ad-device-owner"></a>Utilizador primário e proprietário de dispositivo saqueado do Azure
+Em alguns casos, o utilizador primário intune pode ser diferente da propriedade do **Dispositivo** AD Azure (visível em **dispositivos** > **Dispositivos AD Azure).** O proprietário do Dispositivo AD Azure é adicionado durante a inscrição de um dispositivo no Diretório Ativo Azure.
 
 ## <a name="next-steps"></a>Próximos passos
-[Gerencie seus dispositivos do Intune.](device-management.md)
+[Gerencie os seus dispositivos Intune.](device-management.md)

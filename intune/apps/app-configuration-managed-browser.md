@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: babe556d6810ad027a1b0b3cae6364c99bc9a07c
-ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.openlocfilehash: c7c47a829f8f609528f45b30d0dd9bf56d9d8eb9
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76812505"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414906"
 ---
 # <a name="manage-web-access-using-a-microsoft-intune-policy-protected-browser"></a>Gerir o acesso Web através de um browser protegido por políticas do Microsoft Intune
 
@@ -32,7 +32,7 @@ ms.locfileid: "76812505"
 Ao utilizar um browser protegido com a política do Intune (Microsoft Edge ou Intune Managed Browser), pode garantir que os sites empresariais são sempre acedidos com as proteções ativas.  Quando configurados com o Intune, os browsers protegidos podem tirar partido do seguinte:
 
 - Políticas de proteção de aplicações
-- Conditional Access
+- Acesso Condicional
 - Início de sessão único
 - Definições de configuração de aplicações
 - Integração do proxy de aplicações do Azure
@@ -42,7 +42,7 @@ Ao utilizar um browser protegido com a política do Intune (Microsoft Edge ou In
 
 ## <a name="microsoft-edge-support"></a>Suporte ao Microsoft Edge
 
-Pode utilizar o Microsoft Edge para cenários empresariais em dispositivos iOS e Android. O Microsoft Edge dá suporte a todos os cenários de gestão que o Intune Managed Browser com a adição de melhorias na experiência dos utilizadores finais. Os seguintes recursos do Microsoft Edge Enterprise que são habilitados pelas políticas do Intune incluem:
+Pode utilizar o Microsoft Edge para cenários empresariais em dispositivos iOS/iPadOS e Android. O Microsoft Edge dá suporte a todos os cenários de gestão que o Intune Managed Browser com a adição de melhorias na experiência dos utilizadores finais. As seguintes funcionalidades da empresa Microsoft Edge que são ativadas pelas políticas intune incluem:
 
 - **Identidade Dupla** – os utilizadores podem adicionar uma conta profissional e conta pessoal para navegação. Não há uma separação total entre as duas identidades, semelhante à arquitetura e à experiência no Office 365 e no Outlook. Os administradores do Intune poderão definir as políticas pretendidas para uma experiência de navegação protegida na conta profissional. 
 - **Integração de políticas de proteção de aplicações do Intune** – os administradores agora podem aplicar políticas de proteção de aplicações ao Microsoft Edge, incluindo o controlo das ações de cortar, copiar e colar, ao impedir as capturas de ecrã e ao garantir que as ligações selecionadas pelo utilizador abrem apenas noutras aplicações geridas.
@@ -57,9 +57,9 @@ O Microsoft Edge e o Intune Managed Browser são aplicações de browser que voc
 
 Requisitos de sistema operativo para políticas de browser:
 - Android 4 e posterior ou
-- iOS 8.0 e posterior.
+- iOS/iPadOS 8.0 e mais tarde.
 
-As versões anteriores do Android e iOS poderão continuar a utilizar o Managed Browser, mas não poderão instalar novas versões da aplicação e poderão não conseguir aceder a todas as funcionalidades da aplicação. Aconselhamos que atualize estes dispositivos para uma versão do sistema operativo suportada.
+As versões anteriores do Android e iOS/iPadOS poderão continuar a utilizar o Navegador Gerido, mas não poderão instalar novas versões da aplicação e poderão não conseguir aceder a todas as capacidades da aplicação. Aconselhamos que atualize estes dispositivos para uma versão do sistema operativo suportada.
 
 >[!NOTE]
 >O Managed Browser não suporta o protocolo criptográfico do Secure Sockets Layer versão 3 (SSLv3).
@@ -94,7 +94,7 @@ Para impedir que as aplicações Web ligadas ao Azure AD utilizem o Intune Manag
 > [!TIP]  
 > O Acesso Condicional é uma tecnologia do Azure Active Directory (Azure AD). O nó de Acesso Condicional acedido a partir do *Intune* é o mesmo nó acedido a partir do *Azure AD*.  
 
-1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Inscreva-se no [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selecione **Dispositivos** > **Acesso Condicional** > **Nova política**.
 3. Adicione o **nome**da política . 
 4. Na secção **Atribuições**, selecione **Condições** > **Aplicações do cliente**. O painel de **aplicações do Cliente** é apresentado.
@@ -109,7 +109,7 @@ Para impedir que as aplicações Web ligadas ao Azure AD utilizem o Intune Manag
 7. Clique **em Done** > **Done**.
 8. Na secção **De Missões,** selecione **Utilizadores e grupos** e escolha os utilizadores ou grupos que pretende atribuir a esta política. Clique **em Fazer** para fechar o painel.
 9. Na secção **De Missões,** selecione **aplicações ou ações cloud** para escolher quais aplicações proteger com esta política. Clique **em Fazer** para fechar o painel.
-10. Selecione **conceder** na seção **controles de acesso** do painel. 
+10. **Selecione Grant** da secção de **controlos** de acesso do painel. 
 11. Clique no **acesso ao Grant** e clique em Exigir **aplicação de cliente aprovada**. 
 12. Clique em **Selecionar** no painel **Grant.** Esta política tem de ser atribuída às aplicações na cloud que pretende que sejam acessíveis apenas a partir da aplicação Intune Managed Browser.
 
@@ -123,9 +123,9 @@ O Managed Browser não suporta políticas de Acesso Condicional clássicas. Para
 
 ## <a name="single-sign-on-to-azure-ad-connected-web-apps-in-policy-protected-browsers"></a>Início de Sessão Único nas aplicações Web ligadas ao Azure AD em browsers protegidos por política
 
-O Microsoft Edge e o Intune Managed Browser no iOS e no Android podem tirar partido do SSO em todas as aplicações Web (SaaS e no local) ligadas ao Azure AD. Se a aplicação Microsoft Authenticator estiver presente no iOS ou a aplicação Portal da Empresa do Intune no Android, os utilizadores de um browser protegido por política poderão aceder às aplicações Web ligadas ao Azure AD sem terem de reintroduzir as respetivas credenciais.
+O Microsoft Edge e o Intune Managed Browser no iOS/iPadOS e Android podem tirar partido do SSO a todas as aplicações web (SaaS e on-prem) que estejam ligadas ao Azure AD. Quando a aplicação Microsoft Authenticator estiver presente no iOS/iPadOS ou na aplicação Intune Company Portal no Android, os utilizadores de um navegador protegido por políticas poderão aceder a aplicações web ligadas a AD sem terem de reintroduzir as suas credenciais.
 
-O SSO exige que o seu dispositivo seja registado pela aplicação Microsoft Authenticator no iOS ou pelo Portal da Empresa do Intune no Android. Será pedido aos utilizadores com a aplicação Authenticator ou o Portal da Empresa do Intune que registem o respetivo dispositivo quando navegarem para uma aplicação Web ligada ao Azure AD num browser protegido por política, se o respetivo dispositivo ainda não tiver sido registado por outra aplicação. Assim que o dispositivo estiver registado com a conta gerida pelo Intune, essa conta terá o SSO ativado para as aplicações Web ligadas ao Azure AD. 
+O SSO exige que o seu dispositivo seja registado pela aplicação Microsoft Authenticator no iOS/iPadOS ou pelo Portal da Empresa Intune no Android. Será pedido aos utilizadores com a aplicação Authenticator ou o Portal da Empresa do Intune que registem o respetivo dispositivo quando navegarem para uma aplicação Web ligada ao Azure AD num browser protegido por política, se o respetivo dispositivo ainda não tiver sido registado por outra aplicação. Assim que o dispositivo estiver registado com a conta gerida pelo Intune, essa conta terá o SSO ativado para as aplicações Web ligadas ao Azure AD. 
 
 > [!NOTE]
 > O registo do dispositivo é uma simples verificação do serviço Azure AD. Não requer a inscrição total do dispositivo e não fornece privilégios adicionais à equipa de TI no dispositivo.
@@ -135,10 +135,10 @@ O SSO exige que o seu dispositivo seja registado pela aplicação Microsoft Auth
 >[!IMPORTANT]
 >Para aplicar as configurações de aplicações, o browser protegido do utilizador ou outra aplicação no dispositivo já tem de ser gerido pela [política de proteção de aplicações do Intune]( ../app-protection-policy.md).
 
-1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Inscreva-se no [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selecione **Apps** > políticas de **configuração** de apps > **adicionar** > **aplicações geridas.**
 3. Na página **Basics** do painel de definição de **aplicações Create,** introduza um **Nome** e **uma Descrição** opcional para as definições de configuração da aplicação.
-4. Escolha **selecione a aplicação pública** e escolha o **Navegador Gerido** e/ou **Edge** para iOS, para Android, ou para ambos.
+4. Escolha **selecione a aplicação pública** e escolha o **Navegador Gerido** e/ou **Edge** para iOS/iPadOS, para Android, ou para ambos.
 5. Clique **em Selecionar** para voltar ao painel de configuração da **aplicação Criar.**
 6. Clique em **Seguir** para visualizar a página **Definições.**
 7. Na página **Definições** define os pares de chaves e de valor para fornecer configurações para a aplicação. Utilize as secções mais adiante neste artigo para saber mais sobre os diferentes pares de chave e valor que pode definir.
@@ -186,7 +186,7 @@ Utilizando o procedimento acima para criar uma configuração de aplicação Do 
 
 ## <a name="how-to-configure-application-proxy-settings-for-protected-browsers"></a>Como configurar as definições de Proxy de Aplicações para browsers protegidos
 
-O Microsoft Edge, o Intune Managed Browser e o [Proxy de Aplicações do Azure AD]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started) podem ser utilizados em conjunto para suportar os seguintes cenários para utilizadores de dispositivos iOS e Android:
+O Microsoft Edge e o Intune Managed Browser e [o Azure AD Application Proxy]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started) podem ser utilizados em conjunto para suportar os seguintes cenários para utilizadores de dispositivos iOS/iPadOS e Android:
 
 - Um utilizador transfere e inicia sessão na aplicação Microsoft Outlook. As políticas de proteção de aplicações do Intune são aplicadas automaticamente. Encriptam os dados guardados e impedem que o utilizador transfira ficheiros empresariais para aplicações ou localizações não geridas no dispositivo. Quando o utilizador clica numa ligação para um site da intranet no Outlook, pode especificar se a ligação é aberta na aplicação de browser protegido, em vez de noutro browser. O browser protegido reconhece que este site da intranet foi exposto ao utilizador através do Proxy de Aplicações. O utilizador é automaticamente encaminhado através do Proxy de Aplicação, para autenticar com qualquer autenticação multifactor aplicável, e acesso condicional antes de chegar ao site intranet. Este site, que anteriormente não podia ser encontrado por utilizadores remotos, está agora acessível e a ligação no Outlook funciona como esperado.
 - Um utilizador remoto abre a aplicação de browser protegido e navega para um site da intranet através do URL interno. O browser protegido reconhece que este site da intranet foi exposto ao utilizador através do Proxy de Aplicações. O utilizador é automaticamente encaminhado através do Proxy de Aplicação, para autenticar com qualquer autenticação multifactor aplicável, e acesso condicional antes de chegar ao site intranet. Este site, que anteriormente os utilizadores remotos não podiam encontrar, está agora acessível.
@@ -269,7 +269,7 @@ Utilize as informações seguinte para saber mais sobre os formatos permitidos e
 
 - Utilize a tabela seguinte para saber mais sobre os padrões permitidos que pode utilizar ao especificar URLs:
 
-|                  URL                  |                     Details                      |                                                Correspondências                                                |                                Não corresponde                                 |
+|                  URL                  |                     Detalhes                      |                                                Correspondências                                                |                                Não corresponde                                 |
 |---------------------------------------|--------------------------------------------------|-------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
 |        `http://www.contoso.com`         |              Corresponde a uma única página               |                                            `www.contoso.com`                                            |  `host.contoso.com`<br /><br />`www.contoso.com/images`<br /><br />`contoso.com`/   |
 |          `http://contoso.com`           |              Corresponde a uma única página               |                                             `contoso.com/`                                              | `host.contoso.com`<br /><br />`www.contoso.com/images`<br /><br />`www.contoso.com` |
@@ -316,9 +316,9 @@ Quando utilizar o procedimento para criar uma configuração da aplicação Mana
 
 ## <a name="how-to-access-to-managed-app-logs-using-the-managed-browser-on-ios"></a>Como aceder aos registos da aplicação gerida através do Managed Browser no iOS
 
-Os utilizadores finais com o Managed Browser instalado nos respetivos dispositivos iOS podem ver o estado de gestão de todas as aplicações publicadas da Microsoft. Podem enviar registos para resolver problemas das respetivas aplicações iOS geridas.
+Os utilizadores finais com o Navegador gerido instalado no seu dispositivo iOS/iPadOS podem ver o estado de gestão de todas as aplicações publicadas pela Microsoft. Podem enviar registos para resolver problemas com as suas aplicações geridas para iOS/iPadOS.
 
-1. Abra as **Definições** do iOS.
+1. Abra **as definições**do iOS/iPadOS.
 2. Selecione as definições da aplicação **Managed Browser**.
 3. Ative/Desative a opção **Ativar o Diagnóstico do Intune** para definir o browser para o modo de resolução de problemas.
 4. Abra o **Managed Browser**. Clique em **Ver Estado da Aplicação do Intune** para consultar as definições de política de aplicações individuais.
@@ -345,7 +345,7 @@ Para obter uma lista das definições armazenados nos registos das aplicações,
 ### <a name="turn-off-usage-data"></a>Desativar dados de utilização
 A Microsoft recolhe automaticamente dados anónimos sobre o desempenho e a utilização do Managed Browser para melhorar os produtos e serviços Microsoft. Os utilizadores podem desativar a recolha de dados com a definição **Dados de Utilização** nos respetivos dispositivos. OS utilizadores não têm controlo sobre a recolha destes dados.
 
-- Em dispositivos iOS, os sites que os utilizadores visitam que têm um certificado expirado ou não fidedigno não podem ser abertos.
+- Nos dispositivos iOS/iPadOS, os websites que os utilizadores visitam com um certificado expirado ou não fidedigno não podem ser abertos.
 
 ## <a name="next-steps"></a>Próximos passos
 

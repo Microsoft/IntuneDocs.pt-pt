@@ -7,12 +7,12 @@ ms.topic: include
 ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 4e93cb7f2d503704251b16d1af03924358020d4e
-ms.sourcegitcommit: 1aaff35fddb3d06458d739968d28971fed0bb2ba
+ms.openlocfilehash: d360fa5efe2deba2d19cd67e6ed9f8cbb7f864d9
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "77156001"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415081"
 ---
 Estes avisos fornecem informações importantes que podem ajudá-lo a preparar-se para futuras alterações e funcionalidades intune.
 
@@ -81,7 +81,7 @@ Visite os nossos médicos ao utilizar o Microsoft Edge com políticas de [prote�
 
 A gestão do LEGACY PC vai sair do apoio no dia 15 de outubro de 2020. Atualize os dispositivos para o Windows 10 e reinscreva-os como dispositivos de Gestão de Dispositivos Móveis (MDM) para mantê-los geridos pela Intune.
 
-[Mais informações](https://go.microsoft.com/fwlink/?linkid=2107122)
+[Saiba mais](https://go.microsoft.com/fwlink/?linkid=2107122)
 
 ### <a name="decreasing-support-for-android-device-administrator"></a>Diminuição do suporte para administrador de dispositivos Android 
 O administrador de dispositivos Android (por vezes referido para a gestão "legacy" android e lançado com o Android 2.2) é uma forma de gerir dispositivos Android. No entanto, a melhoria da funcionalidade de gestão já está disponível com [o Android Enterprise](../enrollment/connect-intune-android-enterprise.md) (lançado com o Android 5.0). Num esforço para se mudar para uma gestão moderna, mais rica e segura de dispositivos, a Google está a diminuir o suporte do administrador de dispositivos em novas versões Android.
@@ -126,23 +126,5 @@ Abaixo encontre uma lista de dispositivos comuns matriculados em Intune que exec
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>O que preciso de fazer para me preparar para esta alteração?
 Embrulhe as suas aplicações com o mais recente Intune App SDK. Também pode definir a definição de lançamento condicional "Require nível mínimo de sistema operativo (apenas aviso)" para notificar os utilizadores finais em dispositivos pessoais para atualizar.
-
-### <a name="intune-plan-for-change-nearing-end-of-support-for-windows-7---3042987---"></a>Plano intune para a mudança: Perto do fim do suporte para o Windows 7<!-- 3042987 -->
-Como responsada no MC148476, publicado em setembro passado 2018, e novamente no MC176794 em março de 2019, o Windows 7 chega ao seu fim de suporte alargado a 14 de janeiro de 2020. Nessa altura, a Intune irá retirar o suporte para dispositivos que executam o Windows 7 para que possamos concentrar o nosso investimento em apoiar novas tecnologias e fornecer grandes novas experiências de utilizador final. Após essa data, a assistência técnica e as atualizações automáticas que ajudam a proteger o seu PC Windows 7 deixarão de estar disponíveis através do Intune. A Microsoft recomenda vivamente que se mude para o Windows 10 antes de janeiro de 2020 para evitar um cenário em que necessite de serviço ou suporte que já não esteja disponível. Leia mais sobre o ciclo de vida de suporte do Windows [aqui](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet).
-
-#### <a name="how-does-this-affect-me"></a>Como é que isto me afeta?
-Está a receber esta mensagem porque está atualmente a gerir pCs do Windows 7 utilizando o legacy Intune PC software agent. Uma vez que falta menos de um ano para o final do suporte alargado do Windows 7, encorajamos fortemente a sua organização a começar a atualizar para o Windows 10 o mais rapidamente possível.  
-
-As capacidades de gestão de PC são incorporadas diretamente no sistema operativo Windows 10, e já não precisa de instalar um agente cliente como o cliente do software Intune para o Windows 7. A partir do Windows 8.1, a Microsoft utiliza a arquitetura Mobile Device Management (MDM) para fornecer, configurar, atualizar e gerir computadores do Windows. Quando tiver configurado o Intune, pode simplificar a inscrição do [Windows, matriculando os PCs do Windows 10 em Intune](..\windows-enroll.md) através do canal MDM. Recomendamos que utilize esta solução de gestão de MDM "sem agente" para gerir os seus Computadores Windows 10.
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>O que preciso de fazer para me preparar para esta alteração?
-Encorajamos a sua organização a considerar imediatamente este plano de ação:
-
-- Planeie e atualize a frota do Windows 7 para o Windows 10 antes de 14 de janeiro de 2020.
-- Explore o suporte de [implementação do Windows 10](https://docs.microsoft.com/windows/deployment/) para saber mais sobre como atualizar a sua frota existente de PCs Windows 7 para o Windows 10.
-- Reveja a oferta de seguro de [desktop](https://www.microsoft.com/fasttrack/microsoft-365/desktop-app-assure?rtc=1) app através do FastTrack, que ajudará com a promessa de compatibilidade da aplicação da Microsoft.
-- Transição existente legado software Intune dispositivos geridos por clientes para a solução recomendada pela Microsoft para gerir o Windows 10 usando a gestão do MDM. Inscreva todos os novos PCs Windows 10 utilizando a gestão do MDM para Intune no portal Azure.
-
-Para mais informações, consulte a publicação do [blog aqui](https://aka.ms/Windows7_Intune).
 
 

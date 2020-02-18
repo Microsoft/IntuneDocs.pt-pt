@@ -1,7 +1,7 @@
 ---
 title: O que é a inscrição de dispositivos do Microsoft Intune
 titleSuffix: Microsoft Intune
-description: Saiba mais sobre a inscrição de dispositivos iOS, Android e Windows.
+description: Conheça as inscrições para dispositivos iOS/iPadOS, Android e Windows.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -17,27 +17,27 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: feee58d926a25e9132204798ba93d10a7c90f41e
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: 7955c91a33edef37b86f5bd8f29dfb681d28030e
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547828"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415353"
 ---
 # <a name="what-is-device-enrollment"></a>O que é a inscrição de dispositivos?
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-O Intune permite-lhe gerir os dispositivos e as aplicações da sua força de trabalho e a forma como acedem aos dados da empresa. Para utilizar esta gestão de dispositivos móveis (MDM), deve primeiro inscrever os dispositivos no serviço Intune. Quando um dispositivo é registrado, ele recebe um certificado MDM. Este certificado é utilizado para comunicar com o serviço Intune.
+O Intune permite-lhe gerir os dispositivos e as aplicações da sua força de trabalho e a forma como acedem aos dados da empresa. Para utilizar esta gestão de dispositivos móveis (MDM), deve primeiro inscrever os dispositivos no serviço Intune. Quando um dispositivo está matriculado, é emitido um certificado de MDM. Este certificado é utilizado para comunicar com o serviço Intune.
 
 Como pode constatar nas tabelas seguintes, existem vários métodos para inscrever os dispositivos da força de trabalho. Cada método depende da propriedade do dispositivo (pessoal ou empresarial), do tipo de dispositivo (iOS, Windows, Android) e dos requisitos de gestão (reposições, afinidade, bloqueio).
 
 Por predefinição, os dispositivos para todas as plataformas têm permissão para serem inscritos no Intune. No entanto, pode [restringir os dispositivos por plataforma](enrollment-restrictions-set.md#create-a-device-type-restriction).
 
-## <a name="ios-enrollment-methods"></a>Métodos de inscrição do iOS
+## <a name="iosipados-enrollment-methods"></a>métodos de inscrição iOS/iPadOS
 
 | **Método** | **Reposição obrigatória** | [**Afinidade do Utilizador**](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile) | **Bloqueado** | **Detalhes** |
 |:---:|:---:|:---:|:---:|:---:|
-| | Os dispositivos são apagados durante a inscrição. | Associa cada dispositivo a um utilizador.| Em caso afirmativo, os usuários não podem cancelar o registro de dispositivos. | |
+| | Os dispositivos são apagados durante a inscrição. | Associa cada dispositivo a um utilizador.| Se sim, os utilizadores não podem desinscrever dispositivos. | |
 |**[BYOD](#bring-your-own-device)** | Não| Sim | Não | [Mais informações](apple-mdm-push-certificate-get.md)|
 |**[DEM](#device-enrollment-manager)**| Não |Não |Não | [Mais informações](device-enrollment-program-enroll-ios.md)|
 |**[DEP](#apple-device-enrollment-program)**| Sim | Opcional | Opcional|[Mais informações](device-enrollment-program-enroll-ios.md)|
@@ -65,56 +65,56 @@ Por predefinição, os dispositivos para todas as plataformas têm permissão pa
 
 ## <a name="android-enrollment-methods"></a>Métodos de inscrição do Android
 
-| **Pessoais** | **Métodos de registro** | **Reposição obrigatória** | **Afinidade de Utilizador** | **Bloqueado** | **Detalhes**|
+| **Pessoal** | **Métodos de Inscrição** | **Reposição obrigatória** | **Afinidade de Utilizador** | **Bloqueado** | **Detalhes**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**Administrador do dispositivo Android**|**Iniciado pelo usuário via Portal da Empresa** | Não | Sim | Não | [Mais informações](https://docs.microsoft.com/intune-user-help/enroll-device-android-company-portal)|
-|**Perfil de trabalho do Android Enterprise**|**Iniciado pelo usuário via Portal da Empresa**| Não | Sim | Não | [Mais informações](android-work-profile-enroll.md)|
+|**Admin de dispositivos Android**|**Utilizador iniciado via Portal da Empresa** | Não | Sim | Não | [Mais informações](https://docs.microsoft.com/intune-user-help/enroll-device-android-company-portal)|
+|**Perfil de trabalho da empresa android**|**Utilizador iniciado via Portal da Empresa**| Não | Sim | Não | [Mais informações](android-work-profile-enroll.md)|
 
 
-| **Incorpore** | **Métodos de registro** | **Reposição obrigatória** | **Afinidade de Utilizador** | **Bloqueado** | **Detalhes**|
+| **Empresarial** | **Métodos de Inscrição** | **Reposição obrigatória** | **Afinidade de Utilizador** | **Bloqueado** | **Detalhes**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**Administrador do dispositivo Android**|**[DEM](#device-enrollment-manager) iniciado por meio de portal da empresa**| Não | Não | Não |[Mais informações](device-enrollment-manager-enroll.md)|
-|**Administrador do dispositivo Android**|**(IMEI ou SN previamente declarado) Iniciado pelo usuário via Portal da Empresa**| Não | Sim | Não | [Mais informações](./../corporate-identifiers-add.md)|
-|**Administrador de dispositivo Android com extensões de mobilidade pretas**|**Usuário ou [DEM](#device-enrollment-manager) iniciado via portal da empresa**| Não | Sim se o usuário for iniciado, não se o [DEM](#device-enrollment-manager) for iniciado | Não | [Mais informações](../configuration/android-zebra-mx-overview.md)|
-|**Android Enterprise dedicado**|**NFC, token, código QR, Zero Touch**| Sim | Não | Configurável por meio da política | [Mais informações](android-kiosk-enroll.md)|
-|**Android Enterprise totalmente gerenciado**|**NFC, token, código QR, Zero Touch**| Sim | Sim | Configurável por meio da política | [Mais informações](android-dedicated-devices-fully-managed-enroll.md)|
+|**Admin de dispositivos Android**|**[DEM](#device-enrollment-manager) iniciado via Portal da Empresa**| Não | Não | Não |[Mais informações](device-enrollment-manager-enroll.md)|
+|**Admin de dispositivos Android**|**(IMEI ou SN pré-declarados) Utilizador iniciado via Portal da Empresa**| Não | Sim | Não | [Mais informações](./../corporate-identifiers-add.md)|
+|**Administrador de dispositivos Android com extensões de mobilidade da zebra**|**Utilizador ou [DEM](#device-enrollment-manager) iniciado via Portal da Empresa**| Não | Sim, se o utilizador iniciado, não se o [DEM](#device-enrollment-manager) iniciado | Não | [Mais informações](../configuration/android-zebra-mx-overview.md)|
+|**Android Enterprise Dedicado**|**NFC, Token, Código QR, Zero Touch**| Sim | Não | Configurável através da política | [Mais informações](android-kiosk-enroll.md)|
+|**Android Enterprise totalmente gerido**|**NFC, Token, Código QR, Zero Touch**| Sim | Sim | Configurável através da política | [Mais informações](android-dedicated-devices-fully-managed-enroll.md)|
 
 
 ## <a name="bring-your-own-device"></a>Traga o seu próprio dispositivo
-Traga seus próprios dispositivos (BYOD) incluem telefones, tablets e PCs de propriedade pessoal. Os utilizadores instalam e executam a aplicação Portal da Empresa para inscrever BYODs. Este programa permite aos utilizadores aceder aos recursos da empresa tais como o e-mail.
+Os seus próprios dispositivos (BYOD) incluem telemóveis, tablets e computadores de propriedade pessoal. Os utilizadores instalam e executam a aplicação Portal da Empresa para inscrever BYODs. Este programa permite aos utilizadores aceder aos recursos da empresa tais como o e-mail.
 
 ## <a name="corporate-owned-device"></a>Dispositivo pertencentes à empresa
-Os [dispositivos pertencentes à empresa (COD)](corporate-identifiers-add.md) incluem telemóveis, tablets e PCs pertencentes à organização e distribuídos pela força de trabalho. A inscrição COD suporta cenários de gestão, como inscrição automática, dispositivos partilhados ou requisitos de inscrição previamente autorizados. Uma forma habitual de inscrever CODs passa pela utilização do gestor de inscrição de dispositivos (DEM) por parte do administrador ou do gestor. Os dispositivos iOS podem ser inscritos diretamente através das ferramentas do Programa de Registo de Aparelho (DEP) fornecidas pela Apple. Os dispositivos com um número IMEI também podem ser identificados e marcados como pertencentes à organização.
+Os [dispositivos pertencentes à empresa (COD)](corporate-identifiers-add.md) incluem telemóveis, tablets e PCs pertencentes à organização e distribuídos pela força de trabalho. A inscrição COD suporta cenários de gestão, como inscrição automática, dispositivos partilhados ou requisitos de inscrição previamente autorizados. Uma forma habitual de inscrever CODs passa pela utilização do gestor de inscrição de dispositivos (DEM) por parte do administrador ou do gestor. Os dispositivos iOS/iPadOS podem ser matriculados diretamente através das ferramentas do Programa de Inscrição de Dispositivos (DEP) que são fornecidas pela Apple. Os dispositivos com um número IMEI também podem ser identificados e marcados como pertencentes à organização.
 
 ### <a name="device-enrollment-manager"></a>Gestor de inscrição de dispositivos
 A gestão de inscrição de dispositivos (DEM) é uma conta especial do utilizador que serve para inscrever e gerir múltiplos dispositivos pertencentes à empresa. Os gestores podem instalar o Portal da Empresa e inscrever muitos dispositivos sem utilizador. Estes tipos de dispositivo são ideais, por exemplo, para aplicações de utilitários ou ponto de venda, mas não para utilizadores que necessitem de aceder a recursos de e-mail ou da empresa. Saiba mais sobre o [DEM](device-enrollment-manager-enroll.md).
 
-### <a name="apple-device-enrollment-program"></a>Programa de Inscrição de Dispositivos Apple
-A gestão do Programa de Registo de Aparelho (DEP) da Apple permite-lhe criar e implementar a política “através do ar” em dispositivos iOS e macOS comprados e geridos com DEP. O dispositivo é inscrito quando os utilizadores ligarem o dispositivo pela primeira vez e executarem o Assistente de Configuração. Este método suporta o modo supervisionado do iOS, que permite que um dispositivo seja configurado com funcionalidades específicas.
+### <a name="apple-device-enrollment-program"></a>Programa de Inscrição de Dispositivos da Apple
+A gestão do Programa de Inscrição de Dispositivos da Apple (DEP) permite criar e implementar a política "no ar" para dispositivos iOS/iPadOS e macOS que são comprados e geridos com DEP. O dispositivo é inscrito quando os utilizadores ligarem o dispositivo pela primeira vez e executarem o Assistente de Configuração. Este método suporta o modo supervisionado iOS/iPadOS, que permite configurar um dispositivo com funcionalidadeespecífica.
 
-Saiba mais sobre a inscrição do DEP para iOS:
+Saiba mais sobre a inscrição iOS/iPadOS DEP:
 
-- [Escolher como inscrever dispositivos iOS](ios-enroll.md)
-- [Inscrever dispositivos iOS com o Programa de Inscrição de Dispositivos](device-enrollment-program-enroll-ios.md)
+- [Escolha como inscrever dispositivos iOS/iPadOS](ios-enroll.md)
+- [Inscreva dispositivos iOS/iPadOS utilizando programa de inscrição de dispositivos](device-enrollment-program-enroll-ios.md)
 
 ### <a name="usb-sa"></a>USB-SA
-Os administradores de TI utilizam o Apple Configurator, através de USB, para preparar manualmente cada dispositivo pertencente à empresa para inscrição com o Assistente de Configuração. O administrador de TI cria um perfil de inscrição e exporta-o para o Apple Configurator. Quando os usuários recebem seus dispositivos, eles são solicitados a executar o assistente de configuração para registrar seu dispositivo. Este método suporta o modo **iOS supervisionado** que, por sua vez, ativa as seguintes funcionalidades:
+Os administradores de TI utilizam o Apple Configurator, através de USB, para preparar manualmente cada dispositivo pertencente à empresa para inscrição com o Assistente de Configuração. O administrador de TI cria um perfil de inscrição e exporta-o para o Apple Configurator. Quando os utilizadores recebem os seus dispositivos, é-lhes solicitado que executem o Assistente de Configuração para inscrever o seu dispositivo. Este método suporta o modo **iOS supervisionado** que, por sua vez, ativa as seguintes funcionalidades:
 - Inscrição bloqueada
 - Modo de Local Público e outras restrições e configurações avançadas
 
-Saiba mais sobre a inscrição do iOS Apple Configurator com o Assistente de Configuração:
+Saiba mais sobre a inscrição do iOS/iPadOS Apple Configurator com o Assistente de Configuração:
 
-- [Decidir como inscrever dispositivos iOS](ios-enroll.md)
-- [Inscrever dispositivos iOS com o Configurator e o Assistente de Configuração](apple-configurator-enroll-ios.md)
+- [Decida como inscrever dispositivos iOS/iPadOS](ios-enroll.md)
+- [Inscreva dispositivos iOS/iPadOS com Configurator e Assistente de Configuração](apple-configurator-enroll-ios.md)
 
 ### <a name="usb-direct"></a>USB-Direct
-Para a inscrição direta, o administrador tem de inscrever cada dispositivo manualmente através da criação de uma política de inscrição e exportá-lo para o Apple Configurator. Os dispositivos ligados por USB pertencentes à empresa são inscritos diretamente e não necessitam de ser apagados. Os dispositivos são geridos como dispositivos sem utilizador. Eles não estão bloqueados ou supervisionados e não dão suporte ao acesso condicional, à detecção de jailbreak ou ao gerenciamento de aplicativos móveis.
+Para a inscrição direta, o administrador tem de inscrever cada dispositivo manualmente através da criação de uma política de inscrição e exportá-lo para o Apple Configurator. Os dispositivos ligados por USB pertencentes à empresa são inscritos diretamente e não necessitam de ser apagados. Os dispositivos são geridos como dispositivos sem utilizador. Não estão trancadas ou supervisionadas e não suportam acesso condicional, deteção de fugas de prisões ou gestão de aplicações móveis.
 
-Para obter mais informações sobre a inscrição do iOS, veja:
+Para saber mais sobre a inscrição iOS/iPadOS, consulte:
 
-- [Decidir como inscrever dispositivos iOS](ios-enroll.md)
-- [Inscrever dispositivos iOS com o Configurator e a inscrição direta](apple-configurator-enroll-ios.md)
+- [Decida como inscrever dispositivos iOS/iPadOS](ios-enroll.md)
+- [Inscreva dispositivos iOS/iPadOS com Configurator e inscrição direta](apple-configurator-enroll-ios.md)
 
 ## <a name="mobile-device-cleanup-after-mdm-certificate-expiration"></a>Limpeza de dispositivos móveis após a expiração do certificado MDM
 
-O certificado MDM é renovado automaticamente quando os dispositivos móveis estão a comunicar com o serviço do Intune. Se os dispositivos móveis forem apagados ou não conseguirem se comunicar com o serviço do Intune por um período de tempo, o certificado do MDM não será renovado. O dispositivo é removido do portal do Azure 180 dias depois da expiração do certificado MDM.
+O certificado MDM é renovado automaticamente quando os dispositivos móveis estão a comunicar com o serviço do Intune. Se os dispositivos móveis forem limpos ou não comunicarem com o serviço Intune durante algum tempo, o certificado MDM não é renovado. O dispositivo é removido do portal do Azure 180 dias depois da expiração do certificado MDM.

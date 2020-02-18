@@ -1,7 +1,7 @@
 ---
-title: Inscreva dispositivos iOS - Inscrição do Utilizador
+title: Inscreva dispositivos iOS/iPadOS - Inscrição do Utilizador
 titleSuffix: Microsoft Intune
-description: Saiba como configurar a inscrição de utilizadores do iOS e iPadOS.
+description: Saiba como configurar a inscrição do utilizador iOS/iPadOS e iPadOS.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -18,21 +18,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0872eef38e3ea5a70ebb64d3ae3c62069045fa97
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: d22d8d4772754fddbd366610402d64acc28ffc65
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76754639"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415254"
 ---
-# <a name="set-up-ios-and-ipados-user-enrollment-preview"></a>Configurar a inscrição do utilizador iOS e iPadOS (pré-visualização)
+# <a name="set-up-iosipados-and-ipados-user-enrollment-preview"></a>Configurar iOS/iPadOS e iPadOS User Registration (pré-visualização)
 
-Pode configurar o Intune para inscrever dispositivos iOS e iPadOS utilizando o processo de inscrição do utilizador da Apple. A Inscrição do Utilizador confere aos administradores um subconjunto simplificado de opções de gestão em comparação com outros métodos de inscrição.
+Pode configurar o Intune para inscrever dispositivos iOS/iPadOS e iPadOS utilizando o processo de inscrição do utilizador da Apple. A Inscrição do Utilizador confere aos administradores um subconjunto simplificado de opções de gestão em comparação com outros métodos de inscrição.
 
 Para obter mais informações sobre as opções disponíveis com a Inscrição do Utilizador, consulte [as ações suportadas pelo Utilizador, palavras-passe e outras opções.](ios-user-enrollment-supported-actions.md)
 
 > [!NOTE]
-> O suporte para o registro de usuário da Apple no Intune está atualmente em versão prévia.
+> O suporte para a inscrição de utilizadores da Apple em Intune está atualmente em pré-visualização.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 - [Autoridade de Gestão de Dispositivos Móveis (MDM)](../fundamentals/mdm-authority-set.md)
@@ -43,7 +43,7 @@ Para obter mais informações sobre as opções disponíveis com a Inscrição d
 
 Um perfil de inscrição define as definições aplicadas a um grupo de dispositivos durante a inscrição. 
 
-1. No [Microsoft Endpoint Manager Admin Center,](https://go.microsoft.com/fwlink/?linkid=2109431)escolha **dispositivos** > **iOS** > **ioS matricular** > tipos de **inscrição (pré-visualização)**  > **Criar perfil** > **iOS/iPadOS**. Este perfil é onde irá indicar que experiência de inscrição os seus iOS e iPadOS terão em dispositivos não matriculados através de um método corporativo da Apple. Se quiser fazer alterações, pode editar este perfil depois de o ter criado.
+1. No [Microsoft Endpoint Manager Admin Center,](https://go.microsoft.com/fwlink/?linkid=2109431)escolha **dispositivos** > **iOS** > **ioS matricular** > tipos de **inscrição (pré-visualização)**  > **Criar perfil** > **iOS/iPadOS**. Este perfil é onde irá indicar qual a experiência de inscrição que os seus iOS/iPadOS e iPadOS terão em dispositivos não matriculados através de um método corporativo da Apple. Se quiser fazer alterações, pode editar este perfil depois de o ter criado.
 
     ![Criar perfil de inscrição da Apple](./media/ios-user-enrollment/create-profile.png)
 
@@ -60,7 +60,7 @@ Um perfil de inscrição define as definições aplicadas a um grupo de disposit
 
     - **Inscrição**do dispositivo : Todos os utilizadores deste perfil utilizarão a Inscrição do Dispositivo.
     - **Inscrição**do utilizador : Todos os utilizadores deste perfil utilizarão a Inscrição do Utilizador.
-    - **Determine com base na escolha**do utilizador : Todos os utilizadores deste grupo terão a escolha do tipo de inscrição a utilizar. Quando os utilizadores matriculam os seus dispositivos, verão uma opção para escolher entre **eu ser dono deste dispositivo** e **(Empresa) possuir este dispositivo**. Se escolherem este último, o dispositivo será matriculado utilizando a Inscrição do Dispositivo. Se o utilizador escolher **que sou dono deste dispositivo,** terá outra opção para proteger todo o dispositivo ou apenas proteger aplicações e dados relacionados com o trabalho. A seleção do utilizador final de se possuir o dispositivo determina que tipo de inscrição é implementado no seu dispositivo. Esta escolha do utilizador também se reflete no atributo de Propriedade do Dispositivo em Intune. Para saber mais sobre a experiência do utilizador, consulte [Configurar o acesso do dispositivo IOS aos recursos da sua empresa.](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios)
+    - **Determine com base na escolha**do utilizador : Todos os utilizadores deste grupo terão a escolha do tipo de inscrição a utilizar. Quando os utilizadores matriculam os seus dispositivos, verão uma opção para escolher entre **eu ser dono deste dispositivo** e **(Empresa) possuir este dispositivo**. Se escolherem este último, o dispositivo será matriculado utilizando a Inscrição do Dispositivo. Se o utilizador escolher **que sou dono deste dispositivo,** terá outra opção para proteger todo o dispositivo ou apenas proteger aplicações e dados relacionados com o trabalho. A seleção do utilizador final de se possuir o dispositivo determina que tipo de inscrição é implementado no seu dispositivo. Esta escolha do utilizador também se reflete no atributo de Propriedade do Dispositivo em Intune. Para saber mais sobre a experiência do utilizador, consulte [Configurar o acesso do dispositivo iOS/iPadOS aos recursos da sua empresa.](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios)
     
 5. Selecione **Seguinte**.
 

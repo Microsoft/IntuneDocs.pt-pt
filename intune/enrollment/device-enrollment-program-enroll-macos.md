@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 697e950c881a0c4233358d8363aa6cc7ec0006b2
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: d55139a106599664f801a6bf73b0e0e8db24b57a
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74832681"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414497"
 ---
 # <a name="automatically-enroll-macos-devices-with-the-device-enrollment-program-or-apple-school-manager"></a>Inscrever automaticamente dispositivos macOS com o Programa de Registo de Aparelho ou o Apple School Manager
 
@@ -59,9 +59,9 @@ Pode utilizar o portal da Apple para criar um token. Também pode utilizar o por
 > [!NOTE]
 > Se eliminar o token do portal clássico do Intune antes da migração para o Azure, o Intune poderá restaurar um token da Apple eliminado. Pode eliminar novamente o token do portal do Azure.
 
-### <a name="step-1-download-the-intune-public-key-certificate-required-to-create-the-token"></a>Passo 1. Baixar o certificado de chave pública do Intune necessário para criar o token
+### <a name="step-1-download-the-intune-public-key-certificate-required-to-create-the-token"></a>Passo 1. Descarregue o certificado de chave pública Intune necessário para criar o símbolo
 
-1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **dispositivos** > **MacOS** > o **registro do MacOS** > **tokens do programa de registro** > **Adicionar**.
+1. No [Microsoft Endpoint Manager Admin Center,](https://go.microsoft.com/fwlink/?linkid=2109431)escolha **dispositivos** > **macOS** > o **macOS matricula do programa** > **de inscrição Tokens** > **Add**.
 
     ![Obtenha um token do programa de inscrição.](./media/device-enrollment-program-enroll-macos/image01.png)
 
@@ -71,7 +71,7 @@ Pode utilizar o portal da Apple para criar um token. Também pode utilizar o por
 
 3. Selecione **Transferir a chave pública** para transferir e guardar o ficheiro da chave de encriptação (.pem) localmente. O ficheiro .pem é utilizado para pedir um certificado de relação de confiança a partir do portal da Apple.
 
-### <a name="step-2-use-your-key-to-download-a-token-from-apple"></a>Passo 2: Use sua chave para baixar um token da Apple
+### <a name="step-2-use-your-key-to-download-a-token-from-apple"></a>Passo 2: Use a sua chave para descarregar um token da Apple
 
 1. Escolha **Criar um token para o Programa de Registo de Aparelho da Apple** ou **Criar um token através do Apple School Manager** para abrir o portal da Apple apropriado e inicie sessão com o Apple ID da sua empresa. Pode utilizar este Apple ID para renovar o token.
 2. Para o DEP, no portal da Apple, escolha **Começar** para **Programa de Registo de Aparelho** > **Gerir Servidores** > **Adicionar Servidor MDM**.
@@ -80,7 +80,7 @@ Pode utilizar o portal da Apple para criar um token. Também pode utilizar o por
 
 5. A caixa de diálogo **Adicionar &lt;NomeDoServidor&gt;** é aberta e pede para **Atualizar a Chave Pública**. Selecione **Escolher Ficheiro…** para carregar o ficheiro .pem e, em seguida, selecione **Seguinte**.
 
-6. Aceda a **Programas de Implementação** &gt; **Programa de Inscrição de Dispositivos** &gt; **Gerir Dispositivos**.
+6. Vá aos Programas de **Implementação** &gt; Programa de **Inscrição de Dispositivos** &gt; **Gerir Dispositivos**.
 7. Em **Selecionar Dispositivos Por**, especifique a forma como os dispositivos são identificados:
     - **Número de Série**
     - **Número da Encomenda**
@@ -92,18 +92,18 @@ Pode utilizar o portal da Apple para criar um token. Também pode utilizar o por
 
 ### <a name="step-3-save-the-apple-id-used-to-create-this-token"></a>Passo 3: Guardar o Apple ID que serviu para criar este token
 
-No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), forneça a ID da Apple para referência futura.
+No [Microsoft Endpoint Manager Admin Center,](https://go.microsoft.com/fwlink/?linkid=2109431)forneça o Apple ID para referência futura.
 
 ![Captura de ecrã a mostrar a especificação do ID Apple utilizado para criar o token do programa de inscrição e o acesso ao token do programa de inscrição.](./media/device-enrollment-program-enroll-macos/image03.png)
 
-### <a name="step-4-upload-your-token"></a>Passo 4: Carregar o token
+### <a name="step-4-upload-your-token"></a>Passo 4. Carregar o token
 Na caixa **Token da Apple**, procure o ficheiro de certificado (.pem), escolha **Abrir** e, em seguida, escolha **Criar**. Com o certificado push, o Intune pode inscrever e gerir dispositivos macOS ao enviar políticas para dispositivos inscritos. O Intune é sincronizado automaticamente na Apple para que possa ver a conta do seu programa de inscrição.
 
 ## <a name="create-an-apple-enrollment-profile"></a>Criar um perfil de inscrição da Apple
 
 Agora que instalou o token, pode criar um perfil de inscrição para os dispositivos. Um perfil de inscrição de dispositivos especifica as definições aplicadas a um grupo de dispositivos durante a inscrição.
 
-1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **dispositivos** > **MacOS** > o **registro do MacOS** > **tokens do programa de registro**.
+1. No [Microsoft Endpoint Manager Admin Center,](https://go.microsoft.com/fwlink/?linkid=2109431)escolha **dispositivos** > macOS > fichas do programa de **inscrição** > de matrícula do **macOS** .
 2. Selecione um token, escolha **Perfis** e, em seguida, escolha **Criar perfil**.
 
     ![Crie uma captura de ecrã de perfil.](./media/device-enrollment-program-enroll-macos/image04.png)
@@ -140,14 +140,14 @@ Agora que instalou o token, pode criar um perfil de inscrição para os disposit
     |------------------------------------------|------------------------------------------|
     | <strong>Código de Acesso</strong> | Pedir um código de acesso ao utilizador. Solicite sempre um código de acesso, a menos que o dispositivo esteja protegido ou tenha o acesso controlado de outra forma (ou seja, modo de local público que restringe o dispositivo a uma aplicação). |
     | <strong>Serviços de Localização</strong> | Pedir ao utilizador a respetiva localização. |
-    | <strong>Restaurar</strong> | Exibir a tela de dados do & de aplicativos. Este ecrã permite que o utilizador opte por restaurar ou transferir os dados da Cópia de Segurança do iCloud quando configurar o dispositivo. |
+    | <strong>Restaurar</strong> | Exiba o ecrã apps & Data. Este ecrã permite que o utilizador opte por restaurar ou transferir os dados da Cópia de Segurança do iCloud quando configurar o dispositivo. |
     | <strong>iCloud e Apple ID</strong> | Apresentar ao utilizador as opções para iniciar sessão com o respetivo **ID Apple** e utilizar o **iCloud**.                         |
     | <strong>Termos e Condições</strong> | Pedir ao utilizador para aceitar os termos e condições da Apple. |
     | <strong>Touch ID</strong> | Apresentar ao utilizador a opção para configurar a identificação através de impressão digital no dispositivo. |
     | <strong>Apple Pay</strong> | Apresentar ao utilizador a opção para configurar o Apple Pay no dispositivo. |
     | <strong>Zoom</strong> | Apresentar ao utilizador a opção para aumentar o zoom quando este configurar o dispositivo. |
     | <strong>Siri</strong> | Apresentar ao utilizador a opção para configurar o Siri. |
-    | <strong>Dados de Diagnóstico</strong> | Exiba a tela de diagnóstico para o usuário. Este ecrã permite que o utilizador opte por enviar dados de diagnóstico para a Apple. |
+    | <strong>Dados de Diagnóstico</strong> | Exiba o ecrã de Diagnóstico sintetizador ao utilizador. Este ecrã permite que o utilizador opte por enviar dados de diagnóstico para a Apple. |
     | <strong>FileVault</strong> | Apresentar ao utilizador a opção de configurar a encriptação FileVault. |
     | <strong>Diagnóstico do iCloud</strong> | Apresentar ao utilizador a opção de enviar dados de diagnóstico do iCloud para a Apple. |
     | <strong>Armazenamento do iCloud</strong> | Apresentar ao utilizador a opção para utilizar o armazenamento do iCloud. |    
@@ -155,7 +155,7 @@ Agora que instalou o token, pode criar um perfil de inscrição para os disposit
     | <strong>Aspeto</strong> | Apresentar o ecrã Aspeto ao utilizador. |
     | <strong>Registo</strong>| Pedir ao utilizador que registe o dispositivo. |
     | <strong>Privacidade</strong>| Apresentar o ecrã Privacidade ao utilizador. |
-    | <strong>Tempo do Ecrã</strong>| Exibir a tela de tempo de tela para o usuário. |
+    | <strong>Tempo do Ecrã</strong>| Exiba o ecrã do tempo do ecrã ao utilizador. |
 
 9. Escolha **OK**.
 
@@ -165,7 +165,7 @@ Agora que instalou o token, pode criar um perfil de inscrição para os disposit
 
 Agora que o Intune tem permissão para gerir os seus dispositivos, pode sincronizar o Intune com a Apple para ver os seus dispositivos geridos no Intune no portal do Azure.
 
-1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **dispositivos** > **MacOS** > o **registro do MacOS** > **tokens do programa de registro** > escolha um token na lista > **dispositivos** > **sincronização**. ![captura de tela do nó dispositivos do programa de registro selecionado e o link de sincronização que está sendo escolhido.](./media/device-enrollment-program-enroll-macos/image06.png)
+1. No [Microsoft Endpoint Manager Admin Center,](https://go.microsoft.com/fwlink/?linkid=2109431)escolha **Dispositivos** > **macOS** > **macOS Matricula** > Programa de **Inscrição** ; escolha um símbolo na lista > **Dispositivos** > **Sync**. ![Screenshot dos dispositivos do programa de inscrição, o nó selecionado e a ligação Sync a ser escolhida.](./media/device-enrollment-program-enroll-macos/image06.png)
 
    Para cumprir os termos da Apple para um tráfego aceitável do programa de inscrição, o Intune impõe as seguintes restrições:
    - As sincronizações completas não podem ser executadas mais do que uma vez a cada sete dias. Durante uma sincronização completa, o Intune obtém a lista atualizada completa de números de série atribuídos ao servidor de MDM da Apple ligado ao Intune. Depois de um dispositivo do Programa de Registo ser eliminado do portal do Intune sem a inscrição no servidor de MDM da Apple ser anulada no portal de DEP, o mesmo não voltará a ser importado para o Intune até a sincronização completa ser executada.   
@@ -175,15 +175,15 @@ Agora que o Intune tem permissão para gerir os seus dispositivos, pode sincroni
 
 Tem de atribuir um perfil do programa de inscrição aos dispositivos para poder inscrevê-los.
 
-1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **dispositivos** > **MacOS** > o **registro do MacOS** > **tokens do programa de registro** > escolha um token na lista.
+1. No [Microsoft Endpoint Manager Admin Center,](https://go.microsoft.com/fwlink/?linkid=2109431)escolha **Dispositivos** > **macOS** > **macOS matricular** > Programa de **Inscrição** ; escolha um símbolo na lista.
 2. Escolha **Dispositivos** > escolha dispositivos na lista > **Atribuir perfil**.
 3. Em **Atribuir perfil**, escolha um perfil para os dispositivos > **Atribuir**.
 
 ### <a name="assign-a-default-profile"></a>Atribuir um perfil predefinido
 
-Pode escolher um perfil macOS e iOS predefinido a aplicar a todos os dispositivos que inscrever com um token específico. 
+Pode escolher um perfil padrão de macOS e iOS/iPadOS a aplicar a todos os dispositivos que se inscrevam com um token específico. 
 
-1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **dispositivos** > **MacOS** > o **registro do MacOS** > **tokens do programa de registro** > escolha um token na lista.
+1. No [Microsoft Endpoint Manager Admin Center,](https://go.microsoft.com/fwlink/?linkid=2109431)escolha **Dispositivos** > **macOS** > **macOS matricular** > Programa de **Inscrição** ; escolha um símbolo na lista.
 2. Escolha **Definir o Perfil Predefinido**, escolha um perfil na lista pendente e, em seguida, escolha **Guardar**. Este perfil será aplicado a todos os dispositivos inscritos com o token.
 
 ## <a name="distribute-devices"></a>Distribuir dispositivos
@@ -199,7 +199,7 @@ Ativou a gestão e a sincronização entre a Apple e o Intune e atribuiu um perf
     ![Captura de ecrã a mostrar a criação de um novo token.](./media/device-enrollment-program-enroll-macos/generatenewtoken.png)
 
 4. Selecione **Token do Seu Servidor**.  
-5. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **registro de dispositivo** > registro da **Apple** > **tokens do programa de registro** > escolha o token.
+5. No [Microsoft Endpoint Manager Admin Center,](https://go.microsoft.com/fwlink/?linkid=2109431)escolha **a inscrição de Dispositivos** > **Apple Matricule** > Programa de **Inscrição tokens** > escolha o símbolo.
     ![Captura de ecrã a mostrar tokens de programas de inscrição.](./media/device-enrollment-program-enroll-macos/enrollmentprogramtokens.png)
 
 6. Selecione **Renovar token** e introduza o ID Apple utilizado para criar o token original.  

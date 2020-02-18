@@ -16,12 +16,12 @@ ms.assetid: cf4ad6d4-423f-4826-ab8d-6eb7a7cfb559
 search.appverid: MET150
 ms.custom: get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b8c502bd42d3290bd03c0ce954d55de3073c3f2d
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 7c1ff18a7923d7502e12a9bdb33931089fada6e3
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72503210"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414248"
 ---
 # <a name="enrollment-options-for-devices-managed-by-intune"></a>Opções de inscrição para dispositivos geridos pelo Intune
 
@@ -42,7 +42,7 @@ Saiba mais sobre as [restrições de inscrição](enrollment-restrictions-set.md
 
 ## <a name="enable-apple-device-enrollment"></a>Ativar a inscrição de dispositivos Apple
 
-É necessário um certificado Push de MDM para a inscrição de dispositivos iOS e macOS. Saiba mais sobre os [certificados Push de MDM](apple-mdm-push-certificate-get.md).
+É necessário um certificado de push MDM para a inscrição do iOS/iPadOS e do dispositivo macOS. Saiba mais sobre os [certificados Push de MDM](apple-mdm-push-certificate-get.md).
 
 ## <a name="corporate-identifiers"></a>Identificadores empresariais
 

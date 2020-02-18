@@ -1,7 +1,7 @@
 ---
-title: inscrição de dispositivos iOS – Assistente do Apple Configurator-Setup
+title: inscrição no dispositivo iOS/iPadOS - Apple Configurator-Setup Assistant
 titleSuffix: Microsoft Intune
-description: Saiba como utilizar o Apple Configurator para inscrever dispositivos iOS pertencentes à empresa com o Assistente de Configuração.
+description: Saiba como utilizar o Configurator Apple para inscrever dispositivos iOS/iPadOS corporativos com o Assistente de Configuração.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -18,26 +18,26 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f80312c2bd82063ed0b61c36bef9b8bf4ae3e1aa
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 8ccd41b6ebc9bdf62c1603e508cb881a1be62ee7
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74691813"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415388"
 ---
-# <a name="set-up-ios-device-enrollment-with-apple-configurator"></a>Configurar a inscrição de dispositivos iOS com o Apple Configurator
+# <a name="set-up-iosipados-device-enrollment-with-apple-configurator"></a>Configurar a inscrição do dispositivo iOS/iPadOS com o Configurador Apple
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-O Intune suporta a inscrição de dispositivos iOS com o [Apple Configurator](https://itunes.apple.com/app/apple-configurator-2/id1037126344) em execução num computador Mac. A inscrição com o Apple Configurator requer que ligue por USB cada dispositivo iOS a um computador Mac para configurar a inscrição empresarial. Pode inscrever dispositivos no Intune com o Apple Configurator de duas formas:
+Intune suporta a inscrição de dispositivos iOS/iPadOS utilizando o [Configurator Apple](https://itunes.apple.com/app/apple-configurator-2/id1037126344) em execução num computador Mac. Inscrever-se no Configurator apple requer que ligue usb cada dispositivo iOS/iPadOS a um computador Mac para configurar a inscrição corporativa. Pode inscrever dispositivos no Intune com o Apple Configurator de duas formas:
 - **Inscrição no Assistente de Configuração** – limpa o dispositivo e prepara-o para a inscrição durante o Assistente de Configuração.
-- **Inscrição direta** – não efetua a limpeza do dispositivo e inscreve-o através das definições do iOS. Este método só suporta dispositivos **sem afinidade do utilizador**.
+- **Inscrição direta** - Não limpa o dispositivo e inscreveu o dispositivo através das definições iOS/iPadOS. Este método só suporta dispositivos **sem afinidade do utilizador**.
 
 Os métodos de inscrição do Apple Configurator não podem ser utilizados com o [gestor de inscrições de dispositivos](device-enrollment-manager-enroll.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-- Acesso físico a dispositivos iOS
+- Acesso físico a dispositivos iOS/iPadOS
 - [Definir autoridade MDM](../fundamentals/mdm-authority-set.md)
 - [Um certificado push de MDM da Apple](apple-mdm-push-certificate-get.md)
 - Números de série dos dispositivos (apenas inscrição no Assistente de Configuração)
@@ -46,9 +46,9 @@ Os métodos de inscrição do Apple Configurator não podem ser utilizados com o
 
 ## <a name="create-an-apple-configurator-profile-for-devices"></a>Criar um perfil do Apple Configurator para dispositivos
 
-Um perfil de inscrição de dispositivos especifica as definições aplicadas durante a inscrição. Estas definições são aplicadas apenas uma vez. Siga estes passos para criar um perfil de inscrição para inscrever dispositivos iOS com o Apple Configurator.
+Um perfil de inscrição de dispositivos especifica as definições aplicadas durante a inscrição. Estas definições são aplicadas apenas uma vez. Siga estes passos para criar um perfil de inscrição para inscrever dispositivos iOS/iPadOS com o Configurator Apple.
 
-1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **dispositivos** > **ios** > **registro do IOS** > **Apple Configurator** > **perfis** > **criar**.
+1. No [Microsoft Endpoint Manager Admin Center,](https://go.microsoft.com/fwlink/?linkid=2109431)escolha **dispositivos** > inscrição **do iOS** > **iOS** > **Apple Configurator** > **Perfis** > **Criar**.
 
     ![Criar um perfil para o Apple Configurator](./media/apple-configurator-enroll-ios/apple-config-create-profile.png)
 
@@ -63,7 +63,7 @@ Um perfil de inscrição de dispositivos especifica as definições aplicadas du
     - **Inscrever sem Afinidade do Utilizador** – escolha esta opção para dispositivos não associados a um único utilizador. Utilize esta opção para dispositivos que realizem tarefas sem aceder aos dados de utilizador locais. As aplicações que requerem afiliação de utilizadores (incluindo a aplicação Portal da Empresa utilizada para instalar aplicações de linha de negócio) não irão funcionar. Obrigatório para a inscrição direta.
 
      > [!NOTE]
-     > Quando **registrar com afinidade de usuário** está selecionado, verifique se o dispositivo está afiliado a um usuário com o assistente de configuração nas primeiras 24 horas do dispositivo que está sendo registrado. Caso contrário, o registro pode falhar e uma redefinição de fábrica será necessária para registrar o dispositivo.
+     > Quando estiver selecionado o 'Enroll' com a finidade do **utilizador, certifique-se** de que o dispositivo está afiliado a um utilizador com o Assistente de Configuração nas primeiras 24 horas do dispositivo que está matriculado. Caso contrário, a inscrição poderá falhar e será necessário um reset de fábrica para inscrever o dispositivo.
 
 4. Se tiver escolhido **Inscrever com Afinidade do Utilizador**, tem a opção para permitir que os utilizadores se autentiquem com o Portal da Empresa em vez do Assistente de Configuração da Apple.
 
@@ -87,53 +87,53 @@ Um perfil de inscrição de dispositivos especifica as definições aplicadas du
     F7TLWCLBX196,detalhes do serviço</br>
     DLXQPCWVGHMJ,detalhes do dispositivo
 
-   Saiba [como localizar o número de série de um dispositivo iOS](https://support.apple.com/HT204073).
-2. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **dispositivos** > **ios** > **registro do IOS** > **dispositivos** do **Apple Configurator** >  > **Adicionar**.
+   Saiba como encontrar um número de série do [dispositivo iOS/iPadOS](https://support.apple.com/HT204073).
+2. No [Microsoft Endpoint Manager Admin Center,](https://go.microsoft.com/fwlink/?linkid=2109431)escolha **dispositivos** > **inscrição do iOS** > **iOS** > **Apple Configurator** > **Devices** > **Add**.
 
 5. Selecione um **Perfil de inscrição** para aplicar os números de série que está a importar. Se quiser que os detalhes do novo número de série substituam quaisquer detalhes existentes, escolha **Substituir os detalhes por identificadores existentes**.
 6. Em **Importar Dispositivos**, procure o ficheiro csv de números de série e selecione **Adicionar**.
 
 ### <a name="reassign-a-profile-to-device-serial-numbers"></a>Reatribuir um perfil a números de série de dispositivos
 
-Pode atribuir um perfil de inscrição quando importar números de série iOS para a inscrição no Apple Configurator. Também pode atribuir perfis a partir de dois locais no portal do Azure:
+Pode atribuir um perfil de inscrição quando importar números de série iOS/iPadOS para a inscrição do Configurator da Apple. Também pode atribuir perfis a partir de dois locais no portal do Azure:
 - **Dispositivos do Apple Configurator**
 - **Perfis de AC**
 
 #### <a name="assign-from-apple-configurator-devices"></a>Atribuir a partir de dispositivos do Apple Configurator
-1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **dispositivos** > **ios** > **registro do ios** > **dispositivos** **Apple Configurator** > > escolha os números de série > **atribuir perfil**.
+1. No [Microsoft Endpoint Manager Admin Center,](https://go.microsoft.com/fwlink/?linkid=2109431)escolha **Dispositivos** > **iOS** > matrícula do **iOS** > **Apple Configurator** > **Devices** > escolha os números de série > **Perfil de atribuição**.
 2. Em **Atribuir Perfil**, escolha o **Novo perfil** que quer atribuir e, em seguida, escolha **Atribuir**.
 
 #### <a name="assign-from-profiles"></a>Atribuir a partir de perfis
-1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **dispositivos** > **ios** > **registro do IOS** > **Apple Configurator** > **perfis** > escolha um perfil.
+1. No [Microsoft Endpoint Manager Admin Center,](https://go.microsoft.com/fwlink/?linkid=2109431)escolha **Dispositivos** > **iOS** > matrícula do **iOS** > **Apple Configurator** > **Profiles** > escolha um perfil.
 2. No perfil, escolha **Dispositivos atribuídos** e, em seguida, escolha **Atribuir**.
 3. Filtre para encontrar os números de série dos dispositivos que pretende atribuir ao perfil, selecione os dispositivos e, em seguida, selecione **Atribuir**.
 
 ### <a name="export-the-profile"></a>Exportar o perfil
 Após criar o perfil e atribuir números de série, tem de exportar o perfil do Intune como um URL. Em seguida, importe-o para o Apple Configurator num Mac para implementar em dispositivos.
 
-1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **dispositivos** > **ios** > **registro do IOS** > **Apple Configurator** > **perfis** > escolha o perfil a ser exportado.
+1. No [Microsoft Endpoint Manager Admin Center,](https://go.microsoft.com/fwlink/?linkid=2109431)escolha **dispositivos** > **iOS** > matrícula do **iOS** > **Apple Configurator** > **Profiles** > escolha o perfil para exportar.
 2. No perfil, selecione **Exportar Perfil**.
-3. Copie o **URL do Perfil**. Em seguida, pode adicioná-lo ao Apple Configurator para definir o perfil do Intune utilizado pelos dispositivos iOS.
+3. Copie o **URL do Perfil**. Em seguida, pode adicioná-lo no Configurator Apple para definir o perfil Intune utilizado pelos dispositivos iOS/iPadOS.
 
-   Importe este perfil para o Apple Configurator no procedimento seguinte para definir o perfil do Intune utilizado pelos dispositivos iOS.
+   Em seguida, importa este perfil para o Configurator Apple no seguinte procedimento para definir o perfil Intune utilizado pelos dispositivos iOS/iPadOS.
 
 ### <a name="enroll-devices-with-setup-assistant"></a>Inscrever dispositivos com o Assistente de Configuração
 
 1. Num computador Mac, abra o **Apple Configurator 2**. Na barra de menus, selecione **Apple Configurator 2** e selecione **Preferências**.
     > [!WARNING]
     > Os dispositivos são repostos para as configurações de fábrica durante o processo de inscrição. Como melhor prática, reponha o dispositivo e ligue-o. Os dispositivos deverão aparecer no ecrã **Hello** quando liga o dispositivo.
-    > Se o dispositivo já foi registrado com a conta ID da Apple, o dispositivo deve ser excluído do iCloud da Apple antes de iniciar o processo de registro. O erro de prompt aparece como "não é possível ativar [nome do dispositivo]".
+    > Se o dispositivo já estava registado na conta Apple ID, o dispositivo deve ser eliminado do iCloud da Apple antes de iniciar o processo de inscrição. O erro de aviso aparece como "Incapaz de ativar [nome do dispositivo]".
 
 2. No painel **preferências**, selecione **Servidores** e selecione o símbolo de adição (+) para iniciar o assistente do Servidor MDM. Selecione **Next**.
-3. Introduza o **Nome do anfitrião ou URL** e o **URL de inscrição** do servidor MDM em Inscrição do Assistente de Configuração para dispositivos iOS com Microsoft Intune. Para o URL de Inscrição, introduza o URL do perfil de inscrição exportado do Intune. Selecione **Next**.  
+3. Introduza o nome ou URL do **anfitrião** e o URL de **inscrição** para o servidor MDM no âmbito da inscrição do Assistente de Configuração para dispositivos iOS/iPadOS com o Microsoft Intune. Para o URL de Inscrição, introduza o URL do perfil de inscrição exportado do Intune. Selecione **Next**.  
     Pode ignorar o aviso "URL do servidor não verificado" em segurança. Para continuar, selecione **Seguinte** até que o assistente esteja concluído.
-4. Ligue os dispositivos móveis iOS ao computador Mac com um adaptador USB.
-5. Selecione os dispositivos iOS que pretende gerir e, em seguida, selecione **Preparar**. No painel **Preparar o Dispositivo iOS**, selecione **Manual** e escolha **Seguinte**.
+4. Ligue os dispositivos móveis iOS/iPadOS ao computador Mac com um adaptador USB.
+5. Selecione os dispositivos iOS/iPadOS que pretende gerir e, em seguida, escolha **Preparar**. No painel de **dispositivos Prepare iOS/iPadOS,** selecione **Manual**, e depois escolha **Seguinte**.
 6. No painel **Inscrever no Servidor MDM**, selecione o nome do servidor que criou e escolha **Seguinte**.
 7. No painel **Supervisionar Dispositivos**, selecione o nível de supervisão e, em seguida, selecione **Seguinte**.
 8. No painel **Criar uma Organização**, escolha a **Organização** ou crie uma nova e escolha **Seguinte**.
-9. No painel **Configurar Assistente de Configuração iOS**, escolha os passos a serem apresentados ao utilizador e, em seguida, escolha **Preparar**. Se lhe for pedido, autentique para atualizar as definições de fidedignidade.  
-10. Quando concluir a preparação do dispositivo iOS, desligue o cabo USB.  
+9. No painel de assistente de **configuração iOS/iPadOS,** escolha os passos a apresentar ao utilizador e, em seguida, escolha **Preparar**. Se lhe for pedido, autentique para atualizar as definições de fidedignidade.  
+10. Quando o dispositivo iOS/iPadOS terminar de se preparar, desligue o cabo USB.  
 
 ### <a name="distribute-devices"></a>Distribuir dispositivos
 Os dispositivos estão agora prontos para a inscrição na empresa. Desligue os dispositivos e distribua-os pelos utilizadores. Quando os utilizadores ligarem os seus dispositivos, o Assistente de Configuração será iniciado.
@@ -141,34 +141,34 @@ Os dispositivos estão agora prontos para a inscrição na empresa. Desligue os 
 Após os utilizadores receberem os dispositivos, os mesmos têm de concluir o Assistente de Configuração. Os dispositivos configurados com a afinidade de utilizador podem instalar e executar a aplicação do Portal da Empresa para transferir aplicações e gerir dispositivos.
 
 ## <a name="direct-enrollment"></a>Inscrição direta
-Quando inscreve diretamente dispositivos iOS com o Apple Configurator, pode inscrever um dispositivo sem adquirir o número de série do mesmo. Também pode dar um nome ao dispositivo para fins de identificação antes de o Intune capturar o nome do dispositivo durante a inscrição. A aplicação Portal da Empresa não é suportada para os dispositivos inscritos diretamente. Este método não apaga o dispositivo.
+Quando inscreveu diretamente dispositivos iOS/iPadOS com o Configurator Apple, pode inscrever um dispositivo sem adquirir o número de série do dispositivo. Também pode dar um nome ao dispositivo para fins de identificação antes de o Intune capturar o nome do dispositivo durante a inscrição. A aplicação Portal da Empresa não é suportada para os dispositivos inscritos diretamente. Este método não apaga o dispositivo.
 
 As aplicações que necessitam de afiliação de utilizadores, incluindo a aplicação Portal da Empresa utilizada para instalar aplicações de linha de negócios, não podem ser instaladas.
 
-### <a name="export-the-profile-as-mobileconfig-to-ios-devices"></a>Exportar o perfil como .mobileconfig para dispositivos iOS
+### <a name="export-the-profile-as-mobileconfig-to-iosipados-devices"></a>Exportar o perfil como .mobileconfig para dispositivos iOS/iPadOS
 
-1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **dispositivos** > **ios** > **registro do IOS** > **Apple Configurator** > **perfis** > escolha o perfil para exportar > **perfil de exportação**.
+1. No [Microsoft Endpoint Manager Admin Center,](https://go.microsoft.com/fwlink/?linkid=2109431)escolha **Dispositivos** > **iOS** > matrícula do **iOS** > **Apple Configurator** > **Profiles** > escolha o perfil para exportar > Perfil de **Exportação**.
 2. Em **Inscrição direta**, escolha **Transferir perfil** e guarde o ficheiro. Um ficheiro de perfil de inscrição só é válido durante duas semanas e, após este período de tempo, terá de voltar a criá-lo.
-3. Transfira o ficheiro para o computador Mac com o [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) para emitir diretamente como um perfil de gestão para dispositivos iOS.
+3. Transfira o ficheiro para um computador Mac que executa o [Configurator Apple](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) para pressionar diretamente como um perfil de gestão para dispositivos iOS/iPadOS.
 4. Prepare o dispositivo com o Apple Configurator ao realizar os seguintes passos:
     1. Num computador Mac, abra o Apple Configurator 2.0.
-    2. Ligue o dispositivo iOS ao computador Mac com um cabo USB. Feche Fotografias, o iTunes e outras aplicações que são abertas para o dispositivo quando o dispositivo é detetado.
-    3. No Apple Configurator, selecione o dispositivo iOS ligado e, em seguida, selecione o botão **Adicionar**. As opções que podem ser adicionadas ao dispositivo aparecem na lista pendente. Selecione **Perfis**.
+    2. Ligue o dispositivo iOS/iPadOS ao computador Mac com um cabo USB. Feche Fotografias, o iTunes e outras aplicações que são abertas para o dispositivo quando o dispositivo é detetado.
+    3. No Configurator Apple, escolha o dispositivo iOS/iPadOS conectado e, em seguida, escolha o botão **Adicionar.** As opções que podem ser adicionadas ao dispositivo aparecem na lista pendente. Selecione **Perfis**.
 
         ![Captura de ecrã da opção Exportar Perfil para a Inscrição no Assistente de Configuração com o URL do Perfil realçado](./media/apple-configurator-enroll-ios/ios-apple-configurator-add-profile.png)
 
     4. Utilize o seletor de ficheiros para selecionar o ficheiro .mobileconfig que exportou a partir do Intune e, em seguida, selecione **Adicionar**. O perfil é adicionado ao dispositivo. Se o dispositivo for Não supervisionado, a instalação exige a aceitação no dispositivo.
-5. Realize os seguintes passos para instalar o perfil no dispositivo iOS. O dispositivo já tem de ter concluído o Assistente de Configuração e estar pronto a utilizar. Se a inscrição implicar implementações de aplicações, o dispositivo deve ter um ID Apple configurado porque a implementação da aplicação exige que tenha um ID Apple registado na App Store.
-    1. Desbloqueie o dispositivo iOS.
+5. Utilize os seguintes passos para instalar o perfil no dispositivo iOS/iPadOS. O dispositivo já tem de ter concluído o Assistente de Configuração e estar pronto a utilizar. Se a inscrição implicar implementações de aplicações, o dispositivo deve ter um ID Apple configurado porque a implementação da aplicação exige que tenha um ID Apple registado na App Store.
+    1. Desbloqueie o dispositivo iOS/iPadOS.
     2. Na caixa de diálogo **Instalar perfil** de **Perfil de gestão**, escolha **Instalar**.
     3. Indique o Código de Acesso do Dispositivo ou o ID Apple, se for necessário.
     4. Aceite o **Aviso** e selecione **Instalar**.
     5. Aceite o **Aviso Remoto** e selecione **Confiar**.
     6. Quando a caixa **Perfil instalado** confirmar que o perfil foi Instalado, escolha **Concluído**.
 
-6. No dispositivo iOS, abra as **Definições** e aceda a **Geral** > **Gestão de Dispositivos** > **Perfil de Gestão**. Confirme que a instalação do perfil se encontra na lista e verifique as restrições de política do iOS e as aplicações instaladas. As restrições de política e as aplicações poderão demorar até 10 minutos a aparecer no dispositivo.
+6. No dispositivo iOS/iPadOS, abra **As Definições** e vá **ao** Perfil geral de gestão de dispositivos >  > **gestão**de **dispositivos** . Confirme que a instalação do perfil está listada e verifique as restrições de política iOS/iPadOS e aplicações instaladas. As restrições de política e as aplicações poderão demorar até 10 minutos a aparecer no dispositivo.
 
-7. Distribua os dispositivos. O dispositivo iOS está agora inscrito no Intune e gerido.
+7. Distribua os dispositivos. O dispositivo iOS/iPadOS está agora matriculado em Intune e gerido.
 
 
 

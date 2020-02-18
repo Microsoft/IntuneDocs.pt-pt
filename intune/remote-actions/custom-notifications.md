@@ -1,7 +1,7 @@
 ---
-title: Enviar notificações personalizadas para usuários com Microsoft Intune
+title: Enviar notificações personalizadas aos utilizadores com microsoft Intune
 titleSuffix: Microsoft Intune
-description: Use o Intune para criar e enviar notificações por push personalizadas para usuários de dispositivos iOS e Android
+description: Use Intune para criar e enviar notificações push personalizadas para utilizadores de dispositivos iOS/iPadOS e Android
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -18,118 +18,118 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 73b7617ad6a2d9aa756ddf9a8a4833289e5710ff
-ms.sourcegitcommit: af384c46ec8d8def6aa32c3b89947748dc6fd28f
+ms.openlocfilehash: 412dc631f2092d1eb7d9a7332b903a4742472202
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76517514"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77413875"
 ---
-# <a name="send-custom-notifications-in-intune"></a>Enviar notificações personalizadas no Intune  
+# <a name="send-custom-notifications-in-intune"></a>Enviar notificações personalizadas em Intune  
 
-Use Microsoft Intune para enviar notificações personalizadas aos usuários de dispositivos iOS e Android gerenciados. Essas mensagens aparecem como notificações por push padrão do aplicativo Portal da Empresa e do aplicativo Microsoft Intune no dispositivo de um usuário, assim como as notificações de outros aplicativos no dispositivo são exibidas. As notificações personalizadas do Intune não têm suporte por dispositivos macOS e Windows.   
+Utilize o Microsoft Intune para enviar notificações personalizadas aos utilizadores de dispositivos geridos iOS/iPadOS e Android. Estas mensagens aparecem como notificações padrão da aplicação Portal da Empresa e da aplicação Microsoft Intune no dispositivo de um utilizador, assim como surgem notificações de outras aplicações no dispositivo. As notificações personalizadas intonizadas não são suportadas por dispositivos macOS e Windows.   
 
-As mensagens de notificação personalizadas incluem um título curto e um corpo de mensagem de 500 caracteres ou menos. Essas mensagens podem ser personalizadas para qualquer finalidade de comunicação geral.
+As mensagens de notificação personalizadas incluem um título curto e um corpo de mensagem de 500 caracteres ou menos. Estas mensagens podem ser personalizadas para qualquer finalidade de comunicação geral.
 
-### <a name="what-the-notification-looks-like-on-an-ios-device"></a>A aparência da notificação em um dispositivo iOS
+### <a name="what-the-notification-looks-like-on-an-iosipados-device"></a>Como é a notificação num dispositivo iOS/iPadOS
 
-Se você tiver o aplicativo Portal da Empresa aberto em um dispositivo iOS, a notificação será semelhante à captura de tela a seguir:
+Se tiver a aplicação Portal da Empresa aberta num dispositivo iOS/iPadOS, a notificação assemelha-se à seguinte imagem:
 
 > [!div class="mx-imgBorder"]
-> ![Portal da Empresa notificação de teste do iOS](./media/custom-notifications/105046-1.png)
+> ![Portal da Empresa iOS/iPadOS Teste](./media/custom-notifications/105046-1.png)
 
 Se o dispositivo estiver bloqueado, a notificação será semelhante à captura de tela a seguir:
 
 > [!div class="mx-imgBorder"]
-> ![notificação de teste do iOS de dispositivo bloqueado](./media/custom-notifications/105046-2.png)
+> ![dispositivo bloqueado iOS/iPadOS Teste](./media/custom-notifications/105046-2.png)
 
 ### <a name="what-the-notification-looks-like-on-an-android-device"></a>Qual é a aparência da notificação em um dispositivo Android
 
 Se você tiver o aplicativo Portal da Empresa aberto em um dispositivo Android, a notificação será semelhante à captura de tela a seguir:
 
 > [!div class="mx-imgBorder"]
-> ![](./media/custom-notifications/105046-3.png) de notificação de teste do Android
+> ![](./media/custom-notifications/105046-3.png) de notificação do Teste Android
 
-## <a name="common-scenarios-for-sending-custom-notifications"></a>Cenários comuns para enviar notificações personalizadas  
+## <a name="common-scenarios-for-sending-custom-notifications"></a>Cenários comuns para o envio de notificações personalizadas  
 
-- Notifique todos os funcionários de uma alteração na agenda, como a criação de fechamentos devido ao clima Inclement.
-- Envie uma notificação para o usuário de um único dispositivo para comunicar uma solicitação urgente, como reiniciar o dispositivo para concluir a instalação de uma atualização. 
+- Notifique todos os funcionários de uma mudança de horário, como o encerramento de edifícios devido ao mau tempo.
+- Envie uma notificação ao utilizador de um único dispositivo para comunicar um pedido urgente, como reiniciar o dispositivo para concluir a instalação de uma atualização. 
 
-## <a name="considerations-for-using-custom-notifications"></a>Considerações sobre o uso de notificações personalizadas
+## <a name="considerations-for-using-custom-notifications"></a>Considerações para o uso de notificações personalizadas
 
 **Configuração do dispositivo** 
 
-- Os dispositivos devem ter o aplicativo Portal da Empresa ou o aplicativo Microsoft Intune instalado antes que os usuários possam receber notificações personalizadas. Eles também devem ter configurado permissões para permitir que o aplicativo Portal da Empresa ou o aplicativo Microsoft Intune envie notificações por push. Se necessário, o aplicativo Portal da Empresa e o aplicativo Microsoft Intune podem solicitar que os usuários permitam notificações.  
-- No Android, Google Play Services é uma dependência necessária.  
-- O dispositivo deve ser registrado como MDM.
+- Os dispositivos devem ter a aplicação Portal da Empresa ou a aplicação Microsoft Intune instalada antes de os utilizadores poderem receber notificações personalizadas. Devem também ter permissões configuradas para permitir que a aplicação Portal da Empresa ou a aplicação Microsoft Intune enviem notificações push. Se necessário, a aplicação Portal da Empresa e a aplicação Microsoft Intune podem levar os utilizadores a permitir notificações.  
+- No Android, o Google Play Services é uma dependência necessária.  
+- O dispositivo deve estar matriculado em MDM.
 
-**Permissões**:
-- Para enviar notificações para grupos, sua conta deve ter a seguinte permissão de RBAC no Intune: *organização* > **atualização**.
-- Para enviar notificações para um dispositivo, sua conta deve ter a seguinte permissão de RBAC no Intune: *tarefas remotas* > **enviar notificações personalizadas**.
+**Permissões:**
+- Para enviar notificações a grupos, a sua conta deve ter a seguinte permissão RBAC em Intune: *Organização* > **Atualizar**.
+- Para enviar notificações para um dispositivo, a sua conta deve ter a seguinte permissão RBAC em Intune: *Tarefas remotas* > **Enviar notificações personalizadas**.
 
-**Criando notificações**:  
-- Para criar uma mensagem, use uma conta que seja atribuída a uma função do Intune que inclua a permissão **Atualizar** para a **organização**. Para atribuir permissões a um usuário, consulte [atribuições de função](../fundamentals/role-based-access-control.md#role-assignments)  
-- As notificações personalizadas são limitadas a títulos de 50 caracteres e a mensagens de 500 caracteres.  
-- O Intune não salva mensagens enviadas. Para reenviar uma mensagem, você deve recriar essa mensagem.  
-- Você só pode enviar até 25 mensagens para grupos por hora. Essa restrição está no nível do locatário. Essa limitação não se aplica ao enviar notificações para indivíduos.
-- Ao enviar mensagens para dispositivos individuais, você pode enviar até 10 mensagens por hora para o mesmo dispositivo. 
-- Você pode enviar notificações para vários usuários ou dispositivos atribuindo a notificação a grupos. Ao usar grupos, cada notificação pode direcionar diretamente até 25 grupos. Grupos aninhados não contam com esse total.  
+**Criação de notificações:**  
+- Para criar uma mensagem, utilize uma conta que seja atribuída uma função Intune que inclua a permissão **de Atualização** para **organização**. Para atribuir permissões a um utilizador, consulte [atribuições](../fundamentals/role-based-access-control.md#role-assignments) de role  
+- As notificações personalizadas estão limitadas a títulos de 50 caracteres e mensagens de 500 caracteres.  
+- Intune não guarda mensagens enviadas. Para reenviar uma mensagem, tem de recriar essa mensagem.  
+- Só pode enviar até 25 mensagens para grupos por hora. Esta restrição está ao nível dos inquilinos. Esta limitação não se aplica no envio de notificações a indivíduos.
+- Ao enviar mensagens para dispositivos individuais, só pode enviar até 10 mensagens por hora para o mesmo dispositivo. 
+- Pode enviar notificações a vários utilizadores ou dispositivos atribuindo a notificação a grupos. Ao utilizar grupos, cada notificação pode visar diretamente até 25 grupos. Grupos aninhados não contam contra este total.  
 
-  Os grupos podem incluir usuários ou dispositivos, mas as mensagens são enviadas somente para os usuários e para cada dispositivo iOS ou Android que o usuário registrou.  
-- Você pode enviar notificações para um único dispositivo. Em vez de usar grupos, você seleciona um dispositivo e, em seguida, usa uma [ação de dispositivo](device-management.md#available-device-actions) remoto para enviar a notificação personalizada.  
+  Os grupos podem incluir utilizadores ou dispositivos, mas as mensagens são enviadas apenas para os utilizadores, e para cada dispositivo iOS/iPadOS ou Android que o utilizador registou.  
+- Pode enviar notificações para um único dispositivo. Em vez de utilizar grupos, selecione um dispositivo e, em seguida, utilize uma ação remota do [dispositivo](device-management.md#available-device-actions) para enviar a notificação personalizada.  
 
-**Entrega**:  
-- O Intune envia mensagens para o aplicativo Portal da Empresa do usuário ou para o aplicativo Microsoft Intune, que, em seguida, cria a notificação por push. Os usuários não precisam estar conectados ao aplicativo para que a notificação seja enviada por push no dispositivo.  
-- O Intune, bem como o aplicativo Portal da Empresa e o aplicativo Microsoft Intune, não podem garantir a entrega de uma notificação personalizada. As notificações personalizadas podem aparecer após várias horas de atraso, se, portanto, não devem ser usadas para mensagens urgentes.  
-- Mensagens de notificação personalizadas do Intune aparecem em dispositivos como notificações por push padrão. Se o aplicativo Portal da Empresa estiver aberto em um dispositivo iOS quando receber a notificação, a notificação será exibida no aplicativo, em vez de ser uma notificação por push.  
-- As notificações personalizadas podem ser visíveis em telas de bloqueio em dispositivos iOS e Android, dependendo das configurações do dispositivo.  
-- Em dispositivos Android, outros aplicativos podem ter acesso aos dados em suas notificações personalizadas. Não os use para comunicações confidenciais.  
-- Os usuários de um dispositivo que foi recentemente cancelado, ou usuários que foram removidos de um grupo, ainda podem receber uma notificação personalizada que é enviada posteriormente para esse grupo.  Da mesma forma, se você adicionar um usuário a um grupo depois que uma notificação personalizada for enviada ao grupo, será possível que o uso recém-adicionado receba essa mensagem de notificação enviada anteriormente.  
+**Entrega:**  
+- Intune envia mensagens para a aplicação Portal da Empresa dos utilizadores ou para a aplicação Microsoft Intune, que cria a notificação push. Os utilizadores não precisam de ser inscritos na aplicação para que a notificação seja empurrada para o dispositivo.  
+- Intune, bem como a aplicação Portal da Empresa e a aplicação Microsoft Intune, não podem garantir a entrega de uma notificação personalizada. As notificações personalizadas podem aparecer após várias horas de atraso, se é que não devem ser usadas para mensagens urgentes.  
+- As mensagens de notificação personalizadas do Intune aparecem nos dispositivos como notificações padrão de push. Se a aplicação Portal da Empresa estiver aberta num dispositivo iOS/iPadOS quando receber a notificação, a notificação apresenta-se na aplicação em vez de ser uma notificação push.  
+- As notificações personalizadas podem ser visíveis nos ecrãs de bloqueio tanto em dispositivos iOS/iPadOS como Android, dependendo das definições do dispositivo.  
+- Em dispositivos Android, outras aplicações podem ter acesso aos dados nas suas notificações personalizadas. Não os use para comunicações sensíveis.  
+- Os utilizadores de um dispositivo recentemente não inscrito, ou utilizadores que foram removidos de um grupo, poderão ainda receber uma notificação personalizada que é posteriormente enviada para aquele grupo.  Da mesma forma, se adicionar um utilizador a um grupo após a notificação personalizada ter sido enviada para o grupo, é possível que a nova utilização adicionada receba a mensagem de notificação enviada anteriormente.  
 
-## <a name="send-a-custom-notification-to-groups"></a>Enviar uma notificação personalizada para grupos  
+## <a name="send-a-custom-notification-to-groups"></a>Enviar uma notificação personalizada a grupos  
 
-1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) com uma conta que tenha permissões para criar e enviar notificações e acesse **Administração de locatários** > **notificações personalizadas**.  
+1. Inscreva-se no [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) com uma conta que tem permissões para criar e enviar notificações, e ir à **administração do Tenant** > **notificações personalizadas.**  
 
-2. Na guia noções básicas, especifique o seguinte e, em seguida, selecione **Avançar** para continuar.  
-   - **Título** – especifique um título para esta notificação. Os títulos são limitados a 50 caracteres.  
-   - **Corpo** – especifique a mensagem. As mensagens são limitadas a 500 caracteres.
+2. No separador Basics, especifique o seguinte e, em seguida, selecione **Next** para continuar.  
+   - **Título** – Especifique um título para esta notificação. Os títulos estão limitados a 50 caracteres.  
+   - **Corpo** – Especifique a mensagem. As mensagens estão limitadas a 500 caracteres.
 
    ![Criar uma notificação personalizada](./media/custom-notifications/custom-notifications.png)  
 
-3. Na guia **atribuições** , selecione os grupos aos quais você deseja enviar essa notificação personalizada e, em seguida, selecione avançar para continuar.  
+3. No separador **Demissões,** selecione os grupos para os quais pretende enviar esta notificação personalizada e, em seguida, selecione Next para continuar.  
 
-4. Na guia **revisar + criar** , examine as informações e, quando estiver pronto para enviar a notificação, selecione **criar**.  
+4. No separador **Review + Criar,** reveja as informações e quando estiver pronto para enviar a notificação, selecione **Criar**.  
 
-O Intune processa as mensagens que você cria imediatamente. A única confirmação de que a mensagem foi enviada é a notificação do Intune que confirma que a notificação personalizada foi enviada.  
+Insintoniza as mensagens que cria imediatamente. A única confirmação de que a mensagem foi enviada é a notificação intune que confirma que a notificação personalizada foi enviada.  
 
 ![Confirmação de uma notificação enviada](./media/custom-notifications/notification-sent.png)  
 
-O Intune não rastreia as notificações personalizadas que você envia e os dispositivos não registram o recebimento fora do centro de notificação do dispositivo.  
+Intune não rastreia as notificações personalizadas que envia, e os dispositivos não registam o recibo fora do centro de notificação do dispositivo.  
 
-## <a name="send-a-custom-notification-to-a-single-device"></a>Enviar uma notificação personalizada para um único dispositivo  
+## <a name="send-a-custom-notification-to-a-single-device"></a>Envie uma notificação personalizada para um único dispositivo  
 
-1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) com uma conta que tenha permissões para criar e enviar notificações e, em seguida, vá para **dispositivos** > **todos os dispositivos**.
+1. Inscreva-se no [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) com uma conta que tem permissões para criar e enviar notificações e depois ir para **Dispositivos** > **Todos os dispositivos**.
 
-2. Clique duas vezes no nome do dispositivo gerenciado para o qual você deseja enviar uma notificação, para abrir a página *visão geral* de dispositivos.
+2. Clique duas vezes no nome do dispositivo gerido para o qual pretende enviar uma notificação, para abrir a página *de Visualização geral* dos dispositivos.
 
-3. Na página **visão geral** de dispositivos, a ação enviar dispositivo de **notificação personalizada** para abrir o painel *enviar notificação personalizada* . Se essa opção não estiver disponível, selecione a opção **...** (reticências) do lado superior direito da página e, em seguida, selecione **enviar notificação personalizada**.
+3. Na página **de visualização geral** dos dispositivos, a ação do dispositivo **de notificação personalizada enviar** para abrir o painel de *notificação personalizado enviar.* Se esta opção não estiver disponível, selecione a opção **...** (elipses) do lado superior direito da página e, em seguida, selecione **Enviar Notificação Personalizada**.
 
-4. No painel **enviar notificação personalizada** , especifique os seguintes detalhes da mensagem:  
+4. No painel **de notificação personalizado enviar,** especifique os seguintes detalhes da mensagem:  
 
-   - **Título** – especifique um título para esta notificação. Os títulos são limitados a 50 caracteres.  
-   - **Corpo** – especifique a mensagem. As mensagens são limitadas a 500 caracteres.  
+   - **Título** – Especifique um título para esta notificação. Os títulos estão limitados a 50 caracteres.  
+   - **Corpo** – Especifique a mensagem. As mensagens estão limitadas a 500 caracteres.  
 
-5. Selecione **Enviar** para enviar a notificação personalizada para o dispositivo. Ao contrário das notificações que você envia para os grupos, você não configura uma atribuição ou revisa a mensagem antes de enviá-la.  
+5. Selecione **Enviar** para enviar a notificação personalizada para o dispositivo. Ao contrário das notificações que envia a grupos, não configura uma atribuição nem revê a mensagem antes de a enviar.  
 
-O Intune processa a mensagem imediatamente. A única confirmação de que a mensagem foi enviada é a notificação do Intune que você receberá no console do, que exibe o texto da mensagem enviada.  
+Insintoniza a mensagem imediatamente. A única confirmação de que a mensagem foi enviada é a notificação intune que receberá na consola, que exibe o texto da mensagem que enviou.  
 
-## <a name="receive-a-custom-notification"></a>Receber uma notificação personalizada  
+## <a name="receive-a-custom-notification"></a>Receba uma notificação personalizada  
 
-Em um dispositivo, os usuários veem mensagens de notificação personalizadas que são enviadas pelo Intune como uma notificação por push padrão do aplicativo Portal da Empresa ou do aplicativo Microsoft Intune. Essas notificações são semelhantes às notificações por push que os usuários recebem de outros aplicativos no dispositivo.  
+Num dispositivo, os utilizadores vêem as mensagens de notificação personalizadas que são enviadas pela Intune como uma notificação padrão da aplicação Portal da Empresa ou da aplicação Microsoft Intune. Estas notificações são semelhantes às notificações push que os utilizadores recebem de outras aplicações no dispositivo.  
 
-Em dispositivos iOS, se o aplicativo Portal da Empresa estiver aberto quando a notificação for recebida, a notificação será exibida no aplicativo, em vez de ser uma notificação por push.  
+Nos dispositivos iOS/iPadOS, se a aplicação Portal da Empresa estiver aberta quando a notificação for recebida, a notificação apresenta-se na aplicação em vez de ser uma notificação push.  
 
-A notificação permanece até que o usuário a descarte.  
+A notificação permanece até que o utilizador a despeça.  
 
 ## <a name="next-steps"></a>Próximos passos  
 

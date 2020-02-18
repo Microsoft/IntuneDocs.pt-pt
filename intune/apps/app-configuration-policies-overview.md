@@ -1,7 +1,7 @@
 ---
 title: Políticas de configuração de aplicações para o Microsoft Intune
 titleSuffix: ''
-description: Saiba como utilizar políticas de configuração de aplicações num dispositivo iOS ou Android no Microsoft Intune.
+description: Saiba como utilizar as políticas de configuração de aplicações num iOS/iPadOS ou dispositivo Android no Microsoft Intune.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -18,18 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8c9dc1d95806bcddf423bb4d92dbdf4961c15809
-ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.openlocfilehash: a2cf53b26c1617ca7fc493c837e57823c23781bc
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76812469"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414846"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Políticas de configuração de aplicações para o Microsoft Intune
 
 As políticas de configuração de aplicações podem ajudá-lo a eliminar problemas de configuração de aplicações, permitindo-lhe atribuir definições de configuração a uma política que é atribuída aos utilizadores finais antes de executar a aplicação. As definições são então fornecidas automaticamente quando a aplicação está configurada no dispositivo de utilizadores finais, e os utilizadores finais não precisam de tomar medidas. As definições de configuração são únicas para cada aplicação. 
 
-Pode criar e utilizar políticas de configuração de apps para fornecer configurações de configuração tanto para aplicações iOS como Android. Estas configurações de configuração permitem que uma aplicação seja personalizada utilizando a configuração e a gestão da aplicação. As definições de política de configuração são utilizadas quando a aplicação verifica estas definições, tipicamente a primeira vez que a aplicação é executada. 
+Pode criar e utilizar políticas de configuração de apps para fornecer configurações de configuração tanto para aplicações iOS/iPadOS como Android. Estas configurações de configuração permitem que uma aplicação seja personalizada utilizando a configuração e a gestão da aplicação. As definições de política de configuração são utilizadas quando a aplicação verifica estas definições, tipicamente a primeira vez que a aplicação é executada. 
 
 Uma definição de configuração da aplicação, por exemplo, pode exigir que especifique qualquer um dos seguintes detalhes:
 
@@ -71,7 +71,7 @@ Selecionar **aplicações geridas** como o Tipo de Inscrição de **Dispositivos
 ![Tipo de inscrição do dispositivo](./media/app-configuration-policies-overview/device-enrollment-type.png)
 
 > [!NOTE]
-> Para aplicações multi-identidade, como o Microsoft Outlook, as preferências dos utilizadores podem ser consideradas. A Caixa de Entrada Focada, por exemplo, respeitará a definição do utilizador e não alterará a configuração. Outros parâmetros permitem controlar se um utilizador pode ou não alterar a definição. Para mais informações, consulte [o Outlook de implementação para configurações de configuração de aplicações iOS e Android.](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune)
+> Para aplicações multi-identidade, como o Microsoft Outlook, as preferências dos utilizadores podem ser consideradas. A Caixa de Entrada Focada, por exemplo, respeitará a definição do utilizador e não alterará a configuração. Outros parâmetros permitem controlar se um utilizador pode ou não alterar a definição. Para mais informações, consulte [o Outlook de Implementação para as definições de configuração de aplicações iOS/iPadOS e Android](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune).
 
 ## <a name="validate-the-applied-app-configuration-policy"></a>Validar a política de configuração de aplicações aplicadas
 
@@ -93,7 +93,7 @@ Pode validar a política de configuração da aplicação utilizando os seguinte
 
 ### <a name="ios-configuration-on-unmanaged-devices"></a>configuração do iOS em dispositivos não geridos
 
-Pode validar a configuração do iOS com o **Intune Diagnostic Log** em dispositivos não geridos para configuração de aplicações geridas. Além das etapas a seguir, você pode acessar logs de aplicativo gerenciado usando o Microsoft Edge. Para obter mais informações, consulte [usar o Microsoft Edge no Ios para acessar logs de aplicativo gerenciado](~/apps/manage-microsoft-edge.md#use-microsoft-edge-on-ios-to-access-managed-app-logs).
+Pode validar a configuração do iOS/iPadOS com o **Intune Diagnostic Log** em dispositivos não geridos para configuração de aplicações geridas. Além dos passos abaixo, pode aceder a registos de aplicações geridos através do Microsoft Edge. Para mais informações, consulte [Use Microsoft Edge no iOS/iPadOS para aceder a registos de aplicações geridos](~/apps/manage-microsoft-edge.md#use-microsoft-edge-on-ios-to-access-managed-app-logs).
 
 1. Caso ainda não estivesse instalado no dispositivo, descarregue e instale o **Microsoft Edge** a partir da App Store. Para mais informações, consulte [as aplicações protegidas microsoft Intune](apps-supported-intune-apps.md).
 2. Lance o **Microsoft Edge** e selecione **cerca** de > **insonize a** partir da barra de navegação.
@@ -137,7 +137,7 @@ Os detalhes de configuração da sua aplicação devem corresponder às polític
 
 ### <a name="ios-configuration-on-managed-devices"></a>configuração do iOS em dispositivos geridos
 
-Pode validar a configuração do iOS com o **Intune Diagnostic Log** em dispositivos geridos para a configuração de aplicações geridas.
+Pode validar a configuração do iOS/iPadOS com o **Intune Diagnostic Log** em dispositivos geridos para a configuração da aplicação gerida.
 
 1. Caso ainda não estivesse instalado no dispositivo, descarregue e instale o **Microsoft Edge** a partir da App Store. Para mais informações, consulte [as aplicações protegidas microsoft Intune](apps-supported-intune-apps.md).
 2. Lance **o Microsoft Edge** e selecione **cerca** de > **insintonização** da barra de navegação.
@@ -149,7 +149,7 @@ Pode validar a configuração do iOS com o **Intune Diagnostic Log** em disposit
 
 ### <a name="android-configuration-on-managed-devices"></a>Configuração do Android em dispositivos geridos
 
-Pode validar a configuração do iOS com o **Intune Diagnostic Log** em dispositivos geridos para a configuração de aplicações geridas.
+Pode validar a configuração do iOS/iPadOS com o **Intune Diagnostic Log** em dispositivos geridos para a configuração da aplicação gerida.
 
 Para recolher registos de um dispositivo Android, você ou o utilizador final devem descarregar os registos do dispositivo através de uma ligação USB (ou o equivalente do **File Explorer** no dispositivo). Eis os passos:
 
@@ -162,7 +162,7 @@ Para recolher registos de um dispositivo Android, você ou o utilizador final de
     
 ## <a name="graph-api-support-for-app-configuration"></a>Suporte da Graph API para configuração de aplicações
 
-Pode utilizar a API do Graph para realizar tarefas de configuração de aplicações. Para obter detalhes, consulte [configuração de destino de Mam de API do Graph de referência](https://docs.microsoft.com/graph/api/resources/intune-shared-targetedmanagedappconfiguration?view=graph-rest-beta). Para obter mais informações sobre o Intune e o Graph, consulte [trabalhando com o Intune no Microsoft Graph](https://docs.microsoft.com/graph/api/resources/intune-graph-overview?view=graph-rest-beta).
+Pode utilizar a API do Graph para realizar tarefas de configuração de aplicações. Para mais detalhes, consulte [Graph API Reference MAM Targeted Config](https://docs.microsoft.com/graph/api/resources/intune-shared-targetedmanagedappconfiguration?view=graph-rest-beta). Para obter mais informações sobre Intune e Graph, consulte [Trabalhar com Intune no Microsoft Graph](https://docs.microsoft.com/graph/api/resources/intune-graph-overview?view=graph-rest-beta).
 
 ## <a name="troubleshooting"></a>Resolução de Problemas
 
@@ -173,7 +173,7 @@ Quando os registos mostram um parâmetro de configuração que se confirma estar
 
 ### <a name="managed-devices"></a>Dispositivos geridos
 
-- Saiba como utilizar a configuração de aplicações com os seus dispositivos iOS.  Ver Adicionar políticas de configuração de [aplicativos para dispositivos iOS geridos](app-configuration-policies-use-ios.md).
+- Saiba como utilizar a configuração da aplicação com os seus dispositivos iOS/iPadOS.  Ver Adicionar políticas de configuração de [aplicativos para dispositivos iOS/iPadOS geridos](app-configuration-policies-use-ios.md).
 - Saiba como utilizar a configuração de aplicações com os seus dispositivos Android.  Veja [Adicionar políticas de configuração de aplicações para dispositivos Android geridos](app-configuration-policies-use-android.md).
 
 ### <a name="managed-apps"></a>Aplicações geridas

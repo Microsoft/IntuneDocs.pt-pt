@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8ee8bc3cdee9f61a901854e08000e9e2cbbb2864
-ms.sourcegitcommit: e75718ee6cf93c0e6c915f2776b785fe8db9f7e0
+ms.openlocfilehash: f0976ff8e6ec45f1f861fd4a4e0474255d701ae4
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74955376"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414263"
 ---
 # <a name="categorize-devices-into-groups"></a>Categorizar dispositivos em grupos
 
@@ -32,7 +32,7 @@ Para facilitar a gestão dos dispositivos, pode utilizar categorias de dispositi
 
 As categorias de dispositivos utilizam o fluxo de trabalho seguinte:
 1. Crie categorias para os utilizadores escolherem quando inscrevem o dispositivo.
-2. Quando os utilizadores de dispositivos iOS e Android inscreverem um dispositivo, têm de escolher uma categoria na lista de categorias que configurou. Os utilizadores podem utilizar o site do Portal da Empresa para atribuir uma categoria a um dispositivo Windows.
+2. Quando os utilizadores de dispositivos iOS/iPadOS e Android matriculam um dispositivo, devem escolher uma categoria da lista de categorias configuradas. Os utilizadores podem utilizar o site do Portal da Empresa para atribuir uma categoria a um dispositivo Windows.
 3. Nessa altura, pode implementar políticas e aplicações a estes grupos.
 
 Pode criar as categorias de dispositivo que pretender. Por exemplo:
@@ -45,7 +45,7 @@ Pode criar as categorias de dispositivo que pretender. Por exemplo:
 ## <a name="how-to-configure-device-categories"></a>Como configurar as categorias de dispositivos
 
 ### <a name="step-1-create-device-categories-on-the-intune-blade-of-the-azure-portal"></a>Passo 1: criar categorias de dispositivos no painel do portal do Azure no Intune
-1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **dispositivos** > **categorias de dispositivo**.
+1. Inscreva-se no [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **dispositivos** > **categorias de Dispositivos**.
 2. Na página **Categorias de dispositivos**, selecione **Criar** para adicionar uma nova categoria.
 3. No painel **Criar categoria de dispositivo**, introduza um **Nome** para a nova categoria e uma **Descrição** opcional.
 4. Quando tiver terminado, selecione **Criar**. Agora, pode ver a nova categoria na lista de categorias.
@@ -63,26 +63,26 @@ Depois de configurar os grupos de dispositivos e os utilizadores inscreverem o d
 
 ### <a name="view-the-categories-of-devices-that-you-manage"></a>Ver as categorias de dispositivos que gere
 
-1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **dispositivos** > **todos os dispositivos**.
+1. Inscreva-se no [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **dispositivos** > **todos os dispositivos**.
 
 2. Na lista de dispositivos, examine a coluna **Categoria de dispositivo**.
 
-Se a coluna **categoria do dispositivo** não for mostrada, selecione **colunas** > **categoria** > **aplicar**.
+Se a coluna da **categoria Dispositivo** não for mostrada, selecione **Colunas** > **categoria** > **Aplicar**.
 
 ### <a name="change-the-category-of-a-device"></a>Alterar a categoria de um dispositivo
 
-1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **dispositivos** > **todos os dispositivos** > escolha o dispositivo que você deseja > **Propriedades**.
+1. Inscreva-se no [Microsoft Endpoint Manager Admin Center,](https://go.microsoft.com/fwlink/?linkid=2109431)escolha **Dispositivos** > **Todos os dispositivos** > escolha o dispositivo que deseja > **Propriedades**.
 2. No painel seguinte, pode alterar a **Categoria de dispositivo** do dispositivo selecionado para qualquer um dos nomes de categoria que configurou anteriormente.
 
 ## <a name="after-you-configure-device-groups"></a>Após configurar grupos de dispositivos
 
-Quando os utilizadores de dispositivos iOS e Android inscreverem os dispositivos, têm de escolher uma categoria na lista de categorias que configurou. Após escolherem uma categoria e terminarem a inscrição, o respetivo dispositivo é adicionado ao grupo de dispositivos do Intune ou ao grupo de segurança do Active Directory que corresponder à categoria que escolheram.
+Quando os utilizadores de dispositivos iOS/iPadOS e Android matriculam o seu dispositivo, devem escolher uma categoria da lista de categorias configuradas. Após escolherem uma categoria e terminarem a inscrição, o respetivo dispositivo é adicionado ao grupo de dispositivos do Intune ou ao grupo de segurança do Active Directory que corresponder à categoria que escolheram.
 
 Os utilizadores do Windows devem utilizar o site do Portal da Empresa para selecionar uma categoria.
 
 Independentemente da plataforma, os seus utilizadores podem sempre aceder a portal.manage.microsoft.com após inscreverem o dispositivo. Peça ao utilizador que aceda ao site do Portal da Empresa e aceda a **Os Meus Dispositivos**. O utilizador pode escolher um dispositivo inscrito listado na página e, em seguida, selecionar uma categoria.
 
-Após escolher uma categoria, o dispositivo é automaticamente adicionado ao grupo criado correspondente. Se um dispositivo já estiver inscrito antes de configurar as categorias, o utilizador verá uma notificação sobre o dispositivo no site do Portal da Empresa. Esta notificação informa o utilizador de que tem de selecionar uma categoria da próxima vez que aceder à aplicação Portal da Empresa no iOS ou Android.
+Após escolher uma categoria, o dispositivo é automaticamente adicionado ao grupo criado correspondente. Se um dispositivo já estiver inscrito antes de configurar as categorias, o utilizador verá uma notificação sobre o dispositivo no site do Portal da Empresa. Isto permite ao utilizador saber selecionar uma categoria da próxima vez que aceder à aplicação Portal da Empresa no iOS/iPadOS ou Android.
 
 ## <a name="further-information"></a>Informações adicionais
 - Pode editar uma categoria de dispositivos no portal do Azure, mas tem de atualizar manualmente todos os grupos de segurança do Azure AD que mencionam esta categoria.

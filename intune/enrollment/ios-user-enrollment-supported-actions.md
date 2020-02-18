@@ -1,12 +1,12 @@
 ---
-title: Ações e opções do Intune com suporte com o registro de usuário da Apple
+title: Intune ações e opções suportadas com a Inscrição do Utilizador da Apple
 titleSuffix: Microsoft Intune
-description: Saiba quais opções e ações do Intune têm suporte com o registro de usuário da Apple
+description: Saiba quais as ações e opções intune que são suportadas com a Inscrição do Utilizador da Apple
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/2/2019
+ms.date: 2/14/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: enrollment
@@ -18,108 +18,104 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e23e582a853f0b424296d8fb42f6c7d8fdd2984c
-ms.sourcegitcommit: 0d9e1452fcf5f15a80230838f80a427b9951cdb1
+ms.openlocfilehash: 9c6fb7da3a791d369fc3005367ee7670af8bc63e
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/21/2019
-ms.locfileid: "75324870"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414139"
 ---
-# <a name="intune-actions-and-options-supported-with-apple-user-enrollment"></a>Ações e opções do Intune com suporte com o registro de usuário da Apple
+# <a name="intune-actions-and-options-supported-with-apple-user-enrollment"></a>Intune ações e opções suportadas com a Inscrição do Utilizador da Apple
 
-O registro de usuário dá suporte a um subconjunto de opções de gerenciamento de dispositivo. Se um perfil de configuração pré-existente for aplicado a um dispositivo de registro de usuário, somente as configurações com suporte do registro de usuário serão aplicadas a esse dispositivo.
+A Inscrição do Utilizador suporta um subconjunto de opções de gestão de dispositivos. Se for aplicado um perfil de configuração pré-existente a um dispositivo de inscrição do utilizador, apenas serão aplicadas configurações suportadas pela Inscrição do Utilizador nesse dispositivo.
 
 > [!NOTE]
-> O suporte para o registro de usuário da Apple no Intune está atualmente em versão prévia.
+> O suporte para a inscrição de utilizadores da Apple em Intune está atualmente em pré-visualização para iOS e iPadOS.
 
 ## <a name="password-settings"></a>Definições de palavra-passe
 
-Em dispositivos de registro de usuário, se você definir qualquer configuração de senha, as configurações de **senhas simples** serão automaticamente definidas como **Bloquear**e um PIN de 6 dígitos será imposto.
+Nos dispositivos de inscrição do utilizador, se configurar qualquer definição de palavra-passe, as definições **de palavras-passe Simples** são automaticamente definidas para **Bloquear**, e um PIN de 6 dígitos é aplicado.
 
-Por exemplo, você define a configuração de **expiração de senha** e envia por push essa política para dispositivos registrados pelo usuário. Nos dispositivos, acontece o seguinte:
-- A configuração de **expiração de senha** é ignorada.
-- Senhas simples, como `111111` ou `123456`, não são permitidas.
-- Um PIN de 6 dígitos é imposto.
+Por exemplo, configura a definição de validade da **Palavra-passe** e empurra esta política para dispositivos inscritos pelo utilizador. Nos dispositivos, acontece o seguinte:
+- A definição de expiração da **palavra-passe** é ignorada.
+- Não são permitidas senhas simples, como `111111` ou `123456`.
+- Um pino de 6 dígitos é imposto.
 
-## <a name="administrator-remote-device-actions-and-options"></a>Ações e opções de dispositivo remoto do administrador
-Os administradores podem executar as seguintes ações e opções em dispositivos de registro de usuário:
+## <a name="administrator-remote-device-actions-and-options"></a>Ações e opções de dispositivos remotos administrador
+Os administradores podem executar as seguintes ações e opções em dispositivos de inscrição do utilizador:
 - Extinguir
 - Eliminar
 - Bloqueio Remoto
 - Sincronizar
 
-Não há suporte para todas as outras ações.
+Todas as outras ações não são apoiadas.
 
-## <a name="end-user-actions"></a>Ações do usuário final
-Em dispositivos de registro de usuário, os usuários finais podem executar essas ações em seus dispositivos no aplicativo Portal da Empresa e no site:
-- Nome. Essa ação se aplica somente ao nome voltado para o usuário dentro do Portal da Empresa. Ele não renomeará completamente o dispositivo fora desse contexto.
+## <a name="end-user-actions"></a>Ações de utilizador final
+Nos dispositivos de inscrição do utilizador, os utilizadores finais podem executar estas ações nos seus dispositivos a partir da aplicação e website do Portal da Empresa:
+- Mudar o nome. Esta ação aplica-se apenas ao nome virado para o utilizador dentro do Portal da Empresa. Não vai mudar completamente o nome do dispositivo fora desse contexto.
 - Remove
 - Bloqueio Remoto
-- Verificar status
+- Verificar estado
 
-## <a name="app-deployment-options"></a>Opções de implantação de aplicativo
-Os seguintes tipos de aplicativo podem ser implantados em dispositivos de registro de usuário:
-- Aplicativos de plano de compra de volume (VPP) licenciados pelo usuário, incluindo aplicativos personalizados
+## <a name="app-deployment-options"></a>Opções de implementação de aplicativos
+Os seguintes tipos de aplicações podem ser implementados em dispositivos de inscrição do utilizador:
+- Aplicativos do Plano de Compra de Volume (VPP) licenciados pelo utilizador, incluindo aplicações personalizadas
 - Aplicações de linha de negócio (LOB)
 - Aplicações Web
 
-## <a name="other-supported-options"></a>Outras opções com suporte
+## <a name="other-supported-options"></a>Outras opções apoiadas
 
-As opções a seguir têm suporte no Intune para dispositivos registrados usando o registro de usuário da Apple:
-- VPN por aplicativo. Esse suporte exclui os domínios do Safari, pois o registro de usuário não dá suporte à definição das configurações do Safari.
+As seguintes opções são suportadas em Intune para dispositivos matriculados utilizando a inscrição do Utilizador da Apple:
+- VPN por app. Este suporte exclui os Domínios do Safari, uma vez que a inscrição do utilizador não suporta configurar as definições do Safari.
 - Wi-Fi 
-- Remoção do aplicativo corporativo após o cancelamento do registro
-- Detecção de jailbreak
+- Remoção de aplicativos corporativos após não inscrição
+- Deteção de Jailbreak
 
-Há suporte para as seguintes restrições:
-- Exibir documentos corporativos em aplicativos não gerenciados
-- Exibindo documentos não corporativos em aplicativos corporativos
-- Permitir que aplicativos não gerenciados leiam de contas de contatos gerenciados
-- Descartar como um destino não gerenciado
-- Backup criptografado necessário
-- Sincronização de aplicativos gerenciados para a nuvem
-- Acesso ao centro de controle enquanto o dispositivo está bloqueado
-- Acesso ao centro de notificações enquanto o dispositivo está bloqueado
-- Exibição atual enquanto o dispositivo está bloqueado
-- Bloquear capturas de tela
-- Bloquear o backup do catálogo corporativo
-- Bloquear a sincronização de metadados do catálogo empresarial
+As seguintes restrições são suportadas:
+- Ver documentos corporativos em aplicações não geridas
+- Visualização de documentos não corporativos em aplicações corporativas
+- Permitir que aplicações não geridas leiam a partir de contas de contactos geridas
+- AirDrop como um destino não gerido
+- Cópia de segurança encriptada necessária
+- Aplicativos geridos sincronizam-se com a nuvem
+- Acesso do Centro de Controlo enquanto dispositivo bloqueado
+- Acesso do Centro de Notificação enquanto dispositivo bloqueado
+- Vista de hoje enquanto dispositivo bloqueado
+- Imagens de blocos
+- Backup do Livro de Empresas de Bloco
+- Sincronização de metadados do Livro da Empresa de Blocos
 - Exigir cópia de segurança encriptada
-- Exigir detecção de pulso de inspeção
-- Bloquear Siri
-- Bloquear Siri enquanto o dispositivo estiver bloqueado
-- Exigir avisos de fraude do Safari
-- Bloquear o envio de diagnóstico para a Apple
+- Requerem a deteção do pulso do relógio
+- Bloco Siri
+- Bloqueie a Siri enquanto o dispositivo está bloqueado
+- Requeiram avisos de fraude do Safari
+- Submissão de diagnósticos de blocos à Apple
 
 
-## <a name="options-not-supported"></a>Opções sem suporte
-As opções a seguir não têm suporte em dispositivos registrados com o registro do usuário. Se você precisar dessas opções, confira registro de dispositivo para dispositivos de propriedade pessoal ou registro de dispositivo automatizado para dispositivos corporativos.
-- Coletar inventário de aplicativo para aplicativos fora do volume APFS gerenciado.
-- Coletar inventário de certificados e perfis de provisionamento fora do volume APFS gerenciado.
-- Coletar UDID e outros identificadores de dispositivo persistentes.
-- O registro de usuário dá suporte a uma ID de registro exclusiva para cada dispositivo registrado, mas essa ID não persiste após o cancelamento do registro.
-- Os seguintes recursos do Intune não têm suporte devido a essa limitação:
-- Perfis de usuário SCEP com formato de nome de entidade de número de série.
-- VPN no nível do dispositivo.
-- Implantação de aplicativo VPP licenciado para dispositivo.
-- Instale aplicativos da App Store como aplicativos gerenciados.
-- Controle de MDM de aplicativos fora do volume APFS gerenciado.
-- As políticas de proteção de aplicativo ainda serão aplicadas a esses aplicativos. No entanto, você não poderá assumir o gerenciamento ou implantar uma versão gerenciada desses aplicativos, a menos que o usuário os exclua de seus dispositivos.
-- Ações, configurações, configurações e comandos que exigem supervisão. 
+## <a name="options-not-supported"></a>Opções não suportadas
+As seguintes opções não são suportadas em dispositivos matriculados com inscrição no utilizador. Se precisar destas opções, consulte a Inscrição do Dispositivo para dispositivos pessoais ou inscrição automática de dispositivos para dispositivos corporativos.
+- Colete o inventário de aplicativos para apps fora do volume APFS gerido.
+- Recolher o inventário dos certificados e dos perfis de provisionamento fora do volume APFS gerido.
+- Colete UDID e outros identificadores de dispositivos persistentes.
+- A Inscrição do Utilizador suporta um ID de inscrição único para cada dispositivo matriculado, mas este ID não persiste após a não inscrição.
+- As seguintes funcionalidades Intune não são suportadas por causa desta limitação:
+- Perfis de utilizador SCEP com formato de nome de nome de série.
+- VPN ao nível do dispositivo.
+- Implementação de aplicativos VPP licenciados por dispositivos.
+- Instale aplicações da App Store como aplicações geridas.
+- Controlo de APLICAções mdm fora do volume APFS gerido.
+- As Políticas de Proteção de Aplicações continuarão a aplicar-se a estas aplicações. No entanto, não será capaz de assumir a gestão ou implementar uma versão gerida destas aplicações, a menos que o utilizador as elimine do seu dispositivo.
+- Ações, configurações, configurações e comandos que requerem supervisão. 
 
-## <a name="options-not-supported-in-preview"></a>Opções sem suporte na visualização
-- Restrições de tipo de dispositivo de registro para permitir/bloquear dispositivos de propriedade pessoal 
 
-## <a name="known-issues-in-preview"></a>Problemas conhecidos na visualização
-- Revogação de licença de VPP: uma notificação informando que a licença foi revogada não aparece. O comportamento atual é que a revogação é bem-sucedida, mas o usuário final não é notificado. 
-- Relatório de aplicativos VPP: no relatório localizado em aplicativos cliente > aplicativos > [nome do aplicativo] > status de instalação do dispositivo, os aplicativos VPP implantados em dispositivos registrados pelo usuário estão relatando como "falha", mesmo quando o aplicativo é implantado com êxito no dispositivo. 
-- Relatórios de aplicativos: para tipos de aplicativos sem suporte com o registro de usuário, os relatórios podem fornecer mensagens de erro irrelevantes. 
-- Portal da Empresa experiência do aplicativo: os usuários veem todos os aplicativos destinados a eles, independentemente de esses tipos de aplicativos terem suporte para dispositivos registrados pelo usuário. 
-- Portal da Empresa experiência do aplicativo: os usuários veem o mesmo texto que indica o que as organizações podem ou não ver para o registro do usuário e do dispositivo.
-- Se um usuário selecionar "minha organização possui este dispositivo" durante o registro, o dispositivo ainda será identificado como pessoal no Intune, a menos que seja modificado de outra forma no console de administração ou por meio do grafo. 
-- Direcionamento de registro: iPadOS não está listado no seletor de plataforma. o iPadOS tem suporte na visualização, mas não explicitamente indicado no console de administração. 
+## <a name="known-issues-in-preview"></a>Questões conhecidas na pré-visualização
+- Revogação da licença VPP: Não aparece uma notificação de que a licença foi revogada. O comportamento atual é que a revogação é bem sucedida, mas o utilizador final não é notificado. 
+- Relatório de aplicações VPP: No relatório localizado nas Aplicações clientes > Apps > [Nome da Aplicação] > Estado de Instalação de Dispositivos, as aplicações VPP implementadas para dispositivos Inscritos no Utilizador estão a reportar como "falhadas", mesmo quando a aplicação se implementa com sucesso no dispositivo. 
+- Relatório de aplicação: Para tipos de aplicações não suportados com inscrição de utilizador, os relatórios podem fornecer mensagens de erro irrelevantes. 
+- Experiência de aplicação do Portal da Empresa: Os utilizadores vêem todas as aplicações direcionadas para os mesmos, independentemente de esses tipos de aplicações serem suportados para dispositivos Inscritos no Utilizador. 
+- Experiência de aplicação do Portal da Empresa: Os utilizadores vêem o mesmo texto indicando o que as organizações podem ver para a Inscrição de Utilizadores e Dispositivos se o administrador personalizar o texto indicando o que as organizações não podem ver.
 
 
 ## <a name="next-steps"></a>Próximos passos
 
-[Configurar o registro de usuário do iOS e iPadOS](ios-user-enrollment.md)
+[Configurar iOS/iPadOS e iPadOS User Enrollment](ios-user-enrollment.md)

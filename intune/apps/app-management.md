@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 09b4cfad0490f35a85e4c72b937b2ba5c0472030
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 84d33e0ff6bbe407d9838f97214f37d042a2e261
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74564347"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414707"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>O que é a gestão de aplicações do Microsoft Intune?
 
@@ -37,21 +37,21 @@ Enquanto administrador de TI, pode utilizar o Microsoft Intune para gerir as apl
 
 Além disso, pode querer atribuir e gerir aplicações em dispositivos que não estão inscritos no Intune.
 
-## <a name="mobile-application-management-mam-basics"></a>Noções básicas sobre MAM (gerenciamento de aplicativo móvel)
+## <a name="mobile-application-management-mam-basics"></a>Bases básicas de Gestão de Aplicações Móveis (MAM)
 
 A [gestão de aplicações móveis do Intune](app-lifecycle.md) refere-se ao conjunto de funcionalidades de gestão do Intune que lhe permite publicar, emitir via push, configurar, proteger, monitorizar e atualizar aplicações móveis para os seus utilizadores.
 
-O MAM permite que você gerencie e proteja os dados de sua organização dentro de um aplicativo. Com o **Mam sem registro** (MAM-We), um aplicativo relacionado ao trabalho ou à escola que contém dados confidenciais pode ser gerenciado em quase qualquer [dispositivo](app-management.md#app-management-capabilities-by-platform), incluindo dispositivos pessoais em cenários BYOD ( **traga seu próprio dispositivo** ). Muitas aplicações de produtividade, como as aplicações do Microsoft Office, podem ser geridas pela MAM do Intune. Consulte a lista oficial de [aplicativos protegidos do Microsoft Intune](apps-supported-intune-apps.md) disponíveis para uso público.
+A MAM permite-lhe gerir e proteger os dados da sua organização dentro de uma aplicação. Com a **MAM sem matrícula** (MAM-WE), uma aplicação relacionada com trabalho ou escola que contenha dados sensíveis pode ser gerida em quase todos os [dispositivos](app-management.md#app-management-capabilities-by-platform), incluindo dispositivos pessoais em cenários de **bring-your-own-device** (BYOD). Muitas aplicações de produtividade, como as aplicações do Microsoft Office, podem ser geridas pela MAM do Intune. Consulte a lista oficial de [aplicações protegidas](apps-supported-intune-apps.md) microsoft Intune disponíveis para uso público.
 
 A MAM do Intune suporta dois tipos de configurações:
 - **Intune MDM + MAM**: os administradores de TI só podem gerir as aplicações através da MAM e das políticas de proteção de aplicações em dispositivos que estejam inscritos na gestão de dispositivos móveis do Intune (MDM). Para gerir aplicações com a MDM + MAM, os clientes devem utilizar a consola do Intune no portal do Azure em https://portal.azure.com.
-- **MAM sem inscrição de dispositivos**: a MAM sem inscrição de dispositivos, ou MAM-WE, permite aos administradores de TI gerir as aplicações com a MAM e as políticas de proteção de aplicações nos dispositivos que não estejam inscritos na MDM do Intune. Isto significa que as aplicações podem ser geridas pelo Intune em dispositivos inscritos em fornecedores de EMM terceiros. Para gerir aplicações com a MAM-WE, os clientes devem utilizar a consola do Intune no portal do Azure em https://portal.azure.com. Além disso, as aplicações podem ser geridas pelo Intune nos dispositivos inscritos em fornecedores de Gestão de Mobilidade da Empresa (EMM) de terceiros ou não inscritos numa MDM. Para obter mais informações sobre o BYOD e o EMS da Microsoft, consulte [decisões tecnológicas para habilitar o BYOD com Microsoft Enterprise Mobility + Security (EMS)](../fundamentals/byod-technology-decisions.md).
+- **MAM sem inscrição de dispositivos**: a MAM sem inscrição de dispositivos, ou MAM-WE, permite aos administradores de TI gerir as aplicações com a MAM e as políticas de proteção de aplicações nos dispositivos que não estejam inscritos na MDM do Intune. Isto significa que as aplicações podem ser geridas pelo Intune em dispositivos inscritos em fornecedores de EMM terceiros. Para gerir aplicações com a MAM-WE, os clientes devem utilizar a consola do Intune no portal do Azure em https://portal.azure.com. Além disso, as aplicações podem ser geridas pelo Intune nos dispositivos inscritos em fornecedores de Gestão de Mobilidade da Empresa (EMM) de terceiros ou não inscritos numa MDM. Para obter mais informações sobre o BYOD e o EMS da Microsoft, consulte [as decisões tecnológicas para permitir o BYOD com a Microsoft Enterprise Mobility + Security (EMS)](../fundamentals/byod-technology-decisions.md).
 
 ## <a name="app-management-capabilities-by-platform"></a>Capacidades de gestão de aplicações por plataforma
 
 O Intune oferece várias funcionalidades para o ajudar a obter as aplicações de que precisa, nos dispositivos nos quais quer executá-las. A seguinte tabela mostra um resumo das funcionalidades de gestão de aplicações.
 
-|  | Android/Android Enterprise | iOS | macOS | Windows 10 | Wnodows Phone 8.1 |
+|  | Android/Android Enterprise | iOS/iPadOS | macOS | Windows 10 | Windows Phone 8.1 |
 |-------------------------------------------------------------------------------------|---------|-----|-------|------------|-------------------|
 | Adicionar e atribuir aplicações a dispositivos e utilizadores | Sim | Sim | Sim | Sim | Sim |
 | Atribuir aplicações a dispositivos não inscritos no Intune | Sim | Sim | Não | Não | Não |
@@ -76,16 +76,16 @@ O Intune oferece várias funcionalidades para o ajudar a obter as aplicações d
 
 ## <a name="get-started"></a>Introdução
 
-Você pode encontrar a maioria das informações relacionadas ao aplicativo na carga de trabalho **aplicativos** , que você pode acessar fazendo o seguinte:
+Pode encontrar a maioria das informações relacionadas com aplicações na carga de trabalho das **Apps,** às quais pode aceder fazendo o seguinte:
 
-1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
-3. Selecione **aplicativos**.
+1. Inscreva-se no [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
+3. Selecione **Apps**.
 
-    ![O painel de carga de trabalho aplicativos](./media/app-management/apps-workload.png)
+    ![O painel de trabalho das Apps](./media/app-management/apps-workload.png)
 
-As próximas quatro seções descrevem as opções disponíveis no painel de **aplicativos** .
+As próximas quatro secções descrevem as opções disponíveis no painel **apps.**
 
-### <a name="manage"></a>Gerir o Endpoint Protection do
+### <a name="manage"></a>Gerir
 - **Aplicações**: selecione esta opção para adicionar, ver, atribuir e monitorizar as aplicações que a sua força de trabalho utiliza. Para obter mais informações, consulte:
   - [Adicionar aplicações](apps-add.md).
   - [Atribuir aplicações](apps-deploy.md).
@@ -98,7 +98,7 @@ As próximas quatro seções descrevem as opções disponíveis no painel de **a
   - [Políticas de proteção de aplicações ](app-protection-policies.md).
 - **Eliminação seletiva de aplicações**: selecione esta opção para remover apenas os dados empresariais do dispositivo de um utilizador selecionado. Para obter mais informações, consulte:
   - [Eliminação seletiva de aplicações](apps-selective-wipe.md).
-- **Perfis de aprovisionamento de aplicações iOS**: as aplicações iOS incluem um perfil de aprovisionamento e um código assinado por um certificado. Quando o certificado expirar, a aplicação já não poderá ser executada. O Intune proporciona-lhe as ferramentas para atribuir proativamente uma nova política de perfil de aprovisionamento a dispositivos que tenham aplicações prestes a expirar. Para obter mais informações, consulte:
+- Perfis de fornecimento de **aplicações iOS**: as aplicações iOS/iPadOS incluem um perfil de provisionamento e código que é assinado por um certificado. Quando o certificado expirar, a aplicação já não poderá ser executada. O Intune proporciona-lhe as ferramentas para atribuir proativamente uma nova política de perfil de aprovisionamento a dispositivos que tenham aplicações prestes a expirar. Para obter mais informações, consulte:
   - [Perfis de aprovisionamento de aplicações iOS](app-provisioning-profile-ios.md).
 
 Para obter mais informações sobre esta secção, veja [Gerir aplicações](app-management.md).
@@ -107,7 +107,7 @@ Para obter mais informações sobre esta secção, veja [Gerir aplicações](app
 - **Licenças de aplicações**: veja, atribua e monitorize as aplicações compradas em volume nas lojas de aplicações. Para obter mais informações, consulte:
   - [Aplicações iOS do programa de compras em volume (VPP)](vpp-apps-ios.md).
   - [Aplicações compradas em volume na Microsoft Store para Empresas](windows-store-for-business.md).
-- **Aplicações Detetadas**: veja as aplicações que foram atribuídas pelo Intune ou instaladas num dispositivo. Para obter mais informações, consulte [aplicativos descobertos do Intune](app-discovered-apps.md).
+- **Aplicações Detetadas**: veja as aplicações que foram atribuídas pelo Intune ou instaladas num dispositivo. Para mais informações, consulte [intune aplicações descobertas.](app-discovered-apps.md)
 - **Estado da Instalação da Aplicação**: veja o estado da atribuição de uma aplicação que criou. Para obter mais informações, veja [Como monitorizar informações e atribuições da aplicação com o Microsoft Intune](apps-monitor.md#device-and-user-status-graphs).
 - **Estado da proteção da aplicação**: veja o estado da política de proteção de uma aplicação de um utilizador selecionado.
 - **Registos de auditoria**: veja a atividade relacionada com a aplicação do Intune realizada por todos os administradores de TI.
@@ -115,7 +115,7 @@ Para obter mais informações sobre esta secção, veja [Gerir aplicações](app
 Para obter mais informações sobre esta secção, veja [Monitorizar aplicações](apps-monitor.md).
 
 ### <a name="set-up"></a>Configurar
-- **Tokens VPP do iOS**: aplique e veja as suas licenças iOS do Programa de Compras em Volume (VPP). Para obter mais informações, consulte:
+- **iOS Fichas VPP**: Aplicar e ver as suas licenças iOS/iPadOS Volume Purchase Program (VPP). Para obter mais informações, consulte:
   - [Aplicações iOS compradas em volume](vpp-apps-ios.md)
 - **Certificado empresarial do Windows**: aplique ou veja o estado de um certificado de assinatura de código que serve para distribuir aplicações de linha de negócio nos dispositivos Windows geridos.
 - **Certificado da Symantec do Windows**: aplique ou veja o estado de um certificado de assinatura de código da Symantec, que é preciso para distribuir ficheiros appx de XAP e WP8.x aos dispositivos Windows 10 Mobile.

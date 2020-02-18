@@ -18,20 +18,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2b58cbd0aa07babd36c7a7e5aa3dcc5b8d32d58a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 7c27debc75ac02ab86eb93ce4e5af8c81464d0d4
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73415044"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415233"
 ---
 # <a name="supported-operating-systems-and-browsers-in-intune"></a>Sistemas operativos e browsers no Intune
 
 Antes de configurar o Microsoft Intune, reveja os sistemas operativos e browsers suportados.
 
-Para obter ajuda na instalação do Intune no seu dispositivo, consulte [utilizar dispositivos geridos para trabalhar](https://docs.microsoft.com/intune-user-help/company-portal-frequently-asked-questions) e [utilização de largura de banda de rede do Intune](network-bandwidth-use.md).
+Para ajudar a instalar o Intune no seu dispositivo, consulte [a utilização de dispositivos geridos para fazer o trabalho](https://docs.microsoft.com/intune-user-help/company-portal-frequently-asked-questions) e a utilização da largura de banda da rede [Intune](network-bandwidth-use.md).
 
-Para obter mais informações sobre o suporte ao provedor de serviços de configuração, visite a [referência do provedor de serviços de configuração](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference).
+Para obter mais informações sobre o suporte do prestador de serviços de configuração, visite a referência do prestador de serviços de [configuração](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference).
 
 ## <a name="intune-supported-operating-systems"></a>Sistemas operativos suportados pelo Intune
 
@@ -87,16 +87,16 @@ Segue-se uma lista de modelos de dispositivos Samsung que não suportam o Knox. 
 
 ### <a name="windows-pc-software-client"></a>Software cliente em PC com Windows
 
-Um [software cliente do Intune](manage-windows-pcs-with-microsoft-intune.md) pode ser implementado e instalado em PCs com Windows como um método alternativo de inscrição. Esta funcionalidade está apenas disponível com o portal clássico do Intune. Pode utilizar o cliente do software Intune para gerir computadores com o Windows 7 e posterior, com a exceção da edição Windows 10 Home.
+Um [software cliente do Intune](manage-windows-pcs-with-microsoft-intune.md) pode ser implementado e instalado em PCs com Windows como um método alternativo de inscrição. Esta funcionalidade está apenas disponível com o portal clássico do Intune. Pode utilizar o cliente de software Intune para gerir 10 e posteriores PCs, com exceção da edição Home do Windows 10.
 
 > [!Note]
-> A Microsoft anunciou que o suporte ao Windows 7 termina em 14 de janeiro de 2020. Nesta data, o Intune também retira o suporte para dispositivos com o Windows 7.
+> A Microsoft anunciou que o suporte do Windows 7 termina a 14 de janeiro de 2020. Nesta data, o Intune também retira o suporte para dispositivos com o Windows 7.
 >
-> Para obter mais informações, consulte [planejamento para alteração do Intune: perto do fim do suporte para o Windows 7](https://docs.microsoft.com/intune/fundamentals/whats-new#intune-plan-for-change-nearing-end-of-support-for-windows-7)
+> Para mais informações, consulte [Plano Intune para a mudança: perto do fim do suporte para o Windows 7](https://docs.microsoft.com/intune/fundamentals/whats-new#intune-plan-for-change-nearing-end-of-support-for-windows-7)
 >
-> Microsoft Intune irá desativar o suporte para o console do Intune baseado no Silverlight em 15 de outubro de 2020. Essa desativação inclui o suporte final para o cliente de software do PC configurado pelo console do Silverlight (também conhecido como agente de PC)
+> A Microsoft Intune vai retirar o suporte para a consola Intune baseada em Silverlight a 15 de outubro de 2020. Esta aposentadoria inclui o suporte final para o cliente de software pc configurado pela consola Silverlight (também conhecido como agente pc)
 >
-> Para obter mais informações, consulte [Microsoft Intune o suporte final para o console de administração baseado no Silverlight](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Take-Action-Microsoft-Intune-ending-support-for-the-Silverlight/ba-p/916249)
+> Para mais informações, consulte o suporte final da [Microsoft Intune para a consola de administração baseada em Silverlight](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Take-Action-Microsoft-Intune-ending-support-for-the-Silverlight/ba-p/916249)
 
 <!--  ### Exchange ActiveSync management
 
@@ -106,7 +106,7 @@ You can manage [Exchange ActiveSync devices](../enrollment/device-enrollment.md#
 
 As diferentes tarefas administrativas necessitam que utilize um dos seguintes sites administrativos.
 
-- [Centro de administração do Microsoft 365](https://go.microsoft.com/fwlink/p/?LinkId=698854)
+- [Centro de administração da Microsoft 365](https://go.microsoft.com/fwlink/p/?LinkId=698854)
 - [Portal do Azure](https://portal.azure.com/)
 
 Os seguintes browsers são suportados para estes portais:
@@ -119,13 +119,13 @@ Os seguintes browsers são suportados para estes portais:
 
 ### <a name="intune-classic-portal"></a>Portal clássico do Intune
 
-O portal clássico do Intune é usado somente para gerenciar dispositivos registrados com o cliente de software de computador do Intune (https://manage.microsoft.com). O portal clássico do Intune necessita do suporte do browser Silverlight.
+O portal clássico Intune é utilizado apenas para gerir dispositivos matriculados com o cliente de software Intune PC (https://manage.microsoft.com). O portal clássico do Intune necessita do suporte do browser Silverlight.
 
 Os seguintes browsers Silverlight suportam a consola do Intune:
 
 - Internet Explorer 10 ou posterior
 - Google Chrome (versões anteriores à versão 42)
-- Mozilla Firefox com Silverlight habilitado (versões anteriores à versão 56)
+- Mozilla Firefox com Silverlight ativado (versões anteriores à versão 56)
 
 > [!Note]
 > O Microsoft Edge e os browsers para dispositivos móveis não são suportados no portal clássico do Intune porque não suportam o [Microsoft Silverlight](https://msdn.microsoft.com/library/cc838158(v=vs.95).aspx).

@@ -1,7 +1,7 @@
 ---
-title: Políticas de proteção de aplicativo para extensões
+title: Políticas de proteção de aplicações para extensões
 titleSuffix: Microsoft Intune
-description: Este tópico descreve a política de proteção de aplicativo (aplicativo) para extensões do.
+description: Este tópico descreve a política de proteção de aplicações (APP) para extensões.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -18,20 +18,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1ff4fcd7d1b2115c4fbe0bc00759ef3d60482904
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: e568bb5520b4f8cc242cb58a1ee48e8729f4e387
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75692107"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414600"
 ---
-# <a name="protecting-application-extensions"></a>Protegendo extensões de aplicativo
+# <a name="protecting-application-extensions"></a>Proteger as extensões de aplicações
 
-Este artigo descreve as políticas de proteção de aplicativo para extensões no Microsoft Intune.
+Este artigo descreve políticas de proteção de aplicações para extensões no Microsoft Intune.
 
 ## <a name="add-ins-for-outlook-app"></a>Suplementos para a aplicação Outlook
 
-Os suplementos do Outlook permitem integrar aplicativos populares ao cliente de email. Os suplementos para Outlook estão disponíveis na Web, Windows, Mac e Outlook para Android e iOS. As políticas do SDK de aplicativo do Intune e da proteção de aplicativo do Intune não incluem suporte para o gerenciamento de suplementos para o Outlook, mas há outras maneiras de limitar seu uso. Uma vez que os suplementos são geridos através do Microsoft Exchange, os utilizadores serão capazes de partilhar dados e mensagens no Outlook e em aplicações de suplementos não geridas, exceto se os suplementos forem desativados para o utilizador pelo Exchange deles.
+Os add-ins do Outlook permitem-lhe integrar aplicações populares com o cliente de e-mail. Os add-ins para o Outlook estão disponíveis na web, Windows, Mac e Outlook para Android e iOS/iPadOS. As políticas de proteção de aplicações Intune APP SDK e Intune não incluem suporte para gestão de add-ins para outlook, mas existem outras formas de limitar a sua utilização. Uma vez que os suplementos são geridos através do Microsoft Exchange, os utilizadores serão capazes de partilhar dados e mensagens no Outlook e em aplicações de suplementos não geridas, exceto se os suplementos forem desativados para o utilizador pelo Exchange deles.
 
 Se quiser impedir que os seus utilizadores finais acedam e instalem suplementos do Outlook (afeta todos os clientes do Outlook), confirme que tem as seguintes alterações das funções no Centro de administração do Exchange:
 

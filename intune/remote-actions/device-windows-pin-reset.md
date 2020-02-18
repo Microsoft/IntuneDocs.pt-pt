@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b643ed41d01b70376dac32c26a66dcf9f9735ceb
-ms.sourcegitcommit: ec69e7ccc6e6183862a48c1b03ca6a3bf573f354
+ms.openlocfilehash: c4b3313d5ec7fe81944431276a63bfafb7a1b3dc
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "74907224"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77413636"
 ---
 # <a name="reset-the-passcode-on-windows-devices-using-intune"></a>Repor o código de acesso nos dispositivos Windows com o Intune
 
@@ -60,13 +60,13 @@ Substitua o *ID de inquilino* pelo seu ID de Diretório do Azure AD, que está l
 Defina o valor deste CSP para **Verdadeiro**.
 
 > [!TIP]
-> Depois de criar a política, atribua-a (ou implemente-a) a um grupo. A política pode ser atribuída a grupos de utilizadores ou a grupos de dispositivos. Se optar por atribuí-la a um grupo de utilizadores, o grupo poderá incluir utilizadores que tenham outros dispositivos, como iOS. Tecnicamente, a política não é aplicada, mas estes dispositivos continuam a ser incluídos nos detalhes do estado.
+> Depois de criar a política, atribua-a (ou implemente-a) a um grupo. A política pode ser atribuída a grupos de utilizadores ou a grupos de dispositivos. Se o atribuir a um grupo de utilizadores, o grupo poderá incluir utilizadores que tenham outros dispositivos, como o iOS/iPadOS. Tecnicamente, a política não é aplicada, mas estes dispositivos continuam a ser incluídos nos detalhes do estado.
 
 ## <a name="reset-the-passcode"></a>Repor o código de acesso
 
-1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431). 
+1. Inscreva-se no [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431). 
 2. Selecione **Dispositivos** e, em seguida, selecione **Todos os dispositivos**.
-3. Selecione o dispositivo cujo código de acesso quer repor. Nas propriedades do dispositivo, selecione **Redefinir senha**.
+3. Selecione o dispositivo cujo código de acesso quer repor. Nas propriedades do dispositivo, selecione **Reset code de acesso**.
 4. Selecione **Sim** para confirmar. O código de acesso é gerado e apresentado no portal durante os sete dias seguintes.
 
 ## <a name="next-step"></a>Passo seguinte

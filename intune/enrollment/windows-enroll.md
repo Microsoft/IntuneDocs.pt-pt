@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: add92c038e33ba1b5873eb0e9588242f8f3d0f57
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 75914dc77fe351fffda21768b0136e636c567998
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207439"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415127"
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Configurar a inscrição para dispositivos Windows
 
@@ -44,23 +44,23 @@ Dois fatores determinam como pode simplificar a inscrição de dispositivos do W
 
 ||**Azure AD Premium**|**Outros AD**|
 |----------|---------------|---------------|  
-|**Windows 10**|[Inscrição automática](#enable-windows-10-automatic-enrollment) |Registro de usuário|
-|**Versões do Windows anteriores**|Registro de usuário|Registro de usuário|
+|**Windows 10**|[Inscrição automática](#enable-windows-10-automatic-enrollment) |Inscrição do utilizador|
+|**Versões do Windows anteriores**|Inscrição do utilizador|Inscrição do utilizador|
 
 As organizações que podem utilizar a inscrição automática também podem configurar a [inscrição de dispositivos em massa](../windows-bulk-enroll.md) com a aplicação Windows Configuration Designer.
 
-## <a name="device-enrollment-prerequisites"></a>Pré-requisitos de registro de dispositivo
+## <a name="device-enrollment-prerequisites"></a>Pré-requisitos de inscrição do dispositivo
 
-Antes que um administrador possa registrar dispositivos no Intune para gerenciamento, as licenças já devem ter sido atribuídas à conta do administrador. [Leia sobre como atribuir licenças para registro de dispositivo](../fundamentals/licenses-assign.md)
+Antes de um administrador poder inscrever dispositivos para Intune para gestão, as licenças já deveriam ter sido atribuídas à conta do administrador. [Ler sobre a atribuição de licenças para a inscrição de dispositivos](../fundamentals/licenses-assign.md)
 
 ## <a name="multi-user-support"></a>Suporte para múltiplos utilizadores
 
-O Intune dá suporte a vários usuários em dispositivos que:
+Intune suporta vários utilizadores em dispositivos que ambos:
 
-- executar a atualização do criador do Windows 10
-- estão Azure Active Directory ingressados no domínio.
+- executar a atualização do Criador do Windows 10
+- são Azure Ative Directory-joined domínio.
 
-Quando os utilizadores padrão iniciam sessão com as suas credenciais do Azure AD, recebem aplicações e políticas atribuídas ao respetivo nome de utilizador. Somente o [usuário principal](../remote-actions/find-primary-user.md) do dispositivo pode usar o portal da empresa para cenários de autoatendimento, como instalar aplicativos e executar ações de dispositivo (remover, redefinir). Para dispositivos Windows 10 compartilhados que não têm um usuário primário atribuído, o Portal da Empresa ainda pode ser usado para instalar aplicativos disponíveis.
+Quando os utilizadores padrão iniciam sessão com as suas credenciais do Azure AD, recebem aplicações e políticas atribuídas ao respetivo nome de utilizador. Só o [utilizador principal](../remote-actions/find-primary-user.md) do dispositivo pode utilizar o Portal da Empresa para cenários de self-service como instalar aplicações e executar ações de dispositivo (Remover, Redefinir). Para dispositivos partilhados do Windows 10 que não tenham um utilizador primário atribuído, o Portal da Empresa ainda pode ser utilizado para instalar aplicações disponíveis.
 
 [!INCLUDE [AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
 
@@ -72,7 +72,7 @@ Crie registos de recursos DNS CNAME para o domínio da sua empresa. Por exemplo,
 
 Apesar de a criação de entradas DNS CNAME ser opcional, os registos CNAME facilitam a inscrição para os utilizadores. Se não for encontrado nenhum registo CNAME de inscrição, os utilizadores receberão um pedido para introduzir manualmente o nome do servidor MDM, enrollment.manage.microsoft.com.
 
-|Tipo|Nome do anfitrião|Aponta para|TTL|
+|Type|Nome do anfitrião|Aponta para|TTL|
 |----------|---------------|---------------|---|
 |CNAME|EnterpriseEnrollment.dominio_empresa.com|EnterpriseEnrollment-s.manage.microsoft.com| 1 hora|
 |CNAME|EnterpriseRegistration.dominio_empresa.com|EnterpriseRegistration.windows.net|1 hora|
@@ -85,7 +85,7 @@ Se a empresa utilizar mais do que um sufixo UPN, tem de criar um CNAME para cada
 
 Os administradores de DNS da Contoso devem criar os seguintes CNAMEs:
 
-|Tipo|Nome do anfitrião|Aponta para|TTL|  
+|Type|Nome do anfitrião|Aponta para|TTL|  
 |----------|---------------|---------------|---|
 |CNAME|EnterpriseEnrollment.contoso.com|EnterpriseEnrollment-s.manage.microsoft.com|1 hora|
 |CNAME|EnterpriseEnrollment.us.contoso.com|EnterpriseEnrollment-s.manage.microsoft.com|1 hora|
@@ -102,7 +102,7 @@ Enterpriseenrollment-s.Manage.microsoft.com é o FQDN preferencial para a inscri
 Não é suportada a utilização de um método que não seja a configuração do CNAME. Por exemplo, não é suportada a utilização de um servidor proxy para redirecionar enterpriseenrollment.contoso.com/EnrollmentServer/Discovery.svc para enterpriseenrollment-s.manage.microsoft.com/EnrollmentServer/Discovery.svc ou para manage.microsoft.com/EnrollmentServer/Discovery.svc.
 
 **Passo 2: verificar o CNAME** (opcional)<br>
-1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **dispositivos** > **registro** do Windows ** > Windows > ** **validação de CNAME**.
+1. No [Microsoft Endpoint Manager Admin Center,](https://go.microsoft.com/fwlink/?linkid=2109431)escolha **dispositivos** > **Windows** > **windows inscrição** > **Validação CNAME**.
 2. Na caixa **Domínio**, introduza o site da empresa e, em seguida, selecione **Testar**.
 
 ## <a name="tell-users-how-to-enroll-windows-devices"></a>Informar os utilizadores sobre como inscrever dispositivos Windows
@@ -118,22 +118,22 @@ Para obter instruções de inscrição do utilizador final, veja [Inscrever o di
 
 Para obter mais informações sobre as tarefas do utilizador final, veja [Recursos sobre a experiência do utilizador final com o Microsoft Intune](../fundamentals/end-user-educate.md).
 
-## <a name="registration-and-enrollment-cnames"></a>CNAMEs de registro e registro
-Azure Active Directory tem um CNAME diferente que ele usa para o registro de dispositivo para dispositivos iOS, Android e Windows. O acesso condicional do Intune requer que os dispositivos sejam registrados, também chamado de "Workplace Unido". Se você planeja usar o acesso condicional, também deverá configurar o CNAME EnterpriseRegistration para cada nome de empresa que você tiver.
+## <a name="registration-and-enrollment-cnames"></a>Inscrições e Inscrições CNAMEs
+O Azure Ative Directory tem um CNAME diferente que utiliza para o registo de dispositivos iOS/iPadOS, Android e Windows. O acesso condicional intonizado requer a inscrição de dispositivos, também chamados de "local de trabalho aderido". Se planeia utilizar acesso condicional, deve também configurar o EnterpriseRegistration CNAME para cada nome da empresa que tenha.
 
-| Tipo | Nome do anfitrião | Aponta para | TTL |
+| Type | Nome do anfitrião | Aponta para | TTL |
 | --- | --- | --- | --- |
-| NOMES | EnterpriseRegistration. company_domain. com | EnterpriseRegistration.windows.net | 1 hora|
+| NOME | Registo empresarial. company_domain.com | EnterpriseRegistration.windows.net | 1 hora|
 
-Para obter mais informações sobre o registro de dispositivo, consulte [gerenciar identidades de dispositivo usando o portal do Azure](https://docs.microsoft.com/azure/active-directory/devices/device-management-azure-portal)
+Para obter mais informações sobre o registo do dispositivo, consulte Gerir identidades do [dispositivo utilizando o portal Azure](https://docs.microsoft.com/azure/active-directory/devices/device-management-azure-portal)
 
-## <a name="windows-10-auto-enrollment-and-device-registration"></a>Registro automático de dispositivo e registro do Windows 10
+## <a name="windows-10-auto-enrollment-and-device-registration"></a>Registo de matrículas automáticas e dispositivos do Windows 10
 
-Esta seção se aplica aos clientes de nuvem do governo dos EUA.
+Esta secção aplica-se aos clientes da nuvem do governo dos EUA.
 
-Apesar de a criação de entradas DNS CNAME ser opcional, os registos CNAME facilitam a inscrição para os utilizadores. Se nenhum registro CNAME de registro for encontrado, os usuários serão solicitados a inserir manualmente o nome do servidor MDM, enrollment.manage.microsoft.us.
+Apesar de a criação de entradas DNS CNAME ser opcional, os registos CNAME facilitam a inscrição para os utilizadores. Se não for encontrado nenhum registo CNAME de inscrição, os utilizadores são solicitados a introduzir manualmente o nome do servidor MDM, enrollment.manage.microsoft.us.
 
-| Tipo | Nome do anfitrião | Aponta para | TTL |
+| Type | Nome do anfitrião | Aponta para | TTL |
 | --- | --- | --- | --- |
 | CNAME | EnterpriseEnrollment.dominio_empresa.com | EnterpriseEnrollment-s.manage.microsoft.us | 1 hora|
 |CNAME | EnterpriseRegistration.dominio_empresa.com | EnterpriseRegistration.windows.net | 1 hora |

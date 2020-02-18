@@ -1,7 +1,7 @@
 ---
-title: Tutorial-configurar a margem de atraso para usar o Intune para EMM e a configuração de aplicativo
+title: Tutorial - Configure Slack para usar Intune para emm e configuração de app
 titleSuffix: Microsoft Intune
-description: Neste tutorial, você configurará a margem de atraso para usar o Intune para EMM e a configuração do aplicativo.
+description: Neste tutorial, irá configurar o Slack para utilizar o Intune para a configuração de EMM e app.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -18,150 +18,150 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dce6d71a4bc056146b581458d5c39325adad1584
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: cd0a4b0c5e0b4cbaa7ef43ec40cddb3ab30d3070
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206912"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415488"
 ---
-# <a name="tutorial-configure-slack-to-use-intune-for-emm-and-app-configuration"></a>Tutorial: configurar a margem de atraso para usar o Intune para EMM e a configuração de aplicativo
+# <a name="tutorial-configure-slack-to-use-intune-for-emm-and-app-configuration"></a>Tutorial: Configure A folga para usar Intune para configuração de EMM e app
 
-A margem de atraso é um aplicativo de colaboração que você pode usar com Microsoft Intune.   
+Slack é uma aplicação de colaboração que pode usar com o Microsoft Intune.   
 
 Neste tutorial, irá:
 > [!div class="checklist"]
-> - Defina o Intune como o provedor de gerenciamento de mobilidade empresarial (EMM) em sua grade empresarial de margem de atraso. Você poderá limitar o acesso aos espaços de trabalho do seu plano de grade para dispositivos gerenciados do Intune.
-> - Crie políticas de configuração de aplicativo para gerenciar a margem de atraso do aplicativo EMM no iOS e o aplicativo de margem de atraso para dispositivos de perfil de trabalho do Android.
-> - Crie políticas de conformidade do dispositivo do Intune para definir as condições que os dispositivos Android e iOS devem atender para serem considerados em conformidade.
+> - Defina intune como o fornecedor de Gestão da Mobilidade Empresarial (EMM) na sua Rede Empresarial Slack. Poderá limitar o acesso aos espaços de trabalho do seu plano Grid para dispositivos geridos por Intune.
+> - Crie políticas de configuração de aplicações para gerir a aplicação Slack para EMM no iOS e na aplicação Slack para dispositivos de perfil de trabalho Android.
+> - Crie políticas de conformidade de dispositivos Intune para definir as condições que os dispositivos Android e iOS devem cumprir para serem considerados conformes.
 
 Se não tiver uma subscrição do Intune, [inscreva-se numa conta de avaliação gratuita](../fundamentals/free-trial-sign-up.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Precisará de um inquilino de teste com as seguintes subscrições para este tutorial:
 - Azure Active Directory Premium ([avaliação gratuita](https://azure.microsoft.com/free/?WT.mc_id=A261C142F))
-- Assinatura do Intune ([avaliação gratuita](../fundamentals/free-trial-sign-up.md))
+- Subscrição inoportuna[(teste gratuito)](../fundamentals/free-trial-sign-up.md)
 
-Você também precisará de um plano de [grade empresarial de margem de atraso](https://get.slack.help/hc/articles/360004150931-What-is-Slack-Enterprise-Grid-) .
+Também vai precisar de um plano [slack Enterprise Grid.](https://get.slack.help/hc/articles/360004150931-What-is-Slack-Enterprise-Grid-)
 
-## <a name="configure-your-slack-enterprise-grid-plan"></a>Configurar seu plano de grade empresarial de margem de atraso
-Ative o EMM para seu plano de grade empresarial de margem de atraso seguindo [as instruções da margem de atraso](https://get.slack.help/hc/articles/115002579426-Enable-Enterprise-Mobility-Management-for-your-org#step-2:-turn-on-emm) e [Conecte Azure Active Directory](https://docs.microsoft.com/azure/active-directory/saas-apps/slack-tutorial) como o IDP (provedor de identidade do seu plano de grade).
+## <a name="configure-your-slack-enterprise-grid-plan"></a>Configure o seu plano de grelha de empresa slack
+Ligue o EMM para o seu plano Slack Enterprise Grid seguindo [as instruções da Slack](https://get.slack.help/hc/articles/115002579426-Enable-Enterprise-Mobility-Management-for-your-org#step-2:-turn-on-emm) e ligue o [Azure Ative Directory](https://docs.microsoft.com/azure/active-directory/saas-apps/slack-tutorial) como fornecedor de identidade do seu plano grid (IDP).
 
 ## <a name="sign-in-to-intune"></a>Iniciar sessão no Intune
-Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) como um administrador global ou um administrador de serviços do Intune. Se criou uma Subscrição de avaliação do Intune, a conta com a qual criou a subscrição é de Administrador global.
+Inscreva-se no [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) como administrador global ou administrador de serviço intune. Se criou uma Subscrição de avaliação do Intune, a conta com a qual criou a subscrição é de Administrador global.
 
-## <a name="set-up-slack-for-emm-on-ios-devices"></a>Configurar a margem de atraso do EMM em dispositivos iOS
-Adicione a margem de atraso do aplicativo iOS para EMM ao seu locatário do Intune e crie uma política de configuração de aplicativo para permitir que os usuários do iOS de sua organização acessem a margem de atraso com o Intune como um provedor do EMM.
+## <a name="set-up-slack-for-emm-on-ios-devices"></a>Configurar a folga para emm em dispositivos iOS
+Adicione a aplicação iOS Slack for EMM ao seu inquilino Intune e crie uma política de configuração de aplicações para permitir aos utilizadores do iOS das suas organizações aceder ao Slack com o Intune como fornecedor em EmM.
 
-### <a name="add-slack-for-emm-to-intune"></a>Adicionar margem de atraso para EMM no Intune
-Adicione a margem de atraso do EMM como um aplicativo iOS gerenciado no Intune e atribua seus usuários de margem de atraso. Os aplicativos são específicos da plataforma, portanto, você precisa adicionar um aplicativo do Intune separado para seus usuários de margem de atraso em dispositivos Android.
-1. No centro de administração, selecione **aplicativos** > **todos os aplicativos** > **Adicionar**.
-2. Em **tipo de aplicativo**, selecione o aplicativo da loja do **Ios** .
-3. Selecione **Procurar na App Store**. Insira o termo de pesquisa "margem de atraso para EMM" e selecione o aplicativo. Clique em **selecionar** no painel **Pesquisar na loja de aplicativos** .
-4. Selecione **informações do aplicativo** e configure as alterações como desejar. Selecione **OK** para definir as informações do aplicativo.
+### <a name="add-slack-for-emm-to-intune"></a>Adicione folga para emm ao Intune
+Adicione Slack para EMM como uma aplicação iOS gerida em Intune e atribua os seus utilizadores Slack. As aplicações são específicas da plataforma, pelo que precisa de adicionar uma aplicação Intune separada para os seus utilizadores Slack em dispositivos Android.
+1. No centro de administração, selecione **Apps** > **Todas as aplicações** > **Adicionar**.
+2. No **tipo app,** selecione a aplicação da loja **iOS.**
+3. Selecione **Procurar na App Store**. Introduza o termo de pesquisa "Slack for EMM" e selecione a aplicação. Clique em **Selecionar** no painel **search the App Store.**
+4. Selecione **informações da App** e configure quaisquer alterações conforme entender. Selecione **OK** para definir as informações da sua aplicação.
 5. Clique em **Adicionar**.
 6. Selecione **Atribuições**.
-7. Clique em **Adicionar grupo**. Dependendo de quem você optou por ser afetado ao ativar o EMM para a margem de atraso, em **tipo de atribuição** , talvez você queira selecionar:
-    - **Disponível para dispositivos registrados** se você escolher "todos os membros (incluindo convidados)" ou
-    - **Disponível com ou sem registro** se você escolher "todos os membros (exceto convidados)" ou "opcional".
-8. Selecione **grupos incluídos** e, em **tornar este aplicativo disponível para todos os usuários** , selecione **Sim**.
-9. Clique em **OK**e em **OK** novamente para adicionar o grupo.
+7. Clique em **Adicionar grupo**. Dependendo de quem escolheu para ser afetado quando ligou o EMM para Slack, ao abrigo do **tipo de Atribuição** poderá desejar selecionar:
+    - **Disponível para dispositivos matriculados** se escolher "Todos os membros (incluindo convidados)" OU
+    - **Disponível com ou sem inscrição** se escolher "Todos os membros (excluindo os hóspedes)" ou "Opcional".
+8. Selecione **Grupos Incluídos** e, em **baixo, disponibilize esta aplicação a todos os utilizadores** selecione **Sim**.
+9. Clique **ok**, e depois clique **OK** novamente para adicionar o grupo.
 10. Clique em **Guardar**.
 
-### <a name="add-an-app-configuration-policy-for-slack-for-emm"></a>Adicionar uma política de configuração de aplicativo para a margem de atraso do EMM
-Adicione uma política de configuração de aplicativo para a margem de atraso do EMM iOS. As políticas de configuração de aplicativo para dispositivos gerenciados são específicas da plataforma, portanto, você precisa adicionar uma política separada para seus usuários de margem de atraso em dispositivos Android.
-1. No centro de administração, selecione **aplicativos** > **políticas de configuração de aplicativo** > **Adicionar** > **dispositivos gerenciados**.
-2. Em nome, insira ' teste de política de configuração de aplicativo de margem de atraso '.
-3. Em tipo de registro do dispositivo, confirme se **dispositivos gerenciados** estão definidos.
-4. Em plataforma, selecione **Ios**.
-5. Selecione **aplicativo associado**.
-6. Na barra de pesquisa, insira "margem de atraso para EMM" e selecione o aplicativo.
-7. Clique em **OK**e, em seguida, selecione **definições de configuração**. 
-8. Selecione **OK**e, em seguida, selecione **Adicionar**.
-9. Na barra de pesquisa, insira "teste de política de configuração de aplicativo de margem de atraso" e selecione a política que você acabou de adicionar.
-10. Em gerenciar, selecione **atribuições**.
-11. Em atribuir a, selecione **todos os usuários + todos os dispositivos**.
+### <a name="add-an-app-configuration-policy-for-slack-for-emm"></a>Adicione uma política de configuração de aplicativos para Slack para EMM
+Adicione uma política de configuração de aplicativos para o Slack para emM iOS/iPadOS. As políticas de configuração de aplicações para dispositivos geridos são específicas da plataforma, pelo que é necessário adicionar uma política separada para os seus utilizadores Slack em dispositivos Android.
+1. No centro de administração, selecione **Apps** > políticas de **configuração** de apps > **adicionar** > **dispositivos geridos**.
+2. Em Nome, introduza o 'Teste de política de configuração da aplicação Slack'.
+3. No tipo de inscrição do Dispositivo, confirme que os **dispositivos geridos** estão definidos.
+4. Em Plataforma, selecione **iOS**.
+5. Selecione **aplicação Associada**.
+6. Na barra de pesquisa, introduza "Slack for EMM" e selecione a aplicação.
+7. Clique **em OK**, e, em seguida, selecione as **definições de configuração**. 
+8. Selecione **OK**, e, em seguida, selecione **Adicionar**.
+9. Na barra de pesquisa, introduza "Slack app configuration policy test" e selecione a política que acabou de adicionar.
+10. A partir de Gerir, selecione **Atribuições**.
+11. Em designado por, selecione **Todos os Utilizadores + Todos os Dispositivos**.
 12. Clique em **Guardar**.
 
-### <a name="optional-create-an-ios-device-compliance-policy"></a>Adicional Criar uma política de conformidade do dispositivo iOS
-Crie uma política de conformidade de dispositivos do Intune para definir as condições que um dispositivo tem de cumprir para ser considerado conforme. Para este tutorial, vamos criar uma política de conformidade para dispositivos iOS. As políticas de conformidade são específicas da plataforma, portanto, você precisa criar uma política separada para seus usuários de margem de atraso em dispositivos Android.
-1. No centro de administração, selecione **conformidade do dispositivo** > **políticas** > **criar política**.
-2. Em nome, insira "teste de política de conformidade do iOS".
-3. Em descrição, insira "teste de política de conformidade do iOS".
-4. Em plataforma, selecione **Ios**.
-5. Selecione **Estado de Funcionamento dos Dispositivos**. Ao lado de dispositivos com jailbreak, selecione **Bloquear**e, em seguida, selecione **OK**.
-6. Selecione **segurança do sistema** e insira as configurações de senha. Para este tutorial, selecione as seguintes definições recomendadas:
-    - Para exigir uma senha para desbloquear dispositivos móveis, selecione **exigir**.
-    - Para senhas simples, selecione **Bloquear**.
-    - Para comprimento mínimo da senha, digite 4.
-    - Para tipo de senha necessária, escolha **alfanumérico**.
-    - Para máximo de minutos após o bloqueio de tela antes que a senha seja necessária, escolha **imediatamente**.
-    - Para expiração da senha (dias), digite 41.
-    - Para o número de senhas anteriores para evitar a reutilização, insira 5.
-7. Clique em **OK**e selecione **OK** novamente.
+### <a name="optional-create-an-ios-device-compliance-policy"></a>(Opcional) Criar uma política de conformidade com dispositivos iOS
+Crie uma política de conformidade de dispositivos do Intune para definir as condições que um dispositivo tem de cumprir para ser considerado conforme. Para este tutorial, vamos criar uma política de conformidade para dispositivos iOS. As políticas de conformidade são específicas da plataforma, pelo que precisa de criar uma política separada para os seus utilizadores Slack em dispositivos Android.
+1. No centro de administração, selecione **A conformidade do dispositivo** > **Políticas** > **Criar Política**.
+2. Em Nome, insira "teste de política de conformidade iOS".
+3. Em Descrição, insira o "teste de política de conformidade iOS".
+4. Em Plataforma, selecione **iOS**.
+5. Selecione **Estado de Funcionamento dos Dispositivos**. Ao lado de dispositivos Jailbroken, selecione **Block**, e, em seguida, selecione **OK**.
+6. Selecione **A Segurança do Sistema** e introduza as definições de palavra-passe. Para este tutorial, selecione as seguintes definições recomendadas:
+    - Para exigir uma palavra-passe para desbloquear dispositivos móveis, selecione **Exigir**.
+    - Para palavras-passe simples, selecione **Bloquear**.
+    - Para o comprimento mínimo da palavra-passe, introduza 4.
+    - Para o tipo de palavra-passe exigido, escolha **Alphanumérico**.
+    - Para os minutos máximos após o bloqueio do ecrã antes da palavra-passe ser necessária, escolha **imediatamente**.
+    - Para a expiração da palavra-passe (dias), insira 41.
+    - Para o número de senhas anteriores para evitar a reutilização, introduza 5.
+7. Clique **ok**e, em seguida, selecione **OK** novamente.
 8. Clique em **Criar**.
 
-## <a name="set-up-slack-on-android-work-profile-devices"></a>Configurar a margem de atraso em dispositivos de perfil de trabalho do Android
-Adicione a margem de atraso gerenciada Google Play aplicativo ao seu locatário do Intune e crie uma política de configuração de aplicativo para permitir que os usuários do Android da sua organização acessem a margem de atraso com o Intune como um provedor do EMM.
+## <a name="set-up-slack-on-android-work-profile-devices"></a>Configurar slack em dispositivos de perfil de trabalho Android
+Adicione a aplicação Slack Managed Google Play ao seu inquilino Intune e crie uma política de configuração de aplicações para permitir aos utilizadores Android das suas organizações aceder em Slack com Intune como fornecedor de EMM.
 
-### <a name="add-slack-to-intune"></a>Adicionar margem de atraso ao Intune
-Adicione a margem de atraso como um aplicativo gerenciado do Google Play no Intune e atribua seus usuários de margem de atraso. Os aplicativos são específicos da plataforma, portanto, você precisa adicionar um aplicativo do Intune separado para seus usuários de margem de atraso em dispositivos iOS.
-1. No Intune, selecione **aplicativos** > **todos os aplicativos** > **Adicionar**.
-2. Em tipo de aplicativo, selecione **armazenar aplicativo – Google Play gerenciado**.
-3. Selecione **Google Play gerenciado-aprovar**. Insira o termo de pesquisa "margem de atraso para EMM" e selecione o aplicativo.
-4. Selecione **aprovar**.
-5. Na barra de pesquisa, insira "margem de atraso" e selecione o aplicativo que você acabou de adicionar.
-6. Em gerenciar, selecione **atribuições**.
-7. Selecione **Adicionar grupo**. Dependendo de quem você optou por ser afetado ao ativar o EMM para a margem de atraso, em **tipo de atribuição** , talvez você queira selecionar:
-    - **Disponível para dispositivos registrados** se você escolher "todos os membros (incluindo convidados)" ou
-    - **Disponível com ou sem registro** se você escolher "todos os membros (exceto convidados)" ou "opcional".
-8. Selecione grupos incluídos e, em tornar este aplicativo disponível para todos os usuários, selecione **Sim**.
-9. Clique em **OK**e em **OK** novamente.
+### <a name="add-slack-to-intune"></a>Adicione folga ao Intune
+Adicione Slack como uma aplicação de jogo gerida da Google em Intune e atribua os seus utilizadores Slack. As aplicações são específicas da plataforma, pelo que precisa de adicionar uma aplicação Intune separada para os seus utilizadores Slack em dispositivos iOS.
+1. Intune, selecione **Apps** > **Todas as aplicações** > **Add**.
+2. No tipo de App, selecione **app Store – Managed Google Play**.
+3. Selecione **Managed Google Play - Approve**. Introduza o termo de pesquisa "Slack for EMM" e selecione a aplicação.
+4. Selecione **Aprovar**.
+5. Na barra de pesquisa, introduza "Slack" e selecione a aplicação que acabou de adicionar.
+6. A partir de Gerir, selecione **Atribuições**.
+7. **Selecione Adicionar grupo**. Dependendo de quem escolheu para ser afetado quando ligou o EMM para Slack, ao abrigo do **tipo de Atribuição** poderá desejar selecionar:
+    - **Disponível para dispositivos matriculados** se escolher "Todos os membros (incluindo convidados)" OU
+    - **Disponível com ou sem inscrição** se escolher "Todos os membros (excluindo os hóspedes)" ou "Opcional".
+8. Selecione Grupos Incluídos e, em baixo, disponibilize esta aplicação a todos os utilizadores selecione **Sim**.
+9. Clique **OK**e, em seguida, clique **OK** novamente.
 10. Clique em **Guardar**.
 
-### <a name="add-an-app-configuration-policy-for-slack"></a>Adicionar uma política de configuração de aplicativo para a margem de atraso
-Adicione uma política de configuração de aplicativo para a margem de atraso. As políticas de configuração de aplicativo para dispositivos gerenciados são específicas da plataforma, portanto, você precisa adicionar uma política separada para seus usuários de margem de atraso em dispositivos iOS.
-1. No Intune, selecione **aplicativos** > **políticas de configuração de aplicativo** > **Adicionar**.
-2. Em nome, digite margem de atraso configuração do aplicativo teste de política.
-3. Em tipo de registro do dispositivo, selecione **dispositivos gerenciados**.
-4. Em plataforma, selecione **Android**.
-5. Selecione **aplicativo associado**.
-6. Na barra de pesquisa, insira "margem de atraso" e selecione o aplicativo.
-7. Selecione **OK**e, em seguida, selecione **definições de configuração**.
-    - Para obter informações sobre chaves de configuração e seus valores, consulte a documentação na guia "técnico" da [página da Web do AppConfig da margem de atraso](https://www.appconfig.org/company/slack/).
-8. Clique em **OK**e, em seguida, selecione **Adicionar**.
-9. Na barra de pesquisa, insira "teste de política de configuração de aplicativo de margem de atraso" e selecione a política que você acabou de adicionar.
-10. Em gerenciar, selecione **atribuições**.
-11. Em atribuir a, selecione **todos os usuários + todos os dispositivos**.
+### <a name="add-an-app-configuration-policy-for-slack"></a>Adicione uma política de configuração de aplicativos para Slack
+Adicione uma política de configuração de aplicativos para Slack. As políticas de configuração de aplicações para dispositivos geridos são específicas da plataforma, pelo que é necessário adicionar uma política separada para os seus utilizadores Slack em dispositivos iOS.
+1. Intune, selecione **Apps** > políticas de **configuração** de apps > **adicionar**.
+2. Em Nome, introduza o teste de configuração da aplicação Slack.
+3. No tipo de inscrição do Dispositivo, selecione **dispositivos geridos**.
+4. Na Plataforma, selecione **Android.**
+5. Selecione **aplicação Associada**.
+6. Na barra de pesquisa, introduza "Slack" e selecione a aplicação.
+7. Selecione **OK**, e, em seguida, selecione **as definições**de configuração .
+    - Para obter informações sobre as chaves de configuração e os seus valores, consulte a documentação no separador "Técnico" [da página web appConfig da Slack](https://www.appconfig.org/company/slack/).
+8. Clique **em OK,** e depois selecione **Adicionar**.
+9. Na barra de pesquisa, introduza "Slack app configuration policy test" e selecione a política que acabou de adicionar.
+10. A partir de Gerir, selecione **Atribuições**.
+11. Em designado por, selecione **Todos os Utilizadores + Todos os Dispositivos**.
 12. Clique em **Guardar**.
 
-### <a name="optional-create-an-android-device-compliance-policy"></a>Adicional Criar uma política de conformidade do dispositivo Android
-Crie uma política de conformidade de dispositivos do Intune para definir as condições que um dispositivo tem de cumprir para ser considerado conforme. Para este tutorial, criaremos uma política de conformidade do dispositivo para dispositivos Android. As políticas de conformidade são específicas da plataforma, portanto, você precisa criar uma política separada para seus usuários de margem de atraso em dispositivos iOS.
+### <a name="optional-create-an-android-device-compliance-policy"></a>(Opcional) Criar uma política de conformidade com dispositivos Android
+Crie uma política de conformidade de dispositivos do Intune para definir as condições que um dispositivo tem de cumprir para ser considerado conforme. Para este tutorial, vamos criar uma política de conformidade de dispositivos Android. As políticas de conformidade são específicas da plataforma, pelo que precisa de criar uma política separada para os seus utilizadores Slack em dispositivos iOS.
 1. No Intune, selecione **Conformidade do dispositivo** > **Políticas** > **Criar Política**.
-2. Em nome, insira "teste de política de conformidade do Android".
-3. Em descrição, insira "teste de política de conformidade do Android".
-4. Em plataforma, selecione **Android Enterprise**.
-5. Em tipo de perfil, selecione **perfil de trabalho**.
-6. Selecione **Estado de Funcionamento dos Dispositivos**. Ao lado de dispositivos com raiz, selecione **Bloquear**e, em seguida, selecione **OK**.
-7. Selecione **segurança do sistema** e insira **as configurações de senha**. Para este tutorial, selecione as seguintes definições recomendadas:
-    - Para exigir uma senha para desbloquear dispositivos móveis, selecione **exigir**.
-    - Para tipo de senha necessária, selecione **pelo menos alfanumérico**.
-    - Para comprimento mínimo da senha, digite 4.
-    - Para máximo de minutos após o bloqueio de tela antes que a senha seja necessária, escolha **15 minutos**.
-    - Para expiração da senha (dias), digite 41.
-    - Para o número de senhas anteriores para evitar a reutilização, insira 5.
-8. Clique em **OK**e em **OK** novamente.
+2. Em Nome, introduza "Teste de política de conformidade Android".
+3. Em Descrição, insira "Teste de política de conformidade Android".
+4. Em Platform, selecione **Android Enterprise**.
+5. No tipo de perfil, selecione **Perfil de trabalho**.
+6. Selecione **Estado de Funcionamento dos Dispositivos**. Ao lado dos dispositivos Enraizados, selecione **Bloco**, e, em seguida, selecione **OK**.
+7. Selecione **A Segurança do Sistema** e introduza as **definições de palavra-passe**. Para este tutorial, selecione as seguintes definições recomendadas:
+    - Para exigir uma palavra-passe para desbloquear dispositivos móveis, selecione **Exigir**.
+    - Para o tipo de palavra-passe necessário, selecione **Pelo menos alfanumérico**.
+    - Para o comprimento mínimo da palavra-passe, introduza 4.
+    - Para os minutos máximos após o bloqueio do ecrã antes da palavra-passe ser necessária, escolha **15 Minutos**.
+    - Para a expiração da palavra-passe (dias), insira 41.
+    - Para o número de senhas anteriores para evitar a reutilização, introduza 5.
+8. Clique **OK**e, em seguida, clique **OK** novamente.
 9. Clique em **Criar**.
 
-## <a name="launch-slack"></a>Lançar margem de atraso
+## <a name="launch-slack"></a>Lançar Folga
 
-Com as políticas que você acabou de criar, todos os dispositivos de perfil de trabalho iOS ou Android que tentarem entrar em um de seus espaços de trabalho precisarão ser registrados no Intune. Para testar esse cenário, tente iniciar a margem de atraso para EMM em um dispositivo iOS registrado pelo Intune ou iniciar a margem de atraso em um dispositivo de perfil de trabalho do Android registrado no Intune. 
+Com as políticas que acabou de criar, quaisquer dispositivos de perfil de trabalho iOS ou Android que tentem iniciar sessão num dos seus espaços de trabalho terão de ser inscritos no Intune. Para testar este cenário, tente lançar Slack para EMM num dispositivo iOS inscrito no Intune ou lançar Slack num dispositivo de perfil de trabalho Android matriculado no Intune. 
 
 ## <a name="next-steps"></a>Próximos passos
 
 Neste tutorial:
-- Você define o Intune como o provedor de gerenciamento de mobilidade empresarial (EMM) em sua grade empresarial de margem de atraso. 
-- Você criou políticas de configuração de aplicativo para gerenciar a margem de atraso para o aplicativo EMM no iOS e o aplicativo de margem de atraso para dispositivos de perfil de trabalho do Android.
-- Você criou as políticas de conformidade do dispositivo do Intune para definir as condições que os dispositivos Android e iOS devem atender para serem considerados em conformidade.
+- Definiu o Intune como o fornecedor de Gestão de Mobilidade Empresarial (EMM) na sua Rede Empresarial Slack. 
+- Criou políticas de configuração de aplicações para gerir a aplicação Slack for EMM no iOS e na aplicação Slack para dispositivos de perfil de trabalho Android.
+- Criou políticas de conformidade com dispositivos Intune para definir as condições que os dispositivos Android e iOS devem cumprir para serem considerados conformes.
 
-Para saber mais sobre as políticas de configuração de aplicativo, consulte [políticas de configuração de aplicativo para Microsoft Intune](app-configuration-policies-overview.md). Para saber mais sobre as políticas de conformidade do dispositivo, consulte [definir regras em dispositivos para permitir o acesso a recursos em sua organização usando o Intune](../protect/device-compliance-get-started.md).
+Para saber mais sobre as políticas de configuração de apps, consulte as políticas de configuração de [Aplicativos para o Microsoft Intune](app-configuration-policies-overview.md). Para saber mais sobre as políticas de conformidade do dispositivo, consulte [as regras definidas sobre dispositivos para permitir o acesso aos recursos na sua organização utilizando o Intune](../protect/device-compliance-get-started.md).

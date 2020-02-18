@@ -1,6 +1,6 @@
 ---
 title: Extinguir ou apagar dados de dispositivos com o Microsoft Intune – Azure | Microsoft Docs
-description: Extinga ou apague dados de um dispositivo em dispositivos Android, com perfil de trabalho do Android, iOS, macOS ou Windows com o Microsoft Intune. Além disso, elimine um dispositivo do Azure Active Directory.
+description: Retire ou limpe um dispositivo num dispositivo Android, Android, iOS/iPadOS, macOS ou dispositivo Windows utilizando o Microsoft Intune. Além disso, elimine um dispositivo do Azure Active Directory.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7cda7404d24ccb9bb1c42d6bb66d77f29ac925ac
-ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.openlocfilehash: 62ba66469dfff004c3cd6a60284ec7466e8b9f00
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76812467"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415521"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Remover dispositivos ao apagar os dados, extinguir ou anular a inscrição do dispositivo de forma manual
 
@@ -43,11 +43,11 @@ A ação **Limpar** restaura um dispositivo para as predefinições de fábrica.
 
 
 > [!NOTE]
-> A ação Wipe não está disponível para dispositivos iOS matriculados com inscrição no utilizador.
+> A ação Wipe não está disponível para dispositivos iOS/iPadOS matriculados com inscrição no utilizador.
 
 A opção **Reter estado de inscrição e conta de utilizador** só está disponível para a versão 1709 ou posterior do Windows 10.
 
-A opção **'Eliminar'** não pode ser contornada a ação de limpeza não pode ser contornada desligando o dispositivo. Um apagamento protegido continuará tentando redefinir o dispositivo até que seja bem-sucedido. Em algumas configurações, essa ação pode deixar o dispositivo não conseguir reinicializar.
+A opção **'Eliminar'** não pode ser contornada a ação de limpeza não pode ser contornada desligando o dispositivo. Uma limpeza protegida continuará a tentar redefinir o dispositivo até ser bem sucedido. Em algumas configurações, esta ação pode deixar o dispositivo incapaz de reiniciar.
 
 As políticas de MDM voltarão a ser aplicadas da próxima vez que o dispositivo estabelecer ligação ao Intune.
 
@@ -55,7 +55,7 @@ Apagar é útil para repor um dispositivo antes de o atribuir a um novo utilizad
 
 ### <a name="wiping-a-device"></a>Limpar um dispositivo
 
-1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Inscreva-se no [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
 3. Selecione **Dispositivos** > **Todos os dispositivos**.
 4. Selecione o nome do dispositivo que pretende apagar.
 5. No painel que mostra o nome do dispositivo, selecione **Limpar**.
@@ -134,13 +134,13 @@ Só pode limpar dispositivos de quiosque. Não é possível extinguir dispositiv
 
 ### <a name="windows"></a>Windows
 
-|Tipo de dados|Windows 8.1 (MDM) e Windows RT 8.1|Windows RT|Windows Phone 8.1 e Windows Phone 8|Windows 10|
+|Tipo de dados|Windows 8.1 (MDM) e Windows RT 8.1|Windows RT|Windows Phone 8.1 e Windows Phone 8|Windows 10|
 |-------------|----------------------------------------------------------------|--------------|-----------------------------------------|--------|
 |Aplicações da empresa e dados associados instalados pelo Intune|As chaves para ficheiros protegidos por EFS são revogadas. O utilizador não consegue abrir os ficheiros.|As aplicações da empresa não são removidas.|As aplicações instaladas originalmente através do Portal da Empresa são desinstaladas. Os dados da aplicação da empresa são removidos.|As aplicações são desinstaladas. As chaves de sideload são removidas.<br>Na versão 1703 do Windows 10 (Atualização para Criativos) e posterior, as aplicações do Office 365 ProPlus não são removidas. As aplicações Win32 instaladas da extensão de gestão do Intune não serão desinstaladas em dispositivos não inscritos. Os administradores podem tirar partido da exclusão de atribuição para não oferecer aplicações Win32 em dispositivos BYOD.|
 |Definições|As configurações que foram definidas pela política do Intune já não são impostas. Os utilizadores podem alterar as definições.|As configurações que foram definidas pela política do Intune já não são impostas. Os utilizadores podem alterar as definições.|As configurações que foram definidas pela política do Intune já não são impostas. Os utilizadores podem alterar as definições.|As configurações que foram definidas pela política do Intune já não são impostas. Os utilizadores podem alterar as definições.|
-|Definições de perfis de Wi-Fi e da VPN|Removidos.|Removidos.|Not supported.|Removidos.|
-|Definições de perfil de certificado|Os certificados são removidos e revogados.|Os certificados são removidos e revogados.|Not supported.|Os certificados são removidos e revogados.|
-|E-mail|Remove e-mails com o EFS ativado. Isto inclui e-mails e anexos na aplicação Correio para Windows.|Not supported.|Os perfis de e-mail aprovisionados através do Intune são removidos. O e-mail em cache no dispositivo é eliminado.|Remove e-mails com o EFS ativado. Isto inclui e-mails e anexos na aplicação Correio para Windows. Remove as contas de e-mail que tenham sido aprovisionadas pelo Intune.|
+|Definições de perfis de Wi-Fi e da VPN|Removidos.|Removidos.|Não suportada.|Removidos.|
+|Definições de perfil de certificado|Os certificados são removidos e revogados.|Os certificados são removidos e revogados.|Não suportada.|Os certificados são removidos e revogados.|
+|E-mail|Remove e-mails com o EFS ativado. Isto inclui e-mails e anexos na aplicação Correio para Windows.|Não suportada.|Os perfis de e-mail aprovisionados através do Intune são removidos. O e-mail em cache no dispositivo é eliminado.|Remove e-mails com o EFS ativado. Isto inclui e-mails e anexos na aplicação Correio para Windows. Remove as contas de e-mail que tenham sido aprovisionadas pelo Intune.|
 |Anulação da associação ao Azure AD|Não.|Não.|O registo do Azure AD é removido.|O registo do Azure AD é removido.|
 
 > [!NOTE]
@@ -148,7 +148,7 @@ Só pode limpar dispositivos de quiosque. Não é possível extinguir dispositiv
 
 ### <a name="retire"></a>Extinguir
 
-1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Inscreva-se no [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. No painel **Dispositivos**, selecione **Todos os dispositivos**.
 3. Selecione o nome do dispositivo que pretende extinguir.
 4. No painel que mostra o nome do dispositivo, selecione **Extinguir**. Para confirmar, selecione **Sim**.
@@ -159,12 +159,12 @@ Se o dispositivo estiver ativado e ligado, a ação **Extinguir** propaga-se a t
 
 Se pretender remover dispositivos do portal do Intune, poderá eliminá-los no painel do dispositivo específico. Da próxima vez que o dispositivo for registado, todos os dados da empresa no mesmo serão removidos.
 
-1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Inscreva-se no [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Escolha **Dispositivos** > **Todos os dispositivos** > escolha os dispositivos que quer eliminar > **Eliminar**.
 
 ### <a name="automatically-delete-devices-with-cleanup-rules"></a>Eliminar automaticamente dispositivos com regras de limpeza
 Pode configurar o Intune de forma a eliminar automaticamente dispositivos que parecem estar inativos, obsoletos ou sem resposta. Estas regras de limpeza monitorizam o inventário do seu dispositivo de forma contínua para que os registos do mesmo se mantenham atualizados. Os dispositivos eliminados desta forma são removidos da gestão do Intune.
-1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Inscreva-se no [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selecione **Dispositivos** > **Regras de limpeza do dispositivo** > **Sim**.
 3. Nos **dispositivos Delete que não tenham verificado esta** caixa de muitos dias, introduza um número entre 30 e 270.
 4. Escolha **Guardar**.
@@ -187,7 +187,7 @@ Poderá ter de eliminar dispositivos do Azure AD devido a problemas de comunica�
 
 Se pretender remover completamente um dispositivo DEP da Apple da gestão pelo Intune, siga estes passos:
 
-1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Inscreva-se no [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selecione **Dispositivos** > **Todos os dispositivos** > selecione o dispositivo > **Extinguir**.
 ![Captura de ecrã da extinção](./media/devices-wipe/retire.png)
 3. Aceda a [deploy.apple.com](http://deploy.apple.com) e procure o dispositivo através do respetivo número de série.

@@ -1,7 +1,7 @@
 ---
-title: Inscrever dispositivos iOS no Intune
+title: Inscreva dispositivos iOS/iPadOS em Intune
 titleSuffix: Microsoft Intune
-description: Configure a inscrição de dispositivos iOS no Microsoft Intune.
+description: Configurar a inscrição de dispositivos iOS/iPadOS no Microsoft Intune.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -18,53 +18,53 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2fb5208cd7df6dc68bcd20455ae9e06a9dbd7ff5
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 8d5aeb17084ea0bb76429b1fa15c9de5855220ab
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72503142"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415302"
 ---
-# <a name="enroll-ios-devices-in-intune"></a>Inscrever dispositivos iOS no Intune
+# <a name="enroll-iosipados-devices-in-intune"></a>Inscreva dispositivos iOS/iPadOS em Intune
 
-O Intune permite que o MDM (gerenciamento de dispositivo móvel) de iPads e iPhones forneça aos usuários acesso seguro a email, dados e aplicativos da empresa.
+A Intune permite que a gestão de dispositivos móveis (MDM) de iPads e iPhones dê aos utilizadores acesso seguro a emails, dados e apps da empresa.
 
-Como administrador do Intune, você pode configurar o registro para dispositivos iOS e iPadOS para acessar os recursos da empresa. Você pode permitir que os usuários registrem dispositivos de propriedade pessoal, conhecido como registro de BYOD ("Traga seu próprio dispositivo"). Você também pode configurar o registro de dispositivos de propriedade da empresa.
+Como administrador intune, pode configurar a inscrição para dispositivos iOS/iPadOS e iPadOS para aceder aos recursos da empresa. Pode permitir que os utilizadores inscrevam dispositivos pessoais, conhecidos como "bring your own device" (BYOD). Também pode configurar a inscrição de dispositivos da empresa.
 
-## <a name="prerequisites-for-ios-enrollment"></a>Pré-requisitos para a inscrição de dispositivos iOS
+## <a name="prerequisites-for-iosipados-enrollment"></a>Pré-requisitos para a inscrição do iOS/iPadOS
 
-Antes de poder ativar dispositivos iOS, conclua os seguintes passos:
+Antes de poder ativar os dispositivos iOS/iPadOS, complete os seguintes passos:
 
-- [Verifique se o dispositivo está qualificado para o registro de dispositivo da Apple](https://support.apple.com/en-us/HT204142#eligibility).
+- [Certifique-se de que o seu dispositivo é elegível para a inscrição do dispositivo Apple](https://support.apple.com/en-us/HT204142#eligibility).
 - [Configurar o Intune](../fundamentals/setup-steps.md) – estes passos irão configurar a sua infraestrutura do Intune. Em particular, a inscrição de dispositivos requer que [defina a autoridade de MDM](../fundamentals/mdm-authority-set.md).
-- [Obter um Certificado Push de MDM da Apple](apple-mdm-push-certificate-get.md) - a Apple exige um certificado para ativar a gestão de dispositivos iOS e macOS.
+- [Obtenha um certificado Apple MDM Push](apple-mdm-push-certificate-get.md) - a Apple necessita de um certificado para permitir a gestão de dispositivos iOiOS/iPadOS e macOS.
 
-## <a name="user-owned-ios-and-ipados-devices-byod"></a>Dispositivos iOS e iPadOS de Propriedade do usuário (BYOD)
+## <a name="user-owned-iosipados-and-ipados-devices-byod"></a>Dispositivos iOS/iPadOS e iPadOS (BYOD)
 
-Pode permitir que os seus utilizadores inscrevam os respetivos dispositivos pessoais na gestão do Intune. Chama-se a isto "bring your own device (traga o seu próprio dispositivo)", ou BYOD. Há três opções para registrar usuários:
-- As políticas de proteção de aplicativo oferecem a experiência de BYOD mais leve, fornecendo gerenciamento somente no nível do aplicativo. No entanto, se você quiser também proteger o dispositivo com um PIN complexo de seis dígitos, poderá usar essas políticas junto com o registro do usuário.
-- O registro de dispositivo é o que você pode considerar como registro típico de BYOD. Ele fornece aos administradores uma ampla variedade de opções de gerenciamento.
-- O registro de usuário é um processo de registro mais simplificado que fornece aos administradores um subconjunto de opções de gerenciamento de dispositivo. Esta funcionalidade encontra-se em pré-visualização. 
+Pode permitir que os seus utilizadores inscrevam os respetivos dispositivos pessoais na gestão do Intune. Chama-se a isto "bring your own device (traga o seu próprio dispositivo)", ou BYOD. Existem três opções para inscrever utilizadores:
+- As Políticas de Proteção de Aplicações proporcionam-lhe a experiência BYOD mais leve, proporcionando agestão apenas a nível de aplicações. No entanto, se pretender também proteger o dispositivo com um PIN complexo de 6 dígitos, pode utilizar estas políticas juntamente com a Inscrição do Utilizador.
+- Inscrição no Dispositivo é o que você pode pensar como inscrição típica byod. Fornece aos administradores um vasto leque de opções de gestão.
+- A Inscrição do Utilizador é um processo de inscrição mais simplificado que fornece aos administradores um subconjunto de opções de gestão de dispositivos. Esta funcionalidade encontra-se em pré-visualização. 
 
-Depois de concluir os pré-requisitos e as licenças de usuário atribuídas, os usuários podem baixar o aplicativo Portal da Empresa do Intune da App Store e seguir as instruções de registro no aplicativo. Você pode personalizar a declaração de privacidade Portal da Empresa em dispositivos iOS, conforme explicado na [personalização da política de privacidade](../apps/company-portal-app.md#privacy-statement-customization).
+Depois de ter preenchido os pré-requisitos e as licenças de utilizador atribuídas, os utilizadores podem descarregar a aplicação Intune Company Portal a partir da App Store e seguir as instruções de inscrição na app. Pode personalizar a declaração de privacidade do Portal da Empresa nos dispositivos iOS/iPadOS, conforme explicado na personalização da declaração de [privacidade.](../apps/company-portal-app.md#privacy-statement-customization)
 
-## <a name="company-owned-ios-devices"></a>Dispositivos iOS pertencentes à empresa
+## <a name="company-owned-iosipados-devices"></a>Dispositivos iOS/iPadOS da empresa
 
-Para as organizações que compram dispositivos para os respetivos utilizadores, o Intune suporta os seguintes métodos de inscrição de dispositivos iOS pertencentes à empresa:
+Para as organizações que compram dispositivos para os seus utilizadores, a Intune suporta os seguintes métodos de inscrição de dispositivos iOS/iPadOS:
 
 - Programa de Registo de Aparelho (DEP) da Apple
 - Gestor Escolar da Apple
 - Inscrição do Assistente de Configuração do Apple Configurator
 - Inscrição direta no Apple Configurator
 
-Também pode inscrever os dispositivos iOS pertencentes à empresa com uma conta de [gestor de inscrição de dispositivos](device-enrollment-manager-enroll.md).
+Também pode inscrever dispositivos iOS/iPadOS da empresa com uma conta de gestor de [inscrição](device-enrollment-manager-enroll.md) de dispositivos.
 
 ## <a name="device-enrollment-program"></a>Programa de Inscrição de Dispositivos
 
-As organizações podem adquirir dispositivos iOS através do Programa de Inscrição de Dispositivos (DEP) da Apple. O DEP permite-lhe implementar um perfil de inscrição através de uma ligação sem fios para incluir os dispositivos na gestão. Para obter mais informações, consulte [programa de registro de dispositivos](device-enrollment-program-enroll-ios.md).
+As organizações podem adquirir dispositivos iOS/iPadOS através do Programa de Inscrição de Dispositivos da Apple (DEP). O DEP permite-lhe implementar um perfil de inscrição através de uma ligação sem fios para incluir os dispositivos na gestão. Para mais informações, consulte [o Programa de Inscrição de Dispositivos.](device-enrollment-program-enroll-ios.md)
 
 ## <a name="user-enrollment"></a>Inscrição do utilizador
-O registro de usuário fornece aos administradores um subconjunto de opções de gerenciamento em comparação com outros métodos de registro. Para obter mais informações, consulte [ações de registro de usuário com suporte, senhas e outras opções](ios-user-enrollment-supported-actions.md) e [Configurar o registro de usuário do IOS e iPadOS](ios-user-enrollment.md).
+A Inscrição do Utilizador confere aos administradores um subconjunto de opções de gestão em comparação com outros métodos de inscrição. Para mais informações, consulte [as ações suportadas pelo Utilizador, palavras-passe e outras opções](ios-user-enrollment-supported-actions.md) e [configurar iOS/iPadOS e iPadOS User Registration](ios-user-enrollment.md).
 
 ## <a name="apple-school-manager"></a>Gestor Escolar da Apple
 
@@ -72,7 +72,7 @@ O Gestor Escolar da Apple é um programa de compra e inscrição de dispositivos
 
 ## <a name="apple-configurator"></a>Apple Configurator
 
-Pode inscrever dispositivos iOS com o Apple Configurator num computador Mac. Para preparar os dispositivos, deve ligá-los via USB e instalar um perfil de inscrição. Pode inscrever dispositivos com o Apple Configurator de duas formas:
+Pode inscrever dispositivos iOS/iPadOS com o Configurator apple a funcionar num computador Mac. Para preparar os dispositivos, deve ligá-los via USB e instalar um perfil de inscrição. Pode inscrever dispositivos com o Apple Configurator de duas formas:
 
 - Inscrição com o Assistente de Configuração – apaga os dados do dispositivo, prepara-o para executar o Assistente de Configuração e instala as políticas da empresa para o novo utilizador do dispositivo.
 - Inscrição direta – não apaga os dados do dispositivo e inscreve-o com uma política predefinida. Este método destina-se a dispositivos sem afinidade de utilizador.
@@ -81,19 +81,19 @@ Saiba mais sobre a [inscrição no Apple Configurator](apple-configurator-enroll
 
 ## <a name="use-the-company-portal-on-dep-enrolled-or-apple-configurator-enrolled-devices"></a>Utilizar o Portal da Empresa em dispositivos inscritos pelo Apple Configurator ou pelo DEP
 
-Os dispositivos configurados com a afinidade de utilizador podem instalar e executar a aplicação do Portal da Empresa para transferir aplicações e gerir dispositivos. Assim que os utilizadores recebem os respetivos dispositivos, têm de executar vários passos adicionais para concluir o Assistente de Configuração e instalar a aplicação Portal da Empresa.
+Os dispositivos configurados com a afinidade de utilizador podem instalar e executar a aplicação do Portal da Empresa para transferir aplicações e gerir dispositivos. Assim que os utilizadores recebem os respetivos dispositivos, têm de executar vários passos adicionais para concluir o Assistente de Configuração e instalar a aplicação do Portal da Empresa.
 
 A afinidade de utilizador é necessária para suportar o seguinte:
 
 - Aplicações de gestão de aplicações móveis (MAM)
-- Acesso condicional a email e dados da empresa
-- Aplicação Portal da Empresa
+- Acesso Condicional a emails e dados da empresa
+- Aplicação do Portal da Empresa
 
-### <a name="how-users-enroll-corporate-owned-ios-devices-with-user-affinity"></a>Como os utilizadores inscrevem dispositivos iOS pertencentes à empresa com afinidade de utilizador
+### <a name="how-users-enroll-corporate-owned-iosipados-devices-with-user-affinity"></a>Como os utilizadores matriculam dispositivos iOS/iPadOS de propriedade corporativa com afinidade do utilizador
 
 1. Quando os utilizadores ligam os dispositivos, é-lhes pedido que concluam o Assistente de Configuração.
 2. Após concluir a configuração, é pedido o ID Apple aos utilizadores. Terão de fornecer um ID Apple para permitir que o dispositivo instale o Portal da Empresa.
-3. O dispositivo iOS instala automaticamente a aplicação Portal da Empresa a partir da App Store.
+3. O dispositivo iOS/iPadOS instala automaticamente a aplicação Portal da Empresa a partir da App Store.
 4. Os utilizadores devem iniciar a aplicação Portal da Empresa e iniciar sessão com as credenciais (por exemplo, o nome pessoal exclusivo ou UPN) associadas à respetiva subscrição no Intune.
 5. Depois de iniciar sessão, o processo de inscrição é concluído. Os utilizadores podem agora utilizar este dispositivo com o conjunto completo de funcionalidades.
 
@@ -103,6 +103,6 @@ Os dispositivos configurados sem afinidade de utilizador não suportam o Portal 
 
 Se for necessária afinidade de utilizador, confirme que o perfil de inscrição do dispositivo tem a opção **Afinidade do Utilizador** selecionada antes de o inscrever. Para alterar o estado de afinidade num dispositivo, tem de extinguir e voltar a inscrever o dispositivo.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
-[Solucionando problemas de registro de dispositivo iOS no Microsoft Intune](https://support.microsoft.com/help/4039809)
+[Problemas de resolução de problemas de problemas de matrícula de dispositivos iOS/iPadOS no Microsoft Intune](https://support.microsoft.com/help/4039809)

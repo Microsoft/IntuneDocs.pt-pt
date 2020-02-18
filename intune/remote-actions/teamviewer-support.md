@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0372c9629e111c460b095d8c0236305866da42e3
-ms.sourcegitcommit: ec69e7ccc6e6183862a48c1b03ca6a3bf573f354
+ms.openlocfilehash: 812b2e40c32b1442e632739c3964eb57027e6d9e
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "74907207"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77413734"
 ---
 # <a name="use-teamviewer-to-remotely-administer-intune-devices"></a>Utilizar o TeamViewer para administrar remotamente dispositivos do Intune
 
@@ -29,17 +29,17 @@ Os dispositivos geridos pelo Intune podem ser administrados remotamente com o [T
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-- Utilize um dispositivo suportado. O administrador do dispositivo Android gerenciado pelo Intune, o perfil de trabalho do Android, os dispositivos Windows, iOS e macOS dão suporte à administração remota. O TeamViewer pode não suportar o Windows Holographic (HoloLens), Windows Team (Surface Hub) ou Windows 10 S. Para conhecer a suportabilidade e obter todas as atualizações, veja [TeamViewer](https://www.teamviewer.com).
+- Utilize um dispositivo suportado. O Administrador de Dispositivos Android gerido sintonizado, o Perfil de Trabalho Android, o Windows, o iOS/iPadOS e os dispositivos macOS suportam a administração remota. O TeamViewer pode não suportar o Windows Holographic (HoloLens), Windows Team (Surface Hub) ou Windows 10 S. Para conhecer a suportabilidade e obter todas as atualizações, veja [TeamViewer](https://www.teamviewer.com).
 
 > [!NOTE]
-> Não há suporte para Android dedicado e totalmente gerenciado.
+> Android Dedicado e Totalmente Gerido não são suportados.
 
 - O administrador do Intune no portal do Azure tem de ter as seguintes [funções do Intune](../fundamentals/role-based-access-control.md):  
 
   - **Atualizar Assistência Remota**: permite que os administradores modifiquem as definições do conector do TeamViewer
   - **Pedir Assistência Remota**: permite que os administradores iniciem uma nova sessão de assistência remota para qualquer utilizador. Os utilizadores com esta função não estão limitados pelas funções do Intune num âmbito. Além disso, os grupos de utilizadores ou dispositivos com uma função do Intune num âmbito também podem pedir assistência remota. 
 
-- Uma conta do [TeamViewer](https://www.teamviewer.com) com as credenciais de entrada. Somente algumas licenças do TeamViewer podem dar suporte à integração com o Intune. Para necessidades específicas do TeamViewer, consulte [parceiro de integração do TeamViewer: Microsoft Intune](https://www.teamviewer.com/integrations/microsoft-intune/).
+- Uma conta [TeamViewer](https://www.teamviewer.com) com as credenciais de inscrição. Apenas algumas licenças TeamViewer podem apoiar a integração com o Intune. Para obter necessidades específicas do TeamViewer, consulte [TeamViewer Integration Partner: Microsoft Intune](https://www.teamviewer.com/integrations/microsoft-intune/).
 
 Ao utilizar o TeamViewer, está a permitir que o Conector do TeamViewer para o Intune crie sessões do TeamViewer, leia os dados do Active Directory e guarde o token de acesso da conta do TeamViewer.
 
@@ -47,8 +47,8 @@ Ao utilizar o TeamViewer, está a permitir que o Conector do TeamViewer para o I
 
 Para fornecer assistência remota a dispositivos, configure o conector do TeamViewer no Intune através dos seguintes passos:
 
-1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
-2. Selecione **Administração de locatários** > **conectores e tokens** > o **conector do TeamViewer**.
+1. Inscreva-se no [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **a administração do Inquilino** > **Conectores e fichas** > **Conector TeamViewer**.
 3. Selecione **Ligar** e, em seguida, aceite o contrato de licença.
 4. Selecione **Iniciar sessão no TeamViewer para autorizar**.
 5. É aberta uma página da Web para o site do TeamViewer. Introduza as suas credenciais de licença do TeamViewer e, em seguida, clique em **Iniciar Sessão**.
@@ -57,17 +57,17 @@ Para fornecer assistência remota a dispositivos, configure o conector do TeamVi
 
 Após o conector estar configurado, estará pronto para administrar remotamente um dispositivo. Utilize os seguintes passos: 
 
-1. No centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. No [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selecione **Dispositivos** e, em seguida, selecione **Todos os dispositivos**.
-3. Na lista, selecione o dispositivo que você deseja administrar remotamente >.. **.**  > **nova sessão de assistência remota**.
+3. A partir da lista, selecione o dispositivo que pretende administrar remotamente > **...**  > Nova Sessão de **Assistência Remota.**
 4. Quando o Intune estiver ligado ao serviço do TeamViewer, verá algumas informações sobre o dispositivo. Selecione **Ligar** para iniciar a sessão remota.
 
 ![Utilizar o TeamViewer para administrar remotamente dispositivos Android – exemplo](./media/teamviewer-support/android-teamviewer.png)
 
-Quando você inicia uma sessão remota, os usuários veem um sinalizador de notificação no ícone do aplicativo Portal da Empresa em seu dispositivo. Uma notificação também aparece quando o aplicativo é aberto. Os usuários podem aceitar a solicitação de assistência remota.
+Quando inicia uma sessão remota, os utilizadores vêem uma bandeira de notificação no ícone da aplicação do Portal da Empresa no seu dispositivo. Uma notificação também aparece quando a aplicação abre. Os utilizadores podem então aceitar o pedido de assistência remota.
 
 > [!NOTE]
-> Os dispositivos Windows registrados usando métodos "sem usuário", como o DEM e o WCD, não mostram a notificação do TeamViewer no aplicativo Portal da Empresa. Nesses cenários, é recomendável usar o portal do TeamViewer para gerar a sessão.
+> Os dispositivos Windows que estão matriculados utilizando métodos "sem uso", como DEM e WCD, não mostram a notificação do TeamViewer na aplicação Portal da Empresa. Nestes cenários, recomenda-se utilizar o portal TeamViewer para gerar a sessão.
 
 No TeamViewer, pode realizar diversas ações no dispositivo, incluindo assumir o controlo do mesmo. Para obter detalhes completos do que pode fazer, veja [Orientação do TeamViewer](https://www.teamviewer.com/support/documents/).
 

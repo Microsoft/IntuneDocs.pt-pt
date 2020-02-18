@@ -1,7 +1,7 @@
 ---
-title: Ativar o modo supervisionado do iOS com o Microsoft Intune
+title: Ligue o modo supervisionado iOS/iPadOS com o Microsoft Intune
 titleSuffix: ''
-description: Saiba como ativar o modo supervisionado do iOS com o Intune.
+description: Saiba como ativar o modo supervisionado iOS/iPadOS com o Intune.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -17,19 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1e995dbc89321bf844151accd654a2d17d35afd9
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 0d266dbc9fa72b1579e05e7798315e2e718a9797
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73713403"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77413668"
 ---
-# <a name="turn-on-ios-supervised-mode"></a>Ativar o modo supervisionado do iOS
+# <a name="turn-on-iosipados-supervised-mode"></a>Ligue o modo supervisionado iOS/iPadOS
 
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-O modo supervisionado do iOS da Apple dá mais opções aos administradores para gerirem dispositivos da Apple. É útil para dispositivos pertencentes à empresa e implementados em escala. Por exemplo, pode restringir o AirDrop ou impedir que os utilizadores alterem o nome do dispositivo. Para obter uma lista das definições que exigem o modo supervisionado, veja [Definições de restrição de dispositivos iOS no Intune](../configuration/device-restrictions-ios.md).
+O modo supervisionado pela Apple iOS/iPadOS dá aos administradores mais opções na gestão dos dispositivos apple, tornando-o útil para dispositivos corporativos implementados em escala. Por exemplo, pode restringir o AirDrop ou impedir que os utilizadores alterem o nome do dispositivo. Para obter uma lista das definições que exigem o modo supervisionado, veja [Definições de restrição de dispositivos iOS no Intune](../configuration/device-restrictions-ios.md).
 
 O Intune suporta o modo supervisionado como parte do [Programa de Registo de Aparelho (DEP)](../enrollment/device-enrollment-program-enroll-ios.md) da Apple.
 
@@ -37,17 +37,17 @@ Para obter uma lista dos controlos da Apple que exigem o modo supervisionado, ve
 
 ## <a name="turn-on-supervised-mode-during-enrollment"></a>Ativar o modo supervisionado durante a inscrição
 
-No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), você pode ativar o modo supervisionado para dispositivos ao [criar um perfil de registro da Apple no Dep](../enrollment/device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile). Em **Definições da Gestão de Dispositivos**, selecione a caixa de verificação **Supervisionado**.
+No [Microsoft Endpoint Manager Admin Center,](https://go.microsoft.com/fwlink/?linkid=2109431)pode ligar o modo supervisionado para dispositivos quando criar um perfil de [inscrição da Apple no DEP](../enrollment/device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile). Em **Definições da Gestão de Dispositivos**, selecione a caixa de verificação **Supervisionado**.
 
 ## <a name="turn-on-supervised-mode-after-enrollment"></a>Ativar o modo supervisionado após a inscrição
 
-Após a inscrição, a única forma de ativar o modo supervisionado é ao ligar um dispositivo iOS a um Mac e [utilizar o Apple Configurator](../enrollment/apple-configurator-enroll-ios.md) (que irá repor o dispositivo). Não pode configurar um dispositivo com o modo Supervisionado no Intune após a inscrição.
+Após a inscrição, a única maneira de ligar o modo supervisionado é ligar um dispositivo iOS/iPadOS a um Mac e [utilizar o Configurador Apple](../enrollment/apple-configurator-enroll-ios.md) (que irá redefinir o dispositivo). Não pode configurar um dispositivo com o modo Supervisionado no Intune após a inscrição.
 
 ## <a name="identify-a-supervised-device"></a>Identificar um dispositivo supervisionado
 
 Para determinar se um dispositivo é supervisionado, consulte o ecrã de bloqueio ou a página **Acerca de**:
 - No ecrã de bloqueio do dispositivo, estará escrito **Este iPhone é gerido pela "Nome da Empresa".**
-- Na página **sobre** do dispositivo, ele dirá que **este iPhone é supervisionado. O nome da empresa pode monitorar seu tráfego de Internet e localizar este dispositivo.**
+- Na página **Sobre** do dispositivo, dirá que **este iPhone está supervisionado. O nome da empresa pode monitorizar o tráfego da Internet e localizar este dispositivo.**
 
 ## <a name="next-steps"></a>Próximos passos
 

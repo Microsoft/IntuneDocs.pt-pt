@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0dac0607fcaa92ebe65a7ddacc3cd91c63bf246e
-ms.sourcegitcommit: 5178aec0244e023e73546f3d10f1a76eaf1f4a3e
+ms.openlocfilehash: 1263df126b371780b3c5c14ae619f0cb7c83d475
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "76971866"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415311"
 ---
 # <a name="set-enrollment-restrictions"></a>Definir restrições de inscrição
 
@@ -42,13 +42,13 @@ As restrições de inscrição específicas que pode criar incluem:
 
 - Número máximo de dispositivos inscritos.
 - Plataformas de dispositivos que podem ser inscritas:
-  - Administrador do dispositivo Android
+  - Administrador de dispositivos Android
   - Perfil de trabalho do Android Enterprise
-  - iOS
+  - iOS/iPadOS
   - macOS
   - Windows
   - Windows Mobile
-- Versão do sistema operativo da plataforma para iOS, administrador de dispositivos Android, perfil de trabalho Android Enterprise, Windows e Windows Mobile. (Apenas as versões do Windows 10 podem ser utilizadas. Deixe em branco se o Windows 8.1 for permitido.)
+- Versão do sistema operativo da plataforma para iOS/iPadOS, administrador de dispositivos Android, perfil de trabalho Android Enterprise, Windows e Windows Mobile. (Apenas as versões do Windows 10 podem ser utilizadas. Deixe em branco se o Windows 8.1 for permitido.)
   - Versão mínima.
   - Versão máxima.
 - Restringir [dispositivos pessoais](device-enrollment.md#bring-your-own-device) (iOS, administrador de dispositivos Android, perfil de trabalho Android Enterprise, macOS, Windows e Windows Mobile apenas).
@@ -67,7 +67,7 @@ As restrições predefinidas são fornecidas automaticamente para as restriçõe
 5. Em **Versões,** escolha as versões mínimas e máximas que deseja que as plataformas permitidas suportem. As restrições de versão aplicam-se apenas aos dispositivos matriculados no Portal da Empresa.
      Os formatos suportados pelas versões são os seguintes:
     - O administrador de dispositivos Android e o perfil de trabalho android Enterprise suportam major.minor.rev.build.
-    - O iOS suporta major.minor.rev. As versões do sistema operativo não se aplicam aos dispositivos da Apple que se inscrevam no Programa de Inscrição de Dispositivos, no Apple School Manager ou na aplicação Apple Configurator.
+    - iOS/iPadOS suporta major.minor.rev. As versões do sistema operativo não se aplicam aos dispositivos da Apple que se inscrevam no Programa de Inscrição de Dispositivos, no Apple School Manager ou na aplicação Apple Configurator.
     - O Windows suporta major.minor.build.rev apenas para windows 10.
     
     > [!IMPORTANT]
@@ -145,7 +145,7 @@ Os seguintes métodos estão qualificados como autorizados como uma inscrição 
 - O dispositivo está registado no Windows Autopilot, mas não é uma opção de apenas inscrição na MDM a partir das Definições do Windows.
 - O número IMEI do dispositivo é apresentado em **Inscrição de dispositivos** >  **[Identificadores de dispositivos da empresa](corporate-identifiers-add.md)** . (Não suportado para o Windows Phone 8.1.)
 - O dispositivo é inscrito através de um [pacote de aprovisionamento em massa](windows-bulk-enroll.md).
-- O dispositivo é registrado por meio de GPO ou [registro automático de Configuration Manager para cogerenciamento](https://docs.microsoft.com/configmgr/comanage/quickstart-paths#bkmk_path1).
+- O dispositivo matricula-se através de GPO, ou [inscrição automática do Gestor de Configuração para cogestão.](https://docs.microsoft.com/configmgr/comanage/quickstart-paths#bkmk_path1)
  
 As inscrições seguintes são marcadas como empresariais pelo Intune. Mas, uma vez que não permitem o controlo por dispositivo pelo administrador do Intune, serão bloqueadas:
 - [Inscrição na MDM automática](windows-enroll.md#enable-windows-10-automatic-enrollment) com [associação do Azure Active Directory durante a configuração do Windows](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx)\*.
@@ -158,8 +158,8 @@ Os seguintes métodos de inscrição pessoal também serão bloqueados:
 \* Não serão bloqueados se estiverem registados no Autopilot.
 
 
-## <a name="blocking-personal-ios-devices"></a>Bloquear dispositivos pessoais iOS
-Por predefinição, intune classifica os dispositivos iOS como propriedade pessoal. Para ser classificado como propriedade corporativa, um dispositivo iOS deve preencher uma das seguintes condições:
+## <a name="blocking-personal-iosipados-devices"></a>Bloquear dispositivos pessoais iOS/iPadOS
+Por padrão, intune classifica os dispositivos iOS/iPadOS como propriedade pessoal. Para ser classificado como propriedade corporativa, um dispositivo iOS/iPadOS deve preencher uma das seguintes condições:
 - Registado com um número de série ou IMEI.
 - Matriculado utilizando inscrição automática de dispositivos (anteriormente Programa de Inscrição de Dispositivos)
 
