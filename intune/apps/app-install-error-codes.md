@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0f79a9bc845cb87c0536552b4d214cb82280b041
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 1a9ce1a881e9a30d0f18cb676e7f7f11c4b5c8b1
+ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77414687"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77437839"
 ---
 # <a name="intune-app-installation-error-reference"></a>Referência de erro de instalação do aplicativo do Intune
 
@@ -62,7 +62,7 @@ As seguintes mensagens de erro e descrições fornecem detalhes sobre erros de i
 | 0x87D11388 | -2016341112 | O dispositivo iOS/iPadOS está atualmente ocupado.  | O dispositivo iOS/iPadOS estava ocupado, o que resultou num erro. O dispositivo estava bloqueado. O usuário precisa desbloquear o dispositivo para instalar o aplicativo. |
 | 0x87D13B64 | -2016330908 | Falha na instalação do aplicativo.  | Ocorreu uma falha ao instalar a aplicação. São necessários registos de consolas iOS/iPadOS para resolver este erro. |
 | 0x87D13B66 | -2016330906 | O aplicativo é gerenciado, mas expirou ou foi removido pelo usuário.  | O usuário desinstalou explicitamente o aplicativo ou o aplicativo expirou, mas não pôde ser baixado ou a detecção do aplicativo não corresponde à resposta do dispositivo.   Além disso, este erro pode ocorrer com base num bug de plataforma iOS/iPadOS 9.2.2. |
-| 0x87D13B60 | -2016330912 | O aplicativo está agendado para instalação, mas precisa de um código de resgate para concluir a transação.  | Este erro ocorre tipicamente com aplicações iOS/iPadOS Store que são apps pagas. |
+| 0x87D13B60 | -2016330912 | O aplicativo está agendado para instalação, mas precisa de um código de resgate para concluir a transação.  | Este erro ocorre normalmente com aplicações pagas da loja iOS. |
 | 0x87D1041C | -2016345060 | O aplicativo não foi detectado após a instalação ter sido concluída com êxito.  | O processo de deteção da aplicação não corresponde à resposta do dispositivo. |
 | 0x87D13B62 | -2016330910 | O usuário rejeitou a oferta para instalar o aplicativo.  | Durante a instalação inicial da aplicação, o utilizador clicou em Cancelar. Peça ao usuário para aceitar a solicitação de instalação na próxima vez. |
 | 0x87D13B63 | -2016330909 | O usuário rejeitou a oferta para atualizar o aplicativo.  | O usuário final clicou em cancelar durante o processo de atualização. Implante conforme necessário ou instrua o usuário a aceitar o prompt de atualização. |
@@ -83,7 +83,7 @@ As seguintes mensagens de erro e descrições fornecem detalhes sobre erros de i
 | 0x87d13b69 | -2016330903 | O licenciamento vPP do dispositivo só é aplicável para dispositivos iOS/iPadOS 9.0+.  | Atualização dos dispositivos iOS/iPadOS afetados para iOS/iPadOS 9.0+. |
 | 0x87d13b8f | -2016330865 | O aplicativo está instalado no dispositivo, mas não é gerenciado.  | Esse erro ocorre apenas para aplicativos LOB. A aplicação foi instalada fora de Intune. Para resolver esse erro, desinstale o aplicativo do dispositivo. Na próxima vez que a sincronização do dispositivo ocorrer, o dispositivo deverá instalar o aplicativo do Intune. |
 | 0x87d13b68 | -2016330904 | Gerenciamento de aplicativo recusado pelo usuário  | Peça ao usuário para aceitar o gerenciamento de aplicativos. |
-| 0x87d1279d | -2016335971 | Erro desconhecido.  | Este erro acontece com aplicações de loja iOS/iPadOS, mas o cenário de erro é desconhecido. |
+| 0x87d1279d | -2016335971 | Erro desconhecido.  | Esse erro ocorre em aplicativos da iOS Store, mas o cenário de erro é desconhecido. |
 | 0x87D13B9D | -2016330851 | A versão mais recente do aplicativo não pôde ser atualizada de uma versão anterior.  | Essa mensagem de erro será exibida se o aplicativo estiver instalado e gerenciado, mas com a versão incorreta no dispositivo. Essa situação inclui quando um dispositivo recebe um comando para atualizar um aplicativo, mas a nova versão ainda não foi instalada e relatada. Esse erro será relatado para o primeiro check-in de um dispositivo depois que a atualização tiver sido implantada e ocorrerá até que o dispositivo relate que a nova versão está instalada ou falhe devido a um erro diferente. |
 | 0x87D13B6F | -2016330897 | Sua conexão com o Intune atingiu o tempo limite.  | Falha na validação do manifesto de aplicativo devido à conectividade de rede (tempo limite) |
 | 0x87D13B70 | -2016330896 | Você perdeu a conexão com a Internet.  | Falha na validação do manifesto de aplicativo devido à conectividade de rede (não é possível encontrar o host) |

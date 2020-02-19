@@ -1,7 +1,7 @@
 ---
-title: Adicionar políticas de configuração da aplicação para dispositivos iOS geridos
+title: Adicione políticas de configuração de aplicativos para dispositivos geridos iOS/iPadOS
 titleSuffix: Microsoft Intune
-description: Saiba como utilizar políticas de configuração da aplicação para disponibilizar dados de configuração a uma aplicação iOS quando é executada.
+description: Saiba como utilizar as políticas de configuração de aplicações para fornecer dados de configuração a uma aplicação iOS/iPadOS quando é executado.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -18,18 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0d4bbd0a5b57391edad726c7e936d0072a791673
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: 6044ff5f8d169e36a11f9289f1772c809723b7fc
+ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755770"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77438009"
 ---
-# <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Adicionar políticas de configuração da aplicação para dispositivos iOS geridos
+# <a name="add-app-configuration-policies-for-managed-iosipados-devices"></a>Adicione políticas de configuração de aplicativos para dispositivos geridos iOS/iPadOS
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-Utilize políticas de configuração de aplicações no Microsoft Intune para disponibilizar definições de configuração personalizadas para uma aplicação para iOS. Essas definições de configuração permitem que um aplicativo seja personalizado com base na direção dos fornecedores de aplicativos. Pode obter estas definições de configuração (chaves e valores) junto do fornecedor da aplicação. Para configurar a aplicação, terá de especificar as definições como chaves e valores, ou como XML com chaves e valores.
+Utilize as políticas de configuração de aplicações no Microsoft Intune para fornecer configurações de configuração personalizadas para uma aplicação iOS/iPadOS. Estas configurações de configuração permitem que uma aplicação seja personalizada com base na direção dos fornecedores de aplicações. Pode obter estas definições de configuração (chaves e valores) junto do fornecedor da aplicação. Para configurar a aplicação, terá de especificar as definições como chaves e valores, ou como XML com chaves e valores.
 
 Enquanto administrador do Microsoft Intune, pode controlar as contas de utilizadores que são adicionadas a aplicações do Microsoft Office em dispositivos geridos. Pode limitar o acesso exclusivamente a contas de utilizadores autorizadas e bloquear contas pessoais em dispositivos inscritos. As aplicações de apoio processam a configuração da aplicação e removem e bloqueiam contas não aprovadas. As definições de políticas de configuração são utilizadas quando a aplicação as procura, normalmente quando é executada pela primeira vez.
 
@@ -41,12 +41,12 @@ Depois de adicionar uma política de configuração da aplicação, pode definir
 Depois de selecionar os grupos a incluir na sua política de configuração da aplicação, também poderá escolher os grupos específicos a excluir. Para obter mais informações, veja [Incluir e excluir atribuições de aplicações no Microsoft Intune](apps-inc-exl-assignments.md).
 
 > [!TIP]
-> Este tipo de política está atualmente disponível apenas para dispositivos com o iOS 8.0 e posterior. Suporta os seguintes tipos de instalação de aplicações:
+> Este tipo de política está atualmente disponível apenas para dispositivos que executam iOS/iPadOS 8.0 e posteriormente. Suporta os seguintes tipos de instalação de aplicações:
 >
 > - **Aplicação iOS gerida da loja de aplicações**
 > - **Pacote de aplicações para iOS**
 >
-> Para obter mais informações sobre os tipos de instalação de aplicações, veja [How to add an app to Microsoft Intune (Como adicionar uma aplicação ao Microsoft Intune)](apps-add.md). Para obter mais informações sobre como incorporar a configuração do aplicativo ao pacote do aplicativo. ipa para dispositivos gerenciados, consulte configuração de aplicativo gerenciado na [documentação do desenvolvedor do IOS](https://developer.apple.com/library/archive/samplecode/sc2279/Introduction/Intro.html).
+> Para obter mais informações sobre os tipos de instalação de aplicações, veja [How to add an app to Microsoft Intune (Como adicionar uma aplicação ao Microsoft Intune)](apps-add.md). Para obter mais informações sobre a incorporação de app config no seu pacote de aplicações .ipa para dispositivos geridos, consulte a Configuração de Aplicações Geridas na documentação do [desenvolvedor do iOS](https://developer.apple.com/library/archive/samplecode/sc2279/Introduction/Intro.html).
 
 ## <a name="create-an-app-configuration-policy"></a>Criar uma política de configuração de aplicação
 
@@ -64,7 +64,7 @@ Depois de selecionar os grupos a incluir na sua política de configuração da a
     - **Utilizar estruturador de configuração**
     - **Introduzir dados XML**<br><br>
     Para obter detalhes sobre a utilização do estruturador de configuração, veja [Utilizar estruturador de configuração](#use-configuration-designer). Para obter detalhes sobre a introdução de dados XML, veja [Introduzir dados XML](#enter-xml-data). 
-9. Clique em **Avançar** para exibir a página **atribuições** .
+9. Clique em **Seguir** para exibir a página **de Tarefas.**
 10. Na caixa de dropdown ao lado da **Atribuição para**, selecione **grupos selecionados,** **Todos os utilizadores,** **Todos os dispositivos,** ou **todos os utilizadores e todas as pessoas se desloquem** para atribuir a política de configuração da aplicação.
 
     ![Captura de ecrã do separador Atribuições de política – Incluir](./media/app-configuration-policies-use-ios/app-config-policy01.png)
@@ -75,7 +75,7 @@ Depois de selecionar os grupos a incluir na sua política de configuração da a
 
 12. Clique em **Selecionar grupos para excluir** para apresentar o painel relacionado.
 
-    ![Captura de tela de atribuições de política – selecionar grupos para excluir painel](./media/app-configuration-policies-use-ios/app-config-policy03.png)
+    ![Screenshot de atribuições políticas - Selecione grupos para excluir o painel](./media/app-configuration-policies-use-ios/app-config-policy03.png)
 
 13. Escolha os grupos que pretende excluir e, em seguida, clique em **Selecionar**.
 
@@ -106,14 +106,14 @@ Os carateres \{\{ e \}\} são utilizados apenas por tipos de token e não devem 
 
 ### <a name="allow-only-configured-organization-accounts-in-multi-identity-apps"></a>Permitir apenas contas de organização configuradas nas aplicações de várias identidades 
 
-Para dispositivos iOS, use os seguintes pares de chave/valor:
+Para dispositivos iOS/iPadOS, utilize os seguintes pares chave/valor:
 
 | **Chave** | IntuneMAMAllowedAccountsOnly |
 |--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Valores** | <ul><li>**Ativada**: a única conta autorizada é a conta de utilizador gerido definida pela chave [IntuneMAMUPN](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).</li><li>**Desativado** (ou qualquer valor que não seja sensível a maiúsculas/minúsculas que corresponda a **ativado**): qualquer conta é permitida.</li></ul> |.
 
    > [!NOTE]
-   > Você deve usar o OneDrive para iOS 10,34 ou posterior, o Outlook para iOS 2.99.0 ou posterior ou o Edge para iOS 44.8.7 ou posterior e o aplicativo deve ser direcionado com [políticas de proteção de aplicativo do Intune](app-protection-policy.md) ao permitir apenas contas de organização configuradas com várias identidades.
+   > Deve utilizar o OneDrive para iOS 10.34 ou mais tarde, Outlook para iOS 2.99.0 ou mais tarde ou Edge para iOS 44.8.7 ou posterior e a aplicação deve ser direcionada com políticas de proteção de [aplicações Intune](app-protection-policy.md) ao permitir apenas contas de organização configuradas com identidade múltipla.
 
 ## <a name="enter-xml-data"></a>Introduzir dados XML
 
@@ -177,17 +177,17 @@ Além disso, o Intune suporta os seguintes tipos de tokens na lista de proprieda
 - \{\{deviceid\}\} – por exemplo, **b9841cd9-9843-405f-be28-b2265c59ef97**
 - \{\{userid\}\} – por exemplo, **3ec2c00f-b125-4519-acf0-302ac3761822**
 - \{\{username\}\} – por exemplo, **John Doe**
-- \{\{serialnumber\}\} – por exemplo, **F4KN99ZUG5V2** (para dispositivos iOS)
-- \{\{serialnumberlast4digits\}\} – por exemplo, **G5V2** (para dispositivos iOS)
+- \{\{número de série\}\}— por exemplo, **F4KN99ZUG5V2** (para dispositivos iOS/iPadOS)
+- \{\{número de sérielast4dígitos\}\}— por exemplo, **G5V2** (para dispositivos iOS/iPadOS)
 - \{\{aaddeviceid\}\} – por exemplo, **ab0dc123-45d6-7e89-aabb-cde0a1234b56**
 
-## <a name="configure-the-company-portal-app-to-support-ios-dep-devices"></a>Configurar o aplicativo Portal da Empresa para dar suporte a dispositivos DEP com iOS
+## <a name="configure-the-company-portal-app-to-support-ios-dep-devices"></a>Configure a app Portal da Empresa para apoiar dispositivos iOS DEP
 
-Os registros de DEP (Programa de registro de dispositivos da Apple) não são compatíveis com a versão da loja de aplicativos do aplicativo Portal da Empresa. No entanto, você pode configurar o aplicativo Portal da Empresa para dar suporte a dispositivos DEP com iOS usando as etapas a seguir.
+As inscrições do DEP (Programa de Inscrição de Dispositivos da Apple) não são compatíveis com a versão da app store da aplicação Portal da Empresa. No entanto, pode configurar a aplicação Portal da Empresa para suportar dispositivos iOS/iPadOS DEP utilizando os seguintes passos.
 
-1. No Intune, adicione o aplicativo Portal da Empresa do Intune, se necessário, acessando **aplicativos** do **Intune** >  > **todos os aplicativos** > **Adicionar**.
-2. Vá para **aplicativos** > **políticas de configuração de aplicativo**para criar uma política de configuração de aplicativo para o aplicativo portal da empresa.
-3. Crie uma política de configuração de aplicativo com o XML abaixo. Mais informações sobre como criar uma política de configuração de aplicativo e inserir dados XML podem ser encontradas em [Adicionar políticas de configuração de aplicativo para dispositivos IOS gerenciados](app-configuration-policies-use-ios.md).
+1. Intune, adicione a aplicação Intune Company Portal, se necessário, indo para **Intune** > **Apps** > Todas **as aplicações** > **Add.**
+2. Vá a **Apps** > políticas de configuração de **Apps,** para criar uma política de configuração de aplicações para a aplicação Portal da Empresa.
+3. Crie uma política de configuração de aplicativos com o XML abaixo. Mais informações sobre como criar uma política de configuração de apps e introduzir dados XML podem ser encontradas em Políticas de configuração de [aplicações Add para dispositivos iOS/iPadOS geridos](app-configuration-policies-use-ios.md).
 
     ``` xml
     <dict>
@@ -201,15 +201,15 @@ Os registros de DEP (Programa de registro de dispositivos da Apple) não são co
     </dict>
     ```
 
-3. Implante o Portal da Empresa em dispositivos com a política de configuração de aplicativo direcionada aos grupos desejados. Certifique-se de implantar a política somente em grupos de dispositivos que já estão registrados como DEP.
-4. Diga aos usuários finais para entrar no aplicativo Portal da Empresa quando ele é instalado automaticamente.
+3. Implemente o Portal da Empresa para dispositivos com a política de configuração da aplicação direcionada aos grupos pretendidos. Certifique-se de que apenas implementa a política em grupos de dispositivos que já estão inscritos em DEP.
+4. Informe os utilizadores finais para assinarem na aplicação Portal da Empresa quando esta for instalada automaticamente.
 
 ## <a name="monitor-ios--app-configuration-status-per-device"></a>Monitorizar o estado de configuração da aplicação iOS por dispositivo 
-Assim que a política de configuração for atribuída, pode monitorizar o estado da configuração da aplicação iOS para cada dispositivo gerido. No **Microsoft Intune**, no portal do Azure, selecione **Dispositivos** > **Todos os dispositivos**. Na lista de dispositivos gerenciados, selecione um dispositivo específico para exibir um painel para o dispositivo. No painel do dispositivo, selecione **configuração do aplicativo**.  
+Uma vez atribuída uma política de configuração, pode monitorizar o estado de configuração da aplicação iOS/iPadOS para cada dispositivo gerido. No **Microsoft Intune**, no portal do Azure, selecione **Dispositivos** > **Todos os dispositivos**. A partir da lista de dispositivos geridos, selecione um dispositivo específico para exibir um painel para o dispositivo. No painel do dispositivo, selecione **a configuração**da Aplicação .  
 
 ## <a name="additional-information"></a>Informações adicionais
 
-- [Implantando definições de configuração de aplicativo do Outlook para iOS e Android](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune)
+- [Implementação de Outlook para configurações de configurações de aplicações iOS/iPadOS e Android](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune)
 
 ## <a name="next-steps"></a>Próximos passos
 

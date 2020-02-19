@@ -1,7 +1,7 @@
 ---
-title: Ignorar o Bloqueio de Ativação do iOS com o Intune
+title: Bypass iOS/iPadOS Activation Lock com Intune
 titleSuffix: Microsoft Intune
-description: Saiba como utilizar o Intune para ignorar o Bloqueio de Ativação do iOS para aceder a dispositivos bloqueados.
+description: Saiba como utilizar o Intune para contornar o bloqueio de ativação iOS/iPadOS para aceder a dispositivos bloqueados.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -18,19 +18,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1c3847890a4871b784764a5beca46f6776d52d3f
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: 3f67a08ef3cbfae4a801333e5f8ffb5469e723ed
+ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76761279"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77438060"
 ---
-# <a name="disable-activation-lock-on-supervised-ios-devices-with-intune"></a>Desativar bloqueio de ativação em dispositivos iOS supervisionados com Intune
+# <a name="disable-activation-lock-on-supervised-iosipados-devices-with-intune"></a>Desativar bloqueio de ativação em dispositivos supervisionados iOS/iPadOS com Intune
 
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-O Microsoft Intune pode ajudá-lo a gerir o Bloqueio de Ativação de iOS, uma funcionalidade da aplicação Encontrar o Meu iPhone para iOS 8.0 ou dispositivos posteriores. O Bloqueio de Ativação é ativado automaticamente quando um utilizador abre a aplicação Encontrar o Meu iPhone num dispositivo. Depois de estar ativado, o Apple ID e a palavra-passe do utilizador têm de ser introduzidos primeiro para que qualquer pessoa possa:
+O Microsoft Intune pode ajudá-lo a gerir o iOS/iPadOS Activation Lock, uma funcionalidade da aplicação Find My iPhone para iOS/iPadOS 8.0 e dispositivos posteriores. O Bloqueio de Ativação é ativado automaticamente quando um utilizador abre a aplicação Encontrar o Meu iPhone num dispositivo. Depois de estar ativado, o Apple ID e a palavra-passe do utilizador têm de ser introduzidos primeiro para que qualquer pessoa possa:
 
 - Desativar a aplicação Encontrar o Meu iPhone
 - Apagar o dispositivo
@@ -38,21 +38,21 @@ O Microsoft Intune pode ajudá-lo a gerir o Bloqueio de Ativação de iOS, uma f
 
 ## <a name="how-activation-lock-affects-you"></a>Como o Bloqueio de Ativação o afeta
 
-Embora o Bloqueio de Ativação ajude a proteger os dispositivos iOS e melhore as possibilidades de recuperação em caso de roubo ou perda do dispositivo, esta funcionalidade pode apresentar-lhe, na qualidade de administrador de TI, vários desafios. Por exemplo:
+Enquanto o Bloqueio de Ativação ajuda a proteger os dispositivos iOS/iPadOS e melhora as hipóteses de recuperar um dispositivo perdido ou roubado, esta capacidade pode apresentá-lo, como administrador de TI, com uma série de desafios. Por exemplo:
 
 - Um utilizador configura o Bloqueio de Ativação num dispositivo. O utilizador sai da empresa e devolve o dispositivo. Sem o Apple ID e a palavra-passe do utilizador, não existe nenhuma forma de reativar o dispositivo.
 - É necessário um relatório de todos os dispositivos que têm o Bloqueio de Ativação ativado.
 - Deve reatribuir alguns dispositivos para outro departamento, durante a atualização do dispositivo na sua organização. Apenas pode reatribuir dispositivos que não têm o Bloqueio de Ativação ativado.
 
-Para ajudar a resolver estes problemas, a Apple introduziu o bloqueio de ativação desativado no iOS 7.1. Desativar o bloqueio de ativação permite-lhe remover o bloqueio de ativação de dispositivos supervisionados sem o APPLE ID e a palavra-passe do utilizador. Os dispositivos supervisionados podem gerar um código de desativação do Bloqueio de Ativação específico para o dispositivo, que é armazenado no servidor de ativação da Apple.
+Para ajudar a resolver estes problemas, a Apple introduziu o bloqueio de ativação desativação no iOS/iPadOS 7.1. Desativar o bloqueio de ativação permite-lhe remover o bloqueio de ativação de dispositivos supervisionados sem o APPLE ID e a palavra-passe do utilizador. Os dispositivos supervisionados podem gerar um código de desativação do Bloqueio de Ativação específico para o dispositivo, que é armazenado no servidor de ativação da Apple.
 
 >[!TIP]
->O modo supervisionado para dispositivos iOS permite-lhe utilizar a Configuração da Apple para bloquear um dispositivo e limitar a funcionalidade para fins empresariais específicos. O modo supervisionado é utilizado apenas em dispositivos pertencentes à empresa.
+>O modo supervisionado para dispositivos iOS/iPadOS permite utilizar o Configurator Apple para bloquear um dispositivo e limitar a funcionalidade a fins comerciais específicos. O modo supervisionado é utilizado apenas em dispositivos pertencentes à empresa.
 
 Pode ler mais sobre o Bloqueio de Ativação no [site da Apple](https://support.apple.com/HT201365).
 
 ## <a name="how-intune-helps-you-manage-activation-lock"></a>De que forma o Intune o ajuda a gerir o Bloqueio de Ativação
-O Intune pode pedir o estado de Bloqueio de Ativação de dispositivos supervisionados com o iOS 8.0 e posterior. Apenas para dispositivos supervisionados, o Intune pode recuperar o código de bloqueio de ativação de sactivação e emiti-lo diretamente para o dispositivo. Se o dispositivo tiver sido eliminado, pode aceder diretamente ao mesmo com um nome de utilizador em branco e o código como a palavra-passe.
+Intune pode solicitar o estado de Bloqueio de Ativação de dispositivos supervisionados que executam iOS/iPadOS 8.0 e posteriormente. Apenas para dispositivos supervisionados, o Intune pode recuperar o código de bloqueio de ativação de sactivação e emiti-lo diretamente para o dispositivo. Se o dispositivo tiver sido eliminado, pode aceder diretamente ao mesmo com um nome de utilizador em branco e o código como a palavra-passe.
 
 **As vantagens empresariais da utilização do Intune para gerir o Bloqueio de Ativação são:**
 
@@ -62,7 +62,7 @@ O Intune pode pedir o estado de Bloqueio de Ativação de dispositivos supervisi
 ## <a name="before-you-start"></a>Antes de começar
 Antes de poder desativar o bloqueio de ativação nos dispositivos, deve activar-o seguindo estas instruções:
 
-1. Configure um perfil de restrição de dispositivos do Intune para iOS utilizando as informações em [Como configurar as definições de restrição de dispositivos](/intune-azure/configure-devices/how-to-configure-device-restrictions).
+1. Configure um perfil de restrição do dispositivo Intune para iOS/iPadOS utilizando as informações em [Como configurar as definições](/intune-azure/configure-devices/how-to-configure-device-restrictions)de restrição do dispositivo .
 2. Nas [definições de restrição de dispositivos para iOS](../configuration/device-restrictions-ios.md), nas definições **Gerais**, ative a opção **Bloqueio de Ativação**.
 3. Guarde o perfil e, em seguida, [atribua-o](../configuration/device-profile-assign.md) aos dispositivos em que pretende gerir o Bloqueio de Ativação de Desativação.
 
@@ -72,9 +72,9 @@ Antes de poder desativar o bloqueio de ativação nos dispositivos, deve activar
 >[!IMPORTANT]
 >Depois de desativar o Bloqueio de Ativação num dispositivo, se a aplicação Find My iPhone for iniciada, é automaticamente aplicado um novo Bloqueio de Ativação. Por este motivo, **deverá estar na posse física do dispositivo antes de seguir este procedimento**.
 
-A ação do dispositivo remoto de ativação Intune **Desativação** remove o bloqueio de ativação de um dispositivo iOS sem necessitar do ID e da palavra-passe do utilizador. Depois de desativar o bloqueio de ativação, o dispositivo volta a ligar o Bloqueio de Ativação quando a aplicação Find My iPhone começar. Desative o bloqueio de ativação apenas se tiver acesso físico ao dispositivo.
+A ação do dispositivo remoto de ativação Intune **Desativação** remove o bloqueio de ativação de um dispositivo iOS/iPadOS sem necessitar do APPLE ID e da palavra-passe do utilizador. Depois de desativar o bloqueio de ativação, o dispositivo volta a ligar o Bloqueio de Ativação quando a aplicação Find My iPhone começar. Desative o bloqueio de ativação apenas se tiver acesso físico ao dispositivo.
 
-1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Inscreva-se no [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
 3. No painel do **Intune**, selecione **Dispositivos**.
 4. No painel **Dispositivos**, selecione **Todos os dispositivos**.
 5. Na lista de dispositivos que gere, selecione a ação remota do dispositivo **de ativação de ativação desativação.**

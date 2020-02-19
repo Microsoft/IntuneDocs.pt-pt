@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b52a914e1577fe13f0bec970a9c3ebe38aa2cdc8
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 09c8a8819c288663936174e9317267c39eac63bc
+ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77414949"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77437856"
 ---
 # <a name="how-to-create-exceptions-to-the-intune-app-protection-policy-app-data-transfer-policy"></a>Como criar exceções à política de proteção de aplicações intune (APP) política de transferência de dados
 
@@ -66,7 +66,7 @@ Adicionar o pacote **WebEx** como uma exceção à politica de transferência de
     
     <code>com.samsung.android.messaging</code>
 
-- Exemplo de **instalação** de Certificado Android: Para isentar a aplicação de instalação de **Certificados** nativos para que o Outlook para Android possa instalar um certificado S/MIME (entregue como anexo de e-mail) na KeyStore Android, deve adicionar a exceção de transferência de dados para a seguinte cadeia: <code>com.android.certinstaller</code>. Para mais informações, consulte a [rotulagem e proteção de sensibilidade no Outlook para iOS e Android](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/sensitive-labeling-and-protection-outlook-for-ios-android).
+- Exemplo de **instalação** de Certificado Android: Para isentar a aplicação de instalação de **Certificados** nativos para que o Outlook para Android possa instalar um certificado S/MIME (entregue como anexo de e-mail) na KeyStore Android, deve adicionar a exceção de transferência de dados para a seguinte cadeia: <code>com.android.certinstaller</code>. Para mais informações, consulte [a rotulagem e proteção de sensibilidade no Outlook para iOS/iPadOS e Android](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/sensitive-labeling-and-protection-outlook-for-ios-android).
 
 ## <a name="next-steps"></a>Próximos passos
 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7c27debc75ac02ab86eb93ce4e5af8c81464d0d4
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: e28f8a2cc43e4ca210a391151383633da457c056
+ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77415233"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77437924"
 ---
 # <a name="supported-operating-systems-and-browsers-in-intune"></a>Sistemas operativos e browsers no Intune
 
@@ -92,11 +92,11 @@ Um [software cliente do Intune](manage-windows-pcs-with-microsoft-intune.md) pod
 > [!Note]
 > A Microsoft anunciou que o suporte do Windows 7 termina a 14 de janeiro de 2020. Nesta data, o Intune também retira o suporte para dispositivos com o Windows 7.
 >
-> Para mais informações, consulte [Plano Intune para a mudança: perto do fim do suporte para o Windows 7](https://docs.microsoft.com/intune/fundamentals/whats-new#intune-plan-for-change-nearing-end-of-support-for-windows-7)
+> Para mais informações, consulte o [plano Intune para a mudança: fim do suporte para o Windows 7](https://docs.microsoft.com/intune/fundamentals/whats-new#windows-7-ends-extended-support-).
 >
-> A Microsoft Intune vai retirar o suporte para a consola Intune baseada em Silverlight a 15 de outubro de 2020. Esta aposentadoria inclui o suporte final para o cliente de software pc configurado pela consola Silverlight (também conhecido como agente pc)
+> A Microsoft Intune vai retirar o suporte para a consola Intune baseada em Silverlight a 15 de outubro de 2020. Esta reforma inclui o suporte final para o cliente de software pc configurado pela consola Silverlight (também conhecido como agente pc).
 >
-> Para mais informações, consulte o suporte final da [Microsoft Intune para a consola de administração baseada em Silverlight](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Take-Action-Microsoft-Intune-ending-support-for-the-Silverlight/ba-p/916249)
+> Para mais informações, consulte o suporte final da [Microsoft Intune para a consola de administração baseada em Silverlight](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Take-Action-Microsoft-Intune-ending-support-for-the-Silverlight/ba-p/916249).
 
 <!--  ### Exchange ActiveSync management
 

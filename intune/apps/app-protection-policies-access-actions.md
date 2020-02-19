@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1c6383b19943b8c501f86894a8c49b2130cb582a
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 64faf797c69302e2a5cdbdde090330ab99fcc2e4
+ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77414988"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77437890"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-conditional-launch-actions-in-intune"></a>Limpe seletivamente os dados utilizando ações de lançamento condicional da política de proteção de aplicações em Intune
 
@@ -59,7 +59,7 @@ Para iOS/iPadOS, poderá configurar as ações para as seguintes definições ut
 - Modelos de dispositivos
 - Max permitiu o nível de ameaça do dispositivo
 
-Para utilizar a definição **Modelos de dispositivos**, introduza uma lista de identificadores de modelos de iOS separados por ponto e vírgula. Estes valores não são sensíveis aos casos. Além de intune Reporting para a entrada 'Modelo(s) do dispositivo, você pode encontrar um identificador de modelo iOS sob a coluna Tipo dispositivo na [documentação de suporte do HockeyApp](https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/ios-device-types) ou este [repositório GitHub 3.ª parte.](https://gist.github.com/adamawolf/3048717)<br>
+Para utilizar a definição **do modelo do Dispositivo,** insera uma lista separada do modelo iOS/iPadOS. Estes valores não são sensíveis aos casos. Além de intune Reporting para a entrada 'Dispositivo modelo(s)', pode encontrar um identificador de modelo iOS/iPadOS sob a coluna Tipo dispositivo na [documentação de suporte do HockeyApp](https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/ios-device-types) ou neste [repositório GitHub de 3ª parte.](https://gist.github.com/adamawolf/3048717)<br>
 Entrada de exemplo: *iPhone5,2;iPhone5,3*
 
 Nos dispositivos dos utilizadores finais, o cliente do Intune toma medidas com base numa única correspondência de cadeias do modelo de dispositivo especificadas no Intune para as Políticas de Proteção de Aplicações. A correspondência depende inteiramente do que é comunicado pelo dispositivo. Recomendamos-lhe (ao administrador de TI) que se certifique de que o comportamento previsto está a ocorrer ao testar esta definição com base numa variedade de fabricantes e modelos de dispositivos e direcionado para um pequeno grupo de utilizadores. O valor predefinido é **Não configurado**.<br>
@@ -67,8 +67,8 @@ Defina uma das seguintes ações:
 - Permitir especificados (Bloquear não especificados)
 - Permitir especificados (Apagar não especificados)
 
-**O que acontece se o administrador de TI introduzir uma lista diferente de identificadores de modelos de iOS entre as políticas direcionadas às mesmas aplicações para o mesmo utilizador do Intune?**<br>
-Quando existem conflitos entre duas políticas de proteção de aplicações em relação a valores configurados, o Intune normalmente opta pela abordagem mais restritiva. Por isso, a política resultante enviada para a aplicação-alvo a ser aberta pelo utilizador-alvo do Intune será uma intersecção dos identificadores de modelos de iOS listados na *Política A* e na *Política B* direcionados para a mesma combinação aplicação/utilizador. Por exemplo: se a *Política A* especificar "iPhone5,2;iPhone5,3" e a *Política B* especificar "iPhone5,3", a política resultante para o utilizador do Intune visado pela *Política A* e pela *Política B* será "iPhone5,3". 
+**O que acontece se o administrador de TI inserir uma lista diferente de identificadores de modelos iOS/iPadOS entre políticas direcionadas para as mesmas apps para o mesmo utilizador Intune?**<br>
+Quando existem conflitos entre duas políticas de proteção de aplicações em relação a valores configurados, o Intune normalmente opta pela abordagem mais restritiva. Assim, a política resultante enviada para a aplicação visada que está a ser aberta pelo utilizador intune visado seria uma intersecção do(s) identificador(s) do modelo iOS/iPadOS listado na *Política A* e *Política B* direcionado para a mesma combinação app/utilizador. Por exemplo: se a *Política A* especificar "iPhone5,2;iPhone5,3" e a *Política B* especificar "iPhone5,3", a política resultante para o utilizador do Intune visado pela *Política A* e pela *Política B* será "iPhone5,3". 
 
 ### <a name="android-policy-settings"></a>Definições de políticas para Android
 

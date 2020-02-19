@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7d4517d89e3b7365834e904c815b30a362540906
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: f4fca28329a5cd0adc7269929c4b2c2807bebf5e
+ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755600"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77437958"
 ---
 # <a name="troubleshoot-device-actions-in-intune"></a>Ações de dispositivo de resolução de problemas em Intune
 
@@ -34,7 +34,7 @@ A Microsoft Intune tem muitas ações que o ajudam a gerir dispositivos. Este ar
 ### <a name="i-clicked-the-disable-activation-lock-action-in-the-portal-but-nothing-happened-on-the-device"></a>Clicei na ação "Desativação" no portal, mas nada aconteceu no dispositivo.
 Isto é esperado. Depois de iniciar a ação de bloqueio de ativação de sactivação, intune é solicitado um código atualizado da Apple. Introduzirá manualmente o código no campo de código de acesso depois de o seu dispositivo estar no ecrã 'Bloqueio de Activação'. Este código só é válido por 15 dias, por isso certifique-se de clicar na ação e copiar o código antes de emitir a Limpeza.
 
-### <a name="why-dont-i-see-the-disable-activation-lock-code-in-the-hardware-overview-blade-of-my-ios-device"></a>Por que não vejo o código de bloqueio de ativação de sactivação na lâmina de visão geral do hardware do meu dispositivo iOS?
+### <a name="why-dont-i-see-the-disable-activation-lock-code-in-the-hardware-overview-blade-of-my-iosipados-device"></a>Por que não vejo o código de bloqueio de ativação de sactivação na lâmina de visão geral do hardware do meu dispositivo iOS/iPadOS?
 As razões mais prováveis incluem:
 - O código expirou e foi retirado do serviço.
 - O dispositivo não é supervisionado com a Política de Restrição do Dispositivo para permitir o bloqueio de ativação.
@@ -43,7 +43,7 @@ Pode verificar o código no Graph Explorer com a seguinte consulta:
 
 ```GET - https://graph.microsoft.com/beta/deviceManagement/manageddevices('deviceId')?$select=activationLockBypassCode.```
 
-### <a name="why-is-the-disable-activation-lock-action-greyed-out-for-my-ios-device"></a>Porque é que a ação de ativação de sactivação está acinzentada para o meu dispositivo iOS?
+### <a name="why-is-the-disable-activation-lock-action-greyed-out-for-my-iosipados-device"></a>Porque é que a ação de bloqueio de ativação para desativação está acinzentada para o meu dispositivo iOS/iPadOS?
 As razões mais prováveis incluem: 
 - O código expirou e foi retirado do serviço.
 - O dispositivo não é supervisionado com a Política de Restrição do Dispositivo para permitir o bloqueio de ativação.
@@ -90,7 +90,7 @@ Porque o Token reset não foi ativado no dispositivo. Para ativar o Token de Res
 3. O utilizador final deve aceitar a solicitação secundária para permitir a redefinição da código de acesso.
 Depois de concluídos estes passos, não deverá mais receber esta resposta.
 
-### <a name="why-am-i-prompted-to-set-a-new-passcode-on-my-ios-device-when-i-issue-the-remove-passcode-action"></a>Por que sou solicitado a definir uma nova senha no meu dispositivo iOS quando emito a ação Remover a Senha?
+### <a name="why-am-i-prompted-to-set-a-new-passcode-on-my-iosipados-device-when-i-issue-the-remove-passcode-action"></a>Por que sou solicitado a definir uma nova senha no meu dispositivo iOS/iPadOS quando emito a ação Remover o Código de Acesso?
 Porque uma das suas políticas de conformidade requer uma senha.
 
 ## <a name="next-steps"></a>Próximos passos

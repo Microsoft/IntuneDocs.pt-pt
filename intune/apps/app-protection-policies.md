@@ -18,18 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9b5f973e5ce169edcf6149b0588c905d8497cca2
-ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
+ms.openlocfilehash: c7a6914e8174023704cfc593ec08a525ec5889f3
+ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75885749"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77437907"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Como criar e atribuir políticas de proteção de aplicações
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-Saiba como criar e atribuir Microsoft Intune aplicativo (políticas de proteção de aplicativo) para usuários da sua organização. Este tópico também descreve como fazer alterações a políticas existentes.
+Saiba como criar e atribuir políticas de proteção de aplicações (APP) da Microsoft Intune para os utilizadores da sua organização. Este tópico também descreve como fazer alterações a políticas existentes.
 
 ## <a name="before-you-begin"></a>Antes de começar
 
@@ -39,71 +39,71 @@ Se estiver a procurar uma lista de MAM com aplicações suportadas, veja as [Lis
 
 Para obter mais informações sobre como adicionar as aplicações de linha de negócio (LOB) da sua organização ao Microsoft Intune, para se preparar para as políticas de proteção de aplicações, veja [Adicionar aplicações ao Microsoft Intune](apps-add.md).
 
-## <a name="app-protection-policies-for-iosipados-and-android-apps"></a>Políticas de proteção de aplicativo para aplicativos iOS/iPadOS e Android
+## <a name="app-protection-policies-for-iosipados-and-android-apps"></a>Políticas de proteção de aplicativos para aplicações iOS/iPadOS e Android
 
-Quando você cria uma política de proteção de aplicativo para aplicativos iOS/iPadOS e Android, segue um fluxo de processo moderno do Intune que resulta em uma nova política de proteção de aplicativo.
+Ao criar uma política de proteção de aplicações para aplicações iOS/iPadOS e Android, segue um fluxo de processo moderno intune que resulta numa nova política de proteção de aplicações.
 
-### <a name="create-an-iosipados-or-android-app-protection-policy"></a>Criar uma política de proteção de aplicativo iOS/iPadOS ou Android
-1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
-2. No portal do Intune, escolha **aplicativos** > **políticas de proteção de aplicativo**. Esta seleção abre o painel **Políticas de proteção de aplicações**, onde pode criar novas políticas e editar as já existentes.
-3. Selecione **criar política** e selecione **Ios/iPadOS** ou **Android**. O painel **criar política** é exibido.
-4. Na página **noções básicas** , adicione os seguintes valores:
+### <a name="create-an-iosipados-or-android-app-protection-policy"></a>Criar uma política de proteção de aplicações iOS/iPadOS ou Android
+1. Inscreva-se no [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. No portal Intune, escolha **Apps** > políticas de proteção de **aplicações.** Esta seleção abre o painel **Políticas de proteção de aplicações**, onde pode criar novas políticas e editar as já existentes.
+3. Selecione **Criar a política** e selecione **iOS/iPadOS** ou **Android**. O painel **de política Create** é exibido.
+4. Na página Basics, adicione os **seguintes valores:**
 
     | Valor | Description |
     |--------------|------------------------------------------------|
-    | Nome | O nome desta política de proteção de aplicativo. |
-    | Description | Adicional A descrição desta política de proteção de aplicativo. |
+    | Nome | O nome desta política de proteção de aplicações. |
+    | Description | [Opcional] A descrição desta política de proteção de aplicações. |
 
 
-    O valor da **plataforma** é definido com base na sua escolha acima.
+    O valor da **Plataforma** é definido com base na sua escolha acima.
 
-    ![Captura de tela da página noções básicas do painel criar política](~/apps/media/app-protection-policies/app-protection-add-policies-01.png)
+    ![Screenshot da página Basics do painel de política Criar](~/apps/media/app-protection-policies/app-protection-add-policies-01.png)
 
-5. Clique em **Avançar** para exibir a página de **aplicativos** .<br>
-    A página **aplicativos** permite que você escolha como deseja aplicar essa política a aplicativos em diferentes dispositivos. Você deve adicionar pelo menos um aplicativo.<p>
+5. Clique em **Seguir** para exibir a página **apps.**<br>
+    A página **Apps** permite-lhe escolher como pretende aplicar esta política a aplicações em diferentes dispositivos. Deve adicionar pelo menos uma aplicação.<p>
     
-    | Valor/opção | Description |
+    | Valor/Opção | Description |
     |-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | Direcionar para aplicativos em todos os tipos de dispositivos | Use esta opção para direcionar sua política para aplicativos em dispositivos de qualquer estado de gerenciamento. Escolha **não** para direcionar aplicativos em tipos de dispositivos específicos. Para obter informações, consulte [políticas de proteção de aplicativo de destino com base no estado do gerenciamento de dispositivos](#target-app-protection-policies-based-on-device-management-state) |
-    |     Tipos de dispositivo | Use esta opção para especificar se essa política se aplica a dispositivos gerenciados ou dispositivos não gerenciados do MDM. Para as políticas de aplicativo iOS, selecione de dispositivos não **gerenciados** e **gerenciáveis** . Para políticas de aplicativo Android, selecione de **não gerenciado**, **administrador de dispositivo Android**e **Android Enterprise**.  |
-    | Aplicações públicas | Clique em **selecionar aplicativos públicos** para escolher os aplicativos a serem direcionados. |
-    | Aplicativos personalizados | Clique em **selecionar aplicativos personalizados** para selecionar aplicativos personalizados para direcionar com base em uma ID de pacote. |
+    | Alvo para aplicações em todos os tipos de dispositivos | Utilize esta opção para direcionar a sua política para aplicações em dispositivos de qualquer estado de gestão. Escolha **não** para direcionar aplicações em tipos de dispositivos específicos. Para obter informações, consulte as políticas de [proteção de aplicações Target com base no estado de gestão](#target-app-protection-policies-based-on-device-management-state) de dispositivos |
+    |     Tipos de dispositivos | Utilize esta opção para especificar se esta política se aplica a dispositivos geridos pelo MDM ou a dispositivos não geridos. Para as políticas de APLICAÇÃO iOS/iPadOS, selecione a partir de dispositivos **não geridos** e **geridos.** Para as políticas de APLICAÇÃO Android, selecione entre **Não gerido,** **administrador de dispositivos Android**e Android **Enterprise.**  |
+    | Aplicações públicas | Clique em **Selecionar aplicações públicas** para escolher as aplicações para o alvo. |
+    | Aplicativos personalizados | Clique em **Selecionar aplicações personalizadas** para selecionar aplicações personalizadas para direcionar com base num ID do Bundle. |
     
-    Os aplicativos que você selecionou aparecerão na lista de aplicativos públicos e personalizados. 
-6. Clique em **Avançar** para exibir a página **proteção de dados** .<br>
-    Esta página fornece configurações para controles DLP (prevenção contra perda de dados), incluindo restrições de recortar, copiar, colar e salvar como. Essas configurações determinam como os usuários interagem com os dados nos aplicativos que essa política de proteção de aplicativo aplica.
+    As aplicações que selecionou aparecerão na lista de aplicações públicas e personalizadas. 
+6. Clique em **Seguir** para visualizar a página de **proteção de dados.**<br>
+    Esta página fornece configurações para controlos de prevenção de perdas de dados (DLP), incluindo restrições de corte, cópia, pasta e restrições de poupança. Estas definições determinam como os utilizadores interagem com os dados nas aplicações que esta política de proteção de aplicações se aplica.
 
-    **Configurações de proteção de dados**:<br>
-    - **proteção de dados Ios/iPadOS** -para obter informações, consulte [configurações de política de proteção de aplicativo IOS – proteção de dados](~/apps/app-protection-policy-settings-ios.md#data-protection).
-    - **Proteção de dados do Android** -para obter informações, consulte [configurações de política de proteção de aplicativo Android – proteção de dados](~/apps/app-protection-policy-settings-android.md#data-protection).
+    **Definições de proteção de dados:**<br>
+    - **proteção de dados iOS/iPadOS** - Para obter informações, consulte as definições da política de proteção de [aplicações iOS - Proteção de Dados](~/apps/app-protection-policy-settings-ios.md#data-protection).
+    - **Proteção de dados Android** - Para obter informações, consulte as definições de política de proteção de [aplicações Android - Proteção de Dados](~/apps/app-protection-policy-settings-android.md#data-protection).
 
-7. Clique em **Avançar** para exibir a página **requisitos de acesso** .<br>
-    Esta página fornece configurações para permitir que você configure os requisitos de PIN e credenciais que os usuários devem atender para acessar aplicativos em um contexto de trabalho. 
+7. Clique em **Seguir** para visualizar a página **de requisitos** de Acesso.<br>
+    Esta página fornece configurações que lhe permitem configurar os requisitos PIN e credenciais que os utilizadores devem cumprir para aceder a apps num contexto de trabalho. 
  
-    **Configurações de requisitos de acesso**:<br>
-    - **requisitos de acesso do IOS/iPadOS** -para obter informações, consulte [configurações de política de proteção de aplicativo IOS-requisitos de acesso](~/apps/app-protection-policy-settings-ios.md#access-requirements).
-    - **Requisitos de acesso do Android** -para obter informações, consulte [configurações de política de proteção de aplicativo Android – requisitos de acesso](~/apps/app-protection-policy-settings-android.md#access-requirements).
+    **Definições de requisitos de acesso:**<br>
+    - **requisitos de acesso iOS/iPadOS** - Para obter informações, consulte as definições da política de proteção de [aplicações iOS - Requisitos de acesso](~/apps/app-protection-policy-settings-ios.md#access-requirements).
+    - **Requisitos de acesso android** - Para obter informações, consulte as definições de política de proteção de [aplicações Android - Requisitos de acesso](~/apps/app-protection-policy-settings-android.md#access-requirements).
 
-8. Clique em **Avançar** para exibir a página de **inicialização condicional** .<br>
-    Esta página fornece configurações para definir os requisitos de segurança de entrada para sua política de proteção de aplicativo. Selecione uma **Definição** e introduza o **Valor** que os utilizadores têm de cumprir para iniciar sessão na sua aplicação da empresa. Em seguida, selecione a **ação** que você deseja executar se os usuários não atenderem às suas necessidades. Em alguns casos, é possível configurar múltiplas ações para uma única definição.
+8. Clique em **Seguir** para exibir a página de **lançamento condicional.**<br>
+    Esta página fornece configurações para definir os requisitos de segurança de início de sessão para a sua política de proteção de aplicações. Selecione uma **Definição** e introduza o **Valor** que os utilizadores têm de cumprir para iniciar sessão na sua aplicação da empresa. Em seguida, selecione a **Ação** que pretende tomar se os utilizadores não cumprirem os seus requisitos. Em alguns casos, é possível configurar múltiplas ações para uma única definição.
 
-    **Configurações de inicialização condicional**:<br>
-    - **inicialização condicional de Ios/iPadOS** -para obter informações, consulte [configurações de política de proteção de aplicativo IOS – inicialização condicional](~/apps/app-protection-policy-settings-ios.md#conditional-launch).
-    - **Inicialização condicional do Android** -para obter informações, consulte [configurações de política de proteção de aplicativo do Android – inicialização condicional](~/apps/app-protection-policy-settings-android.md#conditional-launch).
+    **Definições de lançamento condicional:**<br>
+    - **lançamento condicional iOS/iPadOS** - Para obter informações, consulte as definições da política de proteção de [aplicações iOS - Lançamento condicional](~/apps/app-protection-policy-settings-ios.md#conditional-launch).
+    - **Lançamento condicional do Android** - Para obter informações, consulte as definições de política de proteção de [aplicações Android - Lançamento condicional](~/apps/app-protection-policy-settings-android.md#conditional-launch).
 
-9. Clique em **Avançar** para exibir a página **atribuições** .<br>
-   A página **atribuições** permite atribuir a política de proteção de aplicativo a grupos de usuários.
+9. Clique em **Seguir** para exibir a página **de Tarefas.**<br>
+   A página **De missões** permite-lhe atribuir a política de proteção de aplicações a grupos de utilizadores.
 
-10. Clique em **Avançar: examinar + criar** para revisar os valores e as configurações que você inseriu para essa política de proteção de aplicativo.
+10. Clique **em Seguinte: Rever + criar** para rever os valores e definições que inseriu para esta política de proteção de aplicações.
 
-11. Quando terminar, clique em **criar** para criar a política de proteção de aplicativo no Intune. 
+11. Quando terminar, clique em **Criar** para criar a política de proteção de aplicações em Intune. 
 
     > [!TIP]
     > Estas definições de política apenas são impostas quando utilizar aplicações no contexto profissional. Quando os utilizadores finais utilizam a aplicação para realizar uma tarefa pessoal, estes não são afetados por estas políticas. Tenha em atenção que, ao criar um novo ficheiro, este é considerado um ficheiro pessoal. 
 
 Os utilizadores finais podem transferir as aplicações a partir da Apple Store ou do Google Play. Para obter mais informações, consulte:
 * [O que esperar quando a aplicação Android é gerida por políticas de proteção de aplicações](../fundamentals/end-user-mam-apps-android.md)
-* [O que esperar quando a sua aplicação iOS é gerida por políticas de proteção de aplicações](../fundamentals/end-user-mam-apps-ios.md)
+* [O que esperar quando a sua aplicação iOS/iPadOS for gerida por políticas de proteção de aplicações](../fundamentals/end-user-mam-apps-ios.md)
 
 ## <a name="change-existing-policies"></a>Alterar políticas existentes
 Pode editar uma política existente e aplicá-la aos utilizadores visados. No entanto, quando alterar as políticas existentes, os utilizadores que já tiverem sessão iniciada nas aplicações não verão as alterações durante um período de oito horas.
@@ -114,32 +114,32 @@ Para ver o efeito das alterações imediatamente, o utilizador final tem de term
 
 1. No painel **Políticas de proteção de aplicações**, selecione a política que pretende alterar.
 
-2. No painel *proteção de aplicativo do Intune* , selecione **Propriedades**.
+2. No painel *de proteção de aplicações intune,* selecione **Propriedades**.
 
-3. Ao lado da seção intitulada *aplicativos*, selecione **Editar**.
+3. Ao lado da secção intitulada *Apps,* **selecione Editar**.
 
-4. A página **aplicativos** permite que você escolha como deseja aplicar essa política a aplicativos em diferentes dispositivos. Você deve adicionar pelo menos um aplicativo.<p>
+4. A página **Apps** permite-lhe escolher como pretende aplicar esta política a aplicações em diferentes dispositivos. Deve adicionar pelo menos uma aplicação.<p>
     
-    | Valor/opção | Description |
+    | Valor/Opção | Description |
     |-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | Direcionar para aplicativos em todos os tipos de dispositivos | Use esta opção para direcionar sua política para aplicativos em dispositivos de qualquer estado de gerenciamento. Escolha **não** para direcionar aplicativos em tipos de dispositivos específicos. Para obter informações, consulte [políticas de proteção de aplicativo de destino com base no estado do gerenciamento de dispositivos](#target-app-protection-policies-based-on-device-management-state) |
-    |     Tipos de dispositivo | Use esta opção para especificar se essa política se aplica a dispositivos gerenciados ou dispositivos não gerenciados do MDM. Para as políticas de aplicativo iOS, selecione de dispositivos não **gerenciados** e **gerenciáveis** . Para políticas de aplicativo Android, selecione de **não gerenciado**, **administrador de dispositivo Android**e **Android Enterprise**.  |
-    | Aplicações públicas | Clique em **selecionar aplicativos públicos** para escolher os aplicativos a serem direcionados. |
-    | Aplicativos personalizados | Clique em **selecionar aplicativos personalizados** para selecionar aplicativos personalizados para direcionar com base em uma ID de pacote. |
+    | Alvo para aplicações em todos os tipos de dispositivos | Utilize esta opção para direcionar a sua política para aplicações em dispositivos de qualquer estado de gestão. Escolha **não** para direcionar aplicações em tipos de dispositivos específicos. Para obter informações, consulte as políticas de [proteção de aplicações Target com base no estado de gestão](#target-app-protection-policies-based-on-device-management-state) de dispositivos |
+    |     Tipos de dispositivos | Utilize esta opção para especificar se esta política se aplica a dispositivos geridos pelo MDM ou a dispositivos não geridos. Para as políticas de APLICAÇÃO iOS/iPadOS, selecione a partir de dispositivos **não geridos** e **geridos.** Para as políticas de APLICAÇÃO Android, selecione entre **Não gerido,** **administrador de dispositivos Android**e Android **Enterprise.**  |
+    | Aplicações públicas | Clique em **Selecionar aplicações públicas** para escolher as aplicações para o alvo. |
+    | Aplicativos personalizados | Clique em **Selecionar aplicações personalizadas** para selecionar aplicações personalizadas para direcionar com base num ID do Bundle. |
 
-    Os aplicativos que você selecionou aparecerão na lista de aplicativos públicos e personalizados. 
+    As aplicações que selecionou aparecerão na lista de aplicações públicas e personalizadas. 
 
-5. Clique em **examinar + criar** para examinar os aplicativos selecionados para esta política.
+5. Clique em **Rever + criar** para rever as aplicações selecionadas para esta política.
 
-6. Quando terminar, clique em **salvar** para atualizar a política de proteção de aplicativo.
+6. Quando terminar, clique em **Guardar** para atualizar a política de proteção de aplicações.
  
 #### <a name="to-change-the-list-of-user-groups"></a>Para alterar a lista de grupos de utilizadores
 
 1. No painel **Políticas de proteção de aplicações**, selecione a política que pretende alterar.
 
-2. No painel *proteção de aplicativo do Intune* , selecione **Propriedades**.
+2. No painel *de proteção de aplicações intune,* selecione **Propriedades**.
 
-3. Ao lado da seção intitulada *atribuições*, selecione **Editar**.
+3. Ao lado da secção intitulada *Atribuições,* **selecione Editar**.
 
 4. Para adicionar um novo grupo de utilizadores à política, no separador *Incluir*, selecione **Selecionar grupos para incluir** e selecione o grupo de utilizadores. Escolha **Selecionar** para adicionar o grupo. 
 
@@ -147,50 +147,50 @@ Para ver o efeito das alterações imediatamente, o utilizador final tem de term
 
 6. Para eliminar grupos que foram adicionados anteriormente, no separador *Incluir* ou *Excluir*, selecione as reticências (...) e, em seguida, **Eliminar**.
 
-7. Clique em **examinar + criar** para examinar os grupos de usuários selecionados para esta política.
+7. Clique em **Rever + criar** para rever os grupos de utilizadores selecionados para esta política.
 
-8. Quando tiver concluído as alterações às atribuições, selecione **Guardar** para guardar a configuração e implementar a política para o novo conjunto de utilizadores. Se você selecionar **Cancelar** antes de salvar sua configuração, descartará todas as alterações feitas nas guias *incluir* e *excluir* .
+8. Quando tiver concluído as alterações às atribuições, selecione **Guardar** para guardar a configuração e implementar a política para o novo conjunto de utilizadores. Se selecionar **Cancelar** antes de guardar a configuração, irá descartar todas as alterações que fez nos separadores *Incluir* e *Excluir.*
 
 ### <a name="to-change-policy-settings"></a>Para alterar definições de política
 
 1. No painel **Políticas de proteção de aplicações**, selecione a política que pretende alterar.
 
-2. No painel *proteção de aplicativo do Intune* , selecione **Propriedades**.
+2. No painel *de proteção de aplicações intune,* selecione **Propriedades**.
 
-3. Ao lado da seção correspondente às configurações que você deseja alterar, selecione **Editar**. Em seguida, altere as definições para novos valores.
+3. Junto à secção correspondente às definições que pretende alterar, **selecione Editar**. Em seguida, altere as definições para novos valores.
 
-7. Clique em **examinar + criar** para examinar as configurações atualizadas para esta política.
+7. Clique em **Rever + criar** para rever as definições atualizadas para esta política.
 
-4. Selecione **salvar** para salvar as alterações. Repita o processo de selecionar uma área de definições, alterá-la e guardar as alterações até concluir todas as suas alterações. Em seguida, pode abrir o painel *Proteção de Aplicações do Intune – Propriedades*. 
+4. Selecione o **Save** para guardar as suas alterações. Repita o processo de selecionar uma área de definições, alterá-la e guardar as alterações até concluir todas as suas alterações. Em seguida, pode abrir o painel *Proteção de Aplicações do Intune – Propriedades*. 
 
 ## <a name="target-app-protection-policies-based-on-device-management-state"></a>Aplicar políticas de proteção de aplicações com base no estado de gestão do dispositivo
 Em muitas organizações, é comum permitir que os utilizadores finais utilizem os dispositivos geridos pela MDM (Mobile Device Management) no Intune, como os dispositivos que são propriedade da empresa, e os dispositivos não geridos protegidos apenas com as políticas de proteção de aplicações do Intune. Os dispositivos não geridos são normalmente denominados BYOD (Bring Your Own Devices).
 
-Uma vez que as políticas de proteção de aplicações do Intune são direcionadas para a identidade do utilizador, as definições de proteção para um utilizador podem aplicar-se a dispositivos inscritos (geridos pela MDM) e a dispositivos não inscritos (sem gestão pela MDM). Portanto, pode direcionar uma política de proteção de aplicações do Intune para dispositivos iOS e Android inscritos ou não inscritos no Intune. Você pode ter uma política de proteção para dispositivos não gerenciados em que os controles de DLP (prevenção contra perda de dados) estritos estejam em vigor e uma política de proteção separada para dispositivos gerenciados por MDM, em que os controles de DLP podem ser um pouco mais relaxados. Para obter mais informações sobre como isso funciona em dispositivos pessoais Android Enterprise, consulte [políticas de proteção de aplicativo e perfis de trabalho](android-deployment-scenarios-app-protection-work-profiles.md).
+Uma vez que as políticas de proteção de aplicações do Intune são direcionadas para a identidade do utilizador, as definições de proteção para um utilizador podem aplicar-se a dispositivos inscritos (geridos pela MDM) e a dispositivos não inscritos (sem gestão pela MDM). Por isso, pode direcionar uma política de proteção de aplicações Intune para dispositivos intune ou iOS/iPadOS e Android. Pode ter uma política de proteção para dispositivos não geridos em que existem controlos rigorosos de prevenção da perda de dados (DLP) e uma política de proteção separada para dispositivos geridos pelo MDM, onde os controlos DLP podem ser um pouco mais relaxados. Para obter mais informações sobre como isto funciona em dispositivos pessoais do Android Enterprise, consulte políticas de proteção de [aplicações e perfis de trabalho.](android-deployment-scenarios-app-protection-work-profiles.md)
 
-Para criar essas políticas, navegue até **aplicativos** > **políticas de proteção de aplicativo** no console do Intune e, em seguida, selecione **criar política**. Também pode editar uma política de proteção de aplicações existente. Para que a política de proteção do aplicativo se aplique a dispositivos gerenciados e não gerenciados, navegue até a página de **aplicativos** e confirme se o **destino para aplicativos em todos os tipos de dispositivos** está definido como **Sim**, o valor padrão. Se você quiser atribuir de maneira granular com base no estado de gerenciamento, defina **destino como aplicativos em todos os tipos de dispositivo** como **não**. 
+Para criar estas políticas, navegue para **apps** > políticas de **proteção** de aplicações na consola Intune e, em seguida, selecione **a política Create**. Também pode editar uma política de proteção de aplicações existente. Para que a política de proteção de aplicações se aplique tanto a dispositivos geridos como não geridos, navegue na página **apps** e confirme que **o Target para aplicações em todos os tipos de dispositivos** está definido para **Sim**, o valor padrão. Se quiser atribuir granularly com base no estado de gestão, detete **o Target para aplicações em todos os tipos de dispositivos** para **No**. 
 
-### <a name="device-types"></a>Tipos de dispositivo
+### <a name="device-types"></a>Tipos de dispositivos
 
-- Não **gerenciado**: dispositivos não gerenciados são dispositivos nos quais o gerenciamento de MDM do Intune não foi detectado. Isso inclui dispositivos gerenciados por fornecedores de MDM de terceiros.
-- **Dispositivos gerenciados pelo Intune**: os dispositivos gerenciados são gerenciados pelo MDM do Intune.
-- **Administrador de dispositivo Android**: dispositivos gerenciados pelo Intune usando a API de administração de dispositivo Android.
-- **Android Enterprise**: dispositivos gerenciados pelo Intune usando perfis de trabalho do Android Enterprise ou gerenciamento de dispositivo completo do Android Enterprise.
+- **Não geridos**: Dispositivos não geridos são dispositivos em que a gestão do MDM intune não tenha sido detetada. Isto inclui dispositivos geridos por fornecedores de MDM de terceiros.
+- **Dispositivos geridos intune**: Os dispositivos geridos são geridos pelo INTUNE MDM.
+- **Administrador de dispositivos Android**: Dispositivos geridos por Intune utilizando a API da Administração de Dispositivos Android.
+- **Android Enterprise**: Dispositivos geridos por Intune utilizando perfis de trabalho android enterprise ou Android Enterprise Full Device Management.
 
 > [!NOTE]
-> Os dispositivos Android solicitarão a instalação do aplicativo Portal da Empresa do Intune, independentemente do tipo de dispositivo escolhido. Por exemplo, se você selecionar "Android Enterprise", os usuários com dispositivos Android não gerenciados ainda serão solicitados.
+> Os dispositivos Android vão solicitar a instalação da aplicação Intune Company Portal, independentemente do tipo dispositivo escolhido. Por exemplo, se selecionar 'Android Enterprise' então os utilizadores com dispositivos Android não geridos continuarão a ser solicitados.
 
-Para iOS, as definições de configuração de aplicativo adicionais são necessárias para direcionar as configurações de aplicativo (política de proteção de aplicativo) para aplicativos em dispositivos registrados no Intune:
+Para o iOS, são necessárias configurações adicionais de configuração de aplicações para direcionar as definições da política de proteção de aplicações (APP) para aplicações em dispositivos inscritos intune:
 
-- **IntuneMAMUPN** tem de ser configurado para todas as aplicações geridas pela MDM. Para obter mais informações, veja [Como gerir a transferência de dados entre aplicações iOS no Microsoft Intune](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).
-- O **IntuneMAMDeviceID** deve ser configurado para todos os aplicativos gerenciados de MDM de linha de negócios e de terceiros. O **IntuneMAMDeviceID** deve ser configurado para o token de ID do dispositivo. Por exemplo, `key=IntuneMAMDeviceID, value={{deviceID}}`. Para obter mais informações, veja [Adicionar políticas de configuração da aplicação para dispositivos iOS geridos](app-configuration-policies-use-ios.md).
+- **IntuneMAMUPN** tem de ser configurado para todas as aplicações geridas pela MDM. Para mais informações, consulte [como gerir a transferência de dados entre as aplicações iOS/iPadOS no Microsoft Intune](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).
+- **O IntuneMAMDeviceID** deve ser configurado para todas as aplicações geridas por MDM de terceiros e de linha de negócio. O **IntuneMAMDeviceID** deve ser configurado para o token de ID do dispositivo. Por exemplo, `key=IntuneMAMDeviceID, value={{deviceID}}`. Para mais informações, consulte Adicionar políticas de configuração de [aplicações para dispositivos geridos iOS/iPadOS](app-configuration-policies-use-ios.md).
 - Se apenas o **IntuneMAMDeviceID** for configurado, a aplicação do Intune irá considerar o dispositivo como não gerido.
 
 > [!NOTE]
-> Para obter informações de suporte específicas do iOS sobre as políticas de proteção de aplicações com base no estado de gestão dos dispositivos, veja [Políticas de proteção de MAM direcionadas com base no estado de gestão](../fundamentals/whats-new-archive.md#mam-protection-policies-targeted-based-on-management-state).
+> Para informações específicas sobre o suporte iOS/iPadOS sobre políticas de proteção de aplicações baseadas no estado de gestão de dispositivos, consulte as políticas de [proteção mam direcionadas com base no estado](../fundamentals/whats-new-archive.md#mam-protection-policies-targeted-based-on-management-state)de gestão .
 
 ## <a name="policy-settings"></a>Definições de política
-Para ver uma lista completa das definições de política para iOS e Android, selecione uma das seguintes ligações:
+Para ver uma lista completa das definições de política para iOS/iPadOS e Android, selecione uma das seguintes links:
 
 - [Políticas para iOS](app-protection-policy-settings-ios.md)
 - [Políticas para Android](app-protection-policy-settings-android.md)
@@ -198,6 +198,6 @@ Para ver uma lista completa das definições de política para iOS e Android, se
 ## <a name="next-steps"></a>Próximos passos
 [Monitorizar o estado do utilizador e de conformidade](app-protection-policies-monitor.md)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 * [O que esperar quando a aplicação Android é gerida por políticas de proteção de aplicações](../fundamentals/end-user-mam-apps-android.md)
-* [O que esperar quando a sua aplicação iOS é gerida por políticas de proteção de aplicações](../fundamentals/end-user-mam-apps-ios.md)
+* [O que esperar quando a sua aplicação iOS/iPadOS for gerida por políticas de proteção de aplicações](../fundamentals/end-user-mam-apps-ios.md)

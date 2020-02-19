@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d2a5629e6a318836e23c6a2f7fceb59363a0ed72
-ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.openlocfilehash: cd6e58efa096c006780c17d991a9ea5da26099d4
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76812499"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415548"
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>Repor ou remover um código de acesso do dispositivo no Intune
 
@@ -35,8 +35,8 @@ Este documento discute tanto o reset de código de acesso do dispositivo como o 
 | ---- | ---- |
 | Dispositivos Android com a versão 6.X ou anterior | Sim |
 | Dispositivos empresariais Android matriculados como Proprietário de Dispositivos | Sim |
-| Dispositivos iOS | Sim |
-| dispositivos iOS matriculados com inscrição de utilizadores | Não |
+| dispositivos iOS/iPadOS | Sim |
+| dispositivos iOS/iPadOS matriculados com inscrição do utilizador | Não |
 | Dispositivos Android matriculados com um perfil de trabalho | Não |
 | Dispositivos Android com a versão 7.0 ou posterior | Não |
 | macOS | Não |
@@ -68,9 +68,9 @@ Os dispositivos Android Enterprise inscritos suportados com um perfil de trabalh
 Para dispositivos Android Enterprise com a versão 8.X ou posterior e inscritos com um perfil de trabalho, os utilizadores finais são notificados para ativar o código de acesso de reposição logo após a inscrição estar concluída. A notificação é apresentada se for necessário definir uma palavra-passe de perfil de trabalho. Depois de introduzir o respetivo código de acesso, a notificação é dispensada.
 
 
-## <a name="remove-ios-passcodes"></a>Remover códigos de acesso do iOS
+## <a name="remove-iosipados-passcodes"></a>Remova códigos de acesso iOS/iPadOS
 
-Em vez de serem repostos, os códigos de acesso são removidos dos dispositivos iOS. Se estiver definida uma política de conformidade de código de acesso, o dispositivo pedirá ao utilizador para definir um novo código de acesso nas Definições.
+Em vez de serem repostas, as códigos de acesso são removidas dos dispositivos iOS/iPadOS. Se estiver definida uma política de conformidade de código de acesso, o dispositivo pedirá ao utilizador para definir um novo código de acesso nas Definições.
 
 ## <a name="next-steps"></a>Próximos passos
 

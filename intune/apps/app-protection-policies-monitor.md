@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5d2902c876fab12c1ba1e45783327f1ea08ab4d8
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 899e2d2dc8458d0909f01e9dfcc1056874ef0fa7
+ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77414666"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77437975"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>Como monitorizar políticas de proteção de aplicações
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -170,7 +170,7 @@ Siga estes passos para gerar ficheiro App Protection .csv ou ficheiro App Config
     ![Captura de ecrã da caixa de confirmação Guardar relatório](./media/app-protection-policies-monitor/app-protection-report-csv-1.png)
    
 > [!NOTE]
-> A Intune fornece campos adicionais de reporte de dispositivos, incluindo id de registo de aplicações, fabricante android, modelo e versão de patch de segurança, bem como modelo iOS. Intune, você acede a estes campos selecionando **Apps** > **estado de proteção** de aplicações > Relatório de Proteção de **Aplicações: iOS/iPadOS, Android**. Além disso, estes parâmetros ajudam a configurar a lista **de permitir** para o fabricante do dispositivo (Android), a lista **de permitir** para o modelo de dispositivo (Android e iOS) e a definição mínima de patch de **segurança Android.**   
+> A Intune fornece campos adicionais de reporte de dispositivos, incluindo id de registo de aplicações, fabricante android, modelo e versão de patch de segurança, bem como o modelo iOS/iPadOS. Intune, você acede a estes campos selecionando **Apps** > **estado de proteção** de aplicações > Relatório de Proteção de **Aplicações: iOS/iPadOS, Android**. Além disso, estes parâmetros ajudam a configurar a lista **de permitir** para o fabricante do dispositivo (Android), a lista **de permitir** para o modelo de dispositivo (Android e iOS) e a definição mínima de patch de **segurança Android.**   
  
 ## <a name="see-also"></a>Veja também
 - [Gerir a transferência de dados entre aplicações iOS/iPadOS](data-transfer-between-apps-manage-ios.md)

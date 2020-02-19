@@ -1,6 +1,6 @@
 ---
-title: Ativar o modo perdido do iOS com o Microsoft Intune – Azure | Microsoft Docs
-description: Ative ou inicie o modo perdido para personalizar uma mensagem que será apresentada no ecrã de bloqueio de um dispositivo iOS perdido ou roubado com o Microsoft Intune. Além disso, obtenha detalhes sobre as informações de segurança e privacidade quando utilizar a ação Modo perdido.
+title: Ativar o iOS/iPadOS perdeu o modo com o Microsoft Intune - Azure  Microsoft Docs
+description: Ligue ou comece a perder o modo para personalizar uma mensagem que aparece no ecrã de bloqueio de um dispositivo iOS/iPadOS perdido ou roubado utilizando o Microsoft Intune. Além disso, obtenha detalhes sobre as informações de segurança e privacidade quando utilizar a ação Modo perdido.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -16,22 +16,22 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2956be9e32587c3bf86ce009a6927269c11ffced
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9a4103c819c0d4bd377b9c6ab2359cb7465cdd9c
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73712242"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415604"
 ---
-# <a name="enable-lost-mode-on-ios-devices-with-intune"></a>Ativar o Modo Perdido em dispositivos iOS com o Intune
+# <a name="enable-lost-mode-on-iosipados-devices-with-intune"></a>Ativar o modo perdido nos dispositivos iOS/iPadOS com Intune
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-A ação de dispositivos **Modo perdido** ajuda-o a ativar o modo perdido em dispositivos iOS perdidos ou roubados. Este modo permite-lhe introduzir uma mensagem e um número de telefone que serão apresentados no ecrã de bloqueio do dispositivo. Para utilizar o modo perdido, o dispositivo tem de ser um dispositivo iOS pertencente à empresa que esteja num modo supervisionado.
+A ação do dispositivo **lost** ajuda-o a ativar o modo perdido em dispositivos iOS/iPadOS perdidos ou roubados. Este modo permite-lhe introduzir uma mensagem e um número de telefone que serão apresentados no ecrã de bloqueio do dispositivo. Para utilizar o modo perdido, o dispositivo deve ser um dispositivo iOS/iPadOS de propriedade corporativa que esteja em modo supervisionado.
 
 ## <a name="supported-platforms"></a>Plataformas suportadas
 
-- iOS 9.3 e posterior
+- iOS/iPadOS 9.3 e mais tarde
 
 Esta funcionalidade não é suportada para os seguintes sistemas: 
 - Windows
@@ -41,12 +41,12 @@ Esta funcionalidade não é suportada para os seguintes sistemas:
 
 ## <a name="enable-lost-mode"></a>Ativar o modo perdido
 
-1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Inscreva-se no [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
 3. Selecione **Dispositivos** e, em seguida, selecione **Todos os dispositivos**.
-4. Na lista de dispositivos que você gerencia, escolha um dispositivo iOS e, em seguida, escolha o **modo perdido (somente supervisionado)** .
-5. Em **modo perdido**, selecione **habilitar**.
-6. Na **mensagem a ser exibida na tela de bloqueio**, digite uma mensagem a ser exibida na tela de bloqueio do dispositivo.
-7. Opcionalmente, insira um número de telefone na caixa **número de telefone a ser exibido** .
+4. A partir da lista de dispositivos que gere, escolha um dispositivo iOS/iPadOS e, em seguida, escolha o **modo Perdido (apenas supervisionado)** .
+5. No **modo Perdido,** selecione **Ativar**.
+6. Na **Mensagem para visualizar no ecrã de bloqueio,** escreva uma mensagem para visualizar no ecrã de bloqueio do dispositivo.
+7. Opcionalmente, introduza um número de telefone no número de telefone para a caixa **de visualização.**
 6. Selecione **OK** para guardar as alterações.
 
 Ao ativar o modo perdido, bloqueia qualquer utilização do dispositivo. O utilizador final não pode aceder ao dispositivo até desativar o modo perdido. Quando o modo perdido estiver ativado, utilize a ação [Localizar dispositivo](device-locate.md) para localizá-lo.
