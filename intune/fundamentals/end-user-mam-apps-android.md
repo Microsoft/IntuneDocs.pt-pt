@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 946ce31c613ddb3c7dd2bf4dfde7561dd56e4ca0
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: a7aa439fcf60173cac71f0fc71ebac481660c785
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414049"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514698"
 ---
 # <a name="what-to-expect-when-your-android-app-is-managed-by-app-protection-policies"></a>O que esperar quando a aplicação Android é gerida por políticas de proteção de aplicações
 
@@ -53,7 +53,7 @@ Quando existe uma conta gerida numa aplicação:
 
 Leia o seguinte cenário de exemplo para obter uma compreensão mais aprofundada de como são tratadas as várias contas de utilizador.
 
-O usuário A trabalha para duas empresas:**empresa X** e **empresa Y**. O usuário A tem uma conta de trabalho para cada empresa e ambos usam o Intune para implantar políticas de proteção de aplicativo. A **empresa X** implanta políticas de proteção de aplicativo **antes** **da empresa Y**. A conta associada à **empresa X** Obtém a política de proteção do aplicativo, mas não a conta associada à empresa Y. Se você quiser que a conta de usuário associada à empresa Y seja gerenciada pelas políticas de proteção de aplicativo, será necessário remover a conta de usuário associada à empresa X e adicionar a conta associada à empresa Y.
+User A trabalha para duas empresas:**Empresa X** e **Empresa Y.** O utilizador A tem uma conta de trabalho para cada empresa, e ambos usam o Intune para implementar políticas de proteção de aplicações. **A Empresa X** implementa políticas de proteção de aplicações **antes** da **Empresa Y**. A conta que está associada à **Empresa X** recebe a política de proteção de aplicações, mas não a conta que está associada à Empresa Y. Se pretender que a conta de utilizador associada à Empresa Y seja gerida pelas políticas de proteção de aplicações, deve remover a conta de utilizador que está associada à Empresa X e adicionar a conta que está associada à Empresa Y.
 
 ### <a name="add-a-second-account"></a>Adicionar uma segunda conta
 
@@ -81,4 +81,4 @@ São suportados os seguintes tipos de ficheiro:
 |Pfile é um formato de "encapsulamento" genérico para ficheiros protegidos que encapsula o conteúdo encriptado e as licenças do Azure Information Protection. Pode servir para proteger qualquer tipo de ficheiro.|
 
 ## <a name="next-steps"></a>Próximos passos
-[O que esperar quando a sua aplicação iOS é gerida por políticas de proteção de aplicações](end-user-mam-apps-ios.md)
+[O que esperar quando a sua aplicação iOS/iPadOS for gerida por políticas de proteção de aplicações](end-user-mam-apps-ios.md)

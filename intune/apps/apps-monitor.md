@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 72e1f95e2bd81d974d900acbcb0f785bb7966eaa
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 2bd5b26073611d9ff974d4a53f7794919e8672c7
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74563706"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513542"
 ---
 # <a name="monitor-app-information-and-assignments-with-microsoft-intune"></a>Monitorizar informações e atribuições da aplicação com o Microsoft Intune
 
@@ -31,27 +31,27 @@ ms.locfileid: "74563706"
 
 O Intune fornece várias formas de monitorizar as propriedades de aplicações que gere e de gerir o estado de atribuição da aplicação.
 
-1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
-2. Selecione **aplicativos** > **todos os aplicativos**.
+1. Inscreva-se no [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **Apps** > **Todas as aplicações.**
 3. Na lista de aplicações, selecione uma aplicação a monitorizar. Em seguida, verá o painel de aplicações, que inclui uma descrição geral do estado dos dispositivos e dos utilizadores.
 
 > [!NOTE]
 > As aplicações da Loja Android que são implementadas como **Disponíveis** não comunicam o respetivo estado de instalação.
 >
-> Para aplicativos gerenciados Google Play implantados em dispositivos Android Enterprise Work Profile, você pode exibir o status e o número de versão do aplicativo instalado em um dispositivo usando o Intune. 
+> Para aplicações geridas do Google Play implementadas para dispositivos de perfil de trabalho Android Enterprise, pode ver o estado e o número de versão da aplicação instalada num dispositivo utilizando o Intune. 
 
 ## <a name="app-overview-pane"></a>Painel Descrição geral da aplicação
 
 No painel da aplicação, pode rever os detalhes acerca do estado de uma aplicação no seu ambiente.
 
-### <a name="essentials"></a>Informações Básicas
+### <a name="essentials"></a>Essentials
 A secção **Essentials** contém as seguintes informações sobre a aplicação:
 
  | **Detalhes da aplicação**            | **Descrição**                                                      |
 |------------------------|------------------------------------------------------------------|
 | **Publicador**          | O publicador da aplicação.                                            |
-| **Sistema operativo**   | O sistema operativo da aplicação (Windows, iOS, Android, etc.). |
-| **Criado**             | A data e hora em que esta revisão foi criada. <b>**Observação**: esse valor de data é atualizado quando um administrador de ti altera os metadados do aplicativo, como alterar a categoria do aplicativo ou a descrição do aplicativo.                        |
+| **Sistema operativo**   | O sistema operativo da aplicação (Windows, iOS/iPadOS, Android, e assim por diante). |
+| **Criado**             | A data e hora em que esta revisão foi criada. <b>**Nota**: Este valor de data é atualizado quando um administrador de TI altera os metadados da aplicação, tais como alterar a categoria de aplicação ou descrição da aplicação.                        |
 | **Atribuído**           | Se a aplicação foi atribuída (**Sim** ou **Não**).                  |
 
 ### <a name="device-and-user-status-graphs"></a>Gráficos de estado do utilizador e do dispositivo
@@ -66,7 +66,7 @@ Os gráficos mostram o número de aplicações para os seguintes estados:
 | **Não Aplicável**           | O número de aplicações em que o estado não é aplicável.            |
 
 > [!NOTE]
-> Lembre-se de que os aplicativos LOB Android (. APK) implantado como **disponível com ou sem registro** apenas o status de instalação do aplicativo de relatório para dispositivos registrados. O estado de instalação das aplicações não está disponível para dispositivos que não estão inscritos no Intune.
+> Esteja ciente de que as aplicações Android LOB (. APK) implementado como **disponível com ou sem inscrição** apenas reporte o estado de instalação da aplicação para dispositivos matriculados. O estado de instalação das aplicações não está disponível para dispositivos que não estão inscritos no Intune.
 
 ### <a name="device-install-status"></a>Estado de instalação do dispositivo
 
@@ -76,7 +76,7 @@ Uma lista de estados do dispositivo é apresentada ao selecionar **Estado de ins
 |----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Nome do dispositivo**      | O nome do dispositivo nas plataformas que permitem atribuir um nome aos dispositivos. Noutras plataformas, o Intune cria um nome a partir de outras propriedades. Este atributo não está disponível em mais nenhum dispositivo.                                                                       |
 | **Nome de utilizador**        | O nome do utilizador.                                                                                                                                                                                                                                      |
-| **Plataforma**         | O sistema operativo do dispositivo (Windows, iOS, Android, entre outros).                                                                                                                                                                                           |
+| **Plataforma**         | O sistema operativo do dispositivo (Windows, iOS/iPadOS, Android, e assim por diante).                                                                                                                                                                                           |
 | **Versão**          | O número da versão da aplicação. Para aplicações de linha de negócios (LOB) e aplicações da Microsoft Store para Empresas, será apresentado o número completo da versão da aplicação. O número da versão completo identifica uma versão específica da aplicação. O número é apresentado como _Versão_(_Compilação_), Por exemplo, 2.2 (2.2.17560800). Para aplicações da Loja padrão, não são apresentadas as versões. |
 | **Estado**           | O estado da aplicação.                                                                                                                                                                                                                                     |
 | **Detalhes do estado**   | Os detalhes do estado.                                                                                                                                                                                                                                     |

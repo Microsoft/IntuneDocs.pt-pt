@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 77be59d126dc7e73bee468ca938938c6bb1b2e1a
-ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
+ms.openlocfilehash: 40075ad3c90f9ce5131d88780d15eec5c258e276
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76913197"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515259"
 ---
 # <a name="troubleshoot-the-delivery-of-certificates-provisioned-by-scep-to-devices-in-microsoft-intune"></a>Resolução de problemas na entrega de certificados provisionados pela SCEP a dispositivos no Microsoft Intune
 
@@ -73,9 +73,9 @@ Também pode rever o [log OMADM](troubleshoot-scep-certificate-profiles.md#logs-
 2018-02-27T05:20:15.3520000    INFO    Event     com.microsoft.omadm.platforms.android.certmgr.state.NativeScepCertInstallStateMachine    18327       21    SCEP cert 'ModelName=AC_51…%2FLogicalName_39907…;Hash=1677525787' state changed from CERT_ACCESS_REQUESTED to CERT_ACCESS_GRANTED
 ```
 
-### <a name="ios-and-ipados"></a>iOS e iPadOS
+### <a name="iosipados"></a>iOS/iPadOS
 
-No dispositivo iOS ou iPadOS, pode visualizar o certificado no perfil de Gestão de Dispositivos. Faça uma perfuração para ver detalhes sobre os certificados instalados.
+No iOS/iPadOS ou no dispositivo iPadOS, pode ver o certificado no perfil de Gestão de Dispositivos. Faça uma perfuração para ver detalhes sobre os certificados instalados.
 
 ![certificado iOS](../protect/media/troubleshoot-scep-certificate-delivery/ios-certificate.png)
 
@@ -102,13 +102,13 @@ Para visualizar o certificado no dispositivo, faça a **certmgr.msc** para abrir
    1. Vá a **Certificados (computador local)**  > Autoridades de **Certificação de Raiz Fidedignas** > **Certificados,** e verifique se o certificado de raiz da sua CA está presente. Os valores *para emitidos para* e *emitidos por* serão os mesmos.
    2. Nos Certificados MMC, vá a **Certificados – Utilizador Atual** > **Certificados**de > **Pessoais,** e verifique se o certificado solicitado está presente, com *emitido por* igual ao nome da AC.
 
-## <a name="troubleshoot-failures"></a>Solucionar problemas de falhas
+## <a name="troubleshoot-failures"></a>Falhas de resolução de problemas
 
 ### <a name="android"></a>Android
 
 Para resolver este passo, reveja os erros que estão registados no registo DeMA Da OMA.
 
-### <a name="ios-and-ipados"></a>iOS e iPadOS
+### <a name="iosipados"></a>iOS/iPadOS
 
 Para resolver este passo, reveja os erros que estão registados no registo de depuração dos dispositivos.
 

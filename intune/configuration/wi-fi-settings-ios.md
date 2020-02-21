@@ -1,12 +1,12 @@
 ---
-title: Configurar as definições de Wi-Fi para dispositivos iOS no Microsoft Intune – Azure | Microsoft Docs
+title: Configure as definições wi-fi para dispositivos iOS/iPadOS no Microsoft Intune - Azure Microsoft Docs
 titleSuffix: ''
-description: Crie ou adicione um perfil de configuração de dispositivos Wi-Fi para dispositivos iOS. Veja as diferentes definições, incluindo a adição de certificados, a escolha de um tipo de EAP e a seleção de um método de autenticação no Microsoft Intune.
+description: Crie ou adicione um perfil de configuração do dispositivo WiFi para dispositivos iOS/iPadOS. Veja as diferentes definições, incluindo a adição de certificados, a escolha de um tipo de EAP e a seleção de um método de autenticação no Microsoft Intune.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/13/2019
+ms.date: 02/18/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dd37813e5ea0b6a64d7fae22cada06cccb01a942
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 68685428ac94dfe08306858774eaf98fb079e66c
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059221"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77512318"
 ---
-# <a name="add-wi-fi-settings-for-ios-devices-in-microsoft-intune"></a>Adicionar definições de Wi-Fi para dispositivos iOS no Microsoft Intune
+# <a name="add-wi-fi-settings-for-ios-and-ipados-devices-in-microsoft-intune"></a>Adicione as definições wi-fi para dispositivos iOS e iPadOS no Microsoft Intune
 
-Pode criar um perfil com definições de Wi-Fi específicas e, em seguida, implementar este perfil nos seus dispositivos iOS. O Microsoft Intune oferece muitos recursos, incluindo a autenticação em sua rede, a adição de um certificado PKCS ou SCEP e muito mais.
+Pode criar um perfil com definições Wi-Fi específicas e, em seguida, implementar este perfil para os seus dispositivos iOS/iPadOS. O Microsoft Intune oferece muitas funcionalidades, incluindo a autenticação à sua rede, adicionando um certificado PKCS ou SCEP, e muito mais.
 
 Estas definições de Wi-Fi estão separadas em duas categorias: Definições básicas e Definições de nível empresarial.
 
@@ -36,7 +36,7 @@ Este artigo descreve estas definições.
 [Crie um perfil de dispositivo](../device-profile-create.md).
 
 > [!NOTE]
-> Essas configurações estão disponíveis para todos os tipos de registro. Para obter mais informações sobre os tipos de registro, consulte [registro do IOS](../enrollment/ios-enroll.md).
+> Estas configurações estão disponíveis para todos os tipos de inscrição. Para obter mais informações sobre os tipos de matrículas, consulte a [inscrição do iOS/iPadOS.](../enrollment/ios-enroll.md)
 
 ## <a name="basic-profiles"></a>Perfis básicos
 
@@ -44,7 +44,7 @@ Este artigo descreve estas definições.
 - **Nome da rede**: introduza um nome para esta ligação Wi-Fi. Este valor é o nome que os utilizadores veem quando navegam na lista de ligações disponíveis nos seus dispositivos.
 - **SSID**: sigla de **service set identifier** (identificador do conjunto de serviço). Esta propriedade é o nome real da rede sem fios à qual os dispositivos se ligam. No entanto, os utilizadores apenas veem o nome da rede configurada por si quando selecionam a ligação.
 - **Ligar automaticamente**: escolha **Ativar** para ligar automaticamente a esta rede quando o dispositivo estiver dentro do alcance. Escolha **Desativar** para impedir que os dispositivos se liguem automaticamente.
-- **Rede oculta**: escolha **habilitar** se o SSID da rede não for transmitido. Escolha **desabilitar** se o SSID da rede for transmitido e estiver visível.
+- **Rede oculta**: Escolha **ativar** se o SSID da rede não for transmitido. Escolha **Desativar** se o SSID da rede for transmitido e visível.
 - **Tipo de segurança**: selecione o protocolo de segurança para autenticar a rede Wi-Fi. As opções são:
 
   - **Abrir (sem autenticação)** : utilize esta opção apenas se a rede não estiver protegida.
@@ -75,12 +75,12 @@ Este artigo descreve estas definições.
 
   - **EAP-TLS**: introduza também:
 
-    - **Confiança do servidor** - **nomes de servidor de certificado**: **adicione** um ou mais nomes comuns usados nos certificados emitidos por sua autoridade de certificação (CA) confiável para seus servidores de acesso à rede sem fio. Por exemplo, adicione `mywirelessserver.contoso.com` ou `mywirelessserver`. Quando introduzir estas informações, pode ignorar a janela de confiança dinâmica apresentada nos dispositivos dos utilizadores quando estes se ligam a esta rede Wi-Fi.
-    - **Certificado de raiz para a validação do servidor**: escolha um perfil de certificado de raiz fidedigna existente. Esse certificado permite que o cliente confie no certificado do servidor de acesso à rede sem fio.
+    - **Nomes** de servidores de ** - De si**: **Adicione** um ou mais nomes comuns utilizados nos certificados emitidos pela autoridade de certificados fidedignos (CA) aos seus servidores de acesso à rede sem fios. Por exemplo, adicione `mywirelessserver.contoso.com` ou `mywirelessserver`. Quando introduzir estas informações, pode ignorar a janela de confiança dinâmica apresentada nos dispositivos dos utilizadores quando estes se ligam a esta rede Wi-Fi.
+    - **Certificado de raiz para a validação do servidor**: escolha um perfil de certificado de raiz fidedigna existente. Este certificado permite ao cliente confiar no certificado do servidor de acesso à rede sem fios.
 
-    - **Autenticação de cliente** Escolha um **método de autenticação**. As opções são:
+    - **Autenticação do Cliente** Escolha um método de **autenticação.** As opções são:
 
-      - **Credencial derivada**: Use um certificado derivado do cartão inteligente de um usuário. Se nenhum emissor de credencial derivado estiver configurado, o Intune solicitará que você adicione um. Para obter mais informações, consulte [usar credenciais derivadas no Microsoft Intune](../protect/derived-credentials.md).
+      - **Credencial derivada:** Utilize um certificado derivado do cartão inteligente de um utilizador. Se nenhum emitente credencial derivado estiver configurado, Intune pede-lhe para adicionar um. Para mais informações, consulte [Use credenciais derivadas no Microsoft Intune](../protect/derived-credentials.md).
 
       - **Certificados**: escolha o perfil de certificado de cliente SCEP ou PKCS que também é implementado no dispositivo. Este certificado é a identidade apresentada pelo dispositivo ao servidor para autenticar a ligação.
 
@@ -88,12 +88,12 @@ Este artigo descreve estas definições.
 
   - **EAP-TTLS**: introduza também:
 
-    - **Confiança do servidor** - **nomes de servidor de certificado**: **adicione** um ou mais nomes comuns usados nos certificados emitidos por sua autoridade de certificação (CA) confiável para seus servidores de acesso à rede sem fio. Por exemplo, adicione `mywirelessserver.contoso.com` ou `mywirelessserver`. Quando introduzir estas informações, pode ignorar a janela de confiança dinâmica apresentada nos dispositivos dos utilizadores quando estes se ligam a esta rede Wi-Fi.
-    - **Certificado de raiz para a validação do servidor**: escolha um perfil de certificado de raiz fidedigna existente. Esse certificado permite que o cliente confie no certificado do servidor de acesso à rede sem fio.
+    - **Nomes** de servidores de ** - De si**: **Adicione** um ou mais nomes comuns utilizados nos certificados emitidos pela autoridade de certificados fidedignos (CA) aos seus servidores de acesso à rede sem fios. Por exemplo, adicione `mywirelessserver.contoso.com` ou `mywirelessserver`. Quando introduzir estas informações, pode ignorar a janela de confiança dinâmica apresentada nos dispositivos dos utilizadores quando estes se ligam a esta rede Wi-Fi.
+    - **Certificado de raiz para a validação do servidor**: escolha um perfil de certificado de raiz fidedigna existente. Este certificado permite ao cliente confiar no certificado do servidor de acesso à rede sem fios.
 
     - **Autenticação de Cliente** – escolha um **Método de autenticação**. As opções são:
 
-      - **Credencial derivada**: Use um certificado derivado do cartão inteligente de um usuário. Se nenhum emissor de credencial derivado estiver configurado, o Intune solicitará que você adicione um. Para obter mais informações, consulte [usar credenciais derivadas no Microsoft Intune](../protect/derived-credentials.md).
+      - **Credencial derivada:** Utilize um certificado derivado do cartão inteligente de um utilizador. Se nenhum emitente credencial derivado estiver configurado, Intune pede-lhe para adicionar um. Para mais informações, consulte [Use credenciais derivadas no Microsoft Intune](../protect/derived-credentials.md).
 
       - **Nome de utilizador e Palavra-passe**: pedir ao utilizador um nome de utilizador e palavra-passe para autenticar a ligação. Introduza também:
         - **Método não EAP (identidade interna)** : escolha a forma como autentica a ligação. Garanta que escolhe o mesmo protocolo que está configurado na sua rede Wi-Fi.
@@ -108,12 +108,12 @@ Este artigo descreve estas definições.
 
   - **PEAP**: introduza também:
 
-    - **Confiança do servidor** - **nomes de servidor de certificado**: **adicione** um ou mais nomes comuns usados nos certificados emitidos por sua autoridade de certificação (CA) confiável para seus servidores de acesso à rede sem fio. Por exemplo, adicione `mywirelessserver.contoso.com` ou `mywirelessserver`. Quando introduzir estas informações, pode ignorar a janela de confiança dinâmica apresentada nos dispositivos dos utilizadores quando estes se ligam a esta rede Wi-Fi.
-    - **Certificado de raiz para a validação do servidor**: escolha um perfil de certificado de raiz fidedigna existente. Esse certificado permite que o cliente confie no certificado do servidor de acesso à rede sem fio.
+    - **Nomes** de servidores de ** - De si**: **Adicione** um ou mais nomes comuns utilizados nos certificados emitidos pela autoridade de certificados fidedignos (CA) aos seus servidores de acesso à rede sem fios. Por exemplo, adicione `mywirelessserver.contoso.com` ou `mywirelessserver`. Quando introduzir estas informações, pode ignorar a janela de confiança dinâmica apresentada nos dispositivos dos utilizadores quando estes se ligam a esta rede Wi-Fi.
+    - **Certificado de raiz para a validação do servidor**: escolha um perfil de certificado de raiz fidedigna existente. Este certificado permite ao cliente confiar no certificado do servidor de acesso à rede sem fios.
 
     - **Autenticação de Cliente** – escolha um **Método de autenticação**. As opções são:
 
-      - **Credencial derivada**: Use um certificado derivado do cartão inteligente de um usuário. Se nenhum emissor de credencial derivado estiver configurado, o Intune solicitará que você adicione um. Para obter mais informações, consulte [usar credenciais derivadas no Microsoft Intune](../protect/derived-credentials.md).
+      - **Credencial derivada:** Utilize um certificado derivado do cartão inteligente de um utilizador. Se nenhum emitente credencial derivado estiver configurado, Intune pede-lhe para adicionar um. Para mais informações, consulte [Use credenciais derivadas no Microsoft Intune](../protect/derived-credentials.md).
 
       - **Nome de utilizador e Palavra-passe**: pedir ao utilizador um nome de utilizador e palavra-passe para autenticar a ligação. 
 
@@ -128,6 +128,6 @@ Este artigo descreve estas definições.
 
 ## <a name="next-steps"></a>Próximos passos
 
-O perfil é criado, mas não faz nada. Em seguida, [atribua esse perfil](device-profile-assign.md)e [monitore seu status](device-profile-monitor.md).
+O perfil é criado, mas não faz nada. Em seguida, [atribua este perfil](device-profile-assign.md)e [monitorize o seu estado](device-profile-monitor.md).
 
-Defina as configurações de Wi-Fi em dispositivos [Android](wi-fi-settings-android.md), [Android Enterprise](wi-fi-settings-android-enterprise.md), [MacOS](wi-fi-settings-macos.md)e [Windows 10](wi-fi-settings-windows.md) .
+Configure as definições de Wi-Fi nos dispositivos [Android,](wi-fi-settings-android.md) [Android Enterprise,](wi-fi-settings-android-enterprise.md) [macOS](wi-fi-settings-macos.md)e [Windows 10.](wi-fi-settings-windows.md)

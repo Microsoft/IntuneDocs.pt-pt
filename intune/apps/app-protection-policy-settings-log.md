@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ddddfdceaccd53025033c27301c53ecf85d34d48
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 6b45f4b2bdcf70aa9df8a426f0a63ee0f19a2545
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77414944"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511995"
 ---
 # <a name="review-client-app-protection-logs"></a>Rever registos de proteção de aplicações cliente
 
@@ -34,7 +34,7 @@ O processo de ativação e recolha de registos varia por plataforma:
 - **Dispositivos Windows 10** - Utilize *registos de MDMDiag* e eventos. Veja, [diagnostice falhas de MDM no Windows 10](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10) nos conteúdos de gestão de clientes do Windows e no blog [Troubleshooting Windows 10 Intune Policy Failures](https://blogs.technet.microsoft.com/configmgrdogs/2018/08/09/troubleshooting-windows-10-intune-policy-failures/).
 - **Dispositivos Android** - Sem dados de diagnóstico para política de proteção de aplicações (APP) em dispositivos Android.
 
-A tabela seguinte lista o nome da definição da política de proteção da App e valores suportados que são registados no registo. Além disso, cada definição identifica a definição de política encontrada no portal Microsoft Endpoint Manager. Para obter informações detalhadas sobre cada definição, consulte as definições da política de proteção de [aplicações iOS](~/apps/app-protection-policy-settings-ios.md).
+A tabela seguinte lista o nome da definição da política de proteção da App e valores suportados que são registados no registo. Além disso, cada definição identifica a definição de política encontrada no portal Microsoft Endpoint Manager. Para obter informações detalhadas sobre cada definição, consulte as definições da política de proteção de [aplicações iOS/iPadOS](~/apps/app-protection-policy-settings-ios.md).
 
 ## <a name="app-protection-policy-settings"></a>Definições de políticas de proteção de aplicações
 

@@ -17,12 +17,12 @@ ms.reviewer: sumitp
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0094cdd12b2594cb60260d768daec8c5bed04c9c
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 3812d19122cf4dd85edf00a6fa12d9f2b89529aa
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72510247"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514596"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>Utilizar o portal de resolução de problemas para ajudar os utilizadores na sua empresa
 
@@ -47,7 +47,7 @@ Quando um utilizador contacta o suporte acerca de um problema técnico com o Int
 
 No painel Resolução de Problemas, selecione **Utilizador selecionado** para ver as informações do utilizador. As informações dos utilizadores podem ajudá-lo a compreender o estado atual dos utilizadores e dos dispositivos deles.  
 
-1. Entre no [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Inscreva-se em [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. No painel **Intune**, selecione **Resolução de problemas**.
 4. Clique em **Selecionar** para selecionar um utilizador para o qual pretende executar a resolução de problemas.
 5. Selecione um utilizador ao escrever o nome ou endereço de e-mail. Clique em **Selecionar**. As informações de resolução de problemas do utilizador são apresentadas no painel Resolução de problemas. A seguinte tabela explica as informações.
@@ -59,7 +59,7 @@ No painel Resolução de Problemas, selecione **Utilizador selecionado** para ve
 
 Pode utilizar o painel **Resolução de problemas** para analisar as informações de utilizador.
 
-![Painel de solução de problemas, com áreas numeradas descritas na tabela a seguir](./media/help-desk-operators/troubleshooting-dash.png)
+![Painel de resolução de problemas, com áreas numeradas descritas pela tabela seguinte](./media/help-desk-operators/troubleshooting-dash.png)
 
 | Área | Nome | Description |
 | ---  | ---  | ---         |
@@ -253,13 +253,13 @@ A tabela Falhas de Inscrição lista as tentativas de inscrição que falharam. 
 | Início da inscrição | A hora de início em que o utilizador começou a inscrição. |
 | SO | O sistema operativo do dispositivo. |
 | Versão do SO | A versão do sistema operativo do dispositivo. |
-| Failure | O motivo da falha. |
+| Falha | O motivo da falha. |
 
 ### <a name="failure-details"></a>Detalhes da falha
 
 Ao selecionar uma linha de falha, são fornecidos mais detalhes.
 
-| Section | Description |
+| Secção | Description |
 |-------------|----------|
 | Detalhes da falha | Uma explicação em maior detalhe sobre a falha. |
 | Potenciais remediações | Passos sugeridos para resolver o erro. Poderão não existir remediações para determinadas falhas. |
@@ -267,9 +267,9 @@ Ao selecionar uma linha de falha, são fornecidos mais detalhes.
 
 ### <a name="enrollment-errors"></a>Erros de inscrição
 
-| Error | Details |
+| Error | Detalhes |
 |-------------|----------|
-| Tempo limite ou Falha de dispositivos iOS | Exceder do tempo limite entre o dispositivo e o Intune devido ao utilizador demorar demasiado tempo a concluir a inscrição. |
+| iOS/iPadOS Timeout ou Falha | Exceder do tempo limite entre o dispositivo e o Intune devido ao utilizador demorar demasiado tempo a concluir a inscrição. |
 | Utilizador não encontrado ou licenciado | O utilizador não possui uma licença ou foi removido do serviço. |
 | O dispositivo já está inscrito | Uma pessoa tentou inscrever um dispositivo ao utilizar o Portal da Empresa num dispositivo que ainda está inscrito por outro utilizador. |
 | Não incluído no Intune | Houve uma tentativa de inscrição enquanto a autoridade de gestão de dispositivos móveis (MDM) do Intune ainda não estava configurada. |
@@ -286,14 +286,14 @@ Ao selecionar uma linha de falha, são fornecidos mais detalhes.
 | Método de inscrição do Autopilot inesperado | O dispositivo tentou inscrever-se através de um método não permitido. |
 | Dispositivo do Autopilot removido | O dispositivo que tentou inscrever-se foi removido do Autopilot para esta conta. |
 | Máximo de dispositivos atingido | A inscrição foi bloqueada devido a uma restrição de limite de dispositivos configurada pelo administrador. |
-| Inclusão da Apple | A inscrição de todos os dispositivos iOS foi bloqueada até ao momento devido a um certificado push de MDM da Apple expirado ou em falta no Intune. |
+| Inclusão da Apple | Todos os dispositivos iOS/iPadOS foram impedidos de se inscreverem neste momento devido a um certificado de push Apple MDM desaparecido ou expirado dentro de Intune. |
 | O dispositivo não foi pré-registado | O dispositivo não foi pré-registado como dispositivo empresarial e todas as inscrições pessoais foram bloqueadas por um administrador. |
 | Funcionalidade não suportada | O utilizador procedeu a uma provável tentativa de inscrição através de um método incompatível com a sua configuração do Intune. |
 
 ## <a name="collect-available-data-from-mobile-device"></a>Recolher dados disponíveis de dispositivos móveis
 
 Utilize os seguintes recursos para ajudar a recolher dados de dispositivos ao resolver problemas de dispositivos:
-- [Enviar erros de inscrição de dispositivos iOS para o seu administrador de TI](/intune-user-help/send-errors-to-your-it-admin-ios)
+- [Envie erros de inscrição iOS/iPadOS ao seu administrador de TI](/intune-user-help/send-errors-to-your-it-admin-ios)
 - [Help your company support fix device issues with verbose logging](/intune-user-help/use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android) (Ajudar o suporte da empresa a corrigir problemas de dispositivos com o registo verboso)
 - [Enviar registos Android ao suporte da empresa por cabo USB](/intune-user-help/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
 - [Enviar registos de dados de diagnóstico para o seu administrador de TI através de e-mail](/intune-user-help/send-logs-to-your-it-admin-by-email-android)

@@ -1,6 +1,6 @@
 ---
-title: Definições de conformidade de dispositivos iOS no Microsoft Intune – Azure | Microsoft Docs
-description: Veja uma lista de todas as definições que pode utilizar quando define a conformidade para os dispositivos iOS no Microsoft Intune. Exigir uma mensagem de e-mail, verificar dispositivos desbloqueados por jailbreak ou rooting, definir o sistema de operativo mínimo e máximo permitido, definir restrições de palavra-passe, incluindo inatividade do dispositivo e o comprimento da palavra-passe, restringir aplicações e muito mais.
+title: Definições de conformidade do dispositivo iOS/iPadOS no Microsoft Intune - Azure Microsoft Docs
+description: Consulte uma lista de todas as definições que pode utilizar ao definir a conformidade com os dispositivos iOS/iPadOS no Microsoft Intune. Exigir uma mensagem de e-mail, verificar dispositivos desbloqueados por jailbreak ou rooting, definir o sistema de operativo mínimo e máximo permitido, definir restrições de palavra-passe, incluindo inatividade do dispositivo e o comprimento da palavra-passe, restringir aplicações e muito mais.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e9bcfed67eda96bb4d79317bcc69d21a5f8197bc
-ms.sourcegitcommit: 2b905913840d4133a7964fe4f54a58ea6e421e12
+ms.openlocfilehash: 437673878335b04b76c53b13f18acac32213720a
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "77074636"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514035"
 ---
-# <a name="ios-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Definições do iOS para marcar dispositivos como conformes ou não conformes com o Intune
+# <a name="iosipados-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>definições iOS/iPadOS para marcar dispositivos como conformes ou não conformes usando Intune
 
-Este artigo apresenta e descreve as definições de conformidade diferentes que pode configurar em dispositivos iOS no Intune. Como parte da solução de gestão de dispositivos móveis (MDM), utilize estas definições para exigir uma mensagem de e-mail, marcar os dispositivos desbloqueados por rooting (jailbreak) como não conformes, definir um nível de ameaça permitido, definir a expiração de palavras-passe e muito mais.
+Este artigo lista e descreve as diferentes definições de conformidade que pode configurar em dispositivos iOS/iPadOS em Intune. Como parte da solução de gestão de dispositivos móveis (MDM), utilize estas definições para exigir uma mensagem de e-mail, marcar os dispositivos desbloqueados por rooting (jailbreak) como não conformes, definir um nível de ameaça permitido, definir a expiração de palavras-passe e muito mais.
 
 Esta funcionalidade aplica-se a:
 
@@ -76,21 +76,21 @@ Para obter informações sobre os perfis de e-mail, veja [configurar o acesso ao
   quando um dispositivo utiliza uma versão do SO posterior à versão na regra, o acesso aos recursos da organização é bloqueado. É pedido ao utilizador final para contactar o administrador de TI. O dispositivo não poderá aceder aos recursos da organização, enquanto a regra não for alterada para permitir a versão do SO.
 
 - **Versão mínima de construção de OS** *(iOS 8.0 e mais recente)* :  
-  quando a Apple publica atualizações de segurança, o número da compilação é normalmente atualizado, não a versão do SO. Utilize esta funcionalidade para inserir um número de compilação permitido mínimo no dispositivo.
+  quando a Apple publica atualizações de segurança, o número da compilação é normalmente atualizado, não a versão do SO. Utilize esta funcionalidade para introduzir um número mínimo de compilação permitido no dispositivo.
 
 - **Versão máxima de construção de OS** *(iOS 8.0 e mais recente)*  
-  quando a Apple publica atualizações de segurança, o número da compilação é normalmente atualizado, não a versão do SO. Utilize esta funcionalidade para inserir um número de compilação permitido máximo no dispositivo.
+  quando a Apple publica atualizações de segurança, o número da compilação é normalmente atualizado, não a versão do SO. Utilize esta funcionalidade para introduzir um número máximo de compilação permitido no dispositivo.
 
 ## <a name="system-security"></a>Segurança do sistema
 
 ### <a name="password"></a>Palavra-passe
 
 > [!NOTE]
-> Após ser aplicada uma política de conformidade ou de configuração para um dispositivo iOS, será pedido aos utilizadores que definam um código de acesso a cada 15 minutos. Os utilizadores continuam a receber o pedido até que seja definido um código de acesso. Quando uma senha é definida para o dispositivo iOS, o processo de encriptação começa automaticamente. O dispositivo permanece encriptado até que a senha seja desativada.
+> Depois de uma política de conformidade ou configuração ser aplicada a um dispositivo iOS/iPadOS, os utilizadores são solicitados a definir uma senha a cada 15 minutos. Os utilizadores continuam a receber o pedido até que seja definido um código de acesso. Quando é definida uma senha para o dispositivo iOS/iPadOS, o processo de encriptação inicia-se automaticamente. O dispositivo permanece encriptado até que a senha seja desativada.
 
 - **Exigir uma palavra-passe para desbloquear os dispositivos móveis**:  
   - **Não configurado** *(predefinido)* - Esta definição não é avaliada para conformidade ou incumprimento.  
-  - **Exigir** - Os utilizadores devem introduzir uma palavra-passe antes de poderem aceder ao seu dispositivo. Os dispositivos iOS que utilizam uma palavra-passe são encriptados.
+  - **Exigir** - Os utilizadores devem introduzir uma palavra-passe antes de poderem aceder ao seu dispositivo. Os dispositivos iOS/iPadOS que utilizam uma palavra-passe são encriptados.
 
 - **Palavras-passe simples**:  
   - **Não configurado** *(predefinido)* - Os utilizadores podem criar senhas simples como **1234** ou **1111**.
@@ -125,9 +125,9 @@ Para obter informações sobre os perfis de e-mail, veja [configurar o acesso ao
   Pode restringir aplicações ao adicionar os respetivos IDs do pacote à política. Se um dispositivo tiver a aplicação instalada, o dispositivo será marcado como não conforme.
 
   - Nome da **aplicação** - Introduza um nome fácil de usar para o ajudar a identificar o ID do pacote.
-  - **App Bundle ID** - Introduza o identificador de pacote único atribuído pelo fornecedor de aplicações. Para localizar o ID do pacote, veja [How to find the bundle ID for an iOS app](https://support.microsoft.com/help/4294074/how-to-find-the-bundle-id-for-an-ios-app) (Como localizar o ID do pacote de uma aplicação iOS) (abre outro site da Microsoft).  
+  - **App Bundle ID** - Introduza o identificador de pacote único atribuído pelo fornecedor de aplicações. Para encontrar o ID do pacote, consulte [como encontrar o ID do pacote para uma aplicação iOS/iPadOS](https://support.microsoft.com/help/4294074/how-to-find-the-bundle-id-for-an-ios-app) (abre outro web site da Microsoft).  
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Próximos passos
 
 - [Adicionar ações para dispositivos não conformes](actions-for-noncompliance.md) e [utilizar etiquetas de âmbito para filtrar políticas](../fundamentals/scope-tags.md).
 - [Monitorizar as políticas de conformidade](compliance-policy-monitor.md).

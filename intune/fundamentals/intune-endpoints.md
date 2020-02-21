@@ -1,7 +1,7 @@
 ---
-title: Pontos de extremidade de rede para Microsoft Intune
+title: Pontos finais da rede para Microsoft Intune
 titleSuffix: ''
-description: Examine os pontos de extremidade do Intune.
+description: Pontos finais de revisão para Intune.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -17,25 +17,25 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2503013e6ca0d907a05c81f895b44878784dbbd4
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 817f68d7082674145d482dc4c0bd1527fe0edb0b
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502717"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514511"
 ---
-# <a name="network-endpoints-for-microsoft-intune"></a>Pontos de extremidade de rede para Microsoft Intune  
+# <a name="network-endpoints-for-microsoft-intune"></a>Pontos finais da rede para Microsoft Intune  
 
-Esta página lista os endereços IP e as configurações de porta necessárias para as configurações de proxy em suas implantações do Intune.
+Esta página lista os endereços IP e as definições de porta necessárias para as definições de procuração nas suas implementações Intune.
 
 Como um serviço apenas na cloud, o Intune não precisa de infraestrutura no local, como servidores ou gateways.
 
-## <a name="access-for-managed-devices"></a>Acesso para dispositivos gerenciados  
+## <a name="access-for-managed-devices"></a>Acesso a dispositivos geridos  
 
 Para gerir dispositivos protegidos por firewalls e servidores proxy, tem de ativar as comunicações para o Intune.
 
-- O servidor proxy deve dar suporte a **http (80)** e **https (443)** porque os clientes do Intune usam ambos os protocolos. A proteção de informações do Windows usa a porta 444.
-- Para algumas tarefas (como baixar atualizações de software para o agente de PC clássico), o Intune requer acesso de servidor proxy não autenticado ao manage.microsoft.com
+- O servidor proxy deve suportar tanto **http (80)** como **HTTPS (443)** porque os clientes Intune usam ambos os protocolos. A Proteção de Informações do Windows utiliza a porta 444.
+- Para algumas tarefas (como descarregar atualizações de software para o agente clássico do PC), intune requer acesso não autenticado do servidor proxy ao manage.microsoft.com
 
 Pode modificar as definições do servidor proxy em computadores cliente individuais. Também pode utilizar as definições da Política de Grupo para alterar as definições para todos os computadores cliente localizados atrás de um servidor proxy especificado.
 
@@ -47,9 +47,9 @@ Os dispositivos geridos requerem configurações que permitam a **Todos os Utili
 
 As tabelas que se seguem listam as portas e os serviços a que o cliente do Intune acede:
 
-|Domains    |Endereço IP      |
+|Domínios    |Endereço IP      |
 |-----------|----------------|
-|login.microsoftonline.com <br> *. officeconfig.msocdn.com <br> config.office.com <br> graph.windows.net| Mais informações em [Intervalos de endereços IP e URLs do Office 365](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2) |
+|login.microsoftonline.com <br> *.officeconfig.msocdn.com <br> config.office.com <br> graph.windows.net| Mais informações em [Intervalos de endereços IP e URLs do Office 365](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2) |
 |portal.manage.microsoft.com<br> m.manage.microsoft.com |52.175.12.209<br>20.188.107.228<br>52.138.193.149<br>51.144.161.187<br>52.160.70.20<br>52.168.54.64 <br>13.72.226.202<br>52.189.220.232|
 | sts.manage.microsoft.com | 13.93.223.241 <br>52.170.32.182 <br>52.164.224.159 <br>52.174.178.4 <br>13.75.122.143 <br>52.163.120.84<br>13.73.112.122<br>52.237.192.112|
 |Manage.microsoft.com <br>i.manage.microsoft.com <br>r.manage.microsoft.com <br>a.manage.microsoft.com <br>p.manage.microsoft.com <br>EnterpriseEnrollment.manage.microsoft.com <br>EnterpriseEnrollment-s.manage.microsoft.com |40.83.123.72<br>13.76.177.110<br>52.169.9.87<br>52.174.26.23<br>104.40.82.191<br>13.82.96.212<br>52.147.8.239<br>40.115.69.185|
@@ -89,11 +89,11 @@ As tabelas que se seguem listam as portas e os serviços a que o cliente do Intu
 |*.manage.microsoft.com|40.82.248.224/28<br>20.189.105.0/24<br>20.37.153.0/24<br>20.37.192.128/25<br>20.38.81.0/24<br>20.41.1.0/24<br>20.42.1.0/24<br>20.42.130.0/24<br>20.42.224.128/25<br>20.43.129.0/24<br>40.119.8.128/25<br>40.74.25.0/24<br>40.82.249.128/25<br>40.80.184.128/25<br>52.150.137.0/25|
 
 
-## <a name="network-requirements-for-powershell-scripts-and-win32-apps"></a>Requisitos de rede para scripts do PowerShell e aplicativos Win32  
+## <a name="network-requirements-for-powershell-scripts-and-win32-apps"></a>Requisitos de rede para scripts PowerShell e aplicações Win32  
 
-Se você estiver usando o Intune para implantar scripts do PowerShell ou aplicativos Win32, você também precisará conceder acesso a pontos de extremidade nos quais seu locatário reside no momento.
+Se estiver a usar o Intune para implementar scripts PowerShell ou aplicações Win32, também terá de conceder acesso a pontos finais em que o seu inquilino reside atualmente.
 
-|ASU | Nome do armazenamento | CDN |
+|ASU | Nome de armazenamento | CDN |
 | --- | --- |--- |
 | AMSUA0601 | prodmsua06data | https:\//prodmsua06data.azureedge.net |
 | AMSUA0602 | prodamsua0602data | https:\//prodamsua0602data.azureedge.net |
@@ -117,36 +117,36 @@ Se você estiver usando o Intune para implantar scripts do PowerShell ou aplicat
 | AMSUC0501 | prodmsuc05data | https:\//prodmsuc05data.azureedge.net |
 | AMSUA0701 | pemsua07rcdata | https:\//pemsua07data.azureedge.net |
 
-## <a name="windows-push-notification-services-wns"></a>Windows Push Notification Services (WNS)  
+## <a name="windows-push-notification-services-wns"></a>Serviços de Notificação push do Windows (WNS)  
 
-Para dispositivos Windows gerenciados pelo Intune gerenciados usando o MDM (gerenciamento de dispositivo móvel), as ações de dispositivo e outras atividades imediatas exigem o uso do WNS (Windows Push Notification Services). Para obter mais informações, consulte [permitindo o tráfego de notificação do Windows por meio de firewalls corporativos](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config).  
+Para dispositivos Windows geridos por Intune geridos utilizando a Mobile Device Management (MDM), as ações do dispositivo e outras atividades imediatas requerem a utilização de Serviços de Notificação push do Windows (WNS). Para mais informações, consulte permitir o tráfego de Notificação do Windows através de [firewalls empresariais](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config).  
 
-## <a name="delivery-optimization-port-requirements"></a>Requisitos de porta de otimização de entrega  
+## <a name="delivery-optimization-port-requirements"></a>Requisitos da porta de otimização de entrega  
 
-### <a name="port-requirements"></a>Requisitos de porta  
+### <a name="port-requirements"></a>Requisitos portuários  
 
-Para o tráfego ponto a ponto, a otimização de entrega usa 7680 para TCP/IP ou 3544 para passagem NAT (opcionalmente, Teredo). Para comunicação de cliente-serviço, ele usa HTTP ou HTTPS pela porta 80/443.
+Para tráfego peer-to-peer, a Otimização de Entrega utiliza 7680 para TCP/IP ou 3544 para a travessia NAT (opcionalmente Teredo). Para comunicação cliente-serviço, utiliza HTTP ou HTTPS sobre a porta 80/443.
 
-### <a name="proxy-requirements"></a>Requisitos de proxy  
+### <a name="proxy-requirements"></a>Requisitos de procuração  
 
-Para usar a otimização de entrega, você deve permitir solicitações de intervalo de bytes. Para obter mais informações, consulte [requisitos de proxy para Windows Update](https://docs.microsoft.com/windows/deployment/update/windows-update-troubleshooting).
+Para utilizar a Otimização da Entrega, deve permitir pedidos byte Range. Para mais informações, consulte [os requisitos proxy para](https://docs.microsoft.com/windows/deployment/update/windows-update-troubleshooting)a Atualização do Windows .
 
 ### <a name="firewall-requirements"></a>Requisitos de firewall  
 
-Permitir os nomes de host a seguir por meio do firewall para dar suporte à otimização de entrega.
-Para a comunicação entre clientes e o serviço de nuvem de otimização de entrega:
-- \*. do.dsp.mp.microsoft.com
+Permita que os seguintes nomes de anfitriões através da sua firewall suportem a Otimização de Entrega.
+Para comunicação entre clientes e o serviço de nuvem de otimização de entrega:
+- \*.do.dsp.mp.microsoft.com
 
 Para metadados de otimização de entrega:
-- \*. dl.delivery.mp.microsoft.com
-- \*. emdl.ws.microsoft.com
+- \*.dl.delivery.mp.microsoft.com
+- \*.emdl.ws.microsoft.com
 
 ## <a name="apple-device-network-information"></a>Informações da rede de dispositivos Apple  
 
-|Utilizado para|Nome do anfitrião (endereço IP/sub-rede)|Protocolo|Porta|
+|Utilizado para|Nome do anfitrião (endereço IP/sub-rede)|Protocol|Porta|
 |-----|--------|------|-------|
 |Obter e apresentar o conteúdo de servidores da Apple|itunes.apple.com<br>\*.itunes.apple.com<br>\*.mzstatic.com<br>\*.phobos.apple.com<br> \*.phobos.itunes-apple.com.akadns.net |    HTTP    |      80      |
 |Comunicações com os servidores do APNS|#-courier.push.apple.com<br>'#' é um número aleatório de 0 a 50.|    TCP     |  5223 e 443  |
-|Várias funcionalidades, incluindo o acesso à World Wide Web, à iTunes Store, ao macOS App Store, iCloud, Messaging etc. |phobos.apple.com<br>ocsp.apple.com<br>ax.itunes.apple.com<br>ax.itunes.apple.com.edgesuite.net| HTTP/HTTPS |  80 ou 443   |
+|Várias funcionalidades, incluindo o acesso à World Wide Web, loja iTunes, loja de aplicações macOS, iCloud, mensagens, etc. |phobos.apple.com<br>ocsp.apple.com<br>ax.itunes.apple.com<br>ax.itunes.apple.com.edgesuite.net| HTTP/HTTPS |  80 ou 443   |
 
-Para obter mais informações, veja [Portas TCP e UDP utilizadas pelos produtos de software Apple](https://support.apple.com/en-us/HT202944), [Acerca das ligações aos hosts dos servidores do macOS, iOS e iTunes e dos processos em segundo plano do iTunes](https://support.apple.com/en-us/HT201999) e [Se os clientes macOS e iOS não receberem notificações por push da Apple](https://support.apple.com/en-us/HT203609).  
+Para mais informações, consulte as [portas TCP e UDP](https://support.apple.com/HT202944)da Apple utilizadas pelos produtos de software apple , [sobre macOS, iOS/iPadOS e ligações de servidores iTunes e processos](https://support.apple.com/HT201999)de fundo iTunes , e se os seus clientes [macOS e iOS/iPadOS não estão recebendo notificações push da Apple](https://support.apple.com/HT203609).  

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 867873c78b34d5573084a3a6e44d7d4d67846423
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: b593cab8a9a89f895c668b2b49583b73cbfccffa
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77413651"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515174"
 ---
 # <a name="set-rules-on-devices-to-allow-access-to-resources-in-your-organization-using-intune"></a>Definir regras em dispositivos para permitir o acesso a recursos na sua organização através do Intune
 
@@ -95,9 +95,9 @@ O Intune também inclui um conjunto de definições de políticas de conformidad
 
 
 > [!NOTE]
-> A deteção de jailbreak melhorada para dispositivos iOS foi temporariamente desativada em Intune.
+> A deteção de jailbreak melhorada para dispositivos iOS/iPadOS foi temporariamente desativada em Intune.
 
-- **Deteção melhorada da jailbreak**: Quando ativada, esta definição faz com que os dispositivos iOS entrem em insina com mais frequência. A ativação desta propriedade utiliza os serviços de localização do dispositivo e afeta a utilização da bateria. Os dados de localização do utilizador não são armazenados pelo Intune.
+- **Deteção melhorada da jailbreak**: Quando ativada, esta definição faz com que os dispositivos iOS/iPadOS entrem em insalo com mais frequência. A ativação desta propriedade utiliza os serviços de localização do dispositivo e afeta a utilização da bateria. Os dados de localização do utilizador não são armazenados pelo Intune.
 
   Ativar esta definição exige que os dispositivos:
   - Ativem os serviços de localização ao nível do SO.

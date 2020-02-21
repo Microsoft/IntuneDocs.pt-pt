@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b3affffdf69445ced667d718587303a5409423bf
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 0d9e61cbe4f6d6e07c61fe182e639e715996f9ee
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502406"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514443"
 ---
 # <a name="prevent-data-leaks-on-non-managed-devices-using-microsoft-intune"></a>Impedir fugas de dados em dispositivos não geridos com o Microsoft Intune
 
@@ -37,7 +37,7 @@ As políticas de proteção de aplicações do Intune são independentes da gest
 
 ## <a name="before-you-begin"></a>Antes de começar
 
-O plano de ação seguinte pode ser utilizado quando cumprir os seguintes requisitos:
+O seguinte plano de ação pode ser utilizado se cumprir estes requisitos:
 
 * A sua empresa está pronta para fazer a transição segura para a cloud.
 * A sua empresa utiliza o Office 365 Exchange Online, SharePoint Online, OneDrive para Empresas ou Yammer.
@@ -47,7 +47,7 @@ O plano de ação seguinte pode ser utilizado quando cumprir os seguintes requis
 
 ## <a name="action-plan"></a>Plano de ação
 
-Para dispositivos iOS e Android:
+Para dispositivos iOS/iPadOS e Android:
 
 1. Saiba como as [políticas de proteção de aplicações](../apps/app-protection-policy.md) funcionam.
 2. Saiba como [criar e implementar políticas de proteção de aplicações](../apps/app-protection-policies.md) para as aplicações do Office para dispositivos móveis.
@@ -63,7 +63,7 @@ Para dispositivos Windows 10:
 
 Consoante aplicável, partilhe as seguintes ligações para fornecer informações adicionais:
 
-* [O que esperar quando a sua aplicação iOS é gerida por políticas de proteção de aplicações](../fundamentals/end-user-mam-apps-ios.md)
+* [O que esperar quando a sua aplicação iOS/iPadOS for gerida por políticas de proteção de aplicações](../fundamentals/end-user-mam-apps-ios.md)
 * [O que esperar quando a aplicação Android é gerida por políticas de proteção de aplicações](../fundamentals/end-user-mam-apps-android.md)
 
 ## <a name="next-steps"></a>Próximos passos

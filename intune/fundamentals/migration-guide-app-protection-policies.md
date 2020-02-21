@@ -1,5 +1,5 @@
 ---
-title: Configurar políticas de proteção de aplicativo durante a migração
+title: Configure políticas de proteção de aplicações durante a migração
 titleSuffix: Microsoft Intune
 description: Este artigo fornece os passos necessários para configurar as políticas de proteção de aplicações durante uma migração do Microsoft Intune.
 keywords: ''
@@ -17,12 +17,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8c0571eb2a369e440b3c7732b6d55ba05ace2c34
-ms.sourcegitcommit: 637375a390b6e34f9c4415c77b99fe2980bbf554
+ms.openlocfilehash: 183a1dc7083aa9b427df225297fb7c393939220f
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75839362"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515055"
 ---
 # <a name="configure-app-protection-policies-optional"></a>Configurar políticas de proteção de aplicações (opcional)
 
@@ -38,7 +38,7 @@ As políticas de proteção de aplicações aplicam a segurança ao nível da ap
 
 ## <a name="app-protection-policies-with-lob-apps"></a>Políticas de proteção de aplicações com aplicações LOB
 
-Também pode expandir as políticas de proteção de aplicações móveis para as suas aplicações de linha de negócio (LOB) ao utilizar o [SDK da Aplicação Microsoft Intune](../developer/app-sdk-get-started.md) ou a Ferramenta de Encapsulamento de Aplicações do Microsoft Intune para as plataformas iOS e Android. Para obter mais informações, veja [Ferramenta de Encapsulamento de Aplicações para iOS](../developer/app-wrapper-prepare-ios.md) e [Ferramenta de Encapsulamento de Aplicações para Android](./../developer/app-wrapper-prepare-android.md). Além disso, veja [Preparar aplicações LOB para a proteção de aplicações](../developer/apps-prepare-mobile-application-management.md).
+Também pode alargar as políticas de proteção de aplicações móveis às suas aplicações de linha de negócio (LOB), utilizando o [Microsoft Intune App SDK](../developer/app-sdk-get-started.md) ou a Ferramenta de Embrulho de Aplicações Intune microsoft para as plataformas iOS/iPadOS e Android. Para obter mais informações, veja [Ferramenta de Encapsulamento de Aplicações para iOS](../developer/app-wrapper-prepare-ios.md) e [Ferramenta de Encapsulamento de Aplicações para Android](./../developer/app-wrapper-prepare-android.md). Além disso, veja [Preparar aplicações LOB para a proteção de aplicações](../developer/apps-prepare-mobile-application-management.md).
 
 ## <a name="how-do-app-protection-policies-help-during-migration"></a>Como é que as políticas de proteção de aplicações ajudam durante a migração?
 
@@ -48,7 +48,7 @@ Este período pode deixar a sua organização mais vulnerável a roubos de dispo
 
 O Intune pode oferecer proteções de dados empresariais durante a migração para que continue a ter cobertura de segurança para os seus dados empresariais quando não existir qualquer gestão ao nível do dispositivo.
 
-À medida que você desabilita o acesso condicional no antigo provedor de MDM, os usuários ainda podem ser produtivos enquanto você os integra ao Intune.
+Uma vez que desativa o Acesso Condicional no antigo fornecedor de MDM, os utilizadores ainda podem ser produtivos enquanto você a bordo para Intune.
 
 ## <a name="task-list-for-app-protection-policies"></a>Lista de tarefas das políticas de proteção de aplicações
 

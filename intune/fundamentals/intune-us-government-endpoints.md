@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dfa93bb758447c872d172ded7706fd7507a42f11
-ms.sourcegitcommit: c7c6be3833d9a63d43f31d598b555b49b33cf5cb
+ms.openlocfilehash: d7edf84ada3c84b7ad31748909ef81a877237fd5
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "76966288"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514477"
 ---
 # <a name="us-government-endpoints-for-microsoft-intune"></a>Pontos finais do governo dos EUA para a Microsoft Intune
 
@@ -42,7 +42,7 @@ Para obter mais informações sobre a inscrição automática do Windows 10 e o 
 
 As tabelas que se seguem listam as portas e os serviços a que o cliente do Intune acede:
 
-|**Endpoint**|**Endereço IP**|
+|**Ponto final**|**Endereço IP**|
 |---------------------|-----------|
 |*.manage.microsoft.us | 52.243.26.209 <br> 52.247.173.11 <br> 52.227.183.12 <br>52.227.180.205 <br> 52.227.178.107 <br> 13.72.185.168 <br> 52.227.173.179 <br> 52.227.175.242 <br> 13.72.39.209 <br> 52.243.26.209 <br> 52.247.173.11 |
 | enterpriseregistration.microsoftonline.us | 13.72.188.239 <br> 13.72.55.179 |
@@ -65,7 +65,7 @@ Em dispositivos geridos pela Intune geridos através da utilização de Mobile D
 
 ## <a name="apple-device-network-information"></a>Informações da rede de dispositivos Apple
 
-|**Utilizado para**|**Nome de anfitrião (endereço IP/sub-rede)**|**Protocolo**|**Porto**|
+|**Usado para**|**Nome de anfitrião (endereço IP/sub-rede)**|**Protocolo**|**Porto**|
 |------------|-----------|------------|-----------|
 |Obter e apresentar o conteúdo de servidores da Apple|itunes.apple.com<br>\*.itunes.apple.com<br>\*.mzstatic.com<br>\*.phobos.apple.com<br>\*.phobos.itunes-apple.com.akadns.net|HTTP|80|
 |Comunicação com servidores APNS|#-courier.push.apple.com<br>'#' é um número aleatório de 0 a 50.|TCP|5223 e 443|
@@ -74,8 +74,8 @@ Em dispositivos geridos pela Intune geridos através da utilização de Mobile D
 Para obter mais informações, consulte:
 
 - [Portas TCP e UDP utilizadas por produtos de software apple](https://support.apple.com/HT202944)
-- [Sobre macOS, iOS e iTunes servidor hostconexes e processos de fundo iTunes](https://support.apple.com/HT201999)
-- [Se os seus clientes macOS e iOS não estão a receber notificações push da Apple](https://support.apple.com/HT203609)
+- [Sobre macOS, iOS/iPadOS e ligações de servidoriTunes e processos de fundo do iTunes](https://support.apple.com/HT201999)
+- [Se os seus clientes macOS e iOS/iPadOS não estiverem a receber notificações push da Apple](https://support.apple.com/HT203609)
 
 ## <a name="next-steps"></a>Próximos passos
 [Pontos finais da rede para Microsoft Intune](intune-endpoints.md)

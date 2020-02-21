@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fdc704d1971dfcc46ee2c3f5550e201d7a8e89fb
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 1cdfc7d42d3bffe1abe21deddfe146af953b150a
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505195"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514953"
 ---
 # <a name="implement-your-microsoft-intune-plan"></a>Implementar o plano do Microsoft Intune
 
@@ -39,11 +39,11 @@ Os principais requisitos do Intune autónomo são:
 
 - Subscrição do Office 365 (para aplicações do Office e aplicações geridas por políticas de proteção de aplicações)
 
-- Certificado do Apple APNs (para ativar a gestão da plataforma de dispositivos iOS)
+- Apple APNs Certificate (para permitir a gestão da plataforma do dispositivo iOS/iPadOS)
 
 - Azure AD Connect (para a sincronização de diretórios)
 
-- Conector local do Intune para o Exchange (para acesso condicional para o Exchange local, se necessário)
+- Conector intune on-premises para troca (para acesso condicional para troca no local, se necessário)
 
 - Intune Certificate Connector (para a implementação do certificado de SCEP, caso seja necessário)
 
@@ -76,7 +76,7 @@ Poderá ser necessário adicionar utilizadores ou grupos de segurança no Active
 
 ### <a name="task-4-assign-intune-and-office-365-user-licenses"></a>Tarefa 4: atribuir licenças de utilizador do Intune e do Office 365
 
-Todos os utilizadores que visar para a implementação do Office 365 e do EMS/Intune têm de ter uma licença atribuída. Você pode atribuir licenças do EMS/Intune e Office 365 no centro de administração do Microsoft 365.
+Todos os utilizadores que visar para a implementação do Office 365 e do EMS/Intune têm de ter uma licença atribuída. Pode atribuir licenças EMS/Intune e Office 365 no centro de administração da Microsoft 365.
 
 - Saiba mais sobre [como atribuir licenças do Intune](licenses-assign.md).
 
@@ -88,7 +88,7 @@ Para poder configurar, gerir e inscrever dispositivos através do Intune, tem de
 
 ### <a name="task-6-enable-device-platforms"></a>Tarefa 6: ativar as plataformas de dispositivos
 
-Por predefinição, a maioria das plataformas de dispositivos está ativada, à exceção dos dispositivos Apple (iOS e Mac). Antes de os dispositivos iOS poderem ser inscritos e geridos no Intune, a plataforma do dispositivo tem de ser ativada. Para tal, tem de criar um certificado Push de MDM e de o adicionar ao Intune.
+Por padrão, a maioria das plataformas de dispositivos estão ativadas, exceto para dispositivos Apple (iOS/iPadOS e Mac). Antes de os dispositivos iOS/iPadOS poderem ser matriculados e geridos em Intune, a plataforma do dispositivo deve ser ativada. Para tal, tem de criar um certificado Push de MDM e de o adicionar ao Intune.
 
 - Saiba mais sobre [como ativar dispositivos Apple para inscrição](../enrollment/apple-mdm-push-certificate-get.md).
 
@@ -122,15 +122,15 @@ O Intune suporta políticas de conformidade. Adicione políticas de conformidade
 
 - Saiba mais sobre [políticas de conformidade](../protect/device-compliance-get-started.md).
 
-### <a name="task-12-enable-conditional-access-policies"></a>Tarefa 12: habilitar políticas de acesso condicional
+### <a name="task-12-enable-conditional-access-policies"></a>Tarefa 12: Ativar políticas de acesso condicional
 
-O Intune dá suporte ao acesso condicional para o Exchange Online, o Exchange local, o SharePoint Online, o Skype for Business Online e o Dynamics CRM Online. Habilite e configure o acesso condicional conforme apropriado com base em seus requisitos e casos de uso de implantação do Intune.
+Intune suporta acesso condicional para troca online, troca no local, SharePoint Online, Skype para Negócios Online e Dynamics CRM Online. Ative e configure o Acesso Condicional conforme apropriado com base nos casos e requisitos de utilização da sua intune.
 
 - Saiba mais sobre o [Acesso Condicional](../protect/conditional-access.md).
 
 ### <a name="task-13-enroll-devices"></a>Tarefa 13: inscrever dispositivos
 
-O Intune suporta plataformas de dispositivos iOS, Mac OS, Android, Ambiente de Trabalho do Windows e Windows Mobile. Inscreva plataformas de dispositivos móveis conforme adequado com base nos seus requisitos e casos de utilização de implementação do Intune.
+O Intune suporta as plataformas de dispositivos móveis iOS/iPadOS, Mac OS, Android, Windows e Windows. Inscreva plataformas de dispositivos móveis conforme adequado com base nos seus requisitos e casos de utilização de implementação do Intune.
 
 - Saiba mais sobre [como inscrever dispositivos](../enrollment/device-enrollment.md).
 

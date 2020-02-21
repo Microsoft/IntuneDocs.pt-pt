@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ea4f4cd53af06bf6ec47ed14976526116d963690
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 7520e5883a89d6cd040be670aedc8436cc40fadb
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502377"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515191"
 ---
 # <a name="prevent-unauthorized-access-to-company-data-using-microsoft-intune"></a>Impedir o acesso não autorizado a dados da empresa com o Microsoft Intune
 
@@ -31,7 +31,7 @@ Pode classificar, identificar e proteger os documentos e e-mails do Office 365 p
 
 ## <a name="before-you-begin"></a>Antes de começar
 
-O plano de ação seguinte pode ser utilizado quando cumprir os seguintes requisitos:
+O seguinte plano de ação pode ser utilizado se cumprir estes requisitos:
 * A sua empresa está pronta para fazer a transição segura para a cloud.
 * A sua empresa utiliza o Office 365 Exchange Online, SharePoint Online, OneDrive para Empresas ou Yammer.
 * A sua empresa tem licenças do Microsoft 365, Enterprise Mobility + Security (EMS) ou Azure Information Protection.
@@ -50,5 +50,5 @@ Pode partilhar detalhes [sobre como e quando proteger documentos e e-mails que c
 
 Como parte dos passos seguintes, pode saber mais sobre outras formas de aumentar a proteção dos dados da sua empresa, incluindo: 
 
-* Saiba como usar a [proteção de informações do Azure em dispositivos IOS e Android](https://docs.microsoft.com/information-protection/rms-client/mobile-app-faq).
+* Saiba como utilizar a [Proteção de Informação Azure em dispositivos iOS/iPadOS e Android.](https://docs.microsoft.com/information-protection/rms-client/mobile-app-faq)
 * Para Windows Phone e computadores Mac, saiba mais sobre a [Aplicação de Partilha Microsoft Rights Management](https://technet.microsoft.com/dn451248).

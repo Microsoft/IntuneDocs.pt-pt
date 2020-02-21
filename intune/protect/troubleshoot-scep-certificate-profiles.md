@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 38bc86b1b9ba85eb7885a0e00673e551821063c1
-ms.sourcegitcommit: 459b0ee01eb6e69cc0ce66d4c4b81d73f510f96d
+ms.openlocfilehash: 4496a5bbc6d5ee5134dc4e6a795494710ea6865d
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "77034248"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515225"
 ---
 # <a name="overview-for-troubleshooting-scep-certificate-profiles-with-microsoft-intune"></a>Visão geral para resolução de perfis de certificadoS SCEP com microsoft Intune
 
@@ -123,9 +123,9 @@ Também pode enviar e enviar registos de [e-mail](/intune-user-help/send-logs-to
 
 ### <a name="logs-for-ios-and-ipados-devices"></a>Registos para dispositivos iOS e iPadOS
 
-Para dispositivos que executam iOS ou iPadOS, utilize registos de depuração e **Xcode** que funcionam num computador Mac:
+Para dispositivos que executam iOS/iPadOS, utilize registos de depuração e **Xcode** que são executados num computador Mac:
 
-1. Ligue o dispositivo iOS ao Mac e, em seguida, vá às **Aplicações** > **Utilities** para abrir a aplicação Consola. 
+1. Ligue o dispositivo iOS/iPadOS ao Mac e, em seguida, vá às **Aplicações** > **Utilities** para abrir a aplicação Consola. 
 
 2. Em **ação,** **selecione Incluir Mensagens de Informação** e incluir **Mensagens de Depuração**.
 

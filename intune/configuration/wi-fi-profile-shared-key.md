@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/28/2020
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c9b56ba1515608afb6c2a0d151f5412711d49e57
-ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
+ms.openlocfilehash: b83367bb2f1d3622a1fc4e11eedd88f3f26ee8dd
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76886716"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510610"
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key-in-intune"></a>Utilize um perfil de dispositivo personalizado para criar um perfil Wi-Fi com uma chave pré-partilhada no Intune
 
@@ -32,7 +32,7 @@ As teclas pré-partilhadas (PSK) são normalmente usadas para autenticar utiliza
 
 Esta funcionalidade suporta:
 
-- Administrador do dispositivo Android
+- Administrador de dispositivos Android
 - Windows
 - Wi-Fi baseado em EAP
 
@@ -44,13 +44,13 @@ Esta funcionalidade suporta:
 
 - Poderá ser mais fácil copiar o código de um computador com ligação a essa rede, conforme descrito mais à frente neste artigo.
 - Pode adicionar várias redes e chaves, adicionando mais definições de OMA-URI.
-- Para iOS, utilize o Apple Configurator numa estação Mac para configurar o perfil.
+- Para iOS/iPadOS, utilize o Configurador Apple numa estação Mac para configurar o perfil.
 - O PSK necessita de uma cadeia de 64 dígitos hexadecimais ou uma frase de acesso de 8 a 63 carateres ASCII imprimíveis. Alguns personagens, como o asterisco, não são suportados.
 
 ## <a name="create-a-custom-profile"></a>Criar um perfil personalizado
 
 1. Inscreva-se no centro de administração do [Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
-2. Selecione **dispositivos** > **perfis de configuração** > **Criar perfil**.
+2. Selecione **Dispositivos** > Perfis de **Configuração** > **Criar perfil**.
 3. Introduza as seguintes propriedades:
 
     - **Nome**: Introduza um nome descritivo para a apólice. Atribua nomes às políticas de forma que possa identificá-las facilmente mais tarde. Por exemplo, um bom nome de política é definições de **perfil Wi-Fi Personalizado oMA-URI para dispositivos Android**.
@@ -229,8 +229,8 @@ Também pode criar um ficheiro XML a partir de uma ligação Wi-Fi existente. Nu
 
 1. Crie uma pasta local para os perfis W-Fi exportados, como c:\WiFi.
 2. Abra um pedido de comando como administrador (clique à direita `cmd` > **Executar como administrador).**
-3. Execute `netsh wlan show profiles`. Os nomes de todos os perfis estão listados.
-4. Execute `netsh wlan export profile name="YourProfileName" folder=c:\Wifi`. Este comando cria um ficheiro chamado `Wi-Fi-YourProfileName.xml` em c:\Wifi.
+3. Corra `netsh wlan show profiles`. Os nomes de todos os perfis estão listados.
+4. Corra `netsh wlan export profile name="YourProfileName" folder=c:\Wifi`. Este comando cria um ficheiro chamado `Wi-Fi-YourProfileName.xml` em c:\Wifi.
 
     - Se estiver a exportar um perfil Wi-Fi que inclua uma chave pré-partilhada, adicione `key=clear` ao comando:
   

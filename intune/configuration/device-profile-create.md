@@ -1,11 +1,11 @@
 ---
 title: Criar perfis de dispositivo no Microsoft Intune – Azure | Microsoft Docs
-description: Adicione ou configure um perfil de configuração de dispositivos no Microsoft Intune. Selecione o tipo de plataforma, defina as configurações, adicione uma marca de escopo.
+description: Adicione ou configure um perfil de configuração de dispositivos no Microsoft Intune. Selecione o tipo de plataforma, configure as definições, adicione uma etiqueta de âmbito.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/05/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c8748639f0407de7b1bb83f646b7decf8c838766
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 6dff94a9bfeb21f09b8a8c629e10ba562d7e642b
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206674"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511434"
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>Criar um perfil de dispositivo no Microsoft Intune
 
@@ -32,25 +32,25 @@ Este artigo:
 
 - Apresenta os passos para criar um perfil.
 - Mostra-lhe como adicionar uma etiqueta de âmbito para “filtrar” o perfil.
-- Descreve as regras de aplicabilidade em dispositivos Windows 10 e mostra como criar uma regra.
+- Descreve regras de aplicabilidade em dispositivos Windows 10 e mostra-lhe como criar uma regra.
 - Apresenta os tempos de ciclos de atualização de entrada quando os dispositivos recebem perfis e atualizações de perfis.
 
 ## <a name="create-the-profile"></a>Criar o perfil
 
-1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Inscreva-se no centro de administração do [Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-2. Selecione **dispositivos** > **perfis de configuração**. Você tem as seguintes opções:
+2. Selecione **Dispositivos** > perfis de **configuração**. Tem as seguintes opções:
 
-    - **Visão geral**: lista o status de seus perfis e fornece detalhes adicionais sobre os perfis atribuídos a usuários e dispositivos.
-    - **Gerenciar**: criar perfis de dispositivo, carregar [scripts](../apps/intune-management-extension.md) personalizados do PowerShell para execução dentro do perfil e adicionar planos de dados a dispositivos usando o [Esim](esim-device-configuration.md).
-    - **Monitor**: Verifique o status de um perfil de êxito ou falha e também exiba os logs em seus perfis.
-    - **Configuração**: Adicione uma autoridade de certificação SCEP ou pfx ou habilite o [Gerenciamento de despesas de telecomunicações](telecom-expenses-monitor.md) no perfil.
+    - **Visão geral**: Lista o estado dos seus perfis e fornece detalhes adicionais sobre os perfis que atribuiu aos utilizadores e dispositivos.
+    - **Gerir**: Criar perfis de dispositivos, carregar [scripts PowerShell personalizados](../apps/intune-management-extension.md) para executar dentro do perfil e adicionar planos de dados aos dispositivos que utilizem [eSIM](esim-device-configuration.md).
+    - **Monitor**: Verifique o estado de um perfil para obter sucesso ou falha e consulte também os registos nos seus perfis.
+    - **Configuração**: Adicione uma autoridade de certificadoS SCEP ou PFX ou ative a Gestão de [Despesas](telecom-expenses-monitor.md) da Telecom no perfil.
 
 3. Selecione **Criar perfil**. Introduza as seguintes propriedades:
 
-   - **Nome**: Insira um nome descritivo para o perfil. Atribua nomes aos perfis de forma que possa identificá-los facilmente mais tarde. Por exemplo, um bom nome de perfil é **Perfil de e-mail WP para toda a empresa**.
+   - **Nome**: Introduza um nome descritivo para o perfil. Atribua nomes aos perfis de forma que possa identificá-los facilmente mais tarde. Por exemplo, um bom nome de perfil é **Perfil de e-mail WP para toda a empresa**.
    - **Descrição:** introduza uma descrição para o perfil. Esta definição é opcional, mas recomendada.
-   - **Plataforma**: escolha a plataforma dos seus dispositivos. As opções são:  
+   - **Plataforma**: Escolha a plataforma dos seus dispositivos. As opções são:  
 
        - **Android**
        - **Android Enterprise**
@@ -60,8 +60,8 @@ Este artigo:
        - **Windows 8.1 e posterior**
        - **Windows 10 e posterior**
 
-   - **Tipo de perfil**: selecione o tipo de configurações que você deseja criar. A lista apresentada depende da **plataforma** que escolher.
-   - **Configurações**: os seguintes artigos descrevem as configurações para cada tipo de perfil:
+   - Tipo de **perfil:** Selecione o tipo de definições que pretende criar. A lista apresentada depende da **plataforma** que escolher.
+   - **Definições**: Os seguintes artigos descrevem as definições para cada tipo de perfil:
 
        - [Modelos administrativos](administrative-templates-windows.md)
        - [Personalizar](../custom-settings-configure.md)
@@ -82,24 +82,24 @@ Este artigo:
        - [Políticas de atualização](../software-updates-ios.md)
        - [VPN](vpn-settings-configure.md)
        - [Wi-Fi](wi-fi-settings-configure.md)
-       - [Microsoft defender ATP](../protect/advanced-threat-protection.md)
+       - [Microsoft Defender ATP](../protect/advanced-threat-protection.md)
        - [Windows Information Protection](../protect/windows-information-protection-configure.md)
 
-     Por exemplo, se você selecionar **Ios/iPadOS** para a plataforma, suas opções de tipo de perfil são semelhantes ao seguinte perfil:
+     Por exemplo, se selecionar **iOS/iPadOS** para a plataforma, as opções do tipo de perfil são semelhantes ao seguinte perfil:
 
-     ![Criar um perfil iOS no Intune](./media/device-profile-create/create-device-profile.png)
+     ![Criar perfil iOS/iPadOS em Intune](./media/device-profile-create/create-device-profile.png)
 
 4. Quando terminar, selecione **OK** > **Criar** para guardar as alterações. O perfil é criado e apresentado na lista.
 
 ## <a name="scope-tags"></a>Scope tags (Etiquetas de âmbito)
 
-Depois de adicionar as definições, também pode adicionar uma etiqueta de âmbito ao perfil. As marcas de escopo filtram perfis para grupos de ti específicos, como `US-NC IT Team` ou `JohnGlenn_ITDepartment`.
+Depois de adicionar as definições, também pode adicionar uma etiqueta de âmbito ao perfil. As etiquetas de âmbito filtram perfis para grupos de TI específicos, tais como `US-NC IT Team` ou `JohnGlenn_ITDepartment`.
 
 Para obter mais informações sobre etiquetas de âmbito e o que pode fazer, veja [Utilizar RBAC e etiquetas de âmbito para TI distribuídas](../fundamentals/scope-tags.md).
 
 ### <a name="add-a-scope-tag"></a>Adicionar etiqueta de âmbito
 
-1. Selecionar **Âmbito (Etiquetas)**.
+1. Selecionar **Âmbito (Etiquetas)** .
 2. Selecione **Adicionar** para criar uma nova etiqueta de âmbito. Em alternativa, selecione uma etiqueta de âmbito existente na lista.
 3. Selecione **OK** para guardar as alterações.
 
@@ -109,54 +109,54 @@ Aplica-se a:
 
 - Windows 10 e posterior
 
-As regras de aplicabilidade permitem que os administradores direcionem dispositivos em um grupo que atenda a critérios específicos. Por exemplo, você cria um perfil de restrições de dispositivo que se aplica ao grupo **todos os dispositivos Windows 10** . E, você só quer o perfil atribuído a dispositivos que executam o Windows 10 Enterprise.
+As regras de aplicabilidade permitem que os administradores direcionem dispositivos num grupo que satisfaça critérios específicos. Por exemplo, cria um perfil de restrições de dispositivos que se aplica ao grupo de **dispositivos All Windows 10.** E, só quer o perfil atribuído aos dispositivos que executam o Windows 10 Enterprise.
 
-Para executar essa tarefa, crie uma **regra de aplicabilidade**. Essas regras são ótimas para os seguintes cenários:
+Para fazer esta tarefa, crie uma regra de **aplicabilidade.** Estas regras são ótimas para os seguintes cenários:
 
-- Você usa o Windows 10 Education (EDU). Na faculdade Bellows, você deseja direcionar todos os dispositivos EDU do Windows 10 entre RS3 e RS4.
-- Você deseja ter como alvo todos os usuários em recursos humanos na contoso, mas quer apenas dispositivos Windows 10 Professional ou Enterprise.
+- Utiliza o Windows 10 Education (EDU). No Bellows College, você quer direcionar todos os dispositivos EDU do Windows 10 entre RS3 e RS4.
+- Você quer direcionar todos os utilizadores em Recursos Humanos em Contoso, mas apenas quer dispositivos Profissionais ou Empresariais do Windows 10.
 
-Para abordar esses cenários, você:
+Para abordar estes cenários, você:
 
-- Crie um grupo de dispositivos que inclua todos os dispositivos na faculdade Bellows. No perfil, adicione uma regra de aplicabilidade para que ela se aplique se a versão mínima do so for `16299` e a versão máxima for `17134`. Atribua esse perfil ao grupo de dispositivos do Bellows College.
+- Crie um grupo de dispositivos que inclua todos os dispositivos no Bellows College. No perfil, adicione uma regra de aplicabilidade para que se aplique se a versão mínima do SO for `16299` e a versão máxima for `17134`. Atribuir este perfil ao grupo de dispositivos da Escola Bellows.
 
-  Quando atribuído, o perfil se aplica a dispositivos entre as versões mínima e máxima inseridas. Para dispositivos que não estão entre as versões mínima e máxima inseridas, seu status aparece como **não aplicável**.
+  Quando é atribuído, o perfil aplica-se a dispositivos entre as versões mínima seleções mínimas e máximas que introduz. Para dispositivos que não estejam entre as versões mínima seleção e o máximo que introduz, o seu estado mostra **que não**é aplicável .
 
-- Crie um grupo de usuários que inclua todos os usuários em recursos humanos (RH) na contoso. No perfil, adicione uma regra de aplicabilidade para que ela se aplique a dispositivos que executam o Windows 10 Professional ou Enterprise. Atribua esse perfil ao grupo de usuários de RH.
+- Crie um grupo de utilizadores que inclua todos os utilizadores em Recursos Humanos (RH) na Contoso. No perfil, adicione uma regra de aplicabilidade para que se aplique a dispositivos que executem o Windows 10 Professional ou Enterprise. Atribuir este perfil ao grupo de utilizadores de RH.
 
-  Quando atribuído, o perfil se aplica a dispositivos que executam o Windows 10 Professional ou Enterprise. Para dispositivos que não estão executando essas edições, seu status aparece como **não aplicável**.
+  Quando é atribuído, o perfil aplica-se a dispositivos que executam o Windows 10 Professional ou Enterprise. Para dispositivos que não estejam a executar estas edições, o seu estado mostra **como Não aplicável**.
 
-- Se houver dois perfis com as mesmas configurações exatas, o perfil sem uma regra de aplicabilidade será aplicado. 
+- Se houver dois perfis com as mesmas definições, então o perfil sem uma regra de aplicabilidade é aplicado. 
 
-  Por exemplo, o outfilea tem como destino o grupo de dispositivos Windows 10, habilita o BitLocker e não tem uma regra de aplicabilidade. ProfileB tem como alvo o mesmo grupo de dispositivos Windows 10, habilita o BitLocker e tem uma regra de aplicabilidade para aplicar apenas o perfil ao Windows 10 Enterprise.
+  Por exemplo, o ProfileA tem como alvo o grupo de dispositivos Windows 10, permite o BitLocker e não tem uma regra de aplicabilidade. O ProfileB tem como alvo o mesmo grupo de dispositivos Windows 10, permite o BitLocker, e tem uma regra de aplicabilidade para aplicar apenas o perfil ao Windows 10 Enterprise.
 
-  Quando ambos os perfis são atribuídos, o perfila é aplicado porque ele não tem uma regra de aplicabilidade. 
+  Quando ambos os perfis são atribuídos, o ProfileA é aplicado porque não tem uma regra de aplicabilidade. 
 
-Quando você atribui o perfil aos grupos, as regras de aplicabilidade agem como um filtro e apenas direcionam os dispositivos que atendem aos seus critérios.
+Ao atribuir o perfil aos grupos, as regras de aplicabilidade funcionam como um filtro e apenas visam os dispositivos que cumprem os seus critérios.
 
-### <a name="add-a-rule"></a>Adicionar uma regra
+### <a name="add-a-rule"></a>Adicione uma regra
 
-1. Selecione **regras de aplicabilidade**. Você pode escolher a **regra**, a **Propriedade**e a **edição do sistema operacional**:
+1. Selecione Regras de **Aplicabilidade**. Pode escolher a **regra,** **propriedade**e **edição osso:**
 
-    ![Adicionar uma regra de aplicabilidade a um perfil de configuração de dispositivo no Microsoft Intune](./media/device-profile-create/applicability-rules.png)
+    ![Adicione uma regra de aplicabilidade a um perfil de configuração do dispositivo no Microsoft Intune](./media/device-profile-create/applicability-rules.png)
 
-2. Em **regra**, escolha se deseja incluir ou excluir usuários ou grupos. As opções são:
+2. Regra, escolha se pretende incluir ou excluir utilizadores ou grupos. As opções são:
 
-    - **Atribuir perfil se**: inclui usuários ou grupos que atendem aos critérios inseridos.
-    - **Não atribuir perfil se**: excluir usuários ou grupos que atendam aos critérios inseridos.
+    - **Atribuir perfil se**: Inclui utilizadores ou grupos que satisfaçam os critérios em que entra.
+    - **Não designe o perfil se**: Excluir utilizadores ou grupos que satisfaçam os critérios em que insere.
 
-3. Em **Propriedade**, escolha seu filtro. As opções são: 
+3. Em **Propriedade,** escolha o seu filtro. As opções são: 
 
-    - **Edição do sistema operacional**: na lista, verifique as edições do Windows 10 que você deseja incluir (ou excluir) em sua regra.
-    - **Versão do so**: Insira os números de versão **mín** e **máx** do Windows 10 que você deseja incluir (ou excluir) em sua regra. Ambos os valores são obrigatórios.
+    - **Edição OS**: Na lista, consulte as edições do Windows 10 que pretende incluir (ou excluir) na sua regra.
+    - **Versão OS**: Introduza os números da versão **min** e **max** Windows 10 que pretende incluir (ou excluir) na sua regra. Ambos os valores são necessários.
 
-      Por exemplo, você pode inserir `10.0.16299.0` (RS3 ou 1709) para a versão mínima e `10.0.17134.0` (RS4 ou 1803) para a versão máxima. Ou, você pode ser mais granular e inserir `10.0.16299.001` para a versão mínima e `10.0.17134.319` para a versão máxima.
+      Por exemplo, pode introduzir `10.0.16299.0` (RS3 ou 1709) para versão mínima e `10.0.17134.0` (RS4 ou 1803) para versão máxima. Ou, pode ser mais granular e introduzir `10.0.16299.001` para versão mínima e `10.0.17134.319` para versão máxima.
 
-4. Selecione **Adicionar** para salvar as alterações.
+4. Selecione **Adicionar** para guardar as suas alterações.
 
 ## <a name="refresh-cycle-times"></a>Tempos de ciclos de atualização
 
-O Intune usa ciclos de atualização diferentes para verificar se há atualizações de perfis de configuração. Se o dispositivo tiver sido registrado recentemente, o check-in será executado com mais frequência. [Ciclos de atualização de política e perfil](device-profile-troubleshoot.md#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned) lista os tempos de atualização estimados.
+Intune usa diferentes ciclos de atualização para verificar se há atualizações nos perfis de configuração. Se o dispositivo se matriculou recentemente, o check-in funciona com mais frequência. Os ciclos de atualização de políticas e perfis listam os [tempos estimados](device-profile-troubleshoot.md#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned) de atualização.
 
 Em qualquer altura, os utilizadores podem abrir a aplicação do Portal da Empresa e sincronizar o dispositivo para verificarem imediatamente se existem as atualizações de perfis.
 
@@ -164,29 +164,29 @@ Em qualquer altura, os utilizadores podem abrir a aplicação do Portal da Empre
 
 Ao criar perfis, considere as seguintes recomendações:
 
-- Nomeie suas políticas para que você saiba o que elas são e o que elas fazem. Todas as [políticas de conformidade](../protect/create-compliance-policy.md) e perfis de [configuração](../configuration/device-profile-create.md) têm uma propriedade de **Descrição** opcional. Em **Descrição**, seja específico e inclua informações para que outras pessoas saibam o que a política faz.
+- Diga o nome das suas políticas para saber o que são e o que fazem. Todas as políticas de [conformidade](../protect/create-compliance-policy.md) e perfis de [configuração](../configuration/device-profile-create.md) têm uma propriedade de **Descrição** opcional. Em **Descrição,** seja específico e inclua informações para que outros saibam o que a política faz.
 
   Alguns exemplos de perfil de configuração incluem:
 
-  **Nome do perfil**: modelo de administrador – perfil de configuração do onedrive para todos os usuários do Windows 10  
-  **Descrição do perfil**: perfil de modelo de administrador do onedrive que inclui as configurações básicas e mínimas para todos os usuários do Windows 10. Criado por user@contoso.com para impedir que os usuários compartilhem dados organizacionais para contas pessoais do OneDrive.
+  **Nome do perfil**: Modelo de administrador - perfil de configuração OneDrive para todos os utilizadores do Windows 10  
+  **Descrição do perfil**: Perfil de modelo de administrador OneDrive que inclui as definições mínimas e base para todos os utilizadores do Windows 10. Criado por user@contoso.com para impedir que os utilizadores partilhem dados organizacionais para contas pessoais do OneDrive.
 
-  **Nome do perfil**: perfil de VPN para todos os usuários do IOS  
-  **Descrição do perfil**: perfil VPN que inclui as configurações básicas e mínimas para todos os usuários do Ios se conectarem à VPN contoso. Criado por user@contoso.com para que os usuários se autentiquem automaticamente na VPN, em vez de solicitar aos usuários seu nome de usuário e senha.
+  **Nome do perfil**: Perfil VPN para todos os utilizadores iOS/iPadOS  
+  **Descrição do perfil**: Perfil VPN que inclui as definições mínimas e base para todos os utilizadores iOS/iPadOS para ligar à VPN Contoso. Criado souser@contoso.com para que os utilizadores autentiquem automaticamente à VPN, em vez de pedirem aos utilizadores o seu nome de utilizador e palavra-passe.
 
-- Crie seu perfil por sua tarefa, como definir configurações do Microsoft Edge, Habilitar configurações de antivírus do Microsoft defender, bloquear dispositivos com jailbreak do iOS e assim por diante.
+- Crie o seu perfil através da sua tarefa, como configurar as definições do Microsoft Edge, ativar as definições antivírus do Microsoft Defender, bloquear dispositivos de jailbroken iOS/iPadOS, e assim por diante.
 
-- Crie perfis que se aplicam a grupos específicos, como marketing, vendas, administradores de ti ou por local ou sistema escolar.
+- Crie perfis que se apliquem a grupos específicos, tais como Marketing, Vendas, Administradores de TI ou por localização ou sistema escolar.
 
-- Separe as políticas de usuário das políticas de dispositivo.
+- Separe as políticas de utilizador das políticas do dispositivo.
 
-  Por exemplo, [modelos administrativos no Intune](administrative-templates-windows.md) têm centenas de configurações de ADMX. Esses modelos mostram se uma configuração se aplica a usuários ou dispositivos. Ao criar modelos de administrador, atribua as configurações de usuários a um grupo de usuários e atribua as configurações de dispositivo a um grupo de dispositivos.
+  Por exemplo, os [modelos administrativos em Intune](administrative-templates-windows.md) têm centenas de configurações ADMX. Estes modelos mostram se uma definição se aplica a utilizadores ou dispositivos. Ao criar modelos de administração, atribua as definições dos seus utilizadores a um grupo de utilizadores e atribua as definições do seu dispositivo a um grupo de dispositivos.
 
-  A imagem a seguir mostra um exemplo de uma configuração que pode ser aplicada aos usuários e/ou que se aplicam a dispositivos:
+  A imagem que se segue mostra um exemplo de uma definição que pode aplicar-se aos utilizadores e/ou aplicar-se aos dispositivos:
 
-  ![Modelo de administração do Intune que se aplica a usuários e dispositivos](./media/device-profile-create/setting-applies-to-user-and-device.png)
+  ![Modelo de administração intonizado que se aplica ao utilizador e dispositivos](./media/device-profile-create/setting-applies-to-user-and-device.png)
 
-- Sempre que você criar uma política restritiva, comunique essa alteração aos seus usuários. Por exemplo, se você estiver alterando o requisito de senha de 4 caracteres para 6 caracteres, avise os usuários antes de atribuir a política.
+- Sempre que criar uma política restritiva, comunique esta alteração aos seus utilizadores. Por exemplo, se estiver a alterar o requisito de código de acesso de 4 caracteres para 6 caracteres, informe os seus utilizadores antes de atribuir a apólice.
 
 ## <a name="next-steps"></a>Próximos passos
 

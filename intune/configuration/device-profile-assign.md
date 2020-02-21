@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/28/2020
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5b61c333f41054194b44c7517e508fe1ef6d28d4
-ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.openlocfilehash: c6678c3fbc247ac0595775c0ccc72c7bdb9c55e1
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76812375"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513100"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>Atribuir perfis de utilizador e dispositivo no Microsoft Intune
 
@@ -73,7 +73,7 @@ Nos dispositivos Windows 10, pode adicionar regras de **aplicabilidade** para qu
 
 Muitos utilizadores perguntam quando usar grupos de utilizadores e quando usar grupos de dispositivos. A resposta depende do seu objetivo. Aqui está uma orientação para começar.
 
-### <a name="device-groups"></a>Device groups
+### <a name="device-groups"></a>Grupos de dispositivos
 
 Se pretender aplicar as definições num dispositivo, independentemente de quem tenha assinado, atribua os seus perfis a um grupo de dispositivos. As definições aplicadas aos grupos de dispositivos vão sempre com o dispositivo, não com o utilizador.
 
@@ -87,9 +87,9 @@ Por exemplo:
 
 Para resumir, utilize grupos de dispositivos quando não se importa quem assinou o dispositivo, ou se alguém está inscrito. Quer que as suas definições estejam sempre no dispositivo.
 
-### <a name="user-groups"></a>Grupos de utilizadores
+### <a name="user-groups"></a>Grupos de utilizadores:
 
-As definições de perfil aplicadas aos grupos de utilizadores vão sempre com o utilizador e vão com o utilizador quando estão inscritos nos seus muitos dispositivos. É normal que os utilizadores tenham muitos dispositivos, como um Surface Pro para trabalho, e um dispositivo iOS pessoal. E é normal que uma pessoa aceda a emails e outros recursos da organização a partir destes dispositivos.
+As definições de perfil aplicadas aos grupos de utilizadores vão sempre com o utilizador e vão com o utilizador quando estão inscritos nos seus muitos dispositivos. É normal que os utilizadores tenham muitos dispositivos, como um Surface Pro para trabalho, e um dispositivo pessoal iOS/iPadOS. E é normal que uma pessoa aceda a emails e outros recursos da organização a partir destes dispositivos.
 
 Por exemplo:
 

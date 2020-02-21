@@ -1,6 +1,6 @@
 ---
-title: Códigos de erro e status no Microsoft Intune – Azure | Microsoft Docs
-description: Consulte uma lista de erros, código de status, descrições e resoluções ao usar dispositivos gerenciados pelo MDM, obter acesso a recursos da empresa, erros em dispositivos iOS e erros de resposta OMA no Microsoft Intune.
+title: Códigos de erro e de estado no Microsoft Intune - Azure / Microsoft Docs
+description: Consulte uma lista dos erros, código de estado, descrições e resoluções ao utilizar dispositivos geridos pelo MDM, obtendo acesso aos recursos da empresa, erros nos dispositivos iOS/iPadOS e erros de resposta oMA no Microsoft Intune.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 17a8ebfcad2bcf485771f26184377aeb2c4bf4e1
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: bf31ce5f812603534f30b3b3aa3836ede0be6f6d
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72509800"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510593"
 ---
-# <a name="common-error-codes-and-descriptions-in-microsoft-intune"></a>Códigos de erro comuns e descrições no Microsoft Intune
+# <a name="common-error-codes-and-descriptions-in-microsoft-intune"></a>Códigos e descrições comuns de erro no Microsoft Intune
 
-Este artigo lista erros comuns, códigos de status, descrições e possíveis soluções ao acessar recursos da organização. Use essas informações para ajudar a solucionar problemas de acesso ao usar o Microsoft Intune.
+Este artigo enumera erros comuns, códigos de estado, descrições e possíveis soluções no acesso aos recursos da organização. Utilize estas informações para ajudar a resolver problemas de acesso ao utilizar o Microsoft Intune.
 
-Se precisar de ajuda de suporte, consulte [obter suporte para Microsoft Intune](../get-support.md).
+Se precisar de ajuda de suporte, consulte [o suporte para o Microsoft Intune](../get-support.md).
 
 ## <a name="status-codes-for-mdm-managed-windows-devices"></a>Códigos de estado para dispositivos Windows geridos por MDM
 
@@ -78,7 +78,7 @@ Se precisar de ajuda de suporte, consulte [obter suporte para Microsoft Intune](
 |-2016341111|0x87D11389|O dispositivo iOS devolveu um estado de inatividade inesperado|
 |-2016341112|0x87D11388|O dispositivo iOS está ocupado neste momento|
 
-## <a name="errors-returned-by-ios-devices"></a>Erros devolvidos por dispositivos iOS
+## <a name="errors-returned-by-iosipados-devices"></a>Erros devolvidos pelos dispositivos iOS/iPadOS
 
 ### <a name="company-portal-errors"></a>Erros do Portal da Empresa
 
@@ -87,7 +87,7 @@ Se precisar de ajuda de suporte, consulte [obter suporte para Microsoft Intune](
 |__Problema do servidor interno__ <br>Parece que não conseguiu contactar-nos devido a um erro interno no nosso servidor. Tente novamente e, em seguida, contacte o seu administrador de TI se o problema persistir.|Erro 500|Este erro é causado provavelmente por um problema no serviço do Intune. O problema deve ser resolvido no lado do serviço do Intune e é provável que não seja devido a problemas do lado do cliente.|
 |__Temporariamente indisponível__ <br>Parece que não conseguiu contactar-nos porque o nosso serviço está temporariamente indisponível. Tente novamente e, em seguida, contacte o seu administrador de TI se o problema persistir.|Erro 503|Este erro deve-se provavelmente a um problema temporário do serviço do Intune, tal como o serviço encontrar-se em manutenção. O problema deve ser resolvido no lado do serviço do Intune e é provável que não seja devido a problemas do lado do cliente.|
 |__Não é possível ligar ao servidor__ <br>Parece que não conseguiu contactar-nos. Tente novamente e, em seguida, contacte o seu administrador de TI se o problema persistir.|Não associado a um código de estado HTTP|Não foi possível estabelecer uma ligação segura ao servidor, isto deve-se provavelmente a um problema do SSL com os certificados em utilização. Este problema pode dever-se à incompatibilidade das configurações do cliente em relação aos requisitos da Apple referentes à Segurança de Transporte de Aplicações (ATS).|
-|__Algo correu mal__ <br>Não foi possível carregar o cliente do Portal da Empresa. Tente novamente e, em seguida, contacte o seu administrador de TI se o problema persistir.|Erro 400|Qualquer erro com um código de estado HTTP situado nos 400s sem uma mensagem de erro mais específica verá este erro. Este é um erro do lado do cliente que ocorre na aplicação Portal da Empresa para iOS.|
+|__Algo correu mal__ <br>Não foi possível carregar o cliente do Portal da Empresa. Tente novamente e, em seguida, contacte o seu administrador de TI se o problema persistir.|Erro 400|Qualquer erro com um código de estado HTTP situado nos 400s sem uma mensagem de erro mais específica verá este erro. Trata-se de um erro do lado do cliente que está a acontecer na aplicação Portal da Empresa para iOS/iPadOS.|
 |__Não é possível contactar o servidor__ <br>Parece que não conseguiu contactar-nos. Tente novamente e, em seguida, contacte o seu administrador de TI se o problema persistir.|Erro 500|Qualquer erro com um código de estado HTTP situado nos 500s sem uma mensagem de erro mais específica verá este erro. Este é um erro do lado do serviço que ocorre no serviço Intune.|
 
 ### <a name="service-errors"></a>Erros do serviço
@@ -276,7 +276,7 @@ Se precisar de ajuda de suporte, consulte [obter suporte para Microsoft Intune](
 |-2016332105|0x87D136B7|4007: formato de ficheiro não reconhecido|
 |-2016332106|0x87D136B6|4006: data de remoção do perfil está no passado|
 |-2016332107|0x87D136B5|4005: código de acesso não está em conformidade|
-|-2016332108|0x87D136B4|4004: utilizador cancelou instalação|
+|-2016332108|0x87D136B4|4004:Instalação cancelada do utilizador|
 |-2016332109|0x87D136B3|4003: perfil não colocado em fila de espera para instalação|
 |-2016332110|0x87D136B2|4002: UUID duplicado|
 |-2016332111|0x87D136B1|4001: falha na instalação|
@@ -316,7 +316,7 @@ Se precisar de ajuda de suporte, consulte [obter suporte para Microsoft Intune](
 |-2016344112|0x87D107D0|DCMO(1200): A operação foi efetuada com êxito|
 |-2016345595|0x87D10205|Syncml(517): A resposta a um comando atómico era demasiado extensa para caber numa única mensagem.|
 |-2016345596|0x87D10204|Syncml(516): O comando encontrava-se num elemento Atómico e ocorreu uma falha no elemento Atómico. Este comando não foi revertido com êxito.|
-|-2016345598|0x87D10202|Syncml(514): O comando SyncML não foi concluído com êxito, uma vez que a operação já tinha sido cancelada antes do processamento do comando.|
+|-2016345598|0x87D10202|Syncml(514): O comando SyncML não foi concluído com sucesso, uma vez que a operação já foi cancelada antes de processar o comando.|
 |-2016345599|0x87D10201|Syncml(513): O destinatário não suporta ou recusa-se a suportar a versão especificada do Protocolo de Sincronização de SyncML utilizada na Mensagem de pedido de SyncML.|
 |-2016345600|0x87D10200|Syncml(512): Ocorreu um erro da aplicação durante a sessão de sincronização.|
 |-2016345601|0x87D101FF|Syncml(511): Ocorreu um erro grave no servidor durante o processamento do pedido.|
@@ -368,7 +368,7 @@ Se precisar de ajuda de suporte, consulte [obter suporte para Microsoft Intune](
 |-2016345812|0x87D1012C|Syncml(300): O destino solicitado é uma das várias alternativas de destino solicitadas.|
 |-2016345896|0x87D100D8|Syncml(216): O comando encontrava-se num elemento Atómico e ocorreu uma falha no elemento Atómico. Este comando foi revertido com êxito.|
 |-2016345897|0x87D100D7|Syncml(215): Não foi executado um comando, como resultado da interação do utilizador, o qual optou por não aceitar a escolha.|
-|-2016345898|0x87D100D6|Syncml(214): A operação foi cancelada. O comando SyncML foi concluído com êxito, mas não serão processados mais comandos na sessão.|
+|-2016345898|0x87D100D6|Syncml(214): Operação cancelada. O comando SyncML foi concluído com êxito, mas não serão processados mais comandos na sessão.|
 |-2016345899|0x87D100D5|Syncml(213): O item segmentado foi aceite e colocado na memória intermédia|
 |-2016345900|0x87D100D4|Syncml(212): A autenticação foi aceite. Não é preciso realizar outras autenticações durante o restante período da sessão de sincronização. Este código de resposta só pode ser utilizado em resposta a um pedido no qual tenham sido fornecidas credenciais.|
 |-2016345901|0x87D100D3|Syncml(211): O item não foi eliminado. O item solicitado não foi encontrado. Poderá ter sido eliminado anteriormente.|
@@ -387,4 +387,4 @@ Se precisar de ajuda de suporte, consulte [obter suporte para Microsoft Intune](
 
 ## <a name="next-steps"></a>Próximos passos
 
-Entre em contato com Suporte da Microsoft para [obter suporte para Microsoft Intune](../get-support.md).
+Contacte o Microsoft Support para [obter suporte para o Microsoft Intune](../get-support.md).

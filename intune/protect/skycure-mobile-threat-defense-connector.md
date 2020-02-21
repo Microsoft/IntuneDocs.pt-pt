@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: be8fbb0bd96891eb3af3157deddfc325ebc5f2b9
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 884d7f5d4710b44c302598b3c34e704beace240a
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508923"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515276"
 ---
 # <a name="symantec-endpoint-protection-mobile-connector"></a>Conector do Symantec Endpoint Protection Mobile
 
-Você pode controlar o acesso de dispositivos móveis a recursos corporativos usando o acesso condicional com base na avaliação de risco realizada pelo Symantec Endpoint Protection Mobile (setembro de dispositivos móveis), uma solução de defesa contra ameaças móveis que se integra ao Microsoft Intune. O risco é avaliado com base na telemetria recolhida dos dispositivos com o SEP Mobile, incluindo:
+Pode controlar o acesso de dispositivos móveis a recursos corporativos utilizando o Acesso Condicional com base na avaliação de risco realizada pela Symantec Endpoint Protection Mobile (SEP Mobile), uma solução de defesa de ameaças móveis que se integra com a Microsoft Intune. O risco é avaliado com base na telemetria recolhida dos dispositivos com o SEP Mobile, incluindo:
 
 - Defesa física
 
@@ -37,11 +37,11 @@ Você pode controlar o acesso de dispositivos móveis a recursos corporativos us
 
 - Defesa contra vulnerabilidades
 
-Você pode habilitar a avaliação de risco móvel de setembro por meio das políticas de conformidade do dispositivo do Intune e, em seguida, usar políticas de acesso condicional para permitir ou bloquear o acesso de dispositivo não compatível a recursos corporativos com base em ameaças detectadas
+Pode permitir a avaliação de risco seP Mobile através de políticas de conformidade de dispositivos Intune e, em seguida, utilizar políticas de Acesso Condicional para permitir ou bloquear o acesso não conforme do dispositivo aos recursos corporativos com base em ameaças detetadas.
 
 ## <a name="how-do-intune-and-sep-mobile-help-protect-your-company-resources"></a>Como é que o Intune e o SEP Mobile ajudam a proteger os recursos da empresa?
 
-A aplicação SEP Mobile para Android ou iOS captura o sistema de ficheiros, a pilha de rede e a telemetria dos dispositivos e das aplicações sempre que estiverem disponíveis e, em seguida, envia-os para o serviço cloud da Symantec para avaliar o risco do dispositivo relativamente a ameaças móveis.
+O aplicativo SEP Mobile para Android ou iOS/iPadOS captura sistema de ficheiros, pilha de rede, dispositivo e telemetria de aplicações sempre que disponível, envia-o depois para o serviço de nuvem Symantec para avaliar o risco do dispositivo para ameaças móveis.
 
 A política de conformidade de dispositivos do Intune inclui uma regra para o SEP Mobile, que se baseia na avaliação de riscos do SEP Mobile. Quando esta regra está ativada, o Intune avalia a conformidade do dispositivo com a política que ativou.
 
@@ -69,11 +69,11 @@ Quando forem detetadas aplicações maliciosas, como software maligno, nos dispo
 
 **Bloquear quando as aplicações maliciosas forem detetadas:**
 
-![Imagem conceitual de aplicativos mal-intencionados detectados](./media/skycure-mobile-threat-defense-connector/symantec-arch-1.png)
+![Imagem conceptual de aplicações maliciosas detetada](./media/skycure-mobile-threat-defense-connector/symantec-arch-1.png)
 
 **Acesso concedido na remediação:**
 
-![Imagem de acesso concedida na correção após a detecção de aplicativos mal-intencionados](./media/skycure-mobile-threat-defense-connector/symantec-arch-2.png)
+![Imagem de Acesso concedida em reparação após aplicações maliciosas detetadas](./media/skycure-mobile-threat-defense-connector/symantec-arch-2.png)
 
 ### <a name="control-access-based-on-threat-to-network"></a>Controlar o acesso com base em ameaças à rede
 
@@ -121,7 +121,7 @@ Veja a seguir os passos necessários para integrar o Intune com o SEP Mobile:
 
 - [Configurar a integração do SEP Mobile com o Intune](skycure-mtd-connector-integration.md)
 
-- [Adicionar e atribuir aplicações do SEP Mobile, o Microsoft Authenticator e a política de configuração de aplicações iOS](mtd-apps-ios-app-configuration-policy-add-assign.md)
+- [Adicione e atribua aplicações SEP Mobile, Microsoft Authenticator e iOS/iPadOS política de configuração de apps](mtd-apps-ios-app-configuration-policy-add-assign.md)
 
 - [Criar a política de conformidade de dispositivos do SEP Mobile com o Intune](mtd-device-compliance-policy-create.md)
 

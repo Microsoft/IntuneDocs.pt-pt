@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f0e2e2101706b9b9afa77553244a438a2299903b
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 67d9b5df39311d58571f875b8d41c16088010fad
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414015"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514307"
 ---
 # <a name="common-ways-to-use-microsoft-intune"></a>Formas comuns de utilizar o Microsoft Intune
 
-Antes de mergulhar nas tarefas de implementação, é importante alinhar os participantes da mobilidade corporativa da sua empresa em relação aos objetivos de negócios do uso do Intune. O alinhamento do participante é importante, seja você um novo no Enterprise Mobility ou migrando de outro produto.  
+Antes de mergulhar em tarefas de implementação, é importante alinhar os stakeholders de mobilidade empresarial da sua empresa em torno dos objetivos de negócio de usar o Intune. O alinhamento das partes interessadas é importante, quer seja novo na mobilidade empresarial ou migração de outro produto.  
 
 As necessidades em torno da mobilidade empresarial estão a evoluir de forma dinâmica e a abordagem da Microsoft para fazer face a estas necessidades pode, por vezes, ser diferentes de outras soluções existentes no mercado. A melhor forma de se alinhar em torno dos objetivos de negócio é expressá-los em termos de cenários que pretende permitir para os seus funcionários, parceiros e departamento de TI.  
 
@@ -35,13 +35,13 @@ Seguem-se algumas introduções breves aos seis cenários mais comuns que depend
 >Quer saber como é que a TI da Microsoft utiliza o Intune para permitir à Microsoft aceder aos recursos da empresa nos respetivos dispositivos móveis mantendo também os dados empresariais protegidos? [Leia este estudo técnico de casos concretos](https://www.microsoft.com/itshowcase/Article/Content/588) para ver em pormenor de que forma a TI da Microsoft utiliza o Intune e outros serviços para gerir a identidade, os dispositivos e as aplicações e dados.  
 
 >[!IMPORTANT]
->Queremos assegurar que os dispositivos móveis estão atualizados tendo em consideração os recentes ataques de software maligno "Trident" em dispositivos iOS. Publicámos uma mensagem de blogue denominada [Ensuring mobile devices are up-to-date using Microsoft Intune (Garantir que os dispositivos móveis estão atualizados com o Microsoft Intune)](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/26/ensuring-mobile-devices-are-up-to-date-using-microsoft-intune/). Fornece informações sobre as diferentes formas através das quais o Intune consegue ajudar a manter os seus dispositivos protegidos e atualizados.
+>Queremos garantir que os dispositivos móveis estão atualizados À luz dos recentes ataques de malware "Trident" em dispositivos iOS/iPadOS. Publicámos uma mensagem de blogue denominada [Ensuring mobile devices are up-to-date using Microsoft Intune (Garantir que os dispositivos móveis estão atualizados com o Microsoft Intune)](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/26/ensuring-mobile-devices-are-up-to-date-using-microsoft-intune/). Fornece informações sobre as diferentes formas através das quais o Intune consegue ajudar a manter os seus dispositivos protegidos e atualizados.
 
 ## <a name="protecting-your-on-premises-email-and-data-so-it-can-be-safely-accessed-by-mobile-devices"></a>Proteger o seu e-mail e dados no local, para que os dispositivos móveis possam aceder em segurança aos mesmos
 
 A maioria das estratégias de mobilidade empresarial começa com um plano para permitir o acesso seguro ao e-mail para os funcionários com dispositivos móveis ligados à Internet. Muitas organizações ainda têm dados no local e servidores de aplicações, como o Microsoft Exchange, alojados na respetiva rede empresarial.
 
-O Intune e o Microsoft Enterprise Mobility + Security (EMS) fornecem uma [solução de acesso condicional](../protect/conditional-access.md) integrada exclusivamente para o Exchange Server, o que garante que nenhum aplicativo móvel possa acessar o email até que esse dispositivo seja registrado no Intune. Você pode implementar esse tipo de acesso a email sem implantar outro computador de gateway na borda da rede corporativa.
+Intune e Microsoft Enterprise Mobility + Security (EMS) fornecem uma [solução](../protect/conditional-access.md) de acesso condicional exclusivamente integrada para o Exchange Server, que garante que nenhuma aplicação móvel pode aceder a e-mails até que esse dispositivo esteja matriculado no Intune. Pode implementar este tipo de acesso a e-mail sem implementar outra máquina de gateway para a borda da sua rede corporativa.
 
 O Intune também suporta permitir o acesso a aplicações móveis que exijam o acesso seguro a dados no local, como servidores de aplicações de linha de negócio. Normalmente, este tipo de acesso é feito através de [certificados geridos pelo Intune](../protect/certificates-configure.md) para controlo de acesso combinado com um proxy ou gateway de VPN padrão no perímetro, como o Proxy de Aplicações do Microsoft Azure Active Directory.
 
@@ -53,13 +53,13 @@ Nestes casos, a única forma de aceder aos dados da empresa é inscrever o dispo
 
 Proteger os dados empresariais no Office 365 (e-mail, documentos, mensagens instantâneas, contactos) não podia ser mais fácil para si ou mais integrado para os seus utilizadores.
 
-O Intune e o Microsoft Enterprise Mobility + Security fornecem uma solução de acesso condicional integrada exclusivamente que garante que nenhum usuário, aplicativo ou dispositivo possa acessar os dados do Office 365, a menos que eles atendam aos requisitos de conformidade da sua empresa (realizou a [autenticação multifator](../enrollment/multi-factor-authentication.md), registrada com o Intune, usando o aplicativo gerenciado, a versão do sistema operacional com suporte, o PIN do dispositivo, o perfil de baixo risco
+Intune e Microsoft Enterprise Mobility + Security fornecem uma solução de Acesso Condicional exclusivamente integrada que garante que nenhum utilizador, aplicações ou dispositivos pode aceder aos dados do Office 365 a menos que cumpram os requisitos de conformidade da sua empresa (autenticação de [vários fatores](../enrollment/multi-factor-authentication.md)realizada, matriculado com intune, utilizando aplicação gerida, versão de SISTEMA suportada, pin o dispositivo, perfil de baixo risco do utilizador, etc.).
 
 As aplicações móveis do Office, nas respetivas lojas de aplicações, estão prontas a ser utilizadas com políticas de contenção de dados que pode configurar através do Intune. Estas funcionalidades permitem-lhe impedir que os dados sejam partilhados com aplicações (por exemplo, aplicações de e-mail nativas) e localizações de armazenamento (por exemplo, Dropbox) que não são geridas pela equipa de TI. Todas estas funcionalidades estão incorporadas no Office 365 e no EMS. Não é necessário implementar infraestruturas adicionais para obter este valor.
 
 Uma prática de implementação comum do Office 365 é exigir que os dispositivos se inscrevam na gestão, se precisarem de ser totalmente integrados com configurações de aplicações, certificados, Wi-Fi ou VPN da empresa, que é um cenário comum dos dispositivos pertencentes à empresa.  
 
-No entanto, se o usuário simplesmente precisar acessar documentos e emails corporativos, o que geralmente é o caso para dispositivos pessoais, você poderá exigir que o usuário use os aplicativos móveis do Office (aos quais você aplicou [as políticas de proteção de aplicativo](../apps/app-protection-policies.md) ) e ignorar completamente o registro do dispositivo.  
+No entanto, se o utilizador simplesmente precisar de aceder a emails e documentos corporativos, o que acontece muitas vezes para dispositivos pessoais, então pode exigir que o utilizador utilize as aplicações móveis do Office (às quais aplicou políticas de proteção de [aplicações](../apps/app-protection-policies.md) e não inscreveu completamente o dispositivo.  
 
 De qualquer forma, os dados do Office 365 serão protegidos pelas políticas que definiu.
 
@@ -79,7 +79,7 @@ Como administrador, pode exigir que os utilizadores acedam ao Office 365 a parti
 
 Hoje em dia, a maioria dos funcionários são trabalhadores móveis, o que torna a produtividade em dispositivos móveis fundamental para sermos competitivos. Estes funcionários necessitam de acesso constante a todas as aplicações e dados da empresa, em qualquer altura, onde quer que estejam. Tem de garantir que os dados empresariais são seguros e os custos administrativos são baixos.  
 
-O Intune oferece [soluções de gerenciamento e provisionamento em massa](../enrollment/device-enrollment.md) que são integradas com as principais plataformas de gerenciamento de dispositivos corporativos no mercado atualmente, incluindo o Apple programa de registro de dispositivos e a plataforma de segurança móvel Samsung Knox. A criação centralizada de configurações de dispositivo com o Intune ajuda a fazer com que o aprovisionamento de dispositivos empresariais possa ser altamente automatizado.  
+A Intune oferece soluções de [fornecimento e gestão](../enrollment/device-enrollment.md) a granel que estão integradas com as principais plataformas de gestão de dispositivos corporativos no mercado de hoje, incluindo o Programa de Inscrição de Dispositivos apple e a plataforma de segurança móvel Samsung Knox. A criação centralizada de configurações de dispositivo com o Intune ajuda a fazer com que o aprovisionamento de dispositivos empresariais possa ser altamente automatizado.  
 
 Imagine: entregue a um funcionário uma caixa de iPhone por abrir. O funcionário liga-o e é orientado ao longo de um fluxo de configuração de marca corporativa, onde tem de se autenticar. O iPhone está perfeitamente configurado com [políticas de segurança](../configuration/device-profiles.md).
 
@@ -91,7 +91,7 @@ Em seguida, o funcionário inicia a aplicação Portal da Empresa do Intune para
 
 Os funcionários estão a recorrer cada vez mais às tecnologias móveis. Por exemplo, os tablets partilhados são agora utilizados frequentemente pelos funcionários de lojas de venda a retalho.  Quer sejam utilizados para processar uma venda ou para verificar instantaneamente o inventário, os tablets ajudam a criar ótimas interações com os clientes.
 
-A simplicidade da experiência do utilizador é fundamental neste caso. Por esse motivo, os tablets geralmente são fornecidos aos funcionários em um modo de uso limitado, de forma que um único aplicativo de linha de negócios é a única coisa com a qual o funcionário pode interagir. O Intune permite que você provisione, proteja e gerencie centralmente esses dispositivos [Ios e Android](../configuration/device-profiles.md) compartilhados que podem ser configurados para serem executados nesse modo de uso limitado.
+A simplicidade da experiência do utilizador é fundamental neste caso. Por esta razão, os tablets são geralmente fornecidos aos colaboradores em modo de uso limitado, de modo que uma única aplicação de linha de negócio é a única coisa com que o colaborador pode interagir. O Intune permite-lhe gerir em massa, seguro e centralmente estes dispositivos partilhados [iOS e Android](../configuration/device-profiles.md) que podem ser configurados para serem executados neste modo de utilização limitada.
 
 <!-- Learn more about how to plan and deploy Intune to support shared tablets. -->
 
@@ -99,4 +99,4 @@ A simplicidade da experiência do utilizador é fundamental neste caso. Por esse
 
 Por vezes, os seus funcionários precisam de utilizar dispositivos, aplicações ou browsers que não pode gerir, tal como os computadores públicos em feiras para profissionais e átrios de hotel.
 
-Deve permitir que os seus funcionários acedam ao e-mail da empresa a partir destes dispositivos? Com o Intune e o Microsoft Enterprise Mobility + Security, a resposta pode ser simplesmente "não", [limitando o acesso de email aos dispositivos que são gerenciados pela sua organização](../protect/conditional-access.md). Tal garante que o seu funcionário totalmente autenticado não deixe acidentalmente dados empresariais no computador não fidedigno.
+Deve permitir que os seus funcionários acedam ao e-mail da empresa a partir destes dispositivos? Com a Intune e a Microsoft Enterprise Mobility + Security, a resposta pode simplesmente ser "não", limitando o acesso por [e-mail a dispositivos geridos pela sua organização.](../protect/conditional-access.md) Tal garante que o seu funcionário totalmente autenticado não deixe acidentalmente dados empresariais no computador não fidedigno.

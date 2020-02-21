@@ -1,11 +1,11 @@
 ---
-title: Solucionar problemas de perfis de email no Microsoft Intune-Azure | Microsoft Docs
-description: Consulte problemas comuns e soluções com perfis de email em Microsoft Intune, incluindo perfis de email duplicados e erros em dispositivos Samsung KNOX Standard Android.
+title: Troubleshoot perfis de e-mail no Microsoft Intune - Azure Microsoft Docs
+description: Consulte questões e soluções comuns com perfis de e-mail no Microsoft Intune, incluindo perfis de email duplicados e erros em dispositivos Android Padrão Samsung KNOX.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/05/2019
+ms.date: 02/18/2020
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -18,54 +18,54 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 38e8998d1720434b0fe866fc5cd41a0b733fc49b
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: a19830130f992a002b73402f5e13a8f062539917
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059849"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77512675"
 ---
-# <a name="common-issues-and-resolutions-with-email-profiles-in-microsoft-intune"></a>Problemas comuns e resoluções com perfis de email no Microsoft Intune
+# <a name="common-issues-and-resolutions-with-email-profiles-in-microsoft-intune"></a>Questões e resoluções comuns com perfis de e-mail no Microsoft Intune
 
-Examine alguns problemas comuns de perfil de email e como solucioná-los e solucioná-los.
+Reveja alguns problemas comuns de perfil de e-mail e como resolvê-los e resolvê-los.
 
 ## <a name="what-you-need-to-know"></a>O que tem de saber
 
-- Os perfis de email são implantados para o usuário que registrou o dispositivo. Para configurar o perfil de email, o Intune usa as propriedades Azure Active Directory (AD) no perfil de email do usuário durante o registro. [Adicionar configurações de email a dispositivos](email-settings-configure.md) pode ser um bom recurso.
-- Para Android Enterprise, implante o Gmail ou nove para trabalho usando o Google Play Store gerenciado. [Adicionar aplicativos Google Play gerenciados](../apps/apps-add-android-for-work.md) lista as etapas.
-- O Microsoft Outlook para iOS e Android não dá suporte a perfis de email. Em vez disso, implante uma política de configuração de aplicativo. Para obter mais informações, consulte [definição de configuração do Outlook](../apps/app-configuration-policies-outlook.md).
-- Os perfis de email destinados a grupos de dispositivos (não grupos de usuários) podem não ser entregues ao dispositivo. Quando o dispositivo tiver um usuário primário, o direcionamento de dispositivo deverá funcionar. Se o perfil de email incluir certificados de usuário, não se esqueça de direcionar grupos de usuários.
-- Os usuários podem ser solicitados repetidamente a inserir sua senha para o perfil de email. Nesse cenário, verifique todos os certificados referenciados no perfil de email. Se um dos certificados não for direcionado a um usuário, o Intune tentará implantar o perfil de email novamente.
+- Os perfis de e-mail são implementados para o utilizador que inscreveu o dispositivo. Para configurar o perfil de e-mail, intune utiliza as propriedades do Azure Ative Directory (AD) no perfil de e-mail do utilizador durante a inscrição. [Adicionar definições de e-mail aos dispositivos](email-settings-configure.md) pode ser um bom recurso.
+- Para android enterprise, implemente o Gmail ou O No no trabalho utilizando a gerida Google Play Store. [Adicionar aplicações geridas do Google Play](../apps/apps-add-android-for-work.md) lista os passos.
+- O Microsoft Outlook para iOS/iPadOS e Android não suporta perfis de email. Em vez disso, implemente uma política de configuração de aplicações. Para mais informações, consulte a definição de [Configuração do Outlook](../apps/app-configuration-policies-outlook.md).
+- Os perfis de e-mail direcionados para grupos de dispositivos (não grupos de utilizadores) não podem ser entregues no dispositivo. Quando o dispositivo tem um utilizador primário, então o alvo do dispositivo deve funcionar. Se o perfil de e-mail incluir certificados de utilizador, certifique-se de que tem como alvo grupos de utilizadores.
+- Os utilizadores podem ser repetidamente solicitados a introduzir a sua palavra-passe para o perfil de e-mail. Neste cenário, verifique todos os certificados referenciados no perfil de e-mail. Se um dos certificados não for direcionado para um utilizador, então insinte novamente a implementação do perfil de e-mail.
 
 ## <a name="device-already-has-an-email-profile-installed"></a>O dispositivo já tem um perfil de email instalado
 
-Se os usuários criarem um perfil de email antes de registrarem no Intune ou no Office 365 MDM, o perfil de email implantado pelo Intune poderá não funcionar conforme o esperado:
+Se os utilizadores criarem um perfil de e-mail antes de se inscreverem no Intune ou no Office 365 MDM, o perfil de e-mail implementado pela Intune pode não funcionar como esperado:
 
-- **iOS**: o Intune deteta um perfil de e-mail existente, duplicado com base no nome de anfitrião e no endereço de e-mail. O perfil de email criado pelo usuário bloqueia a implantação do perfil criado pelo Intune. Esse é um problema comum, pois os usuários do iOS normalmente criam um perfil de email e, em seguida, se registram. O aplicativo Portal da Empresa declara que o usuário não está em conformidade e pode solicitar que o usuário remova o perfil de email.
+- **iOS/iPadOS**: Intune deteta um perfil de e-mail duplicado existente com base no nome de anfitrião e endereço de e-mail. O perfil de e-mail criado pelo utilizador bloqueia a implementação do perfil criado pelo Intune. Este é um problema comum, uma vez que os utilizadores de iOS/iPadOS normalmente criam um perfil de e-mail e depois matriculam-se. A aplicação Portal da Empresa afirma que o utilizador não está em conformidade e pode levar o utilizador a remover o perfil de e-mail.
 
-  O usuário deve remover seu perfil de email para que o perfil do Intune possa ser implantado. Para evitar esse problema, instrua os usuários a se registrarem e permitem que o Intune implante o perfil de email. Em seguida, os usuários podem criar seu perfil de email.
+  O utilizador deve remover o seu perfil de e-mail para que o perfil Intune possa ser implementado. Para evitar este problema, instrua os seus utilizadores a inscreverem-se e a permitir que a Intune implemente o perfil de e-mail. Em seguida, os utilizadores podem criar o seu perfil de e-mail.
 
 - **Windows**: o Intune deteta um perfil de e-mail existente, duplicado com base no nome de anfitrião e no endereço de e-mail. O Intune substitui o perfil de e-mail existente criado pelo utilizador.
 
-- **Samsung Knox Standard**: o Intune identifica uma conta de email duplicada com base no endereço de email e a substitui pelo perfil do Intune. Se o usuário configurar essa conta, ela será substituída novamente pelo perfil do Intune. Isso pode causar alguma confusão ao usuário cuja configuração de conta é substituída.
+- **Samsung KNOX Standard**: Intune identifica uma conta de e-mail duplicada com base no endereço de e-mail, e substitui-a com o perfil Intune. Se o utilizador configurar essa conta, é substituído novamente pelo perfil Intune. Isto pode causar alguma confusão ao utilizador cuja configuração da conta é substituída.
 
-O Samsung KNOX não usa o nome do host para identificar o perfil. Recomendamos que você não crie vários perfis de email para implantar no mesmo endereço de email em hosts diferentes, pois eles substituirão um ao outro.
+A Samsung KNOX não usa o nome de anfitrião para identificar o perfil. Recomendamos que não crie múltiplos perfis de e-mail para implementar para o mesmo endereço de e-mail em diferentes anfitriões, uma vez que eles se sobreescrevem uns aos outros.
 
-## <a name="error-0x87d1fde8-for-knox-standard-device"></a>Erro 0x87D1FDE8 para dispositivo KNOX Standard
+## <a name="error-0x87d1fde8-for-knox-standard-device"></a>Erro 0x87D1FDE8 para dispositivo knox Standard
 
-**Problema**: depois de criar e implantar um perfil de email Exchange Active Sync para Samsung Knox Standard para dispositivos Android diferentes, o **0x87D1FDE8** ou o erro de **falha na correção** aparece na guia de política de > de propriedades do dispositivo.
+**Problema**: Após a criação e implementação de um perfil de e-mail Exchange Ative Sync para o Samsung KNOX Standard para diferentes dispositivos Android, o erro falhado **0x87D1FDE8** ou **remediação falha** nos erros do dispositivo .
 
-Reveja a configuração do seu perfil EAS para Samsung KNOX e a política de origem. Não há mais suporte para a opção de sincronização do Samsung Notes e essa opção não deve ser selecionada em seu perfil. Certifique-se de que os dispositivos tenham tempo suficiente para processar a política, até 24 horas.
+Reveja a configuração do seu perfil EAS para Samsung KNOX e a política de origem. A opção de sincronização de Notas Samsung já não é suportada e essa opção não deve ser selecionada no seu perfil. Certifique-se de que os dispositivos têm tempo suficiente para processar a apólice, até 24 horas.
 
 ## <a name="unable-to-send-images-from--email-account"></a>Não é possível enviar imagens a partir da conta de e-mail
 
-Os usuários que têm contas de email configuradas automaticamente não podem enviar imagens ou imagens de seus dispositivos. Esse cenário pode acontecer se **permitir que o email seja enviado de aplicativos de** terceiros não estiver habilitado.
+Os utilizadores que tenham contas de e-mail configuradas automaticamente não podem enviar imagens ou imagens dos seus dispositivos. Este cenário pode acontecer se permitir que o **e-mail seja enviado a partir de aplicações de terceiros** não está ativado.
 
-1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
-2. Selecione **dispositivos** > **perfis de configuração**.
-3. Selecione seu perfil de email > **Propriedades** de > **configurações**.
-4. Defina a configuração **permitir que o email seja enviado de aplicativos de** terceiros para **habilitar**o.
+1. Inscreva-se no centro de administração do [Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **Dispositivos** > perfis de **configuração**.
+3. Selecione o seu perfil de e-mail > **Propriedades** > **Definições**.
+4. Defina o **e-mail permitir que o e-mail seja enviado a partir da** definição de aplicações de terceiros para **ativar**.
 
 ## <a name="next-steps"></a>Próximos passos
 
-Obtenha [ajuda de suporte da Microsoft](../fundamentals/get-support.md)ou use os [fóruns da Comunidade](https://social.technet.microsoft.com/Forums/en-US/home?category=microsoftintune).
+Obtenha [ajuda de suporte da Microsoft](../fundamentals/get-support.md), ou use os [fóruns comunitários](https://social.technet.microsoft.com/Forums/en-US/home?category=microsoftintune).

@@ -1,6 +1,6 @@
 ---
-title: Criar políticas de conformidade do dispositivo no Microsoft Intune-Azure | Microsoft Docs
-description: Crie políticas de conformidade do dispositivo, visão geral dos níveis de status e gravidade, usando o status InGracePeriod, trabalhando com o acesso condicional, manipulando dispositivos sem uma política atribuída e as diferenças de conformidade no portal do Azure e no portal clássico no Microsoft Intune
+title: Criar políticas de conformidade de dispositivos no Microsoft Intune - Azure  Microsoft Docs
+description: Criar políticas de conformidade com dispositivos, visão geral dos níveis de estado e gravidade, utilizando o estatuto InGracePeriod, trabalhando com acesso condicional, manuseamento de dispositivos sem uma política atribuída, e as diferenças de conformidade no portal Azure e portal clássico em Microsoft Intune
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ba6b8fb66d25af3833e55eebc12e8b6df2fb5ba5
-ms.sourcegitcommit: 66e284fe092e19c1da72b4b770e45bf25ac7910c
+ms.openlocfilehash: 68fcdb66591ec0e566aa702b3ca4d6c5c5448859
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74860235"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514018"
 ---
 # <a name="create-a-compliance-policy-in-microsoft-intune"></a>Criar uma política de conformidade no Microsoft Intune
 
-As políticas de conformidade de dispositivos são um elemento fundamental ao utilizar o Intune para proteger os recursos da sua organização. No Intune, pode criar regras e definições que os dispositivos têm de cumprir para serem considerados como estando em conformidade, como a versão mínima do SO. Se o dispositivo não estiver em conformidade, você poderá bloquear o acesso a dados e recursos usando o [acesso condicional](conditional-access.md).
+As políticas de conformidade de dispositivos são um elemento fundamental ao utilizar o Intune para proteger os recursos da sua organização. No Intune, pode criar regras e definições que os dispositivos têm de cumprir para serem considerados como estando em conformidade, como a versão mínima do SO. Se o dispositivo não estiver em conformidade, pode bloquear o acesso a dados e recursos utilizando o [Acesso Condicional](conditional-access.md).
 
 Também pode tomar medidas quanto à não conformidade, tais como enviar um e-mail de notificação ao utilizador. Para obter uma descrição geral do que fazem e como são utilizadas as políticas de conformidade, veja [introdução à conformidade de dispositivos](device-compliance-get-started.md).
 
@@ -43,17 +43,17 @@ Para utilizar as políticas de conformidade de dispositivos:
 - Utilize as seguintes subscrições:
 
   - Intune
-  - Se você usar o acesso condicional, precisará do Azure Active Directory (AD) Premium Edition. A página [Preços do Azure Active Directory](https://azure.microsoft.com/pricing/details/active-directory/) descreve as funcionalidades das diferentes edições. A conformidade no Intune não exige o Microsoft Azure AD.
+  - Se utilizar o Acesso Condicional, precisa da edição Premium do Diretório Ativo Azure (AD). A página [Preços do Azure Active Directory](https://azure.microsoft.com/pricing/details/active-directory/) descreve as funcionalidades das diferentes edições. A conformidade no Intune não exige o Microsoft Azure AD.
 
 - Utilize uma plataforma suportada:
 
-  - Administrador do dispositivo Android
+  - Administrador de dispositivos Android
   - Android Enterprise
   - iOS
   - macOS
   - Windows 10
-  - Windows 8.1
-  - Wnodows Phone 8.1
+  - Windows 8,1
+  - Windows Phone 8.1
 
 - Inscreva os dispositivos no Intune (necessário para ver o estado de conformidade).
 
@@ -61,18 +61,18 @@ Para utilizar as políticas de conformidade de dispositivos:
 
 ## <a name="create-the-policy"></a>Criar a política
 
-1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Inscreva-se no [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-2. Selecione **dispositivos** > **políticas de conformidade** > **criar política**.
+2. Selecione **Dispositivos** > políticas de **conformidade** > **criar a política**.
 
 3. Especifique as seguintes propriedades:
 
-   - **Nome**: Insira um nome descritivo para a política. Atribua nomes às políticas de forma que possa identificá-las facilmente mais tarde. Por exemplo, um bom nome de política é **Marcar os dispositivos iOS desbloqueados por jailbreak como não conformes**.
+   - **Nome**: Introduza um nome descritivo para a apólice. Atribua nomes às políticas de forma que possa identificá-las facilmente mais tarde. Por exemplo, um bom nome de política é **Mark iOS/iPadOS jailbroken devices como não conformes**.
 
-   - **Descrição**: Insira uma descrição para a política. Esta definição é opcional, mas recomendada.
+   - **Descrição**: Insira uma descrição para a apólice. Esta definição é opcional, mas recomendada.
 
-   - **Plataforma**: escolha a plataforma dos seus dispositivos. As opções são:
-     - **Administrador do dispositivo Android**
+   - **Plataforma**: Escolha a plataforma dos seus dispositivos. As opções são:
+     - **Administrador de dispositivos Android**
      - **Android Enterprise**
      - **iOS/iPadOS**
      - **macOS**
@@ -80,27 +80,27 @@ Para utilizar as políticas de conformidade de dispositivos:
      - **Windows 8.1 e posterior**
      - **Windows 10 e posterior**
 
-     Para o *Android Enterprise*, você deve selecionar um **tipo de perfil**:
+     Para *Android Enterprise,* deve então selecionar um tipo de **Perfil:**
      - **Proprietário do dispositivo**
      - **Perfil de trabalho**
 
-   - **Configurações**: os artigos a seguir listam e descrevem as configurações para cada plataforma:
-     - [Administrador do dispositivo Android](compliance-policy-create-android.md)
+   - **Definições**: A lista dos seguintes artigos e descreva as definições para cada plataforma:
+     - [Administrador de dispositivos Android](compliance-policy-create-android.md)
      - [Android Enterprise](compliance-policy-create-android-for-work.md)
      - [iOS/iPadOS](compliance-policy-create-ios.md)
      - [macOS](compliance-policy-create-mac-os.md)
      - [Windows Phone 8.1, Windows 8.1 e posterior](compliance-policy-create-windows-8-1.md)
      - [Windows 10 e posterior](compliance-policy-create-windows.md)  
 
-   - **Locais** *(administrador de dispositivo Android)* : em sua política, você pode forçar a conformidade pelo local do dispositivo. Escolha uma das localizações existentes. Ainda não tem uma localização? Veja [Utilizar Localizações (barreira de rede)](use-network-locations.md) no Intune para obter algumas orientações.  
+   - **Localizações** *(administrador de dispositivos Android)* : Na sua política, pode forçar a conformidade com a localização do dispositivo. Escolha uma das localizações existentes. Ainda não tem uma localização? Veja [Utilizar Localizações (barreira de rede)](use-network-locations.md) no Intune para obter algumas orientações.  
 
-   - **Ações de não conformidade**: para dispositivos que não atendem às suas políticas de conformidade, você pode adicionar uma sequência de ações para aplicar automaticamente. Pode alterar a agenda quando o dispositivo for marcado como não conforme, tal como após um dia. Também pode configurar uma segunda ação que envia um e-mail para o utilizador quando o dispositivo não estiver em conformidade.
+   - **Ações de incumprimento**: Para dispositivos que não cumpram as suas políticas de conformidade, pode adicionar uma sequência de ações para aplicar automaticamente. Pode alterar a agenda quando o dispositivo for marcado como não conforme, tal como após um dia. Também pode configurar uma segunda ação que envia um e-mail para o utilizador quando o dispositivo não estiver em conformidade.
 
      O artigo [Adicionar ações para dispositivos não conformes](actions-for-noncompliance.md) fornece mais informações, incluindo como criar um e-mail de notificação para os seus utilizadores.
 
      Por exemplo, está a utilizar a funcionalidade Localizações e adiciona uma localização numa política de conformidade. A ação predefinida de não conformidade aplica-se quando selecionar pelo menos uma localização. Se o dispositivo não estiver ligado às localizações selecionadas, será imediatamente considerado não conforme. Pode dar aos seus utilizadores um período de tolerância, por exemplo um dia.
 
-   - **Scope (Tags)** : as marcas de escopo são uma ótima maneira de filtrar políticas para grupos específicos, como `US-NC IT Team` ou `JohnGlenn_ITDepartment`. Depois de adicionar as definições, também pode adicionar uma etiqueta de âmbito às políticas de conformidade. O artigo [Utilizar etiquetas de âmbito para filtrar políticas](../fundamentals/scope-tags.md) pode ser útil.
+   - **Âmbito (Etiquetas)** : As etiquetas de âmbito são uma ótima forma de filtrar políticas para grupos específicos, como `US-NC IT Team` ou `JohnGlenn_ITDepartment`. Depois de adicionar as definições, também pode adicionar uma etiqueta de âmbito às políticas de conformidade. O artigo [Utilizar etiquetas de âmbito para filtrar políticas](../fundamentals/scope-tags.md) pode ser útil.
 
 4. Quando terminar, selecione **OK** > **Criar** para guardar as alterações. A política é criada e apresentada na lista. Em seguida, atribua a política aos grupos.
 
@@ -108,21 +108,21 @@ Para utilizar as políticas de conformidade de dispositivos:
 
 Depois de criar uma política, o passo seguinte é atribuir a política aos grupos:
 
-1. Escolha uma política que tenha criado. As políticas existentes estão em **dispositivos** > **políticas de conformidade** > **políticas**.
+1. Escolha uma política que tenha criado. As políticas existentes estão nos **Dispositivos** > políticas de **conformidade** > **Políticas.**
 
-2. Selecione a *política* > **atribuições**. Pode incluir ou excluir grupos de segurança do Azure Active Directory (AD).
+2. Selecione a *política* > **Atribuições**. Pode incluir ou excluir grupos de segurança do Azure Active Directory (AD).
 
-3. Escolha **Grupos selecionados** para ver os grupos de segurança do Azure AD. Selecione os grupos que você deseja que essa política aplique > escolha **salvar** para implantar a política.
+3. Escolha **Grupos selecionados** para ver os grupos de segurança do Azure AD. Selecione os grupos que pretende que esta política aplique > Escolha **guardar** para implementar a política.
 
-Os usuários ou dispositivos direcionados por sua política são avaliados quanto à conformidade quando fazem check-in com o Intune.
+Os utilizadores ou dispositivos visados pela sua apólice são avaliados para o cumprimento quando fazem o check-in com o Intune.
 
 ### <a name="evaluate-how-many-users-are-targeted"></a>Avaliar a quantidade de utilizadores visados
 
 Quando atribui a política, também pode **Avaliar** quantos utilizadores são afetados. Esta funcionalidade calcula os utilizadores, mas não calcula os dispositivos.
 
-1. No Intune, selecione **dispositivos** > **políticas de conformidade** > **políticas**.
+1. Em Intune, selecione **Dispositivos** > Políticas de **conformidade** > **Políticas**.
 
-2. Selecione uma *política* > **atribuições** > **avaliar**. É apresentada uma mensagem que mostra a quantidade de utilizadores visados por esta política.
+2. Selecione uma *política* > **Atribuições** > **Avaliar**. É apresentada uma mensagem que mostra a quantidade de utilizadores visados por esta política.
 
 Se o botão **Avaliar** ficar cinzento, verifique se a política foi atribuída a um ou mais grupos.
 
@@ -141,9 +141,9 @@ Scope tags are a great way to assign and filter policies to specific groups, suc
 
 ## <a name="refresh-cycle-times"></a>Tempos de ciclos de atualização
 
-O Intune usa ciclos de atualização diferentes para verificar se há atualizações de políticas de conformidade. Se o dispositivo tiver sido registrado recentemente, o check-in será executado com mais frequência. [Ciclos de atualização de política e perfil](../configuration/device-profile-troubleshoot.md#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned) lista os tempos de atualização estimados.
+Intune usa diferentes ciclos de atualização para verificar se há atualizações às políticas de conformidade. Se o dispositivo se matriculou recentemente, o check-in funciona com mais frequência. Os ciclos de atualização de políticas e perfis listam os [tempos estimados](../configuration/device-profile-troubleshoot.md#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned) de atualização.
 
-A qualquer momento, os usuários podem abrir o aplicativo Portal da Empresa e sincronizar o dispositivo para verificar imediatamente se há atualizações de política.
+A qualquer momento, os utilizadores podem abrir a aplicação Portal da Empresa e sincronizar o dispositivo para verificar imediatamente as atualizações de políticas.
 
 ### <a name="assign-an-ingraceperiod-status"></a>Atribuir um estado InGracePeriod
 
@@ -151,9 +151,9 @@ O estado InGracePeriod de uma política de conformidade é um valor. Este valor 
 
 Mais concretamente, se um dispositivo tiver um estado NonCompliant para uma política de conformidade atribuída e:
 
-- O dispositivo não tem nenhum período de carência atribuído a ele; em seguida, o valor atribuído para a política de conformidade é não compatível
-- O dispositivo tem um período de carência que expirou e, em seguida, o valor atribuído para a política de conformidade é não compatível
-- O dispositivo tem um período de carência no futuro e, em seguida, o valor atribuído para a política de conformidade é InGracePeriod
+- O dispositivo não tem um período de carência atribuído, então o valor atribuído para a política de conformidade é NonCompliant
+- O dispositivo tem um período de carência que expirou, então o valor atribuído para a política de conformidade é NonCompliant
+- O dispositivo tem um período de carência que está no futuro, então o valor atribuído para a política de conformidade é InGracePeriod
 
 A tabela seguinte apresenta um resumo destas opções:
 
@@ -171,7 +171,7 @@ Se um dispositivo tiver múltiplas políticas de conformidade e estados de confo
 
 |Estado  |Gravidade  |
 |---------|---------|
-|Unknown     |1|
+|Desconhecido     |1|
 |NotApplicable     |2|
 |Compatível|3|
 |InGracePeriod|4|

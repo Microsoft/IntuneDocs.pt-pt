@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9fa02a61148a03a64b88b38dcdc1799b30bc45db
-ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
+ms.openlocfilehash: f676a0e39bb5dae32d3032d1703dbb44f6b2e54a
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76886739"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514970"
 ---
 # <a name="create-a-design"></a>Criar uma estrutura
 
@@ -84,7 +84,7 @@ O seu ambiente atual pode influenciar decisões de estrutura e deve ser document
 
   - Como está a gerir o seu ambiente de PC e servidor?
 
-  - Você está usando o Microsoft Endpoint Configuration Manager? Está a utilizar uma plataforma de gestão de sistema de terceiros?
+  - Está a usar o Microsoft Endpoint Configuration Manager? Está a utilizar uma plataforma de gestão de sistema de terceiros?
 
 - **Solução VPN**
 
@@ -101,7 +101,7 @@ Ao registar o atual ambiente MDM, certifique-se de que toma nota de todos os pro
 | **SharePoint** | SharePoint no local | Não existem planos para migrar para o SharePoint Online |  
 | **MDM atual** | Exchange ActiveSync |  |
 | **Solução de certificado** | Serviços de Certificado do Microsoft Server 2012 R2, AD | Utilizar apenas PKI para Servidores de Sites |
-| **Gestão de Sistema** | Configuration Manager Branch atual | Gostaria de investigar a solução de cogerenciamento |
+| **Gestão de Sistema** | Sucursal atual do Gestor de Configuração | Gostaria de investigar a solução de cogestão |
 | **Solução VPN** | Cisco AnyConnect |  |
 
 
@@ -188,7 +188,7 @@ Analisemos estas áreas mais detalhadamente.
 
 ### <a name="determine-supported-device-platforms"></a>Determinar plataformas de dispositivos suportados
 
-É necessário saber que dispositivos estarão no ambiente e confirmar se são ou não suportados pelo Intune durante a criação da sua estrutura. O Intune suporta plataformas iOS, Android e Windows.
+É necessário saber que dispositivos estarão no ambiente e confirmar se são ou não suportados pelo Intune durante a criação da sua estrutura. Intune suporta plataformas iOS/iPadOS, Android e Windows.
 
 [Lista completa dos dispositivos suportados pelo Intune](supported-devices-browsers.md).
 
@@ -225,11 +225,11 @@ Nestas secções, analisamos as seguintes funcionalidades e capacidades que est�
 
 - Perfis de recursos
 
-- Apps
+- Aplicações
 
 - Política de conformidade
 
-- Conditional Access
+- Acesso Condicional
 
 Analisemos cada uma destas áreas mais detalhadamente.
 
@@ -296,8 +296,8 @@ Eis um exemplo de como pode documentar os certificados durante a estruturação:
 
 | **Tipo** | **Nome do perfil** | **Plataforma de dispositivo** | **Casos de utilização** |   
 |:---:|:---:|:---:|:---:|
-| AC de Raiz | AC de Raiz Empresarial | Android, iOS, Windows Mobile | Empresarial, BYOD  |                                                           
-| SCEP | Certificado de Utilizadores | Android, iOS, Windows Mobile | Empresarial, BYOD |                                                           
+| AC de Raiz | AC de Raiz Empresarial | Android, iOS/iPadOS, Windows mobile | Empresarial, BYOD  |                                                           
+| SCEP | Certificado de Utilizadores | Android, iOS/iPadOS, Windows mobile | Empresarial, BYOD |                                                           
 
 
 Pode [transferir um modelo da tabela acima](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) para identificar as suas necessidades de perfis de certificado.
@@ -311,7 +311,7 @@ Segue-se um exemplo de uma estrutura de um perfil de Wi-Fi:
 | **Tipo** | **Nome do perfil** | **Plataforma de dispositivo** | **Casos de utilização** |
 |:---:|:---:|:---:|:---:|
 | Wi-Fi | Perfil de Wi-Fi na Ásia | Android | Empresarial, BYOD na região da Ásia|
-| Wi-Fi | Perfil de Wi-Fi da América do Norte | Android, iOS, Windows 10 Mobile | Empresarial, BYOD na região da América do Norte |
+| Wi-Fi | Perfil de Wi-Fi da América do Norte | Android, iOS/iPadOS, Windows 10 Mobile | Empresarial, BYOD na região da América do Norte |
 
 Pode [transferir um modelo da tabela acima](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) para identificar as suas necessidades de perfis de Wi-Fi.
 
@@ -323,7 +323,7 @@ Segue-se um exemplo de como documentar a estrutura de um perfil VPN.
 
 | **Tipo** | **Nome do perfil** | **Plataforma de dispositivo** | **Casos de utilização** |
 |:---:|:---:|:---:|:---:|
-| VPN | Perfil VPN Cisco qualquer ligação | Android, iOS, Windows 10 Mobile | Empresarial, BYOD na América do Norte e Alemanha|
+| VPN | Perfil VPN Cisco qualquer ligação | Android, iOS/iPadOS, Windows 10 Mobile | Empresarial, BYOD na América do Norte e Alemanha|
 | VPN | Pulse Secure | Android | Empresarial, BYOD na região da Ásia |
 
 Pode [transferir um modelo da tabela acima](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) para identificar as suas necessidades de perfis de VPN.
@@ -340,7 +340,7 @@ Segue-se um exemplo de como documentar a estrutura de perfis de e-mail:
 | Perfil de e-mail | Perfil de e-mail Android Knox | Android Knox | BYOD |
 
 Pode [transferir um modelo da tabela acima](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) para identificar as suas necessidades de perfis de e-mail.
-### <a name="apps"></a>Apps
+### <a name="apps"></a>Aplicações
 
 Pode utilizar o Intune para disponibilizar aplicações aos utilizadores ou dispositivos de várias formas. O tipo de aplicação inclui aplicações de instalador de software, aplicações de uma loja de aplicações pública, ligações externas ou aplicações iOS geridas. Além das implementações de aplicações individuais, pode gerir e implementar aplicações compradas em volume obtidas através dos programas de aquisição em volume para iOS e Windows. Saiba mais sobre:
 
@@ -374,11 +374,11 @@ As políticas de proteção de aplicações minimizam a perda de dados ao defini
 | **Application** | **Objetivo** | **Plataformas** | **Caso de utilização** | **Política de proteção de aplicações** |
 |:---:|:---:|:---:|:---:|:---:|
 | Outlook Mobile  | Disponível | iOS | Empresarial – Executivos | Não pode ser desbloqueado por jailbreak, encriptar ficheiros |                                                         
-| Word | Disponível | iOS, Android – Samsung Knox, não Knox, Windows 10 Mobile | Empresarial, BYOD | Não pode ser desbloqueado por jailbreak, encriptar ficheiros |                                                         
+| Word | Disponível | iOS/iPadOS, Android - Samsung Knox, non-Knox, Windows 10 mobile | Empresarial, BYOD | Não pode ser desbloqueado por jailbreak, encriptar ficheiros |                                                         
 
 
 Pode [transferir um modelo da tabela acima](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) para identificar as suas necessidades de políticas de proteção de aplicações.
-#### <a name="compliance-policies"></a>Compliance políticas
+#### <a name="compliance-policies"></a>Políticas de conformidade
 
 As políticas de conformidade determinam se um dispositivo cumpre determinados requisitos. O Intune utiliza políticas de conformidade para determinar se um dispositivo é considerado como estando ou não em conformidade. O estado de conformidade pode depois ser utilizado para restringir ou permitir o acesso a recursos da empresa. Se for necessário acesso condicional, recomendamos que desenhe uma política de conformidade do [dispositivo.](../protect/device-compliance-get-started.md)
 
@@ -388,11 +388,11 @@ Segue-se um exemplo de como estruturar uma política de conformidade:
 
 | **Nome da política** | **Plataforma de dispositivo** | **Definições** | **Grupo de destino** |
 |:---:|:---:|:---:|:---:|
-| Política de conformidade | iOS, Android – Samsung Knox, não Knox, Windows 10 Mobile | PIN – obrigatório, não pode ser desbloqueado por jailbreak | Empresarial, BYOD |
+| Política de conformidade | iOS/iPadOS, Android - Samsung Knox, non-Knox, Windows 10 mobile | PIN – obrigatório, não pode ser desbloqueado por jailbreak | Empresarial, BYOD |
 
 
 Pode [transferir um modelo da tabela acima](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) para identificar as suas necessidade de políticas de conformidade.
-#### <a name="conditional-access-policies"></a>Políticas de acesso condicional
+#### <a name="conditional-access-policies"></a>Políticas de Acesso Condicional
 
 O Acesso Condicional é utilizado para permitir que apenas dispositivos conformes acedam a emails e outros recursos da empresa. O Intune funciona com o Enterprise Mobility + Security (EMS) para controlar o acesso aos recursos da empresa. Decida se necessita de Acesso Condicional e o que deve ser garantido. Saiba mais sobre o [Acesso Condicional](../protect/conditional-access.md).
 
@@ -404,8 +404,8 @@ Aqui está um exemplo de como documentar as políticas de Acesso Condicional:
 
 | **Serviço** | **Plataformas de Autenticação Moderna** | **Autenticação Básica** | **Casos de utilização** |
 |:---:|:---:|:---:|:---:|
-| Exchange online | iOS, Android | Bloquear dispositivos não conformes em plataformas suportadas pelo Intune | Empresarial, BYOD |
-| SharePoint Online | iOS, Android |  | Empresarial, BYOD |
+| Exchange online | iOS/iPadOS, Android | Bloquear dispositivos não conformes em plataformas suportadas pelo Intune | Empresarial, BYOD |
+| SharePoint Online | iOS/iPadOS, Android |  | Empresarial, BYOD |
 
 Pode [descarregar um modelo da tabela acima](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) para identificar as suas necessidades de política de Acesso Condicional.
 

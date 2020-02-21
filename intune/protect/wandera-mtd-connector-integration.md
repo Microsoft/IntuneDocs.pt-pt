@@ -1,7 +1,7 @@
 ---
-title: Configurar a integração da proteção contra ameaças móveis do com o Intune
+title: Configurar a integração de Proteção contra Ameaças Móveis wandera com Intune
 titleSuffix: Intune on Azure
-description: Como configurar a solução de proteção contra ameaças móveis do enbackupa com Microsoft Intune para controlar o acesso de dispositivos móveis aos seus recursos corporativos.
+description: Como configurar a solução Wandera Mobile Threat Protection com a Microsoft Intune para controlar o acesso de dispositivos móveis aos seus recursos corporativos.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -15,23 +15,23 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e565f40aac2a2b97f547a5b68a70a887d9e820ae
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: d90e3757ced90bea21e4033b6baa93bfa201b1f2
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207473"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514222"
 ---
-# <a name="integrate-wandera-mobile-threat-protection-with-intune"></a>Integre a proteção contra ameaças móveis do com o Intune  
+# <a name="integrate-wandera-mobile-threat-protection-with-intune"></a>Integrar a Wandera Mobile Threat Protection com Intune  
 
-Conclua as etapas a seguir para integrar a solução de defesa contra ameaças móveis do com o Intune.  
+Complete os seguintes passos para integrar a solução Wandera Mobile Threat Defense com intune.  
 
 > [!NOTE]
-> Este fornecedor de defesa contra ameaças móveis não tem suporte para dispositivos não registrados.
+> Este fornecedor de Defesa de Ameaças Móveis não é suportado para dispositivos não matriculados.
 
 ## <a name="before-you-begin"></a>Antes de começar  
 
-Antes de iniciar o processo de integração do com o Intune, verifique se você tem os seguintes pré-requisitos em vigor:
+Antes de iniciar o processo de integração do Wandera com o Intune, certifique-se de que tem os seguintes pré-requisitos no lugar:
 - Subscrição do Microsoft Intune  
 - Credenciais de administrador do Azure Active Directory para conceder as seguintes permissões:  
   - Iniciar sessão e ler o perfil de utilizador  
@@ -39,86 +39,86 @@ Antes de iniciar o processo de integração do com o Intune, verifique se você 
   - Ler dados do diretório  
   - Enviar informações do dispositivo para o Intune  
 
-- Assinatura do:
-  - Uma ou mais contas de conexão IN1 que são licenciadas para o EMM Connect  
-  - Uma conta com privilégios de superadministrador no  
+- Assinatura Wandera:
+  - Uma ou mais contas Wandera que são licenciadas para emM Connect  
+  - Uma conta com privilégios de super administrador em Wandera  
  
-### <a name="wandera-mobile-threat-defense-app-authorization"></a>Autorização do aplicativo de defesa contra ameaças móveis do  
+### <a name="wandera-mobile-threat-defense-app-authorization"></a>Autorização de aplicação wandera Mobile Threat Defense  
 
-O processo de autorização do aplicativo de defesa contra ameaças móveis do:  
-- Permita que o serviço de defesa contra ameaças móveis do to the to Mobile comunique informações relacionadas ao estado de integridade do dispositivo de volta para o Intune.  
-- A inscrições sincroniza com a associação do grupo de registros do Azure AD para preencher o banco de dados do dispositivo.  
-- Permitir que o portal de administração de RADAR do backit use o SSO (logon único) do Azure AD.  
-- Permitir que o aplicativo de defesa contra ameaças móveis do Inscreva-se entre usando o SSO do Azure AD.  
+O processo de autorização da aplicação Wandera Mobile Threat Defense:  
+- Permitir que o serviço wandera mobile threat defense comunique informações relacionadas com o estado de saúde do dispositivo de volta ao Intune.  
+- A Wandera sincroniza-se com a adesão do Grupo de Inscrição da AD Azure para preencher a base de dados do seu dispositivo.  
+- Permita que o portal de administração Wandera RADAR utilize o Letreiro Único Azure AD (SSO).  
+- Permita que a aplicação Wandera Mobile Threat Defense assine a utilização do Azure AD SSO.  
 
 
-## <a name="set-up-wandera-mobile-threat-defense-integration"></a>Configurar a integração da defesa contra ameaças móveis do  
-A instalação do *EMM Connect* para o backr requer um processo de configuração única que você concluiu tanto nos consoles do Intune quanto no inconnecta. O processo de configuração leva cerca de 15 minutos. Você pode concluir a configuração sem coordenação com sua conta técnica do onentrar ou representante de suporte.  
+## <a name="set-up-wandera-mobile-threat-defense-integration"></a>Criar a integração da Defesa de Ameaças Móveis Wandera  
+A configuração do *EMM Connect* for Wandera requer um processo de configuração único que completa nas consolas Intune e Wandera. O processo de configuração demora cerca de 15 minutos. Pode completar a configuração sem coordenação com a sua conta técnica Wandera ou representante de suporte.  
 
-### <a name="enable-support-for-wandera-in-intune"></a>Habilitar o suporte para o no Intune
+### <a name="enable-support-for-wandera-in-intune"></a>Ativar suporte para Wandera em Intune
 
-1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
-2. Selecione **Administração de locatários** > **conectores e tokens** > **defesa contra ameaças móveis** > **Adicionar**.
-3. Na página **Adicionar conector** , use a lista suspensa **e selecione o**BackPage. E, em seguida, selecione **criar**.  
-4. No painel defesa contra ameaças móveis, selecione o conector **de MTD da** lista de conectores para abrir o painel *Editar conector* . Selecione **abrir o console de administração do** onit para abrir o [radar](https://radar.wandera.com/login), o console de administração do de saída e entre. 
-5. No console do backit, acesse **configurações** > **EMM integração**e selecione a guia **EMM Connect** . Use a lista suspensa *fornecedor do EMM* e selecione *Microsoft Intune*.
+1. Inscreva-se no centro de administração do [Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **a administração do Inquilino** > **Conectores e fichas** > **Defesa de Ameaças Móveis** > **Adicionar**.
+3. Na página **Add Connector,** utilize o dropdown e selecione **Wandera**. E, em seguida, **selecione Criar**.  
+4. No painel de Defesa de Ameaças Móveis, selecione o Conector **Wandera** MTD da lista de conectores para abrir o painel de *conectores Editar.* **Selecione Abra a consola de administração Wandera** para abrir o [RADAR,](https://radar.wandera.com/login)a consola de administração Wandera e inscreva-se. 
+5. Na consola Wandera, vá a **Definições** > **Integração EMM**, e selecione o separador **EMM Connect.** Utilize a queda do *Fornecedor EMM* e selecione *Microsoft Intune*.
 
    ![Selecione Intune](./media/wandera-mtd-connector-integration/set-up-intune-in-radar.png)
 
-6. Selecione **conceder permissões** para abrir uma conexão com o portal do Intune. Entre usando suas credenciais de administrador do Intune, marque a caixa de seleção e **aceite** a solicitação de permissões.  
+6. Selecione **permissões de Grant** para abrir uma ligação ao portal Intune. Inscreva-se utilizando as suas credenciais de administração Intune, selecione a caixa de verificação **e,** em seguida, aceite o pedido de permissões.  
 
    ![Aceitar permissões](./media/wandera-mtd-connector-integration/permissions.png) 
 
-7. A conexão completa e retorna para o console de administração de RADAR. Repita o processo para **conceder** acesso a configurações adicionais, conforme necessário.  
+7. A Wandera completa a ligação e devolve-o à consola de administração RADAR. Repita o processo para **conceder** acesso para configurações adicionais, conforme necessário.  
 
    ![Integrações e permissões](./media/wandera-mtd-connector-integration/integrations-and-permissions.png) 
 
-8. No console de RADAR, copie o nome do grupo **SyncOnly** que aparece abaixo do **EMM Label**. Você usará esse nome para configurar um grupo no Intune para sincronização com o.
+8. Enquanto estiver na consola RADAR, copie o nome do grupo **SyncOnly** que aparece abaixo da **etiqueta EMM**. Você usará este nome para configurar um grupo em Intune para sincronização com Wandera.
 
    ![Grupo de sincronização](./media/wandera-mtd-connector-integration/sync-group-name.png) 
 
-9. Retorne ao console do [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) e edite o conector do MTD. Defina as alternâncias disponíveis como **ativado**e **salve** a configuração.  
+9. Volte à consola [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) e edite o Conector Wandera MTD. Detete os toggles disponíveis para **On**e **guarde** a configuração.  
 
-   ![Habilitar a vagaa](./media/wandera-mtd-connector-integration/enable-wandera.png) 
+   ![Ativar wandera](./media/wandera-mtd-connector-integration/enable-wandera.png) 
 
-O Intune e o agora estão conectados.  
+Intune e Wandera estão agora ligados.  
 
-## <a name="configure-the-wandera-applications-and-synchronization-group"></a>Configurar os aplicativos e o grupo de sincronização do  
-Para implantar o, você adicionará os aplicativos móveis do backit para as plataformas usadas (Ios e Android) no Intune e os atribuirá a um grupo específico para sincronização; o grupo *SyncOnly* . 
+## <a name="configure-the-wandera-applications-and-synchronization-group"></a>Configure as aplicações wandera e o grupo de sincronização  
+Para implementar o Wandera, irá adicionar as aplicações móveis Wandera para as plataformas que utiliza (iOS e Android) ao Intune e atribuí-las a um grupo específico para sincronização; o grupo *SyncOnly.* 
 
-As seções e os procedimentos a seguir guiarão você pelo processo.
+As seguintes secções e procedimentos irão guiá-lo através deste processo.
 
-Para obter mais informações sobre esse processo do, entre no [radar](https://radar.wandera.com/login)de entrada. Vá para **configurações** > **integração do EMM**, selecione a guia **push de aplicativo** e, em seguida, selecione **Microsoft Intune**. A guia push de aplicativo é atualizada com instruções que são específicas para o Intune.  
+Para mais informações sobre este processo a partir de Wandera, inscreva-se no Wandera [RADAR](https://radar.wandera.com/login). Vá a **Definições** > **Integração EMM,** selecione o separador Push da **aplicação** e, em seguida, selecione **Microsoft Intune**. O separador Push app atualiza com instruções específicas para Intune.  
 
-### <a name="add-the-wandera-apps"></a>Adicionar os aplicativos do inphonea  
-Crie aplicativos cliente no Intune para implantar o aplicativo do backit em dispositivos Android e iOS. Consulte [adicionar aplicativos do MTD](mtd-apps-ios-app-configuration-policy-add-assign.md) para obter os procedimentos e detalhes personalizados específicos para os aplicativos do.  
+### <a name="add-the-wandera-apps"></a>Adicione as aplicações Wandera  
+Crie aplicações para clientes em Intune para implementar a aplicação Wandera para dispositivos Android e iOS/iPadOS. Consulte [aplicativos MTD adicionais](mtd-apps-ios-app-configuration-policy-add-assign.md) para os procedimentos e detalhes personalizados específicos das aplicações Wandera.  
 
-Depois de criar os aplicativos, retorne aqui para criar o grupo de sincronização e atribuir os aplicativos.
+Depois de criar as apps, volte aqui para criar o grupo de sincronização e atribuir as aplicações.
 
-### <a name="create-the-synchronization-group-and-assign-the-apps"></a>Criar o grupo de sincronização e atribuir os aplicativos
+### <a name="create-the-synchronization-group-and-assign-the-apps"></a>Crie o grupo de sincronização e atribua as aplicações
 
-1. Obtenha o nome do grupo **SyncOnly** que aparece abaixo do **rótulo EMM** de dentro do console de radar do backit. Você pode ter salvo esse nome durante a etapa 7 enquanto [habilita o suporte para](#enable-support-for-wandera-in-intune)o no Intune. Use esse nome como o nome do grupo no Intune para sincronização de innovat.  
+1. Obtenha o nome do grupo **SyncOnly** que aparece abaixo da **etiqueta EMM** a partir da consola Wandera RADAR. Pode ter guardado este nome durante o passo 7, ao mesmo tempo que [permitiu o apoio ao Wandera em Intune](#enable-support-for-wandera-in-intune). Use este nome como o nome do grupo em Intune para sincronização wandera.  
 
-2. No centro de administração do Endpoint Manager, vá para **grupos** e selecione **novo grupo**. Especifique o seguinte para configurar o grupo de sincronização para uso pelo:
-   - **Tipo de grupo**: **segurança**
-   - **Nome do grupo**: especifique o nome do **SyncOnly** que você recuperou do console de administração de radar do backit.
+2. No centro de administração do Endpoint Manager, vá a **Grupos** e selecione **Novo grupo**. Especifique o seguinte para configurar o grupo de sincronização para utilização pela Wandera:
+   - **Tipo de grupo**: **Segurança**
+   - **Nome do grupo**: Especifique o nome **SyncOnly** que recuperou da consola de administração Wandera RADAR.
 
    ![configurar o grupo de sincronização](./media/wandera-mtd-connector-integration/configure-sync-group.png)
 
-3. Selecione **Membros** e atribua grupos que incluam os dispositivos Android e Ios que você deseja usar com o.
+3. Selecione **Membros** e atribua grupos que incluam os dispositivos Android e iOS/iPadOS que pretende utilizar com o Wandera.
 
-4. Selecione **criar** para salvar o grupo.
+4. Selecione **Criar** para salvar o grupo.
 
-Para obter mais informações, consulte [implantar aplicativos](../apps/apps-deploy.md)
+Para mais informações, consulte [aplicações de implementação](../apps/apps-deploy.md)
 
-### <a name="assign-the-wandera-apps-to-the-synchronization-group"></a>Atribuir os aplicativos do ao grupo de sincronização  
-Repita o procedimento a seguir para o aplicativo do onit que você criou para iOS e para Android.
+### <a name="assign-the-wandera-apps-to-the-synchronization-group"></a>Atribuir as aplicações Wandera ao grupo de sincronização  
+Repita o seguinte procedimento para a aplicação Wandera que criou para iOS/iPadOS e para Android.
 
-1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
-2. Selecione **aplicativos** > **todos os aplicativos** e selecione o aplicativo do backit.
-3. Selecione **atribuições** e **Adicionar grupo**.  
-4. No painel *Adicionar grupo* , para *tipo de atribuição* , selecione **obrigatório**.
-5. Selecione **grupos incluídos**e **selecione grupos a serem incluídos**. Especifique o grupo que você criou para a sincronização de vagaa e clique em **selecionar** > **OK** > **OK**. Selecione **salvar** para concluir a atribuição de grupo. 
+1. Inscreva-se no centro de administração do [Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **Apps** > **Todas as aplicações** e selecione a aplicação Wandera.
+3. Selecione **Atribuições** e, em **seguida, Adicionar grupo**.  
+4. No painel do *grupo Adicionar,* para selecionar o tipo de *atribuição* **necessário**.
+5. Selecione **grupos incluídos**e, em seguida, **selecione grupos para incluir**. Especifique o grupo que criou para a sincronização do Wandera e, em seguida, clique em **Select** > **OK** > **OK**. Selecione **Guardar** para completar a atribuição do grupo. 
 
 ## <a name="next-steps"></a>Passos Seguintes  
-Agora que você configurou a integração, pode iniciar a configuração de políticas, configurar o acesso condicional avançado e exibir relatórios no console de administração do inicioa. Para saber mais sobre como gerenciar e configurar o, consulte o [Guia do centro de suporte introdução](https://radar.wandera.com/?return_to=https://wandera.force.com/Customer/s/getting-started) na documentação do backcenter. 
+Agora que configuraste a Integração, podes começar a configurar políticas, configurar um acesso condicional avançado e ver relatórios na consola de administração wandera. Para saber mais sobre gestão e configuração do Wandera, consulte o Guia de Arranque do Centro de [Apoio](https://radar.wandera.com/?return_to=https://wandera.force.com/Customer/s/getting-started) na documentação Wandera. 

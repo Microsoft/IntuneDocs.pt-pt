@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d04897d38c1b46f27fe86e72ecfa6856aa9eece2
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: acc8241bf5b9ea05fcb23772586d459ca9e5e143
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755682"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515106"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Criar uma política de acesso condicional para o Exchange on-pre-preser e legacy Exchange Online Dedicado
 
@@ -68,7 +68,7 @@ Antes de configurar o Acesso Condicional, verifique se existem as seguintes conf
 - Clientes de correio EAS em **dispositivos com perfil de trabalho do Android:** apenas as aplicações **Gmail** e **Nine Work para Android Enterprise** são suportadas no **perfil de trabalho** em dispositivos com perfil de trabalho do Android. Para o Acesso Condicional ao trabalho com perfis de trabalho Android, você deve implementar um perfil de e-mail para a aplicação Gmail ou Nine Work para Android Enterprise, e também implementar essas aplicações como uma instalação necessária.
 
 > [!NOTE]
-> O Microsoft Outlook para Android e iOS não é suportado através do conector Exchange on-premises. Se quiser alavancar as políticas de acesso condicional do Diretório Ativo Azure e as Políticas de Proteção de Aplicações Intune com Outlook para iOS e Android para as suas caixas de correio no local, consulte [A autenticação moderna híbrida com Outlook para iOS e Android.](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth)
+> O Microsoft Outlook para Android e iOS/iPadOS não é suportado através do conector Exchange on-premises. Se pretender alavancar as políticas de acesso condicional do Diretório Ativo Azure e as Políticas de Proteção de Aplicações Intune com Outlook para iOS/iPadOS e Android para as suas caixas de correio no local, consulte [A autenticação moderna híbrida com Outlook para iOS/iPadOS e Android.](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth)
 
 ### <a name="support-for-pcs"></a>Suporte de PCs
 
@@ -78,7 +78,7 @@ A aplicação de **correio** nativo no Windows 8.1 e mais tarde (quando inscrito
 
 Antes de poder utilizar o seguinte procedimento para configurar o controlo de acesso exchange on-local, deve instalar e configurar pelo menos um [conector de intercâmbio intune](exchange-connector-install.md) no local para o Exchange on-premido.
 
-1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Inscreva-se no [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
 2. Vá à **administração do Inquilino** > **Exchange access**, e, em seguida, selecione **exchange on-pre-presacesso**.
 

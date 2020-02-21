@@ -1,7 +1,7 @@
 ---
-title: Tutorial-Guia de instruções do Intune no portal do Azure
+title: Tutorial - Walkthrough Intune in the Azure portal
 titleSuffix: Microsoft Intune
-description: Neste tutorial, você fará um tour Microsoft Intune para entender melhor como realizar tarefas.
+description: Neste tutorial, você irá visitar o Microsoft Intune para entender melhor como realizar tarefas.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -18,21 +18,21 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9197d4f96eae1041b00b07110ef421a12a4fe338
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 203d243df3e8ae496e7ff78f20222fd361417c3d
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73712990"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514052"
 ---
-# <a name="tutorial-walkthrough-of-microsoft-intune-in-the-azure-portal"></a>Tutorial: passo a passos de Microsoft Intune no portal do Azure
+# <a name="tutorial-walkthrough-of-microsoft-intune-in-the-azure-portal"></a>Tutorial: Walkthrough da Microsoft Intune no portal Azure
 
-O [Azure](https://docs.microsoft.com/learn/modules/welcome-to-azure) contém mais de 100 serviços para ajudá-lo com uma variedade de cenários e possibilidades de computação em nuvem. Microsoft Intune é um dos vários serviços disponíveis no Azure. O Intune ajuda a garantir que os dispositivos, aplicativos e dados da sua empresa atendam aos requisitos de segurança da sua empresa. Você tem o controle para definir quais requisitos precisam ser verificados e o que acontece quando esses requisitos não são atendidos. Pode encontrar o serviço Microsoft Intune no [portal do Azure](https://portal.azure.com). A compreensão dos recursos disponíveis no Intune ajudará você a realizar várias tarefas de MDM (gerenciamento de dispositivo móvel) e MAM (gerenciamento de aplicativo móvel).
+[O Azure](https://docs.microsoft.com/learn/modules/welcome-to-azure) contém mais de 100 serviços para o ajudar com uma variedade de cenários e possibilidades de computação em nuvem. O Microsoft Intune é um dos vários serviços disponíveis no Azure. Intune ajuda-o a garantir que os dispositivos, aplicações e dados da sua empresa cumprem os requisitos de segurança da sua empresa. Tem o controlo para definir quais os requisitos que precisam de ser verificados e o que acontece quando esses requisitos não são cumpridos. Pode encontrar o serviço Microsoft Intune no [portal do Azure](https://portal.azure.com). Compreender as funcionalidades disponíveis no Intune irá ajudá-lo a realizar várias tarefas de Gestão de Dispositivos Móveis (MDM) e Gestão de Aplicações Móveis (MAM).
 
 Neste tutorial, irá:
 > [!div class="checklist"]
-> * Microsoft Intune de Tour
-> * Configurar o portal do Azure
+> * Tour Microsoft Intune
+> * Configure o portal Azure
 
 Se não tiver uma subscrição do Intune, [inscreva-se numa conta de avaliação gratuita](free-trial-sign-up.md).
 
@@ -44,104 +44,104 @@ Antes de configurar o Microsoft Intune, reveja os seguintes requisitos:
 
 ## <a name="sign-up-for-a-microsoft-intune-free-trial"></a>Inscreva-se numa avaliação gratuita do Microsoft Intune
 
-Pode experimentar o Intune de forma gratuita durante 30 dias. Se já tiver uma conta escolar ou profissional, **inicie sessão** com a mesma e adicione o Intune à sua subscrição. Caso contrário, você pode [se inscrever para uma conta de avaliação gratuita](free-trial-sign-up.md) para usar o Intune para sua organização.
+Pode experimentar o Intune de forma gratuita durante 30 dias. Se já tiver uma conta escolar ou profissional, **inicie sessão** com a mesma e adicione o Intune à sua subscrição. Caso contrário, pode [inscrever-se numa conta de teste gratuita](free-trial-sign-up.md) para usar o Intune para a sua organização.
 
 > [!IMPORTANT]
 > Não pode combinar uma conta escolar ou profissional existente após inscrever-se numa conta nova.
 
-## <a name="tour-microsoft-intune"></a>Microsoft Intune de Tour
+## <a name="tour-microsoft-intune"></a>Tour Microsoft Intune
 
-Siga as etapas abaixo para entender melhor o Intune no portal do Azure. Depois de concluir o Tour, você terá uma compreensão melhor de algumas das principais áreas do Intune.
+Siga os passos abaixo para entender melhor Intune no portal Azure. Assim que completar o tour, terá uma melhor compreensão de algumas das principais áreas de Intune.
 
-1. Abra um navegador e entre no portal do [Intune](https://aka.ms/intuneportal). Se você for novo no Intune, use sua assinatura de avaliação gratuita.
+1. Abra um navegador e inscreva-se no [portal Intune](https://aka.ms/intuneportal). Se é novo em Intune, use a sua subscrição de teste gratuita.
 
-    ![Captura de tela do portal de Microsoft Intune](./media/tutorial-walkthrough-intune-portal/tutorial-walkthrough-intune-portal-01.png)
+    ![Screenshot do portal Microsoft Intune](./media/tutorial-walkthrough-intune-portal/tutorial-walkthrough-intune-portal-01.png)
 
-    Quando você abre o Intune ou qualquer outro serviço no Azure, o serviço é exibido em um painel. Algumas das primeiras cargas de trabalho que você pode usar no Intune incluem **dispositivos**, **aplicativos cliente**, **usuários**e **grupos**. Uma carga de trabalho é simplesmente uma subárea de um serviço. Quando você seleciona a carga de trabalho, ela abre esse painel como uma página inteira. Outros painéis deslizam do lado direito do painel quando são abertos e fecham para revelar o painel anterior. Um painel também é chamado de folha. 
+    Quando abre o Intune ou qualquer outro serviço em Azure, o serviço é exibido num painel. Algumas das primeiras cargas de trabalho que pode utilizar no Intune incluem **Dispositivos,** **aplicações de clientes,** **Utilizadores**e **Grupos.** Uma carga de trabalho é simplesmente uma sub-área de um serviço. Quando seleciona a carga de trabalho, abre-se o painel como uma página inteira. Outras vidraças deslizam para fora do lado direito do painel quando abrem, e perto para revelar o painel anterior. Um painel também é referido como uma lâmina. 
 
-    Por padrão, ao abrir o Intune, você verá o painel **visão geral** . Esse painel fornece um instantâneo Visual geral da atribuição de dispositivo e do status de conformidade, bem como o status de instalação do aplicativo.
+    Por defeito, quando abrir Intune verá o painel de **visão geral.** Este painel fornece uma imagem geral da atribuição e do estado de conformidade do dispositivo, bem como o estado de instalação da aplicação.
 
-2. No [Intune](https://aka.ms/intuneportal), selecione **registro de dispositivo** para exibir detalhes sobre os dispositivos registrados no seu locatário do Intune. Se você estiver começando com um novo locatário do Intune, ainda não terá nenhum dispositivo registrado. 
+2. A partir de [Intune,](https://aka.ms/intuneportal)selecione **a inscrição do Dispositivo** para apresentar detalhes sobre os dispositivos matriculados no seu inquilino Intune. Se você está começando com um novo inquilino Intune, você não terá nenhum dispositivo matriculado ainda. 
 
-    ![Captura de tela do painel de registro do dispositivo](./media/tutorial-walkthrough-intune-portal/tutorial-walkthrough-intune-portal-02.png)
+    ![Screenshot do painel de inscrição do dispositivo](./media/tutorial-walkthrough-intune-portal/tutorial-walkthrough-intune-portal-02.png)
     
-    O Intune permite que você gerencie os dispositivos e aplicativos da sua força de funcionários, incluindo como eles acessam os dados da empresa. Para usar esse serviço de MDM (gerenciamento de dispositivo móvel), os dispositivos devem primeiro ser registrados no Intune. Quando um dispositivo é inscrito, é emitido um certificado MDM. Este certificado é utilizado para comunicar com o serviço Intune. 
+    Intune permite-lhe gerir os dispositivos e aplicações da sua força de trabalho, incluindo a forma como acedem aos dados da sua empresa. Para utilizar este serviço de gestão de dispositivos móveis (MDM), os dispositivos devem ser matriculados primeiro em Intune. Quando um dispositivo é inscrito, é emitido um certificado MDM. Este certificado é utilizado para comunicar com o serviço Intune. 
 
-    Há vários métodos para registrar os dispositivos da sua força de funcionários no Intune. Cada método depende da propriedade do dispositivo (pessoal ou empresarial), do tipo de dispositivo (iOS, Windows, Android) e dos requisitos de gestão (reposições, afinidade, bloqueio). No entanto, antes de poder habilitar o registro do dispositivo, você deve configurar sua infraestrutura do Intune. Em particular, a inscrição de dispositivos requer que [defina a autoridade de MDM](mdm-authority-set.md). Para obter mais informações sobre como preparar seu ambiente do Intune (locatário), consulte [Configurar o Intune](setup-steps.md). Quando o seu locatário do Intune estiver pronto, você poderá registrar dispositivos. Para obter mais informações sobre a inscrição de dispositivos, veja [O que é a inscrição de dispositivos?](../enrollment/device-enrollment.md)
+    Existem vários métodos para inscrever os dispositivos da sua força de trabalho no Intune. Cada método depende da propriedade do dispositivo (pessoal ou corporativo), do tipo de dispositivo (iOS/iPadOS, Windows, Android) e dos requisitos de gestão (resets, afinidade, bloqueio). No entanto, antes de poder ativar a inscrição do dispositivo, tem de configurar a sua infraestrutura Intune. Em particular, a inscrição de dispositivos requer que [defina a autoridade de MDM](mdm-authority-set.md). Para mais informações sobre como preparar o seu ambiente Intune (inquilino), consulte [Configurar Intune](setup-steps.md). Assim que tiver o seu inquilino intune pronto, pode inscrever dispositivos. Para obter mais informações sobre a inscrição de dispositivos, veja [O que é a inscrição de dispositivos?](../enrollment/device-enrollment.md)
 
-3. No [Intune](https://aka.ms/intuneportal), selecione **conformidade do dispositivo** para exibir detalhes sobre a conformidade de dispositivos gerenciados pelo Intune. Você verá detalhes semelhantes à imagem a seguir.
+3. A partir de [Intune,](https://aka.ms/intuneportal)selecione a conformidade do **Dispositivo** para mostrar detalhes sobre a conformidade com os dispositivos geridos pela Intune. Verá detalhes semelhantes à seguinte imagem.
 
-    ![Captura de tela do painel de conformidade do dispositivo](./media/tutorial-walkthrough-intune-portal/tutorial-walkthrough-intune-portal-03.png)
+    ![Screenshot do painel de conformidade do dispositivo](./media/tutorial-walkthrough-intune-portal/tutorial-walkthrough-intune-portal-03.png)
     
-    Os requisitos de conformidade são essencialmente regras, como exigir um PIN de dispositivo ou exigir criptografia de dispositivo. As políticas de conformidade do dispositivo definem as regras e configurações que um dispositivo deve seguir para ser considerado em conformidade. Para usar a conformidade do dispositivo, você deve ter:
-    - Um Intune e uma assinatura do Azure Active Directory (Azure AD) Premium
-    - Dispositivos que executam uma plataforma com suporte
-    - Os dispositivos devem ser registrados no Intune
-    - Dispositivos registrados em um usuário ou nenhum usuário primário.
+    Os requisitos de conformidade são essencialmente regras, tais como exigir um PIN do dispositivo ou exigir encriptação do dispositivo. As políticas de conformidade do dispositivo definem as regras e definições que um dispositivo deve seguir para ser considerada conforme. Para utilizar a conformidade do dispositivo, deve ter:
+    - Uma subscrição Premium intune e um Azure Ative Directory (Azure AD)
+    - Dispositivos que executam uma plataforma suportada
+    - Os dispositivos devem ser matriculados em Intune
+    - Dispositivos que estejam matriculados num utilizador ou sem utilizador primário.
     
-    Para obter mais informações, consulte Introdução [às políticas de conformidade do dispositivo no Intune](../protect/device-compliance-get-started.md).
+    Para mais informações, consulte Iniciar as políticas de [conformidade do dispositivo em Intune](../protect/device-compliance-get-started.md).
 
-4. No [Intune](https://aka.ms/intuneportal), selecione **configuração do dispositivo** para exibir detalhes sobre perfis de dispositivo no Intune.
+4. A partir de [Intune,](https://aka.ms/intuneportal)selecione a **configuração do Dispositivo** para visualizar detalhes sobre os perfis do dispositivo no Intune.
 
-    ![Captura de tela do painel de configuração do dispositivo](./media/tutorial-walkthrough-intune-portal/tutorial-walkthrough-intune-portal-04.png)
+    ![Screenshot do painel de configuração do dispositivo](./media/tutorial-walkthrough-intune-portal/tutorial-walkthrough-intune-portal-04.png)
     
-    O Intune inclui definições e funcionalidades que pode ativar ou desativar em diferentes dispositivos na sua organização. Estas definições e funcionalidades são adicionadas aos “perfis de configuração”. Pode criar perfis para diferentes dispositivos e diferentes plataformas, incluindo iOS, Android e Windows. Em seguida, você pode usar o Intune para aplicar o perfil aos dispositivos em sua organização.   
+    O Intune inclui definições e funcionalidades que pode ativar ou desativar em diferentes dispositivos na sua organização. Estas definições e funcionalidades são adicionadas aos “perfis de configuração”. Pode criar perfis para diferentes dispositivos e diferentes plataformas, incluindo iOS/iPadOS, Android e Windows. Em seguida, pode usar o Intune para aplicar o perfil em dispositivos da sua organização.   
 
-    Para obter mais informações sobre a configuração do dispositivo, consulte [aplicar configurações de recursos em seus dispositivos usando perfis de dispositivo no Microsoft Intune](../configuration/device-profiles.md).
+    Para obter mais informações sobre a configuração do dispositivo, consulte [as definições de funcionalidades de Aplicação nos seus dispositivos utilizando perfis de dispositivos no Microsoft Intune](../configuration/device-profiles.md).
 
-5. No [Intune](https://aka.ms/intuneportal), selecione **dispositivos** para exibir detalhes sobre os dispositivos registrados do seu locatário do Intune. Se você estiver começando com uma nova inscrição do Intune, ainda não terá nenhum dispositivo registrado.
+5. A partir de [Intune,](https://aka.ms/intuneportal)selecione **Dispositivos** para mostrar detalhes sobre os dispositivos inscritos do seu inquilino Intune. Se estiver a começar com um novo alistamento Intune, ainda não terá nenhum dispositivo matriculado.
 
-    ![Captura de tela do painel de registro do dispositivo](./media/tutorial-walkthrough-intune-portal/tutorial-walkthrough-intune-portal-05.png)
+    ![Screenshot do painel de inscrição do dispositivo](./media/tutorial-walkthrough-intune-portal/tutorial-walkthrough-intune-portal-05.png)
 
-    O painel **dispositivos** fornece detalhes sobre os dispositivos registrados do seu locatário. Você pode clicar em **todos os dispositivos** para exibir uma lista de dispositivos para seu locatário do Intune.
+    O painel **de dispositivos** fornece detalhes sobre os dispositivos matriculados do seu inquilino. Pode clicar em **todos os dispositivos** para apresentar uma lista de dispositivos para o seu inquilino Intune.
 
-6. No [Intune](https://aka.ms/intuneportal), selecione **aplicativos cliente** para exibir o status de instalação do aplicativo.
+6. A partir de [Intune,](https://aka.ms/intuneportal)selecione **aplicações do Cliente** para exibir o estado de instalação da aplicação.
 
-    ![Captura de tela do painel aplicativos cliente](./media/tutorial-walkthrough-intune-portal/tutorial-walkthrough-intune-portal-06.png)
+    ![Screenshot do painel de aplicações do cliente](./media/tutorial-walkthrough-intune-portal/tutorial-walkthrough-intune-portal-06.png)
 
-    Enquanto administrador de TI, pode utilizar o Microsoft Intune para gerir as aplicações cliente utilizadas pela força de trabalho da sua empresa. Esta funcionalidade complementa a gestão de dispositivos e proteção de dados. Uma das prioridades de um administrador é garantir que os utilizadores finais têm acesso às aplicações que precisam para trabalhar. Além disso, pode querer atribuir e gerir aplicações em dispositivos que não estão inscritos no Intune. O Intune oferece várias funcionalidades para o ajudar a obter as aplicações de que precisa, nos dispositivos à sua escolha. Para obter mais informações sobre como adicionar e atribuir aplicativos, consulte [Add apps to Microsoft Intune](../apps/apps-add.md) and [assign apps to groups with Microsoft Intune](../apps/apps-deploy.md).
+    Enquanto administrador de TI, pode utilizar o Microsoft Intune para gerir as aplicações cliente utilizadas pela força de trabalho da sua empresa. Esta funcionalidade complementa a gestão de dispositivos e proteção de dados. Uma das prioridades de um administrador é garantir que os utilizadores finais têm acesso às aplicações que precisam para trabalhar. Além disso, pode querer atribuir e gerir aplicações em dispositivos que não estão inscritos no Intune. O Intune oferece várias funcionalidades para o ajudar a obter as aplicações de que precisa, nos dispositivos à sua escolha. Para obter mais informações sobre a adição e atribuição de apps, consulte [adicionar aplicações ao Microsoft Intune](../apps/apps-add.md) e [atribuir aplicações a grupos com](../apps/apps-deploy.md)o Microsoft Intune .
 
-7. No [Intune](https://aka.ms/intuneportal), selecione **acesso condicional** para exibir detalhes sobre as políticas de acesso.
+7. A partir de [Intune,](https://aka.ms/intuneportal)selecione **Acesso Condicional** para mostrar detalhes sobre as políticas de acesso.
 
-    ![Captura de tela do painel de acesso condicional](./media/tutorial-walkthrough-intune-portal/tutorial-walkthrough-intune-portal-07.png)
+    ![Screenshot do painel de acesso condicional](./media/tutorial-walkthrough-intune-portal/tutorial-walkthrough-intune-portal-07.png)
 
-    O acesso condicional refere-se a maneiras que você pode controlar os dispositivos e aplicativos que têm permissão para se conectar ao seu email e aos recursos da empresa. Para saber mais sobre o acesso condicional baseado em dispositivo e com base no aplicativo, e encontrar cenários comuns para usar o acesso condicional com o Intune, consulte [o que é o acesso condicional?](../protect/conditional-access.md)
+    O Acesso Condicional refere-se a formas de controlar os dispositivos e aplicações que podem ligar-se aos seus e-mails e recursos da empresa. Para conhecer o Acesso Condicional baseado em dispositivos e aplicativos, e encontrar cenários comuns para usar o Acesso Condicional com Intune, consulte [o What's Conditional Access?](../protect/conditional-access.md)
 
-8. No [Intune](https://aka.ms/intuneportal), selecione **usuários** para exibir detalhes sobre os usuários que você incluiu no Intune. Esses usuários são a força de obra da sua empresa.
+8. A partir de [Intune,](https://aka.ms/intuneportal)selecione **Utilizadores** para mostrar detalhes sobre os utilizadores que incluiu no Intune. Estes utilizadores são a força de trabalho da sua empresa.
 
-    ![Captura de tela do painel usuários](./media/tutorial-walkthrough-intune-portal/tutorial-walkthrough-intune-portal-08.png)
+    ![Screenshot do painel dos Utilizadores](./media/tutorial-walkthrough-intune-portal/tutorial-walkthrough-intune-portal-08.png)
 
-    Você pode adicionar usuários diretamente ao Intune ou sincronizar usuários do seu Active Directory local. Depois de adicionados, os utilizadores podem inscrever dispositivos e aceder a recursos da empresa. Você também pode conceder aos usuários permissões adicionais para acessar o Intune. Para obter mais informações, consulte [Adicionar usuários e conceder permissão administrativa ao Intune](users-add.md).
+    Pode adicionar utilizadores diretamente ao Intune ou sincronizar os utilizadores a partir do seu Diretório Ativo no local. Depois de adicionados, os utilizadores podem inscrever dispositivos e aceder a recursos da empresa. Também pode dar aos utilizadores permissões adicionais para aceder ao Intune. Para mais informações, consulte [Adicionar utilizadores e conceder permissão administrativa para Intune](users-add.md).
 
-9. No [Intune](https://aka.ms/intuneportal), selecione **grupos** para exibir detalhes sobre os grupos de Azure Active Directory (Azure AD) incluídos no Intune. Como administrador do Intune, você usa grupos para gerenciar dispositivos e usuários.
+9. A partir de [Intune,](https://aka.ms/intuneportal)selecione **Grupos** para mostrar detalhes sobre os grupos Azure Ative Directory (Azure AD) incluídos no Intune. Como administrador intune, utiliza grupos para gerir dispositivos e utilizadores.
 
-    ![Captura de tela do painel grupos](./media/tutorial-walkthrough-intune-portal/tutorial-walkthrough-intune-portal-09.png)
+    ![Screenshot do painel de grupos](./media/tutorial-walkthrough-intune-portal/tutorial-walkthrough-intune-portal-09.png)
 
-    Você pode configurar grupos para atender às suas necessidades organizacionais. Crie grupos para organizar utilizadores ou dispositivos por localização geográfica, departamento ou características de hardware. Utilize grupos para gerir tarefas em escala. Por exemplo, você pode definir políticas para muitos usuários ou implantar aplicativos em um conjunto de dispositivos. Para obter mais informações sobre grupos, consulte [Adicionar grupos para organizar usuários e dispositivos](../groups-add.md).
+    Pode criar grupos de acordo com as suas necessidades organizacionais. Crie grupos para organizar utilizadores ou dispositivos por localização geográfica, departamento ou características de hardware. Utilize grupos para gerir tarefas em escala. Por exemplo, pode definir políticas para muitos utilizadores ou implementar aplicações para um conjunto de dispositivos. Para obter mais informações sobre grupos, consulte [Adicionar grupos para organizar utilizadores e dispositivos](../groups-add.md).
 
-10. No [Intune](https://aka.ms/intuneportal), selecione **ajuda e suporte** para solicitar ajuda. Como administrador de ti, você pode usar a opção **ajuda e suporte** para pesquisar e exibir soluções, bem como o arquivo de um tíquete de suporte online para o Intune. 
+10. A partir de [Intune,](https://aka.ms/intuneportal)selecione **Ajuda e suporte** para pedir ajuda. Como administrador de TI, pode utilizar a opção **de Ajuda e Suporte** para pesquisar e visualizar soluções, bem como arquivar um bilhete de suporte on-line para Intune. 
 
-    ![Captura de tela do painel ajuda e suporte](./media/tutorial-walkthrough-intune-portal/tutorial-walkthrough-intune-portal-10.png)
+    ![Screenshot do painel de ajuda e suporte](./media/tutorial-walkthrough-intune-portal/tutorial-walkthrough-intune-portal-10.png)
 
-    Para criar um tíquete de suporte, sua conta deve ser atribuída como uma função de administrador no Azure Active Directory. As funções de administrador incluem, **administrador do Intune**, **administrador global**e **administrador de serviços**. Para obter mais informações, consulte [como obter suporte para Microsoft Intune](../get-support.md).
+    Para criar um bilhete de apoio, a sua conta deve ser atribuída como administrador a desempenhar funções de administrador no Diretório Ativo azure. As funções de administrador incluem, **administrador intune,** **administrador global,** e **administrador de serviços.** Para mais informações, consulte [Como obter suporte para o Microsoft Intune](../get-support.md).
 
-11. No [Intune](https://aka.ms/intuneportal), selecione **status do locatário** para exibir detalhes sobre seu locatário do Intune.
+11. A partir de [Intune,](https://aka.ms/intuneportal)selecione Estatuto de **Inquilino** para mostrar detalhes sobre o seu inquilino Intune.
 
-    ![Captura de tela do painel status do locatário](./media/tutorial-walkthrough-intune-portal/tutorial-walkthrough-intune-portal-11.png)
+    ![Screenshot do painel do Estatuto do Inquilino](./media/tutorial-walkthrough-intune-portal/tutorial-walkthrough-intune-portal-11.png)
 
-    Os detalhes de status do locatário incluem status do conector, integridade do serviço do Intune e notícias do Intune. Se houver algum problema com seu locatário ou o Intune em si, você encontrará detalhes no painel **status do locatário** . Para obter mais informações, consulte [status do locatário do Intune](../tenant-status.md).
+    Os detalhes do estado do inquilino incluem o estado do conector, a saúde do serviço Intune e as notícias Intune. Se houver algum problema com o seu inquilino ou com o próprio Intune, encontrará detalhes no painel do Estatuto do **Arrendatário.** Para mais informações, consulte [Intune Tenant Status](../tenant-status.md).
 
-12. No [Intune](https://aka.ms/intuneportal), selecione **solucionar problemas** para acessar um atalho sobre dicas de solução de problemas, solicitar suporte ou verificar o status do Intune. Essas informações são específicas do usuário do Intune que você selecionar.
+12. A partir de [Intune,](https://aka.ms/intuneportal)selecione **Troubleshoot** para chegar a um atalho em dicas de resolução de problemas, solicitando apoio ou verificando o estado de Intune. Esta informação é específica do utilizador Intune que seleciona.
 
-    ![Captura de tela do painel de solução de problemas](./media/tutorial-walkthrough-intune-portal/tutorial-walkthrough-intune-portal-12.png)
+    ![Screenshot do painel Troubleshoot](./media/tutorial-walkthrough-intune-portal/tutorial-walkthrough-intune-portal-12.png)
 
-Para obter mais informações sobre solução de problemas no Intune, consulte [usar o portal de solução de problemas para ajudar os usuários em sua empresa](../help-desk-operators.md).
+Para mais informações sobre resolução de problemas dentro do Intune, consulte Use o portal de resolução de [problemas para ajudar os utilizadores da sua empresa.](../help-desk-operators.md)
 
-## <a name="configure-the-azure-portal"></a>Configurar o portal do Azure
+## <a name="configure-the-azure-portal"></a>Configure o portal Azure
 
-O Azure permite que você personalize e configure a exibição do Portal.
+O Azure permite-lhe personalizar e configurar a vista do portal.
 
-### <a name="change-the-sidebar"></a>Alterar a barra lateral
+### <a name="change-the-sidebar"></a>Mude a barra lateral
 
 A **barra lateral** no lado esquerdo do portal do Azure mostra-lhe uma lista de todos os serviços do Azure disponíveis. A vista predefinida desta lista abrangente pode ser alterada para que mantenha uma vista persistente dos serviços mais relevantes para si. As informações abaixo utilizam o Intune como o exemplo de um serviço a adicionar ao topo da lista.
 
@@ -152,7 +152,7 @@ A **barra lateral** no lado esquerdo do portal do Azure mostra-lhe uma lista de 
 3. Selecione a **estrela** para adicionar o Intune à parte inferior da lista dos seus serviços preferidos.
 4. Paire o cursor sobre o serviço Intune. Selecione e arraste o Intune através dos **três pontos verticais** à direita do nome do serviço.
 
-### <a name="change-the-dashboard"></a>Alterar o painel
+### <a name="change-the-dashboard"></a>Mude o painel de instrumentos
 
 A sua página de destino predefinida é o **dashboard**. Esta é a página onde personaliza os seus mosaicos para apresentar as informações que lhe são mais relevantes.
 
@@ -168,7 +168,7 @@ Esta funcionalidade ser-lhe-á mais relevante após adicionar mais conteúdos, t
 
 ## <a name="next-steps"></a>Próximos passos
 
-Para ser executado rapidamente em Microsoft Intune, percorra os guias de início rápido do Intune primeiro Configurando uma conta gratuita do Intune.
+Para começar a correr rapidamente no Microsoft Intune, passe pelo Intune Quickstarts, criando primeiro uma conta Intune gratuita.
 
 > [!div class="nextstepaction"]
-> [Início rápido: Experimente o Microsoft Intune gratuitamente](free-trial-sign-up.md)
+> [Quickstart: Experimente o Microsoft Intune gratuitamente](free-trial-sign-up.md)

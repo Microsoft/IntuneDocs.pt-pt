@@ -1,11 +1,11 @@
 ---
-title: Solucionar problemas e examinar os logs de perfil do dispositivo Wi-Fi no Microsoft Intune-Azure | Microsoft Docs
-description: Entender e solucionar problemas de perfil de configuração de dispositivo Wi-Fi em dispositivos Android, iOS e Windows no Microsoft Intune. Examine os logs e veja alguns problemas comuns e possíveis resoluções.
+title: Troubleshoot e reveja os registos de perfis de dispositivowi-fi no Microsoft Intune - Azure Microsoft Docs
+description: Compreenda e problemas problemas de configuração do dispositivo Wi-Fi nos dispositivos Android, iOS/iPadOS e Windows no Microsoft Intune. Reveja os registos e consulte algumas questões comuns e possíveis resoluções.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,68 +16,68 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 70f471e7f4db7ddce89d8956474822375c684944
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: db663f96f1e4fe84c506395b98c52956069e5426
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547972"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77512828"
 ---
-# <a name="troubleshoot-wi-fi-device-configuration-profiles-in-microsoft-intune"></a>Solucionar problemas de perfis de configuração de dispositivo Wi-Fi no Microsoft Intune
+# <a name="troubleshoot-wi-fi-device-configuration-profiles-in-microsoft-intune"></a>Perfis de configuração de dispositivowi-fi de resolução de problemas no Microsoft Intune
 
-No Intune, você pode criar perfis de configuração de dispositivo que incluem configurações de conexão para sua rede WiFi. Use essas configurações para conectar dispositivos Android, iOS e Windows dos usuários à rede da organização.
+No Intune, pode criar perfis de configuração do dispositivo que incluam definições de ligação para a sua rede Wi-Fi. Utilize estas definições para ligar os dispositivos Android, iOS/iPadOS e Windows dos utilizadores à rede da organização.
 
-Este artigo mostra a aparência de um perfil de Wi-Fi quando ele se aplica com êxito aos dispositivos. Ele também inclui informações de log, problemas comuns e muito mais. Use este artigo para ajudar a solucionar os perfis de Wi-Fi.
+Este artigo mostra como é um perfil Wi-Fi quando se aplica com sucesso aos dispositivos. Também inclui informações de registo, questões comuns, e muito mais. Use este artigo para ajudar a resolver problemas com os seus perfis Wi-Fi.
 
-Para obter mais informações sobre perfis Wi-Fi no Intune, consulte [Adicionar e usar configurações de Wi-Fi em seus dispositivos](wi-fi-settings-configure.md).
+Para obter mais informações sobre os perfis Wi-Fi em Intune, consulte [Adicionar e utilizar as definições de Wi-Fi nos seus dispositivos](wi-fi-settings-configure.md).
 
 ## <a name="before-you-begin"></a>Antes de começar
 
-Os exemplos neste artigo usam a autenticação de certificado SCEP para os perfis do Intune. Ele também pressupõe que os perfis de raiz confiável e SCEP funcionem corretamente no dispositivo.
+Os exemplos deste artigo utilizam a autenticação de certificado SCEP para os perfis Intune. Também assume que os perfis Trust Root e SCEP funcionam corretamente no dispositivo.
 
 ## <a name="android"></a>Android
 
-Nesta seção, vamos percorrer a experiência do usuário final ao instalar os perfis de configuração em um dispositivo Android.
+Nesta secção, passamos pela experiência final do utilizador ao instalar os perfis de configuração num dispositivo Android.
 
-### <a name="end-user-experience-example"></a>Exemplo de experiência do usuário final
+### <a name="end-user-experience-example"></a>Exemplo de experiência de utilizador final
 
-Esse cenário usa um dispositivo Nokia 6,1. Antes de o perfil de Wi-Fi ser instalado no dispositivo, instale os perfis raiz confiável e SCEP.
+Este cenário utiliza um dispositivo Nokia 6.1. Antes de o perfil Wi-Fi ser instalado no dispositivo, instale os perfis Trust Root e SCEP.
 
-1. Os usuários finais recebem uma notificação para instalar o perfil de certificado raiz confiável:
+1. Os utilizadores finais recebem uma notificação para instalar o perfil do certificado Raiz Fidedigna:
 
     > [!div class="mx-imgBorder"]
-    > ![exemplo de notificação de aplicativo Portal da Empresa no Android para instalar o perfil de certificado raiz confiável](./media/troubleshoot-wi-fi-profiles/android-end-user-company-portal-trusted-root.png)
+    > ![notificação da aplicação Portal da Empresa de Amostras no Android para instalar](./media/troubleshoot-wi-fi-profiles/android-end-user-company-portal-trusted-root.png) de perfil de certificado de raiz fidedigna
 
 2. A próxima notificação solicita a instalação do perfil de certificado SCEP:
 
     > [!div class="mx-imgBorder"]
-    > ![exemplo de notificação de aplicativo Portal da Empresa no Android para instalar o perfil de certificado SCEP](./media/troubleshoot-wi-fi-profiles/android-end-user-company-portal-scep-certificate.png)
+    > ![Notificação da aplicação Portal da Empresa de Amostras  no Android para instalar o perfil de certificado SCEP](./media/troubleshoot-wi-fi-profiles/android-end-user-company-portal-scep-certificate.png)
 
     > [!TIP]
-    > Ao usar um dispositivo Android gerenciado pelo administrador do dispositivo, pode haver vários certificados listados. Quando um perfil de certificado é revogado ou removido, o certificado permanece no dispositivo. Nesse cenário, selecione o certificado mais recente. Normalmente, é o último certificado mostrado na lista.
+    > Ao utilizar um dispositivo Android gerido por administrador de dispositivos, pode haver vários certificados listados. Quando um perfil de certificado é revogado ou removido, o certificado permanece no dispositivo. Neste cenário, selecione o certificado mais recente. Normalmente é o último certificado mostrado na lista.
     >
-    > Essa situação não ocorre em dispositivos Android Enterprise e Samsung Knox. Para obter mais informações, consulte [gerenciar dispositivos de perfil de trabalho do Android](../enrollment/android-enterprise-overview.md) e remover os [certificados SCEP e PKCS](../protect/remove-certificates.md#android-knox-devices).
+    > Esta situação não ocorre nos dispositivos Android Enterprise e Samsung Knox. Para mais informações, consulte [Gerir dispositivos](../enrollment/android-enterprise-overview.md) de perfil de trabalho Android e [remover certificados SCEP e PKCS](../protect/remove-certificates.md#android-knox-devices).
 
-3. Em seguida, os usuários recebem uma notificação para instalar o perfil Wi-Fi:
-
-    > [!div class="mx-imgBorder"]
-    > ![exemplo de notificação de aplicativo Portal da Empresa no Android para instalar o perfil de certificado SCEP](./media/troubleshoot-wi-fi-profiles/android-end-user-install-wifi-profile.png)
-
-4. Ao concluir, a conexão Wi-Fi é mostrada como uma rede salva:
+3. Em seguida, os utilizadores recebem uma notificação para instalar o perfil Wi-Fi:
 
     > [!div class="mx-imgBorder"]
-    > ![conexão Wi-Fi é mostrada como uma rede salva](./media/troubleshoot-wi-fi-profiles/android-end-user-saved-networks.png)
+    > ![Notificação da aplicação Portal da Empresa de Amostras  no Android para instalar o perfil de certificado SCEP](./media/troubleshoot-wi-fi-profiles/android-end-user-install-wifi-profile.png)
 
-### <a name="review-company-portal-app-logs"></a>Examinar Portal da Empresa logs do aplicativo
+4. Quando concluída, a ligação Wi-Fi é mostrada como uma rede guardada:
 
-No Android, o arquivo **Omadmlog. log** detalha as atividades do perfil Wi-Fi quando ele está instalado no dispositivo. Você pode ter até cinco arquivos de log do Omadmlog. Certifique-se de obter o carimbo de data/hora da última sincronização, pois isso o ajudará a encontrar as entradas de log relacionadas.
+    > [!div class="mx-imgBorder"]
+    > ![ligação Wi-Fi mostra como uma rede salva](./media/troubleshoot-wi-fi-profiles/android-end-user-saved-networks.png)
 
-No exemplo a seguir, use [CMTrace](https://docs.microsoft.com/configmgr/core/support/cmtrace) para ler os logs e pesquise por "wifimgr":
+### <a name="review-company-portal-app-logs"></a>Rever registos de aplicativos do Portal da Empresa
+
+No Android, o ficheiro **Omadmlog.log** detalha as atividades do perfil Wi-Fi quando está instalado no dispositivo. Pode ter até cinco ficheiros de registo omadmlog. Certifique-se de obter o carimbo de tempo da última sincronização, pois irá ajudá-lo a encontrar as entradas de registo relacionadas.
+
+No exemplo seguinte, utilize a [CMTrace](https://docs.microsoft.com/configmgr/core/support/cmtrace) para ler os registos e procure "wifimgr":
 
 > [!div class="mx-imgBorder"]
-> ![conexão Wi-Fi é mostrada como uma rede salva](./media/troubleshoot-wi-fi-profiles/android-cmtrace-filter-wifimgr.png)
+> ![ligação Wi-Fi mostra como uma rede salva](./media/troubleshoot-wi-fi-profiles/android-cmtrace-filter-wifimgr.png)
 
-O log a seguir mostra os resultados da pesquisa e mostra o perfil de Wi-Fi aplicado com êxito:
+O seguinte registo mostra os resultados da sua pesquisa e mostra o perfil Wi-Fi aplicado com sucesso:
 
 ```log
 2019-08-01T19:22:46.7340000    VERB    com.microsoft.omadm.platforms.android.wifimgr.WifiProfile    15118    04142    Starting to parse Wifi Profile XML with name '<profile ID>'.
@@ -100,33 +100,33 @@ O log a seguir mostra os resultados da pesquisa e mostra o perfil de Wi-Fi aplic
 
 ```
 
-## <a name="ios"></a>iOS
+## <a name="iosipados"></a>iOS/iPadOS
 
-Depois que o perfil de Wi-Fi é instalado no dispositivo, ele é mostrado no **perfil de gerenciamento**:
-
-> [!div class="mx-imgBorder"]
-> ![perfil de gerenciamento no dispositivo iOS](./media/troubleshoot-wi-fi-profiles/ios-management-profile.png)
+Após a instalação do perfil Wi-Fi no dispositivo, é mostrado no Perfil de **Gestão:**
 
 > [!div class="mx-imgBorder"]
-> ![conexão Wi-Fi é mostrada como uma rede Wi-Fi no dispositivo iOS](./media/troubleshoot-wi-fi-profiles/ios-wifi-connection-in-management-profile.png)
+> perfil de gestão ![no dispositivo iOS/iPadOS em Intune](./media/troubleshoot-wi-fi-profiles/ios-management-profile.png)
 
-### <a name="review-the-ios-console-and-device-logs"></a>Examinar os logs do console e do dispositivo do iOS
+> [!div class="mx-imgBorder"]
+> ![ligação Wi-Fi mostra como uma rede Wi-Fi no dispositivo iOS/iPadOS em Intune](./media/troubleshoot-wi-fi-profiles/ios-wifi-connection-in-management-profile.png)
 
-Em dispositivos iOS, o log do aplicativo Portal da Empresa não inclui informações sobre perfis Wi-Fi. Para ver os detalhes de instalação dos seus perfis de Wi-Fi, use os logs de console/dispositivo:
+### <a name="review-the-iosipados-console-and-device-logs"></a>Reveja os registos de consolas iOS/iPadOS e dispositivos
 
-1. Conecte o dispositivo iOS ao Mac. Vá para **aplicativos** > **utilitários**e abra o aplicativo de console.
-2. Em **ação**, selecione **incluir mensagens de informações** e **incluir mensagens de depuração**:
+Nos dispositivos iOS/iPadOS, o registo de aplicações do Portal da Empresa não inclui informações sobre perfis Wi-Fi. Para ver detalhes de instalação dos seus perfis Wi-Fi, utilize os Registos consola/dispositivo:
+
+1. Ligue o dispositivo iOS/iPadOS ao Mac. Vá a **Aplicações** > **Utilities**e abra a aplicação Consola.
+2. Em **ação,** **selecione Incluir Mensagens de Informação** e incluir **Mensagens de Depuração:**
 
     > [!div class="mx-imgBorder"]
-    > ![incluir mensagens de informações e incluir mensagens de depuração no aplicativo de console do iOS](./media/troubleshoot-wi-fi-profiles/ios-console-app-include-info-messages-debug-messages.png)
+    > ![incluir mensagens de informação e incluir mensagens de depuração na aplicação de consola iOS/iPadOS](./media/troubleshoot-wi-fi-profiles/ios-console-app-include-info-messages-debug-messages.png)
 
-3. Reproduzir o cenário e salvar os logs em um arquivo de texto:
+3. Reproduza o cenário e guarde os registos para um ficheiro de texto:
 
-    1. Selecione todas as mensagens na tela atual: **editar** > **selecionar tudo**.
-    2. Copie as mensagens: **editar** > **cópia**.
-    3. Cole os dados de log em um editor de texto e salve o arquivo.
+    1. Selecione todas as mensagens no ecrã atual: **Editar** > **Selecione Tudo**.
+    2. Copiar as mensagens: **Editar** > **Copiar**.
+    3. Colhe os dados de registo num editor de texto e guarde o ficheiro.
 
-4. Pesquise o arquivo de log salvo para ver informações detalhadas. Quando o perfil é instalado com êxito, sua saída é semelhante ao seguinte log:
+4. Procure no ficheiro de registo guardado para ver informações detalhadas. Quando o perfil instala com sucesso, a sua saída é semelhante ao seguinte registo:
 
     ```log
     Line 390870: debug    11:19:58.994815 -0400    profiled    Adding dependent www.windowsintune.com.wifi.Contoso to parent Microsoft.Profiles.MDM in domain ManagingProfileToManagedProfile to system\
@@ -136,30 +136,30 @@ Em dispositivos iOS, o log do aplicativo Portal da Empresa não inclui informaç
 
 ## <a name="windows"></a>Windows
 
-Depois que o perfil de Wi-Fi for instalado no dispositivo, vá para **configurações** > **contas** > **acessar trabalho ou escola**. Selecione sua conta > **informações**:
+Depois de instalado o perfil Wi-Fi no dispositivo, aceda a **Definições** > **Contas** > Trabalho de **Acesso ou escola**. Selecione a sua conta > **Informação:**
 
 > [!div class="mx-imgBorder"]
-> ![acessar o trabalho ou a escola e selecionar informações no dispositivo Windows](./media/troubleshoot-wi-fi-profiles/windows-access-work-school-info.png)
+> ![Aceder ao trabalho ou à escola e selecionar Informações sobre dispositivos Windows](./media/troubleshoot-wi-fi-profiles/windows-access-work-school-info.png)
 
-Em **áreas gerenciadas pela Microsoft, a** **WiFi** é mostrada:
-
-> [!div class="mx-imgBorder"]
-> ![em áreas gerenciadas pela Microsoft, veja se o WiFi está listado no Windows](./media/troubleshoot-wi-fi-profiles/windows-wifi-areas-managed-by-microsoft.png)
-
-Para ver a conexão Wi-Fi, vá para **configurações** > **rede & Internet**  > **Wi-Fi**:
+Em **Áreas geridas pela Microsoft,** o **Wi-Fi** é mostrado:
 
 > [!div class="mx-imgBorder"]
-> ![no Windows, consulte a conexão Wi-Fi como uma rede conhecida em configurações](./media/troubleshoot-wi-fi-profiles/windows-wifi-connection-known-networks.png)
+> ![Nas áreas geridas pela Microsoft, veja que o Wi-Fi está listado no Windows](./media/troubleshoot-wi-fi-profiles/windows-wifi-areas-managed-by-microsoft.png)
 
-### <a name="review-event-viewer-logs"></a>Examinar logs do Visualizador de eventos
+Para ver a ligação Wi-Fi, vá a **Definições** > **Rede e Internet**  > **Wi-Fi:**
 
-Em dispositivos Windows, os detalhes sobre perfis Wi-Fi são registrados no Visualizador de Eventos:
+> [!div class="mx-imgBorder"]
+> ![No Windows, veja a ligação Wi-Fi como uma rede conhecida em definições](./media/troubleshoot-wi-fi-profiles/windows-wifi-connection-known-networks.png)
 
-1. Abra o aplicativo **Visualizador de eventos** .
-2. No menu **Exibir** , selecione **Mostrar logs analíticos e de depuração**.
-3. Expanda **logs de aplicativos e serviços** > **Microsoft** > **Windows** > **DeviceManagement-Enterprise-Diagnostic-Provider** > **admin**
+### <a name="review-event-viewer-logs"></a>Rever registos de espectadores de eventos
 
-Sua saída semelhante aos seguintes logs:
+Nos dispositivos Windows, os detalhes sobre os perfis Wi-Fi estão registados no Visualizador de Eventos:
+
+1. Abra a aplicação **Espectador de Eventos.**
+2. No menu **'Ver',** selecione **Registos Desalíticos e Debug**.
+3. Expandir registos de **aplicações e serviços** > **Microsoft** > **Windows** > **Dispositivos Gestão-Empresa-Provedor de Diagnóstico** > **Admin**
+
+A sua saída é semelhante aos seguintes registos:
 
 ```log
 Log Name:      Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider/Admin
@@ -177,45 +177,45 @@ WiFiConfigurationServiceProvider: Node set value, type: (0x4), Result: (The oper
 
 ## <a name="common-issues"></a>Problemas comuns
 
-### <a name="issue-1-the-wi-fi-profile-isnt-deployed-to-the-device"></a>Problema 1: o perfil de Wi-Fi não é implantado no dispositivo
+### <a name="issue-1-the-wi-fi-profile-isnt-deployed-to-the-device"></a>Edição 1: O perfil Wi-Fi não está implantado no dispositivo
 
-- Confirme se o perfil de Wi-Fi está atribuído ao grupo correto:
+- Confirme que o perfil Wi-Fi é atribuído ao grupo correto:
 
-    1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), selecione **dispositivos** > **perfis de configuração**.
-    2. Selecione seu perfil > **atribuições**. Confirme se os grupos selecionados estão corretos.
-    3. No Gerenciador de pontos de extremidade, selecione **solução de problemas + suporte**. Examine as informações de **atribuições** .
+    1. No centro de administração do [Microsoft Endpoint Manager,](https://go.microsoft.com/fwlink/?linkid=2109431)selecione **Dispositivos** > perfis de **configuração**.
+    2. Selecione o seu perfil > **Atribuições**. Confirme que os grupos selecionados estão corretos.
+    3. No Endpoint Manager, selecione **Troubleshooting + Suporte**. Reveja a informação de **Atribuição.**
 
-- No Gerenciador de pontos de extremidade, selecione **solução de problemas + suporte**. Confirme se o dispositivo pode sincronizar com o Intune verificando a hora da **última verificação** .
+- No Endpoint Manager, selecione **Troubleshooting + Suporte**. Confirme que o dispositivo pode sincronizar com Intune verificando o **último check-in a** tempo.
 
-- Se o perfil de Wi-Fi estiver vinculado aos perfis raiz confiável e SCEP, confirme se ambos os perfis estão implantados no dispositivo. O perfil de Wi-Fi tem uma dependência desses perfis.
+- Se o perfil Wi-Fi estiver ligado aos perfis Trust Root e SCEP, confirme que ambos os perfis estão implantados no dispositivo. O perfil Wi-Fi tem uma dependência destes perfis.
 
-- Em dispositivos Windows 10 e mais recentes, examine o log de informações de diagnóstico do MDM:
+- No Windows 10 e dispositivos mais recentes, reveja o registo de Informações de Diagnóstico do MDM:
 
-  1. Acesse **configurações** > **contas** > **acessar trabalho ou escola**.
-  2. Selecione sua conta corporativa ou de estudante > **informações**.
-  3. Na parte inferior da página **configurações** , selecione **criar relatório**.
-  4. Uma janela é aberta e mostra o caminho para os arquivos de log. Selecione **Export** (Exportar).
-  5. Vá para o caminho de `\Users\Public\Documents\MDMDiagnostics` e exiba o relatório:
+  1. Vá a **Definições** > **Contas** > **Trabalho de acesso ou escola.**
+  2. Selecione o seu trabalho ou conta escolar > **Info**.
+  3. Na parte inferior da página **Definições,** selecione **Criar relatório**.
+  4. Abre-se uma janela que mostra o caminho para os ficheiros de registo. Selecione **Exportação**.
+  5. Vá ao caminho `\Users\Public\Documents\MDMDiagnostics` e veja o relatório:
 
       > [!div class="mx-imgBorder"]
-      > ![informações de diagnóstico de MDM de exemplo que mostram a configuração de perfil de WiFi em dispositivos Windows 10](./media/troubleshoot-wi-fi-profiles/windows-mdm-diagnostic-info.png)
+      > ![Amostra de Informação de Diagnóstico do MDM que mostra a configuração do perfil Wi-Fi nos dispositivos do Windows 10](./media/troubleshoot-wi-fi-profiles/windows-mdm-diagnostic-info.png)
 
   > [!TIP]
-  > Para obter mais informações, consulte [diagnosticar falhas de MDM no Windows 10](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10).
+  > Para mais informações, consulte [diagnosticar falhas de MDM no Windows 10](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10).
 
-- Em dispositivos Android, se os perfis raiz confiável e SCEP não estiverem instalados no dispositivo, você verá a seguinte entrada no arquivo de Omadmlog do aplicativo de Portal da Empresa:
+- Nos dispositivos Android, se os perfis Trust Root e SCEP não estiverem instalados no dispositivo, vê a seguinte entrada no ficheiro Omadmlog da aplicação Portal da Empresa:
 
   ``` log
   2019-08-01T19:18:13.5120000    INFO    com.microsoft.omadm.platforms.android.wifimgr.WifiProfileManager    15118    04105    Skipping Wifi profile <profile ID> because it is pending certificates.
   ```
 
-  - Quando os perfis raiz confiável e SCEP estão no dispositivo Android e estão em conformidade, o perfil Wi-Fi pode não estar no dispositivo. Esse problema ocorre quando o provedor **CertificateSelector** do aplicativo portal da empresa não encontra um certificado que corresponda aos critérios especificados. Os critérios específicos podem estar no modelo de certificado ou no perfil SCEP.
+  - Quando os perfis Trust Root e SCEP estão no dispositivo Android e em conformidade, o perfil Wi-Fi pode não estar no dispositivo. Este problema acontece quando o fornecedor de **CertificateSelector** da aplicação Portal da Empresa não encontra um certificado que corresponda aos critérios especificados. Os critérios específicos podem estar no Modelo de Certificado ou no perfil SCEP.
 
-    Se o certificado correspondente não for encontrado, os certificados no dispositivo não serão instalados. O perfil de Wi-Fi não foi aplicado porque não tem o certificado correto. Nesse cenário, você verá a seguinte entrada no arquivo Portal da Empresa do aplicativo Omadmlog:
+    Se o certificado de correspondência não for encontrado, os certificados do dispositivo não estão instalados. O perfil Wi-Fi não é aplicado porque não tem o certificado correto. Neste cenário, vê a seguinte entrada no ficheiro Omadmlog da aplicação Portal da Empresa:
 
     ` Skipping Wifi profile <profile ID> because it is pending certificates.`
 
-    O log de exemplo a seguir mostra os certificados sendo excluídos porque foram especificados os critérios de EKU (uso estendido de chave) de **qualquer finalidade** . No entanto, os certificados atribuídos ao dispositivo não têm esse EKU:
+    O registo da amostra seguinte mostra que os certificados estão excluídos porque **foram** especificados os critérios de utilização da chave estendida (EKU). Mas os certificados atribuídos ao dispositivo não têm o EKU:
 
     ```log
     2018-11-27T21:10:37.6390000    VERB     com.microsoft.omadm.utils.CertUtils      14210    00948    Excluding cert with alias User<ID1> and requestId <requestID1> as it does not have any purpose EKU.
@@ -225,52 +225,52 @@ WiFiConfigurationServiceProvider: Node set value, type: (0x4), Result: (The oper
     2018-11-27T21:10:37.6400000    INFO       com.microsoft.omadm.platforms.android.wifimgr.WifiProfileManager       14210                00948     Skipping Wifi profile <profile ID> because it is pending certificates.
     ```
 
-    O exemplo a seguir mostra que o perfil SCEP inseriu o EKU de **qualquer finalidade** . Mas não é inserido no modelo de certificado na autoridade de certificação (CA). Para corrigir o problema, adicione a opção **qualquer finalidade** ao modelo de certificado. Ou remova a opção **qualquer finalidade** do perfil SCEP.
+    A amostra seguinte mostra que o perfil SCEP inseriu no EKU **para qualquer fim.** Mas, não está inscrito no Modelo de Certificado na autoridade do certificado (CA). Para corrigir o problema, adicione a opção **Qualquer Propósito** ao modelo de certificado. Ou remover a opção **Qualquer Propósito** do perfil SCEP.
 
     > [!div class="mx-imgBorder"]
-    > ![no Android, adicione qualquer finalidade ao modelo de certificado na autoridade de certificação](./media/troubleshoot-wi-fi-profiles/android-add-any-purpose-eku.png)
+    > ![No Android, adicione qualquer propósito ao modelo de certificado na autoridade do certificado](./media/troubleshoot-wi-fi-profiles/android-add-any-purpose-eku.png)
 
     > [!div class="mx-imgBorder"]
-    > ![no Android, adicione qualquer finalidade ao perfil de configuração de certificado SCEP no Intune](./media/troubleshoot-wi-fi-profiles/android-any-purpose-scep-device-config-profile.png)
+    > ![No Android, adicione qualquer propósito ao perfil de configuração de certificado SCEP em Intune](./media/troubleshoot-wi-fi-profiles/android-any-purpose-scep-device-config-profile.png)
 
-  - Confirme se todos os certificados necessários na cadeia de certificados completa estão no dispositivo Android. Caso contrário, o perfil de Wi-Fi não poderá ser instalado no dispositivo. Para obter mais informações, consulte [autoridade de certificado intermediária ausente](https://developer.android.com/training/articles/security-ssl#MissingCa) (abre o site do Android).
-  - Filtre Omadmlog com palavras-chave para procurar informações, como qual certificado é usado no perfil de Wi-Fi e se o perfil foi aplicado com êxito.
+  - Confirme que todos os certificados necessários na cadeia de certificados completos estão no dispositivo Android. Caso contrário, o perfil Wi-Fi não pode ser instalado no dispositivo. Para mais informações, consulte a autoridade de [certificados intermédios desaparecida](https://developer.android.com/training/articles/security-ssl#MissingCa) (abre o site do Android).
+  - Filtrar o Omadmlog com palavras-chave para procurar informações, como qual o certificado utilizado no perfil Wi-Fi e se o perfil for aplicado com sucesso.
 
-    Por exemplo, use [CMTrace](https://docs.microsoft.com/configmgr/core/support/cmtrace) para ler os logs. Use a cadeia de caracteres de pesquisa para filtrar "wifimgr":
-
-    > [!div class="mx-imgBorder"]
-    > ![filtrar CMTrace para procurar perfis de configuração do WiFiMgr em dispositivos Android](./media/troubleshoot-wi-fi-profiles/cmtrace-filter-wifimgr.png)
-
-    A saída é semelhante ao seguinte log:
+    Por exemplo, utilize [cmTrace](https://docs.microsoft.com/configmgr/core/support/cmtrace) para ler os registos. Utilize a cadeia de pesquisa para filtrar "wifimgr":
 
     > [!div class="mx-imgBorder"]
-    > ![exemplo de saída de log do CMTrace que mostra o perfil de configuração do Intune do Wi-Fi aplicado com êxito nos dispositivos](./media/troubleshoot-wi-fi-profiles/cmtrace-sample-log-output.png)
+    > ![Filter CMTrace para procurar perfis de configuração WiFiMgr em dispositivos Android](./media/troubleshoot-wi-fi-profiles/cmtrace-filter-wifimgr.png)
 
-    Se você vir um erro no log, copie o carimbo de data/hora do erro e desfiltre o log. Em seguida, use a opção "localizar" com o carimbo de data/hora para ver o que aconteceu logo antes do erro.
+    A saída é semelhante ao seguinte tronco:
 
-### <a name="issue-2-the-wi-fi-profile-is-deployed-to-the-device-but-the-device-cant-connect-to-the-network"></a>Problema 2: o perfil de Wi-Fi é implantado no dispositivo, mas o dispositivo não pode se conectar à rede
+    > [!div class="mx-imgBorder"]
+    > ![amostra de saída de log CMTrace que mostra o perfil de configuração WiFi Intune aplicado com sucesso em dispositivos](./media/troubleshoot-wi-fi-profiles/cmtrace-sample-log-output.png)
 
-Normalmente, esse problema é causado por algo fora do Intune. As seguintes tarefas podem ajudá-lo a entender e solucionar problemas de conectividade:
+    Se vir um erro no registo, copie o carimbo de tempo do erro e desfile o registo. Em seguida, use a opção "encontrar" com o carimbo de tempo para ver o que aconteceu antes do erro.
 
-- Conecte-se manualmente à rede usando um certificado com os mesmos critérios que estão no perfil de Wi-Fi.
+### <a name="issue-2-the-wi-fi-profile-is-deployed-to-the-device-but-the-device-cant-connect-to-the-network"></a>Edição 2: O perfil Wi-Fi está implantado no dispositivo, mas o dispositivo não pode ligar-se à rede
 
-  Se você puder se conectar, examine as propriedades do certificado na conexão manual. Em seguida, atualize o perfil de Wi-Fi do Intune com as mesmas propriedades de certificado.
-- Geralmente, os erros de conectividade são registrados no log do servidor RADIUS. Por exemplo, ele deve mostrar se o dispositivo tentou se conectar com o perfil de Wi-Fi.
+Tipicamente, esta questão é causada por algo fora de Intune. As seguintes tarefas podem ajudá-lo a compreender e resolver problemas de conectividade:
 
-## <a name="need-more-help"></a>Precisa de mais ajuda
+- Ligue-se manualmente à rede utilizando um certificado com os mesmos critérios que está no perfil Wi-Fi.
 
-- Use os [fóruns de usuário do Intune](https://social.technet.microsoft.com/Forums/en-US/home?category=microsoftintune&filter=alltypes&sort=lastpostdesc) ou [Obtenha suporte da Microsoft](../fundamentals/get-support.md).
+  Se conseguir ligar, veja as propriedades do certificado na ligação manual. Em seguida, atualize o perfil Wi-Fi Intune com as mesmas propriedades do certificado.
+- Os erros de conectividade são normalmente registados no registo do servidor Radius. Por exemplo, deve mostrar se o dispositivo tentou ligar-se ao perfil Wi-Fi.
+
+## <a name="need-more-help"></a>Preciso de mais ajuda
+
+- Utilize os fóruns de [utilizador Intune](https://social.technet.microsoft.com/Forums/en-US/home?category=microsoftintune&filter=alltypes&sort=lastpostdesc) ou [obtenha suporte da Microsoft](../fundamentals/get-support.md).
 
 - Para obter mais informações sobre perfis Wi-Fi no Microsoft Intune, consulte os seguintes artigos:
 
-  - Adicione configurações de Wi-Fi para dispositivos que executam [Android](wi-fi-settings-android.md), [Ios](wi-fi-settings-ios.md)e [Windows 10 e posterior](wi-fi-settings-windows.md).
-  - [Dica de suporte-como configurar o NDES para implantações de certificado SCEP no Intune](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-How-to-configure-NDES-for-SCEP-certificate/ba-p/455125)
-  - Solucionar problemas de [implantação do perfil de certificado SCEP](https://support.microsoft.com/help/4526725/troubleshooting-scep-profile-deployment-to-android-devices-in-intune) e [configuração do NDES](https://support.microsoft.com/help/4459540/troubleshoot-ndes-configuration-for-use-with-intune).
+  - Adicione as definições de Wi-Fi para dispositivos que executam [Android](wi-fi-settings-android.md), [iOS/iPadOS,](wi-fi-settings-ios.md)e [Windows 10 e mais tarde](wi-fi-settings-windows.md).
+  - [Dica de suporte - Como configurar NDES para implementações de certificados SCEP em Intune](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-How-to-configure-NDES-for-SCEP-certificate/ba-p/455125)
+  - Resolução de problemas a implementação do perfil do [certificado SCEP](https://support.microsoft.com/help/4526725/troubleshooting-scep-profile-deployment-to-android-devices-in-intune) e a [configuração NDES](https://support.microsoft.com/help/4459540/troubleshoot-ndes-configuration-for-use-with-intune).
 
-- Para obter as últimas notícias, informações e dicas técnicas, consulte os Blogs oficiais:
-  - [Blog da equipe de suporte do Microsoft Intune](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/bg-p/IntuneCustomerSuccess)
-  - [Blog do Microsoft Enterprise Mobility e segurança](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/bg-p/enterprisemobilityandsecurity)
+- Para obter as últimas novidades, informações e dicas tecnológicas, consulte os blogs oficiais:
+  - [Blog da Microsoft Intune Support Team](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/bg-p/IntuneCustomerSuccess)
+  - [Blog de Mobilidade e Segurança Empresarial da Microsoft](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/bg-p/enterprisemobilityandsecurity)
 
 ## <a name="next-steps"></a>Próximos passos
 
-[Monitore seus perfis](device-profile-monitor.md).
+[Monitorize os seus perfis.](device-profile-monitor.md)

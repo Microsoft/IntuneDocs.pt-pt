@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 191be009f8d9e6fc448126834ef48f0bc6e2edc4
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: c8e4671790b72583219f1df64a0ef3491d707ea7
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505338"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515038"
 ---
 # <a name="configure-device-compliance-and-app-management-policies-when-migrating-to-microsoft-intune"></a>Configurar políticas de gestão de aplicações e de conformidade do dispositivo durante uma migração para o Microsoft Intune
 
@@ -60,11 +60,11 @@ Certificados de fornecimento dos perfis de acesso a recursos e configurações d
 
 Tem de criar um perfil de configuração de dispositivos para impor definições ao nível do dispositivo, por exemplo: desativar a câmara, a loja de aplicações, configurar o modo de aplicação única, o ecrã principal, etc. Saiba mais sobre os [perfis de dispositivo](../configuration/device-profiles.md).
 
-#### <a name="directly-import-ios-configuration-profiles-optional"></a>Importar perfis de configuração do iOS diretamente (opcional)
+#### <a name="directly-import-iosipados-configuration-profiles-optional"></a>Importar diretamente perfis de configuração iOS/iPadOS (opcional)
 
 - **Perfis de iOS do Apple Configurator (iOS 7.1 e posterior):** se a sua solução de MDM existente utilizar perfis do Apple Configurator (ficheiros .mobileconfig), o Intune pode importá-los diretamente como políticas de configuração personalizadas.
 
-- **Políticas de Configuração da Aplicação Móvel do iOS:** se a sua solução de MDM existente utilizar políticas de Configuração da Aplicação Móvel do iOS, o Intune poderá importá-las diretamente, desde que cumpram o formato XML especificado pela Apple para as listas de propriedades.
+- Políticas de configuração de **aplicações móveis iOS:** Se a sua solução MDM existente utilizar as políticas de configuração de aplicações móveis iOS/iPadOS, a Intune pode importá-las diretamente desde que cumpram o formato XML especificado pela Apple para listas de propriedades.
 
 - Saiba como adicionar uma política personalizada para [iOS](../configuration/custom-settings-ios.md).
 

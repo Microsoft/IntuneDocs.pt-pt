@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 24d0a8160d852a5a44f5df688b7e0bc230d56704
-ms.sourcegitcommit: c7c6be3833d9a63d43f31d598b555b49b33cf5cb
+ms.openlocfilehash: c454ae6184f4d2a7c3c31f3c61d2cf4331ac187c
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "76966390"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514103"
 ---
 # <a name="configure-infrastructure-to-support-scep-with-intune"></a>Configure infraestruturas para apoiar o SCEP com Intune
 
@@ -97,7 +97,7 @@ Permita todos os portos e protocolos necessários para a comunicação entre o s
 
 Os seguintes certificados e modelos são utilizados quando utiliza SCEP.
 
-|Objeto    |Details    |
+|Objeto    |Detalhes    |
 |----------|-----------|
 |**Modelo de certificado SCEP**         |Modelo que configurará no seu CA emissor usado para completar os pedidos scep dos dispositivos. |
 |**Certificado de autenticação de cliente** |Solicitado da sua AC emissora ou CA pública.<br /> Instala este certificado no computador que acolhe o serviço NDES e é utilizado pelo Conector de Certificado Intune.<br /> Se o certificado tiver o conjunto de utilizações da chave de *autenticação* do *cliente* e do servidor (**Utilizações de chaves melhoradas**) no modelo CA que utiliza para emitir este certificado. Pode então utilizar o mesmo certificado para autenticação de servidor e cliente. |
@@ -148,7 +148,7 @@ As seguintes secções requerem conhecimento do Windows Server 2012 R2 ou poster
        > [!IMPORTANT]
        > Adicione apenas as políticas de candidatura que necessita. Confirme as escolhas com os administradores de segurança.
 
-     - Para modelos de certificados iOS e macOS, também edite o **Uso da Chave** e certifique-se de que a Assinatura é prova de **origem** não é selecionada.
+     - Para modelos de certificados iOS/iPadOS e macOS, também edite o **Uso da Chave** e certifique-se de que a Assinatura é prova de **origem.**
 
      ![Modelo, separador extensões](./media/certificates-scep-configure/scep-ndes-extensions.jpg)  
 
@@ -217,7 +217,7 @@ Depois de [criar o modelo de certificado SCEP,](#create-the-scep-certificate-tem
 Por predefinição, o Intune utiliza o valor configurado no modelo. No entanto, pode configurar o CA para permitir que o solicitado introduza um valor diferente, e esse valor pode ser definido a partir da consola Intune.
 
 > [!IMPORTANT]
-> Para iOS e macOS, utilize sempre um conjunto de valor no modelo.
+> Para iOS/iPadOS e macOS, utilize sempre um valor definido no modelo.
 
 #### <a name="to-configure-a-value-that-can-be-set-from-within-the-intune-console"></a>Para configurar um valor que pode ser definido a partir da consola Intune
 
@@ -359,9 +359,9 @@ O Conector de Certificado Intune da Microsoft instala-se no servidor que executa
 
 ### <a name="to-install-the-certificate-connector"></a>Para instalar o Conector de Certificado
 
-1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Inscreva-se no [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-2. Selecione **Administração de locatários** > **conectores e tokens** > **conectores de certificado** > **Adicionar**.
+2. Selecione **a administração do Inquilino** > **Conectores e fichas** > **conectores** de certificado > **Adicionar**.
 
 3. Descarregue e guarde o conector para o ficheiro SCEP. Guarde-o numa localização acessível a partir do servidor onde vai instalar o conector.
 

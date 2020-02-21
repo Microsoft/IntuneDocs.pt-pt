@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7e8234db93d9b06a71e1f5cd6e51daca2d1ea2b1
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: a29fab4be6e2046b2c6757505001a7ba3455b8d6
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77415174"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514324"
 ---
 # <a name="troubleshoot-iosipados-device-enrollment-problems-in-microsoft-intune"></a>Problemas de resolução de problemas iOS/iPadOS problemas de inscrição no microsoft Intune
 
@@ -238,18 +238,6 @@ Quando liga um dispositivo gerido pelo DEP que lhe é atribuído um perfil de in
 
 #### <a name="resolution"></a>Resolução
 Desative o MFA e, em seguida, reinscreva o dispositivo.
-
-### <a name="the-enrollment-status-page-times-out-before-the-sign-in-screen"></a>A página de estado de inscrição é vezes para fora antes do ecrã de iniciar sessão
-
-**Causa:** Esta questão pode surgir se todas as seguintes condições forem verdadeiras:
-- Está a usar a Página de Estado de Inscrição para rastrear aplicações da Microsoft Store para empresas.
-- Tem uma política de Acesso Condicional Azure AD que utiliza o dispositivo necessário para ser marcado como controlo conforme.
-- A política aplica-se às aplicações All Cloud e Windows.
-
-#### <a name="resolution"></a>Resolução:
-Tente qualquer um dos seguintes:
-- Direcione as suas políticas de conformidade intune para dispositivos. Certifique-se de que a conformidade pode ser determinada antes de o utilizador iniciar o início.
-- Utilize licenciamento offline para aplicações de loja. Desta forma, o cliente do Windows não tem de consultar a Microsoft Store antes de determinar a conformidade do dispositivo.
 
 
 ## <a name="next-steps"></a>Próximos passos

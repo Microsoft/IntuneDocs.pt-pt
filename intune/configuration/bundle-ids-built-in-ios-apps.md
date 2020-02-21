@@ -1,12 +1,12 @@
 ---
-title: IDs de pacote do iOS para aplicativos internos no Microsoft Intune-Azure | Microsoft Docs
+title: IOS/iPadOS bundle IDs para aplicações incorporadas no Microsoft Intune - Azure Microsoft Docs
 titleSuffix: ''
-description: Consulte uma lista das IDs de pacote para os aplicativos iOS internos. Use essas IDs de pacote para permitir explicitamente aplicativos em perfis de configuração de dispositivo e políticas no Microsoft Intune.
+description: Consulte uma lista dos IDs de pacote para as aplicações incorporadas para iOS e iPadOS. Utilize estes IDs de pacote para permitir explicitamente aplicações em perfis e políticas de configuração do dispositivo no Microsoft Intune.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/06/2020
+ms.date: 02/18/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,27 +16,27 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e151481b090e1e666bfdb2759015adde6f1d66a9
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: 10c6ea8e3afd7bb1f5a583c0088c72fc155cb0f9
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75691852"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513304"
 ---
-# <a name="bundle-ids-for-built-in-ios-apps-you-can-use-in-intune"></a>IDs de pacote para aplicativos iOS internos que você pode usar no Intune
+# <a name="bundle-ids-for-built-in-ios-and-ipados-apps-you-can-use-in-intune"></a>Pacote iDs para aplicações incorporadas para iOS e iPadOS que pode utilizar no Intune
 
-Ao configurar recursos em dispositivos iOS, você também pode adicionar os aplicativos internos em dispositivos iOS. Este artigo lista as IDs de pacote de alguns aplicativos iOS internos comuns. Para localizar o ID do pacote de outras aplicações, contacte o fabricante de software. Consulte a lista de [IDs de pacote do IOS](https://support.apple.com/guide/mdm/ios-bundle-ids-mdm90f60c1ce/web) da Apple (abre o site da Apple).
+Quando configurar funcionalidades em dispositivos iOS/iPadOS, também pode adicionar as aplicações incorporadas em dispositivos iOS/iPadOS. Este artigo lista os IDs de algumas aplicações comuns incorporadas iOS/iPadOS. Para localizar o ID do pacote de outras aplicações, contacte o fabricante de software. Consulte a lista de [IOs/iPadOS](https://support.apple.com/guide/mdm/ios-bundle-ids-mdm90f60c1ce/web) da Apple (abre o site da Apple).
 
 ## <a name="bundle-ids"></a>IDs de pacote
 
-| ID do Pacote                   | Nome da Aplicação     | Fabricante |
+| ID do Pacote                   | Nome da Aplicação     | Publicador |
 |-----------------------------|--------------|-----------|
 | com.apple.AppStore          | App Store    | Apple     |
 | com.apple.calculator        | Calculadora   | Apple     |
 | com.apple.mobilecal         | Calendário     | Apple     |
 | com.apple.camera            | Câmara       | Apple     |
 | com.apple.mobiletimer       | Relógio        | Apple     |
-| com. Apple. clips             | Corta        | Apple     |
+| com.apple.clips             | Clips        | Apple     |
 | com.apple.compass           | Bússola      | Apple     |
 | com.apple.MobileAddressBook | Contactos     | Apple     |
 | com.apple.facetime          | FaceTime     | Apple     |
@@ -55,7 +55,7 @@ Ao configurar recursos em dispositivos iOS, você também pode adicionar os apli
 | com.apple.Keynote           | Keynote      | Apple     |
 | com.apple.mobilemail        | Correio         | Apple     |
 | com.apple.Maps              | Mapas         | Apple     |
-| com. Apple. Measure           | Medida      | Apple     |
+| com.apple.measure           | Medida      | Apple     |
 | com.apple.MobileSMS         | Mensagens     | Apple     |
 | com.apple.Music             | Música        | Apple     |
 | com.apple.news              | Notícias         | Apple     |
@@ -69,7 +69,7 @@ Ao configurar recursos em dispositivos iOS, você também pode adicionar os apli
 | com.apple.reminders         | Lembretes    | Apple     |
 | com.apple.mobilesafari      | Safari       | Apple     |
 | com.apple.Preferences       | Definições     | Apple     |
-| com. Apple. shortcuts         | Atalhos    | Apple     |
+| com.apple.atalhos         | Atalhos    | Apple     |
 | com.apple.SiriViewService   | Siri         | Apple     |
 | com.apple.stocks            | Bolsa       | Apple     |
 | com.apple.tips              | Sugestões         | Apple     |
@@ -78,8 +78,8 @@ Ao configurar recursos em dispositivos iOS, você também pode adicionar os apli
 | com.apple.VoiceMemos        | VoiceMemos   | Apple     |
 | com.apple.Passbook          | Wallet       | Apple     |
 | com.apple.Bridge            | Watch        | Apple     |
-| com.apple.weather           | Meteorologia      | Apple     |      
+| com.apple.weather           | Meteorologia      | Apple     |
 
 ## <a name="next-steps"></a>Próximos passos
 
-Use essas IDs de pacote para configurar [recursos de dispositivo](ios-device-features-settings.md) e para [permitir ou restringir algumas configurações](device-restrictions-ios.md) em dispositivos IOS.
+Utilize estes IDs de pacote para configurar [as funcionalidades](ios-device-features-settings.md) do dispositivo e [para permitir ou restringir algumas definições](device-restrictions-ios.md) em dispositivos iOS/iPadOS.

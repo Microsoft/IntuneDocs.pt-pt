@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: apps; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 569906cea8467d568d302f4e44b26c3394213b62
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 670e5033ddf2a04cd5bd87040d85eef764dca519
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77414972"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77512301"
 ---
 # <a name="overview-of-the-app-lifecycle-in-microsoft-intune"></a>Descrição geral do ciclo de vida das aplicações no Microsoft Intune
 
@@ -42,7 +42,7 @@ Depois de adicionar a aplicação ao Intune, pode [atribuí-la aos utilizadores 
 
 Como parte do ciclo de vida das aplicações, são lançadas regularmente novas versões das aplicações. O Intune fornece ferramentas para [atualizar aplicações](apps-add.md) facilmente, que tenha implementado numa versão mais recente. Além disso, pode configurar funcionalidades adicionais para algumas aplicações, por exemplo:
 
-- As políticas de configuração de [aplicações iOS](app-configuration-policies-use-ios.md) fornecem definições para aplicações compatíveis iOS/iPadOS que são usadas quando a aplicação é executada. Por exemplo, uma aplicação pode precisar de definições de imagem corporativa específicas ou do nome de um servidor ao qual deve estabelecer ligação.
+- As políticas de configuração de [aplicações iOS/iPadOS](app-configuration-policies-use-ios.md) fornecem definições para aplicações compatíveis iOS/iPadOS que são utilizadas quando a aplicação é executada. Por exemplo, uma aplicação pode precisar de definições de imagem corporativa específicas ou do nome de um servidor ao qual deve estabelecer ligação.
 - [As políticas geridas](app-configuration-managed-browser.md) do navegador ajudam-no a configurar as definições para o [Microsoft Edge](~/apps/apps-supported-intune-apps.md#microsoft-apps), que substitui o navegador do dispositivo predefinido e permite restringir os websites que os seus utilizadores podem visitar.
 
 ## <a name="protect"></a>Proteger

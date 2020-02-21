@@ -1,11 +1,11 @@
 ---
 title: Funcionalidades e definições do dispositivo no Microsoft Intune – Azure | Microsoft Docs
-description: Descrição geral dos diferentes perfis de dispositivo do Microsoft Intune. Obter informações sobre recursos, restrições, email, WiFi, VPN, educação, certificados, atualizar o Windows 10, o BitLocker e o Microsoft defender, a proteção de informações do Windows, os modelos administrativos e as definições de configuração de dispositivo personalizadas na Microsoft Centro de administração do Endpoint Manager. Utilize estes perfis para gerir e proteger os dados e os dispositivos na sua empresa.
+description: Descrição geral dos diferentes perfis de dispositivo do Microsoft Intune. Obtenha informações sobre funcionalidades, restrições, e-mail, wifi, VPN, educação, certificados, upgrade Windows 10, BitLocker e Microsoft Defender, Proteção de Informações do Windows, modelos administrativos e configurações de configuração de dispositivos personalizados na Microsoft Centro de administração do Endpoint Manager. Utilize estes perfis para gerir e proteger os dados e os dispositivos na sua empresa.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/13/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,23 +17,23 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 800bbd5199bd4389ee1ae8aa98a68e21456e7000
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 951d3df8b842f1a0e76f875ea9fc7921c413494f
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206623"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513080"
 ---
 # <a name="apply-features-and-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Aplicar definições e funcionalidades nos dispositivos com perfis de dispositivo no Microsoft Intune
 
 
 
-O Microsoft Intune inclui definições e funcionalidades que pode ativar ou desativar em diferentes dispositivos na sua organização. Estas definições e funcionalidades são adicionadas aos “perfis de configuração”. Pode criar perfis para diferentes dispositivos e diferentes plataformas, incluindo iOS, Android e Windows. Em seguida, utilizar o Intune para aplicar ou “atribuir” o perfil aos dispositivos.
+O Microsoft Intune inclui definições e funcionalidades que pode ativar ou desativar em diferentes dispositivos na sua organização. Estas definições e funcionalidades são adicionadas aos “perfis de configuração”. Pode criar perfis para diferentes dispositivos e diferentes plataformas, incluindo iOS/iPadOS, Android e Windows. Em seguida, utilizar o Intune para aplicar ou “atribuir” o perfil aos dispositivos.
 
 Como parte da solução de gestão de dispositivos móveis (MDM), utilize estes perfis de configuração para concluir diferentes tarefas. Alguns exemplos de perfil incluem:
 
 - Em dispositivos Windows 10, utilize um modelo de perfil que bloqueia os controlos ActiveX no Internet Explorer.
-- Em dispositivos iOS e macOS, permita que os utilizadores utilizem impressoras AirPrint na sua organização.
+- Nos dispositivos iOS/iPadOS e macOS, os utilizadores utilizam impressoras AirPrint na sua organização.
 - Permita ou bloqueie o acesso ao Bluetooth no dispositivo.
 - Crie um perfil Wi-Fi ou VPN para conceder acesso à sua rede organizacional a diferentes dispositivos.
 - Faça a gestão das atualizações de software, incluindo a altura em que são instaladas.
@@ -61,13 +61,13 @@ Esta funcionalidade suporta:
 - Android Enterprise
 - iOS/iPadOS
 - macOS
-- Wnodows Phone 8.1
-- Windows 8.1
+- Windows Phone 8.1
+- Windows 8,1
 - Windows 10 e posterior
 
 ## <a name="custom-profile"></a>Perfil personalizado
 
-As [definições personalizadas](custom-settings-configure.md) permitem que os administradores atribuam definições de dispositivo que não estejam incorporadas no Intune. Em dispositivos Android, pode introduzir valores OMA-URI. Para dispositivos iOS, pode importar um ficheiro de configuração que criou no Apple Configurator.
+As [definições personalizadas](custom-settings-configure.md) permitem que os administradores atribuam definições de dispositivo que não estejam incorporadas no Intune. Em dispositivos Android, pode introduzir valores OMA-URI. Para dispositivos iOS/iPadOS, pode importar um ficheiro de configuração que criou no Configurator Apple.
 
 Esta funcionalidade suporta:
 
@@ -75,7 +75,7 @@ Esta funcionalidade suporta:
 - Android Enterprise
 - iOS/iPadOS
 - macOS
-- Wnodows Phone 8.1
+- Windows Phone 8.1
 
 ## <a name="delivery-optimization"></a>Otimização da entrega
 
@@ -89,24 +89,24 @@ Esta funcionalidade suporta:
 
 ## <a name="device-features"></a>Funcionalidades do dispositivo
 
-As [funcionalidades do dispositivo](device-features-configure.md) controlam as funcionalidades nos dispositivos iOS e macOS como o AirPrint, as notificações e as mensagens de bloqueio de ecrã.
+[O dispositivo possui](device-features-configure.md) funcionalidades de controlo em dispositivos iOS/iPadOS e macOS, tais como AirPrint, notificações e mensagens de ecrã de bloqueio.
 
 Esta funcionalidade suporta:
 
 - iOS/iPadOS
 - macOS
 
-## <a name="device-firmware-configuration-interface"></a>Interface de configuração do firmware do dispositivo
+## <a name="device-firmware-configuration-interface"></a>Interface de configuração de firmware de dispositivo
 
-O DFCI ( [interface de configuração de firmware do dispositivo](device-firmware-configuration-interface-windows.md) ) permite que os administradores habilitem ou desabilitem as configurações de UEFI (BIOS) usando o Intune. Use essas configurações para aprimorar a segurança no nível do firmware, que normalmente é mais resiliente a ataques mal-intencionados.
+A interface de configuração do [firmware](device-firmware-configuration-interface-windows.md) do dispositivo (DFCI) permite que os administradores ativem ou desativem as definições da UEFI (BIOS) utilizando o Intune. Utilize estas configurações para aumentar a segurança ao nível do firmware, que é tipicamente mais resistente a ataques maliciosos.
 
 Esta funcionalidade suporta:
 
-- Windows 10 1809 e posterior em firmware com suporte
+- Windows 10 1809 e mais tarde em firmware suportado
 
 ## <a name="device-restrictions"></a>Restrições de dispositivos
 
-As [restrições de dispositivos](device-restrictions-configure.md) controlam a segurança, hardware, partilha de dados e mais definições nos dispositivos. Por exemplo, pode criar um perfil de restrição do dispositivo para impedir que os utilizadores dos dispositivos iOS utilizem a câmara do dispositivo. 
+As [restrições de dispositivos](device-restrictions-configure.md) controlam a segurança, hardware, partilha de dados e mais definições nos dispositivos. Por exemplo, criar um perfil de restrição do dispositivo que impeça os utilizadores do dispositivo iOS/iPadOS de utilizarem a câmara do dispositivo. 
 
 Esta funcionalidade suporta:
 
@@ -129,7 +129,7 @@ Esta funcionalidade suporta:
 
 As [definições de educação para Windows 10](education-settings-configure.md) configuram as opções da [aplicação Fazer um Teste do Windows](https://education.microsoft.com/gettrained/win10takeatest). Quando configurar estas opções, não pode executar qualquer outra aplicação no dispositivo até o teste estar concluído.
 
-As [definições de educação para iOS](../fundamentals/education-settings-configure-ios-shared.md) utilizam a aplicação Sala de Aula para iOS para orientar a aprendizagem e controlar os dispositivos dos estudantes na sala de aula. Pode configurar dispositivos iPad para que vários estudantes possam partilhar um único dispositivo.
+[Definições de educação - iOS/iPadOS](../fundamentals/education-settings-configure-ios-shared.md) utiliza a aplicação iOS/iPadOS Classroom para orientar a aprendizagem e controlar os dispositivos estudantis na sala de aula. Pode configurar dispositivos iPad para que vários estudantes possam partilhar um único dispositivo.
 
 ## <a name="email"></a>E-mail
 
@@ -140,14 +140,14 @@ Esta funcionalidade suporta:
 - Android
 - Android Enterprise
 - iOS/iPadOS
-- Wnodows Phone 8.1
+- Windows Phone 8.1
 - Windows 10 e posterior
 
 ## <a name="endpoint-protection"></a>Proteção de ponto final
 
-[As configurações do Endpoint Protection para Windows 10](../protect/endpoint-protection-windows-10.md) definem as configurações do BitLocker e do Microsoft defender para dispositivos Windows 10.
+As definições de proteção de [pontofinal para as definições](../protect/endpoint-protection-windows-10.md) bitLocker e Microsoft Defender do Windows 10 configurações para dispositivos Windows 10.
 
-Para integrar o WDATP (proteção avançada contra ameaças do Microsoft defender) com o Microsoft Intune, consulte [Configurar pontos de extremidade usando ferramentas de MDM (gerenciamento de dispositivo móvel)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-mdm).
+Para embarcar na Microsoft Defender Advanced Threat Protection (WDATP) com a Microsoft Intune, consulte os [pontos finais da Configuração utilizando ferramentas de Gestão de Dispositivos Móveis (MDM).](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-mdm)
 
 Esta funcionalidade suporta:
 
@@ -163,7 +163,7 @@ Esta funcionalidade suporta:
 
 ## <a name="extensions"></a>Extensões
 
-[As extensões de kernel](kernel-extensions-overview-macos.md) permitem que os administradores adicionem recursos ou programas no nível de kernel em dispositivos MacOS. Defina essas configurações para confiar em todas as extensões de um desenvolvedor ou parceiro específico ou permitir extensões de kernel específicas.
+[As extensões kernel](kernel-extensions-overview-macos.md) permitem que os administradores adicionem funcionalidades ou programas ao nível do kernel em dispositivos macOS. Configure estas definições para confiar em todas as extensões de um programador ou parceiro específico, ou permitir extensões específicas de kernel.
 
 Esta funcionalidade suporta:
 
@@ -186,7 +186,7 @@ Esta funcionalidade suporta:
 
 - Windows 10 e posterior
 
-As definições de quiosque estão também disponíveis como restrições de dispositivo para [Android](device-restrictions-android.md#kiosk), [Android Enterprise](device-restrictions-android-for-work.md#dedicated-device-settings) e [iOS](device-restrictions-ios.md#kiosk).
+As definições de quiosque também estão disponíveis como restrições de dispositivos para [Android,](device-restrictions-android.md#kiosk) [Android Enterprise,](device-restrictions-android-for-work.md#dedicated-device-settings)e [ios/iPadOS.](device-restrictions-ios.md#kiosk)
 
 ## <a name="oemconfig"></a>OEMConfig
 
@@ -198,7 +198,7 @@ Esta funcionalidade suporta:
 
 ## <a name="powershell-scripts"></a>Scripts PowerShell
 
-Os [scripts do PowerShell em dispositivos Windows 10](../apps/intune-management-extension.md) usam a extensão de gerenciamento do Intune para carregar seus scripts do PowerShell no Intune e, em seguida, executar esses scripts em seus dispositivos. Consulte também o que é necessário para usar a extensão, como adicioná-los ao Intune e outras informações importantes.
+[Os scripts PowerShell nos dispositivos Windows 10](../apps/intune-management-extension.md) utilizam a Extensão de Gestão Intune para carregar os scripts PowerShell em Intune e, em seguida, executar estes scripts nos seus dispositivos. Consulte também o que é necessário para usar a extensão, como adicioná-las a Intune, e outras informações importantes.
 
 
 Esta funcionalidade suporta:
@@ -219,7 +219,7 @@ Esta funcionalidade suporta:
 
 ## <a name="update-policies"></a>Políticas de atualização
 
-As [políticas de atualização do iOS](../protect/software-updates-ios.md) mostram-lhe como criar e atribuir políticas para iOS para instalar atualizações de software nos seus dispositivos iOS. Também pode rever o estado de instalação.
+As políticas de [atualização iOS/iPadOS](../protect/software-updates-ios.md) mostram como criar e atribuir políticas iOS/iPadOS para instalar atualizações de software nos seus dispositivos iOS/iPadOS. Também pode rever o estado de instalação.
 
 Para obter as políticas de atualização em dispositivos Windows, veja [Otimização da entrega](delivery-optimization-windows.md). 
 
@@ -239,8 +239,8 @@ Esta funcionalidade suporta:
 - Android Enterprise
 - iOS/iPadOS
 - macOS
-- Wnodows Phone 8.1
-- Windows 8.1
+- Windows Phone 8.1
+- Windows 8,1
 - Windows 10 e posterior
 
 ## <a name="wi-fi"></a>Wi-Fi

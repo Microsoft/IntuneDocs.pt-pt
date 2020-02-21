@@ -1,7 +1,7 @@
 ---
-title: Inscrever dispositivos macOS – Programa de Registo de Aparelho ou Apple School Manager
+title: Inscreva dispositivos macOS - Apple Business Manager ou Apple School Manager
 titleSuffix: ''
-description: Saiba como inscrever dispositivos macOS pertencentes à empresa através do Programa de Registo de Aparelho.
+description: Saiba como inscrever dispositivos macOS corporativos.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -18,22 +18,22 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d55139a106599664f801a6bf73b0e0e8db24b57a
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 6ef08ea65a4976bcf77154108e415634dbae8e05
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77414497"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514341"
 ---
-# <a name="automatically-enroll-macos-devices-with-the-device-enrollment-program-or-apple-school-manager"></a>Inscrever automaticamente dispositivos macOS com o Programa de Registo de Aparelho ou o Apple School Manager
+# <a name="automatically-enroll-macos-devices-with-the-apple-business-manager-or-apple-school-manager"></a>Inscreva automaticamente dispositivos macOS com o Apple Business Manager ou Apple School Manager
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-Pode configurar a inscrição do Intune para dispositivos macOS comprados através do [Programa de Registo de Aparelho (DEP)](https://deploy.apple.com) da Apple ou do [Apple School Manager](https://school.apple.com/). Pode utilizar qualquer uma destas inscrições para um grande número de dispositivos de forma remota. Pode enviar dispositivos macOS diretamente para os utilizadores. Quando o utilizador ativar o dispositivo, o Assistente de Configuração será executado com as predefinições configuradas e o dispositivo será inscrito na gestão do Intune.
+Pode configurar a inscrição intune para dispositivos macOS adquiridos através do [Apple Business Manager](https://business.apple.com/) ou apple school [manager](https://school.apple.com/). Pode utilizar qualquer uma destas inscrições para um grande número de dispositivos de forma remota. Pode enviar dispositivos macOS diretamente para os utilizadores. Quando o utilizador ativar o dispositivo, o Assistente de Configuração será executado com as predefinições configuradas e o dispositivo será inscrito na gestão do Intune.
 
-Para configurar a inscrição, deve utilizar os portais do Intune e do Apple DEP. Deve criar os perfis de inscrição com as definições aplicadas aos dispositivos durante a inscrição.
+Para configurar a inscrição, utiliza os portais Intune e Apple. Deve criar os perfis de inscrição com as definições aplicadas aos dispositivos durante a inscrição.
 
-Nem a inscrição DEP nem o Apple School Manager funcionam com o [gestor de inscrição de dispositivos](device-enrollment-manager-enroll.md).
+Nem a inscrição do Apple Business Manager nem o Apple School Manager trabalham com o gestor de matrículas do [dispositivo.](device-enrollment-manager-enroll.md)
 
 <!--
 **Steps to enable enrollment programs from Apple**

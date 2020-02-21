@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cd0a4b0c5e0b4cbaa7ef43ec40cddb3ab30d3070
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: f5045e78eaca19e5a78468c7c4b6698e4e1a5019
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77415488"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511553"
 ---
 # <a name="tutorial-configure-slack-to-use-intune-for-emm-and-app-configuration"></a>Tutorial: Configure A folga para usar Intune para configuração de EMM e app
 
@@ -32,8 +32,8 @@ Slack é uma aplicação de colaboração que pode usar com o Microsoft Intune.
 Neste tutorial, irá:
 > [!div class="checklist"]
 > - Defina intune como o fornecedor de Gestão da Mobilidade Empresarial (EMM) na sua Rede Empresarial Slack. Poderá limitar o acesso aos espaços de trabalho do seu plano Grid para dispositivos geridos por Intune.
-> - Crie políticas de configuração de aplicações para gerir a aplicação Slack para EMM no iOS e na aplicação Slack para dispositivos de perfil de trabalho Android.
-> - Crie políticas de conformidade de dispositivos Intune para definir as condições que os dispositivos Android e iOS devem cumprir para serem considerados conformes.
+> - Crie políticas de configuração de aplicações para gerir a aplicação Slack para EMM no iOS/iPadOS e na aplicação Slack para dispositivos de perfil de trabalho Android.
+> - Crie políticas de conformidade de dispositivos Intune para definir as condições que os dispositivos Android e iOS/iPadOS devem cumprir para serem considerados conformes.
 
 Se não tiver uma subscrição do Intune, [inscreva-se numa conta de avaliação gratuita](../fundamentals/free-trial-sign-up.md).
 
@@ -51,10 +51,10 @@ Ligue o EMM para o seu plano Slack Enterprise Grid seguindo [as instruções da 
 Inscreva-se no [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) como administrador global ou administrador de serviço intune. Se criou uma Subscrição de avaliação do Intune, a conta com a qual criou a subscrição é de Administrador global.
 
 ## <a name="set-up-slack-for-emm-on-ios-devices"></a>Configurar a folga para emm em dispositivos iOS
-Adicione a aplicação iOS Slack for EMM ao seu inquilino Intune e crie uma política de configuração de aplicações para permitir aos utilizadores do iOS das suas organizações aceder ao Slack com o Intune como fornecedor em EmM.
+Adicione a aplicação iOS/iPadOS Slack for EMM ao seu inquilino Intune e crie uma política de configuração de aplicações para permitir aos utilizadores de iOS/iPadOS das suas organizações aceder em Slack com Intune como fornecedor em MEm.
 
 ### <a name="add-slack-for-emm-to-intune"></a>Adicione folga para emm ao Intune
-Adicione Slack para EMM como uma aplicação iOS gerida em Intune e atribua os seus utilizadores Slack. As aplicações são específicas da plataforma, pelo que precisa de adicionar uma aplicação Intune separada para os seus utilizadores Slack em dispositivos Android.
+Adicione slack para EMM como uma aplicação gerida para iOS/iPadOS em Intune e atribua os seus utilizadores Slack. As aplicações são específicas da plataforma, pelo que precisa de adicionar uma aplicação Intune separada para os seus utilizadores Slack em dispositivos Android.
 1. No centro de administração, selecione **Apps** > **Todas as aplicações** > **Adicionar**.
 2. No **tipo app,** selecione a aplicação da loja **iOS.**
 3. Selecione **Procurar na App Store**. Introduza o termo de pesquisa "Slack for EMM" e selecione a aplicação. Clique em **Selecionar** no painel **search the App Store.**
@@ -84,7 +84,7 @@ Adicione uma política de configuração de aplicativos para o Slack para emM iO
 12. Clique em **Guardar**.
 
 ### <a name="optional-create-an-ios-device-compliance-policy"></a>(Opcional) Criar uma política de conformidade com dispositivos iOS
-Crie uma política de conformidade de dispositivos do Intune para definir as condições que um dispositivo tem de cumprir para ser considerado conforme. Para este tutorial, vamos criar uma política de conformidade para dispositivos iOS. As políticas de conformidade são específicas da plataforma, pelo que precisa de criar uma política separada para os seus utilizadores Slack em dispositivos Android.
+Crie uma política de conformidade de dispositivos do Intune para definir as condições que um dispositivo tem de cumprir para ser considerado conforme. Para este tutorial, vamos criar uma política de conformidade de dispositivos para dispositivos iOS/iPadOS. As políticas de conformidade são específicas da plataforma, pelo que precisa de criar uma política separada para os seus utilizadores Slack em dispositivos Android.
 1. No centro de administração, selecione **A conformidade do dispositivo** > **Políticas** > **Criar Política**.
 2. Em Nome, insira "teste de política de conformidade iOS".
 3. Em Descrição, insira o "teste de política de conformidade iOS".
@@ -105,7 +105,7 @@ Crie uma política de conformidade de dispositivos do Intune para definir as con
 Adicione a aplicação Slack Managed Google Play ao seu inquilino Intune e crie uma política de configuração de aplicações para permitir aos utilizadores Android das suas organizações aceder em Slack com Intune como fornecedor de EMM.
 
 ### <a name="add-slack-to-intune"></a>Adicione folga ao Intune
-Adicione Slack como uma aplicação de jogo gerida da Google em Intune e atribua os seus utilizadores Slack. As aplicações são específicas da plataforma, pelo que precisa de adicionar uma aplicação Intune separada para os seus utilizadores Slack em dispositivos iOS.
+Adicione Slack como uma aplicação de jogo gerida da Google em Intune e atribua os seus utilizadores Slack. As aplicações são específicas da plataforma, pelo que precisa de adicionar uma aplicação Intune separada para os seus utilizadores Slack em dispositivos iOS/iPadOS.
 1. Intune, selecione **Apps** > **Todas as aplicações** > **Add**.
 2. No tipo de App, selecione **app Store – Managed Google Play**.
 3. Selecione **Managed Google Play - Approve**. Introduza o termo de pesquisa "Slack for EMM" e selecione a aplicação.
@@ -120,7 +120,7 @@ Adicione Slack como uma aplicação de jogo gerida da Google em Intune e atribua
 10. Clique em **Guardar**.
 
 ### <a name="add-an-app-configuration-policy-for-slack"></a>Adicione uma política de configuração de aplicativos para Slack
-Adicione uma política de configuração de aplicativos para Slack. As políticas de configuração de aplicações para dispositivos geridos são específicas da plataforma, pelo que é necessário adicionar uma política separada para os seus utilizadores Slack em dispositivos iOS.
+Adicione uma política de configuração de aplicativos para Slack. As políticas de configuração de aplicações para dispositivos geridos são específicas da plataforma, pelo que é necessário adicionar uma política separada para os seus utilizadores Slack em dispositivos iOS/iPadOS.
 1. Intune, selecione **Apps** > políticas de **configuração** de apps > **adicionar**.
 2. Em Nome, introduza o teste de configuração da aplicação Slack.
 3. No tipo de inscrição do Dispositivo, selecione **dispositivos geridos**.
@@ -136,7 +136,7 @@ Adicione uma política de configuração de aplicativos para Slack. As política
 12. Clique em **Guardar**.
 
 ### <a name="optional-create-an-android-device-compliance-policy"></a>(Opcional) Criar uma política de conformidade com dispositivos Android
-Crie uma política de conformidade de dispositivos do Intune para definir as condições que um dispositivo tem de cumprir para ser considerado conforme. Para este tutorial, vamos criar uma política de conformidade de dispositivos Android. As políticas de conformidade são específicas da plataforma, pelo que precisa de criar uma política separada para os seus utilizadores Slack em dispositivos iOS.
+Crie uma política de conformidade de dispositivos do Intune para definir as condições que um dispositivo tem de cumprir para ser considerado conforme. Para este tutorial, vamos criar uma política de conformidade de dispositivos Android. As políticas de conformidade são específicas da plataforma, pelo que é necessário criar uma política separada para os seus utilizadores Slack em dispositivos iOS/iPadOS.
 1. No Intune, selecione **Conformidade do dispositivo** > **Políticas** > **Criar Política**.
 2. Em Nome, introduza "Teste de política de conformidade Android".
 3. Em Descrição, insira "Teste de política de conformidade Android".
@@ -155,13 +155,13 @@ Crie uma política de conformidade de dispositivos do Intune para definir as con
 
 ## <a name="launch-slack"></a>Lançar Folga
 
-Com as políticas que acabou de criar, quaisquer dispositivos de perfil de trabalho iOS ou Android que tentem iniciar sessão num dos seus espaços de trabalho terão de ser inscritos no Intune. Para testar este cenário, tente lançar Slack para EMM num dispositivo iOS inscrito no Intune ou lançar Slack num dispositivo de perfil de trabalho Android matriculado no Intune. 
+Com as políticas que acaba de criar, quaisquer dispositivos de perfil de trabalho iOS/iPadOS ou Android que tentem iniciar sessão num dos seus espaços de trabalho terão de ser inscritos intune. Para testar este cenário, tente lançar Slack para EMM num dispositivo intune iOS/iPadOS ou lançar Slack num dispositivo de perfil de trabalho Android matriculado no Intune. 
 
 ## <a name="next-steps"></a>Próximos passos
 
 Neste tutorial:
 - Definiu o Intune como o fornecedor de Gestão de Mobilidade Empresarial (EMM) na sua Rede Empresarial Slack. 
-- Criou políticas de configuração de aplicações para gerir a aplicação Slack for EMM no iOS e na aplicação Slack para dispositivos de perfil de trabalho Android.
-- Criou políticas de conformidade com dispositivos Intune para definir as condições que os dispositivos Android e iOS devem cumprir para serem considerados conformes.
+- Criou políticas de configuração de aplicações para gerir a aplicação Slack for EMM no iOS/iPadOS e na aplicação Slack para dispositivos de perfil de trabalho Android.
+- Criou políticas de conformidade com dispositivos Intune para definir as condições que os dispositivos Android e iOS/iPadOS devem cumprir para serem considerados conformes.
 
 Para saber mais sobre as políticas de configuração de apps, consulte as políticas de configuração de [Aplicativos para o Microsoft Intune](app-configuration-policies-overview.md). Para saber mais sobre as políticas de conformidade do dispositivo, consulte [as regras definidas sobre dispositivos para permitir o acesso aos recursos na sua organização utilizando o Intune](../protect/device-compliance-get-started.md).

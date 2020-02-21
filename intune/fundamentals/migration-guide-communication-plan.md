@@ -17,49 +17,49 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f617e85e78ac5436567790d416c988742a2abe4c
-ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
+ms.openlocfilehash: c880251d59810dc02446020ed02fd6049878262c
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75956230"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515021"
 ---
 # <a name="plan-communications"></a>Planear as comunicações
 
-O plano de comunicação é um elemento fundamental para uma migração do Intune. As ferramentas e os modelos a seguir são fornecidos para ajudá-lo a conscientizar os usuários finais. O kit de adoção do Intune inclui modelos de email, um guia de registro do Intune e links para vídeos instrutivos para o registro do usuário final.  
+O plano de comunicação é um elemento-chave para uma migração inoportuna. As seguintes ferramentas e modelos são fornecidos para ajudá-lo na educação dos utilizadores finais. O Kit de Adoção Intune inclui modelos de e-mail, um guia de inscrição intune e links para vídeos instrutivos para inscrição de utilizador final.  
 
-Download: [Kit de adoção do Intune](https://aka.ms/IntuneAdoptionKit)
+Download: [Intune Adoption Kit](https://aka.ms/IntuneAdoptionKit)
 
 ## <a name="email-templates"></a>Modelos de e-mail
 
-Recomendamos o seguinte plano de comunicação de e-mails. Você pode editar o texto para alinhá-lo ao sistema operacional e ao ambiente de seus usuários. Fornecemos modelos para que você se adapte ao seu plano de comunicação:
+Recomendamos o seguinte plano de comunicação de e-mails. Pode editar o texto para se alinhar com o sistema operativo e o ambiente dos seus utilizadores. Nós fornecemos modelos para que você se adapte para o seu plano de comunicação:
 
-- **#1 de email**: explique os benefícios, as expectativas e os cronogramas. Aproveite esta oportunidade para apresentar outros serviços novos cujo acesso será concedido a dispositivos geridos pelo Intune.
+- **E-mail #1**: Explique os benefícios, expectativas e horários. Aproveite esta oportunidade para apresentar outros serviços novos cujo acesso será concedido a dispositivos geridos pelo Intune.
 
-- **#2 de email**: anuncie que os serviços agora estão prontos para acesso por meio do Intune. Informe os utilizadores para se inscreverem agora. Forneça aos usuários uma linha do tempo antes que seu acesso seja afetado. Notificar os utilizadores dos benefícios e dos motivos estratégicos da migração.
+- **E-mail #2**: Anuncie que os serviços estão agora prontos para acesso através do Intune. Informe os utilizadores para se inscreverem agora. Dê aos utilizadores uma linha temporal antes de o seu acesso ser afetado. Notificar os utilizadores dos benefícios e dos motivos estratégicos da migração.
 
-Após um determinado período, você pode começar a impor a conformidade por meio de políticas de acesso condicional e usá-la como critério para acessar dados corporativos, conforme explicado em [conduzir a adoção do usuário final com acesso condicional](migration-guide-drive-adoption.md).
+Após um determinado período, pode começar a fazer cumprir as políticas de Acesso Condicional e usá-lo como critérios para aceder aos dados corporativos, como explica do [Drive end-user adoção com Acesso Condicional](migration-guide-drive-adoption.md).
 
-## <a name="intune-enrollment-guide"></a>Guia de registro do Intune
+## <a name="intune-enrollment-guide"></a>Guia de inscrição intune
 
-Fornecemos as versões em PDF e Word do guia de registro do Intune. Você pode fornecer o PDF aos seus usuários no estado em que se encontram ou personalizar a versão do Word para incluir os recursos internos e as informações de contato. Você é incentivado a editar o guia de registro para refletir os sistemas operacionais apropriados que são aplicáveis ao ambiente de seus usuários.
+Fornecemos versões PDF e Word do Guia de Inscrição Intune. Pode fornecer o PDF aos seus utilizadores como está, ou personalizar a versão Word para incluir os seus recursos internos e informações de contacto. É encorajado a editar o Guia de Inscrição para refletir os sistemas operativos apropriados que são aplicáveis ao ambiente dos seus utilizadores.
 
-O guia de registro do usuário final inclui links para instruções mais detalhadas associadas a cada sistema operacional e os vídeos mencionados abaixo.
+O Guia de Inscrição do Utilizador Final inclui links para instruções mais detalhadas associadas a cada sistema operativo, e os vídeos mencionados abaixo.
 
 ## <a name="instructional-videos"></a>Vídeos instrutivos
 
-Criamos vídeos passo a passo curtos para ajudar os usuários a registrar facilmente seus dispositivos no Intune.
+Criámos vídeos curtos e passo a passo para ajudar os seus utilizadores a inscreverem facilmente os seus dispositivos em Intune.
 
 - [Inscrever o seu dispositivo Android](https://www.youtube.com/watch?v=k0Q_sGLSx6o&t=1s)
-- [Registrar seu dispositivo de perfil de trabalho do Android](https://www.youtube.com/watch?v=9Dl8HsGk4tI&t=3s)
-- [Inscrever o seu dispositivo iOS](https://www.youtube.com/watch?v=mJyv6YcHi7c)
+- [Inscreva o seu dispositivo de perfil de trabalho Android](https://www.youtube.com/watch?v=9Dl8HsGk4tI&t=3s)
+- [Inscreva o seu dispositivo iOS/iPadOS](https://www.youtube.com/watch?v=mJyv6YcHi7c)
 - [Inscrever o seu dispositivo macOS](https://www.youtube.com/watch?v=Pa2pfhwq_yk)
-- [Registrar suas janelas](https://www.youtube.com/watch?v=TKQxEckBHiE)
+- [Inscreva as suas Janelas](https://www.youtube.com/watch?v=TKQxEckBHiE)
 
 ## <a name="next-steps"></a>Próximos passos
 
-O Intune tem recursos adicionais que você pode usar para promover o registro de dispositivo com seus usuários:
+Intune tem recursos adicionais que pode utilizar para promover a inscrição do dispositivo com os seus utilizadores:
 
 - O artigo [Como dar formação aos seus utilizadores finais sobre o Microsoft Intune](end-user-educate.md) disponibiliza passos de inscrição por plataforma de SO móvel.
-- O [registro de dispositivo do Intune para administradores de ti](../enrollment/device-enrollment.md) explica como registrar dispositivos Android, Ios e Mac no Intune.
-- Compartilhe o aplicativo Portal da Empresa com seus usuários Android, iOS e Windows.
+- A [inscrição do dispositivo Intune para administradores de TI](../enrollment/device-enrollment.md) explica como inscrever dispositivos Android, iOS/iPadOS e Mac no Intune.
+- Partilhe a aplicação Portal da Empresa com os seus utilizadores Android, iOS/iPadOS e Windows.

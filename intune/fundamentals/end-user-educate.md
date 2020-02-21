@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0c959102383f44eb35e1a923f39325007c6624b5
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 94c52257072bc713cfd3b7a44f342d5d9a4ba2f8
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502890"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514681"
 ---
 # <a name="how-to-educate-your-end-users-about-microsoft-intune"></a>Como dar formação aos seus utilizadores finais sobre o Microsoft Intune
 
@@ -42,10 +42,10 @@ __Qual é o nível de experiência em tecnologia dos utilizadores?__ O conhecime
 
 __O que é que significa para os utilizadores a gestão da mobilidade?__ Os utilizadores poderão não compreender totalmente o acesso que tem (ou que não tem) aos dispositivos e informações deles. Os utilizadores têm provavelmente alguma preocupação com a possibilidade de as suas ações serem controladas pelo departamento de TI e pela liderança. Os utilizadores de dispositivos menos experientes poderão acreditar que todas as atividades nos seus dispositivos são privadas.
 
-__De que forma pode o Intune incomodar os utilizadores?__  Reconheça e respeite o tempo que os utilizadores demoram a instalar aplicações, inscrever dispositivos e manter a conformidade. A principal prioridade de todas as implementações do Intune é a proteção dos dados empresariais. No entanto, as atitudes do usuário para o gerenciamento de dispositivos podem ser afetadas negativamente se você enviar por push políticas que, por exemplo:  
+__De que forma pode o Intune incomodar os utilizadores?__  Reconheça e respeite o tempo que os utilizadores demoram a instalar aplicações, inscrever dispositivos e manter a conformidade. A principal prioridade de todas as implementações do Intune é a proteção dos dados empresariais. No entanto, as atitudes dos utilizadores em relação à gestão do dispositivo podem ser negativamente afetadas se pressionar políticas que, por exemplo:  
 
 - Exijam códigos de acesso injustificados nos dispositivos pessoais
-- Enviar atualizações de aplicativo necessárias no meio de chamadas comerciais críticas  
+- Envie atualizações de aplicativos necessárias no meio de chamadas de negócios críticas  
 
 Estas políticas podem também afetar negativamente a produtividade dos colaboradores.
 
@@ -57,7 +57,7 @@ Leia a seguinte lista de sugestões para facilitar a implementação do Intune n
 
 * __Seja acessível.__ Informe os utilizadores sobre onde podem procurar ajuda para os problemas dos seus dispositivos. Ao [personalizar o Portal da Empresa](../apps/company-portal-app.md), não se esqueça de incluir as informações de contacto do seu administrador de TI.
 
-* __Seja específico.__ Forneça instruções específicas para a implementação da sua organização. Esta ação demonstra aos utilizadores que se preocupa com a experiência deles. Use este kit de [adoção do Intune](https://aka.ms/IntuneAdoptionKit) personalizável para criar suas próprias instruções de registro para seus usuários.
+* __Seja específico.__ Forneça instruções específicas para a implementação da sua organização. Esta ação demonstra aos utilizadores que se preocupa com a experiência deles. Utilize este habitual Kit de [Adoção Intune](https://aka.ms/IntuneAdoptionKit) para criar as suas próprias instruções de inscrição para os seus utilizadores.
 
 * __Encontre formas diferentes de comunicar.__ Os utilizadores têm [diferentes estilos de aprendizagem](https://www.umassd.edu/dss/resources/faculty--staff/how-to-teach-and-accommodate/how-to-accommodate-different-learning-styles/) e maneiras preferenciais de consumir informações. Para pessoas que aprendem melhor visualmente, o Intune fornece [versões de vídeo sobre como inscrever vários tipos de dispositivos](https://channel9.msdn.com/Series/IntuneEnrollment) no Canal 9. Os vídeos podem ser incorporados diretamente no seu próprio [site do SharePoint](https://support.office.com/article/Embed-a-video-from-Office-365-Video-59e19984-c34e-4be8-889b-f6fa93910581). Também pode transferir cópias locais do vídeo e da faixa de áudio.
 
@@ -68,8 +68,8 @@ Leia a seguinte lista de sugestões para facilitar a implementação do Intune n
   * [Como os utilizadores de dispositivos Android obtêm as aplicações](end-user-apps-android.md)
 
 * **iOS**
-  * [Utilizar um dispositivo iOS com o Intune](https://docs.microsoft.com/intune-user-help/using-your-ios-device-with-intune)
-  * [Como os utilizadores de dispositivos iOS obtêm as aplicações](end-user-apps-ios.md)
+  * [Utilização de um dispositivo iOS/iPadOS com Intune](https://docs.microsoft.com/intune-user-help/using-your-ios-device-with-intune)
+  * [Como os seus utilizadores iOS/iPadOS obtêm as suas aplicações](end-user-apps-ios.md)
 
 * **Windows**
   * [Utilizar um dispositivo Windows com o Intune](https://docs.microsoft.com/intune-user-help/using-your-windows-device-with-intune)

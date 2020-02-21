@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7c72cf963822284702f6b924ca506f8ec1157e91
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: a03a92f715496b3c647a12bb99457d151ead54a3
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505133"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514936"
 ---
 # <a name="determine-use-case-scenario-requirements"></a>Determinar os requisitos de cenários de casos de utilização
 
@@ -35,13 +35,13 @@ Também poderá ter grupos organizacionais para o cenário de caso de utilizaç�
 
 Veja alguns exemplos de requisitos de casos de utilização de uma organização que apresentam diferentes conjuntos de requisitos para cada cenário de casos de utilização e casos de subutilização, grupo organizacional e plataforma de dispositivo móvel. Também pode utilizar a tabela seguinte para introduzir os requisitos de caso de utilização da sua organização:
 
-| **Casos de utilização** | **Casos de subutilização** | **GRUPOS** | **Plataformas de dispositivos** | **Requirements** |
+| **Casos de utilização** | **Casos de subutilização** | **Grupos** | **Plataformas de dispositivos** | **Requisitos** |
 |:---:|:---:|:---:|:---:|:---:|
-| Empresarial | Técnico de informação | RH, Finanças | iOS | E-mail seguro, definições do dispositivo, perfis, aplicações |                                                          
-| Empresarial | Executivos | RH, Finanças | iOS | E-mail seguro, definições do dispositivo, perfis, aplicações |                                                         
+| Empresarial | Técnico de informação | RH, Finanças | iOS/iPadOS | E-mail seguro, definições do dispositivo, perfis, aplicações |                                                          
+| Empresarial | Executivos | RH, Finanças | iOS/iPadOS | E-mail seguro, definições do dispositivo, perfis, aplicações |                                                         
 | Empresarial | Modo de Local Público | Revenda | Android | Definições do dispositivo, perfis e aplicações |
-| BYOD | Técnico de informação | Marketing, Vendas | iOS | E-mail seguro, definições do dispositivo, perfis, aplicações |                                                         
-| BYOD | Executivos | Marketing, Vendas | iOS | E-mail seguro, definições do dispositivo, perfis, aplicações |
+| BYOD | Técnico de informação | Marketing, Vendas | iOS/iPadOS | E-mail seguro, definições do dispositivo, perfis, aplicações |                                                         
+| BYOD | Executivos | Marketing, Vendas | iOS/iPadOS | E-mail seguro, definições do dispositivo, perfis, aplicações |
 
 Pode [transferir um modelo da tabela acima](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) para introduzir os requisitos de casos de utilização e de casos de subutilização da sua organização.
 
@@ -51,7 +51,7 @@ Pode [transferir um modelo da tabela acima](https://gallery.technet.microsoft.co
 Veja mais alguns exemplos que podem ser utilizados na coluna “Requisitos”:
 
 - **E-mail seguro**
-  - Acesso condicional para o Exchange Online/local
+  - Acesso Condicional para Troca Online / No Local
   - Políticas de proteção de aplicações do Outlook
 
 - **Definições do dispositivo**

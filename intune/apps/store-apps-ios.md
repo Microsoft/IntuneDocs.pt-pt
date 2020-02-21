@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2daa7428cf8677f9e1a2b11db2b3ce65e2df8bc4
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: f2baf60fed2c6010e5ae0784cda166ac4fabfd57
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755005"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511740"
 ---
 # <a name="add-ios-store-apps-to-microsoft-intune"></a>Adicionar aplicações da loja iOS ao Microsoft Intune
 
@@ -32,17 +32,17 @@ ms.locfileid: "76755005"
 Utilize as informações neste artigo para ajudá-lo a adicionar aplicações da loja iOS ao Microsoft Intune. As aplicações da loja iOS são aplicações que o Intune instala nos dispositivos dos seus utilizadores. Os utilizadores fazem parte da força de trabalho da sua empresa. As aplicações da loja iOS são atualizadas automaticamente.
 
 >[!NOTE]
->Embora os utilizadores de dispositivos iOS possam remover algumas aplicações iOS incorporadas, tais como Bolsa e Mapas, não pode utilizar o Intune para implementar novamente essas aplicações. Se os seus utilizadores eliminarem essas aplicações, terão de aceder à App Store e reinstalá-las manualmente.
+>Embora os utilizadores de dispositivos iOS/iPadOS possam remover algumas aplicações incorporadas para iOS/iPadOS, como Stocks e Maps, não é possível utilizar o Intune para reimplementar essas aplicações. Se os seus utilizadores eliminarem essas aplicações, terão de aceder à App Store e reinstalá-las manualmente.
 
 ## <a name="before-you-start"></a>Antes de começar
 
-Só pode atribuir aplicações com este método se forem gratuitas na App Store. Se quiser atribuir aplicações pagas com o Intune, considere utilizar o [programa de compra em volume do iOS](vpp-apps-ios.md).
+Só pode atribuir aplicações com este método se forem gratuitas na App Store. Se pretender atribuir aplicações pagas utilizando o Intune, considere utilizar o [programa de compra de volume iOS/iPadOS](vpp-apps-ios.md).
 
 >[!NOTE]
 >Ao trabalhar com o Microsoft Intune, recomendamos que utilize o browser Microsoft Edge ou Google Chrome.
 
-1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
-2. Selecione **aplicativos** > **todos os aplicativos** > **Adicionar**.
+1. Inscreva-se no [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **Apps** > **Todas as aplicações** > **Adicionar**.
 3. No painel do **tipo select,** nos tipos de **aplicativos da Loja** disponíveis, selecione a **aplicação de loja iOS**.
 4. Clique em **Selecionar**.<br>
    Os passos da **aplicação Add** são apresentados.
@@ -66,12 +66,12 @@ Só pode atribuir aplicações com este método se forem gratuitas na App Store.
     - **URL de Informações**: opcionalmente, introduza o URL de um site que contenha informações sobre esta aplicação. O URL é apresentado aos utilizadores no portal da empresa.
     - **URL de Privacidade**: opcionalmente, introduza um URL para um site que contenha informações sobre a privacidade desta aplicação. O URL é apresentado aos utilizadores no portal da empresa.
     - **Programador**: opcionalmente, introduza o nome do programador da aplicação. Este campo só é visível para administradores e não para os utilizadores.
-    - **Proprietário**: opcionalmente, introduza o nome do proprietário desta aplicação, por exemplo, *Departamento de RH*. Este campo só é visível para administradores e não para os utilizadores.
+    - **Proprietário**: opcionalmente, introduza o nome do proprietário desta aplicação (por exemplo, *Departamento de RH*). Este campo só é visível para administradores e não para os utilizadores.
     - **Notas**: opcionalmente, introduza quaisquer notas que queira associar a esta aplicação. Este campo só é visível para o administrador e não estará visível para os utilizadores finais.
     - **Logótipo**: opcionalmente, carregue um ícone que será associado à aplicação. Este ícone é apresentado com a aplicação quando os utilizadores procurarem no portal da empresa.
 10. Clique em **Seguir** para exibir a página **de tags scope.**
 11. Clique em **Selecionar etiquetas** de âmbito para adicionar opcionalmente etiquetas de âmbito para a aplicação. Para mais informações, consulte [Utilize o controlo de acesso baseado em funções (RBAC) e as etiquetas](~/fundamentals/scope-tags.md)de âmbito para TI distribuídos .
-12. Clique em **Avançar** para exibir a página **atribuições** .
+12. Clique em **Seguir** para exibir a página **de Tarefas.**
 13. Selecione as atribuições de grupo para a aplicação. Para mais informações, consulte [Adicionar grupos para organizar utilizadores e dispositivos](~/fundamentals/groups-add.md). 
 14. Clique em **Seguir** para exibir a página **Review + criar.** Reveja os valores e configurações que inseriu para a aplicação.
 15. Quando terminar, clique em **Criar** para adicionar a app ao Intune.

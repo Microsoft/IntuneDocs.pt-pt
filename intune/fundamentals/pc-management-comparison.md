@@ -1,7 +1,7 @@
 ---
 title: Comparar opções de gestão de PCs Windows
 titleSuffix: Microsoft Intune
-description: Inscrição de dispositivos iOS pertencentes à empresa através do Programa de Registo de Aparelho (DEP) da Apple ou do Apple Configurator.
+description: Inscrição de dispositivos iOS/iPadOS de propriedade corporativa utilizando o Programa de Inscrição de Dispositivos apple (DEP) ou Configurator Apple.
 keywords: ''
 author: dougeby
 ms.author: dougeby
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d8fd53e9d12dd38639d204e214aea03d733e584b
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: cda9a549cb12ab61da67da91272e9f388d32a2ef
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059206"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514987"
 ---
 # <a name="compare-managing-windows-pcs-as-computers-or-mobile-devices"></a>Comparar a gestão de PCs Windows como computadores ou dispositivos móveis
 
@@ -35,15 +35,15 @@ As organizações podem utilizar o Microsoft Intune para gerir PCs Windows como 
 |--------------|-------------------------------|-------------------------------|
 |**Sistemas operativos** |Windows 10, Windows 8 e posterior, Windows 7, Windows Vista | Windows 10 e posterior |
 |**Suporte do Portal do Intune** |[Consola do Silverlight](https://manage.microsoft.com)|[Portal do Azure](https://portal.azure.com) |
-|**Acesso condicional**|Não disponível|Disponível <br>[O que é o acesso condicional?](../protect/conditional-access.md)|
+|**Conditional Access**|Não disponível|Disponível <br>[O que é acesso condicional?](../protect/conditional-access.md)|
 |**Inscrição em massa**|Não disponível|Disponível <br>[Inscrição em massa para dispositivos Windows](../enrollment/windows-bulk-enroll.md)|
 |**Perfis de dispositivo**|Não disponível|Disponível <br>[O que são os perfis de dispositivos do Microsoft Intune?](../configuration/device-profiles.md)|
 |**Inscrição sem agente**|Não disponível |Disponível<br>[Inscrever dispositivos Windows](../enrollment/windows-enroll.md)|
 |**Gestão de atualizações de software**| Atualizações do Windows e atualizações de aplicações da Microsoft<br>[Manter os PCs Windows atualizados com as atualizações de software](../keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)|Loja Microsoft para Empresas para as atualizações de aplicações do Windows 10 e da Microsoft<br> [Configurar definições do Windows Update para Empresas](../protect/windows-update-for-business-configure.md) |
 |**Gestão de licença de software**|Disponível <br>[Gerir contratos de licença para software para computadores com Windows](../manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)|Loja Microsoft para Empresas (apenas para aplicações .appx)<br>[Gerir aplicações compradas na Loja Microsoft para Empresas](../apps/windows-store-for-business.md)|
 |**Inventário**|Disponível <br>[Ver o inventário de hardware e software dos PCs Windows](view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune.md)|Disponível <br>[Como monitorizar informações da aplicação](../apps/apps-monitor.md)<br>[O que é a gestão de dispositivos](../remote-actions/device-management.md)|
-|**Política de firewall do Windows**|Disponível <br>[Ajudar a proteger PCs com o Windows a utilizarem políticas de Firewall do Windows](../help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md) |Disponível <br>[Microsoft defender firewall](../protect/endpoint-protection-windows-10.md#microsoft-defender-firewall)|
-|**Proteção contra software maligno**|Endpoint Protection<br>[Ajude a proteger os PCs Windows com o Endpoint Protection](../help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)|Microsoft Defender<br>[Habilitar o Microsoft defender](../protect/advanced-threat-protection.md)|
+|**Política de firewall do Windows**|Disponível <br>[Ajudar a proteger PCs com o Windows a utilizarem políticas de Firewall do Windows](../help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md) |Disponível <br>[Microsoft Defender Firewall](../protect/endpoint-protection-windows-10.md#microsoft-defender-firewall)|
+|**Proteção contra software maligno**|Endpoint Protection<br>[Ajude a proteger os PCs Windows com o Endpoint Protection](../help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)|Microsoft Defender<br>[Ativar o Microsoft Defender](../protect/advanced-threat-protection.md)|
 |**Assistência remota** |TeamViewer<br>[Pedir e fornecer assistência remota para PCs Windows](request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md)|TeamViewer<br> [Utilizar o TeamViewer para administrar remotamente dispositivos do Intune](../remote-actions/teamviewer-support.md) |
 |**Implementação de aplicações** | Não disponível para a Loja Microsoft para Empresas,<br>.exe, .appx e múltiplos ficheiros .msi apenas<br>[Adicionar aplicações para PCs Windows que executam o cliente de software do Intune](add-apps-for-windows-pcs-in-microsoft-intune.md)|Disponível para aplicações da Loja Microsoft e aplicações de linha de negócio<br>[Como adicionar aplicações da loja Windows](../apps/store-apps-windows.md)<br>[Como adicionar aplicações de linha de negócio (LOB) Windows](../apps/lob-apps-windows.md)|
 |**Proteção de aplicações**|Não disponível|Disponível <br>[O que são as políticas de proteção de aplicações?](../apps/app-protection-policy.md)|

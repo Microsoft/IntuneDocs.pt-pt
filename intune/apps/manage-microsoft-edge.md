@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3ae5a7508f27dbf15a58ba3386e744bb63bf102b
-ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
+ms.openlocfilehash: 40a7e1884a7e36bf56038bdafdd15a1556ef46c7
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77125018"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513457"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>Gerir o acesso à web utilizando o Microsoft Edge com o Microsoft Intune
 
@@ -101,12 +101,12 @@ Para criar a configuração da aplicação para o Microsoft Edge:
 2. Selecione **Apps** > políticas de **configuração** de apps > **adicionar**.
 3. No painel de política de **configuração Adicionar,** introduza um **Nome** e **uma descrição** opcional para as definições de configuração da aplicação.
 4. Para o tipo de **Inscrição de dispositivos**, selecione **Aplicações geridas**.
-5. Escolha **Selecione a aplicação necessária**. Em seguida, no painel de **aplicações direcionados,** escolha o **Navegador Ou** **Edge** Gerido para iOS, para Android, ou para ambos.
+5. Escolha **Selecione a aplicação necessária**. Em seguida, no painel de **aplicações direcionados,** escolha o **Navegador Ou** **Edge** Gerido para iOS/iPadOS, para Android, ou para ambos.
 6. Selecione **OK** para voltar ao painel de política de **configuração Adicionar.**
 7. Selecione **Definições de configuração**. No painel de **configuração,** define os pares de chaves e de valor para fornecer configurações para o Microsoft Edge. Utilize as secções mais adiante neste artigo para saber mais sobre os diferentes pares de chave e valor que pode definir.
 
     > [!NOTE]
-    > O Microsoft Edge utiliza os mesmos pares de chave e valor que o Managed Browser. No Android, o Microsoft Edge deve ser direcionado às políticas de proteção de aplicativo para que as políticas de configuração de aplicativo entrem em vigor.
+    > O Microsoft Edge utiliza os mesmos pares de chave e valor que o Managed Browser. No Android, o Microsoft Edge deve ser direcionado com políticas de proteção de aplicações para as políticas de configuração de apps para produzir efeito.
 
 8. Quando terminar, selecione **OK**.
 9. No painel de política de **configuração Adicionar,** escolha **Adicionar**.<br>
@@ -136,7 +136,7 @@ No Android:
 - O Microsoft Edge é lançado se apenas o Microsoft Edge for descarregado no dispositivo, e é direcionado com a política intune.
 - O Navegador Gerido é lançado se apenas o Navegador Gerido estiver no dispositivo, e é direcionado com a política Intune.
 
-No iOS, para aplicações que integraram o SDK do Intune para iOS v. 9.0.9+:
+No iOS/iPadOS, para apps que integraram o Intune SDK para iOS v. 9.0.9+:
 - O Navegador Gerido Intune é lançado se tanto o Navegador Gerido como o Microsoft Edge estiverem no dispositivo.  
 - O Microsoft Edge é lançado se apenas o Microsoft Edge estiver no dispositivo, e é direcionado com a política Intune.
 - O Navegador Gerido é lançado se apenas o Navegador Gerido estiver no dispositivo, e é direcionado com a política Intune.
@@ -196,16 +196,16 @@ Em seguida, utilize os seguintes pares chave/valor para puxar a marca das suas o
 
 |    Chave    |    Valor    |
 |--------------------------------------------------------------------|------------|
-|    com.microsoft.intune.mam.managedbrowser.NewTabPage.BrandLogo    |    true    |
-|    com.microsoft.intune.mam.managedbrowser.NewTabPage.BrandColor    |    true    |
+|    com.microsoft.intune.mam.managedbrowser.NewTabPage.BrandLogo    |    Verdadeiro    |
+|    com.microsoft.intune.mam.managedbrowser.NewTabPage.BrandColor    |    Verdadeiro    |
 
 ## <a name="display-relevant-industry-news-on-new-tab-pages"></a>Mostrar notícias relevantes da indústria em Novas Páginas de Separadores
 
-Pode configurar a experiência New Tab Page dentro do telemóvel do Microsoft Edge para mostrar notícias da indústria que são relevantes para a sua organização. Ao ativar esta funcionalidade, o Microosft Edge mobile usa o nome de domínio da sua organização para agregar notícias da web sobre a sua organização, indústria da organização e comeptitors, para que os seus utilizadores possam encontrar notícias externas relevantes, todas a partir das novas centrais páginas de separadores dentro do Microsoft Edge. O Industry News é desligado por defeito, e você pode usar para optar por ele para a sua organização. 
+Pode configurar a experiência New Tab Page dentro do telemóvel do Microsoft Edge para mostrar notícias da indústria que são relevantes para a sua organização. Ao ativar esta funcionalidade, o Microsoft Edge mobile utiliza o nome de domínio da sua organização para agregar notícias da web sobre a sua organização, indústria da organização e concorrentes, para que os seus utilizadores possam encontrar notícias externas relevantes, todas a partir do novo centralizado páginas de separadores dentro do Microsoft Edge. O Industry News é desligado por defeito, e você pode usar para optar por ele para a sua organização. 
 
 |    Chave    |    Valor    |
 |------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
-|    com. Microsoft. Intune. ShowIndustryNews    |    **True** mostrará A Indústria Notícias na página móvel do Microsoft Edge New Tab Page.<p>**Falso** (padrão) esconderá notícias da indústria da página new tab.    |
+|    com.microsoft.intune.ShowIndustryNews    |    **True** mostrará A Indústria Notícias na página móvel do Microsoft Edge New Tab Page.<p>**Falso** (padrão) esconderá notícias da indústria da página new tab.    |
 
 ## <a name="configure-managed-bookmarks-for-microsoft-edge"></a>Configure marcadores geridos para o Microsoft Edge
 
@@ -252,7 +252,7 @@ Pode utilizar vários formatos DE URL para construir as listas de sites permitid
   - Porta 443 para https
 - A utilização de wildcards para o número da porta **não** é suportada. Por exemplo, `http://www.contoso.com:*` e `http://www.contoso.com:*/` não são suportados. 
 
-    |    do IdP    |    Detalhes    |    Correspondências    |    Não corresponde    |
+    |    URL    |    Detalhes    |    Correspondências    |    Não corresponde    |
     |-------------------------------------------|--------------------------------------------------------|-------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
     |    `http://www.contoso.com`    |    Corresponde a uma única página    |    `www.contoso.com`    |    `host.contoso.com`<br>`www.contoso.com/images`<br>`contoso.com/`    |
     |    `http://contoso.com`    |    Corresponde a uma única página    |    `contoso.com/`    |    `host.contoso.com`<br>`www.contoso.com/images`<br>`www.contoso.com`    |
@@ -293,7 +293,7 @@ Pode configurar se as ligações restritas devem ser abertas diretamente na nave
 
 |    Chave    |    Valor    |
 |----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    `com.microsoft.intune.mam.managedbrowser.AllowTransitionOnBlock`    |    **True** permite que o Microsoft Edge transeos os utilizadores para o seu contexto pessoal para abrir sites bloqueados.<p>**O bloco** impede o Microsoft Edge de transitar os utilizadores. Os utilizadores são simplesmente mostrados uma mensagem afirmando que o site a que estão a tentar aceder está bloqueado.    |
+|    `com.microsoft.intune.mam.managedbrowser.openInPrivateIfBlock`    |    **True** abrirá automaticamente os sites diretamente num separador InPrivate, sem pedir ao utilizador que faça a troca para a sua conta pessoal. <p> **Falso** (predefinido) bloqueará o site dentro do Microsoft Edge e o utilizador será solicitado a mudar para a sua conta pessoal para visualizar.    |
 
 ## <a name="disable-microsoft-edge-prompt-to-save-passwords"></a>Desativar o pedido do Microsoft Edge para guardar senhas
 
@@ -328,6 +328,6 @@ Seguem-se considerações adicionais de segurança e privacidade para o Microsof
 - Para permitir a autenticação e acesso à documentação Intune, * **.microsoft.com** está isento das definições da lista de permitir ou bloquear. É sempre permitido.
 - Os utilizadores podem desativar a recolha de dados. A Microsoft recolhe automaticamente dados anónimos sobre o desempenho e a utilização do Managed Browser para melhorar os produtos e serviços Microsoft. Os utilizadores podem desativar a recolha de dados com a definição **Dados de Utilização** nos respetivos dispositivos. OS utilizadores não têm controlo sobre a recolha destes dados. Nos dispositivos iOS, os websites que os utilizadores visitam que tenham um certificado expirado ou não fidedigno não podem ser abertos.
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Próximos passos
 
 - [O que são as políticas de proteção de aplicações?](app-protection-policy.md) 

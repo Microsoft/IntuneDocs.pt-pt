@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 96ebae46fd4935c3070319f16d35d5b53888e94c
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 3f432ab20170dc702d2014bbac68ced06e51082e
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505171"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514902"
 ---
 # <a name="identify-mobile-device-management-use-case-scenarios"></a>Identificar cenários de casos de utilização da gestão de dispositivos móveis
 
@@ -79,15 +79,15 @@ Agora precisa de identificar os grupos organizacionais associados a cada cenári
 
 O próximo passo consiste em identificar as plataformas de dispositivos móveis associados a cada cenário de caso de utilização. Poderá existir mais de uma plataforma.
 
-Por exemplo, o seu cenário de casos de utilização empresarial poderá suportar plataformas de dispositivos Samsung Knox Android e iOS. A política de BYOD poderá incluir suporte para plataformas de dispositivos móveis adicionais como Android (não Samsung Knox) e Windows 10 Mobile. Com base nos exemplos anteriores, associámos plataformas de dispositivos móveis a cada cenário de casos de utilização.
+Por exemplo, o seu cenário de utilização corporativa pode suportar plataformas de dispositivos iOS/iPadOS e Android Samsung Knox. A política de BYOD poderá incluir suporte para plataformas de dispositivos móveis adicionais como Android (não Samsung Knox) e Windows 10 Mobile. Com base nos exemplos anteriores, associámos plataformas de dispositivos móveis a cada cenário de casos de utilização.
 
-| **Casos de utilização** | **Casos de subutilização** | **GRUPOS** | **Plataformas de dispositivos** |   
+| **Casos de utilização** | **Casos de subutilização** | **Grupos** | **Plataformas de dispositivos** |   
 |:---:|:---:|:---:|:---:|
-| Empresarial | Técnico de informação | RH, Finanças | iOS |                                                           
-| Empresarial | Executivos | RH, Finanças | iOS |                                                           
+| Empresarial | Técnico de informação | RH, Finanças | iOS/iPadOS |                                                           
+| Empresarial | Executivos | RH, Finanças | iOS/iPadOS |                                                           
 | Empresarial | Modo de Local Público | Revenda | Android |
-| BYOD | Técnico de informação | Marketing, Vendas | iOS |                                                           
-| BYOD | Executivos | Marketing, Vendas | iOS |
+| BYOD | Técnico de informação | Marketing, Vendas | iOS/iPadOS |                                                           
+| BYOD | Executivos | Marketing, Vendas | iOS/iPadOS |
 
 ## <a name="next-steps"></a>Próximos passos
 

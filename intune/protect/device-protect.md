@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c18b6bcc8ec6e8d78862c0368c920fd3d79ce2b5
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: 49c629039c08c892c7d6b19422d79c9eb1a8d760
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755583"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510474"
 ---
 # <a name="protect-devices-with-microsoft-intune"></a>Proteger dispositivos com o Microsoft Intune
 
@@ -33,7 +33,7 @@ O Microsoft Intune ajuda-o a proteger os dispositivos que gere e os dados armaze
 As [políticas de configuração](../configuration/device-profiles.md) do Intune ajudam a proteger e configurar dispositivos através do controlo de inúmeras definições e funcionalidades. Por exemplo:
 
 - Pode restringir a utilização das funcionalidades de hardware do dispositivo, como a câmara ou o Bluetooth.
-- Pode configurar aplicações conformes e não conformes. O utilizador recebe um alerta se estiver instalada uma aplicação não conforme (e algumas plataformas podem realmente bloquear a instalação).
+- Pode configurar aplicações em conformidade e não conformes. O utilizador recebe um alerta se estiver instalada uma aplicação não conforme (e algumas plataformas podem realmente bloquear a instalação).
 
 ## <a name="reset-passcodes-when-users-are-locked-out-of-their-devices"></a>Repor códigos de acesso quando o acesso dos utilizadores aos respetivos dispositivos é bloqueado
 Uma vez que o primeiro passo para proteger os dados da empresa em dispositivos móveis consiste em exigir um código de acesso para utilizar o dispositivo, por vezes, precisa de [repor um código de acesso](../remote-actions/device-passcode-reset.md) ou ajudar um empregado a fazê-lo, seja através da remoção do código de acesso ou da definição de um código de acesso temporário em modo remoto. Também pode [bloquear um dispositivo remotamente](../remote-actions/device-remote-lock.md) se este for perdido ou roubado.
@@ -43,7 +43,7 @@ Quando um dispositivo tem de ser [removido da gestão do Intune](../remote-actio
 
 ## <a name="require-devices-to-be-compliant"></a>Exigir conformidade dos dispositivos
 O Intune inclui [políticas de conformidade do dispositivo](device-compliance-get-started.md) que lhe permitem avaliar (e em certos casos remediar) dispositivos que não estão em conformidade com as regras que especificar. Por exemplo, pode obter relatórios sobre:
-- dispositivos iOS desbloqueados por jailbreak
+- dispositivos iOS/iPadOS jailbroken
 - dispositivos encriptados ou não encriptados
 - o estado de funcionamento de dispositivos Windows 10 (conforme determinado pelo Serviço de Atestado de Estado de Funcionamento).
 
@@ -60,7 +60,7 @@ A [autenticação multifator (MFA)](../enrollment/multi-factor-authentication.md
 O Intune permite realizar a integração com o [Windows Hello para Empresas](windows-hello.md), que é um método de início de sessão alternativo para Windows 10 e posterior que utiliza o Active Directory ou uma conta do Azure Active Directory para substituir uma palavra-passe, um smart card ou um smart card virtual.
 
 ## <a name="disable-activation-lock-on-ios-devices"></a>Desativar bloqueio de ativação em dispositivos iOS
-O Bloqueio de ativação é uma funcionalidade que ajuda a proteger os dispositivos dos utilizadores. A funcionalidade exige que os utilizadores introduzam o Apple ID e a palavra-passe antes de qualquer pessoa poder eliminar ou reativar o dispositivo. No entanto, esta funcionalidade pode originar problemas, por exemplo, se os utilizadores saírem da empresa sem remover o bloqueio. [Desativar](../remote-actions/device-activation-lock-disable.md) o bloqueio de ativação do iOS pode ajudar removendo o bloqueio de dispositivos iOS supervisionados que lhe permitem realocar ou apagá-los.
+O Bloqueio de ativação é uma funcionalidade que ajuda a proteger os dispositivos dos utilizadores. A funcionalidade exige que os utilizadores introduzam o Apple ID e a palavra-passe antes de qualquer pessoa poder eliminar ou reativar o dispositivo. No entanto, esta funcionalidade pode originar problemas, por exemplo, se os utilizadores saírem da empresa sem remover o bloqueio. [Desativar o iOS/iPadOS Activation Lock](../remote-actions/device-activation-lock-disable.md) pode ajudar removendo o bloqueio de dispositivos iOS/iPadOS supervisionados que lhe permitem realocar ou apagá-los.
 
 ## <a name="next-steps"></a>Próximos passos
 

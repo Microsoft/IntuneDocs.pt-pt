@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7e38e4f8552b6ef217d264cfa74597bda5c665ab
-ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
+ms.openlocfilehash: b4999a813384c68bb394c7e73dee1c5c452459b9
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77125052"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515293"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Atualização da IU para aplicações de utilizadores finais do Intune
 
@@ -59,7 +59,7 @@ O Portal da Empresa para a experiência de registro do macOS tem um processo de 
 ## <a name="week-of-october-28-2019"></a>Semana de 28 de outubro de 2019  
 
 ### <a name="improved-checklist-design-in-company-portal-app-for-android----5550857---"></a>Design melhorado da lista de verificação na aplicação Do Portal da Empresa para Android <!-- 5550857 -->  
-A lista de verificação de configuração no aplicativo Portal da Empresa para Android foi atualizada com um design leve e novos ícones. As alterações alinham-se com as recentes atualizações feitas à aplicação Portal da Empresa para iOS. Para ver as etapas de inscrição atualizadas, consulte [Inscrever-se com perfil](/intune-user-help/enroll-device-android-work-profile) de trabalho Android e [inscrever o seu dispositivo Android](/intune-user-help/enroll-device-android-company-portal).  
+A lista de verificação de configuração no aplicativo Portal da Empresa para Android foi atualizada com um design leve e novos ícones. As alterações alinham-se com as recentes atualizações feitas à aplicação Portal da Empresa para iOS/iPadOS. Para ver as etapas de inscrição atualizadas, consulte [Inscrever-se com perfil](/intune-user-help/enroll-device-android-work-profile) de trabalho Android e [inscrever o seu dispositivo Android](/intune-user-help/enroll-device-android-company-portal).  
 
 Os seguintes ecrãs mostram a lista de verificação atualizada para a inscrição do perfil de trabalho Android:
 
@@ -216,7 +216,7 @@ A aplicação Portal da Empresa do Intune para Windows 10 foi atualizada com a 
 ## <a name="week-of-april-2-2018"></a>Semana de 2 de abril de 2018
 
 ### <a name="user-experience-update-for-the-company-portal-app-for-ios----1412866---"></a>Atualização da experiência de utilizador da aplicação Portal da Empresa para iOS <!-- 1412866 -->
-Lançámos uma atualização importante da experiência de utilizador para a aplicação Portal da Empresa para iOS. A atualização consiste numa reestruturação visual completa que inclui um aspeto e funcionalidade mais modernos. Mantivemos a funcionalidade da aplicação, mas aumentámos a facilidade de utilização e acessibilidade da mesma.  
+Lançámos uma grande atualização de experiência de utilizador para a aplicação Portal da Empresa para iOS/iPadOS. A atualização consiste numa reestruturação visual completa que inclui um aspeto e funcionalidade mais modernos. Mantivemos a funcionalidade da aplicação, mas aumentámos a facilidade de utilização e acessibilidade da mesma.  
 
 A atualização inclui ainda:
 - Suporte para iPhone X.
@@ -267,7 +267,7 @@ Se ativou o [mapeamento do grupo de dispositivos](../enrollment/device-group-map
 
 ### <a name="improvements-to-device-setup-workflow-in-the-company-portal-for-ios-in-version-290----1417174---"></a>Melhorias no fluxo de trabalho da configuração de dispositivos no Portal da Empresa para iOS na versão 2.9.0 <!-- 1417174 -->
 
-Melhorámos o fluxo de trabalho da configuração de dispositivos na aplicação Portal da Empresa para iOS. O tipo de linguagem é mais simples. Além disso, combinámos os ecrãs sempre que possível. Também tornámos o tipo de linguagem mais específico para a sua empresa ao utilizar o nome da mesma em todo o texto de configuração.
+Melhorámos o fluxo de trabalho de configuração do dispositivo na aplicação Portal da Empresa para iOS/iPadOS. O tipo de linguagem é mais simples. Além disso, combinámos os ecrãs sempre que possível. Também tornámos o tipo de linguagem mais específico para a sua empresa ao utilizar o nome da mesma em todo o texto de configuração.
 
 > [!NOTE]
 > Utilizamos o nome da empresa definido no Portal do Azure em **Microsoft Intune** > **Aplicações do Cliente** > **Imagem corporativa do Portal da Empresa** > **Nome da empresa**. Se não tiver definido este valor, utilizaremos o nome do inquilino definido em **Azure Active Directory** > **Propriedades** > **Nome**. Se não definiu um nome de empresa no branding do Portal da Empresa e não quer que o nome do seu inquilino seja exibido, recomendamos que coloque o nome da empresa no separador de marca Portal da Empresa. Se não quiser que esta cadeia apareça no cabeçalho no Portal da Empresa, pode desseleccionar a caixa de verificação para "Mostrar o nome da empresa ao lado do logotipo".
@@ -303,7 +303,7 @@ Estamos ainda a aperfeiçoar a forma como a relevância é controlada, pelo que 
 ### <a name="search-improvements-to-the-company-portal-website----1331697---"></a>Melhorias de pesquisa no site do Portal da Empresa <!-- 1331697 -->
 Estamos a melhorar as nossas capacidades de pesquisa da aplicação, a começar com o [site do Portal da Empresa](https://portal.manage.microsoft.com). As pesquisas serão agora efetuadas em categorias de aplicações para além dos campos Nome e Descrição. Os resultados serão ordenados, por predefinição, por ordem decrescente de relevância. 
 
-Os utilizadores do iOS também receberão esta alteração, uma vez que o site do Portal da Empresa também é utilizado como parte da aplicação Portal da Empresa para iOS. As aplicações do Portal da Empresa para Android e Windows irão receber atualizações semelhantes nos próximos meses.
+Os utilizadores do iOS também receberão esta alteração, uma vez que o website do Portal da Empresa também é utilizado como parte da aplicação Portal da Empresa para iOS/iPadOS. As aplicações do Portal da Empresa para Android e Windows irão receber atualizações semelhantes nos próximos meses.
 
 Estamos ainda a aperfeiçoar a forma como a relevância é controlada, pelo que pedimos que nos indique como está a funcionar através da ligação "Comentários" na parte inferior do site do Portal da Empresa.
 
@@ -539,7 +539,7 @@ O Portal da Empresa também receberá ícones atualizados para as versões para 
 
 ### <a name="sign-in-progress-indicator-in-android-company-portal---953374--"></a>Assine em curso indicador de progresso no Portal da Empresa Android <!--953374-->
 
-Uma atualização à aplicação Portal da Empresa para Android mostra um indicador de progresso de início de sessão quando o utilizador inicia ou retoma a aplicação. O indicador mostra novos estados de progresso, a começar com “A ligar...”, “A iniciar sessão...” e “A verificar os requisitos de segurança...” antes de o utilizador poder aceder à aplicação.
+Uma atualização à aplicação Portal da Empresa para Android mostra um indicador de progresso de início de sessão quando o utilizador inicia ou retoma a aplicação. O indicador mostra novos estados de progresso, a começar por "A ligar...", "A iniciar sessão..." e depois "A verificar os requisitos de segurança..." antes de o utilizador poder aceder à aplicação.
 
 <html>
 <body>
@@ -607,7 +607,7 @@ Saiba como planeamos melhorar a experiência de utilizador através da atualiza�
 > As imagens abaixo podem ser pré-visualizações, e o produto anunciado pode diferir das versões apresentadas.  
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 * [Blogue do Microsoft Intune](https://go.microsoft.com/fwlink/?LinkID=273882)
 * [Roteiro da Cloud Platform](https://www.microsoft.com/cloud-platform/roadmap)
 * [Novidades do Intune](whats-new.md)

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 64faf797c69302e2a5cdbdde090330ab99fcc2e4
-ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
+ms.openlocfilehash: 0425b6a3f2c82f6ad2119286c8697f0eb0fc2f82
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77437890"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513916"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-conditional-launch-actions-in-intune"></a>Limpe seletivamente os dados utilizando ações de lançamento condicional da política de proteção de aplicações em Intune
 
@@ -122,5 +122,5 @@ Depois de ter configurado totalmente uma definição, a linha será apresentada 
 
 Para obter mais informações sobre as políticas de proteção de aplicações do Intune, veja:
 - [Como criar e atribuir políticas de proteção de aplicações](app-protection-policies.md)
-- [Definições de políticas de proteção de aplicações iOS](app-protection-policy-settings-ios.md)
+- [Definições de política de proteção de aplicações iOS/iPadOS](app-protection-policy-settings-ios.md)
 - [Definições de políticas de proteção de aplicações Android no Microsoft Intune](app-protection-policy-settings-android.md) 

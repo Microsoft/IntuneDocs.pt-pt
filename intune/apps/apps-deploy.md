@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 15d6a67cb41455a1e3c0830e9ed242bfa52b0269
-ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
+ms.openlocfilehash: cee415174d68f3e6c9e72f0f0e06aa0d5d80ad91
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76912663"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511859"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Atribuir aplicações a grupos com o Microsoft Intune
 
@@ -49,14 +49,14 @@ A seguinte tabela indica as várias opções para atribuir as aplicações a uti
 | Os utilizadores finais instalam as aplicações disponíveis a partir do Portal da Empresa baseado na Web | Sim | Sim |
 
 > [!NOTE]
-> Atualmente, pode atribuir aplicações iOS e Android (tanto de linha de negócio como compradas na loja) a dispositivos que não estão inscritos no Intune.
+> Atualmente, pode atribuir aplicações iOS/iPadOS e Android (aplicações de linha de negócioe loja) a dispositivos que não estejam matriculados no Intune.
 >
 > Para receber atualizações de aplicações em dispositivos que não estão inscritos no Intune, os utilizadores dos dispositivos têm de navegar até ao Portal da Empresa da organização e instalar as atualizações das aplicações manualmente.
 
 ## <a name="assign-an-app"></a>Atribuir uma aplicação
 
-1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
-2. Selecione **aplicativos** > **todos os aplicativos**.
+1. Inscreva-se no [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **Apps** > **Todas as aplicações.**
 3. No painel **Aplicações**, selecione a aplicação que quer atribuir.
 4. Na secção **Gerir** do menu, selecione **Atribuições**.
 5. Selecione **Adicionar Grupo** para abrir o painel **Adicionar grupo** que está relacionado com a aplicação.
@@ -67,9 +67,9 @@ A seguinte tabela indica as várias opções para atribuir as aplicações a uti
    - **Desinstalar**: A aplicação não é instalada a partir de dispositivos nos grupos selecionados se a Intune tiver instalado previamente a aplicação no dispositivo através de uma atribuição "Disponível para dispositivos matriculados" ou "Obrigatório" utilizando a mesma implementação. As ligações da Web não podem ser removidas após a implementação.
 
      > [!NOTE]
-     > **Apenas para aplicações iOS**:
-     > - Para configurar o que acontece às aplicações geridas quando os dispositivos já não são geridos, pode selecionar a definição pretendida sob **desinstalar na remoção do dispositivo**. Para mais informações, consulte a [definição de desinstalação da App para aplicações geridas pelo iOS.](apps-deploy.md#app-uninstall-setting-for-ios-managed-apps)
-     > - Se criou um perfil VPN iOS que contém definições VPN por app, pode selecionar o perfil VPN em **VPN**. Quando a aplicação for executada, a ligação VPN será aberta. Para obter mais informações, veja [Definições VPN para dispositivos iOS](../vpn-settings-ios.md).
+     > **Apenas para aplicações iOS/iPadOS:**
+     > - Para configurar o que acontece às aplicações geridas quando os dispositivos já não são geridos, pode selecionar a definição pretendida sob **desinstalar na remoção do dispositivo**. Para mais informações, consulte a [definição de desinstalação da App para aplicações geridas por iOS/iPadOS.](apps-deploy.md#app-uninstall-setting-for-ios-managed-apps)
+     > - Se criou um perfil VPN iOS/iPadOS que contém definições VPN por app, pode selecionar o perfil VPN em **VPN**. Quando a aplicação for executada, a ligação VPN será aberta. Para mais informações, consulte [as definições vpN para dispositivos iOS/iPadOS](../vpn-settings-ios.md).
      >
      > **Apenas para aplicações Android**: Se implementar uma aplicação Android como **disponível com ou sem matrícula,** o estado de reporte só estará disponível em dispositivos matriculados.
      >
@@ -114,7 +114,7 @@ A informação na tabela seguinte pode ajudá-lo a entender a intenção resulta
 
 > [!NOTE]
 > Apenas para aplicações da loja iOS geridas: quando adiciona estas aplicações ao Microsoft Intune e as atribui como **Necessário**, estas aplicações são criadas automaticamente com as intenções **Necessário** e **Disponível**.<br><br>
-> As aplicações da Loja iOS (não aplicações iOS obtidas pelo VPP) que são direcionadas com a intenção necessária serão aplicadas no dispositivo quando registar o mesmo e também serão apresentadas na aplicação Portal da Empresa.<br><br>
+> As aplicações iOS Store (não aplicações vPP iOS/iPadOS) que são direcionadas com a intenção necessária serão aplicadas no dispositivo no momento do check-in do dispositivo e também aparecerão na aplicação Portal da Empresa.<br><br>
 > Quando ocorrem conflitos na **desinstalação na** definição de remoção do dispositivo, a aplicação não é removida do dispositivo quando o dispositivo já não é gerido.
 
 ## <a name="managed-google-play-app-deployment-to-unmanaged-devices"></a>Implementação de aplicações do Managed Google Play em dispositivos não geridos
@@ -123,7 +123,7 @@ Para dispositivos Android num cenário de implementação de Política de Prote�
 Passos para atribuir uma aplicação do Managed Google Play a dispositivos não geridos:
 
 1. Ligue o inquilino do Intune ao Managed Google Play. Se já o tiver feito para gerir o perfil de trabalho do Android Enterprise, os dispositivos dedicados ou totalmente geridos, não será necessário fazê-lo novamente.
-2. Adicione aplicações a partir do Managed Google Playà consola do Intune.
+2. Adicione aplicações a partir do Managed Google Play{1}{2}à consola do Intune.
 3. Vise aplicações do Managed Google Play como **Disponíveis com ou sem inscrição** para o grupo de utilizadores pretendido. As opções **Obrigatório** e **Desinstalar** para aplicações visadas não são suportada para dispositivos não inscritos.
 4. Atribua uma Política de Proteção de Aplicações ao grupo de utilizadores.
 5. Da próxima vez que o utilizador final abrir a aplicação do Portal da Empresa, verá uma mensagem a indicar que existem aplicações disponíveis na aplicação Play Store.  O utilizador pode tocar nesta notificação para ser ir diretamente para a aplicação Play para ver as aplicações empresariais ou pode navegar para a aplicação Play Store separadamente.
@@ -132,7 +132,7 @@ Passos para atribuir uma aplicação do Managed Google Play a dispositivos não 
 Quando uma eliminação seletiva de aplicações é emitida na consola do Intune, a conta profissional será removida automaticamente da aplicação Play Store e o utilizador final, a partir desse momento, deixará de ver aplicações de trabalho no catálogo das aplicações da Play Store. Quando a conta profissional é removida de um dispositivo, as aplicações instaladas a partir da Play Store permanecerão instaladas no dispositivo e não serão desinstaladas. 
 
 ## <a name="app-uninstall-setting-for-ios-managed-apps"></a>App desinstalar definição para aplicações geridas iOS
-Para dispositivos iOS, pode escolher o que acontece com as aplicações geridas para não inscrever o dispositivo a partir de Intune ou remover o perfil de gestão utilizando **desinstalar na** definição de remoção do dispositivo. Esta definição só se aplica a apps depois de o dispositivo estar matriculado e as aplicações são instaladas como geridas. A definição não pode ser configurada para aplicações web ou web links. Apenas os dados protegidos pela Mobile Application Management (MAM) são removidos após a reforma por uma Limpeza Seletiva da Aplicação.
+Para dispositivos iOS/iPadOS, pode escolher o que acontece com as aplicações geridas para não inscrever o dispositivo a partir de Intune ou remover o perfil de gestão utilizando **desinstalar na** definição de remoção do dispositivo. Esta definição só se aplica a apps depois de o dispositivo estar matriculado e as aplicações são instaladas como geridas. A definição não pode ser configurada para aplicações web ou web links. Apenas os dados protegidos pela Mobile Application Management (MAM) são removidos após a reforma por uma Limpeza Seletiva da Aplicação.
 
 Os valores predefinidos para a definição são pré-povoados para novas atribuições da seguinte forma:
 

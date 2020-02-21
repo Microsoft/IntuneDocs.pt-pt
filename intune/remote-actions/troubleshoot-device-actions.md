@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f4fca28329a5cd0adc7269929c4b2c2807bebf5e
-ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
+ms.openlocfilehash: 545f287e8b7ee82e2008f239171b22e01714b8c7
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77437958"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514749"
 ---
 # <a name="troubleshoot-device-actions-in-intune"></a>Ações de dispositivo de resolução de problemas em Intune
 
@@ -92,6 +92,20 @@ Depois de concluídos estes passos, não deverá mais receber esta resposta.
 
 ### <a name="why-am-i-prompted-to-set-a-new-passcode-on-my-iosipados-device-when-i-issue-the-remove-passcode-action"></a>Por que sou solicitado a definir uma nova senha no meu dispositivo iOS/iPadOS quando emito a ação Remover o Código de Acesso?
 Porque uma das suas políticas de conformidade requer uma senha.
+
+
+## <a name="wipe-action"></a>Ação Limpar
+
+### <a name="i-cant-restart-a-windows-10-device-after-using-the-wipe-action"></a>Não posso reiniciar um dispositivo Windows 10 depois de usar a ação de limpeza
+Isto pode ser causado se utilizar o dispositivo Wipe e **continuar a limpar mesmo que os dispositivos percam energia. Se selecionar esta opção, tenha em atenção que poderá impedir que alguns dispositivos do Windows 10 voltem a funcionar.** num dispositivo Windows 10.
+
+Isto pode ser causado quando a instalação do Windows tem uma grande corrupção que está a impedir a reinstalação do sistema operativo. Neste caso, o processo falha e deixa o sistema no Ambiente de [Recuperação]( https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-recovery-environment--windows-re--technical-reference)do Windows .
+
+### <a name="i-cant-restart-a-bitlocker-encrypted-device-after-using-the-wipe-action"></a>Não posso reiniciar um dispositivo encriptado BitLocker depois de usar a ação de limpeza
+Isto pode ser causado se utilizar o dispositivo Wipe e **continuar a limpar mesmo que os dispositivos percam energia. Se selecionar esta opção, tenha em atenção que poderá impedir que alguns dispositivos do Windows 10 voltem a funcionar.** opção num dispositivo encriptado BitLocker.
+
+Para resolver este problema, utilize meios de comunicação saqueados para reinstalar o Windows 10 no dispositivo.
+
 
 ## <a name="next-steps"></a>Próximos passos
 

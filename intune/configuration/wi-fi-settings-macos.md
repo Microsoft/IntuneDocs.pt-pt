@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/09/2019
+ms.date: 02/18/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,16 +16,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a479bfa7b6a572ab2191fb651ce04145d8508c4b
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 8aa9fa9462b6278da566a3ff54264540144a38de
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206997"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77512267"
 ---
 # <a name="add-wi-fi-settings-for-macos-devices-in-microsoft-intune"></a>Adicionar definições de Wi-Fi para dispositivos macOS no Microsoft Intune
-
-
 
 Pode criar um perfil com definições de Wi-Fi específicas e, em seguida, implementar este perfil nos seus dispositivos macOS. O Microsoft Intune oferece muitas funcionalidades, incluindo a autenticação na rede, a adição de um certificado PKS ou SCEP e mais.
 
@@ -38,7 +36,7 @@ Este artigo descreve estas definições.
 [Crie um perfil de dispositivo](device-profile-create.md).
 
 > [!NOTE]
-> Essas configurações estão disponíveis para todos os tipos de registro. Para obter mais informações sobre os tipos de registro, consulte [registro do MacOS](../enrollment/macos-enroll.md).
+> Estas configurações estão disponíveis para todos os tipos de inscrição. Para obter mais informações sobre os tipos de matrículas, consulte a [inscrição do macOS.](../enrollment/macos-enroll.md)
 
 ## <a name="basic-profiles"></a>Perfis básicos
 
@@ -49,7 +47,7 @@ Este artigo descreve estas definições.
 - **Rede oculta**: escolha **Ativar** para ocultar esta rede da lista de redes disponíveis no dispositivo. O SSID não é difundido. Escolha **Desativar** para mostrar esta rede na lista de redes disponíveis no dispositivo.
 - **Tipo de segurança**: selecione o protocolo de segurança para autenticar a rede Wi-Fi. As opções são:
 
-  - **Abrir (sem autenticação)**: utilize esta opção apenas se a rede não estiver protegida.
+  - **Abrir (sem autenticação)** : utilize esta opção apenas se a rede não estiver protegida.
   - **WPA/WPA2 – Pessoal**: introduza a palavra-passe na **Chave pré-partilhada**. Quando a rede da sua organização é configurada, uma chave de rede ou palavra-passe também é configurada. Introduza esta chave de rede ou palavra-passe para o valor PSK.
   - **WEP**
 
@@ -67,9 +65,9 @@ Este artigo descreve estas definições.
 
 - **Tipo de EAP**: escolha o tipo Protocolo EAP (Extensible Authentication Protocol) utilizado para autenticar as ligações sem fios protegidas. As opções são:
 
-  - **EAP-FAST**: introduza as **Definições de PAC (Protected Access Credential)**. Esta opção utiliza credenciais de acesso protegido para criar um túnel autenticado entre o cliente e o servidor de autenticação. As opções são:
+  - **EAP-FAST**: introduza as **Definições de PAC (Protected Access Credential)** . Esta opção utiliza credenciais de acesso protegido para criar um túnel autenticado entre o cliente e o servidor de autenticação. As opções são:
     - **Não utilizar (PAC)**
-    - **Utilizar (PAC)**: se existir um ficheiro PAC, utilize-o.
+    - **Utilizar (PAC)** : se existir um ficheiro PAC, utilize-o.
     - **Utilizar e Aprovisionar PAC**: crie e adicione o ficheiro PAC aos seus dispositivos.
     - **Utilizar e Aprovisionar PAC Anonimamente**: crie e adicione o ficheiro PAC aos seus dispositivos sem autenticar no servidor.
 
@@ -80,7 +78,7 @@ Este artigo descreve estas definições.
     - **Fidedignidade do Servidor** - **Nomes do servidor do certificado**: **adicione** um ou mais nomes comuns utilizados em certificados emitidos pela sua autoridade de certificação (AC) fidedigna. Quando introduzir estas informações, pode ignorar a janela de confiança dinâmica apresentada nos dispositivos dos utilizadores quando estes se ligam a esta rede Wi-Fi.
     - **Certificado de raiz para a validação do servidor**: escolha um perfil de certificado de raiz fidedigna existente. Este certificado é apresentado ao servidor quando o cliente se liga à rede e serve para autenticar a ligação.
 
-    - **Autenticação de Cliente** - **Certificado de cliente para autenticação de cliente (Certificado de identidade)**: escolha o perfil de certificado de cliente SCEP ou PKCS que também é implementado no dispositivo. Este certificado é a identidade apresentada pelo dispositivo ao servidor para autenticar a ligação.
+    - **Autenticação de Cliente** - **Certificado de cliente para autenticação de cliente (Certificado de identidade)** : escolha o perfil de certificado de cliente SCEP ou PKCS que também é implementado no dispositivo. Este certificado é a identidade apresentada pelo dispositivo ao servidor para autenticar a ligação.
 
   - **EAP-TTLS**: introduza também:
 
@@ -90,13 +88,13 @@ Este artigo descreve estas definições.
     - **Autenticação de Cliente** – escolha um **Método de autenticação**. As opções são:
 
       - **Nome de utilizador e Palavra-passe**: pedir ao utilizador um nome de utilizador e palavra-passe para autenticar a ligação. Introduza também:
-        - **Método não EAP (identidade interna)**: escolha a forma como autentica a ligação. Garanta que escolhe o mesmo protocolo que está configurado na sua rede Wi-Fi.
+        - **Método não EAP (identidade interna)** : escolha a forma como autentica a ligação. Garanta que escolhe o mesmo protocolo que está configurado na sua rede Wi-Fi.
 
-          As suas opções: **Palavra-passe não encriptada (PAP)**, **Protocolo CHAP (Challenge Handshake Authentication Protocol)**, **Microsoft CHAP (MS-CHAP)** ou **Microsoft CHAP versão 2 (MS-CHAP v2)**
+          As suas opções: **Palavra-passe não encriptada (PAP)** , **Protocolo CHAP (Challenge Handshake Authentication Protocol)** , **Microsoft CHAP (MS-CHAP)** ou **Microsoft CHAP versão 2 (MS-CHAP v2)**
 
       - **Certificados**: escolha o perfil de certificado de cliente SCEP ou PKCS que também é implementado no dispositivo. Este certificado é a identidade apresentada pelo dispositivo ao servidor para autenticar a ligação.
 
-      - **Privacidade de identidade (identidade externa)**: introduza o texto enviado em resposta a um pedido de identidade EAP. Este texto pode ser qualquer valor, como `anonymous`. Durante a autenticação, esta identidade anónima é inicialmente enviada, seguida pela identificação verdadeira enviada num túnel seguro.
+      - **Privacidade de identidade (identidade externa)** : introduza o texto enviado em resposta a um pedido de identidade EAP. Este texto pode ser qualquer valor, como `anonymous`. Durante a autenticação, esta identidade anónima é inicialmente enviada, seguida pela identificação verdadeira enviada num túnel seguro.
 
   - **LEAP**
 
@@ -111,7 +109,7 @@ Este artigo descreve estas definições.
 
       - **Certificados**: escolha o perfil de certificado de cliente SCEP ou PKCS que também é implementado no dispositivo. Este certificado é a identidade apresentada pelo dispositivo ao servidor para autenticar a ligação.
 
-      - **Privacidade de identidade (identidade externa)**: introduza o texto enviado em resposta a um pedido de identidade EAP. Este texto pode ser qualquer valor, como `anonymous`. Durante a autenticação, esta identidade anónima é inicialmente enviada, seguida pela identificação verdadeira enviada num túnel seguro.
+      - **Privacidade de identidade (identidade externa)** : introduza o texto enviado em resposta a um pedido de identidade EAP. Este texto pode ser qualquer valor, como `anonymous`. Durante a autenticação, esta identidade anónima é inicialmente enviada, seguida pela identificação verdadeira enviada num túnel seguro.
 
 - **Definições de proxy**: as suas opções:
   - **Nenhuma**: não são configuradas definições de proxy.
@@ -120,6 +118,6 @@ Este artigo descreve estas definições.
 
 ## <a name="next-steps"></a>Próximos passos
 
-O perfil é criado, mas não faz nada. Em seguida, [atribua esse perfil](device-profile-assign.md) e [monitore seu status](device-profile-monitor.md).
+O perfil é criado, mas não faz nada. Em seguida, [atribua este perfil](device-profile-assign.md) e [monitorize o seu estado](device-profile-monitor.md).
 
-Defina as configurações de Wi-Fi em dispositivos [Android](wi-fi-settings-android.md), [Android Enterprise](wi-fi-settings-android-enterprise.md), [Ios](wi-fi-settings-ios.md)e [Windows 10](wi-fi-settings-windows.md) .
+Configure as definições de Wi-Fi nos dispositivos [Android,](wi-fi-settings-android.md) [Android Enterprise,](wi-fi-settings-android-enterprise.md) [iOS/iPadOS](wi-fi-settings-ios.md)e [Windows 10.](wi-fi-settings-windows.md)

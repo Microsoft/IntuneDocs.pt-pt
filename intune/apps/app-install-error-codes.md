@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1a9ce1a881e9a30d0f18cb676e7f7f11c4b5c8b1
-ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
+ms.openlocfilehash: ef20d378740eae73c41521d8dfc7f8fdd853fdb9
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77437839"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513907"
 ---
 # <a name="intune-app-installation-error-reference"></a>Referência de erro de instalação do aplicativo do Intune
 
@@ -51,7 +51,7 @@ Esta secção menciona tanto o Administrador de Dispositivos (DA) como a Samsung
 | 0xC7D14FB1  | -942583887 | O usuário final cancelou a instalação do aplicativo. | O utilizador desinstalou explicitamente a aplicação. Esse erro é retornado quando a atividade de instalação do sistema operacional Android foi cancelada pelo usuário. O utilizador premiu o botão Cancelar quando o pedido de instalação do SO foi apresentado ou ignorou o pedido. Este erro é devolvido apenas para cenários de DA. Para cenários do KNOX, o usuário não precisa instalar, isso pode ser feito silenciosamente. O Intune apresenta uma notificação na qual os utilizadores podem clicar para tentar novamente. Se o aplicativo for um aplicativo disponível, a notificação poderá ser ignorada. No entanto, se o aplicativo for necessário, ele não poderá ser ignorado. Peça ao utilizador para não cancelar a instalação. |
 | 0xC7D14FB9 | -942583879 | O usuário final cancelou a instalação do aplicativo. (No prompt aceitar) | Instrua o usuário a aceitar o aplicativo do Intune implantado e instalar o aplicativo quando solicitado. |
 
-## <a name="ios-app-installation-errors"></a>Erros de instalação de aplicações iOS
+## <a name="ios-and-ipados-app-installation-errors"></a>Erros de instalação de aplicações iOS e iPadOS
 
 As seguintes mensagens de erro e descrições fornecem detalhes sobre erros de instalação iOS/iPadOS. 
 

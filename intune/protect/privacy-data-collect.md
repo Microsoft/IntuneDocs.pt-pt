@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e93e69b5cce2c54ae07410309b33870dd828f563
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: bd204271b9ae3e57e15a101647444913749f4109
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72509079"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514239"
 ---
 # <a name="data-collection-in-intune"></a>Recolha de dados no Intune
 
@@ -37,7 +37,7 @@ Quando os utilizadores inscrevem os respetivos dispositivos pessoais ou de empre
 Destas origens, o Intune recolhe informações que se encaixam nas três categorias seguintes: [identificados](#identified-data), [com pseudónimo](#pseudonymized-data) e [agregados](#aggregated-data).
 
 > [!NOTE]
-> Não vendemos nenhum dado coletado por nosso serviço para terceiros por qualquer motivo.
+> Não vendemos quaisquer dados recolhidos pelo nosso serviço a terceiros por qualquer motivo.
 
 ## <a name="identified-data"></a>Dados identificados
 
@@ -51,8 +51,8 @@ Os dados identificados que o Intune recolhe podem incluir, entre outros:
   - Identidades de utilizador de terceiros (como o ID Apple)
 - Informações do inventário de hardware
   - Nome do dispositivo
-  - Manufacturer
-  - Sistema operativo
+  - Fabricante
+  - Sistema Operativo
   - Número de série
   - Número IMEI
   - Endereço IP
@@ -60,7 +60,7 @@ Os dados identificados que o Intune recolhe podem incluir, entre outros:
   - ICCID
   - Número de telefone
 - Informações de registo de auditoria, incluindo dados sobre as seguintes atividades
-  - Gerir o Endpoint Protection do
+  - Gerir
   - Criar
   - Atualizar (editar)
   - Eliminar
@@ -112,7 +112,7 @@ Os dados com pseudónimo que o Intune recolhe podem incluir, entre outros:
   - ID de conta
   - ID de dispositivo EAS
   - IDs específicos de plataforma
-  - ID Apple para dispositivos iOS
+  - AppleID para dispositivos iOS/iPadOS
   - Endereço Mac para dispositivos Mac
   - ID Windows para dispositivos Windows
 - Informações sobre a aplicação gerida
@@ -136,7 +136,7 @@ Os dados agregados que o Intune recolhe podem incluir, entre outros:
   - installedDeviceCount: o número de dispositivos em que a aplicação está instalada.
   - notApplicableDeviceCount: o número de dispositivos a que a aplicação não é aplicável.
   - notInstalledDeviceCount: o número de dispositivos a que a aplicação é aplicável, mas em que não está instalada.
-  - pendingInstallDeviceCount: o número de dispositivos a que a aplicação é aplicável e em que a instalação está pendente.
+  - pendenteInstallDeviceCount: O número de dispositivos para os quais a aplicação é aplicável e a instalação está pendente.
 
 ## <a name="next-steps"></a>Próximos passos
 

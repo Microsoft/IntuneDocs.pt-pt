@@ -17,17 +17,17 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 57467d3d073666c1c22ac0a412f68a258d5b3d75
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: cbc4e1cc8cf7bd578690bf3e34353a60ec67cdab
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414075"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514732"
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>Ajudar os utilizadores finais a compreender as mensagens da aplicação Portal da Empresa
 
 > [!NOTE]
-> As informações a seguir se aplicam somente a dispositivos com Android 6.0 + e iOS 10 +.
+> As seguintes informações aplicam-se apenas em dispositivos com Android 6.0+ e iOS 10+.
 
 Compreenda as diferentes mensagens de aplicações que os utilizadores finais poderão ver no Portal da Empresa. Estas mensagens de aplicações são normalmente apresentadas em diferentes fases do processo de inscrição. Saiba onde as mensagens são apresentadas, o que significam e o que acontece se os utilizadores negarem o acesso. Para além disso, saiba como melhor explicar estas mensagens aos utilizadores.
 
@@ -35,7 +35,7 @@ Compreenda as diferentes mensagens de aplicações que os utilizadores finais po
 - __Permitir que o Portal da Empresa aceda às fotografias, multimédia e ficheiros no dispositivo?__
 
 > [!NOTE]
-> Não vendemos nenhum dado coletado por nosso serviço para terceiros por qualquer motivo.
+> Não vendemos quaisquer dados recolhidos pelo nosso serviço a terceiros por qualquer motivo.
 
 ## <a name="allow-company-portal-to-make-and-manage-phone-calls"></a>Permitir que o Portal da Empresa efetue e faça a gestão de chamadas telefónicas?
 
@@ -106,7 +106,7 @@ Ao aceitar esta mensagem, os utilizadores permitem que o dispositivo escreva reg
 
 Se os utilizadores negarem o acesso, podem ainda enviar registos de dados por e-mail, mas os registos não serão copiados para o cartão SD do dispositivo.
 
-Na segunda vez que os utilizadores iniciam sessão na aplicação Portal da Empresa após negarem o acesso, a mensagem mostra uma caixa de verificação **Não voltar a perguntar**, que os utilizadores podem selecionar para que a mensagem não volte a aparecer. Se os utilizadores permitirem o acesso, mas o negarem mais tarde, a mensagem é apresentada quando os utilizadores tentarem enviar registos. Contudo, se posteriormente os utilizadores decidirem permitir o acesso, podem aceder a **Definições** > **Aplicações** > **Portal da Empresa** > **Permissões** > **Armazenamento** e, em seguida, ativar a permissão.
+Na segunda vez que os utilizadores iniciam sessão na aplicação Portal da Empresa após negarem o acesso, a mensagem mostra uma caixa de verificação **Não voltar a perguntar** que os utilizadores podem selecionar para que a mensagem não volte a aparecer. Se os utilizadores permitirem o acesso, mas o negarem mais tarde, a mensagem é apresentada quando os utilizadores tentarem enviar registos. Contudo, se posteriormente os utilizadores decidirem permitir o acesso, podem aceder a **Definições** > **Aplicações** > **Portal da Empresa** > **Permissões** > **Armazenamento** e, em seguida, ativar a permissão.
 
 
 ### <a name="how-to-explain-this-to-your-users"></a>Como explicar esta questão aos utilizadores
@@ -126,7 +126,7 @@ Se não tiver adicionado a aplicação Portal da Empresa à lista de **Aplicaç�
 
 Adicione o Portal da Empresa à lista de **Aplicações permitidas** ou **Aplicações excluídas** na política de proteção de aplicações Windows Information Protection (WIP). Para obter mais informações, veja [Criar e implementar a política de proteção de aplicações do Windows Information Protection (WIP) com o Intune](../apps/windows-information-protection-policy-create.md).
 
-## <a name="approve-a-ios-company-app-line-of-business-app-on-your-ios-device"></a>Aprovar uma aplicação da empresa iOS (aplicação de linha de negócio) no dispositivo iOS 
+## <a name="approve-a-iosipados-company-app-line-of-business-app-on-your-iosipados-device"></a>Aprove uma aplicação da empresa iOS/iPadOS (app line-of-business) no seu dispositivo iOS/iPadOS 
 
 ### <a name="where-it-appears"></a>Onde aparece
 
@@ -136,7 +136,7 @@ As aplicações iOS desenvolvidas pela sua organização que não estão dispon�
 
 ### <a name="what-it-means"></a>O que significa
 
-Esta mensagem significa que precisa de modificar as definições do dispositivo iOS para aprovar e instalar aplicações desenvolvidas pela sua empresa no dispositivo iOS.
+Esta mensagem significa que é necessário modificar as definições do seu dispositivo iOS/iPadOS para aprovar e instalar uma aplicação desenvolvida pela sua empresa no seu dispositivo iOS/iPadOS.
 
 Quando instalar essas aplicações com o Portal da Empresa e iniciar a aplicação, siga estes passos para aprovar a aplicação depois de a transferir:
 
@@ -156,5 +156,5 @@ Quando instalar essas aplicações com o Portal da Empresa e iniciar a aplicaç�
     Deverá conseguir iniciar e utilizar a aplicação da empresa.
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 [O que dizer aos utilizadores finais sobre a utilização do Intune](end-user-educate.md)

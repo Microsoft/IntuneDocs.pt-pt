@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 62ba66469dfff004c3cd6a60284ec7466e8b9f00
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 84fe9e1d60e3e65289ca18735e64e82ac9c64f4a
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77415521"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514188"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Remover dispositivos ao apagar os dados, extinguir ou anular a inscrição do dispositivo de forma manual
 
@@ -47,7 +47,7 @@ A ação **Limpar** restaura um dispositivo para as predefinições de fábrica.
 
 A opção **Reter estado de inscrição e conta de utilizador** só está disponível para a versão 1709 ou posterior do Windows 10.
 
-A opção **'Eliminar'** não pode ser contornada a ação de limpeza não pode ser contornada desligando o dispositivo. Uma limpeza protegida continuará a tentar redefinir o dispositivo até ser bem sucedido. Em algumas configurações, esta ação pode deixar o dispositivo incapaz de reiniciar.
+A opção **'Eliminar'** não pode ser contornada a ação de limpeza não pode ser contornada desligando o dispositivo. Uma limpeza protegida continuará a tentar redefinir o dispositivo até ser bem sucedido. Em algumas configurações, esta ação pode deixar o dispositivo [incapaz de reiniciar](troubleshoot-device-actions.md#wipe-action).
 
 As políticas de MDM voltarão a ser aplicadas da próxima vez que o dispositivo estabelecer ligação ao Intune.
 

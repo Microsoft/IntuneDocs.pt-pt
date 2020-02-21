@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 777267f10edac5bbdbe23ceb3068d4366a8df7b7
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 0d5a51d82551795ed8ad5c740d5fb852ff292e1b
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72509942"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514919"
 ---
 # <a name="develop-a-rollout-plan"></a>Desenvolver um plano de implementação
 
@@ -56,9 +56,9 @@ Após um piloto bem-sucedido, está pronto para iniciar uma implementação de p
 
 - **Departamentos** <br/>Cada departamento pode ser uma fase de implementação. Pode direcionar para um departamento inteiro de cada vez. Neste tipo de implementação, os utilizadores de cada departamento têm tendência para utilizar o dispositivo móvel da mesma forma e aceder às mesmas aplicações. Os utilizadores terão, provavelmente, os mesmos tipos de políticas.
 
-- **Geografia** <br/>Nessa abordagem, você implanta para todos os usuários em uma geografia específica, seja o mesmo continente, país/região ou a criação da mesma empresa. Este tipo de implementação faseada permite incidir na localização específica de utilizadores. Tal poderia permitir-lhe uma abordagem mais [meticulosa](#user-assisted-enrollment) devido ao número reduzido de localizações que implementam o Intune em simultâneo. Como é provável que haja departamentos ou casos de utilização no mesmo local, poderão ser implementados casos de utilização diferentes em simultâneo.
+- **Geografia** <br/>Nesta abordagem, você implanta para todos os utilizadores em uma geografia específica, seja o mesmo continente, país/região, ou mesmo edifício da mesma empresa. Este tipo de implementação faseada permite incidir na localização específica de utilizadores. Tal poderia permitir-lhe uma abordagem mais [meticulosa](#user-assisted-enrollment) devido ao número reduzido de localizações que implementam o Intune em simultâneo. Como é provável que haja departamentos ou casos de utilização no mesmo local, poderão ser implementados casos de utilização diferentes em simultâneo.
 
-- **Plataforma** <br/>Este tipo de implementação consiste na implementação simultânea em plataformas semelhantes. Por exemplo, poderá implementar o Intune em todos os dispositivos iOS durante o primeiro mês. Em seguida, poderá fazê-lo nos dispositivos Android e, por fim, nos dispositivos Windows. Este tipo de implementação faseada ajuda a simplificar o suporte técnico, pois este teria apenas de fornecer suporte a uma única plataforma de cada vez.
+- **Plataforma** <br/>Este tipo de implementação consiste na implementação simultânea em plataformas semelhantes. Um exemplo pode ser todos os dispositivos iOS/iPadOS no primeiro mês, seguido do Android, seguido do Windows. Este tipo de implementação faseada ajuda a simplificar o suporte técnico, pois este teria apenas de fornecer suporte a uma única plataforma de cada vez.
 
 Eis um exemplo de um plano de implementação do Intune que inclui os grupos visados e as linhas cronológicas:
 
@@ -103,7 +103,7 @@ Veja a seguir um exemplo atualizado do plano de implementação do Intune acima 
 | Self-service |  | Departamento de Vendas e Marketing |  |  |
 | Segunda fase de implementação de produção |  |  | Revenda |  |
 | Self-service |  |  | Revenda |  |
-| Terceira fase de implementação de produção |  |  |  | Executivos, RH, finanças |
+| Terceira fase de implementação de produção |  |  |  | Executivos, RH, Finanças |
 | Self-service |  |  |  | RH, Finanças |
 | Abordagem meticulosa |  |  |  | Executivos |
 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7018e2ab4290219c752f44b4b391822438461e8e
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: c130ced8359311751c5ad68ac9789b11329595e0
+ms.sourcegitcommit: 67f926ba83f8a955e16b741a610ad84d6044f8f9
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77415094"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77529346"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 
@@ -55,11 +55,21 @@ Saiba mais sobre as novidades todas as semanas no Microsoft Intune. Também pode
 -->  
 
 <!-- ########################## -->
+## <a name="week-of-february-17-2020"></a>Semana de 17 de fevereiro de 2020
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="app-management"></a>Gestão de aplicações
+
+#### <a name="microsofts-new-office-app---5859926---"></a>Nova app do Office da Microsoft<!-- 5859926 -->
+A nova aplicação do Office da Microsoft está agora geralmente disponível para download e utilização. A aplicação Office é uma experiência consolidada onde os seus utilizadores podem trabalhar através do Word, Excel e PowerPoint dentro de uma única aplicação. Pode direcionar a aplicação com uma política de proteção de aplicações para garantir que os dados a serem acedidos estão protegidos.
+
+Para mais informações, consulte como ativar as políticas de [proteção de aplicações Intune com a aplicação de pré-visualização móvel do Office](https://techcommunity.microsoft.com/t5/intune-customer-success/support-tip-how-to-enable-intune-app-protection-policies-with/ba-p/1045493).
+
+<!-- ########################## -->
 ## <a name="week-of-february-10-2020"></a>Semana de 10 de fevereiro de 2020
 
 ### <a name="windows-7-ends-extended-support---3042987--"></a>Windows 7 termina suporte alargado <!--3042987-->
 O Windows 7 chegou ao fim do suporte alargado a 14 de janeiro de 2020. Intune deprecated suporte para dispositivos que executam o Windows 7 ao mesmo tempo. A assistência técnica e as atualizações automáticas que ajudam a proteger o seu PC deixaram de estar disponíveis. Deve fazer o upgrade para o Windows 10. Para mais informações, consulte o post do [blog Plan for Change](https://aka.ms/Windows7_Intune).
-
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="app-management"></a>Gestão de aplicações
