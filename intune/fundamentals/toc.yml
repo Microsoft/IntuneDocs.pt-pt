@@ -82,9 +82,9 @@
               href: planning-guide-communication-plan.md
             - name: Desenvolver um plano de suporte
               href: planning-guide-support-plan.md
-            - name: Estrutura
+            - name: Design (Estruturar)
               href: planning-guide-design.md
-            - name: Configurar
+            - name: Implement (Implementar)
               href: planning-guide-onboarding.md
             - name: Testar e validar
               href: planning-guide-test-validation.md
@@ -102,7 +102,7 @@
                   href: migration-guide-configure-policies.md
                 - name: Configurar políticas de proteção de aplicações
                   href: migration-guide-app-protection-policies.md
-                - name: Considerações de migração
+                - name: Migration considerations (Considerações sobre a migração)
                   href: migration-guide-considerations.md
             - name: Campanha de migração
               href: migration-guide-campaign.md
@@ -127,7 +127,7 @@
               href: end-user-mam-apps-ios.md
             - name: Como obter aplicações para Android
               href: end-user-apps-android.md
-            - name: Como obter aplicações para iOS
+            - name: How to get iOS/iPadOS apps (Como obter aplicações para iOS/iPadOS)
               href: end-user-apps-ios.md
             - name: Como obter aplicações para Windows
               href: end-user-apps-windows.md
@@ -201,10 +201,6 @@
           href: tenant-status.md
         - name: Ajudar os utilizadores a resolver problemas
           href: help-desk-operators.md
-        - name: Registos de auditoria para atividades do Intune
-          href: monitor-audit-logs.md
-        - name: Rever registos com o Azure Monitor
-          href: review-logs-using-azure-monitor.md
         - name: Using the Intune docs (Utilizar a documentação do Intune)
           href: use-docs.md
         - name: Obter suporte
@@ -213,9 +209,13 @@
       items:
         - name: Relatórios do Intune
           href: reports.md
+        - name: Registos de auditoria para atividades do Intune
+          href: monitor-audit-logs.md
+        - name: Rever registos com o Azure Monitor
+          href: review-logs-using-azure-monitor.md
 - name: Referência
   items:
-    - name: Códigos de erro e descrições
+    - name: Descrições e códigos de erros
       items:
         - name: Resolução de problemas de acesso aos recursos da empresa
           href: troubleshoot-company-resource-access-problems.md
@@ -233,7 +233,7 @@
           href: ui-changes.md
         - name: Grupos clássicos do Intune
           href: groups-get-started.md
-        - name: Definições de educação para iOS
+        - name: iOS/iPadOS education settings (Definições de educação para iOS/iPadOS)
           items:
             - name: iPad
               href: education-settings-configure-ios.md
@@ -259,7 +259,7 @@
                   href: retire-a-windows-pc-with-microsoft-intune.md
                 - name: Associar PCs a utilizadores
                   href: manage-user-device-linking-for-windows-pcs-with-microsoft-intune.md
-                - name: Assistência remota
+                - name: Remote assistance (Assistência remota)
                   href: request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md
             - name: Políticas para proteger PCs Windows
               href: policies-to-protect-windows-pcs-in-microsoft-intune.md
