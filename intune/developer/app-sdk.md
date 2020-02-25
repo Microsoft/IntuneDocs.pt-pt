@@ -18,17 +18,17 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fcb3a9f817b0e765fee79342bcd212f33509209a
-ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
+ms.openlocfilehash: 8d47d91388fffd0e5716d20be640c4afbad2862e
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75653551"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576331"
 ---
 # <a name="microsoft-intune-app-sdk-overview"></a>Descrição geral do SDK da Aplicação Microsoft Intune
-O SDK de aplicativos do Intune, disponível para iOS e Android, permite que seu aplicativo dê suporte a [políticas de proteção de aplicativo](../apps/app-protection-policy.md)do Intune. Quando seu aplicativo tem políticas de proteção de aplicativo aplicadas, ele pode ser gerenciado pelo Intune e é reconhecido pelo Intune como um aplicativo gerenciado. O SDK se esforça para minimizar a quantidade de alterações de código necessárias do desenvolvedor do aplicativo. Irá descobrir que pode ativar a maioria das funcionalidades SDK sem alterar o comportamento da sua aplicação. Para aprimorar a experiência do usuário final e do administrador de ti, você pode utilizar as APIs do SDK para personalizar o comportamento do aplicativo para oferecer suporte a recursos que exigem a participação do aplicativo.
+O Intune App SDK, disponível tanto para iOS como Android, permite que a sua aplicação suporte as políticas de proteção de [aplicações](../apps/app-protection-policy.md)Intune . Quando a sua aplicação tem políticas de proteção de aplicações aplicadas, pode ser gerida pela Intune e é reconhecida pela Intune como uma aplicação gerida. O SDK esforça-se por minimizar a quantidade de alterações de código exigidas pelo desenvolvedor de aplicações. Irá descobrir que pode ativar a maioria das funcionalidades SDK sem alterar o comportamento da sua aplicação. Para uma experiência melhorada de utilizador final e administrador de TI, pode utilizar as APIs do SDK para personalizar o comportamento da sua aplicação para suportar funcionalidades que requerem a participação da sua app.
 
-Depois de habilitar seu aplicativo para dar suporte a políticas de proteção de aplicativo do Intune, os administradores de ti podem implantar essas políticas para proteger seus dados corporativos no aplicativo.
+Uma vez que tenha ativado a sua aplicação para apoiar as políticas de proteção de aplicações Intune, os administradores de TI podem implementar estas políticas para proteger os seus dados corporativos dentro da app.
 
 ## <a name="app-protection-features"></a>Funcionalidades de proteção de aplicações
 
@@ -52,13 +52,13 @@ Os administradores de TI podem forçar as ligações Web na aplicação a serem 
 ### <a name="enforce-a-pin-policy"></a>Impor uma política de PIN
 Os administradores de TI podem exigir que o utilizador final introduza um PIN antes de aceder a dados empresariais na aplicação. Isto garante que a pessoa a utilizar a aplicação é a mesma pessoa que iniciou sessão com uma conta escolar ou profissional. Quando os utilizadores finais configuram o PIN, o SDK da Aplicação Intune utiliza o Azure Active Directory para verificar as credenciais dos utilizadores finais em relação à conta do Intune inscrita.
 
-### <a name="require-users-to-sign-in-with-a-work-or-school-account-for-app-access"></a>Exigir que os usuários entrem com uma conta corporativa ou de estudante para acesso ao aplicativo
+### <a name="require-users-to-sign-in-with-a-work-or-school-account-for-app-access"></a>Exigir que os utilizadores assinem com uma conta de trabalho ou escola para acesso à app
 Os administradores de TI podem exigir que os utilizadores iniciem sessão com a respetiva conta escolar ou profissional para aceder à aplicação. O SDK da Aplicação Intune utiliza o Azure Active Directory para fornecer uma experiência de início de sessão único, em que as credenciais, uma vez introduzidas, são reutilizadas para inícios de sessão subsequentes. Também é suportada a autenticação de soluções de gestão de identidades federadas com o Azure Active Directory.
 
 ### <a name="check-device-health-and-compliance"></a>Verificar o estado de funcionamento e a conformidade do dispositivo
-Os administradores de TI podem verificar o estado de funcionamento e a conformidade do dispositivo com políticas do Intune antes de os utilizadores finais acederem à aplicação. No iOS, esta política verifica se o dispositivo foi desbloqueado por jailbreak. No Android, esta política verifica se o dispositivo foi desbloqueado por root.
+Os administradores de TI podem verificar o estado de funcionamento e a conformidade do dispositivo com políticas do Intune antes de os utilizadores finais acederem à aplicação. No iOS/iPadOS, esta política verifica se o dispositivo foi quebrado. No Android, esta política verifica se o dispositivo foi desbloqueado por root.
 
-### <a name="support-multi-identity"></a>Suporte a várias identidades
+### <a name="support-multi-identity"></a>Apoiar a multiidentidade
 O suporte de identidades múltiplas é uma funcionalidade do SDK que permite a coexistência de contas geridas por políticas (empresariais) e não geridas (pessoais) numa única aplicação.
 
 Por exemplo, muitos utilizadores configuram as contas de e-mail empresariais e pessoais nas aplicações móveis do Office para iOS e Android. Quando um utilizador acede aos dados com a respetiva conta empresarial, o administrador de TI tem de ter a certeza de que a política de proteção de aplicações será aplicada. No entanto, quando um utilizador está a aceder a uma conta de e-mail pessoal, esses dados devem estar fora do controlo do administrador de TI. O SDK da Aplicação Intune cumpre este processo ao filtrar a política de proteção de aplicações para **apenas** a identidade empresarial na aplicação.
@@ -81,4 +81,4 @@ Para saber mais sobre a Citrix MDX, veja [About the MDX Toolkit](https://docs.ci
 
 ## <a name="next-steps"></a>Próximos passos
 
-- [Introdução ao SDK do aplicativo Microsoft Intune](app-sdk-get-started.md).
+- [Começar com o Microsoft Intune App SDK](app-sdk-get-started.md).

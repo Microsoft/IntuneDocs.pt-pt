@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 01c6ae06459590fa9bb9842e90ad53e6c522d6a6
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.openlocfilehash: 2964893102bc1b6f9967b1a37261b860d8ea0104
+ms.sourcegitcommit: 5881979c45fc973cba382413eaa193d369b8dcf6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77512488"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77569392"
 ---
 # <a name="add-vpn-settings-on-ios-and-ipados-devices-in-microsoft-intune"></a>Adicione as definições vpN em dispositivos iOS e iPadOS no Microsoft Intune
 
@@ -43,7 +43,7 @@ Selecione o tipo de ligação VPN na seguinte lista de fornecedores:
 - **SonicWall Mobile Connect**
 - **F5 Access Legacy**: aplicável a versão 2.1 e versões anteriores da aplicação F5 Access.
 - **F5 Access**: aplicável a versão 3.0 e versões posteriores da aplicação F5 Access.
-- **Palo Alto Networks GlobalProtect (Legacy)** : aplicável a versão 4.1 e versões anteriores da aplicação Palo Alto Networks GlobalProtect.
+- **Palo Alto Networks GlobalProtect (Legacy)**: aplicável a versão 4.1 e versões anteriores da aplicação Palo Alto Networks GlobalProtect.
 - **Palo Alto Networks GlobalProtect**: aplicável a versão 5.0 e versões posteriores da aplicação Palo Alto Networks GlobalProtect.
 - **Pulse Secure**
 - **Cisco (IPSec)**
@@ -78,15 +78,14 @@ As definições apresentadas na seguinte lista são determinadas pelo tipo de li
 - **Dividir túnel**: **ative** ou **desative** esta opção para permitir que os dispositivos decidam qual a ligação a utilizar consoante o tráfego. Por exemplo, um utilizador num hotel utiliza a ligação VPN para aceder aos ficheiros de trabalho, mas utiliza a rede padrão do hotel para a navegação normal na Internet.
 
 - **Identificador VPN** (VPN personalizado, Zscaler e Citrix): Um identificador para a aplicação VPN que está a usar, e é fornecido pelo seu fornecedor VPN.
-  - **Introduzir pares chave/valor para os atributos de VPN personalizados da sua organização**: adicione ou importe **Chaves** e **Valores** para personalizar a sua ligação VPN. Lembre-se de que estes valores são habitualmente disponibilizados pelo seu fornecedor de VPN.
+- **Introduza pares chave/valor para os atributos VPN personalizados da sua organização** (VPN personalizado, Zscaler e Citrix): Adicione ou importe **Chaves** e **Valores** que personalizem a sua ligação VPN. Lembre-se de que estes valores são habitualmente disponibilizados pelo seu fornecedor de VPN.
 
-- Ativar o controlo de acesso à **rede (NAC)** (Citrix SSO, Acesso F5): Quando escolher **eu concordo,** o ID do dispositivo está incluído no perfil VPN. Este ID pode ser utilizado para autenticação na VPN para permitir ou impedir o acesso à rede.
+- Ativar o controlo de acesso à **rede (NAC)** (Cisco AnyConnect, Citrix SSO, Acesso F5): Quando **escolher, concordo,** o ID do dispositivo está incluído no perfil VPN. Este ID pode ser utilizado para autenticação na VPN para permitir ou impedir o acesso à rede.
 
-  Ao utilizar o **Acesso F5,** certifique-se de:
+    **Ao utilizar o Cisco AnyConnect com o ISE,** certifique-se de:
 
-  - Confirme que está a usar F5 BIG-IP 13.1.1.5. O BIG-IP 14 não é suportado.
-  - Integrar big-IP com Intune para NAC. Consulte a [visão geral: Configurar o APM para verificação](https://support.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-client-configuration-7-1-6/6.html#guid-0bd12e12-8107-40ec-979d-c44779a8cc89) da postura do dispositivo com o guia F5 dos sistemas de gestão de pontos finais.
-  - Ativar o NAC no perfil VPN.
+    - Se ainda não o fez, integre o ISE com o Intune para o NAC, conforme descrito no **Configure Microsoft Intune como um Servidor MDM** no Guia de Administrador de Motores de [Serviços](https://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html)de Identidade da Cisco .
+    - Ativar o NAC no perfil VPN.
 
   **Ao utilizar o Citrix SSO com gateway,** certifique-se de:
 
@@ -95,10 +94,11 @@ As definições apresentadas na seguinte lista são determinadas pelo tipo de li
   - Integrar citrix Gateway com Intune para NAC. Consulte o guia de implementação da Microsoft Intune/Enterprise Mobility com o Guia de Implementação da [Citrix NetScaler (LDAP+OTP Scenario).](https://www.citrix.com/content/dam/citrix/en_us/documents/guide/integrating-microsoft-intune-enterprise-mobility-suite-with-netscaler.pdf)
   - Ativar o NAC no perfil VPN.
 
-  **Detalhes importantes:**  
+  Ao utilizar o **Acesso F5,** certifique-se de:
 
-  - Quando o NAC está ativado, a VPN é desligada a cada 24 horas. A VPN pode ser imediatamente reconectada.
-  - O ID do dispositivo faz parte do perfil, mas não é mostrado em Intune. Este ID não é armazenado nem partilhado pela Microsoft.
+  - Confirme que está a usar F5 BIG-IP 13.1.1.5 ou mais tarde. 
+  - Integrar big-IP com Intune para NAC. Consulte a [visão geral: Configurar o APM para verificação](https://support.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-client-configuration-7-1-6/6.html#guid-0bd12e12-8107-40ec-979d-c44779a8cc89) da postura do dispositivo com o guia F5 dos sistemas de gestão de pontos finais.
+  - Ativar o NAC no perfil VPN.
 
   Para os parceiros VPN que suportam o ID do dispositivo, o cliente VPN, como citrix SSO, pode obter o ID. Em seguida, pode consultar Intune para confirmar que o dispositivo está matriculado, e se o perfil VPN estiver em conformidade ou não.
 

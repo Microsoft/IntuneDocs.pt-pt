@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 03775716763125d61a8d31ef8d73bfca44f1d4d8
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.openlocfilehash: 3cd153a4c602ba49a5b5135d1d6cb32a61f2668d
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77514069"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576511"
 ---
 # <a name="create-and-assign-scep-certificate-profiles-in-intune"></a>Criar e atribuir perfis de certificado SCEP em Intune
 
@@ -60,7 +60,7 @@ Depois de [configurar](certificates-scep-configure.md) a sua infraestrutura para
 
    - **Tipo de certificado:**
 
-     *(Aplica-se a: Android, Android Enterprise, iOS, macOS, Windows 8.1 e mais tarde, e Windows 10 e mais tarde.)*
+     *(Aplica-se a: Android, Android Enterprise, iOS/iPadOS, macOS, Windows 8.1 e mais tarde, e Windows 10 e mais tarde.)*
 
      Selecione um tipo dependendo de como utilizará o perfil do certificado:
 
@@ -137,7 +137,7 @@ Depois de [configurar](certificates-scep-configure.md) a sua infraestrutura para
 
         Selecione entre os atributos disponíveis:
 
-        - **Endereço de correio eletrónico**
+        - **Endereço de e-mail**
         - **Nome principal do utilizador (UPN)**
 
         Por exemplo, os tipos de certificados de utilizador podem incluir o nome principal do utilizador (UPN) no nome alternativo do assunto. Se um certificado de cliente for utilizado para autenticar um Servidor de Políticas de Rede, defina o nome alternativo do requerente como UPN.
@@ -148,7 +148,7 @@ Depois de [configurar](certificates-scep-configure.md) a sua infraestrutura para
 
         Os atributos disponíveis incluem:
 
-        - **Endereço de correio eletrónico**
+        - **Endereço de e-mail**
         - **Nome principal do utilizador (UPN)**
         - **DNS**
 

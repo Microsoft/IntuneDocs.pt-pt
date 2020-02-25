@@ -1,6 +1,6 @@
 ---
-title: Atribuir uma função a um usuário do Intune
-description: Saiba como atribuir uma função interna ou personalizada a um usuário no Microsoft Intune.
+title: Atribuir uma função a um utilizador intonizado
+description: Aprenda a atribuir uma função incorporada ou personalizada a um utilizador no Microsoft Intune.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -17,40 +17,37 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 780a248f16a8a5028875c9c2401921ea23d0af24
-ms.sourcegitcommit: 70b40aa4743c8396f8d6a0163893c4a337d67c48
+ms.openlocfilehash: 19fff092f7eccfc6de2a027c7834c52698176cbf
+ms.sourcegitcommit: 5881979c45fc973cba382413eaa193d369b8dcf6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76540933"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77569171"
 ---
-# <a name="assign-a-role-to-an-intune-user"></a>Atribuir uma função a um usuário do Intune
+# <a name="assign-a-role-to-an-intune-user"></a>Atribuir uma função a um utilizador intonizado
 
-Você pode atribuir uma função interna ou [personalizada](create-custom-role.md) a um usuário [do](role-based-access-control.md#built-in-roles) Intune.
+Pode atribuir uma função [incorporada](role-based-access-control.md#built-in-roles) ou [personalizada](create-custom-role.md) a um utilizador Intune.
 
 Para criar, editar ou atribuir funções, a sua conta tem de ter uma das seguintes permissões no Azure AD:
 - **Administrador Global**
 - **Administrador de Serviços do Intune**
 
-1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **administração de locatário** > **funções** > **todas as funções**.
+1. No [Microsoft Endpoint Manager Admin Center,](https://go.microsoft.com/fwlink/?linkid=2109431)escolha a **administração do Inquilino** > **Papéis** > **todas as funções**.
 
-2. Na folha **funções do Intune – todas as funções** , escolha a função interna que você deseja atribuir.
+2. Nas **funções Intune - Todas as funções,** escolha o papel incorporado que pretende atribuir > **Atribuições** > **Atribuir**.
 
-3. Na folha*nome da função*de < >- **visão geral** , escolha **gerenciar** **atribuições**de > .
+5. Na página **Basics,** introduza um **nome de Atribuição** e descrição opcional de **Atribuição,** e depois escolha **A Seguinte**.
 
-4. No painel de função personalizada, escolha **Atribuir**.
+6. Na página **dos Grupos De Administração,** selecione o grupo que contém o utilizador a que pretende dar as permissões. Escolha **Seguinte**
 
-5. Na folha **atribuições de função** , insira um **nome de atribuição** e uma descrição de **atribuição** opcional para a atribuição.
+7. Na página **Scope (Grupos),** escolha um grupo que contenha os utilizadores/dispositivos que o membro acima será autorizado a gerir. Escolha **Seguinte**.
 
-6. Para **Membros (grupos)** , escolha um grupo que contenha o usuário ao qual você deseja conceder as permissões.
+8. Na página **Scope (Tags),** escolha etiquetas onde esta atribuição de funções será aplicada. Escolha **Seguinte**.
 
-7. Para **escopo (grupos)** , escolha um grupo que contenha os usuários/dispositivos que o membro acima terá permissão para gerenciar.
-
-8. Para **escopo (marcas)** , escolha as marcas em que essa atribuição de função será aplicada.
-
-9. Quando tiver terminado, selecione **OK**. A nova atribuição é apresentada na lista de atribuições.
-
+9. Na página **Review + Criar,** quando terminar, escolha **Criar**. A nova atribuição é apresentada na lista de atribuições.
 
 ## <a name="next-steps"></a>Próximos passos
-- [Saiba mais sobre o controle de acesso baseado em função no Intune](role-based-access-control.md)
-- [Criar uma função personalizada](create-custom-role.md)
+- [Saiba mais sobre o controlo de acesso baseado em papéis em Intune](role-based-access-control.md)
+- [Criar um papel personalizado](create-custom-role.md)
+
+

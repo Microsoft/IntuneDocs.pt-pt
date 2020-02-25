@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/20/2020
+ms.date: 02/21/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0b615adf6435ecafb0dd6ca31be9ae96e4b98dde
-ms.sourcegitcommit: 67f926ba83f8a955e16b741a610ad84d6044f8f9
+ms.openlocfilehash: 02fa3acdaf0dc450afee97dfaaf5870166013356
+ms.sourcegitcommit: 5881979c45fc973cba382413eaa193d369b8dcf6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77529316"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77569528"
 ---
 # <a name="configure-and-use-imported-pkcs-certificates-with-intune"></a>Configure e utilize certificados PKCS importados com Intune
 
@@ -31,6 +31,17 @@ O Microsoft Intune suporta a utilização de certificados de pares de chaves pú
 A encriptação S/MIME é desafiante porque o e-mail é encriptado com um certificado específico. Deve ter a chave privada do certificado que encriptou o e-mail no dispositivo onde está a ler o e-mail para que possa ser desencriptado. Os certificados de encriptação são renovados regularmente, o que significa que pode precisar do seu histórico de encriptação em todos os seus dispositivos para garantir que pode ler e-mails mais antigos.  Uma vez que o mesmo certificado necessita de ser utilizado em todos os dispositivos, não é possível utilizar perfis de [certificadoS SCEP](certificates-scep-configure.md) ou [PKCS](certficates-pfx-configure.md) para o efeito, uma vez que esses mecanismos de entrega de certificados fornecem certificados únicos por dispositivo.
 
 Para mais informações sobre a utilização de S/MIME com [Intune, use S/MIME para encriptar e-mail](certificates-s-mime-encryption-sign.md).
+
+## <a name="supported-platforms"></a>Plataformas suportadas
+
+Intune apoia a importação de certificados PFX para as seguintes plataformas:
+
+- Android - Administrador de Dispositivos
+- Android Enterprise - Totalmente Gerido
+- Android Enterprise - Perfil de trabalho
+- iOS
+- Mac
+- Windows 10
 
 ## <a name="requirements"></a>Requisitos
 
@@ -209,7 +220,7 @@ Após importar certificados para o Intune, crie um perfil de **certificado PKCS 
 
    - **Finalidade prevista**: Especificar o objetivo dos certificados importados para este perfil. Os administradores podem importar certificados com diferentes fins previstos (como a assinatura S/MIME ou a encriptação S/MIME). A finalidade selecionada no perfil do certificado corresponde ao perfil do certificado com os certificados importados adequados. O objetivo pretendido é uma etiqueta para agrupar os certificados importados em conjunto e não garante que os certificados importados com essa etiqueta cumpram o objetivo pretendido.  
    - **Período de validade**do certificado : A menos que o período de validade tenha sido alterado no modelo de certificado, esta opção não se aplica a um ano.
-   - **Fornecedor de armazenamento de chaves (KSP)** : para dispositivos com Windows, selecione onde armazenar as chaves no dispositivo.
+   - **Fornecedor de armazenamento de chaves (KSP)**: para dispositivos com Windows, selecione onde armazenar as chaves no dispositivo.
 
 5. Selecione **OK** > **Criar** para guardar o perfil.
 

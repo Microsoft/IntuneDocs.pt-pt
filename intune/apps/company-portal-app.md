@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 02/24/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6c016dd8a1d8a21e3ac96ab8637e26a029b18dbc
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.openlocfilehash: 4c938aba7fde84536af2452f13f6ed030fa1d823
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77511808"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576428"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Como configurar a aplicação Portal da Empresa do Microsoft Intune
 
@@ -37,7 +37,7 @@ O portal da empresa do Microsoft Intune é onde os utilizadores acedem aos dados
 > [!Tip]
 > Quando personaliza o Portal da Empresa, as configurações aplicam-se tanto ao site do Portal da Empresa, como às aplicações do Portal da Empresa. Tenha em atenção que os utilizadores têm de ter uma licença do Intune atribuída para poderem aceder ao site do Portal da Empresa.
 
-A personalização do Portal da Empresa ajuda a proporcionar uma experiência familiar e útil aos utilizadores finais. Para isso, no portal Intune, selecione **Apps** > **Branding e personalização,** e, em seguida, configurar as definições necessárias.
+A personalização do Portal da Empresa ajuda a proporcionar uma experiência familiar e útil aos utilizadores finais. Para isso, navegue para o centro de [administração do Microsoft Endpoint Manager,](https://go.microsoft.com/fwlink/?linkid=2109431)selecione **Tenant Administration** > Branding **e personalização,** e, em seguida, configure as definições necessárias.
 
 Quando um utilizador estiver a instalar uma aplicação iOS/iPadOS a partir do Portal da Empresa, receberá uma solicitação. Isto ocorre quando a aplicação iOS/iPadOS está ligada à loja de aplicações, ligada a um programa de compra de volume (VPP), ou ligada a uma aplicação de linha de negócios (LOB). O pedido permite que os utilizadores aceitem a ação ou permitam a gestão da app. O pedido mostrará o nome da sua empresa, ou quando o nome da sua empresa não estiver disponível, o **Portal da Empresa** será exibido. 
 
@@ -62,7 +62,7 @@ Introduza as informações de suporte da sua empresa para que o colaborador tenh
 |---|---|---|
 |**Nome do contacto** | 40 | Este nome é apresentado na página **de Ajuda e Suporte.** |
 |**Número de telefone** | 20 | Este número de contacto é apresentado na página **de Ajuda e Suporte** para permitir que os colaboradores o contactem para obter apoio. |
-|**Endereço de correio eletrónico**| 40 | Este endereço de contacto é apresentado na página **de Ajuda e Suporte.** Tem de inserir um endereço de e-mail válido no formato `alias@domainname.com`. |
+|**Endereço de e-mail**| 40 | Este endereço de contacto é apresentado na página **de Ajuda e Suporte.** Tem de inserir um endereço de e-mail válido no formato `alias@domainname.com`. |
 |**Nome do site**| 40 | Este é o nome amigável apresentado no URL do site de suporte. Se especificar um URL do site de suporte e nenhum nome amigável, então o site de TI é exibido na página **de Ajuda e Suporte** no Portal da Empresa. |
 |**URL do Site**| 150 | Se tiver um site de suporte que pretende que os utilizadores usem, especifique o URL aqui. O URL tem de estar no formato `https://www.contoso.com`. Se não especificar um URL, nada é apresentado para o site de suporte na página **de Ajuda e Suporte** no Portal da Empresa. |
 | **Informações adicionais**| 120 | Apresentado na página **de Ajuda e Suporte.** |

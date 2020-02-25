@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fbafca746c43dada6281ffbfe1e34f01afa8ab91
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 7ff03682ab406b92e3ea7f1e416188119913cc87
+ms.sourcegitcommit: 5881979c45fc973cba382413eaa193d369b8dcf6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77413684"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77569460"
 ---
 # <a name="find-the-primary-user-of-an-intune-device"></a>Encontre o utilizador principal de um dispositivo Intune
 
-O Utilizador Primário, também conhecido como Afinidade do Dispositivo de Utilizador, é uma propriedade de cada dispositivo Intune. Um dispositivo Intune pode ter zero ou um utilizador primário atribuído ao mesmo. Quando não há utilizador primário atribuído, o dispositivo é referido como um "Dispositivo Partilhado".
+O utilizador principal, também conhecido como User Device Affinity, é uma propriedade de cada dispositivo Intune. Um dispositivo Intune pode ter zero ou um utilizador primário atribuído ao mesmo. Quando não há utilizador primário atribuído, o dispositivo é referido como um "Dispositivo Partilhado".
 
-## <a name="how-to-find-a-devices-primary-user"></a>Como encontrar o principal utilizador de um dispositivo
+## <a name="find-a-devices-primary-user"></a>Encontre o principal utilizador de um dispositivo
 
 1. Inscreva-se no [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Escolha **Dispositivos** > escolha um dispositivo.
@@ -38,7 +38,7 @@ O Utilizador Primário, também conhecido como Afinidade do Dispositivo de Utili
 A propriedade principal do utilizador é usada para mapear um utilizador Intune licenciado para os seus dispositivos em:
 - A aplicação Portal da Empresa
 - Website do utilizador final
-- Experiências profissionais de TI, como páginas de resolução de problemas no portal Azure. Estas páginas mapeiam as contas dos utilizadores para os dispositivos utilizando o utilizador principal.    
+- Experiências profissionais de TI, como páginas de resolução de problemas no portal Azure. Estas páginas mapeiam as contas dos utilizadores para os dispositivos utilizando o utilizador principal. 
 
 ### <a name="company-portal-app"></a>Aplicação do Portal da Empresa
 A aplicação Portal da Empresa espera que a conta de utilizador que assinou no Portal da Empresa seja o principal utilizador desse dispositivo. Se outro utilizador tiver sido designado como utilizador principal, o Portal da Empresa mostra um aviso:

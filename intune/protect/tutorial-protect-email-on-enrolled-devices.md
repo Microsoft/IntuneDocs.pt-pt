@@ -1,7 +1,7 @@
 ---
-title: Tutorial – proteger email do Exchange Online em dispositivos gerenciados
+title: Tutorial - Proteja o e-mail online de troca de dispositivos geridos
 titleSuffix: Microsoft Intune
-description: Saiba como proteger o Exchange Online com as políticas de conformidade do iOS Intune e o acesso condicional do Azure AD para exigir dispositivos gerenciados e o aplicativo Outlook.
+description: Aprenda a garantir o Exchange Online com as políticas de conformidade do iOS Intune e o Azure AD Conditional Access para exigir dispositivos geridos e a aplicação Outlook.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -18,22 +18,22 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9deee0dca675d7fd95445131ed98ea195972c6ac
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: c134eb1fc413a32f2a27034d8c3a993f18f8a9c9
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74409857"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576265"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>Tutorial – Proteger o e-mail do Exchange Online em dispositivos geridos
 
-Saiba mais sobre como usar políticas de conformidade do dispositivo com acesso condicional para garantir que os dispositivos iOS possam acessar o email do Exchange Online somente se eles forem gerenciados pelo Intune e usando um aplicativo de email aprovado.
+Saiba utilizar as políticas de conformidade do dispositivo com acesso condicional para garantir que os dispositivos iOS só podem aceder ao email do Exchange Online se forem geridos pela Intune e utilizarem uma aplicação de email aprovada.
 
 Neste tutorial, ficará a saber como:
 
 > [!div class="checklist"]
 > * Criar uma política de conformidade de dispositivos iOS do Intune para definir as condições que um dispositivo tem de cumprir para ser considerado conforme.
-> * Crie uma política de acesso condicional do Azure Active Directory (AD do Azure) que exija que os dispositivos iOS se registrem no Intune, cumpram as políticas do Intune e use o aplicativo móvel do Outlook aprovado para acessar o email do Exchange Online.
+> * Crie uma política de Acesso Condicional do Diretório Ativo Azure (Azure AD) que exija que os dispositivos iOS se inscrevam no Intune, cumpram as políticas intune e utilizem a aplicação móvel do Outlook aprovada para aceder ao email Exchange Online.
 
 Se não tiver uma subscrição do Intune, [inscreva-se numa conta de avaliação gratuita](../fundamentals/free-trial-sign-up.md).
 
@@ -45,23 +45,23 @@ Precisará de um inquilino de teste com as seguintes subscrições para este tut
 
 - Subscrição do Office 365 Empresas com o Exchange ([avaliação gratuita](https://go.microsoft.com/fwlink/p/?LinkID=510938))
 
-Antes de começar, crie um perfil de dispositivos de teste para dispositivos iOS ao seguir os passos em [Início Rápido: criar um perfil de dispositivo de e-mail para iOS](../configuration/quickstart-email-profile.md).
+Antes de começar, crie um perfil de dispositivo de teste para dispositivos iOS seguindo os passos em Quickstart: Crie um perfil de dispositivo de [e-mail para iOS/iPadOS](../configuration/quickstart-email-profile.md).
 
 ## <a name="sign-in-to-intune"></a>Iniciar sessão no Intune
 
-Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) como um [administrador global](../fundamentals/users-add.md#types-of-administrators) ou um [administrador de serviços](../fundamentals/users-add.md#types-of-administrators)do Intune. Se criou uma Subscrição de avaliação do Intune, a conta com a qual criou a subscrição é de Administrador global.
+Inscreva-se no [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) como [administrador global](../fundamentals/users-add.md#types-of-administrators) ou administrador de [serviço](../fundamentals/users-add.md#types-of-administrators)intune . Se criou uma Subscrição de avaliação do Intune, a conta com a qual criou a subscrição é de Administrador global.
 
 ## <a name="create-the-ios-device-compliance-policy"></a>Criar a política de conformidade dos dispositivos iOS
 
 Crie uma política de conformidade de dispositivos do Intune para definir as condições que um dispositivo tem de cumprir para ser considerado conforme. Para este tutorial, vamos criar uma política de conformidade para dispositivos iOS. As políticas de conformidade são específicas da plataforma, por isso, precisa de uma política de conformidade separada para cada plataforma de dispositivo que queira avaliar.
 
-1. No Intune, selecione **dispositivos** > **políticas de conformidade** > **criar política**.
+1. Intune, selecione **Dispositivos** > Políticas de **Conformidade** > **Criar a política**.
 
-2. Para **nome**, insira **teste de política de conformidade do IOS**.
+2. Para **Nome,** insira o teste de política de **conformidade do iOS**.
 
-3. Para **Descrição**, insira **teste de política de conformidade do IOS**.
+3. Para **descrição,** insira o teste de política de **conformidade do iOS**.
 
-4. Para **plataforma**, selecione **Ios/iPadOS**.
+4. Para **plataforma**, selecione **iOS/iPadOS**.
 
 5. Selecione **Definições** > **E-mail**.
 
@@ -82,13 +82,13 @@ Crie uma política de conformidade de dispositivos do Intune para definir as con
    - Em **Comprimento mínimo da palavra-passe**, introduza **4**.
 
      > [!TIP]
-     > Os valores padrão esmaecidos e em itálico são apenas recomendações. Você deve substituir os valores que são recomendações para definir uma configuração.
+     > Valores padrão que são acinzentados e itálico são apenas recomendações. Deve substituir valores que são recomendações para configurar uma definição.
 
    - Para **Tipo de palavra-passe obrigatório**, escolha **Alfanumérico**.
 
    - Para **Máximo de minutos após o bloqueio de ecrã até ao pedido de palavra-passe**, escolha **Imediatamente**.
 
-   - Para **Expiração da palavra-passe (dias)** , introduza **41**.
+   - Para **Expiração da palavra-passe (dias)**, introduza **41**.
 
    - Para **Número de palavras-passe anteriores para impedir a reutilização**, introduza **5**.
  
@@ -100,15 +100,15 @@ Crie uma política de conformidade de dispositivos do Intune para definir as con
 
 ## <a name="create-the-conditional-access-policy"></a>Criar a política de acesso condicional
 
-Agora, criaremos uma política de acesso condicional que exige que todas as plataformas de dispositivo sejam registradas no Intune e estejam em conformidade com nossa política de conformidade do Intune antes que possam acessar o Exchange Online. Também vamos exigir a aplicação Outlook para aceder ao e-mail. As políticas de acesso condicional são configuráveis no portal do Azure AD ou no portal do Intune. Uma vez que já estamos no portal do Intune, vamos criar a política aqui.
+Agora vamos criar uma política de Acesso Condicional que requer que todas as plataformas de dispositivos se inscrevam em Intune e cumpram a nossa política de conformidade intune antes de poderem aceder ao Exchange Online. Também vamos exigir a aplicação Outlook para aceder ao e-mail. As políticas de Acesso Condicional são configuráveis no portal Azure AD ou no portal Intune. Uma vez que já estamos no portal do Intune, vamos criar a política aqui.
 
-1. No Intune, selecione **Endpoint security** > **acesso condicional** > **nova política**.
+1. Intune, selecione **Endpoint security** > **Acesso Condicional** > **Nova política**.
 
-2. Para **nome**, insira a **política de teste para email do Office 365**.
+2. Para **Nome**, insira **a política de teste para o Office 365 e-mail**.
 
 3. Em **Atribuições**, selecione **Utilizadores e grupos**. No separador **Incluir**, selecione **Todos os utilizadores** e, em seguida, selecione **Concluído**.
 
-4. Em **atribuições**, selecione **aplicativos de nuvem ou ações**. Uma vez que queremos proteger o e-mail do Office 365 Exchange Online, vamos selecioná-lo ao seguir estes passos:
+4. Em **Atribuições,** selecione **aplicações ou ações cloud**. Uma vez que queremos proteger o e-mail do Office 365 Exchange Online, vamos selecioná-lo ao seguir estes passos:
 
    1. No separador **Incluir**, escolha **Selecionar aplicações**.
 
@@ -124,7 +124,7 @@ Agora, criaremos uma política de acesso condicional que exige que todas as plat
 
    1. Em **Configurar**, selecione **Sim**.
 
-   2. Na guia **incluir** , selecione **qualquer dispositivo**e, em seguida, selecione **concluído**. 
+   2. No separador **Incluir,** selecione **Qualquer dispositivo**, e, em seguida, selecione **Done**. 
 
    3. Selecione **Concluído** novamente.
 
@@ -138,7 +138,7 @@ Agora, criaremos uma política de acesso condicional que exige que todas as plat
 
    3. Selecione **Concluído** e, em seguida, selecione **Concluído** novamente.
 
-   ![Selecionar aplicativos e clientes](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-client-apps.png)
+   ![Selecione apps e clientes](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-client-apps.png)
 
 7. Em **Controlos de acesso**, selecione **Concessão**.
 
@@ -152,7 +152,7 @@ Agora, criaremos uma política de acesso condicional que exige que todas as plat
 
    5. Clique em **Selecionar**.
 
-   ![Selecionar conrols](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-grant-access.png)
+   ![Selecione controlos](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-grant-access.png)
 
 8. Em **Ativar política**, selecione **Ativar**.
 
@@ -162,7 +162,7 @@ Agora, criaremos uma política de acesso condicional que exige que todas as plat
 
 ## <a name="try-it-out"></a>Experimentar
 
-Com as políticas que criou, todos os dispositivos iOS que tentarem iniciar sessão no e-mail do Office 365 terão de se inscrever no Intune e utilizar a aplicação móvel do Outlook para iOS. Para testar este cenário num dispositivo iOS, experimente iniciar sessão no Exchange Online com as credenciais para um utilizador no seu inquilino de teste. Será solicitado a inscrever o dispositivo e a instalar a aplicação móvel do Outlook.
+Com as políticas que criou, qualquer dispositivo iOS que tente iniciar sessão no Office 365 terá de se inscrever no Intune e utilizar a aplicação móvel Outlook para iOS/iPadOS. Para testar este cenário num dispositivo iOS, experimente iniciar sessão no Exchange Online com as credenciais para um utilizador no seu inquilino de teste. Será solicitado a inscrever o dispositivo e a instalar a aplicação móvel do Outlook.
 
 1. Para testar num iPhone, aceda a **Definições** > **Palavras-passe e Contas** > **Adicionar Conta** > **Exchange**.
 
@@ -177,16 +177,16 @@ Com as políticas que criou, todos os dispositivos iOS que tentarem iniciar sess
 ## <a name="clean-up-resources"></a>Limpar recursos
 
 Quando já não precisar das políticas de teste, poderá removê-las.
-1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) como um administrador global ou um administrador de serviços do Intune.
+1. Inscreva-se no [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) como administrador global ou administrador de serviço intune.
 
-2. Selecione **dispositivos** > **políticas de conformidade**.
+2. Selecione **Dispositivos** > políticas de **conformidade**.
 
-3. Na lista **Nome da Política**, selecione o menu de contexto ( **...** ) para a sua política de teste e, em seguida, selecione **Eliminar**. Selecione **OK** para confirmar.
+3. Na lista **Nome da Política**, selecione o menu de contexto (**...**) para a sua política de teste e, em seguida, selecione **Eliminar**. Selecione **OK** para confirmar.
 
-4. Selecione **Endpoint security** > **acesso condicional**.
+4. Selecione **segurança endpoint** > **acesso condicional**.
 
-5. Na lista **Nome da Política**, selecione o menu de contexto ( **...** ) para a sua política de teste e, em seguida, selecione **Eliminar**. Selecione **Sim** para confirmar.
+5. Na lista **Nome da Política**, selecione o menu de contexto (**...**) para a sua política de teste e, em seguida, selecione **Eliminar**. Selecione **Sim** para confirmar.
 
 ## <a name="next-steps"></a>Próximos passos
 
-Neste tutorial, criou políticas que exigem que os dispositivos iOS se inscrevam no Intune e utilizem a aplicação Outlook para aceder ao e-mail do Exchange Online. Para saber mais sobre como usar o Intune com acesso condicional para proteger outros aplicativos e serviços, incluindo clientes do Exchange ActiveSync para o Office 365 Exchange Online, consulte [Configurar o acesso condicional](conditional-access.md).
+Neste tutorial, criou políticas que exigem que os dispositivos iOS se inscrevam no Intune e utilizem a aplicação Outlook para aceder ao e-mail do Exchange Online. Para aprender sobre a utilização do Intune com acesso condicional para proteger outras aplicações e serviços, incluindo clientes Exchange ActiveSync para o Office 365 Exchange Online, consulte [Configurar o Acesso Condicional](conditional-access.md).

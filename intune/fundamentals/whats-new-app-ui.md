@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b4999a813384c68bb394c7e73dee1c5c452459b9
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.openlocfilehash: aab10058fe507a956bb793902e6f7b09d8579966
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77515293"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576538"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Atualização da IU para aplicações de utilizadores finais do Intune
 
@@ -43,13 +43,13 @@ O **ecrã What's Next?** Foi removido do fluxo de inscrição de perfil de traba
 
 ## <a name="week-of-november-11-2019"></a>Semana de 11 de novembro de 2019  
 
-### <a name="web-apps-launched-from-the-windows-company-portal-app----5030972---"></a>Aplicativos Web iniciados no aplicativo Windows Portal da Empresa <!-- 5030972 -->
-Os usuários finais agora podem iniciar aplicativos Web diretamente do aplicativo Windows Portal da Empresa. Os utilizadores finais podem selecionar a aplicação web e, em seguida, escolher a opção **Open no navegador**. A URL da Web publicada é aberta diretamente em um navegador da Web. Essa funcionalidade será distribuída na próxima semana. Para obter mais informações sobre aplicações Web, consulte [Adicionar aplicações web ao Microsoft Intune](~/apps/web-app.md).
+### <a name="web-apps-launched-from-the-windows-company-portal-app----5030972---"></a>Aplicações web lançadas a partir da aplicação Portal da Empresa Windows <!-- 5030972 -->
+Os utilizadores finais podem agora lançar aplicações web diretamente a partir da aplicação Portal da Empresa do Windows. Os utilizadores finais podem selecionar a aplicação web e, em seguida, escolher a opção **Open no navegador**. O URL publicado na Web é aberto diretamente num navegador web. Esta funcionalidade será lançada ao longo da próxima semana. Para obter mais informações sobre aplicações Web, consulte [Adicionar aplicações web ao Microsoft Intune](~/apps/web-app.md).
 
 ![Imagem de exemplo de uma aplicação web lançada a partir da aplicação Portal da Empresa Windows](./media/whats-new-app-ui/webapp-open-in-browser.png)  
 
 ### <a name="improved-macos-enrollment-experience-in-company-portal----5074349-wnready---"></a>Melhor experiência de inscrição no MacOS no Portal da Empresa <!-- 5074349 WNready -->  
-O Portal da Empresa para a experiência de registro do macOS tem um processo de registro mais simples que se alinha com o Portal da Empresa para a experiência de registro do iOS. Os usuários do dispositivo agora veem:  
+O Portal da Empresa para a experiência de inscrição no MacOS tem um processo de inscrição mais simples que se alinha mais de perto com o Portal da Empresa para a experiência de inscrição do iOS. Os utilizadores do dispositivo agora vêem:  
 
 * Uma interface de utilizador elegante.  
 * Uma lista de verificação de inscrições melhorada.  
@@ -407,7 +407,7 @@ A página de detalhes das aplicações da aplicação Portal da Empresa para And
 
 ### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>Sinal melhorado na experiência através de aplicações do Portal da Empresa para todas as plataformas <!--User Story 1132123-->
 
-Anunciamos uma alteração que ficará disponível nos próximos meses e irá melhorar a experiência de início de sessão nas aplicações do Portal da Empresa do Intune para Android, iOS e Windows. A nova experiência de utilizador será apresentada automaticamente em todas as plataformas da aplicação Portal da Empresa quando o Azure AD fizer esta alteração. Além disso, os utilizadores podem agora iniciar sessão no Portal da Empresa a partir de outro dispositivo com um código gerado, de utilização única. Tal é especialmente útil nos casos em que os utilizadores precisam de iniciar sessão sem credenciais.  
+Estamos a anunciar uma mudança que vai chegar nos próximos meses que irá melhorar a experiência de entrada para as aplicações do Portal da Empresa Intune para Android, iOS/iPadOS e Windows. A nova experiência de utilizador será apresentada automaticamente em todas as plataformas da aplicação Portal da Empresa quando o Azure AD fizer esta alteração. Além disso, os utilizadores podem agora iniciar sessão no Portal da Empresa a partir de outro dispositivo com um código gerado, de utilização única. Tal é especialmente útil nos casos em que os utilizadores precisam de iniciar sessão sem credenciais.  
 
 Abaixo, pode ver a experiência de início de sessão anterior, a nova experiência de início de sessão com credenciais e a nova experiência de início de sessão a partir de outro dispositivo.
 

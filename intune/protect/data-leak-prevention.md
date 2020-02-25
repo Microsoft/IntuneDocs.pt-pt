@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0d9e61cbe4f6d6e07c61fe182e639e715996f9ee
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.openlocfilehash: 7f7a6203fcf641c41192eec8aaa0835939376d54
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77514443"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77575933"
 ---
 # <a name="prevent-data-leaks-on-non-managed-devices-using-microsoft-intune"></a>Impedir fugas de dados em dispositivos não geridos com o Microsoft Intune
 
@@ -31,7 +31,7 @@ Se permitir o acesso a dados da empresa alojados pelo Office 365, pode controlar
 
 As políticas de proteção de aplicações configuradas com o Intune também funcionam em dispositivos geridos com uma solução de gestão de um dispositivo que não seja da Microsoft. Os dados pessoais nos dispositivos não são modificados. Apenas os dados da empresa são geridos pelo departamento de TI. 
 
-Pode definir políticas de proteção de aplicações para as aplicações do Office para dispositivos móveis em dispositivos Windows, iOS ou Android, de forma a proteger os dados da empresa. Estas políticas permitem-lhe definir políticas, por exemplo um PIN com base na aplicação ou encriptação dos dados da empresa, ou definições mais avançadas para restringir a forma como as funcionalidades cortar, copiar, colar e guardar como são utilizadas pelos utilizadores entre aplicações geridas e não geridas. Também pode apagar os dados da empresa remotamente sem a necessidade de os utilizadores inscreverem os dispositivos.
+Pode definir políticas de proteção de aplicações para aplicações móveis do Office em dispositivos que executam Windows, iOS/iPadOS ou Android para proteger os dados da empresa. Estas políticas permitem-lhe definir políticas, por exemplo um PIN com base na aplicação ou encriptação dos dados da empresa, ou definições mais avançadas para restringir a forma como as funcionalidades cortar, copiar, colar e guardar como são utilizadas pelos utilizadores entre aplicações geridas e não geridas. Também pode apagar os dados da empresa remotamente sem a necessidade de os utilizadores inscreverem os dispositivos.
 
 As políticas de proteção de aplicações do Intune são independentes da gestão de dispositivos. As políticas de proteção de aplicações permitem-lhe gerir as aplicações do Office para dispositivos móveis em dispositivos geridos e não geridos pelo Intune, bem como em dispositivos geridos por soluções de MDM que não sejam da Microsoft.
 
@@ -42,7 +42,7 @@ O seguinte plano de ação pode ser utilizado se cumprir estes requisitos:
 * A sua empresa está pronta para fazer a transição segura para a cloud.
 * A sua empresa utiliza o Office 365 Exchange Online, SharePoint Online, OneDrive para Empresas ou Yammer.
 * A sua empresa tem licenças do Microsoft 365, Enterprise Mobility + Security (EMS) ou Azure Information Protection.
-* A sua empresa permite que os utilizadores acedam a dados da empresa a partir de dispositivos Windows, iOS ou Android pertencentes à empresa ou pessoais.
+* A sua empresa permite que os utilizadores acedam aos dados da empresa a partir de dispositivos Windows, iOS/iPadOS ou Android da empresa.
 * A sua empresa não quer exigir que os dispositivos pessoais sejam inscritos num serviço de gestão de dispositivos.
 
 ## <a name="action-plan"></a>Plano de ação

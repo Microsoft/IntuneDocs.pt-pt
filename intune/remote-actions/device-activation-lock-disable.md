@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3f67a08ef3cbfae4a801333e5f8ffb5469e723ed
-ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
+ms.openlocfilehash: 65a13c2690f08c2244f31854556a88b6301c6ac5
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77438060"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576023"
 ---
 # <a name="disable-activation-lock-on-supervised-iosipados-devices-with-intune"></a>Desativar bloqueio de ativação em dispositivos supervisionados iOS/iPadOS com Intune
 
@@ -63,7 +63,7 @@ Intune pode solicitar o estado de Bloqueio de Ativação de dispositivos supervi
 Antes de poder desativar o bloqueio de ativação nos dispositivos, deve activar-o seguindo estas instruções:
 
 1. Configure um perfil de restrição do dispositivo Intune para iOS/iPadOS utilizando as informações em [Como configurar as definições](/intune-azure/configure-devices/how-to-configure-device-restrictions)de restrição do dispositivo .
-2. Nas [definições de restrição de dispositivos para iOS](../configuration/device-restrictions-ios.md), nas definições **Gerais**, ative a opção **Bloqueio de Ativação**.
+2. Nas definições de restrição do [dispositivo para iOS/iPadOS,](../configuration/device-restrictions-ios.md)sob as definições **gerais,** ative a fechadura de **ativação**da opção .
 3. Guarde o perfil e, em seguida, [atribua-o](../configuration/device-profile-assign.md) aos dispositivos em que pretende gerir o Bloqueio de Ativação de Desativação.
 
 

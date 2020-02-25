@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/23/2020
+ms.date: 02/21/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c3deb9f3c96a4c2c2de72b7016aca855f679bbd7
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: ceb4d2354ca073cf05f526df7638aebf8f16d5b7
+ms.sourcegitcommit: 5881979c45fc973cba382413eaa193d369b8dcf6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755137"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77569494"
 ---
 # <a name="add-a-windows-line-of-business-app-to-microsoft-intune"></a>Adicionar aplicações de linha de negócio Windows ao Microsoft Intune
 
@@ -32,12 +32,12 @@ ms.locfileid: "76755137"
 Uma aplicação de linha de negócio (LOB) é uma aplicação que adiciona a partir de um ficheiro de instalação da aplicação. Normalmente, este tipo de aplicação é criado internamente. Os seguintes passos fornecem orientação para ajudá-lo a adicionar uma aplicação LOB Windows ao Microsoft Intune.
 
 > [!IMPORTANT]
-> Ao implementar aplicações Win32 utilizando um ficheiro de instalação com a extensão *.msi,* considere utilizar a extensão de [gestão Intune](../apps/intune-management-extension.md). Se você misturar a instalação de aplicativos Win32 e aplicativos de linha de negócios durante o registro do AutoPilot, a instalação do aplicativo poderá falhar.  
+> Ao implementar aplicações Win32 utilizando um ficheiro de instalação com a extensão .msi (embalada num ficheiro .intunewin utilizando a Ferramenta de Preparação de Conteúdo), considere utilizar a extensão de [gestão Intune](../apps/intune-management-extension.md). Se misturar a instalação de aplicações Win32 e aplicações de linha de negócio durante a inscrição no AutoPilot, a instalação da aplicação poderá falhar.  
 
 ## <a name="select-the-app-type"></a>Selecione o tipo de aplicativo
 
-1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
-2. Selecione **aplicativos** > **todos os aplicativos** > **Adicionar**.
+1. Inscreva-se no [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **Apps** > **Todas as aplicações** > **Adicionar**.
 3. No painel do **tipo de aplicação Select,** sob os **outros** tipos de aplicações, selecione **app Line-of-business**.
 4. Clique em **Selecionar**. Os passos da **aplicação Add** são apresentados.
 
@@ -72,10 +72,10 @@ Uma aplicação de linha de negócio (LOB) é uma aplicação que adiciona a par
 2. Clique em **Seguir** para exibir a página **de tags scope.**
 
 ## <a name="step-2---select-scope-tags-optional"></a>Passo 2 - Selecione etiquetas de âmbito (opcional)
-Você pode usar marcas de escopo para determinar quem pode ver as informações do aplicativo cliente no Intune. Para mais detalhes sobre etiquetas de âmbito, consulte [Use o controlo de acesso baseado em funções e as etiquetas](../fundamentals/scope-tags.md)de âmbito para TI distribuídos .
+Pode utilizar etiquetas de âmbito para determinar quem pode ver informações sobre aplicações do cliente no Intune. Para mais detalhes sobre etiquetas de âmbito, consulte [Use o controlo de acesso baseado em funções e as etiquetas](../fundamentals/scope-tags.md)de âmbito para TI distribuídos .
 
 1. Clique em **Selecionar etiquetas** de âmbito para adicionar opcionalmente etiquetas de âmbito para a aplicação. 
-2. Clique em **Avançar** para exibir a página **atribuições** .
+2. Clique em **Seguir** para exibir a página **de Tarefas.**
 
 ## <a name="step-3---assignments"></a>Passo 3 - Atribuições
 

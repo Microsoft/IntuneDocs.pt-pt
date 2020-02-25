@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/21/2019
+ms.date: 02/24/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f468518130b1a3a98fd31fb235679ece574c3029
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.openlocfilehash: 43e104d9f32f6b6204ffc3bd461bb06764543e3c
+ms.sourcegitcommit: 5881979c45fc973cba382413eaa193d369b8dcf6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77514290"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77569273"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Utilize linhas de base de segurança para configurar dispositivos Windows 10 em Intune
 
@@ -103,7 +103,7 @@ As tarefas comuns quando trabalha com linhas de base de segurança incluem:
 
 ### <a name="create-the-profile"></a>Criar o perfil
 
-1. Inscreva-se no [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Inscreva-se no centro de administração do [Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 
 2. Selecione **segurança endpoint** > **linhas de base de segurança** para ver a lista de linhas de base disponíveis.
 
@@ -142,7 +142,7 @@ As tarefas comuns quando trabalha com linhas de base de segurança incluem:
 
    ![Rever a linha de base](./media/security-baselines/review.png)
 
-9. Depois de criar um perfil, edite-o indo para a segurança do Dispositivo > linhas de **base de segurança,** selecione o tipo de linha de base que configurae e, em seguida, selecione **Perfis**. Selecione o perfil na lista de perfis disponíveis e, em seguida, selecione **Propriedades**. Pode editar as definições de todos os separadores de configuração disponíveis e selecionar **Rever + guardar** para comprometer as suas alterações.
+9. Depois de criar um perfil, edite-o indo para a **segurança de Endpoint** > linhas de base de **segurança,** selecione o tipo de linha de base que configurae e, em seguida, selecione **Perfis**. Selecione o perfil na lista de perfis disponíveis e, em seguida, selecione **Propriedades**. Pode editar as definições de todos os separadores de configuração disponíveis e selecionar **Rever + guardar** para comprometer as suas alterações.
 
 ### <a name="change-the-baseline-version-for-a-profile"></a>Alterar a versão de base para um perfil
 
@@ -162,7 +162,7 @@ Após a poupança, após a conversão estar concluída, a linha de base é imedi
 
 #### <a name="to-change-the-baseline-version-for-a-profile"></a>Para alterar a versão de base para um perfil
 
-1. Inscreva-se no [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431). 
+1. Inscreva-se no centro de administração do [Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431). 
 
 2. Selecione **a segurança endpoint** > as linhas de **base de segurança**e, em seguida, selecione o azulejo para o tipo de linha de base que tem o perfil que pretende alterar.
 

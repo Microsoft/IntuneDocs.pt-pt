@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c705e8863ef4e01906a773d528f9ae2f40461c71
-ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
+ms.openlocfilehash: 08041a57ab52f395283e57cda596d00ba168aba1
+ms.sourcegitcommit: 3964e6697b4d43e2c69a15e97c8d16f8c838645b
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75885859"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77556487"
 ---
 # <a name="basic-setup"></a>Configuração básica
 
@@ -37,7 +37,7 @@ O Intune precisa do Azure Active Directory (AAD) como o fornecedor de identidade
 
 - [Requisitos da sincronização de diretórios](https://docs.microsoft.com/azure/active-directory/active-directory-hybrid-identity-design-considerations-directory-sync-requirements)
 
-- [Autenticação multifator (MFA)](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)
+- [Autenticação de vários fatores (MFA)](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)
 
 - [Planear os grupos de utilizadores e de dispositivos](users-add.md)
 
@@ -53,18 +53,11 @@ Se estiver a planear utilizar a autenticação baseada em certificados para perf
 
 - [Como configurar a infraestrutura de certificados para o PFX](/intune/certficates-pfx-configure).
 
-
 ## <a name="task-list-for-an-intune-setup"></a>Lista de tarefas para uma configuração do Intune
 
 ### <a name="task-1-intune-subscription"></a>Tarefa 1: Subscrição do Intune
 
-Para poder migrar para o Intune, precisa primeiro de uma subscrição do Intune.
-
-- Pode visitar [esta página](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0), que lhe dá instruções sobre como:
-
-  - Criar uma nova subscrição do Intune ligada a um novo inquilino do AAD.
-
-  - Ligar a subscrição do Intune ao iniciar sessão num inquilino do AAD existente.
+Antes de poder migrar para Intune, primeiro precisa de uma [subscrição Intune](account-sign-up.md).
 
 ### <a name="task-2-assign-intune-user-licenses"></a>Tarefa 2: Atribuir licenças de utilizador do Intune
 
@@ -74,9 +67,9 @@ Para poder migrar para o Intune, precisa primeiro de uma subscrição do Intune.
 
 ### <a name="task-3-set-your-mdm-authority-to-intune"></a>Tarefa 3: Definir a autoridade MDM para o Intune
 
-Recomendamos que você gerencie o Intune usando o [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+Recomendamos que gere o Intune utilizando o centro de administração do [Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-Defina sua autoridade de MDM para o **Intune**. A utilização de uma autoridade MDM diferente permite ao Intune transferir a gestão de MDM para consolas de gestão da Microsoft alternativas. Estes casos são pouco comuns.
+Defina a sua autoridade de MDM para **Insinton .** A utilização de uma autoridade MDM diferente permite ao Intune transferir a gestão de MDM para consolas de gestão da Microsoft alternativas. Estes casos são pouco comuns.
 
 > [!IMPORTANT]
 > Se estiver a transferir a gestão de dispositivos móveis para o Intune pela primeira vez, deverá definir a autoridade MDM para o Intune.

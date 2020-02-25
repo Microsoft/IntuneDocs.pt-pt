@@ -1,6 +1,6 @@
 ---
-title: Criar uma função personalizada no Intune
-description: Saiba como criar uma função personalizada no Microsoft Intune.
+title: Criar um papel personalizado em Intune
+description: Aprenda a criar um papel personalizado no Microsoft Intune.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 68c2dc7df123593513c14e16e2626c7426f50b01
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: bfa2758546595d1e6237d88e128958c50759eb04
+ms.sourcegitcommit: 5881979c45fc973cba382413eaa193d369b8dcf6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207422"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77569188"
 ---
-# <a name="create-a-custom-role-in-intune"></a>Criar uma função personalizada no Intune
+# <a name="create-a-custom-role-in-intune"></a>Criar um papel personalizado em Intune
 
-Você pode criar uma função personalizada do Intune que inclua todas as permissões necessárias para uma função de trabalho específica. Por exemplo, se um grupo do departamento de TI gerir aplicações, políticas e perfis de configuração, pode juntar todas essas permissões numa só função personalizada. Depois de criar uma função personalizada, você pode [atribuí](assign-role.md) -la a qualquer usuário que precise dessas permissões.
+Pode criar uma função intune personalizada que inclua quaisquer permissões necessárias para uma função de trabalho específica. Por exemplo, se um grupo do departamento de TI gerir aplicações, políticas e perfis de configuração, pode juntar todas essas permissões numa só função personalizada. Depois de criar uma função personalizada, pode [atribuí-la](assign-role.md) a todos os utilizadores que necessitem dessas permissões.
 
 Para criar, editar ou atribuir funções, a sua conta tem de ter uma das seguintes permissões no Azure AD:
 - **Administrador Global**
@@ -34,31 +34,30 @@ Para criar, editar ou atribuir funções, a sua conta tem de ter uma das seguint
 
 ## <a name="to-create-a-custom-role"></a>Para criar uma função personalizada
 
-1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **funções** > **todas as funções** > **Adicionar**.
+1. No [Microsoft Endpoint Manager Admin Center,](https://go.microsoft.com/fwlink/?linkid=2109431)escolha a **administração do Inquilino** > **Papéis** > **Todas as funções** > **Criar**.
 
-2. No painel **Adicionar Função Personalizada**, introduza um nome e uma descrição para a nova função e, em seguida, clique em **Permissões**.
+2. Na página **Basics,** introduza um nome e descrição para o novo papel e, em seguida, escolha **Next**.
 
-3. No painel **Permissões**, escolha as permissões que quer utilizar com esta função.
+3. Na página **Permissões,** escolha as permissões que pretende utilizar com esta função.
 
-4. Na folha **escopo (marcas)** , escolha as marcas para essa função. Essa função pode acessar recursos que também têm essas marcas.
+4. Na página **Scope (Tags),** escolha as etiquetas para este papel. Este papel pode aceder a recursos que também têm estas tags. Escolha **Seguinte**.
 
-5. Quando tiver terminado, selecione **OK**.
+5. Na página **Review + criar** página, quando terminar, escolha **Criar**. O novo papel é apresentado na lista nas **funções Intune - Todas as funções.**
 
-6. No painel **Adicionar Função Personalizada**, clique em **Criar**. A nova função é exibida na lista na folha **funções do Intune – todas as funções** .
+## <a name="copy-a-role"></a>Copiar um papel
 
+Também pode copiar um papel existente.
 
-## <a name="copy-a-role"></a>Copiar uma função
+1. No [Microsoft Endpoint Manager Admin Center,](https://go.microsoft.com/fwlink/?linkid=2109431)escolha a **administração do Inquilino** > **Papéis** > **Todas as funções** > selecione a caixa de verificação para um papel na lista > **Duplicate**.
 
-Você também pode copiar uma função existente.
+2. Na página **Basics,** insira um nome. Certifique-se de usar um nome único.
 
-1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **funções** > **todas as funções** > Selecionar uma função na lista > **duplicar**.
+3. Todas as permissões e etiquetas de âmbito do papel original já serão selecionadas. Posteriormente, pode alterar o **nome**, **descrição,** **permissões**e **âmbito**da função duplicada .
 
-2. Em **função duplicada**, insira um nome. Certifique-se de usar um nome exclusivo.
-
-3. Todas as permissões e marcas de escopo da função original já serão selecionadas. Posteriormente, você pode alterar o **nome**, a **Descrição**, **as permissões**e o **escopo (marcas)** da função duplicada.
-
-4. Selecione **Criar**. 
+4. Depois de ter feito todas as alterações que deseja, escolha **Next** para chegar à página **Review + criar.** Selecione **Criar**. 
 
 ## <a name="next-steps"></a>Próximos passos
-- [Atribuir uma função a um usuário](assign-role.md)
-- [Saiba mais sobre o controle de acesso baseado em função no Intune](role-based-access-control.md)
+- [Atribuir uma função a um utilizador](assign-role.md)
+- [Saiba mais sobre o controlo de acesso baseado em papéis em Intune](role-based-access-control.md)
+
+

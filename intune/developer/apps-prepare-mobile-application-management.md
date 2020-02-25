@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 842af9c8fffcb3755c81260739f4949768e75bac
-ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
+ms.openlocfilehash: e2075ed8328e6a33732e03fbf521d32b2edd6a35
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76912680"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77575833"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Preparar aplicações de linha de negócios para as políticas de proteção de aplicações
 
@@ -32,7 +32,7 @@ Pode utilizar a Ferramenta de Encapsulamento de Aplicações do Intune ou o SDK 
 
 A Ferramenta de Encapsulamento de Aplicações é utilizada principalmente para aplicações **internas** de linha de negócio (LOB). A ferramenta é uma aplicação de linha de comandos que cria um wrapper em torno da aplicação, que permite que a aplicação seja, então, gerida por uma política de proteção de aplicações do Intune. Ao proteger uma aplicação fornecida por um fabricante independente de software (ISV), é importante esclarecer se o ISV continuará a suportar a aplicação encapsulada.
 
-Não precisa do código de origem para utilizar a ferramenta, mas precisa das credenciais de início de sessão. Para obter mais informações sobre as credenciais de início de sessão, consulte o [Blogue do Intune](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/). Para obter a documentação da ferramenta de disposição do aplicativo, consulte [ferramenta de disposição do aplicativo do Android](app-wrapper-prepare-android.md) e ferramenta de disposição do [aplicativo IOS](app-wrapper-prepare-ios.md).
+Não precisa do código de origem para utilizar a ferramenta, mas precisa das credenciais de início de sessão. Para obter mais informações sobre as credenciais de início de sessão, consulte o [Blogue do Intune](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/). Para obter a documentação da ferramenta de embrulho de aplicativos, consulte a ferramenta de embrulho de [aplicativos Android](app-wrapper-prepare-android.md) e a ferramenta de embrulho de [aplicações iOS.](app-wrapper-prepare-ios.md)
 
 A Ferramenta de Encapsulamento de Aplicações **não** suporta aplicações da Apple App Store ou da Google Play Store. Também não suporta determinadas funcionalidades que requerem integração do programador (consulte a tabela de comparação de funcionalidades seguinte).
 
@@ -74,9 +74,9 @@ Para mais informações sobre o SDK, consulte [Descrição Geral](app-sdk.md). P
 |**iOS**|Sim – utilizar os [Enlaces Xamarin do SDK da Aplicação Intune](app-sdk-xamarin.md).|Não|
 |**Android**| Sim – utilizar os [Enlaces Xamarin do SDK da Aplicação Intune](app-sdk-xamarin.md).|Não|
 
-## <a name="not-using-an-app-development-platform-listed-above"></a>Não está usando uma plataforma de desenvolvimento de aplicativo listada acima?
+## <a name="not-using-an-app-development-platform-listed-above"></a>Não está a usar uma plataforma de desenvolvimento de aplicações listada acima?
 
-A equipe de desenvolvimento do SDK do Intune testa e mantém ativamente o suporte para aplicativos criados com as plataformas nativas do Android, iOS (obj-C, Swift), Xamarin, Xamarin. Forms e Cordova. Embora alguns clientes tenham tido êxito com a integração do SDK do Intune com outras plataformas, como reagir nativo e NativeScript, não fornecemos orientações explícitas ou plug-ins para desenvolvedores de aplicativos usando algo diferente de nossas plataformas com suporte. 
+A equipa de desenvolvimento intune SDK testa e mantém ativamente o suporte para aplicações construídas com as plataformas nativas do Android, iOS (Obj-C, Swift), Xamarin, Xamarin.Forms e Cordova. Embora alguns clientes tenham tido sucesso com a integração do Intune SDK com outras plataformas, como o React Native e o NativeScript, não fornecemos orientação explícita ou plugins para desenvolvedores de aplicações usando qualquer outra coisa que não as nossas plataformas suportadas. 
 
 ## <a name="feature-comparison"></a>Comparação de funcionalidades
 
@@ -89,36 +89,36 @@ Esta tabela lista as definições que estão ativadas se uma aplicação utiliza
 |Permitir que a aplicação transfira dados para outras aplicações|X|X|
 |Permitir que a aplicação receba dados de outras aplicações|X|X|
 |Restringir cortar, copiar e colar com outras aplicações|X|X|
-|Especifique o número de caracteres que podem ser recortados ou copiados de um aplicativo gerenciado|X|X|
+|Especifique o número de caracteres que podem ser cortados ou copiados de uma aplicação gerida|X|X|
 |Exigir PIN simples para acesso|X|X|
 |Especificar o número de tentativas antes da redefinição do PIN|X|X|
 |Permitir impressões digitais em vez do PIN|X|X|
 |Permitir o reconhecimento facial em vez de PIN (apenas iOS)|X|X|
 |Exigir credenciais da empresa para obter acesso|X|X|
-|Definir uma expiração de PIN|X|X|
+|Definir uma expiração PIN|X|X|
 |Bloquear a execução de aplicações geridas em dispositivos com jailbreak ou root|X|X|
 |Encriptar dados da aplicação|X|X|
 |Verificar novamente os requisitos de acesso após um número de minutos especificado|X|X|
 |Especificar o período de tolerância offline|X|X|
 |Bloquear captura de ecrã (apenas Android)|X|X|
 |Suporte para MAM sem a inscrição de dispositivos|X|X|
-|Apagamento completo de dados de aplicativo|X|X|
-|Limpeza seletiva do trabalho e dados escolares em cenários multi-identidade <br><br>**Nota:** no iOS, se o perfil de gestão for removido, a aplicação também é removida.|X||
+|Limpeza completa dos dados da aplicação|X|X|
+|Limpeza seletiva do trabalho e dados escolares em cenários multi-identidade <br><br>**Nota:** Para iOS/iPadOS, quando o perfil de gestão é removido, a aplicação também é removida.|X||
 |Impedir "Guardar como"|X||
-|Configuração de aplicativo de destino (ou configuração de aplicativo por meio do "canal de MAM")|X|X|
+|Configuração de aplicação direcionada (ou config de aplicação através do "canal MAM")|X|X|
 |Suporte para Identidades Múltiplas|X||
 |Estilo Personalizável |X|||
 |Ligações de VPN de aplicação a pedido com o mVPN da Citrix|X|X| 
 |Desativar a sincronização de contactos|X|X|
 |Desativar a impressão|X|X|
 |Exigir versão mínima da aplicação|X|X|
-|Exigir sistema operacional mínimo|X|X|
+|Exigir o sistema operativo mínimo|X|X|
 |Exigir versão de patch de segurança mínima para Android (apenas Android)|X|X|
 |Exigir SDK do Intune mínimo para iOS (apenas iOS)|X|X|
-|Atestado de dispositivo SafetyNet (somente Android)|X|X|
-|Verificação de ameaças em aplicativos (somente Android)|X|X|
-|Exigir nível de risco de dispositivo de dispositivo de defesa de ameaça móvel maxmimum|X||
-|Configurar conteúdo de notificação do aplicativo para contas da organização|X|X|
+|Atestação de dispositivos SafetyNet (apenas Android)|X|X|
+|Scan de ameaça em apps (apenas Android)|X|X|
+|Exigir o nível máximo de risco do dispositivo de dispositivo de defesa de ameaça móvel|X||
+|Configurar conteúdo de notificação de aplicativos para contas de organização|X|X|
 |Exigir a utilização de teclados aprovados (apenas Android)|X|X|
 |Exigir política de proteção de aplicativos (Acesso Condicional)|X||
 |Exigir aplicação de cliente aprovada (Acesso Condicional)|X||

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 62031fd42a0067b206d6804fd0c3939db3fd8e3b
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.openlocfilehash: 63fa9f461fc9884d8c21e40cb4b5e3831f3b4b03
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77514120"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576536"
 ---
 # <a name="use-certificates-for-authentication-in-microsoft-intune"></a>Utilize certificados para autenticação no Microsoft Intune
 
@@ -38,7 +38,7 @@ Utilize certificados com Intune para autenticar os seus utilizadores a aplicaç�
 
 Para implementar estes certificados, irá criar e atribuir perfis de certificado aos dispositivos.
 
-Cada perfil de certificado individual que cria suporta uma única plataforma. Por exemplo, se utilizar certificados PKCS, irá criar o perfil de certificado PKCS para Android e um perfil de certificado PKCS separado para iOS. Se também utilizar certificados SCEP para essas duas plataformas, irá criar um perfil de certificado SCEP para Android e outro para iOS.
+Cada perfil de certificado individual que cria suporta uma única plataforma. Por exemplo, se utilizar certificados PKCS, irá criar o perfil de certificado PKCS para Android e um perfil de certificado PKCS separado para iOS/iPadOS. Se também utilizar certificados SCEP para essas duas plataformas, irá criar um perfil de certificado SCEP para Android e outro para iOS/iPadOS.
 
 ### <a name="general-considerations-when-you-use-a-microsoft-certification-authority"></a>Considerações gerais quando se utiliza uma Autoridade de Certificação da Microsoft
 

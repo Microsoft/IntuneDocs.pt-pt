@@ -1,5 +1,5 @@
 ---
-title: Usar o RBAC (controle de acesso baseado em função) e marcas de escopo para distribuí-lo no Intune | Microsoft Docs
+title: Utilize o controlo de acesso baseado em funções (RBAC) e as etiquetas de âmbito para TI distribuídos no Intune ; Microsoft Docs
 description: Utilize etiquetas de âmbito para filtrar perfis de configuração para funções específicas.
 keywords: ''
 author: ErikjeMS
@@ -15,102 +15,90 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e1f81d26227bb206aa55ca495f4a4ee5e8ae9907
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: dfb9ec9d28b00e454884bbf0bf296cd72cba4b6f
+ms.sourcegitcommit: 5881979c45fc973cba382413eaa193d369b8dcf6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75548117"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77569218"
 ---
-# <a name="use-role-based-access-control-rbac-and-scope-tags-for-distributed-it"></a>Usar o controle de acesso baseado em função (RBAC) e marcas de escopo para distribuição de ti
+# <a name="use-role-based-access-control-rbac-and-scope-tags-for-distributed-it"></a>Utilizar o controlo de acesso baseado em funções (RBAC) e etiquetas de âmbito para TI distribuídos
 
-Você pode usar o controle de acesso baseado em função e as marcas de escopo para garantir que os administradores corretos tenham o acesso e a visibilidade certos para os objetos do Intune corretos. As funções determinam quais administradores de acesso têm para quais objetos. As marcas de escopo determinam quais objetos os administradores podem ver.
+Pode utilizar etiquetas de controlo de acesso e de alcance baseadas em papéis para se certificar de que os administradores certos têm o acesso e visibilidade certos aos objetos Intune certos. As funções determinam quais os administradores de acesso a que objetos. As etiquetas de âmbito determinam quais os objetos que os administradores podem ver.
 
-Por exemplo, digamos que um administrador regional do Office de Seattle tenha a função gerente de política e perfil. Você deseja que esse administrador Veja e gerencie apenas os perfis e as políticas que se aplicam somente a dispositivos de Seattle. Para configurar esse acesso, você deve:
+Por exemplo, digamos que um administrador regional de Seattle tem o papel de Policy and Profile Manager. Quer que este administrador veja e gere apenas os perfis e políticas que se aplicam apenas aos dispositivos de Seattle. Para configurar este acesso, seria:
 
-1. Crie uma marca de escopo chamada Seattle.
-2. Crie uma atribuição de função para a função de Gerenciador de políticas e perfis com: 
-    - Membros (grupos) = um grupo de segurança chamado Seattle IT admins. Todos os administradores deste grupo terão permissão para gerenciar políticas e perfis para usuários/dispositivos no escopo (grupos).
-    - Escopo (grupos) = um grupo de segurança chamado usuários de Seattle. Todos os usuários/dispositivos nesse grupo podem ter seus perfis e políticas gerenciados pelos administradores nos Membros (grupos). 
-    - Scope (Tags) = Seattle. Os administradores no membro (grupos) podem ver objetos do Intune que também têm a marca de escopo Seattle.
-3. Adicione a marca de escopo Seattle a políticas e perfis aos quais você deseja que os administradores em Membros (grupos) tenham acesso.
-4. Adicione a marca de escopo Seattle aos dispositivos que você deseja que fiquem visíveis para os administradores nos Membros (grupos). 
+1. Crie uma etiqueta chamada Seattle.
+2. Criar uma atribuição de funções para o papel de Gestor de Política e Perfil com: 
+    - Membros (Grupos) = Um grupo de segurança chamado Seattle IT administradores. Todos os administradores deste grupo terão permissão para gerir políticas e perfis para utilizadores/dispositivos no Âmbito (Grupos).
+    - Âmbito (Grupos) = Um grupo de segurança chamado utilizadores de Seattle. Todos os utilizadores/dispositivos deste grupo podem ter os seus perfis e políticas geridos pelos administradores dos Membros (Grupos). 
+    - Âmbito (Tags) = Seattle. Os administradores dos membros (Grupos) podem ver objetos Intune que também têm a etiqueta de âmbito de Seattle.
+3. Adicione a etiqueta de âmbito de Seattle às políticas e perfis a que pretende que os administradores dos Deputados (Grupos) tenham acesso.
+4. Adicione a etiqueta de âmbito de Seattle aos dispositivos que pretende visíveis para administradores nos Membros (Grupos). 
 
-## <a name="default-scope-tag"></a>Marca de escopo padrão
-A marca de escopo padrão é automaticamente adicionada a todos os objetos não marcados que dão suporte a marcas de escopo.
+## <a name="default-scope-tag"></a>Etiqueta de âmbito padrão
+A etiqueta de âmbito predefinido é adicionada automaticamente a todos os objetos não marcados que suportam etiquetas de âmbito.
 
-O recurso de marca de escopo padrão é semelhante ao recurso de escopos de segurança no Microsoft Endpoint Configuration Manager. 
+A função de etiqueta de âmbito padrão é semelhante à funcionalidade de âmbitos de segurança no Microsoft Endpoint Configuration Manager. 
 
 ## <a name="to-create-a-scope-tag"></a>Para criar uma etiqueta de âmbito
 
-1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **administração de locatário** > **funções** > **escopo (marcas)**  > **criar**.
-
-    ![Captura de tela da criação de uma marca de escopo.](./media/scope-tags/create-scope-tag.png)
-
-2. Forneça um **nome** e uma **Descrição**opcional.
-3. Se você quiser todos os dispositivos em grupos específicos, escolha **atribuir marca de escopo a todos os dispositivos nos grupos selecionados**.
-    1. Na página **Selecionar grupos a serem incluídos** , escolha os grupos que contêm os dispositivos aos quais você deseja atribuir essa marca de escopo.
-    2. Clique em **Selecionar**.
-4. Selecione **Criar**.
+1. No [Microsoft Endpoint Manager Admin Center,](https://go.microsoft.com/fwlink/?linkid=2109431)escolha a **administração do Inquilino** > **Funções** > **Scope (Tags)** > **Criar**.
+2. Na página **Basics,** forneça um **Nome** e **uma Descrição**opcional. Escolha **Seguinte**.
+3. Na página **de Atribuição,** escolha os grupos que contêm os dispositivos que pretende atribuir esta etiqueta de âmbito. Escolha **Seguinte**.
+4. Na **página Review + criar,** escolha **Criar**.
 
 ## <a name="to-assign-a-scope-tag-to-a-role"></a>Para atribuir uma etiqueta de âmbito a uma função
 
-1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **administração de locatário** > **funções** > **todas as funções** > escolha uma função > **atribuições** > **atribuir**.
-2. Forneça um **nome de atribuição** e uma **Descrição**.
-3. Escolha **Membros (grupos)**  > **Adicionar** > escolha os grupos que você deseja como parte dessa atribuição > **selecione** > **OK**. Os usuários nesse grupo terão permissões para gerenciar usuários/dispositivos no escopo (grupos).
+1. No [Microsoft Endpoint Manager Admin Center,](https://go.microsoft.com/fwlink/?linkid=2109431)escolha a **administração do Inquilino** > **Papéis** > **Todas as funções** > escolha um papel > **Atribuições** > **Atribuição**.
+2. Na página **Basics,** forneça um nome de **atribuição** e **descrição.** Escolha **Seguinte**.
+3. Na página dos **Grupos De Administração,** escolha **grupos Select para incluir**, e selecione os grupos que deseja como parte desta atribuição. Os utilizadores deste grupo terão permissões para gerir utilizadores/dispositivos no Âmbito (Grupos). Escolha **Seguinte**.
 
-    ![Captura de tela de selecionar grupos de membros.](./media/scope-tags/select-member-groups.png)
+    ![Screenshot de grupos membros selecionados.](./media/scope-tags/select-member-groups.png)
 
-4. Se você quiser gerenciar usuários/dispositivos em um conjunto específico de grupos, escolha **escopo (grupos)**  > **grupos selecionados** > **selecione grupos para incluir** > escolha os grupos > **selecione** > **OK**. Todos os usuários/dispositivos nesse grupo serão gerenciados pelos administradores nos Membros (grupo).
+4. Na página dos **Grupos de Âmbito,** selecione uma das seguintes opções para **Atribuir**
+    - **Grupos selecionados**: selecione os grupos que contêm os utilizadores/deivces que pretende gerir. Todos os utilizadores/dispositivos dos grupos selecionados serão geridos pelos utilizadores nos Grupos DeAdministração.
+    - **Todos os utilizadores**: Todos os utilizadores podem ser geridos pelos utilizadores nos Grupos De Administração.
+    - **Todos os dispositivos**: Todos os dispositivos podem ser geridos pelos utilizadores nos Grupos De Administração.
+    - **Todos os utilizadores e todos os dispositivos**: Todos os utilizadores e dispositivos podem ser geridos pelos utilizadores nos Grupos Admin.
 
-    ![Captura de tela de selecionar grupos de escopo.](./media/scope-tags/select-scope-groups.png)
+5. Escolha **Seguinte**
+6. Na página **de tags Scope,** selecione as etiquetas que pretende adicionar a esta função. Os utilizadores dos Grupos Admin terão acesso a objetos Intune que também tenham a mesma etiqueta de âmbito.
+7. Escolha **O Próximo** para ir à página Review + **criar** e, em seguida, escolher **Criar**.
 
-    Como alternativa, você pode escolher **todos os dispositivos**, **todos os usuários**ou todos os **usuários & todos os dispositivos**.
+## <a name="assign-scope-tags-to-other-objects"></a>Atribuir etiquetas de âmbito a outros objetos
 
-    ![Captura de tela de outras opções para selecionar grupos de escopo.](./media/scope-tags/scope-group-other-options.png)
-    
-5. Escolha **escopo (marcas)**  > **Adicionar** > escolha as marcas que você deseja adicionar a essa função > **selecione** > **OK**. Os usuários em Membros (grupos) terão acesso aos objetos do Intune que também têm a mesma marca de escopo.
+Para objetos que suportam etiquetas de mira, as etiquetas de âmbito geralmente aparecem em **Propriedades**. Por exemplo, para atribuir uma etiqueta de âmbito a um perfil de configuração, siga estes passos:
 
-    ![Captura de tela de selecionar marcas de escopo.](./media/scope-tags/select-scope-tags.png)
+1. No [Microsoft Endpoint Manager Admin Center,](https://go.microsoft.com/fwlink/?linkid=2109431)escolha **Dispositivos** > Perfis de **Configuração** > escolha um perfil.
 
-6. Escolha **OK**. 
+2. Escolha **Propriedades** > **Scope (Tags)** > **Editar** > **Selecione etiquetas** de âmbito > escolha as etiquetas que pretende adicionar ao perfil.
+4. Escolha **Selecione** > **Rever + guardar**.
 
-## <a name="assign-scope-tags-to-other-objects"></a>Atribuir marcas de escopo a outros objetos
+## <a name="scope-tag-details"></a>Detalhes da etiqueta de âmbito
+Ao trabalhar com etiquetas de âmbito, lembre-se destes detalhes: 
 
-Para objetos que dão suporte a marcas de escopo, marcas de escopo geralmente aparecem em **Propriedades**. Por exemplo, para atribuir uma marca de escopo a um perfil de configuração, siga estas etapas:
-
-1. No [centro de administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431), escolha **dispositivos** > **perfis de configuração** > escolha um perfil.
-
-2. Escolha **propriedades** > **escopo (marcas)**  > **Adicionar**.
-
-    ![Captura de tela de adicionar marcas de escopo.](./media/scope-tags/add-scope-tags.png)
-
-3. Em **selecionar marcas**, escolha as marcas que você deseja adicionar ao perfil.
-4. Escolha **selecionar** > **OK** > **salvar**.
-
-
-## <a name="scope-tag-details"></a>Detalhes da marca de escopo
-Ao trabalhar com marcas de escopo, lembre-se destes detalhes: 
-
-- Você pode atribuir marcas de escopo a um tipo de objeto do Intune se o locatário puder ter várias versões desse objeto (como atribuições de função ou aplicativos).
-  Os seguintes objetos do Intune são exceções a essa regra e atualmente não dão suporte a marcas de escopo:
-    - Perfis do Windows ESP
-    - Categorias de dispositivo
-    - Restrições de registro
-    - Identificadores de dispositivo Corp
+- Pode atribuir etiquetas de âmbito a um tipo de objeto Intune se o inquilino puder ter várias versões desse objeto (tais como atribuições de papéis ou apps).
+  Os seguintes objetos Intune são exceções a esta regra e não suportam atualmente etiquetas de âmbito:
+    - Perfis ESP do Windows
+    - Categorias de Dispositivos
+    - Restrições de Inscrição
+    - Identificadores de dispositivos corp
     - Dispositivos de piloto automático
-    - Locais de conformidade do dispositivo
-    - Dispositivos JAMF
-- Os aplicativos VPP e os livros eletrônicos associados ao token VPP herdam as marcas de escopo atribuídas ao token VPP associado.
-- Os dispositivos de Programa de registro de dispositivos (DEP) e os perfis de DEP associados ao token DEP herdam as marcas de escopo atribuídas ao token DEP associado.
-- Quando um administrador cria um objeto no Intune, todas as marcas de escopo atribuídas a esse administrador serão automaticamente atribuídas ao novo objeto.
-- O RBAC do Intune não se aplica a Azure Active Directory funções. Portanto, as funções Administradores de serviço do Intune e administradores globais têm acesso de administrador completo ao Intune, independentemente das marcas de escopo que têm.
-- Se uma atribuição de função não tiver nenhuma marca de escopo, o administrador de ti poderá ver todos os objetos com base nas permissões de administradores de ti. Os administradores que não têm marcas de escopo essencialmente têm todas as marcas de escopo.
-- Você só pode atribuir uma marca de escopo que você tem em suas atribuições de função.
-- Você só pode direcionar grupos listados no escopo (grupos) de sua atribuição de função.
-- Se você tiver uma marca de escopo atribuída à sua função, não poderá excluir todas as marcas de escopo em um objeto do Intune. Pelo menos uma marca de escopo é necessária.
+    - Localizações de conformidade do dispositivo
+    - Dispositivos Jamf
+- As aplicações vPP e os ebooks associados ao símbolo VPP herdam as etiquetas de âmbito atribuídas ao token VPP associado.
+- Os dispositivos do Programa de Inscrição de Dispositivos (DEP) e os perfis DEP associados ao token DEP herdam as etiquetas de âmbito atribuídas ao símbolo de DEP associado.
+- Quando um administrador criar um objeto em Intune, todas as etiquetas de âmbito atribuídas a esse administrador serão automaticamente atribuídas ao novo objeto.
+- Intune RBAC não se aplica às funções de Diretório Ativo Azure. Assim, as funções intune Service Admins e Global Admins têm acesso total à Intune, independentemente do alcance que tenham.
+- Se uma atribuição de funções não tiver etiqueta de âmbito, essa administração de TI pode ver todos os objetos com base nas permissões de administração de TI. Os administradores que não têm etiquetas de âmbito têm essencialmente todas as etiquetas de âmbito.
+- Só pode atribuir uma etiqueta de âmbito que tem nas suas atribuições de funções.
+- Só pode visar grupos listados no Scope (Grupos) da sua atribuição de funções.
+- Se tiver uma etiqueta de âmbito atribuída ao seu papel, não pode eliminar todas as etiquetas de âmbito num objeto Intune. Pelo menos uma etiqueta de mira é necessária.
 
 ## <a name="next-steps"></a>Próximos passos
 
-Saiba como as marcas de escopo se comportam quando há [várias atribuições de função](role-based-access-control.md#multiple-role-assignments).
+Saiba como as etiquetas de alcance se comportam quando existem [várias atribuições de papéis.](role-based-access-control.md#multiple-role-assignments)
 Efetue a gestão das suas [funções](role-based-access-control.md) e [perfis](../configuration/device-profile-assign.md).
+
+

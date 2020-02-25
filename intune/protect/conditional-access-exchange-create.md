@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: acc8241bf5b9ea05fcb23772586d459ca9e5e143
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.openlocfilehash: 4962b4c75460b129f9df7729b5a34485d8ee0760
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77515106"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576067"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Criar uma política de acesso condicional para o Exchange on-pre-preser e legacy Exchange Online Dedicado
 
@@ -63,7 +63,7 @@ Antes de configurar o Acesso Condicional, verifique se existem as seguintes conf
 ### <a name="support-for-mobile-devices"></a>Suporte para dispositivos móveis
 
 - Windows Phone 8.1 e posterior
-- Aplicação de e-mail nativa no iOS.
+- Aplicativo de e-mail nativo no iOS/iPadOS.
 - Clientes de correio EAS, como o Gmail para Android 4 ou posterior.
 - Clientes de correio EAS em **dispositivos com perfil de trabalho do Android:** apenas as aplicações **Gmail** e **Nine Work para Android Enterprise** são suportadas no **perfil de trabalho** em dispositivos com perfil de trabalho do Android. Para o Acesso Condicional ao trabalho com perfis de trabalho Android, você deve implementar um perfil de e-mail para a aplicação Gmail ou Nine Work para Android Enterprise, e também implementar essas aplicações como uma instalação necessária.
 

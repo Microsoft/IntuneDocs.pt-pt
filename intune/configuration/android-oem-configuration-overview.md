@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9cc568cbadb683f632ffd2365ab7023cd796f231
-ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
+ms.openlocfilehash: 282464ebb616f5c8dec928b93f4852603bb20e10
+ms.sourcegitcommit: 5881979c45fc973cba382413eaa193d369b8dcf6
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76886702"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77569443"
 ---
 # <a name="use-and-manage-android-enterprise-devices-with-oemconfig-in-microsoft-intune"></a>Utilizar e gerir dispositivos Android Enterprise com OEMConfig no Microsoft Intune
 
@@ -34,7 +34,7 @@ Esta funcionalidade aplica-se a:
 
 Este artigo descreve o OEMConfig, lista os pré-requisitos, mostra como criar um perfil de configuração, e lista as aplicações oEMConfig suportadas em Intune.
 
-## <a name="overview"></a>Overview
+## <a name="overview"></a>Descrição geral
 
 As políticas da OEMConfig são um tipo especial de política de configuração do dispositivo semelhante à política de configuração de [aplicações.](../apps/app-configuration-policies-overview.md) OEMConfig é um padrão definido pela Google que utiliza a configuração de aplicações no Android para enviar configurações de dispositivos para aplicações escritas por OEMs (fabricantes de equipamentos originais). Esta norma permite que o OEMs e os EMMs (gestão da mobilidade empresarial) construam e apoiem funcionalidades específicas do OEM de forma padronizada. [Saiba mais sobre a OEMConfig.](https://blog.google/products/android-enterprise/oemconfig-supports-enterprise-device-features/)
 
@@ -79,7 +79,7 @@ Certifique-se de que o dispositivo suporta o OEMConfig, a aplicação OEMConfig 
 ## <a name="create-an-oemconfig-profile"></a>Criar um perfil OEMConfig
 
 1. Inscreva-se no centro de administração do [Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
-2. Selecione **dispositivos** > **perfis de configuração** > **Criar perfil**.
+2. Selecione **Dispositivos** > Perfis de **Configuração** > **Criar perfil**.
 3. Introduza as seguintes propriedades:
 
     - **Plataforma**: Selecione **empresa Android**.
@@ -161,7 +161,7 @@ Em comparação com as aplicações padrão, as aplicações OEMConfig expandem 
 | Spectralink - Dispositivo | com.spectralink.slnkdevicesettings  |  |
 | Spectralink - Exploração Madeireira | com.spectralink.slnklogger |  |
 | Spectralink - VQO | com.spectralink.slnkvqo |  |
-| HMD Global | com.hmdglobal.app.oemconfig.ironman |  |
+| Seuic | com.seuic.seuicoemconfig | |
 
 -----------------
 

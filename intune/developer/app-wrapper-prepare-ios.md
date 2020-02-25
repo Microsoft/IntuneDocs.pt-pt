@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 62ee300b7357132e6f9e18ef4528110dfc988dc3
-ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
+ms.openlocfilehash: 11e757d22274a0e1cc327d9037a74e4ffac024dd
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75653670"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576341"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparar as aplicações iOS para as políticas de proteção de aplicações com a Ferramenta de Encapsulamento de Aplicações do Intune
 
@@ -44,7 +44,7 @@ Antes de executar a Ferramenta de Encapsulamento de Aplicações, terá de cumpr
 
   * O ficheiro de aplicação de entrada tem de ter a extensão **.ipa** ou **.app**.
 
-  * O aplicativo de entrada deve ser compilado para o iOS 11 ou posterior.
+  * A aplicação de entrada deve ser compilada para iOS 11 ou posterior.
 
   * A aplicação de entrada não pode ser encriptada.
 
@@ -99,7 +99,7 @@ Para saber mais sobre a distribuição de aplicações iOS internamente para os 
 
 4. Clique em **Certificados, IDs e Perfis**.
 
-   ![Portal do desenvolvedor da Apple – certificados, IDs & perfis](./media/app-wrapper-prepare-ios/iOS-signing-cert-1.png)
+   ![Portal apple developer - Certificados, IDs e Perfis](./media/app-wrapper-prepare-ios/iOS-signing-cert-1.png)
 
 5. Clique no ![sinal de adição do portal de Programador da Apple](./media/app-wrapper-prepare-ios/iOS-signing-cert-2.png) no canto superior direito para adicionar um certificado iOS.
 
@@ -124,7 +124,7 @@ Para saber mais sobre a distribuição de aplicações iOS internamente para os 
 
 11. Siga as instruções do site de programador da Apple acima sobre como criar um ficheiro CSR. Guarde o ficheiro CSR no seu computador macOS.
 
-    ![Insira informações para o certificado que você está solicitando](./media/app-wrapper-prepare-ios/iOS-signing-cert-6.png)
+    ![Insira informações para o certificado que está a solicitar](./media/app-wrapper-prepare-ios/iOS-signing-cert-6.png)
 
 12. Regresse ao site de programador da Apple. Clique em **Continuar**. Em seguida, carregue o ficheiro CSR.
 
@@ -140,7 +140,7 @@ Para saber mais sobre a distribuição de aplicações iOS internamente para os 
 
 16. É apresentada uma janela informativa. Desloque para baixo e procure a etiqueta **Impressões Digitais**. Copie a cadeia **SHA1** (desfocada) a utilizar como argumento "-c" para a Ferramenta de Encapsulamento de Aplicações.
 
-    ![informações do iPhone – cadeia de caracteres SHA1 de impressões digitais](./media/app-wrapper-prepare-ios/iOS-signing-cert-9.png)
+    ![informações sobre iPhone - Fio DE impressões digitais SHA1](./media/app-wrapper-prepare-ios/iOS-signing-cert-9.png)
 
 ### <a name="steps-to-create-an-in-house-distribution-provisioning-profile"></a>Passos para criar um perfil de Aprovisionamento de Distribuição Interna
 
@@ -168,7 +168,7 @@ Para saber mais sobre a distribuição de aplicações iOS internamente para os 
 
 3. Selecione **Concordo** para aceitar o EULA, essa ação monta o pacote no seu computador.
 
-## <a name="run-the-app-wrapping-tool"></a>executar a Ferramenta de Encapsulamento de Aplicações
+## <a name="run-the-app-wrapping-tool"></a>Executar a Ferramenta de Encapsulamento de Aplicações
 
 ### <a name="use-terminal"></a>Utilizar o terminal
 
@@ -198,15 +198,15 @@ Pode utilizar os seguintes parâmetros de linha de comandos na Ferramenta de Enc
 |**-p**|`<Path of your provisioning profile for iOS apps>`|
 |**-c**|`<SHA1 hash of the signing certificate>`|
 |**-h**| Mostra informações de utilização detalhadas sobre propriedades de linha de comandos disponíveis para a Ferramenta de Encapsulamento de Aplicações. |
-|**-AA**|(Opcional) `<Authority URI of the input app if the app uses the Azure Active Directory Authentication Library>` ou seja `login.windows.net/common` |
-|**-AC**|(Opcional) `<Client ID of the input app if the app uses the Azure Active Directory Authentication Library>` é o GUID no campo ID do cliente é da listagem do seu aplicativo na folha de registro do aplicativo. |
-|**-ar**|(Opcional) `<Redirect/Reply URI of the input app if the app uses the Azure Active Directory Authentication Library>` é o URI de redirecionamento configurado no registro do aplicativo. Normalmente, seria o protocolo de URL do aplicativo que o aplicativo Microsoft Authenticator retornaria após a autenticação orientada. |
+|**-aa**|(Opcional) `<Authority URI of the input app if the app uses the Azure Active Directory Authentication Library>` ou assim `login.windows.net/common` |
+|**-ac**|(Opcional) `<Client ID of the input app if the app uses the Azure Active Directory Authentication Library>` Este é o guia no campo id do cliente é da listagem da sua aplicação na lâmina de registo de aplicações. |
+|**-ar**|(Opcional) `<Redirect/Reply URI of the input app if the app uses the Azure Active Directory Authentication Library>` Este é o Uri Redirect configurado no registo da sua aplicação. Normalmente seria o protocolo URL da aplicação a que a aplicação Microsoft Authenticator voltaria após a autenticação intermediada. |
 |**-v**| (Opcional) Dá saída de mensagens verbosas para a consola. Recomenda-se a utilização deste sinalizador para depurar quaisquer erros. |
 |**-e**| (Opcional) Utilize este sinalizador para fazer com que a Ferramenta de Encapsulamento de Aplicações remova as elegibilidades em falta à medida que processa a aplicação. Veja [Definição de elegibilidade da aplicação](#setting-app-entitlements) para obter mais detalhes.|
 |**-xe**| (Opcional) Imprime informações acerca das extensões iOS na aplicação e que elegibilidades são necessárias para as utilizar. Veja [Definição de elegibilidade da aplicação](#setting-app-entitlements) para obter mais detalhes. |
 |**-x**| (Opcional) `<An array of paths to extension provisioning profiles>`. Utilize esta opção se a sua aplicação necessitar de perfis de aprovisionamento de extensões.|
 |**-b**|(Opcional) Utilize -b sem um argumento se quiser que a aplicação de saída encapsulada tenha a mesma versão de pacote que a aplicação de entrada (não recomendado). <br/><br/> Utilize `-b <custom bundle version>` se quiser que a aplicação encapsulada tenha uma CFBundleVersion personalizada. Se optar por especificar uma CFBundleVersion personalizada, é recomendado incrementar a CFBundleVersion da aplicação nativa pelo componente menos significativo, como 1.0.0 -> 1.0.1. |
-|**-Citrix**|Adicional Inclua o SDK do Citrix XenMobile app (variante somente de rede). Você deve ter o [Citrix MDX Toolkit](https://docs.citrix.com/en-us/mdx-toolkit/about-mdx-toolkit.html) instalado para usar essa opção. |
+|**-citrix**|(Opcional) Inclua o Citrix XenMobile App SDK (variante apenas de rede). Tem de ter instalado o Kit de [Ferramentas Citrix MDX](https://docs.citrix.com/en-us/mdx-toolkit/about-mdx-toolkit.html) para utilizar esta opção. |
 |**-f**|(Opcional) `<Path to a plist file specifying arguments.>` Utilize este sinalizador à frente do ficheiro [plist](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html) se optar por utilizar o modelo plist para especificar o resto das propriedades do IntuneMAMPackager, como -i, -o e -p. Consulte Utilizar uma plist para argumentos de entrada. |
 
 ### <a name="use-a-plist-to-input-arguments"></a>Utilize uma plist para argumentos de entrada
@@ -221,14 +221,14 @@ Na pasta IntuneMAMPackager/Contents/MacO, abra `Parameters.plist` (um modelo pli
 | Caminho de Pacote de Aplicação de Saída |Cadeia|vazio| Mesmo que -o|
 | Caminho de Perfil de Aprovisionamento |Cadeia|vazio| Mesmo que -p|
 | Hash de Certificado SHA-1 |Cadeia|vazio| Mesmo que -c|
-| Autoridade ADAL |Cadeia|vazio| Mesmo que-AA|
-| ID do cliente ADAL |Cadeia|vazio| Mesmo que-AC|
-| URI de resposta da ADAL |Cadeia|vazio| Mesmo que o ar|
+| Autoridade ADAL |Cadeia|vazio| O mesmo que -aa|
+| Id do cliente ADAL |Cadeia|vazio| O mesmo que -ac|
+| Resposta ADAL URI |Cadeia|vazio| O mesmo que -ar|
 | Verbose Ativada |Booleano|falso| Mesmo que -v|
 | Remover Elegibilidades em Falta |Booleano|falso| Mesmo que -c|
-| Impedir a atualização de compilação padrão |Bool|falso| Equivalente a utilizar -b sem argumentos|
+| Prevenir a atualização de construção predefinida |Booleano|falso| Equivalente a utilizar -b sem argumentos|
 | Substituição de Cadeia da Compilação |Cadeia|vazio| A CFBundleVersion personalizada da aplicação de saída encapsulada|
-| Incluir o SDK do Citrix XenMobile app (variante somente de rede)|Booleano|falso| Mesmo que-Citrix|
+| Incluir Citrix XenMobile App SDK (variante apenas para rede)|Booleano|falso| O mesmo que -citrix|
 | Caminhos de Perfil de Aprovisionamento de Extensão |Matriz de Cadeias|vazio| Uma matriz dos perfis de aprovisionamento de extensão da aplicação.
 
 Execute o IntuneMAMPackager com o ficheiro plist como único argumento:
@@ -255,7 +255,7 @@ Os principais cenários nos quais teria de encapsular novamente as suas aplicaç
 * A própria aplicação lançou uma nova versão. A versão anterior da aplicação foi encapsulada e carregada para a consola do Intune.
 * A Ferramenta de Encapsulamento de Aplicações do Intune para iOS lançou uma nova versão com correções de erros importantes ou funcionalidades específicas e novas da política de proteção de aplicações do Intune. Isto ocorre passadas seis a oito semanas através do repositório do GitHub para a [Ferramenta de Encapsulamento de Aplicações do Microsoft Intune para iOS](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios).
 
-Para o iOS, embora seja possível encapsular com perfis de aprovisionamento/certificados diferentes do original que foi utilizado para assinar a aplicação, se as elegibilidades especificadas na aplicação não estiverem incluídas no novo perfil de aprovisionamento, o encapsulamento irá falhar. Utilizar a opção de linha de comandos "–e", que remove todas as elegibilidades em falta da aplicação, para impedir que o encapsulamento falhe neste cenário pode causar falhas de funcionalidade na aplicação.
+Para iOS/iPadOS, embora seja possível embrulhar com diferentes perfis cert/provisioning do que o original utilizado para assinar a app, se os direitos especificados na app não estiverem incluídos no novo perfil de provisionamento, o embrulho falhará. Utilizar a opção de linha de comandos "–e", que remove todas as elegibilidades em falta da aplicação, para impedir que o encapsulamento falhe neste cenário pode causar falhas de funcionalidade na aplicação.
 
 As melhores práticas para encapsular novamente incluem:
 
@@ -289,7 +289,7 @@ Se a ferramenta de encapsulamento de aplicações não conseguir concluir com ê
 |A aplicação de entrada que especificou já foi encapsulada e encontra-se na versão mais recente do modelo de política.|A Ferramenta de Encapsulamento de Aplicações não volta a encapsular uma aplicação encapsulada existente com a versão mais recente do modelo de política.|
 |AVISO: não especificou um hash de certificado SHA1. Certifique-se de que a sua aplicação encapsulada está assinada antes de a implementar.|Certifique-se de que especifica um hash SHA1 válido que siga o sinalizador da linha de comandos –c. |
 
-### <a name="collecting-logs-for-your-wrapped-applications-from-the-device"></a>Coletando logs para seus aplicativos encapsulados do dispositivo
+### <a name="collecting-logs-for-your-wrapped-applications-from-the-device"></a>Recolha de registos para as suas aplicações embrulhadas a partir do dispositivo
 Utilize os seguintes passos para obter registos para as aplicações encapsuladas durante a resolução de problemas.
 
 1. Aceda à aplicação Definições do iOS no dispositivo e selecione a aplicação LOB.
@@ -301,9 +301,9 @@ Utilize os seguintes passos para obter registos para as aplicações encapsulada
 > [!NOTE]
 > A funcionalidade de registo está ativada nas aplicações que tenham sido encapsuladas com a Ferramenta de Encapsulamento de Aplicações do Intune versão 7.1.13 ou superior.
 
-### <a name="collecting-crash-logs-from-the-system"></a>Coletando logs de falhas do sistema
+### <a name="collecting-crash-logs-from-the-system"></a>Recolha de registos de colisão do sistema
 
-Seu aplicativo pode estar registrando informações úteis no console do dispositivo cliente iOS. Essas informações são úteis quando você está tendo problemas com o aplicativo e precisa determinar se o problema está relacionado à ferramenta de disposição do aplicativo ou ao próprio aplicativo. Para obter estas informações, utilize os passos seguintes:
+A sua aplicação pode estar a registar informações úteis para a consola do dispositivo cliente iOS. Estas informações são úteis quando está a ter problemas com a aplicação e precisa de determinar se o problema está relacionado com a Ferramenta de Embrulho de Aplicações ou com a própria app. Para obter estas informações, utilize os passos seguintes:
 
 1. Reproduza o problema ao executar a aplicação.
 
@@ -315,7 +315,7 @@ As aplicações encapsuladas também apresentam aos utilizadores a opção para 
 
 A Ferramenta de Encapsulamento de Aplicações para iOS tem alguns requisitos que têm de ser cumpridos para garantir uma funcionalidade completa.
 
-|Requisito|Details|
+|Requisito|Detalhes|
 |---------------|-----------|
 |Perfil de aprovisionamento do iOS|Certifique-se de que o ficheiro de aprovisionamento é válido antes de o incluir. A Ferramenta de Encapsulamento de Aplicações não verifica se o perfil de aprovisionamento já expirou quando processa uma aplicação iOS. Se especificar um perfil de aprovisionamento já expirado, a ferramenta de moldagem de aplicações irá incluir o perfil de aprovisionamento expirado e não saberá que existe um problema até não ser possível instalar a aplicação num dispositivo iOS.|
 |Certificado de assinatura de iOS|Confirme que o certificado de assinatura é válido antes de o especificar. A ferramenta não verifica se um certificado já expirou quando processa aplicações iOS. Se indicar um hash de um certificado expirado, a ferramenta irá processar e assinar a aplicação, mas ocorrerá uma falha de instalação em dispositivos.<br /><br />Confirme que o certificado disponibilizado para assinar a aplicação encapsulada tem uma correspondência no perfil de aprovisionamento. Se o perfil de aprovisionamento tiver uma correspondência para o certificado fornecido para assinatura da aplicação encapsulada, a ferramenta não será validada.|
@@ -419,7 +419,7 @@ Utilize as seguintes práticas recomendadas de segurança e privacidade quando u
 
 ## <a name="intune-app-wrapping-tool-for-ios-with-citrix-mdx-mvpn"></a>Ferramenta de Encapsulamento de Aplicações do Intune para iOS com Citrix MDX mVPN
 
-Esta funcionalidade é uma integração com o encapsulamento de aplicações Citrix MDX para iOS. A integração é um simples sinalizador de linha de comandos `-citrix` opcional e adicional para as Ferramentas de Encapsulamento de Aplicações do Intune.
+Esta funcionalidade é uma integração com o invólucro da aplicação Citrix MDX para iOS/iPadOS. A integração é um simples sinalizador de linha de comandos `-citrix` opcional e adicional para as Ferramentas de Encapsulamento de Aplicações do Intune.
 
 ### <a name="requirements"></a>Requisitos
 
@@ -447,5 +447,5 @@ Execute o seu comando de encapsulamento de aplicações geral com o sinalizador 
 ## <a name="see-also"></a>Veja também
 
 - [Decidir como preparar as aplicações para a gestão de aplicações móveis com o Microsoft Intune](apps-prepare-mobile-application-management.md)
-- [Perguntas comuns, problemas e resoluções com perfis e políticas de dispositivo](../configuration/device-profile-troubleshoot.md)
+- [Questões, questões e resoluções comuns com políticas e perfis de dispositivos](../configuration/device-profile-troubleshoot.md)
 - [Utilizar o SDK para ativar aplicações para gestão de aplicações móveis](app-sdk.md)

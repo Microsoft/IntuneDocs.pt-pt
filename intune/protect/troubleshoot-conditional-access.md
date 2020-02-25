@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0d6dc10eca80a7d403d0ff44c25d3cfaed85fafa
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.openlocfilehash: f4a1d0575ce4c46c56fd1b3d2a7526a18a076fcf
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77514205"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576121"
 ---
 # <a name="troubleshoot-conditional-access"></a>Resolver problemas de acesso condicional
 Este artigo descreve o que fazer quando os seus utilizadores não têm acesso a recursos protegidos com Acesso Condicional, ou quando os utilizadores podem aceder a recursos protegidos, mas devem ser bloqueados.
@@ -44,7 +44,7 @@ Devem ser cumpridos os seguintes requisitos para o acesso condicional ao trabalh
 
 - Por predefinição, tem de ser atribuída ao utilizador uma política de conformidade de dispositivos. Isto pode depender da configuração dos dispositivos de definição **Mark sem nenhuma política** de conformidade atribuída como que esteja em conformidade com o **dispositivo** > **Definições** de política de conformidade no portal de administração Intune.
 
-- O Exchange ActiveSync tem de estar ativado no dispositivo se o utilizador estiver a utilizar o cliente de correio nativo do dispositivo em vez do Outlook. Isto acontece automaticamente para dispositivos iOS, Windows Phone e Android Knox.
+- O Exchange ActiveSync tem de estar ativado no dispositivo se o utilizador estiver a utilizar o cliente de correio nativo do dispositivo em vez do Outlook. Isto acontece automaticamente para dispositivos iOS/iPadOS, Windows Phone e Android Knox.
 
 - Para a troca no local, o conector de câmbio Intune deve estar devidamente configurado. Para mais informações, consulte [Troubleshooting the Exchange Connector in Microsoft Intune](troubleshoot-exchange-connector.md).
 
