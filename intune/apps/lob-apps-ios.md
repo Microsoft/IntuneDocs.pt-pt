@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0b7c0a7dfa4337983c12ada2d0f415c771bd0548
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: 507c7ecff9715ebf9f24567c735592f3f255ccc9
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755192"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609174"
 ---
 # <a name="add-an-ios-line-of-business-app-to-microsoft-intune"></a>Adicionar aplicações de linha de negócio iOS ao Microsoft Intune
 
@@ -31,15 +31,18 @@ ms.locfileid: "76755192"
 
 Utilize as informações neste artigo para o ajudar a adicionar aplicações de linha de negócio (LOB) iOS ao Microsoft Intune. Uma aplicação de linha de negócios (LOB) é uma aplicação que adiciona ao Intune a partir de um ficheiro de instalação de aplicações IPA. Normalmente, este tipo de aplicação é criado internamente. Primeiro terá de se juntar ao programa iOS Developer Enterprise. Para mais informações sobre como fazê-lo consulte o [site da Apple](https://developer.apple.com/programs/ios/enterprise/).
 
->[!NOTE]
->Os utilizadores de dispositivos iOS podem remover algumas aplicações iOS incorporadas, tal como Bolsa e Mapas. Não pode utilizar o Intune para implementar novamente essas aplicações. Se os utilizadores eliminarem essas aplicações, terão de aceder à loja de aplicações e reinstalá-las manualmente.
+> [!NOTE]
+> Os utilizadores de dispositivos iOS podem remover algumas aplicações iOS incorporadas, tal como Bolsa e Mapas. Não pode utilizar o Intune para implementar novamente essas aplicações. Se os utilizadores eliminarem essas aplicações, terão de aceder à loja de aplicações e reinstalá-las manualmente.
 >
->As aplicações LOB iOS têm um limite de tamanho máximo de 4 GB por aplicação.
+> As aplicações LOB iOS têm um limite de tamanho máximo de 4 GB por aplicação.
+
+> [!NOTE]
+> Os identificadores de pacote (por exemplo, *com.contoso.app)* destinam-se a identificar de forma única uma aplicação. Por exemplo, para instalar uma versão beta de uma aplicação LOB ao lado da versão de produção para fins de teste, a versão beta deve ter um identificador único diferente (por exemplo, *com.contoso.app-beta).* Caso contrário, a versão beta sobrepor-se-á à produção e será tratada como uma atualização. Renomear o ficheiro .ipa não tem qualquer efeito neste comportamento.
 
 ## <a name="select-the-app-type"></a>Selecione o tipo de aplicativo
 
-1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
-2. Selecione **aplicativos** > **todos os aplicativos** > **Adicionar**.
+1. Inscreva-se no [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **Apps** > **Todas as aplicações** > **Adicionar**.
 3. No painel do **tipo de aplicação Select,** sob os **outros** tipos de aplicações, selecione **app Line-of-business**.
 4. Clique em **Selecionar**. Os passos da **aplicação Add** são apresentados.
 
@@ -70,10 +73,10 @@ Utilize as informações neste artigo para o ajudar a adicionar aplicações de 
 2. Clique em **Seguir** para exibir a página **de tags scope.**
 
 ## <a name="step-2---select-scope-tags-optional"></a>Passo 2 - Selecione etiquetas de âmbito (opcional)
-Você pode usar marcas de escopo para determinar quem pode ver as informações do aplicativo cliente no Intune. Para mais detalhes sobre etiquetas de âmbito, consulte [Use o controlo de acesso baseado em funções e as etiquetas](../fundamentals/scope-tags.md)de âmbito para TI distribuídos .
+Pode utilizar etiquetas de âmbito para determinar quem pode ver informações sobre aplicações do cliente no Intune. Para mais detalhes sobre etiquetas de âmbito, consulte [Use o controlo de acesso baseado em funções e as etiquetas](../fundamentals/scope-tags.md)de âmbito para TI distribuídos .
 
 1. Clique em **Selecionar etiquetas** de âmbito para adicionar opcionalmente etiquetas de âmbito para a aplicação. 
-2. Clique em **Avançar** para exibir a página **atribuições** .
+2. Clique em **Seguir** para exibir a página **de Tarefas.**
 
 ## <a name="step-3---assignments"></a>Passo 3 - Atribuições
 

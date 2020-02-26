@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aaed7ec6ba1daa28949b2c1f0997b76135b7e88f
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.openlocfilehash: a4b3bd06bad6c31c2d0fb4c31a7ad605af96be86
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77513610"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609198"
 ---
 # <a name="add-managed-google-play-apps-to-android-enterprise-devices-with-intune"></a>Adicionar aplicações do Managed Google Play a dispositivos Android Enterprise com o Intune
 
@@ -224,6 +224,9 @@ Para aplicações geridas do Google Play implementadas para dispositivos de perf
 
 ## <a name="delete-managed-google-play-apps"></a>Eliminar aplicações do Managed Google Play
 Quando necessário, pode eliminar as aplicações do Managed Google Play do Microsoft Intune. Para eliminar uma aplicação gerida pelo Google Play, abra o Microsoft Intune no portal Azure e selecione **Apps** > **Todas as aplicações.** Na lista de aplicações, selecione as reticências (...) à direita da aplicação do Managed Google Play e, em seguida, selecione **Eliminar** na lista apresentada. Quando elimina uma aplicação do Managed Google Play da lista de aplicações, essa aplicação passa automaticamente a não aprovada.
+
+> [!NOTE]
+> Se uma aplicação não for aprovada ou eliminada da loja gerida do Google Play, esta não será removida da lista de aplicações do cliente Intune. Isto permite-lhe ainda direcionar uma política de desinstalação para os utilizadores mesmo que a aplicação não esteja aprovada.
 
 ## <a name="android-enterprise-system-apps"></a>Aplicações do sistema Android Enterprise
 

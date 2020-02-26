@@ -1,12 +1,12 @@
 ---
-title: Criptografar dispositivos com o método de criptografia com suporte de plataformas
+title: Criptografia dispositivos com o método de encriptação suportado pelas plataformas
 titleSuffix: Microsoft Intune
-description: Criptografe dispositivos com métodos de criptografia internos, como BitLocker ou FileVault, e gerencie as chaves de recuperação para esses dispositivos criptografados no portal do Intune.
+description: Criptografe dispositivos com métodos de encriptação incorporados como BitLocker ou FileVault, e gere as chaves de recuperação para esses dispositivos encriptados dentro do portal Intune.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/04/2019
+ms.date: 02/25/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,140 +17,153 @@ ms.reviewer: annovich
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 5209ce7fba30a156de055503751104f9090d49d7
-ms.sourcegitcommit: e7052114324b80d0503b107c934bb90b8eb29704
+ms.openlocfilehash: a5c844377dcd69b6caf5ef9f72fcb8dbb4ef8bd0
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "75755998"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609310"
 ---
-# <a name="use-device-encryption-with-intune"></a>Usar a criptografia de dispositivo com o Intune
+# <a name="use-device-encryption-with-intune"></a>Utilizar encriptação do dispositivo com Intune
 
-Use o Intune para gerenciar um disco interno de dispositivos ou criptografia de unidade para proteger dados em seus dispositivos.
+Utilize o Intune para gerir um disco incorporado ou conduzir encriptação para proteger dados dos seus dispositivos.
 
-Configure a criptografia de disco como parte de um perfil de configuração de dispositivo para o Endpoint Protection. As seguintes plataformas e tecnologias de criptografia têm suporte do Intune:
+Configure a encriptação do disco como parte de um perfil de configuração do dispositivo para proteção de pontofinal. As seguintes plataformas e tecnologias de encriptação são suportadas pela Intune:
 
 - macOS: FileVault
-- Windows 10 e posterior: BitLocker
+- Windows 10 e mais tarde: BitLocker
 
-O Intune também fornece um relatório de [criptografia](encryption-monitor.md) interno que apresenta detalhes sobre o status de criptografia dos dispositivos em todos os seus dispositivos gerenciados.
+Intune também fornece um relatório de [encriptação](encryption-monitor.md) incorporado que apresenta detalhes sobre o estado de encriptação dos dispositivos, em todos os seus dispositivos geridos.
 
-## <a name="filevault-encryption-for-macos"></a>Criptografia FileVault para macOS
+## <a name="filevault-encryption-for-macos"></a>Encriptação FileVault para macOS
 
-Use o Intune para configurar a criptografia de disco FileVault em dispositivos que executam o macOS. Em seguida, use o relatório de criptografia do Intune para exibir os detalhes de criptografia para esses dispositivos e para gerenciar as chaves de recuperação para dispositivos criptografados FileVault.
+Utilize insinopara configurar a encriptação do disco FileVault em dispositivos que executam o macOS. Em seguida, utilize o relatório de encriptação Intune para visualizar detalhes de encriptação desses dispositivos e para gerir as chaves de recuperação para dispositivos encriptados FileVault.
 
-Observe que o registro de dispositivo aprovado pelo usuário é necessário para que o FileVault funcione no dispositivo. O usuário deve aprovar manualmente o perfil de gerenciamento do System Prefrences para o registro a ser considerado aprovado pelo usuário. 
+A inscrição do dispositivo aprovado pelo utilizador é necessária para que o FileVault funcione no dispositivo. O utilizador deve aprovar manualmente o perfil de gestão a partir das preferências do sistema para que a inscrição seja considerada aprovada pelo utilizador.
 
-O FileVault é um programa de criptografia de disco completo que está incluído no macOS. Você pode usar o Intune para configurar o FileVault em dispositivos que executam o **macOS 10,13 ou posterior**.
+FileVault é um programa de encriptação de discos inteiros que está incluído com macOS. Pode utilizar o Intune para configurar o FileVault em dispositivos que executam **o macOS 10.13 ou posteriormente**.
 
-Para configurar o FileVault, crie um [perfil de configuração de dispositivo](../configuration/device-profile-create.md) para o Endpoint Protection da plataforma MacOS. As configurações de FileVault são uma das categorias de configurações disponíveis para o macOS Endpoint Protection.
+Para configurar o FileVault, crie um perfil de [configuração](../configuration/device-profile-create.md) do dispositivo para proteção de pontofinal para a plataforma macOS. As definições do FileVault são uma das categorias de definições disponíveis para a proteção do ponto final macOS.
 
-Depois de criar uma política para criptografar dispositivos com o FileVault, a política é aplicada aos dispositivos em dois estágios. Primeiro, o dispositivo está preparado para habilitar o Intune a recuperar e fazer backup da chave de recuperação. Isso é conhecido como caução. Depois que a chave estiver em garantia, a criptografia de disco poderá ser iniciada.
+Depois de criar uma política para encriptar dispositivos com FileVault, a política é aplicada aos dispositivos em duas fases. Em primeiro lugar, o dispositivo está preparado para permitir que a Intune recupere e volte a fazer o backup da chave de recuperação. Esta ação é referida como caução. Depois de a chave ser depositada, a encriptação do disco pode começar.
 
-![Configurações de FileVault](./media/encrypt-devices/filevault-settings.png)
+![Definições de FileVault](./media/encrypt-devices/filevault-settings.png)
 
-Para obter detalhes sobre a configuração de FileVault que você pode gerenciar com o Intune, consulte [FileVault](endpoint-protection-macos.md#filevault) no artigo do Intune para configurações do MacOS Endpoint Protection.
+Para mais detalhes sobre a definição do FileVault pode gerir com intune, consulte [FileVault](endpoint-protection-macos.md#filevault) no artigo Intune para configurações de proteção de pontofinal macOS.
+
+### <a name="permissions-to-manage-filevault"></a>Permissões para gerir fileVault
+
+Para gerir o FileVault in Tune, a sua conta deve ter as permissões de controlo de acesso (RBAC) baseadas em [funções](../fundamentals/role-based-access-control.md) aplicáveis.
+
+Seguem-se as permissões FileVault, que fazem parte da categoria de **tarefas Remotas,** e as funções RBAC incorporadas que concedem a permissão:
+ 
+- **Obtenha a tecla FileVault:**
+  - Operador de mesa de ajuda
+  - Gestor de segurança endpoint
+
+- **Chave Rotate FileVault**
+  - Operador de mesa de ajuda
 
 ### <a name="how-to-configure-macos-filevault"></a>Como configurar o macOS FileVault
 
-1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Inscreva-se no [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-2. Selecione **dispositivos** > **perfis de configuração** > **Criar perfil**.
+2. Selecione **Dispositivos** > Perfis de **Configuração** > **Criar perfil**.
 
-3. Defina as seguintes opções:
+3. Definir as seguintes opções:
 
    - Plataforma: macOS
-   - Tipo de perfil: Endpoint Protection
+   - Tipo de perfil: Proteção de ponto final
 
-4. Selecione **configurações** > **FileVault**.
+4. Selecione **Definições** > **FileVault**.
 
-5. Para *FileVault*, selecione **habilitar**.
+5. Para *fileVault,* **selecione Ativar**.
 
-6. Para o *tipo de chave de recuperação*, somente a **chave pessoal** tem suporte.
+6. Para o tipo de *tecla de recuperação,* apenas a **chave pessoal** é suportada.
 
-   Considere adicionar uma mensagem para orientar os usuários finais sobre como recuperar a chave de recuperação para seu dispositivo. Essas informações podem ser úteis para os usuários finais quando você usa a configuração para rotação de chave de recuperação pessoal, que pode gerar automaticamente uma nova chave de recuperação para um dispositivo periodicamente.
+   Considere adicionar uma mensagem para ajudar a orientar os utilizadores finais sobre como recuperar a chave de recuperação do seu dispositivo. Estas informações podem ser úteis para os utilizadores finais quando utiliza a definição para a rotação da chave de recuperação pessoal, que pode gerar automaticamente uma nova chave de recuperação para um dispositivo periodicamente.
 
-   Por exemplo: para recuperar uma chave de recuperação perdida ou recentemente girada, entre no site do Portal da Empresa do Intune de qualquer dispositivo. No portal, vá para *dispositivos* e selecione o dispositivo que tem o FileVault habilitado e, em seguida, selecione *obter chave de recuperação*. A chave de recuperação atual é exibida.
+   Por exemplo: Para recuperar uma chave de recuperação perdida ou recentemente rotativa, inscreva-se no site do Portal da Empresa Intune a partir de qualquer dispositivo. No portal, vá a *Dispositivos* e selecione o dispositivo que tem o FileVault ativado e, em seguida, selecione a *chave de recuperação Get*. A chave de recuperação atual é apresentada.
 
-7. Defina as [configurações de FileVault](endpoint-protection-macos.md#filevault) restantes para atender às suas necessidades de negócios e selecione **OK**.
+7. Configure as definições restantes [do FileVault](endpoint-protection-macos.md#filevault) para satisfazer as necessidades do seu negócio e, em seguida, selecione **OK**.
 
-  8. Conclua a configuração de configurações adicionais e salve o perfil.  
+  8. Complete a configuração de configurações adicionais e, em seguida, guarde o perfil.  
 
-### <a name="manage-filevault"></a>Gerenciar FileVault
+### <a name="manage-filevault"></a>Gerir fileVault
 
-Depois que o Intune criptografa um dispositivo macOS com FileVault, você pode exibir e gerenciar as chaves de recuperação do FileVault ao exibir o [relatório de criptografia](encryption-monitor.md)do Intune.
+Depois de O Intune encriptar um dispositivo macOS com fileVault, pode visualizar e gerir as teclas de recuperação do FileVault quando visualiza rumar o relatório de [encriptação](encryption-monitor.md)Intune .
 
-Depois que o Intune criptografa um dispositivo macOS com FileVault, você pode exibir a chave de recuperação pessoal desse dispositivo do Portal da Empresa da Web em qualquer dispositivo. Uma vez no Portal da Empresa da Web, escolha o dispositivo macOS criptografado e, em seguida, escolha "obter chave de recuperação" como uma ação de dispositivo remoto.
+Depois de a Intune encriptar um dispositivo macOS com fileVault, pode visualizar a chave de recuperação pessoal desse dispositivo a partir do Portal da Empresa web em qualquer dispositivo. Uma vez no Portal da Empresa web, escolha o dispositivo macOS encriptado e, em seguida, opte por "Obter a chave de recuperação" como uma ação remota do dispositivo.
 
-### <a name="retrieve-personal-recovery-key-from-mem-encrypted-macos-devices"></a>Recuperar a chave de recuperação pessoal de dispositivos macOS criptografados com memória
+### <a name="retrieve-personal-recovery-key-from-mem-encrypted-macos-devices"></a>Recuperar a chave de recuperação pessoal dos dispositivos macOS encriptados mEM
 
-Os usuários finais poderão recuperar sua chave de recuperação pessoal (FileVault Key) usando o aplicativo Portal da Empresa do iOS. O dispositivo que tem a chave de recuperação pessoal deve ser registrado com o Intune e criptografado com o FileVault por meio do Intune. Usando o aplicativo Portal da Empresa do iOS, o usuário final pode abrir uma página da Web que inclui a chave de recuperação pessoal do FileVault. Você também pode recuperar a chave de recuperação do Intune selecionando **dispositivos** > *o dispositivo MacOS criptografado e registrado* > **obter a chave de recuperação**. 
+Os utilizadores finais recuperam a sua chave de recuperação pessoal (chave FileVault) utilizando a aplicação portal da empresa iOS. O dispositivo que tenha a chave de recuperação pessoal deve ser matriculado com Intune e encriptado com fileVault através de Intune. Utilizando a aplicação portal da empresa iOS, o utilizador final pode abrir uma página web que inclui a chave de recuperação pessoal fileVault. Também pode recuperar a chave de recuperação de Intune selecionando **Dispositivos** > *o dispositivo macOS encriptado e matriculado* > Obter a chave de **recuperação**. 
 
-## <a name="bitlocker-encryption-for-windows-10"></a>Criptografia BitLocker para Windows 10
+## <a name="bitlocker-encryption-for-windows-10"></a>Encriptação BitLocker para Windows 10
 
-Use o Intune para configurar Criptografia de Unidade de Disco BitLocker em dispositivos que executam o Windows 10. Em seguida, use o relatório de criptografia do Intune para exibir detalhes de criptografia para esses dispositivos. Você também pode acessar informações importantes para o BitLocker de seus dispositivos, conforme encontrado no Azure Active Directory (Azure AD).
+Utilize insinopara configurar a encriptação bitLocker drive em dispositivos que executam o Windows 10. Em seguida, utilize o relatório de encriptação Intune para visualizar detalhes de encriptação para esses dispositivos. Também pode aceder a informações importantes para o BitLocker a partir dos seus dispositivos, conforme encontrado no Azure Ative Directory (Azure AD).
 
-O BitLocker está disponível em dispositivos que executam o **Windows 10 ou posterior**.
+O BitLocker está disponível em dispositivos que executam **o Windows 10 ou mais tarde**.
 
-Configure o BitLocker ao criar um [perfil de configuração de dispositivo](../configuration/device-profile-create.md) para o Endpoint Protection para a plataforma Windows 10 ou posterior. As configurações do BitLocker estão na categoria configurações de criptografia do Windows para o Windows 10 Endpoint Protection.
+Configure o BitLocker quando criar um perfil de [configuração](../configuration/device-profile-create.md) do dispositivo para proteção de pontofinal para a plataforma Windows 10 ou posterior. As definições bitLocker estão na categoria de definições de encriptação do Windows para proteção de ponto final do Windows 10.
 
-![Configurações do BitLocker](./media/encrypt-devices/bitlocker-settings.png)
+![Definições bitLocker](./media/encrypt-devices/bitlocker-settings.png)
 
-### <a name="how-to-configure-windows-10-bitlocker"></a>Como configurar o BitLocker do Windows 10
+### <a name="how-to-configure-windows-10-bitlocker"></a>Como configurar o Windows 10 BitLocker
 
-1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Inscreva-se no [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-2. Selecione **dispositivos** > **perfis de configuração** > **Criar perfil**.
+2. Selecione **Dispositivos** > Perfis de **Configuração** > **Criar perfil**.
 
-3. Defina as seguintes opções:
+3. Definir as seguintes opções:
 
-   - Plataforma: Windows 10 e posterior
-   - Tipo de perfil: Endpoint Protection
+   - Plataforma: Windows 10 e mais tarde
+   - Tipo de perfil: Proteção de ponto final
 
-4. Selecione **configurações** > **criptografia do Windows**.
+4. Selecione **Definições** > **encriptação do Windows**.
 
-5. Defina as configurações do BitLocker para atender às suas necessidades de negócios e selecione **OK**.
+5. Configure as definições para o BitLocker para atender às necessidades do seu negócio e, em seguida, selecione **OK**.
 
-6. Conclua a configuração de configurações adicionais e salve o perfil.
+6. Complete a configuração de configurações adicionais e, em seguida, guarde o perfil.
 
 ### <a name="manage-bitlocker"></a>Gerir o BitLocker
 
-Depois que o Intune criptografar um dispositivo Windows 10 com o BitLocker, você poderá exibir e recuperar as chaves de recuperação do BitLocker ao exibir o [relatório de criptografia](encryption-monitor.md)do Intune.
+Depois de O Intune encriptar um dispositivo Windows 10 com o BitLocker, pode visualizar e recuperar as chaves de recuperação do BitLocker quando visualizar o relatório de [encriptação](encryption-monitor.md)Intune .
 
-### <a name="rotate-bitlocker-recovery-keys"></a>Girar as chaves de recuperação do BitLocker
+### <a name="rotate-bitlocker-recovery-keys"></a>Teclas de recuperação BitLocker rotativas
 
-Você pode usar uma ação de dispositivo do Intune para girar remotamente a chave de recuperação do BitLocker de um dispositivo que executa o Windows 10 versão 1909 ou posterior.
+Pode utilizar uma ação do dispositivo Intune para rodar remotamente a chave de recuperação BitLocker de um dispositivo que executa a versão 1909 do Windows 10 ou mais tarde.
 
 #### <a name="prerequisites"></a>Pré-requisitos
 
-Os dispositivos devem atender aos seguintes pré-requisitos para dar suporte à rotação da chave de recuperação do BitLocker:
+Os dispositivos devem cumprir os seguintes pré-requisitos para suportar a rotação da chave de recuperação BitLocker:
 
-- Os dispositivos devem executar o Windows 10 versão 1909 ou posterior
+- Os dispositivos devem executar a versão 1909 do Windows 10 ou mais tarde
 
-- Os dispositivos ingressados no Azure AD e híbridos devem ter suporte para a rotação de chaves habilitada:
+- Os dispositivos azure ad-joined e híbrido-join-join devem ter suporte para a rotação da chave ativada:
 
-  - **Rotação de senha de recuperação controlada pelo cliente**
+  - **Rotação da palavra-passe de recuperação orientada pelo cliente**
 
-  Essa configuração é encontrada em *criptografia do Windows* como parte de uma política de configuração de dispositivo para o Windows 10 Endpoint Protection.
+  Esta definição encontra-se sob *encriptação do Windows* como parte de uma política de configuração do dispositivo para a Proteção de Pontofinal do Windows 10.
   
-#### <a name="to-rotate-the-bitlocker-recovery-key"></a>Para girar a chave de recuperação do BitLocker
+#### <a name="to-rotate-the-bitlocker-recovery-key"></a>Para rodar a chave de recuperação BitLocker
 
-1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Inscreva-se no [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
 2. Selecione **Dispositivos** > **Todos os dispositivos**.
 
-3. Na lista de dispositivos que você gerencia, selecione um dispositivo, selecione **mais**e, em seguida, selecione a ação remota do dispositivo de **rotação de chave do BitLocker** .
+3. Na lista de dispositivos que gere, selecione um dispositivo, selecione **Mais,** e, em seguida, selecione a ação remota do dispositivo de rotação da **tecla BitLocker.**
 
 ## <a name="next-steps"></a>Próximos passos
 
-Criar [uma política de conformidade do dispositivo](compliance-policy-create-windows.md) .
+Crie uma política de [conformidade com o dispositivo.](compliance-policy-create-windows.md)
 
-Use o relatório de criptografia para gerenciar:
+Use o relatório de encriptação, para gerir:
 
-- [Chaves de recuperação do BitLocker](encryption-monitor.md#bitlocker-recovery-keys)
-- [Chaves de recuperação FileVault](encryption-monitor.md#filevault-recovery-keys)
+- [Chaves de recuperação BitLocker](encryption-monitor.md#bitlocker-recovery-keys)
+- [Chaves de recuperação fileVault](encryption-monitor.md#filevault-recovery-keys)
 
-Examine as configurações de criptografia que você pode configurar com o Intune para:
+Reveja as definições de encriptação que pode configurar com Intune para:
 
 - [BitLocker](endpoint-protection-windows-10.md#windows-encryption)
 - [FileVault](endpoint-protection-macos.md#filevault)

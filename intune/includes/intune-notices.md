@@ -7,12 +7,12 @@ ms.topic: include
 ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: f23d81ddb07fcafb198cd725781747b61a3b73ea
-ms.sourcegitcommit: 67f926ba83f8a955e16b741a610ad84d6044f8f9
+ms.openlocfilehash: 373aeea9ab4fcbd075ac2ab18f205f3ddd191a39
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77529345"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609285"
 ---
 Estes avisos fornecem informações importantes que podem ajudá-lo a preparar-se para futuras alterações e funcionalidades intune.
 
@@ -84,7 +84,7 @@ A gestão do LEGACY PC vai sair do apoio no dia 15 de outubro de 2020. Atualize 
 
 [Saiba mais](https://go.microsoft.com/fwlink/?linkid=2107122)
 
-### <a name="decreasing-support-for-android-device-administrator"></a>Diminuição do suporte para administrador de dispositivos Android 
+### <a name="decreasing-support-for-android-device-administrator--5857738--"></a>Diminuição do suporte para administrador de dispositivos Android<!--5857738-->
 O administrador de dispositivos Android (por vezes referido para a gestão "legacy" android e lançado com o Android 2.2) é uma forma de gerir dispositivos Android. No entanto, a melhoria da funcionalidade de gestão já está disponível com [o Android Enterprise](../enrollment/connect-intune-android-enterprise.md) (lançado com o Android 5.0). Num esforço para se mudar para uma gestão moderna, mais rica e segura de dispositivos, a Google está a diminuir o suporte do administrador de dispositivos em novas versões Android.
 
 #### <a name="how-does-this-affect-me"></a>Como é que isto me afeta?
@@ -108,24 +108,5 @@ Para evitar a redução da funcionalidade que chega no 3º trimestre CY2020, rec
 - [Orientação da Google para a migração de administrador de dispositivos para Android Enterprise](http://static.googleusercontent.com/media/android.com/en/enterprise/static/2016/pdfs/enterprise/Android-Enterprise-Migration-Bluebook_2019.pdf)
 - [Documentação da Google sobre o plano para depreciar o administrador do dispositivo API](https://developers.google.com/android/work/device-admin-deprecation)
 
-### <a name="plan-for-change-intune-app-sdk-and-app-protection-policies-for-android-moving-to-support-android-50-and-higher-in-an-upcoming-release---4911065---"></a>Plano de mudança: Intune App SDK e políticas de proteção de aplicações para Android movendo-se para suportar Android 5.0 e mais alto em um próximo lançamento <!--4911065 -->
-Intune vai mover-se para suportar o Android 5.x (Lollipop) e mais alto num próximo lançamento. Atualize quaisquer aplicações embrulhadas com o mais recente Intune App SDK e atualize os seus dispositivos.
-
-#### <a name="how-does-this-affect-me"></a>Como é que isto me afeta?
-Se não estiver a utilizar ou planeia utilizar o SDK ou o APP para Android, esta alteração não o afetará. Se estiver a utilizar o Intune App SDK, certifique-se de atualizar para a versão mais recente e também atualizar os seus dispositivos para Android 5.x e superior. Se não atualizar, as aplicações não receberão atualizações e a qualidade da sua experiência diminuirá com o tempo.
-
-Abaixo encontre uma lista de dispositivos comuns matriculados em Intune que executam a versão 4.x do Android. Se tiver um destes dispositivos, tome as medidas adequadas para garantir que este dispositivo irá suportar a versão 5.0 do Android ou superior ou que será substituído por um dispositivo que suporta a versão 5.0 do Android ou superior. Esta lista não é exaustiva de todos os dispositivos que possam ter de ser avaliados:
-
-- Samsung SM-T561  
-- Samsung SM-T365
-- Samsung GT-I9195
-- Samsung SM-G800F
-- Samsung SM-G357FZ
-- Motorola XT1080
-- Samsung GT-I9305
-- Samsung SM-T231
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>O que preciso de fazer para me preparar para esta alteração?
-Embrulhe as suas aplicações com o mais recente Intune App SDK. Também pode definir a definição de lançamento condicional "Require nível mínimo de sistema operativo (apenas aviso)" para notificar os utilizadores finais em dispositivos pessoais para atualizar.
 
 

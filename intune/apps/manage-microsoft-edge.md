@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9a3436b9590204691201f8341d1e2f896e9ffff6
-ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
+ms.openlocfilehash: 9622eb33cb4e7732b573e8caf56acf4e3966badb
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77576369"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609117"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>Gerir o acesso à web utilizando o Microsoft Edge com o Microsoft Intune
 
@@ -181,7 +181,7 @@ Utilize o seguinte par chave/valor para configurar um atalho inicial:
 
 |    Chave    |    Valor    |
 |-------------------------------------------------------------------|-------------|
-|    com.microsoft.intune.mam.managedbrowser.homepage   |    Especifique um URL válido. Os URLs incorretos são bloqueados como medida de segurança.<br>**Exemplo:** <`https://www.bing.com`>
+|    com.microsoft.intune.mam.managedbrowser.homepage   |    Especifique um URL válido. Os URLs incorretos são bloqueados como medida de segurança.<br>**Exemplo:**  <`https://www.bing.com`>
 
 ## <a name="configure-your-organizations-logo-and-brand-color-for-new-tab-pages-in-microsoft-edge"></a>Configure o logótipo da sua organização e a cor da marca para novas páginas de separadores no Microsoft Edge
 
@@ -297,6 +297,22 @@ Pode configurar se as ligações restritas devem ser abertas diretamente na nave
 
 ## <a name="disable-microsoft-edge-features-to-customize-the-end-user-experience-for-your-organizations-needs"></a>Desative as funcionalidades do Microsoft Edge para personalizar a experiência final do utilizador para as necessidades da sua organização
 
+### <a name="disable-prompts-to-share-usage-data-for-personalization"></a>Desativar as solicitações para partilhar dados de uso para personalização 
+
+Por padrão, o Microsoft Edge solicita aos utilizadores a recolha de dados de utilização para personalizarem a sua experiência de navegação. É capaz de desativar a partilha destes dados evitando que esta solicitação seja mostrada aos utilizadores finais. 
+
+|    Chave    |    Valor    |
+|----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    `com.microsoft.intune.mam.managedbrowser.disableShareUsageData`    |     **true** irá desativar esta solicitação de exibição para utilizadores finais.    |
+
+### <a name="disable-prompts-to-share-browsing-history"></a>Desativar as solicitações para partilhar o histórico de navegação 
+
+Por padrão, o Microsoft Edge solicita aos utilizadores que naveguem na recolha de dados de histórico para personalizarem a sua experiência de navegação. É capaz de desativar a partilha destes dados evitando que esta solicitação seja mostrada aos utilizadores finais.
+
+|    Chave    |    Valor    |
+|----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|     `com.microsoft.intune.man.managedbrowser.disableShareBrowsingHistory`    |     **true** irá desativar esta solicitação de exibição para utilizadores finais.     |
+
 ### <a name="disable-prompts-that-offer-to-save-passwords"></a>Desativar as solicitações que oferecem para guardar senhas
 Por padrão, o Microsoft Edge no iOS oferece-se para guardar as palavras-passe dos seus utilizadores para o porta-chaves. Se quiser desativar esta solicitação para a sua organização, configure a seguinte definição:
 
@@ -319,6 +335,7 @@ Além de bloquear a navegação inPrivate e MSA, só pode permitir a utilizaçã
 - [Configuração android](~/apps/app-configuration-policies-use-android.md#allow-only-configured-organization-accounts-in-multi-identity-apps)
 - [definição de iOS](~/apps/app-configuration-policies-use-ios.md#allow-only-configured-organization-accounts-in-multi-identity-apps)
 
+
 ## <a name="use-microsoft-edge-on-ios-to-access-managed-app-logs"></a>Use o Microsoft Edge no iOS para aceder a registos de aplicações geridos 
 
 Os utilizadores com o Microsoft Edge instalados no seu dispositivo iOS podem ver o estado de gestão de todas as aplicações publicadas pela Microsoft. Podem enviar registos para resolver problemas das respetivas aplicações iOS geridas. Eis como:
@@ -334,10 +351,10 @@ Para ver como visualizar registos em dispositivos Android, consulte [Enviar regi
 
 Seguem-se considerações adicionais de segurança e privacidade para o Microsoft Edge:
 
-- O Microsoft Edge não consome configurações que os utilizadores configuram para o navegador nativohttps://docs.microsoft.com/en-us/intune/apps/app-configuration-policies-use-android#allow-only-configured-organization-accounts-in-multi-identity-apps nos seus dispositivos, porque o Microsoft Edge não consegue aceder a estas definições.
+- O Microsoft Edge não consome configurações que os utilizadores configuram para o navegador nativo https://docs.microsoft.com/en-us/intune/apps/app-configuration-policies-use-android#allow-only-configured-organization-accounts-in-multi-identity-apps nos seus dispositivos, porque o Microsoft Edge não consegue aceder a estas definições.
 - Pode configurar a opção **Exigir UM PIN simples para acesso** ou exigir **credenciais corporativas para acesso** numa política de proteção de aplicações associada ao Microsoft Edge. Se um utilizador selecionar o link de ajuda na página de autenticação, pode navegar em quaisquer sites de internet, independentemente de terem sido adicionados a uma lista bloqueada na política.
 - O Microsoft Edge só pode bloquear o acesso aos sites quando estes são acedidos diretamente. Não bloqueia o acesso quando os utilizadores utilizam serviços intermédios (como um serviço de tradução) para aceder ao site.
-- Para permitir a autenticação e acesso à documentação Intune, ***.microsoft.com** está isento das definições da lista de permitir ou bloquear. É sempre permitido.
+- Para permitir a autenticação e acesso à documentação Intune, * **.microsoft.com** está isento das definições da lista de permitir ou bloquear. É sempre permitido.
 - Os utilizadores podem desativar a recolha de dados. A Microsoft recolhe automaticamente dados anónimos sobre o desempenho e a utilização do Managed Browser para melhorar os produtos e serviços Microsoft. Os utilizadores podem desativar a recolha de dados com a definição **Dados de Utilização** nos respetivos dispositivos. OS utilizadores não têm controlo sobre a recolha destes dados. Nos dispositivos iOS, os websites que os utilizadores visitam que tenham um certificado expirado ou não fidedigno não podem ser abertos.
 
 ## <a name="next-steps"></a>Próximos passos

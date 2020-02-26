@@ -1,7 +1,7 @@
 ---
-title: Gerenciar aplicativos VPP do Microsoft Store for Business
+title: Gerir aplicativos VPP da Microsoft Store para negócios
 titleSuffix: Microsoft Intune
-description: Saiba como você pode sincronizar aplicativos no Intune por meio do Microsoft Store para empresas.
+description: Saiba como pode sincronizar aplicações em Intune a partir da Microsoft Store for Business.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -18,21 +18,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3c1627ba89ad50b2053187a20fee6cbc7a9064e8
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 6faaa800d8dedc53ab20f1dae2c3049132642b7d
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74562502"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609157"
 ---
-# <a name="how-to-manage-volume-purchased-apps-from-the-microsoft-store-for-business-with-microsoft-intune"></a>Como gerenciar aplicativos comprados por volume da Microsoft Store para empresas com o Microsoft Intune
+# <a name="how-to-manage-volume-purchased-apps-from-the-microsoft-store-for-business-with-microsoft-intune"></a>Como gerir as aplicações adquiridas em volume na Microsoft Store para Negócios com a Microsoft Intune
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 Na [Loja Microsoft para Empresas](https://www.microsoft.com/business-store) pode encontrar e adquirir aplicações para a sua organização, individualmente ou em volume. Ao ligar a loja ao Microsoft Intune, pode gerir as aplicações compradas em volume a partir do portal do Azure. Por exemplo:
-* Você pode sincronizar a lista de aplicativos que comprou (ou que são gratuitos) da loja com o Intune.
+* Pode sincronizar a lista de aplicações que adquiriu (ou que são gratuitas) na loja com o Intune.
 * As aplicações que são sincronizadas aparecem na consola de administração do Intune. Pode atribuí-las como todas as outras aplicações.
-* As versões licenciadas online e offline dos aplicativos são sincronizadas com o Intune. Os nomes de aplicativo serão anexados a "online" ou "offline" no Portal.
+* As versões licenciadas online e offline de Apps são sincronizadas para Intune. Os nomes das aplicações serão anexados com "Online" ou "Offline" no portal.
 * Pode controlar quantas licenças estão disponíveis e quantas estão a ser utilizadas na consola de administração do Intune.
 * O Intune bloqueará a atribuição e instalação de aplicações se tiver um número insuficiente de licenças disponíveis.
 * As aplicações geridas pela Microsoft Store para Empresas revogam as licenças automaticamente quando um utilizador sai da empresa ou quando o administrador remove o utilizador e os dispositivos do mesmo.
@@ -48,16 +48,16 @@ Antes de iniciar a sincronização e a atribuição de aplicações da Loja Micr
 - As aplicações licenciadas online e offline que comprou na Microsoft Store para Empresas são sincronizadas no portal do Intune. Poderá então implementar essas aplicações em grupos de dispositivos ou grupos de utilizadores. 
 - As instalações de aplicações online são geridas pela loja.
 - As aplicações offline gratuitas também podem ser sincronizadas com o Intune. Estas aplicações são instaladas pelo Intune e não pela loja.
-- Para utilizar esta funcionalidade, os dispositivos têm de ser associados aos Active Directory Domain Services ou à área de trabalho.
+- Para utilizar esta capacidade, os dispositivos devem ser unidos aos Serviços de Domínio de Diretório Ativo, Azure AD aderido ou unidos no local de trabalho.
 - Os dispositivos inscritos têm de utilizar a versão 1511 do Windows 10 ou posterior.
 
-Além disso, as aplicações Licenciadas Offline e os conjuntos relacionados sincronizados a partir da Microsoft Store para Empresas serão consolidados numa única entrada de aplicação na IU. Todos os detalhes da implementação dos pacotes individuais serão migrados para uma única entrada. Para exibir conjuntos relacionados no portal do Azure, selecione **licenças de aplicativo** no painel **aplicativos** .
+Além disso, as aplicações Licenciadas Offline e os conjuntos relacionados sincronizados a partir da Microsoft Store para Empresas serão consolidados numa única entrada de aplicação na IU. Todos os detalhes da implementação dos pacotes individuais serão migrados para uma única entrada. Para visualizar conjuntos relacionados no portal Azure, selecione **licenças** de App do painel **apps.**
 
 ## <a name="associate-your-microsoft-store-for-business-account-with-intune"></a>Associar a sua conta da Loja Microsoft para Empresas ao Intune
 Antes de ativar a sincronização na consola do Intune, tem de configurar a conta da loja para utilizar o Intune como ferramenta de gestão:
-1. Certifique-se de entrar no [Microsoft Store para negócios](https://www.microsoft.com/business-store) usando a mesma conta de locatário usada para entrar no Intune.
-2. Na loja de negócios, escolha a guia **gerenciar** , selecione **configurações**e escolha a guia **distribuir** .
-3. Se você não tiver especificamente **Microsoft Intune** disponível como uma ferramenta de gerenciamento de dispositivo móvel, escolha **Adicionar ferramenta de gerenciamento** para adicionar **Microsoft Intune**. Se você não tiver **Microsoft Intune** ativado como sua ferramenta de gerenciamento de dispositivo móvel, clique em **Ativar** ao lado de **Microsoft Intune**. Observe que você deve ativar **Microsoft Intune** em vez de **Microsoft Intune registro**.
+1. Certifique-se de que assina na [Microsoft Store for Business](https://www.microsoft.com/business-store) utilizando a mesma conta de inquilino que utiliza para iniciar sintonização.
+2. Na Loja de Negócios, escolha o separador **Gerir,** selecione **Definições**e escolha o separador **Distribute.**
+3. Se não tiver especificamente o **Microsoft Intune** disponível como uma ferramenta de gestão de dispositivos móveis, escolha adicionar **ferramenta de gestão Add** para adicionar Microsoft **Intune**. Se não tiver o **Microsoft Intune** ativado como ferramenta de gestão de dispositivos móveis, clique em **Ativar** ao lado do **Microsoft Intune**. Note que deve ativar o **Microsoft Intune** em vez de **Microsoft Intune Registration**.
 
 > [!NOTE]
 > Anteriormente, só podia associar uma ferramenta de gestão para atribuir aplicações com a Loja Microsoft para Empresas. Agora, pode associar várias ferramentas de gestão com a loja, como o Intune e o Configuration Manager. 
@@ -66,8 +66,8 @@ Agora, pode continuar e configurar a sincronização na consola do Intune.
 
 ## <a name="configure-synchronization"></a>Configurar a sincronização
 
-1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
-2. Selecione **Administração de locatários** > **conectores e tokens** > **Microsoft Store para negócios**.
+1. Inscreva-se no [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **a administração** do Inquilino > **Conectores e fichas** > **Microsoft Store para negócios.**
 3. Clique em **Ativar**.
 4. Se ainda não o fez, clique na ligação para se inscrever na Loja Microsoft para Empresas e associe a sua conta conforme explicado anteriormente.
 5. Na lista pendente **Idioma**, selecione o idioma no qual as aplicações da Microsoft Store para Empresas são apresentadas no portal do Azure. Independentemente do idioma em que são apresentadas, serão instaladas no idioma do utilizador final, se estiver disponível.
@@ -75,11 +75,11 @@ Agora, pode continuar e configurar a sincronização na consola do Intune.
 
 ## <a name="synchronize-apps"></a>Sincronizar aplicações
 
-1. Selecione **Administração de locatários** > **conectores e tokens** > **Microsoft Store para negócios**.
+1. Selecione **a administração** do Inquilino > **Conectores e fichas** > **Microsoft Store para negócios.**
 2. Clique em **Sincronização** para obter as aplicações que comprou na Loja Microsoft para o Intune.
 
 > [!NOTE]
-> Não há suporte para aplicativos com pacotes de aplicativos criptografados no momento e eles não serão sincronizados com o Intune.
+> As aplicações com pacotes de aplicações encriptadas não são atualmente suportadas e não serão sincronizadas para intune.
 
 ## <a name="assign-apps"></a>Atribuir aplicações
 
@@ -96,12 +96,12 @@ Quando atribui uma aplicação da Loja Microsoft para Empresas, é utilizada uma
 
 ## <a name="remove-apps"></a>Remover aplicações
 
-Para remover uma aplicação sincronizada a partir da Microsoft Store para Empresas, tem de iniciar sessão na Microsoft Store para Empresas e reembolsar a aplicação. O processo é o mesmo se o aplicativo é gratuito ou não. Para um aplicativo gratuito, a loja receberá o reembolso de $0. O exemplo a seguir mostra um reembolso para um aplicativo gratuito. 
+Para remover uma aplicação sincronizada a partir da Microsoft Store para Empresas, tem de iniciar sessão na Microsoft Store para Empresas e reembolsar a aplicação. O processo é o mesmo, quer a aplicação seja gratuita ou não. Para uma aplicação gratuita, a loja reembolsará $0. O exemplo abaixo mostra um reembolso para uma aplicação gratuita. 
 
 ![Captura de ecrã a mostrar os detalhes da remoção da aplicação](./media/windows-store-for-business/microsoft-store-for-business-01.png)
 
 > [!NOTE]
-> Remover a visibilidade de um aplicativo no armazenamento privado não impedirá que o Intune Sincronize o aplicativo. Você deve reembolsar o aplicativo para remover totalmente o aplicativo.
+> Remover a visibilidade de uma aplicação na loja privada não impedirá a Intune de sincronizar a aplicação. Tem de reembolsar a aplicação para remover totalmente a aplicação.
 
 ## <a name="next-steps"></a>Próximos passos
 

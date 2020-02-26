@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/30/2020
+ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fa4510b95e1e84d9f94158833dac555daa33c690
-ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
+ms.openlocfilehash: 7251a2db0c36db9d01e51ca8fc62bd4e072d80e6
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76912563"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609220"
 ---
 # <a name="windows-10-app-deployment-by-using-microsoft-intune"></a>Implementação de aplicações do Windows 10 utilizando o Microsoft Intune 
 
@@ -44,18 +44,19 @@ As aplicações de linha de negócio (LOB) e as aplicações da Microsoft Store 
 
 Os tipos de aplicações específicos são suportados com base na versão do Windows 10 que os seus utilizadores estão a executar. A tabela seguinte fornece o tipo de aplicação e a capacidade de suporte do Windows 10.
 
-| Tipo de aplicação | Casa | Pró | Negócios | Empresarial | Educação | Modo S | Hololense | SurfaceHub | WCOS | Mobile |
+| Tipo de aplicação | Casa | Pro | Empresa | Enterprise | Educação | Modo S | HoloLens<sup>1 | Surface Hub | WCOS | Mobile |
 |----------------|------|-----|----------|------------|-----------|--------|-----------|------------|------|--------|
 |  . MSI | Não | Sim | Sim | Sim | Sim | Não | Não | Não | Não | Não |
 | . IntuneWin | Não | Sim | Sim | Sim | Sim | 19H2+ | Não | Não | Não | Não |
-| Escritório C2R | Não | Sim | Sim | Sim | Sim | Não | Não | Não | Não | Não |
+| Escritório C2R | Não | Sim | Sim | Sim | Sim | RS4+ | Não | Não | Não | Não |
 | LOB: APPX/MSIX | Sim | Sim | Sim | Sim | Sim | Sim | Sim | Sim | Sim | Sim |
 | MSFB Offline | Sim | Sim | Sim | Sim | Sim | Sim | Sim | Sim | Sim | Sim |
-| MSFB Online | Sim | Sim | Sim | Sim | Sim | Sim | RS4+ | Sim | Sim | Sim |
-| Aplicações na Web | Sim | Sim | Sim | Sim | Sim | Sim | Sim<sup>1 | Sim<sup>1 | Sim | Sim |
+| MSFB Online | Sim | Sim | Sim | Sim | Sim | Sim | RS4+ | Não | Sim | Sim |
+| Aplicações na Web | Sim | Sim | Sim | Sim | Sim | Sim | Sim<sup>2 | Sim<sup>2 | Sim | Sim<sup>2 |
 | Link da loja | Sim | Sim | Sim | Sim | Sim | Sim | Sim | Sim | Sim | Sim |
 
-<sup>1</sup> Lançamento apenas do portal da empresa.
+<sup>1</sup> Para desbloquear a gestão de aplicações, atualize o seu dispositivo HoloLens para [Holographic for Business](../fundamentals/windows-holographic-for-business.md).<br />
+<sup>2</sup> Lançamento apenas do Portal da Empresa.
 
 > [!NOTE]
 > Todos os tipos de aplicativos do Windows requerem inscrição.
@@ -64,15 +65,15 @@ Os tipos de aplicações específicos são suportados com base na versão do Win
 
 Pode assinar e carregar aplicações lob do Windows 10 para a consola intune. Estas podem incluir aplicações modernas, como aplicações universal Windows Platform (UWP) e Pacotes de Aplicações Windows (AppX), bem como aplicações Win 32, como ficheiros simples de pacotes de instalação da Microsoft (MSI). O administrador deve carregar manualmente e implementar atualizações de aplicações LOB. Estas atualizações são automaticamente instaladas em dispositivos de utilizador que tenham instalado a aplicação. Não é necessária nenhuma intervenção do utilizador e o utilizador não tem controlo sobre as atualizações. 
 
-## <a name="microsoft-store-for-business-apps"></a>Aplicações da Loja Microsoft para Empresas
+## <a name="microsoft-store-for-business-apps"></a>Aplicações da Microsoft Store para Empresas
 
 As aplicações microsoft Store for Business são aplicações modernas, compradas no portal de administração da Microsoft Store para empresas. São então sincronizados com a Microsoft Intune para gestão. As aplicações podem ser licenciadas online ou offline. A Microsoft Store gere diretamente as atualizações, sem nenhuma ação adicional exigida pelo administrador. Também pode prevenir atualizações para aplicações específicas utilizando um identificador de recursos uniformes personalizado (URI). Para obter mais informações, veja [Enterprise app management - Prevent app from automatic updates](https://docs.microsoft.com/windows/client-management/mdm/enterprise-app-management#prevent-app-from-automatic-updates) (Gestão de aplicações empresariais – impedir as atualizações automáticas da aplicação). O utilizador também pode desativar atualizações para todas as aplicações da Microsoft Store for Business no dispositivo. 
 
-### <a name="categorize-microsoft-store-for-business-apps"></a>Categorizar Microsoft Store para aplicativos de negócios 
+### <a name="categorize-microsoft-store-for-business-apps"></a>Categorize a Microsoft Store para aplicações empresariais 
 Para categorizar as aplicações da Microsoft Store para as empresas: 
 
-1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
-2. Selecione **aplicativos** > **todos os aplicativos**. 
+1. Inscreva-se no [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **Apps** > **Todas as aplicações.** 
 3. Selecione uma aplicação Microsoft Store for Business. Em seguida, selecione **Propriedades** > categoria **de**informações de **aplicações** > . 
 4. Selecione uma categoria.
 

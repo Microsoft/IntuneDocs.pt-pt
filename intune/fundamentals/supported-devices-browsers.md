@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/25/2019
+ms.date: 02/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e28f8a2cc43e4ca210a391151383633da457c056
-ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
+ms.openlocfilehash: ea115810d604ce7ad49bd23b40951ee3f3da67fc
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77437924"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609266"
 ---
 # <a name="supported-operating-systems-and-browsers-in-intune"></a>Sistemas operativos e browsers no Intune
 
@@ -32,6 +32,9 @@ Antes de configurar o Microsoft Intune, reveja os sistemas operativos e browsers
 Para ajudar a instalar o Intune no seu dispositivo, consulte [a utilização de dispositivos geridos para fazer o trabalho](https://docs.microsoft.com/intune-user-help/company-portal-frequently-asked-questions) e a utilização da largura de banda da rede [Intune](network-bandwidth-use.md).
 
 Para obter mais informações sobre o suporte do prestador de serviços de configuração, visite a referência do prestador de serviços de [configuração](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference).
+
+> [!NOTE]
+> Intune agora requer Android 5.x (Lollipop) ou mais para aplicações e dispositivos para aceder aos recursos da empresa através da aplicação Portal da Empresa para Android e do Intune App SDK para Android. Este requisito NÃO se aplica aos dispositivos Polycom Android Teams com 4.4. Estes dispositivos continuarão a ser suportados. 
 
 ## <a name="intune-supported-operating-systems"></a>Sistemas operativos suportados pelo Intune
 

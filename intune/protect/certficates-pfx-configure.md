@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/20/2020
+ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b963a508ac140988993d3953d6a9d6398404e7b6
-ms.sourcegitcommit: 67f926ba83f8a955e16b741a610ad84d6044f8f9
+ms.openlocfilehash: 99983b2d2776e72232c65fcfb12d8075061d804b
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77529299"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609337"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>Configurar e utilizar certificados PKCS com o Intune
 
@@ -210,12 +210,13 @@ Para autenticar um dispositivo com VPN, WiFi ou outros recursos, um dispositivo 
    |------------|------------|------------|
    |**Limiar de renovação (%)**        |<ul><li>Todas         |Recomendado é 20%  | 
    |**Período de validade do certificado**  |<ul><li>Todas         |Se não alterar o modelo de certificado, esta opção pode ser definida para um ano. |
-   |**Fornecedor de armazenamento chave (KSP)**   |<ul><li>Windows 10  | Para windows, selecione onde guardar as chaves do dispositivo. |
+   |**Fornecedor de armazenamento chave (KSP)**   |<ul><li>Windows 10  |Para windows, selecione onde guardar as chaves do dispositivo. |
    |**Autoridade de certificação**      |<ul><li>Todas         |Exibe o nome de domínio interno totalmente qualificado (FQDN) da sua Enterprise CA.  |
    |**Nome da autoridade de certificação** |<ul><li>Todas         |Lista o nome da sua Enterprise CA, como "Autoridade de Certificação Contoso". |
+   |**Nome do modelo do certificado**    |<ul><li>Todas         |Lista o nome do seu modelo de certificado. |
    |**Tipo de certificado**             |<ul><li>Android Enterprise *(Perfil de Trabalho)*</li><li>iOS</li><li>macOS</li><li>Windows 10 e posterior|Selecione um tipo: <ul><li> **Os** certificados de utilizador podem conter atributos de utilizador e dispositivo no assunto e san do certificado. </il><li>**Os** certificados do dispositivo só podem conter atributos de dispositivo no sujeito e san do certificado. Utilize o Dispositivo para cenários como dispositivos sem uso, como quiosques ou outros dispositivos partilhados.  <br><br> Esta seleção afeta o formato de nome do Assunto. |
-   |**Formato de nome de assunto**          |<ul><li>Todas         |Para a maioria das plataformas, detete esta opção para **o nome comum,** salvo necessidade em contrário.<br><br>Para as seguintes plataformas, o formato de nome sujeito é determinado pelo tipo de certificado: <ul><li>Android Enterprise *(Perfil de Trabalho)*</li><li>iOS</li><li>macOS</li><li>Windows 10 e posterior</li></ul>  <p> Consulte o [formato de nome do Assunto](#subject-name-format) mais tarde neste artigo. |
-   |**Nome alternativo do sujeito**     |<ul><li>Todas         |Detete esta opção para **o nome principal do Utilizador (UPN)** salvo necessidade em contrário. |
+   |**Formato de nome de assunto**          |<ul><li>Todas         |Para mais detalhes sobre como configurar o formato de nome do assunto, consulte o [formato](#subject-name-format) de nome do assunto mais tarde neste artigo.  <br><br> Para a maioria das plataformas, utilize a opção nome **comum,** salvo indicação em contrário. <br><br>Para as seguintes plataformas, o formato de nome sujeito é determinado pelo tipo de certificado: <ul><li>Android Enterprise *(Perfil de Trabalho)*</li><li>iOS</li><li>macOS</li><li>Windows 10 e posterior</li></ul>  <p>  |
+   |**Nome alternativo do sujeito**     |<ul><li>Todas         |Para atribuir , *selecione* **o nome principal do utilizador (UPN)** salvo necessidade em contrário, configure um *valor*correspondente , e, em seguida, clique em **Adicionar**. <br><br>Para mais informações, consulte o [formato de nome do Assunto](#subject-name-format) mais tarde neste artigo.|
    |**Utilização alargada da chave**           |<ul><li> Administrador de dispositivos Android </li><li>Android Enterprise (*Proprietário de Dispositivos,* *Perfil de Trabalho)* </li><li>Windows 10 |Os certificados geralmente requerem *autenticação do cliente* para que o utilizador ou dispositivo possa autenticar um servidor. |
    |**Permitir que todas as aplicações tenham acesso à chave privada** |<ul><li>macOS  |Configurar para **permitir** dar aplicações configuradas para o acesso do dispositivo mac associado à chave privada dos certificados PKCS. <br><br> Para obter mais informações sobre esta definição, consulte *AllowAllAppsAccess* the Certificate Payload section of [Configuration Profile Reference](https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf) in the Apple developer documentation. |
    |**Certificado raiz**             |<ul><li>Administrador de dispositivos Android </li><li>Android Enterprise (*Proprietário de Dispositivos,* *Perfil de Trabalho)* |Selecione um perfil de certificado CA raiz que tenha sido previamente atribuído. |
@@ -256,7 +257,7 @@ Plataformas:
 
     Para utilizar a variável *{{OnPrem_Distinguished_Name}}* certifique-se de sincronizar o atributo do utilizador de nome no *local* utilizando o [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) para o seu AD Azure.
 
-  - **CN={{noPremisesSamAccountName}}** : Os administradores podem sincronizar o atributo samAccountName do Diretório Ativo para a AD Azure utilizando a ligação Azure AD a um atributo chamado *noPremisesSamAccountName*. Intune pode substituir essa variável como parte de um pedido de emissão de certificado em matéria de certificado. O atributo samAccountName é o nome de entrada do utilizador utilizado para suportar clientes e servidores a partir de uma versão anterior do Windows (pré-Windows 2000). O formato de sinal do utilizador no formato de nome é: *DomainName\testUser*, ou apenas *testUser*.
+  - **CN={{noPremisesSamAccountName}}** : Os administradores podem sincronizar o atributo samAccountName do Diretório Ativo para a AD Azure utilizando a ligação Azure AD a um atributo chamado *noPremisesSamAccountName*. Intune pode substituir essa variável como parte de um pedido de emissão de certificado em matéria de certificado. O atributo samAccountName é o nome de entrada do utilizador utilizado para suportar clientes e servidores a partir de uma versão anterior do Windows (pré-Windows 2000). O formato de nome de início de sessão do utilizador é: *DomainName\testUser*, ou apenas *testUser*.
 
     Para utilizar a variável *{{onPremisesSamAccountName}}* certifique-se de sincronizar o atributo do utilizador *no LocalsSamAccountName* utilizando o [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) para o seu Azure AD.
 
@@ -286,8 +287,6 @@ Plataformas:
   > - As propriedades do dispositivo utilizadas no *assunto* ou *SAN* de um certificado de dispositivo, como **IMEI,** **SerialNumber**, e **FullQualifiedDomainName,** são propriedades que podem ser falsificadas por uma pessoa com acesso ao dispositivo.
   > - Um dispositivo deve suportar todas as variáveis especificadas num perfil de certificado para que esse perfil seja instalado nesse dispositivo.  Por exemplo, se **{{IMEI}}** for utilizado no nome do assunto de um perfil SCEP e for atribuído a um dispositivo que não tenha um número IMEI, o perfil não é instalado.  
  
-
-
 ## <a name="whats-new-for-connectors"></a>Novidades para Conectores
 
 As atualizações dos dois conectores de certificado são divulgadas periodicamente. Quando atualizarmos um conector, pode ler sobre as alterações aqui.
@@ -305,7 +304,7 @@ O *Conector de CertificadoPFX para microsoft Intune* [suporta atualizações aut
 - **Conector de certificado PFX para Microsoft Intune - versão 6.1905.0.402**  
   Alterações nesta versão:  
   - O intervalo de votação para o conector é reduzido de 5 minutos para 30 segundos.
- 
+
 ### <a name="april-2-2019"></a>2 de abril de 2019
 
 - **Conector de Certificado Intune - versão 6.1904.1.0**  

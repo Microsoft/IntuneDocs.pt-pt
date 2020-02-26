@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/20/2020
+ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6808a76ca95bfa1d694907732d9e4fff3dd5e69c
-ms.sourcegitcommit: 67f926ba83f8a955e16b741a610ad84d6044f8f9
+ms.openlocfilehash: c7709d4162b065952d2f2f7acc778739ccb34eb7
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77529397"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609322"
 ---
 # <a name="microsoft-intune-protected-apps"></a>Aplicações protegidas microsoft Intune  
 
@@ -57,7 +57,7 @@ As tabelas seguintes fornecem detalhes do parceiro suportado e aplicações da M
 | **Faturação da Microsoft**<p><img alt="Microsoft app - Microsoft Invoicing icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-invoicing.png" width="100"> | A Microsoft Invoicing facilita às pequenas empresas criar estimativas e faturas de aparência profissional, receber rapidamente e poupar tempo. Quer esteja na sua secretária ou em movimento, a Faturação permite-lhe criar e enviar faturas rapidamente, receber pagamentos online e gastar menos tempo em papelada enquanto fica em cima do seu dinheiro. | [Link Google Play (Android)](https://play.google.com/store/apps/details?id=com.microsoft.dynamics.ProjectMadeira),<br>[Link App Store (iOS)](https://itunes.apple.com/us/app/microsoft-invoicing/id1145475572?mt=8) |  
 | **Microsoft Kaizala**<p><img alt="Microsoft app - Microsoft Kaizala icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-kiazala.png" width="100"> | O Microsoft Kaizala é uma aplicação e serviço móvel projetado para grandes comunicações de grupo e gestão de trabalho. A Kaizala facilita a ligação e coordenação do trabalho com toda a sua cadeia de valor, incluindo funcionários de campo, fornecedores, parceiros e clientes onde quer que estejam. | [Link Google Play (Android)](https://play.google.com/store/apps/details?id=com.microsoft.mobile.polymer),<br>[Link App Store (iOS)](https://itunes.apple.com/in/app/microsoft-kaizala/id1112208399) |  
 | **Lançador microsoft**<p><img alt="Microsoft app - Microsoft Launcher icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-launcher.png" width="100"> | O Microsoft Launcher (anteriormente conhecido como Arrow Launcher) pode personalizar o seu dispositivo Android para combinar com o seu estilo com papéis de parede, cores temáticas, pacotes de ícones e muito mais. Com uma conta Microsoft ou conta de trabalho/escola, pode aceder ao seu calendário, documentos e atividades recentes no seu feed personalizado. Pode até abrir fotos, docs e páginas web no seu PC do Windows, para ser produtivo em todos os seus dispositivos. | [Link Google Play (Android)](https://play.google.com/store/apps/details?id=com.microsoft.launcher) |  
-| **Microsoft Office**<p><img alt="Microsoft app - Microsoft Office icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-office.png" width="100"> | A aplicação do Microsoft Office é uma experiência consolidada onde os utilizadores podem trabalhar através do Word, Excel e PowerPoint dentro de uma única aplicação. | [Link Google Play (Android)](https://play.google.com/store/apps/details?id=com.microsoft.office.officehubrow),<br>[Link App Store (iOS)](https://apps.apple.com/app/microsoft-office/id541164041) |  
+| **Microsoft Office**<p><img alt="Microsoft app - Microsoft Office icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-office.png" width="100"> | A aplicação do Microsoft Office combina as aplicações Word, Excel e PowerPoint que conhece e confia com novas capacidades que criam uma experiência de Office mais simples, mas mais poderosa em movimento. | [Link Google Play (Android)](https://play.google.com/store/apps/details?id=com.microsoft.office.officehubrow),<br>[Link App Store (iOS)](https://apps.apple.com/app/microsoft-office/id541164041) |  
 | **Microsoft OneDrive**<p><img alt="Microsoft app - Microsoft OneDrive for Business icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-onedrive-for-business.png" width="100"> | Obtenha armazenamento on-line para os seus ficheiros de trabalho para compartilhar e colaborar com outras pessoas no seu trabalho ou escola. Além disso, aceda facilmente aos seus ficheiros pessoais e de trabalho quando estiver em movimento.<p><p>Esta aplicação pode ser usada como uma aplicação multi-identidade para Android e iOS/iPadOS. | [Link Google Play (Android)](https://play.google.com/store/apps/details?id=com.microsoft.skydrive),<br>[Link App Store (iOS)](https://itunes.apple.com/us/app/onedrive-cloud-storage-for/id477537958?mt=8) |  
 | **Microsoft OneNote**<p><img alt="Microsoft app - Microsoft OneNote icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-onenote.png" width="100"> | Capture os seus pensamentos, descobertas e ideias com o OneNote, o seu próprio caderno digital. Aproveite esse momento de inspiração, tome as suas notas de classe, ou rastreie a lista de recados que são demasiado importantes para esquecer. Quer esteja em casa, no escritório ou em movimento, as suas notas estão disponíveis em todos os seus dispositivos.<p><p>Esta aplicação pode ser usada como uma aplicação multi-identidade para Android e iOS/iPadOS. | [Link Google Play (Android)](https://play.google.com/store/apps/details?id=com.microsoft.office.onenote),<br>[Link App Store (iOS)](https://itunes.apple.com/us/app/microsoft-onenote-for-iphone/id410395246?mt=8) |  
 | **Microsoft Outlook**<p><img alt="Microsoft app - Microsoft Outlook icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-outlook.png" width="100"> | Faça mais a partir de qualquer lugar com uma visão unificada do seu e-mail, calendário, contactos e anexos usando esta aplicação de e-mail gratuita. Extrai automaticamente as suas mensagens mais importantes - em todas as suas contas de e-mail. Veja facilmente o seu calendário, partilhe os horários disponíveis, marque reuniões e fixe ficheiros a partir de e-mail, OneDrive ou Dropbox com apenas algumas torneiras.<p><p>Esta aplicação pode ser usada como uma aplicação multi-identidade para Android e iOS/iPadOS.| [Link Google Play (Android)](https://play.google.com/store/apps/details?id=com.microsoft.office.outlook),<br>[Link App Store (iOS)](https://itunes.apple.com/us/app/microsoft-outlook/id951937596?mt=8) |  

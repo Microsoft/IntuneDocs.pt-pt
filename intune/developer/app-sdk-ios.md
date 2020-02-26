@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7264f5152f1b2b3beb58fc873fb7775d63bdccba
-ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
+ms.openlocfilehash: 48d2e88fbe35729a5b8496d4ac1a4c444df3d89f
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77576364"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609137"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Guia para programadores do SDK da Aplicação do Microsoft Intune para iOS
 
@@ -95,7 +95,7 @@ O objetivo do SDK da Aplicação do Intune para iOS consiste em adicionar capaci
 
 Para ativar o SDK da Aplicação do Intune, siga estes passos:
 
-1. **Opção 1 - Quadro (recomendado)**: Se estiver a utilizar o Xcode 10.2+ e a sua aplicação/extensão contiver código Swift, ligue `IntuneMAMSwift.framework` e `IntuneMAMSwiftStub.framework` ao seu alvo: Arraste `IntuneMAMSwift.framework` e `IntuneMAMSwiftStub.framework` à lista de **Binários Incorporados** do alvo do projeto.
+1. **Opção 1 - Quadro (recomendado)** : Se estiver a utilizar o Xcode 10.2+ e a sua aplicação/extensão contiver código Swift, ligue `IntuneMAMSwift.framework` e `IntuneMAMSwiftStub.framework` ao seu alvo: Arraste `IntuneMAMSwift.framework` e `IntuneMAMSwiftStub.framework` à lista de **Binários Incorporados** do alvo do projeto.
 
     Caso contrário, ligue `IntuneMAM.framework` ao seu alvo: Arraste `IntuneMAM.framework` para a lista **de Binários Incorporados** do alvo do projeto.
 
@@ -531,21 +531,30 @@ A partir da versão 8.0.2, o SDK da Aplicação do Intune poderá filtrar açõe
 
 Ao partilhar documentos através de `UIActivityViewController` e de `UIDocumentInteractionController`, o iOS apresenta as ações "Copiar para" para cada aplicação que suporte abrir o documento que está a ser partilhado. As aplicações declaram os tipos de documentos que suportam através da definição `CFBundleDocumentTypes` no ficheiro Info.plist. Este tipo de partilha já não estará disponível se a política proibir a partilha com aplicações não geridas. Em substituição, o utilizador terá de adicionar uma extensão de Ação que não faça parte da IU à aplicação e ligá-la ao SDK da Aplicação do Intune. A extensão de Ação é apenas um stub. O SDK implementará o comportamento de partilha de ficheiros. Siga os passos abaixo:
 
-1. A aplicação tem de ter pelo menos um schemeURL definido nos `CFBundleURLTypes` de Info.plist.
+1. A sua aplicação deve ter pelo menos um esquemaURL definido no seu `CFBundleURLTypes` Info.plist juntamente com a sua congénere `-intunemam`. Por exemplo:
+    ```objc
+    <key>CFBundleURLSchemes</key>
+    <array>
+        <string>launch-com.contoso.myapp</string>
+        <string>launch-com.contoso.myapp-intunemam</string>
+    </array>
+    ```
 
-2. A extensão da ação e a aplicação têm de partilhar pelo menos um Grupo de Aplicações e este tem de estar listado na matriz de `AppGroupIdentifiers` nos dicionários IntuneMAMSettings da extensão e da aplicação.
+2. Tanto a sua aplicação como a extensão de ação devem partilhar pelo menos um Grupo de Aplicações, e o Grupo app deve ser listado sob o conjunto de `AppGroupIdentifiers` sob os dicionários IntuneMAMSettings da aplicação e da extensão.
 
-3. Atribua um nome à extensão da ação “Abrir em” seguido do nome da aplicação. Localize o ficheiro Info.plist conforme necessário.
+3. Tanto a sua aplicação como a extensão de ação devem ter a capacidade de partilha de keychain e partilhar o grupo `com.microsoft.intune.mam` keychain.
 
-4. Forneça um ícone de modelo para a extensão, conforme descrito no artigo [Apple’s developer documentation](https://developer.apple.com/ios/human-interface-guidelines/extensions/sharing-and-actions/)(Documentação do programador da Apple). Em alternativa, a ferramenta IntuneMAMConfigurator pode servir para gerar estas imagens do diretório .app da aplicação. Para fazê-lo, execute:
+4. Atribua um nome à extensão da ação “Abrir em” seguido do nome da aplicação. Localize o ficheiro Info.plist conforme necessário.
+
+5. Forneça um ícone de modelo para a extensão, conforme descrito no artigo [Apple’s developer documentation](https://developer.apple.com/ios/human-interface-guidelines/extensions/sharing-and-actions/)(Documentação do programador da Apple). Em alternativa, a ferramenta IntuneMAMConfigurator pode servir para gerar estas imagens do diretório .app da aplicação. Para fazê-lo, execute:
 
     ```bash
     IntuneMAMConfigurator -generateOpenInIcons /path/to/app.app -o /path/to/output/directory
     ```
 
-5. Em IntuneMAMSettings, no ficheiro Info.plist da extensão, adicione uma definição Booleana denominada `OpenInActionExtension` com o valor YES.
+6. Em IntuneMAMSettings, no ficheiro Info.plist da extensão, adicione uma definição Booleana denominada `OpenInActionExtension` com o valor YES.
 
-6. Configure a `NSExtensionActivationRule` para que suporte um único ficheiro e todos os tipos de `CFBundleDocumentTypes` da aplicação com o prefixo `com.microsoft.intune.mam`. Por exemplo, se a aplicação suportar public.text e public.image, a regra de ativação será:
+7. Configure a `NSExtensionActivationRule` para que suporte um único ficheiro e todos os tipos de `CFBundleDocumentTypes` da aplicação com o prefixo `com.microsoft.intune.mam`. Por exemplo, se a aplicação suportar public.text e public.image, a regra de ativação será:
 
     ```objc
     SUBQUERY (
