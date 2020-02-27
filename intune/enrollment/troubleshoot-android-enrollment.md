@@ -16,18 +16,18 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 312f8ee3acb6b8be767d6349b29932ab65ae75d8
-ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
+ms.openlocfilehash: 04c726c1dc6af7e92b75335d105de605ef00e712
+ms.sourcegitcommit: 8b716db3c0fdbb7dff62497ec283902a5069a343
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77611030"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77652373"
 ---
-# <a name="troubleshoot-android-device-enrollment-problems-in-microsoft-intune"></a>Problemas de problemas de inscrição de dispositivos Android em Microsoft Intune
+# <a name="troubleshoot-android-enterprise-device-problems-in-microsoft-intune"></a>Problemas problemas com dispositivos Android Enterprise na Microsoft Intune
 
-Este artigo ajuda os administradores intune a compreender e a resolver problemas ao inscrever dispositivos Android em Intune.
+Este artigo ajuda os administradores intune a compreender e a resolver problemas quando os dispositivos Android Enterprise em Intune.
 
-## <a name="apps-on-android-devices"></a>Aplicativos em dispositivos Android
+## <a name="apps-on-android-enterprise-devices"></a>Aplicativos em dispositivos Android Enterprise
 
 ### <a name="managed-google-play-apps-that-arent-deployed-through-intune-are-displayed-in-the-work-profile"></a>As aplicações geridas do Google Play que não são implementadas através do Intune são exibidas no perfil de trabalho
 As aplicações do sistema podem ser ativadas no perfil de trabalho pelo dispositivo OEM no momento em que o perfil de trabalho é criado. Isto não é controlado pelo fornecedor de MDM.
@@ -42,14 +42,14 @@ Para resolver problemas, siga estes passos:
   6. Reveja as aplicações que aparecem no perfil de trabalho. 
   7. Se as mesmas aplicações aparecerem na aplicação Test DPC, as aplicações são esperadas pelo OEM para esse dispositivo.
 
-### <a name="unapproved-google-play-for-work-store-apps-arent-being-removed-from-the-mobile-apps-page-in-intune"></a>Aplicações não aprovadas da Google Play for Work store não estão a ser removidas da página de Aplicações Móveis em Intune
+### <a name="unapproved-managed-google-play-for-work-store-apps-arent-being-removed-from-the-client-apps-page-in-intune"></a>Aplicações não aprovadas geridas do Google Play for Work store não estão a ser removidas da página de Aplicações de Clientes em Intune
 Este comportamento está previsto.
 
 ### <a name="managed-google-play-apps-arent-being-reported-under-the-discovered-apps-blade-in-the-intune-portal"></a>As aplicações geridas do Google Play não estão a ser reportadas sob a lâmina das Aplicações Descobertas no portal Intune
-Este comportamento está previsto.
+Este comportamento está previsto. Apenas as aplicações do sistema instaladas no Perfil de Trabalho são inventariadas na lâmina das Aplicações Descobertas. Para ver as aplicações instaladas geridas do Google Play, utilize a lâmina **de Aplicações Geridas.**
 
 ### <a name="are-web-applications-supported-for-work-profile-enrolled-devices"></a>As Aplicações Web são suportadas para dispositivos matriculados no perfil de trabalho?
-Não atualmente.
+Sim. Para mais informações, consulte [Links web geridos do Google Play](../apps/apps-add-android-for-work.md#managed-google-play-web-links)
 
 ## <a name="device-management"></a>Gestão de dispositivos
 
@@ -66,11 +66,8 @@ Não atualmente.
 ### <a name="managed-google-play-last-sync-time--hasnt-been-updated-in-days"></a>O tempo gerido do Google Play Last Sync não é atualizado há dias
 Este comportamento está previsto. A sincronização só é acionada quando o faz manualmente.
 
-### <a name="is-system-center-configuration-manager-hybrid-supported"></a>O System Center Configuration Manager é híbrido suportado?
-É suportado com O Gestor de Configuração 1702 e versões posteriores para gestão de perfis de trabalho. Os dispositivos dedicados (COSU) não são suportados num cenário híbrido.
-
 ### <a name="encryption-is-required-when-a-device-is-enrolled-can-it-be-turned-off"></a>A encriptação é necessária quando um dispositivo está matriculado. Pode ser desligado?
-Não, a encriptação é necessária do Google para o perfil de trabalho. 
+Não, a Google exige que o dispositivo seja encriptado para criar um perfil de trabalho. 
 
 ### <a name="samsung-devices-are-blocking-the-use-of-third-party-keyboards-like-swiftkey"></a>Dispositivos da Samsung estão a bloquear o uso de teclados de terceiros como o SwiftKey
 A Samsung começou a impor esta restrição aos dispositivos Android 8.0+. A Microsoft está neste momento a trabalhar com a Samsung neste problema e publicará novas informações quando estiver disponível.
@@ -85,7 +82,7 @@ Para dispositivos matriculados no perfil de trabalho, só é possível redefinir
 - a senha de perfil de trabalho é gerida
 - o utilizador final permitiu-lhe redefini-lo.
 
-Para dispositivos dedicados (COSU), é suportado o reset da código de acesso do dispositivo.
+Para dispositivos dedicados (COSU) e Totalmente Geridos, é suportado o reset da código de acesso do dispositivo.
 
 
 ## <a name="next-steps"></a>Próximos passos

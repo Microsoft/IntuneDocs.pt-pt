@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/24/2020
+ms.date: 02/26/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2ea0a60537bb488d3280990747d3e337e73fddc0
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: 955d9931779752e8736435555db7f7aba777b430
+ms.sourcegitcommit: 8b716db3c0fdbb7dff62497ec283902a5069a343
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76754563"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77652407"
 ---
 # <a name="add-wi-fi-settings-for-devices-running-android-in-microsoft-intune"></a>Adicionar definições de Wi-Fi para dispositivos Android no Microsoft Intune
 
@@ -42,7 +42,7 @@ Este artigo descreve estas definições.
 - **SSID**: Introduza o **identificador**de conjunto de serviços, que é o nome real da rede sem fios a que os dispositivos se ligam. No entanto, os utilizadores apenas veem o **nome da rede** que configurou quando selecionam a ligação.
 - **Rede oculta**: escolha **Ativar** para ocultar esta rede da lista de redes disponíveis no dispositivo. O SSID não é difundido. Escolha **Desativar** para mostrar esta rede na lista de redes disponíveis no dispositivo.
 
-## <a name="enterprise"></a>Empresarial
+## <a name="enterprise"></a>Enterprise
 
 - **Tipo de Wi-Fi**: escolha **Empresarial**.
 - **SSID**: Introduza o **identificador**de conjunto de serviços, que é o nome real da rede sem fios a que os dispositivos se ligam. No entanto, os utilizadores apenas veem o **nome da rede** que configurou quando selecionam a ligação.
@@ -56,19 +56,6 @@ Este artigo descreve estas definições.
     - **Autenticação de Cliente** - **Certificado de cliente para autenticação de cliente (Certificado de identidade)** : escolha o perfil de certificado de cliente SCEP ou PKCS que também é implementado no dispositivo. Este certificado é a identidade apresentada pelo dispositivo ao servidor para autenticar a ligação.
 
     - **Privacidade de identidade (identidade externa)** : introduza o texto enviado em resposta a um pedido de identidade EAP. Este texto pode ser qualquer valor, como `anonymous`. Durante a autenticação, esta identidade anónima é inicialmente enviada, seguida pela identificação verdadeira enviada num túnel seguro.
-
-    - **Definições de procuração**: Especifique a configuração de procuração utilizada pela sua organização. As opções são:
-
-      - **Não** se usa um servidor de procuração.
-      - **Automático** – Selecione esta opção para disponibilizar a definição de URL do *servidor proxy,* que utiliza para especificar o seu servidor proxy ou um ficheiro proxy Auto-Configuração (PAC) que contém uma lista dos seus servidores proxy.
-
-    - **URL do servidor proxy**: Esta definição está disponível quando define *as definições de Proxy* para *Automática*. Especifique uma das seguintes opções para direcionar os dispositivos para o seu servidor proxy:
-
-      - Endereço IP. Por exemplo, `10.0.0.11`
-      - Uma URL. Por exemplo, `http://proxyserver.contoso.com`.
-      - O URL de um ficheiro proxy Auto-Configuração (PAC). Por exemplo: `http://proxy.contoso.com/proxy.pac`.
-
-      Para obter mais informações sobre ficheiros PAC, consulte o [ficheiro Proxy Auto-Configuration (PAC)](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file) (abre um site não Microsoft).
 
   - **EAP-TTLS**: introduza também:
 
@@ -88,19 +75,6 @@ Este artigo descreve estas definições.
 
       - **Privacidade de identidade (identidade externa)** : introduza o texto enviado em resposta a um pedido de identidade EAP. Este texto pode ser qualquer valor, como `anonymous`. Durante a autenticação, esta identidade anónima é inicialmente enviada, seguida pela identificação verdadeira enviada num túnel seguro.
 
-    - **Definições de procuração**: Especifique a configuração de procuração utilizada pela sua organização. As opções são:
-
-      - **Não** se usa um servidor de procuração.
-      - **Automático** – Selecione esta opção para disponibilizar a definição de URL do *servidor proxy,* que utiliza para especificar o seu servidor proxy ou um ficheiro proxy Auto-Configuração (PAC) que contém uma lista dos seus servidores proxy.
-
-    - **URL do servidor proxy**: Esta definição está disponível quando define *as definições de Proxy* para *Automática*. Especifique uma das seguintes opções para direcionar os dispositivos para o seu servidor proxy:
-
-      - Endereço IP. Por exemplo, `10.0.0.11`
-      - Uma URL. Por exemplo, `http://proxyserver.contoso.com`.
-      - O URL de um ficheiro proxy Auto-Configuração (PAC). Por exemplo: `http://proxy.contoso.com/proxy.pac`.
-
-      Para obter mais informações sobre ficheiros PAC, consulte o [ficheiro Proxy Auto-Configuration (PAC)](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file) (abre um site não Microsoft).
-
   - **PEAP**: introduza também:
 
     - **Fidedignidade do Servidor** - **Certificado de raiz para a validação do servidor**: escolha um perfil de certificado de raiz fidedigna existente. Este certificado é apresentado ao servidor quando o cliente se conecta à rede. Autentica a ligação.
@@ -116,19 +90,6 @@ Este artigo descreve estas definições.
       - **Certificados**: escolha o perfil de certificado de cliente SCEP ou PKCS que também é implementado no dispositivo. Este certificado é a identidade apresentada pelo dispositivo ao servidor para autenticar a ligação.
 
       - **Privacidade de identidade (identidade externa)** : introduza o texto enviado em resposta a um pedido de identidade EAP. Este texto pode ser qualquer valor, como `anonymous`. Durante a autenticação, esta identidade anónima é inicialmente enviada, seguida pela identificação verdadeira enviada num túnel seguro.
-
-      - **Definições de procuração**: Especifique a configuração de procuração utilizada pela sua organização. As opções são:
-
-        - **Não** se usa um servidor de procuração.
-        - **Automático** – Selecione esta opção para disponibilizar a definição de URL do *servidor proxy,* que utiliza para especificar o seu servidor proxy ou um ficheiro proxy Auto-Configuração (PAC) que contém uma lista dos seus servidores proxy.
-
-      - **URL do servidor proxy**: Esta definição está disponível quando define *as definições de Proxy* para *Automática*. Especifique uma das seguintes opções para direcionar os dispositivos para o seu servidor proxy:
-
-        - Endereço IP. Por exemplo, `10.0.0.11`
-        - Uma URL. Por exemplo, `http://proxyserver.contoso.com`.
-        - O URL de um ficheiro proxy Auto-Configuração (PAC). Por exemplo: `http://proxy.contoso.com/proxy.pac`.
-
-        Para obter mais informações sobre ficheiros PAC, consulte o [ficheiro Proxy Auto-Configuration (PAC)](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file) (abre um site não Microsoft).
 
 ## <a name="next-steps"></a>Próximos passos
 

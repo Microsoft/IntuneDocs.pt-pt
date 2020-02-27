@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/18/2020
+ms.date: 02/26/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aef1747fdbb3118db82f6e99c2838632c8a9d369
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.openlocfilehash: 6b6d5d51bedcd3f8251dd4ac307b58a08ba7cdc6
+ms.sourcegitcommit: 8b716db3c0fdbb7dff62497ec283902a5069a343
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77512454"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77652441"
 ---
 # <a name="add-wi-fi-settings-for-android-enterprise-dedicated-and-fully-managed-devices-in-microsoft-intune"></a>Adicione as definições de Wi-Fi para dispositivos Android Enterprise dedicados e totalmente geridos no Microsoft Intune
 
@@ -152,6 +152,19 @@ Selecione esta opção se estiver a implementar para um dispositivo Android Ente
       - **Certificados**: escolha o perfil de certificado de cliente SCEP ou PKCS que também é implementado no dispositivo. Este certificado é a identidade apresentada pelo dispositivo ao servidor para autenticar a ligação.
 
       - **Privacidade de identidade (identidade externa)** : introduza o texto enviado em resposta a um pedido de identidade EAP. Este texto pode ser qualquer valor, como `anonymous`. Durante a autenticação, esta identidade anónima é inicialmente enviada, seguida pela identificação verdadeira enviada num túnel seguro.
+
+- **Definições de procuração**: Especifique a configuração de procuração utilizada pela sua organização. As opções são:
+
+  - **Não** se usa um servidor de procuração.
+  - **Automático** – Selecione esta opção para disponibilizar a definição de URL do *servidor proxy,* que utiliza para especificar o seu servidor proxy ou um ficheiro proxy Auto-Configuração (PAC) que contém uma lista dos seus servidores proxy.
+
+- **URL do servidor proxy**: Esta definição está disponível quando define *as definições de Proxy* para *Automática*. Especifique uma das seguintes opções para direcionar os dispositivos para o seu servidor proxy:
+
+  - Endereço IP. Por exemplo, `10.0.0.11`
+  - Uma URL. Por exemplo, `http://proxyserver.contoso.com`.
+  - O URL de um ficheiro proxy Auto-Configuração (PAC). Por exemplo: `http://proxy.contoso.com/proxy.pac`.
+
+  Para obter mais informações sobre ficheiros PAC, consulte o [ficheiro Proxy Auto-Configuration (PAC)](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file) (abre um site não Microsoft).
 
 ## <a name="next-steps"></a>Próximos passos
 
