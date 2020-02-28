@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b593cab8a9a89f895c668b2b49583b73cbfccffa
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.openlocfilehash: 45bcabf8c7dc932c9415fbd309bf09f53499fbcc
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77515174"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77781937"
 ---
 # <a name="set-rules-on-devices-to-allow-access-to-resources-in-your-organization-using-intune"></a>Definir regras em dispositivos para permitir o acesso a recursos na sua organização através do Intune
 
@@ -93,16 +93,13 @@ O Intune também inclui um conjunto de definições de políticas de conformidad
 
   Se um dispositivo não tiver uma política de conformidade atribuída, então este dispositivo é considerado conforme por padrão. Se utilizar o Acesso Condicional com as políticas de conformidade, recomendamos que altere a definição predefinida para **Não conforme**. Se um utilizador final não estiver em conformidade porque não foi atribuída uma política, a [aplicação do Portal da Empresa](../apps/company-portal-app.md) mostrará `No compliance policies have been assigned`.
 
-
-> [!NOTE]
-> A deteção de jailbreak melhorada para dispositivos iOS/iPadOS foi temporariamente desativada em Intune.
-
-- **Deteção melhorada da jailbreak**: Quando ativada, esta definição faz com que os dispositivos iOS/iPadOS entrem em insalo com mais frequência. A ativação desta propriedade utiliza os serviços de localização do dispositivo e afeta a utilização da bateria. Os dados de localização do utilizador não são armazenados pelo Intune.
+- **Deteção melhorada da jailbreak**: Quando ativada, esta definição faz com que o estado do dispositivo quebrado na cadeia aconteça com mais frequência nos dispositivos iOS/iPadOS. Esta definição apenas afeta dispositivos que são direcionados com uma política de conformidade que bloqueia dispositivos quebrados. Ativar esta propriedade utiliza os serviços de localização do dispositivo e pode afetar o uso da bateria. Os dados de localização do utilizador não são armazenados pela Intune e são usados apenas para desencadear a deteção de jailbreak com mais frequência em segundo plano. 
 
   Ativar esta definição exige que os dispositivos:
   - Ativem os serviços de localização ao nível do SO.
-  - Permitam que o Portal da Empresa utilize os serviços de localização.
-  - Avaliem e comuniquem o estado de jailbreak do mesmo no Intune, pelo menos, uma vez a cada 72 horas. Caso contrário, o dispositivo será marcado como não conforme. A avaliação é acionada ao abrir a aplicação do Portal da Empresa ou ao mover fisicamente o dispositivo uma distância de 500 metros ou mais. Se o dispositivo não se mover 500 metros em 72 horas, o utilizador precisará de abrir a aplicação do Portal da Empresa para a avaliação avançada de jailbreak.
+  - Permita sempre que o Portal da Empresa utilize serviços de localização.
+
+  A avaliação é desencadeada pela abertura da app Portal da Empresa ou movendo fisicamente o dispositivo a uma distância significativa de aproximadamente 500 metros ou mais. No iOS 13 e acima, esta funcionalidade exigirá que os utilizadores selecionem Sempre permita sempre que o dispositivo os indique para continuar a permitir que o Portal da Empresa utilize a sua localização em segundo plano. Se os utilizadores nem sempre permitirem o acesso à localização e tiverem uma política com esta definição configurada, o seu dispositivo será marcado sem conformidade. Note que Intune não pode garantir que cada alteração significativa de localização garantirá uma verificação de deteção de jailbreak, uma vez que isso depende da ligação de rede de um dispositivo no momento.
 
 - **Período de validade do estado de conformidade (dias)** : introduza o período de tempo durante o qual os dispositivos devem comunicar o estado para todas as políticas de conformidade recebidas. Os dispositivos que não devolvam o estado dentro deste período de tempo são tratados como não conformes. O valor predefinido é 30 dias. O valor mínimo é 1 dia.
 

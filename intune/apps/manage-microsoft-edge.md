@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9622eb33cb4e7732b573e8caf56acf4e3966badb
-ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
+ms.openlocfilehash: 6bcec352121781162f5f03a14717fdea62515db2
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77609117"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77781194"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>Gerir o acesso à web utilizando o Microsoft Edge com o Microsoft Intune
 
@@ -171,7 +171,7 @@ Target Microsoft Edge com o seguinte par chave/valor, para ativar o Proxy de apl
 |-------------------------------------------------------------------|-------------|
 |    com.microsoft.intune.mam.managedbrowser.AppProxyRedirection    |    true    |
 
-Para obter mais informações sobre como utilizar o Microsoft Edge e o Azure AD Application Proxy em conjunto para acesso perfeito (e protegido) a aplicações web no local, consulte [Better together: Intune and Azure Ative Directory team up to improve us access](https://cloudblogs.microsoft.com/enterprisemobility/2017/07/06/better-together-intune-and-azure-active-directory-team-up-to-improve-user-access). Esta publicação de blog refere-se ao Navegador Gerido intune, mas o conteúdo também se aplica ao Microsoft Edge.
+Para obter mais informações sobre como utilizar o Microsoft Edge e o Azure AD Application Proxy em conjunto para acesso perfeito (e protegido) a aplicações web no local, consulte [Better together: Intune and Azure Ative Directory team up to improve us access](https://techcommunity.microsoft.com/t5/enterprise-mobility-security/better-together-intune-and-azure-active-directory-team-up-to/ba-p/250254). Esta publicação de blog refere-se ao Navegador Gerido intune, mas o conteúdo também se aplica ao Microsoft Edge.
 
 ## <a name="configure-a-homepage-shortcut-for-microsoft-edge"></a>Configure um atalho inicial para o Microsoft Edge
 

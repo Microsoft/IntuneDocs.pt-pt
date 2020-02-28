@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b780f22fd6823499128a3975f1812a1d1f7c032b
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 03bfdfb87c969381b582481367ab0457f6b50049
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77413779"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77781881"
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>O que é a gestão de dispositivos do Microsoft Intune?
 
@@ -39,7 +39,7 @@ A carga de trabalho **Dispositivos** dá-lhe informações aprofundadas sobre os
    - **A visão geral** mostra uma imagem visual dos dispositivos matriculados, e também mostra quantos dispositivos estão a usar as diferentes plataformas, incluindo Android, iOS/iPadOS, entre outros.
    - **Todos os dispositivos:** mostra uma lista dos dispositivos inscritos que está a gerir.
 
-     Utilize a funcionalidade **Exportar** para criar uma lista .csv de todos os dispositivos, em incrementos de 10 000 (Internet Explorer) ou 30 000 (Microsoft Edge, Chrome).
+     Utilize a função **Export** para criar uma lista .zip de todos os dispositivos, em incrementos de 10.000 (Internet Explorer) ou 30.000 (Microsoft Edge, Chrome).
 
      Selecione qualquer dispositivo para [visualizar detalhes adicionais sobre esse dispositivo](device-inventory.md), incluindo detalhes de hardware, aplicações instaladas, o seu estado de política de conformidade, e muito mais.
 

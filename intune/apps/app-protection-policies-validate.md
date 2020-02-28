@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 02/27/2020
 ms.service: microsoft-intune
 ms.subservice: apps
 ms.localizationpriority: high
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e9c3e775773ab08721cb3a65858f3d8c8402104f
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: ae6bfd71cb6730c9e71075df5ea2f45aa514178a
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74563743"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77781700"
 ---
 # <a name="how-to-validate-your-app-protection-policy-setup-in-microsoft-intune"></a>Como validar a configuração das políticas de proteção de aplicações no Microsoft Intune
 
@@ -43,8 +43,8 @@ Se os testes mostrarem que o comportamento da política de proteção de aplica�
 - O estado de cada uma das aplicações de proteção dos utilizadores é o previsto? Os estados possíveis para as aplicações são **Verificado** e **Não verificado**.
 
 ### <a name="user-app-protection-status"></a>Estado da proteção de aplicações do utilizador
-1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
-3. Selecione **aplicativos** >  **status de proteção do aplicativo**e, em seguida, selecione o bloco **usuários atribuídos** . 
+1. Inscreva-se no [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
+3. Selecione **Apps** >  estado de **proteção**da Aplicação e, em seguida, selecione o azulejo dos **utilizadores atribuídos.** 
 4. Na página **Relatório da aplicação**, selecione **Selecionar utilizador** para abrir uma lista de utilizadores e grupos. 
 5. Procure e selecione um utilizador na lista e, em seguida, escolha **Selecionar utilizador**. No parte superior do painel **Relatório da aplicação**, pode ver se o utilizador tem uma licença a proteção de aplicações. Também pode ver se o utilizador tem uma licença do Office 365 e o estado da aplicação de todos os dispositivos do utilizador.
 
@@ -56,7 +56,7 @@ Eis as ações a efetuar com base no estado de utilizador:
 - Se a aplicação de um utilizador estiver listada com o estado **Sem verificação**, verifique se configurou corretamente uma [política de proteção de aplicações](app-protection-policies-validate.md) para a mesma.
 - Confirme que estas condições se aplicam a todos os utilizadores aos quais quer aplicar as [políticas de proteção de aplicações](app-protection-policies-monitor.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [O que é uma política de proteção de aplicações do Intune?](app-protection-policies.md)
 - [Licenças que incluem o Intune](../fundamentals/licenses.md)

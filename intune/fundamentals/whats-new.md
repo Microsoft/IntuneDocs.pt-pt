@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 17bb4ca225fa93352428cbe208c2fc1a53812f2c
-ms.sourcegitcommit: 8b716db3c0fdbb7dff62497ec283902a5069a343
+ms.openlocfilehash: af8b46605d099a920ee512bce3ba94708b4a9eac
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77652306"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77781177"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 
@@ -67,6 +67,17 @@ Fizemos melhorias na experiência de inscrição de dispositivos macOS e na apli
 - Suporte para IDs de incidentecopiados, para que os seus utilizadores possam enviar erros dos seus dispositivos para a sua equipa de suporte da empresa mais rapidamente.
 
 Para obter mais informações sobre a inscrição e a aplicação Portal da Empresa para Mac, consulte [Inscrever o seu dispositivo macOS utilizando a aplicação Portal da Empresa.](/intune-user-help/enroll-your-device-in-intune-macos-cp) 
+
+#### <a name="app-protection-policies-for-better-mobile-now-supports-ios-and-ipados---6224512----"></a>As políticas de proteção de aplicações para Better Mobile suportam agora iOS e iPadOS<!-- 6224512  -->
+
+Em outubro de 2019, a política de proteção de aplicações Intune adicionou a capacidade de usar dados dos nossos parceiros de Defesa de Ameaças da Microsoft. Com esta atualização, pode agora utilizar uma política de proteção de aplicações para bloquear ou limpar seletivamente os dados corporativos dos utilizadores com base na saúde de um dispositivo que utiliza o Better Mobile no iOS e iPadOS.  Para mais informações, consulte [Create Mobile Threat Defense protection policy with Intune](../protect/mtd-app-protection-policy.md).
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="device-management"></a>Gestão de dispositivos
+
+#### <a name="exports-from-the-all-devices-list--now-in-zipped-csv-format--6343117--"></a>Exportações da lista de todos os dispositivos agora em formato CSV zipped<!--6343117-->
+As exportações dos **Dispositivos** > Todas as páginas **de dispositivos** estão agora em formato CSV zipped.
+
 
 <!-- ########################## -->
 ## <a name="week-of-february-17-2020-2002-service-release"></a>Semana de 17 de fevereiro de 2020 (lançamento de serviço de 2002)
@@ -164,7 +175,9 @@ A nova aplicação do Office da Microsoft está agora geralmente disponível par
 
 Para mais informações, consulte como ativar as políticas de [proteção de aplicações Intune com a aplicação de pré-visualização móvel do Office](https://techcommunity.microsoft.com/t5/intune-customer-success/support-tip-how-to-enable-intune-app-protection-policies-with/ba-p/1045493).
 
+
 <!-- ########################## -->
+
 ## <a name="week-of-february-10-2020"></a>Semana de 10 de fevereiro de 2020
 
 ### <a name="windows-7-ends-extended-support--3042987---"></a>Windows 7 termina suporte alargado<!--3042987 -->

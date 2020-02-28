@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 02/27/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6e00a2d3c245c1297f2ea28ab0184369e7d92980
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.openlocfilehash: c22fafce6583dd1e58d61e3fa8e6077b70998588
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77513950"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77781786"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>O que é a gestão de aplicações do Microsoft Intune?
 
@@ -85,7 +85,7 @@ Pode encontrar a maioria das informações relacionadas com aplicações na carg
 
 As próximas quatro secções descrevem as opções disponíveis no painel **apps.**
 
-### <a name="manage"></a>Gerir
+### <a name="manage"></a>Gerir o Endpoint Protection do
 - **Aplicações**: selecione esta opção para adicionar, ver, atribuir e monitorizar as aplicações que a sua força de trabalho utiliza. Para obter mais informações, consulte:
   - [Adicionar aplicações](apps-add.md).
   - [Atribuir aplicações](apps-deploy.md).

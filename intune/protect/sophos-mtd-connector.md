@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 04/30/2019
+ms.date: 02/21/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -15,16 +15,19 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7d17749353bc3904a3d99210a5d56531d9af9c28
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.openlocfilehash: 816968d512b73a8592c7a86b39c41057aa99e827
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77514817"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77782055"
 ---
 # <a name="sophos-mobile-threat-defense-connector-with-intune"></a>Conector de Defesa de Ameaças Móveis Sophos com Intune
 Pode controlar o acesso de dispositivos móveis a recursos corporativos utilizando acesso condicionado com base na avaliação de risco realizada pela Sophos Mobile, uma solução de Defesa de Ameaças Móveis (MTD) que se integra com a Microsoft Intune. O risco é avaliado com base na telemetria recolhida a partir de dispositivos que executam a aplicação Sophos Mobile.
 Pode configurar políticas de acesso condicional com base na avaliação de risco móvel Sophos ativada através de políticas de conformidade de dispositivos Intune, que pode utilizar para permitir ou bloquear dispositivos não conformes para aceder a recursos corporativos com base em ameaças detetadas.
+
+> [!NOTE]
+> Este fornecedor de Defesa de Ameaças Móveis não é suportado para dispositivos não matriculados.
 
 ## <a name="how-do-intune-and-sophos-mobile-help-protect-your-company-resources"></a>Como é que a Intune e a Sophos Mobile ajudam a proteger os recursos da sua empresa?
 A aplicação Sophos Mobile para Android e iOS/iPadOS captura sistema de ficheiros, pilha de rede, dispositivo e telemetria de aplicações sempre que disponível, e depois envia os dados de telemetria para o serviço de nuvem Sophos Mobile para avaliar o risco do dispositivo para ameaças móveis.

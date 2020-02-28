@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 04/08/2019
+ms.date: 2/27/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: remote-actions
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 41a46bd400c5901f0352709f6057bddac262ff9e
-ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
+ms.openlocfilehash: 931a1255a0b7aef6f776e8e0bf259e1ea0dd8d65
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77609370"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77781857"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Remover dispositivos ao apagar os dados, extinguir ou anular a inscrição do dispositivo de forma manual
 
@@ -47,8 +47,6 @@ A ação **Limpar** restaura um dispositivo para as predefinições de fábrica.
 
 A opção **Reter estado de inscrição e conta de utilizador** só está disponível para a versão 1709 ou posterior do Windows 10.
 
-A opção **'Eliminar'** não pode ser contornada a ação de limpeza não pode ser contornada desligando o dispositivo. Uma limpeza protegida continuará a tentar redefinir o dispositivo até ser bem sucedido. Em algumas configurações, esta ação pode deixar o dispositivo [incapaz de reiniciar](troubleshoot-device-actions.md#wipe-action).
-
 As políticas de MDM voltarão a ser aplicadas da próxima vez que o dispositivo estabelecer ligação ao Intune.
 
 Apagar é útil para repor um dispositivo antes de o atribuir a um novo utilizador ou em caso de perda ou roubo do dispositivo. Tenha cuidado quando selecionar a ação **Limpar**. Não é possível recuperar os dados no dispositivo.
@@ -71,8 +69,8 @@ Apagar é útil para repor um dispositivo antes de o atribuir a um novo utilizad
     |Dados de utilizador fora do perfil de utilizador||
     |Início de sessão automático de utilizador|| 
     
-         
-7. Para confirmar a limpeza, selecione **Sim**.
+7. O **dispositivo Wipe e continue a limpar mesmo que o dispositivo perca energia.** a opção garante que a ação de limpeza não pode ser contornada desligando o dispositivo. Esta opção continuará a tentar redefinir o dispositivo até ser bem sucedido. Em algumas configurações, esta ação pode deixar o dispositivo [incapaz de reiniciar](troubleshoot-device-actions.md#wipe-action).        
+8. Para confirmar a limpeza, selecione **Sim**.
 
 Se o dispositivo estiver ativado e ligado, a ação **Limpar** propaga-se a todos os tipos de dispositivo em menos de 15 minutos.
 

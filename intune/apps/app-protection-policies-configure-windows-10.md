@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 02/27/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 41c08d1912bf9c79507c2a6627205979504f340d
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 66cf454290903705d8500c2b1f9a07c9097351bf
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74564230"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77781744"
 ---
 # <a name="get-ready-to-configure-app-protection-policies-for-windows-10"></a>Preparar-se para configurar políticas de proteção de aplicações para o Windows 10 
 
@@ -33,12 +33,12 @@ Ative a gestão de aplicações móveis (MAM) para o Windows 10 ao definir o for
 
 ## <a name="to-configure-the-mam-provider"></a>Para configurar o fornecedor de MAM
 
-1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
-2. Selecione **todos os serviços** e escolha **M365 Azure Active Directory** para alternar os painéis.
-3. Selecione **Azure Active Directory**.
+1. Inscreva-se no [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **Todos os serviços** e escolha o **M365 Azure Ative Directory** para trocar de dashboards.
+3. Selecione **Diretório Ativo Azure**.
 4. Selecione **Mobilidade (MDM e MAM)** no grupo **Gerir**.
 5. Clique em **Microsoft Intune**.
-6. Defina as configurações no grupo **restaurar URLs padrão do MAM** no painel **Configurar** .
+6. Configure as definições no grupo **Derisque MAM URLs** no painel **Configure.**
 
    **Âmbito de utilizador MAM**  
    Utilize a inscrição automática MAM para gerir dados empresariais nos dispositivos Windows dos seus funcionários. A inscrição automática MAM será configurada para cenários de Bring Your Own Device.<ul><li>**Nenhum**<br>Selecione se nenhum utilizador pode ser inscrito na MAM.</li><li>**Alguns**<br>Selecione grupos do Azure AD que contenham utilizadores que serão inscritos na MAM.</li><li>**Todos**<br>Selecione se todos os utilizadores podem ser inscritos na MAM.</li></ul>
