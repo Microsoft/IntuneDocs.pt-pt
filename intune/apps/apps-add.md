@@ -18,20 +18,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 80390c638aa038769bdf972b7355dfa221c6cda2
-ms.sourcegitcommit: 9ee2401a2f01373a962749b0728c22385dbcba6d
+ms.openlocfilehash: 6a4952f8e747c5a42e2159461da8e87465bc41d4
+ms.sourcegitcommit: fab685b22a010fe231b27a0c5eda34a6f22f4c8d
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/29/2020
-ms.locfileid: "78181794"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78216059"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Adicionar aplicações ao Microsoft Intune 
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-Antes de poder atribuir, monitorizar, configurar ou proteger aplicações, tem de adicioná-las ao Microsoft Intune.
+Antes de configurar, atribuir, proteger ou monitorizar aplicações, deve adicioná-las ao Microsoft Intune.
 
-Os utilizadores de aplicações e dispositivos na sua empresa (a força de trabalho da empresa) podem ter vários requisitos da aplicação. Antes de adicionar aplicações ao Intune e disponibilizá-las à sua força de trabalho, tem de avaliar e compreender algumas noções básicas sobre aplicações. Tem de compreender os diferentes tipos de aplicações disponíveis para o Intune. Tem de avaliar os requisitos da aplicação, tais como as plataformas e funcionalidades de que a sua força de trabalho precisa. Tem de determinar se vai utilizar o Intune para gerir os dispositivos (incluindo aplicações) ou se o Intune vai gerir as aplicações sem gerir os dispositivos. Por fim, tem de determinar as aplicações e as capacidades de que a sua força de trabalho precisa e quem precisa delas. As informações neste artigo ajudam-no a começar.
+Os utilizadores de aplicações e dispositivos na sua empresa (a força de trabalho da empresa) podem ter vários requisitos da aplicação. Antes de adicionar aplicações ao Intune e disponibilizá-las à sua força de trabalho, poderá ser útil avaliar e compreender alguns fundamentos da aplicação. Existem vários tipos de aplicações que estão disponíveis para o Intune. Deve determinar os requisitos da aplicação que são necessários pelos utilizadores da sua empresa, tais como as plataformas e capacidades de que a sua força de trabalho necessita. Tem de determinar se vai utilizar o Intune para gerir os dispositivos (incluindo aplicações) ou se o Intune vai gerir as aplicações sem gerir os dispositivos. Além disso, deve determinar as aplicações e capacidades de que a sua força de trabalho precisa e quem precisa delas. As informações neste artigo ajudam-no a começar.
 
 ## <a name="app-types-in-microsoft-intune"></a>Tipos de aplicações no Microsoft Intune
 
@@ -110,7 +110,7 @@ Utilize o [Guia de planeamento, estruturação e implementação do Intune](../f
 
 Pode selecionar de entre os seguintes tipos de aplicações:
 - **Apps da loja**: Apps que foram enviadas para a loja microsoft, a loja iOS/iPadOS ou a loja Android são aplicações de loja. O fornecedor da aplicação da loja encarrega-se da manutenção e disponibiliza atualizações à aplicação. Tem de selecionar a aplicação na lista da loja e adicioná-la com o Intune como uma aplicação disponível para os seus utilizadores.
-- **Aplicações escritas internamente (linha de negócio)** : as aplicações criadas internamente são aplicações de linha de negócio (LOB). A funcionalidade deste tipo de aplicações foi criada para uma das plataformas suportadas pelo Intune, como windows, iOS/iPadOS, macOS ou Android. A sua organização cria e fornece atualizações como um ficheiro separado. Tem de fornecer atualizações da aplicação aos utilizadores ao adicionar e implementar as atualizações com o Intune.
+- **Aplicações escritas internamente (linha de negócio)**: as aplicações criadas internamente são aplicações de linha de negócio (LOB). A funcionalidade deste tipo de aplicações foi criada para uma das plataformas suportadas pelo Intune, como windows, iOS/iPadOS, macOS ou Android. A sua organização cria e fornece atualizações como um ficheiro separado. Tem de fornecer atualizações da aplicação aos utilizadores ao adicionar e implementar as atualizações com o Intune.
 - **Aplicações na Web**: são aplicações de servidor de cliente. O servidor proporciona a aplicação Web, que inclui a IU, conteúdos e funcionalidades. Além disso, normalmente as plataformas de alojamento na Web modernas oferecem segurança, balanceamento de carga e outras vantagens. A manutenção deste tipo de aplicação é feita separadamente na Web. Tem de utilizar o Intune para apontar para este tipo de aplicação. Também tem de designar que grupos de utilizadores podem aceder à aplicação. Tenha em atenção que o Android não suporta aplicações Web.
 
 Ao determinar as aplicações necessárias para a sua organização, tenha em consideração a forma como estas aplicações se integram com serviços cloud, os dados aos quais as aplicações podem aceder, se as aplicações estão disponíveis para utilizadores BYOD e se as aplicações precisam de acesso à Internet.
@@ -128,9 +128,9 @@ As aplicações geridas pelo Intune também permitem a proteção de aplicaçõe
 
 ### <a name="understanding-licensed-apps"></a>Compreender as aplicações licenciadas
 Para além de compreender as aplicações Web, aplicações da loja e aplicações LOB, também deve ter em atenção o destino das aplicações licenciadas e aplicações de programa de compras em volume, tais como: 
-- **Apple Volume Purchase Program for Business (iOS)** : A loja de aplicações iOS/iPadOS permite-lhe adquirir várias licenças para uma aplicação que pretende executar na sua empresa. A compra de várias cópias ajuda-o a gerir aplicações na sua empresa de forma eficiente. Para mais informações, consulte [Gerir aplicações adquiridas em volume iOiOS/iPadOSS.](vpp-apps-ios.md)
+- **Apple Volume Purchase Program for Business (iOS)**: A loja de aplicações iOS/iPadOS permite-lhe adquirir várias licenças para uma aplicação que pretende executar na sua empresa. A compra de várias cópias ajuda-o a gerir aplicações na sua empresa de forma eficiente. Para mais informações, consulte [Gerir aplicações adquiridas em volume iOiOS/iPadOSS.](vpp-apps-ios.md)
 - **Perfil de trabalho do Android**: a forma como atribui aplicações em dispositivos com perfil de trabalho do Android é diferente em dispositivos Android padrão. Todas as aplicações que instala em dispositivos com perfil de trabalho do Android são provenientes da Google Play Store gerida. Pode utilizar o Intune para procurar as aplicações pretendidas e aprová-las. Em seguida, a aplicação aparece no nó **Aplicações licenciadas** do portal do Azure e pode gerir a atribuição da aplicação como faria com qualquer outra aplicação.
-- **Microsoft Store para Empresas (Windows 10)** : a Microsoft Store para Empresas dá-lhe um local para encontrar e comprar aplicações para a sua organização, individualmente ou em volume. Ao ligar a loja ao Microsoft Intune, pode gerir as aplicações compradas em volume no portal do Azure. Para obter mais informações, veja [Gerir aplicações a partir da Microsoft Store para Empresas](windows-store-for-business.md).
+- **Microsoft Store para Empresas (Windows 10)**: a Microsoft Store para Empresas dá-lhe um local para encontrar e comprar aplicações para a sua organização, individualmente ou em volume. Ao ligar a loja ao Microsoft Intune, pode gerir as aplicações compradas em volume no portal do Azure. Para obter mais informações, veja [Gerir aplicações a partir da Microsoft Store para Empresas](windows-store-for-business.md).
 
     > [!NOTE]
     > As extensões de ficheiros de aplicações do Windows incluem **.msi**, **.appx**, **.appxbundle**, **.msix** e **.msixbundle**.  
@@ -144,7 +144,7 @@ Considere os seguintes pontos antes de começar a adicionar e a atribuir as apli
 > [!IMPORTANT]
 > Se alterar o nome da aplicação através do portal do Azure no Intune após ter implementado e instalado a aplicação, a mesma deixará de poder ser visada através de comandos.
 
-## <a name="cloud-storage-space"></a>Espaço de armazenamento na nuvem
+## <a name="cloud-storage-space"></a>Espaço de armazenamento na cloud
 Todas as aplicações que criar com o tipo de instalação do instalador de software (por exemplo, uma aplicação de linha de negócio) são empacotadas e carregadas para o armazenamento na cloud do Intune. Uma subscrição de avaliação do Intune inclui 2 gigabytes (GB) de armazenamento baseado na cloud, o qual é utilizado para armazenar aplicações e atualizações geridas. Uma subscrição completa não limita a quantidade de armazenamento total.
 
 Requisitos de espaço de armazenamento na cloud:
@@ -167,7 +167,7 @@ Quando adiciona uma aplicação ao Intune, é-lhe dada a opção de selecionar a
 5. Realize um dos seguintes procedimentos:
     - Para adicionar uma categoria, no painel **Criar categoria**, selecione **Adicionar** e, em seguida, introduza um nome para a categoria.  
     Os nomes podem ser introduzidos em apenas um idioma e não são traduzidos pelo Intune.
-    - Para editar uma categoria, selecione as reticências ( **...** ) junto à categoria e, em seguida, selecione **Afixar ao dashboard** ou **Eliminar**.
+    - Para editar uma categoria, selecione as reticências (**...**) junto à categoria e, em seguida, selecione **Afixar ao dashboard** ou **Eliminar**.
 6. Selecione **Criar**.
 
 ## <a name="apps-that-are-added-automatically-by-intune"></a>Aplicações adicionadas automaticamente pelo Intune

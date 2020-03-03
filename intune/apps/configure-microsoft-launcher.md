@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 02/26/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b0145a17434d8b309806f468bf066d54ae117144
-ms.sourcegitcommit: 1aaff35fddb3d06458d739968d28971fed0bb2ba
+ms.openlocfilehash: 55f76b0c5c71f7828fed17233c2b81d6b066cc3b
+ms.sourcegitcommit: fab685b22a010fe231b27a0c5eda34a6f22f4c8d
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "77155365"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78216114"
 ---
 # <a name="configure-microsoft-launcher"></a>Configurar o Microsoft Launcher
 
@@ -55,7 +55,7 @@ O designer de configuração permite-lhe selecionar configurações pré-povoada
 
 A tabela que se segue lista as teclas de configuração disponíveis do Microsoft Launcher, tipos de valor, valores predefinidos e descrições. A descrição fornece o comportamento esperado do dispositivo com base nos valores selecionados. As teclas de configuração que são desativadas no Designer de Configuração não estão listadas na tabela.
 
-|    Chave de Configuração    |    Tipo de valor    |    Valor predefinido    |    Descrição     |
+|    Chave de Configuração    |    Tipo de valor    |    Valor predefinido    |    Description     |
 |---------------------------------------------------|------------------|---------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    Tipo de inscrição    |    Cadeia     |    Predefinição    |    Permite-lhe definir o tipo de inscrição a que esta política deve aplicar-se. Atualmente, o valor **Default** refere-se a **CorporateOwnedBuisnessOnly**. Não existem outros tipos de matrículas suportados neste momento.        Nome-chave JSON: management_mode_key        |
 |    Mudança permitida por ordem de aplicação de tela inicial    |    Booleano    |    Verdadeiro    |    Permite especificar se a definição de Pedido de **Aplicações** de Ecrã Inicial pode ser alterada pelo utilizador final.<ul><li>Se definido para **True**, a ordem da aplicação definida na política só será aplicada para a implementação inicial. Posteriormente, a política não será aplicada para respeitar quaisquer alterações que o utilizador possa ter feito.</li><li>Se definido para **Falso,** a ordem da aplicação será executada em cada sincronização.</li></ul><br>**Nota:** A aplicação de ecrã inicial só pode ser configurada através do editor da JSON.<br><br>Nome-chave JSON:<br>`com.microsoft.launcher.HomeScreen.AppOrder.UserChangeAllowed`    |
@@ -73,7 +73,7 @@ Introduza os dados da JSON para configurar todas as definições disponíveis pa
 
 Além da lista de configurações configuráveis listadas na tabela 'Configuração Designer' (acima), a tabela seguinte fornece as teclas de configuração que só pode configurar através de dados jSON.
 
-|    Chave de Configuração    |    Tipo de valor    |    Valor predefinido    |    Descrição     |
+|    Chave de Configuração    |    Tipo de valor    |    Valor predefinido    |    Description     |
 |----------------------------------------------------------------------------------------------------|-------------------|-------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    Definir aplicações listadas por permitir<br>Tecla JSON:`com.microsoft.launcher.HomeScreen.Applications`    |    BundleArray    | Ver: [Definir aplicações listadas por permitir](configure-microsoft-launcher.md#set-allow-listed-applications)</sup>    |    Permite definir o conjunto de aplicações visíveis no ecrã principal entre as aplicações instaladas no dispositivo. Pode definir as aplicações ao introduzir o nome do pacote de aplicações das aplicações que gostaria de tornar visíveis, por exemplo, `com.android.settings` tornariaas as definições acessíveis no ecrã principal. As aplicações que permite listar nesta secção já devem ser instaladas no dispositivo para serem visíveis no ecrã principal.<p>Propriedades:<ul><li>**Pacote:** O nome do pacote de candidatura</li><li>**Classe:** A atividade da aplicação, que é específica para uma determinada página de aplicações. Utilizaria a página de aplicações padrão se este valor estiver vazio.</li></ul>      |
 |    Ordem de aplicação de tela principal<br>Tecla JSON: `com.microsoft.launcher.HomeScreen.AppOrder`    |    BundleArray    |    Ver: Pedido de [aplicação de ecrã inicial](configure-microsoft-launcher.md#home-screen-app-order)      |    Permite especificar a encomenda da aplicação no ecrã principal.<p>Propriedades:<br><ul><li>**Tipo:** O único tipo suportado é `application`.</li><li>**Posição:** A ranhura do ícone da aplicação no ecrã principal. Isto começa a partir da posição 1 na parte superior esquerda, e vai da esquerda para a direita, de cima para baixo.</li><li>**Pacote:** O nome do pacote de candidatura.</li><li>**Classe:** A atividade da aplicação, que é específica para uma determinada página de aplicações. A página de aplicações padrão será usada se este valor estiver vazio.</li></ul>    |

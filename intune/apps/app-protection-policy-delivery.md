@@ -1,7 +1,7 @@
 ---
-title: Entender a entrega e o tempo da política de proteção de aplicativo
+title: Compreender a entrega e o timing da política de proteção de aplicações
 titleSuffix: Microsoft Intune
-description: Conheça as diferentes janelas de implantação para as políticas de proteção de aplicativo para entender quando as alterações devem aparecer em seus dispositivos de usuário final.
+description: Aprenda as diferentes janelas de implementação para que as políticas de proteção de aplicações compreendam quando as alterações devem aparecer nos seus dispositivos de utilizador final.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -18,34 +18,35 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e0ed343f652c4afe87273eeaa4a2e35b7669056d
-ms.sourcegitcommit: 637375a390b6e34f9c4415c77b99fe2980bbf554
+ms.openlocfilehash: d26721ff27f380917fec7f4d23c0c5524737a4a3
+ms.sourcegitcommit: fab685b22a010fe231b27a0c5eda34a6f22f4c8d
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75839230"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78216161"
 ---
-# <a name="understand-app-protection-policy-delivery-timing"></a>Entender o tempo de entrega da política de proteção do aplicativo
+# <a name="understand-app-protection-policy-delivery-timing"></a>Compreender o timing de entrega da política de proteção de aplicações
 
-Conheça as diferentes janelas de implantação para as políticas de proteção de aplicativo para entender quando as alterações devem aparecer em seus dispositivos de usuário final.
+Aprenda as diferentes janelas de implementação para que as políticas de proteção de aplicações compreendam quando as alterações devem aparecer nos seus dispositivos de utilizador final.
 
-## <a name="delivery-timing-summary"></a>Resumo do tempo de entrega
+## <a name="delivery-timing-summary"></a>Resumo do prazo de entrega
 
-A entrega de política de proteção de aplicativo depende do estado da licença e do registro do serviço do Intune para seus usuários.  
+A entrega da política de proteção de aplicações depende do estado de licença e do registo do serviço Intune para os seus utilizadores.  
 
-|    Estado de Utilizador    |    Comportamento de proteção do aplicativo     |    Intervalo de repetição (consulte a observação)    |    Por que isso acontece?    |
+|    Estado de Utilizador    |    Comportamento de Proteção de Aplicativos     |    Intervalo de repetição (ver nota)    |    Por que isso acontece?    |
 |-----------------------------------------------------|-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
-|    Locatário não integrado    |    Aguarde o próximo intervalo de repetição.  A proteção do aplicativo não está ativa para o usuário.    |    24 horas    |    Ocorre quando você não configura seu locatário para o Intune.    |
-|    Usuário não licenciado     |    Aguarde o próximo intervalo de repetição.  A proteção do aplicativo não está ativa para o usuário.     |    12 horas-no entanto, em dispositivos Android, esse intervalo requer o SDK de aplicativo do Intune versão 5.6.0 ou posterior. Caso contrário, para dispositivos Andriod, o intervalo é de 24 horas.   |    Ocorre quando você não licencia o usuário para o Intune.    |
-|    O usuário não atribuiu políticas de proteção de aplicativo    |    Aguarde o próximo intervalo de repetição.  A proteção do aplicativo não está ativa para o usuário.    |    12 horas        |    Ocorre quando você não atribui configurações de aplicativo ao usuário.    |
-|    Usuário registrado com êxito para o MAM do Intune    |    A proteção do aplicativo é aplicada por configurações de política.    As atualizações ocorrem com base no intervalo de repetição    |    Serviço do Intune definido com base na carga do usuário.    Normalmente, 30 minutos.     |    Ocorre quando o usuário é registrado com êxito com o serviço do Intune para configuração de MAM.    |
+|    Inquilino Não Abordo    |    Aguarde o próximo intervalo de repetição.  A Proteção de Aplicações não está ativa para o utilizador.    |    24 horas    |    Ocorre quando não instalou o seu inquilino para o Intune.    |
+|    Utilizador não licenciado     |    Aguarde o próximo intervalo de repetição.  A Proteção de Aplicações não está ativa para o utilizador.     |    12 horas - No entanto, em dispositivos Android este intervalo requer a versão 5.6.0 da APP SDK intune. Caso contrário, para os dispositivos Andriod, o intervalo é de 24 horas.   |    Ocorre quando não licenciou o utilizador para o Intune.    |
+|    Políticas de proteção de aplicações não atribuídas ao utilizador    |    Aguarde o próximo intervalo de repetição.  A Proteção de Aplicações não está ativa para o utilizador.    |    12 horas        |    Ocorre quando não atribuiu as definições de APP ao utilizador.    |
+|    Políticas de proteção de aplicações atribuídas ao utilizador, mas a app não está definida nas Políticas de Proteção de Aplicações   |    Aguarde o próximo intervalo de repetição.  A Proteção de Aplicações não está ativa para o utilizador.    |    12 horas        |    Ocorre quando não adicionou a app à APP.    |
+|    Utilizador registado com sucesso para Intune MAM    |    A Proteção de Aplicações é aplicada de acordo com as definições de política.    As atualizações ocorrem com base no intervalo de repetição    |    Serviço Intune definido com base na carga do utilizador.    Normalmente 30 minutos.     |    Ocorre quando o utilizador se registou com sucesso no serviço Intune para a configuração MAM.    |
 
 > [!NOTE]
-> Os intervalos de repetição podem exigir que o uso do aplicativo ativo ocorra, o que significa que o aplicativo é iniciado e em uso.  Se o intervalo de repetição é de 24 horas e o usuário aguarda 48 horas para iniciar o aplicativo, o cliente de proteção de aplicativo tentará novamente às 48 horas.
+> Intervalos de repetição podem exigir a utilização ativa da aplicação, o que significa que a aplicação é lançada e em uso.  Se o intervalo de repetição for de 24 horas e o utilizador esperar 48 horas para lançar a aplicação, o cliente de Proteção de Aplicações voltará a tentar às 48 horas.
 
-## <a name="handling-network-connectivity-issues"></a>Lidando com problemas de conectividade de rede
+## <a name="handling-network-connectivity-issues"></a>Lidar com problemas de conectividade da rede
 
-Quando o registro de usuário falha devido a problemas de conectividade de rede, é usado um intervalo de repetição acelerado.  O cliente de proteção de aplicativo tentará novamente em intervalos cada vez mais longos até que o intervalo atinja 60 minutos ou uma conexão bem-sucedida seja feita.  O cliente continuará a tentar novamente a intervalos de 60 minutos até que uma conexão bem-sucedida seja feita. Em seguida, o cliente voltará ao intervalo de repetição padrão com base no estado do usuário.
+Quando o registo do utilizador falha devido a problemas de conectividade de rede, é utilizado um intervalo de repetição acelerado.  O cliente de Proteção de Aplicações irá voltar a tentar em intervalos cada vez mais longos até que o intervalo atinja 60 minutos ou seja feita uma ligação bem sucedida.  O cliente continuará então a tentar novamente em intervalos de 60 minutos até que seja feita uma ligação bem sucedida. Em seguida, o cliente voltará ao intervalo padrão de repetição com base no estado do utilizador.
 
 ## <a name="next-steps"></a>Próximos passos
 

@@ -1,12 +1,12 @@
 ---
-title: Política de proteção de aplicativo WIP (proteção de informações do Windows)
+title: Política de proteção de aplicações para proteção de informações do Windows (WIP)
 titleSuffix: Microsoft Intune
 description: Criar e implementar a política de proteção de aplicações do Windows Information Protection (WIP) com o Microsoft Intune
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 02/26/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8d1a8ee3f6d5eb190fb2ee252dfb5f6c23a1cf16
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 8ae5e45c521046fb414a1d141c6859c7a4e5d61a
+ms.sourcegitcommit: fab685b22a010fe231b27a0c5eda34a6f22f4c8d
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74563775"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78216131"
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Criar e implementar a política de proteção de aplicações do Windows Information Protection (WIP) com o Intune
 
@@ -71,51 +71,51 @@ Depois de configurar o Intune na sua organização, pode criar uma política esp
 > Para obter informações relacionadas sobre a criação de políticas WIP do Intune, incluindo as definições disponíveis e como configurá-las, veja [Create a Windows Information Protection (WIP) policy with MAM using the Azure portal for Microsoft Intune](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-mam-intune-azure) (Criar uma política Windows Information Protection (WIP) com a MAM no portal do Azure para o Microsoft Intune) na biblioteca de documentação de Segurança do Windows. 
 
 
-1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
-2. Selecione **aplicativos** > **políticas de proteção de aplicativo** > **criar política**.
+1. Inscreva-se no [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **Apps** > políticas de **proteção** de aplicações > **Criar a política**.
 3. Adicione os seguintes valores:
     - **Nome:** introduza um nome (obrigatório) para a nova política.
     - **Descrição:** (opcional) escreva uma descrição.
     - **Plataforma:** escolha o **Windows 10** como a plataforma suportada para a política de proteção de aplicações.
     - **Estado de inscrição:** escolha **Sem inscrição** como o estado de inscrição da política.
-4. Selecione **Criar**. A política é criada e aparece na tabela no painel **políticas de proteção de aplicativo** .
+4. Selecione **Criar**. A política é criada e aparece na tabela sobre o painel de políticas de proteção da **App.**
 
 ## <a name="to-add-recommended-apps-to-your-protected-apps-list"></a>Para adicionar aplicações recomendadas à lista de aplicações protegidas
 
-1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
-2. Selecione **aplicativos** > **políticas de proteção de aplicativo**.
-3. No painel **políticas de proteção de aplicativo** , escolha a política que você deseja modificar. O painel de **proteção de aplicativo do Intune** é exibido.
-4. Escolha **aplicativos protegidos** no painel de **proteção de aplicativo do Intune** . O painel **aplicativos protegidos** é aberto mostrando todos os aplicativos que já estão incluídos na lista para essa política de proteção de aplicativo.
-5. Selecione **Adicionar aplicações**. As informações **Adicionar aplicações** mostram uma lista de aplicações filtrada. A lista na parte superior do painel permite que você altere o filtro de lista.
+1. Inscreva-se no [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **Apps** > políticas de proteção de **aplicações**.
+3. No painel de políticas de proteção da **App,** escolha a política que pretende modificar. O painel **de proteção de aplicações Intune** é apresentado.
+4. Escolha **aplicativos protegidos** do painel de proteção de **aplicações intune.** O painel de **aplicações protegidas** abre mostrando-lhe todas as aplicações que já estão incluídas na lista para esta política de proteção de aplicações.
+5. Selecione **Adicionar aplicações**. As informações **Adicionar aplicações** mostram uma lista de aplicações filtrada. A lista na parte superior do painel permite alterar o filtro da lista.
 6. Selecione todas as aplicações que pretende que acedam aos seus dados empresariais.
-7. Clique em **OK**. O painel **aplicativos protegidos** é atualizado mostrando todos os aplicativos selecionados.
+7. Clique em **OK**. O painel de **aplicações protegidas** é atualizado mostrando todas as aplicações selecionadas.
 8. Clique em **Guardar**.
 
 ## <a name="add-a-store-app-to-your-protected-apps-list"></a>Adicionar uma aplicação da loja à lista de aplicações protegidas
 
 **Para adicionar uma aplicação da Loja**
 
-1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
-2. Selecione **aplicativos** > **políticas de proteção de aplicativo**.
-3. No painel **políticas de proteção de aplicativo** , escolha a política que você deseja modificar. O painel de **proteção de aplicativo do Intune** é exibido.
-4. Escolha **aplicativos protegidos** no painel de **proteção de aplicativo do Intune** . O painel **aplicativos protegidos** é aberto mostrando todos os aplicativos que já estão incluídos na lista para essa política de proteção de aplicativo.
-5. Selecione **Adicionar aplicações**. As informações **Adicionar aplicações** mostram uma lista de aplicações filtrada. A lista na parte superior do painel permite que você altere o filtro de lista.
+1. Inscreva-se no [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **Apps** > políticas de proteção de **aplicações**.
+3. No painel de políticas de proteção da **App,** escolha a política que pretende modificar. O painel **de proteção de aplicações Intune** é apresentado.
+4. Escolha **aplicativos protegidos** do painel de proteção de **aplicações intune.** O painel de **aplicações protegidas** abre mostrando-lhe todas as aplicações que já estão incluídas na lista para esta política de proteção de aplicações.
+5. Selecione **Adicionar aplicações**. As informações **Adicionar aplicações** mostram uma lista de aplicações filtrada. A lista na parte superior do painel permite alterar o filtro da lista.
 6. A partir da lista, selecione **Aplicações da loja**.
 7. Introduza os valores para **Nome**, **Fabricante**, **Nome do Produto** e **Ação**. Certifique-se de que define o valor **Ação** para **Permitir**, para que a aplicação tenha acesso aos seus dados empresariais.
-9. Clique em **OK**. O painel **aplicativos protegidos** é atualizado mostrando todos os aplicativos selecionados.
+9. Clique em **OK**. O painel de **aplicações protegidas** é atualizado mostrando todas as aplicações selecionadas.
 10. Clique em **Guardar**.
 
 ## <a name="add-a-desktop-app-to-your-protected-apps-list"></a>Adicionar uma aplicação de ambiente de trabalho à lista de aplicações protegidas
 
 **Para adicionar uma aplicação de ambiente de trabalho**
-1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
-2. Selecione **aplicativos** > **políticas de proteção de aplicativo**.
-3. No painel **políticas de proteção de aplicativo** , escolha a política que você deseja modificar. O painel de **proteção de aplicativo do Intune** é exibido.
-4. Escolha **aplicativos protegidos** no painel de **proteção de aplicativo do Intune** . O painel **aplicativos protegidos** é aberto mostrando todos os aplicativos que já estão incluídos na lista para essa política de proteção de aplicativo.
-5. Selecione **Adicionar aplicações**. As informações **Adicionar aplicações** mostram uma lista de aplicações filtrada. A lista na parte superior do painel permite que você altere o filtro de lista.
+1. Inscreva-se no [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Selecione **Apps** > políticas de proteção de **aplicações**.
+3. No painel de políticas de proteção da **App,** escolha a política que pretende modificar. O painel **de proteção de aplicações Intune** é apresentado.
+4. Escolha **aplicativos protegidos** do painel de proteção de **aplicações intune.** O painel de **aplicações protegidas** abre mostrando-lhe todas as aplicações que já estão incluídas na lista para esta política de proteção de aplicações.
+5. Selecione **Adicionar aplicações**. As informações **Adicionar aplicações** mostram uma lista de aplicações filtrada. A lista na parte superior do painel permite alterar o filtro da lista.
 6. A partir da lista, selecione **Aplicações de ambiente de trabalho**.
 7. Introduza os valores para **Nome**, **Fabricante**, **Nome do Produto**, **Ficheiro**, **Versão Mínima**, **Versão Máxima** e **Ação**. Certifique-se de que define o valor **Ação** para **Permitir**, para que a aplicação tenha acesso aos seus dados empresariais.
-9. Clique em **OK**. O painel **aplicativos protegidos** é atualizado mostrando todos os aplicativos selecionados.
+9. Clique em **OK**. O painel de **aplicações protegidas** é atualizado mostrando todas as aplicações selecionadas.
 10. Clique em **Guardar**.
 
 ## <a name="wip-learning"></a>Aprendizagem de WIP
@@ -148,9 +148,9 @@ Depois de desativar o WIP, é realizada uma tentativa para desencriptar quaisque
 
 ### <a name="add-a-protection-mode"></a>Adicionar um modo de proteção
 
-1. No painel **política de aplicativo** , escolha o nome da política e escolha **configurações necessárias**.
+1. A partir do painel de política da **App,** escolha o nome da sua apólice e, em seguida, escolha **as definições necessárias**.
 
-    ![Captura de tela do painel de modo de aprendizado](./media/windows-information-protection-policy-create/learning-mode-sc1.png)
+    ![Screenshot do painel do modo de aprendizagem](./media/windows-information-protection-policy-create/learning-mode-sc1.png)
 
 1. Selecione uma definição e, em seguida, selecione **Guardar**.
 
@@ -158,7 +158,7 @@ Depois de desativar o WIP, é realizada uma tentativa para desencriptar quaisque
 
 1. Abra o [portal do Azure](https://portal.azure.com). Selecione **Todos os serviços**. Escreva **Intune** no filtro da caixa de texto.
 
-3. Escolha **Intune** > **aplicativos**.
+3. Escolha **Intune** > **Apps**.
 
 4. Selecione **Estado de proteção da aplicação** > **Relatórios** > **Aprendizagem de Windows Information Protection**.  
 
@@ -186,9 +186,9 @@ Além de definir a opção **Permitir que o Indexador do Windows Search procure 
 
 Depois de criar a política de proteção de aplicações do WIP, tem de a implementar na sua organização através da MAM.
 
-1. No painel **política de aplicativo** , escolha sua política de proteção de aplicativo recém-criada, escolha **grupos de usuários** > **Adicionar grupo de usuários**.
+1. No painel de política da **App,** escolha a sua política de proteção de aplicações recém-criada, escolha **grupos de utilizadores** > **Adicionar grupo de utilizadores**.
 
-    Uma lista de grupos de usuários, compostos de todos os grupos de segurança na sua Azure Active Directory, é aberta no painel **Adicionar grupo de usuários** .
+    Uma lista de grupos de utilizadores, composto por todos os grupos de segurança do seu Diretório Ativo Azure, abre no painel do **grupo de utilizadores Add.**
 
 2. Selecione o grupo ao qual pretende aplicar a sua política e, em seguida, escolha **Selecionar** para implementá-la.
 

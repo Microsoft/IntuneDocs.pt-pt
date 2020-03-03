@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 02/26/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f7c2bd0603961b9d618b3f743ecb323fb7fc9823
-ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
+ms.openlocfilehash: ff2ed62695bad781b7b55ac590e9b97490ba2416
+ms.sourcegitcommit: fab685b22a010fe231b27a0c5eda34a6f22f4c8d
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77437873"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78216084"
 ---
 # <a name="how-to-manage-iosipados-ebooks-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Como gerir os iOS/iPadOS eBooks que adquiriu através de um programa de compra de volume com o Microsoft Intune
 
@@ -74,7 +74,7 @@ Pode sincronizar os dados retidos pela Apple com o Intune em qualquer altura, se
 ## <a name="to-assign-a-volume-purchased-app"></a>Para atribuir uma aplicação comprada em volume
 
 1. Selecione **Apps** > **eBooks** > **Todos os livros eletrónicos.**
-2. No painel da lista de livros, selecione o livro que pretende atribuir e, em seguida, selecione " **...** " > **Atribuir Grupos**.
+2. No painel da lista de livros, selecione o livro que pretende atribuir e, em seguida, selecione "**...**" > **Atribuir Grupos**.
 3. No painel <*nome do livro*> - **Grupos Atribuídos**, selecione **Gerir** > **Grupos Atribuídos**.
 4. Selecione **Atribuir Grupos** e, no painel **Selecionar grupos**, selecione os grupos de utilizadores do Azure AD aos quais quer atribuir o livro. Os grupos de dispositivos não são atualmente suportados.
 Selecione a ação de atribuição **Disponível** ou **Obrigatório**. 

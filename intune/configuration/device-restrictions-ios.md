@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1e352ca0c0100ebe1756d621feb725e040521901
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.openlocfilehash: 86bb9edf96911379631068925315959468f65872
+ms.sourcegitcommit: fab685b22a010fe231b27a0c5eda34a6f22f4c8d
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77513077"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78216019"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>Definições de dispositivos iOS e iPadOS para permitir ou restringir funcionalidades usando Intune
 
@@ -196,7 +196,7 @@ Estas definições são adicionadas a um perfil de configuração do dispositivo
   > [!NOTE]
   > O Intune UI para esta definição não separa os valores suportados pelo iOS e iPadOS. A UI pode ser atualizada num futuro lançamento.
 
-- **Expiração da palavra-passe (dias)** : Introduza o número de dias antes de a palavra-passe do dispositivo ser alterada.
+- **Expiração da palavra-passe (dias)**: Introduza o número de dias antes de a palavra-passe do dispositivo ser alterada.
 - **Evite a reutilização de senhas anteriores**: Introduza o número de novas palavras-passe que devem ser utilizadas até que uma antiga possa ser reutilizada.
 - **Touch ID e Face ID desbloqueie**: Escolha **o Bloco** para evitar a utilização de uma impressão digital ou rosto para desbloquear o dispositivo. O utilizador **não configurado** permite ao utilizador desbloquear o dispositivo utilizando estes métodos.
 
@@ -274,7 +274,7 @@ Estas definições são adicionadas a um perfil de configuração do dispositivo
 
 - **Requerer a palavra-passe do iTunes Store para todas as compras**: **Exija** que o utilizador introduza a palavra-passe apple ID para cada compra na aplicação ou iTunes. **Não configurado** (predefinido) permite compras sem pedir sempre uma senha.
 - **Compras in-app**: Escolha **o Bloco** para impedir as compras in-app da loja. **Não configurado** (predefinido) permite a compra de loja dentro de uma aplicação de execução.
-- **Descarregue os conteúdos da loja iBook sinalizadas como 'Erotica'** : Escolha **o Bloco** para evitar que os utilizadores descarreguem os meios da loja iBook que está marcado como erótica. **Não configurado** (predefinido) permite ao utilizador descarregar livros com a categoria "Erotica".
+- **Descarregue os conteúdos da loja iBook sinalizadas como 'Erotica'**: Escolha **o Bloco** para evitar que os utilizadores descarreguem os meios da loja iBook que está marcado como erótica. **Não configurado** (predefinido) permite ao utilizador descarregar livros com a categoria "Erotica".
 - **Permitir que as aplicações geridas escrevam contactos para contas**de contactos não geridas : Quando definida para **permitir**, aplicações geridas, como a aplicação móvel Outlook, podem guardar ou sincronizar informações de contacto, incluindo contactos empresariais e corporativos, para a aplicação incorporada iOS/iPadOS Contacts. Quando definido para **Não configurado** (predefinido), as aplicações geridas não podem guardar ou sincronizar informações de contacto para a aplicação de contactos iOS/iPadOS incorporado no dispositivo.
   
   Para utilizar esta definição, configure **Ver documentos empresariais em aplicações não geridas** como **Bloquear**.
@@ -421,7 +421,7 @@ Aplica-se aos dispositivos que executam o iOS 9.3+e iPadOS 13.0+.
 
   - **Aplicações ocultas**: Insira uma lista de aplicações ocultas dos utilizadores. Os utilizadores não podem ver nem abrir estas aplicações.
   
-    A Apple evita esconder algumas aplicações nativas. Por exemplo, não é possível ocultar as **definições** ou aplicações **Wallet** no dispositivo. [Eliminar aplicações incorporadas](https://support.apple.com/HT208094) da Apple lista as aplicações que podem ser ocultadas.
+    A Apple evita esconder algumas aplicações nativas. Por exemplo, não é possível ocultar a aplicação **Definições** no dispositivo. [Eliminar aplicações incorporadas](https://support.apple.com/HT208094) da Apple lista as aplicações que podem ser ocultadas.
   
   - **Aplicativos visíveis**: Insira uma lista de aplicações que os utilizadores possam visualizar e lançar. Mais nenhuma outra aplicação pode ser vista ou lançada.
 
@@ -462,7 +462,7 @@ Nota necessária para roaming de dados (dica ou nota importante para ajudar na c
   > [!IMPORTANT]
   > Esta definição é tratada como uma ação remota do dispositivo. Portanto, esta definição não está mostrada no perfil de gestão do dispositivo. Sempre que o estado do hotspot pessoal muda no dispositivo, o **Hotspot Pessoal** é bloqueado pelo serviço Intune. Em Intune, se o estado de reporte mostrar um sucesso, então saiba que está a funcionar, mesmo que a configuração não seja mostrada no perfil de gestão do dispositivo.
 
-- Regras de **utilização celular (apenas aplicações geridas)** : Defina os tipos de dados que as aplicações geridas podem usar quando estão em redes celulares. As opções são:
+- Regras de **utilização celular (apenas aplicações geridas)**: Defina os tipos de dados que as aplicações geridas podem usar quando estão em redes celulares. As opções são:
   - **Bloquear a utilização de dados celulares**: Bloquear a utilização de dados celulares para **todas as aplicações geridas** ou **escolher aplicações específicas**.
   - **Bloquear a utilização de dados celulares durante o roaming**: Bloquear a utilização de dados celulares ao roaming para **todas as aplicações geridas** ou **escolher aplicações específicas**.
 
@@ -552,7 +552,7 @@ Nota necessária para roaming de dados (dica ou nota importante para ajudar na c
 - **Backup encriptado**: **Exija** para que as cópias de segurança do dispositivo sejam encriptadas.
 - **As aplicações geridas sincronizam-se na nuvem**: **Não configurado** (padrão) permite que as suas aplicações intune-manages sincronize dados na conta iCloud do utilizador. **Bloquear** impede esta sincronização de dados com o iCloud.
 - **Block Enterprise Book Backup**: Escolha **o Bloco** para impedir que os utilizadores apoiem os livros empresariais. **Não configurado** (predefinido) permite que os utilizadores reerque estes livros.
-- **Sincronização de metadados de livros empresariais de blocos (notas e destaques)** : **Bloco** impede a sincronização de notas e destaques nos livros empresariais. **Não configurado** (predefinido) permite a sincronização.
+- **Sincronização de metadados de livros empresariais de blocos (notas e destaques)**: **Bloco** impede a sincronização de notas e destaques nos livros empresariais. **Não configurado** (predefinido) permite a sincronização.
 
 ### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Definições aplicam-se a: Inscrição do dispositivo, inscrição automática de dispositivos (supervisionado)
 
