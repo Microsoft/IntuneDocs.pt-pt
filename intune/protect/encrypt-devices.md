@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/25/2019
+ms.date: 03/03/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.reviewer: annovich
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a5c844377dcd69b6caf5ef9f72fcb8dbb4ef8bd0
-ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
+ms.openlocfilehash: a2b988af00ce1ab5b9fa4e664d09b383403bd002
+ms.sourcegitcommit: 6608dc70d01376e0cd90aa620a2fe01337f6a2f1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77609310"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78260355"
 ---
 # <a name="use-device-encryption-with-intune"></a>Utilizar encriptação do dispositivo com Intune
 
@@ -125,6 +125,32 @@ Configure o BitLocker quando criar um perfil de [configuração](../configuratio
 5. Configure as definições para o BitLocker para atender às necessidades do seu negócio e, em seguida, selecione **OK**.
 
 6. Complete a configuração de configurações adicionais e, em seguida, guarde o perfil.
+
+### <a name="silently-enable-bitlocker-on-devices"></a>Ativar silenciosamente o BitLocker nos dispositivos
+
+Pode configurar uma política BitLocker que automaticamente e silenciosamente ativa o BitLocker num dispositivo. Isto significa que o BitLocker permite com sucesso sem apresentar qualquer UI ao utilizador final, mesmo quando esse utilizador não é um Administrador local no dispositivo.
+
+**Pré-requisitos do dispositivo:**
+
+Um dispositivo deve satisfazer as seguintes condições para ser elegível para permitir silenciosamente o BitLocker:
+
+- O dispositivo deve executar a versão 1809 do Windows 1809 ou mais tarde
+- O dispositivo deve ser Azure AD Joined  
+
+**Configuração da política BitLocker:**
+
+As seguintes duas definições para as definições de [base bitLocker](../protect/endpoint-protection-windows-10.md#bitlocker-base-settings) devem ser configuradas na política BitLocker:
+
+- **Aviso para outra encriptação do disco** = *Block*.
+- **Permitir que os utilizadores padrão permitam encriptação durante a adesão do Azure AD** = *permitir*
+
+A política BitLocker **não deve exigir** a utilização de um PIN de arranque ou chave de arranque. Quando é *necessária*uma chave PIN ou chave de arranque de arranque TPM, o BitLocker não pode ativar silenciosamente e requer interação do utilizador final.  Este requisito é cumprido através das seguintes três definições de [unidade BitLocker OS](../protect/endpoint-protection-windows-10.md#bitlocker-os-drive-settings) na mesma política:
+
+- PIN de **arranque tpm compatível** não deve ser definido para exigir PIN de arranque com *TPM*
+- Chave de **arranque TPM compatível** não deve ser definida para exigir chave de arranque com *TPM*
+- Chave de **arranque TPM compatível e PIN** não devem definir para exigir chave de arranque e PIN com *TPM*
+
+
 
 ### <a name="manage-bitlocker"></a>Gerir o BitLocker
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: abf23bff0d8889b57ab05c55b7e1464d0a9d2436
-ms.sourcegitcommit: 32391f74241ee3289a76ccd5319fe700b800d427
+ms.openlocfilehash: a46532467f8de7caf8cc88fe60e7a5cbc10ba147
+ms.sourcegitcommit: a25f556aa9df4fcd9fdacccd12c9029bc6c5fe20
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "77075795"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78256531"
 ---
 # <a name="windows-mdm-security-baseline-settings-for-intune"></a>Definições de base de segurança do Windows MDM para Intune
 
@@ -364,7 +364,7 @@ Para mais informações, consulte [Policy CSP - DeviceLock](https://docs.microso
   Quando *a palavra-passe requerida* for definida para *Sim,* as seguintes definições estão disponíveis.
 
   - **Contagem mínima de caracteres:**  
-    O número de tipos de elementos complexos (letras maiúsculas e minúsculas, números e pontuação) necessários para um PIN ou palavra-passe forte. Pin aplica o seguinte comportamento para dispositivos de ambiente de trabalho e dispositivos móveis: 1 - Dígitos apenas 2 - Dígitos e letras minúsculas são necessários 3 - São necessários dígitos, letras minúsculas e letras maiúsculas. Não suportado nas contas desktop da Microsoft e nas contas de domínio. 4 - São necessários dígitos, letras minúsculas, letras maiúsculas e caracteres especiais. Não suportado no ambiente de trabalho. O valor predefinido é 1.  
+    O número de tipos de elementos complexos (letras maiúsculas e minúsculas, números e pontuação) necessários para um PIN ou palavra-passe forte. Pin aplica o seguinte comportamento para dispositivos de ambiente de trabalho e dispositivos móveis: 1 - Dígitos apenas 2 - Dígitos e letras minúsculas são necessários 3 - São necessários dígitos, letras minúsculas e letras maiúsculas. Não suportado nas contas desktop da Microsoft e nas contas de domínio. 4 - São necessários dígitos, letras minúsculas, letras maiúsculas e caracteres especiais. Não suportado no ambiente de trabalho.  
     [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067055)
 
     **Padrão**: 3
@@ -611,7 +611,7 @@ Para mais informações, consulte [Policy CSP - InternetExplorer](https://docs.m
   **Predefinição**: Desativar
 
 - **Internet Explorer restringiu o conteúdo de arrasto de zona de diferentes domínios dentro das janelas:**  
-  Esta definição de política permite-lhe definir opções para arrastar conteúdo de um domínio para um domínio diferente quando a fonte e o destino estão na mesma janela. Se ativar esta definição de política e clicar em Ativar, os utilizadores podem arrastar o conteúdo de um domínio para um domínio diferente quando a fonte e o destino estão na mesma janela. Os usuários não podem alterar essa configuração. Se ativar esta definição de política e clicar em Desativar, os utilizadores não podem arrastar conteúdo de um domínio para um domínio diferente quando a fonte e o destino estão na mesma janela. Os utilizadores não podem alterar esta definição no diálogo das Opções de Internet. No Internet Explorer 10, se desativar esta definição de política ou não configurar, os utilizadores não podem arrastar conteúdo de um domínio para um domínio diferente quando a fonte e o destino estão na mesma janela. Os utilizadores podem alterar esta definição no diálogo das Opções de Internet. No Internet Explorer 9 e versões anteriores, se desativar esta definição de política ou não configurar, os utilizadores podem arrastar conteúdo de um domínio para um domínio diferente quando a fonte e o destino estão na mesma janela. Os utilizadores não podem alterar esta definição no diálogo das Opções de Internet.  
+  Esta definição de política permite-lhe definir opções para arrastar conteúdo de um domínio para um domínio diferente quando a fonte e o destino estão na mesma janela. Se ativar esta definição de política e clicar em Ativar, os utilizadores podem arrastar o conteúdo de um domínio para um domínio diferente quando a fonte e o destino estão na mesma janela. Os utilizadores não podem alterar esta definição. Se ativar esta definição de política e clicar em Desativar, os utilizadores não podem arrastar conteúdo de um domínio para um domínio diferente quando a fonte e o destino estão na mesma janela. Os utilizadores não podem alterar esta definição no diálogo das Opções de Internet. No Internet Explorer 10, se desativar esta definição de política ou não configurar, os utilizadores não podem arrastar conteúdo de um domínio para um domínio diferente quando a fonte e o destino estão na mesma janela. Os utilizadores podem alterar esta definição no diálogo das Opções de Internet. No Internet Explorer 9 e versões anteriores, se desativar esta definição de política ou não configurar, os utilizadores podem arrastar conteúdo de um domínio para um domínio diferente quando a fonte e o destino estão na mesma janela. Os utilizadores não podem alterar esta definição no diálogo das Opções de Internet.  
   [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067079)  
 
   **Predefinição**: Desativado
@@ -944,7 +944,7 @@ Para mais informações, consulte [Policy CSP - InternetExplorer](https://docs.m
   **Predefinição**: Desativar
 
 - **O Internet Explorer restringiu as janelas e os quadros em diferentes domínios:**  
-  Esta definição de política permite-lhe definir opções para arrastar conteúdo de um domínio para um domínio diferente quando a fonte e o destino estão em janelas diferentes. Se ativar esta definição de política e clicar em Ativar, os utilizadores podem arrastar o conteúdo de um domínio para um domínio diferente quando a fonte e o destino estão em diferentes janelas. Os usuários não podem alterar essa configuração. Se ativar esta definição de política e clicar em Desativar, os utilizadores não podem arrastar conteúdo de um domínio para um domínio diferente quando tanto a fonte como o destino estão em diferentes janelas. Os usuários não podem alterar essa configuração. No Internet Explorer 10, se desativar esta definição de política ou não configurar, os utilizadores não podem arrastar conteúdo de um domínio para um domínio diferente quando a fonte e o destino estão em janelas diferentes. Os utilizadores podem alterar esta definição no diálogo das Opções de Internet. No Internet Explorer 9 e versões anteriores, se desativar esta política ou não a configurar, os utilizadores podem arrastar conteúdo de um domínio para um domínio diferente quando a fonte e o destino estão em diferentes janelas. Os usuários não podem alterar essa configuração.  
+  Esta definição de política permite-lhe definir opções para arrastar conteúdo de um domínio para um domínio diferente quando a fonte e o destino estão em janelas diferentes. Se ativar esta definição de política e clicar em Ativar, os utilizadores podem arrastar o conteúdo de um domínio para um domínio diferente quando a fonte e o destino estão em diferentes janelas. Os utilizadores não podem alterar esta definição. Se ativar esta definição de política e clicar em Desativar, os utilizadores não podem arrastar conteúdo de um domínio para um domínio diferente quando tanto a fonte como o destino estão em diferentes janelas. Os utilizadores não podem alterar esta definição. No Internet Explorer 10, se desativar esta definição de política ou não configurar, os utilizadores não podem arrastar conteúdo de um domínio para um domínio diferente quando a fonte e o destino estão em janelas diferentes. Os utilizadores podem alterar esta definição no diálogo das Opções de Internet. No Internet Explorer 9 e versões anteriores, se desativar esta política ou não a configurar, os utilizadores podem arrastar conteúdo de um domínio para um domínio diferente quando a fonte e o destino estão em diferentes janelas. Os utilizadores não podem alterar esta definição.  
   [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067050)
 
   **Predefinição**: Desativar
@@ -1100,7 +1100,7 @@ Para mais informações, consulte [Policy CSP - InternetExplorer](https://docs.m
   **Predefinição**: Desativar
 
 - **Internet Explorer internet zone arrastar conteúdo de diferentes domínios através de janelas:**  
-  Esta definição de política permite-lhe definir opções para arrastar conteúdo de um domínio para um domínio diferente quando a fonte e o destino estão em janelas diferentes. Se ativar esta definição de política e clicar em Ativar, os utilizadores podem arrastar o conteúdo de um domínio para um domínio diferente quando a fonte e o destino estão em diferentes janelas. Os usuários não podem alterar essa configuração. Se ativar esta definição de política e clicar em Desativar, os utilizadores não podem arrastar conteúdo de um domínio para um domínio diferente quando tanto a fonte como o destino estão em diferentes janelas. Os usuários não podem alterar essa configuração. No Internet Explorer 10, se desativar esta definição de política ou não configurar, os utilizadores não podem arrastar conteúdo de um domínio para um domínio diferente quando a fonte e o destino estão em janelas diferentes. Os utilizadores podem alterar esta definição no diálogo das Opções de Internet. No Internet Explorer 9 e versões anteriores, se desativar esta política ou não a configurar, os utilizadores podem arrastar conteúdo de um domínio para um domínio diferente quando a fonte e o destino estão em diferentes janelas. Os usuários não podem alterar essa configuração.  
+  Esta definição de política permite-lhe definir opções para arrastar conteúdo de um domínio para um domínio diferente quando a fonte e o destino estão em janelas diferentes. Se ativar esta definição de política e clicar em Ativar, os utilizadores podem arrastar o conteúdo de um domínio para um domínio diferente quando a fonte e o destino estão em diferentes janelas. Os utilizadores não podem alterar esta definição. Se ativar esta definição de política e clicar em Desativar, os utilizadores não podem arrastar conteúdo de um domínio para um domínio diferente quando tanto a fonte como o destino estão em diferentes janelas. Os utilizadores não podem alterar esta definição. No Internet Explorer 10, se desativar esta definição de política ou não configurar, os utilizadores não podem arrastar conteúdo de um domínio para um domínio diferente quando a fonte e o destino estão em janelas diferentes. Os utilizadores podem alterar esta definição no diálogo das Opções de Internet. No Internet Explorer 9 e versões anteriores, se desativar esta política ou não a configurar, os utilizadores podem arrastar conteúdo de um domínio para um domínio diferente quando a fonte e o destino estão em diferentes janelas. Os utilizadores não podem alterar esta definição.  
   [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067093)
 
   **Predefinição**: Desativado
@@ -1160,7 +1160,7 @@ Para mais informações, consulte [Policy CSP - InternetExplorer](https://docs.m
   **Predefinição**: Desativar
 
 - **Internet Explorer restringiu o conteúdo de arrasto de zona de diferentes domínios através das janelas:**  
-  Esta definição de política permite-lhe definir opções para arrastar conteúdo de um domínio para um domínio diferente quando a fonte e o destino estão em janelas diferentes. Se ativar esta definição de política e clicar em Ativar, os utilizadores podem arrastar o conteúdo de um domínio para um domínio diferente quando a fonte e o destino estão em diferentes janelas. Os usuários não podem alterar essa configuração. Se ativar esta definição de política e clicar em Desativar, os utilizadores não podem arrastar conteúdo de um domínio para um domínio diferente quando tanto a fonte como o destino estão em diferentes janelas. Os usuários não podem alterar essa configuração. No Internet Explorer 10, se desativar esta definição de política ou não configurar, os utilizadores não podem arrastar conteúdo de um domínio para um domínio diferente quando a fonte e o destino estão em janelas diferentes. Os utilizadores podem alterar esta definição no diálogo das Opções de Internet. No Internet Explorer 9 e versões anteriores, se desativar esta política ou não a configurar, os utilizadores podem arrastar conteúdo de um domínio para um domínio diferente quando a fonte e o destino estão em diferentes janelas. Os usuários não podem alterar essa configuração.  
+  Esta definição de política permite-lhe definir opções para arrastar conteúdo de um domínio para um domínio diferente quando a fonte e o destino estão em janelas diferentes. Se ativar esta definição de política e clicar em Ativar, os utilizadores podem arrastar o conteúdo de um domínio para um domínio diferente quando a fonte e o destino estão em diferentes janelas. Os utilizadores não podem alterar esta definição. Se ativar esta definição de política e clicar em Desativar, os utilizadores não podem arrastar conteúdo de um domínio para um domínio diferente quando tanto a fonte como o destino estão em diferentes janelas. Os utilizadores não podem alterar esta definição. No Internet Explorer 10, se desativar esta definição de política ou não configurar, os utilizadores não podem arrastar conteúdo de um domínio para um domínio diferente quando a fonte e o destino estão em janelas diferentes. Os utilizadores podem alterar esta definição no diálogo das Opções de Internet. No Internet Explorer 9 e versões anteriores, se desativar esta política ou não a configurar, os utilizadores podem arrastar conteúdo de um domínio para um domínio diferente quando a fonte e o destino estão em diferentes janelas. Os utilizadores não podem alterar esta definição.  
   [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067166)
 
   **Predefinição**: Desativado
@@ -1381,7 +1381,7 @@ Para mais informações, consulte [Política CSP - LocaiSPolíticasOp](https://d
   **Padrão**: Sim
 
 - **Requerem que o servidor assine as comunicações digitalmente sempre:**  
-  Esta definição de segurança determina se o cliente SMB tenta negociar a assinatura do pacote SMB. O protocolo do bloco de mensagens do servidor (SMB) fornece a base para a partilha de ficheiros e impressão da Microsoft e muitas outras operações de networking, como a administração remota do Windows. Para evitar ataques man-in-the-Middle que modificam pacotes SMB em trânsito, o protocolo SMB dá suporte à assinatura digital de pacotes SMB. Esta definição de política determina se o componente do cliente SMB tenta negociar a assinatura de pacotes SMB quando se conecta a um servidor SMB. Se esta definição estiver ativada, o cliente da rede Microsoft pedirá ao servidor para fazer a assinatura do pacote SMB após a configuração da sessão. Se a assinatura de pacotes tiver sido ativada no servidor, a assinatura de pacotes será negociada. Se esta política for desativada, o cliente SMB nunca negociará a assinatura do pacote SMB.  
+  Esta definição de segurança determina se o cliente SMB tenta negociar a assinatura do pacote SMB. O protocolo do bloco de mensagens do servidor (SMB) fornece a base para a partilha de ficheiros e impressão da Microsoft e muitas outras operações de networking, como a administração remota do Windows. Para evitar ataques man-in-the-middle que modificam pacotes SMB em trânsito, o protocolo SMB suporta a assinatura digital de pacotes SMB. Esta definição de política determina se o componente do cliente SMB tenta negociar a assinatura de pacotes SMB quando se conecta a um servidor SMB. Se esta definição estiver ativada, o cliente da rede Microsoft pedirá ao servidor para fazer a assinatura do pacote SMB após a configuração da sessão. Se a assinatura de pacotes tiver sido ativada no servidor, a assinatura de pacotes será negociada. Se esta política for desativada, o cliente SMB nunca negociará a assinatura do pacote SMB.  
   [Mais informações](https://go.microsoft.com/fwlink/?linkid=2067319)
 
   **Padrão**: Sim
@@ -1900,7 +1900,7 @@ Para mais informações, consulte [Policy CSP - RemoteProcedureCall](https://doc
 
   **Padrão**: Autenticado
 
-## <a name="search"></a>Pesquisa
+## <a name="search"></a>Procura
 
 Para mais informações, consulte [Policy CSP - Procure](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-search) na documentação do Windows.
 
@@ -2045,7 +2045,7 @@ Para mais informações, consulte [Policy CSP - WindowsInkWorkspace](https://doc
 - **Espaço de trabalho de tinta:**  
   Especifica se permite ao utilizador aceder ao espaço de trabalho de tinta.
 
-  - *Desativado* - o acesso ao espaço de trabalho de tinta é desativado. O recurso está desativado.
+  - *Desativado* - o acesso ao espaço de trabalho de tinta é desativado. A característica está desligada.
 
   - *Ativado* - A função De Trabalho da Tinta está ligada, mas o utilizador não pode aceder-lhe acima do ecrã de bloqueio.
 

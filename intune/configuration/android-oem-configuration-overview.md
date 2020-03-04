@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/16/2020
+ms.date: 03/02/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f6798082f293db6745ea4a15155e15ea112ca6fd
-ms.sourcegitcommit: 8b716db3c0fdbb7dff62497ec283902a5069a343
+ms.openlocfilehash: 1bc811bcac80f8321284ece8d3860efc7164a270
+ms.sourcegitcommit: a25f556aa9df4fcd9fdacccd12c9029bc6c5fe20
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77652424"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78256327"
 ---
 # <a name="use-and-manage-android-enterprise-devices-with-oemconfig-in-microsoft-intune"></a>Utilizar e gerir dispositivos Android Enterprise com OEMConfig no Microsoft Intune
 
@@ -170,6 +170,8 @@ Se existe uma aplicação OEMConfig para o seu dispositivo, mas não está na ta
 
 > [!NOTE]
 > As aplicações OEMConfig devem embarcar pela Intune antes de poderem ser configuradas com perfis OEMConfig. Uma vez que uma aplicação é suportada, você não precisa contactar a Microsoft sobre a configuração no seu inquilino. Basta seguir as instruções nesta página.
+>
+> Se sentir que uma aplicação OEMConfig se comporta mal, contacte os desenvolvedores da aplicação OEMConfig. Intune não é responsável por problemas técnicos com as aplicações individuais da OEMConfig.
 
 ## <a name="next-steps"></a>Próximos passos
 

@@ -18,21 +18,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4f97c4c56073044e79b5251dc83c54decb5c9c55
-ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
+ms.openlocfilehash: 499a1fa468193a5be2da05a62568301f4f23aaf4
+ms.sourcegitcommit: 6608dc70d01376e0cd90aa620a2fe01337f6a2f1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77124848"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78260270"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Inscrever dispositivos Windows no Intune com o Windows Autopilot  
 O Windows Autopilot simplifica a inscrição de dispositivos no Intune. A criação e manutenção de imagens personalizadas do sistema operativo são um processo moroso. Também poderá demorar a aplicar estas imagens personalizadas do sistema operativo a novos dispositivos para as preparar para utilização antes de as disponibilizar aos seus utilizadores finais. Com o Microsoft Intune e o Autopilot, pode fornecer novos dispositivos aos seus utilizadores finais sem ter de criar, manter e aplicar imagens de sistema operativo personalizadas aos dispositivos. Ao utilizar o Intune para gerir dispositivos do Autopilot, pode gerir políticas, perfis, aplicações, entre outros, após estes serem inscritos. Para uma descrição geral das vantagens, cenários e pré-requisitos, veja [Descrição geral do Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
 
 Existem quatro tipos de implantação do Piloto Automático:
 - [Modo de Implantação Autónoma](https://docs.microsoft.com/windows/deployment/windows-autopilot/self-deploying) para quiosques, sinalização digital ou um dispositivo partilhado
-- [A White Glove](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove) permite aos parceiros ou funcionários de TI pré-fornecer um PC Windows 10 para que esteja totalmente configurado e pronto para o negócio -[O Autopilot para dispositivos existentes](https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices) permite-lhe implementar facilmente a versão mais recente do Windows 10 para os seus dispositivos existentes
+- [A White Glove](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove) permite aos parceiros ou funcionários de TI pré-fornecer um PC Windows 10 para que esteja totalmente configurado e pronto para o negócio
+- [O piloto automático para dispositivos existentes](https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices) permite-lhe facilmente implementar a versão mais recente do Windows 10 para os seus dispositivos existentes
 - [Modo acionado pelo utilizador](https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven) para utilizadores tradicionais. 
-
 
 ## <a name="prerequisites"></a>Pré-requisitos
 - [Subscrição intonizada](../fundamentals/licenses.md)
@@ -87,7 +87,7 @@ Pode adicionar dispositivos Windows Autopilot ao importar um ficheiro CSV com as
 5. Selecione **Criar**.  
 
 ## <a name="create-an-autopilot-deployment-profile"></a>Criar um perfil de implementação do Autopilot
-Os perfis de implementação do Autopilot são utilizados para configurar os dispositivos do Autopilot. Você pode criar até 350 perfis por locatário.
+Os perfis de implementação do Autopilot são utilizados para configurar os dispositivos do Autopilot. Você pode criar até 350 perfis por inquilino.
 1. No [Microsoft Endpoint Manager Admin Center,](https://go.microsoft.com/fwlink/?linkid=2109431)escolha **dispositivos** > **Windows** > **windows > ** perfis de **implementação** > **Criar perfil**.
 2. Na página **Basics,** digite um **nome** e **descrição**opcional.
 
@@ -175,6 +175,9 @@ Pode atribuir um utilizador a um dispositivo do Autopilot específico. Esta atri
 
 Pré-requisitos: O Portal da Empresa de DirectórioActivo Azure foi configurado e o Windows 10, versão 1809 ou posterior.
 
+> [!NOTE]
+> Atribuir um utilizador a um dispositivo Autopilot específico não funciona se estiver a utilizar a ADFS.
+
 1. No [Microsoft Endpoint Manager Admin Center,](https://go.microsoft.com/fwlink/?linkid=2109431)escolha **dispositivos** > **Windows** > **Windows de inscrição** > **Dispositivos** (no âmbito do Programa de **Implementação** do Piloto Automático do Windows > escolha o utilizador do dispositivo > **Atribuir**.
 
     ![Captura de ecrã de Atribuir utilizador](./media/enrollment-autopilot/assign-user.png)
@@ -222,5 +225,5 @@ Pode agrupar dispositivos Windows por um ID de correlacionador ao inscrevê-los 
 > - Crie sempre regras de grupos dinâmico que correspondam a *todo* o valor enrollmentProfileName
 > - Nunca crie um nome para perfis de Autopilot ou DEP da Apple começado por "OfflineAutopilotprofile-".
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Próximos passos
 Após ter configurado o Windows Autopilot para dispositivos Windows 10 registados, saiba como gerir esses dispositivos. Para obter mais informações, veja [O que é a gestão de dispositivos do Microsoft Intune?](../remote-actions/device-management.md)

@@ -1,5 +1,5 @@
 ---
-title: Guia para programadores do SDK da Aplicação do Microsoft Intune para iOS
+title: Guia para programadores do SDK da Aplicação Microsoft Intune para iOS
 description: O SDK da Aplicação do Microsoft Intune para iOS permite-lhe incorporar as políticas de proteção de aplicações do Intune (também conhecidas como políticas de APLICAÇÕES ou MAM) na sua aplicação iOS nativa.
 keywords: ''
 author: Erikre
@@ -17,14 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 48d2e88fbe35729a5b8496d4ac1a4c444df3d89f
-ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
+ms.openlocfilehash: 024f92b35b3b2885f58a7b544144d328c34ab499
+ms.sourcegitcommit: a25f556aa9df4fcd9fdacccd12c9029bc6c5fe20
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77609137"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78256480"
 ---
-# <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Guia para programadores do SDK da Aplicação do Microsoft Intune para iOS
+# <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Guia para programadores do SDK da Aplicação Microsoft Intune para iOS
 
 > [!NOTE]
 > Considere ler o artigo [Guia de Introdução ao SDK da Aplicação do Intune](app-sdk-get-started.md), que explica como preparar a integração em cada plataforma suportada.
@@ -106,7 +106,7 @@ Para ativar o SDK da Aplicação do Intune, siga estes passos:
 
     ![SDK da Aplicação Intune para iOS: estruturas e bibliotecas ligadas](./media/app-sdk-ios/intune-app-sdk-ios-linked-frameworks-and-libraries.png)
 
-    Adicione `-force_load {PATH_TO_LIB}/libIntuneMAM.a` a qualquer um dos seguintes, substituindo `{PATH_TO_LIB}` pela localização do SDK da Aplicação do Intune:
+    Adicione `-force_load {PATH_TO_LIB}/libIntuneMAM.a` a qualquer um dos seguintes, substituindo `{PATH_TO_LIB}` pela localização do SDK da Aplicação Intune:
    * A configuração de configuração de construção `OTHER_LDFLAGS` do projeto.
    * As **Outras Bandeiras**de Linker do Xcode UI.
 
@@ -243,7 +243,7 @@ No dicionário IntuneMAMSettings, pode adicionar as seguintes definições supor
 
 Algumas destas definições podem ter sido abordadas nas secções anteriores e outras não são aplicáveis a todas as aplicações.
 
-Definição  | Type  | Definição | Obrigatório?
+Definição  | Tipo  | Definição | Obrigatório?
 --       |  --   |   --       |  --
 ADALClientId  | Cadeia  | Identificador do cliente Azure AD da aplicação. | Necessária para todas as aplicações que utilizem MSAL e qualquer aplicação ADAL que aceda a um recurso AAD não intune. |
 ADALAuthority | Cadeia | Autoridade do Azure AD da aplicação em utilização. Deve utilizar o seu ambiente onde foram configuradas contas do AAD. | Necessário se a aplicação utilizar a ADAL ou a MSAL para aceder a um recurso AAD não intune. Se este valor estiver ausente, será utilizado um valor predefinido do Intune.|
@@ -264,12 +264,16 @@ SplashDuration | Número | Quantidade mínima de tempo, em segundos, durante a q
 BackgroundColor| Cadeia| Especifica a cor de fundo para os componentes ui do Intune SDK. Aceita uma cadeia RGB hexadecimal sob a forma de "#XXXXXX", sendo que X pode ir de 0 a 9 ou de A a F. O sinal de cardinal pode ser omitido.   | Opcional. Predefinições da cor de fundo do sistema, que podem variar entre versões do iOS e de acordo com a definição do modo escuro do iOS. |
 ForegroundColor| Cadeia| Especifica a cor do primeiro plano para os componentes UI do Intune SDK, como a cor do texto. Aceita uma cadeia RGB hexadecimal sob a forma de "#XXXXXX", sendo que X pode ir de 0 a 9 ou de A a F. O sinal de cardinal pode ser omitido.  | Opcional. Predefinições da cor da etiqueta do sistema, que podem variar entre versões do iOS e de acordo com a definição do modo escuro do iOS. |
 AccentColor | Cadeia| Especifica a cor do sotaque para os componentes UI do Intune SDK, tais como a cor do texto do botão e a cor de destaque da caixa PIN. Aceita uma cadeia RGB hexadecimal sob a forma de "#XXXXXX", sendo que X pode ir de 0 a 9 ou de A a F. O sinal de cardinal pode ser omitido.| Opcional. Assume a predefinição de azul de sistema. |
+Coloração Secundária de Fundo| Cadeia| Especifica a cor de fundo secundária para os ecrãs MTD. Aceita uma cadeia RGB hexadecimal sob a forma de "#XXXXXX", sendo que X pode ir de 0 a 9 ou de A a F. O sinal de cardinal pode ser omitido.   | Opcional. Incumprimentos para branco. |
+Coloração Secundária Foreground| Cadeia| Especifica a cor do primeiro plano secundário para os ecrãs MTD, como a cor da nota de rodapé. Aceita uma cadeia RGB hexadecimal sob a forma de "#XXXXXX", sendo que X pode ir de 0 a 9 ou de A a F. O sinal de cardinal pode ser omitido.  | Opcional. Incumprimentos a cinza. |
 SuportesDarkMode| Booleano | Especifica se o esquema de cores UI intune sDK deve observar a definição do modo escuro do sistema, se não tiver sido definido nenhum valor explícito para BackgroundColor/ForegroundColor/AccentColor | Opcional. Incumprimentos a sim. |
 MAMTelemetryDisabled| Booleano| Especifica se o SDK não envia dados de telemetria de volta para o respetivo back-end.| Opcional. Assume a predefinição de NO. |
 MAMTelemetryUsePPE | Booleano | Especifica se o SDK de MAM envia dados para o back-end de telemetria do PPE. Utilize esta opção ao testar as suas aplicações com a política do Intune, para que os dados de telemetria de teste não se misturem com os dados de clientes. | Opcional. Assume a predefinição de NO. |
 MaxFileProtectionLevel | Cadeia | Opcional. Permite que a aplicação especifique o `NSFileProtectionType` máximo que pode suportar. Este valor irá substituir a política enviada pelo serviço se o nível for superior ao que a aplicação consegue suportar. Valores possíveis: `NSFileProtectionComplete`, `NSFileProtectionCompleteUnlessOpen`, `NSFileProtectionCompleteUntilFirstUserAuthentication`, `NSFileProtectionNone`.|
 OpenInActionExtension | Booleano | Defina como YES para extensões de Ação Abrir em. Veja a secção Partilhar dados através de UIActivityViewController para obter mais informações. |
 WebViewHandledURLSchemes | Matriz de Cadeias | Especifica os esquemas de URL processados pela WebView da sua aplicação. | Necessário se a sua aplicação utilizar uma WebView que processa URLs através de ligações e/ou javascript. |
+DocumentbrowserFileCachePath | Cadeia | Se a sua aplicação utilizar o [`UIDocumentBrowserViewController`](https://developer.apple.com/documentation/uikit/uidocumentbrowserviewcontroller?language=objc) para navegar através de ficheiros em vários fornecedores de ficheiros, pode definir este caminho em relação ao diretório inicial na caixa de areia da aplicação para que o Intune SDK possa deixar cair ficheiros geridos desencriptados nessa pasta. | Opcional. Incumprimentos ao diretório `/Documents/`. |
+VerboseLoggingEnabled | Booleano | Se definido para SIM, Intune iniciará o seu login no modo verbose. | Opcional. Incumprimentos a NO |
 
 ## <a name="receive-app-protection-policy"></a>Receber a política de proteção de aplicações
 
@@ -332,7 +336,7 @@ Exemplo:
 
 Se quiser que o Intune SDK manuseie toda a autenticação utilizando a ADAL/MSAL e a inscrição antes do lançamento da sua aplicação, e a sua aplicação requer sempre a política de APP, não precisa de utilizar `loginAndEnrollAccount` API. Pode simplesmente configurar as duas definições abaixo como YES no dicionário IntuneMAMSettings no ficheiro Info.plist.
 
-Definição  | Type  | Definição |
+Definição  | Tipo  | Definição |
 --       |  --   |   --       |  
 AutoEnrollOnLaunch| Booleano| Especifica se a aplicação deve tentar inscrever-se automaticamente quando inicia se for detetada uma identidade gerida existente e ainda não o tiver feito. Assume a predefinição de NO. <br><br> Nota: Se não for encontrada nenhuma identidade gerida ou se não houver um símbolo válido para a identidade disponível na cache ADAL/MSAL, a tentativa de inscrição falhará silenciosamente sem solicitar credenciais, a menos que a aplicação também tenha definido MAMPolicyRequired para YES. |
 MAMPolicyRequired| Booleano| Especifica se a aplicação será impedida de iniciar se não tiver uma política de proteção de aplicação do Intune. Assume a predefinição de NO. <br><br> Nota: as aplicações não podem ser submetidas à App Store com a MAMPolicyRequired definida como YES. Ao definir a MAMPolicyRequired como YES, a AutoEnrollOnLaunch também deve ser definida como YES. |
@@ -452,7 +456,7 @@ O valor deste método devolvido indica ao SDK se a aplicação terá de processa
 
 * Se o valor devolvido for verdadeiro, a aplicação terá de processar o reinício.
 
-* Se o valor devolvido for False, o SDK irá reiniciar a aplicação após este método ser devolvido. O SDK irá mostrar imediatamente uma caixa de diálogo que indica ao utilizador para reiniciar a aplicação.
+* Se o valor devolvido for falso, o SDK reiniciará a aplicação após este método ser devolvido. O SDK mostrará imediatamente uma caixa de diálogo que indica ao utilizador para reiniciar a aplicação.
 
 ## <a name="customize-your-apps-behavior-with-apis"></a>Personalizar o comportamento da sua aplicação com APIs
 
@@ -464,6 +468,14 @@ IntuneMAMPolicyManager.h | A classe IntuneMAMPolicyManager expõe a política AP
 IntuneMAMPolicy.h | A classe IntuneMAMPolicy expõe algumas definições da política MAM que se aplicam à aplicação. Estas definições de política são expostas para que a aplicação possa personalizar a respetiva IU. A maioria das definições de política é imposta pelo SDK e não pela aplicação. A única que a aplicação deve implementar é o controlo de Guardar Como. Esta classe expõe algumas APIs necessárias para implementar o Guardar Como. |
 IntuneMAMFileProtectionManager.h | A classe IntuneMAMFileProtectionManager expõe APIs que a aplicação pode utilizar para proteger explicitamente ficheiros e diretórios com base numa identidade fornecida. A identidade pode ser gerida pelo Intune ou pode não ser gerida e o SDK irá aplicar a política MAM adequada. A utilização desta classe é opcional. |
 IntuneMAMDataProtectionManager.h | A classe IntuneMAMDataProtectionManager expõe APIs que a aplicação pode utilizar para proteger memórias intermédias de dados aos quais foram fornecidas identidades. A identidade pode ser gerida pelo Intune ou pode não ser gerida e o SDK irá aplicar a encriptação adequada. |
+
+## <a name="implement-allowed-accounts"></a>Implementar Contas Permitidas
+
+Intune permite que os administradores de TI especifiquem quais as contas que podem ser registadas pelo utilizador. As aplicações podem consultar o Intune App SDK para a lista especificada de contas permitidas e, em seguida, garantir que apenas contas permitidas são assinadas no dispositivo.
+
+Para consultar as contas permitidas, a App deve verificar a propriedade `allowedAccounts` no `IntuneMAMEnrollmentManager`. A propriedade `allowedAccounts` é ou um conjunto contendo as contas permitidas ou nulas. Se a propriedade for nula, então não foram especificadas contas permitidas.
+
+As aplicações também podem reagir a alterações da propriedade `allowedAccounts` observando a notificação `IntuneMAMAllowedAccountsDidChangeNotification`. A notificação é publicada sempre que o `allowedAccounts` imóvel muda de valor.
 
 ## <a name="implement-save-as-and-open-from-controls"></a>Implementar controlos de poupança e de abertura
 
@@ -650,7 +662,7 @@ Por predefinição, o SDK da Aplicação do Intune para iOS recolhe dados telem�
 * **Ações do Intune**: para ajudar a diagnosticar problemas e garantir a funcionalidade do Intune, recolhemos informações sobre as ações do SDK do Intune.
 
 > [!NOTE]
-> Se optar por não enviar os dados telemétricos do SDK da Aplicação Intune para o Microsoft Intune a partir da sua aplicação móvel, deve desativar a captura de telemetria do SDK da Aplicação Intune. Defina a propriedade `MAMTelemetryDisabled` como YES no dicionário IntuneMAMSettings.
+> Se optar por não enviar os dados telemétricos do SDK da Aplicação do Intune para o Microsoft Intune a partir da sua aplicação móvel, deve desativar a captura de telemetria do SDK da Aplicação do Intune. Defina a propriedade `MAMTelemetryDisabled` como YES no dicionário IntuneMAMSettings.
 
 ## <a name="enable-multi-identity-optional"></a>Ativar identidades múltiplas (opcional)
 
@@ -729,6 +741,16 @@ Por predefinição, as aplicações são consideradas de identidade única. O SD
     Quando uma eliminação seletiva for efetuada na aplicação, o SDK irá ligar para o método `wipeDataForAccount` no `IntuneMAMPolicyDelegate`. A aplicação é responsável por remover a conta do utilizador especificado, bem como quaisquer dados associados à mesma. O SDK é capaz de remover todos os ficheiros do utilizador e realizará esta ação se a aplicação devolver FALSE da chamada do `wipeDataForAccount`.
 
     Tenha em atenção que este método é chamado a partir de um thread de segundo plano. A aplicação não deve devolver um valor até que todos os dados para o utilizador tenham sido removidos (com a exceção dos ficheiros, se a aplicação devolver FALSE).
+
+## <a name="siri-intents"></a>Intenções Siri
+Se a sua aplicação se integrar com a Siri Intents, certifique-se de ler os comentários de `areSiriIntentsAllowed` em `IntuneMAMPolicy.h` para obter instruções sobre o apoio a este cenário. 
+    
+## <a name="notifications"></a>Notificações
+Se a sua aplicação receber notificações, certifique-se de ler os comentários de `notificationPolicy` em `IntuneMAMPolicy.h` para obter instruções sobre o suporte a este cenário.  Recomenda-se que as aplicações se registem para `IntuneMAMPolicyDidChangeNotification` descritos em `IntuneMAMPolicyManager.h`, e comuniquem este valor aos seus `UNNotificationServiceExtension` através do porta-chaves.
+## <a name="displaying-web-content-within-application"></a>Exibindo conteúdo web dentro da aplicação
+Se a sua aplicação tiver a capacidade de exibir websites dentro de uma visão web e as páginas web exibidas tiverem a capacidade de navegar para sites arbitrários, a aplicação é ressonável para definir a identidade atual para que os dados geridos não possam ser vazados através da web vista. Exemplos disso são páginas web 'Suggest a Feature' ou 'Feedback' que têm ligações diretas ou indiretas a um motor de busca.
+As aplicações multi-identidade devem ligar para intuneMAMPolicyManager setUIPolicyIdentity passando na corda vazia antes de exibir a vista web. Após a demissão da vista web, o pedido deve chamar setUIPolicyIdentity passando na identidade atual.
+As aplicações de identidade única devem ligar para intuneMAMPolicyManager setCurrentThreadIdentity passando na cadeia vazia antes de exibir a vista web. Depois de a vista web ser rejeitada, a aplicação deve ligar para o conjuntoCurrentThreadIdentity passando a zero.
 
 ## <a name="ios-best-practices"></a>Melhores práticas de iOS
 

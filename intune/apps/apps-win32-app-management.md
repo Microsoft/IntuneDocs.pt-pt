@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/21/2020
+ms.date: 03/03/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dbefd797fead7113045ee7e7655b715a0b4961fd
-ms.sourcegitcommit: 32391f74241ee3289a76ccd5319fe700b800d427
+ms.openlocfilehash: 516d5148ac44d72aaacf1d670d2d4f0345823d49
+ms.sourcegitcommit: 6608dc70d01376e0cd90aa620a2fe01337f6a2f1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "77075829"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78260287"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune Autónomo - Gestão de aplicações Win32
 
@@ -298,7 +298,7 @@ Se optar por não **instalar automaticamente** uma dependência, a instalação 
 Cada dependência irá aderir à lógica de retry da aplicação Intune Win32 (tente instalar 3 vezes depois de esperar 5 minutos) e ao calendário global de reavaliação. Além disso, as dependências só são aplicáveis no momento da instalação da aplicação Win32 no dispositivo. As dependências não são aplicáveis para desinstalar uma aplicação Win32. Para eliminar uma dependência, deve clicar nas elipses (três pontos) à esquerda da app dependente localizada no final da linha da lista de dependência. 
 
 ## <a name="step-6---select-scope-tags-optional"></a>Passo 6 - Selecione etiquetas de âmbito (opcional)
-Você pode usar marcas de escopo para determinar quem pode ver as informações do aplicativo cliente no Intune. Para mais detalhes sobre etiquetas de âmbito, consulte [Use o controlo de acesso baseado em funções e as etiquetas](../fundamentals/scope-tags.md)de âmbito para TI distribuídos .
+Pode utilizar etiquetas de âmbito para determinar quem pode ver informações sobre aplicações do cliente no Intune. Para mais detalhes sobre etiquetas de âmbito, consulte [Use o controlo de acesso baseado em funções e as etiquetas](../fundamentals/scope-tags.md)de âmbito para TI distribuídos .
 
 1. Clique em **Selecionar etiquetas** de âmbito para adicionar opcionalmente etiquetas de âmbito para a aplicação. 
 2. Clique em **Seguir** para exibir a página **de Tarefas.**
@@ -343,8 +343,13 @@ A imagem que se segue notifica o utilizador final de que estão a ser feitas alt
 
 ![Screenshot notificando o utilizador de que estão a ser feitas alterações na aplicação](./media/apps-win32-app-management/apps-win32-app-09.png)    
 
+Além disso, a aplicação Portal da Empresa mostra mensagens adicionais de estado de instalação de aplicações para utilizadores finais. As seguintes condições aplicam-se às características de dependência win32:
+- A aplicação falhou na instalação. As dependências definidas pelo administrador não foram satisfeitas.
+- A aplicação instalada com sucesso, mas requer um recomeço.
+- A aplicação está em processo de instalação, mas requer um recomeço para continuar.
+
 ## <a name="set-win32-app-availability-and-notifications"></a>Definir disponibilidade e notificações de aplicações Win32
-Pode configurar o tempo de início e prazo para uma aplicação Win32. Na hora de início, a extensão de gestão Intune iniciará o download e cache de conteúdo da aplicação para a intenção necessária. O aplicativo será instalado na hora do prazo. Para aplicações disponíveis, a hora de início ditará quando a aplicação for visível no Portal da Empresa e os conteúdos serão descarregados quando o utilizador final solicitar a aplicação do Portal da Empresa. Além disso, pode permitir um período de reinício da graça. 
+Pode configurar o tempo de início e prazo para uma aplicação Win32. Na hora de início, a extensão de gestão Intune iniciará o download e cache de conteúdo da aplicação para a intenção necessária. A aplicação será instalada no prazo limite. Para aplicações disponíveis, a hora de início ditará quando a aplicação for visível no Portal da Empresa e os conteúdos serão descarregados quando o utilizador final solicitar a aplicação do Portal da Empresa. Além disso, pode permitir um período de reinício da graça. 
 
 Detete a disponibilidade da aplicação com base numa data e hora para uma aplicação necessária utilizando os seguintes passos:
 
@@ -440,6 +445,6 @@ No comando powerShell acima, substitua `<path to binary file>` pelo seu caminho 
 
 Para mais informações sobre a resolução de problemas das aplicações Win32, consulte a instalação de problemas de instalação da [aplicação Win32](troubleshoot-app-install.md#win32-app-installation-troubleshooting).
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Próximos passos
 
 - Para obter mais informações sobre como adicionar aplicações ao Intune, veja [Adicionar aplicações ao Microsoft Intune](apps-add.md).

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a4b3bd06bad6c31c2d0fb4c31a7ad605af96be86
-ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
+ms.openlocfilehash: 126ea5a1798252f29e988553edfea462eff2fd7e
+ms.sourcegitcommit: a25f556aa9df4fcd9fdacccd12c9029bc6c5fe20
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77609198"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78256463"
 ---
 # <a name="add-managed-google-play-apps-to-android-enterprise-devices-with-intune"></a>Adicionar aplicações do Managed Google Play a dispositivos Android Enterprise com o Intune
 
@@ -155,9 +155,6 @@ Para obter mais informações sobre aplicações privadas geridas do Google Play
 As ligações web geridas pelo Google Play são instaladas e geríveis tal como outras aplicações Android. Quando instalados num dispositivo, aparecerão na lista de aplicações do utilizador ao lado das outras aplicações que instalaram. Quando filmados, serão lançados no navegador do dispositivo.
 
 As ligações web serão abertas com o Microsoft Edge ou qualquer outra aplicação de navegador que escolha implementar. Certifique-se de que implementa pelo menos uma aplicação de navegador para dispositivos para que as ligações web possam abrir corretamente. No entanto, todas as opções de **Display** disponíveis para links web (ecrã completo, autónomo e UI mínimo) funcionarão apenas com o navegador Chrome. 
-
-> [!IMPORTANT]
-> A partir da publicação deste doc, existe um conhecido bug da Google que impede que as ligações web se abram em dispositivos com navegadores que não sejam o Chrome. A Google comprometeu-se a corrigir este bug.  Este aviso será removido quando a Microsoft tiver a confirmação de que a Google publicou a sua correção.
 
 1. Inscreva-se no [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Selecione **Apps** > **Todas as aplicações** > **Adicionar**.

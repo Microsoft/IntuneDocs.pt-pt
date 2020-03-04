@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f8782d18b1a16ffc9bc7e48b19a1b70fdfbe71b8
-ms.sourcegitcommit: fab685b22a010fe231b27a0c5eda34a6f22f4c8d
+ms.openlocfilehash: 07463f3bcac7d657659ece7fed2c40db53ee2122
+ms.sourcegitcommit: a25f556aa9df4fcd9fdacccd12c9029bc6c5fe20
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "78216140"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78256378"
 ---
 # <a name="how-to-manage-volume-purchased-apps-from-the-microsoft-store-for-business-with-microsoft-intune"></a>Como gerir as aplicações adquiridas em volume na Microsoft Store para Negócios com a Microsoft Intune
 
@@ -51,7 +51,8 @@ Antes de iniciar a sincronização e a atribuição de aplicações da Loja Micr
 - Para utilizar esta capacidade, os dispositivos devem ser unidos aos Serviços de Domínio de Diretório Ativo, Azure AD aderido ou unidos no local de trabalho.
 - Os dispositivos inscritos têm de utilizar a versão 1511 do Windows 10 ou posterior.
 
-Além disso, as aplicações Licenciadas Offline e os conjuntos relacionados sincronizados a partir da Microsoft Store para Empresas serão consolidados numa única entrada de aplicação na IU. Todos os detalhes da implementação dos pacotes individuais serão migrados para uma única entrada. Para visualizar conjuntos relacionados no portal Azure, selecione **licenças** de App do painel **apps.**
+> [!NOTE]
+Se desativar a Loja em dispositivos geridos (manualmente, através de política ou política de grupo), as aplicações licenciadas online não serão instaladas.
 
 ## <a name="associate-your-microsoft-store-for-business-account-with-intune"></a>Associar a sua conta da Loja Microsoft para Empresas ao Intune
 Antes de ativar a sincronização na consola do Intune, tem de configurar a conta da loja para utilizar o Intune como ferramenta de gestão:

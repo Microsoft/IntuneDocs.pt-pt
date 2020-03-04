@@ -18,14 +18,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: adca40b558a75d2c080fe453218f232a37b21daa
-ms.sourcegitcommit: cd90650c339795d44702e9dcd0b9679a7b438bb2
+ms.openlocfilehash: a1eca1f8911e9c6aae3b3725cf15f04d954c5f48
+ms.sourcegitcommit: 6608dc70d01376e0cd90aa620a2fe01337f6a2f1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77473762"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78260321"
 ---
-# <a name="automatically-enroll-iosipados-devices-with-apples-device-enrollment-program"></a>Inscreva automaticamente dispositivos iOS/iPadOS com o Programa de Inscrição de Dispositivos da Apple
+# <a name="automatically-enroll-iosipados-devices-with-apples-device-enrollment-program"></a>Inscrever automaticamente dispositivos iOS/iPadOS com o Programa de registo de aparelho da Apple
 
 Pode configurar o Intune para inscrever dispositivos iOS/iPadOS adquiridos através do Programa de Inscrição de Dispositivos da Apple [(DEP)](https://deploy.apple.com). O DEP permite-lhe inscrever um grande número de dispositivos de forma remota. Dispositivos como iPhones, iPads e MacBooks podem ser enviados diretamente para os utilizadores. Quando o utilizador liga o dispositivo, o Assistente de Configuração, que inclui a experiência típica fora de caixa para produtos Apple, funciona com configurações pré-configuradas e o dispositivo matricula-se na gestão.
 
@@ -41,6 +41,8 @@ As matrículas do DEP não são compatíveis com a versão da app store da aplic
 Para permitir a autenticação moderna durante a inscrição, empurre a app para o dispositivo utilizando o Portal da **Empresa de Instalação com VPP** (Programa de Compra de Volume) no perfil DEP. Para mais informações, consulte [Automaticamente inscrever dispositivos iOS/iPadOS com o Programa de Inscrição de Dispositivos da Apple](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile).
 
 Para permitir que o Portal da Empresa atualize automaticamente e forneça a aplicação Portal da Empresa em dispositivos já inscritos com DEP, implemente a aplicação Portal da Empresa através do Intune como uma aplicação necessária para o Programa de Compra de Volume (VPP) com uma política de Configuração de [Aplicações](../apps/app-configuration-policies-use-ios.md) aplicada.
+
+Nota: Durante a inscrição automática do dispositivo, enquanto o Portal da Empresa está a funcionar no modo de aplicação única, clicar no link 'Saiba mais' resulta numa mensagem de erro por causa do modo de aplicação simples. Após a inscrição ser concluída, pode ver mais informações no CP quando o dispositivo já não se encontra no modo de aplicação. 
 
 ## <a name="what-is-supervised-mode"></a>O que é o modo supervisionado?
 
@@ -144,7 +146,7 @@ Agora que instalou o seu token, pode criar um perfil de inscrição para disposi
 5. Na **Afinidade do Utilizador**, escolha se os dispositivos com este perfil têm de ser inscritos com ou sem um utilizador atribuído.
     - **Inscrever com Afinidade de Utilizador**: selecione esta opção para os dispositivos que pertençam aos utilizadores e que queiram utilizar o Portal da Empresa para serviços como a instalação de aplicações. Se utilizar a ADFS e o perfil de inscrição tiver **Authenticate with Company Portal em vez de Configurar Assistente** definido para **Nº,** [WS-Trust 1.3 Username/Mixed endpoint](https://technet.microsoft.com/library/adfs2-help-endpoints) [Saiba mais.](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint)
 
-    - **Inscrever sem Afinidade do Utilizador** – escolha esta opção para dispositivos não associados a um único utilizador. Utilize esta opção para dispositivos que não acedam aos dados dos utilizadores locais. As aplicações, como o Portal da Empresa, não funcionam.
+    - **Inscrever sem Afinidade do Utilizador** – escolha esta opção para dispositivos não associados a um único utilizador. Utilize esta opção para dispositivos que não acedam aos dados dos utilizadores locais. Aplicações como a aplicação Portal da Empresa não funcionam.
 
 5. Se tiver escolhido **Inscrever com Afinidade de Utilizador**, poderá permitir que os utilizadores se autentiquem no Portal da Empresa em vez de o fazerem no Assistente de Configuração da Apple.
 
@@ -248,7 +250,7 @@ Agora que o Intune tem permissão para gerir os seus dispositivos, pode sincroni
 
 1. No [Microsoft Endpoint Manager Admin Center,](https://go.microsoft.com/fwlink/?linkid=2109431)escolha **Dispositivos** > **iOS** > **iOS matricular** > Programa de **Inscrição Tokens** > escolha um símbolo na lista > **Dispositivos** > **Sync**. ![Screenshot do nó dos dispositivos do programa de inscrição e link Sync.](./media/device-enrollment-program-enroll-ios/image06.png)
 
-   Para cumprir os termos da Apple para um tráfego aceitável do programa de inscrição, o Intune impõe as seguintes restrições:
+   Para seguir os termos da Apple para o tráfego aceitável do programa de inscrição, intune impõe as seguintes restrições:
    - As sincronizações completas não podem ser executadas mais do que uma vez a cada sete dias. Durante uma sincronização completa, o Intune obtém a lista atualizada completa de números de série atribuídos ao servidor de MDM da Apple ligado ao Intune. Se um dispositivo DEP for eliminado do portal do Intune, a sua atribuição deverá ser anulada no servidor MDM da Apple no portal DEP. Se a atribuição não for anulada, não será importado novamente para o Intune até que a sincronização completa seja executada.   
    - É executa automaticamente uma sincronização a cada 24 horas. Também pode sincronizar ao clicar no botão **Sincronizar** (não mais do que uma vez a cada 15 minutos). Todos os pedidos de sincronização têm 15 minutos para serem concluídos. O botão **Sincronizar** está desativado até a sincronização ser concluída. Esta sincronização irá atualizar o estado do dispositivo existente e importar novos dispositivos atribuídos ao servidor de MDM da Apple.   
 

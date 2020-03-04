@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/24/2020
+ms.date: 03/03/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: af8b46605d099a920ee512bce3ba94708b4a9eac
-ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
+ms.openlocfilehash: 7148db8f3fbfce4862afd12cabf7729645d737bf
+ms.sourcegitcommit: 6608dc70d01376e0cd90aa620a2fe01337f6a2f1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "77781177"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78260202"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 
@@ -53,6 +53,26 @@ Saiba mais sobre as novidades todas as semanas no Microsoft Intune. Também pode
 ### Monitor and troubleshoot
 ### Role-based access control
 -->  
+
+<!-- ########################## -->
+## <a name="week-of-march-2-2020"></a>Semana de 2 de março de 2020
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="device-management"></a>Gestão de dispositivos
+
+### <a name="bulk-remote-actions--4576882--"></a>Ações remotas a granel<!--4576882-->
+Pode agora emitir comandos a granel para as seguintes ações remotas: reiniciar, mudar o nome, reiniciar o Piloto Automático, sincronizar, limpar e eliminar. Para ver as novas ações a granel, vá ao centro de administração do [Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) > **Dispositivos** > **Todos os dispositivos** > **ações em massa**.
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="app-management"></a>Gestão de aplicações
+
+#### <a name="company-portal-app-installation-status-messages-for-win32-apps----2514416---"></a>Mensagens de estado de instalação de aplicativos do Portal da Empresa para aplicações Win32 <!-- 2514416 -->
+A aplicação Portal da Empresa mostra mensagens adicionais de estado de instalação de aplicações aos utilizadores finais. As seguintes condições aplicam-se às novas funcionalidades de dependência win32:
+- A aplicação falhou na instalação. As dependências definidas pelo administrador não foram satisfeitas.
+- A aplicação instalada com sucesso, mas requer um recomeço.
+- A aplicação está em processo de instalação, mas requer um recomeço para continuar.
+
+Para mais informações, consulte a gestão de [aplicações Win32.](~/apps/apps-win32-app-management.md)
 
 <!-- ########################## -->
 ## <a name="week-of-february-24-2020"></a>Semana de 24 de fevereiro de 2020
