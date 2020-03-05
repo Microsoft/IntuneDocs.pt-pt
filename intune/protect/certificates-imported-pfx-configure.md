@@ -1,11 +1,11 @@
 ---
 title: Utilize certificados PFX importados no Microsoft Intune - Azure Microsoft Docs
-description: Utilize certificados de criptografia de chave pública importados (PKCS) com a Microsoft Intune, incluindo a importação de certificados, configurando o modelo de certificado, instalação do Conector de Certificado PFX importado intune e crie um PKCS importado Perfil de certificado.
+description: Utilize certificados de criptografia de chaves públicas importados (PKCS) com a Microsoft Intune. Certificados de importação, modelos de certificados de configuração, instalao o Conector de Certificado PFX Importado Intune e cria um perfil de Certificado PKCS importado.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/21/2020
+ms.date: 03/04/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,18 +17,24 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 02fa3acdaf0dc450afee97dfaaf5870166013356
-ms.sourcegitcommit: 5881979c45fc973cba382413eaa193d369b8dcf6
+ms.openlocfilehash: d31093f4765969d97f3d57f4b41eaa5ef98daaf1
+ms.sourcegitcommit: b4502dc09b82985265299968a11158f5898b56e0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "77569528"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78287584"
 ---
 # <a name="configure-and-use-imported-pkcs-certificates-with-intune"></a>Configure e utilize certificados PKCS importados com Intune
 
 O Microsoft Intune suporta a utilização de certificados de pares de chaves públicas importados (PKCS), comumente utilizados para encriptação S/MIME com perfis de e-mail. Certos perfis de e-mail em Intune suportam uma opção para ativar S/MIME onde pode definir um certificado de assinatura S/MIME e cert de encriptação S/MIME.
 
-A encriptação S/MIME é desafiante porque o e-mail é encriptado com um certificado específico. Deve ter a chave privada do certificado que encriptou o e-mail no dispositivo onde está a ler o e-mail para que possa ser desencriptado. Os certificados de encriptação são renovados regularmente, o que significa que pode precisar do seu histórico de encriptação em todos os seus dispositivos para garantir que pode ler e-mails mais antigos.  Uma vez que o mesmo certificado necessita de ser utilizado em todos os dispositivos, não é possível utilizar perfis de [certificadoS SCEP](certificates-scep-configure.md) ou [PKCS](certficates-pfx-configure.md) para o efeito, uma vez que esses mecanismos de entrega de certificados fornecem certificados únicos por dispositivo.
+A encriptação S/MIME é desafiante porque o e-mail é encriptado com um certificado específico:
+
+- Deve ter a chave privada do certificado que encriptou o e-mail no dispositivo onde está a ler o e-mail para que possa ser desencriptado.
+- Antes de expirar um certificado num dispositivo, deve importar um novo certificado para que os dispositivos possam continuar a desencriptar novos e-mails. A renovação destes certificados não é suportada.
+- Os certificados de encriptação são renovados regularmente, o que significa que você pode querer manter certificado passado nos seus dispositivos, para garantir que o e-mail mais antigo pode continuar a ser desencriptado.  
+
+Uma vez que o mesmo certificado precisa de ser utilizado em todos os dispositivos, não é possível utilizar perfis de [certificadoS SCEP](certificates-scep-configure.md) ou [PKCS](certficates-pfx-configure.md) para o efeito, uma vez que esses mecanismos de entrega de certificados fornecem certificados únicos por dispositivo.
 
 Para mais informações sobre a utilização de S/MIME com [Intune, use S/MIME para encriptar e-mail](certificates-s-mime-encryption-sign.md).
 
@@ -186,7 +192,7 @@ Selecione o Fornecedor de Armazenamento chave que corresponde ao fornecedor util
    > [!NOTE]
    > Como a autenticação é executada contra o Graph, deve fornecer permissões ao AppID. Se é a primeira vez que usas este utilitário, é necessário um *administrador global.* Os cmdlets PowerShell utilizam o mesmo AppID que o utilizado com [amostras intune PowerShell](https://github.com/microsoftgraph/powershell-intune-samples).
 
-5. Converta a palavra-passe para cada ficheiro PFX que está a importar para uma cadeia segura executando `$SecureFilePassword = ConvertTo-SecureString -String "<PFXPassword>" -AsPlainText -Force`.
+5. Converta a palavra-passe para cada ficheiro PFX que está a importar para uma cadeia segura, executando `$SecureFilePassword = ConvertTo-SecureString -String "<PFXPassword>" -AsPlainText -Force`.
 
 6. Para criar um objeto **UserPFXCertificate,** execute `$userPFXObject = New-IntuneUserPfxCertificate -PathToPfxFile "<FullPathPFXToCert>" $SecureFilePassword "<UserUPN>" "<ProviderName>" "<KeyName>" "<IntendedPurpose>"`
 
@@ -220,9 +226,18 @@ Após importar certificados para o Intune, crie um perfil de **certificado PKCS 
 
    - **Finalidade prevista**: Especificar o objetivo dos certificados importados para este perfil. Os administradores podem importar certificados com diferentes fins previstos (como a assinatura S/MIME ou a encriptação S/MIME). A finalidade selecionada no perfil do certificado corresponde ao perfil do certificado com os certificados importados adequados. O objetivo pretendido é uma etiqueta para agrupar os certificados importados em conjunto e não garante que os certificados importados com essa etiqueta cumpram o objetivo pretendido.  
    - **Período de validade**do certificado : A menos que o período de validade tenha sido alterado no modelo de certificado, esta opção não se aplica a um ano.
-   - **Fornecedor de armazenamento de chaves (KSP)**: para dispositivos com Windows, selecione onde armazenar as chaves no dispositivo.
+   - **Fornecedor de armazenamento de chaves (KSP)** : para dispositivos com Windows, selecione onde armazenar as chaves no dispositivo.
 
 5. Selecione **OK** > **Criar** para guardar o perfil.
+
+## <a name="support-for-third-party-partners"></a>Apoio a parceiros de terceiros
+
+Os seguintes parceiros fornecem métodos ou ferramentas suportadas que pode utilizar para importar certificados PFX para Intune.
+
+### <a name="digicert"></a>DigiCert
+Se utilizar o serviço digiCert PKI Platform, pode utilizar a Ferramenta de Importação DigiCert **para certificados Intune S/MIME** para importar certificados PFX para Intune. A utilização desta ferramenta substitui a necessidade de seguir as instruções na secção [Import PFX Certificates to Intune](#import-pfx-certificates-to-intune) que é detalhado anteriormente neste artigo.
+
+Para saber mais sobre a ferramenta DigiCert Import, incluindo como obter a ferramenta, consulte https://knowledge.digicert.com/tutorials/microsoft-intune.html na base de conhecimento digiCert.
 
 ## <a name="next-steps"></a>Próximos passos
 

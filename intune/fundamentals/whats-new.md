@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 03/03/2020
+ms.date: 03/04/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7148db8f3fbfce4862afd12cabf7729645d737bf
-ms.sourcegitcommit: 6608dc70d01376e0cd90aa620a2fe01337f6a2f1
+ms.openlocfilehash: c6a9033b0c4ac241b7fbc8a34db7e757229d82c5
+ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "78260202"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78290281"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novidades do Microsoft Intune
 
-Saiba mais sobre as novidades todas as semanas no Microsoft Intune. Também pode encontrar [avisos importantes, lançamentos](#notices) [anteriores](whats-new-archive.md)e informações sobre [como as atualizações de serviço intune são lançadas.](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Microsoft-Intune-Service-Updates/ba-p/358728) 
+Saiba o que há de novo a cada semana no Microsoft Intune. Também pode encontrar [avisos importantes, lançamentos](#notices) [anteriores](whats-new-archive.md)e informações sobre [como as atualizações de serviço intune são lançadas.](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Microsoft-Intune-Service-Updates/ba-p/358728) 
 
 > [!Note]
 > Cada [atualização mensal](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Microsoft-Intune-Service-Updates/ba-p/358728) pode demorar até três dias a ser lançada e estará na seguinte ordem:
@@ -60,19 +60,16 @@ Saiba mais sobre as novidades todas as semanas no Microsoft Intune. Também pode
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="device-management"></a>Gestão de dispositivos
 
-### <a name="bulk-remote-actions--4576882--"></a>Ações remotas a granel<!--4576882-->
+#### <a name="microsoft-endpoint-manager-tenant-attach-device-sync-and-device-actions---6317104-cm3555758--"></a>Anexo de inquilino do Microsoft Endpoint Manager: As ações de sincronização e dispositivos do dispositivo<!-- 6317104, CM3555758-->
+O Microsoft Endpoint Manager está a reunir o Diretor de Configuração e o Intune numa única consola. A partir da versão de pré-visualização técnica do Gestor de Configuração 2002.2, pode carregar os seus dispositivos de Gestor de Configuração para o serviço de cloud e tomar ações sobre eles no centro de administração. Para mais informações, consulte [funcionalidades na versão de pré-visualização técnica do Gestor de Configuração 2002.2](https://docs.microsoft.com/configmgr/core/get-started/2020/technical-preview-2002-2#bkmk_attach).
+
+Reveja o artigo de [pré-visualização técnica do Gestor](https://docs.microsoft.com/configmgr/core/get-started/technical-preview) de Configuração antes de instalar esta atualização. Este artigo familiariza-o com os requisitos e limitações gerais para utilizar uma pré-visualização técnica, como atualizar entre versões e como fornecer feedback.
+
+#### <a name="bulk-remote-actions--4576882--"></a>Ações remotas a granel<!--4576882-->
 Pode agora emitir comandos a granel para as seguintes ações remotas: reiniciar, mudar o nome, reiniciar o Piloto Automático, sincronizar, limpar e eliminar. Para ver as novas ações a granel, vá ao centro de administração do [Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431) > **Dispositivos** > **Todos os dispositivos** > **ações em massa**.
 
-<!-- vvvvvvvvvvvvvvvvvvvvvv -->
-### <a name="app-management"></a>Gestão de aplicações
-
-#### <a name="company-portal-app-installation-status-messages-for-win32-apps----2514416---"></a>Mensagens de estado de instalação de aplicativos do Portal da Empresa para aplicações Win32 <!-- 2514416 -->
-A aplicação Portal da Empresa mostra mensagens adicionais de estado de instalação de aplicações aos utilizadores finais. As seguintes condições aplicam-se às novas funcionalidades de dependência win32:
-- A aplicação falhou na instalação. As dependências definidas pelo administrador não foram satisfeitas.
-- A aplicação instalada com sucesso, mas requer um recomeço.
-- A aplicação está em processo de instalação, mas requer um recomeço para continuar.
-
-Para mais informações, consulte a gestão de [aplicações Win32.](~/apps/apps-win32-app-management.md)
+#### <a name="all-devices-list-improved-search-sort-and-filter--6179023--"></a>Todos os dispositivos listam melhor pesquisa, classificação e filtro<!--6179023-->
+A lista de todos os dispositivos foi melhorada para um melhor desempenho, pesquisa, triagem e filtragem.
 
 <!-- ########################## -->
 ## <a name="week-of-february-24-2020"></a>Semana de 24 de fevereiro de 2020
@@ -143,8 +140,6 @@ Para ver as novas opções, vá ao MEM > **Dispositivos** > **iOS** > **Atualiza
 #### <a name="choose-which-iosipados-updates-to-push-to-enrolled-devices--5879689----"></a>Escolha quais as atualizações iOS/iPadOS para empurrar para dispositivos matriculados<!--5879689  -->
 Pode escolher uma atualização específica do iOS/iPadOS (exceto a mais recente atualização) para empurrar para dispositivos que tenham matriculado utilizando o Apple Business Manager ou o Apple School Manager. Estes dispositivos devem ter uma política de configuração do dispositivo definida para atrasar a visibilidade da atualização do software durante alguns dias. Para ver esta funcionalidade, vá ao MEM > **Dispositivos** > **iOS** > **Atualizar as políticas para iOS/iPadOS** > Criar **perfil**.
 
-### <a name="all-devices-list-improved-search-sort-and-filter--6179023--"></a>Todos os dispositivos listam melhor pesquisa, classificação e filtro<!--6179023-->
-A lista de todos os dispositivos foi melhorada para um melhor desempenho, pesquisa, triagem e filtragem.
 
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->

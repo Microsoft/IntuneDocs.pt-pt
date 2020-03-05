@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/24/2020
+ms.date: 03/04/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3d8ee4ec6a5bcb29a51b68cff7b840823b678636
-ms.sourcegitcommit: 5881979c45fc973cba382413eaa193d369b8dcf6
+ms.openlocfilehash: 5d03d6026430c7f9f02cc8504ccc610c3be99902
+ms.sourcegitcommit: b4502dc09b82985265299968a11158f5898b56e0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "77569290"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78287571"
 ---
 # <a name="monitor-security-baseline-and-profiles-in-microsoft-intune"></a>Monitorize a linha de base de segurança e os perfis no Microsoft Intune
 
@@ -45,10 +45,10 @@ O painel **de visão geral** fornece dois métodos para monitorizar o estado:
 Cada dispositivo é representado por um dos seguintes estados (utilizados na vista do *dispositivo* e também pelas vistas *por categoria):*
 
 - **Corresponde à linha** de base - Todas as definições da linha de base correspondem às definições recomendadas.
-- **Não corresponde à linha** de base - Pelo menos uma definição na linha de base não corresponde à definição recomendada.
+- **Não corresponde à linha** de base - Uma ou mais definições na linha de base foram modificadas a partir dos seus valores predefinidos na linha de base original. Os valores predefinidos em cada linha de base de segurança são os valores recomendados para essa linha de base.
 
   > [!NOTE]
-  > Quando cria ou edita um perfil de base, qualquer alteração que seja feita a um valor padrão ou definição de configuração faz com que ocorra um estado de base "Não corresponde à linha de base". Para obter ajuda para determinar as definições que foram alteradas, contacte o Microsoft Support. 
+  > Quando cria ou edita um perfil de base, qualquer alteração que seja feita a um valor padrão ou definição de configuração faz com que não ocorra o estado de *base.* Para obter ajuda para determinar as definições que foram alteradas, contacte o Microsoft Support. 
 
 - **Configurado mal** - Pelo menos uma definição não está corretamente configurada. Este estado significa que a definição está num estado de conflito, erro ou pendente.
 - **Não aplicável** - Pelo menos uma definição não é aplicável e não é aplicada.

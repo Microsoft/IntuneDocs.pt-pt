@@ -2,7 +2,7 @@
 title: Using the Intune docs (Utilizar a documentação do Intune)
 titleSuffix: Microsoft Intune
 description: Aprenda a pesquisar os docs Intune, fornecer feedback do doc e contribuir para os docs.
-ms.date: 09/15/2019
+ms.date: 03/03/2020
 ms.service: microsoft-intune
 ms.subservice: fundamentals
 ms.topic: conceptual
@@ -11,12 +11,12 @@ author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 607e1136fd3ab5661a2b054410d6fc7fce94994d
-ms.sourcegitcommit: 1aaff35fddb3d06458d739968d28971fed0bb2ba
+ms.openlocfilehash: de30ade4c145a930ed370fd651c35bd57700c76d
+ms.sourcegitcommit: b4502dc09b82985265299968a11158f5898b56e0
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "77155348"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78287549"
 ---
 # <a name="using-the-intune-docs"></a>Using the Intune docs (Utilizar a documentação do Intune)
 
@@ -114,3 +114,23 @@ Siga estas orientações gerais ao contribuir para os docs intune:
 - Siga o [fluxo de trabalho gitHub Flow](https://guides.github.com/introduction/flow/).  
 
 - Blog e tweet (ou o que quer que seja) sobre as suas contribuições, com frequência!  
+
+## <a name="consolidation-of-documentation-for-microsoft-endpoint-manager"></a>Consolidação da documentação para o Microsoft Endpoint Manager
+
+Para melhor suportar cenários combinados para Intune e Diretor de Configuração, esta biblioteca de documentação está a mudar-se para [https://docs.microsoft.com/memdocs/intune](https://docs.microsoft.com/memdocs/intune). A biblioteca de documentação do Gestor de Configuração passará mais tarde para [https://docs.microsoft.com/memdocs/configmgr](https://docs.microsoft.com/memdocs/configmgr). Todas as ligações serão automaticamente redirecionadas, pelo que não é necessário fazer alterações para a leitura deste conteúdo.
+
+Se fornecer feedback ou contribuir para artigos, são necessárias algumas alterações:
+
+- As questões existentes do GitHub permanecerão no repositório original, [https://github.com/MicrosoftDocs/IntuneDocs/issues](https://github.com/MicrosoftDocs/IntuneDocs/issues).
+
+  - Estas questões não vão aparecer como questões abertas ou fechadas na secção de Feedback do artigo vinculado.
+
+  - Continuaremos a trabalhar no sentido de resolver estas questões em curso.
+
+  - Em alguns casos, podemos tomar a difícil decisão de encerrar um assunto que achamos que não seremos capazes de abordar atempadamente.
+
+  - Se tiver algum problema no repositório existente, e for apaixonado por isso, preencha o feedback sobre o artigo migrado no repositório de memdocs.
+
+- Vamos fundir-nos e encerrar quaisquer pedidos de atração aberta antes da migração.
+
+- Após a migração, quando apresentar feedback ou editar um artigo, o pedido de emissão ou de puxar irá para o repositório de memdocs.
